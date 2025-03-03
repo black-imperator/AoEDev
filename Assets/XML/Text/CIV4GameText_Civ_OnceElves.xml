@@ -7,35 +7,35 @@
 <Civ4GameText xmlns="http://www.firaxis.com">
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ONCE_ELVES_DESC</Tag>
-		<English>The Elves of the Well of Shadows</English>
-		<French>The Elves of the Well of Shadows</French>
-		<German>The Elves of the Well of Shadows</German>
-		<Italian>The Elves of the Well of Shadows</Italian>
-		<Spanish>The Elves of the Well of Shadows</Spanish>
+		<English>Fryrrvhiemer</English>
+		<French>Fryrrvhiemer</French>
+		<German>Fryrrvhiemer</German>
+		<Italian>Fryrrvhiemer</Italian>
+		<Spanish>Fryrrvhiemer</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ONCE_ELVES_SHORT_DESC</Tag>
-		<English>Once Elves</English>
-		<French>Once Elves</French>
-		<German>Once Elves</German>
-		<Italian>Once Elves</Italian>
-		<Spanish>Once Elves</Spanish>
+		<English>Fryrrverfar</English>
+		<French>Fryrrverfar</French>
+		<German>Fryrrverfar</German>
+		<Italian>Fryrrverfar</Italian>
+		<Spanish>Fryrrverfar</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ONCE_ELVES_ADJECTIVE</Tag>
-		<English>Once-Elvish</English>
-		<French>Once-Elvish</French>
-		<German>Once-Elvish</German>
-		<Italian>Once-Elvish</Italian>
-		<Spanish>Once-Elvish</Spanish>
+		<English>Fryrrverfar</English>
+		<French>Fryrrverfar</French>
+		<German>Fryrrverfar</German>
+		<Italian>Fryrrverfar</Italian>
+		<Spanish>Fryrrverfar</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_ONCE_ELF</Tag>
-		<English>Once Elf</English>
-		<French>Once Elf</French>
-		<German>Once Elf</German>
-		<Italian>Once Elf</Italian>
-		<Spanish>Once Elf</Spanish>
+		<English>Fryrrverfar</English>
+		<French>Fryrrverfar</French>
+		<German>Fryrrverfar</German>
+		<Italian>Fryrrverfar</Italian>
+		<Spanish>Fryrrverfar</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_PALACE_MALACHITE</Tag>
@@ -87,10 +87,10 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_WALDRUN_PEDIA</Tag>
-		<English>Waldrun is the court necromancer of the Once Elves, and the leader of the Ostaurii. Very suspicious of outsiders, he's vicious and vindictive towards any that enter Barathrum. He was blinded by the breaking of the Veil of Shadows by Auric during his fleeing from the city.</English>
-		<French>Waldrun is the court necromancer of the Once Elves, and the leader of the Ostaurii. Very suspicious of outsiders, he's vicious and vindictive towards any that enter Barathrum. He was blinded by the breaking of the Veil of Shadows by Auric during his fleeing from the city.</French>
-		<German>Waldrun is the court necromancer of the Once Elves, and the leader of the Ostaurii. Very suspicious of outsiders, he's vicious and vindictive towards any that enter Barathrum. He was blinded by the breaking of the Veil of Shadows by Auric during his fleeing from the city.</German>
-		<Italian>Waldrun is the court necromancer of the Once Elves, and the leader of the Ostaurii. Very suspicious of outsiders, he's vicious and vindictive towards any that enter Barathrum. He was blinded by the breaking of the Veil of Shadows by Auric during his fleeing from the city.</Italian>
-		<Spanish>Waldrun is the court necromancer of the Once Elves, and the leader of the Ostaurii. Very suspicious of outsiders, he's vicious and vindictive towards any that enter Barathrum. He was blinded by the breaking of the Veil of Shadows by Auric during his fleeing from the city.</Spanish>
+		<English>Waldrun is the court necromancer of the Fryrrvhiemer, and the leader of the Ostaurii. Very suspicious of outsiders, he's vicious and vindictive towards any that enter Barathrum. He was blinded by the breaking of the Veil of Shadows by Auric during his fleeing from the city.</English>
+		<French>Waldrun is the court necromancer of the Fryrrvhiemer, and the leader of the Ostaurii. Very suspicious of outsiders, he's vicious and vindictive towards any that enter Barathrum. He was blinded by the breaking of the Veil of Shadows by Auric during his fleeing from the city.</French>
+		<German>Waldrun is the court necromancer of the Fryrrvhiemer, and the leader of the Ostaurii. Very suspicious of outsiders, he's vicious and vindictive towards any that enter Barathrum. He was blinded by the breaking of the Veil of Shadows by Auric during his fleeing from the city.</German>
+		<Italian>Waldrun is the court necromancer of the Fryrrvhiemer, and the leader of the Ostaurii. Very suspicious of outsiders, he's vicious and vindictive towards any that enter Barathrum. He was blinded by the breaking of the Veil of Shadows by Auric during his fleeing from the city.</Italian>
+		<Spanish>Waldrun is the court necromancer of the Fryrrvhiemer, and the leader of the Ostaurii. Very suspicious of outsiders, he's vicious and vindictive towards any that enter Barathrum. He was blinded by the breaking of the Veil of Shadows by Auric during his fleeing from the city.</Spanish>
 	</TEXT>
 </Civ4GameText>
