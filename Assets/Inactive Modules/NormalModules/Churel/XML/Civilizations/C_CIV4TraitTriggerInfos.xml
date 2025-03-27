@@ -148,8 +148,8 @@
 			
 			<PrereqPromotionType>PROMOTION_VAMPIRE</PrereqPromotionType>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Kill                Undead kills anything              			Graveleech -->
-			<Type>TRAITTRIGGER_KILL_UNDEAD_CHUREL</Type>
+		<TraitTriggerInfo> <!-- Kill                kills anything              			Graveleech -->
+			<Type>TRAITTRIGGER_KILL_ANY_CHUREL</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_GRAVELEECH</TraitType>
@@ -158,8 +158,7 @@
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
 				<TraitHookType>TRAITHOOK_KILL_UNIT</TraitHookType>
-			
-			<PrereqPromotionType>PROMOTION_UNDEAD</PrereqPromotionType>
+				
 		</TraitTriggerInfo>
 	
 	</TraitTriggerInfos>
