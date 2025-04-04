@@ -1284,6 +1284,7 @@
 			<BuildingsRequired>
 				<BuildingClass>BUILDINGCLASS_MONUMENT</BuildingClass>
 			</BuildingsRequired>
+			<iNumBuildings>1</iNumBuildings>
 			<bRecurring>0</bRecurring>
 			<bPickCity>1</bPickCity>
 			<bShowPlot>1</bShowPlot>
