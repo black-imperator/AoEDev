@@ -3395,10 +3395,10 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_WANDERING_BARD_1</Tag>
 		<English>He is horribly off-key! Chase him off and take his money!</English>
-		<French>He is horribly off-key! Take his donations and chase him away!</French>
-		<German>He is horribly off-key! Take his donations and chase him away!</German>
-		<Italian>He is horribly off-key! Take his donations and chase him away!</Italian>
-		<Spanish>He is horribly off-key! Take his donations and chase him away!</Spanish>
+		<French>He is horribly off-key! Chase him off and take his money!</French>
+		<German>He is horribly off-key! Chase him off and take his money!</German>
+		<Italian>He is horribly off-key! Chase him off and take his money!</Italian>
+		<Spanish>He is horribly off-key! Chase him off and take his money!</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_WANDERING_BARD_2</Tag>
