@@ -1263,5 +1263,30 @@
 			<bShowPlot>0</bShowPlot>
 			<PythonCanDo>CanTriggerTreasureHunter</PythonCanDo>
 		</EventTriggerInfo>
+		<EventTriggerInfo> <!-- EVEN MORE EVENTS STARTS -->
+			<Type>EVENTTRIGGER_WANDERING_BARD1</Type>
+			<TriggerTexts>
+				<TriggerText>
+					<Text>TXT_KEY_EVENT_WANDERING_BARD1</Text>
+					<Era>NONE</Era>
+				</TriggerText>
+			</TriggerTexts>
+			<iPercentGamesActive>100</iPercentGamesActive>
+			<iWeight>-1</iWeight>
+			<iMinPopulation>1</iMinPopulation>
+			<iMaxOurLandmass>-1</iMaxOurLandmass>
+			<iPlotType>-1</iPlotType>
+			<Events>
+				<Event>EVENT_WANDERING_BARD_1</Event>
+				<Event>EVENT_WANDERING_BARD_2</Event>
+				<Event>EVENT_WANDERING_BARD_3</Event>
+			</Events>
+			<BuildingsRequired>
+				<BuildingClass>BUILDINGCLASS_MONUMENT</BuildingClass>
+			</BuildingsRequired>
+			<bRecurring>0</bRecurring>
+			<bPickCity>1</bPickCity>
+			<bShowPlot>1</bShowPlot>
+		</EventTriggerInfo>
 	</EventTriggerInfos>
 </Civ4EventTriggerInfos>

@@ -1966,5 +1966,35 @@
 			<Description>TXT_KEY_EVENT_NO</Description>
 			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 		</EventInfo>
+		<EventInfo> <!-- EVEN MORE EVENTS STARTS -->
+			<Type>EVENT_WANDERING_BARD_1</Type>
+			<Description>TXT_KEY_EVENT_WANDERING_BARD_1</Description>
+			<iGold>20</iGold>
+			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>1000</iAIValue>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_WANDERING_BARD_2</Type>
+			<Description>TXT_KEY_EVENT_WANDERING_BARD_2</Description>
+			<bPickCity>1</bPickCity>
+			<iHurryAnger>15</iHurryAnger>
+			<FreeSpecialistCounts>
+				<FreeSpecialistCount>
+					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+					<iFreeSpecialistCount>1</iFreeSpecialistCount>
+				</FreeSpecialistCount>
+			</FreeSpecialistCounts>
+			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>1000</iAIValue>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_WANDERING_BARD_3</Type>
+			<Description>TXT_KEY_EVENT_WANDERING_BARD_3</Description>
+			<PrereqAlignment>ALIGNMENT_EVIL</PrereqAlignment>
+            <PythonCallback>doWanderingBard3</PythonCallback>
+			<PythonHelp>helpWanderingBard3</PythonHelp>
+			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>1000</iAIValue>
+		</EventInfo>
 	</EventInfos>
 </Civ4EventInfos>

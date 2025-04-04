@@ -2540,3 +2540,16 @@ def DoDeadAngel2(argsList):
 #	if pPlot.isCity() == False:
 #		CyEngine().addLandmark(pPlot,szLandmarkText)
 # r363 Tile Landmark - End
+
+def doWanderingBard3 (argsList):
+	iEvent = argsList[0]
+	kTriggeredData = argsList[1]
+	pPlayer = gc.getPlayer(kTriggeredData.ePlayer)
+	pCity = pPlayer.getCity(kTriggeredData.iCityId)
+	newUnit1 = pPlayer.initUnit(gc.getInfoTypeForString('UNIT_SLAVE'), pCity.getX(),pCity.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+
+def helpWanderingBard3(argsList):
+	iEvent = argsList[0]
+	kTriggeredData = argsList[1]
+	szHelp = localText.getText("TXT_KEY_EVENT_WANDERING_BARD_3_HELP", ())
+	return szHelp
