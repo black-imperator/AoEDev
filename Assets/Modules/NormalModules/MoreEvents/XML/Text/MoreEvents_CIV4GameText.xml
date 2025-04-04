@@ -3386,42 +3386,42 @@
 	</TEXT>
 	<TEXT> <!-- EVEN MORE EVENTS STARTS -->
 		<Tag>TXT_KEY_EVENT_WANDERING_BARD1</Tag>
-		<English>A wandering bard has started performing in front of your cities monument.</English>
-		<French>Un barde errant a commencé à se produire devant le monument de votre ville.</French>
-		<German>Ein wandernder Barde hat begonnen, vor dem Denkmal eurer Stadt aufzutreten.</German>
-		<Italian>Un bardo errante ha iniziato a esibirsi davanti al monumento della tua città.</Italian>
-		<Spanish>Un bardo errante ha comenzado a actuar frente al monumento de tu ciudad.</Spanish>
+		<English>A wandering bard has started performing in front of your city's monument.</English>
+		<French>A wandering bard has started performing in front of your city's monument.</French>
+		<German>A wandering bard has started performing in front of your city's monument.</German>
+		<Italian>A wandering bard has started performing in front of your city's monument.</Italian>
+		<Spanish>A wandering bard has started performing in front of your city's monument.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_WANDERING_BARD_1</Tag>
-		<English>He is horribly off-key! take his donations and chase him away!</English>
-		<French>Il est horriblement faux ! Prenez ses dons et chassez !</French>
-		<German>Er ist schrecklich daneben! Nimm seine Spenden und verjage ihn!</German>
-		<Italian>È terribilmente stonato! Prendi le sue donazioni e caccialo via!</Italian>
-		<Spanish>¡Está horriblemente desafinado! ¡Toma sus donaciones y ahuyenta a él!</Spanish>
+		<English>He is horribly off-key! Chase him off and take his money!</English>
+		<French>He is horribly off-key! Take his donations and chase him away!</French>
+		<German>He is horribly off-key! Take his donations and chase him away!</German>
+		<Italian>He is horribly off-key! Take his donations and chase him away!</Italian>
+		<Spanish>He is horribly off-key! Take his donations and chase him away!</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_WANDERING_BARD_2</Tag>
-		<English>He is annoying, but the tunes are kind of catchy...</English>
-		<French>Il est embêtant, mais les airs sont un peu accrocheurs...</French>
-		<German>Er ist nervig, aber die Melodien sind irgendwie eingängig...</German>
-		<Italian>È fastidioso, ma le melodie sono un po' orecchiabili...</Italian>
-		<Spanish>Es molesto, pero las melodías son un poco pegadizas...</Spanish>
+		<English>What he lacks in talent, he makes up for with...enthusiasm</English>
+		<French>What he lacks in talent, he makes up for with...enthusiasm</French>
+		<German>What he lacks in talent, he makes up for with...enthusiasm</German>
+		<Italian>What he lacks in talent, he makes up for with...enthusiasm</Italian>
+		<Spanish>What he lacks in talent, he makes up for with...enthusiasm</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_WANDERING_BARD_3</Tag>
 		<English>Throw the loud fool in chains.</English>
-		<French>Jetez l'imbécile bruyant dans les chaînes.</French>
-		<German>Wirf den lauten Narren in Ketten.</German>
-		<Italian>Getta in catene lo sciocco rumoroso.</Italian>
-		<Spanish>Encadenar al tonto ruidoso.</Spanish>
+		<French>Throw the loud fool in chains.</French>
+		<German>Throw the loud fool in chains.</German>
+		<Italian>Throw the loud fool in chains.</Italian>
+		<Spanish>Throw the loud fool in chains.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_WANDERING_BARD_3_HELP</Tag>
 		<English>Gain a Slave</English>
-		<French>Gagner un esclave</French>
-		<German>Gewinne einen Sklaven</German>
-		<Italian>Ottieni uno schiavo</Italian>
-		<Spanish>Gana un esclavo</Spanish>
+		<French>Gain a Slave</French>
+		<German>Gain a Slave</German>
+		<Italian>Gain a Slave</Italian>
+		<Spanish>Gain a Slave</Spanish>
 	</TEXT>
 </Civ4GameText>
