@@ -1977,7 +1977,7 @@
 			<Type>EVENT_WANDERING_BARD_2</Type>
 			<Description>TXT_KEY_EVENT_WANDERING_BARD_2</Description>
 			<bPickCity>1</bPickCity>
-			<iHurryAnger>15</iHurryAnger>
+			<iHurryAnger>3</iHurryAnger>
 			<FreeSpecialistCounts>
 				<FreeSpecialistCount>
 					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>

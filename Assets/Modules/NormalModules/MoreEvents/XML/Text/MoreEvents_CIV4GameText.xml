@@ -3386,11 +3386,11 @@
 	</TEXT>
 	<TEXT> <!-- EVEN MORE EVENTS STARTS -->
 		<Tag>TXT_KEY_EVENT_WANDERING_BARD1</Tag>
-		<English>A wandering bard has started performing in front of your cities monument.</English>
-		<French>Un barde errant a commencé à se produire devant le monument de votre ville.</French>
-		<German>Ein wandernder Barde hat begonnen, vor dem Denkmal eurer Stadt aufzutreten.</German>
-		<Italian>Un bardo errante ha iniziato a esibirsi davanti al monumento della tua città.</Italian>
-		<Spanish>Un bardo errante ha comenzado a actuar frente al monumento de tu ciudad.</Spanish>
+		<English>A wandering bard has started performing in front of your cities town hall.</English>
+		<French>Un barde vagabond a commencé à jouer devant la mairie de ta ville.</French>
+		<German>Ein wandernder Barde hat begonnen, vor dem Rathaus eurer Stadt aufzutreten.</German>
+		<Italian>Un bardo errante ha iniziato a esibirsi davanti al municipio della tua città.</Italian>
+		<Spanish>Un bardo errante ha comenzado a actuar frente al ayuntamiento de tu ciudad.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_WANDERING_BARD_1</Tag>
