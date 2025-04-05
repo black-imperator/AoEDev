@@ -1289,5 +1289,28 @@
 			<bPickCity>1</bPickCity>
 			<bShowPlot>1</bShowPlot>
 		</EventTriggerInfo>
+		<EventTriggerInfo>
+			<Type>EVENTTRIGGER_TAX_COLLECTOR_THEFT1</Type>
+			<TriggerTexts>
+				<TriggerText>
+					<Text>TXT_KEY_EVENT_TAX_COLLECTOR_THEFT</Text>
+					<Era>NONE</Era>
+				</TriggerText>
+			</TriggerTexts>
+			<iPercentGamesActive>100</iPercentGamesActive>
+			<iWeight>40</iWeight>
+			<iMinTreasury>15</iMinTreasury>
+			<iMaxOurLandmass>-1</iMaxOurLandmass>
+			<iPrereqCrime>20</iPrereqCrime>
+			<bRecurring>1</bRecurring>
+			<iPlotType>-1</iPlotType>
+			<Events>
+				<Event>EVENT_TAX_COLLECTOR_THEFT_1</Event>
+				<Event>EVENT_TAX_COLLECTOR_THEFT_2</Event>
+				<Event>EVENT_TAX_COLLECTOR_THEFT_3</Event>
+			</Events>
+			<bPickCity>1</bPickCity>
+			<bShowPlot>1</bShowPlot>
+		</EventTriggerInfo>
 	</EventTriggerInfos>
 </Civ4EventTriggerInfos>

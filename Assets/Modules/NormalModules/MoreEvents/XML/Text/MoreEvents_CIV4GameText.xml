@@ -3424,4 +3424,36 @@
 		<Italian>Gain a Slave</Italian>
 		<Spanish>Gain a Slave</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TAX_COLLECTOR_THEFT</Tag>
+		<English>Highway Bandits have ambushed your tax collector on her way back from the countryside.</English>
+		<French>Highway Bandits have ambushed your tax collector on her way back from the countryside.</French>
+		<German>Highway Bandits have ambushed your tax collector on her way back from the countryside.</German>
+		<Italian>Highway Bandits have ambushed your tax collector on her way back from the countryside.</Italian>
+		<Spanish>Highway Bandits have ambushed your tax collector on her way back from the countryside.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TAX_COLLECTOR_THEFT_1</Tag>
+		<English>If only we had some sort of garrison that could protect us.</English>
+		<French>If only we had some sort of garrison that could protect us.</French>
+		<German>If only we had some sort of garrison that could protect us.</German>
+		<Italian>If only we had some sort of garrison that could protect us.</Italian>
+		<Spanish>If only we had some sort of garrison that could protect us.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TAX_COLLECTOR_THEFT_2</Tag>
+		<English>Send the nearby patrol in.</English>
+		<French>Send the nearby patrol in.</French>
+		<German>Send the nearby patrol in.</German>
+		<Italian>Send the nearby patrol in.</Italian>
+		<Spanish>Send the nearby patrol in.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TAX_COLLECTOR_THEFT_3</Tag>
+		<English>They offer their dues to the Council.</English>
+		<French>They offer their dues to the Council.</French>
+		<German>They offer their dues to the Council.</German>
+		<Italian>They offer their dues to the Council.</Italian>
+		<Spanish>They offer their dues to the Council.</Spanish>
+	</TEXT>
 </Civ4GameText>

@@ -1996,5 +1996,33 @@
 			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>1000</iAIValue>
 		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_TAX_COLLECTOR_THEFT_1</Type>
+			<Description>TXT_KEY_EVENT_TAX_COLLECTOR_THEFT_1</Description>
+			<iGold>-15</iGold> <!-- Ya got robbed, bitch! -->
+			<iCrime>5</iCrime> <!-- that was easy! let's do it again! -->
+			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>1000</iAIValue>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_TAX_COLLECTOR_THEFT_2</Type>
+			<Description>TXT_KEY_EVENT_TAX_COLLECTOR_THEFT_2</Description>
+			<bPickCity>1</bPickCity>
+			<iCrime>-5</iCrime>
+			<BuildingsRequired>
+				<BuildingClass>BUILDINGCLASS_GARRISON_QUARTERS</BuildingClass>
+			</BuildingsRequired>
+			<BuildingClass>BUILDINGCLASS_GARRISON_QUARTERS</BuildingClass>
+			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>1000</iAIValue>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_TAX_COLLECTOR_THEFT_3</Type>
+			<Description>TXT_KEY_EVENT_TAX_COLLECTOR_THEFT_3</Description>
+			<PrereqStateReligion>RELIGION_COUNCIL_OF_ESUS</PrereqStateReligion>
+			<iGold>25</iGold>
+			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>1000</iAIValue>
+		</EventInfo>
 	</EventInfos>
 </Civ4EventInfos>
