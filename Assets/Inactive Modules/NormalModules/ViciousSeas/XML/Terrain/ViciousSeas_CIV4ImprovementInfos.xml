@@ -634,7 +634,7 @@
 			<iAppearanceProbability>20</iAppearanceProbability>
 			<SpawnUnitType>UNIT_KRAKEN_SPAWN</SpawnUnitType>
 			<ImmediateSpawnUnitType>UNIT_HIGH_PRIEST_OF_THE_OVERLORDS</ImmediateSpawnUnitType>
-			<SpawnUnitCiv>CIVILIZATION_ORC</SpawnUnitCiv>
+			<SpawnUnitCiv>CIVILIZATION_DEMON</SpawnUnitCiv>
 			<bSpawnOnlyForOwner>1</bSpawnOnlyForOwner>
 			<iSpawnAtOnceLimit>3</iSpawnAtOnceLimit>
 			<iCultureRange>4</iCultureRange>
