@@ -293,6 +293,7 @@
 			<ImprovementUpgrade>IMPROVEMENT_PIRATE_STRONGHOLD</ImprovementUpgrade>
 			<iAppearanceProbability>80</iAppearanceProbability>
 			<SpawnUnitType>UNIT_GALLEY</SpawnUnitType>
+			<SpawnGroupType>SPAWN_GROUP_GALLEY</SpawnGroupType>
 			<ImmediateSpawnUnitType>UNIT_BOARDING_PARTY</ImmediateSpawnUnitType>
 			<SpawnUnitCiv>CIVILIZATION_ORC</SpawnUnitCiv>
 			<bSpawnOnlyForOwner>1</bSpawnOnlyForOwner>
@@ -355,6 +356,7 @@
 			</TerrainMakesValids>
 			<ImprovementUpgrade>IMPROVEMENT_PIRATE_FREE_CITY</ImprovementUpgrade>
 			<SpawnUnitType>UNIT_TRIREME</SpawnUnitType>
+			<SpawnGroupType>SPAWN_GROUP_GALLEON</SpawnGroupType>
 			<ImmediateSpawnUnitType>UNIT_BOARDING_PARTY</ImmediateSpawnUnitType>
 			<SpawnUnitCiv>CIVILIZATION_ORC</SpawnUnitCiv>
 			<bSpawnOnlyForOwner>1</bSpawnOnlyForOwner>

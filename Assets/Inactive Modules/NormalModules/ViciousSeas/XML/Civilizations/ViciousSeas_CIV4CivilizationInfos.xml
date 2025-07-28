@@ -405,42 +405,5 @@
 				</FeatureHealthPercentChange>
 			</FeatureHealthPercentChanges>
 		</CivilizationInfo>
-				<CivilizationInfo><!-- Barbarian (Orc) -->
-			<Type>CIVILIZATION_ORC</Type>
-			<Units>
-				<Unit>
-					<UnitClassType>UNITCLASS_QUEEN_OF_THE_LINE</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_GALLEY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_GALLEON</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_FRIGATE</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_CARAVEL</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_CARRACK</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_ARCANE_BARGE</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_PRIVATEER</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-			</Units>
-		</CivilizationInfo>
 	</CivilizationInfos>
 </Civ4CivilizationInfos>
