@@ -583,11 +583,11 @@
 			</BonusTypeStructs>
 			<BonusConvert>BONUS_TITAN_TURTLE_SCALES</BonusConvert>
 			<iAppearanceProbability>20</iAppearanceProbability>
-			<SpawnUnitType>UNIT_GIANT_TORTOISE</SpawnUnitType>
+			<SpawnUnitType>UNIT_GIANT_TORTOISE_HATCHLING</SpawnUnitType>
 			<ImmediateSpawnUnitType>UNIT_TITAN_SHELL_TURTLE</ImmediateSpawnUnitType>
 			<SpawnUnitCiv>CIVILIZATION_ANIMAL</SpawnUnitCiv>
 			<bSpawnOnlyForOwner>1</bSpawnOnlyForOwner>
-			<iSpawnAtOnceLimit>2</iSpawnAtOnceLimit>
+			<iSpawnAtOnceLimit>3</iSpawnAtOnceLimit>
 			<iCultureRange>4</iCultureRange>
 			<iCultureControlStrength>3</iCultureControlStrength>
 			<iCultureCenterBonus>2</iCultureCenterBonus>

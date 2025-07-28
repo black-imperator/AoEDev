@@ -167,6 +167,85 @@
 			<Sound>AS3D_SPELL_SPRING</Sound>
 			<Button>Art/Interface/Buttons/Spells/Tsunami.dds</Button>
 		</SpellInfo>
+		<SpellInfo>			<!-- Dragon Tortoise Hatchling grow up -->
+			<Type>SPELL_DRAGON_TORTOISE_HATCHLING_GROW_UP</Type>
+			<Description>TXT_KEY_SPELL_DRAGON_TORTOISE_HATCHLING_GROW_UP</Description>
+			<Civilopedia>N/A</Civilopedia>
+			<UnitPrereq>UNIT_GIANT_TORTOISE_HATCHLING</UnitPrereq>
+			<ConvertUnitType>UNIT_GIANT_TORTOISE</ConvertUnitType>
+			<bAllowAI>1</bAllowAI>
+			<iAIWeight>300</iAIWeight>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+			<iCasterMinLevel>5</iCasterMinLevel>
+			<Effect>EFFECT_SPELL2</Effect>
+			<Sound>AS3D_SPELL_SANCTIFY</Sound>
+			<Button>Art/Interface/Buttons/Units/Giant Tortoise.dds</Button>
+			<bGraphicalOnly>1</bGraphicalOnly>
+		</SpellInfo>
+		<SpellInfo>			<!-- Dragon Tortoise grow up -->
+			<Type>SPELL_DRAGON_TORTOISE_GROW_UP</Type>
+			<Description>TXT_KEY_SPELL_DRAGON_TORTOISE_GROW_UP</Description>
+			<Civilopedia>N/A</Civilopedia>
+			<UnitPrereq>UNIT_GIANT_TORTOISE</UnitPrereq>
+			<ConvertUnitType>UNIT_TITAN_SHELL_TURTLE</ConvertUnitType>
+			<bAllowAI>1</bAllowAI>
+			<iAIWeight>300</iAIWeight>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+			<iCasterMinLevel>15</iCasterMinLevel>
+			<Effect>EFFECT_SPELL2</Effect>
+			<Sound>AS3D_SPELL_SANCTIFY</Sound>
+			<Button>Art/Interface/Buttons/Units/Giant Tortoise.dds</Button>
+			<bGraphicalOnly>1</bGraphicalOnly>
+		</SpellInfo>
+		<SpellInfo>			<!-- Sea Serpent grow up -->
+			<Type>SPELL_SEA_SERPENT_GROW_UP</Type>
+			<Description>TXT_KEY_SPELL_SEA_SERPENT_GROW_UP</Description>
+			<Civilopedia>N/A</Civilopedia>
+			<UnitPrereq>UNIT_SEA_SERPENT</UnitPrereq>
+			<ConvertUnitType>UNIT_ANCIENT_SEA_SERPENT</ConvertUnitType>
+			<bAllowAI>1</bAllowAI>
+			<iAIWeight>300</iAIWeight>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+			<iCasterMinLevel>8</iCasterMinLevel>
+			<Effect>EFFECT_SPELL2</Effect>
+			<Sound>AS3D_SPELL_SANCTIFY</Sound>
+			<Button>Art/Interface/Buttons/Units/Sea Serpent.dds</Button>
+			<bGraphicalOnly>1</bGraphicalOnly>
+		</SpellInfo>
+		<SpellInfo>			<!-- Sea Serpent Brood grow up -->
+			<Type>SPELL_SEA_SERPENT_BROOD_GROW_UP</Type>
+			<Description>TXT_KEY_SPELL_SEA_SERPENT_GROW_UP</Description>
+			<Civilopedia>N/A</Civilopedia>
+			<UnitPrereq>UNIT_SEA_SERPENT_BROOD</UnitPrereq>
+			<ConvertUnitType>UNIT_ANCIENT_SEA_SERPENT</ConvertUnitType>
+			<bAllowAI>1</bAllowAI>
+			<iAIWeight>300</iAIWeight>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+			<iCasterMinLevel>12</iCasterMinLevel>
+			<Effect>EFFECT_SPELL2</Effect>
+			<Sound>AS3D_SPELL_SANCTIFY</Sound>
+			<Button>Art/Interface/Buttons/Units/Sea Serpent.dds</Button>
+		</SpellInfo>
+		<SpellInfo>			<!-- Kraken Spawn grow up -->
+			<Type>SPELL_KRAKEN_SPAWN_GROW_UP</Type>
+			<Description>TXT_KEY_SPELL_KRAKEN_SPAWN_GROW_UP</Description>
+			<Civilopedia>N/A</Civilopedia>
+			<UnitPrereq>UNIT_KRAKEN_SPAWN</UnitPrereq>
+			<ConvertUnitType>UNIT_KRAKEN</ConvertUnitType>
+			<bAllowAI>1</bAllowAI>
+			<iAIWeight>300</iAIWeight>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+			<iCasterMinLevel>8</iCasterMinLevel>
+			<Effect>EFFECT_SPELL2</Effect>
+			<Sound>AS3D_SPELL_SANCTIFY</Sound>
+			<Button>Art/Interface/Buttons/Units/Kraken.dds</Button>
+			<bGraphicalOnly>1</bGraphicalOnly>
+		</SpellInfo>
 		<SpellInfo>			<!-- Found Pirate Free City -->
 			<Type>SPELL_FOUND_PIRATE_FREE_CITY</Type>
 			<Description>TXT_KEY_SPELL_FOUND_PIRATE_FREE_CITY</Description>

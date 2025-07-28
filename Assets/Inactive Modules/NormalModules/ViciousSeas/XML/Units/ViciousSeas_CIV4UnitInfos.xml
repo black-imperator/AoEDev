@@ -127,6 +127,68 @@
 			<iPowerMult>4</iPowerMult>
 			<PrereqTech>TECH_NEVER</PrereqTech>
 		</UnitInfo>
+		<UnitInfo>        <!-- Giant Tortoise Hatchling -->
+			<Class>UNITCLASS_GIANT_TORTOISE</Class>
+			<Type>UNIT_GIANT_TORTOISE_HATCHLING</Type>
+			<Combat>UNITCOMBAT_ANIMAL</Combat>
+			<Domain>DOMAIN_SEA</Domain>
+			<DefaultUnitAI>UNITAI_ANIMAL</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_GIANT_TURTLE_HATCHLING</Description>
+			<Civilopedia>TXT_KEY_UNIT_GIANT_TORTOISE_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bAnimal>1</bAnimal>
+			<bMilitarySupport>1</bMilitarySupport>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<bNoDefensiveBonus>1</bNoDefensiveBonus>
+			<bRenderBelowWater>1</bRenderBelowWater>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ANIMAL</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<iMoves>3</iMoves>
+			<iCombat>6</iCombat>
+			<TerrainNatives>
+				<TerrainNative>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<bTerrainNative>1</bTerrainNative>
+				</TerrainNative>
+			</TerrainNatives>
+			<iAsset>0</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>3</iGroupSize>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_GIANT_TORTOISE_HATCHLING</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_DRAGON</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MOLTEN_CORE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+			<DenyPromotions>
+				<Promotion>PROMOTION_GUERILLA1</Promotion>
+				<Promotion>PROMOTION_WOODSMAN1</Promotion>
+			</DenyPromotions>
+			<iTier>3</iTier>
+			<iAppearanceProb>-1</iAppearanceProb>
+			<AppearanceTechs>
+				<AppearanceTech>
+					<AppearanceTechType>TECH_OPTICS</AppearanceTechType>
+					<iAppearanceTech>101</iAppearanceTech>
+				</AppearanceTech>
+			</AppearanceTechs>
+			<iPowerMult>3</iPowerMult>
+		</UnitInfo>
 		<UnitInfo>        <!-- Giant Tortoise -->
 			<Class>UNITCLASS_GIANT_TORTOISE</Class>
 			<Type>UNIT_GIANT_TORTOISE</Type>

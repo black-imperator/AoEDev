@@ -576,6 +576,14 @@ The Marionette was the prized flagship of the Balserath city-states, and now it 
 		<Spanish>Dragon Turtle</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_GIANT_TURTLE_HATCHLING</Tag>
+		<English>Dragon Turtle Hatchling</English>
+		<French>Dragon Turtle Hatchling</French>
+		<German>Dragon Turtle Hatchling</German>
+		<Italian>Dragon Turtle Hatchling</Italian>
+		<Spanish>Dragon Turtle Hatchling</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_ANCIENT_SEA_SERPENT</Tag>
 		<English>Ancient Sea Serpent</English>
 		<French>Ancient Sea Serpent</French>
@@ -606,5 +614,37 @@ The Marionette was the prized flagship of the Balserath city-states, and now it 
 		<German>[TAB]Dragon turtles have few (read: any) natural predators, so it stands to reason that given enough time and a steady food supply, they will reach sizes that are hard to fathom but easy to feel when they crash onto the shore to lay eggs once every hundred years.</German>
 		<Italian>[TAB]Dragon turtles have few (read: any) natural predators, so it stands to reason that given enough time and a steady food supply, they will reach sizes that are hard to fathom but easy to feel when they crash onto the shore to lay eggs once every hundred years.</Italian>
 		<Spanish>[TAB]Dragon turtles have few (read: any) natural predators, so it stands to reason that given enough time and a steady food supply, they will reach sizes that are hard to fathom but easy to feel when they crash onto the shore to lay eggs once every hundred years.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_DRAGON_TORTOISE_HATCHLING_GROW_UP</Tag>
+		<English>Mature Into Dragon Turtle</English>
+		<French>Mature Into Dragon Turtle</French>
+		<German>Mature Into Dragon Turtle</German>
+		<Italian>Mature Into Dragon Turtle</Italian>
+		<Spanish>Mature Into Dragon Turtle</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_DRAGON_TORTOISE_GROW_UP</Tag>
+		<English>Mature Into Titan Dragon Turtle</English>
+		<French>Mature Into Titan Dragon Turtle</French>
+		<German>Mature Into Titan Dragon Turtle</German>
+		<Italian>Mature Into Titan Dragon Turtle</Italian>
+		<Spanish>Mature Into Titan Dragon Turtle</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_SEA_SERPENT_GROW_UP</Tag>
+		<English>Mature Into Ancient Sea Serpent</English>
+		<French>Mature Into Ancient Sea Serpent</French>
+		<German>Mature Into Ancient Sea Serpent</German>
+		<Italian>Mature Into Ancient Sea Serpent</Italian>
+		<Spanish>Mature Into Ancient Sea Serpent</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_KRAKEN_SPAWN_GROW_UP</Tag>
+		<English>Mature Into Kraken</English>
+		<French>Mature Into Kraken</French>
+		<German>Mature Into Kraken</German>
+		<Italian>Mature Into Kraken</Italian>
+		<Spanish>Mature Into Kraken</Spanish>
 	</TEXT>
 </Civ4GameText>
