@@ -1259,6 +1259,26 @@
 					<UnitClassType>UNITCLASS_GRIGORI_MEDIC</UnitClassType>
 					<UnitType>UNIT_SPIRIT_HEALER</UnitType>
 				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_WARRIOR</UnitClassType>
+					<UnitType>UNIT_BRAVE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_PALADIN</UnitClassType>
+					<UnitType>UNIT_CHISLEV_PALADIN</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_BERSERKER</UnitClassType>
+					<UnitType>UNIT_CHISLEV_BERSERKER</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_IMMORTAL</UnitClassType>
+					<UnitType>UNIT_CHISLEV_IMMORTAL</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_RANGER</UnitClassType>
+					<UnitType>UNIT_CHISLEV_RANGER</UnitType>
+				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>

@@ -259,6 +259,26 @@
 					<UnitClassType>UNITCLASS_AXEMAN</UnitClassType>
 					<UnitType>UNIT_TOMAHAWK_THROWER</UnitType>
 				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_WARRIOR</UnitClassType>
+					<UnitType>UNIT_BRAVE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_PALADIN</UnitClassType>
+					<UnitType>UNIT_CHISLEV_PALADIN</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_BERSERKER</UnitClassType>
+					<UnitType>UNIT_CHISLEV_BERSERKER</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_IMMORTAL</UnitClassType>
+					<UnitType>UNIT_CHISLEV_IMMORTAL</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_RANGER</UnitClassType>
+					<UnitType>UNIT_CHISLEV_RANGER</UnitType>
+				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -342,6 +362,7 @@
 			<CivilizationSelectionSound>AS3D_NATIVE_AMERICA_SELECT</CivilizationSelectionSound>
 			<CivilizationActionSound>AS3D_NATIVE_AMERICA_ORDER</CivilizationActionSound>
 			<bGraphicalOnly>0</bGraphicalOnly>
+			<CivTrait>TRAIT_CLAN_STRUCTURE</CivTrait>
 			<DefaultRace>NONE</DefaultRace>
 			<Hero>UNIT_MESKWAKI</Hero>
 			<MaintainFeatures>

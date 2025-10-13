@@ -35089,6 +35089,71 @@
 			<Button>Art/Interface/Buttons/Promotions/Civs/Mekara/ShaperExperiments.dds</Button>
 			<iMinLevel>-1</iMinLevel>
 		</PromotionInfo>
+		<PromotionInfo>		<!-- Adoption Chislev  -->
+			<Type>PROMOTION_ADOPTION_CHISLEV</Type>
+			<Description>TXT_KEY_PROMOTION_ADOPTION_CHISLEV</Description>
+			<iSlaveGenerationChance>10</iSlaveGenerationChance>
+			<bPrereqAliveCapture>1</bPrereqAliveCapture>
+			<CaptureUnitClass>UNITCLASS_WARRIOR</CaptureUnitClass>
+			<NotCapturedUnitCombats>
+				<NotCapturedUnitCombat>
+					<NotCapturedUnitCombatType>UNITCOMBAT_ANIMAL</NotCapturedUnitCombatType>
+					<bNotCapturedUnitCombat>1</bNotCapturedUnitCombat>
+				</NotCapturedUnitCombat>
+				<NotCapturedUnitCombat>
+					<NotCapturedUnitCombatType>UNITCOMBAT_BEAST</NotCapturedUnitCombatType>
+					<bNotCapturedUnitCombat>1</bNotCapturedUnitCombat>
+				</NotCapturedUnitCombat>
+			</NotCapturedUnitCombats>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ANIMAL</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_BEAST</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>,Art/Interface/Buttons/Civics/Slavery.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,8,2</Button>
+			<iMinLevel>-1</iMinLevel>
+		</PromotionInfo>
 		<PromotionInfo>		<!-- Ruthless Promo -->
 			<Type>PROMOTION_TRAIT_RUTHLESS</Type>
 			<Description>TXT_KEY_PROMOTION_TRAIT_RUTHLESS</Description>
