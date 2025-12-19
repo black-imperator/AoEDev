@@ -636,14 +636,14 @@
 			<InitialCivics>
 				<CivicType>CIVIC_DESPOTISM</CivicType>
 				<CivicType>CIVIC_RELIGION</CivicType>
-				<CivicType>CIVIC_MELDING</CivicType>
+				<CivicType>CIVIC_TRIBALISM</CivicType>
 				<CivicType>CIVIC_DECENTRALIZATION</CivicType>
 				<CivicType>CIVIC_NO_MEMBERSHIP</CivicType>
 			</InitialCivics>
 			<AnarchyCivics>
 				<CivicType>CIVIC_DESPOTISM</CivicType>
 				<CivicType>CIVIC_RELIGION</CivicType>
-				<CivicType>CIVIC_MELDING</CivicType>
+				<CivicType>CIVIC_TRIBALISM</CivicType>
 				<CivicType>CIVIC_DECENTRALIZATION</CivicType>
 				<CivicType>CIVIC_NO_MEMBERSHIP</CivicType>
 			</AnarchyCivics>

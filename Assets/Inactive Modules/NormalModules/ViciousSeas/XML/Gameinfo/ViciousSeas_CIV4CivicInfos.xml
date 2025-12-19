@@ -263,8 +263,8 @@
 			</ImprovementYieldChanges>
 			<bForceOverwrite>1</bForceOverwrite>
 		</CivicInfo>
-		<CivicInfo>		<!-- Slavery -->
-			<CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
+   <!-- <CivicInfo>	-->	<!-- Melding(culture whip) -->
+	<!--    <CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
 			<Type>CIVIC_MELDING</Type>
 			<Description>TXT_KEY_CIVIC_MELDING</Description>
 			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Civics/Melding2.dds</Button>
@@ -277,6 +277,6 @@
 					<bHurry>1</bHurry>
 				</Hurry>
 			</Hurrys>
-		</CivicInfo>
+		</CivicInfo> -->
 	</CivicInfos>
 </Civ4CivicInfos>
