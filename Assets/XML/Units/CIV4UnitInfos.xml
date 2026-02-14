@@ -39893,7 +39893,7 @@
 					<bBuild>1</bBuild>
 				</Build>
 			</Builds>
-			<PrereqTech>TECH_HORSEBACK_RIDING</PrereqTech>
+			<PrereqTech>TECH_STIRRUPS</PrereqTech>
 			<iCost>-1</iCost>
 			<iMoves>2</iMoves>
 			<iWorkRate>150</iWorkRate>
@@ -40017,7 +40017,7 @@
 					<bBuild>1</bBuild>
 				</Build>
 			</Builds>
-			<PrereqTech>TECH_HORSEBACK_RIDING</PrereqTech>
+			<PrereqTech>TECH_STIRRUPS</PrereqTech>
 			<iCost>-1</iCost>
 			<iMoves>2</iMoves>
 			<iWorkRate>150</iWorkRate>
