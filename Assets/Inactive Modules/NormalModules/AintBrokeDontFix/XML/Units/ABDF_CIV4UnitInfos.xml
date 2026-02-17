@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Unit Infos -->
+<Civ4UnitInfos xmlns="x-schema:ABDF_CIV4UnitSchema.xml">
+<UnitInfos>
+		<UnitInfo>        <!-- War Elephant -->
+			<Class>UNITCLASS_WAR_ELEPHANT</Class>
+			<Type>UNIT_WAR_ELEPHANT</Type>
+			<PrereqTech>TECH_HORSEBACK_RIDING</PrereqTech>
+		</UnitInfo>
+		<UnitInfo>        <!-- Mammoth Rider -->
+			<Class>UNITCLASS_MAMMOTH_RIDER</Class>
+			<Type>UNIT_MAMMOTH_RIDER</Type>
+			<PrereqTech>TECH_HORSEBACK_RIDING</PrereqTech>
+		</UnitInfo>
+</UnitInfos>
+</Civ4UnitInfos>
