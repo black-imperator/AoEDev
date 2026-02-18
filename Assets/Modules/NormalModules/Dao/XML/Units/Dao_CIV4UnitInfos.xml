@@ -331,6 +331,10 @@
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 				<FreePromotion>
+					<PromotionType>PROMOTION_FORCE1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
 					<PromotionType>PROMOTION_MEDIC1</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
@@ -341,6 +345,9 @@
 			</FreePromotions>
 			<AllowPromotions>
 				<Promotion>PROMOTION_LIFE1</Promotion>
+				<Promotion>PROMOTION_MASTER_OF_FORCE</Promotion>
+				<Promotion>PROMOTION_MASTER_OF_EARTH_AND_AIR</Promotion>
+				<Promotion>PROMOTION_MASTER_OF_FIRE_AND_WATER</Promotion>
 			</AllowPromotions>
 			<iFreePromotionPick>1</iFreePromotionPick>
 			<bFreeXP>1</bFreeXP>
