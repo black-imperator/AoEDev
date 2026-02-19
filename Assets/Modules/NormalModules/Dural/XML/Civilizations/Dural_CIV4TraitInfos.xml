@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Soren Johnson (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Leader Trait Infos -->
+<Civ4TraitInfos xmlns="x-schema:Dural_CIV4CivilizationsSchema.xml">
+	<TraitInfos>
+		<TraitInfo>		<!-- Dural population are more tidy and less wasteful in their works. -->
+			<Type>TRAIT_DURAL_EDUCATED</Type>
+			<TraitClass>TRAITCLASS_CIVILIZATION</TraitClass>
+			<Description>TXT_KEY_TRAIT_DURAL_EDUCATED</Description>
+			<Civilopedia>TXT_KEY_TRAIT_DURAL_EDUCATED_PEDIA</Civilopedia>
+			<ShortDescription>TXT_KEY_TRAIT_DURAL_EDUCATED_SHORT</ShortDescription>
+			<SpecialistHealthChanges>
+				<SpecialistHealthChange>
+					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+					<iHealth>1</iHealth>
+				</SpecialistHealthChange>
+				<SpecialistHealthChange>
+					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+					<iHealth>1</iHealth>
+				</SpecialistHealthChange>
+				<SpecialistHealthChange>
+					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+					<iHealth>1</iHealth>
+				</SpecialistHealthChange>
+				<SpecialistHealthChange>
+					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+					<iHealth>1</iHealth>
+				</SpecialistHealthChange>
+				<SpecialistHealthChange>
+					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+					<iHealth>1</iHealth>
+				</SpecialistHealthChange>
+				<SpecialistHealthChange>
+					<SpecialistType>SPECIALIST_HEALER</SpecialistType>
+					<iHealth>1</iHealth>
+				</SpecialistHealthChange>
+			</SpecialistHealthChanges>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_DURAL_RELIGION_WORKER</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
+			</FreePromotions>
+			<FreePromotionUnitCombats>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+			</FreePromotionUnitCombats>
+		</TraitInfo>
+	</TraitInfos>
+</Civ4TraitInfos>

@@ -24168,6 +24168,10 @@
 					<PromotionType>PROMOTION_ANGEL</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_FREE_UNIT</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
 			</FreePromotions>
 			<iTier>3</iTier>
 			<iWeaponTierMax>3</iWeaponTierMax>

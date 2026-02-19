@@ -3118,7 +3118,7 @@
 			<Type>BUILD_DWARVEN_MINE</Type>
 			<Description>TXT_KEY_BUILD_DWARVEN_MINE</Description>
 			<Help/>
-			<PrereqTech>NONE</PrereqTech>
+			<PrereqTech>TECH_WAY_OF_THE_EARTHMOTHER</PrereqTech>
 			<iTime>2800</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>

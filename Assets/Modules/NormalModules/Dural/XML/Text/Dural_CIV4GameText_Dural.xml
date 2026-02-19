@@ -102,6 +102,54 @@
 		<Spanish>Professor</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_GREAT_PROFESSOR_ART</Tag>
+		<English>Great Professor of the Arts</English>
+		<French>Grand Professeur of the Arts</French>
+		<German>Great Professor of the Arts</German>
+		<Italian>Great Professor of the Arts</Italian>
+		<Spanish>Great Professor of the Arts</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GREAT_PROFESSOR_PROPHET</Tag>
+		<English>Great Professor of the Heavens</English>
+		<French>Grand Professeur of the Heavens</French>
+		<German>Great Professor of the Heavens</German>
+		<Italian>Great Professor of the Heavens</Italian>
+		<Spanish>Great Professor of the Heavens</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GREAT_PROFESSOR_ENGINEER</Tag>
+		<English>Great Professor of Engineering</English>
+		<French>Grand Professeur of Engineering</French>
+		<German>Great Professor of Engineering</German>
+		<Italian>Great Professor of Engineering</Italian>
+		<Spanish>Great Professor of Engineering</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GREAT_PROFESSOR_MERCHANT</Tag>
+		<English>Great Professor of Commerce</English>
+		<French>Grand Professeur of Commerce</French>
+		<German>Great Professor of Commerce</German>
+		<Italian>Great Professor of Commerce</Italian>
+		<Spanish>Great Professor of Commerce</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GREAT_PROFESSOR_SCIENTIST</Tag>
+		<English>Great Professor of Theorem</English>
+		<French>Grand Professeur of Theorem</French>
+		<German>Great Professor of Theorem</German>
+		<Italian>Great Professor of Theorem</Italian>
+		<Spanish>Great Professor of Theorem</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GREAT_PROFESSOR_HEALER</Tag>
+		<English>Great Professor of the Healing Hands</English>
+		<French>Grand Professeur of the Healing Hands</French>
+		<German>Great Professor of the Healing Hands</German>
+		<Italian>Great Professor of the Healing Hands</Italian>
+		<Spanish>Great Professor of the Healing Hands</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_PROFESSOR_STRATEGY</Tag>
 		<English>A Professor is able to cast the Hope and Inspiration spells, granting a noticable boost to any city he resides in. They are particularly useful in new cities, allowing quick cultural expansion without need of Obelisks or the Creative trait.</English>
 		<French>A Professor is able to cast the Hope and Inspiration spells, granting a noticable boost to any city he resides in. They are particularly useful in new cities, allowing quick cultural expansion without need of Obelisks or the Creative trait.</French>
@@ -127,7 +175,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_COLLEGE</Tag>
-		<English>College</English>
+		<English>College of the Arts</English>
 		<French>Université</French>
 		<German>Akademie</German>
 		<Italian>College</Italian>
@@ -444,6 +492,48 @@
 		<German>Piken</German>
 		<Italian>Pikes</Italian>
 		<Spanish>Pikes</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_RELIGION_WORKER</Tag>
+		<English>Scholastic Workforce</English>
+		<French>Scholastic Workforce</French>
+		<German>Scholastic Workforce</German>
+		<Italian>Scholastic Workforce</Italian>
+		<Spanish>Scholastic Workforce</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_DURAL_EDUCATED</Tag>
+		<English>Educated</English>
+		<French>Educated</French>
+		<German>Educated</German>
+		<Italian>Educated</Italian>
+		<Spanish>Educated</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_DURAL_EDUCATED_PEDIA</Tag>
+		<English>The social standing of a Dural citizen is reflected not only in the quality of their crafts but also in the cleanliness of their workplace.
+
+With sufficient time and study, any structure can be replicated, even without the original designs.</English>
+		<French>The social standing of a Dural citizen is reflected not only in the quality of their crafts but also in the cleanliness of their workplace.
+
+With sufficient time and study, any structure can be replicated, even without the original designs.</French>
+		<German>The social standing of a Dural citizen is reflected not only in the quality of their crafts but also in the cleanliness of their workplace.
+
+With sufficient time and study, any structure can be replicated, even without the original designs.</German>
+		<Italian>The social standing of a Dural citizen is reflected not only in the quality of their crafts but also in the cleanliness of their workplace.
+
+With sufficient time and study, any structure can be replicated, even without the original designs.</Italian>
+		<Spanish>The social standing of a Dural citizen is reflected not only in the quality of their crafts but also in the cleanliness of their workplace.
+
+With sufficient time and study, any structure can be replicated, even without the original designs.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_DURAL_EDUCATED_SHORT</Tag>
+		<English>SMRT</English>
+		<French>SMRT</French>
+		<German>SMRT</German>
+		<Italian>SMRT</Italian>
+		<Spanish>SMRT</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ATELIER</Tag>

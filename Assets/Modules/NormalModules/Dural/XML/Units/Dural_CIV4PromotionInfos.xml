@@ -264,5 +264,41 @@
 			<bDoubleFortifyBonus>1</bDoubleFortifyBonus>
 			<iMinLevel>3</iMinLevel>
 		</PromotionInfo>
+		<PromotionInfo>		<!-- Dural religion worker    -->
+			<Type>PROMOTION_DURAL_RELIGION_WORKER</Type>
+			<Description>TXT_KEY_DURAL_RELIGION_WORKER</Description>
+			<bAutoAcquire>1</bAutoAcquire>
+			<bMustMaintain>1</bMustMaintain>
+			<bNoXP>1</bNoXP>
+			<iMinLevel>-1</iMinLevel>
+			<PrereqCivilization>CIVILIZATION_DURAL</PrereqCivilization>
+			<PromotionBuilds>
+				<PromotionBuild>BUILD_SACRED_HARVEST</PromotionBuild>
+				<PromotionBuild>BUILD_PATH_OF_LUGUS</PromotionBuild>
+				<PromotionBuild>BUILD_STYGIAN_SHRINE</PromotionBuild>
+				<PromotionBuild>BUILD_POLAR_NEXUS</PromotionBuild>
+				<PromotionBuild>BUILD_PENITENTIARY</PromotionBuild>
+				<PromotionBuild>BUILD_DWARVEN_MINE</PromotionBuild>
+				<PromotionBuild>BUILD_AERON_VAULTGATE</PromotionBuild>
+				<PromotionBuild>BUILD_THIEVES_DEN</PromotionBuild>
+			</PromotionBuilds>
+			<PromotionExcludes>
+				<Promotion>PROMOTION_EMPYREAN_PATH</Promotion>
+				<Promotion>PROMOTION_ESUS_CONTACTS</Promotion>
+				<Promotion>PROMOTION_ASHEN_SYMBOLS</Promotion>
+				<Promotion>PROMOTION_GUILDS_OF_KILMORPH</Promotion>
+				<Promotion>PROMOTION_ORDER_BAILIFF</Promotion>
+				<Promotion>PROMOTION_WHITE_STORMBRINGER</Promotion>
+				<Promotion>PROMOTION_OVERLORDS_THRALL</Promotion>
+				<Promotion>PROMOTION_LEAVES_GLADE</Promotion>
+			</PromotionExcludes>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>,Art/Interface/Teamcolor/Duralbutton.dds</Button>
+		</PromotionInfo>
 	</PromotionInfos>
 </Civ4PromotionInfos>

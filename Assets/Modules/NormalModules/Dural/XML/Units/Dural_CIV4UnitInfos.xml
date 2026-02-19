@@ -351,6 +351,1535 @@
 			<bFreeXP>1</bFreeXP>
 			<iTier>3</iTier>
 		</UnitInfo>
+		<UnitInfo>		  <!-- Great Engineer -->
+			<Class>UNITCLASS_ENGINEER</Class>
+			<Type>UNIT_GREAT_PROFESSOR_ENGINEER</Type>
+			<UniqueNames>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_1</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_2</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_3</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_4</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_5</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_6</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_7</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_8</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_9</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_10</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_11</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_12</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_13</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_14</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_15</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_16</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_17</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_18</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_19</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_20</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_21</UniqueName>
+			</UniqueNames>
+			<Quotes>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_1</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_2</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_3</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_4</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_5</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_6</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_7</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_8</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_9</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_10</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_11</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_12</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_13</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_14</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_15</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_16</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_17</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_18</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_19</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_20</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_21</Quote>
+			</Quotes>
+			<Images>
+				<Image>art\interface\popups\greatpeople\Khmer Otterfig.dds</Image>
+				<Image>art\interface\popups\greatpeople\Faber Ozzie.dds</Image>
+				<Image>art\interface\popups\greatpeople\Hoyden Drew.dds</Image>
+				<Image>art\interface\popups\greatpeople\Milana.dds</Image>
+				<Image>art\interface\popups\greatpeople\Zoot Ghent Gear.dds</Image>
+				<Image>art\interface\popups\greatpeople\Ethel Agames.dds</Image>
+				<Image>art\interface\popups\greatpeople\Fodgel Thor.dds</Image>
+				<Image>art\interface\popups\greatpeople\Bareke.dds</Image>
+				<Image>art\interface\popups\greatpeople\Zehanpuryuh.dds</Image>
+				<Image>art\interface\popups\greatpeople\Vesta Glory.dds</Image>
+				<Image>art\interface\popups\greatpeople\Valoel.dds</Image>
+				<Image>art\interface\popups\greatpeople\Tilonas Sal.dds</Image>
+				<Image>art\interface\popups\greatpeople\Hulik Darkanus.dds</Image>
+				<Image>art\interface\popups\greatpeople\Athos Ulthane.dds</Image>
+				<Image>art\interface\popups\greatpeople\Gregamir.dds</Image>
+				<Image>art\interface\popups\greatpeople\Haldayne Ozark.dds</Image>
+				<Image>art\interface\popups\greatpeople\Schrewneil.dds</Image>
+				<Image>art\interface\popups\greatpeople\Pistis Sophia.dds</Image>
+				<Image>art\interface\popups\greatpeople\Thorion Vo.dds</Image>
+				<Image>art\interface\popups\greatpeople\Aegeus Isildur.dds</Image>
+				<Image>art\interface\popups\greatpeople\MootusPont.dds</Image>
+			</Images>
+			<Special>SPECIALUNIT_PEOPLE</Special>
+			<DefaultUnitAI>UNITAI_ENGINEER</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_GREAT_PROFESSOR_ENGINEER</Description>
+			<Civilopedia>TXT_KEY_CONCEPT_GREAT_PEOPLE_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<bGoldenAge>1</bGoldenAge>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ENGINEER</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<GreatPeoples>
+				<GreatPeople>
+					<GreatPeopleType>SPECIALIST_GREAT_ENGINEER</GreatPeopleType>
+					<bGreatPeople>1</bGreatPeople>
+				</GreatPeople>
+			</GreatPeoples>
+			<Buildings>
+				<Building>
+					<BuildingType>BUILDING_MASTER_SMITH</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_MASTER_FLETCHER</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_MASTER_BREEDER</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_MASTER_OUTFITTER</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_MASTER_SIEGE</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_GUILD_STONEFIRE</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+			</Buildings>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>1</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<iFlavor>2</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<iFlavor>3</iFlavor>
+				</Flavor>
+			</Flavors>
+			<iMoves>2</iMoves>
+			<iBaseDiscover>1000</iBaseDiscover>
+			<iDiscoverMultiplier>2</iDiscoverMultiplier>
+			<iBaseHurry>500</iBaseHurry>
+			<iHurryMultiplier>20</iHurryMultiplier>
+			<iAsset>0</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>1</iGroupSize>
+				<fMaxSpeed>1.25</fMaxSpeed>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>1</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_GRIGORI_MEDIC</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_DIMENSIONAL1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+		</UnitInfo>
+		<UnitInfo>        <!-- Great Merchant -->
+			<Class>UNITCLASS_MERCHANT</Class>
+			<Type>UNIT_GREAT_PROFESSOR_MERCHANT</Type>
+			<UniqueNames>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_1</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_2</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_3</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_4</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_5</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_6</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_7</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_8</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_9</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_10</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_11</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_12</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_13</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_14</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_15</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_16</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_17</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_18</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_19</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_20</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_GREATESTPEOPLE_1</UniqueName>
+			</UniqueNames>
+			<Quotes>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_1</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_2</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_3</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_4</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_5</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_6</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_7</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_8</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_9</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_10</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_11</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_12</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_13</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_14</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_15</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_16</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_17</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_18</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_19</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_20</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_GREATESTPEOPLE_1</Quote>
+			</Quotes>
+			<Images>
+				<Image>art\interface\popups\greatpeople\Jenkin.dds</Image>
+				<Image>art\interface\popups\greatpeople\Rusa Pariek.dds</Image>
+				<Image>art\interface\popups\greatpeople\Omar of Turin.dds</Image>
+				<Image>art\interface\popups\greatpeople\Abdulkani the Mirage.dds</Image>
+				<Image>art\interface\popups\greatpeople\Belarchass the Slaver.dds</Image>
+				<Image>art\interface\popups\greatpeople\Mavreen Mawklistyr.dds</Image>
+				<Image>art\interface\popups\greatpeople\Maaerun.dds</Image>
+				<Image>art\interface\popups\greatpeople\Joffa the Barakite.dds</Image>
+				<Image>art\interface\popups\greatpeople\Goodreau.dds</Image>
+				<Image>art\interface\popups\greatpeople\Florina of Lorinwood.dds</Image>
+				<Image>art\interface\popups\greatpeople\Agravaine.dds</Image>
+				<Image>art\interface\popups\greatpeople\Kersasus Actium.dds</Image>
+				<Image>art\interface\popups\greatpeople\Geogi Bandon.dds</Image>
+				<Image>art\interface\popups\greatpeople\Oparr the Underhand.dds</Image>
+				<Image>art\interface\popups\greatpeople\Nephrion Cathwar.dds</Image>
+				<Image>art\interface\popups\greatpeople\Vohu Manah.dds</Image>
+				<Image>art\interface\popups\greatpeople\Gonael.dds</Image>
+				<Image>art\interface\popups\greatpeople\Enos the Maul.dds</Image>
+				<Image>art\interface\popups\greatpeople\Sopheriel Mehayye.dds</Image>
+				<Image>art\interface\popups\greatpeople\Sopheriel Memeth.dds</Image>
+				<Image>art\interface\popups\greatpeople\Robert Vaughn.dds</Image>
+			</Images>
+			<Special>SPECIALUNIT_PEOPLE</Special>
+			<DefaultUnitAI>UNITAI_MERCHANT</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_GREAT_PROFESSOR_MERCHANT</Description>
+			<Civilopedia>TXT_KEY_CONCEPT_GREAT_PEOPLE_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_GROWTH</Advisor>
+			<bRivalTerritory>1</bRivalTerritory>
+			<bGoldenAge>1</bGoldenAge>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_MERCHANT</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<GreatPeoples>
+				<GreatPeople>
+					<GreatPeopleType>SPECIALIST_GREAT_MERCHANT</GreatPeopleType>
+					<bGreatPeople>1</bGreatPeople>
+				</GreatPeople>
+			</GreatPeoples>
+			<Buildings>
+				<Building>
+					<BuildingType>BUILDING_NOX_NOCTIS</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_TABLETS_OF_BAMBUR</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_GUILD_FISHER</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_GUILD_FABRICAFORMA</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_GUILD_FARMERS_GUILD</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+			</Buildings>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_GOLD</FlavorType>
+					<iFlavor>3</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>2</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<iFlavor>1</iFlavor>
+				</Flavor>
+			</Flavors>
+			<iMoves>2</iMoves>
+			<iBaseDiscover>1000</iBaseDiscover>
+			<iDiscoverMultiplier>2</iDiscoverMultiplier>
+			<iBaseTrade>500</iBaseTrade>
+			<iTradeMultiplier>200</iTradeMultiplier>
+			<iAsset>0</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>1</iGroupSize>
+				<fMaxSpeed>1.25</fMaxSpeed>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>1</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_GRIGORI_MEDIC</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_DIMENSIONAL1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+		</UnitInfo>
+		<UnitInfo>        <!-- Great Prophet -->
+			<Class>UNITCLASS_PROPHET</Class>
+			<Type>UNIT_GREAT_PROFESSOR_PROPHET</Type>
+			<UniqueNames>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_1</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_2</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_3</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_4</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_5</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_6</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_7</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_8</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_9</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_10</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_11</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_12</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_13</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_14</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_15</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_16</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_17</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_18</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_19</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_20</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_GREATESTPEOPLE_1</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_GREATESTPEOPLE_2</UniqueName>
+			</UniqueNames>
+			<Quotes>
+				<Quote>TXT_KEY_QUOTE_PROPHET_1</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_2</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_3</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_4</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_5</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_6</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_7</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_8</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_9</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_10</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_11</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_12</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_13</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_14</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_15</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_16</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_17</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_18</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_19</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_20</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_GREATESTPEOPLE_1</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_GREATESTPEOPLE_2</Quote>
+			</Quotes>
+			<Images>
+				<Image>art\interface\popups\greatpeople\Tuatha-De-Danann.dds</Image>
+				<Image>art\interface\popups\greatpeople\Aes Sidhe.dds</Image>
+				<Image>art\interface\popups\greatpeople\Teutates.dds</Image>
+				<Image>art\interface\popups\greatpeople\Belatu Cadros.dds</Image>
+				<Image>art\interface\popups\greatpeople\Cenn Cruaich.dds</Image>
+				<Image>art\interface\popups\greatpeople\Mag Tuireadh.dds</Image>
+				<Image>art\interface\popups\greatpeople\Nyarlat.dds</Image>
+				<Image>art\interface\popups\greatpeople\Aengus Saone.dds</Image>
+				<Image>art\interface\popups\greatpeople\Cailleach Beara.dds</Image>
+				<Image>art\interface\popups\greatpeople\Calwinna of Junil.dds</Image>
+				<Image>art\interface\popups\greatpeople\Talia Gosam.dds</Image>
+				<Image>art\interface\popups\greatpeople\Lita the Witch.dds</Image>
+				<Image>art\interface\popups\greatpeople\Abellio.dds</Image>
+				<Image>art\interface\popups\greatpeople\Abnoba.dds</Image>
+				<Image>art\interface\popups\greatpeople\Cinnia.dds</Image>
+				<Image>art\interface\popups\greatpeople\Lanthis.dds</Image>
+				<Image>art\interface\popups\greatpeople\Pontif Elmin.dds</Image>
+				<Image>art\interface\popups\greatpeople\Fand.dds</Image>
+				<Image>art\interface\popups\greatpeople\Gosea.dds</Image>
+				<Image>art\interface\popups\greatpeople\Vaghan of Lugus.dds</Image>
+				<Image>art\interface\popups\greatpeople\Ron Glass.dds</Image>
+				<Image>art\interface\popups\greatpeople\cary-hiroyuki_tagawa.dds</Image>
+			</Images>
+			<Special>SPECIALUNIT_PEOPLE</Special>
+			<DefaultUnitAI>UNITAI_PROPHET</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_GREAT_PROFESSOR_PROPHET</Description>
+			<Civilopedia>TXT_KEY_UNIT_PROPHET_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_RELIGION</Advisor>
+			<bGoldenAge>1</bGoldenAge>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_PROPHET</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<GreatPeoples>
+				<GreatPeople>
+					<GreatPeopleType>SPECIALIST_GREAT_PRIEST</GreatPeopleType>
+					<bGreatPeople>1</bGreatPeople>
+				</GreatPeople>
+			</GreatPeoples>
+			<Buildings>
+				<Building>
+					<BuildingType>BUILDING_COLLEGE_OF_THEOLOGY</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_CODE_OF_JUNIL</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_TABLETS_OF_BAMBUR</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_THE_NECRONOMICON</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_NOX_NOCTIS</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_SONG_OF_AUTUMN</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_STIGMATA_ON_THE_UNBORN</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_DIES_DIEI</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_CITADEL_OF_THE_HAND</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_ALTAR_OF_THE_LUONNOTAR</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_ALTAR_OF_THE_LUONNOTAR_ANOINTED</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_ALTAR_OF_THE_LUONNOTAR_BLESSED</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_ALTAR_OF_THE_LUONNOTAR_CONSECRATED</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_ALTAR_OF_THE_LUONNOTAR_DIVINE</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_ALTAR_OF_THE_LUONNOTAR_EXALTED</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+			</Buildings>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_CULTURE</FlavorType>
+					<iFlavor>2</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_RELIGION</FlavorType>
+					<iFlavor>3</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_SCIENCE</FlavorType>
+					<iFlavor>1</iFlavor>
+				</Flavor>
+			</Flavors>
+			<iMoves>2</iMoves>
+			<iBaseDiscover>1000</iBaseDiscover>
+			<iDiscoverMultiplier>2</iDiscoverMultiplier>
+			<iAsset>0</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>1</iGroupSize>
+				<fMaxSpeed>1.25</fMaxSpeed>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>1</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_GRIGORI_MEDIC</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_DIMENSIONAL1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+		</UnitInfo>
+		<UnitInfo>        <!-- Great Sage 100-->
+			<Class>UNITCLASS_SCIENTIST</Class>
+			<Type>UNIT_GREAT_PROFESSOR_SCIENTIST</Type>
+			<UniqueNames>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_01</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_02</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_03</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_04</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_05</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_06</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_07</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_08</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_09</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_10</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_11</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_12</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_13</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_14</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_15</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_16</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_17</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_18</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_19</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_20</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_GREATESTPEOPLE_1</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_GREATESTPEOPLE_2</UniqueName>
+			</UniqueNames>
+			<Quotes>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_1</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_2</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_3</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_4</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_5</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_6</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_7</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_8</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_9</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_10</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_11</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_12</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_13</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_14</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_15</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_16</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_17</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_18</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_19</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_20</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_GREATESTPEOPLE_1</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_GREATESTPEOPLE_2</Quote>
+			</Quotes>
+			<Images>
+				<Image>art\interface\popups\greatpeople\Mikel Dylantyr.dds</Image>
+				<Image>art\interface\popups\greatpeople\Denelcor Hep.dds</Image>
+				<Image>art\interface\popups\greatpeople\Abruel Azburgah.dds</Image>
+				<Image>art\interface\popups\greatpeople\Tephus the Mistwalker.dds</Image>
+				<Image>art\interface\popups\greatpeople\Bradeline.dds</Image>
+				<Image>art\interface\popups\greatpeople\Malchavic.dds</Image>
+				<Image>art\interface\popups\greatpeople\Cu Roi.dds</Image>
+				<Image>art\interface\popups\greatpeople\Menolly NuValle.dds</Image>
+				<Image>art\interface\popups\greatpeople\Luciaqua.dds</Image>
+				<Image>art\interface\popups\greatpeople\Ozziel.dds</Image>
+				<Image>art\interface\popups\greatpeople\Renna NuElene.dds</Image>
+				<Image>art\interface\popups\greatpeople\Narsiss.dds</Image>
+				<Image>art\interface\popups\greatpeople\Delent Payne.dds</Image>
+				<Image>art\interface\popups\greatpeople\Asher the Encephalic.dds</Image>
+				<Image>art\interface\popups\greatpeople\Othmar the Astrologer.dds</Image>
+				<Image>art\interface\popups\greatpeople\Shoftiel.dds</Image>
+				<Image>art\interface\popups\greatpeople\Willim Marlander.dds</Image>
+				<Image>art\interface\popups\greatpeople\Ogra Natre.dds</Image>
+				<Image>art\interface\popups\greatpeople\Damabiah.dds</Image>
+				<Image>art\interface\popups\greatpeople\Magister Cultuum.dds</Image>
+				<Image>art\interface\popups\greatpeople\Satoru Iwata.dds</Image>
+				<Image>art\interface\popups\greatpeople\Lance Reddick.dds</Image>
+			</Images>
+			<Special>SPECIALUNIT_PEOPLE</Special>
+			<DefaultUnitAI>UNITAI_SCIENTIST</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_GREAT_PROFESSOR_SCIENTIST</Description>
+			<Civilopedia>TXT_KEY_CONCEPT_GREAT_PEOPLE_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_SCIENCE</Advisor>
+			<bGoldenAge>1</bGoldenAge>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_SCIENTIST</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_PROPHET</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<GreatPeoples>
+				<GreatPeople>
+					<GreatPeopleType>SPECIALIST_GREAT_SCIENTIST</GreatPeopleType>
+					<bGreatPeople>1</bGreatPeople>
+				</GreatPeople>
+			</GreatPeoples>
+			<Buildings>
+				<Building>
+					<BuildingType>BUILDING_STIGMATA_ON_THE_UNBORN</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_ACADEMY</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+			</Buildings>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_GOLD</FlavorType>
+					<iFlavor>1</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>2</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_SCIENCE</FlavorType>
+					<iFlavor>3</iFlavor>
+				</Flavor>
+			</Flavors>
+			<iMoves>2</iMoves>
+			<iBaseDiscover>1500</iBaseDiscover>
+			<iDiscoverMultiplier>3</iDiscoverMultiplier>
+			<iAsset>0</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>1</iGroupSize>
+				<fMaxSpeed>1.25</fMaxSpeed>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>1</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_GRIGORI_MEDIC</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_DIMENSIONAL1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+		</UnitInfo>
+		<UnitInfo>        <!-- Healer -->
+			<Class>UNITCLASS_HEALER</Class>
+			<Type>UNIT_GREAT_PROFESSOR_HEALER</Type>
+			<UniqueNames>
+				<UniqueName>Morgan Tud</UniqueName>
+				<UniqueName>Guo Yu</UniqueName>
+				<UniqueName>Pied Piper of Hamelin</UniqueName>
+				<UniqueName>Karadoc</UniqueName>
+				<UniqueName>Amello Raun</UniqueName>
+				<UniqueName>Lune of the White Knife</UniqueName>
+				<UniqueName>The Gift of Sucellus</UniqueName>
+				<UniqueName>Nala Plaguestalker</UniqueName>
+				<UniqueName>Riach Evinan</UniqueName>
+				<UniqueName>Mugati</UniqueName>
+				<UniqueName>Zil, Flower of Mekara</UniqueName>
+				<UniqueName>Nossina Tali'an</UniqueName>
+				<UniqueName>Lnelle</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_HEALER_GREATESTPEOPLE_1</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_HEALER_GREATESTPEOPLE_2</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_HEALER_GREATESTPEOPLE_3</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_HEALER_GREATESTPEOPLE_4</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_HEALER_GREATESTPEOPLE_5</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_HEALER_GREATESTPEOPLE_6</UniqueName>
+			</UniqueNames>
+			<Quotes>
+				<Quote>TXT_KEY_QUOTE_HEALER_1</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_2</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_3</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_4</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_5</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_6</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_7</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_8</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_9</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_10</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_11</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_12</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_13</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_GREATESTPEOPLE_1</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_GREATESTPEOPLE_2</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_GREATESTPEOPLE_3</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_GREATESTPEOPLE_4</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_GREATESTPEOPLE_5</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_GREATESTPEOPLE_6</Quote>
+			</Quotes>
+			<Images>
+				<Image>art\interface\popups\healer specialist\Image1.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image2.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image3.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image4.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image5.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image6.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image7.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image8.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image9.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image10.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image11.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image12.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image13.dds</Image>
+				<Image>art\interface\popups\greatpeople\Alan Rickman.dds</Image>
+				<Image>art\interface\popups\greatpeople\John Hurt.dds</Image>
+				<Image>art\interface\popups\greatpeople\Jon Pertwee.dds</Image>
+				<Image>art\interface\popups\greatpeople\Patrick Troughton.dds</Image>
+				<Image>art\interface\popups\greatpeople\William Hartnell.dds</Image>
+				<Image>art\interface\popups\greatpeople\David Mccallum.dds</Image>
+			</Images>
+			<Special>SPECIALUNIT_PEOPLE</Special>
+			<DefaultUnitAI>UNITAI_HEALER</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_GREAT_PROFESSOR_HEALER</Description>
+			<Civilopedia>TXT_KEY_CONCEPT_GREAT_PEOPLE_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<bGoldenAge>1</bGoldenAge>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_HEALER</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_RESERVE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<GreatPeoples>
+				<GreatPeople>
+					<GreatPeopleType>SPECIALIST_GREAT_HEALER</GreatPeopleType>
+					<bGreatPeople>1</bGreatPeople>
+				</GreatPeople>
+			</GreatPeoples>
+			<Buildings>
+				<Building>
+					<BuildingType>BUILDING_APOTHECARY</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+			</Buildings>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_CULTURE</FlavorType>
+					<iFlavor>1</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>2</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_HEALTH</FlavorType>
+					<iFlavor>3</iFlavor>
+				</Flavor>
+			</Flavors>
+			<iCombat>2</iCombat>
+			<iMoves>2</iMoves>
+			<iBaseDiscover>1000</iBaseDiscover>
+			<iDiscoverMultiplier>2</iDiscoverMultiplier>
+			<iAsset>0</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>1</iGroupSize>
+				<fMaxSpeed>1.25</fMaxSpeed>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>1</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_GRIGORI_MEDIC</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<iCombatDefense>5</iCombatDefense>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MEDIC1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MEDIC2</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MEDIC3</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MARCH</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_FIRST_AID</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_DIMENSIONAL1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+		</UnitInfo>
+		<UnitInfo>        <!-- Great Bard -->
+			<Class>UNITCLASS_ARTIST</Class>
+			<Type>UNIT_GREAT_PROFESSOR_ART</Type>
+			<UniqueNames>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_1</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_2</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_3</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_4</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_5</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_6</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_7</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_8</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_9</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_10</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_11</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_12</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_13</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_14</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_15</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_16</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_17</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_18</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_19</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_20</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_GREATESTPEOPLE_1</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_GREATESTPEOPLE_2</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_GREATESTPEOPLE_3</UniqueName>
+			</UniqueNames>
+			<Quotes>
+				<Quote>TXT_KEY_QUOTE_ARTIST_1</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_2</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_3</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_4</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_5</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_6</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_7</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_8</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_9</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_10</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_11</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_12</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_13</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_14</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_15</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_16</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_17</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_18</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_19</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_20</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_GREATESTPEOPLE_1</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_GREATESTPEOPLE_2</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_GREATESTPEOPLE_3</Quote>
+			</Quotes>
+			<Images>
+				<Image>art\interface\popups\greatpeople\Dain the Cytherean.dds</Image>
+				<Image>art\interface\popups\greatpeople\Ofeofae.dds</Image>
+				<Image>art\interface\popups\greatpeople\Airodaunt Balon.dds</Image>
+				<Image>art\interface\popups\greatpeople\Caspian Loch.dds</Image>
+				<Image>art\interface\popups\greatpeople\Taneath.dds</Image>
+				<Image>art\interface\popups\greatpeople\Pramas Olds.dds</Image>
+				<Image>art\interface\popups\greatpeople\Hodkamset.dds</Image>
+				<Image>art\interface\popups\greatpeople\Samawen the Ghost.dds</Image>
+				<Image>art\interface\popups\greatpeople\Pelia the Dancer.dds</Image>
+				<Image>art\interface\popups\greatpeople\Argase the Magician.dds</Image>
+				<Image>art\interface\popups\greatpeople\Ammabelle the Crazy.dds</Image>
+				<Image>art\interface\popups\greatpeople\Vernadot.dds</Image>
+				<Image>art\interface\popups\greatpeople\Clairone.dds</Image>
+				<Image>art\interface\popups\greatpeople\Persellus.dds</Image>
+				<Image>art\interface\popups\greatpeople\Melisandre.dds</Image>
+				<Image>art\interface\popups\greatpeople\Cladius, Chorus of the Damned.dds</Image>
+				<Image>art\interface\popups\greatpeople\Kamen Shandoun.dds</Image>
+				<Image>art\interface\popups\greatpeople\Dianchete.dds</Image>
+				<Image>art\interface\popups\greatpeople\Dhaunae the Illusionist.dds</Image>
+				<Image>art\interface\popups\greatpeople\the King of Squirrels.dds</Image>
+				<Image>art\interface\popups\greatpeople\Kirill Pokrovsky.dds</Image>
+				<Image>art\interface\popups\greatpeople\Robin Williams.dds</Image>
+				<Image>art\interface\popups\greatpeople\Bernard Cribbins.dds</Image>
+			</Images>
+			<Special>SPECIALUNIT_PEOPLE</Special>
+			<DefaultUnitAI>UNITAI_ARTIST</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_GREAT_PROFESSOR_ART</Description>
+			<Civilopedia>TXT_KEY_CONCEPT_GREAT_PEOPLE_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_CULTURE</Advisor>
+			<bGoldenAge>1</bGoldenAge>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ARTIST</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_PROPHET</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<GreatPeoples>
+				<GreatPeople>
+					<GreatPeopleType>SPECIALIST_GREAT_ARTIST</GreatPeopleType>
+					<bGreatPeople>1</bGreatPeople>
+				</GreatPeople>
+			</GreatPeoples>
+			<Buildings>
+				<Building>
+					<BuildingType>BUILDING_SONG_OF_AUTUMN</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_GUILD_MASQUERADE_TROUPE_CAMP</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_GUILD_FABRICAFORMA</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+			</Buildings>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_CULTURE</FlavorType>
+					<iFlavor>3</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>2</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_SCIENCE</FlavorType>
+					<iFlavor>1</iFlavor>
+				</Flavor>
+			</Flavors>
+			<iMoves>2</iMoves>
+			<iBaseDiscover>1000</iBaseDiscover>
+			<iDiscoverMultiplier>2</iDiscoverMultiplier>
+			<iGreatWorkCulture>4000</iGreatWorkCulture>
+			<iAsset>0</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>1</iGroupSize>
+				<fMaxSpeed>1.25</fMaxSpeed>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>1</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_GRIGORI_MEDIC</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_DIMENSIONAL1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+		</UnitInfo>
+		<UnitInfo>        <!-- Great Bard -->
+			<Class>UNITCLASS_ARTIST</Class>
+			<Type>UNIT_GREAT_PROFESSOR</Type>
+			<UniqueNames>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_1</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_2</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_3</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_4</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_5</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_6</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_7</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_8</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_9</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_10</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_11</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_12</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_13</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_14</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_15</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_16</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_17</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_18</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_19</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_20</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_GREATESTPEOPLE_1</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_GREATESTPEOPLE_2</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ARTIST_GREATESTPEOPLE_3</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_1</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_2</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_3</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_4</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_5</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_6</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_7</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_8</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_9</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_10</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_11</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_12</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_13</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_14</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_15</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_16</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_17</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_18</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_19</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_20</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ENGINEER_21</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_1</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_2</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_3</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_4</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_5</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_6</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_7</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_8</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_9</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_10</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_11</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_12</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_13</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_14</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_15</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_16</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_17</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_18</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_19</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_20</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_MERCHANT_GREATESTPEOPLE_1</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_1</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_2</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_3</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_4</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_5</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_6</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_7</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_8</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_9</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_10</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_11</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_12</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_13</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_14</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_15</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_16</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_17</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_18</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_19</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_20</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_GREATESTPEOPLE_1</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_GREATESTPEOPLE_2</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_01</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_02</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_03</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_04</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_05</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_06</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_07</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_08</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_09</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_10</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_11</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_12</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_13</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_14</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_15</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_16</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_17</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_18</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_19</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_20</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_GREATESTPEOPLE_1</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_SCIENTIST_GREATESTPEOPLE_2</UniqueName>
+				<UniqueName>Morgan Tud</UniqueName>
+				<UniqueName>Guo Yu</UniqueName>
+				<UniqueName>Pied Piper of Hamelin</UniqueName>
+				<UniqueName>Karadoc</UniqueName>
+				<UniqueName>Amello Raun</UniqueName>
+				<UniqueName>Lune of the White Knife</UniqueName>
+				<UniqueName>The Gift of Sucellus</UniqueName>
+				<UniqueName>Nala Plaguestalker</UniqueName>
+				<UniqueName>Riach Evinan</UniqueName>
+				<UniqueName>Mugati</UniqueName>
+				<UniqueName>Zil, Flower of Mekara</UniqueName>
+				<UniqueName>Nossina Tali'an</UniqueName>
+				<UniqueName>Lnelle</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_HEALER_GREATESTPEOPLE_1</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_HEALER_GREATESTPEOPLE_2</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_HEALER_GREATESTPEOPLE_3</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_HEALER_GREATESTPEOPLE_4</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_HEALER_GREATESTPEOPLE_5</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_HEALER_GREATESTPEOPLE_6</UniqueName>
+			</UniqueNames>
+			<Quotes>
+				<Quote>TXT_KEY_QUOTE_HEALER_1</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_2</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_3</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_4</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_5</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_6</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_7</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_8</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_9</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_10</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_11</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_12</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_13</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_GREATESTPEOPLE_1</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_GREATESTPEOPLE_2</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_GREATESTPEOPLE_3</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_GREATESTPEOPLE_4</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_GREATESTPEOPLE_5</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_GREATESTPEOPLE_6</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_1</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_2</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_3</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_4</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_5</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_6</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_7</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_8</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_9</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_10</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_11</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_12</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_13</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_14</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_15</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_16</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_17</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_18</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_19</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_20</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_GREATESTPEOPLE_1</Quote>
+				<Quote>TXT_KEY_QUOTE_SCIENTIST_GREATESTPEOPLE_2</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_1</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_2</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_3</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_4</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_5</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_6</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_7</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_8</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_9</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_10</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_11</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_12</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_13</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_14</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_15</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_16</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_17</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_18</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_19</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_20</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_GREATESTPEOPLE_1</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_GREATESTPEOPLE_2</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_1</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_2</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_3</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_4</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_5</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_6</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_7</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_8</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_9</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_10</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_11</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_12</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_13</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_14</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_15</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_16</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_17</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_18</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_19</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_20</Quote>
+				<Quote>TXT_KEY_QUOTE_MERCHANT_GREATESTPEOPLE_1</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_1</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_2</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_3</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_4</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_5</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_6</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_7</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_8</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_9</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_10</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_11</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_12</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_13</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_14</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_15</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_16</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_17</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_18</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_19</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_20</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_GREATESTPEOPLE_1</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_GREATESTPEOPLE_2</Quote>
+				<Quote>TXT_KEY_QUOTE_ARTIST_GREATESTPEOPLE_3</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_1</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_2</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_3</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_4</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_5</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_6</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_7</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_8</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_9</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_10</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_11</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_12</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_13</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_14</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_15</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_16</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_17</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_18</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_19</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_20</Quote>
+				<Quote>TXT_KEY_QUOTE_ENGINEER_21</Quote>
+			</Quotes>
+			<Images>
+				<Image>art\interface\popups\healer specialist\Image1.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image2.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image3.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image4.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image5.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image6.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image7.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image8.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image9.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image10.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image11.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image12.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image13.dds</Image>
+				<Image>art\interface\popups\greatpeople\Alan Rickman.dds</Image>
+				<Image>art\interface\popups\greatpeople\John Hurt.dds</Image>
+				<Image>art\interface\popups\greatpeople\Jon Pertwee.dds</Image>
+				<Image>art\interface\popups\greatpeople\Patrick Troughton.dds</Image>
+				<Image>art\interface\popups\greatpeople\William Hartnell.dds</Image>
+				<Image>art\interface\popups\greatpeople\David Mccallum.dds</Image>
+				<Image>art\interface\popups\greatpeople\Mikel Dylantyr.dds</Image>
+				<Image>art\interface\popups\greatpeople\Denelcor Hep.dds</Image>
+				<Image>art\interface\popups\greatpeople\Abruel Azburgah.dds</Image>
+				<Image>art\interface\popups\greatpeople\Tephus the Mistwalker.dds</Image>
+				<Image>art\interface\popups\greatpeople\Bradeline.dds</Image>
+				<Image>art\interface\popups\greatpeople\Malchavic.dds</Image>
+				<Image>art\interface\popups\greatpeople\Cu Roi.dds</Image>
+				<Image>art\interface\popups\greatpeople\Menolly NuValle.dds</Image>
+				<Image>art\interface\popups\greatpeople\Luciaqua.dds</Image>
+				<Image>art\interface\popups\greatpeople\Ozziel.dds</Image>
+				<Image>art\interface\popups\greatpeople\Renna NuElene.dds</Image>
+				<Image>art\interface\popups\greatpeople\Narsiss.dds</Image>
+				<Image>art\interface\popups\greatpeople\Delent Payne.dds</Image>
+				<Image>art\interface\popups\greatpeople\Asher the Encephalic.dds</Image>
+				<Image>art\interface\popups\greatpeople\Othmar the Astrologer.dds</Image>
+				<Image>art\interface\popups\greatpeople\Shoftiel.dds</Image>
+				<Image>art\interface\popups\greatpeople\Willim Marlander.dds</Image>
+				<Image>art\interface\popups\greatpeople\Ogra Natre.dds</Image>
+				<Image>art\interface\popups\greatpeople\Damabiah.dds</Image>
+				<Image>art\interface\popups\greatpeople\Magister Cultuum.dds</Image>
+				<Image>art\interface\popups\greatpeople\Satoru Iwata.dds</Image>
+				<Image>art\interface\popups\greatpeople\Lance Reddick.dds</Image>
+				<Image>art\interface\popups\greatpeople\Tuatha-De-Danann.dds</Image>
+				<Image>art\interface\popups\greatpeople\Aes Sidhe.dds</Image>
+				<Image>art\interface\popups\greatpeople\Teutates.dds</Image>
+				<Image>art\interface\popups\greatpeople\Belatu Cadros.dds</Image>
+				<Image>art\interface\popups\greatpeople\Cenn Cruaich.dds</Image>
+				<Image>art\interface\popups\greatpeople\Mag Tuireadh.dds</Image>
+				<Image>art\interface\popups\greatpeople\Nyarlat.dds</Image>
+				<Image>art\interface\popups\greatpeople\Aengus Saone.dds</Image>
+				<Image>art\interface\popups\greatpeople\Cailleach Beara.dds</Image>
+				<Image>art\interface\popups\greatpeople\Calwinna of Junil.dds</Image>
+				<Image>art\interface\popups\greatpeople\Talia Gosam.dds</Image>
+				<Image>art\interface\popups\greatpeople\Lita the Witch.dds</Image>
+				<Image>art\interface\popups\greatpeople\Abellio.dds</Image>
+				<Image>art\interface\popups\greatpeople\Abnoba.dds</Image>
+				<Image>art\interface\popups\greatpeople\Cinnia.dds</Image>
+				<Image>art\interface\popups\greatpeople\Lanthis.dds</Image>
+				<Image>art\interface\popups\greatpeople\Pontif Elmin.dds</Image>
+				<Image>art\interface\popups\greatpeople\Fand.dds</Image>
+				<Image>art\interface\popups\greatpeople\Gosea.dds</Image>
+				<Image>art\interface\popups\greatpeople\Vaghan of Lugus.dds</Image>
+				<Image>art\interface\popups\greatpeople\Ron Glass.dds</Image>
+				<Image>art\interface\popups\greatpeople\cary-hiroyuki_tagawa.dds</Image>
+				<Image>art\interface\popups\greatpeople\Jenkin.dds</Image>
+				<Image>art\interface\popups\greatpeople\Rusa Pariek.dds</Image>
+				<Image>art\interface\popups\greatpeople\Omar of Turin.dds</Image>
+				<Image>art\interface\popups\greatpeople\Abdulkani the Mirage.dds</Image>
+				<Image>art\interface\popups\greatpeople\Belarchass the Slaver.dds</Image>
+				<Image>art\interface\popups\greatpeople\Mavreen Mawklistyr.dds</Image>
+				<Image>art\interface\popups\greatpeople\Maaerun.dds</Image>
+				<Image>art\interface\popups\greatpeople\Joffa the Barakite.dds</Image>
+				<Image>art\interface\popups\greatpeople\Goodreau.dds</Image>
+				<Image>art\interface\popups\greatpeople\Florina of Lorinwood.dds</Image>
+				<Image>art\interface\popups\greatpeople\Agravaine.dds</Image>
+				<Image>art\interface\popups\greatpeople\Kersasus Actium.dds</Image>
+				<Image>art\interface\popups\greatpeople\Geogi Bandon.dds</Image>
+				<Image>art\interface\popups\greatpeople\Oparr the Underhand.dds</Image>
+				<Image>art\interface\popups\greatpeople\Nephrion Cathwar.dds</Image>
+				<Image>art\interface\popups\greatpeople\Vohu Manah.dds</Image>
+				<Image>art\interface\popups\greatpeople\Gonael.dds</Image>
+				<Image>art\interface\popups\greatpeople\Enos the Maul.dds</Image>
+				<Image>art\interface\popups\greatpeople\Sopheriel Mehayye.dds</Image>
+				<Image>art\interface\popups\greatpeople\Sopheriel Memeth.dds</Image>
+				<Image>art\interface\popups\greatpeople\Robert Vaughn.dds</Image>
+				<Image>art\interface\popups\greatpeople\Dain the Cytherean.dds</Image>
+				<Image>art\interface\popups\greatpeople\Ofeofae.dds</Image>
+				<Image>art\interface\popups\greatpeople\Airodaunt Balon.dds</Image>
+				<Image>art\interface\popups\greatpeople\Caspian Loch.dds</Image>
+				<Image>art\interface\popups\greatpeople\Taneath.dds</Image>
+				<Image>art\interface\popups\greatpeople\Pramas Olds.dds</Image>
+				<Image>art\interface\popups\greatpeople\Hodkamset.dds</Image>
+				<Image>art\interface\popups\greatpeople\Samawen the Ghost.dds</Image>
+				<Image>art\interface\popups\greatpeople\Pelia the Dancer.dds</Image>
+				<Image>art\interface\popups\greatpeople\Argase the Magician.dds</Image>
+				<Image>art\interface\popups\greatpeople\Ammabelle the Crazy.dds</Image>
+				<Image>art\interface\popups\greatpeople\Vernadot.dds</Image>
+				<Image>art\interface\popups\greatpeople\Clairone.dds</Image>
+				<Image>art\interface\popups\greatpeople\Persellus.dds</Image>
+				<Image>art\interface\popups\greatpeople\Melisandre.dds</Image>
+				<Image>art\interface\popups\greatpeople\Cladius, Chorus of the Damned.dds</Image>
+				<Image>art\interface\popups\greatpeople\Kamen Shandoun.dds</Image>
+				<Image>art\interface\popups\greatpeople\Dianchete.dds</Image>
+				<Image>art\interface\popups\greatpeople\Dhaunae the Illusionist.dds</Image>
+				<Image>art\interface\popups\greatpeople\the King of Squirrels.dds</Image>
+				<Image>art\interface\popups\greatpeople\Kirill Pokrovsky.dds</Image>
+				<Image>art\interface\popups\greatpeople\Robin Williams.dds</Image>
+				<Image>art\interface\popups\greatpeople\Bernard Cribbins.dds</Image>
+				<Image>art\interface\popups\greatpeople\Khmer Otterfig.dds</Image>
+				<Image>art\interface\popups\greatpeople\Faber Ozzie.dds</Image>
+				<Image>art\interface\popups\greatpeople\Hoyden Drew.dds</Image>
+				<Image>art\interface\popups\greatpeople\Milana.dds</Image>
+				<Image>art\interface\popups\greatpeople\Zoot Ghent Gear.dds</Image>
+				<Image>art\interface\popups\greatpeople\Ethel Agames.dds</Image>
+				<Image>art\interface\popups\greatpeople\Fodgel Thor.dds</Image>
+				<Image>art\interface\popups\greatpeople\Bareke.dds</Image>
+				<Image>art\interface\popups\greatpeople\Zehanpuryuh.dds</Image>
+				<Image>art\interface\popups\greatpeople\Vesta Glory.dds</Image>
+				<Image>art\interface\popups\greatpeople\Valoel.dds</Image>
+				<Image>art\interface\popups\greatpeople\Tilonas Sal.dds</Image>
+				<Image>art\interface\popups\greatpeople\Hulik Darkanus.dds</Image>
+				<Image>art\interface\popups\greatpeople\Athos Ulthane.dds</Image>
+				<Image>art\interface\popups\greatpeople\Gregamir.dds</Image>
+				<Image>art\interface\popups\greatpeople\Haldayne Ozark.dds</Image>
+				<Image>art\interface\popups\greatpeople\Schrewneil.dds</Image>
+				<Image>art\interface\popups\greatpeople\Pistis Sophia.dds</Image>
+				<Image>art\interface\popups\greatpeople\Thorion Vo.dds</Image>
+				<Image>art\interface\popups\greatpeople\Aegeus Isildur.dds</Image>
+				<Image>art\interface\popups\greatpeople\MootusPont.dds</Image>
+			</Images>
+			<Special>SPECIALUNIT_PEOPLE</Special>
+			<DefaultUnitAI>UNITAI_PROPHET</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_GREAT_PROFESSOR</Description>
+			<Civilopedia>TXT_KEY_CONCEPT_GREAT_PEOPLE_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_CULTURE</Advisor>
+			<bGoldenAge>1</bGoldenAge>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ARTIST</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_PROPHET</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_ENGINEER</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_MERCHANT</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_SCIENTIST</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_HEALER</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<GreatPeoples>
+				<GreatPeople>
+					<GreatPeopleType>SPECIALIST_GREAT_ARTIST</GreatPeopleType>
+					<bGreatPeople>1</bGreatPeople>
+				</GreatPeople>
+			</GreatPeoples>
+			<Buildings>
+				<Building>
+					<BuildingType>BUILDING_COLLEGE</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_APOTHECARY</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_ACADEMY</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_CODE_OF_JUNIL</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_TABLETS_OF_BAMBUR</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_THE_NECRONOMICON</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_NOX_NOCTIS</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_SONG_OF_AUTUMN</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_STIGMATA_ON_THE_UNBORN</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_DIES_DIEI</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_CITADEL_OF_THE_HAND</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_ALTAR_OF_THE_LUONNOTAR</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_ALTAR_OF_THE_LUONNOTAR_ANOINTED</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_ALTAR_OF_THE_LUONNOTAR_BLESSED</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_ALTAR_OF_THE_LUONNOTAR_CONSECRATED</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_ALTAR_OF_THE_LUONNOTAR_DIVINE</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_ALTAR_OF_THE_LUONNOTAR_EXALTED</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_GUILD_FISHER</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_GUILD_FABRICAFORMA</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_GUILD_FARMERS_GUILD</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_GUILD_MASQUERADE_TROUPE_CAMP</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_MASTER_SMITH</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_MASTER_FLETCHER</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_MASTER_BREEDER</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_MASTER_OUTFITTER</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_MASTER_SIEGE</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_GUILD_STONEFIRE</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+			</Buildings>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_CULTURE</FlavorType>
+					<iFlavor>3</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>2</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_SCIENCE</FlavorType>
+					<iFlavor>1</iFlavor>
+				</Flavor>
+			</Flavors>
+			<iMoves>2</iMoves>
+			<iBaseDiscover>1000</iBaseDiscover>
+			<iDiscoverMultiplier>2</iDiscoverMultiplier>
+			<iGreatWorkCulture>4000</iGreatWorkCulture>
+			<iBaseHurry>500</iBaseHurry>
+			<iHurryMultiplier>20</iHurryMultiplier>
+			<iBaseTrade>500</iBaseTrade>
+			<iTradeMultiplier>200</iTradeMultiplier>
+			<iAsset>0</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>1</iGroupSize>
+				<fMaxSpeed>1.25</fMaxSpeed>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>1</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_GRIGORI_MEDIC</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_DIMENSIONAL1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MEDIC1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MEDIC2</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_FIRST_AID</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+		</UnitInfo>
 		<UnitInfo>		<!-- Student of the Emyprean -->
 			<Class>UNITCLASS_DISCIPLE_EMPYREAN</Class>
 			<Type>UNIT_STUDENT_EMPYREAN</Type>
