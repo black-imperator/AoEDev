@@ -138,4 +138,13 @@ def spellElementalEquilibrium(caster):
                         elif chance < 72: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_AIR_I_DAO'))
                         elif chance < 95: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_FORCE'))
                         else: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_EARTH_I_DAO'))
+
+        else:
+                pPlot.setImprovementType(-1)
+                if gc.getBonusInfo(iBonus).getBonusClassType() == getInfoType('BONUSCLASS_MANA') or iBonus == gc.getInfoTypeForString("BONUS_MANA"):
+                        if chance < 20: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_FIRE_I_DAO'))
+                        elif chance < 40: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_WATER_I_DAO'))
+                        elif chance < 60: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_AIR_I_DAO'))
+                        elif chance < 80: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_FORCE'))
+                        else: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_EARTH_I_DAO'))
                 
