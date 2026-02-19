@@ -95,7 +95,7 @@ def spellElementalEquilibrium(caster):
 	iLi = pPlayer.getImprovementCount(gc.getInfoTypeForString('IMPROVEMENT_MANA_FIRE_I_DAO'))
 	iGen = pPlayer.getImprovementCount(gc.getInfoTypeForString('IMPROVEMENT_MANA_EARTH_I_DAO'))
 	iQian = pPlayer.getImprovementCount(gc.getInfoTypeForString('IMPROVEMENT_MANA_AIR_I_DAO'))
-	iPoshi = pPlayer.getImprovementCount(gc.getInfoTypeForString('IMPROVEMENT_FORCE_NODE'))
+	iPoshi = pPlayer.getImprovementCount(gc.getInfoTypeForString('IMPROVEMENT_MANA_FORCE'))
 	iBonus = pPlot.getBonusType(-1)
 	setBonus = pPlot.setBonusType
 	randNum = CyGame().getSorenRandNum
@@ -109,7 +109,7 @@ def spellElementalEquilibrium(caster):
                         if chance < 24: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_FIRE_I_DAO'))
                         elif chance < 48: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_WATER_I_DAO'))
                         elif chance < 72: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_EARTH_I_DAO'))
-                        elif chance < 95: pPlot.setImprovementType(getInfoType('IMPROVEMENT_FORCE_NODE'))
+                        elif chance < 95: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_FORCE'))
                         else: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_AIR_I_DAO'))
                
         if (iQian + iLi + iGen + iPoshi) < (iKan):
@@ -118,7 +118,7 @@ def spellElementalEquilibrium(caster):
                         if chance < 24: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_FIRE_I_DAO'))
                         elif chance < 48: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_AIR_I_DAO'))
                         elif chance < 72: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_EARTH_I_DAO'))
-                        elif chance < 95: pPlot.setImprovementType(getInfoType('IMPROVEMENT_FORCE_NODE'))
+                        elif chance < 95: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_FORCE'))
                         else: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_WATER_I_DAO'))
                 
         if (iKan + iQian + iGen + iPoshi) < (iLi):
@@ -127,7 +127,7 @@ def spellElementalEquilibrium(caster):
                         if chance < 24: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_AIR_I_DAO'))
                         elif chance < 48: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_WATER_I_DAO'))
                         elif chance < 72: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_EARTH_I_DAO'))
-                        elif chance < 95: pPlot.setImprovementType(getInfoType('IMPROVEMENT_FORCE_NODE'))
+                        elif chance < 95: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_FORCE'))
                         else: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_FIRE_I_DAO'))
                 
         if (iKan + iLi + iQian + iPoshi) < (iGen):
@@ -136,6 +136,6 @@ def spellElementalEquilibrium(caster):
                         if chance < 24: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_FIRE_I_DAO'))
                         elif chance < 48: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_WATER_I_DAO'))
                         elif chance < 72: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_AIR_I_DAO'))
-                        elif chance < 95: pPlot.setImprovementType(getInfoType('IMPROVEMENT_FORCE_NODE'))
+                        elif chance < 95: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_FORCE'))
                         else: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_EARTH_I_DAO'))
                 
