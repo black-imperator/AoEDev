@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Risna -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_VAMP_BLOOD_TEMPLE_NAME</Tag>
+        <English>Blood Temple</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_VAMP_BLOOD_TEMPLE_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_VAMP_BLOOD_TEMPLE_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_VAMP_BLOOD_FOUNDRY_NAME</Tag>
+        <English>Blood Foundry</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_BLOOD_FOUNDRY_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_VAMP_SANGUINE_ALTAR_NAME</Tag>
+        <English>Sanguine Altar</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_VAMP_SANGUINE_ALTAR_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_VAMP_SANGUINE_ALTAR_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+</Civ4GameText>

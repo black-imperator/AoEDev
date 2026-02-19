@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Risna -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_VAMP_DISCIPLE</Tag>
+        <English>Blood Acolyte</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_VAMP_DISCIPLE_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_DISCIPLE_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_VAMP_BLOOD_SEER</Tag>
+        <English>Blood Seer</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_VAMP_BLOOD_SEER_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_VAMP_BLOOD_SEER_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_VAMP_BLOOD_SISTER</Tag>
+        <English>Blood Sister</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_VAMP_BLOOD_SISTER_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_VAMP_BLOOD_SISTER_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_VEIN_LORD</Tag>
+        <English>Vein Lord</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_VEIN_LORD_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_VEIN_LORD_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+</Civ4GameText>

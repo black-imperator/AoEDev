@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Basic Infos -->
+
+<Civ4TraitTriggerInfos xmlns="x-schema:VAMP_CIV4CivilizationsSchema.xml">
+	<TraitTriggerInfos>
+        <TraitTriggerInfo> <!-- Build Blood Temple				Vampiric Cult-->
+			<Type>TRAITTRIGGER_CONSTRUCT_BLOOD_TEMPLE_VAMP</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_VAMP_CULT_VAMPIRIC</TraitType>
+					<iModifier>25</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>		
+				<TraitHookType>TRAITHOOK_CONSTRUCT_BUILDING</TraitHookType>
+			<PrereqBuildingClassType>BUILDINGCLASS_VAMP_BLOOD_TEMPLE</PrereqBuildingClassType>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Build Blood Foundry				Vampiric Cult-->
+			<Type>TRAITTRIGGER_CONSTRUCT_BLOOD_FOUNDRY_VAMP</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_VAMP_CULT_VAMPIRIC</TraitType>
+					<iModifier>25</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>		
+				<TraitHookType>TRAITHOOK_CONSTRUCT_BUILDING</TraitHookType>
+			<PrereqBuildingClassType>BUILDINGCLASS_VAMP_BLOOD_FOUNDRY</PrereqBuildingClassType>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Train Vampire Disciple 			Vampiric Cult-->
+			<Type>TRAITTRIGGER_TRAIN_VAMP_DISCIPLE_VAMP</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_VAMP_CULT_VAMPIRIC</TraitType>
+					<iModifier>5</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
+			<TraitHookType>TRAITHOOK_TRAIN_UNIT</TraitHookType>
+			<PrereqUnitClassType>UNITCLASS_VAMP_DISCIPLE</PrereqUnitClassType>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Train Blood Seer 				Vampiric Cult-->
+			<Type>TRAITTRIGGER_TRAIN_BLOOD_SEER_VAMP</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_VAMP_CULT_VAMPIRIC</TraitType>
+					<iModifier>8</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
+			<TraitHookType>TRAITHOOK_TRAIN_UNIT</TraitHookType>
+			<PrereqUnitClassType>UNITCLASS_VAMP_BLOOD_SEER</PrereqUnitClassType>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Train Blood Sister 				Vampiric Cult-->
+			<Type>TRAITTRIGGER_TRAIN_BLOOD_SISTER_VAMP</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_VAMP_CULT_VAMPIRIC</TraitType>
+					<iModifier>10</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
+			<TraitHookType>TRAITHOOK_TRAIN_UNIT</TraitHookType>
+			<PrereqUnitClassType>UNITCLASS_VAMP_BLOOD_SISTER</PrereqUnitClassType>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Player turn Aristocracy 		Vampiric Cult -->
+			<Type>TRAITTRIGGER_PLAYER_TURN_CIVIC_ARISTOCRACY_VAMP</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_VAMP_CULT_VAMPIRIC</TraitType>
+					<iModifier>1</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
+			<TraitHookType>TRAITHOOK_PLAYER_TURN</TraitHookType>
+			<PrereqCivics>
+				<CivicType>CIVIC_ARISTOCRACY</CivicType>
+			</PrereqCivics>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Cast                Feast	  				Vampiric Cult -->
+			<Type>TRAITTRIGGER_CAST_FEAST_VAMP</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_VAMP_CULT_VAMPIRIC</TraitType>
+					<iModifier>15</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
+			<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
+			<PrereqSpellType>SPELL_FEAST</PrereqSpellType>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Tech                Way of the Wicked   	Vampiric Cult -->
+			<Type>TRAITTRIGGER_TECH_WAY_OF_THE_WICKED_VAMP</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_VAMP_CULT_VAMPIRIC</TraitType>
+					<iModifier>200</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
+			<PrereqTech>TECH_WAY_OF_THE_WICKED</PrereqTech>
+			<TraitHookType>TRAITHOOK_TECH</TraitHookType>	
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Kill                kills anything              Vampiric Cult  -->
+			<Type>TRAITTRIGGER_KILL_UNIT_VAMP</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_VAMP_CULT_VAMPIRIC</TraitType>
+					<iModifier>2</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
+			<TraitHookType>TRAITHOOK_KILL_UNIT</TraitHookType>
+		</TraitTriggerInfo>
+    </TraitTriggerInfos>
+</Civ4TraitTriggerInfos>

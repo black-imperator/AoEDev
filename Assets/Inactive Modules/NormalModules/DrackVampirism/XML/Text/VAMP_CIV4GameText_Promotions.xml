@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Risna -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_VAMPIRE_THRALL_NAME</Tag>
+        <English>Vampire Thrall</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_VAMPIRE_THRALL_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_CLAN_FLAUROS_NAME</Tag>
+        <English>Clan Flauros</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_CLAN_FLAUROS_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_WARRIOR_RITE_NAME</Tag>
+        <English>Warrior Rite</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_WARRIOR_RITE_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_BATTLE_LUST_NAME</Tag>
+        <English>Battle Lust</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_BATTLE_LUST_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_BATTLE_CHAMPION_NAME</Tag>
+        <English>Battle Champion</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_BATTLE_CHAMPION_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_CLAN_RAVANA_NAME</Tag>
+        <English>Clan Ravana</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_CLAN_RAVANA_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_CLAN_BAOBHAN_NAME</Tag>
+        <English>Clan Baobhan</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_CLAN_BAOBHAN_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_ETHEREAL_BODY_NAME</Tag>
+        <English>Ethereal Body</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_ETHEREAL_BODY_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_BLOODY_DUKE_NAME</Tag>
+        <English>Bloody Duke</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_BLOODY_DUKE_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_HUNTMASTER_NAME</Tag>
+        <English>Huntmaster</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_HUNTMASTER_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_NIGHT_STALKER_NAME</Tag>
+        <English>Night Stalker</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_NIGHT_STALKER_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_SHADOW_MONARCH_NAME</Tag>
+        <English>Shadow Monarch</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_SHADOW_MONARCH_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_UNENDING_PURSUIT_NAME</Tag>
+        <English>Unending Pursuit</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_UNENDING_PURSUIT_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_DARK_DUKE_NAME</Tag>
+        <English>Dark Duke</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_DARK_DUKE_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_VAMPIRE_SMILE_NAME</Tag>
+        <English>Vampire Smile</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_VAMPIRE_SMILE_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_VAMPIRIC_INFLUENCED_NAME</Tag>
+        <English>Vampiric Influenced</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_VAMPIRIC_INFLUENCED_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_URBAN_VAMPIRE_NAME</Tag>
+        <English>Urban Vampire</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_URBAN_VAMPIRE_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_VAMPIRIC_LEADER_NAME</Tag>
+        <English>Vampiric Leader</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_VAMPIRIC_LEADER_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_VAMPIRIC_INSPIRATION_NAME</Tag>
+        <English>Vampiric Inspiration</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_VAMPIRIC_INSPIRATION_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_VAMPIRIC_CHARMED_NAME</Tag>
+        <English>Vampiric Charmed</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_VAMPIRIC_CHARMED_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+</Civ4GameText>

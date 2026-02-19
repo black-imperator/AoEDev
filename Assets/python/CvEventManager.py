@@ -3548,6 +3548,18 @@ class CvEventManager:
 		if iCiv == self.Civilizations["Austrin"]:
 			pCity.setNumRealBuilding(self.Buildings["Austrin Settlement"], 1)
 
+		if pCity.getNumBuilding(self.Buildings["Dragons Hoard"])>0:
+			iX			= pCity.getX()
+			iY			= pCity.getY()
+			for dX in range(-5,6):
+				for dY in range(-5,6):
+					pPlot		= CyMap().plot(iX+dX, iY+dY)
+					if pPlot.isNone():
+						continue
+					for i in range(pPlot.getNumUnits()):
+						pUnit=pPlot.getUnit(i)
+						if(pUnit.getUnitType()==self.Heroes["Acheron"]):
+							pUnit.setHasPromotion(self.Promotions["Effects"]["Acheron Leashed"], False)
 		if CyGame().getWBMapScript():
 			sf.onCityAcquired(iPreviousOwner, iNewOwner, pCity, bConquest, bTrade)
 

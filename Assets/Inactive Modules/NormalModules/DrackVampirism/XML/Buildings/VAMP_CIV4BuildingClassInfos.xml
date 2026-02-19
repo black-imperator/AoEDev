@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Building Class Infos -->
+<!-- Created by Drackzahn -->
+<Civ4BuildingClassInfos xmlns="x-schema:VAMP_CIV4BuildingsSchema.xml">
+	<BuildingClassInfos>
+		<BuildingClassInfo> <!-- Blood Temple -->
+			<Type>BUILDINGCLASS_VAMP_BLOOD_TEMPLE</Type>
+			<Description>TXT_KEY_BUILDING_VAMP_BLOOD_TEMPLE_NAME</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_VAMP_BLOOD_TEMPLE</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo> <!-- Blood Foundry -->
+			<Type>BUILDINGCLASS_VAMP_BLOOD_FOUNDRY</Type>
+			<Description>TXT_KEY_BUILDING_VAMP_BLOOD_FOUNDRY_NAME</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_VAMP_BLOOD_FOUNDRY</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo> <!-- Sanguine Altar -->
+			<Type>BUILDINGCLASS_VAMP_SANGUINE_ALTAR</Type>
+			<Description>TXT_KEY_BUILDING_VAMP_SANGUINE_ALTAR_NAME</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_VAMP_SANGUINE_ALTAR</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+	</BuildingClassInfos>
+</Civ4BuildingClassInfos>

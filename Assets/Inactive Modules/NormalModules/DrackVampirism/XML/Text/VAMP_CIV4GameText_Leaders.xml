@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Risna -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_KIRI_ALEXIS</Tag>
+        <English>Kiri Valas Alexis</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_KIRI_ALEXIS_PEDIA</Tag>
+        <English>
+Kiri was once a mighty vampire, proud and skilled. She held great pride in the fact that it was Valas who made her a vampire. For many years, she served the Calabim Thrones as an expert scout, always bringing her the information she required for her next steps. It was easy for her to slip into roles, to lie, and to deceive others. She infiltrated many villages, towns, and even armies from time to time, just to collect information or to eliminate an important enemy. That was at least till she met her master. Perpentach.
+
+It was a mission like so many before for Kiri. Infiltrate an enemy army, collect information, poison their water supply, and retreat before someone asks questions. Yet, much to Kiris misfortune, it was Perpentach himself who was part of this arm,y and he instantly knew that she had infiltrated his men. For the mighty mind mage, it was an easy task to realize that Kiri was not who she played. And so he invaded her mind, brought havoc and chaos into it, and let her dance to his strings. It filled him with joy as he realized just what had run into his hands, what kind of wonderful toy he now had to play with. This inner joy let him rewrite Kiri, making her into the slightly insane clown she is today. A clown who is still a vampire and remains extremely dangerous to everyone around her.
+</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_OS_KRONT_CHUREL</Tag>
+        <English>Os-Kront</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_OS_KRONT_CHUREL_PEDIA</Tag>
+        <English>
+It was not easy for Kront to survive the fall of his Clan. For years, he wandered alone through the harsh wilderness, trying to get as much distance as he could between himself and the Calabim territories. After all, he did not want to share the fate of many of his clansmen after their blood father slapped Alexis. Naturally, he felt the curse that the vampire mother laid onto his clan seeping into him. It was luck for Kront that he learned a few spells and made a lot of useful connections during his years. With the help of a friend, he gained an affinity for force mana and prevented the curse afrom ffecting him further. Nevertheless, he was no man who played with his luck, and so he ran further, far, far away from everything and everyone he knew. Eventually, he found a tribe that he could not describe as anything but barbarians. The Doviello.
+
+He joined their ranks after he clashed with them and ripped out the throats of three of their warriors before he was eventually driven into a corner. He could have run. But he decided to submit for now, to join their ranks as a warrior. Kront was tired of running, and the savage nature of the Doviello granted him enough enemies to feast on. After he joined the Doviello, he let go of his old name of Kront Petra Churel and called himself Os-Kront. 
+        </English>
+    </TEXT>
+</Civ4GameText>

@@ -22184,6 +22184,12 @@ void CvUnit::setHasPromotion(PromotionTypes eIndex, bool bNewValue, bool bSupres
 			if (kPromotion.getLeashChance() > 0)
 			{
 				changeLeashChance(kPromotion.getLeashChance() * iChange);
+				if (iChange == -1 && getLeashChance()==0)
+				{
+					setLeashRange(-1);
+					setLeashX(INVALID_PLOT_COORD);
+					setLeashY(INVALID_PLOT_COORD);
+				}
 			}
 
 			if (isLeashed())

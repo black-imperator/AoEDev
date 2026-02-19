@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Risna -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_VAMP_CULT_VAMPIRIC</Tag>
+        <English>Cult Vampiric</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_VAMP_CULT_VAMPIRIC_SHORT</Tag>
+        <English>CV</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_VAMP_CULT_VAMPIRIC_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_VAMP_CULT_VAMPIRIC_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_VAMP_CLAN_FLAUROS</Tag>
+        <English>Clan Flauros</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_VAMP_CLAN_FLAUROS_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_VAMP_CLAN_FLAUROS_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_VAMP_CLAN_FLAUROS_SHORT</Tag>
+        <English>CFlau</English>
+    </TEXT>
+</Civ4GameText>
