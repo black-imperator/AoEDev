@@ -52,7 +52,9 @@
 			<RemovePromotions>
 				<RemovePromotion>PROMOTION_RECRUITER</RemovePromotion>
 			</RemovePromotions>
+			<CivilizationPrereq>CIVILIZATION_DURAL</CivilizationPrereq>
 			<bAllowAI>1</bAllowAI>
+			<iAIWeight>300</iAIWeight>
 			<bInCityOnly>1</bInCityOnly>
 			<bAbility>1</bAbility>
 			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>

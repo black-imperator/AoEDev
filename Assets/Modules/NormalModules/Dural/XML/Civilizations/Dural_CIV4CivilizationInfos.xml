@@ -144,8 +144,8 @@
 					<BuildingType>BUILDING_COURTHOUSE_DURAL</BuildingType>
 				</Building>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_MUSEUM</BuildingClassType>
-					<BuildingType>BUILDING_MUSEUM</BuildingType>
+					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
+					<BuildingType>BUILDING_DURAL_SCHOOL</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_MONUMENT</BuildingClassType>

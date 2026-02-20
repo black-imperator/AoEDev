@@ -201,6 +201,11 @@
 			<iMaintenanceModifier>-50</iMaintenanceModifier>
 			<iHappiness>1</iHappiness>
 			<iAsset>4</iAsset>
+			<CommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>2</iCommerce>
+			</CommerceChanges>
 			<fVisibilityPriority>10</fVisibilityPriority>
 			<ConstructSound>AS2D_BUILD_COURTHOUSE</ConstructSound>
 			<BonusProductionModifiers>
@@ -262,6 +267,67 @@
 				</Flavor>
 			</Flavors>
 		</BuildingInfo>
+		<BuildingInfo>		<!-- Pagan Temple Dural School-->
+			<BuildingClass>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClass>
+			<Type>BUILDING_DURAL_SCHOOL</Type>
+			<Description>TXT_KEY_BUILDING_DURAL_SCHOOL</Description>
+			<Civilopedia>TXT_KEY_BUILDING_DURAL_SCHOOL_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_DURAL_SCHOOL_STRATEGY</Strategy>
+			<Advisor>ADVISOR_CULTURE</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_PAGAN_TEMPLE</ArtDefineTag>
+			<PrereqTech>TECH_EDUCATION</PrereqTech>
+			<ProductionTraits>
+				<ProductionTrait>
+					<ProductionTraitType>TRAIT_SPIRITUAL</ProductionTraitType>
+					<iProductionTrait>100</iProductionTrait>
+				</ProductionTrait>
+			</ProductionTraits>
+			<iMaintenanceModifier>15</iMaintenanceModifier>
+			<bNeverCapture>1</bNeverCapture>
+			<iAIWeight>10</iAIWeight>
+			<iCost>120</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iConquestProb>0</iConquestProb>
+			<iAsset>3</iAsset>
+			<fVisibilityPriority>1</fVisibilityPriority>
+			<CommerceModifiers>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>10</iCommerce>
+			</CommerceModifiers>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_HEALER</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_RELIGION</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+		</BuildingInfo>
 		<BuildingInfo>		<!-- Elder Council Dural -->
 			<BuildingClass>BUILDINGCLASS_ELDER_COUNCIL</BuildingClass>
 			<Type>BUILDING_ELDER_COUNCIL_DURAL</Type>
@@ -278,19 +344,19 @@
 			</ProductionTraits>
 			<bCenterInCity>1</bCenterInCity>
 			<iCost>72</iCost>
-			<iCrime>-7</iCrime>
+			<iCrime>-5</iCrime>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>25</iConquestProb>
 			<iAsset>2</iAsset>
 			<fVisibilityPriority>2</fVisibilityPriority>
 			<CommerceChanges>
 				<iCommerce>0</iCommerce>
-				<iCommerce>2</iCommerce>
+				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 			</CommerceChanges>
 			<CommerceModifiers>
 				<iCommerce>0</iCommerce>
-				<iCommerce>10</iCommerce>
+				<iCommerce>5</iCommerce>
 				<iCommerce>0</iCommerce>
 			</CommerceModifiers>
 			<SpecialistCounts>
@@ -1117,16 +1183,16 @@
 				<SpecialistCommerceChange>
 					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
 					<CommerceChanges>
-						<iCommerce>2</iCommerce>
 						<iCommerce>0</iCommerce>
+						<iCommerce>1</iCommerce>
 						<iCommerce>0</iCommerce>
 					</CommerceChanges>
 				</SpecialistCommerceChange>
 				<SpecialistCommerceChange>
 					<SpecialistType>SPECIALIST_GREAT_ARTIST</SpecialistType>
 					<CommerceChanges>
-						<iCommerce>2</iCommerce>
 						<iCommerce>0</iCommerce>
+						<iCommerce>2</iCommerce>
 						<iCommerce>0</iCommerce>
 					</CommerceChanges>
 				</SpecialistCommerceChange>
@@ -1703,33 +1769,7 @@
 			<iAIWeight>10</iAIWeight>
 			<iAsset>6</iAsset>
 			<fVisibilityPriority>10</fVisibilityPriority>
-			<iGreatPeopleRateModifier>25</iGreatPeopleRateModifier>
-			<FreeSpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_HEALER</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</FreeSpecialistCounts>
+			<iGreatPeopleRateChange>6</iGreatPeopleRateChange>
 			<ConstructSound>AS2D_BUILD_LIBRARY</ConstructSound>
 			<Flavors>
 				<Flavor>

@@ -43,6 +43,10 @@
 					<PromotionType>PROMOTION_DURAL_RELIGION_WORKER</PromotionType>
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_DURAL_RELIGION_WORKER_BOAT</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
 			</FreePromotions>
 			<FreePromotionUnitCombats>
 				<FreePromotionUnitCombat>

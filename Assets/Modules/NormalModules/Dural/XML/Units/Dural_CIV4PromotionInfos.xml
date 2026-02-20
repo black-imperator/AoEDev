@@ -291,6 +291,36 @@
 				<Promotion>PROMOTION_WHITE_STORMBRINGER</Promotion>
 				<Promotion>PROMOTION_OVERLORDS_THRALL</Promotion>
 				<Promotion>PROMOTION_LEAVES_GLADE</Promotion>
+				<Promotion>PROMOTION_DURAL_RELIGION_WORKER_BOAT</Promotion>
+			</PromotionExcludes>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>,Art/Interface/Teamcolor/Duralbutton.dds</Button>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Dural religion worker BOAT    -->
+			<Type>PROMOTION_DURAL_RELIGION_WORKER_BOAT</Type>
+			<Description>TXT_KEY_DURAL_RELIGION_WORKER</Description>
+			<bAutoAcquire>1</bAutoAcquire>
+			<bMustMaintain>1</bMustMaintain>
+			<bNoXP>1</bNoXP>
+			<bGraphicalOnly>1</bGraphicalOnly>
+			<PrereqCivilization>CIVILIZATION_DURAL</PrereqCivilization>
+			<PromotionBuilds>
+				<PromotionBuild>BUILD_STYGIAN_SHRINE</PromotionBuild>
+			</PromotionBuilds>
+			<PromotionExcludes>
+				<Promotion>PROMOTION_EMPYREAN_PATH</Promotion>
+				<Promotion>PROMOTION_ESUS_CONTACTS</Promotion>
+				<Promotion>PROMOTION_ASHEN_SYMBOLS</Promotion>
+				<Promotion>PROMOTION_GUILDS_OF_KILMORPH</Promotion>
+				<Promotion>PROMOTION_ORDER_BAILIFF</Promotion>
+				<Promotion>PROMOTION_WHITE_STORMBRINGER</Promotion>
+				<Promotion>PROMOTION_OVERLORDS_THRALL</Promotion>
+				<Promotion>PROMOTION_LEAVES_GLADE</Promotion>
 			</PromotionExcludes>
 			<UnitCombats>
 				<UnitCombat>

@@ -476,6 +476,10 @@
 					<BuildingType>BUILDING_GUILD_STONEFIRE</BuildingType>
 					<bBuilding>1</bBuilding>
 				</Building>
+				<Building>
+					<BuildingType>BUILDING_UNIVERSITY</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
 			</Buildings>
 			<Flavors>
 				<Flavor>
@@ -504,7 +508,7 @@
 				<iRangedWaveSize>1</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_GRIGORI_MEDIC</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_DURAL_GREAT_ENGINEER</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FreePromotions>
@@ -630,6 +634,10 @@
 					<BuildingType>BUILDING_GUILD_FARMERS_GUILD</BuildingType>
 					<bBuilding>1</bBuilding>
 				</Building>
+				<Building>
+					<BuildingType>BUILDING_UNIVERSITY</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
 			</Buildings>
 			<Flavors>
 				<Flavor>
@@ -658,7 +666,7 @@
 				<iRangedWaveSize>1</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_GRIGORI_MEDIC</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_DURAL_GREAT_MERCHANT</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FreePromotions>
@@ -822,6 +830,10 @@
 					<BuildingType>BUILDING_ALTAR_OF_THE_LUONNOTAR_EXALTED</BuildingType>
 					<bBuilding>1</bBuilding>
 				</Building>
+				<Building>
+					<BuildingType>BUILDING_UNIVERSITY</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
 			</Buildings>
 			<Flavors>
 				<Flavor>
@@ -848,7 +860,7 @@
 				<iRangedWaveSize>1</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_GRIGORI_MEDIC</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_DURAL_GREAT_PROPHET</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FreePromotions>
@@ -994,7 +1006,7 @@
 				<iRangedWaveSize>1</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_GRIGORI_MEDIC</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_DURAL_GREAT_SCIENTIST</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FreePromotions>
@@ -1101,6 +1113,10 @@
 					<BuildingType>BUILDING_APOTHECARY</BuildingType>
 					<bBuilding>1</bBuilding>
 				</Building>
+				<Building>
+					<BuildingType>BUILDING_UNIVERSITY</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
 			</Buildings>
 			<Flavors>
 				<Flavor>
@@ -1128,7 +1144,7 @@
 				<iRangedWaveSize>1</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_GRIGORI_MEDIC</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_DURAL_GREAT_HEALER</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<iCombatDefense>5</iCombatDefense>
@@ -1276,6 +1292,10 @@
 					<BuildingType>BUILDING_GUILD_FABRICAFORMA</BuildingType>
 					<bBuilding>1</bBuilding>
 				</Building>
+				<Building>
+					<BuildingType>BUILDING_UNIVERSITY</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
 			</Buildings>
 			<Flavors>
 				<Flavor>
@@ -1303,7 +1323,7 @@
 				<iRangedWaveSize>1</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_GRIGORI_MEDIC</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_DURAL_GREAT_ARTIST</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FreePromotions>
@@ -1326,7 +1346,8 @@
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
 			<UnitClassUpgrades>
-				<UnitClassUpgradeType>UNITCLASS_PRIEST_OF_THE_EMPYREAN</UnitClassUpgradeType>
+				<UnitClassUpgradeType>UNITCLASS_PROFESSOR</UnitClassUpgradeType>
+				<UnitClassUpgradeType>UNITCLASS_SPEARMAN</UnitClassUpgradeType>
 			</UnitClassUpgrades>
 			<UnitAIs>
 				<UnitAI>
@@ -1380,6 +1401,14 @@
 					<PromotionType>PROMOTION_MEDIC1</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_SENTRY</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_SECONDARY_DISCIPLE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
 			</FreePromotions>
 			<bFreeXP>1</bFreeXP>
 			<bNeverObsolete>1</bNeverObsolete>
@@ -1397,7 +1426,8 @@
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
 			<UnitClassUpgrades>
-				<UnitClassUpgradeType>UNITCLASS_PRIEST_OF_WINTER</UnitClassUpgradeType>
+				<UnitClassUpgradeType>UNITCLASS_PROFESSOR</UnitClassUpgradeType>
+				<UnitClassUpgradeType>UNITCLASS_ARCHER</UnitClassUpgradeType>
 			</UnitClassUpgrades>
 			<UnitAIs>
 				<UnitAI>
@@ -1456,6 +1486,10 @@
 					<PromotionType>PROMOTION_MEDIC1</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_SECONDARY_DISCIPLE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
 			</FreePromotions>
 			<bFreeXP>1</bFreeXP>
 			<bNeverObsolete>1</bNeverObsolete>
@@ -1473,8 +1507,8 @@
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
 			<UnitClassUpgrades>
-				<UnitClassUpgradeType>UNITCLASS_PRIEST_OF_KILMORPH</UnitClassUpgradeType>
-				<UnitClassUpgradeType>UNITCLASS_PARAMANDER</UnitClassUpgradeType>
+				<UnitClassUpgradeType>UNITCLASS_PROFESSOR</UnitClassUpgradeType>
+				<UnitClassUpgradeType>UNITCLASS_AXEMAN</UnitClassUpgradeType>
 			</UnitClassUpgrades>
 			<UnitAIs>
 				<UnitAI>
@@ -1529,6 +1563,14 @@
 					<PromotionType>PROMOTION_MEDIC1</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_SECONDARY_DISCIPLE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MOUNTAINEER</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
 			</FreePromotions>
 			<bFreeXP>1</bFreeXP>
 			<bNeverObsolete>1</bNeverObsolete>
@@ -1546,7 +1588,7 @@
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
 			<UnitClassUpgrades>
-				<UnitClassUpgradeType>UNITCLASS_PRIEST_OF_LEAVES</UnitClassUpgradeType>
+				<UnitClassUpgradeType>UNITCLASS_PROFESSOR</UnitClassUpgradeType>
 				<UnitClassUpgradeType>UNITCLASS_RANGER</UnitClassUpgradeType>
 			</UnitClassUpgrades>
 			<UnitAIs>
@@ -1603,7 +1645,12 @@
 				<FreePromotion>
 					<PromotionType>PROMOTION_WOODSMAN2</PromotionType>
 					<iNumApplied>1</iNumApplied>
-				</FreePromotion></FreePromotions>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_SECONDARY_DISCIPLE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
 			<bFreeXP>1</bFreeXP>
 			<bNeverObsolete>1</bNeverObsolete>
 			<iTier>2</iTier>
@@ -1621,8 +1668,8 @@
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
 			<UnitClassUpgrades>
-				<UnitClassUpgradeType>UNITCLASS_PRIEST_OF_THE_ORDER</UnitClassUpgradeType>
-				<UnitClassUpgradeType>UNITCLASS_CRUSADER</UnitClassUpgradeType>
+				<UnitClassUpgradeType>UNITCLASS_PROFESSOR</UnitClassUpgradeType>
+				<UnitClassUpgradeType>UNITCLASS_SPEARMAN</UnitClassUpgradeType>
 			</UnitClassUpgrades>
 			<UnitAIs>
 				<UnitAI>
@@ -1674,6 +1721,14 @@
 					<PromotionType>PROMOTION_MEDIC1</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_SECONDARY_DISCIPLE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_PATROL1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
 			</FreePromotions>
 			<bFreeXP>1</bFreeXP>
 			<bNeverObsolete>1</bNeverObsolete>
@@ -1692,8 +1747,8 @@
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
 			<UnitClassUpgrades>
-				<UnitClassUpgradeType>UNITCLASS_PRIEST_OF_THE_OVERLORDS</UnitClassUpgradeType>
-				<UnitClassUpgradeType>UNITCLASS_STYGIAN_GUARD</UnitClassUpgradeType>
+				<UnitClassUpgradeType>UNITCLASS_PROFESSOR</UnitClassUpgradeType>
+				<UnitClassUpgradeType>UNITCLASS_THIEF</UnitClassUpgradeType>
 			</UnitClassUpgrades>
 			<UnitAIs>
 				<UnitAI>
@@ -1749,7 +1804,12 @@
 				<FreePromotion>
 					<PromotionType>PROMOTION_CRAZED</PromotionType>
 					<iNumApplied>1</iNumApplied>
-				</FreePromotion></FreePromotions>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_SECONDARY_DISCIPLE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
 			<bFreeXP>1</bFreeXP>
 			<bNeverObsolete>1</bNeverObsolete>
 			<iCombatDefense>1</iCombatDefense>
@@ -1767,7 +1827,7 @@
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
 			<UnitClassUpgrades>
-				<UnitClassUpgradeType>UNITCLASS_PRIEST_OF_THE_VEIL</UnitClassUpgradeType>
+				<UnitClassUpgradeType>UNITCLASS_PROFESSOR</UnitClassUpgradeType>
 				<UnitClassUpgradeType>UNITCLASS_MAGE</UnitClassUpgradeType>
 			</UnitClassUpgrades>
 			<UnitAIs>
@@ -1824,11 +1884,27 @@
 					<PromotionType>PROMOTION_MEDIC1</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_UNHOLY_TAINT</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_SECONDARY_DISCIPLE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
 			</FreePromotions>
 			<bFreeXP>1</bFreeXP>
 			<bNeverObsolete>1</bNeverObsolete>
 			<iCombatDefense>2</iCombatDefense>
 			<iTier>2</iTier>
+		</UnitInfo>
+		<UnitInfo>        <!-- Workboat -->
+			<Class>UNITCLASS_WORKBOAT</Class>
+			<Type>UNIT_WORKBOAT</Type>
+			<AllowPromotions>
+				<Promotion>PROMOTION_OVERLORDS_THRALL</Promotion>
+				<Promotion>PROMOTION_DURAL_RELIGION_WORKER_BOAT</Promotion>
+			</AllowPromotions>
 		</UnitInfo>
 	</UnitInfos>
 </Civ4UnitInfos>

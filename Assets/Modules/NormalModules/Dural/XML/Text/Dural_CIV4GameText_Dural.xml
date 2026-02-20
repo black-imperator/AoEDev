@@ -222,6 +222,14 @@
 		<Spanish>Military Academy</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BUILDING_DURAL_SCHOOL</Tag>
+		<English>Hall of the Six Paths</English>
+		<French>Hall of the Six Paths</French>
+		<German>Hall of the Six Paths</German>
+		<Italian>Hall of the Six Paths</Italian>
+		<Spanish>Hall of the Six Paths</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_SPELL_BUILD_MILITARY_ACADEMY</Tag>
 		<English>Build Military Academy</English>
 		<French>Build Military Academy</French>
