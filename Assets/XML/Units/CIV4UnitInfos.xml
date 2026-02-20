@@ -2616,6 +2616,7 @@
 			<iCost>300</iCost>
 			<iMoves>2</iMoves>
 			<iCombat>7</iCombat>
+			<iMagicalPower>350</iMagicalPower>
 			<iExtraPerception>2</iExtraPerception>
 			<iXPValueAttack>32</iXPValueAttack>
 			<iXPValueDefense>16</iXPValueDefense>
@@ -34616,6 +34617,7 @@
 			<iConscription>2</iConscription>
 			<iCultureGarrison>6</iCultureGarrison>
 			<iAsset>4</iAsset>
+			<iMagicalPower>150</iMagicalPower>
 			<UnitMeshGroups>
 				<iGroupSize>3</iGroupSize>
 				<iMeleeWaveSize>3</iMeleeWaveSize>
@@ -34690,6 +34692,7 @@
 			<iCombat>5</iCombat>
 			<iExtraPerception>2</iExtraPerception>
 			<iWithdrawalProb>25</iWithdrawalProb>
+			<iMagicalPower>150</iMagicalPower>
 			<UnitCombatMods>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
@@ -35006,6 +35009,7 @@
 			<iCost>90</iCost>
 			<iMoves>2</iMoves>
 			<iCombat>3</iCombat>
+			<iMagicalPower>150</iMagicalPower>
 			<iCultureGarrison>4</iCultureGarrison>
 			<iAsset>4</iAsset>
 			<UnitMeshGroups>
@@ -35073,6 +35077,7 @@
 			<iCost>150</iCost>
 			<iMoves>2</iMoves>
 			<iCombat>4</iCombat>
+			<iMagicalPower>150</iMagicalPower>
 			<iCultureGarrison>4</iCultureGarrison>
 			<iAsset>13</iAsset>
 			<UnitMeshGroups>
@@ -35139,6 +35144,7 @@
 			<iCost>150</iCost>
 			<iMoves>2</iMoves>
 			<iCombat>8</iCombat>
+			<iMagicalPower>300</iMagicalPower>
 			<iCultureGarrison>4</iCultureGarrison>
 			<iAsset>13</iAsset>
 			<UnitMeshGroups>

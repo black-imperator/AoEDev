@@ -11500,7 +11500,7 @@ void CvGameTextMgr::parsePromotionHelp(CvWStringBuffer &szBuffer, PromotionTypes
 			}
 			if (GC.getBuildInfo((BuildTypes)GC.getPromotionInfo(ePromotion).getPromotionBuilds(iI)).getImprovementClass() != NO_IMPROVEMENTCLASS)
 			{
-				szBuffer.append(gDLL->getText("TXT_KEY_LINK", GC.getImprovementClassInfo((ImprovementClassTypes)GC.getBuildInfo((BuildTypes)GC.getPromotionInfo(ePromotion).getPromotionBuilds(iI)).getImprovementClass()).getTextKeyWide(), GC.getImprovementClassInfo((ImprovementClassTypes)GC.getBuildInfo((BuildTypes)GC.getPromotionInfo(ePromotion).getPromotionBuilds(iI)).getImprovementClass()).getTextKeyWide()));
+				szBuffer.append(gDLL->getText("TXT_KEY_LINK", GC.getImprovementInfo((ImprovementTypes)GC.getImprovementClassInfo((ImprovementClassTypes)GC.getBuildInfo((BuildTypes)GC.getPromotionInfo(ePromotion).getPromotionBuilds(iI)).getImprovementClass()).getDefaultImprovementIndex()).getTextKeyWide(), GC.getImprovementInfo((ImprovementTypes)GC.getImprovementClassInfo((ImprovementClassTypes)GC.getBuildInfo((BuildTypes)GC.getPromotionInfo(ePromotion).getPromotionBuilds(iI)).getImprovementClass()).getDefaultImprovementIndex()).getTextKeyWide()));
 			}
 			else
 			{

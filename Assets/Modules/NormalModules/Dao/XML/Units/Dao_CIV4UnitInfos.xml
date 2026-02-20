@@ -241,6 +241,7 @@
 			<iCombat>3</iCombat>
 			<iCombatDefense>3</iCombatDefense>
 			<iCombatLimit>100</iCombatLimit>
+			<iMagicalPower>50</iMagicalPower>
 			<iMoves>1</iMoves>
 			<iNukeRange>-1</iNukeRange>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
@@ -412,6 +413,7 @@
 			<iCombat>3</iCombat>
 			<iCombatDefense>3</iCombatDefense>
 			<iCombatLimit>100</iCombatLimit>
+			<iMagicalPower>300</iMagicalPower>
 			<iCollateralDamageLimit>60</iCollateralDamageLimit>
 			<iCollateralDamageMaxUnits>7</iCollateralDamageMaxUnits>
 			<iMoves>1</iMoves>
@@ -544,6 +546,7 @@
 			<iCombat>4</iCombat>
 			<iCombatDefense>4</iCombatDefense>
 			<iCombatLimit>100</iCombatLimit>
+			<iMagicalPower>150</iMagicalPower>
 			<iMoves>1</iMoves>
 			<iNukeRange>-1</iNukeRange>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
@@ -731,6 +734,7 @@
 			<iCombat>8</iCombat>
 			<iCombatDefense>8</iCombatDefense>
 			<iCombatLimit>100</iCombatLimit>
+			<iMagicalPower>300</iMagicalPower>
 			<iCityAttack>-20</iCityAttack>
 			<iAnimalCombat>50</iAnimalCombat>
 			<iMoves>2</iMoves>
@@ -838,6 +842,7 @@
 			<iCombat>14</iCombat>
 			<iCombatDefense>14</iCombatDefense>
 			<iCombatLimit>100</iCombatLimit>
+			<iMagicalPower>300</iMagicalPower>
 			<iMoves>1</iMoves>
 			<iNukeRange>-1</iNukeRange>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
