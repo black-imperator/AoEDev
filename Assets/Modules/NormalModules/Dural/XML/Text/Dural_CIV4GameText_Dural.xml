@@ -174,12 +174,52 @@
 		<Spanish>Dural Palace</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_COLLEGE</Tag>
+		<Tag>TXT_KEY_BUILDING_COLLEGE_ART</Tag>
 		<English>College of the Arts</English>
-		<French>Université</French>
-		<German>Akademie</German>
-		<Italian>College</Italian>
-		<Spanish>College</Spanish>
+		<French>College of the Arts</French>
+		<German>College of the Arts</German>
+		<Italian>College of the Arts</Italian>
+		<Spanish>College of the Arts</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_COLLEGE_ENGINEERING</Tag>
+		<English>College of Engineering</English>
+		<French>College of Engineering</French>
+		<German>College of Engineering</German>
+		<Italian>College of Engineering</Italian>
+		<Spanish>College of Engineering</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_COLLEGE_INVENTION</Tag>
+		<English>College of Invention</English>
+		<French>College of Invention</French>
+		<German>College of Invention</German>
+		<Italian>College of Invention</Italian>
+		<Spanish>College of Invention</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_COLLEGE_HEALTH</Tag>
+		<English>College of the Healing Hands</English>
+		<French>College of the Healing Hands</French>
+		<German>College of the Healing Hands</German>
+		<Italian>College of the Healing Hands</Italian>
+		<Spanish>College of the Healing Hands</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_COLLEGE_TRADE</Tag>
+		<English>College of the Avaricious</English>
+		<French>College of the Avaricious</French>
+		<German>College of the Avaricious</German>
+		<Italian>College of the Avaricious</Italian>
+		<Spanish>College of the Avaricious</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MILITARY_ACADEMY</Tag>
+		<English>Military Academy</English>
+		<French>Military Academy</French>
+		<German>Military Academy</German>
+		<Italian>Military Academy</Italian>
+		<Spanish>Military Academy</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_COLLEGE_STRATEGY</Tag>
@@ -359,11 +399,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_COLLEGE_OF_THEOLOGY_STRATEGY</Tag>
-		<English>The College of Theology increases the rate at which Great Prophets are born slightly, as well as allowing a Sage and a Priest specialist. It is mostly useful however as a base to build several school buildings, based on the religions present in your city. These each provide +15% research rate and a unique benefit to the city, related to the nature of the religion. The effects of each are cumulative.[PARAGRAPH:1][NEWLINE]School of Junil - Reduced Maintenance and Crime[NEWLINE]School of Lugus - Free Specialist in city[NEWLINE]School of Kilmorph - Increased gold production[NEWLINE]School of Cernunnos - Extra Health in city[NEWLINE]School of Esus - Extra Raw Commerce[NEWLINE]School of the Dreamer - Improved sea-plot yields (Food/Commerce)[NEWLINE]School of the Fallen One - Reduced War Weariness (increased for enemies), Free Priest Specialist</English>
-		<French>The College of Theology increases the rate at which Great Prophets are born slightly, as well as allowing a Sage and a Priest specialist. It is mostly useful however as a base to build several school buildings, based on the religions present in your city. These each provide +15% research rate and a unique benefit to the city, related to the nature of the religion. The effects of each are cumulative.[PARAGRAPH:1][NEWLINE]School of Junil - Reduced Maintenance and Crime[NEWLINE]School of Lugus - Free Specialist in city[NEWLINE]School of Kilmorph - Increased gold production[NEWLINE]School of Cernunnos - Extra Health in city[NEWLINE]School of Esus - Extra Raw Commerce[NEWLINE]School of the Dreamer - Improved sea-plot yields (Food/Commerce)[NEWLINE]School of the Fallen One - Reduced War Weariness (increased for enemies), Free Priest Specialist</French>
-		<German>The College of Theology increases the rate at which Great Prophets are born slightly, as well as allowing a Sage and a Priest specialist. It is mostly useful however as a base to build several school buildings, based on the religions present in your city. These each provide +15% research rate and a unique benefit to the city, related to the nature of the religion. The effects of each are cumulative.[PARAGRAPH:1][NEWLINE]School of Junil - Reduced Maintenance and Crime[NEWLINE]School of Lugus - Free Specialist in city[NEWLINE]School of Kilmorph - Increased gold production[NEWLINE]School of Cernunnos - Extra Health in city[NEWLINE]School of Esus - Extra Raw Commerce[NEWLINE]School of the Dreamer - Improved sea-plot yields (Food/Commerce)[NEWLINE]School of the Fallen One - Reduced War Weariness (increased for enemies), Free Priest Specialist</German>
-		<Italian>The College of Theology increases the rate at which Great Prophets are born slightly, as well as allowing a Sage and a Priest specialist. It is mostly useful however as a base to build several school buildings, based on the religions present in your city. These each provide +15% research rate and a unique benefit to the city, related to the nature of the religion. The effects of each are cumulative.[PARAGRAPH:1][NEWLINE]School of Junil - Reduced Maintenance and Crime[NEWLINE]School of Lugus - Free Specialist in city[NEWLINE]School of Kilmorph - Increased gold production[NEWLINE]School of Cernunnos - Extra Health in city[NEWLINE]School of Esus - Extra Raw Commerce[NEWLINE]School of the Dreamer - Improved sea-plot yields (Food/Commerce)[NEWLINE]School of the Fallen One - Reduced War Weariness (increased for enemies), Free Priest Specialist</Italian>
-		<Spanish>The College of Theology increases the rate at which Great Prophets are born slightly, as well as allowing a Sage and a Priest specialist. It is mostly useful however as a base to build several school buildings, based on the religions present in your city. These each provide +15% research rate and a unique benefit to the city, related to the nature of the religion. The effects of each are cumulative.[PARAGRAPH:1][NEWLINE]School of Junil - Reduced Maintenance and Crime[NEWLINE]School of Lugus - Free Specialist in city[NEWLINE]School of Kilmorph - Increased gold production[NEWLINE]School of Cernunnos - Extra Health in city[NEWLINE]School of Esus - Extra Raw Commerce[NEWLINE]School of the Dreamer - Improved sea-plot yields (Food/Commerce)[NEWLINE]School of the Fallen One - Reduced War Weariness (increased for enemies), Free Priest Specialist</Spanish>
+		<English>The College of Theology is a base to build several school buildings, based on the religions present in your city. These each provide some research rate and a unique benefit to the city, related to the nature of the religion. The effects of each are cumulative.[PARAGRAPH:1][NEWLINE]School of Junil - Reduced Maintenance, increased military production, and reduced Crime[NEWLINE]School of Lugus - Free Specialist in city[NEWLINE]School of Kilmorph - Increased gold production[NEWLINE]School of Cernunnos - Extra Health in city[NEWLINE]School of Esus - Extra Yields from Crime[NEWLINE]School of the Dreamer - Free Priest[NEWLINE]School of the Fallen One - Large beakers boost, Free Elder Specialist</English>
+		<French>The College of Theology is a base to build several school buildings, based on the religions present in your city. These each provide some research rate and a unique benefit to the city, related to the nature of the religion. The effects of each are cumulative.[PARAGRAPH:1][NEWLINE]School of Junil - Reduced Maintenance, increased military production, and reduced Crime[NEWLINE]School of Lugus - Free Specialist in city[NEWLINE]School of Kilmorph - Increased gold production[NEWLINE]School of Cernunnos - Extra Health in city[NEWLINE]School of Esus - Extra Yields from Crime[NEWLINE]School of the Dreamer - Free Priest[NEWLINE]School of the Fallen One - Large beakers boost, Free Elder Specialist</French>
+		<German>The College of Theology is a base to build several school buildings, based on the religions present in your city. These each provide some research rate and a unique benefit to the city, related to the nature of the religion. The effects of each are cumulative.[PARAGRAPH:1][NEWLINE]School of Junil - Reduced Maintenance, increased military production, and reduced Crime[NEWLINE]School of Lugus - Free Specialist in city[NEWLINE]School of Kilmorph - Increased gold production[NEWLINE]School of Cernunnos - Extra Health in city[NEWLINE]School of Esus - Extra Yields from Crime[NEWLINE]School of the Dreamer - Free Priest[NEWLINE]School of the Fallen One - Large beakers boost, Free Elder Specialist</German>
+		<Italian>The College of Theology is a base to build several school buildings, based on the religions present in your city. These each provide some research rate and a unique benefit to the city, related to the nature of the religion. The effects of each are cumulative.[PARAGRAPH:1][NEWLINE]School of Junil - Reduced Maintenance, increased military production, and reduced Crime[NEWLINE]School of Lugus - Free Specialist in city[NEWLINE]School of Kilmorph - Increased gold production[NEWLINE]School of Cernunnos - Extra Health in city[NEWLINE]School of Esus - Extra Yields from Crime[NEWLINE]School of the Dreamer - Free Priest[NEWLINE]School of the Fallen One - Large beakers boost, Free Elder Specialist</Italian>
+		<Spanish>The College of Theology is a base to build several school buildings, based on the religions present in your city. These each provide some research rate and a unique benefit to the city, related to the nature of the religion. The effects of each are cumulative.[PARAGRAPH:1][NEWLINE]School of Junil - Reduced Maintenance, increased military production, and reduced Crime[NEWLINE]School of Lugus - Free Specialist in city[NEWLINE]School of Kilmorph - Increased gold production[NEWLINE]School of Cernunnos - Extra Health in city[NEWLINE]School of Esus - Extra Yields from Crime[NEWLINE]School of the Dreamer - Free Priest[NEWLINE]School of the Fallen One - Large beakers boost, Free Elder Specialist</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_SCHOOL_OF_JUNIL</Tag>

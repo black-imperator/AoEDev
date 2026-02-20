@@ -398,119 +398,97 @@
 			</Flavors>
 			<RemovePromotion></RemovePromotion>
 		</BuildingInfo>
-		<BuildingInfo>		<!-- College of the Engineering -->
-			<BuildingClass>BUILDINGCLASS_COLLEGE</BuildingClass>
-			<Type>BUILDING_COLLEGE</Type>
-			<Description>TXT_KEY_BUILDING_COLLEGE</Description>
+		<BuildingInfo>		<!-- College of Invention -->
+			<BuildingClass>BUILDINGCLASS_COLLEGE_INVENTION</BuildingClass>
+			<Type>BUILDING_COLLEGE_INVENTION</Type>
+			<Description>TXT_KEY_BUILDING_COLLEGE_INVENTION</Description>
 			<Civilopedia>TXT_KEY_BUILDING_COLLEGE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_COLLEGE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ADVENTURERS_GUILD</ArtDefineTag>
-			<PrereqTech>TECH_FEUDALISM</PrereqTech>
+			<BuildingExcludes>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_COLLEGE_ENGINEER</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_COLLEGE_OF_THEOLOGY</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_COLLEGE_HEALTH</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_COLLEGE_TRADE</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_COLLEGE_ART</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+			</BuildingExcludes>
 			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
 			<bNeverCapture>1</bNeverCapture>
-			<iCost>180</iCost>
+			<iCost>-1</iCost>
+			<iAIWeight>300</iAIWeight>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>0</iConquestProb>
 			<iFreeSpecialist>1</iFreeSpecialist>
 			<iAsset>2</iAsset>
 			<iPower>1</iPower>
 			<fVisibilityPriority>1</fVisibilityPriority>
-			<LocalSpecialistCommerceChanges>
-				<LocalSpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
-					<CommerceChanges>
-						<iCommerce>0</iCommerce>
-						<iCommerce>1</iCommerce>
-						<iCommerce>0</iCommerce>
-					</CommerceChanges>
-				</LocalSpecialistCommerceChange>
-				<LocalSpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_GREAT_ARTIST</SpecialistType>
-					<CommerceChanges>
-						<iCommerce>0</iCommerce>
-						<iCommerce>1</iCommerce>
-						<iCommerce>0</iCommerce>
-					</CommerceChanges>
-				</LocalSpecialistCommerceChange>
-			</LocalSpecialistCommerceChanges>
 			<LocalSpecialistYieldChanges>
 				<LocalSpecialistYieldChange>
-					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
 					<YieldChanges>
 						<iYield>0</iYield>
 						<iYield>1</iYield>
 						<iYield>0</iYield>
 					</YieldChanges>
 				</LocalSpecialistYieldChange>
+				<LocalSpecialistYieldChange>
+					<SpecialistType>SPECIALIST_GREAT_SCIENTIST</SpecialistType>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>2</iYield>
+						<iYield>0</iYield>
+					</YieldChanges>
+				</LocalSpecialistYieldChange>
 			</LocalSpecialistYieldChanges>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+					<iSpecialistCount>2</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_GROWTH</FlavorType>
-					<iFlavor>10</iFlavor>
+					<FlavorType>FLAVOR_SCIENCE</FlavorType>
+					<iFlavor>50</iFlavor>
 				</Flavor>
 			</Flavors>
 			<BonusHappinessChanges>
 				<BonusHappinessChange>
-					<BonusType>BONUS_DYE</BonusType>
+					<BonusType>BONUS_MANA_CREATION</BonusType>
 					<iHappinessChange>1</iHappinessChange>
 				</BonusHappinessChange>
 				<BonusHappinessChange>
-					<BonusType>BONUS_ALE</BonusType>
+					<BonusType>BONUS_TOAD</BonusType>
 					<iHappinessChange>1</iHappinessChange>
 				</BonusHappinessChange>
 				<BonusHappinessChange>
-					<BonusType>BONUS_PEARL</BonusType>
+					<BonusType>BONUS_GUNPOWDER</BonusType>
 					<iHappinessChange>1</iHappinessChange>
 				</BonusHappinessChange>
 				<BonusHappinessChange>
-					<BonusType>BONUS_PATRIAN_ARTIFACTS</BonusType>
+					<BonusType>BONUS_MANA_ENCHANTMENT</BonusType>
 					<iHappinessChange>1</iHappinessChange>
 				</BonusHappinessChange>
 			</BonusHappinessChanges>
 			<BonusCommerceModifiers>
 				<BonusCommerceModifier>
-					<BonusType>BONUS_DYE</BonusType>
-					<CommerceModifiers>
-						<iCommerce>0</iCommerce>
-						<iCommerce>0</iCommerce>
-						<iCommerce>5</iCommerce>
-					</CommerceModifiers>
-				</BonusCommerceModifier>
-				<BonusCommerceModifier>
-					<BonusType>BONUS_MARBLE</BonusType>
-					<CommerceModifiers>
-						<iCommerce>5</iCommerce>
-						<iCommerce>0</iCommerce>
-						<iCommerce>5</iCommerce>
-					</CommerceModifiers>
-				</BonusCommerceModifier>
-				<BonusCommerceModifier>
-					<BonusType>BONUS_FINE_CLOTHES</BonusType>
-					<CommerceModifiers>
-						<iCommerce>5</iCommerce>
-						<iCommerce>0</iCommerce>
-						<iCommerce>5</iCommerce>
-					</CommerceModifiers>
-				</BonusCommerceModifier>
-				<BonusCommerceModifier>
-					<BonusType>BONUS_JEWELS</BonusType>
-					<CommerceModifiers>
-						<iCommerce>5</iCommerce>
-						<iCommerce>0</iCommerce>
-						<iCommerce>5</iCommerce>
-					</CommerceModifiers>
-				</BonusCommerceModifier>
-				<BonusCommerceModifier>
-					<BonusType>BONUS_PEARL</BonusType>
-					<CommerceModifiers>
-						<iCommerce>5</iCommerce>
-						<iCommerce>0</iCommerce>
-						<iCommerce>0</iCommerce>
-					</CommerceModifiers>
-				</BonusCommerceModifier>
-				<BonusCommerceModifier>
-					<BonusType>BONUS_PATRIAN_ARTIFACTS</BonusType>
+					<BonusType>BONUS_COPPER</BonusType>
 					<CommerceModifiers>
 						<iCommerce>0</iCommerce>
 						<iCommerce>5</iCommerce>
@@ -518,27 +496,121 @@
 					</CommerceModifiers>
 				</BonusCommerceModifier>
 				<BonusCommerceModifier>
-					<BonusType>BONUS_SILK</BonusType>
+					<BonusType>BONUS_OBSIDIAN</BonusType>
 					<CommerceModifiers>
 						<iCommerce>0</iCommerce>
+						<iCommerce>10</iCommerce>
+						<iCommerce>0</iCommerce>
+					</CommerceModifiers>
+				</BonusCommerceModifier>
+				<BonusCommerceModifier>
+					<BonusType>BONUS_SHEUT_STONE</BonusType>
+					<CommerceModifiers>
+						<iCommerce>0</iCommerce>
+						<iCommerce>10</iCommerce>
+						<iCommerce>0</iCommerce>
+					</CommerceModifiers>
+				</BonusCommerceModifier>
+				<BonusCommerceModifier>
+					<BonusType>BONUS_GEMS</BonusType>
+					<CommerceModifiers>
 						<iCommerce>0</iCommerce>
 						<iCommerce>5</iCommerce>
+						<iCommerce>0</iCommerce>
+					</CommerceModifiers>
+				</BonusCommerceModifier>
+				<BonusCommerceModifier>
+					<BonusType>BONUS_GOLD</BonusType>
+					<CommerceModifiers>
+						<iCommerce>5</iCommerce>
+						<iCommerce>5</iCommerce>
+						<iCommerce>0</iCommerce>
+					</CommerceModifiers>
+				</BonusCommerceModifier>
+				<BonusCommerceModifier>
+					<BonusType>BONUS_SHEEP</BonusType>
+					<CommerceModifiers>
+						<iCommerce>0</iCommerce>
+						<iCommerce>5</iCommerce>
+						<iCommerce>0</iCommerce>
+					</CommerceModifiers>
+				</BonusCommerceModifier>
+				<BonusCommerceModifier>
+					<BonusType>BONUS_GUNPOWDER</BonusType>
+					<CommerceModifiers>
+						<iCommerce>0</iCommerce>
+						<iCommerce>10</iCommerce>
+						<iCommerce>0</iCommerce>
+					</CommerceModifiers>
+				</BonusCommerceModifier>
+				<BonusCommerceModifier>
+					<BonusType>BONUS_REAGENTS</BonusType>
+					<CommerceModifiers>
+						<iCommerce>0</iCommerce>
+						<iCommerce>10</iCommerce>
+						<iCommerce>0</iCommerce>
+					</CommerceModifiers>
+				</BonusCommerceModifier>
+				<BonusCommerceModifier>
+					<BonusType>BONUS_SALT</BonusType>
+					<CommerceModifiers>
+						<iCommerce>0</iCommerce>
+						<iCommerce>5</iCommerce>
+						<iCommerce>0</iCommerce>
+					</CommerceModifiers>
+				</BonusCommerceModifier>
+				<BonusCommerceModifier>
+					<BonusType>BONUS_TOAD</BonusType>
+					<CommerceModifiers>
+						<iCommerce>0</iCommerce>
+						<iCommerce>5</iCommerce>
+						<iCommerce>0</iCommerce>
+					</CommerceModifiers>
+				</BonusCommerceModifier>
+				<BonusCommerceModifier>
+					<BonusType>BONUS_JETEYE</BonusType>
+					<CommerceModifiers>
+						<iCommerce>0</iCommerce>
+						<iCommerce>10</iCommerce>
+						<iCommerce>0</iCommerce>
 					</CommerceModifiers>
 				</BonusCommerceModifier>
 			</BonusCommerceModifiers>
 		</BuildingInfo>
-		<BuildingInfo>		<!-- College of the Arts -->
-			<BuildingClass>BUILDINGCLASS_COLLEGE</BuildingClass>
-			<Type>BUILDING_COLLEGE</Type>
-			<Description>TXT_KEY_BUILDING_COLLEGE</Description>
+		<BuildingInfo>		<!-- College of Engineering -->
+			<BuildingClass>BUILDINGCLASS_COLLEGE_ENGINEER</BuildingClass>
+			<Type>BUILDING_COLLEGE_ENGINEER</Type>
+			<Description>TXT_KEY_BUILDING_COLLEGE_ENGINEERING</Description>
 			<Civilopedia>TXT_KEY_BUILDING_COLLEGE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_COLLEGE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ADVENTURERS_GUILD</ArtDefineTag>
-			<PrereqTech>TECH_FEUDALISM</PrereqTech>
+			<BuildingExcludes>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_COLLEGE_OF_THEOLOGY</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_COLLEGE_HEALTH</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_COLLEGE_TRADE</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_COLLEGE_INVENTION</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_COLLEGE_ART</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+			</BuildingExcludes>
 			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
 			<bNeverCapture>1</bNeverCapture>
-			<iCost>180</iCost>
+			<iCost>-1</iCost>
+			<iAIWeight>300</iAIWeight>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>0</iConquestProb>
 			<iFreeSpecialist>1</iFreeSpecialist>
@@ -547,36 +619,522 @@
 			<fVisibilityPriority>1</fVisibilityPriority>
 			<LocalSpecialistCommerceChanges>
 				<LocalSpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
 					<CommerceChanges>
 						<iCommerce>0</iCommerce>
-						<iCommerce>1</iCommerce>
 						<iCommerce>0</iCommerce>
+						<iCommerce>1</iCommerce>
 					</CommerceChanges>
 				</LocalSpecialistCommerceChange>
 				<LocalSpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_GREAT_ARTIST</SpecialistType>
+					<SpecialistType>SPECIALIST_GREAT_ENGINEER</SpecialistType>
 					<CommerceChanges>
 						<iCommerce>0</iCommerce>
-						<iCommerce>1</iCommerce>
 						<iCommerce>0</iCommerce>
+						<iCommerce>2</iCommerce>
 					</CommerceChanges>
 				</LocalSpecialistCommerceChange>
 			</LocalSpecialistCommerceChanges>
-			<LocalSpecialistYieldChanges>
-				<LocalSpecialistYieldChange>
-					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
-					<YieldChanges>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+					<iSpecialistCount>2</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<iFlavor>50</iFlavor>
+				</Flavor>
+			</Flavors>
+			<BonusHappinessChanges>
+				<BonusHappinessChange>
+					<BonusType>BONUS_MARBLE</BonusType>
+					<iHappinessChange>1</iHappinessChange>
+				</BonusHappinessChange>
+				<BonusHappinessChange>
+					<BonusType>BONUS_ALE</BonusType>
+					<iHappinessChange>1</iHappinessChange>
+				</BonusHappinessChange>
+				<BonusHappinessChange>
+					<BonusType>BONUS_MANA_EARTH</BonusType>
+					<iHappinessChange>1</iHappinessChange>
+				</BonusHappinessChange>
+				<BonusHappinessChange>
+					<BonusType>BONUS_PATRIAN_ARTIFACTS</BonusType>
+					<iHappinessChange>1</iHappinessChange>
+				</BonusHappinessChange>
+			</BonusHappinessChanges>
+			<BonusCommerceModifiers>
+				<BonusCommerceModifier>
+					<BonusType>BONUS_COPPER</BonusType>
+					<CommerceModifiers>
+						<iCommerce>0</iCommerce>
+						<iCommerce>0</iCommerce>
+						<iCommerce>0</iCommerce>
+					</CommerceModifiers>
+				</BonusCommerceModifier>
+				<BonusCommerceModifier>
+					<BonusType>BONUS_IRON</BonusType>
+					<CommerceModifiers>
+						<iCommerce>0</iCommerce>
+						<iCommerce>0</iCommerce>
+						<iCommerce>0</iCommerce>
+					</CommerceModifiers>
+				</BonusCommerceModifier>
+				<BonusCommerceModifier>
+					<BonusType>BONUS_MITHRIL</BonusType>
+					<CommerceModifiers>
+						<iCommerce>0</iCommerce>
+						<iCommerce>0</iCommerce>
+						<iCommerce>0</iCommerce>
+					</CommerceModifiers>
+				</BonusCommerceModifier>
+				<BonusCommerceModifier>
+					<BonusType>BONUS_STONE</BonusType>
+					<CommerceModifiers>
+						<iCommerce>0</iCommerce>
+						<iCommerce>0</iCommerce>
+						<iCommerce>0</iCommerce>
+					</CommerceModifiers>
+				</BonusCommerceModifier>
+				<BonusCommerceModifier>
+					<BonusType>BONUS_GUNPOWDER</BonusType>
+					<CommerceModifiers>
+						<iCommerce>0</iCommerce>
+						<iCommerce>0</iCommerce>
+						<iCommerce>0</iCommerce>
+					</CommerceModifiers>
+				</BonusCommerceModifier>
+				<BonusCommerceModifier>
+					<BonusType>BONUS_SALT</BonusType>
+					<CommerceModifiers>
+						<iCommerce>0</iCommerce>
+						<iCommerce>0</iCommerce>
+						<iCommerce>0</iCommerce>
+					</CommerceModifiers>
+				</BonusCommerceModifier>
+				<BonusCommerceModifier>
+					<BonusType>BONUS_PATRIAN_ARTIFACTS</BonusType>
+					<CommerceModifiers>
+						<iCommerce>0</iCommerce>
+						<iCommerce>5</iCommerce>
+						<iCommerce>0</iCommerce>
+					</CommerceModifiers>
+				</BonusCommerceModifier>
+				<BonusCommerceModifier>
+					<BonusType>BONUS_MARBLE</BonusType>
+					<CommerceModifiers>
+						<iCommerce>10</iCommerce>
+						<iCommerce>0</iCommerce>
+						<iCommerce>0</iCommerce>
+					</CommerceModifiers>
+				</BonusCommerceModifier>
+			</BonusCommerceModifiers>
+			<BonusYieldModifiers>
+				<BonusYieldModifier>
+					<BonusType>BONUS_GUNPOWDER</BonusType>
+					<YieldModifiers>
 						<iYield>0</iYield>
-						<iYield>1</iYield>
+						<iYield>15</iYield>
 						<iYield>0</iYield>
-					</YieldChanges>
-				</LocalSpecialistYieldChange>
-			</LocalSpecialistYieldChanges>
+					</YieldModifiers>
+				</BonusYieldModifier>
+				<BonusYieldModifier>
+					<BonusType>BONUS_STONE</BonusType>
+					<YieldModifiers>
+						<iYield>0</iYield>
+						<iYield>5</iYield>
+						<iYield>0</iYield>
+					</YieldModifiers>
+				</BonusYieldModifier>
+				<BonusYieldModifier>
+					<BonusType>BONUS_COPPER</BonusType>
+					<YieldModifiers>
+						<iYield>0</iYield>
+						<iYield>10</iYield>
+						<iYield>0</iYield>
+					</YieldModifiers>
+				</BonusYieldModifier>
+				<BonusYieldModifier>
+					<BonusType>BONUS_IRON</BonusType>
+					<YieldModifiers>
+						<iYield>0</iYield>
+						<iYield>15</iYield>
+						<iYield>0</iYield>
+					</YieldModifiers>
+				</BonusYieldModifier>
+				<BonusYieldModifier>
+					<BonusType>BONUS_MITHRIL</BonusType>
+					<YieldModifiers>
+						<iYield>0</iYield>
+						<iYield>20</iYield>
+						<iYield>0</iYield>
+					</YieldModifiers>
+				</BonusYieldModifier>
+				<BonusYieldModifier>
+					<BonusType>BONUS_MARBLE</BonusType>
+					<YieldModifiers>
+						<iYield>0</iYield>
+						<iYield>5</iYield>
+						<iYield>0</iYield>
+					</YieldModifiers>
+				</BonusYieldModifier>
+			</BonusYieldModifiers>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- College of Healing -->
+			<BuildingClass>BUILDINGCLASS_COLLEGE_HEALTH</BuildingClass>
+			<Type>BUILDING_COLLEGE_HEALTH</Type>
+			<Description>TXT_KEY_BUILDING_COLLEGE_HEALTH</Description>
+			<Civilopedia>TXT_KEY_BUILDING_COLLEGE_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_COLLEGE_STRATEGY</Strategy>
+			<Advisor>ADVISOR_GROWTH</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_ADVENTURERS_GUILD</ArtDefineTag>
+			<BuildingExcludes>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_COLLEGE_ENGINEER</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_COLLEGE_OF_THEOLOGY</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_COLLEGE_TRADE</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_COLLEGE_INVENTION</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_COLLEGE_ART</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+			</BuildingExcludes>
+			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
+			<bNeverCapture>1</bNeverCapture>
+			<iCost>-1</iCost>
+			<iAIWeight>300</iAIWeight>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iConquestProb>0</iConquestProb>
+			<iFreeSpecialist>1</iFreeSpecialist>
+			<iAsset>2</iAsset>
+			<iPower>1</iPower>
+			<fVisibilityPriority>1</fVisibilityPriority>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_HEALER</SpecialistType>
+					<iSpecialistCount>2</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GROWTH</FlavorType>
-					<iFlavor>10</iFlavor>
+					<iFlavor>50</iFlavor>
+				</Flavor>
+			</Flavors>
+			<BonusHappinessChanges>
+				<BonusHappinessChange>
+					<BonusType>BONUS_MANA_LIFE</BonusType>
+					<iHappinessChange>1</iHappinessChange>
+				</BonusHappinessChange>
+			</BonusHappinessChanges>
+			<BonusHealthChanges>
+				<BonusHealthChange>
+					<BonusType>BONUS_DESERT_ROSE</BonusType>
+					<iHealthChange>1</iHealthChange>
+				</BonusHealthChange>
+				<BonusHealthChange>
+					<BonusType>BONUS_JETEYE</BonusType>
+					<iHealthChange>1</iHealthChange>
+				</BonusHealthChange>
+				<BonusHealthChange>
+					<BonusType>BONUS_MUSHROOMS</BonusType>
+					<iHealthChange>1</iHealthChange>
+				</BonusHealthChange>
+				<BonusHealthChange>
+					<BonusType>BONUS_RAZORWEED</BonusType>
+					<iHealthChange>1</iHealthChange>
+				</BonusHealthChange>
+				<BonusHealthChange>
+					<BonusType>BONUS_REAGENTS</BonusType>
+					<iHealthChange>1</iHealthChange>
+				</BonusHealthChange>
+				<BonusHealthChange>
+					<BonusType>BONUS_OBSIDIAN</BonusType>
+					<iHealthChange>1</iHealthChange>
+				</BonusHealthChange>
+				<BonusHealthChange>
+					<BonusType>BONUS_WINE</BonusType>
+					<iHealthChange>1</iHealthChange>
+				</BonusHealthChange>
+			</BonusHealthChanges>
+			<LocalSpecialistHappinessChanges>
+				<LocalSpecialistHappinessChange>
+					<SpecialistType>SPECIALIST_HEALER</SpecialistType>
+					<iHappiness>1</iHappiness>
+				</LocalSpecialistHappinessChange>
+				<LocalSpecialistHappinessChange>
+					<SpecialistType>SPECIALIST_GREAT_HEALER</SpecialistType>
+					<iHappiness>2</iHappiness>
+				</LocalSpecialistHappinessChange>
+			</LocalSpecialistHappinessChanges>
+			<BonusCommerceModifiers>
+				<BonusCommerceModifier>
+					<BonusType>BONUS_DESERT_ROSE</BonusType>
+					<CommerceModifiers>
+						<iCommerce>0</iCommerce>
+						<iCommerce>5</iCommerce>
+						<iCommerce>0</iCommerce>
+					</CommerceModifiers>
+				</BonusCommerceModifier>
+				<BonusCommerceModifier>
+					<BonusType>BONUS_JETEYE</BonusType>
+					<CommerceModifiers>
+						<iCommerce>0</iCommerce>
+						<iCommerce>5</iCommerce>
+						<iCommerce>0</iCommerce>
+					</CommerceModifiers>
+				</BonusCommerceModifier>
+				<BonusCommerceModifier>
+					<BonusType>BONUS_MUSHROOMS</BonusType>
+					<CommerceModifiers>
+						<iCommerce>0</iCommerce>
+						<iCommerce>5</iCommerce>
+						<iCommerce>0</iCommerce>
+					</CommerceModifiers>
+				</BonusCommerceModifier>
+				<BonusCommerceModifier>
+					<BonusType>BONUS_REAGENTS</BonusType>
+					<CommerceModifiers>
+						<iCommerce>0</iCommerce>
+						<iCommerce>0</iCommerce>
+						<iCommerce>0</iCommerce>
+					</CommerceModifiers>
+				</BonusCommerceModifier>
+				<BonusCommerceModifier>
+					<BonusType>BONUS_RAZORWEED</BonusType>
+					<CommerceModifiers>
+						<iCommerce>0</iCommerce>
+						<iCommerce>5</iCommerce>
+						<iCommerce>0</iCommerce>
+					</CommerceModifiers>
+				</BonusCommerceModifier>
+			</BonusCommerceModifiers>
+			<BonusYieldModifiers>
+				<BonusYieldModifier>
+					<BonusType>BONUS_SALT</BonusType>
+					<YieldModifiers>
+						<iYield>5</iYield>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+					</YieldModifiers>
+				</BonusYieldModifier>
+			</BonusYieldModifiers>
+			<RemovePromotion>PROMOTION_DISEASED</RemovePromotion>
+			<RemovePromotion>PROMOTION_ENNERVATE</RemovePromotion>
+			<RemovePromotion>PROMOTION_PLAGUE</RemovePromotion>
+			<RemovePromotion>PROMOTION_POISONED</RemovePromotion>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- College of Commerce -->
+			<BuildingClass>BUILDINGCLASS_COLLEGE_TRADE</BuildingClass>
+			<Type>BUILDING_COLLEGE_TRADE</Type>
+			<Description>TXT_KEY_BUILDING_COLLEGE_TRADE</Description>
+			<Civilopedia>TXT_KEY_BUILDING_COLLEGE_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_COLLEGE_STRATEGY</Strategy>
+			<Advisor>ADVISOR_GROWTH</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_ADVENTURERS_GUILD</ArtDefineTag>
+			<BuildingExcludes>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_COLLEGE_ENGINEER</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_COLLEGE_OF_THEOLOGY</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_COLLEGE_HEALTH</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_COLLEGE_INVENTION</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_COLLEGE_ART</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+			</BuildingExcludes>
+			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
+			<bNeverCapture>1</bNeverCapture>
+			<iCost>-1</iCost>
+			<iAIWeight>300</iAIWeight>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iConquestProb>0</iConquestProb>
+			<iFreeSpecialist>1</iFreeSpecialist>
+			<iAsset>2</iAsset>
+			<iPower>1</iPower>
+			<fVisibilityPriority>1</fVisibilityPriority>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+					<iSpecialistCount>2</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_GOLD</FlavorType>
+					<iFlavor>50</iFlavor>
+				</Flavor>
+			</Flavors>
+			<LocalSpecialistYieldChanges>
+				<LocalSpecialistYieldChange>
+					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+					<YieldChanges>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</YieldChanges>
+				</LocalSpecialistYieldChange>
+				<LocalSpecialistYieldChange>
+					<SpecialistType>SPECIALIST_GREAT_MERCHANT</SpecialistType>
+					<YieldChanges>
+						<iYield>2</iYield>
+						<iYield>0</iYield>
+						<iYield>2</iYield>
+					</YieldChanges>
+				</LocalSpecialistYieldChange>
+			</LocalSpecialistYieldChanges>
+			<BonusHappinessChanges>
+				<BonusHappinessChange>
+					<BonusType>BONUS_MANA_MIND</BonusType>
+					<iHappinessChange>1</iHappinessChange>
+				</BonusHappinessChange>
+				<BonusHappinessChange>
+					<BonusType>BONUS_GOLD</BonusType>
+					<iHappinessChange>1</iHappinessChange>
+				</BonusHappinessChange>
+				<BonusHappinessChange>
+					<BonusType>BONUS_GEMS</BonusType>
+					<iHappinessChange>1</iHappinessChange>
+				</BonusHappinessChange>
+				<BonusHappinessChange>
+					<BonusType>BONUS_FINE_CLOTHES</BonusType>
+					<iHappinessChange>1</iHappinessChange>
+				</BonusHappinessChange>
+				<BonusHappinessChange>
+					<BonusType>BONUS_JEWELS</BonusType>
+					<iHappinessChange>1</iHappinessChange>
+				</BonusHappinessChange>
+				<BonusHappinessChange>
+					<BonusType>BONUS_WINE</BonusType>
+					<iHappinessChange>1</iHappinessChange>
+				</BonusHappinessChange>
+				<BonusHappinessChange>
+					<BonusType>BONUS_BLEEDING_GOD_WINE</BonusType>
+					<iHappinessChange>1</iHappinessChange>
+				</BonusHappinessChange>
+				<BonusHappinessChange>
+					<BonusType>BONUS_PATRIAN_ARTIFACTS</BonusType>
+					<iHappinessChange>1</iHappinessChange>
+				</BonusHappinessChange>
+			</BonusHappinessChanges>
+			<LocalSpecialistHappinessChanges>
+				<LocalSpecialistHappinessChange>
+					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+					<iHappiness>-1</iHappiness>
+				</LocalSpecialistHappinessChange>
+				<LocalSpecialistHappinessChange>
+					<SpecialistType>SPECIALIST_GREAT_MERCHANT</SpecialistType>
+					<iHappiness>-2</iHappiness>
+				</LocalSpecialistHappinessChange>
+			</LocalSpecialistHappinessChanges>
+			<TradeYieldModifiers> 
+				<iYield>5</iYield>
+				<iYield>5</iYield>
+				<iYield>5</iYield>
+			</TradeYieldModifiers>
+			<TradeCommerceModifiers>
+				<iCommerce>5</iCommerce>
+				<iCommerce>5</iCommerce>
+				<iCommerce>5</iCommerce>
+			</TradeCommerceModifiers>
+			<iTradeRoutes>1</iTradeRoutes>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- College of the Arts -->
+			<BuildingClass>BUILDINGCLASS_COLLEGE_ART</BuildingClass>
+			<Type>BUILDING_COLLEGE_ART</Type>
+			<Description>TXT_KEY_BUILDING_COLLEGE_ART</Description>
+			<Civilopedia>TXT_KEY_BUILDING_COLLEGE_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_COLLEGE_STRATEGY</Strategy>
+			<Advisor>ADVISOR_GROWTH</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_ADVENTURERS_GUILD</ArtDefineTag>
+			<BuildingExcludes>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_COLLEGE_ENGINEER</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_COLLEGE_OF_THEOLOGY</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_COLLEGE_HEALTH</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_COLLEGE_TRADE</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_COLLEGE_INVENTION</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+			</BuildingExcludes>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+					<iSpecialistCount>2</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
+			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
+			<bNeverCapture>1</bNeverCapture>
+			<iCost>-1</iCost>
+			<iAIWeight>300</iAIWeight>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iConquestProb>0</iConquestProb>
+			<iFreeSpecialist>1</iFreeSpecialist>
+			<iAsset>2</iAsset>
+			<iPower>1</iPower>
+			<fVisibilityPriority>1</fVisibilityPriority>
+			<SpecialistCommerceChanges>
+				<SpecialistCommerceChange>
+					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+					<CommerceChanges>
+						<iCommerce>2</iCommerce>
+						<iCommerce>0</iCommerce>
+						<iCommerce>0</iCommerce>
+					</CommerceChanges>
+				</SpecialistCommerceChange>
+				<SpecialistCommerceChange>
+					<SpecialistType>SPECIALIST_GREAT_ARTIST</SpecialistType>
+					<CommerceChanges>
+						<iCommerce>2</iCommerce>
+						<iCommerce>0</iCommerce>
+						<iCommerce>0</iCommerce>
+					</CommerceChanges>
+				</SpecialistCommerceChange>
+			</SpecialistCommerceChanges>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_CULTURE</FlavorType>
+					<iFlavor>50</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_GOLD</FlavorType>
+					<iFlavor>50</iFlavor>
 				</Flavor>
 			</Flavors>
 			<BonusHappinessChanges>
@@ -589,11 +1147,11 @@
 					<iHappinessChange>1</iHappinessChange>
 				</BonusHappinessChange>
 				<BonusHappinessChange>
-					<BonusType>BONUS_PEARL</BonusType>
+					<BonusType>BONUS_SILK</BonusType>
 					<iHappinessChange>1</iHappinessChange>
 				</BonusHappinessChange>
 				<BonusHappinessChange>
-					<BonusType>BONUS_PATRIAN_ARTIFACTS</BonusType>
+					<BonusType>BONUS_MANA_SPIRIT</BonusType>
 					<iHappinessChange>1</iHappinessChange>
 				</BonusHappinessChange>
 			</BonusHappinessChanges>
@@ -601,7 +1159,7 @@
 				<BonusCommerceModifier>
 					<BonusType>BONUS_DYE</BonusType>
 					<CommerceModifiers>
-						<iCommerce>0</iCommerce>
+						<iCommerce>5</iCommerce>
 						<iCommerce>0</iCommerce>
 						<iCommerce>5</iCommerce>
 					</CommerceModifiers>
@@ -635,7 +1193,7 @@
 					<CommerceModifiers>
 						<iCommerce>5</iCommerce>
 						<iCommerce>0</iCommerce>
-						<iCommerce>0</iCommerce>
+						<iCommerce>5</iCommerce>
 					</CommerceModifiers>
 				</BonusCommerceModifier>
 				<BonusCommerceModifier>
@@ -643,13 +1201,13 @@
 					<CommerceModifiers>
 						<iCommerce>0</iCommerce>
 						<iCommerce>5</iCommerce>
-						<iCommerce>0</iCommerce>
+						<iCommerce>5</iCommerce>
 					</CommerceModifiers>
 				</BonusCommerceModifier>
 				<BonusCommerceModifier>
 					<BonusType>BONUS_SILK</BonusType>
 					<CommerceModifiers>
-						<iCommerce>0</iCommerce>
+						<iCommerce>5</iCommerce>
 						<iCommerce>0</iCommerce>
 						<iCommerce>5</iCommerce>
 					</CommerceModifiers>
@@ -657,54 +1215,73 @@
 			</BonusCommerceModifiers>
 		</BuildingInfo>
 		<BuildingInfo>		<!-- College Of Theology -->
-			<BuildingClass>BUILDINGCLASS_COLLEGE</BuildingClass>
+			<BuildingClass>BUILDINGCLASS_COLLEGE_OF_THEOLOGY</BuildingClass>
 			<Type>BUILDING_COLLEGE_OF_THEOLOGY</Type>
 			<Description>TXT_KEY_BUILDING_COLLEGE_OF_THEOLOGY</Description>
 			<Civilopedia>TXT_KEY_BUILDING_COLLEGE_OF_THEOLOGY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_COLLEGE_OF_THEOLOGY_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ADVENTURERS_GUILD</ArtDefineTag>
-			<PrereqTech>TECH_PHILOSOPHY</PrereqTech>
+			<BuildingExcludes>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_COLLEGE_ENGINEER</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_COLLEGE_HEALTH</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_COLLEGE_TRADE</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_COLLEGE_INVENTION</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_COLLEGE_ART</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+			</BuildingExcludes>
 			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>-1</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>0</iConquestProb>
+			<iFreeSpecialist>1</iFreeSpecialist>
+			<iAIWeight>300</iAIWeight>
 			<iAsset>2</iAsset>
 			<iPower>1</iPower>
 			<fVisibilityPriority>1</fVisibilityPriority>
-			<SpecialistYieldChanges>
-				<SpecialistYieldChange>
+			<SpecialistCommerceChanges>
+				<SpecialistCommerceChange>
 					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<YieldChanges>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-						<iYield>0</iYield>
-					</YieldChanges>
-				</SpecialistYieldChange>
-				<SpecialistYieldChange>
+					<CommerceChanges>
+						<iCommerce>0</iCommerce>
+						<iCommerce>1</iCommerce>
+						<iCommerce>0</iCommerce>
+					</CommerceChanges>
+				</SpecialistCommerceChange>
+				<SpecialistCommerceChange>
 					<SpecialistType>SPECIALIST_GREAT_PRIEST</SpecialistType>
-					<YieldChanges>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-						<iYield>0</iYield>
-					</YieldChanges>
-				</SpecialistYieldChange>
-			</SpecialistYieldChanges>
+					<CommerceChanges>
+						<iCommerce>0</iCommerce>
+						<iCommerce>2</iCommerce>
+						<iCommerce>0</iCommerce>
+					</CommerceChanges>
+				</SpecialistCommerceChange>
+			</SpecialistCommerceChanges>
 			<SpecialistCounts>
 				<SpecialistCount>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
 					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
+					<iSpecialistCount>2</iSpecialistCount>
 				</SpecialistCount>
 			</SpecialistCounts>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_GROWTH</FlavorType>
-					<iFlavor>10</iFlavor>
+					<FlavorType>FLAVOR_RELIGION</FlavorType>
+					<iFlavor>50</iFlavor>
 				</Flavor>
 			</Flavors>
 		</BuildingInfo>
@@ -1024,6 +1601,12 @@
 			<bMustMaintain>1</bMustMaintain>
 			<iHurryCostModifier>50</iHurryCostModifier>
 			<iConquestProb>0</iConquestProb>
+			<FreeSpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</FreeSpecialistCounts>
 			<iAsset>2</iAsset>
 			<iPower>4</iPower>
 			<ObsoleteSafeCommerceChanges>
@@ -1105,6 +1688,135 @@
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Military Academy -->
+			<BuildingClass>BUILDINGCLASS_MILITARY_ACADEMY</BuildingClass>
+			<Type>BUILDING_MILITARY_ACADEMY</Type>
+			<Description>TXT_KEY_BUILDING_MILITARY_ACADEMY</Description>
+			<Civilopedia>TXT_KEY_BUILDING_MILITARY_ACADEMY_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_TRAINING_YARD</ArtDefineTag>
+			<iAIWeight>300</iAIWeight>
+			<iCost>-1</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iConquestProb>0</iConquestProb>
+			<iAsset>1</iAsset>
+			<fVisibilityPriority>2</fVisibilityPriority>
+			<ConstructSound>AS2D_BUILD_BARRACKS</ConstructSound>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<iFlavor>20</iFlavor>
+				</Flavor>
+			</Flavors>
+			<TrainXPCaps>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<fTrainXPCap>15</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<fTrainXPCap>15</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<fTrainXPCap>15</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<fTrainXPCap>15</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<fTrainXPCap>15</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<fTrainXPCap>15</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<fTrainXPCap>15</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<fTrainXPCap>15</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+					<fTrainXPCap>15</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
+					<fTrainXPCap>15</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
+					<fTrainXPCap>15</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_BEAST</UnitCombatType>
+					<fTrainXPCap>15</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_ANIMAL</UnitCombatType>
+					<fTrainXPCap>15</fTrainXPCap>
+				</TrainXPCap>
+			</TrainXPCaps>
+			<TrainXPRates>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<fTrainXPRate>0.4</fTrainXPRate>
+				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<fTrainXPRate>0.4</fTrainXPRate>
+				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<fTrainXPRate>0.4</fTrainXPRate>
+				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<fTrainXPRate>0.4</fTrainXPRate>
+				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<fTrainXPRate>0.4</fTrainXPRate>
+				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<fTrainXPRate>0.4</fTrainXPRate>
+				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<fTrainXPRate>0.4</fTrainXPRate>
+				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
+					<fTrainXPRate>0.4</fTrainXPRate>
+				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_ANIMAL</UnitCombatType>
+					<fTrainXPRate>0.4</fTrainXPRate>
+				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_BEAST</UnitCombatType>
+					<fTrainXPRate>0.4</fTrainXPRate>
+				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
+					<fTrainXPRate>0.4</fTrainXPRate>
+				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+					<fTrainXPRate>0.4</fTrainXPRate>
+				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<fTrainXPRate>0.4</fTrainXPRate>
+				</TrainXPRate>
+			</TrainXPRates>
 		</BuildingInfo>
 		<BuildingInfo>		<!-- Statue Of Valor -->
 			<BuildingClass>BUILDINGCLASS_STATUE_OF_VALOR</BuildingClass>

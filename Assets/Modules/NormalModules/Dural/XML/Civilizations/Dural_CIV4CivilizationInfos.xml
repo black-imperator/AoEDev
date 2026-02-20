@@ -104,6 +104,26 @@
 					<BuildingType>BUILDING_COLLEGE_OF_THEOLOGY</BuildingType>
 				</Building>
 				<Building>
+					<BuildingClassType>BUILDINGCLASS_COLLEGE_ART</BuildingClassType>
+					<BuildingType>BUILDING_COLLEGE_ART</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_COLLEGE_ENGINEER</BuildingClassType>
+					<BuildingType>BUILDING_COLLEGE_ENGINEER</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_COLLEGE_HEALTH</BuildingClassType>
+					<BuildingType>BUILDING_COLLEGE_HEALTH</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_COLLEGE_TRADE</BuildingClassType>
+					<BuildingType>BUILDING_COLLEGE_TRADE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_COLLEGE_INVENTION</BuildingClassType>
+					<BuildingType>BUILDING_COLLEGE_INVENTION</BuildingType>
+				</Building>
+				<Building>
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 					<BuildingType>BUILDING_PALACE_DURAL</BuildingType>
 				</Building>
