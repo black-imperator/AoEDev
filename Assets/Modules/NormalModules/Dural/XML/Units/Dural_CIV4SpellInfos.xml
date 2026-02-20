@@ -45,5 +45,23 @@
 			<Sound>AS3D_SPELL_BLESS</Sound>
 			<Button>Art/Interface/Buttons/Promotions/Loyalty.dds</Button>
 		</SpellInfo>
+		<SpellInfo>			<!-- Build Military Academy -->
+			<Type>SPELL_BUILD_MILITARY_ACADEMY</Type>
+			<Description>TXT_KEY_SPELL_BUILD_MILITARY_ACADEMY</Description>
+			<PromotionPrereq1>PROMOTION_RECRUITER</PromotionPrereq1>
+			<RemovePromotions>
+				<RemovePromotion>PROMOTION_RECRUITER</RemovePromotion>
+			</RemovePromotions>
+			<bAllowAI>1</bAllowAI>
+			<bInCityOnly>1</bInCityOnly>
+			<bAbility>1</bAbility>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+			<bBuffCasterOnly>1</bBuffCasterOnly>
+			<CreateBuildingType>BUILDING_MILITARY_ACADEMY</CreateBuildingType>
+			<Effect>EFFECT_CREATION</Effect>
+			<Sound>AS2D_BUILD_BARRACKS</Sound>
+			<Button>Art/Interface/Buttons/Buildings/Basilica.dds</Button>
+		</SpellInfo>
 	</SpellInfos>
 </Civ4SpellInfos>

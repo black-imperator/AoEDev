@@ -964,6 +964,10 @@
 					<BuildingType>BUILDING_COLLEGE_INVENTION</BuildingType>
 					<bBuilding>1</bBuilding>
 				</Building>
+				<Building>
+					<BuildingType>BUILDING_UNIVERSITY</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
 			</Buildings>
 			<Flavors>
 				<Flavor>

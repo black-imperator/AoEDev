@@ -222,6 +222,14 @@
 		<Spanish>Military Academy</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_SPELL_BUILD_MILITARY_ACADEMY</Tag>
+		<English>Build Military Academy</English>
+		<French>Build Military Academy</French>
+		<German>Build Military Academy</German>
+		<Italian>Build Military Academy</Italian>
+		<Spanish>Build Military Academy</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_COLLEGE_STRATEGY</Tag>
 		<English>The College provides a free specialist and a flat boost to Great Person Point production, without influencing the type of Great Person produced. This can be used to tailor your GPP to suit your needs.</English>
 		<French>The College provides a free specialist and a flat boost to Great Person Point production, without influencing the type of Great Person produced. This can be used to tailor your GPP to suit your needs.</French>

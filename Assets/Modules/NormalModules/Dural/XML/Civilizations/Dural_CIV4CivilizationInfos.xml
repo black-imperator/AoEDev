@@ -124,6 +124,14 @@
 					<BuildingType>BUILDING_COLLEGE_INVENTION</BuildingType>
 				</Building>
 				<Building>
+					<BuildingClassType>BUILDINGCLASS_MILITARY_ACADEMY</BuildingClassType>
+					<BuildingType>BUILDING_MILITARY_ACADEMY</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_ACADEMY</BuildingClassType>
+					<BuildingType>BUILDING_UNIVERSITY</BuildingType>
+				</Building>
+				<Building>
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 					<BuildingType>BUILDING_PALACE_DURAL</BuildingType>
 				</Building>
