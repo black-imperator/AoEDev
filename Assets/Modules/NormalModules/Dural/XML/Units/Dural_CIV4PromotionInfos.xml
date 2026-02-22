@@ -271,7 +271,9 @@
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
 			<iMinLevel>-1</iMinLevel>
-			<PrereqCivilization>CIVILIZATION_DURAL</PrereqCivilization>
+			<PrereqCivilizations>
+				<PrereqCivilization>CIVILIZATION_DURAL</PrereqCivilization>
+			</PrereqCivilizations>
 			<PromotionBuilds>
 				<PromotionBuild>BUILD_SACRED_HARVEST</PromotionBuild>
 				<PromotionBuild>BUILD_PATH_OF_LUGUS</PromotionBuild>
@@ -308,7 +310,9 @@
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
 			<bGraphicalOnly>1</bGraphicalOnly>
-			<PrereqCivilization>CIVILIZATION_DURAL</PrereqCivilization>
+			<PrereqCivilizations>
+				<PrereqCivilization>CIVILIZATION_DURAL</PrereqCivilization>
+			</PrereqCivilizations>
 			<PromotionBuilds>
 				<PromotionBuild>BUILD_STYGIAN_SHRINE</PromotionBuild>
 			</PromotionBuilds>
