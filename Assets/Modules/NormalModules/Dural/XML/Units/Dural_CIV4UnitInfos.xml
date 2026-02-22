@@ -1347,7 +1347,7 @@
 			<bMilitaryProduction>1</bMilitaryProduction>
 			<UnitClassUpgrades>
 				<UnitClassUpgradeType>UNITCLASS_PROFESSOR</UnitClassUpgradeType>
-				<UnitClassUpgradeType>UNITCLASS_SPEARMAN</UnitClassUpgradeType>
+				<UnitClassUpgradeType>UNITCLASS_HORSEMAN</UnitClassUpgradeType>
 			</UnitClassUpgrades>
 			<UnitAIs>
 				<UnitAI>
