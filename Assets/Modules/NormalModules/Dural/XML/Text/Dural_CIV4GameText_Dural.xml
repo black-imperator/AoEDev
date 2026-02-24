@@ -558,6 +558,342 @@
 		<Spanish>Scholastic Workforce</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_DURAL_TEACHER_MELEE</Tag>
+		<English>Teaching - Melee</English>
+		<French>Teaching - Melee</French>
+		<German>Teaching - Melee</German>
+		<Italian>Teaching - Melee</Italian>
+		<Spanish>Teaching - Melee</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_STUDENT_MELEE</Tag>
+		<English>Student - Melee</English>
+		<French>Student - Melee</French>
+		<German>Student - Melee</German>
+		<Italian>Student - Melee</Italian>
+		<Spanish>Student - Melee</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_TEACHER_RECON</Tag>
+		<English>Teaching - Recon</English>
+		<French>Teaching - Recon</French>
+		<German>Teaching - Recon</German>
+		<Italian>Teaching - Recon</Italian>
+		<Spanish>Teaching - Recon</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_STUDENT_RECON</Tag>
+		<English>Student - Recon</English>
+		<French>Student - Recon</French>
+		<German>Student - Recon</German>
+		<Italian>Student - Recon</Italian>
+		<Spanish>Student - Recon</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_TEACHER_ADEPT</Tag>
+		<English>Teaching - Arcane</English>
+		<French>Teaching - Arcane</French>
+		<German>Teaching - Arcane</German>
+		<Italian>Teaching - Arcane</Italian>
+		<Spanish>Teaching - Arcane</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_STUDENT_ADEPT</Tag>
+		<English>Student - Arcane</English>
+		<French>Student - Arcane</French>
+		<German>Student - Arcane</German>
+		<Italian>Student - Arcane</Italian>
+		<Spanish>Student - Arcane</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_TEACHER_COMMANDER</Tag>
+		<English>Teaching - Commander</English>
+		<French>Teaching - Commander</French>
+		<German>Teaching - Commander</German>
+		<Italian>Teaching - Commander</Italian>
+		<Spanish>Teaching - Commander</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_STUDENT_COMMANDER</Tag>
+		<English>Student - Commander</English>
+		<French>Student - Commander</French>
+		<German>Student - Commander</German>
+		<Italian>Student - Commander</Italian>
+		<Spanish>Student - Commander</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_TEACHER_ROGUE</Tag>
+		<English>Teaching - Rogue</English>
+		<French>Teaching - Rogue</French>
+		<German>Teaching - Rogue</German>
+		<Italian>Teaching - Rogue</Italian>
+		<Spanish>Teaching - Rogue</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_STUDENT_ROGUE</Tag>
+		<English>Student - Rogue</English>
+		<French>Student - Rogue</French>
+		<German>Student - Rogue</German>
+		<Italian>Student - Rogue</Italian>
+		<Spanish>Student - Rogue</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_TEACHER_ARCHER</Tag>
+		<English>Teaching - Archer</English>
+		<French>Teaching - Archer</French>
+		<German>Teaching - Archer</German>
+		<Italian>Teaching - Archer</Italian>
+		<Spanish>Teaching - Archer</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_STUDENT_ARCHER</Tag>
+		<English>Student - Archer</English>
+		<French>Student - Archer</French>
+		<German>Student - Archer</German>
+		<Italian>Student - Archer</Italian>
+		<Spanish>Student - Archer</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_TEACHER_SIEGE</Tag>
+		<English>Teaching - Siege</English>
+		<French>Teaching - Siege</French>
+		<German>Teaching - Siege</German>
+		<Italian>Teaching - Siege</Italian>
+		<Spanish>Teaching - Siege</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_STUDENT_SIEGE</Tag>
+		<English>Student - Siege</English>
+		<French>Student - Siege</French>
+		<German>Student - Siege</German>
+		<Italian>Student - Siege</Italian>
+		<Spanish>Student - Siege</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_TEACHER_DEF_MELEE</Tag>
+		<English>Teaching - Defensive Melee</English>
+		<French>Teaching - Defensive Melee</French>
+		<German>Teaching - Defensive Melee</German>
+		<Italian>Teaching - Defensive Melee</Italian>
+		<Spanish>Teaching - Defensive Melee</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_STUDENT_DEF_MELEE</Tag>
+		<English>Student - Defensive Melee</English>
+		<French>Student - Defensive Melee</French>
+		<German>Student - Defensive Melee</German>
+		<Italian>Student - Defensive Melee</Italian>
+		<Spanish>Student - Defensive Melee</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_TEACHER_NAVAL</Tag>
+		<English>Teaching - Naval</English>
+		<French>Teaching - Naval</French>
+		<German>Teaching - Naval</German>
+		<Italian>Teaching - Naval</Italian>
+		<Spanish>Teaching - Naval</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_STUDENT_NAVAL</Tag>
+		<English>Student - Naval</English>
+		<French>Student - Naval</French>
+		<German>Student - Naval</German>
+		<Italian>Student - Naval</Italian>
+		<Spanish>Student - Naval</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_TEACHER_WORKER</Tag>
+		<English>Teaching - Worker</English>
+		<French>Teaching - Worker</French>
+		<German>Teaching - Worker</German>
+		<Italian>Teaching - Worker</Italian>
+		<Spanish>Teaching - Worker</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_STUDENT_WORKER</Tag>
+		<English>Student - Worker</English>
+		<French>Student - Worker</French>
+		<German>Student - Worker</German>
+		<Italian>Student - Worker</Italian>
+		<Spanish>Student - Worker</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_TEACHER_MOUNTED</Tag>
+		<English>Teaching - Mounted</English>
+		<French>Teaching - Mounted</French>
+		<German>Teaching - Mounted</German>
+		<Italian>Teaching - Mounted</Italian>
+		<Spanish>Teaching - Mounted</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_STUDENT_MOUNTED</Tag>
+		<English>Student - Mounted</English>
+		<French>Student - Mounted</French>
+		<German>Student - Mounted</German>
+		<Italian>Student - Mounted</Italian>
+		<Spanish>Student - Mounted</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_TEACHER_DISCIPLE</Tag>
+		<English>Teaching - Disciple</English>
+		<French>Teaching - Disciple</French>
+		<German>Teaching - Disciple</German>
+		<Italian>Teaching - Disciple</Italian>
+		<Spanish>Teaching - Disciple</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_STUDENT_DISCIPLE</Tag>
+		<English>Student - Disciple</English>
+		<French>Student - Disciple</French>
+		<German>Student - Disciple</German>
+		<Italian>Student - Disciple</Italian>
+		<Spanish>Student - Disciple</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_TEACHER_MELEE</Tag>
+		<English>Pikes</English>
+		<French>Piques</French>
+		<German>Piken</German>
+		<Italian>Pikes</Italian>
+		<Spanish>Pikes</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_STUDENT_MELEE</Tag>
+		<English>Pikes</English>
+		<French>Piques</French>
+		<German>Piken</German>
+		<Italian>Pikes</Italian>
+		<Spanish>Pikes</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_TEACHER_MELEE</Tag>
+		<English>Pikes</English>
+		<French>Piques</French>
+		<German>Piken</German>
+		<Italian>Pikes</Italian>
+		<Spanish>Pikes</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_STUDENT_MELEE</Tag>
+		<English>Pikes</English>
+		<French>Piques</French>
+		<German>Piken</German>
+		<Italian>Pikes</Italian>
+		<Spanish>Pikes</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_TEACHER_MELEE</Tag>
+		<English>Pikes</English>
+		<French>Piques</French>
+		<German>Piken</German>
+		<Italian>Pikes</Italian>
+		<Spanish>Pikes</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_STUDENT_MELEE</Tag>
+		<English>Pikes</English>
+		<French>Piques</French>
+		<German>Piken</German>
+		<Italian>Pikes</Italian>
+		<Spanish>Pikes</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_TEACHER_MELEE</Tag>
+		<English>Pikes</English>
+		<French>Piques</French>
+		<German>Piken</German>
+		<Italian>Pikes</Italian>
+		<Spanish>Pikes</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_STUDENT_MELEE</Tag>
+		<English>Pikes</English>
+		<French>Piques</French>
+		<German>Piken</German>
+		<Italian>Pikes</Italian>
+		<Spanish>Pikes</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_TEACHER_MELEE</Tag>
+		<English>Pikes</English>
+		<French>Piques</French>
+		<German>Piken</German>
+		<Italian>Pikes</Italian>
+		<Spanish>Pikes</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_STUDENT_MELEE</Tag>
+		<English>Pikes</English>
+		<French>Piques</French>
+		<German>Piken</German>
+		<Italian>Pikes</Italian>
+		<Spanish>Pikes</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_TEACHER_MELEE</Tag>
+		<English>Pikes</English>
+		<French>Piques</French>
+		<German>Piken</German>
+		<Italian>Pikes</Italian>
+		<Spanish>Pikes</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_STUDENT_MELEE</Tag>
+		<English>Pikes</English>
+		<French>Piques</French>
+		<German>Piken</German>
+		<Italian>Pikes</Italian>
+		<Spanish>Pikes</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_TEACHER_MELEE</Tag>
+		<English>Pikes</English>
+		<French>Piques</French>
+		<German>Piken</German>
+		<Italian>Pikes</Italian>
+		<Spanish>Pikes</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_STUDENT_MELEE</Tag>
+		<English>Pikes</English>
+		<French>Piques</French>
+		<German>Piken</German>
+		<Italian>Pikes</Italian>
+		<Spanish>Pikes</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_TEACHER_MELEE</Tag>
+		<English>Pikes</English>
+		<French>Piques</French>
+		<German>Piken</German>
+		<Italian>Pikes</Italian>
+		<Spanish>Pikes</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_STUDENT_MELEE</Tag>
+		<English>Pikes</English>
+		<French>Piques</French>
+		<German>Piken</German>
+		<Italian>Pikes</Italian>
+		<Spanish>Pikes</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_TEACHER_MELEE</Tag>
+		<English>Pikes</English>
+		<French>Piques</French>
+		<German>Piken</German>
+		<Italian>Pikes</Italian>
+		<Spanish>Pikes</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DURAL_STUDENT_MELEE</Tag>
+		<English>Pikes</English>
+		<French>Piques</French>
+		<German>Piken</German>
+		<Italian>Pikes</Italian>
+		<Spanish>Pikes</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_TRAIT_DURAL_EDUCATED</Tag>
 		<English>Educated</English>
 		<French>Educated</French>

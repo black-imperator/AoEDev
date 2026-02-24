@@ -172,34 +172,6 @@
 					<BuildingType>BUILDING_CARNIVAL_DURAL</BuildingType>
 				</Building>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_STATUE_OF_VALOR</BuildingClassType>
-					<BuildingType>BUILDING_STATUE_OF_VALOR</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_STATUE_OF_COURAGE</BuildingClassType>
-					<BuildingType>BUILDING_STATUE_OF_COURAGE</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_STATUE_OF_LOYALTY</BuildingClassType>
-					<BuildingType>BUILDING_STATUE_OF_LOYALTY</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_STATUE_OF_HOPE</BuildingClassType>
-					<BuildingType>BUILDING_STATUE_OF_HOPE</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_STATUE_OF_INSPIRATION</BuildingClassType>
-					<BuildingType>BUILDING_STATUE_OF_INSPIRATION</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_STATUE_OF_GLORY</BuildingClassType>
-					<BuildingType>BUILDING_STATUE_OF_GLORY</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_STATUE_OF_PURITY</BuildingClassType>
-					<BuildingType>BUILDING_STATUE_OF_PURITY</BuildingType>
-				</Building>
-				<Building>
 					<BuildingClassType>BUILDINGCLASS_TEMPLE_OF_KILMORPH</BuildingClassType>
 					<BuildingType>NONE</BuildingType>
 				</Building>
