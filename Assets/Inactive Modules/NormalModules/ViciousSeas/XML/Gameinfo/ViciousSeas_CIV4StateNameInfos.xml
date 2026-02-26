@@ -1,12 +1,5 @@
 <?xml version="1.0"?>
 <Civ4StateNameInfos xmlns="x-schema:ViciousSeas_CIV4GameInfoSchema.xml">
 	<StateNameInfos>
-		<StateNameInfo>	<!-- Magocracy -->
-			<Type>STATE_NAME_SLUMBERING_COVEN</Type>
-			<Description>TXT_KEY_STATE_NAME_SLUMBERING_COVEN</Description>
-			<PrereqCivics>
-				<CivicType>CIVIC_SLUMBERING_COVEN</CivicType>
-			</PrereqCivics>
-		</StateNameInfo>
 	</StateNameInfos>
 </Civ4StateNameInfos>

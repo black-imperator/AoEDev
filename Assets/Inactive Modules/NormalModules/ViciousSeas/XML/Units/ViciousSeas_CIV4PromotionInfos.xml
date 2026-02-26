@@ -659,34 +659,6 @@
 				</UnitCombatCaptureRate>
 			</UnitCombatCaptureRates>
 		</PromotionInfo>
-		<PromotionInfo>		<!-- Cargo Dont -->
-			<Type>PROMOTION_CARGO_DONT</Type>
-			<Description>TXT_KEY_PROMOTION_NO_FREE_RIDES</Description>
-		    <Civilopedia>TXT_KEY_PROMOTION_NO_FREE_RIDES_PEDIA</Civilopedia>
-			<Button>Art/Interface/Buttons/Promotions/Fatigued.dds</Button>
-			<iCargoChange>-2</iCargoChange>
-			<bAutoAcquire>1</bAutoAcquire>
-			<bNoXP>1</bNoXP>
-			<PrereqPromotionANDs>
-				<PrereqPromotionAND>
-					<PromotionType>PROMOTION_DRAGON</PromotionType>
-					<iPrereqApplications>1</iPrereqApplications>
-				</PrereqPromotionAND>
-			</PrereqPromotionANDs>
-			<PrereqCivilizations>
-				<PrereqCivilization>CIVILIZATION_BEZERI</PrereqCivilization>
-			</PrereqCivilizations>
-			<UnitCombats>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ANIMAL</UnitCombatType>
-					<iMaxApplications>0</iMaxApplications>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_BEAST</UnitCombatType>
-					<iMaxApplications>0</iMaxApplications>
-				</UnitCombat>
-			</UnitCombats>
-		</PromotionInfo>
 		<PromotionInfo>		<!-- Conquerors of the Sea -->
 			<Type>PROMOTION_CONQUERORSOFTHESEA</Type>
 			<Description>TXT_KEY_PROMOTION_CONQUERORSOFTHESEA</Description>

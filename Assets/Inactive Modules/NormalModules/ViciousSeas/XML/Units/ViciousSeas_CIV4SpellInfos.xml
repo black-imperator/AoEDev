@@ -39,6 +39,7 @@
 			<StateReligionPrereq>RELIGION_FELLOWSHIP_OF_LEAVES</StateReligionPrereq>
 			<FeatureOrPrereq1>FEATURE_KELP_FOREST</FeatureOrPrereq1>
 			<bAllowAI>1</bAllowAI>
+			<iAIWeight>25</iAIWeight>
 			<bIsAutoCastable>1</bIsAutoCastable>
 			<bInBordersOnly>1</bInBordersOnly>
 			<bHasCasted>1</bHasCasted>
@@ -77,6 +78,7 @@
 			<bAllowAI>1</bAllowAI>
 			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
 			<bHasCasted>1</bHasCasted>
+			<iAIWeight>25</iAIWeight>
 			<SpellClasses>
 				<SpellClass>
 					<SpellClassType>SPELLCLASS_WATER</SpellClassType>
@@ -118,6 +120,7 @@
 			<PromotionPrereq2>PROMOTION_NATURE2</PromotionPrereq2>
 			<CivilizationPrereq>CIVILIZATION_BEZERI</CivilizationPrereq>
 			<bAllowAI>1</bAllowAI>
+			<iAIWeight>25</iAIWeight>
 			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
 			<bHasCasted>1</bHasCasted>
 			<bIsAutoCastable>1</bIsAutoCastable>
@@ -329,6 +332,7 @@
 			<iNumTargets>3</iNumTargets>
 			<bResistable>1</bResistable>
 			<bAllowAI>1</bAllowAI>
+			<iAIWeight>25</iAIWeight>
 			<bIsAutoCastable>1</bIsAutoCastable>
 			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
 			<bHasCasted>1</bHasCasted>
@@ -361,6 +365,7 @@
 			<iNumTargets>1</iNumTargets>
 			<bResistable>1</bResistable>
 			<bAllowAI>1</bAllowAI>
+			<iAIWeight>25</iAIWeight>
 			<bIsAutoCastable>1</bIsAutoCastable>
 			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
 			<bHasCasted>1</bHasCasted>

@@ -593,6 +593,7 @@ def postCombatMimic(pCaster, pOpponent):
 	iNewborn 		= getInfoType('PROMOTION_NEWBORN')
 	iFrostling		= getInfoType('PROMOTION_SUSTAIN_FROSTLING')
 	iPoisoned = getInfoType('PROMOTION_POISONED')
+	iAngryDemon = getInfoType('PROMOTION_DEMONIC_BERSERK')
 	listProms = []
 	iCount = 0
 	for iProm in range(gc.getNumPromotionInfos()):
@@ -601,7 +602,7 @@ def postCombatMimic(pCaster, pOpponent):
 		else:
 			if (pOpponent.isHasPromotion(iProm)):
 				if gc.getPromotionInfo(iProm).isEquipment() == False:
-					if (iProm != iUndead and iProm != iDivine and iProm != iBronze and iProm != iIron and iProm != iMithril and iProm != iGreatCommander and iProm != iLeashAch and iProm != iLeashCommand and iProm != iLeashMana and iProm != iLeashMin1 and iProm != iLeashMin2 and iProm != iLeashMin3 and iProm != iLeashMin4 and iProm != iLeashPristin and iProm != iLeash0 and iProm != iLeash1 and iProm != iLeashLich and iProm != iHaste and iProm != iFatigue and iProm != iObscured and iProm != iWaaagh and iProm != iSlow and iProm != iSpooked and iProm != iLost and iProm != iHauntStalk and iProm != iFortCaptain and iProm != iBlur and iProm != iDance and iProm != iLoyalty and iProm != iDesertStealth and iProm != iHeld and iProm != iWalls and iProm != iFreelancer and iProm != iNewborn  and iProm != iFrostling and iProm != iPoisoned):
+					if (iProm != iUndead and iProm != iDivine and iProm != iBronze and iProm != iIron and iProm != iMithril and iProm != iGreatCommander and iProm != iAngryDemon and iProm != iLeashAch and iProm != iLeashCommand and iProm != iLeashMana and iProm != iLeashMin1 and iProm != iLeashMin2 and iProm != iLeashMin3 and iProm != iLeashMin4 and iProm != iLeashPristin and iProm != iLeash0 and iProm != iLeash1 and iProm != iLeashLich and iProm != iHaste and iProm != iFatigue and iProm != iObscured and iProm != iWaaagh and iProm != iSlow and iProm != iSpooked and iProm != iLost and iProm != iHauntStalk and iProm != iFortCaptain and iProm != iBlur and iProm != iDance and iProm != iLoyalty and iProm != iDesertStealth and iProm != iHeld and iProm != iWalls and iProm != iFreelancer and iProm != iNewborn  and iProm != iFrostling and iProm != iPoisoned):
 						if gc.getPromotionInfo(iProm).isRace() == False:
 							if gc.getPromotionInfo(iProm).isEffectProm() == False:
 								if gc.getPromotionInfo(iProm).isMustMaintain() == False:

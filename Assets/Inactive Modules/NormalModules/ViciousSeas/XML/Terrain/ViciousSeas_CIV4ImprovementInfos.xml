@@ -915,7 +915,7 @@
 				</TerrainMakesValid>
 			</TerrainMakesValids>
 			<ImprovementUpgrade>IMPROVEMENTCLASS_DREDGE_HEEP</ImprovementUpgrade>
-			<iAppearanceProbability>70</iAppearanceProbability>
+			<iAppearanceProbability>65</iAppearanceProbability>
 			<SpawnUnitType>UNIT_DROWN</SpawnUnitType>
 			<ImmediateSpawnUnitType>UNIT_DROWN</ImmediateSpawnUnitType>
 			<SpawnUnitCiv>CIVILIZATION_DEMON</SpawnUnitCiv>
@@ -931,17 +931,17 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
-			<iLairCreationWeight>90</iLairCreationWeight>
+			<iLairCreationWeight>70</iLairCreationWeight>
 			<LairCreationWeightTechs>
 				<LairCreationWeightTech>
 					<LairCreationWeightTechType>TECH_NECROMANCY</LairCreationWeightTechType>
-					<iLairCreationWeightTech>-90</iLairCreationWeightTech>
+					<iLairCreationWeightTech>-70</iLairCreationWeightTech>
 				</LairCreationWeightTech>
 			</LairCreationWeightTechs>
 			<LairUpgradeTechs>
 				<LairUpgradeTech>
 					<LairUpgradeTechType>TECH_NECROMANCY</LairUpgradeTechType>
-					<iLairUpgradeTech>90</iLairUpgradeTech>
+					<iLairUpgradeTech>70</iLairUpgradeTech>
 				</LairUpgradeTech>
 				<LairUpgradeTech>
 					<LairUpgradeTechType>TECH_MALEVOLENT_DESIGNS</LairUpgradeTechType>
@@ -998,17 +998,17 @@
 			<LairCreationWeightTechs>
 				<LairCreationWeightTech>
 					<LairCreationWeightTechType>TECH_NECROMANCY</LairCreationWeightTechType>
-					<iLairCreationWeightTech>90</iLairCreationWeightTech>
+					<iLairCreationWeightTech>70</iLairCreationWeightTech>
 				</LairCreationWeightTech>
 				<LairCreationWeightTech>
 					<LairCreationWeightTechType>TECH_MALEVOLENT_DESIGNS</LairCreationWeightTechType>
-					<iLairCreationWeightTech>-90</iLairCreationWeightTech>
+					<iLairCreationWeightTech>-70</iLairCreationWeightTech>
 				</LairCreationWeightTech>
 			</LairCreationWeightTechs>
 			<LairUpgradeTechs>
 				<LairUpgradeTech>
 					<LairUpgradeTechType>TECH_MALEVOLENT_DESIGNS</LairUpgradeTechType>
-					<iLairUpgradeTech>30</iLairUpgradeTech>
+					<iLairUpgradeTech>3000</iLairUpgradeTech>
 				</LairUpgradeTech>
 			</LairUpgradeTechs>
 			<SpawnPromotions>
@@ -1066,7 +1066,7 @@
 			<LairCreationWeightTechs>
 				<LairCreationWeightTech>
 					<LairCreationWeightTechType>TECH_MALEVOLENT_DESIGNS</LairCreationWeightTechType>
-					<iLairCreationWeightTech>90</iLairCreationWeightTech>
+					<iLairCreationWeightTech>70</iLairCreationWeightTech>
 				</LairCreationWeightTech>
 			</LairCreationWeightTechs>
 			<SpawnPromotions>

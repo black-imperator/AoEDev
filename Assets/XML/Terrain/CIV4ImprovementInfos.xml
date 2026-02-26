@@ -2988,7 +2988,7 @@
 			<LairUpgradeTechs>
 				<LairUpgradeTech>
 					<LairUpgradeTechType>TECH_MALEVOLENT_DESIGNS</LairUpgradeTechType>
-					<iLairUpgradeTech>30</iLairUpgradeTech>
+					<iLairUpgradeTech>3000</iLairUpgradeTech>
 				</LairUpgradeTech>
 			</LairUpgradeTechs>
 			<iBasePlotCounterModify>15</iBasePlotCounterModify>

@@ -2428,7 +2428,7 @@
 			<iMoves>1</iMoves>
 			<iWorkRate>300</iWorkRate>
 			<iCombat>4</iCombat>
-			<iCombatDefense>4</iCombatDefense>
+			<iCombatDefense>3</iCombatDefense>
 			<iCultureGarrison>3</iCultureGarrison>
 			<iAsset>16</iAsset>
 			<UnitMeshGroups>

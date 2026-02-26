@@ -330,5 +330,12 @@
 			</PrereqCivics>
 			<PrereqReligion>RELIGION_FELLOWSHIP_OF_LEAVES</PrereqReligion>
 		</StateNameInfo>
+		<StateNameInfo>	<!-- Slumbering Coven -->
+			<Type>STATE_NAME_SLUMBERING_COVEN</Type>
+			<Description>TXT_KEY_STATE_NAME_SLUMBERING_COVEN</Description>
+			<PrereqCivics>
+				<CivicType>CIVIC_SLUMBERING_COVEN</CivicType>
+			</PrereqCivics>
+		</StateNameInfo>
 	</StateNameInfos>
 </Civ4StateNameInfos>
