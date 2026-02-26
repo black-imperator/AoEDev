@@ -4579,6 +4579,10 @@
 					<PromotionType>PROMOTION_GELA</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_UNRAVELING</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
 			</FreePromotions>
 			<bImmuneToCapture>1</bImmuneToCapture>
 			<iCombatDefense>7</iCombatDefense>
@@ -55724,6 +55728,10 @@
 				</FreePromotion>
 				<FreePromotion>
 					<PromotionType>PROMOTION_FEAR</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_RAISE_THE_DEAD2</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 			</FreePromotions>

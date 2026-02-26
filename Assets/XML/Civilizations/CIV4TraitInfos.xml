@@ -938,6 +938,11 @@
 					<iSpawnChance>1000</iSpawnChance>
 				</PlotEffectSpawnChance>
 			</PlotEffectSpawnChances>
+			<TradeYieldModifiers>
+				<iYield>0</iYield>
+				<iYield>0</iYield>
+				<iYield>-90</iYield>
+			</TradeYieldModifiers>
 
 		</TraitInfo>
 		<!-- Emergent traits -->

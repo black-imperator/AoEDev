@@ -50,6 +50,23 @@
 				<iYield>50</iYield>
 			</TradeYieldModifiers>
 		</TraitInfo>
+		<TraitInfo>		<!-- Hidden - Sidar -->
+			<Type>TRAIT_HIDDEN</Type>
+			<TraitClass>TRAITCLASS_CIVILIZATION</TraitClass>
+			<Description>TXT_KEY_TRAIT_HIDDEN</Description>
+			<ShortDescription>TXT_KEY_TRAIT_HIDDEN_SHORT</ShortDescription>
+			<PlotEffectSpawnChances>
+				<PlotEffectSpawnChance>
+					<PlotEffectType>PLOT_EFFECT_MIST</PlotEffectType>
+					<iSpawnChance>1000</iSpawnChance>
+				</PlotEffectSpawnChance>
+			</PlotEffectSpawnChances>
+			<TradeYieldModifiers>
+				<iYield>0</iYield>
+				<iYield>0</iYield>
+				<iYield>0</iYield>
+			</TradeYieldModifiers>
+		</TraitInfo>
 		<TraitInfo>		<!-- Keepers of the Danalin's Sorrow (Aifon Isle) -->
 			<Type>TRAIT_KEEPERS_AIFON</Type>
 			<TraitClass>TRAITCLASS_KEEPERS</TraitClass>

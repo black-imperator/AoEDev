@@ -93,7 +93,7 @@
 			<Description>TXT_KEY_FEATURE_MIST</Description>
 			<Button>Art/Civs/Sidar/mist.dds</Button>
 			<DefaultFeatureGraphics>FEATURE_MIST</DefaultFeatureGraphics>
-			<iPerceptionCost>3</iPerceptionCost>
+			<iPerceptionCost>2</iPerceptionCost>
 			<iSeeThrough>4</iSeeThrough>
 			<bDispellable>1</bDispellable>
 			<TerrainBooleans>

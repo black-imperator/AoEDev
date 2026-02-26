@@ -12348,8 +12348,8 @@
 			<Description>TXT_KEY_PROMOTION_LOST</Description>
 			<Help>TXT_KEY_PROMOTION_LOST_PEDIA</Help>
 			<bBlind>1</bBlind>
-			<iPromotionDuration>4</iPromotionDuration>
-			<iMovesChange>-2</iMovesChange>
+			<iPromotionDuration>2</iPromotionDuration>
+			<iMovesChange>2</iMovesChange>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
