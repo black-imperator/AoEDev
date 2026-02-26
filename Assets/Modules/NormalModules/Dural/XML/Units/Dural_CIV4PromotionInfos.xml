@@ -375,6 +375,7 @@
 				<PrereqCivilization>CIVILIZATION_DURAL</PrereqCivilization>
 			</PrereqCivilizations>
 			<PromotionExcludes>
+				<Promotion>PROMOTION_DURAL_STUDENT_MELEE</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_DEF_MELEE</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_DISCIPLE</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_WORKER</Promotion>
@@ -388,6 +389,7 @@
 				<Promotion>PROMOTION_DURAL_STUDENT_COMMANDER</Promotion>
 			</PromotionExcludes>
 			<PromotionOverwrites>
+				<Promotion>PROMOTION_DURAL_STUDENT_MELEE</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_DEF_MELEE</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_DISCIPLE</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_WORKER</Promotion>
