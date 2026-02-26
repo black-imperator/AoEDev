@@ -169,40 +169,6 @@
 				</ImprovementYieldChange>
 			</ImprovementYieldChanges>
 		</CivicInfo>
-		<CivicInfo>		<!-- Aristocracy VS -->
-			<CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
-			<Type>CIVIC_ARISTOCRACY</Type>
-			<bTypeDependency>1</bTypeDependency>
-			<AndDependencyTypes>
-				<DependencyType>MODULE_VICIOUSSEAS</DependencyType>
-			</AndDependencyTypes>
-			<ImprovementYieldChanges>
-				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_NESTING_GROUND</ImprovementType>
-					<ImprovementYields>
-						<iYield>1</iYield>
-						<iYield>1</iYield>
-						<iYield>0</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_INFESTED_FORTRESS</ImprovementType>
-					<ImprovementYields>
-						<iYield>1</iYield>
-						<iYield>1</iYield>
-						<iYield>0</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_DEEP_NEST</ImprovementType>
-					<ImprovementYields>
-						<iYield>2</iYield>
-						<iYield>1</iYield>
-						<iYield>0</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-			</ImprovementYieldChanges>
-		</CivicInfo>
 		<CivicInfo>		<!-- Imperium -->
 			<CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
 			<Type>CIVIC_IMPERIUM</Type>

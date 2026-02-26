@@ -287,10 +287,10 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RELIGION_WHITE_HAND_STRATEGY</Tag>
-		<English>State Religion allows access to:[PARAGRAPH:1][TAB][LINK=IMPROVEMENT_POLAR_VORTEX]Polar Nexus[\LINK](Improvement)[NEWLINE]While the White Hand is your state religion every tile in your empire will slowly turn into [LINK=TERRAIN_GLACIER]Fimbulwinter[\LINK] terrain.</English>
-		<French>State Religion allows access to:[PARAGRAPH:1][TAB][LINK=IMPROVEMENT_POLAR_VORTEX]Polar Nexus[\LINK](Improvement)[NEWLINE]While the White Hand is your state religion every tile in your empire will slowly turn into [LINK=TERRAIN_GLACIER]Fimbulwinter[\LINK] terrain.</French>
-		<German>State Religion allows access to:[PARAGRAPH:1][TAB][LINK=IMPROVEMENT_POLAR_VORTEX]Polar Nexus[\LINK](Improvement)[NEWLINE]While the White Hand is your state religion every tile in your empire will slowly turn into [LINK=TERRAIN_GLACIER]Fimbulwinter[\LINK] terrain.</German>
-		<Italian>State Religion allows access to:[PARAGRAPH:1][TAB][LINK=IMPROVEMENT_POLAR_VORTEX]Polar Nexus[\LINK](Improvement)[NEWLINE]While the White Hand is your state religion every tile in your empire will slowly turn into [LINK=TERRAIN_GLACIER]Fimbulwinter[\LINK] terrain.</Italian>
-		<Spanish>State Religion allows access to:[PARAGRAPH:1][TAB][LINK=IMPROVEMENT_POLAR_VORTEX]Polar Nexus[\LINK](Improvement)[NEWLINE]While the White Hand is your state religion every tile in your empire will slowly turn into [LINK=TERRAIN_GLACIER]Fimbulwinter[\LINK] terrain.</Spanish>
+		<English>State Religion allows access to:[PARAGRAPH:1][TAB][LINK=IMPROVEMENT_POLAR_NEXUS]Polar Nexus[\LINK](Improvement)[NEWLINE]While the White Hand is your state religion every tile in your empire will slowly turn into [LINK=TERRAIN_GLACIER]Fimbulwinter[\LINK] terrain.</English>
+		<French>State Religion allows access to:[PARAGRAPH:1][TAB][LINK=IMPROVEMENT_POLAR_NEXUS]Polar Nexus[\LINK](Improvement)[NEWLINE]While the White Hand is your state religion every tile in your empire will slowly turn into [LINK=TERRAIN_GLACIER]Fimbulwinter[\LINK] terrain.</French>
+		<German>State Religion allows access to:[PARAGRAPH:1][TAB][LINK=IMPROVEMENT_POLAR_NEXUS]Polar Nexus[\LINK](Improvement)[NEWLINE]While the White Hand is your state religion every tile in your empire will slowly turn into [LINK=TERRAIN_GLACIER]Fimbulwinter[\LINK] terrain.</German>
+		<Italian>State Religion allows access to:[PARAGRAPH:1][TAB][LINK=IMPROVEMENT_POLAR_NEXUS]Polar Nexus[\LINK](Improvement)[NEWLINE]While the White Hand is your state religion every tile in your empire will slowly turn into [LINK=TERRAIN_GLACIER]Fimbulwinter[\LINK] terrain.</Italian>
+		<Spanish>State Religion allows access to:[PARAGRAPH:1][TAB][LINK=IMPROVEMENT_POLAR_NEXUS]Polar Nexus[\LINK](Improvement)[NEWLINE]While the White Hand is your state religion every tile in your empire will slowly turn into [LINK=TERRAIN_GLACIER]Fimbulwinter[\LINK] terrain.</Spanish>
 	</TEXT>
 </Civ4GameText>
