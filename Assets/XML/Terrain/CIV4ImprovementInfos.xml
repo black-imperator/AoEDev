@@ -9612,6 +9612,10 @@
 			<iLairTier>3</iLairTier>
 			<GoodyClasses>
 				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_WATER_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_WATER_MAJOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>

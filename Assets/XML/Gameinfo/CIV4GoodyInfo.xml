@@ -4364,11 +4364,11 @@
 			<Type>GOODY_EXPLORE_LAIR_SPAWN_KRAKEN</Type>
 			<GoodyClasses>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_WATER_MODERATE</GoodyClassType>
+					<GoodyClassType>GOODYCLASS_WATER_MAJOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
-			<iWeight>200</iWeight>
+			<iWeight>250</iWeight>
 			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_SPAWN_KRAKEN</Description>
 			<iDestroyLairChance>60</iDestroyLairChance>
 			<bBad>1</bBad>
@@ -4425,7 +4425,7 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
-			<iWeight>500</iWeight>
+			<iWeight>200</iWeight>
 			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_DOMESTICATED_WAR_TORTOISE</Description>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>

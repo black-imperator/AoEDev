@@ -1008,6 +1008,14 @@ With sufficient time and study, any structure can be replicated, even without th
 		<Spanish>Your words are wise.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_REJECTED_LEADER_DURAL</Tag>
+		<English>A tempting offer, but I must decline.</English>
+		<French>A tempting offer, but I must decline.</French>
+		<German>A tempting offer, but I must decline.</German>
+		<Italian>A tempting offer, but I must decline.</Italian>
+		<Spanish>A tempting offer, but I must decline.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_POPUP_DEFEATED_DANNMOS</Tag>
 		<English>Why do you seek to destroy that which we have created? Are you so jealous?</English>
 		<French>Pourquoi cherchez-vous à détruire ce que nous avons créé ? Êtes-vous si jaloux ?</French>

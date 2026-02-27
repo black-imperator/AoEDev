@@ -81,6 +81,14 @@
 		<Spanish>City State of %s4_city</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_STATE_NAME_SLUMBERING_COVEN</Tag>
+		<English>%s2_aciv Fanatic Coven</English>
+		<French>%s2_aciv Fanatic Coven</French>
+		<German>%s2_aciv Fanatic Coven</German>
+		<Italian>%s2_aciv Fanatic Coven</Italian>
+		<Spanish>%s2_aciv Fanatic Coven</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_STATE_NAME_SACRED_CITY</Tag>
 		<English>Sacred City State of %s4_city</English>
 		<French>Cité-État sacrée de %s4_city</French>
