@@ -2817,7 +2817,7 @@
 		</BuildInfo>	
 		<BuildInfo> <!-- Sacred Harvest -->
 			<Type>BUILD_SACRED_HARVEST</Type>
-			<Description>TXT_KEY_BUILD_SACRED_HARVEST</Description>
+			<Description>TXT_KEY_BUILD_SACRED_CULL</Description>
 			<Help/>
 			<PrereqTech>TECH_WAY_OF_THE_FORESTS</PrereqTech>
 			<iTime>2800</iTime>

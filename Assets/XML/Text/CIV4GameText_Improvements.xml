@@ -1545,12 +1545,12 @@ Workshops are the only improvement able to properly "exploit" the Obsidian resou
 		<Spanish>Build a [LINK=IMPROVEMENT_THIEVES_DEN]Aphotic Hideout[\LINK],</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILD_SACRED_HARVEST</Tag>
-		<English>Build a [LINK=IMPROVEMENT_SACRED_HARVEST]Sacred Harvest[\LINK],</English>
-		<French>Build a [LINK=IMPROVEMENT_SACRED_HARVEST]Sacred Harvest[\LINK],</French>
-		<German>Build a [LINK=IMPROVEMENT_SACRED_HARVEST]Sacred Harvest[\LINK],</German>
-		<Italian>Build a [LINK=IMPROVEMENT_SACRED_HARVEST]Sacred Harvest[\LINK],</Italian>
-		<Spanish>Build a [LINK=IMPROVEMENT_SACRED_HARVEST]Sacred Harvest[\LINK],</Spanish>
+		<Tag>TXT_KEY_BUILD_SACRED_CULL</Tag>
+		<English>Build a [LINK=IMPROVEMENT_SACRED_HARVEST]Sacred Cull[\LINK],</English>
+		<French>Build a [LINK=IMPROVEMENT_SACRED_HARVEST]Sacred Cull[\LINK],</French>
+		<German>Build a [LINK=IMPROVEMENT_SACRED_HARVEST]Sacred Cull[\LINK],</German>
+		<Italian>Build a [LINK=IMPROVEMENT_SACRED_HARVEST]Sacred Cull[\LINK],</Italian>
+		<Spanish>Build a [LINK=IMPROVEMENT_SACRED_HARVEST]Sacred Cull[\LINK],</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_STYGIAN_SHRINE</Tag>
