@@ -92,6 +92,20 @@
 		        <DependencyType>MODULE_JOTNAR</DependencyType>
 		     </AndDependencyTypes>
 		</UnitInfo>
+		<UnitInfo>        <!-- Aifon Faceless -->
+			<Class>UNITCLASS_WORKER</Class>
+			<Type>UNIT_WORKER_DREAM_AIFON</Type>
+			<Builds>
+				<Build>
+					<BuildType>BUILD_IMPERIAL_ROAD</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+			</Builds>
+			
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_VICIOUSSEAS</DependencyType>
+		     </AndDependencyTypes>
+		</UnitInfo>
 	
 		</UnitInfos>
 </Civ4UnitInfos>

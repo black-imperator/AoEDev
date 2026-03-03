@@ -3965,6 +3965,16 @@
 					<EarlyArtDefineTag>ART_DEF_UNIT_SLAVE</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
+			<AllowPromotions>
+				<Promotion>PROMOTION_ESUS_CONTACTS</Promotion>
+				<Promotion>PROMOTION_LEAVES_GLADE</Promotion>
+				<Promotion>PROMOTION_ASHEN_SYMBOLS</Promotion>
+				<Promotion>PROMOTION_GUILDS_OF_KILMORPH</Promotion>
+				<Promotion>PROMOTION_OVERLORDS_THRALL</Promotion>
+				<Promotion>PROMOTION_EMPYREAN_PATH</Promotion>
+				<Promotion>PROMOTION_ORDER_BAILIFF</Promotion>
+				<Promotion>PROMOTION_WHITE_STORMBRINGER</Promotion>
+			</AllowPromotions>
 			<FreePromotions>
 				<FreePromotion>
 					<PromotionType>PROMOTION_THRALL</PromotionType>

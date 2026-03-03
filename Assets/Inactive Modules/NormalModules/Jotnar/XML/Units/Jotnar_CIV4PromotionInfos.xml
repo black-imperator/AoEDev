@@ -146,7 +146,7 @@
 			<CityBonuses>
 				<CityBonus>
 					<bApplySelf>1</bApplySelf>
-					<fProduction>1</fProduction>
+					<fProduction>5</fProduction>
 				</CityBonus>
 			</CityBonuses>
 			<PrereqbAllowNULLUnitCombat>1</PrereqbAllowNULLUnitCombat>
@@ -162,7 +162,7 @@
 			</PrereqUnits>
 			<Button>Art/Interface/Buttons/Units/Worker.dds</Button>
 		</PromotionInfo>
-		<PromotionInfo>		<!-- Clever Troll -->
+   <!-- <PromotionInfo>		 Clever Troll 
 			<Type>PROMOTION_CLEVER_TROLL</Type>
 			<Description>TXT_KEY_PROMOTION_CLEVER_TROLL</Description>
 			<TechPrereq>TECH_HUNTING</TechPrereq>
@@ -202,7 +202,7 @@
 					<iCombatMod>30</iCombatMod>
 				</PromotionCombatMod>			
 			</PromotionCombatMods>
-		</PromotionInfo>
+		</PromotionInfo>-->
 		<PromotionInfo>		<!-- Firekin -->
 			<Type>PROMOTION_FIREKIN</Type>
 			<Description>TXT_KEY_PROMOTION_FIREKIN</Description>

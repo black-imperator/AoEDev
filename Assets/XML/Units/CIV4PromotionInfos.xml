@@ -1693,9 +1693,9 @@
 			<iNoBadExplore>10</iNoBadExplore>
 			<iPromotionRandomApplyChance>5</iPromotionRandomApplyChance>
 			<bAlwaysHeal>1</bAlwaysHeal>
-			<iEnemyHealChange>10</iEnemyHealChange>
-			<iNeutralHealChange>10</iNeutralHealChange>
-			<iFriendlyHealChange>10</iFriendlyHealChange>
+			<iEnemyHealChange>15</iEnemyHealChange>
+			<iNeutralHealChange>15</iNeutralHealChange>
+			<iFriendlyHealChange>15</iFriendlyHealChange>
 			<bIgnoreTerrainCosts>1</bIgnoreTerrainCosts>
 			<MasterPromotions>
 				<PromotionType>PROMOTION_ALONG_FOR_THE_RIDE</PromotionType>
@@ -1712,7 +1712,6 @@
 			<Button>Art/Interface/Buttons/Races/Race_Troll.dds</Button>
 			<bRace>1</bRace>
 			<iMinLevel>-1</iMinLevel>
-			<PromotionRandomApply>PROMOTION_FERAL</PromotionRandomApply>
 			<DamageTypeResists>
 				<DamageTypeResist>
 					<DamageType>DAMAGE_POISON</DamageType>

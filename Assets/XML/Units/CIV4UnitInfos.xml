@@ -2456,6 +2456,10 @@
 					<PromotionType>PROMOTION_CHANNELING3</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_WATER_WALKING</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
 			</FreePromotions>
 			<bImmortal>1</bImmortal>
 			<iCombatDefense>6</iCombatDefense>
@@ -7401,6 +7405,10 @@
 				</FreePromotion>
 				<FreePromotion>
 					<PromotionType>PROMOTION_NORMAL_CREW</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_HERO</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 			</FreePromotions>
@@ -34147,6 +34155,10 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_RANGED</FormationType>
+			<iWorkRate>100</iWorkRate>
+			<AllowPromotions>
+				<Promotion>PROMOTION_ESUS_CONTACTS</Promotion>
+			</AllowPromotions>
 			<FreePromotions>
 				<FreePromotion>
 					<PromotionType>PROMOTION_HIDDEN_NATIONALITY</PromotionType>
@@ -35029,6 +35041,10 @@
 					<EarlyArtDefineTag>ART_DEF_UNIT_FAWN</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
+			<iWorkRate>100</iWorkRate>
+			<AllowPromotions>
+				<Promotion>PROMOTION_LEAVES_GLADE</Promotion>
+			</AllowPromotions>
 			<FreePromotions>
 				<FreePromotion>
 					<PromotionType>PROMOTION_WOODSMAN1</PromotionType>
@@ -35097,6 +35113,10 @@
 					<EarlyArtDefineTag>ART_DEF_UNIT_SATYR</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
+			<iWorkRate>100</iWorkRate>
+			<AllowPromotions>
+				<Promotion>PROMOTION_LEAVES_GLADE</Promotion>
+			</AllowPromotions>
 			<FreePromotions>
 				<FreePromotion>
 					<PromotionType>PROMOTION_WOODSMAN1</PromotionType>
@@ -35164,6 +35184,10 @@
 					<EarlyArtDefineTag>ART_DEF_UNIT_SATYR_OLD</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
+			<iWorkRate>100</iWorkRate>
+			<AllowPromotions>
+				<Promotion>PROMOTION_LEAVES_GLADE</Promotion>
+			</AllowPromotions>
 			<FreePromotions>
 				<FreePromotion>
 					<PromotionType>PROMOTION_WOODSMAN1</PromotionType>
@@ -35508,6 +35532,10 @@
 					<EarlyArtDefineTag>ART_DEF_UNIT_DROWN</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
+			<iWorkRate>100</iWorkRate>
+			<AllowPromotions>
+				<Promotion>PROMOTION_OVERLORDS_THRALL</Promotion>
+			</AllowPromotions>
 			<FreePromotions>
 				<FreePromotion>
 					<PromotionType>PROMOTION_VULNERABLE_TO_FIRE</PromotionType>
@@ -35642,6 +35670,10 @@
 					<EarlyArtDefineTag>ART_DEF_UNIT_STYGIAN_GUARD</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
+			<iWorkRate>100</iWorkRate>
+			<AllowPromotions>
+				<Promotion>PROMOTION_OVERLORDS_THRALL</Promotion>
+			</AllowPromotions>
 			<FreePromotions>
 				<FreePromotion>
 					<PromotionType>PROMOTION_MARCH</PromotionType>
@@ -36021,6 +36053,16 @@
 					<EarlyArtDefineTag>ART_DEF_UNIT_SOLDIER_OF_KILMORPH</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
+			<AllowPromotions>
+				<Promotion>PROMOTION_ESUS_CONTACTS</Promotion>
+				<Promotion>PROMOTION_LEAVES_GLADE</Promotion>
+				<Promotion>PROMOTION_ASHEN_SYMBOLS</Promotion>
+				<Promotion>PROMOTION_GUILDS_OF_KILMORPH</Promotion>
+				<Promotion>PROMOTION_OVERLORDS_THRALL</Promotion>
+				<Promotion>PROMOTION_EMPYREAN_PATH</Promotion>
+				<Promotion>PROMOTION_ORDER_BAILIFF</Promotion>
+				<Promotion>PROMOTION_WHITE_STORMBRINGER</Promotion>
+			</AllowPromotions>
 			<FreePromotions>
 				<FreePromotion>
 					<PromotionType>PROMOTION_DWARF</PromotionType>
@@ -50371,6 +50413,10 @@
 			<FreePromotions>
 				<FreePromotion>
 					<PromotionType>PROMOTION_TROLLKIN</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_ESTRANGED</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 			</FreePromotions>
