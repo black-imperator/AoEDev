@@ -2192,11 +2192,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SPELL_PLANT_KELP</Tag>
-		<English>Plant Kelp</English>
+		<English>Spread Kelp</English>
 		<French>Planter du kelp</French>
-		<German>Plant Kelp</German>
-		<Italian>Plant Kelp</Italian>
-		<Spanish>Plant Kelp</Spanish>
+		<German>Spread Kelp</German>
+		<Italian>Spread Kelp</Italian>
+		<Spanish>Spread Kelp</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_PLANT_KELP_PEDIA</Tag>
+		<English>Used on a tile with a Kelp Forest on it, will spread a new Kelp to a random nearby tile.</English>
+		<French>Used on a tile with a Kelp Forest on it, will spread a new Kelp to a random nearby tile.</French>
+		<German>Used on a tile with a Kelp Forest on it, will spread a new Kelp to a random nearby tile.</German>
+		<Italian>Used on a tile with a Kelp Forest on it, will spread a new Kelp to a random nearby tile.</Italian>
+		<Spanish>Used on a tile with a Kelp Forest on it, will spread a new Kelp to a random nearby tile.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SPELL_POISONED_BLADE</Tag>

@@ -3204,10 +3204,10 @@
 			<Sound>AS3D_SPELL_BLOOM</Sound>
 			<Button>Art/Interface/Buttons/Spells/Bloom.dds</Button>
 		</SpellInfo>
-		<SpellInfo>			<!-- FoL - Plant kelp -->
+		<SpellInfo>			<!-- FoL - Spread kelp -->
 			<Type>SPELL_PLANT_KELP</Type>
 			<Description>TXT_KEY_SPELL_PLANT_KELP</Description>
-			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
+			<Civilopedia>TXT_KEY_SPELL_PLANT_KELP_PEDIA</Civilopedia>
 			<SpellClasses>
 				<SpellClass>
 					<SpellClassType>SPELLCLASS_DIVINE</SpellClassType>
