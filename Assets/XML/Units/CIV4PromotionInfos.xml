@@ -26463,6 +26463,7 @@
 			<bAllowAttacks>1</bAllowAttacks>
 			<bEnraged>1</bEnraged>
 			<iMinLevel>-1</iMinLevel>
+			<bMustMaintain>1</bMustMaintain>
 			<PrereqCivilizations>
 				<PrereqCivilization>CIVILIZATION_DEMON</PrereqCivilization>
 			</PrereqCivilizations>

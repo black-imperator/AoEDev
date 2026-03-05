@@ -921,6 +921,7 @@
 			<SpawnUnitCiv>CIVILIZATION_DEMON</SpawnUnitCiv>
 			<bSpawnOnlyForOwner>1</bSpawnOnlyForOwner>
 			<iSpawnAtOnceLimit>3</iSpawnAtOnceLimit>
+			<iSpawnUnitChancePercentMod>50</iSpawnUnitChancePercentMod>
 			<bExplorable>1</bExplorable>
 			<iLairTier>1</iLairTier>
 			<bWater>1</bWater>
@@ -981,6 +982,7 @@
 			<SpawnUnitCiv>CIVILIZATION_DEMON</SpawnUnitCiv>
 			<bSpawnOnlyForOwner>1</bSpawnOnlyForOwner>
 			<iSpawnAtOnceLimit>3</iSpawnAtOnceLimit>
+			<iSpawnUnitChancePercentMod>50</iSpawnUnitChancePercentMod>
 			<bExplorable>1</bExplorable>
 			<iLairTier>2</iLairTier>
 			<bWater>1</bWater>
@@ -1045,6 +1047,7 @@
 			<SpawnUnitCiv>CIVILIZATION_DEMON</SpawnUnitCiv>
 			<bSpawnOnlyForOwner>1</bSpawnOnlyForOwner>
 			<iSpawnAtOnceLimit>5</iSpawnAtOnceLimit>
+			<iSpawnUnitChancePercentMod>50</iSpawnUnitChancePercentMod>
 			<bExplorable>1</bExplorable>
 			<iLairTier>3</iLairTier>
 			<bWater>1</bWater>
