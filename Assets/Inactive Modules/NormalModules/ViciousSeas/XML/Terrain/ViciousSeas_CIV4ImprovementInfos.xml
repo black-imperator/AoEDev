@@ -1113,16 +1113,6 @@
 			<ImprovementUpgrade>IMPROVEMENTCLASS_SEA_HAMLET</ImprovementUpgrade>
 			<iCultureRange>-1</iCultureRange>
 			<iCultureControlStrength>1</iCultureControlStrength>
-			<RouteYieldChanges>
-				<RouteYieldChange>
-					<RouteType>ROUTE_PATH_OF_LUGUS</RouteType>
-					<RouteYields>
-						<iYield>0</iYield>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-					</RouteYields>
-				</RouteYieldChange>
-            </RouteYieldChanges>
 			<bWater>1</bWater>
 		</ImprovementInfo>
 		<ImprovementInfo><!-- SEA_Hamlet-->
@@ -1144,16 +1134,6 @@
 			<ImprovementUpgrade>IMPROVEMENTCLASS_SEA_VILLAGE</ImprovementUpgrade>
 			<iCultureRange>-1</iCultureRange>
 			<iCultureControlStrength>1</iCultureControlStrength>
-			<RouteYieldChanges>
-				<RouteYieldChange>
-					<RouteType>ROUTE_PATH_OF_LUGUS</RouteType>
-					<RouteYields>
-						<iYield>0</iYield>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-					</RouteYields>
-				</RouteYieldChange>
-            </RouteYieldChanges>
 			<bWater>1</bWater>
 		</ImprovementInfo>
 		<ImprovementInfo><!-- SEA_Village -->
@@ -1187,16 +1167,6 @@
 			</TechYieldChanges>
 			<iCultureRange>-1</iCultureRange>
 			<iCultureControlStrength>1</iCultureControlStrength>
-			<RouteYieldChanges>
-				<RouteYieldChange>
-					<RouteType>ROUTE_PATH_OF_LUGUS</RouteType>
-					<RouteYields>
-						<iYield>0</iYield>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-					</RouteYields>
-				</RouteYieldChange>
-            </RouteYieldChanges>
 			<iWorkingCityCrime>1</iWorkingCityCrime>
 			<bWater>1</bWater>
 		</ImprovementInfo>
@@ -1228,16 +1198,6 @@
 			</TechYieldChanges>
 			<iCultureRange>-1</iCultureRange>
 			<iCultureControlStrength>1</iCultureControlStrength>
-			<RouteYieldChanges>
-				<RouteYieldChange>
-					<RouteType>ROUTE_PATH_OF_LUGUS</RouteType>
-					<RouteYields>
-						<iYield>0</iYield>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-					</RouteYields>
-				</RouteYieldChange>
-            </RouteYieldChanges>
 			<iWorkingCityCrime>2</iWorkingCityCrime>
 			<bWater>1</bWater>
 		</ImprovementInfo>
