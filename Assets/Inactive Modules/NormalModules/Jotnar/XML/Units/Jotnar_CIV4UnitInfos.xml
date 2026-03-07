@@ -3208,10 +3208,6 @@
 					<PromotionType>PROMOTION_TROLLKIN</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
-				<FreePromotion>
-					<PromotionType>PROMOTION_CLEVER_TROLL</PromotionType>
-					<iNumApplied>1</iNumApplied>
-				</FreePromotion>
 			</FreePromotions>
 			<bNeverObsolete>1</bNeverObsolete>
 			<iExtraGoldSupport>1</iExtraGoldSupport>
