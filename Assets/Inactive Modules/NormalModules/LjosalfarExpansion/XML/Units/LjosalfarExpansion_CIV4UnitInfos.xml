@@ -21,6 +21,7 @@
 			<UnitClassUpgrades>
 				<UnitClassUpgradeType>UNITCLASS_ARCHER</UnitClassUpgradeType>
 				<UnitClassUpgradeType>UNITCLASS_AXEMAN</UnitClassUpgradeType>
+				<UnitClassUpgradeType>UNITCLASS_SPEARMAN</UnitClassUpgradeType>
 			</UnitClassUpgrades>
 			<UnitAIs>
 				<UnitAI>
