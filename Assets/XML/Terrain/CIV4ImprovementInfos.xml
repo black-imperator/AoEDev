@@ -2832,7 +2832,7 @@
 			<bSpawnOnlyForOwner>1</bSpawnOnlyForOwner>
 			<iSpawnAtOnceLimit>3</iSpawnAtOnceLimit>
 			<bExplorable>1</bExplorable>
-			<iSpawnUnitChancePercentMod>50</iSpawnUnitChancePercentMod>
+			<iSpawnUnitChancePercentMod>-50</iSpawnUnitChancePercentMod>
 			<iLairTier>1</iLairTier>
 			<GoodyClasses>
 				<GoodyClass>
@@ -2940,7 +2940,7 @@
 			<SpawnUnitCiv>CIVILIZATION_DEMON</SpawnUnitCiv>
 			<bSpawnOnlyForOwner>1</bSpawnOnlyForOwner>
 			<iSpawnAtOnceLimit>5</iSpawnAtOnceLimit>
-			<iSpawnUnitChancePercentMod>50</iSpawnUnitChancePercentMod>
+			<iSpawnUnitChancePercentMod>-50</iSpawnUnitChancePercentMod>
 			<bExplorable>1</bExplorable>
 			<iLairTier>2</iLairTier>
 			<GoodyClasses>
@@ -3062,7 +3062,7 @@
 			<SpawnUnitCiv>CIVILIZATION_DEMON</SpawnUnitCiv>
 			<bSpawnOnlyForOwner>1</bSpawnOnlyForOwner>
 			<iSpawnAtOnceLimit>7</iSpawnAtOnceLimit>
-			<iSpawnUnitChancePercentMod>50</iSpawnUnitChancePercentMod>
+			<iSpawnUnitChancePercentMod>-50</iSpawnUnitChancePercentMod>
 			<bExplorable>1</bExplorable>
 			<iLairTier>3</iLairTier>
 			<GoodyClasses>
@@ -11247,6 +11247,7 @@
 			<SpawnUnitType>UNIT_SKELETON</SpawnUnitType>
 			<SpawnUnitCiv>CIVILIZATION_DEMON</SpawnUnitCiv>
 			<iSpawnAtOnceLimit>5</iSpawnAtOnceLimit>
+			<iSpawnUnitChancePercentMod>-50</iSpawnUnitChancePercentMod>
 		</ImprovementInfo>
 		<ImprovementInfo><!-- Well of Souls (Open) -->
 			<Type>IMPROVEMENT_WELL_OF_SOULS_OPEN</Type>
