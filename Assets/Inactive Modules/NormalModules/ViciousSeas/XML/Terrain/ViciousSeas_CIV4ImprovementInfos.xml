@@ -871,6 +871,7 @@
 			<SpawnUnitCiv>CIVILIZATION_DEMON</SpawnUnitCiv>
 			<bSpawnOnlyForOwner>1</bSpawnOnlyForOwner>
 			<iSpawnAtOnceLimit>3</iSpawnAtOnceLimit>
+			<iSpawnUnitChancePercentMod>-50</iSpawnUnitChancePercentMod>
 			<iCultureRange>4</iCultureRange>
 			<iCultureControlStrength>4</iCultureControlStrength>
 			<iCultureCenterBonus>5</iCultureCenterBonus>
