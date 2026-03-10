@@ -18346,10 +18346,6 @@
 					<PromotionType>PROMOTION_PRICE_OF_POWER_INFLUENCE</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
-				<FreePromotion>
-					<PromotionType>PROMOTION_KINETIC_BLAST</PromotionType>
-					<iNumApplied>1</iNumApplied>
-				</FreePromotion>
 			</FreePromotions>
 			<iTier>3</iTier>
 			<DamageTypeCombats>
@@ -28096,8 +28092,16 @@
 					<FlavorType>FLAVOR_RELIGION</FlavorType>
 					<iFlavor>8</iFlavor>
 				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_MAGIC</FlavorType>
+					<iFlavor>8</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<iFlavor>8</iFlavor>
+				</Flavor>
 			</Flavors>
-			<iAIWeight>8</iAIWeight>
+			<iAIWeight>12</iAIWeight>
 			<iCost>120</iCost>
 			<iMoves>1</iMoves>
 			<iCombat>4</iCombat>
@@ -28201,8 +28205,16 @@
 					<FlavorType>FLAVOR_RELIGION</FlavorType>
 					<iFlavor>16</iFlavor>
 				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_MAGIC</FlavorType>
+					<iFlavor>16</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<iFlavor>16</iFlavor>
+				</Flavor>
 			</Flavors>
-			<iAIWeight>16</iAIWeight>
+			<iAIWeight>24</iAIWeight>
 			<iCost>240</iCost>
 			<iMoves>1</iMoves>
 			<iCombat>6</iCombat>
