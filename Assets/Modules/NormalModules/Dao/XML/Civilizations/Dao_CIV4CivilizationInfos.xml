@@ -78,6 +78,10 @@
 					<BuildingClassType>BUILDINGCLASS_MAGE_GUILD</BuildingClassType>
 					<BuildingType>NONE</BuildingType>
 				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_MERCURIAN_GATE</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
 			</Buildings>
 			<Units>
 				<Unit>

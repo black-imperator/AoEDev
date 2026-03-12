@@ -12,6 +12,7 @@
 			<ShortDescription>TXT_KEY_CIV_DURAL_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_DURAL_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_DURAL_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIV_DURAL_STRATEGY</Strategy>
 			<DefaultPlayerColor>PLAYERCOLOR_DURAL</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_DURAL</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_CIVILIZED</ArtStyleType>
