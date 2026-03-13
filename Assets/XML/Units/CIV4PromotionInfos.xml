@@ -7479,7 +7479,6 @@
 				<PrereqReligion>RELIGION_OCTOPUS_OVERLORDS</PrereqReligion>
 			</PrereqReligions>
 			<ReplaceArtType>ART_DEF_UNIT_MUIRIN</ReplaceArtType>
-			<iAirCombat>-5</iAirCombat>
 			<DamageTypeCombats>
 				<DamageTypeCombat>
 					<DamageType>DAMAGE_UNHOLY</DamageType>
@@ -7508,8 +7507,6 @@
 					<iUnitCombatMod>-120</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
-			<iCollateralExtraTargets>2</iCollateralExtraTargets>
-			<iCollateralLimitBoost>40</iCollateralLimitBoost>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
@@ -17025,6 +17022,7 @@
 			<Help>TXT_KEY_PROMOTION_TERRIFIED_HELP</Help>
 			<iPromotionDuration>3</iPromotionDuration>
 			<iMovesChange>-1</iMovesChange>
+			<bPrereqAlive>1</bPrereqAlive>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
