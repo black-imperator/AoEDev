@@ -6,6 +6,65 @@
 <!-- Basic Infos -->
 <Civ4SpawnGroupInfos xmlns="x-schema:ViciousSeas_CIV4GameInfoSchema.xml">
 	<SpawnGroupInfos>
+		<SpawnGroupInfo>	<!--  1 Galley at fishing (otherwise, sailing introduces ARMADAS) -->
+			<Type>SPAWN_GROUP_GALLEY_ONE</Type>
+			<Description>TXT_KEY_SPAWN_GROUP_GALLEY_ONE</Description>
+			<bNaval>1</bNaval>
+			<iWeight>1000</iWeight>
+			<GroupUnitClasses>
+				<GroupUnitClass>
+					<UnitClass>UNITCLASS_GALLEY</UnitClass>
+					<iNumUnits>1</iNumUnits>
+				</GroupUnitClass>
+			</GroupUnitClasses>
+			<PrereqTechANDs>
+				<Tech>TECH_SAILING</Tech>
+			</PrereqTechANDs>
+			<BlockTechANDs>
+				<Tech>TECH_OPTICS</Tech>
+			</BlockTechANDs>
+		</SpawnGroupInfo>
+		<SpawnGroupInfo>	<!--  Galley -->
+			<Type>SPAWN_GROUP_GALLEY</Type>
+			<Description>TXT_KEY_SPAWN_GROUP_GALLEY</Description>
+			<bNaval>1</bNaval>
+			<iWeight>1000</iWeight>
+			<GroupUnitClasses>
+				<GroupUnitClass>
+					<UnitClass>UNITCLASS_GALLEY</UnitClass>
+					<iNumUnits>3</iNumUnits>
+				</GroupUnitClass>
+			</GroupUnitClasses>
+			<PrereqTechANDs>
+				<Tech>TECH_SAILING</Tech>
+			</PrereqTechANDs>
+			<BlockTechANDs>
+				<Tech>TECH_ASTRONOMY</Tech>
+			</BlockTechANDs>
+		</SpawnGroupInfo>
+		<SpawnGroupInfo>	<!--  Galleon -->
+			<Type>SPAWN_GROUP_GALLEON</Type>
+			<Description>TXT_KEY_SPAWN_SPAWN_GROUP_GALLEON</Description>
+			<bNaval>1</bNaval>
+			<iWeight>1000</iWeight>
+			<GroupUnitClasses>
+				<GroupUnitClass>
+					<UnitClass>UNITCLASS_GALLEON</UnitClass>
+					<iNumUnits>3</iNumUnits>
+				</GroupUnitClass>
+				<GroupUnitClass>
+					<UnitClass>UNITCLASS_GALLEY</UnitClass>
+					<iNumUnits>2</iNumUnits>
+				</GroupUnitClass>
+			</GroupUnitClasses>
+			<PrereqTechANDs>
+				<Tech>TECH_NEVER</Tech>
+			</PrereqTechANDs>
+			<BlockTechANDs>
+				<Tech>TECH_ASTRONOMY</Tech>
+				<Tech>TECH_ENGINEERING</Tech>
+			</BlockTechANDs>
+		</SpawnGroupInfo>
 		<SpawnGroupInfo>	<!--  Caravel -->
 			<Type>SPAWN_GROUP_CARAVEL</Type>
 			<Description>TXT_KEY_SPAWN_GROUP_CARAVEL</Description>

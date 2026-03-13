@@ -406,9 +406,6 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_SAILING</PrereqTech>
-			<TechTypes>
-				<PrereqTech>TECH_HUNTING</PrereqTech>
-			</TechTypes>
 			<iCost>75</iCost>
 			<iMinAreaSize>20</iMinAreaSize>
 			<iMoves>2</iMoves>

@@ -220,7 +220,7 @@
 					<BonusType>BONUS_FISH</BonusType>
 					<bBonusMakesValid>0</bBonusMakesValid>
 					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>2500</iDiscoverRand>
+					<iDiscoverRand>1000</iDiscoverRand>
 					<iSpreadRand>0</iSpreadRand>
 					<YieldChanges>
 						<iYieldChange>0</iYieldChange>
@@ -232,7 +232,7 @@
 					<BonusType>BONUS_CRAB</BonusType>
 					<bBonusMakesValid>0</bBonusMakesValid>
 					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>2500</iDiscoverRand>
+					<iDiscoverRand>1000</iDiscoverRand>
 					<iSpreadRand>0</iSpreadRand>
 					<YieldChanges>
 						<iYieldChange>0</iYieldChange>
@@ -244,7 +244,7 @@
 					<BonusType>BONUS_SHRIMP</BonusType>
 					<bBonusMakesValid>0</bBonusMakesValid>
 					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>2500</iDiscoverRand>
+					<iDiscoverRand>1000</iDiscoverRand>
 					<iSpreadRand>0</iSpreadRand>
 					<YieldChanges>
 						<iYieldChange>0</iYieldChange>
@@ -256,7 +256,7 @@
 					<BonusType>BONUS_WHALE</BonusType>
 					<bBonusMakesValid>0</bBonusMakesValid>
 					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>2500</iDiscoverRand>
+					<iDiscoverRand>1000</iDiscoverRand>
 					<iSpreadRand>0</iSpreadRand>
 					<YieldChanges>
 						<iYieldChange>0</iYieldChange>
@@ -268,7 +268,7 @@
 					<BonusType>BONUS_JETEYE</BonusType>
 					<bBonusMakesValid>0</bBonusMakesValid>
 					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>2500</iDiscoverRand>
+					<iDiscoverRand>1000</iDiscoverRand>
 					<iSpreadRand>0</iSpreadRand>
 					<YieldChanges>
 						<iYieldChange>0</iYieldChange>
@@ -280,7 +280,7 @@
 					<BonusType>BONUS_PEARL</BonusType>
 					<bBonusMakesValid>0</bBonusMakesValid>
 					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>2500</iDiscoverRand>
+					<iDiscoverRand>1000</iDiscoverRand>
 					<iSpreadRand>0</iSpreadRand>
 					<YieldChanges>
 						<iYieldChange>0</iYieldChange>
@@ -292,7 +292,7 @@
 					<BonusType>BONUS_CORAL_REEF</BonusType>
 					<bBonusMakesValid>0</bBonusMakesValid>
 					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>2500</iDiscoverRand>
+					<iDiscoverRand>1000</iDiscoverRand>
 					<iSpreadRand>0</iSpreadRand>
 					<YieldChanges>
 						<iYieldChange>0</iYieldChange>
