@@ -5,9 +5,9 @@
 		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_FALL_PALACE</Type>
 			<Description>Hall of Autumn</Description>
-			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iMaxPlayerInstances>1</iMaxPlayerInstances>
 			<iExtraPlayerInstances>0</iExtraPlayerInstances>
 			<bNoLimit>0</bNoLimit>
 			<bMonument>0</bMonument>
@@ -18,9 +18,9 @@
 		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_SPRING_PALACE</Type>
 			<Description>Hall of Spring</Description>
-			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iMaxPlayerInstances>1</iMaxPlayerInstances>
 			<iExtraPlayerInstances>0</iExtraPlayerInstances>
 			<bNoLimit>0</bNoLimit>
 			<bMonument>0</bMonument>
@@ -31,9 +31,9 @@
 		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_HALL_OF_YEARS</Type>
 			<Description>Hall of Years</Description>
-			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iMaxPlayerInstances>1</iMaxPlayerInstances>
 			<iExtraPlayerInstances>0</iExtraPlayerInstances>
 			<bNoLimit>0</bNoLimit>
 			<bMonument>0</bMonument>
