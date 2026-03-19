@@ -4378,6 +4378,7 @@
 			<CivilizationSelectionSound>AS3D_GERMANY_SELECT</CivilizationSelectionSound>
 			<CivilizationActionSound>AS3D_GERMANY_ORDER</CivilizationActionSound>
 			<bGraphicalOnly>0</bGraphicalOnly>
+			<CivTrait>TRAIT_CRAFTMASTER</CivTrait>
 			<DefaultRace>PROMOTION_DWARF</DefaultRace>
 			<Hero>UNIT_BARNAXUS</Hero>
 			<MaintainFeatures>

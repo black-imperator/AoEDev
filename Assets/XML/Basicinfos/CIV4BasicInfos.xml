@@ -388,5 +388,10 @@
 			<Description>TXT_KEY_CONCEPT_UNIT_VISION</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_UNIT_VISION_PEDIA</Civilopedia>
 		</ConceptInfo>
+		<ConceptInfo>
+			<Type>CONCEPT_CAPTAIN_GOLEMS</Type>
+			<Description>TXT_KEY_CONCEPT_CAPTAIN_GOLEMS</Description>
+			<Civilopedia>TXT_KEY_CONCEPT_CAPTAIN_GOLEMS_PEDIA</Civilopedia>
+		</ConceptInfo>
 	</ConceptInfos>
 </Civ4BasicInfos>

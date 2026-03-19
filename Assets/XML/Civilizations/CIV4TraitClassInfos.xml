@@ -24,6 +24,10 @@
 			<Description>TXT_KEY_TRAITCLASS_KEEPERS</Description>
 		</TraitClassInfo>
 		<TraitClassInfo>
+			<Type>TRAITCLASS_CRAFTMASTER</Type>
+			<Description>TXT_KEY_TRAIT_CRAFTMASTER</Description>
+		</TraitClassInfo>
+		<TraitClassInfo>
 			<Type>TRAITCLASS_SAVAGE</Type>
 			<Description>TXT_KEY_TRAITCLASS_SAVAGE</Description>
 		</TraitClassInfo>

@@ -130,6 +130,78 @@
 			</TraitClassEvolve>
 			</EvolveTraitClasses>
 		</LeaderClassInfo>
+		<LeaderClassInfo> <!--Luchuirp Historical-->
+			<Type>LEADERCLASS_LUCHUIRP_HISTORICAL</Type>
+			<Description>TXT_KEY_LEADERCLASS_HISTORICAL</Description>
+			<LeaderStatus>HISTORICAL_STATUS</LeaderStatus>
+			<MaxTraitsPerClass>
+			<TraitClassMax>
+				<TraitClass>TRAITCLASS_PERSONALITY</TraitClass>
+				<iMax>2</iMax>
+			</TraitClassMax>
+			<TraitClassMax>
+				<TraitClass>TRAITCLASS_CRAFTMASTER</TraitClass>
+				<iMax>1</iMax>
+			</TraitClassMax>
+			</MaxTraitsPerClass>
+			<EvolveTraitClasses>
+			<TraitClassEvolve>
+				<TraitClass>TRAITCLASS_CRAFTMASTER</TraitClass>
+				<bChange>1</bChange>
+			</TraitClassEvolve>
+			</EvolveTraitClasses>
+			
+		</LeaderClassInfo>
+		<LeaderClassInfo> <!--Luchuirp Emergent-->
+			<Type>LEADERCLASS_LUCHUIRP_EMERGENT</Type>
+			<Description>TXT_KEY_LEADERCLASS_EMERGENT</Description>
+			<LeaderStatus>EMERGENT_STATUS</LeaderStatus>
+			<MaxTraitsPerClass>
+			<TraitClassMax>
+				<TraitClass>TRAITCLASS_EMERGENT</TraitClass>
+				<iMax>1</iMax>
+			</TraitClassMax>
+			<TraitClassMax>
+				<TraitClass>TRAITCLASS_CRAFTMASTER</TraitClass>
+				<iMax>1</iMax>
+			</TraitClassMax>
+			</MaxTraitsPerClass>
+			<EvolveTraitClasses>
+			<TraitClassEvolve>
+				<TraitClass>TRAITCLASS_CRAFTMASTER</TraitClass>
+				<bChange>1</bChange>
+			</TraitClassEvolve>
+			<TraitClassEvolve>
+				<TraitClass>TRAITCLASS_EMERGENT</TraitClass>
+				<bChange>1</bChange>
+			</TraitClassEvolve>
+			</EvolveTraitClasses>
+		</LeaderClassInfo>
+		<LeaderClassInfo> <!--Luchuirp Important-->
+			<Type>LEADERCLASS_LUCHUIRP_IMPORTANT</Type>
+			<Description>TXT_KEY_LEADERCLASS_IMPORTANT</Description>
+			<LeaderStatus>IMPORTANT_STATUS</LeaderStatus>
+			<MaxTraitsPerClass>
+			<TraitClassMax>
+				<TraitClass>TRAITCLASS_PERSONALITY</TraitClass>
+				<iMax>3</iMax>
+			</TraitClassMax>
+			<TraitClassMax>
+				<TraitClass>TRAITCLASS_CRAFTMASTER</TraitClass>
+				<iMax>1</iMax>
+			</TraitClassMax>
+			</MaxTraitsPerClass>
+			<EvolveTraitClasses>
+			<TraitClassEvolve>
+				<TraitClass>TRAITCLASS_CRAFTMASTER</TraitClass>
+				<bChange>1</bChange>
+			</TraitClassEvolve>
+			<TraitClassEvolve>
+				<TraitClass>TRAITCLASS_PERSONALITY</TraitClass>
+				<bChange>1</bChange>
+			</TraitClassEvolve>
+			</EvolveTraitClasses>
+		</LeaderClassInfo>
 		<LeaderClassInfo> <!--Savage Historical-->
 			<Type>LEADERCLASS_SAVAGE_HISTORICAL</Type>
 			<Description>TXT_KEY_LEADERCLASS_HISTORICAL</Description>

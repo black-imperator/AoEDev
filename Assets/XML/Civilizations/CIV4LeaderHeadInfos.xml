@@ -8752,7 +8752,7 @@
 			<iAttitudeToMales>0</iAttitudeToMales>
 			<iSomniumAggressiveness>40</iSomniumAggressiveness>
 			<Alignment>ALIGNMENT_GOOD</Alignment>
-			<LeaderClass>LEADERCLASS_HISTORICAL</LeaderClass>
+			<LeaderClass>LEADERCLASS_LUCHUIRP_HISTORICAL</LeaderClass>
 			<iAlignmentModifier>288</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
 			<iEthicalAlignmentModifier>295</iEthicalAlignmentModifier>
@@ -21253,7 +21253,7 @@
 			<iAttitudeToMales>0</iAttitudeToMales>
 			<iSomniumAggressiveness>45</iSomniumAggressiveness>
 			<Alignment>ALIGNMENT_GOOD</Alignment>
-			<LeaderClass>LEADERCLASS_HISTORICAL</LeaderClass>
+			<LeaderClass>LEADERCLASS_LUCHUIRP_HISTORICAL</LeaderClass>
 			<iAlignmentModifier>305</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_NEUTRAL</EthicalAlignment>
 			<iEthicalAlignmentModifier>220</iEthicalAlignmentModifier>
@@ -21377,7 +21377,7 @@
 			<FavoriteCivic>CIVIC_GUILDS</FavoriteCivic>
 			<Traits>
 				<Trait>
-					<TraitType>TRAIT_CRAFTMASTER</TraitType>
+					<TraitType>TRAIT_INDUSTRIOUS</TraitType>
 					<bTrait>1</bTrait>
 				</Trait>
 			</Traits>
@@ -21850,7 +21850,7 @@
 			<iAttitudeToMales>0</iAttitudeToMales>
 			<iSomniumAggressiveness>40</iSomniumAggressiveness>
 			<Alignment>ALIGNMENT_NEUTRAL</Alignment>
-			<LeaderClass>LEADERCLASS_EMERGENT</LeaderClass>
+			<LeaderClass>LEADERCLASS_LUCHUIRP_IMPORTANT</LeaderClass>
 			<iAlignmentModifier>173</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_NEUTRAL</EthicalAlignment>
 			<iEthicalAlignmentModifier>142</iEthicalAlignmentModifier>

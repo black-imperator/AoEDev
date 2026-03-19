@@ -500,7 +500,7 @@
 					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
-			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
+			<TraitClassType>TRAITCLASS_CRAFTMASTER</TraitClassType>			
 			<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
 			<PrereqSpellType>SPELL_RECYCLE</PrereqSpellType>
 			<bOncePerPlayer>1</bOncePerPlayer>
@@ -892,7 +892,7 @@
 					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
-			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
+			<TraitClassType>TRAITCLASS_CRAFTMASTER</TraitClassType>			
 			<TraitHookType>TRAITHOOK_CONSTRUCT_BUILDING</TraitHookType>
 			<PrereqBuildingClassType>BUILDINGCLASS_BLASTING_WORKSHOP</PrereqBuildingClassType>
 		</TraitTriggerInfo>
@@ -904,7 +904,7 @@
 					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
-			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
+			<TraitClassType>TRAITCLASS_CRAFTMASTER</TraitClassType>			
 			<TraitHookType>TRAITHOOK_CONSTRUCT_BUILDING</TraitHookType>
 			<PrereqBuildingClassType>BUILDINGCLASS_PALLENS_ENGINE</PrereqBuildingClassType>
 		</TraitTriggerInfo>
@@ -916,7 +916,7 @@
 					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
-			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
+			<TraitClassType>TRAITCLASS_CRAFTMASTER</TraitClassType>						
 			<TraitHookType>TRAITHOOK_CONSTRUCT_BUILDING</TraitHookType>
 			<PrereqBuildingClassType>BUILDINGCLASS_ADULARIA_CHAMBER</PrereqBuildingClassType>
 		</TraitTriggerInfo>
@@ -928,7 +928,7 @@
 					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
-			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
+			<TraitClassType>TRAITCLASS_CRAFTMASTER</TraitClassType>						
 			<TraitHookType>TRAITHOOK_CONSTRUCT_BUILDING</TraitHookType>
 			<PrereqBuildingClassType>BUILDINGCLASS_BARRACKS</PrereqBuildingClassType>
 		</TraitTriggerInfo>
@@ -952,7 +952,7 @@
 					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
-			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>						
+			<TraitClassType>TRAITCLASS_CRAFTMASTER</TraitClassType>						
 			<TraitHookType>TRAITHOOK_CONSTRUCT_BUILDING</TraitHookType>
 			<PrereqBuildingClassType>BUILDINGCLASS_MACHINISTS_SHOP</PrereqBuildingClassType>
 		</TraitTriggerInfo>
@@ -2818,7 +2818,7 @@
 					<iModifier>5</iModifier>
 				</CounterChange>
 			</CounterChanges>
-			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
+			<TraitClassType>TRAITCLASS_CRAFTMASTER</TraitClassType>
 			<TraitHookType>TRAITHOOK_UNIT_GAIN_PROMOTION</TraitHookType>
 			<PrereqPromotionType>PROMOTION_GOLEM</PrereqPromotionType>
 		</TraitTriggerInfo>
@@ -2945,7 +2945,7 @@
 					<iModifier>3</iModifier>
 				</CounterChange>
 			</CounterChanges>
-			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
+			<TraitClassType>TRAITCLASS_CRAFTMASTER</TraitClassType>
 			<TraitHookType>TRAITHOOK_KILL_UNIT</TraitHookType>
 			<PrereqRaceType>PROMOTION_GOLEM</PrereqRaceType>
 		</TraitTriggerInfo>
@@ -3516,7 +3516,7 @@
 					<iModifier>20</iModifier>
 				</CounterChange>
 			</CounterChanges>
-			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
+			<TraitClassType>TRAITCLASS_CRAFTMASTER</TraitClassType>
 				<TraitHookType>TRAITHOOK_UNIT_LEVEL_UP</TraitHookType>
 			<PrereqUnitClassType>UNITCLASS_BARNAXUS</PrereqUnitClassType>
 		</TraitTriggerInfo>
@@ -4987,7 +4987,7 @@
 					<iModifier>600</iModifier>
 				</CounterChange>
 			</CounterChanges>
-			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
+			<TraitClassType>TRAITCLASS_CRAFTMASTER</TraitClassType>
 			<PrereqTech>TECH_SORCERY</PrereqTech>
 			<TraitHookType>TRAITHOOK_TECH</TraitHookType>	
 		</TraitTriggerInfo>
@@ -5178,7 +5178,7 @@
 					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
-			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
+			<TraitClassType>TRAITCLASS_CRAFTMASTER</TraitClassType>
 			<TraitHookType>TRAITHOOK_TRAIN_UNIT</TraitHookType>
 			<PrereqUnitClassType>UNITCLASS_BARNAXUS</PrereqUnitClassType>
 		</TraitTriggerInfo>

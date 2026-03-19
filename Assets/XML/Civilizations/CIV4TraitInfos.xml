@@ -950,9 +950,9 @@
 			<Type>TRAIT_CRAFTMASTER</Type>
 			<NextTrait>TRAIT_CRAFTMASTER2</NextTrait>
 			<iLevel>1</iLevel>
-			<TraitClass>TRAITCLASS_EMERGENT</TraitClass>
+			<TraitClass>TRAITCLASS_CRAFTMASTER</TraitClass>
 			<Description>TXT_KEY_TRAIT_CRAFTMASTER</Description>
-			<Civilopedia>TXT_KEY_TRAIT_CRAFTMASTER_PEDIA</Civilopedia>
+			<Civilopedia>TXT_KEY_CONCEPT_CAPTAIN_GOLEMS_PEDIA</Civilopedia>
 			<ShortDescription>TXT_KEY_TRAIT_CRAFTMASTER_SHORT</ShortDescription>
 			<Help>TXT_KEY_TRAIT_CRAFTMASTER_HELP</Help>
 		</TraitInfo>
@@ -963,9 +963,9 @@
 			<iLevel>2</iLevel>
 			<Help>TXT_KEY_TRAIT_CRAFTMASTER2_INFO_HELP</Help>
 			<iMinRequiredPoints>300</iMinRequiredPoints>
-			<TraitClass>TRAITCLASS_EMERGENT</TraitClass>
+			<TraitClass>TRAITCLASS_CRAFTMASTER</TraitClass>
 			<Description>TXT_KEY_TRAIT_CRAFTMASTER</Description>
-			<Civilopedia>TXT_KEY_TRAIT_CRAFTMASTER_PEDIA</Civilopedia>
+			<Civilopedia>TXT_KEY_CONCEPT_CAPTAIN_GOLEMS_PEDIA</Civilopedia>
 			<ShortDescription>TXT_KEY_TRAIT_CRAFTMASTER_SHORT</ShortDescription>
 			<Help>TXT_KEY_TRAIT_CRAFTMASTER_HELP</Help>
 		</TraitInfo>
@@ -974,9 +974,9 @@
 			<ParentTrait>TRAIT_CRAFTMASTER</ParentTrait>
 			<iLevel>3</iLevel>
 			<iMinRequiredPoints>1500</iMinRequiredPoints>
-			<TraitClass>TRAITCLASS_EMERGENT</TraitClass>
+			<TraitClass>TRAITCLASS_CRAFTMASTER</TraitClass>
 			<Description>TXT_KEY_TRAIT_CRAFTMASTER</Description>
-			<Civilopedia>TXT_KEY_TRAIT_CRAFTMASTER_PEDIA</Civilopedia>
+			<Civilopedia>TXT_KEY_CONCEPT_CAPTAIN_GOLEMS_PEDIA</Civilopedia>
 			<ShortDescription>TXT_KEY_TRAIT_CRAFTMASTER_SHORT</ShortDescription>
 			<Help>TXT_KEY_TRAIT_CRAFTMASTER3_HELP</Help>
 		</TraitInfo>
