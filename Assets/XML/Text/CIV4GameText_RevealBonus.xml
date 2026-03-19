@@ -1404,6 +1404,22 @@
 		<Spanish>(Crime) Organized Crime</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CRIME_ILLEGAL_EXPERIMENTS</Tag>
+		<English>(Crime) Illegal Experiments</English>
+		<French>(Crime) Illegal Experiments</French>
+		<German>(Crime) Illegal Experiments</German>
+		<Italian>(Crime) Illegal Experiments</Italian>
+		<Spanish>(Crime) Illegal Experiments</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CRIME_NEGLECT_SAFETY</Tag>
+		<English>(Crime) Neglect Safety Regulations</English>
+		<French>(Crime) Neglect Safety Regulations</French>
+		<German>(Crime) Neglect Safety Regulations</German>
+		<Italian>(Crime) Neglect Safety Regulations</Italian>
+		<Spanish>(Crime) Neglect Safety Regulations</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_SPELL</Tag>
 		<English>Spell</English>
 		<French>Sort</French>

@@ -614,6 +614,12 @@
 				</PrereqBuildingClass>
 			</PrereqBuildingClasses>
 			<BuildingExcludes>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_CRIME_TAX_EVASION</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+			</BuildingExcludes>
+			<BuildingExcludes>
 			<BuildingExclude>
 				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_JUNGLE</BuildingClassType>
 				<bExclude>1</bExclude>
@@ -754,6 +760,12 @@
 					<iRange>4</iRange>
 				</PrereqBuildingAtRange>
 			</PrereqBuildingAtRanges>
+			<BuildingExcludes>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_CRIME_TAX_EVASION</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+			</BuildingExcludes>
 			<CommerceChanges>
 				<iCommerce>4</iCommerce>
 				<iCommerce>0</iCommerce>

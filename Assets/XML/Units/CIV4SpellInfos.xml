@@ -9019,7 +9019,7 @@
 			<bResistable>1</bResistable>
 			<iResistModify>10</iResistModify>
 			<iDamage>50</iDamage>
-			<iDamageLimit>100</iDamageLimit>
+			<iDamageLimit>60</iDamageLimit>
 			<DamageType>DAMAGE_FIRE</DamageType>
 			<bImmuneTeam>1</bImmuneTeam>
 			<bImmuneNeutral>1</bImmuneNeutral>
@@ -9041,7 +9041,7 @@
 			<iRange>1</iRange>
 			<iResistModify>10</iResistModify>
 			<iDamage>50</iDamage>
-			<iDamageLimit>100</iDamageLimit>
+			<iDamageLimit>60</iDamageLimit>
 			<DamageType>DAMAGE_LIGHTNING</DamageType>
 			<AddPromotions>
 				<AddPromotion>PROMOTION_TERRIFIED</AddPromotion>
@@ -9205,7 +9205,7 @@
 			<iRange>2</iRange>
 			<iResistModify>-10</iResistModify>
 			<iDamage>20</iDamage>
-			<iDamageLimit>100</iDamageLimit>
+			<iDamageLimit>60</iDamageLimit>
 			<DamageType>DAMAGE_COLD</DamageType>
 			<AddPromotions>
 				<AddPromotion>PROMOTION_SLOW</AddPromotion>

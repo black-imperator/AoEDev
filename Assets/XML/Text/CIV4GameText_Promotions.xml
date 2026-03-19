@@ -2246,12 +2246,12 @@
 		<Spanish>Magic Proof Plating</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_SPELL_SUPPRESSION_FIELD_CAPTAIN_GOLEMS</Tag>
-		<English>Suppress Hostiles</English>
-		<French>Suppress Hostiles</French>
-		<German>Suppress Hostiles</German>
-		<Italian>Suppress Hostiles</Italian>
-		<Spanish>Suppress Hostiles</Spanish>
+		<Tag>TXT_KEY_PROMOTION_EXPERIMENTAL_GOLEM</Tag>
+		<English>Experimental Golem</English>
+		<French>Experimental Golem</French>
+		<German>Experimental Golem</German>
+		<Italian>Experimental Golem</Italian>
+		<Spanish>Experimental Golem</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_HIDDEN_NATIONALITY</Tag>

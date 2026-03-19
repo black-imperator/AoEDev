@@ -4224,6 +4224,14 @@
 					<BuildingType>BUILDING_CRIME_ROGUE_GOLEMS</BuildingType>
 				</Building>
 				<Building>
+					<BuildingClassType>BUILDINGCLASS_CRIME_ARSON</BuildingClassType>
+					<BuildingType>BUILDING_CRIME_ILLEGAL_EXPERIMENTS</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_CRIME_SHOPLIFTING</BuildingClassType>
+					<BuildingType>BUILDING_CRIME_NEGLECT_SAFETY</BuildingType>
+				</Building>
+				<Building>
 					<BuildingClassType>BUILDINGCLASS_CRIME_DESERTION</BuildingClassType>
 					<BuildingType>NONE</BuildingType>
 				</Building>

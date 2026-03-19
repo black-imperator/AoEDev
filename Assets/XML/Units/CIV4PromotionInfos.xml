@@ -42632,6 +42632,32 @@
 			</Affinities>
 			<Button>Art/Interface/Buttons/Promotions/Plating/Golem_Default.dds</Button>
 		</PromotionInfo>
+		<PromotionInfo>		<!-- Experimental Golem (Crime)-->
+			<Type>PROMOTION_EXPERIMENTAL_GOLEM</Type>
+			<Description>TXT_KEY_PROMOTION_EXPERIMENTAL_GOLEM</Description>
+			<Help></Help>
+			<iMinLevel>-1</iMinLevel>
+			<PrereqPromotionANDs>
+				<PrereqPromotionAND>
+					<PromotionType>PROMOTION_GOLEM</PromotionType>
+					<iPrereqApplications>1</iPrereqApplications>
+				</PrereqPromotionAND>
+			</PrereqPromotionANDs>
+			<PrereqbAllowNULLUnitCombat>1</PrereqbAllowNULLUnitCombat>
+			<iPromotionRandomApplyChance>3</iPromotionRandomApplyChance>
+			<PromotionRandomApply>PROMOTION_ENRAGED</PromotionRandomApply>
+			<SecondaryUnitCombats>
+				<SecondaryUnitCombat>UNITCOMBAT_MELEE</SecondaryUnitCombat>
+			</SecondaryUnitCombats>
+			<DamageTypeCombats>
+				<DamageTypeCombat>
+					<DamageType>DAMAGE_UNHOLY</DamageType>
+					<iCombat>1</iCombat>
+				</DamageTypeCombat>
+			</DamageTypeCombats>
+			
+			<Button>Art/Interface/Buttons/Promotions/ExperimentalGolem.dds</Button>
+		</PromotionInfo>
 		<PromotionInfo>		<!-- Slyph -->
 			<Type>PROMOTION_SLYPH</Type>
 			<Description>TXT_KEY_PROMOTION_SLYPH</Description>
