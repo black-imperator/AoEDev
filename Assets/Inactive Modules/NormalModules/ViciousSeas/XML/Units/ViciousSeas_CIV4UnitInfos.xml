@@ -1515,71 +1515,16 @@
 		<UnitInfo>        <!-- Drown -->
 			<Class>UNITCLASS_DROWN</Class>
 			<Type>UNIT_DROWN</Type>
-			<Combat>UNITCOMBAT_MELEE</Combat>
-			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_DROWN</Description>
-			<Civilopedia>TXT_KEY_UNIT_DROWN_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_DROWN_STRATEGY</Strategy>
-			<Advisor>ADVISOR_MILITARY</Advisor>
-			<bMilitarySupport>1</bMilitarySupport>
-			<bMilitaryProduction>1</bMilitaryProduction>
-			<bPillage>1</bPillage>
-			<bCanMoveAllTerrain>1</bCanMoveAllTerrain>
-			<UnitClassUpgrades>
-				<UnitClassUpgradeType>UNITCLASS_STYGIAN_GUARD</UnitClassUpgradeType>
-			</UnitClassUpgrades>
-			<UnitAIs>
-				<UnitAI>
-					<UnitAIType>UNITAI_ATTACK</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_ATTACK_SEA</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-			</UnitAIs>
-			<ReligionType>RELIGION_OCTOPUS_OVERLORDS</ReligionType>
-			<StateReligion>RELIGION_OCTOPUS_OVERLORDS</StateReligion>
-			<PrereqReligion>RELIGION_OCTOPUS_OVERLORDS</PrereqReligion>
-			<PrereqTech>TECH_MESSAGE_FROM_THE_DEEP</PrereqTech>
-			<iCost>90</iCost>
-			<iMoves>1</iMoves>
-			<iCombat>3</iCombat>
-			<iCultureGarrison>3</iCultureGarrison>
-			<iAsset>3</iAsset>
-			<UnitMeshGroups>
-				<iGroupSize>3</iGroupSize>
-				<iMeleeWaveSize>3</iMeleeWaveSize>
-				<iRangedWaveSize>0</iRangedWaveSize>
-				<UnitMeshGroup>
-					<iRequired>3</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_DROWN</EarlyArtDefineTag>
-				</UnitMeshGroup>
-			</UnitMeshGroups>
-			<FreePromotions>
-				<FreePromotion>
-					<PromotionType>PROMOTION_VULNERABLE_TO_FIRE</PromotionType>
-					<iNumApplied>1</iNumApplied>
-				</FreePromotion>
-				<FreePromotion>
-					<PromotionType>PROMOTION_UNDEAD</PromotionType>
-					<iNumApplied>1</iNumApplied>
-				</FreePromotion>
-				<FreePromotion>
-					<PromotionType>PROMOTION_WATER_WALKING</PromotionType>
-					<iNumApplied>1</iNumApplied>
-				</FreePromotion>
-			</FreePromotions>
-			<iTier>2</iTier>
-			<iWeaponTierMax>3</iWeaponTierMax>
-			<DamageTypeCombats>
-				<DamageTypeCombat>
-					<DamageType>DAMAGE_UNHOLY</DamageType>
-					<iCombat>1</iCombat>
-				</DamageTypeCombat>
-			</DamageTypeCombats>
-			<iAlignmentModifier>-1</iAlignmentModifier>
-			<bForceOverwrite>1</bForceOverwrite>
+			<TerrainPassableTechs>
+				<TerrainPassableTech>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<PassableTech>TECH_FISHING</PassableTech>
+				</TerrainPassableTech>
+				<TerrainPassableTech>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<PassableTech>TECH_FISHING</PassableTech>
+				</TerrainPassableTech>
+			</TerrainPassableTechs>
 		</UnitInfo>
 		<UnitInfo>        <!-- Malignant Flora Fort Commander -->
 			<Class>UNITCLASS_FORT_COMMANDER</Class>
@@ -2690,6 +2635,9 @@
 					<EarlyArtDefineTag>ART_DEF_UNIT_AIFON_DROWN</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
+			<AllowPromotions>
+				<Promotion>PROMOTION_OVERLORDS_THRALL</Promotion>
+			</AllowPromotions>
 			<FreePromotions>
 				<FreePromotion>
 					<PromotionType>PROMOTION_DEMON</PromotionType>
