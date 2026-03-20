@@ -1781,4 +1781,50 @@ multipliers:
 		<Italian>Dictionary</Italian>
 		<Spanish>Dictionary</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_USEFUL_HOTKEY</Tag>
+		<English>Additional Useful Hotkeys</English>
+		<French>Additional Useful Hotkeys</French>
+		<German>Additional Useful Hotkeys</German>
+		<Italian>Additional Useful Hotkeys</Italian>
+		<Spanish>Additional Useful Hotkeys</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_USEFUL_HOTKEY_PEDIA</Tag>
+		<English>Ashes of Erebus has additional hotkey functions for extra quality of life.
+
+[ICON_BULLET] ALT X,  City Planner. Shows an outline on your cursor of how many tiles would fit inside the big fat cross of a city to better plan where to send your settlers.
+[ICON_BULLET] SHIFT X with City Planner already turned on, change the size of the City Planner borders.
+[ICON_BULLET]CTRL X with City Planner already turned on, allows you to click on the world to place markers for future reference, which can be hidden again with CTRL X. Click on a marker again to remove it.
+
+[ICON_BULLET]SHIFT ALT R, Popup Reminder: allows you to punch in a text reminder for yourself that will pop up in X number of turns to help you remember your plans for that game session. The reminder will appear as yellow text in the chat window and will play a sound.</English>
+		<French>Ashes of Erebus has additional hotkey functions for extra quality of life.
+
+[ICON_BULLET] ALT X,  City Planner. Shows an outline on your cursor of how many tiles would fit inside the big fat cross of a city to better plan where to send your settlers.
+[ICON_BULLET] SHIFT X with City Planner already turned on, change the size of the City Planner borders.
+[ICON_BULLET]CTRL X with City Planner already turned on, allows you to click on the world to place markers for future reference, which can be hidden again with CTRL X. Click on a marker again to remove it.
+
+[ICON_BULLET]SHIFT ALT R, Popup Reminder: allows you to punch in a text reminder for yourself that will pop up in X number of turns to help you remember your plans for that game session. The reminder will appear as yellow text in the chat window and will play a sound.</French>
+		<German>Ashes of Erebus has additional hotkey functions for extra quality of life.
+
+[ICON_BULLET] ALT X,  City Planner. Shows an outline on your cursor of how many tiles would fit inside the big fat cross of a city to better plan where to send your settlers.
+[ICON_BULLET] SHIFT X with City Planner already turned on, change the size of the City Planner borders.
+[ICON_BULLET]CTRL X with City Planner already turned on, allows you to click on the world to place markers for future reference, which can be hidden again with CTRL X. Click on a marker again to remove it.
+
+[ICON_BULLET]SHIFT ALT R, Popup Reminder: allows you to punch in a text reminder for yourself that will pop up in X number of turns to help you remember your plans for that game session. The reminder will appear as yellow text in the chat window and will play a sound.</German>
+		<Italian>Ashes of Erebus has additional hotkey functions for extra quality of life.
+
+[ICON_BULLET] ALT X,  City Planner. Shows an outline on your cursor of how many tiles would fit inside the big fat cross of a city to better plan where to send your settlers.
+[ICON_BULLET] SHIFT X with City Planner already turned on, change the size of the City Planner borders.
+[ICON_BULLET]CTRL X with City Planner already turned on, allows you to click on the world to place markers for future reference, which can be hidden again with CTRL X. Click on a marker again to remove it.
+
+[ICON_BULLET]SHIFT ALT R, Popup Reminder: allows you to punch in a text reminder for yourself that will pop up in X number of turns to help you remember your plans for that game session. The reminder will appear as yellow text in the chat window and will play a sound.</Italian>
+		<Spanish>Ashes of Erebus has additional hotkey functions for extra quality of life.
+
+[ICON_BULLET] ALT X,  City Planner. Shows an outline on your cursor of how many tiles would fit inside the big fat cross of a city to better plan where to send your settlers.
+[ICON_BULLET] SHIFT X with City Planner already turned on, change the size of the City Planner borders.
+[ICON_BULLET]CTRL X with City Planner already turned on, allows you to click on the world to place markers for future reference, which can be hidden again with CTRL X. Click on a marker again to remove it.
+
+[ICON_BULLET]SHIFT ALT R, Popup Reminder: allows you to punch in a text reminder for yourself that will pop up in X number of turns to help you remember your plans for that game session. The reminder will appear as yellow text in the chat window and will play a sound.</Spanish>
+	</TEXT>
 </Civ4GameText>

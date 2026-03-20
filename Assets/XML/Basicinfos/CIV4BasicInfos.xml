@@ -393,5 +393,10 @@
 			<Description>TXT_KEY_CONCEPT_CAPTAIN_GOLEMS</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_CAPTAIN_GOLEMS_PEDIA</Civilopedia>
 		</ConceptInfo>
+		<ConceptInfo>
+			<Type>CONCEPT_USEFUL_HOTKEY</Type>
+			<Description>TXT_KEY_CONCEPT_USEFUL_HOTKEY</Description>
+			<Civilopedia>TXT_KEY_CONCEPT_USEFUL_HOTKEY_PEDIA</Civilopedia>
+		</ConceptInfo>
 	</ConceptInfos>
 </Civ4BasicInfos>
