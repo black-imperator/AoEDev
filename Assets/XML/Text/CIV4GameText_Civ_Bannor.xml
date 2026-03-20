@@ -39,7 +39,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BANNOR_STRATEGY</Tag>
-		<English>The Bannor are a generalist civ who have several unique options available that tend to guide them to religious techs.[NEWLINE]
+		<English>Complexity: Basic[NEWLINE]The Bannor are a generalist civ who have several unique options available that tend to guide them to religious techs.[NEWLINE]
 [ICON_BULLET]As your non-animal, non-siege units gain levels, they will automatically gain rank promotions as part of the Chain of Command, giving them the ability to command units and empower their minions. In order - [LINK=PROMOTION_CORPORAL]Corproal[\LINK], [LINK=PROMOTION_SERGEANT]Sergeant[\LINK], [LINK=PROMOTION_MASTER_SERGEANT]Master Sergeant[\LINK], [LINK=PROMOTION_CAPTAIN]Captain[\LINK], [LINK=PROMOTION_GENERAL]General[\LINK]. When you earn a great general, your unique [LINK=UNIT_COMMANDER_BANNOR_CAPTAIN]Captain[\LINK] starts with the Captain rank promotion.
 [ICON_BULLET]Your melee and defensive melee units start with the [LINK=PROMOTION_GUARDSMAN]Guardsman[\LINK] promotion, letting them protect from marksman units like assassins.
 [ICON_BULLET]With a [LINK=BUILDING_PAGAN_TEMPLE]Pagan Temple[\LINK], you can build the supportive [LINK=UNIT_CLERIC]Cleric[\LINK], who provides the valuable [LINK=PROMOTION_MARCH]March[\LINK] promotion to their stack.

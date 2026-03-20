@@ -149,7 +149,7 @@ Podaltur, who had once guided their ancestors to travel into the sea in the old 
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BEZERI_STRATEGY</Tag>
-		<English>Bezeri are an amphibious faction of toads and lizardmen. They start on land with everyone else, and starting at any of the following tech:[LINK=TECH_FERAL_BOND]Feral Bond[\LINK], [LINK=TECH_SORCERY]Sorcery[\LINK], [LINK=TECH_FANATICISM]Fanaticism[\LINK], [LINK=TECH_IRON_WORKING]Iron Working[\LINK], [LINK=TECH_BOWYERS]Bowyers[\LINK], [LINK=TECH_STIRRUPS]Stirrups[\LINK], [LINK=TECH_ASTRONOMY]Astronomy[\LINK] the Bezeri are able to establish fully aquatic cities.
+		<English>Complexity: Standard[NEWLINE]Bezeri are an amphibious faction of toads and lizardmen. They start on land with everyone else, and starting at any of the following tech:[LINK=TECH_FERAL_BOND]Feral Bond[\LINK], [LINK=TECH_SORCERY]Sorcery[\LINK], [LINK=TECH_FANATICISM]Fanaticism[\LINK], [LINK=TECH_IRON_WORKING]Iron Working[\LINK], [LINK=TECH_BOWYERS]Bowyers[\LINK], [LINK=TECH_STIRRUPS]Stirrups[\LINK], [LINK=TECH_ASTRONOMY]Astronomy[\LINK] the Bezeri are able to establish fully aquatic cities.
 
 Strategy: 
 
@@ -162,7 +162,7 @@ Strategy:
 [ICON_BULLET] The Bezeri world spell [LINK=SPELL_DROWNING_WAVES]Drowning Waves[\LINK] is able to sink their lands under the sea, destroying resources and improvements, but potentially saving them from an invading army.
 [ICON_BULLET] The Bezeri are not able to build the heron throne, but you could steal it!
 [ICON_BULLET] The Bezeri lost their homes and fled to the land because of the [LINK=UNIT_LEVIATHAN]Leviathan[\LINK], a nightmarish beast that roams the oceans of Erebus. Seek your revenge and slay the beast! Only then will you earn the right to be the [LINK=TRAIT_CONQUERORSOFTHESEA2]rulers of the deep[\LINK].</English>
-		<French>Bezeri are an amphibious faction of toads and lizardmen. They start on land with everyone else, and starting at any of the following tech:[LINK=TECH_FERAL_BOND]Feral Bond[\LINK], [LINK=TECH_SORCERY]Sorcery[\LINK], [LINK=TECH_FANATICISM]Fanaticism[\LINK], [LINK=TECH_IRON_WORKING]Iron Working[\LINK], [LINK=TECH_BOWYERS]Bowyers[\LINK], [LINK=TECH_STIRRUPS]Stirrups[\LINK], [LINK=TECH_ASTRONOMY]Astronomy[\LINK] the Bezeri are able to establish fully aquatic cities.
+		<French>Complexity: Standard[NEWLINE]Bezeri are an amphibious faction of toads and lizardmen. They start on land with everyone else, and starting at any of the following tech:[LINK=TECH_FERAL_BOND]Feral Bond[\LINK], [LINK=TECH_SORCERY]Sorcery[\LINK], [LINK=TECH_FANATICISM]Fanaticism[\LINK], [LINK=TECH_IRON_WORKING]Iron Working[\LINK], [LINK=TECH_BOWYERS]Bowyers[\LINK], [LINK=TECH_STIRRUPS]Stirrups[\LINK], [LINK=TECH_ASTRONOMY]Astronomy[\LINK] the Bezeri are able to establish fully aquatic cities.
 
 Strategy: 
 
@@ -175,7 +175,7 @@ Strategy:
 [ICON_BULLET] The Bezeri world spell [LINK=SPELL_DROWNING_WAVES]Drowning Waves[\LINK] is able to sink their lands under the sea, destroying resources and improvements, but potentially saving them from an invading army.
 [ICON_BULLET] The Bezeri are not able to build the heron throne, but you could steal it!
 [ICON_BULLET] The Bezeri lost their homes and fled to the land because of the [LINK=UNIT_LEVIATHAN]Leviathan[\LINK], a nightmarish beast that roams the oceans of Erebus. Seek your revenge and slay the beast! Only then will you earn the right to be the [LINK=TRAIT_CONQUERORSOFTHESEA2]rulers of the deep[\LINK].</French>
-		<German>Bezeri are an amphibious faction of toads and lizardmen. They start on land with everyone else, and starting at any of the following tech:[LINK=TECH_FERAL_BOND]Feral Bond[\LINK], [LINK=TECH_SORCERY]Sorcery[\LINK], [LINK=TECH_FANATICISM]Fanaticism[\LINK], [LINK=TECH_IRON_WORKING]Iron Working[\LINK], [LINK=TECH_BOWYERS]Bowyers[\LINK], [LINK=TECH_STIRRUPS]Stirrups[\LINK], [LINK=TECH_ASTRONOMY]Astronomy[\LINK] the Bezeri are able to establish fully aquatic cities.
+		<German>Complexity: Standard[NEWLINE]Bezeri are an amphibious faction of toads and lizardmen. They start on land with everyone else, and starting at any of the following tech:[LINK=TECH_FERAL_BOND]Feral Bond[\LINK], [LINK=TECH_SORCERY]Sorcery[\LINK], [LINK=TECH_FANATICISM]Fanaticism[\LINK], [LINK=TECH_IRON_WORKING]Iron Working[\LINK], [LINK=TECH_BOWYERS]Bowyers[\LINK], [LINK=TECH_STIRRUPS]Stirrups[\LINK], [LINK=TECH_ASTRONOMY]Astronomy[\LINK] the Bezeri are able to establish fully aquatic cities.
 
 Strategy: 
 
@@ -188,7 +188,7 @@ Strategy:
 [ICON_BULLET] The Bezeri world spell [LINK=SPELL_DROWNING_WAVES]Drowning Waves[\LINK] is able to sink their lands under the sea, destroying resources and improvements, but potentially saving them from an invading army.
 [ICON_BULLET] The Bezeri are not able to build the heron throne, but you could steal it!
 [ICON_BULLET] The Bezeri lost their homes and fled to the land because of the [LINK=UNIT_LEVIATHAN]Leviathan[\LINK], a nightmarish beast that roams the oceans of Erebus. Seek your revenge and slay the beast! Only then will you earn the right to be the [LINK=TRAIT_CONQUERORSOFTHESEA2]rulers of the deep[\LINK].</German>
-		<Italian>Bezeri are an amphibious faction of toads and lizardmen. They start on land with everyone else, and starting at any of the following tech:[LINK=TECH_FERAL_BOND]Feral Bond[\LINK], [LINK=TECH_SORCERY]Sorcery[\LINK], [LINK=TECH_FANATICISM]Fanaticism[\LINK], [LINK=TECH_IRON_WORKING]Iron Working[\LINK], [LINK=TECH_BOWYERS]Bowyers[\LINK], [LINK=TECH_STIRRUPS]Stirrups[\LINK], [LINK=TECH_ASTRONOMY]Astronomy[\LINK] the Bezeri are able to establish fully aquatic cities.
+		<Italian>Complexity: Standard[NEWLINE]Bezeri are an amphibious faction of toads and lizardmen. They start on land with everyone else, and starting at any of the following tech:[LINK=TECH_FERAL_BOND]Feral Bond[\LINK], [LINK=TECH_SORCERY]Sorcery[\LINK], [LINK=TECH_FANATICISM]Fanaticism[\LINK], [LINK=TECH_IRON_WORKING]Iron Working[\LINK], [LINK=TECH_BOWYERS]Bowyers[\LINK], [LINK=TECH_STIRRUPS]Stirrups[\LINK], [LINK=TECH_ASTRONOMY]Astronomy[\LINK] the Bezeri are able to establish fully aquatic cities.
 
 Strategy: 
 
@@ -201,7 +201,7 @@ Strategy:
 [ICON_BULLET] The Bezeri world spell [LINK=SPELL_DROWNING_WAVES]Drowning Waves[\LINK] is able to sink their lands under the sea, destroying resources and improvements, but potentially saving them from an invading army.
 [ICON_BULLET] The Bezeri are not able to build the heron throne, but you could steal it!
 [ICON_BULLET] The Bezeri lost their homes and fled to the land because of the [LINK=UNIT_LEVIATHAN]Leviathan[\LINK], a nightmarish beast that roams the oceans of Erebus. Seek your revenge and slay the beast! Only then will you earn the right to be the [LINK=TRAIT_CONQUERORSOFTHESEA2]rulers of the deep[\LINK].</Italian>
-		<Spanish>Bezeri are an amphibious faction of toads and lizardmen. They start on land with everyone else, and starting at any of the following tech:[LINK=TECH_FERAL_BOND]Feral Bond[\LINK], [LINK=TECH_SORCERY]Sorcery[\LINK], [LINK=TECH_FANATICISM]Fanaticism[\LINK], [LINK=TECH_IRON_WORKING]Iron Working[\LINK], [LINK=TECH_BOWYERS]Bowyers[\LINK], [LINK=TECH_STIRRUPS]Stirrups[\LINK], [LINK=TECH_ASTRONOMY]Astronomy[\LINK] the Bezeri are able to establish fully aquatic cities.
+		<Spanish>Complexity: Standard[NEWLINE]Bezeri are an amphibious faction of toads and lizardmen. They start on land with everyone else, and starting at any of the following tech:[LINK=TECH_FERAL_BOND]Feral Bond[\LINK], [LINK=TECH_SORCERY]Sorcery[\LINK], [LINK=TECH_FANATICISM]Fanaticism[\LINK], [LINK=TECH_IRON_WORKING]Iron Working[\LINK], [LINK=TECH_BOWYERS]Bowyers[\LINK], [LINK=TECH_STIRRUPS]Stirrups[\LINK], [LINK=TECH_ASTRONOMY]Astronomy[\LINK] the Bezeri are able to establish fully aquatic cities.
 
 Strategy: 
 

@@ -38,6 +38,49 @@
 		<Spanish>When the Lizardman civilization of the Age of Magic fled from Mulcarn's destructive entry to creation, many found refuge in a cave complex near the heart of a volcano. These refugees would later become the Mazatl. There were other survivors however that did not survive through such fortune. In desperation, some of the Lizardmen made pacts with the darker forces of their pantheon, most notably the dark god Agruonn - lord of self and strength. The pact made with Agruonn allowed a group of lizardmen to hibernate in a specially protected chamber beneath the earth, only to awaken when the warmth returned to the land. In exchange, the descendants of these survivors would serve Agruonn's needs.[NEWLINE][NEWLINE]The "god" that the lizardmen knew as Agruonn is in fact the fallen angel Aeron. The lizardmen he saved from Mulcarn - now known as the Cualli - are bound to his service, with the strongest and most ruthless of their kind being his most favoured servants. Once known as an angel of strength, Aeron's nature now is bloodthirsty and selfish and this is reflected in the nature of the Cualli.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CIV_CUALLI_STRATEGY</Tag>
+		<English>Complexity: Advanced
+Blood for the Lizard god.
+
+[ICON_BULLET]Civics: The Cualli start with the civic Blood and Sacrifice, which allows them to capture slaves and to whip populations for production at the very start of the game. To make the most of this advantage, you will want to complete as many units and buildings as possible by sacrificing pops.
+[ICON_BULLET]Domain: The Cualli transform their terrain over time into swampy jungles, giving high base yields but being unable to improve on them. This provides a large amount of food and commerce passively, which feeds into the whipping of Blood and Sacrifice.
+[ICON_BULLET]Military: The Cualli focus on rogue and priest hybrid units, with a support line of ranged blowpipe users to defend their jungles. 
+[ICON_BULLET]Religion: The Cualli follow a cult of Aeron, meaning that they can not adopt one of the main religions; instead, they gain unique buildings and priests to support this cult of blood and murder.
+[ICON_BULLET]Crime: The Cualli have a high affinity for crime and if balanced carefully, can greatly benefit their society.</English>
+		<French>Complexity: Advanced
+Blood for the Lizard god.
+
+[ICON_BULLET]Civics: The Cualli start with the civic Blood and Sacrifice, which allows them to capture slaves and to whip populations for production at the very start of the game. To make the most of this advantage, you will want to complete as many units and buildings as possible by sacrificing pops.
+[ICON_BULLET]Domain: The Cualli transform their terrain over time into swampy jungles, giving high base yields but being unable to improve on them. This provides a large amount of food and commerce passively, which feeds into the whipping of Blood and Sacrifice.
+[ICON_BULLET]Military: The Cualli focus on rogue and priest hybrid units, with a support line of ranged blowpipe users to defend their jungles. 
+[ICON_BULLET]Religion: The Cualli follow a cult of Aeron, meaning that they can not adopt one of the main religions; instead, they gain unique buildings and priests to support this cult of blood and murder.
+[ICON_BULLET]Crime: The Cualli have a high affinity for crime and if balanced carefully, can greatly benefit their society.</French>
+		<German>Complexity: Advanced
+Blood for the Lizard god.
+
+[ICON_BULLET]Civics: The Cualli start with the civic Blood and Sacrifice, which allows them to capture slaves and to whip populations for production at the very start of the game. To make the most of this advantage, you will want to complete as many units and buildings as possible by sacrificing pops.
+[ICON_BULLET]Domain: The Cualli transform their terrain over time into swampy jungles, giving high base yields but being unable to improve on them. This provides a large amount of food and commerce passively, which feeds into the whipping of Blood and Sacrifice.
+[ICON_BULLET]Military: The Cualli focus on rogue and priest hybrid units, with a support line of ranged blowpipe users to defend their jungles. 
+[ICON_BULLET]Religion: The Cualli follow a cult of Aeron, meaning that they can not adopt one of the main religions; instead, they gain unique buildings and priests to support this cult of blood and murder.
+[ICON_BULLET]Crime: The Cualli have a high affinity for crime and if balanced carefully, can greatly benefit their society.</German>
+		<Italian>Complexity: Advanced
+Blood for the Lizard god.
+
+[ICON_BULLET]Civics: The Cualli start with the civic Blood and Sacrifice, which allows them to capture slaves and to whip populations for production at the very start of the game. To make the most of this advantage, you will want to complete as many units and buildings as possible by sacrificing pops.
+[ICON_BULLET]Domain: The Cualli transform their terrain over time into swampy jungles, giving high base yields but being unable to improve on them. This provides a large amount of food and commerce passively, which feeds into the whipping of Blood and Sacrifice.
+[ICON_BULLET]Military: The Cualli focus on rogue and priest hybrid units, with a support line of ranged blowpipe users to defend their jungles. 
+[ICON_BULLET]Religion: The Cualli follow a cult of Aeron, meaning that they can not adopt one of the main religions; instead, they gain unique buildings and priests to support this cult of blood and murder.
+[ICON_BULLET]Crime: The Cualli have a high affinity for crime and if balanced carefully, can greatly benefit their society.</Italian>
+		<Spanish>Complexity: Advanced
+Blood for the Lizard god.
+
+[ICON_BULLET]Civics: The Cualli start with the civic Blood and Sacrifice, which allows them to capture slaves and to whip populations for production at the very start of the game. To make the most of this advantage, you will want to complete as many units and buildings as possible by sacrificing pops.
+[ICON_BULLET]Domain: The Cualli transform their terrain over time into swampy jungles, giving high base yields but being unable to improve on them. This provides a large amount of food and commerce passively, which feeds into the whipping of Blood and Sacrifice.
+[ICON_BULLET]Military: The Cualli focus on rogue and priest hybrid units, with a support line of ranged blowpipe users to defend their jungles. 
+[ICON_BULLET]Religion: The Cualli follow a cult of Aeron, meaning that they can not adopt one of the main religions; instead, they gain unique buildings and priests to support this cult of blood and murder.
+[ICON_BULLET]Crime: The Cualli have a high affinity for crime and if balanced carefully, can greatly benefit their society.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_LEADER_CUAI_IXL</Tag>
 		<English>Cuai-Ixl</English>
 		<French>Cuai-Ixl</French>

@@ -54,6 +54,44 @@
 		<Spanish>Hianthrogh stood upon the highest level of the temple-palace and looked to the burning horizon. The Sheaim approached Nochtli in force. Barbaric warriors, priests of dark power and otherworldly creatures filled their ranks. Within hours they would breach the wall of jungle and be upon the Mazatl capital. Smoke filled the air, as the sense of despair filled the hearts of the Mazatl. Below him, the warriors of Nochtli prepared a desperate defence. They could not hope to stand for long, but they would stand for as long as they could.[NEWLINE][NEWLINE]The shards of Coatlann - one of their most important symbols - had been transported away to another city. Preparations were being made for a second stand there, but there was no time. Unless Nochtli could stand, the Sheaim would sweep through the Mazatl empire. There was little chance to defend the city however, as the Sheaim had constructed great machines of war and wielded magic that could strike down their defenders whilst they stood upon the tall walls.[NEWLINE][NEWLINE]No, the enemy knew how to destroy cities well enough. Nochtli could not be defended. If defense is not possible and retreat unthinkable, the only recourse is... [PARAGRAPH]"We shall attack them as they approach" stated Hianthrogh to the temple-guards closest to him. "Carry my words to the warriors, abandon the defense preparations, set scouts upon the trails and prepare to ambush the Sheaim forces as they approach. We shall fight them in the burning jungle and they shall know of our resolve."[NEWLINE][NEWLINE]Few of Hianthrogh's warriors survived that day. The jungle and the city of Nochtli burned for days afterwards, but the toll exacted upon the Sheaim gave Tebryn Arbandi reason to pause. He had conquered a city stuck amongst deep swamp and charred jungle, which provided him little benefit. In exchange he had expended a large portion of his southern forces. His forces already depleted, he could expect the next assault against the lizards to be even more costly. The cost outweighed the benefit - for now, the lizards could keep their swamp. There were greater foes that were easier to topple.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CIV_MAZATL_STRATEGY</Tag>
+		<English>Complexity: Standard
+Jungle Paradise.
+
+[ICON_BULLET]Domain: The Mazatl Lizardfolk spread the seeds of the jungle all through their domain, causing swamps and overgrowth to spring up everywhere. They can not build improvements on these swamps, but they passively gain large yields of food and commerce from them, allowing them to focus on other tasks.
+[ICON_BULLET]Economy: The Mazatl have a skill for trade, with their palace and unique building, the Barter House, providing bonuses to trade yield, and this goes perfectly with their unique civic, [LINK=CIVIC_LOST_LANDS]Lost Lands[\LINK].
+[ICON_BULLET]Military: The primary bulk of the Mazatl army is the Javelin Throwers and poisoned Blowpipes of their ranged unit line. But the real show stoppers are the [LINK=UNIT_WYVERN]Wyverns[\LINK]; Available at Priesthood, the Mazatl are able to have up to nine wyverns and twelve [LINK=UNIT_WYVERN_GUARDIAN]Wyvern Guardians[\LINK] under their command.
+[ICON_BULLET]Religion: The Mazatl have unique versions of The Runes of Kilmorph and the Empyrean religions: The Sacellum of Kalshekk and the Secellum of Omorr, which grants access to priests with atypical spells at their disposal.</English>
+		<French>Complexity: Standard
+Jungle Paradise.
+
+[ICON_BULLET]Domain: The Mazatl Lizardfolk spread the seeds of the jungle all through their domain, causing swamps and overgrowth to spring up everywhere. They can not build improvements on these swamps, but they passively gain large yields of food and commerce from them, allowing them to focus on other tasks.
+[ICON_BULLET]Economy: The Mazatl have a skill for trade, with their palace and unique building, the Barter House, providing bonuses to trade yield, and this goes perfectly with their unique civic, [LINK=CIVIC_LOST_LANDS]Lost Lands[\LINK].
+[ICON_BULLET]Military: The primary bulk of the Mazatl army is the Javelin Throwers and poisoned Blowpipes of their ranged unit line. But the real show stoppers are the [LINK=UNIT_WYVERN]Wyverns[\LINK]; Available at Priesthood, the Mazatl are able to have up to nine wyverns and twelve [LINK=UNIT_WYVERN_GUARDIAN]Wyvern Guardians[\LINK] under their command.
+[ICON_BULLET]Religion: The Mazatl have unique versions of The Runes of Kilmorph and the Empyrean religions: The Sacellum of Kalshekk and the Secellum of Omorr, which grants access to priests with atypical spells at their disposal.</French>
+		<German>Complexity: Standard
+Jungle Paradise.
+
+[ICON_BULLET]Domain: The Mazatl Lizardfolk spread the seeds of the jungle all through their domain, causing swamps and overgrowth to spring up everywhere. They can not build improvements on these swamps, but they passively gain large yields of food and commerce from them, allowing them to focus on other tasks.
+[ICON_BULLET]Economy: The Mazatl have a skill for trade, with their palace and unique building, the Barter House, providing bonuses to trade yield, and this goes perfectly with their unique civic, [LINK=CIVIC_LOST_LANDS]Lost Lands[\LINK].
+[ICON_BULLET]Military: The primary bulk of the Mazatl army is the Javelin Throwers and poisoned Blowpipes of their ranged unit line. But the real show stoppers are the [LINK=UNIT_WYVERN]Wyverns[\LINK]; Available at Priesthood, the Mazatl are able to have up to nine wyverns and twelve [LINK=UNIT_WYVERN_GUARDIAN]Wyvern Guardians[\LINK] under their command.
+[ICON_BULLET]Religion: The Mazatl have unique versions of The Runes of Kilmorph and the Empyrean religions: The Sacellum of Kalshekk and the Secellum of Omorr, which grants access to priests with atypical spells at their disposal.</German>
+		<Italian>Complexity: Standard
+Jungle Paradise.
+
+[ICON_BULLET]Domain: The Mazatl Lizardfolk spread the seeds of the jungle all through their domain, causing swamps and overgrowth to spring up everywhere. They can not build improvements on these swamps, but they passively gain large yields of food and commerce from them, allowing them to focus on other tasks.
+[ICON_BULLET]Economy: The Mazatl have a skill for trade, with their palace and unique building, the Barter House, providing bonuses to trade yield, and this goes perfectly with their unique civic, [LINK=CIVIC_LOST_LANDS]Lost Lands[\LINK].
+[ICON_BULLET]Military: The primary bulk of the Mazatl army is the Javelin Throwers and poisoned Blowpipes of their ranged unit line. But the real show stoppers are the [LINK=UNIT_WYVERN]Wyverns[\LINK]; Available at Priesthood, the Mazatl are able to have up to nine wyverns and twelve [LINK=UNIT_WYVERN_GUARDIAN]Wyvern Guardians[\LINK] under their command.
+[ICON_BULLET]Religion: The Mazatl have unique versions of The Runes of Kilmorph and the Empyrean religions: The Sacellum of Kalshekk and the Secellum of Omorr, which grants access to priests with atypical spells at their disposal.</Italian>
+		<Spanish>Complexity: Standard
+Jungle Paradise.
+
+[ICON_BULLET]Domain: The Mazatl Lizardfolk spread the seeds of the jungle all through their domain, causing swamps and overgrowth to spring up everywhere. They can not build improvements on these swamps, but they passively gain large yields of food and commerce from them, allowing them to focus on other tasks.
+[ICON_BULLET]Economy: The Mazatl have a skill for trade, with their palace and unique building, the Barter House, providing bonuses to trade yield, and this goes perfectly with their unique civic, [LINK=CIVIC_LOST_LANDS]Lost Lands[\LINK].
+[ICON_BULLET]Military: The primary bulk of the Mazatl army is the Javelin Throwers and poisoned Blowpipes of their ranged unit line. But the real show stoppers are the [LINK=UNIT_WYVERN]Wyverns[\LINK]; Available at Priesthood, the Mazatl are able to have up to nine wyverns and twelve [LINK=UNIT_WYVERN_GUARDIAN]Wyvern Guardians[\LINK] under their command.
+[ICON_BULLET]Religion: The Mazatl have unique versions of The Runes of Kilmorph and the Empyrean religions: The Sacellum of Kalshekk and the Secellum of Omorr, which grants access to priests with atypical spells at their disposal.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_SPELL_FOUND_ORDER_OF_THE_WYVERN</Tag>
 		<English>Found Order of the Wyvern</English>
 		<French>Fonder l'Ordre des Wyvernes</French>

@@ -31,7 +31,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SIDAR_STRATEGY</Tag>
-		<English>The Sidar are eternal souls, hidden in the mists.
+		<English>Complexity: Basic
+The Sidar are eternal souls, hidden in the mists.
 
 [ICON_BULLET]Any living Sidar unit that reaches level 6 can become a [LINK=UNIT_SHADE]Shade[\LINK], which lets them retire in a city as any Great Person specialist (except Great Prophet and Healer). Sidar strategy thus typically aims to produce plenty of units, keep them alive, and gain levels on them in any way possible.
 [ICON_BULLET]Sidar units that continue being used past level 6 may instead take the [LINK=PROMOTION_GREATER_SHADE]Greater Shade[\LINK] promotion, which gives them a chance to avoid death. The chance is 5% times the unit's level, capped at 95%.
@@ -41,7 +42,8 @@
 [ICON_BULLET]Sidar territory gradually fills with Mist, which blocks entry to units with less than 3 perception, which is most of them.
 
 Author - 'Doesnt'</English>
-		<French>The Sidar are eternal souls, hidden in the mists.
+		<French>Complexity: Basic
+The Sidar are eternal souls, hidden in the mists.
 
 [ICON_BULLET]Any living Sidar unit that reaches level 6 can become a [LINK=UNIT_SHADE]Shade[\LINK], which lets them retire in a city as any Great Person specialist (except Great Prophet and Healer). Sidar strategy thus typically aims to produce plenty of units, keep them alive, and gain levels on them in any way possible.
 [ICON_BULLET]Sidar units that continue being used past level 6 may instead take the [LINK=PROMOTION_GREATER_SHADE]Greater Shade[\LINK] promotion, which gives them a chance to avoid death. The chance is 5% times the unit's level, capped at 95%.
@@ -51,7 +53,8 @@ Author - 'Doesnt'</English>
 [ICON_BULLET]Sidar territory gradually fills with Mist, which blocks entry to units with less than 3 perception, which is most of them.
 
 Author - 'Doesnt'</French>
-		<German>The Sidar are eternal souls, hidden in the mists.
+		<German>Complexity: Basic
+The Sidar are eternal souls, hidden in the mists.
 
 [ICON_BULLET]Any living Sidar unit that reaches level 6 can become a [LINK=UNIT_SHADE]Shade[\LINK], which lets them retire in a city as any Great Person specialist (except Great Prophet and Healer). Sidar strategy thus typically aims to produce plenty of units, keep them alive, and gain levels on them in any way possible.
 [ICON_BULLET]Sidar units that continue being used past level 6 may instead take the [LINK=PROMOTION_GREATER_SHADE]Greater Shade[\LINK] promotion, which gives them a chance to avoid death. The chance is 5% times the unit's level, capped at 95%.
@@ -61,7 +64,8 @@ Author - 'Doesnt'</French>
 [ICON_BULLET]Sidar territory gradually fills with Mist, which blocks entry to units with less than 3 perception, which is most of them.
 
 Author - 'Doesnt'</German>
-		<Italian>The Sidar are eternal souls, hidden in the mists.
+		<Italian>Complexity: Basic
+The Sidar are eternal souls, hidden in the mists.
 
 [ICON_BULLET]Any living Sidar unit that reaches level 6 can become a [LINK=UNIT_SHADE]Shade[\LINK], which lets them retire in a city as any Great Person specialist (except Great Prophet and Healer). Sidar strategy thus typically aims to produce plenty of units, keep them alive, and gain levels on them in any way possible.
 [ICON_BULLET]Sidar units that continue being used past level 6 may instead take the [LINK=PROMOTION_GREATER_SHADE]Greater Shade[\LINK] promotion, which gives them a chance to avoid death. The chance is 5% times the unit's level, capped at 95%.
@@ -71,7 +75,8 @@ Author - 'Doesnt'</German>
 [ICON_BULLET]Sidar territory gradually fills with Mist, which blocks entry to units with less than 3 perception, which is most of them.
 
 Author - 'Doesnt'</Italian>
-		<Spanish>The Sidar are eternal souls, hidden in the mists.
+		<Spanish>Complexity: Basic
+The Sidar are eternal souls, hidden in the mists.
 
 [ICON_BULLET]Any living Sidar unit that reaches level 6 can become a [LINK=UNIT_SHADE]Shade[\LINK], which lets them retire in a city as any Great Person specialist (except Great Prophet and Healer). Sidar strategy thus typically aims to produce plenty of units, keep them alive, and gain levels on them in any way possible.
 [ICON_BULLET]Sidar units that continue being used past level 6 may instead take the [LINK=PROMOTION_GREATER_SHADE]Greater Shade[\LINK] promotion, which gives them a chance to avoid death. The chance is 5% times the unit's level, capped at 95%.

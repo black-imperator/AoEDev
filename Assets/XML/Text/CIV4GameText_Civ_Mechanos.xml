@@ -38,6 +38,54 @@
 		<Spanish>[TAB]The beginning of the Mechanos dates back to many years before the Age of Rebirth. With dragons and warring gods causing destruction all over Erebus, some people refused to pay respect to any god. Such beliefs before the Compact were almost inevitable death sentences, as without the protection of the patron god no city would survive more than a few weeks.[PARAGRAPH:1] Much has changed after the signing of the Compact at the Seven Pines. Still, only the most powerful individuals or groups would dare to speak their atheism openly. And even less would survive doing so, as they soon were attacked by joined crusaders of even conflicting faiths. In the eyes of priests, paladins, and eidolons, the only thing worse than followers of the opposite angel were those that refused to take part in the crusades and just wanted to be left alone. [PARAGRAPH:1]Then a second change arrived. Just before the Age of Ice, some of the unbelievers come into contact with dwarven engineers and were allowed to learn some of their secrets. This was a key to their survival. Steam engines allowed them not only to heat the caves that sheltered them during Age of Ice, but also to live quite comfortably despite severe weather. This, combined with human curiosity and ingenuity, led them to developing bigger and better engines and perfecting the technology.[PARAGRAPH:1]It was the first sign of a change. While the dwarven ideal is Arete - the perfection in the craft and dedication to the work, Mechanos, as they began to call themselves, adopted a new one: Bigger and Faster. Their machines lack the artistry of the dwarven craft, but ARE big and fast. Confident in their new power, the Mechanos emerged from their caves. Now they are refusing not only to pray to the gods, but also to use any of the aspects of the magic. They regard all spells as tainted with the gods' powers and manifestation of their will. Instead, they use mana nodes as a power source and feed refined mana to so called "mechanical spirits", cryptic beings that inhabit Mechanos machines.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CIV_MECHANOS_STRATEGY</Tag>
+		<English>Complexity: Standard
+Reject the gods, embrace innovation!
+
+[ICON_BULLET]Religion: The Mechanos reject the influence of the gods, instead choosing to trust in the human spirit and their own moral judgement. (can not adopt a religion.)
+[ICON_BULLET]Magic: The Mechanos have rejected magic as it flows from the gods... Kind of. They still have access to a wide range of spells for terraforming,sanctifying and disrupting magic through their techpriest and witchhunter units. 
+The Mechanos are still able to do something with Mana nodes. By building the Refinery, they are able to convert mana into refined mana, which helps power their technology... which is still somehow not using magic.
+[ICON_BULLET]Military: The Mechanos field the most advanced technological army in Erebus, from flamethrowers to steamtanks, their army has a hammer for every nail. One key part of their military doctrine involves loading their flying airships, [LINK=UNIT_THOPTER]Thopters[\LINK], with their artillery battery, the [LINK=UNIT_ORGAN_GUN]Organ Gun[\LINK] siege unit, and raining down doom from the skies on their enemies.
+[ICON_BULLET]Economy: The Mechanos are able to produce and make use of Electricity in their Power Plant unique buildings to help fuel their factories. And with the Clockwork Tower building, they are able to both boost their research and provide their units with the Resist Magic promotion.
+[ICON_BULLET]Worldspell: The Mechanos worldspell, Steamworks, is able to give you a large amount of beakers for every workshop, watermill, and windmill in your domain. As well as this, it also builds a world wonder in the city you cast it in that greatly increases tech and production while producing electricity.</English>
+		<French>Complexity: Standard
+Reject the gods, embrace innovation!
+
+[ICON_BULLET]Religion: The Mechanos reject the influence of the gods, instead choosing to trust in the human spirit and their own moral judgement. (can not adopt a religion.)
+[ICON_BULLET]Magic: The Mechanos have rejected magic as it flows from the gods... Kind of. They still have access to a wide range of spells for terraforming,sanctifying and disrupting magic through their techpriest and witchhunter units. 
+The Mechanos are still able to do something with Mana nodes. By building the Refinery, they are able to convert mana into refined mana, which helps power their technology... which is still somehow not using magic.
+[ICON_BULLET]Military: The Mechanos field the most advanced technological army in Erebus, from flamethrowers to steamtanks, their army has a hammer for every nail. One key part of their military doctrine involves loading their flying airships, [LINK=UNIT_THOPTER]Thopters[\LINK], with their artillery battery, the [LINK=UNIT_ORGAN_GUN]Organ Gun[\LINK] siege unit, and raining down doom from the skies on their enemies.
+[ICON_BULLET]Economy: The Mechanos are able to produce and make use of Electricity in their Power Plant unique buildings to help fuel their factories. And with the Clockwork Tower building, they are able to both boost their research and provide their units with the Resist Magic promotion.
+[ICON_BULLET]Worldspell: The Mechanos worldspell, Steamworks, is able to give you a large amount of beakers for every workshop, watermill, and windmill in your domain. As well as this, it also builds a world wonder in the city you cast it in that greatly increases tech and production while producing electricity.</French>
+		<German>Complexity: Standard
+Reject the gods, embrace innovation!
+
+[ICON_BULLET]Religion: The Mechanos reject the influence of the gods, instead choosing to trust in the human spirit and their own moral judgement. (can not adopt a religion.)
+[ICON_BULLET]Magic: The Mechanos have rejected magic as it flows from the gods... Kind of. They still have access to a wide range of spells for terraforming,sanctifying and disrupting magic through their techpriest and witchhunter units. 
+The Mechanos are still able to do something with Mana nodes. By building the Refinery, they are able to convert mana into refined mana, which helps power their technology... which is still somehow not using magic.
+[ICON_BULLET]Military: The Mechanos field the most advanced technological army in Erebus, from flamethrowers to steamtanks, their army has a hammer for every nail. One key part of their military doctrine involves loading their flying airships, [LINK=UNIT_THOPTER]Thopters[\LINK], with their artillery battery, the [LINK=UNIT_ORGAN_GUN]Organ Gun[\LINK] siege unit, and raining down doom from the skies on their enemies.
+[ICON_BULLET]Economy: The Mechanos are able to produce and make use of Electricity in their Power Plant unique buildings to help fuel their factories. And with the Clockwork Tower building, they are able to both boost their research and provide their units with the Resist Magic promotion.
+[ICON_BULLET]Worldspell: The Mechanos worldspell, Steamworks, is able to give you a large amount of beakers for every workshop, watermill, and windmill in your domain. As well as this, it also builds a world wonder in the city you cast it in that greatly increases tech and production while producing electricity.</German>
+		<Italian>Complexity: Standard
+Reject the gods, embrace innovation!
+
+[ICON_BULLET]Religion: The Mechanos reject the influence of the gods, instead choosing to trust in the human spirit and their own moral judgement. (can not adopt a religion.)
+[ICON_BULLET]Magic: The Mechanos have rejected magic as it flows from the gods... Kind of. They still have access to a wide range of spells for terraforming,sanctifying and disrupting magic through their techpriest and witchhunter units. 
+The Mechanos are still able to do something with Mana nodes. By building the Refinery, they are able to convert mana into refined mana, which helps power their technology... which is still somehow not using magic.
+[ICON_BULLET]Military: The Mechanos field the most advanced technological army in Erebus, from flamethrowers to steamtanks, their army has a hammer for every nail. One key part of their military doctrine involves loading their flying airships, [LINK=UNIT_THOPTER]Thopters[\LINK], with their artillery battery, the [LINK=UNIT_ORGAN_GUN]Organ Gun[\LINK] siege unit, and raining down doom from the skies on their enemies.
+[ICON_BULLET]Economy: The Mechanos are able to produce and make use of Electricity in their Power Plant unique buildings to help fuel their factories. And with the Clockwork Tower building, they are able to both boost their research and provide their units with the Resist Magic promotion.
+[ICON_BULLET]Worldspell: The Mechanos worldspell, Steamworks, is able to give you a large amount of beakers for every workshop, watermill, and windmill in your domain. As well as this, it also builds a world wonder in the city you cast it in that greatly increases tech and production while producing electricity.</Italian>
+		<Spanish>Complexity: Standard
+Reject the gods, embrace innovation!
+
+[ICON_BULLET]Religion: The Mechanos reject the influence of the gods, instead choosing to trust in the human spirit and their own moral judgement. (can not adopt a religion.)
+[ICON_BULLET]Magic: The Mechanos have rejected magic as it flows from the gods... Kind of. They still have access to a wide range of spells for terraforming,sanctifying and disrupting magic through their techpriest and witchhunter units. 
+The Mechanos are still able to do something with Mana nodes. By building the Refinery, they are able to convert mana into refined mana, which helps power their technology... which is still somehow not using magic.
+[ICON_BULLET]Military: The Mechanos field the most advanced technological army in Erebus, from flamethrowers to steamtanks, their army has a hammer for every nail. One key part of their military doctrine involves loading their flying airships, [LINK=UNIT_THOPTER]Thopters[\LINK], with their artillery battery, the [LINK=UNIT_ORGAN_GUN]Organ Gun[\LINK] siege unit, and raining down doom from the skies on their enemies.
+[ICON_BULLET]Economy: The Mechanos are able to produce and make use of Electricity in their Power Plant unique buildings to help fuel their factories. And with the Clockwork Tower building, they are able to both boost their research and provide their units with the Resist Magic promotion.
+[ICON_BULLET]Worldspell: The Mechanos worldspell, Steamworks, is able to give you a large amount of beakers for every workshop, watermill, and windmill in your domain. As well as this, it also builds a world wonder in the city you cast it in that greatly increases tech and production while producing electricity.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_LEADER_VEROCCHIO</Tag>
 		<English>Verocchio</English>
 		<French>Verocchio</French>
