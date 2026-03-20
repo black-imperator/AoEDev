@@ -1953,6 +1953,10 @@
 					<BuildingType>BUILDING_STAG_COPSE</BuildingType>
 				</Building>
 				<Building>
+					<BuildingClassType>BUILDINGCLASS_WEREWOLF_CULT</BuildingClassType>
+					<BuildingType>BUILDING_WEREWOLF_CULT</BuildingType>
+				</Building>
+				<Building>
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 					<BuildingType>BUILDING_PALACE_DOVIELLO</BuildingType>
 				</Building>

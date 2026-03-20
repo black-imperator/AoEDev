@@ -882,5 +882,23 @@
 			<bUnique>0</bUnique>
 			<DefaultImprovement>IMPROVEMENT_STYGIAN_GRAND_SPIRE</DefaultImprovement>
 		</ImprovementClassInfo>
+		<ImprovementClassInfo><!-- Werewolf Den (I)-->
+			<Type>IMPROVEMENTCLASS_WEREWOLF_DEN</Type>
+			<Description></Description>
+			<bUnique>0</bUnique>
+			<DefaultImprovement>IMPROVEMENT_WEREWOLF_DEN</DefaultImprovement>
+		</ImprovementClassInfo>
+		<ImprovementClassInfo><!-- Werewolf Pack(II)-->
+			<Type>IMPROVEMENTCLASS_WEREWOLF_PACK</Type>
+			<Description></Description>
+			<bUnique>0</bUnique>
+			<DefaultImprovement>IMPROVEMENT_WEREWOLF_PACK</DefaultImprovement>
+		</ImprovementClassInfo>
+		<ImprovementClassInfo><!-- Werewolf Clan(III)-->
+			<Type>IMPROVEMENTCLASS_WEREWOLF_CLAN</Type>
+			<Description></Description>
+			<bUnique>0</bUnique>
+			<DefaultImprovement>IMPROVEMENT_WEREWOLF_CLAN</DefaultImprovement>
+		</ImprovementClassInfo>
 	</ImprovementClassInfos>
 </Civ4ImprovementClassInfos>

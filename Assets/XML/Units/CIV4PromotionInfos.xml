@@ -12492,6 +12492,7 @@
 				<Promotion>PROMOTION_LOYALTY</Promotion>
 				<Promotion>PROMOTION_LOYALTY3</Promotion>
 				<Promotion>PROMOTION_ESTRANGED</Promotion>
+				<Promotion>PROMOTION_WEREWOLF_FORM2</Promotion>
 			</PromotionExcludes>
 			<UnitCombats>
 				<UnitCombat>
@@ -14442,13 +14443,91 @@
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Pack Alpha -->
 			<Type>PROMOTION_PACK_ALPHA</Type>
-			<Description>TXT_KEY_PROMOTION_PACK_ALPHA</Description>
+			<PrereqPromotionORs>
+				<PrereqPromotionOR>
+					<PromotionType>PROMOTION_WEREWOLF</PromotionType>
+					<iPrereqApplications>1</iPrereqApplications>
+				</PrereqPromotionOR>
+			</PrereqPromotionORs>
+			<PromotionExcludes>
+				<Promotion>PROMOTION_WEREWOLF_FORM2</Promotion>
+			</PromotionExcludes>
+			<PromotionOverwrites>
+				<Promotion>PROMOTION_WEREWOLF_FORM2</Promotion>
+			</PromotionOverwrites>
 			<MinionPromotions>
 				<PromotionType>PROMOTION_LOYALTY2</PromotionType>
 			</MinionPromotions>
-			<iMinLevel>-1</iMinLevel>
+			<bAutoAcquire>1</bAutoAcquire>
+			<bNoXP>1</bNoXP>
+			<iCommandLimit>2</iCommandLimit>
+			<iCommandRange>1</iCommandRange>
+			<iExtraCombatStr>1</iExtraCombatStr>
+			<iCombatPercent>15</iCombatPercent>
+			<iMovesChange>1</iMovesChange>
+			<iCombatHealPercent>5</iCombatHealPercent>
+			<iExtraPerception>1</iExtraPerception>
+			<iMinLevel>6</iMinLevel>	
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ANIMAL</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_BEAST</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
 			<Button>Art/Interface/Buttons/Promotions/PackAlpha.dds</Button>
-		</PromotionInfo>
+		</PromotionInfo>	
 		<PromotionInfo>		<!-- Pack Leader -->
 			<Type>PROMOTION_PACK_LEADER</Type>
 			<Description>TXT_KEY_PROMOTION_PACK_LEADER</Description>
@@ -18525,7 +18604,55 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
+			<iPromotionRandomApplyChance>3</iPromotionRandomApplyChance>
+			<PromotionRandomApply>PROMOTION_WEREWOLF_FORM2</PromotionRandomApply>
 				<iMinLevel>-1</iMinLevel>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Werewolf Form -->
+			<Type>PROMOTION_WEREWOLF_FORM1</Type>
+			<Description>TXT_KEY_PROMOTION_WEREWOLF_FORM1</Description>
+			<bNoXP>1</bNoXP>
+			<Button>Art/Interface/Buttons/Promotions/BloodMoonTransform.dds</Button>
+			<ReplaceArtType>ART_DEF_UNIT_RAVENOUS_WEREWOLF</ReplaceArtType>
+			<bFreeUnit>1</bFreeUnit>
+			<bNoSupply>1</bNoSupply>
+			<iExtraPerception>2</iExtraPerception>
+			<iExtraCombatStr>1</iExtraCombatStr>
+			<iCombatPercent>15</iCombatPercent>
+			<iMovesChange>2</iMovesChange>
+			<iCombatHealPercent>10</iCombatHealPercent>
+			<iPromotionDuration>1</iPromotionDuration>
+			<PromotionDegradesTo>
+				<Promotion>PROMOTION_WEREWOLF_FORM2</Promotion>
+			</PromotionDegradesTo>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Werewolf Form - Berserk -->
+			<Type>PROMOTION_WEREWOLF_FORM2</Type>
+			<Description>TXT_KEY_PROMOTION_WEREWOLF_FORM2</Description>
+			<bNoXP>1</bNoXP>
+			<Button>Art/Interface/Buttons/Promotions/BloodMoonRage.dds</Button>
+			<ReplaceArtType>ART_DEF_UNIT_RAVENOUS_WEREWOLF</ReplaceArtType>
+			<iExtraCombatStr>1</iExtraCombatStr>
+			<iCombatPercent>15</iCombatPercent>
+			<iMovesChange>2</iMovesChange>
+			<iExtraPerception>2</iExtraPerception>
+			<iCombatHealPercent>10</iCombatHealPercent>
+			<iPromotionDuration>3</iPromotionDuration>
+			<bAllowAttacks>1</bAllowAttacks>
+			<bFreeUnit>1</bFreeUnit>
+			<bNoSupply>1</bNoSupply>
+			<bEnraged>1</bEnraged>
+			<iVisibilityChange>2</iVisibilityChange>
+			<PromotionDegradesTo>
+				<Promotion>PROMOTION_WEREWOLF_FORM3</Promotion>
+			</PromotionDegradesTo>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Werewolf Form - Recovery -->
+			<Type>PROMOTION_WEREWOLF_FORM3</Type>
+			<Description>TXT_KEY_PROMOTION_WEREWOLF_FORM3</Description>
+			<bNoXP>1</bNoXP>
+			<Button>Art/Interface/Buttons/Promotions/BloodMoonRecover.dds</Button>
+			<iPromotionDuration>5</iPromotionDuration>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Werewolf - Temp -->
 			<Type>PROMOTION_TEMP_WEREWOLF</Type>

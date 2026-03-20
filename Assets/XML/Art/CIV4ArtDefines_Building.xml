@@ -4309,6 +4309,16 @@
 			<Button>Art/Interface/Buttons/Units/Stag.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_WEREWOLF_CULT</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>7.0</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Structures/Improvements/Lairs/Gorilla Den/ScorpionNest.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/WerewolfCult.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_FACTORY_MECHANOS</Type>
 			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>

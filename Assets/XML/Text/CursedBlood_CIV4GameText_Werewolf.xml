@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Units -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_BLOODMOON</Tag>
+		<English>Blood Frenzy</English>
+		<French>Blood Frenzy</French>
+		<German>Blood Frenzy</German>
+		<Italian>Blood Frenzy</Italian>
+		<Spanish>Blood Frenzy</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_BLOODMOON_HELP</Tag>
+		<English>[ICON_BULLET]Gain strength and speed, but you can't control it for long...</English>
+		<French>[ICON_BULLET]Gain strength and speed, but you can't control it for long...</French>
+		<German>[ICON_BULLET]Gain strength and speed, but you can't control it for long...</German>
+		<Italian>[ICON_BULLET]Gain strength and speed, but you can't control it for long...</Italian>
+		<Spanish>[ICON_BULLET]Gain strength and speed, but you can't control it for long...</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_WEREWOLF_FORM1</Tag>
+		<English>Werewolf Transformed</English>
+		<French>Werewolf Transformed</French>
+		<German>Werewolf Transformed</German>
+		<Italian>Werewolf Transformed</Italian>
+		<Spanish>Werewolf Transformed</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_WEREWOLF_FORM2</Tag>
+		<English>Werewolf Enraged</English>
+		<French>Werewolf Enraged</French>
+		<German>Werewolf Enraged</German>
+		<Italian>Werewolf Enraged</Italian>
+		<Spanish>Werewolf Enraged</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_WEREWOLF_FORM3</Tag>
+		<English>Werewolf Recovering</English>
+		<French>Werewolf Recovering</French>
+		<German>Werewolf Recovering</German>
+		<Italian>Werewolf Recovering</Italian>
+		<Spanish>Werewolf Recovering</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_WEREWOLF_DEN</Tag>
+		<English>Werewolf Den (I)</English>
+		<French>Werewolf Den (I)</French>
+		<German>Werewolf Den (I)</German>
+		<Italian>Werewolf Den (I)</Italian>
+		<Spanish>Werewolf Den (I)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_WEREWOLF_DEN_PEDIA</Tag>
+		<English>Broken bones, some animal, some not, litter the entryway to this dank cave, the walls and rocks nearby marked with crude symbols drawn in dried blood and excrement, and through it all an overwhelming smell of wet dog.</English>
+		<French>Broken bones, some animal, some not, litter the entryway to this dank cave, the walls and rocks nearby marked with crude symbols drawn in dried blood and excrement, and through it all an overwhelming smell of wet dog.</French>
+		<German>Broken bones, some animal, some not, litter the entryway to this dank cave, the walls and rocks nearby marked with crude symbols drawn in dried blood and excrement, and through it all an overwhelming smell of wet dog.</German>
+		<Italian>Broken bones, some animal, some not, litter the entryway to this dank cave, the walls and rocks nearby marked with crude symbols drawn in dried blood and excrement, and through it all an overwhelming smell of wet dog.</Italian>
+		<Spanish>Broken bones, some animal, some not, litter the entryway to this dank cave, the walls and rocks nearby marked with crude symbols drawn in dried blood and excrement, and through it all an overwhelming smell of wet dog.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_WEREWOLF_PACK</Tag>
+		<English>Werewolf Pack (II)</English>
+		<French>Werewolf Pack (II)</French>
+		<German>Werewolf Pack (II)</German>
+		<Italian>Werewolf Pack (II)</Italian>
+		<Spanish>Werewolf Pack (II)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_WEREWOLF_CLAN</Tag>
+		<English>Werewolf Clan (III)</English>
+		<French>Werewolf Clan (III)</French>
+		<German>Werewolf Clan (III)</German>
+		<Italian>Werewolf Clan (III)</Italian>
+		<Spanish>Werewolf Clan (III)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WEREWOLF_CULT</Tag>
+		<English>Werewolf Cult</English>
+		<French>Werewolf Cult</French>
+		<German>Werewolf Cult</German>
+		<Italian>Werewolf Cult</Italian>
+		<Spanish>Werewolf Cult</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WEREWOLF_CULT_PEDIA</Tag>
+		<English>In Baron Duinhalfmorn's realm Werewolves are revered and a lucky few acolytes are "inducted" into the fold.</English>
+		<French>In Baron Duinhalfmorn's realm Werewolves are revered and a lucky few acolytes are "inducted" into the fold.</French>
+		<German>In Baron Duinhalfmorn's realm Werewolves are revered and a lucky few acolytes are "inducted" into the fold.</German>
+		<Italian>In Baron Duinhalfmorn's realm Werewolves are revered and a lucky few acolytes are "inducted" into the fold.</Italian>
+		<Spanish>In Baron Duinhalfmorn's realm Werewolves are revered and a lucky few acolytes are "inducted" into the fold.</Spanish>
+	</TEXT>
+</Civ4GameText>

@@ -2699,6 +2699,19 @@
 			<DefaultBuilding>BUILDING_STAG_COPSE</DefaultBuilding>
 			<VictoryThresholds/>
 		</BuildingClassInfo>
+		<BuildingClassInfo> <!-- Werewolf Doviello UB -->
+			<Type>BUILDINGCLASS_WEREWOLF_CULT</Type>
+			<Description>TXT_KEY_BUILDING_WEREWOLF_CULT</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_WEREWOLF_CULT</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
 		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_STEAMWORKS</Type>
 			<Description>TXT_KEY_BUILDING_STEAMWORKS</Description>

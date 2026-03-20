@@ -2466,6 +2466,46 @@
 			</Flavors>
 			<bGraphicalOnly>1</bGraphicalOnly>
 		</BuildingInfo>
+		<BuildingInfo>		<!-- Werewolf Cult                                                Doviello Duinhalfmorn UB -->
+			<BuildingClass>BUILDINGCLASS_WEREWOLF_CULT</BuildingClass>
+			<Type>BUILDING_WEREWOLF_CULT</Type>
+			<Description>TXT_KEY_BUILDING_WEREWOLF_CULT</Description>
+			<Civilopedia>TXT_KEY_BUILDING_WEREWOLF_CULT_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_WEREWOLF_CULT</ArtDefineTag>
+			<PrereqTech>TECH_WAY_OF_THE_WICKED</PrereqTech>
+			<PrereqTrait>TRAIT_LYCANTHROPIC</PrereqTrait>
+			<FreePromotion>PROMOTION_WEREWOLF</FreePromotion>
+			<bNeverCapture>1</bNeverCapture>
+			<bNukeImmune>0</bNukeImmune>
+			<iCost>150</iCost>
+			<iHurryCostModifier>0</iHurryCostModifier>
+			<iAdvancedStartCost>-1</iAdvancedStartCost>
+			<iConquestProb>0</iConquestProb>
+			<iAsset>6</iAsset>
+			<fVisibilityPriority>10</fVisibilityPriority>
+			<ObsoleteSafeCommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+			</ObsoleteSafeCommerceChanges>
+			<CommerceModifiers>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+			</CommerceModifiers>
+			<ConstructSound>AS2D_BUILD_LIBRARY</ConstructSound>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+			<iFreePromotionPick>0</iFreePromotionPick>
+			<iGlobalResistEnemyModify>0</iGlobalResistEnemyModify>
+			<iGlobalResistModify>0</iGlobalResistModify>
+			<FreeBonus2>NONE</FreeBonus2>
+		</BuildingInfo>
 		<BuildingInfo>		<!-- Bear Cave                                                  Doviello UB -->
 			<BuildingClass>BUILDINGCLASS_DANCING_BEAR</BuildingClass>
 			<Type>BUILDING_BEAR_CAVE</Type>

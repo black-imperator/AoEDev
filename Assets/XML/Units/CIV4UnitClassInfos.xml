@@ -4663,6 +4663,24 @@
 			<DefaultUnit>UNIT_KEZEF</DefaultUnit>
 			<iMercenaryWeight>0</iMercenaryWeight>
 		</UnitClassInfo>
+		<UnitClassInfo> <!-- Ravenous Werewolf -->
+			<Type>UNITCLASS_RAVENOUS_WEREWOLF</Type>
+			<Description>TXT_KEY_UNIT_RAVENOUS_WEREWOLF</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_RAVENOUS_WEREWOLF</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo> <!-- Ravenous Werewolf -->
+			<Type>UNITCLASS_GREATER_WEREWOLF</Type>
+			<Description>TXT_KEY_UNIT_RAVENOUS_WEREWOLF</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_GREATER_WEREWOLF</DefaultUnit>
+		</UnitClassInfo>
 
 		</UnitClassInfos>
 	</Civ4UnitClassInfos>

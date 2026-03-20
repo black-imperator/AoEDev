@@ -7217,6 +7217,25 @@ def effectWanderingCurse(caster):
 def effectFieldExercise(caster):
 	caster.changeExperienceTimes100(200/(caster.getLevel()*caster.getLevel()+1),-1,False,False,False)
 
+def reqBloodMoon(caster):
+	if caster.isHasPromotion(getInfoType('PROMOTION_WEREWOLF_FORM1')):
+		return False
+	if caster.isHasPromotion(getInfoType('PROMOTION_WEREWOLF_FORM2')):
+		return False
+	if caster.isHasPromotion(getInfoType('PROMOTION_WEREWOLF_FORM3')):
+		return False
+	if caster.isHasPromotion(getInfoType('PROMOTION_LOYALTY2')):
+		return False
+	if caster.isHasPromotion(getInfoType('PROMOTION_PACK_ALPHA')):
+		return False
+	if caster.getUnitType() == getInfoType('UNIT_DUIN'):
+		return False
+	if caster.getUnitType() == getInfoType('UNIT_DOVIELLO_WEREWOLF'):
+		return False
+	if caster.getUnitType() == getInfoType('UNIT_RAVENOUS_WEREWOLF'):
+		return False
+	return True
+
 def postCombatWinWerewolf(pCaster, pOpponent):
 	if pOpponent.isAlive() and pOpponent.canDefend(pOpponent.plot()):                                       #Can only convert Living Combat Units
 		if pCaster.baseCombatStr() < gc.getUnitInfo(pCaster.getUnitType()).getCombat() * 3 / 2:             # If the werewolf has not attained maximal strength (50% bonus)
