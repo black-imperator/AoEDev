@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Units -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>		
+		<Tag>TXT_KEY_PROMOTION_WARBEAST_HANDLING1</Tag>
+		<English>Warbeast Handling 1</English>
+		<French>Warbeast Handling 1</French>
+		<German>Warbeast Handling 1</German>
+		<Italian>Warbeast Handling 1</Italian>
+		<Spanish>Warbeast Handling 1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_WARBEAST_HANDLING2</Tag>
+		<English>Warbeast Handling 2</English>
+		<French>Warbeast Handling 2</French>
+		<German>Warbeast Handling 2</German>
+		<Italian>Warbeast Handling 2</Italian>
+		<Spanish>Warbeast Handling 2</Spanish>
+	</TEXT>
+	<TEXT>		
+		<Tag>TXT_KEY_PROMOTION_TRAINED_WARBEAST1</Tag>
+		<English>Trained Warbeast 1</English>
+		<French>Trained Warbeast 1</French>
+		<German>Trained Warbeast 1</German>
+		<Italian>Trained Warbeast 1</Italian>
+		<Spanish>Trained Warbeast 1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_TRAINED_WARBEAST2</Tag>
+		<English>Trained Warbeast 1</English>
+		<French>Trained Warbeast 2</French>
+		<German>Trained Warbeast 2</German>
+		<Italian>Trained Warbeast 2</Italian>
+		<Spanish>Trained Warbeast 2</Spanish>
+	</TEXT>
+</Civ4GameText>

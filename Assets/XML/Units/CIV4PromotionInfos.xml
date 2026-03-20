@@ -44032,5 +44032,78 @@
 			</UnitCombatCaptureRates>
 			<Button>Art/Modules/Admirals/Buttons/Minion_Boarding_2.dds</Button>
 		</PromotionInfo>
+		<PromotionInfo>		<!-- Commander - Warbeast Handling 1 ANIMAL COMMANDER -->
+			<Type>PROMOTION_WARBEAST_HANDLING1</Type>
+			<Description>TXT_KEY_PROMOTION_WARBEAST_HANDLING1</Description>
+			<MinionPromotions>
+				<PromotionType>PROMOTION_TRAINED_WARBEAST1</PromotionType>
+			</MinionPromotions>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Art/Interface/Buttons/Promotions/warbeastcommander1.dds</Button>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Commander - Warbeast Handling 2 -->
+			<Type>PROMOTION_WARBEAST_HANDLING2</Type>
+			<Description>TXT_KEY_PROMOTION_WARBEAST_HANDLING2</Description>
+			<PrereqPromotionANDs>
+				<PrereqPromotionAND>
+					<PromotionType>PROMOTION_WARBEAST_HANDLING1</PromotionType>
+					<iPrereqApplications>1</iPrereqApplications>
+				</PrereqPromotionAND>
+			</PrereqPromotionANDs>
+			<MinionPromotions>
+				<PromotionType>PROMOTION_TRAINED_WARBEAST2</PromotionType>
+			</MinionPromotions>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Art/Interface/Buttons/Promotions/warbeastcommander2.dds</Button>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Minion - Trained Warbeast 1 -->
+			<Type>PROMOTION_TRAINED_WARBEAST1</Type>
+			<Description>Trained Warbeast 1</Description>
+			<bAllowDefenseBonuses>1</bAllowDefenseBonuses>
+			<iCityAttack>25</iCityAttack>
+			<bFreeUnit>1</bFreeUnit>
+			<bNoSupply>1</bNoSupply>
+			<bNoSupport>1</bNoSupport>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ANIMAL</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_BEAST</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Art/Interface/Buttons/Promotions/warbeastminion1.dds</Button>
+			<iMinLevel>-1</iMinLevel>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Minion - Trained Warbeast 2 -->
+			<Type>PROMOTION_TRAINED_WARBEAST2</Type>
+			<Description>Trained Warbeast 2</Description>
+			<iExtraCombatStr>1</iExtraCombatStr>
+			<iExtraCombatDefense>1</iExtraCombatDefense>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ANIMAL</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_BEAST</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Art/Interface/Buttons/Promotions/warbeastminion2.dds</Button>
+			<iMinLevel>-1</iMinLevel>
+		</PromotionInfo>
 	</PromotionInfos>
 </Civ4PromotionInfos>
