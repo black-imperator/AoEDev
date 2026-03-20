@@ -2667,7 +2667,8 @@ class CvEventManager:
 				pUnit.changeFreePromotionPick(1)
 
 		if pCity.getNumBuilding(self.Buildings["Wizards Hall"]) > 0:	cf.unitBuiltAmurites(pUnit, pCity)
-		if iCiv == self.Civilizations["Luchuirp"]:						cf.unitBuiltLuchuirp(pUnit, pCity)
+	#	if iCiv == self.Civilizations["Luchuirp"]:						cf.unitBuiltLuchuirp(pUnit, pCity)
+	#       Done by XML now.
 
 		if pCity.getNumBuilding( self.Buildings["Asylum"]) > 0:
 			if pUnit.isAlive():

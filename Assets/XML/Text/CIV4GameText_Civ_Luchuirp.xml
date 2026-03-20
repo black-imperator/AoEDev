@@ -175,19 +175,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_PALLENS_ENGINE_HELP</Tag>
-		<English>[ICON_BULLET]Grants every golem built in the city the [LINK=PROMOTION_PERFECT_SIGHT]Perfect Sight[\LINK] promotion, which makes them able to see invisible opponents.</English>
-		<French>[ICON_BULLET]Grants every golem built in the city the [LINK=PROMOTION_PERFECT_SIGHT]Perfect Sight[\LINK] promotion, which makes them able to see invisible opponents.</French>
-		<German>Durch Pallens Maschine erhält jeder in der Stadt gebaute Golem die [LINK=PROMOTION_PERFECT_SIGHT]Perfekte Sicht[\LINK] Beförderung, die es ermöglicht unsichtbare Gegner zu sehen.</German>
-		<Italian>[ICON_BULLET]Fornisce ad ogni golem costruito dalla città la promozione [LINK=PROMOTION_PERFECT_SIGHT]Vista Perfetta[\LINK], che dà all'unità la capacità di vedere le unità invisibili.</Italian>
-		<Spanish>[ICON_BULLET]Grants every golem built in the city the [LINK=PROMOTION_PERFECT_SIGHT]Perfect Sight[\LINK] promotion, which makes them able to see invisible opponents.</Spanish>
+		<English>Grants every golem built in the city the [LINK=SPELL_BLINDING_LIGHT]Blinding Light[\LINK] Spell.</English>
+		<French>Grants every golem built in the city the [LINK=SPELL_BLINDING_LIGHT]Blinding Light[\LINK] Spell.</French>
+		<German>Grants every golem built in the city the [LINK=SPELL_BLINDING_LIGHT]Blinding Light[\LINK] Spell.</German>
+		<Italian>Grants every golem built in the city the [LINK=SPELL_BLINDING_LIGHT]Blinding Light[\LINK] Spell.</Italian>
+		<Spanish>Grants every golem built in the city the [LINK=SPELL_BLINDING_LIGHT]Blinding Light[\LINK] Spell.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_PALLENS_ENGINE_STRATEGY</Tag>
-		<English>Grants every golem built in the city the [LINK=PROMOTION_PERFECT_SIGHT]Perfect Sight[\LINK] promotion, which makes them able to see invisible opponents.</English>
-		<French>Grants every golem built in the city the [LINK=PROMOTION_PERFECT_SIGHT]Perfect Sight[\LINK] promotion, which makes them able to see invisible opponents.</French>
-		<German>Durch Pallens Maschine erhält jeder in der Stadt gebaute Golem die [LINK=PROMOTION_PERFECT_SIGHT]Perfekte Sicht[\LINK] Beförderung, die es ermöglicht unsichtbare Gegner zu sehen.</German>
-		<Italian>Fornisce ad ogni golem costruito dalla città la promozione [LINK=PROMOTION_PERFECT_SIGHT]Vista Perfetta[\LINK], che dà all'unità la capacità di vedere le unità invisibili.</Italian>
-		<Spanish>Grants every golem built in the city the [LINK=PROMOTION_PERFECT_SIGHT]Perfect Sight[\LINK] promotion, which makes them able to see invisible opponents.</Spanish>
+		<English>Grants every golem built in the city the [LINK=SPELL_BLINDING_LIGHT]Blinding Light[\LINK] Spell.</English>
+		<French>Grants every golem built in the city the [LINK=SPELL_BLINDING_LIGHT]Blinding Light[\LINK] Spell.</French>
+		<German>Grants every golem built in the city the [LINK=SPELL_BLINDING_LIGHT]Blinding Light[\LINK] Spell.</German>
+		<Italian>Grants every golem built in the city the [LINK=SPELL_BLINDING_LIGHT]Blinding Light[\LINK] Spell.</Italian>
+		<Spanish>Grants every golem built in the city the [LINK=SPELL_BLINDING_LIGHT]Blinding Light[\LINK] Spell.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_SCULPTORS_STUDIO</Tag>

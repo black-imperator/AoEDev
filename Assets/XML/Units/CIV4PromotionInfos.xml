@@ -1190,6 +1190,14 @@
 					<iResist>100</iResist>
 				</DamageTypeResist>
 			</DamageTypeResists>
+			<PromotionAllows>
+				<Promotion>PROMOTION_RUNIC_CLOAKFIELD</Promotion>
+				<Promotion>PROMOTION_RUNIC_PYROHELIX</Promotion>
+				<Promotion>PROMOTION_RUNIC_SOLARPRISM</Promotion>
+				<Promotion>PROMOTION_SUN2</Promotion>
+				<Promotion>PROMOTION_FIRE2</Promotion>
+				<Promotion>PROMOTION_HIDDEN</Promotion>
+			</PromotionAllows>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Ice Demon -->  <!-- no maluses for cold terrains. Move cost is the same as grassland for ice demons. -->
 			<Type>PROMOTION_ICE_DEMON</Type>
@@ -42657,6 +42665,54 @@
 			</DamageTypeCombats>
 			
 			<Button>Art/Interface/Buttons/Promotions/ExperimentalGolem.dds</Button>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Runic Cloaking-->
+			<Type>PROMOTION_RUNIC_CLOAKFIELD</Type>
+			<Description>TXT_KEY_PROMOTION_RUNIC_CLOAKFIELD</Description>
+			<Help></Help>
+			<iMinLevel>-1</iMinLevel>
+			<PrereqPromotionANDs>
+				<PrereqPromotionAND>
+					<PromotionType>PROMOTION_GOLEM</PromotionType>
+					<iPrereqApplications>1</iPrereqApplications>
+				</PrereqPromotionAND>
+			</PrereqPromotionANDs>
+			<PrereqbAllowNULLUnitCombat>1</PrereqbAllowNULLUnitCombat>
+			<iPromotionRandomApplyChance>50</iPromotionRandomApplyChance>
+			<PromotionRandomApply>PROMOTION_HIDDEN</PromotionRandomApply>
+			<Button>Art/Interface/Buttons/Promotions/Cloaking.dds</Button>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Runic Solar Prism -->
+			<Type>PROMOTION_RUNIC_SOLARPRISM</Type>
+			<Description>TXT_KEY_PROMOTION_RUNIC_SOLARPRISM</Description>
+			<Help></Help>
+			<iMinLevel>-1</iMinLevel>
+			<PrereqPromotionANDs>
+				<PrereqPromotionAND>
+					<PromotionType>PROMOTION_GOLEM</PromotionType>
+					<iPrereqApplications>1</iPrereqApplications>
+				</PrereqPromotionAND>
+			</PrereqPromotionANDs>
+			<PrereqbAllowNULLUnitCombat>1</PrereqbAllowNULLUnitCombat>
+			<iPromotionRandomApplyChance>100</iPromotionRandomApplyChance>
+			<PromotionRandomApply>PROMOTION_SUN2</PromotionRandomApply>
+			<Button>Art/Interface/Buttons/Promotions/SolarPrism.dds</Button>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Runic Pyro Helix -->
+			<Type>PROMOTION_RUNIC_PYROHELIX</Type>
+			<Description>TXT_KEY_PROMOTION_RUNIC_PYROHELIX</Description>
+			<Help></Help>
+			<iMinLevel>-1</iMinLevel>
+			<PrereqPromotionANDs>
+				<PrereqPromotionAND>
+					<PromotionType>PROMOTION_GOLEM</PromotionType>
+					<iPrereqApplications>1</iPrereqApplications>
+				</PrereqPromotionAND>
+			</PrereqPromotionANDs>
+			<PrereqbAllowNULLUnitCombat>1</PrereqbAllowNULLUnitCombat>
+			<iPromotionRandomApplyChance>100</iPromotionRandomApplyChance>
+			<PromotionRandomApply>PROMOTION_FIRE2</PromotionRandomApply>
+			<Button>Art/Interface/Buttons/Promotions/PyroHelix.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Slyph -->
 			<Type>PROMOTION_SLYPH</Type>

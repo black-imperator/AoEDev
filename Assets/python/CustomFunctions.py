@@ -2811,12 +2811,12 @@ class CustomFunctions:
 		iSphere3	= gc.getPromotionInfo(iSphere2).getPromotionNextLevel()
 		pUnit.setHasPromotion(iSphere3, True)
 
-	def unitBuiltLuchuirp(self, pUnit, pCity):
-		if not pUnit.isHasPromotion(self.Promotions["Race"]["Golem"]):		return
-		if pCity.getNumBuilding(self.Buildings["Blasting Workshop"]) > 0:	pUnit.setHasPromotion( self.Promotions["Generic"]["Fire II"], True)
-		if pCity.getNumBuilding(self.Buildings["Pallens Engine"]) > 0:		pUnit.setHasPromotion( self.Promotions["Generic"]["Perfect Sight"], True)
-		if pCity.getNumBuilding(self.Buildings["Adularia Chamber"]) > 0:	pUnit.setHasPromotion( self.Promotions["Effects"]["Hidden"], True)
-
+#	def unitBuiltLuchuirp(self, pUnit, pCity):
+#		if not pUnit.isHasPromotion(self.Promotions["Race"]["Golem"]):		return
+#		if pCity.getNumBuilding(self.Buildings["Blasting Workshop"]) > 0:	pUnit.setHasPromotion( self.Promotions["Generic"]["Fire II"], True)
+#		if pCity.getNumBuilding(self.Buildings["Pallens Engine"]) > 0:		pUnit.setHasPromotion( self.Promotions["Generic"]["Perfect Sight"], True)
+#		if pCity.getNumBuilding(self.Buildings["Adularia Chamber"]) > 0:	pUnit.setHasPromotion( self.Promotions["Effects"]["Hidden"], True)
+#
 	def unitBuiltAcheron(self, pUnit, pCity):
 		pCity.setNumRealBuilding(self.Buildings["Dragons Hoard"], 1)
 		pUnit.setHasPromotion(self.Promotions["Effects"]["Acheron Leashed"], True)

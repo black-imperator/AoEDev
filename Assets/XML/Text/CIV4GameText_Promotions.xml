@@ -2254,6 +2254,30 @@
 		<Spanish>Experimental Golem</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_RUNIC_CLOAKFIELD</Tag>
+		<English>Runic Cloaking Field</English>
+		<French>Runic Cloaking Field</French>
+		<German>Runic Cloaking Field</German>
+		<Italian>Runic Cloaking Field</Italian>
+		<Spanish>Runic Cloaking Field</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_RUNIC_SOLARPRISM</Tag>
+		<English>Runic Solar Prism</English>
+		<French>Runic Solar Prism</French>
+		<German>Runic Solar Prism</German>
+		<Italian>Runic Solar Prism</Italian>
+		<Spanish>Runic Solar Prism</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_RUNIC_PYROHELIX</Tag>
+		<English>Runic Pyrohelix</English>
+		<French>Runic Pyrohelix</French>
+		<German>Runic Pyrohelix</German>
+		<Italian>Runic Pyrohelix</Italian>
+		<Spanish>Runic Pyrohelix</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_HIDDEN_NATIONALITY</Tag>
 		<English>Hidden Nationality</English>
 		<French>Nationalité Cachée</French>
