@@ -4592,5 +4592,38 @@
 				</FreePromotionUnitCombat>
 			</FreePromotionUnitCombats>
 		</TraitInfo>
+		<TraitInfo>		<!-- Graveleech 1 -->
+			<Type>TRAIT_GRAVELEECH</Type>
+			<NextTrait>TRAIT_GRAVELEECH2</NextTrait>
+			<iLevel>1</iLevel>
+			<TraitClass>TRAITCLASS_EMERGENT</TraitClass>
+			<Help>TXT_KEY_TRAIT_GRAVELEECH_HELP</Help>
+			<Civilopedia>TXT_KEY_TRAIT_GRAVELEECH_PEDIA</Civilopedia>
+			<Description>TXT_KEY_TRAIT_GRAVELEECH</Description>
+			<ShortDescription>TXT_KEY_TRAIT_GRAVELEECH_SHORT</ShortDescription>
+		</TraitInfo>
+		<TraitInfo>		<!-- Graveleech 2-->
+			<Type>TRAIT_GRAVELEECH2</Type>
+			<ParentTrait>TRAIT_GRAVELEECH</ParentTrait>
+			<NextTrait>TRAIT_GRAVELEECH3</NextTrait>
+			<iLevel>2</iLevel>
+			<iMinRequiredPoints>300</iMinRequiredPoints>
+			<TraitClass>TRAITCLASS_EMERGENT</TraitClass>
+			<Help>TXT_KEY_TRAIT_GRAVELEECH2_HELP</Help>
+			<Civilopedia>TXT_KEY_TRAIT_GRAVELEECH_PEDIA</Civilopedia>
+			<Description>TXT_KEY_TRAIT_GRAVELEECH</Description>
+			<ShortDescription>TXT_KEY_TRAIT_GRAVELEECH_SHORT</ShortDescription>
+		</TraitInfo>
+		<TraitInfo>		<!-- Graveleech 3-->
+			<Type>TRAIT_GRAVELEECH3</Type>
+			<ParentTrait>TRAIT_GRAVELEECH</ParentTrait>
+			<iLevel>3</iLevel>
+			<iMinRequiredPoints>1500</iMinRequiredPoints>
+			<TraitClass>TRAITCLASS_EMERGENT</TraitClass>
+			<Help>TXT_KEY_TRAIT_GRAVELEECH3_HELP</Help>
+			<Civilopedia>TXT_KEY_TRAIT_GRAVELEECH_PEDIA</Civilopedia>
+			<Description>TXT_KEY_TRAIT_GRAVELEECH</Description>
+			<ShortDescription>TXT_KEY_TRAIT_GRAVELEECH_SHORT</ShortDescription>
+		</TraitInfo>
 	</TraitInfos>
 </Civ4TraitInfos>

@@ -806,5 +806,13 @@
 			<NoShaderNIF/>
 			<BackgroundKFM/>
 		</LeaderheadArtInfo>
+		<LeaderheadArtInfo> <!-- Churel -->
+			<Type>ART_DEF_LEADER_CHUREL</Type>
+			<Button>Art/Modules/Churel/Leaderheads/churel_button.dds</Button>
+			<NIF>Art/Modules/Churel/Leaderheads/churel.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
 	</LeaderheadArtInfos>
 </Civ4ArtDefines>

@@ -5514,7 +5514,7 @@
 			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
 			<bHasCasted>1</bHasCasted>
 			<iChangePopulation>-1</iChangePopulation>
-			<PyResult>spellFeast(pCaster)</PyResult>
+			<PyResult>reqFeastGraveleech(pCaster)</PyResult>
 			<PyRequirement>reqFeast(pCaster)</PyRequirement>
 			<Effect>EFFECT_SACRIFICE</Effect>
 			<Sound>AS3D_SPELL_FEAST</Sound>
@@ -5532,7 +5532,55 @@
 			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
 			<bHasCasted>1</bHasCasted>
 			<PyResult>spellFeed(pCaster)</PyResult>
-			<PyRequirement>reqFeed(pCaster)</PyRequirement>
+			<PyRequirement>reqFeedGraveleech(pCaster)</PyRequirement>
+			<Effect>EFFECT_SACRIFICE</Effect>
+			<Sound>AS3D_SPELL_FEED</Sound>
+			<Button>Art/Interface/Buttons/Spells/Feed.dds</Button>
+		</SpellInfo>
+		<SpellInfo>			<!-- Feed (Undead) -->
+			<Type>SPELL_FEED_UNDEAD</Type>
+			<Description>TXT_KEY_SPELL_FEED_UNDEAD</Description>
+			<Civilopedia>TXT_KEY_SPELL_FEED_UNDEAD_PEDIA</Civilopedia>
+			<Help>TXT_KEY_SPELL_FEED_UNDEAD_HELP</Help>
+			<PromotionPrereq1>PROMOTION_GRAVELEECH</PromotionPrereq1>
+			<bAllowAI>1</bAllowAI>
+			<iAIWeight>10</iAIWeight>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+			<PyResult>spellFeedUndead(pCaster)</PyResult>
+			<PyRequirement>reqFeedUndead(pCaster)</PyRequirement>
+			<Effect>EFFECT_SACRIFICE</Effect>
+			<Sound>AS3D_SPELL_FEED</Sound>
+			<Button>Art/Interface/Buttons/Spells/Feed.dds</Button>
+		</SpellInfo>
+		<SpellInfo>			<!-- Feed (Grave Yard) -->
+			<Type>SPELL_FEED_UNDEAD_GRAVEYARD</Type>
+			<Description>TXT_KEY_SPELL_FEED_UNDEAD_GRAVEYARD</Description>
+			<Civilopedia>TXT_KEY_SPELL_FEED_UNDEAD_GRAVEYARD_PEDIA</Civilopedia>
+			<Help>TXT_KEY_SPELL_FEED_UNDEAD_GRAVEYARD_HELP</Help>
+			<PromotionPrereq1>PROMOTION_GRAVELEECH</PromotionPrereq1>
+			<bAllowAI>1</bAllowAI>
+			<iAIWeight>10</iAIWeight>
+			<bDisplayWhenDisabled>0</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+			<PyResult>spellFeedUndeadGraveyard(pCaster)</PyResult>
+			<PyRequirement>reqFeedUndeadGraveyard(pCaster)</PyRequirement>
+			<Effect>EFFECT_SACRIFICE</Effect>
+			<Sound>AS3D_SPELL_FEED</Sound>
+			<Button>Art/Interface/Buttons/Spells/Feed.dds</Button>
+		</SpellInfo>
+		<SpellInfo>			<!-- Gift of Vampiric Undeath -->
+			<Type>SPELL_GIFT_UNDEAD</Type>
+			<Description>TXT_KEY_SPELL_GIFT_UNDEAD</Description>
+			<Civilopedia>TXT_KEY_SPELL_GIFT_UNDEAD_PEDIA</Civilopedia>
+			<Help>TXT_KEY_SPELL_GIFT_UNDEAD_HELP</Help>
+			<PromotionPrereq1>PROMOTION_GRAVELEECH</PromotionPrereq1>
+			<bAllowAI>1</bAllowAI>
+			<iAIWeight>10</iAIWeight>
+			<bInCityOnly>1</bInCityOnly>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+			<CreateBuildingType>BUILDING_GIFT</CreateBuildingType>
 			<Effect>EFFECT_SACRIFICE</Effect>
 			<Sound>AS3D_SPELL_FEED</Sound>
 			<Button>Art/Interface/Buttons/Spells/Feed.dds</Button>

@@ -1097,6 +1097,10 @@
 					<LeaderName>LEADER_ELIJAH</LeaderName>
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
+				<Leader>
+					<LeaderName>LEADER_CHUREL</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
 			</Leaders>
 			<DerivativeCiv>NONE</DerivativeCiv>
 			<CivilizationSelectionSound>AS3D_ARABIA_SELECT</CivilizationSelectionSound>

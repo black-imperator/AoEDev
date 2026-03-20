@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_GRAVELEECH</Tag>
+		<English>Graveleech</English>
+		<French>Graveleech</French>
+		<German>Graveleech</German>
+		<Italian>Graveleech</Italian>
+		<Spanish>Graveleech</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_UNDYING_RITUAL_HOUSE</Tag>
+		<English>Ritual House of Undying</English>
+		<French>Ritual House of Undying</French>
+		<German>Ritual House of Undying</German>
+		<Italian>Ritual House of Undying</Italian>
+		<Spanish>Ritual House of Undying</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_UNDEAD_SOUL</Tag>
+		<English>Undead Soul</English>
+		<French>Undead Soul</French>
+		<German>Undead Soul</German>
+		<Italian>Undead Soul</Italian>
+		<Spanish>Undead Soul</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_FEED_UNDEAD</Tag>
+		<English>Feed from Undead</English>
+		<French>Feed from Undead</French>
+		<German>Feed from Undead</German>
+		<Italian>Feed from Undead</Italian>
+		<Spanish>Feed from Undead</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_FEED_UNDEAD_HELP</Tag>
+		<English>[ICON_BULLET]Allows Graveleeches to feed from Undead Units to restore themselves.[NEWLINE][ICON_BULLET]With the trait [LINK=TRAIT_GRAVELEECH2]Graveleech 2[\LINK], Units casting this spell also get the promotion [LINK=PROMOTION_UNDEAD_SOUL]Undead Soul[\LINK] </English>
+		<French>[ICON_BULLET]Allows Graveleeches to feed from Undead Units to restore themselves.[NEWLINE][ICON_BULLET]With the trait [LINK=TRAIT_GRAVELEECH2]Graveleech 2[\LINK], Units casting this spell also get the promotion [LINK=PROMOTION_UNDEAD_SOUL]Undead Soul[\LINK]</French>
+		<German>[ICON_BULLET]Allows Graveleeches to feed from Undead Units to restore themselves.[NEWLINE][ICON_BULLET]With the trait [LINK=TRAIT_GRAVELEECH2]Graveleech 2[\LINK], Units casting this spell also get the promotion [LINK=PROMOTION_UNDEAD_SOUL]Undead Soul[\LINK]</German>
+		<Italian>[ICON_BULLET]Allows Graveleeches to feed from Undead Units to restore themselves.[NEWLINE][ICON_BULLET]With the trait [LINK=TRAIT_GRAVELEECH2]Graveleech 2[\LINK], Units casting this spell also get the promotion [LINK=PROMOTION_UNDEAD_SOUL]Undead Soul[\LINK]</Italian>
+		<Spanish>[ICON_BULLET]Allows Graveleeches to feed from Undead Units to restore themselves.[NEWLINE][ICON_BULLET]With the trait [LINK=TRAIT_GRAVELEECH2]Graveleech 2[\LINK], Units casting this spell also get the promotion [LINK=PROMOTION_UNDEAD_SOUL]Undead Soul[\LINK]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_CHUREL</Tag>
+		<English>Churel Alexis</English>
+		<French>Churel Alexis</French>
+		<German>Churel Alexis</German>
+		<Italian>Churel Alexis</Italian>
+		<Spanish>Churel Alexis</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_CHUREL_PEDIA</Tag>
+		<English>Churel was an ambitious and charismatic man and lover of Alexis. He considered himself the King of the Calabim and for a period he and Alexis ruled the Calabim together. Alexis was open to sharing power with him, though it caused some strife with Flauros, and even allowed Churel to have his way when they disagreed.[NEWLINE][NEWLINE]This lasted until Tristessa of Ashgate declared that Ashgate was an independent city. Churel declared that Ashgate would be allowed to go free, Alexis disagreed, and Churel struck her in front of the royal court, leaving long bleeding cuts across her face.[NEWLINE][NEWLINE]Alexis became a feral, raging monster. She attacked Churel and killed everyone who didn't immediately flee from the throne room. For Churel, she cursed him that he would never be able to feed on the living again, that he would hunger but never feed. Then she dumped him at the edge of the Calabim empire and went off to kill everyone in his clan (and after that to deal with Tristessa). Churel lay beaten, spent and broken by the battle.[NEWLINE][NEWLINE]Churel was maddeningly hungry, but unable to feed on the living. Desperate, he found that the undead had enough soul to feed on, without violating Alexis's curse. So he fed on ash bearers, broken men and worse. This has restored his power, but he is a corrupt dark creature, hideous in form with bending bones and a long grey body that bears little resemblance to the man he once was. What the Calabim now call a graveleech.[NEWLINE][NEWLINE]He is a powerful creature, just a scratch from his claws is enough to kill and he radiates an aura of terror that few can resist. Since his curse Churel has raised some that sought him out or that he has found close to death. They share his curse and are members of his clan.[NEWLINE][NEWLINE]Most believe that Clan Churel is no more. Among the Calabim they remember him as the legend of what happens when Alexis is defied. But Alexis knows the catacombs that Churel haunts and when she needs him she will go command his clan's service. And he is always eager to serve.</English>
+		<French>Churel was an ambitious and charismatic man and lover of Alexis. He considered himself the King of the Calabim and for a period he and Alexis ruled the Calabim together. Alexis was open to sharing power with him, though it caused some strife with Flauros, and even allowed Churel to have his way when they disagreed.[NEWLINE][NEWLINE]This lasted until Tristessa of Ashgate declared that Ashgate was an independent city. Churel declared that Ashgate would be allowed to go free, Alexis disagreed, and Churel struck her in front of the royal court, leaving long bleeding cuts across her face.[NEWLINE][NEWLINE]Alexis became a feral, raging monster. She attacked Churel and killed everyone who didn't immediately flee from the throne room. For Churel, she cursed him that he would never be able to feed on the living again, that he would hunger but never feed. Then she dumped him at the edge of the Calabim empire and went off to kill everyone in his clan (and after that to deal with Tristessa). Churel lay beaten, spent and broken by the battle.[NEWLINE][NEWLINE]Churel was maddeningly hungry, but unable to feed on the living. Desperate, he found that the undead had enough soul to feed on, without violating Alexis's curse. So he fed on ash bearers, broken men and worse. This has restored his power, but he is a corrupt dark creature, hideous in form with bending bones and a long grey body that bears little resemblance to the man he once was. What the Calabim now call a graveleech.[NEWLINE][NEWLINE]He is a powerful creature, just a scratch from his claws is enough to kill and he radiates an aura of terror that few can resist. Since his curse Churel has raised some that sought him out or that he has found close to death. They share his curse and are members of his clan.[NEWLINE][NEWLINE]Most believe that Clan Churel is no more. Among the Calabim they remember him as the legend of what happens when Alexis is defied. But Alexis knows the catacombs that Churel haunts and when she needs him she will go command his clan's service. And he is always eager to serve.</French>
+		<German>Churel was an ambitious and charismatic man and lover of Alexis. He considered himself the King of the Calabim and for a period he and Alexis ruled the Calabim together. Alexis was open to sharing power with him, though it caused some strife with Flauros, and even allowed Churel to have his way when they disagreed.[NEWLINE][NEWLINE]This lasted until Tristessa of Ashgate declared that Ashgate was an independent city. Churel declared that Ashgate would be allowed to go free, Alexis disagreed, and Churel struck her in front of the royal court, leaving long bleeding cuts across her face.[NEWLINE][NEWLINE]Alexis became a feral, raging monster. She attacked Churel and killed everyone who didn't immediately flee from the throne room. For Churel, she cursed him that he would never be able to feed on the living again, that he would hunger but never feed. Then she dumped him at the edge of the Calabim empire and went off to kill everyone in his clan (and after that to deal with Tristessa). Churel lay beaten, spent and broken by the battle.[NEWLINE][NEWLINE]Churel was maddeningly hungry, but unable to feed on the living. Desperate, he found that the undead had enough soul to feed on, without violating Alexis's curse. So he fed on ash bearers, broken men and worse. This has restored his power, but he is a corrupt dark creature, hideous in form with bending bones and a long grey body that bears little resemblance to the man he once was. What the Calabim now call a graveleech.[NEWLINE][NEWLINE]He is a powerful creature, just a scratch from his claws is enough to kill and he radiates an aura of terror that few can resist. Since his curse Churel has raised some that sought him out or that he has found close to death. They share his curse and are members of his clan.[NEWLINE][NEWLINE]Most believe that Clan Churel is no more. Among the Calabim they remember him as the legend of what happens when Alexis is defied. But Alexis knows the catacombs that Churel haunts and when she needs him she will go command his clan's service. And he is always eager to serve.</German>
+		<Italian>Churel was an ambitious and charismatic man and lover of Alexis. He considered himself the King of the Calabim and for a period he and Alexis ruled the Calabim together. Alexis was open to sharing power with him, though it caused some strife with Flauros, and even allowed Churel to have his way when they disagreed.[NEWLINE][NEWLINE]This lasted until Tristessa of Ashgate declared that Ashgate was an independent city. Churel declared that Ashgate would be allowed to go free, Alexis disagreed, and Churel struck her in front of the royal court, leaving long bleeding cuts across her face.[NEWLINE][NEWLINE]Alexis became a feral, raging monster. She attacked Churel and killed everyone who didn't immediately flee from the throne room. For Churel, she cursed him that he would never be able to feed on the living again, that he would hunger but never feed. Then she dumped him at the edge of the Calabim empire and went off to kill everyone in his clan (and after that to deal with Tristessa). Churel lay beaten, spent and broken by the battle.[NEWLINE][NEWLINE]Churel was maddeningly hungry, but unable to feed on the living. Desperate, he found that the undead had enough soul to feed on, without violating Alexis's curse. So he fed on ash bearers, broken men and worse. This has restored his power, but he is a corrupt dark creature, hideous in form with bending bones and a long grey body that bears little resemblance to the man he once was. What the Calabim now call a graveleech.[NEWLINE][NEWLINE]He is a powerful creature, just a scratch from his claws is enough to kill and he radiates an aura of terror that few can resist. Since his curse Churel has raised some that sought him out or that he has found close to death. They share his curse and are members of his clan.[NEWLINE][NEWLINE]Most believe that Clan Churel is no more. Among the Calabim they remember him as the legend of what happens when Alexis is defied. But Alexis knows the catacombs that Churel haunts and when she needs him she will go command his clan's service. And he is always eager to serve.</Italian>
+		<Spanish>Churel was an ambitious and charismatic man and lover of Alexis. He considered himself the King of the Calabim and for a period he and Alexis ruled the Calabim together. Alexis was open to sharing power with him, though it caused some strife with Flauros, and even allowed Churel to have his way when they disagreed.[NEWLINE][NEWLINE]This lasted until Tristessa of Ashgate declared that Ashgate was an independent city. Churel declared that Ashgate would be allowed to go free, Alexis disagreed, and Churel struck her in front of the royal court, leaving long bleeding cuts across her face.[NEWLINE][NEWLINE]Alexis became a feral, raging monster. She attacked Churel and killed everyone who didn't immediately flee from the throne room. For Churel, she cursed him that he would never be able to feed on the living again, that he would hunger but never feed. Then she dumped him at the edge of the Calabim empire and went off to kill everyone in his clan (and after that to deal with Tristessa). Churel lay beaten, spent and broken by the battle.[NEWLINE][NEWLINE]Churel was maddeningly hungry, but unable to feed on the living. Desperate, he found that the undead had enough soul to feed on, without violating Alexis's curse. So he fed on ash bearers, broken men and worse. This has restored his power, but he is a corrupt dark creature, hideous in form with bending bones and a long grey body that bears little resemblance to the man he once was. What the Calabim now call a graveleech.[NEWLINE][NEWLINE]He is a powerful creature, just a scratch from his claws is enough to kill and he radiates an aura of terror that few can resist. Since his curse Churel has raised some that sought him out or that he has found close to death. They share his curse and are members of his clan.[NEWLINE][NEWLINE]Most believe that Clan Churel is no more. Among the Calabim they remember him as the legend of what happens when Alexis is defied. But Alexis knows the catacombs that Churel haunts and when she needs him she will go command his clan's service. And he is always eager to serve.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_GRAVELEECH_HELP</Tag>
+		<English>[NEWLINE][ICON_BULLET]All Units gain the Undead Promotion.[NEWLINE][ICON_BULLET]Vampires gain the [LINK=PROMOTION_GRAVELEECH]Graveleech Promotion[\LINK], blocking them from feeding and feasting on living units.</English>
+		<French>[NEWLINE][ICON_BULLET]All Units gain the Undead Promotion.[NEWLINE][ICON_BULLET]Vampires gain the [LINK=PROMOTION_GRAVELEECH]Graveleech Promotion[\LINK], blocking them from feeding and feasting on living units.</French>
+		<German>[NEWLINE][ICON_BULLET]All Units gain the Undead Promotion.[NEWLINE][ICON_BULLET]Vampires gain the [LINK=PROMOTION_GRAVELEECH]Graveleech Promotion[\LINK], blocking them from feeding and feasting on living units.</German>
+		<Italian>[NEWLINE][ICON_BULLET]All Units gain the Undead Promotion.[NEWLINE][ICON_BULLET]Vampires gain the [LINK=PROMOTION_GRAVELEECH]Graveleech Promotion[\LINK], blocking them from feeding and feasting on living units.</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]All Units gain the Undead Promotion.[NEWLINE][ICON_BULLET]Vampires gain the [LINK=PROMOTION_GRAVELEECH]Graveleech Promotion[\LINK], blocking them from feeding and feasting on living units.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_GRAVELEECH2_HELP</Tag>
+		<English>[NEWLINE][ICON_BULLET]Feeding off an Undead unit grants the [LINK=PROMOTION_UNDEAD_SOUL]Undead Soul Promotion[\LINK], allowing you to turn enemy units into undead.</English>
+		<French>[NEWLINE][ICON_BULLET]Feeding off an Undead unit grants the [LINK=PROMOTION_UNDEAD_SOUL]Undead Soul Promotion[\LINK], allowing you to turn enemy units into undead.</French>
+		<German>[NEWLINE][ICON_BULLET]Feeding off an Undead unit grants the [LINK=PROMOTION_UNDEAD_SOUL]Undead Soul Promotion[\LINK], allowing you to turn enemy units into undead.</German>
+		<Italian>[NEWLINE][ICON_BULLET]Feeding off an Undead unit grants the [LINK=PROMOTION_UNDEAD_SOUL]Undead Soul Promotion[\LINK], allowing you to turn enemy units into undead.</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]Feeding off an Undead unit grants the [LINK=PROMOTION_UNDEAD_SOUL]Undead Soul Promotion[\LINK], allowing you to turn enemy units into undead.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_GRAVELEECH3_HELP</Tag>
+		<English>[NEWLINE][ICON_BULLET]Unlocks the Ritual House of the Undying, turning all population in the city into undead, allowing your graveleeches to feast off them. Unlocks [LINK=PROMOTION_GREATER_GRAVELEECH]Greater Graveleech.[\LINK]</English>
+		<French>[NEWLINE][ICON_BULLET]Unlocks the Ritual House of the Undying, turning all population in the city into undead, allowing your graveleeches to feast off them. Unlocks [LINK=PROMOTION_GREATER_GRAVELEECH]Greater Graveleech.</French>
+		<German>[NEWLINE][ICON_BULLET]Unlocks the Ritual House of the Undying, turning all population in the city into undead, allowing your graveleeches to feast off them. Unlocks [LINK=PROMOTION_GREATER_GRAVELEECH]Greater Graveleech.</German>
+		<Italian>[NEWLINE][ICON_BULLET]Unlocks the Ritual House of the Undying, turning all population in the city into undead, allowing your graveleeches to feast off them. Unlocks [LINK=PROMOTION_GREATER_GRAVELEECH]Greater Graveleech.</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]Unlocks the Ritual House of the Undying, turning all population in the city into undead, allowing your graveleeches to feast off them. Unlocks [LINK=PROMOTION_GREATER_GRAVELEECH]Greater Graveleech.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_GRAVELEECH_PEDIA</Tag>
+		<English>The Graveleech trait focuses on those vampires cursed to live off undead. As such, train Undeads and Vampires to thrive.</English>
+		<French>The Graveleech trait focuses on those vampires cursed to live off undead. As such, train Undeads and Vampires to thrive.</French>
+		<German>The Graveleech trait focuses on those vampires cursed to live off undead. As such, train Undeads and Vampires to thrive.</German>
+		<Italian>The Graveleech trait focuses on those vampires cursed to live off undead. As such, train Undeads and Vampires to thrive.</Italian>
+		<Spanish>The Graveleech trait focuses on those vampires cursed to live off undead. As such, train Undeads and Vampires to thrive.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_GRAVELEECH_SHORT</Tag>
+		<English>GrLch</English>
+		<French>GrLch</French>
+		<German>GrLch</German>
+		<Italian>GrLch</Italian>
+		<Spanish>GrLch</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_GIFT_UNDEAD</Tag>
+		<English>Grant the Gift</English>
+		<French>Grant the Gift</French>
+		<German>Grant the Gift</German>
+		<Italian>Grant the Gift</Italian>
+		<Spanish>Grant the Gift</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GIFT</Tag>
+		<English>Ritual of the Gift</English>
+		<French>Ritual of the Gift</French>
+		<German>Ritual of the Gift</German>
+		<Italian>Ritual of the Gift</Italian>
+		<Spanish>Ritual of the Gift</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_GIFT_UNDEAD_HELP</Tag>
+		<English>[ICON_BULLET] All units built in this city will be vampires.</English>
+		<French>[ICON_BULLET] All units built in this city will be vampires.</French>
+		<German>[ICON_BULLET] All units built in this city will be vampires.</German>
+		<Italian>[ICON_BULLET] All units built in this city will be vampires.</Italian>
+		<Spanish>[ICON_BULLET] All units built in this city will be vampires.</Spanish>
+	</TEXT>
+</Civ4GameText>

@@ -1724,6 +1724,38 @@
 				</Flavor>
 			</Flavors>
 		</BuildingInfo>
+	<BuildingInfo>		<!-- Undying Ritual House 											Calabim Graveleech UB -->
+			<BuildingClass>BUILDINGCLASS_UNDYING_RITUAL_HOUSE</BuildingClass>
+			<Type>BUILDING_UNDYING_RITUAL_HOUSE</Type>
+			<Description>TXT_KEY_BUILDING_UNDYING_RITUAL_HOUSE</Description>
+			<Civilopedia>TXT_KEY_BUILDING_UNDYING_RITUAL_HOUSE_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_GOVERNORS_MANOR</ArtDefineTag>
+			<PrereqTrait>TRAIT_GRAVELEECH3</PrereqTrait>
+			<bNeverCapture>1</bNeverCapture>
+			<iAIWeight>80</iAIWeight>
+			<iCost>250</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<bNoUnhealthyPopulation>1</bNoUnhealthyPopulation>
+				
+		</BuildingInfo>
+			<BuildingInfo>		<!-- Gift                                                       Spell, Graveleech UB-->
+			<BuildingClass>BUILDINGCLASS_GIFT</BuildingClass>
+			<Type>BUILDING_GIFT</Type>
+			<Description>TXT_KEY_BUILDING_GIFT</Description>
+			<Civilopedia>TXT_KEY_BUILDING_GIFT_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_CULTURE</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_GOVERNORS_MANOR</ArtDefineTag>
+			<FreePromotion>PROMOTION_VAMPIRE_EFFECT</FreePromotion>
+			<bNeverCapture>1</bNeverCapture>
+			<iAIWeight>10</iAIWeight>
+			<iConquestProb>0</iConquestProb>
+			<iAsset>1</iAsset>
+			<iPower>2</iPower>
+			<fVisibilityPriority>1</fVisibilityPriority>
+			<bGraphicalOnly>1</bGraphicalOnly>
+			<bRequiresCaster>1</bRequiresCaster>
+		</BuildingInfo>
 		<BuildingInfo>		<!-- Cave Of Ancestors                                          Amurites UB -->
 			<BuildingClass>BUILDINGCLASS_CAVE_OF_ANCESTORS</BuildingClass>
 			<Type>BUILDING_CAVE_OF_ANCESTORS</Type>

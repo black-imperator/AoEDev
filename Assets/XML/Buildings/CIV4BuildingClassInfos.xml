@@ -3688,6 +3688,30 @@
 			<DefaultBuilding>BUILDING_BREEDING_PIT</DefaultBuilding>
 			<VictoryThresholds/>
 		</BuildingClassInfo>
+		<BuildingClassInfo> <!-- Calabim Graveleech -->
+			<Type>BUILDINGCLASS_UNDYING_RITUAL_HOUSE</Type>
+			<Description>TXT_KEY_BUILDING_UNDYING_RITUAL_HOUSE</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<DefaultBuilding>BUILDING_UNDYING_RITUAL_HOUSE</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo> <!-- Calabim Graveleech -->
+			<Type>BUILDINGCLASS_GIFT</Type>
+			<Description>TXT_KEY_BUILDING_GIFT</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<DefaultBuilding>BUILDING_GIFT</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
 		<BuildingClassInfo><!-- Amurites Cave of Ancestors -->
 			<Type>BUILDINGCLASS_CAVE_OF_ANCESTORS</Type>
 			<Description>TXT_KEY_BUILDING_CAVE_OF_ANCESTORS</Description>

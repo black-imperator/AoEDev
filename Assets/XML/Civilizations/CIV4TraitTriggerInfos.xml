@@ -55,11 +55,15 @@
 			<TraitHookType>TRAITHOOK_BUILD_IMPROVEMENT</TraitHookType>
 			<PrereqImprovementType>IMPROVEMENT_DWARVEN_MINE</PrereqImprovementType>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Build               Death Mana                                  Necromancer -->
+		<TraitTriggerInfo> <!-- Build               Death Mana                                  Necromancer, Graveleech -->
 			<Type>TRAITTRIGGER_BUILD_MANA_DEATH</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_NECROMANCER</TraitType>
+					<iModifier>50</iModifier>
+				</CounterChange>
+				<CounterChange>
+					<TraitType>TRAIT_GRAVELEECH</TraitType>
 					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
@@ -367,7 +371,7 @@
 			<PrereqSpellType>SPELL_INQUISITION2</PrereqSpellType>
 			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Cast                Raise Skeleton                              Necromancer -->
+		<TraitTriggerInfo> <!-- Cast                Raise Skeleton                              Necromancer, Skiamancer, Graveleech -->
 			<Type>TRAITTRIGGER_CAST_RAISE_SKELETON</Type>
 			<CounterChanges>
 				<CounterChange>
@@ -378,13 +382,17 @@
 					<TraitType>TRAIT_SKIAMANCER</TraitType>
 					<iModifier>50</iModifier>
 				</CounterChange>
+				<CounterChange>
+					<TraitType>TRAIT_GRAVELEECH</TraitType>
+					<iModifier>50</iModifier>
+				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
 			<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
 			<PrereqSpellType>SPELL_RAISE_SKELETON</PrereqSpellType>
 			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Cast                Summon Spectre                              Necromancer -->
+		<TraitTriggerInfo> <!-- Cast                Summon Spectre                              Necromancer, Skiamancer, Graveleech -->
 			<Type>TRAITTRIGGER_CAST_SUMMON_SPECTRE</Type>
 			<CounterChanges>
 				<CounterChange>
@@ -395,13 +403,17 @@
 					<TraitType>TRAIT_SKIAMANCER</TraitType>
 					<iModifier>100</iModifier>
 				</CounterChange>
+				<CounterChange>
+					<TraitType>TRAIT_GRAVELEECH</TraitType>
+					<iModifier>100</iModifier>
+				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
 			<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
 			<PrereqSpellType>SPELL_SUMMON_SPECTRE</PrereqSpellType>
 			<bOncePerPlayer>1</bOncePerPlayer>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Cast                Summon Wraith                               Necromancer -->
+		<TraitTriggerInfo> <!-- Cast                Summon Wraith                               Necromancer, Graveleech -->
 			<Type>TRAITTRIGGER_CAST_SUMMON_WRAITH</Type>
 			<CounterChanges>
 				<CounterChange>
@@ -412,17 +424,25 @@
 					<TraitType>TRAIT_SKIAMANCER</TraitType>
 					<iModifier>15</iModifier>
 				</CounterChange>
+				<CounterChange>
+					<TraitType>TRAIT_GRAVELEECH</TraitType>
+					<iModifier>15</iModifier>
+				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
 			<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
 			<PrereqSpellType>SPELL_SUMMON_WRAITH</PrereqSpellType>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Cast                Lichdom                                     Necromancer -->
+		<TraitTriggerInfo> <!-- Cast                Lichdom                                     Necromancer, Graveleech -->
 			<Type>TRAITTRIGGER_CAST_LICHDOM</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_NECROMANCER</TraitType>
 					<iModifier>100</iModifier>
+				</CounterChange>
+				<CounterChange>
+					<TraitType>TRAIT_GRAVELEECH</TraitType>
+					<iModifier>500</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
@@ -843,6 +863,19 @@
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
 			<TraitHookType>TRAITHOOK_CONSTRUCT_BUILDING</TraitHookType>
 			<bPrereqHealth>1</bPrereqHealth>
+		</TraitTriggerInfo>
+			<TraitTriggerInfo> <!-- Construct           Soul Forge                           Graveleech -->
+			<Type>TRAITTRIGGER_CONSTRUCT_SOUL_FORGE_CHUREL</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_GRAVELEECH</TraitType>
+					<iModifier>100</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
+				<TraitHookType>TRAITHOOK_CONSTRUCT_BUILDING</TraitHookType>
+			
+			<PrereqBuildingClassType>BUILDINGCLASS_SOUL_FORGE</PrereqBuildingClassType>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Construct           Building gives health                       Expansive -->
 			<Type>TRAITTRIGGER_CONSTRUCT_BUILDING_HEALTH_IMPORTANT</Type>
@@ -2051,11 +2084,15 @@
 			<TraitHookType>TRAITHOOK_GAIN_PLOT_OWNERSHIP</TraitHookType>
 			<PrereqImprovementType>IMPROVEMENT_BAIR_OF_LACUNA</PrereqImprovementType>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Gain plot           Broken Sepulcher                            Necromancer -->
+		<TraitTriggerInfo> <!-- Gain plot           Broken Sepulcher                            Necromancer, Graveleech -->
 			<Type>TRAITTRIGGER_GAIN_PLOT_BROKEN_SEPULCHER</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_NECROMANCER</TraitType>
+					<iModifier>100</iModifier>
+				</CounterChange>
+				<CounterChange>
+					<TraitType>TRAIT_GRAVELEECH</TraitType>
 					<iModifier>100</iModifier>
 				</CounterChange>
 			</CounterChanges>
@@ -2567,11 +2604,15 @@
 			<PrereqUnitCombatType>UNITCOMBAT_ADEPT</PrereqUnitCombatType>
 			<PrereqPromotionType>PROMOTION_WATER3</PrereqPromotionType>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Gain promo          Adept           gains Death 1               Necromancer -->
+		<TraitTriggerInfo> <!-- Gain promo          Adept           gains Death 1               Necromancer, Graveleech -->
 			<Type>TRAITTRIGGER_GAIN_ADEPT_DEATH1</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_NECROMANCER</TraitType>
+					<iModifier>15</iModifier>
+				</CounterChange>
+				<CounterChange>
+					<TraitType>TRAIT_GRAVELEECH</TraitType>
 					<iModifier>15</iModifier>
 				</CounterChange>
 			</CounterChanges>
@@ -2580,11 +2621,15 @@
 			<PrereqUnitCombatType>UNITCOMBAT_ADEPT</PrereqUnitCombatType>
 			<PrereqPromotionType>PROMOTION_DEATH1</PrereqPromotionType>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Gain promo          Adept           gains Death 2               Necromancer -->
+		<TraitTriggerInfo> <!-- Gain promo          Adept           gains Death 2               Necromancer, Graveleech -->
 			<Type>TRAITTRIGGER_GAIN_ADEPT_DEATH2</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_NECROMANCER</TraitType>
+					<iModifier>30</iModifier>
+				</CounterChange>
+				<CounterChange>
+					<TraitType>TRAIT_GRAVELEECH</TraitType>
 					<iModifier>30</iModifier>
 				</CounterChange>
 			</CounterChanges>
@@ -2593,11 +2638,15 @@
 			<PrereqUnitCombatType>UNITCOMBAT_ADEPT</PrereqUnitCombatType>
 			<PrereqPromotionType>PROMOTION_DEATH2</PrereqPromotionType>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Gain promo          Adept           gains Death 3               Necromancer -->
+		<TraitTriggerInfo> <!-- Gain promo          Adept           gains Death 3               Necromancer, Graveleech -->
 			<Type>TRAITTRIGGER_GAIN_ADEPT_DEATH3</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_NECROMANCER</TraitType>
+					<iModifier>300</iModifier>
+				</CounterChange>
+				<CounterChange>
+					<TraitType>TRAIT_GRAVELEECH</TraitType>
 					<iModifier>300</iModifier>
 				</CounterChange>
 			</CounterChanges>
@@ -2809,6 +2858,19 @@
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
 			<TraitHookType>TRAITHOOK_UNIT_GAIN_PROMOTION</TraitHookType>
 			<PrereqPromotionType>PROMOTION_BLOOD_HOUND</PrereqPromotionType>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Gain promo          Anything        gains Vampire              Graveleech  -->
+			<Type>TRAITTRIGGER_GAIN_VAMPIRE_CHUREL</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_GRAVELEECH</TraitType>
+					<iModifier>30</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
+				<TraitHookType>TRAITHOOK_UNIT_GAIN_PROMOTION</TraitHookType>
+			
+			<PrereqPromotionType>PROMOTION_VAMPIRE</PrereqPromotionType>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Gain promo          Anything        gains Golem                 Craftmaster  -->
 			<Type>TRAITTRIGGER_GAIN_GOLEM</Type>
@@ -3081,7 +3143,7 @@
 				<TraitHookType>TRAITHOOK_KILL_UNIT</TraitHookType>			
 			<bUndead>1</bUndead>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Kill                Anything        kills Anything              Scorched Earth, Lycanthropic, Haunted Strategist -->
+		<TraitTriggerInfo> <!-- Kill                Anything        kills Anything              Scorched Earth, Lycanthropic, Haunted Strategist, Graveleech -->
 			<Type>TRAITTRIGGER_KILL</Type>
 			<CounterChanges>
 				<CounterChange>
@@ -3094,6 +3156,10 @@
 				</CounterChange>
 				<CounterChange>
 					<TraitType>TRAIT_HAUNTED_STRATEGIST</TraitType>
+					<iModifier>3</iModifier>
+				</CounterChange>
+				<CounterChange>
+					<TraitType>TRAIT_GRAVELEECH</TraitType>
 					<iModifier>3</iModifier>
 				</CounterChange>
 			</CounterChanges>
@@ -3626,11 +3692,15 @@
 			<TraitHookType>TRAITHOOK_LOSE_PLOT_OWNERSHIP</TraitHookType>
 			<PrereqImprovementType>IMPROVEMENT_BAIR_OF_LACUNA</PrereqImprovementType>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Lose plot           Broken Sepulcher                            Necromancer -->
+		<TraitTriggerInfo> <!-- Lose plot           Broken Sepulcher                            Necromancer, Graveleech -->
 			<Type>TRAITTRIGGER_LOSE_PLOT_BROKEN_SEPULCHER</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_NECROMANCER</TraitType>
+					<iModifier>-100</iModifier>
+				</CounterChange>
+				<CounterChange>
+					<TraitType>TRAIT_GRAVELEECH</TraitType>
 					<iModifier>-100</iModifier>
 				</CounterChange>
 			</CounterChanges>
@@ -4403,12 +4473,16 @@
 			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
 			<TraitHookType>TRAITHOOK_PLAYER_TURN</TraitHookType>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Player turn         Number of Death Mana                        Necromancer -->
+		<TraitTriggerInfo> <!-- Player turn         Number of Death Mana                        Necromancer, Graveleech -->
 			<Type>TRAITTRIGGER_PLAYER_TURN_MANA_DEATH</Type>
 			<BonusMultiplierType>BONUS_MANA_DEATH</BonusMultiplierType>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_NECROMANCER</TraitType>
+					<iModifier>1</iModifier>
+				</CounterChange>
+				<CounterChange>
+					<TraitType>TRAIT_GRAVELEECH</TraitType>
 					<iModifier>1</iModifier>
 				</CounterChange>
 			</CounterChanges>
