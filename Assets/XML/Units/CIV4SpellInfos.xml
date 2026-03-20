@@ -230,6 +230,7 @@
 			<Help>TXT_KEY_SPELL_FOR_THE_HORDE_HELP</Help>
 			<Strategy>TXT_KEY_SPELL_FOR_THE_HORDE_STRATEGY</Strategy>
 			<CivilizationPrereq>CIVILIZATION_CLAN_OF_EMBERS</CivilizationPrereq>
+			<TechPrereq>TECH_WARFARE</TechPrereq>
 			<bCityAction>1</bCityAction>
 			<bAllowAI>1</bAllowAI>
 			<bGlobal>1</bGlobal>
@@ -5796,7 +5797,9 @@
 			<Help>TEXT_KEY_SPELL_HIRE_STRATEGY</Help>
 			<UnitPrereq>UNIT_ORC_FORT_COMMANDER</UnitPrereq>
 			<CivilizationPrereq>CIVILIZATION_CLAN_OF_EMBERS</CivilizationPrereq>
+			<TechPrereq>TECH_CRAFTING</TechPrereq>
 			<bAbility>1</bAbility>
+			<bInBordersOnly>1</bInBordersOnly>
 			<iCost>25</iCost>
 			<PyResult>spellHireWarrior(pCaster)</PyResult>
 			<PyRequirement>reqHireScorpionClan(pCaster)</PyRequirement>
@@ -5934,8 +5937,10 @@
 			<Help>TEXT_KEY_SPELL_HIRE_STRATEGY</Help>
 			<PromotionPrereq1>PROMOTION_WHIP</PromotionPrereq1>
 			<CivilizationPrereq>CIVILIZATION_CLAN_OF_EMBERS</CivilizationPrereq>
+			<TechPrereq>TECH_CRAFTING</TechPrereq>
 			<bHasCasted>1</bHasCasted>
 			<bAbility>1</bAbility>
+			<bInBordersOnly>1</bInBordersOnly>
 			<iCost>25</iCost>
 			<PyResult>spellHireWarrior(pCaster)</PyResult>
 			<PyRequirement>reqHireScorpionClan(pCaster)</PyRequirement>
