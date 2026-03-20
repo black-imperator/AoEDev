@@ -9446,6 +9446,20 @@
 			<Sound>AS3D_SPELL_BREATH_FIRE</Sound>
 			<Button>Art/Interface/Buttons/Spells/Breathfire.dds</Button>
 		</SpellInfo>
+		<SpellInfo>			<!-- Become Admiral -->
+			<Type>SPELL_ADMIRAL_JOIN</Type>
+			<Description>TXT_KEY_SPELL_ADMIRAL_JOIN</Description>
+			<Strategy>TXT_KEY_SPELL_ADMIRAL_JOIN_STRATEGY</Strategy>
+			<UnitCombatPrereq>UNITCOMBAT_NAVAL</UnitCombatPrereq>
+			<bBuffCasterOnly>1</bBuffCasterOnly>
+			<AddPromotions>
+				<AddPromotion>PROMOTION_FLAGSHIP</AddPromotion>
+			</AddPromotions>
+			<PyHelp>getHelpAdmiralJoin</PyHelp>
+			<PyResult>spellAdmiralJoin(pCaster)</PyResult>
+			<PyRequirement>reqAdmiralJoin(pCaster)</PyRequirement>
+			<Button>Art/Interface/Buttons/Unitcombats/secondaryuc_commanderalt.dds</Button>
+		</SpellInfo>
 		<SpellInfo>			<!-- Commander Join -->
 			<Type>SPELL_COMMANDER_JOIN</Type>
 			<Description>TXT_KEY_SPELL_FOLLOWER_JOIN_ARMY</Description>

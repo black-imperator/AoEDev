@@ -398,6 +398,30 @@
 		<Spanish>[ICON_BULLET]Can remove [LINK=FEATURE_MIST]mist[\LINK] temporarily</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_SPELL_ADMIRAL_JOIN</Tag>
+		<English>Add an Admiral to the Vessel</English>
+		<French>Add an Admiral to the Vessel</French>
+		<German>Add an Admiral to the Vessel</German>
+		<Italian>Add an Admiral to the Vessel</Italian>
+		<Spanish>Add an Admiral to the Vessel</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_ADMIRAL_JOIN_STRATEGY</Tag>
+		<English>[ICON_BULLET]This Spell requires a Great Commander on the same plot as the vessel.[NEWLINE][ICON_BULLET]Casting the Spell will sacrifice a Great Commander.</English>
+		<French>[ICON_BULLET]This Spell requires a Great Commander on the same plot as the vessel.[NEWLINE][ICON_BULLET]Casting the Spell will sacrifice a Great Commander.</French>
+		<German>[ICON_BULLET]This Spell requires a Great Commander on the same plot as the vessel.[NEWLINE][ICON_BULLET]Casting the Spell will sacrifice a Great Commander.</German>
+		<Italian>[ICON_BULLET]This Spell requires a Great Commander on the same plot as the vessel.[NEWLINE][ICON_BULLET]Casting the Spell will sacrifice a Great Commander.</Italian>
+		<Spanish>[ICON_BULLET]This Spell requires a Great Commander on the same plot as the vessel.[NEWLINE][ICON_BULLET]Casting the Spell will sacrifice a Great Commander.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ADM_JOIN_PYHELP_TARGET</Tag>
+		<English>[ICON_BULLET]Make this vessel a Flagship[NEWLINE][ICON_BULLET][COLOR_RED]This action will sacrifice %s1[COLOR_REVERT] and add [COLOR_TECH_TEXT]Flagship[COLOR_REVERT] promotion to the vessel</English>
+		<French>[ICON_BULLET]Make this vessel a Flagship[NEWLINE][ICON_BULLET][COLOR_RED]This action will sacrifice %s1[COLOR_REVERT] and add [COLOR_TECH_TEXT]Flagship[COLOR_REVERT] promotion to the vessel</French>
+		<German>[ICON_BULLET]Make this vessel a Flagship[NEWLINE][ICON_BULLET][COLOR_RED]This action will sacrifice %s1[COLOR_REVERT] and add [COLOR_TECH_TEXT]Flagship[COLOR_REVERT] promotion to the vessel</German>
+		<Italian>[ICON_BULLET]Make this vessel a Flagship[NEWLINE][ICON_BULLET][COLOR_RED]This action will sacrifice %s1[COLOR_REVERT] and add [COLOR_TECH_TEXT]Flagship[COLOR_REVERT] promotion to the vessel</Italian>
+		<Spanish>[ICON_BULLET]Make this vessel a Flagship[NEWLINE][ICON_BULLET][COLOR_RED]This action will sacrifice %s1[COLOR_REVERT] and add [COLOR_TECH_TEXT]Flagship[COLOR_REVERT] promotion to the vessel</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_SPELL_HIRE_GIANT</Tag>
 		<English>Hire Giant</English>
 		<French>Recruter un Géant</French>
