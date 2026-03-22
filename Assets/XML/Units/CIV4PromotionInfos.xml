@@ -38847,6 +38847,19 @@
 			</UnitCombats>
 			<bGraphicalOnly>1</bGraphicalOnly>
 		</PromotionInfo>
+		<PromotionInfo>		<!-- Blood Hound Prey -->
+			<Type>PROMOTION_BLOODHOUND_PREY</Type>
+			<Description>TXT_KEY_PROMOTION_BLOODHOUND_PREY</Description>
+			<iMinLevel>-1</iMinLevel>
+			<iPromotionDuration>5</iPromotionDuration>
+			<bNoDefenseBonus>1</bNoDefenseBonus>
+			<iEnemyHealChange>-3</iEnemyHealChange>
+			<iNeutralHealChange>-5</iNeutralHealChange>
+			<iFriendlyHealChange>-8</iFriendlyHealChange>
+			<iCombatPercent>-10</iCombatPercent>
+			<bRemovedWhenHealed>1</bRemovedWhenHealed>
+			<Button>Art/Interface/Buttons/Promotions/PackAlpha.dds</Button>
+		</PromotionInfo>
 		<PromotionInfo>		<!-- Blood Hounds -->					<!--  -->
 			<Type>PROMOTION_BLOOD_HOUND</Type>
 			<Description>TXT_KEY_PROMOTION_BLOOD_HOUND</Description>
@@ -38859,17 +38872,17 @@
 					<iPrereqApplications>1</iPrereqApplications>
 				</PrereqPromotionAND>
 			</PrereqPromotionANDs>
+			<bAutoAcquire>1</bAutoAcquire>
+			<bNoXP>1</bNoXP>
 			<iMinLevel>6</iMinLevel>
 			<iExtraCombatStr>2</iExtraCombatStr>
-			<iCommandLimit>3</iCommandLimit>
-			<iCommandRange>2</iCommandRange>
-			<SecondaryUnitCombats>
-				<SecondaryUnitCombat>UNITCOMBAT_COMMANDER</SecondaryUnitCombat>
-			</SecondaryUnitCombats>
-			<MinionPromotions>
-				<PromotionType>PROMOTION_LOYALTY2</PromotionType>
-				<PromotionType>PROMOTION_CANNIBALIZE</PromotionType>
-			</MinionPromotions>
+			<AuraBonuses>
+				<AuraBonus>
+					<bApplyEnemy>1</bApplyEnemy>
+					<iBonusRange>1</iBonusRange>
+					<Promotion>PROMOTION_BLOODHOUND_PREY</Promotion>
+				</AuraBonus>
+			</AuraBonuses>
 			<Button>Art/Interface/Buttons/Promotions/PackAlpha.dds</Button>
 			<iAIWeight>300</iAIWeight>
 		</PromotionInfo>
