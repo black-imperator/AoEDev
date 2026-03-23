@@ -29452,8 +29452,7 @@
 				<AudioRunTypeLoop/>
 				<AudioRunTypeEnd/>
 			</AudioRunSounds>
-			<SelectionSound>AS3D_LOSHA_SELECT</SelectionSound>
-			<ActionSound>AS3D_LOSHA_ORDER</ActionSound>
+			<SelectionSound>AS3D_SUCCUBUS_SELECT</SelectionSound>
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- UNIT_WAR_ELEPHANT in UNIT_ARTSTYLE_SHEAIM -->
 			<Type>ART_DEF_UNIT_WAR_ELEPHANT_SHEAIM</Type>

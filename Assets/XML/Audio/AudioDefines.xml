@@ -10628,7 +10628,7 @@ bInGeneric: Unknown. Always 1.
 		</SoundData>
 		<SoundData>
 			<SoundID>SND_SUCCUBUS_SELECT</SoundID>
-			<Filename>Sounds/Units/SuccubusSelect-001</Filename>
+			<Filename>Sounds/Units/WowSuccubusSelect</Filename>
 			<LoadType>DYNAMIC_RES</LoadType>
 			<bIsCompressed>1</bIsCompressed>
 			<bInGeneric>1</bInGeneric>
