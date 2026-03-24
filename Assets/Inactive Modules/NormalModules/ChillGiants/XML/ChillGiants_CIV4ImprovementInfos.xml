@@ -9,13 +9,6 @@
 		<ImprovementInfo><!-- Staedding -->
 			<Type>IMPROVEMENT_MARNOK_HILLGIANT_STEADING</Type>
 			<iAppearanceProbability>1</iAppearanceProbability>
-			<iLairCreationWeight>30</iLairCreationWeight>
-			<LairCreationWeightTechs>
-				<LairCreationWeightTech>
-					<LairCreationWeightTechType>TECH_CONSTRUCTION</LairCreationWeightTechType>
-					<iLairCreationWeightTech>-30</iLairCreationWeightTech>
-				</LairCreationWeightTech>
-			</LairCreationWeightTechs>
 		</ImprovementInfo>
 	</ImprovementInfos>
 </Civ4ImprovementInfos>
