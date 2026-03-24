@@ -10394,6 +10394,18 @@ def spellCreateMist(pCity):
 #		pPlot.setMistChangeTemp(3)
 #		pPlot.setMistChangeTimer(scale(6))
 
+def reqWane(caster):
+	if caster.getUnitCombatType() == gc.getInfoTypeForString('UNITCOMBAT_ANIMAL'):
+		return False
+	if caster.getUnitCombatType() == gc.getInfoTypeForString('UNITCOMBAT_BEAST'):
+		return False
+	if caster.isImmortal():
+		return False
+	pPlayer = gc.getPlayer(caster.getOwner())
+	if pPlayer.getUnitClassCount(gc.getInfoTypeForString('UNITCLASS_SHADE')) >= 4:
+		return False
+	return True
+
 
 def reqCreateMist(pCity):
 	pPlayer = gc.getPlayer(pCity.getOwner())

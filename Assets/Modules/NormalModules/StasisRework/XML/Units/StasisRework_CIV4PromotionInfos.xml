@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!-- Formatted by Xienwolf -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Promotion Infos -->
+<Civ4PromotionInfos xmlns="x-schema:StasisRework_CIV4UnitSchema.xml">
+	<PromotionInfos>
+		<PromotionInfo>		<!-- Chilled Body -->
+			<Type>PROMOTION_CHILLED_BODY</Type>
+			<Description>TXT_KEY_PROMOTION_CHILLED_BODY</Description>
+			<iMovesChange>-1</iMovesChange>
+			<iMoveDiscountChange>-1</iMoveDiscountChange>
+			<iWithdrawalChange>-40</iWithdrawalChange>
+			<Button>Art/Interface/Buttons/Promotions/Slow.dds</Button>
+			<iAIWeight>-50</iAIWeight>
+			<iExpireChance>11</iExpireChance>
+			<iMinLevel>-1</iMinLevel>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Chilled Soul -->
+			<Type>PROMOTION_CHILLED_SOUL</Type>
+			<Description>TXT_KEY_PROMOTION_CHILLED_SOUL</Description>
+			<iExperiencePercent>-100</iExperiencePercent>
+			<Button>Art/Interface/Buttons/Spells/stasis.dds</Button>
+			<iExpireChance>11</iExpireChance>
+			<iMinLevel>-1</iMinLevel>
+		</PromotionInfo>
+	</PromotionInfos>
+</Civ4PromotionInfos>

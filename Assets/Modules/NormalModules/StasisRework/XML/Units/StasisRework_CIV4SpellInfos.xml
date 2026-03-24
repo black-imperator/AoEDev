@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Spell Infos -->
+<Civ4SpellInfos xmlns="x-schema:StasisRework_CIV4UnitSpellSchema.xml">
+	<SpellInfos>
+		<SpellInfo>			<!-- Reworked Stasis -->
+			<Type>SPELL_STASIS</Type>
+			<Description>TXT_KEY_SPELL_STASIS</Description>
+			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
+			<Help>TXT_KEY_SPELL_REWORKEDSTASIS_HELP</Help>
+			<CivilizationPrereq>CIVILIZATION_ILLIANS</CivilizationPrereq>
+			<bCityAction>1</bCityAction>
+			<bAllowAI>1</bAllowAI>
+			<bGlobal>1</bGlobal>
+			<TechPrereq>TECH_KNOWLEDGE_OF_THE_ETHER</TechPrereq>
+			<Quote>TXT_KEY_GLOBALSPELL_REWORKEDSTASIS</Quote>
+			<iAIWeight>50</iAIWeight>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+			<PyResult>spellStasisReworked(pCaster)</PyResult>
+			<PyRequirement>reqStasisReworked(pCaster)</PyRequirement>
+			<Effect>EFFECT_SPELL1</Effect>
+			<Sound>AS3D_ALTERATION</Sound>
+			<Button>Art/Interface/Buttons/Spells/Stasis.dds</Button>
+		</SpellInfo>
+	</SpellInfos>
+</Civ4SpellInfos>

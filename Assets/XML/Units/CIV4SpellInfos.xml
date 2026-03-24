@@ -8994,6 +8994,20 @@
 			<Sound>AS3D_SPELL_REDWHIRL</Sound>
 			<Button>Art/Interface/Buttons/Spells/seversoul.dds</Button>
 		</SpellInfo>
+		<SpellInfo> <!-- Waning a shade -->
+            <Type>SPELL_WANE</Type>
+            <Description>TXT_KEY_SPELL_WANE</Description>
+            <Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+            <CivilizationPrereq>CIVILIZATION_SIDAR</CivilizationPrereq>
+            <bCasterMustBeAlive>1</bCasterMustBeAlive>
+            <iCasterMinLevel>6</iCasterMinLevel>
+            <bHasCasted>1</bHasCasted>
+            <ConvertUnitType>UNIT_SHADE</ConvertUnitType>
+            <PyRequirement>reqWane(pCaster)</PyRequirement>
+            <Effect>EFFECT_SPELL1</Effect>
+            <Sound>AS3D_SPELL_INSPIRATION</Sound>
+            <Button>Art/Interface/Buttons/Units/Shade.dds</Button>
+        </SpellInfo>
 	<!--	<SpellInfo>			 Create Mist 						 BEGIN CITY ACTIONS  
 			<Type>SPELL_CREATE_MIST</Type>
 			<Description>TXT_KEY_SPELL_CREATE_MIST</Description>
