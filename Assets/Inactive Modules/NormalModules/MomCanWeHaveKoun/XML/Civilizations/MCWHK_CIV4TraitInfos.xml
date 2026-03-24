@@ -681,10 +681,6 @@
 					<BuildingClassType>BUILDINGCLASS_HUNTING_LODGE</BuildingClassType>
 					<BuildingType>BUILDING_EXPLORATION_GUILD</BuildingType>
 				</ExtraBuildingClass>
-				<ExtraBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_AUSTRIN_SETTLEMENT</BuildingClassType>
-					<BuildingType>BUILDING_AUSTRIN_SETTLEMENT</BuildingType>
-				</ExtraBuildingClass>
 			</ExtraBuildingClasses>		
 			<FreePromotions>
 				<FreePromotion>

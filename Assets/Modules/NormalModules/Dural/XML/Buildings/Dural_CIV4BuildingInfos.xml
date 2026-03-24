@@ -1862,55 +1862,55 @@
 			<TrainXPRates>
 				<TrainXPRate>
 					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
-					<fTrainXPRate>0.4</fTrainXPRate>
+					<fTrainXPRate>1</fTrainXPRate>
 				</TrainXPRate>
 				<TrainXPRate>
 					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
-					<fTrainXPRate>0.4</fTrainXPRate>
+					<fTrainXPRate>1</fTrainXPRate>
 				</TrainXPRate>
 				<TrainXPRate>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
-					<fTrainXPRate>0.4</fTrainXPRate>
+					<fTrainXPRate>1</fTrainXPRate>
 				</TrainXPRate>
 				<TrainXPRate>
 					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
-					<fTrainXPRate>0.4</fTrainXPRate>
+					<fTrainXPRate>1</fTrainXPRate>
 				</TrainXPRate>
 				<TrainXPRate>
 					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
-					<fTrainXPRate>0.4</fTrainXPRate>
+					<fTrainXPRate>1</fTrainXPRate>
 				</TrainXPRate>
 				<TrainXPRate>
 					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
-					<fTrainXPRate>0.4</fTrainXPRate>
+					<fTrainXPRate>1</fTrainXPRate>
 				</TrainXPRate>
 				<TrainXPRate>
 					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
-					<fTrainXPRate>0.4</fTrainXPRate>
+					<fTrainXPRate>1</fTrainXPRate>
 				</TrainXPRate>
 				<TrainXPRate>
 					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
-					<fTrainXPRate>0.4</fTrainXPRate>
+					<fTrainXPRate>1</fTrainXPRate>
 				</TrainXPRate>
 				<TrainXPRate>
 					<UnitCombatType>UNITCOMBAT_ANIMAL</UnitCombatType>
-					<fTrainXPRate>0.4</fTrainXPRate>
+					<fTrainXPRate>1</fTrainXPRate>
 				</TrainXPRate>
 				<TrainXPRate>
 					<UnitCombatType>UNITCOMBAT_BEAST</UnitCombatType>
-					<fTrainXPRate>0.4</fTrainXPRate>
+					<fTrainXPRate>1</fTrainXPRate>
 				</TrainXPRate>
 				<TrainXPRate>
 					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
-					<fTrainXPRate>0.4</fTrainXPRate>
+					<fTrainXPRate>1</fTrainXPRate>
 				</TrainXPRate>
 				<TrainXPRate>
 					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
-					<fTrainXPRate>0.4</fTrainXPRate>
+					<fTrainXPRate>1</fTrainXPRate>
 				</TrainXPRate>
 				<TrainXPRate>
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
-					<fTrainXPRate>0.4</fTrainXPRate>
+					<fTrainXPRate>1</fTrainXPRate>
 				</TrainXPRate>
 			</TrainXPRates>
 		</BuildingInfo>

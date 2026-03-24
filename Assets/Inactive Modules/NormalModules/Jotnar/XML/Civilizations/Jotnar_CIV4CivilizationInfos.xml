@@ -778,5 +778,24 @@
 				</Leader>
 			</Leaders>
 		</CivilizationInfo>
+		
+		<CivilizationInfo><!-- Jotnar -->
+			<Type>CIVILIZATION_JOTNAR</Type>
+			<bTypeDependency>1</bTypeDependency>
+				<AndDependencyTypes>
+			<DependencyType>MODULE_VICIOUSSEAS</DependencyType>
+			</AndDependencyTypes>
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_TRAWLING_BOATS</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>3</iYield>
+						<iYield>2</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
+		</CivilizationInfo>
+		
 	</CivilizationInfos>
 </Civ4CivilizationInfos>
