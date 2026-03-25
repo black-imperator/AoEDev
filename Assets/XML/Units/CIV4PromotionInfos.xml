@@ -12123,19 +12123,6 @@
 			<Button>Art/Interface/Buttons/Promotions/Instability.dds</Button>
 			<iMinLevel>-1</iMinLevel>
 		</PromotionInfo>
-		<PromotionInfo>		<!-- Instructor -->
-			<Type>PROMOTION_INSTRUCTOR</Type>
-			<Description>TXT_KEY_PROMOTION_INSTRUCTOR</Description>
-			<CityBonuses>
-				<CityBonus>
-					<bApplySelf>1</bApplySelf>
-					<fTrainXPCap>5</fTrainXPCap>
-					<fTrainXPRate>0.70</fTrainXPRate>
-				</CityBonus>
-			</CityBonuses>
-			<Button>Art/Interface/Buttons/Promotions/Instructor.dds</Button>
-			<iMinLevel>-1</iMinLevel>
-		</PromotionInfo>
 		<PromotionInfo>		<!-- Invisible -->
 			<Type>PROMOTION_INVISIBLE</Type>
 			<Description>TXT_KEY_PROMOTION_INVISIBLE</Description>

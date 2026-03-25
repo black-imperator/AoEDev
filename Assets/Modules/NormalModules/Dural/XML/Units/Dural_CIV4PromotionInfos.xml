@@ -374,6 +374,7 @@
 				<Promotion>PROMOTION_DURAL_STUDENT_RECON</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_ROGUE</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_COMMANDER</Promotion>
+				<Promotion>PROMOTION_DURAL_STUDENT_INSTRUCTOR</Promotion>
 			</PromotionExcludes>
 			<PromotionOverwrites>
 				<Promotion>PROMOTION_DURAL_STUDENT_MELEE</Promotion>
@@ -388,6 +389,7 @@
 				<Promotion>PROMOTION_DURAL_STUDENT_RECON</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_ROGUE</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_COMMANDER</Promotion>
+				<Promotion>PROMOTION_DURAL_STUDENT_INSTRUCTOR</Promotion>
 			</PromotionOverwrites>
 			<AuraBonuses>
 				<AuraBonus>
@@ -445,6 +447,7 @@
 				<Promotion>PROMOTION_DURAL_STUDENT_RECON</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_ROGUE</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_COMMANDER</Promotion>
+				<Promotion>PROMOTION_DURAL_STUDENT_INSTRUCTOR</Promotion>
 			</PromotionExcludes>
 			<PromotionOverwrites>
 				<Promotion>PROMOTION_DURAL_STUDENT_MELEE</Promotion>
@@ -459,6 +462,7 @@
 				<Promotion>PROMOTION_DURAL_STUDENT_RECON</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_ROGUE</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_COMMANDER</Promotion>
+				<Promotion>PROMOTION_DURAL_STUDENT_INSTRUCTOR</Promotion>
 			</PromotionOverwrites>
 			<AuraBonuses>
 				<AuraBonus>
@@ -516,6 +520,7 @@
 				<Promotion>PROMOTION_DURAL_STUDENT_RECON</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_ROGUE</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_COMMANDER</Promotion>
+				<Promotion>PROMOTION_DURAL_STUDENT_INSTRUCTOR</Promotion>
 			</PromotionExcludes>
 			<PromotionOverwrites>
 				<Promotion>PROMOTION_DURAL_STUDENT_MELEE</Promotion>
@@ -530,6 +535,7 @@
 				<Promotion>PROMOTION_DURAL_STUDENT_RECON</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_ROGUE</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_COMMANDER</Promotion>
+				<Promotion>PROMOTION_DURAL_STUDENT_INSTRUCTOR</Promotion>
 			</PromotionOverwrites>
 			<AuraBonuses>
 				<AuraBonus>
@@ -595,6 +601,7 @@
 				<Promotion>PROMOTION_DURAL_STUDENT_RECON</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_ROGUE</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_COMMANDER</Promotion>
+				<Promotion>PROMOTION_DURAL_STUDENT_INSTRUCTOR</Promotion>
 			</PromotionExcludes>
 			<PromotionOverwrites>
 				<Promotion>PROMOTION_DURAL_STUDENT_MELEE</Promotion>
@@ -609,6 +616,7 @@
 				<Promotion>PROMOTION_DURAL_STUDENT_RECON</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_ROGUE</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_COMMANDER</Promotion>
+				<Promotion>PROMOTION_DURAL_STUDENT_INSTRUCTOR</Promotion>
 			</PromotionOverwrites>
 			<AuraBonuses>
 				<AuraBonus>
@@ -666,6 +674,7 @@
 				<Promotion>PROMOTION_DURAL_STUDENT_RECON</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_ROGUE</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_COMMANDER</Promotion>
+				<Promotion>PROMOTION_DURAL_STUDENT_INSTRUCTOR</Promotion>
 			</PromotionExcludes>
 			<PromotionOverwrites>
 				<Promotion>PROMOTION_DURAL_STUDENT_MELEE</Promotion>
@@ -680,6 +689,7 @@
 				<Promotion>PROMOTION_DURAL_STUDENT_RECON</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_ROGUE</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_COMMANDER</Promotion>
+				<Promotion>PROMOTION_DURAL_STUDENT_INSTRUCTOR</Promotion>
 			</PromotionOverwrites>
 			<AuraBonuses>
 				<AuraBonus>
@@ -737,6 +747,7 @@
 				<Promotion>PROMOTION_DURAL_STUDENT_RECON</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_ROGUE</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_COMMANDER</Promotion>
+				<Promotion>PROMOTION_DURAL_STUDENT_INSTRUCTOR</Promotion>
 			</PromotionExcludes>
 			<PromotionOverwrites>
 				<Promotion>PROMOTION_DURAL_STUDENT_MELEE</Promotion>
@@ -751,6 +762,7 @@
 				<Promotion>PROMOTION_DURAL_STUDENT_RECON</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_ROGUE</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_COMMANDER</Promotion>
+				<Promotion>PROMOTION_DURAL_STUDENT_INSTRUCTOR</Promotion>
 			</PromotionOverwrites>
 			<AuraBonuses>
 				<AuraBonus>
@@ -808,6 +820,7 @@
 				<Promotion>PROMOTION_DURAL_STUDENT_RECON</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_ROGUE</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_COMMANDER</Promotion>
+				<Promotion>PROMOTION_DURAL_STUDENT_INSTRUCTOR</Promotion>
 			</PromotionExcludes>
 			<PromotionOverwrites>
 				<Promotion>PROMOTION_DURAL_STUDENT_MELEE</Promotion>
@@ -822,6 +835,7 @@
 				<Promotion>PROMOTION_DURAL_STUDENT_RECON</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_ROGUE</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_COMMANDER</Promotion>
+				<Promotion>PROMOTION_DURAL_STUDENT_INSTRUCTOR</Promotion>
 			</PromotionOverwrites>
 			<AuraBonuses>
 				<AuraBonus>
@@ -879,6 +893,7 @@
 				<Promotion>PROMOTION_DURAL_STUDENT_RECON</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_ROGUE</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_COMMANDER</Promotion>
+				<Promotion>PROMOTION_DURAL_STUDENT_INSTRUCTOR</Promotion>
 			</PromotionExcludes>
 			<PromotionOverwrites>
 				<Promotion>PROMOTION_DURAL_STUDENT_MELEE</Promotion>
@@ -893,6 +908,7 @@
 				<Promotion>PROMOTION_DURAL_STUDENT_RECON</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_ROGUE</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_COMMANDER</Promotion>
+				<Promotion>PROMOTION_DURAL_STUDENT_INSTRUCTOR</Promotion>
 			</PromotionOverwrites>
 			<AuraBonuses>
 				<AuraBonus>
@@ -950,6 +966,7 @@
 				<Promotion>PROMOTION_DURAL_STUDENT_RECON</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_ROGUE</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_COMMANDER</Promotion>
+				<Promotion>PROMOTION_DURAL_STUDENT_INSTRUCTOR</Promotion>
 			</PromotionExcludes>
 			<PromotionOverwrites>
 				<Promotion>PROMOTION_DURAL_STUDENT_MELEE</Promotion>
@@ -964,6 +981,7 @@
 				<Promotion>PROMOTION_DURAL_STUDENT_RECON</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_ROGUE</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_COMMANDER</Promotion>
+				<Promotion>PROMOTION_DURAL_STUDENT_INSTRUCTOR</Promotion>
 			</PromotionOverwrites>
 			<AuraBonuses>
 				<AuraBonus>
@@ -1021,6 +1039,7 @@
 				<Promotion>PROMOTION_DURAL_STUDENT_RECON</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_ROGUE</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_COMMANDER</Promotion>
+				<Promotion>PROMOTION_DURAL_STUDENT_INSTRUCTOR</Promotion>
 			</PromotionExcludes>
 			<PromotionOverwrites>
 				<Promotion>PROMOTION_DURAL_STUDENT_MELEE</Promotion>
@@ -1035,6 +1054,7 @@
 				<Promotion>PROMOTION_DURAL_STUDENT_RECON</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_ROGUE</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_COMMANDER</Promotion>
+				<Promotion>PROMOTION_DURAL_STUDENT_INSTRUCTOR</Promotion>
 			</PromotionOverwrites>
 			<AuraBonuses>
 				<AuraBonus>
@@ -1092,6 +1112,7 @@
 				<Promotion>PROMOTION_DURAL_STUDENT_RECON</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_ROGUE</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_COMMANDER</Promotion>
+				<Promotion>PROMOTION_DURAL_STUDENT_INSTRUCTOR</Promotion>
 			</PromotionExcludes>
 			<PromotionOverwrites>
 				<Promotion>PROMOTION_DURAL_STUDENT_MELEE</Promotion>
@@ -1106,6 +1127,7 @@
 				<Promotion>PROMOTION_DURAL_STUDENT_RECON</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_ROGUE</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_COMMANDER</Promotion>
+				<Promotion>PROMOTION_DURAL_STUDENT_INSTRUCTOR</Promotion>
 			</PromotionOverwrites>
 			<AuraBonuses>
 				<AuraBonus>
@@ -1163,6 +1185,7 @@
 				<Promotion>PROMOTION_DURAL_STUDENT_RECON</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_ROGUE</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_COMMANDER</Promotion>
+				<Promotion>PROMOTION_DURAL_STUDENT_INSTRUCTOR</Promotion>
 			</PromotionExcludes>
 			<PromotionOverwrites>
 				<Promotion>PROMOTION_DURAL_STUDENT_MELEE</Promotion>
@@ -1177,6 +1200,7 @@
 				<Promotion>PROMOTION_DURAL_STUDENT_RECON</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_ROGUE</Promotion>
 				<Promotion>PROMOTION_DURAL_STUDENT_COMMANDER</Promotion>
+				<Promotion>PROMOTION_DURAL_STUDENT_INSTRUCTOR</Promotion>
 			</PromotionOverwrites>
 			<AuraBonuses>
 				<AuraBonus>
@@ -1193,6 +1217,94 @@
 				</UnitCombat>
 			</UnitCombats>
 			<Button>,Art/Interface/Teamcolor/Duralbutton.dds</Button>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Dural military apprenticeship -  INSTRUCTOR Karrlson   -->
+			<Type>PROMOTION_DURAL_STUDENT_INSTRUCTOR</Type>
+			<Description>TXT_KEY_DURAL_STUDENT_INSTRUCTOR</Description>
+			<iFreeXPPerTurn>0.50</iFreeXPPerTurn>
+            <fFreeXPCap>100</fFreeXPCap>
+			<bNoXP>1</bNoXP>
+			<iMinLevel>-1</iMinLevel>
+			<iPromotionDuration>5</iPromotionDuration>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ANIMAL</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_BEAST</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>,Art/Interface/Teamcolor/Duralbutton.dds</Button>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Instructor -->
+			<Type>PROMOTION_INSTRUCTOR</Type>
+			<Description>TXT_KEY_PROMOTION_INSTRUCTOR</Description>
+			<PromotionExcludes>
+				<Promotion>PROMOTION_DURAL_STUDENT_INSTRUCTOR</Promotion>
+			</PromotionExcludes>
+			<PromotionOverwrites>
+				<Promotion>PROMOTION_DURAL_STUDENT_INSTRUCTOR</Promotion>
+			</PromotionOverwrites>
+			<AuraBonuses>
+				<AuraBonus>
+					<bApplySelf>1</bApplySelf>
+					<bApplyTeam>1</bApplyTeam>
+						<Promotion>PROMOTION_DURAL_STUDENT_INSTRUCTOR</Promotion>
+					<iBonusRange>1</iBonusRange>
+				</AuraBonus>
+			</AuraBonuses>
+			<Button>Art/Interface/Buttons/Promotions/Instructor.dds</Button>
+			<iMinLevel>-1</iMinLevel>
 		</PromotionInfo>
 	</PromotionInfos>
 </Civ4PromotionInfos>

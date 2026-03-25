@@ -937,6 +937,14 @@ Alongside that, the college also encourages common citizens to share their perso
 		<Spanish>Pikes</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_DURAL_STUDENT_INSTRUCTOR</Tag>
+		<English>Student - Instructor Karrlson</English>
+		<French>Student - Instructor Karrlson</French>
+		<German>Student - Instructor Karrlson</German>
+		<Italian>Student - Instructor Karrlson</Italian>
+		<Spanish>Student - Instructor Karrlson</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_TRAIT_DURAL_EDUCATED</Tag>
 		<English>Educated</English>
 		<French>Educated</French>
