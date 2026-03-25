@@ -14431,6 +14431,7 @@
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Pack Alpha -->
 			<Type>PROMOTION_PACK_ALPHA</Type>
+			<Description>TXT_KEY_PROMOTION_PACK_ALPHA</Description>
 			<PrereqPromotionORs>
 				<PrereqPromotionOR>
 					<PromotionType>PROMOTION_WEREWOLF</PromotionType>

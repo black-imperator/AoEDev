@@ -2467,7 +2467,7 @@
 			<iWeaponTierMax>3</iWeaponTierMax>
 			<ReligionType>RELIGION_OCTOPUS_OVERLORDS</ReligionType>
 			<Image>Art/Interface/Popups/CondatisBanner.dds</Image>
-			<Quote>TXT_KEY_POPUP_CONDATIS</Quote>
+			<Quote>TXT_KEY_UNIT_CONDATIS_PEDIA</Quote>
 			<DamageTypeCombats>
 				<DamageTypeCombat>
 					<DamageType>DAMAGE_HOLY</DamageType>
