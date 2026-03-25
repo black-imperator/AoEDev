@@ -76,7 +76,7 @@
 			<KFM/>
 			<Button>Modules\NormalModules\DrackNamko\Art\Buildings\MoneyChanger.dds</Button>
 		</BuildingArtInfo>
-		<BuildingArtInfo> <!-- Library UB - Eternal Halls -->
+		<BuildingArtInfo> 	<!-- Library UB - Eternal Halls -->
 			<Type>ART_DEF_BUILDING_NAMKO_LIBRARY</Type>
 			<LSystem>LSYSTEM_3x2</LSystem>
 			<bAnimated>0</bAnimated>
@@ -85,6 +85,16 @@
 			<NIF>Art/Structures/Buildings/Library/Library.nif</NIF>
 			<KFM/>
 			<Button>Modules\NormalModules\DrackNamko\Art\Buildings\Library.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> 	<!-- Deathless Lighthouse -->
+			<Type>ART_DEF_BUILDING_NAMKO_LIGHTHOUSE</Type>
+			<LSystem>LSYSTEM_LIGHTHOUSE</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>.95</fScale>
+			<fInterfaceScale>0.75</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Lighthouse/Lighthouse.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackNamko\Art\Buildings\DeathlessLighthouse.dds</Button>
 		</BuildingArtInfo>
 	</BuildingArtInfos>
 </Civ4ArtDefines>

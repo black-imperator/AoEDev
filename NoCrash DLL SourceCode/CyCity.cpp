@@ -2722,3 +2722,7 @@ int CyCity::getCityBuildings(int iUnitClass)
 	return m_pCity ? m_pCity->getCityBuildings(iUnitClass) : NO_BUILDING;
 
 }
+int CyCity::getSpellExtraRange() const
+{
+	return m_pCity ? m_pCity->getSpellExtraRange() : -1;
+}

@@ -52,7 +52,7 @@
 			</FeatureMoveCosts>
 			<Button>Modules\NormalModules\DrackAosNiSira\Art\other\Sira_Race_Button.dds</Button>
 			<bRace>1</bRace>
-			<UnitArtStyleType>UNIT_ARTSTYLE_ELF</UnitArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_FAIRIES</UnitArtStyleType>
 			<DamageTypeResists>
 				<DamageTypeResist>
 					<DamageType>DAMAGE_HOLY</DamageType>
@@ -72,7 +72,7 @@
 				</DamageTypeResist>
 			</DamageTypeResists>
 		</PromotionInfo>
-		<PromotionInfo>        <!-- Forest Stealth     added more unitclasses to forest stealth-->
+		<PromotionInfo> <!-- Forest Stealth     added more unitclasses to forest stealth-->
 			<Type>PROMOTION_FOREST_STEALTH</Type>
 			<UnitCombats>
 				<UnitCombat>
@@ -83,7 +83,215 @@
 					<UnitCombatType>UNITCOMBAT_BEAST</UnitCombatType>
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
 			</UnitCombats>
 		</PromotionInfo> 
+		<PromotionInfo> <!-- Fairy Species Promotion -->
+			<Type>PROMOTION_RACE_FAIRY</Type>
+			<Description>Fairy</Description>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\other\faerie.dds</Button>
+			<bRace>1</bRace>
+			<UnitArtStyleType>UNIT_ARTSTYLE_FAIRIES</UnitArtStyleType>
+			<DamageTypeResists>
+				<DamageTypeResist>
+					<DamageType>DAMAGE_HOLY</DamageType>
+					<iResist>-25</iResist>
+				</DamageTypeResist>
+				<DamageTypeResist>
+					<DamageType>DAMAGE_UNHOLY</DamageType>
+					<iResist>-25</iResist>
+				</DamageTypeResist>
+				<DamageTypeResist>
+					<DamageType>DAMAGE_POISON</DamageType>
+					<iResist>25</iResist>
+				</DamageTypeResist>
+			</DamageTypeResists>
+		</PromotionInfo>
+		<PromotionInfo>	<!-- Falyn Mushroom Affinity -->
+			<Type>PROMOTION_FALYN_MUSHROOM_AFFINITY_ENABLER</Type>
+			<Description>TXT_KEY_PROMOTION_FALYN_MUSHROOM_AFFINITY_ENABLER</Description>
+			<iAsset>5</iAsset>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\other\FalynMushroomAddiction.dds</Button>
+			<Affinities>
+				<Affinity>AFFINITY_FALYN_MUSHROOM</Affinity>
+			</Affinities>
+			<iMinLevel>-1</iMinLevel>
+			<bNoXP>1</bNoXP>
+			<PrereqTraits>
+				<PrereqTrait>TRAIT_COURT_OF_FALYN</PrereqTrait>
+			</PrereqTraits>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+		</PromotionInfo>
+		<PromotionInfo> <!-- Red Fairy -->
+			<Type>PROMOTION_FAIRY_RED</Type>
+			<Description>Red Fairy</Description>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\other\FairyRed.dds</Button>
+			<DamageTypeResists>
+				<DamageTypeResist>
+					<DamageType>DAMAGE_FIRE</DamageType>
+					<iResist>25</iResist>
+				</DamageTypeResist>
+			</DamageTypeResists>
+			<DamageTypeCombats>
+				<DamageTypeCombat>
+					<DamageType>DAMAGE_FIRE</DamageType>
+					<iCombat>1</iCombat>
+				</DamageTypeCombat>
+			</DamageTypeCombats>
+		</PromotionInfo>
+		<PromotionInfo> <!-- White Fairy -->
+			<Type>PROMOTION_FAIRY_WHITE</Type>
+			<Description>White Fairy</Description>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\other\FairyWhite.dds</Button>
+			<DamageTypeResists>
+				<DamageTypeResist>
+					<DamageType>DAMAGE_COLD</DamageType>
+					<iResist>25</iResist>
+				</DamageTypeResist>
+			</DamageTypeResists>
+			<DamageTypeCombats>
+				<DamageTypeCombat>
+					<DamageType>DAMAGE_COLD</DamageType>
+					<iCombat>1</iCombat>
+				</DamageTypeCombat>
+			</DamageTypeCombats>
+		</PromotionInfo>
+		<PromotionInfo> <!-- Purple Fairy -->
+			<Type>PROMOTION_FAIRY_PURPLE</Type>
+			<Description>Purple Fairy</Description>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\other\FairyPurple.dds</Button>
+			<iMovesChange>1</iMovesChange>
+			<iWithdrawalChange>15</iWithdrawalChange>
+		</PromotionInfo>
+		<PromotionInfo> <!-- Green Fairy -->
+			<Type>PROMOTION_FAIRY_GREEN</Type>
+			<Description>Green Fairy</Description>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\other\FairyGreen.dds</Button>
+			<FeatureAttacks>
+				<FeatureAttack>
+					<FeatureType>FEATURE_FOREST</FeatureType>
+					<iFeatureAttack>25</iFeatureAttack>
+				</FeatureAttack>
+				<FeatureAttack>
+					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
+					<iFeatureAttack>25</iFeatureAttack>
+				</FeatureAttack>
+			</FeatureAttacks>
+			<FeatureDefenses>
+				<FeatureDefense>
+					<FeatureType>FEATURE_FOREST</FeatureType>
+					<iFeatureDefense>25</iFeatureDefense>
+				</FeatureDefense>
+				<FeatureDefense>
+					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
+					<iFeatureDefense>25</iFeatureDefense>
+				</FeatureDefense>
+			</FeatureDefenses>
+			<FeatureDoubleMoves>
+				<FeatureDoubleMove>
+					<FeatureType>FEATURE_FOREST</FeatureType>
+					<bFeatureDoubleMove>1</bFeatureDoubleMove>
+				</FeatureDoubleMove>
+				<FeatureDoubleMove>
+					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
+					<bFeatureDoubleMove>1</bFeatureDoubleMove>
+				</FeatureDoubleMove>
+			</FeatureDoubleMoves>
+		</PromotionInfo>
+		<PromotionInfo> <!-- Clear Fairy -->
+			<Type>PROMOTION_FAIRY_CLEAR</Type>
+			<Description>Clear Fairy</Description>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\other\FairyClear.dds</Button>
+			<iResistMagic>20</iResistMagic>
+			<DamageTypeResists>
+				<DamageTypeResist>
+					<DamageType>DAMAGE_HOLY</DamageType>
+					<iResist>25</iResist>
+				</DamageTypeResist>
+				<DamageTypeResist>
+					<DamageType>DAMAGE_UNHOLY</DamageType>
+					<iResist>25</iResist>
+				</DamageTypeResist>
+			</DamageTypeResists>
+		</PromotionInfo>
+		<PromotionInfo> <!-- Blue Fairy -->
+			<Type>PROMOTION_FAIRY_BLUE</Type>
+			<Description>Blue Fairy</Description>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\other\FairyBlue.dds</Button>
+			<iDefensiveStrikeChance>25</iDefensiveStrikeChance>
+			<iDefensiveStrikeDamage>25</iDefensiveStrikeDamage>
+			<bAmphib>1</bAmphib>
+			<bRiver>1</bRiver>
+		</PromotionInfo>
+		<PromotionInfo> <!-- Golden Fairy -->
+			<Type>PROMOTION_FAIRY_GOLDEN</Type>
+			<Description>Golden Fairy</Description>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\other\FairyGolden.dds</Button>
+			<DamageTypeResists>
+				<DamageTypeResist>
+					<DamageType>DAMAGE_HOLY</DamageType>
+					<iResist>25</iResist>
+				</DamageTypeResist>
+			</DamageTypeResists>
+			<DamageTypeCombats>
+				<DamageTypeCombat>
+					<DamageType>DAMAGE_HOLY</DamageType>
+					<iCombat>1</iCombat>
+				</DamageTypeCombat>
+			</DamageTypeCombats>
+		</PromotionInfo>
+		<PromotionInfo> <!-- Dark Fairy -->
+			<Type>PROMOTION_FAIRY_DARK</Type>
+			<Description>Dark Fairy</Description>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\other\FairyDark.dds</Button>
+			<DamageTypeResists>
+				<DamageTypeResist>
+					<DamageType>DAMAGE_UNHOLY</DamageType>
+					<iResist>25</iResist>
+				</DamageTypeResist>
+			</DamageTypeResists>
+			<DamageTypeCombats>
+				<DamageTypeCombat>
+					<DamageType>DAMAGE_UNHOLY</DamageType>
+					<iCombat>1</iCombat>
+				</DamageTypeCombat>
+			</DamageTypeCombats>
+		</PromotionInfo>
 	</PromotionInfos>
 </Civ4PromotionInfos>

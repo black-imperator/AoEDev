@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Spell Infos -->
+<Civ4SpellInfos xmlns="x-schema:TI_CIV4UnitSpellSchema.xml">
+	<SpellInfos>
+		<SpellInfo>			<!-- Inquisition -->
+			<Type>SPELL_INQUISITION_ANTI_ENDBRINGER</Type>
+			<Description>TXT_KEY_SPELL_INQUISITION_ANTI_ENDBRINGER</Description>
+			<Civilopedia>TXT_KEY_SPELL_INQUISITION_ANTI_ENDBRINGER_PEDIA</Civilopedia>
+			<Help>TXT_KEY_SPELL_INQUISITION_ANTI_ENDBRINGER_HELP</Help>
+			<PromotionPrereq1>PROMOTION_INQUISITOR</PromotionPrereq1>
+			<bAllowAI>1</bAllowAI>
+			<bInCityOnly>1</bInCityOnly>
+			<bHasCasted>1</bHasCasted>
+			<bAbility>1</bAbility>
+			<iDelay>3</iDelay>
+			<PyResult>spellInquisitionAntiEndbringer(pCaster)</PyResult>
+			<PyRequirement>reqInquisitionAntiEndbringer(pCaster)</PyRequirement>
+			<Effect>EFFECT_CREATION</Effect>
+			<Sound>AS3D_SPELL_INQUISITION</Sound>
+			<Button>Art/Interface/Buttons/Spells/Inquisition.dds</Button>
+		</SpellInfo>
+	</SpellInfos>
+</Civ4SpellInfos>

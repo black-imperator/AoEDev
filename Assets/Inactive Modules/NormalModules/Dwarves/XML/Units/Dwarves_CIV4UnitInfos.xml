@@ -106,6 +106,7 @@
 				<UniqueName>TXT_KEY_UNIT_COMMANDER_GREATESTPEOPLE_2</UniqueName>
 				<UniqueName>TXT_KEY_UNIT_COMMANDER_GREATESTPEOPLE_3</UniqueName>
 				<UniqueName>TXT_KEY_UNIT_COMMANDER_GREATESTPEOPLE_4</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_COMMANDER_GREATESTPEOPLE_5</UniqueName>
 			</UniqueNames>
 			<Quotes>
 				<Quote>TXT_KEY_QUOTE_COMMANDER_1</Quote>
@@ -132,6 +133,7 @@
 				<Quote>TXT_KEY_QUOTE_COMMANDER_GREATESTPEOPLE_2</Quote>
 				<Quote>TXT_KEY_QUOTE_COMMANDER_GREATESTPEOPLE_3</Quote>
 				<Quote>TXT_KEY_QUOTE_COMMANDER_GREATESTPEOPLE_4</Quote>
+				<Quote>TXT_KEY_QUOTE_COMMANDER_GREATESTPEOPLE_5</Quote>
 			</Quotes>
 			<Images>
 				<Image>art\interface\popups\greatpeople\Captain_Ostanes.dds</Image>
@@ -158,6 +160,7 @@
 				<Image>art\interface\popups\greatpeople\Pierre_Mondy.dds</Image>
 				<Image>art\interface\popups\greatpeople\Michael_K_Williams.dds</Image>
 				<Image>art\interface\popups\greatpeople\Jason_David_Frank.dds</Image>
+				<Image>art\interface\popups\greatpeople\Tcheky_Karyo.dds</Image>
 				
 			</Images>
 			<Special>SPECIALUNIT_PEOPLE</Special>

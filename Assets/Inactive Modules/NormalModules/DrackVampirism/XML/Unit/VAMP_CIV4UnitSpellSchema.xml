@@ -86,6 +86,7 @@
 	<ElementType name="UnitCombatPrereq" content="textOnly"/>
 	<ElementType name="UnitInStackPrereq" content="textOnly"/>
 	<ElementType name="BuildingPrereq" content="textOnly"/>
+	<ElementType name="BuildingClassPrereq" content="textOnly"/>
 	<ElementType name="BuildingClassOwnedPrereq" content="textOnly"/>
 	<ElementType name="CivilizationPrereq" content="textOnly"/>
 	<ElementType name="CorporationPrereq" content="textOnly"/>
@@ -219,6 +220,7 @@
 		<element type="UnitCombatPrereq"/>
 		<element type="UnitInStackPrereq"/>
 		<element type="BuildingPrereq"/>
+		<element type="BuildingClassPrereq"/>
 		<element type="BuildingClassOwnedPrereq"/>
 		<element type="CivilizationPrereq"/>
 		<element type="CorporationPrereq"/>

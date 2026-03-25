@@ -5,6 +5,10 @@
 <!-- Game Text - Risna -->
 <Civ4GameText xmlns="http://www.firaxis.com">
     <TEXT>
+        <Tag>TXT_KEY_TRAITCLASS_VAMPIRIC_CLAN</Tag>
+        <English>Vampire Clan</English>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_TRAIT_VAMP_CULT_VAMPIRIC</Tag>
         <English>Cult Vampiric</English>
     </TEXT>
@@ -33,7 +37,31 @@
         <English>TODO</English>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_TRAIT_VAMP_CLAN_FLAUROS_HELP</Tag>
+        <English>[NEWLINE][ICON_BULLET]All built Vampire Units join Clan Flauros</English>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_TRAIT_VAMP_CLAN_FLAUROS_SHORT</Tag>
         <English>CFlau</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_VAMP_CLAN_RAVANA</Tag>
+        <English>Clan Ravana</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_VAMP_CLAN_RAVANA_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_VAMP_CLAN_RAVANA_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_VAMP_CLAN_RAVANA_HELP</Tag>
+        <English>[NEWLINE][ICON_BULLET]All built Vampire Units join Clan Ravana</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_VAMP_CLAN_RAVANA_SHORT</Tag>
+        <English>CRav</English>
     </TEXT>
 </Civ4GameText>

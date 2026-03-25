@@ -9144,20 +9144,20 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_REQUIRES_BUILDING_AT_RANGE</Tag>
 		<!-- %s1_Name = Can be Buildings, Units, etc -->
-		<English>[COLOR_WARNING_TEXT]Requires %s1_Name within Owned City at Range %d2_NumTotal [COLOR_REVERT]</English>
-		<French>[COLOR_WARNING_TEXT]Requires %s1_Name within Owned City at Range %d2_NumTotal [COLOR_REVERT]</French>
-		<German>[COLOR_WARNING_TEXT]Requires %s1_Name within Owned City at Range %d2_NumTotal [COLOR_REVERT]</German>
-		<Italian>[COLOR_WARNING_TEXT]Requires %s1_Name within Owned City at Range %d2_NumTotal [COLOR_REVERT]</Italian>
-		<Spanish>[COLOR_WARNING_TEXT]Requires %s1_Name within Owned City at Range %d2_NumTotal [COLOR_REVERT]</Spanish>
+		<English>[ICON_BULLET][COLOR_WARNING_TEXT]Requires %s1_Name within Owned City at Range %d2_NumTotal [COLOR_REVERT]</English>
+		<French>[ICON_BULLET][COLOR_WARNING_TEXT]Requires %s1_Name within Owned City at Range %d2_NumTotal [COLOR_REVERT]</French>
+		<German>[ICON_BULLET][COLOR_WARNING_TEXT]Requires %s1_Name within Owned City at Range %d2_NumTotal [COLOR_REVERT]</German>
+		<Italian>[ICON_BULLET][COLOR_WARNING_TEXT]Requires %s1_Name within Owned City at Range %d2_NumTotal [COLOR_REVERT]</Italian>
+		<Spanish>[ICON_BULLET][COLOR_WARNING_TEXT]Requires %s1_Name within Owned City at Range %d2_NumTotal [COLOR_REVERT]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_REQUIRES_BUILDING_AT_ANY_RANGE</Tag>
 		<!-- %s1_Name = Can be Buildings, Units, etc -->
-		<English>[COLOR_WARNING_TEXT]Requires %s1_Name within Any Other Owned City[COLOR_REVERT]</English>
-		<French>[COLOR_WARNING_TEXT]Requires %s1_Name within Any Other Owned City[COLOR_REVERT]</French>
-		<German>[COLOR_WARNING_TEXT]Requires %s1_Name within Any Other Owned City[COLOR_REVERT]</German>
-		<Italian>[COLOR_WARNING_TEXT]Requires %s1_Name within Any Other Owned City[COLOR_REVERT]</Italian>
-		<Spanish>[COLOR_WARNING_TEXT]Requires %s1_Name within Any Other Owned City[COLOR_REVERT]</Spanish>
+		<English>[ICON_BULLET][COLOR_WARNING_TEXT]Requires %s1_Name within Any Other Owned City[COLOR_REVERT]</English>
+		<French>[ICON_BULLET][COLOR_WARNING_TEXT]Requires %s1_Name within Any Other Owned City[COLOR_REVERT]</French>
+		<German>[ICON_BULLET][COLOR_WARNING_TEXT]Requires %s1_Name within Any Other Owned City[COLOR_REVERT]</German>
+		<Italian>[ICON_BULLET][COLOR_WARNING_TEXT]Requires %s1_Name within Any Other Owned City[COLOR_REVERT]</Italian>
+		<Spanish>[ICON_BULLET][COLOR_WARNING_TEXT]Requires %s1_Name within Any Other Owned City[COLOR_REVERT]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_THIEVES_DEN</Tag>
@@ -11730,6 +11730,38 @@ Their lives flashing before their eyes, the scouts are shocked and relieved when
 		<German>"Miquiztli is darkness. Mizquiztli is death. Miquiztli is the first of the Shadow Priests and the greatest among us. Misquiztli is Agruonn's most favoured servant and the embodiment of his will. Miquiztli is the right hand of Murder." [NEWLINE][NEWLINE]~From an inscription found in a ruined Temple of Agruonn</German>
 		<Italian>"Miquiztli is darkness. Mizquiztli is death. Miquiztli is the first of the Shadow Priests and the greatest among us. Misquiztli is Agruonn's most favoured servant and the embodiment of his will. Miquiztli is the right hand of Murder." [NEWLINE][NEWLINE]~From an inscription found in a ruined Temple of Agruonn</Italian>
 		<Spanish>"Miquiztli is darkness. Mizquiztli is death. Miquiztli is the first of the Shadow Priests and the greatest among us. Misquiztli is Agruonn's most favoured servant and the embodiment of his will. Miquiztli is the right hand of Murder." [NEWLINE][NEWLINE]~From an inscription found in a ruined Temple of Agruonn</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FOOD_PRODUCTION</Tag>
+		<English>{ICON_BULLET]Uses food to be built.</English>
+		<French>{ICON_BULLET]Uses food to be built.</French>
+		<German>{ICON_BULLET]Uses food to be built.</German>
+		<Italian>{ICON_BULLET]Uses food to be built.</Italian>
+		<Spanish>{ICON_BULLET]Uses food to be built.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_</Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_</Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_</Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_</Tag>

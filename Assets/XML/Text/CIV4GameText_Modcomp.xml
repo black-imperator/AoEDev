@@ -1276,6 +1276,14 @@
 		<Spanish>[ICON_BULLET]Promotion lost if you acquire:[SPACE]</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_PROMOTIONCLASS_OVERWRITE</Tag>
+		<English>[ICON_BULLET]Removes Promotions of the %s class</English>
+		<French>[ICON_BULLET]Removes Promotions of the %s class</French>
+		<German>[ICON_BULLET]Removes Promotions of the %s class</German>
+		<Italian>[ICON_BULLET]Removes Promotions of the %s class</Italian>
+		<Spanish>[ICON_BULLET]Removes Promotions of the %s class</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_OVERWRITES_PRE</Tag>
 		<English>[ICON_BULLET]Removes[SPACE]</English>
 		<French>[ICON_BULLET]Enlève[SPACE]</French>

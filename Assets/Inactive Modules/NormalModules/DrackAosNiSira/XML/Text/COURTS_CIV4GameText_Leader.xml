@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Units -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+        <Tag>TXT_KEY_LEADER_FAIRY_MOTHER_LYN</Tag>
+        <English>Mother Lyn</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_FAIRY_MOTHER_LYN_PEDIA</Tag>
+        <English>
+Mother Lyn is a figure shrouded in the mists of time. None can say with certainty how old she truly is. Some whisper she walked the ancient forests of the fairies original world before Ceridwens great teleportation, while others believe she was among the first to set foot on Erebus. What is undeniable is her timeless presence, a living bridge between the past and the present. Her wisdom is not merely learned but remembered, a tapestry woven from centuries of experience.
+Mother Lyns expertise lies in the quiet, hidden power of mushrooms and the secrets they hold. She tends to vast, labyrinthine gardens deep within the forests of Falyn, where rare and enchanted fungi thrive under her care.
+
+As the spiritual and moral compass of the Court of Falyn, Mother Lyn embodies the values of the old ways. She is a steadfast advocate for the traditions that once united the fairies, believing that their ancestors wisdom holds the key to surviving, and thriving, in Erebus. Her guidance is rooted in fairness, honor, and an unshakable commitment to the natural order. She is a lawful soul, her word as binding as any oath sworn under the moon, and her judgments are delivered with both compassion and resolve.
+        </English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_FAIRY_MITHIRAY_NI_FALYN</Tag>
+        <English>Mithiray Ni Falyn</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_FAIRY_MITHIRAY_NI_FALYN_PEDIA</Tag>
+        <English>
+Mithiray Ni Falyn is a figure of both reverence and unease within the Court of Falyn. Born into the enigmatic House Fane, she carries the weight of its ancient traditions and its unyielding pursuit of power through the mysteries of life and death. Mithiray is a tireless champion for the ideals of House Fane, seeking to weave its philosophy into the fabric of Falyns governance. She argues that the Court must embrace the full spectrum of magic, including the forbidden, if it is to survive in the harsh world of Erebus. Her influence is subtle but persistent, a whisper in the ears of the powerful, a shadow in the halls of decision. She does not demand loyalty; she earns it, through favors, knowledge, and the promise of power.
+
+Beyond her arcane pursuits, Mithiray is an avid hunter. She stalks the forests not for sport, but for the thrill of the chase and the lessons it teaches: patience, precision, and the understanding that all things, even the mighty, can be brought low. Her hunts are legendary, and it is said that she can track her prey through the densest undergrowth, guided by more than just sight and sound.
+
+        </English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_FAIRY_JULAALCARA</Tag>
+        <English>Jula Al Cara</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_FAIRY_JULAALCARA_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_FAIRY_NOTTO_AL_RAKIRI</Tag>
+        <English>Notto Al Rakiri</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_FAIRY_NOTTO_AL_RAKIRI_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_FAIRY_MOTHER_MARAKY</Tag>
+        <English>Maraky Ni Pesna</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_FAIRY_MOTHER_MARAKY_PEDIA</Tag>
+        <English>
+After the delegation of the Bannor left the tent, Maraky relaxed in her chair and smiled. "Bring me some tea." She snared at her adjutant, watching them leave the tent behind the Bannor soldiers. Maraky was happy. Her plan worked out perfectly. Like it always does.
+
+With a satisfied grin, she looked at the little group of healers in the corner of the tent. Well, Healers was their official term, yet they were so much more. They were her healers, healers from House Pesna. As much as they know how to heal others, they know exactly how to harm them as well. Toxins are just medications in other dosages after all. 
+
+"Good work. As always. I think we are done here. Give them the antidotes to the poisons we used on them. They were good and lawful enemies, so I will let half their soldiers live." The healers bowed, knowing too well what she meant by that. They would prepare as many false antidotes as real ones and give them to the enemies without any form of information about that. Half of them will die, while those lucky enough to receive a real antidote will live. That was the way Maraky liked to toy with others.
+        </English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_FAIRY_PLEIA</Tag>
+        <English>Pleia the Huntress</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_FAIRY_PLEIA_PEDIA</Tag>
+        <English>
+Pleia is a scion of House Nairu, a house renowned for its unmatched skill in the hunt and its unwavering dedication to the art of the bow. Pleias skill with the bow is legendary. She is said to be able to place an arrow between the eyes of her enemies long before they even realize they are within striking distance. Her shots are not just accurate, they are inevitable.
+
+Recognizing the need for a force that could project the Court of Falyns power beyond its borders, Pleia founded an elite cadre of archers. These warriors are not merely soldiers, but they are artists of death, each handpicked and trained by Pleia herself. They serve as the Courts eyes and arrows, striking swiftly and silently, often turning the tide of battles before they truly begin. Under her command, they have become a symbol of Falyns reach and precision, a force that can shape the outcome of conflicts from the shadows.
+
+Pleia is as much a hunter of opportunity as she is of game. She understands that power is not just won on the battlefield but also in the halls of influence. Her political acumen is as sharp as her arrows, and she knows how to cultivate alliances, and how to eliminate obstacles. It is no secret that those who oppose her often find themselves the victims of unfortunate "accidents". A rival might vanish during a hunt, or a foe might be found after a battle, their body riddled with arrows.
+        </English>
+    </TEXT>
+     <TEXT>
+        <Tag>TXT_KEY_LEADER_FAIRY_JASMINE</Tag>
+        <English>Jasmine Al Dawar</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_FAIRY_JASMINE_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+     <TEXT>
+        <Tag>TXT_KEY_LEADER_FAIRY_MAUKIA</Tag>
+        <English>Maukia Al Wai</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_FAIRY_MAUKIA_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+</Civ4GameText>

@@ -89,7 +89,7 @@
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_TEUHALI_CIV</TraitClassType>			
 			<TraitHookType>TRAITHOOK_CONSTRUCT_BUILDING</TraitHookType>
-			<PrereqBuildingClassType>BUILDING_TEUHALI_FORTRESS_CITY</PrereqBuildingClassType>
+			<PrereqBuildingClassType>BUILDINGCLASS_TEUHALI_FORTRESS_CITY</PrereqBuildingClassType>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Cast                Pray to Hali -->
 			<Type>TRAITTRIGGER_CAST_PRAY_TO_HALI_TEUHALI</Type>

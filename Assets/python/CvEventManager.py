@@ -898,7 +898,7 @@ class CvEventManager:
 							iBestValue = iValue
 							pBestPlot = pPlot
 				if pBestPlot != -1:
-					pUnit.setXY(pBestPlot.getX(), pBestPlot.getY(), False, True, True)
+					pUnit.setXY(pBestPlot.getX(), pBestPlot.getY(), False, True, True,False)
 					CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_MESSAGE_EXPLORE_LAIR_PORTAL",()),'',1,'Art/Interface/Buttons/Spells/Explore Lair.dds',ColorTypes(8),pBestPlot.getX(),pBestPlot.getY(),True,True)
 
 		elif iData1 == 108:
@@ -1356,6 +1356,7 @@ class CvEventManager:
 			if iButtonId == 0:
 				pUnit.setHasPromotion(git('PROMOTION_ORC_SLAYING'), True)
 				pUnit.setHasPromotion(git('PROMOTION_CRAZED'), True)
+				# TODO: add alignment shift -5
 			elif iButtonId == 1:
 				pUnit.setHasPromotion(git('PROMOTION_GOBLIN'), True)
 			elif iButtonId == 2:

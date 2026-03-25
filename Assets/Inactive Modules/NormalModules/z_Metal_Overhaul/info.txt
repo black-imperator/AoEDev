@@ -1,0 +1,16 @@
+[name]
+Pheonix's Metal Overhaul
+[version]
+1.0 
+[rifeversion]
+383
+[author]
+Pheonix89
+[dependency]
+;Ashes of Erebus
+[compatible]
+;everything
+[shortdesc]
+Longbowmen don't use metal weapons. T3 warrior Disciples don't require metal. T4 Warrior disciples don't require metal, do use metal weapon upgrades.
+[desc]
+More in changelist.txt

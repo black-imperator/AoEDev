@@ -634,9 +634,12 @@ class CustomFunctions:
 			iNumCities = pPlayer.getNumCities()
 			if not pPlayer.isHuman() and iNumCities > 1:
 				if CyGame().getSorenRandNum(100, "Awakened Distribution") >= 50:
-					iRnd	= CyGame().getSorenRandNum(iNumCities, "Scion City")
-					pTarget	= pPlayer.getCity(iRnd)
-					if pTarget.isNone: pTarget = pTomb
+					lCities	= []
+					(pLoopCity, iter) = pPlayer.firstCity(False)
+					while(pLoopCity):
+						lCities.append(pLoopCity)
+						(pLoopCity, iter) = pPlayer.nextCity(iter, False)
+					pTarget	= lCities[CyGame().getSorenRandNum(len(lCities), "doTurnScions, City Pick")]
 			spawnUnit = pPlayer.initUnit(self.Units["Scions"]["Awakened"], pTarget.getX(), pTarget.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 		## Pity Pop
 		if iNumCities == 1 and iTombPop == 1:
@@ -1236,11 +1239,14 @@ class CustomFunctions:
 		iAngel		= self.Units["Mercurian"]["Angel"]
 		iMane		= self.Units["Infernal"]["Manes"]
 		iFrozenSoul	= self.Units["Frozen"]["Frozen Souls"]
+		if iUnit == -1:
+			raise IndexError("giftUnit is called for iUnit = -1. Args: %s, %s, %s, %s, %s" %(str(iUnit), str(iCivilization), str(iXP), str(pFromPlot), str(iFromPlayer)))
+			return
 		if iUnit in (iAngel, iMane, iFrozenSoul):
 			iChance = 100 - (CyGame().countCivPlayersAlive() * 3) + iXP/100
 			iChance = min(iChance, 95)
 			iChance = max(iChance, 5)
-			if CyGame().getSorenRandNum(100, "Gift Unit") <= iChance: return
+			if CyGame().getSorenRandNum(100, "Gift Unit") > iChance: return
 		bValid = False
 
 		for iPlayer in xrange(gc.getMAX_PLAYERS()):
@@ -1253,13 +1259,16 @@ class CustomFunctions:
 #				iChance = min(iChance, 95)
 #				if CyGame().getSorenRandNum(100, "Gift Frozen Soul") < iChance: break
 
-			iNumCities = pPlayer.getNumCities()
+			iNumCities	= pPlayer.getNumCities()
 			if iNumCities <= 0:									continue
+			lCities		= []
+			(pLoopCity, iter) = pPlayer.firstCity(False)
+			while(pLoopCity):
+				lCities.append(pLoopCity)
+				(pLoopCity, iter) = pPlayer.nextCity(iter, False)
+			pCity	= lCities[CyGame().getSorenRandNum(len(lCities), "giftUnit, City Pick")]
 
 			bHuman	= pPlayer.isHuman()
-			iRnd	= CyGame().getSorenRandNum(iNumCities, "Gift Unit")
-			pCity	= pPlayer.getCity(iRnd)
-			if pCity.isNone: continue
 			iX		= pCity.getX()
 			iY		= pCity.getY()
 
@@ -1616,21 +1625,31 @@ class CustomFunctions:
 	### TODO: Dictionaries
 	def angelorMane(self, pUnit):
 		if( self.Religions=={}): self.initialize()
-		gc			= CyGlobalContext()
-		iUnitCombat	= pUnit.getUnitCombatType()
-		iAngel		= self.Units["Mercurian"]["Angel"]
-		iMane		= self.Units["Infernal"]["Manes"]
-		iReligion	= pUnit.getReligion()
-		iPlayer		= pUnit.getOwner()
-		pPlayer		= gc.getPlayer(iPlayer)
-		iLeader		= pPlayer.getLeaderType()
-		iAlignment	= pPlayer.getAlignment()
-		bPurified	= pPlayer.isHasFlag(gc.getInfoTypeForString('FLAG_PURIFIED_WELL'))
+		gc				= CyGlobalContext()
+		iUnitCombat		= pUnit.getUnitCombatType()
+		iAngel			= self.Units["Mercurian"]["Angel"]
+		iMane			= self.Units["Infernal"]["Manes"]
+		iFrozenSoul		= self.Units["Frozen"]["Frozen Souls"]
+		iFrozen			= self.Civilizations["Frozen"]
+		iReligion		= pUnit.getReligion()
+		iPlayer			= pUnit.getOwner()
+		pPlayer			= gc.getPlayer(iPlayer)
+		iLeader			= pPlayer.getLeaderType()
+		iAlignment		= pPlayer.getAlignment()
+		bPurified		= pPlayer.isHasFlag(gc.getInfoTypeForString('FLAG_PURIFIED_WELL'))
+		bCanBeFrozen	= False
+
+		if gc.getInfoTypeForString("MODULE_FROZEN") != -1:
+			if CyGame().getNumCivActive(iFrozen) > 0:
+				bCanBeFrozen = True
 
 		if not pUnit.isAlive():														return -1
 		if iUnitCombat in (self.UnitCombats["Animal"], self.UnitCombats["Beast"]):	return -1
 
-		if iReligion in (self.Religions["Ashen Veil"],	self.Religions["Octopus Overlords"], self.Religions["White Hand"], self.Religions["Council of Esus"]):
+		if iReligion == self.Religions["White Hand"]:
+			if bCanBeFrozen:	return iFrozenSoul
+			else:				return iMane
+		if iReligion in (self.Religions["Ashen Veil"],	self.Religions["Octopus Overlords"], self.Religions["Council of Esus"]):
 			return iMane
 		if iReligion in (self.Religions["Order"],		self.Religions["Empyrean"]):
 			return iAngel
@@ -1650,6 +1669,11 @@ class CustomFunctions:
 		lGoodProms = []
 		for iProm in lGoodProms:
 			if pUnit.isHasPromotion(iProm):					return iAngel
+
+		if bCanBeFrozen:
+			lFrozenProms = [self.Promotions["Effects"]["Winterborn"],	self.Promotions["Effects"]["Wintered"]]
+			for iProm in lFrozenProms:
+				if pUnit.isHasPromotion(iProm):				return iFrozenSoul
 
 		if pPlayer.isBarbarian():
 			if CyGame().getSorenRandNum(100, "Barb") < 80:	return -1
@@ -1937,7 +1961,7 @@ class CustomFunctions:
 				gc.getGame().setGlobalFlag(gc.getInfoTypeForString('FLAG_ASPECT_OF_WAR_MAHON'),True)
 			if pLoopPlayer.isHuman() and pLoopPlayer.getCivilizationType() == iElohim:
 				showUniqueImprovements(iLoopPlayer)
-			if pLoopPlayer.getLeaderType() == iSauros and pLoopPlayer.getCivilizationType() ==  iCaln:
+			if pLoopPlayer.getLeaderType() == iSauros and pLoopPlayer.getCivilizationType() !=  iCaln:
 				pLoopPlayer.setNumMaxTraitPerClass(gc.getInfoTypeForString('TRAITCLASS_SAVAGE'),0)
 		## GAME OPTIONS CHECK
 		if self.GameOptions["Barbarian World"]:
@@ -2364,7 +2388,7 @@ class CustomFunctions:
 		lPromotions		= [	self.Promotions["Effects"]["Heroic Defense I"],		self.Promotions["Effects"]["Heroic Defense II"],
 							self.Promotions["Effects"]["Heroic Strength I"],	self.Promotions["Effects"]["Heroic Strength II"]]
 		for iLoopUnit in xrange(bOrcPlayer.getNumUnits()):
-			pLoopUnit	= pLoopPlayer.getUnit(iLoopUnit)
+			pLoopUnit	= bOrcPlayer.getUnit(iLoopUnit)
 			bValid		= False
 			iUC			= pLoopUnit.getUnitClassType()
 			if   iUC == self.UnitClasses["Worker"]:		iNewUnit = self.Units["Animal"]["Elephant"];		bValid = True
@@ -2811,12 +2835,12 @@ class CustomFunctions:
 		iSphere3	= gc.getPromotionInfo(iSphere2).getPromotionNextLevel()
 		pUnit.setHasPromotion(iSphere3, True)
 
-#	def unitBuiltLuchuirp(self, pUnit, pCity):
-#		if not pUnit.isHasPromotion(self.Promotions["Race"]["Golem"]):		return
-#		if pCity.getNumBuilding(self.Buildings["Blasting Workshop"]) > 0:	pUnit.setHasPromotion( self.Promotions["Generic"]["Fire II"], True)
-#		if pCity.getNumBuilding(self.Buildings["Pallens Engine"]) > 0:		pUnit.setHasPromotion( self.Promotions["Generic"]["Perfect Sight"], True)
-#		if pCity.getNumBuilding(self.Buildings["Adularia Chamber"]) > 0:	pUnit.setHasPromotion( self.Promotions["Effects"]["Hidden"], True)
-#
+	def unitBuiltLuchuirp(self, pUnit, pCity):
+		if not pUnit.isHasPromotion(self.Promotions["Race"]["Golem"]):		return
+		if pCity.getNumBuilding(self.Buildings["Blasting Workshop"]) > 0:	pUnit.setHasPromotion( self.Promotions["Generic"]["Fire II"], True)
+		if pCity.getNumBuilding(self.Buildings["Pallens Engine"]) > 0:		pUnit.setHasPromotion( self.Promotions["Generic"]["Perfect Sight"], True)
+		if pCity.getNumBuilding(self.Buildings["Adularia Chamber"]) > 0:	pUnit.setHasPromotion( self.Promotions["Effects"]["Hidden"], True)
+
 	def unitBuiltAcheron(self, pUnit, pCity):
 		pCity.setNumRealBuilding(self.Buildings["Dragons Hoard"], 1)
 		pUnit.setHasPromotion(self.Promotions["Effects"]["Acheron Leashed"], True)
@@ -2880,18 +2904,24 @@ class CustomFunctions:
 
 	### TODO: Dictionaries
 	def unitKilledAoM(self, pUnit):
-		gc			= CyGlobalContext()
-		bCanBeMane	= False
-		bCanBeAngel	= False
-		iInfernal	= self.Civilizations["Infernal"]
-		iMercurians	= self.Civilizations["Mercurians"]
+		gc				= CyGlobalContext()
+		bCanBeMane		= False
+		bCanBeAngel		= False
+		bCanBeFrozen	= False
+		iInfernal		= self.Civilizations["Infernal"]
+		iMercurians		= self.Civilizations["Mercurians"]
+		iFrozen			= self.Civilizations["Frozen"]
 		if CyGame().countKnownTechNumTeams(self.Techs["Infernal Pact"]) > 0 and CyGame().getNumCivActive(iInfernal) > 0:
 			bCanBeMane	= True
 		if CyGame().getBuildingClassCreatedCount(self.Buildings["Mercurian Gate"]) > 0 and CyGame().getNumCivActive(iMercurians) > 0:
 			bCanBeAngel	= True
-		if not (bCanBeMane or bCanBeAngel): return
+		if gc.getInfoTypeForString("MODULE_FROZEN") != -1:
+			if CyGame().getNumCivActive(iFrozen) > 0:
+				bCanBeFrozen = True
+		if not (bCanBeMane or bCanBeAngel or bCanBeFrozen): return
 		iAngel		= self.Units["Mercurian"]["Angel"]
 		iMane		= self.Units["Infernal"]["Manes"]
+		iFrozenSoul	= self.Units["Frozen"]["Frozen Souls"]
 		iUnitType	= self.angelorMane(pUnit)
 		pPlot		= pUnit.plot()
 		iPlayer		= pUnit.getOwner()
@@ -2906,6 +2936,12 @@ class CustomFunctions:
 				CyGame().addtoDeathList(gc.getInfoTypeForString('DEATHLIST_ANGEL_CONVERSION'), pUnit)
 			else:
 				self.giftUnit(iAngel, iMercurians, pUnit.getExperienceTimes100(), pPlot, iPlayer)
+		elif bCanBeFrozen and iUnitType == iFrozenSoul:
+			# TODO: Deathlist for Frozen Souls
+			# if not gc.isNoCrash():
+			# 	CyGame().addtoDeathList(gc.getInfoTypeForString('DEATHLIST_FROZEN_CONVERSION'), pUnit)
+			# else:
+			self.giftUnit(iFrozenSoul, iFrozen, 0, pPlot, iPlayer)
 
 	def unitKilledGuide(self, pUnit):
 		gc		= CyGlobalContext()
@@ -3327,29 +3363,43 @@ class CustomFunctions:
 			if pUnit.getOwner() != iPlayer: continue
 			pUnit.changeExperience(iPopulation, -1, False, False, False)
 
+	### TODO: rewrite with religion weights
 	def razeAoM(self, pCity):
 		iInfernal		= self.Civilizations["Infernal"]
 		iMercurians		= self.Civilizations["Mercurians"]
-		if CyGame().getNumCivActive(iInfernal) + CyGame().getNumCivActive(iMercurians) <= 0: return
+		iFrozen			= self.Civilizations["Frozen"]
+		if CyGame().getNumCivActive(iInfernal) + CyGame().getNumCivActive(iMercurians) + CyGame().getNumCivActive(iFrozen) <= 0: return
 		gc				= CyGlobalContext()
 		pPlot			= pCity.plot()
 		iPlayer			= pCity.getOwner()
+		iNewOwnerCiv	= gc.getPlayer(iPlayer).getCivilizationType()
 		iPopulation		= pCity.getPopulation()
 		iOriginalPlayer	= pCity.getOriginalOwner()
 		pOriginalPlayer	= gc.getPlayer(iOriginalPlayer)
 		iOriginalCiv	= pOriginalPlayer.getCivilizationType()
 		iAlignment		= pOriginalPlayer.getAlignment()
+		iDefaultRace	= gc.getCivilizationInfo(iOriginalCiv).getDefaultRace()
+		bCanBeFrozen	= False
+		bCanBeMane		= False
+
+		if gc.getInfoTypeForString("MODULE_FROZEN") != -1:
+			if CyGame().getNumCivActive(iFrozen) > 0:
+				if iDefaultRace == self.Promotions["Effects"]["Winterborn"] or iNewOwnerCiv == self.Civilizations["Frozen"]:
+					bCanBeFrozen = True
 
 		if CyGame().countKnownTechNumTeams(self.Techs["Infernal Pact"]) > 0 and CyGame().getNumCivActive(iInfernal) > 0:
-			if not iOriginalCiv == iInfernal:
-				iNumManes		= iPopulation
-				if   iAlignment == self.Alignments["Neutral"]:
-					iNumManes	= (iPopulation / 2) + 1
-				elif iAlignment == self.Alignments["Good"]:
-					iNumManes	= 0
-				iManes			= self.Units["Infernal"]["Manes"]
-				for i in xrange(iNumManes):
-					self.giftUnit(iManes, iInfernal, 0, pPlot, iPlayer)
+			bCanBeMane = True
+
+		if not iOriginalCiv in (iInfernal, iFrozen) and (bCanBeMane or bCanBeFrozen):
+			iNumSouls		= iPopulation
+			if   iAlignment == self.Alignments["Neutral"]:
+				iNumSouls	= (iPopulation / 2) + 1
+			elif iAlignment == self.Alignments["Good"]:
+				iNumSouls	= 0
+			if bCanBeFrozen:	iUnit = self.Units["Frozen"]["Frozen Souls"];	iCiv = iFrozen
+			else:				iUnit = self.Units["Infernal"]["Manes"];		iCiv = iInfernal
+			for i in xrange(iNumSouls):
+				self.giftUnit(iUnit, iCiv, 0, pPlot, iPlayer)
 
 		if CyGame().getBuildingClassCreatedCount(self.Buildings["Mercurian Gate"]) > 0 and CyGame().getNumCivActive(iMercurians) > 0:
 			if not iOriginalCiv == iMercurians:
@@ -3406,7 +3456,7 @@ class CustomFunctions:
 
 	### TODO: Dictionaries
 	def doCityTurnPixieGarden(self, pCity, iPlayer):
-		if CyGame().getSorenRandNum(1000, "City Turn Pixie") < 2:	return
+		if CyGame().getSorenRandNum(1000, "City Turn Pixie") > 2:	return
 		gc		= CyGlobalContext()
 		pPlot	= pCity.plot()
 		if pPlot.getNumUnits() <= 0:					return
@@ -3452,7 +3502,7 @@ class CustomFunctions:
 			iMessage	= InterfaceMessageTypes.MESSAGE_TYPE_MINOR_EVENT
 			szArt		= 'Art/Interface/Buttons/Buildings/Eyesandearsnetwork.dds'
 			iGreen		= gc.getInfoTypeForString("COLOR_GREEN")
-			CyInterface().addMessage(iPlayer, True, 25, szText, szSound, iMessage, iGreen, pCity.getX(), pCity.getY(), True, True)
+			CyInterface().addMessage(iPlayer, True, 25, szText, szSound, iMessage, szArt, iGreen, pCity.getX(), pCity.getY(), True, True)
 
 	def doCityTurnHallOfMirrors(self, pCity, iPlayer):
 		gc		= CyGlobalContext()

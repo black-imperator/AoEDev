@@ -62,7 +62,7 @@ The Aos-Ni-Sira do not seek conquest. They do not build great monuments or carve
     <!-- Trait -->
     <TEXT>
         <Tag>TXT_KEY_TRAIT_HUNGRYFORBLOOD</Tag>
-        <English>Hungry for Blood 1</English>
+        <English>Hungry for Blood</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_HUNGRYFORBLOOD_PEDIA</Tag>
@@ -73,16 +73,8 @@ The Aos-Ni-Sira do not seek conquest. They do not build great monuments or carve
         <English>HB</English>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_TRAIT_HUNGRYFORBLOOD2</Tag>
-        <English>Hungry for Blood 2</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_HUNGRYFORBLOOD3</Tag>
-        <English>Hungry for Blood 3</English>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_TRAIT_SIRA_TRICKERY</Tag>
-        <English>Sira Trickery 1</English>
+        <English>Sira Trickery</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_SIRA_TRICKERY_PEDIA</Tag>
@@ -93,14 +85,6 @@ The Sira way of living is one of close connection to nature. They do not build h
     <TEXT>
         <Tag>TXT_KEY_TRAIT_SIRA_TRICKERY_SHORT</Tag>
         <English>ST</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_SIRA_TRICKERY2</Tag>
-        <English>Sira Trickery 2</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_SIRA_TRICKERY3</Tag>
-        <English>Sira Trickery 3</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAITCLASS_SIRA</Tag>

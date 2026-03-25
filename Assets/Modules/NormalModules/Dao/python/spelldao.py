@@ -105,34 +105,34 @@ def spellElementalEquilibrium(caster):
 
         if (iKan + iLi + iGen + iPoshi) < (iQian):
                 pPlot.setImprovementType(-1)
-                if gc.getBonusInfo(iBonus).getBonusClassType() == getInfoType('BONUSCLASS_MANA') or iBonus == gc.getInfoTypeForString("BONUS_MANA"):
+                if (iBonus!=-1 and gc.getBonusInfo(iBonus).getBonusClassType() == getInfoType('BONUSCLASS_MANA')) or iBonus == gc.getInfoTypeForString("BONUS_MANA"):
                         if chance < 24: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_FIRE_I_DAO'))
                         elif chance < 48: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_WATER_I_DAO'))
                         elif chance < 72: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_EARTH_I_DAO'))
                         elif chance < 95: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_FORCE'))
                         else: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_AIR_I_DAO'))
                
-        if (iQian + iLi + iGen + iPoshi) < (iKan):
+        elif (iQian + iLi + iGen + iPoshi) < (iKan):
                 pPlot.setImprovementType(-1)
-                if gc.getBonusInfo(iBonus).getBonusClassType() == getInfoType('BONUSCLASS_MANA') or iBonus == gc.getInfoTypeForString("BONUS_MANA"):
+                if (iBonus!=-1 and gc.getBonusInfo(iBonus).getBonusClassType() == getInfoType('BONUSCLASS_MANA')) or iBonus == gc.getInfoTypeForString("BONUS_MANA"):
                         if chance < 24: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_FIRE_I_DAO'))
                         elif chance < 48: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_AIR_I_DAO'))
                         elif chance < 72: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_EARTH_I_DAO'))
                         elif chance < 95: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_FORCE'))
                         else: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_WATER_I_DAO'))
                 
-        if (iKan + iQian + iGen + iPoshi) < (iLi):
+        elif (iKan + iQian + iGen + iPoshi) < (iLi):
                 pPlot.setImprovementType(-1)
-                if gc.getBonusInfo(iBonus).getBonusClassType() == getInfoType('BONUSCLASS_MANA') or iBonus == gc.getInfoTypeForString("BONUS_MANA"):
+                if (iBonus!=-1 and gc.getBonusInfo(iBonus).getBonusClassType() == getInfoType('BONUSCLASS_MANA')) or iBonus == gc.getInfoTypeForString("BONUS_MANA"):
                         if chance < 24: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_AIR_I_DAO'))
                         elif chance < 48: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_WATER_I_DAO'))
                         elif chance < 72: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_EARTH_I_DAO'))
                         elif chance < 95: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_FORCE'))
                         else: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_FIRE_I_DAO'))
                 
-        if (iKan + iLi + iQian + iPoshi) < (iGen):
+        elif (iKan + iLi + iQian + iPoshi) < (iGen):
                 pPlot.setImprovementType(-1)
-                if gc.getBonusInfo(iBonus).getBonusClassType() == getInfoType('BONUSCLASS_MANA') or iBonus == gc.getInfoTypeForString("BONUS_MANA"):
+                if (iBonus!=-1 and gc.getBonusInfo(iBonus).getBonusClassType() == getInfoType('BONUSCLASS_MANA')) or iBonus == gc.getInfoTypeForString("BONUS_MANA"):
                         if chance < 24: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_FIRE_I_DAO'))
                         elif chance < 48: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_WATER_I_DAO'))
                         elif chance < 72: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_AIR_I_DAO'))
@@ -141,7 +141,7 @@ def spellElementalEquilibrium(caster):
 
         else:
                 pPlot.setImprovementType(-1)
-                if gc.getBonusInfo(iBonus).getBonusClassType() == getInfoType('BONUSCLASS_MANA') or iBonus == gc.getInfoTypeForString("BONUS_MANA"):
+                if (iBonus!=-1 and gc.getBonusInfo(iBonus).getBonusClassType() == getInfoType('BONUSCLASS_MANA')) or iBonus == gc.getInfoTypeForString("BONUS_MANA"):
                         if chance < 20: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_FIRE_I_DAO'))
                         elif chance < 40: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_WATER_I_DAO'))
                         elif chance < 60: pPlot.setImprovementType(getInfoType('IMPROVEMENT_MANA_AIR_I_DAO'))

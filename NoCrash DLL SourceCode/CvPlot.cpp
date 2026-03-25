@@ -8247,6 +8247,14 @@ int CvPlot::calculateYield(YieldTypes eYield, bool bDisplay) const
 				return 0;
 			}
 		}
+		if (eYield == YIELD_PRODUCTION)
+		{
+			if (GET_PLAYER(getOwnerINLINE()).isIgnoreProduction())
+			{
+				return 0;
+			}
+
+		}
 	}
 //FfH: End Add
 

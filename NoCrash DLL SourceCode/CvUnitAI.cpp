@@ -12650,7 +12650,7 @@ int CvUnitAI::AI_promotionValue(PromotionTypes ePromotion, bool bSkipRandom, boo
 	bool m_bRemovedWhenHealed;
 	bool m_bTargetWeakestUnit;
 	bool m_bTargetWeakestUnitCounter;
-	bool m_bTwincast;
+	bool m_iMulticast;
 	bool m_bWaterWalking;
 	int m_iBetrayalChance;
 	int m_iBetterDefenderThanPercent;

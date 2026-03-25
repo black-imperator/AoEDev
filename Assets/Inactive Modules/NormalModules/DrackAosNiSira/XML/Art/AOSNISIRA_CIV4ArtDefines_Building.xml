@@ -16,16 +16,6 @@
 			<KFM/>
 			<Button>Modules\NormalModules\DrackAosNiSira\Art\Buildings\Palace.dds</Button>
 		</BuildingArtInfo>
-		<BuildingArtInfo> <!-- Ting Ni Sira -->
-			<Type>ART_DEF_BUILDING_AOSNISIRA_SAGE_DISTRICT</Type>
-			<LSystem>LSYSTEM_2x2</LSystem>
-			<bAnimated>1</bAnimated>
-			<fScale>1.5</fScale>
-			<fInterfaceScale>0.7</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Huntinglodge/huntinglodge.nif</NIF>
-			<KFM/>
-			<Button>Modules\NormalModules\DrackAosNiSira\Art\Buildings\District_Sage.dds</Button>
-		</BuildingArtInfo>
 		<BuildingArtInfo> <!-- Ait Ni Eolas -->
 			<Type>ART_DEF_BUILDING_AOSNISIRA_LIBRARY</Type>
 			<LSystem>LSYSTEM_2x2</LSystem>
@@ -95,6 +85,186 @@
 			<NIF>Art/Structures/Buildings/Huntinglodge/huntinglodge.nif</NIF>
 			<KFM/>
 			<Button>Modules\NormalModules\DrackAosNiSira\Art\Buildings\Temple.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Court of Falyn palace -->
+			<Type>ART_DEF_BUILDING_PALACE_COURTOFFALYN</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>1.5</fScale>
+			<fInterfaceScale>0.7</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Huntinglodge/huntinglodge.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Buildings\HighHouseOfFalyn.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Court of Bey palace -->
+			<Type>ART_DEF_BUILDING_PALACE_COURTOFBEY</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>1.5</fScale>
+			<fInterfaceScale>0.7</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Huntinglodge/huntinglodge.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Buildings\HighHouseOfBey.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- FAIRY Well -->
+			<Type>ART_DEF_BUILDING_FAIRY_WELL</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.8</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Well/Well.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Buildings\FairyWell.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Shroomcultivation -->
+			<Type>ART_DEF_BUILDING_SHROOMCULTIVATION</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.26</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Granary/Granary.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Buildings\Shroomcultivation.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Glowcap Laterns -->
+			<Type>ART_DEF_BUILDING_FALYN_GLOWCAPLATERNS</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.26</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Granary/Granary.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Buildings\Glowcap.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Shroom Barracks -->
+			<Type>ART_DEF_BUILDING_FALYN_BARRACKS</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.27</fScale>
+			<fInterfaceScale>0.52</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Buildings\ShroomBarracks.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Fairy Bazar -->
+			<Type>ART_DEF_BUILDING_FAIRY_INN</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>40.0</fScale>
+			<fInterfaceScale>0.7</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Hope/sfx_epic_healer_crush_1h.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Buildings\FairyBazar.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Fairy Ring -->
+			<Type>ART_DEF_BUILDING_FAIRY_RING</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.5</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Obsidian Gate/inconnuminitp_effect.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Buildings\FairyRing.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Temple of Bey -->
+			<Type>ART_DEF_BUILDING_BEY_PAGAN_TEMPLE</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.27</fScale>
+			<fInterfaceScale>0.52</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Buildings\TempleOfBey.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Fairy Court -->
+			<Type>ART_DEF_BUILDING_FAIRY_COURTHOUSE</Type>
+			<LSystem>LSYSTEM_3x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.8</fScale>
+			<fInterfaceScale>0.61</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Courthouse/Courthouse.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Buildings\FairyCourt.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Library of Sand -->
+			<Type>ART_DEF_BUILDING_BEY_LIBRARY</Type>
+			<LSystem>LSYSTEM_3x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.2</fScale>
+			<fInterfaceScale>0.58</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Library/Library.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Buildings\LibraryOfSand.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- House of Commerce -->
+			<Type>ART_DEF_BUILDING_FAIRY_HOUSE_OF_COMMERCE</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.6</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Mage Guild/cathedral.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Buildings\HouseOfCommerce.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Dark Guild of Fane -->
+			<Type>ART_DEF_BUILDING_FAIRY_DARK_GUILD</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.6</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Mage Guild/cathedral.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Buildings\GuildOfFane.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Dawar Trader -->
+			<Type>ART_DEF_BUILDING_FAIRY_DAWAR_TRADER</Type>
+			<LSystem>LSYSTEM_3x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.05</fScale>
+			<fInterfaceScale>0.6</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Market/Market.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Buildings\DawarTrader.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Grand Wai Outpost -->
+			<Type>ART_DEF_BUILDING_FAIRY_WAI_OUTPOST</Type> 
+			<LSystem>LSYSTEM_2x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.8</fScale>
+			<fInterfaceScale>0.75</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Stable/Stable.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Buildings\WaiOutpost.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Nairu Circle -->
+			<Type>ART_DEF_BUILDING_FAIRY_NAIRU_CIRCLE</Type> 
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.1</fScale>
+			<fInterfaceScale>0.8</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Stonehenge/Stonehenge.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Buildings\NairuCircle.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Fairy Pillar -->
+			<Type>ART_DEF_BUILDING_FAIRY_PILLAR</Type> 
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.4</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Monument/Monument.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Buildings\FairyPillar.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Bey Council -->
+			<Type>ART_DEF_BUILDING_FAIRY_BEY_COUNCIL</Type> 
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.25</fScale>
+			<fInterfaceScale>0.6</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Eldercouncil/Eldercouncil.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Buildings\BeyCouncil.dds</Button>
 		</BuildingArtInfo>
 	</BuildingArtInfos>
 </Civ4ArtDefines>

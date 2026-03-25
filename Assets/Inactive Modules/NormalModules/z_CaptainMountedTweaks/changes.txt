@@ -10,7 +10,7 @@ Boar Riders, Bison Riders, Bear Riders, and Hornguard now get some of their stat
 Lost flank arcane.
 Malakin Raider UU now has 3 movement, anti archer, and flank siege. Previously had 2 move and no special bonuses, poor guy.
 Boar Rider now has +40% vs melee instead of 25% archer and 25% melee. Can return to boars in a city.
--25% againts defensive melee.
+-40% againts defensive melee.
 
 -Horse Archers-
 Lost first strike immunity, can use bronze and iron weapons, gained +40% vs archers, and flank siege.
@@ -18,7 +18,7 @@ Doviello Bear Rider UU now has 2 movement instead of 3, while having 2 more stre
 Centuar Archer gets +1 first strike to match other horse archers. Also gets +1 strength, making it equal in strength to a horse archer with hyapon or nightmare.
 Fyrdwell now has slightly stronger ranged attacks, and starts with a stag mount. Fyrdwell can return to stag mounts in a city, for if you upgrade a horseman with a different mount and want to use a stag instead, mostly.
 Nyxkin now starts with a tiger mount. Nyxkin can return to tiger mounts in a city, for if you upgrade a horseman with a different mount and want to use a tiger instead, mostly.
--25% againts defensive melee.
+-40% againts defensive melee.
 
 -Knights-
 All knights gained +40% vs archers, 1 first strike, and flank siege. Knights now available at Warhorses tech (1 earlier than previous). Knight base stats are now 10/10, can use weapons.
@@ -26,7 +26,7 @@ Doviello and Dwarf Knights have -1 move, but +2 attack.
 Doviello and Dwarf Knights can return to great beast mounts in a city.
 Centuar Lancer has +1 strength over a knight (making it equal to a knight with hyapon or nightmare), but a centaur so can sprint and receive defensive bonuses.
 Camel Knight is same as a knight, but can be built with camels.
--25% againts defensive melee.
+-40% againts defensive melee.
 
 -War Chariots-
 War Chariots are moved to armored cavalry, the later tech. War Chariots have 12/7 stats, same as immortals, can use weapons. War chariots no longer have a bonus vs archers. 
@@ -125,3 +125,11 @@ V7 -
 Added toad mounts
 Fixed broken text for Ride Great Beasts
 Horseman line now has -25% vs defensive melee. Number subject to tweaks or possible revision in future, if needed.
+
+V8 -
+Added compatability with Woods for Eert bear riders
+
+V9 -
+Added compatability with Chimar, and barbarian wolf riders now match appropriate horse units
+Added Tamed Animal Mounts concept page
+Slightly increased the penalty from -25% vs defensive melee to -40%.

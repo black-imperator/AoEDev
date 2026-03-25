@@ -333,7 +333,7 @@
 			<bRemovedWhenHealed>0</bRemovedWhenHealed>
 			<bTargetWeakestUnit>0</bTargetWeakestUnit>
 			<bTargetWeakestUnitCounter>0</bTargetWeakestUnitCounter>
-			<bTwincast>1</bTwincast>
+			<iTwincast>1</iTwincast>
 			<bValidate>0</bValidate>
 			<bWaterWalking>0</bWaterWalking>
 			<iAIWeight>0</iAIWeight>
@@ -595,7 +595,8 @@
 			<Button>Art/Interface/Buttons/Races/Race_Demon.dds</Button>
 			<bImmuneToFear>1</bImmuneToFear>
 			<bNotAlive>1</bNotAlive>
-			<bRace>1</bRace>
+			<bNoXP>1</bNoXP>
+			<iMinLevel>-1</iMinLevel>
 			<bGraphicalOnly>1</bGraphicalOnly>
 			<PromotionDegradesTo>
 				<Promotion>PROMOTION_DEMON</Promotion>
@@ -6295,7 +6296,7 @@
 			<bNoXP>1</bNoXP>
 			<PrereqInCity>1</PrereqInCity>
 			<Button>Art/Interface/Buttons/Promotions/NavalCrew/Naval_Arcane.dds</Button>
-			<bTwincast>1</bTwincast>
+			<iTwincast>1</iTwincast>
 			<iResistMagic>50</iResistMagic>
 			<iSpellDamageModify>10</iSpellDamageModify>
 		</PromotionInfo>
@@ -10747,7 +10748,7 @@
 				</UnitCombat>
 			</UnitCombats>
 			<Button>Art/Civs/Jotnar/buttons/jot_era4.dds</Button>
-			<bTwincast>1</bTwincast>
+			<iTwincast>1</iTwincast>
 			<iExtraCombatStr>2</iExtraCombatStr>
 			<iExtraCombatDefense>2</iExtraCombatDefense>
 			<iSpellDamageModify>20</iSpellDamageModify>
@@ -17496,7 +17497,7 @@
 				</UnitCombat>
 			</UnitCombats>
 			<Button>Art/Interface/Buttons/Units/duck.dds</Button>
-			<bTwincast>1</bTwincast>
+			<iTwincast>1</iTwincast>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Unreliable -->
 			<Type>PROMOTION_UNRELIABLE</Type>
@@ -30752,7 +30753,7 @@
 				</UnitCombat>
 			</UnitCombats>
 			<Button>Art/Interface/Buttons/Promotions/Twincast.dds</Button>
-			<bTwincast>1</bTwincast>
+			<iTwincast>1</iTwincast>
 			<iAIWeight>300</iAIWeight>
 			<iMinLevel>10</iMinLevel>
 		</PromotionInfo>
@@ -31886,7 +31887,7 @@
 			<iEnemyHealChange>20</iEnemyHealChange>
 			<iNeutralHealChange>20</iNeutralHealChange>
 			<iFriendlyHealChange>20</iFriendlyHealChange>
-			<bTwincast>0</bTwincast><!-- probably useless -->
+			<iTwincast>0</iTwincast><!-- probably useless -->
 			<iAIWeight>500</iAIWeight>
 			<iChanceMiscast>0</iChanceMiscast><!-- probably useless -->
 			<PromotionNextLevel>PROMOTION_MASTER_OF_DIVINATION</PromotionNextLevel>
@@ -31895,7 +31896,7 @@
 			<Type>PROMOTION_MASTER_OF_CREATION2</Type>
 			<Description>TXT_KEY_PROMOTION_MASTER_OF_CREATION2</Description>
 			<Button>Art/Interface/Buttons/Promotions/CreationPowerSurge.dds</Button>
-			<bTwincast>1</bTwincast>
+			<iTwincast>1</iTwincast>
 			<iExpireChance>34</iExpireChance>
 			<iMinLevel>-1</iMinLevel>
 			<bGraphicalOnly>1</bGraphicalOnly>
@@ -40902,7 +40903,7 @@
 			<bNoXP>1</bNoXP>
 			<Button>Art/Interface/Buttons/Promotions/Dimensional3.dds</Button>
 			<iExtraPerception>3</iExtraPerception>
-			<bTwincast>1</bTwincast>
+			<iTwincast>1</iTwincast>
 			<iResistMagic>50</iResistMagic>
 			<DamageTypeResists>
 				<DamageTypeResist>

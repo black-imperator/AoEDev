@@ -144,4 +144,67 @@
         <Tag>TXT_KEY_BUILDING_TEUHALI_STONEFIRE_PEDIA</Tag>
         <English>TODO</English>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_DOKUMENTENSTUBE</Tag>
+        <English>Dokumentenstube</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_DOKUMENTENSTUBE_PEDIA</Tag>
+        <English>"Ah, Grand Master Sigismund, what can this old man do for you?" The old man placed down a book carefully on the table. The knight entered the room and removed his sword. He placed it on the table. "I need all information about the vampires of the Calabim Nation."
+
+The old man nodded and began searching. "Please take a seat, Sigismund. I will require some time. Will there be a war with the vampires?" Sigismund shook his head. "No war. It is of personal interest to me only."
+        </English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_DOKUMENTENSTUBE_STRATEGY</Tag>
+        <English>While the Dokumentenstube gives less research bonus to the city, it increases instead Scientists in general.Build it to increase the research and culture output of your city.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_TEUHALI_BURG_TERROR</Tag>
+        <English>Burg Terror</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_TEUHALI_BURG_TERROR_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_BURG_TERROR_STRATEGY</Tag>
+        <English>Burg Terror allows for your city to grow without unhappines. It makes the city the perfect feeding ground for vampires.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_TEUHALI_BURG_BLOCKSBERG</Tag>
+        <English>Burg Blocksberg</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_TEUHALI_BURG_BLOCKSBERG_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_BURG_BLOCKSBERG_STRATEGY</Tag>
+        <English>Burg Blocksberg heavily increases the training potential of all arcane Units and addionally grants all units the Secondary Arcane Promotion. It makes this city the center of your Adept and other Arcane Unit Production.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_TEUHALI_BURG_NIEMALSMEHR</Tag>
+        <English>Burg Niemalsmehr</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_TEUHALI_BURG_NIEMALSMEHR_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_BURG_NIEMALSMEHR_STRATEGY</Tag>
+        <English>Burg Niemansmehr is the only Order Quarter that is built in 3 cities instead of one. It grants a global happiness bonus to your cities.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_TEUHALI_BURG_SONNE</Tag>
+        <English>Burg Sonne</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_TEUHALI_BURG_SONNE_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_BURG_SONNE_STRATEGY</Tag>
+        <English>Burg Sonne increases the Plot Radius of your city to 3, making it a production hub without the need of the City of thousand Slums.</English>
+    </TEXT>
 </Civ4GameText>

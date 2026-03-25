@@ -3028,7 +3028,7 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 		}
 	}
 
-	if (!(GET_PLAYER(getOwnerINLINE()).canConstruct(eBuilding, bContinue, bTestVisible, bIgnoreCost)))
+	if (!(GET_PLAYER(getOwnerINLINE()).canConstruct(eBuilding, bContinue, bTestVisible, bIgnoreCost,false,bCheckStillValid)))
 	{
 		return false;
 	}
@@ -4320,7 +4320,10 @@ int CvCity::getNumTrainUnitAI(UnitAITypes eUnitAI) const
 int CvCity::getProduction() const
 {
 	CLLNode<OrderData>* pOrderNode = headOrderQueueNode();
-
+	if (GET_PLAYER(getOwner()).isIgnoreProduction())
+	{
+		return 0;
+	}
 	if (pOrderNode != NULL)
 	{
 		switch (pOrderNode->m_data.eOrderType)
@@ -4809,6 +4812,10 @@ int CvCity::getOverflowProductionDifference() const
 /**								---- Start Original Code ----									**
 	return (((getBaseYieldRate(YIELD_PRODUCTION) + int(getProximityProduction()) + ((isProductionProject()) ? int(getProximityRitualAssist()) : 0) + iOverflow + iUnhappyProd) * getBaseYieldRateModifier(YIELD_PRODUCTION, iProductionModifier)) / 100 + iFoodProduction);
 /**								----  End Original Code  ----									**/
+	if (GET_PLAYER(getOwner()).isIgnoreProduction())
+	{
+		return iFoodProduction;
+	}
 	return (((iYield + int(getPerPopProduction() * getPopulation()) + int(getProximityProduction()) + ((isProductionProject()) ? int(getProximityRitualAssist()) : 0) + iOverflow + iUnhappyProd) * getBaseYieldRateModifier(YIELD_PRODUCTION, iProductionModifier)) / 100 + iFoodProduction);
 /*************************************************************************************************/
 /**	Multiple Production							END												**/

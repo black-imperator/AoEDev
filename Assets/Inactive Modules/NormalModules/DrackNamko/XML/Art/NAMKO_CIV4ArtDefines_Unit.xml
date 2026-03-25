@@ -6,8 +6,7 @@
 <!-- Unit art path information -->
 <Civ4ArtDefines xmlns="x-schema:NAMKO_CIV4ArtDefinesSchema.xml">
 	<UnitArtInfos> 	
-		<!-- Nepharakis -->
-		<UnitArtInfo>
+		<UnitArtInfo> <!-- Nepharakis -->
 			<Type>ART_DEF_UNIT_NEPHRAKIS</Type>
 			<Button>Modules/NormalModules/DrackNamko/Art/Units/Nephrakis.dds</Button>
 			<fScale>0.45</fScale>
@@ -31,8 +30,7 @@
 			</AudioRunSounds>
 			<SelectionSound>AS3D_VAMPIRE_SELECT</SelectionSound>
 		</UnitArtInfo>
-		<!-- Thanatoguard -->
-		<UnitArtInfo>
+		<UnitArtInfo> <!-- Thanatoguard -->
 			<Type>ART_DEF_UNIT_THANATOGUARD</Type>
 			<Button>Modules/NormalModules/DrackNamko/Art/Units/Thanatoguard.dds</Button>
 			<fScale>0.4</fScale>
@@ -55,8 +53,7 @@
 				<AudioRunTypeEnd/>
 			</AudioRunSounds>
 		</UnitArtInfo>
-		<!-- Myrmiphage -->
-		<UnitArtInfo>
+		<UnitArtInfo> <!-- Myrmiphage -->
 			<Type>ART_DEF_UNIT_MYRMIPHAGE</Type>
 			<Button>Modules/NormalModules/DrackNamko/Art/Units/Myrmiphage.dds</Button>
 			<fScale>0.42</fScale>
@@ -81,8 +78,7 @@
             </AudioRunSounds>
 			<SelectionSound>AS3D_VAMPIRE_SELECT</SelectionSound>
 		</UnitArtInfo>
-		<!-- Pyraspis -->
-		<UnitArtInfo>
+		<UnitArtInfo> <!-- Pyraspis -->
 			<Type>ART_DEF_UNIT_PYRASPIS</Type>
 			<Button>Modules/NormalModules/DrackNamko/Art/Units/Pyraspis.dds</Button>
 			<fScale>0.42</fScale>
@@ -105,8 +101,7 @@
 				<AudioRunTypeEnd/>
 			</AudioRunSounds>
 		</UnitArtInfo>
-		<!-- Ichorian -->
-		<UnitArtInfo>
+		<UnitArtInfo> <!-- Ichorian -->
 			<Type>ART_DEF_UNIT_ICHORIAN</Type>
 			<Button>Modules/NormalModules/DrackNamko/Art/Units/Ichorian.dds</Button>
 			<fScale>0.42</fScale>
@@ -130,8 +125,7 @@
 			</AudioRunSounds>
 			<SelectionSound>AS3D_SKELETON_SELECT</SelectionSound>
 		</UnitArtInfo>
-		<!-- Amenthian -->
-		<UnitArtInfo>
+		<UnitArtInfo> <!-- Amenthian -->
 			<Type>ART_DEF_UNIT_AMENTHIAN</Type>
 			<Button>Modules/NormalModules/DrackNamko/Art/Units/Amenthian.dds</Button>
 			<fScale>0.42</fScale>
@@ -156,8 +150,7 @@
 			<SelectionSound>AS3D_SPECTRE_SELECT</SelectionSound>
             <ActionSound>AS3D_SPECTRE_SELECT</ActionSound>	
 		</UnitArtInfo>
-		<!-- Anubila -->
-		<UnitArtInfo>
+		<UnitArtInfo> <!-- Anubila -->
 			<Type>ART_DEF_UNIT_ANUBILA</Type>
 			<Button>Modules/NormalModules/DrackNamko/Art/Units/Anubila.dds</Button>
 			<fScale>0.42</fScale>
@@ -181,6 +174,79 @@
 			</AudioRunSounds>
 			<SelectionSound>AS3D_SUCCUBUS_SELECT</SelectionSound>
 		    <ActionSound>AS3D_SUCCUBUS_TRAIN</ActionSound>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- Warrior -->
+			<Type>ART_DEF_UNIT_NAMKO_WARRIOR</Type>
+			<Button>Modules/NormalModules/DrackNamko/Art/Units/NamkoWarrior.dds</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Summons/Skeleton/swordsman.nif</NIF>
+			<KFM>Art/Units/Swordsman/Swordsman.kfm</KFM>
+			<SHADERNIF>Art/Units/Summons/Skeleton/swordsman_fx.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+			<SelectionSound>AS3D_SKELETON_SELECT</SelectionSound>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- Archanten -->
+			<Type>ART_DEF_UNIT_ARCHANTEN</Type>
+			<Button>Modules/NormalModules/DrackNamko/Art/Units/Archanten.dds</Button>
+			<fScale>0.45</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Civs/Dtesh/DteshAssassin/DteshiAssassin.nif</NIF>
+			<KFM>Art/Animations/AustrinChampion/AustrinChampion.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+			<SelectionSound>AS3D_SKELETON_SELECT</SelectionSound>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- Hoplian -->
+			<Type>ART_DEF_UNIT_NAMKO_HOPLIAN</Type>
+			<Button>Modules/NormalModules/DrackNamko/Art/Units/Hoplian.dds</Button>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Civs/Dtesh/DteshSentinel/Sentinel.nif</NIF>
+			<KFM>Art/Units/Charlemagne_HeavySpearman/HeavySpearman.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+			<SelectionSound>AS3D_SKELETON_SELECT</SelectionSound>
 		</UnitArtInfo>
 	</UnitArtInfos>
 </Civ4ArtDefines>

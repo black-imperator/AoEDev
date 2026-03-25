@@ -1302,6 +1302,19 @@ class CvMainInterface:
 			#** Spawn Probability - Grigori - Adventurers                                               END **#
 			#*************************************************************************************************#
 			#*************************************************************************************************#
+			#** Soul Counter - Court of Misrak - Souls  (DrackAosNiSira Module)                             **#
+			#*************************************************************************************************#
+				elif gc.getInfoTypeForString('MODULE_DRACKAOSNISIRA')!=-1 and pPlayer.getCivilizationType() == gc.getInfoTypeForString('CIVILIZATION_COURTOFMISRAK'):
+					iSoulCounter  = pPlayer.getCivCounter() # Souls in Storage
+					iInteger    = iSoulCounter
+					SRstr = u"<font=2i>%s</font>" %(str(" ") + str(iInteger) + str(" "))
+					screen.setImageButton("SoulCounter", "Modules\NormalModules\DrackAosNiSira\Art\Other\Souls.dds", 177, 7, 16, 16, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+					screen.setText( "SRText", "Background", SRstr, CvUtil.FONT_LEFT_JUSTIFY, 189, 5, 0.5, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+					screen.setHitTest( "SRText", HitTestTypes.HITTEST_NOHIT )
+			#*************************************************************************************************#
+			#** Soul Counter - Court of Misrak - Souls  (DrackAosNiSira Module)                         END **#
+			#*************************************************************************************************#
+			#*************************************************************************************************#
 			#** Spawn Probability - Doviello - Animals                                                      **#
 			#*************************************************************************************************#
 				elif pPlayer.getCivilizationType() == gc.getInfoTypeForString('CIVILIZATION_DOVIELLO') and pPlayer.getNumCities() > 0:

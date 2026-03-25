@@ -127,6 +127,30 @@
 				</Build>
 			</Builds>
 		</UnitInfo>
+		<UnitInfo>        <!-- Worker  Eert Dependency-->
+            <Class>UNITCLASS_WORKER</Class>
+            <Type>UNIT_WORKER</Type>
+            <bTypeDependency>1</bTypeDependency>
+            <AndDependencyTypes>
+                <DependencyType>MODULE_KCZ_WOODS</DependencyType>
+            </AndDependencyTypes>
+            <Builds>
+                <Build>
+                    <BuildType>BUILD_ANIMAL_COLONY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_WILD_GARDEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+            </Builds>
+            <Flavors>
+                <Flavor>
+                    <FlavorType>FLAVOR_GROWTH</FlavorType>
+                    <iFlavor>20</iFlavor>
+                </Flavor>
+            </Flavors>
+        </UnitInfo>
 		
 		
 		<UnitInfo>        <!-- Operator -->

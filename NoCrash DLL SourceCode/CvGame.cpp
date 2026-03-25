@@ -39,6 +39,8 @@
 #include "CvDLLEngineIFaceBase.h"
 #include "CvDLLPythonIFaceBase.h"
 
+#include "CvSnarkoProfiler.h"
+
 // Public Functions...
 
 CvGame::CvGame()
@@ -309,11 +311,11 @@ void CvGame::init(HandicapTypes eHandicap)
 					iBestLeader = -1;
 					iBestValue = -1;
 				}
-				else if (GC.getInitCore().getLeader((PlayerTypes)iPlayer) == NO_LEADER ||!GC.getCivilizationInfo((CivilizationTypes)GC.getInitCore().getCiv((PlayerTypes)iPlayer)).isLeaders(GC.getInitCore().getLeader((PlayerTypes)iPlayer)))
+				else if (GC.getInitCore().getLeader((PlayerTypes)iPlayer) == NO_LEADER ||GC.getLeaderHeadInfo(GC.getInitCore().getLeader((PlayerTypes)iPlayer)).isRandom() || (!GC.getCivilizationInfo((CivilizationTypes)GC.getInitCore().getCiv((PlayerTypes)iPlayer)).isLeaders(GC.getInitCore().getLeader((PlayerTypes)iPlayer)) && !GC.getGameINLINE().isOption(GAMEOPTION_LEAD_ANY_CIV)))
 				{
 					for (int iLeader = 0; iLeader < GC.getNumLeaderHeadInfos(); iLeader++)
 					{
-						if (GC.getCivilizationInfo((CivilizationTypes)GC.getInitCore().getCiv((PlayerTypes)iPlayer)).isLeaders(iLeader))
+						if (GC.getCivilizationInfo((CivilizationTypes)GC.getInitCore().getCiv((PlayerTypes)iPlayer)).isLeaders(iLeader)|| GC.getGameINLINE().isOption(GAMEOPTION_LEAD_ANY_CIV))
 						{
 					//		if (iAlignment == -1 || GC.getLeaderHeadInfo((LeaderHeadTypes)iLeader).getAlignment() == iAlignment)
 					//		{
@@ -6563,9 +6565,13 @@ void CvGame::addGreatPersonBornName(const CvWString& szName)
 void CvGame::doTurn()
 {
 	//Snarko temp
-	//PROFILE_BEGIN("CvGame::doTurn()");
+//	PROFILE_BEGIN("CvGame::doTurn()");
 	//startProfilingDLL();
+	CvSnarkoProfiler profiler;
+	CvString szError;
+	szError.Format("Game::doTurn Turn %i",getGameTurn());
 
+	profiler.profile(szError);
 	int aiShuffle[MAX_PLAYERS];
 	int iLoopPlayer;
 	int iI;
@@ -6809,6 +6815,7 @@ void CvGame::doTurn()
 	//Snarko temp
 	//	PROFILE_END();
 	//	stopProfilingDLL();
+	profiler.profile(NULL,true);
 
 	gDLL->getEngineIFace()->AutoSave();
 }

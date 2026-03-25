@@ -4233,7 +4233,7 @@ def spellFoundThrone(caster):
 	pPlayer = gc.getPlayer(caster.getOwner())
 	pCity = caster.plot().getPlotCity()
 	if(pPlayer.getCivilizationType()==getInfoType("CIVILIZATION_SVARTALFAR")):
-		pCity.setNumRealBuilding(getInfoType("BUILDINGCLASS_APHOTIC_THRONE_FAERYL"),1)
+		pCity.setNumRealBuilding(getInfoType("BUILDING_APHOTIC_THRONE_FAERYL"),1)
 		return
 	thrones=["BUILDING_APHOTIC_THRONE_MERCHANT","BUILDING_APHOTIC_THRONE_MERCHANT","BUILDING_APHOTIC_THRONE_SLAVER","BUILDING_APHOTIC_THRONE_SLAVER","BUILDING_APHOTIC_THRONE_POISONER","BUILDING_APHOTIC_THRONE_POISONER","BUILDING_APHOTIC_THRONE_BORED_NOBLE"]
 	randNum		= CyGame().getSorenRandNum
@@ -6364,6 +6364,9 @@ def reqDarkC(caster):
 	if pPlayer.isHuman() == False:
 		return True
 
+	if(pPlayer.getNumBuilding(getInfoType("BUILDING_DARK_COUNCIL"))>0):
+		return False
+
 	bPelemocPresent = False
 	bThemochPresent = False
 	bAlcinusPresent = False
@@ -8042,7 +8045,17 @@ def spellGiftEssence(caster):
 def reqDarkEmpowerment(caster):
 	iEmpowerment = getInfoType('PROMOTION_DARK_EMPOWERMENT')
 	pPlot = caster.plot()
+	pPlayer			= gc.getPlayer(caster.getOwner())
 	iMelee = getInfoType('UNITCOMBAT_DEFENSIVE_MELEE')
+	if pPlayer.isHuman():
+		Selected=0
+		for iUnit in range(pPlot.getNumUnits()):
+			pUnit = pPlot.getUnit(iUnit)
+			if pUnit.IsSelected():
+				Selected += 1
+		if Selected > 1: # Prevent human player from casting spell if more than one unit is selected
+			return False
+
 	if not caster.isHasPromotion(iEmpowerment):
 		for i in range(pPlot.getNumUnits()):
 			pUnit = pPlot.getUnit(i)
@@ -10306,7 +10319,7 @@ def reqGustOfWind(pCaster):
 def spellDefensiveWave(pCity):
 	pPlayer     = gc.getPlayer(pCity.getOwner())
 	pTeam       = gc.getTeam(pPlayer.getTeam())
-	iRange		= pCity.getPlotRadius() #+ pCity.getSpellExtraRange() # Not exposed to Python
+	iRange		= pCity.getPlotRadius() + pCity.getSpellExtraRange() 
 
 	iNumWater   = pPlayer.getNumAvailableBonuses(Mana["Water"]) # - count water mana
 	bHydro2     = pPlayer.hasTrait(Trait["Hydromancer 2"]) # hydromancer level
@@ -10335,7 +10348,7 @@ def reqDefensiveWave(pCity):
 	iNumWater   = pPlayer.getNumAvailableBonuses(Mana["Water"])
 	bHydro2     = pPlayer.hasTrait(Trait["Hydromancer 2"])
 	bHydro3     = pPlayer.hasTrait(Trait["Hydromancer 3"])
-	iRange		= pCity.getPlotRadius() #+ pCity.getSpellExtraRange() # Not exposed to Python
+	iRange		= pCity.getPlotRadius() + pCity.getSpellExtraRange() 
 	getPlot		= CyMap().plot
 	if (iNumWater != 0):
 		for x, y in plotsInCircularRange( pCity.getX(), pCity.getY(), iRange ):

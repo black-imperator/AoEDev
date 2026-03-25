@@ -665,8 +665,8 @@
 			<PythonCanDo>cannotApplyDtesh</PythonCanDo> <!-- Block orphaned classical solutions (1,2 and 3) for D'tesh -->
 			<PythonHelp>helpOrphanedGoblin1</PythonHelp>
 			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAlignmentModifier>-5</iAlignmentModifier>
 			<iAIValue>1000</iAIValue>
-			<PrereqAlignment>ALIGNMENT_EVIL</PrereqAlignment>
 		</EventInfo>
 		<EventInfo><!--Orphaned Goblin events-->
 			<Type>EVENT_ORPHANED_GOBLIN_2</Type>

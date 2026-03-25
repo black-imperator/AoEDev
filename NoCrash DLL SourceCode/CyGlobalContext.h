@@ -96,6 +96,7 @@ public:
 	CvAffinityInfo* getAffinityInfo(int i) const;
 	CvReligionInfo* getReligionInfo(int i) const;
 	CvCityClassInfo* getCityClassInfo(int i) const;
+	CvTraitClassInfo* getTraitClassInfo(int i) const;
 	CvCorporationInfo* getCorporationInfo(int i) const;
 	CvControlInfo* getControlInfo(int i) const;
 	CvTechInfo* getTechInfo(int i) const;
@@ -231,6 +232,7 @@ public:
 	int getNumImprovementInfos() const { return GC.getNumImprovementInfos(); }
 	int getNumPlotEffectInfos() const { return GC.getNumPlotEffectInfos(); }
 	int getNumCityClassInfos() const { return GC.getNumCityClassInfos(); }
+	int getNumTraitClassInfos() const { return GC.getNumTraitClassInfos(); }
 	int getNumGoodyInfos() const { return GC.getNumGoodyInfos(); }
 	int getNumBuildInfos() const { return GC.getNumBuildInfos(); }
 	int getNumHandicapInfos() const { return GC.getNumHandicapInfos(); }

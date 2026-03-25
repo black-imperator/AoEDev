@@ -5,6 +5,18 @@
 <!-- Game Text - Risna -->
 <Civ4GameText xmlns="http://www.firaxis.com">
     <TEXT>
+        <Tag>TXT_KEY_TRAIT_BEYOND_MORTALITY</Tag>
+        <English>Faith beyond mortality</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_BEYOND_MORTALITY_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_BEYOND_MORTALITY_SHORT</Tag>
+        <English>FbM</English>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_CIV_NAMKO_DESC</Tag>
         <English>Deathless Namko</English>
     </TEXT>
@@ -19,12 +31,22 @@
     <TEXT>
         <Tag>TXT_KEY_CIV_NAMKO_STRATEGY</Tag>
         <English>
-Deathless Namko is an undead nation of with a strong focus on disciple units.       
+Complexity: Standard
+With fire, we will purge the unfaithful!
+
+Deathless Namko is an undead nation of with a strong focus on disciple units. 
+
+[H2]Hints[\H2]
+[ICON_BULLET] Every 5 cities, you can later build Recreation Furnaces. Plan your cities ahead. 4 of them will never grow big, while every 5th will become a powerhouse.
+[ICON_BULLET] Build a Recreation Furnace in your capital.
+[ICON_BULLET] You won't need food. Concentrade on Commerce and Production.
+[ICON_BULLET] Namko ignores Health.
+
 [H2]Reminders[\H2]
 [ICON_BULLET] The Population of Namko is Fallow, which means food is neither produced nor eaten. Population changes depending on certain buildings automatically.
-[ICON_BULLET] All special buildings of Namko influences your maximum population.
+[ICON_BULLET] Many special buildings of Namko influences your maximum population. See their Help Texts.
 [ICON_BULLET] Your City must be happy to grow.
-[ICON_BULLET] Your units are focussed on disciple units and religions. It is recommended to go in that direction.
+[ICON_BULLET] Your units are focussed on aggressive disciple units. It is recommended to go in that direction.
 [ICON_BULLET] Your city shrinks if it is above the population cap.
 [H2]Population[\H2]
 [ICON_BULLET] Base Population Cap is 3.
@@ -44,7 +66,7 @@ The Namko people were once a proud province of Patria, a thriving domain of scho
 Bound against her will to an undying form, Nephtharia wandered the frozen wastelands of the Age of Ice, learning the secrets of the deathless. With time, she discovered a way to return her people, not as mere corpses, but as eternal servants of the divine. Though they had died in agony and war, she offered them a second life, one free from hunger, weakness, and the failures of mortality.
 [H2]Faith Beyond Flesh[\H2]
 To the rulers of Namko, the mortal form is flawed. It succumbs to exhaustion, to temptation, to suffering. An undead priest never wavers in prayer, an undead warrior never tires in battle, an undead king never withers upon the throne. In undeath, devotion becomes absolute.
-Nephtharia and her Deathless Court have since rebuilt their empire in the cold lands abandoned by the living. Cloaked in eerie purple flame, their cities hum with whispered prayers, and their black obelisks stretch toward the sky, marking where the dead rise in service of the gods. Pilgrims, both living and undead, flock to Namko, seeking the path of eternity. Some come willing, others do not, but all who enter the empire will serve the gods… forever.   
+Nephtharia and her Deathless Court have since rebuilt their empire in the cold lands abandoned by the living. Cloaked in eerie purple flame, their cities hum with whispered prayers, and their black obelisks stretch toward the sky, marking where the dead rise in service of the gods. Pilgrims, both living and undead, flock to Namko, seeking the path of eternity. Some come willing, others do not, but all who enter the empire will serve the gods forever.   
 [H2]The Nameless Procession[\H2]
 At the heart of Namkos capital, a never-ending march echoes through the streets. The Nameless Procession is a ceaseless train of the newly risen, their past selves stripped away, their bodies remade in the image of divine service. To join the Procession is the highest honor. All sins, all failures of mortal life are erased, leaving only a perfect, undying worshiper in its place.
 Among the living nations, the Great Deathless Empire is feared and misunderstood. To them, Nephtharia is a tyrant, a witch, an abomination who enslaves the dead. But to those within Namkos borders, she is the true guide of the faithful, a prophetess of the gods who has granted them the only gift that matters, existence beyond death, a place in the eternal order.
@@ -61,5 +83,17 @@ And when the living world has burned itself to dust and ruin, the deathless will
 At last the Legions of Namko shall march. Never shall they tire, never shall they falter!
 The Holy March gives every unit the Immortality promotion.
 </English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_NAMKO_GRANT_ETERNAL_FAITH</Tag>
+        <English>Grant Eternal Faith</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_NAMKO_GRANT_ETERNAL_FAITH_PEDIA</Tag>
+        <English>"Your faith can never show its full potential as long as you are shackled by mortality." The undead priest laid his hands on the heads of the refugees. "But worry not. Here in Namko, you are not bound to stay this weak. I will grant you bodies with which you can serve our gods for eternity!"</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_NAMKO_GRANT_ETERNAL_FAITH_HELP</Tag>
+        <English>[ICON_BULLET]Grants all living units the Undead Promotion</English>
     </TEXT>
 </Civ4GameText>

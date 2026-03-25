@@ -1095,6 +1095,9 @@
 	
 	<ElementType name="CityClassInfo" content="eltOnly" order="many">
 		<element type="Type"/>
+		<element type="bTypeDependency"/>
+		<element type="AndDependencyTypes"/>
+		<element type="OrDependencyTypes"/>
 		<element type="Buildings"/>
 		<element type="Units"/>
 		<element type="ShortDescription"/>

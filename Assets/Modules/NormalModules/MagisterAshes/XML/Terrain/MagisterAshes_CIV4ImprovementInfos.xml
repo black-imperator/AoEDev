@@ -69,7 +69,7 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
-			<iBasePlotCounterModify>-50</iBasePlotCounterModify>
+			<iBasePlotCounterModify>50</iBasePlotCounterModify>
 		</ImprovementInfo>
 		<ImprovementInfo> <!-- Carnivaen's Camp -->
 			<Type>IMPROVEMENT_CARNIVEANS_CAMP</Type>

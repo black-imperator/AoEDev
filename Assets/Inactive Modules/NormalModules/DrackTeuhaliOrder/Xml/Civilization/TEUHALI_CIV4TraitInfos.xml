@@ -25,6 +25,22 @@
 					<UnitType>UNIT_TEUHALI_ADEPT</UnitType>
 				</ExtraUnitClass>
 			</ExtraUnitClasses>
+			<ExtraBuildingClasses>
+				<ExtraBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_TEUHALI_BURG_BLOCKSBERG</BuildingClassType>
+					<BuildingType>BUILDING_TEUHALI_BURG_BLOCKSBERG</BuildingType>
+				</ExtraBuildingClass>
+			</ExtraBuildingClasses>
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+						<iYield>1</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
         </TraitInfo>
 		<TraitInfo> <!-- Terror Order -->
             <Type>TRAIT_TEUHALI_ORDER_TERROR</Type>
@@ -49,6 +65,12 @@
 					<UnitType>UNIT_TEUHALI_TERROR_TERRORRITTER</UnitType>
 				</ExtraUnitClass>
 			</ExtraUnitClasses>
+			<ExtraBuildingClasses>
+				<ExtraBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_TEUHALI_BURG_TERROR</BuildingClassType>
+					<BuildingType>BUILDING_TEUHALI_BURG_TERROR</BuildingType>
+				</ExtraBuildingClass>
+			</ExtraBuildingClasses>
         </TraitInfo>
 		<TraitInfo> <!-- Weizen Order -->
             <Type>TRAIT_TEUHALI_ORDER_WEIZEN</Type>
@@ -97,6 +119,12 @@
 					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
 				</FreePromotionUnitCombat>
 			</FreePromotionUnitCombats>
+			<ExtraBuildingClasses>
+				<ExtraBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_TEUHALI_BURG_NIEMALSMEHR</BuildingClassType>
+					<BuildingType>BUILDING_TEUHALI_BURG_NIEMALSMEHR</BuildingType>
+				</ExtraBuildingClass>
+			</ExtraBuildingClasses>
         </TraitInfo>
 		<TraitInfo> <!-- Sonnenstrahl Order -->
             <Type>TRAIT_TEUHALI_ORDER_SONNENSTRAHL</Type>
@@ -127,6 +155,12 @@
 					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
 				</FreePromotionUnitCombat>
 			</FreePromotionUnitCombats>
+			<ExtraBuildingClasses>
+				<ExtraBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_TEUHALI_BURG_SONNE</BuildingClassType>
+					<BuildingType>BUILDING_TEUHALI_BURG_SONNE</BuildingType>
+				</ExtraBuildingClass>
+			</ExtraBuildingClasses>
         </TraitInfo>
 		<TraitInfo> <!-- Teuhali Order Main Trait 1 -->
             <Type>TRAIT_TEUHALI_ORDER_CIVILIZATION</Type>
@@ -142,11 +176,32 @@
 				<iYield>0</iYield>
 				<iYield>25</iYield>
 			</TradeYieldModifiers>
-			<CommerceModifiers>
-				<iCommerce>-25</iCommerce>
-				<iCommerce>0</iCommerce>
-				<iCommerce>0</iCommerce>
-			</CommerceModifiers>
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_FORT</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_CASTLE</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_CITADEL</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>2</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 			<FreePromotions>
 				<FreePromotion>
 					<PromotionType>PROMOTION_TEUHALI_KNIGHT</PromotionType>
@@ -166,7 +221,7 @@
 			<iLevel>2</iLevel>
 			<TraitClass>TRAITCLASS_TEUHALI_CIV</TraitClass>
 			<iMinRequiredPoints>500</iMinRequiredPoints>
-			<Description>TXT_KEY_TRAIT_TEUHALI_ORDER_CIVILIZATION2</Description>
+			<Description>TXT_KEY_TRAIT_TEUHALI_ORDER_CIVILIZATION</Description>
 			<Civilopedia>TXT_KEY_TRAIT_TEUHALI_ORDER_CIVILIZATION_PEDIA</Civilopedia>
 			<ShortDescription>TXT_KEY_TRAIT_TEUHALI_ORDER_CIVILIZATION</ShortDescription>
 			<bSelectable>0</bSelectable>
@@ -202,14 +257,14 @@
 			<TraitClass>TRAITCLASS_TEUHALI_CIV</TraitClass>
 			<iLevel>3</iLevel>
 			<iMinRequiredPoints>1500</iMinRequiredPoints>
-			<Description>TXT_KEY_TRAIT_TEUHALI_ORDER_CIVILIZATION3</Description>
+			<Description>TXT_KEY_TRAIT_TEUHALI_ORDER_CIVILIZATION</Description>
 			<Civilopedia>TXT_KEY_TRAIT_TEUHALI_ORDER_CIVILIZATION_PEDIA</Civilopedia>
 			<ShortDescription>TXT_KEY_TRAIT_TEUHALI_ORDER_CIVILIZATION</ShortDescription>
 			<bSelectable>0</bSelectable>
 			<TradeYieldModifiers>
-				<iYield>25</iYield>
-				<iYield>25</iYield>
-				<iYield>25</iYield>
+				<iYield>15</iYield>
+				<iYield>15</iYield>
+				<iYield>15</iYield>
 			</TradeYieldModifiers>
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
@@ -245,7 +300,7 @@
 			<Civilopedia>TXT_KEY_TRAIT_TEUHALI_LUSTFUL_ORIGIN_PEDIA</Civilopedia>
 			<ShortDescription>TXT_KEY_TRAIT_TEUHALI_LUSTFUL_ORIGIN_SHORT</ShortDescription>
 			<bSelectable>0</bSelectable>
-			<iHappiness>1</iHappiness>
+			<iHappiness>2</iHappiness>
 			<FreePromotions>
 				<FreePromotion>
 					<PromotionType>PROMOTION_CAMBION</PromotionType>

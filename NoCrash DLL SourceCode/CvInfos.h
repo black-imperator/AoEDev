@@ -1261,7 +1261,7 @@ public:
 /*************************************************************************************************/
 	bool isTargetWeakestUnit() const;
 	bool isTargetWeakestUnitCounter() const;
-	bool isTwincast() const;
+	int getMulticast() const;
 	bool isValidate() const;
 	bool isWaterWalking() const;
 	int getAIWeight() const;
@@ -1361,6 +1361,7 @@ public:
 	int getDamageTypeResist(int i) const;
 	//PromotionClass
 	PromotionClassTypes getPromotionClass() const;
+	PromotionClassTypes getPromotionClassOverwrite() const;
 	SpecialUnitTypes getSpecialCargo() const;
 	DomainTypes getDomainCargo() const;
 	bool readPass3();
@@ -1889,7 +1890,7 @@ protected:
 /*************************************************************************************************/
 	bool m_bTargetWeakestUnit;
 	bool m_bTargetWeakestUnitCounter;
-	bool m_bTwincast;
+	int m_iMulticast;
 	bool m_bValidate;
 	bool m_bWaterWalking;
 	int m_iAIWeight;
@@ -2037,6 +2038,7 @@ protected:
 	PromotionClassTypes m_iPromotionClass;
 	SpecialUnitTypes m_iSpecialCargo;
 	DomainTypes m_iDomainCargo;
+	PromotionClassTypes m_iPromotionClassOverwrite;
 
 };
 
@@ -8085,6 +8087,7 @@ public:
 /*************************************************************************************************/
 //FfH: Added by Kael 08/07/2007
 	bool isFemale() const;
+	bool isRandom() const;
 	int getAlignment() const;
 /*************************************************************************************************/
 /**	Lawful-Chaotic Alignments 				11/06/09								Valkrionn	**/
@@ -8274,6 +8277,7 @@ protected:
 /*************************************************************************************************/
 //FfH: Added by Kael 08/07/2007
 	bool m_bFemale;
+	bool m_bRandom;
 	int m_iAlignment;
 /*************************************************************************************************/
 /**	Lawful-Chaotic Alignments 				11/06/09								Valkrionn	**/
@@ -9284,6 +9288,7 @@ public:
 	bool isAssimilation() const;
 	bool isBarbarianAlly() const;
 	bool isIgnoreFood() const;
+	bool isIgnoreProduction() const;
 	bool isIgnoreHealth() const;
 	bool isIgnoreHappy() const;
 	bool isInsane() const;
@@ -9487,6 +9492,7 @@ protected:
 	bool m_bAssimilation;
 	bool m_bBarbarianAlly;
 	bool m_bIgnoreFood;
+	bool m_bIgnoreProduction;
 	bool m_bIgnoreHealth;
 	bool m_bIgnoreHappy;
 	bool m_bInsane;
@@ -12697,6 +12703,7 @@ public:
 	float getAttackStrengthMod() const;								// Exposed to Python
 	float getDefenseStrength() const;								// Exposed to Python
 	float getDefenseStrengthMod() const;								// Exposed to Python
+	float getCityDefenseMod() const;								// Exposed to Python
 	float getMovement() const;								// Exposed to Python
 	float getMovementDiscount() const;								// Exposed to Python
 	float getVisibility() const;								// Exposed to Python
@@ -12721,6 +12728,7 @@ public:
 	float getCommandLimit() const;								// Exposed to Python
 	float getWorkRate() const;								// Exposed to Python
 	float getCollateral() const;								// Exposed to Python
+	float getCollateralProtection() const;								// Exposed to Python
 	float getCollateralLimit() const;								// Exposed to Python
 	float getCollateralTargets() const;								// Exposed to Python
 	float getVictoryInfluenceModifier() const;								// Exposed to Python
@@ -12741,6 +12749,7 @@ public:
 // Arrays
 	float getDamageTypeCombats(int iI) const;								// Exposed to Python
 	float getDamageTypeResists(int iI) const;								// Exposed to Python
+	float getTerrainDefenseMods(int iI) const;								// Exposed to Python
 
 	bool read(CvXMLLoadUtility* pXML);
 	void copyNonDefaults(CvAffinityInfo* pClassInfo, CvXMLLoadUtility* pXML);
@@ -12760,6 +12769,7 @@ protected:
 	float m_fAttackStrengthMod;
 	float m_fDefenseStrength;
 	float m_fDefenseStrengthMod;
+	float m_fCityDefenseMod;
 	float m_fMovement;
 	float m_fMovementDiscount;
 	float m_fVisibility;
@@ -12784,6 +12794,7 @@ protected:
 	float m_fCommandLimit;
 	float m_fWorkRate;
 	float m_fCollateral;
+	float m_fCollateralProtection;
 	float m_fCollateralLimit;
 	float m_fCollateralTargets;
 	float m_fVictoryInfluenceModifier;
@@ -12804,6 +12815,7 @@ protected:
 // Arrays
 	float* m_pafDamageTypeCombats;
 	float* m_pafDamageTypeResists;
+	float* m_pafTerrainDefenseMods;
 };
 /*************************************************************************************************/
 /**	Better Affinity							END													**/

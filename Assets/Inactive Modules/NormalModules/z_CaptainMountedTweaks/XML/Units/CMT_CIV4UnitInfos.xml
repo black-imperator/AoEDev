@@ -261,7 +261,7 @@
 				</UnitCombatMod>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
-					<iUnitCombatMod>-25</iUnitCombatMod>
+					<iUnitCombatMod>-40</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
 			<iCultureGarrison>4</iCultureGarrison>
@@ -278,6 +278,1005 @@
 			<iTier>2</iTier>
 			<PrereqBuildingClass>BUILDINGCLASS_STABLE</PrereqBuildingClass>
 			<iPowerMult>4</iPowerMult>
+		</UnitInfo>
+		<UnitInfo>        <!-- Wolf Rider -->
+			<Class>UNITCLASS_HORSEMAN</Class>
+			<Type>UNIT_WOLF_RIDER</Type>
+			<Combat>UNITCOMBAT_MOUNTED</Combat>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_GOBLIN_WOLF_RIDER</Description>
+			<Civilopedia>TXT_KEY_UNIT_GOBLIN_WOLF_RIDER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_GOBLIN_WOLF_RIDER_STRATEGY_MOUNTEDTWEAKS</Strategy>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bForceOverwrite>1</bForceOverwrite>
+			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bMilitarySupport>1</bMilitarySupport>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<bPillage>1</bPillage>
+			<bNoDefensiveBonus>1</bNoDefensiveBonus>
+			<UnitClassUpgrades>
+				<UnitClassUpgradeType>UNITCLASS_CHARIOT</UnitClassUpgradeType>
+				<UnitClassUpgradeType>UNITCLASS_HORSE_ARCHER</UnitClassUpgradeType>
+			</UnitClassUpgrades>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ATTACK</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_PILLAGE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<FlankingStrikes>				
+				<FlankingStrike>
+					<FlankingStrikeUnitCombat>UNITCOMBAT_SIEGE</FlankingStrikeUnitCombat>
+					<bValidUnitCombat>1</bValidUnitCombat>
+				</FlankingStrike>
+			</FlankingStrikes>
+			<iFlankingDamage>100</iFlankingDamage>
+			<iFlankingDamageLimit>100</iFlankingDamageLimit>
+			<iFlankingDamageMaxUnits>4</iFlankingDamageMaxUnits>
+			<PrereqTech>TECH_HORSEBACK_RIDING</PrereqTech>
+			<iCost>60</iCost>
+			<iMoves>3</iMoves>
+			<iCombat>4</iCombat>
+			<iWithdrawalProb>25</iWithdrawalProb>
+			<UnitCombatMods>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iUnitCombatMod>40</iUnitCombatMod>
+				</UnitCombatMod>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<iUnitCombatMod>-40</iUnitCombatMod>
+				</UnitCombatMod>
+			</UnitCombatMods>
+			<iCultureGarrison>4</iCultureGarrison>
+			<iAsset>4</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>2</iGroupSize>
+				<iMeleeWaveSize>2</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>2</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_WOLF_RIDER</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_GOBLIN</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_WOLF_MOUNTEDTWEAKS</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+			<iTier>2</iTier>
+			<iPowerMult>4</iPowerMult>
+		</UnitInfo>
+		<UnitInfo>        <!-- Scorpion Clan Wolf Rider -->
+			<Class>UNITCLASS_HORSEMAN</Class>
+			<Type>UNIT_WOLF_RIDER_SCORPION_CLAN</Type>
+			<Combat>UNITCOMBAT_MOUNTED</Combat>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_SCORPION_CLAN_WOLF_RIDER</Description>
+			<Civilopedia>TXT_KEY_UNIT_GOBLIN_WOLF_RIDER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_GOBLIN_WOLF_RIDER_STRATEGY_MOUNTEDTWEAKS</Strategy>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bForceOverwrite>1</bForceOverwrite>
+			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bMilitarySupport>1</bMilitarySupport>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<bPillage>1</bPillage>
+			<bNoDefensiveBonus>1</bNoDefensiveBonus>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ATTACK</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_PILLAGE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<FlankingStrikes>				
+				<FlankingStrike>
+					<FlankingStrikeUnitCombat>UNITCOMBAT_SIEGE</FlankingStrikeUnitCombat>
+					<bValidUnitCombat>1</bValidUnitCombat>
+				</FlankingStrike>
+			</FlankingStrikes>
+			<iFlankingDamage>100</iFlankingDamage>
+			<iFlankingDamageLimit>100</iFlankingDamageLimit>
+			<iFlankingDamageMaxUnits>4</iFlankingDamageMaxUnits>
+			<PrereqTech>TECH_HORSEBACK_RIDING</PrereqTech>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iMoves>3</iMoves>
+			<iCombat>4</iCombat>
+			<iWithdrawalProb>25</iWithdrawalProb>
+			<UnitCombatMods>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iUnitCombatMod>40</iUnitCombatMod>
+				</UnitCombatMod>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<iUnitCombatMod>-40</iUnitCombatMod>
+				</UnitCombatMod>
+			</UnitCombatMods>
+			<iCultureGarrison>4</iCultureGarrison>
+			<iAsset>4</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>2</iGroupSize>
+				<iMeleeWaveSize>2</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>2</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_WOLF_RIDER_SCORPION_CLAN</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<bGraphicalOnly>0</bGraphicalOnly>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_GOBLIN</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+					<FreePromotion>
+					<PromotionType>PROMOTION_SCORPION_CLAN</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_WOLF_MOUNTEDTWEAKS</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+		</FreePromotions>
+			<iCombatDefense>4</iCombatDefense>
+			<iTier>2</iTier>
+			<iPowerMult>4</iPowerMult>
+		</UnitInfo>
+		<UnitInfo>		<!-- Muris Clan Wolf Rider -->
+			<Class>UNITCLASS_HORSEMAN</Class>
+			<Type>UNIT_WOLF_RIDER_MURIS_CLAN</Type>
+			<Combat>UNITCOMBAT_MOUNTED</Combat>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_MURIS_CLAN_WOLF_RIDER</Description>
+			<Civilopedia>TXT_KEY_UNIT_GOBLIN_WOLF_RIDER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_GOBLIN_WOLF_RIDER_STRATEGY_MOUNTEDTWEAKS</Strategy>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bMilitarySupport>1</bMilitarySupport>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<bPillage>1</bPillage>
+			<bNoDefensiveBonus>1</bNoDefensiveBonus>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ATTACK</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_PILLAGE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<FlankingStrikes>				
+				<FlankingStrike>
+					<FlankingStrikeUnitCombat>UNITCOMBAT_SIEGE</FlankingStrikeUnitCombat>
+					<bValidUnitCombat>1</bValidUnitCombat>
+				</FlankingStrike>
+			</FlankingStrikes>
+			<iFlankingDamage>100</iFlankingDamage>
+			<iFlankingDamageLimit>100</iFlankingDamageLimit>
+			<iFlankingDamageMaxUnits>4</iFlankingDamageMaxUnits>
+			<PrereqTech>TECH_HORSEBACK_RIDING</PrereqTech>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iMoves>3</iMoves>
+			<iCombat>4</iCombat>
+			<iWithdrawalProb>25</iWithdrawalProb>
+			<UnitCombatMods>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iUnitCombatMod>40</iUnitCombatMod>
+				</UnitCombatMod>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<iUnitCombatMod>-40</iUnitCombatMod>
+				</UnitCombatMod>
+			</UnitCombatMods>
+			<iCultureGarrison>4</iCultureGarrison>
+			<iAsset>4</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>2</iGroupSize>
+				<iMeleeWaveSize>2</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>2</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_WOLF_RIDER_MURIS_CLAN</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<bGraphicalOnly>0</bGraphicalOnly>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_GOBLIN</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MURIS_CLAN</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_WOLF_MOUNTEDTWEAKS</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+			<iCombatDefense>4</iCombatDefense>
+			<iTier>2</iTier>
+			<DamageTypeCombats>
+				<DamageTypeCombat>
+					<DamageType>DAMAGE_POISON</DamageType>
+					<iCombat>1</iCombat>
+				</DamageTypeCombat>
+			</DamageTypeCombats>
+		</UnitInfo>
+		<UnitInfo>		  <!-- Lukos Clan Wolf Rider -->
+			<Class>UNITCLASS_HORSEMAN</Class>
+			<Type>UNIT_WOLF_RIDER_LUKOS_CLAN</Type>
+			<Combat>UNITCOMBAT_MOUNTED</Combat>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_LUKOS_CLAN_WOLF_RIDER</Description>
+			<Civilopedia>TXT_KEY_UNIT_GOBLIN_WOLF_RIDER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_GOBLIN_WOLF_RIDER_STRATEGY_MOUNTEDTWEAKS</Strategy>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bForceOverwrite>1</bForceOverwrite>
+			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bMilitarySupport>1</bMilitarySupport>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<bPillage>1</bPillage>
+			<bNoDefensiveBonus>1</bNoDefensiveBonus>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ATTACK</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_PILLAGE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<FlankingStrikes>				
+				<FlankingStrike>
+					<FlankingStrikeUnitCombat>UNITCOMBAT_SIEGE</FlankingStrikeUnitCombat>
+					<bValidUnitCombat>1</bValidUnitCombat>
+				</FlankingStrike>
+			</FlankingStrikes>
+			<iFlankingDamage>100</iFlankingDamage>
+			<iFlankingDamageLimit>100</iFlankingDamageLimit>
+			<iFlankingDamageMaxUnits>4</iFlankingDamageMaxUnits>
+			<PrereqTech>TECH_HORSEBACK_RIDING</PrereqTech>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iMoves>3</iMoves>
+			<iCombat>4</iCombat>
+			<iWithdrawalProb>25</iWithdrawalProb>
+			<UnitCombatMods>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iUnitCombatMod>40</iUnitCombatMod>
+				</UnitCombatMod>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<iUnitCombatMod>-40</iUnitCombatMod>
+				</UnitCombatMod>
+			</UnitCombatMods>
+			<iCultureGarrison>4</iCultureGarrison>
+			<iAsset>4</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>2</iGroupSize>
+				<iMeleeWaveSize>2</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>2</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_WOLF_RIDER_LUKOS_CLAN</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<bGraphicalOnly>0</bGraphicalOnly>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_GOBLIN</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_LUKOS_CLAN</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_WOLF_MOUNTEDTWEAKS</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+			<iCombatDefense>4</iCombatDefense>
+			<iTier>2</iTier>
+		</UnitInfo>
+		<UnitInfo>		  <!-- Neith Clan Wolf Rider -->
+			<Class>UNITCLASS_HORSEMAN</Class>
+			<Type>UNIT_WOLF_RIDER_NEITH_CLAN</Type>
+			<Combat>UNITCOMBAT_MOUNTED</Combat>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_NEITH_CLAN_WOLF_RIDER</Description>
+			<Civilopedia>TXT_KEY_UNIT_GOBLIN_WOLF_RIDER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_GOBLIN_WOLF_RIDER_STRATEGY_MOUNTEDTWEAKS</Strategy>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bForceOverwrite>1</bForceOverwrite>
+			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bMilitarySupport>1</bMilitarySupport>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<bPillage>1</bPillage>
+			<bNoDefensiveBonus>1</bNoDefensiveBonus>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ATTACK</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_PILLAGE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<FlankingStrikes>				
+				<FlankingStrike>
+					<FlankingStrikeUnitCombat>UNITCOMBAT_SIEGE</FlankingStrikeUnitCombat>
+					<bValidUnitCombat>1</bValidUnitCombat>
+				</FlankingStrike>
+			</FlankingStrikes>
+			<iFlankingDamage>100</iFlankingDamage>
+			<iFlankingDamageLimit>100</iFlankingDamageLimit>
+			<iFlankingDamageMaxUnits>4</iFlankingDamageMaxUnits>
+			<PrereqTech>TECH_HORSEBACK_RIDING</PrereqTech>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iMoves>3</iMoves>
+			<iCombat>4</iCombat>
+			<iWithdrawalProb>25</iWithdrawalProb>
+			<UnitCombatMods>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iUnitCombatMod>40</iUnitCombatMod>
+				</UnitCombatMod>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<iUnitCombatMod>-40</iUnitCombatMod>
+				</UnitCombatMod>
+			</UnitCombatMods>
+			<iCultureGarrison>4</iCultureGarrison>
+			<iAsset>4</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>2</iGroupSize>
+				<iMeleeWaveSize>2</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>2</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_WOLF_RIDER_NEITH_CLAN</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<bGraphicalOnly>0</bGraphicalOnly>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_GOBLIN</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_NEITH_CLAN</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_WOLF_MOUNTEDTWEAKS</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+			<iCombatDefense>4</iCombatDefense>
+			<iTier>2</iTier>
+		</UnitInfo>
+		<UnitInfo>		<!-- Muris Clan Chariot -->
+			<Class>UNITCLASS_CHARIOT</Class>
+			<Type>UNIT_CHARIOT_MURIS_CLAN</Type>
+			<Combat>UNITCOMBAT_MOUNTED</Combat>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_MURIS_CLAN_CHARIOT</Description>
+			<Civilopedia>TXT_KEY_UNIT_CHARIOT_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_WOLF_CHARIOT_STRATEGY_MOUNTEDTWEAKS</Strategy>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bForceOverwrite>1</bForceOverwrite>
+			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bMilitarySupport>1</bMilitarySupport>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<bPillage>1</bPillage>
+			<bNoDefensiveBonus>1</bNoDefensiveBonus>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ATTACK</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_PILLAGE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<PrereqBuilding>BUILDING_SIEGE_WORKSHOP</PrereqBuilding>
+			<PrereqTech>TECH_TRADE</PrereqTech>
+			<TechTypes>
+			<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
+			</TechTypes>
+				<!-- <PrereqBonuses>
+				<BonusType>BONUS_HORSE</BonusType>
+				<BonusType>BONUS_NIGHTMARE</BonusType>
+				<BonusType>BONUS_HYAPON</BonusType>
+			</PrereqBonuses> -->
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iMoves>3</iMoves>
+			<iCombat>5</iCombat>
+			<iWithdrawalProb>25</iWithdrawalProb>
+			<iCultureGarrison>4</iCultureGarrison>
+			<iAsset>5</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>2</iGroupSize>
+				<iMeleeWaveSize>2</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>2</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_CHARIOT_MURIS_CLAN</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<bGraphicalOnly>0</bGraphicalOnly>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_GOBLIN</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MURIS_CLAN</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_WOLF_MOUNTEDTWEAKS</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+			<iCombatDefense>3</iCombatDefense>
+			<iTier>2</iTier>
+			<iWeaponTierMax>3</iWeaponTierMax>
+			<DamageTypeCombats>
+				<DamageTypeCombat>
+					<DamageType>DAMAGE_POISON</DamageType>
+					<iCombat>1</iCombat>
+				</DamageTypeCombat>
+			</DamageTypeCombats>
+		</UnitInfo>
+		<UnitInfo>		  <!-- Lukos Clan Chariot -->
+			<Class>UNITCLASS_CHARIOT</Class>
+			<Type>UNIT_CHARIOT_LUKOS_CLAN</Type>
+			<Combat>UNITCOMBAT_MOUNTED</Combat>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_LUKOS_CLAN_CHARIOT</Description>
+			<Civilopedia>TXT_KEY_UNIT_CHARIOT_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_WOLF_CHARIOT_STRATEGY_MOUNTEDTWEAKS</Strategy>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bForceOverwrite>1</bForceOverwrite>
+			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bMilitarySupport>1</bMilitarySupport>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<bPillage>1</bPillage>
+			<bNoDefensiveBonus>1</bNoDefensiveBonus>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ATTACK</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_PILLAGE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<PrereqBuilding>BUILDING_SIEGE_WORKSHOP</PrereqBuilding>
+			<PrereqTech>TECH_TRADE</PrereqTech>
+			<TechTypes>
+					<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
+			</TechTypes>
+			<iCost>120</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iMoves>3</iMoves>
+			<iCombat>5</iCombat>
+			<iWithdrawalProb>25</iWithdrawalProb>
+			<iCultureGarrison>4</iCultureGarrison>
+			<iAsset>5</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>2</iGroupSize>
+				<iMeleeWaveSize>2</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>2</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_CHARIOT_LUKOS_CLAN</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<bGraphicalOnly>0</bGraphicalOnly>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_GOBLIN</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_LUKOS_CLAN</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_WOLF_MOUNTEDTWEAKS</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+			<iCombatDefense>3</iCombatDefense>
+			<iTier>2</iTier>
+			<iWeaponTierMax>3</iWeaponTierMax>
+		</UnitInfo>
+		<UnitInfo>		  <!-- Neith Clan Chariot -->
+			<Class>UNITCLASS_CHARIOT</Class>
+			<Type>UNIT_CHARIOT_NEITH_CLAN</Type>
+			<Combat>UNITCOMBAT_MOUNTED</Combat>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_NEITH_CLAN_CHARIOT</Description>
+			<Civilopedia>TXT_KEY_UNIT_CHARIOT_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_WOLF_CHARIOT_STRATEGY_MOUNTEDTWEAKS</Strategy>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bForceOverwrite>1</bForceOverwrite>
+			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bMilitarySupport>1</bMilitarySupport>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<bPillage>1</bPillage>
+			<bNoDefensiveBonus>1</bNoDefensiveBonus>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ATTACK</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_PILLAGE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<PrereqBuilding>BUILDING_SIEGE_WORKSHOP</PrereqBuilding>
+			<PrereqTech>TECH_TRADE</PrereqTech>
+			<TechTypes>
+					<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
+			</TechTypes>
+				<!-- <PrereqBonuses>
+				<BonusType>BONUS_HORSE</BonusType>
+				<BonusType>BONUS_NIGHTMARE</BonusType>
+				<BonusType>BONUS_HYAPON</BonusType>
+			</PrereqBonuses> -->
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iMoves>3</iMoves>
+			<iCombat>5</iCombat>
+			<iWithdrawalProb>25</iWithdrawalProb>
+			<iCultureGarrison>4</iCultureGarrison>
+			<iAsset>5</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>2</iGroupSize>
+				<iMeleeWaveSize>2</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>2</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_CHARIOT_NEITH_CLAN</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<bGraphicalOnly>0</bGraphicalOnly>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_GOBLIN</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_NEITH_CLAN</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_WOLF_MOUNTEDTWEAKS</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+			<iCombatDefense>3</iCombatDefense>
+			<iTier>2</iTier>
+			<iWeaponTierMax>3</iWeaponTierMax>
+		</UnitInfo>
+		<UnitInfo>        <!-- Scorpion Clan Chariot -->
+			<Class>UNITCLASS_CHARIOT</Class>
+			<Type>UNIT_CHARIOT_SCORPION_CLAN</Type>
+			<Combat>UNITCOMBAT_MOUNTED</Combat>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_SCORPION_CLAN_CHARIOT</Description>
+			<Civilopedia>TXT_KEY_SCORPION_CLAN_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_WOLF_CHARIOT_STRATEGY_MOUNTEDTWEAKS</Strategy>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bForceOverwrite>1</bForceOverwrite>
+			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bMilitarySupport>1</bMilitarySupport>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<bPillage>1</bPillage>
+			<bNoDefensiveBonus>1</bNoDefensiveBonus>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ATTACK</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_PILLAGE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<PrereqBuilding>BUILDING_SIEGE_WORKSHOP</PrereqBuilding>
+			<PrereqTech>TECH_TRADE</PrereqTech>
+			<TechTypes>
+				<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
+			</TechTypes>
+			<!-- <PrereqBonuses>
+				<BonusType>BONUS_HORSE</BonusType>
+				<BonusType>BONUS_NIGHTMARE</BonusType>
+				<BonusType>BONUS_HYAPON</BonusType>
+			</PrereqBonuses> -->
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iMoves>3</iMoves>
+			<iCombat>5</iCombat>
+			<iWithdrawalProb>25</iWithdrawalProb>
+			<iCultureGarrison>4</iCultureGarrison>
+			<iAsset>5</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>2</iGroupSize>
+				<iMeleeWaveSize>2</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>2</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_CHARIOT_SCORPION_CLAN</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<bGraphicalOnly>0</bGraphicalOnly>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_GOBLIN</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_SCORPION_CLAN</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+			<iCombatDefense>3</iCombatDefense>
+			<iTier>2</iTier>
+			<iWeaponTierMax>3</iWeaponTierMax>
+			<iPowerMult>4</iPowerMult>
+		</UnitInfo>
+		<UnitInfo>        <!-- Wolf Archer -->
+			<Class>UNITCLASS_HORSE_ARCHER</Class>
+			<Type>UNIT_GOBLIN_WOLF_ARCHER</Type>
+			<Combat>UNITCOMBAT_MOUNTED</Combat>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_GOBLIN_WOLF_ARCHER</Description>
+			<Civilopedia>TXT_KEY_UNIT_GOBLIN_WOLF_RIDER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_GOBLIN_WOLF_ARCHER_STRATEGY_MOUNTEDTWEAKS</Strategy>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bForceOverwrite>1</bForceOverwrite>
+			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bMilitarySupport>1</bMilitarySupport>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<bPillage>1</bPillage>
+			<bFirstStrikeImmune>1</bFirstStrikeImmune>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ATTACK</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_PILLAGE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<iCost>120</iCost>
+			<iMoves>3</iMoves>
+			<iAirRange>1</iAirRange>
+			<iCombat>4</iCombat>
+			<iCombatDefense>4</iCombatDefense>
+			<iAirCombat>5</iAirCombat>
+			<iAirCombatLimit>40</iAirCombatLimit>
+			<iFirstStrikes>1</iFirstStrikes>
+			<iWithdrawalProb>35</iWithdrawalProb>
+			<iAsset>9</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>2</iGroupSize>
+				<iMeleeWaveSize>2</iMeleeWaveSize>
+				<iRangedWaveSize>2</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_WOLF_RIDER_SCORPION_CLAN</EarlyArtDefineTag>
+				</UnitMeshGroup>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_WOLF_RIDER_SCORPION_CLAN</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_GOBLIN</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+			<FormationType>FORMATION_TYPE_RANGED</FormationType>
+			<bNeverObsolete>1</bNeverObsolete>
+			<iDefensiveStrikeChance>20</iDefensiveStrikeChance>
+			<iDefensiveStrikeDamage>10</iDefensiveStrikeDamage>
+			<DamageTypeCombats>
+				<DamageTypeCombat>
+					<DamageType>DAMAGE_POISON</DamageType>
+					<iCombat>1</iCombat>
+				</DamageTypeCombat>
+			</DamageTypeCombats>
+			<iTier>3</iTier>
+			<iPowerMult>5</iPowerMult>
+		</UnitInfo>
+		<UnitInfo>		<!-- Muris Wolf Archer -->
+			<Class>UNITCLASS_HORSE_ARCHER</Class>
+			<Type>UNIT_MURIS_CLAN_WOLF_ARCHER</Type>
+			<Combat>UNITCOMBAT_MOUNTED</Combat>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_MURIS_CLAN_WOLF_ARCHER</Description>
+			<Civilopedia>TXT_KEY_UNIT_GOBLIN_WOLF_RIDER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_GOBLIN_WOLF_ARCHER_STRATEGY_MOUNTEDTWEAKS</Strategy>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bForceOverwrite>1</bForceOverwrite>
+			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bMilitarySupport>1</bMilitarySupport>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<bPillage>1</bPillage>
+			<bNoDefensiveBonus>1</bNoDefensiveBonus>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ATTACK</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_PILLAGE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<FlankingStrikes>
+				<FlankingStrike>
+					<FlankingStrikeUnitCombat>UNITCOMBAT_SIEGE</FlankingStrikeUnitCombat>
+					<bValidUnitCombat>1</bValidUnitCombat>
+				</FlankingStrike>
+			</FlankingStrikes>
+			<UnitCombatMods>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iUnitCombatMod>40</iUnitCombatMod>
+				</UnitCombatMod>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<iUnitCombatMod>-40</iUnitCombatMod>
+				</UnitCombatMod>
+			</UnitCombatMods>
+			<iCost>120</iCost>
+			<iMoves>3</iMoves>
+			<iAirRange>1</iAirRange>
+			<iCombat>5</iCombat>
+			<iCombatDefense>5</iCombatDefense>
+			<iAirCombat>6</iAirCombat>
+			<iAirCombatLimit>40</iAirCombatLimit>
+			<iFirstStrikes>1</iFirstStrikes>
+			<iWithdrawalProb>35</iWithdrawalProb>
+			<iWeaponTierMax>2</iWeaponTierMax>
+			<iAsset>9</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>2</iGroupSize>
+				<iMeleeWaveSize>2</iMeleeWaveSize>
+				<iRangedWaveSize>2</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_WOLF_RIDER_MURIS_CLAN</EarlyArtDefineTag>
+				</UnitMeshGroup>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_WOLF_RIDER_MURIS_CLAN</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_GOBLIN</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MURIS_CLAN</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_WOLF_MOUNTEDTWEAKS</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+			<FormationType>FORMATION_TYPE_RANGED</FormationType>
+			<bNeverObsolete>1</bNeverObsolete>
+			<iDefensiveStrikeChance>20</iDefensiveStrikeChance>
+			<iDefensiveStrikeDamage>10</iDefensiveStrikeDamage>
+			<DamageTypeCombats>
+				<DamageTypeCombat>
+					<DamageType>DAMAGE_POISON</DamageType>
+					<iCombat>1</iCombat>
+				</DamageTypeCombat>
+			</DamageTypeCombats>
+			<iTier>3</iTier>
+		</UnitInfo>
+		<UnitInfo>		  <!-- Lukos Wolf Archer -->
+			<Class>UNITCLASS_HORSE_ARCHER</Class>
+			<Type>UNIT_LUKOS_CLAN_WOLF_ARCHER</Type>
+			<Combat>UNITCOMBAT_MOUNTED</Combat>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_LUKOS_CLAN_WOLF_ARCHER</Description>
+			<Civilopedia>TXT_KEY_UNIT_GOBLIN_WOLF_RIDER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_GOBLIN_WOLF_ARCHER_STRATEGY_MOUNTEDTWEAKS</Strategy>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<PrereqTech>TECH_STIRRUPS</PrereqTech>
+			<bForceOverwrite>1</bForceOverwrite>
+			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bMilitarySupport>1</bMilitarySupport>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<bPillage>1</bPillage>
+			<bNoDefensiveBonus>1</bNoDefensiveBonus>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ATTACK</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_PILLAGE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<FlankingStrikes>
+				<FlankingStrike>
+					<FlankingStrikeUnitCombat>UNITCOMBAT_SIEGE</FlankingStrikeUnitCombat>
+					<bValidUnitCombat>1</bValidUnitCombat>
+				</FlankingStrike>
+			</FlankingStrikes>
+			<UnitCombatMods>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iUnitCombatMod>40</iUnitCombatMod>
+				</UnitCombatMod>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<iUnitCombatMod>-40</iUnitCombatMod>
+				</UnitCombatMod>
+			</UnitCombatMods>
+			<iCost>120</iCost>
+			<iMoves>3</iMoves>
+			<iAirRange>1</iAirRange>
+			<iCombat>5</iCombat>
+			<iCombatDefense>5</iCombatDefense>
+			<iAirCombat>6</iAirCombat>
+			<iAirCombatLimit>40</iAirCombatLimit>
+			<iFirstStrikes>1</iFirstStrikes>
+			<iWithdrawalProb>35</iWithdrawalProb>
+			<iWeaponTierMax>2</iWeaponTierMax>
+			<iAsset>9</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>2</iGroupSize>
+				<iMeleeWaveSize>2</iMeleeWaveSize>
+				<iRangedWaveSize>2</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_WOLF_RIDER_LUKOS_CLAN</EarlyArtDefineTag>
+				</UnitMeshGroup>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_WOLF_RIDER_LUKOS_CLAN</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_GOBLIN</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_LUKOS_CLAN</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_WOLF_MOUNTEDTWEAKS</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+			<FormationType>FORMATION_TYPE_RANGED</FormationType>
+			<bNeverObsolete>1</bNeverObsolete>
+			<iDefensiveStrikeChance>20</iDefensiveStrikeChance>
+			<iDefensiveStrikeDamage>10</iDefensiveStrikeDamage>
+			<iTier>3</iTier>
+		</UnitInfo>
+		<UnitInfo>		  <!-- Neith Wolf Archer -->
+			<Class>UNITCLASS_HORSE_ARCHER</Class>
+			<Type>UNIT_NEITH_CLAN_WOLF_ARCHER</Type>
+			<Combat>UNITCOMBAT_MOUNTED</Combat>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_NEITH_CLAN_WOLF_ARCHER</Description>
+			<Civilopedia>TXT_KEY_UNIT_GOBLIN_WOLF_RIDER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_GOBLIN_WOLF_ARCHER_STRATEGY_MOUNTEDTWEAKS</Strategy>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bForceOverwrite>1</bForceOverwrite>
+			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bMilitarySupport>1</bMilitarySupport>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<bPillage>1</bPillage>
+			<bNoDefensiveBonus>1</bNoDefensiveBonus>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ATTACK</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_PILLAGE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<FlankingStrikes>
+				<FlankingStrike>
+					<FlankingStrikeUnitCombat>UNITCOMBAT_SIEGE</FlankingStrikeUnitCombat>
+					<bValidUnitCombat>1</bValidUnitCombat>
+				</FlankingStrike>
+			</FlankingStrikes>
+			<UnitCombatMods>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iUnitCombatMod>40</iUnitCombatMod>
+				</UnitCombatMod>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<iUnitCombatMod>-40</iUnitCombatMod>
+				</UnitCombatMod>
+			</UnitCombatMods>
+			<iCost>120</iCost>
+			<iMoves>3</iMoves>
+			<iAirRange>1</iAirRange>
+			<iCombat>5</iCombat>
+			<iCombatDefense>5</iCombatDefense>
+			<iAirCombat>6</iAirCombat>
+			<iAirCombatLimit>40</iAirCombatLimit>
+			<iFirstStrikes>1</iFirstStrikes>
+			<iWithdrawalProb>35</iWithdrawalProb>
+			<iWeaponTierMax>2</iWeaponTierMax>
+			<iAsset>9</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>2</iGroupSize>
+				<iMeleeWaveSize>2</iMeleeWaveSize>
+				<iRangedWaveSize>2</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_WOLF_RIDER_NEITH_CLAN</EarlyArtDefineTag>
+				</UnitMeshGroup>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_WOLF_RIDER_NEITH_CLAN</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_GOBLIN</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_NEITH_CLAN</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_WOLF_MOUNTEDTWEAKS</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+			<FormationType>FORMATION_TYPE_RANGED</FormationType>
+			<bNeverObsolete>1</bNeverObsolete>
+			<iDefensiveStrikeChance>20</iDefensiveStrikeChance>
+			<iDefensiveStrikeDamage>10</iDefensiveStrikeDamage>
+			<iTier>3</iTier>
 		</UnitInfo>
 		<UnitInfo>        <!-- Ostaurii Rider 650-->          <!-- MOUNTED UNITS -->
 			<Class>UNITCLASS_HORSEMAN</Class>
@@ -330,7 +1329,7 @@
 				</UnitCombatMod>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
-					<iUnitCombatMod>-25</iUnitCombatMod>
+					<iUnitCombatMod>-40</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
 			<iCultureGarrison>4</iCultureGarrison>
@@ -414,7 +1413,7 @@
 				</UnitCombatMod>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
-					<iUnitCombatMod>-25</iUnitCombatMod>
+					<iUnitCombatMod>-40</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
 			<iCultureGarrison>4</iCultureGarrison>
@@ -476,6 +1475,9 @@
 					<bValidUnitCombat>1</bValidUnitCombat>
 				</FlankingStrike>
 			</FlankingStrikes>
+			<iFlankingDamage>100</iFlankingDamage>
+			<iFlankingDamageLimit>100</iFlankingDamageLimit>
+			<iFlankingDamageMaxUnits>4</iFlankingDamageMaxUnits>
 			<iCost>60</iCost>
 			<iMoves>3</iMoves>
 			<iCombat>4</iCombat>
@@ -488,7 +1490,7 @@
 				</UnitCombatMod>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
-					<iUnitCombatMod>-25</iUnitCombatMod>
+					<iUnitCombatMod>-40</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
 			<iCultureGarrison>4</iCultureGarrison>
@@ -544,6 +1546,9 @@
 					<bValidUnitCombat>1</bValidUnitCombat>
 				</FlankingStrike>
 			</FlankingStrikes>
+			<iFlankingDamage>100</iFlankingDamage>
+			<iFlankingDamageLimit>100</iFlankingDamageLimit>
+			<iFlankingDamageMaxUnits>4</iFlankingDamageMaxUnits>
 			<iCost>60</iCost>
 			<iMoves>3</iMoves>
 			<iCombat>4</iCombat>
@@ -569,7 +1574,7 @@
 				</UnitCombatMod>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
-					<iUnitCombatMod>-25</iUnitCombatMod>
+					<iUnitCombatMod>-40</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
 			<iCultureGarrison>4</iCultureGarrison>
@@ -640,6 +1645,9 @@
 					<bValidUnitCombat>1</bValidUnitCombat>
 				</FlankingStrike>
 			</FlankingStrikes>
+			<iFlankingDamage>100</iFlankingDamage>
+			<iFlankingDamageLimit>100</iFlankingDamageLimit>
+			<iFlankingDamageMaxUnits>4</iFlankingDamageMaxUnits>
 			<UnitCombatMods>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
@@ -647,7 +1655,7 @@
 				</UnitCombatMod>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
-					<iUnitCombatMod>-25</iUnitCombatMod>
+					<iUnitCombatMod>-40</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
 			<iCost>120</iCost>
@@ -726,6 +1734,9 @@
 					<bValidUnitCombat>1</bValidUnitCombat>
 				</FlankingStrike>
 			</FlankingStrikes>
+			<iFlankingDamage>100</iFlankingDamage>
+			<iFlankingDamageLimit>100</iFlankingDamageLimit>
+			<iFlankingDamageMaxUnits>4</iFlankingDamageMaxUnits>
 			<UnitCombatMods>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
@@ -733,7 +1744,7 @@
 				</UnitCombatMod>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
-					<iUnitCombatMod>-25</iUnitCombatMod>
+					<iUnitCombatMod>-40</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
 			<iCost>150</iCost>
@@ -806,6 +1817,9 @@
 					<bValidUnitCombat>1</bValidUnitCombat>
 				</FlankingStrike>
 			</FlankingStrikes>
+			<iFlankingDamage>100</iFlankingDamage>
+			<iFlankingDamageLimit>100</iFlankingDamageLimit>
+			<iFlankingDamageMaxUnits>4</iFlankingDamageMaxUnits>
 			<UnitCombatMods>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
@@ -813,7 +1827,7 @@
 				</UnitCombatMod>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
-					<iUnitCombatMod>-25</iUnitCombatMod>
+					<iUnitCombatMod>-40</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
 			<iCost>120</iCost>
@@ -900,6 +1914,9 @@
 					<bValidUnitCombat>1</bValidUnitCombat>
 				</FlankingStrike>
 			</FlankingStrikes>
+			<iFlankingDamage>100</iFlankingDamage>
+			<iFlankingDamageLimit>100</iFlankingDamageLimit>
+			<iFlankingDamageMaxUnits>4</iFlankingDamageMaxUnits>
 			<UnitCombatMods>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
@@ -907,7 +1924,7 @@
 				</UnitCombatMod>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
-					<iUnitCombatMod>-25</iUnitCombatMod>
+					<iUnitCombatMod>-40</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
 			<iCost>120</iCost>
@@ -1006,6 +2023,9 @@
 					<bValidUnitCombat>1</bValidUnitCombat>
 				</FlankingStrike>
 			</FlankingStrikes>
+			<iFlankingDamage>100</iFlankingDamage>
+			<iFlankingDamageLimit>100</iFlankingDamageLimit>
+			<iFlankingDamageMaxUnits>4</iFlankingDamageMaxUnits>
 			<UnitCombatMods>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
@@ -1013,7 +2033,7 @@
 				</UnitCombatMod>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
-					<iUnitCombatMod>-25</iUnitCombatMod>
+					<iUnitCombatMod>-40</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
 			<iCost>120</iCost>
@@ -1087,6 +2107,9 @@
 					<bValidUnitCombat>1</bValidUnitCombat>
 				</FlankingStrike>
 			</FlankingStrikes>
+			<iFlankingDamage>100</iFlankingDamage>
+			<iFlankingDamageLimit>100</iFlankingDamageLimit>
+			<iFlankingDamageMaxUnits>4</iFlankingDamageMaxUnits>
 			<UnitCombatMods>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
@@ -1094,7 +2117,7 @@
 				</UnitCombatMod>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
-					<iUnitCombatMod>-25</iUnitCombatMod>
+					<iUnitCombatMod>-40</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
 			<iCost>120</iCost>
@@ -1172,6 +2195,9 @@
 					<bValidUnitCombat>1</bValidUnitCombat>
 				</FlankingStrike>
 			</FlankingStrikes>
+			<iFlankingDamage>100</iFlankingDamage>
+			<iFlankingDamageLimit>100</iFlankingDamageLimit>
+			<iFlankingDamageMaxUnits>4</iFlankingDamageMaxUnits>
 			<UnitCombatMods>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
@@ -1179,7 +2205,7 @@
 				</UnitCombatMod>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
-					<iUnitCombatMod>-25</iUnitCombatMod>
+					<iUnitCombatMod>-40</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
 			<iCost>120</iCost>
@@ -1264,6 +2290,9 @@
 					<bValidUnitCombat>1</bValidUnitCombat>
 				</FlankingStrike>
 			</FlankingStrikes>
+			<iFlankingDamage>100</iFlankingDamage>
+			<iFlankingDamageLimit>100</iFlankingDamageLimit>
+			<iFlankingDamageMaxUnits>4</iFlankingDamageMaxUnits>
 			<UnitCombatMods>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
@@ -1271,7 +2300,7 @@
 				</UnitCombatMod>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
-					<iUnitCombatMod>-25</iUnitCombatMod>
+					<iUnitCombatMod>-40</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
 			<iCost>120</iCost>
@@ -1344,6 +2373,9 @@
 					<bValidUnitCombat>1</bValidUnitCombat>
 				</FlankingStrike>
 			</FlankingStrikes>
+			<iFlankingDamage>100</iFlankingDamage>
+			<iFlankingDamageLimit>100</iFlankingDamageLimit>
+			<iFlankingDamageMaxUnits>4</iFlankingDamageMaxUnits>
 			<UnitCombatMods>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
@@ -1351,7 +2383,7 @@
 				</UnitCombatMod>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
-					<iUnitCombatMod>-25</iUnitCombatMod>
+					<iUnitCombatMod>-40</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
 			<iCost>240</iCost>
@@ -1411,6 +2443,9 @@
 					<bValidUnitCombat>1</bValidUnitCombat>
 				</FlankingStrike>
 			</FlankingStrikes>
+			<iFlankingDamage>100</iFlankingDamage>
+			<iFlankingDamageLimit>100</iFlankingDamageLimit>
+			<iFlankingDamageMaxUnits>4</iFlankingDamageMaxUnits>
 			<UnitCombatMods>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
@@ -1418,7 +2453,7 @@
 				</UnitCombatMod>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
-					<iUnitCombatMod>-25</iUnitCombatMod>
+					<iUnitCombatMod>-40</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
 			<iCost>240</iCost>
@@ -1490,6 +2525,9 @@
 					<bValidUnitCombat>1</bValidUnitCombat>
 				</FlankingStrike>
 			</FlankingStrikes>
+			<iFlankingDamage>100</iFlankingDamage>
+			<iFlankingDamageLimit>100</iFlankingDamageLimit>
+			<iFlankingDamageMaxUnits>4</iFlankingDamageMaxUnits>
 			<UnitCombatMods>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
@@ -1497,7 +2535,7 @@
 				</UnitCombatMod>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
-					<iUnitCombatMod>-25</iUnitCombatMod>
+					<iUnitCombatMod>-40</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
 			<iCost>240</iCost>
@@ -1587,6 +2625,9 @@
 					<bValidUnitCombat>1</bValidUnitCombat>
 				</FlankingStrike>
 			</FlankingStrikes>
+			<iFlankingDamage>100</iFlankingDamage>
+			<iFlankingDamageLimit>100</iFlankingDamageLimit>
+			<iFlankingDamageMaxUnits>4</iFlankingDamageMaxUnits>
 			<UnitCombatMods>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
@@ -1594,7 +2635,7 @@
 				</UnitCombatMod>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
-					<iUnitCombatMod>-25</iUnitCombatMod>
+					<iUnitCombatMod>-40</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
 			<iCost>240</iCost>
@@ -1675,6 +2716,9 @@
 					<bValidUnitCombat>1</bValidUnitCombat>
 				</FlankingStrike>
 			</FlankingStrikes>
+			<iFlankingDamage>100</iFlankingDamage>
+			<iFlankingDamageLimit>100</iFlankingDamageLimit>
+			<iFlankingDamageMaxUnits>4</iFlankingDamageMaxUnits>
 			<UnitCombatMods>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
@@ -1682,7 +2726,7 @@
 				</UnitCombatMod>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
-					<iUnitCombatMod>-25</iUnitCombatMod>
+					<iUnitCombatMod>-40</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
 			<iCultureGarrison>5</iCultureGarrison>
@@ -1746,6 +2790,9 @@
 					<bValidUnitCombat>1</bValidUnitCombat>
 				</FlankingStrike>
 			</FlankingStrikes>
+			<iFlankingDamage>100</iFlankingDamage>
+			<iFlankingDamageLimit>100</iFlankingDamageLimit>
+			<iFlankingDamageMaxUnits>4</iFlankingDamageMaxUnits>
 			<UnitCombatMods>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
@@ -1753,7 +2800,7 @@
 				</UnitCombatMod>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
-					<iUnitCombatMod>-25</iUnitCombatMod>
+					<iUnitCombatMod>-40</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
 			<iCost>240</iCost>
@@ -1830,6 +2877,9 @@
 					<bValidUnitCombat>1</bValidUnitCombat>
 				</FlankingStrike>
 			</FlankingStrikes>
+			<iFlankingDamage>100</iFlankingDamage>
+			<iFlankingDamageLimit>100</iFlankingDamageLimit>
+			<iFlankingDamageMaxUnits>4</iFlankingDamageMaxUnits>
 			<UnitCombatMods>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
@@ -1837,7 +2887,7 @@
 				</UnitCombatMod>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
-					<iUnitCombatMod>-25</iUnitCombatMod>
+					<iUnitCombatMod>-40</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
 			<iCost>240</iCost>
@@ -1893,6 +2943,9 @@
 					<bValidUnitCombat>1</bValidUnitCombat>
 				</FlankingStrike>
 			</FlankingStrikes>
+			<iFlankingDamage>100</iFlankingDamage>
+			<iFlankingDamageLimit>100</iFlankingDamageLimit>
+			<iFlankingDamageMaxUnits>4</iFlankingDamageMaxUnits>
 			<UnitCombatMods>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
@@ -1900,7 +2953,7 @@
 				</UnitCombatMod>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
-					<iUnitCombatMod>-25</iUnitCombatMod>
+					<iUnitCombatMod>-40</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
 			<iCost>240</iCost>
@@ -2948,6 +4001,9 @@
 					<bValidUnitCombat>1</bValidUnitCombat>
 				</FlankingStrike>
 			</FlankingStrikes>
+			<iFlankingDamage>100</iFlankingDamage>
+			<iFlankingDamageLimit>100</iFlankingDamageLimit>
+			<iFlankingDamageMaxUnits>4</iFlankingDamageMaxUnits>
 			<UnitCombatMods>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
@@ -2955,7 +4011,7 @@
 				</UnitCombatMod>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
-					<iUnitCombatMod>-25</iUnitCombatMod>
+					<iUnitCombatMod>-40</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
 			<iCost>120</iCost>
@@ -3146,6 +4202,9 @@
 			<iFlankingDamage>100</iFlankingDamage>
 			<iFlankingDamageLimit>100</iFlankingDamageLimit>
 			<iFlankingDamageMaxUnits>4</iFlankingDamageMaxUnits>
+			<iFlankingDamage>100</iFlankingDamage>
+			<iFlankingDamageLimit>100</iFlankingDamageLimit>
+			<iFlankingDamageMaxUnits>4</iFlankingDamageMaxUnits>
 			<iCost>60</iCost>
 			<iMoves>3</iMoves>
 			<iCombat>4</iCombat>
@@ -3158,7 +4217,7 @@
 				</UnitCombatMod>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
-					<iUnitCombatMod>-25</iUnitCombatMod>
+					<iUnitCombatMod>-40</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
 			<iCultureGarrison>4</iCultureGarrison>
@@ -3234,7 +4293,7 @@
 				</UnitCombatMod>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
-					<iUnitCombatMod>-25</iUnitCombatMod>
+					<iUnitCombatMod>-40</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
 			<iCultureGarrison>5</iCultureGarrison>
@@ -3301,7 +4360,7 @@
 				</UnitCombatMod>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
-					<iUnitCombatMod>-25</iUnitCombatMod>
+					<iUnitCombatMod>-40</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
 			<iCultureGarrison>6</iCultureGarrison>
@@ -3381,7 +4440,7 @@
 				</UnitCombatMod>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
-					<iUnitCombatMod>-25</iUnitCombatMod>
+					<iUnitCombatMod>-40</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
 			<iCultureGarrison>4</iCultureGarrison>
@@ -3442,6 +4501,9 @@
 					<bValidUnitCombat>1</bValidUnitCombat>
 				</FlankingStrike>
 			</FlankingStrikes>
+			<iFlankingDamage>100</iFlankingDamage>
+			<iFlankingDamageLimit>100</iFlankingDamageLimit>
+			<iFlankingDamageMaxUnits>4</iFlankingDamageMaxUnits>
 			<UnitCombatMods>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
@@ -3449,7 +4511,7 @@
 				</UnitCombatMod>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
-					<iUnitCombatMod>-25</iUnitCombatMod>
+					<iUnitCombatMod>-40</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
 			<iCost>240</iCost>
@@ -3488,6 +4550,495 @@
 				</DamageTypeCombat>
 			</DamageTypeCombats>
 			<bForceOverwrite>1</bForceOverwrite>
+		</UnitInfo>
+		
+		<!--	Eert Woods		-->		
+		<UnitInfo>        <!-- Bear Rider -->          <!-- MOUNTED UNITS -->
+			<Class>UNITCLASS_HORSEMAN</Class>
+			<Type>UNIT_BEAR_RIDER_EERT</Type>
+			<Combat>UNITCOMBAT_MOUNTED</Combat>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_BEAR_RIDER_EERT</Description>
+			<Civilopedia>TXT_KEY_UNIT_HORSEMAN_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_BEAR_RIDER_EERT_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_BEAR_RIDER_EERT_HELP</Help>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<AndDependencyTypes>
+		        <DependencyType>MODULE_KCZ_WOODS</DependencyType>
+		    </AndDependencyTypes>
+			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bMilitarySupport>1</bMilitarySupport>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<bPillage>1</bPillage>
+			<bNoDefensiveBonus>1</bNoDefensiveBonus>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ATTACK</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_PILLAGE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_EXPLORE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<PrereqTech>TECH_HORSEBACK_RIDING</PrereqTech>
+			<FlankingStrikes>
+				<FlankingStrike>
+					<FlankingStrikeUnitCombat>UNITCOMBAT_SIEGE</FlankingStrikeUnitCombat>
+					<bValidUnitCombat>1</bValidUnitCombat>
+				</FlankingStrike>
+			</FlankingStrikes>
+			<iFlankingDamage>100</iFlankingDamage>
+			<iFlankingDamageLimit>100</iFlankingDamageLimit>
+			<iFlankingDamageMaxUnits>4</iFlankingDamageMaxUnits>
+			<iCost>160</iCost>
+			<iMoves>3</iMoves>
+			<iCombat>3</iCombat>
+			<iCombatDefense>5</iCombatDefense>
+			<iFirstStrikes>1</iFirstStrikes>
+			<iWithdrawalProb>25</iWithdrawalProb>
+			<UnitCombatMods>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iUnitCombatMod>40</iUnitCombatMod>
+				</UnitCombatMod>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<iUnitCombatMod>15</iUnitCombatMod>
+				</UnitCombatMod>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<iUnitCombatMod>-40</iUnitCombatMod>
+				</UnitCombatMod>
+			</UnitCombatMods>
+			<iCultureGarrison>4</iCultureGarrison>
+			<iAsset>4</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>2</iGroupSize>
+				<iMeleeWaveSize>2</iMeleeWaveSize>
+				<iRangedWaveSize>2</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>2</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_DRYAD_BEAR_RIDER</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_DRYAD</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_GREAT_BEAST_MOUNTEDTWEAKS</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>	
+			</FreePromotions>
+			<iTier>2</iTier>
+			<iPowerMult>4</iPowerMult>
+			<PrereqBuildingClass>BUILDINGCLASS_PALACE</PrereqBuildingClass>
+			<bForceOverwrite>1</bForceOverwrite>
+		</UnitInfo>
+		
+		<!--	Chimar		-->	
+		<UnitInfo>		  <!-- Lukos Clan Wolf Rider -->
+			<Class>UNITCLASS_HORSEMAN</Class>
+			<Type>UNIT_WOLF_RIDER_LUKOS_CLAN</Type>
+			<Combat>UNITCOMBAT_MOUNTED</Combat>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_LUKOS_CLAN_WOLF_RIDER</Description>
+			<Civilopedia>TXT_KEY_UNIT_GOBLIN_WOLF_RIDER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_GOBLIN_WOLF_RIDER_STRATEGY_MOUNTEDTWEAKS</Strategy>
+			<Advisor>ADVISOR_MILITARY</Advisor>	
+			<AndDependencyTypes>
+		        <DependencyType>MODULE_GOBLIN</DependencyType>
+		    </AndDependencyTypes>
+			<bForceOverwrite>1</bForceOverwrite>
+			<UnitClassUpgrades>
+				<UnitClassUpgradeType>UNITCLASS_HORSE_ARCHER</UnitClassUpgradeType>
+				<UnitClassUpgradeType>UNITCLASS_CHARIOT</UnitClassUpgradeType>
+			</UnitClassUpgrades>
+			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bMilitarySupport>1</bMilitarySupport>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<bPillage>1</bPillage>
+			<bNoDefensiveBonus>1</bNoDefensiveBonus>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ATTACK</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_PILLAGE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<FlankingStrikes>				
+				<FlankingStrike>
+					<FlankingStrikeUnitCombat>UNITCOMBAT_SIEGE</FlankingStrikeUnitCombat>
+					<bValidUnitCombat>1</bValidUnitCombat>
+				</FlankingStrike>
+			</FlankingStrikes>
+			<iFlankingDamage>100</iFlankingDamage>
+			<iFlankingDamageLimit>100</iFlankingDamageLimit>
+			<iFlankingDamageMaxUnits>4</iFlankingDamageMaxUnits>
+			<PrereqTech>TECH_HORSEBACK_RIDING</PrereqTech>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iMoves>3</iMoves>
+			<iCombat>4</iCombat>
+			<iWithdrawalProb>25</iWithdrawalProb>
+			<UnitCombatMods>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iUnitCombatMod>40</iUnitCombatMod>
+				</UnitCombatMod>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<iUnitCombatMod>-40</iUnitCombatMod>
+				</UnitCombatMod>
+			</UnitCombatMods>
+			<iCultureGarrison>4</iCultureGarrison>
+			<iAsset>4</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>2</iGroupSize>
+				<iMeleeWaveSize>2</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>2</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_WOLF_RIDER_LUKOS_CLAN</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<bGraphicalOnly>0</bGraphicalOnly>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_GOBLIN</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_LUKOS_CLAN</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_WOLF_MOUNTEDTWEAKS</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+			<iCombatDefense>4</iCombatDefense>
+			<iTier>2</iTier>
+		</UnitInfo>
+		<UnitInfo>		  <!-- Lukos Wolf Archer -->
+			<Class>UNITCLASS_HORSE_ARCHER</Class>
+			<Type>UNIT_LUKOS_CLAN_WOLF_ARCHER</Type>
+			<Combat>UNITCOMBAT_MOUNTED</Combat>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_LUKOS_CLAN_WOLF_ARCHER</Description>
+			<Civilopedia>TXT_KEY_UNIT_GOBLIN_WOLF_RIDER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_GOBLIN_WOLF_ARCHER_STRATEGY_MOUNTEDTWEAKS</Strategy>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<AndDependencyTypes>
+		        <DependencyType>MODULE_GOBLIN</DependencyType>
+		    </AndDependencyTypes>
+			<bForceOverwrite>1</bForceOverwrite>
+			<UnitClassUpgrades>
+				<UnitClassUpgradeType>UNITCLASS_KNIGHT</UnitClassUpgradeType>
+			</UnitClassUpgrades>
+			<PrereqTech>TECH_STIRRUPS</PrereqTech>
+			<bForceOverwrite>1</bForceOverwrite>
+			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bMilitarySupport>1</bMilitarySupport>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<bPillage>1</bPillage>
+			<bNoDefensiveBonus>1</bNoDefensiveBonus>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ATTACK</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_PILLAGE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<FlankingStrikes>
+				<FlankingStrike>
+					<FlankingStrikeUnitCombat>UNITCOMBAT_SIEGE</FlankingStrikeUnitCombat>
+					<bValidUnitCombat>1</bValidUnitCombat>
+				</FlankingStrike>
+			</FlankingStrikes>
+			<UnitCombatMods>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iUnitCombatMod>40</iUnitCombatMod>
+				</UnitCombatMod>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<iUnitCombatMod>-40</iUnitCombatMod>
+				</UnitCombatMod>
+			</UnitCombatMods>
+			<iCost>120</iCost>
+			<iMoves>3</iMoves>
+			<iAirRange>1</iAirRange>
+			<iCombat>5</iCombat>
+			<iCombatDefense>5</iCombatDefense>
+			<iAirCombat>6</iAirCombat>
+			<iAirCombatLimit>40</iAirCombatLimit>
+			<iFirstStrikes>1</iFirstStrikes>
+			<iWithdrawalProb>35</iWithdrawalProb>
+			<iWeaponTierMax>2</iWeaponTierMax>
+			<iAsset>9</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>2</iGroupSize>
+				<iMeleeWaveSize>2</iMeleeWaveSize>
+				<iRangedWaveSize>2</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_WOLF_RIDER_LUKOS_CLAN</EarlyArtDefineTag>
+				</UnitMeshGroup>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_WOLF_RIDER_LUKOS_CLAN</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_GOBLIN</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_LUKOS_CLAN</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_WOLF_MOUNTEDTWEAKS</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+			<FormationType>FORMATION_TYPE_RANGED</FormationType>
+			<bNeverObsolete>1</bNeverObsolete>
+			<iDefensiveStrikeChance>20</iDefensiveStrikeChance>
+			<iDefensiveStrikeDamage>10</iDefensiveStrikeDamage>
+			<iTier>3</iTier>
+		</UnitInfo>
+		<UnitInfo>		  <!-- Lukos Clan Chariot -->
+			<Class>UNITCLASS_CHARIOT</Class>
+			<Type>UNIT_CHARIOT_LUKOS_CLAN</Type>
+			<Combat>UNITCOMBAT_MOUNTED</Combat>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_LUKOS_CLAN_CHARIOT</Description>
+			<Civilopedia>TXT_KEY_UNIT_CHARIOT_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_WOLF_CHARIOT_STRATEGY_MOUNTEDTWEAKS</Strategy>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<AndDependencyTypes>
+		        <DependencyType>MODULE_GOBLIN</DependencyType>
+		    </AndDependencyTypes>
+			<bForceOverwrite>1</bForceOverwrite>
+			<UnitClassUpgrades>
+				<UnitClassUpgradeType>UNITCLASS_WAR_CHARIOT</UnitClassUpgradeType>
+			</UnitClassUpgrades>
+			<bForceOverwrite>1</bForceOverwrite>
+			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bMilitarySupport>1</bMilitarySupport>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<bPillage>1</bPillage>
+			<bNoDefensiveBonus>1</bNoDefensiveBonus>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ATTACK</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_PILLAGE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<PrereqBuilding>BUILDING_SIEGE_WORKSHOP</PrereqBuilding>
+			<PrereqTech>TECH_TRADE</PrereqTech>
+			<TechTypes>
+					<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
+			</TechTypes>
+			<iCost>120</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iMoves>3</iMoves>
+			<iCombat>5</iCombat>
+			<iWithdrawalProb>25</iWithdrawalProb>
+			<iCultureGarrison>4</iCultureGarrison>
+			<iAsset>5</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>2</iGroupSize>
+				<iMeleeWaveSize>2</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>2</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_CHARIOT_LUKOS_CLAN</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<bGraphicalOnly>0</bGraphicalOnly>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_GOBLIN</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_LUKOS_CLAN</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_WOLF_MOUNTEDTWEAKS</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+			<iCombatDefense>3</iCombatDefense>
+			<iTier>2</iTier>
+			<iWeaponTierMax>3</iWeaponTierMax>
+		</UnitInfo>
+		<UnitInfo>        <!-- Lukos Knight -->
+			<Class>UNITCLASS_KNIGHT</Class>
+			<Type>UNIT_KNIGHT_LUKOS_CLAN</Type>
+			<Combat>UNITCOMBAT_MOUNTED</Combat>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_KNIGHT_LUKOS_CLAN</Description>
+			<Civilopedia>TXT_KEY_UNIT_KNIGHT_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_LUKOS_KNIGHT_STRATEGY_MOUNTEDTWEAKS</Strategy>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<AndDependencyTypes>
+		        <DependencyType>MODULE_GOBLIN</DependencyType>
+		    </AndDependencyTypes>
+			<bForceOverwrite>1</bForceOverwrite>
+			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bMilitarySupport>1</bMilitarySupport>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<bPillage>1</bPillage>
+			<bNoDefensiveBonus>1</bNoDefensiveBonus>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ATTACK</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_PILLAGE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<PrereqBuilding>BUILDING_HIPPODROME</PrereqBuilding>
+			<PrereqTech>TECH_WARHORSES</PrereqTech>
+			<FlankingStrikes>
+				<FlankingStrike>
+					<FlankingStrikeUnitCombat>UNITCOMBAT_SIEGE</FlankingStrikeUnitCombat>
+					<bValidUnitCombat>1</bValidUnitCombat>
+				</FlankingStrike>
+			</FlankingStrikes>
+			<iFlankingDamage>100</iFlankingDamage>
+			<iFlankingDamageLimit>100</iFlankingDamageLimit>
+			<iFlankingDamageMaxUnits>4</iFlankingDamageMaxUnits>
+			<UnitCombatMods>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iUnitCombatMod>40</iUnitCombatMod>
+				</UnitCombatMod>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<iUnitCombatMod>-40</iUnitCombatMod>
+				</UnitCombatMod>
+			</UnitCombatMods>
+			<iCost>240</iCost>
+			<iMoves>3</iMoves>
+			<iCombat>10</iCombat>
+			<iFirstStrikes>1</iFirstStrikes>
+			<iWithdrawalProb>35</iWithdrawalProb>
+			<iCultureGarrison>6</iCultureGarrison>
+			<iAsset>22</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>2</iGroupSize>
+				<iMeleeWaveSize>2</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>2</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_KNIGHT_CHIMAR</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_GOBLIN</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_LUKOS_CLAN</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_WOLF_MOUNTEDTWEAKS</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+			<iTier>4</iTier>
+			<iWeaponTierMax>3</iWeaponTierMax>
+			<iPowerMult>5</iPowerMult>
+		</UnitInfo>
+		<UnitInfo>        <!-- Lukos War Chariot -->
+			<Class>UNITCLASS_WAR_CHARIOT</Class>
+			<Type>UNIT_WAR_CHARIOT_LUKOS_CLAN</Type>
+			<Combat>UNITCOMBAT_MOUNTED</Combat>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_WAR_CHARIOT_LUKOS_CLAN</Description>
+			<Civilopedia>TXT_KEY_UNIT_WAR_CHARIOT_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_LUKOS_WAR_CHARIOT_STRATEGY_MOUNTEDTWEAKS</Strategy>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<AndDependencyTypes>
+		        <DependencyType>MODULE_GOBLIN</DependencyType>
+		    </AndDependencyTypes>
+			<bForceOverwrite>1</bForceOverwrite>
+			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bMilitarySupport>1</bMilitarySupport>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<bPillage>1</bPillage>
+			<bNoDefensiveBonus>1</bNoDefensiveBonus>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ATTACK</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_PILLAGE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<PrereqBuilding>BUILDING_HIPPODROME</PrereqBuilding>
+			<PrereqTech>TECH_ARMORED_CAVALRY</PrereqTech>
+			<iCost>240</iCost>
+			<iMoves>3</iMoves>
+			<iCombat>12</iCombat>
+			<iWithdrawalProb>25</iWithdrawalProb>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_GOBLIN</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_LUKOS_CLAN</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_WOLF_MOUNTEDTWEAKS</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+			<iCultureGarrison>4</iCultureGarrison>
+			<iAsset>24</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>2</iGroupSize>
+				<iMeleeWaveSize>2</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>2</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_CHARIOT_LUKOS_CLAN</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<iCombatDefense>7</iCombatDefense>
+			<iTier>4</iTier>
+			<iWeaponTierMax>3</iWeaponTierMax>
+			<iPowerMult>4</iPowerMult>
 		</UnitInfo>
 	</UnitInfos>
 </Civ4UnitInfos>

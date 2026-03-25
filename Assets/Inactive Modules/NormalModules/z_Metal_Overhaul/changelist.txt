@@ -1,0 +1,16 @@
+Metal requirements removed from Revanant (Scions UU), Crusader, Penitent, Paramander, Paladin, Eidolon, Warden of Xian Shi (Dao Paladin UU)
+Strength adjusted downwards and metal weapon access added to Paladin and Eidolon.
+
+Longbows:
+All non-Mekara lost metal weapon access
+All 5/6 units (Longbowmen, Firebow ) increased to 5/8
+Blowpipe (Cualli, Mazatl) increased from 5+1 Poison to 6+1 poison, 8/8 base would be too strong?
+Recurve Archer (Austrin) increased from 6 to 7, it's stronger than a metal-less t3 disciple but weaker than an iron armed one
+
+Chimar: Internal balance is not my circus!
+Muris Clan Sapper (2/3 + 1 fire + 1 poison) increased to 3/6 + 1 fire + 1 poison
+Lukos Clan Sapper (2/3 + 1 fire ) increased to 3/6 + 1 fire
+Neith Clan Sapper (2/3 + 1 fire + 1 Unholy (from promo) ) increased to 3/6 + 1 fire + 1 Unholy (from promo)
+Scorpion Clan Longbowman (5/6 + 1 poison) increased to 5/8 + 1 poison.
+
+Jotnar Deadeye: Goes from 5/7 to 7/9, Jotnar units are supposed to be Beefy

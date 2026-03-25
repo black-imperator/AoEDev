@@ -11,10 +11,10 @@ public:
 	CvSnarkoProfiler();
 	virtual ~CvSnarkoProfiler();
 
-	void profile(char* szFunc, bool bStopLogging = false);								// Exposed to Python
+	void profile(CvString szFunc, bool bStopLogging = false);								// Exposed to Python
 
 protected:
-	char* szLastFunc;
+	CvString szLastFunc;
 	int iLastTime;
 };
 #endif

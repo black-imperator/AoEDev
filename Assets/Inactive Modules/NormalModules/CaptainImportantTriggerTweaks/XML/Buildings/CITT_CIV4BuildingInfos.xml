@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Building Infos -->
+<Civ4BuildingInfos xmlns="x-schema:CITT_CIV4BuildingsSchema.xml">
+	<!--<BuildingInfos>
+		 <BuildingInfo>		 Swashbuckler Shipyard 
+			<BuildingClass>BUILDINGCLASS_SHIPYARD</BuildingClass>
+			<Type>BUILDING_SHIPYARD</Type>
+			<Description>TXT_KEY_BUILDING_SHIPYARD</Description>
+			<Civilopedia>TXT_KEY_BUILDING_SHIPYARD_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_SHIPYARD</ArtDefineTag>
+			<PrereqTech>TECH_OPTICS</PrereqTech>
+			<FreePromotion>PROMOTION_SWASHBUCKLING_TRADITION</FreePromotion>
+			<ProductionTraits>
+				<ProductionTrait>
+					<ProductionTraitType>TRAIT_AGGRESSIVE</ProductionTraitType>
+					<iProductionTrait>100</iProductionTrait>
+				</ProductionTrait>
+			</ProductionTraits>
+			<bWater>1</bWater>
+			<iAIWeight>15</iAIWeight>
+			<iCost>200</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iMinAreaSize>10</iMinAreaSize>
+			<iConquestProb>25</iConquestProb>
+			<iAsset>1</iAsset>
+			<iPower>1</iPower>
+			<fVisibilityPriority>10</fVisibilityPriority>
+			<DomainFreeExperiences>
+				<DomainFreeExperience>
+					<DomainType>DOMAIN_SEA</DomainType>
+					<iExperience>4</iExperience>
+				</DomainFreeExperience>
+			</DomainFreeExperiences>
+			<DomainProductionModifiers>
+				<DomainProductionModifier>
+					<DomainType>DOMAIN_SEA</DomainType>
+					<iProductionModifier>25</iProductionModifier>
+				</DomainProductionModifier>
+			</DomainProductionModifiers>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+		</BuildingInfo> 
+	</BuildingInfos>-->
+</Civ4BuildingInfos>

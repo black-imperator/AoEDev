@@ -6,8 +6,7 @@
 <!-- Unit Infos -->
 <Civ4UnitInfos xmlns="x-schema:NAMKO_CIV4UnitSchema.xml">
 	<UnitInfos>
-		<!-- Nepharakis -->
-		<UnitInfo>
+		<UnitInfo> <!-- Nepharakis -->
 			<Class>UNITCLASS_NAMKO_NEPHRAKIS</Class>
 			<Type>UNIT_NAMKO_NEPHRAKIS</Type>
 			<Combat>UNITCOMBAT_DISCIPLE</Combat>
@@ -23,7 +22,7 @@
 			<iAIWeight>0</iAIWeight>
 			<iCost>80</iCost>
 			<iMoves>1</iMoves>
-			<iCombat>3</iCombat>
+			<iCombat>1</iCombat>
 			<iFirstStrikes>0</iFirstStrikes>
 			<iConscription>2</iConscription>
 			<bMilitaryHappiness>1</bMilitaryHappiness>
@@ -71,11 +70,16 @@
                 </FreePromotion>
 			</FreePromotions>
 			<iTier>1</iTier>
-			<iWeaponTierMax>1</iWeaponTierMax>
-			<iWithdrawlProbDefensive>25</iWithdrawlProbDefensive>
+			<iWeaponTierMax>2</iWeaponTierMax>
+			<iWithdrawlProbDefensive>35</iWithdrawlProbDefensive>
+			<DamageTypeCombats>
+                <DamageTypeCombat>
+                    <DamageType>DAMAGE_FIRE</DamageType>
+                    <iCombat>2</iCombat>
+                </DamageTypeCombat>
+            </DamageTypeCombats>
 		</UnitInfo>
-		<!-- Myrmiphage -->
-		<UnitInfo>
+		<UnitInfo> <!-- Myrmiphage -->
 			<Class>UNITCLASS_IMMORTAL</Class>
 			<Type>UNIT_NAMKO_MYRMIPHAGE</Type>
 			<Combat>UNITCOMBAT_DISCIPLE</Combat>
@@ -129,9 +133,9 @@
                     <iCombat>3</iCombat>
                 </DamageTypeCombat>
             </DamageTypeCombats>
+			<iWithdrawlProbDefensive>30</iWithdrawlProbDefensive>
 		</UnitInfo>
-		<!-- Pyraspis -->
-		<UnitInfo>
+		<UnitInfo> <!-- Pyraspis -->
 			<Class>UNITCLASS_ARCHER</Class>
 			<Type>UNIT_NAMKO_PYRASPIS</Type>
 			<Combat>UNITCOMBAT_DISCIPLE</Combat>
@@ -155,8 +159,8 @@
 			<iAIWeight>0</iAIWeight>
 			<iCost>100</iCost>
 			<iMoves>1</iMoves>
-			<iCombat>3</iCombat>
-			<iCombatDefense>5</iCombatDefense>
+			<iCombat>2</iCombat>
+			<iCombatDefense>2</iCombatDefense>
 			<iFirstStrikes>1</iFirstStrikes>
 			<iConscription>2</iConscription>
 			<bMilitaryHappiness>1</bMilitaryHappiness>
@@ -174,22 +178,26 @@
 					<EarlyArtDefineTag>ART_DEF_UNIT_PYRASPIS</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
-			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_SECONDARY_DISCIPLE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
 			</FreePromotions>
+			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 			<iTier>2</iTier>
-			<iWeaponTierMax>2</iWeaponTierMax>
+			<iWeaponTierMax>3</iWeaponTierMax>
 			<iDefensiveStrikeChance>20</iDefensiveStrikeChance>
 			<iDefensiveStrikeDamage>10</iDefensiveStrikeDamage>
+			<iWithdrawlProbDefensive>30</iWithdrawlProbDefensive>
 			<DamageTypeCombats>
                 <DamageTypeCombat>
                     <DamageType>DAMAGE_FIRE</DamageType>
-                    <iCombat>1</iCombat>
+                    <iCombat>3</iCombat>
                 </DamageTypeCombat>
             </DamageTypeCombats>
 		</UnitInfo>
-		<!-- Thanatoguard -->
-		<UnitInfo>
+		<UnitInfo> <!-- Thanatoguard -->
 			<Class>UNITCLASS_AXEMAN</Class>
 			<Type>UNIT_NAMKO_THANATOGUARD</Type>
 			<Combat>UNITCOMBAT_MELEE</Combat>
@@ -262,9 +270,9 @@
             </DamageTypeCombats>
 			<iTier>2</iTier>
 			<iWeaponTierMax>3</iWeaponTierMax>
+			<iWithdrawlProbDefensive>25</iWithdrawlProbDefensive>
 		</UnitInfo>
-		<!-- Ichorian  -->
-		<UnitInfo>
+		<UnitInfo> <!-- Ichorian  -->
 			<Class>UNITCLASS_CHAMPION</Class>
 			<Type>UNIT_NAMKO_ICHORIAN</Type>
 			<Combat>UNITCOMBAT_MELEE</Combat>
@@ -343,10 +351,10 @@
 			</UnitCombatMods>
 			<UnitCreateFromCombat>UNIT_SKELETON</UnitCreateFromCombat>
             <iUnitCreateFromCombatChance>25</iUnitCreateFromCombatChance> 
+			<iWithdrawlProbDefensive>25</iWithdrawlProbDefensive>
 			<iWeaponTierMax>3</iWeaponTierMax>
 		</UnitInfo>
-		<!-- Amenthian  -->
-		<UnitInfo>
+		<UnitInfo> <!-- Amenthian  -->
 			<Class>UNITCLASS_ASSASSIN</Class>
 			<Type>UNIT_NAMKO_AMENTHIAN</Type>
 			<Combat>UNITCOMBAT_ROGUE</Combat>
@@ -420,8 +428,7 @@
 			<iTier>3</iTier>
 			<iWithdrawlProbDefensive>45</iWithdrawlProbDefensive>
 		</UnitInfo>
-		<!-- Anubila -->
-		<UnitInfo>
+		<UnitInfo> <!-- Anubila -->
 			<Class>UNITCLASS_NAMKO_ANUBILA</Class>
 			<Type>UNIT_NAMKO_ANUBILA</Type>
 			<Combat>UNITCOMBAT_DISCIPLE</Combat>
@@ -456,6 +463,7 @@
 			<iCost>300</iCost>
 			<iMoves>1</iMoves>
 			<iCombat>8</iCombat>
+			<iCombatDefense>5</iCombatDefense>
 			<iFirstStrikes>2</iFirstStrikes>
 			<iConscription>2</iConscription>
 			<iXPValueAttack>32</iXPValueAttack>
@@ -513,11 +521,150 @@
 			<iFreePromotionPick>1</iFreePromotionPick>
 			<DamageTypeCombats>
                 <DamageTypeCombat>
-                    <DamageType>DAMAGE_UNHOLY</DamageType>
+                    <DamageType>DAMAGE_FIRE</DamageType>
                     <iCombat>2</iCombat>
                 </DamageTypeCombat>
             </DamageTypeCombats>	
 			<PromotionFromCombat>PROMOTION_NECROMANCY</PromotionFromCombat>
+			<iWithdrawlProbDefensive>45</iWithdrawlProbDefensive>
+		</UnitInfo>
+		<UnitInfo> <!-- Archanten  -->
+			<Class>UNITCLASS_ARCHANTEN</Class>
+			<Type>UNIT_NAMKO_ARCHANTEN</Type>
+			<Combat>UNITCOMBAT_DISCIPLE</Combat>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_ARCHANTEN_NAME</Description>
+			<Civilopedia>TXT_KEY_UNIT_ARCHANTEN_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_ARCHANTEN_STRATEGY</Strategy>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<UnitAIs>
+                <UnitAI>
+					<UnitAIType>UNITAI_ATTACK</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_ATTACK_CITY</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_PILLAGE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+            </UnitAIs>
+			<iAIWeight>0</iAIWeight>
+			<PrereqTech>TECH_RELIGIOUS_LAW</PrereqTech>
+			<iCost>220</iCost>
+			<iMoves>2</iMoves>
+			<iCombat>6</iCombat>
+			<iCombatDefense>1</iCombatDefense>
+			<iFirstStrikes>0</iFirstStrikes>
+			<iConscription>2</iConscription>
+			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bMilitarySupport>1</bMilitarySupport>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<bFirstStrikeImmune>1</bFirstStrikeImmune>
+			<iWithdrawlProbDefensive>25</iWithdrawlProbDefensive>
+			<UnitMeshGroups>
+				<iGroupSize>3</iGroupSize>
+				<fMaxSpeed>1.75</fMaxSpeed>
+				<fPadTime>1</fPadTime>
+				<iMeleeWaveSize>3</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>3</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_ARCHANTEN</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_SECONDARY_DISCIPLE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MARKSMAN</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_FIRE1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+			<bImmuneToDefensiveStrike>1</bImmuneToDefensiveStrike>
+			<bNeverObsolete>1</bNeverObsolete>
+			<iTier>3</iTier>
+			<DamageTypeCombats>
+                <DamageTypeCombat>
+                    <DamageType>DAMAGE_FIRE</DamageType>
+                    <iCombat>4</iCombat>
+                </DamageTypeCombat>
+            </DamageTypeCombats>
+			<iWeaponTierMax>3</iWeaponTierMax>
+		</UnitInfo>
+		<UnitInfo> <!-- Hoplian -->			
+			<Class>UNITCLASS_SPEARMAN</Class>
+			<Type>UNIT_NAMKO_HOPLIAN</Type>
+			<Combat>UNITCOMBAT_DEFENSIVE_MELEE</Combat>
+			<DefaultUnitAI>UNITAI_CITY_DEFENSE</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_NAMKO_HOPLIAN</Description>
+			<Civilopedia>TXT_KEY_UNIT_NAMKO_HOPLIAN_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_NAMKO_HOPLIAN_STRATEGY</Strategy>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bMilitarySupport>1</bMilitarySupport>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<bPillage>1</bPillage>
+			<UnitClassUpgrades>
+				<UnitClassUpgradeType>UNITCLASS_PIKEMAN</UnitClassUpgradeType>
+			</UnitClassUpgrades>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_CITY_DEFENSE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_COUNTER</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_CITY_COUNTER</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
+			<iCost>60</iCost>
+			<iMoves>1</iMoves>
+			<iCombat>0</iCombat>
+			<iCombatDefense>1</iCombatDefense>
+			<DamageTypeCombats>
+                <DamageTypeCombat>
+                    <DamageType>DAMAGE_FIRE</DamageType>
+                    <iCombat>4</iCombat>
+                </DamageTypeCombat>
+            </DamageTypeCombats>
+			<iConscription>2</iConscription>
+			<iCultureGarrison>4</iCultureGarrison>
+			<iWithdrawlProbDefensive>25</iWithdrawlProbDefensive>
+			<iAsset>4</iAsset>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_SECONDARY_DISCIPLE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+			<UnitMeshGroups>
+				<iGroupSize>3</iGroupSize>
+				<iMeleeWaveSize>3</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>3</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_NAMKO_HOPLIAN</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<iTier>2</iTier>
+			<iWeaponTierMax>3</iWeaponTierMax>
+			<PrereqBuildingClass>BUILDINGCLASS_GARRISON_QUARTERS</PrereqBuildingClass>
 		</UnitInfo>
 	</UnitInfos>
 </Civ4UnitInfos>

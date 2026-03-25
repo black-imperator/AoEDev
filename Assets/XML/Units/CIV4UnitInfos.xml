@@ -2467,7 +2467,7 @@
 			<iWeaponTierMax>3</iWeaponTierMax>
 			<ReligionType>RELIGION_OCTOPUS_OVERLORDS</ReligionType>
 			<Image>Art/Interface/Popups/CondatisBanner.dds</Image>
-			<Quote>TXT_KEY_UNIT_CONDATIS_PEDIA</Quote>
+			<Quote>TXT_KEY_POPUP_CONDATIS</Quote>
 			<DamageTypeCombats>
 				<DamageTypeCombat>
 					<DamageType>DAMAGE_HOLY</DamageType>
@@ -2930,6 +2930,10 @@
 				</FreePromotion>
 				<FreePromotion>
 					<PromotionType>PROMOTION_GC_BATTLE_COMMAND1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_SECONDARY_DEFENSIVE_MELEE</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 			</FreePromotions>
@@ -9381,6 +9385,7 @@
 				<UniqueName>TXT_KEY_UNIT_COMMANDER_GREATESTPEOPLE_2</UniqueName>
 				<UniqueName>TXT_KEY_UNIT_COMMANDER_GREATESTPEOPLE_3</UniqueName>
 				<UniqueName>TXT_KEY_UNIT_COMMANDER_GREATESTPEOPLE_4</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_COMMANDER_GREATESTPEOPLE_5</UniqueName>
 			</UniqueNames>
 			<Quotes>
 				<Quote>TXT_KEY_QUOTE_COMMANDER_1</Quote>
@@ -9407,6 +9412,7 @@
 				<Quote>TXT_KEY_QUOTE_COMMANDER_GREATESTPEOPLE_2</Quote>
 				<Quote>TXT_KEY_QUOTE_COMMANDER_GREATESTPEOPLE_3</Quote>
 				<Quote>TXT_KEY_QUOTE_COMMANDER_GREATESTPEOPLE_4</Quote>
+				<Quote>TXT_KEY_QUOTE_COMMANDER_GREATESTPEOPLE_5</Quote>
 			</Quotes>
 			<Images>
 				<Image>art\interface\popups\greatpeople\Captain_Ostanes.dds</Image>
@@ -9433,6 +9439,7 @@
 				<Image>art\interface\popups\greatpeople\Pierre_Mondy.dds</Image>
 				<Image>art\interface\popups\greatpeople\Michael_K_Williams.dds</Image>
 				<Image>art\interface\popups\greatpeople\Jason_David_Frank.dds</Image>
+				<Image>art\interface\popups\greatpeople\Tcheky_Karyo.dds</Image>
 			</Images>
 			<Special>SPECIALUNIT_PEOPLE</Special>
 			<Combat>UNITCOMBAT_COMMANDER</Combat>
@@ -9515,6 +9522,7 @@
 				<UniqueName>TXT_KEY_UNIT_COMMANDER_GREATESTPEOPLE_2</UniqueName>
 				<UniqueName>TXT_KEY_UNIT_COMMANDER_GREATESTPEOPLE_3</UniqueName>
 				<UniqueName>TXT_KEY_UNIT_COMMANDER_GREATESTPEOPLE_4</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_COMMANDER_GREATESTPEOPLE_5</UniqueName>
 			</UniqueNames>
 			<Quotes>
 				<Quote>TXT_KEY_QUOTE_COMMANDER_1</Quote>
@@ -9541,6 +9549,7 @@
 				<Quote>TXT_KEY_QUOTE_COMMANDER_GREATESTPEOPLE_2</Quote>
 				<Quote>TXT_KEY_QUOTE_COMMANDER_GREATESTPEOPLE_3</Quote>
 				<Quote>TXT_KEY_QUOTE_COMMANDER_GREATESTPEOPLE_4</Quote>
+				<Quote>TXT_KEY_QUOTE_COMMANDER_GREATESTPEOPLE_5</Quote>
 			</Quotes>
 			<Images>
 				<Image>art\interface\popups\greatpeople\Captain_Ostanes.dds</Image>
@@ -9567,6 +9576,7 @@
 				<Image>art\interface\popups\greatpeople\Pierre_Mondy.dds</Image>
 				<Image>art\interface\popups\greatpeople\Michael_K_Williams.dds</Image>
 				<Image>art\interface\popups\greatpeople\Jason_David_Frank.dds</Image>
+				<Image>art\interface\popups\greatpeople\Tcheky_Karyo.dds</Image>
 			</Images>
 			<Special>SPECIALUNIT_PEOPLE</Special>
 			<Combat>UNITCOMBAT_COMMANDER</Combat>
@@ -9658,6 +9668,7 @@
 				<UniqueName>TXT_KEY_UNIT_COMMANDER_GREATESTPEOPLE_2</UniqueName>
 				<UniqueName>TXT_KEY_UNIT_COMMANDER_GREATESTPEOPLE_3</UniqueName>
 				<UniqueName>TXT_KEY_UNIT_COMMANDER_GREATESTPEOPLE_4</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_COMMANDER_GREATESTPEOPLE_5</UniqueName>
 			</UniqueNames>
 			<Quotes>
 				<Quote>TXT_KEY_QUOTE_COMMANDER_1</Quote>
@@ -9684,6 +9695,7 @@
 				<Quote>TXT_KEY_QUOTE_COMMANDER_GREATESTPEOPLE_2</Quote>
 				<Quote>TXT_KEY_QUOTE_COMMANDER_GREATESTPEOPLE_3</Quote>
 				<Quote>TXT_KEY_QUOTE_COMMANDER_GREATESTPEOPLE_4</Quote>
+				<Quote>TXT_KEY_QUOTE_COMMANDER_GREATESTPEOPLE_5</Quote>
 			</Quotes>
 			<Images>
 				<Image>art\interface\popups\greatpeople\Captain_Ostanes.dds</Image>
@@ -9710,6 +9722,7 @@
 				<Image>art\interface\popups\greatpeople\Pierre_Mondy.dds</Image>
 				<Image>art\interface\popups\greatpeople\Michael_K_Williams.dds</Image>
 				<Image>art\interface\popups\greatpeople\Jason_David_Frank.dds</Image>
+				<Image>art\interface\popups\greatpeople\Tcheky_Karyo.dds</Image>
 			</Images>
 			<Special>SPECIALUNIT_PEOPLE</Special>
 			<Combat>UNITCOMBAT_COMMANDER</Combat>
@@ -9792,6 +9805,7 @@
 				<UniqueName>TXT_KEY_UNIT_COMMANDER_GREATESTPEOPLE_2</UniqueName>
 				<UniqueName>TXT_KEY_UNIT_COMMANDER_GREATESTPEOPLE_3</UniqueName>
 				<UniqueName>TXT_KEY_UNIT_COMMANDER_GREATESTPEOPLE_4</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_COMMANDER_GREATESTPEOPLE_5</UniqueName>
 			</UniqueNames>
 			<Quotes>
 				<Quote>TXT_KEY_QUOTE_COMMANDER_1</Quote>
@@ -9818,6 +9832,7 @@
 				<Quote>TXT_KEY_QUOTE_COMMANDER_GREATESTPEOPLE_2</Quote>
 				<Quote>TXT_KEY_QUOTE_COMMANDER_GREATESTPEOPLE_3</Quote>
 				<Quote>TXT_KEY_QUOTE_COMMANDER_GREATESTPEOPLE_4</Quote>
+				<Quote>TXT_KEY_QUOTE_COMMANDER_GREATESTPEOPLE_5</Quote>
 			</Quotes>
 			<Images>
 				<Image>art\interface\popups\greatpeople\Captain_Ostanes.dds</Image>
@@ -9844,6 +9859,7 @@
 				<Image>art\interface\popups\greatpeople\Pierre_Mondy.dds</Image>
 				<Image>art\interface\popups\greatpeople\Michael_K_Williams.dds</Image>
 				<Image>art\interface\popups\greatpeople\Jason_David_Frank.dds</Image>
+				<Image>art\interface\popups\greatpeople\Tcheky_Karyo.dds</Image>
 			</Images>
 			<Special>SPECIALUNIT_PEOPLE</Special>
 			<Combat>UNITCOMBAT_COMMANDER</Combat>
@@ -9932,6 +9948,7 @@
 				<UniqueName>TXT_KEY_UNIT_COMMANDER_GREATESTPEOPLE_2</UniqueName>
 				<UniqueName>TXT_KEY_UNIT_COMMANDER_GREATESTPEOPLE_3</UniqueName>
 				<UniqueName>TXT_KEY_UNIT_COMMANDER_GREATESTPEOPLE_4</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_COMMANDER_GREATESTPEOPLE_5</UniqueName>
 			</UniqueNames>
 			<Quotes>
 				<Quote>TXT_KEY_QUOTE_COMMANDER_1</Quote>
@@ -9958,6 +9975,7 @@
 				<Quote>TXT_KEY_QUOTE_COMMANDER_GREATESTPEOPLE_2</Quote>
 				<Quote>TXT_KEY_QUOTE_COMMANDER_GREATESTPEOPLE_3</Quote>
 				<Quote>TXT_KEY_QUOTE_COMMANDER_GREATESTPEOPLE_4</Quote>
+				<Quote>TXT_KEY_QUOTE_COMMANDER_GREATESTPEOPLE_5</Quote>
 			</Quotes>
 			<Images>
 				<Image>art\interface\popups\greatpeople\Captain_Ostanes.dds</Image>
@@ -9984,6 +10002,7 @@
 				<Image>art\interface\popups\greatpeople\Pierre_Mondy.dds</Image>
 				<Image>art\interface\popups\greatpeople\Michael_K_Williams.dds</Image>
 				<Image>art\interface\popups\greatpeople\Jason_David_Frank.dds</Image>
+				<Image>art\interface\popups\greatpeople\Tcheky_Karyo.dds</Image>
 			</Images>
 			<Special>SPECIALUNIT_PEOPLE</Special>
 			<Combat>UNITCOMBAT_COMMANDER</Combat>
@@ -15584,6 +15603,7 @@
 			<iAIWeight>16</iAIWeight>
 			<iCost>240</iCost>
 			<iMoves>2</iMoves>
+			<iMagicalPower>300</iMagicalPower>
 			<iWorkRate>100</iWorkRate>
 			<iCombat>8</iCombat>
 			<iCityAttack>-20</iCityAttack>
@@ -16023,6 +16043,7 @@
 			<iCost>120</iCost>
 			<iMoves>1</iMoves>
 			<iCombat>5</iCombat>
+			<iMagicalPower>150</iMagicalPower>
 			<iAsset>4</iAsset>
 			<UnitMeshGroups>
 				<iGroupSize>1</iGroupSize>
@@ -16105,6 +16126,7 @@
 			</Flavors>
 			<iAIWeight>16</iAIWeight>
 			<iCost>240</iCost>
+			<iMagicalPower>300</iMagicalPower>
 			<iMoves>1</iMoves>
 			<iCombat>6</iCombat>
 			<iCultureGarrison>6</iCultureGarrison>
@@ -34249,6 +34271,7 @@
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 			</FreePromotions>
+			<PrereqBuildingClass>BUILDINGCLASS_THIEVES_DEN</PrereqBuildingClass>
 			<bImmuneToDefensiveStrike>1</bImmuneToDefensiveStrike>
 			<iCombatDefense>3</iCombatDefense>
 			<iTier>4</iTier>
@@ -42592,6 +42615,7 @@
 			</FreePromotions>
 			<iTier>3</iTier>
 			<iPowerMult>7</iPowerMult>
+			<iMagicalPower>150</iMagicalPower>
 		</UnitInfo>
 		<UnitInfo>        <!-- Worker -->            <!-- CIVILIAN UNITS -->
 			<Class>UNITCLASS_WORKER</Class>
@@ -45785,6 +45809,7 @@
 				</FreePromotion>
 			</FreePromotions>
 			<iTier>4</iTier>
+			<iMagicalPower>150</iMagicalPower>
 			<iWithdrawlProbDefensive>75</iWithdrawlProbDefensive>
 			<iAppearanceProb>-1</iAppearanceProb>
 			<AppearanceTechs>
@@ -48742,8 +48767,6 @@
 					<EarlyArtDefineTag>ART_DEF_UNIT_OTOLOCH</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
-			<FreePromotions>
-			</FreePromotions>
 			<DenyPromotions>
 				<Promotion>PROMOTION_GUERILLA1</Promotion>
 				<Promotion>PROMOTION_WOODSMAN1</Promotion>

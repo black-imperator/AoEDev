@@ -114,4 +114,28 @@ To Anubila, there is no greater purpose than ensuring the empires eternal reign.
         <Tag>TXT_KEY_UNIT_MYRMIPHAGE_MILITARY_STRATEGY</Tag>
         <English>The Myrmiphage are your elite endgame units. They are resurrected in your capital after their death.</English>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_ARCHANTEN_NAME</Tag>
+        <English>Archanten</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_ARCHANTEN_PEDIA</Tag>
+        <English>Mixed in the eternal hordes of undeath, there are the Archanten. Elite soldiers faithful only to Nephtharia herself and the horror of all who oppose Namko. While most experienced warriors can handle one or two skeletons easily, there is rarely a living soldier who could tell a story about winning a fight against an Archanten. Most live just long enough to realize that it was their last fight as a mortal. Yet, they have nothing to worry. The Archanten will carry their dying bodies to the next Nephrakis, so they can join the faith.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_ARCHANTEN_STRATEGY</Tag>
+        <English>Archanten are your most powerful mass unit. They have a strong fire damage bonus and are excellent attack Units.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_NAMKO_HOPLIAN</Tag>
+        <English>Hoplian</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_NAMKO_HOPLIAN_PEDIA</Tag>
+        <English>The soldiers of the Bannor stormed over the hills and began their surprise attack on the marching Namko army. While they were able to overwhelm the first undead quickly, they soon realized that there was no panic in their ranks nor fear. With cold efficiency, they formed a wall of bones and began their counterattack.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_NAMKO_HOPLIAN_STRATEGY</Tag>
+        <English>Hoplian are stronger than Spearman in attack and have a chance to retreat from combat. They are also secondary disciple units, giving them access to certain promotion.</English>
+    </TEXT>
 </Civ4GameText>

@@ -13,6 +13,14 @@
 					<BuildingClassType>BUILDINGCLASS_VAMP_SANGUINE_ALTAR</BuildingClassType>
 					<BuildingType>BUILDING_VAMP_SANGUINE_ALTAR</BuildingType>
 				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_VAMP_BLOOD_TEMPLE</BuildingClassType>
+					<BuildingType>BUILDING_VAMP_BLOOD_TEMPLE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_VAMP_BLOOD_FOUNDRY</BuildingClassType>
+					<BuildingType>BUILDING_VAMP_BLOOD_FOUNDRY</BuildingType>
+				</Building>
 			</Buildings>
 			<Units>
 				<Unit>
@@ -23,7 +31,21 @@
                     <UnitClassType>UNITCLASS_VAMP_BLOOD_SISTER</UnitClassType>
                     <UnitType>UNIT_VAMP_BLOOD_SISTER</UnitType>
                 </Unit>
+				<Unit>
+                    <UnitClassType>UNITCLASS_VAMP_BLOOD_SEER</UnitClassType>
+                    <UnitType>UNIT_VAMP_BLOOD_SEER</UnitType>
+                </Unit>
 			</Units>
+			<Leaders>
+				<Leader>
+					<LeaderName>LEADER_VAMP_MIKILA_RAVANA</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
+				<Leader>
+					<LeaderName>LEADER_VAMP_SARIA_FLAUROS</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
+			</Leaders>
 		</CivilizationInfo>
 		<CivilizationInfo>
 			<Type>CIVILIZATION_BALSERAPHS</Type>

@@ -41,6 +41,7 @@
 /* BETTER_BTS_AI_MOD                       END                                                  */
 /************************************************************************************************/
 
+#include "CvSnarkoProfiler.h"
 // Public Functions...
 
 CvPlayer::CvPlayer()
@@ -1006,6 +1007,7 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 /**	Tweak									END													**/
 /*************************************************************************************************/
 	m_bIgnoreFood = false;
+	m_bIgnoreProduction = false;
 	m_bIgnoreHealth = false;
 	m_bIgnoreHappy = false;
 	m_bInsane = false;
@@ -3463,6 +3465,10 @@ void CvPlayer::setHasTrait(TraitTypes eTrait, bool bNewValue)
 	{
 		setIgnoreFood(bNewValue);
 	}
+	if (GC.getTraitInfo(eTrait).isIgnoreProduction())
+	{
+		setIgnoreProduction(bNewValue);
+	}
 	if (GC.getTraitInfo(eTrait).isIgnoreHealth())
 	{
 		setIgnoreHealth(bNewValue);
@@ -4098,13 +4104,22 @@ const TCHAR* CvPlayer::getUnitButton(UnitTypes eUnit) const
 
 void CvPlayer::doTurn()
 {
-	PROFILE_FUNC();
+	//PROFILE_FUNC();
+	CvSnarkoProfiler profiler;
+	CvSnarkoProfiler profiler2;
+	CvString szError;
+	szError.Format("Player::doTurn Turn %i, Leader %s", GC.getGame().getGameTurn(), GC.getLeaderHeadInfo(getLeaderType()).getType());
+
+	profiler.profile(szError);
 
 	CvCity* pLoopCity;
 	int iLoop;
 
 	FAssertMsg(isAlive(), "isAlive is expected to be true");
 	FAssertMsg(!hasBusyUnit() || GC.getGameINLINE().isMPOption(MPOPTION_SIMULTANEOUS_TURNS)  || GC.getGameINLINE().isSimultaneousTeamTurns(), "End of turn with busy units in a sequential-turn game");
+	
+	szError.Format("Player::doTurn-TradeDefenderDecay Turn %i, Leader %s", GC.getGame().getGameTurn(), GC.getLeaderHeadInfo(getLeaderType()).getType());
+	profiler2.profile(szError);
 
 	for (int ePlayer = 0; ePlayer < MAX_PLAYERS; ePlayer++)
 	{
@@ -4112,14 +4127,37 @@ void CvPlayer::doTurn()
 		if (getTradeDefenderDecayByPlayer((PlayerTypes)ePlayer) % 10 == 0)
 			changeTradeDefenderAttitudeByPlayer((PlayerTypes)ePlayer, -1);
 	}
+	profiler2.profile(NULL, true);
 
+	szError.Format("Player::doTurn-BeginPlayerTurnPy Turn %i, Leader %s", GC.getGame().getGameTurn(), GC.getLeaderHeadInfo(getLeaderType()).getType());
+	profiler2.profile(szError);
 	CvEventReporter::getInstance().beginPlayerTurn( GC.getGameINLINE().getGameTurn(),  getID());
+
+	profiler2.profile(NULL, true);
+
+	szError.Format("Player::doTurn-UpdateCache Turn %i, Leader %s", GC.getGame().getGameTurn(), GC.getLeaderHeadInfo(getLeaderType()).getType());
+	profiler2.profile(szError);
 
 	doUpdateCacheOnTurn();
 
+	profiler2.profile(NULL, true);
+
+	szError.Format("Player::doTurn-VerifyDeals Turn %i, Leader %s", GC.getGame().getGameTurn(), GC.getLeaderHeadInfo(getLeaderType()).getType());
+	profiler2.profile(szError);
+
 	GC.getGameINLINE().verifyDeals();
 
+	profiler2.profile(NULL, true);
+
+	szError.Format("Player::doTurn-AIdoTurnPre Turn %i, Leader %s", GC.getGame().getGameTurn(), GC.getLeaderHeadInfo(getLeaderType()).getType());
+	profiler2.profile(szError);
+
 	AI_doTurnPre();
+
+	profiler2.profile(NULL, true);
+
+	szError.Format("Player::doTurn-updatealignments Turn %i, Leader %s", GC.getGame().getGameTurn(), GC.getLeaderHeadInfo(getLeaderType()).getType());
+	profiler2.profile(szError);
 
 /*************************************************************************************************/
 /**	Broader Alignments						04/08/08	Written: Grey Fox	Imported: Xienwolf	**/
@@ -4151,6 +4189,8 @@ void CvPlayer::doTurn()
 /*************************************************************************************************/
 	}
 	FAssert(m_iPower >= 0);
+	profiler2.profile(NULL, true);
+
 /*************************************************************************************************/
 /**	Broader Alignments							END												**/
 /*************************************************************************************************/
@@ -4166,7 +4206,15 @@ void CvPlayer::doTurn()
 
 	setConscriptCount(0);
 
+
+	szError.Format("Player::doTurn-assignworkingplots Turn %i, Leader %s", GC.getGame().getGameTurn(), GC.getLeaderHeadInfo(getLeaderType()).getType());
+	profiler2.profile(szError);
+
 	AI_assignWorkingPlots();
+	profiler2.profile(NULL, true);
+
+	szError.Format("Player::doTurn-verifycommercepercent Turn %i, Leader %s", GC.getGame().getGameTurn(), GC.getLeaderHeadInfo(getLeaderType()).getType());
+	profiler2.profile(szError);
 
 	if (0 == GET_TEAM(getTeam()).getHasMetCivCount(true) || GC.getGameINLINE().isOption(GAMEOPTION_NO_ESPIONAGE))
 	{
@@ -4174,17 +4222,30 @@ void CvPlayer::doTurn()
 	}
 
 	verifyGoldCommercePercent();
+	profiler2.profile(NULL, true);
+
+	szError.Format("Player::doTurn-dogold Turn %i, Leader %s", GC.getGame().getGameTurn(), GC.getLeaderHeadInfo(getLeaderType()).getType());
+	profiler2.profile(szError);
 
 	doGold();
+	profiler2.profile(NULL, true);
+
+	szError.Format("Player::doTurn-doresearch Turn %i, Leader %s", GC.getGame().getGameTurn(), GC.getLeaderHeadInfo(getLeaderType()).getType());
+	profiler2.profile(szError);
 
 	doResearch();
+	profiler2.profile(NULL, true);
+
 
 	doEspionagePoints();
+	szError.Format("Player::doTurn-docities Turn %i, Leader %s", GC.getGame().getGameTurn(), GC.getLeaderHeadInfo(getLeaderType()).getType());
+	profiler2.profile(szError);
 
 	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 	{
 		pLoopCity->doTurn();
 	}
+	profiler2.profile(NULL, true);
 
 /*************************************************************************************************/
 /**	Xienwolf Tweak							12/27/08											**/
@@ -4206,12 +4267,21 @@ void CvPlayer::doTurn()
 	{
 		changeAnarchyTurns(-1);
 	}
+	szError.Format("Player::doTurn-verifycivics Turn %i, Leader %s", GC.getGame().getGameTurn(), GC.getLeaderHeadInfo(getLeaderType()).getType());
+	profiler2.profile(szError);
 
 	verifyCivics();
+	profiler2.profile(NULL, true);
+	szError.Format("Player::doTurn-updatetraderoutes Turn %i, Leader %s", GC.getGame().getGameTurn(), GC.getLeaderHeadInfo(getLeaderType()).getType());
+	profiler2.profile(szError);
 
 	updateTradeRoutes();
+	profiler2.profile(NULL, true);
+	szError.Format("Player::doTurn-updatewarwearines Turn %i, Leader %s", GC.getGame().getGameTurn(), GC.getLeaderHeadInfo(getLeaderType()).getType());
+	profiler2.profile(szError);
 
 	updateWarWearinessPercentAnger();
+	profiler2.profile(NULL, true);
 
 //FfH: Added by Kael 11/02/2007
 	if (getTempPlayerTimer() > 0)
@@ -4257,18 +4327,30 @@ void CvPlayer::doTurn()
 		changeDisableSpellcasting(-1);
 	}
 //FfH: End Add
+	szError.Format("Player::doTurn-doevents Turn %i, Leader %s", GC.getGame().getGameTurn(), GC.getLeaderHeadInfo(getLeaderType()).getType());
+	profiler2.profile(szError);
+
 	doEvents();
+	profiler2.profile(NULL, true);
+
+	szError.Format("Player::doTurn-dotraittrigger Turn %i, Leader %s", GC.getGame().getGameTurn(), GC.getLeaderHeadInfo(getLeaderType()).getType());
+	profiler2.profile(szError);
 
 	//DynTraits
 	TraitTriggeredData kData;
 	kData.m_bAtWar = GET_TEAM(getTeam()).getAtWarCount(true) > 0;
 	kData.m_iReligion = getStateReligion();
 	doTraitTriggers(TRAITHOOK_PLAYER_TURN, &kData);
+
+	profiler2.profile(NULL, true);
+
+
 	updateEconomyHistory(GC.getGameINLINE().getGameTurn(), calculateTotalCommerce());
 	updateIndustryHistory(GC.getGameINLINE().getGameTurn(), calculateTotalYield(YIELD_PRODUCTION));
 	updateAgricultureHistory(GC.getGameINLINE().getGameTurn(), calculateTotalYield(YIELD_FOOD));
 	updatePowerHistory(GC.getGameINLINE().getGameTurn(), getPower());
 	updateCultureHistory(GC.getGameINLINE().getGameTurn(), countTotalCulture());
+
 
 //FfH: Modified by Kael 09/28/2008
 //	updateEspionageHistory(GC.getGameINLINE().getGameTurn(), GET_TEAM(getTeam()).getEspionagePointsEver());
@@ -4280,7 +4362,13 @@ void CvPlayer::doTurn()
 	expireMessages();  // turn log
 
 	gDLL->getInterfaceIFace()->setDirty(CityInfo_DIRTY_BIT, true);
+
+
+	szError.Format("Player::doTurn-aidoturnpost Turn %i, Leader %s", GC.getGame().getGameTurn(), GC.getLeaderHeadInfo(getLeaderType()).getType());
+	profiler2.profile(szError);
+
 	AI_doTurnPost();
+	profiler2.profile(NULL, true);
 
 /************************************************************************************************/
 /* BETTER_BTS_AI_MOD                      07/08/09                                jdog5000      */
@@ -4294,16 +4382,28 @@ void CvPlayer::doTurn()
 /************************************************************************************************/
 /* BETTER_BTS_AI_MOD                       END                                                  */
 /************************************************************************************************/
+	szError.Format("Player::doTurn-pyendplayerturn Turn %i, Leader %s", GC.getGame().getGameTurn(), GC.getLeaderHeadInfo(getLeaderType()).getType());
+	profiler2.profile(szError);
+
 	CvEventReporter::getInstance().endPlayerTurn( GC.getGameINLINE().getGameTurn(),  getID());
+	profiler2.profile(NULL, true);
+
+	profiler.profile(NULL,true);
+
 }
 
 
 void CvPlayer::doTurnUnits()
 {
 	//Snarko temp
-	PROFILE_BEGIN("CvPlayer::doTurnUnits()");
-	startProfilingDLL();
+//	PROFILE_BEGIN("CvPlayer::doTurnUnits()");
+//	startProfilingDLL();
 	//PROFILE_FUNC();
+//	CvSnarkoProfiler profiler;
+//	CvString szError;
+//	szError.Format("Player::doTurnUnits Turn %i, Leader %s", GC.getGame().getGameTurn(), GC.getLeaderHeadInfo(getLeaderType()).getType());
+
+//	profiler.profile(szError);
 
 	CvSelectionGroup* pLoopSelectionGroup;
 	int iLoop;
@@ -4395,8 +4495,10 @@ void CvPlayer::doTurnUnits()
 	gDLL->getInterfaceIFace()->setDirty(UnitInfo_DIRTY_BIT, true);
 
 	AI_doTurnUnitsPost();
-	PROFILE_END();
-	stopProfilingDLL();
+//	PROFILE_END();
+//	stopProfilingDLL();
+//	profiler.profile(NULL, true);
+
 }
 
 
@@ -7779,6 +7881,11 @@ bool CvPlayer::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool
 
 	eUnitClass = ((UnitClassTypes)(GC.getUnitInfo(eUnit).getUnitClassType()));
 	eSecondaryUnitClass = ((UnitClassTypes)(GC.getUnitInfo(eUnit).getSecondaryUnitClassType()));
+	UnitClassTypes eActualUnitClass = eUnitClass;
+	if (getPlayerUnit(eUnitClass) != eUnit && eSecondaryUnitClass!=NO_UNITCLASS)
+	{
+		eActualUnitClass = eSecondaryUnitClass;
+	}
 	//FAssert(GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(eUnitClass) == eUnit);
 
 //FfH: Modified by Kael 05/09/2008
@@ -7835,17 +7942,17 @@ bool CvPlayer::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool
 			return false;
 	}
 
-	if (GC.getGameINLINE().isUnitClassMaxedOut(eUnitClass) && (eSecondaryUnitClass==NO_UNITCLASS|| GC.getGameINLINE().isUnitClassMaxedOut(eSecondaryUnitClass)))
+	if (GC.getGameINLINE().isUnitClassMaxedOut(eActualUnitClass) )//&& (eSecondaryUnitClass==NO_UNITCLASS|| GC.getGameINLINE().isUnitClassMaxedOut(eSecondaryUnitClass)))
 	{
 		return false;
 	}
 
-	if (GET_TEAM(getTeam()).isUnitClassMaxedOut(eUnitClass) && (eSecondaryUnitClass == NO_UNITCLASS || GET_TEAM(getTeam()).isUnitClassMaxedOut(eSecondaryUnitClass)))
+	if (GET_TEAM(getTeam()).isUnitClassMaxedOut(eActualUnitClass))// && (eSecondaryUnitClass == NO_UNITCLASS || GET_TEAM(getTeam()).isUnitClassMaxedOut(eSecondaryUnitClass)))
 	{
 		return false;
 	}
 
-	if (isUnitClassMaxedOut(eUnitClass) && (eSecondaryUnitClass == NO_UNITCLASS || isUnitClassMaxedOut(eSecondaryUnitClass)))
+	if (isUnitClassMaxedOut(eActualUnitClass))// && (eSecondaryUnitClass == NO_UNITCLASS || isUnitClassMaxedOut(eSecondaryUnitClass)))
 	{
 		return false;
 	}
@@ -7971,7 +8078,7 @@ bool CvPlayer::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool
 /**								---- Start Original Code ----									**
 bool CvPlayer::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVisible, bool bIgnoreCost) const
 /**								----  End Original Code  ----									**/
-bool CvPlayer::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVisible, bool bIgnoreCost, bool bIgnoreTech) const
+bool CvPlayer::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVisible, bool bIgnoreCost, bool bIgnoreTech,bool bStillValid) const
 /*************************************************************************************************/
 /**	AITweak									END													**/
 /*************************************************************************************************/
@@ -8207,10 +8314,14 @@ bool CvPlayer::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestV
 		{
 			return false;
 		}
-
+		int iextra = 0;
+		if (bStillValid)
+		{
+			iextra = -1;
+		}
 		for (iI = 0; iI < numBuildingClassInfos; iI++)
 		{
-			if (getBuildingClassCount((BuildingClassTypes)iI) < getBuildingClassPrereqBuilding(eBuilding, ((BuildingClassTypes)iI), ((bContinue) ? 0 : getBuildingClassMaking(eBuildingClass))))
+			if (getBuildingClassCount((BuildingClassTypes)iI) < getBuildingClassPrereqBuilding(eBuilding, ((BuildingClassTypes)iI), ((bContinue) ? iextra : getBuildingClassMaking(eBuildingClass)+iextra)))
 			{
 				return false;
 			}
@@ -20878,6 +20989,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 /**	Tweak									END													**/
 /*************************************************************************************************/
 	pStream->Read(&m_bIgnoreFood);
+	pStream->Read(&m_bIgnoreProduction);
 	pStream->Read(&m_bIgnoreHealth);
 	pStream->Read(&m_bIgnoreHappy);
 	pStream->Read(&m_bInsane);
@@ -21643,6 +21755,7 @@ void CvPlayer::write(FDataStreamBase* pStream)
 /**	Tweak									END													**/
 /*************************************************************************************************/
 	pStream->Write(m_bIgnoreFood);
+	pStream->Write(m_bIgnoreProduction);
 	pStream->Write(m_bIgnoreHealth);
 	pStream->Write(m_bIgnoreHappy);
 	pStream->Write(m_bInsane);
@@ -27908,6 +28021,15 @@ bool CvPlayer::isIgnoreFood() const
 void CvPlayer::setIgnoreFood(bool bNewValue)
 {
 	m_bIgnoreFood = bNewValue;
+}
+bool CvPlayer::isIgnoreProduction() const
+{
+	return m_bIgnoreProduction;
+}
+
+void CvPlayer::setIgnoreProduction(bool bNewValue)
+{
+	m_bIgnoreProduction = bNewValue;
 }
 
 bool CvPlayer::isIgnoreHealth() const

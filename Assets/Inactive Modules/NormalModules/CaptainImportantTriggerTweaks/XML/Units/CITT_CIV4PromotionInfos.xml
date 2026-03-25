@@ -57,5 +57,18 @@
 			<iAIWeight>-100</iAIWeight>
 			<iMinLevel>-1</iMinLevel>
 		</PromotionInfo>
+		<!-- <PromotionInfo>		 Swashbuckling Tradition 
+			<Type>PROMOTION_SWASHBUCKLING_TRADITION</Type>
+			<Description>TXT_KEY_PROMOTION_SWASHBUCKLING_TRADITION</Description>
+			<iCargoChange>1</iCargoChange>
+			<iMovesChange>1</iMovesChange>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Art/Interface/Buttons/Promotions/Expandedhull.dds</Button>
+		</PromotionInfo> -->
 	</PromotionInfos>
 </Civ4PromotionInfos>

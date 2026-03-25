@@ -2,11 +2,6 @@
 <!-- Tech Infos -->
 <Civ4TechInfos xmlns="x-schema:VCivics_CIV4TechnologiesSchema.xml">
 	<TechInfos>
-		<TechInfo>		<!-- Machinery -->
-			<Type>TECH_MACHINERY</Type>
-			<iGridX>7</iGridX>
-			<iGridY>21</iGridY>
-		</TechInfo>
 		<TechInfo>		<!-- Mathematics -->
 			<Type>TECH_MATHEMATICS</Type>
 			<iCost>1600</iCost>
@@ -50,8 +45,6 @@
 			<iAsset>64</iAsset>
 			<iPower>16</iPower>
 			<bGoodyTech>1</bGoodyTech>
-			<iGridX>8</iGridX>
-			<iGridY>20</iGridY>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GROWTH</FlavorType>

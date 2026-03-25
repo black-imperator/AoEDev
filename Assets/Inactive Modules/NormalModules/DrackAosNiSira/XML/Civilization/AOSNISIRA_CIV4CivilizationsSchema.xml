@@ -197,6 +197,7 @@
 		<element type="DiploMusicWarEra" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="bFemale" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bRandom" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bNotMercenaryCiv" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bNoCrimeCiv" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bGraphicalOnly" content="textOnly" dt:type="boolean"/>
@@ -413,6 +414,7 @@
 		<element type="DiplomacyIntroMusicWar"/>
 		<element type="DiplomacyMusicWar"/>
 		<element type="bFemale"/>
+		<element type="bRandom"/>
 		<element type="bGraphicalOnly"/>
 		<element type="iAttitudeBadBonus"/>
 		<element type="iAttitudeCompassionHigh"/>

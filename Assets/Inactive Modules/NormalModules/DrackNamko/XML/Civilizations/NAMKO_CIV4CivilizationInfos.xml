@@ -16,7 +16,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_NAMKO</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_NAMKO</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_INFERNAL</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_DTESH</UnitArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_NAMKO</UnitArtStyleType>
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
@@ -39,6 +39,10 @@
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 					<BuildingType>BUILDING_PALACE_NAMKO</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_LIGHTHOUSE</BuildingClassType>
+					<BuildingType>BUILDING_NAMKO_LIGHTHOUSE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_NAMKO_ARISEN_HOUSINGS</BuildingClassType>
@@ -123,6 +127,10 @@
                     <UnitType>UNIT_NAMKO_PYRASPIS</UnitType>
                 </Unit>
 				<Unit>
+                    <UnitClassType>UNITCLASS_SPEARMAN</UnitClassType>
+                    <UnitType>UNIT_NAMKO_HOPLIAN</UnitType>
+                </Unit>
+				<Unit>
                     <UnitClassType>UNITCLASS_NAMKO_NEPHRAKIS</UnitClassType>
                     <UnitType>UNIT_NAMKO_NEPHRAKIS</UnitType>
                 </Unit>
@@ -139,6 +147,10 @@
                     <UnitType>UNIT_NAMKO_ANUBILA</UnitType>
                 </Unit>
 				<Unit>
+                    <UnitClassType>UNITCLASS_ARCHANTEN</UnitClassType>
+                    <UnitType>UNIT_NAMKO_ARCHANTEN</UnitType>
+                </Unit>
+				<Unit>
                     <UnitClassType>UNITCLASS_AXEMAN</UnitClassType>
                     <UnitType>UNIT_NAMKO_THANATOGUARD</UnitType>
                 </Unit>
@@ -151,23 +163,7 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_ROYAL_GUARD</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_ASSASSIN</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
 					<UnitClassType>UNITCLASS_WAR_ELEPHANT</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_SHADOW</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_HAWK</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -256,7 +252,7 @@
             <CivilizationActionSound>AS3D_UNDEAD_SELECT</CivilizationActionSound>
 			<bLimitedSelection>0</bLimitedSelection>
 			<bGraphicalOnly>0</bGraphicalOnly>
-			<CivTrait>TRAIT_FALLOW</CivTrait>
+			<CivTrait>TRAIT_FAITH_BEYOND_MORTALITY</CivTrait>
 			<Hero>UNIT_NAMKO_ANUBILA</Hero>
 			<DefaultRace>PROMOTION_UNDEAD</DefaultRace>
 			<TerrainCultureDistanceChanges>
@@ -281,16 +277,6 @@
 					<iCultureDistanceChange>1</iCultureDistanceChange>
 				</TerrainCultureDistanceChange>
 			</TerrainCultureDistanceChanges>
-			<TerrainYieldChanges>
-				<TerrainYieldChange>
-					<TerrainType>TERRAIN_DESERT</TerrainType>
-					<TerrainYields>
-						<iYield>0</iYield>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-					</TerrainYields>
-				</TerrainYieldChange>
-			</TerrainYieldChanges>
 			<Image>Modules\NormalModules\DrackNamko\Art\Banner.dds</Image>
 		</CivilizationInfo>
 	</CivilizationInfos>

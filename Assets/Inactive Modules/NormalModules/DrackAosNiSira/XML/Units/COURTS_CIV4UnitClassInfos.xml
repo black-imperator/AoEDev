@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSpy v2006 sp1 U (http://www.altova.com) by Derek Paxton (None) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Jesse Smith (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- UnitClass Schema -->
+<Civ4UnitClassInfos xmlns="x-schema:AOSNISIRA_CIV4UnitSchema.xml">
+	<UnitClassInfos>
+        <UnitClassInfo>		<!-- Pesna Fairy -->
+			<Type>UNITCLASS_FAIRY_PESNA</Type>
+			<Description>TXT_KEY_UNIT_FAIRY_PESNA</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_FAIRY_PESNA</DefaultUnit>
+			<iMercenaryWeight>20</iMercenaryWeight>
+            <bUnique>1</bUnique>
+		</UnitClassInfo>
+        <UnitClassInfo>		<!-- Fane Warrior -->
+			<Type>UNITCLASS_FANE_WARRIOR</Type>
+			<Description>TXT_KEY_UNIT_FANE_WARRIOR</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>10</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_FANE_WARRIOR</DefaultUnit>
+			<iMercenaryWeight>20</iMercenaryWeight>
+            <bUnique>1</bUnique>
+		</UnitClassInfo>
+        <UnitClassInfo>		<!-- Rakiri Cannon -->
+			<Type>UNITCLASS_RAKIRI_CANNON</Type>
+			<Description>TXT_KEY_UNIT_RAKIRI_CANNON</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_RAKIRI_CANNON</DefaultUnit>
+			<iMercenaryWeight>20</iMercenaryWeight>
+            <bUnique>1</bUnique>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- Shroomfae -->
+			<Type>UNITCLASS_FAIRY_SHROOMFAE</Type>
+			<Description>TXT_KEY_UNIT_FAIRY_SHROOMFAE</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>5</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_FAIRY_SHROOMFAE</DefaultUnit>
+			<iMercenaryWeight>20</iMercenaryWeight>
+            <bUnique>1</bUnique>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- Nimai, Hero of Falyn-->
+			<Type>UNITCLASS_FAIRY_NIMAI</Type>
+			<Description>Nimai</Description>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_FAIRY_NIMAI</DefaultUnit>
+			<bUnique>1</bUnique>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- Alin Al Bey, Hero of Bey-->
+			<Type>UNITCLASS_FAIRY_ALIN</Type>
+			<Description>TXT_KEY_AOSNISIRA_UNIT_FAIRY_ALIN</Description>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_FAIRY_ALIN</DefaultUnit>
+			<bUnique>1</bUnique>
+		</UnitClassInfo>
+    </UnitClassInfos>
+</Civ4UnitClassInfos>

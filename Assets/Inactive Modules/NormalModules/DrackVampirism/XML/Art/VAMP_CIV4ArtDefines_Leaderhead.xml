@@ -22,5 +22,21 @@
 			<NoShaderNIF/>
 			<BackgroundKFM/>
 		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>		<!-- Mikila Ravana -->
+			<Type>ART_DEF_LEADER_VAMP_MIKILA_RAVANA</Type> 
+			<Button>Modules\NormalModules\DrackVampirism\Art\Leaders\Mikila_Button.dds</Button>
+			<NIF>Modules\NormalModules\DrackVampirism\Art\Leaders\Mikila.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>		<!-- Saria Klarentina Flauros -->
+			<Type>ART_DEF_LEADER_VAMP_SARIA_FLAUROS</Type> 
+			<Button>Modules\NormalModules\DrackVampirism\Art\Leaders\Saria_Button.dds</Button>
+			<NIF>Modules\NormalModules\DrackVampirism\Art\Leaders\Saria.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
 	</LeaderheadArtInfos>
 </Civ4ArtDefines>

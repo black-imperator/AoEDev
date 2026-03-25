@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Units -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_INQUISITION_ANTI_ENDBRINGER</Tag>
+		<English>Purge Endbringer Cults</English>
+		<French>Purge Endbringer Cults</French>
+		<German>Purge Endbringer Cults</German>
+		<Italian>Purge Endbringer Cults</Italian>
+		<Spanish>Purge Endbringer Cults</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_INQUISITION_ANTI_ENDBRINGER_HELP</Tag>
+		<English>[ICON_BULLET]Removes non-state apocalyptic religions  from the city</English>
+		<French>Supprime de la ville les religions autres que la religion d'Etat</French>
+		<German>[ICON_BULLET]Entfernt nicht-staatliche Religionen aus der Stadt.</German>
+		<Italian>[ICON_BULLET]Removes non-state apocalyptic religions from the city</Italian>
+		<Spanish>[ICON_BULLET]Removes non-state apocalyptic religions from the city</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_INQUISITION_ANTI_ENDBRINGER_PEDIA</Tag>
+		<English>[TAB]Ximinez: So you think you are strong because you can survive the soft cushions. Well, we shall see. Biggles! Put her in the Comfy Chair![PARAGRAPH:1][They roughly push her into the Comfy Chair][PARAGRAPH:1]Ximinez [with a cruel leer]: Now - you will stay in the Comfy Chair until lunch time, with only a cup of coffee at eleven. [aside, to Biggles] Is that really all it is?[PARAGRAPH:1]Biggles: Yes, lord.[PARAGRAPH:1]Ximinez: I see. I suppose we make it worse by shouting a lot, do we? Confess, woman. Confess! Confess! Confess! Confess[PARAGRAPH:1]Biggles: I confess![PARAGRAPH:1]Ximinez: Not you![PARAGRAPH:1]</English>
+		<French>[TAB]Ximinez: So you think you are strong because you can survive the soft cushions. Well, we shall see. Biggles! Put her in the Comfy Chair![PARAGRAPH:1][They roughly push her into the Comfy Chair][PARAGRAPH:1]Ximinez [with a cruel leer]: Now - you will stay in the Comfy Chair until lunch time, with only a cup of coffee at eleven. [aside, to Biggles] Is that really all it is?[PARAGRAPH:1]Biggles: Yes, lord.[PARAGRAPH:1]Ximinez: I see. I suppose we make it worse by shouting a lot, do we? Confess, woman. Confess! Confess! Confess! Confess[PARAGRAPH:1]Biggles: I confess![PARAGRAPH:1]Ximinez: Not you![PARAGRAPH:1]</French>
+		<German>[TAB]Ximinez: Du denkst also, du bist stark, weil du die weichen Polster überstehen kannst. Na, wir werden sehen. Biggels! Setze sie auf den Gemütlichen Stuhl![PARAGRAPH:1][Sie drückten sie grob auf den Gemütlichen Stuhl][PARAGRAPH:1]Ximinez [mit einem grausamen Grinsen]: Jetzt - wirst du auf diesem Stuhl bleiben, bis es Mittagszeit ist, nur eine Tasse Tee um Elf Uhr wirst du bekommen. [nebenbei zu Biggles] ist das wirklich alles?[PARAGRAPH:1]Biggels: Ja, Herr.[PARAGRAPH:1]Ximinez: Verstehe. Ich schlage vor, wir machen es so schlimm wie möglich, indem wir viel umher schreien, oder? Gestehe, Weib! Gestehe! Gestehe! Gestehe! Gestehe![PARAGRAPH:1]Biggels: Ich gestehe![PARAGRAPH:1]Ximinez: Nicht du![PARAGRAPH:1]</German>
+		<Italian>[TAB]Ximinez: So you think you are strong because you can survive the soft cushions. Well, we shall see. Biggles! Put her in the Comfy Chair![PARAGRAPH:1][They roughly push her into the Comfy Chair][PARAGRAPH:1]Ximinez [with a cruel leer]: Now - you will stay in the Comfy Chair until lunch time, with only a cup of coffee at eleven. [aside, to Biggles] Is that really all it is?[PARAGRAPH:1]Biggles: Yes, lord.[PARAGRAPH:1]Ximinez: I see. I suppose we make it worse by shouting a lot, do we? Confess, woman. Confess! Confess! Confess! Confess[PARAGRAPH:1]Biggles: I confess![PARAGRAPH:1]Ximinez: Not you![PARAGRAPH:1]</Italian>
+		<Spanish>[TAB]Ximinez: So you think you are strong because you can survive the soft cushions. Well, we shall see. Biggles! Put her in the Comfy Chair![PARAGRAPH:1][They roughly push her into the Comfy Chair][PARAGRAPH:1]Ximinez [with a cruel leer]: Now - you will stay in the Comfy Chair until lunch time, with only a cup of coffee at eleven. [aside, to Biggles] Is that really all it is?[PARAGRAPH:1]Biggles: Yes, lord.[PARAGRAPH:1]Ximinez: I see. I suppose we make it worse by shouting a lot, do we? Confess, woman. Confess! Confess! Confess! Confess[PARAGRAPH:1]Biggles: I confess![PARAGRAPH:1]Ximinez: Not you![PARAGRAPH:1]</Spanish>
+	</TEXT>
+</Civ4GameText>

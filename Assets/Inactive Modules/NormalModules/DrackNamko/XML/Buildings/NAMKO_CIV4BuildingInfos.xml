@@ -9,34 +9,22 @@
 		<BuildingInfo>  <!-- NAMKO Palace -->
             <BuildingClass>BUILDINGCLASS_PALACE</BuildingClass>
             <Type>BUILDING_PALACE_NAMKO</Type>
-            <SpecialBuildingType>NONE</SpecialBuildingType>
             <Description>TXT_KEY_BUILDING_NAMKO_PALACE_NAME</Description>
             <Civilopedia>TXT_KEY_BUILDING_PALACE_PEDIA</Civilopedia>
             <Help>TXT_KEY_BUILDING_PALACE_HELP</Help>
             <Strategy>TXT_KEY_BUILDING_NAMKO_PALACE_PEDIA</Strategy>
             <bCapital>1</bCapital>
-			<iHealth>2</iHealth>
 			<bGovernmentCenter>1</bGovernmentCenter>
             <Advisor>ADVISOR_ECONOMY</Advisor>
             <ArtDefineTag>ART_DEF_BUILDING_PALACE_NAMKO</ArtDefineTag>
-            <MovieDefineTag>NONE</MovieDefineTag>
-            <Help></Help>
-            <bCenterInCity>0</bCenterInCity>
-            <iAIWeight>0</iAIWeight>
             <iCost>160</iCost>
             <iAdvancedStartCost>140</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>25</iConquestProb>
             <iCitiesPrereq>4</iCitiesPrereq>
-            <iTeamsPrereq>0</iTeamsPrereq>
-            <iLevelPrereq>0</iLevelPrereq>
-            <iMinLatitude>0</iMinLatitude>
             <iMaxLatitude>90</iMaxLatitude>
-            <iDefense>0</iDefense>
             <iCrime>-10</iCrime>
-            <iBombardDefense>0</iBombardDefense>
-            <iEspionageDefense>0</iEspionageDefense>
             <iHappiness>1</iHappiness>
             <iAsset>1</iAsset>
             <iPower>2</iPower>
@@ -46,15 +34,6 @@
 				<iYield>1</iYield>
 				<iYield>12</iYield>
 			</YieldChanges>
-			<YieldModifiers>
-			</YieldModifiers>
-			<PowerYieldModifiers>
-			</PowerYieldModifiers>
-			<CommerceChanges>
-				<iCommerce>0</iCommerce>
-				<iCommerce>0</iCommerce>
-				<iCommerce>0</iCommerce>
-			</CommerceChanges>
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
@@ -62,7 +41,7 @@
 			</ObsoleteSafeCommerceChanges>
             <iNumFreeBonuses>1</iNumFreeBonuses>
             <FreeBonus>BONUS_MANA_LAW</FreeBonus>
-            <FreeBonus2>BONUS_MANA_SPIRIT</FreeBonus2>
+            <FreeBonus2>BONUS_MANA_FIRE</FreeBonus2>
 			<FreeBonus3>BONUS_MANA_DEATH</FreeBonus3>
         </BuildingInfo>
         <BuildingInfo>  <!-- Arisen Housings -->
@@ -98,7 +77,6 @@
             <iAsset>1</iAsset>
             <iPower>2</iPower>
             <fVisibilityPriority>10000</fVisibilityPriority>
-            <iHealth>20</iHealth> <!-- Health-->
             <CommerceChanges>
                 <iCommerce>1</iCommerce> <!--Gold-->
                 <iCommerce>0</iCommerce> <!--Research-->
@@ -116,7 +94,6 @@
                     <iFlavor>5</iFlavor>
                 </Flavor>
             </Flavors>
-            <bNoUnhealthyPopulation>1</bNoUnhealthyPopulation>
         </BuildingInfo>
         <BuildingInfo>  <!-- Arisen Fortress -->
             <BuildingClass>BUILDINGCLASS_AQUEDUCT</BuildingClass>
@@ -339,7 +316,7 @@
 				</Flavor>
 			</Flavors>
         </BuildingInfo>
-        <BuildingInfo>		<!-- Moneychanger UB - Soul Exchange -->
+        <BuildingInfo>	<!-- Moneychanger UB - Soul Exchange -->
 			<BuildingClass>BUILDINGCLASS_MONEYCHANGER</BuildingClass>
 			<Type>BUILDING_NAMKO_MONEYCHANGER</Type>
 			<Description>TXT_KEY_BUILDING_NAMKO_MONEYCHANGER</Description>
@@ -384,7 +361,7 @@
 				</Flavor>
 			</Flavors>
 		</BuildingInfo>
-        <BuildingInfo>		<!-- Library UB - Eternal Halls -->
+        <BuildingInfo>	<!-- Library UB - Eternal Halls -->
 			<BuildingClass>BUILDINGCLASS_LIBRARY</BuildingClass>
 			<Type>BUILDING_NAMKO_LIBRARY</Type>
 			<Description>TXT_KEY_BUILDING_NAMKO_LIBRARY</Description>
@@ -426,6 +403,42 @@
                 <Flavor>
 					<FlavorType>FLAVOR_GROWTH</FlavorType>
 					<iFlavor>8</iFlavor>
+				</Flavor>
+			</Flavors>
+		</BuildingInfo>
+        <BuildingInfo>	<!-- Deathless Lighthouse -->
+			<BuildingClass>BUILDINGCLASS_LIGHTHOUSE</BuildingClass>
+			<Type>BUILDING_NAMKO_LIGHTHOUSE</Type>
+			<Description>TXT_KEY_BUILDING_NAMKO_LIGHTHOUSE</Description>
+			<Civilopedia>TXT_KEY_BUILDING_NAMKO_LIGHTHOUSE_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_GROWTH</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_NAMKO_LIGHTHOUSE</ArtDefineTag>
+			<PrereqTech>TECH_SAILING</PrereqTech>
+			<ProductionTraits>
+				<ProductionTrait>
+					<ProductionTraitType>TRAIT_ORGANIZED</ProductionTraitType>
+					<iProductionTrait>100</iProductionTrait>
+				</ProductionTrait>
+			</ProductionTraits>
+			<bWater>1</bWater>
+			<iAIWeight>15</iAIWeight>
+			<iCost>160</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iMinAreaSize>10</iMinAreaSize>
+			<iConquestProb>25</iConquestProb>
+			<iTradeRoutes>1</iTradeRoutes>
+			<iAsset>3</iAsset>
+			<fVisibilityPriority>10</fVisibilityPriority>
+			<SeaPlotYieldChanges>
+				<iYield>0</iYield>
+                <iYield>0</iYield>
+                <iYield>1</iYield>
+			</SeaPlotYieldChanges>
+			<ConstructSound>AS2D_BUILD_LIGHTHOUSE</ConstructSound>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
 		</BuildingInfo>

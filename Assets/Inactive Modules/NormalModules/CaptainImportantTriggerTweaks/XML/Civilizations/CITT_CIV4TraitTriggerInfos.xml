@@ -324,12 +324,60 @@
 			<TraitHookType>TRAITHOOK_GP_BORN</TraitHookType>
 			<PrereqUnitClassType>UNITCLASS_COMMANDER</PrereqUnitClassType>
 		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Construct           Harbor	                       			Trader -->
+			<Type>TRAITTRIGGER_CONSTRUCT_HARBOR_TRADER_IMPORTANTTWEAKS</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_TRADER</TraitType>
+					<iModifier>30</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_PERSONALITY</TraitClassType>
+			<TraitHookType>TRAITHOOK_CONSTRUCT_BUILDING</TraitHookType>
+			<PrereqBuildingClassType>BUILDINGCLASS_HARBOR</PrereqBuildingClassType>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Construct           Lighthouse	                       			Trader -->
+			<Type>TRAITTRIGGER_CONSTRUCT_LIGHTHOUSE_TRADER_IMPORTANTTWEAKS</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_TRADER</TraitType>
+					<iModifier>30</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_PERSONALITY</TraitClassType>
+			<TraitHookType>TRAITHOOK_CONSTRUCT_BUILDING</TraitHookType>
+			<PrereqBuildingClassType>BUILDINGCLASS_LIGHTHOUSE</PrereqBuildingClassType>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Construct           Inn	                       			Trader -->
+			<Type>TRAITTRIGGER_CONSTRUCT_INN_TRADER_IMPORTANTTWEAKS</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_TRADER</TraitType>
+					<iModifier>50</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_PERSONALITY</TraitClassType>
+			<TraitHookType>TRAITHOOK_CONSTRUCT_BUILDING</TraitHookType>
+			<PrereqBuildingClassType>BUILDINGCLASS_INN</PrereqBuildingClassType>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Construct           Tavern	                       			Trader -->
+			<Type>TRAITTRIGGER_CONSTRUCT_JOUSTING_TILT_IMPORTANTTWEAKS</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_TRADER</TraitType>
+					<iModifier>100</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_PERSONALITY</TraitClassType>
+			<TraitHookType>TRAITHOOK_CONSTRUCT_BUILDING</TraitHookType>
+			<PrereqBuildingClassType>BUILDINGCLASS_TAVERN</PrereqBuildingClassType>
+		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Connect             Ale                                   	Trader -->
 			<Type>TRAITTRIGGER_CONNECT_ALE_IMPORTANTTWEAKS</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_TRADER</TraitType>
-					<iModifier>40</iModifier>
+					<iModifier>55</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_PERSONALITY</TraitClassType>		
@@ -341,7 +389,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_TRADER</TraitType>
-					<iModifier>40</iModifier>
+					<iModifier>55</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_PERSONALITY</TraitClassType>		
@@ -353,7 +401,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_TRADER</TraitType>
-					<iModifier>40</iModifier>
+					<iModifier>55</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_PERSONALITY</TraitClassType>		
@@ -365,7 +413,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_TRADER</TraitType>
-					<iModifier>40</iModifier>
+					<iModifier>55</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_PERSONALITY</TraitClassType>		
@@ -377,7 +425,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_TRADER</TraitType>
-					<iModifier>40</iModifier>
+					<iModifier>55</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_PERSONALITY</TraitClassType>		
@@ -389,7 +437,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_TRADER</TraitType>
-					<iModifier>40</iModifier>
+					<iModifier>55</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_PERSONALITY</TraitClassType>		
@@ -401,7 +449,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_TRADER</TraitType>
-					<iModifier>40</iModifier>
+					<iModifier>55</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_PERSONALITY</TraitClassType>		
@@ -413,7 +461,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_TRADER</TraitType>
-					<iModifier>40</iModifier>
+					<iModifier>55</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_PERSONALITY</TraitClassType>		
@@ -425,7 +473,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_TRADER</TraitType>
-					<iModifier>40</iModifier>
+					<iModifier>55</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_PERSONALITY</TraitClassType>		
@@ -437,7 +485,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_TRADER</TraitType>
-					<iModifier>40</iModifier>
+					<iModifier>55</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_PERSONALITY</TraitClassType>		
@@ -449,7 +497,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_TRADER</TraitType>
-					<iModifier>40</iModifier>
+					<iModifier>55</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_PERSONALITY</TraitClassType>		
@@ -461,7 +509,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_TRADER</TraitType>
-					<iModifier>40</iModifier>
+					<iModifier>55</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_PERSONALITY</TraitClassType>		
@@ -473,7 +521,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_TRADER</TraitType>
-					<iModifier>40</iModifier>
+					<iModifier>55</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_PERSONALITY</TraitClassType>		
@@ -485,7 +533,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_TRADER</TraitType>
-					<iModifier>40</iModifier>
+					<iModifier>55</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_PERSONALITY</TraitClassType>		
@@ -497,7 +545,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_TRADER</TraitType>
-					<iModifier>40</iModifier>
+					<iModifier>55</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_PERSONALITY</TraitClassType>		
@@ -509,7 +557,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_TRADER</TraitType>
-					<iModifier>40</iModifier>
+					<iModifier>55</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_PERSONALITY</TraitClassType>		
@@ -521,7 +569,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_TRADER</TraitType>
-					<iModifier>40</iModifier>
+					<iModifier>55</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_PERSONALITY</TraitClassType>		
@@ -533,7 +581,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_TRADER</TraitType>
-					<iModifier>40</iModifier>
+					<iModifier>55</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_PERSONALITY</TraitClassType>		
@@ -545,12 +593,36 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_TRADER</TraitType>
-					<iModifier>40</iModifier>
+					<iModifier>55</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_PERSONALITY</TraitClassType>		
 			<TraitHookType>TRAITHOOK_CONNECT_RESOURCE</TraitHookType>
 			<PrereqBonusType>BONUS_WINE</PrereqBonusType>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Connect             Fine Clothes                             Trader -->
+			<Type>TRAITTRIGGER_CONNECT_FINE_CLOTHES_IMPORTANTTWEAKS</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_TRADER</TraitType>
+					<iModifier>55</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_PERSONALITY</TraitClassType>		
+			<TraitHookType>TRAITHOOK_CONNECT_RESOURCE</TraitHookType>
+			<PrereqBonusType>BONUS_FINE_CLOTHES</PrereqBonusType>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Connect             Jewels                                   	Trader -->
+			<Type>TRAITTRIGGER_CONNECT_JEWELS_IMPORTANTTWEAKS</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_TRADER</TraitType>
+					<iModifier>55</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_PERSONALITY</TraitClassType>		
+			<TraitHookType>TRAITHOOK_CONNECT_RESOURCE</TraitHookType>
+			<PrereqBonusType>BONUS_JEWELS</PrereqBonusType>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Trade               Open Borders                                Trader -->
 			<Type>TRAITTRIGGER_TRADE_ANYTHING_IMPORTANT</Type>
@@ -841,6 +913,18 @@
 			<TraitHookType>TRAITHOOK_CONSTRUCT_BUILDING</TraitHookType>
 			<PrereqBuildingClassType>BUILDINGCLASS_MAGE_GUILD</PrereqBuildingClassType>
 		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Cast                Anything	                                Arcane -->
+			<Type>TRAITTRIGGER_CAST_ANYTHING_IMPORTANT</Type>
+			<bForceOverwrite>1</bForceOverwrite>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_ARCANE</TraitType>
+					<iModifier>0</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_PERSONALITY</TraitClassType>			
+			<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
+		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Construct          Carnival                                  Creative -->
 			<Type>TRAITTRIGGER_CONSTRUCT_CARNIVAL_IMPORTANTTWEAKS</Type>
 			<CounterChanges>
@@ -1105,6 +1189,17 @@
 				<TraitHookType>TRAITHOOK_UNIT_GAIN_PROMOTION</TraitHookType>
 			<PrereqUnitCombatType>UNITCOMBAT_MELEE</PrereqUnitCombatType>
 			<PrereqPromotionType>PROMOTION_AMPHIBIOUS</PrereqPromotionType>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Pillage             Anything                                    Raiders -->
+			<Type>TRAITTRIGGER_PILLAGE_IMPORTANT</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_RAIDERS</TraitType>
+					<iModifier>35</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_PERSONALITY</TraitClassType>
+			<TraitHookType>TRAITHOOK_PILLAGE</TraitHookType>
 		</TraitTriggerInfo>
 	</TraitTriggerInfos>
 </Civ4TraitTriggerInfos>

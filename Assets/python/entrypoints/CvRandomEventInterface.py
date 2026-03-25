@@ -7452,7 +7452,7 @@ def doMary2(argsList):
 	pPlayer        = gc.getPlayer(kTriggeredData.ePlayer)
 	pCity          = pPlayer.getCity(kTriggeredData.iCityId)
 	newUnit        = pPlayer.initUnit(gc.getInfoTypeForString('UNIT_MARY'), pCity.getX(), pCity.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-	newUnit.setName(CyTranslator().getText("TXT_KEY_UNIT_DISEASED_CORPSE",()))
+	#newUnit.setName(CyTranslator().getText("TXT_KEY_UNIT_DISEASED_CORPSE",()))
 
 def helpMary2(argsList):
 	iUnit          = getInfoType('UNIT_MARY')
@@ -7930,6 +7930,7 @@ def doAngelicProcession2(argsList):
 	iEvent			= argsList[0]
 	kTriggeredData	= argsList[1]
 	pPlot			= gc.getMap().plot(kTriggeredData.iPlotX, kTriggeredData.iPlotY)
+	pPlot.setPlotEffectType(gc.getInfoTypeForString("PLOT_EFFECT_BLESSED_LANDS"))
 	szLandmarkText	= "TEXT_KEY_LANDMARK_ANGELIC_PROCESSION_2"										# Use this if addLandmark will use icons from xml / no icons
 #	szLandmarkText	= ""																			# Use this if addLandmark will use icons from python
 #	szText			= localText.getText("TEXT_KEY_LANDMARK_ANGELIC_PROCESSION_2", ())				# Names used for icons from getSymbolID: COMMERCE_CHAR, FOOD_CHAR, PRODUCTION_CHAR

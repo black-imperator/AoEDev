@@ -1,0 +1,44 @@
+;Name - no need to explain
+;note: one line
+[name]
+Exciting Features
+;
+;
+;Version - version of module
+;Note: it have to be number, so only numberic characters and none or one period
+;note: one line
+[version]
+0.2
+;
+;
+;RifE version - version of RifE for which is this module tested, checked, developed, etc
+;Note: it have to be number, so only numberic characters and none or one period
+;note: one line
+[rifeversion]
+383
+;
+;
+;
+[compatible]
+;Author - you
+;note: one line
+[author]
+pheonix89
+;
+;
+;Short description - text showed in contect menu
+;note: one line
+[shortdesc]
+Buffs some low power unique features
+;
+;
+;Description - text showed in message box
+;note: can be multiline
+[desc]
+
+0.2
+Added yield on mana tech to mana node style improvements.
+Added Foxford Town.
+
+0.1
+Base file buildings.

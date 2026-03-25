@@ -230,7 +230,7 @@ public:
 /**								---- Start Original Code ----									**
 	bool canConstruct(BuildingTypes eBuilding, bool bContinue = false, bool bTestVisible = false, bool bIgnoreCost = false) const;	// Exposed to Python
 /**								----  End Original Code  ----									**/
-	bool canConstruct(BuildingTypes eBuilding, bool bContinue = false, bool bTestVisible = false, bool bIgnoreCost = false, bool bIgnoreTech = false) const;	// Exposed to Python
+	bool canConstruct(BuildingTypes eBuilding, bool bContinue = false, bool bTestVisible = false, bool bIgnoreCost = false, bool bIgnoreTech = false, bool bStillValid=false) const;	// Exposed to Python
 /*************************************************************************************************/
 /**	AITweak									END													**/
 /*************************************************************************************************/
@@ -1318,6 +1318,8 @@ public:
 	bool getDisableHuman() const;
 	bool isIgnoreFood() const;
 	void setIgnoreFood(bool bNewValue);
+	bool isIgnoreProduction() const;
+	void setIgnoreProduction(bool bNewValue);
 	bool isIgnoreHealth() const;
 	void setIgnoreHealth(bool bNewValue);
 	bool isIgnoreHappy() const;
@@ -1902,6 +1904,7 @@ protected:
 /**	Tweak									END													**/
 /*************************************************************************************************/
 	bool m_bIgnoreFood;
+	bool m_bIgnoreProduction;
 	bool m_bIgnoreHealth;
 	bool m_bIgnoreHappy;
 	bool m_bInsane;

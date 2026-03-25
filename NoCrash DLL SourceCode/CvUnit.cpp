@@ -18284,11 +18284,25 @@ void CvUnit::changeAuraBonuses(bool bApply, std::list<AuraBonuses> cbAuraBonus)
 //Aura black_imp 24/09/15
 void CvUnit::applyAuraBonus(AuraBonuses cbTemp, CvUnit* pCheckUnit, bool bNewValue, int iDistance)
 {
+	bool requireunitcombat = false;
 	if (cbTemp.promotion != NO_PROMOTION)
 	{
-
-		pCheckUnit->setHasPromotion(cbTemp.promotion, bNewValue, false, false);
-
+		for (int i = 0; i < GC.getNumUnitCombatInfos(); i++)
+		{
+			if (GC.getPromotionInfo(cbTemp.promotion).getUnitCombat(i))
+			{
+				requireunitcombat = true;
+				if (isUnitCombat((UnitCombatTypes)i))
+				{
+					pCheckUnit->setHasPromotion(cbTemp.promotion, bNewValue, false, false);
+					return;
+				}
+			}
+		}
+		if (!requireunitcombat) 
+		{
+			pCheckUnit->setHasPromotion(cbTemp.promotion, bNewValue, false, false);
+		}
 	}
 }
 void CvUnit::applyAuraBonusEffects(bool bActivate, bool bAlterFullMap, bool bCleanUp)
@@ -22389,32 +22403,18 @@ void CvUnit::setHasPromotion(PromotionTypes eIndex, bool bNewValue, bool bSupres
 					}
 				}
 			}
-		}
-		setNewName(kPromotion.getNewName(), bNewValue);
-		if (!bNewValue)
-		{
-			if (isPermanentSpellPromotion(eIndex))
+			if (kPromotion.getPromotionClassOverwrite() != NO_PROMOTIONCLASS)
 			{
-				setPermanentSpellPromotion(eIndex, false);
-			}
-			if (kPromotion.getNumPromotionDegradesTo() > 0 && !bSupressEffects)
-			{
-				for (iI = 0; iI < kPromotion.getNumPromotionDegradesTo(); iI++)
+				for (iI = 0; iI < GC.getNumPromotionInfos(); iI++)
 				{
-					setHasPromotion(kPromotion.getPromotionDegradesTo(iI), true);
-					wchar szBuffer[1024];
-					if (kPromotion.getPromotionDegradesTo(iI) == eIndex)
+					if (isHasPromotion((PromotionTypes)iI) && GC.getPromotionInfo((PromotionTypes)iI).getPromotionClass() == kPromotion.getPromotionClassOverwrite())
 					{
-						swprintf(szBuffer, gDLL->getText("TXT_KEY_MESSAGE_PROMOTION_SELF_DEGRADE", kPromotion.getTextKeyWide(), getNameKey()).GetCString());
+						setHasPromotion((PromotionTypes)iI, false);
 					}
-					else
-					{
-						swprintf(szBuffer, gDLL->getText("TXT_KEY_MESSAGE_PROMOTION_DEGRADED", kPromotion.getTextKeyWide(), getNameKey(), GC.getPromotionInfo(kPromotion.getPromotionDegradesTo(iI)).getTextKeyWide()).GetCString());
-					}
-					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, -1, szBuffer, NULL, MESSAGE_TYPE_INFO, getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
 				}
 			}
 		}
+		setNewName(kPromotion.getNewName(), bNewValue);
 	//	if (kPromotion.getNumInvisibleTypes() > 0)
 	//	{
 	//		for (iI = 0; iI < kPromotion.getNumInvisibleTypes(); iI++)
@@ -22522,7 +22522,7 @@ void CvUnit::setHasPromotion(PromotionTypes eIndex, bool bNewValue, bool bSupres
 		changeCultureSacrifice(kPromotion.getCultureSacrifice() * iChange);
 		changeExtraCulturePerPop(kPromotion.getExtraCulturePerPop() * iChange);
 		changeXPTranserRate(kPromotion.getXPTranserRate() * iChange);
-		changeCastingLimit((kPromotion.isTwincast()) ? iChange : 0);
+		changeCastingLimit((kPromotion.getMulticast()) *iChange);
 		applyCityBonusEffects(false, true);
 		if (kPromotion.getNumCityBonuses() > 0)
 		{
@@ -22619,7 +22619,7 @@ void CvUnit::setHasPromotion(PromotionTypes eIndex, bool bNewValue, bool bSupres
 		changeSpellDamageModify(kPromotion.getSpellDamageModify() * iChange);
 		changeTargetWeakestUnit((kPromotion.isTargetWeakestUnit()) ? iChange : 0);
 		changeTargetWeakestUnitCounter((kPromotion.isTargetWeakestUnitCounter()) ? iChange : 0);
-		changeTwincast((kPromotion.isTwincast()) ? iChange : 0);
+		changeTwincast((kPromotion.getMulticast()) ? iChange : 0);
 		changeWaterWalking((kPromotion.isWaterWalking()) ? iChange : 0);
 		changeWorkRateModify(kPromotion.getWorkRateModify() * iChange);
 		changeWorkRateModifier(kPromotion.getWorkRateModifier() * iChange);
@@ -22671,7 +22671,10 @@ void CvUnit::setHasPromotion(PromotionTypes eIndex, bool bNewValue, bool bSupres
 			}
 			else
 			{
-				setRace(NO_PROMOTION);
+				if (getRace() == eIndex)
+				{
+					setRace(NO_PROMOTION);
+				}
 			}
 		}
 		if (kPromotion.isGraphicalAddOnPromotion())
@@ -22852,6 +22855,31 @@ void CvUnit::setHasPromotion(PromotionTypes eIndex, bool bNewValue, bool bSupres
 /*************************************************************************************************/
 
 	}
+	if (!bNewValue)
+	{
+		if (isPermanentSpellPromotion(eIndex))
+		{
+			setPermanentSpellPromotion(eIndex, false);
+		}
+		if (kPromotion.getNumPromotionDegradesTo() > 0 && !bSupressEffects)
+		{
+			for (iI = 0; iI < kPromotion.getNumPromotionDegradesTo(); iI++)
+			{
+				setHasPromotion(kPromotion.getPromotionDegradesTo(iI), true);
+				wchar szBuffer[1024];
+				if (kPromotion.getPromotionDegradesTo(iI) == eIndex)
+				{
+					swprintf(szBuffer, gDLL->getText("TXT_KEY_MESSAGE_PROMOTION_SELF_DEGRADE", kPromotion.getTextKeyWide(), getNameKey()).GetCString());
+				}
+				else
+				{
+					swprintf(szBuffer, gDLL->getText("TXT_KEY_MESSAGE_PROMOTION_DEGRADED", kPromotion.getTextKeyWide(), getNameKey(), GC.getPromotionInfo(kPromotion.getPromotionDegradesTo(iI)).getTextKeyWide()).GetCString());
+				}
+				gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, -1, szBuffer, NULL, MESSAGE_TYPE_INFO, getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
+			}
+		}
+	}
+
 /*************************************************************************************************/
 /**	AutoBots								07/12/09								Xienwolf	**/
 /**																								**/
@@ -25295,7 +25323,7 @@ void CvUnit::cast(int spell,CvPlot* pTargetPlot)
 /**						Allows Twincast to cast a seperate spell, and stack						**/
 /*************************************************************************************************/
 /**								---- Start Original Code ----									**
-		if (isTwincast())
+		if (getMulticast())
 		{
 			iUnitNum *= 2;
 		}
@@ -25740,16 +25768,16 @@ void CvUnit::castAddPromotion(int spell, CvPlot* pTargetPlot)
 							int iBestUnitCounter = -1;
 							CvUnit* pBestUnit = NULL;
 							int iNumUnitsHit = 0;
-
+							int iLoop = 0;
 							bUnitHit = new bool[iUnitsOnPlot];
 
 							for (int k = 0; k < iUnitsOnPlot; k++)
 							{
 								bUnitHit[k] = false;
 							}
-
-							for (int iI = 0; iI < std::min(iUnitsOnPlot, iNumTargets); iI++)
+							while (iNumUnitsHit < iNumTargets && iLoop < 10)
 							{
+								
 								pUnitNode = pLoopPlot->headUnitNode();
 								int iCounter = -1;
 								iBestValue = 0;
@@ -25777,8 +25805,7 @@ void CvUnit::castAddPromotion(int spell, CvPlot* pTargetPlot)
 										{
 											if (!bUnitHit[iCounter])
 											{
-												iValue = getAddPromotionSpellDefenderValue(pLoopUnit, pLoopPlot, ePromotion1,true);
-
+												iValue = getAddPromotionSpellDefenderValue(pLoopUnit, pLoopPlot, ePromotion1, true);
 												if (iValue > iBestValue)
 												{
 													iBestValue = iValue;
@@ -25792,7 +25819,6 @@ void CvUnit::castAddPromotion(int spell, CvPlot* pTargetPlot)
 											if (!bUnitHit[iCounter])
 											{
 												iValue = getAddPromotionSpellDefenderValue(pLoopUnit, pLoopPlot, ePromotion1, false);
-
 												if (iValue > iBestValue)
 												{
 													iBestValue = iValue;
@@ -25819,6 +25845,7 @@ void CvUnit::castAddPromotion(int spell, CvPlot* pTargetPlot)
 												{
 													pBestUnit->setHasPromotion(ePromotion1, true);
 													bUnitHit[iBestUnitCounter] = true;
+													iNumUnitsHit = iNumUnitsHit + 1;
 													if (iDuration != -1)
 													{
 														pBestUnit->setPromotionDuration(ePromotion1, iDuration);
@@ -25836,6 +25863,7 @@ void CvUnit::castAddPromotion(int spell, CvPlot* pTargetPlot)
 										}
 									}
 								}
+								iLoop++;
 							}
 							SAFE_DELETE_ARRAY(bUnitHit);
 						}
@@ -27369,7 +27397,7 @@ void CvUnit::changeTargetWeakestUnitCounter(int iNewValue)
 /**						Allows Twincast to cast a seperate spell, and stack						**/
 /*************************************************************************************************/
 /**								---- Start Original Code ----									**
-bool CvUnit::isTwincast() const
+bool CvUnit::getMulticast() const
 {
 	return m_iTwincast == 0 ? false : true;
 }
@@ -29225,6 +29253,13 @@ void CvUnit::updateAffinity(bool bKill)
 					changeBaseCombatStrDefense((int)(fValue * fOldApplications));
 					changeBaseCombatStrDefense((int)(fValue * fApplications));
 				}
+
+				fValue = kAffinity.getCityDefenseMod();
+				if (fValue != 0.00f)
+				{
+					changeExtraCityDefensePercent((int)(fValue * fOldApplications));
+					changeExtraCityDefensePercent((int)(fValue * fApplications));
+				}
 				fValue = kAffinity.getMovement();
 				if (fValue != 0.00f)
 				{
@@ -29327,6 +29362,12 @@ void CvUnit::updateAffinity(bool bKill)
 					changeExtraCollateralDamage((int)(fValue * fOldApplications));
 					changeExtraCollateralDamage((int)(fValue * fApplications));
 				}
+				fValue = kAffinity.getCollateralProtection();
+				if (fValue != 0.00f)
+				{
+					changeCollateralDamageProtection((int)(fValue * fOldApplications));
+					changeCollateralDamageProtection((int)(fValue * fApplications));
+				}
 				fValue = kAffinity.getCollateralLimit();
 				if (fValue != 0.00f)
 				{
@@ -29408,6 +29449,16 @@ void CvUnit::updateAffinity(bool bKill)
 						changeDamageTypeResist((DamageTypes)iI, ((int)(fValue * fOldApplications)));
 						changeDamageTypeResist((DamageTypes)iI, ((int)(fValue * fApplications)));
 					}
+				}
+				for (iI = 0; iI < GC.getNumTerrainInfos(); iI++)
+				{
+					fValue = kAffinity.getTerrainDefenseMods(iI);
+					if (fValue != 0.0f)
+					{
+						changeExtraTerrainDefensePercent((TerrainTypes)iI, ((int)(fValue * fOldApplications)));
+						changeExtraTerrainDefensePercent((TerrainTypes)iI, ((int)(fValue * fApplications)));
+					}
+
 				}
 				int iNumAffinityPromotions = kAffinity.getNumAffinityPromotions();
 				if (iNumAffinityPromotions > 0)

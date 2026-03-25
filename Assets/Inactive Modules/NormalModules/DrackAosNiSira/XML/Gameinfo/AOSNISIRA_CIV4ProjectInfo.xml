@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Soren Johnson (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Project -->
+<Civ4ProjectInfo xmlns="x-schema:AOSNISIRA_CIV4GameInfoSchema.xml">
+	<ProjectInfos>
+		<ProjectInfo>	<!-- Invite House Fane -->
+			<Type>PROJECT_FAIRY_INVITE_HOUSE_FANE</Type>
+			<Description>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_FANE</Description>
+			<Civilopedia>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_FANE_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_FANE_STRATEGY</Strategy>
+			<Help>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_FANE_HELP</Help>
+			<TechPrereq>TECH_KNOWLEDGE_OF_THE_ETHER</TechPrereq>
+			<iCost>600</iCost>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Ritual\HouseFane.dds</Button>
+			<PrereqCivilizations>
+				<PrereqCivilization>CIVILIZATION_COURTOFFALYN</PrereqCivilization>
+				<PrereqCivilization>CIVILIZATION_COURTOFBEY</PrereqCivilization>
+			</PrereqCivilizations>
+			<iAIWeight>1000</iAIWeight>
+		</ProjectInfo>
+		<ProjectInfo>	<!-- Invite House Dawar -->
+			<Type>PROJECT_FAIRY_INVITE_HOUSE_DAWAR</Type>
+			<Description>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_DAWAR</Description>
+			<Civilopedia>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_DAWAR_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_DAWAR_STRATEGY</Strategy>
+			<Help>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_DAWAR_HELP</Help>
+			<TechPrereq>TECH_WRITING</TechPrereq>
+			<iCost>600</iCost>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Ritual\HouseDawar.dds</Button>
+			<PrereqCivilizations>
+				<PrereqCivilization>CIVILIZATION_COURTOFFALYN</PrereqCivilization>
+				<PrereqCivilization>CIVILIZATION_COURTOFBEY</PrereqCivilization>
+			</PrereqCivilizations>
+			<iAIWeight>1000</iAIWeight>
+		</ProjectInfo>
+		<ProjectInfo>	<!-- Invite House Pesna -->
+			<Type>PROJECT_FAIRY_INVITE_HOUSE_PESNA</Type>
+			<Description>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_PESNA</Description>
+			<Civilopedia>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_PESNA_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_PESNA_STRATEGY</Strategy>
+			<Help>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_PESNA_HELP</Help>
+			<TechPrereq>TECH_TRADE</TechPrereq>
+			<iCost>600</iCost>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Ritual\HousePesna.dds</Button>
+			<PrereqCivilizations>
+				<PrereqCivilization>CIVILIZATION_COURTOFFALYN</PrereqCivilization>
+				<PrereqCivilization>CIVILIZATION_COURTOFBEY</PrereqCivilization>
+			</PrereqCivilizations>
+			<iAIWeight>1000</iAIWeight>
+		</ProjectInfo>
+		<ProjectInfo>	<!-- Invite House Rakiri -->
+			<Type>PROJECT_FAIRY_INVITE_HOUSE_RAKIRI</Type>
+			<Description>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_RAKIRI</Description>
+			<Civilopedia>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_RAKIRI_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_RAKIRI_STRATEGY</Strategy>
+			<Help>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_RAKIRI_HELP</Help>
+			<TechPrereq>TECH_WARFARE</TechPrereq>
+			<iCost>600</iCost>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Ritual\HouseRakiri.dds</Button>
+			<PrereqCivilizations>
+				<PrereqCivilization>CIVILIZATION_COURTOFFALYN</PrereqCivilization>
+				<PrereqCivilization>CIVILIZATION_COURTOFBEY</PrereqCivilization>
+			</PrereqCivilizations>
+			<iAIWeight>1000</iAIWeight>
+		</ProjectInfo>
+		<ProjectInfo>	<!-- Invite House Wai -->
+			<Type>PROJECT_FAIRY_INVITE_HOUSE_WAI</Type>
+			<Description>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_WAI</Description>
+			<Civilopedia>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_WAI_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_WAI_STRATEGY</Strategy>
+			<Help>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_WAI_HELP</Help>
+			<TechPrereq>TECH_HORSEBACK_RIDING</TechPrereq>
+			<iCost>600</iCost>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Ritual\HouseWai.dds</Button>
+			<PrereqCivilizations>
+				<PrereqCivilization>CIVILIZATION_COURTOFFALYN</PrereqCivilization>
+				<PrereqCivilization>CIVILIZATION_COURTOFBEY</PrereqCivilization>
+			</PrereqCivilizations>
+			<iAIWeight>1000</iAIWeight>
+		</ProjectInfo>
+		<ProjectInfo>	<!-- Invite House Nairu -->
+			<Type>PROJECT_FAIRY_INVITE_HOUSE_NAIRU</Type>
+			<Description>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_NAIRU</Description>
+			<Civilopedia>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_NAIRU_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_NAIRU_STRATEGY</Strategy>
+			<Help>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_NAIRU_HELP</Help>
+			<TechPrereq>TECH_HUNTING</TechPrereq>
+			<iCost>600</iCost>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Ritual\HouseNairu.dds</Button>
+			<PrereqCivilizations>
+				<PrereqCivilization>CIVILIZATION_COURTOFFALYN</PrereqCivilization>
+				<PrereqCivilization>CIVILIZATION_COURTOFBEY</PrereqCivilization>
+			</PrereqCivilizations>
+			<iAIWeight>1000</iAIWeight>
+		</ProjectInfo>
+	</ProjectInfos>
+</Civ4ProjectInfo>

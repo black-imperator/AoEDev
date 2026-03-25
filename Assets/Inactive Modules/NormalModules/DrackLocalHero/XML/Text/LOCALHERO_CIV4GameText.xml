@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Risna -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_SUMMON_LOCAL_HERO</Tag>
+        <English>Summon Local Hero</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_HOMESICKNESS</Tag>
+        <English>Homesickness</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_LOCAL_HERO_HELP</Tag>
+        <English>[ICON_BULLET] Becomes [LINK=PROMOTION_HOMESICKNESS]homesick[\LINK] when outside of home territory</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_LOCAL_HERO</Tag>
+        <English>Local Hero</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_SUMMON_LOCAL_HERO_PEDIA</Tag>
+        <English>Every community has their local hero. A Farmer's boy who raised their hoe in defense of his family, or a local city guard that rose far above his limitations while defending his city. Especially in the dawning days of a civilization, such local heroes are neccessary to prevent the dangers of Erebus to burn down the young settling of culture.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_SUMMON_LOCAL_HERO_STRATEGY</Tag>
+        <English>The local Hero is a strong early game unit fitting for your people. It helps with defending against early attacks. This Ritual can only be done once. The Local Hero can only be used in own territory and will have the [LINK=PROMOTION_LOCAL_HERO]Local Hero[\LINK] Promotion</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_SUMMON_LOCAL_HERO_HELP</Tag>
+        <English>[ICON_BULLET] Summons an early strong Unit</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_SUMMON_LOCAL_HERO_POPUP</Tag>
+        <English>A local Hero has risen to protect the people from the dangers of Erebus! Praise the local Hero and let the enemies of our people fear their wrath!</English>
+    </TEXT>
+</Civ4GameText>

@@ -476,7 +476,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_DIVINE_ESSENCE</PrereqTech>
 			<iCost>240</iCost>
-			<iMoves>1</iMoves>
+			<iMoves>3</iMoves>
 			<iCombat>12</iCombat>
 			<iCombatDefense>7</iCombatDefense>
 			<iCultureGarrison>4</iCultureGarrison>
@@ -671,6 +671,10 @@
 					<PromotionType>PROMOTION_CHANNELING1</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_SECONDARY_ARCANE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
 			</FreePromotions>
 			<bFreeXP>1</bFreeXP>
 			<iFreePromotionPick>1</iFreePromotionPick>
@@ -718,7 +722,7 @@
 				</Flavor>
 			</Flavors>
 			<iCost>120</iCost>
-			<iMoves>1</iMoves>
+			<iMoves>2</iMoves>
 			<iCombat>3</iCombat>
 			<iCombatDefense>1</iCombatDefense>
 			<iAsset>9</iAsset>
@@ -735,6 +739,10 @@
 			<FreePromotions>
 				<FreePromotion>
 					<PromotionType>PROMOTION_AASIMAR</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_TEUHALI_KNIGHT</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 				<FreePromotion>

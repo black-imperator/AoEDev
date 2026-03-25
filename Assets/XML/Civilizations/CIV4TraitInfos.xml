@@ -579,6 +579,7 @@
 			<Type>TRAIT_ASPECT_OF_WAR_MAHON</Type>
 			<TraitClass>TRAITCLASS_PERSONALITY</TraitClass>
 			<Description>TXT_KEY_TRAIT_ASPECT_OF_WAR</Description>
+			<bGraphicalOnly>1</bGraphicalOnly>
 			<ShortDescription>TXT_KEY_TRAIT_ASPECT_OF_WAR_SHORT</ShortDescription>
 			<FreePromotions>
 				<FreePromotion>

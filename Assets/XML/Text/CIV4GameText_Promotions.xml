@@ -3495,11 +3495,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_TWINCAST_PEDIA</Tag>
-		<English>[ICON_BULLET]Can cast an extra spell each turn</English>
-		<French>[ICON_BULLET]Can cast an extra spell each turn</French>
+		<English>[ICON_BULLET]Can cast %i extra spell each turn</English>
+		<French>[ICON_BULLET]Can cast %i extra spell each turn</French>
 		<German>[ICON_BULLET]Kann jede Runde einen zusätzlichen Zauber wirken</German>
-		<Italian>[ICON_BULLET]Can cast an extra spell each turn</Italian>
-		<Spanish>[ICON_BULLET]Can cast an extra spell each turn</Spanish>
+		<Italian>[ICON_BULLET]Can cast %i extra spell each turn</Italian>
+		<Spanish>[ICON_BULLET]Can cast %i extra spell each turn</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_UNDEAD</Tag>

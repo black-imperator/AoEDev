@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Risna -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FAIRY_SPRITE</Tag>
+        <English>Sprite</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FAIRY_SPRITE_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FAIRY_SPRITE_STRATEGY</Tag>
+        <English>Sprites are early aggressive units, used to attack. The special thing about sprite is their included collateral damage and their fire damage.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FAIRY_PESNA</Tag>
+        <English>Pesna Fairy</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FAIRY_PESNA_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FAIRY_PESNA_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FANE_WARRIOR</Tag>
+        <English>Fane Warrior</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FANE_WARRIOR_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_RAKIRI_CANNON</Tag>
+        <English>Rakiri Cannon</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_RAKIRI_CANNON_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_RAKIRI_CANNON_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FAIRY_WILDFAE</Tag>
+        <English>Wildfae</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FAIRY_WILDFAE_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FAIRY_SANDFAE</Tag>
+        <English>Sandfae</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FAIRY_SANDFAE_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FAIRY_SANDFAE_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FAIRY_SHROOMFAE</Tag>
+        <English>Shroomfae</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FAIRY_SHROOMFAE_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FAIRY_SHROOMFAE_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_AOSNISIRA_UNIT_FAIRY_NIMAI</Tag>
+        <English>Nimai</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_AOSNISIRA_UNIT_FAIRY_NIMAI_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_AOSNISIRA_UNIT_FAIRY_NIMAI_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_AOSNISIRA_UNIT_FAIRY_ALIN</Tag>
+        <English>Alin Al Bey</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_AOSNISIRA_UNIT_FAIRY_ALIN_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_AOSNISIRA_UNIT_FAIRY_ALIN_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+</Civ4GameText>

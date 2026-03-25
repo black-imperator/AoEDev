@@ -1,0 +1,43 @@
+;Name - no need to explain
+;note: one line
+[name]
+Experience Building Adjustment
+;
+;
+;Version - version of module
+;Note: it have to be number, so only numberic characters and none or one period
+;note: one line
+[version]
+0.1
+;
+;
+;RifE version - version of RifE for which is this module tested, checked, developed, etc
+;Note: it have to be number, so only numberic characters and none or one period
+;note: one line
+[rifeversion]
+375
+;
+;
+;
+[compatible]
+Vcivics
+DynRel
+;Author - you
+;note: one line
+[author]
+pheonix89
+;
+;
+;Short description - text showed in contect menu
+;note: one line
+[shortdesc]
+Buildings that grant unit XP also grant training cap
+;
+;
+;Description - text showed in message box
+;note: can be multiline
+[desc]
+Buildings that grant unit XP when built also add training cap. Will match types as closely as possible and apply sanity checks.
+
+0.1
+Base file buildings.

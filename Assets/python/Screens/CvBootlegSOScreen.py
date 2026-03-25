@@ -61,10 +61,11 @@ class CvBootlegSOScreen:
 	def highlightPlot(self):
 		CyEngine().clearAreaBorderPlots(AreaBorderLayers.AREA_BORDER_LAYER_WORLD_BUILDER)
 		CyEngine().clearColoredPlots(AreaBorderLayers.AREA_BORDER_LAYER_WORLD_BUILDER)
-		if self.m_pCurrentPlot == 0: return
+		if self.m_pCurrentPlot in (0, -1): return
 		if self.m_pCurrentPlot.isNone(): return
 		iPlayer		= gc.getGame().getActivePlayer()
 		iTeam		= gc.getPlayer(iPlayer).getTeam()
+		if iTeam == -1: return
 		if not self.m_pCurrentPlot.isRevealed(iTeam, False): return
 		CyEngine().addColoredPlotAlt( self.m_iCurrentX, self.m_iCurrentY, PlotStyles.PLOT_STYLE_DOT_TARGET, AreaBorderLayers.AREA_BORDER_LAYER_WORLD_BUILDER, "COLOR_GREEN", self.alpha )
 		if self.iRadiusBSO > 0:

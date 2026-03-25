@@ -1044,14 +1044,14 @@ void CvTeam::doTurn()
 			if (getID() == ORC_TEAM)
 			{
 				changeResearchProgress((TechTypes)iI,
-					getResearchCost((TechTypes)iI) * GC.getDefineINT("BARBARIAN_FREE_TECH_PERCENT") * iCount / (iPossibleCount * GC.getGameSpeedInfo(GC.getGame().getGameSpeedType()).getResearchPercent()),
+					(getResearchCost((TechTypes)iI) * GC.getDefineINT("BARBARIAN_FREE_TECH_PERCENT") * iCount  * (GC.getGameSpeedInfo(GC.getGame().getGameSpeedType()).getResearchPercent()/100)) / iPossibleCount,
 					getLeaderID());
 			}
 			// Demons get a flat percent (per difficulty) for each team that knows; from 1% settler to 15% deity. [33] is the max turns of tech lag on standard noble.
 			else if (getID() == DEMON_TEAM)
 			{
 				changeResearchProgress(((TechTypes)iI),
-					getResearchCost((TechTypes)iI) * GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getDemonPerTurnKnownTechsPercent() * iCount / GC.getGameSpeedInfo(GC.getGame().getGameSpeedType()).getResearchPercent(),
+					getResearchCost((TechTypes)iI) * GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getDemonPerTurnKnownTechsPercent() * iCount * (GC.getGameSpeedInfo(GC.getGame().getGameSpeedType()).getResearchPercent()/100),
 					getLeaderID());
 			}
 		}

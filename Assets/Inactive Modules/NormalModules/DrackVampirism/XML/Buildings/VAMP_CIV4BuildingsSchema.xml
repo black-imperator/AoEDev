@@ -172,6 +172,7 @@
 	<ElementType name="bFixedBorders" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bGovernmentCenter" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bGoldenAge" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bFoodProduction" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bAllowsNukes" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bMapCentering" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bNoUnhappiness" content="textOnly" dt:type="boolean"/>
@@ -541,6 +542,8 @@
 	<ElementType name="bOverflowProduction" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bUnhappyProduction" content="textOnly" dt:type="boolean"/>
 	<ElementType name="iCrime" content="textOnly" dt:type="int"/>
+	<ElementType name="iExtraCrimePerUnhappy" content="textOnly" dt:type="int"/>
+	<ElementType name="iExtraCrimePerUnhealth" content="textOnly" dt:type="int"/>
 	<ElementType name="iMinCrime" content="textOnly" dt:type="int"/>
 	<ElementType name="iFreePromotionPick" content="textOnly" dt:type="int"/>
 	<ElementType name="iGlobalResistEnemyModify" content="textOnly" dt:type="int"/>
@@ -834,6 +837,7 @@
 		<element type="bFixedBorders"/>
 		<element type="bGovernmentCenter"/>
 		<element type="bGoldenAge"/>
+		<element type="bFoodProduction"/>
 		<element type="bAllowsNukes"/>
 		<element type="bMapCentering"/>
 		<element type="bNoUnhappiness"/>
@@ -962,6 +966,8 @@
 		<element type="bOverflowProduction"/>
 		<element type="bUnhappyProduction"/>
 		<element type="iCrime"/>
+		<element type="iExtraCrimePerUnhappy"/>
+		<element type="iExtraCrimePerUnhealth"/>
 		<element type="iMinCrime"/>
 		<element type="iFreePromotionPick"/>
 		<element type="iGlobalResistEnemyModify"/>
@@ -1089,6 +1095,9 @@
 	
 	<ElementType name="CityClassInfo" content="eltOnly" order="many">
 		<element type="Type"/>
+		<element type="bTypeDependency"/>
+		<element type="AndDependencyTypes"/>
+		<element type="OrDependencyTypes"/>
 		<element type="Buildings"/>
 		<element type="Units"/>
 		<element type="ShortDescription"/>

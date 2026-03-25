@@ -3476,7 +3476,7 @@ m_bSeeInvisible(false),
 /*************************************************************************************************/
 m_bTargetWeakestUnit(false),
 m_bTargetWeakestUnitCounter(false),
-m_bTwincast(false),
+m_iMulticast(0),
 m_bValidate(false),
 m_bWaterWalking(false),
 m_iAIWeight(0),
@@ -3585,6 +3585,7 @@ m_piDamageTypeResist(NULL),
 m_iPromotionClass(NO_PROMOTIONCLASS),
 m_iSpecialCargo(NO_SPECIALUNIT),
 m_iDomainCargo(NO_DOMAIN),
+m_iPromotionClassOverwrite(NO_PROMOTIONCLASS),
 
 //Magic Rework
 m_iMagicalPower(0)
@@ -4746,9 +4747,9 @@ bool CvPromotionInfo::isTargetWeakestUnitCounter() const
 	return m_bTargetWeakestUnitCounter;
 }
 
-bool CvPromotionInfo::isTwincast() const
+int CvPromotionInfo::getMulticast() const
 {
-	return m_bTwincast;
+	return m_iMulticast;
 }
 
 bool CvPromotionInfo::isValidate() const
@@ -5256,6 +5257,11 @@ bool CvPromotionInfo::isInquisition() const
 PromotionClassTypes CvPromotionInfo::getPromotionClass() const  
 {
 	return m_iPromotionClass;
+}
+
+PromotionClassTypes CvPromotionInfo::getPromotionClassOverwrite() const
+{
+	return m_iPromotionClassOverwrite;
 }
 
 SpecialUnitTypes CvPromotionInfo::getSpecialCargo() const  
@@ -6054,7 +6060,7 @@ void CvPromotionInfo::read(FDataStreamBase* stream)
 /*************************************************************************************************/
 	stream->Read(&m_bTargetWeakestUnit);
 	stream->Read(&m_bTargetWeakestUnitCounter);
-	stream->Read(&m_bTwincast);
+	stream->Read(&m_iMulticast);
 	stream->Read(&m_bValidate);
 	stream->Read(&m_bWaterWalking);
 	stream->Read(&m_iAIWeight);
@@ -6783,7 +6789,7 @@ void CvPromotionInfo::write(FDataStreamBase* stream)
 /*************************************************************************************************/
 	stream->Write(m_bTargetWeakestUnit);
 	stream->Write(m_bTargetWeakestUnitCounter);
-	stream->Write(m_bTwincast);
+	stream->Write(m_iMulticast);
 	stream->Write(m_bValidate);
 	stream->Write(m_bWaterWalking);
 	stream->Write(m_iAIWeight);
@@ -7369,40 +7375,6 @@ bool CvPromotionInfo::read(CvXMLLoadUtility* pXML)
 		}
 		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
 	}
-	//Aura black_imp 24/09/15
-	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "AuraBonuses"))
-	{
-		int iNumSibs = gDLL->getXMLIFace()->GetNumChildren(pXML->GetXML());
-		if (iNumSibs > 0)
-		{
-			m_iNumAuraBonuses = iNumSibs;
-
-			CvString szError;
-
-			//	szError.Format("having at least this many aura bonuses : %i",iNumSibs );
-			//	gDLL->logMsg("aura.log", szError);
-			if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "AuraBonus"))
-			{
-				for (int iI = 0; iI < iNumSibs; iI++)
-				{
-					AuraBonuses cbTemp;
-					pXML->GetChildXmlValByName(&(cbTemp.bFullMap), "bFullMap", false);
-					pXML->GetChildXmlValByName(&(cbTemp.bApplyEnemy), "bApplyEnemy", false);
-					pXML->GetChildXmlValByName(&(cbTemp.bApplyRival), "bApplyRival", false);
-					pXML->GetChildXmlValByName(&(cbTemp.bApplySelf), "bApplySelf", false);
-					pXML->GetChildXmlValByName(&(cbTemp.bApplyTeam), "bApplyTeam", false);
-					pXML->GetChildXmlValByName(szTextVal, "Promotion");
-
-					cbTemp.promotion = (PromotionTypes)pXML->FindInInfoClass(szTextVal);
-					pXML->GetChildXmlValByName(&(cbTemp.iBonusRange), "iBonusRange", 0);
-					m_cbAuraBonuses.push_back(cbTemp);
-					if (!gDLL->getXMLIFace()->NextSibling(pXML->GetXML()))						break;
-				}
-				gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
-			}
-		}
-		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
-	}
 
 	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"PrereqUnitTypesOnTile"))		pXML->SetStringWithChildList(&m_iNumPrereqUnitTypesOnTile, &m_aszPrereqUnitTypesOnTileforPass3);
 	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"PrereqUnitTypesNOTOnTile"))	pXML->SetStringWithChildList(&m_iNumPrereqUnitTypesNOTOnTile, &m_aszPrereqUnitTypesNOTOnTileforPass3);
@@ -7503,7 +7475,7 @@ bool CvPromotionInfo::read(CvXMLLoadUtility* pXML)
 /*************************************************************************************************/
 	pXML->GetChildXmlValByName(&m_bTargetWeakestUnit, "bTargetWeakestUnit");
 	pXML->GetChildXmlValByName(&m_bTargetWeakestUnitCounter, "bTargetWeakestUnitCounter");
-	pXML->GetChildXmlValByName(&m_bTwincast, "bTwincast");
+	pXML->GetChildXmlValByName(&m_iMulticast, "iTwincast");
 	pXML->GetChildXmlValByName(&m_bValidate, "bValidate");
 	pXML->GetChildXmlValByName(&m_bWaterWalking, "bWaterWalking");
 	pXML->GetChildXmlValByName(&m_iAIWeight, "iAIWeight");
@@ -7581,6 +7553,8 @@ bool CvPromotionInfo::read(CvXMLLoadUtility* pXML)
 	//PromotionClass
 	pXML->GetChildXmlValByName(szTextVal, "PromotionClass");
 	m_iPromotionClass = (PromotionClassTypes)GC.getInfoTypeForString(szTextVal);
+	pXML->GetChildXmlValByName(szTextVal, "OverwritePromotionClass");
+	m_iPromotionClassOverwrite = (PromotionClassTypes)GC.getInfoTypeForString(szTextVal);
 	pXML->GetChildXmlValByName(szTextVal, "SpecialCargo");
 	m_iSpecialCargo = (SpecialUnitTypes)GC.getInfoTypeForString(szTextVal);
 	pXML->GetChildXmlValByName(szTextVal, "DomainCargo");
@@ -7819,6 +7793,41 @@ bool CvPromotionInfo::readPass2(CvXMLLoadUtility* pXML)
 	pXML->SetVariableListTagPair(&m_piPrereqPromotionORs, "PrereqPromotionORs", sizeof(GC.getPromotionInfo((PromotionTypes)0)), GC.getNumPromotionInfos(), 0);
 	pXML->SetVariableListTagPair(&m_piPrereqPromotionANDs, "PrereqPromotionANDs", sizeof(GC.getPromotionInfo((PromotionTypes)0)), GC.getNumPromotionInfos(), 0);
 	*/
+	//Aura black_imp 24/09/15
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "AuraBonuses"))
+	{
+		int iNumSibs = gDLL->getXMLIFace()->GetNumChildren(pXML->GetXML());
+		if (iNumSibs > 0)
+		{
+			m_iNumAuraBonuses = iNumSibs;
+
+			CvString szError;
+
+			//	szError.Format("having at least this many aura bonuses : %i",iNumSibs );
+			//	gDLL->logMsg("aura.log", szError);
+			if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "AuraBonus"))
+			{
+				for (int iI = 0; iI < iNumSibs; iI++)
+				{
+					AuraBonuses cbTemp;
+					pXML->GetChildXmlValByName(&(cbTemp.bFullMap), "bFullMap", false);
+					pXML->GetChildXmlValByName(&(cbTemp.bApplyEnemy), "bApplyEnemy", false);
+					pXML->GetChildXmlValByName(&(cbTemp.bApplyRival), "bApplyRival", false);
+					pXML->GetChildXmlValByName(&(cbTemp.bApplySelf), "bApplySelf", false);
+					pXML->GetChildXmlValByName(&(cbTemp.bApplyTeam), "bApplyTeam", false);
+					pXML->GetChildXmlValByName(szTextVal, "Promotion");
+
+					cbTemp.promotion = (PromotionTypes)pXML->FindInInfoClass(szTextVal);
+					pXML->GetChildXmlValByName(&(cbTemp.iBonusRange), "iBonusRange", 0);
+					m_cbAuraBonuses.push_back(cbTemp);
+					if (!gDLL->getXMLIFace()->NextSibling(pXML->GetXML()))						break;
+				}
+				gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+			}
+		}
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+
 /*************************************************************************************************/
 /**												END												**/
 /*************************************************************************************************/
@@ -8065,7 +8074,7 @@ void CvPromotionInfo::copyNonDefaults(CvPromotionInfo* pClassInfo, CvXMLLoadUtil
 	if (isRemovedWhenHealed()					== false)				m_bRemovedWhenHealed				= pClassInfo->isRemovedWhenHealed();
 	if (isTargetWeakestUnit()					== false)				m_bTargetWeakestUnit				= pClassInfo->isTargetWeakestUnit();
 	if (isTargetWeakestUnitCounter()			== false)				m_bTargetWeakestUnitCounter			= pClassInfo->isTargetWeakestUnitCounter();
-	if (isTwincast()							== false)				m_bTwincast							= pClassInfo->isTwincast();
+	if (getMulticast()							== 0)				m_iMulticast							= pClassInfo->getMulticast();
 	if (isValidate()							== false)				m_bValidate							= pClassInfo->isValidate();
 	if (isWaterWalking()						== false)				m_bWaterWalking						= pClassInfo->isWaterWalking();
 	if (isCommunalProperty()					== false)				m_bCommunalProperty					= pClassInfo->isCommunalProperty();
@@ -9059,14 +9068,7 @@ void CvPromotionInfo::copyNonDefaults(CvPromotionInfo* pClassInfo, CvXMLLoadUtil
 		m_cbCityBonuses.push_back(cbTemp);
 		m_iNumCityBonuses++;
 	}
-	//Aura black_imp 24/09/15
-	for (int i = 0; i < pClassInfo->getNumAuraBonuses(); ++i)
-	{
-		AuraBonuses cbTemp;
-		cbTemp = pClassInfo->getAuraBonus(i);
-		m_cbAuraBonuses.push_back(cbTemp);
-		m_iNumAuraBonuses++;
-	}
+	
 
 	// Readpass2 stuff
 	if (getPrereqPromotion()					== NO_PROMOTION)		m_iPrereqPromotion					= pClassInfo->getPrereqPromotion();
@@ -9831,6 +9833,7 @@ void CvPromotionInfo::copyNonDefaults(CvPromotionInfo* pClassInfo, CvXMLLoadUtil
 /*************************************************************************************************/
 	//PromotionClass
 	if (getPromotionClass() == NO_PROMOTIONCLASS) m_iPromotionClass = pClassInfo->getPromotionClass();
+	if (getPromotionClassOverwrite() == NO_PROMOTIONCLASS) m_iPromotionClassOverwrite = pClassInfo->getPromotionClassOverwrite();
 	if (getSpecialCargo() == NO_SPECIALUNIT) m_iSpecialCargo = pClassInfo->getSpecialCargo();
 	if (getDomainCargo() == NO_DOMAIN) m_iDomainCargo = pClassInfo->getDomainCargo();
 
@@ -9934,7 +9937,14 @@ void CvPromotionInfo::copyNonDefaultsReadPass2(CvPromotionInfo* pClassInfo, CvXM
 		}
 		SAFE_DELETE_ARRAY(tempArray);
 	}
-
+	//Aura black_imp 24/09/15
+	for (int i = 0; i < pClassInfo->getNumAuraBonuses(); ++i)
+	{
+		AuraBonuses cbTemp;
+		cbTemp = pClassInfo->getAuraBonus(i);
+		m_cbAuraBonuses.push_back(cbTemp);
+		m_iNumAuraBonuses++;
+	}
 	if(pClassInfo->getNumPrereqPromotionANDs() > 0)
 	{
 		int iGoalSize = bOver ? pClassInfo->getNumPrereqPromotionANDs() : getNumPrereqPromotionANDs() + pClassInfo->getNumPrereqPromotionANDs();
@@ -36030,6 +36040,7 @@ m_szImage(NULL),
 //FfH: Added by Kael 08/07/2007
 m_piReligionWeightModifier(NULL),
 m_bFemale(false),
+m_bRandom(false),
 m_iAlignment(NO_ALIGNMENT),
 /*************************************************************************************************/
 /**	Lawful-Chaotic Alignments 				11/06/09								Valkrionn	**/
@@ -36760,6 +36771,10 @@ bool CvLeaderHeadInfo::isFemale() const
 {
 	return m_bFemale;
 }
+bool CvLeaderHeadInfo::isRandom() const
+{
+	return m_bRandom;
+}
 //FfH: End Add
 
 // Arrays
@@ -37067,6 +37082,7 @@ void CvLeaderHeadInfo::read(FDataStreamBase* stream)
 
 //FfH: Added by Kael 08/07/2007
 	stream->Read(&m_bFemale);
+	stream->Read(&m_bRandom);
 	stream->Read(&m_iAlignment);
 /*************************************************************************************************/
 /**	Lawful-Chaotic Alignments 				11/06/09								Valkrionn	**/
@@ -37349,6 +37365,7 @@ void CvLeaderHeadInfo::write(FDataStreamBase* stream)
 
 //FfH: Added by Kael 08/07/2007
 	stream->Write(m_bFemale);
+	stream->Write(m_bRandom);
 	stream->Write(m_iAlignment);
 /*************************************************************************************************/
 /**	Lawful-Chaotic Alignments 				11/06/09								Valkrionn	**/
@@ -37643,6 +37660,7 @@ bool CvLeaderHeadInfo::read(CvXMLLoadUtility* pXML)
 /*************************************************************************************************/
 //FfH: Added by Kael 08/07/2007
 	pXML->GetChildXmlValByName(&m_bFemale, "bFemale");
+	pXML->GetChildXmlValByName(&m_bRandom, "bRandom");
 	pXML->GetChildXmlValByName(szTextVal, "Alignment");
 	m_iAlignment = pXML->FindInInfoClass(szTextVal);
 /*************************************************************************************************/
@@ -37777,7 +37795,8 @@ void CvLeaderHeadInfo::copyNonDefaults(CvLeaderHeadInfo* pClassInfo, CvXMLLoadUt
 	CvInfoBase::copyNonDefaults(pClassInfo, pXML);
 
 	if (isFemale()										== false)			m_bFemale										= pClassInfo->isFemale();
-/*************************************************************************************************/
+	if (isRandom() == false)			m_bRandom = pClassInfo->isRandom();
+	/*************************************************************************************************/
 /**	Lawful-Chaotic Alignments 				11/06/09								Valkrionn	**/
 /**																								**/
 /**							Adds a new alignment axis to the game								**/
@@ -40793,6 +40812,7 @@ m_bAmphibian(false),
 m_bAssimilation(false),
 m_bBarbarianAlly(false),
 m_bIgnoreFood(false),
+m_bIgnoreProduction(false),
 m_bIgnoreHealth(false),
 m_bIgnoreHappy(false),
 m_bInsane(false),
@@ -41188,6 +41208,10 @@ bool CvTraitInfo::isIgnoreFood() const
 	return m_bIgnoreFood;
 }
 
+bool CvTraitInfo::isIgnoreProduction() const
+{
+	return m_bIgnoreProduction;
+}
 bool CvTraitInfo::isIgnoreHealth() const
 {
 	return m_bIgnoreHealth;
@@ -41645,6 +41669,7 @@ bool CvTraitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bAssimilation, "bAssimilation");
 	pXML->GetChildXmlValByName(&m_bBarbarianAlly, "bBarbarianAlly");
 	pXML->GetChildXmlValByName(&m_bIgnoreFood, "bIgnoreFood");
+	pXML->GetChildXmlValByName(&m_bIgnoreProduction, "bIgnoreProduction");
 	pXML->GetChildXmlValByName(&m_bIgnoreHealth, "bIgnoreHealth");
 	pXML->GetChildXmlValByName(&m_bIgnoreHappy, "bIgnoreHappy");
 	pXML->GetChildXmlValByName(&m_bInsane, "bInsane");
@@ -42186,6 +42211,7 @@ void CvTraitInfo::copyNonDefaults(CvTraitInfo* pClassInfo, CvXMLLoadUtility* pXM
 	if (isAssimilation() == false)		m_bAssimilation = pClassInfo->isAssimilation();
 	if (isBarbarianAlly() == false)		m_bBarbarianAlly = pClassInfo->isBarbarianAlly();
 	if (isIgnoreFood() == false)		m_bIgnoreFood = pClassInfo->isIgnoreFood();
+	if (isIgnoreProduction() == false)		m_bIgnoreProduction = pClassInfo->isIgnoreProduction();
 	if (isIgnoreHealth() == false)		m_bIgnoreHealth = pClassInfo->isIgnoreHealth();
 	if (isIgnoreHappy() == false)		m_bIgnoreHappy = pClassInfo->isIgnoreHappy();
 	if (isInsane() == false)		m_bInsane = pClassInfo->isInsane();
@@ -52946,6 +52972,7 @@ m_fAttackStrength(0.0f),
 m_fAttackStrengthMod(0.0f),
 m_fDefenseStrength(0.0f),
 m_fDefenseStrengthMod(0.0f),
+m_fCityDefenseMod(0.0f),
 m_fMovement(0.0f),
 m_fMovementDiscount(0.0f),
 m_fVisibility(0.0f),
@@ -52970,6 +52997,7 @@ m_fCommandRange(0.0f),
 m_fCommandLimit(0.0f),
 m_fWorkRate(0.0f),
 m_fCollateral(0.0f),
+m_fCollateralProtection(0.0f),
 m_fCollateralLimit(0.0f),
 m_fCollateralTargets(0.0f),
 m_fVictoryInfluenceModifier(0.0f),
@@ -52987,7 +53015,8 @@ m_iNumAffinityPromotions(0),
 m_piAffinityPromotions(NULL),
 
 m_pafDamageTypeCombats(NULL),
-m_pafDamageTypeResists(NULL)
+m_pafDamageTypeResists(NULL),
+m_pafTerrainDefenseMods(NULL)
 {
 }
 
@@ -52997,6 +53026,7 @@ CvAffinityInfo::~CvAffinityInfo()
 	SAFE_DELETE_ARRAY(m_piAffinityPromotions);
 	SAFE_DELETE_ARRAY(m_pafDamageTypeCombats);
 	SAFE_DELETE_ARRAY(m_pafDamageTypeResists);
+	SAFE_DELETE_ARRAY(m_pafTerrainDefenseMods);
 }
 
 bool CvAffinityInfo::isNumCitiesEffect() const							{return m_bNumCitiesEffect;}
@@ -53010,6 +53040,7 @@ float CvAffinityInfo::getAttackStrength() const							{return m_fAttackStrength;
 float CvAffinityInfo::getAttackStrengthMod() const						{return m_fAttackStrengthMod;}
 float CvAffinityInfo::getDefenseStrength() const						{return m_fDefenseStrength;}
 float CvAffinityInfo::getDefenseStrengthMod() const						{return m_fDefenseStrengthMod;}
+float CvAffinityInfo::getCityDefenseMod() const { return m_fCityDefenseMod; }
 float CvAffinityInfo::getMovement() const								{return m_fMovement;}
 float CvAffinityInfo::getMovementDiscount() const						{return m_fMovementDiscount;}
 float CvAffinityInfo::getVisibility() const								{return m_fVisibility;}
@@ -53034,6 +53065,7 @@ float CvAffinityInfo::getCommandRange() const							{return m_fCommandRange;}
 float CvAffinityInfo::getCommandLimit() const							{return m_fCommandLimit;}
 float CvAffinityInfo::getWorkRate() const								{return m_fWorkRate;}
 float CvAffinityInfo::getCollateral() const								{return m_fCollateral;}
+float CvAffinityInfo::getCollateralProtection() const { return m_fCollateralProtection; }
 float CvAffinityInfo::getCollateralLimit() const						{return m_fCollateralLimit;}
 float CvAffinityInfo::getCollateralTargets() const						{return m_fCollateralTargets;}
 float CvAffinityInfo::getVictoryInfluenceModifier() const				{return m_fVictoryInfluenceModifier;}
@@ -53052,6 +53084,7 @@ int CvAffinityInfo::getNumAffinityPromotions() const					{return m_iNumAffinityP
 
 float CvAffinityInfo::getDamageTypeCombats(int iI) const				{return m_pafDamageTypeCombats[iI];}
 float CvAffinityInfo::getDamageTypeResists(int iI) const				{return m_pafDamageTypeResists[iI];}
+float CvAffinityInfo::getTerrainDefenseMods(int iI) const { return m_pafTerrainDefenseMods[iI]; }
 
 bool CvAffinityInfo::read(CvXMLLoadUtility* pXML)
 {
@@ -53076,6 +53109,7 @@ bool CvAffinityInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_fAttackStrengthMod, "fAttackStrengthMod");
 	pXML->GetChildXmlValByName(&m_fDefenseStrength, "fDefenseStrength");
 	pXML->GetChildXmlValByName(&m_fDefenseStrengthMod, "fDefenseStrengthMod");
+	pXML->GetChildXmlValByName(&m_fCityDefenseMod, "fCityDefenseMod");
 	pXML->GetChildXmlValByName(&m_fMovement, "fMovement");
 	pXML->GetChildXmlValByName(&m_fMovementDiscount, "fMovementDiscount");
 	pXML->GetChildXmlValByName(&m_fVisibility, "fVisibility");
@@ -53100,6 +53134,7 @@ bool CvAffinityInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_fCommandLimit, "fCommandLimit");
 	pXML->GetChildXmlValByName(&m_fWorkRate, "fWorkRate");
 	pXML->GetChildXmlValByName(&m_fCollateral, "fCollateral");
+	pXML->GetChildXmlValByName(&m_fCollateralProtection, "fCollateralProtection");
 	pXML->GetChildXmlValByName(&m_fCollateralLimit, "fCollateralLimit");
 	pXML->GetChildXmlValByName(&m_fCollateralTargets, "fCollateralTargets");
 	pXML->GetChildXmlValByName(&m_fVictoryInfluenceModifier, "fVictoryInfluenceModifier");
@@ -53113,6 +53148,7 @@ bool CvAffinityInfo::read(CvXMLLoadUtility* pXML)
 
 	pXML->SetVariableListTagPair(&m_pafDamageTypeCombats, "AffinityDamageTypes", sizeof(GC.getDamageTypeInfo((DamageTypes)0)), GC.getNumDamageTypeInfos());
 	pXML->SetVariableListTagPair(&m_pafDamageTypeResists, "AffinityDamageResists", sizeof(GC.getDamageTypeInfo((DamageTypes)0)), GC.getNumDamageTypeInfos());
+	pXML->SetVariableListTagPair(&m_pafTerrainDefenseMods, "TerrainDefenseMods", sizeof(GC.getTerrainInfo((TerrainTypes)0)), GC.getNumTerrainInfos());
 
 	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "BonusTypes"))
 	{
@@ -53159,6 +53195,7 @@ void CvAffinityInfo::copyNonDefaults(CvAffinityInfo* pClassInfo, CvXMLLoadUtilit
 	if(getAttackStrengthMod()			== 0.0f)				m_fAttackStrengthMod			= pClassInfo->getAttackStrengthMod();
 	if(getDefenseStrength()				== 0.0f)				m_fDefenseStrength				= pClassInfo->getDefenseStrength();
 	if(getDefenseStrengthMod()			== 0.0f)				m_fDefenseStrengthMod			= pClassInfo->getDefenseStrengthMod();
+	if (getCityDefenseMod() == 0.0f)				m_fCityDefenseMod = pClassInfo->getCityDefenseMod();
 	if(getMovement()					== 0.0f)				m_fMovement						= pClassInfo->getMovement();
 	if(getMovementDiscount()			== 0.0f)				m_fMovementDiscount				= pClassInfo->getMovementDiscount();
 	if(getVisibility()					== 0.0f)				m_fVisibility					= pClassInfo->getVisibility();
@@ -53183,6 +53220,7 @@ void CvAffinityInfo::copyNonDefaults(CvAffinityInfo* pClassInfo, CvXMLLoadUtilit
 	if(getCommandLimit()				== 0.0f)				m_fCommandLimit					= pClassInfo->getCommandLimit();
 	if(getWorkRate()					== 0.0f)				m_fWorkRate						= pClassInfo->getWorkRate();
 	if(getCollateral()					== 0.0f)				m_fCollateral					= pClassInfo->getCollateral();
+	if (getCollateralProtection() == 0.0f)				m_fCollateralProtection = pClassInfo->getCollateralProtection();
 	if(getCollateralLimit()				== 0.0f)				m_fCollateralLimit				= pClassInfo->getCollateralLimit();
 	if(getCollateralTargets()			== 0.0f)				m_fCollateralTargets			= pClassInfo->getCollateralTargets();
 	if(getVictoryInfluenceModifier()	== 0.0f)				m_fVictoryInfluenceModifier		= pClassInfo->getVictoryInfluenceModifier();
@@ -53198,6 +53236,10 @@ void CvAffinityInfo::copyNonDefaults(CvAffinityInfo* pClassInfo, CvXMLLoadUtilit
 	{
 		if (getDamageTypeCombats(j)		== 0.0f)				m_pafDamageTypeCombats[j]		= pClassInfo->getDamageTypeCombats(j);
 		if (getDamageTypeResists(j)		== 0.0f)				m_pafDamageTypeResists[j]		= pClassInfo->getDamageTypeResists(j);
+	}
+	for (int j = 0; j < GC.getNumTerrainInfos(); j++)
+	{
+		if (getTerrainDefenseMods(j) == 0.0f)				m_pafTerrainDefenseMods[j] = pClassInfo->getTerrainDefenseMods(j);
 	}
 
 	if(pClassInfo->getNumBonusTypes() > 0)

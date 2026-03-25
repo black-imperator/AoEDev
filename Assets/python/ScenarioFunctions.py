@@ -1656,7 +1656,7 @@ class ScenarioFunctions:
 								pUnit.setHasPromotion(iHeld, False)
 				if (pPlot.getX() == 16 and pPlot.getY() == 11):
 					if not pCaster.isHasPromotion(gc.getInfoTypeForString('PROMOTION_FIRE2')):
-						pCaster.setXY(17, 11, False, True, True)
+						pCaster.setXY(17, 11, False, True, True,False)
 						self.addPopup(CyTranslator().getText("TXT_KEY_WB_GIFT_OF_KYLORIN_WARD_FIRE",()),'art/interface/popups/Dain.dds')
 					else:
 						apUnitList = PyPlayer(gc.getORC_PLAYER()).getUnitList()

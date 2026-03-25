@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Risna -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_CIV_COURTOFFALYN_DESC</Tag>
+        <English>Court of Falyn</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_COURTOFFALYN_SHORT_DESC</Tag>
+        <English>Court of Falyn</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_COURTOFFALYN_ADJECTIVE</Tag>
+        <English>Falyn</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_COURTOFFALYN_PEDIA</Tag>
+        <English>
+The Fairies live for a long time, hidden in the forests of their world. It was the Goddess Ceridwen who teleported them randomly to Erebus. The Fairies did not know, or with which magic the mighty goddess had done so, yet they were required to adapt to the harsh new environment in which they found themselves. 
+
+They formed an Eternal Court to unite all the scattered Fairies and their brethren, the Sira, under one banner and one rule. The Sira denied the invitation and retreated into their forests. The remaining fairies were not able to hold the Eternal Court together for long. Their problems were too varied and their ideas on how to solve them too different. The Eternal Court broke apart, and new Courts formed to adapt to the specific cultures and problems that the fairies faced.
+
+A strong link remained between the different Courts: The Houses. Each House represented an idea, an ideal that the fairies followed. These houses soon fought for power in the different Courts and tried to gain their foot into the High Houses of the Courts.
+
+The Court of Falyn is a very traditional Court that tries to preserve the old way of life of the nature-oriented fairies. Like their Sira Cousins, they built their cities deep into the woods of their new homes, yet they did not deny good infrastructure and a well-organized army like the Sira did. The Fairies of the Court of Falyn listen to the wise words of Mother Lyn and uphold the values of their ancestors. 
+        </English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_COURTOFFALYN_STRATEGY</Tag>
+        <English>
+The Court of Falyn is a growth orientated civilization with a strong focus on big cities. Their affinity for Mushrooms allows them to grow to immensive power with time. They are a Court Nation with the Fairy Houses.
+
+[H2]Court System[\H2]
+[ICON_BULLET] Your Leader starts with 1 House Trait.
+[ICON_BULLET] You can have up to 3 House Traits.
+[ICON_BULLET] Via Invite Rituals, you can gain more House Traits. They are locked behind different Technologies.
+[ICON_BULLET] Be careful which Houses you invite and which benefits, units and buildings you require for your strategy.
+
+[H2]Houses[\H2]
+[ICON_BULLET] [LINK=TRAIT_HOUSE_FANE]House Fane[\LINK] focusses on death magic and undead.
+[ICON_BULLET] [LINK=TRAIT_HOUSE_PESNA]House Pesna[\LINK] focusses on Healer Specialists and spreading disease.
+[ICON_BULLET] [LINK=TRAIT_HOUSE_DAWAR]House Dawar[\LINK] focusses on Mine improvements and its ressources.
+[ICON_BULLET] [LINK=TRAIT_HOUSE_RAKIRI]House Rakiri[\LINK] focusses on Siege and Production.
+[ICON_BULLET] [LINK=TRAIT_HOUSE_WAI]House Wai[\LINK] focusses on Raiding and fast attacks.
+[ICON_BULLET] [LINK=TRAIT_HOUSE_NAIRU]House Nairu[\LINK] focusses on Camp Improvements and its ressources.
+        </English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_COURTOFBEY_DESC</Tag>
+        <English>Court of Bey</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_COURTOFBEY_SHORT_DESC</Tag>
+        <English>Court of Bey</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_COURTOFBEY_ADJECTIVE</Tag>
+        <English>Bey</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_COURTOFBEY_PEDIA</Tag>
+        <English>
+The Fairies live for a long time, hidden in the forests of their world. It was the Goddess Ceridwen who teleported them randomly to Erebus. The Fairies did not know, or with which magic the mighty goddess had done so, yet they were required to adapt to the harsh new environment in which they found themselves. 
+
+They formed an Eternal Court to unite all the scattered Fairies and their brethren, the Sira, under one banner and one rule. The Sira denied the invitation and retreated into their forests. The remaining fairies were not able to hold the Eternal Court together for long. Their problems were too varied and their ideas on how to solve them too different. The Eternal Court broke apart, and new Courts formed to adapt to the specific cultures and problems that the fairies faced.
+
+A strong link remained between the different Courts: The Houses. Each House represented an idea, an ideal that the fairies followed. These houses soon fought for power in the different Courts and tried to gain their foot into the High Houses of the Courts.
+
+The Court of Bey was formed by desert fairies. They understood quickly not only how to survive their new, harsh home, but how to thrive in it. With strong cities, they concentrated on magic and the research of their new world. They are strong in faith, and the court is dominated by powerful priests and intelligent researchers. 
+        </English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_COURTOFBEY_STRATEGY</Tag>
+        <English>
+The Court of Bey is a Fairy Court Nation with a strong focus on Specialists, especially Priests, Healers and Scientists. They are a desert nation that benefits from desert tiles.
+
+[H2]Court System[\H2]
+[ICON_BULLET] Your Leader starts with 1 House Trait.
+[ICON_BULLET] You can have up to 3 House Traits.
+[ICON_BULLET] Via Invite Rituals, you can gain more House Traits. They are locked behind different Technologies.
+[ICON_BULLET] Be careful which Houses you invite and which benefits, units and buildings you require for your strategy.
+
+[H2]Houses[\H2]
+[ICON_BULLET] [LINK=TRAIT_HOUSE_FANE]House Fane[\LINK] focusses on death magic and undead.
+[ICON_BULLET] [LINK=TRAIT_HOUSE_PESNA]House Pesna[\LINK] focusses on Healer Specialists and spreading disease.
+[ICON_BULLET] [LINK=TRAIT_HOUSE_DAWAR]House Dawar[\LINK] focusses on Mine improvements and its ressources.
+[ICON_BULLET] [LINK=TRAIT_HOUSE_RAKIRI]House Rakiri[\LINK] focusses on Siege and Production.
+[ICON_BULLET] [LINK=TRAIT_HOUSE_WAI]House Wai[\LINK] focusses on Raiding and fast attacks.
+[ICON_BULLET] [LINK=TRAIT_HOUSE_NAIRU]House Nairu[\LINK] focusses on Camp Improvements and its ressources.
+        </English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAITCLASS_FAIRY_HOUSE</Tag>
+        <English>House Trait</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_COURT_OF_FALYN</Tag>
+        <English>Court of Falyn</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_COURT_OF_FALYN_PEDIA</Tag>
+        <English>
+"Here, sister. Eat. It will make you stronger." Mother Lyn offered a plate of mushroom soup to the young fairy warrior. The warrior sniffed on the soup and nodded before she drank it down in big gulps. It not only filled her belly, but also brought her strengths. Her heart began beating quicker, her muscles warmed up, and her senses sharpened. Mother Lyn looked with pride at her soldier and saw that she was ready for battle. 
+        </English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_COURT_OF_FALYN_SHORT</Tag>
+        <English>CoF</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_AFFINITY_FALYN_MUSHROOM</Tag>
+        <English>Falyn Mushroom Affinity</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_AFFINITY_FALYN_MUSHROOM_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_AFFINITY_FALYN_MUSHROOM_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_FANE</Tag>
+        <English>House Fane</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_FANE_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_FANE_SHORT</Tag>
+        <English>HF</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_PESNA</Tag>
+        <English>House Pesna</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_PESNA_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_PESNA_SHORT</Tag>
+        <English>HP</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_DAWAR</Tag>
+        <English>House Dawar</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_DAWAR_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_DAWAR_SHORT</Tag>
+        <English>HD</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_RAKIRI</Tag>
+        <English>House Rakiri</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_RAKIRI_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_RAKIRI_SHORT</Tag>
+        <English>HR</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_WAI</Tag>
+        <English>House Wai</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_WAI_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_WAI_SHORT</Tag>
+        <English>HW</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_NAIRU</Tag>
+        <English>House Nairu</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_NAIRU_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_NAIRU_SHORT</Tag>
+        <English>HN</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_FANE</Tag>
+        <English>Invite House Fane</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_FANE_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_FANE_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_DAWAR</Tag>
+        <English>Invite House Dawar</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_DAWAR_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_DAWAR_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_PESNA</Tag>
+        <English>Invite House Pesna</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_PESNA_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_PESNA_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_RAKIRI</Tag>
+        <English>Invite House Rakiri</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_RAKIRI_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_RAKIRI_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_WAI</Tag>
+        <English>Invite House Wai</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_WAI_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_WAI_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_NAIRU</Tag>
+        <English>Invite House Nairu</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_NAIRU_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_NAIRU_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_FANE_HELP</Tag>
+        <English>[ICON_BULLET] Invite House Fane to your court</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_DAWAR_HELP</Tag>
+        <English>[ICON_BULLET] Invite House Dawar to your court</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_PESNA_HELP</Tag>
+        <English>[ICON_BULLET] Invite House Pesna to your court</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_RAKIRI_HELP</Tag>
+        <English>[ICON_BULLET] Invite House Rakiri to your court</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_WAI_HELP</Tag>
+        <English>[ICON_BULLET] Invite House Wai to your court</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_NAIRU_HELP</Tag>
+        <English>[ICON_BULLET] Invite House Nairu to your court</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_COURT_OF_BEY</Tag>
+        <English>Court of Bey</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_COURT_OF_BEY_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_COURT_OF_BEY_SHORT</Tag>
+        <English>CB</English>
+    </TEXT>
+    <TEXT>
+        <Tag>PROMOTION_FALYN_MUSHROOM_AFFINITY_ENABLER</Tag>
+        <English>CB</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_FALYN_MUSHROOM_AFFINITY_ENABLER</Tag>
+        <English>Falyn Mushroom Addiction</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_FAIRY_ARCH_HUNTRESS</Tag>
+        <English>Arch Huntress</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_FAIRY_ARCH_HUNTRESS_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_FAIRY_ARCH_HUNTRESS_SHORT</Tag>
+        <English>AH</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_FAIRY_TRACKER</Tag>
+        <English>Tracker</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_FAIRY_TRACKER_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_FAIRY_TRACKER_SHORT</Tag>
+        <English>Tra</English>
+    </TEXT>
+</Civ4GameText>

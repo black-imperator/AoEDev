@@ -8,7 +8,7 @@
 	<BuildingClassInfos>
 		<BuildingClassInfo> <!-- Teuhali Fortress City -->
 			<Type>BUILDINGCLASS_TEUHALI_FORTRESS_CITY</Type>
-			<Description>TXT_KEY_BUILDING_TEUHALI_FORTRESS_CITY</Description>
+			<Description>TXT_KEY_BUILDING_TEUHALI_FORTRESS_CITY_NAME</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
@@ -82,6 +82,58 @@
 			<bMonument>0</bMonument>
 			<bUnique>1</bUnique>
 			<DefaultBuilding>BUILDING_TEUHALI_STONEFIRE</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo> <!-- Burg Terror -->
+			<Type>BUILDINGCLASS_TEUHALI_BURG_TERROR</Type>
+			<Description>TXT_KEY_BUILDING_TEUHALI_BURG_TERROR</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_TEUHALI_BURG_TERROR</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo> <!-- Burg Blocksberg -->
+			<Type>BUILDINGCLASS_TEUHALI_BURG_BLOCKSBERG</Type>
+			<Description>TXT_KEY_BUILDING_TEUHALI_BURG_BLOCKSBERG</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_TEUHALI_BURG_BLOCKSBERG</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo> <!-- Burg Niemalsmehr -->
+			<Type>BUILDINGCLASS_TEUHALI_BURG_NIEMALSMEHR</Type>
+			<Description>TXT_KEY_BUILDING_TEUHALI_BURG_NIEMALSMEHR</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>3</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_TEUHALI_BURG_NIEMALSMEHR</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo> <!-- Burg Sonne -->
+			<Type>BUILDINGCLASS_TEUHALI_BURG_SONNE</Type>
+			<Description>TXT_KEY_BUILDING_TEUHALI_BURG_SONNE</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_TEUHALI_BURG_SONNE</DefaultBuilding>
 			<VictoryThresholds/>
 		</BuildingClassInfo>
 	</BuildingClassInfos>

@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Soren Johnson (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Building Class Infos -->
+<Civ4BuildingClassInfos xmlns="x-schema:AOSNISIRA_CIV4BuildingsSchema.xml">
+	<BuildingClassInfos>
+        <BuildingClassInfo> <!-- Shroomcultivation -->      <!-- Court of Falyn -->
+			<Type>BUILDINGCLASS_SHROOMCULTIVATION</Type>
+			<Description>TXT_KEY_BUILDING_SHROOMCULTIVATION</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>3</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+            <bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_SHROOMCULTIVATION</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo> <!-- Fairy Ring -->
+			<Type>BUILDINGCLASS_FAIRY_RING</Type>
+			<Description>TXT_KEY_BUILDING_FAIRY_RING</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+            <bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_FAIRY_RING</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo> <!-- House of Commerce -->
+			<Type>BUILDINGCLASS_FAIRY_HOUSE_OF_COMMERCE</Type>
+			<Description>TXT_KEY_BUILDING_HOUSE_OF_COMMERCE</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+            <bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_FAIRY_HOUSE_OF_COMMERCE</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo> <!-- Dark Guild of Fane -->
+			<Type>BUILDINGCLASS_FAIRY_DARK_GUILD</Type>
+			<Description>TXT_KEY_BUILDING_FAIRY_DARK_GUILD</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+            <bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_FAIRY_DARK_GUILD</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo> <!-- Dawar Trader -->
+			<Type>BUILDINGCLASS_FAIRY_DAWAR_TRADER</Type>
+			<Description>TXT_KEY_FAIRY_DAWAR_TRADER</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+            <bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_FAIRY_DAWAR_TRADER</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo> <!-- Grand Wai Outpost -->
+			<Type>BUILDINGCLASS_FAIRY_WAI_OUTPOST</Type>
+			<Description>TXT_KEY_FAIRY_WAI_OUTPOST</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+            <bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_FAIRY_WAI_OUTPOST</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo> <!-- Nairu Circle -->
+			<Type>BUILDINGCLASS_FAIRY_NAIRU_CIRCLE</Type>
+			<Description>TXT_KEY_FAIRY_NAIRU_CIRCLE</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+            <bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_FAIRY_NAIRU_CIRCLE</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+    </BuildingClassInfos>
+</Civ4BuildingClassInfos>

@@ -1,0 +1,21 @@
+<CivFlavourInfos>
+    <CivFlavourInfo>
+		<Civilization>CIVILIZATION_NAMKO</Civilization>
+		<Preference>
+			<FlavourType>PLOT_HILLS</FlavourType>
+			<Value>2</Value>
+		</Preference>
+		<Preference>
+			<FlavourType>TERRAIN_DESERT</FlavourType>
+			<Value>2</Value>
+		</Preference>
+		<Preference>
+			<FlavourType>YIELD_FOOD</FlavourType>
+			<Value>-3</Value>
+		</Preference>
+		<Preference>
+			<FlavourType>PLOT_OCEAN</FlavourType>
+			<Value>-2</Value>
+		</Preference>
+	</CivFlavourInfo>
+</CivFlavourInfos>

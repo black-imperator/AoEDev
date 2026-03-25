@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Units -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+
+
+
+
+
+
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_FOXFORD_TOWN</Tag>
+		<English>Foxford (Town)</English>
+		<French>Foxford (Town)</French>
+		<German>Fuchsfurt (Town)</German>
+		<Italian>Foxford (Town)</Italian>
+		<Spanish>Foxford (Town)</Spanish>
+	</TEXT>
+		<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_FOXFORD_TOWN_PEDIA</Tag>
+		<English>With the werewolf crisis resolved and the passing of time, Foxford has grown into a fur trapping village.</English>
+		<French>With the werewolf crisis resolved and the passing of time, Foxford has grown into a fur trapping village.</French>
+		<German>With the werewolf crisis resolved and the passing of time, Foxford has grown into a fur trapping village.</German>
+		<Italian>With the werewolf crisis resolved and the passing of time, Foxford has grown into a fur trapping village.</Italian>
+		<Spanish>With the werewolf crisis resolved and the passing of time, Foxford has grown into a fur trapping village.</Spanish>
+	</TEXT>
+
+</Civ4GameText>

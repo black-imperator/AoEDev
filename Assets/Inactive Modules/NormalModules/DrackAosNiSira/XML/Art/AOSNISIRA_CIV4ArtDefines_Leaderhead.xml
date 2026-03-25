@@ -6,8 +6,7 @@
 <!-- Leaderhead art path information -->
 <Civ4ArtDefines xmlns="x-schema:AOSNISIRA_CIV4ArtDefinesSchema.xml">
 	<LeaderheadArtInfos>
-		<!-- Neifara -->
-		<LeaderheadArtInfo>
+		<LeaderheadArtInfo>		<!-- Neifara -->				<!-- Aos Ni Sira -->
 			<Type>ART_DEF_LEADER_NEIFARA</Type>
 			<Button>Modules\NormalModules\DrackAosNiSira\Art\Leader\Neifara_button.dds</Button>
 			<NIF>Modules\NormalModules\DrackAosNiSira\Art\Leader\Neifara_leaderhead.dds</NIF>
@@ -15,8 +14,7 @@
 			<NoShaderNIF/>
 			<BackgroundKFM/>
 		</LeaderheadArtInfo>
-		<!-- Kira Ni Crann -->
-		<LeaderheadArtInfo>
+		<LeaderheadArtInfo>		<!-- Kira Ni Crann -->			<!-- Aos Ni Sira -->
 			<Type>ART_DEF_LEADER_KIRANICRANN</Type>
 			<Button>Modules\NormalModules\DrackAosNiSira\Art\Leader\KiraNiCrann_button.dds</Button>
 			<NIF>Modules\NormalModules\DrackAosNiSira\Art\Leader\KiraNiCrann_leaderhead.dds</NIF>
@@ -24,8 +22,7 @@
 			<NoShaderNIF/>
 			<BackgroundKFM/>
 		</LeaderheadArtInfo>
-		<!-- Ciara  -->
-		<LeaderheadArtInfo>
+		<LeaderheadArtInfo>		<!-- Ciara  -->					<!-- Aos Ni Sira -->
 			<Type>ART_DEF_LEADER_CIARA</Type>
 			<Button>Modules\NormalModules\DrackAosNiSira\Art\Leader\Ciara_button.dds</Button>
 			<NIF>Modules\NormalModules\DrackAosNiSira\Art\Leader\Ciara_leaderhead.dds</NIF>
@@ -33,8 +30,7 @@
 			<NoShaderNIF/>
 			<BackgroundKFM/>
 		</LeaderheadArtInfo>
-		<!-- Aoife -->
-		<LeaderheadArtInfo>
+		<LeaderheadArtInfo>		<!-- Aoife -->					<!-- Aos Ni Sira -->
 			<Type>ART_DEF_LEADER_AOIFE</Type>
 			<Button>Modules\NormalModules\DrackAosNiSira\Art\Leader\Aoife_button.dds</Button>
 			<NIF>Modules\NormalModules\DrackAosNiSira\Art\Leader\Aoife_leaderhead.dds</NIF>
@@ -42,11 +38,74 @@
 			<NoShaderNIF/>
 			<BackgroundKFM/>
 		</LeaderheadArtInfo>
-		<!-- Oonagh -->
-		<LeaderheadArtInfo>
+		<LeaderheadArtInfo>		<!-- Oonagh -->					<!-- Aos Ni Sira -->
 			<Type>ART_DEF_LEADER_OONAGH</Type>
 			<Button>Modules\NormalModules\DrackAosNiSira\Art\Leader\Oonagh_button.dds</Button>
 			<NIF>Modules\NormalModules\DrackAosNiSira\Art\Leader\Oonagh_leaderhead.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>		<!-- Mother Lyn -->				<!-- Court of Falyn -->
+			<Type>ART_DEF_LEADER_FAIRY_MOTHER_LYN</Type>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Leader\MotherLynbutton.dds</Button>
+			<NIF>Modules\NormalModules\DrackAosNiSira\Art\Leader\MotherLyn.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>		<!-- Mithiray Ni Falyn -->		<!-- Court of Falyn -->
+			<Type>ART_DEF_LEADER_FAIRY_MITHIRAY_NI_FALYN</Type>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Leader\MithirayButton.dds</Button>
+			<NIF>Modules\NormalModules\DrackAosNiSira\Art\Leader\Mithiray.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>		<!-- Jula Al Cara -->			<!-- Court of Bey -->
+			<Type>ART_DEF_LEADER_FAIRY_JULAALCARA</Type>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Leader\JulaAlCarabutton.dds</Button>
+			<NIF>Modules\NormalModules\DrackAosNiSira\Art\Leader\JulaAlCara.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>		<!-- Notto Al Rakiri -->		<!-- Court of Bey -->
+			<Type>ART_DEF_LEADER_FAIRY_NOTTO_AL_RAKIRI</Type>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Leader\NottoAlRakiributton.dds</Button>
+			<NIF>Modules\NormalModules\DrackAosNiSira\Art\Leader\NottoAlRakiri.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>		<!-- Maraky Ni Pesna -->		<!-- Court of Falyn -->
+			<Type>ART_DEF_LEADER_FAIRY_MOTHER_MARAKY</Type>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Leader\MarakyButton.dds</Button>
+			<NIF>Modules\NormalModules\DrackAosNiSira\Art\Leader\Maraky.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>		<!-- Pleia the Huntress -->		<!-- Court of Falyn -->
+			<Type>ART_DEF_LEADER_FAIRY_PLEIA</Type>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Leader\PleiaButton.dds</Button>
+			<NIF>Modules\NormalModules\DrackAosNiSira\Art\Leader\Pleia.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>		<!-- Jasmine Al Dawar -->		<!-- Court of Bey -->
+			<Type>ART_DEF_LEADER_FAIRY_JASMINE</Type>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Leader\JasmineButton.dds</Button>
+			<NIF>Modules\NormalModules\DrackAosNiSira\Art\Leader\Jasmine.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>		<!-- Maukia Al Wai -->			<!-- Court of Bey -->
+			<Type>ART_DEF_LEADER_FAIRY_MAUKIA</Type>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Leader\MaukiaButton.dds</Button>
+			<NIF>Modules\NormalModules\DrackAosNiSira\Art\Leader\Maukia.dds</NIF>
 			<KFM/>
 			<NoShaderNIF/>
 			<BackgroundKFM/>

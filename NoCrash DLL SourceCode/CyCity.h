@@ -635,6 +635,7 @@ public:
 	bool canCast(int spell, bool bTestVisible);
 	int getCityUnits(int iUnitClass);
 	int getCityBuildings(int iUnitClass);
+	int getSpellExtraRange() const;
 /*************************************************************************************************/
 /**	END																							**/
 /*************************************************************************************************/

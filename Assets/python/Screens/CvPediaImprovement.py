@@ -219,7 +219,7 @@ class CvPediaImprovement:
 		if iInst != 1:
 			iCost = 0
 		if iCost > 0:
-			szCostText = localText.getText("TXT_KEY_PEDIA_COST", ( iCost, ) ) + u"%c" % (gc.getYieldInfo(YieldTypes.YIELD_PRODUCTION).getChar())
+			szCostText = localText.getText("TXT_KEY_PEDIA_COST", ( iCost, ) ).upper() + u"%c" % (gc.getYieldInfo(YieldTypes.YIELD_PRODUCTION).getChar())
 
 		# Icon
 		screen.addPanel( self.top.getNextWidgetName(), "", "", False, False,
@@ -230,7 +230,7 @@ class CvPediaImprovement:
 			self.X_ICON + self.W_ICON/2 - self.ICON_SIZE/2, self.Y_ICON + self.H_ICON/2 - self.ICON_SIZE/2, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 
 		if iCost > 0:
-			screen.setLabel(self.top.getNextWidgetName(), "Background", u"<font=4>" + szCostText.upper() + u"</font>", CvUtil.FONT_LEFT_JUSTIFY, self.X_COST, self.Y_COST, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+			screen.setLabel(self.top.getNextWidgetName(), "Background", u"<font=4>" + szCostText + u"</font>", CvUtil.FONT_LEFT_JUSTIFY, self.X_COST, self.Y_COST, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 			Y_DISCOUNT = self.Y_COST
 			for iTech in xrange(gc.getNumTechInfos()):
 				iDiscount = gc.getBuildInfo(iBuild).getTechDiscount(iTech)
@@ -238,7 +238,7 @@ class CvPediaImprovement:
 					Y_DISCOUNT += 30
 					szButton = gc.getTechInfo(iTech).getButton()
 					szDicountText = "DISCOUNT: %d" % (iDiscount) + u"%c" % (gc.getYieldInfo(YieldTypes.YIELD_PRODUCTION).getChar())
-					screen.setLabel(self.top.getNextWidgetName(), "Background", u"<font=4>" + szDicountText.upper() + u"</font>", CvUtil.FONT_LEFT_JUSTIFY, self.X_COST, Y_DISCOUNT, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+					screen.setLabel(self.top.getNextWidgetName(), "Background", u"<font=4>" + szDicountText + u"</font>", CvUtil.FONT_LEFT_JUSTIFY, self.X_COST, Y_DISCOUNT, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 					screen.addDDSGFC(self.top.getNextWidgetName(), szButton, self.X_COST + 190, Y_DISCOUNT + 5, 22, 22, WidgetTypes.WIDGET_PEDIA_JUMP_TO_TECH, i, -1 )
 
 		# Bonus animation
@@ -259,11 +259,22 @@ class CvPediaImprovement:
 
 		screen.attachLabel(panelName, "", "  ")
 
-		for iBuild in range(gc.getNumBuildInfos()):
-			if (gc.getBuildInfo(iBuild).getImprovementClass() == gc.getImprovementInfo(self.iImprovement).getImprovementClass()):
-				iTech = gc.getBuildInfo(iBuild).getTechPrereq()
-				if (iTech > -1):
-					screen.attachImageButton( panelName, "", gc.getTechInfo(iTech).getButton(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_PEDIA_JUMP_TO_TECH, iTech, 1, False )
+		iTech = -1
+		iInst = 0
+		for iBuildInfo in xrange(gc.getNumBuildInfos()):
+			if gc.getImprovementInfo(self.iImprovement).getImprovementClass() == gc.getBuildInfo(iBuildInfo).getImprovementClass():
+				iTech = gc.getBuildInfo(iBuildInfo).getTechPrereq()
+				szImpInfo	= gc.getImprovementInfo(self.iImprovement).getType()[12:]
+				szBuildInfo	= gc.getBuildInfo(iBuildInfo).getType()[6:]
+				iInst += 1
+				if szImpInfo == szBuildInfo:
+					iInst = 1
+					break
+
+		if iInst != 1:
+			iTech = -1
+		if iTech > -1:
+			screen.attachImageButton( panelName, "", gc.getTechInfo(iTech).getButton(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_PEDIA_JUMP_TO_TECH, iTech, 1, False )
 
 	def placeImprovements(self):
 		screen = self.top.getScreen()

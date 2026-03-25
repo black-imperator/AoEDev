@@ -6,7 +6,7 @@
 <!-- Civilization Infos -->
 <Civ4CivilizationInfos xmlns="x-schema:AOSNISIRA_CIV4CivilizationsSchema.xml">
 	<CivilizationInfos>
-		<CivilizationInfo>
+		<CivilizationInfo> <!-- Aos Ni Sira -->
 			<Type>CIVILIZATION_AOSNISIRA</Type>
 			<Description>TXT_KEY_CIV_AOSNISIRA_DESC</Description>
 			<ShortDescription>TXT_KEY_CIV_AOSNISIRA_SHORT_DESC</ShortDescription>
@@ -16,7 +16,8 @@
 			<DefaultPlayerColor>PLAYERCOLOR_AOSNISIRA</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_AOSNISIRA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_SVARTALFAR</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_LJOSALFAR</UnitArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_FAIRIES</UnitArtStyleType>
+			<Image>Modules\NormalModules\DrackAosNiSira\Art\Other/AosNiSiraBanner.dds</Image>
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
@@ -68,6 +69,22 @@
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
 					<BuildingType>BUILDING_AOSNISIRA_PAGAN_TEMPLE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_WELL</BuildingClassType>
+					<BuildingType>BUILDING_FAIRY_WELL</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_INN</BuildingClassType>
+					<BuildingType>BUILDING_FAIRY_INN</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_FAIRY_RING</BuildingClassType>
+					<BuildingType>BUILDING_FAIRY_RING</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_MONUMENT</BuildingClassType>
+					<BuildingType>BUILDING_FAIRY_PILLAR</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_STABLE</BuildingClassType>
@@ -168,10 +185,6 @@
 					<UnitType>UNIT_AOSNISIRA_DRUID</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_CANNON</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
 					<UnitClassType>UNITCLASS_CROSSBOWMAN</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -181,6 +194,10 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_CHARIOT</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_CANNON</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -226,39 +243,39 @@
 				<Unit>
 					<UnitClassType>UNITCLASS_CARAVEL</UnitClassType>
 					<UnitType>NONE</UnitType>
-				</Unit> 
+				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_CARRACK</UnitClassType>
 					<UnitType>NONE</UnitType>
-				</Unit> 
+				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_FRIGATE</UnitClassType>
 					<UnitType>NONE</UnitType>
-				</Unit> 
+				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_GALLEON</UnitClassType>
 					<UnitType>NONE</UnitType>
-				</Unit> 
+				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_QUEEN_OF_THE_LINE</UnitClassType>
 					<UnitType>NONE</UnitType>
-				</Unit> 
+				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_MAN_O_WAR</UnitClassType>
 					<UnitType>NONE</UnitType>
-				</Unit> 
+				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_ARCANE_BARGE</UnitClassType>
 					<UnitType>NONE</UnitType>
-				</Unit> 
+				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_TRADESHIP</UnitClassType>
 					<UnitType>NONE</UnitType>
-				</Unit> 
+				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_WORKBOAT</UnitClassType>
 					<UnitType>NONE</UnitType>
-				</Unit> 
+				</Unit>
 			</Units>
 			<Improvements>
 				<Improvement>
@@ -460,6 +477,465 @@
 			</TerrainYieldChanges>
 			<PeakYieldChange>
 			</PeakYieldChange>
+		</CivilizationInfo>
+		<CivilizationInfo> <!-- Court of Falyn -->
+			<Type>CIVILIZATION_COURTOFFALYN</Type>
+			<Description>TXT_KEY_CIV_COURTOFFALYN_DESC</Description>
+			<ShortDescription>TXT_KEY_CIV_COURTOFFALYN_SHORT_DESC</ShortDescription>
+			<Adjective>TXT_KEY_CIV_COURTOFFALYN_ADJECTIVE</Adjective>
+			<Civilopedia>TXT_KEY_CIV_COURTOFFALYN_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIV_COURTOFFALYN_STRATEGY</Strategy>
+			<DefaultPlayerColor>PLAYERCOLOR_COURTOFFALYN</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_COURTOFFALYN</ArtDefineTag>
+			<ArtStyleType>ARTSTYLE_SVARTALFAR</ArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_FAIRIES</UnitArtStyleType>
+			<Image>Modules\NormalModules\DrackAosNiSira\Art\Other/CourtOfFalynBanner.dds</Image>
+			<bPlayable>1</bPlayable>
+			<bAIPlayable>1</bAIPlayable>
+			<Cities>
+				<City>Falyn</City>
+				<City>Miraejin</City>
+				<City>Yureido</City>
+				<City>Soramaru</City>
+				<City>Hoshiga</City>
+				<City>Kumohara</City>
+				<City>Bokurae</City>
+				<City>Soryeon</City>
+				<City>Mokjin</City>
+				<City>Jinryu</City>
+				<City>Kagehara</City>
+				<City>Miraebok</City>
+				<City>Haneuldo</City>
+				<City>Yureijin</City>
+				<City>Mokhara</City>
+			</Cities>
+			<Buildings>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_PALACE_COURTOFFALYN</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_WELL</BuildingClassType>
+					<BuildingType>BUILDING_FAIRY_WELL</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_SHROOMCULTIVATION</BuildingClassType>
+					<BuildingType>BUILDING_SHROOMCULTIVATION</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_CARNIVAL</BuildingClassType>
+					<BuildingType>BUILDING_FALYN_GLOWCAPLATERNS</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_BARRACKS</BuildingClassType>
+					<BuildingType>BUILDING_FALYN_BARRACKS</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_INN</BuildingClassType>
+					<BuildingType>BUILDING_FAIRY_INN</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_FAIRY_RING</BuildingClassType>
+					<BuildingType>BUILDING_FAIRY_RING</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_COURTHOUSE</BuildingClassType>
+					<BuildingType>BUILDING_FAIRY_COURTHOUSE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_MONUMENT</BuildingClassType>
+					<BuildingType>BUILDING_FAIRY_PILLAR</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_SIEGE_WORKSHOP</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
+			</Buildings>
+			<Units>
+				<Unit>
+					<UnitClassType>UNITCLASS_FAIRY_NIMAI</UnitClassType>
+					<UnitType>UNIT_FAIRY_NIMAI</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_AXEMAN</UnitClassType>
+					<UnitType>UNIT_FAIRY_SPRITE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_ARCHER</UnitClassType>
+					<UnitType>UNIT_FAIRY_WILDFAE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_FAIRY_SHROOMFAE</UnitClassType>
+					<UnitType>UNIT_FAIRY_SHROOMFAE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_CANNON</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_CATAPULT</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+			</Units>
+			<Improvements>
+			</Improvements>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
+					<iFreeUnits>1</iFreeUnits>
+				</FreeUnitClass>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_WARRIOR</UnitClassType>
+					<iFreeUnits>1</iFreeUnits>
+				</FreeUnitClass>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_SCOUT</UnitClassType>
+					<iFreeUnits>1</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+			<FreeBuildingClasses>
+				<FreeBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<bFreeBuildingClass>1</bFreeBuildingClass>
+				</FreeBuildingClass>
+			</FreeBuildingClasses>
+			<FreeTechs>
+				<FreeTech>
+					<TechType>TECH_ANCIENT_CHANTS</TechType>
+					<bFreeTech>1</bFreeTech>
+				</FreeTech>
+			</FreeTechs>
+			<DisableTechs>
+			</DisableTechs>
+			<InitialCivics>
+				<CivicType>CIVIC_DESPOTISM</CivicType>
+				<CivicType>CIVIC_RELIGION</CivicType>
+				<CivicType>CIVIC_TRIBALISM</CivicType>
+				<CivicType>CIVIC_DECENTRALIZATION</CivicType>
+				<CivicType>CIVIC_NO_MEMBERSHIP</CivicType>
+			</InitialCivics>
+			<AnarchyCivics>
+				<CivicType>CIVIC_DESPOTISM</CivicType>
+				<CivicType>CIVIC_RELIGION</CivicType>
+				<CivicType>CIVIC_TRIBALISM</CivicType>
+				<CivicType>CIVIC_DECENTRALIZATION</CivicType>
+				<CivicType>CIVIC_NO_MEMBERSHIP</CivicType>
+			</AnarchyCivics>
+			<Leaders>
+				<Leader>
+					<LeaderName>LEADER_FAIRY_MOTHER_LYN</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
+				<Leader>
+					<LeaderName>LEADER_FAIRY_MITHIRAY_NI_FALYN</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
+				<Leader>
+					<LeaderName>LEADER_FAIRY_MOTHER_MARAKY</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
+				<Leader>
+					<LeaderName>LEADER_FAIRY_PLEIA</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
+			</Leaders>
+			<DerivativeCiv>NONE</DerivativeCiv>
+			<CivilizationSelectionSound>AS3D_ARABIA_SELECT</CivilizationSelectionSound>
+			<CivilizationActionSound>AS3D_ARABIA_ORDER</CivilizationActionSound>
+			<bLimitedSelection>0</bLimitedSelection>
+			<bGraphicalOnly>0</bGraphicalOnly>
+			<CivTrait>TRAIT_COURT_OF_FALYN</CivTrait>
+			<Hero>UNIT_FAIRY_NIMAI</Hero>
+			<DefaultRace>PROMOTION_RACE_FAIRY</DefaultRace>
+			<MaintainFeatures>
+				<MaintainFeature>
+					<FeatureType>FEATURE_FOREST</FeatureType>
+					<bMaintain>1</bMaintain>
+				</MaintainFeature>
+				<MaintainFeature>
+					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
+					<bMaintain>1</bMaintain>
+				</MaintainFeature>
+				<MaintainFeature>
+					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
+					<bMaintain>1</bMaintain>
+				</MaintainFeature>
+			</MaintainFeatures>
+			<FeatureHealthPercentChanges>
+			</FeatureHealthPercentChanges>
+			<TerrainYieldChanges>
+			</TerrainYieldChanges>
+			<PeakYieldChange>
+			</PeakYieldChange>
+		</CivilizationInfo>
+		<CivilizationInfo> <!-- Court of Bey -->
+			<Type>CIVILIZATION_COURTOFBEY</Type>
+			<Description>TXT_KEY_CIV_COURTOFBEY_DESC</Description>
+			<ShortDescription>TXT_KEY_CIV_COURTOFBEY_SHORT_DESC</ShortDescription>
+			<Adjective>TXT_KEY_CIV_COURTOFBEY_ADJECTIVE</Adjective>
+			<Civilopedia>TXT_KEY_CIV_COURTOFBEY_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIV_COURTOFBEY_STRATEGY</Strategy>
+			<DefaultPlayerColor>PLAYERCOLOR_COURTOFBEY</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_COURTOFBEY</ArtDefineTag>
+			<ArtStyleType>ARTSTYLE_MALAKIM</ArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_FAIRIES</UnitArtStyleType>
+			<Image>Modules\NormalModules\DrackAosNiSira\Art\Other/CourtOfBeyBanner.dds</Image>
+			<bPlayable>1</bPlayable>
+			<bAIPlayable>1</bAIPlayable>
+			<Cities>
+				<City>Bey</City>
+				<City>Zharis</City>
+				<City>Sylthar</City>
+				<City>Veythari</City>
+				<City>Xalith</City>
+				<City>Nalara</City>
+				<City>Duness</City>
+				<City>Feyra</City>
+				<City>Khalis</City>
+				<City>Miraz</City>
+				<City>Oasira</City>
+				<City>Qadim</City>
+				<City>Ravess</City>
+				<City>Sahira</City>
+				<City>Tazir</City>
+				<City>Umayra</City>
+				<City>Veyth</City>
+				<City>Wadira</City>
+				<City>Yasmin</City>
+				<City>Zalara</City>
+				<City>Aelith</City>
+				<City>Beythar</City>
+				<City>Ceyra</City>
+				<City>Dunessra</City>
+				<City>Elyth</City>
+				<City>Feythari</City>
+				<City>Ghalis</City>
+				<City>Hiraz</City>
+				<City>Jeyra</City>
+				<City>Khaless</City>
+				<City>Lumira</City>
+			</Cities>
+			<Buildings>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_PALACE_COURTOFBEY</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_WELL</BuildingClassType>
+					<BuildingType>BUILDING_FAIRY_WELL</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_INN</BuildingClassType>
+					<BuildingType>BUILDING_FAIRY_INN</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_FAIRY_RING</BuildingClassType>
+					<BuildingType>BUILDING_FAIRY_RING</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
+					<BuildingType>BUILDING_BEY_PAGAN_TEMPLE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_COURTHOUSE</BuildingClassType>
+					<BuildingType>BUILDING_FAIRY_COURTHOUSE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_LIBRARY</BuildingClassType>
+					<BuildingType>BUILDING_BEY_LIBRARY</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_MONUMENT</BuildingClassType>
+					<BuildingType>BUILDING_FAIRY_PILLAR</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_ELDER_COUNCIL</BuildingClassType>
+					<BuildingType>BUILDING_FAIRY_BEY_COUNCIL</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_SIEGE_WORKSHOP</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
+			</Buildings>
+			<Units>
+				<Unit>
+					<UnitClassType>UNITCLASS_FAIRY_ALIN</UnitClassType>
+					<UnitType>UNIT_FAIRY_ALIN</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_AXEMAN</UnitClassType>
+					<UnitType>UNIT_FAIRY_SPRITE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_ARCHER</UnitClassType>
+					<UnitType>UNIT_FAIRY_WILDFAE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_SCOUT</UnitClassType>
+					<UnitType>UNIT_FAIRY_SANDFAE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_CANNON</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_CATAPULT</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+			</Units>
+			<Improvements>
+			</Improvements>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
+					<iFreeUnits>1</iFreeUnits>
+				</FreeUnitClass>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_WARRIOR</UnitClassType>
+					<iFreeUnits>1</iFreeUnits>
+				</FreeUnitClass>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_SCOUT</UnitClassType>
+					<iFreeUnits>1</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+			<FreeBuildingClasses>
+				<FreeBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<bFreeBuildingClass>1</bFreeBuildingClass>
+				</FreeBuildingClass>
+			</FreeBuildingClasses>
+			<FreeTechs>
+				<FreeTech>
+					<TechType>TECH_ANCIENT_CHANTS</TechType>
+					<bFreeTech>1</bFreeTech>
+				</FreeTech>
+			</FreeTechs>
+			<DisableTechs>
+			</DisableTechs>
+			<InitialCivics>
+				<CivicType>CIVIC_DESPOTISM</CivicType>
+				<CivicType>CIVIC_RELIGION</CivicType>
+				<CivicType>CIVIC_TRIBALISM</CivicType>
+				<CivicType>CIVIC_DECENTRALIZATION</CivicType>
+				<CivicType>CIVIC_NO_MEMBERSHIP</CivicType>
+			</InitialCivics>
+			<AnarchyCivics>
+				<CivicType>CIVIC_DESPOTISM</CivicType>
+				<CivicType>CIVIC_RELIGION</CivicType>
+				<CivicType>CIVIC_TRIBALISM</CivicType>
+				<CivicType>CIVIC_DECENTRALIZATION</CivicType>
+				<CivicType>CIVIC_NO_MEMBERSHIP</CivicType>
+			</AnarchyCivics>
+			<Leaders>
+				<Leader>
+					<LeaderName>LEADER_FAIRY_JULAALCARA</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
+				<Leader>
+					<LeaderName>LEADER_FAIRY_NOTTO_AL_RAKIRI</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
+				<Leader>
+					<LeaderName>LEADER_FAIRY_JASMINE</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
+				<Leader>
+					<LeaderName>LEADER_FAIRY_MAUKIA</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
+			</Leaders>
+			<DerivativeCiv>NONE</DerivativeCiv>
+			<CivilizationSelectionSound>AS3D_ARABIA_SELECT</CivilizationSelectionSound>
+			<CivilizationActionSound>AS3D_ARABIA_ORDER</CivilizationActionSound>
+			<bLimitedSelection>0</bLimitedSelection>
+			<bGraphicalOnly>0</bGraphicalOnly>
+			<CivTrait>TRAIT_COURT_OF_BEY</CivTrait>
+			<Hero>UNIT_FAIRY_ALIN</Hero>
+			<DefaultRace>PROMOTION_RACE_FAIRY</DefaultRace>
+			<MaintainFeatures>
+				<MaintainFeature>
+					<FeatureType>FEATURE_SCRUB</FeatureType>
+					<bMaintain>1</bMaintain>
+				</MaintainFeature>
+			</MaintainFeatures>
+			<TerrainCultureDistanceChanges>
+				<TerrainCultureDistanceChange>
+					<TerrainType>TERRAIN_DESERT</TerrainType>
+					<iCultureDistanceChange>-1</iCultureDistanceChange>
+				</TerrainCultureDistanceChange>
+				<TerrainCultureDistanceChange>
+					<TerrainType>TERRAIN_TAIGA</TerrainType>
+					<iCultureDistanceChange>1</iCultureDistanceChange>
+				</TerrainCultureDistanceChange>
+				<TerrainCultureDistanceChange>
+					<TerrainType>TERRAIN_TUNDRA</TerrainType>
+					<iCultureDistanceChange>1</iCultureDistanceChange>
+				</TerrainCultureDistanceChange>
+				<TerrainCultureDistanceChange>
+					<TerrainType>TERRAIN_GLACIER</TerrainType>
+					<iCultureDistanceChange>1</iCultureDistanceChange>
+				</TerrainCultureDistanceChange>
+			</TerrainCultureDistanceChanges>
+			<FeatureHealthPercentChanges>
+				<FeatureHealthPercentChange>
+					<FeatureType>FEATURE_OASIS</FeatureType>
+					<iHealtPercentChange>50</iHealtPercentChange>
+				</FeatureHealthPercentChange>
+				<FeatureHealthPercentChange>
+					<FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+					<iHealtPercentChange>20</iHealtPercentChange>
+				</FeatureHealthPercentChange>
+			</FeatureHealthPercentChanges>
+			<FeatureYieldChanges>
+				<FeatureYieldChange>
+					<FeatureType>FEATURE_OASIS</FeatureType>
+					<FeatureYields>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</FeatureYields>
+				</FeatureYieldChange>
+				<FeatureYieldChange>
+					<FeatureType>FEATURE_SCRUB</FeatureType>
+					<FeatureYields>
+						<iYield>1</iYield>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+					</FeatureYields>
+				</FeatureYieldChange>
+			</FeatureYieldChanges>
+			<TerrainYieldChanges>
+				<TerrainYieldChange>
+					<TerrainType>TERRAIN_DESERT</TerrainType>
+					<TerrainYields>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+					</TerrainYields>
+				</TerrainYieldChange>
+			</TerrainYieldChanges>
+			<TerrainCultureDistanceChanges>
+				<TerrainCultureDistanceChange>
+					<TerrainType>TERRAIN_DESERT</TerrainType>
+					<iCultureDistanceChange>-1</iCultureDistanceChange>
+				</TerrainCultureDistanceChange>
+				<TerrainCultureDistanceChange>
+					<TerrainType>TERRAIN_TAIGA</TerrainType>
+					<iCultureDistanceChange>1</iCultureDistanceChange>
+				</TerrainCultureDistanceChange>
+				<TerrainCultureDistanceChange>
+					<TerrainType>TERRAIN_TUNDRA</TerrainType>
+					<iCultureDistanceChange>1</iCultureDistanceChange>
+				</TerrainCultureDistanceChange>
+				<TerrainCultureDistanceChange>
+					<TerrainType>TERRAIN_GLACIER</TerrainType>
+					<iCultureDistanceChange>1</iCultureDistanceChange>
+				</TerrainCultureDistanceChange>
+			</TerrainCultureDistanceChanges>
+			<PeakYieldChange>
+			</PeakYieldChange>
+			<FormClimateZoneType>CLIMATEZONE_ARID</FormClimateZoneType>
 		</CivilizationInfo>
 	</CivilizationInfos>
 </Civ4CivilizationInfos>

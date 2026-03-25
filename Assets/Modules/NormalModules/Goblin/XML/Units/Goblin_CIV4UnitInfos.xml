@@ -514,7 +514,7 @@
 			<Type>UNIT_ASSASSIN_MURIS_CLAN</Type>
 			<Combat>UNITCOMBAT_ROGUE</Combat>
 			<DefaultUnitAI>UNITAI_EXPLORE</DefaultUnitAI>
-			<iExtraPerception>2</iExtraPerception>
+			<iInvisibleLevel>2</iInvisibleLevel>
 			<Description>TXT_KEY_UNIT_ASSASSIN_MURIS_CLAN</Description>
 			<Civilopedia>TXT_KEY_UNIT_ASSASSIN_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_ASSASSIN_STRATEGY</Strategy>

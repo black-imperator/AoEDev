@@ -164,4 +164,12 @@
         <Tag>TXT_KEY_VAMP_VAMPIRIC_CHARMED_PEDIA</Tag>
         <English>TODO</English>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_VAMPIRE_HUNTER</Tag>
+        <English>Vampire Hunter</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VAMP_VAMPIRE_HUNTER_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
 </Civ4GameText>

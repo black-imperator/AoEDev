@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Soren Johnson (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Project -->
+<Civ4ProjectInfo xmlns="x-schema:LOCALHERO_CIV4GameInfoSchema.xml">
+	<ProjectInfos>
+		<ProjectInfo>	<!-- Summon Local Hero -->
+			<Type>PROJECT_SUMMON_LOCAL_HERO</Type>
+			<Description>TXT_KEY_PROJECT_SUMMON_LOCAL_HERO</Description>
+			<Civilopedia>TXT_KEY_PROJECT_SUMMON_LOCAL_HERO_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_PROJECT_SUMMON_LOCAL_HERO_STRATEGY</Strategy>
+			<Help>TXT_KEY_PROJECT_SUMMON_LOCAL_HERO_HELP</Help>
+			<TechPrereq>TECH_MYSTICISM</TechPrereq>
+			<iCost>100</iCost>
+			<Button>Modules\NormalModules\DrackLocalHero\Art\LocalHero.dds</Button>
+			<iAIWeight>1000</iAIWeight>
+		</ProjectInfo>
+	</ProjectInfos>
+</Civ4ProjectInfo>

@@ -4,13 +4,14 @@ This is aimed more at epic and standard speed, not at quick or marathon speed. H
 
 [ WARLORD ]
 - 50 points per training building built.
-CHANGE TO BASE TRAIT - Ambition promo is now available for all non-animal unit types (now allowed recon, mounted, siege, naval). Ambition is also allowed on undead units, so that naval, siege, and scions of patria can use it. So charismatic is -25% exp required for all and +1 happy, ambitious is +25% exp gain for all except beasts, and double build speed for training buildings. Pretty close in function anyway. Funny if you stack both, but that's part of the fun of important traits anyway.
+CHANGE TO BASE TRAIT - Ambition promo is now available for all non-animal unit types (now allowed recon, mounted, siege, naval). Ambition is also allowed on non-living units, so that naval, siege, and scions of patria can use it. So charismatic is -25% exp required for all and +1 happy, ambitious is +25% exp gain for all except beasts, and double build speed for training buildings. Pretty close in function anyway. Funny if you stack both, but that's part of the fun of important traits anyway.
 
 [ ARCANE ]
 - 100 points per mana node built
 To try give you a more thematic way to earn the trait than spamming haste on nothing or join/leave commander.
 - 50 points per mage guild build
 Summoner now has other ways to earn points. You'll likely make progress towards both if you are using arcane units anway.
+- No longer gives points for cast anything.
 
 [ CREATIVE ]
 - 50 points per carnival built.
@@ -37,8 +38,12 @@ CHANGE TO BASE TRAIT - upgrade discount increased to 80% reduction. now gives +1
 
 [ ORGANIZED ]
 - Increased point gain from courthouse to 75 (from 50)
-- Earn 50 points per great commander earned
+- Earn 50 points per great commander 
 Since it gives access to command posts and commander stacks are nice and organized. Just a small boost to a not-that-interesting trait.
+
+[ RAIDERS ]
+- Increased point gain from pillage to 35 (from 10)
+Was too slow to get it without razing cities, and perhaps the best use for raider is to pillage somone without touching cities. 
 
 [ SPIRITUAL ]
 - 50 points per religious temple you build.
@@ -54,14 +59,27 @@ Obviously some overlap between this and arcane, but should be more reasonable to
 - 10 points per melee unit trained
 - 30 points per naval unit trained
 - 50 points per amphibious promotion
-CHANGE TO BASE TRAIT - now gives expanded cargo and navigation 1 (+1 movement) to naval units. I don't think this seriously competes with aggressive but it should at least be more fun to load up some big cargo boats for an amphibious assault.
+CHANGE TO BASE TRAIT - now gives expanded cargo and +1 movement to naval units. I don't think this seriously competes with aggressive but it should at least be more fun to load up some big cargo boats for an amphibious assault.
 
 [ TRADER ]
-Sorry but this trait is so broken late game and so easy to earn that in this one case, there's a nerf. You now earn trader from connecting luxuries (including duplicates) to your trade network, rather than making deals with AI (such as opening and cancelling borders again, or giving gifts of 1 gold...)
-- 40 points per luxury connected to your trade network.
+Sorry but this trait is so broken late game and so easy to earn that in this one case, there's a nerf. You now earn trader from connecting luxuries (including duplicates) to your trade network, rather than making deals with AI (such as opening and cancelling borders again, or giving gifts of 1 gold...), as well as building trade related buildings.
+- 55 points per luxury connected to your trade network.
+(NOTE: There are inconsistencies with how connecting things works and it not granting points properly. I hope you can get enough points with some resources as well as some buildings.)
+- 30 points per harbor and lighthouse built
+- 50 points per inn built
+- 100 points per tavern built
 
 ----
 
 [ CHANGELOG ]
 
 V1 - Initial
+
+V2
+- Arcane no longer gets points from each cast, as that was boring, tedious, and gameable with things like leave/join commander
+- Increased points earned for pillage for Raiders from 10 -> 35
+- Increased points earned for Trader per luxury added to network from 40 -> 55
+- Workshop luxuries now also provide trader points
+
+V3
+- Trader now gets points from building trade related buildings, partly as a work around for connect resources not working properly in some cases

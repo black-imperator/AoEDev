@@ -27,5 +27,15 @@
 			<DefaultUnit>UNIT_NAMKO_ANUBILA</DefaultUnit>
 			<bUnique>1</bUnique>
 		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_ARCHANTEN</Type>
+			<Description>TXT_KEY_UNIT_ARCHANTEN_NAME</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_NAMKO_ARCHANTEN</DefaultUnit>
+			<bUnique>1</bUnique>
+		</UnitClassInfo>
 	</UnitClassInfos>
 </Civ4UnitClassInfos>

@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Promotion Infos -->
+<Civ4PromotionInfos xmlns="x-schema:LOCALHERO_CIV4UnitSchema.xml">
+	<PromotionInfos>
+		<PromotionInfo> <!-- Local Hero -->
+			<Type>PROMOTION_LOCAL_HERO</Type>
+			<bRivalTerritoryBlock>1</bRivalTerritoryBlock>
+			<Description>TXT_KEY_PROMOTION_LOCAL_HERO</Description>
+			<Help>TXT_KEY_PROMOTION_LOCAL_HERO_HELP</Help>
+			<Button>Modules\NormalModules\DrackLocalHero\Art\LocalHero.dds</Button>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Homesickness -->
+			<Type>PROMOTION_HOMESICKNESS</Type>
+			<Description>TXT_KEY_PROMOTION_HOMESICKNESS</Description>
+			<bAutoAcquire>1</bAutoAcquire>
+			<bMustMaintain>1</bMustMaintain>
+			<bNoXP>1</bNoXP>
+			<PrereqPromotionANDs>
+				<PrereqPromotionAND>
+					<PromotionType>PROMOTION_LOCAL_HERO</PromotionType>
+					<iPrereqApplications>1</iPrereqApplications>
+				</PrereqPromotionAND>
+			</PrereqPromotionANDs>
+			<PrereqInBorderEnemy>1</PrereqInBorderEnemy>
+			<PrereqInBorderNone>1</PrereqInBorderNone>
+			<PrereqInBorderRival>1</PrereqInBorderRival>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Modules\NormalModules\DrackLocalHero\Art\Homesickness.dds</Button>
+			<iExtraCombatStr>-3</iExtraCombatStr>
+			<iCombatPercent>-150</iCombatPercent>
+		</PromotionInfo>
+	</PromotionInfos>
+</Civ4PromotionInfos>

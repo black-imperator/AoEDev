@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Basic Infos -->
+<Civ4AffinityInfos xmlns="x-schema:AOSNISIRA_CIV4UnitSchema.xml">
+	<AffinityInfos>
+        <AffinityInfo>  <!-- Mushroom Addiction of Falyn -->
+			<Type>AFFINITY_FALYN_MUSHROOM</Type>
+			<Description>TXT_KEY_AFFINITY_FALYN_MUSHROOM</Description>
+			<Civilopedia>TXT_KEY_AFFINITY_FALYN_MUSHROOM_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_AFFINITY_FALYN_MUSHROOM_STRATEGY</Strategy>
+			<BonusTypes>
+				<BonusType>BONUS_MUSHROOMS</BonusType>
+			</BonusTypes>
+			<fStrengthMod>10</fStrengthMod>
+            <fXPRate>0.5</fXPRate>
+            <fHealRate>5</fHealRate>
+		</AffinityInfo>
+    </AffinityInfos>
+</Civ4AffinityInfos>

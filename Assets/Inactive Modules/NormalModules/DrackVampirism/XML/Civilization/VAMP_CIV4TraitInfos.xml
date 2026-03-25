@@ -16,8 +16,6 @@
 			<Strategy>TXT_KEY_TRAIT_VAMP_CULT_VAMPIRIC_STRATEGY</Strategy>
 			<ShortDescription>TXT_KEY_TRAIT_VAMP_CULT_VAMPIRIC_SHORT</ShortDescription>
 			<bSelectable>0</bSelectable>
-			<bAgnostic>1</bAgnostic>
-			<bIntolerant>1</bIntolerant>
 			<iHealth>-4</iHealth>
 			<ExtraUnitClasses>
 				<ExtraUnitClass>
@@ -135,6 +133,63 @@
 					<BuildingType>BUILDING_VAMP_SANGUINE_ALTAR</BuildingType>
 				</ExtraBuildingClass>
 			</ExtraBuildingClasses>
+        </TraitInfo>
+		<TraitInfo> <!-- Clan Flauros -->
+            <Type>TRAIT_VAMP_CLAN_FLAUROS</Type>
+			<TraitClass>TRAITCLASS_VAMPIRIC_CLAN</TraitClass>
+			<Description>TXT_KEY_TRAIT_VAMP_CLAN_FLAUROS</Description>
+			<Civilopedia>TXT_KEY_TRAIT_VAMP_CLAN_FLAUROS_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_TRAIT_VAMP_CLAN_FLAUROS_STRATEGY</Strategy>
+			<Help>TXT_KEY_TRAIT_VAMP_CLAN_FLAUROS_HELP</Help>
+			<ShortDescription>TXT_KEY_TRAIT_VAMP_CLAN_FLAUROS_SHORT</ShortDescription>
+			<bSelectable>0</bSelectable>
+			<iMilitaryProductionModifier>15</iMilitaryProductionModifier>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_COMMANDO</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
+			</FreePromotions>
+			<FreePromotionUnitCombats>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+			</FreePromotionUnitCombats>
+        </TraitInfo>
+		<TraitInfo> <!-- Clan Ravana -->
+            <Type>TRAIT_VAMP_CLAN_RAVANA</Type>
+			<TraitClass>TRAITCLASS_VAMPIRIC_CLAN</TraitClass>
+			<Description>TXT_KEY_TRAIT_VAMP_CLAN_RAVANA</Description>
+			<Civilopedia>TXT_KEY_TRAIT_VAMP_CLAN_RAVANA_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_TRAIT_VAMP_CLAN_RAVANA_STRATEGY</Strategy>
+			<Help>TXT_KEY_TRAIT_VAMP_CLAN_RAVANA_HELP</Help>
+			<ShortDescription>TXT_KEY_TRAIT_VAMP_CLAN_RAVANA_SHORT</ShortDescription>
+			<bSelectable>0</bSelectable>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_SHOCK</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_VAMP_VAMPIRE_HUNTER</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
+			</FreePromotions>
+			<FreePromotionUnitCombats>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+			</FreePromotionUnitCombats>
         </TraitInfo>
     </TraitInfos>
 </Civ4TraitInfos>

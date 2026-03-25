@@ -7,28 +7,34 @@
 CvSnarkoProfiler::CvSnarkoProfiler()
 {
 	szLastFunc = NULL;
+	iLastTime = 0;
 }
 
 CvSnarkoProfiler::~CvSnarkoProfiler()
 {
 }
 
-void CvSnarkoProfiler::profile(char* szFunc, bool bStopLogging)
+void CvSnarkoProfiler::profile(CvString szFunc, bool bStopLogging)
 {
 	int iNewTime = clock();
 	if (szLastFunc != NULL)
 	{
 		int iTimeDiff = iNewTime - iLastTime;
-		if (iTimeDiff > 1)
+		if (iTimeDiff > 0 && iLastTime !=0)
 		{
 			CvString szTimer;
-			szTimer.Format("last func: %s new func: %s Time elapsed: %i", szLastFunc, szFunc, iTimeDiff);
+			CvString szTemp;
+			szTimer.append(CvString("Now Profiling:"));
+			szTimer.append(szLastFunc);
+			szTemp.Format(" Time elapsed: %i", iTimeDiff);
+			szTimer.append(szTemp);
 			gDLL->logMsg("Profilenew.log", szTimer);
 		}
 	}
 	if (bStopLogging)
 	{
 		szLastFunc = NULL;
+		iLastTime = 0;
 	}
 	else
 	{

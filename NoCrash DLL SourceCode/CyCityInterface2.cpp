@@ -210,6 +210,7 @@ void CyCityPythonInterface2(python::class_<CyCity>& x)
 /**	City Actions							03/28/10								Grey Fox	**/
 /*************************************************************************************************/
 		.def("canCast", &CyCity::canCast, "bool (int spell, bool bTestVisible)")
+			.def("getSpellExtraRange", &CyCity::getSpellExtraRange, "int () - Spell Extra Range")
 /*************************************************************************************************/
 /**	END																							**/
 /*************************************************************************************************/

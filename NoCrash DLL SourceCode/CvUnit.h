@@ -1587,7 +1587,7 @@ public:
 /**						Allows Twincast to cast a seperate spell, and stack						**/
 /*************************************************************************************************/
 /**								---- Start Original Code ----									**
-	bool isTwincast() const;
+	bool getMulticast() const;
 /**								----  End Original Code  ----									**/
 	int getTwincast() const;
 /*************************************************************************************************/

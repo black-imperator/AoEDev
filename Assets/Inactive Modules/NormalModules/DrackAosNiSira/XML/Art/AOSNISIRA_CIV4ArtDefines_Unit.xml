@@ -6,8 +6,7 @@
 <!-- Unit art path information -->
 <Civ4ArtDefines xmlns="x-schema:AOSNISIRA_CIV4ArtDefinesSchema.xml">
 	<UnitArtInfos>
-		<!-- Hero -->
-		<UnitArtInfo>
+		<UnitArtInfo>	<!-- Hero Max Tir Nadur -->
 			<Type>ART_DEF_UNIT_AOSNISIRA_MACTIRNINADUR</Type>
 			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/Sira_Hero_Button.dds</Button>
 			<fScale>0.6</fScale>
@@ -31,8 +30,7 @@
 				<AudioRunTypeEnd />
 			</AudioRunSounds>
 		</UnitArtInfo>
-		<!-- Wolf Pack -->
-		<UnitArtInfo>
+		<UnitArtInfo>	<!-- Wolf Pack -->
 			<Type>ART_DEF_UNIT_AOSNISIRA_BEAST2</Type>
 			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/Sira_Wolf_Button.dds</Button>
 			<fScale>0.8</fScale>
@@ -58,8 +56,7 @@
 			<SelectionSound>AS3D_UN_WOLF_FIDGT_VOX</SelectionSound>
 			<ActionSound>AS3D_UN_WOLF_ATTK_VOX</ActionSound>
 		</UnitArtInfo>
-		<!-- Bear -->
-		<UnitArtInfo>
+		<UnitArtInfo>	<!-- Bear -->
 			<Type>ART_DEF_UNIT_AOSNISIRA_BEAR</Type>
 			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/Sira_Bear_Button.dds</Button>
 			<fScale>1.2</fScale>
@@ -83,8 +80,7 @@
 				<AudioRunTypeEnd />
 			</AudioRunSounds>
 		</UnitArtInfo>
-		<!-- Werewolf -->
-		<UnitArtInfo>
+		<UnitArtInfo>	<!-- Werewolf -->
 			<Type>ART_DEF_UNIT_AOSNISIRA_BEAST3</Type>
 			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/Sira_Werewolf_Button.dds</Button>
 			<fScale>0.4</fScale>
@@ -107,8 +103,7 @@
 				<AudioRunTypeEnd />
 			</AudioRunSounds>
 		</UnitArtInfo>
-		<!-- Possessed Spiders -->
-		<UnitArtInfo>
+		<UnitArtInfo>	<!-- Possessed Spiders -->
 			<Type>ART_DEF_UNIT_AOSNISIRA_BEAST4</Type>
 			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/Sira_Spider_Button.dds</Button>
 			<fScale>0.3</fScale>
@@ -131,8 +126,7 @@
 				<AudioRunTypeEnd />
 			</AudioRunSounds>
 		</UnitArtInfo>
-		<!-- Priest 1 -->
-		<UnitArtInfo>
+		<UnitArtInfo>	<!-- Priest 1 -->
 			<Type>ART_DEF_UNIT_AOSNISIRA_PRIEST1</Type>
 			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/Hunter.dds</Button>
 			<fScale>11</fScale>
@@ -156,8 +150,7 @@
 			</AudioRunSounds>
 			<!--<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>-->
 		</UnitArtInfo>
-		<!-- Priest 2 -->
-		<UnitArtInfo>
+		<UnitArtInfo>	<!-- Priest 2 -->
 			<Type>ART_DEF_UNIT_AOSNISIRA_PRIEST2</Type>
 			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/Ranger.dds</Button>
 			<fScale>11</fScale>
@@ -181,8 +174,7 @@
 			</AudioRunSounds>
 			<!--<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>-->
 		</UnitArtInfo>
-		<!-- Tree Singer (Worker) -->
-		<UnitArtInfo>
+		<UnitArtInfo>	<!-- Tree Singer (Worker) -->
 			<Type>ART_DEF_UNIT_AOSNISIRA_WORKER</Type>
 			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/Sira_Mounted_Button.dds</Button>
 			<fScale>11</fScale>
@@ -206,8 +198,7 @@
 			</AudioRunSounds>
 			<!--<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>-->
 		</UnitArtInfo>
-		<!-- ARCHER -->
-		<UnitArtInfo>
+		<UnitArtInfo>	<!-- ARCHER Longbow-->
 			<Type>ART_DEF_UNIT_AOSNISIRA_ARCHER</Type>
 			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/Sira_Archer_Redesign.dds</Button>
 			<fScale>0.4</fScale>
@@ -231,8 +222,7 @@
 			</AudioRunSounds>
 			<!--<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>-->
 		</UnitArtInfo>
-		<!-- Naval -->
-		<UnitArtInfo>
+		<UnitArtInfo>	<!-- Naval -->
 			<Type>ART_DEF_UNIT_AOSNISIRA_NAVAL</Type>
 			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/Sira_Water_Button.dds</Button>
 			<fScale>0.28</fScale>
@@ -266,8 +256,7 @@
 				<AudioRunTypeEnd/>
 			</AudioRunSounds>
 		</UnitArtInfo>
-		<!-- Adept -->
-		<UnitArtInfo>
+		<UnitArtInfo>	<!-- Adept -->
 			<Type>ART_DEF_UNIT_AOSNISIRA_ADEPT</Type>
 			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/Sira_Adept_Button.dds</Button>
 			<fScale>11</fScale>
@@ -291,8 +280,7 @@
 			</AudioRunSounds>
 			<!--<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>-->
 		</UnitArtInfo>
-		<!-- Mage -->
-		<UnitArtInfo>
+		<UnitArtInfo>	<!-- Mage -->
 			<Type>ART_DEF_UNIT_AOSNISIRA_MAGE</Type>
 			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/Sira_Mage_Button.dds</Button>
 			<fScale>14</fScale>
@@ -316,8 +304,7 @@
 			</AudioRunSounds>
 			<!--<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>-->
 		</UnitArtInfo>
-		<!-- Archmage -->
-		<UnitArtInfo>
+		<UnitArtInfo>	<!-- Archmage -->
 			<Type>ART_DEF_UNIT_AOSNISIRA_ARCHMAGE</Type>
 			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/Sira_Archmage_Button.dds</Button>
 			<fScale>18</fScale>

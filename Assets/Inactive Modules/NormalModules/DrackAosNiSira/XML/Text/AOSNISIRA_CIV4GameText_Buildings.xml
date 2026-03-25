@@ -99,5 +99,12 @@
         <Tag>TXT_KEY_BUILDING_AOSNISIRA_PAGAN_TEMPLE_STRATEGY</Tag>
         <English>The Deep Roots Temple grants the Woodman 1 promotion as well as giving an extra happiness for access to deers.</English>
     </TEXT>
-    
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FAIRY_PILLAR</Tag>
+        <English>Fairy Pillar</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FAIRY_PILLAR_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
 </Civ4GameText>

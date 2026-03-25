@@ -108,7 +108,7 @@
 				 </ReligionWeightModifier>
 				 <ReligionWeightModifier>
 					<ReligionType>RELIGION_COUNCIL_OF_ESUS</ReligionType>
-					<iWeightModifier>0</iWeightModifier>
+					<iWeightModifier>-100</iWeightModifier>
 				 </ReligionWeightModifier>
 				 <ReligionWeightModifier>
 					<ReligionType>RELIGION_WHITE_HAND</ReligionType>
@@ -551,7 +551,7 @@
 				 </ReligionWeightModifier>
 				 <ReligionWeightModifier>
 					<ReligionType>RELIGION_COUNCIL_OF_ESUS</ReligionType>
-					<iWeightModifier>0</iWeightModifier>
+					<iWeightModifier>-100</iWeightModifier>
 				 </ReligionWeightModifier>
 				 <ReligionWeightModifier>
 					<ReligionType>RELIGION_WHITE_HAND</ReligionType>
@@ -990,7 +990,7 @@
 				 </ReligionWeightModifier>
 				 <ReligionWeightModifier>
 					<ReligionType>RELIGION_COUNCIL_OF_ESUS</ReligionType>
-					<iWeightModifier>0</iWeightModifier>
+					<iWeightModifier>-100</iWeightModifier>
 				 </ReligionWeightModifier>
 				 <ReligionWeightModifier>
 					<ReligionType>RELIGION_WHITE_HAND</ReligionType>
@@ -1338,7 +1338,7 @@
 			<ArtDefineTag>ART_DEF_LEADER_SABRINA</ArtDefineTag>
 			<LeaderClass>LEADERCLASS_TEUHALI_IMPORTANT</LeaderClass>
 			<Alignment>ALIGNMENT_NEUTRAL</Alignment>
-			<EthicalAlignment>ETHICAL_ALIGNMENT_NEUTRAL</EthicalAlignment>
+			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
 			<bFemale>1</bFemale>
 			<Traits>
 				<Trait> 
@@ -1429,7 +1429,7 @@
 				 </ReligionWeightModifier>
 				 <ReligionWeightModifier>
 					<ReligionType>RELIGION_COUNCIL_OF_ESUS</ReligionType>
-					<iWeightModifier>0</iWeightModifier>
+					<iWeightModifier>-100</iWeightModifier>
 				 </ReligionWeightModifier>
 				 <ReligionWeightModifier>
 					<ReligionType>RELIGION_WHITE_HAND</ReligionType>
@@ -1868,7 +1868,7 @@
 				 </ReligionWeightModifier>
 				 <ReligionWeightModifier>
 					<ReligionType>RELIGION_COUNCIL_OF_ESUS</ReligionType>
-					<iWeightModifier>80</iWeightModifier>
+					<iWeightModifier>-100</iWeightModifier>
 				 </ReligionWeightModifier>
 				 <ReligionWeightModifier>
 					<ReligionType>RELIGION_WHITE_HAND</ReligionType>
@@ -2216,7 +2216,7 @@
 			<ArtDefineTag>ART_DEF_LEADER_BRUNHILDE_VON_MITTE</ArtDefineTag>
 			<LeaderClass>LEADERCLASS_TEUHALI_IMPORTANT</LeaderClass>
 			<Alignment>ALIGNMENT_EVIL</Alignment>
-			<EthicalAlignment>ETHICAL_ALIGNMENT_NEUTRAL</EthicalAlignment>
+			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
 			<bFemale>1</bFemale>
 			<Traits>
 				<Trait> 
@@ -2307,7 +2307,7 @@
 				 </ReligionWeightModifier>
 				 <ReligionWeightModifier>
 					<ReligionType>RELIGION_COUNCIL_OF_ESUS</ReligionType>
-					<iWeightModifier>25</iWeightModifier>
+					<iWeightModifier>-100</iWeightModifier>
 				 </ReligionWeightModifier>
 				 <ReligionWeightModifier>
 					<ReligionType>RELIGION_WHITE_HAND</ReligionType>

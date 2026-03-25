@@ -87,6 +87,7 @@
 	<ElementType name="iFreedomAppreciation" content="textOnly" dt:type="int"/>
 	<ElementType name="FavoriteCivic" content="textOnly"/>
 	<ElementType name="TraitType" content="textOnly"/>
+	<ElementType name="PrimaryLeader" content="textOnly"/>
 	<ElementType name="bTrait" content="textOnly" dt:type="boolean"/>
 	<ElementType name="Trait" content="eltOnly">
 		<element type="TraitType"/>
@@ -196,6 +197,7 @@
 		<element type="DiploMusicWarEra" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="bFemale" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bRandom" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bNotMercenaryCiv" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bNoCrimeCiv" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bGraphicalOnly" content="textOnly" dt:type="boolean"/>
@@ -214,6 +216,7 @@
 	<ElementType name="EthicalAlignment" content="textOnly"/>
 	<ElementType name="iEthicalAlignmentModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="bTrueNeutral" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bLeaderVariant" content="textOnly" dt:type="boolean"/>
 	<ElementType name="FavoriteWonder" content="textOnly"/>
 	<ElementType name="iHatedCivicAttitudeChange" content="textOnly" dt:type="int"/>
 	<ElementType name="iHatedCivicAttitudeDivisor" content="textOnly" dt:type="int"/>
@@ -396,6 +399,7 @@
 		<element type="iVassalPowerModifier"/>
 		<element type="iFreedomAppreciation"/>
 		<element type="FavoriteCivic"/>
+		<element type="PrimaryLeader"/>
 		<element type="Traits"/>
 		<element type="Flavors"/>
 		<element type="ContactRands"/>
@@ -410,6 +414,7 @@
 		<element type="DiplomacyIntroMusicWar"/>
 		<element type="DiplomacyMusicWar"/>
 		<element type="bFemale"/>
+		<element type="bRandom"/>
 		<element type="bGraphicalOnly"/>
 		<element type="iAttitudeBadBonus"/>
 		<element type="iAttitudeCompassionHigh"/>
@@ -425,6 +430,7 @@
 		<element type="EthicalAlignment"/>
 		<element type="iEthicalAlignmentModifier"/>
 		<element type="bTrueNeutral"/>
+		<element type="bLeaderVariant"/>
 		<element type="FavoriteWonder"/>
 		<element type="PermanentTrait"/>
 		<element type="iHatedCivicAttitudeChange"/>
@@ -486,6 +492,8 @@
 	<ElementType name="bSelectable" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bSprawling" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bOverflowProduction" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bFoodUnitProduction" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bFoodBuildingProduction" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bNomadic" content="textOnly" dt:type="boolean"/>
 	<ElementType name="iFreeXPFromCombat" content="textOnly" dt:type="float"/>
 	<ElementType name="iMaxCities" content="textOnly" dt:type="int"/>
@@ -763,6 +771,8 @@
 		<element type="bSelectable"/>
 		<element type="bSprawling"/>
 		<element type="bOverflowProduction"/>
+		<element type="bFoodUnitProduction"/>
+		<element type="bFoodBuildingProduction"/>
 		<element type="bNomadic"/>
 		<element type="iFreeXPFromCombat"/>
 		<element type="iMaxCities"/>
@@ -794,6 +804,7 @@
 		<element type="PeakYieldChange"/>
 		<element type="SpecialistYieldChanges"/>
 		<element type="SpecialistCommerceChanges"/>
+		<element type="ReligionWeightModifiers"/>
 	</ElementType>
 	<ElementType name="TraitInfos" content="eltOnly">
 		<element type="TraitInfo" maxOccurs="*"/>
@@ -1172,6 +1183,7 @@
 	<ElementType name="bPrereqPeak" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bFirst" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bOncePerPlayer" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bGameSpeedScale" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bPrereqCoastalCity" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bPrereqShrine" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bPrereqWonder" content="textOnly" dt:type="boolean"/>
@@ -1268,6 +1280,7 @@
 		<element type="bPrereqPeak" minOccurs="0"/>
 		<element type="bFirst" minOccurs="0"/>
 		<element type="bOncePerPlayer" minOccurs="0"/>
+		<element type="bGameSpeedScale" minOccurs="0"/>
 		<element type="bPrereqCoastalCity" minOccurs="0"/>
 		<element type="bPrereqShrine" minOccurs="0"/>
 		<element type="bPrereqWonder" minOccurs="0"/>

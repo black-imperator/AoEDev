@@ -98,14 +98,18 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_LIBRARY</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
+					<BuildingType>BUILDING_DOKUMENTENSTUBE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_TAX_OFFICE</BuildingClassType>
 					<BuildingType>NONE</BuildingType>
 				</Building>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_GREAT_LIBRARY</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_THIEVES_DEN</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_POISONER_WORKSHOP</BuildingClassType>
 					<BuildingType>NONE</BuildingType>
 				</Building>
 			</Buildings>
@@ -160,6 +164,18 @@
                 </Unit>
 				<Unit>
                     <UnitClassType>UNITCLASS_IMMORTAL</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+				<Unit>
+                    <UnitClassType>UNITCLASS_IMMORTAL</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+				<Unit>
+                    <UnitClassType>UNITCLASS_THIEF</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+				<Unit>
+                    <UnitClassType>UNITCLASS_ASSASSIN</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
 			</Units>
@@ -290,6 +306,38 @@
 						<iYield>1</iYield>
 						<iYield>0</iYield>
 						<iYield>0</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_COTTAGE</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>-1</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_HAMLET</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+						<iYield>-1</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_VILLAGE</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+						<iYield>-2</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_TOWN</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+						<iYield>-2</iYield>
 					</ImprovementYields>
 				</ImprovementYieldChange>
 			</ImprovementYieldChanges>

@@ -2280,6 +2280,10 @@
 					<fTrainXPRate>0.50</fTrainXPRate>
 				</TrainXPRate>
 				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<fTrainXPRate>0.50</fTrainXPRate>
+				</TrainXPRate>
+				<TrainXPRate>
 					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
 					<fTrainXPRate>0.50</fTrainXPRate>
 				</TrainXPRate>

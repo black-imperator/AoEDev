@@ -8108,6 +8108,10 @@ void CvGameTextMgr::parseTraits(CvWStringBuffer &szHelpString, TraitTypes eTrait
 		{
 			szHelpString.append(gDLL->getText("TXT_KEY_TRAIT_IGNORE_FOOD_HELP"));
 		}
+		if (GC.getTraitInfo(eTrait).isIgnoreProduction())
+		{
+			szHelpString.append(gDLL->getText("TXT_KEY_TRAIT_IGNORE_PRODUCTION_HELP"));
+		}
 		if (GC.getTraitInfo(eTrait).isIgnoreHealth())
 		{
 			szHelpString.append(gDLL->getText("TXT_KEY_TRAIT_IGNORE_HEALTH_HELP"));
@@ -8835,6 +8839,28 @@ void CvGameTextMgr::parseAffinities(CvWStringBuffer &szHelpString, AffinityTypes
 		}
 		szHelpString.append(gDLL->getText("TXT_KEY_AFFINITY_STRENGTH_MOD_DEFENSE", szTemp.GetCString()));
 	}
+	fValue = kAffinity.getCityDefenseMod();
+	szTemp.clear();
+	if (fValue != 0.0f)
+	{
+		if (!bInit)
+		{
+			szHelpString.append(NEWLINE);
+		}
+		else
+		{
+			bInit = false;
+		}
+		if (fValue == int(fValue))
+		{
+			szTemp.Format(L"%.0f", fValue);
+		}
+		else
+		{
+			szTemp.Format(L"%.2f", fValue);
+		}
+		szHelpString.append(gDLL->getText("TXT_KEY_AFFINITY_CITY_STRENGTH_MOD_DEFENSE", szTemp.GetCString()));
+	}
 	fValue = kAffinity.getMovement();
 	szTemp.clear();
 	if (fValue != 0.0f)
@@ -9362,6 +9388,28 @@ void CvGameTextMgr::parseAffinities(CvWStringBuffer &szHelpString, AffinityTypes
 			szTemp.Format(L"%.2f", fValue);
 		}
 		szHelpString.append(gDLL->getText("TXT_KEY_AFFINITY_COLLATERAL", szTemp.GetCString()));
+	}
+	fValue = kAffinity.getCollateralProtection();
+	szTemp.clear();
+	if (fValue != 0.0f)
+	{
+		if (!bInit)
+		{
+			szHelpString.append(NEWLINE);
+		}
+		else
+		{
+			bInit = false;
+		}
+		if (fValue == int(fValue))
+		{
+			szTemp.Format(L"%.0f", fValue);
+		}
+		else
+		{
+			szTemp.Format(L"%.2f", fValue);
+		}
+		szHelpString.append(gDLL->getText("TXT_KEY_AFFINITY_COLLATERAL_PROTECTION", szTemp.GetCString()));
 	}
 	fValue = kAffinity.getCollateralLimit();
 	szTemp.clear();
@@ -11777,6 +11825,12 @@ void CvGameTextMgr::parsePromotionHelp(CvWStringBuffer &szBuffer, PromotionTypes
 		}
 	}
 
+	if (GC.getPromotionInfo(ePromotion).getPromotionClassOverwrite() != NO_PROMOTIONCLASS)
+	{
+		szBuffer.append(pcNewline);
+		szBuffer.append(gDLL->getText("TXT_KEY_PROMOTIONCLASS_OVERWRITE", GC.getPromotionClassInfo(GC.getPromotionInfo(ePromotion).getPromotionClassOverwrite()).getDescription()));
+	}
+
 	if (GC.getPromotionInfo(ePromotion).getDuration() != 0)
 	{
 		szBuffer.append(pcNewline);
@@ -13960,10 +14014,10 @@ void CvGameTextMgr::parsePromotionHelp(CvWStringBuffer &szBuffer, PromotionTypes
 		szBuffer.append(pcNewline);
 		szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_DOUBLE_FORTIFY_BONUS"));
 	}
-	if (GC.getPromotionInfo(ePromotion).isTwincast())
+	if (GC.getPromotionInfo(ePromotion).getMulticast()>0)
 	{
 		szBuffer.append(pcNewline);
-		szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_TWINCAST_PEDIA"));
+		szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_TWINCAST_PEDIA", GC.getPromotionInfo(ePromotion).getMulticast()));
 	}
 	if (GC.getPromotionInfo(ePromotion).isWaterWalking())
 	{
@@ -20202,6 +20256,12 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 		szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_GOLDEN_AGE"));
 	}
 
+	if (kBuilding.isFoodProduction())
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_FOOD_PRODUCTION"));
+	}
+
 	if (kBuilding.isAllowsNukes())
 	{
 		szBuffer.append(NEWLINE);
@@ -21901,20 +21961,6 @@ void CvGameTextMgr::buildBuildingRequiresString(CvWStringBuffer& szBuffer, Build
 
 				szBuffer.append(szTempBuffer);
 			}
-			if (ePlayer == NO_PLAYER && kBuilding.getPrereqBuildingClassAtRange(eLoopBuildingClass) != 0)
-			{
-				if (kBuilding.getPrereqBuildingClassAtRange(eLoopBuildingClass) > 0)
-				{
-					eLoopBuilding = (BuildingTypes)GC.getBuildingClassInfo(eLoopBuildingClass).getDefaultBuildingIndex();
-					szTempBuffer.Format(L"%s%s", NEWLINE, gDLL->getText("TXT_KEY_BUILDING_REQUIRES_BUILDING_AT_RANGE", GC.getBuildingInfo(eLoopBuilding).getTextKeyWide(), kBuilding.getPrereqBuildingClassAtRange(eLoopBuildingClass)).c_str());
-				}
-				else
-				{
-					eLoopBuilding = (BuildingTypes)GC.getBuildingClassInfo(eLoopBuildingClass).getDefaultBuildingIndex();
-					szTempBuffer.Format(L"%s%s", NEWLINE, gDLL->getText("TXT_KEY_BUILDING_REQUIRES_BUILDING_AT_ANY_RANGE", GC.getBuildingInfo(eLoopBuilding).getTextKeyWide()).c_str());
-				}
-				szBuffer.append(szTempBuffer);
-			}
 			else if (ePlayer != NO_PLAYER && GET_PLAYER(ePlayer).getBuildingClassPrereqBuilding(eBuilding, (eLoopBuildingClass)) > 0)
 			{
 				if ((pCity == NULL) || (GET_PLAYER(ePlayer).getBuildingClassCount(eLoopBuildingClass) < GET_PLAYER(ePlayer).getBuildingClassPrereqBuilding(eBuilding, (eLoopBuildingClass))))
@@ -21991,6 +22037,35 @@ void CvGameTextMgr::buildBuildingRequiresString(CvWStringBuffer& szBuffer, Build
 						}
 					}
 				}
+			}
+			if (ePlayer == NO_PLAYER && kBuilding.getPrereqBuildingClassAtRange(eLoopBuildingClass) != 0)
+			{
+				if (kBuilding.getPrereqBuildingClassAtRange(eLoopBuildingClass) > 0)
+				{
+					eLoopBuilding = (BuildingTypes)GC.getBuildingClassInfo(eLoopBuildingClass).getDefaultBuildingIndex();
+					szTempBuffer.Format(L"%s%s", NEWLINE, gDLL->getText("TXT_KEY_BUILDING_REQUIRES_BUILDING_AT_RANGE", GC.getBuildingInfo(eLoopBuilding).getTextKeyWide(), kBuilding.getPrereqBuildingClassAtRange(eLoopBuildingClass)).c_str());
+				}
+				else
+				{
+					eLoopBuilding = (BuildingTypes)GC.getBuildingClassInfo(eLoopBuildingClass).getDefaultBuildingIndex();
+					szTempBuffer.Format(L"%s%s", NEWLINE, gDLL->getText("TXT_KEY_BUILDING_REQUIRES_BUILDING_AT_ANY_RANGE", GC.getBuildingInfo(eLoopBuilding).getTextKeyWide()).c_str());
+				}
+				szBuffer.append(szTempBuffer);
+			}
+			else if (ePlayer != NO_PLAYER && kBuilding.getPrereqBuildingClassAtRange(eLoopBuildingClass) != 0)
+			{
+				if (kBuilding.getPrereqBuildingClassAtRange(eLoopBuildingClass) > 0)
+				{
+					eLoopBuilding = ((BuildingTypes)(GC.getCivilizationInfo(GET_PLAYER(ePlayer).getCivilizationType()).getCivilizationBuildings(iLoopBuildingClass)));
+					szTempBuffer.Format(L"%s%s", NEWLINE, gDLL->getText("TXT_KEY_BUILDING_REQUIRES_BUILDING_AT_RANGE", GC.getBuildingInfo(eLoopBuilding).getTextKeyWide(), kBuilding.getPrereqBuildingClassAtRange(eLoopBuildingClass)).c_str());
+				}
+				else
+				{
+					eLoopBuilding = ((BuildingTypes)(GC.getCivilizationInfo(GET_PLAYER(ePlayer).getCivilizationType()).getCivilizationBuildings(iLoopBuildingClass)));
+					szTempBuffer.Format(L"%s%s", NEWLINE, gDLL->getText("TXT_KEY_BUILDING_REQUIRES_BUILDING_AT_ANY_RANGE", GC.getBuildingInfo(eLoopBuilding).getTextKeyWide()).c_str());
+				}
+				szBuffer.append(szTempBuffer);
+
 			}
 /*************************************************************************************************/
 /** Building help - Requires building                                                       END **/
@@ -23038,6 +23113,12 @@ void CvGameTextMgr::setProjectHelp(CvWStringBuffer &szBuffer, ProjectTypes eProj
 				szBuffer.append(gDLL->getText("TXT_KEY_COLOR_REVERT"));
 			}
 		}
+	}
+
+	if (!CvWString(kProject.getHelp()).empty())
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(kProject.getHelp());
 	}
 }
 
@@ -34089,7 +34170,7 @@ void CvGameTextMgr::parseTraitReqs(CvWStringBuffer& szHelpString, TraitTypes eTr
 				}
 				else
 				{
-
+					szTempBuffer3.Format(L"(%i)", GC.getTraitTriggerInfo((TraitTriggerTypes)eTrigger).getTraitCounterChange(eTrait));
 				}
 				szHelpString.append(szTempBuffer3);
 			}

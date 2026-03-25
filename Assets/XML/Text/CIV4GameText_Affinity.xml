@@ -134,6 +134,14 @@
 		<Spanish>[ICON_BULLET]%s1% Defense</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_AFFINITY_CITY_STRENGTH_MOD_DEFENSE</Tag>
+		<English>[ICON_BULLET]%s1% City Defense</English>
+		<French>[ICON_BULLET]%s1% de puissance défensive de Ville</French>
+		<German>[ICON_BULLET]%s1% City Defense</German>
+		<Italian>[ICON_BULLET]%s1% City Defense</Italian>
+		<Spanish>[ICON_BULLET]%s1% City Defense</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_AFFINITY_MOVEMENT</Tag>
 		<English>[ICON_BULLET]%s1 Movement</English>
 		<French>[ICON_BULLET]%s1 Mouvement</French>
@@ -324,6 +332,14 @@
 		<German>[ICON_BULLET]%s1% Kollateralschaden</German>
 		<Italian>[ICON_BULLET]%s1% Danno Collaterale</Italian>
 		<Spanish>[ICON_BULLET]%s1% Collateral Damage</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_AFFINITY_COLLATERAL_PROTECTION</Tag>
+		<English>[ICON_BULLET]%s1% Collateral Protection</English>
+		<French>[ICON_BULLET]%s1% Collateral Protection</French>
+		<German>[ICON_BULLET]%s1% Collateral Protection</German>
+		<Italian>[ICON_BULLET]%s1% Collateral Protection</Italian>
+		<Spanish>[ICON_BULLET]%s1% Collateral Protection</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_AFFINITY_COLLATERAL_LIMIT</Tag>

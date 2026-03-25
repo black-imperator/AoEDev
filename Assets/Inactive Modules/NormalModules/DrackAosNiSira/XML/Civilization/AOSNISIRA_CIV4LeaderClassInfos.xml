@@ -7,137 +7,252 @@
 
 <Civ4LeaderClassInfos xmlns="x-schema:AOSNISIRA_CIV4CivilizationsSchema.xml">
 	<LeaderClassInfos>
-		<LeaderClassInfo> <!--Sira Historical-->
+		<LeaderClassInfo> <!-- Sira Historical-->
 			<Type>LEADERCLASS_SIRA_HISTORICAL</Type>
 			<Description>TXT_KEY_LEADERCLASS_HISTORICAL</Description>
 			<LeaderStatus>HISTORICAL_STATUS</LeaderStatus>
 			<MaxTraitsPerClass>
-			<TraitClassMax>
-				<TraitClass>TRAITCLASS_PERSONALITY</TraitClass>
-				<iMax>2</iMax>
-			</TraitClassMax>
-			<TraitClassMax>
-				<TraitClass>TRAITCLASS_SIRA</TraitClass>
-				<iMax>1</iMax>
-			</TraitClassMax>
+				<TraitClassMax>
+					<TraitClass>TRAITCLASS_PERSONALITY</TraitClass>
+					<iMax>2</iMax>
+				</TraitClassMax>
+				<TraitClassMax>
+					<TraitClass>TRAITCLASS_SIRA</TraitClass>
+					<iMax>1</iMax>
+				</TraitClassMax>
 			</MaxTraitsPerClass>
 			<EvolveTraitClasses>
-			<TraitClassEvolve>
-				<TraitClass>TRAITCLASS_SIRA</TraitClass>
-				<bChange>1</bChange>
-			</TraitClassEvolve>
+				<TraitClassEvolve>
+					<TraitClass>TRAITCLASS_SIRA</TraitClass>
+					<bChange>1</bChange>
+				</TraitClassEvolve>
 			</EvolveTraitClasses>
-			
+
 		</LeaderClassInfo>
-		<LeaderClassInfo> <!--Sira Emergent-->
+		<LeaderClassInfo> <!-- Sira Emergent-->
 			<Type>LEADERCLASS_SIRA_EMERGENT</Type>
 			<Description>TXT_KEY_LEADERCLASS_EMERGENT</Description>
 			<LeaderStatus>EMERGENT_STATUS</LeaderStatus>
 			<MaxTraitsPerClass>
-			<TraitClassMax>
-				<TraitClass>TRAITCLASS_EMERGENT</TraitClass>
-				<iMax>1</iMax>
-			</TraitClassMax>
-			<TraitClassMax>
-				<TraitClass>TRAITCLASS_SIRA</TraitClass>
-				<iMax>1</iMax>
-			</TraitClassMax>
+				<TraitClassMax>
+					<TraitClass>TRAITCLASS_EMERGENT</TraitClass>
+					<iMax>1</iMax>
+				</TraitClassMax>
+				<TraitClassMax>
+					<TraitClass>TRAITCLASS_SIRA</TraitClass>
+					<iMax>1</iMax>
+				</TraitClassMax>
 			</MaxTraitsPerClass>
 			<EvolveTraitClasses>
-			<TraitClassEvolve>
-				<TraitClass>TRAITCLASS_SIRA</TraitClass>
-				<bChange>1</bChange>
-			</TraitClassEvolve>
-			<TraitClassEvolve>
-				<TraitClass>TRAITCLASS_EMERGENT</TraitClass>
-				<bChange>1</bChange>
-			</TraitClassEvolve>
+				<TraitClassEvolve>
+					<TraitClass>TRAITCLASS_SIRA</TraitClass>
+					<bChange>1</bChange>
+				</TraitClassEvolve>
+				<TraitClassEvolve>
+					<TraitClass>TRAITCLASS_EMERGENT</TraitClass>
+					<bChange>1</bChange>
+				</TraitClassEvolve>
 			</EvolveTraitClasses>
 		</LeaderClassInfo>
-		<LeaderClassInfo> <!--Sira Important-->
+		<LeaderClassInfo> <!-- Sira Important-->
 			<Type>LEADERCLASS_SIRA_IMPORTANT</Type>
 			<Description>TXT_KEY_LEADERCLASS_IMPORTANT</Description>
 			<LeaderStatus>IMPORTANT_STATUS</LeaderStatus>
 			<MaxTraitsPerClass>
-			<TraitClassMax>
-				<TraitClass>TRAITCLASS_PERSONALITY</TraitClass>
-				<iMax>3</iMax>
-			</TraitClassMax>
-			<TraitClassMax>
-				<TraitClass>TRAITCLASS_SIRA</TraitClass>
-				<iMax>1</iMax>
-			</TraitClassMax>
+				<TraitClassMax>
+					<TraitClass>TRAITCLASS_PERSONALITY</TraitClass>
+					<iMax>3</iMax>
+				</TraitClassMax>
+				<TraitClassMax>
+					<TraitClass>TRAITCLASS_SIRA</TraitClass>
+					<iMax>1</iMax>
+				</TraitClassMax>
 			</MaxTraitsPerClass>
 			<EvolveTraitClasses>
-			<TraitClassEvolve>
-				<TraitClass>TRAITCLASS_SIRA</TraitClass>
-				<bChange>1</bChange>
-			</TraitClassEvolve>
-			<TraitClassEvolve>
-				<TraitClass>TRAITCLASS_PERSONALITY</TraitClass>
-				<bChange>1</bChange>
-			</TraitClassEvolve>
+				<TraitClassEvolve>
+					<TraitClass>TRAITCLASS_SIRA</TraitClass>
+					<bChange>1</bChange>
+				</TraitClassEvolve>
+				<TraitClassEvolve>
+					<TraitClass>TRAITCLASS_PERSONALITY</TraitClass>
+					<bChange>1</bChange>
+				</TraitClassEvolve>
 			</EvolveTraitClasses>
 		</LeaderClassInfo>
-		<LeaderClassInfo> <!--Sira DYNREL Historical-->
+		<LeaderClassInfo> <!-- Sira DYNREL Historical-->
 			<Type>LEADERCLASS_SIRA_HISTORICAL</Type>
 			<bTypeDependency>1</bTypeDependency>
 			<AndDependencyTypes>
-			<DependencyType>MODULE_DYNAMIC_RELIGION</DependencyType>
+				<DependencyType>MODULE_DYNAMIC_RELIGION</DependencyType>
 			</AndDependencyTypes>
 			<MaxTraitsPerClass>
-			<TraitClassMax>
-				<TraitClass>TRAITCLASS_RELIGION</TraitClass>
-				<iMax>8</iMax>
-			</TraitClassMax>
+				<TraitClassMax>
+					<TraitClass>TRAITCLASS_RELIGION</TraitClass>
+					<iMax>8</iMax>
+				</TraitClassMax>
 			</MaxTraitsPerClass>
 			<EvolveTraitClasses>
-			<TraitClassEvolve>
-				<TraitClass>TRAITCLASS_RELIGION</TraitClass>
-				<bChange>1</bChange>
-			</TraitClassEvolve>
+				<TraitClassEvolve>
+					<TraitClass>TRAITCLASS_RELIGION</TraitClass>
+					<bChange>1</bChange>
+				</TraitClassEvolve>
 			</EvolveTraitClasses>
-			
+
 		</LeaderClassInfo>
-		<LeaderClassInfo> <!--Sira DYNREL Emergent-->
+		<LeaderClassInfo> <!-- Sira DYNREL Emergent-->
 			<Type>LEADERCLASS_SIRA_EMERGENT</Type>
 			<bTypeDependency>1</bTypeDependency>
 			<AndDependencyTypes>
-			<DependencyType>MODULE_DYNAMIC_RELIGION</DependencyType>
+				<DependencyType>MODULE_DYNAMIC_RELIGION</DependencyType>
 			</AndDependencyTypes>
 			<MaxTraitsPerClass>
-			<TraitClassMax>
-				<TraitClass>TRAITCLASS_RELIGION</TraitClass>
-				<iMax>8</iMax>
-			</TraitClassMax>
+				<TraitClassMax>
+					<TraitClass>TRAITCLASS_RELIGION</TraitClass>
+					<iMax>8</iMax>
+				</TraitClassMax>
 			</MaxTraitsPerClass>
 			<EvolveTraitClasses>
-			<TraitClassEvolve>
-				<TraitClass>TRAITCLASS_RELIGION</TraitClass>
-				<bChange>1</bChange>
-			</TraitClassEvolve>
+				<TraitClassEvolve>
+					<TraitClass>TRAITCLASS_RELIGION</TraitClass>
+					<bChange>1</bChange>
+				</TraitClassEvolve>
 			</EvolveTraitClasses>
-			
+
 		</LeaderClassInfo>
-		<LeaderClassInfo> <!--Sira DYNREL Important-->
+		<LeaderClassInfo> <!-- Sira DYNREL Important-->
 			<Type>LEADERCLASS_SIRA_IMPORTANT</Type>
 			<bTypeDependency>1</bTypeDependency>
 			<AndDependencyTypes>
-			<DependencyType>MODULE_DYNAMIC_RELIGION</DependencyType>
+				<DependencyType>MODULE_DYNAMIC_RELIGION</DependencyType>
 			</AndDependencyTypes>
 			<MaxTraitsPerClass>
-			<TraitClassMax>
-				<TraitClass>TRAITCLASS_RELIGION</TraitClass>
-				<iMax>8</iMax>
-			</TraitClassMax>
+				<TraitClassMax>
+					<TraitClass>TRAITCLASS_RELIGION</TraitClass>
+					<iMax>8</iMax>
+				</TraitClassMax>
 			</MaxTraitsPerClass>
 			<EvolveTraitClasses>
-			<TraitClassEvolve>
-				<TraitClass>TRAITCLASS_RELIGION</TraitClass>
-				<bChange>1</bChange>
-			</TraitClassEvolve>
+				<TraitClassEvolve>
+					<TraitClass>TRAITCLASS_RELIGION</TraitClass>
+					<bChange>1</bChange>
+				</TraitClassEvolve>
 			</EvolveTraitClasses>
-			
+
+		</LeaderClassInfo>
+		<LeaderClassInfo> <!-- Fairy Historical-->
+			<Type>LEADERCLASS_FAIRY_HISTORICAL</Type>
+			<Description>TXT_KEY_LEADERCLASS_HISTORICAL</Description>
+			<LeaderStatus>HISTORICAL_STATUS</LeaderStatus>
+			<MaxTraitsPerClass>
+				<TraitClassMax>
+					<TraitClass>TRAITCLASS_PERSONALITY</TraitClass>
+					<iMax>2</iMax>
+				</TraitClassMax>
+				<TraitClassMax>
+					<TraitClass>TRAITCLASS_FAIRY_HOUSE</TraitClass>
+					<iMax>3</iMax>
+				</TraitClassMax>
+			</MaxTraitsPerClass>
+
+		</LeaderClassInfo>
+		<LeaderClassInfo> <!-- Fairy Emergent-->
+			<Type>LEADERCLASS_FAIRY_EMERGENT</Type>
+			<Description>TXT_KEY_LEADERCLASS_EMERGENT</Description>
+			<LeaderStatus>EMERGENT_STATUS</LeaderStatus>
+			<MaxTraitsPerClass>
+				<TraitClassMax>
+					<TraitClass>TRAITCLASS_EMERGENT</TraitClass>
+					<iMax>1</iMax>
+				</TraitClassMax>
+				<TraitClassMax>
+					<TraitClass>TRAITCLASS_FAIRY_HOUSE</TraitClass>
+					<iMax>3</iMax>
+				</TraitClassMax>
+			</MaxTraitsPerClass>
+			<EvolveTraitClasses>
+				<TraitClassEvolve>
+					<TraitClass>TRAITCLASS_EMERGENT</TraitClass>
+					<bChange>1</bChange>
+				</TraitClassEvolve>
+			</EvolveTraitClasses>
+		</LeaderClassInfo>
+		<LeaderClassInfo> <!-- Fairy Important-->
+			<Type>LEADERCLASS_FAIRY_IMPORTANT</Type>
+			<Description>TXT_KEY_LEADERCLASS_IMPORTANT</Description>
+			<LeaderStatus>IMPORTANT_STATUS</LeaderStatus>
+			<MaxTraitsPerClass>
+				<TraitClassMax>
+					<TraitClass>TRAITCLASS_PERSONALITY</TraitClass>
+					<iMax>3</iMax>
+				</TraitClassMax>
+				<TraitClassMax>
+					<TraitClass>TRAITCLASS_FAIRY_HOUSE</TraitClass>
+					<iMax>3</iMax>
+				</TraitClassMax>
+			</MaxTraitsPerClass>
+			<EvolveTraitClasses>
+				<TraitClassEvolve>
+					<TraitClass>TRAITCLASS_PERSONALITY</TraitClass>
+					<bChange>1</bChange>
+				</TraitClassEvolve>
+			</EvolveTraitClasses>
+		</LeaderClassInfo>
+		<LeaderClassInfo> <!-- Fairy DYNREL Historical-->
+			<Type>LEADERCLASS_FAIRY_HISTORICAL</Type>
+			<bTypeDependency>1</bTypeDependency>
+			<AndDependencyTypes>
+				<DependencyType>MODULE_DYNAMIC_RELIGION</DependencyType>
+			</AndDependencyTypes>
+			<MaxTraitsPerClass>
+				<TraitClassMax>
+					<TraitClass>TRAITCLASS_RELIGION</TraitClass>
+					<iMax>8</iMax>
+				</TraitClassMax>
+			</MaxTraitsPerClass>
+			<EvolveTraitClasses>
+				<TraitClassEvolve>
+					<TraitClass>TRAITCLASS_RELIGION</TraitClass>
+					<bChange>1</bChange>
+				</TraitClassEvolve>
+			</EvolveTraitClasses>
+		</LeaderClassInfo>
+		<LeaderClassInfo> <!-- Fairy DYNREL Emergent-->
+			<Type>LEADERCLASS_FAIRY_EMERGENT</Type>
+			<bTypeDependency>1</bTypeDependency>
+			<AndDependencyTypes>
+				<DependencyType>MODULE_DYNAMIC_RELIGION</DependencyType>
+			</AndDependencyTypes>
+			<MaxTraitsPerClass>
+				<TraitClassMax>
+					<TraitClass>TRAITCLASS_RELIGION</TraitClass>
+					<iMax>8</iMax>
+				</TraitClassMax>
+			</MaxTraitsPerClass>
+			<EvolveTraitClasses>
+				<TraitClassEvolve>
+					<TraitClass>TRAITCLASS_RELIGION</TraitClass>
+					<bChange>1</bChange>
+				</TraitClassEvolve>
+			</EvolveTraitClasses>
+		</LeaderClassInfo>
+		<LeaderClassInfo> <!-- Fairy DYNREL Important-->
+			<Type>LEADERCLASS_FAIRY_IMPORTANT</Type>
+			<bTypeDependency>1</bTypeDependency>
+			<AndDependencyTypes>
+				<DependencyType>MODULE_DYNAMIC_RELIGION</DependencyType>
+			</AndDependencyTypes>
+			<MaxTraitsPerClass>
+				<TraitClassMax>
+					<TraitClass>TRAITCLASS_RELIGION</TraitClass>
+					<iMax>8</iMax>
+				</TraitClassMax>
+			</MaxTraitsPerClass>
+			<EvolveTraitClasses>
+				<TraitClassEvolve>
+					<TraitClass>TRAITCLASS_RELIGION</TraitClass>
+					<bChange>1</bChange>
+				</TraitClassEvolve>
+			</EvolveTraitClasses>
 		</LeaderClassInfo>
 	</LeaderClassInfos>
 </Civ4LeaderClassInfos>

@@ -142,6 +142,7 @@
 			<TraitClass>TRAITCLASS_PERSONALITY</TraitClass>
 			<Description>TXT_KEY_TRAIT_SWASHBUCKLER</Description>
 			<ShortDescription>TXT_KEY_TRAIT_SWASHBUCKLER_SHORT</ShortDescription>
+			<Help>TXT_KEY_TRAIT_SWASHBUCKLER_HELP_CITT</Help>
 			<iMinRequiredPoints>500</iMinRequiredPoints>
 			<FreePromotions>
 				<FreePromotion>
@@ -159,6 +160,12 @@
 					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
 				</FreePromotionUnitCombat>
 			</FreePromotionUnitCombats>
+			<!-- <ExtraBuildingClasses>
+				<ExtraBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_SHIPYARD</BuildingClassType>
+					<BuildingType>BUILDING_SWASHBUCKLERS_SHIPYARD</BuildingType>
+				</ExtraBuildingClass>
+			</ExtraBuildingClasses> -->
 		</TraitInfo>
 	</TraitInfos> 
 </Civ4TraitInfos>

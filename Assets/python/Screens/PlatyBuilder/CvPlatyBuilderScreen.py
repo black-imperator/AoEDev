@@ -1772,7 +1772,7 @@ class CvWorldBuilderScreen:
 				for item in self.lMoveUnit:
 					loopUnit = gc.getPlayer(item[0]).getUnit(item[1])
 					if loopUnit.isNone(): continue
-					loopUnit.setXY(self.m_pCurrentPlot.getX(), self.m_pCurrentPlot.getY(), True, True, False)
+					loopUnit.setXY(self.m_pCurrentPlot.getX(), self.m_pCurrentPlot.getY(), True, True, False,False)
 				pUnitX = gc.getPlayer(self.lMoveUnit[0][0]).getUnit(self.lMoveUnit[0][1])
 				self.lMoveUnit = []
 				self.iPlayerAddMode = "EditUnit"
@@ -1793,7 +1793,7 @@ class CvWorldBuilderScreen:
 					for item in self.lMoveUnit:
 						loopUnit = gc.getPlayer(item[0]).getUnit(item[1])
 						if loopUnit.isNone(): continue
-						loopUnit.setXY(self.m_pCurrentPlot.getX(), self.m_pCurrentPlot.getY(), True, True, False)
+						loopUnit.setXY(self.m_pCurrentPlot.getX(), self.m_pCurrentPlot.getY(), True, True, False,False)
 					self.lMoveUnit = []
 			self.iPlayerAddMode = "CityDataI"
 			self.iMoveCity = -1

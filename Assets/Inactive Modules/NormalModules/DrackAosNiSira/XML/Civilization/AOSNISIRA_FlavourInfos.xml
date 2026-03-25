@@ -3,7 +3,7 @@
 		<Civilization>CIVILIZATION_AOSNISIRA</Civilization>
 		<Preference>
 			<FlavourType>FEATURE_FOREST</FlavourType>
-			<Value>2</Value>
+			<Value>10</Value>
 		</Preference>
         <Preference>
 			<FlavourType>YIELD_FOOD</FlavourType>
@@ -23,7 +23,49 @@
 		</Preference>
 		<Preference>
 			<FlavourType>IMPROVEMENT_YGGDRASIL</FlavourType>
-			<Value>1</Value>
+			<Value>8</Value>
+		</Preference>
+	</CivFlavourInfo>
+	<CivFlavourInfo>
+		<Civilization>CIVILIZATION_COURTOFFALYN</Civilization>
+		<Preference>
+			<FlavourType>FEATURE_FOREST</FlavourType>
+			<Value>10</Value>
+		</Preference>
+        <Preference>
+			<FlavourType>YIELD_FOOD</FlavourType>
+			<Value>5</Value>
+		</Preference>
+		<Preference>
+			<FlavourType>TERRAIN_OCEAN</FlavourType>
+			<Value>-2</Value>
+		</Preference>
+		<Preference>
+			<FlavourType>TERRAIN_TUNDRA</FlavourType>
+			<Value>-2</Value>
+		</Preference>
+        <Preference>
+			<FlavourType>TERRAIN_DESERT</FlavourType>
+			<Value>-4</Value>
+		</Preference>
+		<Preference>
+			<FlavourType>BONUS_MUSHROOMS</FlavourType>
+			<Value>10</Value>
+		</Preference>
+	</CivFlavourInfo>
+	<CivFlavourInfo>
+		<Civilization>CIVILIZATION_COURTOFBEY</Civilization>
+		<Preference>
+			<FlavourType>TERRAIN_DESERT</FlavourType>
+			<Value>15</Value>
+		</Preference>
+		<Preference>
+			<FlavourType>FEATURE_SCRUB</FlavourType>
+			<Value>2</Value>
+		</Preference>
+		<Preference>
+			<FlavourType>TERRAIN_TUNDRA</FlavourType>
+			<Value>-2</Value>
 		</Preference>
 	</CivFlavourInfo>
 </CivFlavourInfos>

@@ -588,6 +588,7 @@
 			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
 			<ArtDefineTag>ART_DEF_LEADER_RANDOM_GOOD</ArtDefineTag>
 			<iWonderConstructRand>0</iWonderConstructRand>
+			<bRandom>1</bRandom>
 			<iBaseAttitude>0</iBaseAttitude>
 			<iBasePeaceWeight>2</iBasePeaceWeight>
 			<iPeaceWeightRand>3</iPeaceWeightRand>
@@ -1117,6 +1118,7 @@
 			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
 			<ArtDefineTag>ART_DEF_LEADER_RANDOM_NEUTRAL</ArtDefineTag>
 			<iWonderConstructRand>0</iWonderConstructRand>
+			<bRandom>1</bRandom>
 			<iBaseAttitude>0</iBaseAttitude>
 			<iBasePeaceWeight>2</iBasePeaceWeight>
 			<iPeaceWeightRand>3</iPeaceWeightRand>
@@ -1646,6 +1648,7 @@
 			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
 			<ArtDefineTag>ART_DEF_LEADER_RANDOM_EVIL</ArtDefineTag>
 			<iWonderConstructRand>0</iWonderConstructRand>
+			<bRandom>1</bRandom>
 			<iBaseAttitude>0</iBaseAttitude>
 			<iBasePeaceWeight>2</iBasePeaceWeight>
 			<iPeaceWeightRand>3</iPeaceWeightRand>

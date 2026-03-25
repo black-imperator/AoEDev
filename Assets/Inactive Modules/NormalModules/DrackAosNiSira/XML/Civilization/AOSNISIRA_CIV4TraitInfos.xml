@@ -52,7 +52,7 @@
 			<iLevel>2</iLevel>
 			<TraitClass>TRAITCLASS_EMERGENT</TraitClass>
 			<iMinRequiredPoints>600</iMinRequiredPoints>
-			<Description>TXT_KEY_TRAIT_HUNGRYFORBLOOD2</Description>
+			<Description>TXT_KEY_TRAIT_HUNGRYFORBLOOD</Description>
 			<Civilopedia>TXT_KEY_TRAIT_HUNGRYFORBLOOD_PEDIA</Civilopedia>
 			<ShortDescription>TXT_KEY_TRAIT_HUNGRYFORBLOOD_SHORT</ShortDescription>
 			<bSelectable>0</bSelectable>
@@ -99,7 +99,7 @@
 			<iLevel>3</iLevel>
 			<TraitClass>TRAITCLASS_EMERGENT</TraitClass>
 			<iMinRequiredPoints>1500</iMinRequiredPoints>
-			<Description>TXT_KEY_TRAIT_HUNGRYFORBLOOD3</Description>
+			<Description>TXT_KEY_TRAIT_HUNGRYFORBLOOD</Description>
 			<Civilopedia>TXT_KEY_TRAIT_HUNGRYFORBLOOD_PEDIA</Civilopedia>
 			<ShortDescription>TXT_KEY_TRAIT_HUNGRYFORBLOOD_SHORT</ShortDescription>
 			<bSelectable>0</bSelectable>
@@ -146,7 +146,7 @@
 			<iLevel>2</iLevel>
 			<iMinRequiredPoints>400</iMinRequiredPoints>
 			<TraitClass>TRAITCLASS_SIRA</TraitClass>
-			<Description>TXT_KEY_TRAIT_SIRA_TRICKERY2</Description>
+			<Description>TXT_KEY_TRAIT_SIRA_TRICKERY</Description>
 			<Civilopedia>TXT_KEY_TRAIT_SIRA_TRICKERY_PEDIA</Civilopedia>
 			<ShortDescription>TXT_KEY_TRAIT_SIRA_TRICKERY_SHORT</ShortDescription>
 			<bSelectable>0</bSelectable>
@@ -175,7 +175,7 @@
 			<iLevel>3</iLevel>
 			<iMinRequiredPoints>1500</iMinRequiredPoints>
 			<TraitClass>TRAITCLASS_SIRA</TraitClass>
-			<Description>TXT_KEY_TRAIT_SIRA_TRICKERY3</Description>
+			<Description>TXT_KEY_TRAIT_SIRA_TRICKERY</Description>
 			<Civilopedia>TXT_KEY_TRAIT_SIRA_TRICKERY_PEDIA</Civilopedia>
 			<ShortDescription>TXT_KEY_TRAIT_SIRA_TRICKERY_SHORT</ShortDescription>
 			<bSelectable>0</bSelectable>
@@ -197,6 +197,339 @@
 					</FeatureYields>
 				</FeatureYieldChange>
 			</FeatureYieldChanges>
+        </TraitInfo>
+		<TraitInfo> <!-- Court of Falyn -->
+            <Type>TRAIT_COURT_OF_FALYN</Type>
+			<TraitClass>TRAITCLASS_CIVILIZATION</TraitClass>
+			<Description>TXT_KEY_TRAIT_COURT_OF_FALYN</Description>
+			<Civilopedia>TXT_KEY_TRAIT_COURT_OF_FALYN_PEDIA</Civilopedia>
+			<ShortDescription>TXT_KEY_TRAIT_COURT_OF_FALYN_SHORT</ShortDescription>
+			<bSelectable>0</bSelectable>
+			<ExtraYieldThresholds>
+				<iExtraYieldThreshold>4</iExtraYieldThreshold>
+				<iExtraYieldThreshold>0</iExtraYieldThreshold>
+				<iExtraYieldThreshold>0</iExtraYieldThreshold>
+			</ExtraYieldThresholds>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_FALYN_MUSHROOM_AFFINITY_ENABLER</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
+			</FreePromotions>
+            <FreePromotionUnitCombats>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_BEAST</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_ANIMAL</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+			</FreePromotionUnitCombats>
+        </TraitInfo>
+		<TraitInfo> <!-- Court of Bey -->
+            <Type>TRAIT_COURT_OF_BEY</Type>
+			<TraitClass>TRAITCLASS_CIVILIZATION</TraitClass>
+			<Description>TXT_KEY_TRAIT_COURT_OF_BEY</Description>
+			<Civilopedia>TXT_KEY_TRAIT_COURT_OF_BEY_PEDIA</Civilopedia>
+			<ShortDescription>TXT_KEY_TRAIT_COURT_OF_BEY_SHORT</ShortDescription>
+			<bSelectable>0</bSelectable>
+			<SpecialistHappinessChanges>
+				<SpecialistHappinessChange>
+					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+					<iHappiness>1</iHappiness>
+				</SpecialistHappinessChange>
+				<SpecialistHappinessChange>
+					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+					<iHappiness>1</iHappiness>
+				</SpecialistHappinessChange>
+			</SpecialistHappinessChanges>
+        </TraitInfo>
+		<TraitInfo> <!-- House Fane -->
+            <Type>TRAIT_HOUSE_FANE</Type>
+			<TraitClass>TRAITCLASS_FAIRY_HOUSE</TraitClass>
+			<Description>TXT_KEY_TRAIT_HOUSE_FANE</Description>
+			<Civilopedia>TXT_KEY_TRAIT_HOUSE_FANE_PEDIA</Civilopedia>
+			<ShortDescription>TXT_KEY_TRAIT_HOUSE_FANE_SHORT</ShortDescription>
+			<bSelectable>0</bSelectable>
+			<FreeBonuses>
+				<FreeBonus>
+					<BonusType>BONUS_MANA_DEATH</BonusType>
+					<bFreeBonus>1</bFreeBonus>
+				</FreeBonus>
+			</FreeBonuses>
+			<ExtraBuildingClasses>
+				<ExtraBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_FAIRY_DARK_GUILD</BuildingClassType>
+					<BuildingType>BUILDING_FAIRY_DARK_GUILD</BuildingType>
+				</ExtraBuildingClass>
+			</ExtraBuildingClasses>
+			<ExtraUnitClasses>
+				<ExtraUnitClass>
+					<UnitClassType>UNITCLASS_FANE_WARRIOR</UnitClassType>
+					<UnitType>UNIT_FANE_WARRIOR</UnitType>
+				</ExtraUnitClass>
+			</ExtraUnitClasses>
+        </TraitInfo>
+		<TraitInfo> <!-- House Pesna -->
+            <Type>TRAIT_HOUSE_PESNA</Type>
+			<TraitClass>TRAITCLASS_FAIRY_HOUSE</TraitClass>
+			<Description>TXT_KEY_TRAIT_HOUSE_PESNA</Description>
+			<Civilopedia>TXT_KEY_TRAIT_HOUSE_PESNA_PEDIA</Civilopedia>
+			<ShortDescription>TXT_KEY_TRAIT_HOUSE_PESNA_SHORT</ShortDescription>
+			<bSelectable>0</bSelectable>
+			<iHealth>-2</iHealth>
+			<SpecialistCommerceChanges>
+				<SpecialistCommerceChange>
+					<SpecialistType>SPECIALIST_HEALER</SpecialistType>
+					<CommerceChanges>
+						<iCommerce>2</iCommerce>
+						<iCommerce>0</iCommerce>
+						<iCommerce>0</iCommerce>
+					</CommerceChanges>
+				</SpecialistCommerceChange>
+			</SpecialistCommerceChanges>
+			<ExtraBuildingClasses>
+				<ExtraBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_FAIRY_HOUSE_OF_COMMERCE</BuildingClassType>
+					<BuildingType>BUILDING_FAIRY_HOUSE_OF_COMMERCE</BuildingType>
+				</ExtraBuildingClass>
+			</ExtraBuildingClasses>
+			<ExtraUnitClasses>
+				<ExtraUnitClass>
+					<UnitClassType>UNITCLASS_FAIRY_PESNA</UnitClassType>
+					<UnitType>UNIT_FAIRY_PESNA</UnitType>
+				</ExtraUnitClass>
+			</ExtraUnitClasses>
+        </TraitInfo>
+		<TraitInfo> <!-- House Dawar -->
+            <Type>TRAIT_HOUSE_DAWAR</Type>
+			<TraitClass>TRAITCLASS_FAIRY_HOUSE</TraitClass>
+			<Description>TXT_KEY_TRAIT_HOUSE_DAWAR</Description>
+			<Civilopedia>TXT_KEY_TRAIT_HOUSE_DAWAR_PEDIA</Civilopedia>
+			<ShortDescription>TXT_KEY_TRAIT_HOUSE_DAWAR_SHORT</ShortDescription>
+			<bSelectable>0</bSelectable>
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>2</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_DWARVEN_MINE</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>2</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_DWARVEN_SETTLEMENT</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>2</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_DWARVEN_HALL</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>2</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_DWARVEN_FORTRESS</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>2</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
+			<ExtraBuildingClasses>
+				<ExtraBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_FAIRY_DAWAR_TRADER</BuildingClassType>
+					<BuildingType>BUILDING_FAIRY_DAWAR_TRADER</BuildingType>
+				</ExtraBuildingClass>
+			</ExtraBuildingClasses>
+        </TraitInfo>
+		<TraitInfo> <!-- House Rakiri -->
+            <Type>TRAIT_HOUSE_RAKIRI</Type>
+			<TraitClass>TRAITCLASS_FAIRY_HOUSE</TraitClass>
+			<Description>TXT_KEY_TRAIT_HOUSE_RAKIRI</Description>
+			<Civilopedia>TXT_KEY_TRAIT_HOUSE_RAKIRI_PEDIA</Civilopedia>
+			<ShortDescription>TXT_KEY_TRAIT_HOUSE_RAKIRI_SHORT</ShortDescription>
+			<bSelectable>0</bSelectable>
+			<ExtraUnitClasses>
+				<ExtraUnitClass>
+					<UnitClassType>UNITCLASS_RAKIRI_CANNON</UnitClassType>
+					<UnitType>UNIT_RAKIRI_CANNON</UnitType>
+				</ExtraUnitClass>
+			</ExtraUnitClasses>
+			<ExtraYieldThresholds>
+				<iExtraYieldThreshold>0</iExtraYieldThreshold>
+				<iExtraYieldThreshold>4</iExtraYieldThreshold>
+				<iExtraYieldThreshold>0</iExtraYieldThreshold>
+			</ExtraYieldThresholds>
+        </TraitInfo>
+		<TraitInfo> <!-- House Wai -->
+            <Type>TRAIT_HOUSE_WAI</Type>
+			<TraitClass>TRAITCLASS_FAIRY_HOUSE</TraitClass>
+			<Description>TXT_KEY_TRAIT_HOUSE_WAI</Description>
+			<Civilopedia>TXT_KEY_TRAIT_HOUSE_WAI_PEDIA</Civilopedia>
+			<ShortDescription>TXT_KEY_TRAIT_HOUSE_WAI_SHORT</ShortDescription>
+			<bSelectable>0</bSelectable>
+			<ExtraBuildingClasses>
+				<ExtraBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_FAIRY_WAI_OUTPOST</BuildingClassType>
+					<BuildingType>BUILDING_FAIRY_WAI_OUTPOST</BuildingType>
+				</ExtraBuildingClass>
+			</ExtraBuildingClasses>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_RAIDER</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
+                <FreePromotion>
+					<PromotionType>PROMOTION_MOBILITY1</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_BOUNTY_HUNTER</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
+			</FreePromotions>
+            <FreePromotionUnitCombats>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+			</FreePromotionUnitCombats>
+        </TraitInfo>
+		<TraitInfo> <!-- House Nairu -->
+            <Type>TRAIT_HOUSE_NAIRU</Type>
+			<TraitClass>TRAITCLASS_FAIRY_HOUSE</TraitClass>
+			<Description>TXT_KEY_TRAIT_HOUSE_NAIRU</Description>
+			<Civilopedia>TXT_KEY_TRAIT_HOUSE_NAIRU_PEDIA</Civilopedia>
+			<ShortDescription>TXT_KEY_TRAIT_HOUSE_NAIRU_SHORT</ShortDescription>
+			<bSelectable>0</bSelectable>
+			<ExtraBuildingClasses>
+				<ExtraBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_FAIRY_NAIRU_CIRCLE</BuildingClassType>
+					<BuildingType>BUILDING_FAIRY_NAIRU_CIRCLE</BuildingType>
+				</ExtraBuildingClass>
+			</ExtraBuildingClasses>
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_CAMP</ImprovementType>
+					<ImprovementYields>
+						<iYield>1</iYield>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
+        </TraitInfo>
+		<TraitInfo> <!-- Archhuntress -->
+            <Type>TRAIT_FAIRY_ARCH_HUNTRESS</Type>
+			<TraitClass>TRAITCLASS_PERSONALITY</TraitClass>
+			<Description>TXT_KEY_TRAIT_FAIRY_ARCH_HUNTRESS</Description>
+			<Civilopedia>TXT_KEY_TRAIT_FAIRY_ARCH_HUNTRESS_PEDIA</Civilopedia>
+			<ShortDescription>TXT_KEY_TRAIT_FAIRY_ARCH_HUNTRESS_SHORT</ShortDescription>
+			<bSelectable>0</bSelectable>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_KEEN_SIGHT</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_ARCHERY1</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_SECONDARY_RECON</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
+			</FreePromotions>
+            <FreePromotionUnitCombats>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+			</FreePromotionUnitCombats>
+        </TraitInfo>
+		<TraitInfo> <!-- Tracker -->
+            <Type>TRAIT_FAIRY_TRACKER</Type>
+			<TraitClass>TRAITCLASS_PERSONALITY</TraitClass>
+			<Description>TXT_KEY_TRAIT_FAIRY_TRACKER</Description>
+			<Civilopedia>TXT_KEY_TRAIT_FAIRY_TRACKER_PEDIA</Civilopedia>
+			<ShortDescription>TXT_KEY_TRAIT_FAIRY_TRACKER_SHORT</ShortDescription>
+			<bSelectable>0</bSelectable>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_KEEN_SIGHT</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_DRILL1</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_SECONDARY_DISCIPLE</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
+			</FreePromotions>
+            <FreePromotionUnitCombats>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+			</FreePromotionUnitCombats>
         </TraitInfo>
     </TraitInfos>
 </Civ4TraitInfos>

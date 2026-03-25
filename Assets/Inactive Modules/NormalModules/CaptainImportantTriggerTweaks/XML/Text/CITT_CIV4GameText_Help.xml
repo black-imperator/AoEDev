@@ -13,4 +13,12 @@
 		<Italian>Swashbuckling Traditions</Italian>
 		<Spanish>Swashbuckling Traditions</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_SWASHBUCKLER_HELP_CITT</Tag>
+		<English>[NEWLINE][ICON_BULLET]Naval units gain a spell to permanently grant them Navigation 1 and Expanded Cargo</English>
+		<French>[NEWLINE][ICON_BULLET]Naval units gain a spell to permanently grant them Navigation 1 and Expanded Cargo</French>
+		<German>[NEWLINE][ICON_BULLET]Naval units gain a spell to permanently grant them Navigation 1 and Expanded Cargo</German>
+		<Italian>[NEWLINE][ICON_BULLET]Naval units gain a spell to permanently grant them Navigation 1 and Expanded Cargo</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]Naval units gain a spell to permanently grant them Navigation 1 and Expanded Cargo</Spanish>
+	</TEXT>
 </Civ4GameText>

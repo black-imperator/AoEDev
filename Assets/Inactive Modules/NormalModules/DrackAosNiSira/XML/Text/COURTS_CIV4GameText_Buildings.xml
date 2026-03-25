@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Risna -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_PALACE_COURTOFFALYN</Tag>
+        <English>High House of Falyn</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_COURTOFFALYN_PALACE_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_PALACE_COURTOFBEY</Tag>
+        <English>High House of Bey</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_COURTOFBEY_PALACE_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FAIRY_WELL</Tag>
+        <English>Fairy Well</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_SHROOMCULTIVATION</Tag>
+        <English>Shroomcultivation</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_SHROOMCULTIVATION_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FALYN_GLOWCAPLATERNS</Tag>
+        <English>Glowcap Laterns</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FALYN_GLOWCAPLATERNS_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FALYN_BARRACKS</Tag>
+        <English>Shroom Barracks</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FALYN_BARRACKS_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FAIRY_INN</Tag>
+        <English>Fairy Bazar</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FAIRY_INN_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FAIRY_RING</Tag>
+        <English>Fairy Ring</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FAIRY_RING_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_BEY_PAGAN_TEMPLE</Tag>
+        <English>Temple of Bey</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_BEY_PAGAN_TEMPLE_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FAIRY_COURTHOUSE</Tag>
+        <English>Fairy Court</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FAIRY_COURTHOUSE_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_BEY_LIBRARY</Tag>
+        <English>Library of Sand</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_BEY_LIBRARY_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FAIRY_HOUSE_OF_COMMERCE</Tag>
+        <English>House of Commerce</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FAIRY_HOUSE_OF_COMMERCE_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FAIRY_DARK_GUILD</Tag>
+        <English>Dark Guild of Fane</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FAIRY_DARK_GUILD_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FAIRY_DAWAR_TRADER</Tag>
+        <English>Dawar Trader</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FAIRY_DAWAR_TRADER_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FAIRY_DAWAR_TRADER_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FAIRY_WAI_OUTPOST</Tag>
+        <English>Grand Wai Outpost</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FAIRY_WAI_OUTPOST_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FAIRY_WAI_OUTPOST_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FAIRY_NAIRU_CIRCLE</Tag>
+        <English>Nairu Circle</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FAIRY_NAIRU_CIRCLE_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FAIRY_NAIRU_CIRCLE_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FAIRY_BEY_COUNCIL</Tag>
+        <English>Bey Council</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FAIRY_BEY_COUNCIL_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+</Civ4GameText>

@@ -156,5 +156,55 @@
 			<KFM/>
 			<Button>Modules\NormalModules\DrackTeuhaliOrder\Art\Buildings\Corperation.dds</Button>
 		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Dokumentenstube -->
+			<Type>ART_DEF_BUILDING_DOKUMENTENSTUBE</Type> 
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.7</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Library/Library.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackTeuhaliOrder\Art\Buildings\Dokumentenstube.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Burg Terror -->
+			<Type>ART_DEF_BUILDING_BURG_TERROR</Type> 
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.35</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Palace Calabim/forteuro4.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackTeuhaliOrder\Art\Buildings\BurgTerror.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Burg Blocksberg -->
+			<Type>ART_DEF_BUILDING_BURG_BLOCKSBERG</Type> 
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>4.0</fScale>
+			<fInterfaceScale>0.3</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Palace Amurite/amuritepalace.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackTeuhaliOrder\Art\Buildings\BurgBlocksberg.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Burg Niemalsmehr -->
+			<Type>ART_DEF_BUILDING_BURG_NIEMALSMEHR</Type> 
+			<LSystem>LSYSTEM_3x3</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.2</fScale>
+			<fInterfaceScale>0.6</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Grigori Palace/ren_palace.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackTeuhaliOrder\Art\Buildings\BurgNiemalsmehr.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Burg Sonne -->
+			<Type>ART_DEF_BUILDING_BURG_SONNE</Type> 
+			<LSystem>LSYSTEM_3x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Palace Bannor/palace.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackTeuhaliOrder\Art\Buildings\BurgSonne.dds</Button>
+		</BuildingArtInfo>
 	</BuildingArtInfos>
 </Civ4ArtDefines>

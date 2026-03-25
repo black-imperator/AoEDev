@@ -1,0 +1,645 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Improvement Infos -->
+<Civ4ImprovementInfos xmlns="x-schema:EF_CIV4TerrainSchema.xml">
+	<ImprovementInfos>
+		<ImprovementInfo><!-- Aifon Isle -->                    <!-- Uniques -->
+		<!--Explorable Mana Node-->
+			<Type>IMPROVEMENT_AIFON_ISLE</Type>
+			<ImprovementClass>IMPROVEMENTCLASS_AIFON_ISLE</ImprovementClass>			
+			<BonusTypeStructs>
+				<BonusTypeStruct>
+					<BonusType>BONUS_MANA_WATER</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>2</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+			</BonusTypeStructs>		
+			<TechYieldChanges>
+				<TechYieldChange>
+					<PrereqTech>TECH_ELEMENTALISM</PrereqTech>
+					<TechYields>
+						<iYield>2</iYield>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+					</TechYields>
+				</TechYieldChange>
+			</TechYieldChanges>			
+		</ImprovementInfo>
+		<ImprovementInfo><!-- Bair of Lacuna -->
+			<!--Explorable Mana Node-->
+			<ImprovementClass>IMPROVEMENTCLASS_BAIR_OF_LACUNA</ImprovementClass>
+			<Type>IMPROVEMENT_BAIR_OF_LACUNA</Type>			
+			<BonusTypeStructs>
+				<BonusTypeStruct>
+					<BonusType>BONUS_MANA_DIMENSIONAL</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>2</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+			</BonusTypeStructs>		
+			<TechYieldChanges>
+				<TechYieldChange>
+					<PrereqTech>TECH_NECROMANCY</PrereqTech>
+					<TechYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>2</iYield>
+					</TechYields>
+				</TechYieldChange>
+				<TechYieldChange>
+					<PrereqTech>TECH_PASS_THROUGH_THE_ETHER</PrereqTech>
+					<TechYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>2</iYield>
+					</TechYields>
+				</TechYieldChange>
+			</TechYieldChanges>					
+		</ImprovementInfo>
+		<ImprovementInfo><!-- Bradeline's Well -->
+			<!--Explorable mana node with bonus yield on tech should suffice-->
+			<Type>IMPROVEMENT_BRADELINES_WELL</Type>
+			<ImprovementClass>IMPROVEMENTCLASS_BRADELINES_WELL</ImprovementClass>
+			
+			<BonusTypeStructs>
+				<BonusTypeStruct>
+					<BonusType>BONUS_MANA_ENTROPY</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>1</iYieldChange>
+						<iYieldChange>1</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+			</BonusTypeStructs>		
+			<!--Vanilla necromancy tech bonus-->
+		</ImprovementInfo>
+		<ImprovementInfo><!-- Bradeline's Well (Purified) -->
+			<!--Explorable, purifiable mana node-->
+			<Type>IMPROVEMENT_BRADELINES_WELL_PURIFIED</Type>
+			<ImprovementClass>IMPROVEMENTCLASS_BRADELINES_WELL_PURIFIED</ImprovementClass>
+			<Description>TXT_KEY_IMPROVEMENT_BRADELINES_WELL_PURIFIED</Description>		
+			<BonusTypeStructs>
+				<BonusTypeStruct>
+					<BonusType>BONUS_MANA_SPIRIT</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>1</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>1</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+			</BonusTypeStructs>
+			<!--Vanilla Alteration? tech bonus-->
+		</ImprovementInfo>
+		<ImprovementInfo><!-- Broken Sepulcher -->
+			<!--Explorable Mana Node-->
+			<!--TODO ADD SEAL QUEST SOMEDAY-->
+			<Type>IMPROVEMENT_BROKEN_SEPULCHER</Type>
+			<ImprovementClass>IMPROVEMENTCLASS_BROKEN_SEPULCHER</ImprovementClass>
+			<BonusTypeStructs>
+				<BonusTypeStruct>
+					<BonusType>BONUS_MANA_DEATH</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>2</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+			</BonusTypeStructs>
+			<!--Vanilla necromancy tech bonus-->
+		</ImprovementInfo>
+		<ImprovementInfo><!-- Cliffs of Kelle -->
+			<!--Special Mana Node-->
+			<Type>IMPROVEMENT_CLIFFS_OF_TALI</Type>
+			<ImprovementClass>IMPROVEMENTCLASS_CLIFFS_OF_TALI</ImprovementClass>
+			<BonusTypeStructs>
+				<BonusTypeStruct>
+					<BonusType>BONUS_MANA_AIR</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>1</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>1</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+			</BonusTypeStructs>
+			<TechYieldChanges>
+				<TechYieldChange>
+				<PrereqTech>TECH_ELEMENTALISM</PrereqTech>
+					<TechYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>2</iYield>
+					</TechYields>
+				</TechYieldChange>
+				<TechYieldChange>
+				<PrereqTech>TECH_DRAMA</PrereqTech>
+					<TechYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</TechYields>
+				</TechYieldChange>
+			</TechYieldChanges>
+		</ImprovementInfo>
+		<ImprovementInfo><!-- Clockwork Tower --> 
+			<!--Explorable, Fortable Mana Node With Friendly Spawns-->
+			<!--TODO ADD BONUSES FOR LURICHEP-->
+			<Type>IMPROVEMENT_CLOCKWORK_TOWER</Type>
+			<ImprovementClass>IMPROVEMENTCLASS_CLOCKWORK_TOWER</ImprovementClass>
+			<bFort>1</bFort>
+			<BonusTypeStructs>
+				<BonusTypeStruct>
+					<BonusType>BONUS_MANA_ENCHANTMENT</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>2</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+			</BonusTypeStructs>
+		</ImprovementInfo>
+		<ImprovementInfo><!-- Dragon Bones -->
+			<!--Special Site-->
+			<Type>IMPROVEMENT_DRAGON_BONES</Type>
+			<ImprovementClass>IMPROVEMENTCLASS_DRAGON_BONES</ImprovementClass>
+			<iHappiness>100</iHappiness>
+			<!--TODO ADD IVORY OR UNIQUE RESOURCE-->
+		</ImprovementInfo>
+		<ImprovementInfo><!-- Foxford -->
+			<!--Special Village-->
+			<Type>IMPROVEMENT_FOXFORD</Type>
+			<ImprovementClass>IMPROVEMENTCLASS_FOXFORD</ImprovementClass>
+			<iUpgradeTime>20</iUpgradeTime>
+			<ImprovementUpgrade>IMPROVEMENTCLASS_FOXFORD_TOWN</ImprovementUpgrade>
+			<!--Added village effects-->
+			<!--TODO ADD CIVIC EFFECTS-->
+			<!--TODO MAKE PICKING THE WEREWOLF OPTION PREVENT GROWTH-->
+			<TechYieldChanges>
+				<TechYieldChange>
+					<PrereqTech>TECH_TAXATION</PrereqTech>
+					<TechYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</TechYields>
+				</TechYieldChange>
+			</TechYieldChanges>
+			<RouteYieldChanges>
+				<RouteYieldChange>
+					<RouteType>ROUTE_PATH_OF_LUGUS</RouteType>
+					<RouteYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</RouteYields>
+				</RouteYieldChange>
+            </RouteYieldChanges>
+			<BonusTypeStructs><!--Camp equivalent fur harvesting-->
+				<BonusTypeStruct>
+					<BonusType>BONUS_FUR</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>2</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+			</BonusTypeStructs>
+			<iWorkingCityCrime>1</iWorkingCityCrime>			
+		</ImprovementInfo>
+		<ImprovementInfo><!-- Foxford Town-->
+			<!--TODO ADD CIVIC EFFECTS-->
+			<Type>IMPROVEMENT_FOXFORD_TOWN</Type>
+			<ImprovementClass>IMPROVEMENTCLASS_FOXFORD_TOWN</ImprovementClass>
+			<Description>TXT_KEY_IMPROVEMENT_FOXFORD_TOWN</Description>
+			<Civilopedia>TXT_KEY_IMPROVEMENT_FOXFORD_TOWN_PEDIA</Civilopedia>
+			<ArtDefineTag>ART_DEF_IMPROVEMENT_GOODY_HUT</ArtDefineTag>
+			<YieldChanges>
+				<iYieldChange>0</iYieldChange>
+				<iYieldChange>0</iYieldChange>
+				<iYieldChange>4</iYieldChange>
+			</YieldChanges>
+			<bRiverSideMakesValid>1</bRiverSideMakesValid>
+			<bRequiresFlatlands>1</bRequiresFlatlands>
+			<bPermanent>1</bPermanent>
+			<TechYieldChanges>
+				<TechYieldChange>
+					<PrereqTech>TECH_TAXATION</PrereqTech>
+					<TechYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</TechYields>
+				</TechYieldChange>
+			</TechYieldChanges>
+			<RouteYieldChanges>
+				<RouteYieldChange>
+					<RouteType>ROUTE_PATH_OF_LUGUS</RouteType>
+					<RouteYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</RouteYields>
+				</RouteYieldChange>
+            </RouteYieldChanges>
+			<TerrainMakesValids>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_GRASS</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_PLAINS</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+			</TerrainMakesValids>
+			<BonusTypeStructs>
+				<BonusTypeStruct>
+					<BonusType>BONUS_FUR</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+			</BonusTypeStructs>
+			<BonusConvert>BONUS_FUR</BonusConvert>
+			<bUnique>1</bUnique>
+			<PythonOnMove>onMoveFoxford(pCaster, pPlot)</PythonOnMove>
+			<iWorkingCityCrime>1</iWorkingCityCrime>
+		</ImprovementInfo>
+		<!--Skipped Guardian, that's not a for-yield one-->
+		<ImprovementInfo><!-- Letum Frigus -->
+			<!--Explorable Mana Node-->
+			<!--TODO ADD Ownership Bonuses for Scions, White Hand, Amurites-->
+			<Type>IMPROVEMENT_LETUM_FRIGUS</Type>
+			<ImprovementClass>IMPROVEMENTCLASS_LETUM_FRIGUS</ImprovementClass>			
+			<BonusTypeStructs>
+				<BonusTypeStruct>
+					<BonusType>BONUS_MANA_ICE</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>2</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+			</BonusTypeStructs>		
+			<TechYieldChanges>
+				<TechYieldChange>
+				<PrereqTech>TECH_ELEMENTALISM</PrereqTech>
+					<TechYields>
+						<iYield>0</iYield>
+						<iYield>2</iYield>
+						<iYield></iYield>
+					</TechYields>
+				</TechYieldChange>
+			</TechYieldChanges>			
+		</ImprovementInfo>
+		<!--Skipped Maelstrom, that's not a for-yield one-->
+		<ImprovementInfo><!-- Mirror of Heaven -->
+			<!--Added Node Yield, MoH is already good-->
+			<Type>IMPROVEMENT_MIRROR_OF_HEAVEN</Type>
+			<!--TODO ADD Empyrian, Malakim Bonuses-->
+			<ImprovementClass>IMPROVEMENTCLASS_MIRROR_OF_HEAVEN</ImprovementClass>
+			<BonusTypeStructs>
+				<BonusTypeStruct>
+					<BonusType>BONUS_MANA_SUN</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>1</iYieldChange>
+						<iYieldChange>1</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+			</BonusTypeStructs>
+		</ImprovementInfo>
+		<ImprovementInfo><!-- Mount Kalshekk -->
+			<!--Special Mana Node-->
+			<!--TODO ADD BONUS FOR Khazad, Matzal, Runes-->
+			<Type>IMPROVEMENT_MOUNT_KALSHEKK</Type>
+			<!--Added node yields, it's already good-->
+			<BonusTypeStructs>		
+				<BonusTypeStruct>
+					<BonusType>BONUS_MANA_EARTH</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>1</iYieldChange>
+						<iYieldChange>1</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+			</BonusTypeStructs>
+		</ImprovementInfo>
+		<ImprovementInfo><!-- Odio's Prison -->
+			<!--Special Mana Node-->
+			<Type>IMPROVEMENT_ODIOS_PRISON</Type>
+			<ImprovementClass>IMPROVEMENTCLASS_ODIOS_PRISON</ImprovementClass>
+			<Description>TXT_KEY_IMPROVEMENT_ODIOS_PRISON</Description>
+			<BonusTypeStructs>
+				<BonusTypeStruct>
+					<BonusType>BONUS_MANA_BODY</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>1</iYieldChange>
+						<iYieldChange>1</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+			</BonusTypeStructs>
+			<TechYieldChanges>
+				<TechYieldChange>
+					<PrereqTech>TECH_ALTERATION</PrereqTech>
+					<TechYields>
+						<iYield>1</iYield>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+					</TechYields>
+				</TechYieldChange>
+			</TechYieldChanges>
+		</ImprovementInfo>
+		<!--Pool of tears has high yield + heal, is already good-->
+		<ImprovementInfo><!-- Pyre of the Seraphic -->
+			<!--Explorable Mana Node-->
+			<!--TODO ADD Bonuses for Clan Of Embers, Bhaal-->
+			<Type>IMPROVEMENT_PYRE_OF_THE_SERAPHIC</Type>
+			<ImprovementClass>IMPROVEMENTCLASS_PYRE_OF_THE_SERAPHIC</ImprovementClass>		
+			<BonusTypeStructs>
+				<BonusTypeStruct>
+					<BonusType>BONUS_MANA_FIRE</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>1</iYieldChange>
+						<iYieldChange>1</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+			</BonusTypeStructs>		
+			<TechYieldChanges>
+				<TechYieldChange>
+					<PrereqTech>TECH_ELEMENTALISM</PrereqTech>
+					<TechYields>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+						<iYield>1</iYield>
+					</TechYields>
+				</TechYieldChange>
+			</TechYieldChanges>
+		</ImprovementInfo>
+		<ImprovementInfo><!-- Remnants of Patria -->
+			<!--Added mana yield, this is already good-->
+			<!--TODO ADD Bonuses for Scions, Amurites-->
+			<Type>IMPROVEMENT_REMNANTS_OF_PATRIA</Type>
+			<ImprovementClass>IMPROVEMENTCLASS_REMNANTS_OF_PATRIA</ImprovementClass>
+			<BonusTypeStructs>
+				<BonusTypeStruct>
+					<BonusType>BONUS_MANA_LAW</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>1</iYieldChange>
+						<iYieldChange>1</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+			</BonusTypeStructs>		
+			<!--Vanilla Education, Feudalism tech bonuses-->
+		</ImprovementInfo>
+		<!--Carcer isn't for yields-->
+		<!--Rinwell isn't for yields-->
+		<ImprovementInfo><!-- Seven Pines -->
+			<!--Special Mana Node-->
+			<!--TODO ADD BONUSES FOR GRIGORI-->
+			<Type>IMPROVEMENT_SEVEN_PINES</Type>
+			<ImprovementClass>IMPROVEMENTCLASS_SEVEN_PINES</ImprovementClass>
+			<BonusTypeStructs>
+				<BonusTypeStruct>
+					<BonusType>BONUS_MANA_FORCE</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>2</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+			</BonusTypeStructs>
+			<!--Vanilla Priesthood tech bonus-->
+		</ImprovementInfo>
+		<ImprovementInfo><!-- Sirona's Beacon -->
+			<!--Special Mana Node-->
+			<!--TODO BONUSES FOR ELOHIM-->
+			<Type>IMPROVEMENT_SIRONAS_BEACON</Type>
+			<ImprovementClass>IMPROVEMENTCLASS_SIRONAS_BEACON</ImprovementClass>
+			<BonusTypeStructs>
+				<BonusTypeStruct>
+					<BonusType>BONUS_MANA_SPIRIT</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>1</iYieldChange>
+						<iYieldChange>1</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+			</BonusTypeStructs>
+			<TechYieldChanges>
+				<TechYieldChange>
+					<PrereqTech>TECH_DIVINATION</PrereqTech>
+					<TechYields>
+						<iYield>1</iYield>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+					</TechYields>
+				</TechYieldChange>
+			</TechYieldChanges>
+		</ImprovementInfo>
+		<ImprovementInfo><!-- Standing Stones -->
+			<!--SPECIAL MANA NODE-->
+			<!--Todo bonuses for leaves, ljos-->
+			<Type>IMPROVEMENT_STANDING_STONES</Type>
+			<ImprovementClass>IMPROVEMENTCLASS_STANDING_STONES</ImprovementClass>
+			<BonusTypeStructs>
+				<BonusTypeStruct>
+					<BonusType>BONUS_MANA_NATURE</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>1</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>1</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+			</BonusTypeStructs>
+			<TechYieldChanges>
+				<TechYieldChange>
+					<PrereqTech>TECH_ELEMENTALISM</PrereqTech>
+					<TechYields>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</TechYields>
+				</TechYieldChange>
+			</TechYieldChanges>
+		</ImprovementInfo>
+		<ImprovementInfo><!-- Tower of Eyes -->  <!--TODO ADD MORE, currently only has happiness + mana node-->
+			<Type>IMPROVEMENT_TOWER_OF_EYES</Type>
+			<BonusTypeStructs>
+				<BonusTypeStruct>
+					<BonusType>BONUS_MANA_MIND</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>1</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>1</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+			</BonusTypeStructs>
+			<TechYieldChanges>
+				<TechYieldChange>
+					<PrereqTech>TECH_DIVINATION</PrereqTech>
+					<TechYields>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</TechYields>
+				</TechYieldChange>
+			</TechYieldChanges>
+		</ImprovementInfo>		
+		<ImprovementInfo><!-- Tomb of Sucellus --> <!--TODO ADD MORE, currently only has happiness + mana node-->
+			<Type>IMPROVEMENT_TOMB_OF_SUCELLUS</Type>
+			<ImprovementClass>IMPROVEMENTCLASS_TOMB_OF_SUCELLUS</ImprovementClass>
+			<Description>TXT_KEY_IMPROVEMENT_TOMB_OF_SUCELLUS</Description>
+			<BonusTypeStructs>
+				<BonusTypeStruct>
+					<BonusType>BONUS_MANA_LIFE</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>2</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+			</BonusTypeStructs>
+			<TechYieldChanges>
+				<TechYieldChange>
+					<PrereqTech>TECH_DIVINATION</PrereqTech>
+					<TechYields>
+						<iYield>2</iYield>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+					</TechYields>
+				</TechYieldChange>
+			</TechYieldChanges>
+		</ImprovementInfo>
+		<!--Yggrasil is good enough, has global buff-->
+		<ImprovementInfo><!-- Well of Souls -->
+			<!--Explorable mana node with bonus yield on tech should suffice-->
+			<Type>IMPROVEMENT_WELL_OF_SOULS</Type>
+			<ImprovementClass>IMPROVEMENTCLASS_WELL_OF_SOULS</ImprovementClass>
+			<BonusTypeStructs>
+				<BonusTypeStruct>
+					<BonusType>BONUS_MANA_DEATH</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>2</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+			</BonusTypeStructs>
+		</ImprovementInfo>
+		<ImprovementInfo><!-- Well of Souls (Open) -->
+			<!--Mana node with bonus yield on tech and additional yield should suffice -->
+			<Type>IMPROVEMENT_WELL_OF_SOULS_OPEN</Type>
+			<ImprovementClass>IMPROVEMENTCLASS_WELL_OF_SOULS_OPEN</ImprovementClass>
+			<BonusTypeStructs>
+				<BonusTypeStruct>
+					<BonusType>BONUS_MANA_SPIRIT</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>1</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>1</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+			</BonusTypeStructs>
+		</ImprovementInfo>
+	</ImprovementInfos>
+</Civ4ImprovementInfos>

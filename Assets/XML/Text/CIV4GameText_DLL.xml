@@ -2238,11 +2238,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ROUTE_NATIVE</Tag>
-		<English>[ICON_BULLET]Route Native %s1_Route</English>
-		<French>[ICON_BULLET]Route Native %s1_Route</French>
+		<English>[ICON_BULLET]Can only move on %s1_Route</English>
+		<French>[ICON_BULLET]Can only move on %s1_Route</French>
 		<German>[ICON_BULLET]Ben&#246;tigte Infrastruktur: %s1_Route</German>
-		<Italian>[ICON_BULLET]Route Native %s1_Route</Italian>
-		<Spanish>[ICON_BULLET]Route Native %s1_Route</Spanish>
+		<Italian>[ICON_BULLET]Can only move on %s1_Route</Italian>
+		<Spanish>[ICON_BULLET]Can only move on %s1_Route</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ROUTE_IMPASSABLE</Tag>

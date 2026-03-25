@@ -281,4 +281,61 @@
 		<Italian>The Ostuarii Knight use ghostly mounts to provide them extra withdraw chance and death strength, and they start with the marksman promotion - allowing them to easily remove weak units from enemy armies, especially if you can get them the Blitz promotion. They can't horses mounts like hyapon, but you could replace their ghostly mounts with a tamed animal, if you wanted to.</Italian>
 		<Spanish>The Ostuarii Knight use ghostly mounts to provide them extra withdraw chance and death strength, and they start with the marksman promotion - allowing them to easily remove weak units from enemy armies, especially if you can get them the Blitz promotion. They can't horses mounts like hyapon, but you could replace their ghostly mounts with a tamed animal, if you wanted to.</Spanish>
 	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GOBLIN_WOLF_RIDER_STRATEGY_MOUNTEDTWEAKS</Tag>
+		<English>Goblin Wolf Riders do not require horses, instead starting with wolf mounts, increasing their perception, but are otherwise identical to the Horseman they replace. If a goblin defeats a wolf in combat, they will upgrade to a wolf rider. Wolf Riders can only use tamed animal mounts, not horse mounts like hyapon.</English>
+		<French>Goblin Wolf Riders do not require horses, instead starting with wolf mounts, increasing their perception, but are otherwise identical to the Horseman they replace. If a goblin defeats a wolf in combat, they will upgrade to a wolf rider. Wolf Riders can only use tamed animal mounts, not horse mounts like hyapon.</French>
+		<German>Goblin Wolf Riders do not require horses, instead starting with wolf mounts, increasing their perception, but are otherwise identical to the Horseman they replace. If a goblin defeats a wolf in combat, they will upgrade to a wolf rider. Wolf Riders can only use tamed animal mounts, not horse mounts like hyapon.</German>
+		<Italian>Goblin Wolf Riders do not require horses, instead starting with wolf mounts, increasing their perception, but are otherwise identical to the Horseman they replace. If a goblin defeats a wolf in combat, they will upgrade to a wolf rider. Wolf Riders can only use tamed animal mounts, not horse mounts like hyapon.</Italian>
+		<Spanish>Goblin Wolf Riders do not require horses, instead starting with wolf mounts, increasing their perception, but are otherwise identical to the Horseman they replace. If a goblin defeats a wolf in combat, they will upgrade to a wolf rider. Wolf Riders can only use tamed animal mounts, not horse mounts like hyapon.</Spanish>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_WOLF_CHARIOT_STRATEGY_MOUNTEDTWEAKS</Tag>
+		<English>Goblin Wolf Chariots do not require horses, instead starting with wolf mounts, increasing their perception, but are otherwise identical to the Chariots they replace. Wolf Chariots can only use tamed animal mounts, not horse mounts like hyapon.</English>
+		<French>Goblin Wolf Chariots do not require horses, instead starting with wolf mounts, increasing their perception, but are otherwise identical to the Chariots they replace. Wolf Chariots can only use tamed animal mounts, not horse mounts like hyapon.</French>
+		<German>Goblin Wolf Chariots do not require horses, instead starting with wolf mounts, increasing their perception, but are otherwise identical to the Chariots they replace. Wolf Chariots can only use tamed animal mounts, not horse mounts like hyapon.</German>
+		<Italian>Goblin Wolf Chariots do not require horses, instead starting with wolf mounts, increasing their perception, but are otherwise identical to the Chariots they replace. Wolf Chariots can only use tamed animal mounts, not horse mounts like hyapon.</Italian>
+		<Spanish>Goblin Wolf Chariots do not require horses, instead starting with wolf mounts, increasing their perception, but are otherwise identical to the Chariots they replace. Wolf Chariots can only use tamed animal mounts, not horse mounts like hyapon.</Spanish>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GOBLIN_WOLF_ARCHER_STRATEGY_MOUNTEDTWEAKS</Tag>
+		<English>Goblin Wolf Archers do not require horses, instead starting with wolf mounts, increasing their perception, and have slightly less strength but better ranged attacks than regular Horse Archers. Wolf Archers can only use tamed animal mounts, not horse mounts like hyapon.</English>
+		<French>Goblin Wolf Archers do not require horses, instead starting with wolf mounts, increasing their perception, and have slightly less strength but better ranged attacks than regular Horse Archers. Wolf Archers can only use tamed animal mounts, not horse mounts like hyapon.</French>
+		<German>Goblin Wolf Archers do not require horses, instead starting with wolf mounts, increasing their perception, and have slightly less strength but better ranged attacks than regular Horse Archers. Wolf Archers can only use tamed animal mounts, not horse mounts like hyapon.</German>
+		<Italian>Goblin Wolf Archers do not require horses, instead starting with wolf mounts, increasing their perception, and have slightly less strength but better ranged attacks than regular Horse Archers. Wolf Archers can only use tamed animal mounts, not horse mounts like hyapon.</Italian>
+		<Spanish>Goblin Wolf Archers do not require horses, instead starting with wolf mounts, increasing their perception, and have slightly less strength but better ranged attacks than regular Horse Archers. Wolf Archers can only use tamed animal mounts, not horse mounts like hyapon.</Spanish>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_LUKOS_KNIGHT_STRATEGY_MOUNTEDTWEAKS</Tag>
+		<English>Lukos Wolf Knights do not require horses, instead starting with wolf mounts, increasing their perception, but are otherwise the same as the Knights they replace. Wolf Knights can only use tamed animal mounts, not horse mounts like hyapon.</English>
+		<French>Lukos Wolf Knights do not require horses, instead starting with wolf mounts, increasing their perception, but are otherwise the same as the Knights they replace. Wolf Knights can only use tamed animal mounts, not horse mounts like hyapon.</French>
+		<German>Lukos Wolf Knights do not require horses, instead starting with wolf mounts, increasing their perception, but are otherwise the same as the Knights they replace. Wolf Knights can only use tamed animal mounts, not horse mounts like hyapon.</German>
+		<Italian>Lukos Wolf Knights do not require horses, instead starting with wolf mounts, increasing their perception, but are otherwise the same as the Knights they replace. Wolf Knights can only use tamed animal mounts, not horse mounts like hyapon.</Italian>
+		<Spanish>Lukos Wolf Knights do not require horses, instead starting with wolf mounts, increasing their perception, but are otherwise the same as the Knights they replace. Wolf Knights can only use tamed animal mounts, not horse mounts like hyapon.</Spanish>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_LUKOS_WAR_CHARIOT_STRATEGY_MOUNTEDTWEAKS</Tag>
+		<English>Lukos Wolf Chariots do not require horses, instead starting with wolf mounts, increasing their perception, but are otherwise the same as the War Chariots they replace. Wolf Chariots can only use tamed animal mounts, not horse mounts like hyapon.</English>
+		<French>Lukos Wolf Chariots do not require horses, instead starting with wolf mounts, increasing their perception, but are otherwise the same as the War Chariots they replace. Wolf Chariots can only use tamed animal mounts, not horse mounts like hyapon.</French>
+		<German>Lukos Wolf Chariots do not require horses, instead starting with wolf mounts, increasing their perception, but are otherwise the same as the War Chariots they replace. Wolf Chariots can only use tamed animal mounts, not horse mounts like hyapon.</German>
+		<Italian>Lukos Wolf Chariots do not require horses, instead starting with wolf mounts, increasing their perception, but are otherwise the same as the War Chariots they replace. Wolf Chariots can only use tamed animal mounts, not horse mounts like hyapon.</Italian>
+		<Spanish>Lukos Wolf Chariots do not require horses, instead starting with wolf mounts, increasing their perception, but are otherwise the same as the War Chariots they replace. Wolf Chariots can only use tamed animal mounts, not horse mounts like hyapon.</Spanish>
+	</TEXT>	
+	
+	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_CAPTAIN_BEAST_MOUNTS</Tag>
+		<English>Tamed Animal Mounts</English>
+		<French>Tamed Animal Mounts</French>
+		<German>Tamed Animal Mounts</German>
+		<Italian>Tamed Animal Mounts</Italian>
+		<Spanish>Tamed Animal Mounts</Spanish>
+	</TEXT>
+	<TEXT>
+	<Tag>TXT_KEY_CONCEPT_CAPTAIN_BEAST_MOUNTS_PEDIA</Tag>
+		<English>[H1]Tamed Animal Mounts:[\H1][NEWLINE][NEWLINE]
+		[PARAGRAPH:1]If you capture wild animals, you can sacrifice them to provide an animal mount to other mounted units in their stack with the 'Ride' spell. These mounts are built around the 'main' mounted line of horsemen, horse archers, and knights, so be wary of the archer penalty if you use dinosaur or boar chariots.
+		[NEWLINE][ICON_BULLET]Boar: -1 move, trades 40% archer bonus for 40% melee bonus. Warriors beware!		[NEWLINE][ICON_BULLET]Rat: -1 move, +25% city attack 		[NEWLINE][ICON_BULLET]Lion: Protection from fear and healing in enemy territory - like the courage spell.		[NEWLINE][ICON_BULLET]Tiger: Stealth 1 and +1 first strike.		[NEWLINE][ICON_BULLET]Stag: 20% magic resist and doubled forest movement.		[NEWLINE][ICON_BULLET]Bear: +2 attack strength, -1 move. 		[NEWLINE][ICON_BULLET]Wolf: +2 perception		[NEWLINE][ICON_BULLET]Dinosaur: Trades 40% archer bonus for 40% recon bonus.		[NEWLINE][ICON_BULLET]Spider: -1 move and strength, but +2 poison strength.		[NEWLINE][ICON_BULLET]Flying: Requires Warhorses, but grants flying. Pegasus mounts used by the Austrin also grant +1 movement.		[NEWLINE][ICON_BULLET]Toads: Amphibious and doubled movement in marshes. 
+		[NEWLINE][PARAGRAPH:1] Unique units may start with animal mounts - Nyxkin start with tiger mounts, for example. Civ-specific units that normally start with an animal mount can spend a small amount of gold to trade out their current mount for the appropriate animal - useful if you no longer need a certain mount and would prefer their basic one. Mounted units that require horses to be built can also buy horses, nightmares, or hyapon mounts in cities. [NEWLINE][PARAGRAPH:1] Some mounted class units like centaurs and war elephants cannot change mounts, as indicated by their 'special mount' promotion. 
+		</English>
+	</TEXT>
 </Civ4GameText>

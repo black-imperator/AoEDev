@@ -11,5 +11,9 @@
 			<Type>TRAITCLASS_SIRA</Type>
 			<Description>TXT_KEY_TRAITCLASS_SIRA</Description>
 		</TraitClassInfo>
+		<TraitClassInfo>
+			<Type>TRAITCLASS_FAIRY_HOUSE</Type>
+			<Description>TXT_KEY_TRAITCLASS_FAIRY_HOUSE</Description>
+		</TraitClassInfo>
 	</TraitClassInfos>
 </Civ4TraitClassInfos>

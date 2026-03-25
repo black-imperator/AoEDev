@@ -1,0 +1,624 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Building Infos -->
+<Civ4BuildingInfos xmlns="x-schema:XP_CIV4BuildingsSchema.xml">
+	<BuildingInfos>	
+		<BuildingInfo>		<!-- Altar Of The Luonnotar                                     Great Priest National Wonder -->
+			<BuildingClass>BUILDINGCLASS_ALTAR_OF_THE_LUONNOTAR</BuildingClass>
+			<Type>BUILDING_ALTAR_OF_THE_LUONNOTAR</Type>
+			<TrainXPCaps>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+			</TrainXPCaps>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Altar Of The Luonnotar Anointed                            Great Priest National Wonder -->
+			<BuildingClass>BUILDINGCLASS_ALTAR_OF_THE_LUONNOTAR_ANOINTED</BuildingClass>
+			<Type>BUILDING_ALTAR_OF_THE_LUONNOTAR_ANOINTED</Type>
+			<TrainXPCaps>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+			</TrainXPCaps>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Altar Of The Luonnotar Blessed                             Great Priest National Wonder -->
+			<BuildingClass>BUILDINGCLASS_ALTAR_OF_THE_LUONNOTAR_BLESSED</BuildingClass>
+			<Type>BUILDING_ALTAR_OF_THE_LUONNOTAR_BLESSED</Type>
+			<TrainXPCaps>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+			</TrainXPCaps>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Altar Of The Luonnotar Consecrated                         Great Priest National Wonder -->
+			<Type>BUILDING_ALTAR_OF_THE_LUONNOTAR_CONSECRATED</Type>
+			<BuildingClass>BUILDINGCLASS_ALTAR_OF_THE_LUONNOTAR_CONSECRATED</BuildingClass>
+			<TrainXPCaps>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+			</TrainXPCaps>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Altar Of The Luonnotar Divine                              Great Priest National Wonder -->
+			<BuildingClass>BUILDINGCLASS_ALTAR_OF_THE_LUONNOTAR_DIVINE</BuildingClass>
+			<Type>BUILDING_ALTAR_OF_THE_LUONNOTAR_DIVINE</Type>
+			<TrainXPCaps>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+			</TrainXPCaps>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Altar Of The Luonnotar Exalted                             Great Priest National Wonder -->
+			<BuildingClass>BUILDINGCLASS_ALTAR_OF_THE_LUONNOTAR_EXALTED</BuildingClass>
+			<Type>BUILDING_ALTAR_OF_THE_LUONNOTAR_EXALTED</Type>
+			<TrainXPCaps>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+			</TrainXPCaps>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Altar Of The Luonnotar Final                               Great Priest National Wonder -->
+			<BuildingClass>BUILDINGCLASS_ALTAR_OF_THE_LUONNOTAR_FINAL</BuildingClass>
+			<Type>BUILDING_ALTAR_OF_THE_LUONNOTAR_FINAL</Type>
+			<TrainXPCaps>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+			</TrainXPCaps>
+		</BuildingInfo>
+		
+		<BuildingInfo>		<!-- Bear Totem                                                 Chislev UB-->
+			<BuildingClass>BUILDINGCLASS_BEAR_TOTEM</BuildingClass>
+			<Type>BUILDING_BEAR_TOTEM</Type>
+			<TrainXPCaps>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_ANIMAL</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_BEAST</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+			</TrainXPCaps>
+		</BuildingInfo>
+
+		<BuildingInfo>		<!-- Bowyer -->
+			<BuildingClass>BUILDINGCLASS_BOWYER</BuildingClass>
+			<Type>BUILDING_BOWYER</Type>
+			<TrainXPCaps>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+			</TrainXPCaps>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Adventurers Guild                                          Grigori UB -->
+			<BuildingClass>BUILDINGCLASS_ADVENTURERS_GUILD</BuildingClass>
+			<Type>BUILDING_ADVENTURERS_GUILD</Type>
+			<TrainXPCaps><!-- Everytrhing but creatues, workers, naval, and commander -->
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+			</TrainXPCaps>
+		</BuildingInfo>	
+		<BuildingInfo>		<!-- Command Post -->
+			<BuildingClass>BUILDINGCLASS_COMMAND_POST</BuildingClass>
+			<Type>BUILDING_COMMAND_POST</Type>
+			<TrainXPCaps><!--Training cap and training rate should match-->
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>-
+			</TrainXPCaps>
+			<TrainXPRates><!-- added missing unitcombat-->
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<fTrainXPRate>0.50</fTrainXPRate>
+				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
+					<fTrainXPRate>0.50</fTrainXPRate>
+				</TrainXPRate>
+			</TrainXPRates>
+		</BuildingInfo>
+		
+		<BuildingInfo>		<!-- Form Of The Titan                                          World Wonder -->
+			<BuildingClass>BUILDINGCLASS_FORM_OF_THE_TITAN</BuildingClass>
+			<Type>BUILDING_FORM_OF_THE_TITAN</Type>
+			<GlobalTrainXPCaps><!--Everything but creatures-->
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+			</GlobalTrainXPCaps>
+		</BuildingInfo>
+        <BuildingInfo>		<!-- Dies Diei                                                  Holy City Wonder -->
+			<BuildingClass>BUILDINGCLASS_DIES_DIEI</BuildingClass>
+			<Type>BUILDING_DIES_DIEI</Type>
+			<TrainXPCaps>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+			</TrainXPCaps>
+		</BuildingInfo>
+       <BuildingInfo>		<!-- Hippodrome -->
+			<BuildingClass>BUILDINGCLASS_HIPPODROME</BuildingClass>
+			<Type>BUILDING_HIPPODROME</Type>
+			<TrainXPCaps>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+			</TrainXPCaps>
+		</BuildingInfo>     
+		<BuildingInfo>		<!-- Nox Noctis                                                 Holy City Wonder -->
+			<BuildingClass>BUILDINGCLASS_NOX_NOCTIS</BuildingClass>
+			<Type>BUILDING_NOX_NOCTIS</Type>
+			<TrainXPCaps>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+			</TrainXPCaps>
+		</BuildingInfo>      
+		<BuildingInfo>		<!-- Desert Shrine                                              Malakim UB -->
+			<BuildingClass>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClass>
+			<Type>BUILDING_DESERT_SHRINE</Type>
+			<TrainXPCaps>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+			</TrainXPCaps>
+		</BuildingInfo>		
+		<BuildingInfo>		<!-- Ride Of The Nine Kings                                     World Wonder -->
+			<BuildingClass>BUILDINGCLASS_RIDE_OF_THE_NINE_KINGS</BuildingClass>
+			<Type>BUILDING_RIDE_OF_THE_NINE_KINGS</Type>
+			<TrainXPCaps>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<fTrainXPCap>10</fTrainXPCap>
+				</TrainXPCap>
+			</TrainXPCaps>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Shipyard -->
+			<BuildingClass>BUILDINGCLASS_SHIPYARD</BuildingClass>
+			<Type>BUILDING_SHIPYARD</Type>
+			<TrainXPCaps>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
+					<fTrainXPCap>4</fTrainXPCap>
+				</TrainXPCap>
+			</TrainXPCaps>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Council Of The Warchief                                    Chislev UB -->
+			<BuildingClass>BUILDINGCLASS_COUNCIL_OF_THE_WARCHIEF</BuildingClass>
+			<Type>BUILDING_COUNCIL_OF_THE_WARCHIEF</Type>
+			<TrainXPCaps><!-- Everytrhing but creatures and naval -->
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+			</TrainXPCaps>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Council Of The Shaman                                      Chislev UB -->
+			<BuildingClass>BUILDINGCLASS_COUNCIL_OF_THE_SHAMAN</BuildingClass>
+			<Type>BUILDING_COUNCIL_OF_THE_SHAMAN</Type>
+			<TrainXPCaps>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+			</TrainXPCaps>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Exploration Guild                                          Austrin UB -->
+			<BuildingClass>BUILDINGCLASS_HUNTING_LODGE</BuildingClass>
+			<Type>BUILDING_EXPLORATION_GUILD</Type>
+			<!--Already has mismatched training cap and base for recon-->
+			<TrainXPCaps>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+			</TrainXPCaps>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Necro Bonus Building2                                      Internal Mechanism -->
+			<BuildingClass>BUILDINGCLASS_NECRO_BONUS_BUILDING</BuildingClass>
+			<Type>BUILDING_NECRO_BONUS_BUILDING2</Type>
+			
+			<TrainXPCaps>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<fTrainXPCap>1</fTrainXPCap>
+				</TrainXPCap>
+			</TrainXPCaps>
+
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Necro Bonus Building3                                      Internal Mechanism -->
+			<BuildingClass>BUILDINGCLASS_NECRO_BONUS_BUILDING</BuildingClass>
+			<Type>BUILDING_NECRO_BONUS_BUILDING3</Type>
+			
+			
+			<TrainXPCaps>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+			</TrainXPCaps>
+
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Cathedral Of Rebirth                                       Scions UB -->
+			<BuildingClass>BUILDINGCLASS_CATHEDRAL_OF_REBIRTH</BuildingClass>
+			<Type>BUILDING_CATHEDRAL_OF_REBIRTH</Type>
+			
+			
+			<TrainXPCaps>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+			</TrainXPCaps>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Keep Death                                                 Scions Internal Mechanism -->
+			<BuildingClass>BUILDINGCLASS_KEEP_SECONDARY</BuildingClass>
+			<Type>BUILDING_KEEP_DEATH</Type>
+			<TrainXPCaps>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+			</TrainXPCaps>
+
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Keep Main                                                  Scions Internal Mechanism -->
+			<BuildingClass>BUILDINGCLASS_KEEP_MAIN</BuildingClass>
+			<Type>BUILDING_KEEP_MAIN</Type>
+			<TrainXPCaps>
+				<TrainXPCap>
+				<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<fTrainXPCap>3</fTrainXPCap>
+				</TrainXPCap>
+			</TrainXPCaps>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Keep Schola Furo                                           Scions Internal Mechanism -->
+			<BuildingClass>BUILDINGCLASS_KEEP_SECONDARY</BuildingClass>
+			<Type>BUILDING_KEEP_SCHOLA_FURO</Type>
+			<TrainXPCaps>
+				<TrainXPCap>
+				<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<fTrainXPCap>4</fTrainXPCap>
+				</TrainXPCap>
+			</TrainXPCaps>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Memorial of the Refugee                                    Grigori National Wonder -->
+			<BuildingClass>BUILDINGCLASS_MEMORIAL_REFUGEE</BuildingClass>
+			<Type>BUILDING_MEMORIAL_REFUGEE</Type>
+			
+			<TrainXPCaps><!--Everything but creatures-->
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+			</TrainXPCaps>
+
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Colosseum                                                  Mekara UB -->
+			<BuildingClass>BUILDINGCLASS_THEATRE</BuildingClass>
+			<Type>BUILDING_COLOSSEUM</Type>
+			
+			<TrainXPCaps><!--Everything but creatures and naval-->
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+			</TrainXPCaps>
+			
+		</BuildingInfo>
+		<BuildingInfo>		<!--Crime--><!--Mutiny-->
+			<BuildingClass>BUILDINGCLASS_CRIME_RIOTS</BuildingClass>
+			<Type>BUILDING_CRIME_MUTINY</Type>
+			<TrainXPCaps>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
+					<fTrainXPCap>5</fTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+				<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<fTrainXPCap>5</fTrainXPCap>
+				</TrainXPCap>
+			</TrainXPCaps>
+
+		</BuildingInfo>
+		<BuildingInfo>		<!--Crime--><!--PressGanging-->
+			<BuildingClass>BUILDINGCLASS_CRIME_HUMAN_TRAFFICKING</BuildingClass>
+			<Type>BUILDING_CRIME_PRESSGANGING</Type>
+			<TrainXPCaps>
+				<TrainXPCap>
+				<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
+					<fTrainXPCap>2</fTrainXPCap>
+				</TrainXPCap>
+			</TrainXPCaps>
+		</BuildingInfo>
+		<!--end base AoE Buildings here-->
+	</BuildingInfos>
+</Civ4BuildingInfos>

@@ -1,6 +1,0 @@
-If these nerfs bother you:
-Go to captainmountedtweaks > xml > units
-Open civ4unitinfos with a text editor
-Scroll to bottom where you see <!-- war elephant --> or search it
-change TECH_STIRRUPS there to TECH_HORSEBACK_RIDING
-repeat for mammoth rider

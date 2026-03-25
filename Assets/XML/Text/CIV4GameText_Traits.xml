@@ -784,6 +784,14 @@
 		<Spanish>[NEWLINE][ICON_BULLET]Cities won't change population due to food</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_TRAIT_IGNORE_PRODUCTION_HELP</Tag>
+		<English>[NEWLINE][ICON_BULLET]Cities won't use production to build buildings, projects and units.</English>
+		<French>[NEWLINE][ICON_BULLET]Cities won't use production to build buildings, projects and units.</French>
+		<German>[NEWLINE][ICON_BULLET]Cities won't use production to build buildings, projects and units.</German>
+		<Italian>[NEWLINE][ICON_BULLET]Cities won't use production to build buildings, projects and units.</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]Cities won't use production to build buildings, projects and units.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_TRAIT_ILLUSIONIST</Tag>
 		<English>Illusionist</English>
 		<French>Illusioniste</French>

@@ -6,9 +6,7 @@
 <!-- Spell Infos -->
 <Civ4SpellInfos xmlns="x-schema:NAMKO_CIV4UnitSpellSchema.xml">
 	<SpellInfos>
-		<!-- World Spell -->
-		<!-- Holy March -->
-		<SpellInfo>
+		<SpellInfo> <!-- Holy March -->         <!-- World Spell -->
             <Type>SPELL_NAMKO_HOLY_MARCH</Type>
             <Description>Holy March</Description>
             <Civilopedia>TEXT_SPELL_NAMKO_HOLYMARCH</Civilopedia>
@@ -25,5 +23,22 @@
             <Sound>AS3D_SPELL_INSPIRATION</Sound>
             <Button>Modules\NormalModules\DrackNamko\Art\Spells\HolyMarch.dds</Button>
         </SpellInfo>
+        <SpellInfo>			<!-- Grant Eternal Faith -->
+			<Type>SPELL_NAMKO_GRANT_ETERNAL_FAITH</Type>
+			<Description>TXT_KEY_SPELL_NAMKO_GRANT_ETERNAL_FAITH</Description>
+			<Civilopedia>TXT_KEY_SPELL_NAMKO_GRANT_ETERNAL_FAITH_PEDIA</Civilopedia>
+            <Help>TXT_KEY_SPELL_NAMKO_GRANT_ETERNAL_FAITH_HELP</Help>
+			<UnitPrereq>UNIT_NAMKO_NEPHRAKIS</UnitPrereq>
+			<bAllowAI>1</bAllowAI>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+			<bImmuneNeutral>1</bImmuneNeutral>
+			<bImmuneEnemy>1</bImmuneEnemy>
+			<PyResult>__import__('NamkoCvSpells').spellGrantEternalFaith(pCaster)</PyResult>
+			<PyRequirement>__import__('NamkoCvSpells').reqGrantEternalFaith(pCaster)</PyRequirement>
+			<Effect>EFFECT_SPELL1</Effect>
+			<Sound>AS3D_GIFT</Sound>
+			<Button>Modules\NormalModules\DrackNamko\Art\Spells\GrantEternalFaith.dds</Button>
+		</SpellInfo>
 	</SpellInfos>
 </Civ4SpellInfos>

@@ -234,7 +234,7 @@
 			<iWithdrawalChange>15</iWithdrawalChange>
 			<Button>Modules\NormalModules\DrackTeuhaliOrder\Art\Promotions\WiseRitter.dds</Button>
 		</PromotionInfo>
-		<PromotionInfo>		<!-- Weizenritter -->
+		<PromotionInfo>	<!-- Weizenritter -->
 			<Type>PROMOTION_TEUHALI_WEIZENRITTER</Type>
 			<Description>TXT_KEY_PROMOTION_TEUHALI_WEIZENRITTER</Description>
 			<Civilopedia>TXT_KEY_PROMOTION_TEUHALI_WEIZENRITTER_PEDIA</Civilopedia>
@@ -259,9 +259,9 @@
 				</UnitCombat>
 			</UnitCombats>
 			<bFreeUnit>1</bFreeUnit>
-			<iCombatPercent>-15</iCombatPercent>
+			<iCombatPercent>-10</iCombatPercent>
 			<UnitCombats />
-			<Button>Art/Interface/Buttons/Promotions/Civs/Mekara/Militia.dds</Button>
+			<Button>Modules\NormalModules\DrackTeuhaliOrder\Art\Promotions\WeizenRitter.dds</Button>
 			<iMinLevel>-1</iMinLevel>
 		</PromotionInfo>
 	</PromotionInfos>
