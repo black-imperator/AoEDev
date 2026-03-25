@@ -337,24 +337,11 @@
 		<PromotionInfo>		<!-- Dural military apprenticeship - Melee    -->
 			<Type>PROMOTION_DURAL_STUDENT_MELEE</Type>
 			<Description>TXT_KEY_DURAL_STUDENT_MELEE</Description>
-			<iFreeXPPerTurn>0.25</iFreeXPPerTurn>
+			<iFreeXPPerTurn>0.50</iFreeXPPerTurn>
             <fFreeXPCap>100</fFreeXPCap>
 			<bNoXP>1</bNoXP>
 			<iMinLevel>-1</iMinLevel>
-			<iPromotionDuration>2</iPromotionDuration>
-			<PromotionExcludes>
-				<Promotion>PROMOTION_DURAL_STUDENT_DEF_MELEE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_DISCIPLE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_WORKER</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_MOUNTED</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_ADEPT</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_ARCHER</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_SIEGE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_NAVAL</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_RECON</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_ROGUE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_COMMANDER</Promotion>
-			</PromotionExcludes>
+			<iPromotionDuration>5</iPromotionDuration>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
@@ -421,24 +408,11 @@
 		<PromotionInfo>		<!-- Dural military apprenticeship -  Defensive melee   -->
 			<Type>PROMOTION_DURAL_STUDENT_DEF_MELEE</Type>
 			<Description>TXT_KEY_DURAL_STUDENT_DEF_MELEE</Description>
-			<iFreeXPPerTurn>0.25</iFreeXPPerTurn>
+			<iFreeXPPerTurn>0.50</iFreeXPPerTurn>
             <fFreeXPCap>100</fFreeXPCap>
 			<bNoXP>1</bNoXP>
 			<iMinLevel>-1</iMinLevel>
-			<iPromotionDuration>2</iPromotionDuration>
-			<PromotionExcludes>
-				<Promotion>PROMOTION_DURAL_STUDENT_DISCIPLE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_WORKER</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_MOUNTED</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_ADEPT</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_ARCHER</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_SIEGE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_NAVAL</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_RECON</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_ROGUE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_MELEE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_COMMANDER</Promotion>
-			</PromotionExcludes>
+			<iPromotionDuration>5</iPromotionDuration>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
@@ -505,24 +479,11 @@
 		<PromotionInfo>		<!-- Dural military apprenticeship - Mounted    -->
 			<Type>PROMOTION_DURAL_STUDENT_MOUNTED</Type>
 			<Description>TXT_KEY_DURAL_STUDENT_MOUNTED</Description>
-			<iFreeXPPerTurn>0.25</iFreeXPPerTurn>
+			<iFreeXPPerTurn>0.50</iFreeXPPerTurn>
             <fFreeXPCap>100</fFreeXPCap>
 			<bNoXP>1</bNoXP>
 			<iMinLevel>-1</iMinLevel>
-			<iPromotionDuration>2</iPromotionDuration>
-			<PromotionExcludes>
-				<Promotion>PROMOTION_DURAL_STUDENT_DEF_MELEE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_DISCIPLE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_WORKER</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_ADEPT</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_ARCHER</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_SIEGE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_NAVAL</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_RECON</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_ROGUE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_MELEE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_COMMANDER</Promotion>
-			</PromotionExcludes>
+			<iPromotionDuration>5</iPromotionDuration>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
@@ -589,24 +550,11 @@
 		<PromotionInfo>		<!-- Dural military apprenticeship - Recon    -->
 			<Type>PROMOTION_DURAL_STUDENT_RECON</Type>
 			<Description>TXT_KEY_DURAL_STUDENT_RECON</Description>
-			<iFreeXPPerTurn>0.25</iFreeXPPerTurn>
+			<iFreeXPPerTurn>0.50</iFreeXPPerTurn>
             <fFreeXPCap>100</fFreeXPCap>
 			<bNoXP>1</bNoXP>
 			<iMinLevel>-1</iMinLevel>
-			<iPromotionDuration>2</iPromotionDuration>
-			<PromotionExcludes>
-				<Promotion>PROMOTION_DURAL_STUDENT_DEF_MELEE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_DISCIPLE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_WORKER</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_MOUNTED</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_ADEPT</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_ARCHER</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_SIEGE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_NAVAL</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_ROGUE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_MELEE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_COMMANDER</Promotion>
-			</PromotionExcludes>
+			<iPromotionDuration>5</iPromotionDuration>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
@@ -681,24 +629,11 @@
 		<PromotionInfo>		<!-- Dural military apprenticeship -  Archer   -->
 			<Type>PROMOTION_DURAL_STUDENT_ARCHER</Type>
 			<Description>TXT_KEY_DURAL_STUDENT_ARCHER</Description>
-			<iFreeXPPerTurn>0.25</iFreeXPPerTurn>
+			<iFreeXPPerTurn>0.50</iFreeXPPerTurn>
             <fFreeXPCap>100</fFreeXPCap>
 			<bNoXP>1</bNoXP>
 			<iMinLevel>-1</iMinLevel>
-			<iPromotionDuration>2</iPromotionDuration>
-			<PromotionExcludes>
-				<Promotion>PROMOTION_DURAL_STUDENT_DEF_MELEE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_DISCIPLE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_WORKER</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_MOUNTED</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_ADEPT</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_SIEGE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_NAVAL</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_RECON</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_ROGUE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_MELEE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_COMMANDER</Promotion>
-			</PromotionExcludes>
+			<iPromotionDuration>5</iPromotionDuration>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
@@ -765,24 +700,11 @@
 		<PromotionInfo>		<!-- Dural military apprenticeship -  Adept   -->
 			<Type>PROMOTION_DURAL_STUDENT_ADEPT</Type>
 			<Description>TXT_KEY_DURAL_STUDENT_ADEPT</Description>
-			<iFreeXPPerTurn>0.25</iFreeXPPerTurn>
+			<iFreeXPPerTurn>0.50</iFreeXPPerTurn>
             <fFreeXPCap>100</fFreeXPCap>
 			<bNoXP>1</bNoXP>
 			<iMinLevel>-1</iMinLevel>
-			<iPromotionDuration>2</iPromotionDuration>
-			<PromotionExcludes>
-				<Promotion>PROMOTION_DURAL_STUDENT_DEF_MELEE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_DISCIPLE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_WORKER</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_MOUNTED</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_ARCHER</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_SIEGE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_NAVAL</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_RECON</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_ROGUE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_MELEE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_COMMANDER</Promotion>
-			</PromotionExcludes>
+			<iPromotionDuration>5</iPromotionDuration>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
@@ -849,24 +771,11 @@
 		<PromotionInfo>		<!-- Dural military apprenticeship -  DISCIPLE   -->
 			<Type>PROMOTION_DURAL_STUDENT_DISCIPLE</Type>
 			<Description>TXT_KEY_DURAL_STUDENT_DISCIPLE</Description>
-			<iFreeXPPerTurn>0.25</iFreeXPPerTurn>
+			<iFreeXPPerTurn>0.50</iFreeXPPerTurn>
             <fFreeXPCap>100</fFreeXPCap>
 			<bNoXP>1</bNoXP>
 			<iMinLevel>-1</iMinLevel>
-			<iPromotionDuration>2</iPromotionDuration>
-			<PromotionExcludes>
-				<Promotion>PROMOTION_DURAL_STUDENT_DEF_MELEE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_WORKER</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_MOUNTED</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_ADEPT</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_ARCHER</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_SIEGE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_NAVAL</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_RECON</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_ROGUE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_MELEE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_COMMANDER</Promotion>
-			</PromotionExcludes>
+			<iPromotionDuration>5</iPromotionDuration>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
@@ -933,24 +842,11 @@
 		<PromotionInfo>		<!-- Dural military apprenticeship -  ROGUE   -->
 			<Type>PROMOTION_DURAL_STUDENT_ROGUE</Type>
 			<Description>TXT_KEY_DURAL_STUDENT_ROGUE</Description>
-			<iFreeXPPerTurn>0.25</iFreeXPPerTurn>
+			<iFreeXPPerTurn>0.50</iFreeXPPerTurn>
             <fFreeXPCap>100</fFreeXPCap>
 			<bNoXP>1</bNoXP>
 			<iMinLevel>-1</iMinLevel>
-			<iPromotionDuration>2</iPromotionDuration>
-			<PromotionExcludes>
-				<Promotion>PROMOTION_DURAL_STUDENT_DEF_MELEE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_DISCIPLE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_WORKER</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_MOUNTED</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_ADEPT</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_ARCHER</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_SIEGE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_NAVAL</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_RECON</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_MELEE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_COMMANDER</Promotion>
-			</PromotionExcludes>
+			<iPromotionDuration>5</iPromotionDuration>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
@@ -1017,24 +913,11 @@
 		<PromotionInfo>		<!-- Dural military apprenticeship -   SIEGE  -->
 			<Type>PROMOTION_DURAL_STUDENT_SIEGE</Type>
 			<Description>TXT_KEY_DURAL_STUDENT_SIEGE</Description>
-			<iFreeXPPerTurn>0.25</iFreeXPPerTurn>
+			<iFreeXPPerTurn>0.50</iFreeXPPerTurn>
             <fFreeXPCap>100</fFreeXPCap>
 			<bNoXP>1</bNoXP>
 			<iMinLevel>-1</iMinLevel>
-			<iPromotionDuration>2</iPromotionDuration>
-			<PromotionExcludes>
-				<Promotion>PROMOTION_DURAL_STUDENT_DEF_MELEE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_DISCIPLE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_WORKER</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_MOUNTED</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_ADEPT</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_ARCHER</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_NAVAL</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_RECON</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_ROGUE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_MELEE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_COMMANDER</Promotion>
-			</PromotionExcludes>
+			<iPromotionDuration>5</iPromotionDuration>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
@@ -1101,24 +984,11 @@
 		<PromotionInfo>		<!-- Dural military apprenticeship - NAVAL    -->
 			<Type>PROMOTION_DURAL_STUDENT_NAVAL</Type>
 			<Description>TXT_KEY_DURAL_STUDENT_NAVAL</Description>
-			<iFreeXPPerTurn>0.25</iFreeXPPerTurn>
+			<iFreeXPPerTurn>0.50</iFreeXPPerTurn>
             <fFreeXPCap>100</fFreeXPCap>
 			<bNoXP>1</bNoXP>
 			<iMinLevel>-1</iMinLevel>
-			<iPromotionDuration>2</iPromotionDuration>
-			<PromotionExcludes>
-				<Promotion>PROMOTION_DURAL_STUDENT_DEF_MELEE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_DISCIPLE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_WORKER</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_MOUNTED</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_ADEPT</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_ARCHER</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_SIEGE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_RECON</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_ROGUE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_MELEE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_COMMANDER</Promotion>
-			</PromotionExcludes>
+			<iPromotionDuration>5</iPromotionDuration>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
@@ -1185,24 +1055,11 @@
 		<PromotionInfo>		<!-- Dural military apprenticeship -  COMMANDER   -->
 			<Type>PROMOTION_DURAL_STUDENT_COMMANDER</Type>
 			<Description>TXT_KEY_DURAL_STUDENT_COMMANDER</Description>
-			<iFreeXPPerTurn>0.25</iFreeXPPerTurn>
+			<iFreeXPPerTurn>0.50</iFreeXPPerTurn>
             <fFreeXPCap>100</fFreeXPCap>
 			<bNoXP>1</bNoXP>
 			<iMinLevel>-1</iMinLevel>
-			<iPromotionDuration>2</iPromotionDuration>
-			<PromotionExcludes>
-				<Promotion>PROMOTION_DURAL_STUDENT_DEF_MELEE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_DISCIPLE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_WORKER</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_MOUNTED</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_ADEPT</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_ARCHER</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_SIEGE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_NAVAL</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_RECON</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_ROGUE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_MELEE</Promotion>
-			</PromotionExcludes>
+			<iPromotionDuration>5</iPromotionDuration>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
@@ -1269,23 +1126,11 @@
 		<PromotionInfo>		<!-- Dural military apprenticeship -  WORKER   -->
 			<Type>PROMOTION_DURAL_STUDENT_WORKER</Type>
 			<Description>TXT_KEY_DURAL_STUDENT_WORKER</Description>
-			<iFreeXPPerTurn>0.25</iFreeXPPerTurn>
+			<iFreeXPPerTurn>0.50</iFreeXPPerTurn>
             <fFreeXPCap>100</fFreeXPCap>
 			<bNoXP>1</bNoXP>
 			<iMinLevel>-1</iMinLevel>
-			<iPromotionDuration>2</iPromotionDuration>
-			<PromotionExcludes>
-				<Promotion>PROMOTION_DURAL_STUDENT_DEF_MELEE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_DISCIPLE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_MOUNTED</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_ADEPT</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_ARCHER</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_SIEGE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_NAVAL</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_RECON</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_ROGUE</Promotion>
-				<Promotion>PROMOTION_DURAL_STUDENT_COMMANDER</Promotion>
-			</PromotionExcludes>
+			<iPromotionDuration>5</iPromotionDuration>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
