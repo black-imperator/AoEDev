@@ -1,3 +1,45 @@
+
+   <!-- <PromotionInfo>		 Clever Troll 
+			<Type>PROMOTION_CLEVER_TROLL</Type>
+			<Description>TXT_KEY_PROMOTION_CLEVER_TROLL</Description>
+			<TechPrereq>TECH_HUNTING</TechPrereq>
+			<bAllowDefenseBonuses>1</bAllowDefenseBonuses>
+			<bAutoAcquire>1</bAutoAcquire>
+			<bCanPillage>1</bCanPillage>
+			<bEffectProm>1</bEffectProm>
+			<bNoXP>1</bNoXP>
+			<iSlaveGenerationChance>15</iSlaveGenerationChance>
+			<PrereqCivilizations>
+				<PrereqCivilization>CIVILIZATION_JOTNAR</PrereqCivilization>
+			</PrereqCivilizations>
+			<PrereqUnits>
+				<PrereqUnit>UNIT_JOT_TROLL</PrereqUnit>
+				<PrereqUnit>UNIT_TROLL_HUNTER</PrereqUnit>
+				<PrereqUnit>UNIT_TROLL_RANGER</PrereqUnit>
+				<PrereqUnit>UNIT_JOT_BEASTMASTER</PrereqUnit>
+			</PrereqUnits>
+			<PromotionExcludes>
+			<Promotion>PROMOTION_FERAL</Promotion>
+			</PromotionExcludes>
+			<bAlwaysHeal>1</bAlwaysHeal>
+			<iMovesChange>1</iMovesChange>
+			<iWithdrawalChange>10</iWithdrawalChange>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Art/Civs/Jotnar/buttons/jot_troll.dds</Button>
+			<iExtraCombatStr>1</iExtraCombatStr>
+			
+			<PromotionCombatMods>
+				<PromotionCombatMod>
+					<PromotionType>PROMOTION_GOBLIN</PromotionType>
+					<iCombatMod>30</iCombatMod>
+				</PromotionCombatMod>			
+			</PromotionCombatMods>
+		</PromotionInfo>-->
 <!--    <PromotionInfo>		 Jotnar Great Person Charge 
 			<Type>PROMOTION_GREAT_JOTNAR</Type>
 			<Description>Jotnar Great Person</Description>

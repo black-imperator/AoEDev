@@ -14962,7 +14962,11 @@
 			<Description>TXT_KEY_PROMOTION_QUESTING</Description>
 			<Help></Help>
 			<bBlind>1</bBlind>
+			<bAllowAttacks>1</bAllowAttacks>
 			<bFreeUnit>1</bFreeUnit>
+			<bNoSupply>1</bNoSupply>
+			<bEnraged>1</bEnraged>
+			<iLeashRange>3</iLeashRange>
 			<fFreeXPCap>100</fFreeXPCap>
 			<iPromotionDuration>10</iPromotionDuration>
 			<PrereqbAllowNULLUnitCombat>1</PrereqbAllowNULLUnitCombat>
@@ -15007,7 +15011,6 @@
 			<Button>Art/Interface/Buttons/Units/Adventurer.dds</Button>
 			<iFreeXPPerTurn>2</iFreeXPPerTurn>
 			<iMinLevel>-1</iMinLevel>
-			<PyPerTurn>effectWanderingCurse(pCaster)</PyPerTurn>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Quickened -->
 			<Type>PROMOTION_QUICKENED</Type>

@@ -3164,7 +3164,7 @@
 			<PrereqTech>TECH_TRACKING</PrereqTech>
 			<iCost>90</iCost>
 			<iAdvancedStartCost>150</iAdvancedStartCost>
-			<iMoves>1</iMoves>
+			<iMoves>2</iMoves>
 			<iWorkRate>150</iWorkRate>
 			<iCombat>3</iCombat>
 			<iCityAttack>-50</iCityAttack>
@@ -3246,7 +3246,7 @@
 			<PrereqTech>TECH_ANIMAL_HANDLING</PrereqTech>
 			<iCost>180</iCost>
 			<iAdvancedStartCost>200</iAdvancedStartCost>
-			<iMoves>1</iMoves>
+			<iMoves>2</iMoves>
 			<iWorkRate>200</iWorkRate>
 			<iCombat>6</iCombat>
 			<iCityAttack>-50</iCityAttack>
