@@ -6329,6 +6329,74 @@
 			<Image>Art\Interface\Popups\Meskwaki.dds</Image>
 			<Quote>TXT_KEY_UNIT_MESKWAKI_STRATEGY</Quote>
 		</UnitInfo>
+		<UnitInfo>        <!-- Meshwaki 60-->
+			<Class>UNITCLASS_WAR_RUNNER</Class>
+			<Type>UNIT_WAR_RUNNER</Type>
+			<Combat>UNITCOMBAT_MELEE</Combat>
+			<DefaultUnitAI>UNITAI_HERO</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_WAR_RUNNER</Description>
+			<Civilopedia>TXT_KEY_UNIT_WAR_RUNNER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_WAR_RUNNER_STRATEGY</Strategy>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bMilitarySupport>1</bMilitarySupport>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<bPillage>1</bPillage>
+			<bCanMoveImpassable>1</bCanMoveImpassable>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ATTACK</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_HERO</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<iFlavor>32</iFlavor>
+				</Flavor>
+			</Flavors>
+			<iAIWeight>16</iAIWeight>
+			<iCost>100</iCost>
+			<iMoves>1</iMoves>
+			<iWorkRate>400</iWorkRate>
+			<iCombat>2</iCombat>
+			<iXPValueAttack>32</iXPValueAttack>
+			<iXPValueDefense>16</iXPValueDefense>
+			<iCultureGarrison>3</iCultureGarrison>
+			<iAsset>8</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>1</iGroupSize>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_MESKWAKI</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_HEROIC</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_LIFE1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+			<BonusAffinities>
+				<BonusAffinity>
+					<BonusType>BONUS_MANA_LIFE</BonusType>
+					<iAffinity>1</iAffinity>
+				</BonusAffinity>
+			</BonusAffinities>
+			<iTier>1</iTier>
+			<Image>Art\Interface\Popups\Meskwaki.dds</Image>
+			<Quote>TXT_KEY_UNIT_WAR_RUNNER_PEDIA</Quote>
+		</UnitInfo>
 		<UnitInfo>        <!-- Miquiztli -->
 			<Class>UNITCLASS_MIQUIZTLI</Class>
 			<Type>UNIT_MIQUIZTLI</Type>
@@ -14856,7 +14924,6 @@
 			</UnitMeshGroups>
 			<iCombatDefense>5</iCombatDefense>
 			<iTier>4</iTier>
-			<iWeaponTierMax>3</iWeaponTierMax>
 			<iPowerMult>3</iPowerMult>
 			<BonusAffinities>
 				<BonusAffinity>
@@ -14909,7 +14976,6 @@
 			<bImmortal>1</bImmortal>
 			<iMinLevel>6</iMinLevel>
 			<iTier>4</iTier>
-			<iWeaponTierMax>3</iWeaponTierMax>
 			<BonusAffinities>
 				<BonusAffinity>
 					<BonusType>BONUS_MANA_NATURE</BonusType>
@@ -14941,10 +15007,6 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_RIGHTEOUSNESS</PrereqTech>
-			<PrereqBonuses>
-				<BonusType>BONUS_IRON</BonusType>
-				<BonusType>BONUS_MITHRIL</BonusType>
-			</PrereqBonuses>
 			<iCost>240</iCost>
 			<iMoves>1</iMoves>
 			<iCombat>9</iCombat>
@@ -14969,10 +15031,6 @@
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 				<FreePromotion>
-					<PromotionType>PROMOTION_DEMON_SLAYING</PromotionType>
-					<iNumApplied>1</iNumApplied>
-				</FreePromotion>
-				<FreePromotion>
 					<PromotionType>PROMOTION_MEDIC1</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
@@ -14982,19 +15040,12 @@
 				</FreePromotion>
 			</FreePromotions>
 			<iTier>4</iTier>
-			<PrereqAlignment>ALIGNMENT_GOOD</PrereqAlignment>
 			<DamageTypeCombats>
 				<DamageTypeCombat>
 					<DamageType>DAMAGE_HOLY</DamageType>
 					<iCombat>3</iCombat>
 				</DamageTypeCombat>
 			</DamageTypeCombats>
-			<AllowPromotions>
-				<Promotion>PROMOTION_BLESSED_ARMOR_MELEE</Promotion>
-				<Promotion>PROMOTION_HIGH_QUALITY_BRONZE_MELEE</Promotion>
-				<Promotion>PROMOTION_HIGH_QUALITY_STEEL_MELEE</Promotion>
-				<Promotion>PROMOTION_HIGH_QUALITY_MITHRIL_MELEE</Promotion>
-			</AllowPromotions>
 			<iAlignmentModifier>4</iAlignmentModifier>
 			<BonusAffinities>
 				<BonusAffinity>
@@ -15020,6 +15071,8 @@
 				<UnitClassUpgradeType>UNITCLASS_AXEMAN</UnitClassUpgradeType>
 				<UnitClassUpgradeType>UNITCLASS_SPEARMAN</UnitClassUpgradeType>
 				<UnitClassUpgradeType>UNITCLASS_HUNTER</UnitClassUpgradeType>
+				<UnitClassUpgradeType>UNITCLASS_HORSEMAN</UnitClassUpgradeType>
+				<UnitClassUpgradeType>UNITCLASS_MAGE</UnitClassUpgradeType>
 			</UnitClassUpgrades>
 			<UnitAIs>
 				<UnitAI>
@@ -15034,7 +15087,7 @@
 			<iCost>25</iCost>
 			<iMoves>1</iMoves>
 			<iCombat>3</iCombat>
-			<iCityDefense>25</iCityDefense>
+			<iCityAttack>15</iCityAttack>
 			<iConscription>1</iConscription>
 			<iCultureGarrison>3</iCultureGarrison>
 			<iAsset>1</iAsset>
@@ -15057,6 +15110,8 @@
 			</UnitMeshGroups>
 			<iTier>1</iTier>
 			<iWeaponTierMax>1</iWeaponTierMax>
+			<bNeverObsolete>1</bNeverObsolete>
+			<bFood>1</bFood>
 		</UnitInfo>
 		<UnitInfo>        <!-- Windtalker -->
 			<Class>UNITCLASS_FORT_COMMANDER</Class>

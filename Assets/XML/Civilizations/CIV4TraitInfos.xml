@@ -909,6 +909,54 @@
 			</UnitClassPlayerInstancesChanges>
 			<bIgnoreHappy>1</bIgnoreHappy>
 		</TraitInfo>
+		<TraitInfo>		<!-- Adoption - Chislev -->									<!-- Core traits -->
+			<Type>TRAIT_ADOPTION_CHISLEV</Type>
+			<TraitClass>TRAITCLASS_CIVILIZATION</TraitClass>
+			<Description>TXT_KEY_TRAIT_ADOPTION</Description>
+			<Civilopedia>TXT_KEY_TRAIT_ADOPTION_PEDIA</Civilopedia>
+			<ShortDescription>TXT_KEY_TRAIT_ADOPTION_SHORT</ShortDescription>
+			<iInitialCityCap>7</iInitialCityCap>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_ADOPTIVE_CHISLEV</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
+			</FreePromotions>
+			<FreePromotionUnitCombats>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+			</FreePromotionUnitCombats>
+		</TraitInfo>
 		<TraitInfo>		<!-- Wanderer -->
 			<Type>TRAIT_WANDERER</Type>
 			<TraitClass>TRAITCLASS_CIVILIZATION</TraitClass>

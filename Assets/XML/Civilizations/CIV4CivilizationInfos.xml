@@ -1170,6 +1170,30 @@
 			</Cities>
 			<Buildings>
 				<Building>
+					<BuildingClassType>BUILDINGCLASS_CLAN_STRUCTURE</BuildingClassType>
+					<BuildingType>BUILDING_CLAN_STRUCTURE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_CLAN_STRUCTURE_MOUND</BuildingClassType>
+					<BuildingType>BUILDING_CLAN_STRUCTURE_MOUND</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_CLAN_STRUCTURE_LODGE</BuildingClassType>
+					<BuildingType>BUILDING_CLAN_STRUCTURE_LODGE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_CLAN_STRUCTURE_COUNCIL</BuildingClassType>
+					<BuildingType>BUILDING_CLAN_STRUCTURE_COUNCIL</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_FORGE</BuildingClassType>
+					<BuildingType>BUILDING_FORGE_CHISLEV</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_GRANARY</BuildingClassType>
+					<BuildingType>BUILDING_ROOT_CELLAR</BuildingType>
+				</Building>
+				<Building>
 					<BuildingClassType>BUILDINGCLASS_ALCHEMY_LAB</BuildingClassType>
 					<BuildingType>BUILDING_MEDICINE_HUT</BuildingType>
 				</Building>
@@ -1240,8 +1264,8 @@
 					<UnitType>UNIT_COMMANDER_CHISLEV_WARCHIEF</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_MESKWAKI</UnitClassType>
-					<UnitType>UNIT_MESKWAKI</UnitType>
+					<UnitClassType>UNITCLASS_WAR_RUNNER</UnitClassType>
+					<UnitType>UNIT_WAR_RUNNER</UnitType>
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_ARQUEBUS</UnitClassType>
@@ -1299,6 +1323,10 @@
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 					<bFreeBuildingClass>1</bFreeBuildingClass>
 				</FreeBuildingClass>
+				<FreeBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_CLAN_STRUCTURE</BuildingClassType>
+					<bFreeBuildingClass>1</bFreeBuildingClass>
+				</FreeBuildingClass>
 			</FreeBuildingClasses>
 			<FreeTechs>
 				<FreeTech>
@@ -1337,10 +1365,22 @@
 			<CivilizationActionSound>AS3D_AZTEC_ORDER</CivilizationActionSound>
 			<bGraphicalOnly>0</bGraphicalOnly>
 			<DefaultRace>NONE</DefaultRace>
-			<Hero>UNIT_MESKWAKI</Hero>
+			<CivTrait>TRAIT_ADOPTION_CHISLEV</CivTrait>
+			<Hero>UNIT_WAR_RUNNER</Hero>
 			<MaintainFeatures>
 			</MaintainFeatures>
 			<Image>Art/Civs/Pedia/Civilizations/Chislev.dds</Image>
+			<TerrainYieldChanges>
+				<TerrainYieldChange>
+					<TerrainType>TERRAIN_GRASS</TerrainType>
+					<TerrainYields>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+					</TerrainYields>
+				</TerrainYieldChange>
+			</TerrainYieldChanges>
+			<FormClimateZoneType>CLIMATEZONE_TEMPERATE</FormClimateZoneType>
 		</CivilizationInfo>
 		<CivilizationInfo><!-- Clan of Embers -->
 			<Type>CIVILIZATION_CLAN_OF_EMBERS</Type>
