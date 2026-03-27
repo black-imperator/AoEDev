@@ -3292,7 +3292,7 @@
 			<bShiftDown>0</bShiftDown>
 			<bCtrlDown>0</bCtrlDown>
 			<iHotKeyPriority>0</iHotKeyPriority>
-			<Button>,Art/Interface/Buttons/Builds/BuildCottage.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,2,7</Button>
+			<Button>Art/Interface/Buttons/Buildings/TribalShrine.dds</Button>
 			<TechBuildDiscounts>
 				<TechBuildDiscount>
 					<TechType>TECH_EDUCATION</TechType>

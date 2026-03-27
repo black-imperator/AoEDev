@@ -35154,6 +35154,27 @@
 			<Button>,Art/Interface/Buttons/Civics/Slavery.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,8,2</Button>
 			<iMinLevel>-1</iMinLevel>
 		</PromotionInfo>
+		<PromotionInfo>		<!-- Chislev Clan Builder    -->
+			<Type>PROMOTION_LEAVES_CLAN_BUILDER</Type>
+			<Description>TXT_KEY_PROMOTION_CHISLEV_CLAN_BUILDER</Description>
+			<bAutoAcquire>1</bAutoAcquire>
+			<bMustMaintain>1</bMustMaintain>
+			<bNoXP>1</bNoXP>
+			<PrereqCivilizations>
+				<PrereqCivilization>CIVILIZATION_CHISLEV</PrereqCivilization>
+			</PrereqCivilizations>
+			<PromotionBuilds>
+				<PromotionBuild>BUILD_CHISLEV_CLAN</PromotionBuild>
+			</PromotionBuilds>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Art/Interface/Buttons/Buildings/TribalShrine.dds</Button>
+			<bEffectProm>1</bEffectProm>
+		</PromotionInfo>
 		<PromotionInfo>		<!-- Ruthless Promo -->
 			<Type>PROMOTION_TRAIT_RUTHLESS</Type>
 			<Description>TXT_KEY_PROMOTION_TRAIT_RUTHLESS</Description>
