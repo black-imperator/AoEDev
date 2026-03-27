@@ -6330,7 +6330,7 @@
 			<Quote>TXT_KEY_UNIT_MESKWAKI_STRATEGY</Quote>
 		</UnitInfo>
 		<UnitInfo>        <!-- War-Runner -->
-			<Class>UNITCLASS_WAR_RUNNER</Class>
+			<Class>UNITCLASS_MESKWAKI</Class>
 			<Type>UNIT_WAR_RUNNER</Type>
 			<Combat>UNITCOMBAT_MELEE</Combat>
 			<DefaultUnitAI>UNITAI_HERO</DefaultUnitAI>

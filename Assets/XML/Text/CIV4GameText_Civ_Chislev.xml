@@ -764,6 +764,62 @@ Collectively referred to as the 'Free-Spirits', these youths are able to join ex
 		<Spanish>Wake Up!</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_TOTEMIST</Tag>
+		<English>Totemist</English>
+		<French>Totemist</French>
+		<German>Totemist</German>
+		<Italian>Totemist</Italian>
+		<Spanish>Totemist</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TOTEMIST_PEDIA</Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TOMAHAWK_THROWER</Tag>
+		<English>Tomahawk Thrower</English>
+		<French>Tomahawk Thrower</French>
+		<German>Tomahawk Thrower</German>
+		<Italian>Tomahawk Thrower</Italian>
+		<Spanish>Tomahawk Thrower</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TOMAHAWK_THROWER_PEDIA</Tag>
+		<English>The tomahawk is a type of axe used by the Chislev. It has a wooden shaft and a stone, iron, or brass head. A popular version of the tomahawk could double as a smoking pipe, blending together symbols of war and peace. Chislev men traded furs for these ingenious pipe tomahawks. Very ornate versions of these tomahawks were given as gifts to Chislev warchiefs and were fashionable to both carry and wield.</English>
+		<French>The tomahawk is a type of axe used by the Chislev. It has a wooden shaft and a stone, iron, or brass head. A popular version of the tomahawk could double as a smoking pipe, blending together symbols of war and peace. Chislev men traded furs for these ingenious pipe tomahawks. Very ornate versions of these tomahawks were given as gifts to Chislev warchiefs and were fashionable to both carry and wield.</French>
+		<German>The tomahawk is a type of axe used by the Chislev. It has a wooden shaft and a stone, iron, or brass head. A popular version of the tomahawk could double as a smoking pipe, blending together symbols of war and peace. Chislev men traded furs for these ingenious pipe tomahawks. Very ornate versions of these tomahawks were given as gifts to Chislev warchiefs and were fashionable to both carry and wield.</German>
+		<Italian>The tomahawk is a type of axe used by the Chislev. It has a wooden shaft and a stone, iron, or brass head. A popular version of the tomahawk could double as a smoking pipe, blending together symbols of war and peace. Chislev men traded furs for these ingenious pipe tomahawks. Very ornate versions of these tomahawks were given as gifts to Chislev warchiefs and were fashionable to both carry and wield.</Italian>
+		<Spanish>The tomahawk is a type of axe used by the Chislev. It has a wooden shaft and a stone, iron, or brass head. A popular version of the tomahawk could double as a smoking pipe, blending together symbols of war and peace. Chislev men traded furs for these ingenious pipe tomahawks. Very ornate versions of these tomahawks were given as gifts to Chislev warchiefs and were fashionable to both carry and wield.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TOMAHAWK_THROWER_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Tomahawk Thrower[COLOR_REVERT], the Chislev replacement for the [LINK=UNIT_AXEMAN]Axeman[\LINK], is an [LINK=UNIT_ARCHER]Archer[\LINK] combined with an Axeman. They get a ranged attack, a first strike, and a chance at a defensive strike.</English>
+		<French>The [COLOR_UNIT_TEXT]Tomahawk Thrower[COLOR_REVERT], the Chislev replacement for the [LINK=UNIT_AXEMAN]Axeman[\LINK], is an [LINK=UNIT_ARCHER]Archer[\LINK] combined with an Axeman. They get a ranged attack, a first strike, and a chance at a defensive strike.</French>
+		<German>The [COLOR_UNIT_TEXT]Tomahawk Thrower[COLOR_REVERT], the Chislev replacement for the [LINK=UNIT_AXEMAN]Axeman[\LINK], is an [LINK=UNIT_ARCHER]Archer[\LINK] combined with an Axeman. They get a ranged attack, a first strike, and a chance at a defensive strike.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Tomahawk Thrower[COLOR_REVERT], the Chislev replacement for the [LINK=UNIT_AXEMAN]Axeman[\LINK], is an [LINK=UNIT_ARCHER]Archer[\LINK] combined with an Axeman. They get a ranged attack, a first strike, and a chance at a defensive strike.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Tomahawk Thrower[COLOR_REVERT], the Chislev replacement for the [LINK=UNIT_AXEMAN]Axeman[\LINK], is an [LINK=UNIT_ARCHER]Archer[\LINK] combined with an Axeman. They get a ranged attack, a first strike, and a chance at a defensive strike.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOUNTED_PLAINS_HUNTER</Tag>
+		<English>Mounted Plains Hunter</English>
+		<French>Mounted Plains Hunter</French>
+		<German>Mounted Plains Hunter</German>
+		<Italian>Mounted Plains Hunter</Italian>
+		<Spanish>Mounted Plains Hunter</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOUNTED_PLAINS_HUNTER_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Mounted Plains Hunter[COLOR_REVERT], the Chislev replacement for the [LINK=UNIT_HORSE_ARCHER]Horse Archer[\LINK], has one less base strength, but has a +50% [ICON_STRENGTH] boost on grassland, plains, and against animals and beasts. It also does increased ranged damage compared to a normal Horse Archer.</English>
+		<French>The [COLOR_UNIT_TEXT]Mounted Plains Hunter[COLOR_REVERT], the Chislev replacement for the [LINK=UNIT_HORSE_ARCHER]Horse Archer[\LINK], has one less base strength, but has a +50% [ICON_STRENGTH] boost on grassland, plains, and against animals and beasts. It also does increased ranged damage compared to a normal Horse Archer.</French>
+		<German>The [COLOR_UNIT_TEXT]Mounted Plains Hunter[COLOR_REVERT], the Chislev replacement for the [LINK=UNIT_HORSE_ARCHER]Horse Archer[\LINK], has one less base strength, but has a +50% [ICON_STRENGTH] boost on grassland, plains, and against animals and beasts. It also does increased ranged damage compared to a normal Horse Archer.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Mounted Plains Hunter[COLOR_REVERT], the Chislev replacement for the [LINK=UNIT_HORSE_ARCHER]Horse Archer[\LINK], has one less base strength, but has a +50% [ICON_STRENGTH] boost on grassland, plains, and against animals and beasts. It also does increased ranged damage compared to a normal Horse Archer.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Mounted Plains Hunter[COLOR_REVERT], the Chislev replacement for the [LINK=UNIT_HORSE_ARCHER]Horse Archer[\LINK], has one less base strength, but has a +50% [ICON_STRENGTH] boost on grassland, plains, and against animals and beasts. It also does increased ranged damage compared to a normal Horse Archer.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_CHISLEV_PALADIN</Tag>
 		<English>Warhounds</English>
 		<French>Warhounds</French>
