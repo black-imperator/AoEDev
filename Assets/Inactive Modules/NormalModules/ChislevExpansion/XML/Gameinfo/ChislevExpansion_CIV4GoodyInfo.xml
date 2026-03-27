@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Jesse Smith (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Goody Infos -->
+<Civ4GoodyInfo xmlns="x-schema:ChislevExpansion_CIV4GameInfoSchema.xml">
+	<GoodyInfos>
+		<GoodyInfo> <!--SerpentTribe-->
+			<Type>GOODY_EXPLORE_LAIR_SPAWN_NIGHTWATCH</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_BANDIT_MODERATE</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>500</iWeight>
+			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_SPAWN_SERPENT_TRIBE</Description>
+			<Sound/>
+			<iDestroyLairChance>60</iDestroyLairChance>
+			<iGold>0</iGold>
+			<iGoldRand1>0</iGoldRand1>
+			<iGoldRand2>0</iGoldRand2>
+			<iMapOffset>0</iMapOffset>
+			<iMapRange>0</iMapRange>
+			<iMapProb>0</iMapProb>
+			<iExperience>0</iExperience>
+			<iHealing>0</iHealing>
+			<iDamagePrereq>0</iDamagePrereq>
+			<bTech>0</bTech>
+			<bBad>1</bBad>
+			<UnitClass>NONE</UnitClass>
+			<PythonCallback>exploreLairSerpentTribe</PythonCallback>
+		</GoodyInfo>
+	
+	</GoodyInfos>
+</Civ4GoodyInfo>

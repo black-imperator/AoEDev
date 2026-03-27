@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Units -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_BUILD_FUNERAL_PYRE</Tag>
+		<English>Build Funeral Pyre</English>
+		<French>Build Funeral Pyre</French>
+		<German>Build Funeral Pyre</German>
+		<Italian>Build Funeral Pyre</Italian>
+		<Spanish>Build Funeral Pyre</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_BUILD_FUNERAL_PYRE_HELP</Tag>
+		<English>[ICON_BULLET]Can only be used by a [LINK=UNIT_SPIRIT_HEALER]Spirit Healer[\LINK] or [LINK=UNIT_TOTEMIST]TOTEMIST[\LINK][NEWLINE][ICON_BULLET]Consumes movement and the [LINK=PROMOTION_BONES_OF_THE_EXALTED]Bones of the Exalted[\LINK] promotion</English>
+		<French>[ICON_BULLET]Can only be used by a [LINK=UNIT_SPIRIT_HEALER]Spirit Healer[\LINK] or [LINK=UNIT_TOTEMIST]TOTEMIST[\LINK][NEWLINE][ICON_BULLET]Consumes movement and the [LINK=PROMOTION_BONES_OF_THE_EXALTED]Bones of the Exalted[\LINK] promotion</French>
+		<German>[ICON_BULLET]Can only be used by a [LINK=UNIT_SPIRIT_HEALER]Spirit Healer[\LINK] or [LINK=UNIT_TOTEMIST]TOTEMIST[\LINK][NEWLINE][ICON_BULLET]Consumes movement and the [LINK=PROMOTION_BONES_OF_THE_EXALTED]Bones of the Exalted[\LINK] promotion</German>
+		<Italian>[ICON_BULLET]Can only be used by a [LINK=UNIT_SPIRIT_HEALER]Spirit Healer[\LINK] or [LINK=UNIT_TOTEMIST]TOTEMIST[\LINK][NEWLINE][ICON_BULLET]Consumes movement and the [LINK=PROMOTION_BONES_OF_THE_EXALTED]Bones of the Exalted[\LINK] promotion</Italian>
+		<Spanish>[ICON_BULLET]Can only be used by a [LINK=UNIT_SPIRIT_HEALER]Spirit Healer[\LINK] or [LINK=UNIT_TOTEMIST]TOTEMIST[\LINK][NEWLINE][ICON_BULLET]Consumes movement and the [LINK=PROMOTION_BONES_OF_THE_EXALTED]Bones of the Exalted[\LINK] promotion</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_BUILD_FUNERAL_PYRE_PEDIA</Tag>
+		<English>Chislev honor their dead by burning them. They believe that spirits are "trapped" within bodies, and by burying them, you are not allowing the spirit to be released after death. The Chislev try to burn all of their dead, but in dire circumstances, they may only bury the greatest of warriors amongst the dead.</English>
+		<French>Chislev honor their dead by burning them. They believe that spirits are "trapped" within bodies, and by burying them, you are not allowing the spirit to be released after death. The Chislev try to burn all of their dead, but in dire circumstances, they may only bury the greatest of warriors amongst the dead.</French>
+		<German>Chislev honor their dead by burning them. They believe that spirits are "trapped" within bodies, and by burying them, you are not allowing the spirit to be released after death. The Chislev try to burn all of their dead, but in dire circumstances, they may only bury the greatest of warriors amongst the dead.</German>
+		<Italian>Chislev honor their dead by burning them. They believe that spirits are "trapped" within bodies, and by burying them, you are not allowing the spirit to be released after death. The Chislev try to burn all of their dead, but in dire circumstances, they may only bury the greatest of warriors amongst the dead.</Italian>
+		<Spanish>Chislev honor their dead by burning them. They believe that spirits are "trapped" within bodies, and by burying them, you are not allowing the spirit to be released after death. The Chislev try to burn all of their dead, but in dire circumstances, they may only bury the greatest of warriors amongst the dead.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_BUILD_FUNERAL_PYRE_STRATEGY</Tag>
+		<English>When a unit of level five or higher dies in a stack with either a [LINK=UNIT_SPIRIT_HEALER]Spirit Healer[\LINK] or a [LINK=UNIT_TOTEMIST]TOTEMIST[\LINK], the Spirit Healer or Totemist receives an item called [LINK=PROMOTION_BONES_OF_THE_EXALTED]Bones of the Exalted[\LINK]. The bones may then be buried to give all applicable units in the stack the [LINK=PROMOTION_MORALE]Morale[\LINK] promotion, although this will consume the movement of the unit. Additionally, the bones may be picked up by another Spirit Healer or Totemist in case you want to free up the unit currently carrying the bones to cast a different spell.</English>
+		<French>When a unit of level five or higher dies in a stack with either a [LINK=UNIT_SPIRIT_HEALER]Spirit Healer[\LINK] or a [LINK=UNIT_TOTEMIST]TOTEMIST[\LINK], the Spirit Healer or Totemist receives an item called [LINK=PROMOTION_BONES_OF_THE_EXALTED]Bones of the Exalted[\LINK]. The bones may then be buried to give all applicable units in the stack the [LINK=PROMOTION_MORALE]Morale[\LINK] promotion, although this will consume the movement of the unit. Additionally, the bones may be picked up by another Spirit Healer or Totemist in case you want to free up the unit currently carrying the bones to cast a different spell.</French>
+		<German>When a unit of level five or higher dies in a stack with either a [LINK=UNIT_SPIRIT_HEALER]Spirit Healer[\LINK] or a [LINK=UNIT_TOTEMIST]TOTEMIST[\LINK], the Spirit Healer or Totemist receives an item called [LINK=PROMOTION_BONES_OF_THE_EXALTED]Bones of the Exalted[\LINK]. The bones may then be buried to give all applicable units in the stack the [LINK=PROMOTION_MORALE]Morale[\LINK] promotion, although this will consume the movement of the unit. Additionally, the bones may be picked up by another Spirit Healer or Totemist in case you want to free up the unit currently carrying the bones to cast a different spell.</German>
+		<Italian>When a unit of level five or higher dies in a stack with either a [LINK=UNIT_SPIRIT_HEALER]Spirit Healer[\LINK] or a [LINK=UNIT_TOTEMIST]TOTEMIST[\LINK], the Spirit Healer or Totemist receives an item called [LINK=PROMOTION_BONES_OF_THE_EXALTED]Bones of the Exalted[\LINK]. The bones may then be buried to give all applicable units in the stack the [LINK=PROMOTION_MORALE]Morale[\LINK] promotion, although this will consume the movement of the unit. Additionally, the bones may be picked up by another Spirit Healer or Totemist in case you want to free up the unit currently carrying the bones to cast a different spell.</Italian>
+		<Spanish>When a unit of level five or higher dies in a stack with either a [LINK=UNIT_SPIRIT_HEALER]Spirit Healer[\LINK] or a [LINK=UNIT_TOTEMIST]TOTEMIST[\LINK], the Spirit Healer or Totemist receives an item called [LINK=PROMOTION_BONES_OF_THE_EXALTED]Bones of the Exalted[\LINK]. The bones may then be buried to give all applicable units in the stack the [LINK=PROMOTION_MORALE]Morale[\LINK] promotion, although this will consume the movement of the unit. Additionally, the bones may be picked up by another Spirit Healer or Totemist in case you want to free up the unit currently carrying the bones to cast a different spell.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_TAKE_BONES_OF_THE_EXALTED</Tag>
+		<English>Take Bones of the Exalted</English>
+		<French>Take Bones of the Exalted</French>
+		<German>Take Bones of the Exalted</German>
+		<Italian>Take Bones of the Exalted</Italian>
+		<Spanish>Take Bones of the Exalted</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_RECLAIM_THE_JUNGLE</Tag>
+		<English>Reclaim the Jungle</English>
+		<French>Reclaim the Jungle</French>
+		<German>Reclaim the Jungle</German>
+		<Italian>Reclaim the Jungle</Italian>
+		<Spanish>Reclaim the Jungle</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_RECLAIM_THE_JUNGLE_HELP</Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+</Civ4GameText>

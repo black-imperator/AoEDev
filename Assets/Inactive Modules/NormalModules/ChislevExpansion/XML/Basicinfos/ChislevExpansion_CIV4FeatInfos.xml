@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- NOTE:  Any additions to this file must also be added to CvEnums.h and other areas of the DLL as appropriate to have any bearing in-game.  This file exists only to provide Description tags for each Feat incase it is used for a Prereq -->
+<!-- Feat Infos -->
+<Civ4FeatInfos xmlns="x-schema:ChislevExpansion_CIV4BasicInfoSchema.xml">
+	<FeatInfos>
+		<FeatInfo>
+			<Type>FEAT_TRIBAL_LAW_FAIR_ELECTION1</Type>
+			<Description>TXT_KEY_FEAT_TRIBAL_LAW_FAIR_ELECTION1</Description>
+		</FeatInfo>
+		<FeatInfo>
+			<Type>FEAT_TRIBAL_LAW_FAIR_ELECTION2</Type>
+			<Description>TXT_KEY_FEAT_TRIBAL_LAW_FAIR_ELECTION2</Description>
+		</FeatInfo>
+	</FeatInfos>
+</Civ4FeatInfos>

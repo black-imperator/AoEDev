@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Basic Infos -->
+
+<Civ4LeaderClassInfos xmlns="x-schema:ChislevExpansion_CIV4CivilizationsSchema.xml">
+	<LeaderClassInfos>
+		<LeaderClassInfo> <!--Council-->
+			<Type>LEADERCLASS_COUNCIL</Type>
+			<Description>TXT_KEY_LEADERCLASS_COUNCIL</Description>
+			<LeaderStatus>EMERGENT_STATUS</LeaderStatus>
+			<MaxTraitsPerClass>
+			<TraitClassMax>
+				<TraitClass>TRAITCLASS_TRIBAL</TraitClass>
+				<iMax>5</iMax>
+			</TraitClassMax>
+			</MaxTraitsPerClass>
+			<EvolveTraitClasses>
+			<TraitClassEvolve>
+				<TraitClass>TRAITCLASS_TRIBAL</TraitClass>
+				<bChange>1</bChange>
+			</TraitClassEvolve>
+			</EvolveTraitClasses>
+		</LeaderClassInfo>
+	</LeaderClassInfos>
+</Civ4LeaderClassInfos>

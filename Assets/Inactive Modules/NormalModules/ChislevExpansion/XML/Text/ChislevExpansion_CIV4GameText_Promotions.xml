@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Units -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_EAGLE_TRIBE</Tag>
+		<English>Eagle Tribe</English>
+		<French>Eagle Tribe</French>
+		<German>Eagle Tribe</German>
+		<Italian>Eagle Tribe</Italian>
+		<Spanish>Eagle Tribe</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_COYOTE_TRIBE</Tag>
+		<English>Coyote Tribe</English>
+		<French>Coyote Tribe</French>
+		<German>Coyote Tribe</German>
+		<Italian>Coyote Tribe</Italian>
+		<Spanish>Coyote Tribe</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_BEAR_TRIBE</Tag>
+		<English>Bear Tribe</English>
+		<French>Bear Tribe</French>
+		<German>Bear Tribe</German>
+		<Italian>Bear Tribe</Italian>
+		<Spanish>Bear Tribe</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_SERPENT_TRIBE</Tag>
+		<English>Serpent Tribe</English>
+		<French>Serpent Tribe</French>
+		<German>Serpent Tribe</German>
+		<Italian>Serpent Tribe</Italian>
+		<Spanish>Serpent Tribe</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_TORTOISE_TRIBE</Tag>
+		<English>Tortoise Tribe</English>
+		<French>Tortoise Tribe</French>
+		<German>Tortoise Tribe</German>
+		<Italian>Tortoise Tribe</Italian>
+		<Spanish>Tortoise Tribe</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_EAGLE_TRIBE_HELP</Tag>
+		<English>[ICON_BULLET]This unit is a member of the Eagle Tribe</English>
+		<French>[ICON_BULLET]This unit is a member of the Eagle Tribe</French>
+		<German>[ICON_BULLET]This unit is a member of the Eagle Tribe</German>
+		<Italian>[ICON_BULLET]This unit is a member of the Eagle Tribe</Italian>
+		<Spanish>[ICON_BULLET]This unit is a member of the Eagle Tribe</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_COYOTE_TRIBE_HELP</Tag>
+		<English>[ICON_BULLET]This unit is a member of the Coyote Tribe</English>
+		<French>[ICON_BULLET]This unit is a member of the Coyote Tribe</French>
+		<German>[ICON_BULLET]This unit is a member of the Coyote Tribe</German>
+		<Italian>[ICON_BULLET]This unit is a member of the Coyote Tribe</Italian>
+		<Spanish>[ICON_BULLET]This unit is a member of the Coyote Tribe</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_BEAR_TRIBE_HELP</Tag>
+		<English>[ICON_BULLET]This unit is a member of the Bear Tribe</English>
+		<French>[ICON_BULLET]This unit is a member of the Bear Tribe</French>
+		<German>[ICON_BULLET]This unit is a member of the Bear Tribe</German>
+		<Italian>[ICON_BULLET]This unit is a member of the Bear Tribe</Italian>
+		<Spanish>[ICON_BULLET]This unit is a member of the Bear Tribe</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_SERPENT_TRIBE_HELP</Tag>
+		<English>[ICON_BULLET]This unit is a member of the Serpent Tribe</English>
+		<French>[ICON_BULLET]This unit is a member of the Serpent Tribe</French>
+		<German>[ICON_BULLET]This unit is a member of the Serpent Tribe</German>
+		<Italian>[ICON_BULLET]This unit is a member of the Serpent Tribe</Italian>
+		<Spanish>[ICON_BULLET]This unit is a member of the Serpent Tribe</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_TORTOISE_TRIBE_HELP</Tag>
+		<English>[ICON_BULLET]This unit is a member of the Tortoise Tribe</English>
+		<French>[ICON_BULLET]This unit is a member of the Tortoise Tribe</French>
+		<German>[ICON_BULLET]This unit is a member of the Tortoise Tribe</German>
+		<Italian>[ICON_BULLET]This unit is a member of the Tortoise Tribe</Italian>
+		<Spanish>[ICON_BULLET]This unit is a member of the Tortoise Tribe</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MENAWA_EAGLE_TRIBE</Tag>
+		<English>Menawa (Eagle Tribe)</English>
+		<French>Menawa (Eagle Tribe)</French>
+		<German>Menawa (Eagle Tribe)</German>
+		<Italian>Menawa (Eagle Tribe)</Italian>
+		<Spanish>Menawa (Eagle Tribe)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MENAWA_COYOTE_TRIBE</Tag>
+		<English>Menawa (Coyote Tribe)</English>
+		<French>Menawa (Coyote Tribe)</French>
+		<German>Menawa (Coyote Tribe)</German>
+		<Italian>Menawa (Coyote Tribe)</Italian>
+		<Spanish>Menawa (Coyote Tribe)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MENAWA_BEAR_TRIBE</Tag>
+		<English>Menawa (Bear Tribe)</English>
+		<French>Menawa (Bear Tribe)</French>
+		<German>Menawa (Bear Tribe)</German>
+		<Italian>Menawa (Bear Tribe)</Italian>
+		<Spanish>Menawa (Bear Tribe)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MENAWA_SERPENT_TRIBE</Tag>
+		<English>Menawa (Serpent Tribe)</English>
+		<French>Menawa (Serpent Tribe)</French>
+		<German>Menawa (Serpent Tribe)</German>
+		<Italian>Menawa (Serpent Tribe)</Italian>
+		<Spanish>Menawa (Serpent Tribe)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MENAWA_TORTOISE_TRIBE</Tag>
+		<English>Menawa (Tortoise Tribe)</English>
+		<French>Menawa (Tortoise Tribe)</French>
+		<German>Menawa (Tortoise Tribe)</German>
+		<Italian>Menawa (Tortoise Tribe)</Italian>
+		<Spanish>Menawa (Tortoise Tribe)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_EAGLE_IDOL</Tag>
+		<English>Idol (Eagle Tribe)</English>
+		<French>Idol (Eagle Tribe)</French>
+		<German>Idol (Eagle Tribe)</German>
+		<Italian>Idol (Eagle Tribe)</Italian>
+		<Spanish>Idol (Eagle Tribe)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_COYOTE_IDOL</Tag>
+		<English>Idol (Coyote Tribe)</English>
+		<French>Idol (Coyote Tribe)</French>
+		<German>Idol (Coyote Tribe)</German>
+		<Italian>Idol (Coyote Tribe)</Italian>
+		<Spanish>Idol (Coyote Tribe)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_BEAR_IDOL</Tag>
+		<English>Idol (Bear Tribe)</English>
+		<French>Idol (Bear Tribe)</French>
+		<German>Idol (Bear Tribe)</German>
+		<Italian>Idol (Bear Tribe)</Italian>
+		<Spanish>Idol (Bear Tribe)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_SERPENT_IDOL</Tag>
+		<English>Idol (Serpent Tribe)</English>
+		<French>Idol (Serpent Tribe)</French>
+		<German>Idol (Serpent Tribe)</German>
+		<Italian>Idol (Serpent Tribe)</Italian>
+		<Spanish>Idol (Serpent Tribe)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_TORTOISE_IDOL</Tag>
+		<English>Idol (Tortoise Tribe)</English>
+		<French>Idol (Tortoise Tribe)</French>
+		<German>Idol (Tortoise Tribe)</German>
+		<Italian>Idol (Tortoise Tribe)</Italian>
+		<Spanish>Idol (Tortoise Tribe)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_EAGLE_IDOL_HELP</Tag>
+		<English>[ICON_BULLET]A unit with an idol passes a portion of its experience to another unit from the same tribe when it dies</English>
+		<French>[ICON_BULLET]A unit with an idol passes a portion of its experience to another unit from the same tribe when it dies</French>
+		<German>[ICON_BULLET]A unit with an idol passes a portion of its experience to another unit from the same tribe when it dies</German>
+		<Italian>[ICON_BULLET]A unit with an idol passes a portion of its experience to another unit from the same tribe when it dies</Italian>
+		<Spanish>[ICON_BULLET]A unit with an idol passes a portion of its experience to another unit from the same tribe when it dies</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_COYOTE_IDOL_HELP</Tag>
+		<English>[ICON_BULLET]A unit with an idol passes a portion of its experience to another unit from the same tribe when it dies</English>
+		<French>[ICON_BULLET]A unit with an idol passes a portion of its experience to another unit from the same tribe when it dies</French>
+		<German>[ICON_BULLET]A unit with an idol passes a portion of its experience to another unit from the same tribe when it dies</German>
+		<Italian>[ICON_BULLET]A unit with an idol passes a portion of its experience to another unit from the same tribe when it dies</Italian>
+		<Spanish>[ICON_BULLET]A unit with an idol passes a portion of its experience to another unit from the same tribe when it dies</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_BEAR_IDOL_HELP</Tag>
+		<English>[ICON_BULLET]A unit with an idol passes a portion of its experience to another unit from the same tribe when it dies</English>
+		<French>[ICON_BULLET]A unit with an idol passes a portion of its experience to another unit from the same tribe when it dies</French>
+		<German>[ICON_BULLET]A unit with an idol passes a portion of its experience to another unit from the same tribe when it dies</German>
+		<Italian>[ICON_BULLET]A unit with an idol passes a portion of its experience to another unit from the same tribe when it dies</Italian>
+		<Spanish>[ICON_BULLET]A unit with an idol passes a portion of its experience to another unit from the same tribe when it dies</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_SERPENT_IDOL_HELP</Tag>
+		<English>[ICON_BULLET]A unit with an idol passes a portion of its experience to another unit from the same tribe when it dies</English>
+		<French>[ICON_BULLET]A unit with an idol passes a portion of its experience to another unit from the same tribe when it dies</French>
+		<German>[ICON_BULLET]A unit with an idol passes a portion of its experience to another unit from the same tribe when it dies</German>
+		<Italian>[ICON_BULLET]A unit with an idol passes a portion of its experience to another unit from the same tribe when it dies</Italian>
+		<Spanish>[ICON_BULLET]A unit with an idol passes a portion of its experience to another unit from the same tribe when it dies</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_TORTOISE_IDOL_HELP</Tag>
+		<English>[ICON_BULLET]A unit with an idol passes a portion of its experience to another unit from the same tribe when it dies</English>
+		<French>[ICON_BULLET]A unit with an idol passes a portion of its experience to another unit from the same tribe when it dies</French>
+		<German>[ICON_BULLET]A unit with an idol passes a portion of its experience to another unit from the same tribe when it dies</German>
+		<Italian>[ICON_BULLET]A unit with an idol passes a portion of its experience to another unit from the same tribe when it dies</Italian>
+		<Spanish>[ICON_BULLET]A unit with an idol passes a portion of its experience to another unit from the same tribe when it dies</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_EAGLE_IDOL</Tag>
+		<English>A unit with an Eagle Idol has died. The Spirits of the Eagle have passed their experience onto another member of the Eagle Tribe.</English>
+		<French>A unit with an Eagle Idol has died. The Spirits of the Eagle have passed their experience onto another member of the Eagle Tribe.</French>
+		<German>A unit with an Eagle Idol has died. The Spirits of the Eagle have passed their experience onto another member of the Eagle Tribe.</German>
+		<Italian>A unit with an Eagle Idol has died. The Spirits of the Eagle have passed their experience onto another member of the Eagle Tribe.</Italian>
+		<Spanish>A unit with an Eagle Idol has died. The Spirits of the Eagle have passed their experience onto another member of the Eagle Tribe.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_COYOTE_IDOL</Tag>
+		<English>A unit with a Coyote Idol has died. The Spirits of the Coyote have passed their experience onto another member of the Coyote Tribe.</English>
+		<French>A unit with a Coyote Idol has died. The Spirits of the Coyote have passed their experience onto another member of the Coyote Tribe.</French>
+		<German>A unit with a Coyote Idol has died. The Spirits of the Coyote have passed their experience onto another member of the Coyote Tribe.</German>
+		<Italian>A unit with a Coyote Idol has died. The Spirits of the Coyote have passed their experience onto another member of the Coyote Tribe.</Italian>
+		<Spanish>A unit with a Coyote Idol has died. The Spirits of the Coyote have passed their experience onto another member of the Coyote Tribe.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_BEAR_IDOL</Tag>
+		<English>A unit with a Bear Idol has died. The Spirits of the Bear have passed their experience onto another member of the Bear Tribe.</English>
+		<French>A unit with a Bear Idol has died. The Spirits of the Bear have passed their experience onto another member of the Bear Tribe.</French>
+		<German>A unit with a Bear Idol has died. The Spirits of the Bear have passed their experience onto another member of the Bear Tribe.</German>
+		<Italian>A unit with a Bear Idol has died. The Spirits of the Bear have passed their experience onto another member of the Bear Tribe.</Italian>
+		<Spanish>A unit with a Bear Idol has died. The Spirits of the Bear have passed their experience onto another member of the Bear Tribe.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_SERPENT_IDOL</Tag>
+		<English>A unit with a Serpent Idol has died. The Spirits of the Serpent have passed their experience onto another member of the Serpent Tribe.</English>
+		<French>A unit with a Serpent Idol has died. The Spirits of the Serpent have passed their experience onto another member of the Serpent Tribe.</French>
+		<German>A unit with a Serpent Idol has died. The Spirits of the Serpent have passed their experience onto another member of the Serpent Tribe.</German>
+		<Italian>A unit with a Serpent Idol has died. The Spirits of the Serpent have passed their experience onto another member of the Serpent Tribe.</Italian>
+		<Spanish>A unit with a Serpent Idol has died. The Spirits of the Serpent have passed their experience onto another member of the Serpent Tribe.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_TORTOISE_IDOL</Tag>
+		<English>A unit with a Tortoise Idol has died. The Spirits of the Tortoise have passed their experience onto another member of the Tortoise Tribe.</English>
+		<French>A unit with a Tortoise Idol has died. The Spirits of the Tortoise have passed their experience onto another member of the Tortoise Tribe.</French>
+		<German>A unit with a Tortoise Idol has died. The Spirits of the Tortoise have passed their experience onto another member of the Tortoise Tribe.</German>
+		<Italian>A unit with a Tortoise Idol has died. The Spirits of the Tortoise have passed their experience onto another member of the Tortoise Tribe.</Italian>
+		<Spanish>A unit with a Tortoise Idol has died. The Spirits of the Tortoise have passed their experience onto another member of the Tortoise Tribe.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_DANCE_OF_THE_COYOTE</Tag>
+		<English>Dance of the Coyote</English>
+		<French>Dance of the Coyote</French>
+		<German>Dance of the Coyote</German>
+		<Italian>Dance of the Coyote</Italian>
+		<Spanish>Dance of the Coyote</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_BONES_OF_THE_EXALTED</Tag>
+		<English>Bones of the Exalted</English>
+		<French>Bones of the Exalted</French>
+		<German>Bones of the Exalted</German>
+		<Italian>Bones of the Exalted</Italian>
+		<Spanish>Bones of the Exalted</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_CHISLEV_SPIRIT</Tag>
+		<English>Chislev Spirit</English>
+		<French>Chislev Spirit</French>
+		<German>Chislev Spirit</German>
+		<Italian>Chislev Spirit</Italian>
+		<Spanish>Chislev Spirit</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_CHISLEV_SPIRIT_HELP</Tag>
+		<English>[TAB][ICON_BULLET]Per Spirit Mana: +5% Heal Rate, +0.5 XP From Combat, +0.5 Damage</English>
+		<French>[TAB][ICON_BULLET]Per Spirit Mana: +5% Heal Rate, +0.5 XP From Combat, +0.5 Damage</French>
+		<German>[TAB][ICON_BULLET]Per Spirit Mana: +5% Heal Rate, +0.5 XP From Combat, +0.5 Damage</German>
+		<Italian>[TAB][ICON_BULLET]Per Spirit Mana: +5% Heal Rate, +0.5 XP From Combat, +0.5 Damage</Italian>
+		<Spanish>[TAB][ICON_BULLET]Per Spirit Mana: +5% Heal Rate, +0.5 XP From Combat, +0.5 Damage</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_AFFINITY_CHISLEV_SPIRIT</Tag>
+		<English>Chislev Spirit Affinity</English>
+		<French>Chislev Spirit Affinity</French>
+		<German>Chislev Spirit Affinity</German>
+		<Italian>Chislev Spirit Affinity</Italian>
+		<Spanish>Chislev Spirit Affinity</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_AFFINITY_CHISLEV_SPIRIT_STRATEGY</Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_AFFINITY_CHISLEV_SPIRIT_PEDIA</Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_SPIRIT_OF_THE_JUNGLE</Tag>
+		<English>Spirit of the Jungle</English>
+		<French>Spirit of the Jungle</French>
+		<German>Spirit of the Jungle</German>
+		<Italian>Spirit of the Jungle</Italian>
+		<Spanish>Spirit of the Jungle</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_SPIRIT_OF_THE_SEA</Tag>
+		<English>Spirit of the Sea</English>
+		<French>Spirit of the Sea</French>
+		<German>Spirit of the Sea</German>
+		<Italian>Spirit of the Sea</Italian>
+		<Spanish>Spirit of the Sea</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_SPIRIT_OF_THE_EARTH</Tag>
+		<English>Spirit of the Earth</English>
+		<French>Spirit of the Earth</French>
+		<German>Spirit of the Earth</German>
+		<Italian>Spirit of the Earth</Italian>
+		<Spanish>Spirit of the Earth</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_SPIRIT_OF_THE_FLAMES</Tag>
+		<English>Spirit of the Flames</English>
+		<French>Spirit of the Flames</French>
+		<German>Spirit of the Flames</German>
+		<Italian>Spirit of the Flames</Italian>
+		<Spanish>Spirit of the Flames</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_SPIRIT_OF_THE_FROST</Tag>
+		<English>Spirit of the Frost</English>
+		<French>Spirit of the Frost</French>
+		<German>Spirit of the Frost</German>
+		<Italian>Spirit of the Frost</Italian>
+		<Spanish>Spirit of the Frost</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_SPIRIT_OF_WAR</Tag>
+		<English>Spirit of War</English>
+		<French>Spirit of War</French>
+		<German>Spirit of War</German>
+		<Italian>Spirit of War</Italian>
+		<Spanish>Spirit of War</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_SPIRIT_OF_ENLIGHTENMENT</Tag>
+		<English>Spirit of Enlightenment</English>
+		<French>Spirit of Enlightenment</French>
+		<German>Spirit of Enlightenment</German>
+		<Italian>Spirit of Enlightenment</Italian>
+		<Spanish>Spirit of Enlightenment</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_SETTLER_ESCORT</Tag>
+		<English>Settler Escort</English>
+		<French>Settler Escort</French>
+		<German>Settler Escort</German>
+		<Italian>Settler Escort</Italian>
+		<Spanish>Settler Escort</Spanish>
+	</TEXT>
+</Civ4GameText>
