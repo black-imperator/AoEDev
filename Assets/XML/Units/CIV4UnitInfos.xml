@@ -6329,7 +6329,7 @@
 			<Image>Art\Interface\Popups\Meskwaki.dds</Image>
 			<Quote>TXT_KEY_UNIT_MESKWAKI_STRATEGY</Quote>
 		</UnitInfo>
-		<UnitInfo>        <!-- Meshwaki 60-->
+		<UnitInfo>        <!-- War-Runner -->
 			<Class>UNITCLASS_WAR_RUNNER</Class>
 			<Type>UNIT_WAR_RUNNER</Type>
 			<Combat>UNITCOMBAT_MELEE</Combat>
@@ -6363,7 +6363,7 @@
 			<iCost>100</iCost>
 			<iMoves>1</iMoves>
 			<iWorkRate>400</iWorkRate>
-			<iCombat>2</iCombat>
+			<iCombat>3</iCombat>
 			<iXPValueAttack>32</iXPValueAttack>
 			<iXPValueDefense>16</iXPValueDefense>
 			<iCultureGarrison>3</iCultureGarrison>

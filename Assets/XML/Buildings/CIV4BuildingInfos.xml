@@ -8943,6 +8943,12 @@
 			<PrereqTech>TECH_SORCERY</PrereqTech>
 			<iAIWeight>30</iAIWeight>
 			<iCityCapModifier>7</iCityCapModifier>
+			<BuildingClassNeededs>
+				<BuildingClassNeeded>
+					<BuildingClassType>BUILDINGCLASS_CLAN_STRUCTURE_MOUND</BuildingClassType>
+					<bNeededInCity>1</bNeededInCity>
+				</BuildingClassNeeded>
+			</BuildingClassNeededs>
 			<ProductionTraits>
 				<ProductionTrait>
 					<ProductionTraitType>TRAIT_ORGANIZED</ProductionTraitType>
@@ -8973,6 +8979,12 @@
 			<PrereqTech>TECH_ARCANE_LORE</PrereqTech>
 			<iAIWeight>30</iAIWeight>
 			<iCityCapModifier>7</iCityCapModifier>
+			<BuildingClassNeededs>
+				<BuildingClassNeeded>
+					<BuildingClassType>BUILDINGCLASS_CLAN_STRUCTURE_LODGE</BuildingClassType>
+					<bNeededInCity>1</bNeededInCity>
+				</BuildingClassNeeded>
+			</BuildingClassNeededs>
 			<ProductionTraits>
 				<ProductionTrait>
 					<ProductionTraitType>TRAIT_ORGANIZED</ProductionTraitType>
