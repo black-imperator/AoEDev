@@ -539,6 +539,32 @@ The new world was born and the rites are once again set to be performed into a n
 		<Spanish>Root Cellar</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BUILDING_STORYTELLERS</Tag>
+		<English>Storytellers Tent</English>
+		<French>Storytellers Tent</French>
+		<German>Storytellers Tent</German>
+		<Italian>Storytellers Tent</Italian>
+		<Spanish>Storytellers Tent</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_STORYTELLERS_PEDIA</Tag>
+		<English>A Storyteller is someone whose responsibility it is to preserve and teach the lessons of our ancestors. 
+
+Whether it be the tracking of the seasons, the best fields for hunting, the legends of heroes past, or the secrets from before the age of ice, the storyteller carries them all on the tip of their tongue.</English>
+		<French>A Storyteller is someone whose responsibility it is to preserve and teach the lessons of our ancestors. 
+
+Whether it be the tracking of the seasons, the best fields for hunting, the legends of heroes past, or the secrets from before the age of ice, the storyteller carries them all on the tip of their tongue.</French>
+		<German>A Storyteller is someone whose responsibility it is to preserve and teach the lessons of our ancestors. 
+
+Whether it be the tracking of the seasons, the best fields for hunting, the legends of heroes past, or the secrets from before the age of ice, the storyteller carries them all on the tip of their tongue.</German>
+		<Italian>A Storyteller is someone whose responsibility it is to preserve and teach the lessons of our ancestors. 
+
+Whether it be the tracking of the seasons, the best fields for hunting, the legends of heroes past, or the secrets from before the age of ice, the storyteller carries them all on the tip of their tongue.</Italian>
+		<Spanish>A Storyteller is someone whose responsibility it is to preserve and teach the lessons of our ancestors. 
+
+Whether it be the tracking of the seasons, the best fields for hunting, the legends of heroes past, or the secrets from before the age of ice, the storyteller carries them all on the tip of their tongue.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_CLAN_STRUCTURE</Tag>
 		<English>Clans</English>
 		<French>Clans</French>
@@ -696,6 +722,48 @@ Those who have surpassed the Greenstalkers and learned from the Lechiy of Cerunn
 		<Spanish>The path of life is one of dedication. Immortals know this well. Sucellus was the patron of the Chislev before his death at the hands of Mulcarn, which heralded the Age of Ice. His aspect may have changed, but many of the Chislev choose to worship the god, not what he represents. Now that Sucellus is reborn, his status as adopted by the clans has not changed. Thus some of the fiercest protectors follow him as 'father life' just as they did when he was 'father nature'. In return, they are given life anew when they fall.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_FREE_SPIRITS</Tag>
+		<English>Free-Spirits</English>
+		<French>Free-Spirits</French>
+		<German>Free-Spirits</German>
+		<Italian>Free-Spirits</Italian>
+		<Spanish>Free-Spirits</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_FREE_SPIRITS_PEDIA</Tag>
+		<English>When a clan reaches the point were it's population is so large that the natural balance starts to tip, that is the time when the clan will send its young men and women away in search of new homes or families to marry into.
+
+Collectively referred to as the 'Free-Spirits', these youths are able to join existing settlements, found new ones, or share some of their birth clan's culture and knowledge with their new family.</English>
+		<French>When a clan reaches the point were it's population is so large that the natural balance starts to tip, that is the time when the clan will send its young men and women away in search of new homes or families to marry into.
+
+Collectively referred to as the 'Free-Spirits', these youths are able to join existing settlements, found new ones, or share some of their birth clan's culture and knowledge with their new family.</French>
+		<German>When a clan reaches the point were it's population is so large that the natural balance starts to tip, that is the time when the clan will send its young men and women away in search of new homes or families to marry into.
+
+Collectively referred to as the 'Free-Spirits', these youths are able to join existing settlements, found new ones, or share some of their birth clan's culture and knowledge with their new family.</German>
+		<Italian>When a clan reaches the point were it's population is so large that the natural balance starts to tip, that is the time when the clan will send its young men and women away in search of new homes or families to marry into.
+
+Collectively referred to as the 'Free-Spirits', these youths are able to join existing settlements, found new ones, or share some of their birth clan's culture and knowledge with their new family.</Italian>
+		<Spanish>When a clan reaches the point were it's population is so large that the natural balance starts to tip, that is the time when the clan will send its young men and women away in search of new homes or families to marry into.
+
+Collectively referred to as the 'Free-Spirits', these youths are able to join existing settlements, found new ones, or share some of their birth clan's culture and knowledge with their new family.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_CHISLEV_SLEEPING</Tag>
+		<English>Sleeping</English>
+		<French>Sleeping</French>
+		<German>Sleeping</German>
+		<Italian>Sleeping</Italian>
+		<Spanish>Sleeping</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_AWAKE_SLEEPING</Tag>
+		<English>Wake Up!</English>
+		<French>Wake Up!</French>
+		<German>Wake Up!</German>
+		<Italian>Wake Up!</Italian>
+		<Spanish>Wake Up!</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_CHISLEV_PALADIN</Tag>
 		<English>Warhounds</English>
 		<French>Warhounds</French>
@@ -785,5 +853,67 @@ Though he is old, he is ever-young. A seemingly eternal little brother to the cl
  Now these stunted siblings provide their enchanting skills to the warriors of their tribe.</Italian>
 		<Spanish>Yunwi Tsunsdi literally translates to "Little People", a group of luchuirp crafters who were saved from a barbarian ambush by the Chislev nation, found themselves adopted into the clans as family.
  Now these stunted siblings provide their enchanting skills to the warriors of their tribe.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_CHISLEV_CLANS_PEDIA</Tag>
+		<English>Outside of the main clan holdings are the lesser clans of the region, some little more than a family unit, others having a great many members who trade and hunt in their region.
+
+These holdings provide units on the tile with defensive bonuses, and also have a chance to begin new hunting or farming traditions that set that clan apart from it's neighbors.
+
+When a clan reaches the limits that nature can support, the young men and women of the families set off in search of a new home. Either joining another existing clan or founding their own in the wilds.
+
+The largest of the region's clans will also send an elder to represent the clan's interests.</English>
+		<French>Outside of the main clan holdings are the lesser clans of the region, some little more than a family unit, others having a great many members who trade and hunt in their region.
+
+These holdings provide units on the tile with defensive bonuses, and also have a chance to begin new hunting or farming traditions that set that clan apart from it's neighbors.
+
+When a clan reaches the limits that nature can support, the young men and women of the families set off in search of a new home. Either joining another existing clan or founding their own in the wilds.
+
+The largest of the region's clans will also send an elder to represent the clan's interests.</French>
+		<German>Outside of the main clan holdings are the lesser clans of the region, some little more than a family unit, others having a great many members who trade and hunt in their region.
+
+These holdings provide units on the tile with defensive bonuses, and also have a chance to begin new hunting or farming traditions that set that clan apart from it's neighbors.
+
+When a clan reaches the limits that nature can support, the young men and women of the families set off in search of a new home. Either joining another existing clan or founding their own in the wilds.
+
+The largest of the region's clans will also send an elder to represent the clan's interests.</German>
+		<Italian>Outside of the main clan holdings are the lesser clans of the region, some little more than a family unit, others having a great many members who trade and hunt in their region.
+
+These holdings provide units on the tile with defensive bonuses, and also have a chance to begin new hunting or farming traditions that set that clan apart from it's neighbors.
+
+When a clan reaches the limits that nature can support, the young men and women of the families set off in search of a new home. Either joining another existing clan or founding their own in the wilds.
+
+The largest of the region's clans will also send an elder to represent the clan's interests.</Italian>
+		<Spanish>Outside of the main clan holdings are the lesser clans of the region, some little more than a family unit, others having a great many members who trade and hunt in their region.
+
+These holdings provide units on the tile with defensive bonuses, and also have a chance to begin new hunting or farming traditions that set that clan apart from it's neighbors.
+
+When a clan reaches the limits that nature can support, the young men and women of the families set off in search of a new home. Either joining another existing clan or founding their own in the wilds.
+
+The largest of the region's clans will also send an elder to represent the clan's interests.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_CLAN_MINOR</Tag>
+		<English>Minor Clan (I)</English>
+		<French>Minor Clan (I)</French>
+		<German>Minor Clan (I)</German>
+		<Italian>Minor Clan (I)</Italian>
+		<Spanish>Minor Clan (I)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_CLAN_HONORED</Tag>
+		<English>Clan (II)</English>
+		<French>Clan (II)</French>
+		<German>Clan (II)</German>
+		<Italian>Clan (II)</Italian>
+		<Spanish>Clan (II)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_CLAN_GREAT</Tag>
+		<English>Great Clan (III)</English>
+		<French>Great Clan (III)</French>
+		<German>Great Clan (III)</German>
+		<Italian>Great Clan (III)</Italian>
+		<Spanish>Great Clan (III)</Spanish>
 	</TEXT>
 </Civ4GameText>

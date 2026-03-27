@@ -3238,5 +3238,71 @@
 			<iHotKeyPriority>0</iHotKeyPriority>
 			<Button>Art/Interface/Buttons/Techtree/Swampdwelling.dds</Button>
 		</BuildInfo>
+		<BuildInfo> <!-- Chislev Clan -->
+			<Type>BUILD_CHISLEV_CLAN</Type>
+			<Description>TXT_KEY_BUILD_CHISLEV_CLAN</Description>
+			<Help/>
+			<PrereqTech>NONE</PrereqTech>
+			<iTime>3000</iTime>
+			<iCost>0</iCost>
+			<bKill>0</bKill>
+			<bStandard>1</bStandard>
+			<ImprovementType>IMPROVEMENTCLASS_CHISLEV_CLAN1</ImprovementType>
+			<RouteType>NONE</RouteType>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<FeatureStructs>
+				<FeatureStruct>
+					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>1000</iTime>
+					<iProduction>10</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>800</iTime>
+					<iProduction>20</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>500</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>500</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>2000</iTime>
+					<iProduction>20</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+			</FeatureStructs>
+			<HotKey>KB_T</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<Button>,Art/Interface/Buttons/Builds/BuildCottage.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,2,7</Button>
+			<TechBuildDiscounts>
+				<TechBuildDiscount>
+					<TechType>TECH_EDUCATION</TechType>
+					<iDiscount>750</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_CURRENCY</TechType>
+					<iDiscount>750</iDiscount>
+				</TechBuildDiscount>
+			</TechBuildDiscounts>
+		</BuildInfo>
 	</BuildInfos>
 </Civ4BuildInfos>

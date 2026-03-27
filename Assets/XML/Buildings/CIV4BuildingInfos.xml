@@ -819,7 +819,7 @@
 			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BEAR_TOTEM</ArtDefineTag>
-			<PrereqTech>TECH_RAGE</PrereqTech>
+			<PrereqTech>TECH_MILITARY_STRATEGY</PrereqTech>
 			<iAIWeight>40</iAIWeight>
 			<iCost>300</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -8911,9 +8911,10 @@
 			<Civilopedia>TXT_KEY_BUILDING_CLAN_STRUCTURE_MOUND_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_HUNTERS_HALL</ArtDefineTag>
-			<PrereqTech>TECH_ARCANE_LORE</PrereqTech>
+			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
 			<iAIWeight>30</iAIWeight>
 			<iCityCapModifier>7</iCityCapModifier>
+			<Parent>BUILDINGCLASS_CLAN_STRUCTURE</Parent>
 			<ProductionTraits>
 				<ProductionTrait>
 					<ProductionTraitType>TRAIT_ORGANIZED</ProductionTraitType>
@@ -8940,11 +8941,12 @@
 			<Civilopedia>TXT_KEY_BUILDING_CLAN_STRUCTURE_MOUND_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_HUNTERS_HALL</ArtDefineTag>
-			<PrereqTech>TECH_SORCERY</PrereqTech>
+			<PrereqTech>TECH_FEUDALISM</PrereqTech>
 			<iAIWeight>30</iAIWeight>
 			<iCityCapModifier>7</iCityCapModifier>
 			<iCitiesPrereq>7</iCitiesPrereq>
-			<Parent>BUILDINGCLASS_CLAN_STRUCTURE_MOUND</Parent>
+			<Parent>BUILDINGCLASS_CLAN_STRUCTURE</Parent>
+			<bGovernmentCenter>1</bGovernmentCenter>
 			<BuildingClassNeededs>
 				<BuildingClassNeeded>
 					<BuildingClassType>BUILDINGCLASS_CLAN_STRUCTURE_MOUND</BuildingClassType>
@@ -8978,9 +8980,16 @@
 			<Civilopedia>TXT_KEY_BUILDING_CLAN_STRUCTURE_MOUND_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_HUNTERS_HALL</ArtDefineTag>
-			<PrereqTech>TECH_ARCANE_LORE</PrereqTech>
+			<PrereqTech>TECH_SORCERY</PrereqTech>
 			<iAIWeight>30</iAIWeight>
 			<iCityCapModifier>7</iCityCapModifier>
+			<Parent>BUILDINGCLASS_CLAN_STRUCTURE</Parent>
+			<BuildingClassNeededs>
+				<BuildingClassNeeded>
+					<BuildingClassType>BUILDINGCLASS_CLAN_STRUCTURE_LODGE</BuildingClassType>
+					<bNeededInCity>1</bNeededInCity>
+				</BuildingClassNeeded>
+			</BuildingClassNeededs>
 			<ProductionTraits>
 				<ProductionTrait>
 					<ProductionTraitType>TRAIT_ORGANIZED</ProductionTraitType>
@@ -8999,6 +9008,69 @@
 				</Flavor>
 			</Flavors>
 			<iCrime>-5</iCrime>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Clan Storytellers - Chislev UB -->
+			<BuildingClass>BUILDINGCLASS_LIBRARY</BuildingClass>
+			<Type>BUILDING_STORYTELLERS</Type>
+			<Description>TXT_KEY_BUILDING_STORYTELLERS</Description>
+			<Civilopedia>TXT_KEY_BUILDING_STORYTELLERS_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_LIBRARY_STRATEGY</Strategy>
+			<Advisor>ADVISOR_SCIENCE</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_TRIBAL_SHRINE</ArtDefineTag>
+			<PrereqTech>TECH_WRITING</PrereqTech>
+			<ProductionTraits>
+				<ProductionTrait>
+					<ProductionTraitType>TRAIT_PHILOSOPHICAL</ProductionTraitType>
+					<iProductionTrait>100</iProductionTrait>
+				</ProductionTrait>
+			</ProductionTraits>
+			<iAIWeight>30</iAIWeight>
+			<iCost>120</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iConquestProb>25</iConquestProb>
+			<iAsset>4</iAsset>
+			<fVisibilityPriority>10</fVisibilityPriority>
+			<CommerceModifiers>
+				<iCommerce>0</iCommerce>
+				<iCommerce>20</iCommerce>
+				<iCommerce>0</iCommerce>
+			</CommerceModifiers>
+			<ObsoleteSafeCommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>3</iCommerce>
+			</ObsoleteSafeCommerceChanges>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+					<iSpecialistCount>2</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
+			<ConstructSound>AS2D_BUILD_LIBRARY</ConstructSound>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_SCIENCE</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+			<SpecialistCommerceChanges>
+				<SpecialistCommerceChange>
+					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+					<CommerceChanges>
+						<iCommerce>0</iCommerce>
+						<iCommerce>1</iCommerce>
+						<iCommerce>1</iCommerce>
+					</CommerceChanges>
+				</SpecialistCommerceChange>
+				<SpecialistCommerceChange>
+					<SpecialistType>SPECIALIST_GREAT_SCIENTIST</SpecialistType>
+					<CommerceChanges>
+						<iCommerce>0</iCommerce>
+						<iCommerce>1</iCommerce>
+						<iCommerce>1</iCommerce>
+					</CommerceChanges>
+				</SpecialistCommerceChange>
+			</SpecialistCommerceChanges>
 		</BuildingInfo>
 		<BuildingInfo>		<!-- Root Cellar - Chislev UB -->
 			<BuildingClass>BUILDINGCLASS_GRANARY</BuildingClass>
