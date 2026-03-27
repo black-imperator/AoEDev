@@ -35318,6 +35318,13 @@
 			<Button>Art/Interface/Buttons/Promotions/Freelancer.dds</Button>
 			<iMinLevel>-1</iMinLevel>
 		</PromotionInfo>
+		<PromotionInfo>		<!-- Free Spirit Sleeping Promo -->
+			<Type>PROMOTION_CHISLEV_SLEEPING</Type>
+			<Description>TXT_KEY_PROMOTION_CHISLEV_SLEEPING</Description>
+			<Button>Art/Interface/Buttons/Promotions/Freelancer.dds</Button>
+			<iMovesChange>-5</iMovesChange>
+			<iMinLevel>-1</iMinLevel>
+		</PromotionInfo>
 		<PromotionInfo>		<!-- Gladiator -->
 			<Type>PROMOTION_MEKARA_GLADIATOR_TAG</Type>
 			<Description>TXT_KEY_PROMOTION_MEKARA_GLADIATOR</Description>

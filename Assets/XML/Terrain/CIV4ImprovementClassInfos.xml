@@ -900,5 +900,23 @@
 			<bUnique>0</bUnique>
 			<DefaultImprovement>IMPROVEMENT_WEREWOLF_CLAN</DefaultImprovement>
 		</ImprovementClassInfo>
+		<ImprovementClassInfo><!-- Minor Clan (I)-->
+			<Type>IMPROVEMENTCLASS_CHISLEV_CLAN1</Type>
+			<Description></Description>
+			<bUnique>1</bUnique>
+			<DefaultImprovement>IMPROVEMENT_CHISLEV_CLAN1</DefaultImprovement>
+		</ImprovementClassInfo>
+		<ImprovementClassInfo><!-- Honored Clan(II)-->
+			<Type>IMPROVEMENTCLASS_CHISLEV_CLAN2</Type>
+			<Description></Description>
+			<bUnique>1</bUnique>
+			<DefaultImprovement>IMPROVEMENT_CHISLEV_CLAN2</DefaultImprovement>
+		</ImprovementClassInfo>
+		<ImprovementClassInfo><!-- Great Clan (III)-->
+			<Type>IMPROVEMENTCLASS_CHISLEV_CLAN3</Type>
+			<Description></Description>
+			<bUnique>1</bUnique>
+			<DefaultImprovement>IMPROVEMENT_CHISLEV_CLAN3</DefaultImprovement>
+		</ImprovementClassInfo>
 	</ImprovementClassInfos>
 </Civ4ImprovementClassInfos>

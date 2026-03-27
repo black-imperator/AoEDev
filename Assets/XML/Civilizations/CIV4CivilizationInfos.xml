@@ -1198,20 +1198,12 @@
 					<BuildingType>BUILDING_MEDICINE_HUT</BuildingType>
 				</Building>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_ARTISANS_WORKSHOP</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
-				</Building>
-				<Building>
 					<BuildingClassType>BUILDINGCLASS_BEAR_TOTEM</BuildingClassType>
 					<BuildingType>BUILDING_BEAR_TOTEM</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_LIBRARY</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_INFIRMARY</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
+					<BuildingType>BUILDING_STORYTELLERS</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
@@ -1303,7 +1295,53 @@
 					<UnitClassType>UNITCLASS_RANGER</UnitClassType>
 					<UnitType>UNIT_CHISLEV_RANGER</UnitType>
 				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_ADEPT</UnitClassType>
+					<UnitType>UNIT_TOTEMIST</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_AXEMAN</UnitClassType>
+					<UnitType>UNIT_TOMAHAWK_THROWER</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_HORSE_ARCHER</UnitClassType>
+					<UnitType>UNIT_MOUNTED_PLAINS_HUNTER</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_FREE_SPIRITS</UnitClassType>
+					<UnitType>UNIT_FREE_SPIRITS</UnitType>
+				</Unit>
 			</Units>
+			<Improvements>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_COTTAGE</ImprovementClassType>
+					<ImprovementType>NONE</ImprovementType>
+				</Improvement>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_HAMLET</ImprovementClassType>
+					<ImprovementType>NONE</ImprovementType>
+				</Improvement>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_VILLAGE</ImprovementClassType>
+					<ImprovementType>NONE</ImprovementType>
+				</Improvement>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_TOWN</ImprovementClassType>
+					<ImprovementType>NONE</ImprovementType>
+				</Improvement>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_CHISLEV_CLAN1</ImprovementClassType>
+					<ImprovementType>IMPROVEMENT_CHISLEV_CLAN1</ImprovementType>
+				</Improvement>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_CHISLEV_CLAN2</ImprovementClassType>
+					<ImprovementType>IMPROVEMENT_CHISLEV_CLAN2</ImprovementType>
+				</Improvement>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_CHISLEV_CLAN3</ImprovementClassType>
+					<ImprovementType>IMPROVEMENT_CHISLEV_CLAN3</ImprovementType>
+				</Improvement>
+			</Improvements>
 			<FreeUnitClasses>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
@@ -1380,6 +1418,32 @@
 					</TerrainYields>
 				</TerrainYieldChange>
 			</TerrainYieldChanges>
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_WORKSHOP</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>-1</iYield>
+						<iYield>0</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>-1</iYield>
+						<iYield>0</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_CAMP</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 			<FormClimateZoneType>CLIMATEZONE_TEMPERATE</FormClimateZoneType>
 		</CivilizationInfo>
 		<CivilizationInfo><!-- Clan of Embers -->
