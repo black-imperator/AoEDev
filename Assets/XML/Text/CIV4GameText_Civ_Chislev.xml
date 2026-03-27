@@ -764,6 +764,14 @@ Collectively referred to as the 'Free-Spirits', these youths are able to join ex
 		<Spanish>Wake Up!</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_CHISLEV_CLAN_BUILDER</Tag>
+		<English>Clan Builder</English>
+		<French>Clan Builder</French>
+		<German>Clan Builder</German>
+		<Italian>Clan Builder</Italian>
+		<Spanish>Clan Builder</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_TOTEMIST</Tag>
 		<English>Totemist</English>
 		<French>Totemist</French>
@@ -971,5 +979,13 @@ The largest of the region's clans will also send an elder to represent the clan'
 		<German>Great Clan (III)</German>
 		<Italian>Great Clan (III)</Italian>
 		<Spanish>Great Clan (III)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILD_CHISLEV_CLAN</Tag>
+		<English>Build a [LINK=IMPROVEMENT_CHISLEV_CLAN1]Minor Clan(I)[\LINK],</English>
+		<French>Build a [LINK=IMPROVEMENT_CHISLEV_CLAN1]Polar Vortex[\LINK],</French>
+		<German>Build a [LINK=IMPROVEMENT_CHISLEV_CLAN1]Polar Vortex[\LINK],</German>
+		<Italian>Build a [LINK=IMPROVEMENT_CHISLEV_CLAN1]Polar Vortex[\LINK],</Italian>
+		<Spanish>Build a [LINK=IMPROVEMENT_CHISLEV_CLAN1]Polar Vortex[\LINK],,</Spanish>
 	</TEXT>
 </Civ4GameText>
