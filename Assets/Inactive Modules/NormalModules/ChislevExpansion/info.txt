@@ -1,0 +1,36 @@
+;Name - no need to explain
+;note: one line
+[name]
+Chislev Expansion
+;
+;
+;Version - version of module
+;Note: it have to be number, so only numberic characters and none or one period
+;note: one line
+[version]
+1
+;
+;
+;RifE version - version of RifE for which is this module tested, checked, developed, etc
+;Note: it have to be number, so only numberic characters and none or one period
+;note: one line
+[rifeversion]
+1.31
+;
+;
+;Author - you
+;note: one line
+[author]
+Alsark
+;
+;
+;Short description - text showed in contect menu
+;note: one line
+[shortdesc]
+Adds a Republic-like mechanic to the Tribal Law civic.
+;
+;
+;Description - text showed in message box
+;note: can be multiline
+[desc]
+Adds a Republic-like mechanic to the Tribal Law civic.

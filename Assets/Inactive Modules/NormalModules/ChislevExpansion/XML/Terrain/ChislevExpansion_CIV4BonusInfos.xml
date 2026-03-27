@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Bonus Infos -->
+<Civ4BonusInfos xmlns="x-schema:ChislevExpansion_CIV4TerrainSchema.xml">
+	<BonusInfos>
+		<BonusInfo>		<!-- Chislev Totem Builder	-->
+			<Type>BONUS_TOTEM_BUILDER</Type>
+			<Description>TXT_KEY_TOTEM_BUILDER</Description>
+			<Civilopedia>TXT_KEY_TOTEM_BUILDER_PEDIA</Civilopedia>
+			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
+			<ArtDefineTag>ART_DEF_BONUS_OIL</ArtDefineTag>
+			<TechReveal>NONE</TechReveal>
+			<TechCityTrade>TECH_NEVER</TechCityTrade>
+			<iHappiness>0</iHappiness>
+			<YieldChanges>
+				<iYieldChange>0</iYieldChange>
+				<iYieldChange>0</iYieldChange>
+				<iYieldChange>0</iYieldChange>
+			</YieldChanges>
+			<iPlacementOrder>-1</iPlacementOrder>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<Rands>
+				<iRandApp1>0</iRandApp1>
+				<iRandApp2>0</iRandApp2>
+				<iRandApp3>0</iRandApp3>
+				<iRandApp4>0</iRandApp4>
+			</Rands>
+			<bGraphicalOnly>1</bGraphicalOnly>
+		</BonusInfo>
+	</BonusInfos>
+</Civ4BonusInfos>

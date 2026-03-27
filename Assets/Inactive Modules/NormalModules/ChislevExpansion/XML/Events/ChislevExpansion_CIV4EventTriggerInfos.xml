@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Event Trigger Infos -->
+<Civ4EventTriggerInfos xmlns="x-schema:ChislevExpansion_CIV4EventSchema.xml">
+	<EventTriggerInfos>
+<!-- 		<EventTriggerInfo> Chislev Expansion Events Starts
+			<Type>EVENTTRIGGER_TRIBAL_LAW_ELECTION</Type> Tribal Law Election
+			<TriggerTexts>
+				<TriggerText>
+					<Text>TXT_KEY_EVENTTRIGGER_TRIBAL_LAW_ELECTION</Text>
+					<Era>NONE</Era>
+				</TriggerText>
+			</TriggerTexts>
+			<iPercentGamesActive>100</iPercentGamesActive>
+			<iWeight>0</iWeight>
+			<Civic>CIVIC_TRIBAL_LAW</Civic>
+			<iMaxOurLandmass>-1</iMaxOurLandmass>
+			<iPlotType>-1</iPlotType>
+			<Events>
+				<Event>EVENT_TRIBAL_LAW_ELECTION_EAGLE_TRIBE</Event>
+				<Event>EVENT_TRIBAL_LAW_ELECTION_COYOTE_TRIBE</Event>
+				<Event>EVENT_TRIBAL_LAW_ELECTION_BEAR_TRIBE</Event>
+				<Event>EVENT_TRIBAL_LAW_ELECTION_SERPENT_TRIBE</Event>
+				<Event>EVENT_TRIBAL_LAW_ELECTION_TORTOISE_TRIBE</Event>
+				<Event>EVENT_TRIBAL_LAW_ELECTION_FAIR</Event>
+				<Event>EVENT_TRIBAL_LAW_ELECTION_NO_PARTICIPATION</Event>
+			</Events>
+			<bRecurring>0</bRecurring>
+			<bShowPlot>0</bShowPlot>
+		</EventTriggerInfo>
+		<EventTriggerInfo> Chislev Expansion Event
+			<Type>EVENTTRIGGER_TRIBAL_LAW_ELECTION_FAIR_CHECK</Type> Tribal Law Election
+			<TriggerTexts>
+				<TriggerText>
+					<Text>TXT_KEY_EVENTTRIGGER_TRIBAL_LAW_ELECTION</Text>
+					<Era>NONE</Era>
+				</TriggerText>
+			</TriggerTexts>
+			<iPercentGamesActive>100</iPercentGamesActive>
+			<iWeight>0</iWeight>
+			<Civic>CIVIC_TRIBAL_LAW</Civic>
+			<iMaxOurLandmass>-1</iMaxOurLandmass>
+			<iPlotType>-1</iPlotType>
+			<Events>
+				<Event>EVENT_TRIBAL_LAW_ELECTION_EAGLE_TRIBE</Event>
+				<Event>EVENT_TRIBAL_LAW_ELECTION_COYOTE_TRIBE</Event>
+				<Event>EVENT_TRIBAL_LAW_ELECTION_BEAR_TRIBE</Event>
+				<Event>EVENT_TRIBAL_LAW_ELECTION_SERPENT_TRIBE</Event>
+				<Event>EVENT_TRIBAL_LAW_ELECTION_TORTOISE_TRIBE</Event>
+				<Event>EVENT_TRIBAL_LAW_ELECTION_FAIR2</Event>
+				<Event>EVENT_TRIBAL_LAW_ELECTION_NO_PARTICIPATION</Event>
+			</Events>
+			<PrereqEvents>
+				<Event>EVENT_TRIBAL_LAW_ELECTION_FAIR</Event>
+			</PrereqEvents>
+			<bRecurring>0</bRecurring>
+			<bShowPlot>0</bShowPlot>
+		</EventTriggerInfo>
+		<EventTriggerInfo> Chislev Expansion Event
+			<Type>EVENTTRIGGER_TRIBAL_LAW_ELECTION_FAIR_CHECK2</Type> Tribal Law Election
+			<TriggerTexts>
+				<TriggerText>
+					<Text>TXT_KEY_EVENTTRIGGER_TRIBAL_LAW_ELECTION</Text>
+					<Era>NONE</Era>
+				</TriggerText>
+			</TriggerTexts>
+			<iPercentGamesActive>100</iPercentGamesActive>
+			<iWeight>0</iWeight>
+			<Civic>CIVIC_TRIBAL_LAW</Civic>
+			<iMaxOurLandmass>-1</iMaxOurLandmass>
+			<iPlotType>-1</iPlotType>
+			<Events>
+				<Event>EVENT_TRIBAL_LAW_ELECTION_EAGLE_TRIBE</Event>
+				<Event>EVENT_TRIBAL_LAW_ELECTION_COYOTE_TRIBE</Event>
+				<Event>EVENT_TRIBAL_LAW_ELECTION_BEAR_TRIBE</Event>
+				<Event>EVENT_TRIBAL_LAW_ELECTION_SERPENT_TRIBE</Event>
+				<Event>EVENT_TRIBAL_LAW_ELECTION_TORTOISE_TRIBE</Event>
+				<Event>EVENT_TRIBAL_LAW_ELECTION_FAIR3</Event>
+				<Event>EVENT_TRIBAL_LAW_ELECTION_NO_PARTICIPATION</Event>
+			</Events>
+			<PrereqEvents>
+				<Event>EVENT_TRIBAL_LAW_ELECTION_FAIR2</Event>
+			</PrereqEvents>
+			<bRecurring>0</bRecurring>
+			<bShowPlot>0</bShowPlot>
+		</EventTriggerInfo>
+		<EventTriggerInfo> Chislev Expansion Event
+			<Type>EVENTTRIGGER_MENAWA_TRIBE_SELECTION</Type> Menawa Tribe Selection
+			<TriggerTexts>
+				<TriggerText>
+					<Text>TXT_KEY_EVENTTRIGGER_MENAWA_TRIBE_SELECTION</Text>
+					<Era>NONE</Era>
+				</TriggerText>
+			</TriggerTexts>
+			<iPercentGamesActive>100</iPercentGamesActive>
+			<iWeight>0</iWeight>
+			<Civic>CIVIC_TRIBAL_LAW</Civic>
+			<iMaxOurLandmass>-1</iMaxOurLandmass>
+			<iPlotType>-1</iPlotType>
+			<Events>
+				<Event>EVENT_MENAWA_TRIBE_SELECTION_EAGLE_TRIBE</Event>
+				<Event>EVENT_MENAWA_TRIBE_SELECTION_COYOTE_TRIBE</Event>
+				<Event>EVENT_MENAWA_TRIBE_SELECTION_BEAR_TRIBE</Event>
+				<Event>EVENT_MENAWA_TRIBE_SELECTION_SERPENT_TRIBE</Event>
+				<Event>EVENT_MENAWA_TRIBE_SELECTION_TORTOISE_TRIBE</Event>
+			</Events>
+			<bRecurring>0</bRecurring>
+			<bShowPlot>0</bShowPlot>
+		</EventTriggerInfo>
+		<EventTriggerInfo> Chislev Expansion Event
+			<Type>EVENTTRIGGER_CIVIC_NOT_TRIBAL_LAW</Type>
+			<TriggerTexts>
+				<TriggerText>
+					<Text>TXT_KEY_EVENTTRIGGER_CIVIC_NOT_TRIBAL_LAW</Text>
+					<Era>NONE</Era>
+				</TriggerText>
+			</TriggerTexts>
+			<iPercentGamesActive>100</iPercentGamesActive>
+			<iWeight>0</iWeight>
+			<iMaxOurLandmass>-1</iMaxOurLandmass>
+			<iPlotType>-1</iPlotType>
+			<Events>
+				<Event>EVENT_CIVIC_NOT_TRIBAL_LAW_ABSAROKE</Event>
+				<Event>EVENT_CIVIC_NOT_TRIBAL_LAW_NATANE</Event>
+			</Events>
+			<bRecurring>1</bRecurring>
+			<bShowPlot>0</bShowPlot>
+		</EventTriggerInfo> -->
+	</EventTriggerInfos>
+</Civ4EventTriggerInfos>

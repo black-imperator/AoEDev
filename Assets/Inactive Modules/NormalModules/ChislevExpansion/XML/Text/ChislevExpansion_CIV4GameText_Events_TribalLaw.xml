@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<!--Tribal Law Civic-->
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_TRIBAL_LAW_HELP</Tag>
+		<English>[ICON_BULLET]Elections take place periodically, allowing you to change your leader[NEWLINE][ICON_BULLET]New combat units will receive one of five different starting promotions[NEWLINE][ICON_BULLET]Allows the [LINK=UNIT_MENAWA]Menawa[\LINK] unit</English>
+		<French>[ICON_BULLET]Elections take place periodically, allowing you to change your leader[NEWLINE][ICON_BULLET]New combat units will receive one of five different starting promotions[NEWLINE][ICON_BULLET]Allows the [LINK=UNIT_MENAWA]Menawa[\LINK] unit</French>
+		<German>[ICON_BULLET]Elections take place periodically, allowing you to change your leader[NEWLINE][ICON_BULLET]New combat units will receive one of five different starting promotions[NEWLINE][ICON_BULLET]Allows the [LINK=UNIT_MENAWA]Menawa[\LINK] unit</German>
+		<Italian>[ICON_BULLET]Elections take place periodically, allowing you to change your leader[NEWLINE][ICON_BULLET]New combat units will receive one of five different starting promotions[NEWLINE][ICON_BULLET]Allows the [LINK=UNIT_MENAWA]Menawa[\LINK] unit</Italian>
+		<Spanish>[ICON_BULLET]Elections take place periodically, allowing you to change your leader[NEWLINE][ICON_BULLET]New combat units will receive one of five different starting promotions[NEWLINE][ICON_BULLET]Allows the [LINK=UNIT_MENAWA]Menawa[\LINK] unit</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_TRIBAL_LAW_STRATEGY</Tag> <!-- Will likely need rewritten when done with module -->
+		<English>The Tribal Law civic gives control of the Chislev nation to five tribes, with a leader of one of those tribes acting as Head Chief. While the Head Chief has the final say in decisions, the other tribal chiefs advise the Head Chief. A new Head Chief will be appointed the turn you adopt Tribal Law, and every 45/60/90/180 turns thereafter, depending on your game speed. Your leader can come from the following tribes:[NEWLINE][NEWLINE][ICON_BULLET]Eagle Tribe: [LINK=LEADER_SHIMASANI]Shimasani[\LINK] ([LINK=TRAIT_CHARISMATIC]Charismatic[\LINK]/[LINK=TRAIT_TRADER]Trader[\LINK])[NEWLINE][ICON_BULLET]Coyote Tribe: [LINK=LEADER_SOYALA]Soyala[\LINK] ([LINK=TRAIT_CREATIVE]Creative[\LINK]/[LINK=TRAIT_PIONEER]Imperalist[\LINK])[NEWLINE][ICON_BULLET]Bear Tribe: [LINK=LEADER_MOTSQUEH]Motsqueh[\LINK] ([LINK=TRAIT_EXPANSIVE]Expansive[\LINK]/[LINK=TRAIT_INDUSTRIOUS]Industrious[\LINK])[NEWLINE][ICON_BULLET]Serpent Tribe: [LINK=LEADER_OSYKA]Osyka[\LINK] ([LINK=TRAIT_AGGRESSIVE]Aggressive[\LINK]/[LINK=TRAIT_RAIDERS]Raiders[\LINK])[NEWLINE][ICON_BULLET]Tortoise Tribe: [LINK=LEADER_ALOSAKA]Alosaka[\LINK] ([LINK=TRAIT_PHILOSOPHICAL]Philosophical[\LINK]/[LINK=TRAIT_DEFENDER]Defender[\LINK])[NEWLINE][NEWLINE]During elections, you may vote for a different leader, the same leader, allow the game to randomize it for you, or decide not to hold an election. If you vote for the same leader, you will have a turn of anarchy unless that leader is Shimasani; however, there will also be a 50% chance of a positive effect. For Shimasani, it's +3 relations with all other leaders. For Soyala, Motsqueh, and Osyka, they get a Great Bard, Great Engineer, or Great Commander respectively. For Alosaka, he will enter a golden age. Picking a different leader simply switches to that leader, and your alignment resets to that leader's alignment. Allowing the game to randomize for you picks one of the five options at random, and gives you one turn of "We Love the Head Chief Day". If it happens to pick the leader you currently are, you will not suffer a turn of anarchy. The last option, to not hold an election, is only useful if you want to remain as [LINK=LEADER_CHISLEV]Absaroke[\LINK] or [LINK=LEADER_NATANE]Natane[\LINK] while operating under Tribal Law.[NEWLINE][NEWLINE]While under Tribal Law, all units that you acquire will come from one of the five tribes at random, with the exception of [LINK=UNIT_MESKWAKI]Meskwaki[\LINK], who will always be from the Bear Tribe. If you train a unit in a source totem city, the unit is guaranteed to be from that tribe, whether you're using Tribal Law or not. The units will start with a promotion depending on their tribe, and if they would have already received that promotion from another source, it gets incremented to its next level:[NEWLINE][NEWLINE][ICON_BULLET]Eagle Tribe: [LINK=PROMOTION_MOBILITY1]Mobility[\LINK][NEWLINE][ICON_BULLET]Coyote Tribe:[LINK=PROMOTION_DRILL1]Drill[\LINK][NEWLINE][ICON_BULLET]Bear Tribe: [LINK=PROMOTION_COMBAT1]Combat[\LINK][NEWLINE][ICON_BULLET]Serpent Tribe: [LINK=PROMOTION_CITY_RAIDER1]City Raider[\LINK][NEWLINE][ICON_BULLET]Tortoise Tribe: [LINK=PROMOTION_CITY_GARRISON1]City Garrison[\LINK][NEWLINE][NEWLINE]Tribal Law also unlocks the ability to create the [LINK=UNIT_MENAWA]Menawa[\LINK] unit. While not entirely powerful on its own, it can be unlocked fairly early at [LINK=TECH_MILITARY_STRATEGY]Military Strategy[\LINK], and comes with one of five unique abilities depending on what tribe you wish the unit to come from:[NEWLINE][NEWLINE][ICON_BULLET]Eagle Tribe: Ignores terrain costs, +1 Movement Range[NEWLINE][ICON_BULLET]Coyote Tribe: 10% chance to avoid bad lair results, 10% withdrawal chance, 100% extra gold from pillaging, and a 10% chance to do 5% damage when this unit's stack is attacked[NEWLINE][ICON_BULLET]Bear Tribe: +1 offensive and defensive strength[NEWLINE][ICON_BULLET]Serpent Tribe: 15% chance to generate a slave after combat, attacks the weakest unit in the stack[NEWLINE][ICON_BULLET]Tortoise Tribe: +10% defensive strength, double fortification bonus, and guards against enemy Marksman units[NEWLINE][NEWLINE]If you move away from the Tribal Law civic, your Menawa units will abandon you.</English>
+		<French>The Tribal Law civic gives control of the Chislev nation to five tribes, with a leader of one of those tribes acting as Head Chief. While the Head Chief has the final say in decisions, the other tribal chiefs advise the Head Chief. A new Head Chief will be appointed the turn you adopt Tribal Law, and every 45/60/90/180 turns thereafter, depending on your game speed. Your leader can come from the following tribes:[NEWLINE][NEWLINE][ICON_BULLET]Eagle Tribe: [LINK=LEADER_SHIMASANI]Shimasani[\LINK] ([LINK=TRAIT_CHARISMATIC]Charismatic[\LINK]/[LINK=TRAIT_TRADER]Trader[\LINK])[NEWLINE][ICON_BULLET]Coyote Tribe: [LINK=LEADER_SOYALA]Soyala[\LINK] ([LINK=TRAIT_CREATIVE]Creative[\LINK]/[LINK=TRAIT_PIONEER]Imperalist[\LINK])[NEWLINE][ICON_BULLET]Bear Tribe: [LINK=LEADER_MOTSQUEH]Motsqueh[\LINK] ([LINK=TRAIT_EXPANSIVE]Expansive[\LINK]/[LINK=TRAIT_INDUSTRIOUS]Industrious[\LINK])[NEWLINE][ICON_BULLET]Serpent Tribe: [LINK=LEADER_OSYKA]Osyka[\LINK] ([LINK=TRAIT_AGGRESSIVE]Aggressive[\LINK]/[LINK=TRAIT_RAIDERS]Raiders[\LINK])[NEWLINE][ICON_BULLET]Tortoise Tribe: [LINK=LEADER_ALOSAKA]Alosaka[\LINK] ([LINK=TRAIT_PHILOSOPHICAL]Philosophical[\LINK]/[LINK=TRAIT_DEFENDER]Defender[\LINK])[NEWLINE][NEWLINE]During elections, you may vote for a different leader, the same leader, allow the game to randomize it for you, or decide not to hold an election. If you vote for the same leader, you will have a turn of anarchy unless that leader is Shimasani; however, there will also be a 50% chance of a positive effect. For Shimasani, it's +3 relations with all other leaders. For Soyala, Motsqueh, and Osyka, they get a Great Bard, Great Engineer, or Great Commander respectively. For Alosaka, he will enter a golden age. Picking a different leader simply switches to that leader, and your alignment resets to that leader's alignment. Allowing the game to randomize for you picks one of the five options at random, and gives you one turn of "We Love the Head Chief Day". If it happens to pick the leader you currently are, you will not suffer a turn of anarchy. The last option, to not hold an election, is only useful if you want to remain as [LINK=LEADER_CHISLEV]Absaroke[\LINK] or [LINK=LEADER_NATANE]Natane[\LINK] while operating under Tribal Law.[NEWLINE][NEWLINE]While under Tribal Law, all units that you acquire will come from one of the five tribes at random, with the exception of [LINK=UNIT_MESKWAKI]Meskwaki[\LINK], who will always be from the Bear Tribe. If you train a unit in a source totem city, the unit is guaranteed to be from that tribe, whether you're using Tribal Law or not. The units will start with a promotion depending on their tribe, and if they would have already received that promotion from another source, it gets incremented to its next level:[NEWLINE][NEWLINE][ICON_BULLET]Eagle Tribe: [LINK=PROMOTION_MOBILITY1]Mobility[\LINK][NEWLINE][ICON_BULLET]Coyote Tribe:[LINK=PROMOTION_DRILL1]Drill[\LINK][NEWLINE][ICON_BULLET]Bear Tribe: [LINK=PROMOTION_COMBAT1]Combat[\LINK][NEWLINE][ICON_BULLET]Serpent Tribe: [LINK=PROMOTION_CITY_RAIDER1]City Raider[\LINK][NEWLINE][ICON_BULLET]Tortoise Tribe: [LINK=PROMOTION_CITY_GARRISON1]City Garrison[\LINK][NEWLINE][NEWLINE]Tribal Law also unlocks the ability to create the [LINK=UNIT_MENAWA]Menawa[\LINK] unit. While not entirely powerful on its own, it can be unlocked fairly early at [LINK=TECH_MILITARY_STRATEGY]Military Strategy[\LINK], and comes with one of five unique abilities depending on what tribe you wish the unit to come from:[NEWLINE][NEWLINE][ICON_BULLET]Eagle Tribe: Ignores terrain costs, +1 Movement Range[NEWLINE][ICON_BULLET]Coyote Tribe: 10% chance to avoid bad lair results, 10% withdrawal chance, 100% extra gold from pillaging, and a 10% chance to do 5% damage when this unit's stack is attacked[NEWLINE][ICON_BULLET]Bear Tribe: +1 offensive and defensive strength[NEWLINE][ICON_BULLET]Serpent Tribe: 15% chance to generate a slave after combat, attacks the weakest unit in the stack[NEWLINE][ICON_BULLET]Tortoise Tribe: +10% defensive strength, double fortification bonus, and guards against enemy Marksman units[NEWLINE][NEWLINE]If you move away from the Tribal Law civic, your Menawa units will abandon you.</French>
+		<German>The Tribal Law civic gives control of the Chislev nation to five tribes, with a leader of one of those tribes acting as Head Chief. While the Head Chief has the final say in decisions, the other tribal chiefs advise the Head Chief. A new Head Chief will be appointed the turn you adopt Tribal Law, and every 45/60/90/180 turns thereafter, depending on your game speed. Your leader can come from the following tribes:[NEWLINE][NEWLINE][ICON_BULLET]Eagle Tribe: [LINK=LEADER_SHIMASANI]Shimasani[\LINK] ([LINK=TRAIT_CHARISMATIC]Charismatic[\LINK]/[LINK=TRAIT_TRADER]Trader[\LINK])[NEWLINE][ICON_BULLET]Coyote Tribe: [LINK=LEADER_SOYALA]Soyala[\LINK] ([LINK=TRAIT_CREATIVE]Creative[\LINK]/[LINK=TRAIT_PIONEER]Imperalist[\LINK])[NEWLINE][ICON_BULLET]Bear Tribe: [LINK=LEADER_MOTSQUEH]Motsqueh[\LINK] ([LINK=TRAIT_EXPANSIVE]Expansive[\LINK]/[LINK=TRAIT_INDUSTRIOUS]Industrious[\LINK])[NEWLINE][ICON_BULLET]Serpent Tribe: [LINK=LEADER_OSYKA]Osyka[\LINK] ([LINK=TRAIT_AGGRESSIVE]Aggressive[\LINK]/[LINK=TRAIT_RAIDERS]Raiders[\LINK])[NEWLINE][ICON_BULLET]Tortoise Tribe: [LINK=LEADER_ALOSAKA]Alosaka[\LINK] ([LINK=TRAIT_PHILOSOPHICAL]Philosophical[\LINK]/[LINK=TRAIT_DEFENDER]Defender[\LINK])[NEWLINE][NEWLINE]During elections, you may vote for a different leader, the same leader, allow the game to randomize it for you, or decide not to hold an election. If you vote for the same leader, you will have a turn of anarchy unless that leader is Shimasani; however, there will also be a 50% chance of a positive effect. For Shimasani, it's +3 relations with all other leaders. For Soyala, Motsqueh, and Osyka, they get a Great Bard, Great Engineer, or Great Commander respectively. For Alosaka, he will enter a golden age. Picking a different leader simply switches to that leader, and your alignment resets to that leader's alignment. Allowing the game to randomize for you picks one of the five options at random, and gives you one turn of "We Love the Head Chief Day". If it happens to pick the leader you currently are, you will not suffer a turn of anarchy. The last option, to not hold an election, is only useful if you want to remain as [LINK=LEADER_CHISLEV]Absaroke[\LINK] or [LINK=LEADER_NATANE]Natane[\LINK] while operating under Tribal Law.[NEWLINE][NEWLINE]While under Tribal Law, all units that you acquire will come from one of the five tribes at random, with the exception of [LINK=UNIT_MESKWAKI]Meskwaki[\LINK], who will always be from the Bear Tribe. If you train a unit in a source totem city, the unit is guaranteed to be from that tribe, whether you're using Tribal Law or not. The units will start with a promotion depending on their tribe, and if they would have already received that promotion from another source, it gets incremented to its next level:[NEWLINE][NEWLINE][ICON_BULLET]Eagle Tribe: [LINK=PROMOTION_MOBILITY1]Mobility[\LINK][NEWLINE][ICON_BULLET]Coyote Tribe:[LINK=PROMOTION_DRILL1]Drill[\LINK][NEWLINE][ICON_BULLET]Bear Tribe: [LINK=PROMOTION_COMBAT1]Combat[\LINK][NEWLINE][ICON_BULLET]Serpent Tribe: [LINK=PROMOTION_CITY_RAIDER1]City Raider[\LINK][NEWLINE][ICON_BULLET]Tortoise Tribe: [LINK=PROMOTION_CITY_GARRISON1]City Garrison[\LINK][NEWLINE][NEWLINE]Tribal Law also unlocks the ability to create the [LINK=UNIT_MENAWA]Menawa[\LINK] unit. While not entirely powerful on its own, it can be unlocked fairly early at [LINK=TECH_MILITARY_STRATEGY]Military Strategy[\LINK], and comes with one of five unique abilities depending on what tribe you wish the unit to come from:[NEWLINE][NEWLINE][ICON_BULLET]Eagle Tribe: Ignores terrain costs, +1 Movement Range[NEWLINE][ICON_BULLET]Coyote Tribe: 10% chance to avoid bad lair results, 10% withdrawal chance, 100% extra gold from pillaging, and a 10% chance to do 5% damage when this unit's stack is attacked[NEWLINE][ICON_BULLET]Bear Tribe: +1 offensive and defensive strength[NEWLINE][ICON_BULLET]Serpent Tribe: 15% chance to generate a slave after combat, attacks the weakest unit in the stack[NEWLINE][ICON_BULLET]Tortoise Tribe: +10% defensive strength, double fortification bonus, and guards against enemy Marksman units[NEWLINE][NEWLINE]If you move away from the Tribal Law civic, your Menawa units will abandon you.</German>
+		<Italian>The Tribal Law civic gives control of the Chislev nation to five tribes, with a leader of one of those tribes acting as Head Chief. While the Head Chief has the final say in decisions, the other tribal chiefs advise the Head Chief. A new Head Chief will be appointed the turn you adopt Tribal Law, and every 45/60/90/180 turns thereafter, depending on your game speed. Your leader can come from the following tribes:[NEWLINE][NEWLINE][ICON_BULLET]Eagle Tribe: [LINK=LEADER_SHIMASANI]Shimasani[\LINK] ([LINK=TRAIT_CHARISMATIC]Charismatic[\LINK]/[LINK=TRAIT_TRADER]Trader[\LINK])[NEWLINE][ICON_BULLET]Coyote Tribe: [LINK=LEADER_SOYALA]Soyala[\LINK] ([LINK=TRAIT_CREATIVE]Creative[\LINK]/[LINK=TRAIT_PIONEER]Imperalist[\LINK])[NEWLINE][ICON_BULLET]Bear Tribe: [LINK=LEADER_MOTSQUEH]Motsqueh[\LINK] ([LINK=TRAIT_EXPANSIVE]Expansive[\LINK]/[LINK=TRAIT_INDUSTRIOUS]Industrious[\LINK])[NEWLINE][ICON_BULLET]Serpent Tribe: [LINK=LEADER_OSYKA]Osyka[\LINK] ([LINK=TRAIT_AGGRESSIVE]Aggressive[\LINK]/[LINK=TRAIT_RAIDERS]Raiders[\LINK])[NEWLINE][ICON_BULLET]Tortoise Tribe: [LINK=LEADER_ALOSAKA]Alosaka[\LINK] ([LINK=TRAIT_PHILOSOPHICAL]Philosophical[\LINK]/[LINK=TRAIT_DEFENDER]Defender[\LINK])[NEWLINE][NEWLINE]During elections, you may vote for a different leader, the same leader, allow the game to randomize it for you, or decide not to hold an election. If you vote for the same leader, you will have a turn of anarchy unless that leader is Shimasani; however, there will also be a 50% chance of a positive effect. For Shimasani, it's +3 relations with all other leaders. For Soyala, Motsqueh, and Osyka, they get a Great Bard, Great Engineer, or Great Commander respectively. For Alosaka, he will enter a golden age. Picking a different leader simply switches to that leader, and your alignment resets to that leader's alignment. Allowing the game to randomize for you picks one of the five options at random, and gives you one turn of "We Love the Head Chief Day". If it happens to pick the leader you currently are, you will not suffer a turn of anarchy. The last option, to not hold an election, is only useful if you want to remain as [LINK=LEADER_CHISLEV]Absaroke[\LINK] or [LINK=LEADER_NATANE]Natane[\LINK] while operating under Tribal Law.[NEWLINE][NEWLINE]While under Tribal Law, all units that you acquire will come from one of the five tribes at random, with the exception of [LINK=UNIT_MESKWAKI]Meskwaki[\LINK], who will always be from the Bear Tribe. If you train a unit in a source totem city, the unit is guaranteed to be from that tribe, whether you're using Tribal Law or not. The units will start with a promotion depending on their tribe, and if they would have already received that promotion from another source, it gets incremented to its next level:[NEWLINE][NEWLINE][ICON_BULLET]Eagle Tribe: [LINK=PROMOTION_MOBILITY1]Mobility[\LINK][NEWLINE][ICON_BULLET]Coyote Tribe:[LINK=PROMOTION_DRILL1]Drill[\LINK][NEWLINE][ICON_BULLET]Bear Tribe: [LINK=PROMOTION_COMBAT1]Combat[\LINK][NEWLINE][ICON_BULLET]Serpent Tribe: [LINK=PROMOTION_CITY_RAIDER1]City Raider[\LINK][NEWLINE][ICON_BULLET]Tortoise Tribe: [LINK=PROMOTION_CITY_GARRISON1]City Garrison[\LINK][NEWLINE][NEWLINE]Tribal Law also unlocks the ability to create the [LINK=UNIT_MENAWA]Menawa[\LINK] unit. While not entirely powerful on its own, it can be unlocked fairly early at [LINK=TECH_MILITARY_STRATEGY]Military Strategy[\LINK], and comes with one of five unique abilities depending on what tribe you wish the unit to come from:[NEWLINE][NEWLINE][ICON_BULLET]Eagle Tribe: Ignores terrain costs, +1 Movement Range[NEWLINE][ICON_BULLET]Coyote Tribe: 10% chance to avoid bad lair results, 10% withdrawal chance, 100% extra gold from pillaging, and a 10% chance to do 5% damage when this unit's stack is attacked[NEWLINE][ICON_BULLET]Bear Tribe: +1 offensive and defensive strength[NEWLINE][ICON_BULLET]Serpent Tribe: 15% chance to generate a slave after combat, attacks the weakest unit in the stack[NEWLINE][ICON_BULLET]Tortoise Tribe: +10% defensive strength, double fortification bonus, and guards against enemy Marksman units[NEWLINE][NEWLINE]If you move away from the Tribal Law civic, your Menawa units will abandon you.</Italian>
+		<Spanish>The Tribal Law civic gives control of the Chislev nation to five tribes, with a leader of one of those tribes acting as Head Chief. While the Head Chief has the final say in decisions, the other tribal chiefs advise the Head Chief. A new Head Chief will be appointed the turn you adopt Tribal Law, and every 45/60/90/180 turns thereafter, depending on your game speed. Your leader can come from the following tribes:[NEWLINE][NEWLINE][ICON_BULLET]Eagle Tribe: [LINK=LEADER_SHIMASANI]Shimasani[\LINK] ([LINK=TRAIT_CHARISMATIC]Charismatic[\LINK]/[LINK=TRAIT_TRADER]Trader[\LINK])[NEWLINE][ICON_BULLET]Coyote Tribe: [LINK=LEADER_SOYALA]Soyala[\LINK] ([LINK=TRAIT_CREATIVE]Creative[\LINK]/[LINK=TRAIT_PIONEER]Imperalist[\LINK])[NEWLINE][ICON_BULLET]Bear Tribe: [LINK=LEADER_MOTSQUEH]Motsqueh[\LINK] ([LINK=TRAIT_EXPANSIVE]Expansive[\LINK]/[LINK=TRAIT_INDUSTRIOUS]Industrious[\LINK])[NEWLINE][ICON_BULLET]Serpent Tribe: [LINK=LEADER_OSYKA]Osyka[\LINK] ([LINK=TRAIT_AGGRESSIVE]Aggressive[\LINK]/[LINK=TRAIT_RAIDERS]Raiders[\LINK])[NEWLINE][ICON_BULLET]Tortoise Tribe: [LINK=LEADER_ALOSAKA]Alosaka[\LINK] ([LINK=TRAIT_PHILOSOPHICAL]Philosophical[\LINK]/[LINK=TRAIT_DEFENDER]Defender[\LINK])[NEWLINE][NEWLINE]During elections, you may vote for a different leader, the same leader, allow the game to randomize it for you, or decide not to hold an election. If you vote for the same leader, you will have a turn of anarchy unless that leader is Shimasani; however, there will also be a 50% chance of a positive effect. For Shimasani, it's +3 relations with all other leaders. For Soyala, Motsqueh, and Osyka, they get a Great Bard, Great Engineer, or Great Commander respectively. For Alosaka, he will enter a golden age. Picking a different leader simply switches to that leader, and your alignment resets to that leader's alignment. Allowing the game to randomize for you picks one of the five options at random, and gives you one turn of "We Love the Head Chief Day". If it happens to pick the leader you currently are, you will not suffer a turn of anarchy. The last option, to not hold an election, is only useful if you want to remain as [LINK=LEADER_CHISLEV]Absaroke[\LINK] or [LINK=LEADER_NATANE]Natane[\LINK] while operating under Tribal Law.[NEWLINE][NEWLINE]While under Tribal Law, all units that you acquire will come from one of the five tribes at random, with the exception of [LINK=UNIT_MESKWAKI]Meskwaki[\LINK], who will always be from the Bear Tribe. If you train a unit in a source totem city, the unit is guaranteed to be from that tribe, whether you're using Tribal Law or not. The units will start with a promotion depending on their tribe, and if they would have already received that promotion from another source, it gets incremented to its next level:[NEWLINE][NEWLINE][ICON_BULLET]Eagle Tribe: [LINK=PROMOTION_MOBILITY1]Mobility[\LINK][NEWLINE][ICON_BULLET]Coyote Tribe:[LINK=PROMOTION_DRILL1]Drill[\LINK][NEWLINE][ICON_BULLET]Bear Tribe: [LINK=PROMOTION_COMBAT1]Combat[\LINK][NEWLINE][ICON_BULLET]Serpent Tribe: [LINK=PROMOTION_CITY_RAIDER1]City Raider[\LINK][NEWLINE][ICON_BULLET]Tortoise Tribe: [LINK=PROMOTION_CITY_GARRISON1]City Garrison[\LINK][NEWLINE][NEWLINE]Tribal Law also unlocks the ability to create the [LINK=UNIT_MENAWA]Menawa[\LINK] unit. While not entirely powerful on its own, it can be unlocked fairly early at [LINK=TECH_MILITARY_STRATEGY]Military Strategy[\LINK], and comes with one of five unique abilities depending on what tribe you wish the unit to come from:[NEWLINE][NEWLINE][ICON_BULLET]Eagle Tribe: Ignores terrain costs, +1 Movement Range[NEWLINE][ICON_BULLET]Coyote Tribe: 10% chance to avoid bad lair results, 10% withdrawal chance, 100% extra gold from pillaging, and a 10% chance to do 5% damage when this unit's stack is attacked[NEWLINE][ICON_BULLET]Bear Tribe: +1 offensive and defensive strength[NEWLINE][ICON_BULLET]Serpent Tribe: 15% chance to generate a slave after combat, attacks the weakest unit in the stack[NEWLINE][ICON_BULLET]Tortoise Tribe: +10% defensive strength, double fortification bonus, and guards against enemy Marksman units[NEWLINE][NEWLINE]If you move away from the Tribal Law civic, your Menawa units will abandon you.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_WE_LOVE_HEAD_CHIEF</Tag>
+		<English>"We Love the Head Chief Day"</English>
+		<French>"We Love the Head Chief Day"</French>
+		<German>"We Love the Head Chief Day"</German>
+		<Italian>"We Love the Head Chief Day"</Italian>
+		<Spanish>"We Love the Head Chief Day"</Spanish>
+	</TEXT>
+	<!--Tribal Law Election -->
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_TRIBAL_LAW_ELECTION</Tag>
+		<English>The five tribes have come together to elect a new leader. Who do you support?</English>
+		<French>The five tribes have come together to elect a new leader. Who do you support?</French>
+		<German>The five tribes have come together to elect a new leader. Who do you support?</German>
+		<Italian>The five tribes have come together to elect a new leader. Who do you support?</Italian>
+		<Spanish>The five tribes have come together to elect a new leader. Who do you support?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_EAGLE_TRIBE</Tag>
+		<English>Many great negotiators have hailed from the Eagle Tribe. Surely their silver tongues will serve us well.</English>
+		<French>Many great negotiators have hailed from the Eagle Tribe. Surely their silver tongues will serve us well.</French>
+		<German>Many great negotiators have hailed from the Eagle Tribe. Surely their silver tongues will serve us well.</German>
+		<Italian>Many great negotiators have hailed from the Eagle Tribe. Surely their silver tongues will serve us well.</Italian>
+		<Spanish>Many great negotiators have hailed from the Eagle Tribe. Surely their silver tongues will serve us well.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_HELP_EAGLE_TRIBE</Tag>
+		<English>[ICON_BULLET]Your leader becomes Shimasani (Charismatic/Trader)[NEWLINE][ICON_BULLET]Charismatic: +1 [ICON_HAPPY]/City, -25% XP Needed for Unit Promotions[NEWLINE][ICON_BULLET]Trader: +50% [ICON_FOOD] and [ICON_PRODUCTION] from [ICON_TRADE]</English>
+		<French>[ICON_BULLET]Your leader becomes Shimasani (Charismatic/Trader)[NEWLINE][ICON_BULLET]Charismatic: +1 [ICON_HAPPY]/City, -25% XP Needed for Unit Promotions[NEWLINE][ICON_BULLET]Trader: +50% [ICON_FOOD] and [ICON_PRODUCTION] from [ICON_TRADE]</French>
+		<German>[ICON_BULLET]Your leader becomes Shimasani (Charismatic/Trader)[NEWLINE][ICON_BULLET]Charismatic: +1 [ICON_HAPPY]/City, -25% XP Needed for Unit Promotions[NEWLINE][ICON_BULLET]Trader: +50% [ICON_FOOD] and [ICON_PRODUCTION] from [ICON_TRADE]</German>
+		<Italian>[ICON_BULLET]Your leader becomes Shimasani (Charismatic/Trader)[NEWLINE][ICON_BULLET]Charismatic: +1 [ICON_HAPPY]/City, -25% XP Needed for Unit Promotions[NEWLINE][ICON_BULLET]Trader: +50% [ICON_FOOD] and [ICON_PRODUCTION] from [ICON_TRADE]</Italian>
+		<Spanish>[ICON_BULLET]Your leader becomes Shimasani (Charismatic/Trader)[NEWLINE][ICON_BULLET]Charismatic: +1 [ICON_HAPPY]/City, -25% XP Needed for Unit Promotions[NEWLINE][ICON_BULLET]Trader: +50% [ICON_FOOD] and [ICON_PRODUCTION] from [ICON_TRADE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_HELP_EAGLE_TRIBE_ALREADY_SHIMASANI</Tag>
+		<English>[ICON_BULLET]50% chance for +3 Diplomatic Relations with all nations</English>
+		<French>[ICON_BULLET]50% chance for +3 Diplomatic Relations with all nations</French>
+		<German>[ICON_BULLET]50% chance for +3 Diplomatic Relations with all nations</German>
+		<Italian>[ICON_BULLET]50% chance for +3 Diplomatic Relations with all nations</Italian>
+		<Spanish>[ICON_BULLET]50% chance for +3 Diplomatic Relations with all nations</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_COYOTE_TRIBE</Tag>
+		<English>The Coyote Tribe is creative and cunning. We could use their leadership to expand our boundaries.</English>
+		<French>The Coyote Tribe is creative and cunning. We could use their leadership to expand our boundaries.</French>
+		<German>The Coyote Tribe is creative and cunning. We could use their leadership to expand our boundaries.</German>
+		<Italian>The Coyote Tribe is creative and cunning. We could use their leadership to expand our boundaries.</Italian>
+		<Spanish>The Coyote Tribe is creative and cunning. We could use their leadership to expand our boundaries.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_HELP_COYOTE_TRIBE</Tag>
+		<English>[ICON_BULLET]Your leader becomes Soyala (Creative/Pioneer)[NEWLINE][ICON_BULLET]Creative: +2 [ICON_CULTURE]/City[NEWLINE][ICON_BULLET]Pioneer: Double Settler and Worker production speed, Mobility I for Settlers and Workers, Settlers have +5 defensive strength</English>
+		<French>[ICON_BULLET]Your leader becomes Soyala (Creative/Pioneer)[NEWLINE][ICON_BULLET]Creative: +2 [ICON_CULTURE]/City[NEWLINE][ICON_BULLET]Pioneer: Double Settler and Worker production speed, Mobility I for Settlers and Workers, Settlers have +5 defensive strength</French>
+		<German>[ICON_BULLET]Your leader becomes Soyala (Creative/Pioneer)[NEWLINE][ICON_BULLET]Creative: +2 [ICON_CULTURE]/City[NEWLINE][ICON_BULLET]Pioneer: Double Settler and Worker production speed, Mobility I for Settlers and Workers, Settlers have +5 defensive strength</German>
+		<Italian>[ICON_BULLET]Your leader becomes Soyala (Creative/Pioneer)[NEWLINE][ICON_BULLET]Creative: +2 [ICON_CULTURE]/City[NEWLINE][ICON_BULLET]Pioneer: Double Settler and Worker production speed, Mobility I for Settlers and Workers, Settlers have +5 defensive strength</Italian>
+		<Spanish>[ICON_BULLET]Your leader becomes Soyala (Creative/Pioneer)[NEWLINE][ICON_BULLET]Creative: +2 [ICON_CULTURE]/City[NEWLINE][ICON_BULLET]Pioneer: Double Settler and Worker production speed, Mobility I for Settlers and Workers, Settlers have +5 defensive strength</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_HELP_COYOTE_TRIBE_ALREADY_SOYALA</Tag>
+		<English>[ICON_BULLET]50% Chance to Receive a Great Bard[NEWLINE][ICON_BULLET]1 Turn of Anarchy</English>
+		<French>[ICON_BULLET]50% Chance to Receive a Great Bard[NEWLINE][ICON_BULLET]1 Turn of Anarchy</French>
+		<German>[ICON_BULLET]50% Chance to Receive a Great Bard[NEWLINE][ICON_BULLET]1 Turn of Anarchy</German>
+		<Italian>[ICON_BULLET]50% Chance to Receive a Great Bard[NEWLINE][ICON_BULLET]1 Turn of Anarchy</Italian>
+		<Spanish>[ICON_BULLET]50% Chance to Receive a Great Bard[NEWLINE][ICON_BULLET]1 Turn of Anarchy</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_BEAR_TRIBE</Tag>
+		<English>The Bear Tribe is healthy and powerful. Under their leadership, our people will be well-fed.</English>
+		<French>The Bear Tribe is healthy and powerful. Under their leadership, our people will be well-fed.</French>
+		<German>The Bear Tribe is healthy and powerful. Under their leadership, our people will be well-fed.</German>
+		<Italian>The Bear Tribe is healthy and powerful. Under their leadership, our people will be well-fed.</Italian>
+		<Spanish>The Bear Tribe is healthy and powerful. Under their leadership, our people will be well-fed.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_HELP_BEAR_TRIBE</Tag>
+		<English>[ICON_BULLET]Your leader becomes Motsqueh (Expansive/Industrious)[NEWLINE][ICON_BULLET]Expansive: +6 [ICON_HEALTHY]/City[NEWLINE][ICON_BULLET]Industrious: +50% Wonder Production, Free Crafting Tradition Promotion (+50% Worker Work Rate)</English>
+		<French>[ICON_BULLET]Your leader becomes Motsqueh (Expansive/Industrious)[NEWLINE][ICON_BULLET]Expansive: +6 [ICON_HEALTHY]/City[NEWLINE][ICON_BULLET]Industrious: +50% Wonder Production, Free Crafting Tradition Promotion (+50% Worker Work Rate)</French>
+		<German>[ICON_BULLET]Your leader becomes Motsqueh (Expansive/Industrious)[NEWLINE][ICON_BULLET]Expansive: +6 [ICON_HEALTHY]/City[NEWLINE][ICON_BULLET]Industrious: +50% Wonder Production, Free Crafting Tradition Promotion (+50% Worker Work Rate)</German>
+		<Italian>[ICON_BULLET]Your leader becomes Motsqueh (Expansive/Industrious)[NEWLINE][ICON_BULLET]Expansive: +6 [ICON_HEALTHY]/City[NEWLINE][ICON_BULLET]Industrious: +50% Wonder Production, Free Crafting Tradition Promotion (+50% Worker Work Rate)</Italian>
+		<Spanish>[ICON_BULLET]Your leader becomes Motsqueh (Expansive/Industrious)[NEWLINE][ICON_BULLET]Expansive: +6 [ICON_HEALTHY]/City[NEWLINE][ICON_BULLET]Industrious: +50% Wonder Production, Free Crafting Tradition Promotion (+50% Worker Work Rate)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_HELP_BEAR_TRIBE_ALREADY_MOTSQUEH</Tag>
+		<English>[ICON_BULLET]50% Chance to Receive a Great Engineer[NEWLINE][ICON_BULLET]1 Turn of Anarchy</English>
+		<French>[ICON_BULLET]50% Chance to Receive a Great Engineer[NEWLINE][ICON_BULLET]1 Turn of Anarchy</French>
+		<German>[ICON_BULLET]50% Chance to Receive a Great Engineer[NEWLINE][ICON_BULLET]1 Turn of Anarchy</German>
+		<Italian>[ICON_BULLET]50% Chance to Receive a Great Engineer[NEWLINE][ICON_BULLET]1 Turn of Anarchy</Italian>
+		<Spanish>[ICON_BULLET]50% Chance to Receive a Great Engineer[NEWLINE][ICON_BULLET]1 Turn of Anarchy</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_SERPENT_TRIBE</Tag>
+		<English>The Serpent Tribe is ruthless. They would surely lead us well during wartime.</English>
+		<French>The Serpent Tribe is ruthless. They would surely lead us well during wartime.</French>
+		<German>The Serpent Tribe is ruthless. They would surely lead us well during wartime.</German>
+		<Italian>The Serpent Tribe is ruthless. They would surely lead us well during wartime.</Italian>
+		<Spanish>The Serpent Tribe is ruthless. They would surely lead us well during wartime.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_HELP_SERPENT_TRIBE</Tag>
+		<English>[ICON_BULLET]Your leader becomes Osyka (Aggressive/Raiders)[NEWLINE][ICON_BULLET]Aggressive: Free Combat I Promotion (+10% Combat Strength)[NEWLINE][ICON_BULLET]Raiders: Free Raider Promotion (Automatically Pillages Enemy Improvements During War), Modifies Culture Change After Pillaging By 150%, +100% [ICON_GOLD] From Pillaging</English>
+		<French>[ICON_BULLET]Your leader becomes Osyka (Aggressive/Raiders)[NEWLINE][ICON_BULLET]Aggressive: Free Combat I Promotion (+10% Combat Strength)[NEWLINE][ICON_BULLET]Raiders: Free Raider Promotion (Automatically Pillages Enemy Improvements During War), Modifies Culture Change After Pillaging By 150%, +100% [ICON_GOLD] From Pillaging</French>
+		<German>[ICON_BULLET]Your leader becomes Osyka (Aggressive/Raiders)[NEWLINE][ICON_BULLET]Aggressive: Free Combat I Promotion (+10% Combat Strength)[NEWLINE][ICON_BULLET]Raiders: Free Raider Promotion (Automatically Pillages Enemy Improvements During War), Modifies Culture Change After Pillaging By 150%, +100% [ICON_GOLD] From Pillaging</German>
+		<Italian>[ICON_BULLET]Your leader becomes Osyka (Aggressive/Raiders)[NEWLINE][ICON_BULLET]Aggressive: Free Combat I Promotion (+10% Combat Strength)[NEWLINE][ICON_BULLET]Raiders: Free Raider Promotion (Automatically Pillages Enemy Improvements During War), Modifies Culture Change After Pillaging By 150%, +100% [ICON_GOLD] From Pillaging</Italian>
+		<Spanish>[ICON_BULLET]Your leader becomes Osyka (Aggressive/Raiders)[NEWLINE][ICON_BULLET]Aggressive: Free Combat I Promotion (+10% Combat Strength)[NEWLINE][ICON_BULLET]Raiders: Free Raider Promotion (Automatically Pillages Enemy Improvements During War), Modifies Culture Change After Pillaging By 150%, +100% [ICON_GOLD] From Pillaging</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_HELP_SERPENT_TRIBE_ALREADY_OSYKA</Tag>
+		<English>[ICON_BULLET]50% Chance to Receive a Great Commander[NEWLINE][ICON_BULLET]1 Turn of Anarchy</English>
+		<French>[ICON_BULLET]50% Chance to Receive a Great Commander[NEWLINE][ICON_BULLET]1 Turn of Anarchy</French>
+		<German>[ICON_BULLET]50% Chance to Receive a Great Commander[NEWLINE][ICON_BULLET]1 Turn of Anarchy</German>
+		<Italian>[ICON_BULLET]50% Chance to Receive a Great Commander[NEWLINE][ICON_BULLET]1 Turn of Anarchy</Italian>
+		<Spanish>[ICON_BULLET]50% Chance to Receive a Great Commander[NEWLINE][ICON_BULLET]1 Turn of Anarchy</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_TORTOISE_TRIBE</Tag>
+		<English>The Tortoise Tribe is wise and methodical. Their teachings will lead us to prosperity.</English>
+		<French>The Tortoise Tribe is wise and methodical. Their teachings will lead us to prosperity.</French>
+		<German>The Tortoise Tribe is wise and methodical. Their teachings will lead us to prosperity.</German>
+		<Italian>The Tortoise Tribe is wise and methodical. Their teachings will lead us to prosperity.</Italian>
+		<Spanish>The Tortoise Tribe is wise and methodical. Their teachings will lead us to prosperity.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_HELP_TORTOISE_TRIBE</Tag>
+		<English>[ICON_BULLET]Your leader becomes Alosaka (Philosophical/Defender)[NEWLINE][ICON_BULLET]Philosophical: +100% [ICON_GREATPEOPLE] Birth Rate[NEWLINE][ICON_BULLET]Defender: Free Promotions Homeland (+10% Withdrawl Chance, +10% Strength Within Own Borders), Hardy I (+25% Worker Withdrawl Chance), and City Garrison I (+30% City Defense for Archery and Disciple Units)</English>
+		<French>[ICON_BULLET]Your leader becomes Alosaka (Philosophical/Defender)[NEWLINE][ICON_BULLET]Philosophical: +100% [ICON_GREATPEOPLE] Birth Rate[NEWLINE][ICON_BULLET]Defender: Free Promotions Homeland (+10% Withdrawl Chance, +10% Strength Within Own Borders), Hardy I (+25% Worker Withdrawl Chance), and City Garrison I (+30% City Defense for Archery and Disciple Units)</French>
+		<German>[ICON_BULLET]Your leader becomes Alosaka (Philosophical/Defender)[NEWLINE][ICON_BULLET]Philosophical: +100% [ICON_GREATPEOPLE] Birth Rate[NEWLINE][ICON_BULLET]Defender: Free Promotions Homeland (+10% Withdrawl Chance, +10% Strength Within Own Borders), Hardy I (+25% Worker Withdrawl Chance), and City Garrison I (+30% City Defense for Archery and Disciple Units)</German>
+		<Italian>[ICON_BULLET]Your leader becomes Alosaka (Philosophical/Defender)[NEWLINE][ICON_BULLET]Philosophical: +100% [ICON_GREATPEOPLE] Birth Rate[NEWLINE][ICON_BULLET]Defender: Free Promotions Homeland (+10% Withdrawl Chance, +10% Strength Within Own Borders), Hardy I (+25% Worker Withdrawl Chance), and City Garrison I (+30% City Defense for Archery and Disciple Units)</Italian>
+		<Spanish>[ICON_BULLET]Your leader becomes Alosaka (Philosophical/Defender)[NEWLINE][ICON_BULLET]Philosophical: +100% [ICON_GREATPEOPLE] Birth Rate[NEWLINE][ICON_BULLET]Defender: Free Promotions Homeland (+10% Withdrawl Chance, +10% Strength Within Own Borders), Hardy I (+25% Worker Withdrawl Chance), and City Garrison I (+30% City Defense for Archery and Disciple Units)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_HELP_TORTOISE_TRIBE_ALREADY_ALOSAKA</Tag>
+		<English>[ICON_BULLET]50% Chance to Start a Golden Age[NEWLINE][ICON_BULLET]1 Turn of Anarchy</English>
+		<French>[ICON_BULLET]50% Chance to Start a Golden Age[NEWLINE][ICON_BULLET]1 Turn of Anarchy</French>
+		<German>[ICON_BULLET]50% Chance to Start a Golden Age[NEWLINE][ICON_BULLET]1 Turn of Anarchy</German>
+		<Italian>[ICON_BULLET]50% Chance to Start a Golden Age[NEWLINE][ICON_BULLET]1 Turn of Anarchy</Italian>
+		<Spanish>[ICON_BULLET]50% Chance to Start a Golden Age[NEWLINE][ICON_BULLET]1 Turn of Anarchy</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_FAIR</Tag>
+		<English>We should not interfere. This is for the people to decide.</English>
+		<French>We should not interfere. This is for the people to decide.</French>
+		<German>We should not interfere. This is for the people to decide.</German>
+		<Italian>We should not interfere. This is for the people to decide.</Italian>
+		<Spanish>We should not interfere. This is for the people to decide.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_HELP_FAIR</Tag>
+		<English>[ICON_BULLET]One of the above options is randomly chosen[NEWLINE][ICON_BULLET]If the tribe of the leader you are currently playing as is chosen, you will have the normal 50% chance at the bonus effect, but without the turn of anarchy[NEWLINE][ICON_BULLET]1 turn of "We Love the Head Chief" Day in all of your cities</English>
+		<French>[ICON_BULLET]One of the above options is randomly chosen[NEWLINE][ICON_BULLET]If the tribe of the leader you are currently playing as is chosen, you will have the normal 50% chance at the bonus effect, but without the turn of anarchy[NEWLINE][ICON_BULLET]1 turn of "We Love the Head Chief" Day in all of your cities</French>
+		<German>[ICON_BULLET]One of the above options is randomly chosen[NEWLINE][ICON_BULLET]If the tribe of the leader you are currently playing as is chosen, you will have the normal 50% chance at the bonus effect, but without the turn of anarchy[NEWLINE][ICON_BULLET]1 turn of "We Love the Head Chief" Day in all of your cities</German>
+		<Italian>[ICON_BULLET]One of the above options is randomly chosen[NEWLINE][ICON_BULLET]If the tribe of the leader you are currently playing as is chosen, you will have the normal 50% chance at the bonus effect, but without the turn of anarchy[NEWLINE][ICON_BULLET]1 turn of "We Love the Head Chief" Day in all of your cities</Italian>
+		<Spanish>[ICON_BULLET]One of the above options is randomly chosen[NEWLINE][ICON_BULLET]If the tribe of the leader you are currently playing as is chosen, you will have the normal 50% chance at the bonus effect, but without the turn of anarchy[NEWLINE][ICON_BULLET]1 turn of "We Love the Head Chief" Day in all of your cities</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_FAIR3</Tag>
+		<English>The people have taken special interest in this election. Non-interference here will make our people especially happy.</English>
+		<French>The people have taken special interest in this election. Non-interference here will make our people especially happy.</French>
+		<German>The people have taken special interest in this election. Non-interference here will make our people especially happy.</German>
+		<Italian>The people have taken special interest in this election. Non-interference here will make our people especially happy.</Italian>
+		<Spanish>The people have taken special interest in this election. Non-interference here will make our people especially happy.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_HELP_FAIR3</Tag>
+		<English>[ICON_BULLET]One of the above options is randomly chosen[NEWLINE][ICON_BULLET]If the tribe of the leader you are currently playing as is chosen, you will have the normal 50% chance at the bonus effect, but without the turn of anarchy[NEWLINE][ICON_BULLET]5 turns of "We Love the Head Chief" Day in all of your cities</English>
+		<French>[ICON_BULLET]One of the above options is randomly chosen[NEWLINE][ICON_BULLET]If the tribe of the leader you are currently playing as is chosen, you will have the normal 50% chance at the bonus effect, but without the turn of anarchy[NEWLINE][ICON_BULLET]5 turns of "We Love the Head Chief" Day in all of your cities</French>
+		<German>[ICON_BULLET]One of the above options is randomly chosen[NEWLINE][ICON_BULLET]If the tribe of the leader you are currently playing as is chosen, you will have the normal 50% chance at the bonus effect, but without the turn of anarchy[NEWLINE][ICON_BULLET]5 turns of "We Love the Head Chief" Day in all of your cities</German>
+		<Italian>[ICON_BULLET]One of the above options is randomly chosen[NEWLINE][ICON_BULLET]If the tribe of the leader you are currently playing as is chosen, you will have the normal 50% chance at the bonus effect, but without the turn of anarchy[NEWLINE][ICON_BULLET]5 turns of "We Love the Head Chief" Day in all of your cities</Italian>
+		<Spanish>[ICON_BULLET]One of the above options is randomly chosen[NEWLINE][ICON_BULLET]If the tribe of the leader you are currently playing as is chosen, you will have the normal 50% chance at the bonus effect, but without the turn of anarchy[NEWLINE][ICON_BULLET]5 turns of "We Love the Head Chief" Day in all of your cities</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_NO_PARTICIPATION</Tag>
+		<English>Elections?! Ha! I'm the one in charge here!</English>
+		<French>Elections?! Ha! I'm the one in charge here!</French>
+		<German>Elections?! Ha! I'm the one in charge here!</German>
+		<Italian>Elections?! Ha! I'm the one in charge here!</Italian>
+		<Spanish>Elections?! Ha! I'm the one in charge here!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_HELP_NO_PARTICIPATION</Tag>
+		<English>[ICON_BULLET]One Turn of Anarchy</English>
+		<French>[ICON_BULLET]One Turn of Anarchy</French>
+		<German>[ICON_BULLET]One Turn of Anarchy</German>
+		<Italian>[ICON_BULLET]One Turn of Anarchy</Italian>
+		<Spanish>[ICON_BULLET]One Turn of Anarchy</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_SHIMASANI_WINS_ALREADY_SHIMASANI_SUCCESS</Tag>
+		<English>Although the people would be upset at another tribal leader winning back-to-back elections, the people rejoice over your re-election. In addition, years of strong diplomacy have shown the other leaders of the world that they can trust Shimasani of the Eagle Tribe.</English>
+		<French>Although the people would be upset at another tribal leader winning back-to-back elections, the people rejoice over your re-election. In addition, years of strong diplomacy have shown the other leaders of the world that they can trust Shimasani of the Eagle Tribe.</French>
+		<German>Although the people would be upset at another tribal leader winning back-to-back elections, the people rejoice over your re-election. In addition, years of strong diplomacy have shown the other leaders of the world that they can trust Shimasani of the Eagle Tribe.</German>
+		<Italian>Although the people would be upset at another tribal leader winning back-to-back elections, the people rejoice over your re-election. In addition, years of strong diplomacy have shown the other leaders of the world that they can trust Shimasani of the Eagle Tribe.</Italian>
+		<Spanish>Although the people would be upset at another tribal leader winning back-to-back elections, the people rejoice over your re-election. In addition, years of strong diplomacy have shown the other leaders of the world that they can trust Shimasani of the Eagle Tribe.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_SHIMASANI_WINS_ALREADY_SHIMASANI_FAIL</Tag>
+		<English>Although the people would be upset at another tribal leader winning back-to-back elections, the people rejoice over your re-election. Although your people are happy, you've not had as much luck globally, as your relations have improved little with other nations.</English>
+		<French>Although the people would be upset at another tribal leader winning back-to-back elections, the people rejoice over your re-election. Although your people are happy, you've not had as much luck globally, as your relations have improved little with other nations.</French>
+		<German>Although the people would be upset at another tribal leader winning back-to-back elections, the people rejoice over your re-election. Although your people are happy, you've not had as much luck globally, as your relations have improved little with other nations.</German>
+		<Italian>Although the people would be upset at another tribal leader winning back-to-back elections, the people rejoice over your re-election. Although your people are happy, you've not had as much luck globally, as your relations have improved little with other nations.</Italian>
+		<Spanish>Although the people would be upset at another tribal leader winning back-to-back elections, the people rejoice over your re-election. Although your people are happy, you've not had as much luck globally, as your relations have improved little with other nations.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_SHIMASANI_WINS</Tag>
+		<English>It has been decided that Shimasani of the Eagle Tribe will lead our people. Her strong sense of compassion and skill with diplomacy will make our people happier, and hopefully improve our standing with the rest of the world.</English>
+		<French>It has been decided that Shimasani of the Eagle Tribe will lead our people. Her strong sense of compassion and skill with diplomacy will make our people happier, and hopefully improve our standing with the rest of the world.</French>
+		<German>It has been decided that Shimasani of the Eagle Tribe will lead our people. Her strong sense of compassion and skill with diplomacy will make our people happier, and hopefully improve our standing with the rest of the world.</German>
+		<Italian>It has been decided that Shimasani of the Eagle Tribe will lead our people. Her strong sense of compassion and skill with diplomacy will make our people happier, and hopefully improve our standing with the rest of the world.</Italian>
+		<Spanish>It has been decided that Shimasani of the Eagle Tribe will lead our people. Her strong sense of compassion and skill with diplomacy will make our people happier, and hopefully improve our standing with the rest of the world.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_SOYALA_WINS_ALREADY_SOYALA_SUCCESS</Tag>
+		<English>Although the people are upset that the powers that be handed you the election twice, an extravagant-looking man approaches you. He offers to write poems and songs about your deeds, and to spread those tales to distant realms.</English>
+		<French>Although the people are upset that the powers that be handed you the election twice, an extravagant-looking man approaches you. He offers to write poems and songs about your deeds, and to spread those tales to distant realms.</French>
+		<German>Although the people are upset that the powers that be handed you the election twice, an extravagant-looking man approaches you. He offers to write poems and songs about your deeds, and to spread those tales to distant realms.</German>
+		<Italian>Although the people are upset that the powers that be handed you the election twice, an extravagant-looking man approaches you. He offers to write poems and songs about your deeds, and to spread those tales to distant realms.</Italian>
+		<Spanish>Although the people are upset that the powers that be handed you the election twice, an extravagant-looking man approaches you. He offers to write poems and songs about your deeds, and to spread those tales to distant realms.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_SOYALA_WINS_ALREADY_SOYALA_FAIL</Tag>
+		<English>The people are upset that the powers that be handed you the election twice. Further, in your years of exploration, you haven't found as many people of interest as you would have liked.</English>
+		<French>The people are upset that the powers that be handed you the election twice. Further, in your years of exploration, you haven't found as many people of interest as you would have liked.</French>
+		<German>The people are upset that the powers that be handed you the election twice. Further, in your years of exploration, you haven't found as many people of interest as you would have liked.</German>
+		<Italian>The people are upset that the powers that be handed you the election twice. Further, in your years of exploration, you haven't found as many people of interest as you would have liked.</Italian>
+		<Spanish>The people are upset that the powers that be handed you the election twice. Further, in your years of exploration, you haven't found as many people of interest as you would have liked.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_SOYALA_WINS</Tag>
+		<English>It has been decided that Soyala of the Coyote Tribe will lead our people. Her wit, creativity, and desire to explore will expand our frontiers.</English>
+		<French>It has been decided that Soyala of the Coyote Tribe will lead our people. Her wit, creativity, and desire to explore will expand our frontiers.</French>
+		<German>IIt has been decided that Soyala of the Coyote Tribe will lead our people. Her wit, creativity, and desire to explore will expand our frontiers.</German>
+		<Italian>It has been decided that Soyala of the Coyote Tribe will lead our people. Her wit, creativity, and desire to explore will expand our frontiers.</Italian>
+		<Spanish>It has been decided that Soyala of the Coyote Tribe will lead our people. Her wit, creativity, and desire to explore will expand our frontiers.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_MOTSQUEH_WINS_ALREADY_MOTSQUEH_SUCCESS</Tag>
+		<English>Although the people are upset that the powers that be handed you the election twice, an engineer from a distant land approaches you. He says he admires your building prowess, and would like to lend you his services.</English>
+		<French>Although the people are upset that the powers that be handed you the election twice, an engineer from a distant land approaches you. He says he admires your building prowess, and would like to lend you his services.</French>
+		<German>Although the people are upset that the powers that be handed you the election twice, an engineer from a distant land approaches you. He says he admires your building prowess, and would like to lend you his services.</German>
+		<Italian>Although the people are upset that the powers that be handed you the election twice, an engineer from a distant land approaches you. He says he admires your building prowess, and would like to lend you his services.</Italian>
+		<Spanish>Although the people are upset that the powers that be handed you the election twice, an engineer from a distant land approaches you. He says he admires your building prowess, and would like to lend you his services.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_MOTSQUEH_WINS_ALREADY_MOTSQUEH_FAIL</Tag>
+		<English>The people are upset that the powers that be handed you the election twice. Further, your years of infrastructure focus have not attracted many engineers to assist with our great projects.</English>
+		<French>The people are upset that the powers that be handed you the election twice. Further, your years of infrastructure focus have not attracted many engineers to assist with our great projects.</French>
+		<German>The people are upset that the powers that be handed you the election twice. Further, your years of infrastructure focus have not attracted many engineers to assist with our great projects.</German>
+		<Italian>The people are upset that the powers that be handed you the election twice. Further, your years of infrastructure focus have not attracted many engineers to assist with our great projects.</Italian>
+		<Spanish>The people are upset that the powers that be handed you the election twice. Further, your years of infrastructure focus have not attracted many engineers to assist with our great projects.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_MOTSQUEH_WINS</Tag>
+		<English>It has been decided that Motsqueh of the Bear Tribe will lead our people. His hard-working, industrious nature will assist us with our building projects and will help keep our people well-fed.</English>
+		<French>It has been decided that Motsqueh of the Bear Tribe will lead our people. His hard-working, industrious nature will assist us with our building projects and will help keep our people well-fed.</French>
+		<German>It has been decided that Motsqueh of the Bear Tribe will lead our people. His hard-working, industrious nature will assist us with our building projects and will help keep our people well-fed.</German>
+		<Italian>It has been decided that Motsqueh of the Bear Tribe will lead our people. His hard-working, industrious nature will assist us with our building projects and will help keep our people well-fed.</Italian>
+		<Spanish>It has been decided that Motsqueh of the Bear Tribe will lead our people. His hard-working, industrious nature will assist us with our building projects and will help keep our people well-fed.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_OSYKA_WINS_ALREADY_OSYKA_SUCCESS</Tag>
+		<English>Although the people are upset that the powers that be handed you the election twice, a soldier from your military approaches you to discuss strategy. In speaking with him, you find that he is a skilled tactician, and decide to employ him as a commander.</English>
+		<French>Although the people are upset that the powers that be handed you the election twice, a soldier from your military approaches you to discuss strategy. In speaking with him, you find that he is a skilled tactician, and decide to employ him as a commander.</French>
+		<German>Although the people are upset that the powers that be handed you the election twice, a soldier from your military approaches you to discuss strategy. In speaking with him, you find that he is a skilled tactician, and decide to employ him as a commander.</German>
+		<Italian>Although the people are upset that the powers that be handed you the election twice, a soldier from your military approaches you to discuss strategy. In speaking with him, you find that he is a skilled tactician, and decide to employ him as a commander.</Italian>
+		<Spanish>Although the people are upset that the powers that be handed you the election twice, a soldier from your military approaches you to discuss strategy. In speaking with him, you find that he is a skilled tactician, and decide to employ him as a commander.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_OSYKA_WINS_ALREADY_OSYKA_FAIL</Tag>
+		<English>The people are upset that the powers that be handed you the election twice. Further, your years of military aggression has not produced as many great military minds within your army as you would have hoped.</English>
+		<French>The people are upset that the powers that be handed you the election twice. Further, your years of military aggression has not produced as many great military minds within your army as you would have hoped.</French>
+		<German>The people are upset that the powers that be handed you the election twice. Further, your years of military aggression has not produced as many great military minds within your army as you would have hoped.</German>
+		<Italian>The people are upset that the powers that be handed you the election twice. Further, your years of military aggression has not produced as many great military minds within your army as you would have hoped.</Italian>
+		<Spanish>The people are upset that the powers that be handed you the election twice. Further, your years of military aggression has not produced as many great military minds within your army as you would have hoped.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_OSYKA_WINS</Tag>
+		<English>It has been decided that Osyka of the Serpent Tribe will lead our people. She may be hot-headed and aggressive, but that is exactly what we need when enemies are afoot.</English>
+		<French>It has been decided that Osyka of the Serpent Tribe will lead our people. She may be hot-headed and aggressive, but that is exactly what we need when enemies are afoot.</French>
+		<German>IIt has been decided that Osyka of the Serpent Tribe will lead our people. She may be hot-headed and aggressive, but that is exactly what we need when enemies are afoot.</German>
+		<Italian>IIt has been decided that Osyka of the Serpent Tribe will lead our people. She may be hot-headed and aggressive, but that is exactly what we need when enemies are afoot.</Italian>
+		<Spanish>It has been decided that Osyka of the Serpent Tribe will lead our people. She may be hot-headed and aggressive, but that is exactly what we need when enemies are afoot.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_ALOSAKA_WINS_ALREADY_ALOSAKA_SUCCESS</Tag>
+		<English>Although the people are upset that the powers that be handed you the election twice, the Chislev have become prosperous under your rule due to great minds from all over the world coming to our country.</English>
+		<French>Although the people are upset that the powers that be handed you the election twice, the Chislev have become prosperous under your rule due to great minds from all over the world coming to our country.</French>
+		<German>Although the people are upset that the powers that be handed you the election twice, the Chislev have become prosperous under your rule due to great minds from all over the world coming to our country.</German>
+		<Italian>Although the people are upset that the powers that be handed you the election twice, the Chislev have become prosperous under your rule due to great minds from all over the world coming to our country.</Italian>
+		<Spanish>Although the people are upset that the powers that be handed you the election twice, the Chislev have become prosperous under your rule due to great minds from all over the world coming to our country.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_ALOSAKA_WINS_ALREADY_ALOSAKA_FAIL</Tag>
+		<English>The people are upset that the powers that be handed you the election twice. Further, your years of wisdom and peace in an attempt to draw in philosophers from other lands has not had as strong of an impact as you desired.</English>
+		<French>The people are upset that the powers that be handed you the election twice. Further, your years of wisdom and peace in an attempt to draw in philosophers from other lands has not had as strong of an impact as you desired.</French>
+		<German>The people are upset that the powers that be handed you the election twice. Further, your years of wisdom and peace in an attempt to draw in philosophers from other lands has not had as strong of an impact as you desired.</German>
+		<Italian>The people are upset that the powers that be handed you the election twice. Further, your years of wisdom and peace in an attempt to draw in philosophers from other lands has not had as strong of an impact as you desired.</Italian>
+		<Spanish>The people are upset that the powers that be handed you the election twice. Further, your years of wisdom and peace in an attempt to draw in philosophers from other lands has not had as strong of an impact as you desired.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_ALOSAKA_WINS</Tag>
+		<English>It has been decided that Alosaka of the Tortoise Tribe will lead our people. His wisdom and sense of caution will keep our people safe. This safety and solitude will attract philosophers from all over the world.</English>
+		<French>It has been decided that Alosaka of the Tortoise Tribe will lead our people. His wisdom and sense of caution will keep our people safe. This safety and solitude will attract philosophers from all over the world.</French>
+		<German>It has been decided that Alosaka of the Tortoise Tribe will lead our people. His wisdom and sense of caution will keep our people safe. This safety and solitude will attract philosophers from all over the world.</German>
+		<Italian>It has been decided that Alosaka of the Tortoise Tribe will lead our people. His wisdom and sense of caution will keep our people safe. This safety and solitude will attract philosophers from all over the world.</Italian>
+		<Spanish>It has been decided that Alosaka of the Tortoise Tribe will lead our people. His wisdom and sense of caution will keep our people safe. This safety and solitude will attract philosophers from all over the world.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_MENAWA_TRIBE_SELECTION</Tag>
+		<English>A Menawa has shown up at your council, providing his aid. Which tribe is he from?</English>
+		<French>A Menawa has shown up at your council, providing his aid. Which tribe is he from?</French>
+		<German>A Menawa has shown up at your council, providing his aid. Which tribe is he from?</German>
+		<Italian>YA Menawa has shown up at your council, providing his aid. Which tribe is he from?</Italian>
+		<Spanish>A Menawa has shown up at your council, providing his aid. Which tribe is he from?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_MENAWA_TRIBE_SELECTION_EAGLE_TRIBE</Tag>
+		<English>The Eagle Tribe</English>
+		<French>The Eagle Tribe</French>
+		<German>The Eagle Tribe</German>
+		<Italian>The Eagle Tribe</Italian>
+		<Spanish>The Eagle Tribe</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_MENAWA_TRIBE_SELECTION_HELP_EAGLE_TRIBE</Tag>
+		<English>[ICON_BULLET]Ignores terrain costs[NEWLINE][ICON_BULLET]+1 Movement Range</English>
+		<French>[ICON_BULLET]Ignores terrain costs[NEWLINE][ICON_BULLET]+1 Movement Range</French>
+		<German>[ICON_BULLET]Ignores terrain costs[NEWLINE][ICON_BULLET]+1 Movement Range</German>
+		<Italian>[ICON_BULLET]Ignores terrain costs[NEWLINE][ICON_BULLET]+1 Movement Range</Italian>
+		<Spanish>[ICON_BULLET]Ignores terrain costs[NEWLINE][ICON_BULLET]+1 Movement Range</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_MENAWA_TRIBE_SELECTION_COYOTE_TRIBE</Tag>
+		<English>The Coyote Tribe</English>
+		<French>The Coyote Tribe</French>
+		<German>The Coyote Tribe</German>
+		<Italian>The Coyote Tribe</Italian>
+		<Spanish>The Coyote Tribe</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_MENAWA_TRIBE_SELECTION_HELP_COYOTE_TRIBE</Tag>
+		<English>[ICON_BULLET]10% chance to avoid bad lair results[NEWLINE][ICON_BULLET]10% withdrawal chance[NEWLINE][ICON_BULLET]10% chance to do 5% damage against the attacking stack[NEWLINE][ICON_BULLET]100% extra gold from pillaging</English>
+		<French>[ICON_BULLET]10% chance to avoid bad lair results[NEWLINE][ICON_BULLET]10% withdrawal chance[NEWLINE][ICON_BULLET]10% chance to do 5% damage against the attacking stack[NEWLINE][ICON_BULLET]100% extra gold from pillaging</French>
+		<German>[ICON_BULLET]10% chance to avoid bad lair results[NEWLINE][ICON_BULLET]10% withdrawal chance[NEWLINE][ICON_BULLET]10% chance to do 5% damage against the attacking stack[NEWLINE][ICON_BULLET]100% extra gold from pillaging</German>
+		<Italian>[ICON_BULLET]10% chance to avoid bad lair results[NEWLINE][ICON_BULLET]10% withdrawal chance[NEWLINE][ICON_BULLET]10% chance to do 5% damage against the attacking stack[NEWLINE][ICON_BULLET]100% extra gold from pillaging</Italian>
+		<Spanish>[ICON_BULLET]10% chance to avoid bad lair results[NEWLINE][ICON_BULLET]10% withdrawal chance[NEWLINE][ICON_BULLET]10% chance to do 5% damage against the attacking stack[NEWLINE][ICON_BULLET]100% extra gold from pillaging</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_MENAWA_TRIBE_SELECTION_BEAR_TRIBE</Tag>
+		<English>The Bear Tribe</English>
+		<French>The Bear Tribe</French>
+		<German>The Bear Tribe</German>
+		<Italian>The Bear Tribe</Italian>
+		<Spanish>The Bear Tribe</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_MENAWA_TRIBE_SELECTION_HELP_BEAR_TRIBE</Tag>
+		<English>[ICON_BULLET]+1 strength</English>
+		<French>[ICON_BULLET]+1 strength</French>
+		<German>[ICON_BULLET]+1 strength</German>
+		<Italian>[ICON_BULLET]+1 strength</Italian>
+		<Spanish>[ICON_BULLET]+1 strength</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_MENAWA_TRIBE_SELECTION_SERPENT_TRIBE</Tag>
+		<English>The Serpent Tribe</English>
+		<French>The Serpent Tribe</French>
+		<German>The Serpent Tribe</German>
+		<Italian>The Serpent Tribe</Italian>
+		<Spanish>The Serpent Tribe</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_MENAWA_TRIBE_SELECTION_HELP_SERPENT_TRIBE</Tag>
+		<English>[ICON_BULLET]15% chance to generate a Slave after combat[NEWLINE][ICON_BULLET]Attacks the weakest unit in the stack</English>
+		<French>[ICON_BULLET]15% chance to generate a Slave after combat[NEWLINE][ICON_BULLET]Attacks the weakest unit in the stack</French>
+		<German>[ICON_BULLET]15% chance to generate a Slave after combat[NEWLINE][ICON_BULLET]Attacks the weakest unit in the stack</German>
+		<Italian>[ICON_BULLET]15% chance to generate a Slave after combat[NEWLINE][ICON_BULLET]Attacks the weakest unit in the stack</Italian>
+		<Spanish>[ICON_BULLET]15% chance to generate a Slave after combat[NEWLINE][ICON_BULLET]Attacks the weakest unit in the stack</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_MENAWA_TRIBE_SELECTION_TORTOISE_TRIBE</Tag>
+		<English>The Tortoise Tribe</English>
+		<French>The Tortoise Tribe</French>
+		<German>The Tortoise Tribe</German>
+		<Italian>The Tortoise Tribe</Italian>
+		<Spanish>The Tortoise Tribe</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_MENAWA_TRIBE_SELECTION_HELP_TORTOISE_TRIBE</Tag>
+		<English>[ICON_BULLET]+10% defensive strength[NEWLINE][ICON_BULLET]Double fortification bonus[NEWLINE][ICON_BULLET]Guards against enemy Marksman units</English>
+		<French>[ICON_BULLET]+10% defensive strength[NEWLINE][ICON_BULLET]Double fortification bonus[NEWLINE][ICON_BULLET]Guards against enemy Marksman units</French>
+		<German>[ICON_BULLET]+10% defensive strength[NEWLINE][ICON_BULLET]Double fortification bonus[NEWLINE][ICON_BULLET]Guards against enemy Marksman units</German>
+		<Italian>[ICON_BULLET]+10% defensive strength[NEWLINE][ICON_BULLET]Double fortification bonus[NEWLINE][ICON_BULLET]Guards against enemy Marksman units</Italian>
+		<Spanish>[ICON_BULLET]+10% defensive strength[NEWLINE][ICON_BULLET]Double fortification bonus[NEWLINE][ICON_BULLET]Guards against enemy Marksman units</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRAIT_TRIBAL_COHESION</Tag>
+		<English>Your traits will change (mouseover your flag to see your new traits)</English>
+		<French>Vos traits de caractère ont changé (placez le curseur sur votre drapeau pour voir les nouveaux)</French>
+		<German>Eure Eigenschaften haben sich geändert. (Fahrt mit der Maus über Eure Flagge um sie Euch anzusehen)</German>
+		<Italian>Your traits will change (mouseover your flag to see your new traits)</Italian>
+		<Spanish>Vuestros rasgos han cambiado (pon el cursor encima de tu bandera para ver tus nuevos rasgos)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRAIT_TRIBAL_COHESION_KEEP_TRAITS</Tag>
+		<English>Keep your traits</English>
+		<French>Keep your traits</French>
+		<German>Keep your traits</German>
+		<Italian>Keep your traits</Italian>
+		<Spanish>Keep your traits</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_CIVIC_NOT_TRIBAL_LAW</Tag>
+		<English>You have moved away from Tribal Law. In outrage, the tribal leaders have abandoned you. Who do you select as your new leader?</English>
+		<French>You have moved away from Tribal Law. In outrage, the tribal leaders have abandoned you. Who do you select as your new leader?</French>
+		<German>You have moved away from Tribal Law. In outrage, the tribal leaders have abandoned you. Who do you select as your new leader?</German>
+		<Italian>You have moved away from Tribal Law. In outrage, the tribal leaders have abandoned you. Who do you select as your new leader?</Italian>
+		<Spanish>You have moved away from Tribal Law. In outrage, the tribal leaders have abandoned you. Who do you select as your new leader?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_CIVIC_NOT_TRIBAL_LAW_ABSAROKE</Tag>
+		<English>Absaroke</English>
+		<French>Absaroke</French>
+		<German>Absaroke</German>
+		<Italian>Absaroke</Italian>
+		<Spanish>Absaroke</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_CIVIC_NOT_TRIBAL_LAW_HELP_ABSAROKE</Tag>
+		<English>[ICON_BULLET]Defender, Raider</English>
+		<French>[ICON_BULLET]Defender, Raider</French>
+		<German>[ICON_BULLET]Defender, Raider</German>
+		<Italian>[ICON_BULLET]Defender, Raider</Italian>
+		<Spanish>[ICON_BULLET]Defender, Raider</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_CIVIC_NOT_TRIBAL_LAW_NATANE</Tag>
+		<English>Natane</English>
+		<French>Natane</French>
+		<German>Natane</German>
+		<Italian>Natane</Italian>
+		<Spanish>Natane</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_CIVIC_NOT_TRIBAL_LAW_HELP_NATANE</Tag>
+		<English>[ICON_BULLET]Defender, Organized</English>
+		<French>[ICON_BULLET]Defender, Organized</French>
+		<German>[ICON_BULLET]Defender, Organized</German>
+		<Italian>[ICON_BULLET]Defender, Organized</Italian>
+		<Spanish>[ICON_BULLET]Defender, Organized</Spanish>
+	</TEXT>
+</Civ4GameText>

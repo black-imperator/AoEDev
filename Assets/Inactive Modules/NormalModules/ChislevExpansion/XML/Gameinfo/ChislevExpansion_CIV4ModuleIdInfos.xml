@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Basic Infos -->
+
+<Civ4ModuleIdInfos xmlns="x-schema:ChislevExpansion_CIV4GameInfoSchema.xml">
+	<ModuleIdInfos>
+		<ModuleIdInfo>
+			<Type>MODULE_CHISLEV_EXPANSION</Type>
+			<Description>TXT_KEY_MODULE_CHISLEV_EXPANSION</Description>
+		</ModuleIdInfo>
+	</ModuleIdInfos>
+</Civ4ModuleIdInfos>

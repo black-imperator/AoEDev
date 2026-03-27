@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Civic Infos -->
+<Civ4CivicInfos xmlns="x-schema:ChislevExpansion_CIV4GameInfoSchema.xml">
+	<CivicInfos>
+		<CivicInfo>		<!-- Tribal Law -->
+			<CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
+			<Type>CIVIC_TRIBAL_LAW</Type>
+			<Description>TXT_KEY_CIVIC_TRIBAL_LAW</Description>
+			<Strategy>TXT_KEY_CIVIC_TRIBAL_LAW_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_TRIBAL_LAW_HELP</Help>
+			<bForceOverwrite>1</bForceOverwrite>
+			<Button>Art/Modules/ChislevExpansion/Buttons/Tribal_Law_Button.dds</Button>
+			<TechPrereq>TECH_CODE_OF_LAWS</TechPrereq>
+			<iAnarchyLength>1</iAnarchyLength>
+			<Upkeep>UPKEEP_LOW</Upkeep>
+			<iAIWeight>75</iAIWeight>
+			<iNumCitiesMaintenanceModifier>-75</iNumCitiesMaintenanceModifier>
+			<CommerceModifiers>
+				<iCommerce>-5</iCommerce>
+				<iCommerce>-5</iCommerce>
+				<iCommerce>0</iCommerce>
+			</CommerceModifiers>
+			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_HEAD_CHIEF</WeLoveTheKing>
+			<PrereqCivilization>CIVILIZATION_CHISLEV</PrereqCivilization>
+		</CivicInfo>
+	</CivicInfos>
+</Civ4CivicInfos>

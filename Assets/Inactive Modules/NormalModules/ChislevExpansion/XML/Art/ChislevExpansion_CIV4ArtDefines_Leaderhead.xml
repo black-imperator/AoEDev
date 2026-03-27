@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Bart Muzzin (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Leaderhead art path information -->
+<Civ4ArtDefines xmlns="x-schema:ChislevExpansion_CIV4ArtDefinesSchema.xml">
+	<LeaderheadArtInfos>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_SHIMASANI</Type>
+			<Button>Art/Modules/ChislevExpansion/Buttons/Shimasani_Button.dds</Button>
+			<NIF>Art/Modules/ChislevExpansion/Leaderheads/Shimasani.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_SOYALA</Type>
+			<Button>Art/Modules/ChislevExpansion/Buttons/Soyala_Button.dds</Button>
+			<NIF>Art/Modules/ChislevExpansion/Leaderheads/Soyala.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_MOTSQUEH</Type>
+			<Button>Art/Modules/ChislevExpansion/Buttons/Motsqueh_Button.dds</Button>
+			<NIF>Art/Modules/ChislevExpansion/Leaderheads/Motsqueh.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_OSYKA</Type>
+			<Button>Art/Modules/ChislevExpansion/Buttons/Osyka_Button.dds</Button>
+			<NIF>Art/Modules/ChislevExpansion/Leaderheads/Osyka.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_ALOSAKA</Type>
+			<Button>Art/Modules/ChislevExpansion/Buttons/Alosaka_Button.dds</Button>
+			<NIF>Art/Modules/ChislevExpansion/Leaderheads/Alosaka.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_THE_COUNCIL</Type>
+			<Button>Art/Modules/ChislevExpansion/Buttons/The_Council_Button.dds</Button>
+			<NIF>Art/Modules/ChislevExpansion/Leaderheads/The_Council.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+	</LeaderheadArtInfos>
+</Civ4ArtDefines>

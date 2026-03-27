@@ -1,0 +1,41 @@
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Sanguo Schema -->
+<Schema xmlns="urn:schemas-microsoft-com:xml-data" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+	<ElementType name="Type" content="textOnly"/>
+	<ElementType name="Leader" content="textOnly"/>
+	<ElementType name="bTypeDependency" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bForceOverwrite" content="textOnly" dt:type="boolean"/>
+	<ElementType name="DependencyType" content="textOnly"/>
+	<ElementType name="AndDependencyTypes" content="eltOnly">
+		<element type="DependencyType" minOccurs="1"/>
+	</ElementType>
+	<ElementType name="OrDependencyTypes" content="eltOnly">
+		<element type="DependencyType" minOccurs="1"/>
+	</ElementType>
+	<ElementType name="TargetLeaderType" content="textOnly"/>
+	<ElementType name="iAttitudeChange" content="textOnly" dt:type="int"/>
+	<ElementType name="LeaderAttitudeChange" content="eltOnly">
+		<element type="TargetLeaderType"/>
+		<element type="iAttitudeChange"/>
+	</ElementType>
+	<ElementType name="LeaderAttitudeChanges" content="eltOnly">
+		<element type="LeaderAttitudeChange" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="LeaderRelationInfo" content="eltOnly" order="many">
+		<element type="Type"/>
+		<element type="bTypeDependency"/>
+		<element type="AndDependencyTypes"/>
+		<element type="OrDependencyTypes"/>
+		<element type="Leader"/>
+		<element type="LeaderAttitudeChanges"/>
+	</ElementType>
+	<ElementType name="LeaderRelationInfos" content="eltOnly">
+		<element type="LeaderRelationInfo" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="Civ4LeaderRelationInfos" content="eltOnly">
+		<element type="LeaderRelationInfos" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+</Schema>

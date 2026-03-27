@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_WORKSHOP</Tag>
+		<English>Totem Workshop</English>
+		<French>Totem Workshop</French>
+		<German>Totem Workshop</German>
+		<Italian>Totem Workshop</Italian>
+		<Spanish>Totem Workshop</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_WORKSHOP_PEDIA</Tag>
+		<English>The Chislev people believe in Totemism. Totemism is not a religion in and of itself, but the totem is a symbol of either a strong tribal bonding or a representation of either a deity or some religious or historical event. That said, while totems can be religious, the totems themselves are not worshipped, but used as a symbol for their beliefs.[NEWLINE][NEWLINE]Due to the tribal and religious importance of totems, many Chislev villages set up workshops dedicated to the making of totems. These totems are often made for their own village, but sometimes totems are exported to neighboring villages.</English>
+		<French>The Chislev people believe in Totemism. Totemism is not a religion in and of itself, but the totem is a symbol of either a strong tribal bonding or a representation of either a deity or some religious or historical event. That said, while totems can be religious, the totems themselves are not worshipped, but used as a symbol for their beliefs.[NEWLINE][NEWLINE]Due to the tribal and religious importance of totems, many Chislev villages set up workshops dedicated to the making of totems. These totems are often made for their own village, but sometimes totems are exported to neighboring villages.</French>
+		<German>The Chislev people believe in Totemism. Totemism is not a religion in and of itself, but the totem is a symbol of either a strong tribal bonding or a representation of either a deity or some religious or historical event. That said, while totems can be religious, the totems themselves are not worshipped, but used as a symbol for their beliefs.[NEWLINE][NEWLINE]Due to the tribal and religious importance of totems, many Chislev villages set up workshops dedicated to the making of totems. These totems are often made for their own village, but sometimes totems are exported to neighboring villages.</German>
+		<Italian>The Chislev people believe in Totemism. Totemism is not a religion in and of itself, but the totem is a symbol of either a strong tribal bonding or a representation of either a deity or some religious or historical event. That said, while totems can be religious, the totems themselves are not worshipped, but used as a symbol for their beliefs.[NEWLINE][NEWLINE]Due to the tribal and religious importance of totems, many Chislev villages set up workshops dedicated to the making of totems. These totems are often made for their own village, but sometimes totems are exported to neighboring villages.</Italian>
+		<Spanish>The Chislev people believe in Totemism. Totemism is not a religion in and of itself, but the totem is a symbol of either a strong tribal bonding or a representation of either a deity or some religious or historical event. That said, while totems can be religious, the totems themselves are not worshipped, but used as a symbol for their beliefs.[NEWLINE][NEWLINE]Due to the tribal and religious importance of totems, many Chislev villages set up workshops dedicated to the making of totems. These totems are often made for their own village, but sometimes totems are exported to neighboring villages.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_WORKSHOP_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Totem Workshop[COLOR_REVERT], which replaces the [LINK=BUILDING_ARTISAND_WORKSHOP]Artisan's Workshop[\LINK], is available at the Crafting technology rather than at Construction. It is cheaper to construct, but does not provide as large of a production boost.</English>
+		<French>The [COLOR_BUILDING_TEXT]Totem Workshop[COLOR_REVERT], which replaces the [LINK=BUILDING_ARTISAND_WORKSHOP]Artisan's Workshop[\LINK], is available at the Crafting technology rather than at Construction. It is cheaper to construct, but does not provide as large of a production boost.</French>
+		<German>The [COLOR_BUILDING_TEXT]Totem Workshop[COLOR_REVERT], which replaces the [LINK=BUILDING_ARTISAND_WORKSHOP]Artisan's Workshop[\LINK], is available at the Crafting technology rather than at Construction. It is cheaper to construct, but does not provide as large of a production boost.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Totem Workshop[COLOR_REVERT], which replaces the [LINK=BUILDING_ARTISAND_WORKSHOP]Artisan's Workshop[\LINK], is available at the Crafting technology rather than at Construction. It is cheaper to construct, but does not provide as large of a production boost.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Totem Workshop[COLOR_REVERT], which replaces the [LINK=BUILDING_ARTISAND_WORKSHOP]Artisan's Workshop[\LINK], is available at the Crafting technology rather than at Construction. It is cheaper to construct, but does not provide as large of a production boost.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_EAGLE</Tag>
+		<English>Totem of the Eagle</English>
+		<French>Totem of the Eagle</French>
+		<German>Totem of the Eagle</German>
+		<Italian>Totem of the Eagle</Italian>
+		<Spanish>Totem of the Eagle</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_EAGLE_PEDIA</Tag>
+		<English>The people of the Eagle Tribe are charismatic and compassionate. The Totem of the Eagle depicts acts of negotation between leaders and charity, with an overarching theme of flight. Viewing the totem instills a sense of goodness, hope, and clarity in oneself.</English>
+		<French>The people of the Eagle Tribe are charismatic and compassionate. The Totem of the Eagle depicts acts of negotation between leaders and charity, with an overarching theme of flight. Viewing the totem instills a sense of goodness, hope, and clarity in oneself.</French>
+		<German>The people of the Eagle Tribe are charismatic and compassionate. The Totem of the Eagle depicts acts of negotation between leaders and charity, with an overarching theme of flight. Viewing the totem instills a sense of goodness, hope, and clarity in oneself.</German>
+		<Italian>The people of the Eagle Tribe are charismatic and compassionate. The Totem of the Eagle depicts acts of negotation between leaders and charity, with an overarching theme of flight. Viewing the totem instills a sense of goodness, hope, and clarity in oneself.</Italian>
+		<Spanish>The people of the Eagle Tribe are charismatic and compassionate. The Totem of the Eagle depicts acts of negotation between leaders and charity, with an overarching theme of flight. Viewing the totem instills a sense of goodness, hope, and clarity in oneself.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_EAGLE_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Totem of the Eagle[COLOR_REVERT] provides the city with 2 [ICON_HAPPY]. Additionally, all units produced here will begin with the [LINK=PROMOTION_SENTRY]Sentry[\LINK] promotion, increasing their visibility.</English>
+		<French>The [COLOR_BUILDING_TEXT]Totem of the Eagle[COLOR_REVERT] provides the city with 2 [ICON_HAPPY]. Additionally, all units produced here will begin with the [LINK=PROMOTION_SENTRY]Sentry[\LINK] promotion, increasing their visibility.</French>
+		<German>The [COLOR_BUILDING_TEXT]Totem of the Eagle[COLOR_REVERT] provides the city with 2 [ICON_HAPPY]. Additionally, all units produced here will begin with the [LINK=PROMOTION_SENTRY]Sentry[\LINK] promotion, increasing their visibility.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Totem of the Eagle[COLOR_REVERT] provides the city with 2 [ICON_HAPPY]. Additionally, all units produced here will begin with the [LINK=PROMOTION_SENTRY]Sentry[\LINK] promotion, increasing their visibility.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Totem of the Eagle[COLOR_REVERT] provides the city with 2 [ICON_HAPPY]. Additionally, all units produced here will begin with the [LINK=PROMOTION_SENTRY]Sentry[\LINK] promotion, increasing their visibility.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_COYOTE</Tag>
+		<English>Totem of the Coyote</English>
+		<French>Totem of the Coyote</French>
+		<German>Totem of the Coyote</German>
+		<Italian>Totem of the Coyote</Italian>
+		<Spanish>Totem of the Coyote</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_COYOTE_PEDIA</Tag>
+		<English>The people of the Coyote Tribe are cunning and opportunistic pioneers. The Totem of the Coyote depicts acts of creativity, trickery, and exploration. Viewing the totem instills a sense of imagination, and a desire to strike out and explore.</English>
+		<French>The people of the Coyote Tribe are cunning and opportunistic pioneers. The Totem of the Coyote depicts acts of creativity, trickery, and exploration. Viewing the totem instills a sense of imagination, and a desire to strike out and explore.</French>
+		<German>The people of the Coyote Tribe are cunning and opportunistic pioneers. The Totem of the Coyote depicts acts of creativity, trickery, and exploration. Viewing the totem instills a sense of imagination, and a desire to strike out and explore.</German>
+		<Italian>The people of the Coyote Tribe are cunning and opportunistic pioneers. The Totem of the Coyote depicts acts of creativity, trickery, and exploration. Viewing the totem instills a sense of imagination, and a desire to strike out and explore.</Italian>
+		<Spanish>The people of the Coyote Tribe are cunning and opportunistic pioneers. The Totem of the Coyote depicts acts of creativity, trickery, and exploration. Viewing the totem instills a sense of imagination, and a desire to strike out and explore.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_COYOTE_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Totem of the Coyote[COLOR_REVERT] provides the city with 2 [ICON_CULTURE] and 2 [ICON_FOOD]. This totem serves as a frontier booster, allowing the Chislev to quickly expand their borders.</English>
+		<French>The [COLOR_BUILDING_TEXT]Totem of the Coyote[COLOR_REVERT] provides the city with 2 [ICON_CULTURE] and 2 [ICON_FOOD]. This totem serves as a frontier booster, allowing the Chislev to quickly expand their borders.</French>
+		<German>The [COLOR_BUILDING_TEXT]Totem of the Coyote[COLOR_REVERT] provides the city with 2 [ICON_CULTURE] and 2 [ICON_FOOD]. This totem serves as a frontier booster, allowing the Chislev to quickly expand their borders.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Totem of the Coyote[COLOR_REVERT] provides the city with 2 [ICON_CULTURE] and 2 [ICON_FOOD]. This totem serves as a frontier booster, allowing the Chislev to quickly expand their borders.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Totem of the Coyote[COLOR_REVERT] provides the city with 2 [ICON_CULTURE] and 2 [ICON_FOOD]. This totem serves as a frontier booster, allowing the Chislev to quickly expand their borders.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_BEAR</Tag>
+		<English>Totem of the Bear</English>
+		<French>Totem of the Bear</French>
+		<German>Totem of the Bear</German>
+		<Italian>Totem of the Bear</Italian>
+		<Spanish>Totem of the Bear</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_BEAR_PEDIA</Tag>
+		<English>Members of the Bear Tribe are hardy and powerful warriors. The Totem of the Bear depicts imagery of past Chislev battles, and the brave and powerful warriors who fought in those battles. Viewing the totem instills a sense of bravery and strength in oneself.</English>
+		<French>Members of the Bear Tribe are hardy and powerful warriors. The Totem of the Bear depicts imagery of past Chislev battles, and the brave and powerful warriors who fought in those battles. Viewing the totem instills a sense of bravery and strength in oneself.</French>
+		<German>Members of the Bear Tribe are hardy and powerful warriors. The Totem of the Bear depicts imagery of past Chislev battles, and the brave and powerful warriors who fought in those battles. Viewing the totem instills a sense of bravery and strength in oneself.</German>
+		<Italian>Members of the Bear Tribe are hardy and powerful warriors. The Totem of the Bear depicts imagery of past Chislev battles, and the brave and powerful warriors who fought in those battles. Viewing the totem instills a sense of bravery and strength in oneself.</Italian>
+		<Spanish>Members of the Bear Tribe are hardy and powerful warriors. The Totem of the Bear depicts imagery of past Chislev battles, and the brave and powerful warriors who fought in those battles. Viewing the totem instills a sense of bravery and strength in oneself.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_BEAR_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Totem of the Bear[COLOR_REVERT] provides the city with 2 [ICON_HEALTHY] as well as granting all units produced in the city the [LINK=PROMOTION_STRONG]Strong[\LINK] promotion, which gives the unit +1 strength. Your workers will also gain the [LINK=PROMOTION_HARDY1]Hardy I[\LINK] promotion, and if already gain that promotion from another means, they gain [LINK=PROMOTION_HARDY2]Hardy II[\LINK], instead.</English>
+		<French>The [COLOR_BUILDING_TEXT]Totem of the Bear[COLOR_REVERT] provides the city with 2 [ICON_HEALTHY] as well as granting all units produced in the city the [LINK=PROMOTION_STRONG]Strong[\LINK] promotion, which gives the unit +1 strength. Your workers will also gain the [LINK=PROMOTION_HARDY1]Hardy I[\LINK] promotion, and if already gain that promotion from another means, they gain [LINK=PROMOTION_HARDY2]Hardy II[\LINK], instead.</French>
+		<German>The [COLOR_BUILDING_TEXT]Totem of the Bear[COLOR_REVERT] provides the city with 2 [ICON_HEALTHY] as well as granting all units produced in the city the [LINK=PROMOTION_STRONG]Strong[\LINK] promotion, which gives the unit +1 strength. Your workers will also gain the [LINK=PROMOTION_HARDY1]Hardy I[\LINK] promotion, and if already gain that promotion from another means, they gain [LINK=PROMOTION_HARDY2]Hardy II[\LINK], instead.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Totem of the Bear[COLOR_REVERT] provides the city with 2 [ICON_HEALTHY] as well as granting all units produced in the city the [LINK=PROMOTION_STRONG]Strong[\LINK] promotion, which gives the unit +1 strength. Your workers will also gain the [LINK=PROMOTION_HARDY1]Hardy I[\LINK] promotion, and if already gain that promotion from another means, they gain [LINK=PROMOTION_HARDY2]Hardy II[\LINK], instead.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Totem of the Bear[COLOR_REVERT] provides the city with 2 [ICON_HEALTHY] as well as granting all units produced in the city the [LINK=PROMOTION_STRONG]Strong[\LINK] promotion, which gives the unit +1 strength. Your workers will also gain the [LINK=PROMOTION_HARDY1]Hardy I[\LINK] promotion, and if already gain that promotion from another means, they gain [LINK=PROMOTION_HARDY2]Hardy II[\LINK], instead.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_BEAR_HELP</Tag>
+		<English>[ICON_BULLET]Free [COLOR_HIGHLIGHT_TEXT]Hardy[COLOR_REVERT] Promotion for Units Built in this City</English>
+		<French>[ICON_BULLET]Free [COLOR_HIGHLIGHT_TEXT]Hardy[COLOR_REVERT] Promotion for Units Built in this City</French>
+		<German>[ICON_BULLET]Free [COLOR_HIGHLIGHT_TEXT]Hardy[COLOR_REVERT] Promotion for Units Built in this City</German>
+		<Italian>[ICON_BULLET]Free [COLOR_HIGHLIGHT_TEXT]Hardy[COLOR_REVERT] Promotion for Units Built in this City</Italian>
+		<Spanish>[ICON_BULLET]Free [COLOR_HIGHLIGHT_TEXT]Hardy[COLOR_REVERT] Promotion for Units Built in this City</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_SERPENT</Tag>
+		<English>Totem of the Serpent</English>
+		<French>Totem of the Serpent</French>
+		<German>Totem of the Serpent</German>
+		<Italian>Totem of the Serpent</Italian>
+		<Spanish>Totem of the Serpent</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_SERPENT_PEDIA</Tag>
+		<English>The Totem of the Serpent serves to remind the tribe of what has been lost and those responsible. The Serpent Tribe never forgets a wrong, and this totem stands as a testament of that mentality. The totem depicts orcs committing horrific acts against the Chislev. Viewing the totem instills a sense of anger and disgust.</English>
+		<French>The Totem of the Serpent serves to remind the tribe of what has been lost and those responsible. The Serpent Tribe never forgets a wrong, and this totem stands as a testament of that mentality. The totem depicts orcs committing horrific acts against the Chislev. Viewing the totem instills a sense of anger and disgust.</French>
+		<German>The Totem of the Serpent serves to remind the tribe of what has been lost and those responsible. The Serpent Tribe never forgets a wrong, and this totem stands as a testament of that mentality. The totem depicts orcs committing horrific acts against the Chislev. Viewing the totem instills a sense of anger and disgust.</German>
+		<Italian>The Totem of the Serpent serves to remind the tribe of what has been lost and those responsible. The Serpent Tribe never forgets a wrong, and this totem stands as a testament of that mentality. The totem depicts orcs committing horrific acts against the Chislev. Viewing the totem instills a sense of anger and disgust.</Italian>
+		<Spanish>The Totem of the Serpent serves to remind the tribe of what has been lost and those responsible. The Serpent Tribe never forgets a wrong, and this totem stands as a testament of that mentality. The totem depicts orcs committing horrific acts against the Chislev. Viewing the totem instills a sense of anger and disgust.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_SERPENT_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Totem of the Serpent[COLOR_REVERT] provides units produced in the city with two bonus experience points and the [LINK=PROMOTION_ORC_SLAYING]Orc Slaying[\LINK] promotion, which increases their power against any unit with the "Orcish" promotion by 30%. It also reduces war [ICON_UNHAPPY] in Serpent Tribe cities by 50%.</English>
+		<French>The [COLOR_BUILDING_TEXT]Totem of the Serpent[COLOR_REVERT] provides units produced in the city with two bonus experience points and the [LINK=PROMOTION_ORC_SLAYING]Orc Slaying[\LINK] promotion, which increases their power against any unit with the "Orcish" promotion by 30%. It also reduces war [ICON_UNHAPPY] in Serpent Tribe cities by 50%.</French>
+		<German>The [COLOR_BUILDING_TEXT]Totem of the Serpent[COLOR_REVERT] provides units produced in the city with two bonus experience points and the [LINK=PROMOTION_ORC_SLAYING]Orc Slaying[\LINK] promotion, which increases their power against any unit with the "Orcish" promotion by 30%. It also reduces war [ICON_UNHAPPY] in Serpent Tribe cities by 50%.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Totem of the Serpent[COLOR_REVERT] provides units produced in the city with two bonus experience points and the [LINK=PROMOTION_ORC_SLAYING]Orc Slaying[\LINK] promotion, which increases their power against any unit with the "Orcish" promotion by 30%. It also reduces war [ICON_UNHAPPY] in Serpent Tribe cities by 50%.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Totem of the Serpent[COLOR_REVERT] provides units produced in the city with two bonus experience points and the [LINK=PROMOTION_ORC_SLAYING]Orc Slaying[\LINK] promotion, which increases their power against any unit with the "Orcish" promotion by 30%. It also reduces war [ICON_UNHAPPY] in Serpent Tribe cities by 50%.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_TORTOISE</Tag>
+		<English>Totem of the Tortoise</English>
+		<French>Totem of the Tortoise</French>
+		<German>Totem of the Tortoise</German>
+		<Italian>Totem of the Tortoise</Italian>
+		<Spanish>Totem of the Tortoise</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_TORTOISE_PEDIA</Tag>
+		<English>The people of the Tortoise Tribe are wise and patient, but also cautious and isolationist. The imagery of the Tortoise Totem depicts acts of meditation in solitude. Viewing the totem instills in oneself a sense of safety and enlightenment.</English>
+		<French>The people of the Tortoise Tribe are wise and patient, but also cautious and isolationist. The imagery of the Tortoise Totem depicts acts of meditation in solitude. Viewing the totem instills in oneself a sense of safety and enlightenment.</French>
+		<German>The people of the Tortoise Tribe are wise and patient, but also cautious and isolationist. The imagery of the Tortoise Totem depicts acts of meditation in solitude. Viewing the totem instills in oneself a sense of safety and enlightenment.</German>
+		<Italian>The people of the Tortoise Tribe are wise and patient, but also cautious and isolationist. The imagery of the Tortoise Totem depicts acts of meditation in solitude. Viewing the totem instills in oneself a sense of safety and enlightenment.</Italian>
+		<Spanish>The people of the Tortoise Tribe are wise and patient, but also cautious and isolationist. The imagery of the Tortoise Totem depicts acts of meditation in solitude. Viewing the totem instills in oneself a sense of safety and enlightenment.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_TORTOISE_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Totem of the Tortoise[COLOR_REVERT] provides a number of benefits. It gives the city a 10% defense boost and 2 [ICON_GREATPEOPLE]. The enemies of the Tortoise Tribe have mixed feelings about the killing of such a pacificistic people, so enemies suffer an extra 5% war [ICON_UNHAPPY] against the Chislev. Additionally, all units built here will start with the [LINK=PROMOTION_MAGIC_RESISTANCE]Magic Resistance[\LINK] promotion, which provides a 20% resistance to fire, cold, death, and lightning damage, as well as a 20% resistance to spells.</English>
+		<French>The [COLOR_BUILDING_TEXT]Totem of the Tortoise[COLOR_REVERT] provides a number of benefits. It gives the city a 10% defense boost and 2 [ICON_GREATPEOPLE]. The enemies of the Tortoise Tribe have mixed feelings about the killing of such a pacificistic people, so enemies suffer an extra 5% war [ICON_UNHAPPY] against the Chislev. Additionally, all units built here will start with the [LINK=PROMOTION_MAGIC_RESISTANCE]Magic Resistance[\LINK] promotion, which provides a 20% resistance to fire, cold, death, and lightning damage, as well as a 20% resistance to spells.</French>
+		<German>The [COLOR_BUILDING_TEXT]Totem of the Tortoise[COLOR_REVERT] provides a number of benefits. It gives the city a 10% defense boost and 2 [ICON_GREATPEOPLE]. The enemies of the Tortoise Tribe have mixed feelings about the killing of such a pacificistic people, so enemies suffer an extra 5% war [ICON_UNHAPPY] against the Chislev. Additionally, all units built here will start with the [LINK=PROMOTION_MAGIC_RESISTANCE]Magic Resistance[\LINK] promotion, which provides a 20% resistance to fire, cold, death, and lightning damage, as well as a 20% resistance to spells.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Totem of the Tortoise[COLOR_REVERT] provides a number of benefits. It gives the city a 10% defense boost and 2 [ICON_GREATPEOPLE]. The enemies of the Tortoise Tribe have mixed feelings about the killing of such a pacificistic people, so enemies suffer an extra 5% war [ICON_UNHAPPY] against the Chislev. Additionally, all units built here will start with the [LINK=PROMOTION_MAGIC_RESISTANCE]Magic Resistance[\LINK] promotion, which provides a 20% resistance to fire, cold, death, and lightning damage, as well as a 20% resistance to spells.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Totem of the Tortoise[COLOR_REVERT] provides a number of benefits. It gives the city a 10% defense boost and 2 [ICON_GREATPEOPLE]. The enemies of the Tortoise Tribe have mixed feelings about the killing of such a pacificistic people, so enemies suffer an extra 5% war [ICON_UNHAPPY] against the Chislev. Additionally, all units built here will start with the [LINK=PROMOTION_MAGIC_RESISTANCE]Magic Resistance[\LINK] promotion, which provides a 20% resistance to fire, cold, death, and lightning damage, as well as a 20% resistance to spells.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_EAGLE_REPLICA</Tag>
+		<English>Totem of the Eagle (Replica)</English>
+		<French>Totem of the Eagle (Replica)</French>
+		<German>Totem of the Eagle (Replica)</German>
+		<Italian>Totem of the Eagle (Replica)</Italian>
+		<Spanish>Totem of the Eagle (Replica)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_COYOTE_REPLICA</Tag>
+		<English>Totem of the Coyote (Replica)</English>
+		<French>Totem of the Coyote (Replica)</French>
+		<German>Totem of the Coyote (Replica)</German>
+		<Italian>Totem of the Coyote (Replica)</Italian>
+		<Spanish>Totem of the Coyote (Replica)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_BEAR_REPLICA</Tag>
+		<English>Totem of the Bear (Replica)</English>
+		<French>Totem of the Bear (Replica)</French>
+		<German>Totem of the Bear (Replica)</German>
+		<Italian>Totem of the Bear (Replica)</Italian>
+		<Spanish>Totem of the Bear (Replica)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_SERPENT_REPLICA</Tag>
+		<English>Totem of the Serpent (Replica)</English>
+		<French>Totem of the Serpent (Replica)</French>
+		<German>Totem of the Serpent (Replica)</German>
+		<Italian>Totem of the Serpent (Replica)</Italian>
+		<Spanish>Totem of the Serpent (Replica)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_TORTOISE_REPLICA</Tag>
+		<English>Totem of the Tortoise (Replica)</English>
+		<French>Totem of the Tortoise (Replica)</French>
+		<German>Totem of the Tortoise (Replica)</German>
+		<Italian>Totem of the Tortoise (Replica)</Italian>
+		<Spanish>Totem of the Tortoise (Replica)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_JUNGLE</Tag>
+		<English>Totem of the Jungle</English>
+		<French>Totem of the Jungle</French>
+		<German>Totem of the Jungle</German>
+		<Italian>Totem of the Jungle</Italian>
+		<Spanish>Totem of the Jungle</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_JUNGLE_REPLICA</Tag>
+		<English>Totem of the Jungle (Replica)</English>
+		<French>Totem of the Jungle (Replica)</French>
+		<German>Totem of the Jungle (Replica)</German>
+		<Italian>Totem of the Jungle (Replica)</Italian>
+		<Spanish>Totem of the Jungle (Replica)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_JUNGLE_PEDIA</Tag>
+		<English>Many Chislev tribes once lived in the jungle before being forcefully driven off by the orcs. To those Chislev who lived in the jungles and the forests, they became one with the nature there, learning to live off of the land. They became particularly adapt at using this terrain to their advantage in battle.</English>
+		<French>Many Chislev tribes once lived in the jungle before being forcefully driven off by the orcs. To those Chislev who lived in the jungles and the forests, they became one with the nature there, learning to live off of the land. They became particularly adapt at using this terrain to their advantage in battle.</French>
+		<German>Many Chislev tribes once lived in the jungle before being forcefully driven off by the orcs. To those Chislev who lived in the jungles and the forests, they became one with the nature there, learning to live off of the land. They became particularly adapt at using this terrain to their advantage in battle.</German>
+		<Italian>Many Chislev tribes once lived in the jungle before being forcefully driven off by the orcs. To those Chislev who lived in the jungles and the forests, they became one with the nature there, learning to live off of the land. They became particularly adapt at using this terrain to their advantage in battle.</Italian>
+		<Spanish>Many Chislev tribes once lived in the jungle before being forcefully driven off by the orcs. To those Chislev who lived in the jungles and the forests, they became one with the nature there, learning to live off of the land. They became particularly adapt at using this terrain to their advantage in battle.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_JUNGLE_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Totem of the Jungle[COLOR_REVERT], which replaces the [LINK=BUILDING_TEMPLE_OF_LEAVES]Temple of the Leaves[\LINK], provides +1 [ICON_FOOD], [ICON_PRODUCTION], and [ICON_COMMERCE] in Jungles, giving them the same yields as an Ancient Forest. To compensate for the Jungle's health penalty, this totem provides +4 [ICON_HEALTHY] instead of +2. Arcane and Recon units produced here start with the [LINK=PROMOTION_SPIRIT_OF_THE_JUNGLE]Spirit of the Jungle[\LINK] promotion. This gives them +30% strength and double movement in Jungles. For arcane units, this allows them to cast [LINK=SPELL_BLOOM]Bloom[\LINK], [LINK=SPELL_RECLAIM_THE_JUNGLE]Reclaim the Jungle[\LINK], and [LINK=SPELL_SUMMON_TIGER]Summon Tiger[\LINK] with [LINK=PROMOTION_CHANNELING2]Channeling II[\LINK]. The combination of Bloom and Reclaim the Jungle will allow the Chislev to slowly build jungles in the area around their Totem of the Jungle villages.</English>
+		<French>The [COLOR_BUILDING_TEXT]Totem of the Jungle[COLOR_REVERT], which replaces the [LINK=BUILDING_TEMPLE_OF_LEAVES]Temple of the Leaves[\LINK], provides +1 [ICON_FOOD], [ICON_PRODUCTION], and [ICON_COMMERCE] in Jungles, giving them the same yields as an Ancient Forest. To compensate for the Jungle's health penalty, this totem provides +4 [ICON_HEALTHY] instead of +2. Arcane and Recon units produced here start with the [LINK=PROMOTION_SPIRIT_OF_THE_JUNGLE]Spirit of the Jungle[\LINK] promotion. This gives them +30% strength and double movement in Jungles. For arcane units, this allows them to cast [LINK=SPELL_BLOOM]Bloom[\LINK], [LINK=SPELL_RECLAIM_THE_JUNGLE]Reclaim the Jungle[\LINK], and [LINK=SPELL_SUMMON_TIGER]Summon Tiger[\LINK] with [LINK=PROMOTION_CHANNELING2]Channeling II[\LINK]. The combination of Bloom and Reclaim the Jungle will allow the Chislev to slowly build jungles in the area around their Totem of the Jungle villages.</French>
+		<German>The [COLOR_BUILDING_TEXT]Totem of the Jungle[COLOR_REVERT], which replaces the [LINK=BUILDING_TEMPLE_OF_LEAVES]Temple of the Leaves[\LINK], provides +1 [ICON_FOOD], [ICON_PRODUCTION], and [ICON_COMMERCE] in Jungles, giving them the same yields as an Ancient Forest. To compensate for the Jungle's health penalty, this totem provides +4 [ICON_HEALTHY] instead of +2. Arcane and Recon units produced here start with the [LINK=PROMOTION_SPIRIT_OF_THE_JUNGLE]Spirit of the Jungle[\LINK] promotion. This gives them +30% strength and double movement in Jungles. For arcane units, this allows them to cast [LINK=SPELL_BLOOM]Bloom[\LINK], [LINK=SPELL_RECLAIM_THE_JUNGLE]Reclaim the Jungle[\LINK], and [LINK=SPELL_SUMMON_TIGER]Summon Tiger[\LINK] with [LINK=PROMOTION_CHANNELING2]Channeling II[\LINK]. The combination of Bloom and Reclaim the Jungle will allow the Chislev to slowly build jungles in the area around their Totem of the Jungle villages.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Totem of the Jungle[COLOR_REVERT], which replaces the [LINK=BUILDING_TEMPLE_OF_LEAVES]Temple of the Leaves[\LINK], provides +1 [ICON_FOOD], [ICON_PRODUCTION], and [ICON_COMMERCE] in Jungles, giving them the same yields as an Ancient Forest. To compensate for the Jungle's health penalty, this totem provides +4 [ICON_HEALTHY] instead of +2. Arcane and Recon units produced here start with the [LINK=PROMOTION_SPIRIT_OF_THE_JUNGLE]Spirit of the Jungle[\LINK] promotion. This gives them +30% strength and double movement in Jungles. For arcane units, this allows them to cast [LINK=SPELL_BLOOM]Bloom[\LINK], [LINK=SPELL_RECLAIM_THE_JUNGLE]Reclaim the Jungle[\LINK], and [LINK=SPELL_SUMMON_TIGER]Summon Tiger[\LINK] with [LINK=PROMOTION_CHANNELING2]Channeling II[\LINK]. The combination of Bloom and Reclaim the Jungle will allow the Chislev to slowly build jungles in the area around their Totem of the Jungle villages.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Totem of the Jungle[COLOR_REVERT], which replaces the [LINK=BUILDING_TEMPLE_OF_LEAVES]Temple of the Leaves[\LINK], provides +1 [ICON_FOOD], [ICON_PRODUCTION], and [ICON_COMMERCE] in Jungles, giving them the same yields as an Ancient Forest. To compensate for the Jungle's health penalty, this totem provides +4 [ICON_HEALTHY] instead of +2. Arcane and Recon units produced here start with the [LINK=PROMOTION_SPIRIT_OF_THE_JUNGLE]Spirit of the Jungle[\LINK] promotion. This gives them +30% strength and double movement in Jungles. For arcane units, this allows them to cast [LINK=SPELL_BLOOM]Bloom[\LINK], [LINK=SPELL_RECLAIM_THE_JUNGLE]Reclaim the Jungle[\LINK], and [LINK=SPELL_SUMMON_TIGER]Summon Tiger[\LINK] with [LINK=PROMOTION_CHANNELING2]Channeling II[\LINK]. The combination of Bloom and Reclaim the Jungle will allow the Chislev to slowly build jungles in the area around their Totem of the Jungle villages.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_EARTH</Tag>
+		<English>Totem of the Earth</English>
+		<French>Totem of the Earth</French>
+		<German>Totem of the Earth</German>
+		<Italian>Totem of the Earth</Italian>
+		<Spanish>Totem of the Earth</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_EARTH_REPLICA</Tag>
+		<English>Totem of the Earth (Replica)</English>
+		<French>Totem of the Earth (Replica)</French>
+		<German>Totem of the Earth (Replica)</German>
+		<Italian>Totem of the Earth (Replica)</Italian>
+		<Spanish>Totem of the Earth (Replica)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_EARTH_PEDIA</Tag>
+		<English>Some Chislev have made a living in the hills, whether it be because they became miners, mushroom farmers, or perhaps because they just enjoyed the scenery. These Chislev have become particularly adept at battling in the hills.</English>
+		<French>Some Chislev have made a living in the hills, whether it be because they became miners, mushroom farmers, or perhaps because they just enjoyed the scenery. These Chislev have become particularly adept at battling in the hills.</French>
+		<German>Some Chislev have made a living in the hills, whether it be because they became miners, mushroom farmers, or perhaps because they just enjoyed the scenery. These Chislev have become particularly adept at battling in the hills.</German>
+		<Italian>Some Chislev have made a living in the hills, whether it be because they became miners, mushroom farmers, or perhaps because they just enjoyed the scenery. These Chislev have become particularly adept at battling in the hills.</Italian>
+		<Spanish>Some Chislev have made a living in the hills, whether it be because they became miners, mushroom farmers, or perhaps because they just enjoyed the scenery. These Chislev have become particularly adept at battling in the hills.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_EARTH_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Totem of the Earth[COLOR_REVERT], which replaces the [LINK=BUILDING_TEMPLE_OF_KILMORPH]Temple of Kilmorph[\LINK], gives +4 [ICON_GOLD] instead of +2 and provides +2 [ICON_PRODUCTION] on Peaks. Arcane units produced here start with the [LINK=PROMOTION_SPIRIT_OF_THE_EARTH]Spirit of the Earth[\LINK] promotion, allowing them to cast [LINK=SPELL_SHIELD_OF_FAITH]Shield of Faith[\LINK] and [LINK=SPELL_BOSOM2]Earth's Bosom[\LINK] with [LINK=PROMOTION_CHANNELING2]Channeling II[\LINK], and giving them +10% Hills attack and +15% Hills defense.</English>
+		<French>The [COLOR_BUILDING_TEXT]Totem of the Earth[COLOR_REVERT], which replaces the [LINK=BUILDING_TEMPLE_OF_KILMORPH]Temple of Kilmorph[\LINK], gives +4 [ICON_GOLD] instead of +2 and provides +2 [ICON_PRODUCTION] on Peaks. Arcane units produced here start with the [LINK=PROMOTION_SPIRIT_OF_THE_EARTH]Spirit of the Earth[\LINK] promotion, allowing them to cast [LINK=SPELL_SHIELD_OF_FAITH]Shield of Faith[\LINK] and [LINK=SPELL_BOSOM2]Earth's Bosom[\LINK] with [LINK=PROMOTION_CHANNELING2]Channeling II[\LINK], and giving them +10% Hills attack and +15% Hills defense.</French>
+		<German>The [COLOR_BUILDING_TEXT]Totem of the Earth[COLOR_REVERT], which replaces the [LINK=BUILDING_TEMPLE_OF_KILMORPH]Temple of Kilmorph[\LINK], gives +4 [ICON_GOLD] instead of +2 and provides +2 [ICON_PRODUCTION] on Peaks. Arcane units produced here start with the [LINK=PROMOTION_SPIRIT_OF_THE_EARTH]Spirit of the Earth[\LINK] promotion, allowing them to cast [LINK=SPELL_SHIELD_OF_FAITH]Shield of Faith[\LINK] and [LINK=SPELL_BOSOM2]Earth's Bosom[\LINK] with [LINK=PROMOTION_CHANNELING2]Channeling II[\LINK], and giving them +10% Hills attack and +15% Hills defense.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Totem of the Earth[COLOR_REVERT], which replaces the [LINK=BUILDING_TEMPLE_OF_KILMORPH]Temple of Kilmorph[\LINK], gives +4 [ICON_GOLD] instead of +2 and provides +2 [ICON_PRODUCTION] on Peaks. Arcane units produced here start with the [LINK=PROMOTION_SPIRIT_OF_THE_EARTH]Spirit of the Earth[\LINK] promotion, allowing them to cast [LINK=SPELL_SHIELD_OF_FAITH]Shield of Faith[\LINK] and [LINK=SPELL_BOSOM2]Earth's Bosom[\LINK] with [LINK=PROMOTION_CHANNELING2]Channeling II[\LINK], and giving them +10% Hills attack and +15% Hills defense.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Totem of the Earth[COLOR_REVERT], which replaces the [LINK=BUILDING_TEMPLE_OF_KILMORPH]Temple of Kilmorph[\LINK], gives +4 [ICON_GOLD] instead of +2 and provides +2 [ICON_PRODUCTION] on Peaks. Arcane units produced here start with the [LINK=PROMOTION_SPIRIT_OF_THE_EARTH]Spirit of the Earth[\LINK] promotion, allowing them to cast [LINK=SPELL_SHIELD_OF_FAITH]Shield of Faith[\LINK] and [LINK=SPELL_BOSOM2]Earth's Bosom[\LINK] with [LINK=PROMOTION_CHANNELING2]Channeling II[\LINK], and giving them +10% Hills attack and +15% Hills defense.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_SEA</Tag>
+		<English>Totem of the Sea</English>
+		<French>Totem of the Sea</French>
+		<German>Totem of the Sea</German>
+		<Italian>Totem of the Sea</Italian>
+		<Spanish>Totem of the Sea</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_SEA_REPLICA</Tag>
+		<English>Totem of the Sea (Replica)</English>
+		<French>Totem of the Sea (Replica)</French>
+		<German>Totem of the Sea (Replica)</German>
+		<Italian>Totem of the Sea (Replica)</Italian>
+		<Spanish>Totem of the Sea (Replica)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_SEA_PEDIA</Tag>
+		<English>While the Chislev are not known as a seafaring people, there are exceptions to that rule. There are some tribes who, when they ran out of game to hunt on the land, turned to the sea, which they found as a more reliable food source. These tribes grew to depend on the sea, and revere it.</English>
+		<French>While the Chislev are not known as a seafaring people, there are exceptions to that rule. There are some tribes who, when they ran out of game to hunt on the land, turned to the sea, which they found as a more reliable food source. These tribes grew to depend on the sea, and revere it.</French>
+		<German>While the Chislev are not known as a seafaring people, there are exceptions to that rule. There are some tribes who, when they ran out of game to hunt on the land, turned to the sea, which they found as a more reliable food source. These tribes grew to depend on the sea, and revere it.</German>
+		<Italian>While the Chislev are not known as a seafaring people, there are exceptions to that rule. There are some tribes who, when they ran out of game to hunt on the land, turned to the sea, which they found as a more reliable food source. These tribes grew to depend on the sea, and revere it.</Italian>
+		<Spanish>While the Chislev are not known as a seafaring people, there are exceptions to that rule. There are some tribes who, when they ran out of game to hunt on the land, turned to the sea, which they found as a more reliable food source. These tribes grew to depend on the sea, and revere it.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_SEA_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Totem of the Sea[COLOR_REVERT], which replaces the [LINK=BUILDING_TEMPLE_OF_THE_OVERLORDS]Temple of the Overlords[\LINK], provides 5 [ICON_CULTURE] instead of 3, and +1 [ICON_FOOD] for water tiles. Further, to compensate for not being able to build the [LINK=BUILDING_SHIPYARD]Shipyard[\LINK], this totem increases naval build speed by +15% and provides +2 XP to naval units. When combined with the [LINK=BUILDING_WARCHIEF_HARBOR]Warchief's Harbor[\LINK], a city with both is just as good as having a Shipyard. Arcane units produced here start with the [LINK=PROMOTION_SPIRIT_OF_THE_SEA]Spirit of the Sea[\LINK] promotion, allowing them to cast [LINK=SPELL_TSUNAMI]Tsunami[\LINK] with [LINK=PROMOTION_CHANNELING2]Channeling II[\LINK]. This totem comes with an additional restriction that both it and its replica totems must be on the coast. This can make it somewhat difficult to efficiently place the source totem for maximum results.</English>
+		<French>The [COLOR_BUILDING_TEXT]Totem of the Sea[COLOR_REVERT], which replaces the [LINK=BUILDING_TEMPLE_OF_THE_OVERLORDS]Temple of the Overlords[\LINK], provides 5 [ICON_CULTURE] instead of 3, and +1 [ICON_FOOD] for water tiles. Further, to compensate for not being able to build the [LINK=BUILDING_SHIPYARD]Shipyard[\LINK], this totem increases naval build speed by +15% and provides +2 XP to naval units. When combined with the [LINK=BUILDING_WARCHIEF_HARBOR]Warchief's Harbor[\LINK], a city with both is just as good as having a Shipyard. Arcane units produced here start with the [LINK=PROMOTION_SPIRIT_OF_THE_SEA]Spirit of the Sea[\LINK] promotion, allowing them to cast [LINK=SPELL_TSUNAMI]Tsunami[\LINK] with [LINK=PROMOTION_CHANNELING2]Channeling II[\LINK]. This totem comes with an additional restriction that both it and its replica totems must be on the coast. This can make it somewhat difficult to efficiently place the source totem for maximum results.</French>
+		<German>The [COLOR_BUILDING_TEXT]Totem of the Sea[COLOR_REVERT], which replaces the [LINK=BUILDING_TEMPLE_OF_THE_OVERLORDS]Temple of the Overlords[\LINK], provides 5 [ICON_CULTURE] instead of 3, and +1 [ICON_FOOD] for water tiles. Further, to compensate for not being able to build the [LINK=BUILDING_SHIPYARD]Shipyard[\LINK], this totem increases naval build speed by +15% and provides +2 XP to naval units. When combined with the [LINK=BUILDING_WARCHIEF_HARBOR]Warchief's Harbor[\LINK], a city with both is just as good as having a Shipyard. Arcane units produced here start with the [LINK=PROMOTION_SPIRIT_OF_THE_SEA]Spirit of the Sea[\LINK] promotion, allowing them to cast [LINK=SPELL_TSUNAMI]Tsunami[\LINK] with [LINK=PROMOTION_CHANNELING2]Channeling II[\LINK]. This totem comes with an additional restriction that both it and its replica totems must be on the coast. This can make it somewhat difficult to efficiently place the source totem for maximum results.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Totem of the Sea[COLOR_REVERT], which replaces the [LINK=BUILDING_TEMPLE_OF_THE_OVERLORDS]Temple of the Overlords[\LINK], provides 5 [ICON_CULTURE] instead of 3, and +1 [ICON_FOOD] for water tiles. Further, to compensate for not being able to build the [LINK=BUILDING_SHIPYARD]Shipyard[\LINK], this totem increases naval build speed by +15% and provides +2 XP to naval units. When combined with the [LINK=BUILDING_WARCHIEF_HARBOR]Warchief's Harbor[\LINK], a city with both is just as good as having a Shipyard. Arcane units produced here start with the [LINK=PROMOTION_SPIRIT_OF_THE_SEA]Spirit of the Sea[\LINK] promotion, allowing them to cast [LINK=SPELL_TSUNAMI]Tsunami[\LINK] with [LINK=PROMOTION_CHANNELING2]Channeling II[\LINK]. This totem comes with an additional restriction that both it and its replica totems must be on the coast. This can make it somewhat difficult to efficiently place the source totem for maximum results.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Totem of the Sea[COLOR_REVERT], which replaces the [LINK=BUILDING_TEMPLE_OF_THE_OVERLORDS]Temple of the Overlords[\LINK], provides 5 [ICON_CULTURE] instead of 3, and +1 [ICON_FOOD] for water tiles. Further, to compensate for not being able to build the [LINK=BUILDING_SHIPYARD]Shipyard[\LINK], this totem increases naval build speed by +15% and provides +2 XP to naval units. When combined with the [LINK=BUILDING_WARCHIEF_HARBOR]Warchief's Harbor[\LINK], a city with both is just as good as having a Shipyard. Arcane units produced here start with the [LINK=PROMOTION_SPIRIT_OF_THE_SEA]Spirit of the Sea[\LINK] promotion, allowing them to cast [LINK=SPELL_TSUNAMI]Tsunami[\LINK] with [LINK=PROMOTION_CHANNELING2]Channeling II[\LINK]. This totem comes with an additional restriction that both it and its replica totems must be on the coast. This can make it somewhat difficult to efficiently place the source totem for maximum results.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_FLAMES</Tag>
+		<English>Totem of the Flames</English>
+		<French>Totem of the Flames</French>
+		<German>Totem of the Flames</German>
+		<Italian>Totem of the Flames</Italian>
+		<Spanish>Totem of the Flames</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_FLAMES_REPLICA</Tag>
+		<English>Totem of the Flames (Replica)</English>
+		<French>Totem of the Flames (Replica)</French>
+		<German>Totem of the Flames (Replica)</German>
+		<Italian>Totem of the Flames (Replica)</Italian>
+		<Spanish>Totem of the Flames (Replica)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_FLAMES_PEDIA</Tag>
+		<English>Two distinct tribes claim the Totem of the Flames as their own. One tribe grew to respect the Malakim for their spiritualism, and migrated to the desert in order to make visits to the Malakim easier. The other tribe uses the Totem of the Flames for destructive purposes: to wield the flames against their enemies.</English>
+		<French>Two distinct tribes claim the Totem of the Flames as their own. One tribe grew to respect the Malakim for their spiritualism, and migrated to the desert in order to make visits to the Malakim easier. The other tribe uses the Totem of the Flames for destructive purposes: to wield the flames against their enemies.</French>
+		<German>Two distinct tribes claim the Totem of the Flames as their own. One tribe grew to respect the Malakim for their spiritualism, and migrated to the desert in order to make visits to the Malakim easier. The other tribe uses the Totem of the Flames for destructive purposes: to wield the flames against their enemies.</German>
+		<Italian>Two distinct tribes claim the Totem of the Flames as their own. One tribe grew to respect the Malakim for their spiritualism, and migrated to the desert in order to make visits to the Malakim easier. The other tribe uses the Totem of the Flames for destructive purposes: to wield the flames against their enemies.</Italian>
+		<Spanish>Two distinct tribes claim the Totem of the Flames as their own. One tribe grew to respect the Malakim for their spiritualism, and migrated to the desert in order to make visits to the Malakim easier. The other tribe uses the Totem of the Flames for destructive purposes: to wield the flames against their enemies.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_FLAMES_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Totem of the Flames[COLOR_REVERT], which replaces the [LINK=BUILDING_TEMPLE_OF_THE_VEIL]Temple of the Veil[\LINK], provides +1 [ICON_COMMERCE] on Desert and Flame tiles, as well as +1 [ICON_PRODUCTION] on Flames tiles. Instead of the +2 [ICON_RESEARCH] that a [COLOR_BUILDING_TEXT]Temple of the Veil[COLOR_REVERT] provides, this totem gives +2 [ICON_PRODUCTION]. Arcane units produced here start with the [LINK=PROMOTION_SPIRIT_OF_THE_FLAMES]Spirit of the Flames[\LINK] promotion, allowing them to cast [LINK=SPELL_RING_OF_FLAMES]Ring of Flames[\LINK] with [LINK=PROMOTION_CHANNELING2]Channeling II[\LINK].</English>
+		<French>The [COLOR_BUILDING_TEXT]Totem of the Flames[COLOR_REVERT], which replaces the [LINK=BUILDING_TEMPLE_OF_THE_VEIL]Temple of the Veil[\LINK], provides +1 [ICON_COMMERCE] on Desert and Flame tiles, as well as +1 [ICON_PRODUCTION] on Flames tiles. Instead of the +2 [ICON_RESEARCH] that a [COLOR_BUILDING_TEXT]Temple of the Veil[COLOR_REVERT] provides, this totem gives +2 [ICON_PRODUCTION]. Arcane units produced here start with the [LINK=PROMOTION_SPIRIT_OF_THE_FLAMES]Spirit of the Flames[\LINK] promotion, allowing them to cast [LINK=SPELL_RING_OF_FLAMES]Ring of Flames[\LINK] with [LINK=PROMOTION_CHANNELING2]Channeling II[\LINK].</French>
+		<German>The [COLOR_BUILDING_TEXT]Totem of the Flames[COLOR_REVERT], which replaces the [LINK=BUILDING_TEMPLE_OF_THE_VEIL]Temple of the Veil[\LINK], provides +1 [ICON_COMMERCE] on Desert and Flame tiles, as well as +1 [ICON_PRODUCTION] on Flames tiles. Instead of the +2 [ICON_RESEARCH] that a [COLOR_BUILDING_TEXT]Temple of the Veil[COLOR_REVERT] provides, this totem gives +2 [ICON_PRODUCTION]. Arcane units produced here start with the [LINK=PROMOTION_SPIRIT_OF_THE_FLAMES]Spirit of the Flames[\LINK] promotion, allowing them to cast [LINK=SPELL_RING_OF_FLAMES]Ring of Flames[\LINK] with [LINK=PROMOTION_CHANNELING2]Channeling II[\LINK].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Totem of the Flames[COLOR_REVERT], which replaces the [LINK=BUILDING_TEMPLE_OF_THE_VEIL]Temple of the Veil[\LINK], provides +1 [ICON_COMMERCE] on Desert and Flame tiles, as well as +1 [ICON_PRODUCTION] on Flames tiles. Instead of the +2 [ICON_RESEARCH] that a [COLOR_BUILDING_TEXT]Temple of the Veil[COLOR_REVERT] provides, this totem gives +2 [ICON_PRODUCTION]. Arcane units produced here start with the [LINK=PROMOTION_SPIRIT_OF_THE_FLAMES]Spirit of the Flames[\LINK] promotion, allowing them to cast [LINK=SPELL_RING_OF_FLAMES]Ring of Flames[\LINK] with [LINK=PROMOTION_CHANNELING2]Channeling II[\LINK].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Totem of the Flames[COLOR_REVERT], which replaces the [LINK=BUILDING_TEMPLE_OF_THE_VEIL]Temple of the Veil[\LINK], provides +1 [ICON_COMMERCE] on Desert and Flame tiles, as well as +1 [ICON_PRODUCTION] on Flames tiles. Instead of the +2 [ICON_RESEARCH] that a [COLOR_BUILDING_TEXT]Temple of the Veil[COLOR_REVERT] provides, this totem gives +2 [ICON_PRODUCTION]. Arcane units produced here start with the [LINK=PROMOTION_SPIRIT_OF_THE_FLAMES]Spirit of the Flames[\LINK] promotion, allowing them to cast [LINK=SPELL_RING_OF_FLAMES]Ring of Flames[\LINK] with [LINK=PROMOTION_CHANNELING2]Channeling II[\LINK].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_FROST</Tag>
+		<English>Totem of the Frost</English>
+		<French>Totem of the Frost</French>
+		<German>Totem of the Frost</German>
+		<Italian>Totem of the Frost</Italian>
+		<Spanish>Totem of the Frost</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_FROST_REPLICA</Tag>
+		<English>Totem of the Frost (Replica)</English>
+		<French>Totem of the Frost (Replica)</French>
+		<German>Totem of the Frost (Replica)</German>
+		<Italian>Totem of the Frost (Replica)</Italian>
+		<Spanish>Totem of the Frost (Replica)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_FROST_PEDIA</Tag>
+		<English>There are rumors that some Chislev found something that they admired in the Doviello, and migrated north to work alongside them. Those who claim to have come in contact with these Chislev say that they have a totem that seemingly swirls with a constant, snowy wind.</English>
+		<French>There are rumors that some Chislev found something that they admired in the Doviello, and migrated north to work alongside them. Those who claim to have come in contact with these Chislev say that they have a totem that seemingly swirls with a constant, snowy wind.</French>
+		<German>There are rumors that some Chislev found something that they admired in the Doviello, and migrated north to work alongside them. Those who claim to have come in contact with these Chislev say that they have a totem that seemingly swirls with a constant, snowy wind.</German>
+		<Italian>There are rumors that some Chislev found something that they admired in the Doviello, and migrated north to work alongside them. Those who claim to have come in contact with these Chislev say that they have a totem that seemingly swirls with a constant, snowy wind.</Italian>
+		<Spanish>There are rumors that some Chislev found something that they admired in the Doviello, and migrated north to work alongside them. Those who claim to have come in contact with these Chislev say that they have a totem that seemingly swirls with a constant, snowy wind.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_FROST_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Totem of the Frost[COLOR_REVERT], which replaces the [LINK=BUILDING_TEMPLE_OF_THE_HAND]Temple of the Hand[\LINK], provides +1 [ICON_FOOD] on Tundra, and +1 [ICON_PRODUCTION] on Taiga. Arcane units produced here start with the [LINK=PROMOTION_SPIRIT_OF_THE_FROST]Spirit of the Frost[\LINK] promotion, allowing them to cast [LINK=SPELL_SUMMON_FROSTLING]Summon Frostling[\LINK] with [LINK=PROMOTION_CHANNELING1]Channeling I[\LINK] and [LINK=SPELL_STASIS_CURSE]Stasis Curse[\LINK] with [LINK=PROMOTION_CHANNELING2]Channeling II[\LINK].</English>
+		<French>The [COLOR_BUILDING_TEXT]Totem of the Frost[COLOR_REVERT], which replaces the [LINK=BUILDING_TEMPLE_OF_THE_HAND]Temple of the Hand[\LINK], provides +1 [ICON_FOOD] on Tundra, and +1 [ICON_PRODUCTION] on Taiga. Arcane units produced here start with the [LINK=PROMOTION_SPIRIT_OF_THE_FROST]Spirit of the Frost[\LINK] promotion, allowing them to cast [LINK=SPELL_SUMMON_FROSTLING]Summon Frostling[\LINK] with [LINK=PROMOTION_CHANNELING1]Channeling I[\LINK] and [LINK=SPELL_STASIS_CURSE]Stasis Curse[\LINK] with [LINK=PROMOTION_CHANNELING2]Channeling II[\LINK].</French>
+		<German>The [COLOR_BUILDING_TEXT]Totem of the Frost[COLOR_REVERT], which replaces the [LINK=BUILDING_TEMPLE_OF_THE_HAND]Temple of the Hand[\LINK], provides +1 [ICON_FOOD] on Tundra, and +1 [ICON_PRODUCTION] on Taiga. Arcane units produced here start with the [LINK=PROMOTION_SPIRIT_OF_THE_FROST]Spirit of the Frost[\LINK] promotion, allowing them to cast [LINK=SPELL_SUMMON_FROSTLING]Summon Frostling[\LINK] with [LINK=PROMOTION_CHANNELING1]Channeling I[\LINK] and [LINK=SPELL_STASIS_CURSE]Stasis Curse[\LINK] with [LINK=PROMOTION_CHANNELING2]Channeling II[\LINK].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Totem of the Frost[COLOR_REVERT], which replaces the [LINK=BUILDING_TEMPLE_OF_THE_HAND]Temple of the Hand[\LINK], provides +1 [ICON_FOOD] on Tundra, and +1 [ICON_PRODUCTION] on Taiga. Arcane units produced here start with the [LINK=PROMOTION_SPIRIT_OF_THE_FROST]Spirit of the Frost[\LINK] promotion, allowing them to cast [LINK=SPELL_SUMMON_FROSTLING]Summon Frostling[\LINK] with [LINK=PROMOTION_CHANNELING1]Channeling I[\LINK] and [LINK=SPELL_STASIS_CURSE]Stasis Curse[\LINK] with [LINK=PROMOTION_CHANNELING2]Channeling II[\LINK].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Totem of the Frost[COLOR_REVERT], which replaces the [LINK=BUILDING_TEMPLE_OF_THE_HAND]Temple of the Hand[\LINK], provides +1 [ICON_FOOD] on Tundra, and +1 [ICON_PRODUCTION] on Taiga. Arcane units produced here start with the [LINK=PROMOTION_SPIRIT_OF_THE_FROST]Spirit of the Frost[\LINK] promotion, allowing them to cast [LINK=SPELL_SUMMON_FROSTLING]Summon Frostling[\LINK] with [LINK=PROMOTION_CHANNELING1]Channeling I[\LINK] and [LINK=SPELL_STASIS_CURSE]Stasis Curse[\LINK] with [LINK=PROMOTION_CHANNELING2]Channeling II[\LINK].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_WAR</Tag>
+		<English>Totem of War</English>
+		<French>Totem of War</French>
+		<German>Totem of War</German>
+		<Italian>Totem of War</Italian>
+		<Spanish>Totem of War</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_WAR_REPLICA</Tag>
+		<English>Totem of War (Replica)</English>
+		<French>Totem of War (Replica)</French>
+		<German>Totem of War (Replica)</German>
+		<Italian>Totem of War (Replica)</Italian>
+		<Spanish>Totem of War (Replica)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_WAR_PEDIA</Tag>
+		<English>The Totem of War appeals to many of the Chislev, especially as of recently. This totem acts as a symbol of power, emboldening those who view it, and leading to a larger portion of the population taking up the life of the warrior.</English>
+		<French>The Totem of War appeals to many of the Chislev, especially as of recently. This totem acts as a symbol of power, emboldening those who view it, and leading to a larger portion of the population taking up the life of the warrior.</French>
+		<German>The Totem of War appeals to many of the Chislev, especially as of recently. This totem acts as a symbol of power, emboldening those who view it, and leading to a larger portion of the population taking up the life of the warrior.</German>
+		<Italian>The Totem of War appeals to many of the Chislev, especially as of recently. This totem acts as a symbol of power, emboldening those who view it, and leading to a larger portion of the population taking up the life of the warrior.</Italian>
+		<Spanish>The Totem of War appeals to many of the Chislev, especially as of recently. This totem acts as a symbol of power, emboldening those who view it, and leading to a larger portion of the population taking up the life of the warrior.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_WAR_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Totem of War[COLOR_REVERT], which replaces the [LINK=BUILDING_TEMPLE_OF_THE_ORDER]Temple of the Order[\LINK], provides an additional +10% land unit production, and grants land units built there +2 XP. The city also suffers 25% less war [ICON_UNHAPPY], which, if stacked with a [LINK=BUILDING_DUNGEON]Dungeon[\LINK] and [LINK=BUILDING_TOTEM_OF_THE_SERPENT]Totem of the Serpent[\LINK], can make a city completely impervious to war weariness. Arcane units produced here start with the [LINK=PROMOTION_SPIRIT_OF_WAR]Spirit of War[\LINK] promotion, allowing them to cast [LINK=SPELL_BLESS]Bless[\LINK] with [LINK=PROMOTION_CHANNELING2]Channeling II[\LINK].</English>
+		<French>The [COLOR_BUILDING_TEXT]Totem of War[COLOR_REVERT], which replaces the [LINK=BUILDING_TEMPLE_OF_THE_ORDER]Temple of the Order[\LINK], provides an additional +10% land unit production, and grants land units built there +2 XP. The city also suffers 25% less war [ICON_UNHAPPY], which, if stacked with a [LINK=BUILDING_DUNGEON]Dungeon[\LINK] and [LINK=BUILDING_TOTEM_OF_THE_SERPENT]Totem of the Serpent[\LINK], can make a city completely impervious to war weariness. Arcane units produced here start with the [LINK=PROMOTION_SPIRIT_OF_WAR]Spirit of War[\LINK] promotion, allowing them to cast [LINK=SPELL_BLESS]Bless[\LINK] with [LINK=PROMOTION_CHANNELING2]Channeling II[\LINK].</French>
+		<German>The [COLOR_BUILDING_TEXT]Totem of War[COLOR_REVERT], which replaces the [LINK=BUILDING_TEMPLE_OF_THE_ORDER]Temple of the Order[\LINK], provides an additional +10% land unit production, and grants land units built there +2 XP. The city also suffers 25% less war [ICON_UNHAPPY], which, if stacked with a [LINK=BUILDING_DUNGEON]Dungeon[\LINK] and [LINK=BUILDING_TOTEM_OF_THE_SERPENT]Totem of the Serpent[\LINK], can make a city completely impervious to war weariness. Arcane units produced here start with the [LINK=PROMOTION_SPIRIT_OF_WAR]Spirit of War[\LINK] promotion, allowing them to cast [LINK=SPELL_BLESS]Bless[\LINK] with [LINK=PROMOTION_CHANNELING2]Channeling II[\LINK].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Totem of War[COLOR_REVERT], which replaces the [LINK=BUILDING_TEMPLE_OF_THE_ORDER]Temple of the Order[\LINK], provides an additional +10% land unit production, and grants land units built there +2 XP. The city also suffers 25% less war [ICON_UNHAPPY], which, if stacked with a [LINK=BUILDING_DUNGEON]Dungeon[\LINK] and [LINK=BUILDING_TOTEM_OF_THE_SERPENT]Totem of the Serpent[\LINK], can make a city completely impervious to war weariness. Arcane units produced here start with the [LINK=PROMOTION_SPIRIT_OF_WAR]Spirit of War[\LINK] promotion, allowing them to cast [LINK=SPELL_BLESS]Bless[\LINK] with [LINK=PROMOTION_CHANNELING2]Channeling II[\LINK].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Totem of War[COLOR_REVERT], which replaces the [LINK=BUILDING_TEMPLE_OF_THE_ORDER]Temple of the Order[\LINK], provides an additional +10% land unit production, and grants land units built there +2 XP. The city also suffers 25% less war [ICON_UNHAPPY], which, if stacked with a [LINK=BUILDING_DUNGEON]Dungeon[\LINK] and [LINK=BUILDING_TOTEM_OF_THE_SERPENT]Totem of the Serpent[\LINK], can make a city completely impervious to war weariness. Arcane units produced here start with the [LINK=PROMOTION_SPIRIT_OF_WAR]Spirit of War[\LINK] promotion, allowing them to cast [LINK=SPELL_BLESS]Bless[\LINK] with [LINK=PROMOTION_CHANNELING2]Channeling II[\LINK].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_ENLIGHTENMENT</Tag>
+		<English>Totem of Enlightenment</English>
+		<French>Totem of Enlightenment</French>
+		<German>Totem of Enlightenment</German>
+		<Italian>Totem of Enlightenment</Italian>
+		<Spanish>Totem of Enlightenment</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_ENLIGHTENMENT_REPLICA</Tag>
+		<English>Totem of Enlightenment (Replica)</English>
+		<French>Totem of Enlightenment (Replica)</French>
+		<German>Totem of Enlightenment (Replica)</German>
+		<Italian>Totem of Enlightenment (Replica)</Italian>
+		<Spanish>Totem of Enlightenment (Replica)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_ENLIGHTENMENT_PEDIA</Tag>
+		<English>The Totem of Enlightenment is particularly appealing to those Chislev who prefer to live in peace and isolation, making it a natural fit for the Tortoise Tribe. Still, all of the other tribes, save the Serpent Tribe, sometimes adopt this totem has their own. The Totem of Enlightenment seemingly exudes an aura of clarity, allowing one to focus their mind.</English>
+		<French>The Totem of Enlightenment is particularly appealing to those Chislev who prefer to live in peace and isolation, making it a natural fit for the Tortoise Tribe. Still, all of the other tribes, save the Serpent Tribe, sometimes adopt this totem has their own. The Totem of Enlightenment seemingly exudes an aura of clarity, allowing one to focus their mind.</French>
+		<German>The Totem of Enlightenment is particularly appealing to those Chislev who prefer to live in peace and isolation, making it a natural fit for the Tortoise Tribe. Still, all of the other tribes, save the Serpent Tribe, sometimes adopt this totem has their own. The Totem of Enlightenment seemingly exudes an aura of clarity, allowing one to focus their mind.</German>
+		<Italian>The Totem of Enlightenment is particularly appealing to those Chislev who prefer to live in peace and isolation, making it a natural fit for the Tortoise Tribe. Still, all of the other tribes, save the Serpent Tribe, sometimes adopt this totem has their own. The Totem of Enlightenment seemingly exudes an aura of clarity, allowing one to focus their mind.</Italian>
+		<Spanish>The Totem of Enlightenment is particularly appealing to those Chislev who prefer to live in peace and isolation, making it a natural fit for the Tortoise Tribe. Still, all of the other tribes, save the Serpent Tribe, sometimes adopt this totem has their own. The Totem of Enlightenment seemingly exudes an aura of clarity, allowing one to focus their mind.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_ENLIGHTENMENT_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Totem of Enlightenment[COLOR_REVERT], which replaces the [LINK=BUILDING_TEMPLE_OF_THE_EMPYREAN]Temple of the Empyrean[\LINK], provides +4 [ICON_RESEARCH] and +25% [ICON_RESEARCH] rather than just 10%. This somewhat helps to recoup the Chislev's inability to construct the [LINK=BUILDING_LIBRARY]Library[\LINK] and [LINK=BUILDING_ALCHEMY_LAB]Alchemy Lab[\LINK]. Additionally, the [COLOR_BUILDING_TEXT]Totem of Enlightenment[COLOR_REVERT] has double the training rate for Disciple and Arcane units. Arcane units produced here start with the [LINK=PROMOTION_SPIRIT_OF_ENLIGHTENMENT]Spirit of Enlightenment[\LINK] promotion, allowing them to cast [LINK=SPELL_REVELATION]Revelation[\LINK] with [LINK=PROMOTION_CHANNELING2]Channeling II[\LINK].</English>
+		<French>The [COLOR_BUILDING_TEXT]Totem of Enlightenment[COLOR_REVERT], which replaces the [LINK=BUILDING_TEMPLE_OF_THE_EMPYREAN]Temple of the Empyrean[\LINK], provides +4 [ICON_RESEARCH] and +25% [ICON_RESEARCH] rather than just 10%. This somewhat helps to recoup the Chislev's inability to construct the [LINK=BUILDING_LIBRARY]Library[\LINK] and [LINK=BUILDING_ALCHEMY_LAB]Alchemy Lab[\LINK]. Additionally, the [COLOR_BUILDING_TEXT]Totem of Enlightenment[COLOR_REVERT] has double the training rate for Disciple and Arcane units. Arcane units produced here start with the [LINK=PROMOTION_SPIRIT_OF_ENLIGHTENMENT]Spirit of Enlightenment[\LINK] promotion, allowing them to cast [LINK=SPELL_REVELATION]Revelation[\LINK] with [LINK=PROMOTION_CHANNELING2]Channeling II[\LINK].</French>
+		<German>The [COLOR_BUILDING_TEXT]Totem of Enlightenment[COLOR_REVERT], which replaces the [LINK=BUILDING_TEMPLE_OF_THE_EMPYREAN]Temple of the Empyrean[\LINK], provides +4 [ICON_RESEARCH] and +25% [ICON_RESEARCH] rather than just 10%. This somewhat helps to recoup the Chislev's inability to construct the [LINK=BUILDING_LIBRARY]Library[\LINK] and [LINK=BUILDING_ALCHEMY_LAB]Alchemy Lab[\LINK]. Additionally, the [COLOR_BUILDING_TEXT]Totem of Enlightenment[COLOR_REVERT] has double the training rate for Disciple and Arcane units. Arcane units produced here start with the [LINK=PROMOTION_SPIRIT_OF_ENLIGHTENMENT]Spirit of Enlightenment[\LINK] promotion, allowing them to cast [LINK=SPELL_REVELATION]Revelation[\LINK] with [LINK=PROMOTION_CHANNELING2]Channeling II[\LINK].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Totem of Enlightenment[COLOR_REVERT], which replaces the [LINK=BUILDING_TEMPLE_OF_THE_EMPYREAN]Temple of the Empyrean[\LINK], provides +4 [ICON_RESEARCH] and +25% [ICON_RESEARCH] rather than just 10%. This somewhat helps to recoup the Chislev's inability to construct the [LINK=BUILDING_LIBRARY]Library[\LINK] and [LINK=BUILDING_ALCHEMY_LAB]Alchemy Lab[\LINK]. Additionally, the [COLOR_BUILDING_TEXT]Totem of Enlightenment[COLOR_REVERT] has double the training rate for Disciple and Arcane units. Arcane units produced here start with the [LINK=PROMOTION_SPIRIT_OF_ENLIGHTENMENT]Spirit of Enlightenment[\LINK] promotion, allowing them to cast [LINK=SPELL_REVELATION]Revelation[\LINK] with [LINK=PROMOTION_CHANNELING2]Channeling II[\LINK].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Totem of Enlightenment[COLOR_REVERT], which replaces the [LINK=BUILDING_TEMPLE_OF_THE_EMPYREAN]Temple of the Empyrean[\LINK], provides +4 [ICON_RESEARCH] and +25% [ICON_RESEARCH] rather than just 10%. This somewhat helps to recoup the Chislev's inability to construct the [LINK=BUILDING_LIBRARY]Library[\LINK] and [LINK=BUILDING_ALCHEMY_LAB]Alchemy Lab[\LINK]. Additionally, the [COLOR_BUILDING_TEXT]Totem of Enlightenment[COLOR_REVERT] has double the training rate for Disciple and Arcane units. Arcane units produced here start with the [LINK=PROMOTION_SPIRIT_OF_ENLIGHTENMENT]Spirit of Enlightenment[\LINK] promotion, allowing them to cast [LINK=SPELL_REVELATION]Revelation[\LINK] with [LINK=PROMOTION_CHANNELING2]Channeling II[\LINK].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CANOE_HARBOR</Tag>
+		<English>Canoe Harbor</English>
+		<French>Canoe Harbor</French>
+		<German>Canoe Harbor</German>
+		<Italian>Canoe Harbor</Italian>
+		<Spanish>Canoe Harbor</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CANOE_HARBOR_PEDIA</Tag>
+		<English>The Chislev are not known as a seafaring people, so they see no value in building a normal ship harbor. Instead, they have small canoe harbors. While the Chislev use these canoes to trade on occasion, their primary purpose is for fishing.</English>
+		<French>The Chislev are not known as a seafaring people, so they see no value in building a normal ship harbor. Instead, they have small canoe harbors. While the Chislev use these canoes to trade on occasion, their primary purpose is for fishing.</French>
+		<German>The Chislev are not known as a seafaring people, so they see no value in building a normal ship harbor. Instead, they have small canoe harbors. While the Chislev use these canoes to trade on occasion, their primary purpose is for fishing.</German>
+		<Italian>The Chislev are not known as a seafaring people, so they see no value in building a normal ship harbor. Instead, they have small canoe harbors. While the Chislev use these canoes to trade on occasion, their primary purpose is for fishing.</Italian>
+		<Spanish>The Chislev are not known as a seafaring people, so they see no value in building a normal ship harbor. Instead, they have small canoe harbors. While the Chislev use these canoes to trade on occasion, their primary purpose is for fishing.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CANOE_HARBOR_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Canoe Harbor[COLOR_REVERT] does not have as much trading power as the [LINK=BUILDING_HARBOR]Harbor[\LINK], but it is cheaper to build and provides 2 [ICON_FOOD].</English>
+		<French>The [COLOR_BUILDING_TEXT]Canoe Harbor[COLOR_REVERT] does not have as much trading power as the [LINK=BUILDING_HARBOR]Harbor[\LINK], but it is cheaper to build and provides 2 [ICON_FOOD].</French>
+		<German>The [COLOR_BUILDING_TEXT]Canoe Harbor[COLOR_REVERT] does not have as much trading power as the [LINK=BUILDING_HARBOR]Harbor[\LINK], but it is cheaper to build and provides 2 [ICON_FOOD].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Canoe Harbor[COLOR_REVERT] does not have as much trading power as the [LINK=BUILDING_HARBOR]Harbor[\LINK], but it is cheaper to build and provides 2 [ICON_FOOD].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Canoe Harbor[COLOR_REVERT] does not have as much trading power as the [LINK=BUILDING_HARBOR]Harbor[\LINK], but it is cheaper to build and provides 2 [ICON_FOOD].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WARCHIEF_HARBOR</Tag>
+		<English>Warchief's Harbor</English>
+		<French>Warchief's Harbor</French>
+		<German>Warchief's Harbor</German>
+		<Italian>Warchief's Harbor</Italian>
+		<Spanish>Warchief's Harbor</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WARCHIEF_HARBOR_PEDIA</Tag>
+		<English>The few Warchief's Harbors that the Chislev have usually become central trading hubs and a base out of which to run a navy. Any Chislev tribesman who decides to live the life of the sea, although rare that may be, will undoubtedly flock to a Warchief's Harbor.</English>
+		<French>The few Warchief's Harbors that the Chislev have usually become central trading hubs and a base out of which to run a navy. Any Chislev tribesman who decides to live the life of the sea, although rare that may be, will undoubtedly flock to a Warchief's Harbor.</French>
+		<German>The few Warchief's Harbors that the Chislev have usually become central trading hubs and a base out of which to run a navy. Any Chislev tribesman who decides to live the life of the sea, although rare that may be, will undoubtedly flock to a Warchief's Harbor.</German>
+		<Italian>The few Warchief's Harbors that the Chislev have usually become central trading hubs and a base out of which to run a navy. Any Chislev tribesman who decides to live the life of the sea, although rare that may be, will undoubtedly flock to a Warchief's Harbor.</Italian>
+		<Spanish>The few Warchief's Harbors that the Chislev have usually become central trading hubs and a base out of which to run a navy. Any Chislev tribesman who decides to live the life of the sea, although rare that may be, will undoubtedly flock to a Warchief's Harbor.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WARCHIEF_HARBOR_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Warchief Harbor[COLOR_REVERT] provides a variety of benefits. It provides one extra trade route and 50% trade route yield to compensate for the [LINK=BUILDING_CANOE_HARBOR]Canoe Harbor[\LINK] having a decreased trade yield. Additionally, it slightly increases the speed of building sea units, and gives them +2 XP. As the Chislev cannot build the [LINK=BUILDING_SHIPYARD]Shipyard[\LINK], both this building and a [LINK=BUILDING_TOTEM_OF_THE_SEA]Totem of the Sea[\LINK] would be required to have the same build speed and XP gains as a city with a Shipyard.</English>
+		<French>The [COLOR_BUILDING_TEXT]Warchief Harbor[COLOR_REVERT] provides a variety of benefits. It provides one extra trade route and 50% trade route yield to compensate for the [LINK=BUILDING_CANOE_HARBOR]Canoe Harbor[\LINK] having a decreased trade yield. Additionally, it slightly increases the speed of building sea units, and gives them +2 XP. As the Chislev cannot build the [LINK=BUILDING_SHIPYARD]Shipyard[\LINK], both this building and a [LINK=BUILDING_TOTEM_OF_THE_SEA]Totem of the Sea[\LINK] would be required to have the same build speed and XP gains as a city with a Shipyard.</French>
+		<German>The [COLOR_BUILDING_TEXT]Warchief Harbor[COLOR_REVERT] provides a variety of benefits. It provides one extra trade route and 50% trade route yield to compensate for the [LINK=BUILDING_CANOE_HARBOR]Canoe Harbor[\LINK] having a decreased trade yield. Additionally, it slightly increases the speed of building sea units, and gives them +2 XP. As the Chislev cannot build the [LINK=BUILDING_SHIPYARD]Shipyard[\LINK], both this building and a [LINK=BUILDING_TOTEM_OF_THE_SEA]Totem of the Sea[\LINK] would be required to have the same build speed and XP gains as a city with a Shipyard.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Warchief Harbor[COLOR_REVERT] provides a variety of benefits. It provides one extra trade route and 50% trade route yield to compensate for the [LINK=BUILDING_CANOE_HARBOR]Canoe Harbor[\LINK] having a decreased trade yield. Additionally, it slightly increases the speed of building sea units, and gives them +2 XP. As the Chislev cannot build the [LINK=BUILDING_SHIPYARD]Shipyard[\LINK], both this building and a [LINK=BUILDING_TOTEM_OF_THE_SEA]Totem of the Sea[\LINK] would be required to have the same build speed and XP gains as a city with a Shipyard.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Warchief Harbor[COLOR_REVERT] provides a variety of benefits. It provides one extra trade route and 50% trade route yield to compensate for the [LINK=BUILDING_CANOE_HARBOR]Canoe Harbor[\LINK] having a decreased trade yield. Additionally, it slightly increases the speed of building sea units, and gives them +2 XP. As the Chislev cannot build the [LINK=BUILDING_SHIPYARD]Shipyard[\LINK], both this building and a [LINK=BUILDING_TOTEM_OF_THE_SEA]Totem of the Sea[\LINK] would be required to have the same build speed and XP gains as a city with a Shipyard.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TRIBAL_WATCHPOST</Tag>
+		<English>Tribal Watchpost</English>
+		<French>Tribal Watchpost</French>
+		<German>Tribal Watchpost</German>
+		<Italian>Tribal Watchpost</Italian>
+		<Spanish>Tribal Watchpost</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TRIBAL_WATCHPOST_PEDIA</Tag>
+		<English>What the Chislev lack on the coast, they make up for on the land. The purpose of the Tribal Watchpost is twofold: it allows the tribes to keep the their trade routes and city safe and secure, and it allows those posted on the watchpost to point out wild game. The Chislev are the People of the Plains; their reliance on the watchpost and their hunting lifestyle is evidence of that.</English>
+		<French>What the Chislev lack on the coast, they make up for on the land. The purpose of the Tribal Watchpost is twofold: it allows the tribes to keep the their trade routes and city safe and secure, and it allows those posted on the watchpost to point out wild game. The Chislev are the People of the Plains; their reliance on the watchpost and their hunting lifestyle is evidence of that.</French>
+		<German>What the Chislev lack on the coast, they make up for on the land. The purpose of the Tribal Watchpost is twofold: it allows the tribes to keep the their trade routes and city safe and secure, and it allows those posted on the watchpost to point out wild game. The Chislev are the People of the Plains; their reliance on the watchpost and their hunting lifestyle is evidence of that.</German>
+		<Italian>What the Chislev lack on the coast, they make up for on the land. The purpose of the Tribal Watchpost is twofold: it allows the tribes to keep the their trade routes and city safe and secure, and it allows those posted on the watchpost to point out wild game. The Chislev are the People of the Plains; their reliance on the watchpost and their hunting lifestyle is evidence of that.</Italian>
+		<Spanish>What the Chislev lack on the coast, they make up for on the land. The purpose of the Tribal Watchpost is twofold: it allows the tribes to keep the their trade routes and city safe and secure, and it allows those posted on the watchpost to point out wild game. The Chislev are the People of the Plains; their reliance on the watchpost and their hunting lifestyle is evidence of that.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TRIBAL_WATCHPOST_STRATEGY</Tag>
+		<English>Although the [COLOR_BUILDING_TEXT]Tribal Watchpost[COLOR_REVERT] replaces [LINK=BUILDING_LIGHTHOUSE]Lighthouse[\LINK], it is a land building. It gives +1 [ICON_FOOD] yield on plains tiles, increases city defense by 5%, and provides a trade route. When built on the coast, the [COLOR_BUILDING_TEXT]Tribal Watchpost[COLOR_REVERT] will still allow for the building of the [LINK=BUILDING_GREAT_LIGHTHOUSE]Great Lighthouse[\LINK].</English>
+		<French>Although the [COLOR_BUILDING_TEXT]Tribal Watchpost[COLOR_REVERT] replaces [LINK=BUILDING_LIGHTHOUSE]Lighthouse[\LINK], it is a land building. It gives +1 [ICON_FOOD] yield on plains tiles, increases city defense by 5%, and provides a trade route. When built on the coast, the [COLOR_BUILDING_TEXT]Tribal Watchpost[COLOR_REVERT] will still allow for the building of the [LINK=BUILDING_GREAT_LIGHTHOUSE]Great Lighthouse[\LINK].</French>
+		<German>Although the [COLOR_BUILDING_TEXT]Tribal Watchpost[COLOR_REVERT] replaces [LINK=BUILDING_LIGHTHOUSE]Lighthouse[\LINK], it is a land building. It gives +1 [ICON_FOOD] yield on plains tiles, increases city defense by 5%, and provides a trade route. When built on the coast, the [COLOR_BUILDING_TEXT]Tribal Watchpost[COLOR_REVERT] will still allow for the building of the [LINK=BUILDING_GREAT_LIGHTHOUSE]Great Lighthouse[\LINK].</German>
+		<Italian>Although the [COLOR_BUILDING_TEXT]Tribal Watchpost[COLOR_REVERT] replaces [LINK=BUILDING_LIGHTHOUSE]Lighthouse[\LINK], it is a land building. It gives +1 [ICON_FOOD] yield on plains tiles, increases city defense by 5%, and provides a trade route. When built on the coast, the [COLOR_BUILDING_TEXT]Tribal Watchpost[COLOR_REVERT] will still allow for the building of the [LINK=BUILDING_GREAT_LIGHTHOUSE]Great Lighthouse[\LINK].</Italian>
+		<Spanish>Although the [COLOR_BUILDING_TEXT]Tribal Watchpost[COLOR_REVERT] replaces [LINK=BUILDING_LIGHTHOUSE]Lighthouse[\LINK], it is a land building. It gives +1 [ICON_FOOD] yield on plains tiles, increases city defense by 5%, and provides a trade route. When built on the coast, the [COLOR_BUILDING_TEXT]Tribal Watchpost[COLOR_REVERT] will still allow for the building of the [LINK=BUILDING_GREAT_LIGHTHOUSE]Great Lighthouse[\LINK].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WARCHIEF_SECURITY_COUNCIL</Tag>
+		<English>Warchief's Security Council</English>
+		<French>Warchief's Security Council</French>
+		<German>Warchief's Security Council</German>
+		<Italian>Warchief's Security Council</Italian>
+		<Spanish>Warchief's Security Council</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WARCHIEF_SECURITY_COUNCIL_PEDIA</Tag>
+		<English>The Warchief's Security Council is the tribe's central hub for intelligence information. The council is in charge of scouting out the area to keep the tribe safe, as well as forwarding communications for the security of nearby villages.</English>
+		<French>The Warchief's Security Council is the tribe's central hub for intelligence information. The council is in charge of scouting out the area to keep the tribe safe, as well as forwarding communications for the security of nearby villages.</French>
+		<German>The Warchief's Security Council is the tribe's central hub for intelligence information. The council is in charge of scouting out the area to keep the tribe safe, as well as forwarding communications for the security of nearby villages.</German>
+		<Italian>The Warchief's Security Council is the tribe's central hub for intelligence information. The council is in charge of scouting out the area to keep the tribe safe, as well as forwarding communications for the security of nearby villages.</Italian>
+		<Spanish>The Warchief's Security Council is the tribe's central hub for intelligence information. The council is in charge of scouting out the area to keep the tribe safe, as well as forwarding communications for the security of nearby villages.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WARCHIEF_SECURITY_COUNCIL_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Warchief's Security Council[COLOR_REVERT] slightly increases your land unit production and city defense. It also provides recon units with +2 XP and helps to train them.</English>
+		<French>The [COLOR_BUILDING_TEXT]Warchief's Security Council[COLOR_REVERT] slightly increases your land unit production and city defense. It also provides recon units with +2 XP and helps to train them.</French>
+		<German>The [COLOR_BUILDING_TEXT]Warchief's Security Council[COLOR_REVERT] slightly increases your land unit production and city defense. It also provides recon units with +2 XP and helps to train them.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Warchief's Security Council[COLOR_REVERT] slightly increases your land unit production and city defense. It also provides recon units with +2 XP and helps to train them.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Warchief's Security Council[COLOR_REVERT] slightly increases your land unit production and city defense. It also provides recon units with +2 XP and helps to train them.</Spanish>
+	</TEXT>
+</Civ4GameText>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Basic Infos -->
+<Civ4AffinityInfos xmlns="x-schema:ChislevExpansion_CIV4UnitSchema.xml">
+	<AffinityInfos>
+		<AffinityInfo><!-- Spirit Healer, Shaman, Commander, Menawa Affinity -->
+			<Type>AFFINITY_CHISLEV_SPIRIT</Type>
+			<Description>TXT_KEY_AFFINITY_CHISLEV_SPIRIT</Description>
+			<Civilopedia>TXT_KEY_AFFINITY_CHISLEV_SPIRIT_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_AFFINITY_CHISLEV_SPIRIT_STRATEGY</Strategy>
+			<BonusTypes>
+				<BonusType>BONUS_MANA_SPIRIT</BonusType>
+			</BonusTypes>
+			<fStrength>0.5</fStrength>
+			<fXPFromCombat>0.5</fXPFromCombat>
+			<fHealRate>5</fHealRate>
+		</AffinityInfo>
+	</AffinityInfos>
+</Civ4AffinityInfos>

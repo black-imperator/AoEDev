@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Event Infos -->
+<Civ4EventInfos xmlns="x-schema:ChislevExpansion_CIV4EventSchema.xml">
+	<EventInfos>
+		<!--Chislev Expansion Events Starts-->
+		<EventInfo><!--Chislev Tribal Law  events-->
+			<Type>EVENT_TRIBAL_LAW_ELECTION_EAGLE_TRIBE</Type>
+			<Description>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_EAGLE_TRIBE</Description>
+			<PythonCallback>doTribalLawElectionEagle</PythonCallback>
+			<PythonHelp>getHelpTribalLawElectionEagle</PythonHelp>
+			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>0</iAIValue>
+		</EventInfo>
+		<EventInfo><!--Chislev Tribal Law  events-->
+			<Type>EVENT_TRIBAL_LAW_ELECTION_COYOTE_TRIBE</Type>
+			<Description>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_COYOTE_TRIBE</Description>
+			<PythonCallback>doTribalLawElectionCoyote</PythonCallback>
+			<PythonHelp>getHelpTribalLawElectionCoyote</PythonHelp>
+			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>0</iAIValue>
+		</EventInfo>
+		<EventInfo><!--Chislev Tribal Law  events-->
+			<Type>EVENT_TRIBAL_LAW_ELECTION_BEAR_TRIBE</Type>
+			<Description>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_BEAR_TRIBE</Description>
+			<PythonCallback>doTribalLawElectionBear</PythonCallback>
+			<PythonHelp>getHelpTribalLawElectionBear</PythonHelp>
+			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>0</iAIValue>
+		</EventInfo>
+		<EventInfo><!--Chislev Tribal Law  events-->
+			<Type>EVENT_TRIBAL_LAW_ELECTION_SERPENT_TRIBE</Type>
+			<Description>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_SERPENT_TRIBE</Description>
+			<PythonCallback>doTribalLawElectionSerpent</PythonCallback>
+			<PythonHelp>getHelpTribalLawElectionSerpent</PythonHelp>
+			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>0</iAIValue>
+		</EventInfo>
+		<EventInfo><!--Chislev Tribal Law  events-->
+			<Type>EVENT_TRIBAL_LAW_ELECTION_TORTOISE_TRIBE</Type>
+			<Description>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_TORTOISE_TRIBE</Description>
+			<PythonCallback>doTribalLawElectionTortoise</PythonCallback>
+			<PythonHelp>getHelpTribalLawElectionTortoise</PythonHelp>
+			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>0</iAIValue>
+		</EventInfo>
+		<EventInfo><!--Chislev Tribal Law  events-->
+			<Type>EVENT_TRIBAL_LAW_ELECTION_FAIR</Type>
+			<Description>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_FAIR</Description>
+			<PythonCallback>doTribalLawElectionFair</PythonCallback>
+			<PythonHelp>getHelpTribalLawElectionFair</PythonHelp>
+			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>1000</iAIValue>
+		</EventInfo>
+		<EventInfo><!--Chislev Tribal Law  events-->
+			<Type>EVENT_TRIBAL_LAW_ELECTION_FAIR2</Type>
+			<Description>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_FAIR</Description>
+			<PythonCallback>doTribalLawElectionFair</PythonCallback>
+			<PythonHelp>getHelpTribalLawElectionFair</PythonHelp>
+			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>1000</iAIValue>
+		</EventInfo>
+		<EventInfo><!--Chislev Tribal Law  events-->
+			<Type>EVENT_TRIBAL_LAW_ELECTION_FAIR3</Type>
+			<Description>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_FAIR3</Description>
+			<PythonCallback>doTribalLawElectionFair3</PythonCallback>
+			<PythonHelp>getHelpTribalLawElectionFair3</PythonHelp>
+			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>1000</iAIValue>
+		</EventInfo>
+		<EventInfo><!--Chislev Tribal Law  events-->
+			<Type>EVENT_TRIBAL_LAW_ELECTION_NO_PARTICIPATION</Type>
+			<Description>TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_NO_PARTICIPATION</Description>
+			<PythonCallback>doTribalLawElectionNoParticipation</PythonCallback>
+			<PythonHelp>getHelpTribalLawElectionNoParticipation</PythonHelp>
+			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>0</iAIValue>
+		</EventInfo>
+		<EventInfo><!--Chislev Menawa Tribe Selection  events-->
+			<Type>EVENT_MENAWA_TRIBE_SELECTION_EAGLE_TRIBE</Type>
+			<Description>TXT_KEY_EVENT_MENAWA_TRIBE_SELECTION_EAGLE_TRIBE</Description>
+			<PythonCallback>doMenawaTribeSelectionEagle</PythonCallback>
+			<PythonHelp>getHelpMenawaTribeSelectionEagle</PythonHelp>
+			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>0</iAIValue>
+		</EventInfo>
+		<EventInfo><!--Chislev Menawa Tribe Selection  events-->
+			<Type>EVENT_MENAWA_TRIBE_SELECTION_COYOTE_TRIBE</Type>
+			<Description>TXT_KEY_EVENT_MENAWA_TRIBE_SELECTION_COYOTE_TRIBE</Description>
+			<PythonCallback>doMenawaTribeSelectionCoyote</PythonCallback>
+			<PythonHelp>getHelpMenawaTribeSelectionCoyote</PythonHelp>
+			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>0</iAIValue>
+		</EventInfo>
+		<EventInfo><!--Chislev Menawa Tribe Selection  events-->
+			<Type>EVENT_MENAWA_TRIBE_SELECTION_BEAR_TRIBE</Type>
+			<Description>TXT_KEY_EVENT_MENAWA_TRIBE_SELECTION_BEAR_TRIBE</Description>
+			<PythonCallback>doMenawaTribeSelectionBear</PythonCallback>
+			<PythonHelp>getHelpMenawaTribeSelectionBear</PythonHelp>
+			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>10</iAIValue>
+		</EventInfo>
+		<EventInfo><!--Chislev Menawa Tribe Selection  events-->
+			<Type>EVENT_MENAWA_TRIBE_SELECTION_SERPENT_TRIBE</Type>
+			<Description>TXT_KEY_EVENT_MENAWA_TRIBE_SELECTION_SERPENT_TRIBE</Description>
+			<PythonCallback>doMenawaTribeSelectionSerpent</PythonCallback>
+			<PythonHelp>getHelpMenawaTribeSelectionSerpent</PythonHelp>
+			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>0</iAIValue>
+		</EventInfo>
+		<EventInfo><!--Chislev Menawa Tribe Selection  events-->
+			<Type>EVENT_MENAWA_TRIBE_SELECTION_TORTOISE_TRIBE</Type>
+			<Description>TXT_KEY_EVENT_MENAWA_TRIBE_SELECTION_TORTOISE_TRIBE</Description>
+			<PythonCallback>doMenawaTribeSelectionTortoise</PythonCallback>
+			<PythonHelp>getHelpMenawaTribeSelectionTortoise</PythonHelp>
+			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>0</iAIValue>
+		</EventInfo>
+		<EventInfo><!--Leaving the Tribal Law civic-->
+			<Type>EVENT_CIVIC_NOT_TRIBAL_LAW_ABSAROKE</Type>
+			<Description>TXT_KEY_EVENT_CIVIC_NOT_TRIBAL_LAW_ABSAROKE</Description>
+			<PythonCallback>doCivicNotTribalLawAbsaroke</PythonCallback>
+			<PythonHelp>getHelpCivicNotTribalLawAbsaroke</PythonHelp>
+			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>1000</iAIValue>
+		</EventInfo>
+		<EventInfo><!--Leaving the Tribal Law civic-->
+			<Type>EVENT_CIVIC_NOT_TRIBAL_LAW_NATANE</Type>
+			<Description>TXT_KEY_EVENT_CIVIC_NOT_TRIBAL_LAW_NATANE</Description>
+			<PythonCallback>doCivicNotTribalLawNatane</PythonCallback>
+			<PythonHelp>getHelpCivicNotTribalLawNatane</PythonHelp>
+			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>1000</iAIValue>
+		</EventInfo>
+	</EventInfos>
+</Civ4EventInfos>

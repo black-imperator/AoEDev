@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Units -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>AI_DIPLO_DECLARE_WAR_LEADER_SHIMASANI</Tag>
+		<English>It is with deep regret that I must do this, [CT_NAME], but my shaman council has unanimously agreed that this is for the best, and I cannot go against their judgment.</English>
+		<French>It is with deep regret that I must do this, [CT_NAME], but my shaman council has unanimously agreed that this is for the best, and I cannot go against their judgment.</French>
+		<German>It is with deep regret that I must do this, [CT_NAME], but my shaman council has unanimously agreed that this is for the best, and I cannot go against their judgment.</German>
+		<Italian>It is with deep regret that I must do this, [CT_NAME], but my shaman council has unanimously agreed that this is for the best, and I cannot go against their judgment.</Italian>
+		<Spanish>It is with deep regret that I must do this, [CT_NAME], but my shaman council has unanimously agreed that this is for the best, and I cannot go against their judgment.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_SHIMASANI</Tag>
+		<English>I am Shimasani of the Eagle Tribe. [CT_NAME], is it? Well it's a pleasure to meet you. I look forward to our future dealings.</English>
+		<French>I am Shimasani of the Eagle Tribe. [CT_NAME], is it? Well it's a pleasure to meet you. I look forward to our future dealings.</French>
+		<German>I am Shimasani of the Eagle Tribe. [CT_NAME], is it? Well it's a pleasure to meet you. I look forward to our future dealings.</German>
+		<Italian>I am Shimasani of the Eagle Tribe. [CT_NAME], is it? Well it's a pleasure to meet you. I look forward to our future dealings.</Italian>
+		<Spanish>I am Shimasani of the Eagle Tribe. [CT_NAME], is it? Well it's a pleasure to meet you. I look forward to our future dealings.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_SHIMASANI</Tag>
+		<English>[CT_NAME]! It's such a pleasure to see you again! What can I help you with today?</English>
+		<French>[CT_NAME]! It's such a pleasure to see you again! What can I help you with today?</French>
+		<German>[CT_NAME]! It's such a pleasure to see you again! What can I help you with today?</German>
+		<Italian>[CT_NAME]! It's such a pleasure to see you again! What can I help you with today?</Italian>
+		<Spanish>[CT_NAME]! It's such a pleasure to see you again! What can I help you with today?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_SHIMASANI</Tag>
+		<English>What can I help you with, [CT_NAME]? I hope that, whatever it is, it can work towards strengthening our strained relations.</English>
+		<French>What can I help you with, [CT_NAME]? I hope that, whatever it is, it can work towards strengthening our strained relations.</French>
+		<German>What can I help you with, [CT_NAME]? I hope that, whatever it is, it can work towards strengthening our strained relations.</German>
+		<Italian>What can I help you with, [CT_NAME]? I hope that, whatever it is, it can work towards strengthening our strained relations.</Italian>
+		<Spanish>What can I help you with, [CT_NAME]? I hope that, whatever it is, it can work towards strengthening our strained relations.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_CA_LEADER_SHIMASANI</Tag>
+		<English>Hello, [CT_NAME]! Is there something I can help with?</English>
+		<French>Hello, [CT_NAME]! Is there something I can help with?</French>
+		<German>Hello, [CT_NAME]! Is there something I can help with?</German>
+		<Italian>Hello, [CT_NAME]! Is there something I can help with?</Italian>
+		<Spanish>Hello, [CT_NAME]! Is there something I can help with?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_LEADER_SHIMASANI</Tag>
+		<English>Hello, [CT_NAME]! I think we can agree that we see one another as equals. That said, would you mind lending us a hand? We'll be sure to return the favor in the future.</English>
+		<French>Hello, [CT_NAME]! I think we can agree that we see one another as equals. That said, would you mind lending us a hand? We'll be sure to return the favor in the future.</French>
+		<German>Hello, [CT_NAME]! I think we can agree that we see one another as equals. That said, would you mind lending us a hand? We'll be sure to return the favor in the future.</German>
+		<Italian>Hello, [CT_NAME]! I think we can agree that we see one another as equals. That said, would you mind lending us a hand? We'll be sure to return the favor in the future.</Italian>
+		<Spanish>Hello, [CT_NAME]! I think we can agree that we see one another as equals. That said, would you mind lending us a hand? We'll be sure to return the favor in the future.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_LEADER_SHIMASANI</Tag>
+		<English>[CT_NAME], would you be able to spare us this? The shaman council recommends we simply declare war and take it, but I've been able to assure them that diplomacy is the better approach.</English>
+		<French>[CT_NAME], would you be able to spare us this? The shaman council recommends we simply declare war and take it, but I've been able to assure them that diplomacy is the better approach.</French>
+		<German>[CT_NAME], would you be able to spare us this? The shaman council recommends we simply declare war and take it, but I've been able to assure them that diplomacy is the better approach.</German>
+		<Italian>[CT_NAME], would you be able to spare us this? The shaman council recommends we simply declare war and take it, but I've been able to assure them that diplomacy is the better approach.</Italian>
+		<Spanish>[CT_NAME], would you be able to spare us this? The shaman council recommends we simply declare war and take it, but I've been able to assure them that diplomacy is the better approach.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_LEADER_SHIMASANI</Tag>
+		<English>[CT_NAME], the Eagle Tribe, and surely all of the Chislev tribes, look up to you in awe and respect. Our people revere your wisdom, and surely you will prove our people right by lending us some aid?</English>
+		<French>[CT_NAME], the Eagle Tribe, and surely all of the Chislev tribes, look up to you in awe and respect. Our people revere your wisdom, and surely you will prove our people right by lending us some aid?</French>
+		<German>[CT_NAME], the Eagle Tribe, and surely all of the Chislev tribes, look up to you in awe and respect. Our people revere your wisdom, and surely you will prove our people right by lending us some aid?</German>
+		<Italian>[CT_NAME], the Eagle Tribe, and surely all of the Chislev tribes, look up to you in awe and respect. Our people revere your wisdom, and surely you will prove our people right by lending us some aid?</Italian>
+		<Spanish>[CT_NAME], the Eagle Tribe, and surely all of the Chislev tribes, look up to you in awe and respect. Our people revere your wisdom, and surely you will prove our people right by lending us some aid?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_SHIMASANI</Tag>
+		<English>It is regretable that the path chosen was war and not diplomacy, but now we must see this war out.</English>
+		<French>It is regretable that the path chosen was war and not diplomacy, but now we must see this war out.</French>
+		<German>It is regretable that the path chosen was war and not diplomacy, but now we must see this war out.</German>
+		<Italian>It is regretable that the path chosen was war and not diplomacy, but now we must see this war out.</Italian>
+		<Spanish>It is regretable that the path chosen was war and not diplomacy, but now we must see this war out.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_PEACE_LEADER_SHIMASANI</Tag>
+		<English>Our people will rejoice in once again having peace. Thank you for allowing this peace, [CT_NAME]. We hope that this will begin a new path between our people.</English>
+		<French>Our people will rejoice in once again having peace. Thank you for allowing this peace, [CT_NAME]. We hope that this will begin a new path between our people.</French>
+		<German>Our people will rejoice in once again having peace. Thank you for allowing this peace, [CT_NAME]. We hope that this will begin a new path between our people.</German>
+		<Italian>Our people will rejoice in once again having peace. Thank you for allowing this peace, [CT_NAME]. We hope that this will begin a new path between our people.</Italian>
+		<Spanish>Our people will rejoice in once again having peace. Thank you for allowing this peace, [CT_NAME]. We hope that this will begin a new path between our people.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_SHIMASANI</Tag>
+		<English>Many in the shaman council do not find a peace deal in our best interest at this time. That time will come. I hope sooner than later.</English>
+		<French>Many in the shaman council do not find a peace deal in our best interest at this time. That time will come. I hope sooner than later.</French>
+		<German>Many in the shaman council do not find a peace deal in our best interest at this time. That time will come. I hope sooner than later.</German>
+		<Italian>Many in the shaman council do not find a peace deal in our best interest at this time. That time will come. I hope sooner than later.</Italian>
+		<Spanish>Many in the shaman council do not find a peace deal in our best interest at this time. That time will come. I hope sooner than later.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_OFFER_PEACE_LEADER_SHIMASANI</Tag>
+		<English>Please, [CT_NAME], too many people have died in this war on both sides. Children have been killed; others have lost parents in battle and have been left to the streets. This must come to an end - for both of our countries.</English>
+		<French>Please, [CT_NAME], too many people have died in this war on both sides. Children have been killed; others have lost parents in battle and have been left to the streets. This must come to an end - for both of our countries.</French>
+		<German>Please, [CT_NAME], too many people have died in this war on both sides. Children have been killed; others have lost parents in battle and have been left to the streets. This must come to an end - for both of our countries.</German>
+		<Italian>Please, [CT_NAME], too many people have died in this war on both sides. Children have been killed; others have lost parents in battle and have been left to the streets. This must come to an end - for both of our countries.</Italian>
+		<Spanish>Please, [CT_NAME], too many people have died in this war on both sides. Children have been killed; others have lost parents in battle and have been left to the streets. This must come to an end - for both of our countries.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_ACCEPT_LEADER_SHIMASANI</Tag>
+		<English>That is a fine deal, [CT_NAME]. May our trades allow continued cooperation between our people.</English>
+		<French>That is a fine deal, [CT_NAME]. May our trades allow continued cooperation between our people.</French>
+		<German>That is a fine deal, [CT_NAME]. May our trades allow continued cooperation between our people.</German>
+		<Italian>That is a fine deal, [CT_NAME]. May our trades allow continued cooperation between our people.</Italian>
+		<Spanish>That is a fine deal, [CT_NAME]. May our trades allow continued cooperation between our people.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REJECT_LEADER_SHIMASANI</Tag>
+		<English>While I appreciate the offer, [CT_NAME], I do not find this deal agreeable.</English>
+		<French>While I appreciate the offer, [CT_NAME], I do not find this deal agreeable.</French>
+		<German>While I appreciate the offer, [CT_NAME], I do not find this deal agreeable.</German>
+		<Italian>While I appreciate the offer, [CT_NAME], I do not find this deal agreeable.</Italian>
+		<Spanish>While I appreciate the offer, [CT_NAME], I do not find this deal agreeable.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_THANKS_LEADER_SHIMASANI</Tag>
+		<English>[CT_NAME], words cannot express enough gratitude in the common tongue. Ahéhee'. We hope to one day return the favor.</English>
+		<French>[CT_NAME], words cannot express enough gratitude in the common tongue. Ahéhee'. We hope to one day return the favor.</French>
+		<German>[CT_NAME], words cannot express enough gratitude in the common tongue. Ahéhee'. We hope to one day return the favor.</German>
+		<Italian>[CT_NAME], words cannot express enough gratitude in the common tongue. Ahéhee'. We hope to one day return the favor.</Italian>
+		<Spanish>[CT_NAME], words cannot express enough gratitude in the common tongue. Ahéhee'. We hope to one day return the favor.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_REJECTED_LEADER_SHIMASANI</Tag>
+		<English>It was not easy coming to you to ask for favors, as we are a prideful people. But what will be even more difficult is returning to my people as a failure. I thank you for your time, [CT_NAME]. May our future dealings prove more fruitful.</English>
+		<French>It was not easy coming to you to ask for favors, as we are a prideful people. But what will be even more difficult is returning to my people as a failure. I thank you for your time, [CT_NAME]. May our future dealings prove more fruitful.</French>
+		<German>It was not easy coming to you to ask for favors, as we are a prideful people. But what will be even more difficult is returning to my people as a failure. I thank you for your time, [CT_NAME]. May our future dealings prove more fruitful.</German>
+		<Italian>It was not easy coming to you to ask for favors, as we are a prideful people. But what will be even more difficult is returning to my people as a failure. I thank you for your time, [CT_NAME]. May our future dealings prove more fruitful.</Italian>
+		<Spanish>It was not easy coming to you to ask for favors, as we are a prideful people. But what will be even more difficult is returning to my people as a failure. I thank you for your time, [CT_NAME]. May our future dealings prove more fruitful.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_DEFEATED_SHIMASANI</Tag>
+		<English>All I had wanted was peace. All I had wanted was for all of the nations to co-exist in peace. Why? Why must it have come to slaughter and bloodshed?</English>
+		<French>All I had wanted was peace. All I had wanted was for all of the nations to co-exist in peace. Why? Why must it have come to slaughter and bloodshed?</French>
+		<German>All I had wanted was peace. All I had wanted was for all of the nations to co-exist in peace. Why? Why must it have come to slaughter and bloodshed?</German>
+		<Italian>All I had wanted was peace. All I had wanted was for all of the nations to co-exist in peace. Why? Why must it have come to slaughter and bloodshed?</Italian>
+		<Spanish>All I had wanted was peace. All I had wanted was for all of the nations to co-exist in peace. Why? Why must it have come to slaughter and bloodshed?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DECLARE_WAR_LEADER_SOYALA</Tag>
+		<English>My Coyote pack is hungry, and you have exposed your weakness.</English>
+		<French>My Coyote pack is hungry, and you have exposed your weakness.</French>
+		<German>My Coyote pack is hungry, and you have exposed your weakness.</German>
+		<Italian>My Coyote pack is hungry, and you have exposed your weakness.</Italian>
+		<Spanish>My Coyote pack is hungry, and you have exposed your weakness.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_SOYALA</Tag>
+		<English>Why hello there! It's a pleasure to meet you, [CT_NAME]. I am Soyala of the Coyote tribe.</English>
+		<French>Why hello there! It's a pleasure to meet you, [CT_NAME]. I am Soyala of the Coyote tribe.</French>
+		<German>Why hello there! It's a pleasure to meet you, [CT_NAME]. I am Soyala of the Coyote tribe.</German>
+		<Italian>Why hello there! It's a pleasure to meet you, [CT_NAME]. I am Soyala of the Coyote tribe.</Italian>
+		<Spanish>Why hello there! It's a pleasure to meet you, [CT_NAME]. I am Soyala of the Coyote tribe.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_SOYALA</Tag>
+		<English>Perfect timing, [CT_NAME]! We're in the midst of song and dance, perhaps you'd like to join us?</English>
+		<French>Perfect timing, [CT_NAME]! We're in the midst of song and dance, perhaps you'd like to join us?</French>
+		<German>Perfect timing, [CT_NAME]! We're in the midst of song and dance, perhaps you'd like to join us?</German>
+		<Italian>Perfect timing, [CT_NAME]! We're in the midst of song and dance, perhaps you'd like to join us?</Italian>
+		<Spanish>Perfect timing, [CT_NAME]! We're in the midst of song and dance, perhaps you'd like to join us?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_SOYALA</Tag>
+		<English>What do you want, [CT_NAME]? I hope it's something good, because you're interrupting our festivities.</English>
+		<French>What do you want, [CT_NAME]? I hope it's something good, because you're interrupting our festivities.</French>
+		<German>What do you want, [CT_NAME]? I hope it's something good, because you're interrupting our festivities.</German>
+		<Italian>What do you want, [CT_NAME]? I hope it's something good, because you're interrupting our festivities.</Italian>
+		<Spanish>What do you want, [CT_NAME]? I hope it's something good, because you're interrupting our festivities.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_CA_LEADER_SOYALA</Tag>
+		<English>Hello, [CT_NAME]. Pardon the festivities, I hope you'll be able to speak over the drumming.</English>
+		<French>Hello, [CT_NAME]. Pardon the festivities, I hope you'll be able to speak over the drumming.</French>
+		<German>Hello, [CT_NAME]. Pardon the festivities, I hope you'll be able to speak over the drumming.</German>
+		<Italian>Hello, [CT_NAME]. Pardon the festivities, I hope you'll be able to speak over the drumming.</Italian>
+		<Spanish>Hello, [CT_NAME]. Pardon the festivities, I hope you'll be able to speak over the drumming.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_LEADER_SOYALA</Tag>
+		<English>I hope we can agree that our people respect one another. Perhaps you'd care to provide us with this so that we respect you even more?</English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_LEADER_SOYALA</Tag>
+		<English>The Coyotes gnash their teeth. They hunger for the opportunity to expand the borders. But if you give us this, I believe I can manage to call them off.</English>
+		<French>The Coyotes gnash their teeth. They hunger for the opportunity to expand the borders. But if you give us this, I believe I can manage to call them off.</French>
+		<German>The Coyotes gnash their teeth. They hunger for the opportunity to expand the borders. But if you give us this, I believe I can manage to call them off.</German>
+		<Italian>The Coyotes gnash their teeth. They hunger for the opportunity to expand the borders. But if you give us this, I believe I can manage to call them off.</Italian>
+		<Spanish>The Coyotes gnash their teeth. They hunger for the opportunity to expand the borders. But if you give us this, I believe I can manage to call them off.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_LEADER_SOYALA</Tag>
+		<English>[CT_NAME], we could reaaally use this. You wouldn't mind helping me out, right? I never forget a favor, and I love returning favors...</English>
+		<French>[CT_NAME], we could reaaally use this. You wouldn't mind helping me out, right? I never forget a favor, and I love returning favors...</French>
+		<German>[CT_NAME], we could reaaally use this. You wouldn't mind helping me out, right? I never forget a favor, and I love returning favors...</German>
+		<Italian>[CT_NAME], we could reaaally use this. You wouldn't mind helping me out, right? I never forget a favor, and I love returning favors...</Italian>
+		<Spanish>[CT_NAME], we could reaaally use this. You wouldn't mind helping me out, right? I never forget a favor, and I love returning favors...</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_SOYALA</Tag>
+		<English>The dance of war has begun. One does not end a dance early.</English>
+		<French>The dance of war has begun. One does not end a dance early.</French>
+		<German>The dance of war has begun. One does not end a dance early.</German>
+		<Italian>The dance of war has begun. One does not end a dance early.</Italian>
+		<Spanish>The dance of war has begun. One does not end a dance early.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_PEACE_LEADER_SOYALA</Tag>
+		<English>Our people will hold feasts and dance in celebration of this peace deal! Perhaps you would care to join us? I promise not to poison the wine.</English>
+		<French>Our people will hold feasts and dance in celebration of this peace deal! Perhaps you would care to join us? I promise not to poison the wine.</French>
+		<German>Our people will hold feasts and dance in celebration of this peace deal! Perhaps you would care to join us? I promise not to poison the wine.</German>
+		<Italian>Our people will hold feasts and dance in celebration of this peace deal! Perhaps you would care to join us? I promise not to poison the wine.</Italian>
+		<Spanish>Our people will hold feasts and dance in celebration of this peace deal! Perhaps you would care to join us? I promise not to poison the wine.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_SOYALA</Tag>
+		<English>One does not end the dance of war early. Who decides when the dance is done? I do.</English>
+		<French>One does not end the dance of war early. Who decides when the dance is done? I do.</French>
+		<German>One does not end the dance of war early. Who decides when the dance is done? I do.</German>
+		<Italian>One does not end the dance of war early. Who decides when the dance is done? I do.</Italian>
+		<Spanish>One does not end the dance of war early. Who decides when the dance is done? I do.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_OFFER_PEACE_LEADER_SOYALA</Tag>
+		<English>Surely this war has gone on long enough? Let's agree to peace. I'll make it worth your while...</English>
+		<French>Surely this war has gone on long enough? Let's agree to peace. I'll make it worth your while...</French>
+		<German>Surely this war has gone on long enough? Let's agree to peace. I'll make it worth your while...</German>
+		<Italian>Surely this war has gone on long enough? Let's agree to peace. I'll make it worth your while...</Italian>
+		<Spanish>Surely this war has gone on long enough? Let's agree to peace. I'll make it worth your while...</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_ACCEPT_LEADER_SOYALA</Tag>
+		<English>I rather like that deal. Thank you, [CT_NAME]</English>
+		<French>I rather like that deal. Thank you, [CT_NAME]</French>
+		<German>I rather like that deal. Thank you, [CT_NAME]</German>
+		<Italian>I rather like that deal. Thank you, [CT_NAME]</Italian>
+		<Spanish>I rather like that deal. Thank you, [CT_NAME]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REJECT_LEADER_SOYALA</Tag>
+		<English>That deal would be unwise for us. Perhaps you could come up with something better?</English>
+		<French>That deal would be unwise for us. Perhaps you could come up with something better?</French>
+		<German>That deal would be unwise for us. Perhaps you could come up with something better?</German>
+		<Italian>That deal would be unwise for us. Perhaps you could come up with something better?</Italian>
+		<Spanish>That deal would be unwise for us. Perhaps you could come up with something better?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_THANKS_LEADER_SOYALA</Tag>
+		<English>The Coyote Tribe counts ourselves lucky to have friends like you. Songs shall be sang in your honor, [CT_NAME].</English>
+		<French>>The Coyote Tribe counts ourselves lucky to have friends like you. Songs shall be sang in your honor, [CT_NAME].</French>
+		<German>>The Coyote Tribe counts ourselves lucky to have friends like you. Songs shall be sang in your honor, [CT_NAME].</German>
+		<Italian>>The Coyote Tribe counts ourselves lucky to have friends like you. Songs shall be sang in your honor, [CT_NAME].</Italian>
+		<Spanish>>The Coyote Tribe counts ourselves lucky to have friends like you. Songs shall be sang in your honor, [CT_NAME].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_REJECTED_LEADER_SOYALA</Tag>
+		<English>That is most displeasing to hear, [CT_NAME]. I was hoping that we could have a more amicable relationship, you and I...</English>
+		<French>That is most displeasing to hear, [CT_NAME]. I was hoping that we could have a more amicable relationship, you and I...</French>
+		<German>That is most displeasing to hear, [CT_NAME]. I was hoping that we could have a more amicable relationship, you and I...</German>
+		<Italian>That is most displeasing to hear, [CT_NAME]. I was hoping that we could have a more amicable relationship, you and I...</Italian>
+		<Spanish>That is most displeasing to hear, [CT_NAME]. I was hoping that we could have a more amicable relationship, you and I...</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_DEFEATED_SOYALA</Tag>
+		<English>There was so much left to explore. So much beauty in the world left to see. Why have you deprived us of this? May the spirits haunt you for an eternity!</English>
+		<French>There was so much left to explore. So much beauty in the world left to see. Why have you deprived us of this? May the spirits haunt you for an eternity!</French>
+		<German>There was so much left to explore. So much beauty in the world left to see. Why have you deprived us of this? May the spirits haunt you for an eternity!</German>
+		<Italian>There was so much left to explore. So much beauty in the world left to see. Why have you deprived us of this? May the spirits haunt you for an eternity!</Italian>
+		<Spanish>There was so much left to explore. So much beauty in the world left to see. Why have you deprived us of this? May the spirits haunt you for an eternity!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DECLARE_WAR_LEADER_MOTSQUEH</Tag>
+		<English>Our warriors wish to test their skills. I've decided that you'll assist them.</English>
+		<French>Our warriors wish to test their skills. I've decided that you'll assist them.</French>
+		<German>Our warriors wish to test their skills. I've decided that you'll assist them.</German>
+		<Italian>Our warriors wish to test their skills. I've decided that you'll assist them.</Italian>
+		<Spanish>Our warriors wish to test their skills. I've decided that you'll assist them.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_MOTSQUEH</Tag>
+		<English>I am Motsqueh of the Bear Tribe. I trust you come in peace?</English>
+		<French>I am Motsqueh of the Bear Tribe. I trust you come in peace?</French>
+		<German>I am Motsqueh of the Bear Tribe. I trust you come in peace?</German>
+		<Italian>I am Motsqueh of the Bear Tribe. I trust you come in peace?</Italian>
+		<Spanish>I am Motsqueh of the Bear Tribe. I trust you come in peace?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_MOTSQUEH</Tag>
+		<English>Hello, [CT_NAME]. Pleasure to see you.</English>
+		<French>Hello, [CT_NAME]. Pleasure to see you.</French>
+		<German>Hello, [CT_NAME]. Pleasure to see you.</German>
+		<Italian>Hello, [CT_NAME]. Pleasure to see you.</Italian>
+		<Spanish>Hello, [CT_NAME]. Pleasure to see you.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_MOTSQUEH</Tag>
+		<English>Make it quick.</English>
+		<French>Make it quick.</French>
+		<German>Make it quick.</German>
+		<Italian>Make it quick.</Italian>
+		<Spanish>Make it quick.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_CA_LEADER_MOTSQUEH</Tag>
+		<English>Can I help you?</English>
+		<French>Can I help you?</French>
+		<German>Can I help you?</German>
+		<Italian>Can I help you?</Italian>
+		<Spanish>Can I help you?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_LEADER_MOTSQUEH</Tag>
+		<English>The Bear Tribe could use this. Can you assist us?</English>
+		<French>The Bear Tribe could use this. Can you assist us?</French>
+		<German>The Bear Tribe could use this. Can you assist us?</German>
+		<Italian>The Bear Tribe could use this. Can you assist us?</Italian>
+		<Spanish>The Bear Tribe could use this. Can you assist us?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_LEADER_MOTSQUEH</Tag>
+		<English>I'm not opposed to taking things by force, and I'm sure you realize I could do so. But first I'll try asking nicely. Give this to us.</English>
+		<French>I'm not opposed to taking things by force, and I'm sure you realize I could do so. But first I'll try asking nicely. Give this to us.</French>
+		<German>I'm not opposed to taking things by force, and I'm sure you realize I could do so. But first I'll try asking nicely. Give this to us.</German>
+		<Italian>I'm not opposed to taking things by force, and I'm sure you realize I could do so. But first I'll try asking nicely. Give this to us.</Italian>
+		<Spanish>I'm not opposed to taking things by force, and I'm sure you realize I could do so. But first I'll try asking nicely. Give this to us.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_LEADER_MOTSQUEH</Tag>
+		<English>Surely you can afford to spare this?</English>
+		<French>Surely you can afford to spare this?</French>
+		<German>Surely you can afford to spare this?</German>
+		<Italian>Surely you can afford to spare this?</Italian>
+		<Spanish>Surely you can afford to spare this?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_MOTSQUEH</Tag>
+		<English>I'm in no mood to speak to you. I'd rather crush you where you stand.</English>
+		<French>I'm in no mood to speak to you. I'd rather crush you where you stand.</French>
+		<German>I'm in no mood to speak to you. I'd rather crush you where you stand.</German>
+		<Italian>I'm in no mood to speak to you. I'd rather crush you where you stand.</Italian>
+		<Spanish>I'm in no mood to speak to you. I'd rather crush you where you stand.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_PEACE_LEADER_MOTSQUEH</Tag>
+		<English>Good. The Bear Tribe has other projects to focus on.</English>
+		<French>Good. The Bear Tribe has other projects to focus on.</French>
+		<German>Good. The Bear Tribe has other projects to focus on.</German>
+		<Italian>Good. The Bear Tribe has other projects to focus on.</Italian>
+		<Spanish>Good. The Bear Tribe has other projects to focus on.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_MOTSQUEH</Tag>
+		<English>We Bear Tribe warriors prove our worth in combat. Who am I to deny them of this?</English>
+		<French>We Bear Tribe warriors prove our worth in combat. Who am I to deny them of this?</French>
+		<German>We Bear Tribe warriors prove our worth in combat. Who am I to deny them of this?</German>
+		<Italian>We Bear Tribe warriors prove our worth in combat. Who am I to deny them of this?</Italian>
+		<Spanish>We Bear Tribe warriors prove our worth in combat. Who am I to deny them of this?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_OFFER_PEACE_LEADER_MOTSQUEH</Tag>
+		<English>Even a Bear knows when it has had enough. Let's end this.</English>
+		<French>Even a Bear knows when it has had enough. Let's end this.</French>
+		<German>Even a Bear knows when it has had enough. Let's end this.</German>
+		<Italian>Even a Bear knows when it has had enough. Let's end this.</Italian>
+		<Spanish>Even a Bear knows when it has had enough. Let's end this.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_ACCEPT_LEADER_MOTSQUEH</Tag>
+		<English>Yes, that's a decent deal.</English>
+		<French>Yes, that's a decent deal.</French>
+		<German>Yes, that's a decent deal.</German>
+		<Italian>Yes, that's a decent deal.</Italian>
+		<Spanish>Yes, that's a decent deal.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REJECT_LEADER_MOTSQUEH</Tag>
+		<English>No. You'll have to do better than that.</English>
+		<French>No. You'll have to do better than that.</French>
+		<German>No. You'll have to do better than that.</German>
+		<Italian>No. You'll have to do better than that.</Italian>
+		<Spanish>No. You'll have to do better than that.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_THANKS_LEADER_MOTSQUEH</Tag>
+		<English>Your words are wise.</English>
+		<French>Your words are wise.</French>
+		<German>Weise Worte.</German>
+		<Italian>Your words are wise.</Italian>
+		<Spanish>Your words are wise.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_REJECTED_LEADER_MOTSQUEH</Tag>
+		<English>You refuse a Bear? Perhaps next time we will not ask so nicely, [CT_NAME].</English>
+		<French>You refuse a Bear? Perhaps next time we will not ask so nicely, [CT_NAME].</French>
+		<German>You refuse a Bear? Perhaps next time we will not ask so nicely, [CT_NAME].</German>
+		<Italian>You refuse a Bear? Perhaps next time we will not ask so nicely, [CT_NAME].</Italian>
+		<Spanish>You refuse a Bear? Perhaps next time we will not ask so nicely, [CT_NAME].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_DEFEATED_MOTSQUEH</Tag>
+		<English>You would not have fared so well one vs. one. But you're a coward. Continue to hide behind your men. One day they will turn on you, for men do not respect cowards.</English>
+		<French>You would not have fared so well one vs. one. But you're a coward. Continue to hide behind your men. One day they will turn on you, for men do not respect cowards.</French>
+		<German>You would not have fared so well one vs. one. But you're a coward. Continue to hide behind your men. One day they will turn on you, for men do not respect cowards.</German>
+		<Italian>You would not have fared so well one vs. one. But you're a coward. Continue to hide behind your men. One day they will turn on you, for men do not respect cowards.</Italian>
+		<Spanish>You would not have fared so well one vs. one. But you're a coward. Continue to hide behind your men. One day they will turn on you, for men do not respect cowards.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DECLARE_WAR_LEADER_OSYKA</Tag>
+		<English>The war drums beat. Our warriors are ready. Are yours?</English>
+		<French>The war drums beat. Our warriors are ready. Are yours?</French>
+		<German>The war drums beat. Our warriors are ready. Are yours?</German>
+		<Italian>The war drums beat. Our warriors are ready. Are yours?</Italian>
+		<Spanish>The war drums beat. Our warriors are ready. Are yours?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_OSYKA</Tag>
+		<English>I am Osyka of the Serpent Tribe. Do your best to stay out of my way and I'll consider staying out of yours.</English>
+		<French>I am Osyka of the Serpent Tribe. Do your best to stay out of my way and I'll consider staying out of yours.</French>
+		<German>I am Osyka of the Serpent Tribe. Do your best to stay out of my way and I'll consider staying out of yours.</German>
+		<Italian>I am Osyka of the Serpent Tribe. Do your best to stay out of my way and I'll consider staying out of yours.</Italian>
+		<Spanish>I am Osyka of the Serpent Tribe. Do your best to stay out of my way and I'll consider staying out of yours.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_OSYKA</Tag>
+		<English>Hello, [CT_NAME]. Kill any orcs lately?</English>
+		<French>Hello, [CT_NAME]. Kill any orcs lately?</French>
+		<German>Hello, [CT_NAME]. Kill any orcs lately?</German>
+		<Italian>Hello, [CT_NAME]. Kill any orcs lately?</Italian>
+		<Spanish>Hello, [CT_NAME]. Kill any orcs lately?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_OSYKA</Tag>
+		<English>You dare come to me with words? I'd prefer it if our weapons did the talking.</English>
+		<French>You dare come to me with words? I'd prefer it if our weapons did the talking.</French>
+		<German>You dare come to me with words? I'd prefer it if our weapons did the talking.</German>
+		<Italian>You dare come to me with words? I'd prefer it if our weapons did the talking.</Italian>
+		<Spanish>You dare come to me with words? I'd prefer it if our weapons did the talking.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_CA_LEADER_OSYKA</Tag>
+		<English>What is it?</English>
+		<French>What is it?</French>
+		<German>What is it?</German>
+		<Italian>What is it?</Italian>
+		<Spanish>What is it?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_LEADER_OSYKA</Tag>
+		<English>You'd be wise to give this to us, unless you want war.</English>
+		<French>You'd be wise to give this to us, unless you want war.</French>
+		<German>You'd be wise to give this to us, unless you want war.</German>
+		<Italian>You'd be wise to give this to us, unless you want war.</Italian>
+		<Spanish>You'd be wise to give this to us, unless you want war.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_LEADER_OSYKA</Tag>
+		<English>Our warriors outnumber yours and they have more spirit than yours. As easy as it would be to take this from you, I'm going to give you one chance to hand it over.</English>
+		<French>Our warriors outnumber yours and they have more spirit than yours. As easy as it would be to take this from you, I'm going to give you one chance to hand it over.</French>
+		<German>Our warriors outnumber yours and they have more spirit than yours. As easy as it would be to take this from you, I'm going to give you one chance to hand it over.</German>
+		<Italian>Our warriors outnumber yours and they have more spirit than yours. As easy as it would be to take this from you, I'm going to give you one chance to hand it over.</Italian>
+		<Spanish>Our warriors outnumber yours and they have more spirit than yours. As easy as it would be to take this from you, I'm going to give you one chance to hand it over.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_LEADER_OSYKA</Tag>
+		<English>The Serpent Tribe could use this, [CT_NAME].</English>
+		<French>The Serpent Tribe could use this, [CT_NAME].</French>
+		<German>The Serpent Tribe could use this, [CT_NAME].</German>
+		<Italian>The Serpent Tribe could use this, [CT_NAME].</Italian>
+		<Spanish>The Serpent Tribe could use this, [CT_NAME].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_OSYKA</Tag>
+		<English>You've come to discuss terms? Funny, I was just discussing how good your head would look at the end of a pole. Our warriors still thirst for blood. You've made this trek for nothing.</English>
+		<French>You've come to discuss terms? Funny, I was just discussing how good your head would look at the end of a pole. Our warriors still thirst for blood. You've made this trek for nothing.</French>
+		<German>You've come to discuss terms? Funny, I was just discussing how good your head would look at the end of a pole. Our warriors still thirst for blood. You've made this trek for nothing.</German>
+		<Italian>You've come to discuss terms? Funny, I was just discussing how good your head would look at the end of a pole. Our warriors still thirst for blood. You've made this trek for nothing.</Italian>
+		<Spanish>You've come to discuss terms? Funny, I was just discussing how good your head would look at the end of a pole. Our warriors still thirst for blood. You've made this trek for nothing.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_PEACE_LEADER_OSYKA</Tag>
+		<English>Peace will be acceptable. For now.</English>
+		<French>Peace will be acceptable. For now.</French>
+		<German>Peace will be acceptable. For now.</German>
+		<Italian>Peace will be acceptable. For now.</Italian>
+		<Spanish>Peace will be acceptable. For now.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_OSYKA</Tag>
+		<English>End the war? Hahaha! Why ever would we do that? There's so much more pillaging to do!</English>
+		<French>End the war? Hahaha! Why ever would we do that? There's so much more pillaging to do!</French>
+		<German>End the war? Hahaha! Why ever would we do that? There's so much more pillaging to do!</German>
+		<Italian>End the war? Hahaha! Why ever would we do that? There's so much more pillaging to do!</Italian>
+		<Spanish>End the war? Hahaha! Why ever would we do that? There's so much more pillaging to do!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_OFFER_PEACE_LEADER_OSYKA</Tag>
+		<English>Our warriors need a temporary break. Let's put this war on hiatus. For now.</English>
+		<French>Our warriors need a temporary break. Let's put this war on hiatus. For now.</French>
+		<German>Our warriors need a temporary break. Let's put this war on hiatus. For now.</German>
+		<Italian>Our warriors need a temporary break. Let's put this war on hiatus. For now.</Italian>
+		<Spanish>Our warriors need a temporary break. Let's put this war on hiatus. For now.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_ACCEPT_LEADER_OSYKA</Tag>
+		<English>Well look at you. You have your uses, after all.</English>
+		<French>Well look at you. You have your uses, after all.</French>
+		<German>Well look at you. You have your uses, after all.</German>
+		<Italian>Well look at you. You have your uses, after all.</Italian>
+		<Spanish>Well look at you. You have your uses, after all.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REJECT_LEADER_OSYKA</Tag>
+		<English>I should kill you for even suggesting such a trade. Do you take me for an idiot? You're going to have to do better than that pittance.</English>
+		<French>I should kill you for even suggesting such a trade. Do you take me for an idiot? You're going to have to do better than that pittance.</French>
+		<German>I should kill you for even suggesting such a trade. Do you take me for an idiot? You're going to have to do better than that pittance.</German>
+		<Italian>I should kill you for even suggesting such a trade. Do you take me for an idiot? You're going to have to do better than that pittance.</Italian>
+		<Spanish>I should kill you for even suggesting such a trade. Do you take me for an idiot? You're going to have to do better than that pittance.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_THANKS_LEADER_OSYKA</Tag>
+		<English>I do not know the word in your language, as I seldom use it in my own. Thunk you.</English>
+		<French>I do not know the word in your language, as I seldom use it in my own. Thunk you.</French>
+		<German>I do not know the word in your language, as I seldom use it in my own. Thunk you.</German>
+		<Italian>I do not know the word in your language, as I seldom use it in my own. Thunk you.</Italian>
+		<Spanish>I do not know the word in your language, as I seldom use it in my own. Thunk you.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_REJECTED_LEADER_OSYKA</Tag>
+		<English>You reject me? You reject the Serpent Tribe?! Be thankful I have my hands full, else I'd declare war on you here and now!</English>
+		<French>You reject me? You reject the Serpent Tribe?! Be thankful I have my hands full, else I'd declare war on you here and now!</French>
+		<German>You reject me? You reject the Serpent Tribe?! Be thankful I have my hands full, else I'd declare war on you here and now!</German>
+		<Italian>You reject me? You reject the Serpent Tribe?! Be thankful I have my hands full, else I'd declare war on you here and now!</Italian>
+		<Spanish>You reject me? You reject the Serpent Tribe?! Be thankful I have my hands full, else I'd declare war on you here and now!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_DEFEATED_OSYKA</Tag>
+		<English>Do you want orcs? Because that's how you get orcs.</English>
+		<French>Do you want orcs? Because that's how you get orcs.</French>
+		<German>Do you want orcs? Because that's how you get orcs.</German>
+		<Italian>Do you want orcs? Because that's how you get orcs.</Italian>
+		<Spanish>Do you want orcs? Because that's how you get orcs.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DECLARE_WAR_LEADER_ALOSAKA</Tag>
+		<English>We in the Tortoise Tribe a peaceful people... but you have deeply offended us, and we cannot stand by and do nothing.</English>
+		<French>We in the Tortoise Tribe a peaceful people... but you have deeply offended us, and we cannot stand by and do nothing.</French>
+		<German>We in the Tortoise Tribe a peaceful people... but you have deeply offended us, and we cannot stand by and do nothing.</German>
+		<Italian>We in the Tortoise Tribe a peaceful people... but you have deeply offended us, and we cannot stand by and do nothing.</Italian>
+		<Spanish>We in the Tortoise Tribe a peaceful people... but you have deeply offended us, and we cannot stand by and do nothing.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_ALOSAKA</Tag>
+		<English>Salutations, [CT_NAME]. I have foreseen our meeting, but the future is hazy. I trust you desire peace?</English>
+		<French>Salutations, [CT_NAME]. I have foreseen our meeting, but the future is hazy. I trust you desire peace?</French>
+		<German>Salutations, [CT_NAME]. I have foreseen our meeting, but the future is hazy. I trust you desire peace?</German>
+		<Italian>Salutations, [CT_NAME]. I have foreseen our meeting, but the future is hazy. I trust you desire peace?</Italian>
+		<Spanish>Salutations, [CT_NAME]. I have foreseen our meeting, but the future is hazy. I trust you desire peace?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_ALOSAKA</Tag>
+		<English>[CT_NAME], it is always a delight. How may I be of service?</English>
+		<French>[CT_NAME], it is always a delight. How may I be of service?</French>
+		<German>[CT_NAME], it is always a delight. How may I be of service?</German>
+		<Italian>[CT_NAME], it is always a delight. How may I be of service?</Italian>
+		<Spanish>[CT_NAME], it is always a delight. How may I be of service?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_ALOSAKA</Tag>
+		<English>I'd prefer you not visit our lands, but since you're here, I cannot dismiss a guest. What do you need?</English>
+		<French>I'd prefer you not visit our lands, but since you're here, I cannot dismiss a guest. What do you need?</French>
+		<German>I'd prefer you not visit our lands, but since you're here, I cannot dismiss a guest. What do you need?</German>
+		<Italian>I'd prefer you not visit our lands, but since you're here, I cannot dismiss a guest. What do you need?</Italian>
+		<Spanish>I'd prefer you not visit our lands, but since you're here, I cannot dismiss a guest. What do you need?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_CA_LEADER_ALOSAKA</Tag>
+		<English>Greetings. Is there something you need?</English>
+		<French>Greetings. Is there something you need?</French>
+		<German>Greetings. Is there something you need?</German>
+		<Italian>Greetings. Is there something you need?</Italian>
+		<Spanish>Greetings. Is there something you need?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_LEADER_ALOSAKA</Tag>
+		<English>The Chislev could use this, and I'd appreciate if you could help our people by giving it to them.</English>
+		<French>The Chislev could use this, and I'd appreciate if you could help our people by giving it to them.</French>
+		<German>The Chislev could use this, and I'd appreciate if you could help our people by giving it to them.</German>
+		<Italian>The Chislev could use this, and I'd appreciate if you could help our people by giving it to them.</Italian>
+		<Spanish>The Chislev could use this, and I'd appreciate if you could help our people by giving it to them.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_LEADER_ALOSAKA</Tag>
+		<English>[CT_NAME], I witnessed a vision of the Chislev killing your people. It was chilling, and I do not wish things to come to that. I believe if you give us this, it would convince our people that peace is the best approach between our people.</English>
+		<French>[CT_NAME], I witnessed a vision of the Chislev killing your people. It was chilling, and I do not wish things to come to that. I believe if you give us this, it would convince our people that peace is the best approach between our people.</French>
+		<German>[CT_NAME], I witnessed a vision of the Chislev killing your people. It was chilling, and I do not wish things to come to that. I believe if you give us this, it would convince our people that peace is the best approach between our people.</German>
+		<Italian>[CT_NAME], I witnessed a vision of the Chislev killing your people. It was chilling, and I do not wish things to come to that. I believe if you give us this, it would convince our people that peace is the best approach between our people.</Italian>
+		<Spanish>[CT_NAME], I witnessed a vision of the Chislev killing your people. It was chilling, and I do not wish things to come to that. I believe if you give us this, it would convince our people that peace is the best approach between our people.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_LEADER_ALOSAKA</Tag>
+		<English>You have wisdom and resources beyond our means. I was hoping you would be generous enough to share.</English>
+		<French>You have wisdom and resources beyond our means. I was hoping you would be generous enough to share.</French>
+		<German>You have wisdom and resources beyond our means. I was hoping you would be generous enough to share.</German>
+		<Italian>You have wisdom and resources beyond our means. I was hoping you would be generous enough to share.</Italian>
+		<Spanish>You have wisdom and resources beyond our means. I was hoping you would be generous enough to share.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_ALOSAKA</Tag>
+		<English>The path is chosen. We have nothing to discuss.</English>
+		<French>The path is chosen. We have nothing to discuss.</French>
+		<German>Der Weg wurde eingeschlagen, die W&#252;rfel sind gefallen. Es gibt nichts zu reden.</German>
+		<Italian>The path is chosen. We have nothing to discuss.</Italian>
+		<Spanish>The path is chosen. We have nothing to discuss.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_PEACE_LEADER_ALOSAKA</Tag>
+		<English>I am glad that we shall live in peace.</English>
+		<French>I am glad that we shall live in peace.</French>
+		<German>Ich freue mich, da&#223; wir in Frieden leben werden.</German>
+		<Italian>I am glad that we shall live in peace.</Italian>
+		<Spanish>I am glad that we shall live in peace.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_ALOSAKA</Tag>
+		<English>Our proud warriors yet seek greater glories - who am I to stay their hand?</English>
+		<French>Our proud warriors yet seek greater glories - who am I to stay their hand?</French>
+		<German>Unsere Krieger suchen noch gr&#246;&#223;ere Schlachten und mehr Ruhm. Wer w&#228;re ich, w&#252;rde ich ihnen das verwehren?</German>
+		<Italian>Our proud warriors yet seek greater glories - who am I to stay their hand?</Italian>
+		<Spanish>Our proud warriors yet seek greater glories - who am I to stay their hand?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_OFFER_PEACE_LEADER_ALOSAKA</Tag>
+		<English>Let us end this bloodshed and rebuild in peace.</English>
+		<French>Let us end this bloodshed and rebuild in peace.</French>
+		<German>La&#223; uns das Schlachten beenden und alles in Frieden enden.</German>
+		<Italian>Let us end this bloodshed and rebuild in peace.</Italian>
+		<Spanish>Let us end this bloodshed and rebuild in peace.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_ACCEPT_LEADER_ALOSAKA</Tag>
+		<English>I have listened and I like what I have heard.</English>
+		<French>I have listened and I like what I have heard.</French>
+		<German>Was ich h&#246;re, findet unsere Zustimmung.</German>
+		<Italian>I have listened and I like what I have heard.</Italian>
+		<Spanish>I have listened and I like what I have heard.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REJECT_LEADER_ALOSAKA</Tag>
+		<English>I do not see the wisdom in your proposal.</English>
+		<French>I do not see the wisdom in your proposal.</French>
+		<German>Ich sehe keine Weitsicht in eurem Vorschlag. Meine Antort wird also nein lauten, wenn es dabei bleibt.</German>
+		<Italian>I do not see the wisdom in your proposal.</Italian>
+		<Spanish>I do not see the wisdom in your proposal.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_THANKS_LEADER_ALOSAKA</Tag>
+		<English>Your words are wise.</English>
+		<French>Your words are wise.</French>
+		<German>Weise Worte.</German>
+		<Italian>Your words are wise.</Italian>
+		<Spanish>Your words are wise.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_REJECTED_LEADER_ALOSAKA</Tag>
+		<English>It is unfortunate that you would refuse to provide us aid, [CT_NAME]. I hope the council takes this news better than I.</English>
+		<French>It is unfortunate that you would refuse to provide us aid, [CT_NAME]. I hope the council takes this news better than I.</French>
+		<German>It is unfortunate that you would refuse to provide us aid, [CT_NAME]. I hope the council takes this news better than I.</German>
+		<Italian>It is unfortunate that you would refuse to provide us aid, [CT_NAME]. I hope the council takes this news better than I.</Italian>
+		<Spanish>It is unfortunate that you would refuse to provide us aid, [CT_NAME]. I hope the council takes this news better than I.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_DEFEATED_ALOSAKA</Tag>
+		<English>Why would you do this? I only wanted to be left in peace and solitude to go about my studies.</English>
+		<French>Why would you do this? I only wanted to be left in peace and solitude to go about my studies.</French>
+		<German>Why would you do this? I only wanted to be left in peace and solitude to go about my studies.</German>
+		<Italian>Why would you do this? I only wanted to be left in peace and solitude to go about my studies.</Italian>
+		<Spanish>Why would you do this? I only wanted to be left in peace and solitude to go about my studies.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DECLARE_WAR_LEADER_THE_COUNCIL</Tag>
+		<English>After much deliberation, we have decided upon war. Prepare yourself.</English>
+		<French>After much deliberation, we have decided upon war. Prepare yourself.</French>
+		<German>After much deliberation, we have decided upon war. Prepare yourself.</German>
+		<Italian>After much deliberation, we have decided upon war. Prepare yourself.</Italian>
+		<Spanish>After much deliberation, we have decided upon war. Prepare yourself.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_THE_COUNCIL</Tag>
+		<English>Greetings, [CT_NAME]. We have heard tales of your people. It is good that we finally meet.</English>
+		<French>Greetings, [CT_NAME]. We have heard tales of your people. It is good that we finally meet.</French>
+		<German>Greetings, [CT_NAME]. We have heard tales of your people. It is good that we finally meet.</German>
+		<Italian>Greetings, [CT_NAME]. We have heard tales of your people. It is good that we finally meet.</Italian>
+		<Spanish>Greetings, [CT_NAME]. We have heard tales of your people. It is good that we finally meet.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_THE_COUNCIL</Tag>
+		<English>[CT_NAME], it is a pleasure to see you again. You are always welcome in the lands of the Chislev.</English>
+		<French>[CT_NAME], it is a pleasure to see you again. You are always welcome in the lands of the Chislev.</French>
+		<German>[CT_NAME], it is a pleasure to see you again. You are always welcome in the lands of the Chislev.</German>
+		<Italian>[CT_NAME], it is a pleasure to see you again. You are always welcome in the lands of the Chislev.</Italian>
+		<Spanish>[CT_NAME], it is a pleasure to see you again. You are always welcome in the lands of the Chislev.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_THE_COUNCIL</Tag>
+		<English>[CT_NAME], none of us here like you. And we're five different people with very diverse personalities and backgrounds, so that's quite a feat. I trust you'll make this quick before we lose our patience?</English>
+		<French>[CT_NAME], none of us here like you. And we're five different people with very diverse personalities and backgrounds, so that's quite a feat. I trust you'll make this quick before we lose our patience?</French>
+		<German>[CT_NAME], none of us here like you. And we're five different people with very diverse personalities and backgrounds, so that's quite a feat. I trust you'll make this quick before we lose our patience?</German>
+		<Italian>[CT_NAME], none of us here like you. And we're five different people with very diverse personalities and backgrounds, so that's quite a feat. I trust you'll make this quick before we lose our patience?</Italian>
+		<Spanish>[CT_NAME], none of us here like you. And we're five different people with very diverse personalities and backgrounds, so that's quite a feat. I trust you'll make this quick before we lose our patience?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_CA_LEADER_THE_COUNCIL</Tag>
+		<English>Greetings, [CT_NAME]. How may the Chislev be of assistance today?</English>
+		<French>Greetings, [CT_NAME]. How may the Chislev be of assistance today?</French>
+		<German>Greetings, [CT_NAME]. How may the Chislev be of assistance today?</German>
+		<Italian>Greetings, [CT_NAME]. How may the Chislev be of assistance today?</Italian>
+		<Spanish>Greetings, [CT_NAME]. How may the Chislev be of assistance today?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_LEADER_THE_COUNCIL</Tag>
+		<English>This is something that the Chislev could use. Can you provide it?</English>
+		<French>This is something that the Chislev could use. Can you provide it?</French>
+		<German>This is something that the Chislev could use. Can you provide it?</German>
+		<Italian>This is something that the Chislev could use. Can you provide it?</Italian>
+		<Spanish>This is something that the Chislev could use. Can you provide it?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_LEADER_THE_COUNCIL</Tag>
+		<English>It was a three to two vote to ask for this before taking it by force. I trust that you'll give this to us, so as not to swing the voting the other way.</English>
+		<French>It was a three to two vote to ask for this before taking it by force. I trust that you'll give this to us, so as not to swing the voting the other way.</French>
+		<German>It was a three to two vote to ask for this before taking it by force. I trust that you'll give this to us, so as not to swing the voting the other way.</German>
+		<Italian>It was a three to two vote to ask for this before taking it by force. I trust that you'll give this to us, so as not to swing the voting the other way.</Italian>
+		<Spanish>It was a three to two vote to ask for this before taking it by force. I trust that you'll give this to us, so as not to swing the voting the other way.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_LEADER_THE_COUNCIL</Tag>
+		<English>It is not easy for any of us to ask things of others, but if you would not mind giving us this, we would be eternally grateful.</English>
+		<French>It is not easy for any of us to ask things of others, but if you would not mind giving us this, we would be eternally grateful.</French>
+		<German>It is not easy for any of us to ask things of others, but if you would not mind giving us this, we would be eternally grateful.</German>
+		<Italian>It is not easy for any of us to ask things of others, but if you would not mind giving us this, we would be eternally grateful.</Italian>
+		<Spanish>It is not easy for any of us to ask things of others, but if you would not mind giving us this, we would be eternally grateful.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_THE_COUNCIL</Tag>
+		<English>Not all of our tribes are ready for peace. Come back later, and perhaps we could consider a deal.</English>
+		<French>Not all of our tribes are ready for peace. Come back later, and perhaps we could consider a deal.</French>
+		<German>Not all of our tribes are ready for peace. Come back later, and perhaps we could consider a deal.</German>
+		<Italian>Not all of our tribes are ready for peace. Come back later, and perhaps we could consider a deal.</Italian>
+		<Spanish>Not all of our tribes are ready for peace. Come back later, and perhaps we could consider a deal.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_PEACE_LEADER_THE_COUNCIL</Tag>
+		<English>Thank you for agreeing to peace, [CT_NAME]. Most of our tribes believe that this is in our best interest.</English>
+		<French>Thank you for agreeing to peace, [CT_NAME]. Most of our tribes believe that this is in our best interest.</French>
+		<German>Thank you for agreeing to peace, [CT_NAME]. Most of our tribes believe that this is in our best interest.</German>
+		<Italian>Thank you for agreeing to peace, [CT_NAME]. Most of our tribes believe that this is in our best interest.</Italian>
+		<Spanish>Thank you for agreeing to peace, [CT_NAME]. Most of our tribes believe that this is in our best interest.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_THE_COUNCIL</Tag>
+		<English>Now is not the time to make peace, but we will convene with the tribes and see what deals may be worked out in the future.</English>
+		<French>Now is not the time to make peace, but we will convene with the tribes and see what deals may be worked out in the future.</French>
+		<German>Now is not the time to make peace, but we will convene with the tribes and see what deals may be worked out in the future.</German>
+		<Italian>Now is not the time to make peace, but we will convene with the tribes and see what deals may be worked out in the future.</Italian>
+		<Spanish>Now is not the time to make peace, but we will convene with the tribes and see what deals may be worked out in the future.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_OFFER_PEACE_LEADER_THE_COUNCIL</Tag>
+		<English>We have decided that it is time to end this war. Don't you agree?</English>
+		<French>We have decided that it is time to end this war. Don't you agree?</French>
+		<German>We have decided that it is time to end this war. Don't you agree?</German>
+		<Italian>We have decided that it is time to end this war. Don't you agree?</Italian>
+		<Spanish>We have decided that it is time to end this war. Don't you agree?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_ACCEPT_LEADER_THE_COUNCIL</Tag>
+		<English>Give us a moment to talk to over. Okay, yes. We find that deal to be agreeable.</English>
+		<French>Give us a moment to talk to over. Okay, yes. We find that deal to be agreeable.</French>
+		<German>Give us a moment to talk to over. Okay, yes. We find that deal to be agreeable.</German>
+		<Italian>Give us a moment to talk to over. Okay, yes. We find that deal to be agreeable.</Italian>
+		<Spanish>Give us a moment to talk to over. Okay, yes. We find that deal to be agreeable.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REJECT_LEADER_THE_COUNCIL</Tag>
+		<English>We stand unanimously when I say this: no. Come up with something better.</English>
+		<French>We stand unanimously when I say this: no. Come up with something better.</French>
+		<German>We stand unanimously when I say this: no. Come up with something better.</German>
+		<Italian>We stand unanimously when I say this: no. Come up with something better.</Italian>
+		<Spanish>We stand unanimously when I say this: no. Come up with something better.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_THANKS_LEADER_THE_COUNCIL</Tag>
+		<English>We speak on behalf of all of the tribes when we say that the Chislev people truly thank you.</English>
+		<French>We speak on behalf of all of the tribes when we say that the Chislev people truly thank you.</French>
+		<German>We speak on behalf of all of the tribes when we say that the Chislev people truly thank you.</German>
+		<Italian>We speak on behalf of all of the tribes when we say that the Chislev people truly thank you.</Italian>
+		<Spanish>We speak on behalf of all of the tribes when we say that the Chislev people truly thank you.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_REJECTED_LEADER_THE_COUNCIL</Tag>
+		<English>It is unfortunate that you would disagree with this proposal. We will have to discuss amongst ourselves the most appropriate response to this regrettable surprise.</English>
+		<French>It is unfortunate that you would disagree with this proposal. We will have to discuss amongst ourselves the most appropriate response to this regrettable surprise.</French>
+		<German>It is unfortunate that you would disagree with this proposal. We will have to discuss amongst ourselves the most appropriate response to this regrettable surprise.</German>
+		<Italian>It is unfortunate that you would disagree with this proposal. We will have to discuss amongst ourselves the most appropriate response to this regrettable surprise.</Italian>
+		<Spanish>It is unfortunate that you would disagree with this proposal. We will have to discuss amongst ourselves the most appropriate response to this regrettable surprise.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_DEFEATED_THE_COUNCIL</Tag>
+		<English>For all that we were doing for the betterment of Erebus, you decide the best course of action is to eliminate us? You may destroy us as a nation, but we are a vengeful people, and you won't kill us all. For those of us you do kill, our spirits will haunt you until the End of Days.</English>
+		<French>For all that we were doing for the betterment of Erebus, you decide the best course of action is to eliminate us? You may destroy us as a nation, but we are a vengeful people, and you won't kill us all. For those of us you do kill, our spirits will haunt you until the End of Days.</French>
+		<German>For all that we were doing for the betterment of Erebus, you decide the best course of action is to eliminate us? You may destroy us as a nation, but we are a vengeful people, and you won't kill us all. For those of us you do kill, our spirits will haunt you until the End of Days.</German>
+		<Italian>For all that we were doing for the betterment of Erebus, you decide the best course of action is to eliminate us? You may destroy us as a nation, but we are a vengeful people, and you won't kill us all. For those of us you do kill, our spirits will haunt you until the End of Days.</Italian>
+		<Spanish>For all that we were doing for the betterment of Erebus, you decide the best course of action is to eliminate us? You may destroy us as a nation, but we are a vengeful people, and you won't kill us all. For those of us you do kill, our spirits will haunt you until the End of Days.</Spanish>
+	</TEXT>
+</Civ4GameText>

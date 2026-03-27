@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSpy v2006 sp1 U (http://www.altova.com) by Derek Paxton (None) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Jesse Smith (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- UnitClass Schema -->
+<Civ4UnitClassInfos xmlns="x-schema:ChislevExpansion_CIV4UnitSchema.xml">
+	<UnitClassInfos>
+		<UnitClassInfo>		<!-- Chislev Menawa -->
+			<Type>UNITCLASS_MENAWA</Type>
+			<Description>TXT_KEY_UNIT_MENAWA</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>4</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<bUnique>1</bUnique>
+			<DefaultUnit>UNIT_MENAWA</DefaultUnit>
+				<iMercenaryWeight>0</iMercenaryWeight>
+	</UnitClassInfo>
+	</UnitClassInfos>
+</Civ4UnitClassInfos>

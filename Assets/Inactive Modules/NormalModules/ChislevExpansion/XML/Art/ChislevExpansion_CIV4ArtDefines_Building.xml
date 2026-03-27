@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Firaxis Games (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Building art path information -->
+<Civ4ArtDefines xmlns="x-schema:ChislevExpansion_CIV4ArtDefinesSchema.xml">
+	<BuildingArtInfos>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_CANOE_HARBOR</Type>
+			<LSystem>LSYSTEM_LIGHTHOUSE</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.6</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Modules/ChislevExpansion/Buildings/Canoe_Harbor/NA_shipyard.nif</NIF>
+			<KFM/>
+			<Button>Art/Modules/ChislevExpansion/Buttons/Canoe_Harbor.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_WARCHIEF_HARBOR</Type>
+			<LSystem>LSYSTEM_LIGHTHOUSE</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.6</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Modules/ChislevExpansion/Buildings/Warchief_Harbor/SA_shipyard.nif</NIF>
+			<KFM/>
+			<Button>Art/Modules/ChislevExpansion/Buttons/Warchief_Harbor.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_TRIBAL_WATCHPOST</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.8</fScale>
+			<fInterfaceScale>0.6</fInterfaceScale>
+			<NIF>Art/Modules/ChislevExpansion/Buildings/Tribal_Watchpost/NA_constable.nif</NIF>
+			<KFM/>
+			<Button>Art/Modules/ChislevExpansion/Buttons/Tribal_Watchpost.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_WARCHIEF_SECURITY_COUNCIL</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.5</fScale>
+			<fInterfaceScale>0.7</fInterfaceScale>
+			<NIF>Art/Modules/ChislevExpansion/Buildings/Warchief_Security_Council/NA_admiralty.nif</NIF>
+			<KFM/>
+			<Button>Art/Modules/ChislevExpansion/Buttons/Warchief_Security_Council.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_TOTEM_OF_THE_EAGLE</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Bear Totem/Totem.nif</NIF>
+			<KFM/>
+			<Button>Art/Modules/ChislevExpansion/Buttons/EagleTotem.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_TOTEM_OF_THE_COYOTE</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Bear Totem/Totem.nif</NIF>
+			<KFM/>
+			<Button>Art/Modules/ChislevExpansion/Buttons/CoyoteTotem.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_TOTEM_OF_THE_SERPENT</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Bear Totem/Totem.nif</NIF>
+			<KFM/>
+			<Button>Art/Modules/ChislevExpansion/Buttons/SerpentTotem.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_TOTEM_OF_THE_TORTOISE</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Bear Totem/Totem.nif</NIF>
+			<KFM/>
+			<Button>Art/Modules/ChislevExpansion/Buttons/TortoiseTotem.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_TOTEM_OF_THE_JUNGLE</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Bear Totem/Totem.nif</NIF>
+			<KFM/>
+			<Button>Art/Modules/ChislevExpansion/Buttons/JungleTotem.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_TOTEM_OF_THE_SEA</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Bear Totem/Totem.nif</NIF>
+			<KFM/>
+			<Button>Art/Modules/ChislevExpansion/Buttons/SeaTotem.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_TOTEM_OF_THE_EARTH</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Bear Totem/Totem.nif</NIF>
+			<KFM/>
+			<Button>Art/Modules/ChislevExpansion/Buttons/EarthTotem.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_TOTEM_OF_WAR</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Bear Totem/Totem.nif</NIF>
+			<KFM/>
+			<Button>Art/Modules/ChislevExpansion/Buttons/WarTotem.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_TOTEM_OF_ENLIGHTENMENT</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Bear Totem/Totem.nif</NIF>
+			<KFM/>
+			<Button>Art/Modules/ChislevExpansion/Buttons/EnlightenmentTotem.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_TOTEM_OF_THE_FLAMES</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Bear Totem/Totem.nif</NIF>
+			<KFM/>
+			<Button>Art/Modules/ChislevExpansion/Buttons/FlameTotem.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_TOTEM_OF_THE_FROST</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Bear Totem/Totem.nif</NIF>
+			<KFM/>
+			<Button>Art/Modules/ChislevExpansion/Buttons/FrostTotem.dds</Button>
+		</BuildingArtInfo>
+	</BuildingArtInfos>
+</Civ4ArtDefines>
