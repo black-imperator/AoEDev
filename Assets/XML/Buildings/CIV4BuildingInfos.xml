@@ -8875,6 +8875,282 @@
 				</Flavor>
 			</Flavors>
 		</BuildingInfo>
+		<BuildingInfo>		<!-- Clan Structure                                               Chislev UB -->
+			<BuildingClass>BUILDINGCLASS_CLAN_STRUCTURE</BuildingClass>
+			<Type>BUILDING_CLAN_STRUCTURE</Type>
+			<Description>TXT_KEY_BUILDING_CLAN_STRUCTURE</Description>
+			<Civilopedia>TXT_KEY_BUILDING_CLAN_STRUCTURE_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_ELDER_COUNCIL</ArtDefineTag>
+			<iAIWeight>30</iAIWeight>
+			<ProductionTraits>
+				<ProductionTrait>
+					<ProductionTraitType>TRAIT_ORGANIZED</ProductionTraitType>
+					<iProductionTrait>100</iProductionTrait>
+				</ProductionTrait>
+			</ProductionTraits>
+			<iCost>-1</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iConquestProb>-100</iConquestProb>
+			<iMaintenanceModifier>-40</iMaintenanceModifier>
+			<iAsset>4</iAsset>
+			<fVisibilityPriority>10</fVisibilityPriority>
+			<ConstructSound>AS2D_BUILD_COURTHOUSE</ConstructSound>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_GOLD</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+			<iCrime>-5</iCrime>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Clan Structure   - Mound                                            Chislev UB -->
+			<BuildingClass>BUILDINGCLASS_CLAN_STRUCTURE_MOUND</BuildingClass>
+			<Type>BUILDING_CLAN_STRUCTURE_MOUND</Type>
+			<Description>TXT_KEY_BUILDING_CLAN_STRUCTURE_MOUND</Description>
+			<Civilopedia>TXT_KEY_BUILDING_CLAN_STRUCTURE_MOUND_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_HUNTERS_HALL</ArtDefineTag>
+			<PrereqTech>TECH_ARCANE_LORE</PrereqTech>
+			<iAIWeight>30</iAIWeight>
+			<iCityCapModifier>7</iCityCapModifier>
+			<ProductionTraits>
+				<ProductionTrait>
+					<ProductionTraitType>TRAIT_ORGANIZED</ProductionTraitType>
+					<iProductionTrait>100</iProductionTrait>
+				</ProductionTrait>
+			</ProductionTraits>
+			<iCost>100</iCost>
+			<iConquestProb>-100</iConquestProb>
+			<iAsset>4</iAsset>
+			<fVisibilityPriority>10</fVisibilityPriority>
+			<ConstructSound>AS2D_BUILD_COURTHOUSE</ConstructSound>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_GOLD</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+			<iCrime>-5</iCrime>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Clan Structure      - Lodge                                         Chislev UB -->
+			<BuildingClass>BUILDINGCLASS_CLAN_STRUCTURE_LODGE</BuildingClass>
+			<Type>BUILDING_CLAN_STRUCTURE_LODGE</Type>
+			<Description>TXT_KEY_BUILDING_CLAN_STRUCTURE_LODGE</Description>
+			<Civilopedia>TXT_KEY_BUILDING_CLAN_STRUCTURE_MOUND_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_HUNTERS_HALL</ArtDefineTag>
+			<PrereqTech>TECH_SORCERY</PrereqTech>
+			<iAIWeight>30</iAIWeight>
+			<iCityCapModifier>7</iCityCapModifier>
+			<ProductionTraits>
+				<ProductionTrait>
+					<ProductionTraitType>TRAIT_ORGANIZED</ProductionTraitType>
+					<iProductionTrait>100</iProductionTrait>
+				</ProductionTrait>
+			</ProductionTraits>
+			<iCost>150</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iConquestProb>-100</iConquestProb>
+			<iAsset>4</iAsset>
+			<fVisibilityPriority>10</fVisibilityPriority>
+			<ConstructSound>AS2D_BUILD_COURTHOUSE</ConstructSound>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_GOLD</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+			<iCrime>-5</iCrime>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Clan Structure         - Council                                      Chislev UB -->
+			<BuildingClass>BUILDINGCLASS_CLAN_STRUCTURE_COUNCIL</BuildingClass>
+			<Type>BUILDING_CLAN_STRUCTURE_COUNCIL</Type>
+			<Description>TXT_KEY_BUILDING_CLAN_STRUCTURE_COUNCIL</Description>
+			<Civilopedia>TXT_KEY_BUILDING_CLAN_STRUCTURE_MOUND_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_HUNTERS_HALL</ArtDefineTag>
+			<PrereqTech>TECH_ARCANE_LORE</PrereqTech>
+			<iAIWeight>30</iAIWeight>
+			<iCityCapModifier>7</iCityCapModifier>
+			<ProductionTraits>
+				<ProductionTrait>
+					<ProductionTraitType>TRAIT_ORGANIZED</ProductionTraitType>
+					<iProductionTrait>100</iProductionTrait>
+				</ProductionTrait>
+			</ProductionTraits>
+			<iCost>225</iCost>
+			<iConquestProb>-100</iConquestProb>
+			<iAsset>4</iAsset>
+			<fVisibilityPriority>10</fVisibilityPriority>
+			<ConstructSound>AS2D_BUILD_COURTHOUSE</ConstructSound>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_GOLD</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+			<iCrime>-5</iCrime>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Root Cellar - Chislev UB -->
+			<BuildingClass>BUILDINGCLASS_GRANARY</BuildingClass>
+			<Type>BUILDING_ROOT_CELLAR</Type>
+			<Description>TXT_KEY_BUILDING_ROOT_CELLAR</Description>
+			<Civilopedia>TXT_KEY_BUILDING_ROOT_CELLAR_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_GRANARY_STRATEGY</Strategy>
+			<Advisor>ADVISOR_GROWTH</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_GRANARY</ArtDefineTag>
+			<PrereqTech>TECH_AGRICULTURE</PrereqTech>
+			<ProductionTraits>
+				<ProductionTrait>
+					<ProductionTraitType>TRAIT_EXPANSIVE</ProductionTraitType>
+					<iProductionTrait>100</iProductionTrait>
+				</ProductionTrait>
+			</ProductionTraits>
+			<iAIWeight>10</iAIWeight>
+			<iCost>90</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iConquestProb>25</iConquestProb>
+			<iFoodKept>15</iFoodKept>
+			<iAsset>3</iAsset>
+			<fVisibilityPriority>10</fVisibilityPriority>
+			<ConstructSound>AS2D_BUILD_GRANARY</ConstructSound>
+			<BonusHappinessChanges>
+				<BonusHappinessChange>
+					<BonusType>BONUS_CORN</BonusType>
+					<iHappinessChange>2</iHappinessChange>
+				</BonusHappinessChange>
+			</BonusHappinessChanges>
+			<BonusCommerceModifiers>
+				<BonusCommerceModifier>
+					<BonusType>BONUS_CORN</BonusType>
+					<CommerceModifiers>
+						<iCommerce>0</iCommerce>
+						<iCommerce>0</iCommerce>
+						<iCommerce>5</iCommerce>
+					</CommerceModifiers>
+				</BonusCommerceModifier>
+				<BonusCommerceModifier>
+					<BonusType>BONUS_WHEAT</BonusType>
+					<CommerceModifiers>
+						<iCommerce>0</iCommerce>
+						<iCommerce>0</iCommerce>
+						<iCommerce>5</iCommerce>
+					</CommerceModifiers>
+				</BonusCommerceModifier>
+				<BonusCommerceModifier>
+					<BonusType>BONUS_RICE</BonusType>
+					<CommerceModifiers>
+						<iCommerce>0</iCommerce>
+						<iCommerce>0</iCommerce>
+						<iCommerce>5</iCommerce>
+					</CommerceModifiers>
+				</BonusCommerceModifier>
+			</BonusCommerceModifiers>
+			<BonusYieldModifiers>
+				<BonusYieldModifier>
+					<BonusType>BONUS_CORN</BonusType>
+					<YieldModifiers>
+						<iYield>5</iYield>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+					</YieldModifiers>
+				</BonusYieldModifier>
+				<BonusYieldModifier>
+					<BonusType>BONUS_WHEAT</BonusType>
+					<YieldModifiers>
+						<iYield>5</iYield>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+					</YieldModifiers>
+				</BonusYieldModifier>
+				<BonusYieldModifier>
+					<BonusType>BONUS_RICE</BonusType>
+					<YieldModifiers>
+						<iYield>5</iYield>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+					</YieldModifiers>
+				<BonusYieldModifier>
+					<BonusType>BONUS_CORN</BonusType>
+					<YieldModifiers>
+						<iYield>5</iYield>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+					</YieldModifiers>
+				</BonusYieldModifier>
+			</BonusYieldModifier>
+			</BonusYieldModifiers>
+			<BonusHealthChanges>
+				<BonusHealthChange>
+					<BonusType>BONUS_CORN</BonusType>
+					<iHealthChange>1</iHealthChange>
+				</BonusHealthChange>
+				<BonusHealthChange>
+					<BonusType>BONUS_RICE</BonusType>
+					<iHealthChange>1</iHealthChange>
+				</BonusHealthChange>
+				<BonusHealthChange>
+					<BonusType>BONUS_WHEAT</BonusType>
+					<iHealthChange>1</iHealthChange>
+				</BonusHealthChange>
+			</BonusHealthChanges>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Yunwi Forge              Chislev UB -->
+			<BuildingClass>BUILDINGCLASS_FORGE</BuildingClass>
+			<Type>BUILDING_FORGE_CHISLEV</Type>
+			<Description>TXT_KEY_BUILDING_FORGE_CHISLEV</Description>
+			<Civilopedia>TXT_KEY_BUILDING_FORGE_CHISLEV_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_FORGE_STRATEGY</Strategy>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_FORGE</ArtDefineTag>
+			<PrereqTech>TECH_SMELTING</PrereqTech>
+			<FreePromotion>PROMOTION_LONG_KNIFE</FreePromotion>
+			<ProductionTraits>
+				<ProductionTrait>
+					<ProductionTraitType>TRAIT_INDUSTRIOUS</ProductionTraitType>
+					<iProductionTrait>100</iProductionTrait>
+				</ProductionTrait>
+			</ProductionTraits>
+			<iAIWeight>10</iAIWeight>
+			<iCost>250</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iConquestProb>25</iConquestProb>
+			<iAsset>4</iAsset>
+			<iPower>2</iPower>
+			<fVisibilityPriority>10</fVisibilityPriority>
+			<YieldModifiers>
+				<iYield>0</iYield>
+				<iYield>25</iYield>
+				<iYield>0</iYield>
+			</YieldModifiers>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
+			<ConstructSound>AS2D_BUILD_FORGE</ConstructSound>
+			<BonusHappinessChanges>
+				<BonusHappinessChange>
+					<BonusType>BONUS_GOLD</BonusType>
+					<iHappinessChange>1</iHappinessChange>
+				</BonusHappinessChange>
+			</BonusHappinessChanges>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+			<RemovePromotion>PROMOTION_RUSTED</RemovePromotion>
+		</BuildingInfo>
 		<BuildingInfo>		<!-- Medicine Hut                                               Chislev UB -->
 			<BuildingClass>BUILDINGCLASS_ALCHEMY_LAB</BuildingClass>
 			<Type>BUILDING_MEDICINE_HUT</Type>
@@ -9005,6 +9281,10 @@
 			<SpecialistCounts>
 				<SpecialistCount>
 					<SpecialistType>SPECIALIST_HEALER</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
 					<iSpecialistCount>1</iSpecialistCount>
 				</SpecialistCount>
 			</SpecialistCounts>
@@ -9576,7 +9856,8 @@
 			<Civilopedia>TXT_KEY_BUILDING_PALACE_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_PALACE_CHISLEV</ArtDefineTag>
-			<FreeBonus>BONUS_MANA_EARTH</FreeBonus>
+			<FreeBuilding>BUILDINGCLASS_CLAN_STRUCTURE</FreeBuilding>
+			<FreeBonus>BONUS_MANA_LIFE</FreeBonus>
 			<iNumFreeBonuses>1</iNumFreeBonuses>
 			<bCapital>1</bCapital>
 			<iHealth>2</iHealth>
@@ -9601,8 +9882,8 @@
 				<iCommerce>2</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<iCrime>-10</iCrime>
-			<FreeBonus2>BONUS_MANA_SPIRIT</FreeBonus2>
-			<FreeBonus3>BONUS_MANA_BODY</FreeBonus3>
+			<FreeBonus2>BONUS_MANA_ENCHANTMENT</FreeBonus2>
+			<FreeBonus3>BONUS_MANA_NATURE</FreeBonus3>
 		</BuildingInfo>
 		<BuildingInfo>		<!-- Palace Cualli -->
 			<BuildingClass>BUILDINGCLASS_PALACE</BuildingClass>

@@ -3649,6 +3649,58 @@
 			<DefaultBuilding>BUILDING_NEMED_BLOOD</DefaultBuilding>
 			<VictoryThresholds/>
 		</BuildingClassInfo>
+		<BuildingClassInfo><!-- Chislev Clan Structure -->
+			<Type>BUILDINGCLASS_CLAN_STRUCTURE</Type>
+			<Description>TXT_KEY_BUILDING_CLAN_STRUCTURE</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_CLAN_STRUCTURE</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo><!-- Chislev Clan Structure - Mound -->
+			<Type>BUILDINGCLASS_CLAN_STRUCTURE_MOUND</Type>
+			<Description>TXT_KEY_BUILDING_CLAN_STRUCTURE_MOUND</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_CLAN_STRUCTURE_MOUND</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo><!-- Chislev Clan Structure - Lodge -->
+			<Type>BUILDINGCLASS_CLAN_STRUCTURE_LODGE</Type>
+			<Description>TXT_KEY_BUILDING_CLAN_STRUCTURE_LODGE</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_CLAN_STRUCTURE_LODGE</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo><!-- Chislev Clan Structure - Council -->
+			<Type>BUILDINGCLASS_CLAN_STRUCTURE_COUNCIL</Type>
+			<Description>TXT_KEY_BUILDING_CLAN_STRUCTURE_COUNCIL</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_CLAN_STRUCTURE_COUNCIL</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
 		<BuildingClassInfo><!-- Chislev Totem of Old Enemy-->
 			<Type>BUILDINGCLASS_TOTEM_OF_OLD_ENEMY</Type>
 			<Description>TXT_KEY_BUILDING_TOTEM_OF_OLD_ENEMY</Description>

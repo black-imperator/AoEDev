@@ -2985,6 +2985,17 @@
 			<DefaultUnit>UNIT_MESKWAKI</DefaultUnit>
 			<iMercenaryWeight>0</iMercenaryWeight>
 		</UnitClassInfo>
+		<UnitClassInfo>		<!-- MESKWAKI -->
+			<Type>UNITCLASS_WAR_RUNNER</Type>
+			<Description>TXT_KEY_UNIT_WAR_RUNNER</Description>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<bUnique>1</bUnique>
+			<DefaultUnit>UNIT_WAR_RUNNER</DefaultUnit>
+			<iMercenaryWeight>0</iMercenaryWeight>
+		</UnitClassInfo>
 		<UnitClassInfo>		<!-- DRAGON_GUARDIAN -->
 			<Type>UNITCLASS_DRAGON_GUARDIAN</Type>
 			<Description>TXT_KEY_UNIT_DRAGON_GUARDIAN</Description>
