@@ -1256,7 +1256,7 @@
 					<UnitType>UNIT_COMMANDER_CHISLEV_WARCHIEF</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_WAR_RUNNER</UnitClassType>
+					<UnitClassType>UNITCLASS_MESKWAKI</UnitClassType>
 					<UnitType>UNIT_WAR_RUNNER</UnitType>
 				</Unit>
 				<Unit>

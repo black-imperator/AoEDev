@@ -9053,24 +9053,22 @@
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
-			<SpecialistCommerceChanges>
-				<SpecialistCommerceChange>
+				<LocalSpecialistCommerceChange>
 					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
 					<CommerceChanges>
 						<iCommerce>0</iCommerce>
 						<iCommerce>1</iCommerce>
-						<iCommerce>1</iCommerce>
+						<iCommerce>0</iCommerce>
 					</CommerceChanges>
-				</SpecialistCommerceChange>
-				<SpecialistCommerceChange>
+				</LocalSpecialistCommerceChange>
+				<LocalSpecialistCommerceChange>
 					<SpecialistType>SPECIALIST_GREAT_SCIENTIST</SpecialistType>
 					<CommerceChanges>
 						<iCommerce>0</iCommerce>
-						<iCommerce>1</iCommerce>
-						<iCommerce>1</iCommerce>
+						<iCommerce>2</iCommerce>
+						<iCommerce>0</iCommerce>
 					</CommerceChanges>
-				</SpecialistCommerceChange>
-			</SpecialistCommerceChanges>
+				</LocalSpecialistCommerceChange>
 		</BuildingInfo>
 		<BuildingInfo>		<!-- Root Cellar - Chislev UB -->
 			<BuildingClass>BUILDINGCLASS_GRANARY</BuildingClass>

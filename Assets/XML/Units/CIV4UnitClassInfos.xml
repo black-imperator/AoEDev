@@ -2974,19 +2974,8 @@
 			<DefaultUnit>UNIT_MIQUIZTLI</DefaultUnit>
 			<iMercenaryWeight>0</iMercenaryWeight>
 		</UnitClassInfo>
-		<UnitClassInfo>		<!-- MESKWAKI -->
+		<UnitClassInfo>		<!-- MESKWAKI - War Runner -->
 			<Type>UNITCLASS_MESKWAKI</Type>
-			<Description>TXT_KEY_UNIT_MESKWAKI</Description>
-			<iMaxGlobalInstances>1</iMaxGlobalInstances>
-			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<iInstanceCostModifier>0</iInstanceCostModifier>
-			<bUnique>1</bUnique>
-			<DefaultUnit>UNIT_MESKWAKI</DefaultUnit>
-			<iMercenaryWeight>0</iMercenaryWeight>
-		</UnitClassInfo>
-		<UnitClassInfo>		<!-- MESKWAKI -->
-			<Type>UNITCLASS_WAR_RUNNER</Type>
 			<Description>TXT_KEY_UNIT_WAR_RUNNER</Description>
 			<iMaxGlobalInstances>1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
