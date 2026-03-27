@@ -8891,7 +8891,7 @@
 			</ProductionTraits>
 			<iCost>-1</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<iConquestProb>-100</iConquestProb>
+			<iConquestProb>0</iConquestProb>
 			<iMaintenanceModifier>-40</iMaintenanceModifier>
 			<iAsset>4</iAsset>
 			<fVisibilityPriority>10</fVisibilityPriority>
@@ -8921,7 +8921,7 @@
 				</ProductionTrait>
 			</ProductionTraits>
 			<iCost>100</iCost>
-			<iConquestProb>-100</iConquestProb>
+			<iConquestProb>0</iConquestProb>
 			<iAsset>4</iAsset>
 			<fVisibilityPriority>10</fVisibilityPriority>
 			<ConstructSound>AS2D_BUILD_COURTHOUSE</ConstructSound>
@@ -8943,6 +8943,8 @@
 			<PrereqTech>TECH_SORCERY</PrereqTech>
 			<iAIWeight>30</iAIWeight>
 			<iCityCapModifier>7</iCityCapModifier>
+			<iCitiesPrereq>7</iCitiesPrereq>
+			<Parent>BUILDINGCLASS_CLAN_STRUCTURE_MOUND</Parent>
 			<BuildingClassNeededs>
 				<BuildingClassNeeded>
 					<BuildingClassType>BUILDINGCLASS_CLAN_STRUCTURE_MOUND</BuildingClassType>
@@ -8957,7 +8959,7 @@
 			</ProductionTraits>
 			<iCost>150</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<iConquestProb>-100</iConquestProb>
+			<iConquestProb>0</iConquestProb>
 			<iAsset>4</iAsset>
 			<fVisibilityPriority>10</fVisibilityPriority>
 			<ConstructSound>AS2D_BUILD_COURTHOUSE</ConstructSound>
@@ -8979,12 +8981,6 @@
 			<PrereqTech>TECH_ARCANE_LORE</PrereqTech>
 			<iAIWeight>30</iAIWeight>
 			<iCityCapModifier>7</iCityCapModifier>
-			<BuildingClassNeededs>
-				<BuildingClassNeeded>
-					<BuildingClassType>BUILDINGCLASS_CLAN_STRUCTURE_LODGE</BuildingClassType>
-					<bNeededInCity>1</bNeededInCity>
-				</BuildingClassNeeded>
-			</BuildingClassNeededs>
 			<ProductionTraits>
 				<ProductionTrait>
 					<ProductionTraitType>TRAIT_ORGANIZED</ProductionTraitType>
@@ -8992,7 +8988,7 @@
 				</ProductionTrait>
 			</ProductionTraits>
 			<iCost>225</iCost>
-			<iConquestProb>-100</iConquestProb>
+			<iConquestProb>0</iConquestProb>
 			<iAsset>4</iAsset>
 			<fVisibilityPriority>10</fVisibilityPriority>
 			<ConstructSound>AS2D_BUILD_COURTHOUSE</ConstructSound>
