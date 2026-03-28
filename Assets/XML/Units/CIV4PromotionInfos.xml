@@ -35257,7 +35257,7 @@
 					<bNotCapturedUnitCombat>1</bNotCapturedUnitCombat>
 				</NotCapturedUnitCombat>
 			</NotCapturedUnitCombats>
-			<iPromotionRandomApplyChance>2</iPromotionRandomApplyChance>
+			<iPromotionRandomApplyChance>1</iPromotionRandomApplyChance>
 			<PromotionRandomApply>PROMOTION_AMICUS_COMPANION</PromotionRandomApply>
 			<UnitCombats>
 				<UnitCombat>
