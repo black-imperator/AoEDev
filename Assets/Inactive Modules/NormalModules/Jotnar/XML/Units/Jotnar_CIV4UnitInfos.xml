@@ -1850,10 +1850,6 @@
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 				<FreePromotion>
-					<PromotionType>PROMOTION_BERSERK</PromotionType>
-					<iNumApplied>1</iNumApplied>
-				</FreePromotion>
-				<FreePromotion>
 					<PromotionType>PROMOTION_JOT_POTENTIAL</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>

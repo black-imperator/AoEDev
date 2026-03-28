@@ -253,7 +253,7 @@ def spellGlimpseUnseen(caster):
         pPlot = caster.plot()
 	pPlayer = gc.getPlayer(caster.getOwner())
 	iHero = getInfoType('PROMOTION_HERO')
-	iPromotionBerserk = getInfoType('PROMOTION_ENRAGED')
+	iPromotionBerserk = getInfoType('PROMOTION_ENRAGED_AIFON')
 	iPromotionHidden = getInfoType('PROMOTION_HIDDEN_NATIONALITY')
 	iPromotionHeld = getInfoType('PROMOTION_LEASH_4')
 	iAifonTeam = pPlayer.getTeam()
