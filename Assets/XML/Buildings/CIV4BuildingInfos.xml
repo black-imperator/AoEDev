@@ -8912,7 +8912,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_HUNTERS_HALL</ArtDefineTag>
 			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
-			<iAIWeight>30</iAIWeight>
+			<iAIWeight>9999</iAIWeight>
 			<iCityCapModifier>7</iCityCapModifier>
 			<Parent>BUILDINGCLASS_CLAN_STRUCTURE</Parent>
 			<ProductionTraits>
@@ -8941,8 +8941,8 @@
 			<Civilopedia>TXT_KEY_BUILDING_CLAN_STRUCTURE_MOUND_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_HUNTERS_HALL</ArtDefineTag>
-			<PrereqTech>TECH_FEUDALISM</PrereqTech>
-			<iAIWeight>30</iAIWeight>
+			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
+			<iAIWeight>9999</iAIWeight>
 			<iCityCapModifier>7</iCityCapModifier>
 			<iCitiesPrereq>7</iCitiesPrereq>
 			<Parent>BUILDINGCLASS_CLAN_STRUCTURE</Parent>
@@ -8980,8 +8980,8 @@
 			<Civilopedia>TXT_KEY_BUILDING_CLAN_STRUCTURE_MOUND_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_HUNTERS_HALL</ArtDefineTag>
-			<PrereqTech>TECH_SORCERY</PrereqTech>
-			<iAIWeight>30</iAIWeight>
+			<PrereqTech>TECH_FEUDALISM</PrereqTech>
+			<iAIWeight>9999</iAIWeight>
 			<iCityCapModifier>7</iCityCapModifier>
 			<Parent>BUILDINGCLASS_CLAN_STRUCTURE</Parent>
 			<BuildingClassNeededs>
@@ -9024,7 +9024,7 @@
 					<iProductionTrait>100</iProductionTrait>
 				</ProductionTrait>
 			</ProductionTraits>
-			<iAIWeight>30</iAIWeight>
+			<iAIWeight>90</iAIWeight>
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>25</iConquestProb>
@@ -9053,6 +9053,7 @@
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
+			<LocalSpecialistCommerceChanges>
 				<LocalSpecialistCommerceChange>
 					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
 					<CommerceChanges>
@@ -9069,6 +9070,7 @@
 						<iCommerce>0</iCommerce>
 					</CommerceChanges>
 				</LocalSpecialistCommerceChange>
+			</LocalSpecialistCommerceChanges>
 		</BuildingInfo>
 		<BuildingInfo>		<!-- Root Cellar - Chislev UB -->
 			<BuildingClass>BUILDINGCLASS_GRANARY</BuildingClass>
