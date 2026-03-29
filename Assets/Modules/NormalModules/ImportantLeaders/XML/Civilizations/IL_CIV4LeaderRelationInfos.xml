@@ -43,8 +43,8 @@
 		<LeaderRelationInfo>
 			<Type>LEADERRELATION_ROULAN</Type>
 			<bTypeDependency>1</bTypeDependency>
-				<AndDependencyTypes>
-			<DependencyType>MODULE_DAO</DependencyType>
+			<AndDependencyTypes>
+				<DependencyType>MODULE_DAO</DependencyType>
 			</AndDependencyTypes>
 			<Leader>LEADER_RUOLAN</Leader>
 			<LeaderAttitudeChanges>

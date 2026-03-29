@@ -240,5 +240,187 @@
 				</FreeUnitClass>
 			</FreeUnitClasses>
 		</CivilizationInfo>
+		<CivilizationInfo><!-- Dao -->
+			<Type>CIVILIZATION_DAO</Type>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_NOMAD_WAGON</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+			<bTypeDependency>1</bTypeDependency>
+			<AndDependencyTypes>
+				<DependencyType>MODULE_DAO</DependencyType>
+			</AndDependencyTypes>
+		</CivilizationInfo>
+		<CivilizationInfo><!-- Dural -->
+			<Type>CIVILIZATION_DURAL</Type>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_NOMAD_WAGON</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+			<bTypeDependency>1</bTypeDependency>
+			<AndDependencyTypes>
+				<DependencyType>MODULE_DURAL</DependencyType>
+			</AndDependencyTypes>
+		</CivilizationInfo>
+		<CivilizationInfo><!-- Jotnar -->
+			<Type>CIVILIZATION_JOTNAR</Type>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_NOMAD_WAGON</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+			<bTypeDependency>1</bTypeDependency>
+			<AndDependencyTypes>
+				<DependencyType>MODULE_JOTNAR</DependencyType>
+			</AndDependencyTypes>
+		</CivilizationInfo>
+		<CivilizationInfo><!-- Bezeri -->
+			<Type>CIVILIZATION_BEZERI</Type>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_NOMAD_WAGON</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+			<bTypeDependency>1</bTypeDependency>
+			<AndDependencyTypes>
+				<DependencyType>MODULE_VICIOUSSEAS</DependencyType>
+			</AndDependencyTypes>
+		</CivilizationInfo>
+		<CivilizationInfo><!-- Dream Aifons -->
+			<Type>CIVILIZATION_DREAM_AIFONS</Type>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_NOMAD_WAGON</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+			<bTypeDependency>1</bTypeDependency>
+			<AndDependencyTypes>
+				<DependencyType>MODULE_VICIOUSSEAS</DependencyType>
+			</AndDependencyTypes>
+		</CivilizationInfo>
+		<CivilizationInfo><!-- Hamstalfar -->
+			<Type>CIVILIZATION_HAMSTALFAR</Type>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_NOMAD_WAGON</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+			<bTypeDependency>1</bTypeDependency>
+			<AndDependencyTypes>
+				<DependencyType>MODULE_HAMSTALFAR</DependencyType>
+			</AndDependencyTypes>
+		</CivilizationInfo>
+		<CivilizationInfo><!-- Goblins -->
+			<Type>CIVILIZATION_GOBLIN</Type>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_NOMAD_WAGON</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+			<bTypeDependency>1</bTypeDependency>
+			<AndDependencyTypes>
+				<DependencyType>MODULE_GOBLIN</DependencyType>
+			</AndDependencyTypes>
+		</CivilizationInfo>
+		<CivilizationInfo><!-- Aos -->
+			<Type>CIVILIZATION_AOSNISIRA</Type>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_NOMAD_WAGON</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+			<bTypeDependency>1</bTypeDependency>
+			<AndDependencyTypes>
+				<DependencyType>MODULE_DRACKAOSNISIRA</DependencyType>
+			</AndDependencyTypes>
+		</CivilizationInfo>
+		<CivilizationInfo><!-- Bey -->
+			<Type>CIVILIZATION_COURTOFBEY</Type>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_NOMAD_WAGON</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+			<bTypeDependency>1</bTypeDependency>
+			<AndDependencyTypes>
+				<DependencyType>MODULE_DRACKAOSNISIRA</DependencyType>
+			</AndDependencyTypes>
+		</CivilizationInfo>
+		<CivilizationInfo><!-- Mushroom Fairies -->
+			<Type>CIVILIZATION_COURTOFFALYN</Type>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_NOMAD_WAGON</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+			<bTypeDependency>1</bTypeDependency>
+			<AndDependencyTypes>
+				<DependencyType>MODULE_DRACKAOSNISIRA</DependencyType>
+			</AndDependencyTypes>
+		</CivilizationInfo>
+		<CivilizationInfo><!-- Namko -->
+			<Type>CIVILIZATION_NAMKO</Type>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_NOMAD_WAGON</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+			<bTypeDependency>1</bTypeDependency>
+			<AndDependencyTypes>
+				<DependencyType>MODULE_NAMKO</DependencyType>
+			</AndDependencyTypes>
+		</CivilizationInfo>
+		<CivilizationInfo><!-- TEUHALI -->
+			<Type>CIVILIZATION_TEUHALI</Type>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_NOMAD_WAGON</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+			<bTypeDependency>1</bTypeDependency>
+			<AndDependencyTypes>
+				<DependencyType>MODULE_TEUHALI</DependencyType>
+			</AndDependencyTypes>
+		</CivilizationInfo>
+		<CivilizationInfo><!-- Frozen -->
+			<Type>CIVILIZATION_FROZEN</Type>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_NOMAD_WAGON</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+			<bTypeDependency>1</bTypeDependency>
+			<AndDependencyTypes>
+				<DependencyType>MODULE_FROZEN</DependencyType>
+			</AndDependencyTypes>
+		</CivilizationInfo>
+		<CivilizationInfo><!-- Eert -->
+			<Type>CIVILIZATION_EERT</Type>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_NOMAD_WAGON</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+			<bTypeDependency>1</bTypeDependency>
+			<AndDependencyTypes>
+				<DependencyType>MODULE_KCZ_WOODS</DependencyType>
+			</AndDependencyTypes>
+		</CivilizationInfo>
 	</CivilizationInfos>
 </Civ4CivilizationInfos>
