@@ -916,7 +916,7 @@
 				</TerrainMakesValid>
 			</TerrainMakesValids>
 			<ImprovementUpgrade>IMPROVEMENTCLASS_DREDGE_HEEP</ImprovementUpgrade>
-			<iAppearanceProbability>65</iAppearanceProbability>
+			<iAppearanceProbability>45</iAppearanceProbability>
 			<SpawnUnitType>UNIT_DROWN</SpawnUnitType>
 			<ImmediateSpawnUnitType>UNIT_DROWN</ImmediateSpawnUnitType>
 			<SpawnUnitCiv>CIVILIZATION_DEMON</SpawnUnitCiv>
@@ -933,11 +933,11 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
-			<iLairCreationWeight>70</iLairCreationWeight>
+			<iLairCreationWeight>55</iLairCreationWeight>
 			<LairCreationWeightTechs>
 				<LairCreationWeightTech>
 					<LairCreationWeightTechType>TECH_NECROMANCY</LairCreationWeightTechType>
-					<iLairCreationWeightTech>-70</iLairCreationWeightTech>
+					<iLairCreationWeightTech>-55</iLairCreationWeightTech>
 				</LairCreationWeightTech>
 			</LairCreationWeightTechs>
 			<LairUpgradeTechs>
@@ -1001,11 +1001,11 @@
 			<LairCreationWeightTechs>
 				<LairCreationWeightTech>
 					<LairCreationWeightTechType>TECH_NECROMANCY</LairCreationWeightTechType>
-					<iLairCreationWeightTech>70</iLairCreationWeightTech>
+					<iLairCreationWeightTech>55</iLairCreationWeightTech>
 				</LairCreationWeightTech>
 				<LairCreationWeightTech>
 					<LairCreationWeightTechType>TECH_MALEVOLENT_DESIGNS</LairCreationWeightTechType>
-					<iLairCreationWeightTech>-70</iLairCreationWeightTech>
+					<iLairCreationWeightTech>-55</iLairCreationWeightTech>
 				</LairCreationWeightTech>
 			</LairCreationWeightTechs>
 			<LairUpgradeTechs>
@@ -1070,7 +1070,7 @@
 			<LairCreationWeightTechs>
 				<LairCreationWeightTech>
 					<LairCreationWeightTechType>TECH_MALEVOLENT_DESIGNS</LairCreationWeightTechType>
-					<iLairCreationWeightTech>70</iLairCreationWeightTech>
+					<iLairCreationWeightTech>55</iLairCreationWeightTech>
 				</LairCreationWeightTech>
 			</LairCreationWeightTechs>
 			<SpawnPromotions>
