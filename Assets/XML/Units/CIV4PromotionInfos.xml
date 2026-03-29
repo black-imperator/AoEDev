@@ -34232,7 +34232,7 @@
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Militia -->
 			<Type>PROMOTION_MILITIA</Type>
-			<Description>TXT_KEY_UNIT_MILITIA</Description>
+			<Description>TXT_KEY_PROMOTION_MILITIA_MEKARA</Description>
 			<PrereqCivilizations>
 				<PrereqCivilization>CIVILIZATION_MEKARA_V2</PrereqCivilization>
 			</PrereqCivilizations>

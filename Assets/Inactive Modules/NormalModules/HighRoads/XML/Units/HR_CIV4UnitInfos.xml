@@ -106,6 +106,48 @@
 		        <DependencyType>MODULE_VICIOUSSEAS</DependencyType>
 		     </AndDependencyTypes>
 		</UnitInfo>
+		<UnitInfo>        <!-- Khazad Engineers Adept -->
+			<Class>UNITCLASS_ADEPT</Class>
+			<Type>UNIT_DWARVEN_ENGINEERS_APRENTICE</Type>
+			<Builds>
+				<Build>
+					<BuildType>BUILD_IMPERIAL_ROAD</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+			</Builds>
+			
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_DWARVES</DependencyType>
+		     </AndDependencyTypes>
+		</UnitInfo>
+		<UnitInfo>        <!-- Khazad Engineers Mage -->
+			<Class>UNITCLASS_MAGE</Class>
+			<Type>UNIT_DWARVEN_ENGINEER</Type>
+			<Builds>
+				<Build>
+					<BuildType>BUILD_IMPERIAL_ROAD</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+			</Builds>
+			
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_DWARVES</DependencyType>
+		     </AndDependencyTypes>
+		</UnitInfo>
+		<UnitInfo>        <!-- Khazad Engineers Archmage -->
+			<Class>UNITCLASS_ARCHMAGE</Class>
+			<Type>UNIT_DWARVEN_MASTER_ENGINEER</Type>
+			<Builds>
+				<Build>
+					<BuildType>BUILD_IMPERIAL_ROAD</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+			</Builds>
+			
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_DWARVES</DependencyType>
+		     </AndDependencyTypes>
+		</UnitInfo>
 	
 		</UnitInfos>
 </Civ4UnitInfos>

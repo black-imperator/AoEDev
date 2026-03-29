@@ -37262,6 +37262,13 @@
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 			</FreePromotions>
+			<AllowPromotions>
+				<Promotion>PROMOTION_EMPOWER1</Promotion>
+				<Promotion>PROMOTION_EMPOWER2</Promotion>
+				<Promotion>PROMOTION_EMPOWER3</Promotion>
+				<Promotion>PROMOTION_EMPOWER4</Promotion>
+				<Promotion>PROMOTION_EMPOWER5</Promotion>
+			</AllowPromotions>
 			<bExplodeInCombat>1</bExplodeInCombat>
 			<bNoWarWeariness>1</bNoWarWeariness>
 			<iTier>3</iTier>
@@ -37769,6 +37776,13 @@
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 			</FreePromotions>
+			<AllowPromotions>
+				<Promotion>PROMOTION_EMPOWER1</Promotion>
+				<Promotion>PROMOTION_EMPOWER2</Promotion>
+				<Promotion>PROMOTION_EMPOWER3</Promotion>
+				<Promotion>PROMOTION_EMPOWER4</Promotion>
+				<Promotion>PROMOTION_EMPOWER5</Promotion>
+			</AllowPromotions>
 			<bExplodeInCombat>1</bExplodeInCombat>
 			<bNoWarWeariness>1</bNoWarWeariness>
 			<iTier>4</iTier>
@@ -38159,6 +38173,13 @@
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 			</FreePromotions>
+			<AllowPromotions>
+				<Promotion>PROMOTION_EMPOWER1</Promotion>
+				<Promotion>PROMOTION_EMPOWER2</Promotion>
+				<Promotion>PROMOTION_EMPOWER3</Promotion>
+				<Promotion>PROMOTION_EMPOWER4</Promotion>
+				<Promotion>PROMOTION_EMPOWER5</Promotion>
+			</AllowPromotions>
 			<bExplodeInCombat>1</bExplodeInCombat>
 			<bNoWarWeariness>1</bNoWarWeariness>
 			<iTier>3</iTier>
