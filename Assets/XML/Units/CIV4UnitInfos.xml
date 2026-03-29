@@ -48843,7 +48843,6 @@
 					<iCombat>1</iCombat>
 				</DamageTypeCombat>
 			</DamageTypeCombats>
-			<PyPerTurn>effectOtoloch(pCaster)</PyPerTurn>
 			<iAppearanceProb>100</iAppearanceProb>
 			<iPowerMult>3</iPowerMult>
 		</UnitInfo>
