@@ -150,7 +150,7 @@
 			<bTargetWeakestUnitCounter>1</bTargetWeakestUnitCounter>
 			<iMinLevel>-1</iMinLevel>
 		</PromotionInfo>
-		<PromotionInfo>		<!-- Strong -->
+		<PromotionInfo>		<!-- Bear Tribe Strong -->
 			<Type>PROMOTION_BEAR_TRIBE_STRONG</Type>
 			<Description>TXT_KEY_PROMOTION_STRONG</Description>
 			<UnitCombats>

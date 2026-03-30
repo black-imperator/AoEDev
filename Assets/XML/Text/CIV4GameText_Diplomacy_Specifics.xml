@@ -8363,4 +8363,142 @@
 		<Italian>Mulcarn's ice didn't stop me and neither shall your steel. My return is merely delayed once more.</Italian>
 		<Spanish>Mulcarn's ice didn't stop me and neither shall your steel. My return is merely delayed once more.</Spanish>
 	</TEXT>
+	<!-- Chislev The Council --> 
+	
+	<TEXT> <!-- War dec -->
+		<Tag>AI_DIPLO_DECLARE_WAR_LEADER_THE_COUNCIL</Tag>
+		<English>After much deliberation, we have decided upon war. Prepare yourself.</English>
+		<French>After much deliberation, we have decided upon war. Prepare yourself.</French>
+		<German>After much deliberation, we have decided upon war. Prepare yourself.</German>
+		<Italian>After much deliberation, we have decided upon war. Prepare yourself.</Italian>
+		<Spanish>After much deliberation, we have decided upon war. Prepare yourself.</Spanish>
+	</TEXT>
+	<TEXT> <!-- Diplo first cont -->
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_THE_COUNCIL</Tag>
+		<English>Greetings, [CT_NAME]. We have heard tales of your people. It is good that we finally meet.</English>
+		<French>Greetings, [CT_NAME]. We have heard tales of your people. It is good that we finally meet.</French>
+		<German>Greetings, [CT_NAME]. We have heard tales of your people. It is good that we finally meet.</German>
+		<Italian>Greetings, [CT_NAME]. We have heard tales of your people. It is good that we finally meet.</Italian>
+		<Spanish>Greetings, [CT_NAME]. We have heard tales of your people. It is good that we finally meet.</Spanish>
+	</TEXT>
+	<TEXT> <!-- Greetings at furr -->
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_THE_COUNCIL</Tag>
+		<English>[CT_NAME], it is a pleasure to see you again. You are always welcome in the lands of the Chislev.</English>
+		<French>[CT_NAME], it is a pleasure to see you again. You are always welcome in the lands of the Chislev.</French>
+		<German>[CT_NAME], it is a pleasure to see you again. You are always welcome in the lands of the Chislev.</German>
+		<Italian>[CT_NAME], it is a pleasure to see you again. You are always welcome in the lands of the Chislev.</Italian>
+		<Spanish>[CT_NAME], it is a pleasure to see you again. You are always welcome in the lands of the Chislev.</Spanish>
+	</TEXT>
+	<TEXT> <!-- GReeting att fur -->
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_THE_COUNCIL</Tag>
+		<English>[CT_NAME], none of us here like you. And we're five different people with very diverse personalities and backgrounds, so that's quite a feat. I trust you'll make this quick before we lose our patience?</English>
+		<French>[CT_NAME], none of us here like you. And we're five different people with very diverse personalities and backgrounds, so that's quite a feat. I trust you'll make this quick before we lose our patience?</French>
+		<German>[CT_NAME], none of us here like you. And we're five different people with very diverse personalities and backgrounds, so that's quite a feat. I trust you'll make this quick before we lose our patience?</German>
+		<Italian>[CT_NAME], none of us here like you. And we're five different people with very diverse personalities and backgrounds, so that's quite a feat. I trust you'll make this quick before we lose our patience?</Italian>
+		<Spanish>[CT_NAME], none of us here like you. And we're five different people with very diverse personalities and backgrounds, so that's quite a feat. I trust you'll make this quick before we lose our patience?</Spanish>
+	</TEXT>
+	<TEXT> <!-- Greetings Att ca -->
+		<Tag>AI_DIPLO_GREETINGS_ATT_CA_LEADER_THE_COUNCIL</Tag>
+		<English>Greetings, [CT_NAME]. How may the Chislev be of assistance today?</English>
+		<French>Greetings, [CT_NAME]. How may the Chislev be of assistance today?</French>
+		<German>Greetings, [CT_NAME]. How may the Chislev be of assistance today?</German>
+		<Italian>Greetings, [CT_NAME]. How may the Chislev be of assistance today?</Italian>
+		<Spanish>Greetings, [CT_NAME]. How may the Chislev be of assistance today?</Spanish>
+	</TEXT>
+	<TEXT> <!-- Demand Tribute Equal -->
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_LEADER_THE_COUNCIL</Tag>
+		<English>This is something that the Chislev could use. Can you provide it?</English>
+		<French>This is something that the Chislev could use. Can you provide it?</French>
+		<German>This is something that the Chislev could use. Can you provide it?</German>
+		<Italian>This is something that the Chislev could use. Can you provide it?</Italian>
+		<Spanish>This is something that the Chislev could use. Can you provide it?</Spanish>
+	</TEXT>
+	<TEXT> <!-- Demand tribute stronger -->
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_LEADER_THE_COUNCIL</Tag>
+		<English>It was a three to two vote to ask for this before taking it by force. I trust that you'll give this to us, so as not to swing the voting the other way.</English>
+		<French>It was a three to two vote to ask for this before taking it by force. I trust that you'll give this to us, so as not to swing the voting the other way.</French>
+		<German>It was a three to two vote to ask for this before taking it by force. I trust that you'll give this to us, so as not to swing the voting the other way.</German>
+		<Italian>It was a three to two vote to ask for this before taking it by force. I trust that you'll give this to us, so as not to swing the voting the other way.</Italian>
+		<Spanish>It was a three to two vote to ask for this before taking it by force. I trust that you'll give this to us, so as not to swing the voting the other way.</Spanish>
+	</TEXT>
+	<TEXT> <!-- Tribute power weaker -->
+		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_LEADER_THE_COUNCIL</Tag>
+		<English>It is not easy for any of us to ask things of others, but if you would not mind giving us this, we would be eternally grateful.</English>
+		<French>It is not easy for any of us to ask things of others, but if you would not mind giving us this, we would be eternally grateful.</French>
+		<German>It is not easy for any of us to ask things of others, but if you would not mind giving us this, we would be eternally grateful.</German>
+		<Italian>It is not easy for any of us to ask things of others, but if you would not mind giving us this, we would be eternally grateful.</Italian>
+		<Spanish>It is not easy for any of us to ask things of others, but if you would not mind giving us this, we would be eternally grateful.</Spanish>
+	</TEXT>
+	<TEXT> <!-- Refuse Talk -->
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_THE_COUNCIL</Tag>
+		<English>Not all of our tribes are ready for peace. Come back later, and perhaps we could consider a deal.</English>
+		<French>Not all of our tribes are ready for peace. Come back later, and perhaps we could consider a deal.</French>
+		<German>Not all of our tribes are ready for peace. Come back later, and perhaps we could consider a deal.</German>
+		<Italian>Not all of our tribes are ready for peace. Come back later, and perhaps we could consider a deal.</Italian>
+		<Spanish>Not all of our tribes are ready for peace. Come back later, and perhaps we could consider a deal.</Spanish>
+	</TEXT>
+	<TEXT> <!-- Peace -->
+		<Tag>AI_DIPLO_PEACE_LEADER_THE_COUNCIL</Tag>
+		<English>Thank you for agreeing to peace, [CT_NAME]. Most of our tribes believe that this is in our best interest.</English>
+		<French>Thank you for agreeing to peace, [CT_NAME]. Most of our tribes believe that this is in our best interest.</French>
+		<German>Thank you for agreeing to peace, [CT_NAME]. Most of our tribes believe that this is in our best interest.</German>
+		<Italian>Thank you for agreeing to peace, [CT_NAME]. Most of our tribes believe that this is in our best interest.</Italian>
+		<Spanish>Thank you for agreeing to peace, [CT_NAME]. Most of our tribes believe that this is in our best interest.</Spanish>
+	</TEXT>
+	<TEXT> <!-- No Peace -->
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_THE_COUNCIL</Tag>
+		<English>Now is not the time to make peace, but we will convene with the tribes and see what deals may be worked out in the future.</English>
+		<French>Now is not the time to make peace, but we will convene with the tribes and see what deals may be worked out in the future.</French>
+		<German>Now is not the time to make peace, but we will convene with the tribes and see what deals may be worked out in the future.</German>
+		<Italian>Now is not the time to make peace, but we will convene with the tribes and see what deals may be worked out in the future.</Italian>
+		<Spanish>Now is not the time to make peace, but we will convene with the tribes and see what deals may be worked out in the future.</Spanish>
+	</TEXT>
+	<TEXT> <!-- Offer Peace -->
+		<Tag>AI_DIPLO_OFFER_PEACE_LEADER_THE_COUNCIL</Tag>
+		<English>We have decided that it is time to end this war. Don't you agree?</English>
+		<French>We have decided that it is time to end this war. Don't you agree?</French>
+		<German>We have decided that it is time to end this war. Don't you agree?</German>
+		<Italian>We have decided that it is time to end this war. Don't you agree?</Italian>
+		<Spanish>We have decided that it is time to end this war. Don't you agree?</Spanish>
+	</TEXT>
+	<TEXT> <!-- Accept lead -->
+		<Tag>AI_DIPLO_ACCEPT_LEADER_THE_COUNCIL</Tag>
+		<English>Give us a moment to talk to over. Okay, yes. We find that deal to be agreeable.</English>
+		<French>Give us a moment to talk to over. Okay, yes. We find that deal to be agreeable.</French>
+		<German>Give us a moment to talk to over. Okay, yes. We find that deal to be agreeable.</German>
+		<Italian>Give us a moment to talk to over. Okay, yes. We find that deal to be agreeable.</Italian>
+		<Spanish>Give us a moment to talk to over. Okay, yes. We find that deal to be agreeable.</Spanish>
+	</TEXT>
+	<TEXT> <!-- Reject -->
+		<Tag>AI_DIPLO_REJECT_LEADER_THE_COUNCIL</Tag>
+		<English>We stand unanimously when I say this: no. Come up with something better.</English>
+		<French>We stand unanimously when I say this: no. Come up with something better.</French>
+		<German>We stand unanimously when I say this: no. Come up with something better.</German>
+		<Italian>We stand unanimously when I say this: no. Come up with something better.</Italian>
+		<Spanish>We stand unanimously when I say this: no. Come up with something better.</Spanish>
+	</TEXT>
+	<TEXT> <!-- Thanks -->
+		<Tag>AI_DIPLO_THANKS_LEADER_THE_COUNCIL</Tag>
+		<English>We speak on behalf of all of the tribes when we say that the Chislev people truly thank you.</English>
+		<French>We speak on behalf of all of the tribes when we say that the Chislev people truly thank you.</French>
+		<German>We speak on behalf of all of the tribes when we say that the Chislev people truly thank you.</German>
+		<Italian>We speak on behalf of all of the tribes when we say that the Chislev people truly thank you.</Italian>
+		<Spanish>We speak on behalf of all of the tribes when we say that the Chislev people truly thank you.</Spanish>
+	</TEXT>
+	<TEXT> <!-- Rejected dem -->
+		<Tag>AI_DIPLO_DEMAND_REJECTED_LEADER_THE_COUNCIL</Tag>
+		<English>It is unfortunate that you would disagree with this proposal. We will have to discuss amongst ourselves the most appropriate response to this regrettable surprise.</English>
+		<French>It is unfortunate that you would disagree with this proposal. We will have to discuss amongst ourselves the most appropriate response to this regrettable surprise.</French>
+		<German>It is unfortunate that you would disagree with this proposal. We will have to discuss amongst ourselves the most appropriate response to this regrettable surprise.</German>
+		<Italian>It is unfortunate that you would disagree with this proposal. We will have to discuss amongst ourselves the most appropriate response to this regrettable surprise.</Italian>
+		<Spanish>It is unfortunate that you would disagree with this proposal. We will have to discuss amongst ourselves the most appropriate response to this regrettable surprise.</Spanish>
+	</TEXT>
+	<TEXT> <!-- Defeated -->
+		<Tag>TXT_KEY_POPUP_DEFEATED_THE_COUNCIL</Tag>
+		<English>For all that we were doing for the betterment of Erebus, you decide the best course of action is to eliminate us? You may destroy us as a nation, but we are a vengeful people, and you won't kill us all. For those of us you do kill, our spirits will haunt you until the End of Days.</English>
+		<French>For all that we were doing for the betterment of Erebus, you decide the best course of action is to eliminate us? You may destroy us as a nation, but we are a vengeful people, and you won't kill us all. For those of us you do kill, our spirits will haunt you until the End of Days.</French>
+		<German>For all that we were doing for the betterment of Erebus, you decide the best course of action is to eliminate us? You may destroy us as a nation, but we are a vengeful people, and you won't kill us all. For those of us you do kill, our spirits will haunt you until the End of Days.</German>
+		<Italian>For all that we were doing for the betterment of Erebus, you decide the best course of action is to eliminate us? You may destroy us as a nation, but we are a vengeful people, and you won't kill us all. For those of us you do kill, our spirits will haunt you until the End of Days.</Italian>
+		<Spanish>For all that we were doing for the betterment of Erebus, you decide the best course of action is to eliminate us? You may destroy us as a nation, but we are a vengeful people, and you won't kill us all. For those of us you do kill, our spirits will haunt you until the End of Days.</Spanish>
+	</TEXT>
 	</Civ4GameText>

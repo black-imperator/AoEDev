@@ -43,5 +43,9 @@
 			<Type>TRAITCLASS_DEMON_PACT</Type>
 			<Description>TXT_KEY_TRAITCLASS_DEMON_PACT</Description>
 		</TraitClassInfo>
+		<TraitClassInfo>
+			<Type>TRAITCLASS_TRIBAL</Type>
+			<Description>TXT_KEY_TRAITCLASS_TRIBAL</Description>
+		</TraitClassInfo>
 	</TraitClassInfos>
 </Civ4TraitClassInfos>

@@ -35089,22 +35089,54 @@
 			<Button>Art/Interface/Buttons/Promotions/Civs/Mekara/ShaperExperiments.dds</Button>
 			<iMinLevel>-1</iMinLevel>
 		</PromotionInfo>
-		<PromotionInfo>		<!-- Adoption Chislev  -->
-			<Type>PROMOTION_ADOPTION_CHISLEV</Type>
-			<Description>TXT_KEY_PROMOTION_ADOPTION_CHISLEV</Description>
-			<iSlaveGenerationChance>10</iSlaveGenerationChance>
-			<bPrereqAliveCapture>1</bPrereqAliveCapture>
-			<CaptureUnitClass>UNITCLASS_WARRIOR</CaptureUnitClass>
-			<NotCapturedUnitCombats>
-				<NotCapturedUnitCombat>
-					<NotCapturedUnitCombatType>UNITCOMBAT_ANIMAL</NotCapturedUnitCombatType>
-					<bNotCapturedUnitCombat>1</bNotCapturedUnitCombat>
-				</NotCapturedUnitCombat>
-				<NotCapturedUnitCombat>
-					<NotCapturedUnitCombatType>UNITCOMBAT_BEAST</NotCapturedUnitCombatType>
-					<bNotCapturedUnitCombat>1</bNotCapturedUnitCombat>
-				</NotCapturedUnitCombat>
-			</NotCapturedUnitCombats>
+		<PromotionInfo>		<!-- Chislev Clan Builder    -->
+			<Type>PROMOTION_LEAVES_CLAN_BUILDER</Type>
+			<Description>TXT_KEY_PROMOTION_CHISLEV_CLAN_BUILDER</Description>
+			<bAutoAcquire>1</bAutoAcquire>
+			<bMustMaintain>1</bMustMaintain>
+			<bNoXP>1</bNoXP>
+			<PrereqCivilizations>
+				<PrereqCivilization>CIVILIZATION_CHISLEV</PrereqCivilization>
+			</PrereqCivilizations>
+			<PromotionBuilds>
+				<PromotionBuild>BUILD_CHISLEV_CLAN</PromotionBuild>
+			</PromotionBuilds>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Art/Interface/Buttons/Buildings/TribalShrine.dds</Button>
+			<bEffectProm>1</bEffectProm>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Dance of the Coyote (The Council Coyote Favor Promotion) -->
+			<Type>PROMOTION_DANCE_OF_THE_COYOTE</Type>
+			<Description>TXT_KEY_PROMOTION_DANCE_OF_THE_COYOTE</Description>
+			<PrereqCivilizations>
+				<PrereqCivilization>CIVILIZATION_CHISLEV</PrereqCivilization>
+			</PrereqCivilizations>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Art/Modules/ChislevExpansion/Buttons/Coyote_Dance.dds</Button>
+			<iAIWeight>100</iAIWeight>
+			<CommercesFromWin>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>5</iCommerce>
+			</CommercesFromWin>
+			<iWithdrawalChange>10</iWithdrawalChange>
+			<bRemovedByCombat>1</bRemovedByCombat>
+			<iExtraCombatStr>1</iExtraCombatStr>
+			<iMinLevel>-1</iMinLevel>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Bear Tribe Strong -->
+			<Type>PROMOTION_BEAR_TRIBE_STRONG</Type>
+			<Description>TXT_KEY_PROMOTION_STRONG</Description>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
@@ -35135,45 +35167,20 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
-					<iMaxApplications>0</iMaxApplications>
-				</UnitCombat>
-				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
-					<iMaxApplications>0</iMaxApplications>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
-			<Button>,Art/Interface/Buttons/Civics/Slavery.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,8,2</Button>
+			<bGraphicalOnly>1</bGraphicalOnly>
+			<Button>Art/Interface/Buttons/Promotions/Strong.dds</Button>
+			<iAIWeight>100</iAIWeight>
+			<iExtraCombatStr>1</iExtraCombatStr>
+			<iExtraCombatDefense>1</iExtraCombatDefense>
 			<iMinLevel>-1</iMinLevel>
-		</PromotionInfo>
-		<PromotionInfo>		<!-- Chislev Clan Builder    -->
-			<Type>PROMOTION_LEAVES_CLAN_BUILDER</Type>
-			<Description>TXT_KEY_PROMOTION_CHISLEV_CLAN_BUILDER</Description>
-			<bAutoAcquire>1</bAutoAcquire>
-			<bMustMaintain>1</bMustMaintain>
-			<bNoXP>1</bNoXP>
-			<PrereqCivilizations>
-				<PrereqCivilization>CIVILIZATION_CHISLEV</PrereqCivilization>
-			</PrereqCivilizations>
-			<PromotionBuilds>
-				<PromotionBuild>BUILD_CHISLEV_CLAN</PromotionBuild>
-			</PromotionBuilds>
-			<UnitCombats>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
-					<iMaxApplications>0</iMaxApplications>
-				</UnitCombat>
-			</UnitCombats>
-			<Button>Art/Interface/Buttons/Buildings/TribalShrine.dds</Button>
-			<bEffectProm>1</bEffectProm>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Ruthless Promo -->
 			<Type>PROMOTION_TRAIT_RUTHLESS</Type>
@@ -35257,8 +35264,6 @@
 					<bNotCapturedUnitCombat>1</bNotCapturedUnitCombat>
 				</NotCapturedUnitCombat>
 			</NotCapturedUnitCombats>
-			<iPromotionRandomApplyChance>1</iPromotionRandomApplyChance>
-			<PromotionRandomApply>PROMOTION_AMICUS_COMPANION</PromotionRandomApply>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>

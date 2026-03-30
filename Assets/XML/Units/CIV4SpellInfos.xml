@@ -5600,6 +5600,22 @@
 			<Sound>AS3D_INSPIRE_FURY</Sound>
 			<Button>Art/Interface/Buttons/Promotions/Enraged.dds</Button>
 		</SpellInfo>
+		<SpellInfo>			<!-- Befriend Amicus -->						<!-- CHISLEV SPELLS -->
+			<Type>SPELL_BEFRIEND_AMICUS</Type>
+			<Description>TXT_KEY_SPELL_BEFRIEND_AMICUS</Description>
+			<Civilopedia>TXT_KEY_SPELL_BEFRIEND_AMICUS_PEDIA</Civilopedia>
+			<PromotionPrereq1>PROMOTION_ADOPTIVE_CHISLEV</PromotionPrereq1>
+			<bAllowAI>1</bAllowAI>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+			<iCasterMinLevel>4</iCasterMinLevel>
+			<AddPromotions>
+				<AddPromotion>PROMOTION_AMICUS_COMPANION</AddPromotion>
+			</AddPromotions>
+			<Effect>EFFECT_WIND_SWIRL</Effect>
+			<Sound>AS3D_INSPIRE_FURY</Sound>
+			<Button>Art/Interface/Buttons/promotions/companions/amicus.dds</Button>
+		</SpellInfo>
 		<SpellInfo>			<!-- Awake Sleeping -->
 			<Type>SPELL_AWAKE_SLEEPING</Type>
 			<Description>TXT_KEY_SPELL_AWAKE_SLEEPING</Description>

@@ -814,5 +814,13 @@
 			<NoShaderNIF/>
 			<BackgroundKFM/>
 		</LeaderheadArtInfo>
+		<LeaderheadArtInfo> <!-- The Council Chislev -->
+			<Type>ART_DEF_LEADER_THE_COUNCIL</Type>
+			<Button>Art/Modules/ChislevExpansion/Buttons/The_Council_Button.dds</Button>
+			<NIF>Art/Modules/ChislevExpansion/Leaderheads/The_Council.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
 	</LeaderheadArtInfos>
 </Civ4ArtDefines>

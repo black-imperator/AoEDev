@@ -16,7 +16,6 @@
 			<ArtDefineTag>ART_DEF_CIVILIZATION_CHISLEV</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_TRIBAL</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_CHISLEV</UnitArtStyleType>
-			<bForceOverwrite>1</bForceOverwrite>
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>

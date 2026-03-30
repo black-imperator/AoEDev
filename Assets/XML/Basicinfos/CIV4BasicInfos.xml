@@ -398,5 +398,10 @@
 			<Description>TXT_KEY_CONCEPT_USEFUL_HOTKEY</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_USEFUL_HOTKEY_PEDIA</Civilopedia>
 		</ConceptInfo>
+		<ConceptInfo>
+			<Type>CONCEPT_THE_COUNCIL_DYNAMIC_LEADER</Type>
+			<Description>TXT_KEY_CONCEPT_THE_COUNCIL_DYNAMIC_LEADER</Description>
+			<Civilopedia>TXT_KEY_CONCEPT_THE_COUNCIL_DYNAMIC_LEADER_PEDIA</Civilopedia>
+		</ConceptInfo>
 	</ConceptInfos>
 </Civ4BasicInfos>
