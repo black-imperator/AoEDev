@@ -151,6 +151,7 @@ def exploreLairBreakWiddershinsCurse(argsList):
 	map = CyMap()
 	iInfernalPlayer = getOpenPlayer()
 	pBestPlot=pPlot
+	pPlot.setPythonActive(False)
 	if (iInfernalPlayer != -1 and pBestPlot != -1):
 		iX = pBestPlot.getX(); iY = pBestPlot.getY()
 		pBestPlot.setPlotType(PlotTypes.PLOT_LAND, True, True)

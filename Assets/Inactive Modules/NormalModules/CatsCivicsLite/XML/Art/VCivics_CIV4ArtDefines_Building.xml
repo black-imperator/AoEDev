@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<!-- Building art path information -->
+<Civ4ArtDefines xmlns="x-schema:VCivics_CIV4ArtDefinesSchema.xml">
+	<BuildingArtInfos>
+	
+		<!-- Imperium -->
+	
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_IMPERIAL_MAGISTRATES_CITADEL</Type>
+			<LSystem>LSYSTEM_3x3</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>2.01</fScale>
+			<fInterfaceScale>0.4</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Castle/Castle.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/VCivics_imperial_magistrates_citadel.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_IMPERIAL_ARSENAL</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.27</fScale>
+			<fInterfaceScale>0.52</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/VCivics_imperial_arsenal.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_IMPERIAL_REGIONAL_ADMINISTRATION</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.25</fScale>
+			<fInterfaceScale>0.4</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Obelisk/Obelisk.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/VCivics_imperial_regional_administration.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_IMPERIAL_TRADE_HUB</Type>
+			<LSystem>LSYSTEM_3x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.05</fScale>
+			<fInterfaceScale>0.6</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Market/Market.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/VCivics_imperial_trade_hub.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_IMPERIAL_GRAND_PALACE</Type>
+			<LSystem>LSYSTEM_4x4</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.16</fScale>
+			<fInterfaceScale>0.6</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Versailles/Versailles.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/VCivics_imperial_grand_palace.dds</Button>
+		</BuildingArtInfo>
+		
+		<!-- Garden Cities -->
+		
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_SYMBIOSIS_GREAT_HOLLOW</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>0.75</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Improvements/Yggdrasil/LemonTree.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_GreatHollow.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_SYMBIOSIS_BLOOD_THORNS</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>0.75</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Improvements/Yggdrasil/LemonTree.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_BloodThorns.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_SYMBIOSIS_ETERNAL_BLOOM</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>0.75</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Improvements/Yggdrasil/LemonTree.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_EternalBloom.dds</Button>
+		</BuildingArtInfo>
+		
+		<!-- Crime Lord Stuff -->
+		
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_RAT_WAY</Type>
+			<LSystem>LSYSTEM_2x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.8</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Sewer/sewer.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_RatWay.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_RAT_POCKETS</Type>
+			<LSystem>LSYSTEM_2x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.8</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Sewer/sewer.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_RatPocket.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_SHADOW_CITY</Type>
+			<LSystem>LSYSTEM_4x4</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.5</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/terrain/features/storms/Stormcloud_sound.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_ShadowCity.dds</Button>
+		</BuildingArtInfo>
+		
+	</BuildingArtInfos>
+</Civ4ArtDefines>

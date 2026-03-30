@@ -2614,7 +2614,7 @@
 			<BuildingClass>BUILDINGCLASS_DIES_DIEI</BuildingClass>
 			<Type>BUILDING_DIES_DIEI</Type>
 			<Description>TXT_KEY_BUILDING_DIES_DIEI</Description>
-			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
+			<Civilopedia>TXT_KEY_BUILDING_DIES_DIEI_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_RELIGION</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_DIES_DIEI</ArtDefineTag>
 			<HolyCity>RELIGION_THE_EMPYREAN</HolyCity>
@@ -6311,7 +6311,10 @@
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAsset>12</iAsset>
 			<fVisibilityPriority>100</fVisibilityPriority>
-			<ObsoleteSafeCommerceChanges>
+			<PrereqAlignments>
+				<Alignment>ALIGNMENT_EVIL</Alignment>
+			</PrereqAlignments>
+		<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>8</iCommerce>

@@ -1,0 +1,244 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Civilization Infos -->
+<Civ4CivilizationInfos xmlns="x-schema:VCivics_CIV4CivilizationsSchema.xml">
+	<CivilizationInfos>
+		<CivilizationInfo><!-- Amurites -->
+			<Type>CIVILIZATION_AMURITES</Type>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_NOMAD_WAGON</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+		</CivilizationInfo>
+		<CivilizationInfo><!-- Archos -->
+			<Type>CIVILIZATION_ARCHOS</Type>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_NOMAD_WAGON</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+		</CivilizationInfo>
+		<CivilizationInfo><!-- Austrin -->
+			<Type>CIVILIZATION_AUSTRIN</Type>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_NOMAD_WAGON</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+		</CivilizationInfo>
+		<CivilizationInfo><!-- Balseraphs -->
+			<Type>CIVILIZATION_BALSERAPHS</Type>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_NOMAD_WAGON</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+		</CivilizationInfo>
+		<CivilizationInfo><!-- Bannor -->
+			<Type>CIVILIZATION_BANNOR</Type>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_NOMAD_WAGON</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+		</CivilizationInfo>
+		<CivilizationInfo><!-- Calabim -->
+			<Type>CIVILIZATION_CALABIM</Type>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_NOMAD_WAGON</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+		</CivilizationInfo>
+		<CivilizationInfo><!-- Chislev -->
+			<Type>CIVILIZATION_CHISLEV</Type>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_NOMAD_WAGON</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+		</CivilizationInfo>
+		<CivilizationInfo><!-- Clan of Embers -->
+			<Type>CIVILIZATION_CLAN_OF_EMBERS</Type>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_NOMAD_WAGON</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+		</CivilizationInfo>
+		<CivilizationInfo><!-- Cualli -->
+			<Type>CIVILIZATION_CUALLI</Type>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_NOMAD_WAGON</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+		</CivilizationInfo>
+		<CivilizationInfo><!-- Doviello -->
+			<Type>CIVILIZATION_DOVIELLO</Type>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_NOMAD_WAGON</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+		</CivilizationInfo>
+		<CivilizationInfo><!-- Elohim -->
+			<Type>CIVILIZATION_ELOHIM</Type>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_NOMAD_WAGON</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+		</CivilizationInfo>
+		<CivilizationInfo><!-- Grigori -->
+			<Type>CIVILIZATION_GRIGORI</Type>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_NOMAD_WAGON</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+		</CivilizationInfo>
+		<CivilizationInfo><!-- Hippus -->
+			<Type>CIVILIZATION_HIPPUS</Type>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_NOMAD_WAGON</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+		</CivilizationInfo>
+		<CivilizationInfo><!-- Illians -->
+			<Type>CIVILIZATION_ILLIANS</Type>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_NOMAD_WAGON</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+		</CivilizationInfo>
+		<CivilizationInfo><!-- Khazad -->
+			<Type>CIVILIZATION_KHAZAD</Type>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_NOMAD_WAGON</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+		</CivilizationInfo>
+		<CivilizationInfo><!-- Kuriotates -->
+			<Type>CIVILIZATION_KURIOTATES</Type>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_NOMAD_WAGON</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+		</CivilizationInfo>
+		<CivilizationInfo><!-- Lanun -->
+			<Type>CIVILIZATION_LANUN</Type>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_NOMAD_WAGON</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+		</CivilizationInfo>
+		<CivilizationInfo><!-- Ljosalfar -->
+			<Type>CIVILIZATION_LJOSALFAR</Type>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_NOMAD_WAGON</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+		</CivilizationInfo>
+		<CivilizationInfo><!-- Luchuirp -->
+			<Type>CIVILIZATION_LUCHUIRP</Type>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_NOMAD_WAGON</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+		</CivilizationInfo>
+		<CivilizationInfo><!-- Malakim -->
+			<Type>CIVILIZATION_MALAKIM</Type>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_NOMAD_WAGON</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+		</CivilizationInfo>
+		<CivilizationInfo><!-- Mazatl -->
+			<Type>CIVILIZATION_MAZATL</Type>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_NOMAD_WAGON</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+		</CivilizationInfo>
+		<CivilizationInfo><!-- Mechanos -->
+			<Type>CIVILIZATION_MECHANOS</Type>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_NOMAD_WAGON</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+		</CivilizationInfo>
+		<CivilizationInfo><!-- Sheaim -->
+			<Type>CIVILIZATION_SHEAIM</Type>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_NOMAD_WAGON</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+		</CivilizationInfo>
+		<CivilizationInfo><!-- Sidar -->
+			<Type>CIVILIZATION_SIDAR</Type>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_NOMAD_WAGON</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+		</CivilizationInfo>
+		<CivilizationInfo><!-- Svartalfar -->
+			<Type>CIVILIZATION_SVARTALFAR</Type>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_NOMAD_WAGON</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+		</CivilizationInfo>
+		<CivilizationInfo><!-- Mekara Order -->
+			<Type>CIVILIZATION_MEKARA_V2</Type>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_NOMAD_WAGON</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+		</CivilizationInfo>
+	</CivilizationInfos>
+</Civ4CivilizationInfos>

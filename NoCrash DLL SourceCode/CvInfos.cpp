@@ -21353,6 +21353,7 @@ m_iMinCrime(0),
 m_bAutoBuild(false),
 m_bMustMaintain(false),
 m_bCrimeEffect(false),
+m_bEffect(false),
 m_iPerCrimeEffectHappyChange(0),
 m_iPerCrimeEffectHealthChange(0),
 m_piPerCrimeEffectYieldChange(NULL),
@@ -22373,6 +22374,7 @@ int CvBuildingInfo::getMinCrime() const { return m_iMinCrime; }
 bool CvBuildingInfo::isAutoBuild() const { return m_bAutoBuild; }
 bool CvBuildingInfo::isMustMaintain() const { return m_bMustMaintain; }
 bool CvBuildingInfo::isCrimeEffect() const { return m_bCrimeEffect; }
+bool CvBuildingInfo::isEffect() const { return m_bEffect; }
 int CvBuildingInfo::getPerCrimeEffectHappyChange() const { return m_iPerCrimeEffectHappyChange; }
 int CvBuildingInfo::getPerCrimeEffectHealthChange() const { return m_iPerCrimeEffectHealthChange; }
 int CvBuildingInfo::getPerCrimeEffectCommerceChange(int i) const
@@ -23413,6 +23415,7 @@ void CvBuildingInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_bAutoBuild);
 	stream->Read(&m_bMustMaintain);
 	stream->Read(&m_bCrimeEffect);
+	stream->Read(&m_bEffect);
 	stream->Read(&m_iPerCrimeEffectHappyChange);
 	stream->Read(&m_iPerCrimeEffectHealthChange);
 	SAFE_DELETE_ARRAY(m_piPerCrimeEffectYieldChange);
@@ -24116,6 +24119,7 @@ void CvBuildingInfo::write(FDataStreamBase* stream)
 	stream->Write(m_bAutoBuild);
 	stream->Write(m_bMustMaintain);
 	stream->Write(m_bCrimeEffect);
+	stream->Write(m_bEffect);
 	stream->Write(m_iPerCrimeEffectHappyChange);
 	stream->Write(m_iPerCrimeEffectHealthChange);
 	stream->Write(NUM_YIELD_TYPES, m_piPerCrimeEffectYieldChange);
@@ -24707,6 +24711,7 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bAutoBuild, "bAutoBuild");
 	pXML->GetChildXmlValByName(&m_bMustMaintain, "bMustMaintain");
 	pXML->GetChildXmlValByName(&m_bCrimeEffect, "bCrimeEffect");
+	pXML->GetChildXmlValByName(&m_bCrimeEffect, "bEffect");
 	pXML->GetChildXmlValByName(&m_iPerCrimeEffectHappyChange, "iPerCrimeEffectHappy");
 	pXML->GetChildXmlValByName(&m_iPerCrimeEffectHealthChange, "iPerCrimeEffectHealth");
 
@@ -25636,6 +25641,7 @@ void CvBuildingInfo::copyNonDefaults(CvBuildingInfo* pClassInfo, CvXMLLoadUtilit
 	if (isAutoBuild() == false)					m_bAutoBuild = pClassInfo->isAutoBuild();
 	if (isMustMaintain() == false)					m_bMustMaintain = pClassInfo->isMustMaintain();
 	if (isCrimeEffect() == false)					m_bCrimeEffect = pClassInfo->isCrimeEffect();
+	if (isEffect() == false)					m_bEffect = pClassInfo->isEffect();
 	if (getPerCrimeEffectHappyChange() == 0)					m_iPerCrimeEffectHappyChange = pClassInfo->getPerCrimeEffectHappyChange();
 	if (getPerCrimeEffectHealthChange() == 0)					m_iPerCrimeEffectHealthChange = pClassInfo->getPerCrimeEffectHealthChange();
 
@@ -36582,7 +36588,10 @@ const TCHAR* CvLeaderHeadInfo::getArtDefineTag() const
 {
 	CvString cKoun = CvString::format("ART_DEF_LEADER_KOUN").GetCString();
 	CvString cKoun2 = CvString::format("ART_DEF_LEADER_KOUN2").GetCString();
-
+	if (GC.getGame().isUniDay())
+	{
+		return cKoun2;
+	}
 	if (m_szArtDefineTag == cKoun && GC.getGame().isUniDay())
 		return cKoun2;
 	if (GC.getGame().isTikuCurse())

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Units -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ADVENTURING_PARTY</Tag>
+		<English>Adventuring Party</English>
+		<French>Adventuring Party</French>
+		<German>Adventuring Party</German>
+		<Italian>Adventuring Party</Italian>
+		<Spanish>Adventuring Party</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_NOMAD_WAGON</Tag>
+		<English>Nomad Wagon</English>
+		<French>Nomad Wagon</French>
+		<German>Nomad Wagon</German>
+		<Italian>Nomad Wagon</Italian>
+		<Spanish>Nomad Wagon</Spanish>
+	</TEXT>
+</Civ4GameText>

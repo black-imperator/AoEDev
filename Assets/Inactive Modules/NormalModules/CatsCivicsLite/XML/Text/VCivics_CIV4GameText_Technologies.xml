@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_TECH_INDUSTRY</Tag>
+		<English>Industry</English>
+		<French>Industrie</French>
+		<German>Industrie</German>
+		<Italian>Industria</Italian>
+		<Spanish>Industria</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_INDUSTRY_QUOTE</Tag>
+		<English>The clang of hammers and the hum of machinery echo through our halls, and with each creation, we shape our destiny. In the face of change, our craftsmanship and ingenuity propel us forward. In our hands, the future is forged.[NEWLINE][NEWLINE]Ludovico Ferrarese, Head Craftsman of the Tarantum Ironworks</English>
+		<French>The clang of hammers and the hum of machinery echo through our halls, and with each creation, we shape our destiny. In the face of change, our craftsmanship and ingenuity propel us forward. In our hands, the future is forged.[NEWLINE][NEWLINE]Ludovico Ferrarese, Head Craftsman of the Tarantum Ironworks</French>
+		<German>The clang of hammers and the hum of machinery echo through our halls, and with each creation, we shape our destiny. In the face of change, our craftsmanship and ingenuity propel us forward. In our hands, the future is forged.[NEWLINE][NEWLINE]Ludovico Ferrarese, Head Craftsman of the Tarantum Ironworks</German>
+		<Italian>The clang of hammers and the hum of machinery echo through our halls, and with each creation, we shape our destiny. In the face of change, our craftsmanship and ingenuity propel us forward. In our hands, the future is forged.[NEWLINE][NEWLINE]Ludovico Ferrarese, Head Craftsman of the Tarantum Ironworks</Italian>
+		<Spanish>The clang of hammers and the hum of machinery echo through our halls, and with each creation, we shape our destiny. In the face of change, our craftsmanship and ingenuity propel us forward. In our hands, the future is forged.[NEWLINE][NEWLINE]Ludovico Ferrarese, Head Craftsman of the Tarantum Ironworks</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_INDUSTRY_STRATEGY</Tag>
+		<English>The industry technology provides the endgame civic of the same name. It provides massive boni to industrial improvement yields and is best suited for a military victory.</English>
+		<French>The industry technology provides the endgame civic of the same name. It provides massive boni to industrial improvement yields and is best suited for a military victory.</French>
+		<German>The industry technology provides the endgame civic of the same name. It provides massive boni to industrial improvement yields and is best suited for a military victory.</German>
+		<Italian>The industry technology provides the endgame civic of the same name. It provides massive boni to industrial improvement yields and is best suited for a military victory.</Italian>
+		<Spanish>The industry technology provides the endgame civic of the same name. It provides massive boni to industrial improvement yields and is best suited for a military victory.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_IMPERIAL_BUREAUCRACY</Tag>
+		<English>Imperial Bureaucracy</English>
+		<French>Imperial Bureaucracy</French>
+		<German>Imperial Bureaucracy</German>
+		<Italian>Imperial Bureaucracy</Italian>
+		<Spanish>Imperial Bureaucracy</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_IMPERIAL_BUREAUCRACY_STRATEGY</Tag>
+		<English>Allows the construction of the [LINK=BUILDINGCLASS_IMPERIAL_MAGISTRATES_CITADEL]Imperial Magistrate's Citadel[\LINK] in every city, which provide some minor bonuses. For every few citadels one or more powerful imperial structures can be constructed.</English>
+		<French>Allows the construction of the [LINK=BUILDINGCLASS_IMPERIAL_MAGISTRATES_CITADEL]Imperial Magistrate's Citadel[\LINK] in every city, which provide some minor bonuses. For every few citadels one or more powerful imperial structures can be constructed.</French>
+		<German>Allows the construction of the [LINK=BUILDINGCLASS_IMPERIAL_MAGISTRATES_CITADEL]Imperial Magistrate's Citadel[\LINK] in every city, which provide some minor bonuses. For every few citadels one or more powerful imperial structures can be constructed.</German>
+		<Italian>Allows the construction of the [LINK=BUILDINGCLASS_IMPERIAL_MAGISTRATES_CITADEL]Imperial Magistrate's Citadel[\LINK] in every city, which provide some minor bonuses. For every few citadels one or more powerful imperial structures can be constructed.</Italian>
+		<Spanish>Allows the construction of the [LINK=BUILDINGCLASS_IMPERIAL_MAGISTRATES_CITADEL]Imperial Magistrate's Citadel[\LINK] in every city, which provide some minor bonuses. For every few citadels one or more powerful imperial structures can be constructed.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_IMPERIAL_BUREAUCRACY_QUOTE</Tag>
+		<English>In the heart of the imperial empire, beneath the gleaming spires and echoing halls, lies the true engine of dominion: the labyrinthine web of bureaucracy. Here, in the shadowed corridors and candlelit chambers, power flows not from the clash of armies, but from the meticulous dance of paperwork and protocol. Every decree, every edict, every quill stroke is a thread woven into the tapestry of governance, binding together the sprawling realms and shaping the destiny of nations. For within the depths of the Imperial bureaucracy, the true architects of empire toil tirelessly, their words more potent than any incantation, their deeds shaping the very course of history.</English>
+		<French>In the heart of the imperial empire, beneath the gleaming spires and echoing halls, lies the true engine of dominion: the labyrinthine web of bureaucracy. Here, in the shadowed corridors and candlelit chambers, power flows not from the clash of armies, but from the meticulous dance of paperwork and protocol. Every decree, every edict, every quill stroke is a thread woven into the tapestry of governance, binding together the sprawling realms and shaping the destiny of nations. For within the depths of the Imperial bureaucracy, the true architects of empire toil tirelessly, their words more potent than any incantation, their deeds shaping the very course of history.</French>
+		<German>In the heart of the imperial empire, beneath the gleaming spires and echoing halls, lies the true engine of dominion: the labyrinthine web of bureaucracy. Here, in the shadowed corridors and candlelit chambers, power flows not from the clash of armies, but from the meticulous dance of paperwork and protocol. Every decree, every edict, every quill stroke is a thread woven into the tapestry of governance, binding together the sprawling realms and shaping the destiny of nations. For within the depths of the Imperial bureaucracy, the true architects of empire toil tirelessly, their words more potent than any incantation, their deeds shaping the very course of history.</German>
+		<Italian>In the heart of the imperial empire, beneath the gleaming spires and echoing halls, lies the true engine of dominion: the labyrinthine web of bureaucracy. Here, in the shadowed corridors and candlelit chambers, power flows not from the clash of armies, but from the meticulous dance of paperwork and protocol. Every decree, every edict, every quill stroke is a thread woven into the tapestry of governance, binding together the sprawling realms and shaping the destiny of nations. For within the depths of the Imperial bureaucracy, the true architects of empire toil tirelessly, their words more potent than any incantation, their deeds shaping the very course of history.</Italian>
+		<Spanish>In the heart of the imperial empire, beneath the gleaming spires and echoing halls, lies the true engine of dominion: the labyrinthine web of bureaucracy. Here, in the shadowed corridors and candlelit chambers, power flows not from the clash of armies, but from the meticulous dance of paperwork and protocol. Every decree, every edict, every quill stroke is a thread woven into the tapestry of governance, binding together the sprawling realms and shaping the destiny of nations. For within the depths of the Imperial bureaucracy, the true architects of empire toil tirelessly, their words more potent than any incantation, their deeds shaping the very course of history.</Spanish>
+	</TEXT>
+</Civ4GameText>

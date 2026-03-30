@@ -8185,7 +8185,7 @@ bool CvUnit::pillage()
 			argsList.add(gDLL->getPythonIFace()->makePythonObject(pyPlot));	// pass in plot class
 			argsList.add(gDLL->getPythonIFace()->makePythonObject(pyUnit));	// pass in unit class
 
-			gDLL->getPythonIFace()->callFunction(PYGameModule, "doPillageGold", argsList.makeFunctionArgs(),&lPillageGold);
+			gDLL->getPythonIFace()->callFunction(PYGameModule, "doPillageGold", argsList.makeFunctionArgs(), &lPillageGold);
 
 			delete pyPlot;	// python fxn must not hold on to this pointer
 			delete pyUnit;	// python fxn must not hold on to this pointer
@@ -8194,11 +8194,11 @@ bool CvUnit::pillage()
 
 			if (iPillageGold > 0)
 			{
-/************************************************************************************************/
-/* Influence Driven War                   06/06/10                                 Valkrionn    */
-/*                                                                                              */
-/* Original Author Moctezuma              End                                                   */
-/************************************************************************************************/
+				/************************************************************************************************/
+				/* Influence Driven War                   06/06/10                                 Valkrionn    */
+				/*                                                                                              */
+				/* Original Author Moctezuma              End                                                   */
+				/************************************************************************************************/
 				float fInfluenceRatio = 0.0f;
 				if (atWar(pPlot->getTeam(), getTeam()))
 				{
@@ -8207,55 +8207,61 @@ bool CvUnit::pillage()
 						fInfluenceRatio = doPillageInfluence();
 					}
 				}
-/*************************************************************************************************/
-/**	END																							**/
-/*************************************************************************************************/
+				/*************************************************************************************************/
+				/**	END																							**/
+				/*************************************************************************************************/
 
-//FfH Traits: Added by Kale 08/02/2007
+				//FfH Traits: Added by Kale 08/02/2007
 				iPillageGold += (iPillageGold * GET_PLAYER(getOwnerINLINE()).getPillagingGold()) / 100;
-//FfH: End Add
+				//FfH: End Add
 
 				GET_PLAYER(getOwnerINLINE()).changeGold(iPillageGold);
 
 				szBuffer = gDLL->getText("TXT_KEY_MISC_PLUNDERED_GOLD_FROM_IMP", iPillageGold, GC.getImprovementInfo(pPlot->getImprovementType()).getTextKeyWide());
-/************************************************************************************************/
-/* Influence Driven War                   06/06/10                                 Valkrionn    */
-/*                                                                                              */
-/* Original Author Moctezuma              End                                                   */
-/************************************************************************************************/
+				/************************************************************************************************/
+				/* Influence Driven War                   06/06/10                                 Valkrionn    */
+				/*                                                                                              */
+				/* Original Author Moctezuma              End                                                   */
+				/************************************************************************************************/
 				if (fInfluenceRatio > 0.0f)
 				{
 					szBuffer += gDLL->getText("TXT_KEY_MISC_TILE_INFLUENCE", fInfluenceRatio);
 				}
-/*************************************************************************************************/
-/**	END																							**/
-/*************************************************************************************************/
+				/*************************************************************************************************/
+				/**	END																							**/
+				/*************************************************************************************************/
 				gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_PILLAGE", MESSAGE_TYPE_INFO, getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_POSITIVE_TEXT"), pPlot->getX_INLINE(), pPlot->getY_INLINE());
 
 				if (pPlot->isOwned())
 				{
 					szBuffer = gDLL->getText("TXT_KEY_MISC_IMP_DESTROYED", GC.getImprovementInfo(pPlot->getImprovementType()).getTextKeyWide(), getNameKey(), getVisualCivAdjective(pPlot->getTeam()));
 
-/************************************************************************************************/
-/* Influence Driven War                   06/06/10                                 Valkrionn    */
-/*                                                                                              */
-/* Original Author Moctezuma              End                                                   */
-/************************************************************************************************/
+					/************************************************************************************************/
+					/* Influence Driven War                   06/06/10                                 Valkrionn    */
+					/*                                                                                              */
+					/* Original Author Moctezuma              End                                                   */
+					/************************************************************************************************/
 					if (fInfluenceRatio > 0.0f)
 					{
 						CvWString szInfluence;
 						szInfluence.Format(L" Tile influence: -%.1f%%", fInfluenceRatio);
 						szBuffer += szInfluence;
 					}
-/*************************************************************************************************/
-/**	END																							**/
-/*************************************************************************************************/
+					/*************************************************************************************************/
+					/**	END																							**/
+					/*************************************************************************************************/
 					gDLL->getInterfaceIFace()->addMessage(pPlot->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_PILLAGED", MESSAGE_TYPE_INFO, getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_NEGATIVE_TEXT"), pPlot->getX_INLINE(), pPlot->getY_INLINE(), true, true);
 				}
 			}
 		}
-
-		pPlot->setImprovementType((ImprovementTypes)GET_PLAYER(pPlot->getOwner()).getPlayerImprovement((ImprovementClassTypes)(GC.getImprovementInfo(pPlot->getImprovementType()).getImprovementClassPillage())));
+		if (pPlot->isOwned())
+		{
+			pPlot->setImprovementType((ImprovementTypes)GET_PLAYER(pPlot->getOwner()).getPlayerImprovement((ImprovementClassTypes)(GC.getImprovementInfo(pPlot->getImprovementType()).getImprovementClassPillage())));
+		}
+		else
+		{
+			pPlot->setImprovementType((ImprovementTypes)(GC.getImprovementClassInfo((ImprovementClassTypes)(GC.getImprovementInfo(pPlot->getImprovementType()).getImprovementClassPillage())).getDefaultImprovementIndex()));
+		}
 /*************************************************************************************************/
 /**	Improvements Mods by Jeckel		imported by Ahwaric	20.09.09 | Valkrionn	09.24.09		**/
 /*************************************************************************************************/

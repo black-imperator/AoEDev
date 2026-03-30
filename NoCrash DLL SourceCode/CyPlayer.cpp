@@ -2642,6 +2642,19 @@ void CyPlayer::changeDisableResearch(int iChange)
 		m_pPlayer->changeDisableResearch(iChange);
 }
 
+void CyPlayer::changeBroadAlignment(int iChange)
+{
+	if (m_pPlayer)
+		m_pPlayer->changeBroadAlignment(iChange);
+}
+
+void CyPlayer::changeBroadEthicalAlignment(int iChange)
+{
+	if (m_pPlayer)
+		m_pPlayer->changeBroadEthicalAlignment(iChange);
+}
+
+
 int CyPlayer::getDisableResearch() const
 {
 	return m_pPlayer ? m_pPlayer->getDisableResearch() : -1;

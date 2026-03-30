@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Civ4GameText xmlns="http://www.firaxis.com">
+	
+	<!-- %s1_sciv | civilisation name-->
+	<!-- %s2_aciv | adjective civ name -->
+	<!-- %[s3_leader] | leader name -->
+	<!-- %s4_city | city/capital name? -->
+	
+	<!--
+	<TEXT>
+		<Tag></Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	-->
+		
+						<!-- Despots -->
+	<TEXT>
+		<Tag>TXT_KEY_STATE_NAME_LORD_OF_WAR</Tag>
+		<English>%[s3_leader] Lord of War</English>
+		<French>%[s3_leader] Lord of War</French>
+		<German>%[s3_leader] Herr des Krieges</German>
+		<Italian>%[s3_leader] Signore de la Guerra</Italian>
+		<Spanish>%[s3_leader] Señor de la Guerra</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STATE_NAME_WAR_LORD</Tag>
+		<English>Warlord %[s3_leader]</English>
+		<French>Warlord %[s3_leader]</French>
+		<German>Warlord %[s3_leader]</German>
+		<Italian>Warlord %[s3_leader]</Italian>
+		<Spanish>Warlord %[s3_leader]</Spanish>
+	</TEXT>
+						<!-- Leagues -->
+	<TEXT>
+		<Tag>TXT_KEY_STATE_NAME_CITY_STATES_OVR</Tag>
+		<English>%s2_aciv Confederation</English>
+		<French>%s2_aciv Confederation</French>
+		<German>%s2_aciv Confederation</German>
+		<Italian>%s2_aciv Confederation</Italian>
+		<Spanish>%s2_aciv Confederation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STATE_NAME_FORBIDDEN_CITY</Tag>
+		<English>Forbidden City of %s4_city</English>
+		<French>Forbidden City of %s4_city</French>
+		<German>Forbidden City of %s4_city</German>
+		<Italian>Forbidden City of %s4_city</Italian>
+		<Spanish>Forbidden City of %s4_city</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STATE_NAME_REMOVED_CITIES</Tag>
+		<English>Removed %s2_aciv Cities</English>
+		<French>Removed %s2_aciv Cities</French>
+		<German>Removed %s2_aciv Cities</German>
+		<Italian>Removed %s2_aciv Cities</Italian>
+		<Spanish>Removed %s2_aciv Cities</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STATE_NAME_PEACE_LEAGUE_OVR</Tag>
+		<English>%s2_aciv Peace Bond</English>
+		<French>%s2_aciv Peace Bond</French>
+		<German>%s2_sciv Friedensbund</German>
+		<Italian>%s2_aciv Peace Bond</Italian>
+		<Spanish>%s2_aciv Peace Bond</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STATE_NAME_SACRED_CITY_OVR</Tag>
+		<English>Devaut City State of %s4_city</English>
+		<French>Devaut City State of %s4_city</French>
+		<German>Devaut City State of %s4_city</German>
+		<Italian>Devaut City State of %s4_city</Italian>
+		<Spanish>Devaut City State of %s4_city</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STATE_NAME_SACRED_CITIES_OVR</Tag>
+		<English>Devaut %s2_aciv League</English>
+		<French>Devaut %s2_aciv League</French>
+		<German>Devaut %s2_aciv League</German>
+		<Italian>Devaut %s2_aciv League</Italian>
+		<Spanish>Devaut %s2_aciv League</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STATE_NAME_SACROSANCT_CITY</Tag>
+		<English>Sacrosanct City State of %s4_city</English>
+		<French>Sacrosanct City State of %s4_city</French>
+		<German>Sacrosanct City State of %s4_city</German>
+		<Italian>Sacrosanct City State of %s4_city</Italian>
+		<Spanish>Sacrosanct City State of %s4_city</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STATE_NAME_SACROSANCT_CITIES</Tag>
+		<English>Sacrosanct %s2_aciv League</English>
+		<French>Sacrosanct %s2_aciv League</French>
+		<German>Sacrosanct %s2_aciv League</German>
+		<Italian>Sacrosanct %s2_aciv League</Italian>
+		<Spanish>Sacrosanct %s2_aciv League</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STATE_NAME_BLASPHEMOUS_CITY</Tag>
+		<English>Blasphemous City State of %s4_city</English>
+		<French>Blasphemous City State of %s4_city</French>
+		<German>Blasphemous City State of %s4_city</German>
+		<Italian>Blasphemous City State of %s4_city</Italian>
+		<Spanish>Blasphemous City State of %s4_city</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STATE_NAME_BLASPHEMOUS_CITIES</Tag>
+		<English>Blasphemous %s2_aciv League</English>
+		<French>Blasphemous %s2_aciv League</French>
+		<German>Blasphemous %s2_aciv League</German>
+		<Italian>Blasphemous %s2_aciv League</Italian>
+		<Spanish>Blasphemous %s2_aciv League</Spanish>
+	</TEXT>
+						<!-- Leviathans -->
+	<TEXT>
+		<Tag>TXT_KEY_STATE_NAME_REALM_OF_NATION_OVR</Tag>
+		<English>Ascendant Hero %[s3_leader]'s Realm</English>
+		<French>Ascendant Hero %[s3_leader]'s Realm</French>
+		<German>Ascendant Hero %[s3_leader]'s Realm</German>
+		<Italian>Ascendant Hero %[s3_leader]'s Realm</Italian>
+		<Spanish>Ascendant Hero %[s3_leader]'s Realm</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STATE_NAME_SEALED_REALM</Tag>
+		<English>%[s3_leader]'s Sealed Realm</English>
+		<French>%[s3_leader]'s Sealed Realm</French>
+		<German>%[s3_leader]'s Sealed Realm</German>
+		<Italian>%[s3_leader]'s Sealed Realm</Italian>
+		<Spanish>%[s3_leader]'s Sealed Realm</Spanish>
+	</TEXT>
+						<!-- Aristocrats / Monarchies -->
+	<TEXT>
+		<Tag>TXT_KEY_STATE_NAME_FREE_IMPERIAL_ESTATES_OVR</Tag>
+		<English>%s2_aciv Philosopher Kingdom</English>
+		<French>%s2_aciv Philosopher Kingdom</French>
+		<German>%s2_aciv Philosopher Kingdom</German>
+		<Italian>%s2_aciv Philosopher Kingdom</Italian>
+		<Spanish>%s2_aciv Philosopher Kingdom</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STATE_NAME_HERMIT_KINGDOM</Tag>
+		<English>Hermit Kingdom of the %s1_sciv</English>
+		<French>Hermit Kingdom of the %s1_sciv</French>
+		<German>Hermit Kingdom of the %s1_sciv</German>
+		<Italian>Hermit Kingdom of the %s1_sciv</Italian>
+		<Spanish>Hermit Kingdom of the %s1_sciv</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STATE_NAME_DECADENT_KINGDOM</Tag>
+		<English>Decadent Kingdom of the %s1_sciv</English>
+		<French>Decadent Kingdom of the %s1_sciv</French>
+		<German>Decadent Kingdom of the %s1_sciv</German>
+		<Italian>Decadent Kingdom of the %s1_sciv</Italian>
+		<Spanish>Decadent Kingdom of the %s1_sciv</Spanish>
+	</TEXT>
+						<!-- Empires -->
+	<TEXT>
+		<Tag>TXT_KEY_STATE_NAME_IMPERIUM</Tag>
+		<English>%s2_aciv Empire</English>
+		<French>%s2_aciv Empire></French>
+		<German>%s2_aciv Empire</German>
+		<Italian>%s2_aciv Empire</Italian>
+		<Spanish>%s2_aciv Empire</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STATE_NAME_IMPERIUM_GRAND</Tag>
+		<English>%s2_aciv Imperium</English>
+		<French>%s2_aciv Imperium></French>
+		<German>%s2_aciv Imperium</German>
+		<Italian>%s2_aciv Imperium</Italian>
+		<Spanish>%s2_aciv Imperium</Spanish>
+	</TEXT>
+						<!-- Theocrats -->
+
+						<!-- Magocracies -->
+	<TEXT>
+		<Tag>TXT_KEY_STATE_NAME_MAGOCRACY</Tag>
+		<English>%s2_aciv Arcane Council</English>
+		<French>%s2_aciv Arcane Council</French>
+		<German>%s2_aciv Arcane Council</German>
+		<Italian>%s2_aciv Arcane Council</Italian>
+		<Spanish>%s2_aciv Arcane Council</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STATE_NAME_DRUID_CONCLAVE</Tag>
+		<English>Druidic Conclave of the %s1_sciv</English>
+		<French>Druidic Conclave of the %s1_sciv</French>
+		<German>Druidic Conclave of the %s1_sciv</German>
+		<Italian>Druidic Conclave of the %s1_sciv</Italian>
+		<Spanish>Druidic Conclave of the %s1_sciv</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STATE_NAME_SERENE_FOREST</Tag>
+		<English>Serene Forest of the %s1_sciv</English>
+		<French>Serene Forest of the %s1_sciv</French>
+		<German>Serene Forest of the %s1_sciv</German>
+		<Italian>Serene Forest of the %s1_sciv</Italian>
+		<Spanish>Serene Forest of the %s1_sciv</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STATE_NAME_HAUNTING_FOREST</Tag>
+		<English>Haunting Forest of the %s1_sciv</English>
+		<French>Haunting Forest of the %s1_sciv</French>
+		<German>Haunting Forest of the %s1_sciv</German>
+		<Italian>Haunting Forest of the %s1_sciv</Italian>
+		<Spanish>Haunting Forest of the %s1_sciv</Spanish>
+	</TEXT>
+						<!-- Crime Lords -->
+	<TEXT>
+		<Tag>TXT_KEY_STATE_NAME_OUTLAW_CITY</Tag>
+		<English>The Outlaw City of %s4_city</English>
+		<French>The Outlaw City of %s4_city</French>
+		<German>The Outlaw City of %s4_city</German>
+		<Italian>The Outlaw City of %s4_city</Italian>
+		<Spanish>The Outlaw City of %s4_city</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STATE_NAME_ROGUE_STATE</Tag>
+		<English>%s1_sciv Rogue State</English>
+		<French>%s1_sciv Rogue State</French>
+		<German>%s1_sciv Rogue State</German>
+		<Italian>%s1_sciv Rogue State</Italian>
+		<Spanish>%s1_sciv Rogue State</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STATE_NAME_CRIMINAL_CARTEL</Tag>
+		<English>%s2_aciv Cartel</English>
+		<French>%s2_aciv Cartel</French>
+		<German>%s2_aciv Cartel</German>
+		<Italian>%s2_aciv Cartel</Italian>
+		<Spanish>%s2_aciv Cartel</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STATE_NAME_TERROR_STATE</Tag>
+		<English>%s1_sciv Terror State</English>
+		<French>%s1_sciv Terror State</French>
+		<German>%s1_sciv Terror State</German>
+		<Italian>%s1_sciv Terror State</Italian>
+		<Spanish>%s1_sciv Terror State</Spanish>
+	</TEXT>
+	
+						
+						<!-- Republics -->
+	<TEXT>
+		<Tag>TXT_KEY_STATE_NAME_REPUBLIC_CITY</Tag>
+		<English>Republic of %s4_city</English>
+		<French>Republic of %s4_city</French>
+		<German>Republic of %s4_city</German>
+		<Italian>Republic of %s4_city</Italian>
+		<Spanish>Republic of %s4_city</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STATE_NAME_TECHNOCRACY</Tag>
+		<English>%s2_aciv Technocracy</English>
+		<French>%s2_aciv Technocracy</French>
+		<German>%s2_aciv Technocracy</German>
+		<Italian>%s2_aciv Technocracy</Italian>
+		<Spanish>%s2_aciv Technocracy</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STATE_NAME_SERENE_REPUBLIC</Tag>
+		<English>%s2_aciv Serene Republic</English>
+		<French>%s2_aciv Serene Republic</French>
+		<German>%s2_aciv Serene Republic</German>
+		<Italian>%s2_aciv Serene Republic</Italian>
+		<Spanish>%s2_aciv Serene Republic</Spanish>
+	</TEXT>
+</Civ4GameText>

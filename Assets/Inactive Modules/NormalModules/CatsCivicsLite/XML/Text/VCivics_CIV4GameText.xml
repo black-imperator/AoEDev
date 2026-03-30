@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_WE_LOVE_HIGH_PRIEST</Tag>
+		<English>"We Love the High Priest Day"</English>
+		<French>"We Love the High Priest Day"</French>
+		<German>"We Love the High Priest Day"</German>
+		<Italian>"We Love the High Priest Day"</Italian>
+		<Spanish>"We Love the High Priest Day"</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_WE_LOVE_OVERLORD</Tag>
+		<English>"We Love the Overlord Day"</English>
+		<French>"We Love the Overlord Day"</French>
+		<German>"We Love the Overlord Day"</German>
+		<Italian>"We Love the Overlord Day"</Italian>
+		<Spanish>"We Love the Overlord Day"</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_WE_LOVE_IMPERATOR</Tag>
+		<English>"We Love the Imperator Day"</English>
+		<French>"We Love the Imperator Day"</French>
+		<German>"We Love the Imperator Day"</German>
+		<Italian>"We Love the Imperator Day"</Italian>
+		<Spanish>"We Love the Imperator Day"</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_WE_LOVE_ASCENDENT</Tag>
+		<English>"We Love the Ascendent Day"</English>
+		<French>"We Love the Ascendent Day"</French>
+		<German>"We Love the Ascendent Day"</German>
+		<Italian>"We Love the Ascendent Day"</Italian>
+		<Spanish>"We Love the Ascendent Day"</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_WE_LOVE_ARCHMAGE</Tag>
+		<English>"We Love the Archmage Day"</English>
+		<French>"We Love the Archmage Day"</French>
+		<German>"We Love the Archmage Day"</German>
+		<Italian>"We Love the Archmage Day"</Italian>
+		<Spanish>"We Love the Archmage Day"</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_WE_LOVE_MASTER</Tag>
+		<English>"We Love the Master Day"</English>
+		<French>"We Love the Master Day"</French>
+		<German>"We Love the Master Day"</German>
+		<Italian>"We Love the Master Day"</Italian>
+		<Spanish>"We Love the Master Day"</Spanish>
+	</TEXT>
+</Civ4GameText>

@@ -6446,7 +6446,7 @@
 			<iMinLevel>6</iMinLevel>
 			<iTier>4</iTier>
 			<Image>Art/Interface/Popups/Miquiztli.dds</Image>
-			<Quote>TXT_KEY_UNIT_MIQUIZTLI_STRATEGY</Quote>
+			<Quote>TXT_KEY_POPUP_MIQUIZTLI_CREATION</Quote>
 			<DamageTypeCombats>
 				<DamageTypeCombat>
 					<DamageType>DAMAGE_POISON</DamageType>

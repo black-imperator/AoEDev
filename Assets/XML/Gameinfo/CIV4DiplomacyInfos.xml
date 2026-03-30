@@ -14909,7 +14909,7 @@
 					<DiplomacyPowers>
 					</DiplomacyPowers>
 					<DiplomacyText>
-						<Text>AI_DIPLO_NO_DEAL_FR_6</Text>
+						<Text>AI_DIPLO_FR_NO_DEAL_6</Text>
 					</DiplomacyText>
 				</Response>
 				<Response>	<!--Capria Annoyed Furious-->
@@ -15013,7 +15013,7 @@
 					<DiplomacyPowers>
 					</DiplomacyPowers>
 					<DiplomacyText>
-						<Text>AI_DIPLO_NO_DEAL_FR_6</Text>
+						<Text>AI_DIPLO_FR_NO_DEAL_6</Text>
 					</DiplomacyText>
 				</Response>
 				<Response>	<!--Decius Annoyed Furious-->
@@ -15921,7 +15921,7 @@
 					<DiplomacyPowers>
 					</DiplomacyPowers>
 					<DiplomacyText>
-						<Text>AI_DIPLO_NO_DEAL_FR_6</Text>
+						<Text>AI_DIPLO_FR_NO_DEAL_6</Text>
 					</DiplomacyText>
 				</Response>
 				<Response>	<!--Hyborem Annoyed Furious-->

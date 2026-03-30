@@ -651,7 +651,7 @@
 		<TraitInfo>		<!--Scion Fallow - Scions, need a bettername-->
 			<Type>TRAIT_FALLOW_SCION</Type>
 			<TraitClass>TRAITCLASS_CIVILIZATION</TraitClass>
-			<Description>TXT_KEY_TRAIT_FALLOW</Description>
+			<Description>TXT_KEY_TRAIT_FALLOW_SCION</Description>
 			<Civilopedia>TXT_KEY_TRAIT_FALLOW_PEDIA</Civilopedia>
 			<ShortDescription>TXT_KEY_TRAIT_FALLOW_SHORT</ShortDescription>
 			<bIgnoreFood>1</bIgnoreFood>

@@ -676,7 +676,9 @@ public:
 	int getDisableProduction() const;
 	void changeDisableResearch(int iChange);
 	int getDisableResearch() const;
-/*************************************************************************************************/
+	void changeBroadAlignment(int iChange);
+	void changeBroadEthicalAlignment(int iChange);
+	/*************************************************************************************************/
 /**	StasisReworkCode					Feb 3 2026										Klauros	**/
 /**								Coding for Stasis Rework										**/
 /*************************************************************************************************/

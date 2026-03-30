@@ -4542,6 +4542,7 @@ public:
 	bool isAutoBuild() const;
 	bool isMustMaintain() const;
 	bool isCrimeEffect() const;
+	bool isEffect() const;
 	int getPerCrimeEffectHappyChange() const;
 	int getPerCrimeEffectHealthChange() const;
 	int getPerCrimeEffectCommerceChange(int i) const;				// Exposed to Python
@@ -5004,6 +5005,7 @@ protected:
 	bool m_bAutoBuild;
 	bool m_bMustMaintain;
 	bool m_bCrimeEffect;
+	bool m_bEffect;
 	int m_iPerCrimeEffectHappyChange;
 	int m_iPerCrimeEffectHealthChange;
 	int* m_piPerCrimeEffectYieldChange;

@@ -127,6 +127,16 @@
 			<Button>Modules/NormalModules/kcz_buildingPack/Art/Interface/Buttons/Buildings/mint.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_CUSTOM_HOUSE</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.6</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Mage Guild/cathedral.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/kcz_buildingPack/Art/Interface/Buttons/Buildings/customhouse.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_PANTHEON</Type>
 			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
