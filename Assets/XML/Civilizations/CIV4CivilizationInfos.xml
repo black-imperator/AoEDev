@@ -1198,24 +1198,12 @@
 					<BuildingType>BUILDING_MEDICINE_HUT</BuildingType>
 				</Building>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_BEAR_TOTEM</BuildingClassType>
-					<BuildingType>BUILDING_BEAR_TOTEM</BuildingType>
-				</Building>
-				<Building>
 					<BuildingClassType>BUILDINGCLASS_LIBRARY</BuildingClassType>
 					<BuildingType>BUILDING_STORYTELLERS</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 					<BuildingType>BUILDING_PALACE_CHISLEV</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_ELDER_COUNCIL</BuildingClassType>
-					<BuildingType>BUILDING_TRIBAL_COUNCIL</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
-					<BuildingType>BUILDING_TRIBAL_SHRINE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_TOTEM_OF_OLD_ENEMY</BuildingClassType>
@@ -1244,6 +1232,34 @@
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_CRIME_GANGS_WARFARE</BuildingClassType>
 					<BuildingType>BUILDING_CRIME_TRIBAL_INFIGHTING</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_EAGLE</BuildingClassType>
+					<BuildingType>BUILDING_TOTEM_OF_THE_EAGLE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_COYOTE</BuildingClassType>
+					<BuildingType>BUILDING_TOTEM_OF_THE_COYOTE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_BEAR</BuildingClassType>
+					<BuildingType>BUILDING_TOTEM_OF_THE_BEAR</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_SERPENT</BuildingClassType>
+					<BuildingType>BUILDING_TOTEM_OF_THE_SERPENT</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_TORTOISE</BuildingClassType>
+					<BuildingType>BUILDING_TOTEM_OF_THE_TORTOISE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_WARCHIEF_HARBOR</BuildingClassType>
+					<BuildingType>BUILDING_WARCHIEF_HARBOR</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_HARBOR</BuildingClassType>
+					<BuildingType>BUILDING_CANOE_HARBOR</BuildingType>
 				</Building>
 			</Buildings>
 			<Units>
@@ -1395,6 +1411,10 @@
 				</Leader>
 				<Leader>
 					<LeaderName>LEADER_NATANE</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
+				<Leader>
+					<LeaderName>LEADER_THE_COUNCIL</LeaderName>
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
 			</Leaders>

@@ -89,7 +89,7 @@
 						<Text>AI_DIPLO_DECLARE_WAR_LEADER_ALOSAKA</Text>
 					</DiplomacyText>
 				</Response>
-				<Response>
+				<Response> <!-- Chislev The Council -->
 					<Civilizations/>
 					<Leaders>
 						<Leader>
@@ -190,7 +190,7 @@
 						<Text>AI_DIPLO_FIRST_CONTACT_LEADER_ALOSAKA</Text>
 					</DiplomacyText>
 				</Response>
-				<Response>
+				<Response> <!-- Chislev The Council -->
 					<Civilizations/>
 					<Leaders>
 						<Leader>
@@ -291,7 +291,7 @@
 						<Text>AI_DIPLO_REFUSE_TO_TALK_LEADER_ALOSAKA</Text>
 					</DiplomacyText>
 				</Response>
-				<Response>
+				<Response> <!-- Chislev The Council -->
 					<Civilizations/>
 					<Leaders>
 						<Leader>
@@ -392,7 +392,7 @@
 						<Text>AI_DIPLO_PEACE_LEADER_ALOSAKA</Text>
 					</DiplomacyText>
 				</Response>
-				<Response>
+				<Response> <!-- Chislev The Council -->
 					<Civilizations/>
 					<Leaders>
 						<Leader>
@@ -493,7 +493,7 @@
 						<Text>AI_DIPLO_NO_PEACE_LEADER_ALOSAKA</Text>
 					</DiplomacyText>
 				</Response>
-				<Response>
+				<Response> <!-- Chislev The Council -->
 					<Civilizations/>
 					<Leaders>
 						<Leader>
@@ -594,7 +594,7 @@
 						<Text>AI_DIPLO_ACCEPT_LEADER_ALOSAKA</Text>
 					</DiplomacyText>
 				</Response>
-				<Response>
+				<Response> <!-- Chislev The Council -->
 					<Civilizations/>
 					<Leaders>
 						<Leader>
@@ -755,7 +755,7 @@
 						<Text>AI_DIPLO_REJECT_LEADER_ALOSAKA</Text>
 					</DiplomacyText>
 				</Response>
-				<Response>
+				<Response> <!-- Chislev The Council -->
 					<Civilizations/>
 					<Leaders>
 						<Leader>
@@ -868,7 +868,7 @@
 						<Text>AI_DIPLO_OFFER_PEACE_LEADER_ALOSAKA</Text>
 					</DiplomacyText>
 				</Response>
-				<Response>
+				<Response> <!-- Chislev The Council -->
 					<Civilizations/>
 					<Leaders>
 						<Leader>
@@ -970,7 +970,7 @@
 						<Text>AI_DIPLO_THANKS_LEADER_ALOSAKA</Text>
 					</DiplomacyText>
 				</Response>
-				<Response>
+				<Response> <!-- Chislev The Council -->
 					<Civilizations/>
 					<Leaders>
 						<Leader>
@@ -1131,7 +1131,7 @@
 						<Text>AI_DIPLO_DEMAND_REJECTED_LEADER_ALOSAKA</Text>
 					</DiplomacyText>
 				</Response>
-				<Response>
+				<Response> <!-- Chislev The Council -->
 					<Civilizations/>
 					<Leaders>
 						<Leader>
@@ -1504,7 +1504,7 @@
 						<Text>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_ALOSAKA</Text>
 					</DiplomacyText>
 				</Response>
-				<Response>
+				<Response> <!-- Chislev The Council -->
 					<Civilizations/>
 					<Leaders>
 						<Leader>
@@ -1528,7 +1528,7 @@
 						<Text>AI_DIPLO_GREETINGS_ATT_FR_LEADER_THE_COUNCIL</Text>
 					</DiplomacyText>
 				</Response>
-				<Response>
+				<Response> <!-- Chislev The Council -->
 					<Civilizations/>
 					<Leaders>
 						<Leader>
@@ -1548,7 +1548,7 @@
 						<Text>AI_DIPLO_GREETINGS_ATT_CA_LEADER_THE_COUNCIL</Text>
 					</DiplomacyText>
 				</Response>
-				<Response>
+				<Response> <!-- Chislev The Council -->
 					<Civilizations/>
 					<Leaders>
 						<Leader>
@@ -1877,7 +1877,7 @@
 						<Text>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_LEADER_ALOSAKA</Text>
 					</DiplomacyText>
 				</Response>
-				<Response> 
+				<Response>  <!-- Chislev The Council -->
 					<Civilizations/>
 					<Leaders>
 						<Leader>
@@ -1897,7 +1897,7 @@
 						<Text>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_LEADER_THE_COUNCIL</Text>
 					</DiplomacyText>
 				</Response>
-				<Response> 
+				<Response>  <!-- Chislev The Council -->
 					<Civilizations/>
 					<Leaders>
 						<Leader>
@@ -1917,7 +1917,7 @@
 						<Text>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_LEADER_THE_COUNCIL</Text>
 					</DiplomacyText>
 				</Response>
-				<Response> 
+				<Response>  <!-- Chislev The Council -->
 					<Civilizations/>
 					<Leaders>
 						<Leader>

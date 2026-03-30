@@ -1400,6 +1400,22 @@
 						<Text>AI_DIPLO_FIRST_CONTACT_LEADER_AMURITES</Text>
 					</DiplomacyText>
 				</Response>
+				<Response> <!-- Chislev The Council -->
+					<Civilizations/>
+					<Leaders>
+						<Leader>
+							<LeaderType>LEADER_THE_COUNCIL</LeaderType>
+							<bLeaderType>1</bLeaderType>
+						</Leader>
+					</Leaders>
+					<Attitudes>
+					</Attitudes>
+					<DiplomacyPowers>
+					</DiplomacyPowers>
+					<DiplomacyText>
+						<Text>AI_DIPLO_FIRST_CONTACT_LEADER_THE_COUNCIL</Text>
+					</DiplomacyText>
+				</Response>
 				<Response>		<!--Daracaat-->		<!--Archos-->
 					<Civilizations/>
 					<Leaders>
@@ -2344,6 +2360,22 @@
 						<Text>AI_DIPLO_REFUSE_TO_TALK_LEADER_AMURITES</Text>
 					</DiplomacyText>
 				</Response>
+				<Response> <!-- Chislev The Council -->
+					<Civilizations/>
+					<Leaders>
+						<Leader>
+							<LeaderType>LEADER_THE_COUNCIL</LeaderType>
+							<bLeaderType>1</bLeaderType>
+						</Leader>
+					</Leaders>
+					<Attitudes>
+					</Attitudes>
+					<DiplomacyPowers>
+					</DiplomacyPowers>
+					<DiplomacyText>
+						<Text>AI_DIPLO_REFUSE_TO_TALK_LEADER_THE_COUNCIL</Text>
+					</DiplomacyText>
+				</Response>
 				<Response>		<!--Valledia-->
 					<Civilizations/>
 					<Leaders>
@@ -3272,6 +3304,22 @@
 						<Text>AI_DIPLO_PEACE_LEADER_AMURITES</Text>
 					</DiplomacyText>
 				</Response>
+				<Response> <!-- Chislev The Council -->
+					<Civilizations/>
+					<Leaders>
+						<Leader>
+							<LeaderType>LEADER_THE_COUNCIL</LeaderType>
+							<bLeaderType>1</bLeaderType>
+						</Leader>
+					</Leaders>
+					<Attitudes>
+					</Attitudes>
+					<DiplomacyPowers>
+					</DiplomacyPowers>
+					<DiplomacyText>
+						<Text>AI_DIPLO_PEACE_LEADER_THE_COUNCIL</Text>
+					</DiplomacyText>
+				</Response>
 				<Response>		<!--Valledia-->
 					<Civilizations/>
 					<Leaders>
@@ -4182,6 +4230,22 @@
 					</DiplomacyPowers>
 					<DiplomacyText>
 						<Text>AI_DIPLO_NO_PEACE_LEADER_AMURITES</Text>
+					</DiplomacyText>
+				</Response>
+				<Response> <!-- Chislev The Council -->
+					<Civilizations/>
+					<Leaders>
+						<Leader>
+							<LeaderType>LEADER_THE_COUNCIL</LeaderType>
+							<bLeaderType>1</bLeaderType>
+						</Leader>
+					</Leaders>
+					<Attitudes>
+					</Attitudes>
+					<DiplomacyPowers>
+					</DiplomacyPowers>
+					<DiplomacyText>
+						<Text>AI_DIPLO_NO_PEACE_LEADER_THE_COUNCIL</Text>
 					</DiplomacyText>
 				</Response>
 				<Response>	<!--Valedia-->
@@ -5098,6 +5162,74 @@
 					</DiplomacyPowers>
 					<DiplomacyText>
 						<Text>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_AMURITES</Text>
+					</DiplomacyText>
+				</Response>
+				<Response> <!-- Chislev The Council -->
+					<Civilizations/>
+					<Leaders>
+						<Leader>
+							<LeaderType>LEADER_THE_COUNCIL</LeaderType>
+							<bLeaderType>1</bLeaderType>
+						</Leader>
+					</Leaders>
+					<Attitudes>
+						<Attitude>
+							<AttitudeType>ATTITUDE_FRIENDLY</AttitudeType>
+							<bAttitudeType>1</bAttitudeType>
+						</Attitude>
+						<Attitude>
+							<AttitudeType>ATTITUDE_PLEASED</AttitudeType>
+							<bAttitudeType>1</bAttitudeType>
+						</Attitude>
+					</Attitudes>
+					<DiplomacyPowers>
+					</DiplomacyPowers>
+					<DiplomacyText>
+						<Text>AI_DIPLO_GREETINGS_ATT_FR_LEADER_THE_COUNCIL</Text>
+					</DiplomacyText>
+				</Response>
+				<Response> <!-- Chislev The Council -->
+					<Civilizations/>
+					<Leaders>
+						<Leader>
+							<LeaderType>LEADER_THE_COUNCIL</LeaderType>
+							<bLeaderType>1</bLeaderType>
+						</Leader>
+					</Leaders>
+					<Attitudes>
+						<Attitude>
+							<AttitudeType>ATTITUDE_CAUTIOUS</AttitudeType>
+							<bAttitudeType>1</bAttitudeType>
+						</Attitude>
+					</Attitudes>
+					<DiplomacyPowers>
+					</DiplomacyPowers>
+					<DiplomacyText>
+						<Text>AI_DIPLO_GREETINGS_ATT_CA_LEADER_THE_COUNCIL</Text>
+					</DiplomacyText>
+				</Response>
+				<Response> <!-- Chislev The Council -->
+					<Civilizations/>
+					<Leaders>
+						<Leader>
+							<LeaderType>LEADER_THE_COUNCIL</LeaderType>
+							<bLeaderType>1</bLeaderType>
+						</Leader>
+					</Leaders>
+					<Attitudes>
+						<Attitude>
+							<AttitudeType>ATTITUDE_ANNOYED</AttitudeType>
+							<bAttitudeType>1</bAttitudeType>
+						</Attitude>
+						<Attitude>
+							<AttitudeType>ATTITUDE_FURIOUS</AttitudeType>
+							<bAttitudeType>1</bAttitudeType>
+						</Attitude>
+					</Attitudes>
+					<DiplomacyPowers>
+					</DiplomacyPowers>
+					<DiplomacyText>
+						<Text>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_THE_COUNCIL</Text>
 					</DiplomacyText>
 				</Response>
 				<Response><!--Valledia Friendly Pleased Cautious-->
@@ -9053,6 +9185,22 @@
 						<Text>AI_DIPLO_ACCEPT_10</Text>
 					</DiplomacyText>
 				</Response>
+				<Response> <!-- Chislev The Council -->
+					<Civilizations/>
+					<Leaders>
+						<Leader>
+							<LeaderType>LEADER_THE_COUNCIL</LeaderType>
+							<bLeaderType>1</bLeaderType>
+						</Leader>
+					</Leaders>
+					<Attitudes>
+					</Attitudes>
+					<DiplomacyPowers>
+					</DiplomacyPowers>
+					<DiplomacyText>
+						<Text>AI_DIPLO_ACCEPT_LEADER_THE_COUNCIL</Text>
+					</DiplomacyText>
+				</Response>
 				<Response><!--Valledia-->
 					<Civilizations/>
 					<Leaders>
@@ -10019,6 +10167,34 @@
 					</DiplomacyPowers>
 					<DiplomacyText>
 						<Text>AI_DIPLO_REJECT_LEADER_AMURITES</Text>
+					</DiplomacyText>
+				</Response>
+				<Response> <!-- Chislev The Council -->
+					<Civilizations/>
+					<Leaders>
+						<Leader>
+							<LeaderType>LEADER_THE_COUNCIL</LeaderType>
+							<bLeaderType>1</bLeaderType>
+						</Leader>
+					</Leaders>
+					<Attitudes>
+						<Attitude>
+							<AttitudeType>ATTITUDE_FRIENDLY</AttitudeType>
+							<bAttitudeType>1</bAttitudeType>
+						</Attitude>
+						<Attitude>
+							<AttitudeType>ATTITUDE_PLEASED</AttitudeType>
+							<bAttitudeType>1</bAttitudeType>
+						</Attitude>
+						<Attitude>
+							<AttitudeType>ATTITUDE_CAUTIOUS</AttitudeType>
+							<bAttitudeType>1</bAttitudeType>
+						</Attitude>
+					</Attitudes>
+					<DiplomacyPowers>
+					</DiplomacyPowers>
+					<DiplomacyText>
+						<Text>AI_DIPLO_REJECT_LEADER_THE_COUNCIL</Text>
 					</DiplomacyText>
 				</Response>
 				<Response>	<!--Valledia Friendly Pleased Cautious-->
@@ -17216,6 +17392,22 @@
 						<Text>AI_DIPLO_OFFER_PEACE_1</Text>
 					</DiplomacyText>
 				</Response>
+				<Response> <!-- Chislev The Council -->
+					<Civilizations/>
+					<Leaders>
+						<Leader>
+							<LeaderType>LEADER_THE_COUNCIL</LeaderType>
+							<bLeaderType>1</bLeaderType>
+						</Leader>
+					</Leaders>
+					<Attitudes>
+					</Attitudes>
+					<DiplomacyPowers>
+					</DiplomacyPowers>
+					<DiplomacyText>
+						<Text>AI_DIPLO_OFFER_PEACE_LEADER_THE_COUNCIL</Text>
+					</DiplomacyText>
+				</Response>
 				<Response>	<!--Daracaat-->						<!--Archos-->
 					<Civilizations/>
 					<Leaders>
@@ -19576,6 +19768,22 @@
 					</DiplomacyPowers>
 					<DiplomacyText>
 						<Text>AI_DIPLO_THANKS_20</Text>
+					</DiplomacyText>
+				</Response>
+				<Response> <!-- Chislev The Council -->
+					<Civilizations/>
+					<Leaders>
+						<Leader>
+							<LeaderType>LEADER_THE_COUNCIL</LeaderType>
+							<bLeaderType>1</bLeaderType>
+						</Leader>
+					</Leaders>
+					<Attitudes>
+					</Attitudes>
+					<DiplomacyPowers>
+					</DiplomacyPowers>
+					<DiplomacyText>
+						<Text>AI_DIPLO_THANKS_LEADER_THE_COUNCIL</Text>
 					</DiplomacyText>
 				</Response>
 				<Response>	<!--Daracaat-->					<!--Archos-->
@@ -22826,6 +23034,66 @@
 						<Text>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_2</Text>
 					</DiplomacyText>
 				</Response>
+				<Response>  <!-- Chislev The Council -->
+					<Civilizations/>
+					<Leaders>
+						<Leader>
+							<LeaderType>LEADER_THE_COUNCIL</LeaderType>
+							<bLeaderType>1</bLeaderType>
+						</Leader>
+					</Leaders>
+					<Attitudes>
+					</Attitudes>
+					<DiplomacyPowers>
+						<DiplomacyPower>
+							<DiplomacyPowerType>DIPLOMACYPOWER_STRONGER</DiplomacyPowerType>
+							<bDiplomacyPowerType>1</bDiplomacyPowerType>
+						</DiplomacyPower>
+					</DiplomacyPowers>
+					<DiplomacyText>
+						<Text>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_LEADER_THE_COUNCIL</Text>
+					</DiplomacyText>
+				</Response>
+				<Response>  <!-- Chislev The Council -->
+					<Civilizations/>
+					<Leaders>
+						<Leader>
+							<LeaderType>LEADER_THE_COUNCIL</LeaderType>
+							<bLeaderType>1</bLeaderType>
+						</Leader>
+					</Leaders>
+					<Attitudes>
+					</Attitudes>
+					<DiplomacyPowers>
+						<DiplomacyPower>
+							<DiplomacyPowerType>DIPLOMACYPOWER_EQUAL</DiplomacyPowerType>
+							<bDiplomacyPowerType>1</bDiplomacyPowerType>
+						</DiplomacyPower>
+					</DiplomacyPowers>
+					<DiplomacyText>
+						<Text>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_LEADER_THE_COUNCIL</Text>
+					</DiplomacyText>
+				</Response>
+				<Response>  <!-- Chislev The Council -->
+					<Civilizations/>
+					<Leaders>
+						<Leader>
+							<LeaderType>LEADER_THE_COUNCIL</LeaderType>
+							<bLeaderType>1</bLeaderType>
+						</Leader>
+					</Leaders>
+					<Attitudes>
+					</Attitudes>
+					<DiplomacyPowers>
+						<DiplomacyPower>
+							<DiplomacyPowerType>DIPLOMACYPOWER_WEAKER</DiplomacyPowerType>
+							<bDiplomacyPowerType>1</bDiplomacyPowerType>
+						</DiplomacyPower>
+					</DiplomacyPowers>
+					<DiplomacyText>
+						<Text>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_LEADER_THE_COUNCIL</Text>
+					</DiplomacyText>
+				</Response>
 				<Response>	<!--Valledia Stronger-->
 					<Civilizations/>
 					<Leaders>
@@ -25811,6 +26079,34 @@
 					</DiplomacyPowers>
 					<DiplomacyText>
 						<Text>AI_DIPLO_DEMAND_REJECTED_LEADER_AMURITES</Text>
+					</DiplomacyText>
+				</Response>
+				<Response> <!-- Chislev The Council -->
+					<Civilizations/>
+					<Leaders>
+						<Leader>
+							<LeaderType>LEADER_THE_COUNCIL</LeaderType>
+							<bLeaderType>1</bLeaderType>
+						</Leader>
+					</Leaders>
+					<Attitudes>
+					</Attitudes>
+					<DiplomacyPowers>
+						<DiplomacyPower>
+							<DiplomacyPowerType>DIPLOMACYPOWER_WEAKER</DiplomacyPowerType>
+							<bDiplomacyPowerType>1</bDiplomacyPowerType>
+						</DiplomacyPower>
+						<DiplomacyPower>
+							<DiplomacyPowerType>DIPLOMACYPOWER_EQUAL</DiplomacyPowerType>
+							<bDiplomacyPowerType>1</bDiplomacyPowerType>
+						</DiplomacyPower>
+						<DiplomacyPower>
+							<DiplomacyPowerType>DIPLOMACYPOWER_STRONGER</DiplomacyPowerType>
+							<bDiplomacyPowerType>1</bDiplomacyPowerType>
+						</DiplomacyPower>
+					</DiplomacyPowers>
+					<DiplomacyText>
+						<Text>AI_DIPLO_DEMAND_REJECTED_LEADER_THE_COUNCIL</Text>
 					</DiplomacyText>
 				</Response>
 				<Response>	<!--Valledia -->

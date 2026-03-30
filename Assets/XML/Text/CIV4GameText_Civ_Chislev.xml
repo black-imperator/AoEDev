@@ -211,6 +211,22 @@ The new world was born and the rites are once again set to be performed into a n
 		<Spanish>She entered the spirit hut. Absaroke sat facing a small fire, smoke spiralling through the hole in the roof. He was preparing for the conflict. In the morning he would lead the best warriors of four villages against the orcs. [NEWLINE][NEWLINE]So many orcs. When the scouts had first reported their numbers, she could not believe their words. The orcs had always been scattered and fragmented - these ones marched behind a mighty leader and banner, their numbers swelling as each tribe fell in line. Absaroke understood this. In order to defeat his foe he had emulated them, uniting the Chislev tribes against those of the orcs. He would never say as much and she knew better than to suggest it - his temper was poor these days - but it was plain to see. [NEWLINE][NEWLINE]He rose from his meditation, seeing her for the first time. "My daughter, what troubles you?"[NEWLINE]  "Our people go to war, Father. Our farmers take up spears instad of tending their crop, our spirit healers tend the wounded instead of the sick. The warpath is well prepared - but I fear those of us who do not tread it will suffer the loss of those who do." As she spoke, her voice had risen and her tone became angry.[NEWLINE]"Your words are true, Natane. This time will be hard for the Chislev - equally for those at war and those at home. You understand this well, so it falls to you to guide our people that remain here."</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_LEADER_THE_COUNCIL</Tag>
+		<English>The Council</English>
+		<French>The Council</French>
+		<German>The Council</German>
+		<Italian>The Council</Italian>
+		<Spanish>The Council</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_THE_COUNCIL_PEDIA</Tag>
+		<English>[TAB]It had been years since the start of the war with the Clan of Embers. The younger Chislev didn't even know how it all began, and many called for peace; but the Council were wise, and were privy to all of the Chislev tales, back to their origin. They knew that there would be no peace so long as they bordered The Clan. Bhall and The Clan would not rest. The Council was thankful to have the Bannor as allies. Some of the Bannor may have viewed the Chislev as savages, but regardless, as long time war partners, they had a mutual respect for one another.[PARAGRAPH:1]The Council was made of five leaders: one from each of the great tribes of the past. The tribes had come together against the orcs and had become such a cohesive unit, that it became difficult to distinguish one tribe from the next, unlike how things had been a generation or two ago. Still, one tribe stood out from the rest: the fiery spirit of the Serpent Tribe. The Serpent Tribe had still not forgotten the wrongs committed against them by the orcs, and they made damn well sure that their younger generations knew of their struggle. The Serpent Tribe were certainly the most vocal of the lot, and any time a chance for peace fell on the table, the Serpent Tribe reminded the rest of the Council of the Chislev's past, and that their could be no peace until this ember was extinguished. Certainly the Bear Tribe and Coyote Tribe agreed.[PARAGRAPH:1]This comingling of the tribes, yet each with their own distinct roots, provided the Council with a vast array of thoughts and approaches to each particular issue. While each individual tribe would have had their own weaknesses and faults, the Council was able to mitigate that by combining the best minds in one room to make the best possible decisions for the Chislev. And the people trusted them. The Council reached an almost deific status. To the outsiders, they believed the Council to counsel with spirits of the past, present, and future. While that did happen on occasion, the Chislev were, for the most part, led purely on the wisdom of the elder Council. And they, in their seeming omnipotence, were determined to wipe out the Clan of Embers once and for all.[NEWLINE][NEWLINE]Strategy: The Council is unlike any other leader. It's highly recommended that you review the [LINK=CONCEPT_THE_COUNCIL_DYNAMIC_LEADER]Chislev - The Council (Dynamic Leader)[\LINK] Concept Pedia prior to playing as The Council.</English>
+		<French>[TAB]It had been years since the start of the war with the Clan of Embers. The younger Chislev didn't even know how it all began, and many called for peace; but the Council were wise, and were privy to all of the Chislev tales, back to their origin. They knew that there would be no peace so long as they bordered The Clan. Bhall and The Clan would not rest. The Council was thankful to have the Bannor as allies. Some of the Bannor may have viewed the Chislev as savages, but regardless, as long time war partners, they had a mutual respect for one another.[PARAGRAPH:1]The Council was made of five leaders: one from each of the great tribes of the past. The tribes had come together against the orcs and had become such a cohesive unit, that it became difficult to distinguish one tribe from the next, unlike how things had been a generation or two ago. Still, one tribe stood out from the rest: the fiery spirit of the Serpent Tribe. The Serpent Tribe had still not forgotten the wrongs committed against them by the orcs, and they made damn well sure that their younger generations knew of their struggle. The Serpent Tribe were certainly the most vocal of the lot, and any time a chance for peace fell on the table, the Serpent Tribe reminded the rest of the Council of the Chislev's past, and that their could be no peace until this ember was extinguished. Certainly the Bear Tribe and Coyote Tribe agreed.[PARAGRAPH:1]This comingling of the tribes, yet each with their own distinct roots, provided the Council with a vast array of thoughts and approaches to each particular issue. While each individual tribe would have had their own weaknesses and faults, the Council was able to mitigate that by combining the best minds in one room to make the best possible decisions for the Chislev. And the people trusted them. The Council reached an almost deific status. To the outsiders, they believed the Council to counsel with spirits of the past, present, and future. While that did happen on occasion, the Chislev were, for the most part, led purely on the wisdom of the elder Council. And they, in their seeming omnipotence, were determined to wipe out the Clan of Embers once and for all.[NEWLINE][NEWLINE]Strategy: The Council is unlike any other leader. It's highly recommended that you review the [LINK=CONCEPT_THE_COUNCIL_DYNAMIC_LEADER]Chislev - The Council (Dynamic Leader)[\LINK] Concept Pedia prior to playing as The Council.</French>
+		<German>[TAB]It had been years since the start of the war with the Clan of Embers. The younger Chislev didn't even know how it all began, and many called for peace; but the Council were wise, and were privy to all of the Chislev tales, back to their origin. They knew that there would be no peace so long as they bordered The Clan. Bhall and The Clan would not rest. The Council was thankful to have the Bannor as allies. Some of the Bannor may have viewed the Chislev as savages, but regardless, as long time war partners, they had a mutual respect for one another.[PARAGRAPH:1]The Council was made of five leaders: one from each of the great tribes of the past. The tribes had come together against the orcs and had become such a cohesive unit, that it became difficult to distinguish one tribe from the next, unlike how things had been a generation or two ago. Still, one tribe stood out from the rest: the fiery spirit of the Serpent Tribe. The Serpent Tribe had still not forgotten the wrongs committed against them by the orcs, and they made damn well sure that their younger generations knew of their struggle. The Serpent Tribe were certainly the most vocal of the lot, and any time a chance for peace fell on the table, the Serpent Tribe reminded the rest of the Council of the Chislev's past, and that their could be no peace until this ember was extinguished. Certainly the Bear Tribe and Coyote Tribe agreed.[PARAGRAPH:1]This comingling of the tribes, yet each with their own distinct roots, provided the Council with a vast array of thoughts and approaches to each particular issue. While each individual tribe would have had their own weaknesses and faults, the Council was able to mitigate that by combining the best minds in one room to make the best possible decisions for the Chislev. And the people trusted them. The Council reached an almost deific status. To the outsiders, they believed the Council to counsel with spirits of the past, present, and future. While that did happen on occasion, the Chislev were, for the most part, led purely on the wisdom of the elder Council. And they, in their seeming omnipotence, were determined to wipe out the Clan of Embers once and for all.[NEWLINE][NEWLINE]Strategy: The Council is unlike any other leader. It's highly recommended that you review the [LINK=CONCEPT_THE_COUNCIL_DYNAMIC_LEADER]Chislev - The Council (Dynamic Leader)[\LINK] Concept Pedia prior to playing as The Council.</German>
+		<Italian>[TAB]It had been years since the start of the war with the Clan of Embers. The younger Chislev didn't even know how it all began, and many called for peace; but the Council were wise, and were privy to all of the Chislev tales, back to their origin. They knew that there would be no peace so long as they bordered The Clan. Bhall and The Clan would not rest. The Council was thankful to have the Bannor as allies. Some of the Bannor may have viewed the Chislev as savages, but regardless, as long time war partners, they had a mutual respect for one another.[PARAGRAPH:1]The Council was made of five leaders: one from each of the great tribes of the past. The tribes had come together against the orcs and had become such a cohesive unit, that it became difficult to distinguish one tribe from the next, unlike how things had been a generation or two ago. Still, one tribe stood out from the rest: the fiery spirit of the Serpent Tribe. The Serpent Tribe had still not forgotten the wrongs committed against them by the orcs, and they made damn well sure that their younger generations knew of their struggle. The Serpent Tribe were certainly the most vocal of the lot, and any time a chance for peace fell on the table, the Serpent Tribe reminded the rest of the Council of the Chislev's past, and that their could be no peace until this ember was extinguished. Certainly the Bear Tribe and Coyote Tribe agreed.[PARAGRAPH:1]This comingling of the tribes, yet each with their own distinct roots, provided the Council with a vast array of thoughts and approaches to each particular issue. While each individual tribe would have had their own weaknesses and faults, the Council was able to mitigate that by combining the best minds in one room to make the best possible decisions for the Chislev. And the people trusted them. The Council reached an almost deific status. To the outsiders, they believed the Council to counsel with spirits of the past, present, and future. While that did happen on occasion, the Chislev were, for the most part, led purely on the wisdom of the elder Council. And they, in their seeming omnipotence, were determined to wipe out the Clan of Embers once and for all.[NEWLINE][NEWLINE]Strategy: The Council is unlike any other leader. It's highly recommended that you review the [LINK=CONCEPT_THE_COUNCIL_DYNAMIC_LEADER]Chislev - The Council (Dynamic Leader)[\LINK] Concept Pedia prior to playing as The Council.</Italian>
+		<Spanish>[TAB]It had been years since the start of the war with the Clan of Embers. The younger Chislev didn't even know how it all began, and many called for peace; but the Council were wise, and were privy to all of the Chislev tales, back to their origin. They knew that there would be no peace so long as they bordered The Clan. Bhall and The Clan would not rest. The Council was thankful to have the Bannor as allies. Some of the Bannor may have viewed the Chislev as savages, but regardless, as long time war partners, they had a mutual respect for one another.[PARAGRAPH:1]The Council was made of five leaders: one from each of the great tribes of the past. The tribes had come together against the orcs and had become such a cohesive unit, that it became difficult to distinguish one tribe from the next, unlike how things had been a generation or two ago. Still, one tribe stood out from the rest: the fiery spirit of the Serpent Tribe. The Serpent Tribe had still not forgotten the wrongs committed against them by the orcs, and they made damn well sure that their younger generations knew of their struggle. The Serpent Tribe were certainly the most vocal of the lot, and any time a chance for peace fell on the table, the Serpent Tribe reminded the rest of the Council of the Chislev's past, and that their could be no peace until this ember was extinguished. Certainly the Bear Tribe and Coyote Tribe agreed.[PARAGRAPH:1]This comingling of the tribes, yet each with their own distinct roots, provided the Council with a vast array of thoughts and approaches to each particular issue. While each individual tribe would have had their own weaknesses and faults, the Council was able to mitigate that by combining the best minds in one room to make the best possible decisions for the Chislev. And the people trusted them. The Council reached an almost deific status. To the outsiders, they believed the Council to counsel with spirits of the past, present, and future. While that did happen on occasion, the Chislev were, for the most part, led purely on the wisdom of the elder Council. And they, in their seeming omnipotence, were determined to wipe out the Clan of Embers once and for all.[NEWLINE][NEWLINE]Strategy: The Council is unlike any other leader. It's highly recommended that you review the [LINK=CONCEPT_THE_COUNCIL_DYNAMIC_LEADER]Chislev - The Council (Dynamic Leader)[\LINK] Concept Pedia prior to playing as The Council.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_BEAR_TOTEM</Tag>
 		<English>Bear Totem</English>
 		<French>Totem Ours</French>
@@ -987,5 +1003,452 @@ The largest of the region's clans will also send an elder to represent the clan'
 		<German>Build a [LINK=IMPROVEMENT_CHISLEV_CLAN1]Polar Vortex[\LINK],</German>
 		<Italian>Build a [LINK=IMPROVEMENT_CHISLEV_CLAN1]Polar Vortex[\LINK],</Italian>
 		<Spanish>Build a [LINK=IMPROVEMENT_CHISLEV_CLAN1]Polar Vortex[\LINK],,</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_DANCE_OF_THE_COYOTE</Tag>
+		<English>Dance of the Coyote</English>
+		<French>Dance of the Coyote</French>
+		<German>Dance of the Coyote</German>
+		<Italian>Dance of the Coyote</Italian>
+		<Spanish>Dance of the Coyote</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAITCLASS_TRIBAL</Tag>
+		<English>Chislev Tribal Trait</English>
+		<French>Chislev Tribal Trait</French>
+		<German>Chislev Tribal Trait</German>
+		<Italian>Chislev Tribal Trait</Italian>
+		<Spanish>Chislev Tribal Trait</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_EAGLE_TRIBE_FAVOR</Tag>
+		<English>Eagle Tribe Favor</English>
+		<French>Eagle Tribe Favor</French>
+		<German>Eagle Tribe Favor</German>
+		<Italian>Eagle Tribe Favor</Italian>
+		<Spanish>Eagle Tribe Favor</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_EAGLE_TRIBE_FAVOR_SHORT</Tag>
+		<English>EagFav</English>
+		<French>EagFav</French>
+		<German>EagFav</German>
+		<Italian>EagFav</Italian>
+		<Spanish>EagFav</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_EAGLE_TRIBE_FAVOR_PEDIA</Tag>
+		<English>When founding the Council, Natane approached The Eagle Tribe first. Natane and the Eagle Tribe leader at the time, Shimasani, believed that the tribes were becoming more and more radicalized as generations went on, as they essentially lived in an echo chamber. Shimasani, as a skilled negotiator, was able to bring the other tribal leaders into the Council one by one. Afterwards, she created programs where members of each tribe were made to intermingle with one another. Although these exchanges did not always go well, the process became easier over time.</English>
+		<French>When founding the Council, Natane approached The Eagle Tribe first. Natane and the Eagle Tribe leader at the time, Shimasani, believed that the tribes were becoming more and more radicalized as generations went on, as they essentially lived in an echo chamber. Shimasani, as a skilled negotiator, was able to bring the other tribal leaders into the Council one by one. Afterwards, she created programs where members of each tribe were made to intermingle with one another. Although these exchanges did not always go well, the process became easier over time.</French>
+		<German>When founding the Council, Natane approached The Eagle Tribe first. Natane and the Eagle Tribe leader at the time, Shimasani, believed that the tribes were becoming more and more radicalized as generations went on, as they essentially lived in an echo chamber. Shimasani, as a skilled negotiator, was able to bring the other tribal leaders into the Council one by one. Afterwards, she created programs where members of each tribe were made to intermingle with one another. Although these exchanges did not always go well, the process became easier over time.</German>
+		<Italian>When founding the Council, Natane approached The Eagle Tribe first. Natane and the Eagle Tribe leader at the time, Shimasani, believed that the tribes were becoming more and more radicalized as generations went on, as they essentially lived in an echo chamber. Shimasani, as a skilled negotiator, was able to bring the other tribal leaders into the Council one by one. Afterwards, she created programs where members of each tribe were made to intermingle with one another. Although these exchanges did not always go well, the process became easier over time.</Italian>
+		<Spanish>When founding the Council, Natane approached The Eagle Tribe first. Natane and the Eagle Tribe leader at the time, Shimasani, believed that the tribes were becoming more and more radicalized as generations went on, as they essentially lived in an echo chamber. Shimasani, as a skilled negotiator, was able to bring the other tribal leaders into the Council one by one. Afterwards, she created programs where members of each tribe were made to intermingle with one another. Although these exchanges did not always go well, the process became easier over time.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_EAGLE_TRIBE_FAVOR_STRATEGY</Tag>
+		<English>With the assistance of the Eagle Tribe, all of your cities will have +1 [ICON_HAPPY], your units will require 10% less experience to level up, and you'll receive +25% [ICON_FOOD] and [ICON_PRODUCTION] from trade routes. Further, you'll receive +2 relations with all other leaders.[NEWLINE][NEWLINE]Earning the favor of the Eagle Tribe is relatively easy if you're a peaceful player. They prefer to be at peace, and their preferred civic is [LINK=CIVIC_FOREIGN_TRADE]Foreign Trade[\LINK]. They also enjoy when you make deals with other players and when you construct buildings that provide happiness. If you're a peaceful player who likes to interact without other leaders, you will have no problems earning the favor of the Eagle Tribe.</English>
+		<French>With the assistance of the Eagle Tribe, all of your cities will have +1 [ICON_HAPPY], your units will require 10% less experience to level up, and you'll receive +25% [ICON_FOOD] and [ICON_PRODUCTION] from trade routes. Further, you'll receive +2 relations with all other leaders.[NEWLINE][NEWLINE]Earning the favor of the Eagle Tribe is relatively easy if you're a peaceful player. They prefer to be at peace, and their preferred civic is [LINK=CIVIC_FOREIGN_TRADE]Foreign Trade[\LINK]. They also enjoy when you make deals with other players and when you construct buildings that provide happiness. If you're a peaceful player who likes to interact without other leaders, you will have no problems earning the favor of the Eagle Tribe.</French>
+		<German>With the assistance of the Eagle Tribe, all of your cities will have +1 [ICON_HAPPY], your units will require 10% less experience to level up, and you'll receive +25% [ICON_FOOD] and [ICON_PRODUCTION] from trade routes. Further, you'll receive +2 relations with all other leaders.[NEWLINE][NEWLINE]Earning the favor of the Eagle Tribe is relatively easy if you're a peaceful player. They prefer to be at peace, and their preferred civic is [LINK=CIVIC_FOREIGN_TRADE]Foreign Trade[\LINK]. They also enjoy when you make deals with other players and when you construct buildings that provide happiness. If you're a peaceful player who likes to interact without other leaders, you will have no problems earning the favor of the Eagle Tribe.</German>
+		<Italian>With the assistance of the Eagle Tribe, all of your cities will have +1 [ICON_HAPPY], your units will require 10% less experience to level up, and you'll receive +25% [ICON_FOOD] and [ICON_PRODUCTION] from trade routes. Further, you'll receive +2 relations with all other leaders.[NEWLINE][NEWLINE]Earning the favor of the Eagle Tribe is relatively easy if you're a peaceful player. They prefer to be at peace, and their preferred civic is [LINK=CIVIC_FOREIGN_TRADE]Foreign Trade[\LINK]. They also enjoy when you make deals with other players and when you construct buildings that provide happiness. If you're a peaceful player who likes to interact without other leaders, you will have no problems earning the favor of the Eagle Tribe.</Italian>
+		<Spanish>With the assistance of the Eagle Tribe, all of your cities will have +1 [ICON_HAPPY], your units will require 10% less experience to level up, and you'll receive +25% [ICON_FOOD] and [ICON_PRODUCTION] from trade routes. Further, you'll receive +2 relations with all other leaders.[NEWLINE][NEWLINE]Earning the favor of the Eagle Tribe is relatively easy if you're a peaceful player. They prefer to be at peace, and their preferred civic is [LINK=CIVIC_FOREIGN_TRADE]Foreign Trade[\LINK]. They also enjoy when you make deals with other players and when you construct buildings that provide happiness. If you're a peaceful player who likes to interact without other leaders, you will have no problems earning the favor of the Eagle Tribe.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_COYOTE_TRIBE_FAVOR</Tag>
+		<English>Coyote Tribe Favor</English>
+		<French>Coyote Tribe Favor</French>
+		<German>Coyote Tribe Favor</German>
+		<Italian>Coyote Tribe Favor</Italian>
+		<Spanish>Coyote Tribe Favor</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_COYOTE_TRIBE_FAVOR_SHORT</Tag>
+		<English>CoyFav</English>
+		<French>CoyFav</French>
+		<German>CoyFav</German>
+		<Italian>CoyFav</Italian>
+		<Spanish>CoyFav</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_COYOTE_TRIBE_FAVOR_PEDIA</Tag>
+		<English>The Coyote Tribe, much to Natane's surprise, was the third tribe to join the Council. The Coyote Tribe is known as a clan of free-spirited folk, and Natane did not believe they would want to be held down by any regulations. Soyala of the Coyote Tribe saw the joining of the Council as an opportunity to make a lasting impact on the Chislev - to help them lighten up a little bit. Motsqueh was certainly a tough case to crack, but she eventually got through to him. Alosaka, when he would later join, was another story. The Coyote Tribe would often end up seeing eye-to-eye with the Serpent Tribe, who also prefered to live more on the wild side.</English>
+		<French>The Coyote Tribe, much to Natane's surprise, was the third tribe to join the Council. The Coyote Tribe is known as a clan of free-spirited folk, and Natane did not believe they would want to be held down by any regulations. Soyala of the Coyote Tribe saw the joining of the Council as an opportunity to make a lasting impact on the Chislev - to help them lighten up a little bit. Motsqueh was certainly a tough case to crack, but she eventually got through to him. Alosaka, when he would later join, was another story. The Coyote Tribe would often end up seeing eye-to-eye with the Serpent Tribe, who also prefered to live more on the wild side.</French>
+		<German>The Coyote Tribe, much to Natane's surprise, was the third tribe to join the Council. The Coyote Tribe is known as a clan of free-spirited folk, and Natane did not believe they would want to be held down by any regulations. Soyala of the Coyote Tribe saw the joining of the Council as an opportunity to make a lasting impact on the Chislev - to help them lighten up a little bit. Motsqueh was certainly a tough case to crack, but she eventually got through to him. Alosaka, when he would later join, was another story. The Coyote Tribe would often end up seeing eye-to-eye with the Serpent Tribe, who also prefered to live more on the wild side.</German>
+		<Italian>The Coyote Tribe, much to Natane's surprise, was the third tribe to join the Council. The Coyote Tribe is known as a clan of free-spirited folk, and Natane did not believe they would want to be held down by any regulations. Soyala of the Coyote Tribe saw the joining of the Council as an opportunity to make a lasting impact on the Chislev - to help them lighten up a little bit. Motsqueh was certainly a tough case to crack, but she eventually got through to him. Alosaka, when he would later join, was another story. The Coyote Tribe would often end up seeing eye-to-eye with the Serpent Tribe, who also prefered to live more on the wild side.</Italian>
+		<Spanish>The Coyote Tribe, much to Natane's surprise, was the third tribe to join the Council. The Coyote Tribe is known as a clan of free-spirited folk, and Natane did not believe they would want to be held down by any regulations. Soyala of the Coyote Tribe saw the joining of the Council as an opportunity to make a lasting impact on the Chislev - to help them lighten up a little bit. Motsqueh was certainly a tough case to crack, but she eventually got through to him. Alosaka, when he would later join, was another story. The Coyote Tribe would often end up seeing eye-to-eye with the Serpent Tribe, who also prefered to live more on the wild side.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_COYOTE_TRIBE_FAVOR_STRATEGY</Tag>
+		<English>With the assistance of the Coyote Tribe, you will receive +1 [ICON_CULTURE] per turn in each of your cities, a 50% increase of your Settler and Worker production, and your Settlers and Workers will start with [LINK=PROMOTION_MOBILITY1]Mobility I[\LINK]. You also receive unique [LINK=PROMOTION_DANCE_OF_THE_COYOTE]Dance of the Coyote[\LINK] promotion for your recon units, which provides 5 [ICON_CULTURE] per kill, +1 attack strength, and a +10% chance to withdrawal; however, it is removed after combat.[NEWLINE][NEWLINE]Members of the Coyote Tribe love music and exploring. You can keep them happy by using the [LINK=CIVIC_LIBERTY]Liberty[\LINK] civic, by founding cities, growing cities both in population and culture, and by exploring lairs and huts. They also enjoy pillaging, as the Coyote Tribe prefers war in a more hit-and-run style. As long as you keep expanding and growing, you should be able to earn the favor of the Coyote Tribe.</English>
+		<French>With the assistance of the Coyote Tribe, you will receive +1 [ICON_CULTURE] per turn in each of your cities, a 50% increase of your Settler and Worker production, and your Settlers and Workers will start with [LINK=PROMOTION_MOBILITY1]Mobility I[\LINK]. You also receive unique [LINK=PROMOTION_DANCE_OF_THE_COYOTE]Dance of the Coyote[\LINK] promotion for your recon units, which provides 5 [ICON_CULTURE] per kill, +1 attack strength, and a +10% chance to withdrawal; however, it is removed after combat.[NEWLINE][NEWLINE]Members of the Coyote Tribe love music and exploring. You can keep them happy by using the [LINK=CIVIC_LIBERTY]Liberty[\LINK] civic, by founding cities, growing cities both in population and culture, and by exploring lairs and huts. They also enjoy pillaging, as the Coyote Tribe prefers war in a more hit-and-run style. As long as you keep expanding and growing, you should be able to earn the favor of the Coyote Tribe.</French>
+		<German>With the assistance of the Coyote Tribe, you will receive +1 [ICON_CULTURE] per turn in each of your cities, a 50% increase of your Settler and Worker production, and your Settlers and Workers will start with [LINK=PROMOTION_MOBILITY1]Mobility I[\LINK]. You also receive unique [LINK=PROMOTION_DANCE_OF_THE_COYOTE]Dance of the Coyote[\LINK] promotion for your recon units, which provides 5 [ICON_CULTURE] per kill, +1 attack strength, and a +10% chance to withdrawal; however, it is removed after combat.[NEWLINE][NEWLINE]Members of the Coyote Tribe love music and exploring. You can keep them happy by using the [LINK=CIVIC_LIBERTY]Liberty[\LINK] civic, by founding cities, growing cities both in population and culture, and by exploring lairs and huts. They also enjoy pillaging, as the Coyote Tribe prefers war in a more hit-and-run style. As long as you keep expanding and growing, you should be able to earn the favor of the Coyote Tribe.</German>
+		<Italian>With the assistance of the Coyote Tribe, you will receive +1 [ICON_CULTURE] per turn in each of your cities, a 50% increase of your Settler and Worker production, and your Settlers and Workers will start with [LINK=PROMOTION_MOBILITY1]Mobility I[\LINK]. You also receive unique [LINK=PROMOTION_DANCE_OF_THE_COYOTE]Dance of the Coyote[\LINK] promotion for your recon units, which provides 5 [ICON_CULTURE] per kill, +1 attack strength, and a +10% chance to withdrawal; however, it is removed after combat.[NEWLINE][NEWLINE]Members of the Coyote Tribe love music and exploring. You can keep them happy by using the [LINK=CIVIC_LIBERTY]Liberty[\LINK] civic, by founding cities, growing cities both in population and culture, and by exploring lairs and huts. They also enjoy pillaging, as the Coyote Tribe prefers war in a more hit-and-run style. As long as you keep expanding and growing, you should be able to earn the favor of the Coyote Tribe.</Italian>
+		<Spanish>With the assistance of the Coyote Tribe, you will receive +1 [ICON_CULTURE] per turn in each of your cities, a 50% increase of your Settler and Worker production, and your Settlers and Workers will start with [LINK=PROMOTION_MOBILITY1]Mobility I[\LINK]. You also receive unique [LINK=PROMOTION_DANCE_OF_THE_COYOTE]Dance of the Coyote[\LINK] promotion for your recon units, which provides 5 [ICON_CULTURE] per kill, +1 attack strength, and a +10% chance to withdrawal; however, it is removed after combat.[NEWLINE][NEWLINE]Members of the Coyote Tribe love music and exploring. You can keep them happy by using the [LINK=CIVIC_LIBERTY]Liberty[\LINK] civic, by founding cities, growing cities both in population and culture, and by exploring lairs and huts. They also enjoy pillaging, as the Coyote Tribe prefers war in a more hit-and-run style. As long as you keep expanding and growing, you should be able to earn the favor of the Coyote Tribe.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_COYOTE_TRIBE_FAVOR_HELP</Tag>
+		<English>[NEWLINE][ICON_BULLET]Free Promotion ([LINK=PROMOTION_MOBILITY1]Mobility I[\LINK])[NEWLINE]        [ICON_BULLET]Worker Units[NEWLINE]        [ICON_BULLET]Settler Units</English>
+		<French>[NEWLINE][ICON_BULLET]Free Promotion ([LINK=PROMOTION_MOBILITY1]Mobility I[\LINK])[NEWLINE]        [ICON_BULLET]Worker Units[NEWLINE]        [ICON_BULLET]Settler Units</French>
+		<German>[NEWLINE][ICON_BULLET]Free Promotion ([LINK=PROMOTION_MOBILITY1]Mobility I[\LINK])[NEWLINE]        [ICON_BULLET]Worker Units[NEWLINE]        [ICON_BULLET]Settler Units</German>
+		<Italian>[NEWLINE][ICON_BULLET]Free Promotion ([LINK=PROMOTION_MOBILITY1]Mobility I[\LINK])[NEWLINE]        [ICON_BULLET]Worker Units[NEWLINE]        [ICON_BULLET]Settler Units</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]Free Promotion ([LINK=PROMOTION_MOBILITY1]Mobility I[\LINK])[NEWLINE]        [ICON_BULLET]Worker Units[NEWLINE]        [ICON_BULLET]Settler Units</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_BEAR_TRIBE_FAVOR</Tag>
+		<English>Bear Tribe Favor</English>
+		<French>Bear Tribe Favor</French>
+		<German>Bear Tribe Favor</German>
+		<Italian>Bear Tribe Favor</Italian>
+		<Spanish>Bear Tribe Favor</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_BEAR_TRIBE_FAVOR_SHORT</Tag>
+		<English>BearFav</English>
+		<French>BearFav</French>
+		<German>BearFav</German>
+		<Italian>BearFav</Italian>
+		<Spanish>BearFav</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_BEAR_TRIBE_FAVOR_PEDIA</Tag>
+		<English>The Bear Tribe was the second tribe to join the Council. Their desire was relatively simple: as a builder tribe, they wanted more resources; and in return, they would supply their hardy warriors for the protection of the nation. Motsqueh, the leader of the Bear Tribe at the time of the Council's founding, often ended up being the tie breaker vote once all five tribes had been brought into the fold. Typically, the Eagle Tribe and the Tortoise Tribe tended to vote together, as they both preferred peace above all else. Meanwhile, the Serpent Tribe and Coyote Tribe tended to prefer more aggressive approaches, and even though their means to that end often differed, they did at least share a common goal. Although Motsqueh did tend to vote with Shimasani and Alosaka more often, it was not uncommon for Osyka and Soyala to convince him otherwise.</English>
+		<French>The Bear Tribe was the second tribe to join the Council. Their desire was relatively simple: as a builder tribe, they wanted more resources; and in return, they would supply their hardy warriors for the protection of the nation. Motsqueh, the leader of the Bear Tribe at the time of the Council's founding, often ended up being the tie breaker vote once all five tribes had been brought into the fold. Typically, the Eagle Tribe and the Tortoise Tribe tended to vote together, as they both preferred peace above all else. Meanwhile, the Serpent Tribe and Coyote Tribe tended to prefer more aggressive approaches, and even though their means to that end often differed, they did at least share a common goal. Although Motsqueh did tend to vote with Shimasani and Alosaka more often, it was not uncommon for Osyka and Soyala to convince him otherwise.</French>
+		<German>The Bear Tribe was the second tribe to join the Council. Their desire was relatively simple: as a builder tribe, they wanted more resources; and in return, they would supply their hardy warriors for the protection of the nation. Motsqueh, the leader of the Bear Tribe at the time of the Council's founding, often ended up being the tie breaker vote once all five tribes had been brought into the fold. Typically, the Eagle Tribe and the Tortoise Tribe tended to vote together, as they both preferred peace above all else. Meanwhile, the Serpent Tribe and Coyote Tribe tended to prefer more aggressive approaches, and even though their means to that end often differed, they did at least share a common goal. Although Motsqueh did tend to vote with Shimasani and Alosaka more often, it was not uncommon for Osyka and Soyala to convince him otherwise.</German>
+		<Italian>The Bear Tribe was the second tribe to join the Council. Their desire was relatively simple: as a builder tribe, they wanted more resources; and in return, they would supply their hardy warriors for the protection of the nation. Motsqueh, the leader of the Bear Tribe at the time of the Council's founding, often ended up being the tie breaker vote once all five tribes had been brought into the fold. Typically, the Eagle Tribe and the Tortoise Tribe tended to vote together, as they both preferred peace above all else. Meanwhile, the Serpent Tribe and Coyote Tribe tended to prefer more aggressive approaches, and even though their means to that end often differed, they did at least share a common goal. Although Motsqueh did tend to vote with Shimasani and Alosaka more often, it was not uncommon for Osyka and Soyala to convince him otherwise.</Italian>
+		<Spanish>The Bear Tribe was the second tribe to join the Council. Their desire was relatively simple: as a builder tribe, they wanted more resources; and in return, they would supply their hardy warriors for the protection of the nation. Motsqueh, the leader of the Bear Tribe at the time of the Council's founding, often ended up being the tie breaker vote once all five tribes had been brought into the fold. Typically, the Eagle Tribe and the Tortoise Tribe tended to vote together, as they both preferred peace above all else. Meanwhile, the Serpent Tribe and Coyote Tribe tended to prefer more aggressive approaches, and even though their means to that end often differed, they did at least share a common goal. Although Motsqueh did tend to vote with Shimasani and Alosaka more often, it was not uncommon for Osyka and Soyala to convince him otherwise.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_BEAR_TRIBE_FAVOR_STRATEGY</Tag>
+		<English>Earning the Bear Tribe's favor will net you +3 [ICON_HEALTHY], +25% [ICON_PRODUCTION] towards wonders, and +1 [ICON_PRODUCTION] on plots that produce 3 [ICON_PRODUCTION].[NEWLINE][NEWLINE]Favor with Motsqueh can be earned by constructing any buildings. Wonders will provide more favor than normal buildings. Buildings that provide health will also provide more favor than normal. Since these effects stack, a wonder that produces health provides a huge favor bonus with the Bear Tribe. The Bear Tribe's favored civic is [LINK=CIVIC_INDUSTRY]Industry[\LINK]. If you're a builder, you should have no problems earning the favor of Motsqueh.</English>
+		<French>Earning the Bear Tribe's favor will net you +3 [ICON_HEALTHY], +25% [ICON_PRODUCTION] towards wonders, and +1 [ICON_PRODUCTION] on plots that produce 3 [ICON_PRODUCTION].[NEWLINE][NEWLINE]Favor with Motsqueh can be earned by constructing any buildings. Wonders will provide more favor than normal buildings. Buildings that provide health will also provide more favor than normal. Since these effects stack, a wonder that produces health provides a huge favor bonus with the Bear Tribe. The Bear Tribe's favored civic is [LINK=CIVIC_INDUSTRY]Industry[\LINK]. If you're a builder, you should have no problems earning the favor of Motsqueh.</French>
+		<German>Earning the Bear Tribe's favor will net you +3 [ICON_HEALTHY], +25% [ICON_PRODUCTION] towards wonders, and +1 [ICON_PRODUCTION] on plots that produce 3 [ICON_PRODUCTION].[NEWLINE][NEWLINE]Favor with Motsqueh can be earned by constructing any buildings. Wonders will provide more favor than normal buildings. Buildings that provide health will also provide more favor than normal. Since these effects stack, a wonder that produces health provides a huge favor bonus with the Bear Tribe. The Bear Tribe's favored civic is [LINK=CIVIC_INDUSTRY]Industry[\LINK]. If you're a builder, you should have no problems earning the favor of Motsqueh.</German>
+		<Italian>Earning the Bear Tribe's favor will net you +3 [ICON_HEALTHY], +25% [ICON_PRODUCTION] towards wonders, and +1 [ICON_PRODUCTION] on plots that produce 3 [ICON_PRODUCTION].[NEWLINE][NEWLINE]Favor with Motsqueh can be earned by constructing any buildings. Wonders will provide more favor than normal buildings. Buildings that provide health will also provide more favor than normal. Since these effects stack, a wonder that produces health provides a huge favor bonus with the Bear Tribe. The Bear Tribe's favored civic is [LINK=CIVIC_INDUSTRY]Industry[\LINK]. If you're a builder, you should have no problems earning the favor of Motsqueh.</Italian>
+		<Spanish>Earning the Bear Tribe's favor will net you +3 [ICON_HEALTHY], +25% [ICON_PRODUCTION] towards wonders, and +1 [ICON_PRODUCTION] on plots that produce 3 [ICON_PRODUCTION].[NEWLINE][NEWLINE]Favor with Motsqueh can be earned by constructing any buildings. Wonders will provide more favor than normal buildings. Buildings that provide health will also provide more favor than normal. Since these effects stack, a wonder that produces health provides a huge favor bonus with the Bear Tribe. The Bear Tribe's favored civic is [LINK=CIVIC_INDUSTRY]Industry[\LINK]. If you're a builder, you should have no problems earning the favor of Motsqueh.</Spanish>
+	</TEXT> 
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_SERPENT_TRIBE_FAVOR</Tag>
+		<English>Serpent Tribe Favor</English>
+		<French>Serpent Tribe Favor</French>
+		<German>Serpent Tribe Favor</German>
+		<Italian>Serpent Tribe Favor</Italian>
+		<Spanish>Serpent Tribe Favor</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_SERPENT_TRIBE_FAVOR_SHORT</Tag>
+		<English>SerFav</English>
+		<French>SerFav</French>
+		<German>SerFav</German>
+		<Italian>SerFav</Italian>
+		<Spanish>SerFav</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_SERPENT_TRIBE_FAVOR_PEDIA</Tag>
+		<English>The Serpent Tribe was the last tribe to join the Council. They were worried that the Council would attempt to make them more docile, and in that regard they were right; but equally so, the Serpent Tribe brought a differing perspective to the table. In matters of war, the Council was often undecided, but with the Serpent Tribe at the table, it was not uncommon for them to convince the Coyote Tribe, and sometimes the Bear Tribe, into a declaration or continuation of war.</English>
+		<French>he Serpent Tribe was the last tribe to join the Council. They were worried that the Council would attempt to make them more docile, and in that regard they were right; but equally so, the Serpent Tribe brought a differing perspective to the table. In matters of war, the Council was often undecided, but with the Serpent Tribe at the table, it was not uncommon for them to convince the Coyote Tribe, and sometimes the Bear Tribe, into a declaration or continuation of war.</French>
+		<German>he Serpent Tribe was the last tribe to join the Council. They were worried that the Council would attempt to make them more docile, and in that regard they were right; but equally so, the Serpent Tribe brought a differing perspective to the table. In matters of war, the Council was often undecided, but with the Serpent Tribe at the table, it was not uncommon for them to convince the Coyote Tribe, and sometimes the Bear Tribe, into a declaration or continuation of war.</German>
+		<Italian>he Serpent Tribe was the last tribe to join the Council. They were worried that the Council would attempt to make them more docile, and in that regard they were right; but equally so, the Serpent Tribe brought a differing perspective to the table. In matters of war, the Council was often undecided, but with the Serpent Tribe at the table, it was not uncommon for them to convince the Coyote Tribe, and sometimes the Bear Tribe, into a declaration or continuation of war.</Italian>
+		<Spanish>he Serpent Tribe was the last tribe to join the Council. They were worried that the Council would attempt to make them more docile, and in that regard they were right; but equally so, the Serpent Tribe brought a differing perspective to the table. In matters of war, the Council was often undecided, but with the Serpent Tribe at the table, it was not uncommon for them to convince the Coyote Tribe, and sometimes the Bear Tribe, into a declaration or continuation of war.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_SERPENT_TRIBE_FAVOR_STRATEGY</Tag>
+		<English>Earning the favor of the war-like Serpent Tribe grants your units [LINK=PROMOTION_COMBAT1]Combat I[\LINK]. You also receive +150% influence from pillaging, +100% [ICON_GOLD] from pillaging, and a +10% [ICON_PRODUCTION] from hurrying production through population, such as through the [LINK=CIVIC_SLAVERY]Slavery[\LINK] civic.[NEWLINE][NEWLINE]The Serpent Tribe prefers being at war, and their favored civic is [LINK=CIVIC_CONQUEST]Conquest[\LINK]. They also earn favor by taking cities through conquest, killing units (more for orcs), pillaging, and razing orc cities. Earning their favor should be easy if you're a war-like player, but peaceful players are unlikely to earn the favor of the Serpent Tribe.</English>
+		<French>Earning the favor of the war-like Serpent Tribe grants your units [LINK=PROMOTION_COMBAT1]Combat I[\LINK]. You also receive +150% influence from pillaging, +100% [ICON_GOLD] from pillaging, and a +10% [ICON_PRODUCTION] from hurrying production through population, such as through the [LINK=CIVIC_SLAVERY]Slavery[\LINK] civic.[NEWLINE][NEWLINE]The Serpent Tribe prefers being at war, and their favored civic is [LINK=CIVIC_CONQUEST]Conquest[\LINK]. They also earn favor by taking cities through conquest, killing units (more for orcs), pillaging, and razing orc cities. Earning their favor should be easy if you're a war-like player, but peaceful players are unlikely to earn the favor of the Serpent Tribe.</French>
+		<German>Earning the favor of the war-like Serpent Tribe grants your units [LINK=PROMOTION_COMBAT1]Combat I[\LINK]. You also receive +150% influence from pillaging, +100% [ICON_GOLD] from pillaging, and a +10% [ICON_PRODUCTION] from hurrying production through population, such as through the [LINK=CIVIC_SLAVERY]Slavery[\LINK] civic.[NEWLINE][NEWLINE]The Serpent Tribe prefers being at war, and their favored civic is [LINK=CIVIC_CONQUEST]Conquest[\LINK]. They also earn favor by taking cities through conquest, killing units (more for orcs), pillaging, and razing orc cities. Earning their favor should be easy if you're a war-like player, but peaceful players are unlikely to earn the favor of the Serpent Tribe.</German>
+		<Italian>Earning the favor of the war-like Serpent Tribe grants your units [LINK=PROMOTION_COMBAT1]Combat I[\LINK]. You also receive +150% influence from pillaging, +100% [ICON_GOLD] from pillaging, and a +10% [ICON_PRODUCTION] from hurrying production through population, such as through the [LINK=CIVIC_SLAVERY]Slavery[\LINK] civic.[NEWLINE][NEWLINE]The Serpent Tribe prefers being at war, and their favored civic is [LINK=CIVIC_CONQUEST]Conquest[\LINK]. They also earn favor by taking cities through conquest, killing units (more for orcs), pillaging, and razing orc cities. Earning their favor should be easy if you're a war-like player, but peaceful players are unlikely to earn the favor of the Serpent Tribe.</Italian>
+		<Spanish>Earning the favor of the war-like Serpent Tribe grants your units [LINK=PROMOTION_COMBAT1]Combat I[\LINK]. You also receive +150% influence from pillaging, +100% [ICON_GOLD] from pillaging, and a +10% [ICON_PRODUCTION] from hurrying production through population, such as through the [LINK=CIVIC_SLAVERY]Slavery[\LINK] civic.[NEWLINE][NEWLINE]The Serpent Tribe prefers being at war, and their favored civic is [LINK=CIVIC_CONQUEST]Conquest[\LINK]. They also earn favor by taking cities through conquest, killing units (more for orcs), pillaging, and razing orc cities. Earning their favor should be easy if you're a war-like player, but peaceful players are unlikely to earn the favor of the Serpent Tribe.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_TORTOISE_TRIBE_FAVOR</Tag>
+		<English>Tortoise Tribe Favor</English>
+		<French>Tortoise Tribe Favor</French>
+		<German>Tortoise Tribe Favor</German>
+		<Italian>Tortoise Tribe Favor</Italian>
+		<Spanish>Tortoise Tribe Favor</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_TORTOISE_TRIBE_FAVOR_SHORT</Tag>
+		<English>TorFav</English>
+		<French>TorFav</French>
+		<German>TorFav</German>
+		<Italian>TorFav</Italian>
+		<Spanish>TorFav</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_TORTOISE_TRIBE_FAVOR_PEDIA</Tag>
+		<English>The Tortoise Tribe proved more difficult to recruit than Natane and Shimasani had originally thought. True, they were isolationists, but they believed the tribe would see the wisdom in joining together. Alosaka was a rather private man, and so were his people. When approached with the proposal, he requested some time to think about it. Weeks passed, and when revisited, Alosaka still had no answer. Shimasani was unsurprised, the Tortoise Tribe wasn't known for their hasty decision making, after all. Alosaka attempted to bargain that, if he were to join, he would take no part in wars. That deal wasn't feasible, as the Council would need to come together as a unit. Ultimately, they agreed that if the Tortoise Tribe be allowed to "enlighten" the rest of the tribes through books and the practice of meditation, that they would join. Alosaka hoped his presence would be able to calm the other members of the tribe down, and he was right, up until the joining of the Serpent Tribe.</English>
+		<French>The Tortoise Tribe proved more difficult to recruit than Natane and Shimasani had originally thought. True, they were isolationists, but they believed the tribe would see the wisdom in joining together. Alosaka was a rather private man, and so were his people. When approached with the proposal, he requested some time to think about it. Weeks passed, and when revisited, Alosaka still had no answer. Shimasani was unsurprised, the Tortoise Tribe wasn't known for their hasty decision making, after all. Alosaka attempted to bargain that, if he were to join, he would take no part in wars. That deal wasn't feasible, as the Council would need to come together as a unit. Ultimately, they agreed that if the Tortoise Tribe be allowed to "enlighten" the rest of the tribes through books and the practice of meditation, that they would join. Alosaka hoped his presence would be able to calm the other members of the tribe down, and he was right, up until the joining of the Serpent Tribe.</French>
+		<German>The Tortoise Tribe proved more difficult to recruit than Natane and Shimasani had originally thought. True, they were isolationists, but they believed the tribe would see the wisdom in joining together. Alosaka was a rather private man, and so were his people. When approached with the proposal, he requested some time to think about it. Weeks passed, and when revisited, Alosaka still had no answer. Shimasani was unsurprised, the Tortoise Tribe wasn't known for their hasty decision making, after all. Alosaka attempted to bargain that, if he were to join, he would take no part in wars. That deal wasn't feasible, as the Council would need to come together as a unit. Ultimately, they agreed that if the Tortoise Tribe be allowed to "enlighten" the rest of the tribes through books and the practice of meditation, that they would join. Alosaka hoped his presence would be able to calm the other members of the tribe down, and he was right, up until the joining of the Serpent Tribe.</German>
+		<Italian>The Tortoise Tribe proved more difficult to recruit than Natane and Shimasani had originally thought. True, they were isolationists, but they believed the tribe would see the wisdom in joining together. Alosaka was a rather private man, and so were his people. When approached with the proposal, he requested some time to think about it. Weeks passed, and when revisited, Alosaka still had no answer. Shimasani was unsurprised, the Tortoise Tribe wasn't known for their hasty decision making, after all. Alosaka attempted to bargain that, if he were to join, he would take no part in wars. That deal wasn't feasible, as the Council would need to come together as a unit. Ultimately, they agreed that if the Tortoise Tribe be allowed to "enlighten" the rest of the tribes through books and the practice of meditation, that they would join. Alosaka hoped his presence would be able to calm the other members of the tribe down, and he was right, up until the joining of the Serpent Tribe.</Italian>
+		<Spanish>The Tortoise Tribe proved more difficult to recruit than Natane and Shimasani had originally thought. True, they were isolationists, but they believed the tribe would see the wisdom in joining together. Alosaka was a rather private man, and so were his people. When approached with the proposal, he requested some time to think about it. Weeks passed, and when revisited, Alosaka still had no answer. Shimasani was unsurprised, the Tortoise Tribe wasn't known for their hasty decision making, after all. Alosaka attempted to bargain that, if he were to join, he would take no part in wars. That deal wasn't feasible, as the Council would need to come together as a unit. Ultimately, they agreed that if the Tortoise Tribe be allowed to "enlighten" the rest of the tribes through books and the practice of meditation, that they would join. Alosaka hoped his presence would be able to calm the other members of the tribe down, and he was right, up until the joining of the Serpent Tribe.</Spanish>
+	</TEXT><TEXT>
+		<Tag>TXT_KEY_TRAIT_TORTOISE_TRIBE_FAVOR_STRATEGY</Tag>
+		<English>Earning the favor of the Tortoise Tribe will grant your units [LINK=PROMOTION_CITY_GARRISON1]City Garrison I[\LINK], and you will receive +50% [ICON_GREATPEOPLE]. Additionally, your borders will not be influenced by combat, and while at peace, you will receive +15% [ICON_RESEARCH].[NEWLINE][NEWLINE]The Tortoise Tribe prefers being at peace, and their preferred civic is [LINK=CIVIC_SCHOLARSHIP]Scholarship[\LINK]. You can earn their favor by training units, killing units within your own borders, and by producing great people. If you prefer peace, but keep yourself well-defended to discourage attackers, you shouldn't have any problems maintaining your favor with the Tortoise Tribe.</English>
+		<French>Earning the favor of the Tortoise Tribe will grant your units [LINK=PROMOTION_CITY_GARRISON1]City Garrison I[\LINK], and you will receive +50% [ICON_GREATPEOPLE]. Additionally, your borders will not be influenced by combat, and while at peace, you will receive +15% [ICON_RESEARCH].[NEWLINE][NEWLINE]The Tortoise Tribe prefers being at peace, and their preferred civic is [LINK=CIVIC_SCHOLARSHIP]Scholarship[\LINK]. You can earn their favor by training units, killing units within your own borders, and by producing great people. If you prefer peace, but keep yourself well-defended to discourage attackers, you shouldn't have any problems maintaining your favor with the Tortoise Tribe.</French>
+		<German>Earning the favor of the Tortoise Tribe will grant your units [LINK=PROMOTION_CITY_GARRISON1]City Garrison I[\LINK], and you will receive +50% [ICON_GREATPEOPLE]. Additionally, your borders will not be influenced by combat, and while at peace, you will receive +15% [ICON_RESEARCH].[NEWLINE][NEWLINE]The Tortoise Tribe prefers being at peace, and their preferred civic is [LINK=CIVIC_SCHOLARSHIP]Scholarship[\LINK]. You can earn their favor by training units, killing units within your own borders, and by producing great people. If you prefer peace, but keep yourself well-defended to discourage attackers, you shouldn't have any problems maintaining your favor with the Tortoise Tribe.</German>
+		<Italian>Earning the favor of the Tortoise Tribe will grant your units [LINK=PROMOTION_CITY_GARRISON1]City Garrison I[\LINK], and you will receive +50% [ICON_GREATPEOPLE]. Additionally, your borders will not be influenced by combat, and while at peace, you will receive +15% [ICON_RESEARCH].[NEWLINE][NEWLINE]The Tortoise Tribe prefers being at peace, and their preferred civic is [LINK=CIVIC_SCHOLARSHIP]Scholarship[\LINK]. You can earn their favor by training units, killing units within your own borders, and by producing great people. If you prefer peace, but keep yourself well-defended to discourage attackers, you shouldn't have any problems maintaining your favor with the Tortoise Tribe.</Italian>
+		<Spanish>Earning the favor of the Tortoise Tribe will grant your units [LINK=PROMOTION_CITY_GARRISON1]City Garrison I[\LINK], and you will receive +50% [ICON_GREATPEOPLE]. Additionally, your borders will not be influenced by combat, and while at peace, you will receive +15% [ICON_RESEARCH].[NEWLINE][NEWLINE]The Tortoise Tribe prefers being at peace, and their preferred civic is [LINK=CIVIC_SCHOLARSHIP]Scholarship[\LINK]. You can earn their favor by training units, killing units within your own borders, and by producing great people. If you prefer peace, but keep yourself well-defended to discourage attackers, you shouldn't have any problems maintaining your favor with the Tortoise Tribe.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_EAGLE_TRIBE_FAVOR_SHORT</Tag>
+		<English>Pio</English>
+		<French>Pio</French>
+		<German>Pio</German>
+		<Italian>Pio</Italian>
+		<Spanish>Pio</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_WORKSHOP</Tag>
+		<English>Totem Workshop</English>
+		<French>Totem Workshop</French>
+		<German>Totem Workshop</German>
+		<Italian>Totem Workshop</Italian>
+		<Spanish>Totem Workshop</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_WORKSHOP_PEDIA</Tag>
+		<English>The Chislev people believe in Totemism. Totemism is not a religion in and of itself, but the totem is a symbol of either a strong tribal bonding or a representation of either a deity or some religious or historical event. That said, while totems can be religious, the totems themselves are not worshipped, but used as a symbol for their beliefs.[NEWLINE][NEWLINE]Due to the tribal and religious importance of totems, many Chislev villages set up workshops dedicated to the making of totems. These totems are often made for their own village, but sometimes totems are exported to neighboring villages.</English>
+		<French>The Chislev people believe in Totemism. Totemism is not a religion in and of itself, but the totem is a symbol of either a strong tribal bonding or a representation of either a deity or some religious or historical event. That said, while totems can be religious, the totems themselves are not worshipped, but used as a symbol for their beliefs.[NEWLINE][NEWLINE]Due to the tribal and religious importance of totems, many Chislev villages set up workshops dedicated to the making of totems. These totems are often made for their own village, but sometimes totems are exported to neighboring villages.</French>
+		<German>The Chislev people believe in Totemism. Totemism is not a religion in and of itself, but the totem is a symbol of either a strong tribal bonding or a representation of either a deity or some religious or historical event. That said, while totems can be religious, the totems themselves are not worshipped, but used as a symbol for their beliefs.[NEWLINE][NEWLINE]Due to the tribal and religious importance of totems, many Chislev villages set up workshops dedicated to the making of totems. These totems are often made for their own village, but sometimes totems are exported to neighboring villages.</German>
+		<Italian>The Chislev people believe in Totemism. Totemism is not a religion in and of itself, but the totem is a symbol of either a strong tribal bonding or a representation of either a deity or some religious or historical event. That said, while totems can be religious, the totems themselves are not worshipped, but used as a symbol for their beliefs.[NEWLINE][NEWLINE]Due to the tribal and religious importance of totems, many Chislev villages set up workshops dedicated to the making of totems. These totems are often made for their own village, but sometimes totems are exported to neighboring villages.</Italian>
+		<Spanish>The Chislev people believe in Totemism. Totemism is not a religion in and of itself, but the totem is a symbol of either a strong tribal bonding or a representation of either a deity or some religious or historical event. That said, while totems can be religious, the totems themselves are not worshipped, but used as a symbol for their beliefs.[NEWLINE][NEWLINE]Due to the tribal and religious importance of totems, many Chislev villages set up workshops dedicated to the making of totems. These totems are often made for their own village, but sometimes totems are exported to neighboring villages.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_WORKSHOP_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Totem Workshop[COLOR_REVERT], which replaces the [LINK=BUILDING_ARTISAND_WORKSHOP]Artisan's Workshop[\LINK], is available at the Crafting technology rather than at Construction. It is cheaper to construct, but does not provide as large of a production boost.</English>
+		<French>The [COLOR_BUILDING_TEXT]Totem Workshop[COLOR_REVERT], which replaces the [LINK=BUILDING_ARTISAND_WORKSHOP]Artisan's Workshop[\LINK], is available at the Crafting technology rather than at Construction. It is cheaper to construct, but does not provide as large of a production boost.</French>
+		<German>The [COLOR_BUILDING_TEXT]Totem Workshop[COLOR_REVERT], which replaces the [LINK=BUILDING_ARTISAND_WORKSHOP]Artisan's Workshop[\LINK], is available at the Crafting technology rather than at Construction. It is cheaper to construct, but does not provide as large of a production boost.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Totem Workshop[COLOR_REVERT], which replaces the [LINK=BUILDING_ARTISAND_WORKSHOP]Artisan's Workshop[\LINK], is available at the Crafting technology rather than at Construction. It is cheaper to construct, but does not provide as large of a production boost.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Totem Workshop[COLOR_REVERT], which replaces the [LINK=BUILDING_ARTISAND_WORKSHOP]Artisan's Workshop[\LINK], is available at the Crafting technology rather than at Construction. It is cheaper to construct, but does not provide as large of a production boost.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_EAGLE</Tag>
+		<English>Totem of the Eagle</English>
+		<French>Totem of the Eagle</French>
+		<German>Totem of the Eagle</German>
+		<Italian>Totem of the Eagle</Italian>
+		<Spanish>Totem of the Eagle</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_EAGLE_PEDIA</Tag>
+		<English>The people of the Eagle Tribe are charismatic and compassionate. The Totem of the Eagle depicts acts of negotation between leaders and charity, with an overarching theme of flight. Viewing the totem instills a sense of goodness, hope, and clarity in oneself.</English>
+		<French>The people of the Eagle Tribe are charismatic and compassionate. The Totem of the Eagle depicts acts of negotation between leaders and charity, with an overarching theme of flight. Viewing the totem instills a sense of goodness, hope, and clarity in oneself.</French>
+		<German>The people of the Eagle Tribe are charismatic and compassionate. The Totem of the Eagle depicts acts of negotation between leaders and charity, with an overarching theme of flight. Viewing the totem instills a sense of goodness, hope, and clarity in oneself.</German>
+		<Italian>The people of the Eagle Tribe are charismatic and compassionate. The Totem of the Eagle depicts acts of negotation between leaders and charity, with an overarching theme of flight. Viewing the totem instills a sense of goodness, hope, and clarity in oneself.</Italian>
+		<Spanish>The people of the Eagle Tribe are charismatic and compassionate. The Totem of the Eagle depicts acts of negotation between leaders and charity, with an overarching theme of flight. Viewing the totem instills a sense of goodness, hope, and clarity in oneself.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_EAGLE_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Totem of the Eagle[COLOR_REVERT] provides the city with 2 [ICON_HAPPY]. Additionally, all units produced here will begin with the [LINK=PROMOTION_SENTRY]Sentry[\LINK] promotion, increasing their visibility.</English>
+		<French>The [COLOR_BUILDING_TEXT]Totem of the Eagle[COLOR_REVERT] provides the city with 2 [ICON_HAPPY]. Additionally, all units produced here will begin with the [LINK=PROMOTION_SENTRY]Sentry[\LINK] promotion, increasing their visibility.</French>
+		<German>The [COLOR_BUILDING_TEXT]Totem of the Eagle[COLOR_REVERT] provides the city with 2 [ICON_HAPPY]. Additionally, all units produced here will begin with the [LINK=PROMOTION_SENTRY]Sentry[\LINK] promotion, increasing their visibility.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Totem of the Eagle[COLOR_REVERT] provides the city with 2 [ICON_HAPPY]. Additionally, all units produced here will begin with the [LINK=PROMOTION_SENTRY]Sentry[\LINK] promotion, increasing their visibility.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Totem of the Eagle[COLOR_REVERT] provides the city with 2 [ICON_HAPPY]. Additionally, all units produced here will begin with the [LINK=PROMOTION_SENTRY]Sentry[\LINK] promotion, increasing their visibility.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_COYOTE</Tag>
+		<English>Totem of the Coyote</English>
+		<French>Totem of the Coyote</French>
+		<German>Totem of the Coyote</German>
+		<Italian>Totem of the Coyote</Italian>
+		<Spanish>Totem of the Coyote</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_COYOTE_PEDIA</Tag>
+		<English>The people of the Coyote Tribe are cunning and opportunistic pioneers. The Totem of the Coyote depicts acts of creativity, trickery, and exploration. Viewing the totem instills a sense of imagination, and a desire to strike out and explore.</English>
+		<French>The people of the Coyote Tribe are cunning and opportunistic pioneers. The Totem of the Coyote depicts acts of creativity, trickery, and exploration. Viewing the totem instills a sense of imagination, and a desire to strike out and explore.</French>
+		<German>The people of the Coyote Tribe are cunning and opportunistic pioneers. The Totem of the Coyote depicts acts of creativity, trickery, and exploration. Viewing the totem instills a sense of imagination, and a desire to strike out and explore.</German>
+		<Italian>The people of the Coyote Tribe are cunning and opportunistic pioneers. The Totem of the Coyote depicts acts of creativity, trickery, and exploration. Viewing the totem instills a sense of imagination, and a desire to strike out and explore.</Italian>
+		<Spanish>The people of the Coyote Tribe are cunning and opportunistic pioneers. The Totem of the Coyote depicts acts of creativity, trickery, and exploration. Viewing the totem instills a sense of imagination, and a desire to strike out and explore.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_COYOTE_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Totem of the Coyote[COLOR_REVERT] provides the city with 2 [ICON_CULTURE] and 2 [ICON_FOOD]. This totem serves as a frontier booster, allowing the Chislev to quickly expand their borders.</English>
+		<French>The [COLOR_BUILDING_TEXT]Totem of the Coyote[COLOR_REVERT] provides the city with 2 [ICON_CULTURE] and 2 [ICON_FOOD]. This totem serves as a frontier booster, allowing the Chislev to quickly expand their borders.</French>
+		<German>The [COLOR_BUILDING_TEXT]Totem of the Coyote[COLOR_REVERT] provides the city with 2 [ICON_CULTURE] and 2 [ICON_FOOD]. This totem serves as a frontier booster, allowing the Chislev to quickly expand their borders.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Totem of the Coyote[COLOR_REVERT] provides the city with 2 [ICON_CULTURE] and 2 [ICON_FOOD]. This totem serves as a frontier booster, allowing the Chislev to quickly expand their borders.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Totem of the Coyote[COLOR_REVERT] provides the city with 2 [ICON_CULTURE] and 2 [ICON_FOOD]. This totem serves as a frontier booster, allowing the Chislev to quickly expand their borders.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_BEAR</Tag>
+		<English>Totem of the Bear</English>
+		<French>Totem of the Bear</French>
+		<German>Totem of the Bear</German>
+		<Italian>Totem of the Bear</Italian>
+		<Spanish>Totem of the Bear</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_BEAR_PEDIA</Tag>
+		<English>Members of the Bear Tribe are hardy and powerful warriors. The Totem of the Bear depicts imagery of past Chislev battles, and the brave and powerful warriors who fought in those battles. Viewing the totem instills a sense of bravery and strength in oneself.</English>
+		<French>Members of the Bear Tribe are hardy and powerful warriors. The Totem of the Bear depicts imagery of past Chislev battles, and the brave and powerful warriors who fought in those battles. Viewing the totem instills a sense of bravery and strength in oneself.</French>
+		<German>Members of the Bear Tribe are hardy and powerful warriors. The Totem of the Bear depicts imagery of past Chislev battles, and the brave and powerful warriors who fought in those battles. Viewing the totem instills a sense of bravery and strength in oneself.</German>
+		<Italian>Members of the Bear Tribe are hardy and powerful warriors. The Totem of the Bear depicts imagery of past Chislev battles, and the brave and powerful warriors who fought in those battles. Viewing the totem instills a sense of bravery and strength in oneself.</Italian>
+		<Spanish>Members of the Bear Tribe are hardy and powerful warriors. The Totem of the Bear depicts imagery of past Chislev battles, and the brave and powerful warriors who fought in those battles. Viewing the totem instills a sense of bravery and strength in oneself.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_BEAR_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Totem of the Bear[COLOR_REVERT] provides the city with 2 [ICON_HEALTHY] as well as granting all units produced in the city the [LINK=PROMOTION_STRONG]Strong[\LINK] promotion, which gives the unit +1 strength. Your workers will also gain the [LINK=PROMOTION_HARDY1]Hardy I[\LINK] promotion, and if already gain that promotion from another means, they gain [LINK=PROMOTION_HARDY2]Hardy II[\LINK], instead.</English>
+		<French>The [COLOR_BUILDING_TEXT]Totem of the Bear[COLOR_REVERT] provides the city with 2 [ICON_HEALTHY] as well as granting all units produced in the city the [LINK=PROMOTION_STRONG]Strong[\LINK] promotion, which gives the unit +1 strength. Your workers will also gain the [LINK=PROMOTION_HARDY1]Hardy I[\LINK] promotion, and if already gain that promotion from another means, they gain [LINK=PROMOTION_HARDY2]Hardy II[\LINK], instead.</French>
+		<German>The [COLOR_BUILDING_TEXT]Totem of the Bear[COLOR_REVERT] provides the city with 2 [ICON_HEALTHY] as well as granting all units produced in the city the [LINK=PROMOTION_STRONG]Strong[\LINK] promotion, which gives the unit +1 strength. Your workers will also gain the [LINK=PROMOTION_HARDY1]Hardy I[\LINK] promotion, and if already gain that promotion from another means, they gain [LINK=PROMOTION_HARDY2]Hardy II[\LINK], instead.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Totem of the Bear[COLOR_REVERT] provides the city with 2 [ICON_HEALTHY] as well as granting all units produced in the city the [LINK=PROMOTION_STRONG]Strong[\LINK] promotion, which gives the unit +1 strength. Your workers will also gain the [LINK=PROMOTION_HARDY1]Hardy I[\LINK] promotion, and if already gain that promotion from another means, they gain [LINK=PROMOTION_HARDY2]Hardy II[\LINK], instead.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Totem of the Bear[COLOR_REVERT] provides the city with 2 [ICON_HEALTHY] as well as granting all units produced in the city the [LINK=PROMOTION_STRONG]Strong[\LINK] promotion, which gives the unit +1 strength. Your workers will also gain the [LINK=PROMOTION_HARDY1]Hardy I[\LINK] promotion, and if already gain that promotion from another means, they gain [LINK=PROMOTION_HARDY2]Hardy II[\LINK], instead.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_BEAR_HELP</Tag>
+		<English>[ICON_BULLET]Free [COLOR_HIGHLIGHT_TEXT]Hardy[COLOR_REVERT] Promotion for Units Built in this City</English>
+		<French>[ICON_BULLET]Free [COLOR_HIGHLIGHT_TEXT]Hardy[COLOR_REVERT] Promotion for Units Built in this City</French>
+		<German>[ICON_BULLET]Free [COLOR_HIGHLIGHT_TEXT]Hardy[COLOR_REVERT] Promotion for Units Built in this City</German>
+		<Italian>[ICON_BULLET]Free [COLOR_HIGHLIGHT_TEXT]Hardy[COLOR_REVERT] Promotion for Units Built in this City</Italian>
+		<Spanish>[ICON_BULLET]Free [COLOR_HIGHLIGHT_TEXT]Hardy[COLOR_REVERT] Promotion for Units Built in this City</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_SERPENT</Tag>
+		<English>Totem of the Serpent</English>
+		<French>Totem of the Serpent</French>
+		<German>Totem of the Serpent</German>
+		<Italian>Totem of the Serpent</Italian>
+		<Spanish>Totem of the Serpent</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_SERPENT_PEDIA</Tag>
+		<English>The Totem of the Serpent serves to remind the tribe of what has been lost and those responsible. The Serpent Tribe never forgets a wrong, and this totem stands as a testament of that mentality. The totem depicts orcs committing horrific acts against the Chislev. Viewing the totem instills a sense of anger and disgust.</English>
+		<French>The Totem of the Serpent serves to remind the tribe of what has been lost and those responsible. The Serpent Tribe never forgets a wrong, and this totem stands as a testament of that mentality. The totem depicts orcs committing horrific acts against the Chislev. Viewing the totem instills a sense of anger and disgust.</French>
+		<German>The Totem of the Serpent serves to remind the tribe of what has been lost and those responsible. The Serpent Tribe never forgets a wrong, and this totem stands as a testament of that mentality. The totem depicts orcs committing horrific acts against the Chislev. Viewing the totem instills a sense of anger and disgust.</German>
+		<Italian>The Totem of the Serpent serves to remind the tribe of what has been lost and those responsible. The Serpent Tribe never forgets a wrong, and this totem stands as a testament of that mentality. The totem depicts orcs committing horrific acts against the Chislev. Viewing the totem instills a sense of anger and disgust.</Italian>
+		<Spanish>The Totem of the Serpent serves to remind the tribe of what has been lost and those responsible. The Serpent Tribe never forgets a wrong, and this totem stands as a testament of that mentality. The totem depicts orcs committing horrific acts against the Chislev. Viewing the totem instills a sense of anger and disgust.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_SERPENT_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Totem of the Serpent[COLOR_REVERT] provides units produced in the city with two bonus experience points and the [LINK=PROMOTION_ORC_SLAYING]Orc Slaying[\LINK] promotion, which increases their power against any unit with the "Orcish" promotion by 30%. It also reduces war [ICON_UNHAPPY] in Serpent Tribe cities by 50%.</English>
+		<French>The [COLOR_BUILDING_TEXT]Totem of the Serpent[COLOR_REVERT] provides units produced in the city with two bonus experience points and the [LINK=PROMOTION_ORC_SLAYING]Orc Slaying[\LINK] promotion, which increases their power against any unit with the "Orcish" promotion by 30%. It also reduces war [ICON_UNHAPPY] in Serpent Tribe cities by 50%.</French>
+		<German>The [COLOR_BUILDING_TEXT]Totem of the Serpent[COLOR_REVERT] provides units produced in the city with two bonus experience points and the [LINK=PROMOTION_ORC_SLAYING]Orc Slaying[\LINK] promotion, which increases their power against any unit with the "Orcish" promotion by 30%. It also reduces war [ICON_UNHAPPY] in Serpent Tribe cities by 50%.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Totem of the Serpent[COLOR_REVERT] provides units produced in the city with two bonus experience points and the [LINK=PROMOTION_ORC_SLAYING]Orc Slaying[\LINK] promotion, which increases their power against any unit with the "Orcish" promotion by 30%. It also reduces war [ICON_UNHAPPY] in Serpent Tribe cities by 50%.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Totem of the Serpent[COLOR_REVERT] provides units produced in the city with two bonus experience points and the [LINK=PROMOTION_ORC_SLAYING]Orc Slaying[\LINK] promotion, which increases their power against any unit with the "Orcish" promotion by 30%. It also reduces war [ICON_UNHAPPY] in Serpent Tribe cities by 50%.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_TORTOISE</Tag>
+		<English>Totem of the Tortoise</English>
+		<French>Totem of the Tortoise</French>
+		<German>Totem of the Tortoise</German>
+		<Italian>Totem of the Tortoise</Italian>
+		<Spanish>Totem of the Tortoise</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_TORTOISE_PEDIA</Tag>
+		<English>The people of the Tortoise Tribe are wise and patient, but also cautious and isolationist. The imagery of the Tortoise Totem depicts acts of meditation in solitude. Viewing the totem instills in oneself a sense of safety and enlightenment.</English>
+		<French>The people of the Tortoise Tribe are wise and patient, but also cautious and isolationist. The imagery of the Tortoise Totem depicts acts of meditation in solitude. Viewing the totem instills in oneself a sense of safety and enlightenment.</French>
+		<German>The people of the Tortoise Tribe are wise and patient, but also cautious and isolationist. The imagery of the Tortoise Totem depicts acts of meditation in solitude. Viewing the totem instills in oneself a sense of safety and enlightenment.</German>
+		<Italian>The people of the Tortoise Tribe are wise and patient, but also cautious and isolationist. The imagery of the Tortoise Totem depicts acts of meditation in solitude. Viewing the totem instills in oneself a sense of safety and enlightenment.</Italian>
+		<Spanish>The people of the Tortoise Tribe are wise and patient, but also cautious and isolationist. The imagery of the Tortoise Totem depicts acts of meditation in solitude. Viewing the totem instills in oneself a sense of safety and enlightenment.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_TORTOISE_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Totem of the Tortoise[COLOR_REVERT] provides a number of benefits. It gives the city a 10% defense boost and 2 [ICON_GREATPEOPLE]. The enemies of the Tortoise Tribe have mixed feelings about the killing of such a pacificistic people, so enemies suffer an extra 5% war [ICON_UNHAPPY] against the Chislev. Additionally, all units built here will start with the [LINK=PROMOTION_MAGIC_RESISTANCE]Magic Resistance[\LINK] promotion, which provides a 20% resistance to fire, cold, death, and lightning damage, as well as a 20% resistance to spells.</English>
+		<French>The [COLOR_BUILDING_TEXT]Totem of the Tortoise[COLOR_REVERT] provides a number of benefits. It gives the city a 10% defense boost and 2 [ICON_GREATPEOPLE]. The enemies of the Tortoise Tribe have mixed feelings about the killing of such a pacificistic people, so enemies suffer an extra 5% war [ICON_UNHAPPY] against the Chislev. Additionally, all units built here will start with the [LINK=PROMOTION_MAGIC_RESISTANCE]Magic Resistance[\LINK] promotion, which provides a 20% resistance to fire, cold, death, and lightning damage, as well as a 20% resistance to spells.</French>
+		<German>The [COLOR_BUILDING_TEXT]Totem of the Tortoise[COLOR_REVERT] provides a number of benefits. It gives the city a 10% defense boost and 2 [ICON_GREATPEOPLE]. The enemies of the Tortoise Tribe have mixed feelings about the killing of such a pacificistic people, so enemies suffer an extra 5% war [ICON_UNHAPPY] against the Chislev. Additionally, all units built here will start with the [LINK=PROMOTION_MAGIC_RESISTANCE]Magic Resistance[\LINK] promotion, which provides a 20% resistance to fire, cold, death, and lightning damage, as well as a 20% resistance to spells.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Totem of the Tortoise[COLOR_REVERT] provides a number of benefits. It gives the city a 10% defense boost and 2 [ICON_GREATPEOPLE]. The enemies of the Tortoise Tribe have mixed feelings about the killing of such a pacificistic people, so enemies suffer an extra 5% war [ICON_UNHAPPY] against the Chislev. Additionally, all units built here will start with the [LINK=PROMOTION_MAGIC_RESISTANCE]Magic Resistance[\LINK] promotion, which provides a 20% resistance to fire, cold, death, and lightning damage, as well as a 20% resistance to spells.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Totem of the Tortoise[COLOR_REVERT] provides a number of benefits. It gives the city a 10% defense boost and 2 [ICON_GREATPEOPLE]. The enemies of the Tortoise Tribe have mixed feelings about the killing of such a pacificistic people, so enemies suffer an extra 5% war [ICON_UNHAPPY] against the Chislev. Additionally, all units built here will start with the [LINK=PROMOTION_MAGIC_RESISTANCE]Magic Resistance[\LINK] promotion, which provides a 20% resistance to fire, cold, death, and lightning damage, as well as a 20% resistance to spells.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_EAGLE_REPLICA</Tag>
+		<English>Totem of the Eagle (Replica)</English>
+		<French>Totem of the Eagle (Replica)</French>
+		<German>Totem of the Eagle (Replica)</German>
+		<Italian>Totem of the Eagle (Replica)</Italian>
+		<Spanish>Totem of the Eagle (Replica)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_COYOTE_REPLICA</Tag>
+		<English>Totem of the Coyote (Replica)</English>
+		<French>Totem of the Coyote (Replica)</French>
+		<German>Totem of the Coyote (Replica)</German>
+		<Italian>Totem of the Coyote (Replica)</Italian>
+		<Spanish>Totem of the Coyote (Replica)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_BEAR_REPLICA</Tag>
+		<English>Totem of the Bear (Replica)</English>
+		<French>Totem of the Bear (Replica)</French>
+		<German>Totem of the Bear (Replica)</German>
+		<Italian>Totem of the Bear (Replica)</Italian>
+		<Spanish>Totem of the Bear (Replica)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_SERPENT_REPLICA</Tag>
+		<English>Totem of the Serpent (Replica)</English>
+		<French>Totem of the Serpent (Replica)</French>
+		<German>Totem of the Serpent (Replica)</German>
+		<Italian>Totem of the Serpent (Replica)</Italian>
+		<Spanish>Totem of the Serpent (Replica)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_TORTOISE_REPLICA</Tag>
+		<English>Totem of the Tortoise (Replica)</English>
+		<French>Totem of the Tortoise (Replica)</French>
+		<German>Totem of the Tortoise (Replica)</German>
+		<Italian>Totem of the Tortoise (Replica)</Italian>
+		<Spanish>Totem of the Tortoise (Replica)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_BEFRIEND_AMICUS</Tag>
+		<English>Befriend an Amicus</English>
+		<French>Befriend an Amicus</French>
+		<German>Befriend an Amicus</German>
+		<Italian>Befriend an Amicus</Italian>
+		<Spanish>Befriend an Amicus</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_BEFRIEND_AMICUS_PEDIA</Tag>
+		<English>Befriend an Amicus</English>
+		<French>Befriend an Amicus</French>
+		<German>Befriend an Amicus</German>
+		<Italian>Befriend an Amicus</Italian>
+		<Spanish>Befriend an Amicus</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CANOE_HARBOR</Tag>
+		<English>Canoe Harbor</English>
+		<French>Canoe Harbor</French>
+		<German>Canoe Harbor</German>
+		<Italian>Canoe Harbor</Italian>
+		<Spanish>Canoe Harbor</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CANOE_HARBOR_PEDIA</Tag>
+		<English>The Chislev are not known as a seafaring people, so they see no value in building a normal ship harbor. Instead, they have small canoe harbors. While the Chislev use these canoes to trade on occasion, their primary purpose is for fishing.</English>
+		<French>The Chislev are not known as a seafaring people, so they see no value in building a normal ship harbor. Instead, they have small canoe harbors. While the Chislev use these canoes to trade on occasion, their primary purpose is for fishing.</French>
+		<German>The Chislev are not known as a seafaring people, so they see no value in building a normal ship harbor. Instead, they have small canoe harbors. While the Chislev use these canoes to trade on occasion, their primary purpose is for fishing.</German>
+		<Italian>The Chislev are not known as a seafaring people, so they see no value in building a normal ship harbor. Instead, they have small canoe harbors. While the Chislev use these canoes to trade on occasion, their primary purpose is for fishing.</Italian>
+		<Spanish>The Chislev are not known as a seafaring people, so they see no value in building a normal ship harbor. Instead, they have small canoe harbors. While the Chislev use these canoes to trade on occasion, their primary purpose is for fishing.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CANOE_HARBOR_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Canoe Harbor[COLOR_REVERT] does not have as much trading power as the [LINK=BUILDING_HARBOR]Harbor[\LINK], but it is cheaper to build and provides 2 [ICON_FOOD].</English>
+		<French>The [COLOR_BUILDING_TEXT]Canoe Harbor[COLOR_REVERT] does not have as much trading power as the [LINK=BUILDING_HARBOR]Harbor[\LINK], but it is cheaper to build and provides 2 [ICON_FOOD].</French>
+		<German>The [COLOR_BUILDING_TEXT]Canoe Harbor[COLOR_REVERT] does not have as much trading power as the [LINK=BUILDING_HARBOR]Harbor[\LINK], but it is cheaper to build and provides 2 [ICON_FOOD].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Canoe Harbor[COLOR_REVERT] does not have as much trading power as the [LINK=BUILDING_HARBOR]Harbor[\LINK], but it is cheaper to build and provides 2 [ICON_FOOD].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Canoe Harbor[COLOR_REVERT] does not have as much trading power as the [LINK=BUILDING_HARBOR]Harbor[\LINK], but it is cheaper to build and provides 2 [ICON_FOOD].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WARCHIEF_HARBOR</Tag>
+		<English>Warchief's Harbor</English>
+		<French>Warchief's Harbor</French>
+		<German>Warchief's Harbor</German>
+		<Italian>Warchief's Harbor</Italian>
+		<Spanish>Warchief's Harbor</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WARCHIEF_HARBOR_PEDIA</Tag>
+		<English>The few Warchief's Harbors that the Chislev have usually become central trading hubs and a base out of which to run a navy. Any Chislev tribesman who decides to live the life of the sea, although rare that may be, will undoubtedly flock to a Warchief's Harbor.</English>
+		<French>The few Warchief's Harbors that the Chislev have usually become central trading hubs and a base out of which to run a navy. Any Chislev tribesman who decides to live the life of the sea, although rare that may be, will undoubtedly flock to a Warchief's Harbor.</French>
+		<German>The few Warchief's Harbors that the Chislev have usually become central trading hubs and a base out of which to run a navy. Any Chislev tribesman who decides to live the life of the sea, although rare that may be, will undoubtedly flock to a Warchief's Harbor.</German>
+		<Italian>The few Warchief's Harbors that the Chislev have usually become central trading hubs and a base out of which to run a navy. Any Chislev tribesman who decides to live the life of the sea, although rare that may be, will undoubtedly flock to a Warchief's Harbor.</Italian>
+		<Spanish>The few Warchief's Harbors that the Chislev have usually become central trading hubs and a base out of which to run a navy. Any Chislev tribesman who decides to live the life of the sea, although rare that may be, will undoubtedly flock to a Warchief's Harbor.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WARCHIEF_HARBOR_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Warchief Harbor[COLOR_REVERT] provides a variety of benefits. It provides one extra trade route and 50% trade route yield to compensate for the [LINK=BUILDING_CANOE_HARBOR]Canoe Harbor[\LINK] having a decreased trade yield. Additionally, it slightly increases the speed of building sea units, and gives them +2 XP. As the Chislev cannot build the [LINK=BUILDING_SHIPYARD]Shipyard[\LINK], both this building and a [LINK=BUILDING_TOTEM_OF_THE_SEA]Totem of the Sea[\LINK] would be required to have the same build speed and XP gains as a city with a Shipyard.</English>
+		<French>The [COLOR_BUILDING_TEXT]Warchief Harbor[COLOR_REVERT] provides a variety of benefits. It provides one extra trade route and 50% trade route yield to compensate for the [LINK=BUILDING_CANOE_HARBOR]Canoe Harbor[\LINK] having a decreased trade yield. Additionally, it slightly increases the speed of building sea units, and gives them +2 XP. As the Chislev cannot build the [LINK=BUILDING_SHIPYARD]Shipyard[\LINK], both this building and a [LINK=BUILDING_TOTEM_OF_THE_SEA]Totem of the Sea[\LINK] would be required to have the same build speed and XP gains as a city with a Shipyard.</French>
+		<German>The [COLOR_BUILDING_TEXT]Warchief Harbor[COLOR_REVERT] provides a variety of benefits. It provides one extra trade route and 50% trade route yield to compensate for the [LINK=BUILDING_CANOE_HARBOR]Canoe Harbor[\LINK] having a decreased trade yield. Additionally, it slightly increases the speed of building sea units, and gives them +2 XP. As the Chislev cannot build the [LINK=BUILDING_SHIPYARD]Shipyard[\LINK], both this building and a [LINK=BUILDING_TOTEM_OF_THE_SEA]Totem of the Sea[\LINK] would be required to have the same build speed and XP gains as a city with a Shipyard.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Warchief Harbor[COLOR_REVERT] provides a variety of benefits. It provides one extra trade route and 50% trade route yield to compensate for the [LINK=BUILDING_CANOE_HARBOR]Canoe Harbor[\LINK] having a decreased trade yield. Additionally, it slightly increases the speed of building sea units, and gives them +2 XP. As the Chislev cannot build the [LINK=BUILDING_SHIPYARD]Shipyard[\LINK], both this building and a [LINK=BUILDING_TOTEM_OF_THE_SEA]Totem of the Sea[\LINK] would be required to have the same build speed and XP gains as a city with a Shipyard.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Warchief Harbor[COLOR_REVERT] provides a variety of benefits. It provides one extra trade route and 50% trade route yield to compensate for the [LINK=BUILDING_CANOE_HARBOR]Canoe Harbor[\LINK] having a decreased trade yield. Additionally, it slightly increases the speed of building sea units, and gives them +2 XP. As the Chislev cannot build the [LINK=BUILDING_SHIPYARD]Shipyard[\LINK], both this building and a [LINK=BUILDING_TOTEM_OF_THE_SEA]Totem of the Sea[\LINK] would be required to have the same build speed and XP gains as a city with a Shipyard.</Spanish>
 	</TEXT>
 </Civ4GameText>
