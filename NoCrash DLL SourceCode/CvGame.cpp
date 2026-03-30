@@ -486,6 +486,12 @@ void CvGame::init(HandicapTypes eHandicap)
 		gDLL->logMsg("listtrait.log", szError);
 
 	}
+	for (int i = 0; i < GC.getNumPromotionInfos(); i++)
+	{
+		szError.Format("id %i for type %s", i, GC.getPromotionInfo((PromotionTypes)i).getType());
+		gDLL->logMsg("listpromo.log", szError);
+
+	}
 
 	AI_init();
 

@@ -30,7 +30,6 @@
 				<Promotion>PROMOTION_ESTRANGED</Promotion>
 			</PromotionOverwrites>
 			<iGroupSize>1</iGroupSize>
-			<PrereqbAllowNULLUnitCombat>1</PrereqbAllowNULLUnitCombat>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>

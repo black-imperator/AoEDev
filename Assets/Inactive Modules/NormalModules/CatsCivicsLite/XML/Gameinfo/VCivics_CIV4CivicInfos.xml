@@ -10,7 +10,7 @@
 			<Type>CIVIC_DESPOTISM</Type>
 			<Description>TXT_KEY_CIVIC_DESPOTISM</Description>
 			<Civilopedia>TXT_KEY_CIVIC_DESPOTISM_C_OVR_PEDIA</Civilopedia>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Civics/CatsCivics_despotism.dds</Button>
+			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Civics/CatsCivics_despotism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<iAIWeight>5</iAIWeight>
@@ -27,7 +27,7 @@
 			<Description>TXT_KEY_CIVIC_CITY_STATES_V_OVR</Description>
 			<Civilopedia>TXT_KEY_CIVIC_CITY_STATES_V_OVR_PEDIA</Civilopedia>
 			<Help>TXT_KEY_CIVIC_CITY_STATES_HELP</Help>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Civics/CatsCivics_city_states.dds</Button>
+			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Civics/CatsCivics_city_states.dds</Button>
 			<TechPrereq>TECH_CARTOGRAPHY</TechPrereq>
 			<iAIWeight>30</iAIWeight>
 			<iAnarchyLength>1</iAnarchyLength>
@@ -45,14 +45,14 @@
 		</CivicInfo>
 		<CivicInfo>		<!-- Tribal Law -->
 			<Type>CIVIC_TRIBAL_LAW</Type>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Civics/CatsCivics_tribal_law.dds</Button>
+			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Civics/CatsCivics_tribal_law.dds</Button>
 		</CivicInfo>
 		<CivicInfo>		<!-- God King -->
 			<CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
 			<Type>CIVIC_GOD_KING</Type>
 			<Description>TXT_KEY_CIVIC_GOD_KING_V_OVR</Description>
 			<Civilopedia>TXT_KEY_CIVIC_GOD_KING_PEDIA_C_OVR</Civilopedia>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Civics/CatsCivics_godking.dds</Button>
+			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Civics/CatsCivics_godking.dds</Button>
 			<TechPrereq>TECH_PHILOSOPHY</TechPrereq>
 			<iAIWeight>20</iAIWeight>
 			<iAnarchyLength>1</iAnarchyLength>
@@ -85,7 +85,7 @@
 			<Description>TXT_KEY_CIVIC_ARISTOCRACY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_ARISTOCRACY_PEDIA_C_OVR</Civilopedia>
 			<Help>TXT_KEY_CIVIC_ARISTOCRACY_HELP_V_OVR</Help>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Civics/CatsCivics_aristocracy.dds</Button>
+			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Civics/CatsCivics_aristocracy.dds</Button>
 			<TechPrereq>TECH_CODE_OF_LAWS</TechPrereq>
 			<iAIWeight>40</iAIWeight>
 			<iAnarchyLength>1</iAnarchyLength>
@@ -170,7 +170,7 @@
 			<Description>TXT_KEY_CIVIC_IMPERIUM</Description>
 			<Civilopedia>TXT_KEY_CIVIC_IMPERIUM_PEDIA</Civilopedia>
 			<Help>TXT_KEY_CIVIC_IMPERIUM_HELP</Help>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Civics/CatsCivics_imperium.dds</Button>
+			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Civics/CatsCivics_imperium.dds</Button>
 			<TechPrereq>TECH_ENGINEERING</TechPrereq>
 			<iAIWeight>50</iAIWeight>
 			<iAnarchyLength>1</iAnarchyLength>
@@ -196,7 +196,7 @@
 			<Description>TXT_KEY_CIVIC_THEOCRACY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_THEOCRACY_PEDIA_V_OVR</Civilopedia>
 			<Help>TXT_KEY_CIVIC_THEOCRACY_HELP</Help>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Civics/CatsCivics_theocracy.dds</Button>
+			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Civics/CatsCivics_theocracy.dds</Button>
 			<TechPrereq>TECH_RELIGIOUS_LAW</TechPrereq>
 			<iAIWeight>50</iAIWeight>
 			<iAnarchyLength>1</iAnarchyLength>
@@ -228,7 +228,7 @@
 			<Description>TXT_KEY_CIVIC_MAGOCRACY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_MAGOCRACY_PEDIA</Civilopedia>
 			<Help>TXT_KEY_CIVIC_MAGOCRACY_HELP</Help>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Civics/CatsCivics_magocracy.dds</Button>
+			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Civics/CatsCivics_magocracy.dds</Button>
 			<TechPrereq>TECH_SORCERY</TechPrereq>
 			<iAIWeight>50</iAIWeight>
 			<iAnarchyLength>1</iAnarchyLength>
@@ -261,7 +261,7 @@
 			<Description>TXT_KEY_CIVIC_MAFIOCRACY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_MAFIOCRACY_PEDIA</Civilopedia>
 			<Help>TXT_KEY_CIVIC_MAFIOCRACY_HELP</Help>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Civics/CatsCivics_mafiocracy.dds</Button>
+			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Civics/CatsCivics_mafiocracy.dds</Button>
 			<TechPrereq>TECH_DECEPTION</TechPrereq>
 			<iAIWeight>60</iAIWeight>
 			<iAnarchyLength>2</iAnarchyLength>
@@ -327,7 +327,7 @@
 			<Description>TXT_KEY_CIVIC_REPUBLIC</Description>
 			<Civilopedia>TXT_KEY_CIVIC_REPUBLIC_PEDIA_C_OVR</Civilopedia>
 			<Help>TXT_KEY_CIVIC_REPUBLIC_HELP</Help>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Civics/CatsCivics_republic.dds</Button>
+			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Civics/CatsCivics_republic.dds</Button>
 			<TechPrereq>TECH_TAXATION</TechPrereq>
 			<iAIWeight>40</iAIWeight>
 			<iAnarchyLength>1</iAnarchyLength>
@@ -373,7 +373,7 @@
 			<Description>TXT_KEY_CIVIC_NATIONHOOD_V_OVR</Description>
 			<Civilopedia>TXT_KEY_CIVIC_NATIONHOOD_V_OVR_PEDIA</Civilopedia>
 			<Help>TXT_KEY_CIVIC_NATIONHOOD_V_OVR_HELP</Help>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Civics/CatsCivics_nationhood.dds</Button>
+			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Civics/CatsCivics_nationhood.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<iWarWearinessModifier>-25</iWarWearinessModifier>
@@ -436,7 +436,7 @@
 			<Description>TXT_KEY_CIVIC_PACIFISM</Description>
 			<Civilopedia>TXT_KEY_CIVIC_PACIFISM_V_OVR_PEDIA</Civilopedia>
 			<Help>TXT_KEY_CIVIC_PACIFISM_V_OVR_HELP</Help>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Civics/CatsCivics_pacifism.dds</Button>
+			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Civics/CatsCivics_pacifism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<iGreatPeopleRateModifier>25</iGreatPeopleRateModifier>
@@ -487,7 +487,7 @@
 			<Type>CIVIC_RELIGION</Type>
 			<Description>TXT_KEY_CIVIC_RELIGION_V_OVR</Description>
 			<Help>TXT_KEY_CIVIC_RELIGION_V_OVR_HELP</Help>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Civics/CatsCivics_social_order.dds</Button>
+			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Civics/CatsCivics_social_order.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<bNoForeignTrade>1</bNoForeignTrade>
@@ -528,7 +528,7 @@
 			<Description>TXT_KEY_CIVIC_CONSUMPTION</Description>
 			<Civilopedia>TXT_KEY_CIVIC_CONSUMPTION_V_OVR_PEDIA</Civilopedia>
 			<Help>TXT_KEY_CIVIC_CONSUMPTION_V_OVR_HELP</Help>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Civics/CatsCivics_consumption.dds</Button>
+			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Civics/CatsCivics_consumption.dds</Button>
 			<TechPrereq>TECH_CURRENCY</TechPrereq>
 			<iAIWeight>20</iAIWeight>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
@@ -681,7 +681,7 @@
 			<Description>TXT_KEY_CIVIC_SCHOLARSHIP</Description>
 			<Civilopedia>TXT_KEY_CIVIC_SCHOLARSHIP_PEDIA_V_OVR</Civilopedia>
 			<Help>TXT_KEY_CIVIC_SCHOLARSHIP_V_OVR_HELP</Help>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Civics/CatsCivics_scholarship.dds</Button>
+			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Civics/CatsCivics_scholarship.dds</Button>
 			<TechPrereq>TECH_ARCANE_LORE</TechPrereq>
 			<iAIWeight>40</iAIWeight>
 			<iAnarchyLength>1</iAnarchyLength>
@@ -740,7 +740,7 @@
 			<Type>CIVIC_LIBERTY</Type>
 			<Description>TXT_KEY_CIVIC_LIBERTY</Description>
 			<Help>TXT_KEY_CIVIC_LIBERTY_V_OVR_HELP</Help>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Civics/CatsCivics_liberty.dds</Button>
+			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Civics/CatsCivics_liberty.dds</Button>
 			<TechPrereq>TECH_MERCANTILISM</TechPrereq>
 			<iAIWeight>40</iAIWeight>
 			<iAnarchyLength>1</iAnarchyLength>
@@ -785,7 +785,7 @@
 			<Type>CIVIC_SOCIAL_ORDER</Type>
 			<Description>TXT_KEY_CIVIC_RELIGION</Description>
 			<Help>TXT_KEY_CIVIC_Social_ORDER_V_OVR_HELP</Help>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Civics/CatsCivics_religion.dds</Button>
+			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Civics/CatsCivics_religion.dds</Button>
 			<TechPrereq>TECH_THEOLOGY</TechPrereq>
 			<iAIWeight>40</iAIWeight>
 			<iAnarchyLength>1</iAnarchyLength>
@@ -864,7 +864,7 @@
 			<Description>TXT_KEY_CIVIC_SACRIFICE_THE_WEAK</Description>
 			<Civilopedia>TXT_KEY_CIVIC_SACRIFICE_THE_WEAK_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_SACRIFICE_THE_WEAK_STRATEGY</Strategy>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Civics/CatsCivics_sacrifice_the_weak.dds</Button>
+			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Civics/CatsCivics_sacrifice_the_weak.dds</Button>
 			<TechPrereq>TECH_MALEVOLENT_DESIGNS</TechPrereq>
 			<PrereqReligion>RELIGION_THE_ASHEN_VEIL</PrereqReligion>
 			<iAIWeight>60</iAIWeight>
@@ -881,7 +881,7 @@
 			<Type>CIVIC_GLORY</Type>
 			<Description>TXT_KEY_CIVIC_GLORY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_GLORY_STRATEGY</Civilopedia>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Civics/CatsCivics_glory.dds</Button>
+			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Civics/CatsCivics_glory.dds</Button>
 			<TechPrereq>TECH_ENGINEERING</TechPrereq>
 			<iAIWeight>50</iAIWeight>
 			<iAnarchyLength>1</iAnarchyLength>
@@ -914,7 +914,7 @@
 			<CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
 			<Type>CIVIC_TRIBALISM</Type>
 			<Description>TXT_KEY_CIVIC_TRIBALISM</Description>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Civics/CatsCivics_tribalism.dds</Button>
+			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Civics/CatsCivics_tribalism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<iMaxConscript>3</iMaxConscript>
@@ -928,7 +928,7 @@
 			<Type>CIVIC_APPRENTICESHIP</Type>
 			<Description>TXT_KEY_CIVIC_APPRENTICESHIP</Description>
 			<Civilopedia>TXT_KEY_CIVIC_APPRENTICESHIP_PEDIA</Civilopedia>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Civics/CatsCivics_apprenticeship.dds</Button>
+			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Civics/CatsCivics_apprenticeship.dds</Button>
 			<TechPrereq>TECH_EDUCATION</TechPrereq>
 			<iAIWeight>20</iAIWeight>
 			<iAnarchyLength>1</iAnarchyLength>
@@ -968,7 +968,7 @@
 			<CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
 			<Type>CIVIC_SLAVERY</Type>
 			<Description>TXT_KEY_CIVIC_SLAVERY</Description>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Civics/CatsCivics_slavery.dds</Button>
+			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Civics/CatsCivics_slavery.dds</Button>
 			<TechPrereq>TECH_WAY_OF_THE_WICKED</TechPrereq>
 			<iAIWeight>30</iAIWeight>
 			<iAnarchyLength>1</iAnarchyLength>
@@ -1027,7 +1027,7 @@
 			<Type>CIVIC_BLOOD_AND_SACRIFICE</Type>
 			<Description>TXT_KEY_CIVIC_BLOOD_AND_SACRIFICE</Description>
 			<Civilopedia>TXT_KEY_CIVIC_BLOOD_AND_SACRIFICE_PEDIA</Civilopedia>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Civics/CatsCivics_blood_and_sacrifice.dds</Button>
+			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Civics/CatsCivics_blood_and_sacrifice.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Hurrys>
 				<Hurry>
@@ -1046,7 +1046,7 @@
 			<Type>CIVIC_ARETE</Type>
 			<Description>TXT_KEY_CIVIC_ARETE</Description>
 			<Civilopedia>TXT_KEY_CIVIC_ARETE_PEDIA</Civilopedia>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Civics/CatsCivics_arete.dds</Button>
+			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Civics/CatsCivics_arete.dds</Button>
 			<TechPrereq>TECH_ARETE</TechPrereq>
 			<iAIWeight>50</iAIWeight>
 			<iAnarchyLength>2</iAnarchyLength>
@@ -1129,7 +1129,7 @@
 			<Type>CIVIC_MILITARY_STATE</Type>
 			<Description>TXT_KEY_CIVIC_MILITARY_STATE</Description>
 			<Civilopedia>TXT_KEY_CIVIC_MILITARY_STATE_PEDIA</Civilopedia>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Civics/CatsCivics_military_state.dds</Button>
+			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Civics/CatsCivics_military_state.dds</Button>
 			<TechPrereq>TECH_MILITARY_STRATEGY</TechPrereq>
 			<iAIWeight>50</iAIWeight>
 			<iAnarchyLength>1</iAnarchyLength>
@@ -1152,7 +1152,7 @@
 			<Description>TXT_KEY_CIVIC_CASTE_SYSTEM</Description>
 			<Strategy>TXT_KEY_CIVIC_CASTE_SYSTEM_STRATEGY</Strategy>
 			<Help>TXT_KEY_CIVIC_CASTE_SYSTEM_HELP</Help>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Civics/CatsCivics_caste_system.dds</Button>
+			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Civics/CatsCivics_caste_system.dds</Button>
 			<TechPrereq>TECH_TAXATION</TechPrereq>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
@@ -1183,7 +1183,7 @@
 			<CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
 			<Type>CIVIC_GUILDS</Type>
 			<Description>TXT_KEY_CIVIC_GUILDS</Description>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Civics/CatsCivics_guilds.dds</Button>
+			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Civics/CatsCivics_guilds.dds</Button>
 			<TechPrereq>TECH_GUILDS</TechPrereq>
 			<iAIWeight>40</iAIWeight>
 			<iAnarchyLength>1</iAnarchyLength>
@@ -1240,7 +1240,7 @@
 			<Type>CIVIC_INDUSTRY</Type>
 			<Description>TXT_KEY_CIVIC_INDUSTRY</Description>
 			<Strategy>TXT_KEY_CIVIC_INDUSTRY_STRATEGY</Strategy>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Civics/CatsCivics_industry.dds</Button>
+			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Civics/CatsCivics_industry.dds</Button>
 			<TechPrereq>TECH_INDUSTRY</TechPrereq>
 			<iAIWeight>50</iAIWeight>
 			<iAnarchyLength>1</iAnarchyLength>
@@ -1313,7 +1313,7 @@
 			<Type>CIVIC_DECENTRALIZATION</Type>
 			<Description>TXT_KEY_CIVIC_DECENTRALIZATION_V_OVR</Description>
 			<Civilopedia>TXT_KEY_CIVIC_DECENTRALIZATION_V_OVR_PEDIA</Civilopedia>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Civics/CatsCivics_decentralization.dds</Button>
+			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Civics/CatsCivics_decentralization.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<iAIWeight>5</iAIWeight>
@@ -1395,7 +1395,7 @@
 			<Type>CIVIC_AGRARIANISM</Type>
 			<Description>TXT_KEY_CIVIC_AGRARIANISM</Description>
 			<Civilopedia>TXT_KEY_CIVIC_AGRARIANISM_PEDIA</Civilopedia>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Civics/CatsCivics_agrarianism.dds</Button>
+			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Civics/CatsCivics_agrarianism.dds</Button>
 			<TechPrereq>TECH_CALENDAR</TechPrereq>
 			<iAIWeight>15</iAIWeight>
 			<iAnarchyLength>1</iAnarchyLength>
@@ -1481,7 +1481,7 @@
 			<CivicOptionType>CIVICOPTION_ECONOMY</CivicOptionType>
 			<Type>CIVIC_CONQUEST</Type>
 			<Description>TXT_KEY_CIVIC_CONQUEST</Description>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Civics/CatsCivics_conquest.dds</Button>
+			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Civics/CatsCivics_conquest.dds</Button>
 			<TechPrereq>TECH_WARFARE</TechPrereq>
 			<iAIWeight>30</iAIWeight>
 			<bInfluenceAllowed>1</bInfluenceAllowed>
@@ -1501,7 +1501,7 @@
 			<CivicOptionType>CIVICOPTION_ECONOMY</CivicOptionType>
 			<Type>CIVIC_MERCANTILISM</Type>
 			<Description>TXT_KEY_CIVIC_MERCANTILISM</Description>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Civics/CatsCivics_mercantilism.dds</Button>
+			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Civics/CatsCivics_mercantilism.dds</Button>
 			<TechPrereq>TECH_MERCANTILISM</TechPrereq>
 			<iAIWeight>30</iAIWeight>
 			<iAnarchyLength>1</iAnarchyLength>
@@ -1529,7 +1529,7 @@
 			<CivicOptionType>CIVICOPTION_ECONOMY</CivicOptionType>
 			<Type>CIVIC_FOREIGN_TRADE</Type>
 			<Description>TXT_KEY_CIVIC_FOREIGN_TRADE</Description>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Civics/CatsCivics_foreign_trade.dds</Button>
+			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Civics/CatsCivics_foreign_trade.dds</Button>
 			<TechPrereq>TECH_TRADE</TechPrereq>
 			<iAIWeight>40</iAIWeight>
 			<iAnarchyLength>1</iAnarchyLength>
@@ -1566,7 +1566,7 @@
 		</CivicInfo>
 		<CivicInfo>		<!-- Lost Lands -->
 			<Type>CIVIC_LOST_LANDS</Type>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Civics/CatsCivics_lost_lands.dds</Button>
+			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Civics/CatsCivics_lost_lands.dds</Button>
 		</CivicInfo>
 		<CivicInfo>		<!-- Guardian Of Nature -->
 			<CivicOptionType>CIVICOPTION_ECONOMY</CivicOptionType>
@@ -1574,7 +1574,7 @@
 			<Description>TXT_KEY_CIVIC_GUARDIAN_OF_NATURE</Description>
 			<Civilopedia>TXT_KEY_CIVIC_GUARDIAN_OF_NATURE_V_OVR_PEDIA</Civilopedia>
 			<Help>TTXT_KEY_CIVIC_GUARDIAN_OF_NATURE_V_OVR_HELP</Help>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Civics/CatsCivics_guardian_of_nature.dds</Button>
+			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Civics/CatsCivics_guardian_of_nature.dds</Button>
 			<TechPrereq>TECH_HIDDEN_PATHS</TechPrereq>
 			<iAIWeight>50</iAIWeight>
 			<iAnarchyLength>2</iAnarchyLength>
@@ -1627,7 +1627,7 @@
 			<CivicOptionType>CIVICOPTION_ECONOMY</CivicOptionType>
 			<Type>CIVIC_DECENTRALIZATION</Type>
 			<Description>TXT_KEY_CIVIC_DECENTRALIZATION</Description>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Civics/CatsCivics_decentralization.dds</Button>
+			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Civics/CatsCivics_decentralization.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<iNumCitiesMaintenanceModifier>-25</iNumCitiesMaintenanceModifier>
@@ -1665,19 +1665,19 @@
 		
 		<CivicInfo>		<!-- Overcouncil -->
 			<Type>CIVIC_OVERCOUNCIL</Type>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Civics/CatsCivics_overcouncil.dds</Button>
+			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Civics/CatsCivics_overcouncil.dds</Button>
 		</CivicInfo>
 		<CivicInfo>		<!-- Undercouncil -->
 			<Type>CIVIC_UNDERCOUNCIL</Type>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Civics/CatsCivics_undercouncil.dds</Button>
+			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Civics/CatsCivics_undercouncil.dds</Button>
 		</CivicInfo>
 		<CivicInfo>		<!-- Wild Council -->
 			<Type>CIVIC_WILDCOUNCIL</Type>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Civics/CatsCivics_wildcouncil.dds</Button>
+			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Civics/CatsCivics_wildcouncil.dds</Button>
 		</CivicInfo>
 		<CivicInfo>		<!-- Crusade -->
 			<Type>CIVIC_CRUSADE</Type>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Civics/CatsCivics_crusade.dds</Button>
+			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Civics/CatsCivics_crusade.dds</Button>
 		</CivicInfo>
 	</CivicInfos>
 </Civ4CivicInfos>
