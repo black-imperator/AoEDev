@@ -19,6 +19,9 @@
     <TEXT>
         <Tag>TXT_KEY_CIV_AOSNISIRA_STRATEGY</Tag>
         <English>
+Complexity: Basic
+Leave our forest at once, or be eaten by our beasts! 
+
 The Aos-Ni-Sira are a nature orientated civilization that thrives in Forests and has a nice selection of Beast Units and Hunters.
 [H2]Strategy[\H2]
 [ICON_BULLET] You have no access to normal improvements. Instead you plant Forest Hearts.
@@ -28,6 +31,7 @@ The Aos-Ni-Sira are a nature orientated civilization that thrives in Forests and
 [ICON_BULLET] Very few Units of your standard roster have access to weapons.
 [ICON_BULLET] You have no access to siege weapons and most of your units will be bad in attacking cities. Raid your enemies and use magic to clear their cities.
 [ICON_BULLET] Animals will spawn in your cities.
+[ICON_BULLET] Sira Units move quicker in Forests.
 </English>
     </TEXT>
 	<TEXT>
@@ -48,11 +52,11 @@ The Aos-Ni-Sira do not seek conquest. They do not build great monuments or carve
     <!-- World Spell -->
     <TEXT>
         <Tag>TEXT_SPELL_AOSNISIRA_NATURESFURY</Tag>
-        <English>Empowers all units under control with the Empower promotions.</English>
+        <English>Empowers all animal and beast Units on the map with Empower promotions and enrages them.</English>
     </TEXT>
     <TEXT>
         <Tag>TEXT_SPELL_AOSNISIRA_NATURESFURY_HELP</Tag>
-        <English>[ICON_BULLET]Empowers all Units</English>
+        <English>[ICON_BULLET]Empowers all animal and beast Units</English>
     </TEXT>
     <!-- Spells -->
     <TEXT>
@@ -94,5 +98,21 @@ The Sira way of living is one of close connection to nature. They do not build h
     <TEXT>
         <Tag>TXT_KEY_MESSAGE_AOSSINIRA_ANIMAL_SPAWN</Tag>
         <English>A Sira has joined spirit with an animal.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_EAT_ANIMAL</Tag>
+        <English>Eat Animal</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_EAT_ANIMAL_PEDIA</Tag>
+        <English>Some may think that the Sira take good care of the animals they use. Some may think they live in perfect harmony with all living beings. They would be wrong. The Sira see their possessed animals and beasts as nothing but tools they use and then throw away. Sure, most possessed animals have some use for the Sira, even if only the use that they reproduce to ensure a new generation of them exists in their realms. But in times of need, or when there are just too many of certain animals, they take a more direct use of their animals. They eat them.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_EAT_ANIMAL_HELP</Tag>
+        <English>[ICON_BULLET]Consumes the Animal to generate food in the city</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_POSSESS_WOLVES</Tag>
+        <English>Possess Wolf</English>
     </TEXT>
 </Civ4GameText>

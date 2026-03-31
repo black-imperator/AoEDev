@@ -23,12 +23,12 @@
 			<fBattleDistance>0.20</fBattleDistance>
 			<fRangedDeathTime>0.28</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<!--<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>-->
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop />
 				<AudioRunTypeEnd />
 			</AudioRunSounds>
-			<!--<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>-->
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
         <UnitArtInfo>	<!-- Archer-->
 			<Type>ART_DEF_UNIT_FAIRIES_ARCHER</Type>
@@ -47,12 +47,12 @@
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<!--<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>-->
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop />
 				<AudioRunTypeEnd />
 			</AudioRunSounds>
-			<!--<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>-->
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
         <UnitArtInfo>	<!-- Archmage -->
 			<Type>ART_DEF_UNIT_FAIRIES_ARCHMAGE</Type>
@@ -71,16 +71,16 @@
 			<fBattleDistance>0.20</fBattleDistance>
 			<fRangedDeathTime>0.28</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<!--<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>-->
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop />
 				<AudioRunTypeEnd />
 			</AudioRunSounds>
-			<!--<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>-->
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
         <UnitArtInfo> 	<!-- Beastmaster -->
 			<Type>ART_DEF_UNIT_FAIRIES_BEASTMASTER</Type>
-			<Button>Art/Interface/Buttons/Units/Beastmaster Ljosalfar.dds</Button>
+			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/faeriebeastmaster.dds</Button>
 			<fScale>18</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -95,16 +95,16 @@
 			<fBattleDistance>0.20</fBattleDistance>
 			<fRangedDeathTime>0.28</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<!--<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>-->
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop />
 				<AudioRunTypeEnd />
 			</AudioRunSounds>
-			<!--<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>-->
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
         <UnitArtInfo> 	<!-- Druid -->
 			<Type>ART_DEF_UNIT_FAIRIES_DRUID</Type>
-			<Button>Art/Interface/Buttons/Units/Druid Ljosalfar.dds</Button>
+			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/faeriedruid.dds</Button>
 			<fScale>18</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -119,16 +119,16 @@
 			<fBattleDistance>0.20</fBattleDistance>
 			<fRangedDeathTime>0.28</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<!--<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>-->
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop />
 				<AudioRunTypeEnd />
 			</AudioRunSounds>
-			<!--<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>-->
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
 		<UnitArtInfo> 	<!-- Hunter -->
 			<Type>ART_DEF_UNIT_FAIRIES_HUNTER</Type>
-			<Button>Art/Interface/Buttons/Units/Hunter Ljosalfar.dds</Button>
+			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/faeriehunter.dds</Button>
 			<fScale>0.4</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -143,12 +143,12 @@
 			<fBattleDistance>0.20</fBattleDistance>
 			<fRangedDeathTime>0.28</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<!--<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>-->
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop />
 				<AudioRunTypeEnd />
 			</AudioRunSounds>
-			<!--<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>-->
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
 		<UnitArtInfo> 	<!-- Immortal (Summer Lord) -->
 			<Type>ART_DEF_UNIT_FAIRIES_IMMORTAL</Type>
@@ -167,16 +167,16 @@
 			<fBattleDistance>0.20</fBattleDistance>
 			<fRangedDeathTime>0.28</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<!--<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>-->
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop />
 				<AudioRunTypeEnd />
 			</AudioRunSounds>
-			<!--<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>-->
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>	<!-- Longbow-->
 			<Type>ART_DEF_UNIT_FAIRIES_LONGBOWMAN</Type>
-			<Button>Art/Interface/Buttons/Units/Longbowman Ljosalfar.dds</Button>
+			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/faerielongbow.dds</Button>
 			<fScale>0.4</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -191,12 +191,12 @@
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<!--<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>-->
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop />
 				<AudioRunTypeEnd />
 			</AudioRunSounds>
-			<!--<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>-->
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
 		<UnitArtInfo> 	<!-- Champion -->
 			<Type>ART_DEF_UNIT_FAIRIES_CHAMPION</Type>
@@ -215,12 +215,12 @@
 			<fBattleDistance>0.20</fBattleDistance>
 			<fRangedDeathTime>0.28</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<!--<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>-->
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop />
 				<AudioRunTypeEnd />
 			</AudioRunSounds>
-			<!--<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>-->
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>	<!-- Mage -->
 			<Type>ART_DEF_UNIT_FAIRIES_MAGE</Type>
@@ -239,16 +239,16 @@
 			<fBattleDistance>0.20</fBattleDistance>
 			<fRangedDeathTime>0.28</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<!--<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>-->
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop />
 				<AudioRunTypeEnd />
 			</AudioRunSounds>
-			<!--<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>-->
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>	<!-- Marksman -->
 			<Type>ART_DEF_UNIT_FAIRIES_MARKSMAN</Type>
-			<Button>Art/Interface/Buttons/Units/Marksman Ljosalfar.dds</Button>
+			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/faeriemarksman.dds</Button>
 			<fScale>0.6</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -263,16 +263,16 @@
 			<fBattleDistance>0.20</fBattleDistance>
 			<fRangedDeathTime>0.28</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<!--<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>-->
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop />
 				<AudioRunTypeEnd />
 			</AudioRunSounds>
-			<!--<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>-->
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>	<!-- Flurry / Assaysin -->
 			<Type>ART_DEF_UNIT_FAIRIES_FLURRY</Type>
-			<Button>Art/Interface/Buttons/Units/Flurry.dds</Button>
+			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/faerieflurry.dds</Button>
 			<fScale>0.4</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -287,12 +287,12 @@
 			<fBattleDistance>0.20</fBattleDistance>
 			<fRangedDeathTime>0.28</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<!--<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>-->
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop />
 				<AudioRunTypeEnd />
 			</AudioRunSounds>
-			<!--<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>-->
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>	<!-- Paladin -->
 			<Type>ART_DEF_UNIT_FAIRIES_PALADIN</Type>
@@ -311,16 +311,16 @@
 			<fBattleDistance>0.20</fBattleDistance>
 			<fRangedDeathTime>0.28</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<!--<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>-->
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop />
 				<AudioRunTypeEnd />
 			</AudioRunSounds>
-			<!--<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>-->
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
 		<UnitArtInfo> 	<!-- Ranger -->
 			<Type>ART_DEF_UNIT_FAIRIES_RANGER</Type>
-			<Button>Art/Interface/Buttons/Units/Ranger Ljosalfar.dds</Button>
+			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/faerieranger.dds</Button>
 			<fScale>0.6</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -335,16 +335,16 @@
 			<fBattleDistance>0.20</fBattleDistance>
 			<fRangedDeathTime>0.28</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<!--<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>-->
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop />
 				<AudioRunTypeEnd />
 			</AudioRunSounds>
-			<!--<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>-->
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
 		<UnitArtInfo> 	<!-- Scout -->
 			<Type>ART_DEF_UNIT_FAIRIES_SCOUT</Type>
-			<Button>Art/Interface/Buttons/Units/Scout Ljosalfar.dds</Button>
+			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/faeriescout.dds</Button>
 			<fScale>0.5</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -359,12 +359,12 @@
 			<fBattleDistance>0.20</fBattleDistance>
 			<fRangedDeathTime>0.28</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<!--<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>-->
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop />
 				<AudioRunTypeEnd />
 			</AudioRunSounds>
-			<!--<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>-->
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- Settler Child -->
 			<Type>ART_DEF_UNIT_FAIRY_SETTLER_CHILD</Type>
@@ -385,11 +385,12 @@
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bCombatExempt>1</bCombatExempt>
 			<bActAsRanged>0</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
 				<AudioRunTypeEnd/>
 			</AudioRunSounds>
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- Settler Female -->
 			<Type>ART_DEF_UNIT_FAIRY_SETTLER_FEMALE</Type>
@@ -409,11 +410,12 @@
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
 				<AudioRunTypeEnd/>
 			</AudioRunSounds>
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- Settler Man -->
 			<Type>ART_DEF_UNIT_FAIRY_SETTLER_MAN</Type>
@@ -433,11 +435,12 @@
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
 				<AudioRunTypeEnd/>
 			</AudioRunSounds>
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>  <!-- Worker -->
 			<Type>ART_DEF_UNIT_FAIRY_WORKER</Type>
@@ -456,11 +459,12 @@
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
 				<AudioRunTypeEnd/>
 			</AudioRunSounds>
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- Commander -->
 			<Type>ART_DEF_UNIT_FAIRY_COMMANDER</Type>
@@ -479,12 +483,12 @@
 			<fBattleDistance>0.20</fBattleDistance>
 			<fRangedDeathTime>0.28</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<!--<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>-->
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop />
 				<AudioRunTypeEnd />
 			</AudioRunSounds>
-			<!--<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>-->
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>  <!-- Swordman -->
 			<Type>ART_DEF_UNIT_FAIRY_SWORDMAN</Type>
@@ -503,15 +507,16 @@
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
 				<AudioRunTypeEnd/>
 			</AudioRunSounds>
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>  <!-- Warrior -->
 			<Type>ART_DEF_UNIT_FAIRY_WARRIOR</Type>
-			<Button>Art/Interface/Buttons/Units/Warrior Ljosalfar.dds</Button>
+			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/faeriewarrior.dds</Button>
 			<fScale>16</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -526,11 +531,12 @@
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
 				<AudioRunTypeEnd/>
 			</AudioRunSounds>
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>  <!-- Berserker -->
 			<Type>ART_DEF_UNIT_FAIRY_BERSERKER</Type>
@@ -549,11 +555,12 @@
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
 				<AudioRunTypeEnd/>
 			</AudioRunSounds>
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>  <!-- Spearman -->
 			<Type>ART_DEF_UNIT_FAIRY_SPEARMAN</Type>
@@ -572,11 +579,12 @@
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
 				<AudioRunTypeEnd/>
 			</AudioRunSounds>
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>  <!-- Pikeman -->
 			<Type>ART_DEF_UNIT_FAIRY_PIKEMAN</Type>
@@ -595,11 +603,12 @@
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
 				<AudioRunTypeEnd/>
 			</AudioRunSounds>
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>  <!-- Phalanx -->
 			<Type>ART_DEF_UNIT_FAIRY_PHALANX</Type>
@@ -618,11 +627,12 @@
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
 				<AudioRunTypeEnd/>
 			</AudioRunSounds>
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>	<!-- Knight -->
 			<Type>ART_DEF_UNIT_FAIRY_KNIGHT</Type>
@@ -641,11 +651,12 @@
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIQUE_UNIT</TrainSound>
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
 				<AudioRunTypeEnd/>
 			</AudioRunSounds>
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>	<!-- Horse Archerr -->
 			<Type>ART_DEF_UNIT_FAIRY_HORSEARCHER</Type>
@@ -664,11 +675,12 @@
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIQUE_UNIT</TrainSound>
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
 				<AudioRunTypeEnd/>
 			</AudioRunSounds>
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>  <!-- Sprite -->
 			<Type>ART_DEF_UNIT_FAIRY_SPRITE</Type>
@@ -687,11 +699,12 @@
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
 				<AudioRunTypeEnd/>
 			</AudioRunSounds>
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>  <!-- Pesna Fairy -->
 			<Type>ART_DEF_UNIT_FAIRY_PESNA</Type>
@@ -710,11 +723,12 @@
 			<fBattleDistance>0.20</fBattleDistance>
 			<fRangedDeathTime>0.28</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
 				<AudioRunTypeEnd/>
 			</AudioRunSounds>
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>  <!-- Fane Warrior -->
 			<Type>ART_DEF_UNIT_FANE_WARRIOR</Type>
@@ -738,6 +752,7 @@
 				<AudioRunTypeLoop/>
 				<AudioRunTypeEnd/>
 			</AudioRunSounds>
+			<SelectionSound>AS3D_SKELETON_SELECT</SelectionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>	<!-- Wildfae-->
 			<Type>ART_DEF_UNIT_FAIRY_WILDFAE</Type>
@@ -756,12 +771,12 @@
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<!--<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>-->
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop />
 				<AudioRunTypeEnd />
 			</AudioRunSounds>
-			<!--<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>-->
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
 		<UnitArtInfo> 	<!-- Sandfae -->
 			<Type>ART_DEF_UNIT_FAIRY_SANDFAE</Type>
@@ -780,12 +795,12 @@
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<!--<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>-->
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop />
 				<AudioRunTypeEnd />
 			</AudioRunSounds>
-			<!--<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>-->
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
 		<UnitArtInfo> 	<!-- Shroomfae -->
 			<Type>ART_DEF_UNIT_FAIRY_SHROOMFAE</Type>
@@ -804,12 +819,12 @@
 			<fBattleDistance>0.20</fBattleDistance>
 			<fRangedDeathTime>0.28</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<!--<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>-->
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop />
 				<AudioRunTypeEnd />
 			</AudioRunSounds>
-			<!--<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>-->
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>	<!-- Nimai -->
 			<Type>ART_DEF_UNIT_FAIRY_NIMAI</Type>
@@ -828,12 +843,12 @@
 			<fBattleDistance>0.20</fBattleDistance>
 			<fRangedDeathTime>0.28</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<!--<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>-->
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop />
 				<AudioRunTypeEnd />
 			</AudioRunSounds>
-			<!--<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>-->
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
 		<UnitArtInfo> 	<!-- Alin Al Bey, Hero of Bey-->
 			<Type>ART_DEF_UNIT_FAIRY_ALIN</Type>
@@ -852,12 +867,300 @@
 			<fBattleDistance>0.20</fBattleDistance>
 			<fRangedDeathTime>0.28</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<!--<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>-->
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop />
 				<AudioRunTypeEnd />
 			</AudioRunSounds>
-			<!--<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>-->
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
+		</UnitArtInfo>
+		<UnitArtInfo>	<!-- Moonfae -->
+			<Type>ART_DEF_UNIT_MOONFAE</Type>
+			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/faeriemoon.dds</Button>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Civs/Faeries/Fae Marksman/unique_babylon_bowman.nif</NIF>
+			<KFM>Art/Units/longbowman/longbowman.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.20</fBattleDistance>
+			<fRangedDeathTime>0.28</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop />
+				<AudioRunTypeEnd />
+			</AudioRunSounds>
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
+		</UnitArtInfo>
+		<UnitArtInfo>	<!-- Starfae -->
+			<Type>ART_DEF_UNIT_STARFAE</Type>
+			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/faeriefurie.dds</Button>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Civs/Faeries/Fae Flurry/waywatcher1.nif</NIF>
+			<KFM>Art/Units/Archer/Archer.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.20</fBattleDistance>
+			<fRangedDeathTime>0.28</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop />
+				<AudioRunTypeEnd />
+			</AudioRunSounds>
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
+		</UnitArtInfo>
+		<UnitArtInfo>	<!-- Sugarfae -->
+			<Type>ART_DEF_UNIT_SUGARFAE</Type>
+			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/faeriefetch.dds</Button>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Civs/Faeries/Fae Flurry/waywatcher1.nif</NIF>
+			<KFM>Art/Units/Archer/Archer.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.20</fBattleDistance>
+			<fRangedDeathTime>0.28</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop />
+				<AudioRunTypeEnd />
+			</AudioRunSounds>
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
+		</UnitArtInfo>
+		<UnitArtInfo>	<!-- Candyfae -->
+			<Type>ART_DEF_UNIT_FAIRY_CANDYFAE</Type>
+			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/faeriescout.dds</Button>
+			<fScale>16</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Civs/Faeries/Sprite/golshan.nif</NIF>
+			<KFM>Art/animations/golshan/golshan.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.01</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop />
+				<AudioRunTypeEnd />
+			</AudioRunSounds>
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
+		</UnitArtInfo>
+		<UnitArtInfo>	<!-- Lady Isin -->
+			<Type>ART_DEF_UNIT_FAIRY_LADY_ISIN</Type>
+			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/LadyIsin.dds</Button>
+			<fScale>16</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Civs/Faeries/Sprite/golshan.nif</NIF>
+			<KFM>Art/animations/golshan/golshan.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.01</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop />
+				<AudioRunTypeEnd />
+			</AudioRunSounds>
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
+		</UnitArtInfo>
+		<UnitArtInfo>	<!-- Fae Rider -->
+			<Type>ART_DEF_UNIT_HORSE_ARCHER_FAIRY</Type>
+			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/faerierider.dds</Button>
+			<fScale>0.38</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Civs/Faeries/wild rider/horsearcher.nif</NIF>
+			<KFM>Art/Animations/horsearcher/horsearcher.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/HorseShadow.nif</ShadowNIF>
+				<ShadowAttachNode>HorseBip Spine1</ShadowAttachNode>
+				<fShadowScale>0.38</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
+		</UnitArtInfo>
+		<UnitArtInfo>	<!-- Fae Dragon Rider -->
+			<Type>ART_DEF_UNIT_FAE_DRAGON_RIDER</Type>
+			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/FaeDragonRider.dds</Button>
+			<fScale>14</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Civs/Faeries/faerie dragon rider/storm_drake.nif</NIF>
+			<KFM>Art/Animations/stormdrake/storm_drake.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>Bone_Pelvis</ShadowAttachNode>
+				<fShadowScale>0.03</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
+		</UnitArtInfo>
+		<UnitArtInfo>	<!-- Fae Drake -->
+			<Type>ART_DEF_UNIT_FAIRY_FAE_DRAKE</Type>
+			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/FaeDrake.dds</Button>
+			<fScale>14</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Civs/Faeries/faerie dragon/storm_drake.nif</NIF>
+			<KFM>Art/Animations/stormdrake/storm_drake.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>Bone_Pelvis</ShadowAttachNode>
+				<fShadowScale>0.03</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIQUE_UNIT</TrainSound> 
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+			<SelectionSound>AS3D_DRAKE_SELECT</SelectionSound>
+		</UnitArtInfo>
+		<UnitArtInfo>	<!-- Bey Acolyte -->
+			<Type>ART_DEF_UNIT_BEY_ACOLYTE</Type>
+			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/BeyAcolyte.dds</Button>
+			<fScale>11</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Civs/Faeries/Fae Adept/golshan.nif</NIF>
+			<KFM>Art/animations/golshan/golshan.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.20</fBattleDistance>
+			<fRangedDeathTime>0.28</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop />
+				<AudioRunTypeEnd />
+			</AudioRunSounds>
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
+		</UnitArtInfo>
+		<UnitArtInfo> 	<!-- Fae Lord -->
+			<Type>ART_DEF_UNIT_FAIRY_FAE_LORD</Type>
+			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/faerielord.dds</Button>
+			<fScale>0.5</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>art\units\civs\faeries\faelord\deathangel.nif</NIF>
+			<KFM>Art/animations/deathangel/deathangel.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.20</fBattleDistance>
+			<fRangedDeathTime>0.28</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop />
+				<AudioRunTypeEnd />
+			</AudioRunSounds>
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
+		</UnitArtInfo>
+		<UnitArtInfo> 	<!-- Summer Lord -->
+			<Type>ART_DEF_UNIT_FAIRY_FAE_SUMMER_LORD</Type>
+			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/faeriesummerlord.dds</Button>
+			<fScale>0.5</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>art\units\civs\faeries\summerlord\seraph/deathangel.nif</NIF>
+			<KFM>Art/animations/deathangel/deathangel.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.20</fBattleDistance>
+			<fRangedDeathTime>0.28</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop />
+				<AudioRunTypeEnd />
+			</AudioRunSounds>
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
+		</UnitArtInfo>
+		<UnitArtInfo> 	<!-- Winter Lord -->
+			<Type>ART_DEF_UNIT_FAIRY_FAE_WINTER_LORD</Type>
+			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/faeriewinterlord.dds</Button>
+			<fScale>0.5</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>art\units\civs\faeries\winterlord\seraph/deathangel.nif</NIF>
+			<KFM>Art/animations/deathangel/deathangel.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.20</fBattleDistance>
+			<fRangedDeathTime>0.28</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop />
+				<AudioRunTypeEnd />
+			</AudioRunSounds>
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
     </UnitArtInfos>
 </Civ4ArtDefines>

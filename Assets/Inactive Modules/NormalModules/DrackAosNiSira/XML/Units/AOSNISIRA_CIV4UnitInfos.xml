@@ -241,7 +241,7 @@
 			<iCost>120</iCost>
 			<iMoves>1</iMoves>
 			<iCombat>3</iCombat>
-			<iCombatDefense>8</iCombatDefense>
+			<iCombatDefense>7</iCombatDefense>
 			<iFirstStrikes>0</iFirstStrikes>
 			<PrereqTech>TECH_ANIMAL_HANDLING</PrereqTech>
 			<UnitMeshGroups>
@@ -369,6 +369,7 @@
 				<UnitClassUpgradeType>UNITCLASS_PRIEST_OF_THE_ORDER</UnitClassUpgradeType>
 				<UnitClassUpgradeType>UNITCLASS_PRIEST_OF_WINTER</UnitClassUpgradeType>
 				<UnitClassUpgradeType>UNITCLASS_RANGER</UnitClassUpgradeType>
+				<UnitClassUpgradeType>UNITCLASS_IMMORTAL</UnitClassUpgradeType>
 			</UnitClassUpgrades>
 			<bNoBadGoodies>1</bNoBadGoodies>
 			<bMilitaryHappiness>1</bMilitaryHappiness>
@@ -463,6 +464,7 @@
 			<UnitClassUpgrades>
 				<UnitClassUpgradeType>UNITCLASS_BEASTMASTER</UnitClassUpgradeType>
 				<UnitClassUpgradeType>UNITCLASS_DRUID</UnitClassUpgradeType>
+				<UnitClassUpgradeType>UNITCLASS_IMMORTAL</UnitClassUpgradeType>
 			</UnitClassUpgrades>
 			<bNoBadGoodies>1</bNoBadGoodies>
 			<bMilitaryHappiness>1</bMilitaryHappiness>
@@ -470,6 +472,7 @@
 			<bMilitaryProduction>1</bMilitaryProduction>
 			<bPillage>1</bPillage>
 			<iExtraPerception>3</iExtraPerception>
+			<iMagicalPower>300</iMagicalPower>
 			<UnitAIs>
 				<UnitAI>
 					<UnitAIType>UNITAI_ATTACK</UnitAIType>
@@ -631,6 +634,7 @@
 			<bPillage>1</bPillage>
 			<UnitClassUpgrades>
 				<UnitClassUpgradeType>UNITCLASS_MARKSMAN</UnitClassUpgradeType>
+				<UnitClassUpgradeType>UNITCLASS_IMMORTAL</UnitClassUpgradeType>
 			</UnitClassUpgrades>
 			<UnitAIs>
 				<UnitAI>
@@ -698,6 +702,7 @@
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
 			<bPillage>1</bPillage>
+			<iMagicalPower>50</iMagicalPower>
 			<UnitClassUpgrades>
 				<UnitClassUpgradeType>UNITCLASS_MAGE</UnitClassUpgradeType>
 			</UnitClassUpgrades>
@@ -877,10 +882,12 @@
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
 			<bPillage>1</bPillage>
+			<iMagicalPower>150</iMagicalPower>
 			<UnitClassUpgrades>
 				<UnitClassUpgradeType>UNITCLASS_ARCHMAGE</UnitClassUpgradeType>
 				<UnitClassUpgradeType>UNITCLASS_DRUID</UnitClassUpgradeType>
 				<UnitClassUpgradeType>UNITCLASS_RANGER</UnitClassUpgradeType>
+				<UnitClassUpgradeType>UNITCLASS_IMMORTAL</UnitClassUpgradeType>
 			</UnitClassUpgrades>
 			<UnitAIs>
 				<UnitAI>
@@ -1062,6 +1069,7 @@
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
 			<bPillage>1</bPillage>
+			<iMagicalPower>350</iMagicalPower>
 			<UnitAIs>
 				<UnitAI>
 					<UnitAIType>UNITAI_MAGE</UnitAIType>
@@ -1343,6 +1351,15 @@
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 			</FreePromotions>
+			<DenyPromotions>
+				<Promotion>PROMOTION_TAME</Promotion>
+				<Promotion>PROMOTION_GUERILLA1</Promotion>
+				<Promotion>PROMOTION_WOODSMAN1</Promotion>
+				<Promotion>PROMOTION_COVER</Promotion>
+				<Promotion>PROMOTION_SHOCK</Promotion>
+				<Promotion>PROMOTION_SKIRMISHING</Promotion>
+				<Promotion>PROMOTION_URBAN</Promotion>
+			</DenyPromotions>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 			<bFreeXP>1</bFreeXP>
 			<iFreePromotionPick>2</iFreePromotionPick>
@@ -1350,7 +1367,7 @@
 			<iPowerMult>3</iPowerMult>
 			<iWeaponTierMax>0</iWeaponTierMax>
 		</UnitInfo>
-		<UnitInfo>        <!-- Aos Ni Sira Fort Commander -->
+		<UnitInfo>      <!-- Aos Ni Sira Fort Commander -->
 			<Class>UNITCLASS_FORT_COMMANDER</Class>
 			<Type>UNIT_AOSNISIRA_COMMANDER</Type>
 			<Combat>UNITCOMBAT_SIEGE</Combat>
@@ -1361,6 +1378,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<bMilitarySupport>1</bMilitarySupport>
 			<bNukeImmune>1</bNukeImmune>
+			<iMagicalPower>100</iMagicalPower>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_MILITARY</FlavorType>
@@ -1448,7 +1466,7 @@
 			</DenyPromotions>
 			<iPowerMult>4</iPowerMult>
 		</UnitInfo>
-		<UnitInfo>        <!-- Druid -->
+		<UnitInfo>      <!-- Druid -->
 			<Class>UNITCLASS_DRUID</Class>
 			<Type>UNIT_AOSNISIRA_DRUID</Type>
 			<Combat>UNITCOMBAT_DISCIPLE</Combat>
@@ -1456,12 +1474,16 @@
 			<Description>TXT_KEY_AOSNISIRA_UNIT_DRUID_NAME</Description>
 			<Civilopedia>TXT_KEY_UNIT_DRUID_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_DRUID_STRATEGY</Strategy>
+			<UnitClassUpgrades>
+				<UnitClassUpgradeType>UNITCLASS_IMMORTAL</UnitClassUpgradeType>
+			</UnitClassUpgrades>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<bNoBadGoodies>1</bNoBadGoodies>
 			<bMilitaryHappiness>1</bMilitaryHappiness>
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
 			<bCanMoveImpassable>1</bCanMoveImpassable>
+			<iMagicalPower>350</iMagicalPower>
 			<UnitAIs>
 				<UnitAI>
 					<UnitAIType>UNITAI_ATTACK</UnitAIType>
@@ -1568,7 +1590,7 @@
 				</BonusAffinity>
 			</BonusAffinities>
 		</UnitInfo>
-		<UnitInfo>        <!-- Beastmaster -->
+		<UnitInfo>      <!-- Beastmaster -->
 			<Class>UNITCLASS_BEASTMASTER</Class>
 			<Type>UNIT_AISNOSIRA_BEASTMASTER</Type>
 			<Combat>UNITCOMBAT_RECON</Combat>
@@ -1577,11 +1599,15 @@
 			<Description>TXT_KEY_UNIT_AOSNISIRA_BEASTMASTER</Description>
 			<Civilopedia>TXT_KEY_UNIT_BEASTMASTER_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_BEASTMASTER_STRATEGY</Strategy>
+			<UnitClassUpgrades>
+				<UnitClassUpgradeType>UNITCLASS_IMMORTAL</UnitClassUpgradeType>
+			</UnitClassUpgrades>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<bNoBadGoodies>1</bNoBadGoodies>
 			<bMilitaryHappiness>1</bMilitaryHappiness>
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
+			<iMagicalPower>350</iMagicalPower>
 			<UnitAIs>
 				<UnitAI>
 					<UnitAIType>UNITAI_ATTACK</UnitAIType>

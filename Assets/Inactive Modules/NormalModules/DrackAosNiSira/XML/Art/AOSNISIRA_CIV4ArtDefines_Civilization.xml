@@ -24,5 +24,11 @@
 			<Path>Modules\NormalModules\DrackAosNiSira\Art\other\FlagCourtOfBeyTransparent.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
+		<CivilizationArtInfo>
+			<Type>ART_DEF_CIVILIZATION_COURTOFMISRAK</Type> 
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\other\FlagCourtOfMisrak.dds</Button>
+			<Path>Modules\NormalModules\DrackAosNiSira\Art\other\FlagCourtOfMisrakTransparent.dds</Path>
+			<bWhiteFlag>0</bWhiteFlag>
+		</CivilizationArtInfo>
 	</CivilizationArtInfos>
 </Civ4ArtDefines>

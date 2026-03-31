@@ -552,7 +552,7 @@
             <FreeBonus2>BONUS_MANA_CHAOS</FreeBonus2>
 			<FreeBonus3>BONUS_MANA_LIFE</FreeBonus3>
         </BuildingInfo>
-        <BuildingInfo>	<!-- Fairy Well -->             <!-- Court of Falyn + Bey -->
+        <BuildingInfo>	<!-- Fairy Well -->             <!-- Court of Falyn + Bey + Misrak -->
 			<BuildingClass>BUILDINGCLASS_WELL</BuildingClass>
 			<Type>BUILDING_FAIRY_WELL</Type>
 			<Description>TXT_KEY_BUILDING_FAIRY_WELL</Description>
@@ -782,8 +782,18 @@
                     <fCrime>0.1</fCrime>
 				</PerPopBonus>
 			</PerPopBonuses>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+					<iSpecialistCount>2</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 		</BuildingInfo>
-        <BuildingInfo>	<!-- Fairy Ring -->             <!-- Court of Falyn + Bey + Aos Ni Sira -->
+        <BuildingInfo>	<!-- Fairy Ring -->             <!-- Court of Falyn + Bey + Misrak + Aos Ni Sira -->
 			<BuildingClass>BUILDINGCLASS_FAIRY_RING</BuildingClass>
 			<Type>BUILDING_FAIRY_RING</Type>
 			<Description>TXT_KEY_BUILDING_FAIRY_RING</Description>
@@ -939,7 +949,7 @@
 			<SpecialistCounts>
 				<SpecialistCount>
 					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
+					<iSpecialistCount>2</iSpecialistCount>
 				</SpecialistCount>
 				<SpecialistCount>
 					<SpecialistType>SPECIALIST_HEALER</SpecialistType>
@@ -1212,7 +1222,7 @@
 				</BonusCommerceModifier>
 			</BonusCommerceModifiers>
         </BuildingInfo>
-		<BuildingInfo>	<!-- Fairy Pillar -->			<!-- Court of Falyn + Bey + Aos Ni Sira -->
+		<BuildingInfo>	<!-- Fairy Pillar -->			<!-- Court of Falyn + Bey + Misrak + Aos Ni Sira -->
 			<BuildingClass>BUILDINGCLASS_MONUMENT</BuildingClass>
 			<Type>BUILDING_FAIRY_PILLAR</Type>
 			<Description>TXT_KEY_BUILDING_FAIRY_PILLAR</Description>
@@ -1299,6 +1309,415 @@
 					<iSpecialistCount>1</iSpecialistCount>
 				</SpecialistCount>
 			</SpecialistCounts>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_SCIENCE</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+		</BuildingInfo>
+		<BuildingInfo>  <!-- Court of Misrak Palace --> <!-- Court of Misrak -->
+            <BuildingClass>BUILDINGCLASS_PALACE</BuildingClass>
+            <Type>BUILDING_PALACE_COURTOFMISRAK</Type>
+            <SpecialBuildingType>NONE</SpecialBuildingType>
+            <Description>TXT_KEY_BUILDING_PALACE_COURTOFMISRAK</Description>
+			<Civilopedia>TXT_KEY_BUILDING_PALACE_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_COURTOFMISRAK_PALACE_PEDIA</Strategy>
+			<Help>TXT_KEY_BUILDING_COURTOFMISRAK_PALACE_HELP</Help>
+            <bCapital>1</bCapital>
+			<iHealth>2</iHealth>
+			<bGovernmentCenter>1</bGovernmentCenter>
+            <Advisor>ADVISOR_ECONOMY</Advisor>
+            <ArtDefineTag>ART_DEF_BUILDING_PALACE_COURTOFMISRAK</ArtDefineTag>
+            <iCost>160</iCost>
+            <iAdvancedStartCost>140</iAdvancedStartCost>
+            <iMinAreaSize>-1</iMinAreaSize>
+            <iConquestProb>25</iConquestProb>
+            <iCitiesPrereq>4</iCitiesPrereq>
+            <iMaxLatitude>90</iMaxLatitude>
+            <iCrime>-10</iCrime>
+            <iBombardDefense>0</iBombardDefense>
+            <iEspionageDefense>0</iEspionageDefense>
+            <iHappiness>1</iHappiness>
+            <iAsset>1</iAsset>
+            <iPower>2</iPower>
+            <fVisibilityPriority>10000</fVisibilityPriority>
+            <YieldChanges>
+				<iYield>0</iYield>
+				<iYield>1</iYield>
+				<iYield>12</iYield>
+			</YieldChanges>
+			<ObsoleteSafeCommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>2</iCommerce>
+			</ObsoleteSafeCommerceChanges>
+            <iNumFreeBonuses>1</iNumFreeBonuses>
+            <FreeBonus>BONUS_MANA_CREATION</FreeBonus>
+            <FreeBonus2>BONUS_MANA_EARTH</FreeBonus2>
+			<FreeBonus3>BONUS_MANA_MIND</FreeBonus3>
+        </BuildingInfo>
+		<BuildingInfo>	<!-- Candy Shop -->				<!-- Court of Misrak -->
+			<BuildingClass>BUILDINGCLASS_CARNIVAL</BuildingClass>
+			<Type>BUILDING_FAIRY_CANDY_SHOP</Type>
+			<Description>TXT_KEY_BUILDING_FAIRY_CANDY_SHOP</Description>
+			<Civilopedia>TXT_KEY_BUILDING_FAIRY_CANDY_SHOP_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_FAIRY_CANDY_SHOP_STRATEGY</Strategy>
+			<Help>TXT_KEY_BUILDING_FAIRY_CANDY_SHOP_HELP</Help>
+			<Advisor>ADVISOR_CULTURE</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_FAIRY_CANDY_SHOP</ArtDefineTag>
+			<PrereqTech>TECH_FESTIVALS</PrereqTech>
+			<ProductionTraits>
+				<ProductionTrait>
+					<ProductionTraitType>TRAIT_CREATIVE</ProductionTraitType>
+					<iProductionTrait>100</iProductionTrait>
+				</ProductionTrait>
+			</ProductionTraits>
+			<iAIWeight>30</iAIWeight>
+			<iCost>120</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iConquestProb>25</iConquestProb>
+			<iAsset>3</iAsset>
+			<fVisibilityPriority>10</fVisibilityPriority>
+			<LocalSpecialistHappinessChanges>
+				<LocalSpecialistHappinessChange>
+					<SpecialistType>SPECIALIST_SLAVE</SpecialistType>
+					<iHappiness>1</iHappiness>
+				</LocalSpecialistHappinessChange>
+			</LocalSpecialistHappinessChanges>
+			<CommerceModifiers>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>15</iCommerce>
+			</CommerceModifiers>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
+			<ConstructSound>AS2D_BUILD_CARNIVAL</ConstructSound>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_CULTURE</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+		</BuildingInfo>
+		<BuildingInfo>	<!-- Dollhouse -->				<!-- Court of Misrak -->
+			<BuildingClass>BUILDINGCLASS_GRANARY</BuildingClass>
+			<Type>BUILDING_FAIRY_DOLLHOUSE</Type>
+			<Description>TXT_KEY_BUILDING_FAIRY_DOLLHOUSE</Description>
+			<Civilopedia>TXT_KEY_BUILDING_FAIRY_DOLLHOUSE_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_FAIRY_DOLLHOUSE_STRATEGY</Strategy>
+			<Help>TXT_KEY_BUILDING_FAIRY_DOLLHOUSE_HELP</Help>
+			<Advisor>ADVISOR_GROWTH</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_FAIRY_DOLLHOUSE</ArtDefineTag>
+			<PrereqTech>TECH_AGRICULTURE</PrereqTech>
+			<ProductionTraits>
+				<ProductionTrait>
+					<ProductionTraitType>TRAIT_EXPANSIVE</ProductionTraitType>
+					<iProductionTrait>100</iProductionTrait>
+				</ProductionTrait>
+			</ProductionTraits>
+			<iAIWeight>10</iAIWeight>
+			<iCost>90</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iConquestProb>25</iConquestProb>
+			<iAsset>3</iAsset>
+			<fVisibilityPriority>10</fVisibilityPriority>
+			<ConstructSound>AS2D_BUILD_GRANARY</ConstructSound>
+			<LocalSpecialistHealthChanges>
+				<LocalSpecialistHealthChange>
+					<SpecialistType>SPECIALIST_SLAVE</SpecialistType>
+					<iHealth>1</iHealth>
+				</LocalSpecialistHealthChange>
+			</LocalSpecialistHealthChanges>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+		</BuildingInfo>
+		<BuildingInfo>	<!-- Chaincandy Chateau -->		<!-- Court of Misrak -->
+			<BuildingClass>BUILDINGCLASS_PENAL_COLONY</BuildingClass>
+			<Type>BUILDING_FAIRY_CHAINCANDY_CHATEAU</Type>
+			<Description>TXT_KEY_BUILDING_FAIRY_CHAINCANDY_CHATEAU</Description>
+			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
+			<Civilopedia>TXT_KEY_BUILDING_FAIRY_CHAINCANDY_CHATEAU_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_PENAL_COLONY_STRATEGY</Strategy>
+			<Help>TXT_KEY_BUILDING_PENAL_COLONY_HELP</Help>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_FAIRY_CHAINCANDY_CHATEAU</ArtDefineTag>
+			<bNeverCapture>1</bNeverCapture>
+			<iAIWeight>10</iAIWeight>
+			<iCost>250</iCost>
+			<iConquestProb>0</iConquestProb>
+			<iAsset>2</iAsset>
+			<iPower>4</iPower>
+			<fVisibilityPriority>10</fVisibilityPriority>
+			<PerCrimeEffectYieldChanges>
+				<iYield>0</iYield>
+				<iYield>3</iYield>
+				<iYield>0</iYield>
+			</PerCrimeEffectYieldChanges>
+			<YieldModifiers>
+				<iYield>0</iYield>
+				<iYield>0</iYield>
+				<iYield>30</iYield>
+			</YieldModifiers>
+			<iCrime>50</iCrime>
+			<PerPopBonuses>
+				<PerPopBonus>
+					<fCrime>1</fCrime>
+				</PerPopBonus>
+			</PerPopBonuses>
+			<FreePromotion>PROMOTION_PATROL1</FreePromotion>
+		</BuildingInfo>
+		<BuildingInfo>	<!-- Candy Harbour -->			<!-- Court of Misrak -->
+			<BuildingClass>BUILDINGCLASS_LIGHTHOUSE</BuildingClass>
+			<Type>BUILDING_FAIRY_CANDY_HARBOUR</Type>
+			<Description>TXT_KEY_BUILDING_FAIRY_CANDY_HARBOUR</Description>
+			<Civilopedia>TXT_KEY_BUILDING_FAIRY_CANDY_HARBOUR_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_GROWTH</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_FAIRY_CANDY_HARBOUR</ArtDefineTag>
+			<PrereqTech>TECH_SAILING</PrereqTech>
+			<ProductionTraits>
+				<ProductionTrait>
+					<ProductionTraitType>TRAIT_ORGANIZED</ProductionTraitType>
+					<iProductionTrait>100</iProductionTrait>
+				</ProductionTrait>
+			</ProductionTraits>
+			<bWater>1</bWater>
+			<iAIWeight>15</iAIWeight>
+			<iCost>200</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iMinAreaSize>10</iMinAreaSize>
+			<iConquestProb>25</iConquestProb>
+			<iTradeRoutes>2</iTradeRoutes>
+			<iAsset>3</iAsset>
+			<fVisibilityPriority>10</fVisibilityPriority>
+			<SeaPlotYieldChanges>
+				<iYield>0</iYield>
+				<iYield>0</iYield>
+				<iYield>1</iYield>
+			</SeaPlotYieldChanges>
+			<ConstructSound>AS2D_BUILD_LIGHTHOUSE</ConstructSound>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+		</BuildingInfo>
+		<BuildingInfo>	<!-- Caramel Cage -->			<!-- Court of Misrak -->
+			<BuildingClass>BUILDINGCLASS_DUNGEON</BuildingClass>
+			<Type>BUILDING_FAIRY_CARAMEL_CAGE</Type>
+			<Description>TXT_KEY_BUILDING_FAIRY_CARAMEL_CAGE</Description>
+			<Civilopedia>TXT_KEY_BUILDING_FAIRY_CARAMEL_CAGE_PEDIA</Civilopedia>
+			<Help>TXT_KEY_BUILDING_FAIRY_CARAMEL_CAGE_HELP</Help>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_FAIRY_CARAMEL_CAGE</ArtDefineTag>
+			<PrereqTech>TECH_MASONRY</PrereqTech>
+			<iAIWeight>15</iAIWeight>
+			<iCost>120</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iConquestProb>25</iConquestProb>
+			<iWarWearinessModifier>-25</iWarWearinessModifier>
+			<iAsset>4</iAsset>
+			<fVisibilityPriority>1</fVisibilityPriority>
+			<BonusProductionModifiers>
+				<BonusProductionModifier>
+					<BonusType>BONUS_STONE</BonusType>
+					<iProductonModifier>50</iProductonModifier>
+				</BonusProductionModifier>
+			</BonusProductionModifiers>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_GOLD</FlavorType>
+					<iFlavor>2</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>5</iFlavor>
+				</Flavor>
+			</Flavors>
+			<iCrime>-10</iCrime>
+		</BuildingInfo>
+		<BuildingInfo>	<!-- Shroom Hall -->			<!-- Court of Falyn -->
+			<BuildingClass>BUILDINGCLASS_THEATRE</BuildingClass>
+			<Type>BUILDING_FAIRY_SHROOM_HALL</Type>
+			<Description>TXT_KEY_BUILDING_FAIRY_SHROOM_HALL</Description>
+			<Civilopedia>TXT_KEY_BUILDING_FAIRY_SHROOM_HALL_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_CULTURE</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_FAIRY_SHROOM_HALL</ArtDefineTag>
+			<PrereqTech>TECH_DRAMA</PrereqTech>
+			<iAIWeight>20</iAIWeight>
+			<iCost>180</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iConquestProb>25</iConquestProb>
+			<PerPopBonuses>
+				<PerPopBonus>
+                    <fHappy>0.15</fHappy>
+                    <fCulture>0.25</fCulture>
+				</PerPopBonus>
+			</PerPopBonuses>
+			<iAsset>3</iAsset>
+			<fVisibilityPriority>10</fVisibilityPriority>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+					<iSpecialistCount>2</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
+			<ConstructSound>AS2D_BUILD_THEATRE</ConstructSound>
+			<BonusHappinessChanges>
+				<BonusHappinessChange>
+					<BonusType>BONUS_MUSHROOMS</BonusType>
+					<iHappinessChange>1</iHappinessChange>
+				</BonusHappinessChange>
+			</BonusHappinessChanges>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_CULTURE</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+		</BuildingInfo>
+		<BuildingInfo>	<!-- Shadow Cave -->			<!-- Court of Bey -->
+			<BuildingClass>BUILDINGCLASS_THEATRE</BuildingClass>
+			<Type>BUILDING_FAIRY_SHADOW_CAVE</Type>
+			<Description>TXT_KEY_BUILDING_FAIRY_SHADOW_CAVE</Description>
+			<Civilopedia>TXT_KEY_BUILDING_FAIRY_SHADOW_CAVE_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_CULTURE</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_FAIRY_SHADOW_CAVE</ArtDefineTag>
+			<PrereqTech>TECH_DRAMA</PrereqTech>
+			<iAIWeight>20</iAIWeight>
+			<iCost>180</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iConquestProb>25</iConquestProb>
+			<iAsset>3</iAsset>
+			<fVisibilityPriority>10</fVisibilityPriority>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+					<iSpecialistCount>2</iSpecialistCount>
+				</SpecialistCount>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
+			<LocalSpecialistCommerceChanges>
+				<LocalSpecialistCommerceChange>
+					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+					<CommerceChanges>
+						<iCommerce>0</iCommerce>
+						<iCommerce>0</iCommerce>
+						<iCommerce>2</iCommerce>
+					</CommerceChanges>
+				</LocalSpecialistCommerceChange>
+                <LocalSpecialistCommerceChange>
+					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+					<CommerceChanges>
+						<iCommerce>0</iCommerce>
+						<iCommerce>0</iCommerce>
+						<iCommerce>1</iCommerce>
+					</CommerceChanges>
+				</LocalSpecialistCommerceChange>
+			</LocalSpecialistCommerceChanges>
+			<LocalSpecialistHappinessChanges>
+				<LocalSpecialistHappinessChange>
+					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+					<iHappiness>1</iHappiness>
+				</LocalSpecialistHappinessChange>
+			</LocalSpecialistHappinessChanges>
+			<ConstructSound>AS2D_BUILD_THEATRE</ConstructSound>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_CULTURE</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+		</BuildingInfo>
+		<BuildingInfo>	<!-- Godara Temple -->			<!-- House Godara -->
+			<BuildingClass>BUILDINGCLASS_FAIRY_GODARA_TEMPLE</BuildingClass>
+			<Type>BUILDING_FAIRY_GODARA_TEMPLE</Type>
+			<Description>TXT_KEY_FAIRY_GODARA_TEMPLE</Description>
+			<Civilopedia>TXT_KEY_BUILDING_FAIRY_GODARA_TEMPLE_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_CULTURE</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_FAIRY_GODARA_TEMPLE</ArtDefineTag>
+			<PrereqTech>TECH_PRIESTHOOD</PrereqTech>
+			<iAIWeight>20</iAIWeight>
+			<iCost>200</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iConquestProb>25</iConquestProb>
+			<iAsset>3</iAsset>
+			<fVisibilityPriority>10</fVisibilityPriority>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+					<iSpecialistCount>3</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
+			<BonusHappinessChanges>
+				<BonusHappinessChange>
+					<BonusType>BONUS_MANA_LAW</BonusType>
+					<iHappinessChange>2</iHappinessChange>
+				</BonusHappinessChange>
+				<BonusHappinessChange>
+					<BonusType>BONUS_MANA_LIFE</BonusType>
+					<iHappinessChange>2</iHappinessChange>
+				</BonusHappinessChange>
+				<BonusHappinessChange>
+					<BonusType>BONUS_MANA_SUN</BonusType>
+					<iHappinessChange>2</iHappinessChange>
+				</BonusHappinessChange>
+			</BonusHappinessChanges>
+			<ConstructSound>AS2D_BUILD_OBELISK</ConstructSound>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_CULTURE</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<iFlavor>3</iFlavor>
+				</Flavor>
+			</Flavors>
+		</BuildingInfo>
+		<BuildingInfo>	<!-- Astra Observatory -->			<!-- House Astra -->
+			<BuildingClass>BUILDINGCLASS_FAIRY_ASTRA_OBSERVATORY</BuildingClass>
+			<Type>BUILDING_FAIRY_ASTRA_OBSERVATORY</Type>
+			<Description>TXT_KEY_FAIRY_ASTRA_OBSERVATORY</Description>
+			<Civilopedia>TXT_KEY_BUILDING_FAIRY_ASTRA_OBSERVATORY_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_CULTURE</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_FAIRY_ASTRA_OBSERVATORY</ArtDefineTag>
+			<PrereqTech>TECH_WRITING</PrereqTech>
+			<iAIWeight>20</iAIWeight>
+			<iCost>180</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iConquestProb>25</iConquestProb>
+			<iAsset>3</iAsset>
+			<fVisibilityPriority>10</fVisibilityPriority>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+					<iSpecialistCount>3</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
+			<CommerceModifiers>
+				<iCommerce>0</iCommerce>
+				<iCommerce>15</iCommerce>
+				<iCommerce>0</iCommerce>
+			</CommerceModifiers>
+			<CommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>3</iCommerce>
+				<iCommerce>0</iCommerce>
+			</CommerceChanges>
+			<ConstructSound>AS2D_BUILD_LIBRARY</ConstructSound>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_SCIENCE</FlavorType>

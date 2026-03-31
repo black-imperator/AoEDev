@@ -538,7 +538,6 @@
 	<ElementType name="bPrereqNoFreshWater" content="textOnly" dt:type="boolean"/><!-- The building requires that the city has no fresh water yet (example aqueduct) -->
 	<ElementType name="bUseMultiBonuses" content="textOnly" dt:type="boolean"/><!-- Ronkhar thinks this is not functional. TODO understand and complete or delete -->
 	<ElementType name="bCrimeEffect" content="textOnly" dt:type="boolean"/>
-	<ElementType name="bEffect" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bSeeInvisible" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bOverflowProduction" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bUnhappyProduction" content="textOnly" dt:type="boolean"/>
@@ -852,7 +851,6 @@
 		<element type="bCenterInCity"/>
 		<element type="bUseMultiBonuses"/>
 		<element type="bCrimeEffect"/>
-		<element type="bEffect"/>
 		<element type="iAIWeight"/>
 		<element type="iCost"/>
 		<element type="iHurryCostModifier"/>
@@ -1097,9 +1095,6 @@
 	
 	<ElementType name="CityClassInfo" content="eltOnly" order="many">
 		<element type="Type"/>
-		<element type="bTypeDependency"/>
-		<element type="AndDependencyTypes"/>
-		<element type="OrDependencyTypes"/>
 		<element type="Buildings"/>
 		<element type="Units"/>
 		<element type="ShortDescription"/>

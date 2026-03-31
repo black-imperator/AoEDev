@@ -75,7 +75,7 @@ Recognizing the need for a force that could project the Court of Falyns power be
 Pleia is as much a hunter of opportunity as she is of game. She understands that power is not just won on the battlefield but also in the halls of influence. Her political acumen is as sharp as her arrows, and she knows how to cultivate alliances, and how to eliminate obstacles. It is no secret that those who oppose her often find themselves the victims of unfortunate "accidents". A rival might vanish during a hunt, or a foe might be found after a battle, their body riddled with arrows.
         </English>
     </TEXT>
-     <TEXT>
+    <TEXT>
         <Tag>TXT_KEY_LEADER_FAIRY_JASMINE</Tag>
         <English>Jasmine Al Dawar</English>
     </TEXT>
@@ -83,12 +83,44 @@ Pleia is as much a hunter of opportunity as she is of game. She understands that
         <Tag>TXT_KEY_LEADER_FAIRY_JASMINE_PEDIA</Tag>
         <English>TODO</English>
     </TEXT>
-     <TEXT>
+    <TEXT>
         <Tag>TXT_KEY_LEADER_FAIRY_MAUKIA</Tag>
         <English>Maukia Al Wai</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_FAIRY_MAUKIA_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_FAIRY_KISSANIA</Tag>
+        <English>Kissania Misaii</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_FAIRY_KISSANIA_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_FAIRY_MARIKYA</Tag>
+        <English>Marikya the Adorable</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_FAIRY_MARIKYA_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_FAIRY_LAILA</Tag>
+        <English>Laila the Playful</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_FAIRY_LAILA_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_FAIRY_ARAMAI</Tag>
+        <English>Sister Aramai</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_FAIRY_ARAMAI_PEDIA</Tag>
         <English>TODO</English>
     </TEXT>
 </Civ4GameText>

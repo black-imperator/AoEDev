@@ -71,5 +71,37 @@
 			<DefaultUnit>UNIT_FAIRY_ALIN</DefaultUnit>
 			<bUnique>1</bUnique>
 		</UnitClassInfo>
+		<UnitClassInfo>		<!-- Sugar Fae -->
+			<Type>UNITCLASS_FAIRY_SUGARFAE</Type>
+			<Description>TXT_KEY_UNIT_FAIRY_SUGARFAE</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_FAIRY_SUGARFAE</DefaultUnit>
+			<iMercenaryWeight>20</iMercenaryWeight>
+            <bUnique>1</bUnique>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- Lady Isin, Hero of Misrak-->
+			<Type>UNITCLASS_FAIRY_LADY_ISIN</Type>
+			<Description>TXT_KEY_AOSNISIRA_UNIT_FAIRY_LADY_ISIN</Description>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_FAIRY_LADY_ISIN</DefaultUnit>
+			<bUnique>1</bUnique>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- Fae Drake -->
+			<Type>UNITCLASS_FAIRY_FAE_DRAKE</Type>
+			<Description>TXT_KEY_UNIT_FAIRY_FAE_DRAKE</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>3</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_FAIRY_FAE_DRAKE</DefaultUnit>
+			<iMercenaryWeight>20</iMercenaryWeight>
+            <bUnique>1</bUnique>
+		</UnitClassInfo>
     </UnitClassInfos>
 </Civ4UnitClassInfos>

@@ -175,4 +175,8 @@ Differently to normal Worker Units, the Treesingers can only build Trails and pl
 The Maistir Ni Nadur are Archmages with an Affinity to Nature and Spirit Mana as well as Stalker.           
         </English>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_SIRA_FOREST_PHASING</Tag>
+        <English>Sira Forest Phasing</English>
+    </TEXT>
 </Civ4GameText>

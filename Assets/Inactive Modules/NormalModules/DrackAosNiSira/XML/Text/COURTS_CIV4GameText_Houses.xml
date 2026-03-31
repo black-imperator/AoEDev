@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Risna -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_FANE</Tag>
+        <English>House Fane</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_FANE_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_FANE_SHORT</Tag>
+        <English>HF</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_PESNA</Tag>
+        <English>House Pesna</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_PESNA_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_PESNA_SHORT</Tag>
+        <English>HP</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_DAWAR</Tag>
+        <English>House Dawar</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_DAWAR_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_DAWAR_SHORT</Tag>
+        <English>HD</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_RAKIRI</Tag>
+        <English>House Rakiri</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_RAKIRI_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_RAKIRI_SHORT</Tag>
+        <English>HR</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_WAI</Tag>
+        <English>House Wai</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_WAI_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_WAI_SHORT</Tag>
+        <English>HW</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_NAIRU</Tag>
+        <English>House Nairu</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_NAIRU_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_NAIRU_SHORT</Tag>
+        <English>HN</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_FANE</Tag>
+        <English>Invite House Fane</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_FANE_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_FANE_STRATEGY</Tag>
+        <English>Grants access to the [LINK=TRAIT_HOUSE_FANE]House Fane[\LINK] trait. Recommend for playstyles that uses Arcane Units much, as the unique building makes them level up faster.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_DAWAR</Tag>
+        <English>Invite House Dawar</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_DAWAR_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_DAWAR_STRATEGY</Tag>
+        <English>Grants access to the [LINK=TRAIT_HOUSE_DAWAR]House Dawar[\LINK] trait. Recommend for playstyles that uses many Mines. If you uses Kilmorph as Religion, it is highly recommend to pick this trait.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_PESNA</Tag>
+        <English>Invite House Pesna</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_PESNA_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_PESNA_STRATEGY</Tag>
+        <English>Grants access to the [LINK=TRAIT_HOUSE_PESNA]House Pesna[\LINK] trait. Recommend for playstyles that do not require much health, but instead more gold. Healers become a big wealth income with the unique building.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_RAKIRI</Tag>
+        <English>Invite House Rakiri</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_RAKIRI_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_RAKIRI_STRATEGY</Tag>
+        <English>Grants access to the [LINK=TRAIT_HOUSE_RAKIRI]House Rakiri[\LINK] trait. It grants access to a siege weapon as well as increases production. This makes it interesting for high production playstyles as well as for aggressive city attacks.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_WAI</Tag>
+        <English>Invite House Wai</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_WAI_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_WAI_STRATEGY</Tag>
+        <English>Grants access to the [LINK=TRAIT_HOUSE_Wai]House Wai[\LINK] trait. Recommend for playstyles aggressive playstyles that uses many mounted and rogue units.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_NAIRU</Tag>
+        <English>Invite House Nairu</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_NAIRU_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_NAIRU_STRATEGY</Tag>
+        <English>Grants access to the [LINK=TRAIT_HOUSE_NAIRU]House Nairu[\LINK] trait. Recommend for playstyles that have many camps and camp related ressources like Deers.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_FANE_HELP</Tag>
+        <English>[ICON_BULLET] Invite House Fane to your court</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_DAWAR_HELP</Tag>
+        <English>[ICON_BULLET] Invite House Dawar to your court</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_PESNA_HELP</Tag>
+        <English>[ICON_BULLET] Invite House Pesna to your court</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_RAKIRI_HELP</Tag>
+        <English>[ICON_BULLET] Invite House Rakiri to your court</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_WAI_HELP</Tag>
+        <English>[ICON_BULLET] Invite House Wai to your court</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_NAIRU_HELP</Tag>
+        <English>[ICON_BULLET] Invite House Nairu to your court</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_ASTRA</Tag>
+        <English>House Astra</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_ASTRA_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_ASTRA_SHORT</Tag>
+        <English>AH</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_GODARA</Tag>
+        <English>House Godara</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_GODARA_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_GODARA_SHORT</Tag>
+        <English>HG</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_GODARA</Tag>
+        <English>Invite House Godara</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_GODARA_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_GODARA_STRATEGY</Tag>
+        <English>Grants access to the [LINK=TRAIT_HOUSE_GODARA]House Godara[\LINK] trait. Recommend for playstyles that involves many priests specialists.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_GODARA_HELP</Tag>
+        <English>[ICON_BULLET] Invite House Godara to your court</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_ASTRA</Tag>
+        <English>Invite House Astra</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_ASTRA_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_ASTRA_STRATEGY</Tag>
+        <English>Grants access to the [LINK=TRAIT_HOUSE_ASTRA]House Astra[\LINK] trait. Recommend for a heavy science playstyle.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_ASTRA_HELP</Tag>
+        <English>[ICON_BULLET] Invite House Astra to your court</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_FANE_STRATEGY</Tag>
+        <English>One of the Court Houses. Access via the [LINK=PROJECT_FAIRY_INVITE_HOUSE_FANE]Invite House Fane[\LINK] Ritual.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_PESNA_STRATEGY</Tag>
+        <English>One of the Court Houses. Access via the [LINK=PROJECT_FAIRY_INVITE_HOUSE_PESNA]Invite House Pesna[\LINK] Ritual.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_DAWAR_STRATEGY</Tag>
+        <English>One of the Court Houses. Access via the [LINK=PROJECT_FAIRY_INVITE_HOUSE_DAWAR]Invite House Dawar[\LINK] Ritual.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_RAKIRI_STRATEGY</Tag>
+        <English>One of the Court Houses. Access via the [LINK=PROJECT_FAIRY_INVITE_HOUSE_RAKIRI]Invite House Rakiri[\LINK] Ritual.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_WAI_STRATEGY</Tag>
+        <English>One of the Court Houses. Access via the [LINK=PROJECT_FAIRY_INVITE_HOUSE_WAI]Invite House Wai[\LINK] Ritual.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_NAIRU_STRATEGY</Tag>
+        <English>One of the Court Houses. Access via the [LINK=PROJECT_FAIRY_INVITE_HOUSE_NAIRU]Invite House Nairu[\LINK] Ritual.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_GODARA_STRATEGY</Tag>
+        <English>One of the Court Houses. Access via the [LINK=PROJECT_FAIRY_INVITE_HOUSE_GODARA]Invite House Godara[\LINK] Ritual.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HOUSE_ASTRA_STRATEGY</Tag>
+        <English>One of the Court Houses. Access via the [LINK=PROJECT_FAIRY_INVITE_HOUSE_ASTRA]Invite House Astra[\LINK] Ritual.</English>
+    </TEXT>
+</Civ4GameText>

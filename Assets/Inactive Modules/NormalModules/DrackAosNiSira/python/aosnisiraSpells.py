@@ -3,7 +3,7 @@ from CvPythonExtensions import *
 import PyHelpers
 PyPlayer = PyHelpers.PyPlayer
 
-gc          = CyGlobalContext()
+gc		  = CyGlobalContext()
 git			= gc.getInfoTypeForString
 
 import CustomFunctions
@@ -17,7 +17,16 @@ def reqPlantForestHeartOnFort(pCaster):
 	iForestHeart2 = git('IMPROVEMENT_FORESTHEART')
 	iForestHeart3 = git('IMPROVEMENT_FORESTHEART_TITAN')
 	invalidFortTypes = [iForestHeart1, iForestHeart2, iForestHeart3]
-		
+	
+	terrainOcean	 = git("TERRAIN_OCEAN")
+	terrainCoast	 = git("TERRAIN_COAST")
+	terrainDeepOcean = git("TERRAIN_OCEAN_DEEP")
+	waterTiles = [terrainOcean, terrainCoast, terrainDeepOcean]
+ 	
+	pPlotTerrainType = pPlot.getTerrainType()
+	if pPlotTerrainType in waterTiles:
+		return False
+  
 	if iPlayer != -1:
 		if iImprovement != -1:
 			pImprovement = gc.getImprovementInfo(iImprovement)
@@ -35,3 +44,10 @@ def spellPlantForestHeartOnFort(pCaster):
 	iImprovement = pPlot.getImprovementType()
 	pPlot.setImprovementOwner(iPlayer)
 	pPlot.addCultureControl(iPlayer, iImprovement, 1)
+ 
+def spellEatAnimal(pCaster):
+    pPlot = pCaster.plot()  # Get the plot where the caster is standing
+    pCity = pPlot.getPlotCity()  # Get the city on that plot
+
+    if pCity:
+        pCity.changeFood(30)  # Add 30 food to the city

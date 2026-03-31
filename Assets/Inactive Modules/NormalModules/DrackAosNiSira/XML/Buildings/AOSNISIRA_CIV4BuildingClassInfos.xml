@@ -97,5 +97,31 @@
 			<DefaultBuilding>BUILDING_FAIRY_NAIRU_CIRCLE</DefaultBuilding>
 			<VictoryThresholds/>
 		</BuildingClassInfo>
+		<BuildingClassInfo> <!-- Godara Temple -->
+			<Type>BUILDINGCLASS_FAIRY_GODARA_TEMPLE</Type>
+			<Description>TXT_KEY_FAIRY_GODARA_TEMPLE</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+            <bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_FAIRY_GODARA_TEMPLE</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo> <!-- Astra Observatory -->
+			<Type>BUILDINGCLASS_FAIRY_ASTRA_OBSERVATORY</Type>
+			<Description>TXT_KEY_FAIRY_ASTRA_OBSERVATORY</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+            <bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_FAIRY_ASTRA_OBSERVATORY</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
     </BuildingClassInfos>
 </Civ4BuildingClassInfos>

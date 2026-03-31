@@ -87,10 +87,6 @@
 					<BuildingType>BUILDING_FAIRY_PILLAR</BuildingType>
 				</Building>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_STABLE</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
-				</Building>
-				<Building>
 					<BuildingClassType>BUILDINGCLASS_SIEGE_WORKSHOP</BuildingClassType>
 					<BuildingType>NONE</BuildingType>
 				</Building>
@@ -103,15 +99,7 @@
 					<BuildingType>NONE</BuildingType>
 				</Building>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_JOUSTING_TILT</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
-				</Building>
-				<Building>
 					<BuildingClassType>BUILDINGCLASS_DRILL_YARD</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_HIPPODROME</BuildingClassType>
 					<BuildingType>NONE</BuildingType>
 				</Building>
 				<Building>
@@ -120,6 +108,10 @@
 				</Building>
 			</Buildings>
 			<Units>
+				<Unit>
+					<UnitClassType>UNITCLASS_IMMORTAL</UnitClassType>
+					<UnitType>UNIT_FAIRY_FAE_LORD</UnitType>
+				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_AXEMAN</UnitClassType>
 					<UnitType>UNIT_AOSNISIRA_POSSESSED_WOLF_PACK</UnitType>
@@ -214,7 +206,7 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_KNIGHT</UnitClassType>
-					<UnitType>NONE</UnitType>
+					<UnitType>UNIT_FAE_DRAGON_RIDER</UnitType>
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_ROYAL_GUARD</UnitClassType>
@@ -226,7 +218,7 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_HORSE_ARCHER</UnitClassType>
-					<UnitType>NONE</UnitType>
+					<UnitType>UNIT_HORSE_ARCHER_FAIRY</UnitType>
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_GALLEY</UnitClassType>
@@ -515,6 +507,10 @@
 					<BuildingType>BUILDING_PALACE_COURTOFFALYN</BuildingType>
 				</Building>
 				<Building>
+					<BuildingClassType>BUILDINGCLASS_THEATRE</BuildingClassType>
+					<BuildingType>BUILDING_FAIRY_SHROOM_HALL</BuildingType>
+				</Building>
+				<Building>
 					<BuildingClassType>BUILDINGCLASS_WELL</BuildingClassType>
 					<BuildingType>BUILDING_FAIRY_WELL</BuildingType>
 				</Building>
@@ -553,6 +549,18 @@
 			</Buildings>
 			<Units>
 				<Unit>
+					<UnitClassType>UNITCLASS_IMMORTAL</UnitClassType>
+					<UnitType>UNIT_FAIRY_FAE_SUMMER_LORD</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_KNIGHT</UnitClassType>
+					<UnitType>UNIT_FAE_DRAGON_RIDER</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_HORSE_ARCHER</UnitClassType>
+					<UnitType>UNIT_HORSE_ARCHER_FAIRY</UnitType>
+				</Unit>
+				<Unit>
 					<UnitClassType>UNITCLASS_FAIRY_NIMAI</UnitClassType>
 					<UnitType>UNIT_FAIRY_NIMAI</UnitType>
 				</Unit>
@@ -569,6 +577,14 @@
 					<UnitType>UNIT_FAIRY_SHROOMFAE</UnitType>
 				</Unit>
 				<Unit>
+					<UnitClassType>UNITCLASS_THIEF</UnitClassType>
+					<UnitType>UNIT_MOONFAE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_ASSASSIN</UnitClassType>
+					<UnitType>UNIT_STARFAE</UnitType>
+				</Unit>
+				<Unit>
 					<UnitClassType>UNITCLASS_CANNON</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -578,6 +594,10 @@
 				</Unit>
 			</Units>
 			<Improvements>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_HOMESTEAD</ImprovementClassType>
+					<ImprovementType>IMPROVEMENT_FAIRY_SHROOM_FARM</ImprovementType>
+				</Improvement>
 			</Improvements>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -721,6 +741,10 @@
 					<BuildingType>BUILDING_PALACE_COURTOFBEY</BuildingType>
 				</Building>
 				<Building>
+					<BuildingClassType>BUILDINGCLASS_THEATRE</BuildingClassType>
+					<BuildingType>BUILDING_FAIRY_SHADOW_CAVE</BuildingType>
+				</Building>
+				<Building>
 					<BuildingClassType>BUILDINGCLASS_WELL</BuildingClassType>
 					<BuildingType>BUILDING_FAIRY_WELL</BuildingType>
 				</Building>
@@ -759,6 +783,26 @@
 			</Buildings>
 			<Units>
 				<Unit>
+					<UnitClassType>UNITCLASS_IMMORTAL</UnitClassType>
+					<UnitType>UNIT_FAIRY_FAE_SUMMER_LORD</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_FAIRY_FAE_DRAKE</UnitClassType>
+					<UnitType>UNIT_FAIRY_FAE_DRAKE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_ADEPT</UnitClassType>
+					<UnitType>UNIT_BEY_ACOLYTE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_KNIGHT</UnitClassType>
+					<UnitType>UNIT_FAE_DRAGON_RIDER</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_HORSE_ARCHER</UnitClassType>
+					<UnitType>UNIT_HORSE_ARCHER_FAIRY</UnitType>
+				</Unit>
+				<Unit>
 					<UnitClassType>UNITCLASS_FAIRY_ALIN</UnitClassType>
 					<UnitType>UNIT_FAIRY_ALIN</UnitType>
 				</Unit>
@@ -784,6 +828,22 @@
 				</Unit>
 			</Units>
 			<Improvements>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_COTTAGE</ImprovementClassType>
+					<ImprovementType>IMPROVEMENT_BEDOUIN_SIT</ImprovementType>
+				</Improvement>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_HAMLET</ImprovementClassType>
+					<ImprovementType>IMPROVEMENT_BEDOUIN_CAMP</ImprovementType>
+				</Improvement>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_VILLAGE</ImprovementClassType>
+					<ImprovementType>IMPROVEMENT_BEDOUIN_GATHERING</ImprovementType>
+				</Improvement>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_TOWN</ImprovementClassType>
+					<ImprovementType>IMPROVEMENT_BEDOUIN_VILLAGE</ImprovementType>
+				</Improvement>
 			</Improvements>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -936,6 +996,182 @@
 			<PeakYieldChange>
 			</PeakYieldChange>
 			<FormClimateZoneType>CLIMATEZONE_ARID</FormClimateZoneType>
+		</CivilizationInfo>
+		<CivilizationInfo> <!-- Court of Misrak -->
+			<Type>CIVILIZATION_COURTOFMISRAK</Type>
+			<Description>TXT_KEY_CIV_COURTOFMISRAK_DESC</Description>
+			<ShortDescription>TXT_KEY_CIV_COURTOFMISRAK_SHORT_DESC</ShortDescription>
+			<Adjective>TXT_KEY_CIV_COURTOFMISRAK_ADJECTIVE</Adjective>
+			<Civilopedia>TXT_KEY_CIV_COURTOFMISRAK_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIV_COURTOFMISRAK_STRATEGY</Strategy>
+			<DefaultPlayerColor>PLAYERCOLOR_COURTOFMISRAK</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_COURTOFMISRAK</ArtDefineTag>
+			<ArtStyleType>ARTSTYLE_ELOHIM</ArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_FAIRIES</UnitArtStyleType>
+			<Image>Modules\NormalModules\DrackAosNiSira\Art\Other/CourtOfMisrakBanner.dds</Image>
+			<bPlayable>1</bPlayable>
+			<bAIPlayable>1</bAIPlayable>
+			<Cities>
+				<City>Misrak</City>
+			</Cities>
+			<Buildings>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_PALACE_COURTOFMISRAK</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_WELL</BuildingClassType>
+					<BuildingType>BUILDING_FAIRY_WELL</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_FAIRY_RING</BuildingClassType>
+					<BuildingType>BUILDING_FAIRY_RING</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_MONUMENT</BuildingClassType>
+					<BuildingType>BUILDING_FAIRY_PILLAR</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_CARNIVAL</BuildingClassType>
+					<BuildingType>BUILDING_FAIRY_CANDY_SHOP</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_GRANARY</BuildingClassType>
+					<BuildingType>BUILDING_FAIRY_DOLLHOUSE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PENAL_COLONY</BuildingClassType>
+					<BuildingType>BUILDING_FAIRY_CHAINCANDY_CHATEAU</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_LIGHTHOUSE</BuildingClassType>
+					<BuildingType>BUILDING_FAIRY_CANDY_HARBOUR</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_DUNGEON</BuildingClassType>
+					<BuildingType>BUILDING_FAIRY_CARAMEL_CAGE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_SIEGE_WORKSHOP</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
+			</Buildings>
+			<Units>
+				<Unit>
+					<UnitClassType>UNITCLASS_IMMORTAL</UnitClassType>
+					<UnitType>UNIT_FAIRY_FAE_WINTER_LORD</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_KNIGHT</UnitClassType>
+					<UnitType>UNIT_FAE_DRAGON_RIDER</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_HORSE_ARCHER</UnitClassType>
+					<UnitType>UNIT_HORSE_ARCHER_FAIRY</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_ARCHER</UnitClassType>
+					<UnitType>UNIT_FAIRY_WILDFAE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_THIEF</UnitClassType>
+					<UnitType>UNIT_MOONFAE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_ASSASSIN</UnitClassType>
+					<UnitType>UNIT_STARFAE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_FAIRY_SUGARFAE</UnitClassType>
+					<UnitType>UNIT_FAIRY_SUGARFAE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_SCOUT</UnitClassType>
+					<UnitType>UNIT_FAIRY_CANDYFAE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_FAIRY_LADY_ISIN</UnitClassType>
+					<UnitType>UNIT_FAIRY_LADY_ISIN</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_CANNON</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_CATAPULT</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+			</Units>
+			<Improvements>
+			</Improvements>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_WARRIOR</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
+				</FreeUnitClass>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_SCOUT</UnitClassType>
+					<iFreeUnits>1</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+			<FreeBuildingClasses>
+				<FreeBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<bFreeBuildingClass>1</bFreeBuildingClass>
+				</FreeBuildingClass>
+			</FreeBuildingClasses>
+			<FreeTechs>
+				<FreeTech>
+					<TechType>TECH_ANCIENT_CHANTS</TechType>
+					<bFreeTech>1</bFreeTech>
+				</FreeTech>
+			</FreeTechs>
+			<DisableTechs>
+			</DisableTechs>
+			<InitialCivics>
+				<CivicType>CIVIC_DESPOTISM</CivicType>
+				<CivicType>CIVIC_RELIGION</CivicType>
+				<CivicType>CIVIC_TRIBALISM</CivicType>
+				<CivicType>CIVIC_DECENTRALIZATION</CivicType>
+				<CivicType>CIVIC_NO_MEMBERSHIP</CivicType>
+			</InitialCivics>
+			<AnarchyCivics>
+				<CivicType>CIVIC_DESPOTISM</CivicType>
+				<CivicType>CIVIC_RELIGION</CivicType>
+				<CivicType>CIVIC_TRIBALISM</CivicType>
+				<CivicType>CIVIC_DECENTRALIZATION</CivicType>
+				<CivicType>CIVIC_NO_MEMBERSHIP</CivicType>
+			</AnarchyCivics>
+			<Leaders>
+				<Leader>
+					<LeaderName>LEADER_FAIRY_KISSANIA</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
+				<Leader>
+					<LeaderName>LEADER_FAIRY_MARIKYA</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
+				<Leader>
+					<LeaderName>LEADER_FAIRY_LAILA</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
+				<Leader>
+					<LeaderName>LEADER_FAIRY_ARAMAI</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
+			</Leaders>
+			<DerivativeCiv>NONE</DerivativeCiv>
+			<CivilizationSelectionSound>AS3D_ARABIA_SELECT</CivilizationSelectionSound>
+			<CivilizationActionSound>AS3D_ARABIA_ORDER</CivilizationActionSound>
+			<bLimitedSelection>0</bLimitedSelection>
+			<bGraphicalOnly>0</bGraphicalOnly>
+			<CivTrait>TRAIT_COURT_OF_MISRAK</CivTrait>
+			<Hero>UNIT_FAIRY_ALIN</Hero>
+			<DefaultRace>PROMOTION_RACE_FAIRY</DefaultRace>
 		</CivilizationInfo>
 	</CivilizationInfos>
 </Civ4CivilizationInfos>

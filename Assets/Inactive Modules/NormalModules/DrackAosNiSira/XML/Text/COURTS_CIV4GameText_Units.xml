@@ -78,7 +78,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FAIRY_SHROOMFAE_STRATEGY</Tag>
-        <English>TODO</English>
+        <English>
+An extremely potent, but limited unit. Can be created with the [LINK=SPELL_FAIRY_CONSUME_HOLY_SHROOM]Consume Holy Shroom[\LINK] ability.
+        </English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_AOSNISIRA_UNIT_FAIRY_NIMAI</Tag>
@@ -102,6 +104,126 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_AOSNISIRA_UNIT_FAIRY_ALIN_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_MOONFAE</Tag>
+        <English>Moonfae</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_MOONFAE_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_MOONFAE_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_STARFAE</Tag>
+        <English>Starfae</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_STARFAE_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FAIRY_SUGARFAE</Tag>
+        <English>Sugarfae</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FAIRY_SUGARFAE_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_SUGARFAE_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FAIRY_CANDYFAE</Tag>
+        <English>Candyfae</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FAIRY_CANDYFAE_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FAIRY_CANDYFAE_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_AOSNISIRA_UNIT_FAIRY_LADY_ISIN</Tag>
+        <English>Lady Isin</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_AOSNISIRA_UNIT_FAIRY_LADY_ISIN_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_AOSNISIRA_UNIT_FAIRY_LADY_ISIN_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_HORSE_ARCHER_FAIRY</Tag>
+        <English>Fae Rider</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_HORSE_ARCHER_FAIRY_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FAE_DRAGON_RIDER</Tag>
+        <English>Fae Drake Rider</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FAE_DRAGON_RIDER_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FAE_DRAGON_RIDER_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FAIRY_FAE_DRAKE</Tag>
+        <English>Fae Drake</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FAIRY_FAE_DRAKE_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FAIRY_FAE_DRAKE_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_BEY_ACOLYTE</Tag>
+        <English>Bey Acolyte</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_BEY_ACOLYTE_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FAIRY_FAE_LORD</Tag>
+        <English>Fae Beast Lord</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FAIRY_FAE_LORD_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FAIRY_FAE_SUMMER_LORD</Tag>
+        <English>Fae Summer Lord</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FAIRY_FAE_SUMMER_LORD_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FAIRY_FAE_WINTER_LORD</Tag>
+        <English>Fae Winter Lord</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FAIRY_FAE_WINTER_LORD_PEDIA</Tag>
         <English>TODO</English>
     </TEXT>
 </Civ4GameText>

@@ -42,5 +42,14 @@
 			<KFM>Art/Terrain/Resources/Swamp/Wheat.kfm</KFM>
 			<Button>Art/Interface/Buttons/Techtree/Swampdwelling.dds</Button>
 		</ImprovementArtInfo>
+		<ImprovementArtInfo>		<!-- Shroom Farm -->
+			<Type>ART_DEF_IMPROVEMENT_FAIRY_SHROOM_FARM</Type>
+			<bExtraAnimations>1</bExtraAnimations>
+            <fScale>2</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/improvements/farm/svartfarm/wildwood.nif</NIF>
+			<KFM>Art/Terrain/Resources/Swamp/Wheat.kfm</KFM>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Buildings\ShroomFarm.dds</Button>
+		</ImprovementArtInfo>
     </ImprovementArtInfos>
 </Civ4ArtDefines>

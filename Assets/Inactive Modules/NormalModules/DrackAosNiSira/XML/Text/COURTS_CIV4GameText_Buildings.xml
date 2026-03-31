@@ -148,4 +148,108 @@
         <Tag>TXT_KEY_BUILDING_FAIRY_BEY_COUNCIL_PEDIA</Tag>
         <English>TODO</English>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_PALACE_COURTOFMISRAK</Tag>
+        <English>High House of Misrak</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_COURTOFMISRAK_PALACE_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_COURTOFMISRAK_PALACE_HELP</Tag>
+        <English>[ICON_BULLET]Grants 2 Souls per turn</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FAIRY_CANDY_SHOP</Tag>
+        <English>Candy Shop</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FAIRY_CANDY_SHOP_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FAIRY_CANDY_SHOP_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FAIRY_CANDY_SHOP_HELP</Tag>
+        <English>[ICON_BULLET]+2 Max Slaves in City</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FAIRY_DOLLHOUSE</Tag>
+        <English>Dollhouse</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FAIRY_DOLLHOUSE_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FAIRY_DOLLHOUSE_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FAIRY_DOLLHOUSE_HELP</Tag>
+        <English>[ICON_BULLET]Grants 1 Souls per turn[NEWLINE][ICON_BULLET]Allows to settle Slaves[NEWLINE][ICON_BULLET]+2 Max Slaves in City</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FAIRY_CHAINCANDY_CHATEAU</Tag>
+        <English>Chaincandy Chateau</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FAIRY_CHAINCANDY_CHATEAU_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FAIRY_CANDY_HARBOUR</Tag>
+        <English>Candy Harbour</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FAIRY_CANDY_HARBOUR_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FAIRY_CARAMEL_CAGE</Tag>
+        <English>Caramel Cage</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FAIRY_CARAMEL_CAGE_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FAIRY_CARAMEL_CAGE_HELP</Tag>
+        <English>[ICON_BULLET]+1 Max Slaves in City</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FAIRY_SHROOM_HALL</Tag>
+        <English>Shroom Hall</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FAIRY_SHROOM_HALL_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FAIRY_SHADOW_CAVE</Tag>
+        <English>Shadow Cave</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FAIRY_SHADOW_CAVE_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FAIRY_GODARA_TEMPLE</Tag>
+        <English>Godara Temple</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FAIRY_GODARA_TEMPLE_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FAIRY_ASTRA_OBSERVATORY</Tag>
+        <English>Astra Observatory</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FAIRY_ASTRA_OBSERVATORY_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
 </Civ4GameText>

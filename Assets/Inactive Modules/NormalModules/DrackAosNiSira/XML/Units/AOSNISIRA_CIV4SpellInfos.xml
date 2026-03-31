@@ -6,15 +6,14 @@
 <!-- Spell Infos -->
 <Civ4SpellInfos xmlns="x-schema:AOSNISIRA_CIV4UnitSpellSchema.xml">
 	<SpellInfos>
-		<!-- World Spell -->
-		<!-- Natures Fury -->
-		<SpellInfo>
+		<SpellInfo>	<!-- Natures Fury -->	<!-- World Spell -->	<!-- Aos Ni Sira-->
             <Type>SPELL_AOSNISIRA_NATURESFURY</Type>
             <Description>Natures Fury</Description>
             <Civilopedia>TEXT_SPELL_AOSNISIRA_NATURESFURY</Civilopedia>
             <Help>TEXT_SPELL_AOSNISIRA_NATURESFURY_HELP</Help>
 			<TechPrereq>TECH_SORCERY</TechPrereq>
             <CivilizationPrereq>CIVILIZATION_AOSNISIRA</CivilizationPrereq>
+			<bCityAction>1</bCityAction>
             <bAllowAI>1</bAllowAI>
             <bGlobal>1</bGlobal>
             <iAIWeight>300</iAIWeight>
@@ -25,7 +24,64 @@
             <Sound>AS3D_SPELL_INSPIRATION</Sound>
             <Button>Modules\NormalModules\DrackAosNiSira\Art\Other\NaturesFury.dds</Button>
         </SpellInfo>
-        <SpellInfo>			<!-- Plant Forest Heart in Fort -->
+		<SpellInfo>	<!-- Great Soul Siphon -->	<!-- World Spell -->	<!-- Court of Misrak-->
+            <Type>SPELL_FAIRY_GREAT_SOUL_SIPHON</Type>
+            <Description>TEXT_SPELL_FAIRY_GREAT_SOUL_SIPHON</Description>
+            <Civilopedia>TEXT_SPELL_FAIRY_GREAT_SOUL_SIPHON_PEDIA</Civilopedia>
+			<Strategy>TEXT_SPELL_FAIRY_GREAT_SOUL_SIPHON_STRATEGY</Strategy>
+            <Help>TEXT_SPELL_FAIRY_GREAT_SOUL_SIPHON_HELP</Help>
+			<TechPrereq>TECH_POISONS</TechPrereq>
+            <CivilizationPrereq>CIVILIZATION_COURTOFMISRAK</CivilizationPrereq>
+			<bCityAction>1</bCityAction>
+            <bAllowAI>1</bAllowAI>
+            <bGlobal>1</bGlobal>
+            <iAIWeight>300</iAIWeight>
+            <bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+            <bHasCasted>1</bHasCasted>
+			<PyResult>__import__('aosnisiraWorldSpell').spellGreatSoulSiphon(pCaster)</PyResult>
+            <Effect>EFFECT_SPELL1</Effect>
+            <Sound>AS3D_SPELL_SACRIFICE</Sound>
+            <Button>Modules\NormalModules\DrackAosNiSira\Art\Other\SoulSiphon.dds</Button> 
+        </SpellInfo>
+		<SpellInfo>	<!-- Mushroom Accelleration -->	<!-- World Spell --><!-- Court of Falyn-->
+            <Type>SPELL_FAIRY_MUSHROOM_ACCELLERATION</Type>
+            <Description>TEXT_SPELL_FAIRY_MUSHROOM_ACCELLERATION</Description>
+            <Civilopedia>TEXT_SPELL_FAIRY_MUSHROOM_ACCELLERATION_PEDIA</Civilopedia>
+			<Strategy>TEXT_SPELL_FAIRY_MUSHROOM_ACCELLERATION_STRATEGY</Strategy>
+            <Help>TEXT_SPELL_FAIRY_MUSHROOM_ACCELLERATION_HELP</Help>
+			<TechPrereq>TECH_SANITATION</TechPrereq>
+            <CivilizationPrereq>CIVILIZATION_COURTOFFALYN</CivilizationPrereq>
+			<bCityAction>1</bCityAction>
+            <bAllowAI>1</bAllowAI>
+            <bGlobal>1</bGlobal>
+            <iAIWeight>300</iAIWeight>
+            <bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+            <bHasCasted>1</bHasCasted>
+			<PyResult>__import__('aosnisiraWorldSpell').spellMushroomAccelleration(pCaster)</PyResult>
+            <Effect>EFFECT_SPELL1</Effect>
+            <Sound>AS3D_SPELL_SPRING</Sound>
+            <Button>Modules\NormalModules\DrackAosNiSira\Art\Other\MushroomAcceleration.dds</Button> 
+        </SpellInfo>
+		<SpellInfo>	<!-- Fae Desertification -->	<!-- World Spell --><!-- Court of Bey-->
+            <Type>SPELL_FAIRY_FAE_DESERTIFICATION</Type>
+            <Description>TEXT_SPELL_FAIRY_FAE_DESERTIFICATION</Description>
+            <Civilopedia>TEXT_SPELL_FAIRY_FAE_DESERTIFICATION_PEDIA</Civilopedia>
+			<Strategy>TEXT_SPELL_FAIRY_FAE_DESERTIFICATION_STRATEGY</Strategy>
+            <Help>TEXT_SPELL_FAIRY_FAE_DESERTIFICATION_HELP</Help>
+			<TechPrereq>TECH_MYSTICISM</TechPrereq>
+            <CivilizationPrereq>CIVILIZATION_COURTOFBEY</CivilizationPrereq>
+			<bCityAction>1</bCityAction>
+            <bAllowAI>1</bAllowAI>
+            <bGlobal>1</bGlobal>
+            <iAIWeight>300</iAIWeight>
+            <bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+            <bHasCasted>1</bHasCasted>
+			<PyResult>__import__('aosnisiraWorldSpell').spellFaeDesertification(pCaster)</PyResult>
+            <Effect>EFFECT_SPELL1</Effect>
+            <Sound>AS3D_SPELL_SPRING</Sound>
+            <Button>Modules\NormalModules\DrackAosNiSira\Art\Other\FaeDesertification.dds</Button> 
+        </SpellInfo>
+        <SpellInfo>	<!-- Plant Forest Heart in Fort -->				<!-- Aos Ni Sira-->
 			<Type>SPELL_PLANTFORESTHEART_FORT</Type>
 			<Description>Transform to Forest Heart</Description>
             <Civilopedia>TXT_KEY_SPELL_PLANTFORESTHEART_FORT_PEDIA</Civilopedia>
@@ -37,6 +93,106 @@
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_SPELL_COMMANDER_JOIN</Sound>
 			<Button>Art/Interface/Buttons/Improvements/Yggdrasil.dds</Button>
+		</SpellInfo>
+		<SpellInfo>	<!-- Welcome Guest --> 							<!-- Court of Misrak-->
+			<Type>SPELL_FAIRY_WELCOME_GUEST</Type>
+			<Description>TXT_KEY_SPELL_FAIRY_WELCOME_GUEST</Description>
+			<Civilopedia>TXT_KEY_SPELL_FAIRY_WELCOME_GUEST_PEDIA</Civilopedia>
+			<CivilizationPrereq>CIVILIZATION_COURTOFMISRAK</CivilizationPrereq>
+			<BuildingPrereq>BUILDING_FAIRY_DOLLHOUSE</BuildingPrereq>
+			<UnitClassPrereq>UNITCLASS_SLAVE</UnitClassPrereq>
+			<bInCityOnly>1</bInCityOnly>
+			<bAllowAI>1</bAllowAI>
+			<bAbility>1</bAbility>
+			<bHasCasted>1</bHasCasted>
+			<PyRequirement>__import__('misrakSpells').reqWelcomeGuest(pCaster)</PyRequirement>
+			<PyResult>spellSlaveSettle(pCaster)</PyResult>
+			<Effect>EFFECT_SPELL1</Effect>
+			<Sound>AS3D_SPELL_SPRING</Sound>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Other\WelcomeGuest.dds</Button> 
+		</SpellInfo>
+		<SpellInfo>	<!-- Materialize City --> 						<!-- Court of Misrak-->
+			<Type>SPELL_FAIRY_MATERIALIZE_CITY</Type>
+			<Description>TXT_KEY_SPELL_MATERIALIZE_CITY</Description>
+			<Civilopedia>TXT_KEY_SPELL_MATERIALIZE_CITY_PEDIA</Civilopedia>
+			<Help>TXT_KEY_SPELL_MATERIALIZE_CITY_HELP</Help>
+			<UnitPrereq>UNIT_FAIRY_CANDYFAE</UnitPrereq>
+			<bAllowAI>1</bAllowAI>
+			<bAbility>1</bAbility>
+			<bHasCasted>1</bHasCasted>
+			<PyRequirement>__import__('misrakSpells').reqMaterializeCity(pCaster)</PyRequirement>
+			<PyResult>__import__('misrakSpells').spellMaterializeCity(pCaster)</PyResult>
+			<Effect>EFFECT_SPELL1</Effect>
+			<Sound>AS3D_SPELL_MUTATION</Sound>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Other\MaterializeCity.dds</Button> 
+		</SpellInfo>
+		<SpellInfo>	<!-- Plant Scrub --> 							<!-- Court of Bey-->
+			<Type>SPELL_FAIRY_PLANT_SCRUB</Type>
+			<Description>TXT_KEY_SPELL_PLANT_SCRUB</Description>
+			<Civilopedia>TXT_KEY_SPELL_PLANT_SCRUB_PEDIA</Civilopedia>
+			<Help>TXT_KEY_SPELL_PLANT_SCRUB_HELP</Help>
+			<UnitPrereq>UNIT_FAIRY_SANDFAE</UnitPrereq>
+			<bAllowAI>1</bAllowAI>
+			<bAbility>1</bAbility>
+			<bHasCasted>1</bHasCasted>
+			<bIsAutoCastable>1</bIsAutoCastable>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<iDelay>3</iDelay>
+			<PyRequirement>__import__('misrakSpells').reqPlantScrub(pCaster)</PyRequirement>
+			<PyResult>__import__('misrakSpells').spellPlantScrub(pCaster)</PyResult>
+			<Effect>EFFECT_SPELL1</Effect>
+			<Sound>AS3D_SPELL_BLESS</Sound>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Other\GrowScrubs.dds</Button> 
+		</SpellInfo>
+		<SpellInfo>	<!-- Consume Holy Shroom --> 						<!-- Court of Bey-->
+			<Type>SPELL_FAIRY_CONSUME_HOLY_SHROOM</Type>
+			<Description>TXT_KEY_SPELL_CONSUME_HOLY_SHROOM</Description>
+			<Civilopedia>TXT_KEY_SPELL_CONSUME_HOLY_SHROOM_PEDIA</Civilopedia>
+			<Help>TXT_KEY_SPELL_CONSUME_HOLY_SHROOM_HELP</Help>
+			<CivilizationPrereq>CIVILIZATION_COURTOFFALYN</CivilizationPrereq>
+			<BuildingPrereq>BUILDING_SHROOMCULTIVATION</BuildingPrereq>
+			<TechPrereq>TECH_SMELTING</TechPrereq>
+			<bAllowAI>1</bAllowAI>
+			<bAbility>1</bAbility>
+			<iCasterMinLevel>6</iCasterMinLevel>
+			<bHasCasted>1</bHasCasted>
+			<iDelay>5</iDelay>
+			<PyRequirement>__import__('misrakSpells').reqConsumeHolyShroom(pCaster)</PyRequirement>
+			<PyResult>__import__('misrakSpells').spellConsumeHolyShroom(pCaster)</PyResult>
+			<Effect>EFFECT_SPELL1</Effect>
+			<Sound>AS3D_SPELL_BLESS</Sound>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Other\ConsumeHolyShroom.dds</Button> 
+		</SpellInfo>
+		<SpellInfo>	<!-- Eat Animal --> 								<!-- Aos Ni Sira -->
+			<Type>SPELL_FAIRY_EAT_ANIMAL</Type>
+			<Description>TXT_KEY_SPELL_EAT_ANIMAL</Description>
+			<Civilopedia>TXT_KEY_SPELL_EAT_ANIMAL_PEDIA</Civilopedia>
+			<Help>TXT_KEY_SPELL_EAT_ANIMAL_HELP</Help>
+			<CivilizationPrereq>CIVILIZATION_AOSNISIRA</CivilizationPrereq>
+			<PromotionPrereq1>PROMOTION_SIRA</PromotionPrereq1>
+			<UnitCombatPrereq>UNITCOMBAT_ANIMAL</UnitCombatPrereq>
+			<bAllowAI>0</bAllowAI>
+			<bAbility>1</bAbility>
+			<bHasCasted>1</bHasCasted>
+			<bInCityOnly>1</bInCityOnly>
+			<bSacrificeCaster>1</bSacrificeCaster>
+			<PyResult>__import__('aosnisiraSpells').spellEatAnimal(pCaster)</PyResult>
+			<Effect>EFFECT_SPELL1</Effect>
+			<Sound>AS3D_SPELL_SACRIFICE</Sound>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Other\EatAnimal.dds</Button> 
+		</SpellInfo>
+		<SpellInfo>	<!-- Possess Wolves --> 							<!-- Aos Ni Sira -->
+			<Type>SPELL_FAIRY_POSSESS_WOLVES</Type>
+			<Description>TXT_KEY_SPELL_POSSESS_WOLVES</Description>
+			<CivilizationPrereq>CIVILIZATION_AOSNISIRA</CivilizationPrereq>
+			<ConvertUnitType>UNIT_AOSNISIRA_POSSESSED_WOLF_PACK</ConvertUnitType>
+			<UnitClassPrereq>UNITCLASS_WOLF</UnitClassPrereq>
+			<bAllowAI>1</bAllowAI>
+			<bAbility>1</bAbility>
+			<bHasCasted>1</bHasCasted>
+			<Effect>EFFECT_SPELL1</Effect>
+			<Sound>AS3D_SPELL_DISPEL_MAGIC</Sound>
+			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/Sira_Wolf_Button.dds</Button> 
 		</SpellInfo>
 	</SpellInfos>
 </Civ4SpellInfos>

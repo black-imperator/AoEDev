@@ -148,11 +148,11 @@
 		</BuildingArtInfo>
 		<BuildingArtInfo> <!-- Fairy Bazar -->
 			<Type>ART_DEF_BUILDING_FAIRY_INN</Type>
-			<LSystem>LSYSTEM_1x1</LSystem>
+			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>40.0</fScale>
-			<fInterfaceScale>0.7</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Hope/sfx_epic_healer_crush_1h.nif</NIF>
+			<fScale>1.27</fScale>
+			<fInterfaceScale>0.52</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
 			<KFM/>
 			<Button>Modules\NormalModules\DrackAosNiSira\Art\Buildings\FairyBazar.dds</Button>
 		</BuildingArtInfo>
@@ -265,6 +265,106 @@
 			<NIF>Art/Structures/Buildings/Eldercouncil/Eldercouncil.nif</NIF>
 			<KFM/>
 			<Button>Modules\NormalModules\DrackAosNiSira\Art\Buildings\BeyCouncil.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Palace of Misrak --> 
+			<Type>ART_DEF_BUILDING_PALACE_COURTOFMISRAK</Type> 
+			<LSystem>LSYSTEM_3x3</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>1.3</fScale>
+			<fInterfaceScale>0.4</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Babylonian_Garden/Babylonian_Garden.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Buildings\HighHouseOfMisrak.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Candy Shop --> 
+			<Type>ART_DEF_BUILDING_FAIRY_CANDY_SHOP</Type> 
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.27</fScale>
+			<fInterfaceScale>0.52</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/ArtisansBuildings/Barracks.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Buildings\CandyShop.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Dollhouse --> 
+			<Type>ART_DEF_BUILDING_FAIRY_DOLLHOUSE</Type> 
+			<LSystem>LSYSTEM_2x3</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.9</fScale>
+			<fInterfaceScale>0.7</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Mayan_Ballcourt/Mayan_Ballcourt.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Buildings\DollHouse.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Chaincandy Chateau --> 
+			<Type>ART_DEF_BUILDING_FAIRY_CHAINCANDY_CHATEAU</Type> 
+			<LSystem>LSYSTEM_3x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.2</fScale>
+			<fInterfaceScale>0.7</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Jail/Jail.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Buildings\Chaincandy.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Candy Harbour --> 
+			<Type>ART_DEF_BUILDING_FAIRY_CANDY_HARBOUR</Type> 
+			<LSystem>LSYSTEM_HARBOR</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>1.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Harbor/Harbor.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Buildings\CandyHarbour.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Caramel Cage --> 
+			<Type>ART_DEF_BUILDING_FAIRY_CARAMEL_CAGE</Type> 
+			<LSystem>LSYSTEM_3x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.2</fScale>
+			<fInterfaceScale>0.7</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Jail/Jail.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Buildings\CaramelCage.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Shroom Hall --> 
+			<Type>ART_DEF_BUILDING_FAIRY_SHROOM_HALL</Type> 
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.95</fScale>
+			<fInterfaceScale>1.11</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Theatre/Theatre.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Buildings\ShroomHall.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Shadow Cave --> 
+			<Type>ART_DEF_BUILDING_FAIRY_SHADOW_CAVE</Type> 
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.95</fScale>
+			<fInterfaceScale>1.11</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Theatre/Theatre.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Buildings\ShadowCave.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Godara Temple --> 
+			<Type>ART_DEF_BUILDING_FAIRY_GODARA_TEMPLE</Type> 
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.8</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Temple Empyrean/hut.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Buildings\GodaraTemple.dds</Button> 
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Astra Observatory --> 
+			<Type>ART_DEF_BUILDING_FAIRY_ASTRA_OBSERVATORY</Type> 
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.33</fScale>
+			<fInterfaceScale>0.83</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Observatory/Observatory.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Buildings\AstraObservatory.dds</Button> 
 		</BuildingArtInfo>
 	</BuildingArtInfos>
 </Civ4ArtDefines>

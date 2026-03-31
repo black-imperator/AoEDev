@@ -23,13 +23,50 @@ import os
 import CvPath # path to current assets
 import inspect
 
+def onMisrakConvertSoulsProjectBuilt(self, argsList):
+	'Project Completed'
+	pCity, iProjectType = argsList
+	gc = CyGlobalContext()
+	git = gc.getInfoTypeForString
+	getPlayer = gc.getPlayer
+	iPlayer = pCity.getOwner()
+	pPlayer = getPlayer(iPlayer)
+	
+	# Define the ritual-to-SoulCost mapping
+	ritualCostMap = {
+		git("PROJECT_FAIRY_CONVERT_SOULS1"): {"soulCost": 10},
+		git("PROJECT_FAIRY_CONVERT_SOULS2"): {"soulCost": 25},
+		git("PROJECT_FAIRY_CONVERT_SOULS3"): {"soulCost": 100},
+	}
+	
+	# Check if the ritual is in the mapping
+	if iProjectType not in ritualCostMap:
+		return  # Ritual not recognized, do nothing
+
+	# Get the soul cost associated with the ritual
+	ritualInfo = ritualCostMap[iProjectType]
+	ritualSoulCost = ritualInfo["soulCost"]
+
+	# Check if Player has enough Souls
+	currentSoulsOfPlayer = pPlayer.getCivCounter()
+	if currentSoulsOfPlayer < ritualSoulCost:
+		# Notify the player that they don't have enough souls
+		CyInterface().addMessage(iPlayer, False, 15, CyTranslator().getText("TXT_KEY_PROJECT_FAIRY_CONVERT_SOULS_NOT_ENOUGH_SOULS", (ritualSoulCost, currentSoulsOfPlayer,)), "", 3, "", ColorTypes(7), -1, -1, True, True)
+		return  # Exit if not enough souls
+
+	# Remove Souls from CivCounter
+	pPlayer.changeCivCounter(-ritualSoulCost)
+
+	# Increase Population of city by 1
+	pCity.changePopulation(1)
+
 def onProjectBuilt(self, argsList):
 	'Project Completed'
 	pCity, iProjectType = argsList
 
 	gc			= CyGlobalContext() 
 	git			= gc.getInfoTypeForString
-	getPlayer 	= gc.getPlayer
+	getPlayer	= gc.getPlayer
 	iPlayer		= pCity.getOwner()
 	pPlayer		= getPlayer(iPlayer)
 	
@@ -39,6 +76,18 @@ def onProjectBuilt(self, argsList):
 	projectHouseRakiri	= git("PROJECT_FAIRY_INVITE_HOUSE_RAKIRI")
 	projectHouseWai		= git("PROJECT_FAIRY_INVITE_HOUSE_WAI")
 	projectHouseNairu	= git("PROJECT_FAIRY_INVITE_HOUSE_NAIRU")
+	projectHouseGodara	= git("PROJECT_FAIRY_INVITE_HOUSE_GODARA")
+	projectHouseAstra	= git("PROJECT_FAIRY_INVITE_HOUSE_ASTRA")
+	
+	projectConvertSouls1 = git("PROJECT_FAIRY_CONVERT_SOULS1")
+	projectConvertSouls2 = git("PROJECT_FAIRY_CONVERT_SOULS2")
+	projectConvertSouls3 = git("PROJECT_FAIRY_CONVERT_SOULS3")
+ 
+	projectConvertSouls = [projectConvertSouls1, projectConvertSouls2, projectConvertSouls3]
+  
+	if iProjectType in projectConvertSouls:
+		onMisrakConvertSoulsProjectBuilt(self, argsList)
+		return
   
 	if iProjectType == projectHouseFane:
 		pPlayer.setHasTrait(git("TRAIT_HOUSE_FANE"), True)
@@ -52,4 +101,8 @@ def onProjectBuilt(self, argsList):
 		pPlayer.setHasTrait(git("TRAIT_HOUSE_WAI"), True)
 	elif iProjectType == projectHouseNairu:
 		pPlayer.setHasTrait(git("TRAIT_HOUSE_NAIRU"), True)
+	elif iProjectType == projectHouseGodara:
+		pPlayer.setHasTrait(git("TRAIT_HOUSE_GODARA"), True)
+	elif iProjectType == projectHouseAstra:
+		pPlayer.setHasTrait(git("TRAIT_HOUSE_ASTRA"), True)
 	

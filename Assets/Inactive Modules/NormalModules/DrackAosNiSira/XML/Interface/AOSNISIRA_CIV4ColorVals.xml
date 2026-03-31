@@ -27,5 +27,19 @@
 			<fBlue>0.50</fBlue>
 			<fAlpha>1.00</fAlpha>
 		</ColorVal>
+		<ColorVal>
+			<Type>COLOR_PLAYER_COURTOFMISRAK_MAIN</Type>
+			<fRed>1.00</fRed>
+			<fGreen>0.80</fGreen>
+			<fBlue>0.85</fBlue>
+			<fAlpha>1.00</fAlpha>
+		</ColorVal>
+		<ColorVal>
+			<Type>COLOR_PLAYER_GOLD</Type>
+			<fRed>1.00</fRed>
+			<fGreen>0.84</fGreen>
+			<fBlue>0.00</fBlue>
+			<fAlpha>1.00</fAlpha>
+		</ColorVal>
 	</ColorVals>
 </Civ4ColorVals>

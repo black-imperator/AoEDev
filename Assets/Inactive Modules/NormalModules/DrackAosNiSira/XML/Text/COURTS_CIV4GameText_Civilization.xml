@@ -19,26 +19,27 @@
     <TEXT>
         <Tag>TXT_KEY_CIV_COURTOFFALYN_PEDIA</Tag>
         <English>
-The Fairies live for a long time, hidden in the forests of their world. It was the Goddess Ceridwen who teleported them randomly to Erebus. The Fairies did not know, or with which magic the mighty goddess had done so, yet they were required to adapt to the harsh new environment in which they found themselves. 
+The Fairies live for a long time, hidden in the forests of their world. It was the Goddess Ceridwen who teleported them randomly to Erebus. The Fairies did not know, or with which magic the mighty goddess had done so, yet they were required to adapt to the harsh new environment in which they found themselves.
 
 They formed an Eternal Court to unite all the scattered Fairies and their brethren, the Sira, under one banner and one rule. The Sira denied the invitation and retreated into their forests. The remaining fairies were not able to hold the Eternal Court together for long. Their problems were too varied and their ideas on how to solve them too different. The Eternal Court broke apart, and new Courts formed to adapt to the specific cultures and problems that the fairies faced.
 
 A strong link remained between the different Courts: The Houses. Each House represented an idea, an ideal that the fairies followed. These houses soon fought for power in the different Courts and tried to gain their foot into the High Houses of the Courts.
 
-The Court of Falyn is a very traditional Court that tries to preserve the old way of life of the nature-oriented fairies. Like their Sira Cousins, they built their cities deep into the woods of their new homes, yet they did not deny good infrastructure and a well-organized army like the Sira did. The Fairies of the Court of Falyn listen to the wise words of Mother Lyn and uphold the values of their ancestors. 
+The Court of Falyn is a very traditional Court that tries to preserve the old way of life of the nature-oriented fairies. Like their Sira Cousins, they built their cities deep into the woods of their new homes, yet they did not deny good infrastructure and a well-organized army like the Sira did. The Fairies of the Court of Falyn listen to the wise words of Mother Lyn and uphold the values of their ancestors.
         </English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_COURTOFFALYN_STRATEGY</Tag>
         <English>
-The Court of Falyn is a growth orientated civilization with a strong focus on big cities. Their affinity for Mushrooms allows them to grow to immensive power with time. They are a Court Nation with the Fairy Houses.
+Complexity: Basic
+The secret of our strength is in the shrooms.
 
+The Court of Falyn is a growth orientated civilization with a strong focus on big cities. Their affinity for Mushrooms allows them to grow to immensive power with time. They are a Court Nation with the Fairy Houses.
 [H2]Court System[\H2]
 [ICON_BULLET] Your Leader starts with 1 House Trait.
 [ICON_BULLET] You can have up to 3 House Traits.
 [ICON_BULLET] Via Invite Rituals, you can gain more House Traits. They are locked behind different Technologies.
 [ICON_BULLET] Be careful which Houses you invite and which benefits, units and buildings you require for your strategy.
-
 [H2]Houses[\H2]
 [ICON_BULLET] [LINK=TRAIT_HOUSE_FANE]House Fane[\LINK] focusses on death magic and undead.
 [ICON_BULLET] [LINK=TRAIT_HOUSE_PESNA]House Pesna[\LINK] focusses on Healer Specialists and spreading disease.
@@ -46,6 +47,8 @@ The Court of Falyn is a growth orientated civilization with a strong focus on bi
 [ICON_BULLET] [LINK=TRAIT_HOUSE_RAKIRI]House Rakiri[\LINK] focusses on Siege and Production.
 [ICON_BULLET] [LINK=TRAIT_HOUSE_WAI]House Wai[\LINK] focusses on Raiding and fast attacks.
 [ICON_BULLET] [LINK=TRAIT_HOUSE_NAIRU]House Nairu[\LINK] focusses on Camp Improvements and its ressources.
+[ICON_BULLET] [LINK=TRAIT_HOUSE_GODARA]House Godara[\LINK] focusses on priest specialists.
+[ICON_BULLET] [LINK=TRAIT_HOUSE_ASTRA]House Astra[\LINK] focusses on science.
         </English>
     </TEXT>
     <TEXT>
@@ -63,26 +66,30 @@ The Court of Falyn is a growth orientated civilization with a strong focus on bi
     <TEXT>
         <Tag>TXT_KEY_CIV_COURTOFBEY_PEDIA</Tag>
         <English>
-The Fairies live for a long time, hidden in the forests of their world. It was the Goddess Ceridwen who teleported them randomly to Erebus. The Fairies did not know, or with which magic the mighty goddess had done so, yet they were required to adapt to the harsh new environment in which they found themselves. 
+The Fairies live for a long time, hidden in the forests of their world. It was the Goddess Ceridwen who teleported them randomly to Erebus. The Fairies did not know, or with which magic the mighty goddess had done so, yet they were required to adapt to the harsh new environment in which they found themselves.
 
 They formed an Eternal Court to unite all the scattered Fairies and their brethren, the Sira, under one banner and one rule. The Sira denied the invitation and retreated into their forests. The remaining fairies were not able to hold the Eternal Court together for long. Their problems were too varied and their ideas on how to solve them too different. The Eternal Court broke apart, and new Courts formed to adapt to the specific cultures and problems that the fairies faced.
 
 A strong link remained between the different Courts: The Houses. Each House represented an idea, an ideal that the fairies followed. These houses soon fought for power in the different Courts and tried to gain their foot into the High Houses of the Courts.
 
-The Court of Bey was formed by desert fairies. They understood quickly not only how to survive their new, harsh home, but how to thrive in it. With strong cities, they concentrated on magic and the research of their new world. They are strong in faith, and the court is dominated by powerful priests and intelligent researchers. 
+The Court of Bey was formed by desert fairies. They understood quickly not only how to survive their new, harsh home, but how to thrive in it. With strong cities, they concentrated on magic and the research of their new world. They are strong in faith, and the court is dominated by powerful priests and intelligent researchers.
         </English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_COURTOFBEY_STRATEGY</Tag>
         <English>
-The Court of Bey is a Fairy Court Nation with a strong focus on Specialists, especially Priests, Healers and Scientists. They are a desert nation that benefits from desert tiles.
+Complexity: Standard
+The desert is mercyless, so are we.
 
+The Court of Bey is a Fairy Court Nation with a strong focus on Specialists, especially Priests, Healers and Scientists. They are a desert nation that benefits from desert tiles.
+[ICON_BULLET] Your terrain will slowly become a desert.
+[ICON_BULLET] You have the Beduin Improvement to use deserts better than most other civs.
+[ICON_BULLET] Your Sand Fae (Scout) can plant scrub in desert
 [H2]Court System[\H2]
 [ICON_BULLET] Your Leader starts with 1 House Trait.
 [ICON_BULLET] You can have up to 3 House Traits.
 [ICON_BULLET] Via Invite Rituals, you can gain more House Traits. They are locked behind different Technologies.
 [ICON_BULLET] Be careful which Houses you invite and which benefits, units and buildings you require for your strategy.
-
 [H2]Houses[\H2]
 [ICON_BULLET] [LINK=TRAIT_HOUSE_FANE]House Fane[\LINK] focusses on death magic and undead.
 [ICON_BULLET] [LINK=TRAIT_HOUSE_PESNA]House Pesna[\LINK] focusses on Healer Specialists and spreading disease.
@@ -90,6 +97,8 @@ The Court of Bey is a Fairy Court Nation with a strong focus on Specialists, esp
 [ICON_BULLET] [LINK=TRAIT_HOUSE_RAKIRI]House Rakiri[\LINK] focusses on Siege and Production.
 [ICON_BULLET] [LINK=TRAIT_HOUSE_WAI]House Wai[\LINK] focusses on Raiding and fast attacks.
 [ICON_BULLET] [LINK=TRAIT_HOUSE_NAIRU]House Nairu[\LINK] focusses on Camp Improvements and its ressources.
+[ICON_BULLET] [LINK=TRAIT_HOUSE_GODARA]House Godara[\LINK] focusses on priest specialists.
+[ICON_BULLET] [LINK=TRAIT_HOUSE_ASTRA]House Astra[\LINK] focusses on science.
         </English>
     </TEXT>
     <TEXT>
@@ -103,7 +112,7 @@ The Court of Bey is a Fairy Court Nation with a strong focus on Specialists, esp
     <TEXT>
         <Tag>TXT_KEY_TRAIT_COURT_OF_FALYN_PEDIA</Tag>
         <English>
-"Here, sister. Eat. It will make you stronger." Mother Lyn offered a plate of mushroom soup to the young fairy warrior. The warrior sniffed on the soup and nodded before she drank it down in big gulps. It not only filled her belly, but also brought her strengths. Her heart began beating quicker, her muscles warmed up, and her senses sharpened. Mother Lyn looked with pride at her soldier and saw that she was ready for battle. 
+"Here, sister. Eat. It will make you stronger." Mother Lyn offered a plate of mushroom soup to the young fairy warrior. The warrior sniffed on the soup and nodded before she drank it down in big gulps. It not only filled her belly, but also brought her strengths. Her heart began beating quicker, her muscles warmed up, and her senses sharpened. Mother Lyn looked with pride at her soldier and saw that she was ready for battle.
         </English>
     </TEXT>
     <TEXT>
@@ -121,174 +130,6 @@ The Court of Bey is a Fairy Court Nation with a strong focus on Specialists, esp
     <TEXT>
         <Tag>TXT_KEY_AFFINITY_FALYN_MUSHROOM_STRATEGY</Tag>
         <English>TODO</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_HOUSE_FANE</Tag>
-        <English>House Fane</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_HOUSE_FANE_PEDIA</Tag>
-        <English>TODO</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_HOUSE_FANE_SHORT</Tag>
-        <English>HF</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_HOUSE_PESNA</Tag>
-        <English>House Pesna</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_HOUSE_PESNA_PEDIA</Tag>
-        <English>TODO</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_HOUSE_PESNA_SHORT</Tag>
-        <English>HP</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_HOUSE_DAWAR</Tag>
-        <English>House Dawar</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_HOUSE_DAWAR_PEDIA</Tag>
-        <English>TODO</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_HOUSE_DAWAR_SHORT</Tag>
-        <English>HD</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_HOUSE_RAKIRI</Tag>
-        <English>House Rakiri</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_HOUSE_RAKIRI_PEDIA</Tag>
-        <English>TODO</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_HOUSE_RAKIRI_SHORT</Tag>
-        <English>HR</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_HOUSE_WAI</Tag>
-        <English>House Wai</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_HOUSE_WAI_PEDIA</Tag>
-        <English>TODO</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_HOUSE_WAI_SHORT</Tag>
-        <English>HW</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_HOUSE_NAIRU</Tag>
-        <English>House Nairu</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_HOUSE_NAIRU_PEDIA</Tag>
-        <English>TODO</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_HOUSE_NAIRU_SHORT</Tag>
-        <English>HN</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_FANE</Tag>
-        <English>Invite House Fane</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_FANE_PEDIA</Tag>
-        <English>TODO</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_FANE_STRATEGY</Tag>
-        <English>TODO</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_DAWAR</Tag>
-        <English>Invite House Dawar</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_DAWAR_PEDIA</Tag>
-        <English>TODO</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_DAWAR_STRATEGY</Tag>
-        <English>TODO</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_PESNA</Tag>
-        <English>Invite House Pesna</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_PESNA_PEDIA</Tag>
-        <English>TODO</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_PESNA_STRATEGY</Tag>
-        <English>TODO</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_RAKIRI</Tag>
-        <English>Invite House Rakiri</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_RAKIRI_PEDIA</Tag>
-        <English>TODO</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_RAKIRI_STRATEGY</Tag>
-        <English>TODO</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_WAI</Tag>
-        <English>Invite House Wai</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_WAI_PEDIA</Tag>
-        <English>TODO</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_WAI_STRATEGY</Tag>
-        <English>TODO</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_NAIRU</Tag>
-        <English>Invite House Nairu</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_NAIRU_PEDIA</Tag>
-        <English>TODO</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_NAIRU_STRATEGY</Tag>
-        <English>TODO</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_FANE_HELP</Tag>
-        <English>[ICON_BULLET] Invite House Fane to your court</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_DAWAR_HELP</Tag>
-        <English>[ICON_BULLET] Invite House Dawar to your court</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_PESNA_HELP</Tag>
-        <English>[ICON_BULLET] Invite House Pesna to your court</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_RAKIRI_HELP</Tag>
-        <English>[ICON_BULLET] Invite House Rakiri to your court</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_WAI_HELP</Tag>
-        <English>[ICON_BULLET] Invite House Wai to your court</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PROJECT_FAIRY_INVITE_HOUSE_NAIRU_HELP</Tag>
-        <English>[ICON_BULLET] Invite House Nairu to your court</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_COURT_OF_BEY</Tag>
@@ -333,5 +174,228 @@ The Court of Bey is a Fairy Court Nation with a strong focus on Specialists, esp
     <TEXT>
         <Tag>TXT_KEY_TRAIT_FAIRY_TRACKER_SHORT</Tag>
         <English>Tra</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_COURTOFMISRAK_DESC</Tag>
+        <English>Court of Misrak</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_COURTOFMISRAK_SHORT_DESC</Tag>
+        <English>Court of Misrak</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_COURTOFMISRAK_ADJECTIVE</Tag>
+        <English>Misrak</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_COURTOFMISRAK_PEDIA</Tag>
+        <English>
+After the Eternal Court dissolved, the Fairies of Misrak went on a different path than their sisters and cousins. Their idea of fairy supremacy was tested again and again in this strange, new world. The culture of Misrak had to adapt to its new home. Luckily for them, a vampire of Calabim was taken prisoner after a harsh battle. The fairies had little mercy for an enemy, yet from this one, they learned so much. Layer by layer, they dissolved the vampire with magic, taking notes on the exact patterns of magic that were woven into its existence. They discovered the unity of souls inside of him and learned from it. 
+
+The Fairies of Misrak learned about how to pull out the soul of others and how to strengthen their own selves with it. They learned that their bodies required no food, but only pure magic, after merging with enough souls, and they learned how to breathe in new life with the help of captured souls, creating new generations of fairies that were born unnaturally by pure magic. So the fairies went out and began to capture lesser species and take them as slaves, so they could breed them and harvest their souls. From the outside, the Fairies of Misrak look adorable, cute, and sweet. Their love for pink colors and candies let them appear harmless, yet those who stepped into their lands soon learned that they were anything but nice.
+</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_COURTOFMISRAK_STRATEGY</Tag>
+        <English>
+Complexity: Advanced
+Come, let me give you a hug. I am sure your soul tastes wonderful!
+
+The Court of Misrak are Soul-Consuming Fairies that do not require food. They focus around Slaves, Souls as a currency and strong rogue units.. They are a Court Nation with the Fairy Houses.
+[H2]Soul System[\H2]
+[ICON_BULLET] Souls are a currency at the top left of your screen. You can gain them through certain buildings, by having slaves in your cities and by killing living units.
+[ICON_BULLET] Your Cities grow with the [LINK=PROJECT_FAIRY_CONVERT_SOULS1]Convert Souls Ritual[\LINK]. The higher levels require more souls.
+[ICON_BULLET] You Receive 100 Souls at game start.
+[ICON_BULLET] You have no Settlers. Instead, your Candyfae can found cities. This costs you 50 Souls.
+[H2]Court System[\H2]
+[ICON_BULLET] Your Leader starts with 1 House Trait.
+[ICON_BULLET] You can have up to 3 House Traits.
+[ICON_BULLET] Via Invite Rituals, you can gain more House Traits. They are locked behind different Technologies.
+[ICON_BULLET] Be careful which Houses you invite and which benefits, units and buildings you require for your strategy.
+[H2]Houses[\H2]
+[ICON_BULLET] [LINK=TRAIT_HOUSE_FANE]House Fane[\LINK] focusses on death magic and undead.
+[ICON_BULLET] [LINK=TRAIT_HOUSE_PESNA]House Pesna[\LINK] focusses on Healer Specialists and spreading disease.
+[ICON_BULLET] [LINK=TRAIT_HOUSE_DAWAR]House Dawar[\LINK] focusses on Mine improvements and its ressources.
+[ICON_BULLET] [LINK=TRAIT_HOUSE_RAKIRI]House Rakiri[\LINK] focusses on Siege and Production.
+[ICON_BULLET] [LINK=TRAIT_HOUSE_WAI]House Wai[\LINK] focusses on Raiding and fast attacks.
+[ICON_BULLET] [LINK=TRAIT_HOUSE_GODARA]House Godara[\LINK] focusses on priest specialists.
+[ICON_BULLET] [LINK=TRAIT_HOUSE_ASTRA]House Astra[\LINK] focusses on science.
+        </English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_COURT_OF_MISRAK</Tag>
+        <English>Court of Misrak</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_COURT_OF_MISRAK_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_COURT_OF_MISRAK_SHORT</Tag>
+        <English>CoM</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_CONVERT_SOULS_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_CONVERT_SOULS_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_CONVERT_SOULS1</Tag>
+        <English>Convert Souls (Minor)</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_CONVERT_SOULS_HELP1</Tag>
+        <English>[ICON_BULLET] Convert 10 Souls to 1 Population</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_CONVERT_SOULS2</Tag>
+        <English>Convert Souls (Standard)</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_CONVERT_SOULS_HELP2</Tag>
+        <English>[ICON_BULLET] Convert 25 Souls to 1 Population</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_CONVERT_SOULS3</Tag>
+        <English>Convert Souls (Major)</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_CONVERT_SOULS_HELP3</Tag>
+        <English>[ICON_BULLET] Convert 100 Souls to 1 Population</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_CONVERT_SOULS_NOT_ENOUGH_SOULS</Tag>
+        <English>You don't have enough souls to complete the Soul Conversion. Required: %D1, Available: %D2. Conversion of souls aborted.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FAIRY_On_TURN_NEW_SOULS</Tag>
+        <English>We collected %D1 new Souls from Cities.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FAIRY_ON_KILLED_NEW_SOULS</Tag>
+        <English>We captured %D1 new Souls from the killed enemy.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MESSAGE_GREAT_SOUL_SIPHON_LOSS</Tag>
+        <English>Our City lost %D1 population to the Great Soul Siphon by Misrak.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MESSAGE_GREAT_SOUL_SIPHON_GAIN</Tag>
+        <English>We gained %D1 souls thanks to the Great Soul Siphon.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TEXT_SPELL_FAIRY_GREAT_SOUL_SIPHON</Tag>
+        <English>Great Soul Siphon</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TEXT_SPELL_FAIRY_GREAT_SOUL_SIPHON_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TEXT_SPELL_FAIRY_GREAT_SOUL_SIPHON_STRATEGY</Tag>
+        <English>The Grat Soul Siphon takes effects on all cities of the map that are not in your team and have more than 3 population. It reduces their population by 2. You gain 100 Souls per affected City, capped at 5000. That means that when there are 50 affected cities, you reached the cap. It is your decision if you want to use this spell as soon as you gain Poisons to give yourself a nice soul income, or wait till you can gain capped souls of 5000.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TEXT_SPELL_FAIRY_GREAT_SOUL_SIPHON_HELP</Tag>
+        <English>[ICON_BULLET]Steal Souls from other civilizations Cities</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_FAIRY_WELCOME_GUEST</Tag>
+        <English>Welcome Guest</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_FAIRY_WELCOME_GUEST_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_FAIRY_SOUL_HUNTER</Tag>
+        <English>Soul Hunter</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_FAIRY_SOUL_HUNTER_PEDIA</Tag>
+        <English>TXT_KEY_TRAIT_FAIRY_HIGH_CUDDLER_HELP</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_FAIRY_SOUL_HUNTER_SHORT</Tag>
+        <English>SH</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_FAIRY_SOUL_HUNTER_HELP</Tag>
+        <English>[NEWLINE][ICON_BULLET]Killed Units give more Souls</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_FAIRY_HIGH_CUDDLER</Tag>
+        <English>High Cuddler</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_FAIRY_HIGH_CUDDLER_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_FAIRY_HIGH_CUDDLER_SHORT</Tag>
+        <English>HC</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_FAIRY_HIGH_CUDDLER_HELP</Tag>
+        <English>[NEWLINE][ICON_BULLET]Settled Slaves give more Souls</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_MATERIALIZE_CITY</Tag>
+        <English>Materialize City</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_MATERIALIZE_CITY_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_MATERIALIZE_CITY_HELP</Tag>
+        <English>[ICON_BULLET]Create a new City[NEWLINE][ICON_BULLET]Costs 50 Souls</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_PLANT_SCRUB</Tag>
+        <English>Plant Scrub</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_PLANT_SCRUB_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_PLANT_SCRUB_HELP</Tag>
+        <English>[ICON_BULLET]Plant Scrub into Desert</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TEXT_SPELL_FAIRY_MUSHROOM_ACCELLERATION</Tag>
+        <English>Mushroom Acceleration</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TEXT_SPELL_FAIRY_MUSHROOM_ACCELLERATION_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TEXT_SPELL_FAIRY_MUSHROOM_ACCELLERATION_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TEXT_SPELL_FAIRY_MUSHROOM_ACCELLERATION_HELP</Tag>
+        <English>[ICON_BULLET]Spawns with a 25% chance Mushrooms on Mines, Farms and Shroom Farms</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TEXT_SPELL_FAIRY_FAE_DESERTIFICATION</Tag>
+        <English>Fae Desertification</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TEXT_SPELL_FAIRY_FAE_DESERTIFICATION_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TEXT_SPELL_FAIRY_FAE_DESERTIFICATION_STRATEGY</Tag>
+        <English>Turns your whole territory into desert. Tiles that are flatland and not attached to a river have a 15% chance to become an Oasis. This can be used early to speed up your progress and give you a good start territory with a bit of luck, or it can be used later as it also transform hell tiles to desert.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TEXT_SPELL_FAIRY_FAE_DESERTIFICATION_HELP</Tag>
+        <English>[ICON_BULLET]Turn your territories into desert[NEWLINE][ICON_BULLET]Has a chance to spawn OASIS</English>
     </TEXT>
 </Civ4GameText>

@@ -82,7 +82,6 @@ def onCityDoTurn(self, argsList):
  
 	# Promotion
 	pSira				= git("PROMOTION_SIRA")
-	pTame				= git("PROMOTION_TAME")
 	pFree				= git("PROMOTION_FREE_UNIT")
  
 	# Calculate Spawn Chance
@@ -123,8 +122,7 @@ def onCityDoTurn(self, argsList):
 
 		newUnit         = pPlayer.initUnit(sAnimal, pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_NORTH)
 		newUnit.setHasPromotion(pSira, True)
-		newUnit.setHasPromotion(pTame, True)
 		newUnit.setHasPromotion(pFree, True)
-		CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_MESSAGE_AOSSINIRA_ANIMAL_SPAWN",()),'AS2D_DISCOVERBONUS',1,gc.getUnitInfo(newUnit.getUnitType()).getButton(),ColorTypes(8),pCity.getX(),pCity.getY(),True,True)
+		CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_MESSAGE_AOSSINIRA_ANIMAL_SPAWN",()),'AS2D_DISCOVERBONUS',3,gc.getUnitInfo(newUnit.getUnitType()).getButton(),ColorTypes(8),pCity.getX(),pCity.getY(),True,True)
 	
 	

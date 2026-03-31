@@ -183,7 +183,7 @@
 				<FeatureYieldChange>
 					<FeatureType>FEATURE_FOREST</FeatureType>
 					<FeatureYields>
-						<iYield>1</iYield>
+						<iYield>0</iYield>
 						<iYield>1</iYield>
 						<iYield>1</iYield>
 					</FeatureYields>
@@ -191,7 +191,7 @@
 				<FeatureYieldChange>
 					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
 					<FeatureYields>
-						<iYield>1</iYield>
+						<iYield>0</iYield>
 						<iYield>1</iYield>
 						<iYield>1</iYield>
 					</FeatureYields>
@@ -277,11 +277,31 @@
 				</SpecialistHappinessChange>
 			</SpecialistHappinessChanges>
         </TraitInfo>
+		<TraitInfo> <!-- Court of Misrak -->
+            <Type>TRAIT_COURT_OF_MISRAK</Type>
+			<TraitClass>TRAITCLASS_CIVILIZATION</TraitClass>
+			<Description>TXT_KEY_TRAIT_COURT_OF_MISRAK</Description>
+			<Civilopedia>TXT_KEY_TRAIT_COURT_OF_MISRAK_PEDIA</Civilopedia>
+			<ShortDescription>TXT_KEY_TRAIT_COURT_OF_MISRAK_SHORT</ShortDescription>
+			<bSelectable>0</bSelectable>
+			<bIgnoreFood>1</bIgnoreFood>
+			<SpecialistCommerceChanges>
+				<SpecialistCommerceChange>
+					<SpecialistType>SPECIALIST_SLAVE</SpecialistType>
+					<CommerceChanges>
+						<iCommerce>0</iCommerce>
+						<iCommerce>-1</iCommerce>
+						<iCommerce>0</iCommerce>
+					</CommerceChanges>
+				</SpecialistCommerceChange>
+			</SpecialistCommerceChanges>
+        </TraitInfo>
 		<TraitInfo> <!-- House Fane -->
             <Type>TRAIT_HOUSE_FANE</Type>
 			<TraitClass>TRAITCLASS_FAIRY_HOUSE</TraitClass>
 			<Description>TXT_KEY_TRAIT_HOUSE_FANE</Description>
 			<Civilopedia>TXT_KEY_TRAIT_HOUSE_FANE_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_TRAIT_HOUSE_FANE_STRATEGY</Strategy>
 			<ShortDescription>TXT_KEY_TRAIT_HOUSE_FANE_SHORT</ShortDescription>
 			<bSelectable>0</bSelectable>
 			<FreeBonuses>
@@ -308,6 +328,7 @@
 			<TraitClass>TRAITCLASS_FAIRY_HOUSE</TraitClass>
 			<Description>TXT_KEY_TRAIT_HOUSE_PESNA</Description>
 			<Civilopedia>TXT_KEY_TRAIT_HOUSE_PESNA_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_TRAIT_HOUSE_PESNA_STRATEGY</Strategy>
 			<ShortDescription>TXT_KEY_TRAIT_HOUSE_PESNA_SHORT</ShortDescription>
 			<bSelectable>0</bSelectable>
 			<iHealth>-2</iHealth>
@@ -339,6 +360,7 @@
 			<TraitClass>TRAITCLASS_FAIRY_HOUSE</TraitClass>
 			<Description>TXT_KEY_TRAIT_HOUSE_DAWAR</Description>
 			<Civilopedia>TXT_KEY_TRAIT_HOUSE_DAWAR_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_TRAIT_HOUSE_DAWAR_STRATEGY</Strategy>
 			<ShortDescription>TXT_KEY_TRAIT_HOUSE_DAWAR_SHORT</ShortDescription>
 			<bSelectable>0</bSelectable>
 			<ImprovementYieldChanges>
@@ -395,6 +417,7 @@
 			<TraitClass>TRAITCLASS_FAIRY_HOUSE</TraitClass>
 			<Description>TXT_KEY_TRAIT_HOUSE_RAKIRI</Description>
 			<Civilopedia>TXT_KEY_TRAIT_HOUSE_RAKIRI_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_TRAIT_HOUSE_RAKIRI_STRATEGY</Strategy>
 			<ShortDescription>TXT_KEY_TRAIT_HOUSE_RAKIRI_SHORT</ShortDescription>
 			<bSelectable>0</bSelectable>
 			<ExtraUnitClasses>
@@ -414,6 +437,7 @@
 			<TraitClass>TRAITCLASS_FAIRY_HOUSE</TraitClass>
 			<Description>TXT_KEY_TRAIT_HOUSE_WAI</Description>
 			<Civilopedia>TXT_KEY_TRAIT_HOUSE_WAI_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_TRAIT_HOUSE_WAI_STRATEGY</Strategy>
 			<ShortDescription>TXT_KEY_TRAIT_HOUSE_WAI_SHORT</ShortDescription>
 			<bSelectable>0</bSelectable>
 			<ExtraBuildingClasses>
@@ -452,6 +476,7 @@
 			<TraitClass>TRAITCLASS_FAIRY_HOUSE</TraitClass>
 			<Description>TXT_KEY_TRAIT_HOUSE_NAIRU</Description>
 			<Civilopedia>TXT_KEY_TRAIT_HOUSE_NAIRU_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_TRAIT_HOUSE_NAIRU_STRATEGY</Strategy>
 			<ShortDescription>TXT_KEY_TRAIT_HOUSE_NAIRU_SHORT</ShortDescription>
 			<bSelectable>0</bSelectable>
 			<ExtraBuildingClasses>
@@ -470,6 +495,56 @@
 					</ImprovementYields>
 				</ImprovementYieldChange>
 			</ImprovementYieldChanges>
+        </TraitInfo>
+		<TraitInfo> <!-- House Godara -->
+            <Type>TRAIT_HOUSE_GODARA</Type>
+			<TraitClass>TRAITCLASS_FAIRY_HOUSE</TraitClass>
+			<Description>TXT_KEY_TRAIT_HOUSE_GODARA</Description>
+			<Civilopedia>TXT_KEY_TRAIT_HOUSE_GODARA_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_TRAIT_HOUSE_GODARA_STRATEGY</Strategy>
+			<ShortDescription>TXT_KEY_TRAIT_HOUSE_GODARA_SHORT</ShortDescription>
+			<bSelectable>0</bSelectable>
+			<ExtraBuildingClasses>
+				<ExtraBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_FAIRY_GODARA_TEMPLE</BuildingClassType>
+					<BuildingType>BUILDING_FAIRY_GODARA_TEMPLE</BuildingType>
+				</ExtraBuildingClass>
+			</ExtraBuildingClasses>
+			<SpecialistYieldChanges>
+				<SpecialistYieldChange>
+					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+					</YieldChanges>
+				</SpecialistYieldChange>
+			</SpecialistYieldChanges>
+        </TraitInfo>
+		<TraitInfo> <!-- House Astra -->
+            <Type>TRAIT_HOUSE_ASTRA</Type>
+			<TraitClass>TRAITCLASS_FAIRY_HOUSE</TraitClass>
+			<Description>TXT_KEY_TRAIT_HOUSE_ASTRA</Description>
+			<Civilopedia>TXT_KEY_TRAIT_HOUSE_ASTRA_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_TRAIT_HOUSE_ASTRA_STRATEGY</Strategy>
+			<ShortDescription>TXT_KEY_TRAIT_HOUSE_ASTRA_SHORT</ShortDescription>
+			<bSelectable>0</bSelectable>
+			<ExtraBuildingClasses>
+				<ExtraBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_FAIRY_ASTRA_OBSERVATORY</BuildingClassType>
+					<BuildingType>BUILDING_FAIRY_ASTRA_OBSERVATORY</BuildingType>
+				</ExtraBuildingClass>
+			</ExtraBuildingClasses>
+			<SpecialistCommerceChanges>
+				<SpecialistCommerceChange>
+					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+					<CommerceChanges>
+						<iCommerce>0</iCommerce>
+						<iCommerce>1</iCommerce>
+						<iCommerce>0</iCommerce>
+					</CommerceChanges>
+				</SpecialistCommerceChange>
+			</SpecialistCommerceChanges>
         </TraitInfo>
 		<TraitInfo> <!-- Archhuntress -->
             <Type>TRAIT_FAIRY_ARCH_HUNTRESS</Type>
@@ -523,6 +598,50 @@
             <FreePromotionUnitCombats>
 				<FreePromotionUnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+			</FreePromotionUnitCombats>
+        </TraitInfo>
+		<TraitInfo> <!-- High Cuddler -->
+            <Type>TRAIT_FAIRY_HIGH_CUDDLER</Type>
+			<TraitClass>TRAITCLASS_PERSONALITY</TraitClass>
+			<Description>TXT_KEY_TRAIT_FAIRY_HIGH_CUDDLER</Description>
+			<Civilopedia>TXT_KEY_TRAIT_FAIRY_HIGH_CUDDLER_PEDIA</Civilopedia>
+			<ShortDescription>TXT_KEY_TRAIT_FAIRY_HIGH_CUDDLER_SHORT</ShortDescription>
+			<Help>TXT_KEY_TRAIT_FAIRY_HIGH_CUDDLER_HELP</Help>
+			<bSelectable>0</bSelectable>
+			<SpecialistHappinessChanges>
+				<SpecialistHappinessChange>
+					<SpecialistType>SPECIALIST_SLAVE</SpecialistType>
+					<iHappiness>1</iHappiness>
+				</SpecialistHappinessChange>
+			</SpecialistHappinessChanges>
+        </TraitInfo>
+		<TraitInfo> <!-- Soul Hunter -->
+            <Type>TRAIT_FAIRY_SOUL_HUNTER</Type>
+			<TraitClass>TRAITCLASS_PERSONALITY</TraitClass>
+			<Description>TXT_KEY_TRAIT_FAIRY_SOUL_HUNTER</Description>
+			<Civilopedia>TXT_KEY_TRAIT_FAIRY_SOUL_HUNTER_PEDIA</Civilopedia>
+			<ShortDescription>TXT_KEY_TRAIT_FAIRY_SOUL_HUNTER_SHORT</ShortDescription>
+			<Help>TXT_KEY_TRAIT_FAIRY_SOUL_HUNTER_HELP</Help>
+			<bSelectable>0</bSelectable>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_CANNIBALIZE</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_BATTLEFIELD_TACTICS1</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
+			</FreePromotions>
+            <FreePromotionUnitCombats>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
 					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
 				</FreePromotionUnitCombat>
 				<FreePromotionUnitCombat>

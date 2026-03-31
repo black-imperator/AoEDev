@@ -8,7 +8,7 @@ DrackAosNiSira
 ;Note: it have to be number, so only numberic characters and none or one period
 ;note: one line
 [version]
-1.5
+2.0
 ;
 ;
 ;RifE version - version of RifE for which is this module tested, checked, developed, etc
@@ -36,3 +36,4 @@ Adds several new Fairy Themed Civilizations
 Adds the new nature orientated civilization of AosNiSira
 Adds the new mushroom orientated Court civilization of Falyn
 Adds the new desert orientated Court civilization of Bey
+Adds the new soul fallow orientated Court civilization of Misrak

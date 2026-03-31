@@ -143,12 +143,12 @@
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.05</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<!--<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>-->
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop />
 				<AudioRunTypeEnd />
 			</AudioRunSounds>
-			<!--<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>-->
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>	<!-- Priest 2 -->
 			<Type>ART_DEF_UNIT_AOSNISIRA_PRIEST2</Type>
@@ -167,12 +167,12 @@
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.05</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<!--<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>-->
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop />
 				<AudioRunTypeEnd />
 			</AudioRunSounds>
-			<!--<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>-->
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>	<!-- Tree Singer (Worker) -->
 			<Type>ART_DEF_UNIT_AOSNISIRA_WORKER</Type>
@@ -191,12 +191,12 @@
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.05</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<!--<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>-->
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop />
 				<AudioRunTypeEnd />
 			</AudioRunSounds>
-			<!--<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>-->
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>	<!-- ARCHER Longbow-->
 			<Type>ART_DEF_UNIT_AOSNISIRA_ARCHER</Type>
@@ -215,12 +215,12 @@
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<!--<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>-->
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop />
 				<AudioRunTypeEnd />
 			</AudioRunSounds>
-			<!--<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>-->
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>	<!-- Naval -->
 			<Type>ART_DEF_UNIT_AOSNISIRA_NAVAL</Type>
@@ -273,12 +273,12 @@
 			<fBattleDistance>0.20</fBattleDistance>
 			<fRangedDeathTime>0.28</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<!--<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>-->
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop />
 				<AudioRunTypeEnd />
 			</AudioRunSounds>
-			<!--<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>-->
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>	<!-- Mage -->
 			<Type>ART_DEF_UNIT_AOSNISIRA_MAGE</Type>
@@ -297,12 +297,12 @@
 			<fBattleDistance>0.20</fBattleDistance>
 			<fRangedDeathTime>0.28</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<!--<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>-->
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop />
 				<AudioRunTypeEnd />
 			</AudioRunSounds>
-			<!--<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>-->
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>	<!-- Archmage -->
 			<Type>ART_DEF_UNIT_AOSNISIRA_ARCHMAGE</Type>
@@ -321,12 +321,12 @@
 			<fBattleDistance>0.20</fBattleDistance>
 			<fRangedDeathTime>0.28</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<!--<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>-->
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop />
 				<AudioRunTypeEnd />
 			</AudioRunSounds>
-			<!--<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>-->
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
 		<UnitArtInfo> 	<!-- Druid -->
 			<Type>ART_DEF_UNIT_AOSNISIRA_DRUID</Type>
@@ -345,12 +345,12 @@
 			<fBattleDistance>0.20</fBattleDistance>
 			<fRangedDeathTime>0.28</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<!--<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>-->
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop />
 				<AudioRunTypeEnd />
 			</AudioRunSounds>
-			<!--<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>-->
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
 		<UnitArtInfo> 	<!-- BEASTMASTER -->
 			<Type>ART_DEF_UNIT_SIRA_BEASTMASTER</Type>
@@ -369,12 +369,12 @@
 			<fBattleDistance>0.20</fBattleDistance>
 			<fRangedDeathTime>0.28</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
-			<!--<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>-->
+			<TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop />
 				<AudioRunTypeEnd />
 			</AudioRunSounds>
-			<!--<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>-->
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
 		</UnitArtInfo>
 	</UnitArtInfos>
 </Civ4ArtDefines>

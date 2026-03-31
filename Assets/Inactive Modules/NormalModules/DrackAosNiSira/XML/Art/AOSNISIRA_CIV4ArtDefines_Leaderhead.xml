@@ -110,5 +110,37 @@
 			<NoShaderNIF/>
 			<BackgroundKFM/>
 		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>		<!-- Kissania Misaii -->		<!-- Court of Misrak -->
+			<Type>ART_DEF_LEADER_FAIRY_KISSANIA</Type> 
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Leader\KissaniaButton.dds</Button>
+			<NIF>Modules\NormalModules\DrackAosNiSira\Art\Leader\Kissania.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>		<!-- Marikya the Adorable -->	<!-- Court of Misrak -->
+			<Type>ART_DEF_LEADER_FAIRY_MARIKYA</Type> 
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Leader\MarikyaButton.dds</Button>
+			<NIF>Modules\NormalModules\DrackAosNiSira\Art\Leader\Marikya.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>		<!-- Laila the Playful -->		<!-- Court of Misrak -->
+			<Type>ART_DEF_LEADER_FAIRY_LAILA</Type> 
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Leader\LailaButton.dds</Button>
+			<NIF>Modules\NormalModules\DrackAosNiSira\Art\Leader\Laila.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>		<!-- Sister Aramai -->			<!-- Court of Misrak -->
+			<Type>ART_DEF_LEADER_FAIRY_ARAMAI</Type> 
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Leader\AramaiButton.dds</Button>
+			<NIF>Modules\NormalModules\DrackAosNiSira\Art\Leader\Aramai.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
 	</LeaderheadArtInfos>
 </Civ4ArtDefines>

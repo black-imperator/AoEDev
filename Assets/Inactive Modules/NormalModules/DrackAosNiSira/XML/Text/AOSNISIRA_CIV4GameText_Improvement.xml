@@ -40,5 +40,12 @@
         <Tag>TXT_KEY_BUILD_TREE_ROOT</Tag>
         <English>Plant Tree Root</English>
     </TEXT>
-    
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_FAIRY_SHROOM_FARM</Tag>
+        <English>Shroom Farm</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_FAIRY_SHROOM_FARM_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
 </Civ4GameText>
