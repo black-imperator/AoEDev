@@ -5609,6 +5609,7 @@
 			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
 			<bHasCasted>1</bHasCasted>
 			<iCasterMinLevel>4</iCasterMinLevel>
+			<bBuffCasterOnly>1</bBuffCasterOnly>
 			<AddPromotions>
 				<AddPromotion>PROMOTION_AMICUS_COMPANION</AddPromotion>
 			</AddPromotions>

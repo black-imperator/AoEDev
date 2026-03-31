@@ -1226,6 +1226,10 @@
 					<BuildingType>NONE</BuildingType>
 				</Building>
 				<Building>
+					<BuildingClassType>BUILDINGCLASS_MAGE_GUILD</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
+				<Building>
 					<BuildingClassType>BUILDINGCLASS_CRIME_GANGS</BuildingClassType>
 					<BuildingType>BUILDING_CRIME_TRIBAL_DISSENT</BuildingType>
 				</Building>

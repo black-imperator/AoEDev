@@ -15098,6 +15098,10 @@
 					<PromotionType>PROMOTION_CHISLEV_SLEEPING</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_FREE_UNIT</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
 			</FreePromotions>
 			<UnitMeshGroups>
 				<iGroupSize>3</iGroupSize>
@@ -15472,7 +15476,6 @@
 				<UnitClassUpgradeType>UNITCLASS_SPEARMAN</UnitClassUpgradeType>
 				<UnitClassUpgradeType>UNITCLASS_HUNTER</UnitClassUpgradeType>
 				<UnitClassUpgradeType>UNITCLASS_HORSEMAN</UnitClassUpgradeType>
-				<UnitClassUpgradeType>UNITCLASS_ADEPT</UnitClassUpgradeType>
 			</UnitClassUpgrades>
 			<UnitAIs>
 				<UnitAI>

@@ -35253,7 +35253,7 @@
 			<iSlaveGenerationChance>10</iSlaveGenerationChance>
 			<bPrereqAliveCapture>1</bPrereqAliveCapture>
 			<CaptureUnitClass>UNITCLASS_WARRIOR</CaptureUnitClass>
-			<iUpgradeDiscount>35</iUpgradeDiscount>
+			<iUpgradeDiscount>10</iUpgradeDiscount>
 			<NotCapturedUnitCombats>
 				<NotCapturedUnitCombat>
 					<NotCapturedUnitCombatType>UNITCOMBAT_ANIMAL</NotCapturedUnitCombatType>
@@ -41872,11 +41872,50 @@
 			<Civilopedia>TXT_KEY_PROMOTION_AMICUS_COMPANION_PEDIA</Civilopedia>
 			<iAsset>10</iAsset>
 			<bNoXP>1</bNoXP>
+			<iMinLevel>-1</iMinLevel>
 					<Button>Art/Interface/Buttons/promotions/companions/amicus.dds</Button>
 			<ExtraArtType>ART_DEF_UNIT_AMICUS</ExtraArtType>
 				<fFreeXPCap>50</fFreeXPCap>
 			<iNoBadExplore>10</iNoBadExplore>
 			<iFreeXPPerTurn>0.5</iFreeXPPerTurn>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ANIMAL</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_BEAST</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Appeleur Companion -->
 			<Type>PROMOTION_APPELEUR_COMPANION</Type>
