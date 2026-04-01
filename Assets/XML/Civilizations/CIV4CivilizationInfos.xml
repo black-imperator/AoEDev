@@ -1182,6 +1182,10 @@
 					<BuildingType>BUILDING_CLAN_STRUCTURE_LODGE</BuildingType>
 				</Building>
 				<Building>
+					<BuildingClassType>BUILDINGCLASS_CLAN_STRUCTURE_LODGE_INFLUENCE</BuildingClassType>
+					<BuildingType>BUILDING_CLAN_STRUCTURE_LODGE_INFLUENCE</BuildingType>
+				</Building>
+				<Building>
 					<BuildingClassType>BUILDINGCLASS_CLAN_STRUCTURE_COUNCIL</BuildingClassType>
 					<BuildingType>BUILDING_CLAN_STRUCTURE_COUNCIL</BuildingType>
 				</Building>

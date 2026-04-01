@@ -646,6 +646,14 @@ The Council is further built out from the Lodge, a network of structures and emb
 		<Spanish>Clan Lodge</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CLAN_STRUCTURE_LODGE_INFLUENCE</Tag>
+		<English>Clan Lodge (Influence)</English>
+		<French>Clan Lodge (Influence)</French>
+		<German>Clan Lodge (Influence)</German>
+		<Italian>Clan Lodge (Influence)</Italian>
+		<Spanish>Clan Lodge (Influence)</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_CLAN_STRUCTURE_COUNCIL</Tag>
 		<English>Clan Council</English>
 		<French>Clan Council</French>

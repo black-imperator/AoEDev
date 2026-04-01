@@ -10000,6 +10000,30 @@
 			</TerrainMakesValids>
 			<BonusTypeStructs>
 				<BonusTypeStruct>
+					<BonusType>BONUS_HORSE</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>2</iYieldChange>
+						<iYieldChange>1</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+				<BonusTypeStruct>
+					<BonusType>BONUS_HYAPON</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>2</iYieldChange>
+						<iYieldChange>1</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+				<BonusTypeStruct>
 					<BonusType>BONUS_DEER</BonusType>
 					<bBonusMakesValid>1</bBonusMakesValid>
 					<bBonusTrade>1</bBonusTrade>
@@ -10072,41 +10096,6 @@
 					</YieldChanges>
 				</BonusTypeStruct>
 				<BonusTypeStruct>
-					<BonusType>BONUS_CAMEL</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>3000</iDiscoverRand>
-					<iSpreadRand>0</iSpreadRand>
-				</BonusTypeStruct>
-				<BonusTypeStruct>
-					<BonusType>BONUS_COW</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>3000</iDiscoverRand>
-					<iSpreadRand>0</iSpreadRand>
-				</BonusTypeStruct>
-				<BonusTypeStruct>
-					<BonusType>BONUS_HORSE</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>3000</iDiscoverRand>
-					<iSpreadRand>0</iSpreadRand>
-				</BonusTypeStruct>
-				<BonusTypeStruct>
-					<BonusType>BONUS_PIG</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>3000</iDiscoverRand>
-					<iSpreadRand>0</iSpreadRand>
-				</BonusTypeStruct>
-				<BonusTypeStruct>
-					<BonusType>BONUS_SHEEP</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>3000</iDiscoverRand>
-					<iSpreadRand>0</iSpreadRand>
-				</BonusTypeStruct>
-				<BonusTypeStruct>
 					<BonusType>BONUS_CORN</BonusType>
 					<bBonusMakesValid>1</bBonusMakesValid>
 					<bBonusTrade>1</bBonusTrade>
@@ -10144,73 +10133,135 @@
 				</BonusTypeStruct>
 				<BonusTypeStruct>
 					<BonusType>BONUS_BANANA</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
 					<iDiscoverRand>0</iDiscoverRand>
-					<iSpreadRand>1750</iSpreadRand>
-				</BonusTypeStruct>
-				<BonusTypeStruct>
-					<BonusType>BONUS_COTTON</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>0</iDiscoverRand>
-					<iSpreadRand>1750</iSpreadRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>2</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+					</YieldChanges>
 				</BonusTypeStruct>
 				<BonusTypeStruct>
 					<BonusType>BONUS_DYE</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
 					<iDiscoverRand>0</iDiscoverRand>
-					<iSpreadRand>1750</iSpreadRand>
-				</BonusTypeStruct>
-				<BonusTypeStruct>
-					<BonusType>BONUS_GULAGARM</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>0</iDiscoverRand>
-					<iSpreadRand>1750</iSpreadRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>3</iYieldChange>
+					</YieldChanges>
 				</BonusTypeStruct>
 				<BonusTypeStruct>
 					<BonusType>BONUS_INCENSE</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
 					<iDiscoverRand>0</iDiscoverRand>
-					<iSpreadRand>1750</iSpreadRand>
-				</BonusTypeStruct>
-				<BonusTypeStruct>
-					<BonusType>BONUS_RAZORWEED</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>0</iDiscoverRand>
-					<iSpreadRand>1750</iSpreadRand>
-				</BonusTypeStruct>
-				<BonusTypeStruct>
-					<BonusType>BONUS_REAGENTS</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>0</iDiscoverRand>
-					<iSpreadRand>1750</iSpreadRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>4</iYieldChange>
+					</YieldChanges>
 				</BonusTypeStruct>
 				<BonusTypeStruct>
 					<BonusType>BONUS_SILK</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
 					<iDiscoverRand>0</iDiscoverRand>
-					<iSpreadRand>1750</iSpreadRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>5</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+				<BonusTypeStruct>
+					<BonusType>BONUS_REAGENTS</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>1</iYieldChange>
+						<iYieldChange>1</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+				<BonusTypeStruct>
+					<BonusType>BONUS_DESERT_ROSE</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>1</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>2</iYieldChange>
+					</YieldChanges>
 				</BonusTypeStruct>
 				<BonusTypeStruct>
 					<BonusType>BONUS_SUGAR</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
 					<iDiscoverRand>0</iDiscoverRand>
-					<iSpreadRand>1750</iSpreadRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>1</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>1</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+				<BonusTypeStruct>
+					<BonusType>BONUS_COTTON</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>3</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+				<BonusTypeStruct>
+					<BonusType>BONUS_GULAGARM</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>2</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+				<BonusTypeStruct>
+					<BonusType>BONUS_RAZORWEED</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>3</iYieldChange>
+					</YieldChanges>
 				</BonusTypeStruct>
 				<BonusTypeStruct>
 					<BonusType>BONUS_WINE</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
 					<iDiscoverRand>0</iDiscoverRand>
-					<iSpreadRand>1750</iSpreadRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>1</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>3</iYieldChange>
+					</YieldChanges>
 				</BonusTypeStruct>
 			</BonusTypeStructs>
 			<ImprovementUpgrade>IMPROVEMENTCLASS_CHISLEV_CLAN2</ImprovementUpgrade>
@@ -10245,6 +10296,30 @@
 			<iDefenseModifier>10</iDefenseModifier>
 			<BonusTypeStructs>
 				<BonusTypeStruct>
+					<BonusType>BONUS_HORSE</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>2</iYieldChange>
+						<iYieldChange>1</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+				<BonusTypeStruct>
+					<BonusType>BONUS_HYAPON</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>2</iYieldChange>
+						<iYieldChange>1</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+				<BonusTypeStruct>
 					<BonusType>BONUS_DEER</BonusType>
 					<bBonusMakesValid>1</bBonusMakesValid>
 					<bBonusTrade>1</bBonusTrade>
@@ -10317,41 +10392,6 @@
 					</YieldChanges>
 				</BonusTypeStruct>
 				<BonusTypeStruct>
-					<BonusType>BONUS_CAMEL</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>3000</iDiscoverRand>
-					<iSpreadRand>0</iSpreadRand>
-				</BonusTypeStruct>
-				<BonusTypeStruct>
-					<BonusType>BONUS_COW</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>3000</iDiscoverRand>
-					<iSpreadRand>0</iSpreadRand>
-				</BonusTypeStruct>
-				<BonusTypeStruct>
-					<BonusType>BONUS_HORSE</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>3000</iDiscoverRand>
-					<iSpreadRand>0</iSpreadRand>
-				</BonusTypeStruct>
-				<BonusTypeStruct>
-					<BonusType>BONUS_PIG</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>3000</iDiscoverRand>
-					<iSpreadRand>0</iSpreadRand>
-				</BonusTypeStruct>
-				<BonusTypeStruct>
-					<BonusType>BONUS_SHEEP</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>3000</iDiscoverRand>
-					<iSpreadRand>0</iSpreadRand>
-				</BonusTypeStruct>
-				<BonusTypeStruct>
 					<BonusType>BONUS_CORN</BonusType>
 					<bBonusMakesValid>1</bBonusMakesValid>
 					<bBonusTrade>1</bBonusTrade>
@@ -10389,73 +10429,135 @@
 				</BonusTypeStruct>
 				<BonusTypeStruct>
 					<BonusType>BONUS_BANANA</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
 					<iDiscoverRand>0</iDiscoverRand>
-					<iSpreadRand>1750</iSpreadRand>
-				</BonusTypeStruct>
-				<BonusTypeStruct>
-					<BonusType>BONUS_COTTON</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>0</iDiscoverRand>
-					<iSpreadRand>1750</iSpreadRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>2</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+					</YieldChanges>
 				</BonusTypeStruct>
 				<BonusTypeStruct>
 					<BonusType>BONUS_DYE</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
 					<iDiscoverRand>0</iDiscoverRand>
-					<iSpreadRand>1750</iSpreadRand>
-				</BonusTypeStruct>
-				<BonusTypeStruct>
-					<BonusType>BONUS_GULAGARM</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>0</iDiscoverRand>
-					<iSpreadRand>1750</iSpreadRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>3</iYieldChange>
+					</YieldChanges>
 				</BonusTypeStruct>
 				<BonusTypeStruct>
 					<BonusType>BONUS_INCENSE</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
 					<iDiscoverRand>0</iDiscoverRand>
-					<iSpreadRand>1750</iSpreadRand>
-				</BonusTypeStruct>
-				<BonusTypeStruct>
-					<BonusType>BONUS_RAZORWEED</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>0</iDiscoverRand>
-					<iSpreadRand>1750</iSpreadRand>
-				</BonusTypeStruct>
-				<BonusTypeStruct>
-					<BonusType>BONUS_REAGENTS</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>0</iDiscoverRand>
-					<iSpreadRand>1750</iSpreadRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>4</iYieldChange>
+					</YieldChanges>
 				</BonusTypeStruct>
 				<BonusTypeStruct>
 					<BonusType>BONUS_SILK</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
 					<iDiscoverRand>0</iDiscoverRand>
-					<iSpreadRand>1750</iSpreadRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>5</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+				<BonusTypeStruct>
+					<BonusType>BONUS_REAGENTS</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>1</iYieldChange>
+						<iYieldChange>1</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+				<BonusTypeStruct>
+					<BonusType>BONUS_DESERT_ROSE</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>1</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>2</iYieldChange>
+					</YieldChanges>
 				</BonusTypeStruct>
 				<BonusTypeStruct>
 					<BonusType>BONUS_SUGAR</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
 					<iDiscoverRand>0</iDiscoverRand>
-					<iSpreadRand>1750</iSpreadRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>1</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>1</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+				<BonusTypeStruct>
+					<BonusType>BONUS_COTTON</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>3</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+				<BonusTypeStruct>
+					<BonusType>BONUS_GULAGARM</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>2</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+				<BonusTypeStruct>
+					<BonusType>BONUS_RAZORWEED</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>3</iYieldChange>
+					</YieldChanges>
 				</BonusTypeStruct>
 				<BonusTypeStruct>
 					<BonusType>BONUS_WINE</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
 					<iDiscoverRand>0</iDiscoverRand>
-					<iSpreadRand>1750</iSpreadRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>1</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>3</iYieldChange>
+					</YieldChanges>
 				</BonusTypeStruct>
 			</BonusTypeStructs>
 			<ImprovementPillage>IMPROVEMENTCLASS_CHISLEV_CLAN1</ImprovementPillage>
@@ -10493,6 +10595,30 @@
 			<iDefenseModifier>20</iDefenseModifier>
 			<BonusTypeStructs>
 				<BonusTypeStruct>
+					<BonusType>BONUS_HORSE</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>2</iYieldChange>
+						<iYieldChange>1</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+				<BonusTypeStruct>
+					<BonusType>BONUS_HYAPON</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>2</iYieldChange>
+						<iYieldChange>1</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+				<BonusTypeStruct>
 					<BonusType>BONUS_DEER</BonusType>
 					<bBonusMakesValid>1</bBonusMakesValid>
 					<bBonusTrade>1</bBonusTrade>
@@ -10565,41 +10691,6 @@
 					</YieldChanges>
 				</BonusTypeStruct>
 				<BonusTypeStruct>
-					<BonusType>BONUS_CAMEL</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>3000</iDiscoverRand>
-					<iSpreadRand>0</iSpreadRand>
-				</BonusTypeStruct>
-				<BonusTypeStruct>
-					<BonusType>BONUS_COW</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>3000</iDiscoverRand>
-					<iSpreadRand>0</iSpreadRand>
-				</BonusTypeStruct>
-				<BonusTypeStruct>
-					<BonusType>BONUS_HORSE</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>3000</iDiscoverRand>
-					<iSpreadRand>0</iSpreadRand>
-				</BonusTypeStruct>
-				<BonusTypeStruct>
-					<BonusType>BONUS_PIG</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>3000</iDiscoverRand>
-					<iSpreadRand>0</iSpreadRand>
-				</BonusTypeStruct>
-				<BonusTypeStruct>
-					<BonusType>BONUS_SHEEP</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>3000</iDiscoverRand>
-					<iSpreadRand>0</iSpreadRand>
-				</BonusTypeStruct>
-				<BonusTypeStruct>
 					<BonusType>BONUS_CORN</BonusType>
 					<bBonusMakesValid>1</bBonusMakesValid>
 					<bBonusTrade>1</bBonusTrade>
@@ -10637,73 +10728,135 @@
 				</BonusTypeStruct>
 				<BonusTypeStruct>
 					<BonusType>BONUS_BANANA</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
 					<iDiscoverRand>0</iDiscoverRand>
-					<iSpreadRand>1750</iSpreadRand>
-				</BonusTypeStruct>
-				<BonusTypeStruct>
-					<BonusType>BONUS_COTTON</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>0</iDiscoverRand>
-					<iSpreadRand>1750</iSpreadRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>2</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+					</YieldChanges>
 				</BonusTypeStruct>
 				<BonusTypeStruct>
 					<BonusType>BONUS_DYE</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
 					<iDiscoverRand>0</iDiscoverRand>
-					<iSpreadRand>1750</iSpreadRand>
-				</BonusTypeStruct>
-				<BonusTypeStruct>
-					<BonusType>BONUS_GULAGARM</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>0</iDiscoverRand>
-					<iSpreadRand>1750</iSpreadRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>3</iYieldChange>
+					</YieldChanges>
 				</BonusTypeStruct>
 				<BonusTypeStruct>
 					<BonusType>BONUS_INCENSE</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
 					<iDiscoverRand>0</iDiscoverRand>
-					<iSpreadRand>1750</iSpreadRand>
-				</BonusTypeStruct>
-				<BonusTypeStruct>
-					<BonusType>BONUS_RAZORWEED</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>0</iDiscoverRand>
-					<iSpreadRand>1750</iSpreadRand>
-				</BonusTypeStruct>
-				<BonusTypeStruct>
-					<BonusType>BONUS_REAGENTS</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>0</iDiscoverRand>
-					<iSpreadRand>1750</iSpreadRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>4</iYieldChange>
+					</YieldChanges>
 				</BonusTypeStruct>
 				<BonusTypeStruct>
 					<BonusType>BONUS_SILK</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
 					<iDiscoverRand>0</iDiscoverRand>
-					<iSpreadRand>1750</iSpreadRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>5</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+				<BonusTypeStruct>
+					<BonusType>BONUS_REAGENTS</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>1</iYieldChange>
+						<iYieldChange>1</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+				<BonusTypeStruct>
+					<BonusType>BONUS_DESERT_ROSE</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>1</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>2</iYieldChange>
+					</YieldChanges>
 				</BonusTypeStruct>
 				<BonusTypeStruct>
 					<BonusType>BONUS_SUGAR</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
 					<iDiscoverRand>0</iDiscoverRand>
-					<iSpreadRand>1750</iSpreadRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>1</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>1</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+				<BonusTypeStruct>
+					<BonusType>BONUS_COTTON</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>3</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+				<BonusTypeStruct>
+					<BonusType>BONUS_GULAGARM</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>2</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+				<BonusTypeStruct>
+					<BonusType>BONUS_RAZORWEED</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>3</iYieldChange>
+					</YieldChanges>
 				</BonusTypeStruct>
 				<BonusTypeStruct>
 					<BonusType>BONUS_WINE</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
 					<iDiscoverRand>0</iDiscoverRand>
-					<iSpreadRand>1750</iSpreadRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>1</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>3</iYieldChange>
+					</YieldChanges>
 				</BonusTypeStruct>
 			</BonusTypeStructs>
 			<ImprovementPillage>IMPROVEMENTCLASS_CHISLEV_CLAN2</ImprovementPillage>

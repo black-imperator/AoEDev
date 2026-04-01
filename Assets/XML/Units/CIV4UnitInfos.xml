@@ -14897,7 +14897,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_ARCANE_LORE</PrereqTech>
+			<PrereqTech>TECH_STRENGTH_OF_WILL</PrereqTech>
 			<iCost>240</iCost>
 			<iMoves>1</iMoves>
 			<iCombat>10</iCombat>
@@ -15006,7 +15006,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_FANATICISM</PrereqTech>
+			<PrereqTech>TECH_RIGHTEOUSNESS</PrereqTech>
 			<iCost>240</iCost>
 			<iMoves>1</iMoves>
 			<iCombat>9</iCombat>
@@ -15063,7 +15063,7 @@
 			<Description>TXT_KEY_UNIT_FREE_SPIRITS</Description>
 			<Civilopedia>TXT_KEY_UNIT_FREE_SPIRITS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_FREE_SPIRITS_STRATEGY</Strategy>
-			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<Advisor>ADVISOR_RELIGION</Advisor>
 			<bFound>1</bFound>
 			<UnitAIs>
 				<UnitAI>
@@ -15122,6 +15122,20 @@
 					<EarlyArtDefineTag>ART_DEF_UNIT_WOLF</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_GOLD</FlavorType>
+					<iFlavor>1</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>2</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_SCIENCE</FlavorType>
+					<iFlavor>3</iFlavor>
+				</Flavor>
+			</Flavors>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 			<iTier>1</iTier>
 		</UnitInfo>

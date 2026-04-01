@@ -5608,14 +5608,34 @@
 			<bAllowAI>1</bAllowAI>
 			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
 			<bHasCasted>1</bHasCasted>
-			<iCasterMinLevel>4</iCasterMinLevel>
+			<iCasterMinLevel>6</iCasterMinLevel>
 			<bBuffCasterOnly>1</bBuffCasterOnly>
 			<AddPromotions>
 				<AddPromotion>PROMOTION_AMICUS_COMPANION</AddPromotion>
 			</AddPromotions>
 			<Effect>EFFECT_WIND_SWIRL</Effect>
-			<Sound>AS3D_INSPIRE_FURY</Sound>
+			<Sound>AS3D_SPELL_METAL</Sound>
 			<Button>Art/Interface/Buttons/promotions/companions/amicus.dds</Button>
+		</SpellInfo>
+		<SpellInfo>			<!-- Scions add-pop -->
+			<Type>SPELL_SCIONS_ADD_POPULATION_CHISLEV</Type>
+			<Description>TXT_KEY_SPELL_SCIONS_ADD_POPULATION</Description>
+			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
+			<Help>TXT_KEY_SPELL_SCIONS_ADD_POPULATION_HELP</Help>
+			<UnitPrereq>UNIT_FREE_SPIRITS</UnitPrereq>
+			<bAllowAI>1</bAllowAI>
+			<bInBordersOnly>1</bInBordersOnly>
+			<bInCityOnly>1</bInCityOnly>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+			<bAbility>1</bAbility>
+			<bSacrificeCaster>1</bSacrificeCaster>
+			<iChangePopulation>1</iChangePopulation>
+			<PyRequirement>reqAddPop(pCaster)</PyRequirement>
+			<Effect>EFFECT_SPELL1</Effect>
+			<Sound>AS3D_SPELL_METAL</Sound>
+			<bGraphicalOnly>1</bGraphicalOnly>
+			<Button>Art/Interface/Buttons/Units/Scions/awake.dds</Button>
 		</SpellInfo>
 		<SpellInfo>			<!-- Awake Sleeping -->
 			<Type>SPELL_AWAKE_SLEEPING</Type>

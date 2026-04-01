@@ -8881,7 +8881,7 @@
 			<Description>TXT_KEY_BUILDING_CLAN_STRUCTURE</Description>
 			<Civilopedia>TXT_KEY_BUILDING_CLAN_STRUCTURE_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_ELDER_COUNCIL</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_CHISLEV_CLAN</ArtDefineTag>
 			<iAIWeight>30</iAIWeight>
 			<ProductionTraits>
 				<ProductionTrait>
@@ -8910,7 +8910,7 @@
 			<Description>TXT_KEY_BUILDING_CLAN_STRUCTURE_MOUND</Description>
 			<Civilopedia>TXT_KEY_BUILDING_CLAN_STRUCTURE_MOUND_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_HUNTERS_HALL</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_CHISLEV_MOUND</ArtDefineTag>
 			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
 			<iAIWeight>9999</iAIWeight>
 			<iCityCapModifier>7</iCityCapModifier>
@@ -8924,7 +8924,7 @@
 			<iCost>100</iCost>
 			<iConquestProb>0</iConquestProb>
 			<iAsset>4</iAsset>
-			<fVisibilityPriority>10</fVisibilityPriority>
+			<fVisibilityPriority>1000</fVisibilityPriority>
 			<ConstructSound>AS2D_BUILD_COURTHOUSE</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -8940,7 +8940,7 @@
 			<Description>TXT_KEY_BUILDING_CLAN_STRUCTURE_LODGE</Description>
 			<Civilopedia>TXT_KEY_BUILDING_CLAN_STRUCTURE_MOUND_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_HUNTERS_HALL</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_CHISLEV_LODGE</ArtDefineTag>
 			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
 			<iAIWeight>9999</iAIWeight>
 			<iCityCapModifier>7</iCityCapModifier>
@@ -8953,6 +8953,18 @@
 					<bNeededInCity>1</bNeededInCity>
 				</BuildingClassNeeded>
 			</BuildingClassNeededs>
+			<BuildingExcludes>
+				<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_CLAN_STRUCTURE_LODGE_INFLUENCE</BuildingClassType>
+				<bExclude>1</bExclude>
+				</BuildingExclude>
+			</BuildingExcludes>
+			<PropagateBuildings>
+				<PropagateBuilding>
+					<BuildingType>BUILDINGCLASS_CLAN_STRUCTURE_LODGE_INFLUENCE</BuildingType>
+					<iRange>6</iRange>
+				</PropagateBuilding>
+			</PropagateBuildings>
 			<ProductionTraits>
 				<ProductionTrait>
 					<ProductionTraitType>TRAIT_ORGANIZED</ProductionTraitType>
@@ -8963,7 +8975,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>0</iConquestProb>
 			<iAsset>4</iAsset>
-			<fVisibilityPriority>10</fVisibilityPriority>
+			<fVisibilityPriority>1000</fVisibilityPriority>
 			<ConstructSound>AS2D_BUILD_COURTHOUSE</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -8972,6 +8984,41 @@
 				</Flavor>
 			</Flavors>
 			<iCrime>-5</iCrime>
+		</BuildingInfo>	
+		<BuildingInfo>		<!-- Clan Structure      - Lodge   - Clan influence.                                      Chislev UB -->
+			<BuildingClass>BUILDINGCLASS_CLAN_STRUCTURE_LODGE_INFLUENCE</BuildingClass>
+			<Type>BUILDING_CLAN_STRUCTURE_LODGE_INFLUENCE</Type>
+			<Description>TXT_KEY_BUILDING_CLAN_STRUCTURE_LODGE_INFLUENCE</Description>
+			<Civilopedia>TXT_KEY_BUILDING_CLAN_STRUCTURE_MOUND_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_CHISLEV_LODGE_INFLUENCE</ArtDefineTag>
+			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
+			<iAIWeight>10</iAIWeight>
+			<BuildingExcludes>
+				<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_CLAN_STRUCTURE_LODGE</BuildingClassType>
+				<bExclude>1</bExclude>
+				</BuildingExclude>
+			</BuildingExcludes>
+			<iCost>-1</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iConquestProb>0</iConquestProb>
+			<iAsset>4</iAsset>
+			<fVisibilityPriority>1000</fVisibilityPriority>
+			<ConstructSound>AS2D_BUILD_COURTHOUSE</ConstructSound>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_GOLD</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+			<PerPopBonuses>
+				<PerPopBonus>
+					<fGold>0.50</fGold>
+					<fProduction>1</fProduction>
+					<fTradeRoutes>0.22</fTradeRoutes>
+				</PerPopBonus>
+			</PerPopBonuses>
 		</BuildingInfo>
 		<BuildingInfo>		<!-- Clan Structure         - Council                                      Chislev UB -->
 			<BuildingClass>BUILDINGCLASS_CLAN_STRUCTURE_COUNCIL</BuildingClass>
@@ -8979,7 +9026,7 @@
 			<Description>TXT_KEY_BUILDING_CLAN_STRUCTURE_COUNCIL</Description>
 			<Civilopedia>TXT_KEY_BUILDING_CLAN_STRUCTURE_MOUND_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_HUNTERS_HALL</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_CHISLEV_COUNCIL</ArtDefineTag>
 			<PrereqTech>TECH_FEUDALISM</PrereqTech>
 			<iAIWeight>9999</iAIWeight>
 			<iCityCapModifier>7</iCityCapModifier>
@@ -8999,7 +9046,7 @@
 			<iCost>225</iCost>
 			<iConquestProb>0</iConquestProb>
 			<iAsset>4</iAsset>
-			<fVisibilityPriority>10</fVisibilityPriority>
+			<fVisibilityPriority>1000</fVisibilityPriority>
 			<ConstructSound>AS2D_BUILD_COURTHOUSE</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -9306,34 +9353,6 @@
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_MILITARY</FlavorType>
-					<iFlavor>10</iFlavor>
-				</Flavor>
-			</Flavors>
-		</BuildingInfo>
-		<BuildingInfo>		<!-- Slave Pit                                                  Cualli UB -->
-			<BuildingClass>BUILDINGCLASS_SLAVE_PIT</BuildingClass>
-			<Type>BUILDING_SLAVE_PIT</Type>
-			<Description>TXT_KEY_BUILDING_SLAVE_PIT</Description>
-			<Civilopedia>TXT_KEY_BUILDING_SLAVE_PIT_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_SLAVE_PIT_STRATEGY</Strategy>
-			<Advisor>ADVISOR_GROWTH</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_SLAVE_PIT</ArtDefineTag>
-			<PrereqTech>TECH_NEVER</PrereqTech>
-			<bNeverCapture>1</bNeverCapture>
-			<iConquestProb>0</iConquestProb>
-			<iAIWeight>10</iAIWeight>
-			<iAsset>2</iAsset>
-			<iPower>1</iPower>
-			<fVisibilityPriority>1</fVisibilityPriority>
-			<FreeSpecialistCounts>
-				<FreeSpecialistCount>
-					<SpecialistType>SPECIALIST_CITIZEN</SpecialistType>
-					<iFreeSpecialistCount>4</iFreeSpecialistCount>
-				</FreeSpecialistCount>
-			</FreeSpecialistCounts>
-			<Flavors>
-				<Flavor>
-					<FlavorType>FLAVOR_GROWTH</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -9983,7 +10002,7 @@
 				<bExclude>1</bExclude>
 				</BuildingExclude>
 			</BuildingExcludes>
-		<PropagateBuildings>
+			<PropagateBuildings>
 				<PropagateBuilding>
 					<BuildingType>BUILDING_TOTEM_OF_THE_TORTOISE_REPLICA</BuildingType>
 					<iRange>6</iRange>
@@ -10144,6 +10163,34 @@
 				</Flavor>
 				<Flavor>
 					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Slave Pit                                                  Cualli UB -->
+			<BuildingClass>BUILDINGCLASS_SLAVE_PIT</BuildingClass>
+			<Type>BUILDING_SLAVE_PIT</Type>
+			<Description>TXT_KEY_BUILDING_SLAVE_PIT</Description>
+			<Civilopedia>TXT_KEY_BUILDING_SLAVE_PIT_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_SLAVE_PIT_STRATEGY</Strategy>
+			<Advisor>ADVISOR_GROWTH</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_SLAVE_PIT</ArtDefineTag>
+			<PrereqTech>TECH_NEVER</PrereqTech>
+			<bNeverCapture>1</bNeverCapture>
+			<iConquestProb>0</iConquestProb>
+			<iAIWeight>10</iAIWeight>
+			<iAsset>2</iAsset>
+			<iPower>1</iPower>
+			<fVisibilityPriority>1</fVisibilityPriority>
+			<FreeSpecialistCounts>
+				<FreeSpecialistCount>
+					<SpecialistType>SPECIALIST_CITIZEN</SpecialistType>
+					<iFreeSpecialistCount>4</iFreeSpecialistCount>
+				</FreeSpecialistCount>
+			</FreeSpecialistCounts>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -10630,7 +10677,6 @@
 			<iNumFreeBonuses>1</iNumFreeBonuses>
 			<bCapital>1</bCapital>
 			<iHealth>2</iHealth>
-			<bGovernmentCenter>1</bGovernmentCenter>
 			<bNeverCapture>1</bNeverCapture>
 			<bNukeImmune>1</bNukeImmune>
 			<iCost>160</iCost>

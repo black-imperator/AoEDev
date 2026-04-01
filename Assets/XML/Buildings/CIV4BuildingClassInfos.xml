@@ -3667,7 +3667,7 @@
 			<Description>TXT_KEY_BUILDING_CLAN_STRUCTURE_MOUND</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>7</iMaxPlayerInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
 			<iExtraPlayerInstances>0</iExtraPlayerInstances>
 			<bNoLimit>0</bNoLimit>
 			<bMonument>0</bMonument>
@@ -3680,7 +3680,7 @@
 			<Description>TXT_KEY_BUILDING_CLAN_STRUCTURE_LODGE</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>7</iMaxPlayerInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
 			<iExtraPlayerInstances>0</iExtraPlayerInstances>
 			<bNoLimit>0</bNoLimit>
 			<bMonument>0</bMonument>
@@ -3688,12 +3688,25 @@
 			<DefaultBuilding>BUILDING_CLAN_STRUCTURE_LODGE</DefaultBuilding>
 			<VictoryThresholds/>
 		</BuildingClassInfo>
+		<BuildingClassInfo><!-- Chislev Clan Structure - Lodge - Influence -->
+			<Type>BUILDINGCLASS_CLAN_STRUCTURE_LODGE_INFLUENCE</Type>
+			<Description>TXT_KEY_BUILDING_CLAN_STRUCTURE_LODGE</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_CLAN_STRUCTURE_LODGE_INFLUENCE</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
 		<BuildingClassInfo><!-- Chislev Clan Structure - Council -->
 			<Type>BUILDINGCLASS_CLAN_STRUCTURE_COUNCIL</Type>
 			<Description>TXT_KEY_BUILDING_CLAN_STRUCTURE_COUNCIL</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>7</iMaxPlayerInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
 			<iExtraPlayerInstances>0</iExtraPlayerInstances>
 			<bNoLimit>0</bNoLimit>
 			<bMonument>0</bMonument>

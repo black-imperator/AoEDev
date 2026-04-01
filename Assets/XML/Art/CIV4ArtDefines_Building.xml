@@ -654,7 +654,7 @@
 			<fInterfaceScale>0.52</fInterfaceScale>
 			<NIF>Art/structures/buildings/wigwam/wigwam.nif</NIF>
 			<KFM/>
-			<Button>Art/Interface/Buttons/Buildings/CouncilWarchief.dds</Button>
+			<Button>Art/Interface/Buttons/Buildings/ByersonRMoore.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_WIGWAM_SHAMAN</Type>
@@ -664,7 +664,7 @@
 			<fInterfaceScale>0.52</fInterfaceScale>
 			<NIF>Art/structures/buildings/wigwam/wigwam.nif</NIF>
 			<KFM/>
-			<Button>Art/Interface/Buttons/Buildings/CouncilShaman.dds</Button>
+			<Button>Art/Interface/Buttons/Buildings/DetroitInstituteofArts.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_TRIBAL_COUNCIL</Type>
@@ -674,7 +674,7 @@
 			<fInterfaceScale>0.6</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Eldercouncil/Eldercouncil.nif</NIF>
 			<KFM/>
-			<Button>Art/Interface/Buttons/Buildings/Tribalcouncil.dds</Button>
+			<Button>Art/Interface/Buttons/Buildings/DetroitInstituteofArts.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_SPIDER_WEB</Type>
@@ -924,7 +924,7 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/PalaceChislev/chislev.nif</NIF>
 			<KFM/>
-			<Button>Art/Interface/Buttons/Buildings/ChislevPalace.dds</Button>
+			<Button>Art/Interface/Buttons/Buildings/AndersonRMoore.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_PALACE_MALAKIM</Type>
@@ -1495,6 +1495,56 @@
 			<NIF>Art/Structures/Buildings/Infirmary/Hospital.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/Infirmary.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_CHISLEV_CLAN</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>1.5</fScale>
+			<fInterfaceScale>0.7</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Huntinglodge/huntinglodge.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/ColtIdol.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_CHISLEV_MOUND</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>1.5</fScale>
+			<fInterfaceScale>0.7</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Huntinglodge/huntinglodge.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/ColtIdolMound.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_CHISLEV_LODGE</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>1.5</fScale>
+			<fInterfaceScale>0.7</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Huntinglodge/huntinglodge.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/ColtIdolLodge.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_CHISLEV_LODGE_INFLUENCE</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>1.5</fScale>
+			<fInterfaceScale>0.7</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Huntinglodge/huntinglodge.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/ColtIdolLodgeInfluence.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_CHISLEV_COUNCIL</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>1.5</fScale>
+			<fInterfaceScale>0.7</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Huntinglodge/huntinglodge.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/ColtIdolCouncil.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_CANOE_HARBOR</Type>
