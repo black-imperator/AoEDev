@@ -9012,6 +9012,12 @@
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
+			<PrereqBuildingAtRanges>
+				<PrereqBuildingAtRange>
+					<BuildingType>BUILDINGCLASS_CLAN_STRUCTURE_LODGE</BuildingType>
+					<iRange>6</iRange>
+				</PrereqBuildingAtRange>
+			</PrereqBuildingAtRanges>
 			<PerPopBonuses>
 				<PerPopBonus>
 					<fGold>0.50</fGold>
@@ -9019,6 +9025,8 @@
 					<fTradeRoutes>0.22</fTradeRoutes>
 				</PerPopBonus>
 			</PerPopBonuses>
+			<bAutoBuild>1</bAutoBuild>
+			<bMustMaintain>1</bMustMaintain>
 		</BuildingInfo>
 		<BuildingInfo>		<!-- Clan Structure         - Council                                      Chislev UB -->
 			<BuildingClass>BUILDINGCLASS_CLAN_STRUCTURE_COUNCIL</BuildingClass>
@@ -9079,7 +9087,7 @@
 			<fVisibilityPriority>10</fVisibilityPriority>
 			<CommerceModifiers>
 				<iCommerce>0</iCommerce>
-				<iCommerce>20</iCommerce>
+				<iCommerce>15</iCommerce>
 				<iCommerce>0</iCommerce>
 			</CommerceModifiers>
 			<ObsoleteSafeCommerceChanges>
