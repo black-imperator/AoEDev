@@ -209,11 +209,7 @@
 		</LeaderClassInfo>
 		<LeaderClassInfo> <!--Council-->
 			<Type>LEADERCLASS_COUNCIL</Type>
-		<bTypeDependency>1</bTypeDependency>
-		<AndDependencyTypes>
-				<DependencyType>MODULE_CHISLEV</DependencyType>
-			</AndDependencyTypes>
-	<Description>TXT_KEY_LEADERCLASS_COUNCIL</Description>
+			<Description>TXT_KEY_LEADERCLASS_COUNCIL</Description>
 			<LeaderStatus>EMERGENT_STATUS</LeaderStatus>
 			<MaxTraitsPerClass>
 			<TraitClassMax>
