@@ -11972,7 +11972,7 @@ bool CvGame::isTikuCurse()
 bool CvGame::isUniDay() {
 	time_t rawtime;
 	tm* ptm;
-
+//	return false;
 	if (isTikuCurse())
 	{
 		return true;

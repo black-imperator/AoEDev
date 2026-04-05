@@ -24711,7 +24711,7 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bAutoBuild, "bAutoBuild");
 	pXML->GetChildXmlValByName(&m_bMustMaintain, "bMustMaintain");
 	pXML->GetChildXmlValByName(&m_bCrimeEffect, "bCrimeEffect");
-	pXML->GetChildXmlValByName(&m_bCrimeEffect, "bEffect");
+	pXML->GetChildXmlValByName(&m_bEffect, "bEffect");
 	pXML->GetChildXmlValByName(&m_iPerCrimeEffectHappyChange, "iPerCrimeEffectHappy");
 	pXML->GetChildXmlValByName(&m_iPerCrimeEffectHealthChange, "iPerCrimeEffectHealth");
 
@@ -51452,13 +51452,13 @@ std::string CvMainMenuInfo::getScene() const
 
 	ptm = localtime( &rawtime );
 
-	if (ptm->tm_mon == 3)
-	{
-		if (ptm->tm_mday == 1)
-		{
-			return "MAINMENU_SCENE_FAKE";
-		}
-	}
+//if (ptm->tm_mon == 3)
+//	{
+//		if (ptm->tm_mday == 1)
+//		{
+//			return "MAINMENU_SCENE_FAKE";
+//		}
+//	}
 	if (GC.getGame().isUniDay())
 	{
 		return "MAINMENU_SCENE_FAKE";
@@ -51476,13 +51476,13 @@ std::string CvMainMenuInfo::getSceneNoShader() const
 
 	ptm = localtime( &rawtime );
 
-	if (ptm->tm_mon == 3)
-	{
-		if (ptm->tm_mday == 1)
-		{
-			return "MAINMENU_SCENE_FAKE";
-		}
-	}
+	//if (ptm->tm_mon == 3)
+	//{
+	//	if (ptm->tm_mday == 1)
+	//	{
+	//		return "MAINMENU_SCENE_FAKE";
+	//	}
+	//}
 	if (GC.getGame().isUniDay())
 	{
 		return "MAINMENU_SCENE_FAKE";
@@ -51499,13 +51499,13 @@ std::string CvMainMenuInfo::getSoundtrack() const
 
 	ptm = localtime( &rawtime );
 
-	if (ptm->tm_mon == 3)
-	{
-		if (ptm->tm_mday == 1)
-		{
-			return "AS2D_PRINCESSRULE_LOOP";
-		}
-	}
+	//if (ptm->tm_mon == 3)
+	//{
+	//	if (ptm->tm_mday == 1)
+	//	{
+	//		return "AS2D_PRINCESSRULE_LOOP";
+	//	}
+	//}
 	if (GC.getGame().isUniDay())
 	{
 		return "AS2D_PRINCESSRULE_LOOP";

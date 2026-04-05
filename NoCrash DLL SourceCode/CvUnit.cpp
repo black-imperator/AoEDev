@@ -2459,10 +2459,10 @@ void CvUnit::doTurn()
 /**						Enhances AI Aggression with Immortal Units								**/
 /**					Enhances Animal Strength as they remain untouched							**/
 /*************************************************************************************************/
-	if (isImmortal() && !GET_PLAYER((PlayerTypes)getOwner()).isHuman() && canAttack())
-	{
-		AI_setUnitAIType(UNITAI_ATTACK_CITY);
-	}
+//	if (isImmortal() && !GET_PLAYER((PlayerTypes)getOwner()).isHuman() && canAttack())
+//	{
+//		AI_setUnitAIType(UNITAI_ATTACK_CITY);
+//	}
 /*************************************************************************************************/
 /**	Tweak								29/01/12										Snarko	**/
 /**																								**/
