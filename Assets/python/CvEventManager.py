@@ -1356,7 +1356,7 @@ class CvEventManager:
 			if iButtonId == 0:
 				pUnit.setHasPromotion(git('PROMOTION_ORC_SLAYING'), True)
 				pUnit.setHasPromotion(git('PROMOTION_CRAZED'), True)
-				# TODO: add alignment shift -5
+				pPlayer.changeBroadAlignment(-5)
 			elif iButtonId == 1:
 				pUnit.setHasPromotion(git('PROMOTION_GOBLIN'), True)
 			elif iButtonId == 2:

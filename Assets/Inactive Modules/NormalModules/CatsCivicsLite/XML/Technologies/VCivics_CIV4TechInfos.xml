@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<!-- Tech Infos -->
+<Civ4TechInfos xmlns="x-schema:VCivics_CIV4TechnologiesSchema.xml">
+	<TechInfos>
+		<TechInfo>		<!-- Machinery -->
+			<Type>TECH_MACHINERY</Type>
+			<iGridX>7</iGridX>
+			<iGridY>21</iGridY>
+		</TechInfo>
+		<TechInfo>		<!-- Mathematics -->
+			<Type>TECH_MATHEMATICS</Type>
+			<iCost>1600</iCost>
+		</TechInfo>
+		<TechInfo>		<!-- Engineering -->
+			<Type>TECH_ENGINEERING</Type>
+			<iCost>2400</iCost>
+		</TechInfo>
+		<TechInfo>		<!-- Alchemy -->
+			<Type>TECH_ALCHEMY</Type>
+			<Era>ERA_CLASSICAL</Era> <!-- was Medieval -->
+			<iGridX>6</iGridX>
+			<iGridY>22</iGridY>
+			<OrPreReqs>
+				<PrereqTech>TECH_STEAM_POWER</PrereqTech>
+				<PrereqTech>TECH_ENGINEERING</PrereqTech>
+			</OrPreReqs>
+		</TechInfo>
+		<TechInfo>		<!-- Steam Power -->
+			<Type>TECH_STEAM_POWER</Type>
+			<Era>ERA_CLASSICAL</Era> <!-- was Ancient -->
+			<iGridX>5</iGridX>
+			<iGridY>22</iGridY>
+			<OrPreReqs>
+				<PrereqTech>TECH_KNOWLEDGE_OF_THE_ETHER</PrereqTech>
+			</OrPreReqs>
+			<AndPreReqs>
+				<PrereqTech>TECH_MATHEMATICS</PrereqTech>
+			</AndPreReqs>
+		</TechInfo>
+		<TechInfo>		<!-- Industry -->
+			<Type>TECH_INDUSTRY</Type>
+			<Description>TXT_KEY_TECH_INDUSTRY</Description>
+			<Strategy>TXT_KEY_TECH_INDUSTRY_STRATEGY</Strategy>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<iAIWeight>50</iAIWeight>
+			<iAITradeModifier>10</iAITradeModifier>
+			<iCost>9600</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<Era>ERA_MEDIEVAL</Era>
+			<iAsset>64</iAsset>
+			<iPower>16</iPower>
+			<bGoodyTech>1</bGoodyTech>
+			<iGridX>8</iGridX>
+			<iGridY>20</iGridY>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>5</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<iFlavor>20</iFlavor>
+				</Flavor>
+			</Flavors>
+			<OrPreReqs>
+				<PrereqTech>TECH_MACHINERY</PrereqTech>
+			</OrPreReqs>
+			<AndPreReqs>
+				<PrereqTech>TECH_BLASTING_POWDER</PrereqTech>
+			</AndPreReqs>
+			<Quote>TXT_KEY_TECH_INDUSTRY_QUOTE</Quote>
+			<Sound>AS2D_TECH_DING</Sound>
+			<SoundMP>AS2D_TECH_DING</SoundMP>
+			<Button>,Art/Interface/Buttons/TechTree/Industrialism.dds,Art/Interface/Buttons/TechTree_Atlas.dds,8,4</Button>
+		</TechInfo>
+	</TechInfos>
+</Civ4TechInfos>

@@ -127,6 +127,19 @@
 			<VictoryThresholds/>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
+			<Type>BUILDINGCLASS_CUSTOM_HOUSE</Type>
+			<Description>TXT_KEY_BUILDING_CUSTOM_HOUSE</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>0</bUnique>
+			<DefaultBuilding>BUILDING_CUSTOM_HOUSE</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_MINT</Type>
 			<Description>TXT_KEY_BUILDING_MINT</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>

@@ -830,7 +830,7 @@
 				</FeatureMoveCost>
 				<FeatureMoveCost>
 					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<iFeatureMoveCost>-1</iFeatureMoveCost>
+					<iFeatureMoveCost>-2</iFeatureMoveCost>
 				</FeatureMoveCost>
 			</FeatureMoveCosts>
 			<Button>Art/Interface/Buttons/Promotions/Races/darkElf.dds</Button>
@@ -874,7 +874,7 @@
 				</FeatureMoveCost>
 				<FeatureMoveCost>
 					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<iFeatureMoveCost>-1</iFeatureMoveCost>
+					<iFeatureMoveCost>-2</iFeatureMoveCost>
 				</FeatureMoveCost>
 			</FeatureMoveCosts>
 			<Button>Art/Interface/Buttons/Promotions/Races/Elf.dds</Button>
@@ -916,7 +916,7 @@
 				</FeatureMoveCost>
 				<FeatureMoveCost>
 					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<iFeatureMoveCost>-1</iFeatureMoveCost>
+					<iFeatureMoveCost>-2</iFeatureMoveCost>
 				</FeatureMoveCost>
 			</FeatureMoveCosts>
 			<Button>Art/Interface/Buttons/Promotions/Races/onceElf.dds</Button>
@@ -961,7 +961,7 @@
 				</FeatureMoveCost>
 				<FeatureMoveCost>
 					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<iFeatureMoveCost>-1</iFeatureMoveCost>
+					<iFeatureMoveCost>-2</iFeatureMoveCost>
 				</FeatureMoveCost>
 			</FeatureMoveCosts>
 			<Button>Art/Interface/Buttons/Races/Race_Satyr.dds</Button>
@@ -7397,7 +7397,7 @@
 			<FeatureMoveCosts>
 				<FeatureMoveCost>
 					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<iFeatureMoveCost>-1</iFeatureMoveCost>
+					<iFeatureMoveCost>-2</iFeatureMoveCost>
 				</FeatureMoveCost>
 				<FeatureMoveCost>
 					<FeatureType>FEATURE_KELP_FOREST</FeatureType>
@@ -14431,6 +14431,7 @@
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Pack Alpha -->
 			<Type>PROMOTION_PACK_ALPHA</Type>
+			<Description>TXT_KEY_PROMOTION_PACK_ALPHA</Description>
 			<PrereqPromotionORs>
 				<PrereqPromotionOR>
 					<PromotionType>PROMOTION_WEREWOLF</PromotionType>
@@ -14961,7 +14962,11 @@
 			<Description>TXT_KEY_PROMOTION_QUESTING</Description>
 			<Help></Help>
 			<bBlind>1</bBlind>
+			<bAllowAttacks>1</bAllowAttacks>
 			<bFreeUnit>1</bFreeUnit>
+			<bNoSupply>1</bNoSupply>
+			<bEnraged>1</bEnraged>
+			<iLeashRange>3</iLeashRange>
 			<fFreeXPCap>100</fFreeXPCap>
 			<iPromotionDuration>10</iPromotionDuration>
 			<PrereqbAllowNULLUnitCombat>1</PrereqbAllowNULLUnitCombat>
@@ -15006,7 +15011,6 @@
 			<Button>Art/Interface/Buttons/Units/Adventurer.dds</Button>
 			<iFreeXPPerTurn>2</iFreeXPPerTurn>
 			<iMinLevel>-1</iMinLevel>
-			<PyPerTurn>effectWanderingCurse(pCaster)</PyPerTurn>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Quickened -->
 			<Type>PROMOTION_QUICKENED</Type>
@@ -34228,7 +34232,7 @@
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Militia -->
 			<Type>PROMOTION_MILITIA</Type>
-			<Description>TXT_KEY_UNIT_MILITIA</Description>
+			<Description>TXT_KEY_PROMOTION_MILITIA_MEKARA</Description>
 			<PrereqCivilizations>
 				<PrereqCivilization>CIVILIZATION_MEKARA_V2</PrereqCivilization>
 			</PrereqCivilizations>

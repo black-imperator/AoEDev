@@ -585,20 +585,6 @@
 			<Sound>AS3D_SPELL_STONESKIN</Sound>
 			<Button>Art/Interface/Buttons/Improvements/shipwreck.dds</Button>
 		</SpellInfo>
-		<SpellInfo>			<!-- Clever Troll -->
-			<Type>SPELL_CLEVER_TROLL</Type>
-			<Description>Clever Troll</Description>
-			<PromotionPrereq1>PROMOTION_TROLLKIN</PromotionPrereq1>
-			<TechPrereq>TECH_HUNTING</TechPrereq>
-			<bAllowAI>1</bAllowAI>
-			<iAIWeight>100</iAIWeight>
-			<AddPromotions>
-				<AddPromotion>PROMOTION_CLEVER_TROLL</AddPromotion>
-			</AddPromotions>
-			<bBuffCasterOnly>1</bBuffCasterOnly>
-			<iCost>30</iCost>
-			<Button>Art/Interface/Buttons/Units/Shadow.dds</Button>
-		</SpellInfo>
 		<SpellInfo>			<!-- Crush (Jotnar) -->
 			<Type>SPELL_JOT_CRUSH</Type>
 			<Description>TXT_KEY_SPELL_CRUSH</Description>

@@ -163,6 +163,24 @@
 					<iProductionTrait>100</iProductionTrait>
 				</ProductionTrait>
 			</ProductionTraits>
+			<BuildingExcludes>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_FALL_PALACE</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_WINTER_PALACE</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_SPRING_PALACE</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_HALL_OF_YEARS</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+			</BuildingExcludes>
 			<FreeBonus>BONUS_MANA_FIRE</FreeBonus>
 			<iNumFreeBonuses>1</iNumFreeBonuses>
 			<bGovernmentCenter>1</bGovernmentCenter>
@@ -231,6 +249,24 @@
 					<iProductionTrait>100</iProductionTrait>
 				</ProductionTrait>
 			</ProductionTraits>
+			<BuildingExcludes>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_FORBIDDEN_PALACE</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_WINTER_PALACE</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_SPRING_PALACE</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_HALL_OF_YEARS</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+			</BuildingExcludes>
 			<FreeBonus>BONUS_MANA_EARTH</FreeBonus>
 			<iNumFreeBonuses>1</iNumFreeBonuses>
 			<bGovernmentCenter>1</bGovernmentCenter>
@@ -446,6 +482,24 @@
 					<iProductionTrait>100</iProductionTrait>
 				</ProductionTrait>
 			</ProductionTraits>
+			<BuildingExcludes>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_FORBIDDEN_PALACE</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_FALL_PALACE</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_SPRING_PALACE</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_HALL_OF_YEARS</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+			</BuildingExcludes>
 			<FreeBonus>BONUS_MANA_ICE</FreeBonus>
 			<iNumFreeBonuses>1</iNumFreeBonuses>
 			<bGovernmentCenter>1</bGovernmentCenter>
@@ -522,6 +576,24 @@
 					<iProductionTrait>100</iProductionTrait>
 				</ProductionTrait>
 			</ProductionTraits>
+			<BuildingExcludes>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_FORBIDDEN_PALACE</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_FALL_PALACE</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_WINTER_PALACE</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_HALL_OF_YEARS</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+			</BuildingExcludes>
 			<FreeBonus>BONUS_MANA_NATURE</FreeBonus>
 			<iNumFreeBonuses>1</iNumFreeBonuses>
 			<bGovernmentCenter>1</bGovernmentCenter>
@@ -591,6 +663,24 @@
 			<PrereqTech>TECH_TRADE</PrereqTech>
 			<FreeBonus>BONUS_MANA_AIR</FreeBonus>
 			<FreeBonus2>BONUS_MANA_WATER</FreeBonus2>
+			<BuildingExcludes>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_FORBIDDEN_PALACE</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_FALL_PALACE</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_WINTER_PALACE</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+				<BuildingExclude>
+					<BuildingClassType>BUILDINGCLASS_SPRING_PALACE</BuildingClassType>
+					<bExclude>1</bExclude>
+				</BuildingExclude>
+			</BuildingExcludes>
 			<iNumFreeBonuses>1</iNumFreeBonuses>
 			<bGovernmentCenter>1</bGovernmentCenter>
 			<bTeamShare>1</bTeamShare>

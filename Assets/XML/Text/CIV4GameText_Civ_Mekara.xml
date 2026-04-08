@@ -731,6 +731,14 @@
 		<Italian>Sbloccatore Promozione Sorvegliante</Italian>
 		<Spanish>Overseer Promotion Unlocker</Spanish>
 	</TEXT>
+	<TEXT>	<!-- Militia promotion -->
+		<Tag>TXT_KEY_PROMOTION_MILITIA_MEKARA</Tag>
+		<English>Militia Doctrine</English>
+		<French>Militia Doctrine</French>
+		<German>Militia Doctrine</German>
+		<Italian>Militia Doctrine</Italian>
+		<Spanish>Militia Doctrine</Spanish>
+	</TEXT>
 	<TEXT>	<!-- Urban -->
 		<Tag>TXT_KEY_ANIMALBLOCKER</Tag>
 		<English>Urban</English>

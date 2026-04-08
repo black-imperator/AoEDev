@@ -382,44 +382,5 @@
 				</Flavor>
 			</Flavors>
 		</BuildingInfo>
-		<BuildingInfo>		<!-- King's Forest Redone -->
-			<BuildingClass>BUILDINGCLASS_KINGS_FOREST</BuildingClass>
-			<Type>BUILDING_KINGS_FOREST</Type>
-			<Description>TXT_KEY_BUILDING_KINGS_FOREST</Description>
-			<Civilopedia>TXT_KEY_BUILDING_KINGS_FOREST</Civilopedia>
-			<Advisor>ADVISOR_MILITARY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_GROVE</ArtDefineTag>
-			<FreeBonus>BONUS_DEER</FreeBonus>
-			<iNumFreeBonuses>1</iNumFreeBonuses>
-			<iDefense>25</iDefense>
-			<iAsset>8</iAsset>
-			<iPower>8</iPower>
-			<fVisibilityPriority>100</fVisibilityPriority>
-			<FeatureYieldChanges>
-				<FeatureYieldChange>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<FeatureYields>
-						<iYield>1</iYield>
-						<iYield>0</iYield>
-						<iYield>0</iYield>
-					</FeatureYields>
-				</FeatureYieldChange>
-				<FeatureYieldChange>
-					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<FeatureYields>
-						<iYield>1</iYield>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-					</FeatureYields>
-				</FeatureYieldChange>
-			</FeatureYieldChanges>
-			<Flavors>
-				<Flavor>
-					<FlavorType>FLAVOR_GOLD</FlavorType>
-					<iFlavor>10</iFlavor>
-				</Flavor>
-			</Flavors>
-			<bForceOverwrite>1</bForceOverwrite>
-		</BuildingInfo>
 	</BuildingInfos>
 </Civ4BuildingInfos>

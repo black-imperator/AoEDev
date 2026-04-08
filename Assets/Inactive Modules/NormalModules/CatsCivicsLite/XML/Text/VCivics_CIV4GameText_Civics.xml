@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Civ4GameText xmlns="http://www.firaxis.com">
+				<!-- Despotism -->
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_DESPOTISM_C_OVR_PEDIA</Tag>
+		<English>Despotism
+
+"When men clash hierarchies emerge. Those early hierarchies have one thing in common, a respect for power. Because undermining that power is undermining their right to rule. The rule of the sword."
+
+Strategy: Despotism is a civic that  aims to synergies with tribalism and the nomadic civic.</English>
+		<French>Despotism
+
+"When men clash hierarchies emerge. Those early hierarchies have one thing in common, a respect for power. Because undermining that power is undermining their right to rule. The rule of the sword."
+
+Strategy: Despotism is a civic that  aims to synergies with tribalism and the nomadic civic.</French>
+		<German>Despotism
+
+"When men clash hierarchies emerge. Those early hierarchies have one thing in common, a respect for power. Because undermining that power is undermining their right to rule. The rule of the sword."
+
+Strategy: Despotism is a civic that  aims to synergies with tribalism and the nomadic civic.</German>
+		<Italian>Despotism
+
+"When men clash hierarchies emerge. Those early hierarchies have one thing in common, a respect for power. Because undermining that power is undermining their right to rule. The rule of the sword."
+
+Strategy: Despotism is a civic that  aims to synergies with tribalism and the nomadic civic.</Italian>
+		<Spanish>Despotism
+
+"When men clash hierarchies emerge. Those early hierarchies have one thing in common, a respect for power. Because undermining that power is undermining their right to rule. The rule of the sword."
+
+Strategy: Despotism is a civic that  aims to synergies with tribalism and the nomadic civic.</Spanish>
+	</TEXT>
+				<!-- Aristocracy -->
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_ARISTOCRACY_PEDIA_C_OVR</Tag>
+		<English>Aristocracy
+
+"It's easy to fall into the pitfall of a powerful elite. People that excel should be rewarded. The rewards serve not only as acknowledgement but also as support so the family can focus on honing their skills and passing them on. The passing on of both skills and rewards in conjunction with society supporting rather then competing with the now forming dynasties creates a self serving cycle of further entrenchment."
+
+Strategy: Aristocracy is a defensive and cultural civic. The powerful nobles are motivated to defend their lands and to promote their prestige through patronage of promising artists.</English>
+		<French>Aristocracy
+
+"It's easy to fall into the pitfall of a powerful elite. People that excel should be rewarded. The rewards serve not only as acknowledgement but also as support so the family can focus on honing their skills and passing them on. The passing on of both skills and rewards in conjunction with society supporting rather then competing with the now forming dynasties creates a self serving cycle of further entrenchment."
+
+Strategy: Aristocracy is a defensive and cultural civic. The powerful nobles are motivated to defend their lands and to promote their prestige through patronage of promising artists.</French>
+		<German>Aristocracy
+
+"It's easy to fall into the pitfall of a powerful elite. People that excel should be rewarded. The rewards serve not only as acknowledgement but also as support so the family can focus on honing their skills and passing them on. The passing on of both skills and rewards in conjunction with society supporting rather then competing with the now forming dynasties creates a self serving cycle of further entrenchment."
+
+Strategy: Aristocracy is a defensive and cultural civic. The powerful nobles are motivated to defend their lands and to promote their prestige through patronage of promising artists.</German>
+		<Italian>Aristocracy
+
+"It's easy to fall into the pitfall of a powerful elite. People that excel should be rewarded. The rewards serve not only as acknowledgement but also as support so the family can focus on honing their skills and passing them on. The passing on of both skills and rewards in conjunction with society supporting rather then competing with the now forming dynasties creates a self serving cycle of further entrenchment."
+
+Strategy: Aristocracy is a defensive and cultural civic. The powerful nobles are motivated to defend their lands and to promote their prestige through patronage of promising artists.</Italian>
+		<Spanish>Aristocracy
+
+"It's easy to fall into the pitfall of a powerful elite. People that excel should be rewarded. The rewards serve not only as acknowledgement but also as support so the family can focus on honing their skills and passing them on. The passing on of both skills and rewards in conjunction with society supporting rather then competing with the now forming dynasties creates a self serving cycle of further entrenchment."
+
+Strategy: Aristocracy is a defensive and cultural civic. The powerful nobles are motivated to defend their lands and to promote their prestige through patronage of promising artists.</Spanish>
+	</TEXT>
+	<TEXT>		
+		<Tag>TXT_KEY_CIVIC_ARISTOCRACY_HELP_V_OVR</Tag>
+		<English>[ICON_BULLET]Allows access to [LINK=UNIT_ROYAL_GUARD]Royal Guard[\LINK] units</English>
+		<French>[ICON_BULLET]Donne accès à l'unité [LINK=UNIT_ROYAL_GUARD]Garde Royale[\LINK]</French>
+		<German>[ICON_BULLET]erlaubt [LINK=UNIT_ROYAL_GUARD]Garde des Königs[\LINK]</German>
+		<Italian>[ICON_BULLET]Allows access to [LINK=UNIT_ROYAL_GUARD]Royal Guard[\LINK] units</Italian>
+		<Spanish>[ICON_BULLET]Permite acceder a las unidades de [LINK=UNIT_ROYAL_GUARD]Guardia Real[\LINK]</Spanish>
+	</TEXT>
+				<!-- Autonomous Rule (City States) -->
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CITY_STATES_V_OVR</Tag>
+		<English>Autonomous Rule</English>
+		<French>Autonomous Rule</French>
+		<German>Autonomous Rule</German>
+		<Italian>Autonomous Rule</Italian>
+		<Spanish>Autonomous Rule</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CITY_STATES_V_OVR_PEDIA</Tag>
+		<English>Autonomous Rule
+
+"It's a matter of respect to not get involved in your neighbours affairs unless they call for aid, is an unspoken rule of any society that claims to stand above barbarism. A principle that many who seek autonomy aspire to emulate in government too."
+
+Strategy:
+Autonomous Rule grants every city in your realm a sovereign that governs over them. They all have their specialisation, some of which are straightforward buffs while others are more unique.</English>
+		<French>Autonomous Rule
+
+"It's a matter of respect to not get involved in your neighbours affairs unless they call for aid, is an unspoken rule of any society that claims to stand above barbarism. A principle that many who seek autonomy aspire to emulate in government too."
+
+Strategy:
+Autonomous Rule grants every city in your realm a sovereign that governs over them. They all have their specialisation, some of which are straightforward buffs while others are more unique.</French>
+		<German>Autonomous Rule
+
+"It's a matter of respect to not get involved in your neighbours affairs unless they call for aid, is an unspoken rule of any society that claims to stand above barbarism. A principle that many who seek autonomy aspire to emulate in government too."
+
+Strategy:
+Autonomous Rule grants every city in your realm a sovereign that governs over them. They all have their specialisation, some of which are straightforward buffs while others are more unique.</German>
+		<Italian>Autonomous Rule
+
+"It's a matter of respect to not get involved in your neighbours affairs unless they call for aid, is an unspoken rule of any society that claims to stand above barbarism. A principle that many who seek autonomy aspire to emulate in government too."
+
+Strategy:
+Autonomous Rule grants every city in your realm a sovereign that governs over them. They all have their specialisation, some of which are straightforward buffs while others are more unique.</Italian>
+		<Spanish>Autonomous Rule
+
+"It's a matter of respect to not get involved in your neighbours affairs unless they call for aid, is an unspoken rule of any society that claims to stand above barbarism. A principle that many who seek autonomy aspire to emulate in government too."
+
+Strategy:
+Autonomous Rule grants every city in your realm a sovereign that governs over them. They all have their specialisation, some of which are straightforward buffs while others are more unique.</Spanish>
+	</TEXT>
+	<TEXT>		
+		<Tag>TXT_KEY_CIVIC_CITY_STATES_HELP</Tag>
+		<English>[ICON_BULLET]Every city is governed by a sovereign with a random set of traits</English>
+		<French>[ICON_BULLET]Every city is governed by a sovereign with a random set of traits</French>
+		<German>[ICON_BULLET]Every city is governed by a sovereign with a random set of traits</German>
+		<Italian>[ICON_BULLET]Every city is governed by a sovereign with a random set of traits</Italian>
+		<Spanish>[ICON_BULLET]Every city is governed by a sovereign with a random set of traits</Spanish>
+	</TEXT>
+				<!-- Absolute Rule (God King) -->
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_GOD_KING_V_OVR</Tag>
+		<English>Absolute Rule</English>
+		<French>Absolute Rule</French>
+		<German>Absolute Rule</German>
+		<Italian>Absolute Rule</Italian>
+		<Spanish>Absolute Rule</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_GOD_KING_PEDIA_C_OVR</Tag>
+		<English>Absolute rule
+
+"Following one plan rather then having to juggle multiple competing ideas, is the promise of  centralisation. Because why try to maintain balance of practises when you could enforce conformity under one persons vision."
+
+Strategy: Absolute rule is a civic that concentrates power in your capital at the expense of your non capital citizens.
+</English>
+		<French>Absolute rule
+
+"Following one plan rather then having to juggle multiple competing ideas, is the promise of  centralisation. Because why try to maintain balance of practises when you could enforce conformity under one persons vision."
+
+Strategy: Absolute rule is a civic that concentrates power in your capital at the expense of your non capital citizens.
+</French>
+		<German>Absolute rule
+
+"Following one plan rather then having to juggle multiple competing ideas, is the promise of  centralisation. Because why try to maintain balance of practises when you could enforce conformity under one persons vision."
+
+Strategy: Absolute rule is a civic that concentrates power in your capital at the expense of your non capital citizens.
+</German>
+		<Italian>Absolute rule
+
+"Following one plan rather then having to juggle multiple competing ideas, is the promise of  centralisation. Because why try to maintain balance of practises when you could enforce conformity under one persons vision."
+
+Strategy: Absolute rule is a civic that concentrates power in your capital at the expense of your non capital citizens.
+</Italian>
+		<Spanish>Absolute rule
+
+"Following one plan rather then having to juggle multiple competing ideas, is the promise of  centralisation. Because why try to maintain balance of practises when you could enforce conformity under one persons vision."
+
+Strategy: Absolute rule is a civic that concentrates power in your capital at the expense of your non capital citizens.
+</Spanish>
+	</TEXT>
+				<!-- Magocracy -->
+	<TEXT>		
+		<Tag>TXT_KEY_CIVIC_MAGOCRACY</Tag>
+		<English>Magocracy</English>
+		<French>Magocracy</French>
+		<German>Magocracy</German>
+		<Italian>Magocracy</Italian>
+		<Spanish>Magocracy</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MAGOCRACY_PEDIA</Tag>
+		<English>Magocracy:
+"Mages embody the essence of raw potential. But all too often they are more interested in conducting their own experiments and research rather then gathering together and debatting about politicy matters. Understandably so, if all you know is how to advance your own individual power you won't look at the collective. But sometimes, some mages realise their situation in the greater picture and act upon it."
+Strategy:
+A Magocracy offers you the ability to turn your mages into generals and buff the unites asigned to them. Increasing their potential to gain XP.</English>
+		<French>Magocracy:
+"Mages embody the essence of raw potential. But all too often they are more interested in conducting their own experiments and research rather then gathering together and debatting about politicy matters. Understandably so, if all you know is how to advance your own individual power you won't look at the collective. But sometimes, some mages realise their situation in the greater picture and act upon it."
+Strategy:
+A Magocracy offers you the ability to turn your mages into generals and buff the unites asigned to them. Increasing their potential to gain XP.</French>
+		<German>Magocracy:
+"Mages embody the essence of raw potential. But all too often they are more interested in conducting their own experiments and research rather then gathering together and debatting about politicy matters. Understandably so, if all you know is how to advance your own individual power you won't look at the collective. But sometimes, some mages realise their situation in the greater picture and act upon it."
+Strategy:
+A Magocracy offers you the ability to turn your mages into generals and buff the unites asigned to them. Increasing their potential to gain XP.</German>
+		<Italian>Magocracy:
+"Mages embody the essence of raw potential. But all too often they are more interested in conducting their own experiments and research rather then gathering together and debatting about politicy matters. Understandably so, if all you know is how to advance your own individual power you won't look at the collective. But sometimes, some mages realise their situation in the greater picture and act upon it."
+Strategy:
+A Magocracy offers you the ability to turn your mages into generals and buff the unites asigned to them. Increasing their potential to gain XP.</Italian>
+		<Spanish>Magocracy:
+"Mages embody the essence of raw potential. But all too often they are more interested in conducting their own experiments and research rather then gathering together and debatting about politicy matters. Understandably so, if all you know is how to advance your own individual power you won't look at the collective. But sometimes, some mages realise their situation in the greater picture and act upon it."
+Strategy:
+A Magocracy offers you the ability to turn your mages into generals and buff the unites asigned to them. Increasing their potential to gain XP.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MAGOCRACY_HELP</Tag>
+		<English>[ICON_BULLET]Free Promotions [LINK=PROMOTION_ARCANE_PRIVILEGE]Arcane Privilege[\LINK], [LINK=PROMOTION_ARCANE_AUTHORITY]Authority[\LINK] and [LINK=PROMOTION_ARCANE_SUPREMACY]Supremacy[\LINK] for [LINK=UNITCOMBAT_ADEPT]Arcane Units[\LINK]</English>
+		<French>[ICON_BULLET]Free Promotions [LINK=PROMOTION_ARCANE_PRIVILEGE]Arcane Privilege[\LINK], [LINK=PROMOTION_ARCANE_AUTHORITY]Authority[\LINK] and [LINK=PROMOTION_ARCANE_SUPREMACY]Supremacy[\LINK] for [LINK=UNITCOMBAT_ADEPT]Arcane Units[\LINK]</French>
+		<German>[ICON_BULLET]Free Promotions [LINK=PROMOTION_ARCANE_PRIVILEGE]Arcane Privilege[\LINK], [LINK=PROMOTION_ARCANE_AUTHORITY]Authority[\LINK] and [LINK=PROMOTION_ARCANE_SUPREMACY]Supremacy[\LINK] for [LINK=UNITCOMBAT_ADEPT]Arcane Units[\LINK]</German>
+		<Italian>[ICON_BULLET]Free Promotions [LINK=PROMOTION_ARCANE_PRIVILEGE]Arcane Privilege[\LINK], [LINK=PROMOTION_ARCANE_AUTHORITY]Authority[\LINK] and [LINK=PROMOTION_ARCANE_SUPREMACY]Supremacy[\LINK] for [LINK=UNITCOMBAT_ADEPT]Arcane Units[\LINK]</Italian>
+		<Spanish>[ICON_BULLET]Free Promotions [LINK=PROMOTION_ARCANE_PRIVILEGE]Arcane Privilege[\LINK], [LINK=PROMOTION_ARCANE_AUTHORITY]Authority[\LINK] and [LINK=PROMOTION_ARCANE_SUPREMACY]Supremacy[\LINK] for [LINK=UNITCOMBAT_ADEPT]Arcane Units[\LINK]</Spanish>
+	</TEXT>
+				<!-- Imperium -->
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_IMPERIUM</Tag>
+		<English>Imperium</English>
+		<French>Imperium</French>
+		<German>Imperium</German>
+		<Italian>Imperium</Italian>
+		<Spanish>Imperium</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_IMPERIUM_PEDIA</Tag>
+		<English>The Imperium
+"An empire's true strength often lies not just in its territory or military might, but in the complexity and efficiency of its bureaucracy. An intricate system of administration and governance that weaves together peoples, resources, and laws, enabling the empire to maintain order and implement policies across vast distances. In essence, the bureaucracy is the backbone that sustains an empire's power and longevity."
+Strategy:
+The empire civics main priority is boosting your cities. From crime fighting to increasing your plot radius to boosting your capital. The bigger your realm is the more advanced buildings you unlock</English>
+		<French>The Imperium
+"An empire's true strength often lies not just in its territory or military might, but in the complexity and efficiency of its bureaucracy. An intricate system of administration and governance that weaves together peoples, resources, and laws, enabling the empire to maintain order and implement policies across vast distances. In essence, the bureaucracy is the backbone that sustains an empire's power and longevity."
+Strategy:
+The empire civics main priority is boosting your cities. From crime fighting to increasing your plot radius to boosting your capital. The bigger your realm is the more advanced buildings you unlock</French>
+		<German>The Imperium
+"An empire's true strength often lies not just in its territory or military might, but in the complexity and efficiency of its bureaucracy. An intricate system of administration and governance that weaves together peoples, resources, and laws, enabling the empire to maintain order and implement policies across vast distances. In essence, the bureaucracy is the backbone that sustains an empire's power and longevity."
+Strategy:
+The empire civics main priority is boosting your cities. From crime fighting to increasing your plot radius to boosting your capital. The bigger your realm is the more advanced buildings you unlock</German>
+		<Italian>The Imperium
+"An empire's true strength often lies not just in its territory or military might, but in the complexity and efficiency of its bureaucracy. An intricate system of administration and governance that weaves together peoples, resources, and laws, enabling the empire to maintain order and implement policies across vast distances. In essence, the bureaucracy is the backbone that sustains an empire's power and longevity."
+Strategy:
+The empire civics main priority is boosting your cities. From crime fighting to increasing your plot radius to boosting your capital. The bigger your realm is the more advanced buildings you unlock.</Italian>
+		<Spanish>The Imperium
+"An empire's true strength often lies not just in its territory or military might, but in the complexity and efficiency of its bureaucracy. An intricate system of administration and governance that weaves together peoples, resources, and laws, enabling the empire to maintain order and implement policies across vast distances. In essence, the bureaucracy is the backbone that sustains an empire's power and longevity."
+Strategy:
+The empire civics main priority is boosting your cities. From crime fighting to increasing your plot radius to boosting your capital. The bigger your realm is the more advanced buildings you unlock.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_IMPERIUM_HELP</Tag>
+		<English>[ICON_BULLET]Grants access to the Imperial Buildings</English>
+		<French>[ICON_BULLET]Grants access to the Imperial Buildings</French>
+		<German>[ICON_BULLET]Grants access to the Imperial Buildings</German>
+		<Italian>[ICON_BULLET]Grants access to the Imperial Buildings</Italian>
+		<Spanish>[ICON_BULLET]Grants access to the Imperial Buildings</Spanish>
+	</TEXT>
+				<!-- Theocracy -->
+	<TEXT>		
+		<Tag>TXT_KEY_CIVIC_THEOCRACY_PEDIA_V_OVR</Tag>
+		<English>In the sanctified embrace of our nation's unyielding faith, our leaders rise as champions of divine supremacy, their every mandate a thunderous proclamation of the gods' will. In their righteous fury, they purge the heretics and infidels, ensuring our realm remains untainted by the corrupting influence of the unbelievers.[PARAGRAPH]- Unknown</English>
+		<French>In the sanctified embrace of our nation's unyielding faith, our leaders rise as champions of divine supremacy, their every mandate a thunderous proclamation of the gods' will. In their righteous fury, they purge the heretics and infidels, ensuring our realm remains untainted by the corrupting influence of the unbelievers.[PARAGRAPH]- Unknown</French>
+		<German>In the sanctified embrace of our nation's unyielding faith, our leaders rise as champions of divine supremacy, their every mandate a thunderous proclamation of the gods' will. In their righteous fury, they purge the heretics and infidels, ensuring our realm remains untainted by the corrupting influence of the unbelievers.[PARAGRAPH]- Unknown</German>
+		<Italian>In the sanctified embrace of our nation's unyielding faith, our leaders rise as champions of divine supremacy, their every mandate a thunderous proclamation of the gods' will. In their righteous fury, they purge the heretics and infidels, ensuring our realm remains untainted by the corrupting influence of the unbelievers.[PARAGRAPH]- Unknown</Italian>
+		<Spanish>In the sanctified embrace of our nation's unyielding faith, our leaders rise as champions of divine supremacy, their every mandate a thunderous proclamation of the gods' will. In their righteous fury, they purge the heretics and infidels, ensuring our realm remains untainted by the corrupting influence of the unbelievers.[PARAGRAPH]- Unknown</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_THEOCRACY_HELP</Tag>
+		<English>[ICON_BULLET]Free Promotions [LINK=PROMOTION_DIVINE_DECREE]Divine Decree[\LINK], [LINK=PROMOTION_DIVINE_MANDATE]Divine Mandate[\LINK] and [LINK=PROMOTION_ZEALOTRY]Zealotry[\LINK] for [LINK=UNITCOMBAT_DISCIPLE]Disciple Units[\LINK]</English>
+		<French>[ICON_BULLET]Free Promotions [LINK=PROMOTION_DIVINE_DECREE]Divine Decree[\LINK], [LINK=PROMOTION_DIVINE_MANDATE]Divine Mandate[\LINK] and [LINK=PROMOTION_ZEALOTRY]Zealotry[\LINK] for [LINK=UNITCOMBAT_DISCIPLE]Disciple Units[\LINK]</French>
+		<German>[ICON_BULLET]Free Promotions [LINK=PROMOTION_DIVINE_DECREE]Divine Decree[\LINK], [LINK=PROMOTION_DIVINE_MANDATE]Divine Mandate[\LINK] and [LINK=PROMOTION_ZEALOTRY]Zealotry[\LINK] for [LINK=UNITCOMBAT_DISCIPLE]Disciple Units[\LINK]</German>
+		<Italian>[ICON_BULLET]Free Promotions [LINK=PROMOTION_DIVINE_DECREE]Divine Decree[\LINK], [LINK=PROMOTION_DIVINE_MANDATE]Divine Mandate[\LINK] and [LINK=PROMOTION_ZEALOTRY]Zealotry[\LINK] for [LINK=UNITCOMBAT_DISCIPLE]Disciple Units[\LINK]</Italian>
+		<Spanish>[ICON_BULLET]Free Promotions [LINK=PROMOTION_DIVINE_DECREE]Divine Decree[\LINK], [LINK=PROMOTION_DIVINE_MANDATE]Divine Mandate[\LINK] and [LINK=PROMOTION_ZEALOTRY]Zealotry[\LINK] for [LINK=UNITCOMBAT_DISCIPLE]Disciple Units[\LINK]</Spanish>
+	</TEXT>
+				<!-- Mafiocracy -->
+	<TEXT>		
+		<Tag>TXT_KEY_CIVIC_MAFIOCRACY</Tag>
+		<English>Mafiocracy</English>
+		<French>Mafiocracy</French>
+		<German>Mafiocracy</German>
+		<Italian>Mafiocracy</Italian>
+		<Spanish>Mafiocracy</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MAFIOCRACY_PEDIA</Tag>
+		<English>Mafiocracy 
+
+"Corruption is a slow process that starts with the failure of one individual to uphold their civic duty. From there it grows until it can challenge and take over the government itself. After which it does not matter who is nominally in charge as the true power lies with the crime lords."
+
+Strategy: Mafiocracy will boost your income and grand you access to buildings that scale with the crime rate. Additionally it will also grand your rogue unites a unique promotion that let's them passively boost crime in cities, both friendly and hostile.</English>
+		<French>Mafiocracy 
+
+"Corruption is a slow process that starts with the failure of one individual to uphold their civic duty. From there it grows until it can challenge and take over the government itself. After which it does not matter who is nominally in charge as the true power lies with the crime lords."
+
+Strategy: Mafiocracy will boost your income and grand you access to buildings that scale with the crime rate. Additionally it will also grand your rogue unites a unique promotion that let's them passively boost crime in cities, both friendly and hostile.</French>
+		<German>Mafiocracy 
+
+"Corruption is a slow process that starts with the failure of one individual to uphold their civic duty. From there it grows until it can challenge and take over the government itself. After which it does not matter who is nominally in charge as the true power lies with the crime lords."
+
+Strategy: Mafiocracy will boost your income and grand you access to buildings that scale with the crime rate. Additionally it will also grand your rogue unites a unique promotion that let's them passively boost crime in cities, both friendly and hostile.</German>
+		<Italian>Mafiocracy 
+
+"Corruption is a slow process that starts with the failure of one individual to uphold their civic duty. From there it grows until it can challenge and take over the government itself. After which it does not matter who is nominally in charge as the true power lies with the crime lords."
+
+Strategy: Mafiocracy will boost your income and grand you access to buildings that scale with the crime rate. Additionally it will also grand your rogue unites a unique promotion that let's them passively boost crime in cities, both friendly and hostile.</Italian>
+		<Spanish>Mafiocracy 
+
+"Corruption is a slow process that starts with the failure of one individual to uphold their civic duty. From there it grows until it can challenge and take over the government itself. After which it does not matter who is nominally in charge as the true power lies with the crime lords."
+
+Strategy: Mafiocracy will boost your income and grand you access to buildings that scale with the crime rate. Additionally it will also grand your rogue unites a unique promotion that let's them passively boost crime in cities, both friendly and hostile.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MAFIOCRACY_HELP</Tag>
+		<English>[ICON_BULLET]Free Promotions [LINK=PROMOTION_MOB_BOSS]Mob Boss[\LINK] for [LINK=UNITCOMBAT_ROGUE]Rogue Units[\LINK]</English>
+		<French>[ICON_BULLET]Free Promotions [LINK=PROMOTION_MOB_BOSS]Mob Boss[\LINK] for [LINK=UNITCOMBAT_ROGUE]Rogue Units[\LINK]</French>
+		<German>[ICON_BULLET]Free Promotions [LINK=PROMOTION_MOB_BOSS]Mob Boss[\LINK] for [LINK=UNITCOMBAT_ROGUE]Rogue Units[\LINK]</German>
+		<Italian>[ICON_BULLET]Free Promotions [LINK=PROMOTION_MOB_BOSS]Mob Boss[\LINK] for [LINK=UNITCOMBAT_ROGUE]Rogue Units[\LINK]</Italian>
+		<Spanish>[ICON_BULLET]Free Promotions [LINK=PROMOTION_MOB_BOSS]Mob Boss[\LINK] for [LINK=UNITCOMBAT_ROGUE]Rogue Units[\LINK]</Spanish>
+	</TEXT>
+				<!-- Republic -->
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_REPUBLIC_PEDIA_C_OVR</Tag>
+		<English>Republic
+
+"All to often a concentration of power onto the elites causes them to become detached from the problems of the every day people. A senate is an easy yet elegant solution, because after all the right idea put in the right ears can move mountains."
+
+Strategy:
+Republic is a civic that focuses on great people. If you run a lot of specialists this can help you enhance that.
+</English>
+		<French>Republic
+
+"All to often a concentration of power onto the elites causes them to become detached from the problems of the every day people. A senate is an easy yet elegant solution, because after all the right idea put in the right ears can move mountains."
+
+Strategy:
+Republic is a civic that focuses on great people. If you run a lot of specialists this can help you enhance that.
+</French>
+		<German>Republic
+
+"All to often a concentration of power onto the elites causes them to become detached from the problems of the every day people. A senate is an easy yet elegant solution, because after all the right idea put in the right ears can move mountains."
+
+Strategy:
+Republic is a civic that focuses on great people. If you run a lot of specialists this can help you enhance that.
+</German>
+		<Italian>Republic
+
+"All to often a concentration of power onto the elites causes them to become detached from the problems of the every day people. A senate is an easy yet elegant solution, because after all the right idea put in the right ears can move mountains."
+
+Strategy:
+Republic is a civic that focuses on great people. If you run a lot of specialists this can help you enhance that.
+</Italian>
+		<Spanish>Republic
+
+"All to often a concentration of power onto the elites causes them to become detached from the problems of the every day people. A senate is an easy yet elegant solution, because after all the right idea put in the right ears can move mountains."
+
+Strategy:
+Republic is a civic that focuses on great people. If you run a lot of specialists this can help you enhance that.
+</Spanish>
+	</TEXT>
+				<!-- Adventuring (Nationhood) -->
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_NATIONHOOD_V_OVR</Tag>
+		<English>Adventuring</English>
+		<French>Adventuring</French>
+		<German>Adventuring</German>
+		<Italian>Adventuring</Italian>
+		<Spanish>Adventuring</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_NATIONHOOD_V_OVR_PEDIA</Tag>
+		<English>The first cracks in the ice brought a mix of fear and hope. Generations had known only the glacial expanse, a world of white and biting wind. Now, with the melt, whispers of the Ages Prior grew louder. Ancient tales spoke of lush lands and forgotten knowledge, treasures buried beneath the thaw. The tribe, once huddled against the cold, now looked outwards, their hearts a mix of apprehension and a burning desire to reclaim what was lost. The future lay in the past, and the melting ice was their key.</English>
+		<French>NTBW</French>
+		<German>NTBW</German>
+		<Italian>NTBW</Italian>
+		<Spanish>NTBW</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_NATIONHOOD_V_OVR_HELP</Tag>
+		<English>[ICON_BULLET]Free Promotions [LINK=PROMOTION_C_ADVENTURING]Culture of Adventurers[\LINK]</English>
+		<French>[ICON_BULLET]Free Promotions [LINK=PROMOTION_C_ADVENTURING]Culture of Adventurers[\LINK]</French>
+		<German>[ICON_BULLET]Free Promotions [LINK=PROMOTION_C_ADVENTURING]Culture of Adventurers[\LINK]</German>
+		<Italian>[ICON_BULLET]Free Promotions [LINK=PROMOTION_C_ADVENTURING]Culture of Adventurers[\LINK]</Italian>
+		<Spanish>[ICON_BULLET]Free Promotions [LINK=PROMOTION_C_ADVENTURING]Culture of Adventurers[\LINK]</Spanish>
+	</TEXT>
+				<!-- Pacifism -->
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_PACIFISM_V_OVR_PEDIA</Tag>
+		<English>Generations confined by the frozen world have learned a hard truth: the conflicts of the Age of Magic, whispered in cautionary tales, led us to this frozen nightmare. Now, as the ice recedes, our tribe doesn't look to reclaim the past through conquest, but through cooperation. We seek understanding and peace with whatever emerges from the melt, choosing empathy and shared survival over the destructive path our ancestors walked.</English>
+		<French>NTBW</French>
+		<German>NTBW</German>
+		<Italian>NTBW</Italian>
+		<Spanish>NTBW</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_PACIFISM_V_OVR_HELP</Tag>
+		<English>[ICON_BULLET]Free Promotions [LINK=PROMOTION_C_PACIFISM]Culture of Peace[\LINK]</English>
+		<French>[ICON_BULLET]Free Promotions [LINK=PROMOTION_C_PACIFISM]Culture of Peace[\LINK]</French>
+		<German>[ICON_BULLET]Free Promotions [LINK=PROMOTION_C_PACIFISM]Culture of Peace[\LINK]</German>
+		<Italian>[ICON_BULLET]Free Promotions [LINK=PROMOTION_C_PACIFISM]Culture of Peace[\LINK]</Italian>
+		<Spanish>[ICON_BULLET]Free Promotions [LINK=PROMOTION_C_PACIFISM]Culture of Peace[\LINK]</Spanish>
+	</TEXT>
+				<!-- Seclusion (Religion) -->
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_RELIGION_V_OVR</Tag>
+		<English>Seclusion</English>
+		<French>Seclusion</French>
+		<German>Seclusion</German>
+		<Italian>Seclusion</Italian>
+		<Spanish>Seclusion</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_RELIGION_V_OVR_HELP</Tag>
+		<English>[ICON_BULLET]Free Promotions [LINK=PROMOTION_C_SECLUSION]Culture of Isolation[\LINK]</English>
+		<French>[ICON_BULLET]Free Promotions [LINK=PROMOTION_C_SECLUSION]Culture of Isolation[\LINK]</French>
+		<German>[ICON_BULLET]Free Promotions [LINK=PROMOTION_C_SECLUSION]Culture of Isolation[\LINK]</German>
+		<Italian>[ICON_BULLET]Free Promotions [LINK=PROMOTION_C_SECLUSION]Culture of Isolation[\LINK]</Italian>
+		<Spanish>[ICON_BULLET]Free Promotions [LINK=PROMOTION_C_SECLUSION]Culture of Isolation[\LINK]</Spanish>
+	</TEXT>
+				<!-- Consumption -->
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CONSUMPTION_V_OVR_PEDIA</Tag>
+		<English>"In this world reclaimed from the cold hardships, why not embrace the warmth of pleasure? Hedonism is not mere indulgence, but a celebration of life's fleeting beauty-finding joy amidst the ruins and savouring each moment as a precious gift in our new era. These moments of pleasure are our rebellion, our defiance against despair, and the foundation upon which we can rebuild a vibrant, joyful future."</English>
+		<French>NTBW</French>
+		<German>NTBW</German>
+		<Italian>NTBW</Italian>
+		<Spanish>NTBW</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CONSUMPTION_V_OVR_HELP</Tag>
+		<English>[ICON_BULLET]Free Promotions [LINK=PROMOTION_C_EXCESS]Culture of Excess[\LINK]</English>
+		<French>[ICON_BULLET]Free Promotions [LINK=PROMOTION_C_EXCESS]Culture of Excess[\LINK]</French>
+		<German>[ICON_BULLET]Free Promotions [LINK=PROMOTION_C_EXCESS]Culture of Excess[\LINK]</German>
+		<Italian>[ICON_BULLET]Free Promotions [LINK=PROMOTION_C_EXCESS]Culture of Excess[\LINK]</Italian>
+		<Spanish>[ICON_BULLET]Free Promotions [LINK=PROMOTION_C_EXCESS]Culture of Excess[\LINK]</Spanish>
+	</TEXT>
+				<!-- Scholarship -->
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_SCHOLARSHIP_PEDIA_V_OVR</Tag>
+		<English>"You know what would really help? If everyone knew how to put together a bomb! I'm so sick and tired of having to reassigne Alchemists from their critical research just because the peasants can't mix a concoction or make use of basic enchantments you don't even need mana for! Just teach them how to do it already!!"</English>
+		<French>NTBW</French>
+		<German>NTBW</German>
+		<Italian>NTBW</Italian>
+		<Spanish>NTBW</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_SCHOLARSHIP_V_OVR_HELP</Tag>
+		<English>[ICON_BULLET]Free Promotions [LINK=PROMOTION_C_TINKERING]Culture of Tinkering[\LINK]</English>
+		<French>[ICON_BULLET]Free Promotions [LINK=PROMOTION_C_TINKERING]Culture of Tinkering[\LINK]</French>
+		<German>[ICON_BULLET]Free Promotions [LINK=PROMOTION_C_TINKERING]Culture of Tinkering[\LINK]</German>
+		<Italian>[ICON_BULLET]Free Promotions [LINK=PROMOTION_C_TINKERING]Culture of Tinkering[\LINK]</Italian>
+		<Spanish>[ICON_BULLET]Free Promotions [LINK=PROMOTION_C_TINKERING]Culture of Tinkering[\LINK]</Spanish>
+	</TEXT>
+				<!-- Liberty -->
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_LIBERTY_V_OVR_HELP</Tag>
+		<English>[ICON_BULLET]Increases the rate at which hammers are converted to Culture. [ICON_BULLET]Free Promotions [LINK=PROMOTION_C_FREEDOM]Culture of Freedom[\LINK]</English>
+		<French>[ICON_BULLET]Augmente le taux de conversion des marteaux[ICON_PRODUCTION] en culture [ICON_CULTURE]</French>
+		<German>[ICON_BULLET]Erhöht die Rate der Umwandlung von Hämmern in Kultur.</German>
+		<Italian>[ICON_BULLET]Increases the rate at which hammers are converted to Culture. [ICON_BULLET]Free Promotions [LINK=PROMOTION_C_FREEDOM]Culture of Freedom[\LINK]</Italian>
+		<Spanish>[ICON_BULLET]Increases the rate at which hammers are converted to Culture. [ICON_BULLET]Free Promotions [LINK=PROMOTION_C_FREEDOM]Culture of Freedom[\LINK]</Spanish>
+	</TEXT>
+				<!-- Religion (Social Order) -->
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_Social_ORDER_V_OVR_HELP</Tag>
+		<English>[ICON_BULLET]Free Promotions [LINK=PROMOTION_C_RAPTURED]Culture of Rapture[\LINK]</English>
+		<French>[ICON_BULLET]Free Promotions [LINK=PROMOTION_C_RAPTURED]Culture of Rapture[\LINK]</French>
+		<German>[ICON_BULLET]Free Promotions [LINK=PROMOTION_C_RAPTURED]Culture of Rapture[\LINK]</German>
+		<Italian>[ICON_BULLET]Free Promotions [LINK=PROMOTION_C_RAPTURED]Culture of Rapture[\LINK]</Italian>
+		<Spanish>[ICON_BULLET]Free Promotions [LINK=PROMOTION_C_RAPTURED]Culture of Rapture[\LINK]</Spanish>
+	</TEXT>
+	<TEXT>		<!-- Nomadic -->
+		<Tag>TXT_KEY_CIVIC_DECENTRALIZATION_V_OVR</Tag>
+		<English>Nomadic</English>
+		<French>Nomadic</French>
+		<German>Nomadic</German>
+		<Italian>Nomadic</Italian>
+		<Spanish>Nomadic</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_DECENTRALIZATION_V_OVR_PEDIA</Tag>
+		<English>The remnants of our Tribe move cautiously across the landscape, their ragged figures cloaked in patchwork furs and scavenged hides. Once scattered in the icy wastes, they now gather around emerging settlements, crumbling ruins and forsaken outposts, where faint signs of civilization flicker like dying stars. Hunters track the emerging wildlife. Mammoths, snow wolves, deer's, bears and what every survived the prior age.</English>
+		<French>NTBW</French>
+		<German>NTBW</German>
+		<Italian>NTBW</Italian>
+		<Spanish>NTBW</Spanish>
+	</TEXT>
+				<!-- Guardian Of Nature -->
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_GUARDIAN_OF_NATURE_V_OVR_PEDIA</Tag>
+		<English>"Don't worry about dying. You remember the pledge you gave to the land? Protecting it's every inhabitants. From plants to animals to us. We all need someone. It's a selfless oath and as such Sucellus has granted us eternal rebirth. Even if you die today, you will get to life another day again!"</English>
+		<French>NTBW</French>
+		<German>NTBW</German>
+		<Italian>NTBW</Italian>
+		<Spanish>NTBW</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TTXT_KEY_CIVIC_GUARDIAN_OF_NATURE_V_OVR_HELP</Tag>
+		<English>[ICON_BULLET]Grants access to Garden Cities</English>
+		<French>[ICON_BULLET]Grants access to Garden Cities</French>
+		<German>[ICON_BULLET]Grants access to Garden Cities</German>
+		<Italian>[ICON_BULLET]Grants access to Garden Cities</Italian>
+		<Spanish>[ICON_BULLET]Grants access to Garden Cities</Spanish>
+	</TEXT>
+</Civ4GameText>

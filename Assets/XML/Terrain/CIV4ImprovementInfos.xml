@@ -3206,12 +3206,12 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
-			<iAppearanceProbability>55</iAppearanceProbability>
-			<iLairCreationWeight>25</iLairCreationWeight>
+			<iAppearanceProbability>35</iAppearanceProbability>
+			<iLairCreationWeight>15</iLairCreationWeight>
 			<LairCreationWeightTechs>
 				<LairCreationWeightTech>
 					<LairCreationWeightTechType>TECH_NECROMANCY</LairCreationWeightTechType>
-					<iLairCreationWeightTech>-25</iLairCreationWeightTech>
+					<iLairCreationWeightTech>-15</iLairCreationWeightTech>
 				</LairCreationWeightTech>
 			</LairCreationWeightTechs>
 			<LairUpgradeTechs>
@@ -3334,11 +3334,11 @@
 			<LairCreationWeightTechs>
 				<LairCreationWeightTech>
 					<LairCreationWeightTechType>TECH_NECROMANCY</LairCreationWeightTechType>
-					<iLairCreationWeightTech>25</iLairCreationWeightTech>
+					<iLairCreationWeightTech>15</iLairCreationWeightTech>
 				</LairCreationWeightTech>
 				<LairCreationWeightTech>
 					<LairCreationWeightTechType>TECH_MALEVOLENT_DESIGNS</LairCreationWeightTechType>
-					<iLairCreationWeightTech>-25</iLairCreationWeightTech>
+					<iLairCreationWeightTech>-15</iLairCreationWeightTech>
 				</LairCreationWeightTech>
 			</LairCreationWeightTechs>
 			<LairUpgradeTechs>
@@ -3472,7 +3472,7 @@
 			<LairCreationWeightTechs>
 				<LairCreationWeightTech>
 					<LairCreationWeightTechType>TECH_MALEVOLENT_DESIGNS</LairCreationWeightTechType>
-					<iLairCreationWeightTech>25</iLairCreationWeightTech>
+					<iLairCreationWeightTech>15</iLairCreationWeightTech>
 				</LairCreationWeightTech>
 			</LairCreationWeightTechs>
 			<iBasePlotCounterModify>20</iBasePlotCounterModify>

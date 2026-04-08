@@ -39,7 +39,7 @@
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GOLD</FlavorType>
-					<iFlavor>10</iFlavor>
+					<iFlavor>15</iFlavor>
 				</Flavor>
 				<Flavor>
 					<FlavorType>FLAVOR_SCIENCE</FlavorType>
@@ -121,7 +121,7 @@
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_SCIENCE</FlavorType>
-					<iFlavor>10</iFlavor>
+					<iFlavor>15</iFlavor>
 				</Flavor>
 				<Flavor>
 					<FlavorType>FLAVOR_GROWTH</FlavorType>
@@ -224,7 +224,7 @@
 				</Flavor>
 				<Flavor>
 					<FlavorType>FLAVOR_HEALTH</FlavorType>
-					<iFlavor>20</iFlavor>
+					<iFlavor>25</iFlavor>
 				</Flavor>
 			</Flavors>
 		</BuildingInfo>
@@ -296,7 +296,7 @@
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GROWTH</FlavorType>
-					<iFlavor>10</iFlavor>
+					<iFlavor>15</iFlavor>
 				</Flavor>
 			</Flavors>
 			<TrainXPCaps>

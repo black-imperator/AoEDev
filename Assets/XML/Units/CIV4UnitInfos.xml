@@ -2467,7 +2467,7 @@
 			<iWeaponTierMax>3</iWeaponTierMax>
 			<ReligionType>RELIGION_OCTOPUS_OVERLORDS</ReligionType>
 			<Image>Art/Interface/Popups/CondatisBanner.dds</Image>
-			<Quote>TXT_KEY_POPUP_CONDATIS</Quote>
+			<Quote>TXT_KEY_UNIT_CONDATIS_PEDIA</Quote>
 			<DamageTypeCombats>
 				<DamageTypeCombat>
 					<DamageType>DAMAGE_HOLY</DamageType>
@@ -6446,7 +6446,7 @@
 			<iMinLevel>6</iMinLevel>
 			<iTier>4</iTier>
 			<Image>Art/Interface/Popups/Miquiztli.dds</Image>
-			<Quote>TXT_KEY_UNIT_MIQUIZTLI_STRATEGY</Quote>
+			<Quote>TXT_KEY_POPUP_MIQUIZTLI_CREATION</Quote>
 			<DamageTypeCombats>
 				<DamageTypeCombat>
 					<DamageType>DAMAGE_POISON</DamageType>
@@ -37262,6 +37262,13 @@
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 			</FreePromotions>
+			<AllowPromotions>
+				<Promotion>PROMOTION_EMPOWER1</Promotion>
+				<Promotion>PROMOTION_EMPOWER2</Promotion>
+				<Promotion>PROMOTION_EMPOWER3</Promotion>
+				<Promotion>PROMOTION_EMPOWER4</Promotion>
+				<Promotion>PROMOTION_EMPOWER5</Promotion>
+			</AllowPromotions>
 			<bExplodeInCombat>1</bExplodeInCombat>
 			<bNoWarWeariness>1</bNoWarWeariness>
 			<iTier>3</iTier>
@@ -37769,6 +37776,13 @@
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 			</FreePromotions>
+			<AllowPromotions>
+				<Promotion>PROMOTION_EMPOWER1</Promotion>
+				<Promotion>PROMOTION_EMPOWER2</Promotion>
+				<Promotion>PROMOTION_EMPOWER3</Promotion>
+				<Promotion>PROMOTION_EMPOWER4</Promotion>
+				<Promotion>PROMOTION_EMPOWER5</Promotion>
+			</AllowPromotions>
 			<bExplodeInCombat>1</bExplodeInCombat>
 			<bNoWarWeariness>1</bNoWarWeariness>
 			<iTier>4</iTier>
@@ -38159,6 +38173,13 @@
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 			</FreePromotions>
+			<AllowPromotions>
+				<Promotion>PROMOTION_EMPOWER1</Promotion>
+				<Promotion>PROMOTION_EMPOWER2</Promotion>
+				<Promotion>PROMOTION_EMPOWER3</Promotion>
+				<Promotion>PROMOTION_EMPOWER4</Promotion>
+				<Promotion>PROMOTION_EMPOWER5</Promotion>
+			</AllowPromotions>
 			<bExplodeInCombat>1</bExplodeInCombat>
 			<bNoWarWeariness>1</bNoWarWeariness>
 			<iTier>3</iTier>
@@ -48843,7 +48864,6 @@
 					<iCombat>1</iCombat>
 				</DamageTypeCombat>
 			</DamageTypeCombats>
-			<PyPerTurn>effectOtoloch(pCaster)</PyPerTurn>
 			<iAppearanceProb>100</iAppearanceProb>
 			<iPowerMult>3</iPowerMult>
 		</UnitInfo>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Units -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_PLEAD</Tag>
+		<English>Plead</English>
+		<French>Plead</French>
+		<German>Plead</German>
+		<Italian>Plead</Italian>
+		<Spanish>Plead</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_PLEAD_PEDIA</Tag>
+		<English>Plead</English>
+		<French>Plead</French>
+		<German>Plead</German>
+		<Italian>Plead</Italian>
+		<Spanish>Plead</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_PLEAD_HELP</Tag>
+		<English>Plead</English>
+		<French>Plead</French>
+		<German>Plead</German>
+		<Italian>Plead</Italian>
+		<Spanish>Plead</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_MIGRATE_OUT</Tag>
+		<English>Migrate Out</English>
+		<French>Migrate Out</French>
+		<German>Migrate Out</German>
+		<Italian>Migrate Out</Italian>
+		<Spanish>Migrate Out</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_MIGRATE_IN</Tag>
+		<English>Migrate In</English>
+		<French>Migrate In</French>
+		<German>Migrate In</German>
+		<Italian>Migrate In</Italian>
+		<Spanish>Migrate In</Spanish>
+	</TEXT>
+</Civ4GameText>

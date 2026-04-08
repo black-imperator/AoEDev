@@ -181,7 +181,9 @@ void CyPlayerPythonInterface2(python::class_<CyPlayer>& x)
 		.def("getDisableProduction", &CyPlayer::getDisableProduction, "int ()")
 		.def("changeDisableResearch", &CyPlayer::changeDisableResearch, "void (int iChange)")
 		.def("getDisableResearch", &CyPlayer::getDisableResearch, "int ()")
-/*************************************************************************************************/
+		.def("changeBroadAlignment", &CyPlayer::changeBroadAlignment, "void (int iChange)")
+		.def("changeBroadEthicalAlignment", &CyPlayer::changeBroadEthicalAlignment, "void (int iChange)")
+			/*************************************************************************************************/
 /**	StasisReworkCode					Feb 3 2026										Klauros	**/
 /**								Coding for Stasis Rework										**/
 /*************************************************************************************************/

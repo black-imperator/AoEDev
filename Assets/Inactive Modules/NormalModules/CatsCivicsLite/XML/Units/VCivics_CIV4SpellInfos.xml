@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Spell Infos -->
+<Civ4SpellInfos xmlns="x-schema:VCivics_CIV4UnitSpellSchema.xml">
+	<SpellInfos>
+		<SpellInfo>			<!-- Pacifism: Plead -->
+			<Type>SPELL_PLEAD</Type>
+			<Description>TXT_KEY_SPELL_PLEAD</Description>
+			<Civilopedia>TXT_KEY_SPELL_PLEAD_PEDIA</Civilopedia>
+			<Help>TXT_KEY_SPELL_PACIFY_HELP</Help>
+			<SpellClasses>
+				<SpellClass>
+					<SpellClassType>SPELLCLASS_MIND</SpellClassType>
+					<bSpellClass>1</bSpellClass>
+				</SpellClass>
+				<SpellClass>
+					<SpellClassType>SPELLCLASS_DEBUFF</SpellClassType>
+					<bSpellClass>1</bSpellClass>
+				</SpellClass>
+			</SpellClasses>
+			<PromotionPrereq1>PROMOTION_C_PACIFISM</PromotionPrereq1>
+			<bAllowAI>1</bAllowAI>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+			<bResistable>1</bResistable>
+			<iRange>1</iRange>
+			<iResistModify>50</iResistModify>
+			<AddPromotions>
+				<AddPromotion>PROMOTION_CHARMED</AddPromotion>
+			</AddPromotions>
+			<bImmuneTeam>1</bImmuneTeam>
+			<bImmuneNeutral>1</bImmuneNeutral>
+			<bImmuneNotAlive>1</bImmuneNotAlive>
+			<Effect>EFFECT_SPELL1</Effect>
+			<Sound>AS3D_SPELL_CHARM_PERSON</Sound>
+			<Button>Art/Interface/Buttons/Promotions/Charmed.dds</Button>
+		</SpellInfo>
+		
+	</SpellInfos>
+</Civ4SpellInfos>

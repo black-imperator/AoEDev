@@ -486,6 +486,12 @@ void CvGame::init(HandicapTypes eHandicap)
 		gDLL->logMsg("listtrait.log", szError);
 
 	}
+	for (int i = 0; i < GC.getNumPromotionInfos(); i++)
+	{
+		szError.Format("id %i for type %s", i, GC.getPromotionInfo((PromotionTypes)i).getType());
+		gDLL->logMsg("listpromo.log", szError);
+
+	}
 
 	AI_init();
 
@@ -11966,7 +11972,7 @@ bool CvGame::isTikuCurse()
 bool CvGame::isUniDay() {
 	time_t rawtime;
 	tm* ptm;
-
+//	return false;
 	if (isTikuCurse())
 	{
 		return true;

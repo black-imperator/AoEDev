@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Civ4GameText xmlns="http://www.firaxis.com">
+
+		<!-- Imperium -->
+
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_IMPERIAL_MAGISTRATES_CITADEL</Tag>
+		<English>Imperial Magistrate's Citadel</English>
+		<French>Imperial Magistrate's Citadel</French>
+		<German>Imperial Magistrate's Citadel</German>
+		<Italian>Imperial Magistrate's Citadel</Italian>
+		<Spanish>Imperial Magistrate's Citadel</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_IMPERIAL_MAGISTRATES_CITADEL_PEDIA</Tag>
+		<English>Cradled within the walls of the imperial citadel, the appointed steward of imperial decree presides over a myriad of critical affairs, ranging from the meticulous administration of governance to the solemn adjudication of justice and the strategic orchestration of military endeavors. From the heart of this venerable bastion of authority, the imperial magistrate wields the scepter of sovereignty, ensuring the steadfast execution of the Imperium's will and the preservation of order across its vast domains.</English>
+		<French>Cradled within the walls of the imperial citadel, the appointed steward of imperial decree presides over a myriad of critical affairs, ranging from the meticulous administration of governance to the solemn adjudication of justice and the strategic orchestration of military endeavors. From the heart of this venerable bastion of authority, the imperial magistrate wields the scepter of sovereignty, ensuring the steadfast execution of the Imperium's will and the preservation of order across its vast domains.</French>
+		<German>Cradled within the walls of the imperial citadel, the appointed steward of imperial decree presides over a myriad of critical affairs, ranging from the meticulous administration of governance to the solemn adjudication of justice and the strategic orchestration of military endeavors. From the heart of this venerable bastion of authority, the imperial magistrate wields the scepter of sovereignty, ensuring the steadfast execution of the Imperium's will and the preservation of order across its vast domains.</German>
+		<Italian>Cradled within the walls of the imperial citadel, the appointed steward of imperial decree presides over a myriad of critical affairs, ranging from the meticulous administration of governance to the solemn adjudication of justice and the strategic orchestration of military endeavors. From the heart of this venerable bastion of authority, the imperial magistrate wields the scepter of sovereignty, ensuring the steadfast execution of the Imperium's will and the preservation of order across its vast domains.</Italian>
+		<Spanish>Cradled within the walls of the imperial citadel, the appointed steward of imperial decree presides over a myriad of critical affairs, ranging from the meticulous administration of governance to the solemn adjudication of justice and the strategic orchestration of military endeavors. From the heart of this venerable bastion of authority, the imperial magistrate wields the scepter of sovereignty, ensuring the steadfast execution of the Imperium's will and the preservation of order across its vast domains.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_IMPERIAL_MAGISTRATES_CITADEL_STRATEGY</Tag>
+		<English>The Imperial Magistrate's Citadel provides few boni on its own but allows for more powerful buildings to be constructed once enough citadels have been constructed.</English>
+		<French>The Imperial Magistrate's Citadel provides few boni on its own but allows for more powerful buildings to be constructed once enough citadels have been constructed.</French>
+		<German>The Imperial Magistrate's Citadel provides few boni on its own but allows for more powerful buildings to be constructed once enough citadels have been constructed.</German>
+		<Italian>The Imperial Magistrate's Citadel provides few boni on its own but allows for more powerful buildings to be constructed once enough citadels have been constructed.</Italian>
+		<Spanish>The Imperial Magistrate's Citadel provides few boni on its own but allows for more powerful buildings to be constructed once enough citadels have been constructed.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_IMPERIAL_ARSENAL</Tag>
+		<English>Imperial Arsenal</English>
+		<French>Imperial Arsenal</French>
+		<German>Imperial Arsenal</German>
+		<Italian>Imperial Arsenal</Italian>
+		<Spanish>Imperial Arsenal</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_IMPERIAL_ARSENAL_PEDIA</Tag>
+		<English>At every border, the adversaries of the empire lie in wait, ever watchful for signs of vulnerability. To ensure the perpetuity of the empire, constant vigilance and the maintenance of a well-equipped, well-trained, and sizable military force are imperative, standing ready to defend against any threat that may arise.</English>
+		<French>At every border, the adversaries of the empire lie in wait, ever watchful for signs of vulnerability. To ensure the perpetuity of the empire, constant vigilance and the maintenance of a well-equipped, well-trained, and sizable military force are imperative, standing ready to defend against any threat that may arise.</French>
+		<German>At every border, the adversaries of the empire lie in wait, ever watchful for signs of vulnerability. To ensure the perpetuity of the empire, constant vigilance and the maintenance of a well-equipped, well-trained, and sizable military force are imperative, standing ready to defend against any threat that may arise.</German>
+		<Italian>At every border, the adversaries of the empire lie in wait, ever watchful for signs of vulnerability. To ensure the perpetuity of the empire, constant vigilance and the maintenance of a well-equipped, well-trained, and sizable military force are imperative, standing ready to defend against any threat that may arise.</Italian>
+		<Spanish>At every border, the adversaries of the empire lie in wait, ever watchful for signs of vulnerability. To ensure the perpetuity of the empire, constant vigilance and the maintenance of a well-equipped, well-trained, and sizable military force are imperative, standing ready to defend against any threat that may arise.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_IMPERIAL_REGIONAL_ADMINISTRATION</Tag>
+		<English>Imperial Regional Administration</English>
+		<French>Imperial Regional Administration</French>
+		<German>Imperial Regional Administration</German>
+		<Italian>Imperial Regional Administration</Italian>
+		<Spanish>Imperial Regional Administration</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_IMPERIAL_REGIONAL_ADMINISTRATION_PEDIA</Tag>
+		<English>As the empire expands its territories, stretching the borders further from the capital's grasp, the need arises for the establishment of regional administrative centers. These centers serve as vital hubs of governance, enabling efficient management and oversight of the outlying provinces. By decentralizing administrative functions and delegating authority to these regional hubs, the empire can ensure effective governance and responsiveness to the diverse needs of its burgeoning territories.</English>
+		<French>As the empire expands its territories, stretching the borders further from the capital's grasp, the need arises for the establishment of regional administrative centers. These centers serve as vital hubs of governance, enabling efficient management and oversight of the outlying provinces. By decentralizing administrative functions and delegating authority to these regional hubs, the empire can ensure effective governance and responsiveness to the diverse needs of its burgeoning territories.</French>
+		<German>As the empire expands its territories, stretching the borders further from the capital's grasp, the need arises for the establishment of regional administrative centers. These centers serve as vital hubs of governance, enabling efficient management and oversight of the outlying provinces. By decentralizing administrative functions and delegating authority to these regional hubs, the empire can ensure effective governance and responsiveness to the diverse needs of its burgeoning territories.</German>
+		<Italian>As the empire expands its territories, stretching the borders further from the capital's grasp, the need arises for the establishment of regional administrative centers. These centers serve as vital hubs of governance, enabling efficient management and oversight of the outlying provinces. By decentralizing administrative functions and delegating authority to these regional hubs, the empire can ensure effective governance and responsiveness to the diverse needs of its burgeoning territories.</Italian>
+		<Spanish>As the empire expands its territories, stretching the borders further from the capital's grasp, the need arises for the establishment of regional administrative centers. These centers serve as vital hubs of governance, enabling efficient management and oversight of the outlying provinces. By decentralizing administrative functions and delegating authority to these regional hubs, the empire can ensure effective governance and responsiveness to the diverse needs of its burgeoning territories.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_IMPERIAL_TRADE_HUB</Tag>
+		<English>Imperial Trade Hub</English>
+		<French>Imperial Trade Hub</French>
+		<German>Imperial Trade Hub</German>
+		<Italian>Imperial Trade Hub</Italian>
+		<Spanish>Imperial Trade Hub</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_IMPERIAL_TRADE_HUB_PEDIA</Tag>
+		<English>As the empire's borders extend, its reach into distant lands brings forth an abundance of exotic goods, heightening the demand for a resilient trading network. Consequently, the expansion of administrative capacities to encompass trade and commerce becomes imperative.</English>
+		<French>As the empire's borders extend, its reach into distant lands brings forth an abundance of exotic goods, heightening the demand for a resilient trading network. Consequently, the expansion of administrative capacities to encompass trade and commerce becomes imperative.</French>
+		<German>As the empire's borders extend, its reach into distant lands brings forth an abundance of exotic goods, heightening the demand for a resilient trading network. Consequently, the expansion of administrative capacities to encompass trade and commerce becomes imperative.</German>
+		<Italian>As the empire's borders extend, its reach into distant lands brings forth an abundance of exotic goods, heightening the demand for a resilient trading network. Consequently, the expansion of administrative capacities to encompass trade and commerce becomes imperative.</Italian>
+		<Spanish>As the empire's borders extend, its reach into distant lands brings forth an abundance of exotic goods, heightening the demand for a resilient trading network. Consequently, the expansion of administrative capacities to encompass trade and commerce becomes imperative.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_IMPERIAL_GRAND_PALACE</Tag>
+		<English>Imperial Palace City</English>
+		<French>Imperial Palace City</French>
+		<German>Imperial Palace City</German>
+		<Italian>Imperial Palace City</Italian>
+		<Spanish>Imperial Palace City</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_IMPERIAL_GRAND_PALACE_PEDIA</Tag>
+		<English>Adorned upon the walls of the Grand Palace, our great empire's history unfolds-a testament to the sacrifices woven into its tapestry of ambition. Emerging from the ashes of countless battles, it stands resplendent and unwavering. Let us bow in reverence, for from the crimson tide of our past, the Imperium now reigns supreme, its shadow stretching across the lands as the unrivaled heart of our civilization.</English>
+		<French>Adorned upon the walls of the Grand Palace, our great empire's history unfolds-a testament to the sacrifices woven into its tapestry of ambition. Emerging from the ashes of countless battles, it stands resplendent and unwavering. Let us bow in reverence, for from the crimson tide of our past, the Imperium now reigns supreme, its shadow stretching across the lands as the unrivaled heart of our civilization.</French>
+		<German>Adorned upon the walls of the Grand Palace, our great empire's history unfolds-a testament to the sacrifices woven into its tapestry of ambition. Emerging from the ashes of countless battles, it stands resplendent and unwavering. Let us bow in reverence, for from the crimson tide of our past, the Imperium now reigns supreme, its shadow stretching across the lands as the unrivaled heart of our civilization.</German>
+		<Italian>Adorned upon the walls of the Grand Palace, our great empire's history unfolds-a testament to the sacrifices woven into its tapestry of ambition. Emerging from the ashes of countless battles, it stands resplendent and unwavering. Let us bow in reverence, for from the crimson tide of our past, the Imperium now reigns supreme, its shadow stretching across the lands as the unrivaled heart of our civilization.</Italian>
+		<Spanish>Adorned upon the walls of the Grand Palace, our great empire's history unfolds-a testament to the sacrifices woven into its tapestry of ambition. Emerging from the ashes of countless battles, it stands resplendent and unwavering. Let us bow in reverence, for from the crimson tide of our past, the Imperium now reigns supreme, its shadow stretching across the lands as the unrivaled heart of our civilization.</Spanish>
+	</TEXT>
+	
+		<!-- City States -->
+	
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CITY_STATES_SOVEREIGNS_PALACE</Tag>
+		<English>Sovereign</English>
+		<French>Sovereign</French>
+		<German>Sovereign</German>
+		<Italian>Sovereign</Italian>
+		<Spanish>Sovereign</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CITY_STATES_SOVEREIGNS_PALACE_PEDIA</Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CITY_STATES_SOVEREIGN_MARTIAL</Tag>
+		<English>(Sovereign) Martial</English>
+		<French>(Sovereign) Martial</French>
+		<German>(Sovereign) Martial</German>
+		<Italian>>(Sovereign) Martial</Italian>
+		<Spanish>(Sovereign) Martial</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CITY_STATES_SOVEREIGN_RESILIENT</Tag>
+		<English>(Sovereign) Resilient</English>
+		<French>(Sovereign) Resilient</French>
+		<German>(Sovereign) Resilient</German>
+		<Italian>(Sovereign) Resilient</Italian>
+		<Spanish>(Sovereign) Resilient</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CITY_STATES_SOVEREIGN_ADVENTUROUS</Tag>
+		<English>(Sovereign) Adventurous</English>
+		<French>(Sovereign) Adventurous</French>
+		<German>(Sovereign) Adventurous</German>
+		<Italian>(Sovereign) Adventurous</Italian>
+		<Spanish>(Sovereign) Adventurous</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CITY_STATES_SOVEREIGN_COSMOPOLITAN</Tag>
+		<English>(Sovereign) Cosmopolitan</English>
+		<French>(Sovereign) Cosmopolitan</French>
+		<German>(Sovereign) Cosmopolitan</German>
+		<Italian>(Sovereign) Cosmopolitan</Italian>
+		<Spanish>(Sovereign) Cosmopolitan</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CITY_STATES_SOVEREIGN_ECONOMIC</Tag>
+		<English>(Sovereign) Economic</English>
+		<French>(Sovereign) Economic</French>
+		<German>(Sovereign) Economic</German>
+		<Italian>(Sovereign) Economic</Italian>
+		<Spanish>(Sovereign) Economic</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CITY_STATES_SOVEREIGN_TRADER</Tag>
+		<English>(Sovereign) Trader</English>
+		<French>(Sovereign) Trader</French>
+		<German>(Sovereign) Trader</German>
+		<Italian>(Sovereign) Trader</Italian>
+		<Spanish>(Sovereign) Trader</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CITY_STATES_SOVEREIGN_MARITIME</Tag>
+		<English>(Sovereign) Maritime</English>
+		<French>(Sovereign) Maritime</French>
+		<German>(Sovereign) Maritime</German>
+		<Italian>(Sovereign) Maritime</Italian>
+		<Spanish>(Sovereign) Maritime</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CITY_STATES_SOVEREIGN_RESOURCEFUL</Tag>
+		<English>(Sovereign) Resourceful</English>
+		<French>(Sovereign) Resourceful</French>
+		<German>(Sovereign) Resourceful</German>
+		<Italian>(Sovereign) Resourceful</Italian>
+		<Spanish>(Sovereign) Resourceful</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CITY_STATES_SOVEREIGN_PRODUCTIVE</Tag>
+		<English>(Sovereign) Productive</English>
+		<French>(Sovereign) Productive</French>
+		<German>(Sovereign) Productive</German>
+		<Italian>(Sovereign) Productive</Italian>
+		<Spanish>(Sovereign) Productive</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CITY_STATES_SOVEREIGN_ARTISTIC</Tag>
+		<English>(Sovereign) Artistic</English>
+		<French>(Sovereign) Artistic</French>
+		<German>(Sovereign) Artistic</German>
+		<Italian>(Sovereign) Artistic</Italian>
+		<Spanish>(Sovereign) Artistic</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CITY_STATES_SOVEREIGN_ADMINISTRATIVE</Tag>
+		<English>(Sovereign) Administrative</English>
+		<French>(Sovereign) Administrative</French>
+		<German>(Sovereign) Administrative</German>
+		<Italian>(Sovereign) Administrative</Italian>
+		<Spanish>(Sovereign) Administrative</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CITY_STATES_SOVEREIGN_INNOVATIVE</Tag>
+		<English>(Sovereign) Innovative</English>
+		<French>(Sovereign) Innovative</French>
+		<German>(Sovereign) Innovative</German>
+		<Italian>(Sovereign) Innovative</Italian>
+		<Spanish>(Sovereign) Innovative</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CITY_STATES_SOVEREIGN_RELIGIOUS</Tag>
+		<English>(Sovereign) Religious</English>
+		<French>(Sovereign) Religious</French>
+		<German>(Sovereign) Religious</German>
+		<Italian>(Sovereign) Religious</Italian>
+		<Spanish>(Sovereign) Religious</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CITY_STATES_SOVEREIGN_SORCEROUS</Tag>
+		<English>(Sovereign) Sorcerous</English>
+		<French>(Sovereign) Sorcerous</French>
+		<German>(Sovereign) Sorcerous</German>
+		<Italian>(Sovereign) Sorcerous</Italian>
+		<Spanish>(Sovereign) Sorcerous</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CITY_STATES_SOVEREIGN_PACIFIST</Tag>
+		<English>(Sovereign) Pacifist</English>
+		<French>(Sovereign) Pacifist</French>
+		<German>(Sovereign) Pacifist</German>
+		<Italian>(Sovereign) Pacifist</Italian>
+		<Spanish>(Sovereign) Pacifist</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CITY_STATES_SOVEREIGN_CENTRALIST</Tag>
+		<English>(Sovereign) Centralist</English>
+		<French>(Sovereign) Centralist</French>
+		<German>(Sovereign) Centralist</German>
+		<Italian>(Sovereign) Centralist</Italian>
+		<Spanish>(Sovereign) Centralist</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CITY_STATES_SOVEREIGN_AUTONOMIST</Tag>
+		<English>(Sovereign) Autonomist</English>
+		<French>(Sovereign) Autonomist</French>
+		<German>(Sovereign) Autonomist</German>
+		<Italian>(Sovereign) Autonomist</Italian>
+		<Spanish>(Sovereign) Autonomist</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CITY_STATES_SOVEREIGN_AUTHORITARIAN</Tag>
+		<English>(Sovereign) Authoritarian</English>
+		<French>(Sovereign) Authoritarian</French>
+		<German>(Sovereign) Authoritarian</German>
+		<Italian>(Sovereign) Authoritarian</Italian>
+		<Spanish>(Sovereign) Authoritarian</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CITY_STATES_SOVEREIGN_RUTHLESS</Tag>
+		<English>(Sovereign) Ruthless</English>
+		<French>(Sovereign) Ruthless</French>
+		<German>(Sovereign) Ruthless</German>
+		<Italian>(Sovereign) Ruthless</Italian>
+		<Spanish>(Sovereign) Ruthless</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CITY_STATES_SOVEREIGN_CORRUPT</Tag>
+		<English>(Sovereign) Corrupt</English>
+		<French>(Sovereign) Corrupt</French>
+		<German>(Sovereign) Corrupt</German>
+		<Italian>(Sovereign) Corrupt</Italian>
+		<Spanish>(Sovereign) Corrupt</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CITY_STATES_SOVEREIGN_TYRANNICAL</Tag>
+		<English>(Sovereign) Tyrannical</English>
+		<French>(Sovereign) Tyrannical</French>
+		<German>(Sovereign) Tyrannical</German>
+		<Italian>(Sovereign) Tyrannical</Italian>
+		<Spanish>(Sovereign) Tyrannical</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CITY_STATES_SOVEREIGN_GREEDY</Tag>
+		<English>(Sovereign) Greedy</English>
+		<French>(Sovereign) Greedy</French>
+		<German>(Sovereign) Greedy</German>
+		<Italian>(Sovereign) Greedy</Italian>
+		<Spanish>(Sovereign) Greedy</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CITY_STATES_SOVEREIGN_EXPLOITATIVE</Tag>
+		<English>(Sovereign) Exploitative</English>
+		<French>(Sovereign) Exploitative</French>
+		<German>(Sovereign) Exploitative</German>
+		<Italian>(Sovereign) Exploitative</Italian>
+		<Spanish>(Sovereign) Exploitative</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CITY_STATES_SOVEREIGN_ISOLATIONIST</Tag>
+		<English>(Sovereign) Isolationist</English>
+		<French>(Sovereign) Isolationist</French>
+		<German>(Sovereign) Isolationist</German>
+		<Italian>(Sovereign) Isolationist</Italian>
+		<Spanish>(Sovereign) Isolationist</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CITY_STATES_SOVEREIGN_MORBID</Tag>
+		<English>(Sovereign) Morbid</English>
+		<French>(Sovereign) Morbid</French>
+		<German>(Sovereign) Morbid</German>
+		<Italian>(Sovereign) Morbid</Italian>
+		<Spanish>(Sovereign) Morbid</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CITY_STATES_SOVEREIGN_EXPERIMENTER</Tag>
+		<English>(Sovereign) Experimenter</English>
+		<French>(Sovereign) Experimenter</French>
+		<German>(Sovereign) Experimenter</German>
+		<Italian>(Sovereign) Experimenter</Italian>
+		<Spanish>(Sovereign) Experimenter</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CITY_STATES_SOVEREIGN_ADVENTUROUS_HELP</Tag>
+		<English>[ICON_BULLET]Free [LINK=PROMOTION_ADVENTURER]Adventurer[\LINK] Promotion for [LINK=UNITCOMBAT_RECON]Recon Units[\LINK] Built in this City</English>
+		<French>[ICON_BULLET]Free [LINK=PROMOTION_ADVENTURER]Adventurer[\LINK] Promotion for [LINK=UNITCOMBAT_RECON]Recon Units[\LINK] Built in this City</French>
+		<German>[ICON_BULLET]Free [LINK=PROMOTION_ADVENTURER]Adventurer[\LINK] Promotion for [LINK=UNITCOMBAT_RECON]Recon Units[\LINK] Built in this City</German>
+		<Italian>[ICON_BULLET]Free [LINK=PROMOTION_ADVENTURER]Adventurer[\LINK] Promotion for [LINK=UNITCOMBAT_RECON]Recon Units[\LINK] Built in this City</Italian>
+		<Spanish>[ICON_BULLET]Free [LINK=PROMOTION_ADVENTURER]Adventurer[\LINK] Promotion for [LINK=UNITCOMBAT_RECON]Recon Units[\LINK] Built in this City</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CITY_STATES_SOVEREIGN_COSMOPOLITAN_HELP</Tag>
+		<English>[ICON_BULLET]Units Built in this City have a Chance to be of another Race</English>
+		<French>[ICON_BULLET]Units Built in this City have a Chance to be of another Race</French>
+		<German>[ICON_BULLET]Units Built in this City have a Chance to be of another Race</German>
+		<Italian>[ICON_BULLET]Units Built in this City have a Chance to be of another Race</Italian>
+		<Spanish>[ICON_BULLET]Units Built in this City have a Chance to be of another Race</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CITY_STATES_SOVEREIGN_MORBID_HELP</Tag>
+		<English>[ICON_BULLET]Units Built in this City have a Chance to be [LINK=PROMOTION_UNDEAD]Undead[\LINK]</English>
+		<French>[ICON_BULLET]Units Built in this City have a Chance to be [LINK=PROMOTION_UNDEAD]Undead[\LINK]</French>
+		<German>[ICON_BULLET]Units Built in this City have a Chance to be [LINK=PROMOTION_UNDEAD]Undead[\LINK]</German>
+		<Italian>[ICON_BULLET]Units Built in this City have a Chance to be [LINK=PROMOTION_UNDEAD]Undead[\LINK]</Italian>
+		<Spanish>[ICON_BULLET]Units Built in this City have a Chance to be [LINK=PROMOTION_UNDEAD]Undead[\LINK]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CITY_STATES_SOVEREIGN_EXPERIMENTER_HELP</Tag>
+		<English>[ICON_BULLET]Units Built in this City have a Chance to be [LINK=PROMOTION_MUTATED]Mutated[\LINK]</English>
+		<French>[ICON_BULLET]Units Built in this City have a Chance to be [LINK=PROMOTION_MUTATED]Mutated[\LINK]</French>
+		<German>[ICON_BULLET]Units Built in this City have a Chance to be [LINK=PROMOTION_MUTATED]Mutated[\LINK]</German>
+		<Italian>[ICON_BULLET]Units Built in this City have a Chance to be [LINK=PROMOTION_MUTATED]Mutated[\LINK]</Italian>
+		<Spanish>[ICON_BULLET]Units Built in this City have a Chance to be [LINK=PROMOTION_MUTATED]Mutated[\LINK]</Spanish>
+	</TEXT>
+	
+		<!-- Tribal -->
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CLANHALL</Tag>
+		<English>Clanhall</English>
+		<French>Clanhall</French>
+		<German>Clanhall</German>
+		<Italian>Clanhall</Italian>
+		<Spanish>Clanhall</Spanish>
+	</TEXT>
+	
+		<!-- Garden Cities -->
+	
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SYMBIOSIS_GREAT_HOLLOW</Tag>
+		<English>Symbiosis with the Great Hollow</English>
+		<French>Symbiosis with the Great Hollow</French>
+		<German>Symbiosis with the Great Hollow</German>
+		<Italian>Symbiosis with the Great Hollow</Italian>
+		<Spanish>Symbiosis with the Great Hollow</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SYMBIOSIS_BLOOD_THORNS</Tag>
+		<English>Symbiosis with the Blood Thorns</English>
+		<French>Symbiosis with the Blood Thorns</French>
+		<German>Symbiosis with the Blood Thorns</German>
+		<Italian>Symbiosis with the Blood Thorns</Italian>
+		<Spanish>Symbiosis with the Blood Thorns</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SYMBIOSIS_ETERNAL_BLOOM</Tag>
+		<English>Symbiosis with the Eternal Bloom</English>
+		<French>Symbiosis with the Eternal Bloom</French>
+		<German>Symbiosis with the Eternal Bloom</German>
+		<Italian>Symbiosis with the Eternal Bloom</Italian>
+		<Spanish>Symbiosis with the Eternal Bloom</Spanish>
+	</TEXT>
+	
+		<!-- Crimelord and Rats -->
+	
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_RAT_WAY</Tag>
+		<English>Ratway</English>
+		<French>Ratway</French>
+		<German>Ratway</German>
+		<Italian>Ratway</Italian>
+		<Spanish>Ratway</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_RAT_POCKETS</Tag>
+		<English>Rat Pockets</English>
+		<French>Rat Pockets</French>
+		<German>Rat Pockets</German>
+		<Italian>Rat Pockets</Italian>
+		<Spanish>Rat Pockets</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SHADOW_CITY</Tag>
+		<English>Shadowed City</English>
+		<French>Shadowed City</French>
+		<German>Shadowed City</German>
+		<Italian>Shadowed City</Italian>
+		<Spanish>Shadowed City</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MASTER_FORGER</Tag>
+		<English>Master Forger</English>
+		<French>Master Forger</French>
+		<German>Master Forger</German>
+		<Italian>Master Forger</Italian>
+		<Spanish>Master Forger</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HALL_OF_SOOTHING</Tag>
+		<English>Hall of Soothing</English>
+		<French>Hall of Soothing</French>
+		<German>Hall of Soothing</German>
+		<Italian>Hall of Soothing</Italian>
+		<Spanish>Hall of Soothing</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CHAMBER_OF_SECRETS</Tag>
+		<English>Chamber of Secrets</English>
+		<French>Chamber of Secrets</French>
+		<German>Chamber of Secrets</German>
+		<Italian>Chamber of Secrets</Italian>
+		<Spanish>Chamber of Secrets</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SHRINE_OF_NIGHT</Tag>
+		<English>Shrine of Night</English>
+		<French>Shrine of Night</French>
+		<German>Shrine of Night</German>
+		<Italian>Shrine of Night</Italian>
+		<Spanish>Shrine of Night</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CHOIR_OF_WHISPERS</Tag>
+		<English>Choir of Whispers</English>
+		<French>Choir of Whispers</French>
+		<German>Choir of Whispers</German>
+		<Italian>Choir of Whispers</Italian>
+		<Spanish>Choir of Whispers</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TAB_THE_UNDERGROUND_RIVERS</Tag>
+		<English>Tab the Underground Rivers</English>
+		<French>Tab the Underground Rivers</French>
+		<German>Tab the Underground Rivers</German>
+		<Italian>Tab the Underground Rivers</Italian>
+		<Spanish>Tab the Underground Rivers</Spanish>
+	</TEXT>
+</Civ4GameText>

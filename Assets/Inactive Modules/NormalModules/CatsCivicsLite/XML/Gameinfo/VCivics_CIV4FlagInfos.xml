@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!-- Flag Infos -->
+<Civ4FlagInfos xmlns="x-schema:VCivics_CIV4GameInfoSchema.xml">
+	<FlagInfos>
+		<FlagInfo>
+			<Type>FLAG_CITY_STATES</Type>
+			<Description>TXT_KEY_FLAG_CITY_STATES</Description>
+		</FlagInfo>
+		<FlagInfo>
+			<Type>FLAG_IMPERIUM</Type>
+			<Description>TXT_KEY_FLAG_IMPERIUM</Description>
+		</FlagInfo>
+	</FlagInfos>
+</Civ4FlagInfos>

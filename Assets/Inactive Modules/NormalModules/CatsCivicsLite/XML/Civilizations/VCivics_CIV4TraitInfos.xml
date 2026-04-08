@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!-- Leader Trait Infos -->
+<Civ4TraitInfos xmlns="x-schema:VCivics_CIV4CivilizationsSchema.xml">
+	<TraitInfos>
+		<TraitInfo>		<!-- Sprawling - Kuriotates -->
+			<Type>TRAIT_SPRAWLING</Type>
+			<TraitClass>TRAITCLASS_CIVILIZATION</TraitClass>
+			<CommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>2</iCommerce>
+			</CommerceChanges>
+		</TraitInfo>
+	</TraitInfos>
+</Civ4TraitInfos>

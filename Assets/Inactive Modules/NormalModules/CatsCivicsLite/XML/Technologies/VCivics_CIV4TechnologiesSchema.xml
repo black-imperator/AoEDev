@@ -1,0 +1,267 @@
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Tech Schema -->
+<Schema xmlns="urn:schemas-microsoft-com:xml-data" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+	<ElementType name="Type" content="textOnly"/>
+	<ElementType name="bTypeDependency" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bForceOverwrite" content="textOnly" dt:type="boolean"/>
+	<ElementType name="DependencyType" content="textOnly"/>
+	<ElementType name="AndDependencyTypes" content="eltOnly">
+		<element type="DependencyType"/>
+	</ElementType>
+	<ElementType name="OrDependencyTypes" content="eltOnly">
+		<element type="DependencyType"/>
+	</ElementType>
+	<ElementType name="Description" content="textOnly"/>
+	<ElementType name="Civilopedia" content="textOnly"/>
+	<ElementType name="Help" content="textOnly"/>
+	<ElementType name="Strategy" content="textOnly"/>
+	<ElementType name="Advisor" content="textOnly"/>
+	<ElementType name="iAIWeight" content="textOnly" dt:type="int"/>
+	<ElementType name="iAITradeModifier" content="textOnly" dt:type="int"/>
+	<ElementType name="iCost" content="textOnly" dt:type="int"/>
+	<ElementType name="iAdvancedStartCost" content="textOnly" dt:type="int"/>
+	<ElementType name="iAdvancedStartCostIncrease" content="textOnly" dt:type="int"/>
+	<ElementType name="Era" content="textOnly"/>
+	<ElementType name="FirstFreeUnitClass" content="textOnly"/>
+	<ElementType name="iFeatureProductionModifier" content="textOnly" dt:type="int"/>
+	<ElementType name="iWorkerSpeedModifier" content="textOnly" dt:type="int"/>
+	<ElementType name="iTradeRoutes" content="textOnly" dt:type="int"/>
+	<ElementType name="iHealth" content="textOnly" dt:type="int"/>
+	<ElementType name="iHappiness" content="textOnly" dt:type="int"/>
+	<ElementType name="iFirstFreeTechs" content="textOnly" dt:type="int"/>
+	<ElementType name="iAsset" content="textOnly" dt:type="int"/>
+	<ElementType name="iPower" content="textOnly" dt:type="int"/>
+	<ElementType name="bMercenaryUnlock" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bRepeat" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bTrade" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bDisable" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bGoodyTech" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bExtraWaterSeeFrom" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bMapCentering" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bMapVisible" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bMapTrading" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bTechTrading" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bGoldTrading" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bOpenBordersTrading" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bDefensivePactTrading" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bPermanentAllianceTrading" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bVassalTrading" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bBridgeBuilding" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bIrrigation" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bIgnoreIrrigation" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bWaterWork" content="textOnly" dt:type="boolean"/>
+	<ElementType name="iGridX" content="textOnly" dt:type="int"/>
+	<ElementType name="iGridY" content="textOnly" dt:type="int"/>
+	<ElementType name="DomainType" content="textOnly"/>
+	<ElementType name="iExtraMoves" content="textOnly" dt:type="int"/>
+	<ElementType name="DomainExtraMove" content="eltOnly">
+		<element type="DomainType"/>
+		<element type="iExtraMoves"/>
+	</ElementType>
+	<ElementType name="DomainExtraMoves" content="eltOnly">
+		<element type="DomainExtraMove" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="bFlexible" content="textOnly" dt:type="boolean"/>
+	<ElementType name="CommerceFlexible" content="eltOnly">
+		<element type="bFlexible" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="bRiverTrade" content="textOnly" dt:type="boolean"/>
+	<ElementType name="TerrainType" content="textOnly"/>
+	<ElementType name="bTerrainTrade" content="textOnly" dt:type="boolean"/>
+	<ElementType name="TerrainTrade" content="eltOnly">
+		<element type="TerrainType"/>
+		<element type="bTerrainTrade"/>
+	</ElementType>
+	<ElementType name="TerrainTrades" content="eltOnly">
+		<element type="TerrainTrade" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="SpecialBuildingType" content="textOnly"/>
+	<ElementType name="bSpecialBuilding" content="textOnly" dt:type="boolean"/>
+	<ElementType name="SpecialBuilding" content="eltOnly">
+		<element type="SpecialBuildingType"/>
+		<element type="bSpecialBuilding"/>
+	</ElementType>
+	<ElementType name="FlavorType" content="textOnly"/>
+	<ElementType name="iFlavor" content="textOnly" dt:type="int"/>
+	<ElementType name="Flavor" content="eltOnly">
+		<element type="FlavorType"/>
+		<element type="iFlavor"/>
+	</ElementType>
+	<ElementType name="Flavors" content="eltOnly">
+		<element type="Flavor" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="PrereqTech" content="textOnly"/>
+	<ElementType name="OrPreReqs" content="eltOnly">
+		<element type="PrereqTech" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="AndPreReqs" content="eltOnly">
+		<element type="PrereqTech" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="Quote" content="textOnly"/>
+	<ElementType name="Sound" content="textOnly"/>
+	<ElementType name="SoundMP" content="textOnly"/>
+	<ElementType name="Button" content="textOnly"/>
+	<ElementType name="bWater" content="textOnly" dt:type="boolean"/>
+	<ElementType name="PrereqReligion" content="textOnly"/>
+<!-- CityPop Cap (by Opera) -->
+	<ElementType name="iCityCapModifier" content="textOnly" dt:type="int"/>
+<!-- CityPop Cap END -->
+	<ElementType name="BonusPrereq" content="textOnly"/>
+	<ElementType name="iPrereqBroadAlignment" content="textOnly" dt:type="int"/>
+	<ElementType name="iFirstToTechAlignmentModifier" content="textOnly" dt:type="int"/>
+	<ElementType name="iAlignmentModifier" content="textOnly" dt:type="int"/>
+	<ElementType name="iPrereqBroadEthicalAlignment" content="textOnly" dt:type="int"/>
+	<ElementType name="iFirstToTechEthicalAlignmentModifier" content="textOnly" dt:type="int"/>
+	<ElementType name="iEthicalAlignmentModifier" content="textOnly" dt:type="int"/>
+	<ElementType name="bInfluenceAllowed" content="textOnly" dt:type="boolean"/>
+	<ElementType name="iVictoryInfluenceModifier" content="textOnly" dt:type="int"/>
+	<ElementType name="iDefeatInfluenceModifier" content="textOnly" dt:type="int"/>
+	<ElementType name="iPillageInfluenceModifier" content="textOnly" dt:type="int"/>
+	<ElementType name="TraitType" content="textOnly"/>
+	<ElementType name="iModifier" content="textOnly" dt:type="int"/>
+	<ElementType name="TraitCounterModifier" content="eltOnly">
+		<element type="TraitType"/>
+		<element type="iModifier"/>
+	</ElementType>
+	<ElementType name="iTurns" content="textOnly" dt:type="int"/>
+	<ElementType name="TraitGainTemporary" content="eltOnly">
+		<element type="TraitType"/>
+		<element type="iTurns"/>
+	</ElementType>
+	<ElementType name="TraitCounterModifiers" content="eltOnly">
+		<element type="TraitCounterModifier" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="FirstTraitCounterModifiers" content="eltOnly">
+		<element type="TraitCounterModifier" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="TraitGainTemporarys" content="eltOnly">
+		<element type="TraitGainTemporary" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="FirstTraitGainTemporarys" content="eltOnly">
+		<element type="TraitGainTemporary" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="TechInfo" content="eltOnly" order="many">
+		<element type="TraitCounterModifiers" minOccurs="0"/>
+		<element type="FirstTraitCounterModifiers" minOccurs="0"/>
+		<element type="TraitGainTemporarys" minOccurs="0"/>
+		<element type="FirstTraitGainTemporarys" minOccurs="0"/>
+		<element type="Type"/>
+		<element type="bForceOverwrite"/>
+		<element type="bTypeDependency"/>
+		<element type="AndDependencyTypes"/>
+		<element type="OrDependencyTypes"/>
+		<element type="Description"/>
+		<element type="Civilopedia"/>
+		<element type="Help"/>
+		<element type="Strategy"/>
+		<element type="Advisor"/>
+		<element type="iAIWeight"/>
+		<element type="iAITradeModifier"/>
+		<element type="iCost"/>
+		<element type="iAdvancedStartCost"/>
+		<element type="iAdvancedStartCostIncrease"/>
+		<element type="Era"/>
+		<element type="FirstFreeUnitClass"/>
+		<element type="iFeatureProductionModifier"/>
+		<element type="iWorkerSpeedModifier"/>
+		<element type="iTradeRoutes"/>
+		<element type="iHealth"/>
+		<element type="iHappiness"/>
+		<element type="iFirstFreeTechs"/>
+		<element type="iAsset"/>
+		<element type="iPower"/>
+		<element type="bMercenaryUnlock"/>
+		<element type="bRepeat"/>
+		<element type="bTrade"/>
+		<element type="bDisable"/>
+		<element type="bGoodyTech"/>
+		<element type="bExtraWaterSeeFrom"/>
+		<element type="bMapCentering"/>
+		<element type="bMapVisible"/>
+		<element type="bMapTrading"/>
+		<element type="bTechTrading"/>
+		<element type="bGoldTrading"/>
+		<element type="bOpenBordersTrading"/>
+		<element type="bDefensivePactTrading"/>
+		<element type="bPermanentAllianceTrading"/>
+		<element type="bVassalTrading"/>
+		<element type="bBridgeBuilding"/>
+		<element type="bIrrigation"/>
+		<element type="bIgnoreIrrigation"/>
+		<element type="bWaterWork"/>
+		<element type="iGridX"/>
+		<element type="iGridY"/>
+		<element type="DomainExtraMoves"/>
+		<element type="CommerceFlexible"/>
+		<element type="TerrainTrades"/>
+		<element type="bRiverTrade"/>
+		<element type="Flavors"/>
+		<element type="OrPreReqs"/>
+		<element type="AndPreReqs"/>
+		<element type="Quote"/>
+		<element type="Sound"/>
+		<element type="SoundMP"/>
+		<element type="Button"/>
+		<element type="bWater"/>
+		<element type="PrereqReligion"/>
+<!-- CityPop Cap (by Opera) -->
+		<element type="iCityCapModifier"/>
+<!-- CityPop Cap END -->
+		<element type="BonusPrereq"/>
+		<element type="iPrereqBroadAlignment"/>
+		<element type="iFirstToTechAlignmentModifier"/>
+		<element type="iAlignmentModifier"/>
+		<element type="iPrereqBroadEthicalAlignment"/>
+		<element type="iFirstToTechEthicalAlignmentModifier"/>
+		<element type="iEthicalAlignmentModifier"/>
+		<element type="BonusCostShifts"/>
+		<element type="TechCostShifts"/>
+		<element type="BonusCostMods"/>
+		<element type="TechCostMods"/>
+		<element type="bInfluenceAllowed"/>
+		<element type="iVictoryInfluenceModifier"/>
+		<element type="iDefeatInfluenceModifier"/>
+		<element type="iPillageInfluenceModifier"/>
+	</ElementType>
+	<ElementType name="TechType" content="textOnly"/>
+	<ElementType name="BonusType" content="textOnly"/>
+	<ElementType name="iCostShift" content="textOnly" dt:type="int"/>
+	<ElementType name="iCostMod" content="textOnly" dt:type="int"/>
+	<ElementType name="TechCostShift" content="eltOnly">
+		<element type="TechType"/>
+		<element type="iCostShift"/>
+	</ElementType>
+	<ElementType name="TechCostShifts" content="eltOnly">
+		<element type="TechCostShift" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="BonusCostShift" content="eltOnly">
+		<element type="BonusType"/>
+		<element type="iCostShift"/>
+	</ElementType>
+	<ElementType name="BonusCostShifts" content="eltOnly">
+		<element type="BonusCostShift" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="TechCostMod" content="eltOnly">
+		<element type="TechType"/>
+		<element type="iCostMod"/>
+	</ElementType>
+	<ElementType name="TechCostMods" content="eltOnly">
+		<element type="TechCostMod" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="BonusCostMod" content="eltOnly">
+		<element type="BonusType"/>
+		<element type="iCostMod"/>
+	</ElementType>
+	<ElementType name="BonusCostMods" content="eltOnly">
+		<element type="BonusCostMod" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="TechInfos" content="eltOnly">
+		<element type="TechInfo" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="Civ4TechInfos" content="eltOnly">
+		<element type="TechInfos" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+</Schema>

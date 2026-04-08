@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Units -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_AFFINITY_EXCESS</Tag>
+		<English>Excess Affinity</English>
+		<French>Excess Affinity</French>
+		<German>Excess Affinity</German>
+		<Italian>Excess Affinity</Italian>
+		<Spanish>Excess Affinity</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_AFFINITY_EXCESS_PEDIA</Tag>
+		<English>Excess Affinity</English>
+		<French>Excess Affinity</French>
+		<German>Excess Affinity</German>
+		<Italian>Excess Affinity</Italian>
+		<Spanish>Excess Affinity</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_AFFINITY_TINKER</Tag>
+		<English>Tinker Affinity</English>
+		<French>Excess Affinity</French>
+		<German>Excess Affinity</German>
+		<Italian>Excess Affinity</Italian>
+		<Spanish>Excess Affinity</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_AFFINITY_RAPTURE</Tag>
+		<English>Rapture Affinity</English>
+		<French>Rapture Affinity</French>
+		<German>Rapture Affinity</German>
+		<Italian>Rapture Affinity</Italian>
+		<Spanish>Rapture Affinity</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_AFFINITY_FREEDOM</Tag>
+		<English>Freedom Affinity</English>
+		<French>Freedom Affinity</French>
+		<German>Freedom Affinity</German>
+		<Italian>Freedom Affinity</Italian>
+		<Spanish>Freedom Affinity</Spanish>
+	</TEXT>
+</Civ4GameText>

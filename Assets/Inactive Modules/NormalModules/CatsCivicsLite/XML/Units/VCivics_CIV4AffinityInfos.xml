@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Basic Infos -->
+<Civ4AffinityInfos xmlns="x-schema:CatsCivics_CIV4UnitSchema.xml">
+	<AffinityInfos>
+		<AffinityInfo><!-- Excess Affinity -->
+			<Type>AFFINITY_EXCESS</Type>
+			<Description>TXT_KEY_AFFINITY_EXCESS</Description>
+			<Civilopedia>TXT_KEY_AFFINITY_EXCESS_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_AFFINITY_EXCESS_STRATEGY</Strategy>
+			<BonusTypes>
+				<BonusType>BONUS_GOLD</BonusType>
+				<BonusType>BONUS_GEMS</BonusType>
+				<BonusType>BONUS_FUR</BonusType>
+				<BonusType>BONUS_SUGAR</BonusType>
+				<BonusType>BONUS_PEARL</BonusType>
+			</BonusTypes>
+			<AffinityDamageTypes>
+				<AffinityDamageType>
+					<DamageType>DAMAGE_PHYSICAL</DamageType>
+					<fCombat>0.1</fCombat>
+				</AffinityDamageType>
+			</AffinityDamageTypes>
+		</AffinityInfo>
+		<AffinityInfo><!-- Tinker Affinity -->
+			<Type>AFFINITY_TINKER</Type>
+			<Description>TXT_KEY_AFFINITY_TINKER</Description>
+			<Civilopedia>TXT_KEY_AFFINITY_AFFINITY_TINKER</Civilopedia>
+			<Strategy>TXT_KEY_AFFINITY_TINKER_STRATEGY</Strategy>
+			<BonusTypes>
+				<BonusType>BONUS_REAGENTS</BonusType>
+				<BonusType>BONUS_GUNPOWDER</BonusType>
+				<BonusType>BONUS_COPPER</BonusType>
+				<BonusType>BONUS_MANA_ENCHANTMENT</BonusType>
+				<BonusType>BONUS_GIANT_KRAKEN_EYE</BonusType>
+			</BonusTypes>
+			<AffinityDamageTypes>
+				<AffinityDamageType>
+					<DamageType>DAMAGE_PHYSICAL</DamageType>
+					<fCombat>0.1</fCombat>
+				</AffinityDamageType>
+			</AffinityDamageTypes>
+		</AffinityInfo>
+		<AffinityInfo><!-- Rapture Affinity -->
+			<Type>AFFINITY_RAPTURE</Type>
+			<Description>TXT_KEY_AFFINITY_RAPTURE</Description>
+			<Civilopedia>TXT_KEY_AFFINITY_RAPTURE_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_AFFINITY_RAPTURE_STRATEGY</Strategy>
+			<BonusTypes>
+				<BonusType>BONUS_INCENSE</BonusType>
+				<BonusType>BONUS_WINE</BonusType>
+				<BonusType>BONUS_OBSIDIAN</BonusType>
+				<BonusType>BONUS_MARBLE</BonusType>
+				<BonusType>BONUS_BLEEDING_GOD_WINE</BonusType>
+			</BonusTypes>
+			<AffinityDamageTypes>
+				<AffinityDamageType>
+					<DamageType>DAMAGE_PHYSICAL</DamageType>
+					<fCombat>0.1</fCombat>
+				</AffinityDamageType>
+			</AffinityDamageTypes>
+		</AffinityInfo>
+		<AffinityInfo><!-- Freedom Affinity -->
+			<Type>AFFINITY_FREEDOM</Type>
+			<Description>TXT_KEY_AFFINITY_FREEDOM</Description>
+			<Civilopedia>TXT_KEY_AFFINITY_FREEDOM_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_AFFINITY_FREEDOM_STRATEGY</Strategy>
+			<BonusTypes>
+				<BonusType>BONUS_HORSE</BonusType>
+				<BonusType>BONUS_DYE</BonusType>
+				<BonusType>BONUS_CAMEL</BonusType>
+				<BonusType>BONUS_MANA_DIMENSIONAL</BonusType>
+				<BonusType>BONUS_HYAPON</BonusType>
+				<BonusType>BONUS_NIGHTMARE</BonusType>
+			</BonusTypes>
+			<AffinityDamageTypes>
+				<AffinityDamageType>
+					<DamageType>DAMAGE_PHYSICAL</DamageType>
+					<fCombat>0.1</fCombat>
+				</AffinityDamageType>
+			</AffinityDamageTypes>
+		</AffinityInfo>
+	</AffinityInfos>
+</Civ4AffinityInfos>

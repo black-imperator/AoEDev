@@ -265,7 +265,8 @@ class CvPediaTrait:
 		screen.addPanel( StrategyTextPanel, "", "", true, true,self.X_STRATEGY+self.top.HM_TEXT, self.Y_STRATEGY+self.top.VM_TEXT, self.W_STRATEGY - 2 * self.top.HM_TEXT, self.H_STRATEGY - self.top.VM_TEXT, PanelStyles.PANEL_STYLE_EMPTY)
 		StrategyText = gc.getTraitInfo(self.iTrait).getStrategy()
 		screen.attachMultilineText( StrategyTextPanel, "", StrategyText, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
-
+		screen.attachMultilineText( StrategyTextPanel,  "" , u"<font=2>"+   CyGameTextMgr().parseTraitReqs(self.iTrait)+ u"</font>", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
+			
 	def placeLinks(self, bRedraw):
 		screen = self.top.getScreen()
 		

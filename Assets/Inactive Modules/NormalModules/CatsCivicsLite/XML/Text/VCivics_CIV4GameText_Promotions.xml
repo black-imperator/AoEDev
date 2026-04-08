@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Game Text - Units -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	
+					<!-- Arcane Promotions -->
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_ARCANE_PRIVILEGE</Tag>
+		<English>Arcane Privilege</English>
+		<French>Arcane Privilege</French>
+		<German>Arcane Privilege</German>
+		<Italian>Arcane Privilege</Italian>
+		<Spanish>Arcane Privilege</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_ARCANE_AUTHORITY</Tag>
+		<English>Arcane Authority</English>
+		<French>Arcane Authority</French>
+		<German>Arcane Authority</German>
+		<Italian>Arcane Authority</Italian>
+		<Spanish>Arcane Authority</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_ARCANE_SUPREMACY</Tag>
+		<English>Arcane Supremacy</English>
+		<French>Arcane Supremacy</French>
+		<German>Arcane Supremacy</German>
+		<Italian>Arcane Supremacy</Italian>
+		<Spanish>Arcane Supremacy</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_ARCANE_BATTLE_SUPPORT</Tag>
+		<English>Arcane Battle Support</English>
+		<French>Arcane Battle Support</French>
+		<German>Arcane Battle Support</German>
+		<Italian>Arcane Battle Support</Italian>
+		<Spanish>Arcane Battle Support</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_ARCANE_AUXILIARY1</Tag>
+		<English>Arcane Auxiliary I</English>
+		<French>Arcane Auxiliary I</French>
+		<German>Arcane Auxiliary I</German>
+		<Italian>Arcane Auxiliary I</Italian>
+		<Spanish>Arcane Auxiliary I</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_ARCANE_AUXILIARY1_HELP</Tag>
+		<English>[ICON_BULLET]Allows the unit to cast any level 1 spell, if the commanding unit can cast the level 2 spell of the same sphere</English>
+		<French>[ICON_BULLET]Allows the unit to cast any level 1 spell, if the commanding unit can cast the level 2 spell of the same sphere</French>
+		<German>[ICON_BULLET]Allows the unit to cast any level 1 spell, if the commanding unit can cast the level 2 spell of the same sphere</German>
+		<Italian>[ICON_BULLET]Allows the unit to cast any level 1 spell, if the commanding unit can cast the level 2 spell of the same sphere</Italian>
+		<Spanish>[ICON_BULLET]Allows the unit to cast any level 1 spell, if the commanding unit can cast the level 2 spell of the same sphere</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_ARCANE_AUXILIARY2</Tag>
+		<English>Arcane Auxiliary II</English>
+		<French>Arcane Auxiliary II</French>
+		<German>Arcane Auxiliary II</German>
+		<Italian>Arcane Auxiliary II</Italian>
+		<Spanish>Arcane Auxiliary II</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_ARCANE_AUXILIARY2_HELP</Tag>
+		<English>[ICON_BULLET]Allows the unit to cast any level 2 spell, if the commanding unit can cast the level 3 spell of the same sphere</English>
+		<French>[ICON_BULLET]Allows the unit to cast any level 2 spell, if the commanding unit can cast the level 3 spell of the same sphere</French>
+		<German>[ICON_BULLET]Allows the unit to cast any level 2 spell, if the commanding unit can cast the level 3 spell of the same sphere</German>
+		<Italian>[ICON_BULLET]Allows the unit to cast any level 2 spell, if the commanding unit can cast the level 3 spell of the same sphere</Italian>
+		<Spanish>[ICON_BULLET]Allows the unit to cast any level 2 spell, if the commanding unit can cast the level 3 spell of the same sphere</Spanish>
+	</TEXT>
+	
+					<!-- Divine Promotions -->
+	
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_DIVINE_DECREE</Tag>
+		<English>Divine Decree</English>
+		<French>Divine Decree</French>
+		<German>Divine Decree</German>
+		<Italian>Divine Decree</Italian>
+		<Spanish>Divine Decree</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_DIVINE_MANDATE</Tag>
+		<English>Divine Mandate</English>
+		<French>Divine Mandate</French>
+		<German>Divine Mandate</German>
+		<Italian>Divine Mandate</Italian>
+		<Spanish>Divine Mandate</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_DIVINE_BATTLE_SUPPORT</Tag>
+		<English>Divine Battle Support</English>
+		<French>Divine Battle Support</French>
+		<German>Divine Battle Support</German>
+		<Italian>Divine Battle Support</Italian>
+		<Spanish>Divine Battle Support</Spanish>
+	</TEXT>
+	
+					<!-- Mafia Promotions -->
+	
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MOB_BOSS</Tag>
+		<English>Mob Boss</English>
+		<French>Mob Boss</French>
+		<German>Mob Boss</German>
+		<Italian>Mob Boss</Italian>
+		<Spanish>Mob Boss</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MOBSTER</Tag>
+		<English>Mobster</English>
+		<French>Mobster</French>
+		<German>Mobster</German>
+		<Italian>Mobster</Italian>
+		<Spanish>Mobster</Spanish>
+	</TEXT>
+	
+					<!-- Culture Promotions -->
+	
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_C_ADVENTURING</Tag>
+		<English>Culture of Adventurers</English>
+		<French>Culture of Adventurers</French>
+		<German>Culture of Adventurers</German>
+		<Italian>Culture of Adventurers</Italian>
+		<Spanish>Culture of Adventurers</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_C_PACIFISM</Tag>
+		<English>Culture of Peace</English>
+		<French>Culture of Peace</French>
+		<German>Culture of Peace</German>
+		<Italian>Culture of Peace</Italian>
+		<Spanish>Culture of Peace</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_C_PACIFISM_HELP</Tag>
+		<English>[ICON_BULLET]Prevents Units from attacking</English>
+		<French>Pacifism</French>
+		<German>Pacifism</German>
+		<Italian>Pacifism</Italian>
+		<Spanish>Pacifism</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_C_EXCESS</Tag>
+		<English>Culture of Excess</English>
+		<French>Culture of Excess</French>
+		<German>Culture of Excess</German>
+		<Italian>Culture of Excess</Italian>
+		<Spanish>Culture of Excess</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_C_SECLUSION</Tag>
+		<English>Culture Of Isolation</English>
+		<French>Culture Of Isolation</French>
+		<German>Culture Of Isolation</German>
+		<Italian>Culture Of Isolation</Italian>
+		<Spanish>Culture Of Isolation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_C_TINKERING</Tag>
+		<English>Culture Of Tinkering</English>
+		<French>Culture Of Tinkering</French>
+		<German>Culture Of Tinkering</German>
+		<Italian>Culture Of Tinkering</Italian>
+		<Spanish>Culture Of Tinkering</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_C_RAPTURED</Tag>
+		<English>Culture Of Rapture</English>
+		<French>Culture Of Rapture</French>
+		<German>Culture Of Rapture</German>
+		<Italian>Culture Of Rapture</Italian>
+		<Spanish>Culture Of Rapture</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_C_FREEDOM</Tag>
+		<English>Culture Of Freedom</English>
+		<French>Culture Of Freedom</French>
+		<German>Culture Of Freedom</German>
+		<Italian>Culture Of Freedom</Italian>
+		<Spanish>Culture Of Freedom</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_C_DECLINE</Tag>
+		<English>Culture of Decline</English>
+		<French>Culture of Decline</French>
+		<German>Culture of Decline</German>
+		<Italian>Culture of Decline</Italian>
+		<Spanish>Culture of Decline</Spanish>
+	</TEXT>
+	
+					<!-- Tribalism Promotions -->
+					
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_TRIBAL_WARFARE</Tag>
+		<English>Tribal Warfare</English>
+		<French>Tribal Warfare</French>
+		<German>Tribal Warfare</German>
+		<Italian>Tribal Warfare</Italian>
+		<Spanish>Tribal Warfare</Spanish>
+	</TEXT>
+					
+					<!-- Apprenticeship Promotions -->
+					
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_TEACHER_OF_THE_UNDERWORLD</Tag>
+		<English>Teacher of the Underworld</English>
+		<French>Teacher of the Underworld</French>
+		<German>Teacher of the Underworld</German>
+		<Italian>Teacher of the Underworld</Italian>
+		<Spanish>Teacher of the Underworld</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_TEACHER_OF_PRESERVATION</Tag>
+		<English>Teacher of Preservation</English>
+		<French>Teacher of Preservation</French>
+		<German>Teacher of Preservation</German>
+		<Italian>Teacher of Preservation</Italian>
+		<Spanish>Teacher of Preservation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_TEACHER_OF_THE_HUNT</Tag>
+		<English>Teacher of the Hunt</English>
+		<French>Teacher of the Hunt</French>
+		<German>Teacher of the Hunt</German>
+		<Italian>Teacher of the Hunt</Italian>
+		<Spanish>Teacher of the Hunt</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_TEACHER_OF_COMPANIONSHIP</Tag>
+		<English>Teacher of Companionship</English>
+		<French>Teacher of Companionship</French>
+		<German>Teacher of Companionship</German>
+		<Italian>Teacher of Companionship</Italian>
+		<Spanish>Teacher of Companionship</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_TEACHER_OF_WAR</Tag>
+		<English>Teacher of War</English>
+		<French>Teacher of War</French>
+		<German>Teacher of War</German>
+		<Italian>Teacher of War</Italian>
+		<Spanish>Teacher of War</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_TEACHER_OF_THE_DOCTRIN</Tag>
+		<English>Teacher of the Doctrin</English>
+		<French>Teacher of the Doctrin</French>
+		<German>Teacher of the Doctrin</German>
+		<Italian>Teacher of the Doctrin</Italian>
+		<Spanish>Teacher of the Doctrin</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_TEACHER_OF_FLIGHT</Tag>
+		<English>Teacher of Flight</English>
+		<French>Teacher of Flight</French>
+		<German>Teacher of Flight</German>
+		<Italian>Teacher of Flight</Italian>
+		<Spanish>Teacher of Flight</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_TEACHER_OF_THE_ARCANE</Tag>
+		<English>Teacher of the Arcane</English>
+		<French>Teacher of the Arcane</French>
+		<German>Teacher of the Arcane</German>
+		<Italian>Teacher of the Arcane</Italian>
+		<Spanish>Teacher of the Arcane</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_TEACHER_OF_THE_WAVES</Tag>
+		<English>Teacher of the Waves</English>
+		<French>Teacher of the Waves</French>
+		<German>Teacher of the Waves</German>
+		<Italian>Teacher of the Waves</Italian>
+		<Spanish>Teacher of the Waves</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_SAGE</Tag>
+		<English>Sage</English>
+		<French>Sage</French>
+		<German>Sage</German>
+		<Italian>Sage</Italian>
+		<Spanish>Sage</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_STUDENT_OF_THE_UNDERWORLD</Tag>
+		<English>Student of the Underworld</English>
+		<French>Student of the Underworld</French>
+		<German>Student of the Underworld</German>
+		<Italian>Student of the Underworld</Italian>
+		<Spanish>Student of the Underworld</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_STUDENT_OF_PRESERVATION</Tag>
+		<English>Student of Preservation</English>
+		<French>Student of Preservation</French>
+		<German>Student of Preservation</German>
+		<Italian>Student of Preservation</Italian>
+		<Spanish>Student of Preservation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_STUDENT_OF_THE_HUNT</Tag>
+		<English>Student of the Hunt</English>
+		<French>Student of the Hunt</French>
+		<German>Student of the Hunt</German>
+		<Italian>Student of the Hunt</Italian>
+		<Spanish>Student of the Hunt</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_STUDENT_OF_COMPANIONSHIP</Tag>
+		<English>Student of Companionship</English>
+		<French>Student of Companionship</French>
+		<German>Student of Companionship</German>
+		<Italian>Student of Companionship</Italian>
+		<Spanish>Student of Companionship</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_STUDENT_OF_WAR</Tag>
+		<English>Student of War</English>
+		<French>Student of War</French>
+		<German>Student of War</German>
+		<Italian>Student of War</Italian>
+		<Spanish>Student of War</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_STUDENT_OF_THE_DOCTRIN</Tag>
+		<English>Student of the Doctrin</English>
+		<French>Student of the Doctrin</French>
+		<German>Student of the Doctrin</German>
+		<Italian>Student of the Doctrin</Italian>
+		<Spanish>Student of the Doctrin</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_STUDENT_OF_FLIGHT</Tag>
+		<English>Student of Flight</English>
+		<French>Student of Flight</French>
+		<German>Student of Flight</German>
+		<Italian>Student of Flight</Italian>
+		<Spanish>Student of Flight</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_STUDENT_OF_THE_ARCANE</Tag>
+		<English>Student of the Arcane</English>
+		<French>Student of the Arcane</French>
+		<German>Student of the Arcane</German>
+		<Italian>Student of the Arcane</Italian>
+		<Spanish>Student of the Arcane</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_STUDENT_OF_THE_WAVES</Tag>
+		<English>Student of the Waves</English>
+		<French>Student of the Waves</French>
+		<German>Student of the Waves</German>
+		<Italian>Student of the Waves</Italian>
+		<Spanish>Student of the Waves</Spanish>
+	</TEXT>
+	
+	<!-- Nomadic Promotions -->
+					
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_NOMADIC</Tag>
+		<English>Nomadic</English>
+		<French>Nomadic</French>
+		<German>Nomadic</German>
+		<Italian>Nomadic</Italian>
+		<Spanish>Nomadic</Spanish>
+	</TEXT>
+
+</Civ4GameText>

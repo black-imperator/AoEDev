@@ -1,0 +1,38 @@
+[name]
+CatsCivics_Lite
+[version]
+1.0
+[rifeversion]
+382
+[author]
+Catmillo
+[dependency]
+ViciousSeas
+[compatible]
+;
+[shortdesc]
+More "impactfull" and immersive Civics. Without the FUN! :<
+[desc]
+Hi ^^, thanks for checking.
+|
+First things first, this module started from my desire to "balance" Vcivics but it morphed into this .. As such design was focused around how I like to play. If you want my intended experience I would suggest turning on:
+• End of Winter
+• Barbarian World
+• Play on Epic or Marathon speed
+I put some thought into how the civs might emerge from the Age of Ice and shaped the starter civics as such. Very survival oriented.
+|
+Second secondly, a bunch of the stuff in this module is very experimental like "cultural affinities" and alternative commanders. Mostly because I thought it was a cool way to widen gameplay and strategy options. If you got cool ideas that are supported by existing DLLs let me know.
+|
+Charming thirdly, here is the feature list:
+• Changes to almost every civic
+• Alternative commanders for thematic government administrations
+• Cultures giving affinities to unites
+• Cultures impacting specialists perfomance differently
+• Civic exclusive buildings and unites
+• Niche submechanics for specific civics
+• AI-free Art
+|
+ _._     _,-'""`-.
+(,-.`._,'(       |\`-/|
+    `-.-' \ )-`( , o o)
+            `-    \`_`"'-

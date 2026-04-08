@@ -153,7 +153,8 @@
 		<BuildingInfo>		<!-- Adventurers Guild                                          Grigori UB -->
 			<BuildingClass>BUILDINGCLASS_ADVENTURERS_GUILD</BuildingClass>
 			<Type>BUILDING_ADVENTURERS_GUILD</Type>
-			<TrainXPCaps><!-- Everytrhing but creatues, workers, naval, and commander -->
+			<!-- Everytrhing but creatues, workers, naval, and commander -->
+			<TrainXPCaps>
 				<TrainXPCap>
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
 					<fTrainXPCap>2</fTrainXPCap>
@@ -195,7 +196,8 @@
 		<BuildingInfo>		<!-- Command Post -->
 			<BuildingClass>BUILDINGCLASS_COMMAND_POST</BuildingClass>
 			<Type>BUILDING_COMMAND_POST</Type>
-			<TrainXPCaps><!--Training cap and training rate should match-->
+			<!--Training cap and training rate should match-->
+			<TrainXPCaps>
 				<TrainXPCap>
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
 					<fTrainXPCap>2</fTrainXPCap>
@@ -215,9 +217,10 @@
 				<TrainXPCap>
 					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
 					<fTrainXPCap>2</fTrainXPCap>
-				</TrainXPCap>-
+				</TrainXPCap>
 			</TrainXPCaps>
-			<TrainXPRates><!-- added missing unitcombat-->
+			<!-- added missing unitcombat-->
+			<TrainXPRates>
 				<TrainXPRate>
 					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
 					<fTrainXPRate>0.50</fTrainXPRate>
@@ -228,11 +231,11 @@
 				</TrainXPRate>
 			</TrainXPRates>
 		</BuildingInfo>
-		
 		<BuildingInfo>		<!-- Form Of The Titan                                          World Wonder -->
 			<BuildingClass>BUILDINGCLASS_FORM_OF_THE_TITAN</BuildingClass>
 			<Type>BUILDING_FORM_OF_THE_TITAN</Type>
-			<GlobalTrainXPCaps><!--Everything but creatures-->
+			<!--Everything but creatures-->
+			<GlobalTrainXPCaps>
 				<TrainXPCap>
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
 					<fTrainXPCap>2</fTrainXPCap>
@@ -346,7 +349,8 @@
 		<BuildingInfo>		<!-- Council Of The Warchief                                    Chislev UB -->
 			<BuildingClass>BUILDINGCLASS_COUNCIL_OF_THE_WARCHIEF</BuildingClass>
 			<Type>BUILDING_COUNCIL_OF_THE_WARCHIEF</Type>
-			<TrainXPCaps><!-- Everytrhing but creatures and naval -->
+			<!-- Everytrhing but creatures and naval -->
+			<TrainXPCaps>
 				<TrainXPCap>
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
 					<fTrainXPCap>2</fTrainXPCap>
@@ -489,8 +493,8 @@
 		<BuildingInfo>		<!-- Memorial of the Refugee                                    Grigori National Wonder -->
 			<BuildingClass>BUILDINGCLASS_MEMORIAL_REFUGEE</BuildingClass>
 			<Type>BUILDING_MEMORIAL_REFUGEE</Type>
-			
-			<TrainXPCaps><!--Everything but creatures-->
+			<!--Everything but creatures-->
+			<TrainXPCaps>
 				<TrainXPCap>
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
 					<fTrainXPCap>2</fTrainXPCap>
@@ -545,8 +549,8 @@
 		<BuildingInfo>		<!-- Colosseum                                                  Mekara UB -->
 			<BuildingClass>BUILDINGCLASS_THEATRE</BuildingClass>
 			<Type>BUILDING_COLOSSEUM</Type>
-			
-			<TrainXPCaps><!--Everything but creatures and naval-->
+			<!--Everything but creatures and naval-->
+			<TrainXPCaps>
 				<TrainXPCap>
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
 					<fTrainXPCap>2</fTrainXPCap>
@@ -619,6 +623,5 @@
 				</TrainXPCap>
 			</TrainXPCaps>
 		</BuildingInfo>
-		<!--end base AoE Buildings here-->
 	</BuildingInfos>
 </Civ4BuildingInfos>
