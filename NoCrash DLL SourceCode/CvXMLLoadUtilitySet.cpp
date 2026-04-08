@@ -934,7 +934,12 @@ bool CvXMLLoadUtility::LoadPreMenuGlobals()
 
 	LoadGlobalClassInfo(GC.getEraInfo(), "CIV4EraInfos", "GameInfo", "Civ4EraInfos/EraInfos/EraInfo", false);
 	LoadGlobalClassInfo(GC.getUnitClassInfo(), "CIV4UnitClassInfos", "Units", "Civ4UnitClassInfos/UnitClassInfos/UnitClassInfo", false);
+	LoadGlobalClassInfo(GC.getSpecialistClassInfo(), "CIV4SpecialistClassInfos", "GameInfo", "Civ4SpecialistClassInfos/SpecialistClassInfos/SpecialistClassInfo", false);
 	LoadGlobalClassInfo(GC.getSpecialistInfo(), "CIV4SpecialistInfos", "GameInfo", "Civ4SpecialistInfos/SpecialistInfos/SpecialistInfo", false);
+	for (int i = 0; i < GC.getNumSpecialistClassInfos(); ++i)
+	{
+		GC.getSpecialistClassInfo((SpecialistClassTypes)i).readPass3();
+	}
 	LoadGlobalClassInfo(GC.getVoteSourceInfo(), "CIV4VoteSourceInfos", "GameInfo", "Civ4VoteSourceInfos/VoteSourceInfos/VoteSourceInfo", false);
 	LoadGlobalClassInfo(GC.getTechInfo(), "CIV4TechInfos", "Technologies", "Civ4TechInfos/TechInfos/TechInfo", true, &CvDLLUtilityIFaceBase::createTechInfoCacheObject);
 
@@ -1423,6 +1428,12 @@ void CvXMLLoadUtility::SetGlobalActionInfo()
 	{
 		char	szMessage[1024];
 		sprintf( szMessage, "GC.getNumUnitClassInfos() is not greater than zero in CvXMLLoadUtility::SetGlobalActionInfo \n Current XML file is: %s", GC.getCurrentXMLFile().GetCString());
+		gDLL->MessageBox(szMessage, "XML Error");
+	}
+	if (!(GC.getNumSpecialistClassInfos() > 0))
+	{
+		char	szMessage[1024];
+		sprintf(szMessage, "GC.getNumSpecialistClassInfos() is not greater than zero in CvXMLLoadUtility::SetGlobalActionInfo \n Current XML file is: %s", GC.getCurrentXMLFile().GetCString());
 		gDLL->MessageBox(szMessage, "XML Error");
 	}
 	if(!(GC.getNumSpecialistInfos() > 0) )

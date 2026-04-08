@@ -423,7 +423,6 @@ public:
 	int getCommerceRateModifier(CommerceTypes eIndex);
 	int getCapitalCommerceRateModifier(CommerceTypes eIndex);
 	int getStateReligionBuildingCommerce(CommerceTypes eIndex);
-	int getSpecialistExtraCommerce(CommerceTypes eIndex);
 
 	bool isCommerceFlexible(int /*CommerceTypes*/ eIndex);
 	int getGoldPerTurnByPlayer(int /*PlayerTypes*/ eIndex);

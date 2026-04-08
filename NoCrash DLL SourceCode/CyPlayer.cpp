@@ -1638,11 +1638,6 @@ int CyPlayer::getStateReligionBuildingCommerce(CommerceTypes eIndex)
 	return m_pPlayer ? m_pPlayer->getStateReligionBuildingCommerce(eIndex) : NO_COMMERCE;
 }
 
-int CyPlayer::getSpecialistExtraCommerce(CommerceTypes eIndex)
-{
-	return m_pPlayer ? m_pPlayer->getSpecialistExtraCommerce(eIndex) : NO_COMMERCE;
-}
-
 bool CyPlayer::isCommerceFlexible(int /*CommerceTypes*/ eIndex)
 {
 	return m_pPlayer ? m_pPlayer->isCommerceFlexible((CommerceTypes)eIndex) : false;

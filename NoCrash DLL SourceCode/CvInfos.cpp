@@ -1094,6 +1094,146 @@ void CvDiplomacyResponse::UpdateDiplomacies(CvDiplomacyInfo* pDiplomacyInfo, int
 /**	TrueModular								END													**/
 /*************************************************************************************************/
 
+CvSpecialistClassInfo::CvSpecialistClassInfo() :
+
+	m_iMissionType(NO_MISSION),
+
+	m_bUnique(false),
+	m_iDefaultSpecialistIndex(NO_SPECIALIST)
+{
+}
+
+//------------------------------------------------------------------------------------------------------
+//
+//  FUNCTION:   ~CvSpecialistClassInfo()
+//
+//  PURPOSE :   Default destructor
+//
+//------------------------------------------------------------------------------------------------------
+CvSpecialistClassInfo::~CvSpecialistClassInfo()
+{
+}
+
+int CvSpecialistClassInfo::getDefaultSpecialistIndex() const
+{
+	return m_iDefaultSpecialistIndex;
+}
+
+void CvSpecialistClassInfo::setDefaultSpecialistIndex(int i)
+{
+	m_iDefaultSpecialistIndex = i;
+}
+
+int CvSpecialistClassInfo::getMissionType() const
+{
+	return m_iMissionType;
+}
+
+void CvSpecialistClassInfo::setMissionType(int iNewType)
+{
+	m_iMissionType = iNewType;
+}
+
+/*************************************************************************************************/
+/**	New Tag Defs	(SpecialistClassInfos)		10/18/08								Xienwolf	**/
+/**																								**/
+/**									Called for Logic Checks										**/
+/*************************************************************************************************/
+bool CvSpecialistClassInfo::isUnique() const
+{
+	return m_bUnique;
+}
+/*************************************************************************************************/
+/**	New Tag Defs							END													**/
+/*************************************************************************************************/
+/*************************************************************************************************/
+/**	TrueModular								05/26/09	Written: Mr. Genie	Imported: Xienwolf	**/
+/**																								**/
+/**	Properly links Modular modifications to previous elements, and allows partial overwriting	**/
+/*************************************************************************************************/
+int CvSpecialistClassInfo::getDefaultSpecialistIndexVector()
+{
+	return m_aszExtraXMLforPass3.size();
+}
+CvString CvSpecialistClassInfo::getDefaultSpecialistIndexVectorElement(int i)
+{
+	return m_aszExtraXMLforPass3[i];
+}
+/*************************************************************************************************/
+/**	TrueModular								END													**/
+/*************************************************************************************************/
+bool CvSpecialistClassInfo::read(CvXMLLoadUtility* pXML)
+{
+	if (!CvHotkeyInfo::read(pXML))
+	{
+		return false;
+	}
+
+	pXML->GetChildXmlValByName(&m_bUnique, "bUnique");
+	CvString szTextVal;
+	pXML->GetChildXmlValByName(szTextVal, "DefaultSpecialist");
+	m_aszExtraXMLforPass3.push_back(szTextVal);
+
+	return true;
+}
+
+bool CvSpecialistClassInfo::readPass3()
+{
+	if (m_aszExtraXMLforPass3.size() < 1)
+	{
+		FAssert(false);
+		return false;
+	}
+
+	/*************************************************************************************************/
+	/**	TrueModular								05/26/09	Written: Mr. Genie	Imported: Xienwolf	**/
+	/** Assuming the modder purposly added an entry to this tag, we want to take the last enty set  **/
+	/** by the modder and not the first as set by firaxis                                           **/
+	/**																								**/
+	/**	Earlier work with the m_asz list has reverse listed it, the last value to be read is listed	**/
+	/**	first.  So by checking all values for the first non-NULL case, we keep the spirit of WoC	**/
+	/**																								**/
+	/**	Properly links Modular modifications to previous elements, and allows partial overwriting	**/
+	/*************************************************************************************************/
+	int iSize = m_aszExtraXMLforPass3.size();
+	for (int i = 0; i < iSize; i++)
+	{
+		if (GC.getInfoTypeForString(m_aszExtraXMLforPass3[i], true) != -1)
+		{
+			m_iDefaultSpecialistIndex = GC.getInfoTypeForString(m_aszExtraXMLforPass3[i]);
+			break;
+		}
+	}
+	/*************************************************************************************************/
+	/**	TrueModular								END													**/
+	/*************************************************************************************************/
+	m_aszExtraXMLforPass3.clear();
+
+	return true;
+}
+/*************************************************************************************************/
+/**	TrueModular								05/26/09	Written: Mr. Genie	Imported: Xienwolf	**/
+/**	New Tag Defs	(SpecialistClassInfos)															**/
+/**																								**/
+/**	Properly links Modular modifications to previous elements, and allows partial overwriting	**/
+/*************************************************************************************************/
+void CvSpecialistClassInfo::copyNonDefaults(CvSpecialistClassInfo* pClassInfo, CvXMLLoadUtility* pXML)
+{
+	CvString cDefault = CvString::format("").GetCString();
+	CvWString wDefault = CvWString::format(L"").GetCString();
+
+	CvHotkeyInfo::copyNonDefaults(pClassInfo, pXML);
+
+	if (isUnique() == false)	m_bUnique = pClassInfo->isUnique();
+	for (int i = 0; i < pClassInfo->getDefaultSpecialistIndexVector(); i++)
+	{
+		m_aszExtraXMLforPass3.push_back(pClassInfo->getDefaultSpecialistIndexVectorElement(i));
+	}
+}
+/*************************************************************************************************/
+/**	TrueModular								END													**/
+/*************************************************************************************************/
+
 //======================================================================================================
 //					CvSpecialistInfo
 //======================================================================================================
@@ -1106,6 +1246,8 @@ void CvDiplomacyResponse::UpdateDiplomacies(CvDiplomacyInfo* pDiplomacyInfo, int
 //
 //------------------------------------------------------------------------------------------------------
 CvSpecialistInfo::CvSpecialistInfo() :
+m_iSpecialistClassType(NO_SPECIALISTCLASS),
+
 m_iGreatPeopleUnitClass(NO_UNITCLASS),
 m_iGreatPeopleRateChange(0),
 m_iMissionType(NO_MISSION),
@@ -1151,6 +1293,11 @@ CvSpecialistInfo::~CvSpecialistInfo()
 	SAFE_DELETE_ARRAY(m_piYieldChange);
 	SAFE_DELETE_ARRAY(m_piCommerceChange);
 	SAFE_DELETE_ARRAY(m_piFlavorValue);
+}
+
+int CvSpecialistInfo::getSpecialistClassType() const
+{
+	return m_iSpecialistClassType;
 }
 
 /*************************************************************************************************/
@@ -1264,6 +1411,9 @@ bool CvSpecialistInfo::read(CvXMLLoadUtility* pXML)
 		return false;
 	}
 
+	pXML->GetChildXmlValByName(szTextVal, "SpecialistClass");
+	m_iSpecialistClassType = pXML->FindInInfoClass(szTextVal);
+
 	pXML->GetChildXmlValByName(szTextVal, "Texture");
 	setTexture(szTextVal);
 
@@ -1324,6 +1474,7 @@ void CvSpecialistInfo::copyNonDefaults(CvSpecialistInfo* pClassInfo, CvXMLLoadUt
 
 	CvHotkeyInfo::copyNonDefaults(pClassInfo, pXML);
 
+	if (getSpecialistClassType() == NO_SPECIALISTCLASS)		m_iSpecialistClassType = pClassInfo->getSpecialistClassType();
 	if (isVisible()					== false)				m_bVisible					= pClassInfo->isVisible();
 	if (getGreatPeopleRateChange()	== 0)					m_iGreatPeopleRateChange	= pClassInfo->getGreatPeopleRateChange();
 	if (getExperience()				== 0.0f)				m_iExperience				= (float)(pClassInfo->getExperience()/100.0);
@@ -26574,6 +26725,7 @@ m_bAIPlayable(false),
 m_bNoCrimeCiv(false),
 m_piCivilizationBuildingArtDefines(NULL),
 m_piCivilizationBuildings(NULL),
+m_piCivilizationSpecialists(NULL),
 m_piCivilizationImprovements(NULL),
 m_piCivilizationUnits(NULL),
 m_piCivilizationFreeUnitsClass(NULL),
@@ -26887,6 +27039,13 @@ int CvCivilizationInfo::getCivilizationBuildings(int i) const
 	return m_piCivilizationBuildings ? m_piCivilizationBuildings[i] : -1;
 }
 
+int CvCivilizationInfo::getCivilizationSpecialists(int i) const
+{
+	FAssertMsg(i < GC.getNumSpecialistClassInfos(), "Index out of bounds");
+	FAssertMsg(i > -1, "Index out of bounds");
+	return m_piCivilizationSpecialists ? m_piCivilizationSpecialists[i] : -1;
+}
+
 int CvCivilizationInfo::getCivilizationImprovements(int i) const
 {
 	FAssertMsg(i < GC.getNumImprovementClassInfos(), "Index out of bounds");
@@ -27150,6 +27309,10 @@ void CvCivilizationInfo::read(FDataStreamBase* stream)
 	m_piCivilizationBuildings = new int[GC.getNumBuildingClassInfos()];
 	stream->Read(GC.getNumBuildingClassInfos(), m_piCivilizationBuildings);
 
+	SAFE_DELETE_ARRAY(m_piCivilizationSpecialists);
+	m_piCivilizationSpecialists = new int[GC.getNumSpecialistClassInfos()];
+	stream->Read(GC.getNumSpecialistClassInfos(), m_piCivilizationSpecialists);
+
 	SAFE_DELETE_ARRAY(m_piCivilizationImprovements);
 	m_piCivilizationImprovements = new int[GC.getNumImprovementClassInfos()];
 	stream->Read(GC.getNumImprovementClassInfos(), m_piCivilizationImprovements);
@@ -27255,6 +27418,7 @@ void CvCivilizationInfo::write(FDataStreamBase* stream)
 		stream->WriteString( m_piCivilizationBuildingArtDefines[i]);
 	}
 	stream->Write(GC.getNumBuildingClassInfos(), m_piCivilizationBuildings);
+	stream->Write(GC.getNumSpecialistClassInfos(), m_piCivilizationSpecialists);
 	stream->Write(GC.getNumImprovementClassInfos(), m_piCivilizationImprovements);
 	stream->Write(GC.getNumUnitClassInfos(), m_piCivilizationUnits);
 	stream->Write(GC.getNumUnitClassInfos(), m_piCivilizationFreeUnitsClass);
@@ -27691,6 +27855,93 @@ bool CvCivilizationInfo::read(CvXMLLoadUtility* pXML)
 			}
 		}
 	}
+
+	// if we can set the current xml node to it's next sibling
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "Specialists"))
+	{
+		// pXML->Skip any comments and stop at the next value we might want
+		if (pXML->SkipToNextVal())
+		{
+			// call the function that sets the default civilization Specialists
+			pXML->InitSpecialistDefaults(&m_piCivilizationSpecialists);
+			/*************************************************************************************************/
+			/**	TrimmingFat								01/12/09								Xienwolf	**/
+			/**																								**/
+			/**						Blocks all Units not specifically authorized for Civ					**/
+			/*************************************************************************************************/
+			if (m_bLimitedSelection)
+			{
+				for (int i = 0; i < GC.getNumSpecialistClassInfos(); i++)
+				{
+					m_piCivilizationSpecialists[i] = -1;
+				}
+			}
+			/*************************************************************************************************/
+			/**	TrimmingFat								END													**/
+			/*************************************************************************************************/
+						// get the total number of children the current xml node has
+			iNumSibs = gDLL->getXMLIFace()->GetNumChildren(pXML->GetXML());
+			// if the call to the function that sets the current xml node to it's first non-comment
+			// child and sets the parameter with the new node's value succeeds
+			if ((0 < iNumSibs) && (gDLL->getXMLIFace()->SetToChild(pXML->GetXML())))
+			{
+				int iSpecialistClassIndex;
+
+				FAssertMsg((iNumSibs <= GC.getNumSpecialistClassInfos()), "In SetGlobalCivilizationInfo iNumSibs is greater than GC.getNumSpecialistClassInfos()");
+
+				// loop through all the siblings
+				for (j = 0; j < iNumSibs; j++)
+				{
+					if (pXML->GetChildXmlVal(szClassVal))
+					{
+						// get the index into the array based on the Specialist class type
+						iSpecialistClassIndex = pXML->FindInInfoClass(szClassVal);
+						if (-1 < iSpecialistClassIndex)
+						{
+							// get the next value which should be the Specialist type to set this civilization's version of this Specialist class too
+							pXML->GetNextXmlVal(szTextVal);
+							// call the find in list function to return either -1 if no value is found
+							// or the index in the list the match is found at
+							m_piCivilizationSpecialists[iSpecialistClassIndex] = pXML->FindInInfoClass(szTextVal);
+						}
+						else
+						{
+							FAssertMsg(0, "SpecialistClass index is -1 in SetGlobalCivilizationInfo function");
+						}
+
+						// set the current xml node to it's parent node
+						gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+					}
+
+					// if the call to the function that sets the current xml node to it's first non-comment
+					// sibling and sets the parameter with the new node's value does not succeed
+					// we will break out of this for loop
+					if (!gDLL->getXMLIFace()->NextSibling(pXML->GetXML()))
+					{
+						break;
+					}
+				}
+
+				// set the current xml node to it's parent node
+				gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+			}
+		}
+
+		// set the current xml node to it's parent node
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+	else
+	{
+		pXML->InitSpecialistDefaults(&m_piCivilizationSpecialists);
+		if (isLimitedSelection())
+		{
+			for (j = 0; j < GC.getNumSpecialistClassInfos(); j++)
+			{
+				m_piCivilizationSpecialists[j] = NO_SPECIALIST;
+			}
+		}
+	}
+
 	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "Improvements"))
 	{
 		// pXML->Skip any comments and stop at the next value we might want
@@ -28014,6 +28265,11 @@ void CvCivilizationInfo::copyNonDefaults(CvCivilizationInfo* pClassInfo, CvXMLLo
 		int iDefaultBuilding = (GC.getBuildingClassInfo((BuildingClassTypes)i).isUnique() || isLimitedSelection()) ? -1 : GC.getBuildingClassInfo((BuildingClassTypes)i).getDefaultBuildingIndex();
 		if (getCivilizationBuildings(i) == iDefaultBuilding)	m_piCivilizationBuildings[i] = pClassInfo->getCivilizationBuildings(i);
 		if (isCivilizationFreeBuildingClass(i) == false)				m_pbCivilizationFreeBuildingClass[i] = pClassInfo->isCivilizationFreeBuildingClass(i);
+	}
+	for (int i = 0; i < GC.getNumSpecialistClassInfos(); i++)
+	{
+		int iDefaultSpecialist = (GC.getSpecialistClassInfo((SpecialistClassTypes)i).isUnique() || isLimitedSelection()) ? -1 : GC.getSpecialistClassInfo((SpecialistClassTypes)i).getDefaultSpecialistIndex();
+		if (getCivilizationSpecialists(i) == iDefaultSpecialist)	m_piCivilizationSpecialists[i] = pClassInfo->getCivilizationSpecialists(i);
 	}
 	for (int i = 0; i < GC.getNumImprovementClassInfos(); i++)
 	{

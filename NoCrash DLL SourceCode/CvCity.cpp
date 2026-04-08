@@ -11944,8 +11944,7 @@ int CvCity::getBaseCommerceRateTimes100(CommerceTypes eIndex) const
 					+ getFreeSpecialistCount((SpecialistTypes)iI)
 				)
 				* (
-					GET_PLAYER(getOwnerINLINE()).getSpecialistExtraCommerce(eIndex)
-					+ GET_PLAYER(getOwnerINLINE()).getSpecialistTypeExtraCommerce((SpecialistTypes)iI, eIndex)
+					GET_PLAYER(getOwnerINLINE()).getSpecialistTypeExtraCommerce((SpecialistTypes)iI, eIndex)
 					+ getLocalSpecialistCommerce((SpecialistTypes)iI, eIndex)
 				)
 			);
@@ -13667,6 +13666,21 @@ void CvCity::changeGreatPeopleUnitProgress(UnitTypes eIndex, int iChange)
 	setGreatPeopleUnitProgress(eIndex, (getGreatPeopleUnitProgress(eIndex) + iChange));
 }
 
+SpecialistTypes CvCity::getSpecialistTypeFromClass(SpecialistClassTypes eIndex) const
+{
+	CivilizationTypes civ = NO_CIVILIZATION;
+	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
+	FAssertMsg(eIndex < GC.getNumSpecialistClassInfos(), "eIndex expected to be < GC.getNumSpecialistClassInfos()");
+	if (GET_PLAYER(getOwnerINLINE()).isIntolerant())
+	{
+		civ = GET_PLAYER(getOwnerINLINE()).getCivilizationType();
+	}
+	else
+	{
+		civ = GET_PLAYER(m_eOriginalOwner).getCivilizationType();
+	}
+	return (SpecialistTypes)GC.getCivilizationInfo(civ).getCivilizationSpecialists((int)eIndex);
+}
 
 int CvCity::getSpecialistCount(SpecialistTypes eIndex) const
 {

@@ -805,8 +805,7 @@ public:
 
 	int getStateReligionBuildingCommerce(CommerceTypes eIndex) const;																	// Exposed to Python
 	void changeStateReligionBuildingCommerce(CommerceTypes eIndex, int iChange);
-
-	int getSpecialistExtraCommerce(CommerceTypes eIndex) const;																				// Exposed to Python
+																				// Exposed to Python
 	void changeSpecialistExtraCommerce(CommerceTypes eIndex, int iChange);
 
 	int getCommerceFlexibleCount(CommerceTypes eIndex) const;

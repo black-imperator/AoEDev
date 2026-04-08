@@ -981,6 +981,7 @@ public:
 /*************************************************************************************************/
 /**	GWSLocalSpecialist																		END	**/
 /*************************************************************************************************/
+	SpecialistTypes CvCity::getSpecialistTypeFromClass(SpecialistClassTypes eIndex) const;
 	int getSpecialistCount(SpecialistTypes eIndex) const;								// Exposed to Python
 	void setSpecialistCount(SpecialistTypes eIndex, int iNewValue);
 	void changeSpecialistCount(SpecialistTypes eIndex, int iChange);

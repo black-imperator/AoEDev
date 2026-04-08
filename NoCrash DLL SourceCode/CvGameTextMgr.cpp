@@ -10467,7 +10467,45 @@ void CvGameTextMgr::parseSpecialistHelp(CvWStringBuffer &szHelpString, Specialis
 		{
 			szHelpString.append(GC.getSpecialistInfo(eSpecialist).getDescription());
 		}
+/*************************************************************************************************/
+/**																								**/
+/**																								**/
+/**						Displays in Civilopedia if a Specialist is Unique						**/
+/*************************************************************************************************/
+		SpecialistClassTypes eSpecialistClass = (SpecialistClassTypes)GC.getSpecialistInfo(eSpecialist).getSpecialistClassType();
+		SpecialistTypes eDefaultSpecialist = (SpecialistTypes)GC.getSpecialistClassInfo(eSpecialistClass).getDefaultSpecialistIndex();
 
+		if (GC.getSpecialistClassInfo(eSpecialistClass).isUnique() || eDefaultSpecialist != eSpecialist)
+		{
+			bool bFound = false;
+			for (iI = 0; iI < GC.getNumCivilizationInfos(); ++iI)
+			{
+				SpecialistTypes eUniqueSpecialist = (SpecialistTypes)GC.getCivilizationInfo((CivilizationTypes)iI).getCivilizationSpecialists((int)eSpecialistClass);
+				if (eUniqueSpecialist == eSpecialist)
+				{
+					szHelpString.append(NEWLINE);
+					szHelpString.append(gDLL->getText("TXT_KEY_UNIQUE_SPECIALIST", GC.getCivilizationInfo((CivilizationTypes)iI).getTextKeyWide()));
+					bFound = true;
+				}
+			}
+
+			if (bFound)
+			{
+				if (NO_SPECIALIST != eDefaultSpecialist && eDefaultSpecialist != eSpecialist && !GC.getSpecialistClassInfo(eSpecialistClass).isUnique())
+				{
+					szHelpString.append(NEWLINE);
+					szHelpString.append(gDLL->getText("TXT_KEY_REPLACES_SPECIALIST", ((CvWString)GC.getSpecialistInfo(eDefaultSpecialist).getType()).c_str(), GC.getSpecialistInfo(eDefaultSpecialist).getTextKeyWide()));
+				}
+			}
+			else
+			{
+				szHelpString.append(NEWLINE);
+				szHelpString.append(gDLL->getText("TXT_KEY_RESTRICTED_SPECIALIST"));
+			}
+		}
+		/*************************************************************************************************/
+		/**	Tweak									END													**/
+		/*************************************************************************************************/
 /*************************************************************************************************/
 /** Specialists Enhancements, by Supercheese 10/9/09           Imported by Valkrionn   10/22/09  */
 /** Moved up by Opera                                                                                             */
@@ -28319,7 +28357,7 @@ void CvGameTextMgr::setCommerceHelp(CvWStringBuffer &szBuffer, CvCity& city, Com
 	szBuffer.append(NEWLINE);
 
 //FfH: Modified by Kael 12/19/2007
-	int iSpecialistCommerce = city.getSpecialistCommerce(eCommerceType) + city.getExtraSpecialistCommerce(eCommerceType) + (city.getSpecialistPopulation() + city.getNumGreatPeople()) * owner.getSpecialistExtraCommerce(eCommerceType);
+	int iSpecialistCommerce = city.getSpecialistCommerce(eCommerceType) + city.getExtraSpecialistCommerce(eCommerceType);
 /*************************************************************************************************/
 /**	GWSLocalSpecialist																	Milaga	**/
 /** Buildings can change give bonuses to specialists in only one city							**/

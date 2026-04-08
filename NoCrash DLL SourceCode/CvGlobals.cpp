@@ -2685,6 +2685,23 @@ CvCorporationInfo& CvGlobals::getCorporationInfo(CorporationTypes eCorporationNu
 	return *(m_paCorporationInfo[eCorporationNum]);
 }
 
+int CvGlobals::getNumSpecialistClassInfos()
+{
+	return (int)m_paSpecialistClassInfo.size();
+}
+
+std::vector<CvSpecialistClassInfo*>& CvGlobals::getSpecialistClassInfo()	// For Moose - XML Load Util, CvInfos
+{
+	return m_paSpecialistClassInfo;
+}
+
+CvSpecialistClassInfo& CvGlobals::getSpecialistClassInfo(SpecialistClassTypes eSpecialistClassNum)
+{
+	FAssert(eSpecialistClassNum > -1);
+	FAssert(eSpecialistClassNum < GC.getNumSpecialistClassInfos());
+	return *(m_paSpecialistClassInfo[eSpecialistClassNum]);
+}
+
 int CvGlobals::getNumSpecialistInfos()
 {
 	return (int)m_paSpecialistInfo.size();

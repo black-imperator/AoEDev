@@ -310,6 +310,41 @@ protected:
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //
+//  class : CvSpecialistClassInfo
+//
+//  DESC:
+//
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+class CvSpecialistClassInfo :
+	public CvHotkeyInfo
+{
+	//---------------------------------------PUBLIC INTERFACE---------------------------------
+public:
+
+	CvSpecialistClassInfo();
+	virtual ~CvSpecialistClassInfo();
+	int getDefaultSpecialistIndex() const;				// Exposed to Python
+	void setDefaultSpecialistIndex(int i);
+	int getMissionType() const;							// Exposed to Python
+	void setMissionType(int iNewType);
+	bool isUnique() const;
+	int getDefaultSpecialistIndexVector();
+	CvString getDefaultSpecialistIndexVectorElement(int i);
+	void copyNonDefaults(CvSpecialistClassInfo* pClassInfo = NULL, CvXMLLoadUtility* pXML = NULL);
+
+	bool read(CvXMLLoadUtility* pXML);
+	bool readPass3();
+
+	//---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
+protected:
+	int m_iMissionType;
+
+	int m_iDefaultSpecialistIndex;
+	bool m_bUnique;
+};
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//
 //  class : CvSpecialistInfo
 //
 //  DESC:
@@ -322,6 +357,8 @@ public:
 
 	CvSpecialistInfo();
 	virtual ~CvSpecialistInfo();
+
+	int getSpecialistClassType() const;
 
 	int getGreatPeopleUnitClass() const;		// Exposed to Python
 	int getGreatPeopleRateChange() const;		// Exposed to Python
@@ -366,6 +403,7 @@ public:
 	//---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
 
 protected:
+	int m_iSpecialistClassType;
 
 	int m_iGreatPeopleUnitClass;		// Exposed to Python
 	int m_iGreatPeopleRateChange;		// Exposed to Python
@@ -5525,6 +5563,7 @@ public:
 
 	DllExport CvString getCivilizationBuildingArtDefines(int i) const;				// Exposed to Python
 	DllExport int getCivilizationBuildings(int i) const;				// Exposed to Python
+	DllExport int getCivilizationSpecialists(int i) const;				// Exposed to Python
 	DllExport int getCivilizationImprovements(int i) const;				// Exposed to Python
 	DllExport int getCivilizationUnits(int i) const;				// Exposed to Python
 	DllExport int getCivilizationFreeUnitsClass(int i) const;				// Exposed to Python
@@ -5608,6 +5647,7 @@ protected:
 	// Arrays
 	CvString* m_piCivilizationBuildingArtDefines;
 	int* m_piCivilizationBuildings;
+	int* m_piCivilizationSpecialists;
 	int* m_piCivilizationImprovements;
 	int* m_piCivilizationUnits;
 	int* m_piCivilizationFreeUnitsClass;

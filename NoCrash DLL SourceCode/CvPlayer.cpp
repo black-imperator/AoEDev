@@ -11484,7 +11484,7 @@ int CvPlayer::specialistCommerce(SpecialistTypes eSpecialist, CommerceTypes eCom
 
 //FfH: Modified by Kael 11/08/2007
 //	return (GC.getSpecialistInfo(eSpecialist).getCommerceChange(eCommerce) + getSpecialistExtraCommerce(eCommerce));
-	return (GC.getSpecialistInfo(eSpecialist).getCommerceChange(eCommerce) + getSpecialistExtraCommerce(eCommerce) + getSpecialistTypeExtraCommerce(eSpecialist, eCommerce));
+	return (GC.getSpecialistInfo(eSpecialist).getCommerceChange(eCommerce) + getSpecialistTypeExtraCommerce(eSpecialist, eCommerce));
 //FfH: End Modify
 
 }
@@ -15335,15 +15335,6 @@ void CvPlayer::changeStateReligionBuildingCommerce(CommerceTypes eIndex, int iCh
 	}
 }
 
-
-int CvPlayer::getSpecialistExtraCommerce(CommerceTypes eIndex) const
-{
-	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
-	FAssertMsg(eIndex < NUM_COMMERCE_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiSpecialistExtraCommerce[eIndex];
-}
-
-
 void CvPlayer::changeSpecialistExtraCommerce(CommerceTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
@@ -15351,8 +15342,10 @@ void CvPlayer::changeSpecialistExtraCommerce(CommerceTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_aiSpecialistExtraCommerce[eIndex] = (m_aiSpecialistExtraCommerce[eIndex] + iChange);
-		FAssert(getSpecialistExtraCommerce(eIndex) >= 0);
+		for (int iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
+		{
+			m_ppaaiSpecialistExtraCommerce[iI][eIndex] = m_ppaaiSpecialistExtraCommerce[iI][eIndex] + iChange;
+		}
 
 		updateCommerce(eIndex);
 

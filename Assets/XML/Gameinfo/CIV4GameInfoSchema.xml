@@ -1390,7 +1390,9 @@
 	<ElementType name="iOrderPriority" content="textOnly" dt:type="int"/>
 	<ElementType name="bVisible" content="textOnly" dt:type="boolean"/>
 	<ElementType name="iGreatPeopleRateChange" content="textOnly" dt:type="int"/>
+	<ElementType name="SpecialistClass" content="textOnly"/>
 	<ElementType name="SpecialistInfo" content="eltOnly" order="many">
+		<element type="SpecialistClass"/>
 		<element type="Type"/>
 		<element type="bForceOverwrite"/>
 		<element type="bTypeDependency"/>
@@ -1420,6 +1422,17 @@
 		<element type="iHotKeyPriority"/>
 		<element type="iOrderPriority" minOccurs="0"/>
 		<element type="Button" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="DefaultSpecialist" content="textOnly"/>
+	<ElementType name="SpecialistClassInfo" content="eltOnly" order="many">
+		<element type="Type"/>
+		<element type="Description"/>
+		<element type="bForceOverwrite"/>
+		<element type="bUnique"/>
+		<element type="DefaultSpecialist"/>
+	</ElementType>
+	<ElementType name="SpecialistClassInfos" content="eltOnly">
+		<element type="SpecialistClassInfo" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="SpecialistInfos" content="eltOnly">
 		<element type="SpecialistInfo" maxOccurs="*"/>
@@ -1760,6 +1773,9 @@
 	</ElementType>
 	<ElementType name="Civ4SpecialistInfos" content="eltOnly">
 		<element type="SpecialistInfos" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="Civ4SpecialistClassInfos" content="eltOnly">
+		<element type="SpecialistClassInfos" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="Civ4DiplomacyInfos" content="eltOnly">
 		<element type="DiplomacyInfos" minOccurs="0" maxOccurs="*"/>
