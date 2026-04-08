@@ -25,11 +25,6 @@
 				<iCommerce>10</iCommerce>
 			</CommerceHappinesses>
 			<ConstructSound>AS2D_BUILD_THEATRE</ConstructSound>
-			<PerPopBonuses>
-				<PerPopBonus>
-					<fFood>-0.01</fFood>
-				</PerPopBonus>
-			</PerPopBonuses>
 			<Flavors>
 			</Flavors>
 			<iFreePromotionPick>0</iFreePromotionPick>

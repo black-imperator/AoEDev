@@ -192,4 +192,12 @@
         <Italian>[ICON_BULLET]Changes this mana source to either fire, earth, air, water or force. The more of one mana type you have, the less likely it will be chosen.</Italian>
         <Spanish>[ICON_BULLET]Changes this mana source to either fire, earth, air, water or force. The more of one mana type you have, the less likely it will be chosen.</Spanish>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_MASTER_OF_THE_ELEMENTS_DAO</Tag>
+        <English>Elemental Ascension</English>
+        <French>Elemental Ascension</French>
+        <German>Elemental Ascension</German>
+        <Italian>Elemental Ascension</Italian>
+        <Spanish>Elemental Ascension</Spanish>
+    </TEXT>
 </Civ4GameText>

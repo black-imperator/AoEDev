@@ -7186,7 +7186,7 @@
 			<ArtDefineTag>ART_DEF_IMPROVEMENT_WITCH_HUT</ArtDefineTag>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
-				<iYieldChange>3</iYieldChange>
+				<iYieldChange>2</iYieldChange>
 				<iYieldChange>0</iYieldChange>
 			</YieldChanges>
 			<iAdvancedStartCost>48</iAdvancedStartCost>
@@ -7344,6 +7344,14 @@
 						<iYield>0</iYield>
 						<iYield>0</iYield>
 						<iYield>1</iYield>
+					</TechYields>
+				</TechYieldChange>
+				<TechYieldChange>
+					<PrereqTech>TECH_ANIMAL_HANDLING</PrereqTech>
+					<TechYields>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
 					</TechYields>
 				</TechYieldChange>
 			</TechYieldChanges>

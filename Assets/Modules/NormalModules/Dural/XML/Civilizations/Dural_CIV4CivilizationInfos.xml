@@ -271,6 +271,10 @@
 					<UnitType>UNIT_STUDENT_OF_WINTER</UnitType>
 				</Unit>
 				<Unit>
+					<UnitClassType>UNITCLASS_ESUS_STUDENT</UnitClassType>
+					<UnitType>UNIT_ESUS_STUDENT</UnitType>
+				</Unit>
+				<Unit>
 					<UnitClassType>UNITCLASS_DISCIPLE_EMPYREAN</UnitClassType>
 					<UnitType>UNIT_STUDENT_EMPYREAN</UnitType>
 				</Unit>

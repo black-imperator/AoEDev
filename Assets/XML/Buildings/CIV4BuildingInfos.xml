@@ -9020,8 +9020,7 @@
 			</PrereqBuildingAtRanges>
 			<PerPopBonuses>
 				<PerPopBonus>
-					<fGold>0.50</fGold>
-					<fProduction>1</fProduction>
+					<fGold>0.10</fGold>
 					<fTradeRoutes>0.22</fTradeRoutes>
 				</PerPopBonus>
 			</PerPopBonuses>
@@ -9413,7 +9412,6 @@
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_WIGWAM_WARCHIEF</ArtDefineTag>
 			<PrereqTech>TECH_FEUDALISM</PrereqTech>
-			<bGovernmentCenter>1</bGovernmentCenter>
 			<bCenterInCity>1</bCenterInCity>
 			<iAIWeight>100</iAIWeight>
 			<iCost>200</iCost>

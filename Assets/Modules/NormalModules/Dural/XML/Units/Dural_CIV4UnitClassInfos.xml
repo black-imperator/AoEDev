@@ -29,5 +29,16 @@
 			<DefaultUnit>UNIT_KARRLSON</DefaultUnit>
 				<iMercenaryWeight>0</iMercenaryWeight>
 	</UnitClassInfo>
+		<UnitClassInfo>		<!-- Esus Student -->
+			<Type>UNITCLASS_ESUS_STUDENT</Type>
+			<Description>TXT_KEY_UNIT_PROFESSOR</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<bUnique>1</bUnique>
+			<DefaultUnit>UNIT_ESUS_STUDENT</DefaultUnit>
+				<iMercenaryWeight>1</iMercenaryWeight>
+	</UnitClassInfo>
 	</UnitClassInfos>
 </Civ4UnitClassInfos>

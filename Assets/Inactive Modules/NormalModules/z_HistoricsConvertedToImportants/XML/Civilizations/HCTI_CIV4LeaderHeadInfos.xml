@@ -5887,7 +5887,7 @@
 			<iAttitudeToMales>0</iAttitudeToMales>
 			<iSomniumAggressiveness>40</iSomniumAggressiveness>
 			<Alignment>ALIGNMENT_NEUTRAL</Alignment>
-			<LeaderClass>LEADERCLASS_LUCHUIRP_IMPORTANT</LeaderClass>
+			<LeaderClass>LEADERCLASS_LUCHUIRP_IMPORTANTx</LeaderClass>
 			<iAlignmentModifier>55</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_NEUTRAL</EthicalAlignment>
 			<iEthicalAlignmentModifier>-175</iEthicalAlignmentModifier>
@@ -9446,7 +9446,7 @@
 			<iAttitudeToMales>0</iAttitudeToMales>
 			<iSomniumAggressiveness>45</iSomniumAggressiveness>
 			<Alignment>ALIGNMENT_GOOD</Alignment>
-			<LeaderClass>LEADERCLASS_IMPORTANT</LeaderClass>
+			<LeaderClass>LEADERCLASS_LUCHUIRP_IMPORTANT</LeaderClass>
 			<iAlignmentModifier>305</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_NEUTRAL</EthicalAlignment>
 			<iEthicalAlignmentModifier>220</iEthicalAlignmentModifier>

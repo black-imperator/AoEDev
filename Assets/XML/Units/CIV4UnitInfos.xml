@@ -15054,7 +15054,7 @@
 				</BonusAffinity>
 			</BonusAffinities>
 		</UnitInfo>
-		<UnitInfo>        <!-- Chislev Free-Spirits -->
+		<UnitInfo>        <!-- Chislev TaliWali -->
 			<Class>UNITCLASS_FREE_SPIRITS</Class>
 			<Type>UNIT_FREE_SPIRITS</Type>
 			<Combat>NONE</Combat>

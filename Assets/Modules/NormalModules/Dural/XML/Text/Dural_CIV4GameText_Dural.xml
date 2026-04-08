@@ -388,6 +388,14 @@ Philosophers and hyperspecialists.
 		<Spanish>Student of the Emyprean</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_STUDENT_ESUS</Tag>
+		<English>Student of Esus</English>
+		<French>Student of Esus</French>
+		<German>Student of Esus</German>
+		<Italian>Student of Esus</Italian>
+		<Spanish>Student of Esus</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_STUDENT_THE_ORDER</Tag>
 		<English>Student of the Order</English>
 		<French>Étudiant de l'Ordre</French>

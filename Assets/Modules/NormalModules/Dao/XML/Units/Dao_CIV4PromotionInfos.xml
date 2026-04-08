@@ -426,6 +426,32 @@
 				</DamageTypeResist>
 			</DamageTypeResists>
 		</PromotionInfo>
+		<PromotionInfo>		<!-- Master of Force -->		<!-- Dao Enabler -->
+			<Type>PROMOTION_MASTER_OF_FORCE</Type>
+			<Description>TXT_KEY_PROMOTION_MASTER_OF_FORCE</Description>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PrereqPromotionANDs>
+				<PrereqPromotionAND>
+					<PromotionType>PROMOTION_FORCE3</PromotionType>
+					<iPrereqApplications>1</iPrereqApplications>
+				</PrereqPromotionAND>
+			</PrereqPromotionANDs>
+			<bAutoAcquire>1</bAutoAcquire>
+			<bNoXP>1</bNoXP>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Art/Civs/ArcaneMastery/Promotions/Force.dds</Button>
+			<iAIWeight>500</iAIWeight>
+			<iResistMagic>75</iResistMagic>
+		</PromotionInfo>
 		
 		<!-- so that RuoLan Hermits can get some xp -->
 
@@ -447,5 +473,44 @@
 		</PromotionInfo>
 		
 		
+		<PromotionInfo>		<!-- Dao Elemental + force mastery -->
+			<Type>PROMOTION_MASTER_OF_THE_ELEMMENTS_DAO</Type>
+			<Description>TXT_KEY_PROMOTION_MASTER_OF_THE_ELEMENTS_DAO</Description>
+			<iAsset>50</iAsset>
+			<Button>Art/Civs/ArcaneMastery/Promotions/Masterelements.dds</Button>
+			<iAIWeight>500</iAIWeight>
+			<iMinLevel>8</iMinLevel>
+			<PrereqCivilizations>
+				<PrereqCivilization>CIVILIZATION_DAO</PrereqCivilization>
+			</PrereqCivilizations>
+			<PrereqPromotionANDs>
+				<PrereqPromotionAND>
+					<PromotionType>PROMOTION_MASTER_OF_FIRE_AND_WATER</PromotionType>
+					<iPrereqApplications>1</iPrereqApplications>
+				</PrereqPromotionAND>
+				<PrereqPromotionAND>
+					<PromotionType>PROMOTION_MASTER_OF_EARTH_AND_AIR</PromotionType>
+					<iPrereqApplications>1</iPrereqApplications>
+				</PrereqPromotionAND>
+				<PrereqPromotionAND>
+					<PromotionType>PROMOTION_MASTER_OF_FORCE</PromotionType>
+					<iPrereqApplications>1</iPrereqApplications>
+				</PrereqPromotionAND>
+			</PrereqPromotionANDs>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<iPromotionDuration>1</iPromotionDuration>
+			<PromotionDegradesTo>
+				<Promotion>PROMOTION_MASTER_OF_THE_ELEMENTS</Promotion>
+			</PromotionDegradesTo>
+		</PromotionInfo>
 	</PromotionInfos>
 </Civ4PromotionInfos>

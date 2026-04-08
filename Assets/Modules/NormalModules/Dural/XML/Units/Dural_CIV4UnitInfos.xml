@@ -1342,6 +1342,7 @@
 			<UnitClassUpgrades>
 				<UnitClassUpgradeType>UNITCLASS_PROFESSOR</UnitClassUpgradeType>
 				<UnitClassUpgradeType>UNITCLASS_HORSEMAN</UnitClassUpgradeType>
+				<UnitClassUpgradeType>UNITCLASS_CHARIOT</UnitClassUpgradeType>
 			</UnitClassUpgrades>
 			<UnitAIs>
 				<UnitAI>
@@ -1397,6 +1398,85 @@
 				</FreePromotion>
 				<FreePromotion>
 					<PromotionType>PROMOTION_SENTRY</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_SECONDARY_DISCIPLE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+			<bFreeXP>1</bFreeXP>
+			<bNeverObsolete>1</bNeverObsolete>
+			<iTier>2</iTier>
+		</UnitInfo>
+		<UnitInfo>		<!-- Student of Esus -->
+			<Class>UNITCLASS_ESUS_STUDENT</Class>
+			<Type>UNIT_ESUS_STUDENT</Type>
+			<Combat>UNITCOMBAT_DISCIPLE</Combat>
+			<DefaultUnitAI>UNITAI_MISSIONARY</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_STUDENT_ESUS</Description>
+			<Civilopedia>TXT_KEY_UNIT_STUDENT_ESUS_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_DISCIPLE_STRATEGY</Strategy>
+			<Advisor>ADVISOR_RELIGION</Advisor>
+			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bMilitarySupport>1</bMilitarySupport>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<UnitClassUpgrades>
+				<UnitClassUpgradeType>UNITCLASS_PROFESSOR</UnitClassUpgradeType>
+				<UnitClassUpgradeType>UNITCLASS_ASSASSIN</UnitClassUpgradeType>
+			</UnitClassUpgrades>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_MISSIONARY</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_RESERVE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_COUNTER</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<ReligionSpreads>
+				<ReligionSpread>
+					<ReligionType>RELIGION_COUNCIL_OF_ESUS</ReligionType>
+					<iReligionSpread>40</iReligionSpread>
+				</ReligionSpread>
+			</ReligionSpreads>
+			<ReligionType>RELIGION_COUNCIL_OF_ESUS</ReligionType>
+			<PrereqReligion>RELIGION_COUNCIL_OF_ESUS</PrereqReligion>
+			<PrereqTech>TECH_DECEPTION</PrereqTech>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_RELIGION</FlavorType>
+					<iFlavor>4</iFlavor>
+				</Flavor>
+			</Flavors>
+			<iCost>60</iCost>
+			<iMoves>1</iMoves>
+			<iBaseDiscover>10</iBaseDiscover>
+			<iDiscoverMultiplier>1</iDiscoverMultiplier>
+			<iGreatWorkCulture>20</iGreatWorkCulture>
+			<iCombat>2</iCombat>
+			<iCultureGarrison>6</iCultureGarrison>
+			<iAsset>3</iAsset>
+			<bRivalTerritory>1</bRivalTerritory>
+			<iInvisibleLevel>1</iInvisibleLevel>
+			<UnitMeshGroups>
+				<iGroupSize>1</iGroupSize>
+				<fMaxSpeed>1.25</fMaxSpeed>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>1</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_ESUS_STUDENT</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_SIPHON_FUNDS</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 				<FreePromotion>
@@ -1742,7 +1822,8 @@
 			<bMilitaryProduction>1</bMilitaryProduction>
 			<UnitClassUpgrades>
 				<UnitClassUpgradeType>UNITCLASS_PROFESSOR</UnitClassUpgradeType>
-				<UnitClassUpgradeType>UNITCLASS_THIEF</UnitClassUpgradeType>
+				<UnitClassUpgradeType>UNITCLASS_TRIREME</UnitClassUpgradeType>
+				<UnitClassUpgradeType>UNITCLASS_GALLEY</UnitClassUpgradeType>
 			</UnitClassUpgrades>
 			<UnitAIs>
 				<UnitAI>
@@ -1793,10 +1874,6 @@
 			<FreePromotions>
 				<FreePromotion>
 					<PromotionType>PROMOTION_MEDIC1</PromotionType>
-					<iNumApplied>1</iNumApplied>
-				</FreePromotion>
-				<FreePromotion>
-					<PromotionType>PROMOTION_CRAZED</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 				<FreePromotion>

@@ -518,6 +518,14 @@
 					<BuildingClassType>BUILDINGCLASS_HERBALIST</BuildingClassType>
 					<BuildingType>NONE</BuildingType>
 				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_WELL</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_AQUEDUCT</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
 			</Buildings>
 			<Units>
 				<Unit>
