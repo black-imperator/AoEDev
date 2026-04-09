@@ -5809,6 +5809,9 @@
 			<PrereqCivilizations>
 				<PrereqCivilization>CIVILIZATION_KHAZAD</PrereqCivilization>
 			</PrereqCivilizations>
+			<PrereqTechANDs>
+				<PrereqTech>TECH_WAY_OF_THE_EARTHMOTHER</PrereqTech>
+			</PrereqTechANDs>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>

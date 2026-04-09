@@ -15018,7 +15018,7 @@
 				<iRangedWaveSize>0</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>3</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_PHALANX_CHISLEV</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_WARHOUND_CHISLEV</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FreePromotions>
