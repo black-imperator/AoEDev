@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Jason Winokur (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Improvement art path information -->
+<Civ4ArtDefines xmlns="x-schema:IL_CIV4ArtDefinesSchema.xml">
+	<ImprovementArtInfos>
+		<ImprovementArtInfo>
+			<Type>ART_DEF_IMPROVEMENT_SAND_DUST</Type>
+			<bExtraAnimations>0</bExtraAnimations>
+			<fScale>17.0</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Improvements/SandDust/SandDust.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Improvements/SandDust.dds</Button>
+		</ImprovementArtInfo>
+	</ImprovementArtInfos>
+</Civ4ArtDefines>

@@ -248,6 +248,14 @@
 			<KFM/>
 			<NoShaderNIF/>
 			<BackgroundKFM/>
+		</LeaderheadArtInfo>	
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_SIHAYA</Type>
+			<Button>,Art/interface/LeaderHeads/SandqueenButton.dds</Button>
+			<NIF>art/interface/LeaderHeads/Sandqueen.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
 		</LeaderheadArtInfo>		
 	</LeaderheadArtInfos>
 </Civ4ArtDefines>

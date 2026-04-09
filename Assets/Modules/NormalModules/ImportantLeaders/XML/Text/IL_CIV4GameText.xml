@@ -585,4 +585,108 @@
 		<Italian>Aurgelmir</Italian>
 		<Spanish>Aurgelmir</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_SIHAYA</Tag>
+		<English>Sih-Aya</English>
+		<French>Sih-Aya</French>
+		<German>Sih-Aya</German>
+		<Italian>Sih-Aya</Italian>
+		<Spanish>Sih-Aya</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_SIHAYA_PEDIA</Tag>
+		<English>Sih-Aya</English>
+		<French>Sih-Aya</French>
+		<German>Sih-Aya</German>
+		<Italian>Sih-Aya</Italian>
+		<Spanish>Sih-Aya</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_SAND_DUST</Tag>
+		<English>Wyrm Sand Harvester</English>
+		<French>Wyrm Sand Harvester</French>
+		<German>Wyrm Sand Harvester</German>
+		<Italian>Wyrm Sand Harvester</Italian>
+		<Spanish>Wyrm Sand Harvester</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILD_SAND_DUST</Tag>
+		<English>Build a [LINK=IMPROVEMENT_SAND_DUST]Wyrm Sand Harvester[\LINK]</English>
+		<French>Construire une [LINK=IMPROVEMENT_SAND_DUST]Wyrm Sand Harvester[\LINK]</French>
+		<German>Baut eine [LINK=IMPROVEMENT_SAND_DUST]Wyrm Sand Harvester[\LINK]</German>
+		<Italian>Build a [LINK=IMPROVEMENT_SAND_DUST]Wyrm Sand Harvester[\LINK]</Italian>
+		<Spanish>Build a [LINK=IMPROVEMENT_SAND_DUST]Wyrm Sand Harvester[\LINK]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_SHIFTING_SANDS</Tag>
+		<English>Shifting Sands</English>
+		<French>Shifting Sands</French>
+		<German>Shifting Sands</German>
+		<Italian>Shifting Sands</Italian>
+		<Spanish>Shifting Sands</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_WYRM_SAND_DUST_BUILD</Tag>
+		<English>Sand Sifting</English>
+		<French>Sand Sifting</French>
+		<German>Sand Sifting</German>
+		<Italian>Sand Sifting</Italian>
+		<Spanish>Sand Sifting</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_DUST_AFFINITY</Tag>
+		<English>Sand Affinity</English>
+		<French>Sand Affinity</French>
+		<German>Sand Affinity</German>
+		<Italian>Sand Affinity</Italian>
+		<Spanish>Sand Affinity</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_SHIFTING_SANDS_PEDIA</Tag>
+		<English>Shifting Sands</English>
+		<French>Shifting Sands</French>
+		<German>Shifting Sands</German>
+		<Italian>Shifting Sands</Italian>
+		<Spanish>Shifting Sands</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_SHIFTING_SANDS_STRATEGY</Tag>
+		<English>Shifting Sands</English>
+		<French>Shifting Sands</French>
+		<German>Shifting Sands</German>
+		<Italian>Shifting Sands</Italian>
+		<Spanish>Shifting Sands</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_SHIFTING_SANDS_SHORT</Tag>
+		<English>Sands</English>
+		<French>Sands</French>
+		<German>Sands</German>
+		<Italian>Sands</Italian>
+		<Spanish>Sands</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_AFFINITY_DUST_IL</Tag>
+		<English>Sand Affinity</English>
+		<French>Sand Affinity</French>
+		<German>Sand Affinity</German>
+		<Italian>Sand Affinity</Italian>
+		<Spanish>Sand Affinity</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_AFFINITY_DUST_IL_PEDIA</Tag>
+		<English>Sand Affinity</English>
+		<French>Sand Affinity</French>
+		<German>Sand Affinity</German>
+		<Italian>Sand Affinity</Italian>
+		<Spanish>Sand Affinity</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_AFFINITY_DUST_IL_STRATEGY</Tag>
+		<English>Sih-Aya</English>
+		<French>Sih-Aya</French>
+		<German>Sih-Aya</German>
+		<Italian>Sih-Aya</Italian>
+		<Spanish>Sih-Aya</Spanish>
+	</TEXT>
 </Civ4GameText>

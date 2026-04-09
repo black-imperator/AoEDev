@@ -307,5 +307,27 @@
 			</Leaders>
 		</CivilizationInfo>
 		
+		<CivilizationInfo><!-- Malakim -->
+			<Type>CIVILIZATION_MALAKIM</Type>
+			<Leaders>
+				<Leader>
+					<LeaderName>LEADER_VARN</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
+				<Leader>
+					<LeaderName>LEADER_DECIUS</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
+				<Leader>
+					<LeaderName>LEADER_KANE</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
+				<Leader>
+					<LeaderName>LEADER_SIHAYA</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
+			</Leaders>
+		</CivilizationInfo>
+		
 	</CivilizationInfos>
 </Civ4CivilizationInfos>

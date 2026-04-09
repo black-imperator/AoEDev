@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Bart Muzzin (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Build Infos -->
+<Civ4BuildInfos xmlns="x-schema:IL_CIV4UnitSchema.xml">
+	<BuildInfos>
+		<BuildInfo> <!-- Pyre -->
+			<Type>BUILD_SAND_DUST_IL</Type>
+			<Description>TXT_KEY_BUILD_SAND_DUST</Description>
+			<Help/>
+			<PrereqTech>NONE</PrereqTech>
+			<iTime>800</iTime>
+			<iCost>0</iCost>
+			<bKill>0</bKill>
+			<LinkedBuilds>
+				<LinkedBuild>BUILD_REMOVE_FOREST</LinkedBuild>
+				<LinkedBuild>BUILD_REMOVE_JUNGLE</LinkedBuild>
+			</LinkedBuilds>
+			<ImprovementType>IMPROVEMENTCLASS_SAND_DUST</ImprovementType>
+			<RouteType>NONE</RouteType>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<FeatureStructs>
+				<FeatureStruct>
+					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>1000</iTime>
+					<iProduction>10</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>800</iTime>
+					<iProduction>20</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>500</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>500</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>2000</iTime>
+					<iProduction>20</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+			</FeatureStructs>
+			<HotKey>KB_C</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<Button>Art/Civs/Dtesh/Pyre/Pyre.dds</Button>
+		</BuildInfo>
+	</BuildInfos>
+</Civ4BuildInfos>

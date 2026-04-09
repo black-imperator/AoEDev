@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Improvement Infos -->
+<Civ4ImprovementInfos xmlns="x-schema:IL_CIV4TerrainSchema.xml">
+	<ImprovementInfos>
+		<ImprovementInfo><!-- Sand Dust -->
+			<Type>IMPROVEMENT_SAND_DUST</Type>
+			<ImprovementClass>IMPROVEMENTCLASS_SAND_DUST</ImprovementClass>
+			<Description>TXT_KEY_IMPROVEMENT_SAND_DUST</Description>
+			<ArtDefineTag>ART_DEF_IMPROVEMENT_SAND_DUST</ArtDefineTag>
+			<bWater>0</bWater>
+			<iPillageGold>15</iPillageGold>
+			<BonusTypeStructs>
+				<BonusTypeStruct>
+					<BonusType>BONUS_ASH</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>2</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+			</BonusTypeStructs>
+			<iMinimumDistance>2</iMinimumDistance>
+			<TerrainMakesValids>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_DESERT</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_BURNING_SANDS</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+			</TerrainMakesValids>
+			<TechYieldChanges>
+				<TechYieldChange>
+					<PrereqTech>TECH_ANIMAL_MASTERY</PrereqTech>
+					<TechYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</TechYields>
+				</TechYieldChange>
+				<TechYieldChange>
+					<PrereqTech>TECH_SORCERY</PrereqTech>
+					<TechYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>2</iYield>
+					</TechYields>
+				</TechYieldChange>
+			</TechYieldChanges>
+			<BonusConvert>BONUS_ASH</BonusConvert>
+			<iSpawnUnitChancePercentMod>-90</iSpawnUnitChancePercentMod>
+			<SpawnUnitType>UNIT_SAND_WORM</SpawnUnitType>
+			<bSpawnOnlyForOwner>1</bSpawnOnlyForOwner>
+			<iSpawnAtOnceLimit>1</iSpawnAtOnceLimit>
+			<SpawnPromotions>
+				<Promotion>PROMOTION_WYRM_DUST_AFFINITY</Promotion>
+				<Promotion>PROMOTION_HIDDEN_NATIONALITY</Promotion>
+			</SpawnPromotions>
+		</ImprovementInfo>
+	</ImprovementInfos>
+</Civ4ImprovementInfos>

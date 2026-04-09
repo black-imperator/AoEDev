@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Basic Infos -->
+<Civ4AffinityInfos xmlns="x-schema:IL_CIV4UnitSchema.xml">
+	<AffinityInfos>
+		<AffinityInfo><!-- Dust Affinity-->
+			<Type>AFFINITY_DUST_IL</Type>
+			<Description>TXT_KEY_AFFINITY_DUST_IL</Description>
+			<Civilopedia>TXT_KEY_AFFINITY_DUST_IL_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_AFFINITY_DUST_IL_STRATEGY</Strategy>
+			<BonusTypes>
+				<BonusType>BONUS_ASH</BonusType>
+			</BonusTypes>
+			<fStrengthMod>3</fStrengthMod>
+			<fHealRate>0.2</fHealRate>
+		</AffinityInfo>
+	</AffinityInfos>
+</Civ4AffinityInfos>

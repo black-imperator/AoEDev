@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Bonus Infos -->
+<Civ4BonusInfos xmlns="x-schema:IL_CIV4TerrainSchema.xml">
+	<BonusInfos>
+		<BonusInfo>		<!-- Ash -->
+			<Type>BONUS_ASH</Type>
+			<Description>TXT_KEY_BONUS_ASH</Description>
+			<Civilopedia>TXT_KEY_BONUS_ASH_PEDIA</Civilopedia>
+			<BonusClassType>NONE</BonusClassType>
+			<ArtDefineTag>ART_DEF_BONUS_ASH</ArtDefineTag>
+			<TechReveal>NONE</TechReveal>
+			<TechCityTrade>NONE</TechCityTrade>
+			<TechObsolete>NONE</TechObsolete>
+			<YieldChanges>
+				<iYieldChange>-3</iYieldChange>
+				<iYieldChange>0</iYieldChange>
+				<iYieldChange>1</iYieldChange>
+			</YieldChanges>
+			<iAITradeModifier>-1000</iAITradeModifier>
+			<iAIObjective>-1</iAIObjective>
+			<iPlacementOrder>-1</iPlacementOrder>
+			<iConstAppearance>0</iConstAppearance>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iMinLatitude>0</iMinLatitude>
+			<iMaxLatitude>90</iMaxLatitude>
+			<Rands>
+				<iRandApp1>0</iRandApp1>
+				<iRandApp2>0</iRandApp2>
+				<iRandApp3>0</iRandApp3>
+				<iRandApp4>0</iRandApp4>
+			</Rands>
+			<iPlayer>0</iPlayer>
+			<iTilesPer>0</iTilesPer>
+			<iMinLandPercent>0</iMinLandPercent>
+			<iUnique>0</iUnique>
+			<iGroupRange>0</iGroupRange>
+			<iGroupRand>0</iGroupRand>
+			<bArea>0</bArea>
+			<bHills>0</bHills>
+			<bFlatlands>0</bFlatlands>
+			<bNoRiverSide>0</bNoRiverSide>
+			<bNormalize>0</bNormalize>
+			<TerrainBooleans>
+			</TerrainBooleans>
+			<FeatureTerrainBooleans>
+			</FeatureTerrainBooleans>
+			<bModifierPerBonus>1</bModifierPerBonus>
+			<iBadAttitude>0</iBadAttitude>
+			<iDiscoverRandModifier>0</iDiscoverRandModifier>
+			<iGreatPeopleRateModifier>0</iGreatPeopleRateModifier>
+			<iHealChange>0</iHealChange>
+			<iHealChangeEnemy>0</iHealChangeEnemy>
+			<iMaintenanceModifier>0</iMaintenanceModifier>
+			<iMutateChance>0</iMutateChance>
+			<CommerceModifiers>
+				<iCommerce>0</iCommerce>
+				<iCommerce>1</iCommerce>
+				<iCommerce>0</iCommerce>
+			</CommerceModifiers>
+			<DamageType>NONE</DamageType>
+			<FreePromotion>NONE</FreePromotion>
+		</BonusInfo>
+	</BonusInfos>
+</Civ4BonusInfos>

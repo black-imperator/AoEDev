@@ -501,6 +501,35 @@
 				</ExtraBuildingClass>
 			</ExtraBuildingClasses>
 		</TraitInfo>
+		<TraitInfo>		<!-- Shifting Sands -->
+			<Type>TRAIT_SHIFTING_SANDS</Type>
+			<Description>TXT_KEY_TRAIT_SHIFTING_SANDS</Description>
+			<Civilopedia>TXT_KEY_TRAIT_SHIFTING_SANDS_PEDIA</Civilopedia>
+			<ShortDescription>TXT_KEY_TRAIT_SHIFTING_SANDS_SHORT</ShortDescription>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_WYRM_SAND_DUST_BUILD</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
+			</FreePromotions>
+			<FreePromotionUnitCombats>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+			</FreePromotionUnitCombats>
+			<PlotEffectSpawnChances>
+				<PlotEffectSpawnChance>
+					<PlotEffectType>PLOT_EFFECT_SANDSTORM</PlotEffectType>
+					<iSpawnChance>350</iSpawnChance>
+				</PlotEffectSpawnChance>
+			</PlotEffectSpawnChances>
+			<TradeYieldModifiers>
+				<iYield>0</iYield>
+				<iYield>0</iYield>
+				<iYield>-35</iYield>
+			</TradeYieldModifiers>
+		</TraitInfo>
 		
 	</TraitInfos>
 </Civ4TraitInfos>

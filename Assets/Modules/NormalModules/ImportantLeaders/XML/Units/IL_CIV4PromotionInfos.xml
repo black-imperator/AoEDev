@@ -261,5 +261,39 @@
 				<Promotion>PROMOTION_PASSIONLESS</Promotion>
 			</PromotionOverwrites>
 		</PromotionInfo>
+		
+		<PromotionInfo>		<!-- Sand Wyrm Builder    -->
+			<Type>PROMOTION_WYRM_SAND_DUST_BUILD</Type>
+			<Description>TXT_KEY_PROMOTION_WYRM_SAND_DUST_BUILD</Description>
+			<bAutoAcquire>1</bAutoAcquire>
+			<bMustMaintain>1</bMustMaintain>
+			<bNoXP>1</bNoXP>
+			<PrereqTraits>
+				<PrereqTrait>TRAIT_SHIFTING_SANDS</PrereqTrait>
+			</PrereqTraits>
+			<PromotionBuilds>
+				<PromotionBuild>BUILD_SAND_DUST_IL</PromotionBuild>
+			</PromotionBuilds>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Art/Interface/Buttons/Improvements/SandDust.dds</Button>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Sand Wyrm Affinity    -->
+			<Type>PROMOTION_WYRM_DUST_AFFINITY</Type>
+			<Description>TXT_KEY_PROMOTION_DUST_AFFINITY</Description>
+			<bNoXP>1</bNoXP>
+			<PromotionBuilds>
+				<PromotionBuild>BUILD_SAND_DUST_IL</PromotionBuild>
+			</PromotionBuilds>
+			<Affinities>
+				<Affinity>AFFINITY_DUST_IL</Affinity>
+			</Affinities>
+			<Button>Art/Interface/Buttons/Improvements/SandDust.dds</Button>
+			<iMinLevel>-1</iMinLevel>
+		</PromotionInfo>
 	</PromotionInfos>
 </Civ4PromotionInfos>
