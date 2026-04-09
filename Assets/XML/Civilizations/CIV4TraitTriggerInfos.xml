@@ -5526,12 +5526,12 @@
 				</CounterChange>
 				<CounterChange>
 					<TraitType>TRAIT_COYOTE_TRIBE_FAVOR</TraitType>
-					<iModifier>-2</iModifier>
+					<iModifier>-1</iModifier>
 					<bFloorZero>1</bFloorZero>
 				</CounterChange>
 				<CounterChange>
 					<TraitType>TRAIT_BEAR_TRIBE_FAVOR</TraitType>
-					<iModifier>-2</iModifier>
+					<iModifier>-1</iModifier>
 					<bFloorZero>1</bFloorZero>
 				</CounterChange>
 				<CounterChange>
@@ -5541,6 +5541,16 @@
 				</CounterChange>
 				<CounterChange>
 					<TraitType>TRAIT_TORTOISE_TRIBE_FAVOR</TraitType>
+					<iModifier>-1</iModifier>
+					<bFloorZero>1</bFloorZero>
+				</CounterChange>
+				<CounterChange>
+					<TraitType>TRAIT_SIXTH_TRIBE_FAVOR</TraitType>
+					<iModifier>-1</iModifier>
+					<bFloorZero>1</bFloorZero>
+				</CounterChange>
+				<CounterChange>
+					<TraitType>TRAIT_SEVENTH_TRIBE_FAVOR</TraitType>
 					<iModifier>-1</iModifier>
 					<bFloorZero>1</bFloorZero>
 				</CounterChange>
@@ -5554,7 +5564,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_EAGLE_TRIBE_FAVOR</TraitType>
-					<iModifier>-3</iModifier>
+					<iModifier>-2</iModifier>
 					<bFloorZero>1</bFloorZero>
 				</CounterChange>
 				<CounterChange>
@@ -5564,7 +5574,7 @@
 				</CounterChange>
 				<CounterChange>
 					<TraitType>TRAIT_BEAR_TRIBE_FAVOR</TraitType>
-					<iModifier>-2</iModifier>
+					<iModifier>-3</iModifier>
 					<bFloorZero>1</bFloorZero>
 				</CounterChange>
 				<CounterChange>
@@ -5574,6 +5584,16 @@
 				</CounterChange>
 				<CounterChange>
 					<TraitType>TRAIT_TORTOISE_TRIBE_FAVOR</TraitType>
+					<iModifier>-1</iModifier>
+					<bFloorZero>1</bFloorZero>
+				</CounterChange>
+				<CounterChange>
+					<TraitType>TRAIT_SIXTH_TRIBE_FAVOR</TraitType>
+					<iModifier>-1</iModifier>
+					<bFloorZero>1</bFloorZero>
+				</CounterChange>
+				<CounterChange>
+					<TraitType>TRAIT_SEVENTH_TRIBE_FAVOR</TraitType>
 					<iModifier>-3</iModifier>
 					<bFloorZero>1</bFloorZero>
 				</CounterChange>
@@ -5582,15 +5602,15 @@
 				<TraitHookType>TRAITHOOK_PLAYER_TURN</TraitHookType>
 			<bPrereqWar>1</bPrereqWar>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Make Peace          Anybody          Eagle, Serpent, and Tortoise Tribe Favor -->
+		<TraitTriggerInfo> <!-- Make Peace          Anybody          Three sisters, Wolf, and Bear Tribe Favor -->
 			<Type>TRAITTRIGGER_MAKE_PEACE_TRIBAL</Type>
 			<CounterChanges>
 				<CounterChange>
-					<TraitType>TRAIT_EAGLE_TRIBE_FAVOR</TraitType>
+					<TraitType>TRAIT_SEVENTH_TRIBE_FAVOR</TraitType>
 					<iModifier>10</iModifier>
 				</CounterChange>
 				<CounterChange>
-					<TraitType>TRAIT_TORTOISE_TRIBE_FAVOR</TraitType>
+					<TraitType>TRAIT_BEAR_TRIBE_FAVOR</TraitType>
 					<iModifier>10</iModifier>
 				</CounterChange>
 				<CounterChange>
@@ -5602,17 +5622,27 @@
 			<TraitClassType>TRAITCLASS_TRIBAL</TraitClassType>
 				<TraitHookType>TRAITHOOK_MAKE_PEACE</TraitHookType>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Start War          Anybody          Eagle, Serpent, and Tortoise Tribe Favor -->
+		<TraitTriggerInfo> <!-- Start War          Anybody          Eagle, Wolf, three sisters, Wolf, Sky and Long-Hair Tribe Favor -->
 			<Type>TRAITTRIGGER_START_WAR_TRIBAL</Type>
 			<CounterChanges>
 				<CounterChange>
-					<TraitType>TRAIT_EAGLE_TRIBE_FAVOR</TraitType>
-					<iModifier>-5</iModifier>
+					<TraitType>TRAIT_TORTOISE_TRIBE_FAVOR</TraitType>
+					<iModifier>5</iModifier>
 					<bFloorZero>1</bFloorZero>
 				</CounterChange>
 				<CounterChange>
-					<TraitType>TRAIT_TORTOISE_TRIBE_FAVOR</TraitType>
-					<iModifier>-5</iModifier>
+					<TraitType>TRAIT_COYOTE_TRIBE_FAVOR</TraitType>
+					<iModifier>5</iModifier>
+					<bFloorZero>1</bFloorZero>
+				</CounterChange>
+				<CounterChange>
+					<TraitType>TRAIT_BEAR_TRIBE_FAVOR</TraitType>
+					<iModifier>-10</iModifier>
+					<bFloorZero>1</bFloorZero>
+				</CounterChange>
+				<CounterChange>
+					<TraitType>TRAIT_SEVENTH_TRIBE_FAVOR</TraitType>
+					<iModifier>-10</iModifier>
 					<bFloorZero>1</bFloorZero>
 				</CounterChange>
 				<CounterChange>
@@ -5623,11 +5653,11 @@
 			<TraitClassType>TRAITCLASS_TRIBAL</TraitClassType>
 				<TraitHookType>TRAITHOOK_START_WAR</TraitHookType>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Player turn         Civic Foreign Trade                     Eagle Tribe Favor -->
+		<TraitTriggerInfo> <!-- Player turn         Civic Foreign Trade                     Three Sisters Tribe Favor -->
 			<Type>TRAITTRIGGER_PLAYER_TURN_CIVIC_FOREIGN_TRADE_TRIBAL</Type>
 			<CounterChanges>
 				<CounterChange>
-					<TraitType>TRAIT_EAGLE_TRIBE_FAVOR</TraitType>
+					<TraitType>TRAIT_SEVENTH_TRIBE_FAVOR</TraitType>
 					<iModifier>1</iModifier>
 				</CounterChange>
 			</CounterChanges>
@@ -5637,23 +5667,11 @@
 				<CivicType>CIVIC_FOREIGN_TRADE</CivicType>
 			</PrereqCivics>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Construct           Totem of the Eagle                      Eagle Tribe Favor -->
-			<Type>TRAITTRIGGER_CONSTRUCT_TOTEM_OF_THE_EAGLE_TRIBAL</Type>
-			<CounterChanges>
-				<CounterChange>
-					<TraitType>TRAIT_EAGLE_TRIBE_FAVOR</TraitType>
-					<iModifier>20</iModifier>
-				</CounterChange>
-			</CounterChanges>
-			<TraitClassType>TRAITCLASS_TRIBAL</TraitClassType>
-				<TraitHookType>TRAITHOOK_CONSTRUCT_BUILDING</TraitHookType>
-			<PrereqBuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_EAGLE</PrereqBuildingClassType>
-		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Trade               Anything                                Eagle Tribe Favor -->
+		<TraitTriggerInfo> <!-- Trade               Anything                                Three Sisters Tribe Favor -->
 			<Type>TRAITTRIGGER_TRADE_TRIBAL</Type>
 			<CounterChanges>
 				<CounterChange>
-					<TraitType>TRAIT_EAGLE_TRIBE_FAVOR</TraitType>
+					<TraitType>TRAIT_SEVENTH_TRIBE_FAVOR</TraitType>
 					<iModifier>10</iModifier>
 				</CounterChange>
 			</CounterChanges>
@@ -5661,11 +5679,11 @@
 				<TraitHookType>TRAITHOOK_TRADE</TraitHookType>
 			<PrereqTradeableItem>NONE</PrereqTradeableItem>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Construct           Building gives happiness                Eagle Tribe Favor -->
+		<TraitTriggerInfo> <!-- Construct           Building gives happiness                Sky Tribe Favor -->
 			<Type>TRAITTRIGGER_CONSTRUCT_BUILDING_HAPPINESS_TRIBAL</Type>
 			<CounterChanges>
 				<CounterChange>
-					<TraitType>TRAIT_EAGLE_TRIBE_FAVOR</TraitType>
+					<TraitType>TRAIT_SIXTH_TRIBE_FAVOR</TraitType>
 					<iModifier>10</iModifier>
 				</CounterChange>
 			</CounterChanges>
@@ -5673,11 +5691,11 @@
 				<TraitHookType>TRAITHOOK_CONSTRUCT_BUILDING</TraitHookType>
 			<bPrereqHappiness>1</bPrereqHappiness>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Construct           Building gives happiness area            Eagle Tribe Favor -->
+		<TraitTriggerInfo> <!-- Construct           Building gives happiness area            Sky Tribe Favor -->
 			<Type>TRAITTRIGGER_CONSTRUCT_BUILDING_HAPPINESS_AREA_TRIBAL</Type>
 			<CounterChanges>
 				<CounterChange>
-					<TraitType>TRAIT_EAGLE_TRIBE_FAVOR</TraitType>
+					<TraitType>TRAIT_SIXTH_TRIBE_FAVOR</TraitType>
 					<iModifier>20</iModifier>
 				</CounterChange>
 			</CounterChanges>
@@ -5685,11 +5703,11 @@
 				<TraitHookType>TRAITHOOK_CONSTRUCT_BUILDING</TraitHookType>
 			<bPrereqAreaHappiness>1</bPrereqAreaHappiness>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Construct           Building gives happiness global           Eagle Tribe Favor -->
+		<TraitTriggerInfo> <!-- Construct           Building gives happiness global           Sky Tribe Favor -->
 			<Type>TRAITTRIGGER_CONSTRUCT_BUILDING_HAPPINESS_GLOBAL_TRIBAL</Type>
 			<CounterChanges>
 				<CounterChange>
-					<TraitType>TRAIT_EAGLE_TRIBE_FAVOR</TraitType>
+					<TraitType>TRAIT_SIXTH_TRIBE_FAVOR</TraitType>
 					<iModifier>30</iModifier>
 				</CounterChange>
 			</CounterChanges>
@@ -5698,22 +5716,18 @@
 			
 			<bPrereqGlobalHappiness>1</bPrereqGlobalHappiness>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Player turn         Civic Liberty                            Coyote Tribe Favor -->
-			<Type>TRAITTRIGGER_PLAYER_TURN_CIVIC_LIBERTY_TRIBAL</Type>
+		<TraitTriggerInfo> <!-- Build               anything                                     Eagle Tribe Favor -->
+			<Type>TRAITTRIGGER_BUILD_ANYTHING_TRIBAL</Type>
 			<CounterChanges>
 				<CounterChange>
-					<TraitType>TRAIT_COYOTE_TRIBE_FAVOR</TraitType>
-					<iModifier>1</iModifier>
+					<TraitType>TRAIT_EAGLE_TRIBE_FAVOR</TraitType>
+					<iModifier>5</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_TRIBAL</TraitClassType>
-				<TraitHookType>TRAITHOOK_PLAYER_TURN</TraitHookType>
-			
-			<PrereqCivics>
-				<CivicType>CIVIC_LIBERTY</CivicType>
-			</PrereqCivics>
+			<TraitHookType>TRAITHOOK_BUILD_IMPROVEMENT</TraitHookType>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- City		     Found                                    Coyote Tribe Favor -->
+		<TraitTriggerInfo> <!-- City		     Found                                    Wolf Tribe Favor -->
 			<Type>TRAITTRIGGER_CITY_FOUND_TRIBAL</Type>
 			<CounterChanges>
 				<CounterChange>
@@ -5725,11 +5739,15 @@
 				<TraitHookType>TRAITHOOK_CITY_FOUND</TraitHookType>
 			
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- City		     Pop Grow                                 Coyote Tribe Favor -->
+		<TraitTriggerInfo> <!-- City		     Pop Grow                                  Eagle ,Wolf Tribe Favor -->
 			<Type>TRAITTRIGGER_CITY_POPGROW_TRIBAL</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_COYOTE_TRIBE_FAVOR</TraitType>
+					<iModifier>5</iModifier>
+				</CounterChange>
+				<CounterChange>
+					<TraitType>TRAIT_EAGLE_TRIBE_FAVOR</TraitType>
 					<iModifier>5</iModifier>
 				</CounterChange>
 			</CounterChanges>
@@ -5737,32 +5755,34 @@
 				<TraitHookType>TRAITHOOK_CITY_POPGROW</TraitHookType>
 			
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- City               Culture Growth        		      Coyote Tribe Favor -->
+		<TraitTriggerInfo> <!-- City               Culture Growth        		      Bear, Sky Tribe Favor -->
 			<Type>TRAITTRIGGER_CITY_CULTUREGROW_TRIBAL</Type>
 			<CounterChanges>
 				<CounterChange>
-					<TraitType>TRAIT_COYOTE_TRIBE_FAVOR</TraitType>
+					<TraitType>TRAIT_BEAR_TRIBE_FAVOR</TraitType>
 					<iModifier>15</iModifier>
+				</CounterChange>
+				<CounterChange>
+					<TraitType>TRAIT_SIXTH_TRIBE_FAVOR</TraitType>
+					<iModifier>10</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_TRIBAL</TraitClassType>
 				<TraitHookType>TRAITHOOK_CITY_CULTUREGROW</TraitHookType>
 			
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Construct           Totem of the Coyote                       Coyote Tribe Favor -->
-			<Type>TRAITTRIGGER_CONSTRUCT_TOTEM_OF_THE_COYOTE_TRIBAL</Type>
+		<TraitTriggerInfo> <!-- Change Religion     To Anything                                	Sky tribe favor -->
+			<Type>TRAITTRIGGER_CONVERT_ANY_TRIBAL</Type>
 			<CounterChanges>
 				<CounterChange>
-					<TraitType>TRAIT_COYOTE_TRIBE_FAVOR</TraitType>
-					<iModifier>20</iModifier>
+					<TraitType>TRAIT_SIXTH_TRIBE_FAVOR</TraitType>
+					<iModifier>50</iModifier>
 				</CounterChange>
 			</CounterChanges>
-			<TraitClassType>TRAITCLASS_TRIBAL</TraitClassType>
-				<TraitHookType>TRAITHOOK_CONSTRUCT_BUILDING</TraitHookType>
-			
-			<PrereqBuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_COYOTE</PrereqBuildingClassType>
+			<TraitClassType>TRAITCLASS_TRIBAL</TraitClassType>						
+			<TraitHookType>TRAITHOOK_CHANGE_RELIGION</TraitHookType>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Explore             Goody Hut                       	      Coyote Tribe Favor -->
+		<TraitTriggerInfo> <!-- Explore             Goody Hut                       	      Wolf Tribe Favor -->
 			<Type>TRAITTRIGGER_GOODY_TRIBAL</Type>
 			<CounterChanges>
 				<CounterChange>
@@ -5774,7 +5794,7 @@
 				<TraitHookType>TRAITHOOK_GOODY</TraitHookType>
 			
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Explore             Lair                       	      	      Coyote Tribe Favor -->
+		<TraitTriggerInfo> <!-- Explore             Lair                       	      	      Wolf Tribe Favor -->
 			<Type>TRAITTRIGGER_GOODY_TRIBAL</Type>
 			<CounterChanges>
 				<CounterChange>
@@ -5786,13 +5806,9 @@
 				<TraitHookType>TRAITHOOK_EXPLORE_LAIR</TraitHookType>
 			
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Pillage             Anything                      Coyote and Serpent Tribe Favor -->
+		<TraitTriggerInfo> <!-- Pillage             Anything                      Wolf Tribe Favor -->
 			<Type>TRAITTRIGGER_PILLAGE_TRIBAL</Type>
 			<CounterChanges>
-				<CounterChange>
-					<TraitType>TRAIT_COYOTE_TRIBE_FAVOR</TraitType>
-					<iModifier>3</iModifier>
-				</CounterChange>
 				<CounterChange>
 					<TraitType>TRAIT_SERPENT_TRIBE_FAVOR</TraitType>
 					<iModifier>3</iModifier>
@@ -5801,21 +5817,6 @@
 			<TraitClassType>TRAITCLASS_TRIBAL</TraitClassType>
 				<TraitHookType>TRAITHOOK_PILLAGE</TraitHookType>
 			
-		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Player turn         Civic Industry                              Bear Tribe Favor -->
-			<Type>TRAITTRIGGER_PLAYER_TURN_CIVIC_INDUSTRY_TRIBAL</Type>
-			<CounterChanges>
-				<CounterChange>
-					<TraitType>TRAIT_BEAR_TRIBE_FAVOR</TraitType>
-					<iModifier>1</iModifier>
-				</CounterChange>
-			</CounterChanges>
-			<TraitClassType>TRAITCLASS_TRIBAL</TraitClassType>
-				<TraitHookType>TRAITHOOK_PLAYER_TURN</TraitHookType>
-			
-			<PrereqCivics>
-				<CivicType>CIVIC_INDUSTRY</CivicType>
-			</PrereqCivics>
 		</TraitTriggerInfo>
 		<TraitTriggerInfo> <!-- Construct           Anything                       		Bear Tribe Favor -->
 			<Type>TRAITTRIGGER_CONSTRUCT_BUILDING_TRIBAL</Type>
@@ -5834,7 +5835,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_BEAR_TRIBE_FAVOR</TraitType>
-					<iModifier>25</iModifier>
+					<iModifier>10</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_TRIBAL</TraitClassType>
@@ -5847,7 +5848,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_BEAR_TRIBE_FAVOR</TraitType>
-					<iModifier>100</iModifier>
+					<iModifier>25</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_TRIBAL</TraitClassType>
@@ -5855,59 +5856,7 @@
 			
 			<bPrereqWorldWonder>1</bPrereqWorldWonder>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Construct           Building gives health                       Bear Tribe Favor -->
-			<Type>TRAITTRIGGER_CONSTRUCT_BUILDING_HEALTH_TRIBAL</Type>
-			<CounterChanges>
-				<CounterChange>
-					<TraitType>TRAIT_BEAR_TRIBE_FAVOR</TraitType>
-					<iModifier>10</iModifier>
-				</CounterChange>
-			</CounterChanges>
-			<TraitClassType>TRAITCLASS_TRIBAL</TraitClassType>
-				<TraitHookType>TRAITHOOK_CONSTRUCT_BUILDING</TraitHookType>
-			
-			<bPrereqHealth>1</bPrereqHealth>
-		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Construct           Building gives health area                  Bear Tribe Favor -->
-			<Type>TRAITTRIGGER_CONSTRUCT_BUILDING_HEALTH_AREA_TRIBAL</Type>
-			<CounterChanges>
-				<CounterChange>
-					<TraitType>TRAIT_BEAR_TRIBE_FAVOR</TraitType>
-					<iModifier>20</iModifier>
-				</CounterChange>
-			</CounterChanges>
-			<TraitClassType>TRAITCLASS_TRIBAL</TraitClassType>
-				<TraitHookType>TRAITHOOK_CONSTRUCT_BUILDING</TraitHookType>
-			
-			<bPrereqAreaHealth>1</bPrereqAreaHealth>
-		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Construct           Building gives health global                Bear Tribe Favor -->
-			<Type>TRAITTRIGGER_CONSTRUCT_BUILDING_HEALTH_GLOBAL_TRIBAL</Type>
-			<CounterChanges>
-				<CounterChange>
-					<TraitType>TRAIT_BEAR_TRIBE_FAVOR</TraitType>
-					<iModifier>30</iModifier>
-				</CounterChange>
-			</CounterChanges>
-			<TraitClassType>TRAITCLASS_TRIBAL</TraitClassType>
-				<TraitHookType>TRAITHOOK_CONSTRUCT_BUILDING</TraitHookType>
-			
-			<bPrereqGlobalHealth>1</bPrereqGlobalHealth>
-		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Construct           Totem of the Bear                          Bear Tribe Favor -->
-			<Type>TRAITTRIGGER_CONSTRUCT_TOTEM_OF_THE_BEAR_TRIBAL</Type>
-			<CounterChanges>
-				<CounterChange>
-					<TraitType>TRAIT_BEAR_TRIBE_FAVOR</TraitType>
-					<iModifier>20</iModifier>
-				</CounterChange>
-			</CounterChanges>
-			<TraitClassType>TRAITCLASS_TRIBAL</TraitClassType>
-				<TraitHookType>TRAITHOOK_CONSTRUCT_BUILDING</TraitHookType>
-			
-			<PrereqBuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_BEAR</PrereqBuildingClassType>
-		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Player turn         Civic conquest                           Serpent Tribe Favor -->
+		<TraitTriggerInfo> <!-- Player turn         Civic conquest                           Wolf Tribe Favor -->
 			<Type>TRAITTRIGGER_PLAYER_TURN_CIVIC_CONQUEST_TRIBAL</Type>
 			<CounterChanges>
 				<CounterChange>
@@ -5922,7 +5871,7 @@
 				<CivicType>CIVIC_CONQUEST</CivicType>
 			</PrereqCivics>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- City               Acquire                            	     Serpent Tribe Favor -->
+		<TraitTriggerInfo> <!-- City               Acquire                            	     Wolf Tribe Favor -->
 			<Type>TRAITTRIGGER_CITY_ACQUIRE_TRIBAL</Type>
 			<CounterChanges>
 				<CounterChange>
@@ -5935,34 +5884,59 @@
 			
 			<bPrereqConquest>1</bPrereqConquest>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Unit               Kill        		                     Serpent Tribe Favor -->
+		<TraitTriggerInfo> <!-- Unit               Kill        		                     Wolf Tribe Favor -->
 			<Type>TRAITTRIGGER_KILL_UNIT_TRIBAL</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SERPENT_TRIBE_FAVOR</TraitType>
-					<iModifier>3</iModifier>
+					<iModifier>2</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_TRIBAL</TraitClassType>
 				<TraitHookType>TRAITHOOK_KILL_UNIT</TraitHookType>
 			
-			<PrereqUnitCombatType>NONE</PrereqUnitCombatType>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Unit               Kill Orc        		            Serpent Tribe Favor -->
-			<Type>TRAITTRIGGER_KILL_VS_ORC_TRIBAL</Type>
+		<TraitTriggerInfo> <!-- Unit               Kill in Borders        		    Deer Tribe Favor -->
+			<Type>TRAITTRIGGER_KILL_UNIT_BORDERS_TRIBAL</Type>
 			<CounterChanges>
 				<CounterChange>
-					<TraitType>TRAIT_SERPENT_TRIBE_FAVOR</TraitType>
-					<iModifier>3</iModifier>
+					<TraitType>TRAIT_COYOTE_TRIBE_FAVOR</TraitType>
+					<iModifier>5</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_TRIBAL</TraitClassType>
 				<TraitHookType>TRAITHOOK_KILL_UNIT</TraitHookType>
 			
-			<PrereqKilledRaceType>PROMOTION_ORC</PrereqKilledRaceType>
+			<bKilledInBorders>1</bKilledInBorders>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Raze City           Orc                                     Serpent Tribe Favor -->
-			<Type>TRAITTRIGGER_RAZE_CITY_ORC_TRIBAL</Type>
+		<TraitTriggerInfo> <!-- Unit               Kill Animal        		            Deer Tribe Favor -->
+			<Type>TRAITTRIGGER_KILL_VS_ANIMAL_TRIBAL</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_COYOTE_TRIBE_FAVOR</TraitType>
+					<iModifier>5</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_TRIBAL</TraitClassType>
+				<TraitHookType>TRAITHOOK_KILL_UNIT</TraitHookType>
+			
+			<PrereqKilledUnitCombatType>UNITCOMBAT_ANIMAL</PrereqKilledUnitCombatType>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Unit               Kill Beast       		            Deer Tribe Favor -->
+			<Type>TRAITTRIGGER_KILL_VS_BEAST_TRIBAL</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_COYOTE_TRIBE_FAVOR</TraitType>
+					<iModifier>5</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_TRIBAL</TraitClassType>
+				<TraitHookType>TRAITHOOK_KILL_UNIT</TraitHookType>
+			
+			<PrereqKilledUnitCombatType>UNITCOMBAT_BEAST</PrereqKilledUnitCombatType>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Raze City           Anything                                    Wolf Tribe Favor -->
+			<Type>TRAITTRIGGER_RAZE_CITY_TRIBAL</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_SERPENT_TRIBE_FAVOR</TraitType>
@@ -5972,22 +5946,23 @@
 			<TraitClassType>TRAITCLASS_TRIBAL</TraitClassType>
 				<TraitHookType>TRAITHOOK_CITY_RAZE</TraitHookType>
 			
-			<PrereqKilledRaceType>PROMOTION_ORC</PrereqKilledRaceType>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Construct           Totem of the Serpent                    Serpent Tribe Favor -->
-			<Type>TRAITTRIGGER_CONSTRUCT_TOTEM_OF_THE_SERPENT_TRIBAL</Type>
+		<TraitTriggerInfo> <!-- Player turn         Civic Pacifism                              Bear Tribe Favor -->
+			<Type>TRAITTRIGGER_PLAYER_TURN_CIVIC_PACIFISM_TRIBAL</Type>
 			<CounterChanges>
 				<CounterChange>
-					<TraitType>TRAIT_SERPENT_TRIBE_FAVOR</TraitType>
-					<iModifier>20</iModifier>
+					<TraitType>TRAIT_BEAR_TRIBE_FAVOR</TraitType>
+					<iModifier>1</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_TRIBAL</TraitClassType>
-				<TraitHookType>TRAITHOOK_CONSTRUCT_BUILDING</TraitHookType>
+				<TraitHookType>TRAITHOOK_PLAYER_TURN</TraitHookType>
 			
-			<PrereqBuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_SERPENT</PrereqBuildingClassType>
+			<PrereqCivics>
+				<CivicType>CIVIC_PACIFISM</CivicType>
+			</PrereqCivics>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Player turn         Civic Scholarship                       Tortoise Tribe Favor -->
+		<TraitTriggerInfo> <!-- Player turn         Civic Scholarship                       Long-Hair Tribe Favor -->
 			<Type>TRAITTRIGGER_PLAYER_TURN_CIVIC_SCHOLARSHIP_TRIBAL</Type>
 			<CounterChanges>
 				<CounterChange>
@@ -6002,21 +5977,68 @@
 				<CivicType>CIVIC_SCHOLARSHIP</CivicType>
 			</PrereqCivics>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Unit               Train        		            Tortoise Tribe Favor -->
-			<Type>TRAITTRIGGER_KILL_UNIT_TRIBAL</Type>
+		<TraitTriggerInfo> <!-- Player turn         Civic Guardian of Nature                           Deer Tribe Favor -->
+			<Type>TRAITTRIGGER_PLAYER_TURN_CIVIC_GUARDIAN_OF_NATURE_TRIBAL</Type>
 			<CounterChanges>
 				<CounterChange>
-					<TraitType>TRAIT_TORTOISE_TRIBE_FAVOR</TraitType>
-					<iModifier>3</iModifier>
+					<TraitType>TRAIT_COYOTE_TRIBE_FAVOR</TraitType>
+					<iModifier>1</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_TRIBAL</TraitClassType>
-				<TraitHookType>TRAITHOOK_TRAIN_UNIT</TraitHookType>
+				<TraitHookType>TRAITHOOK_PLAYER_TURN</TraitHookType>
 			
-			<PrereqUnitCombatType>NONE</PrereqUnitCombatType>
+			<PrereqCivics>
+				<CivicType>CIVIC_GUARDIAN_OF_NATURE</CivicType>
+			</PrereqCivics>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Unit               Kill in Borders        		    Tortoise Tribe Favor -->
-			<Type>TRAITTRIGGER_KILL_UNIT_TRIBAL</Type>
+		<TraitTriggerInfo> <!-- Player turn         Civic city States                            Deer Tribe Favor -->
+			<Type>TRAITTRIGGER_PLAYER_TURN_CIVIC_CITY_STATES_TRIBAL</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_EAGLE_TRIBE_FAVOR</TraitType>
+					<iModifier>1</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_TRIBAL</TraitClassType>
+				<TraitHookType>TRAITHOOK_PLAYER_TURN</TraitHookType>
+			
+			<PrereqCivics>
+				<CivicType>CIVIC_CITY_STATES</CivicType>
+			</PrereqCivics>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Player turn         Civic Apprenticeship                            Deer Tribe Favor -->
+			<Type>TRAITTRIGGER_PLAYER_TURN_CIVIC_APPRENTICESHIP_TRIBAL</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_EAGLE_TRIBE_FAVOR</TraitType>
+					<iModifier>1</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_TRIBAL</TraitClassType>
+				<TraitHookType>TRAITHOOK_PLAYER_TURN</TraitHookType>
+			
+			<PrereqCivics>
+				<CivicType>CIVIC_APPRENTICESHIP</CivicType>
+			</PrereqCivics>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Player turn         Civic Theocracy                      Sky Tribe Favor -->
+			<Type>TRAITTRIGGER_PLAYER_TURN_CIVIC_THEOCRACY_TRIBAL</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_SIXTH_TRIBE_FAVOR</TraitType>
+					<iModifier>1</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_TRIBAL</TraitClassType>
+				<TraitHookType>TRAITHOOK_PLAYER_TURN</TraitHookType>
+			
+			<PrereqCivics>
+				<CivicType>CIVIC_THEOCRACY</CivicType>
+			</PrereqCivics>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Unit               Train Adept       		            Long-Hair Tribe Favor -->
+			<Type>TRAITTRIGGER_TRAIN_ADEPT_TRIBAL</Type>
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_TORTOISE_TRIBE_FAVOR</TraitType>
@@ -6024,12 +6046,35 @@
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_TRIBAL</TraitClassType>
-				<TraitHookType>TRAITHOOK_KILL_UNIT</TraitHookType>
+				<TraitHookType>TRAITHOOK_TRAIN_UNIT</TraitHookType>
 			
-			<PrereqUnitCombatType>NONE</PrereqUnitCombatType>
-			<bKilledInBorders>1</bKilledInBorders>
+			<PrereqUnitCombatType>UNITCOMBAT_ADEPT</PrereqUnitCombatType>
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Unit               Great Person Born        		     Tortoise Tribe Favor -->
+		<TraitTriggerInfo> <!-- Cast                Anything	                                Long-Hair tribe favor -->
+			<Type>TRAITTRIGGER_CAST_ANYTHING_TRIBAL</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_TORTOISE_TRIBE_FAVOR</TraitType>
+					<iModifier>1</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_TRIBAL</TraitClassType>			
+			<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Unit               Train Worker      		            Eagle Tribe Favor -->
+			<Type>TRAITTRIGGER_TRAIN_WORKER_TRIBAL</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_EAGLE_TRIBE_FAVOR</TraitType>
+					<iModifier>5</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_TRIBAL</TraitClassType>
+				<TraitHookType>TRAITHOOK_TRAIN_UNIT</TraitHookType>
+			
+			<PrereqUnitCombatType>UNITCOMBAT_WORKER</PrereqUnitCombatType>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Unit               Great Person Born        		     Long-Hair Tribe Favor -->
 			<Type>TRAITTRIGGER_GP_BORN_TRIBAL</Type>
 			<CounterChanges>
 				<CounterChange>
@@ -6041,7 +6086,7 @@
 				<TraitHookType>TRAITHOOK_GP_BORN</TraitHookType>
 			
 		</TraitTriggerInfo>
-		<TraitTriggerInfo> <!-- Construct           Totem of the Tortoise                     Tortoise Tribe Favor -->
+		<TraitTriggerInfo> <!-- Construct           Totem of the Long-Hair                     Long-Hair Tribe Favor -->
 			<Type>TRAITTRIGGER_CONSTRUCT_TOTEM_OF_THE_TORTOISE_TRIBAL</Type>
 			<CounterChanges>
 				<CounterChange>
@@ -6053,6 +6098,83 @@
 				<TraitHookType>TRAITHOOK_CONSTRUCT_BUILDING</TraitHookType>
 			
 			<PrereqBuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_TORTOISE</PrereqBuildingClassType>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Construct           Totem of the Sky                     Sky Tribe Favor -->
+			<Type>TRAITTRIGGER_CONSTRUCT_TOTEM_OF_THE_SKY_TRIBAL</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_SIXTH_TRIBE_FAVOR</TraitType>
+					<iModifier>20</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_TRIBAL</TraitClassType>
+				<TraitHookType>TRAITHOOK_CONSTRUCT_BUILDING</TraitHookType>
+			
+			<PrereqBuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_SKY</PrereqBuildingClassType>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Construct           Totem of the Eagle                      Eagle Tribe Favor -->
+			<Type>TRAITTRIGGER_CONSTRUCT_TOTEM_OF_THE_EAGLE_TRIBAL</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_EAGLE_TRIBE_FAVOR</TraitType>
+					<iModifier>20</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_TRIBAL</TraitClassType>
+				<TraitHookType>TRAITHOOK_CONSTRUCT_BUILDING</TraitHookType>
+			<PrereqBuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_EAGLE</PrereqBuildingClassType>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Construct           Totem of the Three Sisters                     Three Sisters Tribe Favor -->
+			<Type>TRAITTRIGGER_CONSTRUCT_TOTEM_OF_THE_THREE_SISTERS_TRIBAL</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_SEVENTH_TRIBE_FAVOR</TraitType>
+					<iModifier>20</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_TRIBAL</TraitClassType>
+				<TraitHookType>TRAITHOOK_CONSTRUCT_BUILDING</TraitHookType>
+			
+			<PrereqBuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_THREE_SISTERS</PrereqBuildingClassType>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Construct           Totem of the Deer                       Deer Tribe Favor -->
+			<Type>TRAITTRIGGER_CONSTRUCT_TOTEM_OF_THE_COYOTE_TRIBAL</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_COYOTE_TRIBE_FAVOR</TraitType>
+					<iModifier>20</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_TRIBAL</TraitClassType>
+				<TraitHookType>TRAITHOOK_CONSTRUCT_BUILDING</TraitHookType>
+			
+			<PrereqBuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_COYOTE</PrereqBuildingClassType>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Construct           Totem of the Bear                          Bear Tribe Favor -->
+			<Type>TRAITTRIGGER_CONSTRUCT_TOTEM_OF_THE_BEAR_TRIBAL</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_BEAR_TRIBE_FAVOR</TraitType>
+					<iModifier>20</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_TRIBAL</TraitClassType>
+				<TraitHookType>TRAITHOOK_CONSTRUCT_BUILDING</TraitHookType>
+			
+			<PrereqBuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_BEAR</PrereqBuildingClassType>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Construct           Totem of the Wolf                    Wolf Tribe Favor -->
+			<Type>TRAITTRIGGER_CONSTRUCT_TOTEM_OF_THE_SERPENT_TRIBAL</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_SERPENT_TRIBE_FAVOR</TraitType>
+					<iModifier>20</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_TRIBAL</TraitClassType>
+				<TraitHookType>TRAITHOOK_CONSTRUCT_BUILDING</TraitHookType>
+			
+			<PrereqBuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_SERPENT</PrereqBuildingClassType>
 		</TraitTriggerInfo>
 	</TraitTriggerInfos>
 </Civ4TraitTriggerInfos>

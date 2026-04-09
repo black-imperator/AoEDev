@@ -1331,7 +1331,7 @@
 					<UnitClassType>UNITCLASS_HORSE_ARCHER</UnitClassType>
 					<UnitType>UNIT_MOUNTED_PLAINS_HUNTER</UnitType>
 				</Unit>
-				<Unit>
+				<Unit>        <!-- TaliWali -->
 					<UnitClassType>UNITCLASS_FREE_SPIRITS</UnitClassType>
 					<UnitType>UNIT_FREE_SPIRITS</UnitType>
 				</Unit>
@@ -1436,16 +1436,6 @@
 			<MaintainFeatures>
 			</MaintainFeatures>
 			<Image>Art/Civs/Pedia/Civilizations/Chislev.dds</Image>
-			<TerrainYieldChanges>
-				<TerrainYieldChange>
-					<TerrainType>TERRAIN_GRASS</TerrainType>
-					<TerrainYields>
-						<iYield>1</iYield>
-						<iYield>0</iYield>
-						<iYield>0</iYield>
-					</TerrainYields>
-				</TerrainYieldChange>
-			</TerrainYieldChanges>
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
 					<ImprovementType>IMPROVEMENT_WORKSHOP</ImprovementType>

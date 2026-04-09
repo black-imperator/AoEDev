@@ -8892,7 +8892,7 @@
 			<iCost>-1</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>0</iConquestProb>
-			<iMaintenanceModifier>-40</iMaintenanceModifier>
+			<iMaintenanceModifier>-25</iMaintenanceModifier>
 			<iAsset>4</iAsset>
 			<fVisibilityPriority>10</fVisibilityPriority>
 			<ConstructSound>AS2D_BUILD_COURTHOUSE</ConstructSound>
@@ -9490,8 +9490,8 @@
 			<BuildingClass>BUILDINGCLASS_TOTEM_OF_THE_EAGLE</BuildingClass>
 			<Type>BUILDING_TOTEM_OF_THE_EAGLE</Type>
 			<Description>TXT_KEY_BUILDING_TOTEM_OF_THE_EAGLE</Description>
-			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_EAGLE_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_EAGLE_STRATEGY</Strategy>
+			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_EAGLENEW_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_EAGLENEW_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_EAGLE</ArtDefineTag>
 			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
@@ -9555,8 +9555,8 @@
 			<BuildingClass>BUILDINGCLASS_TOTEM_OF_THE_EAGLE_REPLICA</BuildingClass>
 			<Type>BUILDING_TOTEM_OF_THE_EAGLE_REPLICA</Type>
 			<Description>TXT_KEY_BUILDING_TOTEM_OF_THE_EAGLE_REPLICA</Description>
-			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_EAGLE_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_EAGLE_STRATEGY</Strategy>
+			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_EAGLENEW_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_EAGLENEW_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_EAGLE</ArtDefineTag>
 			<FreePromotion>PROMOTION_SENTRY</FreePromotion>
@@ -9595,12 +9595,12 @@
 				</PrereqBuildingAtRange>
 			</PrereqBuildingAtRanges>
 		</BuildingInfo>
-		<BuildingInfo>		<!-- Totem of the Coyote                             ChislevExpansion Totems -->
+		<BuildingInfo>		<!-- Totem of the Deer                             ChislevExpansion Totems -->
 			<BuildingClass>BUILDINGCLASS_TOTEM_OF_THE_COYOTE</BuildingClass>
 			<Type>BUILDING_TOTEM_OF_THE_COYOTE</Type>
 			<Description>TXT_KEY_BUILDING_TOTEM_OF_THE_COYOTE</Description>
-			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_COYOTE_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_COYOTE_STRATEGY</Strategy>
+			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_DEER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_DEER_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_COYOTE</ArtDefineTag>
 			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
@@ -9672,8 +9672,8 @@
 			<BuildingClass>BUILDINGCLASS_TOTEM_OF_THE_COYOTE_REPLICA</BuildingClass>
 			<Type>BUILDING_TOTEM_OF_THE_COYOTE_REPLICA</Type>
 			<Description>TXT_KEY_BUILDING_TOTEM_OF_THE_COYOTE_REPLICA</Description>
-			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_COYOTE_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_COYOTE_STRATEGY</Strategy>
+			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_DEER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_DEER_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_COYOTE</ArtDefineTag>
 			<bAutoBuild>1</bAutoBuild>
@@ -9724,8 +9724,8 @@
 			<BuildingClass>BUILDINGCLASS_TOTEM_OF_THE_BEAR</BuildingClass>
 			<Type>BUILDING_TOTEM_OF_THE_BEAR</Type>
 			<Description>TXT_KEY_BUILDING_TOTEM_OF_THE_BEAR</Description>
-			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_BEAR_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_BEAR_STRATEGY</Strategy>
+			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_BEARNEW_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_BEARNEW_STRATEGY</Strategy>
 			<Help>TXT_KEY_BUILDING_TOTEM_OF_THE_BEAR_HELP</Help>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BEAR_TOTEM</ArtDefineTag>
@@ -9790,8 +9790,8 @@
 			<BuildingClass>BUILDINGCLASS_TOTEM_OF_THE_BEAR_REPLICA</BuildingClass>
 			<Type>BUILDING_TOTEM_OF_THE_BEAR_REPLICA</Type>
 			<Description>TXT_KEY_BUILDING_TOTEM_OF_THE_BEAR_REPLICA</Description>
-			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_BEAR_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_BEAR_STRATEGY</Strategy>
+			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_BEARNEW_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_BEARNEW_STRATEGY</Strategy>
 			<Help>TXT_KEY_BUILDING_TOTEM_OF_THE_BEAR_HELP</Help>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BEAR_TOTEM</ArtDefineTag>
@@ -9831,12 +9831,12 @@
 				</PrereqBuildingAtRange>
 			</PrereqBuildingAtRanges>
 		</BuildingInfo>
-		<BuildingInfo>		<!-- Totem of the Serpent                            ChislevExpansion Totems -->
+		<BuildingInfo>		<!-- Totem of the Wolf                            ChislevExpansion Totems -->
 			<BuildingClass>BUILDINGCLASS_TOTEM_OF_THE_SERPENT</BuildingClass>
 			<Type>BUILDING_TOTEM_OF_THE_SERPENT</Type>
 			<Description>TXT_KEY_BUILDING_TOTEM_OF_THE_SERPENT</Description>
-			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_SERPENT_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_SERPENT_STRATEGY</Strategy>
+			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_WOLF_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_WOLF_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_SERPENT</ArtDefineTag>
 			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
@@ -9904,8 +9904,8 @@
 			<BuildingClass>BUILDINGCLASS_TOTEM_OF_THE_SERPENT_REPLICA</BuildingClass>
 			<Type>BUILDING_TOTEM_OF_THE_SERPENT_REPLICA</Type>
 			<Description>TXT_KEY_BUILDING_TOTEM_OF_THE_SERPENT_REPLICA</Description>
-			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_SERPENT_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_SERPENT_STRATEGY</Strategy>
+			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_WOLF_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_WOLF_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_SERPENT</ArtDefineTag>
 			<FreePromotion>PROMOTION_ORC_SLAYING</FreePromotion>
@@ -9958,12 +9958,12 @@
 				</PrereqBuildingAtRange>
 			</PrereqBuildingAtRanges>
 	</BuildingInfo>
-		<BuildingInfo>		<!-- Totem of the Tortoise                           ChislevExpansion Totems -->
+		<BuildingInfo>		<!-- Totem of the Long-Hair                           ChislevExpansion Totems -->
 			<BuildingClass>BUILDINGCLASS_TOTEM_OF_THE_TORTOISE</BuildingClass>
 			<Type>BUILDING_TOTEM_OF_THE_TORTOISE</Type>
 			<Description>TXT_KEY_BUILDING_TOTEM_OF_THE_TORTOISE</Description>
-			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_TORTOISE_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_TORTOISE_STRATEGY</Strategy>
+			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_LONG_HAIR_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_LONG_HAIR_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_TORTOISE</ArtDefineTag>
 			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
@@ -10021,12 +10021,12 @@
 				</Flavor>
 			</Flavors>
 		</BuildingInfo>
-		<BuildingInfo>		<!-- Totem of the Tortoise Replica                     ChislevExpansion Totems -->
+		<BuildingInfo>		<!-- Totem of the Long-Hair Replica                     ChislevExpansion Totems -->
 			<BuildingClass>BUILDINGCLASS_TOTEM_OF_THE_TORTOISE_REPLICA</BuildingClass>
 			<Type>BUILDING_TOTEM_OF_THE_TORTOISE_REPLICA</Type>
 			<Description>TXT_KEY_BUILDING_TOTEM_OF_THE_TORTOISE_REPLICA</Description>
-			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_TORTOISE_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_TORTOISE_STRATEGY</Strategy>
+			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_LONG_HAIR_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_LONG_HAIR_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_TORTOISE</ArtDefineTag>
 			<FreePromotion>PROMOTION_MAGIC_RESISTANCE</FreePromotion>

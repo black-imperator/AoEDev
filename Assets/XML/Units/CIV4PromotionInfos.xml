@@ -26899,7 +26899,7 @@
 					<fFood>-1</fFood>
 					<fProduction>-5</fProduction>
 					<fDiplo>-1</fDiplo>
-					<iBonusRange>1</iBonusRange>
+					<iBonusRange>2</iBonusRange>
 				</CityBonus>
 			</CityBonuses>
 			<bAllowAttacks>1</bAllowAttacks>

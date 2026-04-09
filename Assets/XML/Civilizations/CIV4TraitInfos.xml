@@ -963,43 +963,49 @@
 			<iOnGainCounterModifier>100</iOnGainCounterModifier>
 			<iMinRequiredPoints>100</iMinRequiredPoints>
 			<Description>TXT_KEY_TRAIT_EAGLE_TRIBE_FAVOR</Description>
-			<Civilopedia>TXT_KEY_TRAIT_EAGLE_TRIBE_FAVOR_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_TRAIT_EAGLE_TRIBE_FAVOR_STRATEGY</Strategy>
+			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_EAGLENEW_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_EAGLENEW_STRATEGY</Strategy>
 			<ShortDescription>TXT_KEY_TRAIT_EAGLE_TRIBE_FAVOR_SHORT</ShortDescription>
-			<iRelationModifier>2</iRelationModifier>
-			<iHappiness>1</iHappiness>
-			<iLevelExperienceModifier>-10</iLevelExperienceModifier>
+			<iDiscoverRandModifier>100</iDiscoverRandModifier>
+			<TerrainYieldChanges>
+				<TerrainYieldChange>
+					<TerrainType>TERRAIN_GRASS</TerrainType>
+					<TerrainYields>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+					</TerrainYields>
+				</TerrainYieldChange>
+			</TerrainYieldChanges>
 			<bSelectable>0</bSelectable>
-			<TradeYieldModifiers>
-				<iYield>25</iYield>
-				<iYield>25</iYield>
-			</TradeYieldModifiers>
 		</TraitInfo>
-		<TraitInfo>		<!-- Coyote Tribe Favor -->
+		<TraitInfo>		<!-- Deer(Old Coyote) Tribe Favor -->
 			<Type>TRAIT_COYOTE_TRIBE_FAVOR</Type>
 			<TraitClass>TRAITCLASS_TRIBAL</TraitClass>
 			<iOnGainCounterModifier>100</iOnGainCounterModifier>
 			<iMinRequiredPoints>100</iMinRequiredPoints>
 			<Description>TXT_KEY_TRAIT_COYOTE_TRIBE_FAVOR</Description>
-			<Civilopedia>TXT_KEY_TRAIT_COYOTE_TRIBE_FAVOR_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_TRAIT_COYOTE_TRIBE_FAVOR_STRATEGY</Strategy>
-			<Help>TXT_KEY_TRAIT_COYOTE_TRIBE_FAVOR_HELP</Help>
+			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_DEER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_DEER_STRATEGY</Strategy>
 			<ShortDescription>TXT_KEY_TRAIT_COYOTE_TRIBE_FAVOR_SHORT</ShortDescription>
 			<bSelectable>0</bSelectable>
-			<CommerceChanges>
-				<iCommerce>0</iCommerce>
-				<iCommerce>0</iCommerce>
-				<iCommerce>1</iCommerce>
-			</CommerceChanges>
 			<FreePromotions>
 				<FreePromotion>
 					<PromotionType>PROMOTION_DANCE_OF_THE_COYOTE</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_STAG_BLOOD</PromotionType>
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
 			<FreePromotionUnitCombats>
 				<FreePromotionUnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
 					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
 				</FreePromotionUnitCombat>
 			</FreePromotionUnitCombats>
@@ -1010,34 +1016,91 @@
 			<iOnGainCounterModifier>100</iOnGainCounterModifier>
 			<iMinRequiredPoints>100</iMinRequiredPoints>
 			<Description>TXT_KEY_TRAIT_BEAR_TRIBE_FAVOR</Description>
-			<Civilopedia>TXT_KEY_TRAIT_BEAR_TRIBE_FAVOR_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_TRAIT_BEAR_TRIBE_FAVOR_STRATEGY</Strategy>
+			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_BEARNEW_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_BEARNEW_STRATEGY</Strategy>
 			<ShortDescription>TXT_KEY_TRAIT_BEAR_TRIBE_FAVOR_SHORT</ShortDescription>
-			<iHealth>3</iHealth>
 			<iMaxGlobalBuildingProductionModifier>25</iMaxGlobalBuildingProductionModifier>
 			<iMaxTeamBuildingProductionModifier>25</iMaxTeamBuildingProductionModifier>
 			<iMaxPlayerBuildingProductionModifier>25</iMaxPlayerBuildingProductionModifier>
 			<bSelectable>0</bSelectable>
-			<ExtraYieldThresholds>
-				<iExtraYieldThreshold>0</iExtraYieldThreshold>
-				<iExtraYieldThreshold>3</iExtraYieldThreshold>
-				<iExtraYieldThreshold>0</iExtraYieldThreshold>
-			</ExtraYieldThresholds>
+			<bFixedBorders>1</bFixedBorders>
+			<CommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>2</iCommerce>
+			</CommerceChanges>
+			<PeaceCommerceModifiers>
+				<iCommerce>0</iCommerce>
+				<iCommerce>15</iCommerce>
+				<iCommerce>0</iCommerce>
+			</PeaceCommerceModifiers>
 		</TraitInfo>
-		<TraitInfo>		<!-- Serpent Tribe Favor -->
+		<TraitInfo>		<!-- Wolf(old serpent) Tribe Favor -->
 			<Type>TRAIT_SERPENT_TRIBE_FAVOR</Type>
 			<TraitClass>TRAITCLASS_TRIBAL</TraitClass>
 			<iOnGainCounterModifier>100</iOnGainCounterModifier>
 			<iMinRequiredPoints>100</iMinRequiredPoints>
 			<Description>TXT_KEY_TRAIT_SERPENT_TRIBE_FAVOR</Description>
-			<Civilopedia>TXT_KEY_TRAIT_SERPENT_TRIBE_FAVOR_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_TRAIT_SERPENT_TRIBE_FAVOR_STRATEGY</Strategy>
+			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_WOLF_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_WOLF_STRATEGY</Strategy>
 			<ShortDescription>TXT_KEY_TRAIT_SERPENT_TRIBE_FAVOR_SHORT</ShortDescription>
 			<iPillageInfluenceModifier>150</iPillageInfluenceModifier>
 			<bSelectable>0</bSelectable>
 			<FreePromotions>
 				<FreePromotion>
-					<PromotionType>PROMOTION_COMBAT1</PromotionType>
+					<PromotionType>PROMOTION_PACK_ALPHA</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
+			</FreePromotions>
+			<FreePromotionUnitCombats>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+			</FreePromotionUnitCombats>
+			<iPillagingGold>100</iPillagingGold>
+			<iGreatGeneralRateModifier>50</iGreatGeneralRateModifier>
+		</TraitInfo>
+		<TraitInfo>		<!-- Long Hair(old Tort) Tribe Favor -->
+			<Type>TRAIT_TORTOISE_TRIBE_FAVOR</Type>
+			<TraitClass>TRAITCLASS_TRIBAL</TraitClass>
+			<iOnGainCounterModifier>100</iOnGainCounterModifier>
+			<iMinRequiredPoints>100</iMinRequiredPoints>
+			<Description>TXT_KEY_TRAIT_TORTOISE_TRIBE_FAVOR</Description>
+			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_LONG_HAIR_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_LONG_HAIR_STRATEGY</Strategy>
+			<ShortDescription>TXT_KEY_TRAIT_TORTOISE_TRIBE_FAVOR_SHORT</ShortDescription>
+			<iGreatPeopleRateModifier>50</iGreatPeopleRateModifier>
+			<bSelectable>0</bSelectable>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_POTENCY</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
+			</FreePromotions>
+			<FreePromotionUnitCombats>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+			</FreePromotionUnitCombats>
+		</TraitInfo>
+		<TraitInfo>		<!-- Sky Tribe Favor -->
+			<Type>TRAIT_SIXTH_TRIBE_FAVOR</Type>
+			<TraitClass>TRAITCLASS_TRIBAL</TraitClass>
+			<iOnGainCounterModifier>100</iOnGainCounterModifier>
+			<iMinRequiredPoints>100</iMinRequiredPoints>
+			<Description>TXT_KEY_TRAIT_SKY_TRIBE_FAVOR</Description>
+			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_SKY_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_SKY_STRATEGY</Strategy>
+			<ShortDescription>TXT_KEY_TRAIT_SKY_TRIBE_FAVOR_SHORT</ShortDescription>
+			<bSelectable>0</bSelectable>
+			<iRelationModifier>2</iRelationModifier>
+			<iHappiness>1</iHappiness>
+			<iLevelExperienceModifier>-10</iLevelExperienceModifier>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_COMMAND1</PromotionType>
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
@@ -1047,14 +1110,6 @@
 					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
 				</FreePromotionUnitCombat>
 				<FreePromotionUnitCombat>
-					<UnitCombatType>UNITCOMBAT_ANIMAL</UnitCombatType>
-					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
-				</FreePromotionUnitCombat>
-				<FreePromotionUnitCombat>
-					<UnitCombatType>UNITCOMBAT_BEAST</UnitCombatType>
-					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
-				</FreePromotionUnitCombat>
-				<FreePromotionUnitCombat>
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
 					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
 				</FreePromotionUnitCombat>
@@ -1083,38 +1138,45 @@
 					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
 				</FreePromotionUnitCombat>
 			</FreePromotionUnitCombats>
-			<iPillagingGold>100</iPillagingGold>
-			<iHurryPopulationModifier>10</iHurryPopulationModifier>
 		</TraitInfo>
-		<TraitInfo>		<!-- Tortoise Tribe Favor -->
-			<Type>TRAIT_TORTOISE_TRIBE_FAVOR</Type>
+		<TraitInfo>		<!-- Three-Sisters Tribe Favor -->
+			<Type>TRAIT_SEVENTH_TRIBE_FAVOR</Type>
 			<TraitClass>TRAITCLASS_TRIBAL</TraitClass>
 			<iOnGainCounterModifier>100</iOnGainCounterModifier>
 			<iMinRequiredPoints>100</iMinRequiredPoints>
-			<Description>TXT_KEY_TRAIT_TORTOISE_TRIBE_FAVOR</Description>
-			<Civilopedia>TXT_KEY_TRAIT_TORTOISE_TRIBE_FAVOR_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_TRAIT_TORTOISE_TRIBE_FAVOR_STRATEGY</Strategy>
-			<ShortDescription>TXT_KEY_TRAIT_TORTOISE_TRIBE_FAVOR_SHORT</ShortDescription>
-			<bFixedBorders>1</bFixedBorders>
-			<iGreatPeopleRateModifier>50</iGreatPeopleRateModifier>
+			<Description>TXT_KEY_TRAIT_THREE_SISTERS_TRIBE_FAVOR</Description>
+			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_THREE_SISTERS_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_THREE_SISTERS_STRATEGY</Strategy>
+			<ShortDescription>TXT_KEY_TRAIT_THREE_SISTERS_TRIBE_FAVOR_SHORT</ShortDescription>
 			<bSelectable>0</bSelectable>
+			<TradeYieldModifiers>
+				<iYield>0</iYield>
+				<iYield>0</iYield>
+				<iYield>25</iYield>
+			</TradeYieldModifiers>
+			<ExtraUnitClasses>
+				<ExtraUnitClass>
+					<UnitClassType>UNITCLASS_CANNON</UnitClassType>
+					<UnitType>UNIT_DWARVEN_CANNON</UnitType>
+				</ExtraUnitClass>
+				<ExtraUnitClass>
+					<UnitClassType>UNITCLASS_SHADOW</UnitClassType>
+					<UnitType>UNIT_DWARVEN_SHADOW</UnitType>
+				</ExtraUnitClass>
+			</ExtraUnitClasses>
 			<FreePromotions>
 				<FreePromotion>
-					<PromotionType>PROMOTION_CITY_GARRISON1</PromotionType>
+					<PromotionType>PROMOTION_ENCHANTED_BLADE</PromotionType>
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
 			<FreePromotionUnitCombats>
 				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
 					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
-					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
-				</FreePromotionUnitCombat>
-				<FreePromotionUnitCombat>
-					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
-					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
-				</FreePromotionUnitCombat>
-				<FreePromotionUnitCombat>
-					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
 					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
 				</FreePromotionUnitCombat>
 				<FreePromotionUnitCombat>
@@ -1122,7 +1184,7 @@
 					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
 				</FreePromotionUnitCombat>
 				<FreePromotionUnitCombat>
-					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
 					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
 				</FreePromotionUnitCombat>
 				<FreePromotionUnitCombat>
@@ -1133,12 +1195,11 @@
 					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
 					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
 				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
 			</FreePromotionUnitCombats>
-			<PeaceCommerceModifiers>
-				<iCommerce>0</iCommerce>
-				<iCommerce>15</iCommerce>
-				<iCommerce>0</iCommerce>
-			</PeaceCommerceModifiers>
 		</TraitInfo>
 		<TraitInfo>		<!-- Wanderer -->
 			<Type>TRAIT_WANDERER</Type>

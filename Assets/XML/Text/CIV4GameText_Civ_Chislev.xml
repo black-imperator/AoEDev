@@ -1014,11 +1014,11 @@ The largest of the region's clans will also send an elder to represent the clan'
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_DANCE_OF_THE_COYOTE</Tag>
-		<English>Dance of the Coyote</English>
-		<French>Dance of the Coyote</French>
-		<German>Dance of the Coyote</German>
-		<Italian>Dance of the Coyote</Italian>
-		<Spanish>Dance of the Coyote</Spanish>
+		<English>Dance of the Deer</English>
+		<French>Dance of the Deer</French>
+		<German>Dance of the Deer</German>
+		<Italian>Dance of the Deer</Italian>
+		<Spanish>Dance of the Deer</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAITCLASS_TRIBAL</Tag>
@@ -1062,27 +1062,27 @@ The largest of the region's clans will also send an elder to represent the clan'
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_COYOTE_TRIBE_FAVOR</Tag>
-		<English>Coyote Tribe Favor</English>
-		<French>Coyote Tribe Favor</French>
-		<German>Coyote Tribe Favor</German>
-		<Italian>Coyote Tribe Favor</Italian>
-		<Spanish>Coyote Tribe Favor</Spanish>
+		<English>Deer Tribe Favor</English>
+		<French>Deer Tribe Favor</French>
+		<German>Deer Tribe Favor</German>
+		<Italian>Deer Tribe Favor</Italian>
+		<Spanish>Deer Tribe Favor</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_COYOTE_TRIBE_FAVOR_SHORT</Tag>
-		<English>CoyFav</English>
-		<French>CoyFav</French>
-		<German>CoyFav</German>
-		<Italian>CoyFav</Italian>
-		<Spanish>CoyFav</Spanish>
+		<English>DeerFav</English>
+		<French>DeerFav</French>
+		<German>DeerFav</German>
+		<Italian>DeerFav</Italian>
+		<Spanish>DeerFav</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_COYOTE_TRIBE_FAVOR_PEDIA</Tag>
-		<English>The Coyote Tribe, much to Natane's surprise, was the third tribe to join the Council. The Coyote Tribe is known as a clan of free-spirited folk, and Natane did not believe they would want to be held down by any regulations. Soyala of the Coyote Tribe saw the joining of the Council as an opportunity to make a lasting impact on the Chislev - to help them lighten up a little bit. Motsqueh was certainly a tough case to crack, but she eventually got through to him. Alosaka, when he would later join, was another story. The Coyote Tribe would often end up seeing eye-to-eye with the Serpent Tribe, who also prefered to live more on the wild side.</English>
-		<French>The Coyote Tribe, much to Natane's surprise, was the third tribe to join the Council. The Coyote Tribe is known as a clan of free-spirited folk, and Natane did not believe they would want to be held down by any regulations. Soyala of the Coyote Tribe saw the joining of the Council as an opportunity to make a lasting impact on the Chislev - to help them lighten up a little bit. Motsqueh was certainly a tough case to crack, but she eventually got through to him. Alosaka, when he would later join, was another story. The Coyote Tribe would often end up seeing eye-to-eye with the Serpent Tribe, who also prefered to live more on the wild side.</French>
-		<German>The Coyote Tribe, much to Natane's surprise, was the third tribe to join the Council. The Coyote Tribe is known as a clan of free-spirited folk, and Natane did not believe they would want to be held down by any regulations. Soyala of the Coyote Tribe saw the joining of the Council as an opportunity to make a lasting impact on the Chislev - to help them lighten up a little bit. Motsqueh was certainly a tough case to crack, but she eventually got through to him. Alosaka, when he would later join, was another story. The Coyote Tribe would often end up seeing eye-to-eye with the Serpent Tribe, who also prefered to live more on the wild side.</German>
-		<Italian>The Coyote Tribe, much to Natane's surprise, was the third tribe to join the Council. The Coyote Tribe is known as a clan of free-spirited folk, and Natane did not believe they would want to be held down by any regulations. Soyala of the Coyote Tribe saw the joining of the Council as an opportunity to make a lasting impact on the Chislev - to help them lighten up a little bit. Motsqueh was certainly a tough case to crack, but she eventually got through to him. Alosaka, when he would later join, was another story. The Coyote Tribe would often end up seeing eye-to-eye with the Serpent Tribe, who also prefered to live more on the wild side.</Italian>
-		<Spanish>The Coyote Tribe, much to Natane's surprise, was the third tribe to join the Council. The Coyote Tribe is known as a clan of free-spirited folk, and Natane did not believe they would want to be held down by any regulations. Soyala of the Coyote Tribe saw the joining of the Council as an opportunity to make a lasting impact on the Chislev - to help them lighten up a little bit. Motsqueh was certainly a tough case to crack, but she eventually got through to him. Alosaka, when he would later join, was another story. The Coyote Tribe would often end up seeing eye-to-eye with the Serpent Tribe, who also prefered to live more on the wild side.</Spanish>
+		<English>The Deer Tribe, much to Natane's surprise, was the third tribe to join the Council. The Deer Tribe is known as a clan of free-spirited folk, and Natane did not believe they would want to be held down by any regulations. Soyala of the Coyote Tribe saw the joining of the Council as an opportunity to make a lasting impact on the Chislev - to help them lighten up a little bit. Motsqueh was certainly a tough case to crack, but she eventually got through to him. Alosaka, when he would later join, was another story. The Coyote Tribe would often end up seeing eye-to-eye with the Serpent Tribe, who also prefered to live more on the wild side.</English>
+		<French>The Deer Tribe, much to Natane's surprise, was the third tribe to join the Council. The Deer Tribe is known as a clan of free-spirited folk, and Natane did not believe they would want to be held down by any regulations. Soyala of the Coyote Tribe saw the joining of the Council as an opportunity to make a lasting impact on the Chislev - to help them lighten up a little bit. Motsqueh was certainly a tough case to crack, but she eventually got through to him. Alosaka, when he would later join, was another story. The Coyote Tribe would often end up seeing eye-to-eye with the Serpent Tribe, who also prefered to live more on the wild side.</French>
+		<German>The Deer Tribe, much to Natane's surprise, was the third tribe to join the Council. The Deer Tribe is known as a clan of free-spirited folk, and Natane did not believe they would want to be held down by any regulations. Soyala of the Coyote Tribe saw the joining of the Council as an opportunity to make a lasting impact on the Chislev - to help them lighten up a little bit. Motsqueh was certainly a tough case to crack, but she eventually got through to him. Alosaka, when he would later join, was another story. The Coyote Tribe would often end up seeing eye-to-eye with the Serpent Tribe, who also prefered to live more on the wild side.</German>
+		<Italian>The Deer Tribe, much to Natane's surprise, was the third tribe to join the Council. The Deer Tribe is known as a clan of free-spirited folk, and Natane did not believe they would want to be held down by any regulations. Soyala of the Coyote Tribe saw the joining of the Council as an opportunity to make a lasting impact on the Chislev - to help them lighten up a little bit. Motsqueh was certainly a tough case to crack, but she eventually got through to him. Alosaka, when he would later join, was another story. The Coyote Tribe would often end up seeing eye-to-eye with the Serpent Tribe, who also prefered to live more on the wild side.</Italian>
+		<Spanish>The Deer Tribe, much to Natane's surprise, was the third tribe to join the Council. The Deer Tribe is known as a clan of free-spirited folk, and Natane did not believe they would want to be held down by any regulations. Soyala of the Coyote Tribe saw the joining of the Council as an opportunity to make a lasting impact on the Chislev - to help them lighten up a little bit. Motsqueh was certainly a tough case to crack, but she eventually got through to him. Alosaka, when he would later join, was another story. The Coyote Tribe would often end up seeing eye-to-eye with the Serpent Tribe, who also prefered to live more on the wild side.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_COYOTE_TRIBE_FAVOR_STRATEGY</Tag>
@@ -1134,19 +1134,19 @@ The largest of the region's clans will also send an elder to represent the clan'
 	</TEXT> 
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_SERPENT_TRIBE_FAVOR</Tag>
-		<English>Serpent Tribe Favor</English>
-		<French>Serpent Tribe Favor</French>
-		<German>Serpent Tribe Favor</German>
-		<Italian>Serpent Tribe Favor</Italian>
-		<Spanish>Serpent Tribe Favor</Spanish>
+		<English>Wolf Tribe Favor</English>
+		<French>Wolf Tribe Favor</French>
+		<German>Wolf Tribe Favor</German>
+		<Italian>Wolf Tribe Favor</Italian>
+		<Spanish>Wolf Tribe Favor</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_SERPENT_TRIBE_FAVOR_SHORT</Tag>
-		<English>SerFav</English>
-		<French>SerFav</French>
-		<German>SerFav</German>
-		<Italian>SerFav</Italian>
-		<Spanish>SerFav</Spanish>
+		<English>WolfFav</English>
+		<French>WolfFav</French>
+		<German>WolfFav</German>
+		<Italian>WolfFav</Italian>
+		<Spanish>WolfFav</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_SERPENT_TRIBE_FAVOR_PEDIA</Tag>
@@ -1166,19 +1166,19 @@ The largest of the region's clans will also send an elder to represent the clan'
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_TORTOISE_TRIBE_FAVOR</Tag>
-		<English>Tortoise Tribe Favor</English>
-		<French>Tortoise Tribe Favor</French>
-		<German>Tortoise Tribe Favor</German>
-		<Italian>Tortoise Tribe Favor</Italian>
-		<Spanish>Tortoise Tribe Favor</Spanish>
+		<English>Long-Hair Tribe Favor</English>
+		<French>Long-Hair Tribe Favor</French>
+		<German>Long-Hair Tribe Favor</German>
+		<Italian>Long-Hair Tribe Favor</Italian>
+		<Spanish>Long-Hair Tribe Favor</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_TORTOISE_TRIBE_FAVOR_SHORT</Tag>
-		<English>TorFav</English>
-		<French>TorFav</French>
-		<German>TorFav</German>
-		<Italian>TorFav</Italian>
-		<Spanish>TorFav</Spanish>
+		<English>HairFav</English>
+		<French>HairFav</French>
+		<German>HairFav</German>
+		<Italian>HairFav</Italian>
+		<Spanish>HairFav</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_TORTOISE_TRIBE_FAVOR_PEDIA</Tag>
@@ -1196,12 +1196,36 @@ The largest of the region's clans will also send an elder to represent the clan'
 		<Spanish>Earning the favor of the Tortoise Tribe will grant your units [LINK=PROMOTION_CITY_GARRISON1]City Garrison I[\LINK], and you will receive +50% [ICON_GREATPEOPLE]. Additionally, your borders will not be influenced by combat, and while at peace, you will receive +15% [ICON_RESEARCH].[NEWLINE][NEWLINE]The Tortoise Tribe prefers being at peace, and their preferred civic is [LINK=CIVIC_SCHOLARSHIP]Scholarship[\LINK]. You can earn their favor by training units, killing units within your own borders, and by producing great people. If you prefer peace, but keep yourself well-defended to discourage attackers, you shouldn't have any problems maintaining your favor with the Tortoise Tribe.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TRAIT_EAGLE_TRIBE_FAVOR_SHORT</Tag>
-		<English>Pio</English>
-		<French>Pio</French>
-		<German>Pio</German>
-		<Italian>Pio</Italian>
-		<Spanish>Pio</Spanish>
+		<Tag>TXT_KEY_TRAIT_THREE_SISTERS_TRIBE_FAVOR</Tag>
+		<English>Three-Sisters Tribe Favor</English>
+		<French>Three-Sisters Tribe Favor</French>
+		<German>Three-Sisters Tribe Favor</German>
+		<Italian>Three-Sisters Tribe Favor</Italian>
+		<Spanish>Three-Sisters Tribe Favor</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_THREE_SISTERS_TRIBE_FAVOR_SHORT</Tag>
+		<English>SistFav</English>
+		<French>SistFav</French>
+		<German>SistFav</German>
+		<Italian>SistFav</Italian>
+		<Spanish>SistFav</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_SKY_TRIBE_FAVOR</Tag>
+		<English>Sky Tribe Favor</English>
+		<French>Sky Tribe Favor</French>
+		<German>Sky Tribe Favor</German>
+		<Italian>Sky Tribe Favor</Italian>
+		<Spanish>Sky Tribe Favor</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_SKY_TRIBE_FAVOR_SHORT</Tag>
+		<English>SkyFav</English>
+		<French>SkyFav</French>
+		<German>SkyFav</German>
+		<Italian>SkyFav</Italian>
+		<Spanish>SkyFav</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TOTEM_WORKSHOP</Tag>
@@ -1253,11 +1277,11 @@ The largest of the region's clans will also send an elder to represent the clan'
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_COYOTE</Tag>
-		<English>Totem of the Coyote</English>
-		<French>Totem of the Coyote</French>
-		<German>Totem of the Coyote</German>
-		<Italian>Totem of the Coyote</Italian>
-		<Spanish>Totem of the Coyote</Spanish>
+		<English>Totem of the Deer</English>
+		<French>Totem of the Deer</French>
+		<German>Totem of the Deer</German>
+		<Italian>Totem of the Deer</Italian>
+		<Spanish>Totem of the Deer</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_COYOTE_PEDIA</Tag>
@@ -1309,11 +1333,11 @@ The largest of the region's clans will also send an elder to represent the clan'
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_SERPENT</Tag>
-		<English>Totem of the Serpent</English>
-		<French>Totem of the Serpent</French>
-		<German>Totem of the Serpent</German>
-		<Italian>Totem of the Serpent</Italian>
-		<Spanish>Totem of the Serpent</Spanish>
+		<English>Totem of the Wolf</English>
+		<French>Totem of the Wolf</French>
+		<German>Totem of the Wolf</German>
+		<Italian>Totem of the Wolf</Italian>
+		<Spanish>Totem of the Wolf</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_SERPENT_PEDIA</Tag>
@@ -1333,11 +1357,11 @@ The largest of the region's clans will also send an elder to represent the clan'
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_TORTOISE</Tag>
-		<English>Totem of the Tortoise</English>
-		<French>Totem of the Tortoise</French>
-		<German>Totem of the Tortoise</German>
-		<Italian>Totem of the Tortoise</Italian>
-		<Spanish>Totem of the Tortoise</Spanish>
+		<English>Totem of the Long-Hair</English>
+		<French>Totem of the Long-Hair</French>
+		<German>Totem of the Long-Hair</German>
+		<Italian>Totem of the Long-Hair</Italian>
+		<Spanish>Totem of the Long-Hair</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_TORTOISE_PEDIA</Tag>
@@ -1356,6 +1380,357 @@ The largest of the region's clans will also send an elder to represent the clan'
 		<Spanish>The [COLOR_BUILDING_TEXT]Totem of the Tortoise[COLOR_REVERT] provides a number of benefits. It gives the city a 10% defense boost and 2 [ICON_GREATPEOPLE]. The enemies of the Tortoise Tribe have mixed feelings about the killing of such a pacificistic people, so enemies suffer an extra 5% war [ICON_UNHAPPY] against the Chislev. Additionally, all units built here will start with the [LINK=PROMOTION_MAGIC_RESISTANCE]Magic Resistance[\LINK] promotion, which provides a 20% resistance to fire, cold, death, and lightning damage, as well as a 20% resistance to spells.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_BEARNEW_PEDIA</Tag>
+		<English>The Age of Ice was a hostile time, pitting man against Mulcarn's reign. As the 
+tundra thawed and the Long War finally ended with the emergence of the Bannor, there were 
+some that remembered the flickers of kindness of their exile. Those that taught them to keep 
+and preserve their culture, even as the generations gathered into war parties to attack the Clan 
+of Embers.  
+The cost of the war was immense. The men lost was tragedy enough, but the accumulated 
+knowledge being thrown away to assail Braduk the Burning could have been a deathknell to the 
+Chislev. The Bear totem became the bastion of knowledge. Feverishly recording and fastidiously 
+marking down every achievement and every name lost. The Chislev's history and stories were 
+recorded to hibernate through the frost, with copies sent with the traveling Elohim bands and 
+many of the originals lost to orcish retribution. Though they would not give up their siege and 
+travel with the Elohim (known to the Chislev as Unali'i, meaning 'friend'), their culture would live 
+on, even if the people did not. </English>
+		<French>The Age of Ice was a hostile time, pitting man against Mulcarn's reign. As the 
+tundra thawed and the Long War finally ended with the emergence of the Bannor, there were 
+some that remembered the flickers of kindness of their exile. Those that taught them to keep 
+and preserve their culture, even as the generations gathered into war parties to attack the Clan 
+of Embers.  
+The cost of the war was immense. The men lost was tragedy enough, but the accumulated 
+knowledge being thrown away to assail Braduk the Burning could have been a deathknell to the 
+Chislev. The Bear totem became the bastion of knowledge. Feverishly recording and fastidiously 
+marking down every achievement and every name lost. The Chislev's history and stories were 
+recorded to hibernate through the frost, with copies sent with the traveling Elohim bands and 
+many of the originals lost to orcish retribution. Though they would not give up their siege and 
+travel with the Elohim (known to the Chislev as Unali'i, meaning 'friend'), their culture would live 
+on, even if the people did not. </French>
+		<German>The Age of Ice was a hostile time, pitting man against Mulcarn's reign. As the 
+tundra thawed and the Long War finally ended with the emergence of the Bannor, there were 
+some that remembered the flickers of kindness of their exile. Those that taught them to keep 
+and preserve their culture, even as the generations gathered into war parties to attack the Clan 
+of Embers.  
+The cost of the war was immense. The men lost was tragedy enough, but the accumulated 
+knowledge being thrown away to assail Braduk the Burning could have been a deathknell to the 
+Chislev. The Bear totem became the bastion of knowledge. Feverishly recording and fastidiously 
+marking down every achievement and every name lost. The Chislev's history and stories were 
+recorded to hibernate through the frost, with copies sent with the traveling Elohim bands and 
+many of the originals lost to orcish retribution. Though they would not give up their siege and 
+travel with the Elohim (known to the Chislev as Unali'i, meaning 'friend'), their culture would live 
+on, even if the people did not. </German>
+		<Italian>The Age of Ice was a hostile time, pitting man against Mulcarn's reign. As the 
+tundra thawed and the Long War finally ended with the emergence of the Bannor, there were 
+some that remembered the flickers of kindness of their exile. Those that taught them to keep 
+and preserve their culture, even as the generations gathered into war parties to attack the Clan 
+of Embers.  
+The cost of the war was immense. The men lost was tragedy enough, but the accumulated 
+knowledge being thrown away to assail Braduk the Burning could have been a deathknell to the 
+Chislev. The Bear totem became the bastion of knowledge. Feverishly recording and fastidiously 
+marking down every achievement and every name lost. The Chislev's history and stories were 
+recorded to hibernate through the frost, with copies sent with the traveling Elohim bands and 
+many of the originals lost to orcish retribution. Though they would not give up their siege and 
+travel with the Elohim (known to the Chislev as Unali'i, meaning 'friend'), their culture would live 
+on, even if the people did not. </Italian>
+		<Spanish>The Age of Ice was a hostile time, pitting man against Mulcarn's reign. As the 
+tundra thawed and the Long War finally ended with the emergence of the Bannor, there were 
+some that remembered the flickers of kindness of their exile. Those that taught them to keep 
+and preserve their culture, even as the generations gathered into war parties to attack the Clan 
+of Embers.  
+The cost of the war was immense. The men lost was tragedy enough, but the accumulated 
+knowledge being thrown away to assail Braduk the Burning could have been a deathknell to the 
+Chislev. The Bear totem became the bastion of knowledge. Feverishly recording and fastidiously 
+marking down every achievement and every name lost. The Chislev's history and stories were 
+recorded to hibernate through the frost, with copies sent with the traveling Elohim bands and 
+many of the originals lost to orcish retribution. Though they would not give up their siege and 
+travel with the Elohim (known to the Chislev as Unali'i, meaning 'friend'), their culture would live 
+on, even if the people did not. </Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_EAGLENEW_PEDIA</Tag>
+		<English>The Doviello and Clan of Embers 
+were not the only upstarts during the Age of Ice. The most powerful, the heralds of the Long 
+Winter, shaped the epoch much more than any other. Those of the Eagle totem studied the 
+ways of Ice, watching the Aquilan eagles spread cold misery across the planet.  
+This was not to emulate the 'cold men', but to counter them. The totem of the Eagle stands as a 
+reminder of the perils of a land gone barren and a pledge to prevent that fate from befalling the 
+lands of the Chislev Confederacy ever again. Enchanting nature with fecund life to hold back the 
+cold dark.</English>
+		<French>The Doviello and Clan of Embers 
+were not the only upstarts during the Age of Ice. The most powerful, the heralds of the Long 
+Winter, shaped the epoch much more than any other. Those of the Eagle totem studied the 
+ways of Ice, watching the Aquilan eagles spread cold misery across the planet.  
+This was not to emulate the 'cold men', but to counter them. The totem of the Eagle stands as a 
+reminder of the perils of a land gone barren and a pledge to prevent that fate from befalling the 
+lands of the Chislev Confederacy ever again. Enchanting nature with fecund life to hold back the 
+cold dark.</French>
+		<German>The Doviello and Clan of Embers 
+were not the only upstarts during the Age of Ice. The most powerful, the heralds of the Long 
+Winter, shaped the epoch much more than any other. Those of the Eagle totem studied the 
+ways of Ice, watching the Aquilan eagles spread cold misery across the planet.  
+This was not to emulate the 'cold men', but to counter them. The totem of the Eagle stands as a 
+reminder of the perils of a land gone barren and a pledge to prevent that fate from befalling the 
+lands of the Chislev Confederacy ever again. Enchanting nature with fecund life to hold back the 
+cold dark.</German>
+		<Italian>The Doviello and Clan of Embers 
+were not the only upstarts during the Age of Ice. The most powerful, the heralds of the Long 
+Winter, shaped the epoch much more than any other. Those of the Eagle totem studied the 
+ways of Ice, watching the Aquilan eagles spread cold misery across the planet.  
+This was not to emulate the 'cold men', but to counter them. The totem of the Eagle stands as a 
+reminder of the perils of a land gone barren and a pledge to prevent that fate from befalling the 
+lands of the Chislev Confederacy ever again. Enchanting nature with fecund life to hold back the 
+cold dark.</Italian>
+		<Spanish>The Doviello and Clan of Embers 
+were not the only upstarts during the Age of Ice. The most powerful, the heralds of the Long 
+Winter, shaped the epoch much more than any other. Those of the Eagle totem studied the 
+ways of Ice, watching the Aquilan eagles spread cold misery across the planet.  
+This was not to emulate the 'cold men', but to counter them. The totem of the Eagle stands as a 
+reminder of the perils of a land gone barren and a pledge to prevent that fate from befalling the 
+lands of the Chislev Confederacy ever again. Enchanting nature with fecund life to hold back the 
+cold dark.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_DEER_PEDIA</Tag>
+		<English>The first trackers and scouts that kept the clans from starvation assembled under 
+the deer totem. Already expert in their craft, their contact with the Ljosalfar gave them a further 
+edge to feed the clans and press forward toward the pyres of Braduk the Burning. As the Age of 
+Rebirth dawned, the Deer totem once again found a place of honor among the tribes. Ranging 
+far and wide to contact and recontact their lost allies and enemies. 
+The symbol of the deer is one of a tamed land, safe from predators, and that is what the Deer 
+attempt to accomplish. They are not born warriors as the Wolf are, but hunters.  </English>
+		<French>The first trackers and scouts that kept the clans from starvation assembled under 
+the deer totem. Already expert in their craft, their contact with the Ljosalfar gave them a further 
+edge to feed the clans and press forward toward the pyres of Braduk the Burning. As the Age of 
+Rebirth dawned, the Deer totem once again found a place of honor among the tribes. Ranging 
+far and wide to contact and recontact their lost allies and enemies. 
+The symbol of the deer is one of a tamed land, safe from predators, and that is what the Deer 
+attempt to accomplish. They are not born warriors as the Wolf are, but hunters.  </French>
+		<German>The first trackers and scouts that kept the clans from starvation assembled under 
+the deer totem. Already expert in their craft, their contact with the Ljosalfar gave them a further 
+edge to feed the clans and press forward toward the pyres of Braduk the Burning. As the Age of 
+Rebirth dawned, the Deer totem once again found a place of honor among the tribes. Ranging 
+far and wide to contact and recontact their lost allies and enemies. 
+The symbol of the deer is one of a tamed land, safe from predators, and that is what the Deer 
+attempt to accomplish. They are not born warriors as the Wolf are, but hunters.  </German>
+		<Italian>The first trackers and scouts that kept the clans from starvation assembled under 
+the deer totem. Already expert in their craft, their contact with the Ljosalfar gave them a further 
+edge to feed the clans and press forward toward the pyres of Braduk the Burning. As the Age of 
+Rebirth dawned, the Deer totem once again found a place of honor among the tribes. Ranging 
+far and wide to contact and recontact their lost allies and enemies. 
+The symbol of the deer is one of a tamed land, safe from predators, and that is what the Deer 
+attempt to accomplish. They are not born warriors as the Wolf are, but hunters.  </Italian>
+		<Spanish>The first trackers and scouts that kept the clans from starvation assembled under 
+the deer totem. Already expert in their craft, their contact with the Ljosalfar gave them a further 
+edge to feed the clans and press forward toward the pyres of Braduk the Burning. As the Age of 
+Rebirth dawned, the Deer totem once again found a place of honor among the tribes. Ranging 
+far and wide to contact and recontact their lost allies and enemies. 
+The symbol of the deer is one of a tamed land, safe from predators, and that is what the Deer 
+attempt to accomplish. They are not born warriors as the Wolf are, but hunters.  </Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_LONG_HAIR_PEDIA</Tag>
+		<English> The final and most enigmatic totem is also the most controversial. The Bear 
+scholars, after so many generations lost to the fires of battle, cannot confidently speak to the 
+ancient history of the Chislev. If there was one at all.  
+Malign legend states the Chislev were not always the Confederacy they became, but 
+descendents of the enforcers of a mad sorcerer-king, cast out for fealty to a mad lord. A people 
+who followed their leader but could not shake the weight of his sins.  
+Whether that is true or not is mostly lost to history, but what is known is the Chislev did find 
+Kylorin and the Amurites during the Age of Ice, studying in the halls of the powerful mage turned 
+king. Whether this is a first meeting or the reunion of a changed man and people is unknown, 
+only the eldest Long-hairs know.  
+They will not tell, even the needling Bear scholars cannot crack the mystery.</English>
+		<French> The final and most enigmatic totem is also the most controversial. The Bear 
+scholars, after so many generations lost to the fires of battle, cannot confidently speak to the 
+ancient history of the Chislev. If there was one at all.  
+Malign legend states the Chislev were not always the Confederacy they became, but 
+descendents of the enforcers of a mad sorcerer-king, cast out for fealty to a mad lord. A people 
+who followed their leader but could not shake the weight of his sins.  
+Whether that is true or not is mostly lost to history, but what is known is the Chislev did find 
+Kylorin and the Amurites during the Age of Ice, studying in the halls of the powerful mage turned 
+king. Whether this is a first meeting or the reunion of a changed man and people is unknown, 
+only the eldest Long-hairs know.  
+They will not tell, even the needling Bear scholars cannot crack the mystery.</French>
+		<German> The final and most enigmatic totem is also the most controversial. The Bear 
+scholars, after so many generations lost to the fires of battle, cannot confidently speak to the 
+ancient history of the Chislev. If there was one at all.  
+Malign legend states the Chislev were not always the Confederacy they became, but 
+descendents of the enforcers of a mad sorcerer-king, cast out for fealty to a mad lord. A people 
+who followed their leader but could not shake the weight of his sins.  
+Whether that is true or not is mostly lost to history, but what is known is the Chislev did find 
+Kylorin and the Amurites during the Age of Ice, studying in the halls of the powerful mage turned 
+king. Whether this is a first meeting or the reunion of a changed man and people is unknown, 
+only the eldest Long-hairs know.  
+They will not tell, even the needling Bear scholars cannot crack the mystery.</German>
+		<Italian> The final and most enigmatic totem is also the most controversial. The Bear 
+scholars, after so many generations lost to the fires of battle, cannot confidently speak to the 
+ancient history of the Chislev. If there was one at all.  
+Malign legend states the Chislev were not always the Confederacy they became, but 
+descendents of the enforcers of a mad sorcerer-king, cast out for fealty to a mad lord. A people 
+who followed their leader but could not shake the weight of his sins.  
+Whether that is true or not is mostly lost to history, but what is known is the Chislev did find 
+Kylorin and the Amurites during the Age of Ice, studying in the halls of the powerful mage turned 
+king. Whether this is a first meeting or the reunion of a changed man and people is unknown, 
+only the eldest Long-hairs know.  
+They will not tell, even the needling Bear scholars cannot crack the mystery.</Italian>
+		<Spanish> The final and most enigmatic totem is also the most controversial. The Bear 
+scholars, after so many generations lost to the fires of battle, cannot confidently speak to the 
+ancient history of the Chislev. If there was one at all.  
+Malign legend states the Chislev were not always the Confederacy they became, but 
+descendents of the enforcers of a mad sorcerer-king, cast out for fealty to a mad lord. A people 
+who followed their leader but could not shake the weight of his sins.  
+Whether that is true or not is mostly lost to history, but what is known is the Chislev did find 
+Kylorin and the Amurites during the Age of Ice, studying in the halls of the powerful mage turned 
+king. Whether this is a first meeting or the reunion of a changed man and people is unknown, 
+only the eldest Long-hairs know.  
+They will not tell, even the needling Bear scholars cannot crack the mystery.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_WOLF_PEDIA</Tag>
+		<English>: Endain's Clan of Embers was not the only opponent during the Age of Ice. In their 
+long battles in the tundra, the Chislev Confederacy learned the Doviello ways of war. Honed by 
+their adaptation to the icy wastes, the Wolf totem is the symbol of the most important clan of the 
+Age of Ice. Though the others now hold prominence as well, the Wolf totem is a powerful 
+reminder of the struggles against the ice and holds a place of reverence among the others. 
+Unlike the culture they used as inspiration, their goal is not a savage brutality but an ordered 
+hierarchy. A sort of atavistic communalism that is uncomfortable for outsiders. </English>
+		<French>: Endain's Clan of Embers was not the only opponent during the Age of Ice. In their 
+long battles in the tundra, the Chislev Confederacy learned the Doviello ways of war. Honed by 
+their adaptation to the icy wastes, the Wolf totem is the symbol of the most important clan of the 
+Age of Ice. Though the others now hold prominence as well, the Wolf totem is a powerful 
+reminder of the struggles against the ice and holds a place of reverence among the others. 
+Unlike the culture they used as inspiration, their goal is not a savage brutality but an ordered 
+hierarchy. A sort of atavistic communalism that is uncomfortable for outsiders. </French>
+		<German>: Endain's Clan of Embers was not the only opponent during the Age of Ice. In their 
+long battles in the tundra, the Chislev Confederacy learned the Doviello ways of war. Honed by 
+their adaptation to the icy wastes, the Wolf totem is the symbol of the most important clan of the 
+Age of Ice. Though the others now hold prominence as well, the Wolf totem is a powerful 
+reminder of the struggles against the ice and holds a place of reverence among the others. 
+Unlike the culture they used as inspiration, their goal is not a savage brutality but an ordered 
+hierarchy. A sort of atavistic communalism that is uncomfortable for outsiders. </German>
+		<Italian>: Endain's Clan of Embers was not the only opponent during the Age of Ice. In their 
+long battles in the tundra, the Chislev Confederacy learned the Doviello ways of war. Honed by 
+their adaptation to the icy wastes, the Wolf totem is the symbol of the most important clan of the 
+Age of Ice. Though the others now hold prominence as well, the Wolf totem is a powerful 
+reminder of the struggles against the ice and holds a place of reverence among the others. 
+Unlike the culture they used as inspiration, their goal is not a savage brutality but an ordered 
+hierarchy. A sort of atavistic communalism that is uncomfortable for outsiders. </Italian>
+		<Spanish>: Endain's Clan of Embers was not the only opponent during the Age of Ice. In their 
+long battles in the tundra, the Chislev Confederacy learned the Doviello ways of war. Honed by 
+their adaptation to the icy wastes, the Wolf totem is the symbol of the most important clan of the 
+Age of Ice. Though the others now hold prominence as well, the Wolf totem is a powerful 
+reminder of the struggles against the ice and holds a place of reverence among the others. 
+Unlike the culture they used as inspiration, their goal is not a savage brutality but an ordered 
+hierarchy. A sort of atavistic communalism that is uncomfortable for outsiders. </Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_THREE_SISTERS_PEDIA</Tag>
+		<English>The totem of the Three-Sisters is unusual. While their brothers 
+fought to the death in the blizzards of the Age of Ice, the Three-Sisters stabbed and chopped at 
+the mountainsides. Sticks and arrows would not suit the other clans for long. The Chislev 
+needed weapons. 
+There they found littlefolk locked behind massive gates. Gates made of metal. Others gathered 
+around throughout the deep caves beneath. Though the menfolk made to battle, three of the 
+women, inspired by a bas-relief embedded in the gates, instead offered some of their wares. 
+Hesitantly, the others gave a few of their goods. Kilmorph smiled upon the barter and gifted 
+abundance in return. Since the first trade with what they called the Yunwi Tsunsdi or 'little 
+people', the Three-Sisters have been the Chislev harbingers of commerce and the attendant 
+wealth. </English>
+		<French>The totem of the Three-Sisters is unusual. While their brothers 
+fought to the death in the blizzards of the Age of Ice, the Three-Sisters stabbed and chopped at 
+the mountainsides. Sticks and arrows would not suit the other clans for long. The Chislev 
+needed weapons. 
+There they found littlefolk locked behind massive gates. Gates made of metal. Others gathered 
+around throughout the deep caves beneath. Though the menfolk made to battle, three of the 
+women, inspired by a bas-relief embedded in the gates, instead offered some of their wares. 
+Hesitantly, the others gave a few of their goods. Kilmorph smiled upon the barter and gifted 
+abundance in return. Since the first trade with what they called the Yunwi Tsunsdi or 'little 
+people', the Three-Sisters have been the Chislev harbingers of commerce and the attendant 
+wealth. </French>
+		<German>The totem of the Three-Sisters is unusual. While their brothers 
+fought to the death in the blizzards of the Age of Ice, the Three-Sisters stabbed and chopped at 
+the mountainsides. Sticks and arrows would not suit the other clans for long. The Chislev 
+needed weapons. 
+There they found littlefolk locked behind massive gates. Gates made of metal. Others gathered 
+around throughout the deep caves beneath. Though the menfolk made to battle, three of the 
+women, inspired by a bas-relief embedded in the gates, instead offered some of their wares. 
+Hesitantly, the others gave a few of their goods. Kilmorph smiled upon the barter and gifted 
+abundance in return. Since the first trade with what they called the Yunwi Tsunsdi or 'little 
+people', the Three-Sisters have been the Chislev harbingers of commerce and the attendant 
+wealth. </German>
+		<Italian>The totem of the Three-Sisters is unusual. While their brothers 
+fought to the death in the blizzards of the Age of Ice, the Three-Sisters stabbed and chopped at 
+the mountainsides. Sticks and arrows would not suit the other clans for long. The Chislev 
+needed weapons. 
+There they found littlefolk locked behind massive gates. Gates made of metal. Others gathered 
+around throughout the deep caves beneath. Though the menfolk made to battle, three of the 
+women, inspired by a bas-relief embedded in the gates, instead offered some of their wares. 
+Hesitantly, the others gave a few of their goods. Kilmorph smiled upon the barter and gifted 
+abundance in return. Since the first trade with what they called the Yunwi Tsunsdi or 'little 
+people', the Three-Sisters have been the Chislev harbingers of commerce and the attendant 
+wealth. </Italian>
+		<Spanish>The totem of the Three-Sisters is unusual. While their brothers 
+fought to the death in the blizzards of the Age of Ice, the Three-Sisters stabbed and chopped at 
+the mountainsides. Sticks and arrows would not suit the other clans for long. The Chislev 
+needed weapons. 
+There they found littlefolk locked behind massive gates. Gates made of metal. Others gathered 
+around throughout the deep caves beneath. Though the menfolk made to battle, three of the 
+women, inspired by a bas-relief embedded in the gates, instead offered some of their wares. 
+Hesitantly, the others gave a few of their goods. Kilmorph smiled upon the barter and gifted 
+abundance in return. Since the first trade with what they called the Yunwi Tsunsdi or 'little 
+people', the Three-Sisters have been the Chislev harbingers of commerce and the attendant 
+wealth. </Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_SKY_PEDIA</Tag>
+		<English>The Chislev's faith is winding and its precepts darkened by the passing of 
+cataclysms. Followers of Sucellus, as a god of nature, then life. The Chislev found themselves 
+under the loving guidance of Nanosuelta, leading them through the Age of Ice. Many now still 
+following their god's old precept under Cerunnos. 
+The Sky totem sought to light the way to a new understanding of their old faith. Through the 
+Deer totem's travels, they found the deserts of the Malakim. Followers of Lugus welcomed the 
+clan, their faiths were different, but their goals of rebirth and a sort of openness were the same. 
+Learning much from the followers of the light of Lugus, and teaching in exchange, the Sky totem 
+blazed a new path of enlightenment for the clans. </English>
+		<French>The Chislev's faith is winding and its precepts darkened by the passing of 
+cataclysms. Followers of Sucellus, as a god of nature, then life. The Chislev found themselves 
+under the loving guidance of Nanosuelta, leading them through the Age of Ice. Many now still 
+following their god's old precept under Cerunnos. 
+The Sky totem sought to light the way to a new understanding of their old faith. Through the 
+Deer totem's travels, they found the deserts of the Malakim. Followers of Lugus welcomed the 
+clan, their faiths were different, but their goals of rebirth and a sort of openness were the same. 
+Learning much from the followers of the light of Lugus, and teaching in exchange, the Sky totem 
+blazed a new path of enlightenment for the clans. </French>
+		<German>The Chislev's faith is winding and its precepts darkened by the passing of 
+cataclysms. Followers of Sucellus, as a god of nature, then life. The Chislev found themselves 
+under the loving guidance of Nanosuelta, leading them through the Age of Ice. Many now still 
+following their god's old precept under Cerunnos. 
+The Sky totem sought to light the way to a new understanding of their old faith. Through the 
+Deer totem's travels, they found the deserts of the Malakim. Followers of Lugus welcomed the 
+clan, their faiths were different, but their goals of rebirth and a sort of openness were the same. 
+Learning much from the followers of the light of Lugus, and teaching in exchange, the Sky totem 
+blazed a new path of enlightenment for the clans. </German>
+		<Italian>The Chislev's faith is winding and its precepts darkened by the passing of 
+cataclysms. Followers of Sucellus, as a god of nature, then life. The Chislev found themselves 
+under the loving guidance of Nanosuelta, leading them through the Age of Ice. Many now still 
+following their god's old precept under Cerunnos. 
+The Sky totem sought to light the way to a new understanding of their old faith. Through the 
+Deer totem's travels, they found the deserts of the Malakim. Followers of Lugus welcomed the 
+clan, their faiths were different, but their goals of rebirth and a sort of openness were the same. 
+Learning much from the followers of the light of Lugus, and teaching in exchange, the Sky totem 
+blazed a new path of enlightenment for the clans. </Italian>
+		<Spanish>The Chislev's faith is winding and its precepts darkened by the passing of 
+cataclysms. Followers of Sucellus, as a god of nature, then life. The Chislev found themselves 
+under the loving guidance of Nanosuelta, leading them through the Age of Ice. Many now still 
+following their god's old precept under Cerunnos. 
+The Sky totem sought to light the way to a new understanding of their old faith. Through the 
+Deer totem's travels, they found the deserts of the Malakim. Followers of Lugus welcomed the 
+clan, their faiths were different, but their goals of rebirth and a sort of openness were the same. 
+Learning much from the followers of the light of Lugus, and teaching in exchange, the Sky totem 
+blazed a new path of enlightenment for the clans. </Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_EAGLE_REPLICA</Tag>
 		<English>Totem of the Eagle (Replica)</English>
 		<French>Totem of the Eagle (Replica)</French>
@@ -1365,11 +1740,11 @@ The largest of the region's clans will also send an elder to represent the clan'
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_COYOTE_REPLICA</Tag>
-		<English>Totem of the Coyote (Replica)</English>
-		<French>Totem of the Coyote (Replica)</French>
-		<German>Totem of the Coyote (Replica)</German>
-		<Italian>Totem of the Coyote (Replica)</Italian>
-		<Spanish>Totem of the Coyote (Replica)</Spanish>
+		<English>Totem of the Deer (Replica)</English>
+		<French>Totem of the Deer (Replica)</French>
+		<German>Totem of the Deer (Replica)</German>
+		<Italian>Totem of the Deer (Replica)</Italian>
+		<Spanish>Totem of the Deer (Replica)</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_BEAR_REPLICA</Tag>
@@ -1381,19 +1756,19 @@ The largest of the region's clans will also send an elder to represent the clan'
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_SERPENT_REPLICA</Tag>
-		<English>Totem of the Serpent (Replica)</English>
-		<French>Totem of the Serpent (Replica)</French>
-		<German>Totem of the Serpent (Replica)</German>
-		<Italian>Totem of the Serpent (Replica)</Italian>
-		<Spanish>Totem of the Serpent (Replica)</Spanish>
+		<English>Totem of the Wolf (Replica)</English>
+		<French>Totem of the Wolf (Replica)</French>
+		<German>Totem of the Wolf (Replica)</German>
+		<Italian>Totem of the Wolf (Replica)</Italian>
+		<Spanish>Totem of the Wolf (Replica)</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_TORTOISE_REPLICA</Tag>
-		<English>Totem of the Tortoise (Replica)</English>
-		<French>Totem of the Tortoise (Replica)</French>
-		<German>Totem of the Tortoise (Replica)</German>
-		<Italian>Totem of the Tortoise (Replica)</Italian>
-		<Spanish>Totem of the Tortoise (Replica)</Spanish>
+		<English>Totem of the Long-Hair (Replica)</English>
+		<French>Totem of the Long-Hair (Replica)</French>
+		<German>Totem of the Long-Hair (Replica)</German>
+		<Italian>Totem of the Long-Hair (Replica)</Italian>
+		<Spanish>Totem of the Long-Hair (Replica)</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SPELL_BEFRIEND_AMICUS</Tag>

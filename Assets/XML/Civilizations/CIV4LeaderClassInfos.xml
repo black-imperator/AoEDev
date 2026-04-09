@@ -302,7 +302,7 @@
 			<MaxTraitsPerClass>
 			<TraitClassMax>
 				<TraitClass>TRAITCLASS_TRIBAL</TraitClass>
-				<iMax>5</iMax>
+				<iMax>7</iMax>
 			</TraitClassMax>
 			</MaxTraitsPerClass>
 			<EvolveTraitClasses>
