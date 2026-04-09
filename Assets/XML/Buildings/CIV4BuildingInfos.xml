@@ -9020,7 +9020,7 @@
 			</PrereqBuildingAtRanges>
 			<PerPopBonuses>
 				<PerPopBonus>
-					<fGold>0.10</fGold>
+					<fGold>0.22</fGold>
 					<fTradeRoutes>0.22</fTradeRoutes>
 				</PerPopBonus>
 			</PerPopBonuses>
@@ -9181,40 +9181,6 @@
 					</CommerceModifiers>
 				</BonusCommerceModifier>
 			</BonusCommerceModifiers>
-			<BonusYieldModifiers>
-				<BonusYieldModifier>
-					<BonusType>BONUS_CORN</BonusType>
-					<YieldModifiers>
-						<iYield>5</iYield>
-						<iYield>0</iYield>
-						<iYield>0</iYield>
-					</YieldModifiers>
-				</BonusYieldModifier>
-				<BonusYieldModifier>
-					<BonusType>BONUS_WHEAT</BonusType>
-					<YieldModifiers>
-						<iYield>5</iYield>
-						<iYield>0</iYield>
-						<iYield>0</iYield>
-					</YieldModifiers>
-				</BonusYieldModifier>
-				<BonusYieldModifier>
-					<BonusType>BONUS_RICE</BonusType>
-					<YieldModifiers>
-						<iYield>5</iYield>
-						<iYield>0</iYield>
-						<iYield>0</iYield>
-					</YieldModifiers>
-				<BonusYieldModifier>
-					<BonusType>BONUS_CORN</BonusType>
-					<YieldModifiers>
-						<iYield>5</iYield>
-						<iYield>0</iYield>
-						<iYield>0</iYield>
-					</YieldModifiers>
-				</BonusYieldModifier>
-			</BonusYieldModifier>
-			</BonusYieldModifiers>
 			<BonusHealthChanges>
 				<BonusHealthChange>
 					<BonusType>BONUS_CORN</BonusType>
@@ -9495,19 +9461,28 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_EAGLE</ArtDefineTag>
 			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
-			<FreePromotion>PROMOTION_SENTRY</FreePromotion>
+			<FreePromotion>PROMOTION_CRAFTING_TRADITION</FreePromotion>
 			<ProductionTraits>
 				<ProductionTrait>
 					<ProductionTraitType>TRAIT_CHARISMATIC</ProductionTraitType>
 					<iProductionTrait>100</iProductionTrait>
 				</ProductionTrait>
 			</ProductionTraits>
+			<TerrainYieldChanges>
+				<TerrainYieldChange>
+					<TerrainType>TERRAIN_GRASS</TerrainType>
+					<TerrainYields>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+					</TerrainYields>
+				</TerrainYieldChange>
+			</TerrainYieldChanges>
 			<bNeverCapture>1</bNeverCapture>
 			<bCenterInCity>1</bCenterInCity>
 			<iAIWeight>40</iAIWeight>
 			<iCost>90</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<iHappiness>2</iHappiness>
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>1000</fVisibilityPriority>
 			<BuildingClassNeededs>
@@ -9532,7 +9507,15 @@
 			<BuildingExclude>
 				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_TORTOISE</BuildingClassType>
 				<bExclude>1</bExclude>
-				</BuildingExclude>
+			</BuildingExclude>
+			<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_THREE_SISTERS</BuildingClassType>
+				<bExclude>1</bExclude>
+			</BuildingExclude>
+			<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_SKY</BuildingClassType>
+				<bExclude>1</bExclude>
+			</BuildingExclude>
 			</BuildingExcludes>
 			<PropagateBuildings>
 				<PropagateBuilding>
@@ -9559,13 +9542,22 @@
 			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_EAGLENEW_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_EAGLE</ArtDefineTag>
-			<FreePromotion>PROMOTION_SENTRY</FreePromotion>
+			<FreePromotion>PROMOTION_CRAFTING_TRADITION</FreePromotion>
 			<bAutoBuild>1</bAutoBuild>
 			<bMustMaintain>1</bMustMaintain>
 			<bNeverCapture>1</bNeverCapture>
 			<bCenterInCity>1</bCenterInCity>
-			<iHappiness>2</iHappiness>
 			<iAsset>3</iAsset>
+			<TerrainYieldChanges>
+				<TerrainYieldChange>
+					<TerrainType>TERRAIN_GRASS</TerrainType>
+					<TerrainYields>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+					</TerrainYields>
+				</TerrainYieldChange>
+			</TerrainYieldChanges>
 			<BuildingExcludes>
 				<BuildingExclude>
 				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_EAGLE</BuildingClassType>
@@ -9588,6 +9580,14 @@
 				<bExclude>1</bExclude>
 				</BuildingExclude>
 			</BuildingExcludes>
+			<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_THREE_SISTERS</BuildingClassType>
+				<bExclude>1</bExclude>
+			</BuildingExclude>
+			<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_SKY</BuildingClassType>
+				<bExclude>1</bExclude>
+			</BuildingExclude>
 		<PrereqBuildingAtRanges>
 				<PrereqBuildingAtRange>
 					<BuildingType>BUILDINGCLASS_TOTEM_OF_THE_EAGLE</BuildingType>
@@ -9604,12 +9604,39 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_COYOTE</ArtDefineTag>
 			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
+			<FreePromotion>PROMOTION_SUBDUE_ANIMAL</FreePromotion>
 			<ProductionTraits>
 				<ProductionTrait>
 					<ProductionTraitType>TRAIT_CREATIVE</ProductionTraitType>
 					<iProductionTrait>100</iProductionTrait>
 				</ProductionTrait>
 			</ProductionTraits>
+			<FeatureYieldChanges>
+				<FeatureYieldChange>
+				<FeatureType>FEATURE_FOREST</FeatureType>
+				<FeatureYields>
+					<iYield>0</iYield>
+					<iYield>0</iYield>
+					<iYield>1</iYield>
+				</FeatureYields>
+				</FeatureYieldChange>
+				<FeatureYieldChange>
+				<FeatureType>FEATURE_FOREST_NEW</FeatureType>
+				<FeatureYields>
+					<iYield>0</iYield>
+					<iYield>0</iYield>
+					<iYield>1</iYield>
+				</FeatureYields>
+				</FeatureYieldChange>
+				<FeatureYieldChange>
+				<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
+				<FeatureYields>
+					<iYield>0</iYield>
+					<iYield>0</iYield>
+					<iYield>1</iYield>
+				</FeatureYields>
+				</FeatureYieldChange>
+			</FeatureYieldChanges>
 			<bNeverCapture>1</bNeverCapture>
 			<bCenterInCity>1</bCenterInCity>
 			<iAIWeight>40</iAIWeight>
@@ -9617,16 +9644,6 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>1000</fVisibilityPriority>
-			<ObsoleteSafeCommerceChanges>
-				<iCommerce>0</iCommerce>
-				<iCommerce>0</iCommerce>
-				<iCommerce>2</iCommerce>
-			</ObsoleteSafeCommerceChanges>
-			<YieldChanges>
-				<iYield>2</iYield>
-				<iYield>0</iYield>
-				<iYield>0</iYield>
-			</YieldChanges>
 			<BuildingClassNeededs>
 				<BuildingClassNeeded>
 					<BuildingClassType>BUILDINGCLASS_CLAN_STRUCTURE_LODGE</BuildingClassType>
@@ -9650,6 +9667,14 @@
 				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_TORTOISE</BuildingClassType>
 				<bExclude>1</bExclude>
 				</BuildingExclude>
+			<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_THREE_SISTERS</BuildingClassType>
+				<bExclude>1</bExclude>
+			</BuildingExclude>
+			<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_SKY</BuildingClassType>
+				<bExclude>1</bExclude>
+			</BuildingExclude>
 			</BuildingExcludes>
 			<PropagateBuildings>
 				<PropagateBuilding>
@@ -9668,7 +9693,7 @@
 				</Flavor>
 			</Flavors>
 		</BuildingInfo>
-		<BuildingInfo>		<!-- Totem of the Coyote Replica                      ChislevExpansion Totems -->
+		<BuildingInfo>		<!-- Totem of the Deer Replica                      ChislevExpansion Totems -->
 			<BuildingClass>BUILDINGCLASS_TOTEM_OF_THE_COYOTE_REPLICA</BuildingClass>
 			<Type>BUILDING_TOTEM_OF_THE_COYOTE_REPLICA</Type>
 			<Description>TXT_KEY_BUILDING_TOTEM_OF_THE_COYOTE_REPLICA</Description>
@@ -9676,21 +9701,38 @@
 			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_DEER_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_COYOTE</ArtDefineTag>
+			<FreePromotion>PROMOTION_SUBDUE_ANIMAL</FreePromotion>
 			<bAutoBuild>1</bAutoBuild>
 			<bMustMaintain>1</bMustMaintain>
 			<bNeverCapture>1</bNeverCapture>
 			<bCenterInCity>1</bCenterInCity>
+			<FeatureYieldChanges>
+				<FeatureYieldChange>
+				<FeatureType>FEATURE_FOREST</FeatureType>
+				<FeatureYields>
+					<iYield>0</iYield>
+					<iYield>0</iYield>
+					<iYield>1</iYield>
+				</FeatureYields>
+				</FeatureYieldChange>
+				<FeatureYieldChange>
+				<FeatureType>FEATURE_FOREST_NEW</FeatureType>
+				<FeatureYields>
+					<iYield>0</iYield>
+					<iYield>0</iYield>
+					<iYield>1</iYield>
+				</FeatureYields>
+				</FeatureYieldChange>
+				<FeatureYieldChange>
+				<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
+				<FeatureYields>
+					<iYield>0</iYield>
+					<iYield>0</iYield>
+					<iYield>1</iYield>
+				</FeatureYields>
+				</FeatureYieldChange>
+			</FeatureYieldChanges>
 			<iAsset>3</iAsset>
-			<ObsoleteSafeCommerceChanges>
-				<iCommerce>0</iCommerce>
-				<iCommerce>0</iCommerce>
-				<iCommerce>2</iCommerce>
-			</ObsoleteSafeCommerceChanges>
-			<YieldChanges>
-				<iYield>2</iYield>
-				<iYield>0</iYield>
-				<iYield>0</iYield>
-			</YieldChanges>
 				<BuildingExcludes>
 				<BuildingExclude>
 				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_EAGLE</BuildingClassType>
@@ -9712,6 +9754,14 @@
 				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_TORTOISE</BuildingClassType>
 				<bExclude>1</bExclude>
 				</BuildingExclude>
+			<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_THREE_SISTERS</BuildingClassType>
+				<bExclude>1</bExclude>
+			</BuildingExclude>
+			<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_SKY</BuildingClassType>
+				<bExclude>1</bExclude>
+			</BuildingExclude>
 			</BuildingExcludes>
 		<PrereqBuildingAtRanges>
 				<PrereqBuildingAtRange>
@@ -9726,22 +9776,30 @@
 			<Description>TXT_KEY_BUILDING_TOTEM_OF_THE_BEAR</Description>
 			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_BEARNEW_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_BEARNEW_STRATEGY</Strategy>
-			<Help>TXT_KEY_BUILDING_TOTEM_OF_THE_BEAR_HELP</Help>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BEAR_TOTEM</ArtDefineTag>
 			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
-			<FreePromotion>PROMOTION_BEAR_TRIBE_STRONG</FreePromotion>
+			<FreePromotion>PROMOTION_SPIRIT_GUIDE</FreePromotion>
 			<ProductionTraits>
 				<ProductionTrait>
 					<ProductionTraitType>TRAIT_EXPANSIVE</ProductionTraitType>
 					<iProductionTrait>100</iProductionTrait>
 				</ProductionTrait>
 			</ProductionTraits>
+			<ObsoleteSafeCommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>2</iCommerce>
+			</ObsoleteSafeCommerceChanges>
+			<CommerceModifiers>
+				<iCommerce>0</iCommerce>
+				<iCommerce>20</iCommerce>
+				<iCommerce>0</iCommerce>
+			</CommerceModifiers>
 			<bNeverCapture>1</bNeverCapture>
 			<bCenterInCity>1</bCenterInCity>
 			<iAIWeight>80</iAIWeight>
 			<iCost>90</iCost>
-			<iHealth>2</iHealth>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>1000</fVisibilityPriority>
@@ -9768,6 +9826,14 @@
 				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_TORTOISE</BuildingClassType>
 				<bExclude>1</bExclude>
 				</BuildingExclude>
+			<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_THREE_SISTERS</BuildingClassType>
+				<bExclude>1</bExclude>
+			</BuildingExclude>
+			<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_SKY</BuildingClassType>
+				<bExclude>1</bExclude>
+			</BuildingExclude>
 			</BuildingExcludes>
 		<PropagateBuildings>
 				<PropagateBuilding>
@@ -9792,15 +9858,23 @@
 			<Description>TXT_KEY_BUILDING_TOTEM_OF_THE_BEAR_REPLICA</Description>
 			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_BEARNEW_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_BEARNEW_STRATEGY</Strategy>
-			<Help>TXT_KEY_BUILDING_TOTEM_OF_THE_BEAR_HELP</Help>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BEAR_TOTEM</ArtDefineTag>
-			<FreePromotion>PROMOTION_BEAR_TRIBE_STRONG</FreePromotion>
+			<FreePromotion>PROMOTION_SPIRIT_GUIDE</FreePromotion>
 			<bAutoBuild>1</bAutoBuild>
 			<bMustMaintain>1</bMustMaintain>
 			<bNeverCapture>1</bNeverCapture>
 			<bCenterInCity>1</bCenterInCity>
-			<iHealth>2</iHealth>
+			<ObsoleteSafeCommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>2</iCommerce>
+			</ObsoleteSafeCommerceChanges>
+			<CommerceModifiers>
+				<iCommerce>0</iCommerce>
+				<iCommerce>20</iCommerce>
+				<iCommerce>0</iCommerce>
+			</CommerceModifiers>
 			<iAsset>3</iAsset>
 			<BuildingExcludes>
 				<BuildingExclude>
@@ -9823,6 +9897,14 @@
 				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_TORTOISE</BuildingClassType>
 				<bExclude>1</bExclude>
 				</BuildingExclude>
+			<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_THREE_SISTERS</BuildingClassType>
+				<bExclude>1</bExclude>
+			</BuildingExclude>
+			<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_SKY</BuildingClassType>
+				<bExclude>1</bExclude>
+			</BuildingExclude>
 			</BuildingExcludes>
 		<PrereqBuildingAtRanges>
 				<PrereqBuildingAtRange>
@@ -9840,7 +9922,8 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_SERPENT</ArtDefineTag>
 			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
-			<FreePromotion>PROMOTION_ORC_SLAYING</FreePromotion>
+			<FreePromotion>PROMOTION_COMBAT1</FreePromotion>
+			<iMilitaryProductionModifier>20</iMilitaryProductionModifier>
 			<bMustMaintain>1</bMustMaintain>
 			<ProductionTraits>
 				<ProductionTrait>
@@ -9857,12 +9940,6 @@
 			<iAsset>6</iAsset>
 			<iPower>6</iPower>
 			<fVisibilityPriority>1000</fVisibilityPriority>
-			<DomainFreeExperiences>
-				<DomainFreeExperience>
-					<DomainType>DOMAIN_LAND</DomainType>
-					<iExperience>2</iExperience>
-				</DomainFreeExperience>
-			</DomainFreeExperiences>
 			<BuildingClassNeededs>
 				<BuildingClassNeeded>
 					<BuildingClassType>BUILDINGCLASS_CLAN_STRUCTURE_LODGE</BuildingClassType>
@@ -9886,6 +9963,14 @@
 				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_TORTOISE</BuildingClassType>
 				<bExclude>1</bExclude>
 				</BuildingExclude>
+			<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_THREE_SISTERS</BuildingClassType>
+				<bExclude>1</bExclude>
+			</BuildingExclude>
+			<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_SKY</BuildingClassType>
+				<bExclude>1</bExclude>
+			</BuildingExclude>
 			</BuildingExcludes>
 		<PropagateBuildings>
 				<PropagateBuilding>
@@ -9900,7 +9985,7 @@
 				</Flavor>
 			</Flavors>
 		</BuildingInfo>
-		<BuildingInfo>		<!-- Totem of the Serpent Replica                    ChislevExpansion Totems -->
+		<BuildingInfo>		<!-- Totem of the Wolf Replica                    ChislevExpansion Totems -->
 			<BuildingClass>BUILDINGCLASS_TOTEM_OF_THE_SERPENT_REPLICA</BuildingClass>
 			<Type>BUILDING_TOTEM_OF_THE_SERPENT_REPLICA</Type>
 			<Description>TXT_KEY_BUILDING_TOTEM_OF_THE_SERPENT_REPLICA</Description>
@@ -9908,7 +9993,8 @@
 			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_WOLF_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_SERPENT</ArtDefineTag>
-			<FreePromotion>PROMOTION_ORC_SLAYING</FreePromotion>
+			<FreePromotion>PROMOTION_COMBAT1</FreePromotion>
+			<iMilitaryProductionModifier>20</iMilitaryProductionModifier>
 			<ProductionTraits>
 				<ProductionTrait>
 					<ProductionTraitType>TRAIT_AGGRESSIVE</ProductionTraitType>
@@ -9923,13 +10009,7 @@
 			<iWarWearinessModifier>-50</iWarWearinessModifier>
 			<iAsset>6</iAsset>
 			<iPower>6</iPower>
-			<DomainFreeExperiences>
-				<DomainFreeExperience>
-					<DomainType>DOMAIN_LAND</DomainType>
-					<iExperience>2</iExperience>
-				</DomainFreeExperience>
-			</DomainFreeExperiences>
-				<BuildingExcludes>
+			<BuildingExcludes>
 				<BuildingExclude>
 				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_EAGLE</BuildingClassType>
 				<bExclude>1</bExclude>
@@ -9950,6 +10030,14 @@
 				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_TORTOISE</BuildingClassType>
 				<bExclude>1</bExclude>
 				</BuildingExclude>
+			<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_THREE_SISTERS</BuildingClassType>
+				<bExclude>1</bExclude>
+			</BuildingExclude>
+			<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_SKY</BuildingClassType>
+				<bExclude>1</bExclude>
+			</BuildingExclude>
 			</BuildingExcludes>
 		<PrereqBuildingAtRanges>
 				<PrereqBuildingAtRange>
@@ -9974,14 +10062,24 @@
 					<iProductionTrait>100</iProductionTrait>
 				</ProductionTrait>
 			</ProductionTraits>
+			<TrainXPCaps>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<fTrainXPCap>15</fTrainXPCap>
+				</TrainXPCap>
+			</TrainXPCaps>
+			<TrainXPRates>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<fTrainXPRate>0.50</fTrainXPRate>
+				</TrainXPRate>
+			</TrainXPRates>
 			<bNeverCapture>1</bNeverCapture>
 			<bCenterInCity>1</bCenterInCity>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<iAIWeight>10</iAIWeight>
 			<iCost>90</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<iDefense>10</iDefense>
-			<iEnemyWarWearinessModifier>5</iEnemyWarWearinessModifier>
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>1000</fVisibilityPriority>
 			<BuildingClassNeededs>
@@ -10007,6 +10105,14 @@
 				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_SERPENT</BuildingClassType>
 				<bExclude>1</bExclude>
 				</BuildingExclude>
+			<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_THREE_SISTERS</BuildingClassType>
+				<bExclude>1</bExclude>
+			</BuildingExclude>
+			<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_SKY</BuildingClassType>
+				<bExclude>1</bExclude>
+			</BuildingExclude>
 			</BuildingExcludes>
 			<PropagateBuildings>
 				<PropagateBuilding>
@@ -10036,8 +10142,18 @@
 			<bCenterInCity>1</bCenterInCity>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<iAIWeight>10</iAIWeight>
-			<iDefense>10</iDefense>
-			<iEnemyWarWearinessModifier>5</iEnemyWarWearinessModifier>
+			<TrainXPCaps>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<fTrainXPCap>15</fTrainXPCap>
+				</TrainXPCap>
+			</TrainXPCaps>
+			<TrainXPRates>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<fTrainXPRate>0.50</fTrainXPRate>
+				</TrainXPRate>
+			</TrainXPRates>
 			<iAsset>3</iAsset>
 				<BuildingExcludes>
 				<BuildingExclude>
@@ -10060,10 +10176,254 @@
 				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_TORTOISE</BuildingClassType>
 				<bExclude>1</bExclude>
 				</BuildingExclude>
+			<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_THREE_SISTERS</BuildingClassType>
+				<bExclude>1</bExclude>
+			</BuildingExclude>
+			<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_SKY</BuildingClassType>
+				<bExclude>1</bExclude>
+			</BuildingExclude>
 			</BuildingExcludes>
 		<PrereqBuildingAtRanges>
 				<PrereqBuildingAtRange>
 					<BuildingType>BUILDINGCLASS_TOTEM_OF_THE_TORTOISE</BuildingType>
+					<iRange>6</iRange>
+				</PrereqBuildingAtRange>
+			</PrereqBuildingAtRanges>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Totem of the Sky                           ChislevExpansion Totems -->
+			<BuildingClass>BUILDINGCLASS_TOTEM_OF_THE_SKY</BuildingClass>
+			<Type>BUILDING_TOTEM_OF_THE_SKY</Type>
+			<Description>TXT_KEY_BUILDING_TOTEM_OF_THE_SKY</Description>
+			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_SKY_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_SKY_STRATEGY</Strategy>
+			<Advisor>ADVISOR_GROWTH</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_EAGLE</ArtDefineTag>
+			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
+			<ProductionTraits>
+				<ProductionTrait>
+					<ProductionTraitType>TRAIT_CHARISMATIC</ProductionTraitType>
+					<iProductionTrait>100</iProductionTrait>
+				</ProductionTrait>
+			</ProductionTraits>
+			<FreePromotion>PROMOTION_SENTRY</FreePromotion>
+			<iHappiness>2</iHappiness>
+			<iHealth>2</iHealth>
+			<bNeverCapture>1</bNeverCapture>
+			<bCenterInCity>1</bCenterInCity>
+			<iAIWeight>40</iAIWeight>
+			<iCost>90</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iAsset>3</iAsset>
+			<fVisibilityPriority>1000</fVisibilityPriority>
+			<BuildingClassNeededs>
+				<BuildingClassNeeded>
+					<BuildingClassType>BUILDINGCLASS_CLAN_STRUCTURE_LODGE</BuildingClassType>
+					<bNeededInCity>1</bNeededInCity>
+				</BuildingClassNeeded>
+			</BuildingClassNeededs>
+			<BuildingExcludes>
+				<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_COYOTE</BuildingClassType>
+				<bExclude>1</bExclude>
+				</BuildingExclude>
+			<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_BEAR</BuildingClassType>
+				<bExclude>1</bExclude>
+				</BuildingExclude>
+			<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_SERPENT</BuildingClassType>
+				<bExclude>1</bExclude>
+				</BuildingExclude>
+			<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_TORTOISE</BuildingClassType>
+				<bExclude>1</bExclude>
+				</BuildingExclude>
+			<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_THREE_SISTERS</BuildingClassType>
+				<bExclude>1</bExclude>
+			</BuildingExclude>
+			</BuildingExcludes>
+			<PropagateBuildings>
+				<PropagateBuilding>
+					<BuildingType>BUILDING_TOTEM_OF_THE_SKY_REPLICA</BuildingType>
+					<iRange>6</iRange>
+				</PropagateBuilding>
+			</PropagateBuildings>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>12</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Totem of the Sky Replica                     ChislevExpansion Totems -->
+			<BuildingClass>BUILDINGCLASS_TOTEM_OF_THE_SKY_REPLICA</BuildingClass>
+			<Type>BUILDING_TOTEM_OF_THE_SKY_REPLICA</Type>
+			<Description>TXT_KEY_BUILDING_TOTEM_OF_THE_SKY_REPLICA</Description>
+			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_SKY_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_SKY_STRATEGY</Strategy>
+			<Advisor>ADVISOR_GROWTH</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_EAGLE</ArtDefineTag>
+			<bAutoBuild>1</bAutoBuild>
+			<bMustMaintain>1</bMustMaintain>
+			<bNeverCapture>1</bNeverCapture>
+			<bCenterInCity>1</bCenterInCity>
+			<FreePromotion>PROMOTION_SENTRY</FreePromotion>
+			<iHappiness>2</iHappiness>
+			<iHealth>2</iHealth>
+			<iAsset>3</iAsset>
+			<BuildingExcludes>
+				<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_EAGLE</BuildingClassType>
+				<bExclude>1</bExclude>
+				</BuildingExclude>
+			<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_BEAR</BuildingClassType>
+				<bExclude>1</bExclude>
+				</BuildingExclude>
+			<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_COYOTE</BuildingClassType>
+				<bExclude>1</bExclude>
+				</BuildingExclude>
+			<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_SERPENT</BuildingClassType>
+				<bExclude>1</bExclude>
+				</BuildingExclude>
+			<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_TORTOISE</BuildingClassType>
+				<bExclude>1</bExclude>
+			</BuildingExclude>
+			<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_THREE_SISTERS</BuildingClassType>
+				<bExclude>1</bExclude>
+			</BuildingExclude>
+			</BuildingExcludes>
+		<PrereqBuildingAtRanges>
+				<PrereqBuildingAtRange>
+					<BuildingType>BUILDINGCLASS_TOTEM_OF_THE_SKY</BuildingType>
+					<iRange>6</iRange>
+				</PrereqBuildingAtRange>
+			</PrereqBuildingAtRanges>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Totem of the Three Sisters                             ChislevExpansion Totems -->
+			<BuildingClass>BUILDINGCLASS_TOTEM_OF_THE_THREE_SISTERS</BuildingClass>
+			<Type>BUILDING_TOTEM_OF_THE_THREE_SISTERS</Type>
+			<Description>TXT_KEY_BUILDING_TOTEM_OF_THE_THREE_SISTERS</Description>
+			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_THREE_SISTERS_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_THREE_SISTERS_STRATEGY</Strategy>
+			<Advisor>ADVISOR_GROWTH</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_EAGLE</ArtDefineTag>
+			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
+			<ProductionTraits>
+				<ProductionTrait>
+					<ProductionTraitType>TRAIT_CHARISMATIC</ProductionTraitType>
+					<iProductionTrait>100</iProductionTrait>
+				</ProductionTrait>
+			</ProductionTraits>
+			<iTradeRoutes>1</iTradeRoutes>
+			<iTradeRouteModifier>35</iTradeRouteModifier>
+			<bNeverCapture>1</bNeverCapture>
+			<bCenterInCity>1</bCenterInCity>
+			<iAIWeight>40</iAIWeight>
+			<iCost>90</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iAsset>3</iAsset>
+			<fVisibilityPriority>1000</fVisibilityPriority>
+			<BuildingClassNeededs>
+				<BuildingClassNeeded>
+					<BuildingClassType>BUILDINGCLASS_CLAN_STRUCTURE_LODGE</BuildingClassType>
+					<bNeededInCity>1</bNeededInCity>
+				</BuildingClassNeeded>
+			</BuildingClassNeededs>
+			<BuildingExcludes>
+				<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_COYOTE</BuildingClassType>
+				<bExclude>1</bExclude>
+				</BuildingExclude>
+			<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_BEAR</BuildingClassType>
+				<bExclude>1</bExclude>
+				</BuildingExclude>
+			<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_SERPENT</BuildingClassType>
+				<bExclude>1</bExclude>
+				</BuildingExclude>
+			<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_TORTOISE</BuildingClassType>
+				<bExclude>1</bExclude>
+			</BuildingExclude>
+			<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_SKY</BuildingClassType>
+				<bExclude>1</bExclude>
+			</BuildingExclude>
+			</BuildingExcludes>
+			<PropagateBuildings>
+				<PropagateBuilding>
+					<BuildingType>BUILDING_TOTEM_OF_THE_THREE_SISTERS_REPLICA</BuildingType>
+					<iRange>6</iRange>
+				</PropagateBuilding>
+			</PropagateBuildings>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>12</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Totem of the Three Sisters Replica                     ChislevExpansion Totems -->
+			<BuildingClass>BUILDINGCLASS_TOTEM_OF_THE_THREE_SISTERS_REPLICA</BuildingClass>
+			<Type>BUILDING_TOTEM_OF_THE_THREE_SISTERS_REPLICA</Type>
+			<Description>TXT_KEY_BUILDING_TOTEM_OF_THE_THREE_SISTERS_REPLICA</Description>
+			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_THREE_SISTERS_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_THREE_SISTERS_STRATEGY</Strategy>
+			<Advisor>ADVISOR_GROWTH</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_EAGLE</ArtDefineTag>
+			<bAutoBuild>1</bAutoBuild>
+			<bMustMaintain>1</bMustMaintain>
+			<bNeverCapture>1</bNeverCapture>
+			<bCenterInCity>1</bCenterInCity>
+			<iTradeRoutes>1</iTradeRoutes>
+			<iTradeRouteModifier>35</iTradeRouteModifier>
+			<iAsset>3</iAsset>
+			<BuildingExcludes>
+			<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_EAGLE</BuildingClassType>
+				<bExclude>1</bExclude>
+				</BuildingExclude>
+			<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_BEAR</BuildingClassType>
+				<bExclude>1</bExclude>
+				</BuildingExclude>
+			<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_COYOTE</BuildingClassType>
+				<bExclude>1</bExclude>
+				</BuildingExclude>
+			<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_SERPENT</BuildingClassType>
+				<bExclude>1</bExclude>
+				</BuildingExclude>
+			<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_TORTOISE</BuildingClassType>
+				<bExclude>1</bExclude>
+			</BuildingExclude>
+			<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_SKY</BuildingClassType>
+				<bExclude>1</bExclude>
+			</BuildingExclude>
+			</BuildingExcludes>
+		<PrereqBuildingAtRanges>
+				<PrereqBuildingAtRange>
+					<BuildingType>BUILDINGCLASS_TOTEM_OF_THE_THREE_SISTERS</BuildingType>
 					<iRange>6</iRange>
 				</PrereqBuildingAtRange>
 			</PrereqBuildingAtRanges>

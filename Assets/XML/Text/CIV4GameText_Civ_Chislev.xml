@@ -1380,6 +1380,22 @@ The largest of the region's clans will also send an elder to represent the clan'
 		<Spanish>The [COLOR_BUILDING_TEXT]Totem of the Tortoise[COLOR_REVERT] provides a number of benefits. It gives the city a 10% defense boost and 2 [ICON_GREATPEOPLE]. The enemies of the Tortoise Tribe have mixed feelings about the killing of such a pacificistic people, so enemies suffer an extra 5% war [ICON_UNHAPPY] against the Chislev. Additionally, all units built here will start with the [LINK=PROMOTION_MAGIC_RESISTANCE]Magic Resistance[\LINK] promotion, which provides a 20% resistance to fire, cold, death, and lightning damage, as well as a 20% resistance to spells.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_THREE_SISTERS</Tag>
+		<English>Totem of the Three Sisters</English>
+		<French>Totem of the Three Sisters</French>
+		<German>Totem of the Three Sisters</German>
+		<Italian>Totem of the Three Sisters</Italian>
+		<Spanish>Totem of the Three Sisters</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_SKY</Tag>
+		<English>Totem of the Sky</English>
+		<French>Totem of the Sky</French>
+		<German>Totem of the Sky</German>
+		<Italian>Totem of the Sky</Italian>
+		<Spanish>Totem of the Sky</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_BEARNEW_PEDIA</Tag>
 		<English>The Age of Ice was a hostile time, pitting man against Mulcarn's reign. As the 
 tundra thawed and the Long War finally ended with the emergence of the Bannor, there were 
@@ -1729,6 +1745,22 @@ Deer totem's travels, they found the deserts of the Malakim. Followers of Lugus 
 clan, their faiths were different, but their goals of rebirth and a sort of openness were the same. 
 Learning much from the followers of the light of Lugus, and teaching in exchange, the Sky totem 
 blazed a new path of enlightenment for the clans. </Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_THREE_SISTERS_REPLICA</Tag>
+		<English>Totem of the Three Sisters (Replica)</English>
+		<French>Totem of the Three Sisters (Replica)</French>
+		<German>Totem of the Three Sisters (Replica)</German>
+		<Italian>Totem of the Three Sisters (Replica)</Italian>
+		<Spanish>Totem of the Three Sisters (Replica)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_SKY_REPLICA</Tag>
+		<English>Totem of the Sky (Replica)</English>
+		<French>Totem of the Sky (Replica)</French>
+		<German>Totem of the Sky (Replica)</German>
+		<Italian>Totem of the Sky (Replica)</Italian>
+		<Spanish>Totem of the Sky (Replica)</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TOTEM_OF_THE_EAGLE_REPLICA</Tag>

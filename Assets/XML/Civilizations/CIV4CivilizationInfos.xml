@@ -1245,7 +1245,7 @@
 					<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_EAGLE</BuildingClassType>
 					<BuildingType>BUILDING_TOTEM_OF_THE_EAGLE</BuildingType>
 				</Building>
-				<Building>
+				<Building> <!-- Deer -->
 					<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_COYOTE</BuildingClassType>
 					<BuildingType>BUILDING_TOTEM_OF_THE_COYOTE</BuildingType>
 				</Building>
@@ -1253,13 +1253,21 @@
 					<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_BEAR</BuildingClassType>
 					<BuildingType>BUILDING_TOTEM_OF_THE_BEAR</BuildingType>
 				</Building>
-				<Building>
+				<Building> <!-- Wolf -->
 					<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_SERPENT</BuildingClassType>
 					<BuildingType>BUILDING_TOTEM_OF_THE_SERPENT</BuildingType>
 				</Building>
-				<Building>
+				<Building> <!-- Long-Hair -->
 					<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_TORTOISE</BuildingClassType>
 					<BuildingType>BUILDING_TOTEM_OF_THE_TORTOISE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_THREE_SISTERS</BuildingClassType>
+					<BuildingType>BUILDING_TOTEM_OF_THE_THREE_SISTERS</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_SKY</BuildingClassType>
+					<BuildingType>BUILDING_TOTEM_OF_THE_SKY</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_WARCHIEF_HARBOR</BuildingClassType>
