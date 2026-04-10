@@ -9,7 +9,7 @@
 		<ImprovementClassInfo><!-- Wyrm Sand Harvester-->
 			<Type>IMPROVEMENTCLASS_SAND_DUST</Type>
 			<Description></Description>
-			<bUnique>1</bUnique>
+			<bUnique>0</bUnique>
 			<DefaultImprovement>IMPROVEMENT_SAND_DUST</DefaultImprovement>
 		</ImprovementClassInfo>
 	</ImprovementClassInfos>

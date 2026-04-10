@@ -16,7 +16,7 @@
 			<TechCityTrade>NONE</TechCityTrade>
 			<TechObsolete>NONE</TechObsolete>
 			<YieldChanges>
-				<iYieldChange>-3</iYieldChange>
+				<iYieldChange>0</iYieldChange>
 				<iYieldChange>0</iYieldChange>
 				<iYieldChange>1</iYieldChange>
 			</YieldChanges>
@@ -63,6 +63,7 @@
 			</CommerceModifiers>
 			<DamageType>NONE</DamageType>
 			<FreePromotion>NONE</FreePromotion>
+			<bForceOverwrite>1</bForceOverwrite>
 		</BonusInfo>
 	</BonusInfos>
 </Civ4BonusInfos>

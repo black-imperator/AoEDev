@@ -13,6 +13,11 @@
 			<ArtDefineTag>ART_DEF_IMPROVEMENT_SAND_DUST</ArtDefineTag>
 			<bWater>0</bWater>
 			<iPillageGold>15</iPillageGold>
+			<YieldChanges>
+				<iYieldChange>0</iYieldChange>
+				<iYieldChange>0</iYieldChange>
+				<iYieldChange>2</iYieldChange>
+			</YieldChanges>
 			<BonusTypeStructs>
 				<BonusTypeStruct>
 					<BonusType>BONUS_ASH</BonusType>
@@ -23,7 +28,7 @@
 					<YieldChanges>
 						<iYieldChange>0</iYieldChange>
 						<iYieldChange>0</iYieldChange>
-						<iYieldChange>2</iYieldChange>
+						<iYieldChange>0</iYieldChange>
 					</YieldChanges>
 				</BonusTypeStruct>
 			</BonusTypeStructs>
@@ -57,7 +62,7 @@
 				</TechYieldChange>
 			</TechYieldChanges>
 			<BonusConvert>BONUS_ASH</BonusConvert>
-			<iSpawnUnitChancePercentMod>-90</iSpawnUnitChancePercentMod>
+			<iSpawnUnitChancePercentMod>-20</iSpawnUnitChancePercentMod>
 			<SpawnUnitType>UNIT_SAND_WORM</SpawnUnitType>
 			<bSpawnOnlyForOwner>1</bSpawnOnlyForOwner>
 			<iSpawnAtOnceLimit>1</iSpawnAtOnceLimit>

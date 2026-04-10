@@ -251,8 +251,8 @@
 		</LeaderheadArtInfo>	
 		<LeaderheadArtInfo>
 			<Type>ART_DEF_LEADER_SIHAYA</Type>
-			<Button>,Art/interface/LeaderHeads/SandqueenButton.dds</Button>
-			<NIF>art/interface/LeaderHeads/Sandqueen.dds</NIF>
+			<Button>,Art/interface/LeaderHeads/RodolphZlehAsset.dds</Button>
+			<NIF>art/interface/LeaderHeads/RodolphZleh.dds</NIF>
 			<KFM/>
 			<NoShaderNIF/>
 			<BackgroundKFM/>

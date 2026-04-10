@@ -16624,7 +16624,7 @@
 			<Description>TXT_KEY_LEADER_SIHAYA</Description>
 			<Civilopedia>TXT_KEY_LEADER_SIHAYA_PEDIA</Civilopedia>
 			<DefeatQuote>TXT_KEY_POPUP_DEFEATED_KANE</DefeatQuote>
-			<Image>art/interface/LeaderHeads/Sandqueen.dds</Image>
+			<Image>art/interface/LeaderHeads/RodolphZleh.dds</Image>
 			<ArtDefineTag>ART_DEF_LEADER_SIHAYA</ArtDefineTag>
 			<iWonderConstructRand>0</iWonderConstructRand>
 			<iBaseAttitude>0</iBaseAttitude>
