@@ -9405,7 +9405,7 @@ bool CvUnit::spreadCorporation(CorporationTypes eCorporation)
 }
 
 
-bool CvUnit::canJoin(const CvPlot* pPlot, SpecialistTypes eSpecialist) const
+bool CvUnit::canJoin(const CvPlot* pPlot, SpecialistClassTypes eSpecialist) const
 {
 	CvCity* pCity;
 
@@ -9452,7 +9452,7 @@ bool CvUnit::canJoin(const CvPlot* pPlot, SpecialistTypes eSpecialist) const
 }
 
 
-bool CvUnit::join(SpecialistTypes eSpecialist)
+bool CvUnit::join(SpecialistClassTypes eSpecialist)
 {
 	CvCity* pCity;
 
@@ -9465,7 +9465,7 @@ bool CvUnit::join(SpecialistTypes eSpecialist)
 
 	if (pCity != NULL)
 	{
-		pCity->changeFreeSpecialistCount(eSpecialist, 1);
+		pCity->changeFreeSpecialistClassCount(eSpecialist, 1);
 	}
 
 	if (plot()->isActiveVisible(false))

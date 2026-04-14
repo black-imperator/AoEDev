@@ -1420,6 +1420,14 @@
 		<Spanish>Replaces [LINK=literal]%s1_default_building[\LINK]</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_REPLACES_SPECIALIST</Tag>
+		<English>Replaces [LINK=literal]%s1_default_specialist[\LINK]</English>
+		<French>Remplace [LINK=literal]%s1_default_specialist[\LINK]</French>
+		<German>Ersetzt [LINK=literal]%s1_default_specialist[\LINK]</German>
+		<Italian>Replaces [LINK=literal]%s1_default_specialist[\LINK]</Italian>
+		<Spanish>Replaces [LINK=literal]%s1_default_specialist[\LINK]</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_REPLACES_IMPROVEMENT</Tag>
 		<English>Replaces [LINK=literal]%s1_default_building[\LINK]</English>
 		<French>Remplace [LINK=literal]%s1_default_building[\LINK]</French>
@@ -1883,6 +1891,14 @@
 		<German>Einzigartiges Gebäude für [LINK=literal]%s1_civ[\LINK]</German>
 		<Italian>Unique Building for [LINK=literal]%s1_civ[\LINK]</Italian>
 		<Spanish>Unique Building for [LINK=literal]%s1_civ[\LINK]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIQUE_SPECIALIST</Tag>
+		<English>Unique Specialist for [LINK=literal]%s1_civ[\LINK]</English>
+		<French>Unique Specialist pour [LINK=literal]%s1_civ[\LINK]</French>
+		<German>Unique Specialist für [LINK=literal]%s1_civ[\LINK]</German>
+		<Italian>Unique Specialist for [LINK=literal]%s1_civ[\LINK]</Italian>
+		<Spanish>Unique Specialist for [LINK=literal]%s1_civ[\LINK]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIQUE_IMPROVEMENT</Tag>

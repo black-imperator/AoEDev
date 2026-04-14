@@ -1105,7 +1105,7 @@ void CyInfoPythonInterface1()
 
 		.def("isHurry", &CvCivicInfo::isHurry, "bool (int i)")
 		.def("isSpecialBuildingNotRequired", &CvCivicInfo::isSpecialBuildingNotRequired, "bool (int i)")
-		.def("isSpecialistValid", &CvCivicInfo::isSpecialistValid, "bool (int i)")
+		.def("isSpecialistClassValid", &CvCivicInfo::isSpecialistClassValid, "bool (int i)")
 
 		.def("getImprovementYieldChanges", &CvCivicInfo::getImprovementYieldChanges, "int (int i, int j)")
 
@@ -1380,16 +1380,16 @@ void CyInfoPythonInterface1()
 		/**	GWSLocalSpecialist																	Milaga	**/
 		/** Buildings can change give bonuses to specialists in only one city							**/
 		/*************************************************************************************************/
-		.def("getLocalSpecialistCommerceChange", &CvBuildingInfo::getLocalSpecialistCommerceChange, "int (int iSpecialist, int iCommerce)")
-		.def("getLocalSpecialistYieldChange", &CvBuildingInfo::getLocalSpecialistYieldChange, "int (int iSpecialist, int iYield)")
-		.def("getLocalSpecialistHappinessChange", &CvBuildingInfo::getLocalSpecialistYieldChange, "int (int iSpecialist)")
-		.def("getLocalSpecialistHealthChange", &CvBuildingInfo::getLocalSpecialistYieldChange, "int (int iSpecialist)")
-		.def("getLocalSpecialistGPPChange", &CvBuildingInfo::getLocalSpecialistYieldChange, "int (int iSpecialist)")
+		.def("getLocalSpecialistClassCommerceChange", &CvBuildingInfo::getLocalSpecialistClassCommerceChange, "int (int iSpecialistClass, int iCommerce)")
+		.def("getLocalSpecialistClassYieldChange", &CvBuildingInfo::getLocalSpecialistClassYieldChange, "int (int iSpecialistClass, int iYield)")
+		.def("getLocalSpecialistClassHappinessChange", &CvBuildingInfo::getLocalSpecialistClassHappinessChange, "int (int iSpecialistClass)")
+		.def("getLocalSpecialistClassHealthChange", &CvBuildingInfo::getLocalSpecialistClassHealthChange, "int (int iSpecialistClass)")
+		.def("getLocalSpecialistClassGPPChange", &CvBuildingInfo::getLocalSpecialistClassGPPChange, "int (int iSpecialistClass)")
 		/*************************************************************************************************/
 		/**	GWSLocalSpecialist																		END	**/
 		/*************************************************************************************************/
-		.def("getSpecialistCount", &CvBuildingInfo::getSpecialistCount, "int (int i)")
-		.def("getFreeSpecialistCount", &CvBuildingInfo::getFreeSpecialistCount, "int (int i)")
+		.def("getSpecialistClassCount", &CvBuildingInfo::getSpecialistClassCount, "int (int i)")
+		.def("getFreeSpecialistClassCount", &CvBuildingInfo::getFreeSpecialistClassCount, "int (int i)")
 		.def("getBonusHealthChanges", &CvBuildingInfo::getBonusHealthChanges, "int (int i)")
 		.def("getBonusHappinessChanges", &CvBuildingInfo::getBonusHappinessChanges, "int (int i)")
 		.def("getBonusProductionModifier", &CvBuildingInfo::getBonusProductionModifier, "int (int i)")
@@ -1405,13 +1405,13 @@ void CyInfoPythonInterface1()
 		.def("getPrereqAtRangeBuildingClass", &CvBuildingInfo::getPrereqBuildingClassAtRange, "int (int i)")
 		.def("getBuildingExclude", &CvBuildingInfo::getBuildingExclude, "int (int i)")
 		.def("getFlavorValue", &CvBuildingInfo::getFlavorValue, "int (int i)")
-		.def("getImprovementFreeSpecialist", &CvBuildingInfo::getImprovementFreeSpecialist, "int (int i)")
+		.def("getImprovementFreeSpecialistClass", &CvBuildingInfo::getImprovementFreeSpecialistClass, "int (int i)")
 
 		.def("isCommerceFlexible", &CvBuildingInfo::isCommerceFlexible, "bool (int i)")
 		.def("isCommerceChangeOriginalOwner", &CvBuildingInfo::isCommerceChangeOriginalOwner, "bool (int i)")
 		.def("isBuildingClassNeededInCity", &CvBuildingInfo::isBuildingClassNeededInCity, "bool (int i)")
 
-		.def("getSpecialistYieldChange", &CvBuildingInfo::getSpecialistYieldChange, "int (int i, int j)")
+		.def("getSpecialistClassYieldChange", &CvBuildingInfo::getSpecialistClassYieldChange, "int (int i, int j)")
 		.def("getBonusYieldModifier", &CvBuildingInfo::getBonusYieldModifier, "int (int i, int j)")
 		.def("getBonusCommerceModifier", &CvBuildingInfo::getBonusCommerceModifier, "int (int i, int j)")
 

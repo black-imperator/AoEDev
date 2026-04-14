@@ -3746,19 +3746,19 @@ void CvDLLWidgetData::parseCitizenHelp(CvWidgetDataStruct &widgetDataStruct, CvW
 
 	if (pHeadSelectedCity != NULL)
 	{
-		if (widgetDataStruct.m_iData1 != NO_SPECIALIST)
+		if (widgetDataStruct.m_iData1 != NO_SPECIALISTCLASS)
 		{
-			GAMETEXT.parseSpecialistHelp(szBuffer, ((SpecialistTypes)(widgetDataStruct.m_iData1)), pHeadSelectedCity);
+			GAMETEXT.parseSpecialistHelp(szBuffer, (pHeadSelectedCity->getSpecialistTypeFromClass((SpecialistClassTypes)widgetDataStruct.m_iData1)), pHeadSelectedCity);
 
 			if (widgetDataStruct.m_iData2 != -1)
 			{
 				iCount = 0;
 
-				for (iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
+				for (iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 				{
 					if (iI < widgetDataStruct.m_iData1)
 					{
-						iCount += pHeadSelectedCity->getSpecialistCount((SpecialistTypes)iI);
+						iCount += pHeadSelectedCity->getSpecialistClassCount((SpecialistClassTypes)iI);
 					}
 					else if (iI == widgetDataStruct.m_iData1)
 					{
@@ -3809,11 +3809,11 @@ void CvDLLWidgetData::parseDisabledCitizenHelp(CvWidgetDataStruct &widgetDataStr
 
 	if (pHeadSelectedCity != NULL)
 	{
-		if (widgetDataStruct.m_iData1 != NO_SPECIALIST)
+		if (widgetDataStruct.m_iData1 != NO_SPECIALISTCLASS)
 		{
-			GAMETEXT.parseSpecialistHelp(szBuffer, ((SpecialistTypes)(widgetDataStruct.m_iData1)), pHeadSelectedCity);
+			GAMETEXT.parseSpecialistHelp(szBuffer, pHeadSelectedCity->getSpecialistTypeFromClass((SpecialistClassTypes)(widgetDataStruct.m_iData1)), pHeadSelectedCity);
 
-			if (!(pHeadSelectedCity->isSpecialistValid(((SpecialistTypes)(widgetDataStruct.m_iData1)), 1)))
+			if (!(pHeadSelectedCity->isSpecialistClassValid(((SpecialistClassTypes)(widgetDataStruct.m_iData1)), 1)))
 			{
 				bFirst = true;
 
@@ -3823,7 +3823,7 @@ void CvDLLWidgetData::parseDisabledCitizenHelp(CvWidgetDataStruct &widgetDataStr
 
 					if (eLoopBuilding != NO_BUILDING)
 					{
-						if (GC.getBuildingInfo(eLoopBuilding).getSpecialistCount(widgetDataStruct.m_iData1) > 0)
+						if (GC.getBuildingInfo(eLoopBuilding).getSpecialistClassCount(widgetDataStruct.m_iData1) > 0)
 						{
 							if ((pHeadSelectedCity->getNumBuilding(eLoopBuilding) <= 0) && !isLimitedWonderClass((BuildingClassTypes)iI))
 							{
@@ -3876,26 +3876,26 @@ void CvDLLWidgetData::parseChangeSpecialistHelp(CvWidgetDataStruct &widgetDataSt
 		{
 			GAMETEXT.parseSpecialistHelp(szBuffer, ((SpecialistTypes)(widgetDataStruct.m_iData1)), pHeadSelectedCity);
 
-			if (widgetDataStruct.m_iData1 != GC.getDefineINT("DEFAULT_SPECIALIST"))
+			if (widgetDataStruct.m_iData1 != GC.getDefineINT("DEFAULT_SPECIALISTCLASS"))
 			{
-				if (!(GET_PLAYER(pHeadSelectedCity->getOwnerINLINE()).isSpecialistValid((SpecialistTypes)(widgetDataStruct.m_iData1))))
+				if (!(GET_PLAYER(pHeadSelectedCity->getOwnerINLINE()).isSpecialistClassValid((SpecialistClassTypes)(widgetDataStruct.m_iData1))))
 				{
-					if (pHeadSelectedCity->getMaxSpecialistCount((SpecialistTypes)(widgetDataStruct.m_iData1)) > 0)
+					if (pHeadSelectedCity->getMaxSpecialistClassCount((SpecialistClassTypes)(widgetDataStruct.m_iData1)) > 0)
 					{
 						szBuffer.append(NEWLINE);
-						szBuffer.append(gDLL->getText("TXT_KEY_MISC_MAX_SPECIALISTS", pHeadSelectedCity->getMaxSpecialistCount((SpecialistTypes)(widgetDataStruct.m_iData1))));
+						szBuffer.append(gDLL->getText("TXT_KEY_MISC_MAX_SPECIALISTS", pHeadSelectedCity->getMaxSpecialistClassCount((SpecialistClassTypes)(widgetDataStruct.m_iData1))));
 					}
 				}
 			}
 		}
 		else
 		{
-			szBuffer.assign(gDLL->getText("TXT_KEY_MISC_REMOVE_SPECIALIST", GC.getSpecialistInfo((SpecialistTypes) widgetDataStruct.m_iData1).getTextKeyWide()));
+			szBuffer.assign(gDLL->getText("TXT_KEY_MISC_REMOVE_SPECIALIST", GC.getSpecialistInfo(pHeadSelectedCity->getSpecialistTypeFromClass((SpecialistClassTypes) widgetDataStruct.m_iData1)).getTextKeyWide()));
 
-			if (pHeadSelectedCity->getForceSpecialistCount((SpecialistTypes)(widgetDataStruct.m_iData1)) > 0)
+			if (pHeadSelectedCity->getForceSpecialistClassCount((SpecialistClassTypes)(widgetDataStruct.m_iData1)) > 0)
 			{
 				szBuffer.append(NEWLINE);
-				szBuffer.append(gDLL->getText("TXT_KEY_MISC_FORCED_SPECIALIST", pHeadSelectedCity->getForceSpecialistCount((SpecialistTypes)(widgetDataStruct.m_iData1))));
+				szBuffer.append(gDLL->getText("TXT_KEY_MISC_FORCED_SPECIALIST", pHeadSelectedCity->getForceSpecialistClassCount((SpecialistClassTypes)(widgetDataStruct.m_iData1))));
 			}
 		}
 	}

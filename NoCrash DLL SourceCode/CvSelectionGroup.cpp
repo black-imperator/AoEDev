@@ -980,7 +980,7 @@ bool CvSelectionGroup::canStartMission(int iMission, int iData1, int iData2, CvP
 			break;
 
 		case MISSION_JOIN:
-			if (pLoopUnit->canJoin(pPlot, ((SpecialistTypes)iData1)))
+			if (pLoopUnit->canJoin(pPlot, ((SpecialistClassTypes)iData1)))
 			{
 				return true;
 			}
@@ -1647,7 +1647,7 @@ void CvSelectionGroup::startMission()
 						break;
 
 					case MISSION_JOIN:
-						if (pLoopUnit->join((SpecialistTypes)(headMissionQueueNode()->m_data.iData1)))
+						if (pLoopUnit->join((SpecialistClassTypes)(headMissionQueueNode()->m_data.iData1)))
 						{
 							bAction = true;
 						}

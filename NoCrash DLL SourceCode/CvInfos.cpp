@@ -15106,7 +15106,7 @@ int CvUnitInfo::getFeaturePassableTech(int i) const
 
 bool CvUnitInfo::getGreatPeoples(int i) const
 {
-	FAssertMsg(i < GC.getNumSpecialistInfos(), "Index out of bounds");
+	FAssertMsg(i < GC.getNumSpecialistClassInfos(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
 	return m_pbGreatPeoples ? m_pbGreatPeoples[i] : false;
 }
@@ -15928,8 +15928,8 @@ void CvUnitInfo::read(FDataStreamBase* stream)
 	stream->Read(GC.getNumFeatureInfos(), m_piFeaturePassableTech);
 
 	SAFE_DELETE_ARRAY(m_pbGreatPeoples);
-	m_pbGreatPeoples = new bool[GC.getNumSpecialistInfos()];
-	stream->Read(GC.getNumSpecialistInfos(), m_pbGreatPeoples);
+	m_pbGreatPeoples = new bool[GC.getNumSpecialistClassInfos()];
+	stream->Read(GC.getNumSpecialistClassInfos(), m_pbGreatPeoples);
 
 	SAFE_DELETE_ARRAY(m_pbBuildings);
 	m_pbBuildings = new bool[GC.getNumBuildingInfos()];
@@ -16445,7 +16445,7 @@ void CvUnitInfo::write(FDataStreamBase* stream)
 	stream->Write(GC.getNumCorporationInfos(), m_piCorporationSpreads);
 	stream->Write(GC.getNumTerrainInfos(), m_piTerrainPassableTech);
 	stream->Write(GC.getNumFeatureInfos(), m_piFeaturePassableTech);
-	stream->Write(GC.getNumSpecialistInfos(), m_pbGreatPeoples);
+	stream->Write(GC.getNumSpecialistClassInfos(), m_pbGreatPeoples);
 	stream->Write(GC.getNumBuildingInfos(), m_pbBuildings);
 	stream->Write(GC.getNumTerrainInfos(), m_pbTerrainNative);
 	stream->Write(GC.getNumFeatureInfos(), m_pbFeatureNative);
@@ -16676,7 +16676,7 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	}
 	SAFE_DELETE_ARRAY(pszTemp);
 
-	pXML->SetVariableListTagPair(&m_pbGreatPeoples, "GreatPeoples", sizeof(GC.getSpecialistInfo((SpecialistTypes)0)), GC.getNumSpecialistInfos());
+	pXML->SetVariableListTagPair(&m_pbGreatPeoples, "GreatPeoples", sizeof(GC.getSpecialistClassInfo((SpecialistClassTypes)0)), GC.getNumSpecialistClassInfos());
 
 	pXML->SetVariableListTagPair(&m_pbBuildings, "Buildings", sizeof(GC.getBuildingInfo((BuildingTypes)0)), GC.getNumBuildingInfos());
 
@@ -17721,7 +17721,7 @@ void CvUnitInfo::copyNonDefaults(CvUnitInfo* pClassInfo, CvXMLLoadUtility* pXML)
 	{
 		if(getFlavorValue(i)				== false)			m_piFlavorValue[i]					= pClassInfo->getFlavorValue(i);
 	}
-	for ( int i = 0; i < GC.getNumSpecialistInfos(); i++)
+	for ( int i = 0; i < GC.getNumSpecialistClassInfos(); i++)
 	{
 		if(getGreatPeoples(i)				== false)			m_pbGreatPeoples[i]					= pClassInfo->getGreatPeoples(i);
 	}
@@ -18559,18 +18559,18 @@ m_piSpecialistExtraCommerce(NULL),
 m_paiBuildingHappinessChanges(NULL),
 m_paiBuildingHealthChanges(NULL),
 m_paiFeatureHappinessChanges(NULL),
-m_paiSpecialistCrimeChanges(NULL),
-m_paiSpecialistGPPChanges(NULL),
+m_paiSpecialistClassCrimeChanges(NULL),
+m_paiSpecialistClassGPPChanges(NULL),
 m_pabHurry(NULL),
 m_pabSpecialBuildingNotRequired(NULL),
-m_pabSpecialistValid(NULL),
-m_pabSpecialistUnlimited(NULL),
-m_piSpecialistCount(NULL),
-m_piFreeSpecialistCount(NULL),
+m_pabSpecialistClassValid(NULL),
+m_pabSpecialistClassUnlimited(NULL),
+m_piSpecialistClassCount(NULL),
+m_piFreeSpecialistClassCount(NULL),
 m_ppiImprovementYieldChanges(NULL),
 
-m_ppiSpecialistYieldChanges(NULL),
-m_ppiSpecialistCommerceChanges(NULL),
+m_ppiSpecialistClassYieldChanges(NULL),
+m_ppiSpecialistClassCommerceChanges(NULL),
 /*************************************************************************************************/
 /**	New Tag Defs	(CivicInfos)			05/15/08								Xienwolf	**/
 /**																								**/
@@ -18675,14 +18675,14 @@ CvCivicInfo::~CvCivicInfo()
 	SAFE_DELETE_ARRAY(m_paiBuildingHappinessChanges);
 	SAFE_DELETE_ARRAY(m_paiBuildingHealthChanges);
 	SAFE_DELETE_ARRAY(m_paiFeatureHappinessChanges);
-	SAFE_DELETE_ARRAY(m_paiSpecialistCrimeChanges);
-	SAFE_DELETE_ARRAY(m_paiSpecialistGPPChanges);
+	SAFE_DELETE_ARRAY(m_paiSpecialistClassCrimeChanges);
+	SAFE_DELETE_ARRAY(m_paiSpecialistClassGPPChanges);
 	SAFE_DELETE_ARRAY(m_pabHurry);
 	SAFE_DELETE_ARRAY(m_pabSpecialBuildingNotRequired);
-	SAFE_DELETE_ARRAY(m_piSpecialistCount);
-	SAFE_DELETE_ARRAY(m_piFreeSpecialistCount);
-	SAFE_DELETE_ARRAY(m_pabSpecialistValid);
-	SAFE_DELETE_ARRAY(m_pabSpecialistUnlimited);
+	SAFE_DELETE_ARRAY(m_piSpecialistClassCount);
+	SAFE_DELETE_ARRAY(m_piFreeSpecialistClassCount);
+	SAFE_DELETE_ARRAY(m_pabSpecialistClassValid);
+	SAFE_DELETE_ARRAY(m_pabSpecialistClassUnlimited);
 	if (m_ppiImprovementYieldChanges != NULL)
 	{
 		for (iI=0;iI<GC.getNumImprovementInfos();iI++)
@@ -18691,21 +18691,21 @@ CvCivicInfo::~CvCivicInfo()
 		}
 		SAFE_DELETE_ARRAY(m_ppiImprovementYieldChanges);
 	}
-	if (m_ppiSpecialistYieldChanges != NULL)
+	if (m_ppiSpecialistClassYieldChanges != NULL)
 	{
-		for (iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
+		for (iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 		{
-			SAFE_DELETE_ARRAY(m_ppiSpecialistYieldChanges[iI]);
+			SAFE_DELETE_ARRAY(m_ppiSpecialistClassYieldChanges[iI]);
 		}
-		SAFE_DELETE_ARRAY(m_ppiSpecialistYieldChanges);
+		SAFE_DELETE_ARRAY(m_ppiSpecialistClassYieldChanges);
 	}
-	if (m_ppiSpecialistCommerceChanges != NULL)
+	if (m_ppiSpecialistClassCommerceChanges != NULL)
 	{
-		for (iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
+		for (iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 		{
-			SAFE_DELETE_ARRAY(m_ppiSpecialistCommerceChanges[iI]);
+			SAFE_DELETE_ARRAY(m_ppiSpecialistClassCommerceChanges[iI]);
 		}
-		SAFE_DELETE_ARRAY(m_ppiSpecialistCommerceChanges);
+		SAFE_DELETE_ARRAY(m_ppiSpecialistClassCommerceChanges);
 	}
 }
 
@@ -19307,18 +19307,18 @@ int CvCivicInfo::getFeatureHappinessChanges(int i) const
 	return m_paiFeatureHappinessChanges ? m_paiFeatureHappinessChanges[i] : -1;
 }
 
-int CvCivicInfo::getSpecialistCrimeChanges(int i) const
+int CvCivicInfo::getSpecialistClassCrimeChanges(int i) const
 {
-	FAssertMsg(i < GC.getNumSpecialistInfos(), "Index out of bounds");
+	FAssertMsg(i < GC.getNumSpecialistClassInfos(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
-	return m_paiSpecialistCrimeChanges ? m_paiSpecialistCrimeChanges[i] : -1;
+	return m_paiSpecialistClassCrimeChanges ? m_paiSpecialistClassCrimeChanges[i] : -1;
 }
 
-int CvCivicInfo::getSpecialistGPPChanges(int i) const
+int CvCivicInfo::getSpecialistClassGPPChanges(int i) const
 {
-	FAssertMsg(i < GC.getNumSpecialistInfos(), "Index out of bounds");
+	FAssertMsg(i < GC.getNumSpecialistClassInfos(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
-	return m_paiSpecialistGPPChanges ? m_paiSpecialistGPPChanges[i] : -1;
+	return m_paiSpecialistClassGPPChanges ? m_paiSpecialistClassGPPChanges[i] : -1;
 }
 
 bool CvCivicInfo::isHurry(int i) const
@@ -19335,33 +19335,33 @@ bool CvCivicInfo::isSpecialBuildingNotRequired(int i) const
 	return m_pabSpecialBuildingNotRequired ? m_pabSpecialBuildingNotRequired[i] : false;
 }
 
-bool CvCivicInfo::isSpecialistValid(int i) const
+bool CvCivicInfo::isSpecialistClassValid(int i) const
 {
-	FAssertMsg(i < GC.getNumSpecialistInfos(), "Index out of bounds");
+	FAssertMsg(i < GC.getNumSpecialistClassInfos(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
-	return m_pabSpecialistValid ? m_pabSpecialistValid[i] : false;
+	return m_pabSpecialistClassValid ? m_pabSpecialistClassValid[i] : false;
 }
 
-int CvCivicInfo::getSpecialistCount(int i) const
+int CvCivicInfo::getSpecialistClassCount(int i) const
 {
-	FAssertMsg(i < GC.getNumSpecialistInfos(), "Index out of bounds");
+	FAssertMsg(i < GC.getNumSpecialistClassInfos(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
-	return m_piSpecialistCount ? m_piSpecialistCount[i] : 0;
+	return m_piSpecialistClassCount ? m_piSpecialistClassCount[i] : 0;
 }
 
-int CvCivicInfo::getFreeSpecialistCount(int i) const
+int CvCivicInfo::getFreeSpecialistClassCount(int i) const
 {
-	FAssertMsg(i < GC.getNumSpecialistInfos(), "Index out of bounds");
+	FAssertMsg(i < GC.getNumSpecialistClassInfos(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
-	return m_piFreeSpecialistCount ? m_piFreeSpecialistCount[i] : 0;
+	return m_piFreeSpecialistClassCount ? m_piFreeSpecialistClassCount[i] : 0;
 }
 
 
-bool CvCivicInfo::isSpecialistUnlimited(int i) const
+bool CvCivicInfo::isSpecialistClassUnlimited(int i) const
 {
-	FAssertMsg(i < GC.getNumSpecialistInfos(), "Index out of bounds");
+	FAssertMsg(i < GC.getNumSpecialistClassInfos(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
-	return m_pabSpecialistUnlimited ? m_pabSpecialistUnlimited[i] : false;
+	return m_pabSpecialistClassUnlimited ? m_pabSpecialistClassUnlimited[i] : false;
 }
 int CvCivicInfo::getImprovementYieldChanges(int i, int j) const
 {
@@ -19371,36 +19371,36 @@ int CvCivicInfo::getImprovementYieldChanges(int i, int j) const
 	FAssertMsg(j > -1, "Index out of bounds");
 	return m_ppiImprovementYieldChanges[i][j];
 }
-int CvCivicInfo::getSpecialistYieldChanges(int i, int j) const
+int CvCivicInfo::getSpecialistClassYieldChanges(int i, int j) const
 {
-	FAssertMsg(i < GC.getNumSpecialistInfos(), "Index out of bounds");
+	FAssertMsg(i < GC.getNumSpecialistClassInfos(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
 	FAssertMsg(j < NUM_YIELD_TYPES, "Index out of bounds");
 	FAssertMsg(j > -1, "Index out of bounds");
-	return m_ppiSpecialistYieldChanges ? m_ppiSpecialistYieldChanges[i][j] : -1;
+	return m_ppiSpecialistClassYieldChanges ? m_ppiSpecialistClassYieldChanges[i][j] : -1;
 }
 
-int* CvCivicInfo::getSpecialistYieldChangeArray(int i) const
+int* CvCivicInfo::getSpecialistClassYieldChangeArray(int i) const
 {
-	FAssertMsg(i < GC.getNumSpecialistInfos(), "Index out of bounds");
+	FAssertMsg(i < GC.getNumSpecialistClassInfos(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
-	return m_ppiSpecialistYieldChanges[i];
+	return m_ppiSpecialistClassYieldChanges[i];
 }
 
-int CvCivicInfo::getSpecialistCommerceChanges(int i, int j) const
+int CvCivicInfo::getSpecialistClassCommerceChanges(int i, int j) const
 {
-	FAssertMsg(i < GC.getNumSpecialistInfos(), "Index out of bounds");
+	FAssertMsg(i < GC.getNumSpecialistClassInfos(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
 	FAssertMsg(j < NUM_COMMERCE_TYPES, "Index out of bounds");
 	FAssertMsg(j > -1, "Index out of bounds");
-	return m_ppiSpecialistCommerceChanges ? m_ppiSpecialistCommerceChanges[i][j] : -1;
+	return m_ppiSpecialistClassCommerceChanges ? m_ppiSpecialistClassCommerceChanges[i][j] : -1;
 }
 
-int* CvCivicInfo::getSpecialistCommerceChangeArray(int i) const
+int* CvCivicInfo::getSpecialistClassCommerceChangeArray(int i) const
 {
-	FAssertMsg(i < GC.getNumSpecialistInfos(), "Index out of bounds");
+	FAssertMsg(i < GC.getNumSpecialistClassInfos(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
-	return m_ppiSpecialistCommerceChanges[i];
+	return m_ppiSpecialistClassCommerceChanges[i];
 }
 
 
@@ -19606,13 +19606,13 @@ void CvCivicInfo::read(FDataStreamBase* stream)
 	m_paiFeatureHappinessChanges = new int[GC.getNumFeatureInfos()];
 	stream->Read(GC.getNumFeatureInfos(), m_paiFeatureHappinessChanges);
 
-	SAFE_DELETE_ARRAY(m_paiSpecialistCrimeChanges);
-	m_paiSpecialistCrimeChanges = new int[GC.getNumSpecialistInfos()];
-	stream->Read(GC.getNumSpecialistInfos(), m_paiSpecialistCrimeChanges);
+	SAFE_DELETE_ARRAY(m_paiSpecialistClassCrimeChanges);
+	m_paiSpecialistClassCrimeChanges = new int[GC.getNumSpecialistClassInfos()];
+	stream->Read(GC.getNumSpecialistClassInfos(), m_paiSpecialistClassCrimeChanges);
 
-	SAFE_DELETE_ARRAY(m_paiSpecialistGPPChanges);
-	m_paiSpecialistGPPChanges = new int[GC.getNumSpecialistInfos()];
-	stream->Read(GC.getNumSpecialistInfos(), m_paiSpecialistGPPChanges);
+	SAFE_DELETE_ARRAY(m_paiSpecialistClassGPPChanges);
+	m_paiSpecialistClassGPPChanges = new int[GC.getNumSpecialistClassInfos()];
+	stream->Read(GC.getNumSpecialistClassInfos(), m_paiSpecialistClassGPPChanges);
 
 
 	SAFE_DELETE_ARRAY(m_pabHurry);
@@ -19623,21 +19623,21 @@ void CvCivicInfo::read(FDataStreamBase* stream)
 	m_pabSpecialBuildingNotRequired = new bool[GC.getNumSpecialBuildingInfos()];
 	stream->Read(GC.getNumSpecialBuildingInfos(), m_pabSpecialBuildingNotRequired);
 
-	SAFE_DELETE_ARRAY(m_pabSpecialistValid);
-	m_pabSpecialistValid = new bool[GC.getNumSpecialistInfos()];
-	stream->Read(GC.getNumSpecialistInfos(), m_pabSpecialistValid);
+	SAFE_DELETE_ARRAY(m_pabSpecialistClassValid);
+	m_pabSpecialistClassValid = new bool[GC.getNumSpecialistClassInfos()];
+	stream->Read(GC.getNumSpecialistClassInfos(), m_pabSpecialistClassValid);
 
-	SAFE_DELETE_ARRAY(m_piFreeSpecialistCount);
-	m_piFreeSpecialistCount = new int[GC.getNumSpecialistInfos()];
-	stream->Read(GC.getNumSpecialistInfos(), m_piFreeSpecialistCount);
+	SAFE_DELETE_ARRAY(m_piFreeSpecialistClassCount);
+	m_piFreeSpecialistClassCount = new int[GC.getNumSpecialistClassInfos()];
+	stream->Read(GC.getNumSpecialistClassInfos(), m_piFreeSpecialistClassCount);
 
-	SAFE_DELETE_ARRAY(m_piSpecialistCount);
-	m_piSpecialistCount = new int[GC.getNumSpecialistInfos()];
-	stream->Read(GC.getNumSpecialistInfos(), m_piSpecialistCount);
+	SAFE_DELETE_ARRAY(m_piSpecialistClassCount);
+	m_piSpecialistClassCount = new int[GC.getNumSpecialistClassInfos()];
+	stream->Read(GC.getNumSpecialistClassInfos(), m_piSpecialistClassCount);
 	
-	SAFE_DELETE_ARRAY(m_pabSpecialistUnlimited);
-	m_pabSpecialistUnlimited = new bool[GC.getNumSpecialistInfos()];
-	stream->Read(GC.getNumSpecialistInfos(), m_pabSpecialistUnlimited);
+	SAFE_DELETE_ARRAY(m_pabSpecialistClassUnlimited);
+	m_pabSpecialistClassUnlimited = new bool[GC.getNumSpecialistClassInfos()];
+	stream->Read(GC.getNumSpecialistClassInfos(), m_pabSpecialistClassUnlimited);
 
 	int i;
 	if (m_ppiImprovementYieldChanges != NULL)
@@ -19655,34 +19655,34 @@ void CvCivicInfo::read(FDataStreamBase* stream)
 		stream->Read(NUM_YIELD_TYPES, m_ppiImprovementYieldChanges[i]);
 	}
 
-	if (m_ppiSpecialistYieldChanges != NULL)
+	if (m_ppiSpecialistClassYieldChanges != NULL)
 	{
-		for (i = 0; i < GC.getNumSpecialistInfos(); i++)
+		for (i = 0; i < GC.getNumSpecialistClassInfos(); i++)
 		{
-			SAFE_DELETE_ARRAY(m_ppiSpecialistYieldChanges[i]);
+			SAFE_DELETE_ARRAY(m_ppiSpecialistClassYieldChanges[i]);
 		}
-		SAFE_DELETE_ARRAY(m_ppiSpecialistYieldChanges);
+		SAFE_DELETE_ARRAY(m_ppiSpecialistClassYieldChanges);
 	}
-	m_ppiSpecialistYieldChanges = new int* [GC.getNumSpecialistInfos()];
-	for (i = 0; i < GC.getNumSpecialistInfos(); i++)
+	m_ppiSpecialistClassYieldChanges = new int* [GC.getNumSpecialistClassInfos()];
+	for (i = 0; i < GC.getNumSpecialistClassInfos(); i++)
 	{
-		m_ppiSpecialistYieldChanges[i] = new int[NUM_YIELD_TYPES];
-		stream->Read(NUM_YIELD_TYPES, m_ppiSpecialistYieldChanges[i]);
+		m_ppiSpecialistClassYieldChanges[i] = new int[NUM_YIELD_TYPES];
+		stream->Read(NUM_YIELD_TYPES, m_ppiSpecialistClassYieldChanges[i]);
 	}
 
-	if (m_ppiSpecialistCommerceChanges != NULL)
+	if (m_ppiSpecialistClassCommerceChanges != NULL)
 	{
-		for (i = 0; i < GC.getNumSpecialistInfos(); i++)
+		for (i = 0; i < GC.getNumSpecialistClassInfos(); i++)
 		{
-			SAFE_DELETE_ARRAY(m_ppiSpecialistCommerceChanges[i]);
+			SAFE_DELETE_ARRAY(m_ppiSpecialistClassCommerceChanges[i]);
 		}
-		SAFE_DELETE_ARRAY(m_ppiSpecialistCommerceChanges);
+		SAFE_DELETE_ARRAY(m_ppiSpecialistClassCommerceChanges);
 	}
-	m_ppiSpecialistCommerceChanges = new int* [GC.getNumSpecialistInfos()];
-	for (i = 0; i < GC.getNumSpecialistInfos(); i++)
+	m_ppiSpecialistClassCommerceChanges = new int* [GC.getNumSpecialistClassInfos()];
+	for (i = 0; i < GC.getNumSpecialistClassInfos(); i++)
 	{
-		m_ppiSpecialistCommerceChanges[i] = new int[NUM_COMMERCE_TYPES];
-		stream->Read(NUM_COMMERCE_TYPES, m_ppiSpecialistCommerceChanges[i]);
+		m_ppiSpecialistClassCommerceChanges[i] = new int[NUM_COMMERCE_TYPES];
+		stream->Read(NUM_COMMERCE_TYPES, m_ppiSpecialistClassCommerceChanges[i]);
 	}
 
 	stream->ReadString(m_szWeLoveTheKingKey);
@@ -19851,14 +19851,14 @@ void CvCivicInfo::write(FDataStreamBase* stream)
 	stream->Write(GC.getNumBuildingClassInfos(), m_paiBuildingHappinessChanges);
 	stream->Write(GC.getNumBuildingClassInfos(), m_paiBuildingHealthChanges);
 	stream->Write(GC.getNumFeatureInfos(), m_paiFeatureHappinessChanges);
-	stream->Write(GC.getNumSpecialistInfos(), m_paiSpecialistCrimeChanges);
-	stream->Write(GC.getNumSpecialistInfos(), m_paiSpecialistGPPChanges);
+	stream->Write(GC.getNumSpecialistClassInfos(), m_paiSpecialistClassCrimeChanges);
+	stream->Write(GC.getNumSpecialistClassInfos(), m_paiSpecialistClassGPPChanges);
 	stream->Write(GC.getNumHurryInfos(), m_pabHurry);
 	stream->Write(GC.getNumSpecialBuildingInfos(), m_pabSpecialBuildingNotRequired);
-	stream->Write(GC.getNumSpecialistInfos(), m_pabSpecialistValid);
-	stream->Write(GC.getNumSpecialistInfos(), m_pabSpecialistUnlimited);
-	stream->Write(GC.getNumSpecialistInfos(), m_piFreeSpecialistCount);
-	stream->Write(GC.getNumSpecialistInfos(), m_piSpecialistCount);
+	stream->Write(GC.getNumSpecialistClassInfos(), m_pabSpecialistClassValid);
+	stream->Write(GC.getNumSpecialistClassInfos(), m_pabSpecialistClassUnlimited);
+	stream->Write(GC.getNumSpecialistClassInfos(), m_piFreeSpecialistClassCount);
+	stream->Write(GC.getNumSpecialistClassInfos(), m_piSpecialistClassCount);
 
 	int i;
 	for(i=0;i<GC.getNumImprovementInfos();i++)
@@ -19866,13 +19866,13 @@ void CvCivicInfo::write(FDataStreamBase* stream)
 		stream->Write(NUM_YIELD_TYPES, m_ppiImprovementYieldChanges[i]);
 	}
 
-	for (i = 0; i < GC.getNumSpecialistInfos(); i++)
+	for (i = 0; i < GC.getNumSpecialistClassInfos(); i++)
 	{
-		stream->Write(NUM_YIELD_TYPES, m_ppiSpecialistYieldChanges[i]);
+		stream->Write(NUM_YIELD_TYPES, m_ppiSpecialistClassYieldChanges[i]);
 	}
-	for (i = 0; i < GC.getNumSpecialistInfos(); i++)
+	for (i = 0; i < GC.getNumSpecialistClassInfos(); i++)
 	{
-		stream->Write(NUM_COMMERCE_TYPES, m_ppiSpecialistCommerceChanges[i]);
+		stream->Write(NUM_COMMERCE_TYPES, m_ppiSpecialistClassCommerceChanges[i]);
 	}
 
 
@@ -20070,16 +20070,16 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 
 	pXML->SetVariableListTagPair(&m_pabHurry, "Hurrys", sizeof(GC.getHurryInfo((HurryTypes)0)), GC.getNumHurryInfos());
 	pXML->SetVariableListTagPair(&m_pabSpecialBuildingNotRequired, "SpecialBuildingNotRequireds", sizeof(GC.getSpecialBuildingInfo((SpecialBuildingTypes)0)), GC.getNumSpecialBuildingInfos());
-	pXML->SetVariableListTagPair(&m_pabSpecialistValid, "SpecialistValids", sizeof(GC.getSpecialistInfo((SpecialistTypes)0)), GC.getNumSpecialistInfos());
-	pXML->SetVariableListTagPair(&m_pabSpecialistUnlimited, "SpecialistUnlimiteds", sizeof(GC.getSpecialistInfo((SpecialistTypes)0)), GC.getNumSpecialistInfos());
-	pXML->SetVariableListTagPair(&m_piFreeSpecialistCount, "FreeSpecialistCounts", sizeof(GC.getSpecialistInfo((SpecialistTypes)0)), GC.getNumSpecialistInfos());
-	pXML->SetVariableListTagPair(&m_piSpecialistCount, "SpecialistCounts", sizeof(GC.getSpecialistInfo((SpecialistTypes)0)), GC.getNumSpecialistInfos());
+	pXML->SetVariableListTagPair(&m_pabSpecialistClassValid, "SpecialistClassValids", sizeof(GC.getSpecialistClassInfo((SpecialistClassTypes)0)), GC.getNumSpecialistClassInfos());
+	pXML->SetVariableListTagPair(&m_pabSpecialistClassUnlimited, "SpecialistClassUnlimiteds", sizeof(GC.getSpecialistClassInfo((SpecialistClassTypes)0)), GC.getNumSpecialistClassInfos());
+	pXML->SetVariableListTagPair(&m_piFreeSpecialistClassCount, "FreeSpecialistClassCounts", sizeof(GC.getSpecialistClassInfo((SpecialistClassTypes)0)), GC.getNumSpecialistClassInfos());
+	pXML->SetVariableListTagPair(&m_piSpecialistClassCount, "SpecialistClassCounts", sizeof(GC.getSpecialistClassInfo((SpecialistClassTypes)0)), GC.getNumSpecialistClassInfos());
 
 	pXML->SetVariableListTagPair(&m_paiBuildingHappinessChanges, "BuildingHappinessChanges", sizeof(GC.getBuildingClassInfo((BuildingClassTypes)0)), GC.getNumBuildingClassInfos());
 	pXML->SetVariableListTagPair(&m_paiBuildingHealthChanges, "BuildingHealthChanges", sizeof(GC.getBuildingClassInfo((BuildingClassTypes)0)), GC.getNumBuildingClassInfos());
 	pXML->SetVariableListTagPair(&m_paiFeatureHappinessChanges, "FeatureHappinessChanges", sizeof(GC.getFeatureInfo((FeatureTypes)0)), GC.getNumFeatureInfos());
-	pXML->SetVariableListTagPair(&m_paiSpecialistCrimeChanges, "SpecialistCrimeChanges", sizeof(GC.getSpecialistInfo((SpecialistTypes)0)), GC.getNumSpecialistInfos());
-	pXML->SetVariableListTagPair(&m_paiSpecialistGPPChanges, "SpecialistGPPChanges", sizeof(GC.getSpecialistInfo((SpecialistTypes)0)), GC.getNumSpecialistInfos());
+	pXML->SetVariableListTagPair(&m_paiSpecialistClassCrimeChanges, "SpecialistClassCrimeChanges", sizeof(GC.getSpecialistClassInfo((SpecialistClassTypes)0)), GC.getNumSpecialistClassInfos());
+	pXML->SetVariableListTagPair(&m_paiSpecialistClassGPPChanges, "SpecialistClassGPPChanges", sizeof(GC.getSpecialistClassInfo((SpecialistClassTypes)0)), GC.getNumSpecialistClassInfos());
 
 	// initialize the boolean list to the correct size and all the booleans to false
 	FAssertMsg((GC.getNumImprovementInfos() > 0) && (NUM_YIELD_TYPES) > 0,"either the number of improvement infos is zero or less or the number of yield types is zero or less");
@@ -20129,9 +20129,9 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
 	}
 
-	FAssertMsg((GC.getNumSpecialistInfos() > 0) && (NUM_YIELD_TYPES) > 0, "either the number of Specialist infos is zero or less or the number of yield types is zero or less");
-	pXML->Init2DIntList(&m_ppiSpecialistYieldChanges, GC.getNumSpecialistInfos(), NUM_YIELD_TYPES);
-	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "SpecialistYieldChanges"))
+	FAssertMsg((GC.getNumSpecialistClassInfos() > 0) && (NUM_YIELD_TYPES) > 0, "either the number of Specialist infos is zero or less or the number of yield types is zero or less");
+	pXML->Init2DIntList(&m_ppiSpecialistClassYieldChanges, GC.getNumSpecialistClassInfos(), NUM_YIELD_TYPES);
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "SpecialistClassYieldChanges"))
 	{
 		if (pXML->SkipToNextVal())
 		{
@@ -20142,23 +20142,23 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 				{
 					for (j = 0; j < iNumSibs; j++)
 					{
-						pXML->GetChildXmlValByName(szTextVal, "SpecialistType");
+						pXML->GetChildXmlValByName(szTextVal, "SpecialistClass");
 						iIndex = pXML->FindInInfoClass(szTextVal);
 
 						if (iIndex > -1)
 						{
 							// delete the array since it will be reallocated
-							SAFE_DELETE_ARRAY(m_ppiSpecialistYieldChanges[iIndex]);
+							SAFE_DELETE_ARRAY(m_ppiSpecialistClassYieldChanges[iIndex]);
 							// if we can set the current xml node to it's next sibling
-							if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "SpecialistYields"))
+							if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "SpecialistClassYields"))
 							{
 								// call the function that sets the yield change variable
-								pXML->SetYields(&m_ppiSpecialistYieldChanges[iIndex]);
+								pXML->SetYields(&m_ppiSpecialistClassYieldChanges[iIndex]);
 								gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
 							}
 							else
 							{
-								pXML->InitList(&m_ppiSpecialistYieldChanges[iIndex], NUM_YIELD_TYPES);
+								pXML->InitList(&m_ppiSpecialistClassYieldChanges[iIndex], NUM_YIELD_TYPES);
 							}
 						}
 
@@ -20176,9 +20176,9 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
 	}
 
-	FAssertMsg((GC.getNumSpecialistInfos() > 0) && (NUM_COMMERCE_TYPES) > 0, "either the number of Specialist infos is zero or less or the number of Commerce types is zero or less");
-	pXML->Init2DIntList(&m_ppiSpecialistCommerceChanges, GC.getNumSpecialistInfos(), NUM_COMMERCE_TYPES);
-	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "SpecialistCommerceChanges"))
+	FAssertMsg((GC.getNumSpecialistClassInfos() > 0) && (NUM_COMMERCE_TYPES) > 0, "either the number of Specialist infos is zero or less or the number of Commerce types is zero or less");
+	pXML->Init2DIntList(&m_ppiSpecialistClassCommerceChanges, GC.getNumSpecialistClassInfos(), NUM_COMMERCE_TYPES);
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "SpecialistClassCommerceChanges"))
 	{
 		if (pXML->SkipToNextVal())
 		{
@@ -20189,23 +20189,23 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 				{
 					for (j = 0; j < iNumSibs; j++)
 					{
-						pXML->GetChildXmlValByName(szTextVal, "SpecialistType");
+						pXML->GetChildXmlValByName(szTextVal, "SpecialistClassType");
 						iIndex = pXML->FindInInfoClass(szTextVal);
 
 						if (iIndex > -1)
 						{
 							// delete the array since it will be reallocated
-							SAFE_DELETE_ARRAY(m_ppiSpecialistCommerceChanges[iIndex]);
+							SAFE_DELETE_ARRAY(m_ppiSpecialistClassCommerceChanges[iIndex]);
 							// if we can set the current xml node to it's next sibling
-							if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "SpecialistCommerces"))
+							if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "SpecialistClassCommerces"))
 							{
 								// call the function that sets the Commerce change variable
-								pXML->SetCommerce(&m_ppiSpecialistCommerceChanges[iIndex]);
+								pXML->SetCommerce(&m_ppiSpecialistClassCommerceChanges[iIndex]);
 								gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
 							}
 							else
 							{
-								pXML->InitList(&m_ppiSpecialistCommerceChanges[iIndex], NUM_COMMERCE_TYPES);
+								pXML->InitList(&m_ppiSpecialistClassCommerceChanges[iIndex], NUM_COMMERCE_TYPES);
 							}
 						}
 
@@ -20448,14 +20448,14 @@ void CvCivicInfo::copyNonDefaults(CvCivicInfo* pClassInfo, CvXMLLoadUtility* pXM
 	{
 		if (m_pabSpecialBuildingNotRequired[i]			== false)			m_pabSpecialBuildingNotRequired[i]			= pClassInfo->isSpecialBuildingNotRequired(i);
 	}
-	for ( int i = 0; i < GC.getNumSpecialistInfos(); i++ )
+	for ( int i = 0; i < GC.getNumSpecialistClassInfos(); i++ )
 	{
-		if (m_pabSpecialistValid[i]						== false)			m_pabSpecialistValid[i]						= pClassInfo->isSpecialistValid(i);
-		if (m_pabSpecialistUnlimited[i] == false)			m_pabSpecialistUnlimited[i] = pClassInfo->isSpecialistUnlimited(i);
-		if (m_piFreeSpecialistCount[i] == 0)				m_piFreeSpecialistCount[i] = pClassInfo->getFreeSpecialistCount(i);
-		if (m_piSpecialistCount[i]						== 0)				m_piSpecialistCount[i]						= pClassInfo->getSpecialistCount(i);
-		if (m_paiSpecialistCrimeChanges[i] == 0)				m_paiSpecialistCrimeChanges[i] = pClassInfo->getSpecialistCrimeChanges(i);
-		if (m_paiSpecialistGPPChanges[i] == 0)				m_paiSpecialistGPPChanges[i] = pClassInfo->getSpecialistGPPChanges(i);
+		if (m_pabSpecialistClassValid[i]						== false)			m_pabSpecialistClassValid[i]						= pClassInfo->isSpecialistClassValid(i);
+		if (m_pabSpecialistClassUnlimited[i] == false)			m_pabSpecialistClassUnlimited[i] = pClassInfo->isSpecialistClassUnlimited(i);
+		if (m_piFreeSpecialistClassCount[i] == 0)				m_piFreeSpecialistClassCount[i] = pClassInfo->getFreeSpecialistClassCount(i);
+		if (m_piSpecialistClassCount[i]						== 0)				m_piSpecialistClassCount[i]						= pClassInfo->getSpecialistClassCount(i);
+		if (m_paiSpecialistClassCrimeChanges[i] == 0)				m_paiSpecialistClassCrimeChanges[i] = pClassInfo->getSpecialistClassCrimeChanges(i);
+		if (m_paiSpecialistClassGPPChanges[i] == 0)				m_paiSpecialistClassGPPChanges[i] = pClassInfo->getSpecialistClassGPPChanges(i);
 	}
 
 	for ( int i = 0; i < GC.getNumBuildingClassInfos(); i++ )
@@ -20474,18 +20474,18 @@ void CvCivicInfo::copyNonDefaults(CvCivicInfo* pClassInfo, CvXMLLoadUtility* pXM
 			if (m_ppiImprovementYieldChanges[i][j]		== 0)				m_ppiImprovementYieldChanges[i][j]			= pClassInfo->getImprovementYieldChanges(i,j);
 		}
 	}
-	for (int i = 0; i < GC.getNumSpecialistInfos(); i++)
+	for (int i = 0; i < GC.getNumSpecialistClassInfos(); i++)
 	{
 		for (int j = 0; j < NUM_YIELD_TYPES; j++)
 		{
-			if (m_ppiSpecialistYieldChanges[i][j] == 0)				m_ppiSpecialistYieldChanges[i][j] = pClassInfo->getSpecialistYieldChanges(i, j);
+			if (m_ppiSpecialistClassYieldChanges[i][j] == 0)				m_ppiSpecialistClassYieldChanges[i][j] = pClassInfo->getSpecialistClassYieldChanges(i, j);
 		}
 	}
-	for (int i = 0; i < GC.getNumSpecialistInfos(); i++)
+	for (int i = 0; i < GC.getNumSpecialistClassInfos(); i++)
 	{
 		for (int j = 0; j < NUM_COMMERCE_TYPES; j++)
 		{
-			if (m_ppiSpecialistCommerceChanges[i][j] == 0)				m_ppiSpecialistCommerceChanges[i][j] = pClassInfo->getSpecialistCommerceChanges(i, j);
+			if (m_ppiSpecialistClassCommerceChanges[i][j] == 0)				m_ppiSpecialistClassCommerceChanges[i][j] = pClassInfo->getSpecialistClassCommerceChanges(i, j);
 		}
 	}
 	if (isCompassionHigh()								== false)			m_bCompassionHigh							= pClassInfo->isCompassionHigh();
@@ -21425,8 +21425,8 @@ m_piSpecialistExtraCommerce(NULL),
 m_piStateReligionCommerce(NULL),
 m_piCommerceHappiness(NULL),
 m_piReligionChange(NULL),
-m_piSpecialistCount(NULL),
-m_piFreeSpecialistCount(NULL),
+m_piSpecialistClassCount(NULL),
+m_piFreeSpecialistClassCount(NULL),
 m_piBonusHealthChanges(NULL),
 m_piBonusHappinessChanges(NULL),
 m_piBonusProductionModifier(NULL),
@@ -21438,11 +21438,11 @@ m_piPrereqNumOfBuildingClass(NULL),
 m_piPrereqBuildingClassAtRange(NULL),
 m_piBuildingExclude(NULL),
 m_piFlavorValue(NULL),
-m_piImprovementFreeSpecialist(NULL),
+m_piImprovementFreeSpecialistClass(NULL),
 m_pbCommerceFlexible(NULL),
 m_pbCommerceChangeOriginalOwner(NULL),
 m_pbBuildingClassNeededInCity(NULL),
-m_ppaiSpecialistYieldChange(NULL),
+m_ppaiSpecialistClassYieldChange(NULL),
 m_ppaiBonusYieldModifier(NULL),
 m_ppaiBonusCommerceModifier(NULL),
 /*************************************************************************************************/
@@ -21574,19 +21574,19 @@ m_iPrereqTrait(NO_TRAIT),
 m_iPrereqTrait2(NO_TRAIT),
 m_iRemovePromotion(NO_PROMOTION),
 m_iResistMagic(0),
-m_ppaiSpecialistCommerceChange(NULL)
+m_ppaiSpecialistClassCommerceChange(NULL)
 //FfH: End Add
 
 /*************************************************************************************************/
 /**	GWSLocalSpecialist																	Milaga	**/
 /** Buildings can change give bonuses to specialists in only one city							**/
 /*************************************************************************************************/
-,m_paaiLocalSpecialistYieldChange(NULL)
-,m_paaiLocalSpecialistCommerceChange(NULL)
-,m_paiLocalSpecialistHappinessChange(NULL)
-,m_paiLocalSpecialistHealthChange(NULL)
-, m_paiLocalSpecialistCrimeChange(NULL)
-,m_paiLocalSpecialistGPPChange(NULL)
+,m_paaiLocalSpecialistClassYieldChange(NULL)
+,m_paaiLocalSpecialistClassCommerceChange(NULL)
+,m_paiLocalSpecialistClassHappinessChange(NULL)
+,m_paiLocalSpecialistClassHealthChange(NULL)
+, m_paiLocalSpecialistClassCrimeChange(NULL)
+,m_paiLocalSpecialistClassGPPChange(NULL)
 /*************************************************************************************************/
 /**	GWSLocalSpecialist																		END	**/
 /*************************************************************************************************/
@@ -21676,8 +21676,8 @@ CvBuildingInfo::~CvBuildingInfo()
 	SAFE_DELETE_ARRAY(m_piStateReligionCommerce);
 	SAFE_DELETE_ARRAY(m_piCommerceHappiness);
 	SAFE_DELETE_ARRAY(m_piReligionChange);
-	SAFE_DELETE_ARRAY(m_piSpecialistCount);
-	SAFE_DELETE_ARRAY(m_piFreeSpecialistCount);
+	SAFE_DELETE_ARRAY(m_piSpecialistClassCount);
+	SAFE_DELETE_ARRAY(m_piFreeSpecialistClassCount);
 	SAFE_DELETE_ARRAY(m_piBonusHealthChanges);
 	SAFE_DELETE_ARRAY(m_piBonusHappinessChanges);
 	SAFE_DELETE_ARRAY(m_piBonusProductionModifier);
@@ -21689,7 +21689,7 @@ CvBuildingInfo::~CvBuildingInfo()
 	SAFE_DELETE_ARRAY(m_piPrereqBuildingClassAtRange);
 	SAFE_DELETE_ARRAY(m_piBuildingExclude);
 	SAFE_DELETE_ARRAY(m_piFlavorValue);
-	SAFE_DELETE_ARRAY(m_piImprovementFreeSpecialist);
+	SAFE_DELETE_ARRAY(m_piImprovementFreeSpecialistClass);
 	SAFE_DELETE_ARRAY(m_pbCommerceFlexible);
 	SAFE_DELETE_ARRAY(m_pbCommerceChangeOriginalOwner);
 	SAFE_DELETE_ARRAY(m_pbBuildingClassNeededInCity);
@@ -21723,13 +21723,13 @@ CvBuildingInfo::~CvBuildingInfo()
 /**	New Tag Defs							END													**/
 /*************************************************************************************************/
 
-	if (m_ppaiSpecialistYieldChange != NULL)
+	if (m_ppaiSpecialistClassYieldChange != NULL)
 	{
-		for(int i=0;i<GC.getNumSpecialistInfos();i++)
+		for(int i=0;i<GC.getNumSpecialistClassInfos();i++)
 		{
-			SAFE_DELETE_ARRAY(m_ppaiSpecialistYieldChange[i]);
+			SAFE_DELETE_ARRAY(m_ppaiSpecialistClassYieldChange[i]);
 		}
-		SAFE_DELETE_ARRAY(m_ppaiSpecialistYieldChange);
+		SAFE_DELETE_ARRAY(m_ppaiSpecialistClassYieldChange);
 	}
 
 	if (m_ppaiBonusYieldModifier != NULL)
@@ -21750,13 +21750,13 @@ CvBuildingInfo::~CvBuildingInfo()
 	}
 
 //FfH: Added by Kael 11/06/2007
-	if (m_ppaiSpecialistCommerceChange != NULL)
+	if (m_ppaiSpecialistClassCommerceChange != NULL)
 	{
-		for(int i=0;i<GC.getNumSpecialistInfos();i++)
+		for(int i=0;i<GC.getNumSpecialistClassInfos();i++)
 		{
-			SAFE_DELETE_ARRAY(m_ppaiSpecialistCommerceChange[i]);
+			SAFE_DELETE_ARRAY(m_ppaiSpecialistClassCommerceChange[i]);
 		}
-		SAFE_DELETE_ARRAY(m_ppaiSpecialistCommerceChange);
+		SAFE_DELETE_ARRAY(m_ppaiSpecialistClassCommerceChange);
 	}
 //FfH: End Add
 
@@ -21764,26 +21764,26 @@ CvBuildingInfo::~CvBuildingInfo()
 /**	GWSLocalSpecialist																	Milaga	**/
 /** Buildings can change give bonuses to specialists in only one city							**/
 /*************************************************************************************************/
-	if (m_paaiLocalSpecialistYieldChange != NULL)
+	if (m_paaiLocalSpecialistClassYieldChange != NULL)
 	{
-		for(int i=0;i<GC.getNumSpecialistInfos();i++)
+		for(int i=0;i<GC.getNumSpecialistClassInfos();i++)
 		{
-			SAFE_DELETE_ARRAY(m_paaiLocalSpecialistYieldChange[i]);
+			SAFE_DELETE_ARRAY(m_paaiLocalSpecialistClassYieldChange[i]);
 		}
-		SAFE_DELETE_ARRAY(m_paaiLocalSpecialistYieldChange);
+		SAFE_DELETE_ARRAY(m_paaiLocalSpecialistClassYieldChange);
 	}
-	if (m_paaiLocalSpecialistCommerceChange != NULL)
+	if (m_paaiLocalSpecialistClassCommerceChange != NULL)
 	{
-		for(int i=0;i<GC.getNumSpecialistInfos();i++)
+		for(int i=0;i<GC.getNumSpecialistClassInfos();i++)
 		{
-			SAFE_DELETE_ARRAY(m_paaiLocalSpecialistCommerceChange[i]);
+			SAFE_DELETE_ARRAY(m_paaiLocalSpecialistClassCommerceChange[i]);
 		}
-		SAFE_DELETE_ARRAY(m_paaiLocalSpecialistCommerceChange);
+		SAFE_DELETE_ARRAY(m_paaiLocalSpecialistClassCommerceChange);
 	}
-	SAFE_DELETE_ARRAY(m_paiLocalSpecialistHappinessChange);
-	SAFE_DELETE_ARRAY(m_paiLocalSpecialistHealthChange);
-	SAFE_DELETE_ARRAY(m_paiLocalSpecialistCrimeChange);
-	SAFE_DELETE_ARRAY(m_paiLocalSpecialistGPPChange);
+	SAFE_DELETE_ARRAY(m_paiLocalSpecialistClassHappinessChange);
+	SAFE_DELETE_ARRAY(m_paiLocalSpecialistClassHealthChange);
+	SAFE_DELETE_ARRAY(m_paiLocalSpecialistClassCrimeChange);
+	SAFE_DELETE_ARRAY(m_paiLocalSpecialistClassGPPChange);
 /*************************************************************************************************/
 /**	GWSLocalSpecialist																		END	**/
 /*************************************************************************************************/
@@ -22709,14 +22709,14 @@ int CvBuildingInfo::getResistMagic() const
 	return m_iResistMagic;
 }
 
-int CvBuildingInfo::getSpecialistCommerceChange(int i, int j) const
+int CvBuildingInfo::getSpecialistClassCommerceChange(int i, int j) const
 {
-	return m_ppaiSpecialistCommerceChange ? m_ppaiSpecialistCommerceChange[i][j] : -1;
+	return m_ppaiSpecialistClassCommerceChange ? m_ppaiSpecialistClassCommerceChange[i][j] : -1;
 }
 
-int* CvBuildingInfo::getSpecialistCommerceChangeArray(int i) const
+int* CvBuildingInfo::getSpecialistClassCommerceChangeArray(int i) const
 {
-	return m_ppaiSpecialistCommerceChange[i];
+	return m_ppaiSpecialistClassCommerceChange[i];
 }
 //FfH: End Add
 
@@ -22724,43 +22724,43 @@ int* CvBuildingInfo::getSpecialistCommerceChangeArray(int i) const
 /**	GWSLocalSpecialist																	Milaga	**/
 /** Buildings can change give bonuses to specialists in only one city							**/
 /*************************************************************************************************/
-int CvBuildingInfo::getLocalSpecialistYieldChange(int iSpecialist, int iYield) const
+int CvBuildingInfo::getLocalSpecialistClassYieldChange(int iSpecialist, int iYield) const
 {
-	return m_paaiLocalSpecialistYieldChange ? m_paaiLocalSpecialistYieldChange[iSpecialist][iYield] : -1;
+	return m_paaiLocalSpecialistClassYieldChange ? m_paaiLocalSpecialistClassYieldChange[iSpecialist][iYield] : -1;
 }
 
-int* CvBuildingInfo::getLocalSpecialistYieldChangeArray(int iSpecialist) const
+int* CvBuildingInfo::getLocalSpecialistClassYieldChangeArray(int iSpecialist) const
 {
-	return m_paaiLocalSpecialistYieldChange[iSpecialist];
+	return m_paaiLocalSpecialistClassYieldChange[iSpecialist];
 }
 
-int CvBuildingInfo::getLocalSpecialistCommerceChange(int iSpecialist, int iYield) const
+int CvBuildingInfo::getLocalSpecialistClassCommerceChange(int iSpecialist, int iYield) const
 {
-	return m_paaiLocalSpecialistCommerceChange ? m_paaiLocalSpecialistCommerceChange[iSpecialist][iYield] : -1;
+	return m_paaiLocalSpecialistClassCommerceChange ? m_paaiLocalSpecialistClassCommerceChange[iSpecialist][iYield] : -1;
 }
 
-int* CvBuildingInfo::getLocalSpecialistCommerceChangeArray(int iSpecialist) const
+int* CvBuildingInfo::getLocalSpecialistClassCommerceChangeArray(int iSpecialist) const
 {
-	return m_paaiLocalSpecialistCommerceChange[iSpecialist];
+	return m_paaiLocalSpecialistClassCommerceChange[iSpecialist];
 }
 
-int CvBuildingInfo::getLocalSpecialistHappinessChange(int iSpecialist) const
+int CvBuildingInfo::getLocalSpecialistClassHappinessChange(int iSpecialist) const
 {
-	return m_paiLocalSpecialistHappinessChange ? m_paiLocalSpecialistHappinessChange[iSpecialist] : -1;
+	return m_paiLocalSpecialistClassHappinessChange ? m_paiLocalSpecialistClassHappinessChange[iSpecialist] : -1;
 }
 
-int CvBuildingInfo::getLocalSpecialistHealthChange(int iSpecialist) const
+int CvBuildingInfo::getLocalSpecialistClassHealthChange(int iSpecialist) const
 {
-	return m_paiLocalSpecialistHealthChange ? m_paiLocalSpecialistHealthChange[iSpecialist] : -1;
+	return m_paiLocalSpecialistClassHealthChange ? m_paiLocalSpecialistClassHealthChange[iSpecialist] : -1;
 }
-int CvBuildingInfo::getLocalSpecialistCrimeChange(int iSpecialist) const
+int CvBuildingInfo::getLocalSpecialistClassCrimeChange(int iSpecialist) const
 {
-	return m_paiLocalSpecialistCrimeChange ? m_paiLocalSpecialistCrimeChange[iSpecialist] : -1;
+	return m_paiLocalSpecialistClassCrimeChange ? m_paiLocalSpecialistClassCrimeChange[iSpecialist] : -1;
 }
 
-int CvBuildingInfo::getLocalSpecialistGPPChange(int iSpecialist) const
+int CvBuildingInfo::getLocalSpecialistClassGPPChange(int iSpecialist) const
 {
-	return m_paiLocalSpecialistGPPChange ? m_paiLocalSpecialistGPPChange[iSpecialist] : -1;
+	return m_paiLocalSpecialistClassGPPChange ? m_paiLocalSpecialistClassGPPChange[iSpecialist] : -1;
 }
 
 /*************************************************************************************************/
@@ -23048,18 +23048,18 @@ int CvBuildingInfo::getReligionChange(int i) const
 	return m_piReligionChange ? m_piReligionChange[i] : -1;
 }
 
-int CvBuildingInfo::getSpecialistCount(int i) const
+int CvBuildingInfo::getSpecialistClassCount(int i) const
 {
-	FAssertMsg(i < GC.getNumSpecialistInfos(), "Index out of bounds");
+	FAssertMsg(i < GC.getNumSpecialistClassInfos(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
-	return m_piSpecialistCount ? m_piSpecialistCount[i] : -1;
+	return m_piSpecialistClassCount ? m_piSpecialistClassCount[i] : -1;
 }
 
-int CvBuildingInfo::getFreeSpecialistCount(int i) const
+int CvBuildingInfo::getFreeSpecialistClassCount(int i) const
 {
-	FAssertMsg(i < GC.getNumSpecialistInfos(), "Index out of bounds");
+	FAssertMsg(i < GC.getNumSpecialistClassInfos(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
-	return m_piFreeSpecialistCount ? m_piFreeSpecialistCount[i] : -1;
+	return m_piFreeSpecialistClassCount ? m_piFreeSpecialistClassCount[i] : -1;
 }
 
 int CvBuildingInfo::getBonusHealthChanges(int i) const
@@ -23188,11 +23188,11 @@ int CvBuildingInfo::getFlavorValue(int i) const
 	return m_piFlavorValue ? m_piFlavorValue[i] : -1;
 }
 
-int CvBuildingInfo::getImprovementFreeSpecialist(int i) const
+int CvBuildingInfo::getImprovementFreeSpecialistClass(int i) const
 {
 	FAssertMsg(i < GC.getNumImprovementInfos(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
-	return m_piImprovementFreeSpecialist ? m_piImprovementFreeSpecialist[i] : -1;
+	return m_piImprovementFreeSpecialistClass ? m_piImprovementFreeSpecialistClass[i] : -1;
 }
 
 bool CvBuildingInfo::isCommerceFlexible(int i) const
@@ -23216,20 +23216,20 @@ bool CvBuildingInfo::isBuildingClassNeededInCity(int i) const
 	return m_pbBuildingClassNeededInCity ? m_pbBuildingClassNeededInCity[i] : false;
 }
 
-int CvBuildingInfo::getSpecialistYieldChange(int i, int j) const
+int CvBuildingInfo::getSpecialistClassYieldChange(int i, int j) const
 {
-	FAssertMsg(i < GC.getNumSpecialistInfos(), "Index out of bounds");
+	FAssertMsg(i < GC.getNumSpecialistClassInfos(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
 	FAssertMsg(j < NUM_YIELD_TYPES, "Index out of bounds");
 	FAssertMsg(j > -1, "Index out of bounds");
-	return m_ppaiSpecialistYieldChange ? m_ppaiSpecialistYieldChange[i][j] : -1;
+	return m_ppaiSpecialistClassYieldChange ? m_ppaiSpecialistClassYieldChange[i][j] : -1;
 }
 
-int* CvBuildingInfo::getSpecialistYieldChangeArray(int i) const
+int* CvBuildingInfo::getSpecialistClassYieldChangeArray(int i) const
 {
-	FAssertMsg(i < GC.getNumSpecialistInfos(), "Index out of bounds");
+	FAssertMsg(i < GC.getNumSpecialistClassInfos(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
-	return m_ppaiSpecialistYieldChange[i];
+	return m_ppaiSpecialistClassYieldChange[i];
 }
 
 int CvBuildingInfo::getBonusYieldModifier(int i, int j) const
@@ -23834,13 +23834,13 @@ void CvBuildingInfo::read(FDataStreamBase* stream)
 	m_piReligionChange = new int[GC.getNumReligionInfos()];
 	stream->Read(GC.getNumReligionInfos(), m_piReligionChange);
 
-	SAFE_DELETE_ARRAY(m_piSpecialistCount);
-	m_piSpecialistCount = new int[GC.getNumSpecialistInfos()];
-	stream->Read(GC.getNumSpecialistInfos(), m_piSpecialistCount);
+	SAFE_DELETE_ARRAY(m_piSpecialistClassCount);
+	m_piSpecialistClassCount = new int[GC.getNumSpecialistClassInfos()];
+	stream->Read(GC.getNumSpecialistClassInfos(), m_piSpecialistClassCount);
 
-	SAFE_DELETE_ARRAY(m_piFreeSpecialistCount);
-	m_piFreeSpecialistCount = new int[GC.getNumSpecialistInfos()];
-	stream->Read(GC.getNumSpecialistInfos(), m_piFreeSpecialistCount);
+	SAFE_DELETE_ARRAY(m_piFreeSpecialistClassCount);
+	m_piFreeSpecialistClassCount = new int[GC.getNumSpecialistClassInfos()];
+	stream->Read(GC.getNumSpecialistClassInfos(), m_piFreeSpecialistClassCount);
 
 	SAFE_DELETE_ARRAY(m_piBonusHealthChanges);
 	m_piBonusHealthChanges = new int[GC.getNumBonusInfos()];
@@ -23908,9 +23908,9 @@ void CvBuildingInfo::read(FDataStreamBase* stream)
 	m_piFlavorValue = new int[GC.getNumFlavorTypes()];
 	stream->Read(GC.getNumFlavorTypes(), m_piFlavorValue);
 
-	SAFE_DELETE_ARRAY(m_piImprovementFreeSpecialist);
-	m_piImprovementFreeSpecialist = new int[GC.getNumImprovementInfos()];
-	stream->Read(GC.getNumImprovementInfos(), m_piImprovementFreeSpecialist);
+	SAFE_DELETE_ARRAY(m_piImprovementFreeSpecialistClass);
+	m_piImprovementFreeSpecialistClass = new int[GC.getNumImprovementInfos()];
+	stream->Read(GC.getNumImprovementInfos(), m_piImprovementFreeSpecialistClass);
 
 	SAFE_DELETE_ARRAY(m_pbCommerceFlexible);
 	m_pbCommerceFlexible = new bool[NUM_COMMERCE_TYPES];
@@ -23925,36 +23925,36 @@ void CvBuildingInfo::read(FDataStreamBase* stream)
 	stream->Read(GC.getNumBuildingClassInfos(), m_pbBuildingClassNeededInCity);
 
 	int i;
-	if (m_ppaiSpecialistYieldChange != NULL)
+	if (m_ppaiSpecialistClassYieldChange != NULL)
 	{
-		for(i=0;i<GC.getNumSpecialistInfos();i++)
+		for(i=0;i<GC.getNumSpecialistClassInfos();i++)
 		{
-			SAFE_DELETE_ARRAY(m_ppaiSpecialistYieldChange[i]);
+			SAFE_DELETE_ARRAY(m_ppaiSpecialistClassYieldChange[i]);
 		}
-		SAFE_DELETE_ARRAY(m_ppaiSpecialistYieldChange);
+		SAFE_DELETE_ARRAY(m_ppaiSpecialistClassYieldChange);
 	}
 
-	m_ppaiSpecialistYieldChange = new int*[GC.getNumSpecialistInfos()];
-	for(i=0;i<GC.getNumSpecialistInfos();i++)
+	m_ppaiSpecialistClassYieldChange = new int*[GC.getNumSpecialistClassInfos()];
+	for(i=0;i<GC.getNumSpecialistClassInfos();i++)
 	{
-		m_ppaiSpecialistYieldChange[i]  = new int[NUM_YIELD_TYPES];
-		stream->Read(NUM_YIELD_TYPES, m_ppaiSpecialistYieldChange[i]);
+		m_ppaiSpecialistClassYieldChange[i]  = new int[NUM_YIELD_TYPES];
+		stream->Read(NUM_YIELD_TYPES, m_ppaiSpecialistClassYieldChange[i]);
 	}
 
 //FfH: Added by Kael 11/06/2007
-	if (m_ppaiSpecialistCommerceChange != NULL)
+	if (m_ppaiSpecialistClassCommerceChange != NULL)
 	{
-		for(i=0;i<GC.getNumSpecialistInfos();i++)
+		for(i=0;i<GC.getNumSpecialistClassInfos();i++)
 		{
-			SAFE_DELETE_ARRAY(m_ppaiSpecialistCommerceChange[i]);
+			SAFE_DELETE_ARRAY(m_ppaiSpecialistClassCommerceChange[i]);
 		}
-		SAFE_DELETE_ARRAY(m_ppaiSpecialistCommerceChange);
+		SAFE_DELETE_ARRAY(m_ppaiSpecialistClassCommerceChange);
 	}
-	m_ppaiSpecialistCommerceChange = new int*[GC.getNumSpecialistInfos()];
-	for(i=0;i<GC.getNumSpecialistInfos();i++)
+	m_ppaiSpecialistClassCommerceChange = new int*[GC.getNumSpecialistClassInfos()];
+	for(i=0;i<GC.getNumSpecialistClassInfos();i++)
 	{
-		m_ppaiSpecialistCommerceChange[i]  = new int[NUM_COMMERCE_TYPES];
-		stream->Read(NUM_COMMERCE_TYPES, m_ppaiSpecialistCommerceChange[i]);
+		m_ppaiSpecialistClassCommerceChange[i]  = new int[NUM_COMMERCE_TYPES];
+		stream->Read(NUM_COMMERCE_TYPES, m_ppaiSpecialistClassCommerceChange[i]);
 	}
 //FfH: End Add
 
@@ -23962,51 +23962,51 @@ void CvBuildingInfo::read(FDataStreamBase* stream)
 /**	GWSLocalSpecialist																	Milaga	**/
 /** Buildings can change give bonuses to specialists in only one city							**/
 /*************************************************************************************************/
-	if (m_paaiLocalSpecialistCommerceChange != NULL)
+	if (m_paaiLocalSpecialistClassCommerceChange != NULL)
 	{
-		for(i=0;i<GC.getNumSpecialistInfos();i++)
+		for(i=0;i<GC.getNumSpecialistClassInfos();i++)
 		{
-			SAFE_DELETE_ARRAY(m_paaiLocalSpecialistCommerceChange[i]);
+			SAFE_DELETE_ARRAY(m_paaiLocalSpecialistClassCommerceChange[i]);
 		}
-		SAFE_DELETE_ARRAY(m_paaiLocalSpecialistCommerceChange);
+		SAFE_DELETE_ARRAY(m_paaiLocalSpecialistClassCommerceChange);
 	}
-	m_paaiLocalSpecialistCommerceChange = new int*[GC.getNumSpecialistInfos()];
-	for(i=0;i<GC.getNumSpecialistInfos();i++)
+	m_paaiLocalSpecialistClassCommerceChange = new int*[GC.getNumSpecialistClassInfos()];
+	for(i=0;i<GC.getNumSpecialistClassInfos();i++)
 	{
-		m_paaiLocalSpecialistCommerceChange[i]  = new int[NUM_COMMERCE_TYPES];
-		stream->Read(NUM_COMMERCE_TYPES, m_paaiLocalSpecialistCommerceChange[i]);
+		m_paaiLocalSpecialistClassCommerceChange[i]  = new int[NUM_COMMERCE_TYPES];
+		stream->Read(NUM_COMMERCE_TYPES, m_paaiLocalSpecialistClassCommerceChange[i]);
 	}
 
-	if (m_paaiLocalSpecialistYieldChange != NULL)
+	if (m_paaiLocalSpecialistClassYieldChange != NULL)
 	{
-		for(i=0;i<GC.getNumSpecialistInfos();i++)
+		for(i=0;i<GC.getNumSpecialistClassInfos();i++)
 		{
-			SAFE_DELETE_ARRAY(m_paaiLocalSpecialistYieldChange[i]);
+			SAFE_DELETE_ARRAY(m_paaiLocalSpecialistClassYieldChange[i]);
 		}
-		SAFE_DELETE_ARRAY(m_paaiLocalSpecialistYieldChange);
+		SAFE_DELETE_ARRAY(m_paaiLocalSpecialistClassYieldChange);
 	}
-	m_paaiLocalSpecialistYieldChange = new int*[GC.getNumSpecialistInfos()];
-	for(i=0;i<GC.getNumSpecialistInfos();i++)
+	m_paaiLocalSpecialistClassYieldChange = new int*[GC.getNumSpecialistClassInfos()];
+	for(i=0;i<GC.getNumSpecialistClassInfos();i++)
 	{
-		m_paaiLocalSpecialistYieldChange[i]  = new int[NUM_YIELD_TYPES];
-		stream->Read(NUM_YIELD_TYPES, m_paaiLocalSpecialistYieldChange[i]);
+		m_paaiLocalSpecialistClassYieldChange[i]  = new int[NUM_YIELD_TYPES];
+		stream->Read(NUM_YIELD_TYPES, m_paaiLocalSpecialistClassYieldChange[i]);
 	}
 
-	SAFE_DELETE_ARRAY(m_paiLocalSpecialistHappinessChange);
-	m_paiLocalSpecialistHappinessChange = new int[GC.getNumSpecialistInfos()];
-	stream->Read(GC.getNumSpecialistInfos(), m_paiLocalSpecialistHappinessChange);
+	SAFE_DELETE_ARRAY(m_paiLocalSpecialistClassHappinessChange);
+	m_paiLocalSpecialistClassHappinessChange = new int[GC.getNumSpecialistClassInfos()];
+	stream->Read(GC.getNumSpecialistClassInfos(), m_paiLocalSpecialistClassHappinessChange);
 
-	SAFE_DELETE_ARRAY(m_paiLocalSpecialistHealthChange);
-	m_paiLocalSpecialistHealthChange = new int[GC.getNumSpecialistInfos()];
-	stream->Read(GC.getNumSpecialistInfos(), m_paiLocalSpecialistHealthChange);
+	SAFE_DELETE_ARRAY(m_paiLocalSpecialistClassHealthChange);
+	m_paiLocalSpecialistClassHealthChange = new int[GC.getNumSpecialistClassInfos()];
+	stream->Read(GC.getNumSpecialistClassInfos(), m_paiLocalSpecialistClassHealthChange);
 
-	SAFE_DELETE_ARRAY(m_paiLocalSpecialistCrimeChange);
-	m_paiLocalSpecialistCrimeChange = new int[GC.getNumSpecialistInfos()];
-	stream->Read(GC.getNumSpecialistInfos(), m_paiLocalSpecialistCrimeChange);
+	SAFE_DELETE_ARRAY(m_paiLocalSpecialistClassCrimeChange);
+	m_paiLocalSpecialistClassCrimeChange = new int[GC.getNumSpecialistClassInfos()];
+	stream->Read(GC.getNumSpecialistClassInfos(), m_paiLocalSpecialistClassCrimeChange);
 
-	SAFE_DELETE_ARRAY(m_paiLocalSpecialistGPPChange);
-	m_paiLocalSpecialistGPPChange = new int[GC.getNumSpecialistInfos()];
-	stream->Read(GC.getNumSpecialistInfos(), m_paiLocalSpecialistGPPChange);
+	SAFE_DELETE_ARRAY(m_paiLocalSpecialistClassGPPChange);
+	m_paiLocalSpecialistClassGPPChange = new int[GC.getNumSpecialistClassInfos()];
+	stream->Read(GC.getNumSpecialistClassInfos(), m_paiLocalSpecialistClassGPPChange);
 /*************************************************************************************************/
 /**	GWSLocalSpecialist																		END	**/
 /*************************************************************************************************/
@@ -24401,8 +24401,8 @@ void CvBuildingInfo::write(FDataStreamBase* stream)
 	stream->Write(NUM_COMMERCE_TYPES, m_piStateReligionCommerce);
 	stream->Write(NUM_COMMERCE_TYPES, m_piCommerceHappiness);
 	stream->Write(GC.getNumReligionInfos(), m_piReligionChange);
-	stream->Write(GC.getNumSpecialistInfos(), m_piSpecialistCount);
-	stream->Write(GC.getNumSpecialistInfos(), m_piFreeSpecialistCount);
+	stream->Write(GC.getNumSpecialistClassInfos(), m_piSpecialistClassCount);
+	stream->Write(GC.getNumSpecialistClassInfos(), m_piFreeSpecialistClassCount);
 	stream->Write(GC.getNumBonusInfos(), m_piBonusHealthChanges);
 	stream->Write(GC.getNumBonusInfos(), m_piBonusHappinessChanges);
 	stream->Write(GC.getNumBonusInfos(), m_piBonusProductionModifier);
@@ -24414,21 +24414,21 @@ void CvBuildingInfo::write(FDataStreamBase* stream)
 	stream->Write(GC.getNumBuildingClassInfos(), m_piPrereqBuildingClassAtRange);
 	stream->Write(GC.getNumBuildingClassInfos(), m_piBuildingExclude);
 	stream->Write(GC.getNumFlavorTypes(), m_piFlavorValue);
-	stream->Write(GC.getNumImprovementInfos(), m_piImprovementFreeSpecialist);
+	stream->Write(GC.getNumImprovementInfos(), m_piImprovementFreeSpecialistClass);
 	stream->Write(NUM_COMMERCE_TYPES, m_pbCommerceFlexible);
 	stream->Write(NUM_COMMERCE_TYPES, m_pbCommerceChangeOriginalOwner);
 	stream->Write(GC.getNumBuildingClassInfos(), m_pbBuildingClassNeededInCity);
 
 	int i;
-	for(i=0;i<GC.getNumSpecialistInfos();i++)
+	for(i=0;i<GC.getNumSpecialistClassInfos();i++)
 	{
-		stream->Write(NUM_YIELD_TYPES, m_ppaiSpecialistYieldChange[i]);
+		stream->Write(NUM_YIELD_TYPES, m_ppaiSpecialistClassYieldChange[i]);
 	}
 
 //FfH: Added by Kael 11/06/2007
-	for(i=0;i<GC.getNumSpecialistInfos();i++)
+	for(i=0;i<GC.getNumSpecialistClassInfos();i++)
 	{
-		stream->Write(NUM_COMMERCE_TYPES, m_ppaiSpecialistCommerceChange[i]);
+		stream->Write(NUM_COMMERCE_TYPES, m_ppaiSpecialistClassCommerceChange[i]);
 	}
 //FfH: End Add
 
@@ -24436,20 +24436,20 @@ void CvBuildingInfo::write(FDataStreamBase* stream)
 /**	GWSLocalSpecialist																	Milaga	**/
 /** Buildings can change give bonuses to specialists in only one city							**/
 /*************************************************************************************************/
-	for(i=0;i<GC.getNumSpecialistInfos();i++)
+	for(i=0;i<GC.getNumSpecialistClassInfos();i++)
 	{
-		stream->Write(NUM_YIELD_TYPES, m_paaiLocalSpecialistYieldChange[i]);
+		stream->Write(NUM_YIELD_TYPES, m_paaiLocalSpecialistClassYieldChange[i]);
 	}
 
-	for(i=0;i<GC.getNumSpecialistInfos();i++)
+	for(i=0;i<GC.getNumSpecialistClassInfos();i++)
 	{
-		stream->Write(NUM_COMMERCE_TYPES, m_paaiLocalSpecialistCommerceChange[i]);
+		stream->Write(NUM_COMMERCE_TYPES, m_paaiLocalSpecialistClassCommerceChange[i]);
 	}
 
-	stream->Write(GC.getNumSpecialistInfos(), m_paiLocalSpecialistHappinessChange);
-	stream->Write(GC.getNumSpecialistInfos(), m_paiLocalSpecialistHealthChange);
-	stream->Write(GC.getNumSpecialistInfos(), m_paiLocalSpecialistCrimeChange);
-	stream->Write(GC.getNumSpecialistInfos(), m_paiLocalSpecialistGPPChange);
+	stream->Write(GC.getNumSpecialistClassInfos(), m_paiLocalSpecialistClassHappinessChange);
+	stream->Write(GC.getNumSpecialistClassInfos(), m_paiLocalSpecialistClassHealthChange);
+	stream->Write(GC.getNumSpecialistClassInfos(), m_paiLocalSpecialistClassCrimeChange);
+	stream->Write(GC.getNumSpecialistClassInfos(), m_paiLocalSpecialistClassGPPChange);
 /*************************************************************************************************/
 /**	GWSLocalSpecialist																		END	**/
 /*************************************************************************************************/
@@ -25268,8 +25268,8 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 
 	pXML->SetVariableListTagPair(&m_piReligionChange, "ReligionChanges", sizeof(GC.getReligionInfo((ReligionTypes)0)), GC.getNumReligionInfos());
 
-	pXML->SetVariableListTagPair(&m_piSpecialistCount, "SpecialistCounts", sizeof(GC.getSpecialistInfo((SpecialistTypes)0)), GC.getNumSpecialistInfos());
-	pXML->SetVariableListTagPair(&m_piFreeSpecialistCount, "FreeSpecialistCounts", sizeof(GC.getSpecialistInfo((SpecialistTypes)0)), GC.getNumSpecialistInfos());
+	pXML->SetVariableListTagPair(&m_piSpecialistClassCount, "SpecialistClassCounts", sizeof(GC.getSpecialistClassInfo((SpecialistClassTypes)0)), GC.getNumSpecialistClassInfos());
+	pXML->SetVariableListTagPair(&m_piFreeSpecialistClassCount, "FreeSpecialistClassCounts", sizeof(GC.getSpecialistClassInfo((SpecialistClassTypes)0)), GC.getNumSpecialistClassInfos());
 
 	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"CommerceFlexibles"))
 	{
@@ -25309,30 +25309,30 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 	pXML->SetVariableListTagPair(&m_piPrereqBuildingClassAtRange, "PrereqBuildingAtRanges", sizeof(GC.getBuildingClassInfo((BuildingClassTypes)0)), GC.getNumBuildingClassInfos());
 	pXML->SetVariableListTagPair(&m_piBuildingExclude, "BuildingExcludes", sizeof(GC.getBuildingClassInfo((BuildingClassTypes)0)), GC.getNumBuildingClassInfos());
 
-	pXML->Init2DIntList(&m_ppaiSpecialistYieldChange, GC.getNumSpecialistInfos(), NUM_YIELD_TYPES);
-	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"SpecialistYieldChanges"))
+	pXML->Init2DIntList(&m_ppaiSpecialistClassYieldChange, GC.getNumSpecialistClassInfos(), NUM_YIELD_TYPES);
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"SpecialistClassYieldChanges"))
 	{
 		iNumChildren = gDLL->getXMLIFace()->GetNumChildren(pXML->GetXML());
 
-		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"SpecialistYieldChange"))
+		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"SpecialistClassYieldChange"))
 		{
 			for(j=0;j<iNumChildren;j++)
 			{
-				pXML->GetChildXmlValByName(szTextVal, "SpecialistType");
+				pXML->GetChildXmlValByName(szTextVal, "SpecialistClass");
 				k = pXML->FindInInfoClass(szTextVal);
 				if (k > -1)
 				{
 					// delete the array since it will be reallocated
-					SAFE_DELETE_ARRAY(m_ppaiSpecialistYieldChange[k]);
+					SAFE_DELETE_ARRAY(m_ppaiSpecialistClassYieldChange[k]);
 					if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"YieldChanges"))
 					{
 						// call the function that sets the yield change variable
-						pXML->SetYields(&m_ppaiSpecialistYieldChange[k]);
+						pXML->SetYields(&m_ppaiSpecialistClassYieldChange[k]);
 						gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
 					}
 					else
 					{
-						pXML->InitList(&m_ppaiSpecialistYieldChange[k], NUM_YIELD_TYPES);
+						pXML->InitList(&m_ppaiSpecialistClassYieldChange[k], NUM_YIELD_TYPES);
 					}
 				}
 
@@ -25435,29 +25435,29 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 	}
 
 	pXML->SetVariableListTagPair(&m_piFlavorValue, "Flavors", GC.getFlavorTypes(), GC.getNumFlavorTypes());
-	pXML->SetVariableListTagPair(&m_piImprovementFreeSpecialist, "ImprovementFreeSpecialists", sizeof(GC.getImprovementInfo((ImprovementTypes)0)), GC.getNumImprovementInfos());
+	pXML->SetVariableListTagPair(&m_piImprovementFreeSpecialistClass, "ImprovementFreeSpecialists", sizeof(GC.getImprovementInfo((ImprovementTypes)0)), GC.getNumImprovementInfos());
 	pXML->SetVariableListTagPair(&m_piBuildingHappinessChanges, "BuildingHappinessChanges", sizeof(GC.getBuildingClassInfo((BuildingClassTypes)0)), GC.getNumBuildingClassInfos());
 
 //FfH: Added by Kael 11/06/2007
-	pXML->Init2DIntList(&m_ppaiSpecialistCommerceChange, GC.getNumSpecialistInfos(), NUM_COMMERCE_TYPES);
-	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"SpecialistCommerceChanges"))
+	pXML->Init2DIntList(&m_ppaiSpecialistClassCommerceChange, GC.getNumSpecialistClassInfos(), NUM_COMMERCE_TYPES);
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"SpecialistClassCommerceChanges"))
 	{
 		iNumChildren = gDLL->getXMLIFace()->GetNumChildren(pXML->GetXML());
-		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"SpecialistCommerceChange"))
+		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"SpecialistClassCommerceChange"))
 		{
 			for(j=0;j<iNumChildren;j++)
 			{
-				pXML->GetChildXmlValByName(szTextVal, "SpecialistType");
+				pXML->GetChildXmlValByName(szTextVal, "SpecialistClass");
 				k = pXML->FindInInfoClass(szTextVal);
-				SAFE_DELETE_ARRAY(m_ppaiSpecialistCommerceChange[k]);
+				SAFE_DELETE_ARRAY(m_ppaiSpecialistClassCommerceChange[k]);
 				if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"CommerceChanges") && (k > -1))
 				{
-					pXML->SetCommerce(&m_ppaiSpecialistCommerceChange[k]);
+					pXML->SetCommerce(&m_ppaiSpecialistClassCommerceChange[k]);
 					gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
 				}
 				else
 				{
-					pXML->InitList(&m_ppaiSpecialistCommerceChange[k], NUM_COMMERCE_TYPES);
+					pXML->InitList(&m_ppaiSpecialistClassCommerceChange[k], NUM_COMMERCE_TYPES);
 				}
 				if (!gDLL->getXMLIFace()->NextSibling(pXML->GetXML()))
 				{
@@ -25474,27 +25474,27 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 /**	GWSLocalSpecialist																	Milaga	**/
 /** Buildings can change give bonuses to specialists in only one city							**/
 /*************************************************************************************************/
-	pXML->Init2DIntList(&m_paaiLocalSpecialistCommerceChange, GC.getNumSpecialistInfos(), NUM_COMMERCE_TYPES);
-	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"LocalSpecialistCommerceChanges"))
+	pXML->Init2DIntList(&m_paaiLocalSpecialistClassCommerceChange, GC.getNumSpecialistClassInfos(), NUM_COMMERCE_TYPES);
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"LocalSpecialistClassCommerceChanges"))
 	{
 		iNumChildren = gDLL->getXMLIFace()->GetNumChildren(pXML->GetXML());
-		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"LocalSpecialistCommerceChange"))
+		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"LocalSpecialistClassCommerceChange"))
 		{
 			for(j=0;j<iNumChildren;j++)
 			{
-				pXML->GetChildXmlValByName(szTextVal, "SpecialistType");
+				pXML->GetChildXmlValByName(szTextVal, "SpecialistClass");
 				k = pXML->FindInInfoClass(szTextVal);
 				if (k > -1)
 				{
-					SAFE_DELETE_ARRAY(m_paaiLocalSpecialistCommerceChange[k]);
+					SAFE_DELETE_ARRAY(m_paaiLocalSpecialistClassCommerceChange[k]);
 					if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"CommerceChanges"))
 					{
-						pXML->SetCommerce(&m_paaiLocalSpecialistCommerceChange[k]);
+						pXML->SetCommerce(&m_paaiLocalSpecialistClassCommerceChange[k]);
 						gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
 					}
 					else
 					{
-						pXML->InitList(&m_paaiLocalSpecialistCommerceChange[k], NUM_COMMERCE_TYPES);
+						pXML->InitList(&m_paaiLocalSpecialistClassCommerceChange[k], NUM_COMMERCE_TYPES);
 					}
 				}
 				if (!gDLL->getXMLIFace()->NextSibling(pXML->GetXML()))
@@ -25506,29 +25506,29 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 		}
 		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
 	}
-	pXML->Init2DIntList(&m_paaiLocalSpecialistYieldChange, GC.getNumSpecialistInfos(), NUM_YIELD_TYPES);
-	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"LocalSpecialistYieldChanges"))
+	pXML->Init2DIntList(&m_paaiLocalSpecialistClassYieldChange, GC.getNumSpecialistClassInfos(), NUM_YIELD_TYPES);
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"LocalSpecialistClassYieldChanges"))
 	{
 		iNumChildren = gDLL->getXMLIFace()->GetNumChildren(pXML->GetXML());
-		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"LocalSpecialistYieldChange"))
+		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"LocalSpecialistClassYieldChange"))
 		{
 			for(j=0;j<iNumChildren;j++)
 			{
-				pXML->GetChildXmlValByName(szTextVal, "SpecialistType");
+				pXML->GetChildXmlValByName(szTextVal, "SpecialistClass");
 				k = pXML->FindInInfoClass(szTextVal);
 				if (k > -1)
 				{
 					// delete the array since it will be reallocated
-					SAFE_DELETE_ARRAY(m_paaiLocalSpecialistYieldChange[k]);
+					SAFE_DELETE_ARRAY(m_paaiLocalSpecialistClassYieldChange[k]);
 					if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"YieldChanges"))
 					{
 						// call the function that sets the yield change variable
-						pXML->SetYields(&m_paaiLocalSpecialistYieldChange[k]);
+						pXML->SetYields(&m_paaiLocalSpecialistClassYieldChange[k]);
 						gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
 					}
 					else
 					{
-						pXML->InitList(&m_paaiLocalSpecialistYieldChange[k], NUM_YIELD_TYPES);
+						pXML->InitList(&m_paaiLocalSpecialistClassYieldChange[k], NUM_YIELD_TYPES);
 					}
 				}
 				if (!gDLL->getXMLIFace()->NextSibling(pXML->GetXML()))
@@ -25543,10 +25543,10 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
 	}
 
-	pXML->SetVariableListTagPair(&m_paiLocalSpecialistHappinessChange, "LocalSpecialistHappinessChanges", sizeof(GC.getSpecialistInfo((SpecialistTypes)0)), GC.getNumSpecialistInfos());
-	pXML->SetVariableListTagPair(&m_paiLocalSpecialistHealthChange, "LocalSpecialistHealthChanges", sizeof(GC.getSpecialistInfo((SpecialistTypes)0)), GC.getNumSpecialistInfos());
-	pXML->SetVariableListTagPair(&m_paiLocalSpecialistCrimeChange, "LocalSpecialistCrimeChanges", sizeof(GC.getSpecialistInfo((SpecialistTypes)0)), GC.getNumSpecialistInfos());
-	pXML->SetVariableListTagPair(&m_paiLocalSpecialistGPPChange, "LocalSpecialistGPPChanges", sizeof(GC.getSpecialistInfo((SpecialistTypes)0)), GC.getNumSpecialistInfos());
+	pXML->SetVariableListTagPair(&m_paiLocalSpecialistClassHappinessChange, "LocalSpecialistClassHappinessChanges", sizeof(GC.getSpecialistClassInfo((SpecialistClassTypes)0)), GC.getNumSpecialistClassInfos());
+	pXML->SetVariableListTagPair(&m_paiLocalSpecialistClassHealthChange, "LocalSpecialistClassHealthChanges", sizeof(GC.getSpecialistClassInfo((SpecialistClassTypes)0)), GC.getNumSpecialistClassInfos());
+	pXML->SetVariableListTagPair(&m_paiLocalSpecialistClassCrimeChange, "LocalSpecialistClassCrimeChanges", sizeof(GC.getSpecialistClassInfo((SpecialistClassTypes)0)), GC.getNumSpecialistClassInfos());
+	pXML->SetVariableListTagPair(&m_paiLocalSpecialistClassGPPChange, "LocalSpecialistClassGPPChanges", sizeof(GC.getSpecialistClassInfo((SpecialistClassTypes)0)), GC.getNumSpecialistClassInfos());
 /*************************************************************************************************/
 /**	GWSLocalSpecialist																		END	**/
 /*************************************************************************************************/
@@ -25979,17 +25979,17 @@ void CvBuildingInfo::copyNonDefaults(CvBuildingInfo* pClassInfo, CvXMLLoadUtilit
 			if (getFeatureYieldChange(j, i) == 0)					m_ppaiFeatureYieldChange[j][i] = pClassInfo->getFeatureYieldChange(j, i);
 		}
 	}
-	for ( int j = 0; j < GC.getNumSpecialistInfos(); j++)
+	for ( int j = 0; j < GC.getNumSpecialistClassInfos(); j++)
 	{
-		if (getSpecialistCount(j)				== 0)					m_piSpecialistCount[j]				= pClassInfo->getSpecialistCount(j);
-		if (getFreeSpecialistCount(j)			== 0)					m_piFreeSpecialistCount[j]			= pClassInfo->getFreeSpecialistCount(j);
+		if (getSpecialistClassCount(j)				== 0)					m_piSpecialistClassCount[j]				= pClassInfo->getSpecialistClassCount(j);
+		if (getFreeSpecialistClassCount(j)			== 0)					m_piFreeSpecialistClassCount[j]			= pClassInfo->getFreeSpecialistClassCount(j);
 		for ( int i = 0; i < NUM_YIELD_TYPES; i++)
 		{
-			if (getSpecialistYieldChange(j, i)	== 0)					m_ppaiSpecialistYieldChange[j][i]	= pClassInfo->getSpecialistYieldChange(j, i);
+			if (getSpecialistClassYieldChange(j, i)	== 0)					m_ppaiSpecialistClassYieldChange[j][i]	= pClassInfo->getSpecialistClassYieldChange(j, i);
 		}
 		for ( int i = 0; i < NUM_COMMERCE_TYPES; i++)
 		{
-			if (getSpecialistCommerceChange(j, i)== 0)					m_ppaiSpecialistCommerceChange[j][i]= pClassInfo->getSpecialistCommerceChange(j, i);
+			if (getSpecialistClassCommerceChange(j, i)== 0)					m_ppaiSpecialistClassCommerceChange[j][i]= pClassInfo->getSpecialistClassCommerceChange(j, i);
 		}
 	}
 
@@ -25997,20 +25997,20 @@ void CvBuildingInfo::copyNonDefaults(CvBuildingInfo* pClassInfo, CvXMLLoadUtilit
 /**	GWSLocalSpecialist																	Milaga	**/
 /** Buildings can change give bonuses to specialists in only one city							**/
 /*************************************************************************************************/
-	for (int i = 0; i < GC.getNumSpecialistInfos(); i++)
+	for (int i = 0; i < GC.getNumSpecialistClassInfos(); i++)
 	{
 		for (int j = 0; j < NUM_YIELD_TYPES; j++)
 		{
-			if (getLocalSpecialistYieldChange(i, j)	== 0)	m_paaiLocalSpecialistYieldChange[i][j]		= pClassInfo->getLocalSpecialistYieldChange(i, j);
+			if (getLocalSpecialistClassYieldChange(i, j)	== 0)	m_paaiLocalSpecialistClassYieldChange[i][j]		= pClassInfo->getLocalSpecialistClassYieldChange(i, j);
 		}
 		for (int j = 0; j < NUM_COMMERCE_TYPES; j++)
 		{
-			if (getLocalSpecialistCommerceChange(i, j)== 0)	m_paaiLocalSpecialistCommerceChange[i][j]	= pClassInfo->getLocalSpecialistCommerceChange(i, j);
+			if (getLocalSpecialistClassCommerceChange(i, j)== 0)	m_paaiLocalSpecialistClassCommerceChange[i][j]	= pClassInfo->getLocalSpecialistClassCommerceChange(i, j);
 		}
-		if (getLocalSpecialistHappinessChange(i)== 0)		m_paiLocalSpecialistHappinessChange[i]		= pClassInfo->getLocalSpecialistHappinessChange(i);
-		if (getLocalSpecialistHealthChange(i)== 0)			m_paiLocalSpecialistHealthChange[i]			= pClassInfo->getLocalSpecialistHealthChange(i);
-		if (getLocalSpecialistCrimeChange(i) == 0)			m_paiLocalSpecialistCrimeChange[i] = pClassInfo->getLocalSpecialistCrimeChange(i);
-		if (getLocalSpecialistGPPChange(i)== 0)				m_paiLocalSpecialistGPPChange[i]			= pClassInfo->getLocalSpecialistGPPChange(i);
+		if (getLocalSpecialistClassHappinessChange(i)== 0)		m_paiLocalSpecialistClassHappinessChange[i]		= pClassInfo->getLocalSpecialistClassHappinessChange(i);
+		if (getLocalSpecialistClassHealthChange(i)== 0)			m_paiLocalSpecialistClassHealthChange[i]			= pClassInfo->getLocalSpecialistClassHealthChange(i);
+		if (getLocalSpecialistClassCrimeChange(i) == 0)			m_paiLocalSpecialistClassCrimeChange[i] = pClassInfo->getLocalSpecialistClassCrimeChange(i);
+		if (getLocalSpecialistClassGPPChange(i)== 0)				m_paiLocalSpecialistClassGPPChange[i]			= pClassInfo->getLocalSpecialistClassGPPChange(i);
 	}
 /*************************************************************************************************/
 /**	GWSLocalSpecialist																		END	**/
@@ -26099,7 +26099,7 @@ void CvBuildingInfo::copyNonDefaults(CvBuildingInfo* pClassInfo, CvXMLLoadUtilit
 	}
 	for ( int j = 0; j < GC.getNumImprovementInfos(); j++)
 	{
-		if (getImprovementFreeSpecialist(j)		== 0)					m_piImprovementFreeSpecialist[j]	= pClassInfo->getImprovementFreeSpecialist(j);
+		if (getImprovementFreeSpecialistClass(j)		== 0)					m_piImprovementFreeSpecialistClass[j]	= pClassInfo->getImprovementFreeSpecialistClass(j);
 	}
 	for ( int j = 0; j < GC.getNumBuildingClassInfos(); j++)
 	{
@@ -31580,7 +31580,7 @@ m_iBonusConvert(NO_BONUS),
 /**																								**/
 /**						Allows improvements to grant specific specialists						**/
 /*************************************************************************************************/
-m_iFreeSpecialist(NO_SPECIALIST),
+m_iFreeSpecialistClass(NO_SPECIALISTCLASS),
 m_iWorkingCityCrime(0),
 /*************************************************************************************************/
 /**	Statesmen								END													**/
@@ -31961,9 +31961,9 @@ int CvImprovementInfo::getBonusConvert() const
 /**																								**/
 /**						Allows improvements to grant specific specialists						**/
 /*************************************************************************************************/
-int CvImprovementInfo::getFreeSpecialist() const
+int CvImprovementInfo::getFreeSpecialistClass() const
 {
-	return m_iFreeSpecialist;
+	return m_iFreeSpecialistClass;
 }
 int CvImprovementInfo::getWorkingCityCrime() const
 {
@@ -32409,7 +32409,7 @@ void CvImprovementInfo::read(FDataStreamBase* stream)
 /**																								**/
 /**						Allows improvements to grant specific specialists						**/
 /*************************************************************************************************/
-	stream->Read(&m_iFreeSpecialist);
+	stream->Read(&m_iFreeSpecialistClass);
 	stream->Read(&m_iWorkingCityCrime);
 	/*************************************************************************************************/
 /**	Statesmen								END													**/
@@ -32657,7 +32657,7 @@ void CvImprovementInfo::write(FDataStreamBase* stream)
 /**																								**/
 /**						Allows improvements to grant specific specialists						**/
 /*************************************************************************************************/
-	stream->Write(m_iFreeSpecialist);
+	stream->Write(m_iFreeSpecialistClass);
 	stream->Write(m_iWorkingCityCrime);
 	/*************************************************************************************************/
 /**	Statesmen								END													**/
@@ -33024,8 +33024,8 @@ bool CvImprovementInfo::read(CvXMLLoadUtility* pXML)
 /**																								**/
 /**						Allows improvements to grant specific specialists						**/
 /*************************************************************************************************/
-	pXML->GetChildXmlValByName(szTextVal, "FreeSpecialist");
-	m_iFreeSpecialist = GC.getInfoTypeForString(szTextVal);
+	pXML->GetChildXmlValByName(szTextVal, "FreeSpecialistClass");
+	m_iFreeSpecialistClass = GC.getInfoTypeForString(szTextVal);
 	pXML->GetChildXmlValByName(&m_iWorkingCityCrime, "iWorkingCityCrime");
 /*************************************************************************************************/
 /**	Statesmen								END													**/
@@ -33325,7 +33325,7 @@ void CvImprovementInfo::copyNonDefaults(CvImprovementInfo* pClassInfo, CvXMLLoad
 /**																								**/
 /**						Allows improvements to grant specific specialists						**/
 /*************************************************************************************************/
-	if (getFreeSpecialist()									== NO_SPECIALIST)	m_iFreeSpecialist							= pClassInfo->getFreeSpecialist();
+	if (getFreeSpecialistClass()									== NO_SPECIALISTCLASS)	m_iFreeSpecialistClass							= pClassInfo->getFreeSpecialistClass();
 	if (getWorkingCityCrime() == 0)	m_iWorkingCityCrime = pClassInfo->getWorkingCityCrime();
 	/*************************************************************************************************/
 /**	Statesmen								END													**/
@@ -41166,11 +41166,11 @@ m_pabFreePromotion(NULL),
 m_pabRevealBonus(NULL),
 m_pabFreeBonus(NULL),
 m_pabNoBonus(NULL),
-m_pabFreeSpecialistStateReligion(NULL),
-m_pabFreeSpecialistNonStateReligion(NULL),
-m_paiSpecialistHealthChange(NULL),
-m_paiSpecialistHappinessChange(NULL),
-m_paiSpecialistCrimeChange(NULL),
+m_pabFreeSpecialistClassStateReligion(NULL),
+m_pabFreeSpecialistClassNonStateReligion(NULL),
+m_paiSpecialistClassHealthChange(NULL),
+m_paiSpecialistClassHappinessChange(NULL),
+m_paiSpecialistClassCrimeChange(NULL),
 m_paiReligiousWeightModifier(NULL),
 m_paiUnitClassPlayerInstancesChange(NULL),
 m_piExtraUnitClass(NULL),
@@ -41178,8 +41178,8 @@ m_piExtraBuildingClass(NULL),
 /*************************************************************************************************/
 /**	Miner Trait 	 	Orbis from Sanguo Mod		18/02/09	Ahwaric		**/
 /*************************************************************************************************/
-m_ppaiSpecialistYieldChange(NULL),
-m_ppaiSpecialistCommerceChange(NULL),
+m_ppaiSpecialistClassYieldChange(NULL),
+m_ppaiSpecialistClassCommerceChange(NULL),
 m_paiPeaceCommerceModifier(NULL),
 m_paiFeatureProductionChange(NULL),
 m_paiFeatureGrowthChange(NULL),
@@ -41251,27 +41251,27 @@ CvTraitInfo::~CvTraitInfo()
 	SAFE_DELETE_ARRAY(m_pabFreeBonus);
 	SAFE_DELETE_ARRAY(m_pabNoBonus);
 
-	SAFE_DELETE_ARRAY(m_pabFreeSpecialistStateReligion);
-	SAFE_DELETE_ARRAY(m_pabFreeSpecialistNonStateReligion);
+	SAFE_DELETE_ARRAY(m_pabFreeSpecialistClassStateReligion);
+	SAFE_DELETE_ARRAY(m_pabFreeSpecialistClassNonStateReligion);
 /*************************************************************************************************/
 /**	Miner Trait 	 	Orbis from Sanguo Mod		18/02/09	Ahwaric		**/
 /*************************************************************************************************/
-	if (m_ppaiSpecialistYieldChange != NULL)
+	if (m_ppaiSpecialistClassYieldChange != NULL)
 	{
-		for(int i=0;i<GC.getNumSpecialistInfos();i++)
+		for(int i=0;i<GC.getNumSpecialistClassInfos();i++)
 		{
-			SAFE_DELETE_ARRAY(m_ppaiSpecialistYieldChange[i]);
+			SAFE_DELETE_ARRAY(m_ppaiSpecialistClassYieldChange[i]);
 		}
-		SAFE_DELETE_ARRAY(m_ppaiSpecialistYieldChange);
+		SAFE_DELETE_ARRAY(m_ppaiSpecialistClassYieldChange);
 	}
 
-	if (m_ppaiSpecialistCommerceChange != NULL)
+	if (m_ppaiSpecialistClassCommerceChange != NULL)
 	{
-		for(int i=0;i<GC.getNumSpecialistInfos();i++)
+		for(int i=0;i<GC.getNumSpecialistClassInfos();i++)
 		{
-			SAFE_DELETE_ARRAY(m_ppaiSpecialistCommerceChange[i]);
+			SAFE_DELETE_ARRAY(m_ppaiSpecialistClassCommerceChange[i]);
 		}
-		SAFE_DELETE_ARRAY(m_ppaiSpecialistCommerceChange);
+		SAFE_DELETE_ARRAY(m_ppaiSpecialistClassCommerceChange);
 	}
 	SAFE_DELETE_ARRAY(m_paiPeaceCommerceModifier);
 
@@ -41684,24 +41684,24 @@ int CvTraitInfo::isNoBonus(int i) const
 	return m_pabNoBonus ? m_pabNoBonus[i] : -1;
 }
 
-int CvTraitInfo::isFreeSpecialistStateReligion(int i) const
+int CvTraitInfo::isFreeSpecialistClassStateReligion(int i) const
 {
-	return m_pabFreeSpecialistStateReligion ? m_pabFreeSpecialistStateReligion[i] : -1;
+	return m_pabFreeSpecialistClassStateReligion ? m_pabFreeSpecialistClassStateReligion[i] : -1;
 }
 
-int CvTraitInfo::getSpecialistHappinessChange(int i) const
+int CvTraitInfo::getSpecialistClassHappinessChange(int i) const
 {
-	return m_paiSpecialistHappinessChange ? m_paiSpecialistHappinessChange[i] : -1;
+	return m_paiSpecialistClassHappinessChange ? m_paiSpecialistClassHappinessChange[i] : -1;
 }
 
-int CvTraitInfo::getSpecialistHealthChange(int i) const
+int CvTraitInfo::getSpecialistClassHealthChange(int i) const
 {
-	return m_paiSpecialistHealthChange ? m_paiSpecialistHealthChange[i] : -1;
+	return m_paiSpecialistClassHealthChange ? m_paiSpecialistClassHealthChange[i] : -1;
 }
 
-int CvTraitInfo::getSpecialistCrimeChange(int i) const
+int CvTraitInfo::getSpecialistClassCrimeChange(int i) const
 {
-	return m_paiSpecialistCrimeChange ? m_paiSpecialistCrimeChange[i] : -1;
+	return m_paiSpecialistClassCrimeChange ? m_paiSpecialistClassCrimeChange[i] : -1;
 }
 int CvTraitInfo::getReligiousWeightModifier(int i) const
 {
@@ -41713,9 +41713,9 @@ int CvTraitInfo::getUnitClassPlayerInstancesChange(int i) const
 	return m_paiUnitClassPlayerInstancesChange ? m_paiUnitClassPlayerInstancesChange[i] : -1;
 }
 
-int CvTraitInfo::isFreeSpecialistNonStateReligion(int i) const
+int CvTraitInfo::isFreeSpecialistClassNonStateReligion(int i) const
 {
-	return m_pabFreeSpecialistNonStateReligion ? m_pabFreeSpecialistNonStateReligion[i] : -1;
+	return m_pabFreeSpecialistClassNonStateReligion ? m_pabFreeSpecialistClassNonStateReligion[i] : -1;
 }
 
 
@@ -41731,36 +41731,36 @@ int CvTraitInfo::isFreePromotionUnitCombat(int i) const
 /*************************************************************************************************/
 /**	Miner Trait 	 	Orbis from Sanguo Mod		18/02/09	Ahwaric		**/
 /*************************************************************************************************/
-int CvTraitInfo::getSpecialistYieldChange(int i, int j) const
+int CvTraitInfo::getSpecialistClassYieldChange(int i, int j) const
 {
-	FAssertMsg(i < GC.getNumSpecialistInfos(), "Index out of bounds");
+	FAssertMsg(i < GC.getNumSpecialistClassInfos(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
 	FAssertMsg(j < NUM_YIELD_TYPES, "Index out of bounds");
 	FAssertMsg(j > -1, "Index out of bounds");
-	return m_ppaiSpecialistYieldChange ? m_ppaiSpecialistYieldChange[i][j] : -1;
+	return m_ppaiSpecialistClassYieldChange ? m_ppaiSpecialistClassYieldChange[i][j] : -1;
 }
 
-int* CvTraitInfo::getSpecialistYieldChangeArray(int i) const
+int* CvTraitInfo::getSpecialistClassYieldChangeArray(int i) const
 {
-	FAssertMsg(i < GC.getNumSpecialistInfos(), "Index out of bounds");
+	FAssertMsg(i < GC.getNumSpecialistClassInfos(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
-	return m_ppaiSpecialistYieldChange[i];
+	return m_ppaiSpecialistClassYieldChange[i];
 }
 
-int CvTraitInfo::getSpecialistCommerceChange(int i, int j) const
+int CvTraitInfo::getSpecialistClassCommerceChange(int i, int j) const
 {
-	FAssertMsg(i < GC.getNumSpecialistInfos(), "Index out of bounds");
+	FAssertMsg(i < GC.getNumSpecialistClassInfos(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
 	FAssertMsg(j < NUM_COMMERCE_TYPES, "Index out of bounds");
 	FAssertMsg(j > -1, "Index out of bounds");
-	return m_ppaiSpecialistCommerceChange ? m_ppaiSpecialistCommerceChange[i][j] : -1;
+	return m_ppaiSpecialistClassCommerceChange ? m_ppaiSpecialistClassCommerceChange[i][j] : -1;
 }
 
-int* CvTraitInfo::getSpecialistCommerceChangeArray(int i) const
+int* CvTraitInfo::getSpecialistClassCommerceChangeArray(int i) const
 {
-	FAssertMsg(i < GC.getNumSpecialistInfos(), "Index out of bounds");
+	FAssertMsg(i < GC.getNumSpecialistClassInfos(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
-	return m_ppaiSpecialistCommerceChange[i];
+	return m_ppaiSpecialistClassCommerceChange[i];
 }
 int CvTraitInfo::getPeaceCommerceModifier(int i) const
 {
@@ -42086,13 +42086,13 @@ bool CvTraitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->SetVariableListTagPair(&m_pabFreeBonus, "FreeBonuses", sizeof(GC.getBonusInfo((BonusTypes)0)), GC.getNumBonusInfos());
 	pXML->SetVariableListTagPair(&m_pabNoBonus, "NoBonuses", sizeof(GC.getBonusInfo((BonusTypes)0)), GC.getNumBonusInfos());
 
-	pXML->SetVariableListTagPair(&m_pabFreeSpecialistStateReligion, "FreeSpecialistsStateReligion", sizeof(GC.getSpecialistInfo((SpecialistTypes)0)), GC.getNumSpecialistInfos());
-	pXML->SetVariableListTagPair(&m_pabFreeSpecialistNonStateReligion, "FreeSpecialistsNonStateReligion", sizeof(GC.getSpecialistInfo((SpecialistTypes)0)), GC.getNumSpecialistInfos());
-	pXML->SetVariableListTagPair(&m_paiSpecialistHappinessChange, "SpecialistHappinessChanges", sizeof(GC.getSpecialistInfo((SpecialistTypes)0)), GC.getNumSpecialistInfos());
-	pXML->SetVariableListTagPair(&m_paiSpecialistHealthChange, "SpecialistHealthChanges", sizeof(GC.getSpecialistInfo((SpecialistTypes)0)), GC.getNumSpecialistInfos());
-	pXML->SetVariableListTagPair(&m_paiSpecialistCrimeChange, "SpecialistCrimeChanges", sizeof(GC.getSpecialistInfo((SpecialistTypes)0)), GC.getNumSpecialistInfos());
-	pXML->SetVariableListTagPair(&m_paiReligiousWeightModifier, "ReligionWeightModifiers", sizeof(GC.getReligionInfo((ReligionTypes)0)), GC.getNumReligionInfos());
-	pXML->SetVariableListTagPair(&m_paiUnitClassPlayerInstancesChange, "UnitClassPlayerInstancesChanges", sizeof(GC.getUnitClassInfo((UnitClassTypes)0)), GC.getNumUnitClassInfos());
+	pXML->SetVariableListTagPair(&m_pabFreeSpecialistClassStateReligion, "FreeSpecialistClassesStateReligion", sizeof(GC.getSpecialistClassInfo((SpecialistClassTypes)0)), GC.getNumSpecialistClassInfos());
+	pXML->SetVariableListTagPair(&m_pabFreeSpecialistClassNonStateReligion, "FreeSpecialistClassesNonStateReligion", sizeof(GC.getSpecialistClassInfo((SpecialistClassTypes)0)), GC.getNumSpecialistClassInfos());
+	pXML->SetVariableListTagPair(&m_paiSpecialistClassHappinessChange, "SpecialistClassHappinessChanges", sizeof(GC.getSpecialistClassInfo((SpecialistClassTypes)0)), GC.getNumSpecialistClassInfos());
+	pXML->SetVariableListTagPair(&m_paiSpecialistClassHealthChange, "SpecialistClassHealthChanges", sizeof(GC.getSpecialistClassInfo((SpecialistClassTypes)0)), GC.getNumSpecialistClassInfos());
+	pXML->SetVariableListTagPair(&m_paiSpecialistClassCrimeChange, "SpecialistClassCrimeChanges", sizeof(GC.getSpecialistClassInfo((SpecialistClassTypes)0)), GC.getNumSpecialistClassInfos());
+	pXML->SetVariableListTagPair(&m_paiReligiousWeightModifier, "ReligionWeightModifiers", sizeof(GC.getSpecialistClassInfo((SpecialistClassTypes)0)), GC.getNumReligionInfos());
+	pXML->SetVariableListTagPair(&m_paiUnitClassPlayerInstancesChange, "UnitClassPlayerInstancesChanges", sizeof(GC.getSpecialistClassInfo((SpecialistClassTypes)0)), GC.getNumUnitClassInfos());
 
 	pXML->SetVariableListTagPair(&m_pabFreePromotion, "FreePromotions", sizeof(GC.getPromotionInfo((PromotionTypes)0)), GC.getNumPromotionInfos());
 
@@ -42105,30 +42105,30 @@ bool CvTraitInfo::read(CvXMLLoadUtility* pXML)
 	int iNumSibs=0;				// the number of siblings the current xml node has
 	int iNumChildren;				// the number of children the current node has
 
-	pXML->Init2DIntList(&m_ppaiSpecialistYieldChange, GC.getNumSpecialistInfos(), NUM_YIELD_TYPES);
-	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"SpecialistYieldChanges"))
+	pXML->Init2DIntList(&m_ppaiSpecialistClassYieldChange, GC.getNumSpecialistClassInfos(), NUM_YIELD_TYPES);
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"SpecialistClassYieldChanges"))
 	{
 		iNumChildren = gDLL->getXMLIFace()->GetNumChildren(pXML->GetXML());
 
-		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"SpecialistYieldChange"))
+		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"SpecialistClassYieldChange"))
 		{
 			for(j=0;j<iNumChildren;j++)
 			{
-				pXML->GetChildXmlValByName(szTextVal, "SpecialistType");
+				pXML->GetChildXmlValByName(szTextVal, "SpecialistClass");
 				k = pXML->FindInInfoClass(szTextVal);
 				if (k > -1)
 				{
 					// delete the array since it will be reallocated
-					SAFE_DELETE_ARRAY(m_ppaiSpecialistYieldChange[k]);
+					SAFE_DELETE_ARRAY(m_ppaiSpecialistClassYieldChange[k]);
 					if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"YieldChanges"))
 					{
 						// call the function that sets the yield change variable
-						pXML->SetYields(&m_ppaiSpecialistYieldChange[k]);
+						pXML->SetYields(&m_ppaiSpecialistClassYieldChange[k]);
 						gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
 					}
 					else
 					{
-						pXML->InitList(&m_ppaiSpecialistYieldChange[k], NUM_YIELD_TYPES);
+						pXML->InitList(&m_ppaiSpecialistClassYieldChange[k], NUM_YIELD_TYPES);
 					}
 				}
 
@@ -42146,30 +42146,30 @@ bool CvTraitInfo::read(CvXMLLoadUtility* pXML)
 		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
 	}
 
-	pXML->Init2DIntList(&m_ppaiSpecialistCommerceChange, GC.getNumSpecialistInfos(), NUM_COMMERCE_TYPES);
-	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"SpecialistCommerceChanges"))
+	pXML->Init2DIntList(&m_ppaiSpecialistClassCommerceChange, GC.getNumSpecialistClassInfos(), NUM_COMMERCE_TYPES);
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"SpecialistClassCommerceChanges"))
 	{
 		iNumChildren = gDLL->getXMLIFace()->GetNumChildren(pXML->GetXML());
 
-		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"SpecialistCommerceChange"))
+		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"SpecialistClassCommerceChange"))
 		{
 			for(j=0;j<iNumChildren;j++)
 			{
-				pXML->GetChildXmlValByName(szTextVal, "SpecialistType");
+				pXML->GetChildXmlValByName(szTextVal, "SpecialistClass");
 				k = pXML->FindInInfoClass(szTextVal);
 				if (k > -1)
 				{
 					// delete the array since it will be reallocated
-					SAFE_DELETE_ARRAY(m_ppaiSpecialistCommerceChange[k]);
+					SAFE_DELETE_ARRAY(m_ppaiSpecialistClassCommerceChange[k]);
 					if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"CommerceChanges"))
 					{
 						// call the function that sets the yield change variable
-						pXML->SetCommerce(&m_ppaiSpecialistCommerceChange[k]);
+						pXML->SetCommerce(&m_ppaiSpecialistClassCommerceChange[k]);
 						gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
 					}
 					else
 					{
-						pXML->InitList(&m_ppaiSpecialistCommerceChange[k], NUM_COMMERCE_TYPES);
+						pXML->InitList(&m_ppaiSpecialistClassCommerceChange[k], NUM_COMMERCE_TYPES);
 					}
 				}
 
@@ -42587,13 +42587,13 @@ void CvTraitInfo::copyNonDefaults(CvTraitInfo* pClassInfo, CvXMLLoadUtility* pXM
 	{
 		if (isFreePromotion(j) == false)		m_pabFreePromotion[j] = pClassInfo->isFreePromotion(j);
 	}
-	for (int j = 0; j < GC.getNumSpecialistInfos(); j++)
+	for (int j = 0; j < GC.getNumSpecialistClassInfos(); j++)
 	{
-		if (isFreeSpecialistNonStateReligion(j) == false)		m_pabFreeSpecialistNonStateReligion[j] = pClassInfo->isFreeSpecialistNonStateReligion(j);
-		if (isFreeSpecialistStateReligion(j) == false)		m_pabFreeSpecialistStateReligion[j] = pClassInfo->isFreeSpecialistStateReligion(j);
-		if (getSpecialistHappinessChange(j) == 0) m_paiSpecialistHappinessChange[j] = pClassInfo->getSpecialistHappinessChange(j);
-		if (getSpecialistHealthChange(j) == 0) m_paiSpecialistHealthChange[j] = pClassInfo->getSpecialistHealthChange(j);
-		if (getSpecialistCrimeChange(j) == 0) m_paiSpecialistCrimeChange[j] = pClassInfo->getSpecialistCrimeChange(j);
+		if (isFreeSpecialistClassNonStateReligion(j) == false)		m_pabFreeSpecialistClassNonStateReligion[j] = pClassInfo->isFreeSpecialistClassNonStateReligion(j);
+		if (isFreeSpecialistClassStateReligion(j) == false)		m_pabFreeSpecialistClassStateReligion[j] = pClassInfo->isFreeSpecialistClassStateReligion(j);
+		if (getSpecialistClassHappinessChange(j) == 0) m_paiSpecialistClassHappinessChange[j] = pClassInfo->getSpecialistClassHappinessChange(j);
+		if (getSpecialistClassHealthChange(j) == 0) m_paiSpecialistClassHealthChange[j] = pClassInfo->getSpecialistClassHealthChange(j);
+		if (getSpecialistClassCrimeChange(j) == 0) m_paiSpecialistClassCrimeChange[j] = pClassInfo->getSpecialistClassCrimeChange(j);
 	}
 	for (int j = 0; j < GC.getNumReligionInfos(); j++)
 	{
@@ -42614,15 +42614,15 @@ void CvTraitInfo::copyNonDefaults(CvTraitInfo* pClassInfo, CvXMLLoadUtility* pXM
 	{
 		if (isFreePromotionUnitCombat(j) == false)		m_pabFreePromotionUnitCombat[j] = pClassInfo->isFreePromotionUnitCombat(j);
 	}
-	for (int j = 0; j < GC.getNumSpecialistInfos(); j++)
+	for (int j = 0; j < GC.getNumSpecialistClassInfos(); j++)
 	{
 		for (int i = 0; i < NUM_YIELD_TYPES; i++)
 		{
-			if (getSpecialistYieldChange(j, i) == 0)			m_ppaiSpecialistYieldChange[j][i] = pClassInfo->getSpecialistYieldChange(j, i);
+			if (getSpecialistClassYieldChange(j, i) == 0)			m_ppaiSpecialistClassYieldChange[j][i] = pClassInfo->getSpecialistClassYieldChange(j, i);
 		}
 		for (int i = 0; i < NUM_COMMERCE_TYPES; i++)
 		{
-			if (getSpecialistCommerceChange(j, i) == 0)			m_ppaiSpecialistCommerceChange[j][i] = pClassInfo->getSpecialistCommerceChange(j, i);
+			if (getSpecialistClassCommerceChange(j, i) == 0)			m_ppaiSpecialistClassCommerceChange[j][i] = pClassInfo->getSpecialistClassCommerceChange(j, i);
 		}
 	}
 	for (int j = 0; j < GC.getNumFeatureInfos(); j++)
@@ -49470,7 +49470,7 @@ CvEventInfo::CvEventInfo() :
 
 	m_piTechFlavorValue(NULL),
 	m_piPlotExtraYields(NULL),
-	m_piFreeSpecialistCount(NULL),
+	m_piFreeSpecialistClassCount(NULL),
 	m_piAdditionalEventChance(NULL),
 	m_piAdditionalEventTime(NULL),
 	m_piClearEventChance(NULL),
@@ -49483,7 +49483,7 @@ CvEventInfo::~CvEventInfo()
 {
 	SAFE_DELETE_ARRAY(m_piTechFlavorValue);
 	SAFE_DELETE_ARRAY(m_piPlotExtraYields);
-	SAFE_DELETE_ARRAY(m_piFreeSpecialistCount);
+	SAFE_DELETE_ARRAY(m_piFreeSpecialistClassCount);
 	SAFE_DELETE_ARRAY(m_piAdditionalEventChance);
 	SAFE_DELETE_ARRAY(m_piAdditionalEventTime);
 	SAFE_DELETE_ARRAY(m_piClearEventChance);
@@ -49889,11 +49889,11 @@ int CvEventInfo::getPlotExtraYield(int i) const
 	return m_piPlotExtraYields ? m_piPlotExtraYields[i] : -1;
 }
 
-int CvEventInfo::getFreeSpecialistCount(int i) const
+int CvEventInfo::getFreeSpecialistClassCount(int i) const
 {
-	FAssertMsg(i < GC.getNumSpecialistInfos(), "Index out of bounds");
+	FAssertMsg(i < GC.getNumSpecialistClassInfos(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
-	return m_piFreeSpecialistCount ? m_piFreeSpecialistCount[i] : -1;
+	return m_piFreeSpecialistClassCount ? m_piFreeSpecialistClassCount[i] : -1;
 }
 
 int CvEventInfo::getUnitCombatPromotion(int i) const
@@ -50145,9 +50145,9 @@ void CvEventInfo::read(FDataStreamBase* stream)
 	m_piPlotExtraYields = new int[NUM_YIELD_TYPES];
 	stream->Read(NUM_YIELD_TYPES, m_piPlotExtraYields);
 
-	SAFE_DELETE_ARRAY(m_piFreeSpecialistCount);
-	m_piFreeSpecialistCount = new int[GC.getNumSpecialistInfos()];
-	stream->Read(GC.getNumSpecialistInfos(), m_piFreeSpecialistCount);
+	SAFE_DELETE_ARRAY(m_piFreeSpecialistClassCount);
+	m_piFreeSpecialistClassCount = new int[GC.getNumSpecialistClassInfos()];
+	stream->Read(GC.getNumSpecialistClassInfos(), m_piFreeSpecialistClassCount);
 
 	SAFE_DELETE_ARRAY(m_piAdditionalEventChance);
 	m_piAdditionalEventChance = new int[GC.getNumEventInfos()];
@@ -50335,7 +50335,7 @@ void CvEventInfo::write(FDataStreamBase* stream)
 
 	stream->Write(GC.getNumFlavorTypes(), m_piTechFlavorValue);
 	stream->Write(NUM_YIELD_TYPES, m_piPlotExtraYields);
-	stream->Write(GC.getNumSpecialistInfos(), m_piFreeSpecialistCount);
+	stream->Write(GC.getNumSpecialistClassInfos(), m_piFreeSpecialistClassCount);
 	stream->Write(GC.getNumEventInfos(), m_piAdditionalEventChance);
 	stream->Write(GC.getNumEventInfos(), m_piAdditionalEventTime);
 	stream->Write(GC.getNumEventInfos(), m_piClearEventChance);
@@ -50454,7 +50454,7 @@ bool CvEventInfo::read(CvXMLLoadUtility* pXML)
 
 	pXML->SetVariableListTagPair(&m_piTechFlavorValue, "TechFlavors", GC.getFlavorTypes(), GC.getNumFlavorTypes());
 	pXML->SetVariableListTagPair(&m_piPlotExtraYields, "PlotExtraYields", sizeof(GC.getYieldInfo((YieldTypes)0)), NUM_YIELD_TYPES, 0);
-	pXML->SetVariableListTagPair(&m_piFreeSpecialistCount, "FreeSpecialistCounts", sizeof(GC.getSpecialistInfo((SpecialistTypes)0)), GC.getNumSpecialistInfos());
+	pXML->SetVariableListTagPair(&m_piFreeSpecialistClassCount, "FreeSpecialistClassCounts", sizeof(GC.getSpecialistClassInfo((SpecialistClassTypes)0)), GC.getNumSpecialistClassInfos());
 
 	pXML->GetChildXmlValByName(&m_iConvertOwnCities, "iConvertOwnCities");
 	pXML->GetChildXmlValByName(&m_iConvertOtherCities, "iConvertOtherCities");
@@ -50873,9 +50873,9 @@ void CvEventInfo::copyNonDefaults(CvEventInfo* pClassInfo, CvXMLLoadUtility* pXM
 	{
 		if (m_piPlotExtraYields[i]			== 0)					m_piPlotExtraYields[i]			= pClassInfo->getPlotExtraYield(i);
 	}
-	for ( int i = 0; i < GC.getNumSpecialistInfos(); i++)
+	for ( int i = 0; i < GC.getNumSpecialistClassInfos(); i++)
 	{
-		if (m_piFreeSpecialistCount[i]		== 0)					m_piFreeSpecialistCount[i]		= pClassInfo->getFreeSpecialistCount(i);
+		if (m_piFreeSpecialistClassCount[i]		== 0)					m_piFreeSpecialistClassCount[i]		= pClassInfo->getFreeSpecialistClassCount(i);
 	}
 	for (int i = 0; i < GC.getNumUnitCombatInfos(); ++i)
 	{
@@ -51517,7 +51517,7 @@ void CvUnitArtStyleTypeInfo::copyNonDefaults(CvUnitArtStyleTypeInfo* pClassInfo,
 
 CvVoteSourceInfo::CvVoteSourceInfo() :
 	m_iVoteInterval(0),
-	m_iFreeSpecialist(NO_SPECIALIST),
+	m_iFreeSpecialistClass(NO_SPECIALISTCLASS),
 	m_iCivic(NO_CIVIC),
 	m_aiReligionYields(NULL),
 	m_aiReligionCommerces(NULL)
@@ -51536,9 +51536,9 @@ int CvVoteSourceInfo::getVoteInterval() const
 	return m_iVoteInterval;
 }
 
-int CvVoteSourceInfo::getFreeSpecialist() const
+int CvVoteSourceInfo::getFreeSpecialistClass() const
 {
-	return m_iFreeSpecialist;
+	return m_iFreeSpecialistClass;
 }
 
 int CvVoteSourceInfo::getCivic() const
@@ -51592,8 +51592,8 @@ bool CvVoteSourceInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(m_szSecretaryGeneralText, "SecretaryGeneralText");
 
 	CvString szTextVal;
-	pXML->GetChildXmlValByName(szTextVal, "FreeSpecialist");
-	m_iFreeSpecialist = GC.getInfoTypeForString(szTextVal);
+	pXML->GetChildXmlValByName(szTextVal, "FreeSpecialistClass");
+	m_iFreeSpecialistClass = GC.getInfoTypeForString(szTextVal);
 
 	pXML->GetChildXmlValByName(szTextVal, "Civic");
 	m_aszExtraXMLforPass3.push_back(szTextVal);
@@ -51670,7 +51670,7 @@ void CvVoteSourceInfo::copyNonDefaults(CvVoteSourceInfo* pClassInfo, CvXMLLoadUt
 	if (getVoteInterval()			== 0)				m_iVoteInterval				= pClassInfo->getVoteInterval();
 	if (getPopupText()				== wDefault)		m_szPopupText				= pClassInfo->getCopyPopupText();
 	if (getSecretaryGeneralText()	== wDefault)		m_szSecretaryGeneralText	= pClassInfo->getCopySecretaryGeneralText();
-	if (getFreeSpecialist()			== NO_SPECIALIST)	m_iFreeSpecialist			= pClassInfo->getFreeSpecialist();
+	if (getFreeSpecialistClass()			== NO_SPECIALISTCLASS)	m_iFreeSpecialistClass			= pClassInfo->getFreeSpecialistClass();
 	for (int i = 0; i < NUM_YIELD_TYPES; i++)
 	{
 		if (getReligionYield(i)		== 0)				m_aiReligionYields[i]		= pClassInfo->getReligionYield(i);

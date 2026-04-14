@@ -243,8 +243,8 @@ public:
 	bool spreadCorporation(CorporationTypes eCorporation);
 	int spreadCorporationCost(CorporationTypes eCorporation, CvCity* pCity) const;
 
-	bool canJoin(const CvPlot* pPlot, SpecialistTypes eSpecialist) const;																		// Exposed to Python
-	bool join(SpecialistTypes eSpecialist);
+	bool canJoin(const CvPlot* pPlot, SpecialistClassTypes eSpecialist) const;																		// Exposed to Python
+	bool join(SpecialistClassTypes eSpecialist);
 
 	bool canConstruct(const CvPlot* pPlot, BuildingTypes eBuilding, bool bTestVisible = false) const;				// Exposed to Python
 	bool construct(BuildingTypes eBuilding);

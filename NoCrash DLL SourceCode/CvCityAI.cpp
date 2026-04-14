@@ -182,9 +182,9 @@ void CvCityAI::AI_doTurn()
 
 	if (!isHuman())
 	{
-		for (iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
+		for (iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 		{
-			setForceSpecialistCount(((SpecialistTypes)iI), 0);
+			setForceSpecialistClassCount(((SpecialistClassTypes)iI), 0);
 		}
 	}
 
@@ -280,29 +280,29 @@ void CvCityAI::AI_assignWorkingPlots()
 	int iTotalForcedSpecialists = 0;
 
 	// make sure at least the forced amount of specialists are assigned
-	for (iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
+	for (iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 	{
-		int iForcedSpecialistCount = getForceSpecialistCount((SpecialistTypes)iI);
+		int iForcedSpecialistCount = getForceSpecialistClassCount((SpecialistClassTypes)iI);
 		if (iForcedSpecialistCount > 0)
 		{
 			bIsSpecialistForced = true;
 			iTotalForcedSpecialists += iForcedSpecialistCount;
 		}
 
-		if (!isHuman() || isCitizensAutomated() || (getSpecialistCount((SpecialistTypes)iI) < iForcedSpecialistCount))
+		if (!isHuman() || isCitizensAutomated() || (getSpecialistClassCount((SpecialistClassTypes)iI) < iForcedSpecialistCount))
 		{
-			setSpecialistCount(((SpecialistTypes)iI), iForcedSpecialistCount);
+			setSpecialistClassCount(((SpecialistClassTypes)iI), iForcedSpecialistCount);
 		}
 	}
 
 	// if we have more specialists of any type than this city can have, reduce to the max
-	for (iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
+	for (iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 	{
-		if (!isSpecialistValid((SpecialistTypes)iI))
+		if (!isSpecialistClassValid((SpecialistClassTypes)iI))
 		{
-			if (getSpecialistCount((SpecialistTypes)iI) > getMaxSpecialistCount((SpecialistTypes)iI))
+			if (getSpecialistClassCount((SpecialistClassTypes)iI) > getMaxSpecialistClassCount((SpecialistClassTypes)iI))
 			{
-				setSpecialistCount(((SpecialistTypes)iI), getMaxSpecialistCount((SpecialistTypes)iI));
+				setSpecialistClassCount(((SpecialistClassTypes)iI), getMaxSpecialistClassCount((SpecialistClassTypes)iI));
 			}
 		}
 	}
@@ -343,15 +343,15 @@ void CvCityAI::AI_assignWorkingPlots()
 	if (bIsSpecialistForced && iExtraSpecialists > 0)
 	{
 		FAssertMsg(iTotalForcedSpecialists > 0, "zero or negative total forced specialists");
-		for (iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
+		for (iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 		{
-			if (isSpecialistValid((SpecialistTypes)iI, 1))
+			if (isSpecialistClassValid((SpecialistClassTypes)iI, 1))
 			{
-				int iForcedSpecialistCount = getForceSpecialistCount((SpecialistTypes)iI);
+				int iForcedSpecialistCount = getForceSpecialistClassCount((SpecialistClassTypes)iI);
 				if (iForcedSpecialistCount > 0)
 				{
-					int iSpecialistCount = getSpecialistCount((SpecialistTypes)iI);
-					int iMaxSpecialistCount = getMaxSpecialistCount((SpecialistTypes)iI);
+					int iSpecialistCount = getSpecialistClassCount((SpecialistClassTypes)iI);
+					int iMaxSpecialistCount = getMaxSpecialistClassCount((SpecialistClassTypes)iI);
 
 					int iSpecialistsToAdd = ((iInitialExtraSpecialists * iForcedSpecialistCount) + (iTotalForcedSpecialists/2)) / iTotalForcedSpecialists;
 					if (iExtraSpecialists < iSpecialistsToAdd)
@@ -363,13 +363,13 @@ void CvCityAI::AI_assignWorkingPlots()
 					iExtraSpecialists -= iSpecialistsToAdd;
 
 					// if we cannot fit that many, then add as many as we can
-					if (iSpecialistCount > iMaxSpecialistCount && !GET_PLAYER(getOwnerINLINE()).isSpecialistValid((SpecialistTypes)iI))
+					if (iSpecialistCount > iMaxSpecialistCount && !GET_PLAYER(getOwnerINLINE()).isSpecialistClassValid((SpecialistClassTypes)iI))
 					{
 						iExtraSpecialists += iSpecialistCount - iMaxSpecialistCount;
 						iSpecialistCount = iMaxSpecialistCount;
 					}
 
-					setSpecialistCount((SpecialistTypes)iI, iSpecialistCount);
+					setSpecialistClassCount((SpecialistClassTypes)iI, iSpecialistCount);
 				}
 			}
 		}
@@ -577,7 +577,7 @@ bool CvCityAI::AI_ignoreGrowth()
 }
 
 
-int CvCityAI::AI_specialistValue(SpecialistTypes eSpecialist, bool bAvoidGrowth, bool bRemove)
+int CvCityAI::AI_specialistClassValue(SpecialistClassTypes eSpecialistClass, bool bAvoidGrowth, bool bRemove)
 {
 	PROFILE_FUNC();
 
@@ -588,9 +588,13 @@ int CvCityAI::AI_specialistValue(SpecialistTypes eSpecialist, bool bAvoidGrowth,
 	int iI, iJ;
 	int iNumCities = GET_PLAYER(getOwnerINLINE()).getNumCities();
 
+	SpecialistTypes eSpecialist = getSpecialistTypeFromClass(eSpecialistClass);
+	if (eSpecialist == NO_SPECIALIST)
+		return 0;
+
 	for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
 	{
-		aiYields[iI] = GET_PLAYER(getOwnerINLINE()).specialistYield(eSpecialist, ((YieldTypes)iI));
+		aiYields[iI] = GC.getSpecialistInfo(eSpecialist).getYieldChange((YieldTypes)iI) + GET_PLAYER(getOwnerINLINE()).getSpecialistClassExtraYield(eSpecialistClass, ((YieldTypes)iI));
 	}
 	int iSpecialistHealth = GC.getSpecialistInfo(eSpecialist).getHealth();
 
@@ -609,7 +613,7 @@ int CvCityAI::AI_specialistValue(SpecialistTypes eSpecialist, bool bAvoidGrowth,
 
 	for (iI = 0; iI < NUM_COMMERCE_TYPES; iI++)
 	{
-		aiCommerceYields[iI] = GET_PLAYER(getOwnerINLINE()).specialistCommerce(eSpecialist, ((CommerceTypes)iI));
+		aiCommerceYields[iI] = GC.getSpecialistInfo(eSpecialist).getCommerceChange((CommerceTypes)iI) + GET_PLAYER(getOwnerINLINE()).getSpecialistClassExtraCommerce(eSpecialistClass, ((CommerceTypes)iI));
 	}
 
 	iValue = AI_yieldValue(aiYields, aiCommerceYields, bAvoidGrowth, bRemove);
@@ -644,7 +648,7 @@ int CvCityAI::AI_specialistValue(SpecialistTypes eSpecialist, bool bAvoidGrowth,
 		}
 
 		//iGreatPeopleRate = ((iGreatPeopleRate * getTotalGreatPeopleRateModifier()) / 100);
-		// UnitTypes iGreatPeopleType = (UnitTypes)GC.getSpecialistInfo(eSpecialist).getGreatPeopleUnitClass();
+		// UnitTypes iGreatPeopleType = (UnitTypes)GC.getSpecialistInfo(eSpecialistClass).getGreatPeopleUnitClass();
 
 		// BETTER_BTS_AI_MOD - jdog5000 - 12/06/09 - Scale up value for civs/civics with bonuses
 		iGreatPeopleRate *= (100 + GET_PLAYER(getOwnerINLINE()).getGreatPeopleRateModifier());
@@ -653,7 +657,7 @@ int CvCityAI::AI_specialistValue(SpecialistTypes eSpecialist, bool bAvoidGrowth,
 		iTempValue = (iGreatPeopleRate * iGPPValue);
 
 		// if (isHuman() && (getGreatPeopleUnitRate(iGreatPeopleType) == 0)
-		// 	&& (getForceSpecialistCount(eSpecialist) == 0) && !AI_isEmphasizeGreatPeople())
+		// 	&& (getForceSpecialistClassCount(eSpecialistClass) == 0) && !AI_isEmphasizeGreatPeople())
 		// {
 		// 	iTempValue -= (iGreatPeopleRate * 4);
 		// }
@@ -794,10 +798,10 @@ int CvCityAI::AI_specialistValue(SpecialistTypes eSpecialist, bool bAvoidGrowth,
 	}
 	else
 	{
-		SpecialistTypes eGenericCitizen = (SpecialistTypes)GC.getDefineINT("DEFAULT_SPECIALIST");
+		SpecialistClassTypes eGenericCitizen = (SpecialistClassTypes)GC.getDefineINT("DEFAULT_SPECIALISTCLASS");
 
 		// are we the generic specialist?
-		if (eSpecialist == eGenericCitizen)
+		if (eSpecialistClass == eGenericCitizen)
 		{
 			iValue *= 60;
 			iValue /= 100;
@@ -824,8 +828,8 @@ int CvCityAI::AI_specialistValue(SpecialistTypes eSpecialist, bool bAvoidGrowth,
 	/**			why were we doing these calcs for specialists that don't give health/happy?			**/
 	/*************************************************************************************************/
 	/** -- Start Original Code                                                                      **
-		int iSpecialistHealth = GC.getSpecialistInfo(eSpecialist).getHealth();
-		int iSpecialistHappiness = GC.getSpecialistInfo(eSpecialist).getHappiness();
+		int iSpecialistHealth = GC.getSpecialistInfo(eSpecialistClass).getHealth();
+		int iSpecialistHappiness = GC.getSpecialistInfo(eSpecialistClass).getHappiness();
 		int iHappinessLevel = happyLevel() - unhappyLevel(1);
 		int iAngryPopulation = range(-iHappinessLevel, 0, (getPopulation() + 1));
 		int iHealthLevel = goodHealth() - badHealth(false, std::max(0, (iHappinessLevel + 1) / 2));
@@ -862,7 +866,7 @@ int CvCityAI::AI_specialistValue(SpecialistTypes eSpecialist, bool bAvoidGrowth,
 	/*************************************************************************************************/
 	int iHappinessLevel = happyLevel() - unhappyLevel(1);
 	//Old health specialist weight (versions <=482) begin
-	//int iSpecialistHealth = GC.getSpecialistInfo(eSpecialist).getHealth();
+	//int iSpecialistHealth = GC.getSpecialistInfo(eSpecialistClass).getHealth();
 	//int iHealthLevel = goodHealth() - badHealth(/*bNoAngry*/ false);
 
 	/*if (iSpecialistHealth != 0)
@@ -4513,12 +4517,12 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 			{
 				int iSpecialistsValue = 0;
 				int iCurrentSpecialistsRunnable = 0;
-				for (iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
+				for (iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 				{
-					if (iI != GC.getDefineINT("DEFAULT_SPECIALIST"))
+					if (iI != GC.getDefineINT("DEFAULT_SPECIALISTCLASS"))
 					{
-						bool bUnlimited = (GET_PLAYER(getOwnerINLINE()).isSpecialistValid((SpecialistTypes)iI));
-						int iRunnable = (getMaxSpecialistCount((SpecialistTypes)iI) > 0);
+						bool bUnlimited = (GET_PLAYER(getOwnerINLINE()).isSpecialistClassValid((SpecialistClassTypes)iI));
+						int iRunnable = (getMaxSpecialistClassCount((SpecialistClassTypes)iI) > 0);
 
 						if (bUnlimited || (iRunnable > 0))
 						{
@@ -4533,13 +4537,13 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 						}
 
 
-						if (kBuilding.getSpecialistCount(iI) > 0)
+						if (kBuilding.getSpecialistClassCount(iI) > 0)
 						{
 							if ((!bUnlimited) && (iRunnable < 5))
 							{
-								iTempValue = AI_specialistValue(((SpecialistTypes)iI), false, false);
+								iTempValue = AI_specialistClassValue(((SpecialistClassTypes)iI), false, false);
 
-								iTempValue *= (20 + (40 * kBuilding.getSpecialistCount(iI)));
+								iTempValue *= (20 + (40 * kBuilding.getSpecialistClassCount(iI)));
 								iTempValue /= 100;
 
 /************************************************************************************************/
@@ -4817,19 +4821,19 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 
 				iValue += kBuilding.getEnemyWarWearinessModifier() / 2;
 
-				for (iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
+				for (iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 				{
-					if (kBuilding.getFreeSpecialistCount(iI) > 0)
+					if (kBuilding.getFreeSpecialistClassCount(iI) > 0)
 					{
-						iValue += ((AI_specialistValue(((SpecialistTypes)iI), false, false) * kBuilding.getFreeSpecialistCount(iI)) / 50);
+						iValue += ((AI_specialistClassValue(((SpecialistClassTypes)iI), false, false) * kBuilding.getFreeSpecialistClassCount(iI)) / 50);
 					}
 				}
 
 				for (iI = 0; iI < GC.getNumImprovementInfos(); iI++)
 				{
-					if (kBuilding.getImprovementFreeSpecialist(iI) > 0)
+					if (kBuilding.getImprovementFreeSpecialistClass(iI) > 0)
 					{
-						iValue += kBuilding.getImprovementFreeSpecialist(iI) * countNumImprovedPlots((ImprovementTypes)iI, true) * 50;
+						iValue += kBuilding.getImprovementFreeSpecialistClass(iI) * countNumImprovedPlots((ImprovementTypes)iI, true) * 50;
 					}
 				}
 
@@ -5126,9 +5130,9 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 						iTempValue += ((getPowerYieldRateModifier((YieldTypes)iI) * getBaseYieldRate((YieldTypes)iI)) / 12);
 					}
 
-					for (iJ = 0; iJ < GC.getNumSpecialistInfos(); iJ++)
+					for (iJ = 0; iJ < GC.getNumSpecialistClassInfos(); iJ++)
 					{
-						iTempValue += ((kBuilding.getSpecialistYieldChange(iJ, iI) * kOwner.getTotalPopulation()) / 5);
+						iTempValue += ((kBuilding.getSpecialistClassYieldChange(iJ, iI) * kOwner.getTotalPopulation()) / 5);
 					}
 
 					for (iJ = 0; iJ < GC.getNumBonusInfos(); iJ++)
@@ -8120,7 +8124,7 @@ int CvCityAI::AI_getImprovementValue( CvPlot* pPlot, ImprovementTypes eImproveme
 				iValue += 500;
 			}*/
 
-			if (getImprovementFreeSpecialists(eFinalImprovement) > 0)
+			if (getImprovementFreeSpecialistClasses(eFinalImprovement) > 0)
 			{
 				iValue += 2000;
 			}
@@ -9588,13 +9592,13 @@ void CvCityAI::AI_doHurry(bool bForce)
 
 			if (eProductionBuilding != NO_BUILDING)
 			{
-				if (GC.getDefineINT("DEFAULT_SPECIALIST") != NO_SPECIALIST)
+				if (GC.getDefineINT("DEFAULT_SPECIALISTCLASS") != NO_SPECIALISTCLASS)
 				{
-					if (getSpecialistCount((SpecialistTypes)(GC.getDefineINT("DEFAULT_SPECIALIST"))) > 0)
+					if (getSpecialistClassCount((SpecialistClassTypes)(GC.getDefineINT("DEFAULT_SPECIALISTCLASS"))) > 0)
 					{
-						for (iJ = 0; iJ < GC.getNumSpecialistInfos(); iJ++)
+						for (iJ = 0; iJ < GC.getNumSpecialistClassInfos(); iJ++)
 						{
-							if (GC.getBuildingInfo(eProductionBuilding).getSpecialistCount(iJ) > 0)
+							if (GC.getBuildingInfo(eProductionBuilding).getSpecialistClassCount(iJ) > 0)
 							{
 								iMinTurns = std::min(iMinTurns, 10);
 								break;
@@ -10351,7 +10355,7 @@ bool CvCityAI::AI_chooseProcess(CommerceTypes eCommerceType)
 
 
 // Returns true if a worker was added to a plot...
-bool CvCityAI::AI_addBestCitizen(bool bWorkers, bool bSpecialists, int* piBestPlot, SpecialistTypes* peBestSpecialist)
+bool CvCityAI::AI_addBestCitizen(bool bWorkers, bool bSpecialists, int* piBestPlot, SpecialistClassTypes* peBestSpecialist)
 {
 	PROFILE_FUNC();
 
@@ -10360,16 +10364,16 @@ bool CvCityAI::AI_addBestCitizen(bool bWorkers, bool bSpecialists, int* piBestPl
 	bool bIsSpecialistForced = false;
 
 	int iBestSpecialistValue = 0;
-	SpecialistTypes eBestSpecialist = NO_SPECIALIST;
-	SpecialistTypes eBestForcedSpecialist = NO_SPECIALIST;
+	SpecialistClassTypes eBestSpecialist = NO_SPECIALISTCLASS;
+	SpecialistClassTypes eBestForcedSpecialist = NO_SPECIALISTCLASS;
 
 	if (bSpecialists)
 	{
 		// count the total forced specialists
 		int iTotalForcedSpecialists = 0;
-		for (int iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 		{
-			int iForcedSpecialistCount = getForceSpecialistCount((SpecialistTypes)iI);
+			int iForcedSpecialistCount = getForceSpecialistClassCount((SpecialistClassTypes)iI);
 			if (iForcedSpecialistCount > 0)
 			{
 				bIsSpecialistForced = true;
@@ -10383,27 +10387,27 @@ bool CvCityAI::AI_addBestCitizen(bool bWorkers, bool bSpecialists, int* piBestPl
 			int iBestForcedValue = MIN_INT;
 
 			int iTotalSpecialists = 1 + getSpecialistPopulation();
-			for (int iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
+			for (int iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 			{
-				if (isSpecialistValid((SpecialistTypes)iI, 1))
+				if (isSpecialistClassValid((SpecialistClassTypes)iI, 1))
 				{
-					int iForcedSpecialistCount = getForceSpecialistCount((SpecialistTypes)iI);
+					int iForcedSpecialistCount = getForceSpecialistClassCount((SpecialistClassTypes)iI);
 					if (iForcedSpecialistCount > 0)
 					{
-						int iSpecialistCount = getSpecialistCount((SpecialistTypes)iI);
+						int iSpecialistCount = getSpecialistClassCount((SpecialistClassTypes)iI);
 
 						// the value is based on how close we are to our goal ratio forced/total
 						int iForcedValue = ((iForcedSpecialistCount * 128) / iTotalForcedSpecialists) -  ((iSpecialistCount * 128) / iTotalSpecialists);
 						if (iForcedValue >= iBestForcedValue)
 						{
-							int iSpecialistValue = AI_specialistValue((SpecialistTypes)iI, bAvoidGrowth, false);
+							int iSpecialistValue = AI_specialistClassValue((SpecialistClassTypes)iI, bAvoidGrowth, false);
 
 							// if forced value larger, or if equal, does this specialist have a higher value
 							if (iForcedValue > iBestForcedValue || iSpecialistValue > iBestSpecialistValue)
 							{
 								iBestForcedValue = iForcedValue;
 								iBestSpecialistValue = iSpecialistValue;
-								eBestForcedSpecialist = ((SpecialistTypes)iI);
+								eBestForcedSpecialist = ((SpecialistClassTypes)iI);
 								eBestSpecialist = eBestForcedSpecialist;
 							}
 						}
@@ -10415,15 +10419,15 @@ bool CvCityAI::AI_addBestCitizen(bool bWorkers, bool bSpecialists, int* piBestPl
 		// if we do not have a best specialist yet, then just find the one with the best value
 		if (eBestSpecialist == NO_SPECIALIST)
 		{
-			for (int iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
+			for (int iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 			{
-				if (isSpecialistValid((SpecialistTypes)iI, 1))
+				if (isSpecialistClassValid((SpecialistClassTypes)iI, 1))
 				{
-					int iValue = AI_specialistValue(((SpecialistTypes)iI), bAvoidGrowth, false);
+					int iValue = AI_specialistClassValue(((SpecialistClassTypes)iI), bAvoidGrowth, false);
 					if (iValue >= iBestSpecialistValue)
 					{
 						iBestSpecialistValue = iValue;
-						eBestSpecialist = ((SpecialistTypes)iI);
+						eBestSpecialist = ((SpecialistClassTypes)iI);
 					}
 				}
 			}
@@ -10467,13 +10471,13 @@ bool CvCityAI::AI_addBestCitizen(bool bWorkers, bool bSpecialists, int* piBestPl
 		if (iBestPlotValue > iBestSpecialistValue || (bIsSpecialistForced && eBestForcedSpecialist == NO_SPECIALIST))
 		{
 			// do not work the specialist
-			eBestSpecialist = NO_SPECIALIST;
+			eBestSpecialist = NO_SPECIALISTCLASS;
 		}
 	}
 
-	if (eBestSpecialist != NO_SPECIALIST)
+	if (eBestSpecialist != NO_SPECIALISTCLASS)
 	{
-		changeSpecialistCount(eBestSpecialist, 1);
+		changeSpecialistClassCount(eBestSpecialist, 1);
 		if (piBestPlot != NULL)
 		{
 			FAssert(peBestSpecialist != NULL);
@@ -10488,7 +10492,7 @@ bool CvCityAI::AI_addBestCitizen(bool bWorkers, bool bSpecialists, int* piBestPl
 		if (piBestPlot != NULL)
 		{
 			FAssert(peBestSpecialist != NULL);
-			*peBestSpecialist = NO_SPECIALIST;
+			*peBestSpecialist = NO_SPECIALISTCLASS;
 			*piBestPlot = iBestPlot;
 
 		}
@@ -10500,10 +10504,10 @@ bool CvCityAI::AI_addBestCitizen(bool bWorkers, bool bSpecialists, int* piBestPl
 
 
 // Returns true if a worker was removed from a plot...
-bool CvCityAI::AI_removeWorstCitizen(SpecialistTypes eIgnoreSpecialist)
+bool CvCityAI::AI_removeWorstCitizen(SpecialistClassTypes eIgnoreSpecialist)
 {
 	CvPlot* pLoopPlot;
-	SpecialistTypes eWorstSpecialist;
+	SpecialistClassTypes eWorstSpecialist;
 	bool bAvoidGrowth;
 	bool bIgnoreGrowth;
 	int iWorstPlot;
@@ -10515,16 +10519,16 @@ bool CvCityAI::AI_removeWorstCitizen(SpecialistTypes eIgnoreSpecialist)
 	if (extraFreeSpecialists() < 0)
 	{
 		// does generic 'citizen' specialist exist?
-		if (GC.getDefineINT("DEFAULT_SPECIALIST") != NO_SPECIALIST)
+		if (GC.getDefineINT("DEFAULT_SPECIALISTCLASS") != NO_SPECIALISTCLASS)
 		{
 			// is ignore something other than generic citizen?
-			if (eIgnoreSpecialist != GC.getDefineINT("DEFAULT_SPECIALIST"))
+			if (eIgnoreSpecialist != GC.getDefineINT("DEFAULT_SPECIALISTCLASS"))
 			{
 				// do we have at least one more generic citizen than we are forcing?
-				if (getSpecialistCount((SpecialistTypes)(GC.getDefineINT("DEFAULT_SPECIALIST"))) > getForceSpecialistCount((SpecialistTypes)(GC.getDefineINT("DEFAULT_SPECIALIST"))))
+				if (getSpecialistClassCount((SpecialistClassTypes)(GC.getDefineINT("DEFAULT_SPECIALISTCLASS"))) > getForceSpecialistClassCount((SpecialistClassTypes)(GC.getDefineINT("DEFAULT_SPECIALISTCLASS"))))
 				{
 					// remove the extra generic citzen
-					changeSpecialistCount(((SpecialistTypes)(GC.getDefineINT("DEFAULT_SPECIALIST"))), -1);
+					changeSpecialistClassCount(((SpecialistClassTypes)(GC.getDefineINT("DEFAULT_SPECIALISTCLASS"))), -1);
 					return true;
 				}
 			}
@@ -10535,24 +10539,24 @@ bool CvCityAI::AI_removeWorstCitizen(SpecialistTypes eIgnoreSpecialist)
 	bIgnoreGrowth = AI_ignoreGrowth();
 
 	iWorstValue = MAX_INT;
-	eWorstSpecialist = NO_SPECIALIST;
+	eWorstSpecialist = NO_SPECIALISTCLASS;
 	iWorstPlot = -1;
 
 	// if we are using more specialists than the free ones we get
 	if (extraFreeSpecialists() < 0)
 	{
-		for (iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
+		for (iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 		{
 			if (eIgnoreSpecialist != iI)
 			{
-				if (getSpecialistCount((SpecialistTypes)iI) > getForceSpecialistCount((SpecialistTypes)iI))
+				if (getSpecialistClassCount((SpecialistClassTypes)iI) > getForceSpecialistClassCount((SpecialistClassTypes)iI))
 				{
-					iValue = AI_specialistValue(((SpecialistTypes)iI), bAvoidGrowth, /*bRemove*/ true);
+					iValue = AI_specialistClassValue(((SpecialistClassTypes)iI), bAvoidGrowth, /*bRemove*/ true);
 
 					if (iValue < iWorstValue)
 					{
 						iWorstValue = iValue;
-						eWorstSpecialist = ((SpecialistTypes)iI);
+						eWorstSpecialist = ((SpecialistClassTypes)iI);
 						iWorstPlot = -1;
 					}
 				}
@@ -10576,7 +10580,7 @@ bool CvCityAI::AI_removeWorstCitizen(SpecialistTypes eIgnoreSpecialist)
 					if (iValue < iWorstValue)
 					{
 						iWorstValue = iValue;
-						eWorstSpecialist = NO_SPECIALIST;
+						eWorstSpecialist = NO_SPECIALISTCLASS;
 						iWorstPlot = iI;
 					}
 				}
@@ -10584,9 +10588,9 @@ bool CvCityAI::AI_removeWorstCitizen(SpecialistTypes eIgnoreSpecialist)
 		}
 	}
 
-	if (eWorstSpecialist != NO_SPECIALIST)
+	if (eWorstSpecialist != NO_SPECIALISTCLASS)
 	{
-		changeSpecialistCount(eWorstSpecialist, -1);
+		changeSpecialistClassCount(eWorstSpecialist, -1);
 		return true;
 	}
 	else if (iWorstPlot != -1)
@@ -10598,16 +10602,16 @@ bool CvCityAI::AI_removeWorstCitizen(SpecialistTypes eIgnoreSpecialist)
 	// if we still have not removed one, then try again, but do not ignore the one we were told to ignore
 	if (extraFreeSpecialists() < 0)
 	{
-		for (iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
+		for (iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 		{
-			if (getSpecialistCount((SpecialistTypes)iI) > 0)
+			if (getSpecialistClassCount((SpecialistClassTypes)iI) > 0)
 			{
-				iValue = AI_specialistValue(((SpecialistTypes)iI), bAvoidGrowth, /*bRemove*/ true);
+				iValue = AI_specialistClassValue(((SpecialistClassTypes)iI), bAvoidGrowth, /*bRemove*/ true);
 
 				if (iValue < iWorstValue)
 				{
 					iWorstValue = iValue;
-					eWorstSpecialist = ((SpecialistTypes)iI);
+					eWorstSpecialist = ((SpecialistClassTypes)iI);
 					iWorstPlot = -1;
 				}
 			}
@@ -10616,7 +10620,7 @@ bool CvCityAI::AI_removeWorstCitizen(SpecialistTypes eIgnoreSpecialist)
 
 	if (eWorstSpecialist != NO_SPECIALIST)
 	{
-		changeSpecialistCount(eWorstSpecialist, -1);
+		changeSpecialistClassCount(eWorstSpecialist, -1);
 		return true;
 	}
 
@@ -10826,9 +10830,9 @@ bool CvCityAI::AI_foodAvailable(int iExtra)
 		iPopulation--;
 	}
 
-	for (iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
+	for (iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 	{
-		iFoodCount += (GC.getSpecialistInfo((SpecialistTypes)iI).getYieldChange(YIELD_FOOD) * getFreeSpecialistCount((SpecialistTypes)iI));
+		iFoodCount += (GC.getSpecialistInfo((SpecialistTypes)iI).getYieldChange(YIELD_FOOD) * getFreeSpecialistClassCount((SpecialistClassTypes)iI));
 	}
 
 	if (iFoodCount < foodConsumption(false, iExtra))
@@ -12363,7 +12367,7 @@ void CvCityAI::AI_bestPlotBuild(CvPlot* pPlot, int* piBestValue, BuildTypes* peB
 					iValue += 500;
 				}
 
-				if (getImprovementFreeSpecialists(eFinalImprovement) > 0)
+				if (getImprovementFreeSpecialistClasses(eFinalImprovement) > 0)
 				{
 					iValue += 2000;
 				}
@@ -12373,7 +12377,7 @@ void CvCityAI::AI_bestPlotBuild(CvPlot* pPlot, int* piBestValue, BuildTypes* peB
 /**																								**/
 /**						Allows improvements to grant specific specialists						**/
 /*************************************************************************************************/
-				if (GC.getImprovementInfo(eFinalImprovement).getFreeSpecialist() != NO_SPECIALIST)
+				if (GC.getImprovementInfo(eFinalImprovement).getFreeSpecialistClass() != NO_SPECIALIST)
 				{
 					iValue += 2000;
 				}
@@ -13170,9 +13174,9 @@ void CvCityAI::AI_buildGovernorChooseProduction()
 		}
 	}
 
-	if (GC.getDefineINT("DEFAULT_SPECIALIST") != NO_SPECIALIST)
+	if (GC.getDefineINT("DEFAULT_SPECIALISTCLASS") != NO_SPECIALISTCLASS)
 	{
-		if (getSpecialistCount((SpecialistTypes)(GC.getDefineINT("DEFAULT_SPECIALIST"))) > 0)
+		if (getSpecialistClassCount((SpecialistClassTypes)(GC.getDefineINT("DEFAULT_SPECIALISTCLASS"))) > 0)
 		{
 			if (AI_chooseBuilding(BUILDINGFOCUS_SPECIALIST, 60))
 			{
@@ -13411,26 +13415,29 @@ int CvCityAI::AI_countGoodSpecialists(bool bHealthy)
 {
 	CvPlayerAI& kPlayer = GET_PLAYER(getOwnerINLINE());
 	int iCount = 0;
-	for (int iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 	{
-		SpecialistTypes eSpecialist = (SpecialistTypes)iI;
-
-		int iValue = 0;
-
-		iValue += 100 * kPlayer.specialistYield(eSpecialist, YIELD_FOOD);
-		iValue += 65 * kPlayer.specialistYield(eSpecialist, YIELD_PRODUCTION);
-		iValue += 40 * kPlayer.specialistYield(eSpecialist, YIELD_COMMERCE);
-
-		iValue += 40 * kPlayer.specialistCommerce(eSpecialist, COMMERCE_RESEARCH);
-		iValue += 40 * kPlayer.specialistCommerce(eSpecialist, COMMERCE_GOLD);
-		iValue += 20 * kPlayer.specialistCommerce(eSpecialist, COMMERCE_ESPIONAGE);
-		iValue += 15 * kPlayer.specialistCommerce(eSpecialist, COMMERCE_CULTURE);
-		if (!isBarbarian())
-			iValue += 25 * GC.getSpecialistInfo(eSpecialist).getGreatPeopleRateChange();
-
-		if (iValue >= (bHealthy ? 200 : 300))
+		SpecialistClassTypes eSpecialistClass = (SpecialistClassTypes)iI;
+		SpecialistTypes eSpecialist = getSpecialistTypeFromClass(eSpecialistClass);
+		if (eSpecialist != NO_SPECIALIST)
 		{
-			iCount += getMaxSpecialistCount(eSpecialist);
+			int iValue = 0;
+
+			iValue += 100 * (GC.getSpecialistInfo(eSpecialist).getYieldChange(YIELD_FOOD) + kPlayer.getSpecialistClassExtraYield(eSpecialistClass, YIELD_FOOD));
+			iValue += 65 * (GC.getSpecialistInfo(eSpecialist).getYieldChange(YIELD_PRODUCTION) + kPlayer.getSpecialistClassExtraYield(eSpecialistClass, YIELD_PRODUCTION));
+			iValue += 40 * (GC.getSpecialistInfo(eSpecialist).getYieldChange(YIELD_COMMERCE) + kPlayer.getSpecialistClassExtraYield(eSpecialistClass, YIELD_COMMERCE));
+
+			iValue += 40 * (GC.getSpecialistInfo(eSpecialist).getCommerceChange(COMMERCE_RESEARCH) + kPlayer.getSpecialistClassExtraCommerce(eSpecialistClass, COMMERCE_RESEARCH));
+			iValue += 40 * (GC.getSpecialistInfo(eSpecialist).getCommerceChange(COMMERCE_GOLD) + kPlayer.getSpecialistClassExtraCommerce(eSpecialistClass, COMMERCE_GOLD));
+			iValue += 20 * (GC.getSpecialistInfo(eSpecialist).getCommerceChange(COMMERCE_ESPIONAGE) + kPlayer.getSpecialistClassExtraCommerce(eSpecialistClass, COMMERCE_ESPIONAGE));
+			iValue += 15 * (GC.getSpecialistInfo(eSpecialist).getCommerceChange(COMMERCE_CULTURE) +  kPlayer.getSpecialistClassExtraCommerce(eSpecialistClass, COMMERCE_CULTURE));
+			if (!isBarbarian())
+				iValue += 25 * GC.getSpecialistInfo(eSpecialist).getGreatPeopleRateChange();
+
+			if (iValue >= (bHealthy ? 200 : 300))
+			{
+				iCount += getMaxSpecialistClassCount(eSpecialistClass);
+			}
 		}
 	}
 	iCount -= getFreeSpecialist();
@@ -13564,8 +13571,8 @@ int CvCityAI::AI_buildingSpecialYieldChangeValue(BuildingTypes eBuilding, YieldT
 	}
 	if (iWorkedCount == 0)
 	{
-		SpecialistTypes eDefaultSpecialist = (SpecialistTypes)GC.getDefineINT("DEFAULT_SPECIALIST");
-		if ((getPopulation() > 2) && ((eDefaultSpecialist == NO_SPECIALIST) || (getSpecialistCount(eDefaultSpecialist) == 0)))
+		SpecialistClassTypes eDefaultSpecialist = (SpecialistClassTypes)GC.getDefineINT("DEFAULT_SPECIALISTCLASS");
+		if ((getPopulation() > 2) && ((eDefaultSpecialist == NO_SPECIALISTCLASS) || (getSpecialistClassCount(eDefaultSpecialist) == 0)))
 		{
 			iValue /= 2;
 		}
@@ -14228,7 +14235,7 @@ void CvCityAI::AI_updateWorkersNeededHere()
 	{
 		//Add an additional citizen to account for future growth.
 		int iBestPlot = -1;
-		SpecialistTypes eBestSpecialist = NO_SPECIALIST;
+		SpecialistClassTypes eBestSpecialist = NO_SPECIALISTCLASS;
 
 		if (angryPopulation() == 0)
 		{
@@ -14257,11 +14264,11 @@ void CvCityAI::AI_updateWorkersNeededHere()
 							ImprovementTypes eImprovement = GET_PLAYER(getOwner()).getPlayerImprovement(eImprovementClass);
 							if (eImprovement != NO_IMPROVEMENT)
 							{
-								if ((getImprovementFreeSpecialists(eImprovement) > 0) || (GC.getImprovementInfo(eImprovement).getHappiness() > 0))
+								if ((getImprovementFreeSpecialistClasses(eImprovement) > 0) || (GC.getImprovementInfo(eImprovement).getHappiness() > 0))
 								{
 									iSpecialCount++;
 								}
-								if (GC.getImprovementInfo(finalImprovementUpgrade(eImprovement, GET_PLAYER(getOwnerINLINE()).getCivilizationType(), 0, NO_IMPROVEMENT, getOwner())).getFreeSpecialist() != NO_SPECIALIST)
+								if (GC.getImprovementInfo(finalImprovementUpgrade(eImprovement, GET_PLAYER(getOwnerINLINE()).getCivilizationType(), 0, NO_IMPROVEMENT, getOwner())).getFreeSpecialistClass() != NO_SPECIALIST)
 								{
 
 									iSpecialCount++;
@@ -14280,7 +14287,7 @@ void CvCityAI::AI_updateWorkersNeededHere()
 		}
 		if (eBestSpecialist != NO_SPECIALIST)
 		{
-			changeSpecialistCount(eBestSpecialist, -1);
+			changeSpecialistClassCount(eBestSpecialist, -1);
 		}
 
 		if (iBestPotentialPlotValue > iWorstWorkedPlotValue)

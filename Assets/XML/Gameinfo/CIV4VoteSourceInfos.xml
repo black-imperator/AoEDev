@@ -12,7 +12,7 @@
 			<PopupText>TXT_KEY_POPUP_CHOOSE_OVERCOUNCIL_ELECTION</PopupText>
 			<SecretaryGeneralText>TXT_KEY_OVERCOUNCIL_LEADER</SecretaryGeneralText>
 			<iVoteInterval>10</iVoteInterval>
-			<FreeSpecialist>NONE</FreeSpecialist>
+			<FreeSpecialistClass>NONE</FreeSpecialistClass>
 			<Civic>CIVIC_OVERCOUNCIL</Civic>
 			<ReligionYields/>
 			<ReligionCommerces/>
@@ -23,7 +23,7 @@
 			<PopupText>TXT_KEY_POPUP_CHOOSE_UNDERCOUNCIL_ELECTION</PopupText>
 			<SecretaryGeneralText>TXT_KEY_UNDERCOUNCIL_LEADER</SecretaryGeneralText>
 			<iVoteInterval>15</iVoteInterval>
-			<FreeSpecialist>NONE</FreeSpecialist>
+			<FreeSpecialistClass>NONE</FreeSpecialistClass>
 			<Civic>CIVIC_UNDERCOUNCIL</Civic>
 			<ReligionYields/>
 			<ReligionCommerces/>

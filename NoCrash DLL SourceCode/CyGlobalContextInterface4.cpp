@@ -58,7 +58,10 @@ void CyGlobalContextPythonInterface4(python::class_<CyGlobalContext>& x)
 		.def("getNumVictoryInfos", &CyGlobalContext::getNumVictoryInfos, "() - Total Victory Infos XML\\GameInfo\\CIV4VictoryInfos.xml")
 		.def("getVictoryInfo", &CyGlobalContext::getVictoryInfo, python::return_value_policy<python::reference_existing_object>(), "(VictoryID) - CvInfo for VictoryID")
 
-		.def("getNumSpecialistInfos", &CyGlobalContext::getNumSpecialistInfos, "() - Total Specialist Infos XML\\Units\\CIV4SpecialistInfos.xml")
+		.def("getNumSpecialistClassInfos", &CyGlobalContext::getNumSpecialistClassInfos, "() - Total Specialist Class Infos XML\\GameInfo\\CIV4SpecialistInfos.xml")
+		.def("getSpecialistClassInfo", &CyGlobalContext::getSpecialistClassInfo, python::return_value_policy<python::reference_existing_object>(), "(SpecialistClassID) - CvInfo for SpecialistID")
+
+		.def("getNumSpecialistInfos", &CyGlobalContext::getNumSpecialistInfos, "() - Total Specialist Infos XML\\GameInfo\\CIV4SpecialistInfos.xml")
 		.def("getSpecialistInfo", &CyGlobalContext::getSpecialistInfo, python::return_value_policy<python::reference_existing_object>(), "(SpecialistID) - CvInfo for SpecialistID")
 
 		.def("getNumSpawnGroupInfos", &CyGlobalContext::getNumSpawnGroupInfos, "() - Total SpawnGroup Infos XML\\GameInfo\\CIV4SpawnGroupInfos.xml")

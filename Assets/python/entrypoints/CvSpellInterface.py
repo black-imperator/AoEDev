@@ -1970,7 +1970,7 @@ def spellGiftVampirism(caster):
 
 def spellGiveHammerToCraftsman(caster, promotion):
 	pCity = caster.plot().getPlotCity()
-	pCity.changeFreeSpecialistCount(getInfoType('SPECIALIST_ENGINEER'), 1)
+	pCity.changeFreeSpecialistClassCount(getInfoType('SPECIALISTCLASS_ENGINEER'), 1)
 	caster.setHasPromotion(getInfoType(promotion), False)
 
 def reqHastursRazor(caster):
@@ -2351,43 +2351,43 @@ def reqKidnap(caster):
 	if pCity.getTeam() == caster.getTeam():
 		return False
 	i = 0
-	i = i + pCity.getFreeSpecialistCount(getInfoType('SPECIALIST_GREAT_PRIEST'))
-	i = i + pCity.getFreeSpecialistCount(getInfoType('SPECIALIST_GREAT_ARTIST'))
-	i = i + pCity.getFreeSpecialistCount(getInfoType('SPECIALIST_GREAT_MERCHANT'))
-	i = i + pCity.getFreeSpecialistCount(getInfoType('SPECIALIST_GREAT_ENGINEER'))
-	i = i + pCity.getFreeSpecialistCount(getInfoType('SPECIALIST_GREAT_SCIENTIST'))
-	i = i + pCity.getFreeSpecialistCount(getInfoType('SPECIALIST_GREAT_HEALER'))
+	i = i + pCity.getFreeSpecialistClassCount(getInfoType('SPECIALISTCLASS_GREAT_PRIEST'))
+	i = i + pCity.getFreeSpecialistClassCount(getInfoType('SPECIALISTCLASS_GREAT_ARTIST'))
+	i = i + pCity.getFreeSpecialistClassCount(getInfoType('SPECIALISTCLASS_GREAT_MERCHANT'))
+	i = i + pCity.getFreeSpecialistClassCount(getInfoType('SPECIALISTCLASS_GREAT_ENGINEER'))
+	i = i + pCity.getFreeSpecialistClassCount(getInfoType('SPECIALISTCLASS_GREAT_SCIENTIST'))
+	i = i + pCity.getFreeSpecialistClassCount(getInfoType('SPECIALISTCLASS_GREAT_HEALER'))
 	if i == 0:
 		return False
 	return True
 
 def spellKidnap(caster):
 	pCity = caster.plot().getPlotCity()
-	if pCity.getFreeSpecialistCount(getInfoType('SPECIALIST_GREAT_PRIEST')) > 0:
+	if pCity.getFreeSpecialistClassCount(getInfoType('SPECIALISTCLASS_GREAT_PRIEST')) > 0:
 		iUnit = getInfoType('UNIT_PROPHET')
-		iSpec = getInfoType('SPECIALIST_GREAT_PRIEST')
-	if pCity.getFreeSpecialistCount(getInfoType('SPECIALIST_GREAT_ARTIST')) > 0:
+		iSpec = getInfoType('SPECIALISTCLASS_GREAT_PRIEST')
+	if pCity.getFreeSpecialistClassCount(getInfoType('SPECIALISTCLASS_GREAT_ARTIST')) > 0:
 		iUnit = getInfoType('UNIT_ARTIST')
-		iSpec = getInfoType('SPECIALIST_GREAT_ARTIST')
-	if pCity.getFreeSpecialistCount(getInfoType('SPECIALIST_GREAT_HEALER')) > 0:
+		iSpec = getInfoType('SPECIALISTCLASS_GREAT_ARTIST')
+	if pCity.getFreeSpecialistClassCount(getInfoType('SPECIALISTCLASS_GREAT_HEALER')) > 0:
 		iUnit = getInfoType('UNIT_HEALER')
-		iSpec = getInfoType('SPECIALIST_GREAT_HEALER')
-	if pCity.getFreeSpecialistCount(getInfoType('SPECIALIST_GREAT_MERCHANT')) > 0:
+		iSpec = getInfoType('SPECIALISTCLASS_GREAT_HEALER')
+	if pCity.getFreeSpecialistClassCount(getInfoType('SPECIALISTCLASS_GREAT_MERCHANT')) > 0:
 		iUnit = getInfoType('UNIT_MERCHANT')
 		iSpec = getInfoType('SPECIALIST_GREAT_MERCHANT')
-	if pCity.getFreeSpecialistCount(getInfoType('SPECIALIST_GREAT_ENGINEER')) > 0:
+	if pCity.getFreeSpecialistClassCount(getInfoType('SPECIALISTCLASS_GREAT_ENGINEER')) > 0:
 		iUnit = getInfoType('UNIT_ENGINEER')
-		iSpec = getInfoType('SPECIALIST_GREAT_ENGINEER')
-	if pCity.getFreeSpecialistCount(getInfoType('SPECIALIST_GREAT_SCIENTIST')) > 0:
+		iSpec = getInfoType('SPECIALISTCLASS_GREAT_ENGINEER')
+	if pCity.getFreeSpecialistClassCount(getInfoType('SPECIALISTCLASS_GREAT_SCIENTIST')) > 0:
 		iUnit = getInfoType('UNIT_SCIENTIST')
-		iSpec = getInfoType('SPECIALIST_GREAT_SCIENTIST')
+		iSpec = getInfoType('SPECIALISTCLASS_GREAT_SCIENTIST')
 	iChance = caster.baseCombatStr() * 8
 	if iChance > 95:
 		iChance = 95
 	pPlayer = gc.getPlayer(caster.getOwner())
 	if CyGame().getSorenRandNum(100, "Kidnap") <= iChance:
 		newUnit = pPlayer.initUnit(iUnit, caster.getX(), caster.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-		pCity.changeFreeSpecialistCount(iSpec, -1)
+		pCity.changeFreeSpecialistClassCount(iSpec, -1)
 	else:
 		if CyGame().getSorenRandNum(100, "Kidnap") <= 50:
 			caster.setXY(pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), False, True, True,False)
@@ -11408,7 +11408,7 @@ def reqSlaveSettle(caster):
 		iMax += 2
 	if pCity.getNumBuilding(getInfoType('BUILDING_SLAVE_MARKET')) == 1:
 		iMax += 4
-	iCount = pCity.getFreeSpecialistCount(getInfoType('SPECIALIST_SLAVE'))
+	iCount = pCity.getFreeSpecialistClassCount(getInfoType('SPECIALISTCLASS_SLAVE'))
 	if iCount >= iMax:
 		return False
 	else:
@@ -11417,7 +11417,7 @@ def reqSlaveSettle(caster):
 def spellSlaveSettle(caster):
 	pPlot = caster.plot()
 	pCity = pPlot.getPlotCity()
-	pCity.changeFreeSpecialistCount(getInfoType('SPECIALIST_SLAVE'), 1)
+	pCity.changeFreeSpecialistClassCount(getInfoType('SPECIALISTCLASS_SLAVE'), 1)
 	caster.kill(True,0)
 #Seems fine
 def reqCorgayleChanneling1(pCaster):

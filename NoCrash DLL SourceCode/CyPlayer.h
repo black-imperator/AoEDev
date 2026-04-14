@@ -471,8 +471,8 @@ public:
 	int countTotalHasCorporation();
 
 	int getUpkeepCount(int /*UpkeepTypes*/ eIndex);
-	bool isSpecialistValid(int /*SpecialistTypes*/ iIndex);
-	int getSpecialistCount(int /*SpecialistTypes*/ iIndex);
+	bool isSpecialistClassValid(int /*SpecialistTypes*/ iIndex);
+	int getSpecialistClassCount(int /*SpecialistTypes*/ iIndex);
 	bool isResearchingTech(int /*TechTypes*/ iIndex);
 	int /*CivicTypes*/ getCivics(int /*CivicOptionTypes*/ iIndex);
 	int getSingleCivicUpkeep(int /*CivicTypes*/ eCivic, bool bIgnoreAnarchy);

@@ -9223,7 +9223,7 @@
 			<Help/>
 			<ArtDefineTag>ART_DEF_IMPROVEMENT_HOMESTEAD</ArtDefineTag>
 			<ImprovementPillage>IMPROVEMENTCLASS_FARM</ImprovementPillage>
-			<FreeSpecialist>SPECIALIST_STATESMAN</FreeSpecialist>
+			<FreeSpecialistClass>SPECIALISTCLASS_STATESMAN</FreeSpecialistClass>
 			<YieldChanges>
 				<iYieldChange>2</iYieldChange>
 				<iYieldChange>1</iYieldChange>

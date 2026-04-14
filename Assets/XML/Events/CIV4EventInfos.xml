@@ -1089,12 +1089,12 @@
 			<Description>TXT_KEY_EVENT_CONTROVERSIAL_PHILOSOPHER_2</Description>
 			<bPickCity>1</bPickCity>
 			<iHappy>-1</iHappy>
-			<FreeSpecialistCounts>
-				<FreeSpecialistCount>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-					<iFreeSpecialistCount>1</iFreeSpecialistCount>
-				</FreeSpecialistCount>
-			</FreeSpecialistCounts>
+			<FreeSpecialistClassCounts>
+				<FreeSpecialistClassCount>
+					<SpecialistType>SPECIALISTCLASS_SCIENTIST</SpecialistType>
+					<iFreeSpecialistClassCount>1</iFreeSpecialistClassCount>
+				</FreeSpecialistClassCount>
+			</FreeSpecialistClassCounts>
 			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>1000</iAIValue>
 		</EventInfo>
@@ -2266,12 +2266,12 @@
 			<LocalInfoText>TXT_KEY_EVENT_HORTICULTURE_3_WORLD</LocalInfoText>
 			<bPickCity>1</bPickCity>
 			<iHealth>3</iHealth>
-			<FreeSpecialistCounts>
-				<FreeSpecialistCount>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-					<iFreeSpecialistCount>1</iFreeSpecialistCount>
-				</FreeSpecialistCount>
-			</FreeSpecialistCounts>
+			<FreeSpecialistClassCounts>
+				<FreeSpecialistClassCount>
+					<SpecialistType>SPECIALISTCLASS_SCIENTIST</SpecialistType>
+					<iFreeSpecialistClassCount>1</iFreeSpecialistClassCount>
+				</FreeSpecialistClassCount>
+			</FreeSpecialistClassCounts>
 			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>1000</iAIValue>
 		</EventInfo>
@@ -2377,12 +2377,12 @@
 			<Description>TXT_KEY_EVENT_ICE_SCULPTURE_2</Description>
 			<bPickCity>1</bPickCity>
 			<iGold>-120</iGold>
-			<FreeSpecialistCounts>
-				<FreeSpecialistCount>
-					<SpecialistType>SPECIALIST_GREAT_ARTIST</SpecialistType>
-					<iFreeSpecialistCount>1</iFreeSpecialistCount>
-				</FreeSpecialistCount>
-			</FreeSpecialistCounts>
+			<FreeSpecialistClassCounts>
+				<FreeSpecialistClassCount>
+					<SpecialistType>SPECIALISTCLASS_GREAT_ARTIST</SpecialistType>
+					<iFreeSpecialistClassCount>1</iFreeSpecialistClassCount>
+				</FreeSpecialistClassCount>
+			</FreeSpecialistClassCounts>
 			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>1000</iAIValue>
 		</EventInfo>
@@ -2671,12 +2671,12 @@
 			<Type>EVENT_LITERACY</Type>
 			<Description>TXT_KEY_EVENT_LITERACY</Description>
 			<bPickCity>1</bPickCity>
-			<FreeSpecialistCounts>
-				<FreeSpecialistCount>
-					<SpecialistType>SPECIALIST_GREAT_SCIENTIST</SpecialistType>
-					<iFreeSpecialistCount>1</iFreeSpecialistCount>
-				</FreeSpecialistCount>
-			</FreeSpecialistCounts>
+			<FreeSpecialistClassCounts>
+				<FreeSpecialistClassCount>
+					<SpecialistType>SPECIALISTCLASS_GREAT_SCIENTIST</SpecialistType>
+					<iFreeSpecialistClassCount>1</iFreeSpecialistClassCount>
+				</FreeSpecialistClassCount>
+			</FreeSpecialistClassCounts>
 			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>1000</iAIValue>
 		</EventInfo>
@@ -3552,12 +3552,12 @@
 			<PythonCallback>doSageKeep4</PythonCallback>
 			<PythonHelp>helpSageKeep4</PythonHelp>
 			<PythonCanDo>canDoSageKeep4</PythonCanDo>
-			<FreeSpecialistCounts>
-				<FreeSpecialistCount>
-					<SpecialistType>SPECIALIST_GREAT_SCIENTIST</SpecialistType>
-					<iFreeSpecialistCount>-1</iFreeSpecialistCount>
-				</FreeSpecialistCount>
-			</FreeSpecialistCounts>
+			<FreeSpecialistClassCounts>
+				<FreeSpecialistClassCount>
+					<SpecialistType>SPECIALISTCLASS_GREAT_SCIENTIST</SpecialistType>
+					<iFreeSpecialistClassCount>-1</iFreeSpecialistClassCount>
+				</FreeSpecialistClassCount>
+			</FreeSpecialistClassCounts>
 			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>1000</iAIValue>
 		</EventInfo>
@@ -3565,12 +3565,12 @@
 			<Type>EVENT_SAGE_KEEP_5</Type>
 			<Description>TXT_KEY_EVENT_SAGE_KEEP_5</Description>
 			<bPickCity>1</bPickCity>
-			<FreeSpecialistCounts>
-				<FreeSpecialistCount>
-					<SpecialistType>SPECIALIST_GREAT_SCIENTIST</SpecialistType>
-					<iFreeSpecialistCount>-1</iFreeSpecialistCount>
-				</FreeSpecialistCount>
-			</FreeSpecialistCounts>
+			<FreeSpecialistClassCounts>
+				<FreeSpecialistClassCount>
+					<SpecialistType>SPECIALISTCLASS_GREAT_SCIENTIST</SpecialistType>
+					<iFreeSpecialistClassCount>-1</iFreeSpecialistClassCount>
+				</FreeSpecialistClassCount>
+			</FreeSpecialistClassCounts>
 			<iAlignmentModifier>-10</iAlignmentModifier>
 			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>1000</iAIValue>
@@ -5451,8 +5451,8 @@
 			<iFood>0</iFood>
 			<iFoodPercent>0</iFoodPercent>
 			<iProduction>0</iProduction>
-			<FreeSpecialistCounts>
-			</FreeSpecialistCounts>
+			<FreeSpecialistClassCounts>
+			</FreeSpecialistClassCounts>
 			<FeatureType>NONE</FeatureType>
 			<iFeatureChange>0</iFeatureChange>
 			<ImprovementType>NONE</ImprovementType>
@@ -5838,8 +5838,8 @@
 			<iMaxPillage>0</iMaxPillage>
 			<iFood>0</iFood>
 			<iFoodPercent>0</iFoodPercent>
-			<FreeSpecialistCounts>
-			</FreeSpecialistCounts>
+			<FreeSpecialistClassCounts>
+			</FreeSpecialistClassCounts>
 			<FeatureType>NONE</FeatureType>
 			<iFeatureChange>0</iFeatureChange>
 			<ImprovementType>NONE</ImprovementType>
@@ -5950,8 +5950,8 @@
 			<iMaxPillage>0</iMaxPillage>
 			<iFood>0</iFood>
 			<iFoodPercent>0</iFoodPercent>
-			<FreeSpecialistCounts>
-			</FreeSpecialistCounts>
+			<FreeSpecialistClassCounts>
+			</FreeSpecialistClassCounts>
 			<FeatureType>NONE</FeatureType>
 			<iFeatureChange>0</iFeatureChange>
 			<ImprovementType>NONE</ImprovementType>
@@ -6073,8 +6073,8 @@
 			<iMaxPillage>0</iMaxPillage>
 			<iFood>0</iFood>
 			<iFoodPercent>0</iFoodPercent>
-			<FreeSpecialistCounts>
-			</FreeSpecialistCounts>
+			<FreeSpecialistClassCounts>
+			</FreeSpecialistClassCounts>
 			<FeatureType>NONE</FeatureType>
 			<iFeatureChange>0</iFeatureChange>
 			<ImprovementType>NONE</ImprovementType>
@@ -6174,8 +6174,8 @@
 			<iMaxPillage>0</iMaxPillage>
 			<iFood>0</iFood>
 			<iFoodPercent>0</iFoodPercent>
-			<FreeSpecialistCounts>
-			</FreeSpecialistCounts>
+			<FreeSpecialistClassCounts>
+			</FreeSpecialistClassCounts>
 			<FeatureType>NONE</FeatureType>
 			<iFeatureChange>0</iFeatureChange>
 			<ImprovementType>NONE</ImprovementType>
@@ -6275,8 +6275,8 @@
 			<iMaxPillage>0</iMaxPillage>
 			<iFood>0</iFood>
 			<iFoodPercent>0</iFoodPercent>
-			<FreeSpecialistCounts>
-			</FreeSpecialistCounts>
+			<FreeSpecialistClassCounts>
+			</FreeSpecialistClassCounts>
 			<FeatureType>NONE</FeatureType>
 			<iFeatureChange>0</iFeatureChange>
 			<ImprovementType>NONE</ImprovementType>
@@ -6381,8 +6381,8 @@
 			<iMaxPillage>0</iMaxPillage>
 			<iFood>0</iFood>
 			<iFoodPercent>0</iFoodPercent>
-			<FreeSpecialistCounts>
-			</FreeSpecialistCounts>
+			<FreeSpecialistClassCounts>
+			</FreeSpecialistClassCounts>
 			<FeatureType>NONE</FeatureType>
 			<iFeatureChange>0</iFeatureChange>
 			<ImprovementType>NONE</ImprovementType>
@@ -6482,8 +6482,8 @@
 			<iMaxPillage>0</iMaxPillage>
 			<iFood>0</iFood>
 			<iFoodPercent>0</iFoodPercent>
-			<FreeSpecialistCounts>
-			</FreeSpecialistCounts>
+			<FreeSpecialistClassCounts>
+			</FreeSpecialistClassCounts>
 			<FeatureType>NONE</FeatureType>
 			<iFeatureChange>0</iFeatureChange>
 			<ImprovementType>NONE</ImprovementType>
@@ -6583,8 +6583,8 @@
 			<iMaxPillage>0</iMaxPillage>
 			<iFood>0</iFood>
 			<iFoodPercent>0</iFoodPercent>
-			<FreeSpecialistCounts>
-			</FreeSpecialistCounts>
+			<FreeSpecialistClassCounts>
+			</FreeSpecialistClassCounts>
 			<FeatureType>NONE</FeatureType>
 			<iFeatureChange>0</iFeatureChange>
 			<ImprovementType>NONE</ImprovementType>
@@ -6684,8 +6684,8 @@
 			<iMaxPillage>0</iMaxPillage>
 			<iFood>0</iFood>
 			<iFoodPercent>0</iFoodPercent>
-			<FreeSpecialistCounts>
-			</FreeSpecialistCounts>
+			<FreeSpecialistClassCounts>
+			</FreeSpecialistClassCounts>
 			<FeatureType>NONE</FeatureType>
 			<iFeatureChange>0</iFeatureChange>
 			<ImprovementType>NONE</ImprovementType>
@@ -6785,8 +6785,8 @@
 			<iMaxPillage>0</iMaxPillage>
 			<iFood>0</iFood>
 			<iFoodPercent>0</iFoodPercent>
-			<FreeSpecialistCounts>
-			</FreeSpecialistCounts>
+			<FreeSpecialistClassCounts>
+			</FreeSpecialistClassCounts>
 			<FeatureType>NONE</FeatureType>
 			<iFeatureChange>0</iFeatureChange>
 			<ImprovementType>NONE</ImprovementType>
@@ -6886,8 +6886,8 @@
 			<iMaxPillage>0</iMaxPillage>
 			<iFood>0</iFood>
 			<iFoodPercent>0</iFoodPercent>
-			<FreeSpecialistCounts>
-			</FreeSpecialistCounts>
+			<FreeSpecialistClassCounts>
+			</FreeSpecialistClassCounts>
 			<FeatureType>NONE</FeatureType>
 			<iFeatureChange>0</iFeatureChange>
 			<ImprovementType>NONE</ImprovementType>
@@ -6987,8 +6987,8 @@
 			<iMaxPillage>0</iMaxPillage>
 			<iFood>0</iFood>
 			<iFoodPercent>0</iFoodPercent>
-			<FreeSpecialistCounts>
-			</FreeSpecialistCounts>
+			<FreeSpecialistClassCounts>
+			</FreeSpecialistClassCounts>
 			<FeatureType>NONE</FeatureType>
 			<iFeatureChange>0</iFeatureChange>
 			<ImprovementType>NONE</ImprovementType>
@@ -7088,8 +7088,8 @@
 			<iMaxPillage>0</iMaxPillage>
 			<iFood>0</iFood>
 			<iFoodPercent>0</iFoodPercent>
-			<FreeSpecialistCounts>
-			</FreeSpecialistCounts>
+			<FreeSpecialistClassCounts>
+			</FreeSpecialistClassCounts>
 			<FeatureType>NONE</FeatureType>
 			<iFeatureChange>0</iFeatureChange>
 			<ImprovementType>NONE</ImprovementType>

@@ -9303,7 +9303,7 @@
 			</UnitAIs>
 			<GreatPeoples>
 				<GreatPeople>
-					<GreatPeopleType>SPECIALIST_GREAT_ARTIST</GreatPeopleType>
+					<GreatPeopleClass>SPECIALISTCLASS_GREAT_ARTIST</GreatPeopleClass>
 					<bGreatPeople>1</bGreatPeople>
 				</GreatPeople>
 			</GreatPeoples>
@@ -10147,7 +10147,7 @@
 			</UnitAIs>
 			<GreatPeoples>
 				<GreatPeople>
-					<GreatPeopleType>SPECIALIST_GREAT_ENGINEER</GreatPeopleType>
+					<GreatPeopleClass>SPECIALISTCLASS_GREAT_ENGINEER</GreatPeopleClass>
 					<bGreatPeople>1</bGreatPeople>
 				</GreatPeople>
 			</GreatPeoples>
@@ -10301,7 +10301,7 @@
 			</UnitAIs>
 			<GreatPeoples>
 				<GreatPeople>
-					<GreatPeopleType>SPECIALIST_GREAT_MERCHANT</GreatPeopleType>
+					<GreatPeopleClass>SPECIALISTCLASS_GREAT_MERCHANT</GreatPeopleClass>
 					<bGreatPeople>1</bGreatPeople>
 				</GreatPeople>
 			</GreatPeoples>
@@ -10453,7 +10453,7 @@
 			</UnitAIs>
 			<GreatPeoples>
 				<GreatPeople>
-					<GreatPeopleType>SPECIALIST_GREAT_PRIEST</GreatPeopleType>
+					<GreatPeopleClass>SPECIALISTCLASS_GREAT_PRIEST</GreatPeopleClass>
 					<bGreatPeople>1</bGreatPeople>
 				</GreatPeople>
 			</GreatPeoples>
@@ -10643,7 +10643,7 @@
 			</UnitAIs>
 			<GreatPeoples>
 				<GreatPeople>
-					<GreatPeopleType>SPECIALIST_GREAT_SCIENTIST</GreatPeopleType>
+					<GreatPeopleClass>SPECIALISTCLASS_GREAT_SCIENTIST</GreatPeopleClass>
 					<bGreatPeople>1</bGreatPeople>
 				</GreatPeople>
 			</GreatPeoples>
@@ -10776,7 +10776,7 @@
 			</UnitAIs>
 			<GreatPeoples>
 				<GreatPeople>
-					<GreatPeopleType>SPECIALIST_GREAT_HEALER</GreatPeopleType>
+					<GreatPeopleClass>SPECIALISTCLASS_GREAT_HEALER</GreatPeopleClass>
 					<bGreatPeople>1</bGreatPeople>
 				</GreatPeople>
 			</GreatPeoples>
@@ -28526,19 +28526,19 @@
 			</UnitAIs>
 			<GreatPeoples>
 				<GreatPeople>
-					<GreatPeopleType>SPECIALIST_GREAT_ARTIST</GreatPeopleType>
+					<GreatPeopleClass>SPECIALISTCLASS_GREAT_ARTIST</GreatPeopleClass>
 					<bGreatPeople>1</bGreatPeople>
 				</GreatPeople>
 				<GreatPeople>
-					<GreatPeopleType>SPECIALIST_GREAT_ENGINEER</GreatPeopleType>
+					<GreatPeopleClass>SPECIALISTCLASS_GREAT_ENGINEER</GreatPeopleClass>
 					<bGreatPeople>1</bGreatPeople>
 				</GreatPeople>
 				<GreatPeople>
-					<GreatPeopleType>SPECIALIST_GREAT_MERCHANT</GreatPeopleType>
+					<GreatPeopleClass>SPECIALISTCLASS_GREAT_MERCHANT</GreatPeopleClass>
 					<bGreatPeople>1</bGreatPeople>
 				</GreatPeople>
 				<GreatPeople>
-					<GreatPeopleType>SPECIALIST_GREAT_SCIENTIST</GreatPeopleType>
+					<GreatPeopleClass>SPECIALISTCLASS_GREAT_SCIENTIST</GreatPeopleClass>
 					<bGreatPeople>1</bGreatPeople>
 				</GreatPeople>
 			</GreatPeoples>

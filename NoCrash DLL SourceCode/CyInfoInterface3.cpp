@@ -469,8 +469,8 @@ void CyInfoPythonInterface3()
 /*************************************************************************************************/
 /**	Miner Trait 	 	Orbis from Sanguo Mod		18/02/09	Ahwaric		**/
 /*************************************************************************************************/
-		.def("getSpecialistYieldChange", &CvTraitInfo::getSpecialistYieldChange, "int (int i, int j)")
-		.def("getSpecialistCommerceChange", &CvTraitInfo::getSpecialistCommerceChange, "int (int i, int j)")
+		.def("getSpecialistClassYieldChange", &CvTraitInfo::getSpecialistClassYieldChange, "int (int i, int j)")
+		.def("getSpecialistClassCommerceChange", &CvTraitInfo::getSpecialistClassCommerceChange, "int (int i, int j)")
 		.def("getPeaceCommerceModifier", &CvTraitInfo::getPeaceCommerceModifier, "int (int i)")
 		.def("getFeatureProductionChange", &CvTraitInfo::getFeatureProductionChange, "int (int i)")
 		.def("getFeatureGrowthChange", &CvTraitInfo::getFeatureGrowthChange, "int (int i)")
