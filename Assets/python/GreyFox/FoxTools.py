@@ -2456,6 +2456,7 @@ class FoxTools:
 		Improvement["Lumbermill"]		= git('IMPROVEMENT_LUMBERMILL')
 		Improvement["Mine"] 			= git('IMPROVEMENT_MINE')
 		Improvement["Necrototem"] 		= git('IMPROVEMENT_NECROTOTEM')
+		Improvement["HellGate"] 		= git('IMPROVEMENT_AERON_VAULTGATE')
 		Improvement["Pasture"]			= git('IMPROVEMENT_PASTURE')
 		Improvement["Penguins"]			= git('IMPROVEMENT_PENGUINS')
 		Improvement["Plantation"]		= git('IMPROVEMENT_PLANTATION')

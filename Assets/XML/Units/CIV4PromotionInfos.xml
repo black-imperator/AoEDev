@@ -13587,6 +13587,42 @@
 			<bNoXP>1</bNoXP>
 			<Button>Art/Civs/Other/molten_core.dds</Button>
 		</PromotionInfo>
+		<PromotionInfo>		<!-- Shimmering Core -->
+			<Type>PROMOTION_SHIMMERING_CORE</Type>
+			<Description>TXT_KEY_PROMOTION_SHIMMERING_CORE</Description>
+			<bNoXP>1</bNoXP>
+			<Button>Art/Interface/Buttons/Promotions/Shimmering_Core.dds</Button>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Form of Lighthouse -->
+			<Type>PROMOTION_FORM_OF_LIGHTHOUSE</Type>
+			<Description>TXT_KEY_PROMOTION_FORM_OF_LIGHTHOUSE</Description>
+			<bNoXP>1</bNoXP>
+			<ReplaceArtType>ART_DEF_SCALED_LIGHTHOUSE</ReplaceArtType>
+			<Button>Art/Interface/Buttons/Promotions/Shimmering_Core.dds</Button>
+			<iPromotionDuration>1</iPromotionDuration>
+			<iVisibilityChange>5</iVisibilityChange>
+			<iExtraPerception>5</iExtraPerception>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Form of Water -->
+			<Type>PROMOTION_FORM_OF_WATER</Type>
+			<Description>TXT_KEY_PROMOTION_FORM_OF_WATER</Description>
+			<bNoXP>1</bNoXP>
+			<iWithdrawalChange>70</iWithdrawalChange>
+			<iInvisibleLevel>3</iInvisibleLevel>
+			<ReplaceArtType>ART_DEF_UNIT_SCALED_DRAGON_WATER</ReplaceArtType>
+			<Button>Art/Interface/Buttons/Promotions/Shimmering_Core.dds</Button>
+			<iPromotionDuration>1</iPromotionDuration>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Form of Turtle -->
+			<Type>PROMOTION_FORM_OF_TURTLE</Type>
+			<Description>TXT_KEY_PROMOTION_FORM_OF_TURTLE</Description>
+			<bNoXP>1</bNoXP>
+			<iCombatPercent>-50</iCombatPercent>
+			<iCombatPercentDefense>50</iCombatPercentDefense>
+			<ReplaceArtType>ART_DEF_UNIT_GIANT_TORTOISE</ReplaceArtType>
+			<Button>Art/Interface/Buttons/Promotions/Shimmering_Core.dds</Button>
+			<iPromotionDuration>1</iPromotionDuration>
+		</PromotionInfo>
 		<PromotionInfo>		<!-- Monk Enlightenment -->
 			<Type>PROMOTION_MONK_ENLIGHTENMENT</Type>
 			<Description>TXT_KEY_PROMOTION_MONK_ENLIGHTENMENT</Description>
@@ -26893,23 +26929,18 @@
 		<PromotionInfo>		<!-- Price of Power Influence -->
 			<Type>PROMOTION_PRICE_OF_POWER_INFLUENCE</Type>
 			<Description>TXT_KEY_PROMOTION_PRICE_OF_POWER</Description>
-			<CityBonuses>
-				<CityBonus>
-					<bApplyEnemy>1</bApplyEnemy>
-					<bApplyRival>1</bApplyRival>
-					<bApplyTeam>1</bApplyTeam>
+			<AuraBonuses>
+				<AuraBonus>
 					<bApplySelf>1</bApplySelf>
-					<fFood>-1</fFood>
-					<fProduction>-5</fProduction>
-					<fDiplo>-1</fDiplo>
-					<iBonusRange>2</iBonusRange>
-				</CityBonus>
-			</CityBonuses>
+					<iBonusRange>0</iBonusRange>
+					<Promotion>PROMOTION_UNHOLY_TAINT</Promotion>
+				</AuraBonus>
+			</AuraBonuses>
 			<bAllowAttacks>1</bAllowAttacks>
 			<bFreeUnit>1</bFreeUnit>
 			<bNoSupply>1</bNoSupply>
 			<bEnraged>1</bEnraged>
-			<iMovesChange>-3</iMovesChange>
+			<iLeashRange>3</iLeashRange>
 			<PrereqUnits>
 				<PrereqUnit>UNIT_DEVILCASTER</PrereqUnit>
 			</PrereqUnits>

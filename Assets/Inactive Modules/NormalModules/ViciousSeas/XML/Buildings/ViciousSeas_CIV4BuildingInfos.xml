@@ -833,6 +833,7 @@
 				<Alignment>ALIGNMENT_NEUTRAL</Alignment>
 			</PrereqAlignments>
 			<iHappiness>2</iHappiness>
+			<iHurryCostModifier>100</iHurryCostModifier>
 		</BuildingInfo>
 		<BuildingInfo>		<!--            Dream Aifon                 Great Priest National Wonder -->
 			<BuildingClass>BUILDINGCLASS_ALTAR_OF_THE_LUONNOTAR_ANOINTED</BuildingClass>
@@ -885,6 +886,7 @@
 			</PrereqAlignments>
 			<bGraphicalOnly>1</bGraphicalOnly>
 			<iHappiness>2</iHappiness>
+			<iHurryCostModifier>100</iHurryCostModifier>
 		</BuildingInfo>
 		<BuildingInfo>		<!--           Dream Aifon                   Great Priest National Wonder -->
 			<BuildingClass>BUILDINGCLASS_ALTAR_OF_THE_LUONNOTAR_BLESSED</BuildingClass>
@@ -959,6 +961,7 @@
 			<bGraphicalOnly>1</bGraphicalOnly>
 			<bApplyFreePromotionOnMove>1</bApplyFreePromotionOnMove>
 			<iHappiness>2</iHappiness>
+			<iHurryCostModifier>100</iHurryCostModifier>
 		</BuildingInfo>
 		<BuildingInfo>		<!--           Dream Aifon              Great Priest National Wonder -->
 			<BuildingClass>BUILDINGCLASS_ALTAR_OF_THE_LUONNOTAR_CONSECRATED</BuildingClass>
@@ -1017,6 +1020,7 @@
 			</PrereqAlignments>
 			<bGraphicalOnly>1</bGraphicalOnly>
 			<iHappiness>2</iHappiness>
+			<iHurryCostModifier>100</iHurryCostModifier>
 		</BuildingInfo>
 		<BuildingInfo>		<!--            Dream Aifon                 Great Priest National Wonder -->
 			<BuildingClass>BUILDINGCLASS_ALTAR_OF_THE_LUONNOTAR_DIVINE</BuildingClass>
@@ -1087,6 +1091,7 @@
 			</PrereqAlignments>
 			<bGraphicalOnly>1</bGraphicalOnly>
 			<iHappiness>2</iHappiness>
+			<iHurryCostModifier>100</iHurryCostModifier>
 		</BuildingInfo>
 		<BuildingInfo>		<!--             Dream Aifon                 Great Priest National Wonder -->
 			<BuildingClass>BUILDINGCLASS_ALTAR_OF_THE_LUONNOTAR_EXALTED</BuildingClass>
@@ -1139,6 +1144,7 @@
 			</PrereqAlignments>
 			<bGraphicalOnly>1</bGraphicalOnly>
 			<iHappiness>2</iHappiness>
+			<iHurryCostModifier>100</iHurryCostModifier>
 		</BuildingInfo>
 		<BuildingInfo>		<!--             Dream Aifon                 Great Priest National Wonder -->
 			<BuildingClass>BUILDINGCLASS_ALTAR_OF_THE_LUONNOTAR_FINAL</BuildingClass>
@@ -1218,6 +1224,7 @@
 			<bGraphicalOnly>1</bGraphicalOnly>
 			<bNoUnhappiness>1</bNoUnhappiness>
 			<iCrime>-500</iCrime>
+			<iHurryCostModifier>999</iHurryCostModifier>
 		</BuildingInfo>
 	</BuildingInfos>
 </Civ4BuildingInfos>

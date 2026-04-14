@@ -10031,6 +10031,63 @@
 			<Sound>AS3D_SPELL_DEMON</Sound>
 			<Button>Art/Interface/Buttons/Spells/Roar.dds</Button>
 		</SpellInfo>
+		<SpellInfo>			<!-- Scaled Dragon - Lighthouse -->
+			<Type>SPELL_SCALEDRDAGON_LIGHTHOUSE</Type>
+			<Description>TXT_KEY_SPELL_FORM_OF_LIGHTHOUSE</Description>
+			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
+			<PromotionPrereq1>PROMOTION_SHIMMERING_CORE</PromotionPrereq1>
+			<bAllowAI>1</bAllowAI>
+			<iAIWeight>50</iAIWeight>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+			<bIsAutoCastable>1</bIsAutoCastable>
+			<bAbility>1</bAbility>
+			<AddPromotions>
+				<AddPromotion>PROMOTION_FORM_OF_LIGHTHOUSE</AddPromotion>
+			</AddPromotions>
+			<bBuffCasterOnly>1</bBuffCasterOnly>
+			<Effect>EFFECT_WIND_SWIRL</Effect>
+			<Sound>AS3D_WATER_FLOW</Sound>
+			<Button>Art/Interface/Buttons/Improvements/Tower.dds</Button>
+		</SpellInfo>
+		<SpellInfo>			<!-- Scaled Dragon - Water -->
+			<Type>SPELL_SCALEDRDAGON_WATER</Type>
+			<Description>TXT_KEY_SPELL_FORM_OF_WATER</Description>
+			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
+			<PromotionPrereq1>PROMOTION_SHIMMERING_CORE</PromotionPrereq1>
+			<bAllowAI>1</bAllowAI>
+			<iAIWeight>100</iAIWeight>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+			<bIsAutoCastable>1</bIsAutoCastable>
+			<bAbility>1</bAbility>
+			<AddPromotions>
+				<AddPromotion>PROMOTION_FORM_OF_WATER</AddPromotion>
+			</AddPromotions>
+			<bBuffCasterOnly>1</bBuffCasterOnly>
+			<Effect>EFFECT_WIND_SWIRL</Effect>
+			<Sound>AS3D_WATER_FLOW</Sound>
+			<Button>Art/Interface/Buttons/Improvements/shimmeringportal.dds</Button>
+		</SpellInfo>
+		<SpellInfo>			<!-- Scaled Dragon - Dragon Turtle -->
+			<Type>SPELL_SCALEDRDAGON_TURTLE</Type>
+			<Description>TXT_KEY_SPELL_FORM_OF_TURTLE</Description>
+			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
+			<PromotionPrereq1>PROMOTION_SHIMMERING_CORE</PromotionPrereq1>
+			<bAllowAI>1</bAllowAI>
+			<iAIWeight>50</iAIWeight>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+			<bIsAutoCastable>1</bIsAutoCastable>
+			<bAbility>1</bAbility>
+			<AddPromotions>
+				<AddPromotion>PROMOTION_FORM_OF_TURTLE</AddPromotion>
+			</AddPromotions>
+			<bBuffCasterOnly>1</bBuffCasterOnly>
+			<Effect>EFFECT_WIND_SWIRL</Effect>
+			<Sound>AS3D_WATER_FLOW</Sound>
+			<Button>Art/Interface/Buttons/Units/War Tortoise.dds</Button>
+		</SpellInfo>
 		<SpellInfo>			<!-- Sacrifice (Pyre) -->
 			<Type>SPELL_SACRIFICE_PYRE</Type>
 			<Description>TXT_KEY_SPELL_SACRIFICE</Description>

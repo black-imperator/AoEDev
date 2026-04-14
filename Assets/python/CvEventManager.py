@@ -2129,6 +2129,8 @@ class CvEventManager:
 				pPlot.setFeatureType(-1, -1)
 			if pPlot.getBonusType(-1) != -1:
 				pPlot.setBonusType(-1)
+		elif iImprovement == self.Improvements["HellGate"]:
+			CyGame().changeGlobalCounter(2)
 
 		## *******************
 		## Modular Python: ANW 29-may-2010
@@ -2174,6 +2176,9 @@ class CvEventManager:
 					for iiX, iiY in aoeByMapSize(pPlot):
 						pLoopPlot = CyMap().plot(iiX, iiY)
 						pLoopPlot.setPlotEffectType(gc.getInfoTypeForString("NO_PLOT_EFFECT"))
+
+			elif iImprovement == self.Improvements["HellGate"]:
+				CyGame().changeGlobalCounter(-2)
 
 			elif iImprovement == self.Improvements["Necrototem"]:
 				CyGame().changeGlobalCounter(-2)

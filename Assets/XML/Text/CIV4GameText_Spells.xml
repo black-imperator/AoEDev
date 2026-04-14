@@ -790,6 +790,30 @@
 		<Spanish>Waaagh</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_SPELL_FORM_OF_LIGHTHOUSE</Tag>
+		<English>Form of...Lighthouse!</English>
+		<French>Form of...Lighthouse!</French>
+		<German>Form of...Lighthouse!</German>
+		<Italian>Form of...Lighthouse!</Italian>
+		<Spanish>Form of...Lighthouse!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_FORM_OF_WATER</Tag>
+		<English>Form of...Water!</English>
+		<French>Form of...Water!</French>
+		<German>Form of...Water!</German>
+		<Italian>Form of...Water!</Italian>
+		<Spanish>Form of...Water!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_FORM_OF_TURTLE</Tag>
+		<English>Form of...Turtle!</English>
+		<French>Form of...Turtle!</French>
+		<German>Form of...Turtle!</German>
+		<Italian>Form of...Turtle!</Italian>
+		<Spanish>Form of...Turtle!</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_SPELL_WANDERING_CURSE</Tag>
 		<English>Wandering Curse</English>
 		<French>Malédiction de l'errance éternelle</French>

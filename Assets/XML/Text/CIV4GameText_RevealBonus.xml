@@ -11265,6 +11265,67 @@ A band of different colored hairs, moldy cloth, and dried blood tied together wi
 	</TEXT>
 
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_SCALED_DRAGON</Tag>
+		<English>Scaled Dragon</English>
+		<French>Scaled Dragon</French>
+		<German>Scaled Dragon</German>
+		<Italian>Scaled Dragon</Italian>
+		<Spanish>Scaled Dragon</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SCALED_DRAGON_PEDIA</Tag>
+		<English>Scaled Dragon's are the second largest dragon after the Elder Dragon. They can change their form, but not their mass and have been known to appear as great crocodiles or turtles, multi-headed dragons, lighthouses, great trees or small islands. They can also transform their body completely to water, and most commonly are in this form when they are underwater. Their breath weapon is a roar that can be heard for miles, and even further when issued underwater, that will bring help. This help can be from sea creatures, angels of Danalin or even the ocean itself. Scaled Dragons can instantly heal any injuries by pulling more water into their form. They collect shells and polished stones from along beaches and bring them down to their underwater lairs. A drop of their form (which appears as water), can allow anyone who drinks it to breathe water for seven days.</English>
+		<French>Scaled Dragon's are the second largest dragon after the Elder Dragon. They can change their form, but not their mass and have been known to appear as great crocodiles or turtles, multi-headed dragons, lighthouses, great trees or small islands. They can also transform their body completely to water, and most commonly are in this form when they are underwater. Their breath weapon is a roar that can be heard for miles, and even further when issued underwater, that will bring help. This help can be from sea creatures, angels of Danalin or even the ocean itself. Scaled Dragons can instantly heal any injuries by pulling more water into their form. They collect shells and polished stones from along beaches and bring them down to their underwater lairs. A drop of their form (which appears as water), can allow anyone who drinks it to breathe water for seven days.</French>
+		<German>Scaled Dragon's are the second largest dragon after the Elder Dragon. They can change their form, but not their mass and have been known to appear as great crocodiles or turtles, multi-headed dragons, lighthouses, great trees or small islands. They can also transform their body completely to water, and most commonly are in this form when they are underwater. Their breath weapon is a roar that can be heard for miles, and even further when issued underwater, that will bring help. This help can be from sea creatures, angels of Danalin or even the ocean itself. Scaled Dragons can instantly heal any injuries by pulling more water into their form. They collect shells and polished stones from along beaches and bring them down to their underwater lairs. A drop of their form (which appears as water), can allow anyone who drinks it to breathe water for seven days.</German>
+		<Italian>Scaled Dragon's are the second largest dragon after the Elder Dragon. They can change their form, but not their mass and have been known to appear as great crocodiles or turtles, multi-headed dragons, lighthouses, great trees or small islands. They can also transform their body completely to water, and most commonly are in this form when they are underwater. Their breath weapon is a roar that can be heard for miles, and even further when issued underwater, that will bring help. This help can be from sea creatures, angels of Danalin or even the ocean itself. Scaled Dragons can instantly heal any injuries by pulling more water into their form. They collect shells and polished stones from along beaches and bring them down to their underwater lairs. A drop of their form (which appears as water), can allow anyone who drinks it to breathe water for seven days.</Italian>
+		<Spanish>Scaled Dragon's are the second largest dragon after the Elder Dragon. They can change their form, but not their mass and have been known to appear as great crocodiles or turtles, multi-headed dragons, lighthouses, great trees or small islands. They can also transform their body completely to water, and most commonly are in this form when they are underwater. Their breath weapon is a roar that can be heard for miles, and even further when issued underwater, that will bring help. This help can be from sea creatures, angels of Danalin or even the ocean itself. Scaled Dragons can instantly heal any injuries by pulling more water into their form. They collect shells and polished stones from along beaches and bring them down to their underwater lairs. A drop of their form (which appears as water), can allow anyone who drinks it to breathe water for seven days.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SCALED_DRAGON_CREATION</Tag>
+		<English>Surging from the depths, a shimmering dragon with eyes of blazing sapphire and teeth made of conch shells, spreads its wings like a great shoal and, with three powerful beats, rises into the mists and disappears.
+A moment later, rain begins to fall.</English>
+		<French>Surging from the depths, a shimmering dragon with eyes of blazing sapphire and teeth made of conch shells, spreads its wings like a great shoal and, with three powerful beats, rises into the mists and disappears.
+A moment later, rain begins to fall.</French>
+		<German>Surging from the depths, a shimmering dragon with eyes of blazing sapphire and teeth made of conch shells, spreads its wings like a great shoal and, with three powerful beats, rises into the mists and disappears.
+A moment later, rain begins to fall.</German>
+		<Italian>Surging from the depths, a shimmering dragon with eyes of blazing sapphire and teeth made of conch shells, spreads its wings like a great shoal and, with three powerful beats, rises into the mists and disappears.
+A moment later, rain begins to fall.</Italian>
+		<Spanish>Surging from the depths, a shimmering dragon with eyes of blazing sapphire and teeth made of conch shells, spreads its wings like a great shoal and, with three powerful beats, rises into the mists and disappears.
+A moment later, rain begins to fall.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_SHIMMERING_CORE</Tag>
+		<English>Shimmering Core</English>
+		<French>Shimmering Core</French>
+		<German>Shimmering Core</German>
+		<Italian>Shimmering Core</Italian>
+		<Spanish>Shimmering Core</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_FORM_OF_LIGHTHOUSE</Tag>
+		<English>A Suspicious Lighthouse...</English>
+		<French>A Suspicious Lighthouse...</French>
+		<German>A Suspicious Lighthouse...</German>
+		<Italian>A Suspicious Lighthouse...</Italian>
+		<Spanish>A Suspicious Lighthouse...</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_FORM_OF_WATER</Tag>
+		<English>A Suspicious Ripple...</English>
+		<French>A Suspicious Ripple...</French>
+		<German>A Suspicious Ripple...</German>
+		<Italian>A Suspicious Ripple...</Italian>
+		<Spanish>A Suspicious Ripple...</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_FORM_OF_TURTLE</Tag>
+		<English>A Suspicious Turtle...</English>
+		<French>A Suspicious Turtle...</French>
+		<German>A Suspicious Turtle...</German>
+		<Italian>A Suspicious Turtle...</Italian>
+		<Spanish>A Suspicious Turtle...</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_SEED_DRAGON</Tag>
 		<English>Seed Dragon</English>
 		<French>Seed Dragon</French>
