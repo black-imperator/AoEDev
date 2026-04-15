@@ -35,7 +35,6 @@ void CyInfoPythonInterface1()
 	python::class_<CvSpecialistInfo, python::bases<CvInfoBase> >("CvSpecialistInfo")
 		.def("getGreatPeopleUnitClass", &CvSpecialistInfo::getGreatPeopleUnitClass, "int ()")
 		.def("getGreatPeopleRateChange", &CvSpecialistInfo::getGreatPeopleRateChange, "int ()")
-		.def("getMissionType", &CvSpecialistInfo::getMissionType, "int ()")
 
 		.def("isVisible", &CvSpecialistInfo::isVisible, "bool ()")
 

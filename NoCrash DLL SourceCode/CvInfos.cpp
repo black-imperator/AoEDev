@@ -1250,7 +1250,6 @@ m_iSpecialistClassType(NO_SPECIALISTCLASS),
 
 m_iGreatPeopleUnitClass(NO_UNITCLASS),
 m_iGreatPeopleRateChange(0),
-m_iMissionType(NO_MISSION),
 m_bVisible(false),
 m_piYieldChange(NULL),
 m_piCommerceChange(NULL),
@@ -1331,16 +1330,6 @@ int CvSpecialistInfo::getGreatPeopleRateChange() const
 	return m_iGreatPeopleRateChange;
 }
 
-int CvSpecialistInfo::getMissionType() const
-{
-	return m_iMissionType;
-}
-
-void CvSpecialistInfo::setMissionType(int iNewType)
-{
-	m_iMissionType = iNewType;
-}
-
 bool CvSpecialistInfo::isVisible() const
 {
 	return m_bVisible;
@@ -1406,7 +1395,7 @@ void CvSpecialistInfo::setTexture(const TCHAR* szVal)
 bool CvSpecialistInfo::read(CvXMLLoadUtility* pXML)
 {
 	CvString szTextVal;
-	if (!CvHotkeyInfo::read(pXML))
+	if (!CvInfoBase::read(pXML))
 	{
 		return false;
 	}
@@ -1472,7 +1461,7 @@ void CvSpecialistInfo::copyNonDefaults(CvSpecialistInfo* pClassInfo, CvXMLLoadUt
 	CvString cDefault = CvString::format("").GetCString();
 	CvWString wDefault = CvWString::format(L"").GetCString();
 
-	CvHotkeyInfo::copyNonDefaults(pClassInfo, pXML);
+	CvInfoBase::copyNonDefaults(pClassInfo, pXML);
 
 	if (getSpecialistClassType() == NO_SPECIALISTCLASS)		m_iSpecialistClassType = pClassInfo->getSpecialistClassType();
 	if (isVisible()					== false)				m_bVisible					= pClassInfo->isVisible();
@@ -12799,7 +12788,7 @@ int CvActionInfo::getMissionType() const
 	}
 	else if (ACTIONSUBTYPE_SPECIALIST == m_eSubType)
 	{
-		return GC.getSpecialistInfo((SpecialistTypes)m_iOriginalIndex).getMissionType();
+		return GC.getSpecialistClassInfo((SpecialistClassTypes)m_iOriginalIndex).getMissionType();
 	}
 	else if (ACTIONSUBTYPE_BUILDING == m_eSubType)
 	{
@@ -12938,7 +12927,7 @@ CvHotkeyInfo* CvActionInfo::getHotkeyInfo() const
 			return &GC.getCorporationInfo((CorporationTypes)getOriginalIndex());
 			break;
 		case ACTIONSUBTYPE_SPECIALIST:
-			return &GC.getSpecialistInfo((SpecialistTypes)getOriginalIndex());
+			return &GC.getSpecialistClassInfo((SpecialistClassTypes)getOriginalIndex());
 			break;
 		case ACTIONSUBTYPE_BUILDING:
 			return &GC.getBuildingInfo((BuildingTypes)getOriginalIndex());

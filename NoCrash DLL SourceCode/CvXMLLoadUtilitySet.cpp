@@ -1430,12 +1430,6 @@ void CvXMLLoadUtility::SetGlobalActionInfo()
 		sprintf( szMessage, "GC.getNumUnitClassInfos() is not greater than zero in CvXMLLoadUtility::SetGlobalActionInfo \n Current XML file is: %s", GC.getCurrentXMLFile().GetCString());
 		gDLL->MessageBox(szMessage, "XML Error");
 	}
-	if (!(GC.getNumSpecialistClassInfos() > 0))
-	{
-		char	szMessage[1024];
-		sprintf(szMessage, "GC.getNumSpecialistClassInfos() is not greater than zero in CvXMLLoadUtility::SetGlobalActionInfo \n Current XML file is: %s", GC.getCurrentXMLFile().GetCString());
-		gDLL->MessageBox(szMessage, "XML Error");
-	}
 	if(!(GC.getNumSpecialistClassInfos() > 0) )
 	{
 		char	szMessage[1024];

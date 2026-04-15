@@ -2836,7 +2836,10 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 			}
 			else if (GC.getActionInfo(widgetDataStruct.m_iData1).getMissionType() == MISSION_JOIN)
 			{
-				GAMETEXT.parseSpecialistHelp(szBuffer, ((SpecialistTypes)(GC.getActionInfo(widgetDataStruct.m_iData1).getMissionData())), pMissionCity, true);
+				SpecialistTypes eSpecialist = (SpecialistTypes)GC.getSpecialistClassInfo((SpecialistClassTypes)GC.getActionInfo(widgetDataStruct.m_iData1).getMissionData()).getDefaultSpecialistIndex();
+				if (pMissionCity != NULL)
+					eSpecialist = pMissionCity->getSpecialistTypeFromClass((SpecialistClassTypes)GC.getActionInfo(widgetDataStruct.m_iData1).getMissionData());
+				GAMETEXT.parseSpecialistHelp(szBuffer, eSpecialist, pMissionCity, true);
 			}
 			else if (GC.getActionInfo(widgetDataStruct.m_iData1).getMissionType() == MISSION_CONSTRUCT)
 			{

@@ -2836,6 +2836,15 @@ class CvMainInterface:
 								eMultiList = "BottomButtonContainer2"
 							elif eMissionType	== MissionTypes.MISSION_JOIN:
 								eMultiList = "BottomButtonContainer2"
+								pPlot = CyInterface().getGotoPlot()
+								if pPlot is None or pPlot.isNone():
+									pPlot = pHeadSelectedUnit.plot()
+								if pPlot.isCity():
+									pCity = pPlot.getPlotCity()
+									iSpecialistClass = getAction(i).getMissionData()
+									iSpecialistType = pCity.getSpecialistTypeFromClass(iSpecialistClass)
+									if iSpecialistType != -1:
+										szButton = gc.getSpecialistInfo(iSpecialistType).getButton()
 							elif eMissionType	== MissionTypes.MISSION_CONSTRUCT:
 								eMultiList = "BottomButtonContainer2"
 							elif eMissionType	== MissionTypes.MISSION_DISCOVER:
@@ -2858,6 +2867,7 @@ class CvMainInterface:
 								eMultiList = "BottomButtonContainer2"
 							else:
 								eMultiList = "BottomButtonContainer"
+
 
 						screen.appendMultiListButton( eMultiList, szButton, iRow, WidgetTypes.WIDGET_ACTION, i, -1, False )
 #FfH: End Modify

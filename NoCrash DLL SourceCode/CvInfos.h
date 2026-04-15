@@ -350,7 +350,7 @@ protected:
 //  DESC:
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-class CvSpecialistInfo : public CvHotkeyInfo
+class CvSpecialistInfo : public CvInfoBase
 {
 //---------------------------------------PUBLIC INTERFACE---------------------------------
 public:
@@ -362,8 +362,6 @@ public:
 
 	int getGreatPeopleUnitClass() const;		// Exposed to Python
 	int getGreatPeopleRateChange() const;		// Exposed to Python
-	int getMissionType() const;							// Exposed to Python
-	void setMissionType(int iNewType);
 /*************************************************************************************************/
 /** Specialists Enhancements, by Supercheese 10/9/09           Imported by Valkrionn   10/22/09  */
 /**                                                                                              */
@@ -407,7 +405,6 @@ protected:
 
 	int m_iGreatPeopleUnitClass;		// Exposed to Python
 	int m_iGreatPeopleRateChange;		// Exposed to Python
-	int m_iMissionType;
 /*************************************************************************************************/
 /** Specialists Enhancements, by Supercheese 10/9/09           Imported by Valkrionn   10/22/09  */
 /**                                                                                              */

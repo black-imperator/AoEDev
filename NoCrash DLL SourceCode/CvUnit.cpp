@@ -9405,16 +9405,16 @@ bool CvUnit::spreadCorporation(CorporationTypes eCorporation)
 }
 
 
-bool CvUnit::canJoin(const CvPlot* pPlot, SpecialistClassTypes eSpecialist) const
+bool CvUnit::canJoin(const CvPlot* pPlot, SpecialistClassTypes eSpecialistClass) const
 {
 	CvCity* pCity;
 
-	if (eSpecialist == NO_SPECIALIST)
+	if (eSpecialistClass == NO_SPECIALISTCLASS)
 	{
 		return false;
 	}
 
-	if (!(m_pUnitInfo->getGreatPeoples(eSpecialist)))
+	if (!(m_pUnitInfo->getGreatPeoples(eSpecialistClass)))
 	{
 		return false;
 	}
@@ -9422,6 +9422,11 @@ bool CvUnit::canJoin(const CvPlot* pPlot, SpecialistClassTypes eSpecialist) cons
 	pCity = pPlot->getPlotCity();
 
 	if (pCity == NULL)
+	{
+		return false;
+	}
+
+	if (pCity->getSpecialistTypeFromClass(eSpecialistClass) == NO_SPECIALIST)
 	{
 		return false;
 	}
@@ -9452,11 +9457,11 @@ bool CvUnit::canJoin(const CvPlot* pPlot, SpecialistClassTypes eSpecialist) cons
 }
 
 
-bool CvUnit::join(SpecialistClassTypes eSpecialist)
+bool CvUnit::join(SpecialistClassTypes eSpecialistClass)
 {
 	CvCity* pCity;
 
-	if (!canJoin(plot(), eSpecialist))
+	if (!canJoin(plot(), eSpecialistClass))
 	{
 		return false;
 	}
@@ -9465,7 +9470,7 @@ bool CvUnit::join(SpecialistClassTypes eSpecialist)
 
 	if (pCity != NULL)
 	{
-		pCity->changeFreeSpecialistClassCount(eSpecialist, 1);
+		pCity->changeFreeSpecialistClassCount(eSpecialistClass, 1);
 	}
 
 	if (plot()->isActiveVisible(false))
