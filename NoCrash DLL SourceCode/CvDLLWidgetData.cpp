@@ -3786,15 +3786,17 @@ void CvDLLWidgetData::parseFreeCitizenHelp(CvWidgetDataStruct &widgetDataStruct,
 
 	if (pHeadSelectedCity != NULL)
 	{
-		SpecialistTypes eSpecialist = (SpecialistTypes)widgetDataStruct.m_iData1;
-		if (NO_SPECIALIST != eSpecialist)
+		SpecialistClassTypes eSpecialistClass = (SpecialistClassTypes)widgetDataStruct.m_iData1;
+		if (NO_SPECIALISTCLASS != eSpecialistClass)
 		{
-			GAMETEXT.parseSpecialistHelp(szBuffer, eSpecialist, pHeadSelectedCity);
+			SpecialistTypes eSpecialist = pHeadSelectedCity->getSpecialistTypeFromClass(eSpecialistClass);
+			if(eSpecialist != NO_SPECIALIST)
+				GAMETEXT.parseSpecialistHelp(szBuffer, eSpecialist, pHeadSelectedCity);
 		}
 		if (widgetDataStruct.m_iData2 != -1)
 		{
 			szBuffer.append(SEPARATOR);
-			GAMETEXT.parseFreeSpecialistHelp(szBuffer, *pHeadSelectedCity);
+			GAMETEXT.parseFreeSpecialistClassHelp(szBuffer, *pHeadSelectedCity);
 		}
 	}
 }

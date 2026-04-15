@@ -10659,7 +10659,7 @@ void CvGameTextMgr::parseSpecialistHelp(CvWStringBuffer &szHelpString, Specialis
 	}
 }
 
-void CvGameTextMgr::parseFreeSpecialistHelp(CvWStringBuffer &szHelpString, const CvCity& kCity)
+void CvGameTextMgr::parseFreeSpecialistClassHelp(CvWStringBuffer &szHelpString, const CvCity& kCity)
 {
 	PROFILE_FUNC();
 

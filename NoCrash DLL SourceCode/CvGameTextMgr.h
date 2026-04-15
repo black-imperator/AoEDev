@@ -119,7 +119,7 @@ public:
 /*************************************************************************************************/
 
 	DllExport void parseSpecialistHelp(CvWStringBuffer &szHelpString, SpecialistTypes eSpecialist, CvCity* pCity, bool bCivilopediaText = false);
-	DllExport void parseFreeSpecialistHelp(CvWStringBuffer &szHelpString, const CvCity& kCity);
+	DllExport void parseFreeSpecialistClassHelp(CvWStringBuffer &szHelpString, const CvCity& kCity);
 /*************************************************************************************************/
 /**	Promotion PyHelp		 				07/09/10								Valkrionn	**/
 /**																								**/
