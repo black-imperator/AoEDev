@@ -34280,7 +34280,7 @@
 		<UnitArtInfo> <!-- UNIT_SAND_WORM -->
 			<Type>ART_DEF_UNIT_SAND_WORM</Type>
 			<Button>Art/Interface/Buttons/Units/wyrm.dds</Button>
-			<fScale>.33</fScale>
+			<fScale>.55</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
@@ -34300,10 +34300,33 @@
 			<SelectionSound>AS3D_WORMLIONFIDC</SelectionSound>
 			<ActionSound>AS3D_WORMLIONATTKC</ActionSound>
 		</UnitArtInfo>
+		<UnitArtInfo> <!-- UNIT_SAND_WORM_RIDER -->
+			<Type>ART_DEF_UNIT_SAND_WORM_RIDER</Type>
+			<Button>Art/Interface/Buttons/Units/wyrm.dds</Button>
+			<fScale>.55</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/civs/Malakim/worm_rider/worm_rider.nif</NIF>
+			<KFM>Art/Units/civs/Malakim/worm_rider/worm_rider.kfm</KFM>
+			<SHADERNIF>Art/units/civs/malakim/worm_rider/worm_rider.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>Bone</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>1.5</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds/>
+			<SelectionSound>AS3D_WORMLIONFIDC</SelectionSound>
+			<ActionSound>AS3D_WORMLIONATTKC</ActionSound>
+		</UnitArtInfo>
 		<UnitArtInfo> <!-- UNIT_ICE_WORM -->
 			<Type>ART_DEF_UNIT_ICE_WORM</Type>
 			<Button>Art/Interface/Buttons/Units/wyrm.dds</Button>
-			<fScale>.33</fScale>
+			<fScale>.55</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
@@ -34326,7 +34349,7 @@
 		<UnitArtInfo> <!-- UNIT_MARSH_WORM -->
 			<Type>ART_DEF_UNIT_MARSH_WORM</Type>
 			<Button>Art/Interface/Buttons/Units/wyrm.dds</Button>
-			<fScale>.33</fScale>
+			<fScale>.55</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>

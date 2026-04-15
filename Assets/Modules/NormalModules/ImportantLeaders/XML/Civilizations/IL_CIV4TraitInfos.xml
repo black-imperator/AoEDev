@@ -521,7 +521,7 @@
 			<PlotEffectSpawnChances>
 				<PlotEffectSpawnChance>
 					<PlotEffectType>PLOT_EFFECT_SANDSTORM</PlotEffectType>
-					<iSpawnChance>350</iSpawnChance>
+					<iSpawnChance>450</iSpawnChance>
 				</PlotEffectSpawnChance>
 			</PlotEffectSpawnChances>
 			<TradeYieldModifiers>
@@ -529,6 +529,26 @@
 				<iYield>0</iYield>
 				<iYield>-35</iYield>
 			</TradeYieldModifiers>
+			<ExtraUnitClasses>
+				<ExtraUnitClass>
+					<UnitClassType>UNITCLASS_HORSEMAN</UnitClassType>
+					<UnitType>UNIT_HORSEMAN_WYRM_MALAKIM</UnitType>
+				</ExtraUnitClass>
+				<ExtraUnitClass>
+					<UnitClassType>UNITCLASS_HORSE_ARCHER</UnitClassType>
+					<UnitType>UNIT_HORSE_ARCHER_WYRM_MALAKIM</UnitType>
+				</ExtraUnitClass>
+				<ExtraUnitClass>
+					<UnitClassType>UNITCLASS_KNIGHT</UnitClassType>
+					<UnitType>UNIT_MALAKIM_WYRM_KNIGHT</UnitType>
+				</ExtraUnitClass>
+			</ExtraUnitClasses>	
+			<UnitClassPlayerInstancesChanges>
+				<UnitClassPlayerInstancesChange>
+					<UnitClassType>UNITCLASS_KNIGHT</UnitClassType>
+					<iPlayerInstancesChange>4</iPlayerInstancesChange>
+				</UnitClassPlayerInstancesChange>
+			</UnitClassPlayerInstancesChanges>
 		</TraitInfo>
 		
 	</TraitInfos>

@@ -595,7 +595,16 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_SIHAYA_PEDIA</Tag>
-		<English>Sih-Aya</English>
+		<English>Sih-Aya looked out over the sands of her birthplace, on days like this, the sky was vast and blue over the hazy heat of these endless dunes.
+Nestled between great mountain ranges that funnelled winds between them and drove up great storms, Sih-Aya's tribe had endured by carving out a meagre existence in the rocky caves at the base of the mountains.
+
+This had protected them from most of the dangers of Erebus, since the end of the age of winter, but there was a more determined kind of threat gleaming on the horizon today: Kane.
+He and his warbands had come to bring her tribe to heel, to unify the Malakim people under his throne of blood.
+All seemed hopeless; her people lacked the metals or the might of their neighbours and their vast herds of camels.
+
+She kicked the side of the watchtower in fury and glared out into the sands, looking for something, anything, that could stop what was about to happen.
+On the edge of the skyline, a pack of drakes swooped low over the dunes as they searched for travellers to prey on, and just as they began to skim across the surface, a great gyre of sand erupted, and the maw of a Sand Wyrm sprang wide to engulf them.
+By the time the sand cloud had cleared, the drake flock was gone, and Sih-Aya had a terrible, stupid, and dangerous idea.</English>
 		<French>Sih-Aya</French>
 		<German>Sih-Aya</German>
 		<Italian>Sih-Aya</Italian>
@@ -688,5 +697,57 @@
 		<German>Sih-Aya</German>
 		<Italian>Sih-Aya</Italian>
 		<Spanish>Sih-Aya</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HORSEMAN_WYRM_MALAKIM</Tag>
+		<English>Wyrm Rider</English>
+		<French>Wyrm Rider</French>
+		<German>Wyrm Rider</German>
+		<Italian>Wyrm Rider</Italian>
+		<Spanish>Wyrm Rider</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HORSE_ARCHER_WYRM_MALAKIM</Tag>
+		<English>Wyrm Dune Riders</English>
+		<French>Wyrm Dune Riders</French>
+		<German>Wyrm Dune Riders</German>
+		<Italian>Wyrm Dune Riders</Italian>
+		<Spanish>Wyrm Dune Riders</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MALAKIM_WYRM_KNIGHT</Tag>
+		<English>Wyrm Rider Knights</English>
+		<French>Wyrm Rider Knights</French>
+		<German>Wyrm Rider Knights</German>
+		<Italian>Wyrm Rider Knights</Italian>
+		<Spanish>Wyrm Rider Knights</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HORSEMAN_WYRM_PEDIA</Tag>
+		<English>Led by the example of Sih-Aya, the Malakim recruited from amongst themselves those who had bravery bordering on a death wish, and sent them out onto the sands.
+
+With nothing but their wits and a small bell, they sit on rocky outcroppings and wait for their trial to begin.
+
+Most will not return; those that do will never be the same. but this is what is needed of them, if the tribe of the wyrm is to survive the coming war with Kane and his warmongers,then death itself must become a friend.</English>
+		<French>Led by the example of Sih-Aya, the Malakim recruited from amongst themselves those who had bravery bordering on a death wish, and sent them out onto the sands.
+
+With nothing but their wits and a small bell, they sit on rocky outcroppings and wait for their trial to begin.
+
+Most will not return; those that do will never be the same. but this is what is needed of them, if the tribe of the wyrm is to survive the coming war with Kane and his warmongers,then death itself must become a friend.</French>
+		<German>Led by the example of Sih-Aya, the Malakim recruited from amongst themselves those who had bravery bordering on a death wish, and sent them out onto the sands.
+
+With nothing but their wits and a small bell, they sit on rocky outcroppings and wait for their trial to begin.
+
+Most will not return; those that do will never be the same. but this is what is needed of them, if the tribe of the wyrm is to survive the coming war with Kane and his warmongers,then death itself must become a friend.</German>
+		<Italian>Led by the example of Sih-Aya, the Malakim recruited from amongst themselves those who had bravery bordering on a death wish, and sent them out onto the sands.
+
+With nothing but their wits and a small bell, they sit on rocky outcroppings and wait for their trial to begin.
+
+Most will not return; those that do will never be the same. but this is what is needed of them, if the tribe of the wyrm is to survive the coming war with Kane and his warmongers,then death itself must become a friend.</Italian>
+		<Spanish>Led by the example of Sih-Aya, the Malakim recruited from amongst themselves those who had bravery bordering on a death wish, and sent them out onto the sands.
+
+With nothing but their wits and a small bell, they sit on rocky outcroppings and wait for their trial to begin.
+
+Most will not return; those that do will never be the same. but this is what is needed of them, if the tribe of the wyrm is to survive the coming war with Kane and his warmongers,then death itself must become a friend.</Spanish>
 	</TEXT>
 </Civ4GameText>
