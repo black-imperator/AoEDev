@@ -576,4 +576,230 @@
 		<Italian>Your unit discovers an ancient artifact, the Hauberk of Abjuration.</Italian>
 		<Spanish>Your unit discovers an ancient artifact, the Hauberk of Abjuration.</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_FOXMEN_FEATHER</Tag>
+		<English>Form of... Bird!</English>
+		<French>Form of... Bird!</French>
+		<German>Form of... Bird!</German>
+		<Italian>Form of... Bird!</Italian>
+		<Spanish>Form of... Bird!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_BANANA_SCYTHE</Tag>
+		<English>Herambo's Bananascythe</English>
+		<French>Herambo's Bananascythe</French>
+		<German>Herambo's Bananascythe</German>
+		<Italian>Herambo's Bananascythe</Italian>
+		<Spanish>Herambo's Bananascythe</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_BANANA_SCYTHE_PEDIA</Tag>
+		<English>With every banana the rage builds and your aim improves..  Ooo Ooo Ahh Ahh!</English>
+		<French>With every banana the rage builds and your aim improves..  Ooo Ooo Ahh Ahh!</French>
+		<German>With every banana the rage builds and your aim improves..  Ooo Ooo Ahh Ahh!</German>
+		<Italian>With every banana the rage builds and your aim improves..  Ooo Ooo Ahh Ahh!</Italian>
+		<Spanish>With every banana the rage builds and your aim improves..  Ooo Ooo Ahh Ahh!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_GROGNAR_HAMMER</Tag>
+		<English>Grognar's Hunt</English>
+		<French>Grognar's Hunt</French>
+		<German>Grognar's Hunt</German>
+		<Italian>Grognar's Hunt</Italian>
+		<Spanish>Grognar's Hunt</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_GROGNAR_HAMMER_PEDIA</Tag>
+		<English>In my day, you could hunt the snowplanes from dawn 'til dusk and find more prey then you could carry. Make Erebus Cold Again!</English>
+		<French>In my day, you could hunt the snowplanes from dawn 'til dusk and find more prey then you could carry. Make Erebus Cold Again!</French>
+		<German>In my day, you could hunt the snowplanes from dawn 'til dusk and find more prey then you could carry. Make Erebus Cold Again!</German>
+		<Italian>In my day, you could hunt the snowplanes from dawn 'til dusk and find more prey then you could carry. Make Erebus Cold Again!</Italian>
+		<Spanish>In my day, you could hunt the snowplanes from dawn 'til dusk and find more prey then you could carry. Make Erebus Cold Again!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_FOXFEATHER</Tag>
+		<English>Foxmen Feather Charm</English>
+		<French>Foxmen Feather Charm</French>
+		<German>Foxmen Feather Charm</German>
+		<Italian>Foxmen Feather Charm</Italian>
+		<Spanish>Foxmen Feather Charm</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_FOXFEATHER_PEDIA</Tag>
+		<English>Little Gifts, Blessings of Tali, Sore Foots Reprieve: The feather charms go by many names, and all are coveted by those who live on the wanderers' path.</English>
+		<French>Little Gifts, Blessings of Tali, Sore Foots Reprieve: The feather charms go by many names, and all are coveted by those who live on the wanderers' path.</French>
+		<German>Little Gifts, Blessings of Tali, Sore Foots Reprieve: The feather charms go by many names, and all are coveted by those who live on the wanderers' path.</German>
+		<Italian>Little Gifts, Blessings of Tali, Sore Foots Reprieve: The feather charms go by many names, and all are coveted by those who live on the wanderers' path.</Italian>
+		<Spanish>Little Gifts, Blessings of Tali, Sore Foots Reprieve: The feather charms go by many names, and all are coveted by those who live on the wanderers' path.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_FORM_OF_BIRD</Tag>
+		<English>Suspicious Bird</English>
+		<French>Suspicious Bird</French>
+		<German>Suspicious Bird</German>
+		<Italian>Suspicious Bird</Italian>
+		<Spanish>Suspicious Bird</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_AFFINITY_BANANA</Tag>
+		<English>Banana Affinity</English>
+		<French>Banana Affinity</French>
+		<German>Banana Affinity</German>
+		<Italian>Banana Affinity</Italian>
+		<Spanish>Banana Affinity</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_AFFINITY_BANANA_PEDIA</Tag>
+		<English>Bananas in a high enough quantity are radioactive, much to the delight of Camulos.</English>
+		<French>Bananas in a high enough quantity are radioactive, much to the delight of Camulos.</French>
+		<German>Bananas in a high enough quantity are radioactive, much to the delight of Camulos.</German>
+		<Italian>Bananas in a high enough quantity are radioactive, much to the delight of Camulos.</Italian>
+		<Spanish>Bananas in a high enough quantity are radioactive, much to the delight of Camulos.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_DEFILER</Tag>
+		<English>Defiler</English>
+		<French>Defiler</French>
+		<German>Defiler</German>
+		<Italian>Defiler</Italian>
+		<Spanish>Defiler</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_DEFILER_PEDIA</Tag>
+		<English>To violate is to honour our god.
+Their brutalised forms are our Communion. 
+Their screams are our sermons.
+And their ruined lives are our reward.
+
+Praise be to the father of change!</English>
+		<French>To violate is to honour our god.
+Their brutalised forms are our Communion. 
+Their screams are our sermons.
+And their ruined lives are our reward.
+
+Praise be to the father of change!</French>
+		<German>To violate is to honour our god.
+Their brutalised forms are our Communion. 
+Their screams are our sermons.
+And their ruined lives are our reward.
+
+Praise be to the father of change!</German>
+		<Italian>To violate is to honour our god.
+Their brutalised forms are our Communion. 
+Their screams are our sermons.
+And their ruined lives are our reward.
+
+Praise be to the father of change!</Italian>
+		<Spanish>To violate is to honour our god.
+Their brutalised forms are our Communion. 
+Their screams are our sermons.
+And their ruined lives are our reward.
+
+Praise be to the father of change!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_GUIDE_LANTERN</Tag>
+		<English>Guiding Light Lantern</English>
+		<French>Guiding Light Lantern</French>
+		<German>Guiding Light Lantern</German>
+		<Italian>Guiding Light Lantern</Italian>
+		<Spanish>Guiding Light Lantern</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_GUIDE_LANTERN_PEDIA</Tag>
+		<English>An old technique by Vicars before the age of ice involved leaving an enchanted refractive lantern with its hinge open and facing the sun. 
+This would capture a small bit of the radiance of Lugus, and the sun god's grace would be with you even in the most dismal of domains.
+
+
+This skill is lost now, but these little glowing lanterns remain as a testament to the achievements of the age of magic.</English>
+		<French>An old technique by Vicars before the age of ice involved leaving an enchanted refractive lantern with its hinge open and facing the sun. 
+This would capture a small bit of the radiance of Lugus, and the sun god's grace would be with you even in the most dismal of domains.
+
+
+This skill is lost now, but these little glowing lanterns remain as a testament to the achievements of the age of magic.</French>
+		<German>An old technique by Vicars before the age of ice involved leaving an enchanted refractive lantern with its hinge open and facing the sun. 
+This would capture a small bit of the radiance of Lugus, and the sun god's grace would be with you even in the most dismal of domains.
+
+
+This skill is lost now, but these little glowing lanterns remain as a testament to the achievements of the age of magic.</German>
+		<Italian>An old technique by Vicars before the age of ice involved leaving an enchanted refractive lantern with its hinge open and facing the sun. 
+This would capture a small bit of the radiance of Lugus, and the sun god's grace would be with you even in the most dismal of domains.
+
+
+This skill is lost now, but these little glowing lanterns remain as a testament to the achievements of the age of magic.</Italian>
+		<Spanish>An old technique by Vicars before the age of ice involved leaving an enchanted refractive lantern with its hinge open and facing the sun. 
+This would capture a small bit of the radiance of Lugus, and the sun god's grace would be with you even in the most dismal of domains.
+
+
+This skill is lost now, but these little glowing lanterns remain as a testament to the achievements of the age of magic.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_WINTER_GRASP</Tag>
+		<English>Winter's Grasp</English>
+		<French>Winter's Grasp</French>
+		<German>Winter's Grasp</German>
+		<Italian>Winter's Grasp</Italian>
+		<Spanish>Winter's Grasp</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_WINTER_GRASP_PEDIA</Tag>
+		<English>This blade cuts as deep and cold as a loved one's rejection.</English>
+		<French>This blade cuts as deep and cold as a loved one's rejection.</French>
+		<German>This blade cuts as deep and cold as a loved one's rejection.</German>
+		<Italian>This blade cuts as deep and cold as a loved one's rejection.</Italian>
+		<Spanish>This blade cuts as deep and cold as a loved one's rejection.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_BANANA_SCYTHE</Tag>
+		<English>The unit opens a rusty old chest, smelling faintly of bananas, and broken timelines.</English>
+		<French>The unit opens a rusty old chest, smelling faintly of bananas, and broken timelines.</French>
+		<German>The unit opens a rusty old chest, smelling faintly of bananas, and broken timelines.</German>
+		<Italian>The unit opens a rusty old chest, smelling faintly of bananas, and broken timelines.</Italian>
+		<Spanish>The unit opens a rusty old chest, smelling faintly of bananas, and broken timelines.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_GROGNARS_HUNT</Tag>
+		<English>The unit opens a rusty old chest with the letters MECA carved crudely into the front.</English>
+		<French>The unit opens a rusty old chest with the letters MECA carved crudely into the front.</French>
+		<German>The unit opens a rusty old chest with the letters MECA carved crudely into the front.</German>
+		<Italian>The unit opens a rusty old chest with the letters MECA carved crudely into the front.</Italian>
+		<Spanish>The unit opens a rusty old chest with the letters MECA carved crudely into the front.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_FOXMEN_FEATHER</Tag>
+		<English>The unit opens a rusty old chest, it was empty. But as they turned to leave, a softly glowing feather dances into view on a breeze no one can feel, before coming to a rest at their feet.</English>
+		<French>The unit opens a rusty old chest, it was empty. But as they turned to leave, a softly glowing feather dances into view on a breeze no one can feel, before coming to a rest at their feet.</French>
+		<German>The unit opens a rusty old chest, it was empty. But as they turned to leave, a softly glowing feather dances into view on a breeze no one can feel, before coming to a rest at their feet.</German>
+		<Italian>The unit opens a rusty old chest, it was empty. But as they turned to leave, a softly glowing feather dances into view on a breeze no one can feel, before coming to a rest at their feet.</Italian>
+		<Spanish>The unit opens a rusty old chest, it was empty. But as they turned to leave, a softly glowing feather dances into view on a breeze no one can feel, before coming to a rest at their feet.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_DEFILER_ROD</Tag>
+		<English>The unit opens a rusty old chest, and inside they find a grotesque weapon made of bubbling flesh. When they pick it up, a nearby mouse lets out a frantic screech and then begins to contort violently on the ground. A few moments later, a clawed hand erupts from the creature's forehead as its eyes pop out of its skull.</English>
+		<French>The unit opens a rusty old chest, and inside they find a grotesque weapon made of bubbling flesh. When they pick it up, a nearby mouse lets out a frantic screech and then begins to contort violently on the ground. A few moments later, a clawed hand erupts from the creature's forehead as its eyes pop out of its skull.</French>
+		<German>The unit opens a rusty old chest, and inside they find a grotesque weapon made of bubbling flesh. When they pick it up, a nearby mouse lets out a frantic screech and then begins to contort violently on the ground. A few moments later, a clawed hand erupts from the creature's forehead as its eyes pop out of its skull.</German>
+		<Italian>The unit opens a rusty old chest, and inside they find a grotesque weapon made of bubbling flesh. When they pick it up, a nearby mouse lets out a frantic screech and then begins to contort violently on the ground. A few moments later, a clawed hand erupts from the creature's forehead as its eyes pop out of its skull.</Italian>
+		<Spanish>The unit opens a rusty old chest, and inside they find a grotesque weapon made of bubbling flesh. When they pick it up, a nearby mouse lets out a frantic screech and then begins to contort violently on the ground. A few moments later, a clawed hand erupts from the creature's forehead as its eyes pop out of its skull.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GUIDING_LIGHT_LANTERN</Tag>
+		<English>The unit opens a rusty old chest, and inside they find an old lantern.
+ Already lit, it fills the room with a soft, warm glow, and somehow your unit knows that everything will be alright.</English>
+		<French>The unit opens a rusty old chest, and inside they find an old lantern.
+ Already lit, it fills the room with a soft, warm glow, and somehow your unit knows that everything will be alright.</French>
+		<German>The unit opens a rusty old chest, and inside they find an old lantern.
+ Already lit, it fills the room with a soft, warm glow, and somehow your unit knows that everything will be alright.</German>
+		<Italian>The unit opens a rusty old chest, and inside they find an old lantern.
+ Already lit, it fills the room with a soft, warm glow, and somehow your unit knows that everything will be alright.</Italian>
+		<Spanish>The unit opens a rusty old chest, and inside they find an old lantern.
+ Already lit, it fills the room with a soft, warm glow, and somehow your unit knows that everything will be alright.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_DEFILER</Tag>
+		<English>The unit opens a frost-covered chest, as a chill runs up their spine.</English>
+		<French>The unit opens a frost-covered chest, as a chill runs up their spine.</French>
+		<German>The unit opens a frost-covered chest, as a chill runs up their spine.</German>
+		<Italian>The unit opens a frost-covered chest, as a chill runs up their spine.</Italian>
+		<Spanish>The unit opens a frost-covered chest, as a chill runs up their spine.</Spanish>
+	</TEXT>
 </Civ4GameText>

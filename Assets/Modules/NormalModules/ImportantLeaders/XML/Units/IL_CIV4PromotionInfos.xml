@@ -286,9 +286,6 @@
 			<Type>PROMOTION_WYRM_DUST_AFFINITY</Type>
 			<Description>TXT_KEY_PROMOTION_DUST_AFFINITY</Description>
 			<bNoXP>1</bNoXP>
-			<PromotionBuilds>
-				<PromotionBuild>BUILD_SAND_DUST_IL</PromotionBuild>
-			</PromotionBuilds>
 			<Affinities>
 				<Affinity>AFFINITY_DUST_IL</Affinity>
 			</Affinities>

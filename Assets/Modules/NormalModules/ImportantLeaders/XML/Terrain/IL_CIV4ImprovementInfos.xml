@@ -62,7 +62,7 @@
 				</TechYieldChange>
 			</TechYieldChanges>
 			<BonusConvert>BONUS_ASH</BonusConvert>
-			<iSpawnUnitChancePercentMod>-20</iSpawnUnitChancePercentMod>
+			<iSpawnUnitChancePercentMod>-75</iSpawnUnitChancePercentMod>
 			<SpawnUnitType>UNIT_SAND_WORM</SpawnUnitType>
 			<bSpawnOnlyForOwner>1</bSpawnOnlyForOwner>
 			<iSpawnAtOnceLimit>1</iSpawnAtOnceLimit>

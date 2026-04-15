@@ -1825,6 +1825,111 @@
 				</BonusAffinity>
 			</BonusAffinities>
 		</PromotionInfo>
+		<PromotionInfo>		<!-- Herambo's Bananascythe -->
+			<Type>PROMOTION_BANANA_SCYTHE</Type>
+			<Description>TXT_KEY_EQUIPMENT_BANANA_SCYTHE</Description>
+			<Civilopedia>TXT_KEY_EQUIPMENT_BANANA_SCYTHE_PEDIA</Civilopedia>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<TechPrereq>TECH_NEVER</TechPrereq>
+			<Button>Art/Interface/Buttons/Equipment/EquipBanana.dds</Button>
+			<bEquipment>1</bEquipment>
+			<Affinities>
+				<Affinity>AFFINITY_BANANA</Affinity>
+			</Affinities>
+			<iExtraCombatStr>1</iExtraCombatStr>
+			<iExtraCombatDefense>1</iExtraCombatDefense>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Grognar's Hunt -->
+			<Type>PROMOTION_GROGNAR_HAMMER</Type>
+			<Description>TXT_KEY_EQUIPMENT_GROGNAR_HAMMER</Description>
+			<Civilopedia>TXT_KEY_EQUIPMENT_GROGNAR_HAMMER_PEDIA</Civilopedia>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<TechPrereq>TECH_NEVER</TechPrereq>
+			<Button>Art/Interface/Buttons/Equipment/EquipBallHammer.dds</Button>
+			<bEquipment>1</bEquipment>
+			<iMovesChange>1</iMovesChange>
+			<AuraBonuses>
+				<AuraBonus>
+					<bApplyEnemy>1</bApplyEnemy>
+					<iBonusRange>1</iBonusRange>
+					<Promotion>PROMOTION_BLOODHOUND_PREY</Promotion>
+				</AuraBonus>
+			</AuraBonuses>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Defiler -->
+			<Type>PROMOTION_DEFILER_ROD</Type>
+			<Description>TXT_KEY_EQUIPMENT_DEFILER</Description>
+			<Civilopedia>TXT_KEY_EQUIPMENT_DEFILER_PEDIA</Civilopedia>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<TechPrereq>TECH_NEVER</TechPrereq>
+			<Button>Art/Interface/Buttons/Equipment/EquipFleshRod.dds</Button>
+			<bEquipment>1</bEquipment>
+			<iFirstStrikesChange>1</iFirstStrikesChange>
+			<AuraBonuses>
+				<AuraBonus>
+					<bApplyEnemy>1</bApplyEnemy>
+					<iBonusRange>1</iBonusRange>
+					<Promotion>PROMOTION_MUTATED</Promotion>
+				</AuraBonus>
+			</AuraBonuses>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Winter's Grasp -->
+			<Type>PROMOTION_WINTER_GRASP</Type>
+			<Description>TXT_KEY_EQUIPMENT_WINTER_GRASP</Description>
+			<Civilopedia>TXT_KEY_EQUIPMENT_WINTER_GRASP_PEDIA</Civilopedia>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<TechPrereq>TECH_NEVER</TechPrereq>
+			<Button>Art/Interface/Buttons/Equipment/EquipIceSword.dds</Button>
+			<bEquipment>1</bEquipment>
+			<CaptureUnitClass>UNITCLASS_FROSTLING_ARCHER</CaptureUnitClass>
+			<bPrereqAliveCapture>1</bPrereqAliveCapture>
+			<iSlaveGenerationChance>15</iSlaveGenerationChance>
+			<DamageTypeCombats>
+				<DamageTypeCombat>
+					<DamageType>DAMAGE_COLD</DamageType>
+					<iCombat>1</iCombat>
+				</DamageTypeCombat>
+			</DamageTypeCombats>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Guiding Lantern -->
+			<Type>PROMOTION_GUIDE_LANTERN</Type>
+			<Description>TXT_KEY_EQUIPMENT_GUIDE_LANTERN</Description>
+			<Civilopedia>TXT_KEY_EQUIPMENT_GUIDE_LANTERN_PEDIA</Civilopedia>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<TechPrereq>TECH_NEVER</TechPrereq>
+			<Button>Art/Interface/Buttons/Equipment/EquipLantern.dds</Button>
+			<bEquipment>1</bEquipment>
+			<iVisibilityChange>1</iVisibilityChange>
+			<iExtraPerception>3</iExtraPerception>
+			<PromotionExcludes>
+				<Promotion>PROMOTION_LOST</Promotion>
+				<Promotion>PROMOTION_LEASH_0</Promotion>
+				<Promotion>PROMOTION_LEASH_1</Promotion>
+				<Promotion>PROMOTION_DEADLY_MISHAP</Promotion>
+				<Promotion>PROMOTION_DEADLY_MISHAP_DUMMY</Promotion>
+				<Promotion>PROMOTION_WEIRD_WRACKED</Promotion>
+				<Promotion>PROMOTION_WANDERING_CURSE</Promotion>
+			</PromotionExcludes>
+			<PromotionOverwrites>
+				<Promotion>PROMOTION_LOST</Promotion>
+				<Promotion>PROMOTION_LEASH_0</Promotion>
+				<Promotion>PROMOTION_LEASH_1</Promotion>
+				<Promotion>PROMOTION_DEADLY_MISHAP</Promotion>
+				<Promotion>PROMOTION_DEADLY_MISHAP_DUMMY</Promotion>
+				<Promotion>PROMOTION_WEIRD_WRACKED</Promotion>
+				<Promotion>PROMOTION_WANDERING_CURSE</Promotion>
+			</PromotionOverwrites>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Foxmen Feather Charm -->
+			<Type>PROMOTION_FOXFEATHER</Type>
+			<Description>TXT_KEY_EQUIPMENT_FOXFEATHER</Description>
+			<Civilopedia>TXT_KEY_EQUIPMENT_FOXFEATHER_PEDIA</Civilopedia>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<TechPrereq>TECH_NEVER</TechPrereq>
+			<Button>Art/Interface/Buttons/Equipment/EquipFeather.dds</Button>
+			<iNoBadExplore>25</iNoBadExplore>
+			<bEquipment>1</bEquipment>
+		</PromotionInfo>
 		<PromotionInfo>		<!-- Arma Good weapon-->
 			<Type>PROMOTION_ARMA_GOOD_WEAPON</Type>
 			<Description>TXT_KEY_EQUIPMENT_ARMA</Description>
@@ -13622,6 +13727,20 @@
 			<ReplaceArtType>ART_DEF_UNIT_GIANT_TORTOISE</ReplaceArtType>
 			<Button>Art/Interface/Buttons/Promotions/Shimmering_Core.dds</Button>
 			<iPromotionDuration>1</iPromotionDuration>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Form of Bird -->
+			<Type>PROMOTION_FORM_OF_BIRD</Type>
+			<Description>TXT_KEY_PROMOTION_FORM_OF_BIRD</Description>
+			<bNoXP>1</bNoXP>
+			<ReplaceArtType>ART_DEF_UNIT_HAWK</ReplaceArtType>
+			<Button>Art/Interface/Buttons/Units/Hawk.dds</Button>
+			<iPromotionDuration>1</iPromotionDuration>
+			<iVisibilityChange>2</iVisibilityChange>
+			<iExtraPerception>2</iExtraPerception>
+			<bNoDefenseBonus>1</bNoDefenseBonus>
+			<iMovesChange>2</iMovesChange>
+			<iCombatPercent>-50</iCombatPercent>
+			<bFlying>1</bFlying>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Monk Enlightenment -->
 			<Type>PROMOTION_MONK_ENLIGHTENMENT</Type>

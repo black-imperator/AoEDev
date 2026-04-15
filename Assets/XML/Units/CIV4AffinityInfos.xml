@@ -205,5 +205,17 @@
 			</AffinityDamageType>
 			</AffinityDamageTypes>
 		</AffinityInfo>
+		<AffinityInfo><!-- Banana Affinity-->
+			<Type>AFFINITY_BANANA</Type>
+			<Description>TXT_KEY_AFFINITY_BANANA</Description>
+			<Civilopedia>TXT_KEY_AFFINITY_BANANA_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_AFFINITY_BANANA_STRATEGY</Strategy>
+			<BonusTypes>
+				<BonusType>BONUS_BANANA</BonusType>
+			</BonusTypes>
+			<fRangedStrength>1</fRangedStrength>
+			<fRangedLimit>2</fRangedLimit>
+			<fStrengthMod>10</fStrengthMod>
+		</AffinityInfo>
 	</AffinityInfos>
 </Civ4AffinityInfos>
