@@ -1,0 +1,36 @@
+;Name - no need to explain
+;note: one line
+[name]
+PPQ's Unit Models - Naval Expansion
+;
+;
+;Version - version of module
+;Note: it have to be number, so only numberic characters and none or one period
+;note: one line
+[version]
+2020
+;
+;
+;RifE version - version of RifE for which is this module tested, checked, developed, etc
+;Note: it have to be number, so only numberic characters and none or one period
+;note: one line
+[rifeversion]
+356
+;
+;
+;Author - you
+;note: one line
+[author]
+PPQ_Purple
+;
+;
+;Short description - text showed in contect menu
+;note: one line
+[shortdesc]
+Unit flavor pack for the naval expansion mod.
+;
+;
+;Description - text showed in message box
+;note: can be multiline
+[desc]
+Fall Further/Rise from Erebus/Ashes of Erebus/Final Fixes Reborn is a mod that has gone through even more modifications than it has names. And one inevitable and regrettable result of this development is that as units changed and civilizations were added he number of unique models has not been keeping pace. I have taken it upon my self to correct this. Or at least to die trying.

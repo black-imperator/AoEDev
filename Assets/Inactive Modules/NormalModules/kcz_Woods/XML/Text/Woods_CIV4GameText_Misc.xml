@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Alignment -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_ANIMAL_SPIRIT</Tag>
+		<English>Animal Spirit</English>
+		<French>Animal Spirit</French>
+		<German>Animal Spirit</German>
+		<Italian>Animal Spirit</Italian>
+		<Spanish>Animal Spirit</Spanish>
+	</TEXT>
+
+	<TEXT>
+		<Tag></Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+</Civ4GameText>

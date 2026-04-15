@@ -42,12 +42,12 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>2</iCommerce>
 			</ObsoleteSafeCommerceChanges>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>2</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<iSpecialistClassCount>2</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<BonusHappinessChanges>
 				<BonusHappinessChange>
 					<BonusType>BONUS_COW</BonusType>
@@ -67,16 +67,16 @@
 				</BonusHappinessChange>
 			</BonusHappinessChanges>
 			<iCrime>-10</iCrime>
-			<SpecialistCommerceChanges>
-				<SpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+			<SpecialistClassCommerceChanges>
+				<SpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
 					<CommerceChanges>
 						<iCommerce>0</iCommerce>
 						<iCommerce>1</iCommerce>
 						<iCommerce>0</iCommerce>
 					</CommerceChanges>
-				</SpecialistCommerceChange>
-			</SpecialistCommerceChanges>
+				</SpecialistClassCommerceChange>
+			</SpecialistClassCommerceChanges>
 			<bForceOverwrite>1</bForceOverwrite>
 		</BuildingInfo>
 		<BuildingInfo>

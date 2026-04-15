@@ -44,24 +44,10 @@ def spawn_eert_forests():
                 continue
 
             if pPlot.getFeatureType() != -1:
-                #for iPlayer in range(gc.getMAX_PLAYERS()):
-                #    pPlayer = gc.getPlayer(iPlayer)
-                #    if pPlayer.isAlive() and pPlayer.isHuman():
-                #        CyInterface().addMessage(
-                #            iPlayer, True, 20, "Here is some feature", "", 0, "",
-                #            ColorTypes(gc.getInfoTypeForString("COLOR_WHITE")), -1, -1, False, False
-                #        )
                 iFeatureForest = gc.getInfoTypeForString("FEATURE_FOREST")
                 iFeatureJungle = gc.getInfoTypeForString("FEATURE_JUNGLE")
                 iFeatureAncientForest = gc.getInfoTypeForString("FEATURE_FOREST_ANCIENT")
                 if pPlot.getFeatureType() in [iFeatureForest, iFeatureAncientForest, iFeatureJungle]:
-                #    for iPlayer in range(gc.getMAX_PLAYERS()):
-                #        pPlayer = gc.getPlayer(iPlayer)
-                #        if pPlayer.isAlive() and pPlayer.isHuman():
-                #            CyInterface().addMessage(
-                #                iPlayer, True, 20, "Oh, a forest", "", 0, "",
-                #                ColorTypes(gc.getInfoTypeForString("COLOR_WHITE")), -1, -1, False, False
-                #            )
                     iImprovement = pPlot.getImprovementType()
                     if iImprovement == -1 or gc.getImprovementInfo(iImprovement).isUnique():
                         continue

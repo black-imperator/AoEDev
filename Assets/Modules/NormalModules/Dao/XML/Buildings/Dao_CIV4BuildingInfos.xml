@@ -38,12 +38,12 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>10</iCommerce>
 			</CommerceModifiers>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<BonusHappinessChanges>
 				<BonusHappinessChange>
 					<BonusType>BONUS_INCENSE</BonusType>
@@ -235,10 +235,10 @@
 			</CommerceHappinesses>
 			<ReligionChanges>
 			</ReligionChanges>
-			<SpecialistCounts>
-			</SpecialistCounts>
-			<FreeSpecialistCounts>
-			</FreeSpecialistCounts>
+			<SpecialistClassCounts>
+			</SpecialistClassCounts>
+			<FreeSpecialistClassCounts>
+			</FreeSpecialistClassCounts>
 			<CommerceFlexibles>
 			</CommerceFlexibles>
 			<CommerceChangeOriginalOwners>
@@ -262,8 +262,8 @@
 			</PrereqBuildingClasses>
 			<BuildingClassNeededs>
 			</BuildingClassNeededs>
-			<SpecialistYieldChanges>
-			</SpecialistYieldChanges>
+			<SpecialistClassYieldChanges>
+			</SpecialistClassYieldChanges>
 			<BonusYieldModifiers>
 			</BonusYieldModifiers>
 			<ImprovementFreeSpecialists>
@@ -278,8 +278,8 @@
 			<iCrime>-10</iCrime>
 			<PrereqTrait>NONE</PrereqTrait>
 			<RemovePromotion>NONE</RemovePromotion>
-			<SpecialistCommerceChanges>
-			</SpecialistCommerceChanges>
+			<SpecialistClassCommerceChanges>
+			</SpecialistClassCommerceChanges>
 		</BuildingInfo>
 		<BuildingInfo>
 			<BuildingClass>BUILDINGCLASS_LIBRARY</BuildingClass>
@@ -450,18 +450,18 @@
 			</CommerceHappinesses>
 			<ReligionChanges>
 			</ReligionChanges>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
-			<FreeSpecialistCounts>
-			</FreeSpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_ARTIST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
+			<FreeSpecialistClassCounts>
+			</FreeSpecialistClassCounts>
 			<CommerceFlexibles>
 			</CommerceFlexibles>
 			<CommerceChangeOriginalOwners>
@@ -485,8 +485,8 @@
 			</PrereqBuildingClasses>
 			<BuildingClassNeededs>
 			</BuildingClassNeededs>
-			<SpecialistYieldChanges>
-			</SpecialistYieldChanges>
+			<SpecialistClassYieldChanges>
+			</SpecialistClassYieldChanges>
 			<BonusYieldModifiers>
 			</BonusYieldModifiers>
 			<ImprovementFreeSpecialists>
@@ -510,8 +510,8 @@
 			<FreeBonus3>NONE</FreeBonus3>
 			<PrereqTrait>NONE</PrereqTrait>
 			<RemovePromotion>NONE</RemovePromotion>
-			<SpecialistCommerceChanges>
-			</SpecialistCommerceChanges>
+			<SpecialistClassCommerceChanges>
+			</SpecialistClassCommerceChanges>
 		</BuildingInfo>		
 		<BuildingInfo>
 			<BuildingClass>BUILDINGCLASS_SHRINE_AIR</BuildingClass>
@@ -744,10 +744,10 @@
 			</CommerceHappinesses>
 			<ReligionChanges>
 			</ReligionChanges>
-			<SpecialistCounts>
-			</SpecialistCounts>
-			<FreeSpecialistCounts>
-			</FreeSpecialistCounts>
+			<SpecialistClassCounts>
+			</SpecialistClassCounts>
+			<FreeSpecialistClassCounts>
+			</FreeSpecialistClassCounts>
 			<CommerceFlexibles>
 			</CommerceFlexibles>
 			<CommerceChangeOriginalOwners>
@@ -796,8 +796,8 @@
 				</BuildingExclude>
 			</BuildingExcludes>
 		
-			 <SpecialistYieldChanges>
-			</SpecialistYieldChanges>
+			 <SpecialistClassYieldChanges>
+			</SpecialistClassYieldChanges>
 			<BonusYieldModifiers>
 			</BonusYieldModifiers>
 			<ImprovementFreeSpecialists>
@@ -821,8 +821,8 @@
 			<FreeBonus3>NONE</FreeBonus3>
 			<PrereqTrait>NONE</PrereqTrait>
 			<RemovePromotion>NONE</RemovePromotion>
-			<SpecialistCommerceChanges>
-			</SpecialistCommerceChanges>
+			<SpecialistClassCommerceChanges>
+			</SpecialistClassCommerceChanges>
 			<BonusCommerceModifiers>
 				<BonusCommerceModifier>
 					<BonusType>BONUS_MANA_EARTH</BonusType>
@@ -989,10 +989,10 @@
 			</CommerceHappinesses>
 			<ReligionChanges>
 			</ReligionChanges>
-			<SpecialistCounts>
-			</SpecialistCounts>
-			<FreeSpecialistCounts>
-			</FreeSpecialistCounts>
+			<SpecialistClassCounts>
+			</SpecialistClassCounts>
+			<FreeSpecialistClassCounts>
+			</FreeSpecialistClassCounts>
 			<CommerceFlexibles>
 			</CommerceFlexibles>
 			<CommerceChangeOriginalOwners>
@@ -1041,8 +1041,8 @@
 				</BuildingExclude>
 			</BuildingExcludes>
 		
-		 <SpecialistYieldChanges>
-			</SpecialistYieldChanges>
+		 <SpecialistClassYieldChanges>
+			</SpecialistClassYieldChanges>
 			<BonusYieldModifiers>
 			</BonusYieldModifiers>
 			<ImprovementFreeSpecialists>
@@ -1066,8 +1066,8 @@
 			<FreeBonus3>NONE</FreeBonus3>
 			<PrereqTrait>NONE</PrereqTrait>
 			<RemovePromotion>NONE</RemovePromotion>
-			<SpecialistCommerceChanges>
-			</SpecialistCommerceChanges>
+			<SpecialistClassCommerceChanges>
+			</SpecialistClassCommerceChanges>
 			<BonusCommerceModifiers>
 				<BonusCommerceModifier>
 					<BonusType>BONUS_MANA_FIRE</BonusType>
@@ -1235,10 +1235,10 @@
 			</CommerceHappinesses>
 			<ReligionChanges>
 			</ReligionChanges>
-			<SpecialistCounts>
-			</SpecialistCounts>
-			<FreeSpecialistCounts>
-			</FreeSpecialistCounts>
+			<SpecialistClassCounts>
+			</SpecialistClassCounts>
+			<FreeSpecialistClassCounts>
+			</FreeSpecialistClassCounts>
 			<CommerceFlexibles>
 			</CommerceFlexibles>
 			<CommerceChangeOriginalOwners>
@@ -1287,8 +1287,8 @@
 				</BuildingExclude>
 			</BuildingExcludes>
 		
-		  <SpecialistYieldChanges>
-			</SpecialistYieldChanges>
+		  <SpecialistClassYieldChanges>
+			</SpecialistClassYieldChanges>
 			<BonusYieldModifiers>
 			</BonusYieldModifiers>
 			<ImprovementFreeSpecialists>
@@ -1312,8 +1312,8 @@
 			<FreeBonus3>NONE</FreeBonus3>
 			<PrereqTrait>NONE</PrereqTrait>
 			<RemovePromotion>NONE</RemovePromotion>
-			<SpecialistCommerceChanges>
-			</SpecialistCommerceChanges>	
+			<SpecialistClassCommerceChanges>
+			</SpecialistClassCommerceChanges>
 		</BuildingInfo>
 
 	</BuildingInfos>

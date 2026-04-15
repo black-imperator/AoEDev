@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Civilization Infos -->
+<Civ4UnitArtStyleTypeInfos xmlns="x-schema:CIV4CivilizationsSchema.xml">
+	<UnitArtStyleTypeInfos>
+			<UnitArtStyleTypeInfo>
+			<Type>UNIT_ARTSTYLE_SVARTALFAR</Type>
+				<StyleUnits>
+			
+				<StyleUnit>
+					<UnitType>UNIT_TRADESHIP</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_MERCHANTMAN_DARKELF</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_MERCHANTMAN_DARKELF</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_MERCHANTMAN_DARKELF</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				
+					<StyleUnit>
+						<UnitType>UNIT_FRIGATE</UnitType>
+						<UnitMeshGroup>
+							<EarlyArtDefineTag>ART_DEF_UNIT_FRIGATE_DARKELF</EarlyArtDefineTag>
+							<LateArtDefineTag>ART_DEF_UNIT_FRIGATE_DARKELF</LateArtDefineTag>
+							<MiddleArtDefineTag>ART_DEF_UNIT_FRIGATE_DARKELF</MiddleArtDefineTag>
+						</UnitMeshGroup>
+					</StyleUnit>
+			
+					<StyleUnit>
+						<UnitType>UNIT_MAN_O_WAR</UnitType>
+						<UnitMeshGroup>
+							<EarlyArtDefineTag>ART_DEF_UNIT_MAN_O_WAR_DARKELF</EarlyArtDefineTag>
+							<LateArtDefineTag>ART_DEF_UNIT_MAN_O_WAR_DARKELF</LateArtDefineTag>
+							<MiddleArtDefineTag>ART_DEF_UNIT_MAN_O_WAR_DARKELF</MiddleArtDefineTag>
+						</UnitMeshGroup>
+					</StyleUnit>	
+				
+					<StyleUnit>
+						<UnitType>UNIT_QUEEN_OF_THE_LINE</UnitType>
+						<UnitMeshGroup>
+							<EarlyArtDefineTag>ART_DEF_UNIT_QUEEN_OF_THE_LINE_DARKELF</EarlyArtDefineTag>
+							<LateArtDefineTag>ART_DEF_UNIT_QUEEN_OF_THE_LINE_DARKELF</LateArtDefineTag>
+							<MiddleArtDefineTag>ART_DEF_UNIT_QUEEN_OF_THE_LINE_DARKELF</MiddleArtDefineTag>
+						</UnitMeshGroup>
+					</StyleUnit>
+					<StyleUnit>
+						<UnitType>UNIT_GALLEON</UnitType>
+						<UnitMeshGroup>
+							<EarlyArtDefineTag>ART_DEF_UNIT_GALLEON_DARKELF</EarlyArtDefineTag>
+							<LateArtDefineTag>ART_DEF_UNIT_GALLEON_DARKELF</LateArtDefineTag>
+							<MiddleArtDefineTag>ART_DEF_UNIT_GALLEON_DARKELF</MiddleArtDefineTag>
+						</UnitMeshGroup>
+					</StyleUnit>
+					<StyleUnit>
+						<UnitType>UNIT_CARRACK</UnitType>
+						<UnitMeshGroup>
+							<EarlyArtDefineTag>ART_DEF_UNIT_CARRACK_DARKELF</EarlyArtDefineTag>
+							<LateArtDefineTag>ART_DEF_UNIT_CARRACK_DARKELF</LateArtDefineTag>
+							<MiddleArtDefineTag>ART_DEF_UNIT_CARRACK_DARKELF</MiddleArtDefineTag>
+						</UnitMeshGroup>
+					</StyleUnit>
+					<StyleUnit>
+						<UnitType>UNIT_TRIREME</UnitType>
+						<UnitMeshGroup>
+							<EarlyArtDefineTag>ART_DEF_UNIT_TRIREME_DARKELF</EarlyArtDefineTag>
+							<LateArtDefineTag>ART_DEF_UNIT_TRIREME_DARKELF</LateArtDefineTag>
+							<MiddleArtDefineTag>ART_DEF_UNIT_TRIREME_DARKELF</MiddleArtDefineTag>
+						</UnitMeshGroup>
+					</StyleUnit>
+					
+					<StyleUnit>
+						<UnitType>UNIT_GALLEY</UnitType>
+						<UnitMeshGroup>
+							<EarlyArtDefineTag>ART_DEF_UNIT_GALLEY_DARKELF</EarlyArtDefineTag>
+							<LateArtDefineTag>ART_DEF_UNIT_GALLEY_DARKELF</LateArtDefineTag>
+							<MiddleArtDefineTag>ART_DEF_UNIT_GALLEY_DARKELF</MiddleArtDefineTag>
+						</UnitMeshGroup>
+					</StyleUnit>
+					<StyleUnit>
+						<UnitType>UNIT_CARAVEL</UnitType>
+						<UnitMeshGroup>
+							<EarlyArtDefineTag>ART_DEF_UNIT_CARAVEL_DARKELF</EarlyArtDefineTag>
+							<LateArtDefineTag>ART_DEF_UNIT_CARAVEL_DARKELF</LateArtDefineTag>
+							<MiddleArtDefineTag>ART_DEF_UNIT_CARAVEL_DARKELF</MiddleArtDefineTag>
+						</UnitMeshGroup>
+					</StyleUnit>
+					<StyleUnit>
+						<UnitType>UNIT_ARCANE_BARGE</UnitType>
+						<UnitMeshGroup>
+							<EarlyArtDefineTag>ART_DEF_UNIT_ARCANE_BARGE_DARKELF</EarlyArtDefineTag>
+							<LateArtDefineTag>ART_DEF_UNIT_ARCANE_BARGE_DARKELF</LateArtDefineTag>
+							<MiddleArtDefineTag>ART_DEF_UNIT_ARCANE_BARGE_DARKELF</MiddleArtDefineTag>
+						</UnitMeshGroup>
+					</StyleUnit>
+					<!--
+					<StyleUnit>
+						<UnitType>UNIT_ARCANE_BARGE</UnitType>
+						<UnitMeshGroup>
+							<EarlyArtDefineTag>ART_DEF_UNIT_ARCANE_MARINER_DARKELF</EarlyArtDefineTag>
+							<LateArtDefineTag>ART_DEF_UNIT_ARCANE_MARINER_DARKELF</LateArtDefineTag>
+							<MiddleArtDefineTag>ART_DEF_UNIT_ARCANE_MARINER_DARKELF</MiddleArtDefineTag>
+						</UnitMeshGroup>
+					</StyleUnit>
+					-->
+				</StyleUnits>
+			</UnitArtStyleTypeInfo>
+		</UnitArtStyleTypeInfos>
+</Civ4UnitArtStyleTypeInfos>

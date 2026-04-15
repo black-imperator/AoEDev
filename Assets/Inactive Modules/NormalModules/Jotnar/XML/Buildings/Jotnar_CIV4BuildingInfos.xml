@@ -127,16 +127,16 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 			</CommerceHappinesses>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<iCrime>-2</iCrime>
 			<ConstructSound>AS2D_BUILD_THEATRE</ConstructSound>
 			<Flavors>
@@ -202,22 +202,22 @@
 				<iCommerce>20</iCommerce>
 				<iCommerce>0</iCommerce>
 			</CommerceModifiers>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-					<iSpecialistCount>2</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
-			<FreeSpecialistCounts>
-				<FreeSpecialistCount>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-					<iFreeSpecialistCount>1</iFreeSpecialistCount>
-				</FreeSpecialistCount>
-			</FreeSpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_ENGINEER</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
+					<iSpecialistClassCount>2</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
+			<FreeSpecialistClassCounts>
+				<FreeSpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
+					<iFreeSpecialistClassCount>1</iFreeSpecialistClassCount>
+				</FreeSpecialistClassCount>
+			</FreeSpecialistClassCounts>
 			<BonusProductionModifiers>
 				<BonusProductionModifier>
 					<BonusType>BONUS_COPPER</BonusType>
@@ -294,22 +294,22 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 			</CommerceChangeDoubleTimes>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
-			<FreeSpecialistCounts>
-				<FreeSpecialistCount>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-					<iFreeSpecialistCount>1</iFreeSpecialistCount>
-				</FreeSpecialistCount>
-			</FreeSpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_ENGINEER</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
+			<FreeSpecialistClassCounts>
+				<FreeSpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_ENGINEER</SpecialistClass>
+					<iFreeSpecialistClassCount>1</iFreeSpecialistClassCount>
+				</FreeSpecialistClassCount>
+			</FreeSpecialistClassCounts>
 			<CommerceChangeOriginalOwners>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
@@ -360,12 +360,12 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>2</iCommerce>
 			</ObsoleteSafeCommerceChanges>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<ConstructSound>AS2D_BUILD_OBELISK</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -529,18 +529,18 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>30</iCommerce>
 			</CommerceModifiers>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>3</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
-			<FreeSpecialistCounts>
-				<FreeSpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iFreeSpecialistCount>1</iFreeSpecialistCount>
-				</FreeSpecialistCount>
-			</FreeSpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<iSpecialistClassCount>3</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
+			<FreeSpecialistClassCounts>
+				<FreeSpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<iFreeSpecialistClassCount>1</iFreeSpecialistClassCount>
+				</FreeSpecialistClassCount>
+			</FreeSpecialistClassCounts>
 			<CommerceChangeOriginalOwners>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
@@ -622,22 +622,22 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 			</CommerceChangeDoubleTimes>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
-					<iSpecialistCount>2</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
-			<FreeSpecialistCounts>
-				<FreeSpecialistCount>
-					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
-					<iFreeSpecialistCount>1</iFreeSpecialistCount>
-				</FreeSpecialistCount>
-			</FreeSpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_ARTIST</SpecialistClass>
+					<iSpecialistClassCount>2</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
+			<FreeSpecialistClassCounts>
+				<FreeSpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_ARTIST</SpecialistClass>
+					<iFreeSpecialistClassCount>1</iFreeSpecialistClassCount>
+				</FreeSpecialistClassCount>
+			</FreeSpecialistClassCounts>
 			<CommerceChangeOriginalOwners>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
@@ -709,22 +709,22 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 			</CommerceChangeDoubleTimes>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>2</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-					<iSpecialistCount>3</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
-			<FreeSpecialistCounts>
-				<FreeSpecialistCount>
-					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-					<iFreeSpecialistCount>1</iFreeSpecialistCount>
-				</FreeSpecialistCount>
-			</FreeSpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<iSpecialistClassCount>2</iSpecialistClassCount>
+				</SpecialistClassCount>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_MERCHANT</SpecialistClass>
+					<iSpecialistClassCount>3</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
+			<FreeSpecialistClassCounts>
+				<FreeSpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_MERCHANT</SpecialistClass>
+					<iFreeSpecialistClassCount>1</iFreeSpecialistClassCount>
+				</FreeSpecialistClassCount>
+			</FreeSpecialistClassCounts>
 			<CommerceChangeOriginalOwners>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>

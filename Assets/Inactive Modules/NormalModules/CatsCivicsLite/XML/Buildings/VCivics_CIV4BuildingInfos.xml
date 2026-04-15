@@ -198,12 +198,12 @@
 					<iHappinessChange>1</iHappinessChange>
 				</BonusHappinessChange>
 			</BonusHappinessChanges>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-					<iSpecialistCount>3</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_MERCHANT</SpecialistClass>
+					<iSpecialistClassCount>3</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GOLD</FlavorType>
@@ -423,42 +423,42 @@
 				<iCommerce>30</iCommerce>
 				<iCommerce>30</iCommerce>
 			</CommerceModifiers>
-			<LocalSpecialistCommerceChanges>
-				<LocalSpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+			<LocalSpecialistClassCommerceChanges>
+				<LocalSpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_MERCHANT</SpecialistClass>
 					<CommerceChanges>
 						<iCommerce>1</iCommerce>
 						<iCommerce>0</iCommerce>
 						<iCommerce>0</iCommerce>
 					</CommerceChanges>
-				</LocalSpecialistCommerceChange>
-				<LocalSpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+				</LocalSpecialistClassCommerceChange>
+				<LocalSpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
 					<CommerceChanges>
 						<iCommerce>0</iCommerce>
 						<iCommerce>1</iCommerce>
 						<iCommerce>0</iCommerce>
 					</CommerceChanges>
-				</LocalSpecialistCommerceChange>
-				<LocalSpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+				</LocalSpecialistClassCommerceChange>
+				<LocalSpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_ARTIST</SpecialistClass>
 					<CommerceChanges>
 						<iCommerce>0</iCommerce>
 						<iCommerce>0</iCommerce>
 						<iCommerce>1</iCommerce>
 					</CommerceChanges>
-				</LocalSpecialistCommerceChange>
-			</LocalSpecialistCommerceChanges>
-			<LocalSpecialistYieldChanges>
-				<LocalSpecialistYieldChange>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+				</LocalSpecialistClassCommerceChange>
+			</LocalSpecialistClassCommerceChanges>
+			<LocalSpecialistClassYieldChanges>
+				<LocalSpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_ENGINEER</SpecialistClass>
 					<YieldChanges>
 						<iYield>0</iYield>
 						<iYield>1</iYield>
 						<iYield>0</iYield>
 					</YieldChanges>
-				</LocalSpecialistYieldChange>
-			</LocalSpecialistYieldChanges>
+				</LocalSpecialistClassYieldChange>
+			</LocalSpecialistClassYieldChanges>
 		</BuildingInfo>
 		<BuildingInfo>		<!-- Sovereign Economic -->
 			<BuildingClass>BUILDINGCLASS_CITY_STATES_SOVEREIGN_ECONOMIC</BuildingClass>
@@ -477,24 +477,24 @@
 				<iYield>0</iYield>
 				<iYield>25</iYield>
 			</YieldModifiers>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_MERCHANT</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<GreatPeopleUnitClass>UNITCLASS_MERCHANT</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
-			<LocalSpecialistCommerceChanges>
-				<LocalSpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+			<LocalSpecialistClassCommerceChanges>
+				<LocalSpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_MERCHANT</SpecialistClass>
 					<CommerceChanges>
 						<iCommerce>1</iCommerce>
 						<iCommerce>0</iCommerce>
 						<iCommerce>0</iCommerce>
 					</CommerceChanges>
-				</LocalSpecialistCommerceChange>
-			</LocalSpecialistCommerceChanges>
+				</LocalSpecialistClassCommerceChange>
+			</LocalSpecialistClassCommerceChanges>
 		</BuildingInfo>
 		<BuildingInfo>		<!-- Sovereign Trader -->
 			<BuildingClass>BUILDINGCLASS_CITY_STATES_SOVEREIGN_TRADER</BuildingClass>
@@ -515,12 +515,12 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>30</iCommerce>
 			</CommerceModifiers>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_MERCHANT</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<GreatPeopleUnitClass>UNITCLASS_MERCHANT</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
 		</BuildingInfo>
@@ -577,12 +577,12 @@
 				<iYield>15</iYield>
 				<iYield>0</iYield>
 			</YieldModifiers>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_ENGINEER</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<GreatPeopleUnitClass>UNITCLASS_ENGINEER</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
 		</BuildingInfo>
@@ -648,12 +648,12 @@
 					</YieldModifiers>
 				</BonusYieldModifier>
 			</BonusYieldModifiers>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_ARTIST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<GreatPeopleUnitClass>UNITCLASS_ARTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
 		</BuildingInfo>
@@ -705,25 +705,25 @@
 				<iCommerce>40</iCommerce>
 				<iCommerce>40</iCommerce>
 			</CommerceModifiers>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<GreatPeopleUnitClass>UNITCLASS_SCIENTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
 			<iGoldenAgeModifier>10</iGoldenAgeModifier>
-			<LocalSpecialistYieldChanges>
-				<LocalSpecialistYieldChange>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+			<LocalSpecialistClassYieldChanges>
+				<LocalSpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
 					<YieldChanges>
 						<iYield>0</iYield>
 						<iYield>1</iYield>
 						<iYield>0</iYield>
 					</YieldChanges>
-				</LocalSpecialistYieldChange>
-			</LocalSpecialistYieldChanges>
+				</LocalSpecialistClassYieldChange>
+			</LocalSpecialistClassYieldChanges>
 		</BuildingInfo>
 		<BuildingInfo>		<!-- Sovereign Religious -->
 			<BuildingClass>BUILDINGCLASS_CITY_STATES_SOVEREIGN_RELIGIOUS</BuildingClass>
@@ -742,12 +742,12 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>30</iCommerce>
 			</CommerceModifiers>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<GreatPeopleUnitClass>UNITCLASS_PROPHET</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
 			<UnitCombatFreeExperiences>
@@ -823,12 +823,12 @@
 			<iWarWearinessModifier>25</iWarWearinessModifier>
 			<iMilitaryProductionModifier>-40</iMilitaryProductionModifier>
 			<iCrime>-10</iCrime>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_HEALER</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 		</BuildingInfo>
 		<BuildingInfo>		<!-- Sovereign Centralist -->
 			<BuildingClass>BUILDINGCLASS_CITY_STATES_SOVEREIGN_CENTRALIST</BuildingClass>
@@ -1084,12 +1084,12 @@
 				<iCommerce>30</iCommerce>
 				<iCommerce>0</iCommerce>
 			</CommerceModifiers>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<GreatPeopleUnitClass>UNITCLASS_SCIENTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
 		</BuildingInfo>

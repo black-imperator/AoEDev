@@ -1091,7 +1091,7 @@
 			<iHappy>-1</iHappy>
 			<FreeSpecialistClassCounts>
 				<FreeSpecialistClassCount>
-					<SpecialistType>SPECIALISTCLASS_SCIENTIST</SpecialistType>
+					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
 					<iFreeSpecialistClassCount>1</iFreeSpecialistClassCount>
 				</FreeSpecialistClassCount>
 			</FreeSpecialistClassCounts>
@@ -2268,7 +2268,7 @@
 			<iHealth>3</iHealth>
 			<FreeSpecialistClassCounts>
 				<FreeSpecialistClassCount>
-					<SpecialistType>SPECIALISTCLASS_SCIENTIST</SpecialistType>
+					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
 					<iFreeSpecialistClassCount>1</iFreeSpecialistClassCount>
 				</FreeSpecialistClassCount>
 			</FreeSpecialistClassCounts>
@@ -2379,7 +2379,7 @@
 			<iGold>-120</iGold>
 			<FreeSpecialistClassCounts>
 				<FreeSpecialistClassCount>
-					<SpecialistType>SPECIALISTCLASS_GREAT_ARTIST</SpecialistType>
+					<SpecialistClass>SPECIALISTCLASS_GREAT_ARTIST</SpecialistClass>
 					<iFreeSpecialistClassCount>1</iFreeSpecialistClassCount>
 				</FreeSpecialistClassCount>
 			</FreeSpecialistClassCounts>
@@ -2673,7 +2673,7 @@
 			<bPickCity>1</bPickCity>
 			<FreeSpecialistClassCounts>
 				<FreeSpecialistClassCount>
-					<SpecialistType>SPECIALISTCLASS_GREAT_SCIENTIST</SpecialistType>
+					<SpecialistClass>SPECIALISTCLASS_GREAT_SCIENTIST</SpecialistClass>
 					<iFreeSpecialistClassCount>1</iFreeSpecialistClassCount>
 				</FreeSpecialistClassCount>
 			</FreeSpecialistClassCounts>
@@ -3554,7 +3554,7 @@
 			<PythonCanDo>canDoSageKeep4</PythonCanDo>
 			<FreeSpecialistClassCounts>
 				<FreeSpecialistClassCount>
-					<SpecialistType>SPECIALISTCLASS_GREAT_SCIENTIST</SpecialistType>
+					<SpecialistClass>SPECIALISTCLASS_GREAT_SCIENTIST</SpecialistClass>
 					<iFreeSpecialistClassCount>-1</iFreeSpecialistClassCount>
 				</FreeSpecialistClassCount>
 			</FreeSpecialistClassCounts>
@@ -3567,7 +3567,7 @@
 			<bPickCity>1</bPickCity>
 			<FreeSpecialistClassCounts>
 				<FreeSpecialistClassCount>
-					<SpecialistType>SPECIALISTCLASS_GREAT_SCIENTIST</SpecialistType>
+					<SpecialistClass>SPECIALISTCLASS_GREAT_SCIENTIST</SpecialistClass>
 					<iFreeSpecialistClassCount>-1</iFreeSpecialistClassCount>
 				</FreeSpecialistClassCount>
 			</FreeSpecialistClassCounts>

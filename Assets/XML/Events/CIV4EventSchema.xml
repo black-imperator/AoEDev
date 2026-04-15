@@ -87,10 +87,10 @@
 	<ElementType name="iFood" content="textOnly" dt:type="int"/>
 	<ElementType name="iFoodPercent" content="textOnly" dt:type="int"/>
 	<ElementType name="iProduction" content="textOnly" dt:type="int"/>
-	<ElementType name="SpecialistType" content="textOnly"/>
+	<ElementType name="SpecialistClass" content="textOnly"/>
 	<ElementType name="iFreeSpecialistClassCount" content="textOnly" dt:type="int"/>
 	<ElementType name="FreeSpecialistClassCount" content="eltOnly">
-		<element type="SpecialistType"/>
+		<element type="SpecialistClass"/>
 		<element type="iFreeSpecialistClassCount"/>
 	</ElementType>
 	<ElementType name="FreeSpecialistClassCounts" content="eltOnly">

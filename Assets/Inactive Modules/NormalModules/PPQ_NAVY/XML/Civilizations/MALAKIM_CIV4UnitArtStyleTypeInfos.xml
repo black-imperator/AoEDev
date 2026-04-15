@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Civilization Infos -->
+<Civ4UnitArtStyleTypeInfos xmlns="x-schema:CIV4CivilizationsSchema.xml">
+	<UnitArtStyleTypeInfos>
+			<UnitArtStyleTypeInfo>
+			<Type>UNIT_ARTSTYLE_MALAKIM</Type>
+				<StyleUnits>
+				
+					<StyleUnit>
+						<UnitType>UNIT_TRADESHIP</UnitType>
+						<UnitMeshGroup>
+							<EarlyArtDefineTag>ART_DEF_UNIT_MERCHANTMAN_MALAKIM</EarlyArtDefineTag>
+							<LateArtDefineTag>ART_DEF_UNIT_MERCHANTMAN_MALAKIM</LateArtDefineTag>
+							<MiddleArtDefineTag>ART_DEF_UNIT_MERCHANTMAN_MALAKIM</MiddleArtDefineTag>
+						</UnitMeshGroup>
+					</StyleUnit>
+					
+					<StyleUnit>
+						<UnitType>UNIT_FRIGATE</UnitType>
+						<UnitMeshGroup>
+							<EarlyArtDefineTag>ART_DEF_UNIT_FRIGATE_MALAKIM</EarlyArtDefineTag>
+							<LateArtDefineTag>ART_DEF_UNIT_FRIGATE_MALAKIM</LateArtDefineTag>
+							<MiddleArtDefineTag>ART_DEF_UNIT_FRIGATE_MALAKIM</MiddleArtDefineTag>
+						</UnitMeshGroup>
+					</StyleUnit>
+			
+					<StyleUnit>
+						<UnitType>UNIT_MAN_O_WAR</UnitType>
+						<UnitMeshGroup>
+							<EarlyArtDefineTag>ART_DEF_UNIT_MAN_O_WAR_MALAKIM</EarlyArtDefineTag>
+							<LateArtDefineTag>ART_DEF_UNIT_MAN_O_WAR_MALAKIM</LateArtDefineTag>
+							<MiddleArtDefineTag>ART_DEF_UNIT_MAN_O_WAR_MALAKIM</MiddleArtDefineTag>
+						</UnitMeshGroup>
+					</StyleUnit>	
+				
+					<StyleUnit>
+						<UnitType>UNIT_QUEEN_OF_THE_LINE</UnitType>
+						<UnitMeshGroup>
+							<EarlyArtDefineTag>ART_DEF_UNIT_QUEEN_OF_THE_LINE_MALAKIM</EarlyArtDefineTag>
+							<LateArtDefineTag>ART_DEF_UNIT_QUEEN_OF_THE_LINE_MALAKIM</LateArtDefineTag>
+							<MiddleArtDefineTag>ART_DEF_UNIT_QUEEN_OF_THE_LINE_MALAKIM</MiddleArtDefineTag>
+						</UnitMeshGroup>
+					</StyleUnit>
+					<StyleUnit>
+						<UnitType>UNIT_GALLEON</UnitType>
+						<UnitMeshGroup>
+							<EarlyArtDefineTag>ART_DEF_UNIT_GALLEON_MALAKIM</EarlyArtDefineTag>
+							<LateArtDefineTag>ART_DEF_UNIT_GALLEON_MALAKIM</LateArtDefineTag>
+							<MiddleArtDefineTag>ART_DEF_UNIT_GALLEON_MALAKIM</MiddleArtDefineTag>
+						</UnitMeshGroup>
+					</StyleUnit>
+					<StyleUnit>
+						<UnitType>UNIT_CARRACK</UnitType>
+						<UnitMeshGroup>
+							<EarlyArtDefineTag>ART_DEF_UNIT_CARRACK_MALAKIM</EarlyArtDefineTag>
+							<LateArtDefineTag>ART_DEF_UNIT_CARRACK_MALAKIM</LateArtDefineTag>
+							<MiddleArtDefineTag>ART_DEF_UNIT_CARRACK_MALAKIM</MiddleArtDefineTag>
+						</UnitMeshGroup>
+					</StyleUnit>
+					<StyleUnit>
+						<UnitType>UNIT_TRIREME</UnitType>
+						<UnitMeshGroup>
+							<EarlyArtDefineTag>ART_DEF_UNIT_TRIREME_MALAKIM</EarlyArtDefineTag>
+							<LateArtDefineTag>ART_DEF_UNIT_TRIREME_MALAKIM</LateArtDefineTag>
+							<MiddleArtDefineTag>ART_DEF_UNIT_TRIREME_MALAKIM</MiddleArtDefineTag>
+						</UnitMeshGroup>
+					</StyleUnit>
+					
+					<StyleUnit>
+						<UnitType>UNIT_GALLEY</UnitType>
+						<UnitMeshGroup>
+							<EarlyArtDefineTag>ART_DEF_UNIT_GALLEY_MALAKIM</EarlyArtDefineTag>
+							<LateArtDefineTag>ART_DEF_UNIT_GALLEY_MALAKIM</LateArtDefineTag>
+							<MiddleArtDefineTag>ART_DEF_UNIT_GALLEY_MALAKIM</MiddleArtDefineTag>
+						</UnitMeshGroup>
+					</StyleUnit>
+					<StyleUnit>
+						<UnitType>UNIT_CARAVEL</UnitType>
+						<UnitMeshGroup>
+							<EarlyArtDefineTag>ART_DEF_UNIT_CARAVEL_MALAKIM</EarlyArtDefineTag>
+							<LateArtDefineTag>ART_DEF_UNIT_CARAVEL_MALAKIM</LateArtDefineTag>
+							<MiddleArtDefineTag>ART_DEF_UNIT_CARAVEL_MALAKIM</MiddleArtDefineTag>
+						</UnitMeshGroup>
+					</StyleUnit>
+					<StyleUnit>
+						<UnitType>UNIT_ARCANE_BARGE</UnitType>
+						<UnitMeshGroup>
+							<EarlyArtDefineTag>ART_DEF_UNIT_ARCANE_BARGE_MALAKIM</EarlyArtDefineTag>
+							<LateArtDefineTag>ART_DEF_UNIT_ARCANE_BARGE_MALAKIM</LateArtDefineTag>
+							<MiddleArtDefineTag>ART_DEF_UNIT_ARCANE_BARGE_MALAKIM</MiddleArtDefineTag>
+						</UnitMeshGroup>
+					</StyleUnit>
+			</StyleUnits>
+			</UnitArtStyleTypeInfo>
+		</UnitArtStyleTypeInfos>
+</Civ4UnitArtStyleTypeInfos>

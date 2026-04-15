@@ -636,7 +636,7 @@
 			<bOutsideBorders>1</bOutsideBorders>
 			<iMinimumDistance>1</iMinimumDistance>
 			<!--<bFort>1</bFort>-->
-			<FreeSpecialist>SPECIALIST_CITIZEN</FreeSpecialist>
+			<FreeSpecialistClass>SPECIALISTCLASS_CITIZEN</FreeSpecialistClass>
 			<TechYieldChanges>
 				<TechYieldChange>
 					<PrereqTech>TECH_ALTERATION</PrereqTech>
@@ -1110,7 +1110,7 @@
 			<Help/>
 			<ArtDefineTag>ART_DEF_IMPROVEMENT_HOMESTEAD</ArtDefineTag>
 			<ImprovementPillage>IMPROVEMENTCLASS_FARM</ImprovementPillage>
-			<FreeSpecialist>SPECIALIST_CITIZEN</FreeSpecialist>
+			<FreeSpecialistClass>SPECIALISTCLASS_CITIZEN</FreeSpecialistClass>
 			<bCarriesIrrigation>1</bCarriesIrrigation>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinimumDistance>1</iMinimumDistance>

@@ -81,12 +81,12 @@
 					</CommerceModifiers>
 				</BonusCommerceModifier>
 			</BonusCommerceModifiers>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_ENGINEER</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<bCenterInCity>1</bCenterInCity>
 			<iAsset>4</iAsset>
 			<fVisibilityPriority>10</fVisibilityPriority>
@@ -164,12 +164,12 @@
 					<iHappinessChange>1</iHappinessChange>
 				</BonusHappinessChange>
 			</BonusHappinessChanges>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_HEALER</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<bCenterInCity>1</bCenterInCity>
 			<iAsset>4</iAsset>
 			<fVisibilityPriority>10</fVisibilityPriority>
@@ -207,12 +207,12 @@
 				<BonusType>BONUS_MANA_SHADOW</BonusType>
 			</PrereqBonuses>
 			<iEnemyWarWearinessModifier>25</iEnemyWarWearinessModifier>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<bCenterInCity>1</bCenterInCity>
 			<iAsset>4</iAsset>
 			<fVisibilityPriority>10</fVisibilityPriority>
@@ -258,12 +258,12 @@
 					<fTrainXPCap>12</fTrainXPCap>
 				</TrainXPCap>
 			</PerCrimeTrainXPCaps>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<bCenterInCity>1</bCenterInCity>
 			<iAsset>4</iAsset>
 			<fVisibilityPriority>10</fVisibilityPriority>
@@ -308,12 +308,12 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>2</iCommerce>
 			</PerCrimeEffectCommerceChanges>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_ARTIST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<bCenterInCity>1</bCenterInCity>
 			<iAsset>4</iAsset>
 			<fVisibilityPriority>10</fVisibilityPriority>
@@ -354,12 +354,12 @@
 			</YieldChanges>
 			<FreeBonus>BONUS_FISH</FreeBonus>
 			<iNumFreeBonuses>1</iNumFreeBonuses>			
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_ENGINEER</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<bCenterInCity>1</bCenterInCity>
 			<iAsset>4</iAsset>
 			<fVisibilityPriority>10</fVisibilityPriority>

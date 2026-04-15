@@ -1,0 +1,14 @@
+This module, as with all my work in general is released under the following very specific license:
+
+1. Things you may do:
+- Download the units.
+- Use the units in any mod, module or even other non comercial projects completely unrelated to CIV.
+- Redistribute these units and any modifications there off that you wish to create.
+
+2. Things you may not do:
+- Redistribute the units without a copy of this license, link to this thread and the credits.txt file contained in each of the unit folders.
+- Claim ownership of the units.
+- Earn money off the units in any way shape or form.
+
+3. Things I will not do:
+- Guarantee that any of this works or that it won't be infested with a virus, break you computer, kill you or otherwise provide any sort of warranty or grantee of protection from harm incurred by the use of these models.

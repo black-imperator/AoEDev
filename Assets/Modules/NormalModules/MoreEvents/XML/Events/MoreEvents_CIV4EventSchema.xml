@@ -87,14 +87,14 @@
 	<ElementType name="iFood" content="textOnly" dt:type="int"/>
 	<ElementType name="iFoodPercent" content="textOnly" dt:type="int"/>
 	<ElementType name="iProduction" content="textOnly" dt:type="int"/>
-	<ElementType name="SpecialistType" content="textOnly"/>
-	<ElementType name="iFreeSpecialistCount" content="textOnly" dt:type="int"/>
-	<ElementType name="FreeSpecialistCount" content="eltOnly">
-		<element type="SpecialistType"/>
-		<element type="iFreeSpecialistCount"/>
+	<ElementType name="SpecialistClass" content="textOnly"/>
+	<ElementType name="iFreeSpecialistClassCount" content="textOnly" dt:type="int"/>
+	<ElementType name="FreeSpecialistClassCount" content="eltOnly">
+		<element type="SpecialistClass"/>
+		<element type="iFreeSpecialistClassCount"/>
 	</ElementType>
-	<ElementType name="FreeSpecialistCounts" content="eltOnly">
-		<element type="FreeSpecialistCount" minOccurs="0" maxOccurs="*"/>
+	<ElementType name="FreeSpecialistClassCounts" content="eltOnly">
+		<element type="FreeSpecialistClassCount" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="bTeam" content="textOnly" dt:type="int"/>
 	<ElementType name="bRecurring" content="textOnly" dt:type="boolean"/>
@@ -459,7 +459,7 @@
 		<element type="iFood"/>
 		<element type="iFoodPercent"/>
 		<element type="iProduction"/>
-		<element type="FreeSpecialistCounts"/>
+		<element type="FreeSpecialistClassCounts"/>
 		<element type="FeatureType"/>
 		<element type="iFeatureChange"/>
 		<element type="ImprovementType"/>

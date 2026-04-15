@@ -33,12 +33,12 @@
 				<iYield>25</iYield>
 				<iYield>0</iYield>
 			</YieldModifiers>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_ENGINEER</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<ConstructSound>AS2D_BUILD_FORGE</ConstructSound>
 			<BonusHappinessChanges>
 				<BonusHappinessChange>

@@ -1978,12 +1978,12 @@
 			<Description>TXT_KEY_EVENT_WANDERING_BARD_2</Description>
 			<bPickCity>1</bPickCity>
 			<iHurryAnger>3</iHurryAnger>
-			<FreeSpecialistCounts>
-				<FreeSpecialistCount>
-					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
-					<iFreeSpecialistCount>1</iFreeSpecialistCount>
-				</FreeSpecialistCount>
-			</FreeSpecialistCounts>
+			<FreeSpecialistClassCounts>
+				<FreeSpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_ARTIST</SpecialistClass>
+					<iFreeSpecialistClassCount>1</iFreeSpecialistClassCount>
+				</FreeSpecialistClassCount>
+			</FreeSpecialistClassCounts>
 			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>500</iAIValue>
 		</EventInfo>

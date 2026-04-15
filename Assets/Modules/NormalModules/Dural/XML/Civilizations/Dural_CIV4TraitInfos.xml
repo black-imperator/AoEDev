@@ -12,32 +12,32 @@
 			<Description>TXT_KEY_TRAIT_DURAL_EDUCATED</Description>
 			<Civilopedia>TXT_KEY_TRAIT_DURAL_EDUCATED_PEDIA</Civilopedia>
 			<ShortDescription>TXT_KEY_TRAIT_DURAL_EDUCATED_SHORT</ShortDescription>
-			<SpecialistHealthChanges>
-				<SpecialistHealthChange>
-					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+			<SpecialistClassHealthChanges>
+				<SpecialistClassHealthChange>
+					<SpecialistClass>SPECIALISTCLASS_ARTIST</SpecialistClass>
 					<iHealth>1</iHealth>
-				</SpecialistHealthChange>
-				<SpecialistHealthChange>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+				</SpecialistClassHealthChange>
+				<SpecialistClassHealthChange>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
 					<iHealth>1</iHealth>
-				</SpecialistHealthChange>
-				<SpecialistHealthChange>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+				</SpecialistClassHealthChange>
+				<SpecialistClassHealthChange>
+					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
 					<iHealth>1</iHealth>
-				</SpecialistHealthChange>
-				<SpecialistHealthChange>
-					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+				</SpecialistClassHealthChange>
+				<SpecialistClassHealthChange>
+					<SpecialistClass>SPECIALISTCLASS_MERCHANT</SpecialistClass>
 					<iHealth>1</iHealth>
-				</SpecialistHealthChange>
-				<SpecialistHealthChange>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+				</SpecialistClassHealthChange>
+				<SpecialistClassHealthChange>
+					<SpecialistClass>SPECIALISTCLASS_ENGINEER</SpecialistClass>
 					<iHealth>1</iHealth>
-				</SpecialistHealthChange>
-				<SpecialistHealthChange>
-					<SpecialistType>SPECIALIST_HEALER</SpecialistType>
+				</SpecialistClassHealthChange>
+				<SpecialistClassHealthChange>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
 					<iHealth>1</iHealth>
-				</SpecialistHealthChange>
-			</SpecialistHealthChanges>
+				</SpecialistClassHealthChange>
+			</SpecialistClassHealthChanges>
 			<FreePromotions>
 				<FreePromotion>
 					<PromotionType>PROMOTION_DURAL_RELIGION_WORKER</PromotionType>

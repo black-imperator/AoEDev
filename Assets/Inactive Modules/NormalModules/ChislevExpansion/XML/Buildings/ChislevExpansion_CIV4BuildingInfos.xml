@@ -661,16 +661,16 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>20</iCommerce>
 			</CommerceModifiers>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_MERCHANT</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<ConstructSound>AS2D_RUNES_DINK</ConstructSound>
 			<BonusHappinessChanges>
 				<BonusHappinessChange>
@@ -776,16 +776,16 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>20</iCommerce>
 			</CommerceModifiers>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_MERCHANT</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<ConstructSound>AS2D_RUNES_DINK</ConstructSound>
 			<BonusHappinessChanges>
 				<BonusHappinessChange>
@@ -872,20 +872,20 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>20</iCommerce>
 			</CommerceModifiers>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_HEALER</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_ARTIST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<ConstructSound>AS2D_LEAVES_DINK</ConstructSound>
 			<BonusHappinessChanges>
 				<BonusHappinessChange>
@@ -990,20 +990,20 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>20</iCommerce>
 			</CommerceModifiers>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_HEALER</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_ARTIST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<ConstructSound>AS2D_LEAVES_DINK</ConstructSound>
 			<BonusHappinessChanges>
 				<BonusHappinessChange>
@@ -1113,12 +1113,12 @@
 				<iCommerce>25</iCommerce>
 				<iCommerce>20</iCommerce>
 			</CommerceModifiers>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>2</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<iSpecialistClassCount>2</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<ConstructSound>AS2D_EMPYREAN_DINK</ConstructSound>
 			<BonusHappinessChanges>
 				<BonusHappinessChange>
@@ -1213,12 +1213,12 @@
 				<iCommerce>25</iCommerce>
 				<iCommerce>20</iCommerce>
 			</CommerceModifiers>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>2</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<iSpecialistClassCount>2</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<ConstructSound>AS2D_EMPYREAN_DINK</ConstructSound>
 			<BonusHappinessChanges>
 				<BonusHappinessChange>
@@ -1317,16 +1317,16 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>20</iCommerce>
 			</CommerceModifiers>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>2</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_HEALER</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<iSpecialistClassCount>2</iSpecialistClassCount>
+				</SpecialistClassCount>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<ConstructSound>AS2D_ORDER_DINK</ConstructSound>
 			<BonusHappinessChanges>
 				<BonusHappinessChange>
@@ -1425,16 +1425,16 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>20</iCommerce>
 			</CommerceModifiers>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>2</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_HEALER</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<iSpecialistClassCount>2</iSpecialistClassCount>
+				</SpecialistClassCount>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<ConstructSound>AS2D_ORDER_DINK</ConstructSound>
 			<BonusHappinessChanges>
 				<BonusHappinessChange>
@@ -1544,16 +1544,16 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>20</iCommerce>
 			</CommerceModifiers>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<SeaPlotYieldChanges>
 				<iYield>1</iYield>
 				<iYield>0</iYield>
@@ -1666,16 +1666,16 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>20</iCommerce>
 			</CommerceModifiers>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<SeaPlotYieldChanges>
 				<iYield>1</iYield>
 				<iYield>0</iYield>
@@ -1786,16 +1786,16 @@
 					</TerrainYields>
 				</TerrainYieldChange>
 			</TerrainYieldChanges>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<ConstructSound>AS2D_ASHEN_DINK</ConstructSound>
 			<BonusHappinessChanges>
 				<BonusHappinessChange>
@@ -1920,16 +1920,16 @@
 					</TerrainYields>
 				</TerrainYieldChange>
 			</TerrainYieldChanges>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<ConstructSound>AS2D_ASHEN_DINK</ConstructSound>
 			<BonusHappinessChanges>
 				<BonusHappinessChange>
@@ -2045,12 +2045,12 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>10</iCommerce>
 			</CommerceModifiers>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<BonusHappinessChanges>
 				<BonusHappinessChange>
 					<BonusType>BONUS_INCENSE</BonusType>
@@ -2162,12 +2162,12 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>10</iCommerce>
 			</CommerceModifiers>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<BonusHappinessChanges>
 				<BonusHappinessChange>
 					<BonusType>BONUS_INCENSE</BonusType>
@@ -2435,12 +2435,12 @@
 				<iYield>10</iYield>
 				<iYield>0</iYield>
 			</YieldModifiers>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_ENGINEER</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<ConstructSound>AS2D_BUILD_FORGE</ConstructSound>
 			<Flavors>
 				<Flavor>

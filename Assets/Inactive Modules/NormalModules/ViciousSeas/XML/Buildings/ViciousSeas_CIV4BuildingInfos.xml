@@ -220,16 +220,16 @@
 				<iCommerce>2</iCommerce>
 				<iCommerce>0</iCommerce>
 			</CommerceChanges>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_MERCHANT</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_SCIENCE</FlavorType>
@@ -480,12 +480,12 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>5</iCommerce>
 			</ObsoleteSafeCommerceChanges>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
-					<iSpecialistCount>2</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_ARTIST</SpecialistClass>
+					<iSpecialistClassCount>2</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<ConstructSound>AS2D_BUILD_THEATRE</ConstructSound>
 			<BonusCommerceModifiers>
 				<BonusCommerceModifier>
@@ -557,12 +557,12 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>3</iCommerce>
 			</ObsoleteSafeCommerceChanges>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_HEALER</SpecialistType>
-					<iSpecialistCount>2</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
+					<iSpecialistClassCount>2</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<ConstructSound>AS2D_BUILD_UNIVERSITY</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -810,12 +810,12 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>1000</iCommerce>
 			</CommerceChangeDoubleTimes>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<UnitCombatFreeExperiences>
 				<UnitCombatFreeExperience>
 					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
@@ -928,24 +928,24 @@
 					<bNeededInCity>1</bNeededInCity>
 				</BuildingClassNeeded>
 			</BuildingClassNeededs>
-			<SpecialistYieldChanges>
-				<SpecialistYieldChange>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+			<SpecialistClassYieldChanges>
+				<SpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
 					<YieldChanges>
 						<iYield>0</iYield>
 						<iYield>1</iYield>
 						<iYield>0</iYield>
 					</YieldChanges>
-				</SpecialistYieldChange>
-				<SpecialistYieldChange>
-					<SpecialistType>SPECIALIST_GREAT_PRIEST</SpecialistType>
+				</SpecialistClassYieldChange>
+				<SpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_GREAT_PRIEST</SpecialistClass>
 					<YieldChanges>
 						<iYield>0</iYield>
 						<iYield>1</iYield>
 						<iYield>0</iYield>
 					</YieldChanges>
-				</SpecialistYieldChange>
-			</SpecialistYieldChanges>
+				</SpecialistClassYieldChange>
+			</SpecialistClassYieldChanges>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_RELIGION</FlavorType>
@@ -987,12 +987,12 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>1000</iCommerce>
 			</CommerceChangeDoubleTimes>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<UnitCombatFreeExperiences>
 				<UnitCombatFreeExperience>
 					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
@@ -1057,24 +1057,24 @@
 					<bNeededInCity>1</bNeededInCity>
 				</BuildingClassNeeded>
 			</BuildingClassNeededs>
-			<SpecialistYieldChanges>
-				<SpecialistYieldChange>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+			<SpecialistClassYieldChanges>
+				<SpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
 					<YieldChanges>
 						<iYield>0</iYield>
 						<iYield>1</iYield>
 						<iYield>0</iYield>
 					</YieldChanges>
-				</SpecialistYieldChange>
-				<SpecialistYieldChange>
-					<SpecialistType>SPECIALIST_GREAT_PRIEST</SpecialistType>
+				</SpecialistClassYieldChange>
+				<SpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_GREAT_PRIEST</SpecialistClass>
 					<YieldChanges>
 						<iYield>0</iYield>
 						<iYield>1</iYield>
 						<iYield>0</iYield>
 					</YieldChanges>
-				</SpecialistYieldChange>
-			</SpecialistYieldChanges>
+				</SpecialistClassYieldChange>
+			</SpecialistClassYieldChanges>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_RELIGION</FlavorType>
@@ -1169,12 +1169,12 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>1000</iCommerce>
 			</CommerceChangeDoubleTimes>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<UnitCombatFreeExperiences>
 				<UnitCombatFreeExperience>
 					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
@@ -1187,24 +1187,24 @@
 					<bNeededInCity>1</bNeededInCity>
 				</BuildingClassNeeded>
 			</BuildingClassNeededs>
-			<SpecialistYieldChanges>
-				<SpecialistYieldChange>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+			<SpecialistClassYieldChanges>
+				<SpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
 					<YieldChanges>
 						<iYield>0</iYield>
 						<iYield>1</iYield>
 						<iYield>0</iYield>
 					</YieldChanges>
-				</SpecialistYieldChange>
-				<SpecialistYieldChange>
-					<SpecialistType>SPECIALIST_GREAT_PRIEST</SpecialistType>
+				</SpecialistClassYieldChange>
+				<SpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_GREAT_PRIEST</SpecialistClass>
 					<YieldChanges>
 						<iYield>0</iYield>
 						<iYield>1</iYield>
 						<iYield>0</iYield>
 					</YieldChanges>
-				</SpecialistYieldChange>
-			</SpecialistYieldChanges>
+				</SpecialistClassYieldChange>
+			</SpecialistClassYieldChanges>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_RELIGION</FlavorType>
