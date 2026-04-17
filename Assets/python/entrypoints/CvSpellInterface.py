@@ -13167,6 +13167,64 @@ def exploreSlavers(argsList):
 			newUnit1	= pPlayer.initUnit(getInfoType('UNIT_SLAVE'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 			newUnit2	= pPlayer.initUnit(getInfoType('UNIT_SLAVE'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
+
+def exploreLairFreeIllians(argsList):
+	pUnit, pPlot = argsList
+	game 		= CyGame()
+	iPlayer = pUnit.getOwner()
+	map = CyMap()
+	iInfernalPlayer = getOpenPlayer()
+	pBestPlot=pPlot
+	pPlot.setPythonActive(False)
+        getPlayer 		= gc.getPlayer
+	pPlayer 		= getPlayer(iPlayer)
+	if (iInfernalPlayer != -1 and pBestPlot != -1):
+		iX = pBestPlot.getX(); iY = pBestPlot.getY()
+		pBestPlot.setPlotType(PlotTypes.PLOT_LAND, True, True)
+		for iiX,iiY in RANGE2:
+			getPlot = map.plot
+			pPlot2 = getPlot(iX+iiX,iY+iiY)
+			for i in xrange(pPlot2.getNumUnits()):
+				pLoopUnit = pPlot.getUnit(i)
+				if pLoopUnit.getOwner()==gc.getORC_PLAYER() or pLoopUnit.getOwner()==gc.getDEMON_PLAYER() or pLoopUnit.getOwner()==gc.getANIMAL_PLAYER():
+					pLoopUnit.kill()
+		game.addPlayerAdvanced(iInfernalPlayer, -1, getInfoType("LEADER_AURIC"), getInfoType("CIVILIZATION_ILLIANS"),iPlayer)
+		iFounderTeam  = gc.getPlayer(iPlayer).getTeam()
+		eFounderTeam  = gc.getTeam(gc.getPlayer(iPlayer).getTeam())
+		iInfernalTeam = gc.getPlayer(iInfernalPlayer).getTeam()
+		eInfernalTeam = gc.getTeam(iInfernalTeam)
+		for iTech in xrange(gc.getNumTechInfos()):
+			if eFounderTeam.isHasTech(iTech):
+				eInfernalTeam.setHasTech(iTech, True, iInfernalPlayer, True, False)
+		pInfernalPlayer = gc.getPlayer(iInfernalPlayer)
+		pInfernalPlayer.AI_changeAttitudeExtra(iPlayer,4)
+		pInfernalPlayer.initCity(iX,iY)
+		pInfernalPlayer.changeGoldenAgeTurns(CyGame().goldenAgeLength())
+		initUnit = pInfernalPlayer.initUnit
+		newUnit1  = initUnit(getInfoType("UNIT_WALDRUN"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+		newUnit1.setExperienceTimes100(2500, -1)
+		newUnit2  = initUnit( getInfoType("UNIT_CHAMPION"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+		newUnit3  = initUnit( getInfoType("UNIT_CHAMPION"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+		newUnit4  = initUnit( getInfoType("UNIT_RANGER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+		newUnit5  = initUnit( getInfoType("UNIT_RANGER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+		newUnit6  = initUnit( getInfoType("UNIT_MAGE"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+		newUnit7  = initUnit( getInfoType("UNIT_MAGE"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+		newUnit8  = initUnit( getInfoType("UNIT_CHAMPION"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+		newUnit9  = initUnit( getInfoType("UNIT_CHAMPION"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+		newUnit10  = initUnit( getInfoType("UNIT_WORKER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+		newUnit11  = initUnit( getInfoType("UNIT_WORKER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+		newUnit12  = initUnit( getInfoType("UNIT_SETTLER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+		if pPlayer.isHuman():
+			popupInfo = CyPopupInfo()
+			popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_PYTHON)
+			popupInfo.setText(CyTranslator().getText("TXT_KEY_POPUP_CONTROL_ONCE_ELVES",()))
+			popupInfo.setData1(iPlayer)
+			popupInfo.setData2(iInfernalPlayer)
+			popupInfo.addPythonButton(CyTranslator().getText("TXT_KEY_POPUP_YES", ()), "")
+			popupInfo.addPythonButton(CyTranslator().getText("TXT_KEY_POPUP_NO", ()), "")
+			popupInfo.setOnClickedPythonCallback("reassignPlayer")
+			popupInfo.addPopup(iPlayer)
+
 # GOODY_ENCHANTED_MAP
 def reqEnchantedMap(argsList):
 	pUnit, pPlot		= argsList
