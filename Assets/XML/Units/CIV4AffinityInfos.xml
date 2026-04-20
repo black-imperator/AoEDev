@@ -214,7 +214,6 @@
 				<BonusType>BONUS_BANANA</BonusType>
 			</BonusTypes>
 			<fRangedStrength>1</fRangedStrength>
-			<fRangedLimit>2</fRangedLimit>
 			<fStrengthMod>10</fStrengthMod>
 		</AffinityInfo>
 	</AffinityInfos>

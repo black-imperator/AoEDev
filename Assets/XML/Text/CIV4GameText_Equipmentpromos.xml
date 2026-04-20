@@ -707,27 +707,27 @@ Praise be to the Lord of Peace!</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EQUIPMENT_GUIDE_LANTERN_PEDIA</Tag>
-		<English>An old technique by Vicars before the age of ice involved leaving an enchanted refractive lantern with its hinge open and facing the sun. 
+		<English>An old technique by the priests of Lugus, from before the age of ice, involved leaving an enchanted refractive lantern with its hinge open and facing the sun. 
 This would capture a small bit of the radiance of Lugus, and the sun god's grace would be with you even in the most dismal of domains.
 
 
 This skill is lost now, but these little glowing lanterns remain as a testament to the achievements of the age of magic.</English>
-		<French>An old technique by Vicars before the age of ice involved leaving an enchanted refractive lantern with its hinge open and facing the sun. 
+		<French>An old technique by the priests of Lugus, from before the age of ice, involved leaving an enchanted refractive lantern with its hinge open and facing the sun. 
 This would capture a small bit of the radiance of Lugus, and the sun god's grace would be with you even in the most dismal of domains.
 
 
 This skill is lost now, but these little glowing lanterns remain as a testament to the achievements of the age of magic.</French>
-		<German>An old technique by Vicars before the age of ice involved leaving an enchanted refractive lantern with its hinge open and facing the sun. 
+		<German>An old technique by the priests of Lugus, from before the age of ice, involved leaving an enchanted refractive lantern with its hinge open and facing the sun. 
 This would capture a small bit of the radiance of Lugus, and the sun god's grace would be with you even in the most dismal of domains.
 
 
 This skill is lost now, but these little glowing lanterns remain as a testament to the achievements of the age of magic.</German>
-		<Italian>An old technique by Vicars before the age of ice involved leaving an enchanted refractive lantern with its hinge open and facing the sun. 
+		<Italian>An old technique by the priests of Lugus, from before the age of ice, involved leaving an enchanted refractive lantern with its hinge open and facing the sun. 
 This would capture a small bit of the radiance of Lugus, and the sun god's grace would be with you even in the most dismal of domains.
 
 
 This skill is lost now, but these little glowing lanterns remain as a testament to the achievements of the age of magic.</Italian>
-		<Spanish>An old technique by Vicars before the age of ice involved leaving an enchanted refractive lantern with its hinge open and facing the sun. 
+		<Spanish>An old technique by the priests of Lugus, from before the age of ice, involved leaving an enchanted refractive lantern with its hinge open and facing the sun. 
 This would capture a small bit of the radiance of Lugus, and the sun god's grace would be with you even in the most dismal of domains.
 
 
@@ -750,6 +750,363 @@ This skill is lost now, but these little glowing lanterns remain as a testament 
 		<Spanish>This blade cuts as deep and cold as a loved one's rejection.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_HIDDEN_CLOAK</Tag>
+		<English>Cut Throat's Cloak</English>
+		<French>Cut Throat's Cloak</French>
+		<German>Cut Throat's Cloak</German>
+		<Italian>Cut Throat's Cloak</Italian>
+		<Spanish>Cut Throat's Cloak</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_HIDDEN_CLOAK_PEDIA</Tag>
+		<English>An old cloak, scuffed and stained by blood.</English>
+		<French>An old cloak, scuffed and stained by blood.</French>
+		<German>An old cloak, scuffed and stained by blood.</German>
+		<Italian>An old cloak, scuffed and stained by blood.</Italian>
+		<Spanish>An old cloak, scuffed and stained by blood.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_EVADE_CLOAK</Tag>
+		<English>Performers Cloak</English>
+		<French>Performers Cloak</French>
+		<German>Performers Cloak</German>
+		<Italian>Performers Cloak</Italian>
+		<Spanish>Performers Cloak</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_EVADE_CLOAK_PEDIA</Tag>
+		<English>The secret to growing old in a Balseraph carnival troupe is to always know where the exits are.
+
+"Balor on your left, Puggles!"
+"Bongo got into the Jeteye again!"
+"Duck and role, Duck and role, Quack!"</English>
+		<French>The secret to growing old in a Balseraph carnival troupe is to always know where the exits are.
+
+"Balor on your left, Puggles!"
+"Bongo got into the Jeteye again!"
+"Duck and role, Duck and role, Quack!"</French>
+		<German>The secret to growing old in a Balseraph carnival troupe is to always know where the exits are.
+
+"Balor on your left, Puggles!"
+"Bongo got into the Jeteye again!"
+"Duck and role, Duck and role, Quack!"</German>
+		<Italian>The secret to growing old in a Balseraph carnival troupe is to always know where the exits are.
+
+"Balor on your left, Puggles!"
+"Bongo got into the Jeteye again!"
+"Duck and role, Duck and role, Quack!"</Italian>
+		<Spanish>The secret to growing old in a Balseraph carnival troupe is to always know where the exits are.
+
+"Balor on your left, Puggles!"
+"Bongo got into the Jeteye again!"
+"Duck and role, Duck and role, Quack!"</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_RAGESWORD</Tag>
+		<English>Curse-Thirst Blade</English>
+		<French>Curse-Thirst Blade</French>
+		<German>Curse-Thirst Blade</German>
+		<Italian>Curse-Thirst Blade</Italian>
+		<Spanish>Curse-Thirst Blade</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_RAGESWORD_PEDIA</Tag>
+		<English>Etched with depictions of extreme cruelty, the sword's guard and pomel form a clawed shape that grips the wielder's wrist, holding it fast.
+
+"Cut and stitch and hack and flay, these are the things I enjoy every day!"</English>
+		<French>Etched with depictions of extreme cruelty, the sword's guard and pomel form a clawed shape that grips the wielder's wrist, holding it fast.
+
+"Cut and stitch and hack and flay, these are the things I enjoy every day!"</French>
+		<German>Etched with depictions of extreme cruelty, the sword's guard and pomel form a clawed shape that grips the wielder's wrist, holding it fast.
+
+"Cut and stitch and hack and flay, these are the things I enjoy every day!"</German>
+		<Italian>Etched with depictions of extreme cruelty, the sword's guard and pomel form a clawed shape that grips the wielder's wrist, holding it fast.
+
+"Cut and stitch and hack and flay, these are the things I enjoy every day!"</Italian>
+		<Spanish>Etched with depictions of extreme cruelty, the sword's guard and pomel form a clawed shape that grips the wielder's wrist, holding it fast.
+
+"Cut and stitch and hack and flay, these are the things I enjoy every day!"</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_WATER_BOOTS</Tag>
+		<English>Boots of Waterwalking</English>
+		<French>Boots of Waterwalking</French>
+		<German>Boots of Waterwalking</German>
+		<Italian>Boots of Waterwalking</Italian>
+		<Spanish>Boots of Waterwalking</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_WATER_BOOTS_PEDIA</Tag>
+		<English>Boots crafted from Otoloch hide and encrusted with pearls.</English>
+		<French>Boots crafted from Otoloch hide and encrusted with pearls.</French>
+		<German>Boots crafted from Otoloch hide and encrusted with pearls.</German>
+		<Italian>Boots crafted from Otoloch hide and encrusted with pearls.</Italian>
+		<Spanish>Boots crafted from Otoloch hide and encrusted with pearls.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_BANESWORD_ANGEL</Tag>
+		<English>Angels Bane</English>
+		<French>Angels Bane</French>
+		<German>Angels Bane</German>
+		<Italian>Angels Bane</Italian>
+		<Spanish>Angels Bane</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_BANESWORD_ANGEL_PEDIA</Tag>
+		<English>To bring a dove to heel, you must clip its wings.</English>
+		<French>To bring a dove to heel, you must clip its wings.</French>
+		<German>To bring a dove to heel, you must clip its wings.</German>
+		<Italian>To bring a dove to heel, you must clip its wings.</Italian>
+		<Spanish>To bring a dove to heel, you must clip its wings.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_BANESWORD_DEMON</Tag>
+		<English>Demons Bane</English>
+		<French>Demons Bane</French>
+		<German>Demons Bane</German>
+		<Italian>Demons Bane</Italian>
+		<Spanish>Demons Bane</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_BANESWORD_DEMON_PEDIA</Tag>
+		<English>The pride of man has led this blade to be misused, as in the eyes of the righteous, all are as demons.</English>
+		<French>The pride of man has led this blade to be misused, as in the eyes of the righteous, all are as demons.</French>
+		<German>The pride of man has led this blade to be misused, as in the eyes of the righteous, all are as demons.</German>
+		<Italian>The pride of man has led this blade to be misused, as in the eyes of the righteous, all are as demons.</Italian>
+		<Spanish>The pride of man has led this blade to be misused, as in the eyes of the righteous, all are as demons.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_BANESWORD_ELEMENTAL</Tag>
+		<English>Conjurer's Rebuke</English>
+		<French>Conjurer's Rebuke</French>
+		<German>Conjurer's Rebuke</German>
+		<Italian>Conjurer's Rebuke</Italian>
+		<Spanish>Conjurer's Rebuke</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_BANESWORD_ELEMENTAL_PEDIA</Tag>
+		<English>Storms to calm, rocks to crumble, flames to quench,  rivers dammed.</English>
+		<French>Storms to calm, rocks to crumble, flames to quench,  rivers dammed.</French>
+		<German>Storms to calm, rocks to crumble, flames to quench,  rivers dammed.</German>
+		<Italian>Storms to calm, rocks to crumble, flames to quench,  rivers dammed.</Italian>
+		<Spanish>Storms to calm, rocks to crumble, flames to quench,  rivers dammed.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_SPIRIT_SEVER</Tag>
+		<English>Spirit Sever</English>
+		<French>Spirit Sever</French>
+		<German>Spirit Sever</German>
+		<Italian>Spirit Sever</Italian>
+		<Spanish>Spirit Sever</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_SPIRIT_SEVER_PEDIA</Tag>
+		<English>Why could you not remain beneath the soil, as the other women's husbands do?
+Why must you torment me, with frantic banging and dark gurgles from outside my bedside window?
+The strings of fate tying our souls together have become as claws choking at my throat. 
+Enough of this, be still, end your bothersome denial of fate.</English>
+		<French>Why could you not remain beneath the soil, as the other women's husbands do?
+Why must you torment me, with frantic banging and dark gurgles from outside my bedside window?
+The strings of fate tying our souls together have become as claws choking at my throat. 
+Enough of this, be still, end your bothersome denial of fate.</French>
+		<German>Why could you not remain beneath the soil, as the other women's husbands do?
+Why must you torment me, with frantic banging and dark gurgles from outside my bedside window?
+The strings of fate tying our souls together have become as claws choking at my throat. 
+Enough of this, be still, end your bothersome denial of fate.</German>
+		<Italian>Why could you not remain beneath the soil, as the other women's husbands do?
+Why must you torment me, with frantic banging and dark gurgles from outside my bedside window?
+The strings of fate tying our souls together have become as claws choking at my throat. 
+Enough of this, be still, end your bothersome denial of fate.</Italian>
+		<Spanish>Why could you not remain beneath the soil, as the other women's husbands do?
+Why must you torment me, with frantic banging and dark gurgles from outside my bedside window?
+The strings of fate tying our souls together have become as claws choking at my throat. 
+Enough of this, be still, end your bothersome denial of fate.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_BARD_HARP</Tag>
+		<English>A Bard's Harp</English>
+		<French>A Bard's Harp</French>
+		<German>A Bard's Harp</German>
+		<Italian>A Bard's Harp</Italian>
+		<Spanish>A Bard's Harp</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_BARD_HARP_PEDIA</Tag>
+		<English>A fine harp with craftsmanship lost to the ages, and with it, even a talentless hack is able to compose an epic.</English>
+		<French>A fine harp with craftsmanship lost to the ages, and with it, even a talentless hack is able to compose an epic.</French>
+		<German>A fine harp with craftsmanship lost to the ages, and with it, even a talentless hack is able to compose an epic.</German>
+		<Italian>A fine harp with craftsmanship lost to the ages, and with it, even a talentless hack is able to compose an epic.</Italian>
+		<Spanish>A fine harp with craftsmanship lost to the ages, and with it, even a talentless hack is able to compose an epic.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_SMITHS_HAMMER</Tag>
+		<English>Forgesmiths Hammer</English>
+		<French>Forgesmiths Hammer</French>
+		<German>Forgesmiths Hammer</German>
+		<Italian>Forgesmiths Hammer</Italian>
+		<Spanish>Forgesmiths Hammer</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_SMITHS_HAMMER_PEDIA</Tag>
+		<English>An old iron worker's hammer, perfectly weighted and hard as a balor's horn.</English>
+		<French>An old iron worker's hammer, perfectly weighted and hard as a balor's horn.</French>
+		<German>An old iron worker's hammer, perfectly weighted and hard as a balor's horn.</German>
+		<Italian>An old iron worker's hammer, perfectly weighted and hard as a balor's horn.</Italian>
+		<Spanish>An old iron worker's hammer, perfectly weighted and hard as a balor's horn.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_TRICKY_DAGGER</Tag>
+		<English>Sideclaw Kamas</English>
+		<French>Sideclaw Kamas</French>
+		<German>Sideclaw Kamas</German>
+		<Italian>Sideclaw Kamas</Italian>
+		<Spanish>Sideclaw Kamas</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_TRICKY_DAGGER_PEDIA</Tag>
+		<English>A strange design, these hooked daggers are able to reach vital areas from unexpected directions, assuming that the intended target is wearing anything at all.
+
+"Everything has to be a show with you people, just kill the gobshite!" - Dwarven mercenary Duggart.</English>
+		<French>A strange design, these hooked daggers are able to reach vital areas from unexpected directions, assuming that the intended target is wearing anything at all.
+
+"Everything has to be a show with you people, just kill the gobshite!" - Dwarven mercenary Duggart.</French>
+		<German>A strange design, these hooked daggers are able to reach vital areas from unexpected directions, assuming that the intended target is wearing anything at all.
+
+"Everything has to be a show with you people, just kill the gobshite!" - Dwarven mercenary Duggart.</German>
+		<Italian>A strange design, these hooked daggers are able to reach vital areas from unexpected directions, assuming that the intended target is wearing anything at all.
+
+"Everything has to be a show with you people, just kill the gobshite!" - Dwarven mercenary Duggart.</Italian>
+		<Spanish>A strange design, these hooked daggers are able to reach vital areas from unexpected directions, assuming that the intended target is wearing anything at all.
+
+"Everything has to be a show with you people, just kill the gobshite!" - Dwarven mercenary Duggart.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_CASUALTY_AXE</Tag>
+		<English>Axe of Casualty</English>
+		<French>Axe of Casualty</French>
+		<German>Axe of Casualty</German>
+		<Italian>Axe of Casualty</Italian>
+		<Spanish>Axe of Casualty</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_CASUALTY_AXE_PEDIA</Tag>
+		<English>Invention of Sergeant Major Adelbert Grompomel.
+
+"Get down! Get down! Adelbert is using his homemade weapon again!" - Ruthufus Dropnail, Adelbert's former Captain.
+"Stop swinging that, you idiot! nearly took my eye out!" - Bofast Bronkbeard, Adelbert's former Sargent.
+"My spleeeeen!" - Thadius Bulk, Adelbert's former Sargent Major.</English>
+		<French>Invention of Sergeant Major Adelbert Grompomel.
+
+"Get down! Get down! Adelbert is using his homemade weapon again!" - Ruthufus Dropnail, Adelbert's former Captain.
+"Stop swinging that, you idiot! nearly took my eye out!" - Bofast Bronkbeard, Adelbert's former Sargent.
+"My spleeeeen!" - Thadius Bulk, Adelbert's former Sargent Major.</French>
+		<German>Invention of Sergeant Major Adelbert Grompomel.
+
+"Get down! Get down! Adelbert is using his homemade weapon again!" - Ruthufus Dropnail, Adelbert's former Captain.
+"Stop swinging that, you idiot! nearly took my eye out!" - Bofast Bronkbeard, Adelbert's former Sargent.
+"My spleeeeen!" - Thadius Bulk, Adelbert's former Sargent Major.</German>
+		<Italian>Invention of Sergeant Major Adelbert Grompomel.
+
+"Get down! Get down! Adelbert is using his homemade weapon again!" - Ruthufus Dropnail, Adelbert's former Captain.
+"Stop swinging that, you idiot! nearly took my eye out!" - Bofast Bronkbeard, Adelbert's former Sargent.
+"My spleeeeen!" - Thadius Bulk, Adelbert's former Sargent Major.</Italian>
+		<Spanish>Invention of Sergeant Major Adelbert Grompomel.
+
+"Get down! Get down! Adelbert is using his homemade weapon again!" - Ruthufus Dropnail, Adelbert's former Captain.
+"Stop swinging that, you idiot! nearly took my eye out!" - Bofast Bronkbeard, Adelbert's former Sargent.
+"My spleeeeen!" - Thadius Bulk, Adelbert's former Sargent Major.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_SHIELD_DRAGON</Tag>
+		<English>Dragoncrest Shield</English>
+		<French>Dragoncrest Shield</French>
+		<German>Dragoncrest Shield</German>
+		<Italian>Dragoncrest Shield</Italian>
+		<Spanish>Dragoncrest Shield</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_SHIELD_DRAGON_PEDIA</Tag>
+		<English>A draconic shield, warm to the touch.</English>
+		<French>A draconic shield, warm to the touch.</French>
+		<German>A draconic shield, warm to the touch.</German>
+		<Italian>A draconic shield, warm to the touch.</Italian>
+		<Spanish>A draconic shield, warm to the touch.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_ICXTH</Tag>
+		<English>Icxth</English>
+		<French>Icxth</French>
+		<German>Icxth</German>
+		<Italian>Icxth</Italian>
+		<Spanish>Icxth</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_ICXTH_PEDIA</Tag>
+		<English>Wilboman's toothpick of choice.</English>
+		<French>Wilboman's toothpick of choice.</French>
+		<German>Wilboman's toothpick of choice.</German>
+		<Italian>Wilboman's toothpick of choice.</Italian>
+		<Spanish>Wilboman's toothpick of choice.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_CUIRASS_DRAGON</Tag>
+		<English>Dragonlord's Cuirass</English>
+		<French>Dragonlord's Cuirass</French>
+		<German>Dragonlord's Cuirass</German>
+		<Italian>Dragonlord's Cuirass</Italian>
+		<Spanish>Dragonlord's Cuirass</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_CUIRASS_DRAGON_PEDIA</Tag>
+		<English>When a Patrian general graced the battlefield with their presence, they did so under the protection of every ward imaginable, lest they suffer so much as a papercut in the service of their country.</English>
+		<French>When a Patrian general graced the battlefield with their presence, they did so under the protection of every ward imaginable, lest they suffer so much as a papercut in the service of their country.</French>
+		<German>When a Patrian general graced the battlefield with their presence, they did so under the protection of every ward imaginable, lest they suffer so much as a papercut in the service of their country.</German>
+		<Italian>When a Patrian general graced the battlefield with their presence, they did so under the protection of every ward imaginable, lest they suffer so much as a papercut in the service of their country.</Italian>
+		<Spanish>When a Patrian general graced the battlefield with their presence, they did so under the protection of every ward imaginable, lest they suffer so much as a papercut in the service of their country.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_PONDER_HAT</Tag>
+		<English>Pondering Hat</English>
+		<French>Pondering Hat</French>
+		<German>Pondering Hat</German>
+		<Italian>Pondering Hat</Italian>
+		<Spanish>Pondering Hat</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_PONDER_HAT_PEDIA</Tag>
+		<English>Infinite potential sits on the head of a farmer's son while they chase sheep around a field.</English>
+		<French>Infinite potential sits on the head of a farmer's son while they chase sheep around a field.</French>
+		<German>Infinite potential sits on the head of a farmer's son while they chase sheep around a field.</German>
+		<Italian>Infinite potential sits on the head of a farmer's son while they chase sheep around a field.</Italian>
+		<Spanish>Infinite potential sits on the head of a farmer's son while they chase sheep around a field.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_BROACH_LORD</Tag>
+		<English>Lord's Emblazoned Broach</English>
+		<French>Lord's Emblazoned Broach</French>
+		<German>Lord's Emblazoned Broach</German>
+		<Italian>Lord's Emblazoned Broach</Italian>
+		<Spanish>Lord's Emblazoned Broach</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_BROACH_LORD_PEDIA</Tag>
+		<English>If they have a fancy hat, you follow them.
+If they have a big cape, you follow them.
+And if they have a big shiny doodad on their chest, you follow them and call them Sir.</English>
+		<French>If they have a fancy hat, you follow them.
+If they have a big cape, you follow them.
+And if they have a big shiny doodad on their chest, you follow them and call them Sir.</French>
+		<German>If they have a fancy hat, you follow them.
+If they have a big cape, you follow them.
+And if they have a big shiny doodad on their chest, you follow them and call them Sir.</German>
+		<Italian>If they have a fancy hat, you follow them.
+If they have a big cape, you follow them.
+And if they have a big shiny doodad on their chest, you follow them and call them Sir.</Italian>
+		<Spanish>If they have a fancy hat, you follow them.
+If they have a big cape, you follow them.
+And if they have a big shiny doodad on their chest, you follow them and call them Sir.</Spanish>
+	</TEXT>
+	<TEXT><!-- Lair text for items -->
 		<Tag>TXT_KEY_GOODY_BANANA_SCYTHE</Tag>
 		<English>The unit opens a rusty old chest, smelling faintly of bananas, and broken timelines.</English>
 		<French>The unit opens a rusty old chest, smelling faintly of bananas, and broken timelines.</French>
@@ -782,7 +1139,7 @@ This skill is lost now, but these little glowing lanterns remain as a testament 
 		<Spanish>The unit opens a rusty old chest, and inside they find a grotesque weapon made of bubbling flesh. When they pick it up, a nearby mouse lets out a frantic screech and then begins to contort violently on the ground. A few moments later, a clawed hand erupts from the creature's forehead as its eyes pop out of its skull.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_GUIDING_LIGHT_LANTERN</Tag>
+		<Tag>TXT_KEY_GOODY_GUIDING_LIGHT_LANTERN</Tag>
 		<English>The unit opens a rusty old chest, and inside they find an old lantern.
  Already lit, it fills the room with a soft, warm glow, and somehow your unit knows that everything will be alright.</English>
 		<French>The unit opens a rusty old chest, and inside they find an old lantern.
@@ -795,11 +1152,222 @@ This skill is lost now, but these little glowing lanterns remain as a testament 
  Already lit, it fills the room with a soft, warm glow, and somehow your unit knows that everything will be alright.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EQUIPMENT_DEFILER</Tag>
+		<Tag>TXT_KEY_GOODY_WINTERS_GRASP</Tag>
 		<English>The unit opens a frost-covered chest, as a chill runs up their spine.</English>
 		<French>The unit opens a frost-covered chest, as a chill runs up their spine.</French>
 		<German>The unit opens a frost-covered chest, as a chill runs up their spine.</German>
 		<Italian>The unit opens a frost-covered chest, as a chill runs up their spine.</Italian>
 		<Spanish>The unit opens a frost-covered chest, as a chill runs up their spine.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_HIDDEN_CLOAK</Tag>
+		<English>The unit opens a rusty old chest, and inside they find a black cloak.</English>
+		<French>The unit opens a rusty old chest, and inside they find a black cloak.</French>
+		<German>The unit opens a rusty old chest, and inside they find a black cloak.</German>
+		<Italian>The unit opens a frost-covered chest, as a chill runs up their spine.</Italian>
+		<Spanish>The unit opens a rusty old chest, and inside they find a black cloak.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_EVADE_CLOAK</Tag>
+		<English>The unit opens a rusty old chest, and inside they find a colourful cloak.</English>
+		<French>The unit opens a rusty old chest, and inside they find a colourful cloak.</French>
+		<German>The unit opens a rusty old chest, and inside they find a colourful cloak.</German>
+		<Italian>The unit opens a rusty old chest, and inside they find a colourful cloak.</Italian>
+		<Spanish>The unit opens a rusty old chest, and inside they find a colourful cloak.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_BROACH_LORD</Tag>
+		<English>The unit opens a rusty old chest, and inside they find the broach of an ancient lord, stained with rust and blood but still giving off that intangible aura of authority.</English>
+		<French>The unit opens a rusty old chest, and inside they find the broach of an ancient lord, stained with rust and blood but still giving off that intangible aura of authority.</French>
+		<German>The unit opens a rusty old chest, and inside they find the broach of an ancient lord, stained with rust and blood but still giving off that intangible aura of authority.</German>
+		<Italian>The unit opens a rusty old chest, and inside they find the broach of an ancient lord, stained with rust and blood but still giving off that intangible aura of authority.</Italian>
+		<Spanish>The unit opens a rusty old chest, and inside they find the broach of an ancient lord, stained with rust and blood but still giving off that intangible aura of authority.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_RAGESWORD</Tag>
+		<English>The unit encounters a crazed murderer, screaming hell's praises!</English>
+		<French>The unit encounters a crazed murderer, screaming hell's praises!</French>
+		<German>The unit encounters a crazed murderer, screaming hell's praises!</German>
+		<Italian>The unit encounters a crazed murderer, screaming hell's praises!</Italian>
+		<Spanish>The unit encounters a crazed murderer, screaming hell's praises!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_WATER_BOOTS</Tag>
+		<English>The unit opens a waterlogged chest, and inside they find a pair of glossy boots.</English>
+		<French>The unit opens a waterlogged chest, and inside they find a pair of glossy boots.</French>
+		<German>The unit opens a waterlogged chest, and inside they find a pair of glossy boots.</German>
+		<Italian>The unit opens a waterlogged chest, and inside they find a pair of glossy boots.</Italian>
+		<Spanish>The unit opens a waterlogged chest, and inside they find a pair of glossy boots.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_BANESWORD_ANGEL</Tag>
+		<English>Your unit enters a room covered in ritualistic markings, and a low chanting sound fills the air.
+
+In the far corner, your unit sees a coven of hooded figures kneeling and kissing the ground in front of what appears to be a succubus with an angel's severed wings worn about their waist like a dress.
+
+Noticing you, the succubus laughs and beckons, "Come to worship the angel of love?" she cackles, before drawing a dark, jagged blade.</English>
+		<French>Your unit enters a room covered in ritualistic markings, and a low chanting sound fills the air.
+
+In the far corner, your unit sees a coven of hooded figures kneeling and kissing the ground in front of what appears to be a succubus with an angel's severed wings worn about their waist like a dress.
+
+Noticing you, the succubus laughs and beckons, "Come to worship the angel of love?" she cackles, before drawing a dark, jagged blade.</French>
+		<German>Your unit enters a room covered in ritualistic markings, and a low chanting sound fills the air.
+
+In the far corner, your unit sees a coven of hooded figures kneeling and kissing the ground in front of what appears to be a succubus with an angel's severed wings worn about their waist like a dress.
+
+Noticing you, the succubus laughs and beckons, "Come to worship the angel of love?" she cackles, before drawing a dark, jagged blade.</German>
+		<Italian>Your unit enters a room covered in ritualistic markings, and a low chanting sound fills the air.
+
+In the far corner, your unit sees a coven of hooded figures kneeling and kissing the ground in front of what appears to be a succubus with an angel's severed wings worn about their waist like a dress.
+
+Noticing you, the succubus laughs and beckons, "Come to worship the angel of love?" she cackles, before drawing a dark, jagged blade.</Italian>
+		<Spanish>Your unit enters a room covered in ritualistic markings, and a low chanting sound fills the air.
+
+In the far corner, your unit sees a coven of hooded figures kneeling and kissing the ground in front of what appears to be a succubus with an angel's severed wings worn about their waist like a dress.
+
+Noticing you, the succubus laughs and beckons, "Come to worship the angel of love?" she cackles, before drawing a dark, jagged blade.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_BANESWORD_DEMON</Tag>
+		<English>The unit is approaching a rusted old chest when a zealous Acolyte comes around the corner.
+They scream at your unit: "FOUL DEMONS! I SHALL SMITE YOU AND YOUR THIEVING WAYS!"
+And then they run at you, holding a gleaming sword above their head.
+It bounces off your unit's head with a soft bonk.
+The Acolyte is stupefied, but regains their composure for another attempt.</English>
+		<French>The unit is approaching a rusted old chest when a zealous Acolyte comes around the corner.
+They scream at your unit: "FOUL DEMONS! I SHALL SMITE YOU AND YOUR THIEVING WAYS!"
+And then they run at you, holding a gleaming sword above their head.
+It bounces off your unit's head with a soft bonk.
+The Acolyte is stupefied, but regains their composure for another attempt.</French>
+		<German>The unit is approaching a rusted old chest when a zealous Acolyte comes around the corner.
+They scream at your unit: "FOUL DEMONS! I SHALL SMITE YOU AND YOUR THIEVING WAYS!"
+And then they run at you, holding a gleaming sword above their head.
+It bounces off your unit's head with a soft bonk.
+The Acolyte is stupefied, but regains their composure for another attempt.</German>
+		<Italian>The unit is approaching a rusted old chest when a zealous Acolyte comes around the corner.
+They scream at your unit: "FOUL DEMONS! I SHALL SMITE YOU AND YOUR THIEVING WAYS!"
+And then they run at you, holding a gleaming sword above their head.
+It bounces off your unit's head with a soft bonk.
+The Acolyte is stupefied, but regains their composure for another attempt.</Italian>
+		<Spanish>The unit is approaching a rusted old chest when a zealous Acolyte comes around the corner.
+They scream at your unit: "FOUL DEMONS! I SHALL SMITE YOU AND YOUR THIEVING WAYS!"
+And then they run at you, holding a gleaming sword above their head.
+It bounces off your unit's head with a soft bonk.
+The Acolyte is stupefied, but regains their composure for another attempt.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_BANESWORD_ELEMENTAL</Tag>
+		<English>Your unit finds a room with four elementals, one in each corner.
+They are watching the middle of the room with terrified expressions.
+Peering closer, your unit notes that there is a gleaming sword resting on the group.
+slipping past the fire elemental, back up against the wall, the unit goes and picks up the sword, causing the elementals to somehow become even more agitated.
+Your Unit waves the sword about, and the elementals scramble to escape through the door.</English>
+		<French>Your unit finds a room with four elementals, one in each corner.
+They are watching the middle of the room with terrified expressions.
+Peering closer, your unit notes that there is a gleaming sword resting on the group.
+slipping past the fire elemental, back up against the wall, the unit goes and picks up the sword, causing the elementals to somehow become even more agitated.
+Your Unit waves the sword about, and the elementals scramble to escape through the door.</French>
+		<German>Your unit finds a room with four elementals, one in each corner.
+They are watching the middle of the room with terrified expressions.
+Peering closer, your unit notes that there is a gleaming sword resting on the group.
+slipping past the fire elemental, back up against the wall, the unit goes and picks up the sword, causing the elementals to somehow become even more agitated.
+Your Unit waves the sword about, and the elementals scramble to escape through the door.</German>
+		<Italian>Your unit finds a room with four elementals, one in each corner.
+They are watching the middle of the room with terrified expressions.
+Peering closer, your unit notes that there is a gleaming sword resting on the group.
+slipping past the fire elemental, back up against the wall, the unit goes and picks up the sword, causing the elementals to somehow become even more agitated.
+Your Unit waves the sword about, and the elementals scramble to escape through the door.</Italian>
+		<Spanish>Your unit finds a room with four elementals, one in each corner.
+They are watching the middle of the room with terrified expressions.
+Peering closer, your unit notes that there is a gleaming sword resting on the group.
+slipping past the fire elemental, back up against the wall, the unit goes and picks up the sword, causing the elementals to somehow become even more agitated.
+Your Unit waves the sword about, and the elementals scramble to escape through the door.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_SPIRIT_SEVER</Tag>
+		<English>The unit is approaching a rusted old chest when suddenly a human-sized puppet drops down from the ceiling on rough twine cords.
+The puppet's face is carved to look like a woman who is screaming in fear.
+
+As your unit is still digesting this information, the automaton begins shuffling towards them with only the sound of clacking wood filling the room.</English>
+		<French>The unit is approaching a rusted old chest when suddenly a human-sized puppet drops down from the ceiling on rough twine cords.
+The puppet's face is carved to look like a woman who is screaming in fear.
+
+As your unit is still digesting this information, the automaton begins shuffling towards them with only the sound of clacking wood filling the room.</French>
+		<German>The unit is approaching a rusted old chest when suddenly a human-sized puppet drops down from the ceiling on rough twine cords.
+The puppet's face is carved to look like a woman who is screaming in fear.
+
+As your unit is still digesting this information, the automaton begins shuffling towards them with only the sound of clacking wood filling the room.</German>
+		<Italian>The unit is approaching a rusted old chest when suddenly a human-sized puppet drops down from the ceiling on rough twine cords.
+The puppet's face is carved to look like a woman who is screaming in fear.
+
+As your unit is still digesting this information, the automaton begins shuffling towards them with only the sound of clacking wood filling the room.</Italian>
+		<Spanish>The unit is approaching a rusted old chest when suddenly a human-sized puppet drops down from the ceiling on rough twine cords.
+The puppet's face is carved to look like a woman who is screaming in fear.
+
+As your unit is still digesting this information, the automaton begins shuffling towards them with only the sound of clacking wood filling the room.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_BARD_HARP</Tag>
+		<English>The unit opens a rusty old chest, and inside they find a beautiful harp.</English>
+		<French>The unit opens a rusty old chest, and inside they find a beautiful harp.</French>
+		<German>The unit opens a rusty old chest, and inside they find a beautiful harp.</German>
+		<Italian>The unit opens a rusty old chest, and inside they find a beautiful harp.</Italian>
+		<Spanish>The unit opens a rusty old chest, and inside they find a beautiful harp.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_SMITHS_HAMMER</Tag>
+		<English>The unit opens a rusty old chest, and inside they find a trusted blacksmith's hammer.</English>
+		<French>The unit opens a rusty old chest, and inside they find a trusted blacksmith's hammer.</French>
+		<German>The unit opens a rusty old chest, and inside they find a trusted blacksmith's hammer.</German>
+		<Italian>The unit opens a rusty old chest, and inside they find a trusted blacksmith's hammer.</Italian>
+		<Spanish>The unit opens a rusty old chest, and inside they find a trusted blacksmith's hammer.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_TRICKY_DAGGER</Tag>
+		<English>The unit encounters a Fawn, who does a backflip over a log, before rushing at you!</English>
+		<French>The unit encounters a Fawn, who does a backflip over a log, before rushing at you!</French>
+		<German>The unit encounters a Fawn, who does a backflip over a log, before rushing at you!</German>
+		<Italian>The unit encounters a Fawn, who does a backflip over a log, before rushing at you!</Italian>
+		<Spanish>The unit encounters a Fawn, who does a backflip over a log, before rushing at you!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_CASUALTY_AXE</Tag>
+		<English>The unit finds an axe, sitting inside the remains of a broken chest.</English>
+		<French>The unit finds an axe, sitting inside the remains of a broken chest.</French>
+		<German>The unit finds an axe, sitting inside the remains of a broken chest.</German>
+		<Italian>The unit finds an axe, sitting inside the remains of a broken chest.</Italian>
+		<Spanish>The unit finds an axe, sitting inside the remains of a broken chest.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_SHIELD_DRAGON</Tag>
+		<English>The unit opens a charred old chest, and inside they find a gleaming shield.</English>
+		<French>The unit opens a charred old chest, and inside they find a gleaming shield.</French>
+		<German>The unit opens a charred old chest, and inside they find a gleaming shield.</German>
+		<Italian>The unit opens a charred old chest, and inside they find a gleaming shield.</Italian>
+		<Spanish>The unit opens a charred old chest, and inside they find a gleaming shield.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_ICXTH</Tag>
+		<English>The unit encounters a group of hooded strangers, chanting over a block of ice with a sword sticking out of it. They turn to face you.</English>
+		<French>The unit encounters a group of hooded strangers, chanting over a block of ice with a sword sticking out of it. They turn to face you.</French>
+		<German>The unit encounters a group of hooded strangers, chanting over a block of ice with a sword sticking out of it. They turn to face you.</German>
+		<Italian>The unit encounters a group of hooded strangers, chanting over a block of ice with a sword sticking out of it. They turn to face you.</Italian>
+		<Spanish>The unit encounters a group of hooded strangers, chanting over a block of ice with a sword sticking out of it. They turn to face you.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_CUIRASS_DRAGON</Tag>
+		<English>The unit encounters a skeleton, naked except for a gleaming embossed chestplate, studded with gems.</English>
+		<French>The unit encounters a skeleton, naked except for a gleaming embossed chestplate, studded with gems.</French>
+		<German>The unit encounters a skeleton, naked except for a gleaming embossed chestplate, studded with gems.</German>
+		<Italian>The unit encounters a skeleton, naked except for a gleaming embossed chestplate, studded with gems.</Italian>
+		<Spanish>The unit encounters a skeleton, naked except for a gleaming embossed chestplate, studded with gems.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_PONDER_HAT</Tag>
+		<English>The unit opens a rusty old chest, and inside they find a big floppy hat, They put it on.</English>
+		<French>The unit opens a rusty old chest, and inside they find a big floppy hat, They put it on.</French>
+		<German>The unit opens a rusty old chest, and inside they find a big floppy hat, They put it on.</German>
+		<Italian>The unit opens a rusty old chest, and inside they find a big floppy hat, They put it on.</Italian>
+		<Spanish>The unit opens a rusty old chest, and inside they find a big floppy hat, They put it on.</Spanish>
 	</TEXT>
 </Civ4GameText>

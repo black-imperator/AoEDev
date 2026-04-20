@@ -1035,7 +1035,7 @@
 				</GoodyClass>
 			</GoodyClasses>
 			<iWeight>100</iWeight>
-			<Description>TXT_KEY_GUIDING_LIGHT_LANTERN</Description>
+			<Description>TXT_KEY_GOODY_GUIDING_LIGHT_LANTERN</Description>
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
@@ -1056,7 +1056,7 @@
 				</GoodyClass>
 			</GoodyClasses>
 			<iWeight>100</iWeight>
-			<Description>TXT_KEY_WINTERS_GRASP</Description>
+			<Description>TXT_KEY_GOODY_WINTERS_GRASP</Description>
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
