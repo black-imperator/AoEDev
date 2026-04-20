@@ -263,9 +263,9 @@ def spellGlimpseUnseen(caster):
                         pUnit = pPlot.getUnit(e)
                         pOwner = gc.getPlayer(pUnit.getOwner())
                         iOwnerTeam = pOwner.getTeam()
-                            if iOwnerTeam != iAifonTeam:
-                                pUnit.setHasPromotion(iPromotionBerserk, True)
-                                pUnit.setPromotionDuration(iPromotionBerserk, 5)
+                        if iOwnerTeam != iAifonTeam:
+                            pUnit.setHasPromotion(iPromotionBerserk, True)
+                            pUnit.setPromotionDuration(iPromotionBerserk, 5)
 
 
 def perTurnCondatis(pCaster):

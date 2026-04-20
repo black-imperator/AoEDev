@@ -1591,7 +1591,6 @@
 		<PromotionInfo>		<!-- Aifon Enraged -->
 			<Type>PROMOTION_ENRAGED_AIFON</Type>
 			<Description>TXT_KEY_PROMOTION_ENRAGED_AIFON</Description>
-			<iGroupSize>1</iGroupSize>
 			<ReplaceArtType>ART_DEF_UNIT_BIG_TOAD</ReplaceArtType>
 			<NewName>A Big Toad</NewName>
 			<bHiddenNationality>1</bHiddenNationality>
