@@ -1156,19 +1156,24 @@ Lo! the King of Nightmare nears!</Spanish>
 	</TEXT>
 	<TEXT> 
 		<Tag>TXT_KEY_SPELL_GLIMPSE_UNSEEN_HELP</Tag>
-		<English>[ICON_BULLET]All non Aifon units gain [LINK=PROMOTION_ENRAGED]Enraged[\LINK] and [LINK=PROMOTION_HIDDEN_NATIONALITY]Hidden Nationality[\LINK] for 5 turns.</English>
-		<French>[ICON_BULLET]All non Aifon units gain [LINK=PROMOTION_ENRAGED]Enraged[\LINK] and [LINK=PROMOTION_HIDDEN_NATIONALITY]Hidden Nationality[\LINK] for 5 turns.</French>
-		<German>[ICON_BULLET]All non Aifon units gain [LINK=PROMOTION_ENRAGED]Enraged[\LINK] and [LINK=PROMOTION_HIDDEN_NATIONALITY]Hidden Nationality[\LINK] for 5 turns.</German>
-		<Italian>[ICON_BULLET]All non Aifon units gain [LINK=PROMOTION_ENRAGED]Enraged[\LINK] and [LINK=PROMOTION_HIDDEN_NATIONALITY]Hidden Nationality[\LINK] for 5 turns.</Italian>
-		<Spanish>[ICON_BULLET]All non Aifon units gain [LINK=PROMOTION_ENRAGED]Enraged[\LINK] and [LINK=PROMOTION_HIDDEN_NATIONALITY]Hidden Nationality[\LINK] for 5 turns.</Spanish>
+		<English>[ICON_BULLET]All non-Aifon units gain [LINK=PROMOTION_ENRAGED_AIFON]Delirium [\LINK] for 5 turns. This causes units to perceive Erebus through the lens of their deepest nightmare.
+(Causes Hidden Nationality, warped perception and a 2% chance to Enrage for the duration.)</English>
+		<French>[ICON_BULLET]All non-Aifon units gain [LINK=PROMOTION_ENRAGED_AIFON]Delirium [\LINK] for 5 turns. This causes units to perceive Erebus through the lens of their deepest nightmare.
+(Causes Hidden Nationality, warped perception and a 2% chance to Enrage for the duration.)</French>
+		<German>[ICON_BULLET]All non-Aifon units gain [LINK=PROMOTION_ENRAGED_AIFON]Delirium [\LINK] for 5 turns. This causes units to perceive Erebus through the lens of their deepest nightmare.
+(Causes Hidden Nationality, warped perception and a 2% chance to Enrage for the duration.)</German>
+		<Italian>[ICON_BULLET]All non-Aifon units gain [LINK=PROMOTION_ENRAGED_AIFON]Delirium [\LINK] for 5 turns. This causes units to perceive Erebus through the lens of their deepest nightmare.
+(Causes Hidden Nationality, warped perception and a 2% chance to Enrage for the duration.)</Italian>
+		<Spanish>[ICON_BULLET]All non-Aifon units gain [LINK=PROMOTION_ENRAGED_AIFON]Delirium [\LINK] for 5 turns. This causes units to perceive Erebus through the lens of their deepest nightmare.
+(Causes Hidden Nationality, warped perception and a 2% chance to Enrage for the duration.)</Spanish>
 	</TEXT>
 	<TEXT> 
 		<Tag>TXT_KEY_PROMOTION_ENRAGED_AIFON</Tag>
-		<English>Glimpse of the Unseen (Enraged)</English>
-		<French>Glimpse of the Unseen (Enraged)</French>
-		<German>Glimpse of the Unseen (Enraged)</German>
-		<Italian>Glimpse of the Unseen (Enraged)</Italian>
-		<Spanish>Glimpse of the Unseen (Enraged)</Spanish>
+		<English>Glimpse of the Unseen (Delirium)</English>
+		<French>Glimpse of the Unseen (Delirium)</French>
+		<German>Glimpse of the Unseen (Delirium)</German>
+		<Italian>Glimpse of the Unseen (Delirium)</Italian>
+		<Spanish>Glimpse of the Unseen (Delirium)</Spanish>
 	</TEXT>
 	<TEXT> 
 		<Tag>TXT_KEY_BUILDING_ALTAR_OF_THE_DREAMING_PEDIA</Tag>

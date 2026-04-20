@@ -1591,23 +1591,17 @@
 		<PromotionInfo>		<!-- Aifon Enraged -->
 			<Type>PROMOTION_ENRAGED_AIFON</Type>
 			<Description>TXT_KEY_PROMOTION_ENRAGED_AIFON</Description>
-			<bAllowAttacks>1</bAllowAttacks>
-			<bFreeUnit>1</bFreeUnit>
-			<bNoSupply>1</bNoSupply>
-			<PromotionExcludes>
-				<Promotion>PROMOTION_FERAL</Promotion>
-			</PromotionExcludes>
-			<PromotionOverwrites>
-				<Promotion>PROMOTION_SUPPRESSED_RAGE</Promotion>
-				<Promotion>PROMOTION_FERAL</Promotion>
-			</PromotionOverwrites>
-			<iMovesChange>1</iMovesChange>
-			<iCombatPercent>60</iCombatPercent>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Spells/GlimpseUnseen.dds</Button>
-			<bEnraged>1</bEnraged>
-			<iCombatPercentDefense>-100</iCombatPercentDefense>
+			<iGroupSize>1</iGroupSize>
+			<ReplaceArtType>ART_DEF_UNIT_BIG_TOAD</ReplaceArtType>
+			<NewName>A Big Toad</NewName>
+			<bHiddenNationality>1</bHiddenNationality>
 			<iMinLevel>-1</iMinLevel>
 			<iPromotionDuration>5</iPromotionDuration>
+			<iPromotionRandomApplyChance>2</iPromotionRandomApplyChance>
+			<PromotionRandomApply>PROMOTION_ENRAGED</PromotionRandomApply>
+			<iVisibilityChange>3</iVisibilityChange>
+			<iExtraPerception>2</iExtraPerception>
+			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Spells/GlimpseUnseen.dds</Button>
 		</PromotionInfo>
 	</PromotionInfos>
 </Civ4PromotionInfos>

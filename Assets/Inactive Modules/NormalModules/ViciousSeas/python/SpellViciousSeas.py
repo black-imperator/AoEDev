@@ -254,8 +254,6 @@ def spellGlimpseUnseen(caster):
 	pPlayer = gc.getPlayer(caster.getOwner())
 	iHero = getInfoType('PROMOTION_HERO')
 	iPromotionBerserk = getInfoType('PROMOTION_ENRAGED_AIFON')
-	iPromotionHidden = getInfoType('PROMOTION_HIDDEN_NATIONALITY')
-	iPromotionHeld = getInfoType('PROMOTION_LEASH_4')
 	iAifonTeam = pPlayer.getTeam()
 
 	for i in xrange (CyMap().numPlots()): # check whole map
@@ -263,17 +261,11 @@ def spellGlimpseUnseen(caster):
                 pPlot = CyMap().plotByIndex(i)
                 for e in range(pPlot.getNumUnits()): 
                         pUnit = pPlot.getUnit(e)
-                        if not pUnit.isHasPromotion(iHero):                                        # heroes
-                                if not pUnit.isHasPromotion(iPromotionBerserk):
-                                        pOwner = gc.getPlayer(pUnit.getOwner())
-                                        iOwnerTeam = pOwner.getTeam()
-                                        if iOwnerTeam != iAifonTeam:
-                                                pUnit.setHasPromotion(iPromotionBerserk, True)
-                                                pUnit.setPromotionDuration(iPromotionBerserk, 5)
-                                                pUnit.setHasPromotion(iPromotionHidden, True)
-                                                pUnit.setPromotionDuration(iPromotionHidden, 5)
-                                                pUnit.setHasPromotion(iPromotionHeld, True)
-                                                pUnit.setPromotionDuration(iPromotionHeld, 5)
+                        pOwner = gc.getPlayer(pUnit.getOwner())
+                        iOwnerTeam = pOwner.getTeam()
+                            if iOwnerTeam != iAifonTeam:
+                                pUnit.setHasPromotion(iPromotionBerserk, True)
+                                pUnit.setPromotionDuration(iPromotionBerserk, 5)
 
 
 def perTurnCondatis(pCaster):
