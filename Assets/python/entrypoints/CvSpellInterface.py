@@ -9666,6 +9666,63 @@ def exploreLairBeastOfAgares(argsList):
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_BEAST_OF_AGARES'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit.setHasPromotion(getInfoType("PROMOTION_DEMON_LAIR"),True)
+
+def exploreLairCurseThirstSavant(argsList):
+	pUnit, pPlot = argsList
+	pPlayer = gc.getPlayer(pUnit.getOwner())
+	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
+	pNewPlot = findClearPlot(-1, pPlot)
+	newUnit = bPlayer.initUnit(getInfoType('UNIT_DISCIPLE_THE_ASHEN_VEIL'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+	newUnit.setHasPromotion(getInfoType("PROMOTION_RAGESWORD"),True)
+
+def exploreLairSuccubusAngel(argsList):
+	pUnit, pPlot = argsList
+	pPlayer = gc.getPlayer(pUnit.getOwner())
+	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
+	pNewPlot = findClearPlot(-1, pPlot)
+	newUnit = bPlayer.initUnit(getInfoType('UNIT_SUCCUBUS'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+	newUnit.setHasPromotion(getInfoType("PROMOTION_BANESWORD_ANGEL"),True)
+
+def exploreLairSkeletonPatrian(argsList):
+	pUnit, pPlot = argsList
+	pPlayer = gc.getPlayer(pUnit.getOwner())
+	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
+	pNewPlot = findClearPlot(-1, pPlot)
+	newUnit = bPlayer.initUnit(getInfoType('UNIT_SKELETON'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+	newUnit.setHasPromotion(getInfoType("PROMOTION_CUIRASS_DRAGON"),True)
+
+def exploreLairNinjaFawn(argsList):
+	pUnit, pPlot = argsList
+	pPlayer = gc.getPlayer(pUnit.getOwner())
+	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
+	pNewPlot = findClearPlot(-1, pPlot)
+	newUnit = bPlayer.initUnit(getInfoType('UNIT_FAWN'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+	newUnit.setHasPromotion(getInfoType("PROMOTION_TRICKY_DAGGER"),True)
+
+def exploreLairSluaghLord(argsList):
+	pUnit, pPlot = argsList
+	pPlayer = gc.getPlayer(pUnit.getOwner())
+	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
+	pNewPlot = findClearPlot(-1, pPlot)
+	newUnit = bPlayer.initUnit(getInfoType('UNIT_SLUAGH'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+	newUnit.setHasPromotion(getInfoType("PROMOTION_ICXTH"),True)
+
+def exploreLairScreamingPuppet(argsList):
+	pUnit, pPlot = argsList
+	pPlayer = gc.getPlayer(pUnit.getOwner())
+	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
+	pNewPlot = findClearPlot(-1, pPlot)
+	newUnit = bPlayer.initUnit(getInfoType('UNIT_DEVOUT'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+	newUnit.setHasPromotion(getInfoType("PROMOTION_SPIRIT_SEVER"),True)
+	newUnit.setHasPromotion(getInfoType("PROMOTION_PUPPET"),True)
+
+def exploreLairRighteousNobhead(argsList):
+	pUnit, pPlot = argsList
+	pPlayer = gc.getPlayer(pUnit.getOwner())
+	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
+	pNewPlot = findClearPlot(-1, pPlot)
+	newUnit = bPlayer.initUnit(getInfoType('UNIT_DISCIPLE_THE_ORDER'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+	newUnit.setHasPromotion(getInfoType("PROMOTION_BANESWORD_DEMON"),True)
 	
 def exploreLairWarrior(argsList):
 	pUnit, pPlot = argsList

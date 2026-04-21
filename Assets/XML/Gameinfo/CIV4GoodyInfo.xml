@@ -932,6 +932,18 @@
 					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LIZARD_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_GOBLIN_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
 			</GoodyClasses>
 			<iWeight>100</iWeight>
 			<bUnique>1</bUnique>
@@ -955,8 +967,16 @@
 					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LETUM</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
 			</GoodyClasses>
-			<iWeight>100</iWeight>
+			<iWeight>150</iWeight>
 			<bUnique>1</bUnique>
 			<Description>TXT_KEY_GOODY_GROGNARS_HUNT</Description>
 			<Sound>AS2D_GOODY_GOLD</Sound>
@@ -974,8 +994,20 @@
 					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LIVING_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_WATER_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
 			</GoodyClasses>
-			<iWeight>100</iWeight>
+			<iWeight>150</iWeight>
 			<Description>TXT_KEY_GOODY_FOXMEN_FEATHER</Description>
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
@@ -997,6 +1029,10 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_BAIR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
@@ -1005,7 +1041,7 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
-			<iWeight>100</iWeight>
+			<iWeight>150</iWeight>
 			<Description>TXT_KEY_GOODY_DEFILER_ROD</Description>
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
@@ -1026,6 +1062,10 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_BAIR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
@@ -1034,7 +1074,7 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
-			<iWeight>100</iWeight>
+			<iWeight>150</iWeight>
 			<Description>TXT_KEY_GOODY_GUIDING_LIGHT_LANTERN</Description>
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
@@ -1054,8 +1094,12 @@
 					<GoodyClassType>GOODYCLASS_FROSTLING_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
 			</GoodyClasses>
-			<iWeight>100</iWeight>
+			<iWeight>150</iWeight>
 			<Description>TXT_KEY_GOODY_WINTERS_GRASP</Description>
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
@@ -1064,6 +1108,433 @@
 				<Promotion>PROMOTION_WINTER_GRASP</Promotion>
 			</PromotionAdds>
 			<bUnique>1</bUnique>
+		</GoodyInfo>
+		<GoodyInfo>	<!-- Cut Throat's Cloak		Good Minor	-->
+			<Type>GOODY_HIDDEN_CLOAK</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_BANDIT_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_ORC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>150</iWeight>
+			<Description>TXT_KEY_GOODY_HIDDEN_CLOAK</Description>
+			<Sound>AS2D_GOODY_GOLD</Sound>
+			<iDestroyLairChance>90</iDestroyLairChance>
+			<bBad>0</bBad>
+			<PromotionAdds>
+				<Promotion>PROMOTION_HIDDEN_CLOAK</Promotion>
+			</PromotionAdds>
+		</GoodyInfo>
+		<GoodyInfo>	<!-- Performer's Cloak		Good Minor	-->
+			<Type>GOODY_EVADE_CLOAK</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_BANDIT_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LIVING_MINOR_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>150</iWeight>
+			<Description>TXT_KEY_GOODY_EVADE_CLOAK</Description>
+			<Sound>AS2D_GOODY_GOLD</Sound>
+			<iDestroyLairChance>90</iDestroyLairChance>
+			<bBad>0</bBad>
+			<PromotionAdds>
+				<Promotion>PROMOTION_EVADE_CLOAK</Promotion>
+			</PromotionAdds>
+		</GoodyInfo>
+		<GoodyInfo>	<!-- Lord's Broach		Good Minor	-->
+			<Type>GOODY_LORD_BROACH</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LIVING_MINOR_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>150</iWeight>
+			<Description>TXT_KEY_GOODY_LORD_BROACH</Description>
+			<Sound>AS2D_GOODY_GOLD</Sound>
+			<iDestroyLairChance>90</iDestroyLairChance>
+			<bBad>0</bBad>
+			<PromotionAdds>
+				<Promotion>PROMOTION_LORD_BROACH</Promotion>
+			</PromotionAdds>
+		</GoodyInfo>
+		<GoodyInfo>	<!-- Curse-Thirst Blade		Bad Minor	-->
+			<Type>GOODY_RAGEBLADE</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_DEMONIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>250</iWeight>
+			<Description>TXT_KEY_GOODY_RAGEBLADE</Description>
+			<Sound>AS2D_GOODY_HOSTILE</Sound>
+			<iDestroyLairChance>40</iDestroyLairChance>
+			<PythonCallback>exploreLairCurseThirstSavant</PythonCallback>
+			<bBad>0</bBad>
+		</GoodyInfo>
+		<GoodyInfo>	<!-- Boots of Waterwalking		Good Minor	-->
+			<Type>GOODY_WATER_BOOTS</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_WATER_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>150</iWeight>
+			<Description>TXT_KEY_GOODY_WATER_BOOTS</Description>
+			<Sound>AS2D_GOODY_GOLD</Sound>
+			<iDestroyLairChance>90</iDestroyLairChance>
+			<bBad>0</bBad>
+			<PromotionAdds>
+				<Promotion>PROMOTION_WATER_BOOTS</Promotion>
+			</PromotionAdds>
+		</GoodyInfo>
+		<GoodyInfo>	<!-- Angelsbane	Bad Minor	-->
+			<Type>GOODY_BANESWORD_ANGEL</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_DEMONIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>250</iWeight>
+			<Description>TXT_KEY_GOODY_BANESWORD_ANGEL</Description>
+			<Sound>AS2D_GOODY_HOSTILE</Sound>
+			<iDestroyLairChance>40</iDestroyLairChance>
+			<PythonCallback>exploreLairSuccubusAngel</PythonCallback>
+			<bBad>1</bBad>
+		</GoodyInfo>
+		<GoodyInfo>	<!-- Demonsbane	Bad Minor	-->
+			<Type>GOODY_BANESWORD_DEMON</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LIVING_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>250</iWeight>
+			<Description>TXT_KEY_GOODY_BANESWORD_DEMON</Description>
+			<Sound>AS2D_GOODY_HOSTILE</Sound>
+			<iDestroyLairChance>40</iDestroyLairChance>
+			<PythonCallback>exploreLairRighteousNobhead</PythonCallback>
+			<bBad>1</bBad>
+		</GoodyInfo>
+		<GoodyInfo>	<!-- Elementals Bane Conjurers		Good Minor	-->
+			<Type>GOODY_BANESWORD_ELEMENTAL</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_WATER_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_FROSTLING_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_SUBTERRAN_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>150</iWeight>
+			<Description>TXT_KEY_GOODY_BANESWORD_ELEMENTAL</Description>
+			<Sound>AS2D_GOODY_GOLD</Sound>
+			<iDestroyLairChance>90</iDestroyLairChance>
+			<bBad>0</bBad>
+			<PromotionAdds>
+				<Promotion>PROMOTION_BANESWORD_ELEMENTAL</Promotion>
+			</PromotionAdds>
+		</GoodyInfo>
+		<GoodyInfo>	<!-- Spirit Sever	Bad Minor	-->
+			<Type>GOODY_SPIRIT_SEVER</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_SPIRIT_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_UNDEAD_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>250</iWeight>
+			<Description>TXT_KEY_GOODY_SPIRIT_SEVER</Description>
+			<Sound>AS2D_GOODY_HOSTILE</Sound>
+			<iDestroyLairChance>40</iDestroyLairChance>
+			<PythonCallback>exploreLairScreamingPuppet</PythonCallback>
+			<bBad>1</bBad>
+		</GoodyInfo>
+		<GoodyInfo>	<!-- Bards Harp	Good Minor	-->
+			<Type>GOODY_BARD_HARP</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LIVING_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>150</iWeight>
+			<Description>TXT_KEY_GOODY_BARD_HARP</Description>
+			<Sound>AS2D_GOODY_GOLD</Sound>
+			<iDestroyLairChance>90</iDestroyLairChance>
+			<bBad>0</bBad>
+			<PromotionAdds>
+				<Promotion>PROMOTION_BARD_HARP</Promotion>
+			</PromotionAdds>
+		</GoodyInfo>
+		<GoodyInfo>	<!-- Smiths Hammer	Good Minor	-->
+			<Type>GOODY_SMITHS_HAMMER</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LIVING_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>150</iWeight>
+			<Description>TXT_KEY_GOODY_SMITHS_HAMMER</Description>
+			<Sound>AS2D_GOODY_GOLD</Sound>
+			<iDestroyLairChance>90</iDestroyLairChance>
+			<bBad>0</bBad>
+			<PromotionAdds>
+				<Promotion>PROMOTION_SMITHS_HAMMER</Promotion>
+			</PromotionAdds>
+		</GoodyInfo>
+		<GoodyInfo>	<!-- Sideclaw Kamas	Bad Minor	-->
+			<Type>GOODY_TRICKY_DAGGER</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_NATURE_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>250</iWeight>
+			<Description>TXT_KEY_GOODY_TRICKY_DAGGER</Description>
+			<Sound>AS2D_GOODY_HOSTILE</Sound>
+			<iDestroyLairChance>40</iDestroyLairChance>
+			<PythonCallback>exploreLairNinjaFawn</PythonCallback>
+			<bBad>1</bBad>
+		</GoodyInfo>
+		<GoodyInfo>	<!-- Casualty Axe	Good Minor	-->
+			<Type>GOODY_CASUALTY_AXE</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LIVING_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_BANDIT_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_ORC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>150</iWeight>
+			<Description>TXT_KEY_GOODY_CASUALTY_AXE</Description>
+			<Sound>AS2D_GOODY_GOLD</Sound>
+			<iDestroyLairChance>90</iDestroyLairChance>
+			<bBad>0</bBad>
+			<PromotionAdds>
+				<Promotion>PROMOTION_CASUALTY_AXE</Promotion>
+			</PromotionAdds>
+		</GoodyInfo>
+		<GoodyInfo>	<!-- Dragon Shield	Good Minor	-->
+			<Type>GOODY_SHIELD_DRAGON</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LIZARD_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>150</iWeight>
+			<Description>TXT_KEY_GOODY_SHIELD_DRAGON</Description>
+			<Sound>AS2D_GOODY_GOLD</Sound>
+			<iDestroyLairChance>90</iDestroyLairChance>
+			<bBad>0</bBad>
+			<PromotionAdds>
+				<Promotion>PROMOTION_SHIELD_DRAGON</Promotion>
+			</PromotionAdds>
+		</GoodyInfo>
+		<GoodyInfo>	<!-- Icxth	Bad Minor	-->
+			<Type>GOODY_ICXTH</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_FROSTLING_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>250</iWeight>
+			<Description>TXT_KEY_GOODY_ICXTH</Description>
+			<Sound>AS2D_GOODY_HOSTILE</Sound>
+			<iDestroyLairChance>40</iDestroyLairChance>
+			<PythonCallback>exploreLairSluaghLord</PythonCallback>
+			<bBad>1</bBad>
+		</GoodyInfo>
+		<GoodyInfo>	<!-- Dragonlord Cuirass	Good Minor	-->
+			<Type>GOODY_CUIRASS_DRAGON</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LIZARD_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>250</iWeight>
+			<Description>TXT_KEY_GOODY_CUIRASS_DRAGON</Description>
+			<Sound>AS2D_GOODY_HOSTILE</Sound>
+			<iDestroyLairChance>90</iDestroyLairChance>
+			<bBad>1</bBad>
+			<PythonCallback>exploreLairSkeletonPatrian</PythonCallback>
+		</GoodyInfo>
+		<GoodyInfo>	<!-- Pondering Hat	Good Minor	-->
+			<Type>GOODY_PONDER_HAT</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LIVING_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>150</iWeight>
+			<Description>TXT_KEY_GOODY_PONDER_HAT</Description>
+			<Sound>AS2D_GOODY_GOLD</Sound>
+			<iDestroyLairChance>90</iDestroyLairChance>
+			<bBad>0</bBad>
+			<PromotionAdds>
+				<Promotion>PROMOTION_PONDER_HAT</Promotion>
+			</PromotionAdds>
 		</GoodyInfo>
 		<GoodyInfo> <!--Urn Rotting Flesh		 Unique-->
 			<Type>GOODY_EXPLORE_LAIR_ITEM_URN_ROTTING_FLESH_4</Type>

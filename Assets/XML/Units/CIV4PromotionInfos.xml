@@ -2156,21 +2156,84 @@
 			<Civilopedia>TXT_KEY_EQUIPMENT_ICXTH_PEDIA</Civilopedia>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<TechPrereq>TECH_NEVER</TechPrereq>
+			<ReplaceArtType>ART_DEF_UNIT_SLUAGH</ReplaceArtType>
 			<Button>Art/Interface/Buttons/Equipment/EquipIcxth.dds</Button>
-			<DamageTypeResists>
-				<DamageTypeResist>
-					<DamageType>DAMAGE_COLD</DamageType>
-					<iResist>30</iResist>
-				</DamageTypeResist>
-			</DamageTypeResists>
 			<DamageTypeCombats>
 				<DamageTypeCombat>
 					<DamageType>DAMAGE_COLD</DamageType>
 					<iCombat>1</iCombat>
 				</DamageTypeCombat>
 			</DamageTypeCombats>
-			<PromotionCombatApply>PROMOTION_SLOW</PromotionCombatApply>
+			<PromotionCombatApply>PROMOTION_ICXTHS_BITE</PromotionCombatApply>
 			<bEquipment>1</bEquipment>
+			<bNotAlive>1</bNotAlive>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Icxth's Bite -->
+			<Type>PROMOTION_ICXTHS_BITE</Type>
+			<Description>TXT_KEY_ICXTHS_BITE</Description>
+			<iMovesChange>-1</iMovesChange>
+			<iMoveDiscountChange>-1</iMoveDiscountChange>
+			<iWithdrawalChange>-100</iWithdrawalChange>
+			<iSpellDamageModify>-20</iSpellDamageModify>
+			<iChanceMiscast>75</iChanceMiscast>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ANIMAL</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_BEAST</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Art/Interface/Buttons/Promotions/Slow.dds</Button>
+			<iAIWeight>-50</iAIWeight>
+			<iExpireChance>30</iExpireChance>
+			<iMinLevel>-1</iMinLevel>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Dragonlord's Cuirass -->
 			<Type>PROMOTION_CUIRASS_DRAGON</Type>
