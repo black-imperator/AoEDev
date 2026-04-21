@@ -1439,6 +1439,7 @@
 			<PromotionAdds>
 				<Promotion>PROMOTION_CASUALTY_AXE</Promotion>
 			</PromotionAdds>
+			<bUnique>1</bUnique>
 		</GoodyInfo>
 		<GoodyInfo>	<!-- Dragon Shield	Good Minor	-->
 			<Type>GOODY_SHIELD_DRAGON</Type>
@@ -1487,6 +1488,7 @@
 			<iDestroyLairChance>40</iDestroyLairChance>
 			<PythonCallback>exploreLairSluaghLord</PythonCallback>
 			<bBad>1</bBad>
+			<bUnique>1</bUnique>
 		</GoodyInfo>
 		<GoodyInfo>	<!-- Dragonlord Cuirass	Good Minor	-->
 			<Type>GOODY_CUIRASS_DRAGON</Type>
