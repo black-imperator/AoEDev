@@ -149,9 +149,38 @@
 		</BuildInfo>	
 		<BuildInfo> <!-- Aquatic Pyre -->
 			<Type>BUILD_PYRE_AQUATIC</Type>
+			<Description>TXT_KEY_BUILD_PYRE_AQUATIC</Description>
+			<Help/>
+			<PrereqTech>TECH_DARK_SECRETS</PrereqTech>
 			<iTime>1500</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>
+			<ImprovementType>IMPROVEMENTCLASS_FISHING_BOATS</ImprovementType>
+			<RouteType>NONE</RouteType>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<FeatureStructs>
+				<FeatureStruct>
+					<FeatureType>FEATURE_KELP</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>0</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_KELP_FOREST</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>0</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_REEFS</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>0</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+			</FeatureStructs>
 			<TechBuildDiscounts>
 				<TechBuildDiscount>
 					<TechType>TECH_SAILING</TechType>
@@ -166,6 +195,13 @@
 					<iDiscount>300</iDiscount>
 				</TechBuildDiscount>
 			</TechBuildDiscounts>
+			<HotKey>KB_R</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<Button>Art/Civs/Dtesh/Pyre/Pyre.dds</Button>
+			<bForceOverwrite>1</bForceOverwrite>
 		</BuildInfo>
 		<BuildInfo> <!-- Fishing Boats -->
 			<Type>BUILD_FISHING_BOATS</Type>

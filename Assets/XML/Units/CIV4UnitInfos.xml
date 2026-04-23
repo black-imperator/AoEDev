@@ -50495,6 +50495,10 @@
 					<PromotionType>PROMOTION_FROSTLING</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_SLOW</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
 			</FreePromotions>
 			<iTier>1</iTier>
 		</UnitInfo>

@@ -36538,7 +36538,7 @@
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/summons/Flesh Golem/GolemFlesh.nif</NIF>
+			<NIF>Art/Units/summons/Flesh Golem2/GolemFlesh2.nif</NIF>
 			<KFM>Art/Units/Swordsman/Swordsman.kfm</KFM>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>

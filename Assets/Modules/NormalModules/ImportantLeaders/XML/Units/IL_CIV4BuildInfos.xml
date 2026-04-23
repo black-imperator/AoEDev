@@ -6,12 +6,12 @@
 <!-- Build Infos -->
 <Civ4BuildInfos xmlns="x-schema:IL_CIV4UnitSchema.xml">
 	<BuildInfos>
-		<BuildInfo> <!-- Pyre -->
+		<BuildInfo> <!-- Dune Wyrm Dust -->
 			<Type>BUILD_SAND_DUST_IL</Type>
 			<Description>TXT_KEY_BUILD_SAND_DUST</Description>
 			<Help/>
 			<PrereqTech>NONE</PrereqTech>
-			<iTime>800</iTime>
+			<iTime>2500</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<LinkedBuilds>

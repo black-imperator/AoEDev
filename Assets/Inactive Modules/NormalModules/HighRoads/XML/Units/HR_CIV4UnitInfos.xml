@@ -148,6 +148,26 @@
 		        <DependencyType>MODULE_DWARVES</DependencyType>
 		     </AndDependencyTypes>
 		</UnitInfo>
+		<UnitInfo>        <!-- War Elephant -->
+			<Class>UNITCLASS_WAR_ELEPHANT</Class>
+			<Type>UNIT_WAR_ELEPHANT</Type>
+			<Builds>
+				<Build>
+					<BuildType>BUILD_IMPERIAL_ROAD</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+			</Builds>
+		</UnitInfo>
+		<UnitInfo>        <!-- Mammoth Rider -->
+			<Class>UNITCLASS_MAMMOTH_RIDER</Class>
+			<Type>UNIT_MAMMOTH_RIDER</Type>
+			<Builds>
+				<Build>
+					<BuildType>BUILD_IMPERIAL_ROAD</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+			</Builds>
+		</UnitInfo>
 	
 		</UnitInfos>
 </Civ4UnitInfos>
