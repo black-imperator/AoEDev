@@ -7177,7 +7177,7 @@
 			<iCultureCenterBonus>6</iCultureCenterBonus>
 			<iMaxAirlift>2</iMaxAirlift>
 		</ImprovementInfo>
-		<ImprovementInfo><!-- Sacred Harvest -->
+		<ImprovementInfo><!-- Sacred Cull -->
 			<Type>IMPROVEMENT_SACRED_HARVEST</Type>
 			<ImprovementClass>IMPROVEMENTCLASS_SACRED_HARVEST</ImprovementClass>
 			<Description>TXT_KEY_IMPROVEMENT_SACRED_HARVEST</Description>
@@ -7203,6 +7203,10 @@
 				</FeatureMakesValid>
 				<FeatureMakesValid>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<bMakesValid>1</bMakesValid>
+				</FeatureMakesValid>
+				<FeatureMakesValid>
+					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
 					<bMakesValid>1</bMakesValid>
 				</FeatureMakesValid>
 			</FeatureMakesValids>

@@ -1742,6 +1742,7 @@
 				<Promotion>PROMOTION_POISONED</Promotion>
 				<Promotion>PROMOTION_WITHERED</Promotion>
 				<Promotion>PROMOTION_MUTATED</Promotion>
+				<Promotion>PROMOTION_TERRIFIED</Promotion>
 			</PromotionExcludes>
 			<PromotionOverwrites>
 				<Promotion>PROMOTION_ALIVE</Promotion>
@@ -1751,12 +1752,10 @@
 				<Promotion>PROMOTION_POISONED</Promotion>
 				<Promotion>PROMOTION_WITHERED</Promotion>
 				<Promotion>PROMOTION_MUTATED</Promotion>
+				<Promotion>PROMOTION_TERRIFIED</Promotion>
 			</PromotionOverwrites>
 			<Button>Art/Interface/Buttons/Races/Race_Undead.dds</Button>
 			<bImmuneToFear>1</bImmuneToFear>
-			<PromotionExcludes>
-				<Promotion>PROMOTION_TERRIFIED</Promotion>
-			</PromotionExcludes>
 			<bNotAlive>1</bNotAlive>
 			<NoBadExploreImprovements>
 				<NoBadExploreImprovement>
