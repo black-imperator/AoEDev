@@ -241,6 +241,8 @@ public:
 	void InitFeatureGraphicsDefaults(int** ppiDefaults);
 	// allocate and initialize the civilization's default units
 	void InitUnitDefaults(int **ppiDefaults);
+	// allocate and initialize the civilization's default specialists
+	void InitSpecialistDefaults(int** ppiDefaults);
 	// allocate and initialize a 2 dimensional array of int pointers
 	void Init2DIntList(int*** pppiList, int iSizeX, int iSizeY);
 	// allocate and initialize a 2 dimensional array of float pointers

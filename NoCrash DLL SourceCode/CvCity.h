@@ -183,7 +183,7 @@ public:
 	void processBonus(BonusTypes eBonus, int iChange);
 	void processBuilding(BuildingTypes eBuilding, int iChange, bool bObsolete = false);
 	void processProcess(ProcessTypes eProcess, int iChange);
-	void processSpecialist(SpecialistTypes eSpecialist, int iChange);
+	void processSpecialistClass(SpecialistClassTypes eSpecialist, int iChange);
 
 	HandicapTypes getHandicapType() const;												// Exposed to Python
 	CivilizationTypes getCivilizationType() const;								// Exposed to Python
@@ -779,7 +779,7 @@ public:
 /*************************************************************************************************/
 
 	int getExtraSpecialistYield(YieldTypes eIndex) const;																				// Exposed to Python
-	int getExtraSpecialistYield(YieldTypes eIndex, SpecialistTypes eSpecialist) const;					// Exposed to Python
+	int getExtraSpecialistClassYield(YieldTypes eIndex, SpecialistClassTypes eSpecialist) const;					// Exposed to Python
 	void updateExtraSpecialistYield(YieldTypes eYield);
 	void updateExtraSpecialistYield();
 
@@ -954,74 +954,75 @@ public:
 /**	GWSLocalSpecialist																	Milaga	**/
 /** Buildings can change give bonuses to specialists in only one city							**/
 /*************************************************************************************************/
-	int getLocalSpecialistYield(SpecialistTypes eSpecialist, YieldTypes eYield) const;
+	int getLocalSpecialistClassYield(SpecialistClassTypes eSpecialist, YieldTypes eYield) const;
 	int getLocalSpecialistYield(YieldTypes eYield) const;
-	void setLocalSpecialistYield(SpecialistTypes eSpecialist, YieldTypes eYield, int iValue);
-	void changeLocalSpecialistYield(SpecialistTypes eSpecialist, YieldTypes eYield, int iChange);
+	void setLocalSpecialistClassYield(SpecialistClassTypes eSpecialist, YieldTypes eYield, int iValue);
+	void changeLocalSpecialistClassYield(SpecialistClassTypes eSpecialist, YieldTypes eYield, int iChange);
 	void changeLocalSpecialistYield(YieldTypes eYield, int iChange);
 /*************************************************************************************************/
-	int getLocalSpecialistCommerce(SpecialistTypes eSpecialist, CommerceTypes eCommerce) const;
+	int getLocalSpecialistClassCommerce(SpecialistClassTypes eSpecialist, CommerceTypes eCommerce) const;
 	int getLocalSpecialistCommerce(CommerceTypes eCommerce) const;
-	void setLocalSpecialistCommerce(SpecialistTypes eSpecialist, CommerceTypes eCommerce, int iValue);
-	void changeLocalSpecialistCommerce(SpecialistTypes eSpecialist, CommerceTypes eCommerce, int iChange);
+	void setLocalSpecialistClassCommerce(SpecialistClassTypes eSpecialist, CommerceTypes eCommerce, int iValue);
+	void changeLocalSpecialistClassCommerce(SpecialistClassTypes eSpecialist, CommerceTypes eCommerce, int iChange);
 	void changeLocalSpecialistCommerce(CommerceTypes eCommerce, int iChange);
 /*************************************************************************************************/
-	int getLocalSpecialistHappiness(SpecialistTypes eSpecialist) const;
-	void setLocalSpecialistHappiness(SpecialistTypes eSpecialist, int iValue);
-	void changeLocalSpecialistHappiness(SpecialistTypes eSpecialist, int iChange);
+	int getLocalSpecialistClassHappiness(SpecialistClassTypes eSpecialist) const;
+	void setLocalSpecialistClassHappiness(SpecialistClassTypes eSpecialist, int iValue);
+	void changeLocalSpecialistClassHappiness(SpecialistClassTypes eSpecialist, int iChange);
 /*************************************************************************************************/
-	int getLocalSpecialistHealth(SpecialistTypes eSpecialist) const;
-	void setLocalSpecialistHealth(SpecialistTypes eSpecialist, int iValue);
-	void changeLocalSpecialistHealth(SpecialistTypes eSpecialist, int iChange);
+	int getLocalSpecialistClassHealth(SpecialistClassTypes eSpecialist) const;
+	void setLocalSpecialistClassHealth(SpecialistClassTypes eSpecialist, int iValue);
+	void changeLocalSpecialistClassHealth(SpecialistClassTypes eSpecialist, int iChange);
 	void updateSpecialistHealth();
 /*************************************************************************************************/
-	int getLocalSpecialistGPP(SpecialistTypes eSpecialist) const;
-	void setLocalSpecialistGPP(SpecialistTypes eSpecialist, int iValue);
-	void changeLocalSpecialistGPP(SpecialistTypes eSpecialist, int iChange);
+	int getLocalSpecialistClassGPP(SpecialistClassTypes eSpecialist) const;
+	void setLocalSpecialistClassGPP(SpecialistClassTypes eSpecialist, int iValue);
+	void changeLocalSpecialistClassGPP(SpecialistClassTypes eSpecialist, int iChange);
 /*************************************************************************************************/
 /**	GWSLocalSpecialist																		END	**/
 /*************************************************************************************************/
-	int getSpecialistCount(SpecialistTypes eIndex) const;								// Exposed to Python
-	void setSpecialistCount(SpecialistTypes eIndex, int iNewValue);
-	void changeSpecialistCount(SpecialistTypes eIndex, int iChange);
-	void alterSpecialistCount(SpecialistTypes eIndex, int iChange);					// Exposed to Python
+	SpecialistTypes CvCity::getSpecialistTypeFromClass(SpecialistClassTypes eIndex) const;
+	int getSpecialistClassCount(SpecialistClassTypes eIndex) const;								// Exposed to Python
+	void setSpecialistClassCount(SpecialistClassTypes eIndex, int iNewValue);
+	void changeSpecialistClassCount(SpecialistClassTypes eIndex, int iChange);
+	void alterSpecialistClassCount(SpecialistClassTypes eIndex, int iChange);					// Exposed to Python
 
-	int getMaxSpecialistCount(SpecialistTypes eIndex) const;						// Exposed to Python
-	bool isSpecialistValid(SpecialistTypes eIndex, int iExtra = 0) const;					// Exposed to Python
-	void changeMaxSpecialistCount(SpecialistTypes eIndex, int iChange);
+	int getMaxSpecialistClassCount(SpecialistClassTypes eIndex) const;						// Exposed to Python
+	bool isSpecialistClassValid(SpecialistClassTypes eIndex, int iExtra = 0) const;					// Exposed to Python
+	void changeMaxSpecialistClassCount(SpecialistClassTypes eIndex, int iChange);
 
-	bool isSpecialistBlocked(SpecialistTypes eIndex) const;
-	void setSpecialistBlocked(SpecialistTypes eIndex, bool bValue);
+	bool isSpecialistClassBlocked(SpecialistClassTypes eIndex) const;
+	void setSpecialistClassBlocked(SpecialistClassTypes eIndex, bool bValue);
 
-	int getForceSpecialistCount(SpecialistTypes eIndex) const;					// Exposed to Python
-	bool isSpecialistForced() const;																							// Exposed to Python
-	void setForceSpecialistCount(SpecialistTypes eIndex, int iNewValue);		// Exposed to Python
-	void changeForceSpecialistCount(SpecialistTypes eIndex, int iChange);		// Exposed to Python
+	int getForceSpecialistClassCount(SpecialistClassTypes eIndex) const;					// Exposed to Python
+	bool isSpecialistClassForced() const;																							// Exposed to Python
+	void setForceSpecialistClassCount(SpecialistClassTypes eIndex, int iNewValue);		// Exposed to Python
+	void changeForceSpecialistClassCount(SpecialistClassTypes eIndex, int iChange);		// Exposed to Python
 
-	int getFreeSpecialistCount(SpecialistTypes eIndex) const;											// Exposed to Python
-	void setFreeSpecialistCount(SpecialistTypes eIndex, int iNewValue);			// Exposed to Python
-	void changeFreeSpecialistCount(SpecialistTypes eIndex, int iChange);		// Exposed to Python
-	int getAddedFreeSpecialistCount(SpecialistTypes eIndex) const;		// Exposed to Python
+	int getFreeSpecialistClassCount(SpecialistClassTypes eIndex) const;											// Exposed to Python
+	void setFreeSpecialistClassCount(SpecialistClassTypes eIndex, int iNewValue);			// Exposed to Python
+	void changeFreeSpecialistClassCount(SpecialistClassTypes eIndex, int iChange);		// Exposed to Python
+	int getAddedFreeSpecialistClassCount(SpecialistClassTypes eIndex) const;		// Exposed to Python
 
-	int getImprovementFreeSpecialists(ImprovementTypes eIndex) const;											// Exposed to Python
-	void changeImprovementFreeSpecialists(ImprovementTypes eIndex, int iChange);		// Exposed to Python
+	int getImprovementFreeSpecialistClasses(ImprovementTypes eIndex) const;											// Exposed to Python
+	void changeImprovementFreeSpecialistClasses(ImprovementTypes eIndex, int iChange);		// Exposed to Python
 
 /*************************************************************************************************/
 /**	Statesmen								02/05/10											**/
 /**																								**/
 /**						Allows improvements to grant specific specialists						**/
 /*************************************************************************************************/
-	int getImprovementSpecialistCount(SpecialistTypes eIndex) const;
-	void setImprovementSpecialistCount(SpecialistTypes eIndex, int iNewValue);
-	void changeImprovementSpecialistCount(SpecialistTypes eIndex, int iChange);
+	int getImprovementSpecialistClassCount(SpecialistClassTypes eIndex) const;
+	void setImprovementSpecialistClassCount(SpecialistClassTypes eIndex, int iNewValue);
+	void changeImprovementSpecialistClassCount(SpecialistClassTypes eIndex, int iChange);
 
-	int getStateReligionSpecialistCount(SpecialistTypes eIndex) const;
-	void setStateReligionSpecialistCount(SpecialistTypes eIndex, int iNewValue);
-	void changeStateReligionSpecialistCount(SpecialistTypes eIndex, int iChange);
+	int getStateReligionSpecialistClassCount(SpecialistClassTypes eIndex) const;
+	void setStateReligionSpecialistClassCount(SpecialistClassTypes eIndex, int iNewValue);
+	void changeStateReligionSpecialistClassCount(SpecialistClassTypes eIndex, int iChange);
 
-	int getNonStateReligionSpecialistCount(SpecialistTypes eIndex) const;
-	void setNonStateReligionSpecialistCount(SpecialistTypes eIndex, int iNewValue);
-	void changeNonStateReligionSpecialistCount(SpecialistTypes eIndex, int iChange);
+	int getNonStateReligionSpecialistClassCount(SpecialistClassTypes eIndex) const;
+	void setNonStateReligionSpecialistClassCount(SpecialistClassTypes eIndex, int iNewValue);
+	void changeNonStateReligionSpecialistClassCount(SpecialistClassTypes eIndex, int iChange);
 
 /*************************************************************************************************/
 /**	Statesmen								END													**/
@@ -1198,7 +1199,7 @@ public:
 	int getResistMagic() const;
 	bool isHasBuildingClass(int iBuildingClass) const;
 	int getExtraSpecialistCommerce(CommerceTypes eIndex) const;
-	int getExtraSpecialistCommerce(CommerceTypes eIndex, SpecialistTypes eSpecialist) const;
+	int getExtraSpecialistClassCommerce(CommerceTypes eIndex, SpecialistClassTypes eSpecialist) const;
 //FfH: End Add
 /*************************************************************************************************/
 /**	New Tag Defs	(CityInfos)				07/29/08								Xienwolf	**/
@@ -1394,9 +1395,9 @@ public:
 	bool canJoinPop() const;
 
 	int getSpecialistCrime() const;
-	int getLocalSpecialistCrime(SpecialistTypes eIndex) const;
-	void setLocalSpecialistCrime(SpecialistTypes eSpecialist, int iValue);
-	void changeLocalSpecialistCrime(SpecialistTypes eSpecialist, int iChange);
+	int getLocalSpecialistClassCrime(SpecialistClassTypes eIndex) const;
+	void setLocalSpecialistClassCrime(SpecialistClassTypes eSpecialist, int iValue);
+	void changeLocalSpecialistClassCrime(SpecialistClassTypes eSpecialist, int iChange);
 
 /*************************************************************************************************/
 /** City Actions                  END                                                           **/
@@ -1419,7 +1420,7 @@ public:
 	virtual void AI_assignWorkingPlots() = 0;
 	virtual void AI_updateAssignWork() = 0;
 	virtual bool AI_avoidGrowth() = 0;
-	virtual int AI_specialistValue(SpecialistTypes eSpecialist, bool bAvoidGrowth, bool bRemove) = 0;
+	virtual int AI_specialistClassValue(SpecialistClassTypes eSpecialist, bool bAvoidGrowth, bool bRemove) = 0;
 	virtual void AI_chooseProduction() = 0;
 /*************************************************************************************************/
 /**	Xienwolf Tweak							06/18/09											**/
@@ -1887,11 +1888,11 @@ protected:
 /*************************************************************************************************/
 /**	GWSLocalSpecialist																		END	**/
 /*************************************************************************************************/
-	int* m_paiSpecialistCount;
-	int* m_paiMaxSpecialistCount;
-	bool* m_pabBlockedSpecialist;
-	int* m_paiForceSpecialistCount;
-	int* m_paiFreeSpecialistCount;
+	int* m_paiSpecialistClassCount;
+	int* m_paiMaxSpecialistClassCount;
+	bool* m_pabBlockedSpecialistClass;
+	int* m_paiForceSpecialistClassCount;
+	int* m_paiFreeSpecialistClassCount;
 /*************************************************************************************************/
 /**	Statesmen								02/05/10											**/
 /**																								**/
@@ -1970,8 +1971,8 @@ protected:
 /*************************************************************************************************/
 /**	Tyrant Trait							END			**/
 /*************************************************************************************************/
-	virtual bool AI_addBestCitizen(bool bWorkers, bool bSpecialists, int* piBestPlot = NULL, SpecialistTypes* peBestSpecialist = NULL) = 0;
-	virtual bool AI_removeWorstCitizen(SpecialistTypes eIgnoreSpecialist = NO_SPECIALIST) = 0;
+	virtual bool AI_addBestCitizen(bool bWorkers, bool bSpecialists, int* piBestPlot = NULL, SpecialistClassTypes* peBestSpecialist = NULL) = 0;
+	virtual bool AI_removeWorstCitizen(SpecialistClassTypes eIgnoreSpecialist = NO_SPECIALISTCLASS) = 0;
 };
 
 #endif

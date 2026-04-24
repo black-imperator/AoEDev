@@ -90,7 +90,7 @@ def onCityDoTurn(self, argsList):
                     pCity.getX(), pCity.getY(), True, True
                 )
 
-    if pCity.getNumBuilding(getInfoType("BUILDING_ROOT_WALL")) > 0:
+    if pCity.getNumBuilding(getInfoType("BUILDING_ROOT_WALLS")) > 0:
         iMaxDefense = pCity.getTotalDefense(False)
         walldamareregen = 3
         if pCity.getNumBuilding(getInfoType("BUILDING_THORNROOT_WALLS")) > 0:

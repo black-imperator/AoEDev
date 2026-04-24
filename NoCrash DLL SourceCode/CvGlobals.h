@@ -140,6 +140,7 @@ class CvAffinityInfo;
 class CvTechInfo;
 class CvReligionInfo;
 class CvCorporationInfo;
+class CvSpecialistClassInfo;
 class CvSpecialistInfo;
 class CvCivicOptionInfo;
 class CvCivicInfo;
@@ -788,6 +789,10 @@ public:
 	int getNumCorporationInfos();
 	std::vector<CvCorporationInfo*>& getCorporationInfo();
 	CvCorporationInfo& getCorporationInfo(CorporationTypes eCorporationNum);
+
+	int getNumSpecialistClassInfos();
+	std::vector<CvSpecialistClassInfo*>& getSpecialistClassInfo();
+	CvSpecialistClassInfo& getSpecialistClassInfo(SpecialistClassTypes eSpecialistClassNum);
 
 	int getNumSpecialistInfos();
 	std::vector<CvSpecialistInfo*>& getSpecialistInfo();
@@ -1492,6 +1497,7 @@ protected:
 	std::vector<CvForceControlInfo*> m_paForceControlInfos;
 	std::vector<CvPlayerOptionInfo*> m_paPlayerOptionInfos;
 	std::vector<CvGraphicOptionInfo*> m_paGraphicOptionInfos;
+	std::vector<CvSpecialistClassInfo*> m_paSpecialistClassInfo;
 	std::vector<CvSpecialistInfo*> m_paSpecialistInfo;
 	std::vector<CvEmphasizeInfo*> m_paEmphasizeInfo;
 	std::vector<CvUpkeepInfo*> m_paUpkeepInfo;

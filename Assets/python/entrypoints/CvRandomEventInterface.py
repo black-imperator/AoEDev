@@ -1481,7 +1481,7 @@ def canTriggerMerchantKeep(argsList):
 	iCity = argsList[2]
 	pPlayer = gc.getPlayer(ePlayer)
 	pCity = pPlayer.getCity(iCity)
-	if pCity.getFreeSpecialistCount(getInfoType('SPECIALIST_GREAT_MERCHANT')) == 0:
+	if pCity.getFreeSpecialistClassCount(getInfoType('SPECIALISTCLASS_GREAT_MERCHANT')) == 0:
 		return False
 	return True
 
@@ -2146,7 +2146,7 @@ def canTriggerSageKeep(argsList):
 	iCity = argsList[2]
 	pPlayer = gc.getPlayer(ePlayer)
 	pCity = pPlayer.getCity(iCity)
-	if pCity.getFreeSpecialistCount(getInfoType('SPECIALIST_GREAT_SCIENTIST')) == 0:
+	if pCity.getFreeSpecialistClassCount(getInfoType('SPECIALISTCLASS_GREAT_SCIENTIST')) == 0:
 		return False
 	return True
 
@@ -4817,7 +4817,8 @@ def getHelpClassicLiteratureDone3(argsList):
 	kTriggeredData = argsList[1]
 	pPlayer = gc.getPlayer(kTriggeredData.ePlayer)
 
-	iSpecialist = CvUtil.findInfoTypeNum(gc.getSpecialistInfo, gc.getNumSpecialistInfos(), 'SPECIALIST_SCIENTIST', )
+	iSpecialist = -1
+	iSpecialistClass = CvUtil.findInfoTypeNum(gc.getSpecialistClassInfo, gc.getNumSpecialistClassInfos(), 'SPECIALISTCLASS_SCIENTIST', )
 	iGreatLibrary = CvUtil.findInfoTypeNum(gc.getBuildingInfo, gc.getNumBuildingInfos(), 'BUILDING_GREAT_LIBRARY')
 
 	szCityName = u""
@@ -4825,10 +4826,14 @@ def getHelpClassicLiteratureDone3(argsList):
 	while(loopCity):
 		if (loopCity.isHasBuilding(iGreatLibrary)):
 			szCityName = loopCity.getNameKey()
+			iSpecialist = loopCity.getSpecialistTypeFromClass(iSpecialistClass)
 			break
 
 		(loopCity, iter) = pPlayer.nextCity(iter, False)
-
+	
+	if iSpecialist == -1:
+		return ""
+	
 	szHelp = localText.getText("TXT_KEY_EVENT_FREE_SPECIALIST", (1, gc.getSpecialistInfo(iSpecialist).getTextKey(), szCityName))
 
 	return szHelp
@@ -4854,13 +4859,13 @@ def applyClassicLiteratureDone3(argsList):
 	kTriggeredData = argsList[1]
 	pPlayer = gc.getPlayer(kTriggeredData.ePlayer)
 
-	iSpecialist = CvUtil.findInfoTypeNum(gc.getSpecialistInfo, gc.getNumSpecialistInfos(), 'SPECIALIST_SCIENTIST', )
+	iSpecialistClass = CvUtil.findInfoTypeNum(gc.getSpecialistClassInfo, gc.getNumSpecialistClassInfos(), 'SPECIALISTCLASS_SCIENTIST', )
 	iGreatLibrary = CvUtil.findInfoTypeNum(gc.getBuildingInfo, gc.getNumBuildingInfos(), 'BUILDING_GREAT_LIBRARY')
 
 	(loopCity, iter) = pPlayer.firstCity(False)
 	while(loopCity):
 		if (loopCity.isHasBuilding(iGreatLibrary)):
-			loopCity.changeFreeSpecialistCount(iSpecialist, 1)
+			loopCity.changeFreeSpecialistClassCount(iSpecialistClass, 1)
 			return
 
 		(loopCity, iter) = pPlayer.nextCity(iter, False)
@@ -7879,7 +7884,7 @@ def doMerchantKeep1(argsList):
 	kTriggeredData = argsList[1]
 	pPlayer        = gc.getPlayer(kTriggeredData.ePlayer)
 	pCity          = pPlayer.getCity(kTriggeredData.iCityId)
-	pCity.changeFreeSpecialistCount(getInfoType('SPECIALIST_GREAT_MERCHANT'), -1)
+	pCity.changeFreeSpecialistClassCount(getInfoType('SPECIALISTCLASS_GREAT_MERCHANT'), -1)
 
 def helpMerchantKeep1(argsList):
 	iEvent         = argsList[0]
@@ -7904,7 +7909,7 @@ def doSageKeep1(argsList):
 	kTriggeredData = argsList[1]
 	pPlayer        = gc.getPlayer(kTriggeredData.ePlayer)
 	pCity          = pPlayer.getCity(kTriggeredData.iCityId)
-	pCity.changeFreeSpecialistCount(getInfoType('SPECIALIST_GREAT_SCIENTIST'), -1)
+	pCity.changeFreeSpecialistClassCount(getInfoType('SPECIALISTCLASS_GREAT_SCIENTIST'), -1)
 
 def helpSageKeep1(argsList):
 	iEvent         = argsList[0]

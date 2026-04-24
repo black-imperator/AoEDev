@@ -991,32 +991,32 @@
 	<ElementType name="SpecialBuildingNotRequireds" content="eltOnly">
 		<element type="SpecialBuildingNotRequired" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
-	<ElementType name="SpecialistType" content="textOnly"/>
-	<ElementType name="iSpecialistCount" content="textOnly" dt:type="int"/>
-	<ElementType name="SpecialistCount" content="eltOnly">
-		<element type="SpecialistType"/>
-		<element type="iSpecialistCount"/>
+	<ElementType name="SpecialistClass" content="textOnly"/>
+	<ElementType name="iSpecialistClassCount" content="textOnly" dt:type="int"/>
+	<ElementType name="SpecialistClassCount" content="eltOnly">
+		<element type="SpecialistClass"/>
+		<element type="iSpecialistClassCount"/>
 	</ElementType>
-	<ElementType name="SpecialistCounts" content="eltOnly">
-		<element type="SpecialistCount" minOccurs="0" maxOccurs="*"/>
+	<ElementType name="SpecialistClassCounts" content="eltOnly">
+		<element type="SpecialistClassCount" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
-	<ElementType name="FreeSpecialistCount" content="eltOnly">
-		<element type="SpecialistType"/>
-		<element type="iSpecialistCount"/>
+	<ElementType name="FreeSpecialistClassCount" content="eltOnly">
+		<element type="SpecialistClass"/>
+		<element type="iSpecialistClassCount"/>
 	</ElementType>
-	<ElementType name="FreeSpecialistCounts" content="eltOnly">
-		<element type="FreeSpecialistCount" minOccurs="0" maxOccurs="*"/>
+	<ElementType name="FreeSpecialistClassCounts" content="eltOnly">
+		<element type="FreeSpecialistClassCount" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="bValid" content="textOnly" dt:type="boolean"/>
 	<ElementType name="SpecialistValid" content="eltOnly">
-		<element type="SpecialistType"/>
+		<element type="SpecialistClass"/>
 		<element type="bValid"/>
 	</ElementType>
 	<ElementType name="SpecialistValids" content="eltOnly">
 		<element type="SpecialistValid" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="SpecialistUnlimited" content="eltOnly">
-		<element type="SpecialistType"/>
+		<element type="SpecialistClass"/>
 		<element type="bValid"/>
 	</ElementType>
 	<ElementType name="SpecialistUnlimiteds" content="eltOnly">
@@ -1048,20 +1048,20 @@
 		<element type="FeatureHappinessChange" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="iCrimeChange" content="textOnly" dt:type="int"/>
-	<ElementType name="SpecialistCrimeChange" content="eltOnly">
-		<element type="SpecialistType"/>
+	<ElementType name="SpecialistClassCrimeChange" content="eltOnly">
+		<element type="SpecialistClass"/>
 		<element type="iCrimeChange"/>
 	</ElementType>
-	<ElementType name="SpecialistCrimeChanges" content="eltOnly">
-		<element type="SpecialistCrimeChange" minOccurs="0" maxOccurs="*"/>
+	<ElementType name="SpecialistClassCrimeChanges" content="eltOnly">
+		<element type="SpecialistClassCrimeChange" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="iGPPChange" content="textOnly" dt:type="int"/>
-	<ElementType name="SpecialistGPPChange" content="eltOnly">
-		<element type="SpecialistType"/>
+	<ElementType name="SpecialistClassGPPChange" content="eltOnly">
+		<element type="SpecialistClass"/>
 		<element type="iGPPChange"/>
 	</ElementType>
-	<ElementType name="SpecialistGPPChanges" content="eltOnly">
-		<element type="SpecialistGPPChange" minOccurs="0" maxOccurs="*"/>
+	<ElementType name="SpecialistClassGPPChanges" content="eltOnly">
+		<element type="SpecialistClassGPPChange" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="ImprovementType" content="textOnly"/>
 	<ElementType name="ImprovementYields" content="eltOnly">
@@ -1074,25 +1074,25 @@
 	<ElementType name="ImprovementYieldChanges" content="eltOnly">
 		<element type="ImprovementYieldChange" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
-	<ElementType name="SpecialistYields" content="eltOnly">
+	<ElementType name="SpecialistClassYields" content="eltOnly">
 		<element type="iYield" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
-	<ElementType name="SpecialistYieldChange" content="eltOnly">
-		<element type="SpecialistType"/>
-		<element type="SpecialistYields"/>
+	<ElementType name="SpecialistClassYieldChange" content="eltOnly">
+		<element type="SpecialistClass"/>
+		<element type="SpecialistClassYields"/>
 	</ElementType>
-	<ElementType name="SpecialistYieldChanges" content="eltOnly">
-		<element type="SpecialistYieldChange" minOccurs="0" maxOccurs="*"/>
+	<ElementType name="SpecialistClassYieldChanges" content="eltOnly">
+		<element type="SpecialistClassYieldChange" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
-	<ElementType name="SpecialistCommerces" content="eltOnly">
+	<ElementType name="SpecialistClassCommerces" content="eltOnly">
 		<element type="iCommerce" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
-	<ElementType name="SpecialistCommerceChange" content="eltOnly">
-		<element type="SpecialistType"/>
-		<element type="SpecialistCommerces"/>
+	<ElementType name="SpecialistClassCommerceChange" content="eltOnly">
+		<element type="SpecialistClass"/>
+		<element type="SpecialistClassCommerces"/>
 	</ElementType>
-	<ElementType name="SpecialistCommerceChanges" content="eltOnly">
-		<element type="SpecialistCommerceChange" minOccurs="0" maxOccurs="*"/>
+	<ElementType name="SpecialistClassCommerceChanges" content="eltOnly">
+		<element type="SpecialistClassCommerceChange" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="WeLoveTheKing" content="textOnly"/>
 	<ElementType name="bCompassionHigh" content="textOnly" dt:type="boolean"/>
@@ -1193,16 +1193,16 @@
 		<element type="Hurrys"/>
 		<element type="SpecialBuildingNotRequireds"/>
 		<element type="SpecialistUnlimiteds"/>
-		<element type="SpecialistCounts"/>
-		<element type="FreeSpecialistCounts"/>
+		<element type="SpecialistClassCounts"/>
+		<element type="FreeSpecialistClassCounts"/>
 		<element type="BuildingHappinessChanges"/>
 		<element type="BuildingHealthChanges"/>
 		<element type="FeatureHappinessChanges"/>
-		<element type="SpecialistCrimeChanges"/>
-		<element type="SpecialistGPPChanges"/>
+		<element type="SpecialistClassCrimeChanges"/>
+		<element type="SpecialistClassGPPChanges"/>
 		<element type="ImprovementYieldChanges"/>
-		<element type="SpecialistYieldChanges"/>
-		<element type="SpecialistCommerceChanges"/>
+		<element type="SpecialistClassYieldChanges"/>
+		<element type="SpecialistClassCommerceChanges"/>
 		<element type="WeLoveTheKing"/>
 		<element type="bCompassionHigh"/>
 		<element type="bCompassionLow"/>

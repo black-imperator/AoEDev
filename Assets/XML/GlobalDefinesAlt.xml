@@ -766,4 +766,9 @@
 		<!-- 1 to enable, 0 to disable. Two alerts still trigger, but third (cultist summoning) will not -->
 		<iDefineIntVal>1</iDefineIntVal>
 	</Define>
+	<Define>
+		<DefineName>DEFAULT_SPECIALISTCLASS</DefineName>
+		<!-- Used instead of DEFAULT_SPECIALIST -->
+		<DefineTextVal>SPECIALISTCLASS_CITIZEN</DefineTextVal>
+	</Define>
 </Civ4Defines>

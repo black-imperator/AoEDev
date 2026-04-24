@@ -2642,6 +2642,12 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 			</Units>
+			<Specialists>
+				<Specialist>
+					<SpecialistClassType>SPECIALISTCLASS_STATESMAN</SpecialistClassType>
+					<SpecialistType>SPECIALIST_STATESMAN</SpecialistType>
+				</Specialist>
+			</Specialists>
 			<Improvements>
 				<Improvement>
 					<ImprovementClassType>IMPROVEMENTCLASS_HOMESTEAD</ImprovementClassType>
@@ -3224,6 +3230,12 @@
 					<UnitType>UNIT_ZABULUS</UnitType>
 				</Unit>
 			</Units>
+			<Specialists>
+				<Specialist>
+					<SpecialistClassType>SPECIALISTCLASS_HEALER</SpecialistClassType>
+					<SpecialistType>NONE</SpecialistType>
+				</Specialist>
+			</Specialists>
 			<FreeUnitClasses>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
@@ -6808,6 +6820,12 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 			</Units>
+			<Specialists>
+				<Specialist>
+					<SpecialistClassType>SPECIALISTCLASS_HEALER</SpecialistClassType>
+					<SpecialistType>NONE</SpecialistType>
+				</Specialist>
+			</Specialists>
 			<Improvements>
 				<Improvement>
 					<ImprovementClassType>IMPROVEMENTCLASS_MINE</ImprovementClassType>

@@ -8,6 +8,7 @@
 	<SpecialistInfos>
 		<SpecialistInfo> <!-- Citizen -->
 			<Type>SPECIALIST_CITIZEN</Type>
+			<SpecialistClass>SPECIALISTCLASS_CITIZEN</SpecialistClass>
 			<Description>TXT_KEY_SPECIALIST_CITIZEN</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_SPECIALISTS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_SPECIALIST_CITIZEN_STRATEGY</Strategy>
@@ -22,6 +23,7 @@
 		</SpecialistInfo>
 		<SpecialistInfo> <!-- Priest -->
 			<Type>SPECIALIST_PRIEST</Type>
+			<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
 			<Description>TXT_KEY_SPECIALIST_PRIEST</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_SPECIALISTS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_SPECIALIST_PRIEST_STRATEGY</Strategy>
@@ -44,6 +46,7 @@
 		</SpecialistInfo>
 		<SpecialistInfo> <!-- Bard -->
 			<Type>SPECIALIST_ARTIST</Type>
+			<SpecialistClass>SPECIALISTCLASS_ARTIST</SpecialistClass>
 			<Description>TXT_KEY_SPECIALIST_ARTIST</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_SPECIALISTS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_SPECIALIST_ARTIST_STRATEGY</Strategy>
@@ -60,6 +63,7 @@
 		</SpecialistInfo>
 		<SpecialistInfo> <!-- Elder -->
 			<Type>SPECIALIST_SCIENTIST</Type>
+			<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
 			<Description>TXT_KEY_SPECIALIST_SCIENTIST</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_SPECIALISTS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_SPECIALIST_SCIENTIST_STRATEGY</Strategy>
@@ -76,6 +80,7 @@
 		</SpecialistInfo>
 		<SpecialistInfo> <!-- Merchant -->
 			<Type>SPECIALIST_MERCHANT</Type>
+			<SpecialistClass>SPECIALISTCLASS_MERCHANT</SpecialistClass>
 			<Description>TXT_KEY_SPECIALIST_MERCHANT</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_SPECIALISTS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_SPECIALIST_MERCHANT_STRATEGY</Strategy>
@@ -92,6 +97,7 @@
 		</SpecialistInfo>
 		<SpecialistInfo> <!-- Craftsman -->
 			<Type>SPECIALIST_ENGINEER</Type>
+			<SpecialistClass>SPECIALISTCLASS_ENGINEER</SpecialistClass>
 			<Description>TXT_KEY_SPECIALIST_CRAFTSMAN</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_SPECIALISTS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_SPECIALIST_ENGINEER_STRATEGY</Strategy>
@@ -108,6 +114,7 @@
 		</SpecialistInfo>
 		<SpecialistInfo> <!-- Healer -->
 			<Type>SPECIALIST_HEALER</Type>
+			<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
 			<Description>TXT_KEY_SPECIALIST_HEALER</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_SPECIALISTS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_SPECIALIST_HEALER_STRATEGY</Strategy>
@@ -124,6 +131,7 @@
 		</SpecialistInfo>
 		<SpecialistInfo> <!-- Statesman -->
 			<Type>SPECIALIST_STATESMAN</Type>
+			<SpecialistClass>SPECIALISTCLASS_STATESMAN</SpecialistClass>
 			<Description>TXT_KEY_SPECIALIST_STATESMAN</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_SPECIALISTS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_SPECIALIST_STATESMAN_STRATEGY</Strategy>
@@ -139,6 +147,7 @@
 		</SpecialistInfo>
 		<SpecialistInfo> <!-- Great Prophet -->
 			<Type>SPECIALIST_GREAT_PRIEST</Type>
+			<SpecialistClass>SPECIALISTCLASS_GREAT_PRIEST</SpecialistClass>
 			<Description>TXT_KEY_SPECIALIST_GREAT_PRIEST</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_GREAT_PEOPLE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_SPECIALIST_GREAT_PRIEST_STRATEGY</Strategy>
@@ -160,6 +169,7 @@
 		</SpecialistInfo>
 		<SpecialistInfo> <!-- Great Artist -->
 			<Type>SPECIALIST_GREAT_ARTIST</Type>
+			<SpecialistClass>SPECIALISTCLASS_GREAT_ARTIST</SpecialistClass>
 			<Description>TXT_KEY_SPECIALIST_GREAT_ARTIST_RIFE</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_GREAT_PEOPLE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_SPECIALIST_GREAT_ARTIST_STRATEGY</Strategy>
@@ -175,6 +185,7 @@
 		</SpecialistInfo>
 		<SpecialistInfo> <!-- Great Sage -->
 			<Type>SPECIALIST_GREAT_SCIENTIST</Type>
+			<SpecialistClass>SPECIALISTCLASS_GREAT_SCIENTIST</SpecialistClass>
 			<Description>TXT_KEY_SPECIALIST_GREAT_SCIENTIST</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_GREAT_PEOPLE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_SPECIALIST_GREAT_SCIENTIST_STRATEGY</Strategy>
@@ -195,6 +206,7 @@
 		</SpecialistInfo>
 		<SpecialistInfo> <!-- Great Guildmaster -->
 			<Type>SPECIALIST_GREAT_MERCHANT</Type>
+			<SpecialistClass>SPECIALISTCLASS_GREAT_MERCHANT</SpecialistClass>
 			<Description>TXT_KEY_SPECIALIST_GREAT_GUILDMASTER</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_GREAT_PEOPLE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_SPECIALIST_GREAT_MERCHANT_STRATEGY</Strategy>
@@ -215,6 +227,7 @@
 		</SpecialistInfo>
 		<SpecialistInfo> <!-- Great Engineer -->
 			<Type>SPECIALIST_GREAT_ENGINEER</Type>
+			<SpecialistClass>SPECIALISTCLASS_GREAT_ENGINEER</SpecialistClass>
 			<Description>TXT_KEY_SPECIALIST_GREAT_ENGINEER</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_GREAT_PEOPLE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_SPECIALIST_GREAT_ENGINEER_STRATEGY</Strategy>
@@ -235,6 +248,7 @@
 		</SpecialistInfo>
 		<SpecialistInfo> <!-- Great Physician -->
 			<Type>SPECIALIST_GREAT_HEALER</Type>
+			<SpecialistClass>SPECIALISTCLASS_GREAT_HEALER</SpecialistClass>
 			<Description>TXT_KEY_SPECIALIST_GREAT_PHYSICIAN</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_SPECIALISTS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_SPECIALIST_GREAT_HEALER_STRATEGY</Strategy>
@@ -250,6 +264,7 @@
 		</SpecialistInfo>
 		<SpecialistInfo> <!-- Slave -->
 			<Type>SPECIALIST_SLAVE</Type>
+			<SpecialistClass>SPECIALISTCLASS_SLAVE</SpecialistClass>
 			<Description>TXT_KEY_SPECIALIST_SLAVE</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_SPECIALISTS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_SPECIALIST_CITIZEN_STRATEGY</Strategy>

@@ -166,16 +166,16 @@
 			<TraitClass>TRAITCLASS_EMERGENT</TraitClass>
 			<FreeSpecialistsStateReligion>
 				<FreeSpecialistStateReligion>
-					<SpecialistType>SPECIALIST_HEALER</SpecialistType>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
 					<bFreeSpecialistStateReligion>1</bFreeSpecialistStateReligion>
 				</FreeSpecialistStateReligion>
 			</FreeSpecialistsStateReligion>			
-			<SpecialistHappinessChanges>
-				<SpecialistHappinessChange>
-					<SpecialistType>SPECIALIST_HEALER</SpecialistType>
+			<SpecialistClassHappinessChanges>
+				<SpecialistClassHappinessChange>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
 					<iHappiness>1</iHappiness>
-				</SpecialistHappinessChange>
-			</SpecialistHappinessChanges>			
+				</SpecialistClassHappinessChange>
+			</SpecialistClassHappinessChanges>
 			<UnitClassPlayerInstancesChanges>
 				<UnitClassPlayerInstancesChange>
 					<UnitClassType>UNITCLASS_ADJUNCT</UnitClassType>

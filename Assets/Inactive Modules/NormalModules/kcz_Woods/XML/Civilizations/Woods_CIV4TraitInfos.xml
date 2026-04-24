@@ -8,19 +8,17 @@
 	<TraitInfos>
 		<TraitInfo>		<!-- Fury of Nature -->
 			<Type>TRAIT_FURY_OF_NATURE</Type>
-			<bGraphicalOnly>1</bGraphicalOnly>
 			<NextTrait>TRAIT_FURY_OF_NATURE2</NextTrait>
 			<iLevel>1</iLevel>
 			<TraitClass>TRAITCLASS_EMERGENT</TraitClass>
-			<Description>TXT_KEY_TRAIT_FURY_OF_NATURE</Description>
+			<!--<Description>TXT_KEY_TRAIT_FURY_OF_NATURE</Description>-->
+			<Description>Test trait</Description>
 			<Civilopedia>TXT_KEY_TRAIT_FURY_OF_NATURE_PEDIA</Civilopedia>
-			<Help>TXT_KEY_TRAIT_FURY_OF_NATURE_HELP</Help>
-
+			<!--<Help>TXT_KEY_TRAIT_FURY_OF_NATURE_HELP</Help>-->
 			<ShortDescription>TXT_KEY_TRAIT_FURY_OF_NATURE_SHORT</ShortDescription>
 		</TraitInfo>
 		<TraitInfo>		<!-- Fury of Nature 2 -->
 			<Type>TRAIT_FURY_OF_NATURE2</Type>
-			<bGraphicalOnly>1</bGraphicalOnly>
 			<ParentTrait>TRAIT_FURY_OF_NATURE</ParentTrait>
 			<NextTrait>TRAIT_FURY_OF_NATURE3</NextTrait>
 			<Civilopedia>TXT_KEY_TRAIT_FURY_OF_NATURE_PEDIA</Civilopedia>
@@ -60,7 +58,6 @@
 		</TraitInfo>
 		<TraitInfo>		<!-- Fury of Nature 3 -->
 			<Type>TRAIT_FURY_OF_NATURE3</Type>
-			<bGraphicalOnly>1</bGraphicalOnly>
 			<ParentTrait>TRAIT_FURY_OF_NATURE2</ParentTrait>
 			<Civilopedia>TXT_KEY_TRAIT_FURY_OF_NATURE_PEDIA</Civilopedia>
 			<Help>TXT_KEY_TRAIT_FURY_OF_NATURE3_HELP</Help>

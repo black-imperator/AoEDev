@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Civilization Infos -->
+<Civ4UnitArtStyleTypeInfos xmlns="x-schema:CIV4CivilizationsSchema.xml">
+	<UnitArtStyleTypeInfos>
+		<UnitArtStyleTypeInfo>
+			<Type>UNIT_ARTSTYLE_CALABIM</Type>
+			<StyleUnits>
+				<StyleUnit>
+					<UnitType>UNIT_WORKBOAT</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_WORKBOAT_CALABIM</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_WORKBOAT_CALABIM</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_WORKBOAT_CALABIM</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>				
+				<StyleUnit>
+					<UnitType>UNIT_TRADESHIP</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_MERCHANTMAN_CALABIM</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_MERCHANTMAN_CALABIM</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_MERCHANTMAN_CALABIM</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>				
+				<StyleUnit>
+					<UnitType>UNIT_ARCANE_BARGE</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_ARCANE_BARGE_CALABIM</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_ARCANE_BARGE_CALABIM</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_ARCANE_BARGE_CALABIM</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+					
+				<StyleUnit>
+					<UnitType>UNIT_CARRACK</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_CARRACK_CALABIM</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_CARRACK_CALABIM</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_CARRACK_CALABIM</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+			
+				<StyleUnit>
+					<UnitType>UNIT_FRIGATE</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_FRIGATE_CALABIM</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_FRIGATE_CALABIM</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_FRIGATE_CALABIM</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				
+				<StyleUnit>
+					<UnitType>UNIT_TRIREME</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_TRIREME_CALABIM</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_TRIREME_CALABIM</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_TRIREME_CALABIM</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				
+				<StyleUnit>
+					<UnitType>UNIT_GALLEON</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_GALLEON_CALABIM</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_GALLEON_CALABIM</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_GALLEON_CALABIM</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>		
+			
+				<StyleUnit>
+					<UnitType>UNIT_MAN_O_WAR</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_MAN_O_WAR_CALABIM</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_MAN_O_WAR_CALABIM</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_MAN_O_WAR_CALABIM</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>	
+				
+				<StyleUnit>
+					<UnitType>UNIT_CARAVEL</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_CARAVEL_CALABIM</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_CARAVEL_CALABIM</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_CARAVEL_CALABIM</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>			
+			
+				<StyleUnit>
+					<UnitType>UNIT_GALLEY</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_GALLEY_CALABIM</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_GALLEY_CALABIM</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_GALLEY_CALABIM</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				
+				<StyleUnit>
+					<UnitType>UNIT_QUEEN_OF_THE_LINE</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_QUEEN_OF_THE_LINE_CALABIM</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_QUEEN_OF_THE_LINE_CALABIM</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_QUEEN_OF_THE_LINE_CALABIM</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				
+			</StyleUnits>
+		</UnitArtStyleTypeInfo>
+	</UnitArtStyleTypeInfos>
+</Civ4UnitArtStyleTypeInfos>

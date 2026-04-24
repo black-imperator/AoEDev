@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Civilization Infos -->
+<Civ4UnitArtStyleTypeInfos xmlns="x-schema:CIV4CivilizationsSchema.xml">
+	<UnitArtStyleTypeInfos>
+			<UnitArtStyleTypeInfo>
+				<Type>UNIT_ARTSTYLE_KHAZAD</Type>	
+				<StyleUnits>
+					<StyleUnit>
+						<UnitType>UNIT_FRIGATE</UnitType>
+						<UnitMeshGroup>
+							<EarlyArtDefineTag>ART_DEF_UNIT_FRIGATE_KHAZAD</EarlyArtDefineTag>
+							<LateArtDefineTag>ART_DEF_UNIT_FRIGATE_KHAZAD</LateArtDefineTag>
+							<MiddleArtDefineTag>ART_DEF_UNIT_FRIGATE_KHAZAD</MiddleArtDefineTag>
+						</UnitMeshGroup>
+					</StyleUnit>
+					<StyleUnit>
+						<UnitType>UNIT_TRIREME</UnitType>
+						<UnitMeshGroup>
+							<EarlyArtDefineTag>ART_DEF_UNIT_TRIREME_KHAZAD</EarlyArtDefineTag>
+							<LateArtDefineTag>ART_DEF_UNIT_TRIREME_KHAZAD</LateArtDefineTag>
+							<MiddleArtDefineTag>ART_DEF_UNIT_TRIREME_KHAZAD</MiddleArtDefineTag>
+						</UnitMeshGroup>
+					</StyleUnit>
+					<StyleUnit>
+						<UnitType>UNIT_GALLEY</UnitType>
+						<UnitMeshGroup>
+							<EarlyArtDefineTag>ART_DEF_UNIT_GALLEY_KHAZAD</EarlyArtDefineTag>
+							<LateArtDefineTag>ART_DEF_UNIT_GALLEY_KHAZAD</LateArtDefineTag>
+							<MiddleArtDefineTag>ART_DEF_UNIT_GALLEY_KHAZAD</MiddleArtDefineTag>
+						</UnitMeshGroup>
+					</StyleUnit>
+					<StyleUnit>
+						<UnitType>UNIT_GALLEON</UnitType>
+						<UnitMeshGroup>
+							<EarlyArtDefineTag>ART_DEF_UNIT_GALLEON_KHAZAD</EarlyArtDefineTag>
+							<LateArtDefineTag>ART_DEF_UNIT_GALLEON_KHAZAD</LateArtDefineTag>
+							<MiddleArtDefineTag>ART_DEF_UNIT_GALLEON_KHAZAD</MiddleArtDefineTag>
+						</UnitMeshGroup>
+					</StyleUnit>
+				</StyleUnits>
+			</UnitArtStyleTypeInfo>
+		</UnitArtStyleTypeInfos>
+</Civ4UnitArtStyleTypeInfos>

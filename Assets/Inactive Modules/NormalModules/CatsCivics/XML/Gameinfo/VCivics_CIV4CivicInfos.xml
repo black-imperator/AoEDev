@@ -177,12 +177,12 @@
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<iGreatGeneralRateModifier>25</iGreatGeneralRateModifier>
 			<iNumCitiesMaintenanceModifier>-25</iNumCitiesMaintenanceModifier>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_STATESMAN</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_STATESMAN</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<TradeCommerceModifiers>
 				<iYield>25</iYield>
 				<iYield>0</iYield>
@@ -213,12 +213,12 @@
 				<iCommerce>-15</iCommerce>
 				<iCommerce>0</iCommerce>
 			</CommerceModifiers>
-			<SpecialistCrimeChanges>
-				<SpecialistCrimeChange>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+			<SpecialistClassCrimeChanges>
+				<SpecialistClassCrimeChange>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
 					<iCrimeChange>-4</iCrimeChange>
-				</SpecialistCrimeChange>
-			</SpecialistCrimeChanges>
+				</SpecialistClassCrimeChange>
+			</SpecialistClassCrimeChanges>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_HIGH_PRIEST</WeLoveTheKing>
 			<bForceOverwrite>1</bForceOverwrite>
 		</CivicInfo>
@@ -236,12 +236,12 @@
 			<iLargestCityHappiness>-1</iLargestCityHappiness>
 			<iGreatPeopleRateModifier>-25</iGreatPeopleRateModifier>
 			<iGreatGeneralRateModifier>-90</iGreatGeneralRateModifier>
-			<SpecialistCrimeChanges>
-				<SpecialistCrimeChange>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+			<SpecialistClassCrimeChanges>
+				<SpecialistClassCrimeChange>
+					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
 					<iCrimeChange>-2</iCrimeChange>
-				</SpecialistCrimeChange>
-			</SpecialistCrimeChanges>
+				</SpecialistClassCrimeChange>
+			</SpecialistClassCrimeChanges>
 			<CommerceModifiers>
 				<iCommerce>-15</iCommerce>
 				<iCommerce>15</iCommerce>
@@ -270,32 +270,32 @@
 			<iLargestCityHappiness>-1</iLargestCityHappiness>
 			<iGreatPeopleRateModifier>-25</iGreatPeopleRateModifier>
 			<iGreatGeneralRateModifier>-90</iGreatGeneralRateModifier>
-			<SpecialistCrimeChanges>
-				<SpecialistCrimeChange>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+			<SpecialistClassCrimeChanges>
+				<SpecialistClassCrimeChange>
+					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
 					<iCrimeChange>1</iCrimeChange>
-				</SpecialistCrimeChange>
-				<SpecialistCrimeChange>
-					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+				</SpecialistClassCrimeChange>
+				<SpecialistClassCrimeChange>
+					<SpecialistClass>SPECIALISTCLASS_MERCHANT</SpecialistClass>
 					<iCrimeChange>1</iCrimeChange>
-				</SpecialistCrimeChange>
-				<SpecialistCrimeChange>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+				</SpecialistClassCrimeChange>
+				<SpecialistClassCrimeChange>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
 					<iCrimeChange>1</iCrimeChange>
-				</SpecialistCrimeChange>
-				<SpecialistCrimeChange>
-					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+				</SpecialistClassCrimeChange>
+				<SpecialistClassCrimeChange>
+					<SpecialistClass>SPECIALISTCLASS_ARTIST</SpecialistClass>
 					<iCrimeChange>1</iCrimeChange>
-				</SpecialistCrimeChange>
-				<SpecialistCrimeChange>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+				</SpecialistClassCrimeChange>
+				<SpecialistClassCrimeChange>
+					<SpecialistClass>SPECIALISTCLASS_ENGINEER</SpecialistClass>
 					<iCrimeChange>1</iCrimeChange>
-				</SpecialistCrimeChange>
-				<SpecialistCrimeChange>
-					<SpecialistType>SPECIALIST_HEALER</SpecialistType>
+				</SpecialistClassCrimeChange>
+				<SpecialistClassCrimeChange>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
 					<iCrimeChange>1</iCrimeChange>
-				</SpecialistCrimeChange>
-			</SpecialistCrimeChanges>
+				</SpecialistClassCrimeChange>
+			</SpecialistClassCrimeChanges>
 			<CommerceModifiers>
 				<iCommerce>45</iCommerce>
 				<iCommerce>-15</iCommerce>
@@ -333,32 +333,32 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<iLargestCityHappiness>3</iLargestCityHappiness>
-			<SpecialistCrimeChanges>
-				<SpecialistCrimeChange>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+			<SpecialistClassCrimeChanges>
+				<SpecialistClassCrimeChange>
+					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
 					<iCrimeChange>-1</iCrimeChange>
-				</SpecialistCrimeChange>
-				<SpecialistCrimeChange>
-					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+				</SpecialistClassCrimeChange>
+				<SpecialistClassCrimeChange>
+					<SpecialistClass>SPECIALISTCLASS_MERCHANT</SpecialistClass>
 					<iCrimeChange>-1</iCrimeChange>
-				</SpecialistCrimeChange>
-				<SpecialistCrimeChange>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+				</SpecialistClassCrimeChange>
+				<SpecialistClassCrimeChange>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
 					<iCrimeChange>-1</iCrimeChange>
-				</SpecialistCrimeChange>
-				<SpecialistCrimeChange>
-					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+				</SpecialistClassCrimeChange>
+				<SpecialistClassCrimeChange>
+					<SpecialistClass>SPECIALISTCLASS_ARTIST</SpecialistClass>
 					<iCrimeChange>-1</iCrimeChange>
-				</SpecialistCrimeChange>
-				<SpecialistCrimeChange>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+				</SpecialistClassCrimeChange>
+				<SpecialistClassCrimeChange>
+					<SpecialistClass>SPECIALISTCLASS_ENGINEER</SpecialistClass>
 					<iCrimeChange>-1</iCrimeChange>
-				</SpecialistCrimeChange>
-				<SpecialistCrimeChange>
-					<SpecialistType>SPECIALIST_HEALER</SpecialistType>
+				</SpecialistClassCrimeChange>
+				<SpecialistClassCrimeChange>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
 					<iCrimeChange>-1</iCrimeChange>
-				</SpecialistCrimeChange>
-			</SpecialistCrimeChanges>
+				</SpecialistClassCrimeChange>
+			</SpecialistClassCrimeChanges>
 			<iGreatPeopleRateModifier>50</iGreatPeopleRateModifier>
 			<iAlignmentModifier>25</iAlignmentModifier>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_PRIME_MINISTER</WeLoveTheKing>
@@ -404,12 +404,12 @@
 					</ImprovementYields>
 				</ImprovementYieldChange>
 			</ImprovementYieldChanges>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_ARTIST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<BuildingHappinessChanges>
 				<BuildingHappinessChange>
 					<BuildingType>BUILDINGCLASS_MONUMENT</BuildingType>
@@ -462,24 +462,24 @@
 				<iCommerce>1</iCommerce>
 				<iCommerce>1</iCommerce>
 			</CommerceChanges>
-			<SpecialistCommerceChanges>
-				<SpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_HEALER</SpecialistType>
-					<SpecialistCommerces>
+			<SpecialistClassCommerceChanges>
+				<SpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
+					<SpecialistClassCommerces>
 						<iCommerce>1</iCommerce>
 						<iCommerce>1</iCommerce>
 						<iCommerce>1</iCommerce>
-					</SpecialistCommerces>
-				</SpecialistCommerceChange>
-				<SpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_GREAT_HEALER</SpecialistType>
-					<SpecialistCommerces>
+					</SpecialistClassCommerces>
+				</SpecialistClassCommerceChange>
+				<SpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_GREAT_HEALER</SpecialistClass>
+					<SpecialistClassCommerces>
 						<iCommerce>1</iCommerce>
 						<iCommerce>1</iCommerce>
 						<iCommerce>1</iCommerce>
-					</SpecialistCommerces>
-				</SpecialistCommerceChange>
-			</SpecialistCommerceChanges>
+					</SpecialistClassCommerces>
+				</SpecialistClassCommerceChange>
+			</SpecialistClassCommerceChanges>
 			<bForceOverwrite>1</bForceOverwrite>
 		</CivicInfo>
 		<CivicInfo>		<!-- Seclusion (Religion) -->
@@ -492,12 +492,12 @@
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<bNoForeignTrade>1</bNoForeignTrade>
 			<iCrimePerTurn>-5</iCrimePerTurn>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_STATESMAN</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_STATESMAN</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<BuildingHappinessChanges>
 				<BuildingHappinessChange>
 					<BuildingType>BUILDINGCLASS_DUNGEON</BuildingType>
@@ -538,122 +538,122 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 			</CommerceModifiers>
-			<SpecialistCommerceChanges>
-				<SpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-					<SpecialistCommerces>
+			<SpecialistClassCommerceChanges>
+				<SpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_MERCHANT</SpecialistClass>
+					<SpecialistClassCommerces>
 						<iCommerce>2</iCommerce>
 						<iCommerce>0</iCommerce>
 						<iCommerce>1</iCommerce>
-					</SpecialistCommerces>
-				</SpecialistCommerceChange>
-				<SpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_GREAT_MERCHANT</SpecialistType>
-					<SpecialistCommerces>
+					</SpecialistClassCommerces>
+				</SpecialistClassCommerceChange>
+				<SpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_GREAT_MERCHANT</SpecialistClass>
+					<SpecialistClassCommerces>
 						<iCommerce>2</iCommerce>
 						<iCommerce>0</iCommerce>
 						<iCommerce>1</iCommerce>
-					</SpecialistCommerces>
-				</SpecialistCommerceChange>
-			</SpecialistCommerceChanges>
-			<SpecialistYieldChanges>
-				<SpecialistYieldChange>
-					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-					<SpecialistYields>
+					</SpecialistClassCommerces>
+				</SpecialistClassCommerceChange>
+			</SpecialistClassCommerceChanges>
+			<SpecialistClassYieldChanges>
+				<SpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_MERCHANT</SpecialistClass>
+					<SpecialistClassYields>
 						<iYield>-1</iYield>
 						<iYield>0</iYield>
 						<iYield>0</iYield>
-					</SpecialistYields>
-				</SpecialistYieldChange>
-				<SpecialistYieldChange>
-					<SpecialistType>SPECIALIST_GREAT_MERCHANT</SpecialistType>
-					<SpecialistYields>
+					</SpecialistClassYields>
+				</SpecialistClassYieldChange>
+				<SpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_GREAT_MERCHANT</SpecialistClass>
+					<SpecialistClassYields>
 						<iYield>-1</iYield>
 						<iYield>0</iYield>
 						<iYield>0</iYield>
-					</SpecialistYields>
-				</SpecialistYieldChange>
-				<SpecialistYieldChange>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-					<SpecialistYields>
+					</SpecialistClassYields>
+				</SpecialistClassYieldChange>
+				<SpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
+					<SpecialistClassYields>
 						<iYield>-1</iYield>
 						<iYield>0</iYield>
 						<iYield>0</iYield>
-					</SpecialistYields>
-				</SpecialistYieldChange>
-				<SpecialistYieldChange>
-					<SpecialistType>SPECIALIST_GREAT_SCIENTIST</SpecialistType>
-					<SpecialistYields>
+					</SpecialistClassYields>
+				</SpecialistClassYieldChange>
+				<SpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_GREAT_SCIENTIST</SpecialistClass>
+					<SpecialistClassYields>
 						<iYield>-1</iYield>
 						<iYield>0</iYield>
 						<iYield>0</iYield>
-					</SpecialistYields>
-				</SpecialistYieldChange>
-				<SpecialistYieldChange>
-					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
-					<SpecialistYields>
+					</SpecialistClassYields>
+				</SpecialistClassYieldChange>
+				<SpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_ARTIST</SpecialistClass>
+					<SpecialistClassYields>
 						<iYield>-1</iYield>
 						<iYield>0</iYield>
 						<iYield>0</iYield>
-					</SpecialistYields>
-				</SpecialistYieldChange>
-				<SpecialistYieldChange>
-					<SpecialistType>SPECIALIST_GREAT_ARTIST</SpecialistType>
-					<SpecialistYields>
+					</SpecialistClassYields>
+				</SpecialistClassYieldChange>
+				<SpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_GREAT_ARTIST</SpecialistClass>
+					<SpecialistClassYields>
 						<iYield>-1</iYield>
 						<iYield>0</iYield>
 						<iYield>0</iYield>
-					</SpecialistYields>
-				</SpecialistYieldChange>
-				<SpecialistYieldChange>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<SpecialistYields>
+					</SpecialistClassYields>
+				</SpecialistClassYieldChange>
+				<SpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<SpecialistClassYields>
 						<iYield>-1</iYield>
 						<iYield>0</iYield>
 						<iYield>0</iYield>
-					</SpecialistYields>
-				</SpecialistYieldChange>
-				<SpecialistYieldChange>
-					<SpecialistType>SPECIALIST_GREAT_PRIEST</SpecialistType>
-					<SpecialistYields>
+					</SpecialistClassYields>
+				</SpecialistClassYieldChange>
+				<SpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_GREAT_PRIEST</SpecialistClass>
+					<SpecialistClassYields>
 						<iYield>-1</iYield>
 						<iYield>0</iYield>
 						<iYield>0</iYield>
-					</SpecialistYields>
-				</SpecialistYieldChange>
-				<SpecialistYieldChange>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-					<SpecialistYields>
+					</SpecialistClassYields>
+				</SpecialistClassYieldChange>
+				<SpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_ENGINEER</SpecialistClass>
+					<SpecialistClassYields>
 						<iYield>-1</iYield>
 						<iYield>0</iYield>
 						<iYield>0</iYield>
-					</SpecialistYields>
-				</SpecialistYieldChange>
-				<SpecialistYieldChange>
-					<SpecialistType>SPECIALIST_GREAT_ENGINEER</SpecialistType>
-					<SpecialistYields>
+					</SpecialistClassYields>
+				</SpecialistClassYieldChange>
+				<SpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_GREAT_ENGINEER</SpecialistClass>
+					<SpecialistClassYields>
 						<iYield>-1</iYield>
 						<iYield>0</iYield>
 						<iYield>0</iYield>
-					</SpecialistYields>
-				</SpecialistYieldChange>
-				<SpecialistYieldChange>
-					<SpecialistType>SPECIALIST_HEALER</SpecialistType>
-					<SpecialistYields>
+					</SpecialistClassYields>
+				</SpecialistClassYieldChange>
+				<SpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
+					<SpecialistClassYields>
 						<iYield>-1</iYield>
 						<iYield>0</iYield>
 						<iYield>0</iYield>
-					</SpecialistYields>
-				</SpecialistYieldChange>
-				<SpecialistYieldChange>
-					<SpecialistType>SPECIALIST_GREAT_HEALER</SpecialistType>
-					<SpecialistYields>
+					</SpecialistClassYields>
+				</SpecialistClassYieldChange>
+				<SpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_GREAT_HEALER</SpecialistClass>
+					<SpecialistClassYields>
 						<iYield>-1</iYield>
 						<iYield>0</iYield>
 						<iYield>0</iYield>
-					</SpecialistYields>
-				</SpecialistYieldChange>
-			</SpecialistYieldChanges>
+					</SpecialistClassYields>
+				</SpecialistClassYieldChange>
+			</SpecialistClassYieldChanges>
 			<BuildingHappinessChanges>
 				<BuildingHappinessChange>
 					<BuildingType>BUILDINGCLASS_GAMBLING_HOUSE</BuildingType>
@@ -687,30 +687,30 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<iWarWearinessModifier>50</iWarWearinessModifier>
-			<SpecialistCommerceChanges>
-				<SpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-					<SpecialistCommerces>
+			<SpecialistClassCommerceChanges>
+				<SpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
+					<SpecialistClassCommerces>
 						<iCommerce>0</iCommerce>
 						<iCommerce>2</iCommerce>
 						<iCommerce>1</iCommerce>
-					</SpecialistCommerces>
-				</SpecialistCommerceChange>
-				<SpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_GREAT_SCIENTIST</SpecialistType>
-					<SpecialistCommerces>
+					</SpecialistClassCommerces>
+				</SpecialistClassCommerceChange>
+				<SpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_GREAT_SCIENTIST</SpecialistClass>
+					<SpecialistClassCommerces>
 						<iCommerce>0</iCommerce>
 						<iCommerce>2</iCommerce>
 						<iCommerce>1</iCommerce>
-					</SpecialistCommerces>
-				</SpecialistCommerceChange>
-			</SpecialistCommerceChanges>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+					</SpecialistClassCommerces>
+				</SpecialistClassCommerceChange>
+			</SpecialistClassCommerceChanges>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<BuildingHappinessChanges>
 				<BuildingHappinessChange>
 					<BuildingType>BUILDINGCLASS_ELDER_COUNCIL</BuildingType>
@@ -759,24 +759,24 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>100</iCommerce>
 			</CommerceModifiers>
-			<SpecialistCommerceChanges>
-				<SpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
-					<SpecialistCommerces>
+			<SpecialistClassCommerceChanges>
+				<SpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_ARTIST</SpecialistClass>
+					<SpecialistClassCommerces>
 						<iCommerce>1</iCommerce>
 						<iCommerce>0</iCommerce>
 						<iCommerce>2</iCommerce>
-					</SpecialistCommerces>
-				</SpecialistCommerceChange>
-				<SpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_GREAT_ARTIST</SpecialistType>
-					<SpecialistCommerces>
+					</SpecialistClassCommerces>
+				</SpecialistClassCommerceChange>
+				<SpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_GREAT_ARTIST</SpecialistClass>
+					<SpecialistClassCommerces>
 						<iCommerce>1</iCommerce>
 						<iCommerce>0</iCommerce>
 						<iCommerce>2</iCommerce>
-					</SpecialistCommerces>
-				</SpecialistCommerceChange>
-			</SpecialistCommerceChanges>
+					</SpecialistClassCommerces>
+				</SpecialistClassCommerceChange>
+			</SpecialistClassCommerceChanges>
 			<iAlignmentModifier>10</iAlignmentModifier>
 			<bForceOverwrite>1</bForceOverwrite>
 		</CivicInfo>
@@ -793,30 +793,30 @@
 			<bStateReligion>1</bStateReligion>
 			<iStateReligionHappiness>1</iStateReligionHappiness>
 			<iNonStateReligionHappiness>-3</iNonStateReligionHappiness>
-			<SpecialistCommerceChanges>
-				<SpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<SpecialistCommerces>
+			<SpecialistClassCommerceChanges>
+				<SpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<SpecialistClassCommerces>
 						<iCommerce>1</iCommerce>
 						<iCommerce>1</iCommerce>
 						<iCommerce>1</iCommerce>
-					</SpecialistCommerces>
-				</SpecialistCommerceChange>
-				<SpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_GREAT_PRIEST</SpecialistType>
-					<SpecialistCommerces>
+					</SpecialistClassCommerces>
+				</SpecialistClassCommerceChange>
+				<SpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_GREAT_PRIEST</SpecialistClass>
+					<SpecialistClassCommerces>
 						<iCommerce>1</iCommerce>
 						<iCommerce>1</iCommerce>
 						<iCommerce>1</iCommerce>
-					</SpecialistCommerces>
-				</SpecialistCommerceChange>
-			</SpecialistCommerceChanges>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+					</SpecialistClassCommerces>
+				</SpecialistClassCommerceChange>
+			</SpecialistClassCommerceChanges>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<iStateReligionBuildingProductionModifier>15</iStateReligionBuildingProductionModifier>
 			<BuildingHappinessChanges>
 				<BuildingHappinessChange>
@@ -894,16 +894,16 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>100</iCommerce>
 			</CommerceModifiers>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
-					<iSpecialistCount>3</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-					<iSpecialistCount>3</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_ARTIST</SpecialistClass>
+					<iSpecialistClassCount>3</iSpecialistClassCount>
+				</SpecialistClassCount>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_ENGINEER</SpecialistClass>
+					<iSpecialistClassCount>3</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<PrereqCivilization>CIVILIZATION_SCIONS</PrereqCivilization>
 			<bForceOverwrite>1</bForceOverwrite>
 		</CivicInfo>
@@ -1006,16 +1006,16 @@
 					</ImprovementYields>
 				</ImprovementYieldChange>
 			</ImprovementYieldChanges>
-			<SpecialistCommerceChanges>
-				<SpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_SLAVE</SpecialistType>
-					<SpecialistCommerces>
+			<SpecialistClassCommerceChanges>
+				<SpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_SLAVE</SpecialistClass>
+					<SpecialistClassCommerces>
 						<iCommerce>1</iCommerce>
 						<iCommerce>0</iCommerce>
 						<iCommerce>0</iCommerce>
-					</SpecialistCommerces>
-				</SpecialistCommerceChange>
-			</SpecialistCommerceChanges>
+					</SpecialistClassCommerces>
+				</SpecialistClassCommerceChange>
+			</SpecialistClassCommerceChanges>
 			<iEnslavementChance>25</iEnslavementChance>
 			<iWorkerSpeedModifier>25</iWorkerSpeedModifier>
 			<BlockAlignment>ALIGNMENT_GOOD</BlockAlignment>
@@ -1051,12 +1051,12 @@
 			<iAIWeight>50</iAIWeight>
 			<iAnarchyLength>2</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_ENGINEER</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<BuildingHappinessChanges>
 				<BuildingHappinessChange>
 					<BuildingType>BUILDINGCLASS_STONE_CIRCLE</BuildingType>
@@ -1157,24 +1157,24 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<iAIWeight>10</iAIWeight>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
-					<iSpecialistCount>2</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-					<iSpecialistCount>2</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-					<iSpecialistCount>2</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-					<iSpecialistCount>2</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_ARTIST</SpecialistClass>
+					<iSpecialistClassCount>2</iSpecialistClassCount>
+				</SpecialistClassCount>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_ENGINEER</SpecialistClass>
+					<iSpecialistClassCount>2</iSpecialistClassCount>
+				</SpecialistClassCount>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_MERCHANT</SpecialistClass>
+					<iSpecialistClassCount>2</iSpecialistClassCount>
+				</SpecialistClassCount>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
+					<iSpecialistClassCount>2</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<iLargestCityHappiness>-1</iLargestCityHappiness>
 			<!-- <iFreeSpecialist>1</iFreeSpecialist> -->
 			<bForceOverwrite>1</bForceOverwrite>
@@ -1245,26 +1245,26 @@
 			<iAIWeight>50</iAIWeight>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
-			<SpecialistCommerceChanges>
-				<SpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_CITIZEN</SpecialistType>
-					<SpecialistCommerces>
+			<SpecialistClassCommerceChanges>
+				<SpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_CITIZEN</SpecialistClass>
+					<SpecialistClassCommerces>
 						<iCommerce>1</iCommerce>
 						<iCommerce>0</iCommerce>
 						<iCommerce>0</iCommerce>
-					</SpecialistCommerces>
-				</SpecialistCommerceChange>
-			</SpecialistCommerceChanges>
-			<SpecialistYieldChanges>
-				<SpecialistYieldChange>
-					<SpecialistType>SPECIALIST_CITIZEN</SpecialistType>
-					<SpecialistYields>
+					</SpecialistClassCommerces>
+				</SpecialistClassCommerceChange>
+			</SpecialistClassCommerceChanges>
+			<SpecialistClassYieldChanges>
+				<SpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_CITIZEN</SpecialistClass>
+					<SpecialistClassYields>
 						<iYield>0</iYield>
 						<iYield>2</iYield>
 						<iYield>0</iYield>
-					</SpecialistYields>
-				</SpecialistYieldChange>
-			</SpecialistYieldChanges>
+					</SpecialistClassYields>
+				</SpecialistClassYieldChange>
+			</SpecialistClassYieldChanges>
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
 					<ImprovementType>IMPROVEMENT_WATERMILL</ImprovementType>
@@ -1545,12 +1545,12 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>50</iCommerce>
 			</ForeignTradeCommerceModifiers>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-					<iSpecialistCount>3</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_MERCHANT</SpecialistClass>
+					<iSpecialistClassCount>3</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<BuildingHappinessChanges>
 				<BuildingHappinessChange>
 					<BuildingType>BUILDINGCLASS_INN</BuildingType>

@@ -547,11 +547,11 @@
 	</ElementType>
 	<ElementType name="bFreeSpecialistStateReligion" content="textOnly" dt:type="boolean"/>
 	<ElementType name="FreeSpecialistStateReligion" content="eltOnly">
-		<element type="SpecialistType"/>
+		<element type="SpecialistClass"/>
 		<element type="bFreeSpecialistStateReligion"/>
 	</ElementType>	<ElementType name="bFreeSpecialistNonStateReligion" content="textOnly" dt:type="boolean"/>
 	<ElementType name="FreeSpecialistNonStateReligion" content="eltOnly">
-		<element type="SpecialistType"/>
+		<element type="SpecialistClass"/>
 		<element type="bFreeSpecialistNonStateReligion"/>
 	</ElementType>
 	<ElementType name="FreePromotions" content="eltOnly">
@@ -649,35 +649,35 @@
 	<ElementType name="YieldChanges" content="eltOnly">
 		<element type="iYield" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
-	<ElementType name="SpecialistType" content="textOnly"/>
-	<ElementType name="SpecialistHappinessChange" content="eltOnly">
-		<element type="SpecialistType"/>
+	<ElementType name="SpecialistClass" content="textOnly"/>
+	<ElementType name="SpecialistClassHappinessChange" content="eltOnly">
+		<element type="SpecialistClass"/>
 		<element type="iHappiness"/>
 	</ElementType>
-	<ElementType name="SpecialistHappinessChanges" content="eltOnly">
-		<element type="SpecialistHappinessChange" minOccurs="0" maxOccurs="*"/>
+	<ElementType name="SpecialistClassHappinessChanges" content="eltOnly">
+		<element type="SpecialistClassHappinessChange" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
-	<ElementType name="SpecialistHealthChange" content="eltOnly">
-		<element type="SpecialistType"/>
+	<ElementType name="SpecialistClassHealthChange" content="eltOnly">
+		<element type="SpecialistClass"/>
 		<element type="iHealth"/>
 	</ElementType>
-	<ElementType name="SpecialistHealthChanges" content="eltOnly">
-		<element type="SpecialistHealthChange" minOccurs="0" maxOccurs="*"/>
+	<ElementType name="SpecialistClassHealthChanges" content="eltOnly">
+		<element type="SpecialistClassHealthChange" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 
-	<ElementType name="SpecialistYieldChange" content="eltOnly">
-		<element type="SpecialistType"/>
+	<ElementType name="SpecialistClassYieldChange" content="eltOnly">
+		<element type="SpecialistClass"/>
 		<element type="YieldChanges"/>
 	</ElementType>
-	<ElementType name="SpecialistYieldChanges" content="eltOnly">
-		<element type="SpecialistYieldChange" minOccurs="0" maxOccurs="*"/>
+	<ElementType name="SpecialistClassYieldChanges" content="eltOnly">
+		<element type="SpecialistClassYieldChange" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
-	<ElementType name="SpecialistCommerceChange" content="eltOnly">
-		<element type="SpecialistType"/>
+	<ElementType name="SpecialistClassCommerceChange" content="eltOnly">
+		<element type="SpecialistClass"/>
 		<element type="CommerceChanges"/>
 	</ElementType>
-	<ElementType name="SpecialistCommerceChanges" content="eltOnly">
-		<element type="SpecialistCommerceChange" minOccurs="0" maxOccurs="*"/>
+	<ElementType name="SpecialistClassCommerceChanges" content="eltOnly">
+		<element type="SpecialistClassCommerceChange" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 <!-- Heretics (by Opera) -->
 	<ElementType name="bUniqueCult" content="textOnly" dt:type="boolean"/>
@@ -802,8 +802,8 @@
 		<element type="ImprovementYieldChanges"/>
 		<element type="TerrainYieldChanges"/>
 		<element type="PeakYieldChange"/>
-		<element type="SpecialistYieldChanges"/>
-		<element type="SpecialistCommerceChanges"/>
+		<element type="SpecialistClassYieldChanges"/>
+		<element type="SpecialistClassCommerceChanges"/>
 		<element type="ReligionWeightModifiers"/>
 	</ElementType>
 	<ElementType name="TraitInfos" content="eltOnly">

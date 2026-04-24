@@ -357,9 +357,9 @@ bool CvXMLLoadUtility::SetPostGlobalsGlobalDefines()
 		idx = FindInInfoClass(szVal);
 		GC.getDefinesVarSystem()->SetValue("CAPITAL_BUILDINGCLASS", idx);
 
-		SetGlobalDefine("DEFAULT_SPECIALIST", szVal);
+		SetGlobalDefine("DEFAULT_SPECIALISTCLASS", szVal);
 		idx = FindInInfoClass(szVal);
-		GC.getDefinesVarSystem()->SetValue("DEFAULT_SPECIALIST", idx);
+		GC.getDefinesVarSystem()->SetValue("DEFAULT_SPECIALISTCLASS", idx);
 
 		SetGlobalDefine("INITIAL_CITY_ROUTE_TYPE", szVal);
 		idx = FindInInfoClass(szVal);
@@ -934,7 +934,12 @@ bool CvXMLLoadUtility::LoadPreMenuGlobals()
 
 	LoadGlobalClassInfo(GC.getEraInfo(), "CIV4EraInfos", "GameInfo", "Civ4EraInfos/EraInfos/EraInfo", false);
 	LoadGlobalClassInfo(GC.getUnitClassInfo(), "CIV4UnitClassInfos", "Units", "Civ4UnitClassInfos/UnitClassInfos/UnitClassInfo", false);
+	LoadGlobalClassInfo(GC.getSpecialistClassInfo(), "CIV4SpecialistClassInfos", "GameInfo", "Civ4SpecialistClassInfos/SpecialistClassInfos/SpecialistClassInfo", false);
 	LoadGlobalClassInfo(GC.getSpecialistInfo(), "CIV4SpecialistInfos", "GameInfo", "Civ4SpecialistInfos/SpecialistInfos/SpecialistInfo", false);
+	for (int i = 0; i < GC.getNumSpecialistClassInfos(); ++i)
+	{
+		GC.getSpecialistClassInfo((SpecialistClassTypes)i).readPass3();
+	}
 	LoadGlobalClassInfo(GC.getVoteSourceInfo(), "CIV4VoteSourceInfos", "GameInfo", "Civ4VoteSourceInfos/VoteSourceInfos/VoteSourceInfo", false);
 	LoadGlobalClassInfo(GC.getTechInfo(), "CIV4TechInfos", "Technologies", "Civ4TechInfos/TechInfos/TechInfo", true, &CvDLLUtilityIFaceBase::createTechInfoCacheObject);
 
@@ -1425,10 +1430,10 @@ void CvXMLLoadUtility::SetGlobalActionInfo()
 		sprintf( szMessage, "GC.getNumUnitClassInfos() is not greater than zero in CvXMLLoadUtility::SetGlobalActionInfo \n Current XML file is: %s", GC.getCurrentXMLFile().GetCString());
 		gDLL->MessageBox(szMessage, "XML Error");
 	}
-	if(!(GC.getNumSpecialistInfos() > 0) )
+	if(!(GC.getNumSpecialistClassInfos() > 0) )
 	{
 		char	szMessage[1024];
-		sprintf( szMessage, "GC.getNumSpecialistInfos() is not greater than zero in CvXMLLoadUtility::SetGlobalActionInfo \n Current XML file is: %s", GC.getCurrentXMLFile().GetCString());
+		sprintf( szMessage, "GC.getNumSpecialistClassInfos() is not greater than zero in CvXMLLoadUtility::SetGlobalActionInfo \n Current XML file is: %s", GC.getCurrentXMLFile().GetCString());
 		gDLL->MessageBox(szMessage, "XML Error");
 	}
 	if(!(GC.getNumBuildingInfos() > 0) )
@@ -1473,7 +1478,7 @@ void CvXMLLoadUtility::SetGlobalActionInfo()
 		GC.getNumReligionInfos() +
 		GC.getNumCorporationInfos() +
 		GC.getNumUnitInfos() +
-		GC.getNumSpecialistInfos() +
+		GC.getNumSpecialistClassInfos() +
 		GC.getNumBuildingInfos() +
 		NUM_CONTROL_TYPES +
 		NUM_COMMAND_TYPES +
@@ -1548,10 +1553,10 @@ void CvXMLLoadUtility::SetGlobalActionInfo()
 		iTotalActionInfoCount++;
 	}
 
-	for (i=0;i<GC.getNumSpecialistInfos();i++)
+	for (i=0;i<GC.getNumSpecialistClassInfos();i++)
 	{
 		piIndexList[iTotalActionInfoCount] = i;
-		piPriorityList[iTotalActionInfoCount] = GC.getSpecialistInfo((SpecialistTypes)i).getOrderPriority();
+		piPriorityList[iTotalActionInfoCount] = GC.getSpecialistClassInfo((SpecialistClassTypes)i).getOrderPriority();
 		piActionInfoTypeList[iTotalActionInfoCount] = ACTIONSUBTYPE_SPECIALIST;
 		iTotalActionInfoCount++;
 	}
@@ -1656,9 +1661,9 @@ void CvXMLLoadUtility::SetGlobalActionInfo()
 		}
 		else if ((ActionSubTypes)piActionInfoTypeList[piOrderedIndex[i]] == ACTIONSUBTYPE_SPECIALIST)
 		{
-			GC.getSpecialistInfo((SpecialistTypes)piIndexList[piOrderedIndex[i]]).setMissionType(FindInInfoClass("MISSION_JOIN"));
-			GC.getSpecialistInfo((SpecialistTypes)piIndexList[piOrderedIndex[i]]).setActionInfoIndex(i);
-			GC.getSpecialistInfo((SpecialistTypes)piIndexList[piOrderedIndex[i]]).setHotKeyDescription(GC.getSpecialistInfo((SpecialistTypes)piIndexList[piOrderedIndex[i]]).getTextKeyWide(), GC.getMissionInfo((MissionTypes)(GC.getSpecialistInfo((SpecialistTypes)piIndexList[piOrderedIndex[i]]).getMissionType())).getTextKeyWide(), CreateHotKeyFromDescription(GC.getSpecialistInfo((SpecialistTypes)piIndexList[piOrderedIndex[i]]).getHotKey(), GC.getSpecialistInfo((SpecialistTypes)piIndexList[piOrderedIndex[i]]).isShiftDown(), GC.getSpecialistInfo((SpecialistTypes)piIndexList[piOrderedIndex[i]]).isAltDown(), GC.getSpecialistInfo((SpecialistTypes)piIndexList[piOrderedIndex[i]]).isCtrlDown()));
+			GC.getSpecialistClassInfo((SpecialistClassTypes)piIndexList[piOrderedIndex[i]]).setMissionType(FindInInfoClass("MISSION_JOIN"));
+			GC.getSpecialistClassInfo((SpecialistClassTypes)piIndexList[piOrderedIndex[i]]).setActionInfoIndex(i);
+			GC.getSpecialistClassInfo((SpecialistClassTypes)piIndexList[piOrderedIndex[i]]).setHotKeyDescription(GC.getSpecialistClassInfo((SpecialistClassTypes)piIndexList[piOrderedIndex[i]]).getTextKeyWide(), GC.getMissionInfo((MissionTypes)(GC.getSpecialistClassInfo((SpecialistClassTypes)piIndexList[piOrderedIndex[i]]).getMissionType())).getTextKeyWide(), CreateHotKeyFromDescription(GC.getSpecialistClassInfo((SpecialistClassTypes)piIndexList[piOrderedIndex[i]]).getHotKey(), GC.getSpecialistClassInfo((SpecialistClassTypes)piIndexList[piOrderedIndex[i]]).isShiftDown(), GC.getSpecialistClassInfo((SpecialistClassTypes)piIndexList[piOrderedIndex[i]]).isAltDown(), GC.getSpecialistClassInfo((SpecialistClassTypes)piIndexList[piOrderedIndex[i]]).isCtrlDown()));
 		}
 		else if ((ActionSubTypes)piActionInfoTypeList[piOrderedIndex[i]] == ACTIONSUBTYPE_BUILDING)
 		{

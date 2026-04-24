@@ -28,7 +28,7 @@ public:
 
 	bool AI_avoidGrowth();
 	bool AI_ignoreGrowth();
-	int AI_specialistValue(SpecialistTypes eSpecialist, bool bAvoidGrowth, bool bRemove);
+	int AI_specialistClassValue(SpecialistClassTypes eSpecialist, bool bAvoidGrowth, bool bRemove);
 
 	void AI_chooseProduction();
 
@@ -267,8 +267,8 @@ protected:
 /************************************************************************************************/
 
 	bool AI_bestSpreadUnit(bool bMissionary, bool bExecutive, int iBaseChance, UnitTypes* eBestSpreadUnit, int* iBestSpreadUnitValue);
-	bool AI_addBestCitizen(bool bWorkers, bool bSpecialists, int* piBestPlot = NULL, SpecialistTypes* peBestSpecialist = NULL);
-	bool AI_removeWorstCitizen(SpecialistTypes eIgnoreSpecialist = NO_SPECIALIST);
+	bool AI_addBestCitizen(bool bWorkers, bool bSpecialists, int* piBestPlot = NULL, SpecialistClassTypes* peBestSpecialist = NULL);
+	bool AI_removeWorstCitizen(SpecialistClassTypes eIgnoreSpecialist = NO_SPECIALISTCLASS);
 	void AI_juggleCitizens();
 
 	bool AI_potentialPlot(short* piYields);

@@ -482,7 +482,7 @@ void CyInfoPythonInterface2()
 		/**																								**/
 		/**						Allows improvements to grant specific specialists						**/
 		/*************************************************************************************************/
-		.def("getFreeSpecialist", &CvImprovementInfo::getFreeSpecialist, "int ()")
+		.def("getFreeSpecialistClass", &CvImprovementInfo::getFreeSpecialistClass, "int ()")
 		/*************************************************************************************************/
 		/**	Statesmen								END													**/
 		/*************************************************************************************************/

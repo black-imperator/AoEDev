@@ -98,7 +98,7 @@ void CyUnitPythonInterface1(python::class_<CyUnit>& x)
 
 		.def("canFound", &CyUnit::canFound, "bool (CyPlot* pPlot, bool bTestVisible)")
 		.def("canSpread", &CyUnit::canSpread, "bool (CyPlot* pPlot, int /*ReligionTypes*/ eReligion, bool bTestVisible)")
-		.def("canJoin", &CyUnit::canJoin, "bool (CyPlot* pPlot, int (SpecialistTypes) eSpecialist)")
+		.def("canJoin", &CyUnit::canJoin, "bool (CyPlot* pPlot, int (SpecialistClassTypes) eSpecialist)")
 		.def("canConstruct", &CyUnit::canConstruct, "bool (CyPlot* pPlot, int (BuildingTypes) eBuilding)")
 
 		.def("getDiscoveryTech", &CyUnit::getDiscoveryTech, "int /*TechTypes*/ ()")

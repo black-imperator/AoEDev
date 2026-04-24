@@ -310,12 +310,47 @@ protected:
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //
+//  class : CvSpecialistClassInfo
+//
+//  DESC:
+//
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+class CvSpecialistClassInfo :
+	public CvHotkeyInfo
+{
+	//---------------------------------------PUBLIC INTERFACE---------------------------------
+public:
+
+	CvSpecialistClassInfo();
+	virtual ~CvSpecialistClassInfo();
+	int getDefaultSpecialistIndex() const;				// Exposed to Python
+	void setDefaultSpecialistIndex(int i);
+	int getMissionType() const;							// Exposed to Python
+	void setMissionType(int iNewType);
+	bool isUnique() const;
+	int getDefaultSpecialistIndexVector();
+	CvString getDefaultSpecialistIndexVectorElement(int i);
+	void copyNonDefaults(CvSpecialistClassInfo* pClassInfo = NULL, CvXMLLoadUtility* pXML = NULL);
+
+	bool read(CvXMLLoadUtility* pXML);
+	bool readPass3();
+
+	//---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
+protected:
+	int m_iMissionType;
+
+	int m_iDefaultSpecialistIndex;
+	bool m_bUnique;
+};
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//
 //  class : CvSpecialistInfo
 //
 //  DESC:
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-class CvSpecialistInfo : public CvHotkeyInfo
+class CvSpecialistInfo : public CvInfoBase
 {
 //---------------------------------------PUBLIC INTERFACE---------------------------------
 public:
@@ -323,10 +358,10 @@ public:
 	CvSpecialistInfo();
 	virtual ~CvSpecialistInfo();
 
+	int getSpecialistClassType() const;
+
 	int getGreatPeopleUnitClass() const;		// Exposed to Python
 	int getGreatPeopleRateChange() const;		// Exposed to Python
-	int getMissionType() const;							// Exposed to Python
-	void setMissionType(int iNewType);
 /*************************************************************************************************/
 /** Specialists Enhancements, by Supercheese 10/9/09           Imported by Valkrionn   10/22/09  */
 /**                                                                                              */
@@ -366,10 +401,10 @@ public:
 	//---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
 
 protected:
+	int m_iSpecialistClassType;
 
 	int m_iGreatPeopleUnitClass;		// Exposed to Python
 	int m_iGreatPeopleRateChange;		// Exposed to Python
-	int m_iMissionType;
 /*************************************************************************************************/
 /** Specialists Enhancements, by Supercheese 10/9/09           Imported by Valkrionn   10/22/09  */
 /**                                                                                              */
@@ -3984,21 +4019,21 @@ public:
 	int getBuildingHappinessChanges(int i) const;				// Exposed to Python
 	int getBuildingHealthChanges(int i) const;				// Exposed to Python
 	int getFeatureHappinessChanges(int i) const;				// Exposed to Python
-	int getSpecialistCrimeChanges(int i) const;				// Exposed to Python
-	int getSpecialistGPPChanges(int i) const;				// Exposed to Python
+	int getSpecialistClassCrimeChanges(int i) const;				// Exposed to Python
+	int getSpecialistClassGPPChanges(int i) const;				// Exposed to Python
 
 	bool isHurry(int i) const;													// Exposed to Python
 	bool isSpecialBuildingNotRequired(int i) const;			// Exposed to Python
-	bool isSpecialistValid(int i) const;								// Exposed to Python
-	int getFreeSpecialistCount(int i) const;				// Exposed to Python
-	int getSpecialistCount(int i) const;				// Exposed to Python
-	bool isSpecialistUnlimited(int i) const;								// Exposed to Python
+	bool isSpecialistClassValid(int i) const;								// Exposed to Python
+	int getFreeSpecialistClassCount(int i) const;				// Exposed to Python
+	int getSpecialistClassCount(int i) const;				// Exposed to Python
+	bool isSpecialistClassUnlimited(int i) const;								// Exposed to Python
 
 	int getImprovementYieldChanges(int i, int j) const;				// Exposed to Python
-	int getSpecialistYieldChanges(int i, int j) const;				// Exposed to Python
-	int* getSpecialistYieldChangeArray(int i) const;
-	int getSpecialistCommerceChanges(int i, int j) const;				// Exposed to Python
-	int* getSpecialistCommerceChangeArray(int i) const;
+	int getSpecialistClassYieldChanges(int i, int j) const;				// Exposed to Python
+	int* getSpecialistClassYieldChangeArray(int i) const;
+	int getSpecialistClassCommerceChanges(int i, int j) const;				// Exposed to Python
+	int* getSpecialistClassCommerceChangeArray(int i) const;
 
 	void read(FDataStreamBase* stream);
 	void write(FDataStreamBase* stream);
@@ -4188,20 +4223,20 @@ protected:
 	int* m_paiBuildingHappinessChanges;
 	int* m_paiBuildingHealthChanges;
 	int* m_paiFeatureHappinessChanges;
-	int* m_paiSpecialistCrimeChanges;
-	int* m_paiSpecialistGPPChanges;
+	int* m_paiSpecialistClassCrimeChanges;
+	int* m_paiSpecialistClassGPPChanges;
 
 	bool* m_pabHurry;
 	bool* m_pabSpecialBuildingNotRequired;
-	bool* m_pabSpecialistValid;
-	bool* m_pabSpecialistUnlimited;
-	int* m_piSpecialistCount;
+	bool* m_pabSpecialistClassValid;
+	bool* m_pabSpecialistClassUnlimited;
+	int* m_piSpecialistClassCount;
 	
-	int* m_piFreeSpecialistCount;
+	int* m_piFreeSpecialistClassCount;
 
 	int** m_ppiImprovementYieldChanges;
-	int** m_ppiSpecialistYieldChanges;
-	int** m_ppiSpecialistCommerceChanges;
+	int** m_ppiSpecialistClassYieldChanges;
+	int** m_ppiSpecialistClassCommerceChanges;
 
 };
 
@@ -4643,22 +4678,22 @@ public:
 	int getPrereqTrait2() const;
 	int getRemovePromotion() const;
 
-	int getSpecialistCommerceChange(int i, int j) const;
-	int* getSpecialistCommerceChangeArray(int i) const;
+	int getSpecialistClassCommerceChange(int i, int j) const;
+	int* getSpecialistClassCommerceChangeArray(int i) const;
 //FfH: End Add
 
 /*************************************************************************************************/
 /**	GWSLocalSpecialist																	Milaga	**/
 /** Buildings can change give bonuses to specialists in only one city							**/
 /*************************************************************************************************/
-	int getLocalSpecialistCommerceChange(int iSpecialist, int iYield) const;
-	int* getLocalSpecialistCommerceChangeArray(int iSpecialist) const;
-	int getLocalSpecialistYieldChange(int iSpecialist, int iYield) const;
-	int* getLocalSpecialistYieldChangeArray(int iSpecialist) const;
-	int getLocalSpecialistHappinessChange(int iSpecialist) const;
-	int getLocalSpecialistHealthChange(int iSpecialist) const;
-	int getLocalSpecialistCrimeChange(int iSpecialist) const;
-	int getLocalSpecialistGPPChange(int iSpecialist) const;
+	int getLocalSpecialistClassCommerceChange(int iSpecialist, int iYield) const;
+	int* getLocalSpecialistClassCommerceChangeArray(int iSpecialist) const;
+	int getLocalSpecialistClassYieldChange(int iSpecialist, int iYield) const;
+	int* getLocalSpecialistClassYieldChangeArray(int iSpecialist) const;
+	int getLocalSpecialistClassHappinessChange(int iSpecialist) const;
+	int getLocalSpecialistClassHealthChange(int iSpecialist) const;
+	int getLocalSpecialistClassCrimeChange(int iSpecialist) const;
+	int getLocalSpecialistClassGPPChange(int iSpecialist) const;
 /*************************************************************************************************/
 /**	GWSLocalSpecialist																		END	**/
 /*************************************************************************************************/
@@ -4731,8 +4766,8 @@ public:
 	int* getStateReligionCommerceArray() const;
 	int getCommerceHappiness(int i) const;				// Exposed to Python
 	int getReligionChange(int i) const;				// Exposed to Python
-	int getSpecialistCount(int i) const;				// Exposed to Python
-	int getFreeSpecialistCount(int i) const;				// Exposed to Python
+	int getSpecialistClassCount(int i) const;				// Exposed to Python
+	int getFreeSpecialistClassCount(int i) const;				// Exposed to Python
 	int getBonusHealthChanges(int i) const;				// Exposed to Python
 	int getBonusHappinessChanges(int i) const;				// Exposed to Python
 	int getBonusProductionModifier(int i) const;				// Exposed to Python
@@ -4748,14 +4783,14 @@ public:
 	int getPrereqBuildingClassAtRange(int i) const;				// Exposed to Python
 	int getBuildingExclude(int i) const;				// Exposed to Python
 	int getFlavorValue(int i) const;				// Exposed to Python
-	int getImprovementFreeSpecialist(int i) const;				// Exposed to Python
+	int getImprovementFreeSpecialistClass(int i) const;				// Exposed to Python
 
 	bool isCommerceFlexible(int i) const;				// Exposed to Python
 	bool isCommerceChangeOriginalOwner(int i) const;				// Exposed to Python
 	bool isBuildingClassNeededInCity(int i) const;				// Exposed to Python
 
-	int getSpecialistYieldChange(int i, int j) const;			// Exposed to Python
-	int* getSpecialistYieldChangeArray(int i) const;
+	int getSpecialistClassYieldChange(int i, int j) const;			// Exposed to Python
+	int* getSpecialistClassYieldChangeArray(int i) const;
 
 	int getBonusYieldModifier(int i, int j) const;				// Exposed to Python
 	int* getBonusYieldModifierArray(int i) const;
@@ -5080,19 +5115,19 @@ protected:
 	int m_iRemovePromotion;
 	int m_iResistMagic;
 
-	int** m_ppaiSpecialistCommerceChange;
+	int** m_ppaiSpecialistClassCommerceChange;
 //FfH: End Add
 
 /*************************************************************************************************/
 /**	GWSLocalSpecialist																	Milaga	**/
 /** Buildings can change give bonuses to specialists in only one city							**/
 /*************************************************************************************************/
-	int **m_paaiLocalSpecialistYieldChange;
-	int **m_paaiLocalSpecialistCommerceChange;
-	int *m_paiLocalSpecialistHappinessChange;
-	int *m_paiLocalSpecialistHealthChange;
-	int* m_paiLocalSpecialistCrimeChange;
-	int *m_paiLocalSpecialistGPPChange;
+	int **m_paaiLocalSpecialistClassYieldChange;
+	int **m_paaiLocalSpecialistClassCommerceChange;
+	int *m_paiLocalSpecialistClassHappinessChange;
+	int *m_paiLocalSpecialistClassHealthChange;
+	int* m_paiLocalSpecialistClassCrimeChange;
+	int *m_paiLocalSpecialistClassGPPChange;
 /*************************************************************************************************/
 /**	GWSLocalSpecialist																		END	**/
 /*************************************************************************************************/
@@ -5149,8 +5184,8 @@ protected:
 	int* m_piStateReligionCommerce;
 	int* m_piCommerceHappiness;
 	int* m_piReligionChange;
-	int* m_piSpecialistCount;
-	int* m_piFreeSpecialistCount;
+	int* m_piSpecialistClassCount;
+	int* m_piFreeSpecialistClassCount;
 	int* m_piBonusHealthChanges;
 	int* m_piBonusHappinessChanges;
 	int* m_piBonusProductionModifier;
@@ -5174,13 +5209,13 @@ protected:
 	int* m_piPrereqBuildingClassAtRange;
 	int* m_piBuildingExclude;
 	int* m_piFlavorValue;
-	int* m_piImprovementFreeSpecialist;
+	int* m_piImprovementFreeSpecialistClass;
 
 	bool* m_pbCommerceFlexible;
 	bool* m_pbCommerceChangeOriginalOwner;
 	bool* m_pbBuildingClassNeededInCity;
 
-	int** m_ppaiSpecialistYieldChange;
+	int** m_ppaiSpecialistClassYieldChange;
 	int** m_ppaiBonusYieldModifier;
 	int** m_ppaiBonusCommerceModifier;
 
@@ -5527,6 +5562,7 @@ public:
 
 	DllExport CvString getCivilizationBuildingArtDefines(int i) const;				// Exposed to Python
 	DllExport int getCivilizationBuildings(int i) const;				// Exposed to Python
+	DllExport int getCivilizationSpecialists(int i) const;				// Exposed to Python
 	DllExport int getCivilizationImprovements(int i) const;				// Exposed to Python
 	DllExport int getCivilizationUnits(int i) const;				// Exposed to Python
 	DllExport int getCivilizationFreeUnitsClass(int i) const;				// Exposed to Python
@@ -5610,6 +5646,7 @@ protected:
 	// Arrays
 	CvString* m_piCivilizationBuildingArtDefines;
 	int* m_piCivilizationBuildings;
+	int* m_piCivilizationSpecialists;
 	int* m_piCivilizationImprovements;
 	int* m_piCivilizationUnits;
 	int* m_piCivilizationFreeUnitsClass;
@@ -6825,7 +6862,7 @@ public:
 /**																								**/
 /**						Allows improvements to grant specific specialists						**/
 /*************************************************************************************************/
-	int getFreeSpecialist() const;					// Exposed to Python
+	int getFreeSpecialistClass() const;					// Exposed to Python
 	int getWorkingCityCrime() const;					// Exposed to Python
 	/*************************************************************************************************/
 /**	Statesmen								END													**/
@@ -6948,7 +6985,7 @@ protected:
 /**																								**/
 /**						Allows improvements to grant specific specialists						**/
 /*************************************************************************************************/
-	int m_iFreeSpecialist;
+	int m_iFreeSpecialistClass;
 	int m_iWorkingCityCrime;
 /*************************************************************************************************/
 /**	Statesmen								END													**/
@@ -9370,12 +9407,12 @@ public:
 	int isFreeBonus(int i) const;				// Exposed to Python
 	int isNoBonus(int i) const;				// Exposed to Python
 
-	int isFreeSpecialistStateReligion(int i) const;				// Exposed to Python
-	int isFreeSpecialistNonStateReligion(int i) const;				// Exposed to Python
+	int isFreeSpecialistClassStateReligion(int i) const;				// Exposed to Python
+	int isFreeSpecialistClassNonStateReligion(int i) const;				// Exposed to Python
 
-	int getSpecialistHappinessChange(int i)const;
-	int getSpecialistHealthChange(int i)const;
-	int getSpecialistCrimeChange(int i)const;
+	int getSpecialistClassHappinessChange(int i)const;
+	int getSpecialistClassHealthChange(int i)const;
+	int getSpecialistClassCrimeChange(int i)const;
 	
 	int getReligiousWeightModifier(int i)const;
 
@@ -9387,11 +9424,11 @@ public:
 /*************************************************************************************************/
 /**	Miner Trait 	 	Orbis from Sanguo Mod		18/02/09	Ahwaric		**/
 /*************************************************************************************************/
-	int getSpecialistYieldChange(int i, int j) const;
-	int* getSpecialistYieldChangeArray(int i) const;
+	int getSpecialistClassYieldChange(int i, int j) const;
+	int* getSpecialistClassYieldChangeArray(int i) const;
 
-	int getSpecialistCommerceChange(int i, int j) const;
-	int* getSpecialistCommerceChangeArray(int i) const;
+	int getSpecialistClassCommerceChange(int i, int j) const;
+	int* getSpecialistClassCommerceChangeArray(int i) const;
 
 	int getPeaceCommerceModifier(int i) const;
 
@@ -9587,12 +9624,12 @@ protected:
 	bool* m_pabFreeBonus;
 	bool* m_pabNoBonus;
 
-	bool* m_pabFreeSpecialistStateReligion;
-	bool* m_pabFreeSpecialistNonStateReligion;
+	bool* m_pabFreeSpecialistClassStateReligion;
+	bool* m_pabFreeSpecialistClassNonStateReligion;
 
-	int* m_paiSpecialistHealthChange;
-	int* m_paiSpecialistHappinessChange;
-	int* m_paiSpecialistCrimeChange;
+	int* m_paiSpecialistClassHealthChange;
+	int* m_paiSpecialistClassHappinessChange;
+	int* m_paiSpecialistClassCrimeChange;
 	int* m_paiReligiousWeightModifier;
 
 	int* m_paiUnitClassPlayerInstancesChange;
@@ -9603,8 +9640,8 @@ protected:
 /*************************************************************************************************/
 /**	Miner Trait 	 	Orbis from Sanguo Mod		18/02/09	Ahwaric		**/
 /*************************************************************************************************/
-	int** m_ppaiSpecialistYieldChange;
-	int** m_ppaiSpecialistCommerceChange;
+	int** m_ppaiSpecialistClassYieldChange;
+	int** m_ppaiSpecialistClassCommerceChange;
 	int* m_paiPeaceCommerceModifier;
 	int* m_paiFeatureProductionChange;
 	int* m_paiFeatureGrowthChange;
@@ -11955,7 +11992,7 @@ public:
 	int getClearEventChance(int i) const;		// Exposed to Python
 	int getTechFlavorValue(int i) const;		// Exposed to Python
 	int getPlotExtraYield(int i) const;		// Exposed to Python
-	int getFreeSpecialistCount(int i) const;	// Exposed to Python
+	int getFreeSpecialistClassCount(int i) const;	// Exposed to Python
 	int getUnitCombatPromotion(int i) const;	// Exposed to Python
 	int getUnitClassPromotion(int i) const;	// Exposed to Python
 	const CvWString& getWorldNews(int i) const;
@@ -12131,7 +12168,7 @@ private:
 
 	int* m_piTechFlavorValue;
 	int* m_piPlotExtraYields;
-	int* m_piFreeSpecialistCount;
+	int* m_piFreeSpecialistClassCount;
 	int* m_piAdditionalEventChance;
 	int* m_piAdditionalEventTime;
 	int* m_piClearEventChance;
@@ -12314,7 +12351,7 @@ public:
 	virtual ~CvVoteSourceInfo();
 
 	int getVoteInterval() const;					// Exposed to Python
-	int getFreeSpecialist() const;					// Exposed to Python
+	int getFreeSpecialistClass() const;					// Exposed to Python
 	int getCivic() const;					// Exposed to Python
 	const CvWString getPopupText() const;
 	const CvWString getSecretaryGeneralText() const;
@@ -12342,7 +12379,7 @@ public:
 
 protected:
 	int m_iVoteInterval;
-	int m_iFreeSpecialist;
+	int m_iFreeSpecialistClass;
 	int m_iCivic;
 
 	int* m_aiReligionYields;

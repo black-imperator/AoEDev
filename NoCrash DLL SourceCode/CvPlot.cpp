@@ -7564,8 +7564,8 @@ void CvPlot::setImprovementType(ImprovementTypes eNewValue)
 	CvCity* pWorkingCity = getWorkingCity();
 	if (NULL != pWorkingCity)
 	{
-		if ((NO_IMPROVEMENT != eNewValue && pWorkingCity->getImprovementFreeSpecialists(eNewValue) > 0)	||
-			(NO_IMPROVEMENT != eOldImprovement && pWorkingCity->getImprovementFreeSpecialists(eOldImprovement) > 0))
+		if ((NO_IMPROVEMENT != eNewValue && pWorkingCity->getImprovementFreeSpecialistClasses(eNewValue) > 0)	||
+			(NO_IMPROVEMENT != eOldImprovement && pWorkingCity->getImprovementFreeSpecialistClasses(eOldImprovement) > 0))
 		{
 
 			pWorkingCity->AI_setAssignWorkDirty(true);
@@ -7575,23 +7575,23 @@ void CvPlot::setImprovementType(ImprovementTypes eNewValue)
 		// Allows improvements to grant specific specialists : Statesmen 02/05/10
 		if (getImprovementType() != NO_IMPROVEMENT)
 		{
-			if (GC.getImprovementInfo(getImprovementType()).getFreeSpecialist() != NO_SPECIALIST)
+			if (GC.getImprovementInfo(getImprovementType()).getFreeSpecialistClass() != NO_SPECIALIST)
 			{
 				if (GC.getImprovementInfo(getImprovementType()).getPrereqCivilization() == NO_CIVILIZATION || GC.getImprovementInfo(getImprovementType()).getPrereqCivilization() == GET_PLAYER(getOwnerINLINE()).getCivilizationType())
 				{
-					pWorkingCity->changeFreeSpecialistCount((SpecialistTypes)GC.getImprovementInfo(getImprovementType()).getFreeSpecialist(), 1);
-					pWorkingCity->changeImprovementSpecialistCount((SpecialistTypes)GC.getImprovementInfo(getImprovementType()).getFreeSpecialist(), 1);
+					pWorkingCity->changeFreeSpecialistClassCount((SpecialistClassTypes)GC.getImprovementInfo(getImprovementType()).getFreeSpecialistClass(), 1);
+					pWorkingCity->changeImprovementSpecialistClassCount((SpecialistClassTypes)GC.getImprovementInfo(getImprovementType()).getFreeSpecialistClass(), 1);
 				}
 			}
 		}
 		if (NO_IMPROVEMENT != eOldImprovement)
 		{
-			if (GC.getImprovementInfo(eOldImprovement).getFreeSpecialist() != NO_SPECIALIST)
+			if (GC.getImprovementInfo(eOldImprovement).getFreeSpecialistClass() != NO_SPECIALIST)
 			{
 				if (GC.getImprovementInfo(eOldImprovement).getPrereqCivilization() == NO_CIVILIZATION || GC.getImprovementInfo(eOldImprovement).getPrereqCivilization() == GET_PLAYER(getOwnerINLINE()).getCivilizationType())
 				{
-					pWorkingCity->changeFreeSpecialistCount((SpecialistTypes)GC.getImprovementInfo(eOldImprovement).getFreeSpecialist(), -1);
-					pWorkingCity->changeImprovementSpecialistCount((SpecialistTypes)GC.getImprovementInfo(eOldImprovement).getFreeSpecialist(), -1);
+					pWorkingCity->changeFreeSpecialistClassCount((SpecialistClassTypes)GC.getImprovementInfo(eOldImprovement).getFreeSpecialistClass(), -1);
+					pWorkingCity->changeImprovementSpecialistClassCount((SpecialistClassTypes)GC.getImprovementInfo(eOldImprovement).getFreeSpecialistClass(), -1);
 				}
 			}
 		}

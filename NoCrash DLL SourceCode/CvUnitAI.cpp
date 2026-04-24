@@ -16307,7 +16307,7 @@ bool CvUnitAI::AI_join(int iMaxCount)
 
 	CvCity* pLoopCity;
 	CvPlot* pBestPlot;
-	SpecialistTypes eBestSpecialist;
+	SpecialistClassTypes eBestSpecialist;
 	int iValue;
 	int iBestValue;
 	int iLoop;
@@ -16316,7 +16316,7 @@ bool CvUnitAI::AI_join(int iMaxCount)
 
 	iBestValue = 0;
 	pBestPlot = NULL;
-	eBestSpecialist = NO_SPECIALIST;
+	eBestSpecialist = NO_SPECIALISTCLASS;
 	iCount = 0;
 
 	for (pLoopCity = GET_PLAYER(getOwnerINLINE()).firstCity(&iLoop); pLoopCity != NULL; pLoopCity = GET_PLAYER(getOwnerINLINE()).nextCity(&iLoop))
@@ -16336,24 +16336,24 @@ bool CvUnitAI::AI_join(int iMaxCount)
 /* BETTER_BTS_AI_MOD                       END                                                  */
 /************************************************************************************************/
 				{
-					for (iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
+					for (iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 					{
 						bool bDoesJoin = false;
-						SpecialistTypes eSpecialist = (SpecialistTypes)iI;
+						SpecialistClassTypes eSpecialist = (SpecialistClassTypes)iI;
 						if (m_pUnitInfo->getGreatPeoples(eSpecialist))
 						{
 							bDoesJoin = true;
 						}
 						if (bDoesJoin)
 						{
-							iCount += pLoopCity->getSpecialistCount(eSpecialist);
+							iCount += pLoopCity->getSpecialistClassCount(eSpecialist);
 							if (iCount >= iMaxCount)
 							{
 								return false;
 							}
 						}
 
-						if (canJoin(pLoopCity->plot(), ((SpecialistTypes)iI)))
+						if (canJoin(pLoopCity->plot(), ((SpecialistClassTypes)iI)))
 						{
 /************************************************************************************************/
 /* BETTER_BTS_AI_MOD                      08/20/09                                jdog5000      */
@@ -16366,12 +16366,12 @@ bool CvUnitAI::AI_join(int iMaxCount)
 /* BETTER_BTS_AI_MOD                       END                                                  */
 /************************************************************************************************/
 							{
-								iValue = pLoopCity->AI_specialistValue(((SpecialistTypes)iI), pLoopCity->AI_avoidGrowth(), false);
+								iValue = pLoopCity->AI_specialistClassValue(((SpecialistClassTypes)iI), pLoopCity->AI_avoidGrowth(), false);
 								if (iValue > iBestValue)
 								{
 									iBestValue = iValue;
 									pBestPlot = getPathEndTurnPlot();
-									eBestSpecialist = ((SpecialistTypes)iI);
+									eBestSpecialist = ((SpecialistClassTypes)iI);
 								}
 							}
 						}
@@ -27834,11 +27834,11 @@ bool CvUnitAI::AI_artistCultureVictoryMove()
 	CvCity* pLoopCity;
 	CvPlot* pBestPlot;
 	CvCity* pBestCity;
-	SpecialistTypes eBestSpecialist;
+	SpecialistClassTypes eBestSpecialist;
 	int iLoop, iValue, iBestValue;
 
 	pBestPlot = NULL;
-	eBestSpecialist = NO_SPECIALIST;
+	eBestSpecialist = NO_SPECIALISTCLASS;
 
 	pBestCity = NULL;
 
@@ -27886,16 +27886,16 @@ bool CvUnitAI::AI_artistCultureVictoryMove()
 						}
 					}
 
-					for (int iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
+					for (int iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 					{
-						if (canJoin(pBestPlot, ((SpecialistTypes)iI)))
+						if (canJoin(pBestPlot, ((SpecialistClassTypes)iI)))
 						{
-							iValue = pLoopCity->AI_specialistValue(((SpecialistTypes)iI), pLoopCity->AI_avoidGrowth(), false);
+							iValue = pLoopCity->AI_specialistClassValue(((SpecialistClassTypes)iI), pLoopCity->AI_avoidGrowth(), false);
 
 							if (iValue > iBestValue)
 							{
 								iBestValue = iValue;
-								eBestSpecialist = ((SpecialistTypes)iI);
+								eBestSpecialist = ((SpecialistClassTypes)iI);
 							}
 						}
 					}

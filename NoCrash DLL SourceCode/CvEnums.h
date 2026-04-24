@@ -2023,6 +2023,11 @@ enum TechTypes						// Exposed to Python
 	NO_TECH = -1,
 };
 
+enum SpecialistClassTypes
+{
+	NO_SPECIALISTCLASS = -1,
+};
+
 enum SpecialistTypes			// Exposed to Python
 {
 	NO_SPECIALIST = -1,

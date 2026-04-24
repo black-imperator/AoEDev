@@ -462,6 +462,12 @@
 					<UnitType>UNIT_BEES</UnitType>
 				</Unit>
 			</Units>
+			<Specialists>
+				<Specialist>
+					<SpecialistClassType>SPECIALISTCLASS_CITIZEN</SpecialistClassType>
+					<SpecialistType>SPECIALIST_ANIMAL_SPIRIT</SpecialistType>
+				</Specialist>
+			</Specialists>
 			<Improvements>
 				<Improvement>
 					<ImprovementClassType>IMPROVEMENTCLASS_FISHING_BOATS</ImprovementClassType>
@@ -621,11 +627,10 @@
 					<LeaderName>LEADER_TREANT</LeaderName>
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
-
-				<!--<Leader>
+				<Leader>
 					<LeaderName>LEADER_DRYAD</LeaderName>
 					<bLeaderAvailability>1</bLeaderAvailability>
-				</Leader>-->
+				</Leader>
 			</Leaders>
 			<DerivativeCiv>NONE</DerivativeCiv>
 			<CivilizationSelectionSound>AS3D_ROME_SELECT</CivilizationSelectionSound>

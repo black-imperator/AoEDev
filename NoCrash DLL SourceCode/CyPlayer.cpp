@@ -725,18 +725,6 @@ int CyPlayer::greatPeopleThreshold(bool bMilitary)
 	return m_pPlayer ? m_pPlayer->greatPeopleThreshold(bMilitary) : -1;
 }
 
-int CyPlayer::specialistYield(int /*SpecialistTypes*/ eSpecialist, int /*YieldTypes*/ eCommerce)
-
-{
-	return m_pPlayer ? m_pPlayer->specialistYield((SpecialistTypes)eSpecialist, (YieldTypes)eCommerce) : -1;
-}
-
-int CyPlayer::specialistCommerce(int /*SpecialistTypes*/ eSpecialist, int /*CommerceTypes*/ eCommerce)
-
-{
-	return m_pPlayer ? m_pPlayer->specialistCommerce((SpecialistTypes)eSpecialist, (CommerceTypes)eCommerce) : -1;
-}
-
 CyPlot* CyPlayer::getStartingPlot()
 {
 	if (!m_pPlayer)
@@ -1638,11 +1626,6 @@ int CyPlayer::getStateReligionBuildingCommerce(CommerceTypes eIndex)
 	return m_pPlayer ? m_pPlayer->getStateReligionBuildingCommerce(eIndex) : NO_COMMERCE;
 }
 
-int CyPlayer::getSpecialistExtraCommerce(CommerceTypes eIndex)
-{
-	return m_pPlayer ? m_pPlayer->getSpecialistExtraCommerce(eIndex) : NO_COMMERCE;
-}
-
 bool CyPlayer::isCommerceFlexible(int /*CommerceTypes*/ eIndex)
 {
 	return m_pPlayer ? m_pPlayer->isCommerceFlexible((CommerceTypes)eIndex) : false;
@@ -1847,14 +1830,14 @@ int CyPlayer::getUpkeepCount(int /*UpkeepTypes*/ eIndex)
 	return m_pPlayer ? m_pPlayer->getUpkeepCount((UpkeepTypes) eIndex) : -1;
 }
 
-bool CyPlayer::isSpecialistValid(int /*SpecialistTypes*/ iIndex)
+bool CyPlayer::isSpecialistClassValid(int /*SpecialistClassTypes*/ iIndex)
 {
-	return m_pPlayer ? m_pPlayer->isSpecialistValid((SpecialistTypes)iIndex) : false;
+	return m_pPlayer ? m_pPlayer->isSpecialistClassValid((SpecialistClassTypes)iIndex) : false;
 }
 
-int CyPlayer::getSpecialistCount(int /*SpecialistTypes*/ iIndex)
+int CyPlayer::getSpecialistClassCount(int /*SpecialistClassTypes*/ iIndex)
 {
-	return m_pPlayer ? m_pPlayer->getSpecialistCount((SpecialistTypes)iIndex) : false;
+	return m_pPlayer ? m_pPlayer->getSpecialistClassCount((SpecialistClassTypes)iIndex) : false;
 }
 
 bool CyPlayer::isResearchingTech(int /*TechTypes*/ iIndex)
@@ -1914,9 +1897,9 @@ void CyPlayer::setCombatExperience(int iExperience)
 
 }
 
-int CyPlayer::getSpecialistExtraYield(int /*SpecialistTypes*/ eIndex1, int /*YieldTypes*/ eIndex2)
+int CyPlayer::getSpecialistExtraYield(int /*SpecialistClassTypes*/ eIndex1, int /*YieldTypes*/ eIndex2)
 {
-	return m_pPlayer ? m_pPlayer->getSpecialistExtraYield((SpecialistTypes) eIndex1, (YieldTypes) eIndex2) : -1;
+	return m_pPlayer ? m_pPlayer->getSpecialistClassExtraYield((SpecialistClassTypes) eIndex1, (YieldTypes) eIndex2) : -1;
 }
 
 int CyPlayer::findPathLength(int /*TechTypes*/ eTech, bool bCost)
@@ -2556,7 +2539,7 @@ void CyPlayer::updateStateNameType()
 /*************************************************************************************************/
 int CyPlayer::getSpecialistTypeExtraCommerce(int eIndex1, int eIndex2) const
 {
-	return m_pPlayer ? m_pPlayer->getSpecialistTypeExtraCommerce((SpecialistTypes)eIndex1, (CommerceTypes)eIndex2) : 0;
+	return m_pPlayer ? m_pPlayer->getSpecialistClassExtraCommerce((SpecialistClassTypes)eIndex1, (CommerceTypes)eIndex2) : 0;
 }
 /*************************************************************************************************/
 /**	Miner Trait							END			**/

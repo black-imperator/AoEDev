@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Civic Infos -->
+<Civ4CivicInfos xmlns="x-schema:Woods_CIV4GameInfoSchema.xml">
+	<CivicInfos>
+		<CivicInfo>
+			<Type>CIVIC_PACIFISM</Type>
+<!--			<SpecialistUnitCombatXPChanges>
+				<SpecialistUnitCombatXPChange>
+					<SpecialistType>SPECIALIST_HEALER</SpecialistType>
+					<UnitCombatFreeXPs>
+						<UnitCombatFreeXP>
+							<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+							<iXP>5</iXP>
+						</UnitCombatFreeXP>
+					</UnitCombatFreeXPs>
+				</SpecialistUnitCombatXPChange>
+			</SpecialistUnitCombatXPChanges>-->
+		</CivicInfo>
+	</CivicInfos>
+</Civ4CivicInfos>

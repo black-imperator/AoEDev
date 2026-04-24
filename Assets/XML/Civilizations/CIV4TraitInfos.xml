@@ -1392,82 +1392,82 @@
 			<TraitClass>TRAITCLASS_EMERGENT</TraitClass>
 			<Description>TXT_KEY_TRAIT_EGALITARIAN</Description>
 			<ShortDescription>TXT_KEY_TRAIT_EGALITARIAN_SHORT</ShortDescription>
-			<SpecialistHappinessChanges>
-				<SpecialistHappinessChange>
-					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+			<SpecialistClassHappinessChanges>
+				<SpecialistClassHappinessChange>
+					<SpecialistClass>SPECIALISTCLASS_ARTIST</SpecialistClass>
 					<iHappiness>1</iHappiness>
-				</SpecialistHappinessChange>
-				<SpecialistHappinessChange>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+				</SpecialistClassHappinessChange>
+				<SpecialistClassHappinessChange>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
 					<iHappiness>1</iHappiness>
-				</SpecialistHappinessChange>
-				<SpecialistHappinessChange>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+				</SpecialistClassHappinessChange>
+				<SpecialistClassHappinessChange>
+					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
 					<iHappiness>1</iHappiness>
-				</SpecialistHappinessChange>
-				<SpecialistHappinessChange>
-					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+				</SpecialistClassHappinessChange>
+				<SpecialistClassHappinessChange>
+					<SpecialistClass>SPECIALISTCLASS_MERCHANT</SpecialistClass>
 					<iHappiness>1</iHappiness>
-				</SpecialistHappinessChange>
-				<SpecialistHappinessChange>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+				</SpecialistClassHappinessChange>
+				<SpecialistClassHappinessChange>
+					<SpecialistClass>SPECIALISTCLASS_ENGINEER</SpecialistClass>
 					<iHappiness>1</iHappiness>
-				</SpecialistHappinessChange>
-				<SpecialistHappinessChange>
-					<SpecialistType>SPECIALIST_HEALER</SpecialistType>
+				</SpecialistClassHappinessChange>
+				<SpecialistClassHappinessChange>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
 					<iHappiness>1</iHappiness>
-				</SpecialistHappinessChange>
-			</SpecialistHappinessChanges>
-			<SpecialistCommerceChanges>
-				<SpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+				</SpecialistClassHappinessChange>
+			</SpecialistClassHappinessChanges>
+			<SpecialistClassCommerceChanges>
+				<SpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_ARTIST</SpecialistClass>
 					<CommerceChanges>
 						<iCommerce>1</iCommerce>
 						<iCommerce>0</iCommerce>
 						<iCommerce>0</iCommerce>
 					</CommerceChanges>
-				</SpecialistCommerceChange>
-				<SpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+				</SpecialistClassCommerceChange>
+				<SpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
 					<CommerceChanges>
 						<iCommerce>1</iCommerce>
 						<iCommerce>0</iCommerce>
 						<iCommerce>0</iCommerce>
 					</CommerceChanges>
-				</SpecialistCommerceChange>
-				<SpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+				</SpecialistClassCommerceChange>
+				<SpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
 					<CommerceChanges>
 						<iCommerce>1</iCommerce>
 						<iCommerce>0</iCommerce>
 						<iCommerce>0</iCommerce>
 					</CommerceChanges>
-				</SpecialistCommerceChange>
-				<SpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+				</SpecialistClassCommerceChange>
+				<SpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_MERCHANT</SpecialistClass>
 					<CommerceChanges>
 						<iCommerce>1</iCommerce>
 						<iCommerce>0</iCommerce>
 						<iCommerce>0</iCommerce>
 					</CommerceChanges>
-				</SpecialistCommerceChange>
-				<SpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+				</SpecialistClassCommerceChange>
+				<SpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_ENGINEER</SpecialistClass>
 					<CommerceChanges>
 						<iCommerce>1</iCommerce>
 						<iCommerce>0</iCommerce>
 						<iCommerce>0</iCommerce>
 					</CommerceChanges>
-				</SpecialistCommerceChange>
-				<SpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_HEALER</SpecialistType>
+				</SpecialistClassCommerceChange>
+				<SpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
 					<CommerceChanges>
 						<iCommerce>1</iCommerce>
 						<iCommerce>0</iCommerce>
 						<iCommerce>0</iCommerce>
 					</CommerceChanges>
-				</SpecialistCommerceChange>
-			</SpecialistCommerceChanges>
+				</SpecialistClassCommerceChange>
+			</SpecialistClassCommerceChanges>
 			<CommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
@@ -2351,12 +2351,12 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
-			<FreeSpecialistsStateReligion>
-				<FreeSpecialistStateReligion>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<bFreeSpecialistStateReligion>1</bFreeSpecialistStateReligion>
-				</FreeSpecialistStateReligion>
-			</FreeSpecialistsStateReligion>
+			<FreeSpecialistClassesStateReligion>
+				<FreeSpecialistClassStateReligion>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<bFreeSpecialistClassStateReligion>1</bFreeSpecialistClassStateReligion>
+				</FreeSpecialistClassStateReligion>
+			</FreeSpecialistClassesStateReligion>
 			<FreePromotionUnitCombats>
 				<FreePromotionUnitCombat>
 					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
@@ -2383,18 +2383,18 @@
 			<iLevel>3</iLevel>
 			<Civilopedia>TXT_KEY_TRAIT_THEOCRATIC_PEDIA</Civilopedia>
 			<iMinRequiredPoints>1500</iMinRequiredPoints>
-			<FreeSpecialistsStateReligion>
-				<FreeSpecialistStateReligion>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<bFreeSpecialistStateReligion>1</bFreeSpecialistStateReligion>
-				</FreeSpecialistStateReligion>
-			</FreeSpecialistsStateReligion>
-			<FreeSpecialistsNonStateReligion>
-				<FreeSpecialistNonStateReligion>
-					<SpecialistType>SPECIALIST_SLAVE</SpecialistType>
-					<bFreeSpecialistNonStateReligion>1</bFreeSpecialistNonStateReligion>
-				</FreeSpecialistNonStateReligion>
-			</FreeSpecialistsNonStateReligion>
+			<FreeSpecialistClassesStateReligion>
+				<FreeSpecialistClassStateReligion>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<bFreeSpecialistClassStateReligion>1</bFreeSpecialistClassStateReligion>
+				</FreeSpecialistClassStateReligion>
+			</FreeSpecialistClassesStateReligion>
+			<FreeSpecialistClassesNonStateReligion>
+				<FreeSpecialistClassNonStateReligion>
+					<SpecialistClass>SPECIALISTCLASS_SLAVE</SpecialistClass>
+					<bFreeSpecialistClassNonStateReligion>1</bFreeSpecialistClassNonStateReligion>
+				</FreeSpecialistClassNonStateReligion>
+			</FreeSpecialistClassesNonStateReligion>
 			<TraitClass>TRAITCLASS_EMERGENT</TraitClass>
 			<Description>TXT_KEY_TRAIT_THEOCRATIC</Description>
 			<Civilopedia>TXT_KEY_TRAIT_THEOCRATIC_PEDIA</Civilopedia>
@@ -3114,18 +3114,18 @@
 			<iLevel>3</iLevel>
 			<iMinRequiredPoints>1500</iMinRequiredPoints>
 			<TraitClass>TRAITCLASS_EMERGENT</TraitClass>
-			<FreeSpecialistsStateReligion>
-				<FreeSpecialistStateReligion>
-					<SpecialistType>SPECIALIST_HEALER</SpecialistType>
-					<bFreeSpecialistStateReligion>1</bFreeSpecialistStateReligion>
-				</FreeSpecialistStateReligion>
-			</FreeSpecialistsStateReligion>
-			<SpecialistHappinessChanges>
-				<SpecialistHappinessChange>
-					<SpecialistType>SPECIALIST_HEALER</SpecialistType>
+			<FreeSpecialistClassesStateReligion>
+				<FreeSpecialistClassStateReligion>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
+					<bFreeSpecialistClassStateReligion>1</bFreeSpecialistClassStateReligion>
+				</FreeSpecialistClassStateReligion>
+			</FreeSpecialistClassesStateReligion>
+			<SpecialistClassHappinessChanges>
+				<SpecialistClassHappinessChange>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
 					<iHappiness>1</iHappiness>
-				</SpecialistHappinessChange>
-			</SpecialistHappinessChanges>
+				</SpecialistClassHappinessChange>
+			</SpecialistClassHappinessChanges>
 			<UnitClassPlayerInstancesChanges>
 				<UnitClassPlayerInstancesChange>
 					<UnitClassType>UNITCLASS_SHADOW</UnitClassType>

@@ -272,10 +272,10 @@
 	<ElementType name="CorporationSpreads" content="eltOnly">
 		<element type="CorporationSpread" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
-	<ElementType name="GreatPeopleType" content="textOnly"/>
+	<ElementType name="GreatPeopleClass" content="textOnly"/>
 	<ElementType name="bGreatPeople" content="textOnly" dt:type="boolean"/>
 	<ElementType name="GreatPeople" content="eltOnly">
-		<element type="GreatPeopleType"/>
+		<element type="GreatPeopleClass"/>
 		<element type="bGreatPeople"/>
 	</ElementType>
 	<ElementType name="GreatPeoples" content="eltOnly">

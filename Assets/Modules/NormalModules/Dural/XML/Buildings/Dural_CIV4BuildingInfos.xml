@@ -66,12 +66,12 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>2</iCommerce>
 			</ObsoleteSafeCommerceChanges>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_ARTIST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<ConstructSound>AS2D_BUILD_OBELISK</ConstructSound>
 			<BonusProductionModifiers>
 				<BonusProductionModifier>
@@ -111,20 +111,20 @@
 				<iCommerce>25</iCommerce>
 				<iCommerce>10</iCommerce>
 			</CommerceModifiers>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_HEALER</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_ARTIST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<ConstructSound>AS2D_BUILD_LIBRARY</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -158,20 +158,20 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>1</iCommerce>
 			</CommerceChanges>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_MERCHANT</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_ARTIST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<ConstructSound>AS2D_BUILD_MARKETPLACE</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -253,12 +253,12 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>5</iCommerce>
 			</CommerceHappinesses>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_ARTIST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<ConstructSound>AS2D_BUILD_CARNIVAL</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -296,32 +296,32 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>10</iCommerce>
 			</CommerceModifiers>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_HEALER</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_ARTIST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_ENGINEER</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_MERCHANT</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_RELIGION</FlavorType>
@@ -360,16 +360,16 @@
 				<iCommerce>5</iCommerce>
 				<iCommerce>0</iCommerce>
 			</CommerceModifiers>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_HEALER</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_SCIENCE</FlavorType>
@@ -392,16 +392,16 @@
 			<iHealth>1</iHealth>
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>10</fVisibilityPriority>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_HEALER</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_MERCHANT</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<BonusHealthChanges>
 				<BonusHealthChange>
 					<BonusType>BONUS_MUSHROOMS</BonusType>
@@ -454,12 +454,12 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>20</iCommerce>
 			</CommerceModifiers>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_ENGINEER</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<ConstructSound>AS2D_BUILD_FORGE</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -509,30 +509,30 @@
 			<iAsset>2</iAsset>
 			<iPower>1</iPower>
 			<fVisibilityPriority>1</fVisibilityPriority>
-			<LocalSpecialistYieldChanges>
-				<LocalSpecialistYieldChange>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+			<LocalSpecialistClassYieldChanges>
+				<LocalSpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
 					<YieldChanges>
 						<iYield>0</iYield>
 						<iYield>1</iYield>
 						<iYield>0</iYield>
 					</YieldChanges>
-				</LocalSpecialistYieldChange>
-				<LocalSpecialistYieldChange>
-					<SpecialistType>SPECIALIST_GREAT_SCIENTIST</SpecialistType>
+				</LocalSpecialistClassYieldChange>
+				<LocalSpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_GREAT_SCIENTIST</SpecialistClass>
 					<YieldChanges>
 						<iYield>0</iYield>
 						<iYield>2</iYield>
 						<iYield>0</iYield>
 					</YieldChanges>
-				</LocalSpecialistYieldChange>
-			</LocalSpecialistYieldChanges>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-					<iSpecialistCount>2</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+				</LocalSpecialistClassYieldChange>
+			</LocalSpecialistClassYieldChanges>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
+					<iSpecialistClassCount>2</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_SCIENCE</FlavorType>
@@ -688,30 +688,30 @@
 			<iAsset>2</iAsset>
 			<iPower>1</iPower>
 			<fVisibilityPriority>1</fVisibilityPriority>
-			<LocalSpecialistCommerceChanges>
-				<LocalSpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+			<LocalSpecialistClassCommerceChanges>
+				<LocalSpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_ENGINEER</SpecialistClass>
 					<CommerceChanges>
 						<iCommerce>0</iCommerce>
 						<iCommerce>0</iCommerce>
 						<iCommerce>1</iCommerce>
 					</CommerceChanges>
-				</LocalSpecialistCommerceChange>
-				<LocalSpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_GREAT_ENGINEER</SpecialistType>
+				</LocalSpecialistClassCommerceChange>
+				<LocalSpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_GREAT_ENGINEER</SpecialistClass>
 					<CommerceChanges>
 						<iCommerce>0</iCommerce>
 						<iCommerce>0</iCommerce>
 						<iCommerce>2</iCommerce>
 					</CommerceChanges>
-				</LocalSpecialistCommerceChange>
-			</LocalSpecialistCommerceChanges>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-					<iSpecialistCount>2</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+				</LocalSpecialistClassCommerceChange>
+			</LocalSpecialistClassCommerceChanges>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_ENGINEER</SpecialistClass>
+					<iSpecialistClassCount>2</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
@@ -893,12 +893,12 @@
 			<iAsset>2</iAsset>
 			<iPower>1</iPower>
 			<fVisibilityPriority>1</fVisibilityPriority>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_HEALER</SpecialistType>
-					<iSpecialistCount>2</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
+					<iSpecialistClassCount>2</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GROWTH</FlavorType>
@@ -941,16 +941,16 @@
 					<iHealthChange>1</iHealthChange>
 				</BonusHealthChange>
 			</BonusHealthChanges>
-			<LocalSpecialistHappinessChanges>
-				<LocalSpecialistHappinessChange>
-					<SpecialistType>SPECIALIST_HEALER</SpecialistType>
+			<LocalSpecialistClassHappinessChanges>
+				<LocalSpecialistClassHappinessChange>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
 					<iHappiness>1</iHappiness>
-				</LocalSpecialistHappinessChange>
-				<LocalSpecialistHappinessChange>
-					<SpecialistType>SPECIALIST_GREAT_HEALER</SpecialistType>
+				</LocalSpecialistClassHappinessChange>
+				<LocalSpecialistClassHappinessChange>
+					<SpecialistClass>SPECIALISTCLASS_GREAT_HEALER</SpecialistClass>
 					<iHappiness>2</iHappiness>
-				</LocalSpecialistHappinessChange>
-			</LocalSpecialistHappinessChanges>
+				</LocalSpecialistClassHappinessChange>
+			</LocalSpecialistClassHappinessChanges>
 			<BonusCommerceModifiers>
 				<BonusCommerceModifier>
 					<BonusType>BONUS_DESERT_ROSE</BonusType>
@@ -1048,36 +1048,36 @@
 			<iAsset>2</iAsset>
 			<iPower>1</iPower>
 			<fVisibilityPriority>1</fVisibilityPriority>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-					<iSpecialistCount>2</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_MERCHANT</SpecialistClass>
+					<iSpecialistClassCount>2</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GOLD</FlavorType>
 					<iFlavor>50</iFlavor>
 				</Flavor>
 			</Flavors>
-			<LocalSpecialistYieldChanges>
-				<LocalSpecialistYieldChange>
-					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+			<LocalSpecialistClassYieldChanges>
+				<LocalSpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_MERCHANT</SpecialistClass>
 					<YieldChanges>
 						<iYield>1</iYield>
 						<iYield>0</iYield>
 						<iYield>1</iYield>
 					</YieldChanges>
-				</LocalSpecialistYieldChange>
-				<LocalSpecialistYieldChange>
-					<SpecialistType>SPECIALIST_GREAT_MERCHANT</SpecialistType>
+				</LocalSpecialistClassYieldChange>
+				<LocalSpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_GREAT_MERCHANT</SpecialistClass>
 					<YieldChanges>
 						<iYield>2</iYield>
 						<iYield>0</iYield>
 						<iYield>2</iYield>
 					</YieldChanges>
-				</LocalSpecialistYieldChange>
-			</LocalSpecialistYieldChanges>
+				</LocalSpecialistClassYieldChange>
+			</LocalSpecialistClassYieldChanges>
 			<BonusHappinessChanges>
 				<BonusHappinessChange>
 					<BonusType>BONUS_MANA_MIND</BonusType>
@@ -1112,16 +1112,16 @@
 					<iHappinessChange>1</iHappinessChange>
 				</BonusHappinessChange>
 			</BonusHappinessChanges>
-			<LocalSpecialistHappinessChanges>
-				<LocalSpecialistHappinessChange>
-					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+			<LocalSpecialistClassHappinessChanges>
+				<LocalSpecialistClassHappinessChange>
+					<SpecialistClass>SPECIALISTCLASS_MERCHANT</SpecialistClass>
 					<iHappiness>-1</iHappiness>
-				</LocalSpecialistHappinessChange>
-				<LocalSpecialistHappinessChange>
-					<SpecialistType>SPECIALIST_GREAT_MERCHANT</SpecialistType>
+				</LocalSpecialistClassHappinessChange>
+				<LocalSpecialistClassHappinessChange>
+					<SpecialistClass>SPECIALISTCLASS_GREAT_MERCHANT</SpecialistClass>
 					<iHappiness>-2</iHappiness>
-				</LocalSpecialistHappinessChange>
-			</LocalSpecialistHappinessChanges>
+				</LocalSpecialistClassHappinessChange>
+			</LocalSpecialistClassHappinessChanges>
 			<TradeYieldModifiers> 
 				<iYield>5</iYield>
 				<iYield>5</iYield>
@@ -1164,12 +1164,12 @@
 					<bExclude>1</bExclude>
 				</BuildingExclude>
 			</BuildingExcludes>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
-					<iSpecialistCount>2</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_ARTIST</SpecialistClass>
+					<iSpecialistClassCount>2</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>-1</iCost>
@@ -1180,24 +1180,24 @@
 			<iAsset>2</iAsset>
 			<iPower>1</iPower>
 			<fVisibilityPriority>1</fVisibilityPriority>
-			<LocalSpecialistCommerceChanges>
-				<LocalSpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+			<LocalSpecialistClassCommerceChanges>
+				<LocalSpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_ARTIST</SpecialistClass>
 					<CommerceChanges>
 						<iCommerce>0</iCommerce>
 						<iCommerce>1</iCommerce>
 						<iCommerce>0</iCommerce>
 					</CommerceChanges>
-				</LocalSpecialistCommerceChange>
-				<LocalSpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_GREAT_ARTIST</SpecialistType>
+				</LocalSpecialistClassCommerceChange>
+				<LocalSpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_GREAT_ARTIST</SpecialistClass>
 					<CommerceChanges>
 						<iCommerce>0</iCommerce>
 						<iCommerce>2</iCommerce>
 						<iCommerce>0</iCommerce>
 					</CommerceChanges>
-				</LocalSpecialistCommerceChange>
-			</LocalSpecialistCommerceChanges>
+				</LocalSpecialistClassCommerceChange>
+			</LocalSpecialistClassCommerceChanges>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_CULTURE</FlavorType>
@@ -1328,89 +1328,89 @@
 			<ImprovementFreeSpecialists>
 				<ImprovementFreeSpecialist>
 					<ImprovementType>IMPROVEMENT_PENITENTIARY</ImprovementType>
-					<iFreeSpecialistCount>1</iFreeSpecialistCount>
+					<iFreeSpecialistClassCount>1</iFreeSpecialistClassCount>
 				</ImprovementFreeSpecialist>
 				<ImprovementFreeSpecialist>
 					<ImprovementType>IMPROVEMENT_POLAR_NEXUS</ImprovementType>
-					<iFreeSpecialistCount>1</iFreeSpecialistCount>
+					<iFreeSpecialistClassCount>1</iFreeSpecialistClassCount>
 				</ImprovementFreeSpecialist>
 				<ImprovementFreeSpecialist>
 					<ImprovementType>IMPROVEMENT_THIEVES_DEN</ImprovementType>
-					<iFreeSpecialistCount>1</iFreeSpecialistCount>
+					<iFreeSpecialistClassCount>1</iFreeSpecialistClassCount>
 				</ImprovementFreeSpecialist>
 				<ImprovementFreeSpecialist>
 					<ImprovementType>IMPROVEMENT_SACRED_HARVEST</ImprovementType>
-					<iFreeSpecialistCount>1</iFreeSpecialistCount>
+					<iFreeSpecialistClassCount>1</iFreeSpecialistClassCount>
 				</ImprovementFreeSpecialist>
 				<ImprovementFreeSpecialist>
 					<ImprovementType>IMPROVEMENT_AERON_VAULTGATE</ImprovementType>
-					<iFreeSpecialistCount>1</iFreeSpecialistCount>
+					<iFreeSpecialistClassCount>1</iFreeSpecialistClassCount>
 				</ImprovementFreeSpecialist>
 				<ImprovementFreeSpecialist>
 					<ImprovementType>IMPROVEMENT_STYGIAN_SHRINE</ImprovementType>
-					<iFreeSpecialistCount>1</iFreeSpecialistCount>
+					<iFreeSpecialistClassCount>1</iFreeSpecialistClassCount>
 				</ImprovementFreeSpecialist>
 				<ImprovementFreeSpecialist>
 					<ImprovementType>IMPROVEMENT_STYGIAN_TEMPLE</ImprovementType>
-					<iFreeSpecialistCount>1</iFreeSpecialistCount>
+					<iFreeSpecialistClassCount>1</iFreeSpecialistClassCount>
 				</ImprovementFreeSpecialist>
 				<ImprovementFreeSpecialist>
 					<ImprovementType>IMPROVEMENT_STYGIAN_CATHEDRAL</ImprovementType>
-					<iFreeSpecialistCount>1</iFreeSpecialistCount>
+					<iFreeSpecialistClassCount>1</iFreeSpecialistClassCount>
 				</ImprovementFreeSpecialist>
 				<ImprovementFreeSpecialist>
 					<ImprovementType>IMPROVEMENT_STYGIAN_GRAND_SPIRE</ImprovementType>
-					<iFreeSpecialistCount>1</iFreeSpecialistCount>
+					<iFreeSpecialistClassCount>1</iFreeSpecialistClassCount>
 				</ImprovementFreeSpecialist>
 				<ImprovementFreeSpecialist>
 					<ImprovementType>IMPROVEMENT_DWARVEN_MINE</ImprovementType>
-					<iFreeSpecialistCount>1</iFreeSpecialistCount>
+					<iFreeSpecialistClassCount>1</iFreeSpecialistClassCount>
 				</ImprovementFreeSpecialist>
 				<ImprovementFreeSpecialist>
 					<ImprovementType>IMPROVEMENT_DWARVEN_SETTLEMENT</ImprovementType>
-					<iFreeSpecialistCount>1</iFreeSpecialistCount>
+					<iFreeSpecialistClassCount>1</iFreeSpecialistClassCount>
 				</ImprovementFreeSpecialist>
 				<ImprovementFreeSpecialist>
 					<ImprovementType>IMPROVEMENT_DWARVEN_HALL</ImprovementType>
-					<iFreeSpecialistCount>1</iFreeSpecialistCount>
+					<iFreeSpecialistClassCount>1</iFreeSpecialistClassCount>
 				</ImprovementFreeSpecialist>
 				<ImprovementFreeSpecialist>
 					<ImprovementType>IMPROVEMENT_DWARVEN_FORTRESS</ImprovementType>
-					<iFreeSpecialistCount>1</iFreeSpecialistCount>
+					<iFreeSpecialistClassCount>1</iFreeSpecialistClassCount>
 				</ImprovementFreeSpecialist>
 			</ImprovementFreeSpecialists>
-			<LocalSpecialistCommerceChanges>
-				<LocalSpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_CITIZEN</SpecialistType>
+			<LocalSpecialistClassCommerceChanges>
+				<LocalSpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_CITIZEN</SpecialistClass>
 					<CommerceChanges>
 						<iCommerce>2</iCommerce>
 						<iCommerce>1</iCommerce>
 						<iCommerce>0</iCommerce>
 					</CommerceChanges>
-				</LocalSpecialistCommerceChange>
-				<LocalSpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+				</LocalSpecialistClassCommerceChange>
+				<LocalSpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
 					<CommerceChanges>
 						<iCommerce>0</iCommerce>
 						<iCommerce>2</iCommerce>
 						<iCommerce>0</iCommerce>
 					</CommerceChanges>
-				</LocalSpecialistCommerceChange>
-				<LocalSpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_GREAT_PRIEST</SpecialistType>
+				</LocalSpecialistClassCommerceChange>
+				<LocalSpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_GREAT_PRIEST</SpecialistClass>
 					<CommerceChanges>
 						<iCommerce>0</iCommerce>
 						<iCommerce>4</iCommerce>
 						<iCommerce>0</iCommerce>
 					</CommerceChanges>
-				</LocalSpecialistCommerceChange>
-			</LocalSpecialistCommerceChanges>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>2</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+				</LocalSpecialistClassCommerceChange>
+			</LocalSpecialistClassCommerceChanges>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<iSpecialistClassCount>2</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_RELIGION</FlavorType>
@@ -1615,12 +1615,12 @@
 				<iCommerce>5</iCommerce>
 				<iCommerce>10</iCommerce>
 			</CommerceModifiers>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_HEALER</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_MILITARY</FlavorType>
@@ -1691,12 +1691,12 @@
 			<bMustMaintain>1</bMustMaintain>
 			<iHurryCostModifier>50</iHurryCostModifier>
 			<iConquestProb>0</iConquestProb>
-			<FreeSpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</FreeSpecialistCounts>
+			<FreeSpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</FreeSpecialistClassCounts>
 			<iAsset>2</iAsset>
 			<iPower>4</iPower>
 			<ObsoleteSafeCommerceChanges>
@@ -1753,12 +1753,12 @@
 				<iCommerce>15</iCommerce>
 				<iCommerce>0</iCommerce>
 			</CommerceModifiers>
-			<FreeSpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</FreeSpecialistCounts>
+			<FreeSpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</FreeSpecialistClassCounts>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_MILITARY</FlavorType>

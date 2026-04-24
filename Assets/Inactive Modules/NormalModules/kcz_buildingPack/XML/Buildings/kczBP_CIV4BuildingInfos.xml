@@ -16,16 +16,16 @@
 			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
 			<PrereqCivic>CIVIC_ARISTOCRACY</PrereqCivic>
 			<iHappiness>-2</iHappiness>
-			<LocalSpecialistYieldChanges>
-				<LocalSpecialistYieldChange>
-					<SpecialistType>SPECIALIST_CITIZEN</SpecialistType>
+			<LocalSpecialistClassYieldChanges>
+				<LocalSpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_CITIZEN</SpecialistClass>
 					<YieldChanges>
 						<iYield>1</iYield>
 						<iYield>1</iYield>
 						<iYield>2</iYield>
 					</YieldChanges>
-				</LocalSpecialistYieldChange>
-			</LocalSpecialistYieldChanges>
+				</LocalSpecialistClassYieldChange>
+			</LocalSpecialistClassYieldChanges>
 			<iCrime>-3</iCrime>
 			<bMustMaintain>1</bMustMaintain>
 			<iCost>180</iCost>
@@ -53,12 +53,12 @@
 			</PrereqBuildingAtRanges>
 			<GreatPeopleUnitClass>UNITCLASS_PROPHET</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<PerPopBonuses>
 				<PerPopBonus>
 					<fHappy>0.15</fHappy>
@@ -103,40 +103,40 @@
 			<PrereqCivic>CIVIC_CITY_STATES</PrereqCivic>
 			<PrereqTech>TECH_PHILOSOPHY</PrereqTech>
 			<iMaintenanceModifier>10</iMaintenanceModifier>
-			<LocalSpecialistCommerceChanges>
-				<LocalSpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_GREAT_SCIENTIST</SpecialistType>
+			<LocalSpecialistClassCommerceChanges>
+				<LocalSpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_GREAT_SCIENTIST</SpecialistClass>
 					<CommerceChanges>
 						<iCommerce>0</iCommerce>
 						<iCommerce>1</iCommerce>
 						<iCommerce>2</iCommerce>
 					</CommerceChanges>
-				</LocalSpecialistCommerceChange>
-				<LocalSpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_GREAT_MERCHANT</SpecialistType>
+				</LocalSpecialistClassCommerceChange>
+				<LocalSpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_GREAT_MERCHANT</SpecialistClass>
 					<CommerceChanges>
 						<iCommerce>1</iCommerce>
 						<iCommerce>0</iCommerce>
 						<iCommerce>2</iCommerce>
 					</CommerceChanges>
-				</LocalSpecialistCommerceChange>
-				<LocalSpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_GREAT_ARTIST</SpecialistType>
+				</LocalSpecialistClassCommerceChange>
+				<LocalSpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_GREAT_ARTIST</SpecialistClass>
 					<CommerceChanges>
 						<iCommerce>0</iCommerce>
 						<iCommerce>0</iCommerce>
 						<iCommerce>3</iCommerce>
 					</CommerceChanges>
-				</LocalSpecialistCommerceChange>
-				<LocalSpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_CITIZEN</SpecialistType>
+				</LocalSpecialistClassCommerceChange>
+				<LocalSpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_CITIZEN</SpecialistClass>
 					<CommerceChanges>
 						<iCommerce>0</iCommerce>
 						<iCommerce>1</iCommerce>
 						<iCommerce>1</iCommerce>
 					</CommerceChanges>
-				</LocalSpecialistCommerceChange>
-			</LocalSpecialistCommerceChanges>
+				</LocalSpecialistClassCommerceChange>
+			</LocalSpecialistClassCommerceChanges>
 			<bMustMaintain>1</bMustMaintain>
 			<Flavors>
 				<Flavor>
@@ -158,26 +158,26 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>3</iCommerce>
 			</CommerceChanges>
-			<LocalSpecialistHealthChanges>
-				<LocalSpecialistHealthChange>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+			<LocalSpecialistClassHealthChanges>
+				<LocalSpecialistClassHealthChange>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
 					<iHealth>1</iHealth>
-				</LocalSpecialistHealthChange>
-				<LocalSpecialistHealthChange>
-					<SpecialistType>SPECIALIST_GREAT_PRIEST</SpecialistType>
+				</LocalSpecialistClassHealthChange>
+				<LocalSpecialistClassHealthChange>
+					<SpecialistClass>SPECIALISTCLASS_GREAT_PRIEST</SpecialistClass>
 					<iHealth>1</iHealth>
-				</LocalSpecialistHealthChange>
-			</LocalSpecialistHealthChanges>
-			<LocalSpecialistYieldChanges>
-				<LocalSpecialistYieldChange>
-					<SpecialistType>SPECIALIST_GREAT_PRIEST</SpecialistType>
+				</LocalSpecialistClassHealthChange>
+			</LocalSpecialistClassHealthChanges>
+			<LocalSpecialistClassYieldChanges>
+				<LocalSpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_GREAT_PRIEST</SpecialistClass>
 					<YieldChanges>
 						<iYield>0</iYield>
 						<iYield>1</iYield>
 						<iYield>2</iYield>
 					</YieldChanges>
-				</LocalSpecialistYieldChange>
-			</LocalSpecialistYieldChanges>
+				</LocalSpecialistClassYieldChange>
+			</LocalSpecialistClassYieldChanges>
 			<BonusHappinessChanges>
 				<BonusHappinessChange>
 					<BonusType>BONUS_INCENSE</BonusType>
@@ -225,12 +225,12 @@
 				<iCommerce>25</iCommerce>
 				<iCommerce>0</iCommerce>
 			</CommerceModifiers>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-					<iSpecialistCount>2</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
+					<iSpecialistClassCount>2</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_SCIENCE</FlavorType>
@@ -268,12 +268,12 @@
 				<PrereqTech>TECH_SANITATION</PrereqTech>
 				<PrereqTech>TECH_ENGINEERING</PrereqTech>
 			</TechTypes>
-			<LocalSpecialistHealthChanges>
-				<LocalSpecialistHealthChange>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+			<LocalSpecialistClassHealthChanges>
+				<LocalSpecialistClassHealthChange>
+					<SpecialistClass>SPECIALISTCLASS_ENGINEER</SpecialistClass>
 					<iHealth>1</iHealth>
-				</LocalSpecialistHealthChange>
-			</LocalSpecialistHealthChanges>
+				</LocalSpecialistClassHealthChange>
+			</LocalSpecialistClassHealthChanges>
 			<iHealth>1</iHealth>
 			<Flavors>
 				<Flavor>
@@ -295,30 +295,30 @@
 			<TechTypes>
 				<PrereqTech>TECH_CURRENCY</PrereqTech>
 			</TechTypes>
-			<LocalSpecialistCommerceChanges>
-				<LocalSpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+			<LocalSpecialistClassCommerceChanges>
+				<LocalSpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_MERCHANT</SpecialistClass>
 					<CommerceChanges>
 						<iCommerce>1</iCommerce>
 						<iCommerce>0</iCommerce>
 						<iCommerce>0</iCommerce>
 					</CommerceChanges>
-				</LocalSpecialistCommerceChange>
-				<LocalSpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_GREAT_MERCHANT</SpecialistType>
+				</LocalSpecialistClassCommerceChange>
+				<LocalSpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_GREAT_MERCHANT</SpecialistClass>
 					<CommerceChanges>
 						<iCommerce>1</iCommerce>
 						<iCommerce>0</iCommerce>
 						<iCommerce>0</iCommerce>
 					</CommerceChanges>
-				</LocalSpecialistCommerceChange>
-			</LocalSpecialistCommerceChanges>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+				</LocalSpecialistClassCommerceChange>
+			</LocalSpecialistClassCommerceChanges>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_MERCHANT</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GOLD</FlavorType>
@@ -340,12 +340,12 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>20</iCommerce>
 			</CommerceModifiers>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<bPrereqNoReligion>1</bPrereqNoReligion>
 			<iCost>180</iCost>
 		</BuildingInfo>-->
@@ -449,12 +449,12 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>3</iCommerce>
 			</CommerceModifiers>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<iCost>300</iCost>
 		</BuildingInfo>
 		<BuildingInfo>--><!--Gardens of -->
@@ -466,12 +466,12 @@
 				<PrereqTech>TECH_COMMUNE_WITH_NATURE</PrereqTech>
 			</TechTypes>
 			<iHealth>2</iHealth>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_HEALER</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<iCost>300</iCost>
 		</BuildingInfo>
 

@@ -410,6 +410,47 @@ void CvXMLLoadUtility::InitUnitDefaults(int **ppiDefaults)
 	}
 }
 
+//------------------------------------------------------------------------------------------------------
+//
+//  FUNCTION:   InitSpecialistDefaults(int **ppiDefaults)
+//
+//  PURPOSE :   allocate and initialize the civilization's default Specialists
+//
+//------------------------------------------------------------------------------------------------------
+void CvXMLLoadUtility::InitSpecialistDefaults(int** ppiDefaults)
+{
+	// SPEEDUP
+	PROFILE_FUNC();
+
+	int i;
+	int* piDefaults;
+
+	FAssertMsg(*ppiDefaults == NULL, "memory leak?");
+	// allocate memory based on the number of Specialisting classes
+	*ppiDefaults = new int[GC.getNumSpecialistClassInfos()];
+	// set the local pointer to the new memory
+	piDefaults = *ppiDefaults;
+
+	// loop through all the pointers and set their default values
+	for (i = 0; i < GC.getNumSpecialistClassInfos(); i++)
+	{
+		/*************************************************************************************************/
+		/**	Streamline							10/18/08									Xienwolf	**/
+		/**																								**/
+		/**			Initializes the BuildingClass to default as NONE if flagged to be Unique			**/
+		/*************************************************************************************************/
+		if (GC.getSpecialistClassInfo((SpecialistClassTypes)i).isUnique())
+		{
+			piDefaults[i] = -1;
+		}
+		else
+			/*************************************************************************************************/
+			/**	Streamline									END												**/
+			/*************************************************************************************************/
+			piDefaults[i] = GC.getSpecialistClassInfo((SpecialistClassTypes)i).getDefaultSpecialistIndex();
+	}
+}
+
 
 //------------------------------------------------------------------------------------------------------
 //
