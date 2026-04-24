@@ -41391,8 +41391,8 @@
 			<bNoXP>1</bNoXP>
 			<DamageTypeResists>
 				<DamageTypeResist>
-					<DamageType>DAMAGE_DEATH</DamageType>
-					<iResist>50</iResist>
+					<DamageType>DAMAGE_POISON</DamageType>
+					<iResist>100</iResist>
 				</DamageTypeResist>
 			</DamageTypeResists>
 			<Button>Art/Interface/Buttons/Promotions/Haunt.dds</Button>
