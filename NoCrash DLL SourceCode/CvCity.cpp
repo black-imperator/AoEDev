@@ -19524,7 +19524,7 @@ int CvCity::getBestYieldAvailable(YieldTypes eYield) const
 
 	for (int iJ = 0; iJ < GC.getNumSpecialistClassInfos(); ++iJ)
 	{
-		if (isSpecialistClassValid((SpecialistClassTypes)iJ, 1))
+		if (isSpecialistClassValid((SpecialistClassTypes)iJ, 1) && getSpecialistTypeFromClass((SpecialistClassTypes)iJ)!=NO_SPECIALIST)
 		{
 			int iYield = GC.getSpecialistInfo(getSpecialistTypeFromClass((SpecialistClassTypes)iJ)).getYieldChange(eYield);
 			if (iYield > iBestYieldAvailable)
@@ -22654,7 +22654,7 @@ int CvCity::getSpecialistCrime() const
 	for (int iSpe = 0; iSpe < GC.getNumSpecialistClassInfos(); iSpe++)
 	{
 		SpecialistTypes eSpecialist = getSpecialistTypeFromClass((SpecialistClassTypes)iSpe);
-		if(iSpe != NO_SPECIALIST)
+		if(eSpecialist != NO_SPECIALIST)
 			iCrimePerTurn += (GC.getSpecialistInfo(eSpecialist).getCrime() + getLocalSpecialistClassCrime((SpecialistClassTypes)iSpe) + GET_PLAYER(getOwner()).getSpecialistClassExtraCrime((SpecialistClassTypes)iSpe)) * getSpecialistClassCount((SpecialistClassTypes)iSpe);
 	}
 	return iCrimePerTurn;

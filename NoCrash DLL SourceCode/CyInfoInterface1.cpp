@@ -46,6 +46,9 @@ void CyInfoPythonInterface1()
 		.def("getTexture", &CvSpecialistInfo::getTexture, "string ()")
 		;
 
+	python::class_<CvSpecialistClassInfo, python::bases<CvInfoBase> >("CvSpecialistClassInfo")
+		;
+
 	python::class_<CvTechInfo, python::bases<CvInfoBase> >("CvTechInfo")
 		.def("getAdvisorType", &CvTechInfo::getAdvisorType, "int ()")
 		.def("getAIWeight", &CvTechInfo::getAIWeight, "int ()")
