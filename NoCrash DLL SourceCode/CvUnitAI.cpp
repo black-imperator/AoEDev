@@ -343,6 +343,11 @@ bool CvUnitAI::AI_update()
 	}
 	else
 	{
+		if (isMustDie())
+		{
+			finishMoves();
+			return false;
+		}
 		switch (AI_getUnitAIType())
 		{
 		case UNITAI_UNKNOWN:
@@ -2270,6 +2275,10 @@ void CvUnitAI::AI_workerMove()
 /**			Not sure why you would want to avoid plots that you have more preference for...		**/
 /*************************************************************************************************/
 	if (AI_improveBonus(25, &pBestBonusPlot, &eBestBonusBuild, &iBestBonusValue))
+	{
+		return;
+	}
+	if (isMustDie())
 	{
 		return;
 	}
@@ -5719,7 +5728,7 @@ void CvUnitAI::AI_cityDefenseMove()
 /**																								**/
 /**			The AI has a tendency to lose workers... defended workers...						**/
 /*************************************************************************************************/
-		if (AI_group(UNITAI_WORKER, /*iMaxGroup*/ 2, -1, -1, false, false, false, /*iMaxPath*/ 2, /*bAllowRegrouping*/ true))
+		if (AI_group(UNITAI_WORKER, /*iMaxGroup*/ 2, -1, -1, false, false, false, /*iMaxPath*/ 2, /*bAllowRegrouping*/ false))
 		{
 			return;
 		}
@@ -23187,6 +23196,10 @@ bool CvUnitAI::AI_improveBonus(int iMinValue, CvPlot** ppBestPlot, BuildTypes* p
 
 			eBestBuild = AI_betterPlotBuild(pBestPlot, eBestBuild);
 			getGroup()->pushMission(eBestMission, pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), 0, false, false, MISSIONAI_BUILD, pBestPlot);
+			if (isMustDie())
+			{
+				return false;
+			}
 			getGroup()->pushMission(MISSION_BUILD, eBestBuild, -1, 0, (getGroup()->getLengthMissionQueue() > 0), false, MISSIONAI_BUILD, pBestPlot);
 
 			return true;

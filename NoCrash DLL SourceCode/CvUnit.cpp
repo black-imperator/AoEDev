@@ -8254,13 +8254,27 @@ bool CvUnit::pillage()
 				}
 			}
 		}
-		if (pPlot->isOwned())
+		if (GC.getImprovementInfo(pPlot->getImprovementType()).getImprovementClassPillage() != NO_IMPROVEMENTCLASS)
 		{
-			pPlot->setImprovementType((ImprovementTypes)GET_PLAYER(pPlot->getOwner()).getPlayerImprovement((ImprovementClassTypes)(GC.getImprovementInfo(pPlot->getImprovementType()).getImprovementClassPillage())));
+			if (pPlot->isOwned())
+			{
+				if (GET_PLAYER(pPlot->getOwner()).getPlayerImprovement((ImprovementClassTypes)(GC.getImprovementInfo(pPlot->getImprovementType()).getImprovementClassPillage())) != NO_IMPROVEMENT)
+				{
+					pPlot->setImprovementType((ImprovementTypes)GET_PLAYER(pPlot->getOwner()).getPlayerImprovement((ImprovementClassTypes)(GC.getImprovementInfo(pPlot->getImprovementType()).getImprovementClassPillage())));
+				}
+				else
+				{
+					pPlot->setImprovementType(NO_IMPROVEMENT);
+				}
+			}
+			else
+			{
+				pPlot->setImprovementType((ImprovementTypes)(GC.getImprovementClassInfo((ImprovementClassTypes)(GC.getImprovementInfo(pPlot->getImprovementType()).getImprovementClassPillage())).getDefaultImprovementIndex()));
+			}
 		}
 		else
 		{
-			pPlot->setImprovementType((ImprovementTypes)(GC.getImprovementClassInfo((ImprovementClassTypes)(GC.getImprovementInfo(pPlot->getImprovementType()).getImprovementClassPillage())).getDefaultImprovementIndex()));
+			pPlot->setImprovementType(NO_IMPROVEMENT);
 		}
 /*************************************************************************************************/
 /**	Improvements Mods by Jeckel		imported by Ahwaric	20.09.09 | Valkrionn	09.24.09		**/

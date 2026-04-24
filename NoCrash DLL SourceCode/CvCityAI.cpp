@@ -3677,7 +3677,7 @@ UnitTypes CvCityAI::AI_bestUnitAI(UnitAITypes eUnitAI, bool bAsync, AdvisorTypes
 		// Snarko - 03/02/12 - Don't make weak units in favor of strong ones just because we have a few
 		// In particular, don't make scouts instead of warriors unless it's explorers
 		// iValue /= (GET_PLAYER(getOwnerINLINE()).getUnitClassCountPlusMaking((UnitClassTypes)iI) + GET_PLAYER(getOwnerINLINE()).getNumCities() + 1);
-		iValue /= ((GET_PLAYER(getOwnerINLINE()).getUnitClassCountPlusMaking((UnitClassTypes)iI)/2) + GET_PLAYER(getOwnerINLINE()).getNumCities() + 1);
+		iValue /= (5*(GET_PLAYER(getOwnerINLINE()).getUnitClassCountPlusMaking((UnitClassTypes)iI)) + GET_PLAYER(getOwnerINLINE()).getNumCities() + 1);
 
 
 		FAssert((MAX_INT / 1000) > iValue);

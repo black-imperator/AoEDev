@@ -29,6 +29,8 @@
 
 // Public Functions...
 
+#include "CvSnarkoProfiler.h"
+
 CvCity::CvCity()
 {
 	m_aiSeaPlotYield = new int[NUM_YIELD_TYPES];
@@ -1604,12 +1606,23 @@ void CvCity::doTurn()
 	CvPlot* pLoopPlot;
 	int iI;
 
+	CvSnarkoProfiler profiler;
+	CvSnarkoProfiler profiler2;
+	CvString szError;
+	szError.Format("City::doTurn Turn %i, City %s", GC.getGame().getGameTurn(), getNameKey());
+
+	profiler.profile(szError);
+
 	if (!isBombarded())
 	{
 		changeDefenseDamage(-(GC.getDefineINT("CITY_DEFENSE_DAMAGE_HEAL_RATE")));
 	}
 
 	//Crime
+	szError.Format("City::doTurn-AutoBuildings Turn %i, City %s", GC.getGame().getGameTurn(), getNameKey());
+
+	profiler2.profile(szError);
+
 	changeCrime(getCrimePerTurn());
 	for (int iLoopBuilding = 0; iLoopBuilding < GC.getNumBuildingClassInfos(); iLoopBuilding++)
 	{
@@ -1633,6 +1646,13 @@ void CvCity::doTurn()
 		}
 	}
 
+	profiler2.profile(NULL, true);
+
+
+	szError.Format("City::doTurn-damagereset Turn %i, City %s", GC.getGame().getGameTurn(), getNameKey());
+
+	profiler2.profile(szError);
+
 	setLastDefenseDamage(getDefenseDamage());
 	setBombarded(false);
 	setPlundered(false);
@@ -1649,16 +1669,33 @@ void CvCity::doTurn()
 /*************************************************************************************************/
 	setCurrAirlift(0);
 
+	profiler2.profile(NULL, true);
+
+
+	szError.Format("City::doTurn-AIdoTurn Turn %i, City %s", GC.getGame().getGameTurn(), getNameKey());
+
+	profiler2.profile(szError);
+
 	AI_doTurn();
+	profiler2.profile(NULL, true);
 
 	bool bAllowNoProduction = !doCheckProduction();
 
 //FfH: Modified by Kael 08/04/2007
 //	doGrowth();
+
+	szError.Format("City::doTurn-doGrowth Turn %i, City %s", GC.getGame().getGameTurn(), getNameKey());
+
+	profiler2.profile(szError);
+
+
 	if (!(GET_PLAYER(getOwnerINLINE()).isIgnoreFood()))
 	{
 		doGrowth();
 	}
+
+	profiler2.profile(NULL, true);
+
 	bool bValid = false;
 	CvUnit* pLoopUnit;
 	CLLNode<IDInfo>* pUnitNode;
@@ -1694,19 +1731,52 @@ void CvCity::doTurn()
 	}
 //FfH: End Add
 
+	szError.Format("City::doTurn-doCulture Turn %i, City %s", GC.getGame().getGameTurn(), getNameKey());
+
+	profiler2.profile(szError);
+
 	doCulture();
+	profiler2.profile(NULL, true);
+	szError.Format("City::doTurn-doPlotCulture Turn %i, City %s", GC.getGame().getGameTurn(), getNameKey());
+
+	profiler2.profile(szError);
 
 	doPlotCulture(false, getOwnerINLINE(), getCommerceRate(COMMERCE_CULTURE));
+	profiler2.profile(NULL, true);
+
+	szError.Format("City::doTurn-doProduction Turn %i, City %s", GC.getGame().getGameTurn(), getNameKey());
+
+	profiler2.profile(szError);
 
 	doProduction(bAllowNoProduction);
+	profiler2.profile(NULL, true);
+	szError.Format("City::doTurn-doDecay Turn %i, City %s", GC.getGame().getGameTurn(), getNameKey());
+
+	profiler2.profile(szError);
 
 	doDecay();
+	profiler2.profile(NULL, true);
+	szError.Format("City::doTurn-doReligion Turn %i, City %s", GC.getGame().getGameTurn(), getNameKey());
+
+	profiler2.profile(szError);
 
 	doReligion();
+	profiler2.profile(NULL, true);
+	szError.Format("City::doTurn-doGPP Turn %i, City %s", GC.getGame().getGameTurn(), getNameKey());
+
+	profiler2.profile(szError);
 
 	doGreatPeople();
+	profiler2.profile(NULL, true);
+	szError.Format("City::doTurn-doMeltdown Turn %i, City %s", GC.getGame().getGameTurn(), getNameKey());
+
+	profiler2.profile(szError);
 
 	doMeltdown();
+	profiler2.profile(NULL, true);
+	szError.Format("City::doTurn-doCounters Turn %i, City %s", GC.getGame().getGameTurn(), getNameKey());
+
+	profiler2.profile(szError);
 
 	updateEspionageVisibility(true);
 
@@ -1781,6 +1851,11 @@ void CvCity::doTurn()
 	{
 		setWeLoveTheKingDay(false);
 	}
+
+	profiler2.profile(NULL, true);
+	szError.Format("City::doTurn-diploupdate Turn %i, City %s", GC.getGame().getGameTurn(), getNameKey());
+
+	profiler2.profile(szError);
 /*************************************************************************************************/
 /**	People's Choice							08/02/08								Xienwolf	**/
 /**																								**/
@@ -1802,6 +1877,12 @@ void CvCity::doTurn()
 /**																								**/
 /**						Allows improvements to grant specific specialists						**/
 /*************************************************************************************************/
+
+	profiler2.profile(NULL, true);
+	szError.Format("City::doTurn-doimprovementcrime Turn %i, City %s", GC.getGame().getGameTurn(), getNameKey());
+
+	profiler2.profile(szError); 
+	
 	int improvementcrime = 0;
 	for (int iI = 0; iI < GC.getNumImprovementInfos(); iI++)
 	{
@@ -1819,6 +1900,11 @@ void CvCity::doTurn()
 		improvementcrime = (improvementcrime - getImprovementCrime());
 		changeImprovementCrime(improvementcrime);
 	}
+
+	profiler2.profile(NULL, true);
+	szError.Format("City::doTurn-dofreespecialist Turn %i, City %s", GC.getGame().getGameTurn(), getNameKey());
+
+	profiler2.profile(szError);
 
 	for (int iJ = 0; iJ < GC.getNumSpecialistClassInfos(); iJ++)
 	{
@@ -1881,6 +1967,12 @@ void CvCity::doTurn()
 /*                                                                                              */
 /* Original Author Moctezuma              End                                                   */
 /************************************************************************************************/
+	profiler2.profile(NULL, true);
+	szError.Format("City::doTurn-doIDW Turn %i, City %s", GC.getGame().getGameTurn(), getNameKey());
+
+	profiler2.profile(szError);
+
+	
 	int iDX, iDY, iCultureRange;
 	if (isFixedBorders())
 	{
@@ -1912,6 +2004,11 @@ void CvCity::doTurn()
 /*************************************************************************************************/
 	changeDelayTimer(-1);
 	setHasCasted(false);
+	profiler2.profile(NULL, true);
+	szError.Format("City::doTurn-choosespell Turn %i, City %s", GC.getGame().getGameTurn(), getNameKey());
+
+	profiler2.profile(szError);
+
 
 	if (!isHuman())
 	{
@@ -1921,6 +2018,12 @@ void CvCity::doTurn()
 			cast(iSpell);
 		}
 	}
+
+	profiler2.profile(NULL, true);
+	szError.Format("City::doTurn-python Turn %i, City %s", GC.getGame().getGameTurn(), getNameKey());
+
+	profiler2.profile(szError);
+
 /*************************************************************************************************/
 /**	END																							**/
 /*************************************************************************************************/
@@ -1929,6 +2032,9 @@ void CvCity::doTurn()
 	CvEventReporter::getInstance().cityDoTurn(this, getOwnerINLINE());
 
 	// XXX
+	profiler2.profile(NULL, true);
+
+	profiler.profile(NULL, true);
 #ifdef _DEBUG
 	{
 		CvPlot* pPlot;

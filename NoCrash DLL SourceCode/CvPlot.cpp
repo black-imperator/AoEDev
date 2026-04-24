@@ -9189,7 +9189,7 @@ void CvPlot::updatePlotGroup(PlayerTypes ePlayer, bool bRecalculate)
 
 				if (!bEmpty)
 				{
-					pPlotGroup->recalculatePlots(true);
+					pPlotGroup->recalculatePlots();
 				}
 			}
 		}

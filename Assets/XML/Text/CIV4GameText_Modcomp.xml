@@ -1765,6 +1765,14 @@
 		<Spanish>[SPACE]while the unit is garrisoned there.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_AURA_BONUS_TILE</Tag>
+		<English>[SPACE]on the unit's tile.</English>
+		<French>[SPACE]on the unit's tile.</French>
+		<German>[SPACE]on the unit's tile.</German>
+		<Italian>[SPACE]on the unit's tile.</Italian>
+		<Spanish>[SPACE]on the unit's tile.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CITY_BONUS_APPLY_TEAM</Tag>
 		<English>team</English>
 		<French>équipe</French>

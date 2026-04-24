@@ -11817,12 +11817,12 @@ Their lives flashing before their eyes, the scouts are shocked and relieved when
 		<Spanish>Reborn</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_</Tag>
-		<English></English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
+		<Tag>TXT_KEY_PROMOTION_MAGICAL_POWER</Tag>
+		<English>[ICON_BULLET]changes Spell Power by %d1</English>
+		<French>[ICON_BULLET]changes Spell Power by %d1</French>
+		<German>[ICON_BULLET]changes Spell Power by %d1</German>
+		<Italian>[ICON_BULLET]changes Spell Power by %d1</Italian>
+		<Spanish>[ICON_BULLET]changes Spell Power by %d1</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_</Tag>

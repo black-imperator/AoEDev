@@ -349,7 +349,7 @@ bool CvSelectionGroupAI::AI_update()
 		{
 			CvUnit* pHeadUnit = getHeadUnit();
 
-			if (pHeadUnit == NULL || pHeadUnit->isDelayedDeath())
+			if (pHeadUnit == NULL || pHeadUnit->isDelayedDeath() || pHeadUnit->isMustDie() )
 			{
 				break;
 			}

@@ -1465,7 +1465,7 @@ protected:
 	int m_iExperiencePercent;
 	int m_iKamikazePercent;
 	//Magic Rework
-	bool m_iMagicalPower;
+	int m_iMagicalPower;
 //	bool m_iDominionCapacity;
 //	int* m_piSpellClassExtraPower;
 

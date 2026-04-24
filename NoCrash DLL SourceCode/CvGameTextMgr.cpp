@@ -13848,6 +13848,12 @@ void CvGameTextMgr::parsePromotionHelp(CvWStringBuffer &szBuffer, PromotionTypes
 		szBuffer.append(pcNewline);
 		szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_BLOCKED_SPELLCLASS", GC.getSpellClassInfo((SpellClassTypes)GC.getPromotionInfo(ePromotion).getBlockedSpellClass()).getTextKeyWide()));
 	}
+	if (GC.getPromotionInfo(ePromotion).getMagicalPower() != 0)
+	{
+		szBuffer.append(pcNewline); // TXT_KEY_TERRAIN_HILL
+		szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_MAGICAL_POWER", GC.getPromotionInfo(ePromotion).getMagicalPower()));
+	}
+
 	if (GC.getPromotionInfo(ePromotion).isBoarding())
 	{
 		szBuffer.append(pcNewline);

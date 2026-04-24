@@ -5514,8 +5514,8 @@
 			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
 			<bHasCasted>1</bHasCasted>
 			<iChangePopulation>-1</iChangePopulation>
-			<PyResult>reqFeastGraveleech(pCaster)</PyResult>
-			<PyRequirement>reqFeast(pCaster)</PyRequirement>
+			<PyResult>spellFeast(pCaster)</PyResult>
+			<PyRequirement>reqFeastGraveleech(pCaster)</PyRequirement>
 			<Effect>EFFECT_SACRIFICE</Effect>
 			<Sound>AS3D_SPELL_FEAST</Sound>
 			<Button>Art/Interface/Buttons/Spells/Feast.dds</Button>
