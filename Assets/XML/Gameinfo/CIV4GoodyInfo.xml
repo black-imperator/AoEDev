@@ -1146,7 +1146,7 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_LIVING_MINOR_MINOR</GoodyClassType>
+					<GoodyClassType>GOODYCLASS_LIVING_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
@@ -1167,7 +1167,7 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_LIVING_MINOR_MINOR</GoodyClassType>
+					<GoodyClassType>GOODYCLASS_LIVING_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 				<GoodyClass>

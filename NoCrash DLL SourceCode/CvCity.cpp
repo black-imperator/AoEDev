@@ -2066,7 +2066,7 @@ void CvCity::doTurn()
 
 			for (iJ = 0; iJ < GC.getNumSpecialistClassInfos(); iJ++)
 			{
-				iCount += (GET_PLAYER(getOwnerINLINE()).specialistClassYield(((SpecialistClassTypes)iJ), ((YieldTypes)iI)) * (getSpecialistClassCount((SpecialistClassTypes)iJ) + getFreeSpecialistClassCount((SpecialistClassTypes)iJ)));
+				iCount += (GET_PLAYER(getOwnerINLINE()).getSpecialistClassExtraYield(((SpecialistClassTypes)iJ), ((YieldTypes)iI)) * (getSpecialistClassCount((SpecialistClassTypes)iJ) + getFreeSpecialistClassCount((SpecialistClassTypes)iJ)));
 			}
 
 			for (iJ = 0; iJ < GC.getNumBuildingInfos(); iJ++)

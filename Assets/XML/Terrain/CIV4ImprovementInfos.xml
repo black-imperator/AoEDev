@@ -10895,7 +10895,7 @@
 				</RouteYieldChange>
             </RouteYieldChanges>
 			<iWorkingCityCrime>3</iWorkingCityCrime>
-			<FreeSpecialist>SPECIALIST_SCIENTIST</FreeSpecialist>
+			<FreeSpecialistClass>SPECIALISTCLASS_SCIENTIST</FreeSpecialistClass>
 			<iSpawnUnitChancePercentMod>-75</iSpawnUnitChancePercentMod>
 			<SpawnUnitType>UNIT_FREE_SPIRITS</SpawnUnitType>
 			<bSpawnOnlyForOwner>1</bSpawnOnlyForOwner>

@@ -1549,7 +1549,7 @@
 			<DefaultBuilding>BUILDING_MONEYCHANGER</DefaultBuilding>
 			<VictoryThresholds/>
 		</BuildingClassInfo>
-		<BuildingClassInfo>
+	<!--	<BuildingClassInfo>
 			<Type>BUILDINGCLASS_BEAR_TOTEM</Type>
 			<Description>TXT_KEY_BUILDING_BEAR_TOTEM</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
@@ -1562,7 +1562,7 @@
 			<DefaultBuilding>BUILDING_BEAR_TOTEM</DefaultBuilding>
 			<VictoryThresholds/>
 		</BuildingClassInfo>
-		<BuildingClassInfo>
+	-->	<BuildingClassInfo>
 			<Type>BUILDINGCLASS_INFIRMARY</Type>
 			<Description>TXT_KEY_BUILDING_INFIRMARY</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>

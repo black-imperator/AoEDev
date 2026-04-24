@@ -991,7 +991,7 @@
 	<ElementType name="SpecialBuildingNotRequireds" content="eltOnly">
 		<element type="SpecialBuildingNotRequired" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
-	<ElementType name="SpecialistClass" content="textOnly"/>
+	<ElementType name="SpecialistType" content="textOnly"/>
 	<ElementType name="iSpecialistClassCount" content="textOnly" dt:type="int"/>
 	<ElementType name="SpecialistClassCount" content="eltOnly">
 		<element type="SpecialistClass"/>
@@ -1008,19 +1008,19 @@
 		<element type="FreeSpecialistClassCount" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="bValid" content="textOnly" dt:type="boolean"/>
-	<ElementType name="SpecialistValid" content="eltOnly">
+	<ElementType name="SpecialistClassValid" content="eltOnly">
 		<element type="SpecialistClass"/>
 		<element type="bValid"/>
 	</ElementType>
-	<ElementType name="SpecialistValids" content="eltOnly">
-		<element type="SpecialistValid" minOccurs="0" maxOccurs="*"/>
+	<ElementType name="SpecialistClassValids" content="eltOnly">
+		<element type="SpecialistClassValid" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
-	<ElementType name="SpecialistUnlimited" content="eltOnly">
+	<ElementType name="SpecialistClassUnlimited" content="eltOnly">
 		<element type="SpecialistClass"/>
 		<element type="bValid"/>
 	</ElementType>
-	<ElementType name="SpecialistUnlimiteds" content="eltOnly">
-		<element type="SpecialistUnlimited" minOccurs="0" maxOccurs="*"/>
+	<ElementType name="SpecialistClassUnlimiteds" content="eltOnly">
+		<element type="SpecialistClassUnlimited" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="BuildingType" content="textOnly"/>
 	<ElementType name="iHappinessChange" content="textOnly" dt:type="int"/>
@@ -1192,7 +1192,7 @@
 		<element type="CapitalCommerceModifiers"/>
 		<element type="Hurrys"/>
 		<element type="SpecialBuildingNotRequireds"/>
-		<element type="SpecialistUnlimiteds"/>
+		<element type="SpecialistClassUnlimiteds"/>
 		<element type="SpecialistClassCounts"/>
 		<element type="FreeSpecialistClassCounts"/>
 		<element type="BuildingHappinessChanges"/>
@@ -1390,7 +1390,9 @@
 	<ElementType name="iOrderPriority" content="textOnly" dt:type="int"/>
 	<ElementType name="bVisible" content="textOnly" dt:type="boolean"/>
 	<ElementType name="iGreatPeopleRateChange" content="textOnly" dt:type="int"/>
+	<ElementType name="SpecialistClass" content="textOnly"/>
 	<ElementType name="SpecialistInfo" content="eltOnly" order="many">
+		<element type="SpecialistClass"/>
 		<element type="Type"/>
 		<element type="bForceOverwrite"/>
 		<element type="bTypeDependency"/>
@@ -1420,6 +1422,17 @@
 		<element type="iHotKeyPriority"/>
 		<element type="iOrderPriority" minOccurs="0"/>
 		<element type="Button" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="DefaultSpecialist" content="textOnly"/>
+	<ElementType name="SpecialistClassInfo" content="eltOnly" order="many">
+		<element type="Type"/>
+		<element type="Description"/>
+		<element type="bForceOverwrite"/>
+		<element type="bUnique"/>
+		<element type="DefaultSpecialist"/>
+	</ElementType>
+	<ElementType name="SpecialistClassInfos" content="eltOnly">
+		<element type="SpecialistClassInfo" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="SpecialistInfos" content="eltOnly">
 		<element type="SpecialistInfo" maxOccurs="*"/>
@@ -1658,7 +1671,7 @@
 	<ElementType name="PopupText" content="textOnly"/>
 	<ElementType name="SecretaryGeneralText" content="textOnly"/>
 	<ElementType name="iVoteInterval" content="textOnly" dt:type="int"/>
-	<ElementType name="FreeSpecialist" content="textOnly"/>
+	<ElementType name="FreeSpecialistClass" content="textOnly"/>
 	<ElementType name="Civic" content="textOnly"/>
 	<ElementType name="SpecialBuilding" content="textOnly"/>
 	<ElementType name="YieldType" content="textOnly"/>
@@ -1675,7 +1688,7 @@
 		<element type="PopupText"/>
 		<element type="SecretaryGeneralText"/>
 		<element type="iVoteInterval"/>
-		<element type="FreeSpecialist"/>
+		<element type="FreeSpecialistClass"/>
 		<element type="Civic"/>
 		<element type="ReligionYields"/>
 		<element type="ReligionCommerces"/>
@@ -1760,6 +1773,9 @@
 	</ElementType>
 	<ElementType name="Civ4SpecialistInfos" content="eltOnly">
 		<element type="SpecialistInfos" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="Civ4SpecialistClassInfos" content="eltOnly">
+		<element type="SpecialistClassInfos" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="Civ4DiplomacyInfos" content="eltOnly">
 		<element type="DiplomacyInfos" minOccurs="0" maxOccurs="*"/>
