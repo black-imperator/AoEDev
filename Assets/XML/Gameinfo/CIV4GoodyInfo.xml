@@ -925,23 +925,7 @@
 			<Type>GOODY_BANANA_SCYTHE</Type>
 			<GoodyClasses>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_LIVING_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_LIZARD_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_GOBLIN_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
@@ -963,18 +947,6 @@
 					<GoodyClassType>GOODYCLASS_BANDIT_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_LETUM</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
 			</GoodyClasses>
 			<iWeight>150</iWeight>
 			<bUnique>1</bUnique>
@@ -994,18 +966,6 @@
 					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_LIVING_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_WATER_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
 			</GoodyClasses>
 			<iWeight>150</iWeight>
 			<Description>TXT_KEY_GOODY_FOXMEN_FEATHER</Description>
@@ -1021,23 +981,7 @@
 			<Type>GOODY_DEFILER_ROD</Type>
 			<GoodyClasses>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_DEMONIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_BAIR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_SEPULCHER</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
@@ -1054,23 +998,7 @@
 			<Type>GOODY_GUIDING_LIGHT_LANTERN</Type>
 			<GoodyClasses>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_DEMONIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_BAIR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_SEPULCHER</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
@@ -1087,15 +1015,7 @@
 			<Type>GOODY_WINTERS_GRASP</Type>
 			<GoodyClasses>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_FROSTLING_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
@@ -1113,15 +1033,7 @@
 			<Type>GOODY_HIDDEN_CLOAK</Type>
 			<GoodyClasses>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_BANDIT_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_ORC_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
@@ -1137,14 +1049,6 @@
 		<GoodyInfo>	<!-- Performer's Cloak		Good Minor	-->
 			<Type>GOODY_EVADE_CLOAK</Type>
 			<GoodyClasses>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_BANDIT_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_LIVING_MINOR_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
@@ -1166,14 +1070,6 @@
 					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_LIVING_MINOR_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
 			</GoodyClasses>
 			<iWeight>150</iWeight>
 			<Description>TXT_KEY_GOODY_LORD_BROACH</Description>
@@ -1188,15 +1084,7 @@
 			<Type>GOODY_RAGEBLADE</Type>
 			<GoodyClasses>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_DEMONIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
@@ -1210,14 +1098,6 @@
 		<GoodyInfo>	<!-- Boots of Waterwalking		Good Minor	-->
 			<Type>GOODY_WATER_BOOTS</Type>
 			<GoodyClasses>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_WATER_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
@@ -1236,14 +1116,6 @@
 			<Type>GOODY_BANESWORD_ANGEL</Type>
 			<GoodyClasses>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_DEMONIC_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
@@ -1258,14 +1130,6 @@
 		<GoodyInfo>	<!-- Demonsbane	Bad Minor	-->
 			<Type>GOODY_BANESWORD_DEMON</Type>
 			<GoodyClasses>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_LIVING_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
@@ -1282,23 +1146,7 @@
 			<Type>GOODY_BANESWORD_ELEMENTAL</Type>
 			<GoodyClasses>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_WATER_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_FROSTLING_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_SUBTERRAN_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
@@ -1315,19 +1163,7 @@
 			<Type>GOODY_SPIRIT_SEVER</Type>
 			<GoodyClasses>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_SPIRIT_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_UNDEAD_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
@@ -1343,14 +1179,6 @@
 			<GoodyClasses>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_LIVING_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
@@ -1370,14 +1198,6 @@
 					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_LIVING_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
 			</GoodyClasses>
 			<iWeight>150</iWeight>
 			<Description>TXT_KEY_GOODY_SMITHS_HAMMER</Description>
@@ -1391,14 +1211,6 @@
 		<GoodyInfo>	<!-- Sideclaw Kamas	Bad Minor	-->
 			<Type>GOODY_TRICKY_DAGGER</Type>
 			<GoodyClasses>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_NATURE_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
@@ -1414,18 +1226,6 @@
 		<GoodyInfo>	<!-- Casualty Axe	Good Minor	-->
 			<Type>GOODY_CASUALTY_AXE</Type>
 			<GoodyClasses>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_LIVING_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_BANDIT_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_ORC_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
@@ -1445,14 +1245,6 @@
 			<Type>GOODY_SHIELD_DRAGON</Type>
 			<GoodyClasses>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_LIZARD_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
@@ -1470,14 +1262,6 @@
 			<Type>GOODY_ICXTH</Type>
 			<GoodyClasses>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_FROSTLING_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
@@ -1494,15 +1278,7 @@
 			<Type>GOODY_CUIRASS_DRAGON</Type>
 			<GoodyClasses>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_LIZARD_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
@@ -1517,15 +1293,7 @@
 			<Type>GOODY_PONDER_HAT</Type>
 			<GoodyClasses>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_LIVING_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>

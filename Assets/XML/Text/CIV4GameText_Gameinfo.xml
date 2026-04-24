@@ -91,4 +91,12 @@
 		<Italian>%s1 ha completato la sua pi&#249; Grande Opera,</Italian>
 		<Spanish>%s1 ha completado su mayor obra,</Spanish>
 	</TEXT>
+	<TEXT> 
+		<Tag>TXT_KEY_HURRY_CULTURE_VS</Tag>
+		<English>Can Spend Culture to Finish Production in a City</English>
+		<French>Can Spend Culture to Finish Production in a City</French>
+		<German>Can Spend Culture to Finish Production in a City</German>
+		<Italian>Can Spend Culture to Finish Production in a City</Italian>
+		<Spanish>Can Spend Culture to Finish Production in a City</Spanish>
+	</TEXT>
 </Civ4GameText>
