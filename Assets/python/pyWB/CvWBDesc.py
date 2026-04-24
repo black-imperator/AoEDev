@@ -966,9 +966,9 @@ class CvCityDesc:
 			if (city.isHeadquartersByType(iI)):
 				f.write("\t\tHeadquarterCorporationType=%s\n" %(gc.getCorporationInfo(iI).getType()))
 
-		for iI in range(gc.getNumSpecialistInfos()):
-			for iJ in range(city.getAddedFreeSpecialistCount(iI)):
-				f.write("\t\tFreeSpecialistType=%s\n" %(gc.getSpecialistInfo(iI).getType()))
+		for iI in range(gc.getNumSpecialistClassInfos()):
+			for iJ in range(city.getAddedFreeSpecialistClassCount(iI)):
+				f.write("\t\tFreeSpecialistType=%s\n" %(gc.getSpecialistClassInfo(iI).getType()))
 
 		if city.getScriptData():
 			f.write("\t\tScriptData=%s\n" %city.getScriptData())
