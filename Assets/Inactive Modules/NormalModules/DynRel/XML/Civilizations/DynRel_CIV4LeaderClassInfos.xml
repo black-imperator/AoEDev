@@ -207,31 +207,6 @@
 			</TraitClassEvolve>
 			</EvolveTraitClasses>
 		</LeaderClassInfo>
-		<LeaderClassInfo> <!--Council-->
-			<Type>LEADERCLASS_COUNCIL</Type>
-			<Description>TXT_KEY_LEADERCLASS_COUNCIL</Description>
-			<LeaderStatus>EMERGENT_STATUS</LeaderStatus>
-			<MaxTraitsPerClass>
-			<TraitClassMax>
-				<TraitClass>TRAITCLASS_TRIBAL</TraitClass>
-				<iMax>5</iMax>
-			</TraitClassMax>
-					<TraitClassMax>
-				<TraitClass>TRAITCLASS_RELIGION</TraitClass>
-				<iMax>8</iMax>
-			</TraitClassMax>
-			</MaxTraitsPerClass>
-			<EvolveTraitClasses>
-			<TraitClassEvolve>
-				<TraitClass>TRAITCLASS_TRIBAL</TraitClass>
-				<bChange>1</bChange>
-			</TraitClassEvolve>
-			<TraitClassEvolve>
-				<TraitClass>TRAITCLASS_RELIGION</TraitClass>
-				<bChange>1</bChange>
-			</TraitClassEvolve>
-			</EvolveTraitClasses>
-		</LeaderClassInfo>
 		<LeaderClassInfo> <!-- Agnostic Savage Emergent-->
 			<Type>LEADERCLASS_SAVAGE_EMERGENT_AGNOSTIC</Type>
 			<Description>TXT_KEY_LEADERCLASS_EMERGENT</Description>
@@ -253,6 +228,75 @@
 			</TraitClassEvolve>
 			<TraitClassEvolve>
 				<TraitClass>TRAITCLASS_EMERGENT</TraitClass>
+				<bChange>1</bChange>
+			</TraitClassEvolve>
+			</EvolveTraitClasses>
+		</LeaderClassInfo>
+		<LeaderClassInfo> <!--Council-->
+			<Type>LEADERCLASS_COUNCIL</Type>
+			<Description>TXT_KEY_LEADERCLASS_COUNCIL</Description>
+			<LeaderStatus>EMERGENT_STATUS</LeaderStatus>
+			<MaxTraitsPerClass>
+			<TraitClassMax>
+				<TraitClass>TRAITCLASS_RELIGION</TraitClass>
+				<iMax>8</iMax>
+			</TraitClassMax>
+			</MaxTraitsPerClass>
+			<EvolveTraitClasses>
+			<TraitClassEvolve>
+				<TraitClass>TRAITCLASS_RELIGION</TraitClass>
+				<bChange>1</bChange>
+			</TraitClassEvolve>
+			</EvolveTraitClasses>
+		</LeaderClassInfo>
+		<LeaderClassInfo> <!--Luchuirp Historical-->
+			<Type>LEADERCLASS_LUCHUIRP_HISTORICAL</Type>
+			<Description>TXT_KEY_LEADERCLASS_HISTORICAL</Description>
+			<LeaderStatus>HISTORICAL_STATUS</LeaderStatus>
+			<MaxTraitsPerClass>
+			<TraitClassMax>
+				<TraitClass>TRAITCLASS_RELIGION</TraitClass>
+				<iMax>8</iMax>
+			</TraitClassMax>
+			</MaxTraitsPerClass>
+			<EvolveTraitClasses>
+			<TraitClassEvolve>
+				<TraitClass>TRAITCLASS_RELIGION</TraitClass>
+				<bChange>1</bChange>
+			</TraitClassEvolve>
+			</EvolveTraitClasses>
+			
+		</LeaderClassInfo>
+		<LeaderClassInfo> <!--Luchuirp Emergent-->
+			<Type>LEADERCLASS_LUCHUIRP_EMERGENT</Type>
+			<Description>TXT_KEY_LEADERCLASS_EMERGENT</Description>
+			<LeaderStatus>EMERGENT_STATUS</LeaderStatus>
+			<MaxTraitsPerClass>
+			<TraitClassMax>
+				<TraitClass>TRAITCLASS_RELIGION</TraitClass>
+				<iMax>8</iMax>
+			</TraitClassMax>
+			</MaxTraitsPerClass>
+			<EvolveTraitClasses>
+			<TraitClassEvolve>
+				<TraitClass>TRAITCLASS_RELIGION</TraitClass>
+				<bChange>1</bChange>
+			</TraitClassEvolve>
+			</EvolveTraitClasses>
+		</LeaderClassInfo>
+		<LeaderClassInfo> <!--Luchuirp Important-->
+			<Type>LEADERCLASS_LUCHUIRP_IMPORTANT</Type>
+			<Description>TXT_KEY_LEADERCLASS_IMPORTANT</Description>
+			<LeaderStatus>IMPORTANT_STATUS</LeaderStatus>
+			<MaxTraitsPerClass>
+			<TraitClassMax>
+				<TraitClass>TRAITCLASS_RELIGION</TraitClass>
+				<iMax>8</iMax>
+			</TraitClassMax>
+			</MaxTraitsPerClass>
+			<EvolveTraitClasses>
+			<TraitClassEvolve>
+				<TraitClass>TRAITCLASS_RELIGION</TraitClass>
 				<bChange>1</bChange>
 			</TraitClassEvolve>
 			</EvolveTraitClasses>

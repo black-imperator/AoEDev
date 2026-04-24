@@ -301,7 +301,7 @@
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 				<FreePromotion>
-					<PromotionType>PROMOTION_FORCE1</PromotionType>
+					<PromotionType>PROMOTION_LIFE1</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 				<FreePromotion>
@@ -398,7 +398,7 @@
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 				<FreePromotion>
-					<PromotionType>PROMOTION_FORCE1</PromotionType>
+					<PromotionType>PROMOTION_LIFE1</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 				<FreePromotion>
@@ -512,7 +512,7 @@
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 				<FreePromotion>
-					<PromotionType>PROMOTION_FORCE1</PromotionType>
+					<PromotionType>PROMOTION_LIFE1</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 				<FreePromotion>

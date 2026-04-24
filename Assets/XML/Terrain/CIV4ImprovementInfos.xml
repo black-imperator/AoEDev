@@ -245,7 +245,6 @@
 				</TerrainMakesValid>
 			</TerrainMakesValids>
 			<bGraphicalOnly>1</bGraphicalOnly>
-			<bPermanent>1</bPermanent>
 		</ImprovementInfo>
 		<ImprovementInfo><!-- Cage -->
 			<Type>IMPROVEMENT_CAGE</Type>
