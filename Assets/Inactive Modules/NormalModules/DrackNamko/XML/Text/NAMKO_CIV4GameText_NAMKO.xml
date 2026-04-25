@@ -49,11 +49,11 @@ Deathless Namko is an undead nation of with a strong focus on disciple units.
 [ICON_BULLET] Your units are focussed on aggressive disciple units. It is recommended to go in that direction.
 [ICON_BULLET] Your city shrinks if it is above the population cap.
 [H2]Population[\H2]
-[ICON_BULLET] Base Population Cap is 3.
+[ICON_BULLET] Base Population Cap is 2.
 [ICON_BULLET] Capital has a base population cap of 5.
-[ICON_BULLET] Build [LINK=BUILDING_NAMKO_ARISEN_HOUSINGS]Arisen Housings[\LINK] [LINK=BUILDING_NAMKO_MONEYCHANGER]Soul Exchange[\LINK], [LINK=BUILDING_NAMKO_LIBRARY]Eternal Halls[\LINK] in every city to rise your Population cap to 8 (13 if Capital).
+[ICON_BULLET] Build [LINK=BUILDING_NAMKO_ARISEN_HOUSINGS]Arisen Housings[\LINK] [LINK=BUILDING_NAMKO_MONEYCHANGER]Soul Exchange[\LINK], [LINK=BUILDING_NAMKO_LIBRARY]Eternal Halls[\LINK] in every city to rise your Population cap to 5 (12 if Capital).
 [ICON_BULLET] You require 5 cities with Arisen Housings to build one [LINK=BUILDING_NAMKO_RECREATION_FURNACE]Recreation Furnace[\LINK]. Build them in your important cities. It increases the range of your city to 3 and increases the population caps with certain buildings.
-[ICON_BULLET] For cities with Recreation Furnaces and all other special buildings, the population cap is 15. (25 if capital)
+[ICON_BULLET] For cities with Recreation Furnaces and all other special buildings, the population cap is 20. (34 if capital)
 [ICON_BULLET] Cities grow per turn to population 3. From 3 to 15, they require 3 turns to grow. Beyond that, they grow only once every 5 turns.
 </English>
     </TEXT>

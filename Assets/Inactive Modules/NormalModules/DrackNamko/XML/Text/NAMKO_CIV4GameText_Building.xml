@@ -7,11 +7,11 @@
     <!-- Help -->
     <TEXT>  
         <Tag>TXT_KEY_BUILDING_PALACE_HELP</Tag>
-        <English>[ICON_BULLET]Increase Population cap +2 and increases other population increasements.</English>
+        <English>[ICON_BULLET]Increase Population cap +3 and increases other population increasements.</English>
     </TEXT>
     <TEXT>
         <Tag>TEXT_BUILDING_ARISEN_HOUSING_HELP</Tag>
-        <English>[ICON_BULLET]Increase Population cap +2 (+4 if Capital).</English>
+        <English>[ICON_BULLET]Increase Population cap +1 (+2 if Capital).</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LIBRARY_NAMKO_HELP</Tag>
@@ -19,7 +19,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_NAMKO_MONEYCHANGER_HELP</Tag>
-        <English>[ICON_BULLET]Increase Population cap +2 (+4 if Capital).</English>
+        <English>[ICON_BULLET]Increase Population cap +1 (+3 if Capital).</English>
     </TEXT>
     <TEXT>
         <Tag>TEXT_BUILDING_ARISEN_FORTRESS_HELP</Tag>
@@ -27,11 +27,11 @@
     </TEXT>
     <TEXT>
         <Tag>TEXT_BUILDING_MAGE_QUARTERS_HELP</Tag>
-        <English>[ICON_BULLET]Increase Population cap +3 (+5 if capital) (Requires Recreation Furnace).</English>
+        <English>[ICON_BULLET]Increase Population cap +4 (+5 if capital) (Requires Recreation Furnace).</English>
     </TEXT>
     <TEXT>
         <Tag>TEXT_BUILDING_TEMPLE_OF_ETERNITY_HELP</Tag>
-        <English>[ICON_BULLET]Increase Population cap +7 (+12 if capital) (Requires Recreation Furnace).</English>
+        <English>[ICON_BULLET]Increase Population cap +7 (+11 if capital) (Requires Recreation Furnace).</English>
     </TEXT>
     <TEXT>
         <Tag>TEXT_BUILDING_NAMKO_RECREATION_FURNACE_HELP</Tag>

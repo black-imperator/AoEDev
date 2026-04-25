@@ -144,7 +144,7 @@
 			<PrereqCivilizations>
 				<PrereqCivilization>CIVILIZATION_COURTOFMISRAK</PrereqCivilization>
 			</PrereqCivilizations>
-			<iAIWeight>1000</iAIWeight>
+			<iAIWeight>300</iAIWeight>
 		</ProjectInfo>
 		<ProjectInfo>	<!-- Convert Souls (2)-->
 			<Type>PROJECT_FAIRY_CONVERT_SOULS2</Type>
@@ -157,7 +157,7 @@
 			<PrereqCivilizations>
 				<PrereqCivilization>CIVILIZATION_COURTOFMISRAK</PrereqCivilization>
 			</PrereqCivilizations>
-			<iAIWeight>1000</iAIWeight>
+			<iAIWeight>200</iAIWeight>
 		</ProjectInfo>
 		<ProjectInfo>	<!-- Convert Souls (3)-->
 			<Type>PROJECT_FAIRY_CONVERT_SOULS3</Type>
@@ -170,7 +170,7 @@
 			<PrereqCivilizations>
 				<PrereqCivilization>CIVILIZATION_COURTOFMISRAK</PrereqCivilization>
 			</PrereqCivilizations>
-			<iAIWeight>1000</iAIWeight>
+			<iAIWeight>100</iAIWeight>
 		</ProjectInfo>
 	</ProjectInfos>
 </Civ4ProjectInfo>

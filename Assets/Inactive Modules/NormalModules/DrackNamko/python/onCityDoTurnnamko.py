@@ -21,7 +21,7 @@ def getNamkoMaxPopulation(pCity):
 	gc                  = CyGlobalContext() 
 	git					= gc.getInfoTypeForString
 	getN				= pCity.getNumBuilding
-	iMax = 3
+	iMax = 2
 	bPalace				= git('BUILDING_PALACE_NAMKO')
 	bHousings			= git('BUILDING_NAMKO_ARISEN_HOUSINGS')
 	bRecreation			= git('BUILDING_NAMKO_RECREATION_FURNACE')
@@ -33,28 +33,28 @@ def getNamkoMaxPopulation(pCity):
 	isCapital = getN(bPalace)
 
 	if isCapital:
-		iMax += 2
+		iMax += 3
 
 	# Certain Buildings increases Max Size
-	# Max Size: 5 (9 if Capital)
+	# Max Size: 2->3 (5->7 if Capital)
 	if getN(bHousings) == 1:
-		iMax += 2
+		iMax += 1
 		if isCapital:
-			iMax += 2
-	# Max Size: 7 (11 if Capital)
+			iMax += 1
+	# Max Size: 4 (10 if Capital)
 	if getN(bSoulExchange) == 1:
-		iMax += 2
+		iMax += 1
 		if isCapital:
 			iMax += 2
    
-	# Max Size: 8 (13 if Capital)
+	# Max Size: 5 (12 if Capital)
 	if getN(bLibrary) == 1:
 		iMax += 1
 		if isCapital:
 			iMax += 1
 
 	# If Capital, Size is increased further if Furnace was build
-	# MaxSize: 22 (38 if Capital)
+	# MaxSize: 20 (34 if Capital)
 	if getN(bRecreation):
 		if isCapital:
 			if getN(bFortress) == 1:
@@ -62,18 +62,18 @@ def getNamkoMaxPopulation(pCity):
 			if getN(bMageQuarters) == 1:
 				iMax += 5
 			if getN(bTemple) == 1:
-				iMax += 12
+				iMax += 11
 		else:
 			if getN(bFortress) == 1:
 				iMax += 4
 			if getN(bMageQuarters) == 1:
-				iMax += 3
+				iMax += 4
 			if getN(bTemple) == 1:
 				iMax += 7
 
-	# Base Cities Max Size = 8
-	# Furnace City Max Size = 22
-	# Capital with Furnace Max Size = 38
+	# Base Cities Max Size = 5
+	# Furnace City Max Size = 20
+	# Capital with Furnace Max Size = 35
 
 	return iMax
 

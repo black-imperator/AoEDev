@@ -82,6 +82,10 @@ def onBeginPlayerTurn(self, argsList):
 		# Set Next City
 		(pCity, iter) = pPlayer.nextCity(iter, False)
 	
+	# Give AI a benefit to ensure it always has enough Souls
+	if not pPlayer.isHuman():
+		newSouls = newSouls * 2
+ 
 	pPlayer.changeCivCounter(newSouls)
 	CyInterface().addMessage(iPlayer, False, 15, CyTranslator().getText("TXT_KEY_FAIRY_On_TURN_NEW_SOULS", (newSouls,)), "", 3, "", ColorTypes(8), -1, -1, True, True)
 	
