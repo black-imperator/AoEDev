@@ -6076,6 +6076,10 @@ void CvCity::processSpecialistClass(SpecialistClassTypes eSpecialistClass, int i
 	int iI;
 
 	SpecialistTypes eSpecialist = getSpecialistTypeFromClass(eSpecialistClass);
+	if (eSpecialist == NO_SPECIALIST)
+	{
+		return;
+	}
 /*************************************************************************************************/
 /**	GWSLocalSpecialist																	Milaga	**/
 /** Buildings can change give bonuses to specialists in only one city							**/
