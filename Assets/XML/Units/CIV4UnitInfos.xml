@@ -50804,6 +50804,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_CALENDAR</PrereqTech>
+			<iCost>75</iCost>
 			<iMoves>1</iMoves>
 			<iCombat>4</iCombat>
 			<iCityAttack>15</iCityAttack>

@@ -4484,5 +4484,18 @@
 			<DefaultBuilding>BUILDING_TEMPLE_UNRAVELING</DefaultBuilding>
 			<VictoryThresholds/>
 		</BuildingClassInfo>
+		<BuildingClassInfo> <!-- Bhall City Production boost Wheel of Pain   Bhall UB -->
+			<Type>BUILDINGCLASS_BHALL_PRODUCTION</Type>
+			<Description>TXT_KEY_BUILDING_BHALL_PRODUCTION</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>1</iExtraPlayerInstances>
+			<bNoLimit>1</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_BHALL_PRODUCTION</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
 	</BuildingClassInfos>
 </Civ4BuildingClassInfos>

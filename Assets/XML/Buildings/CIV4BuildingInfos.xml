@@ -19875,6 +19875,35 @@
 			<iCrime>-2</iCrime>
 			<bAutoBuild>1</bAutoBuild>
 			<bMustMaintain>1</bMustMaintain>
+		</BuildingInfo>	
+		<BuildingInfo>		<!-- Bhall City Production Boost, Wheel of Pain  Bhall UB -->
+			<BuildingClass>BUILDINGCLASS_BHALL_PRODUCTION</BuildingClass>
+			<Type>BUILDING_BHALL_PRODUCTION</Type>
+			<Description>TXT_KEY_BUILDING_BHALL_PRODUCTION</Description>
+			<Civilopedia>TXT_KEY_BUILDING_BHALL_PRODUCTION_PEDIA</Civilopedia>
+			<ArtDefineTag>ART_DEF_BUILDING_WARRENS</ArtDefineTag>
+			<PrereqTech>TECH_CRAFTING</PrereqTech>
+			<iPrereqPopulation>1</iPrereqPopulation>
+			<iAIWeight>10</iAIWeight>
+			<iCost>-1</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iConquestProb>0</iConquestProb>
+			<iAsset>4</iAsset>
+			<fVisibilityPriority>1000</fVisibilityPriority>
+			<ConstructSound>AS2D_BUILD_COURTHOUSE</ConstructSound>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_GOLD</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+			<PerPopBonuses>
+				<PerPopBonus>
+					<fProduction>2</fProduction>
+				</PerPopBonus>
+			</PerPopBonuses>
+			<bAutoBuild>1</bAutoBuild>
+			<bMustMaintain>1</bMustMaintain>
 		</BuildingInfo>
 	</BuildingInfos>
 </Civ4BuildingInfos>

@@ -11616,6 +11616,7 @@
 			<UnitClassPrereq>UNITCLASS_SLAVE</UnitClassPrereq>
 			<bInCityOnly>1</bInCityOnly>
 			<bAllowAI>1</bAllowAI>
+			<iAIWeight>100</iAIWeight>
 			<bAbility>1</bAbility>
 			<bHasCasted>1</bHasCasted>
 			<PyRequirement>reqSlaveSettle(pCaster)</PyRequirement>
