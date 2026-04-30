@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Spell Infos -->
+<Civ4SpellInfos xmlns="x-schema:CF_CIV4UnitSpellSchema.xml">
+	<SpellInfos>
+		<SpellInfo>			<!-- Flay Flesh -->
+			<Type>SPELL_FLAY_FLESH</Type>
+			<iDamageLimit>25</iDamageLimit>
+		</SpellInfo>
+	</SpellInfos>
+</Civ4SpellInfos>

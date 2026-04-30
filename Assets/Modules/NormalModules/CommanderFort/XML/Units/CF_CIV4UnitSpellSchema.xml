@@ -1,0 +1,347 @@
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Bart Muzzin (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Unit Schema -->
+<Schema xmlns="urn:schemas-microsoft-com:xml-data" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+	<ElementType name="Type" content="textOnly"/>
+	<ElementType name="Description" content="textOnly"/>
+	<ElementType name="bTypeDependency" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bForceOverwrite" content="textOnly" dt:type="boolean"/>
+	<ElementType name="DependencyType" content="textOnly"/>
+	<ElementType name="AndDependencyTypes" content="eltOnly">
+		<element type="DependencyType"/>
+	</ElementType>
+	<ElementType name="OrDependencyTypes" content="eltOnly">
+		<element type="DependencyType"/>
+	</ElementType>
+	<ElementType name="Civilopedia" content="textOnly"/>
+	<ElementType name="Strategy" content="textOnly"/>
+	<ElementType name="Help" content="textOnly"/>
+	<ElementType name="bCityAction" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bTargeted" content="textOnly" dt:type="boolean"/>
+	<ElementType name="SpellClassType" content="textOnly"/>
+	<ElementType name="bSpellClass" content="textOnly" dt:type="boolean"/>
+	<ElementType name="SpellClass" content="eltOnly">
+		<element type="SpellClassType"/>
+		<element type="bSpellClass"/>
+	</ElementType>
+	<ElementType name="SpellClasses" content="eltOnly">
+		<element type="SpellClass" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	
+	
+	<ElementType name="iMagicalPowerPrereq" content="textOnly" dt:type="int"/>
+	<ElementType name="iPrereqExtraPower" content="textOnly" dt:type="int"/>
+	<ElementType name="iExtraDamage" content="textOnly" dt:type="int"/>
+	<ElementType name="iExtraMaxDamage" content="textOnly" dt:type="int"/>
+	<ElementType name="iExtraNumTargets" content="textOnly" dt:type="int"/>
+	<ElementType name="iExtraTargetRange" content="textOnly" dt:type="int"/>
+	<ElementType name="iExtraDuration" content="textOnly" dt:type="int"/>
+	<ElementType name="iExtraImmobileTurns" content="textOnly" dt:type="int"/>
+	<ElementType name="iExtraFortifyTurns" content="textOnly" dt:type="int"/>
+	<ElementType name="iExtraPromotionApply" content="textOnly" dt:type="int"/>
+	<ElementType name="iMaxApplications" content="textOnly" dt:type="int"/>
+	<ElementType name="bExtraImmuneTeam" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bExtraImmuneNeutral" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bExtraImmuneEnemy" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bExtraPermanent" content="textOnly" dt:type="boolean"/>
+	
+	<ElementType name="SpellBonus" content="eltOnly" order="many">
+		<element type="iPrereqExtraPower"/>
+		<element type="iExtraDamage"/>
+		<element type="iExtraMaxDamage"/>
+		<element type="iExtraNumTargets"/>
+		<element type="iExtraTargetRange"/>
+		<element type="iExtraDuration"/>
+		<element type="iExtraImmobileTurns"/>
+		<element type="iExtraFortifyTurns"/>
+		<element type="iExtraPromotionApply"/>
+		<element type="iMaxApplications"/>
+		<element type="bExtraImmuneTeam"/>
+		<element type="bExtraImmuneNeutral"/>
+		<element type="bExtraImmuneEnemy"/>
+		<element type="bExtraPermanent"/>
+	</ElementType>
+	<ElementType name="SpellBonuses" content="eltOnly">
+		<element type="SpellBonus" minOccurs="0"/>
+	</ElementType>
+<ElementType name="UnitIgnore" content="textOnly"/>
+	<ElementType name="UnitsIgnorePromotion" content="eltOnly">
+		<element type="UnitIgnore" minOccurs="0"/>
+	</ElementType>
+	<ElementType name="PromotionPrereq" content="textOnly"/>
+	<ElementType name="PromotionsPrereq" content="eltOnly">
+		<element type="PromotionPrereq" minOccurs="0"/>
+	</ElementType>
+	<ElementType name="TargetPromotionPrereq" content="textOnly"/>
+	<ElementType name="TargetPromotionsPrereq" content="eltOnly">
+		<element type="TargetPromotionPrereq" minOccurs="0"/>
+	</ElementType>
+	<ElementType name="iCrimePrereq" content="textOnly" dt:type="int"/>
+	<ElementType name="PromotionPrereq1" content="textOnly"/>
+	<ElementType name="PromotionPrereq2" content="textOnly"/>
+	<ElementType name="UnitPrereq" content="textOnly"/>
+	<ElementType name="UnitClassPrereq" content="textOnly"/>
+	<ElementType name="UnitCombatPrereq" content="textOnly"/>
+	<ElementType name="UnitInStackPrereq" content="textOnly"/>
+	<ElementType name="BuildingPrereq" content="textOnly"/>
+	<ElementType name="BuildingClassPrereq" content="textOnly"/>
+	<ElementType name="BuildingClassOwnedPrereq" content="textOnly"/>
+	<ElementType name="CivilizationPrereq" content="textOnly"/>
+	<ElementType name="CorporationPrereq" content="textOnly"/>
+	<ElementType name="FeatureOrPrereq1" content="textOnly"/>
+	<ElementType name="FeatureOrPrereq2" content="textOnly"/>
+	<ElementType name="ImprovementPrereq" content="textOnly"/>
+	<ElementType name="PlotEffectPrereq" content="textOnly"/>
+	<ElementType name="PlotEffectTargetPrereq" content="textOnly"/>
+	<ElementType name="PromotionInStackPrereq" content="textOnly"/>
+	<ElementType name="ReligionPrereq" content="textOnly"/>
+	<ElementType name="StateReligionPrereq" content="textOnly"/>
+	<ElementType name="TechPrereq" content="textOnly"/>
+	<ElementType name="PrereqTraits" content="eltOnly">
+		<element type="PrereqTrait" minOccurs="0"/>
+	</ElementType>
+	<ElementType name="PrereqTrait" content="textOnly"/>
+	<ElementType name="AddPromotions" content="eltOnly">
+		<element type="AddPromotion" minOccurs="0"/>
+	</ElementType>
+	<ElementType name="AddPromotion" content="textOnly"/>
+	<ElementType name="RemovePromotions" content="eltOnly">
+		<element type="RemovePromotion" minOccurs="0"/>
+	</ElementType>
+	<ElementType name="RemovePromotion" content="textOnly"/>
+	<ElementType name="iPromotionDuration" content="textOnly" dt:type="int"/>
+	<ElementType name="iPrereqBroadAlignment" content="textOnly" dt:type="int"/>
+	<ElementType name="iAlignmentModifier" content="textOnly" dt:type="int"/>
+	<ElementType name="iPrereqBroadEthicalAlignment" content="textOnly" dt:type="int"/>
+	<ElementType name="iEthicalAlignmentModifier" content="textOnly" dt:type="int"/>
+	<ElementType name="bSummonMaster" content="textOnly" dt:type="boolean"/>
+	<ElementType name="PrereqNotAttacked" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bSetHasAttacked" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bRemoveHasAttacked" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bAllowAI" content="textOnly" dt:type="boolean"/>
+	<ElementType name="PrereqAvailableCommander" content="textOnly" dt:type="boolean"/>
+	<ElementType name="PrereqIsNOTMinion" content="textOnly" dt:type="boolean"/>
+	<ElementType name="PrereqIsMinion" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bTargetAdjacentToWaterOnly" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bAdjacentToWaterOnly" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bCasterMustBeAlive" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bCasterNoDuration" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bCausesWar" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bGlobal" content="textOnly" dt:type="boolean"/>
+	<ElementType name="Quote" content="textOnly"/>
+	<ElementType name="bInBordersOnly" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bInCityOnly" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bPrereqSlaveTrade" content="textOnly" dt:type="boolean"/>
+	<ElementType name="iAIWeight" content="textOnly" dt:type="int"/>
+	<ElementType name="iCasterMinLevel" content="textOnly" dt:type="int"/>
+	<ElementType name="bDisplayWhenDisabled" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bHasCasted" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bIgnoreHasCasted" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bResistable" content="textOnly" dt:type="boolean"/>
+	<ElementType name="iRange" content="textOnly" dt:type="int"/>
+	<ElementType name="iTargetRange" content="textOnly" dt:type="int"/>
+	<ElementType name="iNumTargets" content="textOnly" dt:type="int"/>
+	<ElementType name="iResistModify" content="textOnly" dt:type="int"/>
+	<ElementType name="iDamage" content="textOnly" dt:type="int"/>
+	<ElementType name="iDamageLimit" content="textOnly" dt:type="int"/>
+	<ElementType name="DamageType" content="textOnly"/>
+	<ElementType name="bBuffCasterOnly" content="textOnly" dt:type="boolean"/>
+	<ElementType name="ConvertUnitType" content="textOnly"/>
+	<ElementType name="CreateBuildingType" content="textOnly"/>
+	<ElementType name="CreateFeatureType" content="textOnly"/>
+	<ElementType name="CreatePlotEffectType" content="textOnly"/>
+	<ElementType name="RemovePlotEffectType" content="textOnly"/>
+	<ElementType name="CreateImprovementType" content="textOnly"/>
+	<ElementType name="SpreadReligion" content="textOnly"/>
+	<ElementType name="CreateUnitType" content="textOnly"/>
+	<ElementType name="iCreateUnitNum" content="textOnly" dt:type="int"/>
+	<ElementType name="bCopyCastersPromotions" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bPermanentUnitCreate" content="textOnly" dt:type="boolean"/>
+	<ElementType name="CreateUnitPromotion" content="textOnly"/>
+	<ElementType name="bImmuneTeam" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bImmuneNeutral" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bImmuneEnemy" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bImmuneFlying" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bImmuneNotAlive" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bTargetSummon" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bAbility" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bDispel" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bPush" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bRemoveHasCasted" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bSacrificeCaster" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bIsAutoCastable" content="textOnly" dt:type="boolean"/>
+	<ElementType name="iChangePopulation" content="textOnly" dt:type="int"/>
+	<ElementType name="iCost" content="textOnly" dt:type="int"/>
+	<ElementType name="iDelay" content="textOnly" dt:type="int"/>
+	<ElementType name="iImmobileTurns" content="textOnly" dt:type="int"/>
+	<ElementType name="iFortifyTurns" content="textOnly" dt:type="int"/>
+	<ElementType name="iMiscastChance" content="textOnly" dt:type="int"/>
+	<ElementType name="PyMiscast" content="textOnly"/>
+	<ElementType name="PyResult" content="textOnly"/>
+	<ElementType name="PyRequirement" content="textOnly"/>
+	<ElementType name="PyHelp" content="textOnly"/>
+	<ElementType name="Effect" content="textOnly"/>
+	<ElementType name="Sound" content="textOnly"/>
+	<ElementType name="HotKey" content="textOnly"/>
+	<ElementType name="bAltDown" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bShiftDown" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bCtrlDown" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bGraphicalOnly" content="textOnly" dt:type="boolean"/>
+	<ElementType name="iHotKeyPriority" content="textOnly" dt:type="int"/>
+	<ElementType name="bResurrect" content="textOnly" dt:type="boolean"/>
+	<ElementType name="HotKeyAlt" content="textOnly"/>
+	<ElementType name="bAltDownAlt" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bShiftDownAlt" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bCtrlDownAlt" content="textOnly" dt:type="boolean"/>
+	<ElementType name="iHotKeyPriorityAlt" content="textOnly" dt:type="int"/>
+	<ElementType name="iOrderPriority" content="textOnly" dt:type="int"/>
+	<ElementType name="Button" content="textOnly"/>
+	<ElementType name="SpellInfo" content="eltOnly" order="many">
+		<element type="Type"/>
+		<element type="bForceOverwrite"/>
+		<element type="bTypeDependency"/>
+		<element type="AndDependencyTypes"/>
+		<element type="OrDependencyTypes"/>
+		<element type="Description"/>
+		<element type="Civilopedia"/>
+		<element type="Strategy"/>
+		<element type="Help"/>
+		<element type="bCityAction"/>
+		<element type="bTargeted"/>
+		<element type="SpellClasses"/>
+		<element type="iMagicalPowerPrereq"/>
+		<element type="iCrimePrereq"/>
+		<element type="PromotionPrereq1"/>
+		<element type="PromotionPrereq2"/>
+		<element type="UnitPrereq"/>
+		<element type="UnitClassPrereq"/>
+		<element type="UnitCombatPrereq"/>
+		<element type="UnitInStackPrereq"/>
+		<element type="BuildingPrereq"/>
+		<element type="BuildingClassPrereq"/>
+		<element type="BuildingClassOwnedPrereq"/>
+		<element type="CivilizationPrereq"/>
+		<element type="CorporationPrereq"/>
+		<element type="FeatureOrPrereq1"/>
+		<element type="FeatureOrPrereq2"/>
+		<element type="ImprovementPrereq"/>
+		<element type="PlotEffectPrereq"/>
+		<element type="PlotEffectTargetPrereq"/>
+		<element type="PromotionInStackPrereq"/>
+		<element type="UnitsIgnorePromotion"/>
+		<element type="PromotionsPrereq"/>
+		<element type="TargetPromotionsPrereq"/>
+		<element type="ReligionPrereq"/>
+		<element type="StateReligionPrereq"/>
+		<element type="TechPrereq"/>
+		<element type="PrereqTraits"/>
+		<element type="AddPromotions"/>
+		<element type="RemovePromotions"/>
+		<element type="PrereqAvailableCommander"/>
+		<element type="PrereqIsMinion"/>
+		<element type="PrereqIsNOTMinion"/>
+		<element type="PrereqNotAttacked"/>
+		<element type="bSetHasAttacked"/>
+		<element type="bRemoveHasAttacked"/>
+		<element type="iPromotionDuration"/>
+		<element type="iPrereqBroadAlignment"/>
+		<element type="iAlignmentModifier"/>
+		<element type="iPrereqBroadEthicalAlignment"/>
+		<element type="iEthicalAlignmentModifier"/>
+		<element type="bAllowAI"/>
+		<element type="bTargetAdjacentToWaterOnly"/>
+		<element type="bAdjacentToWaterOnly"/>
+		<element type="bCasterMustBeAlive"/>
+		<element type="bCasterNoDuration"/>
+		<element type="bCausesWar"/>
+		<element type="bGlobal"/>
+		<element type="Quote"/>
+		<element type="bInBordersOnly"/>
+		<element type="bInCityOnly"/>
+		<element type="bPrereqSlaveTrade"/>
+		<element type="iAIWeight"/>
+		<element type="iCasterMinLevel"/>
+		<element type="bDisplayWhenDisabled"/>
+		<element type="bHasCasted"/>
+		<element type="bIgnoreHasCasted"/>
+		<element type="bResistable"/>
+		<element type="iRange"/>
+		<element type="iTargetRange"/>
+		<element type="iNumTargets"/>
+		<element type="iResistModify"/>
+		<element type="iDamage"/>
+		<element type="iDamageLimit"/>
+		<element type="DamageType"/>
+		<element type="bBuffCasterOnly"/>
+		<element type="ConvertUnitType"/>
+		<element type="CreateBuildingType"/>
+		<element type="CreateFeatureType"/>
+		<element type="CreatePlotEffectType"/>
+		<element type="RemovePlotEffectType"/>
+		<element type="CreateImprovementType"/>
+		<element type="SpreadReligion"/>
+		<element type="CreateUnitType"/>
+		<element type="iCreateUnitNum"/>
+		<element type="bCopyCastersPromotions"/>
+		<element type="bPermanentUnitCreate"/>
+		<element type="CreateUnitPromotion"/>
+		<element type="bImmuneTeam"/>
+		<element type="bImmuneNeutral"/>
+		<element type="bImmuneEnemy"/>
+		<element type="bImmuneFlying"/>
+		<element type="bImmuneNotAlive"/>
+		<element type="bTargetSummon"/>
+		<element type="bAbility"/>
+		<element type="bDispel"/>
+		<element type="bPush"/>
+		<element type="bRemoveHasCasted"/>
+		<element type="bSacrificeCaster"/>
+		<element type="bIsAutoCastable"/>
+		<element type="bSummonMaster"/>
+		<element type="bResurrect"/>
+		<element type="iChangePopulation"/>
+		<element type="iCost"/>
+		<element type="iDelay"/>
+		<element type="iImmobileTurns"/>
+		<element type="iFortifyTurns"/>
+		<element type="iMiscastChance"/>
+		<element type="PyHelp"/>
+		<element type="PyMiscast"/>
+		<element type="PyResult"/>
+		<element type="PyRequirement"/>
+		<element type="Effect"/>
+		<element type="Sound"/>
+		<element type="HotKey"/>
+		<element type="bAltDown"/>
+		<element type="bShiftDown"/>
+		<element type="bCtrlDown"/>
+		<element type="bGraphicalOnly"/>
+		<element type="iHotKeyPriority"/>
+		<element type="Button"/>
+		<element type="iOrderPriority"/>
+		<element type="SpellBonuses"/>
+		</ElementType>
+	<ElementType name="SpellInfos" content="eltOnly">
+		<element type="SpellInfo" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="Civ4SpellInfos" content="eltOnly">
+		<element type="SpellInfos" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="SpellClassInfo" content="eltOnly" order="many">
+		<element type="Type"/>
+		<element type="bForceOverwrite"/>
+		<element type="Description"/>
+		<element type="Civilopedia"/>
+		<element type="Strategy"/>
+		<element type="Help"/>
+	</ElementType>
+	<ElementType name="SpellClassInfos" content="eltOnly">
+		<element type="SpellClassInfo" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="Civ4SpellClassInfos" content="eltOnly">
+		<element type="SpellClassInfos" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+
+</Schema>

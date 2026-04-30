@@ -830,7 +830,7 @@
 				</FeatureMoveCost>
 				<FeatureMoveCost>
 					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<iFeatureMoveCost>-2</iFeatureMoveCost>
+					<iFeatureMoveCost>-1</iFeatureMoveCost>
 				</FeatureMoveCost>
 			</FeatureMoveCosts>
 			<Button>Art/Interface/Buttons/Promotions/Races/darkElf.dds</Button>
@@ -874,7 +874,7 @@
 				</FeatureMoveCost>
 				<FeatureMoveCost>
 					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<iFeatureMoveCost>-2</iFeatureMoveCost>
+					<iFeatureMoveCost>-1</iFeatureMoveCost>
 				</FeatureMoveCost>
 			</FeatureMoveCosts>
 			<Button>Art/Interface/Buttons/Promotions/Races/Elf.dds</Button>
@@ -916,7 +916,7 @@
 				</FeatureMoveCost>
 				<FeatureMoveCost>
 					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<iFeatureMoveCost>-2</iFeatureMoveCost>
+					<iFeatureMoveCost>-1</iFeatureMoveCost>
 				</FeatureMoveCost>
 			</FeatureMoveCosts>
 			<Button>Art/Interface/Buttons/Promotions/Races/onceElf.dds</Button>
