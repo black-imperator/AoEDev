@@ -12370,7 +12370,7 @@
 			<Strategy>TXT_KEY_BUILDING_CATHEDRAL_OF_REBIRTH_STRATEGY</Strategy>
 			<Advisor>ADVISOR_RELIGION</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_CATHEDRAL_OF_REBIRTH</ArtDefineTag>
-			<PrereqTech>TECH_RELIGIOUS_LAW</PrereqTech>
+			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
 			<FreePromotion>PROMOTION_HOMELAND</FreePromotion>
 			<bNeverCapture>1</bNeverCapture>
 			<iAIWeight>30</iAIWeight>

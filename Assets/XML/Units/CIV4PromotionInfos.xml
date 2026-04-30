@@ -41825,8 +41825,39 @@
 			<Type>PROMOTION_RAISE_THE_DEAD_SCIONS_PRIEST</Type>
 			<Description>TXT_KEY_PROMOTION_RAISE_THE_DEAD_SCIONS</Description>
 			<CaptureUnitClass>UNITCLASS_REBORN</CaptureUnitClass>
-			<iSlaveGenerationChance>5</iSlaveGenerationChance>
+			<iSlaveGenerationChance>15</iSlaveGenerationChance>
+			<PromotionSummonPerk>PROMOTION_RAISE_THE_DEAD_SCIONS_PRIEST</PromotionSummonPerk>
 			<bPrereqAliveCapture>1</bPrereqAliveCapture>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
 			<Button>Art/Interface/Buttons/Promotions/Civs/Scions/Necromancer.dds</Button>
 			<iMinLevel>-1</iMinLevel>
 		</PromotionInfo>

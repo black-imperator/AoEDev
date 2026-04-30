@@ -27290,9 +27290,9 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqBuilding>BUILDING_CATHEDRAL_OF_REBIRTH</PrereqBuilding>
-			<PrereqTech>TECH_RELIGIOUS_LAW</PrereqTech>
+			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
 			<iAIWeight>4</iAIWeight>
-			<iCost>345</iCost>
+			<iCost>245</iCost>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMoves>2</iMoves>
 			<iCombat>0</iCombat>
