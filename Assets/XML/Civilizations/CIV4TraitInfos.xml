@@ -4917,6 +4917,12 @@
 			<Civilopedia>TXT_KEY_TRAIT_GRAVELEECH_PEDIA</Civilopedia>
 			<Description>TXT_KEY_TRAIT_GRAVELEECH</Description>
 			<ShortDescription>TXT_KEY_TRAIT_GRAVELEECH_SHORT</ShortDescription>
+			<ExtraBuildingClasses>
+				<ExtraBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_UNDYING_RITUAL_HOUSE</BuildingClassType>
+					<BuildingType>BUILDING_UNDYING_RITUAL_HOUSE</BuildingType>
+				</ExtraBuildingClass>
+			</ExtraBuildingClasses>
 		</TraitInfo>
 	</TraitInfos>
 </Civ4TraitInfos>

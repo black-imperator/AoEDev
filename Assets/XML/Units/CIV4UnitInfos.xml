@@ -37071,6 +37071,8 @@
 			<bPillage>1</bPillage>
 			<UnitClassUpgrades>
 				<UnitClassUpgradeType>UNITCLASS_HIGH_PRIEST_OF_WINTER</UnitClassUpgradeType>
+				<UnitClassUpgradeType>UNITCLASS_PALADIN</UnitClassUpgradeType>
+				<UnitClassUpgradeType>UNITCLASS_EIDOLON</UnitClassUpgradeType>
 			</UnitClassUpgrades>
 			<UnitAIs>
 				<UnitAI>
