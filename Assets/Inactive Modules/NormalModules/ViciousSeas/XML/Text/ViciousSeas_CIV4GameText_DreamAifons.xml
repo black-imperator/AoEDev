@@ -615,6 +615,14 @@ One Condatis was a battle worthy of song, two Condatis is a sick joke by The One
 		<Spanish>Nightmare Revealed</Spanish>
 	</TEXT>
 	<TEXT> 
+		<Tag>TXT_KEY_PROMOTION_NIGHTMARE_AIFON_MASK</Tag>
+		<English>Nightmare Revealed (Help me!)</English>
+		<French>Nightmare Revealed (Help me!)</French>
+		<German>Nightmare Revealed (Help me!)</German>
+		<Italian>Nightmare Revealed (Help me!)</Italian>
+		<Spanish>Nightmare Revealed (Help me!)</Spanish>
+	</TEXT>
+	<TEXT> 
 		<Tag>TXT_KEY_PROMOTION_DREAM_AIFON</Tag>
 		<English>Dreaming</English>
 		<French>Dreaming</French>

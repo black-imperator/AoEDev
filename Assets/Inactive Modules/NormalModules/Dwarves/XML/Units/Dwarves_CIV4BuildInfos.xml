@@ -6,6 +6,75 @@
 <!-- Build Infos -->
 <Civ4BuildInfos xmlns="x-schema:Dwarves_CIV4UnitSchema.xml">
 	<BuildInfos>
+		<BuildInfo> <!-- Dwarven Mine Khazad -->
+			<Type>BUILD_DWARVEN_MINE_KHAZAD</Type>
+			<Description>TXT_KEY_BUILD_DWARVEN_MINE</Description>
+			<Help/>
+			<PrereqTech>NONE</PrereqTech>
+			<iTime>2800</iTime>
+			<iCost>0</iCost>
+			<bKill>0</bKill>
+			<LinkedBuilds>
+				<LinkedBuild>BUILD_REMOVE_FOREST</LinkedBuild>
+				<LinkedBuild>BUILD_REMOVE_JUNGLE</LinkedBuild>
+			</LinkedBuilds>
+			<ImprovementType>IMPROVEMENTCLASS_DWARVEN_MINE</ImprovementType>
+			<RouteType>NONE</RouteType>
+			<EntityEvent>ENTITY_EVENT_MINE</EntityEvent>
+			<FeatureStructs>
+				<FeatureStruct>
+					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>1000</iTime>
+					<iProduction>10</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>800</iTime>
+					<iProduction>20</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>500</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>500</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>2000</iTime>
+					<iProduction>20</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+			</FeatureStructs>
+			<HotKey>KB_M</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<Button>Art/Civs/Other/FortCommander/FortB.dds</Button>
+			<TechBuildDiscounts>
+				<TechBuildDiscount>
+					<TechType>TECH_MINING</TechType>
+					<iDiscount>700</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_CONSTRUCTION</TechType>
+					<iDiscount>700</iDiscount>
+				</TechBuildDiscount>
+			</TechBuildDiscounts>
+		</BuildInfo>
 		<BuildInfo> <!-- Dwarven Settlement -->
 			<Type>BUILD_DWARVEN_SETTLEMENT</Type>
 			<Description>TXT_KEY_BUILD_DWARVEN_SETTLEMENT</Description>

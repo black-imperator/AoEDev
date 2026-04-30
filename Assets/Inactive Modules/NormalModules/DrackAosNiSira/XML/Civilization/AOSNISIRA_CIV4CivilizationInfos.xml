@@ -1201,5 +1201,23 @@
 			<Hero>UNIT_FAIRY_ALIN</Hero>
 			<DefaultRace>PROMOTION_RACE_FAIRY</DefaultRace>
 		</CivilizationInfo>
+		<CivilizationInfo>
+			<Type>CIVILIZATION_CHISLEV</Type>
+			<Leaders>
+				<Leader>
+					<LeaderName>LEADER_FAIRY_ISKAYA</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
+			</Leaders>
+		</CivilizationInfo>
+		<CivilizationInfo>
+			<Type>CIVILIZATION_ELOHIM</Type>
+			<Leaders>
+				<Leader>
+					<LeaderName>LEADER_FAIRY_EIRENE</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
+			</Leaders>
+		</CivilizationInfo>
 	</CivilizationInfos>
 </Civ4CivilizationInfos>

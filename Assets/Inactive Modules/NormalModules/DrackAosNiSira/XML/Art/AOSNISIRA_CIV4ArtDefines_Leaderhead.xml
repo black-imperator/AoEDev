@@ -142,5 +142,21 @@
 			<NoShaderNIF/>
 			<BackgroundKFM/>
 		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>		<!-- Eirene -->					<!-- Fairy Refugee for Elohim -->
+			<Type>ART_DEF_LEADER_FAIRY_EIRENE</Type> 
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Leader\Eirene_Button.dds</Button>
+			<NIF>Modules\NormalModules\DrackAosNiSira\Art\Leader\Eirene.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>		<!-- Iskaya -->					<!-- Fairy Refugee for Chislev -->
+			<Type>ART_DEF_LEADER_FAIRY_ISKAYA</Type> 
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Leader\IskayaButton.dds</Button>
+			<NIF>Modules\NormalModules\DrackAosNiSira\Art\Leader\Iskaya.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
 	</LeaderheadArtInfos>
 </Civ4ArtDefines>

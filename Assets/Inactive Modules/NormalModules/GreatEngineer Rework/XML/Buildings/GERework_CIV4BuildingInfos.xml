@@ -19,17 +19,18 @@
 			<iAsset>4</iAsset>
 			<iPower>2</iPower>
 			<fVisibilityPriority>10</fVisibilityPriority>
+			<iMilitaryProductionModifier>-5</iMilitaryProductionModifier>
 			<YieldModifiers>
 				<iYield>0</iYield>
-				<iYield>5</iYield>
+				<iYield>10</iYield>
 				<iYield>0</iYield>
 			</YieldModifiers>
-			<SpecialistClassCounts>
-				<SpecialistClassCount>
-					<SpecialistClass>SPECIALISTCLASS_ENGINEER</SpecialistClass>
-					<iSpecialistClassCount>1</iSpecialistClassCount>
-				</SpecialistClassCount>
-			</SpecialistClassCounts>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<ConstructSound>AS2D_BUILD_FORGE</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -59,9 +60,10 @@
 			<iAsset>4</iAsset>
 			<iPower>2</iPower>
 			<fVisibilityPriority>10</fVisibilityPriority>
+			<iMilitaryProductionModifier>-5</iMilitaryProductionModifier>
 			<YieldModifiers>
 				<iYield>0</iYield>
-				<iYield>5</iYield>
+				<iYield>10</iYield>
 				<iYield>0</iYield>
 			</YieldModifiers>
 			<CommerceChanges>
@@ -69,12 +71,12 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 			</CommerceChanges>
-			<SpecialistClassCounts>
-				<SpecialistClassCount>
-					<SpecialistClass>SPECIALISTCLASS_ENGINEER</SpecialistClass>
-					<iSpecialistClassCount>1</iSpecialistClassCount>
-				</SpecialistClassCount>
-			</SpecialistClassCounts>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<ConstructSound>AS2D_BUILD_FORGE</ConstructSound>
 			<BuildingClassNeededs>
 				<BuildingClassNeeded>
@@ -114,9 +116,10 @@
 			<iAsset>4</iAsset>
 			<iPower>2</iPower>
 			<fVisibilityPriority>10</fVisibilityPriority>
+			<iMilitaryProductionModifier>-5</iMilitaryProductionModifier>
 			<YieldModifiers>
 				<iYield>0</iYield>
-				<iYield>5</iYield>
+				<iYield>10</iYield>
 				<iYield>0</iYield>
 			</YieldModifiers>
 			<CommerceChanges>
@@ -124,12 +127,12 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 			</CommerceChanges>
-			<SpecialistClassCounts>
-				<SpecialistClassCount>
-					<SpecialistClass>SPECIALISTCLASS_ENGINEER</SpecialistClass>
-					<iSpecialistClassCount>1</iSpecialistClassCount>
-				</SpecialistClassCount>
-			</SpecialistClassCounts>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<ConstructSound>AS2D_BUILD_FORGE</ConstructSound>
 			<BuildingClassNeededs>
 				<BuildingClassNeeded>
@@ -169,9 +172,10 @@
 			<iAsset>4</iAsset>
 			<iPower>2</iPower>
 			<fVisibilityPriority>10</fVisibilityPriority>
+			<iMilitaryProductionModifier>-5</iMilitaryProductionModifier>
 			<YieldModifiers>
 				<iYield>0</iYield>
-				<iYield>5</iYield>
+				<iYield>10</iYield>
 				<iYield>0</iYield>
 			</YieldModifiers>
 			<CommerceChanges>
@@ -179,12 +183,12 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 			</CommerceChanges>
-			<SpecialistClassCounts>
-				<SpecialistClassCount>
-					<SpecialistClass>SPECIALISTCLASS_ENGINEER</SpecialistClass>
-					<iSpecialistClassCount>1</iSpecialistClassCount>
-				</SpecialistClassCount>
-			</SpecialistClassCounts>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<ConstructSound>AS2D_BUILD_FORGE</ConstructSound>
 			<BuildingClassNeededs>
 				<BuildingClassNeeded>
@@ -233,16 +237,21 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 			</CommerceChanges>
-			<SpecialistClassCounts>
-				<SpecialistClassCount>
-					<SpecialistClass>SPECIALISTCLASS_MERCHANT</SpecialistClass>
-					<iSpecialistClassCount>1</iSpecialistClassCount>
-				</SpecialistClassCount>
-				<SpecialistClassCount>
-					<SpecialistClass>SPECIALISTCLASS_ENGINEER</SpecialistClass>
-					<iSpecialistClassCount>1</iSpecialistClassCount>
-				</SpecialistClassCount>
-			</SpecialistClassCounts>
+				<YieldChanges>
+				<iYield>0</iYield>
+				<iYield>3</iYield>
+				<iYield>0</iYield>
+			</YieldChanges>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<ConstructSound>AS2D_BUILD_FORGE</ConstructSound>
 			<BuildingClassNeededs>
 				<BuildingClassNeeded>
@@ -284,9 +293,10 @@
 			<iAsset>4</iAsset>
 			<iPower>2</iPower>
 			<fVisibilityPriority>10</fVisibilityPriority>
+			<iMilitaryProductionModifier>-5</iMilitaryProductionModifier>
 			<YieldModifiers>
 				<iYield>0</iYield>
-				<iYield>5</iYield>
+				<iYield>10</iYield>
 				<iYield>0</iYield>
 			</YieldModifiers>
 			<CommerceChanges>
@@ -294,12 +304,12 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 			</CommerceChanges>
-			<SpecialistClassCounts>
-				<SpecialistClassCount>
-					<SpecialistClass>SPECIALISTCLASS_ENGINEER</SpecialistClass>
-					<iSpecialistClassCount>1</iSpecialistClassCount>
-				</SpecialistClassCount>
-			</SpecialistClassCounts>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<ConstructSound>AS2D_BUILD_FORGE</ConstructSound>
 			<BuildingClassNeededs>
 				<BuildingClassNeeded>

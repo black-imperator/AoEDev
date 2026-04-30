@@ -822,7 +822,12 @@
 				<City>TXT_KEY_CITY_BARBARIAN_29</City>
 				<City>TXT_KEY_CITY_BARBARIAN_30</City>
 			</Cities>
-			<Buildings/>
+			<Buildings>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_BHALL_PRODUCTION</BuildingClassType>
+					<BuildingType>BUILDING_BHALL_PRODUCTION</BuildingType>
+				</Building>
+			</Buildings>
 			<Units>
 				<Unit>
 					<UnitClassType>UNITCLASS_HAG</UnitClassType>

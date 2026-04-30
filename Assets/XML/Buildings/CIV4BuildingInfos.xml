@@ -19882,7 +19882,7 @@
 			<Description>TXT_KEY_BUILDING_BHALL_PRODUCTION</Description>
 			<Civilopedia>TXT_KEY_BUILDING_BHALL_PRODUCTION_PEDIA</Civilopedia>
 			<ArtDefineTag>ART_DEF_BUILDING_WARRENS</ArtDefineTag>
-			<PrereqTech>TECH_CRAFTING</PrereqTech>
+			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
 			<iPrereqPopulation>1</iPrereqPopulation>
 			<iAIWeight>10</iAIWeight>
 			<iCost>-1</iCost>
@@ -19890,6 +19890,11 @@
 			<iConquestProb>0</iConquestProb>
 			<iAsset>4</iAsset>
 			<fVisibilityPriority>1000</fVisibilityPriority>
+			<ObsoleteSafeCommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>1</iCommerce>
+			</ObsoleteSafeCommerceChanges>
 			<ConstructSound>AS2D_BUILD_COURTHOUSE</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -19899,7 +19904,7 @@
 			</Flavors>
 			<PerPopBonuses>
 				<PerPopBonus>
-					<fProduction>2</fProduction>
+					<fProduction>1.5</fProduction>
 				</PerPopBonus>
 			</PerPopBonuses>
 			<bAutoBuild>1</bAutoBuild>

@@ -13,7 +13,11 @@ Aledeth
 [shortdesc]
 Reworks how Great Engineers construct the Masters Hall and other Master Buildings with balance changes
 [desc]
+v1.0
 Changes the Great Engineer to build the Masters Hall instead of the various Master Buildings
 changes the other Master Buildings to require the Masters Hall to be built first in their city
 Rebalances the Masters Hall since its much easier to get 
 The production bonus of the Masters Hall Master Buildings have been reduced but no longer penalize military production
+
+v1.1
+Increased the production bonus of the buildings to +10% but added a -5% mil production penalty. Master Rancher has no % bonuses but adds +3 flat hammers now in addition to +5 Gold.
