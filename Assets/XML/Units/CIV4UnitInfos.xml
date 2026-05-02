@@ -25865,7 +25865,7 @@
 			<PrereqBuilding>BUILDING_PALACE_SCIONS</PrereqBuilding>
 			<PrereqTech>TECH_THE_GIFT</PrereqTech>
 			<iAIWeight>1</iAIWeight>
-			<iCost>500</iCost>
+			<iCost>400</iCost>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMoves>2</iMoves>
 			<iCombat>0</iCombat>
