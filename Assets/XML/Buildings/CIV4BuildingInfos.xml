@@ -9464,7 +9464,7 @@
 			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_EAGLENEW_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_EAGLE</ArtDefineTag>
-			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
+			<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
 			<FreePromotion>PROMOTION_CRAFTING_TRADITION</FreePromotion>
 			<ProductionTraits>
 				<ProductionTrait>
@@ -9489,12 +9489,6 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>1000</fVisibilityPriority>
-			<BuildingClassNeededs>
-				<BuildingClassNeeded>
-					<BuildingClassType>BUILDINGCLASS_CLAN_STRUCTURE_LODGE</BuildingClassType>
-					<bNeededInCity>1</bNeededInCity>
-				</BuildingClassNeeded>
-			</BuildingClassNeededs>
 			<BuildingExcludes>
 				<BuildingExclude>
 				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_COYOTE</BuildingClassType>
@@ -9607,7 +9601,7 @@
 			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_DEER_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_COYOTE</ArtDefineTag>
-			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
+			<PrereqTech>TECH_TRACKING</PrereqTech>
 			<FreePromotion>PROMOTION_SUBDUE_ANIMAL</FreePromotion>
 			<ProductionTraits>
 				<ProductionTrait>
@@ -9648,12 +9642,6 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>1000</fVisibilityPriority>
-			<BuildingClassNeededs>
-				<BuildingClassNeeded>
-					<BuildingClassType>BUILDINGCLASS_CLAN_STRUCTURE_LODGE</BuildingClassType>
-					<bNeededInCity>1</bNeededInCity>
-				</BuildingClassNeeded>
-			</BuildingClassNeededs>
 			<BuildingExcludes>
 				<BuildingExclude>
 				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_EAGLE</BuildingClassType>
@@ -9781,7 +9769,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_BEARNEW_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_BEARNEW_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_BEAR_TOTEM</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_BEAR</ArtDefineTag>
 			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
 			<FreePromotion>PROMOTION_SPIRIT_GUIDE</FreePromotion>
 			<ProductionTraits>
@@ -9807,13 +9795,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>1000</fVisibilityPriority>
-			<BuildingClassNeededs>
-				<BuildingClassNeeded>
-					<BuildingClassType>BUILDINGCLASS_CLAN_STRUCTURE_LODGE</BuildingClassType>
-					<bNeededInCity>1</bNeededInCity>
-				</BuildingClassNeeded>
-			</BuildingClassNeededs>
-				<BuildingExcludes>
+			<BuildingExcludes>
 				<BuildingExclude>
 				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_EAGLE</BuildingClassType>
 				<bExclude>1</bExclude>
@@ -9863,7 +9845,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_BEARNEW_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_BEARNEW_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_BEAR_TOTEM</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_BEAR</ArtDefineTag>
 			<FreePromotion>PROMOTION_SPIRIT_GUIDE</FreePromotion>
 			<bAutoBuild>1</bAutoBuild>
 			<bMustMaintain>1</bMustMaintain>
@@ -9925,7 +9907,7 @@
 			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_WOLF_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_SERPENT</ArtDefineTag>
-			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
+			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
 			<FreePromotion>PROMOTION_COMBAT1</FreePromotion>
 			<iMilitaryProductionModifier>20</iMilitaryProductionModifier>
 			<bMustMaintain>1</bMustMaintain>
@@ -9944,13 +9926,7 @@
 			<iAsset>6</iAsset>
 			<iPower>6</iPower>
 			<fVisibilityPriority>1000</fVisibilityPriority>
-			<BuildingClassNeededs>
-				<BuildingClassNeeded>
-					<BuildingClassType>BUILDINGCLASS_CLAN_STRUCTURE_LODGE</BuildingClassType>
-					<bNeededInCity>1</bNeededInCity>
-				</BuildingClassNeeded>
-			</BuildingClassNeededs>
-				<BuildingExcludes>
+			<BuildingExcludes>
 				<BuildingExclude>
 				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_EAGLE</BuildingClassType>
 				<bExclude>1</bExclude>
@@ -10058,7 +10034,7 @@
 			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_LONG_HAIR_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_TORTOISE</ArtDefineTag>
-			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
+			<PrereqTech>TECH_KNOWLEDGE_OF_THE_ETHER</PrereqTech>
 			<FreePromotion>PROMOTION_MAGIC_RESISTANCE</FreePromotion>
 			<ProductionTraits>
 				<ProductionTrait>
@@ -10086,12 +10062,6 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>1000</fVisibilityPriority>
-			<BuildingClassNeededs>
-				<BuildingClassNeeded>
-					<BuildingClassType>BUILDINGCLASS_CLAN_STRUCTURE_LODGE</BuildingClassType>
-					<bNeededInCity>1</bNeededInCity>
-				</BuildingClassNeeded>
-			</BuildingClassNeededs>
 				<BuildingExcludes>
 				<BuildingExclude>
 				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_EAGLE</BuildingClassType>
@@ -10203,8 +10173,8 @@
 			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_SKY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_SKY_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_EAGLE</ArtDefineTag>
-			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
+			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_SKY</ArtDefineTag>
+			<PrereqTech>TECH_PHILOSOPHY</PrereqTech>
 			<ProductionTraits>
 				<ProductionTrait>
 					<ProductionTraitType>TRAIT_CHARISMATIC</ProductionTraitType>
@@ -10221,12 +10191,6 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>1000</fVisibilityPriority>
-			<BuildingClassNeededs>
-				<BuildingClassNeeded>
-					<BuildingClassType>BUILDINGCLASS_CLAN_STRUCTURE_LODGE</BuildingClassType>
-					<bNeededInCity>1</bNeededInCity>
-				</BuildingClassNeeded>
-			</BuildingClassNeededs>
 			<BuildingExcludes>
 				<BuildingExclude>
 				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_COYOTE</BuildingClassType>
@@ -10273,7 +10237,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_SKY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_SKY_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_EAGLE</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_SKY</ArtDefineTag>
 			<bAutoBuild>1</bAutoBuild>
 			<bMustMaintain>1</bMustMaintain>
 			<bNeverCapture>1</bNeverCapture>
@@ -10322,8 +10286,8 @@
 			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_THREE_SISTERS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_THREE_SISTERS_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_EAGLE</ArtDefineTag>
-			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
+			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_THREE_SISTERS</ArtDefineTag>
+			<PrereqTech>TECH_TRADE</PrereqTech>
 			<ProductionTraits>
 				<ProductionTrait>
 					<ProductionTraitType>TRAIT_CHARISMATIC</ProductionTraitType>
@@ -10339,12 +10303,6 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>1000</fVisibilityPriority>
-			<BuildingClassNeededs>
-				<BuildingClassNeeded>
-					<BuildingClassType>BUILDINGCLASS_CLAN_STRUCTURE_LODGE</BuildingClassType>
-					<bNeededInCity>1</bNeededInCity>
-				</BuildingClassNeeded>
-			</BuildingClassNeededs>
 			<BuildingExcludes>
 				<BuildingExclude>
 				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_COYOTE</BuildingClassType>
@@ -10391,7 +10349,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_THREE_SISTERS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_THREE_SISTERS_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_EAGLE</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_THREE_SISTERS</ArtDefineTag>
 			<bAutoBuild>1</bAutoBuild>
 			<bMustMaintain>1</bMustMaintain>
 			<bNeverCapture>1</bNeverCapture>

@@ -961,7 +961,7 @@
 			<Type>TRAIT_EAGLE_TRIBE_FAVOR</Type>
 			<TraitClass>TRAITCLASS_TRIBAL</TraitClass>
 			<iOnGainCounterModifier>100</iOnGainCounterModifier>
-			<iMinRequiredPoints>100</iMinRequiredPoints>
+			<iMinRequiredPoints>400</iMinRequiredPoints>
 			<Description>TXT_KEY_TRAIT_EAGLE_TRIBE_FAVOR</Description>
 			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_EAGLENEW_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_EAGLENEW_STRATEGY</Strategy>
@@ -983,7 +983,7 @@
 			<Type>TRAIT_COYOTE_TRIBE_FAVOR</Type>
 			<TraitClass>TRAITCLASS_TRIBAL</TraitClass>
 			<iOnGainCounterModifier>100</iOnGainCounterModifier>
-			<iMinRequiredPoints>100</iMinRequiredPoints>
+			<iMinRequiredPoints>400</iMinRequiredPoints>
 			<Description>TXT_KEY_TRAIT_COYOTE_TRIBE_FAVOR</Description>
 			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_DEER_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_DEER_STRATEGY</Strategy>
@@ -1014,7 +1014,7 @@
 			<Type>TRAIT_BEAR_TRIBE_FAVOR</Type>
 			<TraitClass>TRAITCLASS_TRIBAL</TraitClass>
 			<iOnGainCounterModifier>100</iOnGainCounterModifier>
-			<iMinRequiredPoints>100</iMinRequiredPoints>
+			<iMinRequiredPoints>400</iMinRequiredPoints>
 			<Description>TXT_KEY_TRAIT_BEAR_TRIBE_FAVOR</Description>
 			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_BEARNEW_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_BEARNEW_STRATEGY</Strategy>
@@ -1039,7 +1039,7 @@
 			<Type>TRAIT_SERPENT_TRIBE_FAVOR</Type>
 			<TraitClass>TRAITCLASS_TRIBAL</TraitClass>
 			<iOnGainCounterModifier>100</iOnGainCounterModifier>
-			<iMinRequiredPoints>100</iMinRequiredPoints>
+			<iMinRequiredPoints>400</iMinRequiredPoints>
 			<Description>TXT_KEY_TRAIT_SERPENT_TRIBE_FAVOR</Description>
 			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_WOLF_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_WOLF_STRATEGY</Strategy>
@@ -1065,7 +1065,7 @@
 			<Type>TRAIT_TORTOISE_TRIBE_FAVOR</Type>
 			<TraitClass>TRAITCLASS_TRIBAL</TraitClass>
 			<iOnGainCounterModifier>100</iOnGainCounterModifier>
-			<iMinRequiredPoints>100</iMinRequiredPoints>
+			<iMinRequiredPoints>400</iMinRequiredPoints>
 			<Description>TXT_KEY_TRAIT_TORTOISE_TRIBE_FAVOR</Description>
 			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_LONG_HAIR_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_LONG_HAIR_STRATEGY</Strategy>
@@ -1089,7 +1089,7 @@
 			<Type>TRAIT_SIXTH_TRIBE_FAVOR</Type>
 			<TraitClass>TRAITCLASS_TRIBAL</TraitClass>
 			<iOnGainCounterModifier>100</iOnGainCounterModifier>
-			<iMinRequiredPoints>100</iMinRequiredPoints>
+			<iMinRequiredPoints>400</iMinRequiredPoints>
 			<Description>TXT_KEY_TRAIT_SKY_TRIBE_FAVOR</Description>
 			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_SKY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_SKY_STRATEGY</Strategy>
@@ -1143,7 +1143,7 @@
 			<Type>TRAIT_SEVENTH_TRIBE_FAVOR</Type>
 			<TraitClass>TRAITCLASS_TRIBAL</TraitClass>
 			<iOnGainCounterModifier>100</iOnGainCounterModifier>
-			<iMinRequiredPoints>100</iMinRequiredPoints>
+			<iMinRequiredPoints>400</iMinRequiredPoints>
 			<Description>TXT_KEY_TRAIT_THREE_SISTERS_TRIBE_FAVOR</Description>
 			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_THREE_SISTERS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_THREE_SISTERS_STRATEGY</Strategy>
