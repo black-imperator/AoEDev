@@ -9988,6 +9988,150 @@
 			<iPowerMult>3</iPowerMult>
 			<bMilitaryHappiness>1</bMilitaryHappiness>
 		</UnitInfo>
+		<UnitInfo>		<!-- Great Necromancer -->
+			<Class>UNITCLASS_HEALER</Class>
+			<Type>UNIT_GREAT_NECROMANCER</Type>
+			<UniqueNames>
+				<UniqueName>Morgan Tud</UniqueName>
+				<UniqueName>Guo Yu</UniqueName>
+				<UniqueName>Pied Piper of Hamelin</UniqueName>
+				<UniqueName>Karadoc</UniqueName>
+				<UniqueName>Amello Raun</UniqueName>
+				<UniqueName>Lune of the White Knife</UniqueName>
+				<UniqueName>The Gift of Sucellus</UniqueName>
+				<UniqueName>Nala Plaguestalker</UniqueName>
+				<UniqueName>Riach Evinan</UniqueName>
+				<UniqueName>Mugati</UniqueName>
+				<UniqueName>Zil, Flower of Mekara</UniqueName>
+				<UniqueName>Nossina Tali'an</UniqueName>
+				<UniqueName>Lnelle</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_HEALER_GREATESTPEOPLE_1</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_HEALER_GREATESTPEOPLE_2</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_HEALER_GREATESTPEOPLE_3</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_HEALER_GREATESTPEOPLE_4</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_HEALER_GREATESTPEOPLE_5</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_HEALER_GREATESTPEOPLE_6</UniqueName>
+			</UniqueNames>
+			<Quotes>
+				<Quote>TXT_KEY_QUOTE_HEALER_1</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_2</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_3</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_4</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_5</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_6</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_7</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_8</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_9</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_10</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_11</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_12</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_13</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_GREATESTPEOPLE_1</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_GREATESTPEOPLE_2</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_GREATESTPEOPLE_3</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_GREATESTPEOPLE_4</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_GREATESTPEOPLE_5</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_GREATESTPEOPLE_6</Quote>
+			</Quotes>
+			<Images>
+				<Image>art\interface\popups\healer specialist\Image1.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image2.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image3.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image4.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image5.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image6.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image7.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image8.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image9.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image10.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image11.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image12.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image13.dds</Image>
+				<Image>art\interface\popups\greatpeople\Alan Rickman.dds</Image>
+				<Image>art\interface\popups\greatpeople\John Hurt.dds</Image>
+				<Image>art\interface\popups\greatpeople\Jon Pertwee.dds</Image>
+				<Image>art\interface\popups\greatpeople\Patrick Troughton.dds</Image>
+				<Image>art\interface\popups\greatpeople\William Hartnell.dds</Image>
+				<Image>art\interface\popups\greatpeople\David Mccallum.dds</Image>
+			</Images>
+			<Special>SPECIALUNIT_PEOPLE</Special>
+			<Combat>UNITCOMBAT_DISCIPLE</Combat>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_RESERVE</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_HIGH_NECROMANCER</Description>
+			<Civilopedia>TXT_KEY_UNIT_HIGH_NECROMANCER_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bGoldenAge>1</bGoldenAge>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_PROPHET</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_RESERVE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_CULTURE</FlavorType>
+					<iFlavor>1</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>2</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_HEALTH</FlavorType>
+					<iFlavor>3</iFlavor>
+				</Flavor>
+			</Flavors>
+			<iCombat>3</iCombat>
+			<bOnlyDefensive>0</bOnlyDefensive>
+			<iMoves>1</iMoves>
+			<iBaseDiscover>1000</iBaseDiscover>
+			<iDiscoverMultiplier>2</iDiscoverMultiplier>
+			<iAsset>0</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>1</iGroupSize>
+				<fMaxSpeed>1.25</fMaxSpeed>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>1</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_GREAT_NECROMANCER</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<iCombatDefense>3</iCombatDefense>
+			<iPowerMult>3</iPowerMult>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MEDIC1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MEDIC2</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MEDIC3</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_UNDEAD</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_DEATH1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_DEATH2</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+		</UnitInfo>
 		<UnitInfo>        <!-- Great Commander - Salamander -->
 			<Class>UNITCLASS_COMMANDER</Class>
 			<Type>UNIT_SALAMANDER</Type>

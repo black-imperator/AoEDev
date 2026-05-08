@@ -14696,18 +14696,90 @@
 					<BonusType>BONUS_ASH</BonusType>
 					<YieldModifiers>
 						<iYield>0</iYield>
-						<iYield>1</iYield>
+						<iYield>25</iYield>
 						<iYield>0</iYield>
 					</YieldModifiers>
 				</BonusYieldModifier>
 			</BonusYieldModifiers>
+			<LocalSpecialistClassYieldChanges>
+				<LocalSpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+					</YieldChanges>
+				</LocalSpecialistClassYieldChange>
+			</LocalSpecialistClassYieldChanges>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
+					<iSpecialistClassCount>2</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
 					<iFlavor>10</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_GOLD</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_SCIENCE</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>25</iFlavor>
 				</Flavor>
 			</Flavors>
 			<iPlotRadius>3</iPlotRadius>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Dtesh Dungeon -->
+			<BuildingClass>BUILDINGCLASS_DUNGEON</BuildingClass>
+			<Type>BUILDING_DUNGEON_DTESH</Type>
+			<Description>TXT_KEY_BUILDING_DUNGEON_DTESH</Description>
+			<Civilopedia>TXT_KEY_BUILDING_DUNGEON_DTESH_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_DUNGEON_DTESH</ArtDefineTag>
+			<PrereqTech>TECH_MASONRY</PrereqTech>
+			<iAIWeight>500</iAIWeight>
+			<iCost>120</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iConquestProb>25</iConquestProb>
+			<iAsset>4</iAsset>
+			<iCrime>-10</iCrime>
+			<fVisibilityPriority>1</fVisibilityPriority>
+			<BonusProductionModifiers>
+				<BonusProductionModifier>
+					<BonusType>BONUS_STONE</BonusType>
+					<iProductonModifier>50</iProductonModifier>
+				</BonusProductionModifier>
+			</BonusProductionModifiers>
+			<LocalSpecialistClassYieldChanges>
+				<LocalSpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_CITIZEN</SpecialistClass>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+						<iYield>2</iYield>
+					</YieldChanges>
+				</LocalSpecialistClassYieldChange>
+			</LocalSpecialistClassYieldChanges>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_GOLD</FlavorType>
+					<iFlavor>15</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+			<iPrereqBroadAlignment>0</iPrereqBroadAlignment>
+			<iAlignmentModifier>-5</iAlignmentModifier>
 		</BuildingInfo>
 		<BuildingInfo>		<!-- Eternal Council                                            D'tesh UB -->
 			<BuildingClass>BUILDINGCLASS_ELDER_COUNCIL</BuildingClass>
@@ -14742,12 +14814,20 @@
 			<SpecialistClassCounts>
 				<SpecialistClassCount>
 					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
-					<iSpecialistClassCount>2</iSpecialistClassCount>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
 				</SpecialistClassCount>
 			</SpecialistClassCounts>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_SCIENCE</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -14793,7 +14873,7 @@
 			</SpecialistClassCounts>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_RELIGION</FlavorType>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -14830,7 +14910,7 @@
 			<fVisibilityPriority>1</fVisibilityPriority>
 			<SpecialistClassCounts>
 				<SpecialistClassCount>
-					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
 					<iSpecialistClassCount>1</iSpecialistClassCount>
 				</SpecialistClassCount>
 				<SpecialistClassCount>
@@ -14841,7 +14921,7 @@
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_MILITARY</FlavorType>
-					<iFlavor>5</iFlavor>
+					<iFlavor>20</iFlavor>
 				</Flavor>
 				<Flavor>
 					<FlavorType>FLAVOR_SCIENCE</FlavorType>
@@ -14885,14 +14965,22 @@
 			<SpecialistClassCounts>
 				<SpecialistClassCount>
 					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
-					<iSpecialistClassCount>2</iSpecialistClassCount>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
 				</SpecialistClassCount>
 			</SpecialistClassCounts>
 			<ConstructSound>AS2D_BUILD_LIBRARY</ConstructSound>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_SCIENCE</FlavorType>
-					<iFlavor>10</iFlavor>
+					<iFlavor>15</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>15</iFlavor>
 				</Flavor>
 			</Flavors>
 			<iFreePromotionPick>0</iFreePromotionPick>

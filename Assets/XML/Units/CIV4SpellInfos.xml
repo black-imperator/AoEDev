@@ -6296,9 +6296,11 @@
 			<Description>TXT_KEY_SPELL_DEFILE_CRYPT</Description>
 			<Civilopedia>TXT_KEY_SPELL_DEFILE_CRYPT_PEDIA</Civilopedia>
 			<Help>TXT_KEY_SPELL_DEFILE_CRYPT_HELP</Help>
-			<UnitCombatPrereq>UNITCOMBAT_ADEPT</UnitCombatPrereq>
+			<PromotionPrereq1>PROMOTION_DTESH_AFFINITY_ENABLER</PromotionPrereq1>
+			<TechPrereq>TECH_KNOWLEDGE_OF_THE_ETHER</TechPrereq>
 			<CivilizationPrereq>CIVILIZATION_DTESH</CivilizationPrereq>
-			<bAllowAI>0</bAllowAI>
+			<bAllowAI>1</bAllowAI>
+			<iAIWeight>100</iAIWeight>
 			<bInBordersOnly>1</bInBordersOnly>
 			<bHasCasted>1</bHasCasted>
 			<ImprovementPrereq>IMPROVEMENT_DTESH_CRYPT</ImprovementPrereq>
@@ -6320,9 +6322,10 @@
 			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
 			<bHasCasted>1</bHasCasted>
 			<bResistable>1</bResistable>
+			<iResistModify>15</iResistModify>
 			<iRange>1</iRange>
 			<iDamage>15</iDamage>
-			<iDamageLimit>100</iDamageLimit>
+			<iDamageLimit>50</iDamageLimit>
 			<DamageType>DAMAGE_DEATH</DamageType>
 			<bImmuneTeam>1</bImmuneTeam>
 			<bImmuneNeutral>1</bImmuneNeutral>

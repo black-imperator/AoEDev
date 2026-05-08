@@ -6703,12 +6703,20 @@
 					<BuildingClassType>BUILDINGCLASS_TEMPLE_OF_THE_VEIL</BuildingClassType>
 					<BuildingType>NONE</BuildingType>
 				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_DUNGEON</BuildingClassType>
+					<BuildingType>BUILDING_DUNGEON_DTESH</BuildingType>
+				</Building>
 			</Buildings>
 	
 			<Units>
 				<Unit>
 					<UnitClassType>UNITCLASS_CHAMPION</UnitClassType>
 					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_HEALER</UnitClassType>
+					<UnitType>UNIT_GREAT_NECROMANCER</UnitType>
 				</Unit>
 				
 				<Unit>
@@ -6823,7 +6831,11 @@
 			<Specialists>
 				<Specialist>
 					<SpecialistClassType>SPECIALISTCLASS_HEALER</SpecialistClassType>
-					<SpecialistType>NONE</SpecialistType>
+					<SpecialistType>SPECIALIST_NECROMANCER</SpecialistType>
+				</Specialist>
+				<Specialist>
+					<SpecialistClassType>SPECIALISTCLASS_GREAT_HEALER</SpecialistClassType>
+					<SpecialistType>SPECIALIST_GREAT_NECROMANCER</SpecialistType>
 				</Specialist>
 			</Specialists>
 			<Improvements>
