@@ -23,10 +23,18 @@ static const int kBufSize = 2048;
 //
 // for logging
 //
-void CvXMLLoadUtility::logMsg(char* format, ... )
+/* CV4_NOINLINE: clang inlines variadic helpers, which destroys
+ * va_start's stack-offset assumptions and makes va_arg read garbage.
+ * cl.exe never inlines variadics on i386, so the noinline attribute
+ * is a no-op there.                                                  */
+#include "CvString.h"  /* for CV4_NOINLINE macro */
+CV4_NOINLINE void CvXMLLoadUtility::logMsg(char* format, ... )
 {
 	static char buf[kBufSize];
-	_vsnprintf( buf, kBufSize-4, format, (char*)(&format+1) );
+	va_list args;
+	va_start(args, format);
+	_vsnprintf( buf, kBufSize-4, format, args );
+	va_end(args);
 	gDLL->logMsg("xml.log", buf);
 }
 /*************************************************************************************************/
@@ -35,16 +43,22 @@ void CvXMLLoadUtility::logMsg(char* format, ... )
 /**	functions haven't been removed properly so far.  But for now I'll leave all debugging active**/
 /**	Properly links Modular modifications to previous elements, and allows partial overwriting	**/
 /*************************************************************************************************/
-void CvXMLLoadUtility::logMLF(char* format, ... )
+CV4_NOINLINE void CvXMLLoadUtility::logMLF(char* format, ... )
 {
 	static char buf[kBufSize];
-	_vsnprintf( buf, kBufSize-4, format, (char*)(&format+1) );
+	va_list args;
+	va_start(args, format);
+	_vsnprintf( buf, kBufSize-4, format, args );
+	va_end(args);
 	gDLL->logMsg("MLF.log", buf);
 }
-void CvXMLLoadUtility::logXmlDependencyTypes(char* format, ... )
+CV4_NOINLINE void CvXMLLoadUtility::logXmlDependencyTypes(char* format, ... )
 {
 	static char buf[kBufSize];
-	_vsnprintf( buf, kBufSize-4, format, (char*)(&format+1) );
+	va_list args;
+	va_start(args, format);
+	_vsnprintf( buf, kBufSize-4, format, args );
+	va_end(args);
 	gDLL->logMsg("XmlDependencyTypes.log", buf);
 }
 /*************************************************************************************************/
@@ -153,7 +167,7 @@ void CvXMLLoadUtility::MakeMaskFromString(unsigned int *puiMask, char* szMask)
 	int i;	// loop counter
 
 	// loop through each character in the szMask parameter
-	for (i=0;i<(int)strlen(szMask);i++)
+	for (int i=0;i<(int)strlen(szMask);i++)
 	{
 		// if the current character in the string is a zero
 		if (szMask[i] == '0')
@@ -323,6 +337,7 @@ bool CvXMLLoadUtility::SkipToNextVal()
 	return true;
 }
 
+
 //------------------------------------------------------------------------------------------------------
 //
 //  FUNCTION:   FindInInfoClass(TCHAR* pszVal, CvInfoBase* pInfos, int iClassSize, int iListLen)
@@ -449,7 +464,7 @@ bool CvXMLLoadUtility::SetStringList(CvString** ppszStringArray, int* piSize)
 		pszStringArray = *ppszStringArray;
 		if (GetChildXmlVal(pszStringArray[0]))
 		{
-			for (i=1;i<*piSize;i++)
+			for (int i=1;i<*piSize;i++)
 			{
 				if (!GetNextXmlVal(pszStringArray[i]))
 				{
@@ -598,7 +613,7 @@ CvWString CvXMLLoadUtility::CreateKeyStringFromKBCode(const TCHAR* pszHotKey)
 		{"KB_DELETE",gDLL->getText("TXT_KEY_KEYBOARD_DELETE_KEY")},
 	};
 
-	for (i=0;i<iNumKeyBoardMappings;i++)
+	for (int i=0;i<iNumKeyBoardMappings;i++)
 	{
 		if (strcmp(asCvKeyBoardMapping[i].szDefineString, pszHotKey) == 0)
 		{

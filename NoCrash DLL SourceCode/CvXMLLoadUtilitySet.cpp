@@ -60,7 +60,7 @@ bool CvXMLLoadUtility::ReadGlobalDefines(const TCHAR* szXMLFileName, CvCacheObje
 				iNumDefines++;
 
 				// loop through all the Define tags
-				for (i=0;i<iNumDefines;i++)
+				for (int i=0;i<iNumDefines;i++)
 				{
 					char szNodeType[256];	// holds the type of the current node
 					char szName[256];
@@ -1354,7 +1354,7 @@ void CvXMLLoadUtility::SetGlobalStringArray(CvString **ppszString, char* szTagNa
 		pszString = *ppszString;
 
 		// loop through each of the tags
-		for (i=0;i<*iNumVals;i++)
+		for (int i=0;i<*iNumVals;i++)
 		{
 			// get the string value at the current node
 			GetXmlVal(pszString[i]);
@@ -1497,7 +1497,7 @@ void CvXMLLoadUtility::SetGlobalActionInfo()
 	int iTotalActionInfoCount = 0;
 
 	// loop through control info
-	for (i=0;i<NUM_COMMAND_TYPES;i++)
+	for (int i=0;i<NUM_COMMAND_TYPES;i++)
 	{
 		piIndexList[iTotalActionInfoCount] = i;
 		piPriorityList[iTotalActionInfoCount] = GC.getCommandInfo((CommandTypes)i).getOrderPriority();
@@ -1505,7 +1505,7 @@ void CvXMLLoadUtility::SetGlobalActionInfo()
 		iTotalActionInfoCount++;
 	}
 
-	for (i=0;i<NUM_INTERFACEMODE_TYPES;i++)
+	for (int i=0;i<NUM_INTERFACEMODE_TYPES;i++)
 	{
 		piIndexList[iTotalActionInfoCount] = i;
 		piPriorityList[iTotalActionInfoCount] = GC.getInterfaceModeInfo((InterfaceModeTypes)i).getOrderPriority();
@@ -1513,7 +1513,7 @@ void CvXMLLoadUtility::SetGlobalActionInfo()
 		iTotalActionInfoCount++;
 	}
 
-	for (i=0;i<GC.getNumBuildInfos();i++)
+	for (int i=0;i<GC.getNumBuildInfos();i++)
 	{
 		piIndexList[iTotalActionInfoCount] = i;
 		piPriorityList[iTotalActionInfoCount] = GC.getBuildInfo((BuildTypes)i).getOrderPriority();
@@ -1521,7 +1521,7 @@ void CvXMLLoadUtility::SetGlobalActionInfo()
 		iTotalActionInfoCount++;
 	}
 
-	for (i=0;i<GC.getNumPromotionInfos();i++)
+	for (int i=0;i<GC.getNumPromotionInfos();i++)
 	{
 		piIndexList[iTotalActionInfoCount] = i;
 		piPriorityList[iTotalActionInfoCount] = GC.getPromotionInfo((PromotionTypes)i).getOrderPriority();
@@ -1529,7 +1529,7 @@ void CvXMLLoadUtility::SetGlobalActionInfo()
 		iTotalActionInfoCount++;
 	}
 
-	for (i=0;i<GC.getNumUnitInfos();i++)
+	for (int i=0;i<GC.getNumUnitInfos();i++)
 	{
 		piIndexList[iTotalActionInfoCount] = i;
 		piPriorityList[iTotalActionInfoCount] = GC.getUnitInfo((UnitTypes)i).getOrderPriority();
@@ -1537,7 +1537,7 @@ void CvXMLLoadUtility::SetGlobalActionInfo()
 		iTotalActionInfoCount++;
 	}
 
-	for (i=0;i<GC.getNumReligionInfos();i++)
+	for (int i=0;i<GC.getNumReligionInfos();i++)
 	{
 		piIndexList[iTotalActionInfoCount] = i;
 		piPriorityList[iTotalActionInfoCount] = GC.getReligionInfo((ReligionTypes)i).getOrderPriority();
@@ -1545,7 +1545,7 @@ void CvXMLLoadUtility::SetGlobalActionInfo()
 		iTotalActionInfoCount++;
 	}
 
-	for (i=0;i<GC.getNumCorporationInfos();i++)
+	for (int i=0;i<GC.getNumCorporationInfos();i++)
 	{
 		piIndexList[iTotalActionInfoCount] = i;
 		piPriorityList[iTotalActionInfoCount] = GC.getCorporationInfo((CorporationTypes)i).getOrderPriority();
@@ -1553,7 +1553,7 @@ void CvXMLLoadUtility::SetGlobalActionInfo()
 		iTotalActionInfoCount++;
 	}
 
-	for (i=0;i<GC.getNumSpecialistClassInfos();i++)
+	for (int i = 0;i<GC.getNumSpecialistClassInfos();i++)
 	{
 		piIndexList[iTotalActionInfoCount] = i;
 		piPriorityList[iTotalActionInfoCount] = GC.getSpecialistClassInfo((SpecialistClassTypes)i).getOrderPriority();
@@ -1561,7 +1561,7 @@ void CvXMLLoadUtility::SetGlobalActionInfo()
 		iTotalActionInfoCount++;
 	}
 
-	for (i=0;i<GC.getNumBuildingInfos();i++)
+	for (int i=0;i<GC.getNumBuildingInfos();i++)
 	{
 		piIndexList[iTotalActionInfoCount] = i;
 		piPriorityList[iTotalActionInfoCount] = GC.getBuildingInfo((BuildingTypes)i).getOrderPriority();
@@ -1569,7 +1569,7 @@ void CvXMLLoadUtility::SetGlobalActionInfo()
 		iTotalActionInfoCount++;
 	}
 
-	for (i=0;i<NUM_CONTROL_TYPES;i++)
+	for (int i=0;i<NUM_CONTROL_TYPES;i++)
 	{
 		piIndexList[iTotalActionInfoCount] = i;
 		piPriorityList[iTotalActionInfoCount] = GC.getControlInfo((ControlTypes)i).getOrderPriority();
@@ -1577,7 +1577,7 @@ void CvXMLLoadUtility::SetGlobalActionInfo()
 		iTotalActionInfoCount++;
 	}
 
-	for (i=0;i<GC.getNumAutomateInfos();i++)
+	for (int i=0;i<GC.getNumAutomateInfos();i++)
 	{
 		piIndexList[iTotalActionInfoCount] = i;
 		piPriorityList[iTotalActionInfoCount] = GC.getAutomateInfo(i).getOrderPriority();
@@ -1585,7 +1585,7 @@ void CvXMLLoadUtility::SetGlobalActionInfo()
 		iTotalActionInfoCount++;
 	}
 
-	for (i=0;i<NUM_MISSION_TYPES;i++)
+	for (int i=0;i<NUM_MISSION_TYPES;i++)
 	{
 		piIndexList[iTotalActionInfoCount] = i;
 		piPriorityList[iTotalActionInfoCount] = GC.getMissionInfo((MissionTypes)i).getOrderPriority();
@@ -1594,7 +1594,7 @@ void CvXMLLoadUtility::SetGlobalActionInfo()
 	}
 
 //FfH Spell System: Added by Kael 07/23/2007
-	for (i=0;i<GC.getNumSpellInfos();i++)
+	for (int i=0;i<GC.getNumSpellInfos();i++)
 	{
 		piIndexList[iTotalActionInfoCount] = i;
 		piPriorityList[iTotalActionInfoCount] = GC.getSpellInfo((SpellTypes)i).getOrderPriority();
@@ -1607,7 +1607,7 @@ void CvXMLLoadUtility::SetGlobalActionInfo()
 	piOrderedIndex = new int[iNumActionInfos];
 
 	orderHotkeyInfo(&piOrderedIndex, piPriorityList, iNumActionInfos);
-	for (i=0;i<iNumActionInfos;i++)
+	for (int i=0;i<iNumActionInfos;i++)
 	{
 		CvActionInfo* pActionInfo = new CvActionInfo;
 		pActionInfo->setOriginalIndex(piIndexList[piOrderedIndex[i]]);
@@ -1726,7 +1726,7 @@ void CvXMLLoadUtility::SetGlobalAnimationPathInfo(CvAnimationPathInfo** ppAnimat
 
 
 		// Loop through each tag.
-		for (i=0;i<*iNumVals;i++)
+		for (int i=0;i<*iNumVals;i++)
 		{
 			SkipToNextVal();	// skip to the next non-comment node
 
@@ -1812,7 +1812,7 @@ void CvXMLLoadUtility::SetGameText(const char* szTextGroup, const char* szTagNam
 		gDLL->getXMLIFace()->SetToChild(m_pFXml);
 
 		// loop through each tag
-		for (i=0; i < iNumVals; i++)
+		for (int i=0; i < iNumVals; i++)
 		{
 			CvGameText textInfo;
 			textInfo.read(this);
@@ -2859,7 +2859,7 @@ void CvXMLLoadUtility::orderHotkeyInfo(int** ppiSortedIndex, int* pHotkeyIndex, 
 	piSortedIndex = *ppiSortedIndex;
 
 	// set up vector
-	for(iI=0;iI<iLength;iI++)
+	for (int iI=0;iI<iLength;iI++)
 	{
 		viOrderPriority[iI].m_iPriority = pHotkeyIndex[iI];
 		viOrderPriority[iI].m_iIndex = iI;
@@ -2869,7 +2869,7 @@ void CvXMLLoadUtility::orderHotkeyInfo(int** ppiSortedIndex, int* pHotkeyIndex, 
 	std::sort(viOrderPriority.begin(), viOrderPriority.end(), sortHotkeyPriority);
 
 	// insert new order into the array to return
-	for (iI=0;iI<iLength;iI++)
+	for (int iI=0;iI<iLength;iI++)
 	{
 		piSortedIndex[iI] = viOrderPriority[iI].m_iIndex;
 	}
@@ -2900,7 +2900,7 @@ int iI;
 std::vector<T*> vHotkeyInfo;
 T* pHotkeyInfo;	// local pointer to the hotkey info memory
 
-for (iI=0;iI<iLength;iI++)
+for (int iI=0;iI<iLength;iI++)
 {
 pHotkeyInfo = new T;
 *pHotkeyInfo = (*ppHotkeyInfos)[iI];
@@ -2909,12 +2909,12 @@ vHotkeyInfo.push_back(pHotkeyInfo);
 
 std::sort(vHotkeyInfo.begin(), vHotkeyInfo.end(), sortHotkeyPriority);
 
-for (iI=0;iI<iLength;iI++)
+for (int iI=0;iI<iLength;iI++)
 {
 (*ppHotkeyInfos)[iI] = *vHotkeyInfo[iI];
 }
 
-for (iI=0;iI<(int)vHotkeyInfo.size();iI++)
+for (int iI=0;iI<(int)vHotkeyInfo.size();iI++)
 {
 vHotkeyInfo[iI]->reset();
 SAFE_DELETE(vHotkeyInfo[iI]);
@@ -3137,7 +3137,7 @@ int CvXMLLoadUtility::SetYields(int** ppiYield)
 					gDLL->MessageBox(szMessage, "XML Error");
 				}
 				// loop through all the siblings, we start at 1 since we already have the first value
-				for (i=1;i<iNumSibs;i++)
+				for (int i=1;i<iNumSibs;i++)
 				{
 					// if the call to the function that sets the current xml node to it's first non-comment
 					// sibling and sets the parameter with the new node's value does not succeed
@@ -3204,7 +3204,7 @@ void CvXMLLoadUtility::SetFeatureStruct(int** ppiFeatureTech, int** ppiFeatureTi
 					sprintf( szMessage, "iNumSibs is greater than GC.getNumFeatureInfos in SetFeatureStruct function \n Current XML file is: %s", GC.getCurrentXMLFile().GetCString());
 					gDLL->MessageBox(szMessage, "XML Error");
 				}
-				for (i=0;i<iNumSibs;i++)
+				for (int i=0;i<iNumSibs;i++)
 				{
 					GetChildXmlValByName(szTextVal, "FeatureType");
 					iFeatureIndex = FindInInfoClass(szTextVal);
@@ -3269,7 +3269,7 @@ void CvXMLLoadUtility::SetImprovementBonuses(CvImprovementBonusInfo** ppImprovem
 				gDLL->MessageBox(szMessage, "XML Error");
 			}
 			// loop through all the siblings
-			for (i=0;i<iNumSibs;i++)
+			for (int i=0;i<iNumSibs;i++)
 			{
 				// skip to the next non-comment node
 				if (SkipToNextVal())
@@ -3364,7 +3364,7 @@ bool CvXMLLoadUtility::SetAndLoadVar(int** ppiVar, int iDefault)
 		if (GetChildXmlVal(&piVar[0]))
 		{
 			// loop through all the siblings, we start at 1 since we already got the first sibling
-			for (i=1;i<iNumSibs;i++)
+			for (int i=1;i<iNumSibs;i++)
 			{
 				// if the call to the function that sets the current xml node to it's next non-comment
 				// sibling and sets the parameter with the new node's value does not succeed
@@ -3423,7 +3423,7 @@ void CvXMLLoadUtility::SetVariableListTagPair(int **ppiList, const TCHAR* szRoot
 				}
 				if (gDLL->getXMLIFace()->SetToChild(m_pFXml))
 				{
-					for (i=0;i<iNumSibs;i++)
+					for (int i=0;i<iNumSibs;i++)
 					{
 						if (GetChildXmlVal(szTextVal))
 						{
@@ -3492,7 +3492,7 @@ void CvXMLLoadUtility::SetVariableListTagPair(bool **ppbList, const TCHAR* szRoo
 				}
 				if (gDLL->getXMLIFace()->SetToChild(m_pFXml))
 				{
-					for (i=0;i<iNumSibs;i++)
+					for (int i=0;i<iNumSibs;i++)
 					{
 						if (GetChildXmlVal(szTextVal))
 						{
@@ -3560,7 +3560,7 @@ void CvXMLLoadUtility::SetVariableListTagPair(float **ppfList, const TCHAR* szRo
 				}
 				if (gDLL->getXMLIFace()->SetToChild(m_pFXml))
 				{
-					for (i=0;i<iNumSibs;i++)
+					for (int i=0;i<iNumSibs;i++)
 					{
 						if (GetChildXmlVal(szTextVal))
 						{
@@ -3628,7 +3628,7 @@ void CvXMLLoadUtility::SetVariableListTagPair(CvString **ppszList, const TCHAR* 
 				}
 				if (gDLL->getXMLIFace()->SetToChild(m_pFXml))
 				{
-					for (i=0;i<iNumSibs;i++)
+					for (int i=0;i<iNumSibs;i++)
 					{
 						if (GetChildXmlVal(szTextVal))
 						{
@@ -3696,7 +3696,7 @@ void CvXMLLoadUtility::SetVariableListTagPair(int **ppiList, const TCHAR* szRoot
 				}
 				if (gDLL->getXMLIFace()->SetToChild(m_pFXml))
 				{
-					for (i=0;i<iNumSibs;i++)
+					for (int i=0;i<iNumSibs;i++)
 					{
 						if (GetChildXmlVal(szTextVal))
 						{
@@ -3765,7 +3765,7 @@ void CvXMLLoadUtility::SetVariableListTagPairForAudioScripts(int **ppiList, cons
 				}
 				if (gDLL->getXMLIFace()->SetToChild(m_pFXml))
 				{
-					for (i=0;i<iNumSibs;i++)
+					for (int i=0;i<iNumSibs;i++)
 					{
 						if (GetChildXmlVal(szTextVal))
 						{
@@ -3849,7 +3849,7 @@ void CvXMLLoadUtility::SetVariableListTagPairForAudioScripts(int **ppiList, cons
 				}
 				if (gDLL->getXMLIFace()->SetToChild(m_pFXml))
 				{
-					for (i=0;i<iNumSibs;i++)
+					for (int i=0;i<iNumSibs;i++)
 					{
 						if (GetChildXmlVal(szTextVal))
 						{
@@ -3933,7 +3933,7 @@ void CvXMLLoadUtility::SetVariableListTagPair(bool **ppbList, const TCHAR* szRoo
 				}
 				if (gDLL->getXMLIFace()->SetToChild(m_pFXml))
 				{
-					for (i=0;i<iNumSibs;i++)
+					for (int i=0;i<iNumSibs;i++)
 					{
 						if (GetChildXmlVal(szTextVal))
 						{
@@ -4001,7 +4001,7 @@ void CvXMLLoadUtility::SetVariableListTagPair(CvString **ppszList, const TCHAR* 
 				}
 				if (gDLL->getXMLIFace()->SetToChild(m_pFXml))
 				{
-					for (i=0;i<iNumSibs;i++)
+					for (int i=0;i<iNumSibs;i++)
 					{
 						if (GetChildXmlVal(szTextVal))
 						{
@@ -4116,7 +4116,7 @@ void CvXMLLoadUtility::SetAlignmentAttitudeModifiers(CvAlignmentAttitudeModifier
 				gDLL->MessageBox(szMessage, "XML Error");
 			}
 			// loop through all the siblings
-			for (i=0;i<iNumSibs;i++)
+			for (int i=0;i<iNumSibs;i++)
 			{
 				// skip to the next non-comment node
 				if (SkipToNextVal())
@@ -4202,7 +4202,7 @@ void CvXMLLoadUtility::SetEthicalAlignmentAttitudeModifiers(CvEthicalAlignmentAt
 				gDLL->MessageBox(szMessage, "XML Error");
 			}
 			// loop through all the siblings
-			for (i=0;i<iNumSibs;i++)
+			for (int i=0;i<iNumSibs;i++)
 			{
 				// skip to the next non-comment node
 				if (SkipToNextVal())

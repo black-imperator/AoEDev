@@ -2262,7 +2262,7 @@ void CyCity::setWallOverridePoints(const python::tuple& kPoints)
 	std::vector< std::pair<float, float> > pointsVec;
 	pointsVec.reserve(iSeqLength/2);
 	int i;
-	for(i=0;i<iSeqLength;i+=2)
+	for (int i=0;i<iSeqLength;i+=2)
 	{
 		std::pair<float, float> pr(pPointsData[i], pPointsData[i+1]);
 		pointsVec.push_back(pr);
@@ -2281,7 +2281,7 @@ python::tuple CyCity::getWallOverridePoints() const
 	{
 		std::vector< std::pair<float, float> > pointsVec = m_pCity->getWallOverridePoints();
 		uint i;
-		for(i=0;i<pointsVec.size();i++)
+		for (int i=0;i<pointsVec.size();i++)
 			tup += python::make_tuple(pointsVec[i].first, pointsVec[i].second);
 	}
 

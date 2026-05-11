@@ -50,7 +50,7 @@ void CyArgsList::add(const float* buf, int iLength)
 	PyObject* pList = PyList_New(iLength);	// new ref
 	FAssertMsg(pList, "failed creating PyList");
 	int i;
-	for(i=0;i<iLength;i++)
+	for (int i=0;i<iLength;i++)
 	{
 		PyObject* pItem=PyFloat_FromDouble(buf[i]);		// new ref
 		FAssertMsg(pItem, "failed creating PyFloat");
@@ -65,7 +65,7 @@ void CyArgsList::add(const byte* buf, int iLength)
 	PyObject* pList = PyList_New(iLength);	// new ref
 	FAssertMsg(pList, "failed creating PyList");
 	int i;
-	for(i=0;i<iLength;i++)
+	for (int i=0;i<iLength;i++)
 	{
 		PyObject* pItem=PyInt_FromLong(buf[i]);		// new ref
 		FAssertMsg(pItem, "failed creating PyInt");
@@ -80,7 +80,7 @@ void CyArgsList::add(const int* buf, int iLength)
 	PyObject* pList = PyList_New(iLength);	// new ref
 	FAssertMsg(pList, "failed creating PyList");
 	int i;
-	for(i=0;i<iLength;i++)
+	for (int i=0;i<iLength;i++)
 	{
 		PyObject* pItem=PyInt_FromLong(buf[i]);		// new ref
 		FAssertMsg(pItem, "failed creating PyInt");

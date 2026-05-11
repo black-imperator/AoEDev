@@ -2,6 +2,8 @@
 // globals.cpp
 //
 #include "CvGameCoreDLL.h"
+#include <set>
+#include <string>
 #include "CvGlobals.h"
 #include "CvRandom.h"
 #include "CvGameAI.h"
@@ -4676,6 +4678,11 @@ void CvGlobals::LoadExeSettings()
 // Global Infos Hash Map
 //
 
+#if defined(__clang__) || defined(__GNUC__)
+__attribute__((noinline))
+#elif defined(_MSC_VER)
+__declspec(noinline)
+#endif
 int CvGlobals::getInfoTypeForString(const char* szType, bool hideAssert) const
 	{
 	FAssertMsg(szType, "null info type string");
@@ -4685,12 +4692,66 @@ int CvGlobals::getInfoTypeForString(const char* szType, bool hideAssert) const
 		return it->second;
 	}
 
-	if(!hideAssert)
+	if(!hideAssert && szType[0] != 0 && strcmp(szType, "NONE") != 0)
 	{
-		CvString szError;
-		szError.Format("info type %s not found, Current XML file is: %s", szType, GC.getCurrentXMLFile().GetCString());
-		FAssertMsg(strcmp(szType, "NONE")==0 || strcmp(szType, "")==0, szError.c_str());
-		gDLL->logMsg("xml.log", szError);
+#if defined(__clang__) || defined(__GNUC__)
+		// Caller-offset logging — clang/GCC only.
+		void* caller = __builtin_return_address(0);
+		MEMORY_BASIC_INFORMATION mbi;
+		void* base = NULL;
+		if (VirtualQuery(caller, &mbi, sizeof(mbi)) == sizeof(mbi))
+		{
+			base = mbi.AllocationBase;
+		}
+		DWORD callerOffset = (DWORD)caller - (DWORD)base;
+		const char* modName = (base == (void*)GetModuleHandleA("CvGameCoreDLL.dll")) ? "DLL" : "host";
+
+		// Dedup key: (type, caller). Same (type, callsite) only logs once per process.
+		char szKey[320];
+		_snprintf(szKey, sizeof(szKey)-1, "%s@%s+0x%X", szType, modName, callerOffset);
+		szKey[sizeof(szKey)-1] = 0;
+
+		static std::set<std::string> s_seen;
+		static CRITICAL_SECTION s_cs;
+		static bool s_csInit = (InitializeCriticalSection(&s_cs), true);
+		(void)s_csInit;
+
+		EnterCriticalSection(&s_cs);
+		bool bFirstTime = s_seen.insert(szKey).second;
+		LeaveCriticalSection(&s_cs);
+
+		if (bFirstTime)
+		{
+			CvString szError;
+			szError.Format("info type [%s] not found, caller=%s+0x%X, file: %s",
+			               szType, modName, callerOffset, GC.getCurrentXMLFile().GetCString());
+			FAssertMsg(false, szError.c_str());
+			gDLL->logMsg("xml.log", szError);
+		}
+#else
+		// MSVC (and other compilers without __builtin_return_address): log without caller offset.
+		// Dedup on (type, file) to keep volume manageable.
+		char szKey[320];
+		_snprintf(szKey, sizeof(szKey)-1, "%s@%s", szType, GC.getCurrentXMLFile().GetCString());
+		szKey[sizeof(szKey)-1] = 0;
+
+		static std::set<std::string> s_seen;
+		static CRITICAL_SECTION s_cs;
+		static bool s_csInit = (InitializeCriticalSection(&s_cs), true);
+		(void)s_csInit;
+
+		EnterCriticalSection(&s_cs);
+		bool bFirstTime = s_seen.insert(szKey).second;
+		LeaveCriticalSection(&s_cs);
+
+		if (bFirstTime)
+		{
+			CvString szError;
+			szError.Format("info type %s not found, Current XML file is: %s", szType, GC.getCurrentXMLFile().GetCString());
+			FAssertMsg(false, szError.c_str());
+			gDLL->logMsg("xml.log", szError);
+		}
+#endif
 	}
 
 	return -1;

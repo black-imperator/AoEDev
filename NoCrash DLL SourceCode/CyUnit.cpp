@@ -1229,7 +1229,7 @@ int CyUnit::getGameTurnCreated()
 }
 void CyUnit::setGameTurnCreated(int iNewValue)
 {
-	return m_pUnit ? m_pUnit->setGameTurnCreated(iNewValue) : -1;
+	if (m_pUnit) m_pUnit->setGameTurnCreated(iNewValue);
 }
 
 int CyUnit::getDamage()
@@ -2448,7 +2448,7 @@ bool CyUnit::isAffinity(int eAffinity) const		{return m_pUnit ? m_pUnit->isAffin
 bool CyUnit::isDenyPromotion(int ePromotion) const	{return m_pUnit ? m_pUnit->isDenyPromotion((PromotionTypes)ePromotion) : false;}
 bool CyUnit::isDisablePyDeath() const				{return m_pUnit ? m_pUnit->isDisablePyDeath(): false;}
 void CyUnit::setDisablePyDeath(bool bNewValue)		{if (m_pUnit != NULL)	m_pUnit->setDisablePyDeath(bNewValue);}
-void CyUnit::setSpawnPlot(CyPlot* pPlot) const		{return m_pUnit ? m_pUnit->setSpawnPlot(pPlot->getPlot()) : false;}
+void CyUnit::setSpawnPlot(CyPlot* pPlot) const		{if (m_pUnit) m_pUnit->setSpawnPlot(pPlot->getPlot());}
 CyPlot* CyUnit::getSpawnPlot()						{return m_pUnit ? new CyPlot(m_pUnit->getSpawnPlot()) : false;}
 int CyUnit::getStrBoost()							{return m_pUnit ? m_pUnit->getStrBoost(): 0;}
 void CyUnit::changeStrBoost(int iChange)			{if (m_pUnit != NULL) m_pUnit->changeStrBoost(iChange);}

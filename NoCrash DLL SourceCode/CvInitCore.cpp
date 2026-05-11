@@ -311,7 +311,7 @@ PlayerTypes CvInitCore::getAvailableSlot()
 
 	// Get the next ID available ID
 	// First check for open slots only
-	for (i = 0; i < MAX_CIV_PLAYERS; ++i)
+	for (int i = 0; i < MAX_CIV_PLAYERS; ++i)
 	{
 		PlayerTypes eID = (PlayerTypes)i;
 		if ( (getSlotClaim(eID) == SLOTCLAIM_UNASSIGNED) && (getSlotStatus(eID) == SS_OPEN) )
@@ -324,7 +324,7 @@ PlayerTypes CvInitCore::getAvailableSlot()
 	// That didn't work, check to see if we can assign computer slots
 	if (getMPOption(MPOPTION_TAKEOVER_AI))
 	{
-		for (i = 0; i < MAX_CIV_PLAYERS; ++i)
+		for (int i = 0; i < MAX_CIV_PLAYERS; ++i)
 		{
 			PlayerTypes eID = (PlayerTypes)i;
 			if ( (getSlotClaim(eID) == SLOTCLAIM_UNASSIGNED) && (getSlotStatus(eID) == SS_COMPUTER) )
@@ -621,17 +621,17 @@ void CvInitCore::resetGame()
 
 	// Standard game options
 	int i;
-	for (i = 0; i < NUM_GAMEOPTION_TYPES; ++i)
+	for (int i = 0; i < NUM_GAMEOPTION_TYPES; ++i)
 	{
 		m_abOptions[i] = false;
 	}
-	for (i = 0; i < NUM_MPOPTION_TYPES; ++i)
+	for (int i = 0; i < NUM_MPOPTION_TYPES; ++i)
 	{
 		m_abMPOptions[i] = false;
 	}
 	m_bStatReporting = false;
 
-	for (i = 0; i < NUM_FORCECONTROL_TYPES; ++i)
+	for (int i = 0; i < NUM_FORCECONTROL_TYPES; ++i)
 	{
 		m_abForceControls[i] = false;
 	}
@@ -739,12 +739,12 @@ void CvInitCore::resetGame(CvInitCore * pSource, bool bClear, bool bSaveGameType
 
 		// Standard game options
 		int i;
-		for (i = 0; i < NUM_GAMEOPTION_TYPES; ++i)
+		for (int i = 0; i < NUM_GAMEOPTION_TYPES; ++i)
 		{
 			setOption((GameOptionTypes)i, pSource->getOption((GameOptionTypes)i));
 		}
 
-		for (i = 0; i < NUM_MPOPTION_TYPES; ++i)
+		for (int i = 0; i < NUM_MPOPTION_TYPES; ++i)
 		{
 			setMPOption((MultiplayerOptionTypes)i, pSource->getMPOption((MultiplayerOptionTypes)i));
 		}
@@ -1400,7 +1400,10 @@ const CvWString & CvInitCore::getLeaderName(PlayerTypes eID, uint uiForm) const
 	FASSERT_BOUNDS(0, MAX_PLAYERS, eID, "CvInitCore::getLeaderName");
 	if ( checkBounds(eID, 0, MAX_PLAYERS) )
 	{
-		m_szTemp = gDLL->getObjectText(CvString(m_aszLeaderName[eID]).GetCString(), uiForm, true);
+		// Pass wide string directly. Original wide->CvString(narrow)->const char*->CvWString
+		// round-trip uses sprintf("%S",...) which produces empty/garbled output under
+		// clang+MSVCR71; engine then returns the literal TXT_KEY unresolved.
+		m_szTemp = gDLL->getObjectText(m_aszLeaderName[eID], uiForm, true);
 	}
 	else
 	{
@@ -1442,7 +1445,7 @@ const CvWString & CvInitCore::getCivDescription(PlayerTypes eID, uint uiForm) co
 
 	if ( checkBounds(eID, 0, MAX_PLAYERS) )
 	{
-		m_szTemp = gDLL->getObjectText(CvString(m_aszCivDescription[eID]).GetCString(), uiForm, true);
+		m_szTemp = gDLL->getObjectText(m_aszCivDescription[eID], uiForm, true);
 	}
 	else
 	{
@@ -1484,7 +1487,7 @@ const CvWString & CvInitCore::getCivShortDesc(PlayerTypes eID, uint uiForm) cons
 	if ( checkBounds(eID, 0, MAX_PLAYERS) )
 	{
 		// Assume we have stored the key
-		m_szTemp = gDLL->getObjectText(CvString(m_aszCivShortDesc[eID]).GetCString(), uiForm, true);
+		m_szTemp = gDLL->getObjectText(m_aszCivShortDesc[eID], uiForm, true);
 	}
 	else
 	{
@@ -1526,7 +1529,7 @@ const CvWString & CvInitCore::getCivAdjective(PlayerTypes eID, uint uiForm) cons
 	if ( checkBounds(eID, 0, MAX_PLAYERS) )
 	{
 		// Assume we have stored the key
-		m_szTemp = gDLL->getObjectText(CvString(m_aszCivAdjective[eID]).GetCString(), uiForm, true);
+		m_szTemp = gDLL->getObjectText(m_aszCivAdjective[eID], uiForm, true);
 	}
 	else
 	{

@@ -31,8 +31,8 @@ CDialogTemplate::CDialogTemplate(LPCSTR caption, DWORD style, int x, int y, int 
 	dialogTemplate->dwExtendedStyle = 0;
 
 	// Assume no menu or special class
-	AppendData(_T("\0"), 2);
-	AppendData(_T("\0"), 2);
+	AppendData((void*)_T("\0"), 2);
+	AppendData((void*)_T("\0"), 2);
 
 	// Add the dialog's caption to the template
 	AppendString(caption);

@@ -2197,7 +2197,7 @@ void CvTechInfo::read(FDataStreamBase* stream)
 	m_piiTechCostShifts = new int* [m_iNumTechCostShifts];
 	for (int i = 0; i < m_iNumTechCostShifts; i++)
 	{
-		m_piiTechCostShifts[i] = new int[1];
+		m_piiTechCostShifts[i] = new int[2];
 		stream->Read(1, m_piiTechCostShifts[i]);
 	}
 	if (m_piiTechCostMods != NULL)
@@ -2212,7 +2212,7 @@ void CvTechInfo::read(FDataStreamBase* stream)
 	m_piiTechCostMods = new int* [m_iNumTechCostMods];
 	for (int i = 0; i < m_iNumTechCostMods; i++)
 	{
-		m_piiTechCostMods[i] = new int[1];
+		m_piiTechCostMods[i] = new int[2];
 		stream->Read(1, m_piiTechCostMods[i]);
 	}
 	
@@ -2696,7 +2696,7 @@ bool CvTechInfo::readPass2(CvXMLLoadUtility* pXML)
 			if (iNumSibs > 0)
 			{
 				m_iNumTechCostShifts = iNumSibs;
-				pXML->Init2DIntList(&m_piiTechCostShifts, iNumSibs, 1);
+				pXML->Init2DIntList(&m_piiTechCostShifts, iNumSibs, 2);
 				if (gDLL->getXMLIFace()->SetToChild(pXML->GetXML()))
 				{
 					if (0 < iNumSibs)
@@ -2736,7 +2736,7 @@ bool CvTechInfo::readPass2(CvXMLLoadUtility* pXML)
 			if (iNumSibs > 0)
 			{
 				m_iNumTechCostMods = iNumSibs;
-				pXML->Init2DIntList(&m_piiTechCostMods, iNumSibs, 1);
+				pXML->Init2DIntList(&m_piiTechCostMods, iNumSibs, 2);
 				if (gDLL->getXMLIFace()->SetToChild(pXML->GetXML()))
 				{
 					if (0 < iNumSibs)
@@ -2798,7 +2798,7 @@ bool CvTechInfo::readPass3()
 		m_piBonusCostShift[iI] = 0;
 	}
 	int iNumLoad = m_aiBonusCostShiftsforPass3.size();
-	for(iI = 0; iI < iNumLoad; iI++)
+	for (int iI = 0; iI < iNumLoad; iI++)
 	{
 		FAssertMsg(GC.getInfoTypeForString(m_aszBonusCostShiftsforPass3[iI]) >= 0, "Warning, about to leak memory in CvTechInfo::readPass3");
 		m_piBonusCostShift[GC.getInfoTypeForString(m_aszBonusCostShiftsforPass3[iI])] += m_aiBonusCostShiftsforPass3[iI];
@@ -2811,7 +2811,7 @@ bool CvTechInfo::readPass3()
 		m_piBonusCostMod[iI] = 100;
 	}
 	iNumLoad = m_aiBonusCostModsforPass3.size();
-	for(iI = 0; iI < iNumLoad; iI++)
+	for (int iI = 0; iI < iNumLoad; iI++)
 	{
 		FAssertMsg(GC.getInfoTypeForString(m_aszBonusCostModsforPass3[iI]) >= 0, "Warning, about to leak memory in CvTechInfo::readPass3");
 		m_piBonusCostMod[GC.getInfoTypeForString(m_aszBonusCostModsforPass3[iI])] += m_aiBonusCostModsforPass3[iI];
@@ -3018,7 +3018,7 @@ void CvTechInfo::copyNonDefaultsReadPass2(CvTechInfo* pClassInfo, CvXMLLoadUtili
 		int iNewItems = 0;
 		for (int i = 0; i < pClassInfo->getNumTechCostShifts(); ++i)
 		{
-			tempArray[i] = new int[1];
+			tempArray[i] = new int[2];
 			tempArray[i][0] = pClassInfo->getTechCostShift(i);
 			tempArray[i][1] = pClassInfo->getTechCostShift(i, true);
 			iNewItems++;
@@ -3037,7 +3037,7 @@ void CvTechInfo::copyNonDefaultsReadPass2(CvTechInfo* pClassInfo, CvXMLLoadUtili
 				}
 				if (bLoad)
 				{
-					tempArray[iNewItems] = new int[1];
+					tempArray[iNewItems] = new int[2];
 					tempArray[iNewItems][0] = getTechCostShift(i);
 					tempArray[iNewItems][1] = getTechCostShift(i, true);
 					iNewItems++;
@@ -3054,7 +3054,7 @@ void CvTechInfo::copyNonDefaultsReadPass2(CvTechInfo* pClassInfo, CvXMLLoadUtili
 		m_piiTechCostShifts = new int* [iGoalSize];
 		for (int i = 0; i < iGoalSize; i++)
 		{
-			m_piiTechCostShifts[i] = new int[1];
+			m_piiTechCostShifts[i] = new int[2];
 			m_piiTechCostShifts[i][0] = tempArray[i][0];
 			m_piiTechCostShifts[i][1] = tempArray[i][1];
 			FAssertMsg(m_piiTechCostShifts[i][0] < GC.getNumPromotionInfos(), "Out of Bounds Array Melding");
@@ -3074,7 +3074,7 @@ void CvTechInfo::copyNonDefaultsReadPass2(CvTechInfo* pClassInfo, CvXMLLoadUtili
 		int iNewItems = 0;
 		for (int i = 0; i < pClassInfo->getNumTechCostMods(); ++i)
 		{
-			tempArray[i] = new int[1];
+			tempArray[i] = new int[2];
 			tempArray[i][0] = pClassInfo->getTechCostMod(i);
 			tempArray[i][1] = pClassInfo->getTechCostMod(i, true);
 			iNewItems++;
@@ -3093,7 +3093,7 @@ void CvTechInfo::copyNonDefaultsReadPass2(CvTechInfo* pClassInfo, CvXMLLoadUtili
 				}
 				if (bLoad)
 				{
-					tempArray[iNewItems] = new int[1];
+					tempArray[iNewItems] = new int[2];
 					tempArray[iNewItems][0] = getTechCostMod(i);
 					tempArray[iNewItems][1] = getTechCostMod(i, true);
 					iNewItems++;
@@ -3110,7 +3110,7 @@ void CvTechInfo::copyNonDefaultsReadPass2(CvTechInfo* pClassInfo, CvXMLLoadUtili
 		m_piiTechCostMods = new int* [iGoalSize];
 		for (int i = 0; i < iGoalSize; i++)
 		{
-			m_piiTechCostMods[i] = new int[1];
+			m_piiTechCostMods[i] = new int[2];
 			m_piiTechCostMods[i][0] = tempArray[i][0];
 			m_piiTechCostMods[i][1] = tempArray[i][1];
 			FAssertMsg(m_piiTechCostMods[i][0] < GC.getNumPromotionInfos(), "Out of Bounds Array Melding");
@@ -3836,7 +3836,7 @@ CvPromotionInfo::~CvPromotionInfo()
 	int iI;
 	if (m_piiPrereqPromotionORs != NULL)
 	{
-		for (iI=0;iI<m_iNumPrereqPromotionORs;iI++)
+		for (int iI=0;iI<m_iNumPrereqPromotionORs;iI++)
 		{
 			SAFE_DELETE_ARRAY(m_piiPrereqPromotionORs[iI]);
 		}
@@ -3844,7 +3844,7 @@ CvPromotionInfo::~CvPromotionInfo()
 	}
 	if (m_piiPrereqPromotionANDs != NULL)
 	{
-		for (iI=0;iI<m_iNumPrereqPromotionANDs;iI++)
+		for (int iI=0;iI<m_iNumPrereqPromotionANDs;iI++)
 		{
 			SAFE_DELETE_ARRAY(m_piiPrereqPromotionANDs[iI]);
 		}
@@ -3852,7 +3852,7 @@ CvPromotionInfo::~CvPromotionInfo()
 	}
 	if (m_piiPromotionCombatMods != NULL)
 	{
-		for (iI = 0; iI < m_iNumPromotionCombatMods; iI++)
+		for (int iI = 0; iI < m_iNumPromotionCombatMods; iI++)
 		{
 			SAFE_DELETE_ARRAY(m_piiPromotionCombatMods[iI]);
 		}
@@ -6141,7 +6141,7 @@ void CvPromotionInfo::read(FDataStreamBase* stream)
 	m_piiPrereqPromotionORs = new int*[m_iNumPrereqPromotionORs];
 	for(int i=0;i<m_iNumPrereqPromotionORs;i++)
 	{
-		m_piiPrereqPromotionORs[i]  = new int[1];
+		m_piiPrereqPromotionORs[i]  = new int[2];
 		stream->Read(1, m_piiPrereqPromotionORs[i]);
 	}
 
@@ -6157,7 +6157,7 @@ void CvPromotionInfo::read(FDataStreamBase* stream)
 	m_piiPrereqPromotionANDs = new int*[m_iNumPrereqPromotionANDs];
 	for(int i=0;i<m_iNumPrereqPromotionANDs;i++)
 	{
-		m_piiPrereqPromotionANDs[i]  = new int[1];
+		m_piiPrereqPromotionANDs[i]  = new int[2];
 		stream->Read(1, m_piiPrereqPromotionANDs[i]);
 	}
 	if (m_piiPromotionCombatMods != NULL)
@@ -6172,7 +6172,7 @@ void CvPromotionInfo::read(FDataStreamBase* stream)
 	m_piiPromotionCombatMods = new int* [m_iNumPromotionCombatMods];
 	for (int i = 0; i < m_iNumPromotionCombatMods; i++)
 	{
-		m_piiPromotionCombatMods[i] = new int[1];
+		m_piiPromotionCombatMods[i] = new int[2];
 		stream->Read(1, m_piiPromotionCombatMods[i]);
 	}
 	/*************************************************************************************************/
@@ -7817,7 +7817,7 @@ bool CvPromotionInfo::readPass2(CvXMLLoadUtility* pXML)
 			if (iNumSibs > 0)
 			{
 				m_iNumPrereqPromotionORs = iNumSibs;
-				pXML->Init2DIntList(&m_piiPrereqPromotionORs, iNumSibs, 1);
+				pXML->Init2DIntList(&m_piiPrereqPromotionORs, iNumSibs, 2);
 				if (gDLL->getXMLIFace()->SetToChild(pXML->GetXML()))
 				{
 					if (0 < iNumSibs)
@@ -7857,7 +7857,7 @@ bool CvPromotionInfo::readPass2(CvXMLLoadUtility* pXML)
 			if (iNumSibs > 0)
 			{
 				m_iNumPrereqPromotionANDs = iNumSibs;
-				pXML->Init2DIntList(&m_piiPrereqPromotionANDs, iNumSibs, 1);
+				pXML->Init2DIntList(&m_piiPrereqPromotionANDs, iNumSibs, 2);
 				if (gDLL->getXMLIFace()->SetToChild(pXML->GetXML()))
 				{
 					if (0 < iNumSibs)
@@ -7897,7 +7897,7 @@ bool CvPromotionInfo::readPass2(CvXMLLoadUtility* pXML)
 			if (iNumSibs > 0)
 			{
 				m_iNumPromotionCombatMods = iNumSibs;
-				pXML->Init2DIntList(&m_piiPromotionCombatMods, iNumSibs, 1);
+				pXML->Init2DIntList(&m_piiPromotionCombatMods, iNumSibs, 2);
 				if (gDLL->getXMLIFace()->SetToChild(pXML->GetXML()))
 				{
 					if (0 < iNumSibs)
@@ -10028,7 +10028,7 @@ void CvPromotionInfo::copyNonDefaultsReadPass2(CvPromotionInfo* pClassInfo, CvXM
 		int iNewItems = 0;
 		for (int i = 0; i < pClassInfo->getNumPrereqPromotionORs(); ++i)
 		{
-			tempArray[i] = new int[1];
+			tempArray[i] = new int[2];
 			tempArray[i][0] = pClassInfo->getPrereqPromotionORs(i);
 			tempArray[i][1] = pClassInfo->getPrereqPromotionORs(i, true);
 			iNewItems++;
@@ -10047,7 +10047,7 @@ void CvPromotionInfo::copyNonDefaultsReadPass2(CvPromotionInfo* pClassInfo, CvXM
 				}
 				if (bLoad)
 				{
-					tempArray[iNewItems] = new int[1];
+					tempArray[iNewItems] = new int[2];
 					tempArray[iNewItems][0] = getPrereqPromotionORs(i);
 					tempArray[iNewItems][1] = getPrereqPromotionORs(i, true);
 					iNewItems++;
@@ -10064,7 +10064,7 @@ void CvPromotionInfo::copyNonDefaultsReadPass2(CvPromotionInfo* pClassInfo, CvXM
 		m_piiPrereqPromotionORs = new int* [iGoalSize];
 		for (int i = 0; i < iGoalSize; i++)
 		{
-			m_piiPrereqPromotionORs[i] = new int[1];
+			m_piiPrereqPromotionORs[i] = new int[2];
 			m_piiPrereqPromotionORs[i][0] = tempArray[i][0];
 			m_piiPrereqPromotionORs[i][1] = tempArray[i][1];
 			FAssertMsg(m_piiPrereqPromotionORs[i][0] < GC.getNumPromotionInfos(), "Out of Bounds Array Melding");
@@ -10092,7 +10092,7 @@ void CvPromotionInfo::copyNonDefaultsReadPass2(CvPromotionInfo* pClassInfo, CvXM
 		int iNewItems = 0;
 		for (int i = 0; i < pClassInfo->getNumPrereqPromotionANDs(); ++i)
 		{
-			tempArray[i] = new int[1];
+			tempArray[i] = new int[2];
 			tempArray[i][0] = pClassInfo->getPrereqPromotionANDs(i);
 			tempArray[i][1] = pClassInfo->getPrereqPromotionANDs(i, true);
 			iNewItems++;
@@ -10111,7 +10111,7 @@ void CvPromotionInfo::copyNonDefaultsReadPass2(CvPromotionInfo* pClassInfo, CvXM
 				}
 				if (bLoad)
 				{
-					tempArray[iNewItems] = new int[1];
+					tempArray[iNewItems] = new int[2];
 					tempArray[iNewItems][0] = getPrereqPromotionANDs(i);
 					tempArray[iNewItems][1] = getPrereqPromotionANDs(i, true);
 					iNewItems++;
@@ -10128,7 +10128,7 @@ void CvPromotionInfo::copyNonDefaultsReadPass2(CvPromotionInfo* pClassInfo, CvXM
 		m_piiPrereqPromotionANDs = new int*[iGoalSize];
 		for(int i = 0; i < iGoalSize; i++)
 		{
-			m_piiPrereqPromotionANDs[i] = new int[1];
+			m_piiPrereqPromotionANDs[i] = new int[2];
 			m_piiPrereqPromotionANDs[i][0] = tempArray[i][0];
 			m_piiPrereqPromotionANDs[i][1] = tempArray[i][1];
 			FAssertMsg(m_piiPrereqPromotionANDs[i][0] < GC.getNumPromotionInfos() ,"Out of Bounds Array Melding");
@@ -10148,7 +10148,7 @@ void CvPromotionInfo::copyNonDefaultsReadPass2(CvPromotionInfo* pClassInfo, CvXM
 		int iNewItems = 0;
 		for (int i = 0; i < pClassInfo->getNumPromotionCombatMods(); ++i)
 		{
-			tempArray[i] = new int[1];
+			tempArray[i] = new int[2];
 			tempArray[i][0] = pClassInfo->getPromotionCombatMods(i);
 			tempArray[i][1] = pClassInfo->getPromotionCombatMods(i, true);
 			iNewItems++;
@@ -10167,7 +10167,7 @@ void CvPromotionInfo::copyNonDefaultsReadPass2(CvPromotionInfo* pClassInfo, CvXM
 				}
 				if (bLoad)
 				{
-					tempArray[iNewItems] = new int[1];
+					tempArray[iNewItems] = new int[2];
 					tempArray[iNewItems][0] = getPromotionCombatMods(i);
 					tempArray[iNewItems][1] = getPromotionCombatMods(i, true);
 					iNewItems++;
@@ -10184,7 +10184,7 @@ void CvPromotionInfo::copyNonDefaultsReadPass2(CvPromotionInfo* pClassInfo, CvXM
 		m_piiPromotionCombatMods = new int* [iGoalSize];
 		for (int i = 0; i < iGoalSize; i++)
 		{
-			m_piiPromotionCombatMods[i] = new int[1];
+			m_piiPromotionCombatMods[i] = new int[2];
 			m_piiPromotionCombatMods[i][0] = tempArray[i][0];
 			m_piiPromotionCombatMods[i][1] = tempArray[i][1];
 			FAssertMsg(m_piiPromotionCombatMods[i][0] < GC.getNumPromotionInfos(), "Out of Bounds Array Melding");
@@ -11839,7 +11839,7 @@ bool CvSpellInfo::read(CvXMLLoadUtility* pXML)
 	if (szTextVal != "") m_iFeatureOrTargetPrereq2 = pXML->FindInInfoClass(szTextVal);
 	pXML->GetChildXmlValByName(szTextVal, "PlotEffectPrereq");
 	if (szTextVal != "") m_iPlotEffectPrereq = pXML->FindInInfoClass(szTextVal);
-	pXML->GetChildXmlValByName(szTextVal, "¨PlotEffectTargetPrereq");
+	pXML->GetChildXmlValByName(szTextVal, "ï¿½PlotEffectTargetPrereq");
 	if (szTextVal != "") m_iPlotEffectTargetPrereq = pXML->FindInInfoClass(szTextVal);
 	pXML->GetChildXmlValByName(szTextVal, "ImprovementPrereq");
 	if (szTextVal != "") m_iImprovementPrereq = pXML->FindInInfoClass(szTextVal);
@@ -15258,14 +15258,28 @@ const TCHAR* CvUnitInfo::getEarlyArtDefineTag(int i, UnitArtStyleTypes eStyle, i
 		if (-1 != iIndex)
 		{
 			const TCHAR* pcTag = GC.getUnitArtStyleTypeInfo(eStyle).getEarlyArtDefineTag(i, iIndex, iPromo);
-			if (NULL != pcTag)
+			if (NULL != pcTag && pcTag[0] != 0)
 			{
 				return pcTag;
 			}
 		}
 	}
 
-	return (m_paszEarlyArtDefineTags) ? m_paszEarlyArtDefineTags[i] : NULL;
+	if (m_paszEarlyArtDefineTags && m_paszEarlyArtDefineTags[i].GetLength() > 0)
+	{
+		return m_paszEarlyArtDefineTags[i];
+	}
+
+	// Fallback: convention-based reconstruction. Mod XML uses ART_DEF_<TYPE> for unit art tags
+	// (e.g. UNIT_DEATH_KNIGHT -> ART_DEF_UNIT_DEATH_KNIGHT). Bypasses lost m_paszEarlyArtDefineTags.
+	static CvString s_fallback;
+	if (m_szType.GetLength() > 0)
+	{
+		s_fallback = "ART_DEF_";
+		s_fallback += m_szType;
+		return s_fallback.GetCString();
+	}
+	return NULL;
 }
 
 void CvUnitInfo::setEarlyArtDefineTag(int i, const TCHAR* szVal)
@@ -15359,7 +15373,16 @@ const TCHAR* CvUnitInfo::getUnitStyleButton(int iProm) const
 
 void CvUnitInfo::updateArtDefineButton()
 {
-	m_szArtDefineButton = getArtInfo(0, NO_ERA, NO_UNIT_ARTSTYLE)->getButton();
+	const TCHAR* pcTag = getEarlyArtDefineTag(0, NO_UNIT_ARTSTYLE);
+	if (pcTag == NULL || pcTag[0] == 0)
+	{
+		return;
+	}
+	const CvArtInfoUnit* pArt = ARTFILEMGR.getUnitArtInfo(pcTag);
+	if (pArt != NULL)
+	{
+		m_szArtDefineButton = pArt->getButton();
+	}
 }
 
 const CvArtInfoUnit* CvUnitInfo::getArtInfo(int i, EraTypes eEra, UnitArtStyleTypes eStyle, int iPromo) const
@@ -16703,7 +16726,7 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 				if (pXML->GetChildXmlVal(szTextVal))
 				{
 					FAssertMsg((iNumSibs <= GC.getNUM_UNIT_AND_TECH_PREREQS()) ,"There are more siblings than memory allocated for them in SetGlobalUnitInfo");
-					for (j=0;j<iNumSibs;j++)
+					for (int j=0;j<iNumSibs;j++)
 					{
 						m_piPrereqAndTechs[j] = pXML->FindInInfoClass(szTextVal);
 						if (!pXML->GetNextXmlVal(szTextVal))
@@ -16748,7 +16771,7 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 				if (pXML->GetChildXmlVal(szTextVal))
 				{
 					FAssertMsg((iNumSibs <= GC.getNUM_UNIT_PREREQ_OR_BONUSES()) , "There are more siblings than memory allocated for them in SetGlobalUnitInfo");
-					for (j=0;j<iNumSibs;j++)
+					for (int j=0;j<iNumSibs;j++)
 					{
 						m_piPrereqOrBonuses[j] = pXML->FindInInfoClass(szTextVal);
 						if (!pXML->GetNextXmlVal(szTextVal))
@@ -17844,10 +17867,10 @@ void CvUnitInfo::copyNonDefaults(CvUnitInfo* pClassInfo, CvXMLLoadUtility* pXML)
 																m_fUnitPadTime						= pClassInfo->getUnitPadTime();
 
 		//Delete old Arrays for initializing a new one
-		SAFE_DELETE(m_piUnitGroupRequired)
-		SAFE_DELETE(m_paszEarlyArtDefineTags)
-		SAFE_DELETE(m_paszLateArtDefineTags)
-		SAFE_DELETE(m_paszMiddleArtDefineTags)
+		SAFE_DELETE_ARRAY(m_piUnitGroupRequired)
+		SAFE_DELETE_ARRAY(m_paszEarlyArtDefineTags)
+		SAFE_DELETE_ARRAY(m_paszLateArtDefineTags)
+		SAFE_DELETE_ARRAY(m_paszMiddleArtDefineTags)
 		m_piUnitGroupRequired = new int[ m_iGroupDefinitions ];
 		m_paszEarlyArtDefineTags = new CvString[ m_iGroupDefinitions ];
 		m_paszLateArtDefineTags = new CvString[ m_iGroupDefinitions ];
@@ -17930,7 +17953,7 @@ void CvUnitInfo::copyNonDefaults(CvUnitInfo* pClassInfo, CvXMLLoadUtility* pXML)
 			NewNames.push_back(getUnitNames(i));
 		}
 		m_iNumUnitNames = NewNames.size();
-		SAFE_DELETE(m_paszUnitNames);
+		SAFE_DELETE_ARRAY(m_paszUnitNames);
 		m_paszUnitNames = new CvString[getNumUnitNames()];
 		for(int i = 0; i < getNumUnitNames(); ++i)
 		{
@@ -17963,7 +17986,7 @@ void CvUnitInfo::copyNonDefaults(CvUnitInfo* pClassInfo, CvXMLLoadUtility* pXML)
 			NewQuotes.push_back(getQuotes(i));
 		}
 		m_iNumQuotes = NewQuotes.size();
-		SAFE_DELETE(m_paszQuotes);
+		SAFE_DELETE_ARRAY(m_paszQuotes);
 		m_paszQuotes = new CvString[getNumQuotes()];
 		for(int i = 0; i < getNumQuotes(); ++i)
 		{
@@ -17996,7 +18019,7 @@ void CvUnitInfo::copyNonDefaults(CvUnitInfo* pClassInfo, CvXMLLoadUtility* pXML)
 			NewImages.push_back(getImages(i));
 		}
 		m_iNumImages = NewImages.size();
-		SAFE_DELETE(m_paszImages);
+		SAFE_DELETE_ARRAY(m_paszImages);
 		m_paszImages = new CvString[getNumImages()];
 		for(int i = 0; i < getNumImages(); ++i)
 		{
@@ -18674,7 +18697,7 @@ CvCivicInfo::~CvCivicInfo()
 	SAFE_DELETE_ARRAY(m_pabSpecialistClassUnlimited);
 	if (m_ppiImprovementYieldChanges != NULL)
 	{
-		for (iI=0;iI<GC.getNumImprovementInfos();iI++)
+		for (int iI=0;iI<GC.getNumImprovementInfos();iI++)
 		{
 			SAFE_DELETE_ARRAY(m_ppiImprovementYieldChanges[iI]);
 		}
@@ -18682,7 +18705,7 @@ CvCivicInfo::~CvCivicInfo()
 	}
 	if (m_ppiSpecialistClassYieldChanges != NULL)
 	{
-		for (iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 		{
 			SAFE_DELETE_ARRAY(m_ppiSpecialistClassYieldChanges[iI]);
 		}
@@ -18690,7 +18713,7 @@ CvCivicInfo::~CvCivicInfo()
 	}
 	if (m_ppiSpecialistClassCommerceChanges != NULL)
 	{
-		for (iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 		{
 			SAFE_DELETE_ARRAY(m_ppiSpecialistClassCommerceChanges[iI]);
 		}
@@ -19631,14 +19654,14 @@ void CvCivicInfo::read(FDataStreamBase* stream)
 	int i;
 	if (m_ppiImprovementYieldChanges != NULL)
 	{
-		for(i=0;i<GC.getNumImprovementInfos();i++)
+		for (int i=0;i<GC.getNumImprovementInfos();i++)
 		{
 			SAFE_DELETE_ARRAY(m_ppiImprovementYieldChanges[i]);
 		}
 		SAFE_DELETE_ARRAY(m_ppiImprovementYieldChanges);
 	}
 	m_ppiImprovementYieldChanges = new int*[GC.getNumImprovementInfos()];
-	for(i=0;i<GC.getNumImprovementInfos();i++)
+	for (int i=0;i<GC.getNumImprovementInfos();i++)
 	{
 		m_ppiImprovementYieldChanges[i]  = new int[NUM_YIELD_TYPES];
 		stream->Read(NUM_YIELD_TYPES, m_ppiImprovementYieldChanges[i]);
@@ -19646,14 +19669,14 @@ void CvCivicInfo::read(FDataStreamBase* stream)
 
 	if (m_ppiSpecialistClassYieldChanges != NULL)
 	{
-		for (i = 0; i < GC.getNumSpecialistClassInfos(); i++)
+		for (int i = 0; i < GC.getNumSpecialistClassInfos(); i++)
 		{
 			SAFE_DELETE_ARRAY(m_ppiSpecialistClassYieldChanges[i]);
 		}
 		SAFE_DELETE_ARRAY(m_ppiSpecialistClassYieldChanges);
 	}
 	m_ppiSpecialistClassYieldChanges = new int* [GC.getNumSpecialistClassInfos()];
-	for (i = 0; i < GC.getNumSpecialistClassInfos(); i++)
+	for (int i = 0; i < GC.getNumSpecialistClassInfos(); i++)
 	{
 		m_ppiSpecialistClassYieldChanges[i] = new int[NUM_YIELD_TYPES];
 		stream->Read(NUM_YIELD_TYPES, m_ppiSpecialistClassYieldChanges[i]);
@@ -19661,14 +19684,14 @@ void CvCivicInfo::read(FDataStreamBase* stream)
 
 	if (m_ppiSpecialistClassCommerceChanges != NULL)
 	{
-		for (i = 0; i < GC.getNumSpecialistClassInfos(); i++)
+		for (int i = 0; i < GC.getNumSpecialistClassInfos(); i++)
 		{
 			SAFE_DELETE_ARRAY(m_ppiSpecialistClassCommerceChanges[i]);
 		}
 		SAFE_DELETE_ARRAY(m_ppiSpecialistClassCommerceChanges);
 	}
 	m_ppiSpecialistClassCommerceChanges = new int* [GC.getNumSpecialistClassInfos()];
-	for (i = 0; i < GC.getNumSpecialistClassInfos(); i++)
+	for (int i = 0; i < GC.getNumSpecialistClassInfos(); i++)
 	{
 		m_ppiSpecialistClassCommerceChanges[i] = new int[NUM_COMMERCE_TYPES];
 		stream->Read(NUM_COMMERCE_TYPES, m_ppiSpecialistClassCommerceChanges[i]);
@@ -19850,16 +19873,16 @@ void CvCivicInfo::write(FDataStreamBase* stream)
 	stream->Write(GC.getNumSpecialistClassInfos(), m_piSpecialistClassCount);
 
 	int i;
-	for(i=0;i<GC.getNumImprovementInfos();i++)
+	for (int i=0;i<GC.getNumImprovementInfos();i++)
 	{
 		stream->Write(NUM_YIELD_TYPES, m_ppiImprovementYieldChanges[i]);
 	}
 
-	for (i = 0; i < GC.getNumSpecialistClassInfos(); i++)
+	for (int i = 0; i < GC.getNumSpecialistClassInfos(); i++)
 	{
 		stream->Write(NUM_YIELD_TYPES, m_ppiSpecialistClassYieldChanges[i]);
 	}
-	for (i = 0; i < GC.getNumSpecialistClassInfos(); i++)
+	for (int i = 0; i < GC.getNumSpecialistClassInfos(); i++)
 	{
 		stream->Write(NUM_COMMERCE_TYPES, m_ppiSpecialistClassCommerceChanges[i]);
 	}
@@ -20082,7 +20105,7 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 			{
 				if (0 < iNumSibs)
 				{
-					for (j=0;j<iNumSibs;j++)
+					for (int j=0;j<iNumSibs;j++)
 					{
 						pXML->GetChildXmlValByName(szTextVal, "ImprovementType");
 						iIndex = pXML->FindInInfoClass(szTextVal);
@@ -20129,7 +20152,7 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 			{
 				if (0 < iNumSibs)
 				{
-					for (j = 0; j < iNumSibs; j++)
+					for (int j = 0; j < iNumSibs; j++)
 					{
 						pXML->GetChildXmlValByName(szTextVal, "SpecialistClass");
 						iIndex = pXML->FindInInfoClass(szTextVal);
@@ -20176,7 +20199,7 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 			{
 				if (0 < iNumSibs)
 				{
-					for (j = 0; j < iNumSibs; j++)
+					for (int j = 0; j < iNumSibs; j++)
 					{
 						pXML->GetChildXmlValByName(szTextVal, "SpecialistClassType");
 						iIndex = pXML->FindInInfoClass(szTextVal);
@@ -20680,7 +20703,7 @@ bool CvDiplomacyInfo::read(CvXMLLoadUtility* pXML)
 
 		gDLL->getXMLIFace()->SetToChild(pXML->GetXML());
 
-		for (i = 0; i < iNewResponses; i++)
+		for (int i = 0; i < iNewResponses; i++)
 		{
 			CvDiplomacyResponse* pNewResponse = new CvDiplomacyResponse;
 			pNewResponse->read(pXML);
@@ -23718,7 +23741,7 @@ void CvBuildingInfo::read(FDataStreamBase* stream)
 	int iI;
 	if (m_ppaiTerrainYieldChange != NULL)
 	{
-		for (iI = 0; iI < GC.getNumTerrainInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumTerrainInfos(); iI++)
 		{
 			SAFE_DELETE_ARRAY(m_ppaiTerrainYieldChange[iI]);
 		}
@@ -23726,14 +23749,14 @@ void CvBuildingInfo::read(FDataStreamBase* stream)
 	}
 
 	m_ppaiTerrainYieldChange = new int* [GC.getNumTerrainInfos()];
-	for (iI = 0; iI < GC.getNumTerrainInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumTerrainInfos(); iI++)
 	{
 		m_ppaiTerrainYieldChange[iI] = new int[NUM_YIELD_TYPES];
 		stream->Read(NUM_YIELD_TYPES, m_ppaiTerrainYieldChange[iI]);
 	}
 	if (m_ppaiFeatureYieldChange != NULL)
 	{
-		for (iI = 0; iI < GC.getNumFeatureInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumFeatureInfos(); iI++)
 		{
 			SAFE_DELETE_ARRAY(m_ppaiFeatureYieldChange[iI]);
 		}
@@ -23741,7 +23764,7 @@ void CvBuildingInfo::read(FDataStreamBase* stream)
 	}
 
 	m_ppaiFeatureYieldChange = new int* [GC.getNumFeatureInfos()];
-	for (iI = 0; iI < GC.getNumFeatureInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumFeatureInfos(); iI++)
 	{
 		m_ppaiFeatureYieldChange[iI] = new int[NUM_YIELD_TYPES];
 		stream->Read(NUM_YIELD_TYPES, m_ppaiFeatureYieldChange[iI]);
@@ -23916,7 +23939,7 @@ void CvBuildingInfo::read(FDataStreamBase* stream)
 	int i;
 	if (m_ppaiSpecialistClassYieldChange != NULL)
 	{
-		for(i=0;i<GC.getNumSpecialistClassInfos();i++)
+		for (int i = 0;i<GC.getNumSpecialistClassInfos();i++)
 		{
 			SAFE_DELETE_ARRAY(m_ppaiSpecialistClassYieldChange[i]);
 		}
@@ -23924,7 +23947,7 @@ void CvBuildingInfo::read(FDataStreamBase* stream)
 	}
 
 	m_ppaiSpecialistClassYieldChange = new int*[GC.getNumSpecialistClassInfos()];
-	for(i=0;i<GC.getNumSpecialistClassInfos();i++)
+	for (int i = 0;i<GC.getNumSpecialistClassInfos();i++)
 	{
 		m_ppaiSpecialistClassYieldChange[i]  = new int[NUM_YIELD_TYPES];
 		stream->Read(NUM_YIELD_TYPES, m_ppaiSpecialistClassYieldChange[i]);
@@ -23933,14 +23956,14 @@ void CvBuildingInfo::read(FDataStreamBase* stream)
 //FfH: Added by Kael 11/06/2007
 	if (m_ppaiSpecialistClassCommerceChange != NULL)
 	{
-		for(i=0;i<GC.getNumSpecialistClassInfos();i++)
+		for (int i = 0;i<GC.getNumSpecialistClassInfos();i++)
 		{
 			SAFE_DELETE_ARRAY(m_ppaiSpecialistClassCommerceChange[i]);
 		}
 		SAFE_DELETE_ARRAY(m_ppaiSpecialistClassCommerceChange);
 	}
 	m_ppaiSpecialistClassCommerceChange = new int*[GC.getNumSpecialistClassInfos()];
-	for(i=0;i<GC.getNumSpecialistClassInfos();i++)
+	for (int i = 0;i<GC.getNumSpecialistClassInfos();i++)
 	{
 		m_ppaiSpecialistClassCommerceChange[i]  = new int[NUM_COMMERCE_TYPES];
 		stream->Read(NUM_COMMERCE_TYPES, m_ppaiSpecialistClassCommerceChange[i]);
@@ -23953,14 +23976,14 @@ void CvBuildingInfo::read(FDataStreamBase* stream)
 /*************************************************************************************************/
 	if (m_paaiLocalSpecialistClassCommerceChange != NULL)
 	{
-		for(i=0;i<GC.getNumSpecialistClassInfos();i++)
+		for (int i = 0;i<GC.getNumSpecialistClassInfos();i++)
 		{
 			SAFE_DELETE_ARRAY(m_paaiLocalSpecialistClassCommerceChange[i]);
 		}
 		SAFE_DELETE_ARRAY(m_paaiLocalSpecialistClassCommerceChange);
 	}
 	m_paaiLocalSpecialistClassCommerceChange = new int*[GC.getNumSpecialistClassInfos()];
-	for(i=0;i<GC.getNumSpecialistClassInfos();i++)
+	for (int i = 0;i<GC.getNumSpecialistClassInfos();i++)
 	{
 		m_paaiLocalSpecialistClassCommerceChange[i]  = new int[NUM_COMMERCE_TYPES];
 		stream->Read(NUM_COMMERCE_TYPES, m_paaiLocalSpecialistClassCommerceChange[i]);
@@ -23968,14 +23991,14 @@ void CvBuildingInfo::read(FDataStreamBase* stream)
 
 	if (m_paaiLocalSpecialistClassYieldChange != NULL)
 	{
-		for(i=0;i<GC.getNumSpecialistClassInfos();i++)
+		for (int i = 0;i<GC.getNumSpecialistClassInfos();i++)
 		{
 			SAFE_DELETE_ARRAY(m_paaiLocalSpecialistClassYieldChange[i]);
 		}
 		SAFE_DELETE_ARRAY(m_paaiLocalSpecialistClassYieldChange);
 	}
 	m_paaiLocalSpecialistClassYieldChange = new int*[GC.getNumSpecialistClassInfos()];
-	for(i=0;i<GC.getNumSpecialistClassInfos();i++)
+	for (int i = 0;i<GC.getNumSpecialistClassInfos();i++)
 	{
 		m_paaiLocalSpecialistClassYieldChange[i]  = new int[NUM_YIELD_TYPES];
 		stream->Read(NUM_YIELD_TYPES, m_paaiLocalSpecialistClassYieldChange[i]);
@@ -24002,7 +24025,7 @@ void CvBuildingInfo::read(FDataStreamBase* stream)
 
 	if (m_ppaiBonusYieldModifier != NULL)
 	{
-		for(i=0;i<GC.getNumBonusInfos();i++)
+		for (int i=0;i<GC.getNumBonusInfos();i++)
 		{
 			SAFE_DELETE_ARRAY(m_ppaiBonusYieldModifier[i]);
 		}
@@ -24010,7 +24033,7 @@ void CvBuildingInfo::read(FDataStreamBase* stream)
 	}
 
 	m_ppaiBonusYieldModifier = new int*[GC.getNumBonusInfos()];
-	for(i=0;i<GC.getNumBonusInfos();i++)
+	for (int i=0;i<GC.getNumBonusInfos();i++)
 	{
 		m_ppaiBonusYieldModifier[i]  = new int[NUM_YIELD_TYPES];
 		stream->Read(NUM_YIELD_TYPES, m_ppaiBonusYieldModifier[i]);
@@ -24018,7 +24041,7 @@ void CvBuildingInfo::read(FDataStreamBase* stream)
 	
 	if (m_ppaiBonusCommerceModifier != NULL)
 	{
-		for (i = 0; i < GC.getNumBonusInfos(); i++)
+		for (int i = 0; i < GC.getNumBonusInfos(); i++)
 		{
 			SAFE_DELETE_ARRAY(m_ppaiBonusCommerceModifier[i]);
 		}
@@ -24026,7 +24049,7 @@ void CvBuildingInfo::read(FDataStreamBase* stream)
 	}
 
 	m_ppaiBonusCommerceModifier = new int* [GC.getNumBonusInfos()];
-	for (i = 0; i < GC.getNumBonusInfos(); i++)
+	for (int i = 0; i < GC.getNumBonusInfos(); i++)
 	{
 		m_ppaiBonusCommerceModifier[i] = new int[NUM_COMMERCE_TYPES];
 		stream->Read(NUM_COMMERCE_TYPES, m_ppaiBonusCommerceModifier[i]);
@@ -24357,11 +24380,11 @@ void CvBuildingInfo::write(FDataStreamBase* stream)
 	stream->Write(NUM_YIELD_TYPES, m_piSeaPlotYieldChange);
 	stream->Write(NUM_YIELD_TYPES, m_piRiverPlotYieldChange);
 	int iI;
-	for (iI = 0; iI < GC.getNumTerrainInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumTerrainInfos(); iI++)
 	{
 		stream->Write(NUM_YIELD_TYPES, m_ppaiTerrainYieldChange[iI]);
 	}
-	for (iI = 0; iI < GC.getNumFeatureInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumFeatureInfos(); iI++)
 	{
 		stream->Write(NUM_YIELD_TYPES, m_ppaiFeatureYieldChange[iI]);
 	}
@@ -24409,13 +24432,13 @@ void CvBuildingInfo::write(FDataStreamBase* stream)
 	stream->Write(GC.getNumBuildingClassInfos(), m_pbBuildingClassNeededInCity);
 
 	int i;
-	for(i=0;i<GC.getNumSpecialistClassInfos();i++)
+	for (int i = 0;i<GC.getNumSpecialistClassInfos();i++)
 	{
 		stream->Write(NUM_YIELD_TYPES, m_ppaiSpecialistClassYieldChange[i]);
 	}
 
 //FfH: Added by Kael 11/06/2007
-	for(i=0;i<GC.getNumSpecialistClassInfos();i++)
+	for (int i = 0;i<GC.getNumSpecialistClassInfos();i++)
 	{
 		stream->Write(NUM_COMMERCE_TYPES, m_ppaiSpecialistClassCommerceChange[i]);
 	}
@@ -24425,12 +24448,12 @@ void CvBuildingInfo::write(FDataStreamBase* stream)
 /**	GWSLocalSpecialist																	Milaga	**/
 /** Buildings can change give bonuses to specialists in only one city							**/
 /*************************************************************************************************/
-	for(i=0;i<GC.getNumSpecialistClassInfos();i++)
+	for (int i = 0;i<GC.getNumSpecialistClassInfos();i++)
 	{
 		stream->Write(NUM_YIELD_TYPES, m_paaiLocalSpecialistClassYieldChange[i]);
 	}
 
-	for(i=0;i<GC.getNumSpecialistClassInfos();i++)
+	for (int i = 0;i<GC.getNumSpecialistClassInfos();i++)
 	{
 		stream->Write(NUM_COMMERCE_TYPES, m_paaiLocalSpecialistClassCommerceChange[i]);
 	}
@@ -24443,11 +24466,11 @@ void CvBuildingInfo::write(FDataStreamBase* stream)
 /**	GWSLocalSpecialist																		END	**/
 /*************************************************************************************************/
 
-	for(i=0;i<GC.getNumBonusInfos();i++)
+	for (int i=0;i<GC.getNumBonusInfos();i++)
 	{
 		stream->Write(NUM_YIELD_TYPES, m_ppaiBonusYieldModifier[i]);
 	}
-	for (i = 0; i < GC.getNumBonusInfos(); i++)
+	for (int i = 0; i < GC.getNumBonusInfos(); i++)
 	{
 		stream->Write(NUM_COMMERCE_TYPES, m_ppaiBonusCommerceModifier[i]);
 	}
@@ -24565,7 +24588,7 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 				if (pXML->GetChildXmlVal(szTextVal))
 				{
 					FAssertMsg((iNumSibs <= GC.getNUM_BUILDING_AND_TECH_PREREQS()),"For loop iterator is greater than array size");
-					for (j=0;j<iNumSibs;j++)
+					for (int j=0;j<iNumSibs;j++)
 					{
 						m_piPrereqAndTechs[j] = pXML->FindInInfoClass(szTextVal);
 						if (!pXML->GetNextXmlVal(szTextVal))
@@ -24616,7 +24639,7 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 				{
 					FAssertMsg((iNumChildren <= GC.getNUM_BUILDING_PREREQ_OR_BONUSES()),"For loop iterator is greater than array size");
 					// loop through all the siblings
-					for (j=0;j<iNumChildren;j++)
+					for (int j=0;j<iNumChildren;j++)
 					{
 						// call the find in list function to return either -1 if no value is found
 						// or the index in the list the match is found at
@@ -24882,7 +24905,7 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 	pXML->SetVariableListTagPair(&m_piPrereqGlobalBuildingClassNOTs, "PrereqGlobalBuildingClassNOTs", sizeof(GC.getBuildingClassInfo((BuildingClassTypes)0)), GC.getNumBuildingClassInfos());
 	pXML->SetVariableListTagPair(&m_piPrereqGlobalBuildingClassORs, "PrereqGlobalBuildingClassORs", sizeof(GC.getBuildingClassInfo((BuildingClassTypes)0)), GC.getNumBuildingClassInfos());
 
-	for (j=0;j<GC.getNumBuildingClassInfos();j++)
+	for (int j=0;j<GC.getNumBuildingClassInfos();j++)
 	{
 		if (getPrereqTeamBuildingClassAND(j) 	> 0)	m_iNumPrereqTeamBuildingClassANDs++;
 		if (getPrereqTeamBuildingClassNOT(j) 	> 0)	m_iNumPrereqTeamBuildingClassNOTs++;
@@ -24980,7 +25003,7 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 
 		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "TerrainYieldChange"))
 		{
-			for (j = 0; j < iNumChildren; j++)
+			for (int j = 0; j < iNumChildren; j++)
 			{
 				pXML->GetChildXmlValByName(szTextVal, "TerrainType");
 				k = pXML->FindInInfoClass(szTextVal);
@@ -25021,7 +25044,7 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 
 		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "FeatureYieldChange"))
 		{
-			for (j = 0; j < iNumChildren; j++)
+			for (int j = 0; j < iNumChildren; j++)
 			{
 				pXML->GetChildXmlValByName(szTextVal, "FeatureType");
 				k = pXML->FindInInfoClass(szTextVal);
@@ -25305,7 +25328,7 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 
 		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"SpecialistClassYieldChange"))
 		{
-			for(j=0;j<iNumChildren;j++)
+			for (int j=0;j<iNumChildren;j++)
 			{
 				pXML->GetChildXmlValByName(szTextVal, "SpecialistClass");
 				k = pXML->FindInInfoClass(szTextVal);
@@ -25346,7 +25369,7 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 
 		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"BonusYieldModifier"))
 		{
-			for(j=0;j<iNumChildren;j++)
+			for (int j=0;j<iNumChildren;j++)
 			{
 				pXML->GetChildXmlValByName(szTextVal, "BonusType");
 				k = pXML->FindInInfoClass(szTextVal);
@@ -25388,7 +25411,7 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 
 		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "BonusCommerceModifier"))
 		{
-			for (j = 0; j < iNumChildren; j++)
+			for (int j = 0; j < iNumChildren; j++)
 			{
 				pXML->GetChildXmlValByName(szTextVal, "BonusType");
 				k = pXML->FindInInfoClass(szTextVal);
@@ -25434,7 +25457,7 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 		iNumChildren = gDLL->getXMLIFace()->GetNumChildren(pXML->GetXML());
 		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"SpecialistClassCommerceChange"))
 		{
-			for(j=0;j<iNumChildren;j++)
+			for (int j=0;j<iNumChildren;j++)
 			{
 				pXML->GetChildXmlValByName(szTextVal, "SpecialistClass");
 				k = pXML->FindInInfoClass(szTextVal);
@@ -25469,7 +25492,7 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 		iNumChildren = gDLL->getXMLIFace()->GetNumChildren(pXML->GetXML());
 		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"LocalSpecialistClassCommerceChange"))
 		{
-			for(j=0;j<iNumChildren;j++)
+			for (int j=0;j<iNumChildren;j++)
 			{
 				pXML->GetChildXmlValByName(szTextVal, "SpecialistClass");
 				k = pXML->FindInInfoClass(szTextVal);
@@ -25501,7 +25524,7 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 		iNumChildren = gDLL->getXMLIFace()->GetNumChildren(pXML->GetXML());
 		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"LocalSpecialistClassYieldChange"))
 		{
-			for(j=0;j<iNumChildren;j++)
+			for (int j=0;j<iNumChildren;j++)
 			{
 				pXML->GetChildXmlValByName(szTextVal, "SpecialistClass");
 				k = pXML->FindInInfoClass(szTextVal);
@@ -26073,7 +26096,7 @@ void CvBuildingInfo::copyNonDefaults(CvBuildingInfo* pClassInfo, CvXMLLoadUtilit
 	m_iNumPrereqGlobalBuildingClassANDs=0;
 	m_iNumPrereqGlobalBuildingClassNOTs=0;
 	m_iNumPrereqGlobalBuildingClassORs=0;
-	for (j=0;j<GC.getNumBuildingClassInfos();j++)
+	for (int j=0;j<GC.getNumBuildingClassInfos();j++)
 	{
 		if (getPrereqTeamBuildingClassAND(j) 	> 0)	m_iNumPrereqTeamBuildingClassANDs++;
 		if (getPrereqTeamBuildingClassNOT(j) 	> 0)	m_iNumPrereqTeamBuildingClassNOTs++;
@@ -27486,7 +27509,7 @@ bool CvCivilizationInfo::read(CvXMLLoadUtility* pXML)
 				{
 					int iIndex;
 
-					for (j=0;j<iNumSibs;j++)
+					for (int j=0;j<iNumSibs;j++)
 					{
 						pXML->GetChildXmlValByName(szTextVal, "FeatureType");
 						iIndex = pXML->FindInInfoClass(szTextVal);
@@ -27536,7 +27559,7 @@ bool CvCivilizationInfo::read(CvXMLLoadUtility* pXML)
 				{
 					int iIndex;
 
-					for (j=0;j<iNumSibs;j++)
+					for (int j=0;j<iNumSibs;j++)
 					{
 						pXML->GetChildXmlValByName(szTextVal, "ImprovementType");
 						iIndex = pXML->FindInInfoClass(szTextVal);
@@ -27586,7 +27609,7 @@ bool CvCivilizationInfo::read(CvXMLLoadUtility* pXML)
 				{
 					int iIndex;
 
-					for (j=0;j<iNumSibs;j++)
+					for (int j=0;j<iNumSibs;j++)
 					{
 						pXML->GetChildXmlValByName(szTextVal, "TerrainType");
 						iIndex = pXML->FindInInfoClass(szTextVal);
@@ -27703,7 +27726,7 @@ bool CvCivilizationInfo::read(CvXMLLoadUtility* pXML)
 				FAssertMsg((iNumSibs <= GC.getNumBuildingInfos()), "In SetGlobalCivilizationInfo iNumSibs is greater than GC.getNumBuildingInfos()");
 
 				// loop through all the siblings
-				for (j = 0; j < iNumSibs; j++)
+				for (int j = 0; j < iNumSibs; j++)
 				{
 					if (pXML->GetChildXmlVal(szClassVal))
 					{
@@ -27754,7 +27777,7 @@ bool CvCivilizationInfo::read(CvXMLLoadUtility* pXML)
 		pXML->InitBuildingArtDefineDefaults(&m_piCivilizationBuildingArtDefines);
 		if (isLimitedSelection())
 		{
-			for (j = 0; j < GC.getNumBuildingInfos(); j++)
+			for (int j = 0; j < GC.getNumBuildingInfos(); j++)
 			{
 				m_piCivilizationBuildingArtDefines[j] = cDefault;
 			}
@@ -27799,7 +27822,7 @@ bool CvCivilizationInfo::read(CvXMLLoadUtility* pXML)
 				FAssertMsg((iNumSibs <= GC.getNumBuildingClassInfos()) ,"In SetGlobalCivilizationInfo iNumSibs is greater than GC.getNumBuildingClassInfos()");
 
 				// loop through all the siblings
-				for (j=0;j<iNumSibs;j++)
+				for (int j=0;j<iNumSibs;j++)
 				{
 					if (pXML->GetChildXmlVal(szClassVal))
 					{
@@ -27844,7 +27867,7 @@ bool CvCivilizationInfo::read(CvXMLLoadUtility* pXML)
 		pXML->InitBuildingDefaults(&m_piCivilizationBuildings);
 		if(isLimitedSelection())
 		{
-			for ( j = 0; j < GC.getNumBuildingClassInfos(); j++)
+			for (int j = 0; j < GC.getNumBuildingClassInfos(); j++)
 			{
 				m_piCivilizationBuildings[j] = NO_BUILDING;
 			}
@@ -27970,7 +27993,7 @@ bool CvCivilizationInfo::read(CvXMLLoadUtility* pXML)
 				FAssertMsg((iNumSibs <= GC.getNumImprovementClassInfos()), "In SetGlobalCivilizationInfo iNumSibs is greater than GC.getNumImprovementClassInfos()");
 
 				// loop through all the siblings
-				for (j = 0; j < iNumSibs; j++)
+				for (int j = 0; j < iNumSibs; j++)
 				{
 					if (pXML->GetChildXmlVal(szClassVal))
 					{
@@ -28015,7 +28038,7 @@ bool CvCivilizationInfo::read(CvXMLLoadUtility* pXML)
 		pXML->InitImprovementDefaults(&m_piCivilizationImprovements);
 		if (isLimitedSelection())
 		{
-			for (j = 0; j < GC.getNumImprovementClassInfos(); j++)
+			for (int j = 0; j < GC.getNumImprovementClassInfos(); j++)
 			{
 				m_piCivilizationImprovements[j] = NO_IMPROVEMENT;
 			}
@@ -28059,7 +28082,7 @@ bool CvCivilizationInfo::read(CvXMLLoadUtility* pXML)
 				FAssertMsg((iNumSibs <= GC.getNumUnitClassInfos()),"In SetGlobalCivilizationInfo iNumSibs is greater than GC.getNumUnitClassInfos()");
 
 				// loop through all the siblings
-				for (j=0;j<iNumSibs;j++)
+				for (int j=0;j<iNumSibs;j++)
 				{
 					if (pXML->GetChildXmlVal(szClassVal))
 					{
@@ -28109,7 +28132,7 @@ bool CvCivilizationInfo::read(CvXMLLoadUtility* pXML)
 		pXML->InitUnitDefaults(&m_piCivilizationUnits);
 		if(isLimitedSelection())
 		{
-			for ( j = 0; j < GC.getNumUnitClassInfos(); j++)
+			for (int j = 0; j < GC.getNumUnitClassInfos(); j++)
 			{
 				m_piCivilizationUnits[j] = NO_UNIT;
 			}
@@ -28138,7 +28161,7 @@ bool CvCivilizationInfo::read(CvXMLLoadUtility* pXML)
 				if (pXML->GetChildXmlVal(szTextVal))
 				{
 					FAssertMsg((iNumSibs <= GC.getNumCivicOptionInfos()),"For loop iterator is greater than array size");
-					for (j=0;j<iNumSibs;j++)
+					for (int j=0;j<iNumSibs;j++)
 					{
 						m_piCivilizationInitialCivics[j] = pXML->FindInInfoClass(szTextVal);
 						if (!pXML->GetNextXmlVal(szTextVal))
@@ -29547,7 +29570,7 @@ bool CvHandicapInfo::read(CvXMLLoadUtility* pXML)
 		{
 			m_piGoodies = new int[m_iNumGoodies];
 
-			for (j=0;j<m_iNumGoodies;j++)
+			for (int j=0;j<m_iNumGoodies;j++)
 			{
 				m_piGoodies[j] = pXML->FindInInfoClass(pszGoodyNames[j]);
 			}
@@ -29932,7 +29955,7 @@ bool CvGameSpeedInfo::read(CvXMLLoadUtility* pXML)
 			allocateGameTurnInfos(getNumTurnIncrements());
 
 			// loop through each tag
-			for (j=0;j<getNumTurnIncrements();j++)
+			for (int j=0;j<getNumTurnIncrements();j++)
 			{
 				pXML->GetChildXmlValByName(&iTempVal, "iMonthIncrement");
 				getGameTurnInfo(j).iMonthIncrement = iTempVal;
@@ -31659,7 +31682,7 @@ CvImprovementInfo::~CvImprovementInfo()
 
 	if (m_ppiTechYieldChanges != NULL)
 	{
-		for (iI=0;iI<GC.getNumTechInfos();iI++)
+		for (int iI=0;iI<GC.getNumTechInfos();iI++)
 		{
 			SAFE_DELETE_ARRAY(m_ppiTechYieldChanges[iI]);
 		}
@@ -31668,7 +31691,7 @@ CvImprovementInfo::~CvImprovementInfo()
 
 	if (m_ppiRouteYieldChanges != NULL)
 	{
-		for (iI=0;iI<GC.getNumRouteInfos();iI++)
+		for (int iI=0;iI<GC.getNumRouteInfos();iI++)
 		{
 			SAFE_DELETE_ARRAY(m_ppiRouteYieldChanges[iI]);
 		}
@@ -32531,14 +32554,14 @@ void CvImprovementInfo::read(FDataStreamBase* stream)
 	SAFE_DELETE_ARRAY(m_paImprovementBonus);
 	m_paImprovementBonus = new CvImprovementBonusInfo[GC.getNumBonusInfos()];
 	int i;
-	for (i = 0; i < GC.getNumBonusInfos(); i++)
+	for (int i = 0; i < GC.getNumBonusInfos(); i++)
 	{
 		m_paImprovementBonus[i].read(stream);
 	}
 
 	if (m_ppiTechYieldChanges != NULL)
 	{
-		for(i=0;i<GC.getNumTechInfos();i++)
+		for (int i=0;i<GC.getNumTechInfos();i++)
 		{
 			SAFE_DELETE_ARRAY(m_ppiTechYieldChanges[i]);
 		}
@@ -32546,7 +32569,7 @@ void CvImprovementInfo::read(FDataStreamBase* stream)
 	}
 
 	m_ppiTechYieldChanges = new int*[GC.getNumTechInfos()];
-	for(i=0;i<GC.getNumTechInfos();i++)
+	for (int i=0;i<GC.getNumTechInfos();i++)
 	{
 		m_ppiTechYieldChanges[i]  = new int[NUM_YIELD_TYPES];
 		stream->Read(NUM_YIELD_TYPES, m_ppiTechYieldChanges[i]);
@@ -32554,7 +32577,7 @@ void CvImprovementInfo::read(FDataStreamBase* stream)
 
 	if (m_ppiRouteYieldChanges != NULL)
 	{
-		for(i=0;i<GC.getNumRouteInfos();i++)
+		for (int i=0;i<GC.getNumRouteInfos();i++)
 		{
 			SAFE_DELETE_ARRAY(m_ppiRouteYieldChanges[i]);
 		}
@@ -32562,7 +32585,7 @@ void CvImprovementInfo::read(FDataStreamBase* stream)
 	}
 
 	m_ppiRouteYieldChanges = new int*[GC.getNumRouteInfos()];
-	for(i=0;i<GC.getNumRouteInfos();i++)
+	for (int i=0;i<GC.getNumRouteInfos();i++)
 	{
 		m_ppiRouteYieldChanges[i]  = new int[NUM_YIELD_TYPES];
 		stream->Read(NUM_YIELD_TYPES, m_ppiRouteYieldChanges[i]);
@@ -32738,17 +32761,17 @@ void CvImprovementInfo::write(FDataStreamBase* stream)
 /*************************************************************************************************/
 
 	int i;
-	for (i = 0; i < GC.getNumBonusInfos(); i++)
+	for (int i = 0; i < GC.getNumBonusInfos(); i++)
 	{
 		m_paImprovementBonus[i].write(stream);
 	}
 
-	for(i=0;i<GC.getNumTechInfos();i++)
+	for (int i=0;i<GC.getNumTechInfos();i++)
 	{
 		stream->Write(NUM_YIELD_TYPES, m_ppiTechYieldChanges[i]);
 	}
 
-	for(i=0;i<GC.getNumRouteInfos();i++)
+	for (int i=0;i<GC.getNumRouteInfos();i++)
 	{
 		stream->Write(NUM_YIELD_TYPES, m_ppiRouteYieldChanges[i]);
 	}
@@ -32905,7 +32928,7 @@ bool CvImprovementInfo::read(CvXMLLoadUtility* pXML)
 			{
 				if (0 < iNumSibs)
 				{
-					for (j=0;j<iNumSibs;j++)
+					for (int j=0;j<iNumSibs;j++)
 					{
 						pXML->GetChildXmlValByName(szTextVal, "PrereqTech");
 						iIndex = pXML->FindInInfoClass(szTextVal);
@@ -32954,7 +32977,7 @@ bool CvImprovementInfo::read(CvXMLLoadUtility* pXML)
 
 				if (0 < iNumSibs)
 				{
-					for (j=0;j<iNumSibs;j++)
+					for (int j=0;j<iNumSibs;j++)
 					{
 						pXML->GetChildXmlValByName(szTextVal, "RouteType");
 						iIndex = pXML->FindInInfoClass(szTextVal);
@@ -33046,7 +33069,7 @@ bool CvImprovementInfo::read(CvXMLLoadUtility* pXML)
 
 	m_piSpawnPromotions = new int[m_iNumSpawnPromotions];
 
-	for (iI = 0; iI < m_iNumSpawnPromotions; iI++)
+	for (int iI = 0; iI < m_iNumSpawnPromotions; iI++)
 	{
 		m_piSpawnPromotions[iI] = GC.getInfoTypeForString(aszSpawnPromotions[iI]);
 	}
@@ -33059,7 +33082,7 @@ bool CvImprovementInfo::read(CvXMLLoadUtility* pXML)
 
 	m_piGuardianPromotions = new int[m_iNumGuardianPromotions];
 
-	for (iI = 0; iI < m_iNumGuardianPromotions; iI++)
+	for (int iI = 0; iI < m_iNumGuardianPromotions; iI++)
 	{
 		m_piGuardianPromotions[iI] = GC.getInfoTypeForString(aszGuardianPromotions[iI]);
 	}
@@ -35268,7 +35291,7 @@ bool CvYieldInfo::read(CvXMLLoadUtility* pXML)
 				if (pXML->GetChildXmlVal(szTextVal))
 				{
 					FAssertMsg((iNumSibs <= GC.getDefineINT("MAX_YIELD_STACK")) ,"There are more siblings than memory allocated for them in SetGlobalYieldInfo");
-					for (j=0;j<iNumSibs;j++)
+					for (int j=0;j<iNumSibs;j++)
 					{
 						m_paszSymbolPath[j] = szTextVal;
 						if (!pXML->GetNextXmlVal(szTextVal))
@@ -37469,7 +37492,7 @@ void CvLeaderHeadInfo::read(FDataStreamBase* stream)
 	SAFE_DELETE_ARRAY(m_paAlignmentAttitudeModifier);
 	m_paAlignmentAttitudeModifier = new CvAlignmentAttitudeModifierInfo[GC.getNumAlignmentInfos()];
 	int i;
-	for (i = 0; i < GC.getNumAlignmentInfos(); i++)
+	for (int i = 0; i < GC.getNumAlignmentInfos(); i++)
 	{
 		m_paAlignmentAttitudeModifier[i].read(stream);
 	}
@@ -37483,7 +37506,7 @@ void CvLeaderHeadInfo::read(FDataStreamBase* stream)
 /*************************************************************************************************/
 	SAFE_DELETE_ARRAY(m_paEthicalAlignmentAttitudeModifier);
 	m_paEthicalAlignmentAttitudeModifier = new CvEthicalAlignmentAttitudeModifierInfo[GC.getNumEthicalAlignmentInfos()];
-	for (i = 0; i < GC.getNumEthicalAlignmentInfos(); i++)
+	for (int i = 0; i < GC.getNumEthicalAlignmentInfos(); i++)
 	{
 		m_paEthicalAlignmentAttitudeModifier[i].read(stream);
 	}
@@ -37709,7 +37732,7 @@ void CvLeaderHeadInfo::write(FDataStreamBase* stream)
 /** AlignmentAttitudeModifier       Opera   13.09.09        imported by Valkrionn	09.26.09    **/
 /*************************************************************************************************/
 	int i;
-	for (i = 0; i < GC.getNumAlignmentInfos(); i++)
+	for (int i = 0; i < GC.getNumAlignmentInfos(); i++)
 	{
 		m_paAlignmentAttitudeModifier[i].write(stream);
 	}
@@ -37721,7 +37744,7 @@ void CvLeaderHeadInfo::write(FDataStreamBase* stream)
 /**																								**/
 /**							Adds a new alignment axis to the game								**/
 /*************************************************************************************************/
-	for (i = 0; i < GC.getNumEthicalAlignmentInfos(); i++)
+	for (int i = 0; i < GC.getNumEthicalAlignmentInfos(); i++)
 	{
 		m_paEthicalAlignmentAttitudeModifier[i].write(stream);
 	}
@@ -38763,7 +38786,7 @@ void CvProcessInfo::copyNonDefaults(CvProcessInfo* pClassInfo, CvXMLLoadUtility*
 	CvInfoBase::copyNonDefaults(pClassInfo, pXML);
 
 	if (getTechPrereq()								== NO_TECH)		m_iTechPrereq							= pClassInfo->getTechPrereq();
-	if (getProductionToCrimeModifier == 0) m_iProductionToCrimeModifier = pClassInfo->getProductionToCrimeModifier();
+	if (getProductionToCrimeModifier() == 0) m_iProductionToCrimeModifier = pClassInfo->getProductionToCrimeModifier();
 	for ( int i = 0; i < NUM_COMMERCE_TYPES; i++ )
 	{
 		if (m_paiProductionToCommerceModifier[i]	== 0)			m_paiProductionToCommerceModifier[i]	= pClassInfo->getProductionToCommerceModifier(i);
@@ -40455,7 +40478,7 @@ bool CvReligionInfo::read(CvXMLLoadUtility* pXML)
 			m_paiSoundtracks = new int[m_iNumSoundtracks];
 
 			int j;
-			for (j=0;j<m_iNumSoundtracks;j++)
+			for (int j=0;j<m_iNumSoundtracks;j++)
 			{
 				m_paiSoundtracks[j] = ((!gDLL->getAudioDisabled()) ? gDLL->getAudioTagIndex(pszSoundTrackNames[j], AUDIOTAG_2DSCRIPT) : -1);
 			}
@@ -42101,7 +42124,7 @@ bool CvTraitInfo::read(CvXMLLoadUtility* pXML)
 
 		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"SpecialistClassYieldChange"))
 		{
-			for(j=0;j<iNumChildren;j++)
+			for (int j=0;j<iNumChildren;j++)
 			{
 				pXML->GetChildXmlValByName(szTextVal, "SpecialistClass");
 				k = pXML->FindInInfoClass(szTextVal);
@@ -42142,7 +42165,7 @@ bool CvTraitInfo::read(CvXMLLoadUtility* pXML)
 
 		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"SpecialistClassCommerceChange"))
 		{
-			for(j=0;j<iNumChildren;j++)
+			for (int j=0;j<iNumChildren;j++)
 			{
 				pXML->GetChildXmlValByName(szTextVal, "SpecialistClass");
 				k = pXML->FindInInfoClass(szTextVal);
@@ -42206,7 +42229,7 @@ bool CvTraitInfo::read(CvXMLLoadUtility* pXML)
 				{
 					int iIndex;
 
-					for (j = 0; j < iNumSibs; j++)
+					for (int j = 0; j < iNumSibs; j++)
 					{
 						pXML->GetChildXmlValByName(szTextVal, "TerrainType");
 						iIndex = pXML->FindInInfoClass(szTextVal);
@@ -42255,7 +42278,7 @@ bool CvTraitInfo::read(CvXMLLoadUtility* pXML)
 				{
 					int iIndex;
 
-					for (j = 0; j < iNumSibs; j++)
+					for (int j = 0; j < iNumSibs; j++)
 					{
 						pXML->GetChildXmlValByName(szTextVal, "FeatureType");
 						iIndex = pXML->FindInInfoClass(szTextVal);
@@ -42304,7 +42327,7 @@ bool CvTraitInfo::read(CvXMLLoadUtility* pXML)
 				{
 					int iIndex;
 
-					for (j = 0; j < iNumSibs; j++)
+					for (int j = 0; j < iNumSibs; j++)
 					{
 						pXML->GetChildXmlValByName(szTextVal, "ImprovementType");
 						m_aszImprovementYieldChanges.push_back(szTextVal);
@@ -42359,7 +42382,7 @@ bool CvTraitInfo::read(CvXMLLoadUtility* pXML)
 				{
 					int iIndex;
 
-					for (j = 0; j < iNumSibs; j++)
+					for (int j = 0; j < iNumSibs; j++)
 					{
 						if (pXML->GetChildXmlVal(szClassVal))
 						{
@@ -42394,7 +42417,7 @@ bool CvTraitInfo::read(CvXMLLoadUtility* pXML)
 				{
 					int iIndex;
 
-					for (j = 0; j < iNumSibs; j++)
+					for (int j = 0; j < iNumSibs; j++)
 					{
 						if (pXML->GetChildXmlVal(szClassVal))
 						{
@@ -43947,7 +43970,7 @@ bool CvEntityEventInfo::read(CvXMLLoadUtility* pXML)
 						m_vctAnimationPathType.push_back( eAnimationPath );
 
 					// loop through all the siblings, we start at 1 since we already have the first value
-					for (i=1;i<iNumSibs;i++)
+					for (int i=1;i<iNumSibs;i++)
 					{
 						if (!pXML->GetNextXmlVal(szTmp))
 						{
@@ -43983,7 +44006,7 @@ bool CvEntityEventInfo::read(CvXMLLoadUtility* pXML)
 						m_vctEffectTypes.push_back( eEffectType );
 
 					// loop through all the siblings, we start at 1 since we already have the first value
-					for (i=1;i<iNumSibs;i++)
+					for (int i=1;i<iNumSibs;i++)
 					{
 						if (!pXML->GetNextXmlVal(szTmp))
 						{
@@ -45644,7 +45667,7 @@ bool CvEraInfo::read(CvXMLLoadUtility* pXML)
 			m_paiSoundtracks = new int[m_iNumSoundtracks];
 
 			int j;
-			for (j=0;j<m_iNumSoundtracks;j++)
+			for (int j=0;j<m_iNumSoundtracks;j++)
 			{
 				m_paiSoundtracks[j] = ((!gDLL->getAudioDisabled()) ? gDLL->getAudioTagIndex(pszSoundTrackNames[j], AUDIOTAG_2DSCRIPT) : -1);
 			}
@@ -46181,7 +46204,7 @@ bool CvGameText::read(CvXMLLoadUtility* pXML)
 	int iNumLanguages = NUM_LANGUAGES ? NUM_LANGUAGES : iMaxNumLanguages + 1;
 
 	int j=0;
-	for (j = 0; j < iNumLanguages; j++)
+	for (int j = 0; j < iNumLanguages; j++)
 	{
 		pXML->SkipToNextVal();	// skip comments
 
@@ -46400,7 +46423,7 @@ bool CvDiplomacyTextInfo::read(CvXMLLoadUtility* pXML)
 		int iIndexVal = gDLL->getXMLIFace()->NumOfChildrenByTagName(pXML->GetXML(), "Response");
 		init(iIndexVal);
 
-		for (j = 0; j < iIndexVal; j++)
+		for (int j = 0; j < iIndexVal; j++)
 		{
 			if (j == 0)
 			{
@@ -46765,7 +46788,7 @@ bool CvQuestInfo::read(CvXMLLoadUtility* pXML)
 		if (initQuestLinks(iNum))
 		{
 			int i;
-			for (i=0; i<m_iNumQuestLinks; i++)
+			for (int i=0; i<m_iNumQuestLinks; i++)
 			{
 				pXML->GetChildXmlValByName(szTextVal, "QuestLinkType");
 				m_pQuestLinks[i].m_szQuestLinkType = szTextVal;
@@ -51393,7 +51416,7 @@ bool CvUnitArtStyleTypeInfo::read(CvXMLLoadUtility* pXML)
 			{
 				if (0 < iNumSibs)
 				{
-					for (i = 0; i < iNumSibs; i++)
+					for (int i = 0; i < iNumSibs; i++)
 					{
 						pXML->GetChildXmlValByName(szTextVal, "UnitType");
 						iIndex = pXML->FindInInfoClass(szTextVal);
@@ -51413,7 +51436,7 @@ bool CvUnitArtStyleTypeInfo::read(CvXMLLoadUtility* pXML)
 
 							if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"UnitMeshGroup"))
 							{
-								for (j = 0; j < iMesh; j++)
+								for (int j = 0; j < iMesh; j++)
 								{
 									// Overwrite with the Style Art
 									pXML->GetChildXmlValByName(szTextVal, "EarlyArtDefineTag");
@@ -52263,7 +52286,7 @@ bool CvStateNameInfo::read(CvXMLLoadUtility* pXML)
 
 	m_piPrereqCivics = new int[m_iNumPrereqCivics];
 
-	for (iI = 0; iI < m_iNumPrereqCivics; iI++)
+	for (int iI = 0; iI < m_iNumPrereqCivics; iI++)
 	{
 		m_piPrereqCivics[iI] = GC.getInfoTypeForString(aszPrereqCivics[iI]);
 	}
@@ -52275,7 +52298,7 @@ bool CvStateNameInfo::read(CvXMLLoadUtility* pXML)
 
 	m_piPrereqAlignments = new int[m_iNumPrereqAlignments];
 
-	for (iI = 0; iI < m_iNumPrereqAlignments; iI++)
+	for (int iI = 0; iI < m_iNumPrereqAlignments; iI++)
 	{
 		m_piPrereqAlignments[iI] = GC.getInfoTypeForString(aszPrereqAlignments[iI]);
 	}
@@ -52292,7 +52315,7 @@ bool CvStateNameInfo::read(CvXMLLoadUtility* pXML)
 
 	m_piPrereqEthicalAlignments = new int[m_iNumPrereqEthicalAlignments];
 
-	for (iI = 0; iI < m_iNumPrereqEthicalAlignments; iI++)
+	for (int iI = 0; iI < m_iNumPrereqEthicalAlignments; iI++)
 	{
 		m_piPrereqEthicalAlignments[iI] = GC.getInfoTypeForString(aszPrereqEthicalAlignments[iI]);
 	}
@@ -52724,7 +52747,7 @@ bool CvSpawnGroupInfo::read(CvXMLLoadUtility* pXML)
 
 	m_piCommanderUnits = new int[m_iNumCommanderUnits];
 
-	for (iI = 0; iI < m_iNumCommanderUnits; iI++)
+	for (int iI = 0; iI < m_iNumCommanderUnits; iI++)
 	{
 		m_piCommanderUnits[iI] = GC.getInfoTypeForString(aszCommanderUnits[iI]);
 	}
@@ -52737,7 +52760,7 @@ bool CvSpawnGroupInfo::read(CvXMLLoadUtility* pXML)
 
 	m_piGroupPromotions = new int[m_iNumGroupPromotions];
 
-	for (iI = 0; iI < m_iNumGroupPromotions; iI++)
+	for (int iI = 0; iI < m_iNumGroupPromotions; iI++)
 	{
 		m_piGroupPromotions[iI] = GC.getInfoTypeForString(aszGroupPromotions[iI]);
 	}
@@ -52750,7 +52773,7 @@ bool CvSpawnGroupInfo::read(CvXMLLoadUtility* pXML)
 
 	m_piCommanderPromotions = new int[m_iNumCommanderPromotions];
 
-	for (iI = 0; iI < m_iNumCommanderPromotions; iI++)
+	for (int iI = 0; iI < m_iNumCommanderPromotions; iI++)
 	{
 		m_piCommanderPromotions[iI] = GC.getInfoTypeForString(aszCommanderPromotions[iI]);
 	}
@@ -52763,7 +52786,7 @@ bool CvSpawnGroupInfo::read(CvXMLLoadUtility* pXML)
 
 	m_piSpawnTerrains = new int[m_iNumSpawnTerrains];
 
-	for (iI = 0; iI < m_iNumSpawnTerrains; iI++)
+	for (int iI = 0; iI < m_iNumSpawnTerrains; iI++)
 	{
 		m_piSpawnTerrains[iI] = GC.getInfoTypeForString(aszSpawnTerrains[iI]);
 	}
@@ -52776,7 +52799,7 @@ bool CvSpawnGroupInfo::read(CvXMLLoadUtility* pXML)
 
 	m_piSpawnFeatures = new int[m_iNumSpawnFeatures];
 
-	for (iI = 0; iI < m_iNumSpawnFeatures; iI++)
+	for (int iI = 0; iI < m_iNumSpawnFeatures; iI++)
 	{
 		m_piSpawnFeatures[iI] = GC.getInfoTypeForString(aszSpawnFeatures[iI]);
 	}
@@ -52789,7 +52812,7 @@ bool CvSpawnGroupInfo::read(CvXMLLoadUtility* pXML)
 
 	m_piPrereqTechANDs = new int[m_iNumPrereqTechANDs];
 
-	for (iI = 0; iI < m_iNumPrereqTechANDs; iI++)
+	for (int iI = 0; iI < m_iNumPrereqTechANDs; iI++)
 	{
 		m_piPrereqTechANDs[iI] = GC.getInfoTypeForString(aszPrereqTechANDs[iI]);
 	}
@@ -52802,7 +52825,7 @@ bool CvSpawnGroupInfo::read(CvXMLLoadUtility* pXML)
 
 	m_piPrereqTechORs = new int[m_iNumPrereqTechORs];
 
-	for (iI = 0; iI < m_iNumPrereqTechORs; iI++)
+	for (int iI = 0; iI < m_iNumPrereqTechORs; iI++)
 	{
 		m_piPrereqTechORs[iI] = GC.getInfoTypeForString(aszPrereqTechORs[iI]);
 	}
@@ -52815,7 +52838,7 @@ bool CvSpawnGroupInfo::read(CvXMLLoadUtility* pXML)
 
 	m_piBlockTechANDs = new int[m_iNumBlockTechANDs];
 
-	for (iI = 0; iI < m_iNumBlockTechANDs; iI++)
+	for (int iI = 0; iI < m_iNumBlockTechANDs; iI++)
 	{
 		m_piBlockTechANDs[iI] = GC.getInfoTypeForString(aszBlockTechANDs[iI]);
 	}
@@ -52828,7 +52851,7 @@ bool CvSpawnGroupInfo::read(CvXMLLoadUtility* pXML)
 
 	m_piBlockTechORs = new int[m_iNumBlockTechORs];
 
-	for (iI = 0; iI < m_iNumBlockTechORs; iI++)
+	for (int iI = 0; iI < m_iNumBlockTechORs; iI++)
 	{
 		m_piBlockTechORs[iI] = GC.getInfoTypeForString(aszBlockTechORs[iI]);
 	}
@@ -53411,7 +53434,7 @@ bool CvAffinityInfo::read(CvXMLLoadUtility* pXML)
 
 	m_piBonusTypes = new int[m_iNumBonusTypes];
 
-	for (iI = 0; iI < m_iNumBonusTypes; iI++)
+	for (int iI = 0; iI < m_iNumBonusTypes; iI++)
 	{
 		m_piBonusTypes[iI] = GC.getInfoTypeForString(aszBonusTypes[iI]);
 	}
@@ -53423,7 +53446,7 @@ bool CvAffinityInfo::read(CvXMLLoadUtility* pXML)
 
 	m_piAffinityPromotions = new int[m_iNumAffinityPromotions];
 
-	for (iI = 0; iI < m_iNumAffinityPromotions; iI++)
+	for (int iI = 0; iI < m_iNumAffinityPromotions; iI++)
 	{
 		m_piAffinityPromotions[iI] = GC.getInfoTypeForString(aszAffinityPromotions[iI]);
 	}
@@ -54154,7 +54177,7 @@ bool CvCityClassInfo::read(CvXMLLoadUtility* pXML)
 				FAssertMsg((iNumSibs <= GC.getNumBuildingClassInfos()), "In SetGlobalCityClassInfo iNumSibs is greater than GC.getNumBuildingClassInfos()");
 
 				// loop through all the siblings
-				for (j = 0; j < iNumSibs; j++)
+				for (int j = 0; j < iNumSibs; j++)
 				{
 					if (pXML->GetChildXmlVal(szClassVal))
 					{
@@ -54204,7 +54227,7 @@ bool CvCityClassInfo::read(CvXMLLoadUtility* pXML)
 		pXML->InitBuildingDefaults(&m_piCityClassBuildings);
 		if (isLimitedSelection())
 		{
-			for (j = 0; j < GC.getNumBuildingClassInfos(); j++)
+			for (int j = 0; j < GC.getNumBuildingClassInfos(); j++)
 			{
 				m_piCityClassBuildings[j] = NO_BUILDING;
 			}
@@ -54248,7 +54271,7 @@ bool CvCityClassInfo::read(CvXMLLoadUtility* pXML)
 				FAssertMsg((iNumSibs <= GC.getNumUnitClassInfos()), "In SetGlobalCityClassInfo iNumSibs is greater than GC.getNumUnitClassInfos()");
 
 				// loop through all the siblings
-				for (j = 0; j < iNumSibs; j++)
+				for (int j = 0; j < iNumSibs; j++)
 				{
 					if (pXML->GetChildXmlVal(szClassVal))
 					{
@@ -54298,7 +54321,7 @@ bool CvCityClassInfo::read(CvXMLLoadUtility* pXML)
 		pXML->InitUnitDefaults(&m_piCityClassUnits);
 		if (isLimitedSelection())
 		{
-			for (j = 0; j < GC.getNumUnitClassInfos(); j++)
+			for (int j = 0; j < GC.getNumUnitClassInfos(); j++)
 			{
 				m_piCityClassUnits[j] = NO_UNIT;
 			}

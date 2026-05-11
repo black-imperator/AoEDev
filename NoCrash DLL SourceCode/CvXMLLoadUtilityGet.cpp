@@ -1351,7 +1351,7 @@ int CvXMLLoadUtility::GetHotKeyInt(const TCHAR* pszHotKeyVal)
 		{"KB_DELETE",FInputDevice::KB_DELETE},
 	};
 
-	for (i=0;i<iNumKeyBoardMappings;i++)
+	for (int i=0;i<iNumKeyBoardMappings;i++)
 	{
 		if (strcmp(asCvKeyBoardMapping [i].szDefineString, pszHotKeyVal) == 0)
 		{

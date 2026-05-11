@@ -83,7 +83,7 @@ CyPlayer* CyGlobalContext::getCyPlayer(int idx)
 	if (!bInit)
 	{
 		int i;
-		for(i=0;i<MAX_PLAYERS;i++)
+		for (int i=0;i<MAX_PLAYERS;i++)
 			cyPlayers[i]=CyPlayer(&GET_PLAYER((PlayerTypes)i));
 		bInit=true;
 	}
@@ -121,7 +121,7 @@ CyTeam* CyGlobalContext::getCyTeam(int i)
 	if (!bInit)
 	{
 		int j;
-		for(j=0;j<MAX_TEAMS;j++)
+		for (int j=0;j<MAX_TEAMS;j++)
 		{
 			cyTeams[j]=CyTeam(&GET_TEAM((TeamTypes)j));
 		}
