@@ -1433,6 +1433,10 @@
 					<LeaderName>LEADER_THE_COUNCIL</LeaderName>
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
+				<Leader>
+					<LeaderName>LEADER_MIDJIN</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
 			</Leaders>
 			<DerivativeCiv>NONE</DerivativeCiv>
 			<CivilizationSelectionSound>AS3D_AZTEC_SELECT</CivilizationSelectionSound>
@@ -1447,6 +1451,14 @@
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
 					<ImprovementType>IMPROVEMENT_WORKSHOP</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>-1</iYield>
+						<iYield>0</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
 					<ImprovementYields>
 						<iYield>0</iYield>
 						<iYield>-1</iYield>
@@ -6723,7 +6735,7 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_ALMSHOUSE</BuildingClassType>
-					<BuildingType>BUILDING_ALMSHOUSE</BuildingType>
+					<BuildingType>NONE</BuildingType>
 				</Building>
 			</Buildings>
 	

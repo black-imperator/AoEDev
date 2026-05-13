@@ -27,7 +27,7 @@ Alsark
 ;Short description - text showed in contect menu
 ;note: one line
 [shortdesc]
-Adds a Republic-like mechanic to the Tribal Law civic.
+Adds a Republic-like mechanic for the Tribal Law civic, new leaders, some buildings and units.
 ;
 ;
 ;Description - text showed in message box

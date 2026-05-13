@@ -35815,6 +35815,51 @@
 			<Button>Art/Interface/Buttons/Promotions/Freelancer.dds</Button>
 			<iMinLevel>-1</iMinLevel>
 		</PromotionInfo>
+		<PromotionInfo>		<!-- Werewolf Wendigo Hunger Chislev -->
+			<Type>PROMOTION_WEREWOLF_HUNGER_CHISLEV</Type>
+			<Description>TXT_KEY_PROMOTION_WEREWOLF_HUNGER_CHISLEV</Description>
+			<iPromotionRandomApplyChance>3</iPromotionRandomApplyChance>
+			<Button>Art/Interface/Buttons/Promotions/WendigoCurse.dds</Button>
+			<iMinLevel>-1</iMinLevel>
+			<YieldsFromWin>
+				<iYield>5</iYield>		<!-- Food -->
+			</YieldsFromWin>
+			<PromotionRandomApply>PROMOTION_WEREWOLF</PromotionRandomApply>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+		</PromotionInfo>
 		<PromotionInfo>		<!-- Long Knife Promo -->
 			<Type>PROMOTION_LONG_KNIFE</Type>
 			<Description>TXT_KEY_PROMOTION_LONG_KNIFE</Description>
