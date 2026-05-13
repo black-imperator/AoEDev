@@ -210,11 +210,11 @@ The shambling undead horde.
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TEMPLE_DTESH</Tag>
-		<English>Temple to D'tesh</English>
-		<French>Temple de D'tesh</French>
-		<German>Tempel des D'tesh</German>
-		<Italian>Tempio di D'tesh</Italian>
-		<Spanish>Temple to D'tesh</Spanish>
+		<English>Shrine to D'tesh</English>
+		<French>Shrine de D'tesh</French>
+		<German>Shrine des D'tesh</German>
+		<Italian>Shrine di D'tesh</Italian>
+		<Spanish>Shrine to D'tesh</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TOWER_DTESH</Tag>

@@ -21,6 +21,21 @@
 			</Yields>
 			<Button>Art/Civs/CivSpecialists/Human/Citizen.dds</Button>
 		</SpecialistInfo>
+		<SpecialistInfo> <!-- Citizen Dtesh -->
+			<Type>SPECIALIST_CITIZEN_DTESH</Type>
+			<SpecialistClass>SPECIALISTCLASS_CITIZEN</SpecialistClass>
+			<Description>TXT_KEY_SPECIALIST_CITIZEN_DTESH</Description>
+			<Civilopedia>TXT_KEY_CONCEPT_SPECIALISTS_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_SPECIALIST_CITIZEN_STRATEGY</Strategy>
+			<Texture>Art/Civs/CivSpecialists/Human/Citizen.dds</Texture>
+			<bVisible>1</bVisible>
+			<Yields>
+				<iYield>0</iYield>
+				<iYield>1</iYield>
+				<iYield>1</iYield>
+			</Yields>
+			<Button>Art/Civs/CivSpecialists/Undead/Citizen.dds</Button>
+		</SpecialistInfo>
 		<SpecialistInfo> <!-- Priest -->
 			<Type>SPECIALIST_PRIEST</Type>
 			<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>

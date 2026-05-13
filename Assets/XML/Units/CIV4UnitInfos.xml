@@ -32291,7 +32291,7 @@
 			<PrereqTech>TECH_DRAMA</PrereqTech>
 			<iCost>-1</iCost>
 			<iMoves>2</iMoves>
-			<iCombat>5</iCombat>
+			<iCombat>6</iCombat>
 			<iCityAttack>25</iCityAttack>
 			<iCityDefense>25</iCityDefense>
 			<iCultureGarrison>6</iCultureGarrison>
@@ -32322,7 +32322,7 @@
 				<PromotionType>PROMOTION_HARDY2</PromotionType>
 				<PromotionType>PROMOTION_HARDY3</PromotionType>
 			</AllowPromotions>
-			<iCombatDefense>3</iCombatDefense>
+			<iCombatDefense>4</iCombatDefense>
 			<iMinLevel>1</iMinLevel>
 			<bDisableUpgradeTo>1</bDisableUpgradeTo>
 			<iTier>3</iTier>

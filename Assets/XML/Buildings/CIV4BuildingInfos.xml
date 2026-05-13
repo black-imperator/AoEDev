@@ -1693,7 +1693,7 @@
 			<Type>BUILDING_BREEDING_PIT</Type>
 			<Description>TXT_KEY_BUILDING_BREEDING_PIT</Description>
 			<Civilopedia>TXT_KEY_BUILDING_BREEDING_PIT_PEDIA</Civilopedia>
-			<Help>TXT_KEY_BUILDING_BREEDING_PIT_HELP</Help>
+			<Help>TXT_KEY_BUILDING_PAGAN_TEMPLE_MEKARA_HELP</Help>
 			<Strategy>TXT_KEY_BUILDING_BREEDING_PIT_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BREEDING_PIT</ArtDefineTag>
@@ -1703,11 +1703,11 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>0</iConquestProb>
 			<iFoodKept>20</iFoodKept>
-			<iHealth>-1</iHealth>
+			<iHealth>0</iHealth>
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>10</fVisibilityPriority>
 			<YieldChanges>
-				<iYield>2</iYield>
+				<iYield>0</iYield>
 				<iYield>0</iYield>
 				<iYield>0</iYield>
 			</YieldChanges>
@@ -1717,6 +1717,22 @@
 					<iSpecialistClassCount>1</iSpecialistClassCount>
 				</SpecialistClassCount>
 			</SpecialistClassCounts>
+			<LocalSpecialistClassYieldChanges>
+				<LocalSpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_SLAVE</SpecialistClass>
+					<YieldChanges>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+					</YieldChanges>
+				</LocalSpecialistClassYieldChange>
+			</LocalSpecialistClassYieldChanges>
+			<FreeSpecialistClassCounts>
+				<FreeSpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_SLAVE</SpecialistClass>
+					<iFreeSpecialistClassCount>2</iFreeSpecialistClassCount>
+				</FreeSpecialistClassCount>
+			</FreeSpecialistClassCounts>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GROWTH</FlavorType>
@@ -10512,7 +10528,7 @@
 			<fVisibilityPriority>1</fVisibilityPriority>
 			<FreeSpecialistClassCounts>
 				<FreeSpecialistClassCount>
-					<SpecialistClass>SPECIALISTCLASS_CITIZEN</SpecialistClass>
+					<SpecialistClass>SPECIALISTCLASS_SLAVE</SpecialistClass>
 					<iFreeSpecialistClassCount>4</iFreeSpecialistClassCount>
 				</FreeSpecialistClassCount>
 			</FreeSpecialistClassCounts>
@@ -10529,6 +10545,7 @@
 			<Description>TXT_KEY_BUILDING_TEMPLE_OF_AGRUONN</Description>
 			<Civilopedia>TXT_KEY_BUILDING_TEMPLE_OF_AGRUONN_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_TEMPLE_OF_AGRUONN_STRATEGY</Strategy>
+			<Help>TXT_KEY_BUILDING_PAGAN_TEMPLE_MEKARA_HELP</Help>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_DEMONS_ALTAR</ArtDefineTag>
 			<PrereqTech>TECH_PHILOSOPHY</PrereqTech>
@@ -10544,6 +10561,16 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>20</iCommerce>
 			</CommerceModifiers>
+			<LocalSpecialistClassYieldChanges>
+				<LocalSpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_SLAVE</SpecialistClass>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+					</YieldChanges>
+				</LocalSpecialistClassYieldChange>
+			</LocalSpecialistClassYieldChanges>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_RELIGION</FlavorType>
@@ -10590,6 +10617,16 @@
 					<iSpecialistClassCount>2</iSpecialistClassCount>
 				</SpecialistClassCount>
 			</SpecialistClassCounts>
+			<LocalSpecialistClassYieldChanges>
+				<LocalSpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_SLAVE</SpecialistClass>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+					</YieldChanges>
+				</LocalSpecialistClassYieldChange>
+			</LocalSpecialistClassYieldChanges>
 			<FreePromotion>PROMOTION_SAUROS_AFFINITY_ENABLER</FreePromotion>
 			<CommerceModifiers>
 				<iCommerce>0</iCommerce>
@@ -10625,6 +10662,16 @@
 			<TechTypes>
 				<PrereqTech>TECH_NECROMANCY</PrereqTech>
 			</TechTypes>
+			<LocalSpecialistClassCommerceChanges>
+				<LocalSpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_SLAVE</SpecialistClass>
+					<CommerceChanges>
+						<iCommerce>0</iCommerce>
+						<iCommerce>0</iCommerce>
+						<iCommerce>2</iCommerce>
+					</CommerceChanges>
+				</LocalSpecialistClassCommerceChange>
+			</LocalSpecialistClassCommerceChanges>
 			<NoBonus>BONUS_MANA_LIFE</NoBonus>
 			<iHurryAngerModifier>-50</iHurryAngerModifier>
 			<bNeverCapture>1</bNeverCapture>
@@ -11032,6 +11079,7 @@
 			<Type>BUILDING_PALACE_CUALLI</Type>
 			<Description>TXT_KEY_BUILDING_PALACE_CUALLI</Description>
 			<Civilopedia>TXT_KEY_BUILDING_PALACE_PEDIA</Civilopedia>
+			<Help>TXT_KEY_BUILDING_PAGAN_TEMPLE_MEKARA_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_PALACE_CUALLI</ArtDefineTag>
 			<FreeBonus>BONUS_MANA_WATER</FreeBonus>
@@ -14710,6 +14758,14 @@
 						<iYield>0</iYield>
 					</YieldChanges>
 				</LocalSpecialistClassYieldChange>
+				<LocalSpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_CITIZEN</SpecialistClass>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+					</YieldChanges>
+				</LocalSpecialistClassYieldChange>
 			</LocalSpecialistClassYieldChanges>
 			<SpecialistClassCounts>
 				<SpecialistClassCount>
@@ -14764,7 +14820,7 @@
 					<YieldChanges>
 						<iYield>0</iYield>
 						<iYield>1</iYield>
-						<iYield>2</iYield>
+						<iYield>1</iYield>
 					</YieldChanges>
 				</LocalSpecialistClassYieldChange>
 			</LocalSpecialistClassYieldChanges>
@@ -14836,7 +14892,7 @@
 			<iGlobalResistModify>0</iGlobalResistModify>
 			<FreeBonus2>NONE</FreeBonus2>
 		</BuildingInfo>
-		<BuildingInfo>		<!-- Temple to D'tesh                                           D'tesh UB -->
+		<BuildingInfo>		<!-- Shrine to D'tesh                                           D'tesh UB -->
 			<BuildingClass>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClass>
 			<Type>BUILDING_TEMPLE_DTESH</Type>
 			<Description>TXT_KEY_BUILDING_TEMPLE_DTESH</Description>
@@ -14867,7 +14923,7 @@
 			</CommerceModifiers>
 			<SpecialistClassCounts>
 				<SpecialistClassCount>
-					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
 					<iSpecialistClassCount>2</iSpecialistClassCount>
 				</SpecialistClassCount>
 			</SpecialistClassCounts>
@@ -15391,6 +15447,7 @@
 			<Type>BUILDING_MARKET_SLAVE</Type>
 			<Description>TXT_KEY_BUILDING_MARKET_SLAVE</Description>
 			<Civilopedia>TXT_KEY_BUILDING_MARKET_PEDIA</Civilopedia>
+			<Help>TXT_KEY_BUILDING_SLAVE_MARKET_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MARKET</ArtDefineTag>
 			<PrereqTech>TECH_MATHEMATICS</PrereqTech>
@@ -15405,10 +15462,20 @@
 			<iAsset>2</iAsset>
 			<fVisibilityPriority>10</fVisibilityPriority>
 			<CommerceChanges>
-				<iCommerce>3</iCommerce>
+				<iCommerce>2</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 			</CommerceChanges>
+			<LocalSpecialistClassYieldChanges>
+				<LocalSpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_SLAVE</SpecialistClass>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>2</iYield>
+					</YieldChanges>
+				</LocalSpecialistClassYieldChange>
+			</LocalSpecialistClassYieldChanges>
 			<SpecialistClassCounts>
 				<SpecialistClassCount>
 					<SpecialistClass>SPECIALISTCLASS_MERCHANT</SpecialistClass>
@@ -16629,6 +16696,7 @@
 			<Type>BUILDING_MINISTRY_OF_TRUTH</Type>
 			<Description>TXT_KEY_BUILDING_MINISTRY_OF_TRUTH</Description>
 			<Civilopedia>TXT_KEY_BUILDING_MINISTRY_OF_TRUTH_PEDIA</Civilopedia>
+			<Help>TXT_KEY_BUILDING_SLAVE_MARKET_HELP</Help>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_GOVERNORS_MANOR</ArtDefineTag>
 			<PrereqTrait>TRAIT_DOMINANT2</PrereqTrait>
@@ -17772,10 +17840,27 @@
 			<Type>BUILDING_CRIME_BLOOD_SLAVERY</Type>
 			<Description>TXT_KEY_BUILDING_CRIME_BLOOD_SLAVERY</Description>
 			<Civilopedia>TXT_KEY_BUILDING_CRIME_BLOOD_SLAVERY_PEDIA</Civilopedia>
+			<Help>TXT_KEY_BUILDING_PAGAN_TEMPLE_MEKARA_HELP</Help>
 			<ArtDefineTag>ART_DEF_BUILDING_CRIME</ArtDefineTag>
 			<iPrereqCrime>400</iPrereqCrime>
 			<iPrereqPopulation>10</iPrereqPopulation>
 			<bCrimeEffect>1</bCrimeEffect>
+			<FreeSpecialistClassCounts>
+				<FreeSpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_SLAVE</SpecialistClass>
+					<iFreeSpecialistClassCount>2</iFreeSpecialistClassCount>
+				</FreeSpecialistClassCount>
+			</FreeSpecialistClassCounts>
+			<LocalSpecialistClassYieldChanges>
+				<LocalSpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_SLAVE</SpecialistClass>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>2</iYield>
+						<iYield>0</iYield>
+					</YieldChanges>
+				</LocalSpecialistClassYieldChange>
+			</LocalSpecialistClassYieldChanges>
 			<PerPopBonuses>
 				<PerPopBonus>
 					<fHappy>0.2</fHappy>
@@ -19955,7 +20040,7 @@
 			</Flavors>
 			<PerPopBonuses>
 				<PerPopBonus>
-					<fProduction>1.5</fProduction>
+					<fProduction>1</fProduction>
 				</PerPopBonus>
 			</PerPopBonuses>
 			<bAutoBuild>1</bAutoBuild>

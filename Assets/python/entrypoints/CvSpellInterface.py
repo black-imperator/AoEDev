@@ -11473,6 +11473,26 @@ def reqSlaveSettle(caster):
 		iMax += 2
 	if pCity.getNumBuilding(getInfoType('BUILDING_SLAVE_MARKET')) == 1:
 		iMax += 4
+	if pCity.getNumBuilding(getInfoType('BUILDING_BREEDING_PIT')) == 1:
+		iMax += 4
+	if pCity.getNumBuilding(getInfoType('BUILDING_GOVERNORS_MANOR')) == 1:
+		iMax += 4
+	if pCity.getNumBuilding(getInfoType('BUILDING_TEMPLE_OF_AGRUONN')) == 1:
+		iMax += 2
+	if pCity.getNumBuilding(getInfoType('BUILDING_TEMPLE_OF_BLOODTHIRSTY_FLAME')) == 1:
+		iMax += 2
+	if pCity.getNumBuilding(getInfoType('BUILDING_CRIME_BLOOD_SLAVERY')) == 1:
+		iMax += 2
+	if pCity.getNumBuilding(getInfoType('BUILDING_SACRIFICIAL_ALTAR')) == 1:
+		iMax += 4
+	if pCity.getNumBuilding(getInfoType('BUILDING_PALACE_CUALLI')) == 1:
+		iMax += 2
+	if pCity.getNumBuilding(getInfoType('BUILDING_MARKET_SLAVE')) == 1:
+		iMax += 4
+	if pCity.getNumBuilding(getInfoType('BUILDING_SLAVE_PIT')) == 1:
+		iMax += 4
+	if pCity.getNumBuilding(getInfoType('BUILDING_MINISTRY_OF_TRUTH')) == 1:
+		iMax += 4
 	iCount = pCity.getFreeSpecialistClassCount(getInfoType('SPECIALISTCLASS_SLAVE'))
 	if iCount >= iMax:
 		return False

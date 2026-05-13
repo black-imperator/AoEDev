@@ -5720,6 +5720,10 @@
 			</Buildings>
 			<Units>
 				<Unit>
+					<UnitClassType>UNITCLASS_HEALER</UnitClassType>
+					<UnitType>UNIT_GREAT_NECROMANCER</UnitType>
+				</Unit>
+				<Unit>
 					<UnitClassType>UNITCLASS_ASSASSIN</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -5866,6 +5870,16 @@
 			</Units>
 			<!--Also had the unitclass_creeper and three free creepers -->
 			
+			<Specialists>
+				<Specialist>
+					<SpecialistClassType>SPECIALISTCLASS_HEALER</SpecialistClassType>
+					<SpecialistType>SPECIALIST_NECROMANCER</SpecialistType>
+				</Specialist>
+				<Specialist>
+					<SpecialistClassType>SPECIALISTCLASS_GREAT_HEALER</SpecialistClassType>
+					<SpecialistType>SPECIALIST_GREAT_NECROMANCER</SpecialistType>
+				</Specialist>
+			</Specialists>
 			<FreeUnitClasses>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_AWAKENED</UnitClassType>
@@ -6707,6 +6721,10 @@
 					<BuildingClassType>BUILDINGCLASS_DUNGEON</BuildingClassType>
 					<BuildingType>BUILDING_DUNGEON_DTESH</BuildingType>
 				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_ALMSHOUSE</BuildingClassType>
+					<BuildingType>BUILDING_ALMSHOUSE</BuildingType>
+				</Building>
 			</Buildings>
 	
 			<Units>
@@ -6837,6 +6855,14 @@
 					<SpecialistClassType>SPECIALISTCLASS_GREAT_HEALER</SpecialistClassType>
 					<SpecialistType>SPECIALIST_GREAT_NECROMANCER</SpecialistType>
 				</Specialist>
+				<Specialist>
+					<SpecialistClassType>SPECIALISTCLASS_CITIZEN</SpecialistClassType>
+					<SpecialistType>SPECIALIST_CITIZEN_DTESH</SpecialistType>
+				</Specialist>
+				<Specialist>
+					<SpecialistClassType>SPECIALISTCLASS_PRIEST</SpecialistClassType>
+					<SpecialistType>NONE</SpecialistType>
+				</Specialist>
 			</Specialists>
 			<Improvements>
 				<Improvement>
@@ -6845,6 +6871,10 @@
 				</Improvement>
 				<Improvement>
 					<ImprovementClassType>IMPROVEMENTCLASS_PLANTATION</ImprovementClassType>
+					<ImprovementType>NONE</ImprovementType>
+				</Improvement>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_PYRE</ImprovementClassType>
 					<ImprovementType>IMPROVEMENT_DTESH_PYRE</ImprovementType>
 				</Improvement>
 				<Improvement>

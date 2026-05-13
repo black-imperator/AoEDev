@@ -2549,7 +2549,7 @@
 				<LinkedBuild>BUILD_REMOVE_FOREST</LinkedBuild>
 				<LinkedBuild>BUILD_REMOVE_JUNGLE</LinkedBuild>
 			</LinkedBuilds>
-			<ImprovementType>IMPROVEMENTCLASS_PLANTATION</ImprovementType>
+			<ImprovementType>IMPROVEMENTCLASS_PYRE</ImprovementType>
 			<RouteType>NONE</RouteType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs>
@@ -2595,6 +2595,7 @@
 			<bCtrlDown>0</bCtrlDown>
 			<iHotKeyPriority>0</iHotKeyPriority>
 			<Button>Art/Civs/Dtesh/Pyre/Pyre.dds</Button>
+			<bStandard>1</bStandard>
 		</BuildInfo>
 		<BuildInfo> <!-- Aquatic Pyre -->
 			<Type>BUILD_PYRE_AQUATIC</Type>

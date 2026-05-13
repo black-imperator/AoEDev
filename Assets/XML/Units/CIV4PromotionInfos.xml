@@ -6338,6 +6338,9 @@
 			<PrereqCivilizations>
 				<PrereqCivilization>CIVILIZATION_DTESH</PrereqCivilization>
 			</PrereqCivilizations>
+			<PromotionBuilds>
+				<PromotionBuild>BUILD_PYRE</PromotionBuild>
+			</PromotionBuilds>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>

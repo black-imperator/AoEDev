@@ -2179,6 +2179,12 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 			</CommerceModifiers>
+			<ExtraBuildingClasses>
+				<ExtraBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
+					<BuildingType>BUILDING_PAGAN_TEMPLE_MEKARA</BuildingType>
+				</ExtraBuildingClass>
+			</ExtraBuildingClasses>
 			<FreePromotions>
 				<FreePromotion>
 					<PromotionType>PROMOTION_SLAVER</PromotionType>

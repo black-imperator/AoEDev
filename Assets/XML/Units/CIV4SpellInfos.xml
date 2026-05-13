@@ -11614,8 +11614,6 @@
 			<Type>SPELL_SETTLE_SLAVE_V2</Type>
 			<Description>TXT_KEY_SPELL_SETTLE_SLAVE</Description>
 			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
-			<CivilizationPrereq>CIVILIZATION_MEKARA_V2</CivilizationPrereq>
-			<BuildingPrereq>BUILDING_PAGAN_TEMPLE_MEKARA</BuildingPrereq>
 			<UnitClassPrereq>UNITCLASS_SLAVE</UnitClassPrereq>
 			<bInCityOnly>1</bInCityOnly>
 			<bAllowAI>1</bAllowAI>

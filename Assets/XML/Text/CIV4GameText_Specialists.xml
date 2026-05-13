@@ -213,4 +213,12 @@
 		<Italian>Great Commanders can be used to either recruit units, build a Command Post in a city, or be added to another unit to increase its strength and the rate it gains experience points from combat. The recruit ability offers a quick random assortment of units, but the Command Post tends to have a better long term effect as it adds Great Commander points to the city making getting another all the more likely. A commander that is joined with a unit can always be split from the unit later on and used for other purposes, or joined to a different unit.</Italian>
 		<Spanish>Great Commanders can be used to either recruit units, build a Command Post in a city, or be added to another unit to increase its strength and the rate it gains experience points from combat. The recruit ability offers a quick random assortment of units, but the Command Post tends to have a better long term effect as it adds Great Commander points to the city making getting another all the more likely. A commander that is joined with a unit can always be split from the unit later on and used for other purposes, or joined to a different unit.</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_CITIZEN_DTESH</Tag>
+		<English>Undead Thrall</English>
+		<French>Undead Thrall</French>
+		<German>Undead Thrall</German>
+		<Italian>Undead Thrall</Italian>
+		<Spanish>Undead Thrall</Spanish>
+	</TEXT>
 </Civ4GameText>
