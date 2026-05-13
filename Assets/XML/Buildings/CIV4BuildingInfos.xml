@@ -9144,6 +9144,14 @@
 						<iCommerce>0</iCommerce>
 					</CommerceChanges>
 				</LocalSpecialistClassCommerceChange>
+				<LocalSpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_CITIZEN</SpecialistClass>
+					<CommerceChanges>
+						<iCommerce>0</iCommerce>
+						<iCommerce>3</iCommerce>
+						<iCommerce>0</iCommerce>
+					</CommerceChanges>
+				</LocalSpecialistClassCommerceChange>
 			</LocalSpecialistClassCommerceChanges>
 		</BuildingInfo>
 		<BuildingInfo>		<!-- Root Cellar - Chislev UB -->

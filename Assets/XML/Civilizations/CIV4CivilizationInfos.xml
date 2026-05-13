@@ -1344,6 +1344,12 @@
 					<UnitType>UNIT_FREE_SPIRITS</UnitType>
 				</Unit>
 			</Units>
+			<Specialists>
+				<Specialist>
+					<SpecialistClassType>SPECIALISTCLASS_CITIZEN</SpecialistClassType>
+					<SpecialistType>SPECIALIST_CITIZEN_CHISLEV</SpecialistType>
+				</Specialist>
+			</Specialists>
 			<Improvements>
 				<Improvement>
 					<ImprovementClassType>IMPROVEMENTCLASS_COTTAGE</ImprovementClassType>
@@ -6575,7 +6581,7 @@
 			<ArtStyleType>ARTSTYLE_INFERNAL</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_DTESH</UnitArtStyleType>
 			<bPlayable>1</bPlayable>
-			<bAIPlayable>1</bAIPlayable>		<!-- Civ simply cannot be handled by the AI at this time -->
+			<bAIPlayable>1</bAIPlayable>		<!-- Civ simply cannot be handled by the AI at this time --> <!-- Yes it can! fuck you! haha! -->
 			<bNotMercenaryCiv>1</bNotMercenaryCiv>
 			
 			<bNoCrimeCiv>1</bNoCrimeCiv>

@@ -303,6 +303,14 @@ Military units which reach a high enough level are able to befriend Amicus, silv
 		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_CITIZEN_CHISLEV</Tag>
+		<English>Tribal Member</English>
+		<French>Tribal Member</French>
+		<German>Tribal Member</German>
+		<Italian>Tribal Member</Italian>
+		<Spanish>Tribal Member</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_BEAR_TOTEM</Tag>
 		<English>Bear Totem</English>
 		<French>Totem Ours</French>
