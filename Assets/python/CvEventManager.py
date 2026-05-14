@@ -1866,8 +1866,8 @@ class CvEventManager:
 		elif eCiv == self.Civilizations["Luchuirp"]:		cf.doTurnLuchuirp(iPlayer)
 		elif eCiv == self.Civilizations["Archos"]:			cf.doTurnArchos(iPlayer)
 		elif eCiv == self.Civilizations["Scions"]:			cf.doTurnScions(iPlayer)
-		elif eCiv == self.Civilizations["Grigori"]:			cf.doTurnGrigori(iPlayer)
-		elif eCiv == self.Civilizations["Mekara Order"]:	cf.doTurnMekara(iPlayer)
+#		elif eCiv == self.Civilizations["Grigori"]:			cf.doTurnGrigori(iPlayer)
+#		elif eCiv == self.Civilizations["Mekara Order"]:	cf.doTurnMekara(iPlayer)
 		elif eCiv == self.Civilizations["Infernal"]:		cf.doTurnInfernal(iPlayer)
 		elif eCiv == self.Civilizations["Mercurians"]:		cf.doTurnMercurians(iPlayer)
 

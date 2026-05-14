@@ -173,6 +173,10 @@
 					<BuildingType>BUILDING_CARNIVAL_DURAL</BuildingType>
 				</Building>
 				<Building>
+					<BuildingClassType>BUILDINGCLASS_MUSEUM</BuildingClassType>
+					<BuildingType>BUILDING_MUSEUM</BuildingType>
+				</Building>
+				<Building>
 					<BuildingClassType>BUILDINGCLASS_TEMPLE_OF_KILMORPH</BuildingClassType>
 					<BuildingType>NONE</BuildingType>
 				</Building>

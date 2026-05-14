@@ -2558,7 +2558,7 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_MUSEUM</BuildingClassType>
-					<BuildingType>BUILDING_MUSEUM</BuildingType>
+					<BuildingType>NONE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
@@ -2602,7 +2602,7 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_FORUM</BuildingClassType>
-					<BuildingType>BUILDING_FORUM</BuildingType>
+					<BuildingType>NONE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_MEMORIAL_REFUGEE</BuildingClassType>
@@ -2662,8 +2662,12 @@
 			</Units>
 			<Specialists>
 				<Specialist>
-					<SpecialistClassType>SPECIALISTCLASS_STATESMAN</SpecialistClassType>
-					<SpecialistType>SPECIALIST_STATESMAN</SpecialistType>
+					<SpecialistClassType>SPECIALISTCLASS_GREENHORN</SpecialistClassType>
+					<SpecialistType>SPECIALIST_GREENHORN</SpecialistType>
+				</Specialist>
+				<Specialist>
+					<SpecialistClassType>SPECIALISTCLASS_CITIZEN</SpecialistClassType>
+					<SpecialistType>SPECIALIST_CITIZEN_GRIGORI</SpecialistType>
 				</Specialist>
 			</Specialists>
 			<Improvements>
@@ -8462,6 +8466,10 @@
 					<UnitClassType>UNITCLASS_PIKEMAN</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_HEALER</UnitClassType>
+					<UnitType>UNIT_HEALER_MEKARA</UnitType>
+				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -8487,6 +8495,20 @@
 					<bFreeBuildingClass>1</bFreeBuildingClass>
 				</FreeBuildingClass>
 			</FreeBuildingClasses>
+			<Specialists>
+				<Specialist>
+					<SpecialistClassType>SPECIALISTCLASS_HEALER</SpecialistClassType>
+					<SpecialistType>SPECIALIST_HEALER_MEKARA</SpecialistType>
+				</Specialist>
+				<Specialist>
+					<SpecialistClassType>SPECIALISTCLASS_GREAT_HEALER</SpecialistClassType>
+					<SpecialistType>SPECIALIST_GREAT_HEALER_MEKARA</SpecialistType>
+				</Specialist>
+				<Specialist>
+					<SpecialistClassType>SPECIALISTCLASS_SLAVE</SpecialistClassType>
+					<SpecialistType>SPECIALIST_SLAVE_MEKARA</SpecialistType>
+				</Specialist>
+			</Specialists>
 			<FreeTechs>
 				<FreeTech>
 					<TechType>TECH_ANCIENT_CHANTS</TechType>
