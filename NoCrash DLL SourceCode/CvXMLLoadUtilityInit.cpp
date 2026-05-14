@@ -437,7 +437,7 @@ void CvXMLLoadUtility::InitSpecialistDefaults(int** ppiDefaults)
 		/*************************************************************************************************/
 		/**	Streamline							10/18/08									Xienwolf	**/
 		/**																								**/
-		/**			Initializes the BuildingClass to default as NONE if flagged to be Unique			**/
+		/**			Initializes the SpecialistClass to default as NONE if flagged to be Unique			**/
 		/*************************************************************************************************/
 		if (GC.getSpecialistClassInfo((SpecialistClassTypes)i).isUnique())
 		{

@@ -20086,23 +20086,54 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_SEE_INVISIBLE"));
 	}
+	CvWString* szSpecialistNameBuffer = new CvWString[GC.getNumSpecialistClassInfos()];
+	bool* bBufferEmpty = new bool[GC.getNumSpecialistClassInfos()];
 	for (iI = 0; iI < GC.getNumSpecialistClassInfos(); ++iI)
 	{
-		SpecialistTypes eSpecialist = (SpecialistTypes)GC.getSpecialistClassInfo((SpecialistClassTypes)iI).getDefaultSpecialistIndex();
+		szSpecialistNameBuffer[iI].Format(L"");
+		bBufferEmpty[iI] = true;
+		//SpecialistTypes eSpecialist = (SpecialistTypes)GC.getSpecialistClassInfo((SpecialistClassTypes)iI).getDefaultSpecialistIndex();
 		if (pCity != NULL)
-			eSpecialist = pCity->getSpecialistTypeFromClass((SpecialistClassTypes)iI);
-		else if (ePlayer != NO_PLAYER)
-			eSpecialist = (SpecialistTypes)GC.getCivilizationInfo(GET_PLAYER(ePlayer).getCivilizationType()).getCivilizationSpecialists(iI);
-		if (eSpecialist == NO_SPECIALIST)
+		{
+			szSpecialistNameBuffer[iI].append(L"[COLOR_UNIT_TEXT][LINK=literal]");
+			szSpecialistNameBuffer[iI] = gDLL->getText(GC.getSpecialistInfo(pCity->getSpecialistTypeFromClass((SpecialistClassTypes)iI)).getTextKeyWide());
+			szSpecialistNameBuffer[iI].append(L"[\\LINK][COLOR_REVERT]");
+			bBufferEmpty[iI] = false;
+		}
+		else if (ePlayer != NO_PLAYER && vCivsBuilding[GET_PLAYER(ePlayer).getCivilizationType()])
+		{
+			szSpecialistNameBuffer[iI].append(L"[COLOR_UNIT_TEXT][LINK=literal]");
+			szSpecialistNameBuffer[iI] = gDLL->getText(GC.getSpecialistInfo((SpecialistTypes)GC.getCivilizationInfo(GET_PLAYER(ePlayer).getCivilizationType()).getCivilizationSpecialists(iI)).getTextKeyWide());
+			szSpecialistNameBuffer[iI].append(L"[\\LINK][COLOR_REVERT]");
+			bBufferEmpty[iI] = false;
+		}
+		else 
+			for (int iSpecialist = 0; iSpecialist < GC.getNumSpecialistInfos(); iSpecialist++)
+			{
+				for (int iCiv = 0; iCiv < GC.getNumCivilizationInfos(); iCiv++)
+				{
+					if (GC.getCivilizationInfo((CivilizationTypes)iCiv).getCivilizationSpecialists(iI) == iSpecialist && vCivsBuilding[iCiv])
+					{
+						if (!bBufferEmpty[iI])
+							szSpecialistNameBuffer[iI].append(L", ");
+						szSpecialistNameBuffer[iI].append(L"[COLOR_UNIT_TEXT][LINK=literal]");
+						szSpecialistNameBuffer[iI].append(gDLL->getText(GC.getSpecialistInfo((SpecialistTypes)iSpecialist).getTextKeyWide()));
+						szSpecialistNameBuffer[iI].append(L"[\\LINK][COLOR_REVERT]");
+						bBufferEmpty[iI] = false;
+						break;
+					}
+				}
+			}
+		if (bBufferEmpty[iI])
 			continue;
-		szFirstBuffer = gDLL->getText("TXT_KEY_BUILDING_FROM_IN_ALL_CITIES", GC.getSpecialistInfo(eSpecialist).getTextKeyWide());
+		szFirstBuffer = gDLL->getText("TXT_KEY_BUILDING_FROM_IN_ALL_CITIES", szSpecialistNameBuffer[iI].GetCString());
 		setCommerceChangeHelp(szBuffer, L"", L"", szFirstBuffer, kBuilding.getSpecialistClassCommerceChangeArray(iI));
 //        setCommerceChangeHelp(szHelpText, L"", L"", gDLL->getText("TXT_KEY_CIVIC_IN_ALL_CITIES").GetCString(), GC.getCivicInfo(eCivic).getCommerceModifierArray(), true);
 /*************************************************************************************************/
 /**	GWSLocalSpecialist																	Milaga	**/
 /** Buildings can change give bonuses to specialists in only one city							**/
 /*************************************************************************************************/
-		szFirstBuffer = gDLL->getText("TXT_KEY_BUILDING_FROM_IN_LOCAL", GC.getSpecialistInfo(eSpecialist).getTextKeyWide());
+		szFirstBuffer = gDLL->getText("TXT_KEY_BUILDING_FROM_IN_LOCAL", szSpecialistNameBuffer[iI].GetCString());
 		setCommerceChangeHelp(szBuffer, L"", L"", szFirstBuffer, kBuilding.getLocalSpecialistClassCommerceChangeArray(iI));
 		if (kBuilding.getLocalSpecialistClassHappinessChange(iI) != 0)
 		{
@@ -20129,6 +20160,49 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 /**	GWSLocalSpecialist																		END	**/
 /*************************************************************************************************/
 	}
+	for (iI = 0; iI < GC.getNumSpecialistClassInfos(); ++iI)
+	{
+		if (bBufferEmpty[iI])
+			continue;
+		szFirstBuffer = gDLL->getText("TXT_KEY_BUILDING_FROM_IN_ALL_CITIES", szSpecialistNameBuffer[iI].GetCString());
+		setYieldChangeHelp(szBuffer, L"", L"", szFirstBuffer, kBuilding.getSpecialistClassYieldChangeArray(iI));
+		/*************************************************************************************************/
+		/**	GWSLocalSpecialist																	Milaga	**/
+		/** Buildings can change give bonuses to specialists in only one city							**/
+		/*************************************************************************************************/
+		szFirstBuffer = gDLL->getText("TXT_KEY_BUILDING_FROM_IN_LOCAL", szSpecialistNameBuffer[iI].GetCString());
+		setYieldChangeHelp(szBuffer, L"", L"", szFirstBuffer, kBuilding.getLocalSpecialistClassYieldChangeArray(iI));
+		/*************************************************************************************************/
+		/**	GWSLocalSpecialist																		END	**/
+		/*************************************************************************************************/
+	}
+	for (iI = 0; iI < GC.getNumSpecialistClassInfos(); ++iI)
+	{
+		if (bBufferEmpty[iI])
+			continue;
+		if (kBuilding.getSpecialistClassCount(iI) > 0)
+		{
+			if (kBuilding.getSpecialistClassCount(iI) == 1)
+			{
+				szBuffer.append(NEWLINE);
+				szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_TURN_CITIZEN_INTO", szSpecialistNameBuffer[iI].GetCString()));
+			}
+			else
+			{
+				szBuffer.append(NEWLINE);
+				szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_TURN_CITIZENS_INTO", kBuilding.getSpecialistClassCount(iI), szSpecialistNameBuffer[iI].GetCString()));
+			}
+		}
+
+		if (kBuilding.getFreeSpecialistClassCount(iI) > 0)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_FREE_SPECIALIST", kBuilding.getFreeSpecialistClassCount(iI), szSpecialistNameBuffer[iI].GetCString()));
+		}
+	}
+	SAFE_DELETE_ARRAY(szSpecialistNameBuffer);
+	SAFE_DELETE_ARRAY(bBufferEmpty);
+
 	if (kBuilding.isNoCivicAnger())
 	{
 		szBuffer.append(NEWLINE);
@@ -20809,30 +20883,6 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 			szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_ADJUST_COMM_RATE", GC.getCommerceInfo((CommerceTypes) iI).getChar()));
 		}
 	}
-
-	for (iI = 0; iI < GC.getNumSpecialistClassInfos(); ++iI)
-	{
-		SpecialistTypes eSpecialist = (SpecialistTypes)GC.getSpecialistClassInfo((SpecialistClassTypes)iI).getDefaultSpecialistIndex();
-		if (pCity != NULL)
-			eSpecialist = pCity->getSpecialistTypeFromClass((SpecialistClassTypes)iI);
-		else if (ePlayer != NO_PLAYER)
-			eSpecialist = (SpecialistTypes)GC.getCivilizationInfo(GET_PLAYER(ePlayer).getCivilizationType()).getCivilizationSpecialists(iI);
-		if (eSpecialist == NO_SPECIALIST)
-			continue;
-
-		szFirstBuffer = gDLL->getText("TXT_KEY_BUILDING_FROM_IN_ALL_CITIES", GC.getSpecialistInfo(eSpecialist).getTextKeyWide());
-		setYieldChangeHelp(szBuffer, L"", L"", szFirstBuffer, kBuilding.getSpecialistClassYieldChangeArray(iI));
-/*************************************************************************************************/
-/**	GWSLocalSpecialist																	Milaga	**/
-/** Buildings can change give bonuses to specialists in only one city							**/
-/*************************************************************************************************/
-		szFirstBuffer = gDLL->getText("TXT_KEY_BUILDING_FROM_IN_LOCAL", GC.getSpecialistInfo(eSpecialist).getTextKeyWide());
-		setYieldChangeHelp(szBuffer, L"", L"", szFirstBuffer, kBuilding.getLocalSpecialistClassYieldChangeArray(iI));
-/*************************************************************************************************/
-/**	GWSLocalSpecialist																		END	**/
-/*************************************************************************************************/
-	}
-
 	for (iI = 0; iI < GC.getNumBonusInfos(); ++iI)
 	{
 		szFirstBuffer = gDLL->getText("TXT_KEY_BUILDING_WITH_BONUS", GC.getBonusInfo((BonusTypes) iI).getTextKeyWide());
@@ -20850,36 +20900,6 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 		{
 			szTempBuffer.Format(L"%s%s", NEWLINE, gDLL->getText("TXT_KEY_BUILDING_SPREADS_RELIGION", GC.getReligionInfo((ReligionTypes) iI).getChar()).c_str());
 			szBuffer.append(szTempBuffer);
-		}
-	}
-
-	for (iI = 0; iI < GC.getNumSpecialistClassInfos(); ++iI)
-	{
-		SpecialistTypes eSpecialist = (SpecialistTypes)GC.getSpecialistClassInfo((SpecialistClassTypes)iI).getDefaultSpecialistIndex();
-		if (pCity != NULL)
-			eSpecialist = pCity->getSpecialistTypeFromClass((SpecialistClassTypes)iI);
-		else if (ePlayer != NO_PLAYER)
-			eSpecialist = (SpecialistTypes)GC.getCivilizationInfo(GET_PLAYER(ePlayer).getCivilizationType()).getCivilizationSpecialists(iI);
-		if (eSpecialist == NO_SPECIALIST)
-			continue;
-		if (kBuilding.getSpecialistClassCount(iI) > 0)
-		{
-			if (kBuilding.getSpecialistClassCount(iI) == 1)
-			{
-				szBuffer.append(NEWLINE);
-				szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_TURN_CITIZEN_INTO", GC.getSpecialistInfo(eSpecialist).getTextKeyWide()));
-			}
-			else
-			{
-				szBuffer.append(NEWLINE);
-				szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_TURN_CITIZENS_INTO", kBuilding.getSpecialistClassCount(iI), GC.getSpecialistInfo(eSpecialist).getTextKeyWide()));
-			}
-		}
-
-		if (kBuilding.getFreeSpecialistClassCount(iI) > 0)
-		{
-			szBuffer.append(NEWLINE);
-			szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_FREE_SPECIALIST", kBuilding.getFreeSpecialistClassCount(iI), ((CvWString)(GC.getSpecialistInfo(eSpecialist).getType())).c_str() , GC.getSpecialistInfo(eSpecialist).getTextKeyWide()));
 		}
 	}
 

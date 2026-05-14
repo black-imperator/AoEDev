@@ -13783,18 +13783,11 @@ void CvCity::changeGreatPeopleUnitProgress(UnitTypes eIndex, int iChange)
 
 SpecialistTypes CvCity::getSpecialistTypeFromClass(SpecialistClassTypes eIndex) const
 {
-	CivilizationTypes civ = NO_CIVILIZATION;
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < GC.getNumSpecialistClassInfos(), "eIndex expected to be < GC.getNumSpecialistClassInfos()");
-	if (GET_PLAYER(getOwnerINLINE()).isIntolerant())
-	{
-		civ = GET_PLAYER(getOwnerINLINE()).getCivilizationType();
-	}
-	else
-	{
-		civ = GET_PLAYER(m_eOriginalOwner).getCivilizationType();
-	}
-	return (SpecialistTypes)GC.getCivilizationInfo(civ).getCivilizationSpecialists((int)eIndex);
+
+	SpecialistTypes eSpecialist = (SpecialistTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationSpecialists((int)eIndex);
+	return eSpecialist != NO_SPECIALIST ? eSpecialist : (SpecialistTypes)GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getCivilizationSpecialists((int)eIndex);
 }
 
 int CvCity::getSpecialistClassCount(SpecialistClassTypes eIndex) const
@@ -14064,7 +14057,8 @@ void CvCity::setFreeSpecialistClassCount(SpecialistClassTypes eIndex, int iNewVa
 
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < GC.getNumSpecialistClassInfos(), "eIndex expected to be < GC.getNumSpecialistClassInfos()");
-
+	if (getSpecialistTypeFromClass(eIndex) == NO_SPECIALIST)
+		return;
 	iOldValue = getFreeSpecialistClassCount(eIndex);
 
 	if (iOldValue != iNewValue)

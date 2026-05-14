@@ -10832,7 +10832,9 @@ bool CvCityAI::AI_foodAvailable(int iExtra)
 
 	for (iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 	{
-		iFoodCount += (GC.getSpecialistInfo((SpecialistTypes)iI).getYieldChange(YIELD_FOOD) * getFreeSpecialistClassCount((SpecialistClassTypes)iI));
+		SpecialistTypes eSpecialist = (SpecialistTypes)getSpecialistTypeFromClass((SpecialistClassTypes)iI);
+		if(eSpecialist != NO_SPECIALIST)
+			iFoodCount += (GC.getSpecialistInfo(eSpecialist).getYieldChange(YIELD_FOOD) * getFreeSpecialistClassCount((SpecialistClassTypes)iI));
 	}
 
 	if (iFoodCount < foodConsumption(false, iExtra))

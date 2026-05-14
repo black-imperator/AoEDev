@@ -196,19 +196,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_FROM_IN_LOCAL</Tag>
-		<English>[SPACE]from [COLOR_UNIT_TEXT][LINK=literal]%s1_SpclstName[\LINK][COLOR_REVERT] in this city</English>
-		<French>[SPACE]de tous les [COLOR_UNIT_TEXT][LINK=literal]%s1:2_SpclstName[\LINK][COLOR_REVERT] dans cette ville</French>
-		<German>[SPACE]pro [LINK=literal]%s1:2_SpclstName[\LINK] in dieser Stadt</German>
-		<Italian>[SPACE]per [COLOR_UNIT_TEXT][LINK=literal]%s1:2_SpclstName[\LINK][COLOR_REVERT] in questa città</Italian>
-		<Spanish>[SPACE]por [COLOR_UNIT_TEXT][LINK=literal]%s1_SpclstName[\LINK][COLOR_REVERT] en esta ciudad</Spanish>
+		<English>[SPACE]from %s1_SpclstName in this city</English>
+		<French>[SPACE]de tous les %s1:2_SpclstName dans cette ville</French>
+		<German>[SPACE]pro %s1:2_SpclstName in dieser Stadt</German>
+		<Italian>[SPACE]per %s1:2_SpclstName in questa città</Italian>
+		<Spanish>[SPACE]por %s1_SpclstName en esta ciudad</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_FROM_IN_ALL_CITIES</Tag>
-		<English>[SPACE]from [COLOR_UNIT_TEXT][LINK=literal]%s1_SpclstName[\LINK][COLOR_REVERT] in All Cities</English>
-		<French>[SPACE]de tous les [COLOR_UNIT_TEXT][LINK=literal]%s1:2_SpclstName[\LINK][COLOR_REVERT] dans toutes les villes</French>
-		<German>[SPACE]per [LINK=literal]%s1:2_SpclstName[\LINK] in allen St&#228;dten</German>
-		<Italian>[SPACE]per [COLOR_UNIT_TEXT][LINK=literal]%s1:2_SpclstName[\LINK][COLOR_REVERT] in tutte le citt&#224;</Italian>
-		<Spanish>[SPACE]por [COLOR_UNIT_TEXT][LINK=literal]%s1_SpclstName[\LINK][COLOR_REVERT] en todas las ciudades</Spanish>
+		<English>[SPACE]from %s1_SpclstName in All Cities</English>
+		<French>[SPACE]de tous les %s1:2_SpclstName dans toutes les villes</French>
+		<German>[SPACE]per %s1:2_SpclstName in allen St&#228;dten</German>
+		<Italian>[SPACE]per %s1:2_SpclstName in tutte le citt&#224;</Italian>
+		<Spanish>[SPACE]por %s1_SpclstName en todas las ciudades</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_GLOBAL_RESIST_ENEMY_MODIFY</Tag>

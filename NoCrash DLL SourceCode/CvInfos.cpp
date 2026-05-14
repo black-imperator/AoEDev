@@ -27862,19 +27862,19 @@ bool CvCivilizationInfo::read(CvXMLLoadUtility* pXML)
 			/*************************************************************************************************/
 			/**	TrimmingFat								01/12/09								Xienwolf	**/
 			/**																								**/
-			/**						Blocks all Units not specifically authorized for Civ					**/
+			/**						Blocks all Specialists not specifically authorized for Civ					**/
 			/*************************************************************************************************/
-			if (m_bLimitedSelection)
+			/*if (m_bLimitedSelection)
 			{
 				for (int i = 0; i < GC.getNumSpecialistClassInfos(); i++)
 				{
 					m_piCivilizationSpecialists[i] = -1;
 				}
-			}
+			}*/
 			/*************************************************************************************************/
 			/**	TrimmingFat								END													**/
 			/*************************************************************************************************/
-						// get the total number of children the current xml node has
+			// get the total number of children the current xml node has
 			iNumSibs = gDLL->getXMLIFace()->GetNumChildren(pXML->GetXML());
 			// if the call to the function that sets the current xml node to it's first non-comment
 			// child and sets the parameter with the new node's value succeeds
@@ -27928,13 +27928,13 @@ bool CvCivilizationInfo::read(CvXMLLoadUtility* pXML)
 	else
 	{
 		pXML->InitSpecialistDefaults(&m_piCivilizationSpecialists);
-		if (isLimitedSelection())
+		/*if (isLimitedSelection())
 		{
 			for (j = 0; j < GC.getNumSpecialistClassInfos(); j++)
 			{
 				m_piCivilizationSpecialists[j] = NO_SPECIALIST;
 			}
-		}
+		}*/
 	}
 
 	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "Improvements"))
