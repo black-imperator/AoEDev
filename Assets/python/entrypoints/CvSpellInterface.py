@@ -1593,7 +1593,7 @@ def reqDomination(caster):
 		return False
 	iResistMax = 95
 	if pPlayer.isHuman() == False:
-		iResistMax = 20
+		iResistMax = 65
 	iTeam 	= pPlayer.getTeam()
 	pTeam 	= gc.getTeam(iTeam)
 	isAtWar	= pTeam.isAtWar
