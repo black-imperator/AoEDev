@@ -922,7 +922,7 @@
 			<Type>IMPROVEMENTCLASS_PYRE</Type>
 			<Description></Description>
 			<bUnique>1</bUnique>
-			<DefaultImprovement>IMPROVEMENT_PYRE</DefaultImprovement>
+			<DefaultImprovement>IMPROVEMENT_DTESH_PYRE</DefaultImprovement>
 		</ImprovementClassInfo>
 	</ImprovementClassInfos>
 </Civ4ImprovementClassInfos>

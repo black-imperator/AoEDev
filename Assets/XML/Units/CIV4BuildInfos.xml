@@ -2595,7 +2595,6 @@
 			<bCtrlDown>0</bCtrlDown>
 			<iHotKeyPriority>0</iHotKeyPriority>
 			<Button>Art/Civs/Dtesh/Pyre/Pyre.dds</Button>
-			<bStandard>1</bStandard>
 		</BuildInfo>
 		<BuildInfo> <!-- Aquatic Pyre -->
 			<Type>BUILD_PYRE_AQUATIC</Type>
