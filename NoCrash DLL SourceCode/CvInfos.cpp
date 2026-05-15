@@ -1262,6 +1262,8 @@ m_piFlavorValue(NULL),
 m_iHealth(0),
 m_iHappiness(0),
 m_iCrime(0),
+m_iCityDefense(0),
+m_iExtraTradeRoutes(0),
 /*************************************************************************************************/
 /** Specialists Enhancements                          END                                        */
 /*************************************************************************************************/
@@ -1273,13 +1275,18 @@ m_iCrime(0),
 /**								---- Start Original Code ----									**
 m_iExperience(0)
 /**								----  End Original Code  ----									**/
-m_iExperience(0.0f)
+m_iExperience(0.0f),
+m_piUnitCombatFreeXP(NULL),
+m_piTrainXPCap(NULL),
+m_piTrainXPRate(NULL),
 /*************************************************************************************************/
 /**	DecimalXP									END												**/
 /*************************************************************************************************/
+m_ppiSpecialistClassExtraYield(NULL),
+m_ppiSpecialistClassExtraCommerce(NULL),
+m_piSpecialistClassExtraCrime(NULL)
 {
 }
-
 //------------------------------------------------------------------------------------------------------
 //
 //  FUNCTION:   ~CvSpecialistInfo()
@@ -1292,6 +1299,22 @@ CvSpecialistInfo::~CvSpecialistInfo()
 	SAFE_DELETE_ARRAY(m_piYieldChange);
 	SAFE_DELETE_ARRAY(m_piCommerceChange);
 	SAFE_DELETE_ARRAY(m_piFlavorValue);
+	SAFE_DELETE_ARRAY(m_piUnitCombatFreeXP);
+	SAFE_DELETE_ARRAY(m_piTrainXPCap);
+	SAFE_DELETE_ARRAY(m_piTrainXPRate);
+	if(m_ppiSpecialistClassExtraYield != NULL)
+		for (int iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
+		{
+			SAFE_DELETE_ARRAY(m_ppiSpecialistClassExtraYield[iI]);
+		}
+	SAFE_DELETE_ARRAY(m_ppiSpecialistClassExtraYield);
+	if (m_ppiSpecialistClassExtraCommerce != NULL)
+		for (int iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
+		{
+			SAFE_DELETE_ARRAY(m_ppiSpecialistClassExtraCommerce[iI]);
+		}
+	SAFE_DELETE_ARRAY(m_ppiSpecialistClassExtraCommerce);
+	SAFE_DELETE_ARRAY(m_piSpecialistClassExtraCrime);
 }
 
 int CvSpecialistInfo::getSpecialistClassType() const
@@ -1315,6 +1338,14 @@ int CvSpecialistInfo::getHappiness() const
 int CvSpecialistInfo::getCrime() const
 {
 	return m_iCrime;
+}
+int CvSpecialistInfo::getCityDefense() const
+{
+	return m_iCityDefense;
+}
+int CvSpecialistInfo::getExtraTradeRoutes() const
+{
+	return m_iExtraTradeRoutes;
 }
 /*************************************************************************************************/
 /** Specialists Enhancements                          END                                        */
@@ -1352,6 +1383,25 @@ int CvSpecialistInfo::getExperience() const
 }
 
 // Arrays
+int CvSpecialistInfo::getUnitCombatFreeXP(int i) const
+{
+	FAssertMsg(i < GC.getNumUnitCombatInfos(), "Index out of bounds");
+	FAssertMsg(i > -1, "Index out of bounds");
+	return m_piUnitCombatFreeXP ? (int)(m_piUnitCombatFreeXP[i] * 100) : 0;
+}
+
+int CvSpecialistInfo::getTrainXPCap(int i) const
+{
+	FAssertMsg(i < GC.getNumUnitCombatInfos(), "Index out of bounds");
+	FAssertMsg(i > -1, "Index out of bounds");
+	return m_piTrainXPCap ? (int)(m_piTrainXPCap[i] * 100) : 0;
+}
+float CvSpecialistInfo::getTrainXPRate(int i) const
+{
+	FAssertMsg(i < GC.getNumUnitCombatInfos(), "Index out of bounds");
+	FAssertMsg(i > -1, "Index out of bounds");
+	return m_piTrainXPRate ? m_piTrainXPRate[i] : 0;
+}
 
 int CvSpecialistInfo::getYieldChange(int i) const
 {
@@ -1377,6 +1427,45 @@ int CvSpecialistInfo::getFlavorValue(int i) const
 	FAssertMsg(i < GC.getNumFlavorTypes(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
 	return m_piFlavorValue ? m_piFlavorValue[i] : -1;
+}
+
+int CvSpecialistInfo::getSpecialistClassExtraYield(int i, int j) const
+{
+	FAssertMsg(i < GC.getNumSpecialistClassInfos(), "Index out of bounds");
+	FAssertMsg(i > -1, "Index out of bounds");
+	FAssertMsg(j < NUM_YIELD_TYPES, "Index out of bounds");
+	FAssertMsg(j > -1, "Index out of bounds");
+	return m_ppiSpecialistClassExtraYield ? (m_ppiSpecialistClassExtraYield[i] ? m_ppiSpecialistClassExtraYield[i][j] : -1) : -1;
+}
+
+const int* CvSpecialistInfo::getSpecialistClassExtraYieldArray(int i) const
+{
+	FAssertMsg(i < GC.getNumSpecialistClassInfos(), "Index out of bounds");
+	FAssertMsg(i > -1, "Index out of bounds");
+	return m_ppiSpecialistClassExtraYield ? m_ppiSpecialistClassExtraYield[i] : NULL;
+}
+
+int CvSpecialistInfo::getSpecialistClassExtraCommerce(int i, int j) const
+{
+	FAssertMsg(i < GC.getNumSpecialistClassInfos(), "Index out of bounds");
+	FAssertMsg(i > -1, "Index out of bounds");
+	FAssertMsg(j < NUM_COMMERCE_TYPES, "Index out of bounds");
+	FAssertMsg(j > -1, "Index out of bounds");
+	return m_ppiSpecialistClassExtraCommerce ? (m_ppiSpecialistClassExtraCommerce[i] ? m_ppiSpecialistClassExtraCommerce[i][j] : -1) : -1;
+}
+
+const int* CvSpecialistInfo::getSpecialistClassExtraCommerceArray(int i) const
+{
+	FAssertMsg(i < GC.getNumSpecialistClassInfos(), "Index out of bounds");
+	FAssertMsg(i > -1, "Index out of bounds");
+	return m_ppiSpecialistClassExtraCommerce ? m_ppiSpecialistClassExtraCommerce[i] : NULL;
+}
+
+int CvSpecialistInfo::getSpecialistClassExtraCrime(int i) const
+{
+	FAssertMsg(i < GC.getNumSpecialistClassInfos(), "Index out of bounds");
+	FAssertMsg(i > -1, "Index out of bounds");
+	return m_piSpecialistClassExtraCrime ? m_piSpecialistClassExtraCrime[i] : -1;
 }
 
 const TCHAR* CvSpecialistInfo::getTexture() const
@@ -1441,13 +1530,114 @@ bool CvSpecialistInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iHealth, "iHealth");
 	pXML->GetChildXmlValByName(&m_iHappiness, "iHappiness");
 	pXML->GetChildXmlValByName(&m_iCrime, "iCrime");
+	pXML->GetChildXmlValByName(&m_iCityDefense, "iCityDefense");
+	pXML->GetChildXmlValByName(&m_iExtraTradeRoutes, "iExtraTradeRoutes");
 	/*************************************************************************************************/
 /** Specialists Enhancements                          END                                        */
 /*************************************************************************************************/
 
 	pXML->GetChildXmlValByName(&m_iExperience, "iExperience");
+	pXML->SetVariableListTagPair(&m_piUnitCombatFreeXP, "UnitCombatFreeXPs", sizeof(GC.getUnitCombatInfo((UnitCombatTypes)0)), GC.getNumUnitCombatInfos());
+	pXML->SetVariableListTagPair(&m_piTrainXPCap, "TrainXPCaps", sizeof(GC.getUnitCombatInfo((UnitCombatTypes)0)), GC.getNumUnitCombatInfos());
+	pXML->SetVariableListTagPair(&m_piTrainXPRate, "TrainXPRates", sizeof(GC.getUnitCombatInfo((UnitCombatTypes)0)), GC.getNumUnitCombatInfos());
 
 	pXML->SetVariableListTagPair(&m_piFlavorValue, "Flavors", GC.getFlavorTypes(), GC.getNumFlavorTypes());
+
+	FAssertMsg((GC.getNumSpecialistClassInfos() > 0) && (NUM_YIELD_TYPES) > 0, "either the number of SpecialistClasses infos is zero or less or the number of yield types is zero or less");
+	pXML->Init2DIntList(&m_ppiSpecialistClassExtraYield, GC.getNumSpecialistClassInfos(), NUM_YIELD_TYPES);
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "SpecialistClassYieldChanges"))
+	{
+		if (pXML->SkipToNextVal())
+		{
+			int iNumSibs = gDLL->getXMLIFace()->GetNumChildren(pXML->GetXML());
+			if (gDLL->getXMLIFace()->SetToChild(pXML->GetXML()))
+			{
+				if (0 < iNumSibs)
+				{
+					for (int j = 0; j < iNumSibs; j++)
+					{
+						pXML->GetChildXmlValByName(szTextVal, "SpecialistClass");
+						int iIndex = pXML->FindInInfoClass(szTextVal);
+
+						if (iIndex > -1)
+						{
+							// delete the array since it will be reallocated
+							SAFE_DELETE_ARRAY(m_ppiSpecialistClassExtraYield[iIndex]);
+							// if we can set the current xml node to it's next sibling
+							if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "SpecialistClassYields"))
+							{
+								// call the function that sets the yield change variable
+								pXML->SetYields(&m_ppiSpecialistClassExtraYield[iIndex]);
+								gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+							}
+							else
+							{
+								pXML->InitList(&m_ppiSpecialistClassExtraYield[iIndex], NUM_YIELD_TYPES);
+							}
+						}
+
+						if (!gDLL->getXMLIFace()->NextSibling(pXML->GetXML()))
+						{
+							break;
+						}
+					}
+				}
+
+				gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+			}
+		}
+
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+
+	FAssertMsg((GC.getNumSpecialistClassInfos() > 0) && (NUM_COMMERCE_TYPES) > 0, "either the number of SpecialistClasses infos is zero or less or the number of yield types is zero or less");
+	pXML->Init2DIntList(&m_ppiSpecialistClassExtraCommerce, GC.getNumSpecialistClassInfos(), NUM_COMMERCE_TYPES);
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "SpecialistClassCommerceChanges"))
+	{
+		if (pXML->SkipToNextVal())
+		{
+			int iNumSibs = gDLL->getXMLIFace()->GetNumChildren(pXML->GetXML());
+			if (gDLL->getXMLIFace()->SetToChild(pXML->GetXML()))
+			{
+				if (0 < iNumSibs)
+				{
+					for (int j = 0; j < iNumSibs; j++)
+					{
+						pXML->GetChildXmlValByName(szTextVal, "SpecialistClass");
+						int iIndex = pXML->FindInInfoClass(szTextVal);
+
+						if (iIndex > -1)
+						{
+							// delete the array since it will be reallocated
+							SAFE_DELETE_ARRAY(m_ppiSpecialistClassExtraCommerce[iIndex]);
+							// if we can set the current xml node to it's next sibling
+							if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "SpecialistClassCommerces"))
+							{
+								// call the function that sets the yield change variable
+								pXML->SetYields(&m_ppiSpecialistClassExtraCommerce[iIndex]);
+								gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+							}
+							else
+							{
+								pXML->InitList(&m_ppiSpecialistClassExtraCommerce[iIndex], NUM_COMMERCE_TYPES);
+							}
+						}
+
+						if (!gDLL->getXMLIFace()->NextSibling(pXML->GetXML()))
+						{
+							break;
+						}
+					}
+				}
+
+				gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+			}
+		}
+
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+
+	pXML->SetVariableListTagPair(&m_piSpecialistClassExtraCrime, "SpecialistClassExtraCrimeRates", sizeof(GC.getSpecialistClassInfo((SpecialistClassTypes)0)), GC.getNumSpecialistClassInfos());
 
 	return true;
 }
@@ -1484,7 +1674,29 @@ void CvSpecialistInfo::copyNonDefaults(CvSpecialistInfo* pClassInfo, CvXMLLoadUt
 /*************************************************************************************************/
 	if (getHealth()                 == 0)                   m_iHealth                   = pClassInfo->getHealth();
 	if (getHappiness()              == 0)                   m_iHappiness                = pClassInfo->getHappiness();
-	if (getCrime() == 0)                   m_iCrime = pClassInfo->getCrime();
+	if (getCrime() == 0)									m_iCrime = pClassInfo->getCrime();
+	if (getCityDefense() == 0)								m_iCityDefense = pClassInfo->getCityDefense();
+	if (getExtraTradeRoutes() == 0)							m_iExtraTradeRoutes = pClassInfo->getExtraTradeRoutes();
+
+
+	for (int i = 0; i < GC.getNumUnitCombatInfos(); i++)
+	{
+		if (getUnitCombatFreeXP(i) == 0)					m_piUnitCombatFreeXP[i] = pClassInfo->getUnitCombatFreeXP(i);
+		if (getTrainXPCap(i) == 0)							m_piTrainXPCap[i] = pClassInfo->getTrainXPCap(i);
+		if (getTrainXPRate(i) == 0)							m_piTrainXPRate[i] = pClassInfo->getTrainXPRate(i);
+	}
+	for (int i = 0; i < GC.getNumSpecialistClassInfos(); i++)
+	{
+		for (int j = 0; j < NUM_YIELD_TYPES; j++)
+		{
+			if (getSpecialistClassExtraYield(i, j) == 0)	m_ppiSpecialistClassExtraYield[i][j] = pClassInfo->getSpecialistClassExtraYield(i, j);
+		}
+		for (int j = 0; j < NUM_COMMERCE_TYPES; j++)
+		{
+			if (getSpecialistClassExtraCommerce(i, j) == 0)	m_ppiSpecialistClassExtraCommerce[i][j] = pClassInfo->getSpecialistClassExtraCommerce(i, j);
+		}
+		if (getSpecialistClassExtraCrime(i) == 0)			m_piSpecialistClassExtraCrime[i] = pClassInfo->getSpecialistClassExtraCrime(i);
+	}
 	/*************************************************************************************************/
 /** Specialists Enhancements                          END                                        */
 /*************************************************************************************************/

@@ -10563,6 +10563,34 @@ void CvGameTextMgr::parseSpecialistHelp(CvWStringBuffer &szHelpString, Specialis
 			szHelpString.append(NEWLINE);
 			szHelpString.append(gDLL->getText("TXT_KEY_SPECIALIST_CRIME", iSpecialistCrime));
 		}
+		int iSpecialistDefense = GC.getSpecialistInfo(eSpecialist).getCityDefense();
+		if (pCity != NULL)
+		{
+
+		}
+		if (iSpecialistDefense != 0)
+		{
+			szHelpString.append(NEWLINE);
+			if (iSpecialistDefense > 0)
+				szHelpString.append(gDLL->getText("[ICON_BULLET]+"));
+			else
+				szHelpString.append(gDLL->getText("[ICON_BULLET]"));
+			szHelpString.append(gDLL->getText("%d1\%[ICON_DEFENSE]", iSpecialistDefense));
+		}
+		int iSpecialistTradeRoutes = GC.getSpecialistInfo(eSpecialist).getExtraTradeRoutes();
+		if (pCity != NULL)
+		{
+
+		}
+		if (iSpecialistTradeRoutes != 0)
+		{
+			szHelpString.append(NEWLINE);
+			if (iSpecialistTradeRoutes > 0)
+				szHelpString.append(gDLL->getText("[ICON_BULLET]+"));
+			else
+				szHelpString.append(gDLL->getText("[ICON_BULLET]"));
+			szHelpString.append(gDLL->getText("%d1[ICON_TRADE]", iSpecialistTradeRoutes));
+		}
 /*************************************************************************************************/
 /**	GWSLocalSpecialist																		END	**/
 /*************************************************************************************************/
@@ -10623,9 +10651,67 @@ void CvGameTextMgr::parseSpecialistHelp(CvWStringBuffer &szHelpString, Specialis
 		if (GC.getSpecialistInfo(eSpecialist).getExperience() > 0)
 		{
 			szHelpString.append(NEWLINE);
-			szHelpString.append(gDLL->getText("TXT_KEY_SPECIALIST_EXPERIENCE", GC.getSpecialistInfo(eSpecialist).getExperience()));
+			szHelpString.append(gDLL->getText("TXT_KEY_SPECIALIST_EXPERIENCE", GC.getSpecialistInfo(eSpecialist).getExperience()/100, GC.getSpecialistInfo(eSpecialist).getExperience() % 100));
 		}
 
+		for (int i = 0; i < GC.getNumUnitCombatInfos(); i++)
+		{
+			int iUnitCombatExtraExperience = GC.getSpecialistInfo(eSpecialist).getUnitCombatFreeXP(i);
+			if (iUnitCombatExtraExperience != 0)
+			{
+				szHelpString.append(NEWLINE);
+				szHelpString.append(gDLL->getText("TXT_KEY_SPECIALIST_UNITCLASS_EXPERIENCE", iUnitCombatExtraExperience/100, iUnitCombatExtraExperience%100, GC.getUnitCombatInfo((UnitCombatTypes)i).getTextKeyWide()));
+			}
+			iUnitCombatExtraExperience = GC.getSpecialistInfo(eSpecialist).getTrainXPCap(i);
+			if (iUnitCombatExtraExperience != 0)
+			{
+				szHelpString.append(NEWLINE);
+				szHelpString.append(gDLL->getText("TXT_KEY_SPECIALIST_UNITCLASS_EXPERIENCE_CAP", iUnitCombatExtraExperience / 100, iUnitCombatExtraExperience % 100, GC.getUnitCombatInfo((UnitCombatTypes)i).getTextKeyWide()));
+			}
+			iUnitCombatExtraExperience = GC.getSpecialistInfo(eSpecialist).getTrainXPRate(i);
+			if (iUnitCombatExtraExperience != 0)
+			{
+				szHelpString.append(NEWLINE);
+				szHelpString.append(gDLL->getText("TXT_KEY_SPECIALIST_UNITCLASS_EXPERIENCE_RATE", iUnitCombatExtraExperience / 100, iUnitCombatExtraExperience % 100, GC.getUnitCombatInfo((UnitCombatTypes)i).getTextKeyWide()));
+			}
+		}
+		for (int i = 0; i < GC.getNumSpecialistClassInfos(); i++)
+		{
+			CvWStringBuffer szBuffer;
+			szBuffer.clear();
+			bool bHasChanges = setYieldChangeHelp(szBuffer, L"", L"", L"", GC.getSpecialistInfo(eSpecialist).getSpecialistClassExtraYieldArray(i));
+			if (bHasChanges)
+			{
+				szHelpString.append(szBuffer);
+				if (pCity != NULL)
+					szHelpString.append(gDLL->getText("TXT_KEY_FROM_SPECIALIST", GC.getSpecialistInfo(pCity->getSpecialistTypeFromClass((SpecialistClassTypes)i)).getTextKeyWide()));
+				else
+					szHelpString.append(gDLL->getText("TXT_KEY_FROM_SPECIALIST", GC.getSpecialistInfo((SpecialistTypes)GC.getSpecialistClassInfo((SpecialistClassTypes)i).getDefaultSpecialistIndex()).getTextKeyWide()));
+			}
+			szBuffer.clear();
+			bHasChanges = setCommerceChangeHelp(szBuffer, L"", L"", L"", GC.getSpecialistInfo(eSpecialist).getSpecialistClassExtraCommerceArray(i));
+			if (bHasChanges)
+			{
+				szHelpString.append(szBuffer);
+				if (pCity != NULL)
+					szHelpString.append(gDLL->getText("TXT_KEY_FROM_SPECIALIST", GC.getSpecialistInfo(pCity->getSpecialistTypeFromClass((SpecialistClassTypes)i)).getTextKeyWide()));
+				else
+					szHelpString.append(gDLL->getText("TXT_KEY_FROM_SPECIALIST", GC.getSpecialistInfo((SpecialistTypes)GC.getSpecialistClassInfo((SpecialistClassTypes)i).getDefaultSpecialistIndex()).getTextKeyWide()));
+			}
+			int iSpecialistClassCrime = GC.getSpecialistInfo(eSpecialist).getSpecialistClassExtraCrime(i);
+			if (iSpecialistClassCrime != 0)
+			{
+				szHelpString.append(NEWLINE);
+				szHelpString.append(L"[ICON_BULLET]");
+				if(iSpecialistClassCrime > 0)
+					szHelpString.append(L"+");
+				szHelpString.append(gDLL->getText(L"%d[ICON_CRIME]", iSpecialistClassCrime));
+				if(pCity != NULL)
+					szHelpString.append(gDLL->getText("TXT_KEY_FROM_SPECIALIST", GC.getSpecialistInfo(pCity->getSpecialistTypeFromClass((SpecialistClassTypes)i)).getTextKeyWide()));
+				else
+					szHelpString.append(gDLL->getText("TXT_KEY_FROM_SPECIALIST", GC.getSpecialistInfo((SpecialistTypes)GC.getSpecialistClassInfo((SpecialistClassTypes)i).getDefaultSpecialistIndex()).getTextKeyWide()));
+			}
+		}
 /*************************************************************************************************/
 /**	GWSLocalSpecialist																	Milaga	**/
 /** Buildings can change give bonuses to specialists in only one city							**/
@@ -24161,7 +24247,7 @@ void CvGameTextMgr::setHappyHelp(CvWStringBuffer &szBuffer, CvCity& city)
 }
 
 
-void CvGameTextMgr::setYieldChangeHelp(CvWStringBuffer &szBuffer, const CvWString& szStart, const CvWString& szSpace, const CvWString& szEnd, const int* piYieldChange, bool bPercent, bool bNewLine)
+bool CvGameTextMgr::setYieldChangeHelp(CvWStringBuffer &szBuffer, const CvWString& szStart, const CvWString& szSpace, const CvWString& szEnd, const int* piYieldChange, bool bPercent, bool bNewLine)
 {
 	CvWString szTempBuffer;
 	bool bStarted;
@@ -24205,9 +24291,10 @@ void CvGameTextMgr::setYieldChangeHelp(CvWStringBuffer &szBuffer, const CvWStrin
 	{
 		szBuffer.append(szEnd);
 	}
+	return bStarted;
 }
 
-void CvGameTextMgr::setCommerceChangeHelp(CvWStringBuffer &szBuffer, const CvWString& szStart, const CvWString& szSpace, const CvWString& szEnd, const int* piCommerceChange, bool bPercent, bool bNewLine)
+bool CvGameTextMgr::setCommerceChangeHelp(CvWStringBuffer &szBuffer, const CvWString& szStart, const CvWString& szSpace, const CvWString& szEnd, const int* piCommerceChange, bool bPercent, bool bNewLine)
 {
 	CvWString szTempBuffer;
 	bool bStarted;
@@ -24241,6 +24328,7 @@ void CvGameTextMgr::setCommerceChangeHelp(CvWStringBuffer &szBuffer, const CvWSt
 	{
 		szBuffer.append(szEnd);
 	}
+	return bStarted;
 }
 
 void CvGameTextMgr::setBonusHelp(CvWStringBuffer &szBuffer, BonusTypes eBonus, bool bCivilopediaText)

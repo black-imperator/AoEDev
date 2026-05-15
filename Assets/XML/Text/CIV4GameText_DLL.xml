@@ -1428,6 +1428,14 @@
 		<Spanish>Replaces [LINK=literal]%s1_default_specialist[\LINK]</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_REPLACES_SPECIALIST</Tag>
+		<English>Replaces [LINK=literal]%s1_default_specialist[\LINK]</English>
+		<French>Remplace [LINK=literal]%s1_default_specialist[\LINK]</French>
+		<German>Ersetzt [LINK=literal]%s1_default_specialist[\LINK]</German>
+		<Italian>Replaces [LINK=literal]%s1_default_specialist[\LINK]</Italian>
+		<Spanish>Replaces [LINK=literal]%s1_default_specialist[\LINK]</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_REPLACES_IMPROVEMENT</Tag>
 		<English>Replaces [LINK=literal]%s1_default_building[\LINK]</English>
 		<French>Remplace [LINK=literal]%s1_default_building[\LINK]</French>
@@ -1531,6 +1539,38 @@
 		<German>[ICON_BULLET]%D1_Change[ICON_UNHAPPY]</German>
 		<Italian>[ICON_BULLET]%D1_Change[ICON_UNHAPPY]</Italian>
 		<Spanish>[ICON_BULLET]%D1_Change[ICON_UNHAPPY]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_UNITCLASS_EXPERIENCE</Tag>
+		<English>[ICON_BULLET]+%d1,%d2 free XP for %s3</English>
+		<French>[ICON_BULLET]+%d1,%d2 free XP for %s3</French>
+		<German>[ICON_BULLET]+%d1,%d2 free XP for %s3</German>
+		<Italian>[ICON_BULLET]+%d1,%d2 free XP for %s3</Italian>
+		<Spanish>[ICON_BULLET]+%d1,%d2 free XP for %s3</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_UNITCLASS_EXPERIENCE_CAP</Tag>
+		<English>[ICON_BULLET]+%d1,%d2 XP cap for %s3</English>
+		<French>[ICON_BULLET]+%d1,%d2 XP cap for %s3</French>
+		<German>[ICON_BULLET]+%d1,%d2 XP cap for %s3</German>
+		<Italian>[ICON_BULLET]+%d1,%d2 XP cap for %s3</Italian>
+		<Spanish>[ICON_BULLET]+%d1,%d2 XP cap for %s3</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_UNITCLASS_EXPERIENCE_RATE</Tag>
+		<English>[ICON_BULLET]+%d1,%d2 XP rate for %s3</English>
+		<French>[ICON_BULLET]+%d1,%d2 XP rate for %s3</French>
+		<German>[ICON_BULLET]+%d1,%d2 XP rate for %s3</German>
+		<Italian>[ICON_BULLET]+%d1,%d2 XP rate for %s3</Italian>
+		<Spanish>[ICON_BULLET]+%d1,%d2 XP rate for %s3</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FROM_SPECIALIST</Tag>
+		<English>from %s1</English>
+		<French>from %s1</French>
+		<German>from %s1</German>
+		<Italian>from %s1</Italian>
+		<Spanish>from %s1</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SPELL_AUTOCASTABLE</Tag>

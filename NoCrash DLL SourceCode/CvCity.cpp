@@ -6132,8 +6132,6 @@ void CvCity::processSpecialistClass(SpecialistClassTypes eSpecialistClass, int i
 		changeSpecialistCommerce(((CommerceTypes)iI), (GC.getSpecialistInfo(eSpecialist).getCommerceChange(iI) * iChange));
 	}
 
-	updateExtraSpecialistYield();
-
 /*************************************************************************************************/
 /** Specialists Enhancements, by Supercheese 10/9/09           Imported by Valkrionn   10/22/09  */
 /**                                                                                              */
@@ -6179,6 +6177,24 @@ void CvCity::processSpecialistClass(SpecialistClassTypes eSpecialistClass, int i
 /*************************************************************************************************/
 
 	changeSpecialistFreeExperience(GC.getSpecialistInfo(eSpecialist).getExperience() * iChange);
+	for (int i = 0; i < GC.getNumUnitCombatInfos(); i++)
+	{
+		changeUnitCombatFreeExperience((UnitCombatTypes)i, GC.getSpecialistInfo(eSpecialist).getUnitCombatFreeXP(i) * iChange);
+		changeTrainXPCap(GC.getSpecialistInfo(eSpecialist).getTrainXPCap(i) * iChange, (UnitCombatTypes)i);
+		changeTrainXPRate(GC.getSpecialistInfo(eSpecialist).getTrainXPRate(i) * iChange, (UnitCombatTypes)i);
+	}
+	for (int i = 0; i < GC.getNumSpecialistClassInfos(); i++)
+	{
+		for(int j = 0; j < NUM_YIELD_TYPES; j++)
+			changeLocalSpecialistClassYield((SpecialistClassTypes)i, (YieldTypes)j, GC.getSpecialistInfo(eSpecialist).getSpecialistClassExtraYield(i, j) * iChange);
+		for (int j = 0; j < NUM_COMMERCE_TYPES; j++)
+			changeLocalSpecialistClassCommerce((SpecialistClassTypes)i, (CommerceTypes)j, GC.getSpecialistInfo(eSpecialist).getSpecialistClassExtraCommerce(i, j) * iChange);
+		changeLocalSpecialistClassCrime((SpecialistClassTypes)i, GC.getSpecialistInfo(eSpecialist).getSpecialistClassExtraCrime(i)* iChange);
+	}
+	changeBuildingDefense(GC.getSpecialistInfo(eSpecialist).getCityDefense() * iChange);
+	changeExtraTradeRoutes(GC.getSpecialistInfo(eSpecialist).getExtraTradeRoutes() * iChange);
+
+	updateExtraSpecialistYield();
 }
 
 

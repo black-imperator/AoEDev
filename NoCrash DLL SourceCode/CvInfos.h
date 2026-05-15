@@ -370,10 +370,16 @@ public:
 	int getHealth() const;							// Exposed to Python
 	int getHappiness() const;							// Exposed to Python
 	int getCrime() const;							// Exposed to Python
+	int getCityDefense() const;							// Exposed to Python
+	int getExtraTradeRoutes() const;							// Exposed to Python
 	/*************************************************************************************************/
 /** Specialists Enhancements                          END                                        */
 /*************************************************************************************************/
 	int getExperience() const;				// Exposed to Python
+	int getUnitCombatFreeXP(int i) const;				// Exposed to Python
+	int getTrainXPCap(int i) const;				// Exposed to Python
+	float getTrainXPRate(int i) const;				// Exposed to Python
+
 
 	bool isVisible() const;				// Exposed to Python
 
@@ -383,6 +389,12 @@ public:
 	const int* getYieldChangeArray() const;		// Exposed to Python - For Moose - CvWidgetData
 	int getCommerceChange(int i) const;		// Exposed to Python
 	int getFlavorValue(int i) const;		// Exposed to Python
+
+	int getSpecialistClassExtraYield(int i, int j) const;		// Exposed to Python
+	const int* getSpecialistClassExtraYieldArray(int i) const;		// Exposed to Python
+	int getSpecialistClassExtraCommerce(int i, int j) const;		// Exposed to Python
+	const int* getSpecialistClassExtraCommerceArray(int i) const;		// Exposed to Python
+	int getSpecialistClassExtraCrime(int i) const;		// Exposed to Python
 
 	const TCHAR* getTexture() const;				// Exposed to Python
 	void setTexture(const TCHAR* szVal);
@@ -413,6 +425,8 @@ protected:
 	int m_iHealth;
 	int m_iHappiness;
 	int m_iCrime;
+	int m_iCityDefense;
+	int m_iExtraTradeRoutes;
 	/*************************************************************************************************/
 /** Specialists Enhancements                          END                                        */
 /*************************************************************************************************/
@@ -422,9 +436,15 @@ protected:
 /**					XP Values carried as Floats now in XML, 100x value in DLL					**/
 /*************************************************************************************************/
 	float m_iExperience;
+	float* m_piUnitCombatFreeXP;
+	float* m_piTrainXPCap;
+	float* m_piTrainXPRate;
 /*************************************************************************************************/
 /**	DecimalXP									END												**/
 /*************************************************************************************************/
+	int** m_ppiSpecialistClassExtraYield;
+	int** m_ppiSpecialistClassExtraCommerce;
+	int* m_piSpecialistClassExtraCrime;
 
 	bool m_bVisible;				// Exposed to Python
 
