@@ -17985,7 +17985,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_CRIME_BOUNTY_MAJOR_PEDIA</Civilopedia>
 			<Help>TXT_KEY_BUILDING_CRIME_ADVENTURE_PETTY_GANGS_HELP</Help>
 			<ArtDefineTag>ART_DEF_BUILDING_CRIME</ArtDefineTag>
-			<iPrereqCrime>500</iPrereqCrime>
+			<iPrereqCrime>300</iPrereqCrime>
 			<iHappiness>0</iHappiness>
 			<iHealth>0</iHealth>
 			<iPrereqPopulation>8</iPrereqPopulation>
@@ -18022,7 +18022,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_CRIME_BOUNTY_GRAND_PEDIA</Civilopedia>
 			<Help>TXT_KEY_BUILDING_CRIME_ADVENTURE_PETTY_GANGS_HELP</Help>
 			<ArtDefineTag>ART_DEF_BUILDING_CRIME</ArtDefineTag>
-			<iPrereqCrime>750</iPrereqCrime>
+			<iPrereqCrime>425</iPrereqCrime>
 			<iHappiness>0</iHappiness>
 			<iHealth>0</iHealth>
 			<iPrereqPopulation>3</iPrereqPopulation>

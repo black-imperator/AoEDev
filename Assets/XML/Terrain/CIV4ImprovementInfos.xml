@@ -9256,7 +9256,7 @@
 			<YieldChanges>
 				<iYieldChange>2</iYieldChange>
 				<iYieldChange>1</iYieldChange>
-				<iYieldChange>0</iYieldChange>
+				<iYieldChange>1</iYieldChange>
 			</YieldChanges>
 			<bCarriesIrrigation>1</bCarriesIrrigation>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>

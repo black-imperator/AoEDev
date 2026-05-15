@@ -31016,6 +31016,12 @@
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 			</FreePromotions>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<iFlavor>5</iFlavor>
+				</Flavor>
+			</Flavors>
 			<iTier>2</iTier>
 			<iCombatDefense>4</iCombatDefense>
 			<PrereqBuildingClass>BUILDINGCLASS_PAGAN_TEMPLE</PrereqBuildingClass>
@@ -31044,6 +31050,12 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
 			<PrereqTech>TECH_CURRENCY</PrereqTech>
 			<iCost>150</iCost>
 			<iMoves>2</iMoves>
@@ -31122,6 +31134,12 @@
 					<iUnitCombatMod>50</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<iFlavor>15</iFlavor>
+				</Flavor>
+			</Flavors>
 			<iAsset>28</iAsset>
 			<UnitMeshGroups>
 				<iGroupSize>1</iGroupSize>

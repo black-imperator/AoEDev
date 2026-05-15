@@ -288,7 +288,7 @@
 			<Description>TXT_KEY_CONCEPT_UNIQUE_FEATURES</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_UNIQUE_FEATURES_PEDIA</Civilopedia>
 		</ConceptInfo>
-		<ConceptInfo>
+	<!-- <ConceptInfo>
 			<Type>CONCEPT_GRIGORI_ADVENTURERS_AND_REFUGEES</Type>
 			<Description>TXT_KEY_CONCEPT_GRIGORI_ADVENTURERS_AND_REFUGEES</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_GRIGORI_ADVENTURERS_AND_REFUGEES_PEDIA</Civilopedia>
@@ -297,7 +297,7 @@
 			<Type>CONCEPT_MEKARA_ASPIRANTS</Type>
 			<Description>TXT_KEY_CONCEPT_MEKARA_ASPIRANTS</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_MEKARA_ASPIRANTS_PEDIA</Civilopedia>
-		</ConceptInfo>
+		</ConceptInfo> -->
 		<ConceptInfo>
 			<Type>CONCEPT_VICTORY_TOWER_OF_MASTERY</Type>
 			<Description>TXT_KEY_CONCEPT_VICTORY_TOWER_OF_MASTERY</Description>
@@ -353,11 +353,11 @@
 			<Description>TXT_KEY_CONCEPT_MEKARA_SLUGA</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_MEKARA_SLUGA_PEDIA</Civilopedia>
 		</ConceptInfo>
-		<ConceptInfo>
+	<!-- <ConceptInfo>
 			<Type>CONCEPT_MEKARA_ASPIRANTS</Type>
 			<Description>TXT_KEY_CONCEPT_MEKARA_ASPIRANTS</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_MEKARA_ASPIRANTS_PEDIA</Civilopedia>
-		</ConceptInfo>
+		</ConceptInfo> -->
 		<ConceptInfo>
 			<Type>CONCEPT_MEKARA_AUGMENTATIONS</Type>
 			<Description>TXT_KEY_CONCEPT_MEKARA_AUGMENTATIONS</Description>

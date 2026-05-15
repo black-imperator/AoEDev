@@ -1663,5 +1663,20 @@
 			<iExtraPerception>2</iExtraPerception>
 			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Spells/GlimpseUnseen.dds</Button>
 		</PromotionInfo>
+		
+		<PromotionInfo>		<!-- Golem -->
+			<Type>PROMOTION_GOLEM</Type>
+			<PromotionAllows>
+				<Promotion>PROMOTION_RUNIC_CLOAKFIELD</Promotion>
+				<Promotion>PROMOTION_RUNIC_PYROHELIX</Promotion>
+				<Promotion>PROMOTION_RUNIC_SOLARPRISM</Promotion>
+				<Promotion>PROMOTION_SUN2</Promotion>
+				<Promotion>PROMOTION_FIRE2</Promotion>
+				<Promotion>PROMOTION_HIDDEN</Promotion>
+				<Promotion>PROMOTION_NIGHTMARE_AIFON_HIDDEN_NATIONALITY_BLANKET</Promotion>
+				<Promotion>PROMOTION_NIGHTMARE_AIFON</Promotion>
+				<Promotion>PROMOTION_DREAMING_AIFON</Promotion>
+			</PromotionAllows>
+		</PromotionInfo>
 	</PromotionInfos>
 </Civ4PromotionInfos>

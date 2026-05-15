@@ -3056,12 +3056,12 @@
 			<Description>TXT_KEY_TRAIT_HUMANIST1</Description>
 			<Civilopedia>TXT_KEY_TRAIT_HUMANIST1_PEDIA</Civilopedia>
 			<ShortDescription>TXT_KEY_TRAIT_HUMANIST1_SHORT</ShortDescription>
-			<Help>TXT_KEY_TRAIT_HUMANIST1_HELP</Help>
 			<CommerceModifiers>
 				<iCommerce>-15</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 			</CommerceModifiers>
+			<iGreatPeopleRateModifier>50</iGreatPeopleRateModifier>
 			<ExtraUnitClasses>
 				<ExtraUnitClass>
 					<UnitClassType>UNITCLASS_CHAMPION</UnitClassType>
