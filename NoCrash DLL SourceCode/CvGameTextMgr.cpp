@@ -10702,10 +10702,10 @@ void CvGameTextMgr::parseSpecialistHelp(CvWStringBuffer &szHelpString, Specialis
 			if (iSpecialistClassCrime != 0)
 			{
 				szHelpString.append(NEWLINE);
-				szHelpString.append(L"[ICON_BULLET]");
+				szHelpString.append(gDLL->getText("[ICON_BULLET]"));
 				if(iSpecialistClassCrime > 0)
 					szHelpString.append(L"+");
-				szHelpString.append(gDLL->getText(L"%d[ICON_CRIME]", iSpecialistClassCrime));
+				szHelpString.append(gDLL->getText(L"%d1[ICON_CRIME]", iSpecialistClassCrime));
 				if(pCity != NULL)
 					szHelpString.append(gDLL->getText("TXT_KEY_FROM_SPECIALIST", GC.getSpecialistInfo(pCity->getSpecialistTypeFromClass((SpecialistClassTypes)i)).getTextKeyWide()));
 				else

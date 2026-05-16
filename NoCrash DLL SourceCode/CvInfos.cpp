@@ -1637,7 +1637,7 @@ bool CvSpecialistInfo::read(CvXMLLoadUtility* pXML)
 		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
 	}
 
-	pXML->SetVariableListTagPair(&m_piSpecialistClassExtraCrime, "SpecialistClassExtraCrimeRates", sizeof(GC.getSpecialistClassInfo((SpecialistClassTypes)0)), GC.getNumSpecialistClassInfos());
+	pXML->SetVariableListTagPair(&m_piSpecialistClassExtraCrime, "SpecialistClassCrimeChanges", sizeof(GC.getSpecialistClassInfo((SpecialistClassTypes)0)), GC.getNumSpecialistClassInfos());
 
 	return true;
 }
