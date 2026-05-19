@@ -158,6 +158,68 @@ The common folk and would-be heroes form a kingdom safe from gods.
 		<Spanish>[ICON_BULLET]Resets the player's Great Person count</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GRIGORI_FREEDOM</Tag>
+		<English>Path of Freedom</English>
+		<French>Path of Freedom</French>
+		<German>Path of Freedom</German>
+		<Italian>Path of Freedom</Italian>
+		<Spanish>Path of Freedom</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GRIGORI_FREEDOM_PEDIA</Tag>
+		<English>The Grigori spirit is split into two aspects. 
+
+Those who seek freedom from the oppressive mandates of their old homes.
+And those who seek to keep those new freedoms from being taken away.
+
+Alone, their flaws weaken them, but together, these groups can achieve many incredible things for the Grigori people.
+If only they could learn to listen to one another.</English>
+		<French>The Grigori spirit is split into two aspects. 
+
+Those who seek freedom from the oppressive mandates of their old homes.
+And those who seek to keep those new freedoms from being taken away.
+
+Alone, their flaws weaken them, but together, these groups can achieve many incredible things for the Grigori people.
+If only they could learn to listen to one another.</French>
+		<German>The Grigori spirit is split into two aspects. 
+
+Those who seek freedom from the oppressive mandates of their old homes.
+And those who seek to keep those new freedoms from being taken away.
+
+Alone, their flaws weaken them, but together, these groups can achieve many incredible things for the Grigori people.
+If only they could learn to listen to one another.</German>
+		<Italian>The Grigori spirit is split into two aspects. 
+
+Those who seek freedom from the oppressive mandates of their old homes.
+And those who seek to keep those new freedoms from being taken away.
+
+Alone, their flaws weaken them, but together, these groups can achieve many incredible things for the Grigori people.
+If only they could learn to listen to one another.</Italian>
+		<Spanish>The Grigori spirit is split into two aspects. 
+
+Those who seek freedom from the oppressive mandates of their old homes.
+And those who seek to keep those new freedoms from being taken away.
+
+Alone, their flaws weaken them, but together, these groups can achieve many incredible things for the Grigori people.
+If only they could learn to listen to one another.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GRIGORI_APOSTATES</Tag>
+		<English>Dogma of the Apostate</English>
+		<French>Dogma of the Apostate</French>
+		<German>Dogma of the Apostate</German>
+		<Italian>Dogma of the Apostate</Italian>
+		<Spanish>Dogma of the Apostate</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GRIGORI_APOSTATES_PEDIA</Tag>
+		<English>Ardor</English>
+		<French>Ardeur</French>
+		<German>Groﬂer</German>
+		<Italian>Ardore</Italian>
+		<Spanish>Ardor</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ADVENTURERS_GUILD</Tag>
 		<English>Adventurers' Guild</English>
 		<French>Guilde des Aventuriers</French>

@@ -296,11 +296,36 @@ Military units which reach a high enough level are able to befriend Amicus, silv
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_MIDJIN_PEDIA</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>The frigid cold is nothing to the ache of our hunger.
+The cold has soothed us, numbed our pain as we slept in the chasms.
+The cold has brought you to us, tredding woods your elders would have warned of, if they had survived the frost.
+The cold will guide us, showing us your tracks as you flee our sharpened teeth.
+
+Embrace the cold, little sheep, lie down in the snow so that we may savour your flesh without a fight.</English>
+		<French>The frigid cold is nothing to the ache of our hunger.
+The cold has soothed us, numbed our pain as we slept in the chasms.
+The cold has brought you to us, tredding woods your elders would have warned of, if they had survived the frost.
+The cold will guide us, showing us your tracks as you flee our sharpened teeth.
+
+Embrace the cold, little sheep, lie down in the snow so that we may savour your flesh without a fight.</French>
+		<German>The frigid cold is nothing to the ache of our hunger.
+The cold has soothed us, numbed our pain as we slept in the chasms.
+The cold has brought you to us, tredding woods your elders would have warned of, if they had survived the frost.
+The cold will guide us, showing us your tracks as you flee our sharpened teeth.
+
+Embrace the cold, little sheep, lie down in the snow so that we may savour your flesh without a fight.</German>
+		<Italian>The frigid cold is nothing to the ache of our hunger.
+The cold has soothed us, numbed our pain as we slept in the chasms.
+The cold has brought you to us, tredding woods your elders would have warned of, if they had survived the frost.
+The cold will guide us, showing us your tracks as you flee our sharpened teeth.
+
+Embrace the cold, little sheep, lie down in the snow so that we may savour your flesh without a fight.</Italian>
+		<Spanish>The frigid cold is nothing to the ache of our hunger.
+The cold has soothed us, numbed our pain as we slept in the chasms.
+The cold has brought you to us, tredding woods your elders would have warned of, if they had survived the frost.
+The cold will guide us, showing us your tracks as you flee our sharpened teeth.
+
+Embrace the cold, little sheep, lie down in the snow so that we may savour your flesh without a fight.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALIST_CITIZEN_CHISLEV</Tag>
@@ -309,6 +334,19 @@ Military units which reach a high enough level are able to befriend Amicus, silv
 		<German>Tribal Member</German>
 		<Italian>Tribal Member</Italian>
 		<Spanish>Tribal Member</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_CITIZEN_CHISLEV_PEDIA</Tag>
+		<English>Each and every family unit is able to represent themselves in the forum of the clans.
+Whether for trade, negotiations, petitions, or just passing on letters from loved ones, each and every tribal member plays a key role in keeping the many clans and cultures of the Chislev as tight-knit as family.</English>
+		<French>Each and every family unit is able to represent themselves in the forum of the clans.
+Whether for trade, negotiations, petitions, or just passing on letters from loved ones, each and every tribal member plays a key role in keeping the many clans and cultures of the Chislev as tight-knit as family.</French>
+		<German>Each and every family unit is able to represent themselves in the forum of the clans.
+Whether for trade, negotiations, petitions, or just passing on letters from loved ones, each and every tribal member plays a key role in keeping the many clans and cultures of the Chislev as tight-knit as family.</German>
+		<Italian>Each and every family unit is able to represent themselves in the forum of the clans.
+Whether for trade, negotiations, petitions, or just passing on letters from loved ones, each and every tribal member plays a key role in keeping the many clans and cultures of the Chislev as tight-knit as family.</Italian>
+		<Spanish>Each and every family unit is able to represent themselves in the forum of the clans.
+Whether for trade, negotiations, petitions, or just passing on letters from loved ones, each and every tribal member plays a key role in keeping the many clans and cultures of the Chislev as tight-knit as family.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_BEAR_TOTEM</Tag>

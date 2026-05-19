@@ -9252,7 +9252,7 @@
 			<Help/>
 			<ArtDefineTag>ART_DEF_IMPROVEMENT_HOMESTEAD</ArtDefineTag>
 			<ImprovementPillage>IMPROVEMENTCLASS_FARM</ImprovementPillage>
-			<FreeSpecialistClass>SPECIALISTCLASS_CITIZEN</FreeSpecialistClass>
+			<FreeSpecialistClass>SPECIALISTCLASS_GREENHORN</FreeSpecialistClass>
 			<YieldChanges>
 				<iYieldChange>2</iYieldChange>
 				<iYieldChange>1</iYieldChange>

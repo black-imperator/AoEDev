@@ -2628,9 +2628,25 @@
 					<BuildingClassType>BUILDINGCLASS_CRIME_BOUNTY_GRAND</BuildingClassType>
 					<BuildingType>BUILDING_CRIME_BOUNTY_GRAND</BuildingType>
 				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_GRIGORI_FREEDOM</BuildingClassType>
+					<BuildingType>BUILDING_GRIGORI_FREEDOM</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_GRIGORI_APOSTATES</BuildingClassType>
+					<BuildingType>BUILDING_GRIGORI_APOSTATES</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_MONUMENT</BuildingClassType>
+					<BuildingType>BUILDING_MONUMENT_GRIGORI</BuildingType>
+				</Building>
 
 			</Buildings>
 			<Units>
+				<Unit>
+					<UnitClassType>UNITCLASS_PROPHET</UnitClassType>
+					<UnitType>UNIT_GREAT_LUONNOTAR</UnitType>
+				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_GRIGORI_MEDIC</UnitClassType>
 					<UnitType>UNIT_GRIGORI_MEDIC</UnitType>
@@ -2666,8 +2682,12 @@
 					<SpecialistType>SPECIALIST_GREENHORN</SpecialistType>
 				</Specialist>
 				<Specialist>
-					<SpecialistClassType>SPECIALISTCLASS_CITIZEN</SpecialistClassType>
-					<SpecialistType>SPECIALIST_CITIZEN_GRIGORI</SpecialistType>
+					<SpecialistClassType>SPECIALISTCLASS_PRIEST</SpecialistClassType>
+					<SpecialistType>SPECIALIST_PRIEST_GRIGORI</SpecialistType>
+				</Specialist>
+				<Specialist>
+					<SpecialistClassType>SPECIALISTCLASS_GREAT_PRIEST</SpecialistClassType>
+					<SpecialistType>SPECIALIST_GREAT_PRIEST_GRIGORI</SpecialistType>
 				</Specialist>
 			</Specialists>
 			<Improvements>

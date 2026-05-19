@@ -222,6 +222,29 @@
 		<Spanish>Undead Thrall</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_CITIZEN_DTESH_PEDIA</Tag>
+		<English>The undead masses of the spires do not moan and thrash in the way a reanimated corpse would normally behave.
+
+These automaton husks fulfil their tasks like cogs in a machine, efficient and thoughtless.
+The only sounds to be heard from a great spire city are the soft clicks of bone on metal and the sandblown winds flowing from the rooftops.</English>
+		<French>The undead masses of the spires do not moan and thrash in the way a reanimated corpse would normally behave.
+
+These automaton husks fulfil their tasks like cogs in a machine, efficient and thoughtless.
+The only sounds to be heard from a great spire city are the soft clicks of bone on metal and the sandblown winds flowing from the rooftops.</French>
+		<German>The undead masses of the spires do not moan and thrash in the way a reanimated corpse would normally behave.
+
+These automaton husks fulfil their tasks like cogs in a machine, efficient and thoughtless.
+The only sounds to be heard from a great spire city are the soft clicks of bone on metal and the sandblown winds flowing from the rooftops.</German>
+		<Italian>The undead masses of the spires do not moan and thrash in the way a reanimated corpse would normally behave.
+
+These automaton husks fulfil their tasks like cogs in a machine, efficient and thoughtless.
+The only sounds to be heard from a great spire city are the soft clicks of bone on metal and the sandblown winds flowing from the rooftops.</Italian>
+		<Spanish>The undead masses of the spires do not moan and thrash in the way a reanimated corpse would normally behave.
+
+These automaton husks fulfil their tasks like cogs in a machine, efficient and thoughtless.
+The only sounds to be heard from a great spire city are the soft clicks of bone on metal and the sandblown winds flowing from the rooftops.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_SPECIALIST_GREENHORN</Tag>
 		<English>Greenhorn</English>
 		<French>Greenhorn</French>
@@ -262,6 +285,65 @@ Greenhorns are would-be Adventurers, yet to earn their cape but eager to prove t
 		<German>Volunteer</German>
 		<Italian>Volunteer</Italian>
 		<Spanish>Volunteer</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_PRIEST_GRIGORI</Tag>
+		<English>Apostate</English>
+		<French>Apostate</French>
+		<German>Apostate</German>
+		<Italian>Apostate</Italian>
+		<Spanish>Apostate</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_GREAT_PRIEST_GRIGORI</Tag>
+		<English>Great Luonnotar</English>
+		<French>Great Luonnotar</French>
+		<German>Great Luonnotar</German>
+		<Italian>Great Luonnotar</Italian>
+		<Spanish>Great Luonnotar</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_PRIEST_GRIGORI_PEDIA</Tag>
+		<English>The Grigori Apostate preaches not of god, but of home.
+Not of Zeal, but of vigilance.
+Not of hate, but of scepticism.
+
+Giving their speeches on turned-over oxcarts, these men goad and guide the flocks of the Grigori to hone their scythes and harden the tips of their pitchforks.
+By their will, the sheep of the fold will carry tools of war to meet the wolves head-on.
+
+This is a time of urgency; no expense can be spared to protect our homes.</English>
+		<French>The Grigori Apostate preaches not of god, but of home.
+Not of Zeal, but of vigilance.
+Not of hate, but of scepticism.
+
+Giving their speeches on turned-over oxcarts, these men goad and guide the flocks of the Grigori to hone their scythes and harden the tips of their pitchforks.
+By their will, the sheep of the fold will carry tools of war to meet the wolves head-on.
+
+This is a time of urgency; no expense can be spared to protect our homes.</French>
+		<German>The Grigori Apostate preaches not of god, but of home.
+Not of Zeal, but of vigilance.
+Not of hate, but of scepticism.
+
+Giving their speeches on turned-over oxcarts, these men goad and guide the flocks of the Grigori to hone their scythes and harden the tips of their pitchforks.
+By their will, the sheep of the fold will carry tools of war to meet the wolves head-on.
+
+This is a time of urgency; no expense can be spared to protect our homes.</German>
+		<Italian>The Grigori Apostate preaches not of god, but of home.
+Not of Zeal, but of vigilance.
+Not of hate, but of scepticism.
+
+Giving their speeches on turned-over oxcarts, these men goad and guide the flocks of the Grigori to hone their scythes and harden the tips of their pitchforks.
+By their will, the sheep of the fold will carry tools of war to meet the wolves head-on.
+
+This is a time of urgency; no expense can be spared to protect our homes.</Italian>
+		<Spanish>The Grigori Apostate preaches not of god, but of home.
+Not of Zeal, but of vigilance.
+Not of hate, but of scepticism.
+
+Giving their speeches on turned-over oxcarts, these men goad and guide the flocks of the Grigori to hone their scythes and harden the tips of their pitchforks.
+By their will, the sheep of the fold will carry tools of war to meet the wolves head-on.
+
+This is a time of urgency; no expense can be spared to protect our homes.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALIST_VOLUNTEER_PEDIA</Tag>

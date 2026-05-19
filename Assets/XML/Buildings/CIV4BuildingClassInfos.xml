@@ -3928,6 +3928,32 @@
 			<DefaultBuilding>BUILDING_ADVENTURERS_GUILD</DefaultBuilding>
 			<VictoryThresholds/>
 		</BuildingClassInfo>
+		<BuildingClassInfo><!-- Grigori Freedom Adventurers-->
+			<Type>BUILDINGCLASS_GRIGORI_FREEDOM</Type>
+			<Description>TXT_KEY_BUILDING_GRIGORI_FREEDOM</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_GRIGORI_FREEDOM</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo><!-- Grigori Caution Apostates-->
+			<Type>BUILDINGCLASS_GRIGORI_APOSTATES</Type>
+			<Description>TXT_KEY_BUILDING_GRIGORI_APOSTATES</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_GRIGORI_APOSTATES</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
 		<BuildingClassInfo><!-- Luchuirp Blasting workshop -->
 			<Type>BUILDINGCLASS_BLASTING_WORKSHOP</Type>
 			<Description>TXT_KEY_BUILDING_BLASTING_WORKSHOP</Description>
