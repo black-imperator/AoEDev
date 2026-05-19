@@ -138,6 +138,12 @@ CvPlayer::CvPlayer()
 	m_paiSpecialistClassExtraCrime = NULL;
 	m_paiSpecialistClassExtraGPP = NULL;
 
+	m_ppaiSpecialistTypeExtraYield = NULL;
+	m_ppaiSpecialistTypeExtraCommerce = NULL;
+	m_paiSpecialistTypeExtraHappiness = NULL;
+	m_paiSpecialistTypeExtraHealth = NULL;
+	m_paiSpecialistTypeExtraCrime = NULL;
+
 	m_pabResearchingTech = NULL;
 	m_pabLoyalMember = NULL;
 
@@ -643,6 +649,26 @@ void CvPlayer::uninit()
 	SAFE_DELETE_ARRAY(m_paiSpecialistClassExtraHealth);
 	SAFE_DELETE_ARRAY(m_paiSpecialistClassExtraCrime);
 	SAFE_DELETE_ARRAY(m_paiSpecialistClassExtraGPP);
+
+	if (m_ppaiSpecialistTypeExtraYield != NULL)
+	{
+		for (int iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
+		{
+			SAFE_DELETE_ARRAY(m_ppaiSpecialistTypeExtraYield[iI]);
+		}
+		SAFE_DELETE_ARRAY(m_ppaiSpecialistTypeExtraYield);
+	}
+	if (m_ppaiSpecialistTypeExtraCommerce != NULL)
+	{
+		for (int iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
+		{
+			SAFE_DELETE_ARRAY(m_ppaiSpecialistTypeExtraCommerce[iI]);
+		}
+		SAFE_DELETE_ARRAY(m_ppaiSpecialistTypeExtraCommerce);
+	}
+	SAFE_DELETE_ARRAY(m_paiSpecialistTypeExtraHappiness);
+	SAFE_DELETE_ARRAY(m_paiSpecialistTypeExtraHealth);
+	SAFE_DELETE_ARRAY(m_paiSpecialistTypeExtraCrime);
 
 	SAFE_DELETE_ARRAY(m_pabResearchingTech);
 	SAFE_DELETE_ARRAY(m_pabLoyalMember);
@@ -1487,7 +1513,29 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 		{
 			m_paiSpecialistClassExtraGPP[iI] = 0;
 		}
-
+		FAssertMsg(0 < GC.getNumSpecialistInfos(), "GC.getNumSpecialistClassInfos() is not greater than zero but it is used to allocate memory in CvPlayer::reset");
+		FAssertMsg(m_paiSpecialistTypeExtraHealth == NULL, "about to leak memory, CvPlayer::m_paiSpecialistTypeExtraHealth");
+		FAssertMsg(m_paiSpecialistTypeExtraHappiness == NULL, "about to leak memory, CvPlayer::m_paiSpecialistTypeExtraHappiness");
+		FAssertMsg(m_paiSpecialistTypeExtraCrime == NULL, "about to leak memory, CvPlayer::m_paiSpecialistTypeExtraCrime");
+		FAssertMsg(m_ppaiSpecialistTypeExtraYield == NULL, "about to leak memory, CvPlayer::m_paiSpecialistTypeExtraYield");
+		FAssertMsg(m_ppaiSpecialistTypeExtraCommerce == NULL, "about to leak memory, CvPlayer::m_paiSpecialistTypeExtraCommerce");
+		m_paiSpecialistTypeExtraHealth = new int[GC.getNumSpecialistInfos()];
+		m_paiSpecialistTypeExtraHappiness = new int[GC.getNumSpecialistInfos()];
+		m_paiSpecialistTypeExtraCrime = new int[GC.getNumSpecialistInfos()];
+		m_ppaiSpecialistTypeExtraYield = new int*[GC.getNumSpecialistInfos()];
+		m_ppaiSpecialistTypeExtraCommerce = new int*[GC.getNumSpecialistInfos()];
+		for (iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
+		{
+			m_paiSpecialistTypeExtraHealth[iI] = 0;
+			m_paiSpecialistTypeExtraHappiness[iI] = 0;
+			m_paiSpecialistTypeExtraCrime[iI] = 0;
+			m_ppaiSpecialistTypeExtraYield[iI] = new int[NUM_YIELD_TYPES];
+			for (int iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
+				m_ppaiSpecialistTypeExtraYield[iI][iJ] = 0;
+			m_ppaiSpecialistTypeExtraCommerce[iI] = new int[NUM_COMMERCE_TYPES];
+			for (int iJ = 0; iJ < NUM_COMMERCE_TYPES; iJ++)
+				m_ppaiSpecialistTypeExtraCommerce[iI][iJ] = 0;
+		}
 
 		FAssertMsg(0 < GC.getNumSpecialistClassInfos(), "GC.getNumSpecialistClassInfos() is not greater than zero but it is used to allocate memory in CvPlayer::reset");
 		FAssertMsg(m_ppaaiSpecialistClassExtraYield==NULL, "about to leak memory, CvPlayer::m_ppaaiSpecialistExtraYield");
@@ -21214,6 +21262,18 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(GC.getNumSpecialistClassInfos(), m_paiSpecialistClassExtraCrime);
 	pStream->Read(GC.getNumSpecialistClassInfos(), m_paiSpecialistClassExtraGPP);
 
+	pStream->Read(GC.getNumSpecialistInfos(), m_paiSpecialistTypeExtraHealth);
+	pStream->Read(GC.getNumSpecialistInfos(), m_paiSpecialistTypeExtraHappiness);
+	pStream->Read(GC.getNumSpecialistInfos(), m_paiSpecialistTypeExtraCrime);
+	for (int iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
+	{
+		pStream->Read(NUM_YIELD_TYPES, m_ppaiSpecialistTypeExtraYield[iI]);
+	}
+	for (int iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
+	{
+		pStream->Read(NUM_COMMERCE_TYPES, m_ppaiSpecialistTypeExtraCommerce[iI]);
+	}
+
 	FAssertMsg((0 < GC.getNumTechInfos()), "GC.getNumTechInfos() is not greater than zero but it is expected to be in CvPlayer::read");
 	pStream->Read(GC.getNumTechInfos(), m_pabResearchingTech);
 
@@ -21973,6 +22033,18 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(GC.getNumSpecialistClassInfos(), m_paiSpecialistClassExtraHealth);
 	pStream->Write(GC.getNumSpecialistClassInfos(), m_paiSpecialistClassExtraCrime);
 	pStream->Write(GC.getNumSpecialistClassInfos(), m_paiSpecialistClassExtraGPP);
+
+	pStream->Write(GC.getNumSpecialistInfos(), m_paiSpecialistTypeExtraHealth);
+	pStream->Write(GC.getNumSpecialistInfos(), m_paiSpecialistTypeExtraHappiness);
+	pStream->Write(GC.getNumSpecialistInfos(), m_paiSpecialistTypeExtraCrime);
+	for (int iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
+	{
+		pStream->Write(NUM_YIELD_TYPES, m_ppaiSpecialistTypeExtraYield[iI]);
+	}
+	for (int iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
+	{
+		pStream->Write(NUM_COMMERCE_TYPES, m_ppaiSpecialistTypeExtraCommerce[iI]);
+	}
 
 	FAssertMsg((0 < GC.getNumTechInfos()), "GC.getNumTechInfos() is not greater than zero but it is expected to be in CvPlayer::write");
 	pStream->Write(GC.getNumTechInfos(), m_pabResearchingTech);
@@ -31274,9 +31346,159 @@ void CvPlayer::changeSpecialistClassExtraGPP(SpecialistClassTypes eIndex1, int i
 			}
 			pLoopCity->changeBaseGreatPeopleRate(pLoopCity->getSpecialistClassCount(eIndex1) * iChange);
 		}
-
-
 		AI_makeAssignWorkDirty();
+	}
+}
+
+int CvPlayer::getSpecialistTypeExtraHappiness(SpecialistTypes eIndex1) const
+{
+	return m_paiSpecialistTypeExtraHappiness[eIndex1];
+}
+
+int CvPlayer::getSpecialistTypeExtraHealth(SpecialistTypes eIndex1) const
+{
+	return m_paiSpecialistTypeExtraHealth[eIndex1];
+}
+
+void CvPlayer::changeSpecialistTypeExtraHappiness(SpecialistTypes eIndex1, int iChange)
+{
+	CvCity* pLoopCity;
+	int iLoop;
+	bool bSomethingChanged = false;
+	SpecialistClassTypes eSpecialistClass = (SpecialistClassTypes)GC.getSpecialistInfo(eIndex1).getSpecialistClassType();
+	if (iChange != 0)
+	{
+		m_paiSpecialistTypeExtraHappiness[eIndex1] = (m_paiSpecialistTypeExtraHappiness[eIndex1] + iChange);
+		for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+		{
+			if (pLoopCity->getSpecialistTypeFromClass(eSpecialistClass) == eIndex1)
+			{
+				pLoopCity->changeLocalSpecialistClassHappiness(eSpecialistClass, iChange);
+				bSomethingChanged = true;
+			}
+		}
+		if (bSomethingChanged)
+			AI_makeAssignWorkDirty();
+	}
+}
+
+void CvPlayer::changeSpecialistTypeExtraHealth(SpecialistTypes eIndex1, int iChange)
+{
+	CvCity* pLoopCity;
+	int iLoop;
+	bool bSomethingChanged = false;
+	SpecialistClassTypes eSpecialistClass = (SpecialistClassTypes)GC.getSpecialistInfo(eIndex1).getSpecialistClassType();
+	if (iChange != 0)
+	{
+		m_paiSpecialistTypeExtraHealth[eIndex1] = (m_paiSpecialistTypeExtraHealth[eIndex1] + iChange);
+		for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+		{
+			if (pLoopCity->getSpecialistTypeFromClass(eSpecialistClass) == eIndex1)
+			{
+				pLoopCity->changeLocalSpecialistClassHealth(eSpecialistClass, iChange);
+				bSomethingChanged = true;
+			}
+		}
+		if (bSomethingChanged)
+			AI_makeAssignWorkDirty();
+	}
+}
+int CvPlayer::getSpecialistTypeExtraCrime(SpecialistTypes eIndex1) const
+{
+	return m_paiSpecialistTypeExtraCrime[eIndex1];
+}
+void CvPlayer::changeSpecialistTypeExtraCrime(SpecialistTypes eIndex1, int iChange)
+{
+	CvCity* pLoopCity;
+	int iLoop;
+	bool bSomethingChanged = false;
+	SpecialistClassTypes eSpecialistClass = (SpecialistClassTypes)GC.getSpecialistInfo(eIndex1).getSpecialistClassType();
+	if (iChange != 0)
+	{
+		m_paiSpecialistTypeExtraCrime[eIndex1] = (m_paiSpecialistTypeExtraCrime[eIndex1] + iChange);
+		for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+		{
+			if (pLoopCity->getSpecialistTypeFromClass(eSpecialistClass) == eIndex1)
+			{
+				pLoopCity->changeLocalSpecialistClassCrime(eSpecialistClass, iChange);
+				bSomethingChanged = true;
+			}
+		}
+		if(bSomethingChanged)
+			AI_makeAssignWorkDirty();
+	}
+}
+
+int CvPlayer::getSpecialistTypeExtraYield(SpecialistTypes eIndex1, YieldTypes eIndex2) const
+{
+	FAssertMsg(eIndex1 >= 0, "eIndex1 expected to be >= 0");
+	FAssertMsg(eIndex1 < GC.getNumSpecialistInfos(), "eIndex1 expected to be < GC.getNumSpecialistInfos()");
+	FAssertMsg(eIndex2 >= 0, "eIndex2 expected to be >= 0");
+	FAssertMsg(eIndex2 < NUM_YIELD_TYPES, "eIndex2 expected to be < NUM_YIELD_TYPES");
+	return m_ppaiSpecialistTypeExtraYield[eIndex1][eIndex2];
+}
+
+
+void CvPlayer::changeSpecialistTypeExtraYield(SpecialistTypes eIndex1, YieldTypes eIndex2, int iChange)
+{
+	FAssertMsg(eIndex1 >= 0, "eIndex1 expected to be >= 0");
+	FAssertMsg(eIndex1 < GC.getNumSpecialistInfos(), "eIndex1 expected to be < GC.getNumSpecialistInfos()");
+	FAssertMsg(eIndex2 >= 0, "eIndex2 expected to be >= 0");
+	FAssertMsg(eIndex2 < NUM_YIELD_TYPES, "eIndex2 expected to be < NUM_YIELD_TYPES");
+	CvCity* pLoopCity;
+	int iLoop;
+	bool bSomethingChanged = false;
+	SpecialistClassTypes eSpecialistClass = (SpecialistClassTypes)GC.getSpecialistInfo(eIndex1).getSpecialistClassType();
+
+	if (iChange != 0)
+	{
+		m_ppaiSpecialistTypeExtraYield[eIndex1][eIndex2] += iChange;
+		for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+		{
+			if (pLoopCity->getSpecialistTypeFromClass(eSpecialistClass) == eIndex1)
+			{
+				pLoopCity->changeLocalSpecialistClassYield(eSpecialistClass, eIndex2, iChange);
+				bSomethingChanged = true;
+				pLoopCity->updateExtraSpecialistYield();
+			}
+		}
+		if(bSomethingChanged)
+			AI_makeAssignWorkDirty();
+	}
+}
+
+int CvPlayer::getSpecialistTypeExtraCommerce(SpecialistTypes eSpecialist, CommerceTypes eIndex) const
+{
+	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
+	FAssertMsg(eIndex < NUM_COMMERCE_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
+
+	return m_ppaiSpecialistTypeExtraCommerce[eSpecialist][eIndex];
+
+}
+
+void CvPlayer::changeSpecialistTypeExtraCommerce(SpecialistTypes eIndex1, CommerceTypes eIndex2, int iChange)
+{
+	FAssertMsg(eIndex2 >= 0, "eIndex is expected to be non-negative (invalid Index)");
+	FAssertMsg(eIndex2 < NUM_COMMERCE_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
+	CvCity* pLoopCity;
+	int iLoop;
+	bool bSomethingChanged = false;
+	SpecialistClassTypes eSpecialistClass = (SpecialistClassTypes)GC.getSpecialistInfo(eIndex1).getSpecialistClassType();
+
+	if (iChange != 0)
+	{
+		m_ppaiSpecialistTypeExtraCommerce[eIndex1][eIndex2] += iChange;
+		for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+		{
+			if (pLoopCity->getSpecialistTypeFromClass(eSpecialistClass) == eIndex1)
+			{
+				pLoopCity->changeLocalSpecialistClassCommerce(eSpecialistClass, eIndex2, iChange);
+				bSomethingChanged = true;
+				pLoopCity->updateCommerce();
+			}
+		}
+		if (bSomethingChanged)
+			AI_makeAssignWorkDirty();
 	}
 }
 

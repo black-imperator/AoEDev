@@ -6668,6 +6668,21 @@ void CvTeam::processTech(TechTypes eTech, int iChange)
 			GET_PLAYER((PlayerTypes)iI).changePower(GC.getTechInfo(eTech).getPowerValue() * iChange);
 			GET_PLAYER((PlayerTypes)iI).changeTechScore(getTechScore(eTech) * iChange);
 
+			for (int iJ = 0; iJ < GC.getNumSpecialistInfos(); iJ++)
+			{
+				GET_PLAYER((PlayerTypes)iI).changeSpecialistTypeExtraHealth((SpecialistTypes)iJ, GC.getTechInfo(eTech).getSpecialistTypeHealthChange(iJ) * iChange);
+				GET_PLAYER((PlayerTypes)iI).changeSpecialistTypeExtraHappiness((SpecialistTypes)iJ, GC.getTechInfo(eTech).getSpecialistTypeHappinessChange(iJ) * iChange);
+				GET_PLAYER((PlayerTypes)iI).changeSpecialistTypeExtraCrime((SpecialistTypes)iJ, GC.getTechInfo(eTech).getSpecialistTypeCrimeChange(iJ) * iChange);
+				for (int iK = 0; iK < NUM_YIELD_TYPES; iK++)
+				{
+					GET_PLAYER((PlayerTypes)iI).changeSpecialistTypeExtraYield((SpecialistTypes)iJ, (YieldTypes)iK, GC.getTechInfo(eTech).getSpecialistTypeYieldChange(iJ, iK) * iChange);
+				}
+				for (int iK = 0; iK < NUM_COMMERCE_TYPES; iK++)
+				{
+					GET_PLAYER((PlayerTypes)iI).changeSpecialistTypeExtraCommerce((SpecialistTypes)iJ, (CommerceTypes)iK, GC.getTechInfo(eTech).getSpecialistTypeYieldChange(iJ, iK) * iChange);
+				}
+			}
+
 			//DynTraits
 			TraitTriggeredData kData;
 			kData.m_iTech = eTech;

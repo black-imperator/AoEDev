@@ -1302,18 +1302,22 @@ CvSpecialistInfo::~CvSpecialistInfo()
 	SAFE_DELETE_ARRAY(m_piUnitCombatFreeXP);
 	SAFE_DELETE_ARRAY(m_piTrainXPCap);
 	SAFE_DELETE_ARRAY(m_piTrainXPRate);
-	if(m_ppiSpecialistClassExtraYield != NULL)
+	if (m_ppiSpecialistClassExtraYield != NULL)
+	{
 		for (int iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 		{
 			SAFE_DELETE_ARRAY(m_ppiSpecialistClassExtraYield[iI]);
 		}
-	SAFE_DELETE_ARRAY(m_ppiSpecialistClassExtraYield);
+		SAFE_DELETE_ARRAY(m_ppiSpecialistClassExtraYield);
+	}
 	if (m_ppiSpecialistClassExtraCommerce != NULL)
+	{
 		for (int iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 		{
 			SAFE_DELETE_ARRAY(m_ppiSpecialistClassExtraCommerce[iI]);
 		}
-	SAFE_DELETE_ARRAY(m_ppiSpecialistClassExtraCommerce);
+		SAFE_DELETE_ARRAY(m_ppiSpecialistClassExtraCommerce);
+	}
 	SAFE_DELETE_ARRAY(m_piSpecialistClassExtraCrime);
 }
 
@@ -1435,7 +1439,7 @@ int CvSpecialistInfo::getSpecialistClassExtraYield(int i, int j) const
 	FAssertMsg(i > -1, "Index out of bounds");
 	FAssertMsg(j < NUM_YIELD_TYPES, "Index out of bounds");
 	FAssertMsg(j > -1, "Index out of bounds");
-	return m_ppiSpecialistClassExtraYield ? (m_ppiSpecialistClassExtraYield[i] ? m_ppiSpecialistClassExtraYield[i][j] : -1) : -1;
+	return m_ppiSpecialistClassExtraYield ? (m_ppiSpecialistClassExtraYield[i] ? m_ppiSpecialistClassExtraYield[i][j] : 0) : 0;
 }
 
 const int* CvSpecialistInfo::getSpecialistClassExtraYieldArray(int i) const
@@ -1451,7 +1455,7 @@ int CvSpecialistInfo::getSpecialistClassExtraCommerce(int i, int j) const
 	FAssertMsg(i > -1, "Index out of bounds");
 	FAssertMsg(j < NUM_COMMERCE_TYPES, "Index out of bounds");
 	FAssertMsg(j > -1, "Index out of bounds");
-	return m_ppiSpecialistClassExtraCommerce ? (m_ppiSpecialistClassExtraCommerce[i] ? m_ppiSpecialistClassExtraCommerce[i][j] : -1) : -1;
+	return m_ppiSpecialistClassExtraCommerce ? (m_ppiSpecialistClassExtraCommerce[i] ? m_ppiSpecialistClassExtraCommerce[i][j] : 0) : 0;
 }
 
 const int* CvSpecialistInfo::getSpecialistClassExtraCommerceArray(int i) const
@@ -1465,7 +1469,7 @@ int CvSpecialistInfo::getSpecialistClassExtraCrime(int i) const
 {
 	FAssertMsg(i < GC.getNumSpecialistClassInfos(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
-	return m_piSpecialistClassExtraCrime ? m_piSpecialistClassExtraCrime[i] : -1;
+	return m_piSpecialistClassExtraCrime ? m_piSpecialistClassExtraCrime[i] : 0;
 }
 
 const TCHAR* CvSpecialistInfo::getTexture() const
@@ -1881,7 +1885,7 @@ CvTechInfo::~CvTechInfo()
 	}
 	if (m_ppiSpecialistTypeYieldChanges != NULL)
 	{
-		for (int iI; iI < GC.getNumSpecialistInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
 		{
 			SAFE_DELETE_ARRAY(m_ppiSpecialistTypeYieldChanges[iI]);
 		}
@@ -1889,7 +1893,7 @@ CvTechInfo::~CvTechInfo()
 	}
 	if (m_ppiSpecialistTypeCommerceChanges != NULL)
 	{
-		for (int iI; iI < GC.getNumSpecialistInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
 		{
 			SAFE_DELETE_ARRAY(m_ppiSpecialistTypeCommerceChanges[iI]);
 		}
@@ -2526,6 +2530,7 @@ void CvTechInfo::read(FDataStreamBase* stream)
 	m_ppiSpecialistTypeYieldChanges = new int* [GC.getNumSpecialistInfos()];
 	for (int i = 0; i < GC.getNumSpecialistInfos(); i++)
 	{
+		m_ppiSpecialistTypeYieldChanges[i] = new int[NUM_YIELD_TYPES];
 		stream->Read(NUM_YIELD_TYPES, m_ppiSpecialistTypeYieldChanges[i]);
 	}
 
@@ -2540,15 +2545,19 @@ void CvTechInfo::read(FDataStreamBase* stream)
 	m_ppiSpecialistTypeCommerceChanges = new int* [GC.getNumSpecialistInfos()];
 	for (int i = 0; i < GC.getNumSpecialistInfos(); i++)
 	{
+		m_ppiSpecialistTypeCommerceChanges[i] = new int[NUM_COMMERCE_TYPES];
 		stream->Read(NUM_COMMERCE_TYPES, m_ppiSpecialistTypeCommerceChanges[i]);
 	}
 
 	SAFE_DELETE_ARRAY(m_piSpecialistTypeHealthChanges);
-	stream->Read(GC.getNumSpecialistClassInfos(), m_piSpecialistTypeHealthChanges);
+	m_piSpecialistTypeHealthChanges = new int[GC.getNumSpecialistInfos()];
+	stream->Read(GC.getNumSpecialistInfos(), m_piSpecialistTypeHealthChanges);
 	SAFE_DELETE_ARRAY(m_piSpecialistTypeHappinessChanges);
-	stream->Read(GC.getNumSpecialistClassInfos(), m_piSpecialistTypeHappinessChanges);
+	m_piSpecialistTypeHappinessChanges = new int[GC.getNumSpecialistInfos()];
+	stream->Read(GC.getNumSpecialistInfos(), m_piSpecialistTypeHappinessChanges);
 	SAFE_DELETE_ARRAY(m_piSpecialistTypeCrimeChanges);
-	stream->Read(GC.getNumSpecialistClassInfos(), m_piSpecialistTypeCrimeChanges);
+	m_piSpecialistTypeCrimeChanges = new int[GC.getNumSpecialistInfos()];
+	stream->Read(GC.getNumSpecialistInfos(), m_piSpecialistTypeCrimeChanges);
 /*************************************************************************************************/
 /**	New Tag Defs							END													**/
 /*************************************************************************************************/
@@ -2698,9 +2707,9 @@ void CvTechInfo::write(FDataStreamBase* stream)
 	{
 		stream->Write(NUM_COMMERCE_TYPES, m_ppiSpecialistTypeCommerceChanges[i]);
 	}
-	stream->Write(GC.getNumSpecialistClassInfos(), m_piSpecialistTypeHealthChanges);
-	stream->Write(GC.getNumSpecialistClassInfos(), m_piSpecialistTypeHappinessChanges);
-	stream->Write(GC.getNumSpecialistClassInfos(), m_piSpecialistTypeCrimeChanges);
+	stream->Write(GC.getNumSpecialistInfos(), m_piSpecialistTypeHealthChanges);
+	stream->Write(GC.getNumSpecialistInfos(), m_piSpecialistTypeHappinessChanges);
+	stream->Write(GC.getNumSpecialistInfos(), m_piSpecialistTypeCrimeChanges);
 /*************************************************************************************************/
 /**	New Tag Defs							END													**/
 /*************************************************************************************************/
@@ -2927,7 +2936,7 @@ bool CvTechInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iVictoryInfluenceModifier, "iVictoryInfluenceModifier", 100);
 	pXML->GetChildXmlValByName(&m_iDefeatInfluenceModifier, "iDefeatInfluenceModifier", 100);
 	pXML->GetChildXmlValByName(&m_iPillageInfluenceModifier, "iPillageInfluenceModifier", 100);
-	FAssertMsg((GC.getNumSpecialistClassInfos() > 0) && (NUM_YIELD_TYPES) > 0, "either the number of SpecialistClasses infos is zero or less or the number of yield types is zero or less");
+	FAssertMsg((GC.getNumSpecialistInfos() > 0) && (NUM_YIELD_TYPES) > 0, "either the number of SpecialistTypes infos is zero or less or the number of yield types is zero or less");
 	pXML->Init2DIntList(&m_ppiSpecialistTypeYieldChanges, GC.getNumSpecialistInfos(), NUM_YIELD_TYPES);
 	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "SpecialistTypeYieldChanges"))
 	{
@@ -2974,7 +2983,7 @@ bool CvTechInfo::read(CvXMLLoadUtility* pXML)
 		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
 	}
 
-	FAssertMsg((GC.getNumSpecialistClassInfos() > 0) && (NUM_COMMERCE_TYPES) > 0, "either the number of SpecialistClasses infos is zero or less or the number of yield types is zero or less");
+	FAssertMsg((GC.getNumSpecialistInfos() > 0) && (NUM_COMMERCE_TYPES) > 0, "either the number of SpecialistTypes infos is zero or less or the number of yield types is zero or less");
 	pXML->Init2DIntList(&m_ppiSpecialistTypeCommerceChanges, GC.getNumSpecialistInfos(), NUM_COMMERCE_TYPES);
 	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "SpecialistTypeCommerceChanges"))
 	{

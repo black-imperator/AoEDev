@@ -1254,6 +1254,16 @@ public:
 	void changeSpecialistClassExtraGPP(SpecialistClassTypes eIndex1, int iChange);
 	int getSpecialistClassExtraGPP(SpecialistClassTypes eIndex1) const;
 
+	void changeSpecialistTypeExtraHappiness(SpecialistTypes eIndex1, int iChange);
+	int getSpecialistTypeExtraHappiness(SpecialistTypes eIndex1) const;
+	void changeSpecialistTypeExtraHealth(SpecialistTypes eIndex1, int iChange);
+	int getSpecialistTypeExtraHealth(SpecialistTypes eIndex1) const;
+	void changeSpecialistTypeExtraCrime(SpecialistTypes eIndex1, int iChange);
+	int getSpecialistTypeExtraCrime(SpecialistTypes eIndex1) const;
+	void changeSpecialistTypeExtraYield(SpecialistTypes eIndex1, YieldTypes index2, int iChange);
+	int getSpecialistTypeExtraYield(SpecialistTypes eIndex1, YieldTypes index2) const;
+	void changeSpecialistTypeExtraCommerce(SpecialistTypes eIndex1, CommerceTypes index2, int iChange);
+	int getSpecialistTypeExtraCommerce(SpecialistTypes eIndex1, CommerceTypes index2) const;
 
 	int getPotency();
 	void changePotency(int iChange);
@@ -2093,6 +2103,12 @@ protected:
 	int* m_paiSpecialistClassExtraHealth;
 	int* m_paiSpecialistClassExtraCrime;
 	int* m_paiSpecialistClassExtraGPP;
+
+	int** m_ppaiSpecialistTypeExtraYield;
+	int** m_ppaiSpecialistTypeExtraCommerce;
+	int* m_paiSpecialistTypeExtraHappiness;
+	int* m_paiSpecialistTypeExtraHealth;
+	int* m_paiSpecialistTypeExtraCrime;
 
 	bool* m_pabResearchingTech;
 	bool* m_pabLoyalMember;

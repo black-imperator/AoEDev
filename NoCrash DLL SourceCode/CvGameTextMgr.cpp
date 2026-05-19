@@ -10668,7 +10668,7 @@ void CvGameTextMgr::parseSpecialistHelp(CvWStringBuffer &szHelpString, Specialis
 				szHelpString.append(NEWLINE);
 				szHelpString.append(gDLL->getText("TXT_KEY_SPECIALIST_UNITCLASS_EXPERIENCE_CAP", iUnitCombatExtraExperience / 100, iUnitCombatExtraExperience % 100, GC.getUnitCombatInfo((UnitCombatTypes)i).getTextKeyWide()));
 			}
-			iUnitCombatExtraExperience = GC.getSpecialistInfo(eSpecialist).getTrainXPRate(i);
+			iUnitCombatExtraExperience = GC.getSpecialistInfo(eSpecialist).getTrainXPRate(i) * 100;
 			if (iUnitCombatExtraExperience != 0)
 			{
 				szHelpString.append(NEWLINE);

@@ -1199,7 +1199,7 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 			m_paaiLocalSpecialistYield[iI] = new int[NUM_YIELD_TYPES];
 			for (int iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
 			{
-				m_paaiLocalSpecialistYield[iI][iJ] = 0;
+				m_paaiLocalSpecialistYield[iI][iJ] = GET_PLAYER(getOwner()).getSpecialistTypeExtraYield((SpecialistTypes)getSpecialistTypeFromClass((SpecialistClassTypes)iI), (YieldTypes)iJ);
 			}
 		}
 		FAssertMsg(m_paaiLocalSpecialistCommerce==NULL, "About to leak memory, CvCity::m_paaiLocalSpecialistCommerce is NULL");
@@ -1209,7 +1209,7 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 			m_paaiLocalSpecialistCommerce[iI] = new int[NUM_COMMERCE_TYPES];
 			for (int iJ = 0; iJ < NUM_COMMERCE_TYPES; iJ++)
 			{
-				m_paaiLocalSpecialistCommerce[iI][iJ] = 0;
+				m_paaiLocalSpecialistCommerce[iI][iJ] = GET_PLAYER(getOwner()).getSpecialistTypeExtraCommerce((SpecialistTypes)getSpecialistTypeFromClass((SpecialistClassTypes)iI), (CommerceTypes)iJ);
 			}
 		}
 		m_paiLocalSpecialistHappiness = new int[GC.getNumSpecialistClassInfos()];
@@ -1218,9 +1218,9 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 		m_paiLocalSpecialistGPP = new int[GC.getNumSpecialistClassInfos()];
 		for (iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 		{
-			m_paiLocalSpecialistHappiness[iI] = 0;
-			m_paiLocalSpecialistHealth[iI] = 0;
-			m_paiLocalSpecialistCrime[iI] = 0;
+			m_paiLocalSpecialistHappiness[iI] = GET_PLAYER(getOwner()).getSpecialistTypeExtraHappiness((SpecialistTypes)getSpecialistTypeFromClass((SpecialistClassTypes)iI));
+			m_paiLocalSpecialistHealth[iI] = GET_PLAYER(getOwner()).getSpecialistTypeExtraHealth((SpecialistTypes)getSpecialistTypeFromClass((SpecialistClassTypes)iI));
+			m_paiLocalSpecialistCrime[iI] = GET_PLAYER(getOwner()).getSpecialistTypeExtraCrime((SpecialistTypes)getSpecialistTypeFromClass((SpecialistClassTypes)iI));
 			m_paiLocalSpecialistGPP[iI] = 0;
 		}
 /*************************************************************************************************/
