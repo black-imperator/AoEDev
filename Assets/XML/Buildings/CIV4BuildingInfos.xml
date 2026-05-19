@@ -1646,7 +1646,7 @@
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<SpecialistClassCounts>
 				<SpecialistClassCount>
-					<SpecialistClass>SPECIALISTCLASS_GREENHORN</SpecialistClass>
+					<SpecialistClass>SPECIALISTCLASS_STATESMAN</SpecialistClass>
 					<iSpecialistClassCount>2</iSpecialistClassCount>
 				</SpecialistClassCount>
 			</SpecialistClassCounts>
@@ -7253,7 +7253,7 @@
 			<fVisibilityPriority>1</fVisibilityPriority>
 			<SpecialistClassCounts>
 				<SpecialistClassCount>
-					<SpecialistClass>SPECIALISTCLASS_GREENHORN</SpecialistClass>
+					<SpecialistClass>SPECIALISTCLASS_STATESMAN</SpecialistClass>
 					<iSpecialistClassCount>2</iSpecialistClassCount>
 				</SpecialistClassCount>
 			</SpecialistClassCounts>

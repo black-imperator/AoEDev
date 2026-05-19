@@ -3954,6 +3954,19 @@
 			<DefaultBuilding>BUILDING_GRIGORI_APOSTATES</DefaultBuilding>
 			<VictoryThresholds/>
 		</BuildingClassInfo>
+		<BuildingClassInfo><!-- Grigori Caution Apostates-->
+			<Type>BUILDINGCLASS_MONUMENT_GRIGORI</Type>
+			<Description>TXT_KEY_BUILDING_MONUMENT_GRIGORI</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_MONUMENT_GRIGORI</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
 		<BuildingClassInfo><!-- Luchuirp Blasting workshop -->
 			<Type>BUILDINGCLASS_BLASTING_WORKSHOP</Type>
 			<Description>TXT_KEY_BUILDING_BLASTING_WORKSHOP</Description>

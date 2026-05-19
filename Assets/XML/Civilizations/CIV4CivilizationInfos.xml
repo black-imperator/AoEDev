@@ -2678,7 +2678,7 @@
 			</Units>
 			<Specialists>
 				<Specialist>
-					<SpecialistClassType>SPECIALISTCLASS_GREENHORN</SpecialistClassType>
+					<SpecialistClassType>SPECIALISTCLASS_STATESMAN</SpecialistClassType>
 					<SpecialistType>SPECIALIST_GREENHORN</SpecialistType>
 				</Specialist>
 				<Specialist>
