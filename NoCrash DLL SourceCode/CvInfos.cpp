@@ -1614,7 +1614,7 @@ bool CvSpecialistInfo::read(CvXMLLoadUtility* pXML)
 							if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "SpecialistClassCommerces"))
 							{
 								// call the function that sets the yield change variable
-								pXML->SetYields(&m_ppiSpecialistClassExtraCommerce[iIndex]);
+								pXML->SetCommerce(&m_ppiSpecialistClassExtraCommerce[iIndex]);
 								gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
 							}
 							else
@@ -1827,7 +1827,13 @@ m_iFirstToTechEthicalAlignmentModifier(0),
 /*************************************************************************************************/
 /**	Lawful-Chaotic Alignments					END												**/
 /*************************************************************************************************/
-m_iBonusPrereq(0)
+m_iBonusPrereq(0),
+
+m_ppiSpecialistTypeYieldChanges(NULL),
+m_ppiSpecialistTypeCommerceChanges(NULL),
+m_piSpecialistTypeHappinessChanges(NULL),
+m_piSpecialistTypeHealthChanges(NULL),
+m_piSpecialistTypeCrimeChanges(NULL)
 /*************************************************************************************************/
 /**	New Tag Defs							END													**/
 /*************************************************************************************************/
@@ -1873,6 +1879,25 @@ CvTechInfo::~CvTechInfo()
 		}
 		SAFE_DELETE_ARRAY(m_piiTechCostMods);
 	}
+	if (m_ppiSpecialistTypeYieldChanges != NULL)
+	{
+		for (int iI; iI < GC.getNumSpecialistInfos(); iI++)
+		{
+			SAFE_DELETE_ARRAY(m_ppiSpecialistTypeYieldChanges[iI]);
+		}
+		SAFE_DELETE_ARRAY(m_ppiSpecialistTypeYieldChanges);
+	}
+	if (m_ppiSpecialistTypeCommerceChanges != NULL)
+	{
+		for (int iI; iI < GC.getNumSpecialistInfos(); iI++)
+		{
+			SAFE_DELETE_ARRAY(m_ppiSpecialistTypeCommerceChanges[iI]);
+		}
+		SAFE_DELETE_ARRAY(m_ppiSpecialistTypeCommerceChanges);
+	}
+	SAFE_DELETE_ARRAY(m_piSpecialistTypeHealthChanges);
+	SAFE_DELETE_ARRAY(m_piSpecialistTypeHappinessChanges);
+	SAFE_DELETE_ARRAY(m_piSpecialistTypeCrimeChanges);
 	/*************************************************************************************************/
 /**	New Tag Defs							END													**/
 /*************************************************************************************************/
@@ -2253,6 +2278,59 @@ int CvTechInfo::getBonusCostShiftValuesVectorElement(int i)		{return m_aiBonusCo
 int CvTechInfo::getBonusCostModsVectorSize()					{return m_aszBonusCostModsforPass3.size();}
 CvString CvTechInfo::getBonusCostModNamesVectorElement(int i)	{return m_aszBonusCostModsforPass3[i];}
 int CvTechInfo::getBonusCostModValuesVectorElement(int i)		{return m_aiBonusCostModsforPass3[i];}
+
+int CvTechInfo::getSpecialistTypeYieldChange(int i, int j)
+{
+	FAssertMsg(i < GC.getNumSpecialistTypes(), "Index out of bounds");
+	FAssertMsg(i > -1, "Index out of bounds");
+	FAssertMsg(j < NUM_YIELD_TYPES, "Index out of bounds");
+	FAssertMsg(j > -1, "Index out of bounds");
+	return m_ppiSpecialistTypeYieldChanges ? (m_ppiSpecialistTypeYieldChanges[i] ? m_ppiSpecialistTypeYieldChanges[i][j] : 0) : 0;
+}
+
+const int* CvTechInfo::getSpecialistTypeYieldChangeArray(int i)
+{
+	FAssertMsg(i < GC.getNumSpecialistTypes(), "Index out of bounds");
+	FAssertMsg(i > -1, "Index out of bounds");
+	return m_ppiSpecialistTypeYieldChanges ? m_ppiSpecialistTypeYieldChanges[i] : NULL;
+}
+
+int CvTechInfo::getSpecialistTypeCommerceChange(int i, int j)
+{
+	FAssertMsg(i < GC.getNumSpecialistTypes(), "Index out of bounds");
+	FAssertMsg(i > -1, "Index out of bounds");
+	FAssertMsg(j < NUM_COMMERCE_TYPES, "Index out of bounds");
+	FAssertMsg(j > -1, "Index out of bounds");
+	return m_ppiSpecialistTypeCommerceChanges ? (m_ppiSpecialistTypeCommerceChanges[i] ? m_ppiSpecialistTypeCommerceChanges[i][j] : 0) : 0;
+}
+
+const int* CvTechInfo::getSpecialistTypeCommerceChangeArray(int i)
+{
+	FAssertMsg(i < GC.getNumSpecialistTypes(), "Index out of bounds");
+	FAssertMsg(i > -1, "Index out of bounds");
+	return m_ppiSpecialistTypeCommerceChanges ? m_ppiSpecialistTypeCommerceChanges[i] : NULL;
+}
+
+int CvTechInfo::getSpecialistTypeHealthChange(int i)
+{
+	FAssertMsg(i < GC.getNumSpecialistTypes(), "Index out of bounds");
+	FAssertMsg(i > -1, "Index out of bounds");
+	return m_piSpecialistTypeHealthChanges ? m_piSpecialistTypeHealthChanges[i] : 0;
+}
+
+int CvTechInfo::getSpecialistTypeHappinessChange(int i)
+{
+	FAssertMsg(i < GC.getNumSpecialistTypes(), "Index out of bounds");
+	FAssertMsg(i > -1, "Index out of bounds");
+	return m_piSpecialistTypeHappinessChanges ? m_piSpecialistTypeHappinessChanges[i] : 0;
+}
+
+int CvTechInfo::getSpecialistTypeCrimeChange(int i)
+{
+	FAssertMsg(i < GC.getNumSpecialistTypes(), "Index out of bounds");
+	FAssertMsg(i > -1, "Index out of bounds");
+	return m_piSpecialistTypeCrimeChanges ? m_piSpecialistTypeCrimeChanges[i] : 0;
+}
 /*************************************************************************************************/
 /**	New Tag Defs							END													**/
 /*************************************************************************************************/
@@ -2436,6 +2514,41 @@ void CvTechInfo::read(FDataStreamBase* stream)
 	SAFE_DELETE_ARRAY(m_piBonusCostMod);
 	m_piBonusCostMod = new int[GC.getNumBonusInfos()];
 	stream->Read(GC.getNumBonusInfos(), m_piBonusCostMod);
+
+	if (m_ppiSpecialistTypeYieldChanges != NULL)
+	{
+		for (int i = 0; i < GC.getNumSpecialistInfos(); i++)
+		{
+			SAFE_DELETE_ARRAY(m_ppiSpecialistTypeYieldChanges[i]);
+		}
+		SAFE_DELETE_ARRAY(m_ppiSpecialistTypeYieldChanges);
+	}
+	m_ppiSpecialistTypeYieldChanges = new int* [GC.getNumSpecialistInfos()];
+	for (int i = 0; i < GC.getNumSpecialistInfos(); i++)
+	{
+		stream->Read(NUM_YIELD_TYPES, m_ppiSpecialistTypeYieldChanges[i]);
+	}
+
+	if (m_ppiSpecialistTypeCommerceChanges != NULL)
+	{
+		for (int i = 0; i < GC.getNumSpecialistInfos(); i++)
+		{
+			SAFE_DELETE_ARRAY(m_ppiSpecialistTypeCommerceChanges[i]);
+		}
+		SAFE_DELETE_ARRAY(m_ppiSpecialistTypeCommerceChanges);
+	}
+	m_ppiSpecialistTypeCommerceChanges = new int* [GC.getNumSpecialistInfos()];
+	for (int i = 0; i < GC.getNumSpecialistInfos(); i++)
+	{
+		stream->Read(NUM_COMMERCE_TYPES, m_ppiSpecialistTypeCommerceChanges[i]);
+	}
+
+	SAFE_DELETE_ARRAY(m_piSpecialistTypeHealthChanges);
+	stream->Read(GC.getNumSpecialistClassInfos(), m_piSpecialistTypeHealthChanges);
+	SAFE_DELETE_ARRAY(m_piSpecialistTypeHappinessChanges);
+	stream->Read(GC.getNumSpecialistClassInfos(), m_piSpecialistTypeHappinessChanges);
+	SAFE_DELETE_ARRAY(m_piSpecialistTypeCrimeChanges);
+	stream->Read(GC.getNumSpecialistClassInfos(), m_piSpecialistTypeCrimeChanges);
 /*************************************************************************************************/
 /**	New Tag Defs							END													**/
 /*************************************************************************************************/
@@ -2576,6 +2689,18 @@ void CvTechInfo::write(FDataStreamBase* stream)
 	}
 	stream->Write(GC.getNumBonusInfos(), m_piBonusCostShift);
 	stream->Write(GC.getNumBonusInfos(), m_piBonusCostMod);
+
+	for (int i = 0; i < GC.getNumSpecialistInfos(); i++)
+	{
+		stream->Write(NUM_YIELD_TYPES, m_ppiSpecialistTypeYieldChanges[i]);
+	}
+	for (int i = 0; i < GC.getNumSpecialistInfos(); i++)
+	{
+		stream->Write(NUM_COMMERCE_TYPES, m_ppiSpecialistTypeCommerceChanges[i]);
+	}
+	stream->Write(GC.getNumSpecialistClassInfos(), m_piSpecialistTypeHealthChanges);
+	stream->Write(GC.getNumSpecialistClassInfos(), m_piSpecialistTypeHappinessChanges);
+	stream->Write(GC.getNumSpecialistClassInfos(), m_piSpecialistTypeCrimeChanges);
 /*************************************************************************************************/
 /**	New Tag Defs							END													**/
 /*************************************************************************************************/
@@ -2802,6 +2927,103 @@ bool CvTechInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iVictoryInfluenceModifier, "iVictoryInfluenceModifier", 100);
 	pXML->GetChildXmlValByName(&m_iDefeatInfluenceModifier, "iDefeatInfluenceModifier", 100);
 	pXML->GetChildXmlValByName(&m_iPillageInfluenceModifier, "iPillageInfluenceModifier", 100);
+	FAssertMsg((GC.getNumSpecialistClassInfos() > 0) && (NUM_YIELD_TYPES) > 0, "either the number of SpecialistClasses infos is zero or less or the number of yield types is zero or less");
+	pXML->Init2DIntList(&m_ppiSpecialistTypeYieldChanges, GC.getNumSpecialistInfos(), NUM_YIELD_TYPES);
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "SpecialistTypeYieldChanges"))
+	{
+		if (pXML->SkipToNextVal())
+		{
+			int iNumSibs = gDLL->getXMLIFace()->GetNumChildren(pXML->GetXML());
+			if (gDLL->getXMLIFace()->SetToChild(pXML->GetXML()))
+			{
+				if (0 < iNumSibs)
+				{
+					for (int j = 0; j < iNumSibs; j++)
+					{
+						pXML->GetChildXmlValByName(szTextVal, "SpecialistType");
+						int iIndex = pXML->FindInInfoClass(szTextVal);
+
+						if (iIndex > -1)
+						{
+							// delete the array since it will be reallocated
+							SAFE_DELETE_ARRAY(m_ppiSpecialistTypeYieldChanges[iIndex]);
+							// if we can set the current xml node to it's next sibling
+							if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "SpecialistTypeYields"))
+							{
+								// call the function that sets the yield change variable
+								pXML->SetYields(&m_ppiSpecialistTypeYieldChanges[iIndex]);
+								gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+							}
+							else
+							{
+								pXML->InitList(&m_ppiSpecialistTypeYieldChanges[iIndex], NUM_YIELD_TYPES);
+							}
+						}
+
+						if (!gDLL->getXMLIFace()->NextSibling(pXML->GetXML()))
+						{
+							break;
+						}
+					}
+				}
+
+				gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+			}
+		}
+
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+
+	FAssertMsg((GC.getNumSpecialistClassInfos() > 0) && (NUM_COMMERCE_TYPES) > 0, "either the number of SpecialistClasses infos is zero or less or the number of yield types is zero or less");
+	pXML->Init2DIntList(&m_ppiSpecialistTypeCommerceChanges, GC.getNumSpecialistInfos(), NUM_COMMERCE_TYPES);
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "SpecialistTypeCommerceChanges"))
+	{
+		if (pXML->SkipToNextVal())
+		{
+			int iNumSibs = gDLL->getXMLIFace()->GetNumChildren(pXML->GetXML());
+			if (gDLL->getXMLIFace()->SetToChild(pXML->GetXML()))
+			{
+				if (0 < iNumSibs)
+				{
+					for (int j = 0; j < iNumSibs; j++)
+					{
+						pXML->GetChildXmlValByName(szTextVal, "SpecialistType");
+						int iIndex = pXML->FindInInfoClass(szTextVal);
+
+						if (iIndex > -1)
+						{
+							// delete the array since it will be reallocated
+							SAFE_DELETE_ARRAY(m_ppiSpecialistTypeCommerceChanges[iIndex]);
+							// if we can set the current xml node to it's next sibling
+							if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "SpecialistTypeCommerces"))
+							{
+								// call the function that sets the yield change variable
+								pXML->SetCommerce(&m_ppiSpecialistTypeCommerceChanges[iIndex]);
+								gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+							}
+							else
+							{
+								pXML->InitList(&m_ppiSpecialistTypeCommerceChanges[iIndex], NUM_COMMERCE_TYPES);
+							}
+						}
+
+						if (!gDLL->getXMLIFace()->NextSibling(pXML->GetXML()))
+						{
+							break;
+						}
+					}
+				}
+
+				gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+			}
+		}
+
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+
+	pXML->SetVariableListTagPair(&m_piSpecialistTypeHealthChanges, "SpecialistTypeHealthChanges", sizeof(GC.getSpecialistInfo((SpecialistTypes)0)), GC.getNumSpecialistInfos());
+	pXML->SetVariableListTagPair(&m_piSpecialistTypeHappinessChanges, "SpecialistTypeHappinessChanges", sizeof(GC.getSpecialistInfo((SpecialistTypes)0)), GC.getNumSpecialistInfos());
+	pXML->SetVariableListTagPair(&m_piSpecialistTypeCrimeChanges, "SpecialistTypeCrimeChanges", sizeof(GC.getSpecialistInfo((SpecialistTypes)0)), GC.getNumSpecialistInfos());
 /*************************************************************************************************/
 /**	END																							**/
 /*************************************************************************************************/
@@ -3206,6 +3428,20 @@ void CvTechInfo::copyNonDefaults(CvTechInfo* pClassInfo, CvXMLLoadUtility* pXML)
 	{
 														m_aszBonusCostModsforPass3.push_back(	pClassInfo->getBonusCostModNamesVectorElement(i));
 														m_aiBonusCostModsforPass3.push_back(	pClassInfo->getBonusCostModValuesVectorElement(i));
+	}
+	for (int i = 0; i < GC.getNumSpecialistInfos(); i++)
+	{
+		for (int j = 0; j < NUM_YIELD_TYPES; j++)
+		{
+			if (getSpecialistTypeYieldChange(i, j) == 0)	m_ppiSpecialistTypeYieldChanges[i][j] = pClassInfo->getSpecialistTypeYieldChange(i, j);
+		}
+		for (int j = 0; j < NUM_COMMERCE_TYPES; j++)
+		{
+			if (getSpecialistTypeCommerceChange(i, j) == 0)	m_ppiSpecialistTypeCommerceChanges[i][j] = pClassInfo->getSpecialistTypeCommerceChange(i, j);
+		}
+		if (getSpecialistTypeHealthChange(i) == 0)			m_piSpecialistTypeHealthChanges[i] = pClassInfo->getSpecialistTypeHealthChange(i);
+		if (getSpecialistTypeHappinessChange(i) == 0)			m_piSpecialistTypeHappinessChanges[i] = pClassInfo->getSpecialistTypeHappinessChange(i);
+		if (getSpecialistTypeCrimeChange(i) == 0)			m_piSpecialistTypeCrimeChanges[i] = pClassInfo->getSpecialistTypeCrimeChange(i);
 	}
 }
 

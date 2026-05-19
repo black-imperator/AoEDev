@@ -16810,6 +16810,66 @@ void CvGameTextMgr::setTechHelp(CvWStringBuffer &szBuffer, TechTypes eTech, bool
 /**	Tech Spell Help								 END											**/
 /*************************************************************************************************/
 
+	for (int i = 0; i < GC.getNumSpecialistInfos(); i++)
+	{
+		CvWStringBuffer szTempBuffer;
+		SpecialistTypes eSpecialist = (SpecialistTypes)i;
+		if (GC.getGameINLINE().getActivePlayer() != NO_PLAYER)
+			if ((SpecialistTypes)GC.getCivilizationInfo(GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getCivilizationType()).getCivilizationSpecialists((SpecialistClassTypes)GC.getSpecialistInfo(eSpecialist).getSpecialistClassType()) != eSpecialist)
+				continue;
+
+		if (eSpecialist == NO_SPECIALIST)
+			continue;
+
+		szTempBuffer.clear();
+		bool bHasChanges = setYieldChangeHelp(szTempBuffer, L"", L"", L"", GC.getTechInfo(eTech).getSpecialistTypeYieldChangeArray(i), false, false);
+		if (bHasChanges)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("[ICON_BULLET]"));
+			szBuffer.append(gDLL->getText("%s1:", GC.getSpecialistInfo(eSpecialist).getTextKeyWide()));
+			szBuffer.append(szTempBuffer);
+		}
+		szTempBuffer.clear();
+		bHasChanges = setCommerceChangeHelp(szTempBuffer, L"", L"", L"", GC.getTechInfo(eTech).getSpecialistTypeCommerceChangeArray(i), false, false);
+		if (bHasChanges)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("[ICON_BULLET]"));
+			szBuffer.append(gDLL->getText("%s1:", GC.getSpecialistInfo(eSpecialist).getTextKeyWide()));
+			szBuffer.append(szTempBuffer);
+		}
+		int iSpecialistClassAttributeChange = GC.getTechInfo(eTech).getSpecialistTypeCrimeChange(i);
+		if (iSpecialistClassAttributeChange != 0)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("[ICON_BULLET]%s1:", GC.getSpecialistInfo(eSpecialist).getTextKeyWide()));
+			if (iSpecialistClassAttributeChange > 0)
+				szBuffer.append(L"+");
+			szBuffer.append(gDLL->getText(L"%d1[ICON_CRIME] ", iSpecialistClassAttributeChange));
+		}
+		iSpecialistClassAttributeChange = GC.getTechInfo(eTech).getSpecialistTypeHealthChange(i);
+		if (iSpecialistClassAttributeChange != 0)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("[ICON_BULLET]%s1:+", GC.getSpecialistInfo(eSpecialist).getTextKeyWide()));
+			if (iSpecialistClassAttributeChange > 0)
+				szBuffer.append(gDLL->getText(L"%d1[ICON_HEALTHY] ", iSpecialistClassAttributeChange));
+			else
+				szBuffer.append(gDLL->getText(L"%d1[ICON_UNHEALTHY] ", iSpecialistClassAttributeChange));
+		}
+		iSpecialistClassAttributeChange = GC.getTechInfo(eTech).getSpecialistTypeHappinessChange(i);
+		if (iSpecialistClassAttributeChange != 0)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("[ICON_BULLET]%s1:+", GC.getSpecialistInfo(eSpecialist).getTextKeyWide()));
+			if (iSpecialistClassAttributeChange > 0)
+				szBuffer.append(gDLL->getText(L"%d1[ICON_HAPPY] ", iSpecialistClassAttributeChange));
+			else
+				szBuffer.append(gDLL->getText(L"%d1[ICON_UNHHAPPY] ", iSpecialistClassAttributeChange));
+		}
+	}
+
 	if (bTreeInfo && NO_TECH == eFromTech)
 	{
 		buildSingleLineTechTreeString(szBuffer, eTech, bPlayerContext);

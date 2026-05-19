@@ -593,6 +593,14 @@ public:
 	int getBonusCostModsVectorSize();
 	CvString getBonusCostModNamesVectorElement(int i);
 	int getBonusCostModValuesVectorElement(int i);
+
+	int getSpecialistTypeYieldChange(int i, int j);
+	const int* getSpecialistTypeYieldChangeArray(int i);
+	int getSpecialistTypeCommerceChange(int i, int j);
+	const int* getSpecialistTypeCommerceChangeArray(int i);
+	int getSpecialistTypeHealthChange(int i);
+	int getSpecialistTypeHappinessChange(int i);
+	int getSpecialistTypeCrimeChange(int i);
 /*************************************************************************************************/
 /**	New Tag Defs							END													**/
 /*************************************************************************************************/
@@ -744,6 +752,12 @@ protected:
 	int** m_piiTechCostMods;
 	int m_iNumTechCostMods;
 	int* m_piBonusCostShift;
+
+	int** m_ppiSpecialistTypeYieldChanges;
+	int** m_ppiSpecialistTypeCommerceChanges;
+	int* m_piSpecialistTypeHealthChanges;
+	int* m_piSpecialistTypeHappinessChanges;
+	int* m_piSpecialistTypeCrimeChanges;
 	std::vector<CvString> m_aszBonusCostShiftsforPass3;
 	std::vector<int> m_aiBonusCostShiftsforPass3;
 	int* m_piBonusCostMod;
