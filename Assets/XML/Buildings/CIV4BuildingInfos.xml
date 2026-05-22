@@ -20148,7 +20148,7 @@
 			<Description>TXT_KEY_BUILDING_BHALL_PRODUCTION</Description>
 			<Civilopedia>TXT_KEY_BUILDING_BHALL_PRODUCTION_PEDIA</Civilopedia>
 			<ArtDefineTag>ART_DEF_BUILDING_WARRENS</ArtDefineTag>
-			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
+			<PrereqTech>TECH_WARFARE</PrereqTech>
 			<iPrereqPopulation>1</iPrereqPopulation>
 			<iAIWeight>10</iAIWeight>
 			<iCost>-1</iCost>

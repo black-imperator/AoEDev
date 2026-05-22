@@ -254,29 +254,29 @@ The only sounds to be heard from a great spire city are the soft clicks of bone 
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALIST_GREENHORN_PEDIA</Tag>
-		<English>The Grigori gain their signature unit, the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] by assigning Greenhorns and Volunteers in their cities, hoping that one of them will rise to become a hero of the people.
+		<English>The Grigori gain their signature unit, the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] by assigning Greenhorns in their cities, hoping that one of them will rise to become a hero of the people.
 
 Greenhorns are would-be Adventurers, yet to earn their cape but eager to prove themselves with odd jobs, and duking it out with rats in a basement with nothing but a leather shield.</English>
-		<French>The Grigori gain their signature unit, the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] by assigning Greenhorns and Volunteers in their cities, hoping that one of them will rise to become a hero of the people.
+		<French>The Grigori gain their signature unit, the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] by assigning Greenhorns in their cities, hoping that one of them will rise to become a hero of the people.
 
 Greenhorns are would-be Adventurers, yet to earn their cape but eager to prove themselves with odd jobs, and duking it out with rats in a basement with nothing but a leather shield.</French>
-		<German>The Grigori gain their signature unit, the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] by assigning Greenhorns and Volunteers in their cities, hoping that one of them will rise to become a hero of the people.
+		<German>The Grigori gain their signature unit, the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] by assigning Greenhorns in their cities, hoping that one of them will rise to become a hero of the people.
 
 Greenhorns are would-be Adventurers, yet to earn their cape but eager to prove themselves with odd jobs, and duking it out with rats in a basement with nothing but a leather shield.</German>
-		<Italian>The Grigori gain their signature unit, the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] by assigning Greenhorns and Volunteers in their cities, hoping that one of them will rise to become a hero of the people.
+		<Italian>The Grigori gain their signature unit, the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] by assigning Greenhorns in their cities, hoping that one of them will rise to become a hero of the people.
 
 Greenhorns are would-be Adventurers, yet to earn their cape but eager to prove themselves with odd jobs, and duking it out with rats in a basement with nothing but a leather shield.</Italian>
-		<Spanish>The Grigori gain their signature unit, the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] by assigning Greenhorns and Volunteers in their cities, hoping that one of them will rise to become a hero of the people.
+		<Spanish>The Grigori gain their signature unit, the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] by assigning Greenhorns in their cities, hoping that one of them will rise to become a hero of the people.
 
 Greenhorns are would-be Adventurers, yet to earn their cape but eager to prove themselves with odd jobs, and duking it out with rats in a basement with nothing but a leather shield.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALIST_GREENHORN_STRATEGY</Tag>
-		<English>The Grigori gain their signature unit, the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] by assigning Greenhorns and Volunteers in their cities, hoping that one of them will rise to become a hero of the people.</English>
-		<French>The Grigori gain their signature unit, the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] by assigning Greenhorns and Volunteers in their cities, hoping that one of them will rise to become a hero of the people.</French>
-		<German>The Grigori gain their signature unit, the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] by assigning Greenhorns and Volunteers in their cities, hoping that one of them will rise to become a hero of the people.</German>
-		<Italian>The Grigori gain their signature unit, the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] by assigning Greenhorns and Volunteers in their cities, hoping that one of them will rise to become a hero of the people.</Italian>
-		<Spanish>The Grigori gain their signature unit, the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] by assigning Greenhorns and Volunteers in their cities, hoping that one of them will rise to become a hero of the people.</Spanish>
+		<English>The Grigori gain their signature unit, the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] by assigning Greenhorns in their cities, hoping that one of them will rise to become a hero of the people.</English>
+		<French>The Grigori gain their signature unit, the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] by assigning Greenhorns in their cities, hoping that one of them will rise to become a hero of the people.</French>
+		<German>The Grigori gain their signature unit, the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] by assigning Greenhorns in their cities, hoping that one of them will rise to become a hero of the people.</German>
+		<Italian>The Grigori gain their signature unit, the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] by assigning Greenhorns in their cities, hoping that one of them will rise to become a hero of the people.</Italian>
+		<Spanish>The Grigori gain their signature unit, the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] by assigning Greenhorns in their cities, hoping that one of them will rise to become a hero of the people.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALIST_VOLUNTEER</Tag>

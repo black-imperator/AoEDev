@@ -16400,7 +16400,7 @@
 			<Description>TXT_KEY_PROMOTION_CREEPING_DEAD_EFFECT</Description>
 			<bAutoAcquire>1</bAutoAcquire>
 			<bNoXP>1</bNoXP>
-			<iInvisibleLevel>3</iInvisibleLevel>
+			<iInvisibleLevel>1</iInvisibleLevel>
 			<PrereqPromotionANDs>
 				<PrereqPromotionAND>
 					<PromotionType>PROMOTION_CREEPING_DEAD</PromotionType>

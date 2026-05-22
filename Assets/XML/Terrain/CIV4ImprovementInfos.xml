@@ -1476,6 +1476,11 @@
 			<iAdvancedStartCost>24</iAdvancedStartCost>
 			<iAirBombDefense>5</iAirBombDefense>
 			<iPillageGold>10</iPillageGold>
+			<YieldChanges>
+				<iYieldChange>1</iYieldChange>
+				<iYieldChange>0</iYieldChange>
+				<iYieldChange>0</iYieldChange>
+			</YieldChanges>
 			<BonusTypeStructs>
 				<BonusTypeStruct>
 					<BonusType>BONUS_COW</BonusType>
@@ -1569,6 +1574,14 @@
 						<iYield>0</iYield>
 						<iYield>1</iYield>
 						<iYield>0</iYield>
+					</TechYields>
+				</TechYieldChange>
+				<TechYieldChange>
+					<PrereqTech>TECH_STIRRUPS</PrereqTech>
+					<TechYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
 					</TechYields>
 				</TechYieldChange>
 			</TechYieldChanges>
