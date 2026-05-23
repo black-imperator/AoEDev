@@ -23,11 +23,6 @@ import os
 import CvPath # path to current assets
 import inspect
 
-# Global dictionary to track which players have built the project
-g_projectLocalHeroBuilt = {}
-
-
-
 def getLocalHeroUnitType(pPlayer):
 	"""
 	Returns the Unit Type to summon as a Local Hero based on the player's civilization.
@@ -45,7 +40,7 @@ def getLocalHeroUnitType(pPlayer):
 		git("CIVILIZATION_ARCHOS"): git("UNIT_GIANT_SPIDER"),
 		git("CIVILIZATION_AUSTRIN"): git("UNIT_TRACKER"),
 		git("CIVILIZATION_BALSERAPHS"): git("UNIT_MIMIC"),
-		git("CIVILIZATION_BANNOR"): git("UNIT_HORSE_ARCHER"),
+		git("CIVILIZATION_BANNOR"): git("UNIT_CHAMPION"),
 		git("CIVILIZATION_CALABIM"): git("UNIT_VAMPIRE"),
 		git("CIVILIZATION_CHISLEV"): git("UNIT_COMMANDER_CHISLEV_WARCHIEF"),
 		git("CIVILIZATION_CLAN_OF_EMBERS"): git("UNIT_WAR_BOSS"),
@@ -54,7 +49,7 @@ def getLocalHeroUnitType(pPlayer):
 		git("CIVILIZATION_ELOHIM"): git("UNIT_EVANGELIST"),
 		git("CIVILIZATION_GRIGORI"): git("UNIT_DRAGON_SLAYER"),
 		git("CIVILIZATION_HIPPUS"): git("UNIT_HORSE_ARCHER"),
-		git("CIVILIZATION_ILLIANS"): git("UNIT_HORSE_ARCHER"),
+		git("CIVILIZATION_ILLIANS"): git("UNIT_ICE_ELEMENTAL"),
 		git("CIVILIZATION_INFERNAL"): git("UNIT_SECT_OF_FLIES"),
 		git("CIVILIZATION_KHAZAD"): git("UNIT_DWARVEN_DEFENDER"),
 		git("CIVILIZATION_KURIOTATES"): git("UNIT_CENTAUR_ARCHER"),
@@ -76,16 +71,17 @@ def getLocalHeroUnitType(pPlayer):
 		git("CIVILIZATION_TEUHALI"): git("UNIT_HORSE_ARCHER"),
 		# Aos Ni Sira Module
 		git("CIVILIZATION_AOSNISIRA"): git("UNIT_AOSNISIRA_BEASTNIEOLAS"),
-		git("CIVILIZATION_COURTOFFALYN"): git("UNIT_HORSE_ARCHER"),
-		git("CIVILIZATION_COURTOFBEY"): git("UNIT_HORSE_ARCHER"),
+		git("CIVILIZATION_COURTOFFALYN"): git("UNIT_STARFAE"),
+		git("CIVILIZATION_COURTOFBEY"): git("UNIT_HORSE_ARCHER_FAIRY"),
+		git("CIVILIZATION_COURTOFMISRAK"): git("UNIT_STARFAE"),
 		# Dural Module
-  		git("CIVILIZATION_DURAL"): git("UNIT_HORSE_ARCHER"),
+  		git("CIVILIZATION_DURAL"): git("UNIT_CHAMPION"),
 		# Namko Module
 		git("CIVILIZATION_NAMKO"): git("UNIT_NAMKO_ICHORIAN"),
 		# Frozen Module
-		git("CIVILIZATION_FROZEN"): git("UNIT_HORSE_ARCHER"),
+		git("CIVILIZATION_FROZEN"): git("UNIT_ICE_ELEMENTAL"),
 		# Goblin Module
-		git("CIVILIZATION_GOBLIN"): git("UNIT_HORSE_ARCHER"),
+		git("CIVILIZATION_GOBLIN"): git("UNIT_GOBLIN_WOLF_ARCHER"),
 		# Hamstalfar Module
 		git("CIVILIZATION_HAMSTALFAR"): git("UNIT_WAYLAYER"),
 		# Jotnar Module
@@ -147,7 +143,7 @@ def onProjectBuilt(self, argsList):
 		addPopup(CyTranslator().getText("TXT_KEY_PROJECT_SUMMON_LOCAL_HERO_POPUP",()), 'Modules\NormalModules\DrackLocalHero\Art\LocalHeroPopup.dds')
 	
 	# Mark the project as built for this player
-	g_projectLocalHeroBuilt[iPlayer] = True
+	pPlayer.setHasFlag(git("FLAG_LOCALHERO"), True)
 
 # CVGameUtils.py for reference
 def cannotCreate(self,argsList):
@@ -167,7 +163,7 @@ def cannotCreate(self,argsList):
 		return False
 
 	# Check if the player has already built this project
-	if g_projectLocalHeroBuilt.get(iPlayer, False):
+	if pPlayer.isHasFlag(git("FLAG_LOCALHERO")):
 		return True
 
 	return False
