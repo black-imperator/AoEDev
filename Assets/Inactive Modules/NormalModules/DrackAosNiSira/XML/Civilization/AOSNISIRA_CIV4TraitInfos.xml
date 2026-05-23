@@ -266,16 +266,16 @@
 			<Civilopedia>TXT_KEY_TRAIT_COURT_OF_BEY_PEDIA</Civilopedia>
 			<ShortDescription>TXT_KEY_TRAIT_COURT_OF_BEY_SHORT</ShortDescription>
 			<bSelectable>0</bSelectable>
-			<SpecialistClassHappinessChanges>
-				<SpecialistClassHappinessChange>
-					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+			<SpecialistHappinessChanges>
+				<SpecialistHappinessChange>
+					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
 					<iHappiness>1</iHappiness>
-				</SpecialistClassHappinessChange>
-				<SpecialistClassHappinessChange>
-					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
+				</SpecialistHappinessChange>
+				<SpecialistHappinessChange>
+					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
 					<iHappiness>1</iHappiness>
-				</SpecialistClassHappinessChange>
-			</SpecialistClassHappinessChanges>
+				</SpecialistHappinessChange>
+			</SpecialistHappinessChanges>
         </TraitInfo>
 		<TraitInfo> <!-- Court of Misrak -->
             <Type>TRAIT_COURT_OF_MISRAK</Type>
@@ -289,12 +289,44 @@
 				<SpecialistCommerceChange>
 					<SpecialistType>SPECIALIST_SLAVE</SpecialistType>
 					<CommerceChanges>
-						<iCommerce>0</iCommerce>
+						<iCommerce>1</iCommerce>
 						<iCommerce>-1</iCommerce>
 						<iCommerce>0</iCommerce>
 					</CommerceChanges>
 				</SpecialistCommerceChange>
 			</SpecialistCommerceChanges>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_SLAVER</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
+			</FreePromotions>
+            <FreePromotionUnitCombats>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+			</FreePromotionUnitCombats>
         </TraitInfo>
 		<TraitInfo> <!-- House Fane -->
             <Type>TRAIT_HOUSE_FANE</Type>
@@ -332,16 +364,16 @@
 			<ShortDescription>TXT_KEY_TRAIT_HOUSE_PESNA_SHORT</ShortDescription>
 			<bSelectable>0</bSelectable>
 			<iHealth>-2</iHealth>
-			<SpecialistClassCommerceChanges>
-				<SpecialistClassCommerceChange>
-					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
+			<SpecialistCommerceChanges>
+				<SpecialistCommerceChange>
+					<SpecialistType>SPECIALIST_HEALER</SpecialistType>
 					<CommerceChanges>
 						<iCommerce>2</iCommerce>
 						<iCommerce>0</iCommerce>
 						<iCommerce>0</iCommerce>
 					</CommerceChanges>
-				</SpecialistClassCommerceChange>
-			</SpecialistClassCommerceChanges>
+				</SpecialistCommerceChange>
+			</SpecialistCommerceChanges>
 			<ExtraBuildingClasses>
 				<ExtraBuildingClass>
 					<BuildingClassType>BUILDINGCLASS_FAIRY_HOUSE_OF_COMMERCE</BuildingClassType>
@@ -649,6 +681,72 @@
 					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
 				</FreePromotionUnitCombat>
 			</FreePromotionUnitCombats>
+        </TraitInfo>
+		<TraitInfo> <!-- Fairy Refugee -->
+            <Type>TRAIT_FAIRY_REFUGEE</Type>
+			<TraitClass>TRAITCLASS_PERSONALITY</TraitClass>
+			<Description>TXT_KEY_TRAIT_FAIRY_REFUGEE</Description>
+			<Civilopedia>TXT_KEY_TRAIT_FAIRY_REFUGEE_PEDIA</Civilopedia>
+			<ShortDescription>TXT_KEY_TRAIT_FAIRY_REFUGEE_SHORT</ShortDescription>
+			<bSelectable>0</bSelectable>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_RACE_FAIRY</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
+			</FreePromotions>
+            <FreePromotionUnitCombats>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+			</FreePromotionUnitCombats>
+			<ExtraBuildingClasses>
+				<ExtraBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_WELL</BuildingClassType>
+					<BuildingType>BUILDING_FAIRY_WELL</BuildingType>
+				</ExtraBuildingClass>
+				<ExtraBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_FAIRY_RING</BuildingClassType>
+					<BuildingType>BUILDING_FAIRY_RING</BuildingType>
+				</ExtraBuildingClass>
+				<ExtraBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_MONUMENT</BuildingClassType>
+					<BuildingType>BUILDING_FAIRY_PILLAR</BuildingType>
+				</ExtraBuildingClass>
+			</ExtraBuildingClasses>
         </TraitInfo>
     </TraitInfos>
 </Civ4TraitInfos>

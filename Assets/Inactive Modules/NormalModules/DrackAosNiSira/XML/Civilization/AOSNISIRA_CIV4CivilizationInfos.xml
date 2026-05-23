@@ -1013,6 +1013,34 @@
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
 				<City>Misrak</City>
+				<City>Draumskugg</City>
+				<City>Valhildr</City>
+				<City>Skaldvegr</City>
+				<City>Hjartfylgja</City>
+				<City>Galdrheim</City>
+				<City>Nidfjall</City>
+				<City>Vetrhol</City>
+				<City>Myrkrvid</City>
+				<City>Hugskoti</City>
+				<City>Bjartfell</City>
+				<City>Dauoak</City>
+				<City>Frimarv</City>
+				<City>Grimmholl</City>
+				<City>Hildrsker</City>
+				<City>Jotunvang</City>
+				<City>Lokaborg</City>
+				<City>Munadale</City>
+				<City>Ranvik</City>
+				<City>Skaldborg</City>
+				<City>Thrymsker</City>
+				<City>Vigfjell</City>
+				<City>Ylgrhol</City>
+				<City>Austri</City>
+				<City>Baldrsheim</City>
+				<City>Eirvang</City>
+				<City>Fenrisvag</City>
+				<City>Gullfoss</City>
+				<City>Hafnarborg</City>
 			</Cities>
 			<Buildings>
 				<Building>
@@ -1172,6 +1200,24 @@
 			<CivTrait>TRAIT_COURT_OF_MISRAK</CivTrait>
 			<Hero>UNIT_FAIRY_ALIN</Hero>
 			<DefaultRace>PROMOTION_RACE_FAIRY</DefaultRace>
+		</CivilizationInfo>
+		<CivilizationInfo>
+			<Type>CIVILIZATION_CHISLEV</Type>
+			<Leaders>
+				<Leader>
+					<LeaderName>LEADER_FAIRY_ISKAYA</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
+			</Leaders>
+		</CivilizationInfo>
+		<CivilizationInfo>
+			<Type>CIVILIZATION_ELOHIM</Type>
+			<Leaders>
+				<Leader>
+					<LeaderName>LEADER_FAIRY_EIRENE</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
+			</Leaders>
 		</CivilizationInfo>
 	</CivilizationInfos>
 </Civ4CivilizationInfos>

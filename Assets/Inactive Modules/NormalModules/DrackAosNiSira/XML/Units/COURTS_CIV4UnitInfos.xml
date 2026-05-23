@@ -849,9 +849,6 @@
 			<Description>TXT_KEY_UNIT_FAIRY_CANDYFAE</Description>
 			<Civilopedia>TXT_KEY_UNIT_FAIRY_CANDYFAE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_FAIRY_CANDYFAE_STRATEGY</Strategy>
-			<UnitClassUpgrades>
-				<UnitClassUpgradeType>UNITCLASS_IMMORTAL</UnitClassUpgradeType>
-			</UnitClassUpgrades>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<bNoBadGoodies>1</bNoBadGoodies>
 			<bMilitaryHappiness>1</bMilitaryHappiness>
@@ -861,6 +858,7 @@
 				<UnitClassUpgradeType>UNITCLASS_HUNTER</UnitClassUpgradeType>
 				<UnitClassUpgradeType>UNITCLASS_THIEF</UnitClassUpgradeType>
 				<UnitClassUpgradeType>UNITCLASS_HORSEMAN</UnitClassUpgradeType>
+				<UnitClassUpgradeType>UNITCLASS_IMMORTAL</UnitClassUpgradeType>
 			</UnitClassUpgrades>
 			<UnitAIs>
 				<UnitAI>
@@ -868,7 +866,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 				<UnitAI>
-					<UnitAIType>UNITAI_TERRAFORMER</UnitAIType>
+					<UnitAIType>UNITAI_SETTLE</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
