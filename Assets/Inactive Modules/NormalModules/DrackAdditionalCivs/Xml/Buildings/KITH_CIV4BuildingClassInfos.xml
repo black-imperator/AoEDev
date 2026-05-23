@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Building Class Infos -->
+<!-- Created by Drackzahn -->
+<Civ4BuildingClassInfos xmlns="x-schema:DRACKA_CIV4BuildingsSchema.xml">
+	<BuildingClassInfos>
+		<BuildingClassInfo> <!-- Gnome Huts -->
+			<Type>BUILDINGCLASS_DRACKA_GNOME_HUTS</Type>
+			<Description>TXT_KEY_BUILDING_DRACKA_GNOME_HUTS</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_DRACKA_GNOME_HUTS</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo> <!-- Flodweard Kith -->
+			<Type>BUILDINGCLASS_DRACKA_FLODWEARD_KITH</Type>
+			<Description>TXT_KEY_BUILDING_DRACKA_FLODWEARD_KITH</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_DRACKA_FLODWEARD_KITH</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo> <!-- Nettere Kith -->
+			<Type>BUILDINGCLASS_DRACKA_NETTERE_KITH</Type>
+			<Description>TXT_KEY_BUILDING_DRACKA_NETTERE_KITH</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_DRACKA_NETTERE_KITH</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo> <!-- Tol Kith -->
+			<Type>BUILDINGCLASS_DRACKA_TOL_KITH</Type>
+			<Description>TXT_KEY_BUILDING_DRACKA_TOL_KITH</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_DRACKA_TOL_KITH</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo> <!-- Delfan Kith -->
+			<Type>BUILDINGCLASS_DRACKA_DELFAN_KITH</Type>
+			<Description>TXT_KEY_BUILDING_DRACKA_DELFAN_KITH</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_DRACKA_DELFAN_KITH</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo> <!-- Feoh Kith -->
+			<Type>BUILDINGCLASS_DRACKA_FEOH_KITH</Type>
+			<Description>TXT_KEY_BUILDING_DRACKA_FEOH_KITH</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_DRACKA_HILD_KITH</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo> <!-- Hild Kith -->
+			<Type>BUILDINGCLASS_DRACKA_HILD_KITH</Type>
+			<Description>TXT_KEY_BUILDING_DRACKA_HILD_KITH</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_DRACKA_HILD_KITH</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo> <!-- Pwerdy -->
+			<Type>BUILDINGCLASS_DRACKA_KITH_PWERDY</Type>
+			<Description>TXT_KEY_BUILDING_DRACKA_KITH_PWERDY</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_DRACKA_KITH_PWERDY</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+	</BuildingClassInfos>
+</Civ4BuildingClassInfos>

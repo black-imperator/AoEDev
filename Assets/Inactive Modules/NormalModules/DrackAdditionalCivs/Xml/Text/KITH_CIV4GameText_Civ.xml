@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Risna -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_CIV_DRACKA_EADIG_KITH_NAME</Tag>
+        <English>Eadig Kith</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_DRACKA_EADIG_KITH_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_DRACKA_EADIG_KITH_STRATEGY</Tag>
+        <English>
+Complexity: Advanced
+In unity lays our size!
+[H2]General[\H2]
+- Your cities have a 1 Tile Radius only. You will need to place them close together and build more cities than with other Civs.
+- Each City specializes on one Kith.
+- Your Army is split between normal Units and the Hero and national Units. Normal Units are weaker, while your hero and national units are stronger.
+[H2]Kith System[\H2]
+- Each City specializes on one Kith. Build the Kith Buildings for that.
+- Flodweard Kith: Cities with River Tiles and focus on Food production.
+- Nettere Kith: Cities on Coasts with strong Water Tile focus.
+- Tol Kith: Cities with focus on Research, Mutations and Magic.
+- Delfan Kith: Cities with focus on Mines, Production and Siege Weapons.
+- Feoh Kith: Cities with Trade focus.
+- Hild Kith: Cities with Military production focus.
+[H2]Army[\H2]
+- Your normal Units are weaker due to the Kith Militia promotion.
+- Your Heroes and National Unique Units are stronger due to the Kith Ealdor promotion.
+- Use your normal units as meatshields while protecting your strong elite Units.
+        </English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_DRACKA_KITH</Tag>
+        <English>Kith Tribal System</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_DRACKA_KITH_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_DRACKA_KITH_SHORT</Tag>
+        <English>Kts</English>
+    </TEXT>
+</Civ4GameText>

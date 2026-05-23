@@ -1,0 +1,84 @@
+<?xml version="1.0" ?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Promotion Infos -->
+<Civ4PromotionInfos xmlns="x-schema:DRACKA_CIV4UnitSchema.xml">
+	<PromotionInfos>
+		<PromotionInfo> <!-- Gnome Species Promotion -->
+			<Type>PROMOTION_GNOME</Type>
+			<Description>Gnome</Description>
+			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Promotions\GnomeRace.dds</Button> 
+			<bRace>1</bRace>
+			<UnitArtStyleType>UNIT_ARTSTYLE_DWARF</UnitArtStyleType>
+			<DamageTypeResists>
+				<DamageTypeResist>
+					<DamageType>DAMAGE_POISON</DamageType>
+					<iResist>50</iResist>
+				</DamageTypeResist>
+			</DamageTypeResists>
+			<bImmuneToFirstStrikes>1</bImmuneToFirstStrikes>
+		</PromotionInfo>
+		<PromotionInfo> <!-- Kith Militia -->
+			<Type>PROMOTION_KITH_MILITIA</Type>
+			<Description>Kith Militia</Description>
+			<bFreeUnit>1</bFreeUnit>
+			<iMinLevel>-1</iMinLevel>
+			<iCombatPercent>-25</iCombatPercent>
+			<iExtraCombatStr>-1</iExtraCombatStr>
+			<iExtraCombatDefense>-1</iExtraCombatDefense>
+			<PromotionAllows>
+				<Promotion>PROMOTION_CITY_GARRISON1</Promotion>
+			</PromotionAllows>
+			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Promotions\KithMilitia.dds</Button>
+		</PromotionInfo>
+		<PromotionInfo> <!-- Kith Ealdor -->
+			<Type>PROMOTION_KITH_EALDOR</Type>
+			<Description>Kith Ealdor</Description>
+			<fFreeXPCap>75</fFreeXPCap>
+			<iFreeXPPerTurn>1</iFreeXPPerTurn>
+			<iMinLevel>-1</iMinLevel>
+			<iCombatPercent>35</iCombatPercent>
+			<iFirstStrikesChange>1</iFirstStrikesChange>
+			<iChanceFirstStrikesChange>2</iChanceFirstStrikesChange>
+			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Promotions\KithEaldor.dds</Button>
+			<PromotionExcludes>
+				<Promotion>PROMOTION_DEADLY_MISHAP</Promotion>
+				<Promotion>PROMOTION_HEROIC</Promotion>
+			    <Promotion>PROMOTION_MILITIA</Promotion>
+				<Promotion>PROMOTION_ESTRANGED</Promotion>
+				<Promotion>PROMOTION_KITH_MILITIA</Promotion>
+			</PromotionExcludes>
+			<PromotionOverwrites>
+				<Promotion>PROMOTION_HEROIC</Promotion>
+			    <Promotion>PROMOTION_MILITIA</Promotion>
+				<Promotion>PROMOTION_ESTRANGED</Promotion>
+				<Promotion>PROMOTION_KITH_MILITIA</Promotion>
+			</PromotionOverwrites>
+			<PromotionAllows>
+				<Promotion>PROMOTION_HEROIC_DEFENSE</Promotion>
+				<Promotion>PROMOTION_HEROIC_STRENGTH</Promotion>
+			</PromotionAllows>
+			<iGroupSize>1</iGroupSize>
+		</PromotionInfo>
+		<PromotionInfo> <!-- Heroic additions -->
+			<Type>PROMOTION_HEROIC</Type>
+			<PromotionExcludes>
+				<Promotion>PROMOTION_KITH_MILITIA</Promotion>
+			</PromotionExcludes>
+			<PromotionOverwrites>
+				<Promotion>PROMOTION_KITH_MILITIA</Promotion>
+			</PromotionOverwrites>
+		</PromotionInfo>
+		<PromotionInfo> <!-- Hero additions -->
+			<Type>PROMOTION_HERO</Type>
+			<PromotionExcludes>
+				<Promotion>PROMOTION_KITH_MILITIA</Promotion>
+			</PromotionExcludes>
+			<PromotionOverwrites>
+				<Promotion>PROMOTION_KITH_MILITIA</Promotion>
+			</PromotionOverwrites>
+		</PromotionInfo>
+	</PromotionInfos>
+</Civ4PromotionInfos>

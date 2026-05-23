@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Firaxis Games (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Color Vals -->
+<Civ4ColorVals xmlns="x-schema:DRACKA_CIV4InterfaceSchema.xml">
+	<ColorVals>
+		<ColorVal>
+			<Type>COLOR_PLAYER_KITH</Type>
+			<fRed>1.00</fRed>
+			<fGreen>0.58</fGreen>
+			<fBlue>0.39</fBlue>
+			<fAlpha>1.00</fAlpha>
+		</ColorVal>
+		<ColorVal>
+			<Type>COLOR_PLAYER_KITH_SECONDARY</Type>
+			<fRed>0.00</fRed>
+			<fGreen>0.00</fGreen>
+			<fBlue>0.00</fBlue>
+			<fAlpha>1.00</fAlpha>
+		</ColorVal>
+	</ColorVals>
+</Civ4ColorVals>
