@@ -18,7 +18,7 @@
 				<CityBonus>
 					<bApplySelf>1</bApplySelf>
 					<bApplyTeam>1</bApplyTeam>
-					<fCrime>-3</fCrime>
+					<fCrime>-8</fCrime>
 					<iBonusRange>0</iBonusRange>
 				</CityBonus>
 			</CityBonuses>

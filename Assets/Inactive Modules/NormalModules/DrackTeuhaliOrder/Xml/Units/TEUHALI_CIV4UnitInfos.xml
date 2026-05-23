@@ -58,9 +58,14 @@
 					<PromotionType>PROMOTION_HEAVY</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_PATROL1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
 			</FreePromotions>
 			<iTier>2</iTier>
 			<iWeaponTierMax>3</iWeaponTierMax>
+			<bNeverObsolete>1</bNeverObsolete>
 		</UnitInfo>
 		<UnitInfo> 			<!-- Doppelhaender -->        	<!-- Champion UU -->
 			<Class>UNITCLASS_PIKEMAN</Class>
@@ -209,6 +214,7 @@
 			<Civilopedia>TXT_KEY_UNIT_TEUHALI_DIETRICH_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_TEUHALI_DIETRICH_MILITARY_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
+			<iMagicalPower>150</iMagicalPower>
 			<UnitClassUpgrades>
 				<UnitClassUpgradeType>UNITCLASS_TEUHALI_DIETRICH_ASCENDED</UnitClassUpgradeType>
 			</UnitClassUpgrades>
@@ -269,6 +275,18 @@
 					<PromotionType>PROMOTION_IMMORTAL</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_DIVINE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_CHANNELING1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_CHANNELING2</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
 			</FreePromotions>
 			<iTier>1</iTier>
 			<iWeaponTierMax>3</iWeaponTierMax>
@@ -285,6 +303,7 @@
 			<Civilopedia>TXT_KEY_UNIT_TEUHALI_DIETRICH_ASCENDED_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_TEUHALI_DIETRICH_MILITARY_ASCENDED_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
+			<iMagicalPower>250</iMagicalPower>
 			<bMilitaryHappiness>1</bMilitaryHappiness>
 			<bMilitaryProduction>1</bMilitaryProduction>
 			<bPillage>1</bPillage>
@@ -313,7 +332,7 @@
 			</UnitAIs>
 			<iAIWeight>0</iAIWeight>
 			<iCost>-1</iCost>
-			<iMoves>1</iMoves>
+			<iMoves>2</iMoves>
 			<iCombat>5</iCombat>
 			<iCombatDefense>3</iCombatDefense>
 			<iFirstStrikes>1</iFirstStrikes>
@@ -522,6 +541,7 @@
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
 			<bPillage>1</bPillage>
+			<iMagicalPower>150</iMagicalPower>
 			<UnitClassUpgrades>
 				<UnitClassUpgradeType>UNITCLASS_MAGE</UnitClassUpgradeType>
 				<UnitClassUpgradeType>UNITCLASS_SPEARMAN</UnitClassUpgradeType>
