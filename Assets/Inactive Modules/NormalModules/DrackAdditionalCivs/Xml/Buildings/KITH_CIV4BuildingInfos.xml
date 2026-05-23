@@ -202,12 +202,12 @@
                 <iCommerce>3</iCommerce>
                 <iCommerce>0</iCommerce>
             </CommerceChanges>
-            <SpecialistCounts>
-                <SpecialistCount>
-                    <SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-                    <iSpecialistCount>2</iSpecialistCount>
-                </SpecialistCount>
-            </SpecialistCounts>
+            <SpecialistClassCounts>
+                <SpecialistClassCounts>
+                    <SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
+                    <iSpecialistClassCount>2</iSpecialistClassCount>
+                </SpecialistClassCounts>
+            </SpecialistClassCounts>
             <iCost>120</iCost>
             <PrereqTech>TECH_EDUCATION</PrereqTech>
             <Flavors>
@@ -255,7 +255,7 @@
             <ImprovementFreeSpecialists>
                 <ImprovementFreeSpecialist>
                     <ImprovementType>IMPROVEMENT_MINE</ImprovementType>
-                    <iFreeSpecialistCount>1</iFreeSpecialistCount>
+                    <iFreeSpecialistClassCount>1</iFreeSpecialistClassCount>
                 </ImprovementFreeSpecialist>
             </ImprovementFreeSpecialists>
 			<FreePromotion>PROMOTION_HARDY1</FreePromotion>
@@ -431,12 +431,12 @@
 				<iCommerce>0</iCommerce>
 			</CommerceChanges>
             <FreePromotion>PROMOTION_MUTATED</FreePromotion>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-					<iSpecialistCount>2</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCounts>
+					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
+					<iSpecialistClassCount>2</iSpecialistClassCount>
+				</SpecialistClassCounts>
+			</SpecialistClassCounts>
 			<ConstructSound>AS2D_BUILD_LABORATORY</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -483,22 +483,22 @@
 				<iCommerce>6</iCommerce>
 				<iCommerce>0</iCommerce>
 			</CommerceChanges>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-					<iSpecialistCount>2</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
-            <LocalSpecialistCommerceChanges>
-				<LocalSpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+			<SpecialistClassCounts>
+				<SpecialistClassCounts>
+					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
+					<iSpecialistClassCount>2</iSpecialistClassCount>
+				</SpecialistClassCounts>
+			</SpecialistClassCounts>
+            <LocalSpecialistClassCommerceChanges>
+				<LocalSpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
 					<CommerceChanges>
 						<iCommerce>0</iCommerce>
 						<iCommerce>1</iCommerce>
 						<iCommerce>0</iCommerce>
 					</CommerceChanges>
-				</LocalSpecialistCommerceChange>
-			</LocalSpecialistCommerceChanges>
+				</LocalSpecialistClassCommerceChange>
+			</LocalSpecialistClassCommerceChanges>
 			<ConstructSound>AS2D_BUILD_LIBRARY</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -748,12 +748,12 @@
                 <iYield>0</iYield>
                 <iYield>0</iYield>
             </YieldChanges>
-            <SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+            <SpecialistClassCounts>
+				<SpecialistClassCounts>
+					<SpecialistClass>SPECIALISTCLASS_MERCHANT</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCounts>
+			</SpecialistClassCounts>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GROWTH</FlavorType>
@@ -847,12 +847,12 @@
 					</YieldModifiers>
 				</BonusYieldModifier>
 			</BonusYieldModifiers>
-            <SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+            <SpecialistClassCounts>
+				<SpecialistClassCounts>
+					<SpecialistClass>SPECIALISTCLASS_MERCHANT</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCounts>
+			</SpecialistClassCounts>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GROWTH</FlavorType>
@@ -887,12 +887,12 @@
                 <iYield>0</iYield>
                 <iYield>0</iYield>
             </YieldChanges>
-            <SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_HEALER</SpecialistType>
-					<iSpecialistCount>2</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+            <SpecialistClassCounts>
+				<SpecialistClassCounts>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
+					<iSpecialistClassCount>2</iSpecialistClassCount>
+				</SpecialistClassCounts>
+			</SpecialistClassCounts>
 			<ConstructSound>AS2D_BUILD_AQUEDUCT</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -996,12 +996,12 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 			</CommerceChanges>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCounts>
+					<SpecialistClass>SPECIALISTCLASS_MERCHANT</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCounts>
+			</SpecialistClassCounts>
 			<ConstructSound>AS2D_BUILD_MARKETPLACE</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -1041,12 +1041,12 @@
 				<iYield>10</iYield>
 				<iYield>0</iYield>
 			</PowerYieldModifiers>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCounts>
+					<SpecialistClass>SPECIALISTCLASS_ENGINEER</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCounts>
+			</SpecialistClassCounts>
 			<iAIWeight>40</iAIWeight>
 			<iCost>160</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -1099,12 +1099,12 @@
 				<iYield>25</iYield>
 				<iYield>0</iYield>
 			</PowerYieldModifiers>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-					<iSpecialistCount>2</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCounts>
+					<SpecialistClass>SPECIALISTCLASS_ENGINEER</SpecialistClass>
+					<iSpecialistClassCount>2</iSpecialistClassCount>
+				</SpecialistClassCounts>
+			</SpecialistClassCounts>
 			<ConstructSound>AS2D_BUILD_FORGE</ConstructSound>
 			<BonusHappinessChanges>
 				<BonusHappinessChange>
@@ -1144,12 +1144,12 @@
 			<iAsset>2</iAsset>
 			<iPower>1</iPower>
 			<fVisibilityPriority>1</fVisibilityPriority>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistClassCounts>
+				<SpecialistClassCounts>
+					<SpecialistClass>SPECIALISTCLASS_ENGINEER</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCounts>
+			</SpecialistClassCounts>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
