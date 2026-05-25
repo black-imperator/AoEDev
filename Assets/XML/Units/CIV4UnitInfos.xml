@@ -31383,6 +31383,7 @@
 				<UnitClassUpgradeType>UNITCLASS_ADEPT</UnitClassUpgradeType>
 				<UnitClassUpgradeType>UNITCLASS_WARRIOR</UnitClassUpgradeType>
 				<UnitClassUpgradeType>UNITCLASS_SCOUT</UnitClassUpgradeType>
+				<UnitClassUpgradeType>UNITCLASS_GRIGORI_MEDIC</UnitClassUpgradeType>
 			</UnitClassUpgrades>
 			<UnitAIs>
 				<UnitAI>

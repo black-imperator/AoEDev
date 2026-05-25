@@ -9696,10 +9696,6 @@
 			</PrereqCivilizations>
 			<UnitCombats>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
-					<iMaxApplications>0</iMaxApplications>
-				</UnitCombat>
-				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
@@ -36869,9 +36865,6 @@
 			<PrereqUnits>
 				<PrereqUnit>UNIT_ASPIRANT</PrereqUnit>
 			</PrereqUnits>
-			<PrereqTraits>
-				<PrereqTrait>TRAIT_HUMANIST1</PrereqTrait>
-			</PrereqTraits>
 			<Button>Art/Interface/Buttons/Promotions/Civs/Mekara/Ascension1.dds</Button>
 			<iResistMagic>20</iResistMagic>
 			<DamageTypeResists>
@@ -36901,9 +36894,6 @@
 			<PrereqUnits>
 				<PrereqUnit>UNIT_ASPIRANT</PrereqUnit>
 			</PrereqUnits>
-			<PrereqTraits>
-				<PrereqTrait>TRAIT_HUMANIST1</PrereqTrait>
-			</PrereqTraits>
 			<PrereqMinAge>35</PrereqMinAge>
 			<Button>Art/Interface/Buttons/Promotions/Civs/Mekara/Ascension2.dds</Button>
 			<iCollateralDamageProtection>20</iCollateralDamageProtection>
@@ -36919,9 +36909,6 @@
 			<PrereqUnits>
 				<PrereqUnit>UNIT_ASPIRANT</PrereqUnit>
 			</PrereqUnits>
-			<PrereqTraits>
-				<PrereqTrait>TRAIT_HUMANIST1</PrereqTrait>
-			</PrereqTraits>
 			<PrereqMinAge>75</PrereqMinAge>
 			<Button>Art/Interface/Buttons/Promotions/Civs/Mekara/Ascension3.dds</Button>
 			<iCollateralDamageProtection>20</iCollateralDamageProtection>
