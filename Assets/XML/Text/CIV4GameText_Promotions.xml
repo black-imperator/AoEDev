@@ -2463,11 +2463,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_IGNORE_BUILDING_DEFENSE</Tag>
-		<English>[ICON_BULLET]Ignores terrain defense</English>
-		<French>[ICON_BULLET]Ignore la défense due au terrain</French>
-		<German>[ICON_BULLET]Ignoriert Geländeverteidigung</German>
-		<Italian>[ICON_BULLET]Ignores terrain defense</Italian>
-		<Spanish>[ICON_BULLET]Ignores terrain defense</Spanish>
+		<English>[ICON_BULLET]Ignores building defense</English>
+		<French>[ICON_BULLET]Ignore la défense due aux bâtiments</French>
+		<German>[ICON_BULLET]Ignoriert Gebäudeverteidigung</German>
+		<Italian>[ICON_BULLET]Ignores building defense</Italian>
+		<Spanish>[ICON_BULLET]Ignores building defense</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_ILLUSION</Tag>
