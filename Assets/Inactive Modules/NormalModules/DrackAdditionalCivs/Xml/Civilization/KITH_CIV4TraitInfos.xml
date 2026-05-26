@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Soren Johnson (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Leader Trait Infos -->
+<Civ4TraitInfos xmlns="x-schema:DRACKA_CIV4CivilizationsSchema.xml">
+    <TraitInfos>
+		<TraitInfo> <!-- Kith Tribal System -->
+            <Type>TRAIT_DRACKA_KITH</Type>
+			<TraitClass>TRAITCLASS_CIVILIZATION</TraitClass>
+			<Description>TXT_KEY_TRAIT_DRACKA_KITH</Description>
+			<Civilopedia>TXT_KEY_TRAIT_DRACKA_KITH_PEDIA</Civilopedia>
+			<ShortDescription>TXT_KEY_TRAIT_DRACKA_KITH_SHORT</ShortDescription>
+			<bSelectable>0</bSelectable>
+			<iDistanceMaintenanceModifier>-25</iDistanceMaintenanceModifier>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_KITH_MILITIA</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
+			</FreePromotions>
+			<FreePromotionUnitCombats>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+			</FreePromotionUnitCombats>
+        </TraitInfo>
+    </TraitInfos>
+</Civ4TraitInfos>

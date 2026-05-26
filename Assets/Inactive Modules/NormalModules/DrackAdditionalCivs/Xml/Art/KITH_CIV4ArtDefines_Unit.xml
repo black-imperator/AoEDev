@@ -1,0 +1,251 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Unit art path information -->
+<Civ4ArtDefines xmlns="x-schema:DRACKA_CIV4ArtDefinesSchema.xml">
+	<UnitArtInfos>
+		<UnitArtInfo>	<!-- Hero Edith -->
+			<Type>ART_DEF_UNIT_DRACKA_KITH_EDITH</Type>
+			<Button>Modules/NormalModules/DrackAdditionalCivs/Art/Units/Edith.dds</Button> 
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Civs/Elohim/Devout/sumerian vulture.nif</NIF>
+			<KFM>Art\animations\vulture\Unique_Sumerian_Vulture.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+			<SelectionSound>AS3D_LOSHA_SELECT</SelectionSound>
+			<ActionSound>AS3D_LOSHA_ORDER</ActionSound>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- Hero Ella -->
+			<Type>ART_DEF_UNIT_DRACKA_KITH_ELLA</Type>
+			<Button>Modules/NormalModules/DrackAdditionalCivs/Art/Units/Ella.dds</Button> 
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Civs/Elohim/Adept/IncanQuechua.nif</NIF>
+			<KFM>Art/animations/quechua/IncanQuechua blood.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+			<SelectionSound>AS3D_LOSHA_SELECT</SelectionSound>
+			<ActionSound>AS3D_LOSHA_ORDER</ActionSound>
+		</UnitArtInfo>
+		<UnitArtInfo>  <!-- Poggman -->
+			<Type>ART_DEF_UNIT_DRACKA_KITH_POGGMAN</Type>
+			<Button>Modules/NormalModules/DrackAdditionalCivs/Art/Units/Poggman.dds</Button>
+			<fScale>0.36</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Religions/Runes of Kilmorph/Soldier of Kilmorph/soldierofkilmorph.nif</NIF>
+			<KFM>Art/Units/Axeman/Axeman.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- Tinkskutend -->
+			<Type>ART_DEF_UNIT_DRACKA_KITH_TINKSKUTEND</Type>
+			<Button>Modules/NormalModules/DrackAdditionalCivs/Art/Units/Tinkskutend.dds</Button>
+			<fScale>0.36</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Civs/Khazad/Arquebus/Musketman.nif</NIF>
+			<KFM>Art/Units/Musketman/Musketman.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.05</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- Tinkerbrawlas -->
+			<Type>ART_DEF_UNIT_DRACKA_KITH_TINKERBRAWLAS</Type>
+			<Button>Modules/NormalModules/DrackAdditionalCivs/Art/Units/Tinkerbrawlas.dds</Button>
+			<fScale>0.36</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Civs/Khazad/Axeman/warrior.nif</NIF>
+			<KFM>Art/Units/Warrior/warrior.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- Brassknucklas -->
+			<Type>ART_DEF_UNIT_PHALANX</Type>
+			<Button>Modules/NormalModules/DrackAdditionalCivs/Art/Units/Brassknucklas.dds</Button> 
+			<fScale>0.36</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Civs/Khazad/ironbreaker/warrior.nif</NIF>
+			<KFM>Art/Units/warrior/warrior.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- Haligstreita -->
+			<Type>ART_DEF_UNIT_KITH_PALADIN</Type>
+			<Button>Modules/NormalModules/DrackAdditionalCivs/Art/Units/Haligstreita.dds</Button> 
+			<fScale>0.36</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Civs/Khazad/Paladin/Unique_Sumerian_Vulture.nif</NIF>
+			<KFM>Art\animations\vulture\Unique_Sumerian_Vulture blood.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+			<SelectionSound>AS3D_DWARF_SELECT</SelectionSound>
+			<ActionSound>AS3D_DWARF_ORDER</ActionSound>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- Tinkerbloomer -->
+			<Type>ART_DEF_UNIT_KITH_DRUID</Type>
+			<Button>Modules/NormalModules/DrackAdditionalCivs/Art/Units/Tinkerbloomer.dds</Button> 
+			<fScale>0.4</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Civs/Khazad/Dwarven Druid/Spearman.nif</NIF>
+			<KFM>Art/Units/Spearman/spearman.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+			<SelectionSound>AS3D_DWARF_SELECT</SelectionSound>
+			<ActionSound>AS3D_DWARF_ORDER</ActionSound>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- Wyrdbrassa -->
+			<Type>ART_DEF_UNIT_KITH_EIDOLON</Type>
+			<Button>Modules/NormalModules/DrackAdditionalCivs/Art/Units/Wyrdbrassa.dds</Button> 
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/default/Eidolon3/eidolon.nif</NIF>
+			<KFM>Art/Animations/Charlemagne_HeavySwordsman/HeavySwordsman blood.kfm</KFM>
+            <ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- Grimcog -->
+			<Type>ART_DEF_UNIT_KITH_IMMORTAL</Type>
+			<Button>Modules/NormalModules/DrackAdditionalCivs/Art/Units/Grimcog.dds</Button> 
+			<fScale>0.36</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Civs/Khazad/Immortal/axeman.nif</NIF>
+			<KFM>Art/Units/Axeman/axeman.kfm</KFM>
+			<SHADERNIF>Art/Units/Civs/Khazad/Immortal/axeman_fx.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+			<SelectionSound>AS3D_DWARF_SELECT</SelectionSound>
+			<ActionSound>AS3D_DWARF_ORDER</ActionSound>
+		</UnitArtInfo>
+	</UnitArtInfos>
+</Civ4ArtDefines>

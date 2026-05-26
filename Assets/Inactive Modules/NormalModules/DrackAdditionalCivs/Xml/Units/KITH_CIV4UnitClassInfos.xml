@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSpy v2006 sp1 U (http://www.altova.com) by Derek Paxton (None) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Jesse Smith (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- UnitClass Schema -->
+<Civ4UnitClassInfos xmlns="x-schema:DRACKA_CIV4UnitSchema.xml">
+	<UnitClassInfos>
+		<UnitClassInfo> <!-- Hero Edith -->
+			<Type>UNITCLASS_DRACKA_KITH_EDITH</Type>
+			<Description>Edith</Description>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_DRACKA_KITH_EDITH</DefaultUnit>
+			<bUnique>1</bUnique>
+		</UnitClassInfo>
+		<UnitClassInfo> <!-- Hero Ella -->
+			<Type>UNITCLASS_DRACKA_KITH_ELLA</Type>
+			<Description>Ella</Description>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_DRACKA_KITH_ELLA</DefaultUnit>
+			<bUnique>1</bUnique>
+		</UnitClassInfo>
+		<UnitClassInfo> <!-- Poggman -->
+			<Type>UNITCLASS_DRACKA_KITH_POGGMAN</Type>
+			<Description>Poggman</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>3</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_DRACKA_KITH_POGGMAN</DefaultUnit>
+			<bUnique>1</bUnique>
+		</UnitClassInfo>
+		<UnitClassInfo> <!-- Tinkskutend -->
+			<Type>UNITCLASS_DRACKA_KITH_TINKSKUTEND</Type>
+			<Description>Tinkskutend</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>3</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_DRACKA_KITH_TINKSKUTEND</DefaultUnit>
+			<bUnique>1</bUnique>
+		</UnitClassInfo>
+		<UnitClassInfo> <!-- Tinkerbrawlas -->
+			<Type>UNITCLASS_DRACKA_KITH_TINKERBRAWLAS</Type>
+			<Description>Tinkerbrawlas</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>4</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_DRACKA_KITH_TINKERBRAWLAS</DefaultUnit>
+			<bUnique>1</bUnique>
+		</UnitClassInfo>
+	</UnitClassInfos>
+</Civ4UnitClassInfos>

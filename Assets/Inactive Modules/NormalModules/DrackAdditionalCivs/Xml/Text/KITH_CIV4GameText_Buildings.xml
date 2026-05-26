@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Risna -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_DRACKA_GNOME_HUTS_NAME</Tag>
+        <English>Gnome Huts</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_DRACKA_GNOME_HUTS_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_DRACKA_GNOME_HUTS_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_PALACE_DRACKA_KITH_NAME</Tag>
+        <English>Kith Heall</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_DRACKA_PALACE_KITH_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_DRACKA_FLODWEARD_KITH</Tag>
+        <English>Flodweard Kith</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_DRACKA_FLODWEARD_KITH_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_DRACKA_FLODWEARD_KITH_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_DRACKA_NETTERE_KITH</Tag>
+        <English>Nettere Kith</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_DRACKA_NETTERE_KITH_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_DRACKA_NETTERE_KITH_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_DRACKA_TOL_KITH</Tag>
+        <English>Tol Kith</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_DRACKA_TOL_KITH_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_DRACKA_TOL_KITH_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_DRACKA_DELFAN_KITH</Tag>
+        <English>Delfan Kith</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_DRACKA_DELFAN_KITH_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_DRACKA_DELFAN_KITH_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_DRACKA_FEOH_KITH</Tag>
+        <English>Feoh Kith</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_DRACKA_FEOH_KITH_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_DRACKA_FEOH_KITH_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_DRACKA_HILD_KITH</Tag>
+        <English>Hild Kith</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_DRACKA_HILD_KITH_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_DRACKA_HILD_KITH_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_DRACKA_FLODWEARD_KITH_HELP</Tag>
+        <English>[ICON_BULLET]Specialize the city using rivers</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_DRACKA_NETTERE_KITH_HELP</Tag>
+        <English>[ICON_BULLET]Specialize the city in coastal usages</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_DRACKA_TOL_KITH_HELP</Tag>
+        <English>[ICON_BULLET]Specialize the city in research and mutations</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_DRACKA_DELFAN_KITH_HELP</Tag>
+        <English>[ICON_BULLET]Specialize the city in production, siege and mining</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_DRACKA_FEOH_KITH_HELP</Tag>
+        <English>[ICON_BULLET]Specialize the city in trade</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_DRACKA_HILD_KITH_HELP</Tag>
+        <English>[ICON_BULLET]Specialize the city military</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_KITH_MAGE_GUILD</Tag>
+        <English>Seidhall</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_KITH_BUILDING_ALCHEMY_LAB</Tag>
+        <English>Wicce Hall</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_KITH_LIBRARY</Tag>
+        <English>Bocern Hord</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_KITH_LIGHTHOUSE</Tag>
+        <English>Beacon</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_KITH_SHIPYARD</Tag>
+        <English>Skipwright</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_KITH_HARBOR</Tag>
+        <English>Porth</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_KITH_GRANARY</Tag>
+        <English>Korenloft</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_KITH_SMOKEHOUSE</Tag>
+        <English>Smocrook</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_KITH_PUBLIC_BATHS</Tag>
+        <English>Stroombad</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_KITH_INN</Tag>
+        <English>Gastihuz</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_KITH_GAMBLING_HOUSE</Tag>
+        <English>Kroeg</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_KITH_MONEYCHANGER</Tag>
+        <English>Feohwende</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_KITH_SIEGE_WORKSHOP</Tag>
+        <English>Timmermanstraat</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_KITH_FORGE</Tag>
+        <English>Fabriek</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_DRACKA_KITH_PWERDY</Tag>
+        <English>Pwerdy</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_KITH_HUNTERS_HALL</Tag>
+        <English>Kampplaats</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_KITH_TRAINING_YARD</Tag>
+        <English>Ymarferfa</English>
+    </TEXT>
+</Civ4GameText>

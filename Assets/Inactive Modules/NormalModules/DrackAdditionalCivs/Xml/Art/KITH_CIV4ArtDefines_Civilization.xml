@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Firaxis Games (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Civilization art path information -->
+<Civ4ArtDefines xmlns="x-schema:DRACKA_CIV4ArtDefinesSchema.xml">
+	<CivilizationArtInfos>
+		<CivilizationArtInfo>
+			<Type>ART_DEF_CIVILIZATION_DRACKA_EADIG_KITH</Type> <!-- TODO -->
+			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Flag\KithFlag.dds</Button>
+			<Path>Modules\NormalModules\DrackAdditionalCivs\Art\Flag\KithFlagTransparent.dds</Path>
+			<bWhiteFlag>0</bWhiteFlag>
+		</CivilizationArtInfo>
+	</CivilizationArtInfos>
+</Civ4ArtDefines>

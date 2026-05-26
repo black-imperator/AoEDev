@@ -1,0 +1,260 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Jason Winokur (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Building art path information -->
+<Civ4ArtDefines xmlns="x-schema:DRACKA_CIV4ArtDefinesSchema.xml">
+	<BuildingArtInfos>
+		<BuildingArtInfo> <!-- Palace -->
+			<Type>ART_DEF_BUILDING_PALACE_DRACKA_KITH</Type> 
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Tower of Necromancy/towerofnecromancy.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Buildings\KithPalace.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Gnome Huts -->
+			<Type>ART_DEF_BUILDING_PALACE_DRACKA_GNOME_HUTS</Type> 
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Tower of Necromancy/towerofnecromancy.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Buildings\GnomeHuts.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Flodweard Kith -->
+			<Type>ART_DEF_BUILDING_PALACE_DRACKA_FLODWEARD_KITH</Type> 
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Tower of Necromancy/towerofnecromancy.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Buildings\FloodweardKith.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Nettere Kith -->
+			<Type>ART_DEF_BUILDING_PALACE_DRACKA_NETTERE_KITH</Type> 
+			<LSystem>LSYSTEM_HARBOR</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>1.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Harbor/Harbor.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Buildings\NettereKith.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Tol Kith -->
+			<Type>ART_DEF_BUILDING_PALACE_DRACKA_TOL_KITH</Type> 
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Tower of Necromancy/towerofnecromancy.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Buildings\TolKith.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Delfan Kith -->
+			<Type>ART_DEF_BUILDING_PALACE_DRACKA_DELFAN_KITH</Type> 
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Tower of Necromancy/towerofnecromancy.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Buildings\DelfanKith.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Feoh Kith -->
+			<Type>ART_DEF_BUILDING_PALACE_DRACKA_FEOH_KITH</Type> 
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Tower of Necromancy/towerofnecromancy.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Buildings\FeohKith.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Hild Kith -->
+			<Type>ART_DEF_BUILDING_PALACE_DRACKA_HILD_KITH</Type> 
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Tower of Necromancy/towerofnecromancy.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Buildings\HildKith.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Seidhall --> 
+			<Type>ART_DEF_BUILDING_KITH_MAGE_GUILD</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.6</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Mage Guild/cathedral.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Buildings\Seidhall.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Wicce Hall --> 
+			<Type>ART_DEF_BUILDING_KITH_ALCHEMY_LAB</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.2</fScale>
+			<fInterfaceScale>0.55</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Persian Apothecary/Apothecary.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Buildings\WicceHall.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Bocern Hord --> <!-- TODO -->
+			<Type>ART_DEF_BUILDING_KITH_LIBRARY</Type>
+			<LSystem>LSYSTEM_3x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.2</fScale>
+			<fInterfaceScale>0.58</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Library/Library.nif</NIF>
+			<KFM/>
+			<Button>,Modules\NormalModules\DrackAdditionalCivs\Art\Buildings\BocernHord.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Beacon -->
+			<Type>ART_DEF_BUILDING_KITH_LIGHTHOUSE</Type>
+			<LSystem>LSYSTEM_LIGHTHOUSE</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>.95</fScale>
+			<fInterfaceScale>0.75</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Lighthouse/Lighthouse.nif</NIF>
+			<KFM/>
+			<Button>,Modules\NormalModules\DrackAdditionalCivs\Art\Buildings\Beacon.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Skipwright --> 
+			<Type>ART_DEF_BUILDING_KITH_SHIPYARD</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>2.0</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Shipwright/Shipwright.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Buildings\Skipwright.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Porth --> 
+			<Type>ART_DEF_BUILDING_KITH_HARBOR</Type>
+			<LSystem>LSYSTEM_HARBOR</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>1.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Harbor/Harbor.nif</NIF>
+			<KFM/>
+			<Button>,Modules\NormalModules\DrackAdditionalCivs\Art\Buildings\Porth.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Korenloft --> 
+			<Type>ART_DEF_BUILDING_KITH_GRANARY</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.26</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Granary/Granary.nif</NIF>
+			<KFM/>
+			<Button>,Modules\NormalModules\DrackAdditionalCivs\Art\Buildings\Korenloft.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Smocrook  --> 
+			<Type>ART_DEF_BUILDING_KITH_SMOKEHOUSE</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.00</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Smokehouse/Smokehouse.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Buildings\Smocrook.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Stroombad  --> 
+			<Type>ART_DEF_BUILDING_KITH_PUBLIC_BATHS</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.5</fScale>
+			<fInterfaceScale>0.67</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Ottoman Hammam/Hammam.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Buildings\Stroombad.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Gastihuz  --> 
+			<Type>ART_DEF_BUILDING_KITH_INN</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>.60</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Inn/medieval_house1.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Buildings\Gastihuz.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Kroeg  --> 
+			<Type>ART_DEF_BUILDING_KITH_GAMBLING_HOUSE</Type>
+			<LSystem>LSYSTEM_3x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.6</fScale>
+			<fInterfaceScale>0.7</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Gambling House/Grocery.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Buildings\Kroeg.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Feohwende  --> 
+			<Type>ART_DEF_BUILDING_KITH_MONEYCHANGER</Type>
+			<LSystem>LSYSTEM_3x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.05</fScale>
+			<fInterfaceScale>0.6</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Market/Market.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Buildings\Feohwende.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Timmermanstraat  --> 
+			<Type>ART_DEF_BUILDING_KITH_SIEGE_WORKSHOP</Type>
+			<LSystem>LSYSTEM_3x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.00</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Siegeworkshop/Siegeworkshop.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Buildings\Timmermanstraat.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Fabriek  --> 
+			<Type>ART_DEF_BUILDING_KITH_FORGE</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>0.52</fInterfaceScale>
+			<NIF>Art/Civs/Mechanos/Buildings/Factory/refinery.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Buildings\Fabriek.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Pwerdy  --> 
+			<Type>ART_DEF_BUILDING_KITH_PWERDY</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.85</fScale>
+			<fInterfaceScale>0.52</fInterfaceScale>
+			<NIF>Art/Civs/Mechanos/Buildings/PowerPlant/chemicalplant.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Buildings\Pwerdy.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Kampplaats --> 
+			<Type>ART_DEF_BUILDING_KITH_HUNTERS_HALL</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>1.5</fScale>
+			<fInterfaceScale>0.7</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Huntinglodge/huntinglodge.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Buildings\Kampplaats.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- Ymarferfa -->
+			<Type>ART_DEF_BUILDING_KITH_TRAINING_YARD</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.8</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Trainingyard/Trainingyard.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Buildings\Ymarferfa.dds</Button>
+		</BuildingArtInfo>
+	</BuildingArtInfos>
+</Civ4ArtDefines>

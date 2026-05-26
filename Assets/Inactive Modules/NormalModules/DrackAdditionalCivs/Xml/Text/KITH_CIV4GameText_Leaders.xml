@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Risna -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_KITH_WOODROW</Tag>
+        <English>Woodrow</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_KITH_WOODROW_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_KITH_AMBERLY</Tag>
+        <English>Amberly</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_KITH_AMBERLY_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_KITH_FREDA</Tag>
+        <English>Freda</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_KITH_FREDA_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_KITH_KYLA</Tag>
+        <English>Kyla</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_KITH_KYLA_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_KITH_SILVIA</Tag>
+        <English>Silvia</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_KITH_SILVIA_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+</Civ4GameText>
