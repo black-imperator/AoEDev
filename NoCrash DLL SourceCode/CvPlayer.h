@@ -157,7 +157,9 @@ public:
 	// Free Tech Popup Fix
 	bool isChoosingFreeTech() const;
 	void setChoosingFreeTech(bool bValue);
-/************************************************************************************************/
+	bool isUpdatePlotGroups() const;
+	void setUpdatePlotGroups(bool bValue);
+	/************************************************************************************************/
 /* UNOFFICIAL_PATCH                        END                                                  */
 /************************************************************************************************/
 	DllExport void chooseTech(int iDiscover = 0, CvWString szText = "", bool bFront = false);				// Exposed to Python
@@ -1786,6 +1788,7 @@ protected:
 /************************************************************************************************/
 	// Free Tech Popup Fix
 	bool m_bChoosingFreeTech;
+	bool m_bUpdatePlotGroups;
 /************************************************************************************************/
 /* UNOFFICIAL_PATCH                        END                                                  */
 /************************************************************************************************/

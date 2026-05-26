@@ -12296,7 +12296,7 @@ bool CvSpellInfo::read(CvXMLLoadUtility* pXML)
 	if (szTextVal != "") m_iFeatureOrTargetPrereq2 = pXML->FindInInfoClass(szTextVal);
 	pXML->GetChildXmlValByName(szTextVal, "PlotEffectPrereq");
 	if (szTextVal != "") m_iPlotEffectPrereq = pXML->FindInInfoClass(szTextVal);
-	pXML->GetChildXmlValByName(szTextVal, "�PlotEffectTargetPrereq");
+	pXML->GetChildXmlValByName(szTextVal, "?PlotEffectTargetPrereq");
 	if (szTextVal != "") m_iPlotEffectTargetPrereq = pXML->FindInInfoClass(szTextVal);
 	pXML->GetChildXmlValByName(szTextVal, "ImprovementPrereq");
 	if (szTextVal != "") m_iImprovementPrereq = pXML->FindInInfoClass(szTextVal);

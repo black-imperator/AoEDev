@@ -10907,6 +10907,11 @@ void CvCity::setCultureLevel(CultureLevelTypes eNewValue, bool bUpdatePlotGroups
 
 	if (eOldValue != eNewValue)
 	{
+		if (bUpdatePlotGroups)
+		{
+			GET_PLAYER(getOwner()).setUpdatePlotGroups(true);
+			bUpdatePlotGroups = false;
+		}
 		m_eCultureLevel = eNewValue;
 
 		if (eOldValue != NO_CULTURELEVEL)

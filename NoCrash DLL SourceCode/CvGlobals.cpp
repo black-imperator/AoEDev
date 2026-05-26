@@ -4695,7 +4695,7 @@ int CvGlobals::getInfoTypeForString(const char* szType, bool hideAssert) const
 	if(!hideAssert && szType[0] != 0 && strcmp(szType, "NONE") != 0)
 	{
 #if defined(__clang__) || defined(__GNUC__)
-		// Caller-offset logging â€” clang/GCC only.
+		// Caller-offset logging — clang/GCC only.
 		void* caller = __builtin_return_address(0);
 		MEMORY_BASIC_INFORMATION mbi;
 		void* base = NULL;

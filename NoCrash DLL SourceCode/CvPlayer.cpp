@@ -181,6 +181,7 @@ CvPlayer::CvPlayer()
 /************************************************************************************************/
 	// Free Tech Popup Fix
 	m_bChoosingFreeTech = false;
+	m_bUpdatePlotGroups = false;
 /************************************************************************************************/
 /* UNOFFICIAL_PATCH                        END                                                  */
 /************************************************************************************************/
@@ -4291,6 +4292,14 @@ void CvPlayer::doTurn()
 		pLoopCity->doTurn();
 	}
 	profiler2.profile(NULL, true);
+	szError.Format("Player::doTurn-doplotgroups Turn %i, Leader %s", GC.getGame().getGameTurn(), GC.getLeaderHeadInfo(getLeaderType()).getType());
+	profiler2.profile(szError);
+	if (isUpdatePlotGroups())
+	{
+		GC.getGame().updatePlotGroups();
+		setUpdatePlotGroups(false);
+	}
+	profiler2.profile(NULL, true);
 
 /*************************************************************************************************/
 /**	Xienwolf Tweak							12/27/08											**/
@@ -4963,6 +4972,16 @@ void CvPlayer::setChoosingFreeTech(bool bValue)
 {
 	m_bChoosingFreeTech = bValue;
 }
+bool CvPlayer::isUpdatePlotGroups() const
+{
+	return m_bUpdatePlotGroups;
+}
+
+void CvPlayer::setUpdatePlotGroups(bool bValue)
+{
+	m_bUpdatePlotGroups = bValue;
+}
+
 /************************************************************************************************/
 /* UNOFFICIAL_PATCH                        END                                                  */
 /************************************************************************************************/
