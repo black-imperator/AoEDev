@@ -165,7 +165,7 @@ void CvGame::updateColoredPlots()
 	{
 		if (gDLL->getInterfaceIFace()->isCityScreenUp())
 		{
-			for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
+			for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
 			{
 				if (pHeadSelectedCity->isWorkingPlot(iI))
 				{
@@ -207,7 +207,7 @@ void CvGame::updateColoredPlots()
 		{
 			if (gDLL->getInterfaceIFace()->canSelectionListFound())
 			{
-				for (iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+				for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
 				{
 					pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
 
@@ -577,7 +577,7 @@ CvUnit* CvGame::getPlotUnit(const CvPlot* pPlot, int iIndex) const
 	{
 		iCount = 0;
 
-		for (iPass = 0; iPass < 2; iPass++)
+		for (int iPass = 0; iPass < 2; iPass++)
 		{
 			pUnitNode1 = pPlot->headUnitNode();
 
@@ -650,7 +650,7 @@ void CvGame::getPlotUnits(const CvPlot *pPlot, std::vector<CvUnit *> &plotUnits)
 
 	if (pPlot != NULL)
 	{
-		for (iPass = 0; iPass < 2; iPass++)
+		for (int iPass = 0; iPass < 2; iPass++)
 		{
 			pUnitNode1 = pPlot->headUnitNode();
 
@@ -2263,7 +2263,7 @@ void CvGame::startFlyoutMenu(const CvPlot* pPlot, std::vector<CvFlyoutMenuData>&
 				if (eConscriptUnit != NO_UNIT)
 				{
 					szBuffer = gDLL->getText("TXT_KEY_DRAFT_UNIT", GC.getUnitInfo(eConscriptUnit).getDescription(), pCity->getConscriptPopulation());
-					aFlyoutItems.push_back(CvFlyoutMenuData(FLYOUT_CONSCRIPT, iI, pPlot->getX_INLINE(), pPlot->getY_INLINE(), szBuffer));
+					aFlyoutItems.push_back(CvFlyoutMenuData(FLYOUT_CONSCRIPT, eConscriptUnit, pPlot->getX_INLINE(), pPlot->getY_INLINE(), szBuffer));
 				}
 			}
 		}

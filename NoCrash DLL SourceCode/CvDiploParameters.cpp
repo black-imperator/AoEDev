@@ -241,7 +241,7 @@ void CvDiploParameters::read(FDataStreamBase& stream)
 	int i, iSize;
 	stream.Read(&iSize);
 	m_diploCommentArgs.resize(iSize);
-	for(i=0;i<iSize;i++)
+	for (int i=0;i<iSize;i++)
 		m_diploCommentArgs[i].Read(&stream);
 }
 
@@ -265,6 +265,6 @@ void CvDiploParameters::write(FDataStreamBase& stream) const
 	// write diplo args vec
 	int i, iSize = m_diploCommentArgs.size();
 	stream.Write(iSize);
-	for(i=0;i<iSize;i++)
+	for (int i=0;i<iSize;i++)
 		m_diploCommentArgs[i].Write(&stream);
 }

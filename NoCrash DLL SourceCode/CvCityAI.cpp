@@ -127,31 +127,31 @@ void CvCityAI::AI_reset()
 /*************************************************************************************************/
 	m_routeToCity.reset();
 
-	for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
+	for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
 	{
 		m_aiEmphasizeYieldCount[iI] = 0;
 	}
 
-	for (iI = 0; iI < NUM_COMMERCE_TYPES; iI++)
+	for (int iI = 0; iI < NUM_COMMERCE_TYPES; iI++)
 	{
 		m_aiEmphasizeCommerceCount[iI] = 0;
 	}
 
-	for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
+	for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
 	{
 		m_aiBestBuildValue[iI] = 0;
 	}
 
-	for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
+	for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
 	{
 		m_aeBestBuild[iI] = NO_BUILD;
 	}
 
-	for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
+	for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
 	{
 		m_aiSpecialYieldMultiplier[iI] = 0;
 	}
-	for (iI = 0; iI < MAX_PLAYERS; iI++)
+	for (int iI = 0; iI < MAX_PLAYERS; iI++)
 	{
 		m_aiPlayerCloseness[iI] = 0;
 	}
@@ -167,7 +167,7 @@ void CvCityAI::AI_reset()
 	FAssertMsg(m_pbEmphasize == NULL, "m_pbEmphasize not NULL!!!");
 	FAssertMsg(GC.getNumEmphasizeInfos() > 0,  "GC.getNumEmphasizeInfos() is not greater than zero but an array is being allocated in CvCityAI::AI_reset");
 	m_pbEmphasize = new bool[GC.getNumEmphasizeInfos()];
-	for (iI = 0; iI < GC.getNumEmphasizeInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumEmphasizeInfos(); iI++)
 	{
 		m_pbEmphasize[iI] = false;
 	}
@@ -182,7 +182,7 @@ void CvCityAI::AI_doTurn()
 
 	if (!isHuman())
 	{
-		for (iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 		{
 			setForceSpecialistClassCount(((SpecialistClassTypes)iI), 0);
 		}
@@ -255,11 +255,11 @@ void CvCityAI::AI_assignWorkingPlots()
 /*************************************************************************************************/
 /**								---- Start Original Code ----									**
 //FfH: Modified by Kael 11/18/2007
-//		for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
-		for (iI = 0; iI < getNumCityPlots(); iI++)
+//		for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
+		for (int iI = 0; iI < getNumCityPlots(); iI++)
 //FfH: End Modify
 /**								----  End Original Code  ----									**/
-		for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
+		for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
 /*************************************************************************************************/
 /**	Tweak									END													**/
 /*************************************************************************************************/
@@ -280,7 +280,7 @@ void CvCityAI::AI_assignWorkingPlots()
 	int iTotalForcedSpecialists = 0;
 
 	// make sure at least the forced amount of specialists are assigned
-	for (iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 	{
 		int iForcedSpecialistCount = getForceSpecialistClassCount((SpecialistClassTypes)iI);
 		if (iForcedSpecialistCount > 0)
@@ -296,7 +296,7 @@ void CvCityAI::AI_assignWorkingPlots()
 	}
 
 	// if we have more specialists of any type than this city can have, reduce to the max
-	for (iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 	{
 		if (!isSpecialistClassValid((SpecialistClassTypes)iI))
 		{
@@ -343,7 +343,7 @@ void CvCityAI::AI_assignWorkingPlots()
 	if (bIsSpecialistForced && iExtraSpecialists > 0)
 	{
 		FAssertMsg(iTotalForcedSpecialists > 0, "zero or negative total forced specialists");
-		for (iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 		{
 			if (isSpecialistClassValid((SpecialistClassTypes)iI, 1))
 			{
@@ -592,7 +592,7 @@ int CvCityAI::AI_specialistClassValue(SpecialistClassTypes eSpecialistClass, boo
 	if (eSpecialist == NO_SPECIALIST)
 		return 0;
 
-	for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
+	for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
 	{
 		aiYields[iI] = GC.getSpecialistInfo(eSpecialist).getYieldChange((YieldTypes)iI) + GET_PLAYER(getOwnerINLINE()).getSpecialistClassExtraYield(eSpecialistClass, ((YieldTypes)iI));
 	}
@@ -611,7 +611,7 @@ int CvCityAI::AI_specialistClassValue(SpecialistClassTypes eSpecialistClass, boo
 
 	short int aiCommerceYields[NUM_COMMERCE_TYPES];
 
-	for (iI = 0; iI < NUM_COMMERCE_TYPES; iI++)
+	for (int iI = 0; iI < NUM_COMMERCE_TYPES; iI++)
 	{
 		aiCommerceYields[iI] = GC.getSpecialistInfo(eSpecialist).getCommerceChange((CommerceTypes)iI) + GET_PLAYER(getOwnerINLINE()).getSpecialistClassExtraCommerce(eSpecialistClass, ((CommerceTypes)iI));
 	}
@@ -740,7 +740,7 @@ int CvCityAI::AI_specialistClassValue(SpecialistClassTypes eSpecialistClass, boo
 			int iBestSpreadValue = 0;
 
 
-			for (iJ = 0; iJ < GC.getNumReligionInfos(); iJ++)
+			for (int iJ = 0; iJ < GC.getNumReligionInfos(); iJ++)
 			{
 				ReligionTypes eReligion = (ReligionTypes)iJ;
 
@@ -3259,7 +3259,7 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, AdvisorTypes eIgnoreAdvisor, UnitAI
 		iCoastalCities = GET_PLAYER(getOwnerINLINE()).countNumCoastalCitiesByArea(pWaterArea);
 	}
 
-	for (iI = 0; iI < NUM_UNITAI_TYPES; iI++)
+	for (int iI = 0; iI < NUM_UNITAI_TYPES; iI++)
 	{
 		aiUnitAIVal[iI] = 0;
 	}
@@ -3371,7 +3371,7 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, AdvisorTypes eIgnoreAdvisor, UnitAI
 	}
 
 	// XXX this should account for air and heli units too...
-	for (iI = 0; iI < NUM_UNITAI_TYPES; iI++)
+	for (int iI = 0; iI < NUM_UNITAI_TYPES; iI++)
 	{
 		if (GET_PLAYER(getOwnerINLINE()).AI_unitAIDomainType((UnitAITypes)iI) == DOMAIN_SEA)
 		{
@@ -3421,7 +3421,7 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, AdvisorTypes eIgnoreAdvisor, UnitAI
 	aiUnitAIVal[UNITAI_CARRIER_AIR] *= 15;
 	aiUnitAIVal[UNITAI_MISSILE_AIR] *= 15;
 
-	for (iI = 0; iI < NUM_UNITAI_TYPES; iI++)
+	for (int iI = 0; iI < NUM_UNITAI_TYPES; iI++)
 	{
 		aiUnitAIVal[iI] *= std::max(0, (GC.getLeaderHeadInfo(getPersonalityType()).getUnitAIWeightModifier(iI) + 100));
 		aiUnitAIVal[iI] /= 100;
@@ -3441,7 +3441,7 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, AdvisorTypes eIgnoreAdvisor, UnitAI
 	iBestValue = 0;
 	eBestUnit = NO_UNIT;
 
-	for (iI = 0; iI < NUM_UNITAI_TYPES; iI++)
+	for (int iI = 0; iI < NUM_UNITAI_TYPES; iI++)
 	{
 		if (aiUnitAIVal[iI] > 0)
 		{
@@ -3525,7 +3525,7 @@ UnitTypes CvCityAI::AI_bestUnitAI(UnitAITypes eUnitAI, bool bAsync, AdvisorTypes
 	}
 	iBestOriginalValue = 0;
 
-	for (iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
 	{
 		eLoopUnit = ((UnitTypes)(getCityUnits(iI)));
 
@@ -3557,7 +3557,7 @@ UnitTypes CvCityAI::AI_bestUnitAI(UnitAITypes eUnitAI, bool bAsync, AdvisorTypes
 	iBestValue = 0;
 	eBestUnit = NO_UNIT;
 
-	for (iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
 	{
 		eLoopUnit = ((UnitTypes)(getCityUnits(iI)));
 
@@ -3593,7 +3593,7 @@ UnitTypes CvCityAI::AI_bestUnitAI(UnitAITypes eUnitAI, bool bAsync, AdvisorTypes
 		//only 1 promotion per source is counted (ie protective isn't counted twice)
 		int iPromotionValue = 0;
 		//buildings
-		for (iJ = 0; iJ < GC.getNumPromotionInfos(); iJ++)
+		for (int iJ = 0; iJ < GC.getNumPromotionInfos(); iJ++)
 		{
 			if (isFreePromotion((PromotionTypes)iJ) && !GC.getUnitInfo(eLoopUnit).getFreePromotions((PromotionTypes)iJ))
 			{
@@ -3606,7 +3606,7 @@ UnitTypes CvCityAI::AI_bestUnitAI(UnitAITypes eUnitAI, bool bAsync, AdvisorTypes
 		}
 
 		//special to the unit
-		for (iJ = 0; iJ < GC.getNumPromotionInfos(); iJ++)
+		for (int iJ = 0; iJ < GC.getNumPromotionInfos(); iJ++)
 		{
 			if (GC.getUnitInfo(eLoopUnit).getFreePromotions(iJ))
 			{
@@ -3618,11 +3618,11 @@ UnitTypes CvCityAI::AI_bestUnitAI(UnitAITypes eUnitAI, bool bAsync, AdvisorTypes
 		}
 
 		//traits
-		for (iJ = 0; iJ < GC.getNumTraitInfos(); iJ++)
+		for (int iJ = 0; iJ < GC.getNumTraitInfos(); iJ++)
 		{
 			if (hasTrait((TraitTypes)iJ))
 			{
-				for (iK = 0; iK < GC.getNumPromotionInfos(); iK++)
+				for (int iK = 0; iK < GC.getNumPromotionInfos(); iK++)
 				{
 					if (GC.getTraitInfo((TraitTypes) iJ).isFreePromotion(iK))
 					{
@@ -3775,7 +3775,7 @@ BuildingTypes CvCityAI::AI_bestBuildingThreshold(int iFocusFlags, int iMaxTurns,
 	if (iFocusFlags & BUILDINGFOCUS_CAPITAL)
 	{
 		int iBestTurnsLeft = iMaxTurns > 0 ? iMaxTurns : MAX_INT;
-		for (iI = 0; iI < GC.getNumBuildingClassInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumBuildingClassInfos(); iI++)
 		{
 			eLoopBuilding = ((BuildingTypes)(getCityBuildings(iI)));
 
@@ -3805,7 +3805,7 @@ BuildingTypes CvCityAI::AI_bestBuildingThreshold(int iFocusFlags, int iMaxTurns,
 		}
 	}
 
-	for (iI = 0; iI < GC.getNumBuildingClassInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumBuildingClassInfos(); iI++)
 	{
 		if (!(GET_PLAYER(getOwnerINLINE()).isBuildingClassMaxedOut(((BuildingClassTypes)iI), GC.getBuildingClassInfo((BuildingClassTypes)iI).getExtraPlayerInstances())))
 		{
@@ -3857,7 +3857,7 @@ BuildingTypes CvCityAI::AI_bestBuildingThreshold(int iFocusFlags, int iMaxTurns,
 
 							if (isProductionAutomated())
 							{
-								for (iJ = 0; iJ < GC.getNumBuildingClassInfos(); iJ++)
+								for (int iJ = 0; iJ < GC.getNumBuildingClassInfos(); iJ++)
 								{
 									if (GC.getBuildingInfo(eLoopBuilding).getPrereqNumOfBuildingClass(iJ) > 0)
 									{
@@ -4035,13 +4035,13 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 	int iNumCitiesInArea = area()->getCitiesPerPlayer(getOwnerINLINE());
 
 	int aiYieldRank[NUM_YIELD_TYPES];
-	for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
+	for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
 	{
 		aiYieldRank[iI] = MAX_INT;
 	}
 
 	int aiCommerceRank[NUM_COMMERCE_TYPES];
-	for (iI = 0; iI < NUM_COMMERCE_TYPES; iI++)
+	for (int iI = 0; iI < NUM_COMMERCE_TYPES; iI++)
 	{
 		aiCommerceRank[iI] = MAX_INT;
 	}
@@ -4072,7 +4072,7 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 
 	bool bForeignTrade = false;
 	int iNumTradeRoutes = getTradeRoutes();
-	for (iI = 0; iI < iNumTradeRoutes; ++iI)
+	for (int iI = 0; iI < iNumTradeRoutes; ++iI)
 	{
 		CvCity* pTradeCity = getTradeCity(iI);
 		if (NULL != pTradeCity)
@@ -4090,7 +4090,7 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 		return 0;
 	}
 
-	for (iI = 0; iI < GC.getNumReligionInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumReligionInfos(); iI++)
 	{
 		if (kBuilding.getReligionChange(iI) > 0)
 		{
@@ -4111,7 +4111,7 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 /**	New Tag Defs							END													**/
 /*************************************************************************************************/
 
-	for (iPass = 0; iPass < 2; iPass++)
+	for (int iPass = 0; iPass < 2; iPass++)
 	{
 		if ((iFocusFlags == 0) || (iValue > 0) || (iPass == 0))
 		{
@@ -4184,7 +4184,7 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 /*************************************************************************************************/
 /**								---- Start Original Code ----									**
 				int iBestHappy = 0;
-				for (iI = 0; iI < GC.getNumHurryInfos(); iI++)
+				for (int iI = 0; iI < GC.getNumHurryInfos(); iI++)
 				{
 					if (canHurryBuilding((HurryTypes)iI, eBuilding, true))
 					{
@@ -4236,13 +4236,13 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 						+ (std::max(0, iStateReligionHappiness - iAngryPopulation) * iHappyModifier);
 				}
 
-				for (iI = 0; iI < NUM_COMMERCE_TYPES; iI++)
+				for (int iI = 0; iI < NUM_COMMERCE_TYPES; iI++)
 				{
 					iValue += (std::min(((kBuilding.getCommerceHappiness(iI) * kOwner.getCommercePercent((CommerceTypes)iI)) / 100), iAngryPopulation) * 8);
 					iValue += (kBuilding.getCommerceHappiness(iI) * iHappyModifier) / 4;
 				}
 
-				for (iI = 0; iI < GC.getNumBonusInfos(); iI++)
+				for (int iI = 0; iI < GC.getNumBonusInfos(); iI++)
 				{
 					if (hasBonus((BonusTypes)iI))
 					{
@@ -4252,7 +4252,7 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 					}
 				}
 
-				for (iI = 0; iI < GC.getNumBuildingClassInfos(); iI++)
+				for (int iI = 0; iI < GC.getNumBuildingClassInfos(); iI++)
 				{
 					if (kBuilding.getBuildingHappinessChanges(iI) != 0)
 					{
@@ -4261,7 +4261,7 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 				}
 /**								----  End Original Code  ----									**/
 				int iBestHappy = 0;
-				for (iI = 0; iI < GC.getNumHurryInfos(); iI++)
+				for (int iI = 0; iI < GC.getNumHurryInfos(); iI++)
 				{
 					if (canHurryBuilding((HurryTypes)iI, eBuilding, true))
 					{
@@ -4313,13 +4313,13 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 					iValue += std::max(0, iStateReligionHappiness - iAngryPopulation) * iHappyModifier - std::max(0, iStateReligionHappiness - iAngryPopulation) / 2;
 				}
 
-				for (iI = 0; iI < NUM_COMMERCE_TYPES; iI++)
+				for (int iI = 0; iI < NUM_COMMERCE_TYPES; iI++)
 				{
 					iValue += std::min(((kBuilding.getCommerceHappiness(iI) * kOwner.getCommercePercent((CommerceTypes)iI)) / 100), iAngryPopulation) * (iHappyModifier * 4 / 5);
 					iValue += (kBuilding.getCommerceHappiness(iI) * iHappyModifier) / 4;
 				}
 
-				for (iI = 0; iI < GC.getNumBonusInfos(); iI++)
+				for (int iI = 0; iI < GC.getNumBonusInfos(); iI++)
 				{
 					if (hasBonus((BonusTypes)iI))
 					{
@@ -4329,7 +4329,7 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 					}
 				}
 
-				for (iI = 0; iI < GC.getNumBuildingClassInfos(); iI++)
+				for (int iI = 0; iI < GC.getNumBuildingClassInfos(); iI++)
 				{
 					if (kBuilding.getBuildingHappinessChanges(iI) != 0)
 					{
@@ -4384,7 +4384,7 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 				iValue += (kBuilding.getAreaHealth() * iNumCitiesInArea * 4);
 				iValue += (kBuilding.getGlobalHealth() * iNumCities * 4);
 
-				for (iI = 0; iI < GC.getNumBonusInfos(); iI++)
+				for (int iI = 0; iI < GC.getNumBonusInfos(); iI++)
 				{
 					if (hasBonus((BonusTypes)iI))
 					{
@@ -4428,7 +4428,7 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 				iValue += (kBuilding.getAreaHealth() * iNumCitiesInArea * 4);
 				iValue += (kBuilding.getGlobalHealth() * iNumCities * 4);
 
-				for (iI = 0; iI < GC.getNumBonusInfos(); iI++)
+				for (int iI = 0; iI < GC.getNumBonusInfos(); iI++)
 				{
 					if (hasBonus((BonusTypes)iI))
 					{
@@ -4443,7 +4443,7 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 			{
 				iValue += (kBuilding.getFreeExperience() * ((iHasMetCount > 0) ? 12 : 6));
 
-				for (iI = 0; iI < GC.getNumUnitCombatInfos(); iI++)
+				for (int iI = 0; iI < GC.getNumUnitCombatInfos(); iI++)
 				{
 					if (canTrain((UnitCombatTypes)iI))
 					{
@@ -4451,7 +4451,7 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 					}
 				}
 
-				for (iI = 0; iI < NUM_DOMAIN_TYPES; iI++)
+				for (int iI = 0; iI < NUM_DOMAIN_TYPES; iI++)
 				{
 					int iDomainExpValue = 0;
 					if (iI == DOMAIN_SEA)
@@ -4517,7 +4517,7 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 			{
 				int iSpecialistsValue = 0;
 				int iCurrentSpecialistsRunnable = 0;
-				for (iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
+				for (int iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 				{
 					if (iI != GC.getDefineINT("DEFAULT_SPECIALISTCLASS"))
 					{
@@ -4700,7 +4700,7 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 
 				if (kBuilding.getCivicOption() != NO_CIVICOPTION)
 				{
-					for (iI = 0; iI < GC.getNumCivicInfos(); iI++)
+					for (int iI = 0; iI < GC.getNumCivicInfos(); iI++)
 					{
 						if (GC.getCivicInfo((CivicTypes)iI).getCivicOptionType() == kBuilding.getCivicOption())
 						{
@@ -4821,7 +4821,7 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 
 				iValue += kBuilding.getEnemyWarWearinessModifier() / 2;
 
-				for (iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
+				for (int iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 				{
 					if (kBuilding.getFreeSpecialistClassCount(iI) > 0)
 					{
@@ -4829,7 +4829,7 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 					}
 				}
 
-				for (iI = 0; iI < GC.getNumImprovementInfos(); iI++)
+				for (int iI = 0; iI < GC.getNumImprovementInfos(); iI++)
 				{
 					if (kBuilding.getImprovementFreeSpecialistClass(iI) > 0)
 					{
@@ -4837,7 +4837,7 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 					}
 				}
 
-				for (iI = 0; iI < NUM_DOMAIN_TYPES; iI++)
+				for (int iI = 0; iI < NUM_DOMAIN_TYPES; iI++)
 				{
 					iValue += (kBuilding.getDomainProductionModifier(iI) / 5);
 
@@ -4848,7 +4848,7 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 				}
 
 //FfH: Modified by Kael 10/30/2007
-//				for (iI = 0; iI < GC.getNumUnitInfos(); iI++)
+//				for (int iI = 0; iI < GC.getNumUnitInfos(); iI++)
 //				{
 //					if (GC.getUnitInfo((UnitTypes)iI).getPrereqBuilding() == eBuilding)
 //					{
@@ -4888,7 +4888,7 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 /*************************************************************************************************/
 				{
 					UnitTypes eLoopUnit;
-					for (iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
+					for (int iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
 					{
 						//eLoopUnit = ((UnitTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iI)));
 						eLoopUnit = ((UnitTypes)(getCityUnits(iI)));
@@ -4930,7 +4930,7 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 				}
 
 				// is this building needed to build other buildings?
-				for (iI = 0; iI < GC.getNumBuildingInfos(); iI++)
+				for (int iI = 0; iI < GC.getNumBuildingInfos(); iI++)
 				{
 					int iPrereqBuildings = kOwner.getBuildingClassPrereqBuilding(((BuildingTypes) iI), eBuildingClass);
 
@@ -5058,7 +5058,7 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 /**			for helping AI with things we can't really add in a non-hardcoded way				**/
 /*************************************************************************************************/
 /**								---- Start Original Code ----									**
-				for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
+				for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
 				{
 
 					iTempValue = 0;
@@ -5085,7 +5085,7 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 					iValue += kBuilding.getFoodKept(); //No need to divide by two when it's not inside loop anymore.
 				}
 
-				for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
+				for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
 				{
 
 					iTempValue = 0;
@@ -5130,12 +5130,12 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 						iTempValue += ((getPowerYieldRateModifier((YieldTypes)iI) * getBaseYieldRate((YieldTypes)iI)) / 12);
 					}
 
-					for (iJ = 0; iJ < GC.getNumSpecialistClassInfos(); iJ++)
+					for (int iJ = 0; iJ < GC.getNumSpecialistClassInfos(); iJ++)
 					{
 						iTempValue += ((kBuilding.getSpecialistClassYieldChange(iJ, iI) * kOwner.getTotalPopulation()) / 5);
 					}
 
-					for (iJ = 0; iJ < GC.getNumBonusInfos(); iJ++)
+					for (int iJ = 0; iJ < GC.getNumBonusInfos(); iJ++)
 					{
 						if (hasBonus((BonusTypes)iJ))
 						{
@@ -5257,7 +5257,7 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 
 			if (iPass > 0)
 			{
-				for (iI = 0; iI < NUM_COMMERCE_TYPES; iI++)
+				for (int iI = 0; iI < NUM_COMMERCE_TYPES; iI++)
 				{
 					iTempValue = 0;
 
@@ -5290,7 +5290,7 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 /************************************************************************************************/
 					iTempValue *= 100 + kBuilding.getCommerceModifier(iI);
 					iTempValue /= 100;
-					for (iJ = 0; iJ < GC.getNumBonusInfos(); iJ++)
+					for (int iJ = 0; iJ < GC.getNumBonusInfos(); iJ++)
 					{
 						if (hasBonus((BonusTypes)iJ))
 						{
@@ -5364,7 +5364,7 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 									bHaveEnough = false;
 								}
 
-								for (iJ = 0; bHaveEnough && iJ < GC.getNumBuildingClassInfos(); iJ++)
+								for (int iJ = 0; bHaveEnough && iJ < GC.getNumBuildingClassInfos(); iJ++)
 								{
 									// count excess the number of prereq buildings which do not have this building built for yet
 									int iPrereqBuildings = kOwner.getBuildingClassPrereqBuilding(eBuilding, (BuildingClassTypes) iJ, -iCountBuilt);
@@ -5529,7 +5529,7 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 					}
 				}
 
-				for (iI = 0; iI < GC.getNumReligionInfos(); iI++)
+				for (int iI = 0; iI < GC.getNumReligionInfos(); iI++)
 				{
 					if (kBuilding.getReligionChange(iI) > 0)
 					{
@@ -5730,7 +5730,7 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 /**																								**/
 /**							Convince the AI to go for altar victory								**/
 /*************************************************************************************************/
-			for (iI = 0; iI < GC.getNumVictoryInfos(); iI++)
+			for (int iI = 0; iI < GC.getNumVictoryInfos(); iI++)
 			{
 				if (GC.getGameINLINE().isVictoryValid((VictoryTypes)iI))
 				{
@@ -5770,7 +5770,7 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 				iValue += kBuilding.getAIWeight();
 				if (iValue > 0)
 				{
-					for (iI = 0; iI < GC.getNumFlavorTypes(); iI++)
+					for (int iI = 0; iI < GC.getNumFlavorTypes(); iI++)
 					{
 						iValue += (kOwner.AI_getFlavorValue((FlavorTypes)iI) * kBuilding.getFlavorValue(iI));
 					}
@@ -5844,7 +5844,7 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 //		}
 //	}
 
-//	for (iI = 0; iI < GC.getNumBuildingInfos(); iI++)
+//	for (int iI = 0; iI < GC.getNumBuildingInfos(); iI++)
 //	{
 //		if (!GET_TEAM(getTeam()).isHasTech((TechTypes)(GC.getBuildingInfo((BuildingTypes)iI).getObsoleteTech())))
 //		{
@@ -5900,7 +5900,7 @@ ProjectTypes CvCityAI::AI_bestProject(int iMinThreshold)
 	iBestValue = 0;
 	eBestProject = NO_PROJECT;
 
-	for (iI = 0; iI < GC.getNumProjectInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumProjectInfos(); iI++)
 	{
 		if (canCreate((ProjectTypes)iI))
 		{
@@ -5987,7 +5987,7 @@ int CvCityAI::AI_projectValue(ProjectTypes eProject)
 		}
 	}
 
-	for (iI = 0; iI < GC.getNumVictoryInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumVictoryInfos(); iI++)
 	{
 		if (GC.getGameINLINE().isVictoryValid((VictoryTypes)iI))
 		{
@@ -5995,7 +5995,7 @@ int CvCityAI::AI_projectValue(ProjectTypes eProject)
 		}
 	}
 
-	for (iI = 0; iI < GC.getNumProjectInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumProjectInfos(); iI++)
 	{
 		iValue += (std::max(0, (GC.getProjectInfo((ProjectTypes)iI).getProjectsNeeded(eProject) - GET_TEAM(getTeam()).getProjectCount(eProject))) * 10);
 	}
@@ -6015,7 +6015,7 @@ int CvCityAI::AI_projectValue(ProjectTypes eProject)
 
 	if (GC.getProjectInfo(eProject).isResetProjects())
 	{
-		for (iI = 0; iI < MAX_PLAYERS; iI++)
+		for (int iI = 0; iI < MAX_PLAYERS; iI++)
 		{
 			if (GET_PLAYER((PlayerTypes)iI).isAlive())
 			{
@@ -6023,7 +6023,7 @@ int CvCityAI::AI_projectValue(ProjectTypes eProject)
 				{
 					for (pLoopCity = GET_PLAYER((PlayerTypes)iI).firstCity(&iLoop); pLoopCity != NULL; pLoopCity = GET_PLAYER((PlayerTypes)iI).nextCity(&iLoop))
 					{
-						for (iJ = 0; iJ < GC.getNumProjectInfos(); iJ++)
+						for (int iJ = 0; iJ < GC.getNumProjectInfos(); iJ++)
 						{
 							iTempValue += pLoopCity->getProjectProduction((ProjectTypes)iJ) * ((GC.getProjectInfo((ProjectTypes)iJ).getBlockBonuses() > 0) ? 20 : 1);
 						}
@@ -6039,7 +6039,7 @@ int CvCityAI::AI_projectValue(ProjectTypes eProject)
 /**								---- Start Original Code ----									**
 					for (pLoopCity = GET_PLAYER((PlayerTypes)iI).firstCity(&iLoop); pLoopCity != NULL; pLoopCity = GET_PLAYER((PlayerTypes)iI).nextCity(&iLoop))
 					{
-						for (iJ = 0; iJ < GC.getNumProjectInfos(); iJ++)
+						for (int iJ = 0; iJ < GC.getNumProjectInfos(); iJ++)
 						{
 							iTempValue -= pLoopCity->getProjectProduction((ProjectTypes)iJ) * ((GC.getProjectInfo((ProjectTypes)iJ).getRestoreBonuses() > 0) ? 50 : 1);
 						}
@@ -6056,7 +6056,7 @@ int CvCityAI::AI_projectValue(ProjectTypes eProject)
 					}
 					for (pLoopCity = GET_PLAYER((PlayerTypes)iI).firstCity(&iLoop); pLoopCity != NULL; pLoopCity = GET_PLAYER((PlayerTypes)iI).nextCity(&iLoop))
 					{
-						for (iJ = 0; iJ < GC.getNumProjectInfos(); iJ++)
+						for (int iJ = 0; iJ < GC.getNumProjectInfos(); iJ++)
 						{
 							iTempValue -= pLoopCity->getProjectProduction((ProjectTypes)iJ) * ((GC.getProjectInfo((ProjectTypes)iJ).getRestoreBonuses() > 0) ? 50 : 1);
 						}
@@ -6077,7 +6077,7 @@ int CvCityAI::AI_projectValue(ProjectTypes eProject)
 
 	if (GC.getProjectInfo(eProject).getRevealAllBonuses() > 0)
 	{
-		for (iI = 0; iI < GC.getNumBonusInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumBonusInfos(); iI++)
 		{
 			if (GC.getBonusInfo((BonusTypes)iI).getTechReveal() != NO_TECH && !GET_TEAM(getTeam()).isHasTech((TechTypes)(GC.getBonusInfo((BonusTypes)iI).getTechReveal())) && (GC.getBonusInfo((BonusTypes)iI).getTechCityTrade() == NO_TECH || GET_TEAM(getTeam()).isHasTech((TechTypes)(GC.getBonusInfo((BonusTypes)iI).getTechCityTrade()))))
 			{
@@ -6089,7 +6089,7 @@ int CvCityAI::AI_projectValue(ProjectTypes eProject)
 
 	if (GC.getProjectInfo(eProject).getRestoreBonuses() > 0 && GET_TEAM(getTeam()).getBlockBonuses() > 0)
 	{
-		for (iI = 0; iI < GC.getNumBonusInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumBonusInfos(); iI++)
 		{
 			if (GET_TEAM(getTeam()).isHasTech((TechTypes)(GC.getBonusInfo((BonusTypes)iI).getTechReveal())) || GC.getBonusInfo((BonusTypes)iI).getTechReveal() == NO_TECH)
 			{
@@ -6100,7 +6100,7 @@ int CvCityAI::AI_projectValue(ProjectTypes eProject)
 
 	if (GC.getProjectInfo(eProject).getBlockBonuses() > 0)
 	{
-		for (iI = 0; iI < MAX_TEAMS; iI++)
+		for (int iI = 0; iI < MAX_TEAMS; iI++)
 		{
 			if (iI != getTeam())
 			{
@@ -6108,7 +6108,7 @@ int CvCityAI::AI_projectValue(ProjectTypes eProject)
 				{
 					if (GET_TEAM(getTeam()).isAtWar((TeamTypes)iI))
 					{
-						for (iJ = 0; iJ < GC.getNumBonusInfos(); iJ++)
+						for (int iJ = 0; iJ < GC.getNumBonusInfos(); iJ++)
 						{
 							if (GET_TEAM((TeamTypes)iI).hasBonus((BonusTypes)iJ))
 							{
@@ -6175,7 +6175,7 @@ ProcessTypes CvCityAI::AI_bestProcess(CommerceTypes eCommerceType)
 	iBestValue = 0;
 	eBestProcess = NO_PROCESS;
 
-	for (iI = 0; iI < GC.getNumProcessInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumProcessInfos(); iI++)
 	{
 		if (canMaintain((ProcessTypes)iI))
 		{
@@ -6235,7 +6235,7 @@ int CvCityAI::AI_processValue(ProcessTypes eProcess, CommerceTypes eCommerceType
 /* BETTER_BTS_AI_MOD                       END                                                  */
 /************************************************************************************************/
 
-	for (iI = 0; iI < NUM_COMMERCE_TYPES; iI++)
+	for (int iI = 0; iI < NUM_COMMERCE_TYPES; iI++)
 	{
 		iTempValue = GC.getProcessInfo(eProcess).getProductionToCommerceModifier(iI);
 		if (!bValid && ((CommerceTypes)iI == eCommerceType) && (iTempValue > 0))
@@ -6853,7 +6853,7 @@ void CvCityAI::AI_updateRouteToCity()
 	iBestValue = MAX_INT;
 	pBestCity = NULL;
 
-	for (iI = 0; iI < MAX_PLAYERS; iI++)
+	for (int iI = 0; iI < MAX_PLAYERS; iI++)
 	{
 		if (GET_PLAYER((PlayerTypes)iI).getTeam() == getTeam())
 		{
@@ -6969,7 +6969,7 @@ void CvCityAI::AI_setEmphasize(EmphasizeTypes eIndex, bool bNewValue)
 			FAssert(AI_getEmphasizeGreatPeopleCount() >= 0);
 		}
 
-		for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
+		for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
 		{
 			if (GC.getEmphasizeInfo(eIndex).getYieldChange(iI))
 			{
@@ -6978,7 +6978,7 @@ void CvCityAI::AI_setEmphasize(EmphasizeTypes eIndex, bool bNewValue)
 			}
 		}
 
-		for (iI = 0; iI < NUM_COMMERCE_TYPES; iI++)
+		for (int iI = 0; iI < NUM_COMMERCE_TYPES; iI++)
 		{
 			if (GC.getEmphasizeInfo(eIndex).getCommerceChange(iI))
 			{
@@ -7025,8 +7025,8 @@ int CvCityAI::AI_totalBestBuildValue(CvArea* pArea)
 	iTotalValue = 0;
 
 //FfH: Modified by Kael 11/18/2007
-//	for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
-	for (iI = 0; iI < getNumCityPlots(); iI++)
+//	for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
+	for (int iI = 0; iI < getNumCityPlots(); iI++)
 //FfH: End Modify
 
 	{
@@ -7264,7 +7264,7 @@ int CvCityAI::AI_getGoodTileCount()
 								}
 
 								bUseBaseValue = false;
-								for (iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
+								for (int iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
 								{
 									aiFinalYields[iJ] = (pLoopPlot->calculateNatureYield(((YieldTypes)iJ), getTeam(), bIgnoreFeature) + pLoopPlot->calculateImprovementYieldChange(eImprovement, ((YieldTypes)iJ), getOwnerINLINE(), false));
 								}
@@ -7276,7 +7276,7 @@ int CvCityAI::AI_getGoodTileCount()
 				//Otherwise use the base value.
 				if (bUseBaseValue)
 				{
-					for (iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
+					for (int iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
 					{
 						//by default we'll use the current value
 						aiFinalYields[iJ] = pLoopPlot->getYield((YieldTypes)iJ);
@@ -7368,7 +7368,7 @@ int CvCityAI::AI_countWorkedPoorTiles()
 								}
 
 								bUseBaseValue = false;
-								for (iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
+								for (int iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
 								{
 									aiFinalYields[iJ] = (pLoopPlot->calculateNatureYield(((YieldTypes)iJ), getTeam(), bIgnoreFeature) + pLoopPlot->calculateImprovementYieldChange(eImprovement, ((YieldTypes)iJ), getOwnerINLINE(), false));
 								}
@@ -7380,7 +7380,7 @@ int CvCityAI::AI_countWorkedPoorTiles()
 				//Otherwise use the base value.
 				if (bUseBaseValue)
 				{
-					for (iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
+					for (int iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
 					{
 						//by default we'll use the current value
 						aiFinalYields[iJ] = pLoopPlot->getYield((YieldTypes)iJ);
@@ -7470,7 +7470,7 @@ void CvCityAI::AI_getYieldMultipliers( int &iFoodMultiplier, int &iProductionMul
 	int iSpecialistCount = getSpecialistPopulation() - totalFreeSpecialists();
 
 
-	for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
+	for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
 	{
 		if (iI != CITY_HOME_PLOT)
 		{
@@ -7530,7 +7530,7 @@ void CvCityAI::AI_getYieldMultipliers( int &iFoodMultiplier, int &iProductionMul
 								}
 
 								bUseBaseValue = false;
-								for (iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
+								for (int iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
 								{
 									aiFinalYields[iJ] = (pLoopPlot->calculateNatureYield(((YieldTypes)iJ), getTeam(), bIgnoreFeature) + pLoopPlot->calculateImprovementYieldChange(eImprovement, ((YieldTypes)iJ), getOwnerINLINE(), false));
 								}
@@ -7542,7 +7542,7 @@ void CvCityAI::AI_getYieldMultipliers( int &iFoodMultiplier, int &iProductionMul
 				//Otherwise use the base value.
 				if (bUseBaseValue)
 				{
-					for (iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
+					for (int iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
 					{
 						//by default we'll use the current value
 						aiFinalYields[iJ] = pLoopPlot->getYield((YieldTypes)iJ);
@@ -8039,7 +8039,7 @@ int CvCityAI::AI_getImprovementValue( CvPlot* pPlot, ImprovementTypes eImproveme
 
 			iValue /= 2;
 
-			for (iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
+			for (int iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
 			{
 				aiFinalYields[iJ] /= 2;
 				aiDiffYields[iJ] /= 2;
@@ -8253,8 +8253,8 @@ int CvCityAI::AI_countBestBuilds(CvArea* pArea)
 	iCount = 0;
 
 //FfH: Modified by Kael 11/18/2007
-//	for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
-	for (iI = 0; iI < getNumCityPlots(); iI++)
+//	for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
+	for (int iI = 0; iI < getNumCityPlots(); iI++)
 //FfH: End Modify
 
 	{
@@ -8317,8 +8317,8 @@ void CvCityAI::AI_updateBestBuild()
 	int iHealthAdjust = 0;
 
 //FfH: Modified by Kael 11/18/2007
-//	for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
-	for (iI = 0; iI < getNumCityPlots(); iI++)
+//	for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
+	for (int iI = 0; iI < getNumCityPlots(); iI++)
 //FfH: End Modify
 
 	{
@@ -8401,7 +8401,7 @@ void CvCityAI::AI_updateBestBuild()
 
 
 								bUseBaseValue = false;
-								for (iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
+								for (int iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
 								{
 									aiFinalYields[iJ] = (pLoopPlot->calculateNatureYield(((YieldTypes)iJ), getOwner(), bIgnoreFeature) + pLoopPlot->calculateImprovementYieldChange(eImprovement, ((YieldTypes)iJ), getOwnerINLINE(), false));
 								}
@@ -8413,7 +8413,7 @@ void CvCityAI::AI_updateBestBuild()
 				//Otherwise use the base value.
 				if (bUseBaseValue)
 				{
-					for (iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
+					for (int iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
 					{
 						//by default we'll use the current value
 						aiFinalYields[iJ] = pLoopPlot->getYield((YieldTypes)iJ);
@@ -8891,7 +8891,7 @@ void CvCityAI::AI_updateBestBuild()
 /*************************************************************************************************/
 
 //FfH: Modified by Kael 11/18/2007
-//	for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
+//	for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
 	if (GET_PLAYER(getOwnerINLINE()).isIgnoreFood())
 	{
 		iFoodMultiplier = 0;
@@ -8905,7 +8905,7 @@ void CvCityAI::AI_updateBestBuild()
 /**	Hunger									END													**/
 /*************************************************************************************************/
 	}
-	for (iI = 0; iI < getNumCityPlots(); iI++)
+	for (int iI = 0; iI < getNumCityPlots(); iI++)
 //FfH: End Modify
 
 	{
@@ -8985,8 +8985,8 @@ void CvCityAI::AI_updateBestBuild()
 		int aiValues[NUM_CITY_PLOTS];
 
 //FfH: Modified by Kael 02/05/2009
-//		for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
-		for (iI = 0; iI < getNumCityPlots(); iI++)
+//		for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
+		for (int iI = 0; iI < getNumCityPlots(); iI++)
 //FfH: End Modify
 
 		{
@@ -9003,7 +9003,7 @@ void CvCityAI::AI_updateBestBuild()
 /*************************************************************************************************/
 					if (m_aeBestBuild[iI] != NO_BUILD)
 					{
-						for (iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
+						for (int iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
 						{
 							aiYields[iJ] = pLoopPlot->getYieldWithBuild(m_aeBestBuild[iI], (YieldTypes)iJ, true);
 						}
@@ -9029,7 +9029,7 @@ void CvCityAI::AI_updateBestBuild()
 					}
 					if (!pLoopPlot->isBeingWorked())
 					{
-						for (iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
+						for (int iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
 						{
 							aiYields[iJ] = pLoopPlot->getYield((YieldTypes)iJ);
 						}
@@ -9056,8 +9056,8 @@ void CvCityAI::AI_updateBestBuild()
 		{
 
 //FfH: Modified by Kael 02/05/2009
-//			for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
-			for (iI = 0; iI < getNumCityPlots(); iI++)
+//			for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
+			for (int iI = 0; iI < getNumCityPlots(); iI++)
 //FfH: End Modify
 
 			{
@@ -9105,7 +9105,7 @@ void CvCityAI::AI_updateBestBuild()
 /*************************************************************************************************/
 							else if ((pLoopPlot->getImprovementType() != NO_IMPROVEMENT) && (GC.getBuildInfo(m_aeBestBuild[iI]).getImprovementClass() != NO_IMPROVEMENTCLASS))
 							{
-								for (iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
+								for (int iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
 								{
 									aiYields[iJ] = pLoopPlot->getYield((YieldTypes)iJ);
 								}
@@ -9268,7 +9268,7 @@ void CvCityAI::AI_doHurry(bool bForce)
 
 	bDanger = AI_isDanger();
 
-	for (iI = 0; iI < GC.getNumHurryInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumHurryInfos(); iI++)
 	{
 		if (canHurry((HurryTypes)iI))
 		{
@@ -9596,7 +9596,7 @@ void CvCityAI::AI_doHurry(bool bForce)
 				{
 					if (getSpecialistClassCount((SpecialistClassTypes)(GC.getDefineINT("DEFAULT_SPECIALISTCLASS"))) > 0)
 					{
-						for (iJ = 0; iJ < GC.getNumSpecialistClassInfos(); iJ++)
+						for (int iJ = 0; iJ < GC.getNumSpecialistClassInfos(); iJ++)
 						{
 							if (GC.getBuildingInfo(eProductionBuilding).getSpecialistClassCount(iJ) > 0)
 							{
@@ -9825,7 +9825,7 @@ void CvCityAI::AI_doHurry(bool bForce)
 								int iFoodSurplus = 0;
 								CvPlot * pLoopPlot;
 
-								for (iJ = 0; iJ < NUM_CITY_PLOTS; iJ++)
+								for (int iJ = 0; iJ < NUM_CITY_PLOTS; iJ++)
 								{
 									if (iJ != CITY_HOME_PLOT)
 									{
@@ -9910,7 +9910,7 @@ void CvCityAI::AI_doEmphasize()
 
 	int iPopulationRank = findPopulationRank();
 
-	for (iI = 0; iI < GC.getNumEmphasizeInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumEmphasizeInfos(); iI++)
 	{
 		bEmphasize = false;
 
@@ -10545,7 +10545,7 @@ bool CvCityAI::AI_removeWorstCitizen(SpecialistClassTypes eIgnoreSpecialist)
 	// if we are using more specialists than the free ones we get
 	if (extraFreeSpecialists() < 0)
 	{
-		for (iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 		{
 			if (eIgnoreSpecialist != iI)
 			{
@@ -10565,7 +10565,7 @@ bool CvCityAI::AI_removeWorstCitizen(SpecialistClassTypes eIgnoreSpecialist)
 	}
 
 	// check all the plots we working
-	for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
+	for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
 	{
 		if (iI != CITY_HOME_PLOT)
 		{
@@ -10602,7 +10602,7 @@ bool CvCityAI::AI_removeWorstCitizen(SpecialistClassTypes eIgnoreSpecialist)
 	// if we still have not removed one, then try again, but do not ignore the one we were told to ignore
 	if (extraFreeSpecialists() < 0)
 	{
-		for (iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 		{
 			if (getSpecialistClassCount((SpecialistClassTypes)iI) > 0)
 			{
@@ -10762,9 +10762,9 @@ bool CvCityAI::AI_foodAvailable(int iExtra)
 	iFoodCount = 0;
 
 //FfH: Modified by Kael 01/31/2009
-//	for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
+//	for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
 	int iNumCityPlots = getNumCityPlots();
-	for (iI = 0; iI < iNumCityPlots; iI++)
+	for (int iI = 0; iI < iNumCityPlots; iI++)
 //FfH: End Modify
 
 	{
@@ -10772,8 +10772,8 @@ bool CvCityAI::AI_foodAvailable(int iExtra)
 	}
 
 //FfH: Modified by Kael 01/31/2009
-//	for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
-	for (iI = 0; iI < iNumCityPlots; iI++)
+//	for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
+	for (int iI = 0; iI < iNumCityPlots; iI++)
 //FfH: End Modify
 
 	{
@@ -10800,8 +10800,8 @@ bool CvCityAI::AI_foodAvailable(int iExtra)
 		iBestPlot = CITY_HOME_PLOT;
 
 //FfH: Modified by Kael 01/31/2009
-//		for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
-		for (iI = 0; iI < iNumCityPlots; iI++)
+//		for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
+		for (int iI = 0; iI < iNumCityPlots; iI++)
 //FfH: End Modify
 
 		{
@@ -10830,7 +10830,7 @@ bool CvCityAI::AI_foodAvailable(int iExtra)
 		iPopulation--;
 	}
 
-	for (iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 	{
 		SpecialistTypes eSpecialist = (SpecialistTypes)getSpecialistTypeFromClass((SpecialistClassTypes)iI);
 		if(eSpecialist != NO_SPECIALIST)
@@ -11525,7 +11525,7 @@ int CvCityAI::AI_plotValue(CvPlot* pPlot, bool bAvoidGrowth, bool bRemove, bool 
 	iValue = 0;
 	iTotalDiff = 0;
 
-	for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
+	for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
 	{
 		aiYields[iI] = pPlot->getYield((YieldTypes)iI);
 	}
@@ -11554,7 +11554,7 @@ int CvCityAI::AI_plotValue(CvPlot* pPlot, bool bAvoidGrowth, bool bRemove, bool 
 
 	if (eFinalImprovement != NO_IMPROVEMENT)
 	{
-		for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
+		for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
 		{
 			iYieldDiff = (pPlot->calculateImprovementYieldChange(eFinalImprovement, ((YieldTypes)iI), getOwnerINLINE()) - pPlot->calculateImprovementYieldChange(eCurrentImprovement, ((YieldTypes)iI), getOwnerINLINE()));
 			aiYields[iI] += iYieldDiff;
@@ -11582,7 +11582,7 @@ int CvCityAI::AI_plotValue(CvPlot* pPlot, bool bAvoidGrowth, bool bRemove, bool 
 	{
 		if (pPlot->getBonusType(getTeam()) == NO_BONUS) // XXX double-check CvGame::doFeature that the checks are the same...
 		{
-			for (iI = 0; iI < GC.getNumBonusInfos(); iI++)
+			for (int iI = 0; iI < GC.getNumBonusInfos(); iI++)
 			{
 				if (GET_TEAM(getTeam()).isHasTech((TechTypes)(GC.getBonusInfo((BonusTypes) iI).getTechReveal())))
 				{
@@ -11776,7 +11776,7 @@ void CvCityAI::AI_bestPlotBuild(CvPlot* pPlot, int* piBestValue, BuildTypes* peB
 		}
 	}
 
-	for (iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
+	for (int iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
 	{
 		aiBestDiffYields[iJ] = 0;
 	}
@@ -11848,7 +11848,7 @@ void CvCityAI::AI_bestPlotBuild(CvPlot* pPlot, int* piBestValue, BuildTypes* peB
 		//once everything is nicely irrigated, this code should be really fast...
 		if ((pPlot->isIrrigated()) || (pPlot->isFreshWater() && pPlot->canHavePotentialIrrigation()))
 		{
-			for (iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
+			for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
 			{
 				pAdjacentPlot = plotDirection(pPlot->getX_INLINE(), pPlot->getY_INLINE(), ((DirectionTypes)iI));
 
@@ -11862,7 +11862,7 @@ void CvCityAI::AI_bestPlotBuild(CvPlot* pPlot, int* piBestValue, BuildTypes* peB
 						{
 							CvPlot* eBestIrrigationPlot = NULL;
 
-							for (iJ = 0; iJ < NUM_DIRECTION_TYPES; iJ++)
+							for (int iJ = 0; iJ < NUM_DIRECTION_TYPES; iJ++)
 							{
 								pAdjacentPlot2 = plotDirection(pAdjacentPlot->getX_INLINE(), pAdjacentPlot->getY_INLINE(), ((DirectionTypes)iJ));
 								if ((pAdjacentPlot2 != NULL) && (pAdjacentPlot2->getOwner() == getOwner()))
@@ -11925,7 +11925,7 @@ void CvCityAI::AI_bestPlotBuild(CvPlot* pPlot, int* piBestValue, BuildTypes* peB
 		szError.Format("cottage logging with bonus : %i", pPlot->getBonusType());
 		gDLL->logMsg("cottage.log", szError);
 
-	for (iI = 0; iI < GC.getNumImprovementClassInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumImprovementClassInfos(); iI++)
 	{
 		eImprovement = GET_PLAYER(getOwner()).getPlayerImprovement(((ImprovementClassTypes)iI));
 		if (eImprovement == NO_IMPROVEMENT)
@@ -11981,7 +11981,7 @@ void CvCityAI::AI_bestPlotBuild(CvPlot* pPlot, int* piBestValue, BuildTypes* peB
 /*************************************************************************************************/
 /**	Block Automated Forts						END												**/
 /*************************************************************************************************/
-				for (iJ = 0; iJ < GC.getNumBuildInfos(); iJ++)
+				for (int iJ = 0; iJ < GC.getNumBuildInfos(); iJ++)
 				{
 					eBuild = ((BuildTypes)iJ);
 
@@ -12207,7 +12207,7 @@ void CvCityAI::AI_bestPlotBuild(CvPlot* pPlot, int* piBestValue, BuildTypes* peB
 			}
 			else
 			{
-				for (iJ = 0; iJ < GC.getNumBonusInfos(); iJ++)
+				for (int iJ = 0; iJ < GC.getNumBonusInfos(); iJ++)
 				{
 					if (GC.getImprovementInfo(eFinalImprovement).getImprovementBonusDiscoverRand(iJ) > 0)
 					{
@@ -12237,7 +12237,7 @@ void CvCityAI::AI_bestPlotBuild(CvPlot* pPlot, int* piBestValue, BuildTypes* peB
 			{
 
 				iValue *= 2;
-				for (iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
+				for (int iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
 				{
 /*************************************************************************************************/
 /**	CivPlotMods								04/02/09								Jean Elcard	**/
@@ -12277,7 +12277,7 @@ void CvCityAI::AI_bestPlotBuild(CvPlot* pPlot, int* piBestValue, BuildTypes* peB
 
 				iValue /= 2;
 
-				for (iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
+				for (int iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
 				{
 					aiFinalYields[iJ] /= 2;
 					aiDiffYields[iJ] /= 2;
@@ -12626,7 +12626,7 @@ void CvCityAI::AI_bestPlotBuild(CvPlot* pPlot, int* piBestValue, BuildTypes* peB
 					iBestValue = iValue;
 					eBestBuild = eBestTempBuild;
 
-					for (iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
+					for (int iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
 					{
 						aiBestDiffYields[iJ] = aiDiffYields[iJ];
 					}
@@ -12657,7 +12657,7 @@ void CvCityAI::AI_bestPlotBuild(CvPlot* pPlot, int* piBestValue, BuildTypes* peB
 /**	CivPlotMods								END													**/
 /*************************************************************************************************/
 			{
-				for (iI = 0; iI < GC.getNumBuildInfos(); iI++)
+				for (int iI = 0; iI < GC.getNumBuildInfos(); iI++)
 				{
 					eBuild = ((BuildTypes)iI);
 
@@ -12697,7 +12697,7 @@ void CvCityAI::AI_bestPlotBuild(CvPlot* pPlot, int* piBestValue, BuildTypes* peB
 	if (bChop && (eBonus == NO_BONUS) && (pPlot->getFeatureType() != NO_FEATURE) &&
 		(pPlot->getImprovementType() == NO_IMPROVEMENT) && !(GET_PLAYER(getOwnerINLINE()).isOption(PLAYEROPTION_LEAVE_FORESTS)))
 	{
-		for (iI = 0; iI < GC.getNumBuildInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumBuildInfos(); iI++)
 		{
 			eBuild = ((BuildTypes)iI);
 			if (GC.getBuildInfo(eBuild).getImprovementClass() == NO_IMPROVEMENTCLASS)
@@ -12743,7 +12743,7 @@ void CvCityAI::AI_bestPlotBuild(CvPlot* pPlot, int* piBestValue, BuildTypes* peB
 	}
 
 
-	for (iI = 0; iI < GC.getNumRouteInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumRouteInfos(); iI++)
 	{
 		RouteTypes eRoute = (RouteTypes)iI;
 		RouteTypes eOldRoute = pPlot->getRouteType();
@@ -12784,7 +12784,7 @@ void CvCityAI::AI_bestPlotBuild(CvPlot* pPlot, int* piBestValue, BuildTypes* peB
 
 			if (iTempValue > 0)
 			{
-				for (iJ = 0; iJ < GC.getNumBuildInfos(); iJ++)
+				for (int iJ = 0; iJ < GC.getNumBuildInfos(); iJ++)
 				{
 					eBuild = ((BuildTypes)iJ);
 					if (GC.getBuildInfo(eBuild).getRoute() == eRoute)
@@ -12958,7 +12958,7 @@ int CvCityAI::AI_calculateCulturePressure(bool bGreatWork)
 	int iI;
 
 	iValue = 0;
-	for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
+	for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
 	{
 		pLoopPlot = plotCity(getX_INLINE(), getY_INLINE(), iI);
 		if (pLoopPlot != NULL)
@@ -13220,7 +13220,7 @@ int CvCityAI::AI_calculateWaterWorldPercent()
 	int iWaterPercent = 0;
 	int iTeamCityCount = 0;
 	int iOtherCityCount = 0;
-	for (iI = 0; iI < MAX_TEAMS; iI++)
+	for (int iI = 0; iI < MAX_TEAMS; iI++)
 	{
 		if (GET_TEAM((TeamTypes)iI).isAlive())
 		{
@@ -13299,7 +13299,7 @@ int CvCityAI::AI_getPlotMagicValue(CvPlot* pPlot, bool bHealthy, bool bWorkerOpt
 
 	FAssert(pPlot != NULL);
 
-	for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
+	for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
 	{
 		if ((bWorkerOptimization) && (pPlot->getWorkingCity() == this) && (AI_getBestBuild(getCityPlotIndex(pPlot)) != NO_BUILD))
 		{
@@ -13330,7 +13330,7 @@ int CvCityAI::AI_getPlotMagicValue(CvPlot* pPlot, bool bHealthy, bool bWorkerOpt
 
 		if ((eFinalImprovement != NO_IMPROVEMENT) && (eFinalImprovement != eCurrentImprovement))
 		{
-			for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
+			for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
 			{
 				iYieldDiff = 100 * pPlot->calculateImprovementYieldChange(eFinalImprovement, ((YieldTypes)iI), getOwnerINLINE());
 				iYieldDiff -= 100 * pPlot->calculateImprovementYieldChange(eCurrentImprovement, ((YieldTypes)iI), getOwnerINLINE());
@@ -13352,7 +13352,7 @@ int CvCityAI::AI_countGoodTiles(bool bHealthy, bool bUnworkedOnly, int iThreshol
 	int iCount;
 
 	iCount = 0;
-	for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
+	for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
 	{
 		pLoopPlot = plotCity(getX_INLINE(),getY_INLINE(), iI);
 		if ((iI != CITY_HOME_PLOT) && (pLoopPlot != NULL))
@@ -13492,7 +13492,7 @@ void CvCityAI::AI_stealPlots()
 
 	int iImportance = AI_getCityImportance(true, false);
 
-	for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
+	for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
 	{
 		pLoopPlot = plotCity(getX_INLINE(),getY_INLINE(),iI);
 
@@ -13546,7 +13546,7 @@ int CvCityAI::AI_buildingSpecialYieldChangeValue(BuildingTypes eBuilding, YieldT
 	if (iYieldChange > 0)
 	{
 		int iWaterCount = 0;
-		for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
+		for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
 		{
 			if (iI != CITY_HOME_PLOT)
 			{
@@ -13736,7 +13736,7 @@ int CvCityAI::AI_countNumBonuses(BonusTypes eBonus, bool bIncludeOurs, bool bInc
 	BonusTypes eLoopBonus;
 	int iI;
 	int iCount = 0;
-	for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
+	for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
 	{
 		pLoopPlot = plotCity(getX_INLINE(), getY_INLINE(), iI);
 
@@ -13785,7 +13785,7 @@ int CvCityAI::AI_countNumImprovableBonuses( bool bIncludeNeutral, TechTypes eExt
 	BonusTypes eLoopBonus;
 	int iI;
 	int iCount = 0;
-	for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
+	for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
 	{
 		pLoopPlot = plotCity(getX_INLINE(), getY_INLINE(), iI);
 
@@ -13881,7 +13881,7 @@ void CvCityAI::AI_cachePlayerCloseness(int iMaxDistance)
 /* 																				*/
 /* 	General AI, closeness changes												*/
 /********************************************************************************/
-	for (iI = 0; iI < MAX_PLAYERS; iI++)
+	for (int iI = 0; iI < MAX_PLAYERS; iI++)
 	{
 		if (GET_PLAYER((PlayerTypes)iI).isAlive() &&
 			((GET_TEAM(getTeam()).isHasMet(GET_PLAYER((PlayerTypes)iI).getTeam()))))

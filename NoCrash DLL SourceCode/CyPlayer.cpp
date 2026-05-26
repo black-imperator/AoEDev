@@ -67,7 +67,7 @@ void CyPlayer::killCities()
 
 std::wstring CyPlayer::getNewCityName()
 {
-	return m_pPlayer ? m_pPlayer->getNewCityName() : std::wstring();
+	return m_pPlayer ? std::wstring(m_pPlayer->getNewCityName()) : std::wstring();
 }
 
 CyUnit* CyPlayer::initUnit(int /*UnitTypes*/ iIndex, int iX, int iY, UnitAITypes eUnitAI, DirectionTypes eFacingDirection)
@@ -77,7 +77,7 @@ CyUnit* CyPlayer::initUnit(int /*UnitTypes*/ iIndex, int iX, int iY, UnitAITypes
 
 void CyPlayer::disbandUnit(bool bAnnounce)
 {
-	return m_pPlayer ? m_pPlayer->disbandUnit(bAnnounce) : NULL;
+	if (m_pPlayer) m_pPlayer->disbandUnit(bAnnounce);
 }
 
 void CyPlayer::killUnits()
@@ -103,7 +103,7 @@ bool CyPlayer::isBarbarian()
 
 std::wstring CyPlayer::getName()
 {
-	return m_pPlayer ? m_pPlayer->getName() : std::wstring();
+	return m_pPlayer ? std::wstring(m_pPlayer->getName()) : std::wstring();
 }
 void CyPlayer::setLeaderName(std::wstring szLeaderName)
 {
@@ -113,47 +113,47 @@ void CyPlayer::setLeaderName(std::wstring szLeaderName)
 }
 std::wstring CyPlayer::getNameForm(int iForm)
 {
-	return m_pPlayer ? m_pPlayer->getName((uint)iForm) : std::wstring();
+	return m_pPlayer ? std::wstring(m_pPlayer->getName((uint)iForm)) : std::wstring();
 }
 
 std::wstring CyPlayer::getNameKey()
 {
-	return m_pPlayer ? m_pPlayer->getNameKey() : std::wstring();
+	return m_pPlayer ? std::wstring(m_pPlayer->getNameKey()) : std::wstring();
 }
 
 std::wstring CyPlayer::getCivilizationDescription(int iForm)
 {
-	return m_pPlayer ? m_pPlayer->getCivilizationDescription((uint)iForm) : std::wstring();
+	return m_pPlayer ? std::wstring(m_pPlayer->getCivilizationDescription((uint)iForm)) : std::wstring();
 }
 
 std::wstring CyPlayer::getCivilizationDescriptionKey()
 {
-	return m_pPlayer ? m_pPlayer->getCivilizationDescriptionKey() : std::wstring();
+	return m_pPlayer ? std::wstring(m_pPlayer->getCivilizationDescriptionKey()) : std::wstring();
 }
 
 std::wstring CyPlayer::getCivilizationShortDescription(int iForm)
 {
-	return m_pPlayer ? m_pPlayer->getCivilizationShortDescription((uint)iForm) : std::wstring();
+	return m_pPlayer ? std::wstring(m_pPlayer->getCivilizationShortDescription((uint)iForm)) : std::wstring();
 }
 
 std::wstring CyPlayer::getCivilizationShortDescriptionKey()
 {
-	return m_pPlayer ? m_pPlayer->getCivilizationShortDescriptionKey() : std::wstring();
+	return m_pPlayer ? std::wstring(m_pPlayer->getCivilizationShortDescriptionKey()) : std::wstring();
 }
 
 std::wstring CyPlayer::getCivilizationAdjective(int iForm)
 {
-	return m_pPlayer ? m_pPlayer->getCivilizationAdjective((uint)iForm) : std::wstring();
+	return m_pPlayer ? std::wstring(m_pPlayer->getCivilizationAdjective((uint)iForm)) : std::wstring();
 }
 
 std::wstring CyPlayer::getCivilizationAdjectiveKey( )
 {
-	return m_pPlayer ? m_pPlayer->getCivilizationAdjectiveKey() : std::wstring();
+	return m_pPlayer ? std::wstring(m_pPlayer->getCivilizationAdjectiveKey()) : std::wstring();
 }
 
 std::wstring CyPlayer::getFlagDecal( )
 {
-	return m_pPlayer ? m_pPlayer->getFlagDecal() : std::wstring();
+	return m_pPlayer ? std::wstring(m_pPlayer->getFlagDecal()) : std::wstring();
 }
 
 bool CyPlayer::isWhiteFlag()
@@ -163,27 +163,27 @@ bool CyPlayer::isWhiteFlag()
 
 std::wstring CyPlayer::getStateReligionName(int iForm)
 {
-	return m_pPlayer ? m_pPlayer->getStateReligionName((int)iForm) : std::wstring();
+	return m_pPlayer ? std::wstring(m_pPlayer->getStateReligionName((int)iForm)) : std::wstring();
 }
 
 std::wstring CyPlayer::getStateReligionKey( )
 {
-	return m_pPlayer ? m_pPlayer->getStateReligionKey() : std::wstring();
+	return m_pPlayer ? std::wstring(m_pPlayer->getStateReligionKey()) : std::wstring();
 }
 
 std::wstring CyPlayer::getBestAttackUnitName(int iForm)
 {
-	return m_pPlayer ? m_pPlayer->getBestAttackUnitName((uint)iForm) : std::wstring();
+	return m_pPlayer ? std::wstring(m_pPlayer->getBestAttackUnitName((uint)iForm)) : std::wstring();
 }
 
 std::wstring CyPlayer::getWorstEnemyName()
 {
-	return m_pPlayer ? m_pPlayer->getWorstEnemyName() : std::wstring();
+	return m_pPlayer ? std::wstring(m_pPlayer->getWorstEnemyName()) : std::wstring();
 }
 
 std::wstring CyPlayer::getBestAttackUnitKey()
 {
-	return m_pPlayer ? m_pPlayer->getBestAttackUnitKey() : std::wstring();
+	return m_pPlayer ? std::wstring(m_pPlayer->getBestAttackUnitKey()) : std::wstring();
 }
 
 int /*ArtStyleTypes*/ CyPlayer::getArtStyleType()
@@ -1951,7 +1951,7 @@ int CyPlayer::getNumCityNames()
 
 std::wstring CyPlayer::getCityName(int iIndex)
 {
-	return m_pPlayer ? m_pPlayer->getCityName(iIndex) : std::wstring();
+	return m_pPlayer ? std::wstring(m_pPlayer->getCityName(iIndex)) : std::wstring();
 }
 
 // returns tuple of (CyCity, iterOut)
@@ -2520,7 +2520,7 @@ float CyPlayer::getTrainXPRate(int iI) const
 }
 std::wstring CyPlayer::getStateName()
 {
-	return m_pPlayer ? m_pPlayer->getStateName() : std::wstring();
+	return m_pPlayer ? std::wstring(m_pPlayer->getStateName()) : std::wstring();
 }
 int /* StateNameTypes */ CyPlayer::getStateNameType()
 {
@@ -2821,7 +2821,7 @@ void CyPlayer::setGreatPeopleThresholdModifier(int iNewValue)
 
 void CyPlayer::setHasTrait(int /*TraitTypes*/ iIndex, bool bNewValue)
 {
-	return m_pPlayer ? m_pPlayer->setHasTrait((TraitTypes) iIndex, bNewValue) : false;
+	if (m_pPlayer) m_pPlayer->setHasTrait((TraitTypes) iIndex, bNewValue);
 }
 //FfH: End Add
 
@@ -2856,20 +2856,20 @@ int CyPlayer::getFlagValue(int /*FlagTypes*/ iIndex)
 }
 void CyPlayer::setHasFlag(int /*FlagTypes*/ iIndex, bool eChange)
 {
-	return m_pPlayer ? m_pPlayer->setHasFlag((FlagTypes)iIndex, eChange) : NULL;
+	if (m_pPlayer) m_pPlayer->setHasFlag((FlagTypes)iIndex, eChange);
 }
 void CyPlayer::setFlagValue(int /*FlagTypes*/ iIndex, int eChange)
 {
-	return m_pPlayer ? m_pPlayer->setFlagValue((FlagTypes)iIndex, eChange) : NULL;
+	if (m_pPlayer) m_pPlayer->setFlagValue((FlagTypes)iIndex, eChange);
 }
 void CyPlayer::changeFlagValue(int /*FlagTypes*/ iIndex, int eChange)
 {
-	return m_pPlayer ? m_pPlayer->changeFlagValue((FlagTypes)iIndex, eChange) : NULL;
+	if (m_pPlayer) m_pPlayer->changeFlagValue((FlagTypes)iIndex, eChange);
 }
 
 void CyPlayer::setFreePromotion(int eUnitCombat, int ePromotion, bool bFree)
 {
-	return m_pPlayer ? m_pPlayer->setFreePromotion((UnitCombatTypes)eUnitCombat, (PromotionTypes)ePromotion, bFree) : NULL;
+	if (m_pPlayer) m_pPlayer->setFreePromotion((UnitCombatTypes)eUnitCombat, (PromotionTypes)ePromotion, bFree);
 }
 void CyPlayer::changeLeader(int /*LeaderHeadTypes*/ eNewLeader)
 {

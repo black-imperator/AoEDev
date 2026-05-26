@@ -214,7 +214,7 @@ void CvUnit::init(int iID, UnitTypes eUnit, UnitAITypes eUnitAI, PlayerTypes eOw
 		{
 			int iOffset = GC.getGameINLINE().getSorenRandNum(iNumNames, "Unit name selection");
 
-			for (iI = 0; iI < iNumNames; iI++)
+			for (int iI = 0; iI < iNumNames; iI++)
 			{
 				int iIndex = (iI + iOffset) % iNumNames;
 				CvWString szName = gDLL->getText(m_pUnitInfo->getUnitNames(iIndex));
@@ -231,7 +231,7 @@ void CvUnit::init(int iID, UnitTypes eUnit, UnitAITypes eUnitAI, PlayerTypes eOw
 	if (iUnitName < iNumNames)
 	{
 		int iOffset = GC.getGameINLINE().getSorenRandNum(iNumNames, "Unit name selection");
-		for (iI = 0; iI < iNumNames; iI++)
+		for (int iI = 0; iI < iNumNames; iI++)
 		{
 			int iIndex = (iI + iOffset) % iNumNames;
 			int iIndex2 = (iI + iOffset) % iNumQuotes;
@@ -316,7 +316,7 @@ void CvUnit::init(int iID, UnitTypes eUnit, UnitAITypes eUnitAI, PlayerTypes eOw
 	/**	Unit power						END															**/
 	/*************************************************************************************************/
 
-	for (iI = 0; iI < GC.getNumPromotionInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumPromotionInfos(); iI++)
 	{
 		if (m_pUnitInfo->getFreePromotions(iI))
 		{
@@ -336,7 +336,7 @@ void CvUnit::init(int iID, UnitTypes eUnit, UnitAITypes eUnitAI, PlayerTypes eOw
 			/*************************************************************************************************/
 		}
 	}
-	for (iI = 0; iI < GC.getNumBuildInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumBuildInfos(); iI++)
 	{
 		if (m_pUnitInfo->getBuilds(iI))
 		{
@@ -346,11 +346,11 @@ void CvUnit::init(int iID, UnitTypes eUnit, UnitAITypes eUnitAI, PlayerTypes eOw
 	FAssertMsg((GC.getNumTraitInfos() > 0), "GC.getNumTraitInfos() is less than or equal to zero but is expected to be larger than zero in CvUnit::init");
 	if (getUnitCombatType() != NO_UNITCOMBAT)
 	{
-		for (iI = 0; iI < GC.getNumTraitInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumTraitInfos(); iI++)
 		{
 			if (GET_PLAYER(getOwnerINLINE()).hasTrait((TraitTypes)iI))
 			{
-				for (iJ = 0; iJ < GC.getNumPromotionInfos(); iJ++)
+				for (int iJ = 0; iJ < GC.getNumPromotionInfos(); iJ++)
 				{
 					if (GC.getTraitInfo((TraitTypes)iI).isFreePromotion(iJ))
 					{
@@ -366,14 +366,14 @@ void CvUnit::init(int iID, UnitTypes eUnit, UnitAITypes eUnitAI, PlayerTypes eOw
 			}
 		}
 	}
-	for (iI = 0; iI < GC.getNumSpellClassInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumSpellClassInfos(); iI++)
 	{
 		changeExtraSpellClassPower(((SpellClassTypes)iI), (m_pUnitInfo->getSpellClassExtraPower(iI)));
 	}
 
 	if (NO_UNITCOMBAT != getUnitCombatType())
 	{
-		for (iJ = 0; iJ < GC.getNumPromotionInfos(); iJ++)
+		for (int iJ = 0; iJ < GC.getNumPromotionInfos(); iJ++)
 		{
 			if (GET_PLAYER(getOwnerINLINE()).isFreePromotion(getUnitCombatType(), (PromotionTypes)iJ))
 			{
@@ -384,7 +384,7 @@ void CvUnit::init(int iID, UnitTypes eUnit, UnitAITypes eUnitAI, PlayerTypes eOw
 
 	if (NO_UNITCLASS != getUnitClassType())
 	{
-		for (iJ = 0; iJ < GC.getNumPromotionInfos(); iJ++)
+		for (int iJ = 0; iJ < GC.getNumPromotionInfos(); iJ++)
 		{
 			if (GET_PLAYER(getOwnerINLINE()).isFreePromotion(getUnitClassType(), (PromotionTypes)iJ))
 			{
@@ -413,7 +413,7 @@ void CvUnit::init(int iID, UnitTypes eUnit, UnitAITypes eUnitAI, PlayerTypes eOw
 	if (isWorldUnitClass((UnitClassTypes)(m_pUnitInfo->getUnitClassType()))
 		&& GC.getGameINLINE().getUnitClassCreatedCount((UnitClassTypes)(m_pUnitInfo->getUnitClassType())) == 1)
 	{
-		for (iI = 0; iI < MAX_PLAYERS; iI++)
+		for (int iI = 0; iI < MAX_PLAYERS; iI++)
 		{
 			if (GET_PLAYER((PlayerTypes)iI).isAlive())
 			{
@@ -456,7 +456,7 @@ void CvUnit::init(int iID, UnitTypes eUnit, UnitAITypes eUnitAI, PlayerTypes eOw
 	int iNumAffinities = m_pUnitInfo->getNumAffinities();
 	if (iNumAffinities != 0)
 	{
-		for (iJ = 0; iJ < iNumAffinities; iJ++)
+		for (int iJ = 0; iJ < iNumAffinities; iJ++)
 		{
 			changeAffinities((AffinityTypes)m_pUnitInfo->getAffinities(iJ), 1);
 		}
@@ -486,7 +486,7 @@ void CvUnit::init(int iID, UnitTypes eUnit, UnitAITypes eUnitAI, PlayerTypes eOw
 /**	WorldBreakers							END													**/
 /*************************************************************************************************/
 	m_iReligion = m_pUnitInfo->getReligionType();
-	for (iI = 0; iI < GC.getNumBonusInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumBonusInfos(); iI++)
 	{
 		changeBonusAffinity((BonusTypes)iI, m_pUnitInfo->getBonusAffinity((BonusTypes)iI));
 	}
@@ -510,7 +510,7 @@ void CvUnit::init(int iID, UnitTypes eUnit, UnitAITypes eUnitAI, PlayerTypes eOw
 /**																								**/
 /**				Automatically applies a Promotion if Unit meets conditions at creation			**/
 /*************************************************************************************************/
-	for (iI = 0; iI < GC.getNumPromotionInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumPromotionInfos(); iI++)
 	{
 		if (GC.getPromotionInfo((PromotionTypes)iI).isAutoAcquire() && canPromote((PromotionTypes)iI, -1))
 		{
@@ -909,7 +909,7 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 		m_pabRealPromotion = new bool[GC.getNumPromotionInfos()];
 		m_pabPermanentSpellPromotion = new bool[GC.getNumPromotionInfos()];
 		m_aiSupplementalPromotions = new int[GC.getNumPromotionInfos()];
-		for(iI = 0; iI < GC.getNumPromotionInfos(); ++iI)
+		for (int iI = 0; iI < GC.getNumPromotionInfos(); ++iI)
 		{
 			m_pabRealPromotion[iI] = false;
 			m_pabPermanentSpellPromotion[iI] = false;
@@ -917,14 +917,14 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 		}
 		m_piYieldFromWin = new int[NUM_YIELD_TYPES];
 		m_piYieldForLoss = new int[NUM_YIELD_TYPES];
-		for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
+		for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
 		{
 			m_piYieldFromWin[iI] = 0;
 			m_piYieldForLoss[iI] = 0;
 		}
 		m_piCommerceFromWin = new int[NUM_COMMERCE_TYPES];
 		m_piCommerceForLoss = new int[NUM_COMMERCE_TYPES];
-		for (iI = 0; iI < NUM_COMMERCE_TYPES; iI++)
+		for (int iI = 0; iI < NUM_COMMERCE_TYPES; iI++)
 		{
 			m_piCommerceFromWin[iI] = 0;
 			m_piCommerceForLoss[iI] = 0;
@@ -932,7 +932,7 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 		m_piPromotionDuration = new int[GC.getNumPromotionInfos()];
 		m_piAllowPromotion = new int[GC.getNumPromotionInfos()];
 		m_piDenyPromotion = new int[GC.getNumPromotionInfos()];
-		for (iI = 0; iI < GC.getNumPromotionInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumPromotionInfos(); iI++)
 		{
 			m_piPromotionDuration[iI] = 0;
 			m_piAllowPromotion[iI] = 0;
@@ -943,7 +943,7 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 /**				Allows units to qualify for the promotions of other UnitCombats					**/
 /*************************************************************************************************/
 		m_piSecondaryUnitCombat = new int[GC.getNumUnitCombatInfos()];
-		for (iI = 0; iI < GC.getNumUnitCombatInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumUnitCombatInfos(); iI++)
 		{
 			m_piSecondaryUnitCombat[iI] = 0;
 		}
@@ -957,7 +957,7 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 /*************************************************************************************************/
 		m_piAffinities = new int[GC.getNumAffinityInfos()];
 		m_piAffinityApplications = new int[GC.getNumAffinityInfos()];
-		for (iI = 0; iI < GC.getNumAffinityInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumAffinityInfos(); iI++)
 		{
 			m_piAffinities[iI] = 0;
 			m_piAffinityApplications[iI] = 0;
@@ -1059,11 +1059,11 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 	{
 		m_aiInvisibleTypes.clear();
 		m_aiSeeInvisibleTypes.clear();
-	//	for (iI = 0; iI < m_pUnitInfo->getNumSeeInvisibleTypes(); iI++)
+	//	for (int iI = 0; iI < m_pUnitInfo->getNumSeeInvisibleTypes(); iI++)
 	//	{
 	//		m_aiSeeInvisibleTypes.push_back(m_pUnitInfo->getSeeInvisibleType(iI));
 	//	}
-	//	for (iI = 0; iI < m_pUnitInfo->getNumInvisibleTypes(); iI++)
+	//	for (int iI = 0; iI < m_pUnitInfo->getNumInvisibleTypes(); iI++)
 	//	{
 	//		m_aiInvisibleTypes.push_back(m_pUnitInfo->getInvisibleType(iI));
 	//	}
@@ -1113,7 +1113,7 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 	{
 		m_paiDamageTypeCombat = new int[GC.getNumDamageTypeInfos()];
 		m_paiDamageTypeResist = new int[GC.getNumDamageTypeInfos()];
-		for (iI = 0; iI < GC.getNumDamageTypeInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumDamageTypeInfos(); iI++)
 		{
 			int iChange = (NO_UNIT != m_eUnitType) ? m_pUnitInfo->getDamageTypeCombat(iI) : 0;
 			m_paiDamageTypeCombat[iI] = iChange;
@@ -1122,7 +1122,7 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 		}
 		m_paiBonusAffinity = new int[GC.getNumBonusInfos()];
 		m_paiBonusAffinityAmount = new int[GC.getNumBonusInfos()];
-		for (iI = 0; iI < GC.getNumBonusInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumBonusInfos(); iI++)
 		{
 			m_paiBonusAffinity[iI] = 0;
 			m_paiBonusAffinityAmount[iI] = 0;
@@ -1133,7 +1133,7 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 	m_combatUnit.reset();
 	m_transportUnit.reset();
 
-	for (iI = 0; iI < NUM_DOMAIN_TYPES; iI++)
+	for (int iI = 0; iI < NUM_DOMAIN_TYPES; iI++)
 	{
 		m_aiExtraDomainModifier[iI] = 0;
 	}
@@ -1155,13 +1155,13 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 /*************************************************************************************************/
 /**								---- Start Original Code ----									**
 		m_pabHasPromotion = new bool[GC.getNumPromotionInfos()];
-		for (iI = 0; iI < GC.getNumPromotionInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumPromotionInfos(); iI++)
 		{
 			m_pabHasPromotion[iI] = false;
 		}
 /**								----  End Original Code  ----									**/
 		m_paiHasPromotion = new int[GC.getNumPromotionInfos()];
-		for (iI = 0; iI < GC.getNumPromotionInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumPromotionInfos(); iI++)
 		{
 			m_paiHasPromotion[iI] = false;
 		}
@@ -1170,7 +1170,7 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 /*************************************************************************************************/
 		FAssertMsg((0 < GC.getNumImprovementInfos()), "GC.getNumImprovementInfos() is not greater than zero but a float array is being allocated in CvUnit::reset");
 		m_paiNoBadExploreImprovement = new int[GC.getNumImprovementInfos()];
-		for (iI = 0; iI < GC.getNumImprovementInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumImprovementInfos(); iI++)
 		{
 			m_paiNoBadExploreImprovement[iI] = 0;
 		}
@@ -1179,7 +1179,7 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 		m_paiExtraTerrainAttackPercent = new int[GC.getNumTerrainInfos()];
 		m_paiExtraTerrainDefensePercent = new int[GC.getNumTerrainInfos()];
 		m_paiTerrainCost = new int[GC.getNumTerrainInfos()];				// GWS
-		for (iI = 0; iI < GC.getNumTerrainInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumTerrainInfos(); iI++)
 		{
 			m_paiTerrainDoubleMoveCount[iI] = 0;
 			m_paiExtraTerrainAttackPercent[iI] = 0;
@@ -1192,7 +1192,7 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 		m_paiExtraFeatureDefensePercent = new int[GC.getNumFeatureInfos()];
 		m_paiExtraFeatureAttackPercent = new int[GC.getNumFeatureInfos()];
 		m_paiFeatureCost = new int[GC.getNumFeatureInfos()];				// GWS
-		for (iI = 0; iI < GC.getNumFeatureInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumFeatureInfos(); iI++)
 		{
 			m_paiFeatureDoubleMoveCount[iI] = 0;
 			m_paiExtraFeatureAttackPercent[iI] = 0;
@@ -1203,7 +1203,7 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 		m_paiPlotEffectDoubleMoveCount = new int[GC.getNumPlotEffectInfos()];
 		m_paiExtraPlotEffectDefensePercent = new int[GC.getNumPlotEffectInfos()];
 		m_paiExtraPlotEffectAttackPercent = new int[GC.getNumPlotEffectInfos()];
-		for (iI = 0; iI < GC.getNumPlotEffectInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumPlotEffectInfos(); iI++)
 		{
 			m_paiPlotEffectDoubleMoveCount[iI] = 0;
 			m_paiExtraPlotEffectAttackPercent[iI] = 0;
@@ -1212,14 +1212,14 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 
 		FAssertMsg((0 < GC.getNumUnitCombatInfos()), "GC.getNumUnitCombatInfos() is not greater than zero but an array is being allocated in CvUnit::reset");
 		m_paiExtraUnitCombatModifier = new int[GC.getNumUnitCombatInfos()];
-		for (iI = 0; iI < GC.getNumUnitCombatInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumUnitCombatInfos(); iI++)
 		{
 			m_paiExtraUnitCombatModifier[iI] = 0;
 		}
 
 		FAssertMsg((0 < GC.getNumSpellClassInfos()), "GC.getNu_mSpellClassInfos() is not greater than zero but an array is being allocated in CvUnit::reset");
 		m_paiExtraSpellClassPower = new int[GC.getNumSpellClassInfos()];
-		for (iI = 0; iI < GC.getNumSpellClassInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumSpellClassInfos(); iI++)
 		{
 			m_paiExtraSpellClassPower[iI] = 0;
 		}
@@ -1242,7 +1242,7 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 	m_iExtraMagicalPower = 0;
 //	m_iExtraDominionCapacity = 0;
 //	m_piSpellClassExtraPower = new int[GC.getNumSpellClassInfos()];
-//	for (iI = 0; iI < GC.getNumSpellClassInfos(); iI++)
+//	for (int iI = 0; iI < GC.getNumSpellClassInfos(); iI++)
 	//{
 	//	m_piSpellClassExtraPower[iI] = 0;
 	//}
@@ -2262,7 +2262,7 @@ void CvUnit::doTurn()
 	}
 
 	// Blaze 2025 note: This sequence of promos may e.g. remove promo iI in one step then add it in another; might need some better checks?
-	for (iI = 0; iI < GC.getNumPromotionInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumPromotionInfos(); iI++)
 	{
 		if (isHasPromotion((PromotionTypes)iI))
 		{
@@ -2386,7 +2386,7 @@ void CvUnit::doTurn()
 
 	if (pPlot->isCity())
 	{
-		for (iI = 0; iI < GC.getNumBuildingInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumBuildingInfos(); iI++)
 		{
 			if (pPlot->getPlotCity()->getNumBuilding((BuildingTypes)iI) > 0)
 			{
@@ -5488,7 +5488,7 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 	// If it has a Route Native then the Plot must have one of the Route Natives
 	bool bHasRouteNative = false;
 	int iI;
-	for (iI = 0; iI < GC.getNumRouteInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumRouteInfos(); iI++)
 	{
 		if (GC.getUnitInfo(getUnitType()).getRouteNative(iI))
 		{
@@ -5912,7 +5912,7 @@ bool CvUnit::jumpToNearestValidPlot(bool bKill, bool bAdjacentOnly)
 	iBestValue = MAX_INT;
 	pBestPlot = NULL;
 
-	for (iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
 	{
 		pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
 
@@ -6441,7 +6441,7 @@ void CvUnit::load()
 
 	pPlot = plot();
 
-	for (iPass = 0; iPass < 2; iPass++)
+	for (int iPass = 0; iPass < 2; iPass++)
 	{
 		pUnitNode = pPlot->headUnitNode();
 
@@ -7179,7 +7179,7 @@ bool CvUnit::canNukeAt(const CvPlot* pPlot, int iX, int iY) const
 
 	pTargetPlot = GC.getMapINLINE().plotINLINE(iX, iY);
 
-	for (iI = 0; iI < MAX_TEAMS; iI++)
+	for (int iI = 0; iI < MAX_TEAMS; iI++)
 	{
 		if (isNukeVictim(pTargetPlot, ((TeamTypes)iI)))
 		{
@@ -7210,12 +7210,12 @@ bool CvUnit::nuke(int iX, int iY)
 
 	pPlot = GC.getMapINLINE().plotINLINE(iX, iY);
 
-	for (iI = 0; iI < MAX_TEAMS; iI++)
+	for (int iI = 0; iI < MAX_TEAMS; iI++)
 	{
 		abTeamsAffected[iI] = isNukeVictim(pPlot, ((TeamTypes)iI));
 	}
 
-	for (iI = 0; iI < MAX_TEAMS; iI++)
+	for (int iI = 0; iI < MAX_TEAMS; iI++)
 	{
 		if (abTeamsAffected[iI])
 		{
@@ -7229,7 +7229,7 @@ bool CvUnit::nuke(int iX, int iY)
 	iBestInterception = 0;
 	eBestTeam = NO_TEAM;
 
-	for (iI = 0; iI < MAX_TEAMS; iI++)
+	for (int iI = 0; iI < MAX_TEAMS; iI++)
 	{
 		if (abTeamsAffected[iI])
 		{
@@ -7248,7 +7248,7 @@ bool CvUnit::nuke(int iX, int iY)
 
 	if (GC.getGameINLINE().getSorenRandNum(100, "Nuke") < iBestInterception)
 	{
-		for (iI = 0; iI < MAX_PLAYERS; iI++)
+		for (int iI = 0; iI < MAX_PLAYERS; iI++)
 		{
 			if (GET_PLAYER((PlayerTypes)iI).isAlive())
 			{
@@ -7292,7 +7292,7 @@ bool CvUnit::nuke(int iX, int iY)
 	setMadeAttack(true);
 	setAttackPlot(pPlot, false);
 
-	for (iI = 0; iI < MAX_TEAMS; iI++)
+	for (int iI = 0; iI < MAX_TEAMS; iI++)
 	{
 		if (abTeamsAffected[iI])
 		{
@@ -7302,7 +7302,7 @@ bool CvUnit::nuke(int iX, int iY)
 		}
 	}
 
-	for (iI = 0; iI < MAX_TEAMS; iI++)
+	for (int iI = 0; iI < MAX_TEAMS; iI++)
 	{
 		if (GET_TEAM((TeamTypes)iI).isAlive())
 		{
@@ -7310,7 +7310,7 @@ bool CvUnit::nuke(int iX, int iY)
 			{
 				if (abTeamsAffected[iI])
 				{
-					for (iJ = 0; iJ < MAX_PLAYERS; iJ++)
+					for (int iJ = 0; iJ < MAX_PLAYERS; iJ++)
 					{
 						if (GET_PLAYER((PlayerTypes)iJ).isAlive())
 						{
@@ -7323,7 +7323,7 @@ bool CvUnit::nuke(int iX, int iY)
 				}
 				else
 				{
-					for (iJ = 0; iJ < MAX_TEAMS; iJ++)
+					for (int iJ = 0; iJ < MAX_TEAMS; iJ++)
 					{
 						if (GET_TEAM((TeamTypes)iJ).isAlive())
 						{
@@ -7333,7 +7333,7 @@ bool CvUnit::nuke(int iX, int iY)
 								{
 									if (GET_TEAM((TeamTypes)iI).AI_getAttitude((TeamTypes)iJ) >= ATTITUDE_CAUTIOUS)
 									{
-										for (iK = 0; iK < MAX_PLAYERS; iK++)
+										for (int iK = 0; iK < MAX_PLAYERS; iK++)
 										{
 											if (GET_PLAYER((PlayerTypes)iK).isAlive())
 											{
@@ -7356,7 +7356,7 @@ bool CvUnit::nuke(int iX, int iY)
 
 	// XXX some AI should declare war here...
 
-	for (iI = 0; iI < MAX_PLAYERS; iI++)
+	for (int iI = 0; iI < MAX_PLAYERS; iI++)
 	{
 		if (GET_PLAYER((PlayerTypes)iI).isAlive())
 		{
@@ -8541,7 +8541,7 @@ int CvUnit::sabotageProb(const CvPlot* pPlot, ProbabilityTypes eProbStyle) const
 		iDefenseCount = pPlot->plotCount(PUF_canDefend, -1, -1, NO_PLAYER, pPlot->getTeam());
 		iCounterSpyCount = pPlot->plotCount(PUF_isCounterSpy, -1, -1, NO_PLAYER, pPlot->getTeam());
 
-		for (iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
+		for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
 		{
 			pLoopPlot = plotDirection(pPlot->getX_INLINE(), pPlot->getY_INLINE(), ((DirectionTypes)iI));
 
@@ -8744,7 +8744,7 @@ int CvUnit::destroyProb(const CvPlot* pPlot, ProbabilityTypes eProbStyle) const
 
 	iCounterSpyCount = pPlot->plotCount(PUF_isCounterSpy, -1, -1, NO_PLAYER, pPlot->getTeam());
 
-	for (iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
+	for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
 	{
 		pLoopPlot = plotDirection(pPlot->getX_INLINE(), pPlot->getY_INLINE(), ((DirectionTypes)iI));
 
@@ -8908,7 +8908,7 @@ int CvUnit::stealPlansProb(const CvPlot* pPlot, ProbabilityTypes eProbStyle) con
 
 	iCounterSpyCount = pPlot->plotCount(PUF_isCounterSpy, -1, -1, NO_PLAYER, pPlot->getTeam());
 
-	for (iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
+	for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
 	{
 		pLoopPlot = plotDirection(pPlot->getX_INLINE(), pPlot->getY_INLINE(), ((DirectionTypes)iI));
 
@@ -10533,7 +10533,7 @@ bool CvUnit::build(BuildTypes eBuild)
 	if (GC.getBuildInfo(eBuild).getNumLinkedBuilds() > 0)
 	{
 		iNumLinkedBuilds = GC.getBuildInfo(eBuild).getNumLinkedBuilds();
-		for (iJ=0; iJ < iNumLinkedBuilds; iJ++)
+		for (int iJ=0; iJ < iNumLinkedBuilds; iJ++)
 		{
 			BuildTypes eLinkedBuild = (BuildTypes)GC.getBuildInfo(eBuild).getLinkedBuilds(iJ);
 
@@ -11145,7 +11145,7 @@ bool CvUnit::upgradeAvailable(UnitTypes eFromUnit, UnitClassTypes eToUnitClass, 
 		return true;
 	}
 
-	for (iI = 0; iI < numUnitClassInfos; iI++)
+	for (int iI = 0; iI < numUnitClassInfos; iI++)
 	{
 		if (fromUnitInfo.getUpgradeUnitClass(iI))
 		{
@@ -11182,7 +11182,7 @@ bool CvUnit::upgradeAvailable(UnitTypes eFromUnit, UnitClassTypes eToUnitClass, 
 	CvUnitInfo &fromUnitInfo = GC.getUnitInfo(eFromUnit);
 
 
-	for (iI = 0; iI < fromUnitInfo.getNumUpgradeUnitClass(); iI++)
+	for (int iI = 0; iI < fromUnitInfo.getNumUpgradeUnitClass(); iI++)
 	{
 		eUpgradeClass = (UnitClassTypes)GC.getUnitInfo(eFromUnit).getUpgradeUnitClass(iI);
 		if (eUpgradeClass == eToUnitClass)
@@ -12107,7 +12107,7 @@ bool CvUnit::canBuildRoute() const
 /*************************************************************************************************/
 	int iI;
 
-	for (iI = 0; iI < GC.getNumBuildInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumBuildInfos(); iI++)
 	{
 		if (GC.getBuildInfo((BuildTypes)iI).getRoute() != NO_ROUTE)
 		{
@@ -13845,7 +13845,7 @@ CvUnit* CvUnit::bestInterceptor(const CvPlot* pPlot) const
 	iBestValue = 0;
 	pBestUnit = NULL;
 
-	for (iI = 0; iI < MAX_PLAYERS; iI++)
+	for (int iI = 0; iI < MAX_PLAYERS; iI++)
 	{
 		if (GET_PLAYER((PlayerTypes)iI).isAlive())
 		{
@@ -14115,7 +14115,7 @@ bool CvUnit::isRanged() const
 {
 	int i;
 	CvUnitInfo * pkUnitInfo = &getUnitInfo();
-	for ( i = 0; i < pkUnitInfo->getGroupDefinitions(); i++ )
+	for (int i = 0; i < pkUnitInfo->getGroupDefinitions(); i++ )
 	{
 		if ( !getArtInfo(i, GET_PLAYER(getOwnerINLINE()).getCurrentEra())->getActAsRanged() )
 		{
@@ -15380,7 +15380,7 @@ void CvUnit::setXY(int iX, int iY, bool bGroup, bool bUpdate, bool bShow, bool b
 
 		if (pOldPlot->isWater())
 		{
-			for (iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
+			for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
 			{
 				pLoopPlot = plotDirection(pOldPlot->getX_INLINE(), pOldPlot->getY_INLINE(), ((DirectionTypes)iI));
 
@@ -15570,7 +15570,7 @@ void CvUnit::setXY(int iX, int iY, bool bGroup, bool bUpdate, bool bShow, bool b
 			load();
 		}
 
-		for (iI = 0; iI < MAX_CIV_TEAMS; iI++)
+		for (int iI = 0; iI < MAX_CIV_TEAMS; iI++)
 		{
 			if (GET_TEAM((TeamTypes)iI).isAlive())
 			{
@@ -15627,7 +15627,7 @@ void CvUnit::setXY(int iX, int iY, bool bGroup, bool bUpdate, bool bShow, bool b
 
 		if (pNewPlot->isWater())
 		{
-			for (iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
+			for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
 			{
 				pLoopPlot = plotDirection(pNewPlot->getX_INLINE(), pNewPlot->getY_INLINE(), ((DirectionTypes)iI));
 
@@ -16030,7 +16030,7 @@ void CvUnit::setXY(int iX, int iY, bool bGroup, bool bUpdate, bool bShow, bool b
 /*************************************************************************************************/
 	if (pNewPlot != NULL)
 	{
-		for (iI = 0; iI < GC.getNumPromotionInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumPromotionInfos(); iI++)
 		{
 			if (isHasPromotion((PromotionTypes)iI))
 			{
@@ -20028,10 +20028,11 @@ const CvWString CvUnit::getName(uint uiForm) const
 	szBuffer.Format(L"%s (%s)", m_szName.GetCString(), m_pUnitInfo->getDescription(uiForm));
 /**								----  End Original Code  ----									**/
 	{
-		return (m_szNewName.empty() ? m_pUnitInfo->getDescription(uiForm) : gDLL->getObjectText(m_szNewName, uiForm, true));
+		return (m_szNewName.empty() ? CvWString(m_pUnitInfo->getDescription(uiForm)) : gDLL->getObjectText(m_szNewName, uiForm, true));
 	}
 
-	szBuffer.Format(L"%s (%s)", m_szName.GetCString(), (m_szNewName.empty() ? m_pUnitInfo->getDescription(uiForm) : gDLL->getObjectText(m_szNewName, uiForm, true)));
+	CvWString szDescription = m_szNewName.empty() ? CvWString(m_pUnitInfo->getDescription(uiForm)) : gDLL->getObjectText(m_szNewName, uiForm, true);
+	szBuffer.Format(L"%s (%s)", m_szName.GetCString(), szDescription.GetCString());
 /*************************************************************************************************/
 /**	Moniker										END												**/
 /*************************************************************************************************/
@@ -21800,7 +21801,7 @@ bool CvUnit::canAcquirePromotionAny() const
 {
 	int iI;
 
-	for (iI = 0; iI < GC.getNumPromotionInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumPromotionInfos(); iI++)
 	{
 		if (canAcquirePromotion((PromotionTypes)iI))
 		{
@@ -22368,7 +22369,7 @@ void CvUnit::setHasPromotion(PromotionTypes eIndex, bool bNewValue, bool bSupres
 		
 		if (bNewValue)
 		{
-			for (iI = 0; iI < GC.getNumPromotionInfos(); iI++)
+			for (int iI = 0; iI < GC.getNumPromotionInfos(); iI++)
 			{
 				if (isHasPromotion((PromotionTypes)iI))
 				{
@@ -22420,7 +22421,7 @@ void CvUnit::setHasPromotion(PromotionTypes eIndex, bool bNewValue, bool bSupres
 			}
 			if (kPromotion.getNumPromotionOverwrites() > 0)
 			{
-				for (iI = 0; iI < kPromotion.getNumPromotionOverwrites(); iI++)
+				for (int iI = 0; iI < kPromotion.getNumPromotionOverwrites(); iI++)
 				{
 					if (isHasPromotion(kPromotion.getPromotionOverwrites(iI)))
 					{
@@ -22430,7 +22431,7 @@ void CvUnit::setHasPromotion(PromotionTypes eIndex, bool bNewValue, bool bSupres
 			}
 			if (kPromotion.getPromotionClassOverwrite() != NO_PROMOTIONCLASS)
 			{
-				for (iI = 0; iI < GC.getNumPromotionInfos(); iI++)
+				for (int iI = 0; iI < GC.getNumPromotionInfos(); iI++)
 				{
 					if (isHasPromotion((PromotionTypes)iI) && GC.getPromotionInfo((PromotionTypes)iI).getPromotionClass() == kPromotion.getPromotionClassOverwrite())
 					{
@@ -22442,7 +22443,7 @@ void CvUnit::setHasPromotion(PromotionTypes eIndex, bool bNewValue, bool bSupres
 		setNewName(kPromotion.getNewName(), bNewValue);
 	//	if (kPromotion.getNumInvisibleTypes() > 0)
 	//	{
-	//		for (iI = 0; iI < kPromotion.getNumInvisibleTypes(); iI++)
+	//		for (int iI = 0; iI < kPromotion.getNumInvisibleTypes(); iI++)
 	//		{
 	//			setInvisibleType(kPromotion.getInvisibleType(iI), bNewValue);
 	//		}
@@ -22455,7 +22456,7 @@ void CvUnit::setHasPromotion(PromotionTypes eIndex, bool bNewValue, bool bSupres
 		changeRevealedPromo((kPromotion.isRevealed()) ? iChange : 0);
 	//	if (kPromotion.getNumSeeInvisibleTypes() > 0)
 	//	{
-	//		for (iI = 0; iI < kPromotion.getNumSeeInvisibleTypes(); iI++)
+	//		for (int iI = 0; iI < kPromotion.getNumSeeInvisibleTypes(); iI++)
 	//		{
 	//			setSeeInvisibleType(kPromotion.getSeeInvisibleType(iI), bNewValue);
 	//		}
@@ -22560,12 +22561,12 @@ void CvUnit::setHasPromotion(PromotionTypes eIndex, bool bNewValue, bool bSupres
 			changeAuraBonuses(bNewValue, kPromotion.listAuraBonuses());
 			applyAuraBonusEffects(true, true,false);
 		}
-		for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
+		for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
 		{
 			changeYieldFromWin(iI, (kPromotion.getYieldFromWin(iI) * iChange));
 			changeYieldForLoss(iI, (kPromotion.getYieldForLoss(iI) * iChange));
 		}
-		for (iI = 0; iI < NUM_COMMERCE_TYPES; iI++)
+		for (int iI = 0; iI < NUM_COMMERCE_TYPES; iI++)
 		{
 			changeCommerceFromWin(iI, (kPromotion.getCommerceFromWin(iI) * iChange));
 			changeCommerceForLoss(iI, (kPromotion.getCommerceForLoss(iI) * iChange));
@@ -22573,7 +22574,7 @@ void CvUnit::setHasPromotion(PromotionTypes eIndex, bool bNewValue, bool bSupres
 		changeNoBadExplore(kPromotion.getNoBadExplore() * iChange);
 		if(kPromotion.getNumMinionPromotions() > 0)
 		{
-			for (iI = 0; iI < getNumMinions(); ++iI)
+			for (int iI = 0; iI < getNumMinions(); ++iI)
 			{
 				if (plotDistance(getMinionUnit(iI)->getX_INLINE(), getMinionUnit(iI)->getY_INLINE(), getX_INLINE(), getY_INLINE()) <= getCommandRange())
 				{
@@ -22597,7 +22598,7 @@ void CvUnit::setHasPromotion(PromotionTypes eIndex, bool bNewValue, bool bSupres
 				}
 			}
 		}
-		for (iI = 0; iI < getNumSlaves(); ++iI)
+		for (int iI = 0; iI < getNumSlaves(); ++iI)
 		{
 			for (int iJ = 0; iJ < kPromotion.getNumSlavePromotions(); ++iJ)
 			{
@@ -22716,27 +22717,27 @@ void CvUnit::setHasPromotion(PromotionTypes eIndex, bool bNewValue, bool bSupres
 			}
 		}
 
-		for (iI = 0; iI < GC.getNumDamageTypeInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumDamageTypeInfos(); iI++)
 		{
 			changeDamageTypeCombat(((DamageTypes)iI), (kPromotion.getDamageTypeCombat(iI) * iChange));
 		}
-		for (iI = 0; iI < GC.getNumBonusInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumBonusInfos(); iI++)
 		{
 			changeBonusAffinity(((BonusTypes)iI), (kPromotion.getBonusAffinity(iI) * iChange));
 		}
-		for (iI = 0; iI < GC.getNumDamageTypeInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumDamageTypeInfos(); iI++)
 		{
 			changeDamageTypeResist(((DamageTypes)iI), (kPromotion.getDamageTypeResist(iI) * iChange));
 		}
 //FfH: End Add
 
-		for (iI = 0; iI < GC.getNumImprovementInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumImprovementInfos(); iI++)
 		{
 			changeNoBadExploreImprovement(((ImprovementTypes)iI), ((kPromotion.getNoBadExploreImprovement(iI)) * iChange ));
 
 		}
 
-		for (iI = 0; iI < GC.getNumTerrainInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumTerrainInfos(); iI++)
 		{
 			changeExtraTerrainAttackPercent(((TerrainTypes)iI), (kPromotion.getTerrainAttackPercent(iI) * iChange));
 			changeExtraTerrainDefensePercent(((TerrainTypes)iI), (kPromotion.getTerrainDefensePercent(iI) * iChange));
@@ -22744,14 +22745,14 @@ void CvUnit::setHasPromotion(PromotionTypes eIndex, bool bNewValue, bool bSupres
 			changeTerrainCostModifier(((TerrainTypes)iI), (kPromotion.getPromotionTerrainCost(iI) * iChange));			// GWS
 		}
 
-		for (iI = 0; iI < GC.getNumFeatureInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumFeatureInfos(); iI++)
 		{
 			changeExtraFeatureAttackPercent(((FeatureTypes)iI), (kPromotion.getFeatureAttackPercent(iI) * iChange));
 			changeExtraFeatureDefensePercent(((FeatureTypes)iI), (kPromotion.getFeatureDefensePercent(iI) * iChange));
 			changeFeatureDoubleMoveCount(((FeatureTypes)iI), ((kPromotion.getFeatureDoubleMove(iI)) ? iChange : 0));
 			changeFeatureCostModifier(((FeatureTypes)iI), (kPromotion.getPromotionFeatureCost(iI) * iChange));			// GWS
 		}
-		for (iI = 0; iI < GC.getNumPlotEffectInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumPlotEffectInfos(); iI++)
 		{
 			changeExtraPlotEffectAttackPercent(((PlotEffectTypes)iI), (kPromotion.getPlotEffectAttackPercent(iI) * iChange));
 			changeExtraPlotEffectDefensePercent(((PlotEffectTypes)iI), (kPromotion.getPlotEffectDefensePercent(iI) * iChange));
@@ -22768,18 +22769,18 @@ void CvUnit::setHasPromotion(PromotionTypes eIndex, bool bNewValue, bool bSupres
 /**	GWS										END													**/
 /*************************************************************************************************/
 
-		for (iI = 0; iI < GC.getNumUnitCombatInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumUnitCombatInfos(); iI++)
 		{
 			changeExtraUnitCombatModifier(((UnitCombatTypes)iI), (kPromotion.getUnitCombatModifierPercent(iI) * iChange));
 		}
 
-		for (iI = 0; iI < GC.getNumSpellClassInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumSpellClassInfos(); iI++)
 		{
 			changeExtraSpellClassPower(((SpellClassTypes)iI), (kPromotion.getExtraSpellClassPower(iI) * iChange));
 		}
 	
 
-		for (iI = 0; iI < NUM_DOMAIN_TYPES; iI++)
+		for (int iI = 0; iI < NUM_DOMAIN_TYPES; iI++)
 		{
 			changeExtraDomainModifier(((DomainTypes)iI), (kPromotion.getDomainModifierPercent(iI) * iChange));
 		}
@@ -22851,7 +22852,7 @@ void CvUnit::setHasPromotion(PromotionTypes eIndex, bool bNewValue, bool bSupres
 /**		WTH was this? Why look through every promotion to find eIndex? eIndex is eIndex!		**/
 /*************************************************************************************************/
 /**								---- Start Original Code ----									**
-				for (iI = 0; iI < GC.getNumPromotionInfos(); iI++)
+				for (int iI = 0; iI < GC.getNumPromotionInfos(); iI++)
 				{
 					if (isHasPromotion((PromotionTypes)iI) && (PromotionTypes)iI == eIndex)
 					{
@@ -22888,7 +22889,7 @@ void CvUnit::setHasPromotion(PromotionTypes eIndex, bool bNewValue, bool bSupres
 		}
 		if (kPromotion.getNumPromotionDegradesTo() > 0 && !bSupressEffects)
 		{
-			for (iI = 0; iI < kPromotion.getNumPromotionDegradesTo(); iI++)
+			for (int iI = 0; iI < kPromotion.getNumPromotionDegradesTo(); iI++)
 			{
 				setHasPromotion(kPromotion.getPromotionDegradesTo(iI), true);
 				wchar szBuffer[1024];
@@ -22912,7 +22913,7 @@ void CvUnit::setHasPromotion(PromotionTypes eIndex, bool bNewValue, bool bSupres
 /*************************************************************************************************/
 	if(bChange)
 	{
-		for (iI = 0; iI < GC.getNumPromotionInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumPromotionInfos(); iI++)
 		{
 			if (isHasPromotion((PromotionTypes)iI) && GC.getPromotionInfo((PromotionTypes)iI).isMustMaintain() && !canAcquirePromotion((PromotionTypes)iI,true) && !m_pUnitInfo->getFreePromotions(iI))
 			{
@@ -26781,7 +26782,7 @@ void CvUnit::castCreateUnit(int spell, CvPlot* pTargetPlot)
 					/**	Tweak									END													**/
 					/*************************************************************************************************/
 				}
-				for (iI = 0; iI < GC.getNumPromotionInfos(); iI++)
+				for (int iI = 0; iI < GC.getNumPromotionInfos(); iI++)
 				{
 					if (isHasPromotion((PromotionTypes)iI))
 					{
@@ -27596,7 +27597,7 @@ void CvUnit::mutate()
 	int iMutationChances = GC.getDefineINT("MUTATION_CHANCE");
 	int iNumEffects = GC.getGameINLINE().getSorenRandNum(iMutationChances, "Mutation Effects") + 1;
 
-	for (iI = 0; iI < iNumEffects; iI++)
+	for (int iI = 0; iI < iNumEffects; iI++)
 	{
 		iEffectType = GC.getGameINLINE().getSorenRandNum(100, "Mutation Type");
 		if (iEffectType < iGoodMutation)
@@ -27622,7 +27623,7 @@ void CvUnit::mutate()
 			iTargetWeight = 0;
 			iBestPromotion = -1;
 			iNumApplications = 0;
-			for (iJ = 0; iJ < GC.getNumPromotionInfos(); iJ++)
+			for (int iJ = 0; iJ < GC.getNumPromotionInfos(); iJ++)
 			{
 				if (GC.getPromotionInfo((PromotionTypes)iJ).isMutation())
 				{
@@ -27647,7 +27648,7 @@ void CvUnit::mutate()
 
 			iTargetWeight = GC.getGameINLINE().getSorenRandNum(iWeight, "Mutation Weighting");
 
-			for (iJ = 0; iJ < GC.getNumPromotionInfos(); iJ++)
+			for (int iJ = 0; iJ < GC.getNumPromotionInfos(); iJ++)
 			{
 				if (GC.getPromotionInfo((PromotionTypes)iJ).isMutation())
 				{
@@ -27703,7 +27704,7 @@ void CvUnit::mutate()
 					}
 				}
 
-				for (iK = 0; iK < iNumApplied; iK++)
+				for (int iK = 0; iK < iNumApplied; iK++)
 				{
 					setHasPromotion(((PromotionTypes)iBestPromotion), true);
 				}
@@ -27716,7 +27717,7 @@ void CvUnit::mutate()
 			iTargetWeight = 0;
 			iBestPromotion = -1;
 			iNumApplications = 0;
-			for (iJ = 0; iJ < GC.getNumPromotionInfos(); iJ++)
+			for (int iJ = 0; iJ < GC.getNumPromotionInfos(); iJ++)
 			{
 				if (GC.getPromotionInfo((PromotionTypes)iJ).isMutation())
 				{
@@ -27741,7 +27742,7 @@ void CvUnit::mutate()
 
 			iTargetWeight = GC.getGameINLINE().getSorenRandNum(iWeight, "Mutation Weighting");
 
-			for (iJ = 0; iJ < GC.getNumPromotionInfos(); iJ++)
+			for (int iJ = 0; iJ < GC.getNumPromotionInfos(); iJ++)
 			{
 				if (GC.getPromotionInfo((PromotionTypes)iJ).isMutation())
 				{
@@ -27797,7 +27798,7 @@ void CvUnit::mutate()
 					}
 				}
 
-				for (iK = 0; iK < iNumApplied; iK++)
+				for (int iK = 0; iK < iNumApplied; iK++)
 				{
 					setHasPromotion(((PromotionTypes)iBestPromotion), true);
 				}
@@ -28758,7 +28759,7 @@ void CvUnit::combatWon(CvUnit* pLoser, bool bAttacking)
 	CvPlot* pPlot;
 	CvUnit* pUnit;
 
-	for (iI = 0; iI < GC.getNumPromotionInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumPromotionInfos(); iI++)
 	{
 		if (isHasPromotion((PromotionTypes)iI))
 		{
@@ -29222,7 +29223,7 @@ void CvUnit::updateAffinity(bool bKill)
 				int iNumBonusTypes = kAffinity.getNumBonusTypes();
 				if (iNumBonusTypes > 0)
 				{
-					for (iI = 0; iI < iNumBonusTypes; iI++)
+					for (int iI = 0; iI < iNumBonusTypes; iI++)
 					{
 						iApplications += GET_PLAYER(getOwnerINLINE()).getNumAvailableBonuses((BonusTypes) kAffinity.getBonusTypes(iI));
 					}
@@ -29460,7 +29461,7 @@ void CvUnit::updateAffinity(bool bKill)
 					changeExtraFriendlyHeal((int)(fValue * fApplications));
 				}
 
-				for (iI = 0; iI < GC.getNumDamageTypeInfos(); iI++)
+				for (int iI = 0; iI < GC.getNumDamageTypeInfos(); iI++)
 				{
 					fValue = kAffinity.getDamageTypeCombats(iI);
 					if (fValue != 0.0f)
@@ -29475,7 +29476,7 @@ void CvUnit::updateAffinity(bool bKill)
 						changeDamageTypeResist((DamageTypes)iI, ((int)(fValue * fApplications)));
 					}
 				}
-				for (iI = 0; iI < GC.getNumTerrainInfos(); iI++)
+				for (int iI = 0; iI < GC.getNumTerrainInfos(); iI++)
 				{
 					fValue = kAffinity.getTerrainDefenseMods(iI);
 					if (fValue != 0.0f)
@@ -29488,13 +29489,13 @@ void CvUnit::updateAffinity(bool bKill)
 				int iNumAffinityPromotions = kAffinity.getNumAffinityPromotions();
 				if (iNumAffinityPromotions > 0)
 				{
-					for (iI = 0; iI < iNumAffinityPromotions; iI++)
+					for (int iI = 0; iI < iNumAffinityPromotions; iI++)
 					{
-						for (iJ = 0; iJ < iOldApplications; iJ++)
+						for (int iJ = 0; iJ < iOldApplications; iJ++)
 						{
 							setHasPromotion((PromotionTypes)kAffinity.getAffinityPromotions(iI), false);
 						}
-						for (iJ = 0; iJ < iApplications; iJ++)
+						for (int iJ = 0; iJ < iApplications; iJ++)
 						{
 							setHasPromotion((PromotionTypes)kAffinity.getAffinityPromotions(iI), true);
 						}
@@ -31562,7 +31563,7 @@ int CvUnit::planBattle( CvBattleDefinition & kBattleDefinition ) const
 		kBattleDefinition.setBattleRound(iTotalRounds, kRound);
 
 		// For the attacker and defender
-		for ( i = 0; i < BATTLE_UNIT_COUNT; i++ )
+		for (int i = 0; i < BATTLE_UNIT_COUNT; i++ )
 		{
 			// Gather some initial information
 			BattleUnitTypes unitType = (BattleUnitTypes) i;
@@ -31603,14 +31604,14 @@ int CvUnit::planBattle( CvBattleDefinition & kBattleDefinition ) const
 			bIsLoser = aiUnitsEnd[unitType] == 0;
 
 			// Randomize the ranged deaths
-			for ( j = 0; j < aiToKillRanged[unitType]; j++ )
+			for (int j = 0; j < aiToKillRanged[unitType]; j++ )
 			{
 				iRoundIndex = GC.getGameINLINE().getSorenRandNum( range( kBattleDefinition.getNumRangedRounds(), 0, kBattleDefinition.getNumRangedRounds()), "Ranged combat death");
 				kBattleDefinition.getBattleRound(iRoundIndex).addNumKilled(unitType, 1);
 			}
 
 			// Randomize the melee deaths
-			for ( j = 0; j < aiToKillMelee[unitType]; j++ )
+			for (int j = 0; j < aiToKillMelee[unitType]; j++ )
 			{
 				iRoundIndex = GC.getGameINLINE().getSorenRandNum( range( kBattleDefinition.getNumMeleeRounds() - (bIsLoser ? 1 : 2 ), 0, kBattleDefinition.getNumMeleeRounds()), "Melee combat death");
 				kBattleDefinition.getBattleRound(kBattleDefinition.getNumRangedRounds() + iRoundIndex).addNumKilled(unitType, 1);
@@ -32421,7 +32422,7 @@ void CvUnit::salvage(CvUnit* pDeadUnit)
 	pNearestCity = GC.getMapINLINE().findCity(getX_INLINE(), getY_INLINE(), getOwnerINLINE(), NO_TEAM, true, false);
 	if (pNearestCity != NULL)
 	{
-		for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
+		for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
 		{
 			if ((pDeadUnit->getYieldForLoss(iI) + GET_PLAYER(getOwnerINLINE()).getBaseYieldFromUnit((YieldTypes)iI) + getYieldFromWin(iI)) != 0)
 			{
@@ -32451,7 +32452,7 @@ void CvUnit::salvage(CvUnit* pDeadUnit)
 	TechTypes eTempTech;
 	TechTypes eRewardTech;
 
-	for (iI = 0; iI < NUM_COMMERCE_TYPES; iI++)
+	for (int iI = 0; iI < NUM_COMMERCE_TYPES; iI++)
 	{
 		int iJ;
 		eCommerce = ((CommerceTypes)iI);
@@ -32474,7 +32475,7 @@ void CvUnit::salvage(CvUnit* pDeadUnit)
 					}
 				}
 
-				for (iJ = 0; iJ < GC.getNUM_UNIT_AND_TECH_PREREQS(); iJ++)
+				for (int iJ = 0; iJ < GC.getNUM_UNIT_AND_TECH_PREREQS(); iJ++)
 				{
 					eTempTech = ((TechTypes)GC.getUnitInfo(pDeadUnit->getUnitType()).getPrereqAndTechs(iJ));
 					if (eTempTech != NO_TECH)
@@ -32490,7 +32491,7 @@ void CvUnit::salvage(CvUnit* pDeadUnit)
 					}
 				}
 
-				for (iJ = 0; iJ < GC.getNumPromotionInfos(); iJ++)
+				for (int iJ = 0; iJ < GC.getNumPromotionInfos(); iJ++)
 				{
 					if (pDeadUnit->isHasPromotion((PromotionTypes)iJ))
 					{

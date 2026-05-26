@@ -6,6 +6,16 @@
 #include <string>
 #pragma warning( disable: 4251 )		// needs to have dll-interface to be used by clients of class
 
+// CV4_NOINLINE: clang inlines variadic functions, which breaks va_start.
+// Apply to all variadic format/Format helpers.
+#if defined(__clang__)
+#  define CV4_NOINLINE __attribute__((noinline))
+#elif defined(_MSC_VER)
+#  define CV4_NOINLINE __declspec(noinline)
+#else
+#  define CV4_NOINLINE
+#endif
+
 //
 // simple string classes, based on stl, but with a few helpers
 //
@@ -333,7 +343,7 @@ inline void CvString::getTokens(const CvString& delimiters, std::vector<CvString
 //
 // static
 //
-inline bool CvString::formatv(std::string & out, const char * fmt, va_list args)
+CV4_NOINLINE inline bool CvString::formatv(std::string & out, const char * fmt, va_list args)
 {
 	char buf[2048];
 	char * pbuf = buf;
@@ -376,7 +386,7 @@ inline bool CvString::formatv(std::string & out, const char * fmt, va_list args)
 //
 // static
 //
-inline bool CvWString::formatv(std::wstring & out, const wchar * fmt, va_list args)
+CV4_NOINLINE inline bool CvWString::formatv(std::wstring & out, const wchar * fmt, va_list args)
 {
 	wchar buf[2048];
 	wchar * pbuf = buf;
@@ -420,7 +430,7 @@ inline bool CvWString::formatv(std::wstring & out, const wchar * fmt, va_list ar
 //
 // static
 //
-inline std::wstring CvWString::formatv(const wchar * fmt, va_list args)
+CV4_NOINLINE inline std::wstring CvWString::formatv(const wchar * fmt, va_list args)
 {
 	std::wstring result;
 	formatv( result, fmt, args );
@@ -430,7 +440,7 @@ inline std::wstring CvWString::formatv(const wchar * fmt, va_list args)
 //
 // static
 //
-inline CvWString CvWString::format(const wchar * fmt, ...)
+CV4_NOINLINE inline CvWString CvWString::format(const wchar * fmt, ...)
 {
 	std::wstring result;
 	va_list args;
@@ -443,7 +453,7 @@ inline CvWString CvWString::format(const wchar * fmt, ...)
 //
 // static
 //
-inline bool CvWString::format(std::wstring & out, const wchar * fmt, ...)
+CV4_NOINLINE inline bool CvWString::format(std::wstring & out, const wchar * fmt, ...)
 {
 	va_list args;
 	va_start(args,fmt);
@@ -455,7 +465,7 @@ inline bool CvWString::format(std::wstring & out, const wchar * fmt, ...)
 //
 //
 //
-inline void CvWString::Format( LPCWSTR lpszFormat, ... )
+CV4_NOINLINE inline void CvWString::Format( LPCWSTR lpszFormat, ... )
 {
 	std::wstring result;
 	va_list args;
@@ -468,7 +478,7 @@ inline void CvWString::Format( LPCWSTR lpszFormat, ... )
 //
 // static
 //
-inline std::string CvString::formatv(const char * fmt, va_list args)
+CV4_NOINLINE inline std::string CvString::formatv(const char * fmt, va_list args)
 {
 	std::string result;
 	formatv( result, fmt, args );
@@ -477,7 +487,7 @@ inline std::string CvString::formatv(const char * fmt, va_list args)
 //
 // static
 //
-inline CvString CvString::format(const char * fmt, ...)
+CV4_NOINLINE inline CvString CvString::format(const char * fmt, ...)
 {
 	std::string result;
 	va_list args;
@@ -490,7 +500,7 @@ inline CvString CvString::format(const char * fmt, ...)
 //
 // static
 //
-inline bool CvString::format(std::string & out, const char * fmt, ...)
+CV4_NOINLINE inline bool CvString::format(std::string & out, const char * fmt, ...)
 {
 	va_list args;
 	va_start(args,fmt);
@@ -503,7 +513,7 @@ inline bool CvString::format(std::string & out, const char * fmt, ...)
 //
 //
 //
-inline void CvString::Format( LPCSTR lpszFormat, ... )
+CV4_NOINLINE inline void CvString::Format( LPCSTR lpszFormat, ... )
 {
 	std::string result;
 	va_list args;

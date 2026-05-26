@@ -147,7 +147,7 @@ void CvArea::reset(int iID, bool bWater, bool bConstructorCall)
 
 	m_bWater = bWater;
 
-	for (iI = 0; iI < MAX_PLAYERS; iI++)
+	for (int iI = 0; iI < MAX_PLAYERS; iI++)
 	{
 		m_aiUnitsPerPlayer[iI] = 0;
 		m_aiAnimalsPerPlayer[iI] = 0;
@@ -161,31 +161,31 @@ void CvArea::reset(int iID, bool bWater, bool bConstructorCall)
 		m_aiBestFoundValue[iI] = 0;
 	}
 
-	for (iI = 0; iI < MAX_TEAMS; iI++)
+	for (int iI = 0; iI < MAX_TEAMS; iI++)
 	{
 		m_aiNumRevealedTiles[iI] = 0;
 		m_aiCleanPowerCount[iI] = 0;
 		m_aiBorderObstacleCount[iI] = 0;
 	}
 
-	for (iI = 0; iI < MAX_TEAMS; iI++)
+	for (int iI = 0; iI < MAX_TEAMS; iI++)
 	{
 		m_aeAreaAIType[iI] = NO_AREAAI;
 	}
 
-	for (iI = 0; iI < MAX_PLAYERS; iI++)
+	for (int iI = 0; iI < MAX_PLAYERS; iI++)
 	{
 		m_aTargetCities[iI].reset();
 	}
 
-	for (iI = 0; iI < MAX_PLAYERS; iI++)
+	for (int iI = 0; iI < MAX_PLAYERS; iI++)
 	{
-		for (iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
+		for (int iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
 		{
 			m_aaiYieldRateModifier[iI][iJ] = 0;
 		}
 
-		for (iJ = 0; iJ < NUM_UNITAI_TYPES; iJ++)
+		for (int iJ = 0; iJ < NUM_UNITAI_TYPES; iJ++)
 		{
 			m_aaiNumTrainAIUnits[iI][iJ] = 0;
 			m_aaiNumAIUnits[iI][iJ] = 0;
@@ -196,14 +196,14 @@ void CvArea::reset(int iID, bool bWater, bool bConstructorCall)
 	{
 		FAssertMsg((0 < GC.getNumBonusInfos()) && "GC.getNumBonusInfos() is not greater than zero but an array is being allocated in CvArea::reset", "GC.getNumBonusInfos() is not greater than zero but an array is being allocated in CvArea::reset");
 		m_paiNumBonuses = new int[GC.getNumBonusInfos()];
-		for (iI = 0; iI < GC.getNumBonusInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumBonusInfos(); iI++)
 		{
 			m_paiNumBonuses[iI] = 0;
 		}
 
 		FAssertMsg((0 < GC.getNumImprovementInfos()) && "GC.getNumImprovementInfos() is not greater than zero but an array is being allocated in CvArea::reset", "GC.getNumImprovementInfos() is not greater than zero but an array is being allocated in CvArea::reset");
 		m_paiNumImprovements = new int[GC.getNumImprovementInfos()];
-		for (iI = 0; iI < GC.getNumImprovementInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumImprovementInfos(); iI++)
 		{
 			m_paiNumImprovements[iI] = 0;
 		}
@@ -231,7 +231,7 @@ int CvArea::calculateTotalBestNatureYield() const
 
 	iCount = 0;
 
-	for (iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
 	{
 		pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
 
@@ -258,7 +258,7 @@ int CvArea::countCoastalLand() const
 
 	iCount = 0;
 
-	for (iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
 	{
 		pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
 
@@ -282,7 +282,7 @@ int CvArea::countNumUniqueBonusTypes() const
 
 	iCount = 0;
 
-	for (iI = 0; iI < GC.getNumBonusInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumBonusInfos(); iI++)
 	{
 		if (getNumBonuses((BonusTypes)iI) > 0)
 		{
@@ -306,7 +306,7 @@ int CvArea::countHasReligion(ReligionTypes eReligion, PlayerTypes eOwner) const
 
 	iCount = 0;
 
-	for (iI = 0; iI < MAX_PLAYERS; iI++)
+	for (int iI = 0; iI < MAX_PLAYERS; iI++)
 	{
 		if (GET_PLAYER((PlayerTypes)iI).isAlive())
 		{
@@ -974,21 +974,21 @@ void CvArea::read(FDataStreamBase* pStream)
 
 	pStream->Read(MAX_TEAMS, (int*)m_aeAreaAIType);
 
-	for (iI=0;iI<MAX_PLAYERS;iI++)
+	for (int iI=0;iI<MAX_PLAYERS;iI++)
 	{
 		pStream->Read((int*)&m_aTargetCities[iI].eOwner);
 		pStream->Read(&m_aTargetCities[iI].iID);
 	}
 
-	for (iI = 0; iI < MAX_PLAYERS; iI++)
+	for (int iI = 0; iI < MAX_PLAYERS; iI++)
 	{
 		pStream->Read(NUM_YIELD_TYPES, m_aaiYieldRateModifier[iI]);
 	}
-	for (iI = 0; iI < MAX_PLAYERS; iI++)
+	for (int iI = 0; iI < MAX_PLAYERS; iI++)
 	{
 		pStream->Read(NUM_UNITAI_TYPES, m_aaiNumTrainAIUnits[iI]);
 	}
-	for (iI = 0; iI < MAX_PLAYERS; iI++)
+	for (int iI = 0; iI < MAX_PLAYERS; iI++)
 	{
 		pStream->Read(NUM_UNITAI_TYPES, m_aaiNumAIUnits[iI]);
 	}
@@ -1041,21 +1041,21 @@ void CvArea::write(FDataStreamBase* pStream)
 
 	pStream->Write(MAX_TEAMS, (int*)m_aeAreaAIType);
 
-	for (iI=0;iI<MAX_PLAYERS;iI++)
+	for (int iI=0;iI<MAX_PLAYERS;iI++)
 	{
 		pStream->Write(m_aTargetCities[iI].eOwner);
 		pStream->Write(m_aTargetCities[iI].iID);
 	}
 
-	for (iI = 0; iI < MAX_PLAYERS; iI++)
+	for (int iI = 0; iI < MAX_PLAYERS; iI++)
 	{
 		pStream->Write(NUM_YIELD_TYPES, m_aaiYieldRateModifier[iI]);
 	}
-	for (iI = 0; iI < MAX_PLAYERS; iI++)
+	for (int iI = 0; iI < MAX_PLAYERS; iI++)
 	{
 		pStream->Write(NUM_UNITAI_TYPES, m_aaiNumTrainAIUnits[iI]);
 	}
-	for (iI = 0; iI < MAX_PLAYERS; iI++)
+	for (int iI = 0; iI < MAX_PLAYERS; iI++)
 	{
 		pStream->Write(NUM_UNITAI_TYPES, m_aaiNumAIUnits[iI]);
 	}

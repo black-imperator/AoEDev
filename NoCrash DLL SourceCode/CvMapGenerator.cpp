@@ -80,7 +80,7 @@ bool CvMapGenerator::canPlaceBonusAt(BonusTypes eBonus, int iX, int iY, bool bIg
 		}
 	}
 
-	for (iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
+	for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
 	{
 		pLoopPlot = plotDirection(iX, iY, ((DirectionTypes)iI));
 
@@ -285,7 +285,7 @@ void CvMapGenerator::addLakes()
 	CvPlot* pLoopPlot;
 	int iI;
 
-	for (iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
 	{
 		gDLL->callUpdater();
 		pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
@@ -327,7 +327,7 @@ void CvMapGenerator::addRivers()
 	int iSeaWaterRange;
 	int iI;
 
-	for (iPass = 0; iPass < 4; iPass++)
+	for (int iPass = 0; iPass < 4; iPass++)
 	{
 		if (iPass <= 1)
 		{
@@ -347,7 +347,7 @@ void CvMapGenerator::addRivers()
 			iSeaWaterRange = (GC.getDefineINT("RIVER_SOURCE_MIN_SEAWATER_RANGE") / 2);
 		}
 
-		for (iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+		for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
 		{
 			gDLL->callUpdater();
 			pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
@@ -955,7 +955,7 @@ void CvMapGenerator::eraseRivers()
 {
 	int i;
 
-	for (i = 0; i < GC.getMapINLINE().numPlotsINLINE(); i++)
+	for (int i = 0; i < GC.getMapINLINE().numPlotsINLINE(); i++)
 	{
 		CvPlot* pPlot = GC.getMapINLINE().plotByIndexINLINE(i);
 		if (pPlot->isNOfRiver())
@@ -973,7 +973,7 @@ void CvMapGenerator::eraseFeatures()
 {
 	int i;
 
-	for (i = 0; i < GC.getMapINLINE().numPlotsINLINE(); i++)
+	for (int i = 0; i < GC.getMapINLINE().numPlotsINLINE(); i++)
 	{
 		CvPlot* pPlot = GC.getMapINLINE().plotByIndexINLINE(i);
 		pPlot->setFeatureType(NO_FEATURE);
@@ -984,7 +984,7 @@ void CvMapGenerator::eraseBonuses()
 {
 	int i;
 
-	for (i = 0; i < GC.getMapINLINE().numPlotsINLINE(); i++)
+	for (int i = 0; i < GC.getMapINLINE().numPlotsINLINE(); i++)
 	{
 		CvPlot* pPlot = GC.getMapINLINE().plotByIndexINLINE(i);
 		pPlot->setBonusType(NO_BONUS);
@@ -995,7 +995,7 @@ void CvMapGenerator::eraseGoodies()
 {
 	int i;
 
-	for (i = 0; i < GC.getMapINLINE().numPlotsINLINE(); i++)
+	for (int i = 0; i < GC.getMapINLINE().numPlotsINLINE(); i++)
 	{
 		CvPlot* pPlot = GC.getMapINLINE().plotByIndexINLINE(i);
 		if (pPlot->isGoody())
@@ -1158,7 +1158,7 @@ int CvMapGenerator::getRiverValueAtPlot(CvPlot* pPlot)
 
 	iSum += ((NUM_PLOT_TYPES - pPlot->getPlotType()) * 20);
 
-	for (iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
+	for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
 	{
 		pAdjacentPlot = plotDirection(pPlot->getX_INLINE(), pPlot->getY_INLINE(), ((DirectionTypes)iI));
 

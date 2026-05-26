@@ -65,7 +65,7 @@ void CvPlotGroup::reset(int iID, PlayerTypes eOwner, bool bConstructorCall)
 	{
 		FAssertMsg((0 < GC.getNumBonusInfos()), "GC.getNumBonusInfos() is not greater than zero but an array is being allocated in CvPlotGroup::reset");
 		m_paiNumBonuses = new int [GC.getNumBonusInfos()];
-		for (iI = 0; iI < GC.getNumBonusInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumBonusInfos(); iI++)
 		{
 			m_paiNumBonuses[iI] = 0;
 		}

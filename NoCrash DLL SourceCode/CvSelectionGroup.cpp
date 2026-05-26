@@ -3481,7 +3481,7 @@ bool CvSelectionGroup::isHasPathToAreaEnemyCity( bool bIgnoreMinors, int iFlags,
 	int iI;
 	int iPass = 0;
 
-	for( iI = 0; iI < MAX_PLAYERS; iI++ )
+	for (int iI = 0; iI < MAX_PLAYERS; iI++ )
 	{
 		if (GET_PLAYER((PlayerTypes)iI).isAlive() && isPotentialEnemy(getTeam(), GET_PLAYER((PlayerTypes)iI).getTeam()) )
 		{
@@ -3945,7 +3945,7 @@ RouteTypes CvSelectionGroup::getBestBuildRoute(CvPlot* pPlot, BuildTypes* peBest
 		pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = nextUnitNode(pUnitNode);
 
-		for (iI = 0; iI < GC.getNumBuildInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumBuildInfos(); iI++)
 		{
 			eRoute = ((RouteTypes)(GC.getBuildInfo((BuildTypes) iI).getRoute()));
 

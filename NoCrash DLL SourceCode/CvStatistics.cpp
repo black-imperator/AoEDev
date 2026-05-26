@@ -127,17 +127,17 @@ void CvPlayerRecord::reset()
 	m_pbReligionFounded = new bool[GC.getNumReligionInfos()];
 
 	int i;
-	for (i = 0; i < GC.getNumUnitInfos(); ++i)
+	for (int i = 0; i < GC.getNumUnitInfos(); ++i)
 	{
 		m_piNumUnitsBuilt[i] = 0;
 		m_piNumUnitsKilled[i] = 0;
 		m_piNumUnitsWasKilled[i] = 0;
 	}
-	for (i = 0; i < GC.getNumBuildingInfos(); ++i)
+	for (int i = 0; i < GC.getNumBuildingInfos(); ++i)
 	{
 		m_piNumBuildingsBuilt[i] = 0;
 	}
-	for (i = 0; i < GC.getNumReligionInfos(); ++i)
+	for (int i = 0; i < GC.getNumReligionInfos(); ++i)
 	{
 		m_pbReligionFounded[i] = false;
 	}

@@ -89,10 +89,10 @@ void CvMap::init(CvMapInitData* pInitInfo/*=NULL*/)
 	// Init other game data
 	gDLL->logMemState("CvMap before init plots");
 	m_pMapPlots = new CvPlot[numPlotsINLINE()];
-	for (iX = 0; iX < getGridWidthINLINE(); iX++)
+	for (int iX = 0; iX < getGridWidthINLINE(); iX++)
 	{
 		gDLL->callUpdater();
-		for (iY = 0; iY < getGridHeightINLINE(); iY++)
+		for (int iY = 0; iY < getGridHeightINLINE(); iY++)
 		{
 			plotSorenINLINE(iX, iY)->init(iX, iY);
 		}
@@ -227,7 +227,7 @@ void CvMap::reset(CvMapInitData* pInitInfo)
 		m_paiNumBonus = new int[GC.getNumBonusInfos()];
 		FAssertMsg(m_paiNumBonusOnLand==NULL, "mem leak m_paiNumBonusOnLand");
 		m_paiNumBonusOnLand = new int[GC.getNumBonusInfos()];
-		for (iI = 0; iI < GC.getNumBonusInfos(); iI++)
+		for (int iI = 0; iI < GC.getNumBonusInfos(); iI++)
 		{
 			m_paiNumBonus[iI] = 0;
 			m_paiNumBonusOnLand[iI] = 0;
@@ -283,7 +283,7 @@ void CvMap::setupGraphical()
 	if (m_pMapPlots != NULL)
 	{
 		int iI;
-		for (iI = 0; iI < numPlotsINLINE(); iI++)
+		for (int iI = 0; iI < numPlotsINLINE(); iI++)
 		{
 			gDLL->callUpdater();	// allow windows msgs to update
 			plotByIndexINLINE(iI)->setupGraphical();
@@ -308,7 +308,7 @@ void CvMap::erasePlots()
 {
 	int iI;
 
-	for (iI = 0; iI < numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < numPlotsINLINE(); iI++)
 	{
 		plotByIndexINLINE(iI)->erase();
 	}
@@ -321,7 +321,7 @@ void CvMap::setRevealedPlots(TeamTypes eTeam, bool bNewValue, bool bTerrainOnly)
 
 	int iI;
 
-	for (iI = 0; iI < numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < numPlotsINLINE(); iI++)
 	{
 		plotByIndexINLINE(iI)->setRevealed(eTeam, bNewValue, bTerrainOnly, NO_TEAM, false);
 	}
@@ -402,7 +402,7 @@ void CvMap::updateFlagSymbols()
 	CvPlot* pLoopPlot;
 	int iI;
 
-	for (iI = 0; iI < numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < numPlotsINLINE(); iI++)
 	{
 		pLoopPlot = plotByIndexINLINE(iI);
 
@@ -419,7 +419,7 @@ void CvMap::updateFog()
 {
 	int iI;
 
-	for (iI = 0; iI < numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < numPlotsINLINE(); iI++)
 	{
 		plotByIndexINLINE(iI)->updateFog();
 	}
@@ -430,7 +430,7 @@ void CvMap::updateVisibility()
 {
 	int iI;
 
-	for (iI = 0; iI < numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < numPlotsINLINE(); iI++)
 	{
 		plotByIndexINLINE(iI)->updateVisibility();
 	}
@@ -441,7 +441,7 @@ void CvMap::updateSymbolVisibility()
 {
 	int iI;
 
-	for (iI = 0; iI < numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < numPlotsINLINE(); iI++)
 	{
 		plotByIndexINLINE(iI)->updateSymbolVisibility();
 	}
@@ -452,7 +452,7 @@ void CvMap::updateSymbols()
 {
 	int iI;
 
-	for (iI = 0; iI < numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < numPlotsINLINE(); iI++)
 	{
 		plotByIndexINLINE(iI)->updateSymbols();
 	}
@@ -463,7 +463,7 @@ void CvMap::updateMinimapColor()
 {
 	int iI;
 
-	for (iI = 0; iI < numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < numPlotsINLINE(); iI++)
 	{
 		plotByIndexINLINE(iI)->updateMinimapColor();
 	}
@@ -487,7 +487,7 @@ void CvMap::updateIrrigated()
 {
 	int iI;
 
-	for (iI = 0; iI < numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < numPlotsINLINE(); iI++)
 	{
 		plotByIndexINLINE(iI)->updateIrrigated();
 	}
@@ -498,7 +498,7 @@ void CvMap::updateCenterUnit()
 {
 	int iI;
 
-	for (iI = 0; iI < numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < numPlotsINLINE(); iI++)
 	{
 		plotByIndexINLINE(iI)->updateCenterUnit();
 	}
@@ -509,7 +509,7 @@ void CvMap::updateWorkingCity()
 {
 	int iI;
 
-	for (iI = 0; iI < numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < numPlotsINLINE(); iI++)
 	{
 		plotByIndexINLINE(iI)->updateWorkingCity();
 	}
@@ -525,7 +525,7 @@ void CvMap::updateMinOriginalStartDist(CvArea* pArea)
 	int iDist;
 	int iI, iJ;
 
-	for (iI = 0; iI < numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < numPlotsINLINE(); iI++)
 	{
 		pLoopPlot = plotByIndexINLINE(iI);
 
@@ -535,7 +535,7 @@ void CvMap::updateMinOriginalStartDist(CvArea* pArea)
 		}
 	}
 
-	for (iI = 0; iI < MAX_CIV_PLAYERS; iI++)
+	for (int iI = 0; iI < MAX_CIV_PLAYERS; iI++)
 	{
 		pStartingPlot = GET_PLAYER((PlayerTypes)iI).getStartingPlot();
 
@@ -543,7 +543,7 @@ void CvMap::updateMinOriginalStartDist(CvArea* pArea)
 		{
 			if (pStartingPlot->area() == pArea)
 			{
-				for (iJ = 0; iJ < numPlotsINLINE(); iJ++)
+				for (int iJ = 0; iJ < numPlotsINLINE(); iJ++)
 				{
 					pLoopPlot = plotByIndexINLINE(iJ);
 
@@ -574,7 +574,7 @@ void CvMap::updateYield()
 {
 	int iI;
 
-	for (iI = 0; iI < numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < numPlotsINLINE(); iI++)
 	{
 		plotByIndexINLINE(iI)->updateYield();
 	}
@@ -765,7 +765,7 @@ CvCity* CvMap::findCity(int iX, int iY, PlayerTypes eOwner, TeamTypes eTeam, boo
 	iBestValue = MAX_INT;
 	pBestCity = NULL;
 
-	for (iI = 0; iI < MAX_PLAYERS; iI++)
+	for (int iI = 0; iI < MAX_PLAYERS; iI++)
 	{
 		if (GET_PLAYER((PlayerTypes)iI).isAlive())
 		{
@@ -829,7 +829,7 @@ CvSelectionGroup* CvMap::findSelectionGroup(int iX, int iY, PlayerTypes eOwner, 
 	iBestValue = MAX_INT;
 	pBestSelectionGroup = NULL;
 
-	for (iI = 0; iI < MAX_PLAYERS; iI++)
+	for (int iI = 0; iI < MAX_PLAYERS; iI++)
 	{
 		if (GET_PLAYER((PlayerTypes)iI).isAlive())
 		{
@@ -1259,7 +1259,7 @@ void CvMap::recalculateAreas()
 
 	int iI;
 
-	for (iI = 0; iI < numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < numPlotsINLINE(); iI++)
 	{
 		plotByIndexINLINE(iI)->setArea(FFreeList::INVALID_INDEX);
 	}
@@ -1312,7 +1312,7 @@ void CvMap::invalidateIsActivePlayerNoDangerCache()
 	int iI;
 	CvPlot* pLoopPlot;
 
-	for( iI = 0; iI < numPlotsINLINE(); iI++ )
+	for (int iI = 0; iI < numPlotsINLINE(); iI++ )
 	{
 		pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
 
@@ -1342,7 +1342,7 @@ void CvMap::invalidateIsTeamBorderCache(TeamTypes eTeam)
 	int iI;
 	CvPlot* pLoopPlot;
 
-	for( iI = 0; iI < numPlotsINLINE(); iI++ )
+	for (int iI = 0; iI < numPlotsINLINE(); iI++ )
 	{
 		pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
 
@@ -1399,7 +1399,7 @@ void CvMap::read(FDataStreamBase* pStream)
 	{
 		m_pMapPlots = new CvPlot[numPlotsINLINE()];
 		int iI;
-		for (iI = 0; iI < numPlotsINLINE(); iI++)
+		for (int iI = 0; iI < numPlotsINLINE(); iI++)
 		{
 			m_pMapPlots[iI].read(pStream);
 		}
@@ -1444,7 +1444,7 @@ void CvMap::write(FDataStreamBase* pStream)
 	pStream->Write(GC.getNumBonusInfos(), m_paiNumBonusOnLand);
 
 	int iI;
-	for (iI = 0; iI < numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < numPlotsINLINE(); iI++)
 	{
 		m_pMapPlots[iI].write(pStream);
 	}
@@ -1514,7 +1514,7 @@ void CvMap::calculateAreas()
 	int iArea;
 	int iI;
 
-	for (iI = 0; iI < numPlotsINLINE(); iI++)
+	for (int iI = 0; iI < numPlotsINLINE(); iI++)
 	{
 		pLoopPlot = plotByIndexINLINE(iI);
 		gDLL->callUpdater();

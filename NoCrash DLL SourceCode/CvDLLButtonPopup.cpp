@@ -480,7 +480,7 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 		if (pPopupReturn->getButtonClicked() == 0)
 		{
 			std::vector<CivicTypes> aeNewCivics(GC.getNumCivicOptionInfos());
-			for (iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
+			for (int iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
 			{
 				aeNewCivics[iI] = GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getCivics((CivicOptionTypes)iI);
 			}
@@ -2810,7 +2810,7 @@ bool CvDLLButtonPopup::launchDiplomacyPopup(CvPopup* pPopup, CvPopupInfo &info)
 
 	iCount = 0;
 
-	for (iI = 0; iI < MAX_CIV_PLAYERS; iI++)
+	for (int iI = 0; iI < MAX_CIV_PLAYERS; iI++)
 	{
 		if (GET_PLAYER((PlayerTypes)iI).isAlive())
 		{

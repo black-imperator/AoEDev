@@ -73,7 +73,7 @@ void CvXMLLoadUtilitySetMod::setModLoadControlDirArray(bool bSetModControl)
 		iLoad = 0;
 
 		//Set the top level MLF to have a start to loop through
-		for ( iLoad = 0; iLoad < GC.getModLoadControlInfos(0).getNumModules(); iLoad++ )
+		for (iLoad = 0; iLoad < GC.getModLoadControlInfos(0).getNumModules(); iLoad++ )
 		{
 			if (aabLoaded[0][iLoad])
 			{
@@ -185,7 +185,7 @@ void CvXMLLoadUtilitySetMod::setModLoadControlDirArray(bool bSetModControl)
 							//only disable if this is the actual parent
 
 							// Loop through the loaded MLF if everything is now set to false?
-							for ( iLoad = 0; iLoad < GC.getModLoadControlInfos(iInfosLoad).getNumModules(); iLoad++)
+							for (int iLoad = 0; iLoad < GC.getModLoadControlInfos(iInfosLoad).getNumModules(); iLoad++)
 							{
 								// if just ANY dir is still active, don't disable the parent
 								if (aabLoaded[iInfosLoad][iLoad])

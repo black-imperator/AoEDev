@@ -92,10 +92,10 @@ void CvFractal::fracInitInternal(int iNewXs, int iNewYs, int iGrain, CvRandom& r
 
 	// Init m_aaiFrac to all zeroes:
 	m_aaiFrac = new int*[m_iFracX + 1];
-	for (iX = 0; iX < m_iFracX + 1; iX++)
+	for (int iX = 0; iX < m_iFracX + 1; iX++)
 	{
 		m_aaiFrac[iX] = new int[m_iFracY + 1];
-		for (iY = 0; iY < m_iFracY + 1; iY++)
+		for (int iY = 0; iY < m_iFracY + 1; iY++)
 		{
 			m_aaiFrac[iX][iY] = 0;
 		}
@@ -121,21 +121,21 @@ void CvFractal::fracInitInternal(int iNewXs, int iNewYs, int iGrain, CvRandom& r
 	{
 		iScreen = 0;
 
-		for (iI = 0; iI <= iPass; iI++)
+		for (int iI = 0; iI <= iPass; iI++)
 		{
 			iScreen |= (1 << iI);
 		}
 
 		if (m_iFlags & FRAC_WRAP_Y)
 		{
-			for (iX = 0; iX < m_iFracX + 1; iX++)
+			for (int iX = 0; iX < m_iFracX + 1; iX++)
 			{
 				m_aaiFrac[iX][m_iFracY] = m_aaiFrac[iX][0];
 			}
 		}
 		else if (m_iFlags & FRAC_POLAR)
 		{
-			for (iX = 0; iX < m_iFracX + 1; iX++)
+			for (int iX = 0; iX < m_iFracX + 1; iX++)
 			{
 				m_aaiFrac[iX][   0    ] = 0;
 				m_aaiFrac[iX][m_iFracY] = 0;
@@ -144,14 +144,14 @@ void CvFractal::fracInitInternal(int iNewXs, int iNewYs, int iGrain, CvRandom& r
 
 		if (m_iFlags & FRAC_WRAP_X)
 		{
-			for (iY = 0; iY < m_iFracY + 1; iY++)
+			for (int iY = 0; iY < m_iFracY + 1; iY++)
 			{
 				m_aaiFrac[m_iFracX][iY] = m_aaiFrac[0][iY];
 			}
 		}
 		else if (m_iFlags & FRAC_POLAR)
 		{
-			for (iY = 0; iY < m_iFracY + 1; iY++)
+			for (int iY = 0; iY < m_iFracY + 1; iY++)
 			{
 				m_aaiFrac[   0    ][iY] = 0;
 				m_aaiFrac[m_iFracX][iY] = 0;
@@ -162,9 +162,9 @@ void CvFractal::fracInitInternal(int iNewXs, int iNewYs, int iGrain, CvRandom& r
 		{
 			if (m_iFlags & FRAC_WRAP_Y)
 			{
-				for (iX = 0; iX < m_iFracX + 1; iX++)
+				for (int iX = 0; iX < m_iFracX + 1; iX++)
 				{
-					for (iY = 0; iY < (m_iFracY / 6); iY++)
+					for (int iY = 0; iY < (m_iFracY / 6); iY++)
 					{
 						m_aaiFrac[iX][        iY         ] /= (abs((m_iFracY / 12) - iY) + 1);
 						m_aaiFrac[iX][(m_iFracY / 2) + iY] /= (abs((m_iFracY / 12) - iY) + 1);
@@ -174,9 +174,9 @@ void CvFractal::fracInitInternal(int iNewXs, int iNewYs, int iGrain, CvRandom& r
 
 			if (m_iFlags & FRAC_WRAP_X)
 			{
-				for (iY = 0; iY < m_iFracY + 1; iY++)
+				for (int iY = 0; iY < m_iFracY + 1; iY++)
 				{
-					for (iX = 0; iX < (m_iFracX / 6); iX++)
+					for (int iX = 0; iX < (m_iFracX / 6); iX++)
 					{
 						m_aaiFrac[        iX         ][iY] /= (abs((m_iFracX / 12) - iX) + 1);
 						m_aaiFrac[(m_iFracX / 2) + iX][iY] /= (abs((m_iFracX / 12) - iX) + 1);
@@ -185,10 +185,10 @@ void CvFractal::fracInitInternal(int iNewXs, int iNewYs, int iGrain, CvRandom& r
 			}
 		}
 
-		for (iX = 0; iX < (m_iFracX >> iPass) + ((m_iFlags & FRAC_WRAP_X) ? 0 : 1); iX++)
+		for (int iX = 0; iX < (m_iFracX >> iPass) + ((m_iFlags & FRAC_WRAP_X) ? 0 : 1); iX++)
 		{
 			gDLL->callUpdater();
-			for (iY = 0; iY < (m_iFracY >> iPass) + ((m_iFlags & FRAC_WRAP_Y) ? 0 : 1); iY++)
+			for (int iY = 0; iY < (m_iFracY >> iPass) + ((m_iFlags & FRAC_WRAP_Y) ? 0 : 1); iY++)
 			{
 				if ((iPass == iSmooth))// If this is the first, pass, set the initial random spots
 				{
@@ -262,9 +262,9 @@ void CvFractal::fracInitInternal(int iNewXs, int iNewYs, int iGrain, CvRandom& r
 
 	if (m_iFlags & FRAC_INVERT_HEIGHTS)
 	{
-		for (iX = 0; iX < m_iFracX; iX++)
+		for (int iX = 0; iX < m_iFracX; iX++)
 		{
-			for (iY = 0; iY < m_iFracY; iY++)
+			for (int iY = 0; iY < m_iFracY; iY++)
 			{
 				m_aaiFrac[iX][iY] = (255 - m_aaiFrac[iX][iY]);
 			}
@@ -340,9 +340,9 @@ int CvFractal::getHeightFromPercent(int iPercent)
 	{
 		iSum = 0;
 
-		for (iX = 0; iX < m_iFracX; iX++)
+		for (int iX = 0; iX < m_iFracX; iX++)
 		{
-			for (iY = 0; iY < m_iFracY; iY++)
+			for (int iY = 0; iY < m_iFracY; iY++)
 			{
 				if (m_aaiFrac[iX][iY] < iEstimate)
 				{
@@ -381,9 +381,9 @@ void CvFractal::tectonicAction(CvFractal* pRifts)  //  Assumes FRAC_WRAP_X is on
 
 	iWidth = 16;
 
-	for (iY = 0; iY < m_iFracY + 1; iY++)
+	for (int iY = 0; iY < m_iFracY + 1; iY++)
 	{
-		for (iX = 0; iX < iWidth; iX++)
+		for (int iX = 0; iX < iWidth; iX++)
 		{
 			//  Rift along edge of map.
 			iDeep = 0;
@@ -394,7 +394,7 @@ void CvFractal::tectonicAction(CvFractal* pRifts)  //  Assumes FRAC_WRAP_X is on
 		}
 	}
 
-	for (iY = 0; iY < m_iFracY + 1; iY++)
+	for (int iY = 0; iY < m_iFracY + 1; iY++)
 	{
 		m_aaiFrac[m_iFracX][iY] = m_aaiFrac[0][iY];
 	}

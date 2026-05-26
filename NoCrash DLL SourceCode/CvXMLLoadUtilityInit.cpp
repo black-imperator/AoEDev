@@ -31,7 +31,7 @@ void CvXMLLoadUtility::InitStringList(CvString **ppszList, int iListLen, CvStrin
 	pszList = *ppszList;
 
 	// loop through all the booleans
-	for (i=0;i<iListLen;i++)
+	for (int i=0;i<iListLen;i++)
 	{
 		// set the current boolean to false
 		pszList[i] = szString;
@@ -60,12 +60,12 @@ void CvXMLLoadUtility::Init2DFloatList(float*** pppfList, int iSizeX, int iSizeY
 	ppfList = *pppfList;
 
 	// loop through each of the pointers
-	for (i=0;i<iSizeX;i++)
+	for (int i=0;i<iSizeX;i++)
 	{
 		// allocate a list of floats for the current pointer
 		ppfList[i] = new float[iSizeY];
 		// loop through all of the current pointer's floats
-		for (j=0;j<iSizeY;j++)
+		for (int j=0;j<iSizeY;j++)
 		{
 			// set the current float to zero
 			ppfList[i][j] = 0.0f;
@@ -95,12 +95,12 @@ void CvXMLLoadUtility::Init2DIntList(int*** pppiList, int iSizeX, int iSizeY)
 	ppiList = *pppiList;
 
 	// loop through each of the pointers
-	for (i=0;i<iSizeX;i++)
+	for (int i=0;i<iSizeX;i++)
 	{
 		// allocate a list of ints for the current pointer
 		ppiList[i] = new int[iSizeY];
 		// loop through all of the current pointer's ints
-		for (j=0;j<iSizeY;j++)
+		for (int j=0;j<iSizeY;j++)
 		{
 			// set the current int to zero
 			ppiList[i][j] = 0;
@@ -130,7 +130,7 @@ void CvXMLLoadUtility::InitPointerFloatList(float*** pppfList, int iSizeX)
 	ppfList = *pppfList;
 
 	// loop through each of the pointers
-	for (i=0;i<iSizeX;i++)
+	for (int i=0;i<iSizeX;i++)
 	{
 		// Null each pointer
 		ppfList[i] = NULL;
@@ -159,7 +159,7 @@ void CvXMLLoadUtility::InitPointerIntList(int*** pppiList, int iSizeX)
 	ppiList = *pppiList;
 
 	// loop through each of the pointers
-	for (i=0;i<iSizeX;i++)
+	for (int i=0;i<iSizeX;i++)
 	{
 		// Null each pointer
 		ppiList[i] = NULL;
@@ -188,12 +188,12 @@ void CvXMLLoadUtility::Init2DDirectionTypesList(DirectionTypes*** pppiList, int 
 	ppiList = *pppiList;
 
 	// loop through each of the pointers
-	for (i=0;i<iSizeX;i++)
+	for (int i=0;i<iSizeX;i++)
 	{
 		// allocate a list of DirectionTypes for the current pointer
 		ppiList[i] = new DirectionTypes[iSizeY];
 		// loop through all of the current pointer's DirectionTypes
-		for (j=0;j<iSizeY;j++)
+		for (int j=0;j<iSizeY;j++)
 		{
 			// set the current DirectionTypes to NO_DIRECTION
 			ppiList[i][j] = NO_DIRECTION;
@@ -223,7 +223,7 @@ void CvXMLLoadUtility::InitImprovementBonusList(CvImprovementBonusInfo** ppImpro
 	paImprovementBonus = *ppImprovementBonus;
 
 	// loop through all the bonus structs
-	for (i=0;i<iListLen;i++)
+	for (int i=0;i<iListLen;i++)
 	{
 		paImprovementBonus[i].m_bBonusMakesValid = false;
 		paImprovementBonus[i].m_bBonusTrade = false;
@@ -270,7 +270,7 @@ void CvXMLLoadUtility::InitBuildingDefaults(int **ppiDefaults)
 	piDefaults = *ppiDefaults;
 
 	// loop through all the pointers and set their default values
-	for (i=0;i<GC.getNumBuildingClassInfos();i++)
+	for (int i=0;i<GC.getNumBuildingClassInfos();i++)
 	{
 /*************************************************************************************************/
 /**	Streamline							10/18/08									Xienwolf	**/
@@ -305,7 +305,7 @@ void CvXMLLoadUtility::InitImprovementDefaults(int** ppiDefaults)
 	piDefaults = *ppiDefaults;
 
 	// loop through all the pointers and set their default values
-	for (i = 0; i < GC.getNumImprovementClassInfos(); i++)
+	for (int i = 0; i < GC.getNumImprovementClassInfos(); i++)
 	{
 		/*************************************************************************************************/
 		/**	Streamline							10/18/08									Xienwolf	**/
@@ -341,7 +341,7 @@ void CvXMLLoadUtility::InitBuildingArtDefineDefaults(CvString** ppiDefaults)
 	CvString cDefault = CvString::format("").GetCString();
 
 	// loop through all the pointers and set their default values
-	for (i = 0; i < GC.getNumBuildingInfos(); i++)
+	for (int i = 0; i < GC.getNumBuildingInfos(); i++)
 	{
 
 		piDefaults[i] = cDefault;
@@ -363,7 +363,7 @@ void CvXMLLoadUtility::InitFeatureGraphicsDefaults(int** ppiDefaults)
 	CvString cDefault = CvString::format("").GetCString();
 
 	// loop through all the pointers and set their default values
-	for (i = 0; i < GC.getNumFeatureInfos(); i++)
+	for (int i = 0; i < GC.getNumFeatureInfos(); i++)
 	{
 
 		piDefaults[i] = -1;
@@ -391,7 +391,7 @@ void CvXMLLoadUtility::InitUnitDefaults(int **ppiDefaults)
 	piDefaults = *ppiDefaults;
 
 	// loop through all the pointers and set their default values
-	for (i=0;i<GC.getNumUnitClassInfos();i++)
+	for (int i=0;i<GC.getNumUnitClassInfos();i++)
 	{
 /*************************************************************************************************/
 /**	Streamline							10/18/08									Xienwolf	**/
@@ -489,7 +489,7 @@ void CvXMLLoadUtility::InitAlignmentAttitudeModifierList(CvAlignmentAttitudeModi
 	paAlignmentAttitudeModifier = *ppAlignmentAttitudeModifier;
 
 	// loop through all the bonus structs
-	for (i=0;i<iListLen;i++)
+	for (int i=0;i<iListLen;i++)
 	{
 		paAlignmentAttitudeModifier[i].m_iToGood = -100;
 		paAlignmentAttitudeModifier[i].m_iToNeutral = -100;
@@ -526,7 +526,7 @@ void CvXMLLoadUtility::InitEthicalAlignmentAttitudeModifierList(CvEthicalAlignme
 	paEthicalAlignmentAttitudeModifier = *ppEthicalAlignmentAttitudeModifier;
 
 	// loop through all the bonus structs
-	for (i=0;i<iListLen;i++)
+	for (int i=0;i<iListLen;i++)
 	{
 		paEthicalAlignmentAttitudeModifier[i].m_iToLawful = -100;
 		paEthicalAlignmentAttitudeModifier[i].m_iToEthicalNeutral = -100;
