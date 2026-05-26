@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Basic Infos -->
+
+<Civ4PromotionClassInfos xmlns="x-schema:OB_CIV4UnitSchema.xml">
+	<PromotionClassInfos>
+	
+		<PromotionClassInfo>
+			<Type>PROMOTIONCLASS_ANIMAL_BLOOD</Type>
+			<Description>TXT_KEY_PROMOTIONCLASS_ANIMAL_BLOOD</Description>
+		</PromotionClassInfo>
+	</PromotionClassInfos>
+</Civ4PromotionClassInfos>
