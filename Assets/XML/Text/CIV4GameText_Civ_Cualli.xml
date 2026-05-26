@@ -146,11 +146,11 @@ Blood for the Lizard god.
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_SACRIFICIAL_ALTAR_HELP</Tag>
-		<English>[ICON_BULLET]Allows a Priest of Agruonn to sacrifice living units to Empower all priests.</English>
-		<French>[ICON_BULLET]Permet à un Prêtre d'Agruonn de sacrifier une unité vivante pour Renforcer tous les prêtres.</French>
-		<German>[ICON_BULLET]Erlaubt es einem Priester des Agruonn lebende Einheiten zu opfern, um alle Priester zu kräftigen.</German>
-		<Italian>[ICON_BULLET]Permette a un Sacerdote di Agruonn di sacrificare unità viventi per potenziare tutti i sacerdoti.</Italian>
-		<Spanish>[ICON_BULLET]Allows a Priest of Agruonn to sacrifice living units to Empower all priests.</Spanish>
+		<English>[ICON_BULLET]Allows a Priest of Agruonn to sacrifice living units to Empower all priests.[ICON_BULLET]Increases the Slave limit by 4</English>
+		<French>[ICON_BULLET]Permet à un Prêtre d'Agruonn de sacrifier une unité vivante pour Renforcer tous les prêtres.[ICON_BULLET]Augmente de 4 la limite d'Esclaves</French>
+		<German>[ICON_BULLET]Erlaubt es einem Priester des Agruonn lebende Einheiten zu opfern, um alle Priester zu kräftigen.[ICON_BULLET]Increases the Slave limit by 4</German>
+		<Italian>[ICON_BULLET]Permette a un Sacerdote di Agruonn di sacrificare unità viventi per potenziare tutti i sacerdoti.[ICON_BULLET]Aumenta il limite di Schiavi di 4</Italian>
+		<Spanish>[ICON_BULLET]Allows a Priest of Agruonn to sacrifice living units to Empower all priests.[ICON_BULLET]Increases the Slave limit by 4</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_SACRIFICIAL_ALTAR_STRATEGY</Tag>

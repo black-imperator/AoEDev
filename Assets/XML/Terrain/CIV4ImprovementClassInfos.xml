@@ -918,5 +918,11 @@
 			<bUnique>1</bUnique>
 			<DefaultImprovement>IMPROVEMENT_CHISLEV_CLAN3</DefaultImprovement>
 		</ImprovementClassInfo>
+		<ImprovementClassInfo><!-- Pyre-->
+			<Type>IMPROVEMENTCLASS_PYRE</Type>
+			<Description></Description>
+			<bUnique>1</bUnique>
+			<DefaultImprovement>IMPROVEMENT_DTESH_PYRE</DefaultImprovement>
+		</ImprovementClassInfo>
 	</ImprovementClassInfos>
 </Civ4ImprovementClassInfos>

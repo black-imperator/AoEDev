@@ -210,11 +210,11 @@ The shambling undead horde.
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TEMPLE_DTESH</Tag>
-		<English>Temple to D'tesh</English>
-		<French>Temple de D'tesh</French>
-		<German>Tempel des D'tesh</German>
-		<Italian>Tempio di D'tesh</Italian>
-		<Spanish>Temple to D'tesh</Spanish>
+		<English>Shrine to D'tesh</English>
+		<French>Shrine de D'tesh</French>
+		<German>Shrine des D'tesh</German>
+		<Italian>Shrine di D'tesh</Italian>
+		<Spanish>Shrine to D'tesh</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TOWER_DTESH</Tag>
@@ -455,6 +455,63 @@ The shambling undead horde.
 		<German>&#220;berträgt auf alle Einheiten des Zaubernden [LINK=PROMOTION_UNDEATHS_DOMINION]Macht des Untodes[\LINK]</German>
 		<Italian>Fornisce a tutte le unità del giocatore che la lancia la promozione [LINK=PROMOTION_UNDEATHS_DOMINION]Dominio della non morte[\LINK]</Italian>
 		<Spanish>Grants all the caster's units [LINK=PROMOTION_UNDEATHS_DOMINION]Undeath's Dominion[\LINK]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HIGH_NECROMANCER</Tag>
+		<English>Great Necromancer</English>
+		<French>Great Necromancer</French>
+		<German>Great Necromancer</German>
+		<Italian>Great Necromancer</Italian>
+		<Spanish>Great Necromancer</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HIGH_NECROMANCER_PEDIA</Tag>
+		<English>The High Necromancer is able to keep the army it is with in tip-top shape, repairing the undead and scaring the living into a full recovery, lest the latter become the former.
+
+"I don't care how useful they are, he's creepy and smells bad!" - Division Captain Markus, before the siege of Ulfsted Castle.
+
+"Gnnnnaaaaaahhhh." - Division Captain Markus, after the siege of Ulfsted Castle.</English>
+		<French>The High Necromancer is able to keep the army it is with in tip-top shape, repairing the undead and scaring the living into a full recovery, lest the latter become the former.
+
+"I don't care how useful they are, he's creepy and smells bad!" - Division Captain Markus, before the siege of Ulfsted Castle.
+
+"Gnnnnaaaaaahhhh." - Division Captain Markus, after the siege of Ulfsted Castle.</French>
+		<German>The High Necromancer is able to keep the army it is with in tip-top shape, repairing the undead and scaring the living into a full recovery, lest the latter become the former.
+
+"I don't care how useful they are, he's creepy and smells bad!" - Division Captain Markus, before the siege of Ulfsted Castle.
+
+"Gnnnnaaaaaahhhh." - Division Captain Markus, after the siege of Ulfsted Castle.</German>
+		<Italian>The High Necromancer is able to keep the army it is with in tip-top shape, repairing the undead and scaring the living into a full recovery, lest the latter become the former.
+
+"I don't care how useful they are, he's creepy and smells bad!" - Division Captain Markus, before the siege of Ulfsted Castle.
+
+"Gnnnnaaaaaahhhh." - Division Captain Markus, after the siege of Ulfsted Castle.</Italian>
+		<Spanish>The High Necromancer is able to keep the army it is with in tip-top shape, repairing the undead and scaring the living into a full recovery, lest the latter become the former.
+
+"I don't care how useful they are, he's creepy and smells bad!" - Division Captain Markus, before the siege of Ulfsted Castle.
+
+"Gnnnnaaaaaahhhh." - Division Captain Markus, after the siege of Ulfsted Castle.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_DUNGEON_DTESH</Tag>
+		<English>Chain Gang Crypt</English>
+		<French>Chain Gang Crypt</French>
+		<German>Chain Gang Crypt</German>
+		<Italian>Chain Gang Crypt</Italian>
+		<Spanish>Chain Gang Crypt</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_DUNGEON_DTESH_PEDIA</Tag>
+		<English>Undead inside the great spires do no better than the ones out on the wasteland; each is expected to give their all for the master.
+And when their corpse can no longer work, their bones will be ground into paste, fashioned into bricks, and then hauled by their former peers.</English>
+		<French>Undead inside the great spires do no better than the ones out on the wasteland; each is expected to give their all for the master.
+And when their corpse can no longer work, their bones will be ground into paste, fashioned into bricks, and then hauled by their former peers.</French>
+		<German>Undead inside the great spires do no better than the ones out on the wasteland; each is expected to give their all for the master.
+And when their corpse can no longer work, their bones will be ground into paste, fashioned into bricks, and then hauled by their former peers.</German>
+		<Italian>Undead inside the great spires do no better than the ones out on the wasteland; each is expected to give their all for the master.
+And when their corpse can no longer work, their bones will be ground into paste, fashioned into bricks, and then hauled by their former peers.</Italian>
+		<Spanish>Undead inside the great spires do no better than the ones out on the wasteland; each is expected to give their all for the master.
+And when their corpse can no longer work, their bones will be ground into paste, fashioned into bricks, and then hauled by their former peers.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EQUIPMENT_OPALUS_MORTIS</Tag>

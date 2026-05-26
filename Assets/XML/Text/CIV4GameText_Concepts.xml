@@ -1503,7 +1503,7 @@ multipliers:
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_ELOHIM_KEEPERS_OF_SACRED_PLACES_PEDIA</Tag>
 		<English>[H1]Keepers of Sacred Places[\H1][NEWLINE][NEWLINE]The Elohim are the Keepers of Sacred Places. As such, for each of the unique features they have within their borders, they get a different blessing. To assist them with this endeavor, they will start the game by knowing the location of all unique features on the map. The following is a list of what each unique feature provides:[NEWLINE]
-		[ICON_BULLET][LINK=IMPROVEMENT_AIFON_ISLE]Aifon Isle[\LINK] - Keepers of Danalin's Sorrow: +15% [ICON_FOOD] and [ICON_COMMERCE] from [ICON_TRADE].
+		[ICON_BULLET][LINK=IMPROVEMENT_AIFON_ISLE]Aifon Isle[\LINK] - Keepers of Danalin's Sorrow: +25% [ICON_COMMERCE] from [ICON_TRADE].
 		[ICON_BULLET][LINK=IMPROVEMENT_BAIR_OF_LACUNA]Bair of Lacuna[\LINK] - Keepers of the Undying's Lair: +20% Ritual Production in All Cities.
 		[ICON_BULLET][LINK=IMPROVEMENT_BRADELINES_WELL]Bradeline's Well[\LINK] - [LINK=PROMOTION_KEEPERS_WELL]Keepers of the Underworld's Gate[\LINK]: Disciple and Arcane units gain +30% vs Demon. If it could be purified, however...
 		[ICON_BULLET][LINK=IMPROVEMENT_BROKEN_SEPULCHER]Broken Sepulcher[\LINK] - [LINK=PROMOTION_KEEPERS_SEPULCHER]Keepers of Death's Shattered Jail[\LINK]: All combat units gain +25% Resistance to Death Damage, and -25% to Enemy Withdrawal Chance.
@@ -1536,7 +1536,7 @@ multipliers:
 		[ICON_BULLET][LINK=IMPROVEMENT_MAJENS_WORKSHOP]Majen's Workshop[\LINK] - [LINK=PROMOTION_KEEPERS_MAJEN]Keepers of the Tinkerer's Trove[\LINK]: +1 [ICON_HAPPY] and +1 [ICON_CULTURE] per city.
 		[ICON_BULLET][LINK=IMPROVEMENT_WHISPERING_WOOD]Whispering Woods[\LINK] - [LINK=PROMOTION_KEEPERS_WHISPERING]Keepers of the Veil of Shadows[\LINK]: Arcane, Commander, Rogue, and Worker units gain +3 Perception and Ignore Terrain Movement Costs.[NEWLINE][NEWLINE]Beware, however: Should the watchers against corruption themselves fall to its seductive power, their blessings may falter, or twist...</English>
 		<French>[H1]Keepers of Sacred Places[\H1][NEWLINE][NEWLINE]The Elohim are the Keepers of Sacred Places. As such, for each of the unique features they have within their borders, they get a different blessing. To assist them with this endeavor, they will start the game by knowing the location of all unique features on the map. The following is a list of what each unique feature provides:[NEWLINE]
-		[ICON_BULLET][LINK=IMPROVEMENT_AIFON_ISLE]Aifon Isle[\LINK] - Keepers of Danalin's Sorrow: +15% [ICON_FOOD] and [ICON_COMMERCE] from [ICON_TRADE].
+		[ICON_BULLET][LINK=IMPROVEMENT_AIFON_ISLE]Aifon Isle[\LINK] - Keepers of Danalin's Sorrow: +25% [ICON_COMMERCE] from [ICON_TRADE].
 		[ICON_BULLET][LINK=IMPROVEMENT_BAIR_OF_LACUNA]Bair of Lacuna[\LINK] - Keepers of the Undying's Lair: +20% Ritual Production in All Cities.
 		[ICON_BULLET][LINK=IMPROVEMENT_BRADELINES_WELL]Bradeline's Well[\LINK] - [LINK=PROMOTION_KEEPERS_WELL]Keepers of the Underworld's Gate[\LINK]: Disciple and Arcane units gain +30% vs Demon. If it could be purified, however...
 		[ICON_BULLET][LINK=IMPROVEMENT_BROKEN_SEPULCHER]Broken Sepulcher[\LINK] - [LINK=PROMOTION_KEEPERS_SEPULCHER]Keepers of Death's Shattered Jail[\LINK]: All combat units gain +25% Resistance to Death Damage, and -25% to Enemy Withdrawal Chance.
@@ -1602,7 +1602,7 @@ multipliers:
 		[ICON_BULLET][LINK=IMPROVEMENT_MAJENS_WORKSHOP]Majen's Workshop[\LINK] - [LINK=PROMOTION_KEEPERS_MAJEN]Keepers of the Tinkerer's Trove[\LINK]: +1 [ICON_HAPPY] and +1 [ICON_CULTURE] per city.
 		[ICON_BULLET][LINK=IMPROVEMENT_WHISPERING_WOOD]Whispering Woods[\LINK] - [LINK=PROMOTION_KEEPERS_WHISPERING]Keepers of the Veil of Shadows[\LINK]: Arcane, Commander, Rogue, and Worker units gain +3 Perception and Ignore Terrain Movement Costs.[NEWLINE][NEWLINE]Beware, however: Should the watchers against corruption themselves fall to its seductive power, their blessings may falter, or twist...</German>
 		<Italian>[H1]Keepers of Sacred Places[\H1][NEWLINE][NEWLINE]The Elohim are the Keepers of Sacred Places. As such, for each of the unique features they have within their borders, they get a different blessing. To assist them with this endeavor, they will start the game by knowing the location of all unique features on the map. The following is a list of what each unique feature provides:[NEWLINE]
-		[ICON_BULLET][LINK=IMPROVEMENT_AIFON_ISLE]Aifon Isle[\LINK] - Keepers of Danalin's Sorrow: +15% [ICON_FOOD] and [ICON_COMMERCE] from [ICON_TRADE].
+		[ICON_BULLET][LINK=IMPROVEMENT_AIFON_ISLE]Aifon Isle[\LINK] - Keepers of Danalin's Sorrow: +25% [ICON_COMMERCE] from [ICON_TRADE].
 		[ICON_BULLET][LINK=IMPROVEMENT_BAIR_OF_LACUNA]Bair of Lacuna[\LINK] - Keepers of the Undying's Lair: +20% Ritual Production in All Cities.
 		[ICON_BULLET][LINK=IMPROVEMENT_BRADELINES_WELL]Bradeline's Well[\LINK] - [LINK=PROMOTION_KEEPERS_WELL]Keepers of the Underworld's Gate[\LINK]: Disciple and Arcane units gain +30% vs Demon. If it could be purified, however...
 		[ICON_BULLET][LINK=IMPROVEMENT_BROKEN_SEPULCHER]Broken Sepulcher[\LINK] - [LINK=PROMOTION_KEEPERS_SEPULCHER]Keepers of Death's Shattered Jail[\LINK]: All combat units gain +25% Resistance to Death Damage, and -25% to Enemy Withdrawal Chance.
@@ -1635,7 +1635,7 @@ multipliers:
 		[ICON_BULLET][LINK=IMPROVEMENT_MAJENS_WORKSHOP]Majen's Workshop[\LINK] - [LINK=PROMOTION_KEEPERS_MAJEN]Keepers of the Tinkerer's Trove[\LINK]: +1 [ICON_HAPPY] and +1 [ICON_CULTURE] per city.
 		[ICON_BULLET][LINK=IMPROVEMENT_WHISPERING_WOOD]Whispering Woods[\LINK] - [LINK=PROMOTION_KEEPERS_WHISPERING]Keepers of the Veil of Shadows[\LINK]: Arcane, Commander, Rogue, and Worker units gain +3 Perception and Ignore Terrain Movement Costs.[NEWLINE][NEWLINE]Beware, however: Should the watchers against corruption themselves fall to its seductive power, their blessings may falter, or twist...</Italian>
 		<Spanish>[H1]Keepers of Sacred Places[\H1][NEWLINE][NEWLINE]The Elohim are the Keepers of Sacred Places. As such, for each of the unique features they have within their borders, they get a different blessing. To assist them with this endeavor, they will start the game by knowing the location of all unique features on the map. The following is a list of what each unique feature provides:[NEWLINE]
-		[ICON_BULLET][LINK=IMPROVEMENT_AIFON_ISLE]Aifon Isle[\LINK] - Keepers of Danalin's Sorrow: +15% [ICON_FOOD] and [ICON_COMMERCE] from [ICON_TRADE].
+		[ICON_BULLET][LINK=IMPROVEMENT_AIFON_ISLE]Aifon Isle[\LINK] - Keepers of Danalin's Sorrow: +25% [ICON_COMMERCE] from [ICON_TRADE].
 		[ICON_BULLET][LINK=IMPROVEMENT_BAIR_OF_LACUNA]Bair of Lacuna[\LINK] - Keepers of the Undying's Lair: +20% Ritual Production in All Cities.
 		[ICON_BULLET][LINK=IMPROVEMENT_BRADELINES_WELL]Bradeline's Well[\LINK] - [LINK=PROMOTION_KEEPERS_WELL]Keepers of the Underworld's Gate[\LINK]: Disciple and Arcane units gain +30% vs Demon. If it could be purified, however...
 		[ICON_BULLET][LINK=IMPROVEMENT_BROKEN_SEPULCHER]Broken Sepulcher[\LINK] - [LINK=PROMOTION_KEEPERS_SEPULCHER]Keepers of Death's Shattered Jail[\LINK]: All combat units gain +25% Resistance to Death Damage, and -25% to Enemy Withdrawal Chance.
@@ -1837,10 +1837,145 @@ multipliers:
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_THE_COUNCIL_DYNAMIC_LEADER_PEDIA</Tag>
-		<English>[H1]The Council:[\H1][PARAGRAPH:2][LINK=LEADER_THE_COUNCIL]The Council[\LINK] is a new emergent leader, but doesn't level up a single trait, as other emergent leaders do. Instead, the Council is constantly vying for the favor of the five tribes. They do not participate in tribal elections while under the Tribal Law civic, but most of your in-game actions will effect your relations with one of the tribes, and if a particular tribe likes you enough, they'll join the council (represented by earning a unique trait). Favor with all tribes will decrease over time, but whenever a tribe joins, you get a small buffer window so that they won't leave you right after joining you.[NEWLINE][NEWLINE][BOLD]Eagle Tribe:[\BOLD][NEWLINE][ICON_BULLET]+1 happiness/city[NEWLINE][ICON_BULLET]-10% XP needed for unit upgrades[NEWLINE][ICON_BULLET]+25% commerce food and production from trade routes[NEWLINE][ICON_BULLET]+2 relations with all other leaders[NEWLINE][NEWLINE]Gaining Favor: +10 per turn with the Foreign Trade civic, +100 making peace, +200 constructing Totem of the Eagle, +100 building that gives happiness, +200 building that gives area happiness, +300 building that gives global happiness[NEWLINE][NEWLINE]Losing Favor: -10 per turn at peace, -30 per turn at war, -50 starting a war[NEWLINE][NEWLINE][BOLD]Coyote Tribe:[\BOLD][NEWLINE][ICON_BULLET]+1 culture/city[NEWLINE][ICON_BULLET]+50% Great General Emergence[NEWLINE][ICON_BULLET]Dance of the Coyote Promotion for Recon Units: +5 culture from killed units, +10% withdrawal chance, +1 attack strength, removed after combat[NEWLINE][NEWLINE]Gaining Favor: +10 per turn with the Liberty civic, +200 founding cities, +50 on population growth, +150 on culture growth, +200 constructing Totem of the Coyote, +150 popping a goody hut, +100 exploring a lair, +30 pillaging[NEWLINE][NEWLINE]Losing Favor: -20 per turn[NEWLINE][NEWLINE][BOLD]Bear Tribe:[\BOLD][NEWLINE][ICON_BULLET]+3 health[NEWLINE][ICON_BULLET]+25% wonder production[NEWLINE][ICON_BULLET]+1 production on plots with 3 production[NEWLINE][NEWLINE]Gaining Favor: +10 per turn with the Industry civic, +50 constructing any building, +250 constructing a national wonder, +1000 constructing a world wonder, +100 constructing a building that gives health, +200 constructing a building that gives area health, +300 constructing a building that gives global health, +200 constructing Totem of the Bear[NEWLINE][NEWLINE]Losing Favor: -20 per turn[NEWLINE][NEWLINE][BOLD]Serpent Tribe:[\BOLD][NEWLINE][ICON_BULLET]Free Combat I promotion[NEWLINE][ICON_BULLET]+100% gold from pillaging, and pillaging modifies culture by +150%[NEWLINE][ICON_BULLET]+10% production from population hurry[NEWLINE][NEWLINE]Gaining Favor: +10 per turn with Conquest civic, +150 acquiring a city through conquest, +30 killing a unit, +30 killing an orc unit, +30 pillaging, +200 constructing a Totem of the Serpent[NEWLINE][NEWLINE]Losing Favor: -30 per turn at peace, -10 per turn at war, -50 making peace[NEWLINE][NEWLINE][BOLD]Tortoise Tribe:[\BOLD][NEWLINE][ICON_BULLET]+50% great person birth rate[NEWLINE][ICON_BULLET]Combat does not influence cultural borders[NEWLINE][ICON_BULLET]+15% science while at peace[NEWLINE][NEWLINE]Gaining Favor: +10 per turn with the Scholarship civic, +30 training a unit, +50 killing a unit within your own borders, +300 having a great person born, +200 constructing Totem of the Tortoise[NEWLINE][NEWLINE]Losing Favor: -10 per turn at peace, -30 per turn at war</English>
-		<French>[H1]The Council:[\H1][PARAGRAPH:2][LINK=LEADER_THE_COUNCIL]The Council[\LINK] is a new emergent leader, but doesn't level up a single trait, as other emergent leaders do. Instead, the Council is constantly vying for the favor of the five tribes. Most of your in-game actions will effect your relations with one of the tribes, and if a particular tribe likes you enough, they'll join the council (represented by earning a unique trait). Favor with all tribes will decrease over time, but whenever a tribe joins, you get a small buffer window so that they won't leave you right after joining you.[NEWLINE][NEWLINE][BOLD]Eagle Tribe:[\BOLD][NEWLINE][ICON_BULLET]+1 happiness/city[NEWLINE][ICON_BULLET]-10% XP needed for unit upgrades[NEWLINE][ICON_BULLET]+25% commerce food and production from trade routes[NEWLINE][ICON_BULLET]+2 relations with all other leaders[NEWLINE][NEWLINE]Gaining Favor: +10 per turn with the Foreign Trade civic, +100 making peace, +200 constructing Totem of the Eagle, +100 building that gives happiness, +200 building that gives area happiness, +300 building that gives global happiness[NEWLINE][NEWLINE]Losing Favor: -10 per turn at peace, -30 per turn at war, -50 starting a war[NEWLINE][NEWLINE][BOLD]Coyote Tribe:[\BOLD][NEWLINE][ICON_BULLET]+1 culture/city[NEWLINE][ICON_BULLET]+50% Great General Emergence[NEWLINE][ICON_BULLET]Dance of the Coyote Promotion for Recon Units: +5 culture from killed units, +10% withdrawal chance, +1 attack strength, removed after combat[NEWLINE][NEWLINE]Gaining Favor: +10 per turn with the Liberty civic, +200 founding cities, +50 on population growth, +150 on culture growth, +200 constructing Totem of the Coyote, +150 popping a goody hut, +100 exploring a lair, +30 pillaging[NEWLINE][NEWLINE]Losing Favor: -20 per turn[NEWLINE][NEWLINE][BOLD]Bear Tribe:[\BOLD][NEWLINE][ICON_BULLET]+3 health[NEWLINE][ICON_BULLET]+25% wonder production[NEWLINE][ICON_BULLET]+1 production on plots with 3 production[NEWLINE][NEWLINE]Gaining Favor: +10 per turn with the Industry civic, +50 constructing any building, +250 constructing a national wonder, +1000 constructing a world wonder, +100 constructing a building that gives health, +200 constructing a building that gives area health, +300 constructing a building that gives global health, +200 constructing Totem of the Bear[NEWLINE][NEWLINE]Losing Favor: -20 per turn[NEWLINE][NEWLINE][BOLD]Serpent Tribe:[\BOLD][NEWLINE][ICON_BULLET]Free Combat I promotion[NEWLINE][ICON_BULLET]+100% gold from pillaging, and pillaging modifies culture by +150%[NEWLINE][ICON_BULLET]+10% production from population hurry[NEWLINE][NEWLINE]Gaining Favor: +10 per turn with Conquest civic, +150 acquiring a city through conquest, +30 killing a unit, +30 killing an orc unit, +30 pillaging, +200 constructing a Totem of the Serpent[NEWLINE][NEWLINE]Losing Favor: -30 per turn at peace, -10 per turn at war, -50 making peace[NEWLINE][NEWLINE][BOLD]Tortoise Tribe:[\BOLD][NEWLINE][ICON_BULLET]+50% great person birth rate[NEWLINE][ICON_BULLET]Combat does not influence cultural borders[NEWLINE][ICON_BULLET]+15% science while at peace[NEWLINE][NEWLINE]Gaining Favor: +10 per turn with the Scholarship civic, +30 training a unit, +50 killing a unit within your own borders, +300 having a great person born, +200 constructing Totem of the Tortoise[NEWLINE][NEWLINE]Losing Favor: -10 per turn at peace, -30 per turn at war</French>
-		<German>[H1]The Council:[\H1][PARAGRAPH:2][LINK=LEADER_THE_COUNCIL]The Council[\LINK] is a new emergent leader, but doesn't level up a single trait, as other emergent leaders do. Instead, the Council is constantly vying for the favor of the five tribes. Most of your in-game actions will effect your relations with one of the tribes, and if a particular tribe likes you enough, they'll join the council (represented by earning a unique trait). Favor with all tribes will decrease over time, but whenever a tribe joins, you get a small buffer window so that they won't leave you right after joining you.[NEWLINE][NEWLINE][BOLD]Eagle Tribe:[\BOLD][NEWLINE][ICON_BULLET]+1 happiness/city[NEWLINE][ICON_BULLET]-10% XP needed for unit upgrades[NEWLINE][ICON_BULLET]+25% commerce food and production from trade routes[NEWLINE][ICON_BULLET]+2 relations with all other leaders[NEWLINE][NEWLINE]Gaining Favor: +10 per turn with the Foreign Trade civic, +100 making peace, +200 constructing Totem of the Eagle, +100 building that gives happiness, +200 building that gives area happiness, +300 building that gives global happiness[NEWLINE][NEWLINE]Losing Favor: -10 per turn at peace, -30 per turn at war, -50 starting a war[NEWLINE][NEWLINE][BOLD]Coyote Tribe:[\BOLD][NEWLINE][ICON_BULLET]+1 culture/city[NEWLINE][ICON_BULLET]+50% Great General Emergence[NEWLINE][ICON_BULLET]Dance of the Coyote Promotion for Recon Units: +5 culture from killed units, +10% withdrawal chance, +1 attack strength, removed after combat[NEWLINE][NEWLINE]Gaining Favor: +10 per turn with the Liberty civic, +200 founding cities, +50 on population growth, +150 on culture growth, +200 constructing Totem of the Coyote, +150 popping a goody hut, +100 exploring a lair, +30 pillaging[NEWLINE][NEWLINE]Losing Favor: -20 per turn[NEWLINE][NEWLINE][BOLD]Bear Tribe:[\BOLD][NEWLINE][ICON_BULLET]+3 health[NEWLINE][ICON_BULLET]+25% wonder production[NEWLINE][ICON_BULLET]+1 production on plots with 3 production[NEWLINE][NEWLINE]Gaining Favor: +10 per turn with the Industry civic, +50 constructing any building, +250 constructing a national wonder, +1000 constructing a world wonder, +100 constructing a building that gives health, +200 constructing a building that gives area health, +300 constructing a building that gives global health, +200 constructing Totem of the Bear[NEWLINE][NEWLINE]Losing Favor: -20 per turn[NEWLINE][NEWLINE][BOLD]Serpent Tribe:[\BOLD][NEWLINE][ICON_BULLET]Free Combat I promotion[NEWLINE][ICON_BULLET]+100% gold from pillaging, and pillaging modifies culture by +150%[NEWLINE][ICON_BULLET]+10% production from population hurry[NEWLINE][NEWLINE]Gaining Favor: +10 per turn with Conquest civic, +150 acquiring a city through conquest, +30 killing a unit, +30 killing an orc unit, +30 pillaging, +200 constructing a Totem of the Serpent[NEWLINE][NEWLINE]Losing Favor: -30 per turn at peace, -10 per turn at war, -50 making peace[NEWLINE][NEWLINE][BOLD]Tortoise Tribe:[\BOLD][NEWLINE][ICON_BULLET]+50% great person birth rate[NEWLINE][ICON_BULLET]Combat does not influence cultural borders[NEWLINE][ICON_BULLET]+15% science while at peace[NEWLINE][NEWLINE]Gaining Favor: +10 per turn with the Scholarship civic, +30 training a unit, +50 killing a unit within your own borders, +300 having a great person born, +200 constructing Totem of the Tortoise[NEWLINE][NEWLINE]Losing Favor: -10 per turn at peace, -30 per turn at war</German>
-		<Italian>[H1]The Council:[\H1][PARAGRAPH:2][LINK=LEADER_THE_COUNCIL]The Council[\LINK] is a new emergent leader, but doesn't level up a single trait, as other emergent leaders do. Instead, the Council is constantly vying for the favor of the five tribes. Most of your in-game actions will effect your relations with one of the tribes, and if a particular tribe likes you enough, they'll join the council (represented by earning a unique trait). Favor with all tribes will decrease over time, but whenever a tribe joins, you get a small buffer window so that they won't leave you right after joining you.[NEWLINE][NEWLINE][BOLD]Eagle Tribe:[\BOLD][NEWLINE][ICON_BULLET]+1 happiness/city[NEWLINE][ICON_BULLET]-10% XP needed for unit upgrades[NEWLINE][ICON_BULLET]+25% commerce food and production from trade routes[NEWLINE][ICON_BULLET]+2 relations with all other leaders[NEWLINE][NEWLINE]Gaining Favor: +10 per turn with the Foreign Trade civic, +100 making peace, +200 constructing Totem of the Eagle, +100 building that gives happiness, +200 building that gives area happiness, +300 building that gives global happiness[NEWLINE][NEWLINE]Losing Favor: -10 per turn at peace, -30 per turn at war, -50 starting a war[NEWLINE][NEWLINE][BOLD]Coyote Tribe:[\BOLD][NEWLINE][ICON_BULLET]+1 culture/city[NEWLINE][ICON_BULLET]+50% Great General Emergence[NEWLINE][ICON_BULLET]Dance of the Coyote Promotion for Recon Units: +5 culture from killed units, +10% withdrawal chance, +1 attack strength, removed after combat[NEWLINE][NEWLINE]Gaining Favor: +10 per turn with the Liberty civic, +200 founding cities, +50 on population growth, +150 on culture growth, +200 constructing Totem of the Coyote, +150 popping a goody hut, +100 exploring a lair, +30 pillaging[NEWLINE][NEWLINE]Losing Favor: -20 per turn[NEWLINE][NEWLINE][BOLD]Bear Tribe:[\BOLD][NEWLINE][ICON_BULLET]+3 health[NEWLINE][ICON_BULLET]+25% wonder production[NEWLINE][ICON_BULLET]+1 production on plots with 3 production[NEWLINE][NEWLINE]Gaining Favor: +10 per turn with the Industry civic, +50 constructing any building, +250 constructing a national wonder, +1000 constructing a world wonder, +100 constructing a building that gives health, +200 constructing a building that gives area health, +300 constructing a building that gives global health, +200 constructing Totem of the Bear[NEWLINE][NEWLINE]Losing Favor: -20 per turn[NEWLINE][NEWLINE][BOLD]Serpent Tribe:[\BOLD][NEWLINE][ICON_BULLET]Free Combat I promotion[NEWLINE][ICON_BULLET]+100% gold from pillaging, and pillaging modifies culture by +150%[NEWLINE][ICON_BULLET]+10% production from population hurry[NEWLINE][NEWLINE]Gaining Favor: +10 per turn with Conquest civic, +150 acquiring a city through conquest, +30 killing a unit, +30 killing an orc unit, +30 pillaging, +200 constructing a Totem of the Serpent[NEWLINE][NEWLINE]Losing Favor: -30 per turn at peace, -10 per turn at war, -50 making peace[NEWLINE][NEWLINE][BOLD]Tortoise Tribe:[\BOLD][NEWLINE][ICON_BULLET]+50% great person birth rate[NEWLINE][ICON_BULLET]Combat does not influence cultural borders[NEWLINE][ICON_BULLET]+15% science while at peace[NEWLINE][NEWLINE]Gaining Favor: +10 per turn with the Scholarship civic, +30 training a unit, +50 killing a unit within your own borders, +300 having a great person born, +200 constructing Totem of the Tortoise[NEWLINE][NEWLINE]Losing Favor: -10 per turn at peace, -30 per turn at war</Italian>
-		<Spanish>[H1]The Council:[\H1][PARAGRAPH:2][LINK=LEADER_THE_COUNCIL]The Council[\LINK] is a new emergent leader, but doesn't level up a single trait, as other emergent leaders do. Instead, the Council is constantly vying for the favor of the five tribes. Most of your in-game actions will effect your relations with one of the tribes, and if a particular tribe likes you enough, they'll join the council (represented by earning a unique trait). Favor with all tribes will decrease over time, but whenever a tribe joins, you get a small buffer window so that they won't leave you right after joining you.[NEWLINE][NEWLINE][BOLD]Eagle Tribe:[\BOLD][NEWLINE][ICON_BULLET]+1 happiness/city[NEWLINE][ICON_BULLET]-10% XP needed for unit upgrades[NEWLINE][ICON_BULLET]+25% commerce food and production from trade routes[NEWLINE][ICON_BULLET]+2 relations with all other leaders[NEWLINE][NEWLINE]Gaining Favor: +10 per turn with the Foreign Trade civic, +100 making peace, +200 constructing Totem of the Eagle, +100 building that gives happiness, +200 building that gives area happiness, +300 building that gives global happiness[NEWLINE][NEWLINE]Losing Favor: -10 per turn at peace, -30 per turn at war, -50 starting a war[NEWLINE][NEWLINE][BOLD]Coyote Tribe:[\BOLD][NEWLINE][ICON_BULLET]+1 culture/city[NEWLINE][ICON_BULLET]+50% Great General Emergence[NEWLINE][ICON_BULLET]Dance of the Coyote Promotion for Recon Units: +5 culture from killed units, +10% withdrawal chance, +1 attack strength, removed after combat[NEWLINE][NEWLINE]Gaining Favor: +10 per turn with the Liberty civic, +200 founding cities, +50 on population growth, +150 on culture growth, +200 constructing Totem of the Coyote, +150 popping a goody hut, +100 exploring a lair, +30 pillaging[NEWLINE][NEWLINE]Losing Favor: -20 per turn[NEWLINE][NEWLINE][BOLD]Bear Tribe:[\BOLD][NEWLINE][ICON_BULLET]+3 health[NEWLINE][ICON_BULLET]+25% wonder production[NEWLINE][ICON_BULLET]+1 production on plots with 3 production[NEWLINE][NEWLINE]Gaining Favor: +10 per turn with the Industry civic, +50 constructing any building, +250 constructing a national wonder, +1000 constructing a world wonder, +100 constructing a building that gives health, +200 constructing a building that gives area health, +300 constructing a building that gives global health, +200 constructing Totem of the Bear[NEWLINE][NEWLINE]Losing Favor: -20 per turn[NEWLINE][NEWLINE][BOLD]Serpent Tribe:[\BOLD][NEWLINE][ICON_BULLET]Free Combat I promotion[NEWLINE][ICON_BULLET]+100% gold from pillaging, and pillaging modifies culture by +150%[NEWLINE][ICON_BULLET]+10% production from population hurry[NEWLINE][NEWLINE]Gaining Favor: +10 per turn with Conquest civic, +150 acquiring a city through conquest, +30 killing a unit, +30 killing an orc unit, +30 pillaging, +200 constructing a Totem of the Serpent[NEWLINE][NEWLINE]Losing Favor: -30 per turn at peace, -10 per turn at war, -50 making peace[NEWLINE][NEWLINE][BOLD]Tortoise Tribe:[\BOLD][NEWLINE][ICON_BULLET]+50% great person birth rate[NEWLINE][ICON_BULLET]Combat does not influence cultural borders[NEWLINE][ICON_BULLET]+15% science while at peace[NEWLINE][NEWLINE]Gaining Favor: +10 per turn with the Scholarship civic, +30 training a unit, +50 killing a unit within your own borders, +300 having a great person born, +200 constructing Totem of the Tortoise[NEWLINE][NEWLINE]Losing Favor: -10 per turn at peace, -30 per turn at war</Spanish>
+		<English>[H1]The Council:[\H1][PARAGRAPH:2][LINK=LEADER_THE_COUNCIL]The Council[\LINK] is a new emergent leader, but doesn't level up a single trait, as other emergent leaders do. Instead, the Council is constantly vying for the favour of the seven tribes. They do not participate in tribal elections while under the Tribal Law civic, but most of your in-game actions will affect your relations with one of the tribes, and if a particular tribe likes you enough, they'll join the council (represented by earning a unique trait). Favour with all tribes will decrease over time, but whenever a tribe joins, you get a small buffer window so that they won't leave you right after joining you.
+
+[BOLD]Eagle
+[ICON_BULLET]Likes workers and growing cities.
+[ICON_BULLET]Dislikes war.
+
+[BOLD]Deer
+[ICON_BULLET]Likes hunting and defending your lands from enemies.
+[ICON_BULLET]Dislikes war.
+
+[BOLD]Bear
+[ICON_BULLET]Likes culture growth and constructing buildings.
+[ICON_BULLET]Dislikes war.
+
+[BOLD]Wolf
+[ICON_BULLET]Likes fighting and raiding.
+[ICON_BULLET]Dislikes peace.
+
+[BOLD]Long Hair
+[ICON_BULLET]Likes spellcasters and great persons.
+[ICON_BULLET]Dislikes peace.
+
+[BOLD]Three Sisters
+[ICON_BULLET]Likes trading.
+[ICON_BULLET]Dislikes war.
+
+[BOLD]Sky
+[ICON_BULLET]Likes religion, culture and constructing buildings.</English>
+		<French>[H1]The Council:[\H1][PARAGRAPH:2][LINK=LEADER_THE_COUNCIL]The Council[\LINK] is a new emergent leader, but doesn't level up a single trait, as other emergent leaders do. Instead, the Council is constantly vying for the favour of the seven tribes. They do not participate in tribal elections while under the Tribal Law civic, but most of your in-game actions will affect your relations with one of the tribes, and if a particular tribe likes you enough, they'll join the council (represented by earning a unique trait). Favour with all tribes will decrease over time, but whenever a tribe joins, you get a small buffer window so that they won't leave you right after joining you.
+
+[BOLD]Eagle
+[ICON_BULLET]Likes workers and growing cities.
+[ICON_BULLET]Dislikes war.
+
+[BOLD]Deer
+[ICON_BULLET]Likes hunting and defending your lands from enemies.
+[ICON_BULLET]Dislikes war.
+
+[BOLD]Bear
+[ICON_BULLET]Likes culture growth and constructing buildings.
+[ICON_BULLET]Dislikes war.
+
+[BOLD]Wolf
+[ICON_BULLET]Likes fighting and raiding.
+[ICON_BULLET]Dislikes peace.
+
+[BOLD]Long Hair
+[ICON_BULLET]Likes spellcasters and great persons.
+[ICON_BULLET]Dislikes peace.
+
+[BOLD]Three Sisters
+[ICON_BULLET]Likes trading.
+[ICON_BULLET]Dislikes war.
+
+[BOLD]Sky
+[ICON_BULLET]Likes religion, culture and constructing buildings.</French>
+		<German>[H1]The Council:[\H1][PARAGRAPH:2][LINK=LEADER_THE_COUNCIL]The Council[\LINK] is a new emergent leader, but doesn't level up a single trait, as other emergent leaders do. Instead, the Council is constantly vying for the favour of the seven tribes. They do not participate in tribal elections while under the Tribal Law civic, but most of your in-game actions will affect your relations with one of the tribes, and if a particular tribe likes you enough, they'll join the council (represented by earning a unique trait). Favour with all tribes will decrease over time, but whenever a tribe joins, you get a small buffer window so that they won't leave you right after joining you.
+
+[BOLD]Eagle
+[ICON_BULLET]Likes workers and growing cities.
+[ICON_BULLET]Dislikes war.
+
+[BOLD]Deer
+[ICON_BULLET]Likes hunting and defending your lands from enemies.
+[ICON_BULLET]Dislikes war.
+
+[BOLD]Bear
+[ICON_BULLET]Likes culture growth and constructing buildings.
+[ICON_BULLET]Dislikes war.
+
+[BOLD]Wolf
+[ICON_BULLET]Likes fighting and raiding.
+[ICON_BULLET]Dislikes peace.
+
+[BOLD]Long Hair
+[ICON_BULLET]Likes spellcasters and great persons.
+[ICON_BULLET]Dislikes peace.
+
+[BOLD]Three Sisters
+[ICON_BULLET]Likes trading.
+[ICON_BULLET]Dislikes war.
+
+[BOLD]Sky
+[ICON_BULLET]Likes religion, culture and constructing buildings.</German>
+		<Italian>[H1]The Council:[\H1][PARAGRAPH:2][LINK=LEADER_THE_COUNCIL]The Council[\LINK] is a new emergent leader, but doesn't level up a single trait, as other emergent leaders do. Instead, the Council is constantly vying for the favour of the seven tribes. They do not participate in tribal elections while under the Tribal Law civic, but most of your in-game actions will affect your relations with one of the tribes, and if a particular tribe likes you enough, they'll join the council (represented by earning a unique trait). Favour with all tribes will decrease over time, but whenever a tribe joins, you get a small buffer window so that they won't leave you right after joining you.
+
+[BOLD]Eagle
+[ICON_BULLET]Likes workers and growing cities.
+[ICON_BULLET]Dislikes war.
+
+[BOLD]Deer
+[ICON_BULLET]Likes hunting and defending your lands from enemies.
+[ICON_BULLET]Dislikes war.
+
+[BOLD]Bear
+[ICON_BULLET]Likes culture growth and constructing buildings.
+[ICON_BULLET]Dislikes war.
+
+[BOLD]Wolf
+[ICON_BULLET]Likes fighting and raiding.
+[ICON_BULLET]Dislikes peace.
+
+[BOLD]Long Hair
+[ICON_BULLET]Likes spellcasters and great persons.
+[ICON_BULLET]Dislikes peace.
+
+[BOLD]Three Sisters
+[ICON_BULLET]Likes trading.
+[ICON_BULLET]Dislikes war.
+
+[BOLD]Sky
+[ICON_BULLET]Likes religion, culture and constructing buildings.</Italian>
+		<Spanish>[H1]The Council:[\H1][PARAGRAPH:2][LINK=LEADER_THE_COUNCIL]The Council[\LINK] is a new emergent leader, but doesn't level up a single trait, as other emergent leaders do. Instead, the Council is constantly vying for the favour of the seven tribes. They do not participate in tribal elections while under the Tribal Law civic, but most of your in-game actions will affect your relations with one of the tribes, and if a particular tribe likes you enough, they'll join the council (represented by earning a unique trait). Favour with all tribes will decrease over time, but whenever a tribe joins, you get a small buffer window so that they won't leave you right after joining you.
+
+[BOLD]Eagle
+[ICON_BULLET]Likes workers and growing cities.
+[ICON_BULLET]Dislikes war.
+
+[BOLD]Deer
+[ICON_BULLET]Likes hunting and defending your lands from enemies.
+[ICON_BULLET]Dislikes war.
+
+[BOLD]Bear
+[ICON_BULLET]Likes culture growth and constructing buildings.
+[ICON_BULLET]Dislikes war.
+
+[BOLD]Wolf
+[ICON_BULLET]Likes fighting and raiding.
+[ICON_BULLET]Dislikes peace.
+
+[BOLD]Long Hair
+[ICON_BULLET]Likes spellcasters and great persons.
+[ICON_BULLET]Dislikes peace.
+
+[BOLD]Three Sisters
+[ICON_BULLET]Likes trading.
+[ICON_BULLET]Dislikes war.
+
+[BOLD]Sky
+[ICON_BULLET]Likes religion, culture and constructing buildings.</Spanish>
 	</TEXT>
 </Civ4GameText>

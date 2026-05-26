@@ -5887,7 +5887,7 @@
 			<iAttitudeToMales>0</iAttitudeToMales>
 			<iSomniumAggressiveness>40</iSomniumAggressiveness>
 			<Alignment>ALIGNMENT_NEUTRAL</Alignment>
-			<LeaderClass>LEADERCLASS_LUCHUIRP_IMPORTANTx</LeaderClass>
+			<LeaderClass>LEADERCLASS_LUCHUIRP_IMPORTANT</LeaderClass>
 			<iAlignmentModifier>55</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_NEUTRAL</EthicalAlignment>
 			<iEthicalAlignmentModifier>-175</iEthicalAlignmentModifier>

@@ -2549,7 +2549,7 @@
 				<LinkedBuild>BUILD_REMOVE_FOREST</LinkedBuild>
 				<LinkedBuild>BUILD_REMOVE_JUNGLE</LinkedBuild>
 			</LinkedBuilds>
-			<ImprovementType>IMPROVEMENTCLASS_PLANTATION</ImprovementType>
+			<ImprovementType>IMPROVEMENTCLASS_PYRE</ImprovementType>
 			<RouteType>NONE</RouteType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs>

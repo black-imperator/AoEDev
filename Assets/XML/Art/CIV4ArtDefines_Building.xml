@@ -1574,7 +1574,17 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Bear Totem/Totem.nif</NIF>
 			<KFM/>
-			<Button>Art/Interface/Buttons/Buildings/Beartotem.dds</Button>
+			<Button>Art/Interface/Buttons/Buildings/BearTotem.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_TOTEM_BEAR</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Bear Totem/Totem.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/TotemBear.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_TOTEM_OF_THE_EAGLE</Type>
@@ -1584,7 +1594,7 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Bear Totem/Totem.nif</NIF>
 			<KFM/>
-			<Button>Art/Modules/ChislevExpansion/Buttons/EagleTotem.dds</Button>
+			<Button>Art/Interface/Buttons/Buildings/TotemEagle.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_TOTEM_OF_THE_COYOTE</Type>
@@ -1594,7 +1604,7 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Bear Totem/Totem.nif</NIF>
 			<KFM/>
-			<Button>Art/Modules/ChislevExpansion/Buttons/CoyoteTotem.dds</Button>
+			<Button>Art/Interface/Buttons/Buildings/TotemDeer.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_TOTEM_OF_THE_SERPENT</Type>
@@ -1604,7 +1614,7 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Bear Totem/Totem.nif</NIF>
 			<KFM/>
-			<Button>Art/Modules/ChislevExpansion/Buttons/SerpentTotem.dds</Button>
+			<Button>Art/Interface/Buttons/Buildings/TotemWolf.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_TOTEM_OF_THE_TORTOISE</Type>
@@ -1614,7 +1624,27 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Bear Totem/Totem.nif</NIF>
 			<KFM/>
-			<Button>Art/Modules/ChislevExpansion/Buttons/TortoiseTotem.dds</Button>
+			<Button>Art/Interface/Buttons/Buildings/TotemLonghair.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_TOTEM_OF_THE_SKY</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Bear Totem/Totem.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/TotemSky.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_TOTEM_OF_THE_THREE_SISTERS</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Bear Totem/Totem.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/TotemThreeSisters.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_GAMBLING_HOUSE</Type>
@@ -4507,6 +4537,16 @@
 			<NIF>Art/Structures/Buildings/Hope/sfx_epic_healer_crush_1h.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/Hope.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_DUNGEON_DTESH</Type>
+			<LSystem>LSYSTEM_3x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.2</fScale>
+			<fInterfaceScale>0.7</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Jail/Jail.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/DismalDungeon.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_MORGUE</Type>

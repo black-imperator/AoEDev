@@ -207,11 +207,11 @@ Elijah interrupted his servant, "Enough, it seems clear that Alexis is again beh
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_GOVERNORS_MANOR_HELP</Tag>
-		<English>[ICON_BULLET]Reduces war weariness.[NEWLINE][ICON_BULLET]Provides production equal to total unhappiness.</English>
-		<French>[ICON_BULLET]Diminue la lassitude due à la guerre.[NEWLINE][ICON_BULLET]Fournit autant de production que de mécontentement dans la ville.</French>
-		<German>[ICON_BULLET]Reduces war weariness.[NEWLINE][ICON_BULLET]Provides production equal to total unhappiness.</German>
-		<Italian>[ICON_BULLET]Riduce la stanchezza della guerra.[NEWLINE][ICON_BULLET]Fornisce una quantita di martelli uguale al valore di infelicità.</Italian>
-		<Spanish>[ICON_BULLET]Reduces war weariness.[NEWLINE][ICON_BULLET]Provides production equal to total unhappiness.</Spanish>
+		<English>[ICON_BULLET]Reduces war weariness.[NEWLINE][ICON_BULLET]Provides production equal to total unhappiness.[ICON_BULLET]Increases the Slave limit by 4</English>
+		<French>[ICON_BULLET]Diminue la lassitude due à la guerre.[NEWLINE][ICON_BULLET]Fournit autant de production que de mécontentement dans la ville.[ICON_BULLET]Augmente de 4 la limite d'Esclaves</French>
+		<German>[ICON_BULLET]Reduces war weariness.[NEWLINE][ICON_BULLET]Provides production equal to total unhappiness.[ICON_BULLET]Increases the Slave limit by 4</German>
+		<Italian>[ICON_BULLET]Riduce la stanchezza della guerra.[NEWLINE][ICON_BULLET]Fornisce una quantita di martelli uguale al valore di infelicità.[ICON_BULLET]Aumenta il limite di Schiavi di 4</Italian>
+		<Spanish>[ICON_BULLET]Reduces war weariness.[NEWLINE][ICON_BULLET]Provides production equal to total unhappiness.[ICON_BULLET]Increases the Slave limit by 4</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_GOVERNORS_MANOR_STRATEGY</Tag>

@@ -239,12 +239,12 @@
             <iDefense>15</iDefense>
             <UnitCombatFreeExperiences>
 			</UnitCombatFreeExperiences>
-            <SpecialistClassCounts>
-                <SpecialistClassCount>
-                    <SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
-                    <iSpecialistClassCount>2</iSpecialistClassCount>
-                </SpecialistClassCount>
-            </SpecialistClassCounts>
+            <SpecialistCounts>
+                <SpecialistCount>
+                    <SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+                    <iSpecialistCount>2</iSpecialistCount>
+                </SpecialistCount>
+            </SpecialistCounts>
             <ConstructSound>AS2D_BUILD_THEATRE</ConstructSound>
             <Flavors>
                 <Flavor>
@@ -266,7 +266,7 @@
             <Help>TEXT_BUILDING_NAMKO_RECREATION_FURNACE_HELP</Help>
             <Advisor>ADVISOR_GROWTH</Advisor>
             <ArtDefineTag>ART_DEF_BUILDING_NAMKO_RECREATION_FURNACE</ArtDefineTag>
-            <PrereqTech>TECH_SORCERY</PrereqTech>
+            <PrereqTech>TECH_NECROMANCY</PrereqTech>
             <iCost>350</iCost>  
             <iConquestProb>25</iConquestProb>
             <iAsset>1</iAsset>
@@ -293,12 +293,12 @@
 				</UnitCombatFreeExperience>
 			</UnitCombatFreeExperiences>
             <FreePromotion>PROMOTION_GCF_ZEALOUS1</FreePromotion>
-            <SpecialistClassCounts>
-                <SpecialistClassCount>
-                    <SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
-                    <iSpecialistClassCount>3</iSpecialistClassCount>
-                </SpecialistClassCount>
-            </SpecialistClassCounts>
+            <SpecialistCounts>
+                <SpecialistCount>
+                    <SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+                    <iSpecialistCount>3</iSpecialistCount>
+                </SpecialistCount>
+            </SpecialistCounts>
             <CommerceChanges>
                 <iCommerce>2</iCommerce> <!--Gold-->
                 <iCommerce>0</iCommerce> <!--Research-->
@@ -343,12 +343,12 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 			</CommerceModifiers>
-			<SpecialistClassCounts>
-				<SpecialistClassCount>
-					<SpecialistClass>SPECIALISTCLASS_MERCHANT</SpecialistClass>
-					<iSpecialistClassCount>1</iSpecialistClassCount>
-				</SpecialistClassCount>
-			</SpecialistClassCounts>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<ConstructSound>AS2D_BUILD_MARKETPLACE</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -388,12 +388,12 @@
 				<iCommerce>15</iCommerce>
 				<iCommerce>0</iCommerce>
 			</CommerceModifiers>
-			<SpecialistClassCounts>
-				<SpecialistClassCount>
-					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
-					<iSpecialistClassCount>2</iSpecialistClassCount>
-				</SpecialistClassCount>
-			</SpecialistClassCounts>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+					<iSpecialistCount>2</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<ConstructSound>AS2D_BUILD_LIBRARY</ConstructSound>
 			<Flavors>
 				<Flavor>

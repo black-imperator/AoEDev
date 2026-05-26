@@ -120,6 +120,7 @@
 			<bAllowAI>1</bAllowAI>
 			<bAbility>1</bAbility>
 			<bHasCasted>1</bHasCasted>
+			<iAIWeight>300</iAIWeight>
 			<PyRequirement>__import__('misrakSpells').reqMaterializeCity(pCaster)</PyRequirement>
 			<PyResult>__import__('misrakSpells').spellMaterializeCity(pCaster)</PyResult>
 			<Effect>EFFECT_SPELL1</Effect>

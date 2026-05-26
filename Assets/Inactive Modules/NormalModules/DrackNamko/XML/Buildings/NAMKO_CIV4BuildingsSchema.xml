@@ -355,22 +355,22 @@
 	<ElementType name="ReligionChanges" content="eltOnly">
 		<element type="ReligionChange" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
-	<ElementType name="SpecialistClass" content="textOnly"/>
-	<ElementType name="iSpecialistClassCount" content="textOnly" dt:type="int"/>
-	<ElementType name="SpecialistClassCount" content="eltOnly">
-		<element type="SpecialistClass"/>
-		<element type="iSpecialistClassCount"/>
+	<ElementType name="SpecialistType" content="textOnly"/>
+	<ElementType name="iSpecialistCount" content="textOnly" dt:type="int"/>
+	<ElementType name="SpecialistCount" content="eltOnly">
+		<element type="SpecialistType"/>
+		<element type="iSpecialistCount"/>
 	</ElementType>
-	<ElementType name="SpecialistClassCounts" content="eltOnly">
-		<element type="SpecialistClassCount" minOccurs="0" maxOccurs="*"/>
+	<ElementType name="SpecialistCounts" content="eltOnly">
+		<element type="SpecialistCount" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
-	<ElementType name="iFreeSpecialistClassCount" content="textOnly" dt:type="int"/>
-	<ElementType name="FreeSpecialistClassCount" content="eltOnly">
-		<element type="SpecialistClass"/>
-		<element type="iFreeSpecialistClassCount"/>
+	<ElementType name="iFreeSpecialistCount" content="textOnly" dt:type="int"/>
+	<ElementType name="FreeSpecialistCount" content="eltOnly">
+		<element type="SpecialistType"/>
+		<element type="iFreeSpecialistCount"/>
 	</ElementType>
-	<ElementType name="FreeSpecialistClassCounts" content="eltOnly">
-		<element type="FreeSpecialistClassCount" minOccurs="0" maxOccurs="*"/>
+	<ElementType name="FreeSpecialistCounts" content="eltOnly">
+		<element type="FreeSpecialistCount" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="bCommerce" content="textOnly" dt:type="boolean"/>
 	<ElementType name="CommerceFlexibles" content="eltOnly">
@@ -481,12 +481,12 @@
 	<ElementType name="BuildingExcludes" content="eltOnly">
 		<element type="BuildingExclude" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
-	<ElementType name="SpecialistClassYieldChange" content="eltOnly">
-		<element type="SpecialistClass"/>
+	<ElementType name="SpecialistYieldChange" content="eltOnly">
+		<element type="SpecialistType"/>
 		<element type="YieldChanges"/>
 	</ElementType>
-	<ElementType name="SpecialistClassYieldChanges" content="eltOnly">
-		<element type="SpecialistClassYieldChange" minOccurs="0" maxOccurs="*"/>
+	<ElementType name="SpecialistYieldChanges" content="eltOnly">
+		<element type="SpecialistYieldChange" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="BonusYieldModifier" content="eltOnly">
 		<element type="BonusType"/>
@@ -504,7 +504,7 @@
 	</ElementType>
 	<ElementType name="ImprovementFreeSpecialist" content="eltOnly">
 		<element type="ImprovementType"/>
-		<element type="iFreeSpecialistClassCount"/>
+		<element type="iFreeSpecialistCount"/>
 	</ElementType>
 	<ElementType name="ImprovementFreeSpecialists" content="eltOnly">
 		<element type="ImprovementFreeSpecialist" minOccurs="0" maxOccurs="*"/>
@@ -557,51 +557,51 @@
 	<ElementType name="PrereqTrait" content="textOnly"/>
 	<ElementType name="PrereqTrait2" content="textOnly"/>
 	<ElementType name="RemovePromotion" content="textOnly"/>
-	<ElementType name="SpecialistClassCommerceChange" content="eltOnly">
-		<element type="SpecialistClass"/>
+	<ElementType name="SpecialistCommerceChange" content="eltOnly">
+		<element type="SpecialistType"/>
 		<element type="CommerceChanges"/>
 	</ElementType>
-	<ElementType name="SpecialistClassCommerceChanges" content="eltOnly">
-		<element type="SpecialistClassCommerceChange" minOccurs="0" maxOccurs="*"/>
+	<ElementType name="SpecialistCommerceChanges" content="eltOnly">
+		<element type="SpecialistCommerceChange" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 <!--
 /**	GWSLocalSpecialist																	Milaga	**/
 /** Buildings can change give bonuses to specialists in only one city							**/
 -->
-	<ElementType name="LocalSpecialistClassCommerceChange" content="eltOnly">
-		<element type="SpecialistClass"/>
+	<ElementType name="LocalSpecialistCommerceChange" content="eltOnly">
+		<element type="SpecialistType"/>
 		<element type="CommerceChanges"/>
 	</ElementType>
-	<ElementType name="LocalSpecialistClassCommerceChanges" content="eltOnly">
-		<element type="LocalSpecialistClassCommerceChange" minOccurs="0" maxOccurs="*"/>
+	<ElementType name="LocalSpecialistCommerceChanges" content="eltOnly">
+		<element type="LocalSpecialistCommerceChange" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
-	<ElementType name="LocalSpecialistClassYieldChange" content="eltOnly">
-		<element type="SpecialistClass"/>
+	<ElementType name="LocalSpecialistYieldChange" content="eltOnly">
+		<element type="SpecialistType"/>
 		<element type="YieldChanges"/>
 	</ElementType>
-	<ElementType name="LocalSpecialistClassYieldChanges" content="eltOnly">
-		<element type="LocalSpecialistClassYieldChange" minOccurs="0" maxOccurs="*"/>
+	<ElementType name="LocalSpecialistYieldChanges" content="eltOnly">
+		<element type="LocalSpecialistYieldChange" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
-	<ElementType name="LocalSpecialistClassHappinessChange" content="eltOnly">
-		<element type="SpecialistClass"/>
+	<ElementType name="LocalSpecialistHappinessChange" content="eltOnly">
+		<element type="SpecialistType"/>
 		<element type="iHappiness"/>
 	</ElementType>
-	<ElementType name="LocalSpecialistClassHappinessChanges" content="eltOnly">
-		<element type="LocalSpecialistClassHappinessChange" minOccurs="0" maxOccurs="*"/>
+	<ElementType name="LocalSpecialistHappinessChanges" content="eltOnly">
+		<element type="LocalSpecialistHappinessChange" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
-	<ElementType name="LocalSpecialistClassHealthChange" content="eltOnly">
-		<element type="SpecialistClass"/>
+	<ElementType name="LocalSpecialistHealthChange" content="eltOnly">
+		<element type="SpecialistType"/>
 		<element type="iHealth"/>
 	</ElementType>
-	<ElementType name="LocalSpecialistClassHealthChanges" content="eltOnly">
-		<element type="LocalSpecialistClassHealthChange" minOccurs="0" maxOccurs="*"/>
+	<ElementType name="LocalSpecialistHealthChanges" content="eltOnly">
+		<element type="LocalSpecialistHealthChange" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
-	<ElementType name="LocalSpecialistClassGPPChange" content="eltOnly">
-		<element type="SpecialistClass"/>
+	<ElementType name="LocalSpecialistGPPChange" content="eltOnly">
+		<element type="SpecialistType"/>
 		<element type="iGreatPeopleRateModifier"/>
 	</ElementType>
-	<ElementType name="LocalSpecialistClassGPPChanges" content="eltOnly">
-		<element type="LocalSpecialistClassGPPChange" minOccurs="0" maxOccurs="*"/>
+	<ElementType name="LocalSpecialistGPPChanges" content="eltOnly">
+		<element type="LocalSpecialistGPPChange" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 <!--
 /**	GWSLocalSpecialist																		END	**/
@@ -937,8 +937,8 @@
 		<element type="StateReligionCommerces"/>
 		<element type="CommerceHappinesses"/>
 		<element type="ReligionChanges"/>
-		<element type="SpecialistClassCounts"/>
-		<element type="FreeSpecialistClassCounts"/>
+		<element type="SpecialistCounts"/>
+		<element type="FreeSpecialistCounts"/>
 		<element type="CommerceFlexibles"/>
 		<element type="CommerceChangeOriginalOwners"/>
 		<element type="ConstructSound"/>
@@ -951,7 +951,7 @@
 		<element type="BuildingHappinessChanges"/>
 		<element type="PrereqBuildingClasses"/>
 		<element type="BuildingClassNeededs"/>
-		<element type="SpecialistClassYieldChanges"/>
+		<element type="SpecialistYieldChanges"/>
 		<element type="BonusYieldModifiers"/>
 		<element type="ImprovementFreeSpecialists"/>
 		<element type="Flavors"/>
@@ -988,7 +988,7 @@
 		<element type="iCityCapModifier"/>
 		<element type="iGlobalCityCapModifier"/>
 <!-- CityPop Cap END -->
-		<element type="SpecialistClassCommerceChanges"/>
+		<element type="SpecialistCommerceChanges"/>
 		<element type="TerrainYieldChanges"/>
 		<element type="FeatureYieldChanges"/>
 		<element type="PeakYieldChange"/>
@@ -996,11 +996,11 @@
 /**	GWSLocalSpecialist																	Milaga	**/
 /** Buildings can change give bonuses to specialists in only one city							**/
 -->
-		<element type="LocalSpecialistClassCommerceChanges"/>
-		<element type="LocalSpecialistClassYieldChanges"/>
-		<element type="LocalSpecialistClassHappinessChanges"/>
-		<element type="LocalSpecialistClassHealthChanges"/>
-		<element type="LocalSpecialistClassGPPChanges"/>
+		<element type="LocalSpecialistCommerceChanges"/>
+		<element type="LocalSpecialistYieldChanges"/>
+		<element type="LocalSpecialistHappinessChanges"/>
+		<element type="LocalSpecialistHealthChanges"/>
+		<element type="LocalSpecialistGPPChanges"/>
 <!--
 /**	GWSLocalSpecialist																		END	**/
 -->		<element type="PrereqOrTerrain"/>

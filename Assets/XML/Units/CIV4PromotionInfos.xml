@@ -830,7 +830,7 @@
 				</FeatureMoveCost>
 				<FeatureMoveCost>
 					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<iFeatureMoveCost>-2</iFeatureMoveCost>
+					<iFeatureMoveCost>-1</iFeatureMoveCost>
 				</FeatureMoveCost>
 			</FeatureMoveCosts>
 			<Button>Art/Interface/Buttons/Promotions/Races/darkElf.dds</Button>
@@ -874,7 +874,7 @@
 				</FeatureMoveCost>
 				<FeatureMoveCost>
 					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<iFeatureMoveCost>-2</iFeatureMoveCost>
+					<iFeatureMoveCost>-1</iFeatureMoveCost>
 				</FeatureMoveCost>
 			</FeatureMoveCosts>
 			<Button>Art/Interface/Buttons/Promotions/Races/Elf.dds</Button>
@@ -916,7 +916,7 @@
 				</FeatureMoveCost>
 				<FeatureMoveCost>
 					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<iFeatureMoveCost>-2</iFeatureMoveCost>
+					<iFeatureMoveCost>-1</iFeatureMoveCost>
 				</FeatureMoveCost>
 			</FeatureMoveCosts>
 			<Button>Art/Interface/Buttons/Promotions/Races/onceElf.dds</Button>
@@ -6338,6 +6338,9 @@
 			<PrereqCivilizations>
 				<PrereqCivilization>CIVILIZATION_DTESH</PrereqCivilization>
 			</PrereqCivilizations>
+			<PromotionBuilds>
+				<PromotionBuild>BUILD_PYRE</PromotionBuild>
+			</PromotionBuilds>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
@@ -9692,10 +9695,6 @@
 				<PrereqCivilization>CIVILIZATION_DTESH</PrereqCivilization>
 			</PrereqCivilizations>
 			<UnitCombats>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
-					<iMaxApplications>0</iMaxApplications>
-				</UnitCombat>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
 					<iMaxApplications>0</iMaxApplications>
@@ -16397,7 +16396,7 @@
 			<Description>TXT_KEY_PROMOTION_CREEPING_DEAD_EFFECT</Description>
 			<bAutoAcquire>1</bAutoAcquire>
 			<bNoXP>1</bNoXP>
-			<iInvisibleLevel>3</iInvisibleLevel>
+			<iInvisibleLevel>1</iInvisibleLevel>
 			<PrereqPromotionANDs>
 				<PrereqPromotionAND>
 					<PromotionType>PROMOTION_CREEPING_DEAD</PromotionType>
@@ -35812,6 +35811,51 @@
 			<Button>Art/Interface/Buttons/Promotions/Freelancer.dds</Button>
 			<iMinLevel>-1</iMinLevel>
 		</PromotionInfo>
+		<PromotionInfo>		<!-- Werewolf Wendigo Hunger Chislev -->
+			<Type>PROMOTION_WEREWOLF_HUNGER_CHISLEV</Type>
+			<Description>TXT_KEY_PROMOTION_WEREWOLF_HUNGER_CHISLEV</Description>
+			<iPromotionRandomApplyChance>3</iPromotionRandomApplyChance>
+			<Button>Art/Interface/Buttons/Promotions/WendigoCurse.dds</Button>
+			<iMinLevel>-1</iMinLevel>
+			<YieldsFromWin>
+				<iYield>5</iYield>		<!-- Food -->
+			</YieldsFromWin>
+			<PromotionRandomApply>PROMOTION_WEREWOLF</PromotionRandomApply>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+		</PromotionInfo>
 		<PromotionInfo>		<!-- Long Knife Promo -->
 			<Type>PROMOTION_LONG_KNIFE</Type>
 			<Description>TXT_KEY_PROMOTION_LONG_KNIFE</Description>
@@ -36821,9 +36865,6 @@
 			<PrereqUnits>
 				<PrereqUnit>UNIT_ASPIRANT</PrereqUnit>
 			</PrereqUnits>
-			<PrereqTraits>
-				<PrereqTrait>TRAIT_HUMANIST1</PrereqTrait>
-			</PrereqTraits>
 			<Button>Art/Interface/Buttons/Promotions/Civs/Mekara/Ascension1.dds</Button>
 			<iResistMagic>20</iResistMagic>
 			<DamageTypeResists>
@@ -36853,9 +36894,6 @@
 			<PrereqUnits>
 				<PrereqUnit>UNIT_ASPIRANT</PrereqUnit>
 			</PrereqUnits>
-			<PrereqTraits>
-				<PrereqTrait>TRAIT_HUMANIST1</PrereqTrait>
-			</PrereqTraits>
 			<PrereqMinAge>35</PrereqMinAge>
 			<Button>Art/Interface/Buttons/Promotions/Civs/Mekara/Ascension2.dds</Button>
 			<iCollateralDamageProtection>20</iCollateralDamageProtection>
@@ -36871,9 +36909,6 @@
 			<PrereqUnits>
 				<PrereqUnit>UNIT_ASPIRANT</PrereqUnit>
 			</PrereqUnits>
-			<PrereqTraits>
-				<PrereqTrait>TRAIT_HUMANIST1</PrereqTrait>
-			</PrereqTraits>
 			<PrereqMinAge>75</PrereqMinAge>
 			<Button>Art/Interface/Buttons/Promotions/Civs/Mekara/Ascension3.dds</Button>
 			<iCollateralDamageProtection>20</iCollateralDamageProtection>
@@ -41825,8 +41860,39 @@
 			<Type>PROMOTION_RAISE_THE_DEAD_SCIONS_PRIEST</Type>
 			<Description>TXT_KEY_PROMOTION_RAISE_THE_DEAD_SCIONS</Description>
 			<CaptureUnitClass>UNITCLASS_REBORN</CaptureUnitClass>
-			<iSlaveGenerationChance>5</iSlaveGenerationChance>
+			<iSlaveGenerationChance>15</iSlaveGenerationChance>
+			<PromotionSummonPerk>PROMOTION_RAISE_THE_DEAD_SCIONS_PRIEST</PromotionSummonPerk>
 			<bPrereqAliveCapture>1</bPrereqAliveCapture>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
 			<Button>Art/Interface/Buttons/Promotions/Civs/Scions/Necromancer.dds</Button>
 			<iMinLevel>-1</iMinLevel>
 		</PromotionInfo>

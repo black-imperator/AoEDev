@@ -164,11 +164,71 @@ The new world was born and the rites are once again set to be performed into a n
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHISLEV_STRATEGY</Tag>
-		<English>Chislev</English>
-		<French>Chislevites</French>
-		<German>Chislev</German>
-		<Italian>Chislev</Italian>
-		<Spanish>Chislev</Spanish>
+		<English>Complexity: Advanced
+The chosen children of Nanosuelta.
+
+[ICON_BULLET]Population: The Chislev respect the sustainability of their environment and enforce a strict population limit per city. The maximums are: 7 by default, 14 with a Clan Mound building, 21 with a Clan Lodge building, and finally 28 with a Clan Council building.
+[ICON_BULLET]Clans: Available at Code of Laws, the Clan Mound can be built in each city. The Clan Lodge, however, requires 7 cities before it can be built, making the Chislev a very expansion-focused playstyle. 
+The Benefit of the Clan Lodge is its ability to empower smaller cities within 6 tiles of the Lodge with stronger economies.
+[ICON_BULLET]Totems: These structures represent the regional influence of one of the 7 sister tribes and their specialities. Every city within 6 tiles will gain a copy of this totem's boons. Cities within 6 tiles of multiple different Totems will gain benefits from each one.
+[ICON_BULLET]Improvements: The Chislev have a replacement for the Cottage: the Clan. These represent the decentralised nature of the Chislev. At level 3, each will send an Elder Specialist to the nearest city as their spokesperson. This improvement has a spacing requirement of (2).
+[ICON_BULLET]Adoptive: The Chislev are able to convert defeated enemies into warriors of the clans, and their unique improvement, the Great Clan (III), is able to spawn settler units, called TaliWali, who can settle cities or add themselves to existing cities as the population of the Chislev migrates to new pastures.
+[ICON_BULLET]Military: The Chislev doctrine favours the Recon unit type, with their Paladins, Immortals and even Berserkers having the Recon unit type. This makes them able to exploit animal blood to the fullest.
+Military units which reach a high enough level are able to befriend Amicus, silver dogs of Nanoseulta.
+[ICON_BULLET]Hero: The Chislev hero is available without any technology required.
+[ICON_BULLET]Special Leader: The Council leader for the Chislev is a very unique sort of minigame. They start with no traits but can gain influence with the 7 clans as they perform tasks and actions that each clan likes. Finally, when favour is high enough, clans will join you and give their respective clan trait. Some actions will please one clan while angering another, so balancing the needs of them all would be a difficult task.</English>
+		<French>Complexity: Advanced
+The chosen children of Nanosuelta.
+
+[ICON_BULLET]Population: The Chislev respect the sustainability of their environment and enforce a strict population limit per city. The maximums are: 7 by default, 14 with a Clan Mound building, 21 with a Clan Lodge building, and finally 28 with a Clan Council building.
+[ICON_BULLET]Clans: Available at Code of Laws, the Clan Mound can be built in each city. The Clan Lodge, however, requires 7 cities before it can be built, making the Chislev a very expansion-focused playstyle. 
+The Benefit of the Clan Lodge is its ability to empower smaller cities within 6 tiles of the Lodge with stronger economies.
+[ICON_BULLET]Totems: These structures represent the regional influence of one of the 7 sister tribes and their specialities. Every city within 6 tiles will gain a copy of this totem's boons. Cities within 6 tiles of multiple different Totems will gain benefits from each one.
+[ICON_BULLET]Improvements: The Chislev have a replacement for the Cottage: the Clan. These represent the decentralised nature of the Chislev. At level 3, each will send an Elder Specialist to the nearest city as their spokesperson. This improvement has a spacing requirement of (2).
+[ICON_BULLET]Adoptive: The Chislev are able to convert defeated enemies into warriors of the clans, and their unique improvement, the Great Clan (III), is able to spawn settler units, called TaliWali, who can settle cities or add themselves to existing cities as the population of the Chislev migrates to new pastures.
+[ICON_BULLET]Military: The Chislev doctrine favours the Recon unit type, with their Paladins, Immortals and even Berserkers having the Recon unit type. This makes them able to exploit animal blood to the fullest.
+Military units which reach a high enough level are able to befriend Amicus, silver dogs of Nanoseulta.
+[ICON_BULLET]Hero: The Chislev hero is available without any technology required.
+[ICON_BULLET]Special Leader: The Council leader for the Chislev is a very unique sort of minigame. They start with no traits but can gain influence with the 7 clans as they perform tasks and actions that each clan likes. Finally, when favour is high enough, clans will join you and give their respective clan trait. Some actions will please one clan while angering another, so balancing the needs of them all would be a difficult task.</French>
+		<German>Complexity: Advanced
+The chosen children of Nanosuelta.
+
+[ICON_BULLET]Population: The Chislev respect the sustainability of their environment and enforce a strict population limit per city. The maximums are: 7 by default, 14 with a Clan Mound building, 21 with a Clan Lodge building, and finally 28 with a Clan Council building.
+[ICON_BULLET]Clans: Available at Code of Laws, the Clan Mound can be built in each city. The Clan Lodge, however, requires 7 cities before it can be built, making the Chislev a very expansion-focused playstyle. 
+The Benefit of the Clan Lodge is its ability to empower smaller cities within 6 tiles of the Lodge with stronger economies.
+[ICON_BULLET]Totems: These structures represent the regional influence of one of the 7 sister tribes and their specialities. Every city within 6 tiles will gain a copy of this totem's boons. Cities within 6 tiles of multiple different Totems will gain benefits from each one.
+[ICON_BULLET]Improvements: The Chislev have a replacement for the Cottage: the Clan. These represent the decentralised nature of the Chislev. At level 3, each will send an Elder Specialist to the nearest city as their spokesperson. This improvement has a spacing requirement of (2).
+[ICON_BULLET]Adoptive: The Chislev are able to convert defeated enemies into warriors of the clans, and their unique improvement, the Great Clan (III), is able to spawn settler units, called TaliWali, who can settle cities or add themselves to existing cities as the population of the Chislev migrates to new pastures.
+[ICON_BULLET]Military: The Chislev doctrine favours the Recon unit type, with their Paladins, Immortals and even Berserkers having the Recon unit type. This makes them able to exploit animal blood to the fullest.
+Military units which reach a high enough level are able to befriend Amicus, silver dogs of Nanoseulta.
+[ICON_BULLET]Hero: The Chislev hero is available without any technology required.
+[ICON_BULLET]Special Leader: The Council leader for the Chislev is a very unique sort of minigame. They start with no traits but can gain influence with the 7 clans as they perform tasks and actions that each clan likes. Finally, when favour is high enough, clans will join you and give their respective clan trait. Some actions will please one clan while angering another, so balancing the needs of them all would be a difficult task.</German>
+		<Italian>Complexity: Advanced
+The chosen children of Nanosuelta.
+
+[ICON_BULLET]Population: The Chislev respect the sustainability of their environment and enforce a strict population limit per city. The maximums are: 7 by default, 14 with a Clan Mound building, 21 with a Clan Lodge building, and finally 28 with a Clan Council building.
+[ICON_BULLET]Clans: Available at Code of Laws, the Clan Mound can be built in each city. The Clan Lodge, however, requires 7 cities before it can be built, making the Chislev a very expansion-focused playstyle. 
+The Benefit of the Clan Lodge is its ability to empower smaller cities within 6 tiles of the Lodge with stronger economies.
+[ICON_BULLET]Totems: These structures represent the regional influence of one of the 7 sister tribes and their specialities. Every city within 6 tiles will gain a copy of this totem's boons. Cities within 6 tiles of multiple different Totems will gain benefits from each one.
+[ICON_BULLET]Improvements: The Chislev have a replacement for the Cottage: the Clan. These represent the decentralised nature of the Chislev. At level 3, each will send an Elder Specialist to the nearest city as their spokesperson. This improvement has a spacing requirement of (2).
+[ICON_BULLET]Adoptive: The Chislev are able to convert defeated enemies into warriors of the clans, and their unique improvement, the Great Clan (III), is able to spawn settler units, called TaliWali, who can settle cities or add themselves to existing cities as the population of the Chislev migrates to new pastures.
+[ICON_BULLET]Military: The Chislev doctrine favours the Recon unit type, with their Paladins, Immortals and even Berserkers having the Recon unit type. This makes them able to exploit animal blood to the fullest.
+Military units which reach a high enough level are able to befriend Amicus, silver dogs of Nanoseulta.
+[ICON_BULLET]Hero: The Chislev hero is available without any technology required.
+[ICON_BULLET]Special Leader: The Council leader for the Chislev is a very unique sort of minigame. They start with no traits but can gain influence with the 7 clans as they perform tasks and actions that each clan likes. Finally, when favour is high enough, clans will join you and give their respective clan trait. Some actions will please one clan while angering another, so balancing the needs of them all would be a difficult task.</Italian>
+		<Spanish>Complexity: Advanced
+The chosen children of Nanosuelta.
+
+[ICON_BULLET]Population: The Chislev respect the sustainability of their environment and enforce a strict population limit per city. The maximums are: 7 by default, 14 with a Clan Mound building, 21 with a Clan Lodge building, and finally 28 with a Clan Council building.
+[ICON_BULLET]Clans: Available at Code of Laws, the Clan Mound can be built in each city. The Clan Lodge, however, requires 7 cities before it can be built, making the Chislev a very expansion-focused playstyle. 
+The Benefit of the Clan Lodge is its ability to empower smaller cities within 6 tiles of the Lodge with stronger economies.
+[ICON_BULLET]Totems: These structures represent the regional influence of one of the 7 sister tribes and their specialities. Every city within 6 tiles will gain a copy of this totem's boons. Cities within 6 tiles of multiple different Totems will gain benefits from each one.
+[ICON_BULLET]Improvements: The Chislev have a replacement for the Cottage: the Clan. These represent the decentralised nature of the Chislev. At level 3, each will send an Elder Specialist to the nearest city as their spokesperson. This improvement has a spacing requirement of (2).
+[ICON_BULLET]Adoptive: The Chislev are able to convert defeated enemies into warriors of the clans, and their unique improvement, the Great Clan (III), is able to spawn settler units, called TaliWali, who can settle cities or add themselves to existing cities as the population of the Chislev migrates to new pastures.
+[ICON_BULLET]Military: The Chislev doctrine favours the Recon unit type, with their Paladins, Immortals and even Berserkers having the Recon unit type. This makes them able to exploit animal blood to the fullest.
+Military units which reach a high enough level are able to befriend Amicus, silver dogs of Nanoseulta.
+[ICON_BULLET]Hero: The Chislev hero is available without any technology required.
+[ICON_BULLET]Special Leader: The Council leader for the Chislev is a very unique sort of minigame. They start with no traits but can gain influence with the 7 clans as they perform tasks and actions that each clan likes. Finally, when favour is high enough, clans will join you and give their respective clan trait. Some actions will please one clan while angering another, so balancing the needs of them all would be a difficult task.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHISLEV_OLD_PEDIA</Tag>
@@ -225,6 +285,68 @@ The new world was born and the rites are once again set to be performed into a n
 		<German>[TAB]It had been years since the start of the war with the Clan of Embers. The younger Chislev didn't even know how it all began, and many called for peace; but the Council were wise, and were privy to all of the Chislev tales, back to their origin. They knew that there would be no peace so long as they bordered The Clan. Bhall and The Clan would not rest. The Council was thankful to have the Bannor as allies. Some of the Bannor may have viewed the Chislev as savages, but regardless, as long time war partners, they had a mutual respect for one another.[PARAGRAPH:1]The Council was made of five leaders: one from each of the great tribes of the past. The tribes had come together against the orcs and had become such a cohesive unit, that it became difficult to distinguish one tribe from the next, unlike how things had been a generation or two ago. Still, one tribe stood out from the rest: the fiery spirit of the Serpent Tribe. The Serpent Tribe had still not forgotten the wrongs committed against them by the orcs, and they made damn well sure that their younger generations knew of their struggle. The Serpent Tribe were certainly the most vocal of the lot, and any time a chance for peace fell on the table, the Serpent Tribe reminded the rest of the Council of the Chislev's past, and that their could be no peace until this ember was extinguished. Certainly the Bear Tribe and Coyote Tribe agreed.[PARAGRAPH:1]This comingling of the tribes, yet each with their own distinct roots, provided the Council with a vast array of thoughts and approaches to each particular issue. While each individual tribe would have had their own weaknesses and faults, the Council was able to mitigate that by combining the best minds in one room to make the best possible decisions for the Chislev. And the people trusted them. The Council reached an almost deific status. To the outsiders, they believed the Council to counsel with spirits of the past, present, and future. While that did happen on occasion, the Chislev were, for the most part, led purely on the wisdom of the elder Council. And they, in their seeming omnipotence, were determined to wipe out the Clan of Embers once and for all.[NEWLINE][NEWLINE]Strategy: The Council is unlike any other leader. It's highly recommended that you review the [LINK=CONCEPT_THE_COUNCIL_DYNAMIC_LEADER]Chislev - The Council (Dynamic Leader)[\LINK] Concept Pedia prior to playing as The Council.</German>
 		<Italian>[TAB]It had been years since the start of the war with the Clan of Embers. The younger Chislev didn't even know how it all began, and many called for peace; but the Council were wise, and were privy to all of the Chislev tales, back to their origin. They knew that there would be no peace so long as they bordered The Clan. Bhall and The Clan would not rest. The Council was thankful to have the Bannor as allies. Some of the Bannor may have viewed the Chislev as savages, but regardless, as long time war partners, they had a mutual respect for one another.[PARAGRAPH:1]The Council was made of five leaders: one from each of the great tribes of the past. The tribes had come together against the orcs and had become such a cohesive unit, that it became difficult to distinguish one tribe from the next, unlike how things had been a generation or two ago. Still, one tribe stood out from the rest: the fiery spirit of the Serpent Tribe. The Serpent Tribe had still not forgotten the wrongs committed against them by the orcs, and they made damn well sure that their younger generations knew of their struggle. The Serpent Tribe were certainly the most vocal of the lot, and any time a chance for peace fell on the table, the Serpent Tribe reminded the rest of the Council of the Chislev's past, and that their could be no peace until this ember was extinguished. Certainly the Bear Tribe and Coyote Tribe agreed.[PARAGRAPH:1]This comingling of the tribes, yet each with their own distinct roots, provided the Council with a vast array of thoughts and approaches to each particular issue. While each individual tribe would have had their own weaknesses and faults, the Council was able to mitigate that by combining the best minds in one room to make the best possible decisions for the Chislev. And the people trusted them. The Council reached an almost deific status. To the outsiders, they believed the Council to counsel with spirits of the past, present, and future. While that did happen on occasion, the Chislev were, for the most part, led purely on the wisdom of the elder Council. And they, in their seeming omnipotence, were determined to wipe out the Clan of Embers once and for all.[NEWLINE][NEWLINE]Strategy: The Council is unlike any other leader. It's highly recommended that you review the [LINK=CONCEPT_THE_COUNCIL_DYNAMIC_LEADER]Chislev - The Council (Dynamic Leader)[\LINK] Concept Pedia prior to playing as The Council.</Italian>
 		<Spanish>[TAB]It had been years since the start of the war with the Clan of Embers. The younger Chislev didn't even know how it all began, and many called for peace; but the Council were wise, and were privy to all of the Chislev tales, back to their origin. They knew that there would be no peace so long as they bordered The Clan. Bhall and The Clan would not rest. The Council was thankful to have the Bannor as allies. Some of the Bannor may have viewed the Chislev as savages, but regardless, as long time war partners, they had a mutual respect for one another.[PARAGRAPH:1]The Council was made of five leaders: one from each of the great tribes of the past. The tribes had come together against the orcs and had become such a cohesive unit, that it became difficult to distinguish one tribe from the next, unlike how things had been a generation or two ago. Still, one tribe stood out from the rest: the fiery spirit of the Serpent Tribe. The Serpent Tribe had still not forgotten the wrongs committed against them by the orcs, and they made damn well sure that their younger generations knew of their struggle. The Serpent Tribe were certainly the most vocal of the lot, and any time a chance for peace fell on the table, the Serpent Tribe reminded the rest of the Council of the Chislev's past, and that their could be no peace until this ember was extinguished. Certainly the Bear Tribe and Coyote Tribe agreed.[PARAGRAPH:1]This comingling of the tribes, yet each with their own distinct roots, provided the Council with a vast array of thoughts and approaches to each particular issue. While each individual tribe would have had their own weaknesses and faults, the Council was able to mitigate that by combining the best minds in one room to make the best possible decisions for the Chislev. And the people trusted them. The Council reached an almost deific status. To the outsiders, they believed the Council to counsel with spirits of the past, present, and future. While that did happen on occasion, the Chislev were, for the most part, led purely on the wisdom of the elder Council. And they, in their seeming omnipotence, were determined to wipe out the Clan of Embers once and for all.[NEWLINE][NEWLINE]Strategy: The Council is unlike any other leader. It's highly recommended that you review the [LINK=CONCEPT_THE_COUNCIL_DYNAMIC_LEADER]Chislev - The Council (Dynamic Leader)[\LINK] Concept Pedia prior to playing as The Council.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_MIDJIN</Tag>
+		<English>Midjin Inini</English>
+		<French>Midjin Inini</French>
+		<German>Midjin Inini</German>
+		<Italian>Midjin Ininì</Italian>
+		<Spanish>Midjin Ininì</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_MIDJIN_PEDIA</Tag>
+		<English>The frigid cold is nothing to the ache of our hunger.
+The cold has soothed us, numbed our pain as we slept in the chasms.
+The cold has brought you to us, tredding woods your elders would have warned of, if they had survived the frost.
+The cold will guide us, showing us your tracks as you flee our sharpened teeth.
+
+Embrace the cold, little sheep, lie down in the snow so that we may savour your flesh without a fight.</English>
+		<French>The frigid cold is nothing to the ache of our hunger.
+The cold has soothed us, numbed our pain as we slept in the chasms.
+The cold has brought you to us, tredding woods your elders would have warned of, if they had survived the frost.
+The cold will guide us, showing us your tracks as you flee our sharpened teeth.
+
+Embrace the cold, little sheep, lie down in the snow so that we may savour your flesh without a fight.</French>
+		<German>The frigid cold is nothing to the ache of our hunger.
+The cold has soothed us, numbed our pain as we slept in the chasms.
+The cold has brought you to us, tredding woods your elders would have warned of, if they had survived the frost.
+The cold will guide us, showing us your tracks as you flee our sharpened teeth.
+
+Embrace the cold, little sheep, lie down in the snow so that we may savour your flesh without a fight.</German>
+		<Italian>The frigid cold is nothing to the ache of our hunger.
+The cold has soothed us, numbed our pain as we slept in the chasms.
+The cold has brought you to us, tredding woods your elders would have warned of, if they had survived the frost.
+The cold will guide us, showing us your tracks as you flee our sharpened teeth.
+
+Embrace the cold, little sheep, lie down in the snow so that we may savour your flesh without a fight.</Italian>
+		<Spanish>The frigid cold is nothing to the ache of our hunger.
+The cold has soothed us, numbed our pain as we slept in the chasms.
+The cold has brought you to us, tredding woods your elders would have warned of, if they had survived the frost.
+The cold will guide us, showing us your tracks as you flee our sharpened teeth.
+
+Embrace the cold, little sheep, lie down in the snow so that we may savour your flesh without a fight.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_CITIZEN_CHISLEV</Tag>
+		<English>Tribal Member</English>
+		<French>Tribal Member</French>
+		<German>Tribal Member</German>
+		<Italian>Tribal Member</Italian>
+		<Spanish>Tribal Member</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_CITIZEN_CHISLEV_PEDIA</Tag>
+		<English>Each and every family unit is able to represent themselves in the forum of the clans.
+Whether for trade, negotiations, petitions, or just passing on letters from loved ones, each and every tribal member plays a key role in keeping the many clans and cultures of the Chislev as tight-knit as family.</English>
+		<French>Each and every family unit is able to represent themselves in the forum of the clans.
+Whether for trade, negotiations, petitions, or just passing on letters from loved ones, each and every tribal member plays a key role in keeping the many clans and cultures of the Chislev as tight-knit as family.</French>
+		<German>Each and every family unit is able to represent themselves in the forum of the clans.
+Whether for trade, negotiations, petitions, or just passing on letters from loved ones, each and every tribal member plays a key role in keeping the many clans and cultures of the Chislev as tight-knit as family.</German>
+		<Italian>Each and every family unit is able to represent themselves in the forum of the clans.
+Whether for trade, negotiations, petitions, or just passing on letters from loved ones, each and every tribal member plays a key role in keeping the many clans and cultures of the Chislev as tight-knit as family.</Italian>
+		<Spanish>Each and every family unit is able to represent themselves in the forum of the clans.
+Whether for trade, negotiations, petitions, or just passing on letters from loved ones, each and every tribal member plays a key role in keeping the many clans and cultures of the Chislev as tight-knit as family.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_BEAR_TOTEM</Tag>
@@ -545,6 +667,38 @@ The new world was born and the rites are once again set to be performed into a n
 		<German>Adoptive</German>
 		<Italian>Adoptive</Italian>
 		<Spanish>Adoptive</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_HUNGER_CHISLEV</Tag>
+		<English>Hunger</English>
+		<French>Hunger</French>
+		<German>Hunger</German>
+		<Italian>Hunger</Italian>
+		<Spanish>Hunger</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_HUNGER_CHISLEV_PEDIA</Tag>
+		<English>In the long winter's name, we feast on the flesh of the weak.</English>
+		<French>In the long winter's name, we feast on the flesh of the weak.</French>
+		<German>In the long winter's name, we feast on the flesh of the weak.</German>
+		<Italian>In the long winter's name, we feast on the flesh of the weak.</Italian>
+		<Spanish>In the long winter's name, we feast on the flesh of the weak.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_HUNGER_CHISLEV_SHORT</Tag>
+		<English>Hungr</English>
+		<French>Hungr</French>
+		<German>Hungr</German>
+		<Italian>Hungr</Italian>
+		<Spanish>Hungr</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_WEREWOLF_HUNGER_CHISLEV</Tag>
+		<English>Curse of the Wendigo</English>
+		<French>Curse of the Wendigo</French>
+		<German>Curse of the Wendigo</German>
+		<Italian>Curse of the Wendigo</Italian>
+		<Spanish>Curse of the Wendigo</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ROOT_CELLAR</Tag>

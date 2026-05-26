@@ -74,11 +74,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_GRAVELEECH3_HELP</Tag>
-		<English>[NEWLINE][ICON_BULLET]Unlocks the Ritual House of the Undying, turning all population in the city into undead, allowing your graveleeches to feast off them. Unlocks [LINK=PROMOTION_GREATER_GRAVELEECH]Greater Graveleech.[\LINK]</English>
-		<French>[NEWLINE][ICON_BULLET]Unlocks the Ritual House of the Undying, turning all population in the city into undead, allowing your graveleeches to feast off them. Unlocks [LINK=PROMOTION_GREATER_GRAVELEECH]Greater Graveleech.</French>
-		<German>[NEWLINE][ICON_BULLET]Unlocks the Ritual House of the Undying, turning all population in the city into undead, allowing your graveleeches to feast off them. Unlocks [LINK=PROMOTION_GREATER_GRAVELEECH]Greater Graveleech.</German>
-		<Italian>[NEWLINE][ICON_BULLET]Unlocks the Ritual House of the Undying, turning all population in the city into undead, allowing your graveleeches to feast off them. Unlocks [LINK=PROMOTION_GREATER_GRAVELEECH]Greater Graveleech.</Italian>
-		<Spanish>[NEWLINE][ICON_BULLET]Unlocks the Ritual House of the Undying, turning all population in the city into undead, allowing your graveleeches to feast off them. Unlocks [LINK=PROMOTION_GREATER_GRAVELEECH]Greater Graveleech.</Spanish>
+		<English>[NEWLINE][ICON_BULLET]Unlocks the Ritual House of the Undying, turning all population in the city into undead, allowing your graveleeches to feast off them. Unlocks [LINK=PROMOTION_GREATER_GRAVELEECH]Greater Graveleech.[\LINK][NEWLINE]</English>
+		<French>[NEWLINE][ICON_BULLET]Unlocks the Ritual House of the Undying, turning all population in the city into undead, allowing your graveleeches to feast off them. Unlocks [LINK=PROMOTION_GREATER_GRAVELEECH]Greater Graveleech.[\LINK][NEWLINE]</French>
+		<German>[NEWLINE][ICON_BULLET]Unlocks the Ritual House of the Undying, turning all population in the city into undead, allowing your graveleeches to feast off them. Unlocks [LINK=PROMOTION_GREATER_GRAVELEECH]Greater Graveleech.[\LINK][NEWLINE]</German>
+		<Italian>[NEWLINE][ICON_BULLET]Unlocks the Ritual House of the Undying, turning all population in the city into undead, allowing your graveleeches to feast off them. Unlocks [LINK=PROMOTION_GREATER_GRAVELEECH]Greater Graveleech.[\LINK][NEWLINE]</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]Unlocks the Ritual House of the Undying, turning all population in the city into undead, allowing your graveleeches to feast off them. Unlocks [LINK=PROMOTION_GREATER_GRAVELEECH]Greater Graveleech.[\LINK][NEWLINE]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_GRAVELEECH_PEDIA</Tag>

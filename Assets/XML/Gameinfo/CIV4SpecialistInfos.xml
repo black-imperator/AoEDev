@@ -21,6 +21,58 @@
 			</Yields>
 			<Button>Art/Civs/CivSpecialists/Human/Citizen.dds</Button>
 		</SpecialistInfo>
+		<SpecialistInfo> <!-- Citizen Dtesh -->
+			<Type>SPECIALIST_CITIZEN_DTESH</Type>
+			<SpecialistClass>SPECIALISTCLASS_CITIZEN</SpecialistClass>
+			<Description>TXT_KEY_SPECIALIST_CITIZEN_DTESH</Description>
+			<Civilopedia>TXT_KEY_SPECIALIST_CITIZEN_DTESH_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_SPECIALIST_CITIZEN_STRATEGY</Strategy>
+			<Texture>Art/Civs/CivSpecialists/Undead/Citizen.dds</Texture>
+			<bVisible>1</bVisible>
+			<Yields>
+				<iYield>0</iYield>
+				<iYield>1</iYield>
+				<iYield>1</iYield>
+			</Yields>
+			<Button>Art/Civs/CivSpecialists/Undead/Citizen.dds</Button>
+		</SpecialistInfo>
+		<SpecialistInfo> <!-- Citizen Chislev -->
+			<Type>SPECIALIST_CITIZEN_CHISLEV</Type>
+			<SpecialistClass>SPECIALISTCLASS_CITIZEN</SpecialistClass>
+			<Description>TXT_KEY_SPECIALIST_CITIZEN_CHISLEV</Description>
+			<Civilopedia>TXT_KEY_SPECIALIST_CITIZEN_CHISLEV_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_SPECIALIST_CITIZEN_STRATEGY</Strategy>
+			<Texture>Art/Civs/CivSpecialists/Human/Citizen.dds</Texture>
+			<bVisible>1</bVisible>
+			<Commerces>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>1</iCommerce>
+			</Commerces>
+			<Yields>
+				<iYield>0</iYield>
+				<iYield>1</iYield>
+				<iYield>0</iYield>
+			</Yields>
+			<Button>Art/Civs/CivSpecialists/Human/Citizen.dds</Button>
+		</SpecialistInfo>
+<!--    <SpecialistInfo> --> <!-- Citizen Grigori -->
+	<!--    <Type>SPECIALIST_CITIZEN_GRIGORI</Type>
+			<SpecialistClass>SPECIALISTCLASS_CITIZEN</SpecialistClass>
+			<Description>TXT_KEY_SPECIALIST_VOLUNTEER</Description>
+			<Civilopedia>TXT_KEY_SPECIALIST_VOLUNTEER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_SPECIALIST_CITIZEN_STRATEGY</Strategy>
+			<Texture>Art/Civs/CivSpecialists/Human/Citizen.dds</Texture>
+			<bVisible>1</bVisible>
+			<GreatPeopleUnitClass>UNITCLASS_ADVENTURER</GreatPeopleUnitClass>
+			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
+			<Yields>
+				<iYield>0</iYield>
+				<iYield>1</iYield>
+				<iYield>0</iYield>
+			</Yields>
+			<Button>Art/Civs/CivSpecialists/Human/Citizen.dds</Button>
+		</SpecialistInfo> -->
 		<SpecialistInfo> <!-- Priest -->
 			<Type>SPECIALIST_PRIEST</Type>
 			<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
@@ -107,7 +159,7 @@
 			<iGreatPeopleRateChange>3</iGreatPeopleRateChange>
 			<Yields>
 				<iYield>0</iYield>
-				<iYield>2</iYield>
+				<iYield>3</iYield>
 				<iYield>0</iYield>
 			</Yields>
 			<Button>Art/Civs/CivSpecialists/Human/Engineer.dds</Button>
@@ -144,6 +196,297 @@
 				<iCommerce>1</iCommerce>
 			</Commerces>
 			<Button>Art/Civs/CivSpecialists/Human/Statesman.dds</Button>
+		</SpecialistInfo>
+		<SpecialistInfo> <!-- Greenhorn -->
+			<Type>SPECIALIST_GREENHORN</Type>
+			<SpecialistClass>SPECIALISTCLASS_STATESMAN</SpecialistClass>
+			<Description>TXT_KEY_SPECIALIST_GREENHORN</Description>
+			<Civilopedia>TXT_KEY_SPECIALIST_GREENHORN_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_SPECIALIST_GREENHORN_STRATEGY</Strategy>
+			<Texture>Art/Interface/Buttons/Units/Adventurer.dds</Texture>
+			<bVisible>1</bVisible>
+			<GreatPeopleUnitClass>UNITCLASS_ADVENTURER</GreatPeopleUnitClass>
+			<iGreatPeopleRateChange>3</iGreatPeopleRateChange>
+			<Yields>
+				<iYield>0</iYield>
+				<iYield>1</iYield>
+				<iYield>0</iYield>
+			</Yields>
+			<iCrime>3</iCrime>
+			<Commerces>
+				<iCommerce>0</iCommerce>
+				<iCommerce>1</iCommerce>
+				<iCommerce>1</iCommerce>
+			</Commerces>
+			<SpecialistClassYieldChanges>
+				<SpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<SpecialistClassYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</SpecialistClassYields>
+				</SpecialistClassYieldChange>
+			</SpecialistClassYieldChanges>
+			<Button>Art/Interface/Buttons/Units/Adventurer.dds</Button>
+		</SpecialistInfo>
+		<SpecialistInfo> <!-- Priest - Grigori Apostate -->
+			<Type>SPECIALIST_PRIEST_GRIGORI</Type>
+			<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+			<Description>TXT_KEY_SPECIALIST_PRIEST_GRIGORI</Description>
+			<Civilopedia>TXT_KEY_SPECIALIST_PRIEST_GRIGORI_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_SPECIALIST_PRIEST_STRATEGY</Strategy>
+			<Texture>Art/Interface/Buttons/Units/Grigori Medic.dds</Texture>
+			<bVisible>1</bVisible>
+			<GreatPeopleUnitClass>UNITCLASS_PROPHET</GreatPeopleUnitClass>
+			<iGreatPeopleRateChange>3</iGreatPeopleRateChange>
+			<Yields>
+				<iYield>0</iYield>
+				<iYield>0</iYield>
+				<iYield>-3</iYield>
+			</Yields>
+			<iCityDefense>5</iCityDefense>
+			<TrainXPCaps>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<iTrainXPCap>2</iTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<iTrainXPCap>2</iTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
+					<iTrainXPCap>2</iTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<iTrainXPCap>2</iTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<iTrainXPCap>2</iTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<iTrainXPCap>2</iTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<iTrainXPCap>2</iTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_BEAST</UnitCombatType>
+					<iTrainXPCap>2</iTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iTrainXPCap>2</iTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_ANIMAL</UnitCombatType>
+					<iTrainXPCap>2</iTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<iTrainXPCap>2</iTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+					<iTrainXPCap>2</iTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
+					<iTrainXPCap>2</iTrainXPCap>
+				</TrainXPCap>
+			</TrainXPCaps>
+			<TrainXPRates>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
+					<iTrainXPRate>5</iTrainXPRate>
+				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<iTrainXPRate>5</iTrainXPRate>
+				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<iTrainXPRate>5</iTrainXPRate>
+				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
+					<iTrainXPRate>5</iTrainXPRate>
+				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<iTrainXPRate>5</iTrainXPRate>
+				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_ANIMAL</UnitCombatType>
+					<iTrainXPRate>5</iTrainXPRate>
+				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iTrainXPRate>5</iTrainXPRate>
+				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<iTrainXPRate>5</iTrainXPRate>
+				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<iTrainXPRate>5</iTrainXPRate>
+				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<iTrainXPRate>5</iTrainXPRate>
+				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<iTrainXPRate>5</iTrainXPRate>
+				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+					<iTrainXPRate>5</iTrainXPRate>
+				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_BEAST</UnitCombatType>
+					<iTrainXPRate>5</iTrainXPRate>
+				</TrainXPRate>
+			</TrainXPRates>
+			<SpecialistClassCrimeChanges>
+				<SpecialistClassCrimeChange>
+				<SpecialistClass>SPECIALISTCLASS_STATESMAN</SpecialistClass>
+				<iCrimeChange>-1</iCrimeChange>
+				</SpecialistClassCrimeChange>
+			</SpecialistClassCrimeChanges>
+			<Button>Art/Interface/Buttons/Units/Grigori Medic.dds</Button>
+		</SpecialistInfo>
+		<SpecialistInfo> <!-- Great Luonnotar -->
+			<Type>SPECIALIST_GREAT_PRIEST_GRIGORI</Type>
+			<SpecialistClass>SPECIALISTCLASS_GREAT_PRIEST</SpecialistClass>
+			<Description>TXT_KEY_SPECIALIST_GREAT_PRIEST_GRIGORI</Description>
+			<Civilopedia>TXT_KEY_SPECIALIST_PRIEST_GRIGORI_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_SPECIALIST_GREAT_PRIEST_STRATEGY</Strategy>
+			<Texture>Art/Interface/Buttons/Units/Inquisitor Grigori.dds</Texture>
+			<GreatPeopleUnitClass>UNITCLASS_PROPHET</GreatPeopleUnitClass>
+			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
+			<iCityDefense>15</iCityDefense>
+			<TrainXPCaps>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<iTrainXPCap>2</iTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<iTrainXPCap>2</iTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
+					<iTrainXPCap>2</iTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<iTrainXPCap>2</iTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<iTrainXPCap>2</iTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<iTrainXPCap>2</iTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<iTrainXPCap>2</iTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_BEAST</UnitCombatType>
+					<iTrainXPCap>2</iTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iTrainXPCap>2</iTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_ANIMAL</UnitCombatType>
+					<iTrainXPCap>2</iTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<iTrainXPCap>2</iTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+					<iTrainXPCap>2</iTrainXPCap>
+				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
+					<iTrainXPCap>2</iTrainXPCap>
+				</TrainXPCap>
+			</TrainXPCaps>
+			<TrainXPRates>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
+					<iTrainXPRate>10</iTrainXPRate>
+				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<iTrainXPRate>10</iTrainXPRate>
+				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<iTrainXPRate>10</iTrainXPRate>
+				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
+					<iTrainXPRate>10</iTrainXPRate>
+				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<iTrainXPRate>10</iTrainXPRate>
+				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_ANIMAL</UnitCombatType>
+					<iTrainXPRate>10</iTrainXPRate>
+				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iTrainXPRate>10</iTrainXPRate>
+				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<iTrainXPRate>10</iTrainXPRate>
+				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<iTrainXPRate>10</iTrainXPRate>
+				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<iTrainXPRate>10</iTrainXPRate>
+				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<iTrainXPRate>10</iTrainXPRate>
+				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+					<iTrainXPRate>10</iTrainXPRate>
+				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_BEAST</UnitCombatType>
+					<iTrainXPRate>10</iTrainXPRate>
+				</TrainXPRate>
+			</TrainXPRates>
+			<SpecialistClassCrimeChanges>
+				<SpecialistClassCrimeChange>
+				<SpecialistClass>SPECIALISTCLASS_STATESMAN</SpecialistClass>
+				<iCrimeChange>-1</iCrimeChange>
+				</SpecialistClassCrimeChange>
+			</SpecialistClassCrimeChanges>
+			<Button>Art/Interface/Buttons/Units/Inquisitor Grigori.dds</Button>
 		</SpecialistInfo>
 		<SpecialistInfo> <!-- Great Prophet -->
 			<Type>SPECIALIST_GREAT_PRIEST</Type>
@@ -277,6 +620,107 @@
 			</Yields>
 			<iHealth>-1</iHealth>
 			<Button>Art/Civs/CivSpecialists/Human/Citizen.dds</Button>
+		</SpecialistInfo>
+		<SpecialistInfo> <!-- Slave Mekara -->
+			<Type>SPECIALIST_SLAVE_MEKARA</Type>
+			<SpecialistClass>SPECIALISTCLASS_SLAVE</SpecialistClass>
+			<Description>TXT_KEY_SPECIALIST_SLAVE_MEKARA</Description>
+			<Civilopedia>TXT_KEY_SPECIALISTS_SLAVE_MEKARA_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_SPECIALIST_CITIZEN_STRATEGY</Strategy>
+			<Texture>Art/Civs/CivSpecialists/Human/MekaraSlave.dds</Texture>
+			<GreatPeopleUnitClass>UNITCLASS_ADVENTURER</GreatPeopleUnitClass>
+			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
+			<bVisible>0</bVisible>
+			<Yields>
+				<iYield>0</iYield>
+				<iYield>0</iYield>
+				<iYield>0</iYield>
+			</Yields>
+			<Commerces>
+				<iCommerce>0</iCommerce>
+				<iCommerce>1</iCommerce>
+				<iCommerce>0</iCommerce>
+			</Commerces>
+			<iHealth>-1</iHealth>
+			<Button>Art/Civs/CivSpecialists/Human/MekaraSlave.dds</Button>
+		</SpecialistInfo>
+		<SpecialistInfo> <!-- Healer Mekara -->
+			<Type>SPECIALIST_HEALER_MEKARA</Type>
+			<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
+			<Description>TXT_KEY_SPECIALIST_HEALER_MEKARA</Description>
+			<Civilopedia>TXT_KEY_SPECIALIST_HEALER_MEKARA_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_SPECIALIST_HEALER_STRATEGY</Strategy>
+			<Texture>Art/Interface/Buttons/Units/Adept Elohim.dds</Texture>
+			<bVisible>1</bVisible>
+			<GreatPeopleUnitClass>UNITCLASS_HEALER</GreatPeopleUnitClass>
+			<iGreatPeopleRateChange>3</iGreatPeopleRateChange>
+			<iHealth>2</iHealth>
+			<Yields>
+				<iYield>0</iYield>
+				<iYield>0</iYield>
+				<iYield>2</iYield>
+			</Yields>
+			<Button>Art/Interface/Buttons/Units/Adept Elohim.dds</Button>
+		</SpecialistInfo>
+		<SpecialistInfo> <!-- Great Physician Mekara -->
+			<Type>SPECIALIST_GREAT_HEALER_MEKARA</Type>
+			<SpecialistClass>SPECIALISTCLASS_GREAT_HEALER</SpecialistClass>
+			<Description>TXT_KEY_SPECIALIST_GREAT_HEALER_MEKARA</Description>
+			<Civilopedia>TXT_KEY_SPECIALIST_GREAT_HEALER_MEKARA_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_SPECIALIST_GREAT_HEALER_STRATEGY</Strategy>
+			<Texture>Art/Interface/Buttons/Units/Mage Elohim.dds</Texture>
+			<GreatPeopleUnitClass>UNITCLASS_HEALER</GreatPeopleUnitClass>
+			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
+			<iHealth>4</iHealth>
+			<Yields>
+				<iYield>0</iYield>
+				<iYield>0</iYield>
+				<iYield>4</iYield>
+			</Yields>
+			<Button>Art/Interface/Buttons/Units/Mage Elohim.dds</Button>
+		</SpecialistInfo>
+		<SpecialistInfo> <!-- Necromancer - Undead Healers -->
+			<Type>SPECIALIST_NECROMANCER</Type>
+			<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
+			<Description>TXT_KEY_UNIT_NECROMANCER</Description>
+			<Civilopedia>TXT_KEY_UNIT_HIGH_NECROMANCER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_SPECIALIST_HEALER_STRATEGY</Strategy>
+			<Texture>Art/Civs/CivSpecialists/Undead/Healer.dds</Texture>
+			<bVisible>1</bVisible>
+			<GreatPeopleUnitClass>UNITCLASS_HEALER</GreatPeopleUnitClass>
+			<iGreatPeopleRateChange>3</iGreatPeopleRateChange>
+			<Yields>
+				<iYield>0</iYield>
+				<iYield>2</iYield>
+				<iYield>0</iYield>
+			</Yields>
+			<Commerces>
+				<iCommerce>1</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+			</Commerces>
+			<Button>Art/Civs/CivSpecialists/Undead/Healer.dds</Button>
+		</SpecialistInfo>
+		<SpecialistInfo> <!-- Great Necromancer -->
+			<Type>SPECIALIST_GREAT_NECROMANCER</Type>
+			<SpecialistClass>SPECIALISTCLASS_GREAT_HEALER</SpecialistClass>
+			<Description>TXT_KEY_UNIT_HIGH_NECROMANCER</Description>
+			<Civilopedia>TXT_KEY_UNIT_HIGH_NECROMANCER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_SPECIALIST_GREAT_HEALER_STRATEGY</Strategy>
+			<Texture>Art/Civs/CivSpecialists/Undead/GreatHealer.dds</Texture>
+			<GreatPeopleUnitClass>UNITCLASS_HEALER</GreatPeopleUnitClass>
+			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
+			<Yields>
+				<iYield>0</iYield>
+				<iYield>4</iYield>
+				<iYield>0</iYield>
+			</Yields>
+			<Commerces>
+				<iCommerce>2</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+			</Commerces>
+			<Button>Art/Civs/CivSpecialists/Undead/GreatHealer.dds</Button>
 		</SpecialistInfo>
 	</SpecialistInfos>
 </Civ4SpecialistInfos>

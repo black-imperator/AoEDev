@@ -822,5 +822,13 @@
 			<NoShaderNIF/>
 			<BackgroundKFM/>
 		</LeaderheadArtInfo>
+		<LeaderheadArtInfo> 	<!--Midjin -->
+			<Type>ART_DEF_LEADER_MIDJIN</Type>
+			<Button>,Art/interface/LeaderHeads/IrenHorrorsButton.dds</Button>
+			<NIF>art/interface/LeaderHeads/IrenHorrorsWendigo.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
 	</LeaderheadArtInfos>
 </Civ4ArtDefines>

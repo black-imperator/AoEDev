@@ -776,125 +776,125 @@ class CustomFunctions:
 	### Scions End
 
 	### Grigori Adventurer Start
-	def doTurnGrigori(self, iPlayer):
-		gc				= CyGlobalContext()
-		pPlayer			= gc.getPlayer(iPlayer)
-		pCapital		= pPlayer.getCapitalCity()
-		if pCapital.isNone(): return
-		iChange			= self.doChanceAdventurerSpawn(iPlayer)
-		pPlayer.changeCivCounter(iChange)
-		iGrigoriSpawn	= pPlayer.getCivCounter()
-		iGrigoriMod		= pPlayer.getCivCounterMod()
-
-		if iGrigoriMod < 10000:
-			pPlayer.setCivCounterMod(10000)
-			iGrigoriMod = 10000
-
-		if iGrigoriSpawn >= iGrigoriMod:
-			spawnUnit = pPlayer.initUnit(self.Units["Grigori"]["Adventurer"], pCapital.getX(), pCapital.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-			pPlayer.changeCivCounter(-iGrigoriMod)
-			pPlayer.changeCivCounterMod(2000)
-
-	def doChanceAdventurerSpawn(self, iPlayer):
-		gc				= CyGlobalContext()
-		pPlayer			= gc.getPlayer(iPlayer)
-		iPalaceMod		= pPlayer.countNumBuildings(self.Buildings["Grigori Palace"])
-		iDagdaMod		= pPlayer.countNumBuildings(self.Buildings["Grigori Temple"]) * 0.33
-		iMuseumMod		= pPlayer.countNumBuildings(self.Buildings["Museum"]) * 0.33
-		iTavernsMod		= pPlayer.countNumBuildings(self.Buildings["Tavern"])
-		iGuildsMod		= pPlayer.countNumBuildings(self.Buildings["Adventurers Guild"]) * 0.5
-		iRefugeMod		= pPlayer.countNumBuildings(self.Buildings["Dwelling of Refuge"])
-		iNumBountyMinor	= pPlayer.countNumBuildings(self.Buildings["Crime Bounty Minor"])
-		iNumBountyMajor	= pPlayer.countNumBuildings(self.Buildings["Crime Bounty Major"])
-		iNumBountyGrand	= pPlayer.countNumBuildings(self.Buildings["Crime Bounty Grand"])
-		iCivicMod 		= 0.00
-		iCivicMult 		= 1
-		if pPlayer.isCivic(self.Civics["Apprenticeship"]):
-			iCivicMod	= 2
-			iCivicMult	= 1.25
-
-		# Allows Statesmen to take affect after their city has an Assembly
-		iStatesmanMod 	= 0.00
-		iNumStatesmen 	= 0
-		(pCity, iter) = pPlayer.firstCity(False)
-		while(pCity):
-			if pCity.getNumBuilding(self.Buildings["Forum"]) > 0:
-				iNumStatesmen = (pCity.getSpecialistCount(self.Specialists["Statesman"]) + pCity.getFreeSpecialistCount(self.Specialists["Statesman"]))
-				iStatesmanMod += (iNumStatesmen * 0.33)
-			(pCity, iter) = pPlayer.nextCity(iter, False)
-		# AI modifier
-		iAImod = 1
-		if not pPlayer.isHuman():
-			iAImod = 1.5
-
-		iGrigoriSpawn = round(((iPalaceMod + iDagdaMod + iMuseumMod +iTavernsMod + iGuildsMod + iNumBountyMinor + iNumBountyMajor + iNumBountyGrand + iCivicMod + iStatesmanMod + iRefugeMod) * iCivicMult * iAImod), 2)
-		iGrigoriSpawn = int(iGrigoriSpawn * 100)
-		iGrigoriSpawn = scaleInverse(iGrigoriSpawn)
-		return iGrigoriSpawn
+#	def doTurnGrigori(self, iPlayer):
+#		gc				= CyGlobalContext()
+#		pPlayer			= gc.getPlayer(iPlayer)
+#		pCapital		= pPlayer.getCapitalCity()
+#		if pCapital.isNone(): return
+#		iChange			= self.doChanceAdventurerSpawn(iPlayer)
+#		pPlayer.changeCivCounter(iChange)
+#		iGrigoriSpawn	= pPlayer.getCivCounter()
+#		iGrigoriMod		= pPlayer.getCivCounterMod()
+#
+#		if iGrigoriMod < 10000:
+#			pPlayer.setCivCounterMod(10000)
+#			iGrigoriMod = 10000
+#
+#		if iGrigoriSpawn >= iGrigoriMod:
+#			spawnUnit = pPlayer.initUnit(self.Units["Grigori"]["Adventurer"], pCapital.getX(), pCapital.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+#			pPlayer.changeCivCounter(-iGrigoriMod)
+#			pPlayer.changeCivCounterMod(2000)
+#
+#	def doChanceAdventurerSpawn(self, iPlayer):
+#		gc				= CyGlobalContext()
+#		pPlayer			= gc.getPlayer(iPlayer)
+#		iPalaceMod		= pPlayer.countNumBuildings(self.Buildings["Grigori Palace"])
+#		iDagdaMod		= pPlayer.countNumBuildings(self.Buildings["Grigori Temple"]) * 0.33
+#		iMuseumMod		= pPlayer.countNumBuildings(self.Buildings["Museum"]) * 0.33
+#		iTavernsMod		= pPlayer.countNumBuildings(self.Buildings["Tavern"])
+#		iGuildsMod		= pPlayer.countNumBuildings(self.Buildings["Adventurers Guild"]) * 0.5
+#		iRefugeMod		= pPlayer.countNumBuildings(self.Buildings["Dwelling of Refuge"])
+#		iNumBountyMinor	= pPlayer.countNumBuildings(self.Buildings["Crime Bounty Minor"])
+#		iNumBountyMajor	= pPlayer.countNumBuildings(self.Buildings["Crime Bounty Major"])
+#		iNumBountyGrand	= pPlayer.countNumBuildings(self.Buildings["Crime Bounty Grand"])
+#		iCivicMod 		= 0.00
+#		iCivicMult 		= 1
+#		if pPlayer.isCivic(self.Civics["Apprenticeship"]):
+#			iCivicMod	= 2
+#			iCivicMult	= 1.25
+#
+#		# Allows Statesmen to take affect after their city has an Assembly
+#		iStatesmanMod 	= 0.00
+#		iNumStatesmen 	= 0
+#		(pCity, iter) = pPlayer.firstCity(False)
+#		while(pCity):
+#			if pCity.getNumBuilding(self.Buildings["Forum"]) > 0:
+#				iNumStatesmen = (pCity.getSpecialistCount(self.Specialists["Statesman"]) + pCity.getFreeSpecialistCount(self.Specialists["Statesman"]))
+#				iStatesmanMod += (iNumStatesmen * 0.33)
+#			(pCity, iter) = pPlayer.nextCity(iter, False)
+#		# AI modifier
+#		iAImod = 1
+#		if not pPlayer.isHuman():
+#			iAImod = 1.5
+#
+#		iGrigoriSpawn = round(((iPalaceMod + iDagdaMod + iMuseumMod +iTavernsMod + iGuildsMod + iNumBountyMinor + iNumBountyMajor + iNumBountyGrand + iCivicMod + iStatesmanMod + iRefugeMod) * iCivicMult * iAImod), 2)
+#		iGrigoriSpawn = int(iGrigoriSpawn * 100)
+#		iGrigoriSpawn = scaleInverse(iGrigoriSpawn)
+#		return iGrigoriSpawn
 	### Grigori Adventurer End
 
 	### Mekara Aspirant Start
-	def doTurnMekara(self, iPlayer):
-		gc				= CyGlobalContext()
-		pPlayer			= gc.getPlayer(iPlayer)
-		pCapital		= pPlayer.getCapitalCity()
-		if pPlayer.getLeaderType() != self.Leaders["Iram Damarr"]:	return
-		if pCapital.isNone():										return
-		iChange			= self.doChanceAspirantSpawn(iPlayer)
-		pPlayer.changeCivCounter(iChange)
-		iMekaraSpawn	= pPlayer.getCivCounter()
-		iMekaraMod		= pPlayer.getCivCounterMod()
-
-		if iMekaraMod < 10000:
-			pPlayer.setCivCounterMod(10000)
-			iMekaraMod = 10000
-
-		if iMekaraSpawn >= iMekaraMod:
-			spawnUnit = pPlayer.initUnit(self.Units["Mekara Order"]["Aspirant"], pCapital.getX(), pCapital.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-			pPlayer.changeCivCounter(-iMekaraMod)
-			pPlayer.changeCivCounterMod(2000)
-
-	def doChanceAspirantSpawn(self, iPlayer):
-		gc				= CyGlobalContext()
-		pPlayer			= gc.getPlayer(iPlayer)
-		# +2 for each Lab, +1 for each Mage Guild, +2/+25% with Slavery, +3 from Humanist I, +5/+25% from Humanist II, +10/+50% from Humanist III
-		iBaseMod		= 3
-		iLabMod			= pPlayer.countNumBuildings(self.Buildings["Shaper Cabal"]) * 2
-		iCabalMod		= pPlayer.countNumBuildings(self.Buildings["Shaper's Laboratory"])
-		iCivicMod		= 0.00
-		iCivicMult		= 1
-		if pPlayer.isCivic(self.Civics["Slavery"]):
-			iCivicMod	= 2
-			iCivicMult	= 1.25
-		# Allows Healers (+1 for every 2) and Elders (+1 for every 3) to take effect with Labs.
-		iHealer 		= self.Specialists["Healer"]
-		iElder 			= self.Specialists["Scientist"]
-		iGreatHealer 	= self.Specialists["Great Healer"]
-		iGreatElder 	= self.Specialists["Great Scientist"]
-
-		iSpecialistMod		= 0.00
-		iNumHealers			= 0
-		iNumGreatHealers	= 0
-		iNumElders			= 0
-		iNumGreatElders		= 0
-		(pCity, iter) = pPlayer.firstCity(False)
-		while(pCity):
-			if pCity.getNumBuilding(self.Buildings["Shaper's Laboratory"]) > 0:
-				iNumElders			= pCity.getSpecialistCount(iElder)			+ pCity.getFreeSpecialistCount(iElder)
-				iNumHealers			= pCity.getSpecialistCount(iHealer)			+ pCity.getFreeSpecialistCount(iHealer)
-				iNumGreatElders		= pCity.getSpecialistCount(iGreatElder)		+ pCity.getFreeSpecialistCount(iGreatElder)
-				iNumGreatHealers	= pCity.getSpecialistCount(iGreatHealer)	+ pCity.getFreeSpecialistCount(iGreatHealer)
-				iSpecialistMod		+= (iNumHealers * 0.5) + (iNumElders * 0.5) + (iNumGreatElders * 1) + (iNumGreatHealers * 1)
-			(pCity, iter) = pPlayer.nextCity(iter, False)
-		# AI modifier
-		iAImod = 1
-		if not pPlayer.isHuman():
-			iAImod = 1.5
-
-		iMekaraSpawn = round(((iLabMod + iCabalMod + iCivicMod + iBaseMod + iSpecialistMod) * iCivicMult * iAImod), 2)
-		iMekaraSpawn = int(iMekaraSpawn * 100)
-		iMekaraSpawn = scaleInverse(iMekaraSpawn)
-		return iMekaraSpawn
+#	def doTurnMekara(self, iPlayer):
+#		gc				= CyGlobalContext()
+#		pPlayer			= gc.getPlayer(iPlayer)
+#		pCapital		= pPlayer.getCapitalCity()
+#		if pPlayer.getLeaderType() != self.Leaders["Iram Damarr"]:	return
+#		if pCapital.isNone():										return
+#		iChange			= self.doChanceAspirantSpawn(iPlayer)
+#		pPlayer.changeCivCounter(iChange)
+#		iMekaraSpawn	= pPlayer.getCivCounter()
+#		iMekaraMod		= pPlayer.getCivCounterMod()
+#
+#		if iMekaraMod < 10000:
+#			pPlayer.setCivCounterMod(10000)
+#			iMekaraMod = 10000
+#
+#		if iMekaraSpawn >= iMekaraMod:
+#			spawnUnit = pPlayer.initUnit(self.Units["Mekara Order"]["Aspirant"], pCapital.getX(), pCapital.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+#			pPlayer.changeCivCounter(-iMekaraMod)
+#			pPlayer.changeCivCounterMod(2000)
+#
+#	def doChanceAspirantSpawn(self, iPlayer):
+#		gc				= CyGlobalContext()
+#		pPlayer			= gc.getPlayer(iPlayer)
+#		# +2 for each Lab, +1 for each Mage Guild, +2/+25% with Slavery, +3 from Humanist I, +5/+25% from Humanist II, +10/+50% from Humanist III
+#		iBaseMod		= 3
+#		iLabMod			= pPlayer.countNumBuildings(self.Buildings["Shaper Cabal"]) * 2
+#		iCabalMod		= pPlayer.countNumBuildings(self.Buildings["Shaper's Laboratory"])
+#		iCivicMod		= 0.00
+#		iCivicMult		= 1
+#		if pPlayer.isCivic(self.Civics["Slavery"]):
+#			iCivicMod	= 2
+#			iCivicMult	= 1.25
+#		# Allows Healers (+1 for every 2) and Elders (+1 for every 3) to take effect with Labs.
+#		iHealer 		= self.Specialists["Healer"]
+#		iElder 			= self.Specialists["Scientist"]
+#		iGreatHealer 	= self.Specialists["Great Healer"]
+#		iGreatElder 	= self.Specialists["Great Scientist"]
+#
+#		iSpecialistMod		= 0.00
+#		iNumHealers			= 0
+#		iNumGreatHealers	= 0
+#		iNumElders			= 0
+#		iNumGreatElders		= 0
+#		(pCity, iter) = pPlayer.firstCity(False)
+#		while(pCity):
+#			if pCity.getNumBuilding(self.Buildings["Shaper's Laboratory"]) > 0:
+#				iNumElders			= pCity.getSpecialistCount(iElder)			+ pCity.getFreeSpecialistCount(iElder)
+#				iNumHealers			= pCity.getSpecialistCount(iHealer)			+ pCity.getFreeSpecialistCount(iHealer)
+#				iNumGreatElders		= pCity.getSpecialistCount(iGreatElder)		+ pCity.getFreeSpecialistCount(iGreatElder)
+#				iNumGreatHealers	= pCity.getSpecialistCount(iGreatHealer)	+ pCity.getFreeSpecialistCount(iGreatHealer)
+#				iSpecialistMod		+= (iNumHealers * 0.5) + (iNumElders * 0.5) + (iNumGreatElders * 1) + (iNumGreatHealers * 1)
+#			(pCity, iter) = pPlayer.nextCity(iter, False)
+#		# AI modifier
+#		iAImod = 1
+#		if not pPlayer.isHuman():
+#			iAImod = 1.5
+#
+#		iMekaraSpawn = round(((iLabMod + iCabalMod + iCivicMod + iBaseMod + iSpecialistMod) * iCivicMult * iAImod), 2)
+#		iMekaraSpawn = int(iMekaraSpawn * 100)
+#		iMekaraSpawn = scaleInverse(iMekaraSpawn)
+#		return iMekaraSpawn
 	### Mekara Aspirant Start
 
 	### Doviello Start

@@ -76,69 +76,7 @@
 				</TrainXPCap>
 			</TrainXPCaps>
 		</BuildingInfo>
-		
-		<BuildingInfo>		<!-- Bear Totem                                                 Chislev UB-->
-			<BuildingClass>BUILDINGCLASS_BEAR_TOTEM</BuildingClass>
-			<Type>BUILDING_BEAR_TOTEM</Type>
-			<TrainXPCaps>
-				<TrainXPCap>
-					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
-					<fTrainXPCap>2</fTrainXPCap>
-				</TrainXPCap>
-				<TrainXPCap>
-					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
-					<fTrainXPCap>2</fTrainXPCap>
-				</TrainXPCap>
-				<TrainXPCap>
-					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
-					<fTrainXPCap>2</fTrainXPCap>
-				</TrainXPCap>
-				<TrainXPCap>
-					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
-					<fTrainXPCap>2</fTrainXPCap>
-				</TrainXPCap>
-				<TrainXPCap>
-					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
-					<fTrainXPCap>2</fTrainXPCap>
-				</TrainXPCap>
-				<TrainXPCap>
-					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
-					<fTrainXPCap>2</fTrainXPCap>
-				</TrainXPCap>
-				<TrainXPCap>
-					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
-					<fTrainXPCap>2</fTrainXPCap>
-				</TrainXPCap>
-				<TrainXPCap>
-					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
-					<fTrainXPCap>2</fTrainXPCap>
-				</TrainXPCap>
-				<TrainXPCap>
-					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
-					<fTrainXPCap>2</fTrainXPCap>
-				</TrainXPCap>
-				<TrainXPCap>
-					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
-					<fTrainXPCap>2</fTrainXPCap>
-				</TrainXPCap>
-				<TrainXPCap>
-					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
-					<fTrainXPCap>2</fTrainXPCap>
-				</TrainXPCap>
-				<TrainXPCap>
-					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
-					<fTrainXPCap>2</fTrainXPCap>
-				</TrainXPCap>
-				<TrainXPCap>
-					<UnitCombatType>UNITCOMBAT_ANIMAL</UnitCombatType>
-					<fTrainXPCap>2</fTrainXPCap>
-				</TrainXPCap>
-				<TrainXPCap>
-					<UnitCombatType>UNITCOMBAT_BEAST</UnitCombatType>
-					<fTrainXPCap>2</fTrainXPCap>
-				</TrainXPCap>
-			</TrainXPCaps>
-		</BuildingInfo>
+		<!-- Bear totem name was wrong, and also bear totem never gave training xp? -->
 
 		<BuildingInfo>		<!-- Bowyer -->
 			<BuildingClass>BUILDINGCLASS_BOWYER</BuildingClass>

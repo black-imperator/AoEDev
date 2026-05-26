@@ -398,4 +398,16 @@ The Court of Misrak are Soul-Consuming Fairies that do not require food. They fo
         <Tag>TEXT_SPELL_FAIRY_FAE_DESERTIFICATION_HELP</Tag>
         <English>[ICON_BULLET]Turn your territories into desert[NEWLINE][ICON_BULLET]Has a chance to spawn OASIS</English>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_FAIRY_REFUGEE</Tag>
+        <English>Fairy Refugee</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_FAIRY_REFUGEE_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_FAIRY_REFUGEE_SHORT</Tag>
+        <English>FR</English>
+    </TEXT>
 </Civ4GameText>

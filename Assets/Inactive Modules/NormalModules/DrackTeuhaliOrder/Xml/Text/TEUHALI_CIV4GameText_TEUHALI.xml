@@ -63,6 +63,9 @@
     <TEXT>
         <Tag>TXT_KEY_CIV_TEUHALI_STRATEGY</Tag>
         <English>
+Complexity: Basic
+Knights of Hali! Charge!
+
 The Teuhali Order is a Trade oriented, defensive nation with strong Melee Defense Units and Knights. Each Leader is part of an Order, which unlocks certain units or special promotions.
 [H2]Reminders[\H2]
 [ICON_BULLET] Build [LINK=BUILDING_TEUHALI_FORTRESS_CITY]Fortress City[\LINK] in your main military production cities. Due to the high maintenance costs, it is recommended to not build them in every city, but to choose certain cities as military production hubs.
@@ -70,10 +73,10 @@ The Teuhali Order is a Trade oriented, defensive nation with strong Melee Defens
 [ICON_BULLET] Try to get your hand on a corporation. Each corporation allows you to build a powerful Guild House Building in your city.
 [ICON_BULLET] Be careful with crime. Many buildings heavily increase crime, while others reduce it. Use your Knight Units to push down crime additionally.
 [H2]Orders[\H2]
-[ICON_BULLET] The Sonnenstrahl Order grants access to the [LINK=UNIT_TEUHALI_STREITER]Streiter[\LINK] and improves Mounted and Disciple Units.
-[ICON_BULLET] The Terror Order allows access to two powerful vampire units, the [LINK=UNIT_TEUHALI_TERROR_BLUTWACHE]Blutwache[\LINK] and [LINK=UNIT_TEUHALI_TERROR_TERRORRITTER]Terrorritter[\LINK].
-[ICON_BULLET] The Weizen Order makes farms stronger and reduces upkeep for Recon and Rogue Units. Addionally it grants access to the [LINK=UNIT_TEUHALI_GEISSLER]Geissler[\LINK].
-[ICON_BULLET] The Hexen Order grants access to the [LINK=UNIT_TEUHALI_ADEPT]Lehrling[\LINK], which can be promoted to different Units and allows having diverse Units with Channeling 1.
+[ICON_BULLET] The Sonnenstrahl Order improves Mounted and Disciple Units.
+[ICON_BULLET] The Terror Order allows access to powerful vampire units.
+[ICON_BULLET] The Weizen Order makes farms stronger and reduces upkeep for Recon and Rogue Units.
+[ICON_BULLET] The Hexen Order grants access to the [LINK=UNIT_TEUHALI_ADEPT]Lehrling[\LINK], which can be promoted to different Units and allows having diverse Units with Channeling 1. Its focus lies on Arcane Units.
         </English>
     </TEXT>
     <TEXT>
@@ -100,6 +103,8 @@ Magic may be seen as a gift of the gods, or something the mortals have claimed t
         <Tag>TXT_KEY_TRAIT_TEUHALI_ORDER_TERROR_PEDIA</Tag>
         <English>
 It is better to be feared than loved. Fear paralizes your enemies and prevent your peasants from revolting. It is a simple fact of this world that the strong rule over the weak. The Terror Order rules by strict laws and hard punishments. Rumors speak of vampires in their ranks, yet whoever dares to mention this in public soon vanishes forever.
+
+The Terror Order is ruled by vampires that came from the Calabim. It is unclear if they fled their old masters or if they were sent to Teuhali to infiltrate the knights.
         </English>
     </TEXT>
     <TEXT>

@@ -469,7 +469,7 @@
 	</ElementType>
 	<ElementType name="ImprovementPillage" content="textOnly"/>
 	<ElementType name="ImprovementUpgrade" content="textOnly"/>
-	<ElementType name="FreeSpecialistClass" content="textOnly"/>
+	<ElementType name="FreeSpecialist" content="textOnly"/>
 	<ElementType name="bActsAsCity" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bHillsMakesValid" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bPeakMakesValid" content="textOnly" dt:type="boolean"/>
@@ -636,7 +636,7 @@
 		<element type="BonusTypeStructs"/>
 		<element type="ImprovementPillage"/>
 		<element type="ImprovementUpgrade"/>
-		<element type="FreeSpecialistClass"/>
+		<element type="FreeSpecialist"/>
 		<element type="TechYieldChanges"/>
 		<element type="RouteYieldChanges"/>
 		<element type="WorldSoundscapeAudioScript"/>

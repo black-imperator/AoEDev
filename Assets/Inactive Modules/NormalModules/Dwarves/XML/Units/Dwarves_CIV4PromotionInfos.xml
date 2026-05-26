@@ -71,9 +71,10 @@
 			</PrereqCivilizations>
 			<PrereqUnits>
 				<PrereqUnit>UNIT_DWARVEN_ENGINEERS_APRENTICE</PrereqUnit>
+				<PrereqUnit>UNIT_WORKER</PrereqUnit>
 			</PrereqUnits>
 			<PromotionBuilds>
-				<PromotionBuild>BUILD_DWARVEN_MINE</PromotionBuild>
+				<PromotionBuild>BUILD_DWARVEN_MINE_KHAZAD</PromotionBuild>
 			</PromotionBuilds>
 			<Button>,Art/Interface/Teamcolor/Khazadbutton.dds</Button>
 		</PromotionInfo>

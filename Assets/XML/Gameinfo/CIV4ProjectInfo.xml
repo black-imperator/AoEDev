@@ -75,8 +75,8 @@
 			<TechPrereq>TECH_WAY_OF_THE_WICKED</TechPrereq>
 			<iMaxTeamInstances>2</iMaxTeamInstances>
 			<iCost>500</iCost>
-			<iCooldown>30</iCooldown>
-			<iHideUnits>10</iHideUnits>
+			<iCooldown>60</iCooldown>
+			<iHideUnits>3</iHideUnits>
 			<Button>Art/Interface/Buttons/Projects/Chosen of Esus.dds</Button>
 		</ProjectInfo>
 		<ProjectInfo>		<!-- Curse the Lands -->

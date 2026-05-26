@@ -54,6 +54,12 @@
 			<DefaultSpecialist>SPECIALIST_STATESMAN</DefaultSpecialist>
 			<bUnique>1</bUnique>
 		</SpecialistClassInfo>
+		<!--<SpecialistClassInfo>
+			<Type>SPECIALISTCLASS_GREENHORN</Type>
+			<Description>TXT_KEY_SPECIALIST_GREENHORN</Description>
+			<DefaultSpecialist>SPECIALIST_GREENHORN</DefaultSpecialist>
+			<bUnique>1</bUnique>
+		</SpecialistClassInfo>-->
 		<SpecialistClassInfo>
 			<Type>SPECIALISTCLASS_GREAT_PRIEST</Type>
 			<Description>TXT_KEY_SPECIALIST_GREAT_PRIEST</Description>

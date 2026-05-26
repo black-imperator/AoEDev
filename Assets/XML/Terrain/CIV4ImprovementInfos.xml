@@ -445,7 +445,7 @@
 			<iPillageGold>10</iPillageGold>
 			<bOutsideBorders>1</bOutsideBorders>
 			<bFort>1</bFort>
-			<iMinimumDistance>1</iMinimumDistance>
+			<iMinimumDistance>2</iMinimumDistance>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
 				<iYieldChange>1</iYieldChange>
@@ -534,7 +534,7 @@
 			<iPillageGold>15</iPillageGold>
 			<bOutsideBorders>1</bOutsideBorders>
 			<bFort>1</bFort>
-			<iMinimumDistance>1</iMinimumDistance>
+			<iMinimumDistance>2</iMinimumDistance>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
 				<iYieldChange>1</iYieldChange>
@@ -1068,7 +1068,7 @@
 			<iDefenseModifier>20</iDefenseModifier>
 			<iPillageGold>10</iPillageGold>
 			<bOutsideBorders>1</bOutsideBorders>
-			<iMinimumDistance>1</iMinimumDistance>
+			<iMinimumDistance>2</iMinimumDistance>
 			<bFort>1</bFort>
 			<TechYieldChanges>
 				<TechYieldChange>
@@ -1476,6 +1476,11 @@
 			<iAdvancedStartCost>24</iAdvancedStartCost>
 			<iAirBombDefense>5</iAirBombDefense>
 			<iPillageGold>10</iPillageGold>
+			<YieldChanges>
+				<iYieldChange>1</iYieldChange>
+				<iYieldChange>0</iYieldChange>
+				<iYieldChange>0</iYieldChange>
+			</YieldChanges>
 			<BonusTypeStructs>
 				<BonusTypeStruct>
 					<BonusType>BONUS_COW</BonusType>
@@ -1569,6 +1574,14 @@
 						<iYield>0</iYield>
 						<iYield>1</iYield>
 						<iYield>0</iYield>
+					</TechYields>
+				</TechYieldChange>
+				<TechYieldChange>
+					<PrereqTech>TECH_STIRRUPS</PrereqTech>
+					<TechYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
 					</TechYields>
 				</TechYieldChange>
 			</TechYieldChanges>
@@ -5965,7 +5978,7 @@
 			<iPillageGold>20</iPillageGold>
 			<bOutsideBorders>1</bOutsideBorders>
 			<bFort>1</bFort>
-			<iMinimumDistance>1</iMinimumDistance>
+			<iMinimumDistance>2</iMinimumDistance>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
 				<iYieldChange>1</iYieldChange>
@@ -6163,6 +6176,11 @@
 			<ArtDefineTag>ART_DEF_IMPROVEMENT_DTESHI_CRYPT</ArtDefineTag>
 			<bRequiresFlatlands>1</bRequiresFlatlands>
 			<bPermanent>1</bPermanent>
+			<YieldChanges>
+				<iYieldChange>0</iYieldChange>
+				<iYieldChange>-3</iYieldChange>
+				<iYieldChange>-3</iYieldChange>
+			</YieldChanges>
 			<TerrainMakesValids>
 				<TerrainMakesValid>
 					<TerrainType>TERRAIN_BROKEN_LANDS</TerrainType>
@@ -6266,6 +6284,18 @@
 						<iYieldChange>0</iYieldChange>
 					</YieldChanges>
 				</BonusTypeStruct>
+				<BonusTypeStruct>
+					<BonusType>BONUS_OBSIDIAN</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
 			</BonusTypeStructs>
 		</ImprovementInfo>
 		<ImprovementInfo><!-- D'teshi Corrupted Pasture -->
@@ -6343,7 +6373,7 @@
 		</ImprovementInfo>
 		<ImprovementInfo><!-- D'Teshi Pyre -->
 			<Type>IMPROVEMENT_DTESH_PYRE</Type>
-			<ImprovementClass>IMPROVEMENTCLASS_PLANTATION</ImprovementClass>
+			<ImprovementClass>IMPROVEMENTCLASS_PYRE</ImprovementClass>
 			<Description>TXT_KEY_IMPROVEMENT_DTESH_PYRE</Description>
 			<ArtDefineTag>ART_DEF_IMPROVEMENT_PYRE</ArtDefineTag>
 			<bWater>0</bWater>
@@ -6947,7 +6977,7 @@
 			<iUpgradeTime>20</iUpgradeTime>
 			<iPillageGold>10</iPillageGold>
 			<bOutsideBorders>1</bOutsideBorders>
-			<iMinimumDistance>1</iMinimumDistance>
+			<iMinimumDistance>2</iMinimumDistance>
 			<bFort>1</bFort>
 			<TechYieldChanges>
 				<TechYieldChange>
@@ -7021,7 +7051,7 @@
 			<iUpgradeTime>40</iUpgradeTime>
 			<iPillageGold>25</iPillageGold>
 			<bOutsideBorders>1</bOutsideBorders>
-			<iMinimumDistance>1</iMinimumDistance>
+			<iMinimumDistance>2</iMinimumDistance>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
 				<iYieldChange>1</iYieldChange>
@@ -7104,7 +7134,7 @@
 			<iDefenseModifier>25</iDefenseModifier>
 			<iPillageGold>50</iPillageGold>
 			<bOutsideBorders>1</bOutsideBorders>
-			<iMinimumDistance>1</iMinimumDistance>
+			<iMinimumDistance>2</iMinimumDistance>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
 				<iYieldChange>1</iYieldChange>
@@ -9689,7 +9719,7 @@
 			<iDefenseModifier>20</iDefenseModifier>
 			<iPillageGold>10</iPillageGold>
 			<bOutsideBorders>1</bOutsideBorders>
-			<iMinimumDistance>1</iMinimumDistance>
+			<iMinimumDistance>2</iMinimumDistance>
 			<bFort>1</bFort>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
@@ -9775,7 +9805,7 @@
 			<iPillageGold>10</iPillageGold>
 			<bOutsideBorders>1</bOutsideBorders>
 			<bFort>1</bFort>
-			<iMinimumDistance>1</iMinimumDistance>
+			<iMinimumDistance>2</iMinimumDistance>
 			<YieldChanges>
 				<iYieldChange>1</iYieldChange>
 				<iYieldChange>0</iYieldChange>
@@ -9872,7 +9902,7 @@
 			<iPillageGold>15</iPillageGold>
 			<bOutsideBorders>1</bOutsideBorders>
 			<bFort>1</bFort>
-			<iMinimumDistance>1</iMinimumDistance>
+			<iMinimumDistance>2</iMinimumDistance>
 			<YieldChanges>
 				<iYieldChange>1</iYieldChange>
 				<iYieldChange>0</iYieldChange>
@@ -10894,7 +10924,7 @@
 				</RouteYieldChange>
             </RouteYieldChanges>
 			<iWorkingCityCrime>3</iWorkingCityCrime>
-			<FreeSpecialistClass>SPECIALISTCLASS_SCIENTIST</FreeSpecialistClass>
+			<FreeSpecialistClass>SPECIALISTCLASS_CITIZEN</FreeSpecialistClass>
 			<iSpawnUnitChancePercentMod>-75</iSpawnUnitChancePercentMod>
 			<SpawnUnitType>UNIT_FREE_SPIRITS</SpawnUnitType>
 			<bSpawnOnlyForOwner>1</bSpawnOnlyForOwner>

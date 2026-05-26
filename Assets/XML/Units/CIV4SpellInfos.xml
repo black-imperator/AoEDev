@@ -6296,9 +6296,11 @@
 			<Description>TXT_KEY_SPELL_DEFILE_CRYPT</Description>
 			<Civilopedia>TXT_KEY_SPELL_DEFILE_CRYPT_PEDIA</Civilopedia>
 			<Help>TXT_KEY_SPELL_DEFILE_CRYPT_HELP</Help>
-			<UnitCombatPrereq>UNITCOMBAT_ADEPT</UnitCombatPrereq>
+			<PromotionPrereq1>PROMOTION_DTESH_AFFINITY_ENABLER</PromotionPrereq1>
+			<TechPrereq>TECH_KNOWLEDGE_OF_THE_ETHER</TechPrereq>
 			<CivilizationPrereq>CIVILIZATION_DTESH</CivilizationPrereq>
-			<bAllowAI>0</bAllowAI>
+			<bAllowAI>1</bAllowAI>
+			<iAIWeight>100</iAIWeight>
 			<bInBordersOnly>1</bInBordersOnly>
 			<bHasCasted>1</bHasCasted>
 			<ImprovementPrereq>IMPROVEMENT_DTESH_CRYPT</ImprovementPrereq>
@@ -6320,9 +6322,10 @@
 			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
 			<bHasCasted>1</bHasCasted>
 			<bResistable>1</bResistable>
+			<iResistModify>15</iResistModify>
 			<iRange>1</iRange>
 			<iDamage>15</iDamage>
-			<iDamageLimit>100</iDamageLimit>
+			<iDamageLimit>50</iDamageLimit>
 			<DamageType>DAMAGE_DEATH</DamageType>
 			<bImmuneTeam>1</bImmuneTeam>
 			<bImmuneNeutral>1</bImmuneNeutral>
@@ -6648,24 +6651,6 @@
 			<Effect>EFFECT_CREATION</Effect>
 			<Sound>AS3D_SPELL_CURE_DISEASE</Sound>
 			<Button>Art/Interface/Buttons/Spells/Peace.dds</Button>
-		</SpellInfo>
-		<SpellInfo>			<!-- Sidequest -->							<!-- GRIGORI SPELLS -->
-			<Type>SPELL_SIDEQUEST</Type>
-			<Description>TXT_KEY_SPELL_SIDEQUEST</Description>
-			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
-			<UnitInStackPrereq>UNIT_FORT_COMMANDER</UnitInStackPrereq>
-			<CivilizationPrereq>CIVILIZATION_GRIGORI</CivilizationPrereq>
-			<bHasCasted>1</bHasCasted>
-			<bAllowAI>1</bAllowAI>
-			<iAIWeight>50</iAIWeight>
-			<AddPromotions>
-				<AddPromotion>PROMOTION_QUESTING</AddPromotion>
-			</AddPromotions>
-			<bBuffCasterOnly>1</bBuffCasterOnly>
-			<PyRequirement>reqSidequest(pCaster)</PyRequirement>
-			<Effect>EFFECT_SPELL1</Effect>
-			<Sound>AS3D_SPELL_COMMANDER_JOIN</Sound>
-			<Button>Art/Interface/Buttons/Units/Adventurer.dds</Button>
 		</SpellInfo>
 		<SpellInfo>			<!-- Scions add-pop -->							<!-- GRIGORI ABILITIES -->
 			<Type>SPELL_REFUGEE_ADD_POPULATION</Type>
@@ -11611,11 +11596,10 @@
 			<Type>SPELL_SETTLE_SLAVE_V2</Type>
 			<Description>TXT_KEY_SPELL_SETTLE_SLAVE</Description>
 			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
-			<CivilizationPrereq>CIVILIZATION_MEKARA_V2</CivilizationPrereq>
-			<BuildingPrereq>BUILDING_PAGAN_TEMPLE_MEKARA</BuildingPrereq>
 			<UnitClassPrereq>UNITCLASS_SLAVE</UnitClassPrereq>
 			<bInCityOnly>1</bInCityOnly>
 			<bAllowAI>1</bAllowAI>
+			<iAIWeight>100</iAIWeight>
 			<bAbility>1</bAbility>
 			<bHasCasted>1</bHasCasted>
 			<PyRequirement>reqSlaveSettle(pCaster)</PyRequirement>

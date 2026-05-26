@@ -9988,6 +9988,150 @@
 			<iPowerMult>3</iPowerMult>
 			<bMilitaryHappiness>1</bMilitaryHappiness>
 		</UnitInfo>
+		<UnitInfo>		<!-- Great Necromancer -->
+			<Class>UNITCLASS_HEALER</Class>
+			<Type>UNIT_GREAT_NECROMANCER</Type>
+			<UniqueNames>
+				<UniqueName>Morgan Tud</UniqueName>
+				<UniqueName>Guo Yu</UniqueName>
+				<UniqueName>Pied Piper of Hamelin</UniqueName>
+				<UniqueName>Karadoc</UniqueName>
+				<UniqueName>Amello Raun</UniqueName>
+				<UniqueName>Lune of the White Knife</UniqueName>
+				<UniqueName>The Gift of Sucellus</UniqueName>
+				<UniqueName>Nala Plaguestalker</UniqueName>
+				<UniqueName>Riach Evinan</UniqueName>
+				<UniqueName>Mugati</UniqueName>
+				<UniqueName>Zil, Flower of Mekara</UniqueName>
+				<UniqueName>Nossina Tali'an</UniqueName>
+				<UniqueName>Lnelle</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_HEALER_GREATESTPEOPLE_1</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_HEALER_GREATESTPEOPLE_2</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_HEALER_GREATESTPEOPLE_3</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_HEALER_GREATESTPEOPLE_4</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_HEALER_GREATESTPEOPLE_5</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_HEALER_GREATESTPEOPLE_6</UniqueName>
+			</UniqueNames>
+			<Quotes>
+				<Quote>TXT_KEY_QUOTE_HEALER_1</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_2</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_3</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_4</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_5</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_6</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_7</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_8</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_9</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_10</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_11</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_12</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_13</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_GREATESTPEOPLE_1</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_GREATESTPEOPLE_2</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_GREATESTPEOPLE_3</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_GREATESTPEOPLE_4</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_GREATESTPEOPLE_5</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_GREATESTPEOPLE_6</Quote>
+			</Quotes>
+			<Images>
+				<Image>art\interface\popups\healer specialist\Image1.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image2.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image3.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image4.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image5.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image6.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image7.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image8.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image9.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image10.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image11.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image12.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image13.dds</Image>
+				<Image>art\interface\popups\greatpeople\Alan Rickman.dds</Image>
+				<Image>art\interface\popups\greatpeople\John Hurt.dds</Image>
+				<Image>art\interface\popups\greatpeople\Jon Pertwee.dds</Image>
+				<Image>art\interface\popups\greatpeople\Patrick Troughton.dds</Image>
+				<Image>art\interface\popups\greatpeople\William Hartnell.dds</Image>
+				<Image>art\interface\popups\greatpeople\David Mccallum.dds</Image>
+			</Images>
+			<Special>SPECIALUNIT_PEOPLE</Special>
+			<Combat>UNITCOMBAT_DISCIPLE</Combat>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_RESERVE</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_HIGH_NECROMANCER</Description>
+			<Civilopedia>TXT_KEY_UNIT_HIGH_NECROMANCER_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bGoldenAge>1</bGoldenAge>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_PROPHET</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_RESERVE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_CULTURE</FlavorType>
+					<iFlavor>1</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>2</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_HEALTH</FlavorType>
+					<iFlavor>3</iFlavor>
+				</Flavor>
+			</Flavors>
+			<iCombat>3</iCombat>
+			<bOnlyDefensive>0</bOnlyDefensive>
+			<iMoves>1</iMoves>
+			<iBaseDiscover>1000</iBaseDiscover>
+			<iDiscoverMultiplier>2</iDiscoverMultiplier>
+			<iAsset>0</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>1</iGroupSize>
+				<fMaxSpeed>1.25</fMaxSpeed>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>1</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_GREAT_NECROMANCER</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<iCombatDefense>3</iCombatDefense>
+			<iPowerMult>3</iPowerMult>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MEDIC1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MEDIC2</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MEDIC3</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_UNDEAD</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_DEATH1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_DEATH2</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+		</UnitInfo>
 		<UnitInfo>        <!-- Great Commander - Salamander -->
 			<Class>UNITCLASS_COMMANDER</Class>
 			<Type>UNIT_SALAMANDER</Type>
@@ -18278,6 +18422,196 @@
 			<iWeaponTierMax>3</iWeaponTierMax>
 			<PrereqBuildingClass>BUILDINGCLASS_BARRACKS</PrereqBuildingClass>
 		</UnitInfo>
+		<UnitInfo>        <!-- Great Luonnotar -->
+			<Class>UNITCLASS_PROPHET</Class>
+			<Type>UNIT_GREAT_LUONNOTAR</Type>
+			<UniqueNames>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_1</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_2</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_3</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_4</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_5</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_6</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_7</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_8</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_9</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_10</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_11</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_12</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_13</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_14</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_15</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_16</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_17</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_18</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_19</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_20</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_GREATESTPEOPLE_1</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_PROPHET_GREATESTPEOPLE_2</UniqueName>
+			</UniqueNames>
+			<Quotes>
+				<Quote>TXT_KEY_QUOTE_PROPHET_1</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_2</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_3</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_4</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_5</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_6</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_7</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_8</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_9</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_10</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_11</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_12</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_13</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_14</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_15</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_16</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_17</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_18</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_19</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_20</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_GREATESTPEOPLE_1</Quote>
+				<Quote>TXT_KEY_QUOTE_PROPHET_GREATESTPEOPLE_2</Quote>
+			</Quotes>
+			<Images>
+				<Image>art\interface\popups\greatpeople\Tuatha-De-Danann.dds</Image>
+				<Image>art\interface\popups\greatpeople\Aes Sidhe.dds</Image>
+				<Image>art\interface\popups\greatpeople\Teutates.dds</Image>
+				<Image>art\interface\popups\greatpeople\Belatu Cadros.dds</Image>
+				<Image>art\interface\popups\greatpeople\Cenn Cruaich.dds</Image>
+				<Image>art\interface\popups\greatpeople\Mag Tuireadh.dds</Image>
+				<Image>art\interface\popups\greatpeople\Nyarlat.dds</Image>
+				<Image>art\interface\popups\greatpeople\Aengus Saone.dds</Image>
+				<Image>art\interface\popups\greatpeople\Cailleach Beara.dds</Image>
+				<Image>art\interface\popups\greatpeople\Calwinna of Junil.dds</Image>
+				<Image>art\interface\popups\greatpeople\Talia Gosam.dds</Image>
+				<Image>art\interface\popups\greatpeople\Lita the Witch.dds</Image>
+				<Image>art\interface\popups\greatpeople\Abellio.dds</Image>
+				<Image>art\interface\popups\greatpeople\Abnoba.dds</Image>
+				<Image>art\interface\popups\greatpeople\Cinnia.dds</Image>
+				<Image>art\interface\popups\greatpeople\Lanthis.dds</Image>
+				<Image>art\interface\popups\greatpeople\Pontif Elmin.dds</Image>
+				<Image>art\interface\popups\greatpeople\Fand.dds</Image>
+				<Image>art\interface\popups\greatpeople\Gosea.dds</Image>
+				<Image>art\interface\popups\greatpeople\Vaghan of Lugus.dds</Image>
+				<Image>art\interface\popups\greatpeople\Ron Glass.dds</Image>
+				<Image>art\interface\popups\greatpeople\cary-hiroyuki_tagawa.dds</Image>
+			</Images>
+			<Special>SPECIALUNIT_PEOPLE</Special>
+			<DefaultUnitAI>UNITAI_PROPHET</DefaultUnitAI>
+			<Description>TXT_KEY_SPECIALIST_GREAT_PRIEST_GRIGORI</Description>
+			<Civilopedia>TXT_KEY_SPECIALIST_PRIEST_GRIGORI_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_RELIGION</Advisor>
+			<bGoldenAge>1</bGoldenAge>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_PROPHET</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<GreatPeoples>
+				<GreatPeople>
+					<GreatPeopleClass>SPECIALISTCLASS_GREAT_PRIEST</GreatPeopleClass>
+					<bGreatPeople>1</bGreatPeople>
+				</GreatPeople>
+			</GreatPeoples>
+			<Buildings>
+				<Building>
+					<BuildingType>BUILDING_CODE_OF_JUNIL</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_TABLETS_OF_BAMBUR</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_THE_NECRONOMICON</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_NOX_NOCTIS</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_SONG_OF_AUTUMN</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_STIGMATA_ON_THE_UNBORN</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_DIES_DIEI</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_CITADEL_OF_THE_HAND</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_ACADEMY</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_ALTAR_OF_THE_LUONNOTAR</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_ALTAR_OF_THE_LUONNOTAR_ANOINTED</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_ALTAR_OF_THE_LUONNOTAR_BLESSED</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_ALTAR_OF_THE_LUONNOTAR_CONSECRATED</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_ALTAR_OF_THE_LUONNOTAR_DIVINE</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_ALTAR_OF_THE_LUONNOTAR_EXALTED</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+			</Buildings>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_CULTURE</FlavorType>
+					<iFlavor>2</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_RELIGION</FlavorType>
+					<iFlavor>1</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_SCIENCE</FlavorType>
+					<iFlavor>3</iFlavor>
+				</Flavor>
+			</Flavors>
+			<iMoves>2</iMoves>
+			<iBaseDiscover>1000</iBaseDiscover>
+			<iDiscoverMultiplier>2</iDiscoverMultiplier>
+			<iAsset>0</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>1</iGroupSize>
+				<fMaxSpeed>1.25</fMaxSpeed>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>1</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_INQUISITOR_GRIGORI</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_DIMENSIONAL1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+		</UnitInfo>
 		<UnitInfo>        <!-- Grigori Medic -->
 			<Class>UNITCLASS_GRIGORI_MEDIC</Class>
 			<Type>UNIT_GRIGORI_MEDIC</Type>
@@ -25865,7 +26199,7 @@
 			<PrereqBuilding>BUILDING_PALACE_SCIONS</PrereqBuilding>
 			<PrereqTech>TECH_THE_GIFT</PrereqTech>
 			<iAIWeight>1</iAIWeight>
-			<iCost>500</iCost>
+			<iCost>400</iCost>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMoves>2</iMoves>
 			<iCombat>0</iCombat>
@@ -27290,9 +27624,9 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqBuilding>BUILDING_CATHEDRAL_OF_REBIRTH</PrereqBuilding>
-			<PrereqTech>TECH_RELIGIOUS_LAW</PrereqTech>
+			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
 			<iAIWeight>4</iAIWeight>
-			<iCost>345</iCost>
+			<iCost>245</iCost>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMoves>2</iMoves>
 			<iCombat>0</iCombat>
@@ -29735,6 +30069,170 @@
 				</DamageTypeCombat>
 			</DamageTypeCombats>
 		</UnitInfo>
+		<UnitInfo>        <!-- Healer Mekara -->
+			<Class>UNITCLASS_HEALER</Class>
+			<Type>UNIT_HEALER_MEKARA</Type>
+			<Combat>UNITCOMBAT_DISCIPLE</Combat>
+			<UniqueNames>
+				<UniqueName>Morgan Tud</UniqueName>
+				<UniqueName>Guo Yu</UniqueName>
+				<UniqueName>Pied Piper of Hamelin</UniqueName>
+				<UniqueName>Karadoc</UniqueName>
+				<UniqueName>Amello Raun</UniqueName>
+				<UniqueName>Lune of the White Knife</UniqueName>
+				<UniqueName>The Gift of Sucellus</UniqueName>
+				<UniqueName>Nala Plaguestalker</UniqueName>
+				<UniqueName>Riach Evinan</UniqueName>
+				<UniqueName>Mugati</UniqueName>
+				<UniqueName>Zil, Flower of Mekara</UniqueName>
+				<UniqueName>Nossina Tali'an</UniqueName>
+				<UniqueName>Lnelle</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_HEALER_GREATESTPEOPLE_1</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_HEALER_GREATESTPEOPLE_2</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_HEALER_GREATESTPEOPLE_3</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_HEALER_GREATESTPEOPLE_4</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_HEALER_GREATESTPEOPLE_5</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_HEALER_GREATESTPEOPLE_6</UniqueName>
+			</UniqueNames>
+			<Quotes>
+				<Quote>TXT_KEY_QUOTE_HEALER_1</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_2</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_3</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_4</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_5</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_6</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_7</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_8</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_9</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_10</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_11</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_12</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_13</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_GREATESTPEOPLE_1</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_GREATESTPEOPLE_2</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_GREATESTPEOPLE_3</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_GREATESTPEOPLE_4</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_GREATESTPEOPLE_5</Quote>
+				<Quote>TXT_KEY_QUOTE_HEALER_GREATESTPEOPLE_6</Quote>
+			</Quotes>
+			<Images>
+				<Image>art\interface\popups\healer specialist\Image1.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image2.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image3.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image4.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image5.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image6.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image7.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image8.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image9.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image10.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image11.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image12.dds</Image>
+				<Image>art\interface\popups\healer specialist\Image13.dds</Image>
+				<Image>art\interface\popups\greatpeople\Alan Rickman.dds</Image>
+				<Image>art\interface\popups\greatpeople\John Hurt.dds</Image>
+				<Image>art\interface\popups\greatpeople\Jon Pertwee.dds</Image>
+				<Image>art\interface\popups\greatpeople\Patrick Troughton.dds</Image>
+				<Image>art\interface\popups\greatpeople\William Hartnell.dds</Image>
+				<Image>art\interface\popups\greatpeople\David Mccallum.dds</Image>
+			</Images>
+			<Special>SPECIALUNIT_PEOPLE</Special>
+			<DefaultUnitAI>UNITAI_RESERVE</DefaultUnitAI>
+			<Description>TXT_KEY_SPECIALIST_GREAT_HEALER_MEKARA</Description>
+			<Civilopedia>TXT_KEY_SPECIALIST_GREAT_HEALER_MEKARA_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<bGoldenAge>1</bGoldenAge>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_HEALER</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_RESERVE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<GreatPeoples>
+				<GreatPeople>
+					<GreatPeopleClass>SPECIALISTCLASS_GREAT_HEALER</GreatPeopleClass>
+					<bGreatPeople>1</bGreatPeople>
+				</GreatPeople>
+			</GreatPeoples>
+			<Buildings>
+				<Building>
+					<BuildingType>BUILDING_APOTHECARY</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+			</Buildings>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_CULTURE</FlavorType>
+					<iFlavor>1</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>2</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_HEALTH</FlavorType>
+					<iFlavor>3</iFlavor>
+				</Flavor>
+			</Flavors>
+			<iCombat>2</iCombat>
+			<iMoves>2</iMoves>
+			<iBaseDiscover>1000</iBaseDiscover>
+			<iDiscoverMultiplier>2</iDiscoverMultiplier>
+			<iAsset>0</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>1</iGroupSize>
+				<fMaxSpeed>1.25</fMaxSpeed>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>1</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_CARETAKER_MATRON</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<iCombatDefense>5</iCombatDefense>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MEDIC1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MEDIC2</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MEDIC3</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MARCH</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_FIRST_AID</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_CHANNELING1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_CHANNELING2</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_CHANNELING3</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_VAMPIRE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+		</UnitInfo>
 		<UnitInfo>        <!-- Corgayle Ascended -->
 			<Class>UNITCLASS_CORGAYLE</Class>
 			<Type>UNIT_CORGAYLE_ASCENDED</Type>
@@ -30708,6 +31206,12 @@
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 			</FreePromotions>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<iFlavor>5</iFlavor>
+				</Flavor>
+			</Flavors>
 			<iTier>2</iTier>
 			<iCombatDefense>4</iCombatDefense>
 			<PrereqBuildingClass>BUILDINGCLASS_PAGAN_TEMPLE</PrereqBuildingClass>
@@ -30736,6 +31240,12 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
 			<PrereqTech>TECH_CURRENCY</PrereqTech>
 			<iCost>150</iCost>
 			<iMoves>2</iMoves>
@@ -30814,6 +31324,12 @@
 					<iUnitCombatMod>50</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<iFlavor>15</iFlavor>
+				</Flavor>
+			</Flavors>
 			<iAsset>28</iAsset>
 			<UnitMeshGroups>
 				<iGroupSize>1</iGroupSize>
@@ -30867,6 +31383,7 @@
 				<UnitClassUpgradeType>UNITCLASS_ADEPT</UnitClassUpgradeType>
 				<UnitClassUpgradeType>UNITCLASS_WARRIOR</UnitClassUpgradeType>
 				<UnitClassUpgradeType>UNITCLASS_SCOUT</UnitClassUpgradeType>
+				<UnitClassUpgradeType>UNITCLASS_GRIGORI_MEDIC</UnitClassUpgradeType>
 			</UnitClassUpgrades>
 			<UnitAIs>
 				<UnitAI>
@@ -32147,7 +32664,7 @@
 			<PrereqTech>TECH_DRAMA</PrereqTech>
 			<iCost>-1</iCost>
 			<iMoves>2</iMoves>
-			<iCombat>5</iCombat>
+			<iCombat>6</iCombat>
 			<iCityAttack>25</iCityAttack>
 			<iCityDefense>25</iCityDefense>
 			<iCultureGarrison>6</iCultureGarrison>
@@ -32178,7 +32695,7 @@
 				<PromotionType>PROMOTION_HARDY2</PromotionType>
 				<PromotionType>PROMOTION_HARDY3</PromotionType>
 			</AllowPromotions>
-			<iCombatDefense>3</iCombatDefense>
+			<iCombatDefense>4</iCombatDefense>
 			<iMinLevel>1</iMinLevel>
 			<bDisableUpgradeTo>1</bDisableUpgradeTo>
 			<iTier>3</iTier>
@@ -37071,6 +37588,8 @@
 			<bPillage>1</bPillage>
 			<UnitClassUpgrades>
 				<UnitClassUpgradeType>UNITCLASS_HIGH_PRIEST_OF_WINTER</UnitClassUpgradeType>
+				<UnitClassUpgradeType>UNITCLASS_PALADIN</UnitClassUpgradeType>
+				<UnitClassUpgradeType>UNITCLASS_EIDOLON</UnitClassUpgradeType>
 			</UnitClassUpgrades>
 			<UnitAIs>
 				<UnitAI>
@@ -50804,6 +51323,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_CALENDAR</PrereqTech>
+			<iCost>75</iCost>
 			<iMoves>1</iMoves>
 			<iCombat>4</iCombat>
 			<iCityAttack>15</iCityAttack>

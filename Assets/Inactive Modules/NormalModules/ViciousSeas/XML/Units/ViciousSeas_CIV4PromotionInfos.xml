@@ -1372,6 +1372,67 @@
 			</PromotionOverwrites> -->
 			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Units/NightmareHag.dds</Button>
 		</PromotionInfo>
+		
+		<PromotionInfo>		<!-- Fear of Isolation - Nightmare Mask -->
+			<Type>PROMOTION_NIGHTMARE_AIFON_MASK</Type>
+			<Description>TXT_KEY_PROMOTION_NIGHTMARE_AIFON_MASK</Description>
+			<ReplaceArtType>ART_DEF_UNIT_BIG_TOAD</ReplaceArtType>
+		    <bWaterWalking>1</bWaterWalking>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ANIMAL</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_BEAST</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Units/AifonNightmareButton.dds</Button>
+			<bHiddenNationality>1</bHiddenNationality>
+			<bDispellable>1</bDispellable>
+			<iMinLevel>-1</iMinLevel>
+		</PromotionInfo>
 		<PromotionInfo>		<!-- Doomgiver -->
 			<Type>PROMOTION_DOOMGIVER</Type>
 			<UnitCombats>
@@ -1601,6 +1662,21 @@
 			<iVisibilityChange>3</iVisibilityChange>
 			<iExtraPerception>2</iExtraPerception>
 			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Spells/GlimpseUnseen.dds</Button>
+		</PromotionInfo>
+		
+		<PromotionInfo>		<!-- Golem -->
+			<Type>PROMOTION_GOLEM</Type>
+			<PromotionAllows>
+				<Promotion>PROMOTION_RUNIC_CLOAKFIELD</Promotion>
+				<Promotion>PROMOTION_RUNIC_PYROHELIX</Promotion>
+				<Promotion>PROMOTION_RUNIC_SOLARPRISM</Promotion>
+				<Promotion>PROMOTION_SUN2</Promotion>
+				<Promotion>PROMOTION_FIRE2</Promotion>
+				<Promotion>PROMOTION_HIDDEN</Promotion>
+				<Promotion>PROMOTION_NIGHTMARE_AIFON_HIDDEN_NATIONALITY_BLANKET</Promotion>
+				<Promotion>PROMOTION_NIGHTMARE_AIFON</Promotion>
+				<Promotion>PROMOTION_DREAMING_AIFON</Promotion>
+			</PromotionAllows>
 		</PromotionInfo>
 	</PromotionInfos>
 </Civ4PromotionInfos>

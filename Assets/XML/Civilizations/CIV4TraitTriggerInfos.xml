@@ -5541,7 +5541,7 @@
 				</CounterChange>
 				<CounterChange>
 					<TraitType>TRAIT_TORTOISE_TRIBE_FAVOR</TraitType>
-					<iModifier>-1</iModifier>
+					<iModifier>-2</iModifier>
 					<bFloorZero>1</bFloorZero>
 				</CounterChange>
 				<CounterChange>

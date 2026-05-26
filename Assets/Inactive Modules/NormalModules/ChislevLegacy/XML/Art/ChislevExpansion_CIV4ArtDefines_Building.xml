@@ -47,46 +47,6 @@
 			<Button>Art/Modules/ChislevExpansion/Buttons/Warchief_Security_Council.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_TOTEM_OF_THE_EAGLE</Type>
-			<LSystem>LSYSTEM_1x1</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>0.4</fScale>
-			<fInterfaceScale>0.5</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Bear Totem/Totem.nif</NIF>
-			<KFM/>
-			<Button>Art/Modules/ChislevExpansion/Buttons/EagleTotem.dds</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_TOTEM_OF_THE_COYOTE</Type>
-			<LSystem>LSYSTEM_1x1</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>0.4</fScale>
-			<fInterfaceScale>0.5</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Bear Totem/Totem.nif</NIF>
-			<KFM/>
-			<Button>Art/Modules/ChislevExpansion/Buttons/CoyoteTotem.dds</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_TOTEM_OF_THE_SERPENT</Type>
-			<LSystem>LSYSTEM_1x1</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>0.4</fScale>
-			<fInterfaceScale>0.5</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Bear Totem/Totem.nif</NIF>
-			<KFM/>
-			<Button>Art/Modules/ChislevExpansion/Buttons/SerpentTotem.dds</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_TOTEM_OF_THE_TORTOISE</Type>
-			<LSystem>LSYSTEM_1x1</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>0.4</fScale>
-			<fInterfaceScale>0.5</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Bear Totem/Totem.nif</NIF>
-			<KFM/>
-			<Button>Art/Modules/ChislevExpansion/Buttons/TortoiseTotem.dds</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_TOTEM_OF_THE_JUNGLE</Type>
 			<LSystem>LSYSTEM_1x1</LSystem>
 			<bAnimated>0</bAnimated>

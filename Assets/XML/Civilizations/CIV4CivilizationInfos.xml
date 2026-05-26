@@ -1344,6 +1344,12 @@
 					<UnitType>UNIT_FREE_SPIRITS</UnitType>
 				</Unit>
 			</Units>
+			<Specialists>
+				<Specialist>
+					<SpecialistClassType>SPECIALISTCLASS_CITIZEN</SpecialistClassType>
+					<SpecialistType>SPECIALIST_CITIZEN_CHISLEV</SpecialistType>
+				</Specialist>
+			</Specialists>
 			<Improvements>
 				<Improvement>
 					<ImprovementClassType>IMPROVEMENTCLASS_COTTAGE</ImprovementClassType>
@@ -1433,6 +1439,10 @@
 					<LeaderName>LEADER_THE_COUNCIL</LeaderName>
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
+				<Leader>
+					<LeaderName>LEADER_MIDJIN</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
 			</Leaders>
 			<DerivativeCiv>NONE</DerivativeCiv>
 			<CivilizationSelectionSound>AS3D_AZTEC_SELECT</CivilizationSelectionSound>
@@ -1447,6 +1457,14 @@
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
 					<ImprovementType>IMPROVEMENT_WORKSHOP</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>-1</iYield>
+						<iYield>0</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
 					<ImprovementYields>
 						<iYield>0</iYield>
 						<iYield>-1</iYield>
@@ -2540,7 +2558,7 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_MUSEUM</BuildingClassType>
-					<BuildingType>BUILDING_MUSEUM</BuildingType>
+					<BuildingType>NONE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
@@ -2584,7 +2602,7 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_FORUM</BuildingClassType>
-					<BuildingType>BUILDING_FORUM</BuildingType>
+					<BuildingType>NONE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_MEMORIAL_REFUGEE</BuildingClassType>
@@ -2610,9 +2628,25 @@
 					<BuildingClassType>BUILDINGCLASS_CRIME_BOUNTY_GRAND</BuildingClassType>
 					<BuildingType>BUILDING_CRIME_BOUNTY_GRAND</BuildingType>
 				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_GRIGORI_FREEDOM</BuildingClassType>
+					<BuildingType>BUILDING_GRIGORI_FREEDOM</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_GRIGORI_APOSTATES</BuildingClassType>
+					<BuildingType>BUILDING_GRIGORI_APOSTATES</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_MONUMENT</BuildingClassType>
+					<BuildingType>BUILDING_MONUMENT_GRIGORI</BuildingType>
+				</Building>
 
 			</Buildings>
 			<Units>
+				<Unit>
+					<UnitClassType>UNITCLASS_PROPHET</UnitClassType>
+					<UnitType>UNIT_GREAT_LUONNOTAR</UnitType>
+				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_GRIGORI_MEDIC</UnitClassType>
 					<UnitType>UNIT_GRIGORI_MEDIC</UnitType>
@@ -2645,7 +2679,15 @@
 			<Specialists>
 				<Specialist>
 					<SpecialistClassType>SPECIALISTCLASS_STATESMAN</SpecialistClassType>
-					<SpecialistType>SPECIALIST_STATESMAN</SpecialistType>
+					<SpecialistType>SPECIALIST_GREENHORN</SpecialistType>
+				</Specialist>
+				<Specialist>
+					<SpecialistClassType>SPECIALISTCLASS_PRIEST</SpecialistClassType>
+					<SpecialistType>SPECIALIST_PRIEST_GRIGORI</SpecialistType>
+				</Specialist>
+				<Specialist>
+					<SpecialistClassType>SPECIALISTCLASS_GREAT_PRIEST</SpecialistClassType>
+					<SpecialistType>SPECIALIST_GREAT_PRIEST_GRIGORI</SpecialistType>
 				</Specialist>
 			</Specialists>
 			<Improvements>
@@ -2828,6 +2870,16 @@
 					<bFreeBuildingClass>1</bFreeBuildingClass>
 				</FreeBuildingClass>
 			</FreeBuildingClasses>
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_PASTURE</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 			<FreeTechs>
 				<FreeTech>
 					<TechType>TECH_AGRICULTURE</TechType>
@@ -4560,7 +4612,7 @@
 					<ImprovementYields>
 						<iYield>0</iYield>
 						<iYield>1</iYield>
-						<iYield>1</iYield>
+						<iYield>0</iYield>
 					</ImprovementYields>
 				</ImprovementYieldChange>
 				<ImprovementYieldChange>
@@ -5720,6 +5772,10 @@
 			</Buildings>
 			<Units>
 				<Unit>
+					<UnitClassType>UNITCLASS_HEALER</UnitClassType>
+					<UnitType>UNIT_GREAT_NECROMANCER</UnitType>
+				</Unit>
+				<Unit>
 					<UnitClassType>UNITCLASS_ASSASSIN</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -5866,6 +5922,16 @@
 			</Units>
 			<!--Also had the unitclass_creeper and three free creepers -->
 			
+			<Specialists>
+				<Specialist>
+					<SpecialistClassType>SPECIALISTCLASS_HEALER</SpecialistClassType>
+					<SpecialistType>SPECIALIST_NECROMANCER</SpecialistType>
+				</Specialist>
+				<Specialist>
+					<SpecialistClassType>SPECIALISTCLASS_GREAT_HEALER</SpecialistClassType>
+					<SpecialistType>SPECIALIST_GREAT_NECROMANCER</SpecialistType>
+				</Specialist>
+			</Specialists>
 			<FreeUnitClasses>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_AWAKENED</UnitClassType>
@@ -6549,7 +6615,7 @@
 			<ArtStyleType>ARTSTYLE_INFERNAL</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_DTESH</UnitArtStyleType>
 			<bPlayable>1</bPlayable>
-			<bAIPlayable>1</bAIPlayable>		<!-- Civ simply cannot be handled by the AI at this time -->
+			<bAIPlayable>1</bAIPlayable>		<!-- Civ simply cannot be handled by the AI at this time --> <!-- Yes it can! fuck you! haha! -->
 			<bNotMercenaryCiv>1</bNotMercenaryCiv>
 			
 			<bNoCrimeCiv>1</bNoCrimeCiv>
@@ -6703,12 +6769,24 @@
 					<BuildingClassType>BUILDINGCLASS_TEMPLE_OF_THE_VEIL</BuildingClassType>
 					<BuildingType>NONE</BuildingType>
 				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_DUNGEON</BuildingClassType>
+					<BuildingType>BUILDING_DUNGEON_DTESH</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_ALMSHOUSE</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
 			</Buildings>
 	
 			<Units>
 				<Unit>
 					<UnitClassType>UNITCLASS_CHAMPION</UnitClassType>
 					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_HEALER</UnitClassType>
+					<UnitType>UNIT_GREAT_NECROMANCER</UnitType>
 				</Unit>
 				
 				<Unit>
@@ -6823,6 +6901,18 @@
 			<Specialists>
 				<Specialist>
 					<SpecialistClassType>SPECIALISTCLASS_HEALER</SpecialistClassType>
+					<SpecialistType>SPECIALIST_NECROMANCER</SpecialistType>
+				</Specialist>
+				<Specialist>
+					<SpecialistClassType>SPECIALISTCLASS_GREAT_HEALER</SpecialistClassType>
+					<SpecialistType>SPECIALIST_GREAT_NECROMANCER</SpecialistType>
+				</Specialist>
+				<Specialist>
+					<SpecialistClassType>SPECIALISTCLASS_CITIZEN</SpecialistClassType>
+					<SpecialistType>SPECIALIST_CITIZEN_DTESH</SpecialistType>
+				</Specialist>
+				<Specialist>
+					<SpecialistClassType>SPECIALISTCLASS_PRIEST</SpecialistClassType>
 					<SpecialistType>NONE</SpecialistType>
 				</Specialist>
 			</Specialists>
@@ -6833,6 +6923,10 @@
 				</Improvement>
 				<Improvement>
 					<ImprovementClassType>IMPROVEMENTCLASS_PLANTATION</ImprovementClassType>
+					<ImprovementType>NONE</ImprovementType>
+				</Improvement>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_PYRE</ImprovementClassType>
 					<ImprovementType>IMPROVEMENT_DTESH_PYRE</ImprovementType>
 				</Improvement>
 				<Improvement>
@@ -7053,7 +7147,12 @@
 				<City>TXT_KEY_CITY_BARBARIAN_29</City>
 				<City>TXT_KEY_CITY_BARBARIAN_30</City>
 			</Cities>
-			<Buildings/>
+			<Buildings>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_BHALL_PRODUCTION</BuildingClassType>
+					<BuildingType>BUILDING_BHALL_PRODUCTION</BuildingType>
+				</Building>
+			</Buildings>
 			<Units>
 				<Unit>
 					<UnitClassType>UNITCLASS_HAG</UnitClassType>
@@ -7205,7 +7304,12 @@
 				</Unit>
 			</Units>
 			<FreeUnitClasses/>
-			<FreeBuildingClasses/>
+			<FreeBuildingClasses>
+				<FreeBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_BHALL_PRODUCTION</BuildingClassType>
+					<bFreeBuildingClass>1</bFreeBuildingClass>
+				</FreeBuildingClass>
+			</FreeBuildingClasses>
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
@@ -8392,6 +8496,10 @@
 					<UnitClassType>UNITCLASS_PIKEMAN</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_HEALER</UnitClassType>
+					<UnitType>UNIT_HEALER_MEKARA</UnitType>
+				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -8417,6 +8525,20 @@
 					<bFreeBuildingClass>1</bFreeBuildingClass>
 				</FreeBuildingClass>
 			</FreeBuildingClasses>
+			<Specialists>
+				<Specialist>
+					<SpecialistClassType>SPECIALISTCLASS_HEALER</SpecialistClassType>
+					<SpecialistType>SPECIALIST_HEALER_MEKARA</SpecialistType>
+				</Specialist>
+				<Specialist>
+					<SpecialistClassType>SPECIALISTCLASS_GREAT_HEALER</SpecialistClassType>
+					<SpecialistType>SPECIALIST_GREAT_HEALER_MEKARA</SpecialistType>
+				</Specialist>
+				<Specialist>
+					<SpecialistClassType>SPECIALISTCLASS_SLAVE</SpecialistClassType>
+					<SpecialistType>SPECIALIST_SLAVE_MEKARA</SpecialistType>
+				</Specialist>
+			</Specialists>
 			<FreeTechs>
 				<FreeTech>
 					<TechType>TECH_ANCIENT_CHANTS</TechType>

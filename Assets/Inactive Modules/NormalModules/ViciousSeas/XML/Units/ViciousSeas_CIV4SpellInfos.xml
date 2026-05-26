@@ -373,7 +373,7 @@
 			<Sound>AS3D_SPELL_SPECTRE</Sound>
 			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Spells/FearofIsolation.dds</Button>
 			<AddPromotions>
-				<AddPromotion>PROMOTION_NIGHTMARE_AIFON</AddPromotion>
+				<AddPromotion>PROMOTION_NIGHTMARE_AIFON_MASK</AddPromotion>
 			</AddPromotions>
 		</SpellInfo>
 		<SpellInfo>			<!-- Glimpse the Unseen -->							<!-- Worldspell -->

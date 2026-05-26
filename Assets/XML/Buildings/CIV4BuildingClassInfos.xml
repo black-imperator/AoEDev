@@ -3732,8 +3732,8 @@
 			<Description>TXT_KEY_BUILDING_TOTEM_OF_THE_EAGLE</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>1</iMaxPlayerInstances>
-			<iExtraPlayerInstances>1</iExtraPlayerInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
 			<bNoLimit>1</bNoLimit>
 			<bMonument>0</bMonument>
 			<bUnique>1</bUnique>
@@ -3745,8 +3745,8 @@
 			<Description>TXT_KEY_BUILDING_TOTEM_OF_THE_COYOTE</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>1</iMaxPlayerInstances>
-			<iExtraPlayerInstances>1</iExtraPlayerInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
 			<bNoLimit>1</bNoLimit>
 			<bMonument>0</bMonument>
 			<bUnique>1</bUnique>
@@ -3758,8 +3758,8 @@
 			<Description>TXT_KEY_BUILDING_TOTEM_OF_THE_BEAR</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>1</iMaxPlayerInstances>
-			<iExtraPlayerInstances>1</iExtraPlayerInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
 			<bNoLimit>1</bNoLimit>
 			<bMonument>0</bMonument>
 			<bUnique>1</bUnique>
@@ -3771,8 +3771,8 @@
 			<Description>TXT_KEY_BUILDING_TOTEM_OF_THE_SERPENT</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>1</iMaxPlayerInstances>
-			<iExtraPlayerInstances>1</iExtraPlayerInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
 			<bNoLimit>1</bNoLimit>
 			<bMonument>0</bMonument>
 			<bUnique>1</bUnique>
@@ -3784,8 +3784,8 @@
 			<Description>TXT_KEY_BUILDING_TOTEM_OF_THE_TORTOISE</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>1</iMaxPlayerInstances>
-			<iExtraPlayerInstances>1</iExtraPlayerInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
 			<bNoLimit>1</bNoLimit>
 			<bMonument>0</bMonument>
 			<bUnique>1</bUnique>
@@ -3797,8 +3797,8 @@
 			<Description>TXT_KEY_BUILDING_TOTEM_OF_THE_THREE_SISTERS</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>1</iMaxPlayerInstances>
-			<iExtraPlayerInstances>1</iExtraPlayerInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
 			<bNoLimit>1</bNoLimit>
 			<bMonument>0</bMonument>
 			<bUnique>1</bUnique>
@@ -3810,8 +3810,8 @@
 			<Description>TXT_KEY_BUILDING_TOTEM_OF_THE_SKY</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>1</iMaxPlayerInstances>
-			<iExtraPlayerInstances>1</iExtraPlayerInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
 			<bNoLimit>1</bNoLimit>
 			<bMonument>0</bMonument>
 			<bUnique>1</bUnique>
@@ -3926,6 +3926,45 @@
 			<bMonument>0</bMonument>
 			<bUnique>1</bUnique>
 			<DefaultBuilding>BUILDING_ADVENTURERS_GUILD</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo><!-- Grigori Freedom Adventurers-->
+			<Type>BUILDINGCLASS_GRIGORI_FREEDOM</Type>
+			<Description>TXT_KEY_BUILDING_GRIGORI_FREEDOM</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_GRIGORI_FREEDOM</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo><!-- Grigori Caution Apostates-->
+			<Type>BUILDINGCLASS_GRIGORI_APOSTATES</Type>
+			<Description>TXT_KEY_BUILDING_GRIGORI_APOSTATES</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_GRIGORI_APOSTATES</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo><!-- Grigori Caution Apostates-->
+			<Type>BUILDINGCLASS_MONUMENT_GRIGORI</Type>
+			<Description>TXT_KEY_BUILDING_MONUMENT_GRIGORI</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_MONUMENT_GRIGORI</DefaultBuilding>
 			<VictoryThresholds/>
 		</BuildingClassInfo>
 		<BuildingClassInfo><!-- Luchuirp Blasting workshop -->
@@ -4482,6 +4521,19 @@
 			<bNoLimit>0</bNoLimit>
 			<bMonument>0</bMonument>
 			<DefaultBuilding>BUILDING_TEMPLE_UNRAVELING</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo> <!-- Bhall City Production boost Wheel of Pain   Bhall UB -->
+			<Type>BUILDINGCLASS_BHALL_PRODUCTION</Type>
+			<Description>TXT_KEY_BUILDING_BHALL_PRODUCTION</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>1</iExtraPlayerInstances>
+			<bNoLimit>1</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_BHALL_PRODUCTION</DefaultBuilding>
 			<VictoryThresholds/>
 		</BuildingClassInfo>
 	</BuildingClassInfos>

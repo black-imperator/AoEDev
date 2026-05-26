@@ -1642,6 +1642,14 @@
 			<iPower>1</iPower>
 			<fVisibilityPriority>1</fVisibilityPriority>
 			<iCrime>-5</iCrime>
+			<GreatPeopleUnitClass>UNITCLASS_ADVENTURER</GreatPeopleUnitClass>
+			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_STATESMAN</SpecialistClass>
+					<iSpecialistClassCount>2</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<PerCrimeEffectYieldChanges>
 				<iYield>0</iYield>
 				<iYield>0</iYield>
@@ -1659,6 +1667,46 @@
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
+		</BuildingInfo>	
+		<BuildingInfo>		<!-- Grigori Freedom Adventurers         Grigori UB -->
+			<BuildingClass>BUILDINGCLASS_GRIGORI_FREEDOM</BuildingClass>
+			<Type>BUILDING_GRIGORI_FREEDOM</Type>
+			<Description>TXT_KEY_BUILDING_GRIGORI_FREEDOM</Description>
+			<Civilopedia>TXT_KEY_BUILDING_GRIGORI_FREEDOM_PEDIA</Civilopedia>
+			<ArtDefineTag>ART_DEF_BUILDING_ARENA</ArtDefineTag>
+			<PrereqTech>TECH_CRAFTING</PrereqTech>
+			<iPrereqPopulation>1</iPrereqPopulation>
+			<iAIWeight>10</iAIWeight>
+			<iCost>-1</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iConquestProb>0</iConquestProb>
+			<GreatPeopleUnitClass>UNITCLASS_ADVENTURER</GreatPeopleUnitClass>
+			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
+			<iAsset>4</iAsset>
+			<fVisibilityPriority>1000</fVisibilityPriority>
+			<ConstructSound>AS2D_BUILD_COURTHOUSE</ConstructSound>
+			<bAutoBuild>1</bAutoBuild>
+			<bMustMaintain>1</bMustMaintain>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Grigori Caution Apostates         Grigori UB -->
+			<BuildingClass>BUILDINGCLASS_GRIGORI_APOSTATES</BuildingClass>
+			<Type>BUILDING_GRIGORI_APOSTATES</Type>
+			<Description>TXT_KEY_BUILDING_GRIGORI_APOSTATES</Description>
+			<Civilopedia>TXT_KEY_BUILDING_GRIGORI_FREEDOM_PEDIA</Civilopedia>
+			<ArtDefineTag>ART_DEF_BUILDING_SHRINE_TO_KYLORIN</ArtDefineTag>
+			<PrereqTech>TECH_CRAFTING</PrereqTech>
+			<iPrereqPopulation>1</iPrereqPopulation>
+			<iAIWeight>10</iAIWeight>
+			<iCost>-1</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iConquestProb>0</iConquestProb>
+			<GreatPeopleUnitClass>UNITCLASS_PROPHET</GreatPeopleUnitClass>
+			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
+			<iAsset>4</iAsset>
+			<fVisibilityPriority>1000</fVisibilityPriority>
+			<ConstructSound>AS2D_BUILD_COURTHOUSE</ConstructSound>
+			<bAutoBuild>1</bAutoBuild>
+			<bMustMaintain>1</bMustMaintain>
 		</BuildingInfo>
 		<BuildingInfo>		<!-- Blasting Workshop                                          Luchuirp UB -->
 			<BuildingClass>BUILDINGCLASS_BLASTING_WORKSHOP</BuildingClass>
@@ -1693,7 +1741,7 @@
 			<Type>BUILDING_BREEDING_PIT</Type>
 			<Description>TXT_KEY_BUILDING_BREEDING_PIT</Description>
 			<Civilopedia>TXT_KEY_BUILDING_BREEDING_PIT_PEDIA</Civilopedia>
-			<Help>TXT_KEY_BUILDING_BREEDING_PIT_HELP</Help>
+			<Help>TXT_KEY_BUILDING_PAGAN_TEMPLE_MEKARA_HELP</Help>
 			<Strategy>TXT_KEY_BUILDING_BREEDING_PIT_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BREEDING_PIT</ArtDefineTag>
@@ -1703,11 +1751,11 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>0</iConquestProb>
 			<iFoodKept>20</iFoodKept>
-			<iHealth>-1</iHealth>
+			<iHealth>0</iHealth>
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>10</fVisibilityPriority>
 			<YieldChanges>
-				<iYield>2</iYield>
+				<iYield>0</iYield>
 				<iYield>0</iYield>
 				<iYield>0</iYield>
 			</YieldChanges>
@@ -1717,6 +1765,22 @@
 					<iSpecialistClassCount>1</iSpecialistClassCount>
 				</SpecialistClassCount>
 			</SpecialistClassCounts>
+			<LocalSpecialistClassYieldChanges>
+				<LocalSpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_SLAVE</SpecialistClass>
+					<YieldChanges>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+					</YieldChanges>
+				</LocalSpecialistClassYieldChange>
+			</LocalSpecialistClassYieldChanges>
+			<FreeSpecialistClassCounts>
+				<FreeSpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_SLAVE</SpecialistClass>
+					<iFreeSpecialistClassCount>2</iFreeSpecialistClassCount>
+				</FreeSpecialistClassCount>
+			</FreeSpecialistClassCounts>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GROWTH</FlavorType>
@@ -1855,20 +1919,25 @@
 			<ArtDefineTag>ART_DEF_BUILDING_PLANAR_GATE</ArtDefineTag>
 			<PrereqTech>TECH_MYSTICISM</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
-			<iAIWeight>300</iAIWeight>
+			<iAIWeight>999</iAIWeight>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>0</iConquestProb>
 			<iAsset>4</iAsset>
 			<fVisibilityPriority>1</fVisibilityPriority>
+			<CommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>2</iCommerce>
+				<iCommerce>0</iCommerce>
+			</CommerceChanges>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_MILITARY</FlavorType>
-					<iFlavor>5</iFlavor>
+					<iFlavor>15</iFlavor>
 				</Flavor>
 				<Flavor>
 					<FlavorType>FLAVOR_SCIENCE</FlavorType>
-					<iFlavor>2</iFlavor>
+					<iFlavor>12</iFlavor>
 				</Flavor>
 			</Flavors>
 			<TrainXPRates>
@@ -7182,6 +7251,12 @@
 			<iTradeRouteModifier>25</iTradeRouteModifier>
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>1</fVisibilityPriority>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_STATESMAN</SpecialistClass>
+					<iSpecialistClassCount>2</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<BonusHappinessChanges>
 				<BonusHappinessChange>
 					<BonusType>BONUS_WINE</BonusType>
@@ -7226,6 +7301,52 @@
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Monument Grigori -->
+			<BuildingClass>BUILDINGCLASS_MONUMENT</BuildingClass>
+			<Type>BUILDING_MONUMENT_GRIGORI</Type>
+			<Description>TXT_KEY_BUILDING_MONUMENT_GRIGORI</Description>
+			<Civilopedia>TXT_KEY_LORE_BELTANE_CYCLE_3_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_CULTURE</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_SHRINE_TO_KYLORIN</ArtDefineTag>
+			<PrereqTech>TECH_ANCIENT_CHANTS</PrereqTech>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
+			<ProductionTraits>
+				<ProductionTrait>
+					<ProductionTraitType>TRAIT_CREATIVE</ProductionTraitType>
+					<iProductionTrait>100</iProductionTrait>
+				</ProductionTrait>
+			</ProductionTraits>
+			<bCenterInCity>1</bCenterInCity>
+			<iAIWeight>20</iAIWeight>
+			<iCost>60</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iConquestProb>25</iConquestProb>
+			<iAsset>2</iAsset>
+			<fVisibilityPriority>2</fVisibilityPriority>
+			<ObsoleteSafeCommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>2</iCommerce>
+			</ObsoleteSafeCommerceChanges>
+			<ConstructSound>AS2D_BUILD_OBELISK</ConstructSound>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_CULTURE</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+			<BonusProductionModifiers>
+				<BonusProductionModifier>
+					<BonusType>BONUS_STONE</BonusType>
+					<iProductonModifier>50</iProductonModifier>
+				</BonusProductionModifier>
+			</BonusProductionModifiers>
 		</BuildingInfo>
 		<BuildingInfo>		<!-- Tavern -->
 			<BuildingClass>BUILDINGCLASS_TAVERN</BuildingClass>
@@ -9123,6 +9244,14 @@
 						<iCommerce>0</iCommerce>
 					</CommerceChanges>
 				</LocalSpecialistClassCommerceChange>
+				<LocalSpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_CITIZEN</SpecialistClass>
+					<CommerceChanges>
+						<iCommerce>0</iCommerce>
+						<iCommerce>3</iCommerce>
+						<iCommerce>0</iCommerce>
+					</CommerceChanges>
+				</LocalSpecialistClassCommerceChange>
 			</LocalSpecialistClassCommerceChanges>
 		</BuildingInfo>
 		<BuildingInfo>		<!-- Root Cellar - Chislev UB -->
@@ -9459,7 +9588,7 @@
 			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_EAGLENEW_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_EAGLE</ArtDefineTag>
-			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
+			<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
 			<FreePromotion>PROMOTION_CRAFTING_TRADITION</FreePromotion>
 			<ProductionTraits>
 				<ProductionTrait>
@@ -9484,12 +9613,6 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>1000</fVisibilityPriority>
-			<BuildingClassNeededs>
-				<BuildingClassNeeded>
-					<BuildingClassType>BUILDINGCLASS_CLAN_STRUCTURE_LODGE</BuildingClassType>
-					<bNeededInCity>1</bNeededInCity>
-				</BuildingClassNeeded>
-			</BuildingClassNeededs>
 			<BuildingExcludes>
 				<BuildingExclude>
 				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_COYOTE</BuildingClassType>
@@ -9602,7 +9725,7 @@
 			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_DEER_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_COYOTE</ArtDefineTag>
-			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
+			<PrereqTech>TECH_TRACKING</PrereqTech>
 			<FreePromotion>PROMOTION_SUBDUE_ANIMAL</FreePromotion>
 			<ProductionTraits>
 				<ProductionTrait>
@@ -9643,12 +9766,6 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>1000</fVisibilityPriority>
-			<BuildingClassNeededs>
-				<BuildingClassNeeded>
-					<BuildingClassType>BUILDINGCLASS_CLAN_STRUCTURE_LODGE</BuildingClassType>
-					<bNeededInCity>1</bNeededInCity>
-				</BuildingClassNeeded>
-			</BuildingClassNeededs>
 			<BuildingExcludes>
 				<BuildingExclude>
 				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_EAGLE</BuildingClassType>
@@ -9776,7 +9893,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_BEARNEW_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_BEARNEW_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_BEAR_TOTEM</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_BEAR</ArtDefineTag>
 			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
 			<FreePromotion>PROMOTION_SPIRIT_GUIDE</FreePromotion>
 			<ProductionTraits>
@@ -9802,13 +9919,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>1000</fVisibilityPriority>
-			<BuildingClassNeededs>
-				<BuildingClassNeeded>
-					<BuildingClassType>BUILDINGCLASS_CLAN_STRUCTURE_LODGE</BuildingClassType>
-					<bNeededInCity>1</bNeededInCity>
-				</BuildingClassNeeded>
-			</BuildingClassNeededs>
-				<BuildingExcludes>
+			<BuildingExcludes>
 				<BuildingExclude>
 				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_EAGLE</BuildingClassType>
 				<bExclude>1</bExclude>
@@ -9858,7 +9969,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_BEARNEW_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_BEARNEW_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_BEAR_TOTEM</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_BEAR</ArtDefineTag>
 			<FreePromotion>PROMOTION_SPIRIT_GUIDE</FreePromotion>
 			<bAutoBuild>1</bAutoBuild>
 			<bMustMaintain>1</bMustMaintain>
@@ -9920,7 +10031,7 @@
 			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_WOLF_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_SERPENT</ArtDefineTag>
-			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
+			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
 			<FreePromotion>PROMOTION_COMBAT1</FreePromotion>
 			<iMilitaryProductionModifier>20</iMilitaryProductionModifier>
 			<bMustMaintain>1</bMustMaintain>
@@ -9939,13 +10050,7 @@
 			<iAsset>6</iAsset>
 			<iPower>6</iPower>
 			<fVisibilityPriority>1000</fVisibilityPriority>
-			<BuildingClassNeededs>
-				<BuildingClassNeeded>
-					<BuildingClassType>BUILDINGCLASS_CLAN_STRUCTURE_LODGE</BuildingClassType>
-					<bNeededInCity>1</bNeededInCity>
-				</BuildingClassNeeded>
-			</BuildingClassNeededs>
-				<BuildingExcludes>
+			<BuildingExcludes>
 				<BuildingExclude>
 				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_EAGLE</BuildingClassType>
 				<bExclude>1</bExclude>
@@ -10053,7 +10158,7 @@
 			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_LONG_HAIR_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_TORTOISE</ArtDefineTag>
-			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
+			<PrereqTech>TECH_KNOWLEDGE_OF_THE_ETHER</PrereqTech>
 			<FreePromotion>PROMOTION_MAGIC_RESISTANCE</FreePromotion>
 			<ProductionTraits>
 				<ProductionTrait>
@@ -10081,12 +10186,6 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>1000</fVisibilityPriority>
-			<BuildingClassNeededs>
-				<BuildingClassNeeded>
-					<BuildingClassType>BUILDINGCLASS_CLAN_STRUCTURE_LODGE</BuildingClassType>
-					<bNeededInCity>1</bNeededInCity>
-				</BuildingClassNeeded>
-			</BuildingClassNeededs>
 				<BuildingExcludes>
 				<BuildingExclude>
 				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_EAGLE</BuildingClassType>
@@ -10198,8 +10297,8 @@
 			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_SKY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_SKY_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_EAGLE</ArtDefineTag>
-			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
+			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_SKY</ArtDefineTag>
+			<PrereqTech>TECH_PHILOSOPHY</PrereqTech>
 			<ProductionTraits>
 				<ProductionTrait>
 					<ProductionTraitType>TRAIT_CHARISMATIC</ProductionTraitType>
@@ -10216,12 +10315,6 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>1000</fVisibilityPriority>
-			<BuildingClassNeededs>
-				<BuildingClassNeeded>
-					<BuildingClassType>BUILDINGCLASS_CLAN_STRUCTURE_LODGE</BuildingClassType>
-					<bNeededInCity>1</bNeededInCity>
-				</BuildingClassNeeded>
-			</BuildingClassNeededs>
 			<BuildingExcludes>
 				<BuildingExclude>
 				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_COYOTE</BuildingClassType>
@@ -10268,7 +10361,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_SKY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_SKY_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_EAGLE</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_SKY</ArtDefineTag>
 			<bAutoBuild>1</bAutoBuild>
 			<bMustMaintain>1</bMustMaintain>
 			<bNeverCapture>1</bNeverCapture>
@@ -10317,8 +10410,8 @@
 			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_THREE_SISTERS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_THREE_SISTERS_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_EAGLE</ArtDefineTag>
-			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
+			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_THREE_SISTERS</ArtDefineTag>
+			<PrereqTech>TECH_TRADE</PrereqTech>
 			<ProductionTraits>
 				<ProductionTrait>
 					<ProductionTraitType>TRAIT_CHARISMATIC</ProductionTraitType>
@@ -10334,12 +10427,6 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>1000</fVisibilityPriority>
-			<BuildingClassNeededs>
-				<BuildingClassNeeded>
-					<BuildingClassType>BUILDINGCLASS_CLAN_STRUCTURE_LODGE</BuildingClassType>
-					<bNeededInCity>1</bNeededInCity>
-				</BuildingClassNeeded>
-			</BuildingClassNeededs>
 			<BuildingExcludes>
 				<BuildingExclude>
 				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_COYOTE</BuildingClassType>
@@ -10386,7 +10473,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_TOTEM_OF_THE_THREE_SISTERS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_THE_THREE_SISTERS_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_EAGLE</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_TOTEM_OF_THE_THREE_SISTERS</ArtDefineTag>
 			<bAutoBuild>1</bAutoBuild>
 			<bMustMaintain>1</bMustMaintain>
 			<bNeverCapture>1</bNeverCapture>
@@ -10549,7 +10636,7 @@
 			<fVisibilityPriority>1</fVisibilityPriority>
 			<FreeSpecialistClassCounts>
 				<FreeSpecialistClassCount>
-					<SpecialistClass>SPECIALISTCLASS_CITIZEN</SpecialistClass>
+					<SpecialistClass>SPECIALISTCLASS_SLAVE</SpecialistClass>
 					<iFreeSpecialistClassCount>4</iFreeSpecialistClassCount>
 				</FreeSpecialistClassCount>
 			</FreeSpecialistClassCounts>
@@ -10566,6 +10653,7 @@
 			<Description>TXT_KEY_BUILDING_TEMPLE_OF_AGRUONN</Description>
 			<Civilopedia>TXT_KEY_BUILDING_TEMPLE_OF_AGRUONN_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_TEMPLE_OF_AGRUONN_STRATEGY</Strategy>
+			<Help>TXT_KEY_BUILDING_PAGAN_TEMPLE_MEKARA_HELP</Help>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_DEMONS_ALTAR</ArtDefineTag>
 			<PrereqTech>TECH_PHILOSOPHY</PrereqTech>
@@ -10581,6 +10669,16 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>20</iCommerce>
 			</CommerceModifiers>
+			<LocalSpecialistClassYieldChanges>
+				<LocalSpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_SLAVE</SpecialistClass>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+					</YieldChanges>
+				</LocalSpecialistClassYieldChange>
+			</LocalSpecialistClassYieldChanges>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_RELIGION</FlavorType>
@@ -10627,6 +10725,16 @@
 					<iSpecialistClassCount>2</iSpecialistClassCount>
 				</SpecialistClassCount>
 			</SpecialistClassCounts>
+			<LocalSpecialistClassYieldChanges>
+				<LocalSpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_SLAVE</SpecialistClass>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+					</YieldChanges>
+				</LocalSpecialistClassYieldChange>
+			</LocalSpecialistClassYieldChanges>
 			<FreePromotion>PROMOTION_SAUROS_AFFINITY_ENABLER</FreePromotion>
 			<CommerceModifiers>
 				<iCommerce>0</iCommerce>
@@ -10662,6 +10770,16 @@
 			<TechTypes>
 				<PrereqTech>TECH_NECROMANCY</PrereqTech>
 			</TechTypes>
+			<LocalSpecialistClassCommerceChanges>
+				<LocalSpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_SLAVE</SpecialistClass>
+					<CommerceChanges>
+						<iCommerce>0</iCommerce>
+						<iCommerce>0</iCommerce>
+						<iCommerce>2</iCommerce>
+					</CommerceChanges>
+				</LocalSpecialistClassCommerceChange>
+			</LocalSpecialistClassCommerceChanges>
 			<NoBonus>BONUS_MANA_LIFE</NoBonus>
 			<iHurryAngerModifier>-50</iHurryAngerModifier>
 			<bNeverCapture>1</bNeverCapture>
@@ -11069,6 +11187,7 @@
 			<Type>BUILDING_PALACE_CUALLI</Type>
 			<Description>TXT_KEY_BUILDING_PALACE_CUALLI</Description>
 			<Civilopedia>TXT_KEY_BUILDING_PALACE_PEDIA</Civilopedia>
+			<Help>TXT_KEY_BUILDING_PAGAN_TEMPLE_MEKARA_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_PALACE_CUALLI</ArtDefineTag>
 			<FreeBonus>BONUS_MANA_WATER</FreeBonus>
@@ -12370,7 +12489,7 @@
 			<Strategy>TXT_KEY_BUILDING_CATHEDRAL_OF_REBIRTH_STRATEGY</Strategy>
 			<Advisor>ADVISOR_RELIGION</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_CATHEDRAL_OF_REBIRTH</ArtDefineTag>
-			<PrereqTech>TECH_RELIGIOUS_LAW</PrereqTech>
+			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
 			<FreePromotion>PROMOTION_HOMELAND</FreePromotion>
 			<bNeverCapture>1</bNeverCapture>
 			<iAIWeight>30</iAIWeight>
@@ -14733,18 +14852,98 @@
 					<BonusType>BONUS_ASH</BonusType>
 					<YieldModifiers>
 						<iYield>0</iYield>
-						<iYield>1</iYield>
+						<iYield>25</iYield>
 						<iYield>0</iYield>
 					</YieldModifiers>
 				</BonusYieldModifier>
 			</BonusYieldModifiers>
+			<LocalSpecialistClassYieldChanges>
+				<LocalSpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+					</YieldChanges>
+				</LocalSpecialistClassYieldChange>
+				<LocalSpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_CITIZEN</SpecialistClass>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+					</YieldChanges>
+				</LocalSpecialistClassYieldChange>
+			</LocalSpecialistClassYieldChanges>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
+					<iSpecialistClassCount>2</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
 					<iFlavor>10</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_GOLD</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_SCIENCE</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>25</iFlavor>
 				</Flavor>
 			</Flavors>
 			<iPlotRadius>3</iPlotRadius>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Dtesh Dungeon -->
+			<BuildingClass>BUILDINGCLASS_DUNGEON</BuildingClass>
+			<Type>BUILDING_DUNGEON_DTESH</Type>
+			<Description>TXT_KEY_BUILDING_DUNGEON_DTESH</Description>
+			<Civilopedia>TXT_KEY_BUILDING_DUNGEON_DTESH_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_DUNGEON_DTESH</ArtDefineTag>
+			<PrereqTech>TECH_MASONRY</PrereqTech>
+			<iAIWeight>500</iAIWeight>
+			<iCost>120</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iConquestProb>25</iConquestProb>
+			<iAsset>4</iAsset>
+			<iCrime>-10</iCrime>
+			<fVisibilityPriority>1</fVisibilityPriority>
+			<BonusProductionModifiers>
+				<BonusProductionModifier>
+					<BonusType>BONUS_STONE</BonusType>
+					<iProductonModifier>50</iProductonModifier>
+				</BonusProductionModifier>
+			</BonusProductionModifiers>
+			<LocalSpecialistClassYieldChanges>
+				<LocalSpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_CITIZEN</SpecialistClass>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+						<iYield>1</iYield>
+					</YieldChanges>
+				</LocalSpecialistClassYieldChange>
+			</LocalSpecialistClassYieldChanges>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_GOLD</FlavorType>
+					<iFlavor>15</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+			<iPrereqBroadAlignment>0</iPrereqBroadAlignment>
+			<iAlignmentModifier>-5</iAlignmentModifier>
 		</BuildingInfo>
 		<BuildingInfo>		<!-- Eternal Council                                            D'tesh UB -->
 			<BuildingClass>BUILDINGCLASS_ELDER_COUNCIL</BuildingClass>
@@ -14779,12 +14978,20 @@
 			<SpecialistClassCounts>
 				<SpecialistClassCount>
 					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
-					<iSpecialistClassCount>2</iSpecialistClassCount>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
 				</SpecialistClassCount>
 			</SpecialistClassCounts>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_SCIENCE</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -14793,7 +15000,7 @@
 			<iGlobalResistModify>0</iGlobalResistModify>
 			<FreeBonus2>NONE</FreeBonus2>
 		</BuildingInfo>
-		<BuildingInfo>		<!-- Temple to D'tesh                                           D'tesh UB -->
+		<BuildingInfo>		<!-- Shrine to D'tesh                                           D'tesh UB -->
 			<BuildingClass>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClass>
 			<Type>BUILDING_TEMPLE_DTESH</Type>
 			<Description>TXT_KEY_BUILDING_TEMPLE_DTESH</Description>
@@ -14824,13 +15031,13 @@
 			</CommerceModifiers>
 			<SpecialistClassCounts>
 				<SpecialistClassCount>
-					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
 					<iSpecialistClassCount>2</iSpecialistClassCount>
 				</SpecialistClassCount>
 			</SpecialistClassCounts>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_RELIGION</FlavorType>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -14867,7 +15074,7 @@
 			<fVisibilityPriority>1</fVisibilityPriority>
 			<SpecialistClassCounts>
 				<SpecialistClassCount>
-					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
 					<iSpecialistClassCount>1</iSpecialistClassCount>
 				</SpecialistClassCount>
 				<SpecialistClassCount>
@@ -14878,7 +15085,7 @@
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_MILITARY</FlavorType>
-					<iFlavor>5</iFlavor>
+					<iFlavor>20</iFlavor>
 				</Flavor>
 				<Flavor>
 					<FlavorType>FLAVOR_SCIENCE</FlavorType>
@@ -14922,14 +15129,22 @@
 			<SpecialistClassCounts>
 				<SpecialistClassCount>
 					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
-					<iSpecialistClassCount>2</iSpecialistClassCount>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
 				</SpecialistClassCount>
 			</SpecialistClassCounts>
 			<ConstructSound>AS2D_BUILD_LIBRARY</ConstructSound>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_SCIENCE</FlavorType>
-					<iFlavor>10</iFlavor>
+					<iFlavor>15</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>15</iFlavor>
 				</Flavor>
 			</Flavors>
 			<iFreePromotionPick>0</iFreePromotionPick>
@@ -15340,6 +15555,7 @@
 			<Type>BUILDING_MARKET_SLAVE</Type>
 			<Description>TXT_KEY_BUILDING_MARKET_SLAVE</Description>
 			<Civilopedia>TXT_KEY_BUILDING_MARKET_PEDIA</Civilopedia>
+			<Help>TXT_KEY_BUILDING_SLAVE_MARKET_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MARKET</ArtDefineTag>
 			<PrereqTech>TECH_MATHEMATICS</PrereqTech>
@@ -15354,10 +15570,20 @@
 			<iAsset>2</iAsset>
 			<fVisibilityPriority>10</fVisibilityPriority>
 			<CommerceChanges>
-				<iCommerce>3</iCommerce>
+				<iCommerce>2</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 			</CommerceChanges>
+			<LocalSpecialistClassYieldChanges>
+				<LocalSpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_SLAVE</SpecialistClass>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>2</iYield>
+					</YieldChanges>
+				</LocalSpecialistClassYieldChange>
+			</LocalSpecialistClassYieldChanges>
 			<SpecialistClassCounts>
 				<SpecialistClassCount>
 					<SpecialistClass>SPECIALISTCLASS_MERCHANT</SpecialistClass>
@@ -15943,6 +16169,14 @@
 					<iProductionTrait>100</iProductionTrait>
 				</ProductionTrait>
 			</ProductionTraits>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
+			<GreatPeopleUnitClass>UNITCLASS_PROPHET</GreatPeopleUnitClass>
+			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -15955,12 +16189,6 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>10</iCommerce>
 			</CommerceModifiers>
-			<SpecialistClassCounts>
-				<SpecialistClassCount>
-					<SpecialistClass>SPECIALISTCLASS_STATESMAN</SpecialistClass>
-					<iSpecialistClassCount>1</iSpecialistClassCount>
-				</SpecialistClassCount>
-			</SpecialistClassCounts>
 			<BonusHappinessChanges>
 				<BonusHappinessChange>
 					<BonusType>BONUS_INCENSE</BonusType>
@@ -16038,10 +16266,12 @@
 			</CommerceModifiers>
 			<SpecialistClassCounts>
 				<SpecialistClassCount>
-					<SpecialistClass>SPECIALISTCLASS_STATESMAN</SpecialistClass>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
 					<iSpecialistClassCount>1</iSpecialistClassCount>
 				</SpecialistClassCount>
 			</SpecialistClassCounts>
+			<GreatPeopleUnitClass>UNITCLASS_PROPHET</GreatPeopleUnitClass>
+			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<iExperience>2</iExperience>
 			<Flavors>
 				<Flavor>
@@ -16071,6 +16301,14 @@
 				<iCommerce>10</iCommerce>
 				<iCommerce>10</iCommerce>
 			</CommerceModifiers>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<iSpecialistClassCount>1</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
+			<GreatPeopleUnitClass>UNITCLASS_PROPHET</GreatPeopleUnitClass>
+			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_CULTURE</FlavorType>
@@ -16410,6 +16648,8 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MAGE_GUILD</ArtDefineTag>
 			<PrereqTech>TECH_KNOWLEDGE_OF_THE_ETHER</PrereqTech>
+			<GreatPeopleUnitClass>UNITCLASS_ADVENTURER</GreatPeopleUnitClass>
+			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<ProductionTraits>
 				<ProductionTrait>
 					<ProductionTraitType>TRAIT_ARCANE</ProductionTraitType>
@@ -16454,6 +16694,8 @@
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ALCHEMY_LAB</ArtDefineTag>
 			<PrereqTech>TECH_SORCERY</PrereqTech>
+			<GreatPeopleUnitClass>UNITCLASS_ADVENTURER</GreatPeopleUnitClass>
+			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<iAIWeight>40</iAIWeight>
 			<iCost>150</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -16578,6 +16820,7 @@
 			<Type>BUILDING_MINISTRY_OF_TRUTH</Type>
 			<Description>TXT_KEY_BUILDING_MINISTRY_OF_TRUTH</Description>
 			<Civilopedia>TXT_KEY_BUILDING_MINISTRY_OF_TRUTH_PEDIA</Civilopedia>
+			<Help>TXT_KEY_BUILDING_SLAVE_MARKET_HELP</Help>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_GOVERNORS_MANOR</ArtDefineTag>
 			<PrereqTrait>TRAIT_DOMINANT2</PrereqTrait>
@@ -17721,10 +17964,27 @@
 			<Type>BUILDING_CRIME_BLOOD_SLAVERY</Type>
 			<Description>TXT_KEY_BUILDING_CRIME_BLOOD_SLAVERY</Description>
 			<Civilopedia>TXT_KEY_BUILDING_CRIME_BLOOD_SLAVERY_PEDIA</Civilopedia>
+			<Help>TXT_KEY_BUILDING_PAGAN_TEMPLE_MEKARA_HELP</Help>
 			<ArtDefineTag>ART_DEF_BUILDING_CRIME</ArtDefineTag>
 			<iPrereqCrime>400</iPrereqCrime>
 			<iPrereqPopulation>10</iPrereqPopulation>
 			<bCrimeEffect>1</bCrimeEffect>
+			<FreeSpecialistClassCounts>
+				<FreeSpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_SLAVE</SpecialistClass>
+					<iFreeSpecialistClassCount>2</iFreeSpecialistClassCount>
+				</FreeSpecialistClassCount>
+			</FreeSpecialistClassCounts>
+			<LocalSpecialistClassYieldChanges>
+				<LocalSpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_SLAVE</SpecialistClass>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>2</iYield>
+						<iYield>0</iYield>
+					</YieldChanges>
+				</LocalSpecialistClassYieldChange>
+			</LocalSpecialistClassYieldChanges>
 			<PerPopBonuses>
 				<PerPopBonus>
 					<fHappy>0.2</fHappy>
@@ -17799,7 +18059,7 @@
 				<PerPopBonus>
 					<fHappy>0.1</fHappy>
 					<fHealth>-0.1</fHealth>
-					<fGPP>-0.1</fGPP>
+					<fGPP>0.1</fGPP>
 				</PerPopBonus>
 			</PerPopBonuses>
 			<SpawnUnitType>UNIT_BOUNTY_HUNTER</SpawnUnitType>
@@ -17811,6 +18071,8 @@
 			<iCost>-1</iCost>
 			<bAutoBuild>1</bAutoBuild>
 			<bMustMaintain>1</bMustMaintain>
+			<GreatPeopleUnitClass>UNITCLASS_ADVENTURER</GreatPeopleUnitClass>
+			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 		</BuildingInfo>	
 		<BuildingInfo>		<!--Crime--><!--Grigory Major bounties                          Grigori UB-->
 			<BuildingClass>BUILDINGCLASS_CRIME_BOUNTY_MAJOR</BuildingClass>
@@ -17819,7 +18081,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_CRIME_BOUNTY_MAJOR_PEDIA</Civilopedia>
 			<Help>TXT_KEY_BUILDING_CRIME_ADVENTURE_PETTY_GANGS_HELP</Help>
 			<ArtDefineTag>ART_DEF_BUILDING_CRIME</ArtDefineTag>
-			<iPrereqCrime>500</iPrereqCrime>
+			<iPrereqCrime>300</iPrereqCrime>
 			<iHappiness>0</iHappiness>
 			<iHealth>0</iHealth>
 			<iPrereqPopulation>8</iPrereqPopulation>
@@ -17834,7 +18096,7 @@
 				<PerPopBonus>
 					<fHappy>0.1</fHappy>
 					<fHealth>-0.1</fHealth>
-					<fGPP>-0.1</fGPP>
+					<fGPP>0.1</fGPP>
 				</PerPopBonus>
 			</PerPopBonuses>
 			<SpawnUnitType>UNIT_SLAVE_HUNTER</SpawnUnitType>
@@ -17846,6 +18108,8 @@
 			<iCost>-1</iCost>
 			<bAutoBuild>1</bAutoBuild>
 			<bMustMaintain>1</bMustMaintain>
+			<GreatPeopleUnitClass>UNITCLASS_ADVENTURER</GreatPeopleUnitClass>
+			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 		</BuildingInfo>
 		<BuildingInfo>		<!--Crime--><!--Grigory grand bounties                            Grigori UB-->
 			<BuildingClass>BUILDINGCLASS_CRIME_BOUNTY_GRAND</BuildingClass>
@@ -17854,7 +18118,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_CRIME_BOUNTY_GRAND_PEDIA</Civilopedia>
 			<Help>TXT_KEY_BUILDING_CRIME_ADVENTURE_PETTY_GANGS_HELP</Help>
 			<ArtDefineTag>ART_DEF_BUILDING_CRIME</ArtDefineTag>
-			<iPrereqCrime>750</iPrereqCrime>
+			<iPrereqCrime>425</iPrereqCrime>
 			<iHappiness>0</iHappiness>
 			<iHealth>0</iHealth>
 			<iPrereqPopulation>3</iPrereqPopulation>
@@ -17869,7 +18133,7 @@
 				<PerPopBonus>
 					<fHappy>0.1</fHappy>
 					<fHealth>-0.1</fHealth>
-					<fGPP>-0.1</fGPP>
+					<fGPP>0.1</fGPP>
 				</PerPopBonus>
 			</PerPopBonuses>
 			<SpawnUnitType>UNIT_AGENT</SpawnUnitType>
@@ -17881,6 +18145,8 @@
 			<iCost>-1</iCost>
 			<bAutoBuild>1</bAutoBuild>
 			<bMustMaintain>1</bMustMaintain>
+			<GreatPeopleUnitClass>UNITCLASS_ADVENTURER</GreatPeopleUnitClass>
+			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 		</BuildingInfo>
 		<BuildingInfo>		<!--Crime--><!--Wandering 										Austrin UB-->
 			<BuildingClass>BUILDINGCLASS_CRIME_ILLEGAL_IMMIGRATION</BuildingClass>
@@ -19873,6 +20139,40 @@
 				</PrereqBuildingAtRange>
 			</PrereqBuildingAtRanges>
 			<iCrime>-2</iCrime>
+			<bAutoBuild>1</bAutoBuild>
+			<bMustMaintain>1</bMustMaintain>
+		</BuildingInfo>	
+		<BuildingInfo>		<!-- Bhall City Production Boost, Wheel of Pain  Bhall UB -->
+			<BuildingClass>BUILDINGCLASS_BHALL_PRODUCTION</BuildingClass>
+			<Type>BUILDING_BHALL_PRODUCTION</Type>
+			<Description>TXT_KEY_BUILDING_BHALL_PRODUCTION</Description>
+			<Civilopedia>TXT_KEY_BUILDING_BHALL_PRODUCTION_PEDIA</Civilopedia>
+			<ArtDefineTag>ART_DEF_BUILDING_WARRENS</ArtDefineTag>
+			<PrereqTech>TECH_WARFARE</PrereqTech>
+			<iPrereqPopulation>1</iPrereqPopulation>
+			<iAIWeight>10</iAIWeight>
+			<iCost>-1</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iConquestProb>0</iConquestProb>
+			<iAsset>4</iAsset>
+			<fVisibilityPriority>1000</fVisibilityPriority>
+			<ObsoleteSafeCommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>1</iCommerce>
+			</ObsoleteSafeCommerceChanges>
+			<ConstructSound>AS2D_BUILD_COURTHOUSE</ConstructSound>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_GOLD</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+			<PerPopBonuses>
+				<PerPopBonus>
+					<fProduction>1</fProduction>
+				</PerPopBonus>
+			</PerPopBonuses>
 			<bAutoBuild>1</bAutoBuild>
 			<bMustMaintain>1</bMustMaintain>
 		</BuildingInfo>

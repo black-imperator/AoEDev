@@ -1,0 +1,19 @@
+[name]
+CommanderFort
+
+[version]
+1.0
+
+[rifeversion]
+386
+
+[author]
+Tikumara
+
+[shortdesc]
+Fort Commanders lose strength/ranged strength and gain commander secondary promotions.
+
+[desc]
+Fort Commanders lose strength/ranged strength and gain commander secondary promotions.
+
+[compatible]

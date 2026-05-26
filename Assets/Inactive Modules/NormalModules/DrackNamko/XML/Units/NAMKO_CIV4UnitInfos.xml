@@ -17,7 +17,12 @@
 			<Strategy>TXT_KEY_UNIT_NEPHRAKIS_MILITARY_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<PrereqTech>TECH_EDUCATION</PrereqTech>
+			<iMagicalPower>100</iMagicalPower>
 			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_RESERVE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
 			</UnitAIs>
 			<iAIWeight>0</iAIWeight>
 			<iCost>80</iCost>
@@ -90,6 +95,10 @@
 			<Strategy>TXT_KEY_UNIT_MYRMIPHAGE_MILITARY_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ATTACK</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
 			</UnitAIs>
 			<iAIWeight>0</iAIWeight>
 			<PrereqTech>TECH_DIVINE_ESSENCE</PrereqTech>
@@ -180,7 +189,7 @@
 			</UnitMeshGroups>
 			<FreePromotions>
 				<FreePromotion>
-					<PromotionType>PROMOTION_SECONDARY_DISCIPLE</PromotionType>
+					<PromotionType>PROMOTION_SECONDARY_ARCHER</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 			</FreePromotions>
@@ -360,6 +369,7 @@
 			<Combat>UNITCOMBAT_ROGUE</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<iExtraPerception>2</iExtraPerception>
+			<iInvisibleLevel>2</iInvisibleLevel>
 			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_AMENTHIAN_NAME</Description>
 			<Civilopedia>TXT_KEY_UNIT_AMENTHIAN_PEDIA</Civilopedia>
@@ -438,6 +448,7 @@
 			<Civilopedia>TXT_KEY_UNIT_ANUBILA_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_ANUBILA_MILITARY_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
+			<iMagicalPower>350</iMagicalPower>
 			<bMilitaryHappiness>1</bMilitaryHappiness>
 			<bMilitaryProduction>1</bMilitaryProduction>
 			<bPillage>1</bPillage>
@@ -578,10 +589,6 @@
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 			<FreePromotions>
-				<FreePromotion>
-					<PromotionType>PROMOTION_SECONDARY_DISCIPLE</PromotionType>
-					<iNumApplied>1</iNumApplied>
-				</FreePromotion>
 				<FreePromotion>
 					<PromotionType>PROMOTION_MARKSMAN</PromotionType>
 					<iNumApplied>1</iNumApplied>

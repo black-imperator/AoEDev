@@ -350,5 +350,35 @@
 			<iWeaponTierMax>3</iWeaponTierMax>
 			<iPowerMult>5</iPowerMult>
 		</UnitInfo>
+		<UnitInfo>        <!-- Disciple of Winter -->            <!-- WHITE HAND -->
+			<Class>UNITCLASS_DISCIPLE_OF_WINTER</Class>
+			<Type>UNIT_DISCIPLE_OF_WINTER</Type>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_PASSIONLESS</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+		</UnitInfo>
+		<UnitInfo>        <!-- Priest of Winter -->
+			<Class>UNITCLASS_PRIEST_OF_WINTER</Class>
+			<Type>UNIT_PRIEST_OF_WINTER</Type>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_PASSIONLESS</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+		</UnitInfo>
+		<UnitInfo>        <!-- High Priest of Winter -->
+			<Class>UNITCLASS_HIGH_PRIEST_OF_WINTER</Class>
+			<Type>UNIT_HIGH_PRIEST_OF_WINTER</Type>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_PASSIONLESS</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+		</UnitInfo>
 	</UnitInfos>
 </Civ4UnitInfos>

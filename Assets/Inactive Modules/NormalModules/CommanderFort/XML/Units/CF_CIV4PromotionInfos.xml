@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!--
+	Rise from Erebus 1.30
+	Lizard Art Fix 1.3
+	milaga@gmail.com
+-->
+<Civ4PromotionInfos xmlns="x-schema:CF_CIV4UnitSchema.xml">
+	<PromotionInfos>
+		<PromotionInfo>		<!-- Influence -->
+			<Type>PROMOTION_INFLUENCE</Type>
+			<Description>TXT_KEY_PROMOTION_INFLUENCE</Description>
+			<Help>TXT_KEY_PROMOTION_INFLUENCE_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<iExtraSupport>0</iExtraSupport>
+			<fFreeXPCap>50</fFreeXPCap>
+			<iLeashRange>0</iLeashRange>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<PromotionExcludes>
+				<Promotion>PROMOTION_MOBILITY1</Promotion>
+				<Promotion>PROMOTION_MOBILITY2</Promotion>
+				<Promotion>PROMOTION_ENRAGED</Promotion>
+				<Promotion>PROMOTION_CHANNELING2</Promotion>
+				<Promotion>PROMOTION_CHANNELING3</Promotion>
+				<Promotion>PROMOTION_DIVINE</Promotion>
+				<Promotion>PROMOTION_DIVINE2</Promotion>
+			</PromotionExcludes>
+			<PromotionOverwrites>
+				<Promotion>PROMOTION_MOBILITY1</Promotion>
+				<Promotion>PROMOTION_MOBILITY2</Promotion>
+				<Promotion>PROMOTION_ENRAGED</Promotion>
+				<Promotion>PROMOTION_CHANNELING2</Promotion>
+				<Promotion>PROMOTION_CHANNELING3</Promotion>
+				<Promotion>PROMOTION_DIVINE</Promotion>
+				<Promotion>PROMOTION_DIVINE2</Promotion>
+			</PromotionOverwrites>
+			<iCollateralDamageChange>-100</iCollateralDamageChange>
+			
+			<Button>Art/Civs/Other/FortCommander/Influence.dds</Button>
+			<bImmuneToCapture>1</bImmuneToCapture>
+			
+			<iBetterDefenderThanPercent>-80</iBetterDefenderThanPercent>
+			<iExtraCombatStr>-3</iExtraCombatStr>
+			<iExtraCombatDefense>-3</iExtraCombatDefense>
+			<iAirCombat>-20</iAirCombat>
+			<SecondaryUnitCombats>
+				<SecondaryUnitCombat>UNITCOMBAT_COMMANDER</SecondaryUnitCombat>
+			</SecondaryUnitCombats>
+			<iCommandLimit>3</iCommandLimit>
+			<iCommandRange>1</iCommandRange>
+			<iMinLevel>-1</iMinLevel>
+			<iFreeXPPerTurn>0.25</iFreeXPPerTurn>
+			<bForceOverwrite>1</bForceOverwrite>
+		</PromotionInfo>
+	</PromotionInfos>
+</Civ4PromotionInfos>

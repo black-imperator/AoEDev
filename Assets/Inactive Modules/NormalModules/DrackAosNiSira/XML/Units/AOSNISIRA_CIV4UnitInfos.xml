@@ -98,10 +98,10 @@
 				</UnitAI>
 			</UnitAIs>
 			<iAIWeight>0</iAIWeight>
-			<iCost>200</iCost>
+			<iCost>240</iCost>
 			<iMoves>2</iMoves>
 			<iCombat>6</iCombat>
-			<iCombatDefense>3</iCombatDefense>
+			<iCombatDefense>2</iCombatDefense>
 			<iFirstStrikes>2</iFirstStrikes>
 			<PrereqTech>TECH_FERAL_BOND</PrereqTech>
 			<TechTypes>
@@ -132,6 +132,10 @@
 				</FreePromotion>
 				<FreePromotion>
 					<PromotionType>PROMOTION_SECONDARY_MELEE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_CRAZED</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 			</FreePromotions>
@@ -267,7 +271,18 @@
 					<PromotionType>PROMOTION_SECONDARY_DEFENSIVE_MELEE</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_PATROL1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_PATROL2</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
 			</FreePromotions>
+			<AllowPromotions>
+				<Promotion>PROMOTION_PATROL3</Promotion>
+			</AllowPromotions>
 			<iTier>2</iTier>
 			<iWeaponTierMax>0</iWeaponTierMax>
 		</UnitInfo>

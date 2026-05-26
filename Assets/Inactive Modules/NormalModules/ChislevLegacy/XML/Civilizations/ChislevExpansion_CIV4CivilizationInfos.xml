@@ -65,34 +65,6 @@
 					<BuildingType>BUILDING_TRIBAL_WATCHPOST</BuildingType>
 				</Building>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_LIBRARY</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_SHIPYARD</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_NATIONAL_EPIC</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_GREAT_LIBRARY</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_INFIRMARY</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_MAGE_GUILD</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_CATACOMB_LIBRALUS</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
-				</Building>
-				<Building>
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 					<BuildingType>BUILDING_PALACE_CHISLEV</BuildingType>
 				</Building>
@@ -105,56 +77,12 @@
 					<BuildingType>BUILDING_TRIBAL_SHRINE</BuildingType>
 				</Building>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_TOTEM_OF_OLD_ENEMY</BuildingClassType>
-					<BuildingType>BUILDING_TOTEM_OF_OLD_ENEMY</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_COUNCIL_OF_THE_WARCHIEF</BuildingClassType>
-					<BuildingType>BUILDING_COUNCIL_OF_THE_WARCHIEF</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_COUNCIL_OF_THE_SHAMAN</BuildingClassType>
-					<BuildingType>BUILDING_COUNCIL_OF_THE_SHAMAN</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_WARCHIEF_HARBOR</BuildingClassType>
-					<BuildingType>BUILDING_WARCHIEF_HARBOR</BuildingType>
-				</Building>
-				<Building>
 					<BuildingClassType>BUILDINGCLASS_WARCHIEF_SECURITY_COUNCIL</BuildingClassType>
 					<BuildingType>BUILDING_WARCHIEF_SECURITY_COUNCIL</BuildingType>
 				</Building>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_FORBIDDEN_PALACE</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_WINTER_PALACE</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
-				</Building>
-				<Building>
 					<BuildingClassType>BUILDINGCLASS_ARTISANS_WORKSHOP</BuildingClassType>
 					<BuildingType>BUILDING_TOTEM_WORKSHOP</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_EAGLE</BuildingClassType>
-					<BuildingType>BUILDING_TOTEM_OF_THE_EAGLE</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_COYOTE</BuildingClassType>
-					<BuildingType>BUILDING_TOTEM_OF_THE_COYOTE</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_BEAR</BuildingClassType>
-					<BuildingType>BUILDING_TOTEM_OF_THE_BEAR</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_SERPENT</BuildingClassType>
-					<BuildingType>BUILDING_TOTEM_OF_THE_SERPENT</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_TORTOISE</BuildingClassType>
-					<BuildingType>BUILDING_TOTEM_OF_THE_TORTOISE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_EARTH</BuildingClassType>
@@ -246,75 +174,7 @@
 					<UnitClassType>UNITCLASS_MENAWA</UnitClassType>
 					<UnitType>UNIT_MENAWA</UnitType>
 				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_ADEPT</UnitClassType>
-					<UnitType>UNIT_TOTEMIST</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_HORSE_ARCHER</UnitClassType>
-					<UnitType>UNIT_MOUNTED_PLAINS_HUNTER</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_AXEMAN</UnitClassType>
-					<UnitType>UNIT_TOMAHAWK_THROWER</UnitType>
-				</Unit>
 			</Units>
-			<FreeUnitClasses>
-				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
-					<iFreeUnits>1</iFreeUnits>
-				</FreeUnitClass>
-				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_WARRIOR</UnitClassType>
-					<iFreeUnits>1</iFreeUnits>
-				</FreeUnitClass>
-				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_SCOUT</UnitClassType>
-					<iFreeUnits>1</iFreeUnits>
-				</FreeUnitClass>
-			</FreeUnitClasses>
-			<FreeBuildingClasses>
-				<FreeBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-					<bFreeBuildingClass>1</bFreeBuildingClass>
-				</FreeBuildingClass>
-			</FreeBuildingClasses>
-			<FreeTechs>
-				<FreeTech>
-					<TechType>TECH_ANCIENT_CHANTS</TechType>
-					<bFreeTech>1</bFreeTech>
-				</FreeTech>
-			</FreeTechs>
-			<DisableTechs>
-			</DisableTechs>
-			<InitialCivics>
-				<CivicType>CIVIC_DESPOTISM</CivicType>
-				<CivicType>CIVIC_NATIONHOOD</CivicType>
-				<CivicType>CIVIC_TRIBALISM</CivicType>
-				<CivicType>CIVIC_DECENTRALIZATION</CivicType>
-				<CivicType>CIVIC_NO_MEMBERSHIP</CivicType>
-			</InitialCivics>
-			<AnarchyCivics>
-				<CivicType>CIVIC_DESPOTISM</CivicType>
-				<CivicType>CIVIC_NATIONHOOD</CivicType>
-				<CivicType>CIVIC_TRIBALISM</CivicType>
-				<CivicType>CIVIC_DECENTRALIZATION</CivicType>
-				<CivicType>CIVIC_NO_MEMBERSHIP</CivicType>
-			</AnarchyCivics>
-			<Leaders>
-				<Leader>
-					<LeaderName>LEADER_CHISLEV</LeaderName>
-					<bLeaderAvailability>1</bLeaderAvailability>
-				</Leader>
-				<Leader>
-					<LeaderName>LEADER_NATANE</LeaderName>
-					<bLeaderAvailability>1</bLeaderAvailability>
-				</Leader>
-				<Leader>
-					<LeaderName>LEADER_THE_COUNCIL</LeaderName>
-					<bLeaderAvailability>1</bLeaderAvailability>
-				</Leader>
-			</Leaders>
 		<SecondaryLeaders>
 			<SecondaryLeader>
 					<LeaderName>LEADER_SHIMASANI</LeaderName>
@@ -337,15 +197,9 @@
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</SecondaryLeader>
 		</SecondaryLeaders>
-			<DerivativeCiv>NONE</DerivativeCiv>
 			<CivilizationSelectionSound>AS3D_NATIVE_AMERICA_SELECT</CivilizationSelectionSound>
 			<CivilizationActionSound>AS3D_NATIVE_AMERICA_ORDER</CivilizationActionSound>
-			<bGraphicalOnly>0</bGraphicalOnly>
-			<DefaultRace>NONE</DefaultRace>
 			<Hero>UNIT_MESKWAKI</Hero>
-			<MaintainFeatures>
-			</MaintainFeatures>
-			<Image>Art/Civs/Pedia/Civilizations/Chislev.dds</Image>
 		</CivilizationInfo>
 	</CivilizationInfos>
 </Civ4CivilizationInfos>

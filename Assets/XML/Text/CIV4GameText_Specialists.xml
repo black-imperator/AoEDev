@@ -213,4 +213,347 @@
 		<Italian>Great Commanders can be used to either recruit units, build a Command Post in a city, or be added to another unit to increase its strength and the rate it gains experience points from combat. The recruit ability offers a quick random assortment of units, but the Command Post tends to have a better long term effect as it adds Great Commander points to the city making getting another all the more likely. A commander that is joined with a unit can always be split from the unit later on and used for other purposes, or joined to a different unit.</Italian>
 		<Spanish>Great Commanders can be used to either recruit units, build a Command Post in a city, or be added to another unit to increase its strength and the rate it gains experience points from combat. The recruit ability offers a quick random assortment of units, but the Command Post tends to have a better long term effect as it adds Great Commander points to the city making getting another all the more likely. A commander that is joined with a unit can always be split from the unit later on and used for other purposes, or joined to a different unit.</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_CITIZEN_DTESH</Tag>
+		<English>Undead Thrall</English>
+		<French>Undead Thrall</French>
+		<German>Undead Thrall</German>
+		<Italian>Undead Thrall</Italian>
+		<Spanish>Undead Thrall</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_CITIZEN_DTESH_PEDIA</Tag>
+		<English>The undead masses of the spires do not moan and thrash in the way a reanimated corpse would normally behave.
+
+These automaton husks fulfil their tasks like cogs in a machine, efficient and thoughtless.
+The only sounds to be heard from a great spire city are the soft clicks of bone on metal and the sandblown winds flowing from the rooftops.</English>
+		<French>The undead masses of the spires do not moan and thrash in the way a reanimated corpse would normally behave.
+
+These automaton husks fulfil their tasks like cogs in a machine, efficient and thoughtless.
+The only sounds to be heard from a great spire city are the soft clicks of bone on metal and the sandblown winds flowing from the rooftops.</French>
+		<German>The undead masses of the spires do not moan and thrash in the way a reanimated corpse would normally behave.
+
+These automaton husks fulfil their tasks like cogs in a machine, efficient and thoughtless.
+The only sounds to be heard from a great spire city are the soft clicks of bone on metal and the sandblown winds flowing from the rooftops.</German>
+		<Italian>The undead masses of the spires do not moan and thrash in the way a reanimated corpse would normally behave.
+
+These automaton husks fulfil their tasks like cogs in a machine, efficient and thoughtless.
+The only sounds to be heard from a great spire city are the soft clicks of bone on metal and the sandblown winds flowing from the rooftops.</Italian>
+		<Spanish>The undead masses of the spires do not moan and thrash in the way a reanimated corpse would normally behave.
+
+These automaton husks fulfil their tasks like cogs in a machine, efficient and thoughtless.
+The only sounds to be heard from a great spire city are the soft clicks of bone on metal and the sandblown winds flowing from the rooftops.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_GREENHORN</Tag>
+		<English>Greenhorn</English>
+		<French>Greenhorn</French>
+		<German>Greenhorn</German>
+		<Italian>Greenhorn</Italian>
+		<Spanish>Greenhorn</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_GREENHORN_PEDIA</Tag>
+		<English>The Grigori gain their signature unit, the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] by assigning Greenhorns in their cities, hoping that one of them will rise to become a hero of the people.
+
+Greenhorns are would-be Adventurers, yet to earn their cape but eager to prove themselves with odd jobs, and duking it out with rats in a basement with nothing but a leather shield.</English>
+		<French>The Grigori gain their signature unit, the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] by assigning Greenhorns in their cities, hoping that one of them will rise to become a hero of the people.
+
+Greenhorns are would-be Adventurers, yet to earn their cape but eager to prove themselves with odd jobs, and duking it out with rats in a basement with nothing but a leather shield.</French>
+		<German>The Grigori gain their signature unit, the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] by assigning Greenhorns in their cities, hoping that one of them will rise to become a hero of the people.
+
+Greenhorns are would-be Adventurers, yet to earn their cape but eager to prove themselves with odd jobs, and duking it out with rats in a basement with nothing but a leather shield.</German>
+		<Italian>The Grigori gain their signature unit, the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] by assigning Greenhorns in their cities, hoping that one of them will rise to become a hero of the people.
+
+Greenhorns are would-be Adventurers, yet to earn their cape but eager to prove themselves with odd jobs, and duking it out with rats in a basement with nothing but a leather shield.</Italian>
+		<Spanish>The Grigori gain their signature unit, the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] by assigning Greenhorns in their cities, hoping that one of them will rise to become a hero of the people.
+
+Greenhorns are would-be Adventurers, yet to earn their cape but eager to prove themselves with odd jobs, and duking it out with rats in a basement with nothing but a leather shield.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_GREENHORN_STRATEGY</Tag>
+		<English>The Grigori gain their signature unit, the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] by assigning Greenhorns in their cities, hoping that one of them will rise to become a hero of the people.</English>
+		<French>The Grigori gain their signature unit, the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] by assigning Greenhorns in their cities, hoping that one of them will rise to become a hero of the people.</French>
+		<German>The Grigori gain their signature unit, the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] by assigning Greenhorns in their cities, hoping that one of them will rise to become a hero of the people.</German>
+		<Italian>The Grigori gain their signature unit, the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] by assigning Greenhorns in their cities, hoping that one of them will rise to become a hero of the people.</Italian>
+		<Spanish>The Grigori gain their signature unit, the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] by assigning Greenhorns in their cities, hoping that one of them will rise to become a hero of the people.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_VOLUNTEER</Tag>
+		<English>Volunteer</English>
+		<French>Volunteer</French>
+		<German>Volunteer</German>
+		<Italian>Volunteer</Italian>
+		<Spanish>Volunteer</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_PRIEST_GRIGORI</Tag>
+		<English>Apostate</English>
+		<French>Apostate</French>
+		<German>Apostate</German>
+		<Italian>Apostate</Italian>
+		<Spanish>Apostate</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_GREAT_PRIEST_GRIGORI</Tag>
+		<English>Great Luonnotar</English>
+		<French>Great Luonnotar</French>
+		<German>Great Luonnotar</German>
+		<Italian>Great Luonnotar</Italian>
+		<Spanish>Great Luonnotar</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_PRIEST_GRIGORI_PEDIA</Tag>
+		<English>The Grigori Apostate preaches not of god, but of home.
+Not of Zeal, but of vigilance.
+Not of hate, but of scepticism.
+
+Giving their speeches on turned-over oxcarts, these men goad and guide the flocks of the Grigori to hone their scythes and harden the tips of their pitchforks.
+By their will, the sheep of the fold will carry tools of war to meet the wolves head-on.
+
+This is a time of urgency; no expense can be spared to protect our homes.</English>
+		<French>The Grigori Apostate preaches not of god, but of home.
+Not of Zeal, but of vigilance.
+Not of hate, but of scepticism.
+
+Giving their speeches on turned-over oxcarts, these men goad and guide the flocks of the Grigori to hone their scythes and harden the tips of their pitchforks.
+By their will, the sheep of the fold will carry tools of war to meet the wolves head-on.
+
+This is a time of urgency; no expense can be spared to protect our homes.</French>
+		<German>The Grigori Apostate preaches not of god, but of home.
+Not of Zeal, but of vigilance.
+Not of hate, but of scepticism.
+
+Giving their speeches on turned-over oxcarts, these men goad and guide the flocks of the Grigori to hone their scythes and harden the tips of their pitchforks.
+By their will, the sheep of the fold will carry tools of war to meet the wolves head-on.
+
+This is a time of urgency; no expense can be spared to protect our homes.</German>
+		<Italian>The Grigori Apostate preaches not of god, but of home.
+Not of Zeal, but of vigilance.
+Not of hate, but of scepticism.
+
+Giving their speeches on turned-over oxcarts, these men goad and guide the flocks of the Grigori to hone their scythes and harden the tips of their pitchforks.
+By their will, the sheep of the fold will carry tools of war to meet the wolves head-on.
+
+This is a time of urgency; no expense can be spared to protect our homes.</Italian>
+		<Spanish>The Grigori Apostate preaches not of god, but of home.
+Not of Zeal, but of vigilance.
+Not of hate, but of scepticism.
+
+Giving their speeches on turned-over oxcarts, these men goad and guide the flocks of the Grigori to hone their scythes and harden the tips of their pitchforks.
+By their will, the sheep of the fold will carry tools of war to meet the wolves head-on.
+
+This is a time of urgency; no expense can be spared to protect our homes.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_VOLUNTEER_PEDIA</Tag>
+		<English>The Grigori gain their signature unit, the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] by assigning Greenhorns and Volunteers in their cities, hoping that one of them will rise to become a hero of the people.
+
+The Grigori are a decentralised people, wanderers move from town to town, and subsistence is the norm.
+Performing odd jobs and filling in for others who have wandered off is often the only way to put food on the table. But the Grigori don't mind; it is a small price to pay to be free of the madness of faith outside their home.</English>
+		<French>The Grigori gain their signature unit, the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] by assigning Greenhorns and Volunteers in their cities, hoping that one of them will rise to become a hero of the people.
+
+The Grigori are a decentralised people, wanderers move from town to town, and subsistence is the norm.
+Performing odd jobs and filling in for others who have wandered off is often the only way to put food on the table. But the Grigori don't mind; it is a small price to pay to be free of the madness of faith outside their home.</French>
+		<German>The Grigori gain their signature unit, the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] by assigning Greenhorns and Volunteers in their cities, hoping that one of them will rise to become a hero of the people.
+
+The Grigori are a decentralised people, wanderers move from town to town, and subsistence is the norm.
+Performing odd jobs and filling in for others who have wandered off is often the only way to put food on the table. But the Grigori don't mind; it is a small price to pay to be free of the madness of faith outside their home.</German>
+		<Italian>The Grigori gain their signature unit, the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] by assigning Greenhorns and Volunteers in their cities, hoping that one of them will rise to become a hero of the people.
+
+The Grigori are a decentralised people, wanderers move from town to town, and subsistence is the norm.
+Performing odd jobs and filling in for others who have wandered off is often the only way to put food on the table. But the Grigori don't mind; it is a small price to pay to be free of the madness of faith outside their home.</Italian>
+		<Spanish>The Grigori gain their signature unit, the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] by assigning Greenhorns and Volunteers in their cities, hoping that one of them will rise to become a hero of the people.
+
+The Grigori are a decentralised people, wanderers move from town to town, and subsistence is the norm.
+Performing odd jobs and filling in for others who have wandered off is often the only way to put food on the table. But the Grigori don't mind; it is a small price to pay to be free of the madness of faith outside their home.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_HEALER_MEKARA</Tag>
+		<English>Sister of the Healing Church</English>
+		<French>Sister of the Healing Church</French>
+		<German>Sister of the Healing Church</German>
+		<Italian>Sister of the Healing Church</Italian>
+		<Spanish>Sister of the Healing Church</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_HEALER_MEKARA_PEDIA</Tag>
+		<English>Zaria's hallowed influence has brought a new and blessed order into being: The Healing Church!
+These sisters of the faith offer medical care and support to all citizens of the Mekara Order.*
+
+Some sisters go above and beyond their peers, elevating themselves into great saints who radiate an aura of divinity so strong that sometimes entire towns seem to bend to their will.
+
+Strangely, opponents of the church seem to frequently come down with incurable illnesses, or a severe case of gravity.
+
+
+
+*Members of the slave cast are exempt from citizenship.</English>
+		<French>Zaria's hallowed influence has brought a new and blessed order into being: The Healing Church!
+These sisters of the faith offer medical care and support to all citizens of the Mekara Order.*
+
+Some sisters go above and beyond their peers, elevating themselves into great saints who radiate an aura of divinity so strong that sometimes entire towns seem to bend to their will.
+
+Strangely, opponents of the church seem to frequently come down with incurable illnesses, or a severe case of gravity.
+
+
+
+*Members of the slave cast are exempt from citizenship.</French>
+		<German>Zaria's hallowed influence has brought a new and blessed order into being: The Healing Church!
+These sisters of the faith offer medical care and support to all citizens of the Mekara Order.*
+
+Some sisters go above and beyond their peers, elevating themselves into great saints who radiate an aura of divinity so strong that sometimes entire towns seem to bend to their will.
+
+Strangely, opponents of the church seem to frequently come down with incurable illnesses, or a severe case of gravity.
+
+
+
+*Members of the slave cast are exempt from citizenship.</German>
+		<Italian>Zaria's hallowed influence has brought a new and blessed order into being: The Healing Church!
+These sisters of the faith offer medical care and support to all citizens of the Mekara Order.*
+
+Some sisters go above and beyond their peers, elevating themselves into great saints who radiate an aura of divinity so strong that sometimes entire towns seem to bend to their will.
+
+Strangely, opponents of the church seem to frequently come down with incurable illnesses, or a severe case of gravity.
+
+
+
+*Members of the slave cast are exempt from citizenship.</Italian>
+		<Spanish>Zaria's hallowed influence has brought a new and blessed order into being: The Healing Church!
+These sisters of the faith offer medical care and support to all citizens of the Mekara Order.*
+
+Some sisters go above and beyond their peers, elevating themselves into great saints who radiate an aura of divinity so strong that sometimes entire towns seem to bend to their will.
+
+Strangely, opponents of the church seem to frequently come down with incurable illnesses, or a severe case of gravity.
+
+
+
+*Members of the slave cast are exempt from citizenship.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_GREAT_HEALER_MEKARA</Tag>
+		<English>Great Saint of the Healing Church</English>
+		<French>Great Saint of the Healing Church</French>
+		<German>Great Saint of the Healing Church</German>
+		<Italian>Great Saint of the Healing Church</Italian>
+		<Spanish>Great Saint of the Healing Church</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_GREAT_HEALER_MEKARA_PEDIA</Tag>
+		<English>Zaria's hallowed influence has brought a new and blessed order into being: The Healing Church!
+These sisters of the faith offer medical care and support to all citizens of the Mekara Order.*
+
+Some sisters go above and beyond their peers, elevating themselves into great saints who radiate an aura of divinity so strong that sometimes entire towns seem to bend to their will.
+
+Strangely, opponents of the church seem to frequently come down with incurable illnesses, or a severe case of gravity.
+
+
+
+*Members of the slave cast are exempt from citizenship.</English>
+		<French>Zaria's hallowed influence has brought a new and blessed order into being: The Healing Church!
+These sisters of the faith offer medical care and support to all citizens of the Mekara Order.*
+
+Some sisters go above and beyond their peers, elevating themselves into great saints who radiate an aura of divinity so strong that sometimes entire towns seem to bend to their will.
+
+Strangely, opponents of the church seem to frequently come down with incurable illnesses, or a severe case of gravity.
+
+
+
+*Members of the slave cast are exempt from citizenship.</French>
+		<German>Zaria's hallowed influence has brought a new and blessed order into being: The Healing Church!
+These sisters of the faith offer medical care and support to all citizens of the Mekara Order.*
+
+Some sisters go above and beyond their peers, elevating themselves into great saints who radiate an aura of divinity so strong that sometimes entire towns seem to bend to their will.
+
+Strangely, opponents of the church seem to frequently come down with incurable illnesses, or a severe case of gravity.
+
+
+
+*Members of the slave cast are exempt from citizenship.</German>
+		<Italian>Zaria's hallowed influence has brought a new and blessed order into being: The Healing Church!
+These sisters of the faith offer medical care and support to all citizens of the Mekara Order.*
+
+Some sisters go above and beyond their peers, elevating themselves into great saints who radiate an aura of divinity so strong that sometimes entire towns seem to bend to their will.
+
+Strangely, opponents of the church seem to frequently come down with incurable illnesses, or a severe case of gravity.
+
+
+
+*Members of the slave cast are exempt from citizenship.</Italian>
+		<Spanish>Zaria's hallowed influence has brought a new and blessed order into being: The Healing Church!
+These sisters of the faith offer medical care and support to all citizens of the Mekara Order.*
+
+Some sisters go above and beyond their peers, elevating themselves into great saints who radiate an aura of divinity so strong that sometimes entire towns seem to bend to their will.
+
+Strangely, opponents of the church seem to frequently come down with incurable illnesses, or a severe case of gravity.
+
+
+
+*Members of the slave cast are exempt from citizenship.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_SLAVE_MEKARA</Tag>
+		<English>Test Subject</English>
+		<French>Test Subject</French>
+		<German>Test Subject</German>
+		<Italian>Test Subject</Italian>
+		<Spanish>Test Subject</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALISTS_SLAVE_MEKARA_PEDIA</Tag>
+		<English>The Mekara gain their signature unit, the [LINK=UNIT_ASPIRANT]Aspirant[\LINK], by settling Slaves into their cities as Test Subjects, so that one of them might achieve something notable in their meaningless lives.
+
+"It's all part of the plan, it's all a part of the plan!"
+Hooks bite into flesh.
+"Believe in Iram! Believe in Iram!"
+Hatchet severs digits.
+"FOR THE GOOD OF US ALL! FOR THE GOOD OF US ALL!  FOR THE GOOD OF US ALL!"
+"Test 334 is too loud; remove the tongue." The lead Shaper stated flatly.
+Scalpel pierces flesh.
+Silence.
+"Good. Now, I'm starving. Who brought lunch?"</English>
+		<French>The Mekara gain their signature unit, the [LINK=UNIT_ASPIRANT]Aspirant[\LINK], by settling Slaves into their cities as Test Subjects, so that one of them might achieve something notable in their meaningless lives.
+
+"It's all part of the plan, it's all a part of the plan!"
+Hooks bite into flesh.
+"Believe in Iram! Believe in Iram!"
+Hatchet severs digits.
+"FOR THE GOOD OF US ALL! FOR THE GOOD OF US ALL!  FOR THE GOOD OF US ALL!"
+"Test 334 is too loud; remove the tongue." The lead Shaper stated flatly.
+Scalpel pierces flesh.
+Silence.
+"Good. Now, I'm starving. Who brought lunch?"</French>
+		<German>The Mekara gain their signature unit, the [LINK=UNIT_ASPIRANT]Aspirant[\LINK], by settling Slaves into their cities as Test Subjects, so that one of them might achieve something notable in their meaningless lives.
+
+"It's all part of the plan, it's all a part of the plan!"
+Hooks bite into flesh.
+"Believe in Iram! Believe in Iram!"
+Hatchet severs digits.
+"FOR THE GOOD OF US ALL! FOR THE GOOD OF US ALL!  FOR THE GOOD OF US ALL!"
+"Test 334 is too loud; remove the tongue." The lead Shaper stated flatly.
+Scalpel pierces flesh.
+Silence.
+"Good. Now, I'm starving. Who brought lunch?"</German>
+		<Italian>The Mekara gain their signature unit, the [LINK=UNIT_ASPIRANT]Aspirant[\LINK], by settling Slaves into their cities as Test Subjects, so that one of them might achieve something notable in their meaningless lives.
+
+"It's all part of the plan, it's all a part of the plan!"
+Hooks bite into flesh.
+"Believe in Iram! Believe in Iram!"
+Hatchet severs digits.
+"FOR THE GOOD OF US ALL! FOR THE GOOD OF US ALL!  FOR THE GOOD OF US ALL!"
+"Test 334 is too loud; remove the tongue." The lead Shaper stated flatly.
+Scalpel pierces flesh.
+Silence.
+"Good. Now, I'm starving. Who brought lunch?"</Italian>
+		<Spanish>The Mekara gain their signature unit, the [LINK=UNIT_ASPIRANT]Aspirant[\LINK], by settling Slaves into their cities as Test Subjects, so that one of them might achieve something notable in their meaningless lives.
+
+"It's all part of the plan, it's all a part of the plan!"
+Hooks bite into flesh.
+"Believe in Iram! Believe in Iram!"
+Hatchet severs digits.
+"FOR THE GOOD OF US ALL! FOR THE GOOD OF US ALL!  FOR THE GOOD OF US ALL!"
+"Test 334 is too loud; remove the tongue." The lead Shaper stated flatly.
+Scalpel pierces flesh.
+Silence.
+"Good. Now, I'm starving. Who brought lunch?"</Spanish>
+	</TEXT>
 </Civ4GameText>
