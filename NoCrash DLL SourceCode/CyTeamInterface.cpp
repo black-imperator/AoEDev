@@ -222,6 +222,7 @@ void CyTeamPythonInterface()
 		.def("AI_getAtWarCounter", &CyTeam::AI_getAtWarCounter, "int (TeamTypes)")
 		.def("AI_getAtPeaceCounter", &CyTeam::AI_getAtPeaceCounter, "int (TeamTypes)")
 		.def("AI_getWarSuccess", &CyTeam::AI_getWarSuccess, "int (TeamTypes)")
+		.def("AI_getHasMetCounter", &CyTeam::AI_getHasMetCounter, "int (TeamTypes)")
 /*************************************************************************************************/
 /**	New Tag Defs	(ProjectInfos)			09/12/08								Xienwolf	**/
 /**	New Tag Defs	(TeamInfos)				09/12/08											**/

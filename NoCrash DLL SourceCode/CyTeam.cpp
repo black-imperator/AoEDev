@@ -989,6 +989,11 @@ int CyTeam::AI_getWarSuccess(int /*TeamTypes*/ eIndex) const
 {
 	return m_pTeam ? m_pTeam->AI_getWarSuccess((TeamTypes)eIndex) : -1;
 }
+
+int CyTeam::AI_getHasMetCounter(int /*TeamTypes*/ eTeam) const
+{
+	return m_pTeam ? m_pTeam->AI_getHasMetCounter((TeamTypes)eTeam) : -1;
+}
 /*************************************************************************************************/
 /**	New Tag Defs	(ProjectInfos)			09/12/08								Xienwolf	**/
 /**	New Tag Defs	(TeamInfos)				09/12/08											**/
