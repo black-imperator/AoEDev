@@ -103,7 +103,7 @@
                 <iYield>0</iYield> <!-- Production -->
                 <iYield>1</iYield> <!-- Gold -->
             </RiverPlotYieldChanges>
-            <iCost>120</iCost>
+            <iCost>60</iCost>
             <PrereqTech>TECH_AGRICULTURE</PrereqTech>
             <Flavors>
                 <Flavor>
@@ -153,7 +153,7 @@
                 <iYield>1</iYield>
                 <iYield>0</iYield>
             </SeaPlotYieldChanges>
-            <iCost>120</iCost>
+            <iCost>60</iCost>
             <PrereqTech>TECH_FISHING</PrereqTech>
             <Flavors>
                 <Flavor>
@@ -208,7 +208,7 @@
                     <iSpecialistClassCount>2</iSpecialistClassCount>
                 </SpecialistClassCounts>
             </SpecialistClassCounts>
-            <iCost>120</iCost>
+            <iCost>60</iCost>
             <PrereqTech>TECH_EDUCATION</PrereqTech>
             <Flavors>
                 <Flavor>
@@ -259,7 +259,7 @@
                 </ImprovementFreeSpecialist>
             </ImprovementFreeSpecialists>
 			<FreePromotion>PROMOTION_HARDY1</FreePromotion>
-            <iCost>120</iCost>
+            <iCost>60</iCost>
             <PrereqTech>TECH_MINING</PrereqTech>
             <Flavors>
                 <Flavor>
@@ -301,7 +301,7 @@
             </BuildingExcludes>
             <iTradeRouteModifier>10</iTradeRouteModifier>
             <iTradeRoutes>2</iTradeRoutes>
-            <iCost>120</iCost>
+            <iCost>60</iCost>
             <PrereqTech>TECH_TRADE</PrereqTech>
             <Flavors>
                 <Flavor>
@@ -343,7 +343,7 @@
             </BuildingExcludes>
             <iMilitaryProductionModifier>25</iMilitaryProductionModifier>
             <bOverflowProduction>1</bOverflowProduction>
-            <iCost>120</iCost>
+            <iCost>60</iCost>
             <PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
             <Flavors>
                 <Flavor>
