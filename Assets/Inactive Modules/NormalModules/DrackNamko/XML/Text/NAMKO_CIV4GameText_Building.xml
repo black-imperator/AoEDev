@@ -140,4 +140,8 @@
         <Tag>TXT_KEY_BUILDING_NAMKO_LIGHTHOUSE_PEDIA</Tag>
         <English>TODO</English>
     </TEXT>
+    <TEXT>  
+        <Tag>TXT_KEY_BUILDING_INFIRMARY_NAMKO</Tag>
+        <English>Boneweaver Temple</English>
+    </TEXT>
 </Civ4GameText>

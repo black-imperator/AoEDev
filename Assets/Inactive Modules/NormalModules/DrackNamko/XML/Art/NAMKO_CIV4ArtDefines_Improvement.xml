@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Jason Winokur (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Improvement art path information -->
+<Civ4ArtDefines xmlns="x-schema:NAMKO_CIV4ArtDefinesSchema.xml">
+    <ImprovementArtInfos>
+        <ImprovementArtInfo>		<!-- Boneweaver House -->
+			<Type>ART_DEF_IMPROVEMENT_NAMKO_BONEWEAVER_HOUSE</Type>
+			<bExtraAnimations>1</bExtraAnimations>
+            <fScale>2</fScale>
+            <fInterfaceScale>0.8</fInterfaceScale>
+			<NIF>Art/Structures/Improvements/nomadcamp/nomadcamp.nif</NIF>
+			<KFM/>
+			<Button>Modules\NormalModules\DrackNamko\Art\Buildings\BoneTemple.dds</Button> 
+		</ImprovementArtInfo>
+    </ImprovementArtInfos>
+</Civ4ArtDefines>

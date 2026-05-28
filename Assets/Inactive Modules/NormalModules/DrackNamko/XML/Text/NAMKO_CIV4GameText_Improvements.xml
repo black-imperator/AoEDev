@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Risna -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_NAMKO_BONEWEAVER_HOUSE</Tag>
+        <English>Boneweaver House</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_NAMKO_BONEWEAVER_HOUSE_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+</Civ4GameText>

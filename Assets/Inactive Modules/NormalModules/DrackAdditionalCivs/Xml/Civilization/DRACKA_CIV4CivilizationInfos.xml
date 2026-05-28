@@ -20,7 +20,51 @@
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
-				<City>Neuburg</City>
+				<City>Ealdford</City>
+				<City>Hlithburg</City>
+				<City>Waterham</City>
+				<City>Greatwic</City>
+				<City>Scealdtun</City>
+				<City>Beorgstow</City>
+				<City>Fyrdwick</City>
+				<City>Hwitburg</City>
+				<City>Dunford</City>
+				<City>Eorthham</City>
+				<City>Wudutun</City>
+				<City>Stanwic</City>
+				<City>Hlaftun</City>
+				<City>Grimburg</City>
+				<City>Floodford</City>
+				<City>Hearthtun</City>
+				<City>Waelburg</City>
+				<City>Sceaftstow</City>
+				<City>Brycgtun</City>
+				<City>Hroftun</City>
+				<City>Ealdwic</City>
+				<City>Hludtun</City>
+				<City>Wicburg</City>
+				<City>Greotstow</City>
+				<City>Feldtun</City>
+				<City>Hlithwic</City>
+				<City>Waterburg</City>
+				<City>Scealdford</City>
+				<City>Beorgtun</City>
+				<City>Fyrdstow</City>
+				<City>Hwitford</City>
+				<City>Dunham</City>
+				<City>Eorthwic</City>
+				<City>Wuduburg</City>
+				<City>Stanford</City>
+				<City>Hlafstow</City>
+				<City>Grimtun</City>
+				<City>Floodtun</City>
+				<City>Hearthburg</City>
+				<City>Waelford</City>
+				<City>Sceaftburg</City>
+				<City>Brygstow</City>
+				<City>Hrofburg</City>
+				<City>Ealdham</City>
+				<City>Hludburg</City>
 			</Cities>
 			<Buildings>
 				<Building>
@@ -138,53 +182,53 @@
 			</Buildings>
 			<Units>
 				<Unit>
-                    <UnitClassType>UNITCLASS_DRACKA_KITH_EDITH</UnitClassType>
-                    <UnitType>UNIT_DRACKA_KITH_EDITH</UnitType>
-                </Unit>
+					<UnitClassType>UNITCLASS_DRACKA_KITH_EDITH</UnitClassType>
+					<UnitType>UNIT_DRACKA_KITH_EDITH</UnitType>
+				</Unit>
 				<Unit>
-                    <UnitClassType>UNITCLASS_DRACKA_KITH_ELLA</UnitClassType>
-                    <UnitType>UNIT_DRACKA_KITH_ELLA</UnitType>
-                </Unit>
+					<UnitClassType>UNITCLASS_DRACKA_KITH_ELLA</UnitClassType>
+					<UnitType>UNIT_DRACKA_KITH_ELLA</UnitType>
+				</Unit>
 				<Unit>
-                    <UnitClassType>UNITCLASS_DRACKA_KITH_POGGMAN</UnitClassType>
-                    <UnitType>UNIT_DRACKA_KITH_POGGMAN</UnitType>
-                </Unit>
+					<UnitClassType>UNITCLASS_DRACKA_KITH_POGGMAN</UnitClassType>
+					<UnitType>UNIT_DRACKA_KITH_POGGMAN</UnitType>
+				</Unit>
 				<Unit>
-                    <UnitClassType>UNITCLASS_DRACKA_KITH_TINKSKUTEND</UnitClassType>
-                    <UnitType>UNIT_DRACKA_KITH_TINKSKUTEND</UnitType>
-                </Unit>
+					<UnitClassType>UNITCLASS_DRACKA_KITH_TINKSKUTEND</UnitClassType>
+					<UnitType>UNIT_DRACKA_KITH_TINKSKUTEND</UnitType>
+				</Unit>
 				<Unit>
-                    <UnitClassType>UNITCLASS_DRACKA_KITH_TINKERBRAWLAS</UnitClassType>
-                    <UnitType>UNIT_DRACKA_KITH_TINKERBRAWLAS</UnitType>
-                </Unit>
+					<UnitClassType>UNITCLASS_DRACKA_KITH_TINKERBRAWLAS</UnitClassType>
+					<UnitType>UNIT_DRACKA_KITH_TINKERBRAWLAS</UnitType>
+				</Unit>
 				<Unit>
-                    <UnitClassType>UNITCLASS_PHALANX</UnitClassType>
-                    <UnitType>UNIT_DRACKA_KITH_BRASSKNUCKLAS</UnitType>
-                </Unit>
+					<UnitClassType>UNITCLASS_PHALANX</UnitClassType>
+					<UnitType>UNIT_DRACKA_KITH_BRASSKNUCKLAS</UnitType>
+				</Unit>
 				<Unit>
-                    <UnitClassType>UNITCLASS_PALADIN</UnitClassType>
-                    <UnitType>UNIT_KITH_PALADIN</UnitType>
-                </Unit>
+					<UnitClassType>UNITCLASS_PALADIN</UnitClassType>
+					<UnitType>UNIT_KITH_PALADIN</UnitType>
+				</Unit>
 				<Unit>
-                    <UnitClassType>UNITCLASS_DRUID</UnitClassType>
-                    <UnitType>UNIT_KITH_DRUID</UnitType>
-                </Unit>
+					<UnitClassType>UNITCLASS_DRUID</UnitClassType>
+					<UnitType>UNIT_KITH_DRUID</UnitType>
+				</Unit>
 				<Unit>
-                    <UnitClassType>UNITCLASS_EIDOLON</UnitClassType>
-                    <UnitType>UNIT_KITH_EIDOLON</UnitType>
-                </Unit>
+					<UnitClassType>UNITCLASS_EIDOLON</UnitClassType>
+					<UnitType>UNIT_KITH_EIDOLON</UnitType>
+				</Unit>
 				<Unit>
-                    <UnitClassType>UNITCLASS_IMMORTAL</UnitClassType>
-                    <UnitType>UNIT_KITH_IMMORTAL</UnitType>
-                </Unit>
+					<UnitClassType>UNITCLASS_IMMORTAL</UnitClassType>
+					<UnitType>UNIT_KITH_IMMORTAL</UnitType>
+				</Unit>
 				<Unit>
-                    <UnitClassType>UNITCLASS_CATAPULT</UnitClassType>
-                    <UnitType>UNIT_KITH_CATAPULT</UnitType>
-                </Unit>
+					<UnitClassType>UNITCLASS_CATAPULT</UnitClassType>
+					<UnitType>UNIT_KITH_CATAPULT</UnitType>
+				</Unit>
 				<Unit>
-                    <UnitClassType>UNITCLASS_CANNON</UnitClassType>
-                    <UnitType>UNIT_KITH_CANNON</UnitType>
-                </Unit>
+					<UnitClassType>UNITCLASS_CANNON</UnitClassType>
+					<UnitType>UNIT_KITH_CANNON</UnitType>
+				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -252,11 +296,11 @@
 			</Leaders>
 			<DerivativeCiv>NONE</DerivativeCiv>
 			<CivilizationSelectionSound>AS3D_ROME_SELECT</CivilizationSelectionSound>
-            <CivilizationActionSound>AS3D_ROME_ORDER</CivilizationActionSound>
+			<CivilizationActionSound>AS3D_ROME_ORDER</CivilizationActionSound>
 			<bLimitedSelection>0</bLimitedSelection>
 			<bGraphicalOnly>0</bGraphicalOnly>
-			<CivTrait>TRAIT_DRACKA_KITH</CivTrait> 
-			<Hero>UNIT_DRACKA_KITH_EDITH</Hero> 
+			<CivTrait>TRAIT_DRACKA_KITH</CivTrait>
+			<Hero>UNIT_DRACKA_KITH_EDITH</Hero>
 			<DefaultRace>PROMOTION_GNOME</DefaultRace>
 			<TerrainCultureDistanceChanges>
 				<TerrainCultureDistanceChange>

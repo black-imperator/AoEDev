@@ -135,9 +135,9 @@
 			<ShortDescription>TXT_KEY_TRAIT_SIRA_TRICKERY_SHORT</ShortDescription>
 			<bSelectable>0</bSelectable>
 			<TradeYieldModifiers>
-				<iYield>15</iYield>
-				<iYield>15</iYield>
-				<iYield>-50</iYield>
+				<iYield>10</iYield>
+				<iYield>0</iYield>
+				<iYield>-35</iYield>
 			</TradeYieldModifiers>
         </TraitInfo>
 		<TraitInfo> <!-- Sira Trickery II -->

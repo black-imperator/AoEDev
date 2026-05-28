@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Soren Johnson (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Specialist -->
+<Civ4SpecialistInfos xmlns="x-schema:NAMKO_CIV4GameInfoSchema.xml">
+	<SpecialistInfos>
+        <SpecialistInfo> <!-- Healer Unique for Namko Boneweaver-->
+			<Type>SPECIALIST_NAMKO_BONEWEAVER</Type>
+			<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
+			<Description>TXT_KEY_SPECIALIST_NAMKO_BONEWEAVER</Description>
+			<Civilopedia>TXT_KEY_CONCEPT_SPECIALISTS_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_SPECIALIST_NAMKO_BONEWEAVER_STRATEGY</Strategy>
+			<Texture>Art/Civs/CivSpecialists/Human/Healer.dds</Texture>
+			<bVisible>1</bVisible>
+			<GreatPeopleUnitClass>UNITCLASS_HEALER</GreatPeopleUnitClass>
+			<iGreatPeopleRateChange>3</iGreatPeopleRateChange>
+            <iCityDefense>10</iCityDefense>
+			<Yields>
+				<iYield>0</iYield>
+				<iYield>2</iYield>
+				<iYield>0</iYield>
+			</Yields>
+			<Commerces>
+				<iCommerce>0</iCommerce>
+				<iCommerce>1</iCommerce>
+				<iCommerce>2</iCommerce>
+			</Commerces>
+			<Button>Art/Civs/CivSpecialists/Undead/Healer.dds</Button>
+		</SpecialistInfo>
+        <SpecialistInfo> <!-- Great Healer Unique for Namko Boneweaver-->
+			<Type>SPECIALIST_GREAT_NAMKO_BONEWEAVER</Type>
+			<SpecialistClass>SPECIALISTCLASS_GREAT_HEALER</SpecialistClass>
+			<Description>TXT_KEY_UNIT_HIGH_NAMKO_BONEWEAVER</Description>
+			<Civilopedia>TXT_KEY_UNIT_HIGH_NAMKO_BONEWEAVER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_SPECIALIST_GREAT_HEALER_STRATEGY</Strategy>
+			<Texture>Art/Civs/CivSpecialists/Undead/GreatHealer.dds</Texture>
+			<GreatPeopleUnitClass>UNITCLASS_HEALER</GreatPeopleUnitClass>
+			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
+            <iCityDefense>25</iCityDefense>
+			<Yields>
+				<iYield>0</iYield>
+				<iYield>4</iYield>
+				<iYield>0</iYield>
+			</Yields>
+			<Commerces>
+				<iCommerce>0</iCommerce>
+				<iCommerce>2</iCommerce>
+				<iCommerce>4</iCommerce>
+			</Commerces>
+			<Button>Art/Civs/CivSpecialists/Undead/GreatHealer.dds</Button>
+		</SpecialistInfo>
+    </SpecialistInfos>
+</Civ4SpecialistInfos>

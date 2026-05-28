@@ -438,7 +438,7 @@
 			<iSomniumAggressiveness>30</iSomniumAggressiveness>
 			<Alignment>ALIGNMENT_GOOD</Alignment>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
-			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
+			<iEthicalAlignmentModifier>600</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_CATACOMB_LIBRALUS</FavoriteWonder>
 		</LeaderHeadInfo>
 		<LeaderHeadInfo>	<!-- Ciara -->				<!-- Aos Ni Sira -->
@@ -1312,7 +1312,7 @@
 			<iSomniumAggressiveness>30</iSomniumAggressiveness>
 			<Alignment>ALIGNMENT_NEUTRAL</Alignment>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
-			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
+			<iEthicalAlignmentModifier>660</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_CITY_OF_A_THOUSAND_SLUMS</FavoriteWonder>
 		</LeaderHeadInfo>
 		<LeaderHeadInfo>	<!-- Oonagh -->				<!-- Aos Ni Sira -->
@@ -1747,7 +1747,7 @@
 			<iSomniumAggressiveness>30</iSomniumAggressiveness>
 			<Alignment>ALIGNMENT_NEUTRAL</Alignment>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_CHAOTIC</EthicalAlignment>
-			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
+			<iEthicalAlignmentModifier>-600</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_PACT_OF_THE_NILHORN</FavoriteWonder>
 		</LeaderHeadInfo>
 		<LeaderHeadInfo>	<!-- Neifara -->			<!-- Aos Ni Sira -->
@@ -2261,6 +2261,7 @@
 			<bFemale>1</bFemale>
 			<Alignment>ALIGNMENT_GOOD</Alignment>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
+			<iEthicalAlignmentModifier>500</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_MINES_OF_GALDUR</FavoriteWonder>
 			<iWonderConstructRand>10</iWonderConstructRand>
 			<iBaseAttitude>0</iBaseAttitude>
@@ -2634,6 +2635,7 @@
 			<bFemale>1</bFemale>
 			<Alignment>ALIGNMENT_NEUTRAL</Alignment>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_NEUTRAL</EthicalAlignment>
+			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_CATACOMB_LIBRALUS</FavoriteWonder>
 			<iWonderConstructRand>10</iWonderConstructRand>
 			<iBaseAttitude>0</iBaseAttitude>
@@ -3011,6 +3013,7 @@
 			<bFemale>1</bFemale>
 			<Alignment>ALIGNMENT_GOOD</Alignment>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
+			<iEthicalAlignmentModifier>600</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_MINES_OF_GALDUR</FavoriteWonder>
 			<iWonderConstructRand>10</iWonderConstructRand>
 			<iBaseAttitude>0</iBaseAttitude>
@@ -3317,10 +3320,14 @@
 			<Description>TXT_KEY_LEADER_FAIRY_NOTTO_AL_RAKIRI</Description>
 			<Civilopedia>TXT_KEY_LEADER_FAIRY_NOTTO_AL_RAKIRI_PEDIA</Civilopedia>
 			<ArtDefineTag>ART_DEF_LEADER_FAIRY_NOTTO_AL_RAKIRI</ArtDefineTag>
-			<LeaderClass>LEADERCLASS_FAIRY_IMPORTANT</LeaderClass>
+			<LeaderClass>LEADERCLASS_FAIRY_HISTORICAL</LeaderClass>
 			<Traits>
 				<Trait>
 					<TraitType>TRAIT_FINANCIAL</TraitType>
+					<bTrait>1</bTrait>
+				</Trait>
+				<Trait>
+					<TraitType>TRAIT_ORGANIZED</TraitType>
 					<bTrait>1</bTrait>
 				</Trait>
 				<Trait>
@@ -3384,6 +3391,7 @@
 			<bFemale>0</bFemale>
 			<Alignment>ALIGNMENT_GOOD</Alignment>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
+			<iEthicalAlignmentModifier>400</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_CAMINUS_AUREUS</FavoriteWonder>
 			<iWonderConstructRand>10</iWonderConstructRand>
 			<iBaseAttitude>0</iBaseAttitude>
@@ -3757,6 +3765,7 @@
 			<bFemale>1</bFemale>
 			<Alignment>ALIGNMENT_EVIL</Alignment>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_NEUTRAL</EthicalAlignment>
+			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_MINES_OF_GALDUR</FavoriteWonder>
 			<iWonderConstructRand>0</iWonderConstructRand>
 			<iBaseAttitude>-2</iBaseAttitude>
@@ -4134,6 +4143,7 @@
 			<bFemale>1</bFemale>
 			<Alignment>ALIGNMENT_NEUTRAL</Alignment>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_NEUTRAL</EthicalAlignment>
+			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_MINES_OF_GALDUR</FavoriteWonder>
 			<iMaxWarRand>75</iMaxWarRand>
 			<iMaxWarNearbyPowerRatio>100</iMaxWarNearbyPowerRatio>
@@ -4500,6 +4510,7 @@
 			<bFemale>1</bFemale>
 			<Alignment>ALIGNMENT_GOOD</Alignment>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_NEUTRAL</EthicalAlignment>
+			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_MINES_OF_GALDUR</FavoriteWonder>
 			<iWonderConstructRand>0</iWonderConstructRand>
 			<iBaseAttitude>-2</iBaseAttitude>
@@ -4877,6 +4888,7 @@
 			<bFemale>1</bFemale>
 			<Alignment>ALIGNMENT_EVIL</Alignment>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_CHAOTIC</EthicalAlignment>
+			<iEthicalAlignmentModifier>-500</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_MINES_OF_GALDUR</FavoriteWonder>
 			<iWonderConstructRand>0</iWonderConstructRand>
 			<iBaseAttitude>-2</iBaseAttitude>
@@ -5258,6 +5270,7 @@
 			<bFemale>1</bFemale>
 			<Alignment>ALIGNMENT_NEUTRAL</Alignment>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_CHAOTIC</EthicalAlignment>
+			<iEthicalAlignmentModifier>-500</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_MINES_OF_GALDUR</FavoriteWonder>
 			<iWonderConstructRand>0</iWonderConstructRand>
 			<iBaseAttitude>-2</iBaseAttitude>
@@ -5639,6 +5652,7 @@
 			<bFemale>1</bFemale>
 			<Alignment>ALIGNMENT_EVIL</Alignment>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_CHAOTIC</EthicalAlignment>
+			<iEthicalAlignmentModifier>-500</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_MINES_OF_GALDUR</FavoriteWonder>
 			<iWonderConstructRand>0</iWonderConstructRand>
 			<iBaseAttitude>-2</iBaseAttitude>
@@ -6016,6 +6030,7 @@
 			<bFemale>1</bFemale>
 			<Alignment>ALIGNMENT_NEUTRAL</Alignment>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
+			<iEthicalAlignmentModifier>500</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_MINES_OF_GALDUR</FavoriteWonder>
 			<iMaxWarRand>75</iMaxWarRand>
 			<iMaxWarNearbyPowerRatio>100</iMaxWarNearbyPowerRatio>
@@ -6382,6 +6397,7 @@
 			<bFemale>1</bFemale>
 			<Alignment>ALIGNMENT_EVIL</Alignment>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_NEUTRAL</EthicalAlignment>
+			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_MINES_OF_GALDUR</FavoriteWonder>
 			<iWonderConstructRand>0</iWonderConstructRand>
 			<iBaseAttitude>-2</iBaseAttitude>
@@ -6755,6 +6771,7 @@
 			<bFemale>1</bFemale>
 			<Alignment>ALIGNMENT_GOOD</Alignment>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_NEUTRAL</EthicalAlignment>
+			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_MINES_OF_GALDUR</FavoriteWonder>
 			<iMaxWarRand>200</iMaxWarRand>
 			<iMaxWarNearbyPowerRatio>70</iMaxWarNearbyPowerRatio>
@@ -7117,6 +7134,7 @@
 			<bFemale>1</bFemale>
 			<Alignment>ALIGNMENT_GOOD</Alignment>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_NEUTRAL</EthicalAlignment>
+			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_MINES_OF_GALDUR</FavoriteWonder>
 			<iMaxWarRand>200</iMaxWarRand>
 			<iMaxWarNearbyPowerRatio>70</iMaxWarNearbyPowerRatio>

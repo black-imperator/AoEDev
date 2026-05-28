@@ -93,6 +93,8 @@ def getLocalHeroUnitType(pPlayer):
 		git("CIVILIZATION_DREAM_AIFONS"): git("UNIT_UNDINE"),
 		# Dao Module
 		git("CIVILIZATION_DAO"): git("UNIT_NINJA"),
+		# Drack Addional Civs Module
+		git("CIVILIZATION_DRACKA_EADIG_KITH"): git("UNIT_CHAMPION"),
 	}
 
 	# Return the unit type if the civilization is in the map, otherwise return a default unit
@@ -133,9 +135,13 @@ def onProjectBuilt(self, argsList):
 	promotionLocalHero = git("PROMOTION_LOCAL_HERO")
 	pUnit.setHasPromotion(promotionLocalHero, True)
  
+	# Give Extra Promotions fitting for Civ
+	iCiv = pPlayer.getCivilizationType()
+	if iCiv == git("CIVILIZATION_DRACKA_EADIG_KITH"):
+		pUnit.setHasPromotion(git("PROMOTION_KITH_EALDOR"), True)
+ 
 	# Customize the unit's name
 	cityName = pCity.getName()
-	unitTypeName = gc.getUnitInfo(iUnitType).getDescription()
 	newUnitName = "Hero of %s" % (cityName)
 	pUnit.setName(newUnitName)
  

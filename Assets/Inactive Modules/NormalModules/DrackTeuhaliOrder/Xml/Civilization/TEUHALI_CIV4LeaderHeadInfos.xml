@@ -14,6 +14,7 @@
 			<LeaderClass>LEADERCLASS_TEUHALI_HISTORICAL</LeaderClass>
 			<Alignment>ALIGNMENT_GOOD</Alignment>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
+			<iEthicalAlignmentModifier>500</iEthicalAlignmentModifier>
 			<bFemale>1</bFemale>
 			<Traits>
 				<Trait> 
@@ -446,7 +447,6 @@
 				 </DiploMusicWarEra>
 			</DiplomacyMusicWar>
 			<iSomniumAggressiveness>30</iSomniumAggressiveness>
-			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_HALL_OF_KINGS</FavoriteWonder>
 		</LeaderHeadInfo>
 		<LeaderHeadInfo>		<!-- Sigismund -->
@@ -457,6 +457,7 @@
 			<LeaderClass>LEADERCLASS_TEUHALI_HISTORICAL</LeaderClass>
 			<Alignment>ALIGNMENT_NEUTRAL</Alignment>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
+			<iEthicalAlignmentModifier>500</iEthicalAlignmentModifier>
 			<bFemale>0</bFemale>
 			<Traits>
 				<Trait> 
@@ -889,7 +890,6 @@
 				 </DiploMusicWarEra>
 			</DiplomacyMusicWar>
 			<iSomniumAggressiveness>30</iSomniumAggressiveness>
-			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_HALL_OF_KINGS</FavoriteWonder>
 		</LeaderHeadInfo>
 		<LeaderHeadInfo>		<!-- Anna von Neuburg -->
@@ -900,6 +900,7 @@
 			<LeaderClass>LEADERCLASS_TEUHALI_IMPORTANT</LeaderClass>
 			<Alignment>ALIGNMENT_NEUTRAL</Alignment>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
+			<iEthicalAlignmentModifier>300</iEthicalAlignmentModifier>
 			<bFemale>1</bFemale>
 			<Traits>
 				<Trait> 
@@ -1328,7 +1329,6 @@
 				 </DiploMusicWarEra>
 			</DiplomacyMusicWar>
 			<iSomniumAggressiveness>30</iSomniumAggressiveness>
-			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_HALL_OF_KINGS</FavoriteWonder>
 		</LeaderHeadInfo>
 		<LeaderHeadInfo>		<!-- Sabrina -->
@@ -1339,6 +1339,7 @@
 			<LeaderClass>LEADERCLASS_TEUHALI_IMPORTANT</LeaderClass>
 			<Alignment>ALIGNMENT_NEUTRAL</Alignment>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
+			<iEthicalAlignmentModifier>400</iEthicalAlignmentModifier>
 			<bFemale>1</bFemale>
 			<Traits>
 				<Trait> 
@@ -1767,7 +1768,6 @@
 				 </DiploMusicWarEra>
 			</DiplomacyMusicWar>
 			<iSomniumAggressiveness>30</iSomniumAggressiveness>
-			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_HALL_OF_KINGS</FavoriteWonder>
 		</LeaderHeadInfo>
 		<LeaderHeadInfo>		<!-- Maria Amara Zucker -->
@@ -1778,6 +1778,7 @@
 			<LeaderClass>LEADERCLASS_TEUHALI_IMPORTANT</LeaderClass>
 			<Alignment>ALIGNMENT_EVIL</Alignment>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
+			<iEthicalAlignmentModifier>350</iEthicalAlignmentModifier>
 			<bFemale>1</bFemale>
 			<Traits>
 				<Trait> 
@@ -2206,7 +2207,6 @@
 				 </DiploMusicWarEra>
 			</DiplomacyMusicWar>
 			<iSomniumAggressiveness>30</iSomniumAggressiveness>
-			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_HALL_OF_KINGS</FavoriteWonder>
 		</LeaderHeadInfo>
 		<LeaderHeadInfo>		<!-- Brunhilde von Mitte -->
@@ -2217,6 +2217,7 @@
 			<LeaderClass>LEADERCLASS_TEUHALI_IMPORTANT</LeaderClass>
 			<Alignment>ALIGNMENT_EVIL</Alignment>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
+			<iEthicalAlignmentModifier>300</iEthicalAlignmentModifier>
 			<bFemale>1</bFemale>
 			<Traits>
 				<Trait> 
@@ -2645,7 +2646,6 @@
 				 </DiploMusicWarEra>
 			</DiplomacyMusicWar>
 			<iSomniumAggressiveness>30</iSomniumAggressiveness>
-			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_HALL_OF_KINGS</FavoriteWonder>
 		</LeaderHeadInfo>
 	</LeaderHeadInfos>

@@ -23,6 +23,64 @@ import os
 import CvPath # path to current assets
 import inspect
 
+def getCitiesOfPlayer(pPlayer):
+	(pCity, iter) = pPlayer.firstCity(False)
+	cities = []
+	
+	while(pCity):
+		cities.append(pCity)
+		# Set Next City
+		(pCity, iter) = pPlayer.nextCity(iter, False)
+  
+	return cities
+
+def onMisrakConvertAllSoulsProjectBuilt(self, argsList):
+	'Project Completed'
+	pCity, iProjectType = argsList
+	gc = CyGlobalContext()
+	git = gc.getInfoTypeForString
+	getPlayer = gc.getPlayer
+	iPlayer = pCity.getOwner()
+	pPlayer = getPlayer(iPlayer)
+ 
+	# Define the ritual-to-SoulCost mapping
+	ritualCostMap = {
+		git("PROJECT_FAIRY_CONVERT_SOULS1"): {"soulCost": 10, "minSize": 0, "maxSize": 4},
+		git("PROJECT_FAIRY_CONVERT_SOULS2"): {"soulCost": 25, "minSize": 5, "maxSize": 15},
+		git("PROJECT_FAIRY_CONVERT_SOULS3"): {"soulCost": 100, "minSize": 16, "maxSize": 100},
+	}
+ 
+	cities = getCitiesOfPlayer(pPlayer)
+	# Sort cities by population (ascending)
+	cities.sort(key=lambda city: city.getPopulation())
+ 
+	# Process each city starting from lowest population
+	for city in cities:
+		currentPopulation = city.getPopulation()
+		currentSoulsOfPlayer = pPlayer.getCivCounter()
+
+		# Find the appropriate ritual info based on population
+		ritualInfo = None
+		for info in ritualCostMap.values():
+			if info["minSize"] <= currentPopulation <= info["maxSize"]:
+				ritualInfo = info
+				break
+
+		if ritualInfo is None:
+			continue
+
+		ritualSoulCost = ritualInfo["soulCost"]
+		# Check if Player has enough Souls
+		if currentSoulsOfPlayer < ritualSoulCost:
+			break
+
+		# Remove Souls from CivCounter
+		pPlayer.changeCivCounter(-ritualSoulCost)
+
+		# Increase Population of city by 1
+		city.changePopulation(1)
+	
+
 def onMisrakConvertSoulsProjectBuilt(self, argsList):
 	'Project Completed'
 	pCity, iProjectType = argsList
@@ -82,11 +140,16 @@ def onProjectBuilt(self, argsList):
 	projectConvertSouls1 = git("PROJECT_FAIRY_CONVERT_SOULS1")
 	projectConvertSouls2 = git("PROJECT_FAIRY_CONVERT_SOULS2")
 	projectConvertSouls3 = git("PROJECT_FAIRY_CONVERT_SOULS3")
+	projectConvertAllSouls = git("PROJECT_FAIRY_CONVERT_ALL_SOULS")
  
 	projectConvertSouls = [projectConvertSouls1, projectConvertSouls2, projectConvertSouls3]
   
 	if iProjectType in projectConvertSouls:
 		onMisrakConvertSoulsProjectBuilt(self, argsList)
+		return
+
+	if iProjectType == projectConvertAllSouls:
+		onMisrakConvertAllSoulsProjectBuilt(self, argsList)
 		return
   
 	if iProjectType == projectHouseFane:

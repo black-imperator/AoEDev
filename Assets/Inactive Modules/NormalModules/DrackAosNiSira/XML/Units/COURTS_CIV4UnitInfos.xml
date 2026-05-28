@@ -705,7 +705,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<iTier>2</iTier>
-			<iWeaponTierMax>2</iWeaponTierMax>
+			<iWeaponTierMax>1</iWeaponTierMax>
 			<PrereqBuildingClass>BUILDINGCLASS_THIEVES_DEN</PrereqBuildingClass>
 		</UnitInfo>
 		<UnitInfo>        	<!-- Starfae -->
@@ -774,7 +774,7 @@
 			<bNeverObsolete>1</bNeverObsolete>
 			<iCombatDefense>2</iCombatDefense>
 			<iTier>3</iTier>
-			<iWeaponTierMax>3</iWeaponTierMax>
+			<iWeaponTierMax>1</iWeaponTierMax>
 			<PrereqBuildingClass>BUILDINGCLASS_THIEVES_DEN</PrereqBuildingClass>
 			<DamageTypeCombats>
 				<DamageTypeCombat>

@@ -39,6 +39,9 @@ def reqMaterializeCity(caster):
 	if pPlayer.isHuman():
 		if currentSoulsOfPlayer < 50:
 			return False
+	else:
+		if currentSoulsOfPlayer < 25:
+			return False
 
 	if pPlot.isOwned() and pPlot.getOwner() != caster.getOwner():
 		return False
@@ -46,8 +49,21 @@ def reqMaterializeCity(caster):
 	if pPlot.isWater():
 		return False
 
+	# Not allowed on Unique Improvements
 	iImprovement = pPlot.getImprovementType()
 	if iImprovement!=-1 and gc.getImprovementInfo(iImprovement).isUnique():
+		return False
+
+	# Not allowed on Raw Mana
+	bonusClassTypeMana  = git("BONUSCLASS_MANA")
+	bonusClassRawMana 	= git("BONUSCLASS_RAWMANA")
+	iBonus = pPlot.getBonusType(-1)
+	iBonusInfo 	= gc.getBonusInfo(iBonus)
+	if iBonusInfo != -1 and iBonus != -1:
+		iBonusClass = iBonusInfo.getBonusClassType()
+		if iBonusClass == bonusClassTypeMana:
+			return False
+		if iBonusClass == bonusClassRawMana:
 			return False
 
 	iRange = gc.getMIN_CITY_RANGE()
@@ -60,9 +76,10 @@ def reqMaterializeCity(caster):
 
 	if not pPlayer.isHuman():
 		currentTurn = gc.getGame().getGameTurn()
-		maxAllowedCities = currentTurn // 20  # Integer division: 1 city per 20 turns
-		if pPlayer.getNumCities() > maxAllowedCities:
-			return False
+		if currentTurn < 100:
+			maxAllowedCities = currentTurn // 15  # Integer division: 1 city per 15 turns
+			if pPlayer.getNumCities() > maxAllowedCities:
+				return False
 
 	return True
 
@@ -75,6 +92,8 @@ def spellMaterializeCity(caster):
 	# Remove Souls from CivCounter (Only Counts for Human Players)
 	if pPlayer.isHuman():
 		pPlayer.changeCivCounter(-50)
+	else:
+		pPlayer.changeCivCounter(-25)
 
 def reqPlantScrub(caster):
 	pPlot = caster.plot()

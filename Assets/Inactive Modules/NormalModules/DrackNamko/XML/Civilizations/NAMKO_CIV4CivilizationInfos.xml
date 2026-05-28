@@ -90,7 +90,7 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_INFIRMARY</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
+					<BuildingType>BUILDING_INFIRMARY_NAMKO</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_FLETCHER</BuildingClassType>
@@ -183,6 +183,26 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 			</Units>
+			<Specialists>
+				<Specialist>
+					<SpecialistClassType>SPECIALISTCLASS_HEALER</SpecialistClassType>
+					<SpecialistType>SPECIALIST_NAMKO_BONEWEAVER</SpecialistType>
+				</Specialist>
+				<Specialist>
+					<SpecialistClassType>SPECIALISTCLASS_GREAT_HEALER</SpecialistClassType>
+					<SpecialistType>SPECIALIST_GREAT_NAMKO_BONEWEAVER</SpecialistType>
+				</Specialist>
+			</Specialists>
+			<Improvements>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_FARM</ImprovementClassType>
+					<ImprovementType>IMPROVEMENT_NAMKO_BONEWEAVER_HOUSE</ImprovementType>
+				</Improvement>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENT_PASTURE</ImprovementClassType>
+					<ImprovementType>NONE</ImprovementType>
+				</Improvement>
+			</Improvements>
 			<FreeUnitClasses>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>

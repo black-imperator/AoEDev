@@ -144,7 +144,7 @@
 			<PrereqCivilizations>
 				<PrereqCivilization>CIVILIZATION_COURTOFMISRAK</PrereqCivilization>
 			</PrereqCivilizations>
-			<iAIWeight>300</iAIWeight>
+			<iAIWeight>900</iAIWeight>
 		</ProjectInfo>
 		<ProjectInfo>	<!-- Convert Souls (2)-->
 			<Type>PROJECT_FAIRY_CONVERT_SOULS2</Type>
@@ -157,7 +157,7 @@
 			<PrereqCivilizations>
 				<PrereqCivilization>CIVILIZATION_COURTOFMISRAK</PrereqCivilization>
 			</PrereqCivilizations>
-			<iAIWeight>200</iAIWeight>
+			<iAIWeight>800</iAIWeight>
 		</ProjectInfo>
 		<ProjectInfo>	<!-- Convert Souls (3)-->
 			<Type>PROJECT_FAIRY_CONVERT_SOULS3</Type>
@@ -170,7 +170,20 @@
 			<PrereqCivilizations>
 				<PrereqCivilization>CIVILIZATION_COURTOFMISRAK</PrereqCivilization>
 			</PrereqCivilizations>
-			<iAIWeight>100</iAIWeight>
+			<iAIWeight>800</iAIWeight>
+		</ProjectInfo>
+		<ProjectInfo>	<!-- Convert All Souls -->
+			<Type>PROJECT_FAIRY_CONVERT_ALL_SOULS</Type>
+			<Description>TXT_KEY_PROJECT_FAIRY_CONVERT_ALL_SOULS</Description>
+			<Civilopedia>TXT_KEY_PROJECT_FAIRY_CONVERT_ALL_SOULS_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_PROJECT_FAIRY_CONVERT_ALL_SOULS_STRATEGY</Strategy>
+			<Help>TXT_KEY_PROJECT_FAIRY_CONVERT_ALL_SOULS_HELP</Help>
+			<iCost>300</iCost>
+			<Button>Modules\NormalModules\DrackAosNiSira\Art\Ritual\MisrakFairyAllCities.dds</Button>
+			<PrereqCivilizations>
+				<PrereqCivilization>CIVILIZATION_COURTOFMISRAK</PrereqCivilization>
+			</PrereqCivilizations>
+			<iAIWeight>0</iAIWeight>
 		</ProjectInfo>
 	</ProjectInfos>
 </Civ4ProjectInfo>
