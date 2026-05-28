@@ -11241,11 +11241,11 @@ A band of different colored hairs, moldy cloth, and dried blood tied together wi
 	
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RAM_OF_VIR_HELP</Tag>
-		<English>[ICON_BULLET]Units who Kill a Ram of Vir get fully healed.</English>
-		<French>[ICON_BULLET]Units who Kill a Ram of Vir get fully healed.</French>
-		<German>[ICON_BULLET]Units who Kill a Ram of Vir get fully healed.</German>
-		<Italian>[ICON_BULLET]Units who Kill a Ram of Vir get fully healed.</Italian>
-		<Spanish>[ICON_BULLET]Units who Kill a Ram of Vir get fully healed.</Spanish>
+		<English>[ICON_BULLET]Units who Kill a Ram of Vir get fully healed and their negative effects are cleared.</English>
+		<French>[ICON_BULLET]Units who Kill a Ram of Vir get fully healed and their negative effects are cleared.</French>
+		<German>[ICON_BULLET]Units who Kill a Ram of Vir get fully healed and their negative effects are cleared.</German>
+		<Italian>[ICON_BULLET]Units who Kill a Ram of Vir get fully healed and their negative effects are cleared.</Italian>
+		<Spanish>[ICON_BULLET]Units who Kill a Ram of Vir get fully healed and their negative effects are cleared.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REQUIRES_NO_RELIGION</Tag>
