@@ -32594,7 +32594,7 @@
 				<AudioRunTypeLoop/>
 				<AudioRunTypeEnd/>
 			</AudioRunSounds>
-			</UnitArtInfo>
+		</UnitArtInfo>
 		<UnitArtInfo> <!-- UNIT_BEREGUINE -->
 			<Type>ART_DEF_UNIT_BEREGUINE</Type>
 			<Button>Art/units/default/druid/druid.dds</Button>
@@ -36267,6 +36267,31 @@
 			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+			<SelectionSound>AS3D_UN_DRAGON_BREATH_IN_SELECT</SelectionSound>
+			<ActionSound>AS3D_UN_DRAGON_ROAR</ActionSound>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- UNIT_SHIMMERING_DRAGON -->
+			<Type>ART_DEF_UNIT_SHIMMERING_DRAGON</Type>
+			<Button>Art/Interface/Buttons/Units/SandaraCrystalDragonButton.dds</Button>
+			<fScale>9.0</fScale>
+			<fInterfaceScale>0.4</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>1</bActAsAir>
+			<NIF>Art/Units/Heroes/ShimmeringDragon/ShimmeringDragon.nif</NIF>
+			<KFM>Art/Units/Animal/HornedOwl/owl.kfm</KFM>
+		<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/FighterShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.15</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>1.1</fBattleDistance>
+			<fRangedDeathTime>0.35</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+		<AudioRunSounds>
 				<AudioRunTypeLoop/>
 				<AudioRunTypeEnd/>
 			</AudioRunSounds>
