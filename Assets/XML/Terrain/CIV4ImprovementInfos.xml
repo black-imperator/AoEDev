@@ -6176,6 +6176,7 @@
 			<ArtDefineTag>ART_DEF_IMPROVEMENT_DTESHI_CRYPT</ArtDefineTag>
 			<bRequiresFlatlands>1</bRequiresFlatlands>
 			<bPermanent>1</bPermanent>
+			<FreeSpecialistClass>SPECIALISTCLASS_CITIZEN</FreeSpecialistClass>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
 				<iYieldChange>-3</iYieldChange>

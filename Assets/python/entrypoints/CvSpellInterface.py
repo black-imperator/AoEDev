@@ -8577,7 +8577,7 @@ def spellDefileCrypt(pCaster):
 	pPlot = pCaster.plot()
 	pPlayer = gc.getPlayer(pCaster.getOwner())
 	pPlot.setImprovementType(getInfoType('IMPROVEMENT_DTESH_CRYPT_DEFILED'))
-	newUnit = pPlayer.initUnit(getInfoType('UNIT_SLAVE_UNDEAD'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+#	newUnit = pPlayer.initUnit(getInfoType('UNIT_SLAVE_UNDEAD'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
 
 #Snarko 26-06-2010

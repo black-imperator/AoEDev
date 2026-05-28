@@ -14811,7 +14811,7 @@
 			<iDefense>50</iDefense>
 			<iAsset>0</iAsset>
 			<fVisibilityPriority>10000</fVisibilityPriority>
-			<iCityCapModifier>12</iCityCapModifier>
+			<iCityCapModifier>6</iCityCapModifier>
 			<YieldChanges>
 				<iYield>0</iYield>
 				<iYield>1</iYield>
@@ -14828,7 +14828,7 @@
 			<iFreePromotionPick>0</iFreePromotionPick>
 			<iGlobalResistEnemyModify>0</iGlobalResistEnemyModify>
 			<iGlobalResistModify>0</iGlobalResistModify>
-			<iPlotRadius>3</iPlotRadius>
+			<iPlotRadius>2</iPlotRadius>
 			<FreeBonus2>BONUS_MANA_SHADOW</FreeBonus2>
 			<FreeBonus3>BONUS_MANA_FIRE</FreeBonus3>
 		</BuildingInfo>
@@ -14846,7 +14846,7 @@
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iConquestProb>0</iConquestProb>
 			<fVisibilityPriority>10000</fVisibilityPriority>
-			<iCityCapModifier>12</iCityCapModifier>
+			<iCityCapModifier>6</iCityCapModifier>
 			<BonusYieldModifiers>
 				<BonusYieldModifier>
 					<BonusType>BONUS_ASH</BonusType>
@@ -14899,7 +14899,7 @@
 					<iFlavor>25</iFlavor>
 				</Flavor>
 			</Flavors>
-			<iPlotRadius>3</iPlotRadius>
+			<iPlotRadius>2</iPlotRadius>
 		</BuildingInfo>
 		<BuildingInfo>		<!-- Dtesh Dungeon -->
 			<BuildingClass>BUILDINGCLASS_DUNGEON</BuildingClass>
@@ -14916,6 +14916,7 @@
 			<iAsset>4</iAsset>
 			<iCrime>-10</iCrime>
 			<fVisibilityPriority>1</fVisibilityPriority>
+			<iCityCapModifier>1</iCityCapModifier>
 			<BonusProductionModifiers>
 				<BonusProductionModifier>
 					<BonusType>BONUS_STONE</BonusType>
@@ -14959,7 +14960,7 @@
 					<iProductionTrait>100</iProductionTrait>
 				</ProductionTrait>
 			</ProductionTraits>
-			<iCityCapModifier>2</iCityCapModifier>
+			<iCityCapModifier>1</iCityCapModifier>
 			<bNeverCapture>0</bNeverCapture>
 			<bNukeImmune>0</bNukeImmune>
 			<bCenterInCity>1</bCenterInCity>
@@ -15014,7 +15015,7 @@
 					<iProductionTrait>100</iProductionTrait>
 				</ProductionTrait>
 			</ProductionTraits>
-			<iCityCapModifier>2</iCityCapModifier>
+			<iCityCapModifier>1</iCityCapModifier>
 			<bNeverCapture>1</bNeverCapture>
 			<bNukeImmune>0</bNukeImmune>
 			<iCost>100</iCost>
@@ -15060,7 +15061,7 @@
 					<iProductionTrait>100</iProductionTrait>
 				</ProductionTrait>
 			</ProductionTraits>
-			<iCityCapModifier>4</iCityCapModifier>
+			<iCityCapModifier>2</iCityCapModifier>
 			<bNeverCapture>0</bNeverCapture>
 			<bNukeImmune>0</bNukeImmune>
 			<iAIWeight>40</iAIWeight>
@@ -15111,7 +15112,7 @@
 					<iProductionTrait>100</iProductionTrait>
 				</ProductionTrait>
 			</ProductionTraits>
-			<iCityCapModifier>6</iCityCapModifier>
+			<iCityCapModifier>3</iCityCapModifier>
 			<bNeverCapture>0</bNeverCapture>
 			<bNukeImmune>0</bNukeImmune>
 			<iAIWeight>20</iAIWeight>
