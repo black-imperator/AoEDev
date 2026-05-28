@@ -16372,9 +16372,9 @@
 			<bAutoAcquire>1</bAutoAcquire>
 			<bNoXP>1</bNoXP>
 			<iSlaveGenerationChance>15</iSlaveGenerationChance>
-			<PrereqCivilizations>
-				<PrereqCivilization>CIVILIZATION_DTESH</PrereqCivilization>
-			</PrereqCivilizations>
+			<PrereqTraits>
+				<PrereqTrait>TRAIT_TREACHEROUS</PrereqTrait>
+			</PrereqTraits>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>

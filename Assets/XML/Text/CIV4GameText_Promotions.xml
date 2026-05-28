@@ -1262,6 +1262,14 @@
 		<Spanish>Channeling II</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_CHANNELING2_DECAY</Tag>
+		<English>Unlock Channeling II</English>
+		<French>Unlock Canalisation II</French>
+		<German>Unlock Fokus II</German>
+		<Italian>Unlock Channeling II</Italian>
+		<Spanish>Unlock Channeling II</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_CHANNELING2_PEDIA</Tag>
 		<English>[ICON_BULLET]Allows the unit to learn rank 2 spells</English>
 		<French>[ICON_BULLET]Permet à l'unité d'apprendre des sorts de niveau 2.</French>
