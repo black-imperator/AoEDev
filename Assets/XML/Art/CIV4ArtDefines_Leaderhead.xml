@@ -830,5 +830,13 @@
 			<NoShaderNIF/>
 			<BackgroundKFM/>
 		</LeaderheadArtInfo>
+		<LeaderheadArtInfo> 	<!--Jund -->
+			<Type>ART_DEF_LEADER_JUND</Type>
+			<Button>,Art/interface/LeaderHeads/polina_kirillova_JundButton.dds</Button>
+			<NIF>art/interface/LeaderHeads/polina_kirillova_Jund.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
 	</LeaderheadArtInfos>
 </Civ4ArtDefines>
