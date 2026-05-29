@@ -4759,7 +4759,13 @@ TechTypes CvPlayerAI::AI_bestTech(int iMaxPathLength, bool bIgnoreCost, bool bAs
 	{
 		TechTypes eRevealTech = (TechTypes)GC.getBonusInfo((BonusTypes)iI).getTechReveal();
 		BonusClassTypes eBonusClass = (BonusClassTypes)GC.getBonusInfo((BonusTypes)iI).getBonusClassType();
-		if (eRevealTech != NO_TECH)
+		// eBonusClass can be NO_BONUSCLASS (-1) for a bonus whose BonusClassType
+		// is NONE but that still has a TechReveal (e.g. BONUS_ASH / TECH_DARK_SECRETS).
+		// The original paiBonusClass*[eBonusClass]++ then writes before the heap
+		// block and smashes the adjacent allocation header -> intermittent heap
+		// corruption that surfaces later (e.g. exit-to-menu teardown). Require a
+		// valid class index.
+		if (eRevealTech != NO_TECH && eBonusClass >= 0 && eBonusClass < GC.getNumBonusClassInfos())
 		{
 			if ((kTeam.isHasTech(eRevealTech)))
 			{
@@ -5209,7 +5215,8 @@ TechTypes CvPlayerAI::AI_bestTech(int iMaxPathLength, bool bIgnoreCost, bool bAs
 										iRevealValue += (AI_bonusVal((BonusTypes)iJ) * 50);
 
 										BonusClassTypes eBonusClass = (BonusClassTypes)GC.getBonusInfo((BonusTypes)iJ).getBonusClassType();
-										int iBonusClassTotal = (paiBonusClassRevealed[eBonusClass] + paiBonusClassUnrevealed[eBonusClass]);
+										// guard NO_BONUSCLASS (-1) / out-of-range index (see AI_bestTech write loop above)
+										int iBonusClassTotal = (eBonusClass >= 0 && eBonusClass < GC.getNumBonusClassInfos()) ? (paiBonusClassRevealed[eBonusClass] + paiBonusClassUnrevealed[eBonusClass]) : 0;
 
 										//iMultiplier is basically a desperation value
 										//it gets larger as the AI runs out of options
@@ -6488,7 +6495,13 @@ TechTypes CvPlayerAI::AI_bestTech(int iMaxPathLength, bool bIgnoreCost, bool bAs
 	{
 		TechTypes eRevealTech = (TechTypes)GC.getBonusInfo((BonusTypes)iI).getTechReveal();
 		BonusClassTypes eBonusClass = (BonusClassTypes)GC.getBonusInfo((BonusTypes)iI).getBonusClassType();
-		if (eRevealTech != NO_TECH)
+		// eBonusClass can be NO_BONUSCLASS (-1) for a bonus whose BonusClassType
+		// is NONE but that still has a TechReveal (e.g. BONUS_ASH / TECH_DARK_SECRETS).
+		// The original paiBonusClass*[eBonusClass]++ then writes before the heap
+		// block and smashes the adjacent allocation header -> intermittent heap
+		// corruption that surfaces later (e.g. exit-to-menu teardown). Require a
+		// valid class index.
+		if (eRevealTech != NO_TECH && eBonusClass >= 0 && eBonusClass < GC.getNumBonusClassInfos())
 		{
 			if ((kTeam.isHasTech(eRevealTech)))
 			{
@@ -7027,7 +7040,8 @@ TechTypes CvPlayerAI::AI_bestTech(int iMaxPathLength, bool bIgnoreCost, bool bAs
 								iRevealValue += (AI_bonusVal((BonusTypes)iJ) * 50);
 
 								BonusClassTypes eBonusClass = (BonusClassTypes)GC.getBonusInfo((BonusTypes)iJ).getBonusClassType();
-								int iBonusClassTotal = (paiBonusClassRevealed[eBonusClass] + paiBonusClassUnrevealed[eBonusClass]);
+								// guard NO_BONUSCLASS (-1) / out-of-range index (see AI_bestTech write loop above)
+								int iBonusClassTotal = (eBonusClass >= 0 && eBonusClass < GC.getNumBonusClassInfos()) ? (paiBonusClassRevealed[eBonusClass] + paiBonusClassUnrevealed[eBonusClass]) : 0;
 
 								//iMultiplier is basically a desperation value
 								//it gets larger as the AI runs out of options
