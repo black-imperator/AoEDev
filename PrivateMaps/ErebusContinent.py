@@ -3559,6 +3559,12 @@ class RiverMap :
 		#Now use the flowMap as a guide to distribute average rainfall.
 		#Wherever the most rainfall ends up is where the rivers will be.
 		print "Distributing rainfall"
+		# Bugfix: flow map can contain cycles on some seeds (siltifyLakes /
+		# createLakeDepressions modify heightmap but don't guarantee the
+		# flow map stays a DAG).  Without a step cap the while-loop below
+		# hangs the engine forever during "Distributing rainfall".
+		_rainfall_step_cap = mc.height * mc.width
+		_rainfall_cycle_hits = 0
 		for y in range(mc.height):
 			for x in range(mc.width):
 				i = GetIndex(x,y)
@@ -3566,7 +3572,12 @@ class RiverMap :
 				rainFall = self.averageRainfallMap[i]
 				xx = x
 				yy = y
+				_steps = 0
 				while(flow != self.L and flow != self.O):
+					_steps += 1
+					if _steps > _rainfall_step_cap:
+						_rainfall_cycle_hits += 1
+						break
 					if(flow == self.N):
 						yy += 1
 					elif(flow == self.S):
@@ -3590,6 +3601,8 @@ class RiverMap :
 					#reset flow
 					flow = self.flowMap[ii]
 
+		if _rainfall_cycle_hits > 0:
+			print "  WARN: flow-map cycles detected on %d origin tiles" % _rainfall_cycle_hits
 		riverThreshold = sm.plainsThreshold * mc.RiverThreshold
 		for i in range(mc.height*mc.width):
 			if(self.drainageMap[i] > riverThreshold):
