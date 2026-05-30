@@ -197,6 +197,7 @@
 		<element type="DiploMusicWarEra" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="bFemale" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bRandom" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bNotMercenaryCiv" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bNoCrimeCiv" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bGraphicalOnly" content="textOnly" dt:type="boolean"/>
@@ -413,6 +414,7 @@
 		<element type="DiplomacyIntroMusicWar"/>
 		<element type="DiplomacyMusicWar"/>
 		<element type="bFemale"/>
+		<element type="bRandom"/>
 		<element type="bGraphicalOnly"/>
 		<element type="iAttitudeBadBonus"/>
 		<element type="iAttitudeCompassionHigh"/>
@@ -484,6 +486,7 @@
 	<ElementType name="iModReligionSpreadChance" content="textOnly" dt:type="int"/>
 	<ElementType name="bBarbarianAlly" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bIgnoreFood" content="textOnly" dt:type="boolean"/><!-- the player does not consume food. Fallow and undying traits (dtesh, frozen, infernal, scions) -->
+	<ElementType name="bIgnoreProduction" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bIgnoreHealth" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bIgnoreHappy" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bInsane" content="textOnly" dt:type="boolean"/>
@@ -543,14 +546,14 @@
 		<element type="BonusType"/>
 		<element type="bFreeBonus"/>
 	</ElementType>
-	<ElementType name="bFreeSpecialistStateReligion" content="textOnly" dt:type="boolean"/>
-	<ElementType name="FreeSpecialistStateReligion" content="eltOnly">
-		<element type="SpecialistType"/>
-		<element type="bFreeSpecialistStateReligion"/>
-	</ElementType>	<ElementType name="bFreeSpecialistNonStateReligion" content="textOnly" dt:type="boolean"/>
-	<ElementType name="FreeSpecialistNonStateReligion" content="eltOnly">
-		<element type="SpecialistType"/>
-		<element type="bFreeSpecialistNonStateReligion"/>
+	<ElementType name="bFreeSpecialistClassStateReligion" content="textOnly" dt:type="boolean"/>
+	<ElementType name="FreeSpecialistClassStateReligion" content="eltOnly">
+		<element type="SpecialistClass"/>
+		<element type="bFreeSpecialistClassStateReligion"/>
+	</ElementType>	<ElementType name="bFreeSpecialistClassNonStateReligion" content="textOnly" dt:type="boolean"/>
+	<ElementType name="FreeSpecialistClassNonStateReligion" content="eltOnly">
+		<element type="SpecialistClass"/>
+		<element type="bFreeSpecialistClassNonStateReligion"/>
 	</ElementType>
 	<ElementType name="FreePromotions" content="eltOnly">
 		<element type="FreePromotion" minOccurs="0" maxOccurs="*"/>
@@ -572,11 +575,11 @@
 	<ElementType name="FreeBonuses" content="eltOnly">
 		<element type="FreeBonus" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
-	<ElementType name="FreeSpecialistsStateReligion" content="eltOnly">
-		<element type="FreeSpecialistStateReligion" minOccurs="0" maxOccurs="*"/>
+	<ElementType name="FreeSpecialistClassesStateReligion" content="eltOnly">
+		<element type="FreeSpecialistClassStateReligion" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
-	<ElementType name="FreeSpecialistsNonStateReligion" content="eltOnly">
-		<element type="FreeSpecialistNonStateReligion" minOccurs="0" maxOccurs="*"/>
+	<ElementType name="FreeSpecialistClassesNonStateReligion" content="eltOnly">
+		<element type="FreeSpecialistClassNonStateReligion" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="UnitCombatType" content="textOnly"/>
 	<ElementType name="bFreePromotionUnitCombat" content="textOnly" dt:type="boolean"/>
@@ -648,34 +651,35 @@
 		<element type="iYield" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="SpecialistType" content="textOnly"/>
-	<ElementType name="SpecialistHappinessChange" content="eltOnly">
-		<element type="SpecialistType"/>
+	<ElementType name="SpecialistClass" content="textOnly"/>
+	<ElementType name="SpecialistClassHappinessChange" content="eltOnly">
+		<element type="SpecialistClass"/>
 		<element type="iHappiness"/>
 	</ElementType>
-	<ElementType name="SpecialistHappinessChanges" content="eltOnly">
-		<element type="SpecialistHappinessChange" minOccurs="0" maxOccurs="*"/>
+	<ElementType name="SpecialistClassHappinessChanges" content="eltOnly">
+		<element type="SpecialistClassHappinessChange" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
-	<ElementType name="SpecialistHealthChange" content="eltOnly">
-		<element type="SpecialistType"/>
+	<ElementType name="SpecialistClassHealthChange" content="eltOnly">
+		<element type="SpecialistClass"/>
 		<element type="iHealth"/>
 	</ElementType>
-	<ElementType name="SpecialistHealthChanges" content="eltOnly">
-		<element type="SpecialistHealthChange" minOccurs="0" maxOccurs="*"/>
+	<ElementType name="SpecialistClassHealthChanges" content="eltOnly">
+		<element type="SpecialistClassHealthChange" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 
-	<ElementType name="SpecialistYieldChange" content="eltOnly">
-		<element type="SpecialistType"/>
+	<ElementType name="SpecialistClassYieldChange" content="eltOnly">
+		<element type="SpecialistClass"/>
 		<element type="YieldChanges"/>
 	</ElementType>
-	<ElementType name="SpecialistYieldChanges" content="eltOnly">
-		<element type="SpecialistYieldChange" minOccurs="0" maxOccurs="*"/>
+	<ElementType name="SpecialistClassYieldChanges" content="eltOnly">
+		<element type="SpecialistClassYieldChange" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
-	<ElementType name="SpecialistCommerceChange" content="eltOnly">
-		<element type="SpecialistType"/>
+	<ElementType name="SpecialistClassCommerceChange" content="eltOnly">
+		<element type="SpecialistClass"/>
 		<element type="CommerceChanges"/>
 	</ElementType>
-	<ElementType name="SpecialistCommerceChanges" content="eltOnly">
-		<element type="SpecialistCommerceChange" minOccurs="0" maxOccurs="*"/>
+	<ElementType name="SpecialistClassCommerceChanges" content="eltOnly">
+		<element type="SpecialistClassCommerceChange" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 <!-- Heretics (by Opera) -->
 	<ElementType name="bUniqueCult" content="textOnly" dt:type="boolean"/>
@@ -742,8 +746,8 @@
 		<element type="UnitClassPlayerInstancesChanges"/>
 		<element type="ExtraUnitClasses"/>
 		<element type="ExtraBuildingClasses"/>
-		<element type="FreeSpecialistsNonStateReligion"/>
-		<element type="FreeSpecialistsStateReligion"/>
+		<element type="FreeSpecialistClassesNonStateReligion"/>
+		<element type="FreeSpecialistClassesStateReligion"/>
 		<element type="bAdaptive"/>
 		<element type="bAutoRaze"/>
 		<element type="bAgnostic"/><!-- There is no proof of god. There is no proof of no god. Religious people will be accepted. Likes agnostic, dislikes state religions (leader risen emperor, leader Duin, civ Grigori) -->
@@ -763,6 +767,7 @@
 <!-- CityPop Cap END -->
 		<element type="bBarbarianAlly"/>
 		<element type="bIgnoreFood"/>
+		<element type="bIgnoreProduction"/>
 		<element type="bIgnoreHealth"/>
 		<element type="bIgnoreHappy"/>
 		<element type="bInsane"/>
@@ -800,8 +805,8 @@
 		<element type="ImprovementYieldChanges"/>
 		<element type="TerrainYieldChanges"/>
 		<element type="PeakYieldChange"/>
-		<element type="SpecialistYieldChanges"/>
-		<element type="SpecialistCommerceChanges"/>
+		<element type="SpecialistClassYieldChanges"/>
+		<element type="SpecialistClassCommerceChanges"/>
 		<element type="ReligionWeightModifiers"/>
 	</ElementType>
 	<ElementType name="TraitInfos" content="eltOnly">
@@ -840,6 +845,14 @@
 	</ElementType>
 	<ElementType name="Units" content="eltOnly">
 		<element type="Unit" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="SpecialistClassType" content="textOnly"/>
+	<ElementType name="Specialist" content="eltOnly">
+		<element type="SpecialistClassType"/>
+		<element type="SpecialistType"/>
+	</ElementType>
+	<ElementType name="Specialists" content="eltOnly">
+		<element type="Specialist" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="iFreeUnits" content="textOnly" dt:type="int"/>
 	<ElementType name="FreeUnitClass" content="eltOnly">
@@ -977,6 +990,7 @@
 		<element type="Cities"/>
 		<element type="Buildings"/>
 		<element type="Units"/>
+		<element type="Specialists"/>
 		<element type="Improvements"/>
 		<element type="FreeUnitClasses"/>
 		<element type="FreeBuildingClasses"/>
