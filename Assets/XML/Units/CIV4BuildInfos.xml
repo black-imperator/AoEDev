@@ -2594,6 +2594,16 @@
 			<bShiftDown>0</bShiftDown>
 			<bCtrlDown>0</bCtrlDown>
 			<iHotKeyPriority>0</iHotKeyPriority>
+			<TechBuildDiscounts>
+				<TechBuildDiscount>
+					<TechType>TECH_NECROMANCY</TechType>
+					<iDiscount>200</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_SMELTING</TechType>
+					<iDiscount>200</iDiscount>
+				</TechBuildDiscount>
+			</TechBuildDiscounts>
 			<Button>Art/Civs/Dtesh/Pyre/Pyre.dds</Button>
 		</BuildInfo>
 		<BuildInfo> <!-- Aquatic Pyre -->
@@ -2695,6 +2705,16 @@
 			<bShiftDown>0</bShiftDown>
 			<bCtrlDown>0</bCtrlDown>
 			<iHotKeyPriority>0</iHotKeyPriority>
+			<TechBuildDiscounts>
+				<TechBuildDiscount>
+					<TechType>TECH_CONSTRUCTION</TechType>
+					<iDiscount>200</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_MATHEMATICS</TechType>
+					<iDiscount>200</iDiscount>
+				</TechBuildDiscount>
+			</TechBuildDiscounts>
 			<Button>Art/Civs/Dtesh/HauntedRuin/Crypt.dds</Button>
 		</BuildInfo>
 		<BuildInfo> <!-- Refinery -->

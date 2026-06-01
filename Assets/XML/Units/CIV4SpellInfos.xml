@@ -6302,6 +6302,8 @@
 			<bAllowAI>1</bAllowAI>
 			<iAIWeight>100</iAIWeight>
 			<bInBordersOnly>1</bInBordersOnly>
+			<bIsAutoCastable>1</bIsAutoCastable>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
 			<bHasCasted>1</bHasCasted>
 			<ImprovementPrereq>IMPROVEMENT_DTESH_CRYPT</ImprovementPrereq>
 			<PyRequirement>reqDefileCrypt(pCaster)</PyRequirement>
