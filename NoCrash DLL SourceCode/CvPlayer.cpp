@@ -31358,7 +31358,8 @@ void CvPlayer::changeSpecialistClassExtraGPP(SpecialistClassTypes eIndex1, int i
 		//Updating current specialists in cities
 		for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 		{
-			eGreatPeopleUnit = ((UnitTypes)(pLoopCity->getCityUnits(GC.getSpecialistInfo(pLoopCity->getSpecialistTypeFromClass((SpecialistClassTypes)eIndex1)).getGreatPeopleUnitClass())));
+			SpecialistTypes eSpecialist = pLoopCity->getSpecialistTypeFromClass((SpecialistClassTypes)eIndex1);
+			eGreatPeopleUnit = (eSpecialist == NO_SPECIALIST) ? NO_UNIT : ((UnitTypes)(pLoopCity->getCityUnits(GC.getSpecialistInfo(eSpecialist).getGreatPeopleUnitClass())));
 			if (eGreatPeopleUnit != NO_UNIT)
 			{
 				pLoopCity->changeGreatPeopleUnitRate(eGreatPeopleUnit, pLoopCity->getSpecialistClassCount(eIndex1) * iChange);

@@ -3895,7 +3895,9 @@ void CvDLLWidgetData::parseChangeSpecialistHelp(CvWidgetDataStruct &widgetDataSt
 		}
 		else
 		{
-			szBuffer.assign(gDLL->getText("TXT_KEY_MISC_REMOVE_SPECIALIST", GC.getSpecialistInfo(pHeadSelectedCity->getSpecialistTypeFromClass((SpecialistClassTypes) widgetDataStruct.m_iData1)).getTextKeyWide()));
+			SpecialistTypes eSpecialist = pHeadSelectedCity->getSpecialistTypeFromClass((SpecialistClassTypes) widgetDataStruct.m_iData1);
+			if (eSpecialist != NO_SPECIALIST)
+				szBuffer.assign(gDLL->getText("TXT_KEY_MISC_REMOVE_SPECIALIST", GC.getSpecialistInfo(eSpecialist).getTextKeyWide()));
 
 			if (pHeadSelectedCity->getForceSpecialistClassCount((SpecialistClassTypes)(widgetDataStruct.m_iData1)) > 0)
 			{
