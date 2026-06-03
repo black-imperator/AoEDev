@@ -5820,7 +5820,6 @@
 			</TerrainMakesValids>
 			<ImprovementPillage>IMPROVEMENTCLASS_COTTAGE</ImprovementPillage>
 			<ImprovementUpgrade>IMPROVEMENTCLASS_VILLAGE</ImprovementUpgrade>
-			<iMinimumDistance>1</iMinimumDistance>
 			<iCultureControlStrength>1</iCultureControlStrength>
 			<iCultureCenterBonus>1</iCultureCenterBonus>
 			<RouteYieldChanges>
@@ -5860,7 +5859,6 @@
 			</TerrainMakesValids>
 			<ImprovementPillage>IMPROVEMENTCLASS_HAMLET</ImprovementPillage>
 			<ImprovementUpgrade>IMPROVEMENTCLASS_TOWN</ImprovementUpgrade>
-			<iMinimumDistance>1</iMinimumDistance>
 			<iCultureRange>1</iCultureRange>
 			<iCultureControlStrength>1</iCultureControlStrength>
 			<iCultureCenterBonus>1</iCultureCenterBonus>
@@ -5890,7 +5888,6 @@
 			<iUpgradeTime>15</iUpgradeTime>
 			<iAirBombDefense>5</iAirBombDefense>
 			<iPillageGold>5</iPillageGold>
-			<iMinimumDistance>1</iMinimumDistance>
 			<TerrainMakesValids>
 				<TerrainMakesValid>
 					<TerrainType>TERRAIN_DESERT</TerrainType>
@@ -5952,7 +5949,6 @@
 					</TechYields>
 				</TechYieldChange>
 			</TechYieldChanges>
-			<iMinimumDistance>1</iMinimumDistance>
 			<iCultureRange>1</iCultureRange>
 			<iCultureControlStrength>2</iCultureControlStrength>
 			<iCultureCenterBonus>2</iCultureCenterBonus>
@@ -7239,6 +7235,10 @@
 					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
 					<bMakesValid>1</bMakesValid>
 				</FeatureMakesValid>
+				<FeatureMakesValid>
+					<FeatureType>FEATURE_SCRUB</FeatureType>
+					<bMakesValid>1</bMakesValid>
+				</FeatureMakesValid>
 			</FeatureMakesValids>
 
 			<BonusTypeStructs>			
@@ -7457,6 +7457,14 @@
 					<TerrainType>TERRAIN_WASTELAND</TerrainType>
 					<bMakesValid>1</bMakesValid>
 				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_BURNING_SANDS</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_DESERT</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
 			</TerrainMakesValids>
 			<BonusTypeStructs>
 				<BonusTypeStruct>
@@ -7645,6 +7653,14 @@
 					<TerrainType>TERRAIN_WASTELAND</TerrainType>
 					<bMakesValid>1</bMakesValid>
 				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_BURNING_SANDS</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_DESERT</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
 			</TerrainMakesValids>
 			<BonusTypeStructs>
 				<BonusTypeStruct>
@@ -7748,6 +7764,14 @@
 				</TerrainMakesValid>
 				<TerrainMakesValid>
 					<TerrainType>TERRAIN_WASTELAND</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_BURNING_SANDS</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_DESERT</TerrainType>
 					<bMakesValid>1</bMakesValid>
 				</TerrainMakesValid>
 			</TerrainMakesValids>
