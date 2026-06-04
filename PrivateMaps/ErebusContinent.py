@@ -4495,7 +4495,7 @@ def addSuburbsRoads (cx, cy, rxs, rys):
 	for n in range(numcands):
 		if len(candx) == 0: break
 		posn = game.getMapRandNum(len(candx), "")
-		x = candx[n] ; y = candy[n]
+		x = candx[posn] ; y = candy[posn]
 		addSuburbRoad(cx, cy, x, y, ra)
 		del candx[posn] ; del candy[posn]
 
