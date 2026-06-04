@@ -259,6 +259,7 @@ public:
 
 	bool isScoreDirty() const;																							// Exposed to Python
 	void setScoreDirty(bool bNewValue);																			// Exposed to Python
+	bool wasLoadCorrupt() const { return m_bLoadWasCorrupt; }									// failure-resistant load: true if read() hit a corrupt/desynced save
 
 	bool isCircumnavigated() const;																// Exposed to Python
 	void makeCircumnavigated();																		// Exposed to Python
@@ -720,6 +721,7 @@ protected:
 	unsigned int m_uiInitialTime;
 
 	bool m_bScoreDirty;
+	bool m_bLoadWasCorrupt;								// set true if read() detected a desynced/corrupt save
 	bool m_bCircumnavigated;
 	bool m_bDebugMode;
 	bool m_bDebugModeCache;

@@ -41,6 +41,68 @@
 
 #include "CvSnarkoProfiler.h"
 
+#include <stdarg.h>
+#include <stdio.h>
+#include <string.h>
+#include <exception>
+
+// ---------------------------------------------------------------------------
+// Corrupt-save diagnostic logger + sanity caps (failure-resistant CvGame::read).
+// Robust at load time: writes via gDLL->logMsg (ini-gated) AND a direct file
+// append next to the DLL (NOT ini-gated) AND OutputDebugStringA, so a corrupt
+// AutoSave is always recorded even when in-game logging is disabled. Uses only
+// CRT/Win32 so it cannot itself throw or depend on game state.
+// ---------------------------------------------------------------------------
+namespace
+{
+	// Gross upper bounds -- only reject obvious garbage (negative / 0xFFFFFFFF),
+	// never a legitimate large save.
+	const int MAX_REPLAY_MESSAGES = 1000000;
+	const int MAX_CITY_NAME_LIST  = 100000;
+
+	// Non-variadic on purpose: a previous va_list/_vsnprintf version mis-passed
+	// %u/%d under clang -O2 (the old-style va_start macro took the address of a
+	// spilled copy of the param, so _vsnprintf read stack garbage). Direct
+	// _snprintf with fixed args formats correctly. uVal/iVal are the two numbers
+	// a caller wants on record (e.g. count + cap, or index + total); pass 0 if N/A.
+	void logCorruptSave(const char* szSection, const char* szWhat, unsigned uVal, int iVal)
+	{
+		char szLine[1152];
+
+		_snprintf(szLine, sizeof(szLine) - 1, "[CvGame::read][CORRUPT][%s] %s [%u | %d]", szSection, szWhat, uVal, iVal);
+		szLine[sizeof(szLine) - 1] = '\0';
+
+		// 1) Normal engine log (only if LoggingEnabled=1 in the ini).
+		if (gDLL != NULL)
+		{
+			gDLL->logMsg("save_corrupt.log", szLine, false, true);
+		}
+
+		// 2) Direct file append next to the DLL -- bypasses the ini gate.
+		char szPath[MAX_PATH];
+		szPath[0] = '\0';
+		if (GetModuleFileNameA(GetModuleHandleA("CvGameCoreDLL.dll"), szPath, MAX_PATH) > 0)
+		{
+			char* pSlash = strrchr(szPath, '\\');
+			if (pSlash != NULL)
+			{
+				*(pSlash + 1) = '\0';
+				strncat(szPath, "CvGameCoreDLL_corrupt_save.log", MAX_PATH - strlen(szPath) - 1);
+			}
+		}
+		FILE* fp = fopen(szPath[0] ? szPath : "CvGameCoreDLL_corrupt_save.log", "a");
+		if (fp != NULL)
+		{
+			fprintf(fp, "%s\n", szLine);
+			fclose(fp);
+		}
+
+		// 3) Debugger output -- always visible in WinDbg / DebugView.
+		OutputDebugStringA(szLine);
+		OutputDebugStringA("\n");
+	}
+}
+
 // Public Functions...
 
 CvGame::CvGame()
@@ -758,6 +820,7 @@ void CvGame::reset(HandicapTypes eHandicap, bool bConstructorCall)
 	m_uiInitialTime = 0;
 
 	m_bScoreDirty = false;
+	m_bLoadWasCorrupt = false;					// failure-resistant load: cleared before read() guards run
 	m_bCircumnavigated = false;
 	m_bDebugMode = false;
 	m_bDebugModeCache = false;
@@ -2854,11 +2917,14 @@ void CvGame::updateScore(bool bForce)
 			}
 		}
 
-		abTeamScored[eBestTeam] = true;
+		if (eBestTeam != NO_TEAM)	// defensive: avoid abTeamScored[-1] / setTeamRank(-1) if no team picked
+		{
+			abTeamScored[eBestTeam] = true;
 
-		setRankTeam(iI, eBestTeam);
-		setTeamRank(eBestTeam, iI);
-		setTeamScore(eBestTeam, iBestScore);
+			setRankTeam(iI, eBestTeam);
+			setTeamRank(eBestTeam, iI);
+			setTeamScore(eBestTeam, iBestScore);
+		}
 	}
 }
 
@@ -5574,6 +5640,10 @@ PlayerTypes CvGame::getRankPlayer(int iRank) const
 {
 	FAssertMsg(iRank >= 0, "iRank is expected to be non-negative (invalid Rank)");
 	FAssertMsg(iRank < MAX_PLAYERS, "iRank is expected to be within maximum bounds (invalid Rank)");
+	if (iRank < 0 || iRank >= MAX_PLAYERS)
+	{
+		return NO_PLAYER;	// hardening: never index m_aiRankPlayer out of range
+	}
 	return (PlayerTypes)m_aiRankPlayer[iRank];
 }
 
@@ -6725,8 +6795,12 @@ void CvGame::doTurn()
 			changeCutLosersCounter(-1);
 			if (getCutLosersCounter() == 0)
 			{
-				GET_PLAYER(getRankPlayer(countCivPlayersAlive() -1)).setAlive(false);
-				changeCutLosersCounter(50 * GC.getGameSpeedInfo(getGameSpeedType()).getGrowthPercent() / 100);
+				PlayerTypes eLoser = getRankPlayer(countCivPlayersAlive() - 1);
+				if (eLoser != NO_PLAYER)	// guard: getRankPlayer can return NO_PLAYER -> GET_PLAYER(-1) OOB write
+				{
+					GET_PLAYER(eLoser).setAlive(false);
+					changeCutLosersCounter(50 * GC.getGameSpeedInfo(getGameSpeedType()).getGrowthPercent() / 100);
+				}
 			}
 		}
 	}
@@ -8672,24 +8746,64 @@ void CvGame::read(FDataStreamBase* pStream)
 
 		m_aszDestroyedCities.clear();
 		pStream->Read(&iSize);
-		for (uint i = 0; i < iSize; i++)
+		if (iSize > (uint)MAX_CITY_NAME_LIST)
 		{
-			pStream->ReadString(szBuffer);
-			m_aszDestroyedCities.push_back(szBuffer);
+			logCorruptSave("m_aszDestroyedCities", "count exceeds cap -- skipping list", iSize, MAX_CITY_NAME_LIST);
+			m_bLoadWasCorrupt = true;
+		}
+		else
+		{
+			try
+			{
+				for (uint i = 0; i < iSize; i++)
+				{
+					pStream->ReadString(szBuffer);
+					m_aszDestroyedCities.push_back(szBuffer);
+				}
+			}
+			catch (std::exception& e)
+			{
+				logCorruptSave("m_aszDestroyedCities", e.what(), (unsigned)m_aszDestroyedCities.size(), MAX_CITY_NAME_LIST);
+				m_bLoadWasCorrupt = true;
+			}
 		}
 
 		m_aszGreatPeopleBorn.clear();
 		pStream->Read(&iSize);
-		for (uint i = 0; i < iSize; i++)
+		if (iSize > (uint)MAX_CITY_NAME_LIST)
 		{
-			pStream->ReadString(szBuffer);
-			m_aszGreatPeopleBorn.push_back(szBuffer);
+			logCorruptSave("m_aszGreatPeopleBorn", "count exceeds cap -- skipping list", iSize, MAX_CITY_NAME_LIST);
+			m_bLoadWasCorrupt = true;
+		}
+		else
+		{
+			try
+			{
+				for (uint i = 0; i < iSize; i++)
+				{
+					pStream->ReadString(szBuffer);
+					m_aszGreatPeopleBorn.push_back(szBuffer);
+				}
+			}
+			catch (std::exception& e)
+			{
+				logCorruptSave("m_aszGreatPeopleBorn", e.what(), (unsigned)m_aszGreatPeopleBorn.size(), MAX_CITY_NAME_LIST);
+				m_bLoadWasCorrupt = true;
+			}
 		}
 	}
 
-	ReadStreamableFFreeListTrashArray(m_deals, pStream);
-	ReadStreamableFFreeListTrashArray(m_voteSelections, pStream);
-	ReadStreamableFFreeListTrashArray(m_votesTriggered, pStream);
+	try
+	{
+		ReadStreamableFFreeListTrashArray(m_deals, pStream);
+		ReadStreamableFFreeListTrashArray(m_voteSelections, pStream);
+		ReadStreamableFFreeListTrashArray(m_votesTriggered, pStream);
+	}
+	catch (std::exception& e)
+	{
+		logCorruptSave("FFreeListTrashArray(deals/votes)", e.what(), 0, 0);
+		m_bLoadWasCorrupt = true;
+	}
 
 	m_mapRand.read(pStream);
 	m_sorenRand.read(pStream);
@@ -8698,14 +8812,31 @@ void CvGame::read(FDataStreamBase* pStream)
 		clearReplayMessageMap();
 		ReplayMessageList::_Alloc::size_type iSize;
 		pStream->Read(&iSize);
-		for (ReplayMessageList::_Alloc::size_type i = 0; i < iSize; i++)
+		if (iSize > (ReplayMessageList::_Alloc::size_type)MAX_REPLAY_MESSAGES)
 		{
-			CvReplayMessage* pMessage = new CvReplayMessage(0);
-			if (NULL != pMessage)
+			logCorruptSave("m_listReplayMessages", "count exceeds cap -- skipping replay messages", (unsigned)iSize, MAX_REPLAY_MESSAGES);
+			m_bLoadWasCorrupt = true;
+		}
+		else
+		{
+			ReplayMessageList::_Alloc::size_type i = 0;
+			try
 			{
-				pMessage->read(*pStream);
+				for (i = 0; i < iSize; i++)
+				{
+					CvReplayMessage* pMessage = new CvReplayMessage(0);
+					if (NULL != pMessage)
+					{
+						pMessage->read(*pStream);
+					}
+					m_listReplayMessages.push_back(pMessage);
+				}
 			}
-			m_listReplayMessages.push_back(pMessage);
+			catch (std::exception& e)
+			{
+				logCorruptSave("m_listReplayMessages", e.what(), (unsigned)i, (int)iSize);
+				m_bLoadWasCorrupt = true;
+			}
 		}
 	}
 	// m_pReplayInfo not saved
@@ -9985,7 +10116,7 @@ void CvGame::doVoteResults()
 					szBuffer += NEWLINE + gDLL->getText("TXT_KEY_POPUP_DIPLOMATIC_VOTING_VICTORY", GET_TEAM(eTeam).getName().GetCString(), countVote(*pVoteTriggered, (PlayerVoteTypes)eTeam), getVoteRequired(eVote, eVoteSource), countPossibleVote(eVote, eVoteSource));
 				}
 
-				for (int iI = MAX_CIV_TEAMS; iI >= 0; --iI)
+				for (int iI = MAX_CIV_TEAMS - 1; iI >= 0; --iI)	// was MAX_CIV_TEAMS (one past end -> OOB team read)
 				{
 					for (int iJ = 0; iJ < MAX_CIV_PLAYERS; iJ++)
 					{
@@ -11137,13 +11268,16 @@ void CvGame::createDemons()
 			if (eBestUnit != NO_UNIT)
 			{
 				CvUnit* pUnit = GET_PLAYER(DEMON_PLAYER).initUnit(eBestUnit, pPlot->getX_INLINE(), pPlot->getY_INLINE(), UNITAI_ATTACK);
-				pUnit->changeExperience(getGlobalCounter() * GC.getHandicapInfo(getHandicapType()).getDemonGlobalCounterFreeXPPercent());
-				if (isMPOption(MPOPTION_SIMULTANEOUS_TURNS))
-					pUnit->setImmobileTimer(2);
+				if (pUnit != NULL)	// initUnit returns NULL when the per-player unit list hits FLTA_MAX_BUCKETS
+				{
+					pUnit->changeExperience(getGlobalCounter() * GC.getHandicapInfo(getHandicapType()).getDemonGlobalCounterFreeXPPercent());
+					if (isMPOption(MPOPTION_SIMULTANEOUS_TURNS))
+						pUnit->setImmobileTimer(2);
 
-				iCount++;
-				if (iCount >= iNeededDemons)
-					break;
+					iCount++;
+					if (iCount >= iNeededDemons)
+						break;
+				}
 			}
 		}
 	}
@@ -11265,12 +11399,15 @@ void CvGame::createAnimals()
 			if (eBestUnit != NO_UNIT)
 			{
 				CvUnit* pUnit = GET_PLAYER(ANIMAL_PLAYER).initUnit(eBestUnit, pPlot->getX_INLINE(), pPlot->getY_INLINE(), UNITAI_ANIMAL);
-				if (isMPOption(MPOPTION_SIMULTANEOUS_TURNS))
-					pUnit->setImmobileTimer(2);
+				if (pUnit != NULL)	// initUnit returns NULL when the per-player unit list hits FLTA_MAX_BUCKETS
+				{
+					if (isMPOption(MPOPTION_SIMULTANEOUS_TURNS))
+						pUnit->setImmobileTimer(2);
 
-				iCount++;
-				if (iCount >= iNeededAnimals)
-					break;
+					iCount++;
+					if (iCount >= iNeededAnimals)
+						break;
+				}
 			}
 		}
 	}
