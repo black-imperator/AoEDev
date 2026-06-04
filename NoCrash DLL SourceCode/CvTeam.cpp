@@ -6679,7 +6679,7 @@ void CvTeam::processTech(TechTypes eTech, int iChange)
 				}
 				for (int iK = 0; iK < NUM_COMMERCE_TYPES; iK++)
 				{
-					GET_PLAYER((PlayerTypes)iI).changeSpecialistTypeExtraCommerce((SpecialistTypes)iJ, (CommerceTypes)iK, GC.getTechInfo(eTech).getSpecialistTypeYieldChange(iJ, iK) * iChange);
+					GET_PLAYER((PlayerTypes)iI).changeSpecialistTypeExtraCommerce((SpecialistTypes)iJ, (CommerceTypes)iK, GC.getTechInfo(eTech).getSpecialistTypeCommerceChange(iJ, iK) * iChange);
 				}
 			}
 
