@@ -22381,7 +22381,15 @@ void CvUnit::setHasPromotion(PromotionTypes eIndex, bool bNewValue, bool bSupres
 				{
 					if (GC.getPromotionInfo((PromotionTypes)iI).getNumPromotionReplacedBy() > 0)
 					{
-						for (int iJ = 0; iJ < kPromotion.getNumPromotionReplacedBy(); iJ++)
+						// Bugfix: iterate the EXISTING promotion's replacedBy list,
+						// not the new promotion's.  We're checking "does anything in
+						// iI's replacedBy list equal the promotion we're now adding?".
+						// Indexing iI's list while bounding by kPromotion's count
+						// silently no-ops whenever kPromotion has fewer entries (or
+						// none) than iI -- which is exactly when terminal chains
+						// like PHOENIX_EGG_HELD -> PHOENIX_SMALL fail to remove the
+						// old promotion.
+						for (int iJ = 0; iJ < GC.getPromotionInfo((PromotionTypes)iI).getNumPromotionReplacedBy(); iJ++)
 						{
 							if (GC.getPromotionInfo((PromotionTypes)iI).getPromotionReplacedBy(iJ) == eIndex)
 							{
