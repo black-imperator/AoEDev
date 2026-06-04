@@ -1196,20 +1196,22 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 		m_paaiLocalSpecialistYield = new int*[GC.getNumSpecialistClassInfos()];
 		for (int iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 		{
+			SpecialistTypes eSpecialist = getSpecialistTypeFromClass((SpecialistClassTypes)iI);
 			m_paaiLocalSpecialistYield[iI] = new int[NUM_YIELD_TYPES];
 			for (int iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
 			{
-				m_paaiLocalSpecialistYield[iI][iJ] = GET_PLAYER(getOwner()).getSpecialistTypeExtraYield((SpecialistTypes)getSpecialistTypeFromClass((SpecialistClassTypes)iI), (YieldTypes)iJ);
+				m_paaiLocalSpecialistYield[iI][iJ] = (eSpecialist == NO_SPECIALIST) ? 0 : GET_PLAYER(getOwner()).getSpecialistTypeExtraYield(eSpecialist, (YieldTypes)iJ);
 			}
 		}
 		FAssertMsg(m_paaiLocalSpecialistCommerce==NULL, "About to leak memory, CvCity::m_paaiLocalSpecialistCommerce is NULL");
 		m_paaiLocalSpecialistCommerce = new int*[GC.getNumSpecialistClassInfos()];
 		for (int iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 		{
+			SpecialistTypes eSpecialist = getSpecialistTypeFromClass((SpecialistClassTypes)iI);
 			m_paaiLocalSpecialistCommerce[iI] = new int[NUM_COMMERCE_TYPES];
 			for (int iJ = 0; iJ < NUM_COMMERCE_TYPES; iJ++)
 			{
-				m_paaiLocalSpecialistCommerce[iI][iJ] = GET_PLAYER(getOwner()).getSpecialistTypeExtraCommerce((SpecialistTypes)getSpecialistTypeFromClass((SpecialistClassTypes)iI), (CommerceTypes)iJ);
+				m_paaiLocalSpecialistCommerce[iI][iJ] = (eSpecialist == NO_SPECIALIST) ? 0 : GET_PLAYER(getOwner()).getSpecialistTypeExtraCommerce(eSpecialist, (CommerceTypes)iJ);
 			}
 		}
 		m_paiLocalSpecialistHappiness = new int[GC.getNumSpecialistClassInfos()];
@@ -1218,9 +1220,10 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 		m_paiLocalSpecialistGPP = new int[GC.getNumSpecialistClassInfos()];
 		for (int iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 		{
-			m_paiLocalSpecialistHappiness[iI] = GET_PLAYER(getOwner()).getSpecialistTypeExtraHappiness((SpecialistTypes)getSpecialistTypeFromClass((SpecialistClassTypes)iI));
-			m_paiLocalSpecialistHealth[iI] = GET_PLAYER(getOwner()).getSpecialistTypeExtraHealth((SpecialistTypes)getSpecialistTypeFromClass((SpecialistClassTypes)iI));
-			m_paiLocalSpecialistCrime[iI] = GET_PLAYER(getOwner()).getSpecialistTypeExtraCrime((SpecialistTypes)getSpecialistTypeFromClass((SpecialistClassTypes)iI));
+			SpecialistTypes eSpecialist = getSpecialistTypeFromClass((SpecialistClassTypes)iI);
+			m_paiLocalSpecialistHappiness[iI] = (eSpecialist == NO_SPECIALIST) ? 0 : GET_PLAYER(getOwner()).getSpecialistTypeExtraHappiness(eSpecialist);
+			m_paiLocalSpecialistHealth[iI] = (eSpecialist == NO_SPECIALIST) ? 0 : GET_PLAYER(getOwner()).getSpecialistTypeExtraHealth(eSpecialist);
+			m_paiLocalSpecialistCrime[iI] = (eSpecialist == NO_SPECIALIST) ? 0 : GET_PLAYER(getOwner()).getSpecialistTypeExtraCrime(eSpecialist);
 			m_paiLocalSpecialistGPP[iI] = 0;
 		}
 /*************************************************************************************************/
