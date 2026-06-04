@@ -7006,6 +7006,12 @@ bool CvUnit::canAirlift(const CvPlot* pPlot) const
 			return false;
 		}
 	}
+
+	// Upstream bug: function fell off end without returning. VC7.1 cl.exe
+	// happened to emit "mov al, 1; ret" so retail worked by accident;
+	// clang/modern compilers treat fall-off as UB and return false on the
+	// success path, hiding the airlift button.
+	return true;
 }
 
 
@@ -32158,6 +32164,10 @@ const CvArtInfoUnit* CvUnit::getArtInfo(int i, EraTypes eEra) const
 
 		return ARTFILEMGR.getUnitArtInfo(getExtraArtDefineTag3());
 	}
+	// Same UB pattern as canAirlift: original cl.exe returned NULL via fall-off;
+	// clang's UB-aware optimizer may return garbage. Make NULL explicit so
+	// callers (which already null-check via the ART_INFO_DEFN fallback) work.
+	return NULL;
 }
 
 const TCHAR* CvUnit::getButton() const
