@@ -809,6 +809,11 @@ def postCombatLostRamVir(pCaster, pOpponent):
 	iPlayer = pOpponent.getOwner()
 	pPlayer = gc.getPlayer(iPlayer)
 	if (pOpponent.isAlive()):
+		# Bugfix (#435): pedia/help text (TXT_KEY_UNIT_RAM_OF_VIR_HELP)
+		# promises "Units who Kill a Ram of Vir get fully healed."  The
+		# previous implementation only cleared negative-status promotions;
+		# the damage was never reset.
+		pOpponent.setDamage(0, -1)
 		pOpponent.setHasPromotion(getInfoType("PROMOTION_CRAZED"),False)
 		pOpponent.setHasPromotion(getInfoType("PROMOTION_DISEASED"),False)
 		pOpponent.setHasPromotion(getInfoType("PROMOTION_ENERVATED"),False)
@@ -819,7 +824,6 @@ def postCombatLostRamVir(pCaster, pOpponent):
 		pOpponent.setHasPromotion(getInfoType("PROMOTION_UNWHOLESOME_ADDICTION"),False)
 		pOpponent.setHasPromotion(getInfoType("PROMOTION_WINTERED"),False)
 		pOpponent.setHasPromotion(getInfoType("PROMOTION_WITHERED"),False)
-		pOpponent.setHasPromotion(getInfoType("PROMOTION_CRAZED"),False)
 
 
 
