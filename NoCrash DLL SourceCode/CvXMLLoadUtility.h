@@ -363,7 +363,7 @@ private:
 #ifdef _USRDLL
 	template <class T>
 		void SetGlobalDefine(const char* szDefineName, T*& piDefVal)
-	{ GC.getDefinesVarSystem()->GetValue(szDefineName, piDefVal); }
+	{ if (!GC.getDefinesVarSystem()->GetValue(szDefineName, piDefVal)) piDefVal = NULL; }
 #endif
 	//
 	// template which can handle all info classes
