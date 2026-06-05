@@ -94,14 +94,6 @@
 					</ImprovementYields>
 				</ImprovementYieldChange>
 				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_HOMESTEAD</ImprovementType>
-					<ImprovementYields>
-						<iYield>-1</iYield>
-						<iYield>0</iYield>
-						<iYield>2</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-				<ImprovementYieldChange>
 					<ImprovementType>IMPROVEMENT_FORT</ImprovementType>
 					<ImprovementYields>
 						<iYield>1</iYield>
@@ -746,14 +738,6 @@
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
 					<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
-					<ImprovementYields>
-						<iYield>1</iYield>
-						<iYield>1</iYield>
-						<iYield>0</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_HOMESTEAD</ImprovementType>
 					<ImprovementYields>
 						<iYield>1</iYield>
 						<iYield>1</iYield>

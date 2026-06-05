@@ -7782,6 +7782,14 @@
 		<Spanish>Secondary Arcane</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_SECONDARY_WORKER</Tag>
+		<English>Secondary Worker</English>
+		<French>Secondary Worker</French>
+		<German>Secondary Worker</German>
+		<Italian>Secondary Worker</Italian>
+		<Spanish>Secondary Worker</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SECONDARY_DEFENSIVE_MELEE</Tag>
 		<English>Secondary Defensive Melee</English>
 		<French>Secondary Defensive Melee</French>

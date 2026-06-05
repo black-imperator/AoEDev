@@ -1014,6 +1014,24 @@
 			<KFM/>
 			<Button>Art/Civs/Grigori/Homestead/Homestead.dds</Button>
 		</ImprovementArtInfo>
+		<ImprovementArtInfo>
+			<Type>ART_DEF_IMPROVEMENT_WORKSITE</Type>
+			<bExtraAnimations>0</bExtraAnimations>
+			<fScale>13.0</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Civs/Grigori/Worksite/humanfoundry.nif</NIF>
+			<KFM/>
+			<Button>,Art/Interface/Buttons/Builds/BuildWorkshop.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,8,8</Button>
+		</ImprovementArtInfo>
+		<ImprovementArtInfo>
+			<Type>ART_DEF_IMPROVEMENT_FORAGER</Type>
+			<bExtraAnimations>0</bExtraAnimations>
+			<fScale>13.0</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Civs/Grigori/Foragers/humanmarket.nif</NIF>
+			<KFM/>
+			<Button>,Art/Interface/Buttons/Builds/BuildCamp.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,1,7</Button>
+		</ImprovementArtInfo>
 		<ImprovementArtInfo>		<!-- Cliffs of Kelle -->
 			<Type>ART_DEF_IMPROVEMENT_CLIFFS_OF_KELLE</Type>
 			<bExtraAnimations>0</bExtraAnimations>

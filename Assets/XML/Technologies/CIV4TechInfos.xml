@@ -1013,6 +1013,16 @@
 			<bGoodyTech>1</bGoodyTech>
 			<iGridX>3</iGridX>
 			<iGridY>20</iGridY>
+			<SpecialistTypeYieldChanges>
+				<SpecialistTypeYieldChange>
+					<SpecialistType>SPECIALIST_VOLUNTEER_GRIGORI</SpecialistType>
+					<SpecialistTypeYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</SpecialistTypeYields>
+				</SpecialistTypeYieldChange>
+			</SpecialistTypeYieldChanges>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
@@ -1433,6 +1443,16 @@
 			<bGoodyTech>1</bGoodyTech>
 			<iGridX>10</iGridX>
 			<iGridY>18</iGridY>
+			<SpecialistTypeYieldChanges>
+				<SpecialistTypeYieldChange>
+					<SpecialistType>SPECIALIST_VOLUNTEER_GRIGORI</SpecialistType>
+					<SpecialistTypeYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</SpecialistTypeYields>
+				</SpecialistTypeYieldChange>
+			</SpecialistTypeYieldChanges>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_CULTURE</FlavorType>
@@ -3042,6 +3062,16 @@
 			<bGoodyTech>1</bGoodyTech>
 			<iGridX>8</iGridX>
 			<iGridY>20</iGridY>
+			<SpecialistTypeYieldChanges>
+				<SpecialistTypeYieldChange>
+					<SpecialistType>SPECIALIST_VOLUNTEER_GRIGORI</SpecialistType>
+					<SpecialistTypeYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</SpecialistTypeYields>
+				</SpecialistTypeYieldChange>
+			</SpecialistTypeYieldChanges>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GOLD</FlavorType>
@@ -3166,6 +3196,16 @@
 			<bGoodyTech>1</bGoodyTech>
 			<iGridX>4</iGridX>
 			<iGridY>13</iGridY>
+			<SpecialistTypeYieldChanges>
+				<SpecialistTypeYieldChange>
+					<SpecialistType>SPECIALIST_VOLUNTEER_GRIGORI</SpecialistType>
+					<SpecialistTypeYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</SpecialistTypeYields>
+				</SpecialistTypeYieldChange>
+			</SpecialistTypeYieldChanges>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_CULTURE</FlavorType>

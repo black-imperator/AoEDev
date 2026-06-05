@@ -1646,7 +1646,7 @@
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<SpecialistClassCounts>
 				<SpecialistClassCount>
-					<SpecialistClass>SPECIALISTCLASS_STATESMAN</SpecialistClass>
+					<SpecialistClass>SPECIALISTCLASS_ARTIST</SpecialistClass>
 					<iSpecialistClassCount>2</iSpecialistClassCount>
 				</SpecialistClassCount>
 			</SpecialistClassCounts>
@@ -1675,6 +1675,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_GRIGORI_FREEDOM_PEDIA</Civilopedia>
 			<ArtDefineTag>ART_DEF_BUILDING_ARENA</ArtDefineTag>
 			<PrereqTech>TECH_CRAFTING</PrereqTech>
+			<iPlotRadius>1</iPlotRadius>
 			<iPrereqPopulation>1</iPrereqPopulation>
 			<iAIWeight>10</iAIWeight>
 			<iCost>-1</iCost>
@@ -1686,7 +1687,6 @@
 			<fVisibilityPriority>1000</fVisibilityPriority>
 			<ConstructSound>AS2D_BUILD_COURTHOUSE</ConstructSound>
 			<bAutoBuild>1</bAutoBuild>
-			<bMustMaintain>1</bMustMaintain>
 		</BuildingInfo>
 		<BuildingInfo>		<!-- Grigori Caution Apostates         Grigori UB -->
 			<BuildingClass>BUILDINGCLASS_GRIGORI_APOSTATES</BuildingClass>
@@ -1702,11 +1702,11 @@
 			<iConquestProb>0</iConquestProb>
 			<GreatPeopleUnitClass>UNITCLASS_PROPHET</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
+			<iMaintenanceModifier>50</iMaintenanceModifier>
 			<iAsset>4</iAsset>
 			<fVisibilityPriority>1000</fVisibilityPriority>
 			<ConstructSound>AS2D_BUILD_COURTHOUSE</ConstructSound>
 			<bAutoBuild>1</bAutoBuild>
-			<bMustMaintain>1</bMustMaintain>
 		</BuildingInfo>
 		<BuildingInfo>		<!-- Blasting Workshop                                          Luchuirp UB -->
 			<BuildingClass>BUILDINGCLASS_BLASTING_WORKSHOP</BuildingClass>
@@ -7257,7 +7257,7 @@
 			<fVisibilityPriority>1</fVisibilityPriority>
 			<SpecialistClassCounts>
 				<SpecialistClassCount>
-					<SpecialistClass>SPECIALISTCLASS_STATESMAN</SpecialistClass>
+					<SpecialistClass>SPECIALISTCLASS_ARTIST</SpecialistClass>
 					<iSpecialistClassCount>2</iSpecialistClassCount>
 				</SpecialistClassCount>
 			</SpecialistClassCounts>
@@ -7316,7 +7316,7 @@
 			<PrereqTech>TECH_ANCIENT_CHANTS</PrereqTech>
 			<SpecialistClassCounts>
 				<SpecialistClassCount>
-					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<SpecialistClass>SPECIALISTCLASS_ARTIST</SpecialistClass>
 					<iSpecialistClassCount>1</iSpecialistClassCount>
 				</SpecialistClassCount>
 			</SpecialistClassCounts>

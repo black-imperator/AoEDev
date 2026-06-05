@@ -540,4 +540,124 @@ If only they could learn to listen to one another.</Spanish>
 		<Italian>Opportunist</Italian>
 		<Spanish>Opportunist</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_ENLIST_GRIGORI_MILITIA</Tag>
+		<English>Enlist Freefolk Militia</English>
+		<French>Enlist Freefolk Militia</French>
+		<German>Enlist Freefolk Militia</German>
+		<Italian>Enlist Freefolk Militia</Italian>
+		<Spanish>Enlist Freefolk Militia</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MILITIA_GRIGORI</Tag>
+		<English>Makeshift Weaponry</English>
+		<French>Makeshift Weaponry</French>
+		<German>Makeshift Weaponry</German>
+		<Italian>Makeshift Weaponry</Italian>
+		<Spanish>Makeshift Weaponry</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GRIGORI_FORT_COMMANDER</Tag>
+		<English>Commune Tax - Meagre</English>
+		<French>Commune Tax - Meagre</French>
+		<German>Commune Tax - Meagre</German>
+		<Italian>Commune Tax - Meagre</Italian>
+		<Spanish>Commune Tax - Meagre</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GRIGORI_FORT_COMMANDER2</Tag>
+		<English>Commune Tax - Moderate</English>
+		<French>Commune Tax -  Moderate</French>
+		<German>Commune Tax - Moderate</German>
+		<Italian>Commune Tax - Moderate</Italian>
+		<Spanish>Commune Tax - Moderate</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GRIGORI_FORT_COMMANDER3</Tag>
+		<English>Commune Tax - Bountiful</English>
+		<French>Commune Tax - Bountiful</French>
+		<German>Commune Tax - Bountiful</German>
+		<Italian>Commune Tax - Bountiful</Italian>
+		<Spanish>Commune Tax - Bountiful</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_FORT_COMMANDER_GRIGORI</Tag>
+		<English>Militia Quartermaster</English>
+		<French>Militia Quartermaster</French>
+		<German>Militia Quartermaster</German>
+		<Italian>Militia Quartermaster</Italian>
+		<Spanish>Militia Quartermaster</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MILITIA_GRIGORI</Tag>
+		<English>Freefolk Militia</English>
+		<French>Freefolk Militia</French>
+		<German>Freefolk Militia</German>
+		<Italian>Freefolk Militia</Italian>
+		<Spanish>Freefolk Militia</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MONUMENT_GRIGORI</Tag>
+		<English>Heroic Statue</English>
+		<French>Heroic Statue</French>
+		<German>Heroic Statue</German>
+		<Italian>Heroic Statue</Italian>
+		<Spanish>Heroic Statue</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_CAMP_GRIGORI</Tag>
+		<English>Forage Camp</English>
+		<French>Forage Camp</French>
+		<German>Forage Camp</German>
+		<Italian>Forage Camp</Italian>
+		<Spanish>Forage Camp</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_FISHING_BOATS_GRIGORI</Tag>
+		<English>Net Dragger Boat</English>
+		<French>Net Dragger Boat</French>
+		<German>Net Dragger Boat</German>
+		<Italian>Net Dragger Boat</Italian>
+		<Spanish>Net Dragger Boat</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_WORKSHOP_GRIGORI</Tag>
+		<English>Foreman Worksite</English>
+		<French>Foreman Worksite</French>
+		<German>Foreman Worksite</German>
+		<Italian>Foreman Worksite</Italian>
+		<Spanish>Foreman Worksite</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_FORT_GRIGORI</Tag>
+		<English>Commune Settlement</English>
+		<French>Commune Settlement</French>
+		<German>Commune Settlement</German>
+		<Italian>Commune Settlement</Italian>
+		<Spanish>Commune Settlement</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_BRONZE_WEAPONS_MILITIA</Tag>
+		<English>Militia Equipment - Bronze</English>
+		<French>Militia Equipment - Bronze</French>
+		<German>Militia Equipment - Bronze</German>
+		<Italian>Militia Equipment - Bronze</Italian>
+		<Spanish>Militia Equipment - Bronze</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_IRON_WEAPONS_MILITIA</Tag>
+		<English>Militia Equipment - Iron</English>
+		<French>Militia Equipment - Iron</French>
+		<German>Militia Equipment - Iron</German>
+		<Italian>Militia Equipment - Iron</Italian>
+		<Spanish>Militia Equipment - Iron</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MITHRIL_WEAPONS_MILITIA</Tag>
+		<English>Militia Equipment - Mithril</English>
+		<French>Militia Equipment - Mithril</French>
+		<German>Militia Equipment - Mithril</German>
+		<Italian>Militia Equipment - Mithril</Italian>
+		<Spanish>Militia Equipment - Mithril</Spanish>
+	</TEXT>
 </Civ4GameText>
