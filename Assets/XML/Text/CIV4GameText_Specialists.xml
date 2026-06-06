@@ -287,6 +287,44 @@ Greenhorns are would-be Adventurers, yet to earn their cape but eager to prove t
 		<Spanish>Volunteer</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_VOLUNTEER_PEDIA</Tag>
+		<English>When men put their faith in gods, the divine can happen.
+When men put their faith in themselves, anything can happen.
+
+The Grigori are a decentralised people, wanderers move from town to town, and subsistence is the norm.
+Performing odd jobs and filling in for others who have wandered off is often the only way to put food on the table. But the Grigori don't mind; it is a small price to pay to be free of the madness of faith outside their home.
+
+(Education, Taxation, Guilds, and Trade technologies increase this specialist's yields)</English>
+		<French>When men put their faith in gods, the divine can happen.
+When men put their faith in themselves, anything can happen.
+
+The Grigori are a decentralised people, wanderers move from town to town, and subsistence is the norm.
+Performing odd jobs and filling in for others who have wandered off is often the only way to put food on the table. But the Grigori don't mind; it is a small price to pay to be free of the madness of faith outside their home.
+
+(Education, Taxation, Guilds, and Trade technologies increase this specialist's yields)</French>
+		<German>When men put their faith in gods, the divine can happen.
+When men put their faith in themselves, anything can happen.
+
+The Grigori are a decentralised people, wanderers move from town to town, and subsistence is the norm.
+Performing odd jobs and filling in for others who have wandered off is often the only way to put food on the table. But the Grigori don't mind; it is a small price to pay to be free of the madness of faith outside their home.
+
+(Education, Taxation, Guilds, and Trade technologies increase this specialist's yields)</German>
+		<Italian>When men put their faith in gods, the divine can happen.
+When men put their faith in themselves, anything can happen.
+
+The Grigori are a decentralised people, wanderers move from town to town, and subsistence is the norm.
+Performing odd jobs and filling in for others who have wandered off is often the only way to put food on the table. But the Grigori don't mind; it is a small price to pay to be free of the madness of faith outside their home.
+
+(Education, Taxation, Guilds, and Trade technologies increase this specialist's yields)</Italian>
+		<Spanish>When men put their faith in gods, the divine can happen.
+When men put their faith in themselves, anything can happen.
+
+The Grigori are a decentralised people, wanderers move from town to town, and subsistence is the norm.
+Performing odd jobs and filling in for others who have wandered off is often the only way to put food on the table. But the Grigori don't mind; it is a small price to pay to be free of the madness of faith outside their home.
+
+(Education, Taxation, Guilds, and Trade technologies increase this specialist's yields)</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_SPECIALIST_PRIEST_GRIGORI</Tag>
 		<English>Apostate</English>
 		<French>Apostate</French>
@@ -344,29 +382,6 @@ Giving their speeches on turned-over oxcarts, these men goad and guide the flock
 By their will, the sheep of the fold will carry tools of war to meet the wolves head-on.
 
 This is a time of urgency; no expense can be spared to protect our homes.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_SPECIALIST_VOLUNTEER_PEDIA</Tag>
-		<English>The Grigori gain their signature unit, the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] by assigning Greenhorns and Volunteers in their cities, hoping that one of them will rise to become a hero of the people.
-
-The Grigori are a decentralised people, wanderers move from town to town, and subsistence is the norm.
-Performing odd jobs and filling in for others who have wandered off is often the only way to put food on the table. But the Grigori don't mind; it is a small price to pay to be free of the madness of faith outside their home.</English>
-		<French>The Grigori gain their signature unit, the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] by assigning Greenhorns and Volunteers in their cities, hoping that one of them will rise to become a hero of the people.
-
-The Grigori are a decentralised people, wanderers move from town to town, and subsistence is the norm.
-Performing odd jobs and filling in for others who have wandered off is often the only way to put food on the table. But the Grigori don't mind; it is a small price to pay to be free of the madness of faith outside their home.</French>
-		<German>The Grigori gain their signature unit, the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] by assigning Greenhorns and Volunteers in their cities, hoping that one of them will rise to become a hero of the people.
-
-The Grigori are a decentralised people, wanderers move from town to town, and subsistence is the norm.
-Performing odd jobs and filling in for others who have wandered off is often the only way to put food on the table. But the Grigori don't mind; it is a small price to pay to be free of the madness of faith outside their home.</German>
-		<Italian>The Grigori gain their signature unit, the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] by assigning Greenhorns and Volunteers in their cities, hoping that one of them will rise to become a hero of the people.
-
-The Grigori are a decentralised people, wanderers move from town to town, and subsistence is the norm.
-Performing odd jobs and filling in for others who have wandered off is often the only way to put food on the table. But the Grigori don't mind; it is a small price to pay to be free of the madness of faith outside their home.</Italian>
-		<Spanish>The Grigori gain their signature unit, the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] by assigning Greenhorns and Volunteers in their cities, hoping that one of them will rise to become a hero of the people.
-
-The Grigori are a decentralised people, wanderers move from town to town, and subsistence is the norm.
-Performing odd jobs and filling in for others who have wandered off is often the only way to put food on the table. But the Grigori don't mind; it is a small price to pay to be free of the madness of faith outside their home.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALIST_HEALER_MEKARA</Tag>

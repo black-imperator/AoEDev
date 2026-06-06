@@ -276,7 +276,6 @@
 			<bPermanent>1</bPermanent>
 			<iHappiness>100</iHappiness>
 			<bRequiresFlatlands>1</bRequiresFlatlands>
-			<bRequiresRiverSide>1</bRequiresRiverSide>
 			<bRequiresFeature>1</bRequiresFeature>
 			<FeatureMakesValids>
 				<FeatureMakesValid>

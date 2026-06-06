@@ -10105,6 +10105,12 @@
 			</UnitMeshGroups>
 			<iCombatDefense>3</iCombatDefense>
 			<iPowerMult>3</iPowerMult>
+			<GreatPeoples>
+				<GreatPeople>
+					<GreatPeopleClass>SPECIALISTCLASS_GREAT_HEALER</GreatPeopleClass>
+					<bGreatPeople>1</bGreatPeople>
+				</GreatPeople>
+			</GreatPeoples>
 			<FreePromotions>
 				<FreePromotion>
 					<PromotionType>PROMOTION_MEDIC1</PromotionType>
@@ -18422,6 +18428,152 @@
 			<iWeaponTierMax>3</iWeaponTierMax>
 			<PrereqBuildingClass>BUILDINGCLASS_BARRACKS</PrereqBuildingClass>
 		</UnitInfo>
+		<UnitInfo>        <!-- Fort Commander Grigori-->
+			<Class>UNITCLASS_FORT_COMMANDER</Class>
+			<Type>UNIT_FORT_COMMANDER_GRIGORI</Type>
+			<Combat>UNITCOMBAT_SIEGE</Combat>
+			<DefaultUnitAI>UNITAI_FORT_COMMANDER</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_FORT_COMMANDER_GRIGORI</Description>
+			<Civilopedia>TXT_KEY_UNIT_FORT_COMMANDER_GRIGORI_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_FORT_COMMANDER_STRATEGY</Strategy>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bMilitarySupport>1</bMilitarySupport>
+			<bNukeImmune>1</bNukeImmune>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<iFlavor>3</iFlavor>
+				</Flavor>
+			</Flavors>
+			<iCost>-1</iCost>
+			<iAdvancedStartCost>-1</iAdvancedStartCost>
+			<iMoves>1</iMoves>
+			<iAirRange>1</iAirRange>
+			<iCombat>3</iCombat>
+			<iAirCombat>4</iAirCombat>
+			<iAirCombatLimit>40</iAirCombatLimit>
+			<iChanceFirstStrikes>1</iChanceFirstStrikes>
+			<iCollateralDamage>40</iCollateralDamage>
+			<iCollateralDamageLimit>30</iCollateralDamageLimit>
+			<iCollateralDamageMaxUnits>3</iCollateralDamageMaxUnits>
+			<UnitMeshGroups>
+				<iGroupSize>1</iGroupSize>
+				<fMaxSpeed>1.25</fMaxSpeed>
+				<fPadTime>1</fPadTime>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_MILITIA_CROSSBOWMAN</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_INFLUENCE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_SIEGECOMBAT</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+			<bFreeXP>1</bFreeXP>
+			<DenyPromotions>
+				<Promotion>PROMOTION_MOBILITY1</Promotion>
+				<Promotion>PROMOTION_MECHANOS_AFFINITY_ENABLER</Promotion>
+				<Promotion>PROMOTION_ENRAGED</Promotion>
+			</DenyPromotions>
+			<iPowerMult>4</iPowerMult>
+		</UnitInfo>
+		<UnitInfo>        <!-- Militia Grigori -->
+			<Class>UNITCLASS_WORKER</Class>
+			<Type>UNIT_MILITIA_GRIGORI</Type>
+			<Combat>UNITCOMBAT_WORKER</Combat>
+			<DefaultUnitAI>UNITAI_WORKER</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_MILITIA_GRIGORI</Description>
+			<Civilopedia>TXT_KEY_UNIT_MILITIA_GRIGORI_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_MILITIA_GRIGORI_STRATEGY</Strategy>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bMilitarySupport>1</bMilitarySupport>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<bPillage>1</bPillage>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ATTACK</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_CITY_DEFENSE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_WORKER</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<Builds>
+				<Build>
+					<BuildType>BUILD_ROAD</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_FARM</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_WORKSHOP</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_CAMP</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_REMOVE_FOREST</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+			</Builds>
+			<iWorkRate>100</iWorkRate>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_LEASH_2</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MILITIA_GRIGORI</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+			<PrereqTech>TECH_NEVER</PrereqTech>
+			<iCost>-1</iCost>
+			<iMoves>1</iMoves>
+			<iCombat>2</iCombat>
+			<iConscription>2</iConscription>
+			<iCultureGarrison>4</iCultureGarrison>
+			<iAsset>3</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>4</iGroupSize>
+				<iMeleeWaveSize>4</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>4</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_FARMER</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<iCombatDefense>3</iCombatDefense>
+			<iTier>2</iTier>
+			<iWeaponTierMax>0</iWeaponTierMax>
+		</UnitInfo>
 		<UnitInfo>        <!-- Great Luonnotar -->
 			<Class>UNITCLASS_PROPHET</Class>
 			<Type>UNIT_GREAT_LUONNOTAR</Type>
@@ -23144,7 +23296,7 @@
 			</UnitAIs>
 			<Builds>
 				<Build>
-					<BuildType>BUILD_PATH_OF_LUGUS</BuildType>
+					<BuildType>BUILD_ROAD</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>

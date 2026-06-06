@@ -6302,6 +6302,8 @@
 			<bAllowAI>1</bAllowAI>
 			<iAIWeight>100</iAIWeight>
 			<bInBordersOnly>1</bInBordersOnly>
+			<bIsAutoCastable>1</bIsAutoCastable>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
 			<bHasCasted>1</bHasCasted>
 			<ImprovementPrereq>IMPROVEMENT_DTESH_CRYPT</ImprovementPrereq>
 			<PyRequirement>reqDefileCrypt(pCaster)</PyRequirement>
@@ -6670,6 +6672,23 @@
 			<Sound>AS3D_SPELL_CHARM_PERSON</Sound>
 			<bGraphicalOnly>1</bGraphicalOnly>
 			<Button>Art/Interface/Buttons/Units/Scions/awake.dds</Button>
+		</SpellInfo>
+		<SpellInfo>			<!-- Remove Grigori Leash 2 -->
+			<Type>SPELL_ENLIST_GRIGORI_MILITIA</Type>
+			<Description>TXT_KEY_SPELL_ENLIST_GRIGORI_MILITIA</Description>
+			<Civilopedia></Civilopedia>
+			<Strategy></Strategy>
+			<PromotionPrereq1>PROMOTION_LEASH_2</PromotionPrereq1>
+			<UnitPrereq>UNIT_MILITIA_GRIGORI</UnitPrereq>
+			<bHasCasted>1</bHasCasted>
+			<iCost>10</iCost>
+			<RemovePromotions>
+				<RemovePromotion>PROMOTION_LEASH_2</RemovePromotion>
+			</RemovePromotions>
+			<bBuffCasterOnly>1</bBuffCasterOnly>
+			<Effect>EFFECT_SPELL1</Effect>
+			<Sound>AS3D_SWORD_FLAT</Sound>
+			<Button>Art/Interface/Buttons/Promotions/Civs/Mekara/Militia.dds</Button>
 		</SpellInfo>
 		<SpellInfo>			<!-- Call Blizzard -->						<!-- ILLIANS SPELLS -->
 			<Type>SPELL_CALL_BLIZZARD</Type>

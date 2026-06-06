@@ -1646,7 +1646,7 @@
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<SpecialistClassCounts>
 				<SpecialistClassCount>
-					<SpecialistClass>SPECIALISTCLASS_STATESMAN</SpecialistClass>
+					<SpecialistClass>SPECIALISTCLASS_ARTIST</SpecialistClass>
 					<iSpecialistClassCount>2</iSpecialistClassCount>
 				</SpecialistClassCount>
 			</SpecialistClassCounts>
@@ -1675,6 +1675,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_GRIGORI_FREEDOM_PEDIA</Civilopedia>
 			<ArtDefineTag>ART_DEF_BUILDING_ARENA</ArtDefineTag>
 			<PrereqTech>TECH_CRAFTING</PrereqTech>
+			<iPlotRadius>1</iPlotRadius>
 			<iPrereqPopulation>1</iPrereqPopulation>
 			<iAIWeight>10</iAIWeight>
 			<iCost>-1</iCost>
@@ -1686,7 +1687,6 @@
 			<fVisibilityPriority>1000</fVisibilityPriority>
 			<ConstructSound>AS2D_BUILD_COURTHOUSE</ConstructSound>
 			<bAutoBuild>1</bAutoBuild>
-			<bMustMaintain>1</bMustMaintain>
 		</BuildingInfo>
 		<BuildingInfo>		<!-- Grigori Caution Apostates         Grigori UB -->
 			<BuildingClass>BUILDINGCLASS_GRIGORI_APOSTATES</BuildingClass>
@@ -1702,11 +1702,11 @@
 			<iConquestProb>0</iConquestProb>
 			<GreatPeopleUnitClass>UNITCLASS_PROPHET</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
+			<iMaintenanceModifier>50</iMaintenanceModifier>
 			<iAsset>4</iAsset>
 			<fVisibilityPriority>1000</fVisibilityPriority>
 			<ConstructSound>AS2D_BUILD_COURTHOUSE</ConstructSound>
 			<bAutoBuild>1</bAutoBuild>
-			<bMustMaintain>1</bMustMaintain>
 		</BuildingInfo>
 		<BuildingInfo>		<!-- Blasting Workshop                                          Luchuirp UB -->
 			<BuildingClass>BUILDINGCLASS_BLASTING_WORKSHOP</BuildingClass>
@@ -1937,6 +1937,10 @@
 				</Flavor>
 				<Flavor>
 					<FlavorType>FLAVOR_SCIENCE</FlavorType>
+					<iFlavor>12</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_MAGIC</FlavorType>
 					<iFlavor>12</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -7253,7 +7257,7 @@
 			<fVisibilityPriority>1</fVisibilityPriority>
 			<SpecialistClassCounts>
 				<SpecialistClassCount>
-					<SpecialistClass>SPECIALISTCLASS_STATESMAN</SpecialistClass>
+					<SpecialistClass>SPECIALISTCLASS_ARTIST</SpecialistClass>
 					<iSpecialistClassCount>2</iSpecialistClassCount>
 				</SpecialistClassCount>
 			</SpecialistClassCounts>
@@ -7306,13 +7310,13 @@
 			<BuildingClass>BUILDINGCLASS_MONUMENT</BuildingClass>
 			<Type>BUILDING_MONUMENT_GRIGORI</Type>
 			<Description>TXT_KEY_BUILDING_MONUMENT_GRIGORI</Description>
-			<Civilopedia>TXT_KEY_LORE_BELTANE_CYCLE_3_PEDIA</Civilopedia>
+			<Civilopedia>TXT_KEY_BUILDING_MONUMENT_GRIGORI_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_SHRINE_TO_KYLORIN</ArtDefineTag>
 			<PrereqTech>TECH_ANCIENT_CHANTS</PrereqTech>
 			<SpecialistClassCounts>
 				<SpecialistClassCount>
-					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<SpecialistClass>SPECIALISTCLASS_ARTIST</SpecialistClass>
 					<iSpecialistClassCount>1</iSpecialistClassCount>
 				</SpecialistClassCount>
 			</SpecialistClassCounts>
@@ -14811,7 +14815,7 @@
 			<iDefense>50</iDefense>
 			<iAsset>0</iAsset>
 			<fVisibilityPriority>10000</fVisibilityPriority>
-			<iCityCapModifier>12</iCityCapModifier>
+			<iCityCapModifier>6</iCityCapModifier>
 			<YieldChanges>
 				<iYield>0</iYield>
 				<iYield>1</iYield>
@@ -14828,7 +14832,7 @@
 			<iFreePromotionPick>0</iFreePromotionPick>
 			<iGlobalResistEnemyModify>0</iGlobalResistEnemyModify>
 			<iGlobalResistModify>0</iGlobalResistModify>
-			<iPlotRadius>3</iPlotRadius>
+			<iPlotRadius>2</iPlotRadius>
 			<FreeBonus2>BONUS_MANA_SHADOW</FreeBonus2>
 			<FreeBonus3>BONUS_MANA_FIRE</FreeBonus3>
 		</BuildingInfo>
@@ -14846,7 +14850,7 @@
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iConquestProb>0</iConquestProb>
 			<fVisibilityPriority>10000</fVisibilityPriority>
-			<iCityCapModifier>12</iCityCapModifier>
+			<iCityCapModifier>6</iCityCapModifier>
 			<BonusYieldModifiers>
 				<BonusYieldModifier>
 					<BonusType>BONUS_ASH</BonusType>
@@ -14899,7 +14903,7 @@
 					<iFlavor>25</iFlavor>
 				</Flavor>
 			</Flavors>
-			<iPlotRadius>3</iPlotRadius>
+			<iPlotRadius>2</iPlotRadius>
 		</BuildingInfo>
 		<BuildingInfo>		<!-- Dtesh Dungeon -->
 			<BuildingClass>BUILDINGCLASS_DUNGEON</BuildingClass>
@@ -14916,6 +14920,7 @@
 			<iAsset>4</iAsset>
 			<iCrime>-10</iCrime>
 			<fVisibilityPriority>1</fVisibilityPriority>
+			<iCityCapModifier>1</iCityCapModifier>
 			<BonusProductionModifiers>
 				<BonusProductionModifier>
 					<BonusType>BONUS_STONE</BonusType>
@@ -14959,7 +14964,7 @@
 					<iProductionTrait>100</iProductionTrait>
 				</ProductionTrait>
 			</ProductionTraits>
-			<iCityCapModifier>2</iCityCapModifier>
+			<iCityCapModifier>1</iCityCapModifier>
 			<bNeverCapture>0</bNeverCapture>
 			<bNukeImmune>0</bNukeImmune>
 			<bCenterInCity>1</bCenterInCity>
@@ -15014,7 +15019,7 @@
 					<iProductionTrait>100</iProductionTrait>
 				</ProductionTrait>
 			</ProductionTraits>
-			<iCityCapModifier>2</iCityCapModifier>
+			<iCityCapModifier>1</iCityCapModifier>
 			<bNeverCapture>1</bNeverCapture>
 			<bNukeImmune>0</bNukeImmune>
 			<iCost>100</iCost>
@@ -15060,7 +15065,7 @@
 					<iProductionTrait>100</iProductionTrait>
 				</ProductionTrait>
 			</ProductionTraits>
-			<iCityCapModifier>4</iCityCapModifier>
+			<iCityCapModifier>2</iCityCapModifier>
 			<bNeverCapture>0</bNeverCapture>
 			<bNukeImmune>0</bNukeImmune>
 			<iAIWeight>40</iAIWeight>
@@ -15111,7 +15116,7 @@
 					<iProductionTrait>100</iProductionTrait>
 				</ProductionTrait>
 			</ProductionTraits>
-			<iCityCapModifier>6</iCityCapModifier>
+			<iCityCapModifier>3</iCityCapModifier>
 			<bNeverCapture>0</bNeverCapture>
 			<bNukeImmune>0</bNukeImmune>
 			<iAIWeight>20</iAIWeight>
@@ -16184,6 +16189,7 @@
 			<iMaintenanceModifier>-5</iMaintenanceModifier>
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>1</fVisibilityPriority>
+			<iAIWeight>40</iAIWeight>
 			<CommerceModifiers>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
@@ -16200,6 +16206,10 @@
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_RELIGION</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -16362,7 +16372,7 @@
 			<Help>TXT_KEY_BUILDING_SLAVE_MARKET_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_SLAVE_MARKET</ArtDefineTag>
-			<PrereqTech>TECH_TAXATION</PrereqTech>
+			<PrereqTech>TECH_CURRENCY</PrereqTech>
 			<FreeBuilding>BUILDINGCLASS_PAGAN_TEMPLE</FreeBuilding>
 			<FreePromotion />
 			<iCost>200</iCost>
@@ -16373,47 +16383,26 @@
 			<fVisibilityPriority>100</fVisibilityPriority>
 			<YieldModifiers>
 				<iYield>0</iYield>
-				<iYield>15</iYield>
-				<iYield>5</iYield>
+				<iYield>0</iYield>
+				<iYield>0</iYield>
 			</YieldModifiers>
+			<iTradeRoutes>1</iTradeRoutes>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
-			<LocalSpecialistClassCommerceChanges>
-				<LocalSpecialistClassCommerceChange>
-					<SpecialistClass>NONE</SpecialistClass>
-					<CommerceChanges>
-						<iCommerce>0</iCommerce>
-						<iCommerce>0</iCommerce>
-						<iCommerce>0</iCommerce>
-					</CommerceChanges>
-				</LocalSpecialistClassCommerceChange>
-			</LocalSpecialistClassCommerceChanges>
-			<LocalSpecialistClassYieldChanges>
-				<LocalSpecialistClassYieldChange>
+			<SpecialistClassYieldChanges>
+				<SpecialistClassYieldChange>
 					<SpecialistClass>SPECIALISTCLASS_SLAVE</SpecialistClass>
 					<YieldChanges>
 						<iYield>0</iYield>
 						<iYield>1</iYield>
 						<iYield>1</iYield>
 					</YieldChanges>
-				</LocalSpecialistClassYieldChange>
-			</LocalSpecialistClassYieldChanges>
-			<LocalSpecialistClassHappinessChanges>
-				<LocalSpecialistClassHappinessChange>
-					<SpecialistClass>NONE</SpecialistClass>
-					<iHappiness>0</iHappiness>
-				</LocalSpecialistClassHappinessChange>
-			</LocalSpecialistClassHappinessChanges>
-			<LocalSpecialistClassGPPChanges>
-				<LocalSpecialistClassGPPChange>
-					<SpecialistClass>NONE</SpecialistClass>
-					<iGreatPeopleRateModifier>0</iGreatPeopleRateModifier>
-				</LocalSpecialistClassGPPChange>
-			</LocalSpecialistClassGPPChanges>
+				</SpecialistClassYieldChange>
+			</SpecialistClassYieldChanges>
 		</BuildingInfo>
 		<BuildingInfo>		<!-- Colosseum                                                  Mekara UB -->
 			<BuildingClass>BUILDINGCLASS_THEATRE</BuildingClass>

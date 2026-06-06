@@ -47,56 +47,76 @@
 	</TEXT> -->
 	<TEXT>
 		<Tag>TXT_KEY_CIV_GRIGORI_STRATEGY</Tag>
-		<English>Complexity: Standard
+		<English>Complexity: Advanced.
 The common folk and would-be heroes form a kingdom safe from gods.
 
-[ICON_BULLET]Greenhorn and Apostate: a subset of the Priest specialist, the Apostate reduces a city's commerce, but provides training to military units and reduces the Greenhorns crime in the city.
-And as for the Greenhorn, these fellows give Adventurer GPP, minor yields, and reduce the commerce penalty of Apostates in the city. Balancing both sides of the Grigori dogma may produce the best results.
-[ICON_BULLET]Adventurers: The Grigori have access to the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] Great Person. This Great Person is able to upgrade into any unit type and starts with the hero promotion. While the average Grigori unit is nothing special to look at, the Grigori Adventurers are extremely powerful and can face down whole armies on their own.
-[ICON_BULLET]Refugees: At Code of Laws ,the Grigori are able to build the Memorial of the Refugee, which begins refugees flocking to the Grigori lands to escape the horrors of Erebus. Refugee units can upgrade into anything, have a random racial promotion, and can also create the Dwelling of the Refugee, which increases refugee spawn chance.
-[ICON_BULLET]Economy: The Grigori's unique improvement, the Homestead, upgrades from farms and pastures. This improvement provides the nearest city with a Greenhorn who gives Adventurer GPP.
-[ICON_BULLET]Agnostic: The Golgari refuse the squabbling mess of the divine, choosing to make their own way; this costs them the ability to make religious improvements, units or temples.
-[ICON_BULLET]Crime: While less suited to it than a follower of Esus, the Grigori are able to post Bounties in cities above certain crime levels. These bounties increase Adventurer spawn rate, and the Adventurers Guild profits directly from each active crime or bounty in the city.</English>
-		<French>Complexity: Standard
+[ICON_BULLET]Great Persons: The Grigori have a lot of passive sources of Great Person Points, but they are weighted to favour the Adventurer and Luonnotar Great Persons. It is still possible to go for a sage or guilmaster, but with greater effort.
+[ICON_BULLET]Adventurers: The Adventurer great person is able to upgrade into any unit type and comes with the powerful Hero promotion. The Greenhorn specialist also gives Adventurer points.
+[ICON_BULLET]Luonnotar: The Great Luonnotar is a Great Prophet who can found an academy or settle in the city to provide unit training XP and city defence instead of gold and hammers, in addition to the other Great Prophet abilities. The Apostate specialist is also able to train units and give city defence, at the cost of currency.
+[ICON_BULLET]Agnostic: The Grigori follow the teachings of Cassiel and the Luonnotar and do not follow any religion; instead, they walk either the path of personal freedom(Adventurers) or the protection of that freedom(Apostates).
+[ICON_BULLET]Decentralised: Grigori cities only work the first ring of tiles and have higher upkeep costs; they also have weaker improvements that give free Volunteer specialists, and gain the majority of their production from their forts (Commune Settlements), which supply cities from far away and can defend themselves with Freefolk Militia.
+[ICON_BULLET]Growth: Multiple mechanics for the Grigori grow with investment, such as: 
+Commune Settlements send higher yields when appropriate tech is researched (Trade+Construction+Code of Laws for T2, and Guilds, Engineering, Feudalism for T3). 
+Volunteers from improvements gain additional yields from the tech tree. 
+Greenhorn and Apostate specialists improve each other; the more of both of them you have, the better they both perform.
+
+</English>
+		<French>Complexity: Advanced.
 The common folk and would-be heroes form a kingdom safe from gods.
 
-[ICON_BULLET]Greenhorn and Apostate: a subset of the Priest specialist, the Apostate reduces a city's commerce, but provides training to military units and reduces the Greenhorns crime in the city.
-And as for the Greenhorn, these fellows give Adventurer GPP, minor yields, and reduce the commerce penalty of Apostates in the city. Balancing both sides of the Grigori dogma may produce the best results.
-[ICON_BULLET]Adventurers: The Grigori have access to the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] Great Person. This Great Person is able to upgrade into any unit type and starts with the hero promotion. While the average Grigori unit is nothing special to look at, the Grigori Adventurers are extremely powerful and can face down whole armies on their own.
-[ICON_BULLET]Refugees: At Code of Laws ,the Grigori are able to build the Memorial of the Refugee, which begins refugees flocking to the Grigori lands to escape the horrors of Erebus. Refugee units can upgrade into anything, have a random racial promotion, and can also create the Dwelling of the Refugee, which increases refugee spawn chance.
-[ICON_BULLET]Economy: The Grigori's unique improvement, the Homestead, upgrades from farms and pastures. This improvement provides the nearest city with a Greenhorn who gives Adventurer GPP.
-[ICON_BULLET]Agnostic: The Golgari refuse the squabbling mess of the divine, choosing to make their own way; this costs them the ability to make religious improvements, units or temples.
-[ICON_BULLET]Crime: While less suited to it than a follower of Esus, the Grigori are able to post Bounties in cities above certain crime levels. These bounties increase Adventurer spawn rate, and the Adventurers Guild profits directly from each active crime or bounty in the city.</French>
-		<German>Complexity: Standard
+[ICON_BULLET]Great Persons: The Grigori have a lot of passive sources of Great Person Points, but they are weighted to favour the Adventurer and Luonnotar Great Persons. It is still possible to go for a sage or guilmaster, but with greater effort.
+[ICON_BULLET]Adventurers: The Adventurer great person is able to upgrade into any unit type and comes with the powerful Hero promotion. The Greenhorn specialist also gives Adventurer points.
+[ICON_BULLET]Luonnotar: The Great Luonnotar is a Great Prophet who can found an academy or settle in the city to provide unit training XP and city defence instead of gold and hammers, in addition to the other Great Prophet abilities. The Apostate specialist is also able to train units and give city defence, at the cost of currency.
+[ICON_BULLET]Agnostic: The Grigori follow the teachings of Cassiel and the Luonnotar and do not follow any religion; instead, they walk either the path of personal freedom(Adventurers) or the protection of that freedom(Apostates).
+[ICON_BULLET]Decentralised: Grigori cities only work the first ring of tiles and have higher upkeep costs; they also have weaker improvements that give free Volunteer specialists, and gain the majority of their production from their forts (Commune Settlements), which supply cities from far away and can defend themselves with Freefolk Militia.
+[ICON_BULLET]Growth: Multiple mechanics for the Grigori grow with investment, such as: 
+Commune Settlements send higher yields when appropriate tech is researched (Trade+Construction+Code of Laws for T2, and Guilds, Engineering, Feudalism for T3). 
+Volunteers from improvements gain additional yields from the tech tree. 
+Greenhorn and Apostate specialists improve each other; the more of both of them you have, the better they both perform.
+
+</French>
+		<German>Complexity: Advanced.
 The common folk and would-be heroes form a kingdom safe from gods.
 
-[ICON_BULLET]Greenhorn and Apostate: a subset of the Priest specialist, the Apostate reduces a city's commerce, but provides training to military units and reduces the Greenhorns crime in the city.
-And as for the Greenhorn, these fellows give Adventurer GPP, minor yields, and reduce the commerce penalty of Apostates in the city. Balancing both sides of the Grigori dogma may produce the best results.
-[ICON_BULLET]Adventurers: The Grigori have access to the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] Great Person. This Great Person is able to upgrade into any unit type and starts with the hero promotion. While the average Grigori unit is nothing special to look at, the Grigori Adventurers are extremely powerful and can face down whole armies on their own.
-[ICON_BULLET]Refugees: At Code of Laws ,the Grigori are able to build the Memorial of the Refugee, which begins refugees flocking to the Grigori lands to escape the horrors of Erebus. Refugee units can upgrade into anything, have a random racial promotion, and can also create the Dwelling of the Refugee, which increases refugee spawn chance.
-[ICON_BULLET]Economy: The Grigori's unique improvement, the Homestead, upgrades from farms and pastures. This improvement provides the nearest city with a Greenhorn who gives Adventurer GPP.
-[ICON_BULLET]Agnostic: The Golgari refuse the squabbling mess of the divine, choosing to make their own way; this costs them the ability to make religious improvements, units or temples.
-[ICON_BULLET]Crime: While less suited to it than a follower of Esus, the Grigori are able to post Bounties in cities above certain crime levels. These bounties increase Adventurer spawn rate, and the Adventurers Guild profits directly from each active crime or bounty in the city.</German>
-		<Italian>Complexity: Standard
+[ICON_BULLET]Great Persons: The Grigori have a lot of passive sources of Great Person Points, but they are weighted to favour the Adventurer and Luonnotar Great Persons. It is still possible to go for a sage or guilmaster, but with greater effort.
+[ICON_BULLET]Adventurers: The Adventurer great person is able to upgrade into any unit type and comes with the powerful Hero promotion. The Greenhorn specialist also gives Adventurer points.
+[ICON_BULLET]Luonnotar: The Great Luonnotar is a Great Prophet who can found an academy or settle in the city to provide unit training XP and city defence instead of gold and hammers, in addition to the other Great Prophet abilities. The Apostate specialist is also able to train units and give city defence, at the cost of currency.
+[ICON_BULLET]Agnostic: The Grigori follow the teachings of Cassiel and the Luonnotar and do not follow any religion; instead, they walk either the path of personal freedom(Adventurers) or the protection of that freedom(Apostates).
+[ICON_BULLET]Decentralised: Grigori cities only work the first ring of tiles and have higher upkeep costs; they also have weaker improvements that give free Volunteer specialists, and gain the majority of their production from their forts (Commune Settlements), which supply cities from far away and can defend themselves with Freefolk Militia.
+[ICON_BULLET]Growth: Multiple mechanics for the Grigori grow with investment, such as: 
+Commune Settlements send higher yields when appropriate tech is researched (Trade+Construction+Code of Laws for T2, and Guilds, Engineering, Feudalism for T3). 
+Volunteers from improvements gain additional yields from the tech tree. 
+Greenhorn and Apostate specialists improve each other; the more of both of them you have, the better they both perform.
+
+</German>
+		<Italian>Complexity: Advanced.
 The common folk and would-be heroes form a kingdom safe from gods.
 
-[ICON_BULLET]Greenhorn and Apostate: a subset of the Priest specialist, the Apostate reduces a city's commerce, but provides training to military units and reduces the Greenhorns crime in the city.
-And as for the Greenhorn, these fellows give Adventurer GPP, minor yields, and reduce the commerce penalty of Apostates in the city. Balancing both sides of the Grigori dogma may produce the best results.
-[ICON_BULLET]Adventurers: The Grigori have access to the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] Great Person. This Great Person is able to upgrade into any unit type and starts with the hero promotion. While the average Grigori unit is nothing special to look at, the Grigori Adventurers are extremely powerful and can face down whole armies on their own.
-[ICON_BULLET]Refugees: At Code of Laws ,the Grigori are able to build the Memorial of the Refugee, which begins refugees flocking to the Grigori lands to escape the horrors of Erebus. Refugee units can upgrade into anything, have a random racial promotion, and can also create the Dwelling of the Refugee, which increases refugee spawn chance.
-[ICON_BULLET]Economy: The Grigori's unique improvement, the Homestead, upgrades from farms and pastures. This improvement provides the nearest city with a Greenhorn who gives Adventurer GPP.
-[ICON_BULLET]Agnostic: The Golgari refuse the squabbling mess of the divine, choosing to make their own way; this costs them the ability to make religious improvements, units or temples.
-[ICON_BULLET]Crime: While less suited to it than a follower of Esus, the Grigori are able to post Bounties in cities above certain crime levels. These bounties increase Adventurer spawn rate, and the Adventurers Guild profits directly from each active crime or bounty in the city.</Italian>
-		<Spanish>Complexity: Standard
+[ICON_BULLET]Great Persons: The Grigori have a lot of passive sources of Great Person Points, but they are weighted to favour the Adventurer and Luonnotar Great Persons. It is still possible to go for a sage or guilmaster, but with greater effort.
+[ICON_BULLET]Adventurers: The Adventurer great person is able to upgrade into any unit type and comes with the powerful Hero promotion. The Greenhorn specialist also gives Adventurer points.
+[ICON_BULLET]Luonnotar: The Great Luonnotar is a Great Prophet who can found an academy or settle in the city to provide unit training XP and city defence instead of gold and hammers, in addition to the other Great Prophet abilities. The Apostate specialist is also able to train units and give city defence, at the cost of currency.
+[ICON_BULLET]Agnostic: The Grigori follow the teachings of Cassiel and the Luonnotar and do not follow any religion; instead, they walk either the path of personal freedom(Adventurers) or the protection of that freedom(Apostates).
+[ICON_BULLET]Decentralised: Grigori cities only work the first ring of tiles and have higher upkeep costs; they also have weaker improvements that give free Volunteer specialists, and gain the majority of their production from their forts (Commune Settlements), which supply cities from far away and can defend themselves with Freefolk Militia.
+[ICON_BULLET]Growth: Multiple mechanics for the Grigori grow with investment, such as: 
+Commune Settlements send higher yields when appropriate tech is researched (Trade+Construction+Code of Laws for T2, and Guilds, Engineering, Feudalism for T3). 
+Volunteers from improvements gain additional yields from the tech tree. 
+Greenhorn and Apostate specialists improve each other; the more of both of them you have, the better they both perform.
+
+</Italian>
+		<Spanish>Complexity: Advanced.
 The common folk and would-be heroes form a kingdom safe from gods.
 
-[ICON_BULLET]Greenhorn and Apostate: a subset of the Priest specialist, the Apostate reduces a city's commerce, but provides training to military units and reduces the Greenhorns crime in the city.
-And as for the Greenhorn, these fellows give Adventurer GPP, minor yields, and reduce the commerce penalty of Apostates in the city. Balancing both sides of the Grigori dogma may produce the best results.
-[ICON_BULLET]Adventurers: The Grigori have access to the [LINK=UNIT_ADVENTURER]Adventurer[\LINK] Great Person. This Great Person is able to upgrade into any unit type and starts with the hero promotion. While the average Grigori unit is nothing special to look at, the Grigori Adventurers are extremely powerful and can face down whole armies on their own.
-[ICON_BULLET]Refugees: At Code of Laws ,the Grigori are able to build the Memorial of the Refugee, which begins refugees flocking to the Grigori lands to escape the horrors of Erebus. Refugee units can upgrade into anything, have a random racial promotion, and can also create the Dwelling of the Refugee, which increases refugee spawn chance.
-[ICON_BULLET]Economy: The Grigori's unique improvement, the Homestead, upgrades from farms and pastures. This improvement provides the nearest city with a Greenhorn who gives Adventurer GPP.
-[ICON_BULLET]Agnostic: The Golgari refuse the squabbling mess of the divine, choosing to make their own way; this costs them the ability to make religious improvements, units or temples.
-[ICON_BULLET]Crime: While less suited to it than a follower of Esus, the Grigori are able to post Bounties in cities above certain crime levels. These bounties increase Adventurer spawn rate, and the Adventurers Guild profits directly from each active crime or bounty in the city.</Spanish>
+[ICON_BULLET]Great Persons: The Grigori have a lot of passive sources of Great Person Points, but they are weighted to favour the Adventurer and Luonnotar Great Persons. It is still possible to go for a sage or guilmaster, but with greater effort.
+[ICON_BULLET]Adventurers: The Adventurer great person is able to upgrade into any unit type and comes with the powerful Hero promotion. The Greenhorn specialist also gives Adventurer points.
+[ICON_BULLET]Luonnotar: The Great Luonnotar is a Great Prophet who can found an academy or settle in the city to provide unit training XP and city defence instead of gold and hammers, in addition to the other Great Prophet abilities. The Apostate specialist is also able to train units and give city defence, at the cost of currency.
+[ICON_BULLET]Agnostic: The Grigori follow the teachings of Cassiel and the Luonnotar and do not follow any religion; instead, they walk either the path of personal freedom(Adventurers) or the protection of that freedom(Apostates).
+[ICON_BULLET]Decentralised: Grigori cities only work the first ring of tiles and have higher upkeep costs; they also have weaker improvements that give free Volunteer specialists, and gain the majority of their production from their forts (Commune Settlements), which supply cities from far away and can defend themselves with Freefolk Militia.
+[ICON_BULLET]Growth: Multiple mechanics for the Grigori grow with investment, such as: 
+Commune Settlements send higher yields when appropriate tech is researched (Trade+Construction+Code of Laws for T2, and Guilds, Engineering, Feudalism for T3). 
+Volunteers from improvements gain additional yields from the tech tree. 
+Greenhorn and Apostate specialists improve each other; the more of both of them you have, the better they both perform.
+
+</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_CASSIEL</Tag>
@@ -461,6 +481,29 @@ If only they could learn to listen to one another.</Spanish>
 		<Spanish>Homestead</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_HOMESTEAD_PEDIA</Tag>
+		<English>To be without hymns but not without hams.
+Volunteers are prone to wandering off when the mood strikes them, leaving jobs half done, but no work is ever fully abandoned, either.
+
+The Grigori communities are mostly barter-based, so workers must make their way to larger settlements  if they wish to make any coin.</English>
+		<French>To be without hymns but not without hams.
+Volunteers are prone to wandering off when the mood strikes them, leaving jobs half done, but no work is ever fully abandoned, either.
+
+The Grigori communities are mostly barter-based, so workers must make their way to larger settlements  if they wish to make any coin.</French>
+		<German>To be without hymns but not without hams.
+Volunteers are prone to wandering off when the mood strikes them, leaving jobs half done, but no work is ever fully abandoned, either.
+
+The Grigori communities are mostly barter-based, so workers must make their way to larger settlements  if they wish to make any coin.</German>
+		<Italian>To be without hymns but not without hams.
+Volunteers are prone to wandering off when the mood strikes them, leaving jobs half done, but no work is ever fully abandoned, either.
+
+The Grigori communities are mostly barter-based, so workers must make their way to larger settlements  if they wish to make any coin.</Italian>
+		<Spanish>To be without hymns but not without hams.
+Volunteers are prone to wandering off when the mood strikes them, leaving jobs half done, but no work is ever fully abandoned, either.
+
+The Grigori communities are mostly barter-based, so workers must make their way to larger settlements  if they wish to make any coin.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_MESSAGE_REFUGEE</Tag>
 		<English>Refugee has arrived in your city!</English>
 		<French>Un Réfugié est arrivé dans votre ville !</French>
@@ -539,5 +582,306 @@ If only they could learn to listen to one another.</Spanish>
 		<German>Opportunist</German>
 		<Italian>Opportunist</Italian>
 		<Spanish>Opportunist</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_ENLIST_GRIGORI_MILITIA</Tag>
+		<English>Enlist Freefolk Militia</English>
+		<French>Enlist Freefolk Militia</French>
+		<German>Enlist Freefolk Militia</German>
+		<Italian>Enlist Freefolk Militia</Italian>
+		<Spanish>Enlist Freefolk Militia</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MILITIA_GRIGORI</Tag>
+		<English>Makeshift Weaponry</English>
+		<French>Makeshift Weaponry</French>
+		<German>Makeshift Weaponry</German>
+		<Italian>Makeshift Weaponry</Italian>
+		<Spanish>Makeshift Weaponry</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GRIGORI_FORT_COMMANDER</Tag>
+		<English>Commune Tax - Meagre</English>
+		<French>Commune Tax - Meagre</French>
+		<German>Commune Tax - Meagre</German>
+		<Italian>Commune Tax - Meagre</Italian>
+		<Spanish>Commune Tax - Meagre</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GRIGORI_FORT_COMMANDER2</Tag>
+		<English>Commune Tax - Moderate</English>
+		<French>Commune Tax -  Moderate</French>
+		<German>Commune Tax - Moderate</German>
+		<Italian>Commune Tax - Moderate</Italian>
+		<Spanish>Commune Tax - Moderate</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GRIGORI_FORT_COMMANDER3</Tag>
+		<English>Commune Tax - Bountiful</English>
+		<French>Commune Tax - Bountiful</French>
+		<German>Commune Tax - Bountiful</German>
+		<Italian>Commune Tax - Bountiful</Italian>
+		<Spanish>Commune Tax - Bountiful</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_FORT_COMMANDER_GRIGORI</Tag>
+		<English>Militia Quartermaster</English>
+		<French>Militia Quartermaster</French>
+		<German>Militia Quartermaster</German>
+		<Italian>Militia Quartermaster</Italian>
+		<Spanish>Militia Quartermaster</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MILITIA_GRIGORI</Tag>
+		<English>Freefolk Militia</English>
+		<French>Freefolk Militia</French>
+		<German>Freefolk Militia</German>
+		<Italian>Freefolk Militia</Italian>
+		<Spanish>Freefolk Militia</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MILITIA_GRIGORI_PEDIA</Tag>
+		<English>The men and women of the Grigori Communes would lay down their lives to protect their little piece of paradise.
+
+And probably will.</English>
+		<French>The men and women of the Grigori Communes would lay down their lives to protect their little piece of paradise.
+
+And probably will.</French>
+		<German>The men and women of the Grigori Communes would lay down their lives to protect their little piece of paradise.
+
+And probably will.</German>
+		<Italian>The men and women of the Grigori Communes would lay down their lives to protect their little piece of paradise.
+
+And probably will.</Italian>
+		<Spanish>The men and women of the Grigori Communes would lay down their lives to protect their little piece of paradise.
+
+And probably will.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MILITIA_GRIGORI_STRATEGY</Tag>
+		<English>The Freefolk Militia are a strange type of worker that spawns from Grigori Commune forts.
+These units have a combat strength and are able to defend, but they are common folk, not soldiers, and so can not take military promotions.
+
+They do, however, have a knack for turning scrap metal into a makeshift polearm.
+If the Grigori have access to a metal and the correct technology for it, then the Militia will gain access to crude versions of the metal weapons they have made themselves. 
+
+Militia are normally tied to the land they live on, but for a minor sum, they can be enlisted to leave their homes.</English>
+		<French>The Freefolk Militia are a strange type of worker that spawns from Grigori Commune forts.
+These units have a combat strength and are able to defend, but they are common folk, not soldiers, and so can not take military promotions.
+
+They do, however, have a knack for turning scrap metal into a makeshift polearm.
+If the Grigori have access to a metal and the correct technology for it, then the Militia will gain access to crude versions of the metal weapons they have made themselves. 
+
+Militia are normally tied to the land they live on, but for a minor sum, they can be enlisted to leave their homes.</French>
+		<German>The Freefolk Militia are a strange type of worker that spawns from Grigori Commune forts.
+These units have a combat strength and are able to defend, but they are common folk, not soldiers, and so can not take military promotions.
+
+They do, however, have a knack for turning scrap metal into a makeshift polearm.
+If the Grigori have access to a metal and the correct technology for it, then the Militia will gain access to crude versions of the metal weapons they have made themselves. 
+
+Militia are normally tied to the land they live on, but for a minor sum, they can be enlisted to leave their homes.</German>
+		<Italian>The Freefolk Militia are a strange type of worker that spawns from Grigori Commune forts.
+These units have a combat strength and are able to defend, but they are common folk, not soldiers, and so can not take military promotions.
+
+They do, however, have a knack for turning scrap metal into a makeshift polearm.
+If the Grigori have access to a metal and the correct technology for it, then the Militia will gain access to crude versions of the metal weapons they have made themselves. 
+
+Militia are normally tied to the land they live on, but for a minor sum, they can be enlisted to leave their homes.</Italian>
+		<Spanish>The Freefolk Militia are a strange type of worker that spawns from Grigori Commune forts.
+These units have a combat strength and are able to defend, but they are common folk, not soldiers, and so can not take military promotions.
+
+They do, however, have a knack for turning scrap metal into a makeshift polearm.
+If the Grigori have access to a metal and the correct technology for it, then the Militia will gain access to crude versions of the metal weapons they have made themselves. 
+
+Militia are normally tied to the land they live on, but for a minor sum, they can be enlisted to leave their homes.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MONUMENT_GRIGORI</Tag>
+		<English>Heroic Statue</English>
+		<French>Heroic Statue</French>
+		<German>Heroic Statue</German>
+		<Italian>Heroic Statue</Italian>
+		<Spanish>Heroic Statue</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MONUMENT_GRIGORI_PEDIA</Tag>
+		<English>A statue of a brave warrior with her sword pointed to the heavens.
+
+And from it, the dreams of local boys and girls are filled with adventure.</English>
+		<French>A statue of a brave warrior with her sword pointed to the heavens.
+
+And from it, the dreams of local boys and girls are filled with adventure.</French>
+		<German>A statue of a brave warrior with her sword pointed to the heavens.
+
+And from it, the dreams of local boys and girls are filled with adventure.</German>
+		<Italian>A statue of a brave warrior with her sword pointed to the heavens.
+
+And from it, the dreams of local boys and girls are filled with adventure.</Italian>
+		<Spanish>A statue of a brave warrior with her sword pointed to the heavens.
+
+And from it, the dreams of local boys and girls are filled with adventure.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_CAMP_GRIGORI</Tag>
+		<English>Forage Camp</English>
+		<French>Forage Camp</French>
+		<German>Forage Camp</German>
+		<Italian>Forage Camp</Italian>
+		<Spanish>Forage Camp</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_CAMP_GRIGORI_PEDIA</Tag>
+		<English>The Freedom to sleep under the open sky, and moan about it the next day.
+Volunteers are prone to wandering off when the mood strikes them, leaving jobs half done, but no work is ever fully abandoned, either.
+
+The Grigori communities are mostly barter-based, so workers must make their way to larger settlements  if they wish to make any coin.</English>
+		<French>The Freedom to sleep under the open sky, and moan about it the next day.
+Volunteers are prone to wandering off when the mood strikes them, leaving jobs half done, but no work is ever fully abandoned, either.
+
+The Grigori communities are mostly barter-based, so workers must make their way to larger settlements  if they wish to make any coin.</French>
+		<German>The Freedom to sleep under the open sky, and moan about it the next day.
+Volunteers are prone to wandering off when the mood strikes them, leaving jobs half done, but no work is ever fully abandoned, either.
+
+The Grigori communities are mostly barter-based, so workers must make their way to larger settlements  if they wish to make any coin.</German>
+		<Italian>The Freedom to sleep under the open sky, and moan about it the next day.
+Volunteers are prone to wandering off when the mood strikes them, leaving jobs half done, but no work is ever fully abandoned, either.
+
+The Grigori communities are mostly barter-based, so workers must make their way to larger settlements  if they wish to make any coin.</Italian>
+		<Spanish>The Freedom to sleep under the open sky, and moan about it the next day.
+Volunteers are prone to wandering off when the mood strikes them, leaving jobs half done, but no work is ever fully abandoned, either.
+
+The Grigori communities are mostly barter-based, so workers must make their way to larger settlements  if they wish to make any coin.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_FISHING_BOATS_GRIGORI_PEDIA</Tag>
+		<English>Empty nets and open minds.
+Volunteers are prone to wandering off when the mood strikes them, leaving jobs half done, but no work is ever fully abandoned, either.
+
+The Grigori communities are mostly barter-based, so workers must make their way to larger settlements  if they wish to make any coin.</English>
+		<French>Empty nets and open minds.
+Volunteers are prone to wandering off when the mood strikes them, leaving jobs half done, but no work is ever fully abandoned, either.
+
+The Grigori communities are mostly barter-based, so workers must make their way to larger settlements  if they wish to make any coin.</French>
+		<German>Empty nets and open minds.
+Volunteers are prone to wandering off when the mood strikes them, leaving jobs half done, but no work is ever fully abandoned, either.
+
+The Grigori communities are mostly barter-based, so workers must make their way to larger settlements  if they wish to make any coin.</German>
+		<Italian>Empty nets and open minds.
+Volunteers are prone to wandering off when the mood strikes them, leaving jobs half done, but no work is ever fully abandoned, either.
+
+The Grigori communities are mostly barter-based, so workers must make their way to larger settlements  if they wish to make any coin.</Italian>
+		<Spanish>Empty nets and open minds.
+Volunteers are prone to wandering off when the mood strikes them, leaving jobs half done, but no work is ever fully abandoned, either.
+
+The Grigori communities are mostly barter-based, so workers must make their way to larger settlements  if they wish to make any coin.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_FISHING_BOATS_GRIGORI</Tag>
+		<English>Net Dragger Boat</English>
+		<French>Net Dragger Boat</French>
+		<German>Net Dragger Boat</German>
+		<Italian>Net Dragger Boat</Italian>
+		<Spanish>Net Dragger Boat</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_WORKSHOP_GRIGORI</Tag>
+		<English>Foreman Worksite</English>
+		<French>Foreman Worksite</French>
+		<German>Foreman Worksite</German>
+		<Italian>Foreman Worksite</Italian>
+		<Spanish>Foreman Worksite</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_WORKSHOP_GRIGORI_PEDIA</Tag>
+		<English>By sweat and steel, not prayers and thoughts.
+Volunteers are prone to wandering off when the mood strikes them, leaving jobs half done, but no work is ever fully abandoned, either.
+
+The Grigori communities are mostly barter-based, so workers must make their way to larger settlements  if they wish to make any coin.</English>
+		<French>By sweat and steel, not prayers and thoughts.
+Volunteers are prone to wandering off when the mood strikes them, leaving jobs half done, but no work is ever fully abandoned, either.
+
+The Grigori communities are mostly barter-based, so workers must make their way to larger settlements  if they wish to make any coin.</French>
+		<German>By sweat and steel, not prayers and thoughts.
+Volunteers are prone to wandering off when the mood strikes them, leaving jobs half done, but no work is ever fully abandoned, either.
+
+The Grigori communities are mostly barter-based, so workers must make their way to larger settlements  if they wish to make any coin.</German>
+		<Italian>By sweat and steel, not prayers and thoughts.
+Volunteers are prone to wandering off when the mood strikes them, leaving jobs half done, but no work is ever fully abandoned, either.
+
+The Grigori communities are mostly barter-based, so workers must make their way to larger settlements  if they wish to make any coin.</Italian>
+		<Spanish>By sweat and steel, not prayers and thoughts.
+Volunteers are prone to wandering off when the mood strikes them, leaving jobs half done, but no work is ever fully abandoned, either.
+
+The Grigori communities are mostly barter-based, so workers must make their way to larger settlements  if they wish to make any coin.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_FORT_GRIGORI</Tag>
+		<English>Commune Settlement</English>
+		<French>Commune Settlement</French>
+		<German>Commune Settlement</German>
+		<Italian>Commune Settlement</Italian>
+		<Spanish>Commune Settlement</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_FORT_GRIGORI_PEDIA</Tag>
+		<English>The men and women of the Communes work tirelessly in their wilderness homes as a freefolk militia, serving the dual role of protector and provider of the Grigori realms
+
+Where the Grigori cities are best at producing coin and research, the Grigori Communes are best at working the land and sending a portion of that production supply back to the cities.
+A mix of both cities and communes will yield the best results.
+
+With research, the amount of yields they provide to cities grows.
+(Trade+Construction+Code of Laws upgrades the tax from Meagre to Moderate, and then Guilds+Feudalism+Engineering upgrades it again to Bountiful)</English>
+		<French>The men and women of the Communes work tirelessly in their wilderness homes as a freefolk militia, serving the dual role of protector and provider of the Grigori realms
+
+Where the Grigori cities are best at producing coin and research, the Grigori Communes are best at working the land and sending a portion of that production supply back to the cities.
+A mix of both cities and communes will yield the best results.
+
+With research, the amount of yields they provide to cities grows.
+(Trade+Construction+Code of Laws upgrades the tax from Meagre to Moderate, and then Guilds+Feudalism+Engineering upgrades it again to Bountiful)</French>
+		<German>The men and women of the Communes work tirelessly in their wilderness homes as a freefolk militia, serving the dual role of protector and provider of the Grigori realms
+
+Where the Grigori cities are best at producing coin and research, the Grigori Communes are best at working the land and sending a portion of that production supply back to the cities.
+A mix of both cities and communes will yield the best results.
+
+With research, the amount of yields they provide to cities grows.
+(Trade+Construction+Code of Laws upgrades the tax from Meagre to Moderate, and then Guilds+Feudalism+Engineering upgrades it again to Bountiful)</German>
+		<Italian>The men and women of the Communes work tirelessly in their wilderness homes as a freefolk militia, serving the dual role of protector and provider of the Grigori realms
+
+Where the Grigori cities are best at producing coin and research, the Grigori Communes are best at working the land and sending a portion of that production supply back to the cities.
+A mix of both cities and communes will yield the best results.
+
+With research, the amount of yields they provide to cities grows.
+(Trade+Construction+Code of Laws upgrades the tax from Meagre to Moderate, and then Guilds+Feudalism+Engineering upgrades it again to Bountiful)</Italian>
+		<Spanish>The men and women of the Communes work tirelessly in their wilderness homes as a freefolk militia, serving the dual role of protector and provider of the Grigori realms
+
+Where the Grigori cities are best at producing coin and research, the Grigori Communes are best at working the land and sending a portion of that production supply back to the cities.
+A mix of both cities and communes will yield the best results.
+
+With research, the amount of yields they provide to cities grows.
+(Trade+Construction+Code of Laws upgrades the tax from Meagre to Moderate, and then Guilds+Feudalism+Engineering upgrades it again to Bountiful)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_BRONZE_WEAPONS_MILITIA</Tag>
+		<English>Militia Equipment - Bronze</English>
+		<French>Militia Equipment - Bronze</French>
+		<German>Militia Equipment - Bronze</German>
+		<Italian>Militia Equipment - Bronze</Italian>
+		<Spanish>Militia Equipment - Bronze</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_IRON_WEAPONS_MILITIA</Tag>
+		<English>Militia Equipment - Iron</English>
+		<French>Militia Equipment - Iron</French>
+		<German>Militia Equipment - Iron</German>
+		<Italian>Militia Equipment - Iron</Italian>
+		<Spanish>Militia Equipment - Iron</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MITHRIL_WEAPONS_MILITIA</Tag>
+		<English>Militia Equipment - Mithril</English>
+		<French>Militia Equipment - Mithril</French>
+		<German>Militia Equipment - Mithril</German>
+		<Italian>Militia Equipment - Mithril</Italian>
+		<Spanish>Militia Equipment - Mithril</Spanish>
 	</TEXT>
 </Civ4GameText>

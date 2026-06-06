@@ -497,6 +497,14 @@
 		<Spanish>Leash (1)</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_LEASH_2</Tag>
+		<English>Leash (2)</English>
+		<French>Leash (2)</French>
+		<German>Leine (2)</German>
+		<Italian>Leash (2)</Italian>
+		<Spanish>Leash (2)</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_MARSH_MARCHERS_LEADER</Tag>
 		<English>Marsh Marchers Commander</English>
 		<French>Marsh Marchers Commander</French>

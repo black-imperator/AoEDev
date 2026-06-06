@@ -494,6 +494,14 @@
 		<Spanish>Refined Mana Affinity</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_AFFINITY_GRIGORI_MILITIA</Tag>
+		<English>Subsistence Affinity</English>
+		<French>Subsistence Affinity</French>
+		<German>Subsistence Affinity</German>
+		<Italian>Subsistence Affinity</Italian>
+		<Spanish>Subsistence Affinity</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_AFFINITY_MITHRIL</Tag>
 		<English>Mithril Affinity</English>
 		<French>Affinité pour le Mithril</French>

@@ -1904,19 +1904,23 @@
 				<Promotion>PROMOTION_LOST</Promotion>
 				<Promotion>PROMOTION_LEASH_0</Promotion>
 				<Promotion>PROMOTION_LEASH_1</Promotion>
+				<Promotion>PROMOTION_LEASH_2</Promotion>
 				<Promotion>PROMOTION_DEADLY_MISHAP</Promotion>
 				<Promotion>PROMOTION_DEADLY_MISHAP_DUMMY</Promotion>
 				<Promotion>PROMOTION_WEIRD_WRACKED</Promotion>
 				<Promotion>PROMOTION_WANDERING_CURSE</Promotion>
+				<Promotion>PROMOTION_ACHERON_LEASHED</Promotion>
 			</PromotionExcludes>
 			<PromotionOverwrites>
 				<Promotion>PROMOTION_LOST</Promotion>
 				<Promotion>PROMOTION_LEASH_0</Promotion>
 				<Promotion>PROMOTION_LEASH_1</Promotion>
+				<Promotion>PROMOTION_LEASH_2</Promotion>
 				<Promotion>PROMOTION_DEADLY_MISHAP</Promotion>
 				<Promotion>PROMOTION_DEADLY_MISHAP_DUMMY</Promotion>
 				<Promotion>PROMOTION_WEIRD_WRACKED</Promotion>
 				<Promotion>PROMOTION_WANDERING_CURSE</Promotion>
+				<Promotion>PROMOTION_ACHERON_LEASHED</Promotion>
 			</PromotionOverwrites>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Foxmen Feather Charm -->
@@ -16372,9 +16376,9 @@
 			<bAutoAcquire>1</bAutoAcquire>
 			<bNoXP>1</bNoXP>
 			<iSlaveGenerationChance>15</iSlaveGenerationChance>
-			<PrereqCivilizations>
-				<PrereqCivilization>CIVILIZATION_DTESH</PrereqCivilization>
-			</PrereqCivilizations>
+			<PrereqTraits>
+				<PrereqTrait>TRAIT_TREACHEROUS</PrereqTrait>
+			</PrereqTraits>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
@@ -27402,6 +27406,297 @@
 			</PrereqUnits>
 			<Button>Art/Interface/Buttons/Promotions/chilblains.dds</Button>
 		</PromotionInfo>
+		<PromotionInfo>		<!-- Grigori fort commander  Influence Early -->
+			<Type>PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE</Type>
+			<Description>TXT_KEY_PROMOTION_GRIGORI_FORT_COMMANDER</Description>
+			<CityBonuses>
+				<CityBonus>
+					<bApplySelf>1</bApplySelf>
+					<fCrime>0</fCrime>
+					<fFood>0</fFood>
+					<fProduction>2</fProduction>
+					<fGPP>2</fGPP>
+					<fGold>0</fGold>
+					<iBonusRange>20</iBonusRange>
+				</CityBonus>
+			</CityBonuses>
+			<iExtraSupport>-1</iExtraSupport>
+			<bAutoAcquire>1</bAutoAcquire>
+			<bMustMaintain>1</bMustMaintain>
+			<bNoXP>1</bNoXP>
+			<bFreeUnit>1</bFreeUnit>
+			<bNoSupply>1</bNoSupply>
+			<PrereqCivilizations>
+				<PrereqCivilization>CIVILIZATION_GRIGORI</PrereqCivilization>
+			</PrereqCivilizations>
+			<PrereqUnits>
+				<PrereqUnit>UNIT_FORT_COMMANDER_GRIGORI</PrereqUnit>
+			</PrereqUnits>
+			<PrereqImprovements>
+				<PrereqImprovement>IMPROVEMENT_FORT_GRIGORI</PrereqImprovement>
+			</PrereqImprovements>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Art/Interface/Buttons/Promotions/Civs/Mekara/Militia.dds</Button>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Grigori fort commander  Influence Middle -->
+			<Type>PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE2</Type>
+			<Description>TXT_KEY_PROMOTION_GRIGORI_FORT_COMMANDER2</Description>
+			<CityBonuses>
+				<CityBonus>
+					<bApplySelf>1</bApplySelf>
+					<fCrime>0</fCrime>
+					<fFood>0</fFood>
+					<fProduction>4</fProduction>
+					<fGPP>4</fGPP>
+					<fCulture>2</fCulture>
+					<iBonusRange>20</iBonusRange>
+				</CityBonus>
+			</CityBonuses>
+			<PromotionOverwrites>
+				<Promotion>PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE</Promotion>
+			</PromotionOverwrites>
+			<PromotionExcludes>
+				<Promotion>PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE</Promotion>
+			</PromotionExcludes>
+			<iExtraSupport>-1</iExtraSupport>
+			<bAutoAcquire>1</bAutoAcquire>
+			<bMustMaintain>1</bMustMaintain>
+			<bNoXP>1</bNoXP>
+			<bFreeUnit>1</bFreeUnit>
+			<bNoSupply>1</bNoSupply>
+			<PrereqCivilizations>
+				<PrereqCivilization>CIVILIZATION_GRIGORI</PrereqCivilization>
+			</PrereqCivilizations>
+			<PrereqUnits>
+				<PrereqUnit>UNIT_FORT_COMMANDER_GRIGORI</PrereqUnit>
+			</PrereqUnits>
+			<PrereqTechANDs>
+				<PrereqTech>TECH_TRADE</PrereqTech>
+				<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
+				<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
+			</PrereqTechANDs>
+			<PrereqImprovements>
+				<PrereqImprovement>IMPROVEMENT_FORT_GRIGORI</PrereqImprovement>
+			</PrereqImprovements>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Art/Interface/Buttons/Promotions/Civs/Mekara/Militia.dds</Button>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Grigori fort commander  Influence Late -->
+			<Type>PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE3</Type>
+			<Description>TXT_KEY_PROMOTION_GRIGORI_FORT_COMMANDER3</Description>
+			<CityBonuses>
+				<CityBonus>
+					<bApplySelf>1</bApplySelf>
+					<fCrime>0</fCrime>
+					<fFood>0</fFood>
+					<fProduction>6</fProduction>
+					<fGPP>6</fGPP>
+					<fCulture>4</fCulture>
+					<fTradeRoutes>1</fTradeRoutes>
+					<iBonusRange>20</iBonusRange>
+				</CityBonus>
+			</CityBonuses>
+			<PromotionOverwrites>
+				<Promotion>PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE</Promotion>
+				<Promotion>PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE2</Promotion>
+			</PromotionOverwrites>
+			<PromotionExcludes>
+				<Promotion>PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE</Promotion>
+				<Promotion>PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE2</Promotion>
+			</PromotionExcludes>
+			<iExtraSupport>-1</iExtraSupport>
+			<bAutoAcquire>1</bAutoAcquire>
+			<bMustMaintain>1</bMustMaintain>
+			<bNoXP>1</bNoXP>
+			<bFreeUnit>1</bFreeUnit>
+			<bNoSupply>1</bNoSupply>
+			<PrereqCivilizations>
+				<PrereqCivilization>CIVILIZATION_GRIGORI</PrereqCivilization>
+			</PrereqCivilizations>
+			<PrereqUnits>
+				<PrereqUnit>UNIT_FORT_COMMANDER_GRIGORI</PrereqUnit>
+			</PrereqUnits>
+			<PrereqTechANDs>
+				<PrereqTech>TECH_GUILDS</PrereqTech>
+				<PrereqTech>TECH_ENGINEERING</PrereqTech>
+				<PrereqTech>TECH_FEUDALISM</PrereqTech>
+			</PrereqTechANDs>
+			<PrereqImprovements>
+				<PrereqImprovement>IMPROVEMENT_FORT_GRIGORI</PrereqImprovement>
+			</PrereqImprovements>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Art/Interface/Buttons/Promotions/Civs/Mekara/Militia.dds</Button>
+		</PromotionInfo>
+<!--	<PromotionInfo>		<!{1}** Grigori Supplies Recieved   **{1}>
+			<Type>PROMOTION_GRIGORI_SUPPLY_RECIEVED</Type>
+			<Description>TXT_KEY_PROMOTION_GRIGORI_SUPPLY</Description>
+			<PrereqUnits>
+				<PrereqUnit>UNIT_WARRIOR</PrereqUnit>
+			</PrereqUnits>
+			<bMustMaintain>1</bMustMaintain>
+			<bStackEffect>1</bStackEffect>
+			<iExpireChance>100</iExpireChance>
+			<CityBonuses>
+				<CityBonus>
+					<bApplySelf>1</bApplySelf>
+					<fFood>2</fFood>
+					<fProduction>2</fProduction>
+					<fGPP>2</fGPP>
+					<fGold>2</fGold>
+					<iBonusRange>0</iBonusRange>
+				</CityBonus>
+			</CityBonuses>
+			<Button>Art/Interface/Buttons/Improvements/Devilgate.dds</Button>
+			<iMinLevel>-1</iMinLevel>
+		</PromotionInfo>
+		<PromotionInfo>		<!{1}** Grigori Commander Supply Aura**{1}>
+			<Type>PROMOTION_GRIGORI_COMMANDER_SUPPLY_SENT</Type>
+			<Description>TXT_KEY_PROMOTION_GRIGORI_COMMANDER_SUPPLY</Description>
+			<bAutoAcquire>1</bAutoAcquire>
+			<bMustMaintain>1</bMustMaintain>
+			<bNoXP>1</bNoXP>
+			<bFreeUnit>1</bFreeUnit>
+			<bNoSupply>1</bNoSupply>
+			<PrereqCivilizations>
+				<PrereqCivilization>CIVILIZATION_GRIGORI</PrereqCivilization>
+			</PrereqCivilizations>
+			<PrereqUnits>
+				<PrereqUnit>UNIT_FORT_COMMANDER</PrereqUnit>
+			</PrereqUnits>
+			<Button>Art/Interface/Buttons/Improvements/Devilgate.dds</Button>
+			<AuraBonuses>
+				<AuraBonus>
+					<bApplySelf>1</bApplySelf>
+					<iBonusRange>10</iBonusRange>
+					<Promotion>PROMOTION_GRIGORI_SUPPLY_RECIEVED</Promotion>
+				</AuraBonus>
+			</AuraBonuses>
+		</PromotionInfo>-->
+		<PromotionInfo>		<!-- Militia Grigori Affinity -->
+			<Type>PROMOTION_MILITIA_GRIGORI</Type>
+			<Description>TXT_KEY_PROMOTION_MILITIA_GRIGORI</Description>
+			<bFreeUnit>1</bFreeUnit>
+			<Affinities>
+				<Affinity>AFFINITY_GRIGORI_MILITIA</Affinity>
+			</Affinities>
+			<Button>Art/Interface/Buttons/Promotions/Civs/Mekara/Militia.dds</Button>
+			<iMinLevel>-1</iMinLevel>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Bronze Weapons Militia Grigori -->
+			<Type>PROMOTION_BRONZE_WEAPONS_MILITIA</Type>
+			<Description>TXT_KEY_PROMOTION_BRONZE_WEAPONS_MILITIA</Description>
+			<PrereqUnits>
+				<PrereqUnit>UNIT_MILITIA_GRIGORI</PrereqUnit>
+			</PrereqUnits>
+			<TechPrereq>TECH_BRONZE_WORKING</TechPrereq>
+			<bAutoAcquire>1</bAutoAcquire>
+			<bNoXP>1</bNoXP>
+			<PromotionReplacedBy>
+				<Promotion>PROMOTION_IRON_WEAPONS_MILITIA</Promotion>
+				<Promotion>PROMOTION_MITHRIL_WEAPONS_MILITIA</Promotion>
+			</PromotionReplacedBy>
+			<iExtraCombatStr>1</iExtraCombatStr>
+			<iExtraCombatDefense>2</iExtraCombatDefense>
+			<PrereqBonusANDs>
+				<PrereqBonus>BONUS_COPPER</PrereqBonus>
+			</PrereqBonusANDs>
+			<DamageTypeResists>
+				<DamageTypeResist>
+					<DamageType>DAMAGE_LIGHTNING</DamageType>
+					<iResist>-25</iResist>
+				</DamageTypeResist>
+			</DamageTypeResists>
+			<Button>Art/Interface/Buttons/Promotions/EQHighQualityBronzeMelee.dds</Button>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Iron Weapons Militia Grigori -->
+			<Type>PROMOTION_IRON_WEAPONS_MILITIA</Type>
+			<Description>TXT_KEY_PROMOTION_IRON_WEAPONS_MILITIA</Description>
+			<PrereqUnits>
+				<PrereqUnit>UNIT_MILITIA_GRIGORI</PrereqUnit>
+			</PrereqUnits>
+			<TechPrereq>TECH_IRON_WORKING</TechPrereq>
+			<bAutoAcquire>1</bAutoAcquire>
+			<bNoXP>1</bNoXP>
+			<PromotionReplacedBy>
+				<Promotion>PROMOTION_MITHRIL_WEAPONS_MILITIA</Promotion>
+			</PromotionReplacedBy>
+			<PromotionOverwrites>
+				<Promotion>PROMOTION_BRONZE_WEAPONS_MILITIA</Promotion>
+			</PromotionOverwrites>
+			<PromotionExcludes>
+				<Promotion>PROMOTION_BRONZE_WEAPONS_MILITIA</Promotion>
+			</PromotionExcludes>
+			<iExtraCombatStr>3</iExtraCombatStr>
+			<iExtraCombatDefense>5</iExtraCombatDefense>
+			<PrereqBonusANDs>
+				<PrereqBonus>BONUS_IRON</PrereqBonus>
+			</PrereqBonusANDs>
+			<DamageTypeResists>
+				<DamageTypeResist>
+					<DamageType>DAMAGE_LIGHTNING</DamageType>
+					<iResist>-25</iResist>
+				</DamageTypeResist>
+			</DamageTypeResists>
+			<PromotionCombatMods>
+				<PromotionCombatMod>
+					<PromotionType>PROMOTION_BRONZE_WEAPONS</PromotionType>
+					<iCombatMod>10</iCombatMod>
+				</PromotionCombatMod>
+			</PromotionCombatMods>
+			<Button>Art/Interface/Buttons/Promotions/EQHighQualitySteelMelee.dds</Button>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Mithril Weapons Militia Grigori -->
+			<Type>PROMOTION_MITHRIL_WEAPONS_MILITIA</Type>
+			<Description>TXT_KEY_PROMOTION_MITHRIL_WEAPONS_MILITIA</Description>
+			<PrereqUnits>
+				<PrereqUnit>UNIT_MILITIA_GRIGORI</PrereqUnit>
+			</PrereqUnits>
+			<TechPrereq>TECH_MITHRIL_WORKING</TechPrereq>
+			<bAutoAcquire>1</bAutoAcquire>
+			<bNoXP>1</bNoXP>
+			<iExtraCombatStr>5</iExtraCombatStr>
+			<iExtraCombatDefense>7</iExtraCombatDefense>
+			<PrereqBonusANDs>
+				<PrereqBonus>BONUS_MITHRIL</PrereqBonus>
+			</PrereqBonusANDs>
+			<PromotionOverwrites>
+				<Promotion>PROMOTION_BRONZE_WEAPONS_MILITIA</Promotion>
+				<Promotion>PROMOTION_IRON_WEAPONS_MILITIA</Promotion>
+			</PromotionOverwrites>
+			<PromotionExcludes>
+				<Promotion>PROMOTION_BRONZE_WEAPONS_MILITIA</Promotion>
+				<Promotion>PROMOTION_IRON_WEAPONS_MILITIA</Promotion>
+			</PromotionExcludes>
+			<DamageTypeResists>
+				<DamageTypeResist>
+					<DamageType>DAMAGE_LIGHTNING</DamageType>
+					<iResist>-25</iResist>
+				</DamageTypeResist>
+			</DamageTypeResists>
+			<PromotionCombatMods>
+				<PromotionCombatMod>
+					<PromotionType>PROMOTION_IRON_WEAPONS</PromotionType>
+					<iCombatMod>10</iCombatMod>
+				</PromotionCombatMod>
+			</PromotionCombatMods>
+			<ReplaceArtType>ART_DEF_UNIT_PIKEMAN</ReplaceArtType>
+			<Button>Art/Interface/Buttons/Promotions/EQHighQualityMithrilMelee.dds</Button>
+		</PromotionInfo>
 		<PromotionInfo>		<!-- Price of Power Influence -->
 			<Type>PROMOTION_PRICE_OF_POWER_INFLUENCE</Type>
 			<Description>TXT_KEY_PROMOTION_PRICE_OF_POWER</Description>
@@ -33281,6 +33576,14 @@
 			<iMinLevel>-1</iMinLevel>
 			<bGraphicalOnly>1</bGraphicalOnly>
 		</PromotionInfo>
+		<PromotionInfo>		<!-- Leash - 2 Range -->
+			<Type>PROMOTION_LEASH_2</Type>
+			<Description>TXT_KEY_PROMOTION_LEASH_2</Description>
+			<iLeashRange>2</iLeashRange>
+			<Button>Art/Civs/Other/FortCommander/Influence.dds</Button>
+			<iMinLevel>-1</iMinLevel>
+			<bGraphicalOnly>1</bGraphicalOnly>
+		</PromotionInfo>
 		<PromotionInfo>		<!-- Marsh Marchers Commander -->
 			<Type>PROMOTION_MARSH_MARCHERS_LEADER</Type>
 			<Description>TXT_KEY_PROMOTION_MARSH_MARCHERS_LEADER</Description>
@@ -33382,6 +33685,15 @@
 				<SecondaryUnitCombat>UNITCOMBAT_MELEE</SecondaryUnitCombat>
 			</SecondaryUnitCombats>
 			<Button>Art/Interface/Buttons/Unitcombats/SecondaryUC_Melee.dds</Button>
+			<iMinLevel>-1</iMinLevel>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Secondary Worker  -->
+			<Type>PROMOTION_SECONDARY_WORKER</Type>
+			<Description>TXT_KEY_PROMOTION_SECONDARY_WORKER</Description>
+			<SecondaryUnitCombats>
+				<SecondaryUnitCombat>UNITCOMBAT_WORKER</SecondaryUnitCombat>
+			</SecondaryUnitCombats>
+			<Button>Art/Interface/Buttons/Unitcombats/secondaryuc_worker.dds</Button>
 			<iMinLevel>-1</iMinLevel>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Goblin Lord Poison -->

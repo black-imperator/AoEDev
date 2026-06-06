@@ -762,6 +762,10 @@
 					<LeaderName>LEADER_FURIA</LeaderName>
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
+				<Leader>
+					<LeaderName>LEADER_JUND</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
 			</Leaders>
 			<DerivativeCiv>NONE</DerivativeCiv>
 			<CivilizationSelectionSound>AS3D_FRANCE_SELECT</CivilizationSelectionSound>
@@ -1454,32 +1458,6 @@
 			<MaintainFeatures>
 			</MaintainFeatures>
 			<Image>Art/Civs/Pedia/Civilizations/Chislev.dds</Image>
-			<ImprovementYieldChanges>
-				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_WORKSHOP</ImprovementType>
-					<ImprovementYields>
-						<iYield>0</iYield>
-						<iYield>-1</iYield>
-						<iYield>0</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
-					<ImprovementYields>
-						<iYield>0</iYield>
-						<iYield>-1</iYield>
-						<iYield>0</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_CAMP</ImprovementType>
-					<ImprovementYields>
-						<iYield>0</iYield>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-			</ImprovementYieldChanges>
 			<FormClimateZoneType>CLIMATEZONE_TEMPERATE</FormClimateZoneType>
 		</CivilizationInfo>
 		<CivilizationInfo><!-- Clan of Embers -->
@@ -2668,6 +2646,10 @@
 					<UnitType>UNIT_LUONNOTAR</UnitType>
 				</Unit>
 				<Unit>
+					<UnitClassType>UNITCLASS_FORT_COMMANDER</UnitClassType>
+					<UnitType>UNIT_FORT_COMMANDER_GRIGORI</UnitType>
+				</Unit>
+				<Unit>
 					<UnitClassType>UNITCLASS_PALADIN</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -2679,6 +2661,10 @@
 			<Specialists>
 				<Specialist>
 					<SpecialistClassType>SPECIALISTCLASS_STATESMAN</SpecialistClassType>
+					<SpecialistType>SPECIALIST_VOLUNTEER_GRIGORI</SpecialistType>
+				</Specialist>
+				<Specialist>
+					<SpecialistClassType>SPECIALISTCLASS_ARTIST</SpecialistClassType>
 					<SpecialistType>SPECIALIST_GREENHORN</SpecialistType>
 				</Specialist>
 				<Specialist>
@@ -2692,8 +2678,60 @@
 			</Specialists>
 			<Improvements>
 				<Improvement>
-					<ImprovementClassType>IMPROVEMENTCLASS_HOMESTEAD</ImprovementClassType>
+					<ImprovementClassType>IMPROVEMENTCLASS_FARM</ImprovementClassType>
 					<ImprovementType>IMPROVEMENT_HOMESTEAD</ImprovementType>
+				</Improvement>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_FORT</ImprovementClassType>
+					<ImprovementType>IMPROVEMENT_FORT_GRIGORI</ImprovementType>
+				</Improvement>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_FISHING_BOATS</ImprovementClassType>
+					<ImprovementType>IMPROVEMENT_FISHING_BOATS_GRIGORI</ImprovementType>
+				</Improvement>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_CAMP</ImprovementClassType>
+					<ImprovementType>IMPROVEMENT_CAMP_GRIGORI</ImprovementType>
+				</Improvement>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_WORKSHOP</ImprovementClassType>
+					<ImprovementType>IMPROVEMENT_WORKSHOP_GRIGORI</ImprovementType>
+				</Improvement>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_FISHING_BOATS</ImprovementClassType>
+					<ImprovementType>IMPROVEMENT_FISHING_BOATS_GRIGORI</ImprovementType>
+				</Improvement>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_PASTURE</ImprovementClassType>
+					<ImprovementType>NONE</ImprovementType>
+				</Improvement>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_MINE</ImprovementClassType>
+					<ImprovementType>NONE</ImprovementType>
+				</Improvement>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_WINDMILL</ImprovementClassType>
+					<ImprovementType>NONE</ImprovementType>
+				</Improvement>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_WATERMILL</ImprovementClassType>
+					<ImprovementType>NONE</ImprovementType>
+				</Improvement>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_LUMBERMILL</ImprovementClassType>
+					<ImprovementType>NONE</ImprovementType>
+				</Improvement>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_COTTAGE</ImprovementClassType>
+					<ImprovementType>NONE</ImprovementType>
+				</Improvement>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_PLANTATION</ImprovementClassType>
+					<ImprovementType>NONE</ImprovementType>
+				</Improvement>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_QUARRY</ImprovementClassType>
+					<ImprovementType>NONE</ImprovementType>
 				</Improvement>
 			</Improvements>
 			<FreeUnitClasses>
@@ -2713,6 +2751,14 @@
 			<FreeBuildingClasses>
 				<FreeBuildingClass>
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<bFreeBuildingClass>1</bFreeBuildingClass>
+				</FreeBuildingClass>
+				<FreeBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_GRIGORI_APOSTATES</BuildingClassType>
+					<bFreeBuildingClass>1</bFreeBuildingClass>
+				</FreeBuildingClass>
+				<FreeBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_GRIGORI_FREEDOM</BuildingClassType>
 					<bFreeBuildingClass>1</bFreeBuildingClass>
 				</FreeBuildingClass>
 			</FreeBuildingClasses>

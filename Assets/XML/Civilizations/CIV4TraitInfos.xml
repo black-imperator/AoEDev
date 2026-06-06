@@ -2424,6 +2424,18 @@
 			<Civilopedia>TXT_KEY_TRAIT_THEOCRATIC_PEDIA</Civilopedia>
 			<ShortDescription>TXT_KEY_TRAIT_THEOCRATIC_SHORT</ShortDescription>
 			<iLevelExperienceModifier>-10</iLevelExperienceModifier>
+			<ExtraBuildingClasses>
+				<ExtraBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
+					<BuildingType>BUILDING_PAGAN_TEMPLE_MEKARA</BuildingType>
+				</ExtraBuildingClass>
+			</ExtraBuildingClasses>
+			<FreeSpecialistClassesStateReligion>
+				<FreeSpecialistClassStateReligion>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
+					<bFreeSpecialistClassStateReligion>1</bFreeSpecialistClassStateReligion>
+				</FreeSpecialistClassStateReligion>
+			</FreeSpecialistClassesStateReligion>
 			<FreePromotions>
 				<FreePromotion>
 					<PromotionType>PROMOTION_MOBILITY1</PromotionType>
@@ -2434,12 +2446,6 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
-			<FreeSpecialistClassesStateReligion>
-				<FreeSpecialistClassStateReligion>
-					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
-					<bFreeSpecialistClassStateReligion>1</bFreeSpecialistClassStateReligion>
-				</FreeSpecialistClassStateReligion>
-			</FreeSpecialistClassesStateReligion>
 			<FreePromotionUnitCombats>
 				<FreePromotionUnitCombat>
 					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
@@ -2459,6 +2465,16 @@
 			<Description>TXT_KEY_TRAIT_THEOCRATIC</Description>
 			<Civilopedia>TXT_KEY_TRAIT_THEOCRATIC_PEDIA</Civilopedia>
 			<ShortDescription>TXT_KEY_TRAIT_THEOCRATIC_SHORT</ShortDescription>
+			<SpecialistClassCommerceChanges>
+				<SpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_SLAVE</SpecialistClass>
+					<CommerceChanges>
+						<iCommerce>1</iCommerce>
+						<iCommerce>0</iCommerce>
+						<iCommerce>0</iCommerce>
+					</CommerceChanges>
+				</SpecialistClassCommerceChange>
+			</SpecialistClassCommerceChanges>
 		</TraitInfo>
 		<TraitInfo>		<!-- Theocratic 3-->
 			<Type>TRAIT_THEOCRATIC3</Type>
@@ -2471,6 +2487,10 @@
 					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
 					<bFreeSpecialistClassStateReligion>1</bFreeSpecialistClassStateReligion>
 				</FreeSpecialistClassStateReligion>
+				<FreeSpecialistClassStateReligion>
+					<SpecialistClass>SPECIALISTCLASS_SLAVE</SpecialistClass>
+					<bFreeSpecialistClassStateReligion>1</bFreeSpecialistClassStateReligion>
+				</FreeSpecialistClassStateReligion>
 			</FreeSpecialistClassesStateReligion>
 			<FreeSpecialistClassesNonStateReligion>
 				<FreeSpecialistClassNonStateReligion>
@@ -2478,6 +2498,16 @@
 					<bFreeSpecialistClassNonStateReligion>1</bFreeSpecialistClassNonStateReligion>
 				</FreeSpecialistClassNonStateReligion>
 			</FreeSpecialistClassesNonStateReligion>
+			<SpecialistClassCommerceChanges>
+				<SpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_SLAVE</SpecialistClass>
+					<CommerceChanges>
+						<iCommerce>1</iCommerce>
+						<iCommerce>0</iCommerce>
+						<iCommerce>0</iCommerce>
+					</CommerceChanges>
+				</SpecialistClassCommerceChange>
+			</SpecialistClassCommerceChanges>
 			<TraitClass>TRAITCLASS_EMERGENT</TraitClass>
 			<Description>TXT_KEY_TRAIT_THEOCRATIC</Description>
 			<Civilopedia>TXT_KEY_TRAIT_THEOCRATIC_PEDIA</Civilopedia>
@@ -5006,6 +5036,59 @@
 					<BuildingType>BUILDING_UNDYING_RITUAL_HOUSE</BuildingType>
 				</ExtraBuildingClass>
 			</ExtraBuildingClasses>
+		</TraitInfo>
+		<TraitInfo>		<!-- Plowshares to Swords -->
+			<Type>TRAIT_PLOW_SWORD</Type>
+			<TraitClass>TRAITCLASS_PERSONALITY</TraitClass>
+			<Description>TXT_KEY_TRAIT_PLOW_SWORD</Description>
+			<Civilopedia>TXT_KEY_TRAIT_PLOW_SWORD_PEDIA</Civilopedia>
+			<ShortDescription>TXT_KEY_TRAIT_PLOW_SWORD_SHORT</ShortDescription>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_UNDISCIPLINED</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_HARDY1</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
+			</FreePromotions>
+			<FreePromotionUnitCombats>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+			</FreePromotionUnitCombats>
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 		</TraitInfo>
 	</TraitInfos>
 </Civ4TraitInfos>

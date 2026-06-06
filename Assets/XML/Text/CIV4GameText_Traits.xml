@@ -2089,6 +2089,30 @@
 		<Spanish>Fueled by hate for creation, they seek out and destroy civilisation wherever it can be found.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_TRAIT_PLOW_SWORD</Tag>
+		<English>Plowshares to Swords</English>
+		<French>Plowshares to Swords</French>
+		<German>Plowshares to Swords</German>
+		<Italian>Plowshares to Swords</Italian>
+		<Spanish>Plowshares to Swords</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_PLOW_SWORD_PEDIA</Tag>
+		<English>"I know a thing or two about farming, and six things about murder, and oh, will you look at that, Koun, I'm doing numbers!" - Minister Jund, Tactical Genius.</English>
+		<French>"I know a thing or two about farming, and six things about murder, and oh, will you look at that, Koun, I'm doing numbers!" - Minister Jund, Tactical Genius.</French>
+		<German>"I know a thing or two about farming, and six things about murder, and oh, will you look at that, Koun, I'm doing numbers!" - Minister Jund, Tactical Genius.</German>
+		<Italian>"I know a thing or two about farming, and six things about murder, and oh, will you look at that, Koun, I'm doing numbers!" - Minister Jund, Tactical Genius.</Italian>
+		<Spanish>"I know a thing or two about farming, and six things about murder, and oh, will you look at that, Koun, I'm doing numbers!" - Minister Jund, Tactical Genius.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_PLOW_SWORD_SHORT</Tag>
+		<English>PTS</English>
+		<French>PTS</French>
+		<German>PTS</German>
+		<Italian>PTS</Italian>
+		<Spanish>PTS</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_TRAIT_NULL_PEDIA</Tag>
 		<English></English>
 		<French></French>

@@ -56,23 +56,27 @@
 			</Yields>
 			<Button>Art/Civs/CivSpecialists/Human/Citizen.dds</Button>
 		</SpecialistInfo>
-<!--    <SpecialistInfo> --> <!-- Citizen Grigori -->
-	<!--    <Type>SPECIALIST_CITIZEN_GRIGORI</Type>
-			<SpecialistClass>SPECIALISTCLASS_CITIZEN</SpecialistClass>
+    <SpecialistInfo>  <!-- Volunteer Grigori -->
+	    <Type>SPECIALIST_VOLUNTEER_GRIGORI</Type>
+			<SpecialistClass>SPECIALISTCLASS_STATESMAN</SpecialistClass>
 			<Description>TXT_KEY_SPECIALIST_VOLUNTEER</Description>
 			<Civilopedia>TXT_KEY_SPECIALIST_VOLUNTEER_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_SPECIALIST_CITIZEN_STRATEGY</Strategy>
-			<Texture>Art/Civs/CivSpecialists/Human/Citizen.dds</Texture>
+			<Strategy>TXT_KEY_SPECIALIST_VOLUNTEER_PEDIA</Strategy>
+			<Texture>Art/Interface/Buttons/Units/Farmer.dds</Texture>
 			<bVisible>1</bVisible>
-			<GreatPeopleUnitClass>UNITCLASS_ADVENTURER</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
 			<Yields>
 				<iYield>0</iYield>
-				<iYield>1</iYield>
+				<iYield>0</iYield>
 				<iYield>0</iYield>
 			</Yields>
-			<Button>Art/Civs/CivSpecialists/Human/Citizen.dds</Button>
-		</SpecialistInfo> -->
+			<Commerces>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+			</Commerces>
+			<Button>Art/Interface/Buttons/Units/Farmer.dds</Button>
+		</SpecialistInfo> 
 		<SpecialistInfo> <!-- Priest -->
 			<Type>SPECIALIST_PRIEST</Type>
 			<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
@@ -199,7 +203,7 @@
 		</SpecialistInfo>
 		<SpecialistInfo> <!-- Greenhorn -->
 			<Type>SPECIALIST_GREENHORN</Type>
-			<SpecialistClass>SPECIALISTCLASS_STATESMAN</SpecialistClass>
+			<SpecialistClass>SPECIALISTCLASS_ARTIST</SpecialistClass>
 			<Description>TXT_KEY_SPECIALIST_GREENHORN</Description>
 			<Civilopedia>TXT_KEY_SPECIALIST_GREENHORN_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_SPECIALIST_GREENHORN_STRATEGY</Strategy>
@@ -299,6 +303,10 @@
 					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
 					<iTrainXPCap>2</iTrainXPCap>
 				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
+					<iTrainXPCap>2</iTrainXPCap>
+				</TrainXPCap>
 			</TrainXPCaps>
 			<TrainXPRates>
 				<TrainXPRate>
@@ -353,10 +361,14 @@
 					<UnitCombatType>UNITCOMBAT_BEAST</UnitCombatType>
 					<iTrainXPRate>5</iTrainXPRate>
 				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
+					<iTrainXPRate>5</iTrainXPRate>
+				</TrainXPRate>
 			</TrainXPRates>
 			<SpecialistClassCrimeChanges>
 				<SpecialistClassCrimeChange>
-				<SpecialistClass>SPECIALISTCLASS_STATESMAN</SpecialistClass>
+				<SpecialistClass>SPECIALISTCLASS_ARTIST</SpecialistClass>
 				<iCrimeChange>-1</iCrimeChange>
 				</SpecialistClassCrimeChange>
 			</SpecialistClassCrimeChanges>
@@ -425,6 +437,10 @@
 					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
 					<iTrainXPCap>2</iTrainXPCap>
 				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
+					<iTrainXPCap>2</iTrainXPCap>
+				</TrainXPCap>
 			</TrainXPCaps>
 			<TrainXPRates>
 				<TrainXPRate>
@@ -479,10 +495,14 @@
 					<UnitCombatType>UNITCOMBAT_BEAST</UnitCombatType>
 					<iTrainXPRate>10</iTrainXPRate>
 				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
+					<iTrainXPRate>10</iTrainXPRate>
+				</TrainXPRate>
 			</TrainXPRates>
 			<SpecialistClassCrimeChanges>
 				<SpecialistClassCrimeChange>
-				<SpecialistClass>SPECIALISTCLASS_STATESMAN</SpecialistClass>
+				<SpecialistClass>SPECIALISTCLASS_ARTIST</SpecialistClass>
 				<iCrimeChange>-1</iCrimeChange>
 				</SpecialistClassCrimeChange>
 			</SpecialistClassCrimeChanges>

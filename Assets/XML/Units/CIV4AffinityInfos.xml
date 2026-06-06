@@ -216,5 +216,17 @@
 			<fRangedStrength>1</fRangedStrength>
 			<fStrengthMod>10</fStrengthMod>
 		</AffinityInfo>
+		<AffinityInfo><!-- Grigori Militia Affinity-->
+			<Type>AFFINITY_GRIGORI_MILITIA</Type>
+			<Description>TXT_KEY_AFFINITY_GRIGORI_MILITIA</Description>
+			<Civilopedia>TXT_KEY_AFFINITY_GRIGORI_MILITIA_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_AFFINITY_GRIGORI_MILITIA_STRATEGY</Strategy>
+			<BonusTypes>
+				<BonusType>BONUS_COPPER</BonusType>
+				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_MITHRIL</BonusType>
+			</BonusTypes>
+			<fStrengthMod>15</fStrengthMod>
+		</AffinityInfo>
 	</AffinityInfos>
 </Civ4AffinityInfos>
