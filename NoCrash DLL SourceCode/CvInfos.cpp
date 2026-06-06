@@ -27231,7 +27231,8 @@ m_pbMaintainFeatures(NULL)
 m_piFeatureHealthPercentChanges(NULL),
 m_ppiFeatureYieldChanges(NULL),
 m_ppiImprovementYieldChanges(NULL),
-m_ppiTerrainYieldChanges(NULL)
+m_ppiTerrainYieldChanges(NULL),
+m_paiPeakYieldChange(NULL)
 
 //ClimateSystem:
 ,m_iFormClimateZoneType(NO_CLIMATEZONE)
