@@ -534,13 +534,13 @@ def spellReviewTreasureHuntClue(pCaster):
 # Orphaned Gobs
 def postCombatLossOrphanedGoblin(pCaster, pOpponent):
 	git			= gc.getInfoTypeForString
-	# Bugfix: pOpponent (the unit that won against this goblin) may have
-	# died in the same combat -- mutual kill, follow-up attack, withdraw
-	# failure, etc.  In that case any pOpponent.getOwner / getID / etc
-	# raises ArgumentError ("did not match C++ signature") and we get a
-	# Python exception popup mid-combat.  No surviving victor means no
-	# orphaned goblin to inherit, so just no-op.
-	if not pOpponent.isAlive():
+	# If our winning unit (pOpponent) died in the same combat (mutual kill,
+	# death-blow, etc.) there is no surviving unit to receive the orphaned-
+	# goblin choice, so the event would fire and then throw when the choice is
+	# applied to a missing unit.  isDead() (damage >= maxHitPoints, already set
+	# by combat resolution) is the correct "was killed" test here -- NOT
+	# isAlive(), which only distinguishes a living unit from undead/demons.
+	if pOpponent.isDead():
 		return
 	iPlayer		= pOpponent.getOwner()
 	pPlayer		= gc.getPlayer(iPlayer)
