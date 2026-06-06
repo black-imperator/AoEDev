@@ -27432,6 +27432,9 @@
 			<PrereqUnits>
 				<PrereqUnit>UNIT_FORT_COMMANDER_GRIGORI</PrereqUnit>
 			</PrereqUnits>
+			<PrereqImprovements>
+				<PrereqImprovement>IMPROVEMENT_FORT_GRIGORI</PrereqImprovement>
+			</PrereqImprovements>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
@@ -27477,6 +27480,9 @@
 				<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
 				<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
 			</PrereqTechANDs>
+			<PrereqImprovements>
+				<PrereqImprovement>IMPROVEMENT_FORT_GRIGORI</PrereqImprovement>
+			</PrereqImprovements>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
@@ -27525,6 +27531,9 @@
 				<PrereqTech>TECH_ENGINEERING</PrereqTech>
 				<PrereqTech>TECH_FEUDALISM</PrereqTech>
 			</PrereqTechANDs>
+			<PrereqImprovements>
+				<PrereqImprovement>IMPROVEMENT_FORT_GRIGORI</PrereqImprovement>
+			</PrereqImprovements>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>

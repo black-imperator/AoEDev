@@ -7310,7 +7310,7 @@
 			<BuildingClass>BUILDINGCLASS_MONUMENT</BuildingClass>
 			<Type>BUILDING_MONUMENT_GRIGORI</Type>
 			<Description>TXT_KEY_BUILDING_MONUMENT_GRIGORI</Description>
-			<Civilopedia>TXT_KEY_LORE_BELTANE_CYCLE_3_PEDIA</Civilopedia>
+			<Civilopedia>TXT_KEY_BUILDING_MONUMENT_GRIGORI_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_SHRINE_TO_KYLORIN</ArtDefineTag>
 			<PrereqTech>TECH_ANCIENT_CHANTS</PrereqTech>

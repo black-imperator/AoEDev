@@ -9913,7 +9913,6 @@
 				<iYieldChange>1</iYieldChange>
 				<iYieldChange>0</iYieldChange>
 			</YieldChanges>
-			<bRequiresFlatlands>1</bRequiresFlatlands>
 			<iAdvancedStartCost>36</iAdvancedStartCost>
 			<iAirBombDefense>5</iAirBombDefense>
 			<iPillageGold>10</iPillageGold>

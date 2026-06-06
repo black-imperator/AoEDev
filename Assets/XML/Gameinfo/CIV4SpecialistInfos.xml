@@ -61,7 +61,7 @@
 			<SpecialistClass>SPECIALISTCLASS_STATESMAN</SpecialistClass>
 			<Description>TXT_KEY_SPECIALIST_VOLUNTEER</Description>
 			<Civilopedia>TXT_KEY_SPECIALIST_VOLUNTEER_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_SPECIALIST_CITIZEN_STRATEGY</Strategy>
+			<Strategy>TXT_KEY_SPECIALIST_VOLUNTEER_PEDIA</Strategy>
 			<Texture>Art/Interface/Buttons/Units/Farmer.dds</Texture>
 			<bVisible>1</bVisible>
 			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
@@ -303,6 +303,10 @@
 					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
 					<iTrainXPCap>2</iTrainXPCap>
 				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
+					<iTrainXPCap>2</iTrainXPCap>
+				</TrainXPCap>
 			</TrainXPCaps>
 			<TrainXPRates>
 				<TrainXPRate>
@@ -355,6 +359,10 @@
 				</TrainXPRate>
 				<TrainXPRate>
 					<UnitCombatType>UNITCOMBAT_BEAST</UnitCombatType>
+					<iTrainXPRate>5</iTrainXPRate>
+				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
 					<iTrainXPRate>5</iTrainXPRate>
 				</TrainXPRate>
 			</TrainXPRates>
@@ -429,6 +437,10 @@
 					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
 					<iTrainXPCap>2</iTrainXPCap>
 				</TrainXPCap>
+				<TrainXPCap>
+					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
+					<iTrainXPCap>2</iTrainXPCap>
+				</TrainXPCap>
 			</TrainXPCaps>
 			<TrainXPRates>
 				<TrainXPRate>
@@ -481,6 +493,10 @@
 				</TrainXPRate>
 				<TrainXPRate>
 					<UnitCombatType>UNITCOMBAT_BEAST</UnitCombatType>
+					<iTrainXPRate>10</iTrainXPRate>
+				</TrainXPRate>
+				<TrainXPRate>
+					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
 					<iTrainXPRate>10</iTrainXPRate>
 				</TrainXPRate>
 			</TrainXPRates>
