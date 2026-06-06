@@ -349,6 +349,15 @@ bool CvXMLLoadUtility::SkipToNextVal()
 //------------------------------------------------------------------------------------------------------
 int CvXMLLoadUtility::FindInInfoClass(const TCHAR* pszVal, bool hideAssert)
 {
+	// A missing GlobalDefine (or any unresolved optional reference) leaves the
+	// caller's string pointer NULL; treat that as NONE rather than dereferencing
+	// uninitialized memory (which page heap exposes as a bogus "Tag ... was
+	// incorrect" XML-error popup).
+	if (pszVal == NULL)
+	{
+		return -1;
+	}
+
 	int idx = GC.getInfoTypeForString(pszVal, hideAssert);
 
 	// if we found a match in the list we will return the value of the loop counter
