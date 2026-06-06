@@ -6896,6 +6896,17 @@ void CvPlot::setTerrainType(TerrainTypes eNewValue, bool bRecalculate, bool bReb
 		updateSeeFromSight(true, true);
 	}
 
+	// Bugfix: strip an incompatible feature when the terrain changes.
+	// Without this, any setTerrainType-driven transition (setTempTerrainType,
+	// terraforming spells, plot-counter hellification, worldbuilder) can
+	// leave a feature in place that's invalid on the new terrain -- e.g.
+	// FLOODPLAINS surviving a Desert->Wasteland transition.
+	if (getFeatureType() != NO_FEATURE
+	 && !GC.getFeatureInfo(getFeatureType()).isTerrain(getTerrainType()))
+	{
+		setFeatureType(NO_FEATURE);
+	}
+
 	updateYield();
 	updatePlotGroup();
 
@@ -13337,14 +13348,7 @@ void CvPlot::changePlotCounter(int iChange)
 	{
 		setTerrainType((TerrainTypes)GC.getTerrainClassInfo(getTerrainClassType()).getNaturalTerrain(), false, true);
 	}
-
-	if (getFeatureType() != NO_FEATURE)
-	{
-		if (!GC.getFeatureInfo(getFeatureType()).isTerrain(getTerrainType()))
-		{
-			setFeatureType(NO_FEATURE);
-		}
-	}
+	// Feature compatibility is enforced inside setTerrainType itself.
 }
 
 void CvPlot::setPlotCounter(int iNewValue)
