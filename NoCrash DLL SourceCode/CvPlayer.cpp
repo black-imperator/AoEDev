@@ -29094,7 +29094,7 @@ void CvPlayer::setBroadShiftAmount(int iNewValue)
 }
 void CvPlayer::changeBroadShiftAmount(int iChange)
 {
-	if (iChange !=0) m_iBroadShiftAmount = m_iBroadShiftTurns + iChange;
+	if (iChange !=0) m_iBroadShiftAmount = m_iBroadShiftAmount + iChange;
 }
 int CvPlayer::getBroadShiftTurns() const
 {
@@ -29554,7 +29554,7 @@ void CvPlayer::setBroadEthicalShiftAmount(int iNewValue)
 }
 void CvPlayer::changeBroadEthicalShiftAmount(int iChange)
 {
-	if (iChange !=0) m_iBroadEthicalShiftAmount = m_iBroadEthicalShiftTurns + iChange;
+	if (iChange !=0) m_iBroadEthicalShiftAmount = m_iBroadEthicalShiftAmount + iChange;
 }
 int CvPlayer::getBroadEthicalShiftTurns() const
 {
