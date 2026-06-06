@@ -23,21 +23,21 @@
 			<FeatureAttacks>
 				<FeatureAttack>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<iFeatureAttack>50</iFeatureAttack>
+					<iFeatureAttack>35</iFeatureAttack>
 				</FeatureAttack>
 				<FeatureAttack>
 					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<iFeatureAttack>60</iFeatureAttack>
+					<iFeatureAttack>40</iFeatureAttack>
 				</FeatureAttack>
 			</FeatureAttacks>
 			<FeatureDefenses>
 				<FeatureDefense>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<iFeatureDefense>50</iFeatureDefense>
+					<iFeatureDefense>35</iFeatureDefense>
 				</FeatureDefense>
 				<FeatureDefense>
 					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<iFeatureDefense>60</iFeatureDefense>
+					<iFeatureDefense>40</iFeatureDefense>
 				</FeatureDefense>
 			</FeatureDefenses>
 			<FeatureMoveCosts>
@@ -161,6 +161,7 @@
 		<PromotionInfo> <!-- Fairy Species Promotion -->
 			<Type>PROMOTION_RACE_FAIRY</Type>
 			<Description>Fairy</Description>
+			<iCombatPercent>-10</iCombatPercent>
 			<Button>Modules\NormalModules\DrackAosNiSira\Art\other\faerie.dds</Button>
 			<bRace>1</bRace>
 			<UnitArtStyleType>UNIT_ARTSTYLE_FAIRIES</UnitArtStyleType>

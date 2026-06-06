@@ -8,7 +8,7 @@ DrackAosNiSira
 ;Note: it have to be number, so only numberic characters and none or one period
 ;note: one line
 [version]
-2.2
+2.3
 ;
 ;
 ;RifE version - version of RifE for which is this module tested, checked, developed, etc

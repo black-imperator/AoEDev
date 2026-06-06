@@ -195,5 +195,33 @@
 			<Sound>AS3D_SPELL_DISPEL_MAGIC</Sound>
 			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/Sira_Wolf_Button.dds</Button> 
 		</SpellInfo>
+		<SpellInfo>	<!-- Copy of FoL - Spread kelp for Posssessed giant Tortoise-->
+			<Type>SPELL_PLANT_KELP</Type>
+			<Description>TXT_KEY_SPELL_PLANT_KELP</Description>
+			<Civilopedia>TXT_KEY_SPELL_PLANT_KELP_PEDIA</Civilopedia>
+			<SpellClasses>
+				<SpellClass>
+					<SpellClassType>SPELLCLASS_DIVINE</SpellClassType>
+					<bSpellClass>1</bSpellClass>
+				</SpellClass>
+				<SpellClass>
+					<SpellClassType>SPELLCLASS_TERRAFORMING</SpellClassType>
+					<bSpellClass>1</bSpellClass>
+				</SpellClass>
+			</SpellClasses>
+			<UnitClassPrereq>UNITCLASS_AOSNISIRA_POSSESSED_GIANT_TORTOISE</UnitClassPrereq>
+			<StateReligionPrereq>RELIGION_FELLOWSHIP_OF_LEAVES</StateReligionPrereq>
+			<FeatureOrPrereq1>FEATURE_KELP_FOREST</FeatureOrPrereq1>
+			<bAllowAI>1</bAllowAI>
+			<bIsAutoCastable>1</bIsAutoCastable>
+			<bInBordersOnly>1</bInBordersOnly>
+			<bHasCasted>1</bHasCasted>
+			<iDelay>2</iDelay>
+			<PyResult>spellPlantKelp(pCaster)</PyResult>
+			<PyRequirement>reqPlantKelp(pCaster)</PyRequirement>
+			<Effect>EFFECT_BLOOM</Effect>
+			<Sound>AS3D_SPELL_BLOOM</Sound>
+			<Button>, ,Art/Erebus_Atlas.dds,1,3</Button>
+		</SpellInfo>
 	</SpellInfos>
 </Civ4SpellInfos>

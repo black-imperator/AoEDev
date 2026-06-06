@@ -259,6 +259,22 @@ The Court of Misrak are Soul-Consuming Fairies that do not require food. They fo
         <English>[ICON_BULLET] Convert 25 Souls to 1 Population</English>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_CONVERT_ALL_SOULS</Tag>
+        <English>Great Soul Conversion</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_CONVERT_ALL_SOULS_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_CONVERT_ALL_SOULS_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_FAIRY_CONVERT_ALL_SOULS_HELP</Tag>
+        <English>[ICON_BULLET]Increases the Size of all cities, beginning my the lowest, by one. Stops if not enough souls are available.</English>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROJECT_FAIRY_CONVERT_SOULS3</Tag>
         <English>Convert Souls (Major)</English>
     </TEXT>
@@ -277,6 +293,10 @@ The Court of Misrak are Soul-Consuming Fairies that do not require food. They fo
     <TEXT>
         <Tag>TXT_KEY_FAIRY_ON_KILLED_NEW_SOULS</Tag>
         <English>We captured %D1 new Souls from the killed enemy.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FAIRY_ON_CITYRAZED_NEW_SOULS</Tag>
+        <English>We captured %D1 new Souls from the razed city.</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MESSAGE_GREAT_SOUL_SIPHON_LOSS</Tag>

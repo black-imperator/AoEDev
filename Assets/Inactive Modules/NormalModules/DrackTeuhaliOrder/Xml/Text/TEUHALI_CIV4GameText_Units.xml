@@ -147,4 +147,8 @@ Wherever the flames of war rise, Dietrich rides toward them. Where there is a ba
         <Tag>TXT_KEY_UNIT_TEUHALI_GEISSLER_STRATEGY</Tag>
         <English>Geisslers are the Melee Attack Unit of the Weizen Order. Use them only in attack, as their defense is weak. Also, be careful about their enrage.</English>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_TEUHALI_BLOCKSBERG_WITCH</Tag>
+        <English>Blocksberg Witch</English>
+    </TEXT>
 </Civ4GameText>

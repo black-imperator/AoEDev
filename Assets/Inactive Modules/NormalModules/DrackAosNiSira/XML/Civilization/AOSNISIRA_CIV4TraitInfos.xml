@@ -135,9 +135,9 @@
 			<ShortDescription>TXT_KEY_TRAIT_SIRA_TRICKERY_SHORT</ShortDescription>
 			<bSelectable>0</bSelectable>
 			<TradeYieldModifiers>
-				<iYield>15</iYield>
-				<iYield>15</iYield>
-				<iYield>-50</iYield>
+				<iYield>10</iYield>
+				<iYield>0</iYield>
+				<iYield>-35</iYield>
 			</TradeYieldModifiers>
         </TraitInfo>
 		<TraitInfo> <!-- Sira Trickery II -->
@@ -266,16 +266,16 @@
 			<Civilopedia>TXT_KEY_TRAIT_COURT_OF_BEY_PEDIA</Civilopedia>
 			<ShortDescription>TXT_KEY_TRAIT_COURT_OF_BEY_SHORT</ShortDescription>
 			<bSelectable>0</bSelectable>
-			<SpecialistHappinessChanges>
-				<SpecialistHappinessChange>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+			<SpecialistClassHappinessChanges>
+				<SpecialistClassHappinessChange>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
 					<iHappiness>1</iHappiness>
-				</SpecialistHappinessChange>
-				<SpecialistHappinessChange>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+				</SpecialistClassHappinessChange>
+				<SpecialistClassHappinessChange>
+					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
 					<iHappiness>1</iHappiness>
-				</SpecialistHappinessChange>
-			</SpecialistHappinessChanges>
+				</SpecialistClassHappinessChange>
+			</SpecialistClassHappinessChanges>
         </TraitInfo>
 		<TraitInfo> <!-- Court of Misrak -->
             <Type>TRAIT_COURT_OF_MISRAK</Type>
@@ -285,16 +285,16 @@
 			<ShortDescription>TXT_KEY_TRAIT_COURT_OF_MISRAK_SHORT</ShortDescription>
 			<bSelectable>0</bSelectable>
 			<bIgnoreFood>1</bIgnoreFood>
-			<SpecialistCommerceChanges>
-				<SpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_SLAVE</SpecialistType>
+			<SpecialistClassCommerceChanges>
+				<SpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_SLAVE</SpecialistClass>
 					<CommerceChanges>
 						<iCommerce>1</iCommerce>
 						<iCommerce>-1</iCommerce>
 						<iCommerce>0</iCommerce>
 					</CommerceChanges>
-				</SpecialistCommerceChange>
-			</SpecialistCommerceChanges>
+				</SpecialistClassCommerceChange>
+			</SpecialistClassCommerceChanges>
 			<FreePromotions>
 				<FreePromotion>
 					<PromotionType>PROMOTION_SLAVER</PromotionType>
@@ -364,16 +364,16 @@
 			<ShortDescription>TXT_KEY_TRAIT_HOUSE_PESNA_SHORT</ShortDescription>
 			<bSelectable>0</bSelectable>
 			<iHealth>-2</iHealth>
-			<SpecialistCommerceChanges>
-				<SpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_HEALER</SpecialistType>
+			<SpecialistClassCommerceChanges>
+				<SpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
 					<CommerceChanges>
 						<iCommerce>2</iCommerce>
 						<iCommerce>0</iCommerce>
 						<iCommerce>0</iCommerce>
 					</CommerceChanges>
-				</SpecialistCommerceChange>
-			</SpecialistCommerceChanges>
+				</SpecialistClassCommerceChange>
+			</SpecialistClassCommerceChanges>
 			<ExtraBuildingClasses>
 				<ExtraBuildingClass>
 					<BuildingClassType>BUILDINGCLASS_FAIRY_HOUSE_OF_COMMERCE</BuildingClassType>
@@ -542,16 +542,16 @@
 					<BuildingType>BUILDING_FAIRY_GODARA_TEMPLE</BuildingType>
 				</ExtraBuildingClass>
 			</ExtraBuildingClasses>
-			<SpecialistYieldChanges>
-				<SpecialistYieldChange>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+			<SpecialistClassYieldChanges>
+				<SpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
 					<YieldChanges>
 						<iYield>0</iYield>
 						<iYield>1</iYield>
 						<iYield>0</iYield>
 					</YieldChanges>
-				</SpecialistYieldChange>
-			</SpecialistYieldChanges>
+				</SpecialistClassYieldChange>
+			</SpecialistClassYieldChanges>
         </TraitInfo>
 		<TraitInfo> <!-- House Astra -->
             <Type>TRAIT_HOUSE_ASTRA</Type>
@@ -567,16 +567,16 @@
 					<BuildingType>BUILDING_FAIRY_ASTRA_OBSERVATORY</BuildingType>
 				</ExtraBuildingClass>
 			</ExtraBuildingClasses>
-			<SpecialistCommerceChanges>
-				<SpecialistCommerceChange>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+			<SpecialistClassCommerceChanges>
+				<SpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_SCIENTIST</SpecialistClass>
 					<CommerceChanges>
 						<iCommerce>0</iCommerce>
 						<iCommerce>1</iCommerce>
 						<iCommerce>0</iCommerce>
 					</CommerceChanges>
-				</SpecialistCommerceChange>
-			</SpecialistCommerceChanges>
+				</SpecialistClassCommerceChange>
+			</SpecialistClassCommerceChanges>
         </TraitInfo>
 		<TraitInfo> <!-- Archhuntress -->
             <Type>TRAIT_FAIRY_ARCH_HUNTRESS</Type>
@@ -646,12 +646,12 @@
 			<ShortDescription>TXT_KEY_TRAIT_FAIRY_HIGH_CUDDLER_SHORT</ShortDescription>
 			<Help>TXT_KEY_TRAIT_FAIRY_HIGH_CUDDLER_HELP</Help>
 			<bSelectable>0</bSelectable>
-			<SpecialistHappinessChanges>
-				<SpecialistHappinessChange>
-					<SpecialistType>SPECIALIST_SLAVE</SpecialistType>
+			<SpecialistClassHappinessChanges>
+				<SpecialistClassHappinessChange>
+					<SpecialistClass>SPECIALISTCLASS_SLAVE</SpecialistClass>
 					<iHappiness>1</iHappiness>
-				</SpecialistHappinessChange>
-			</SpecialistHappinessChanges>
+				</SpecialistClassHappinessChange>
+			</SpecialistClassHappinessChanges>
         </TraitInfo>
 		<TraitInfo> <!-- Soul Hunter -->
             <Type>TRAIT_FAIRY_SOUL_HUNTER</Type>

@@ -12,6 +12,12 @@
 			<Description>TXT_KEY_PROMOTION_LOCAL_HERO</Description>
 			<Help>TXT_KEY_PROMOTION_LOCAL_HERO_HELP</Help>
 			<Button>Modules\NormalModules\DrackLocalHero\Art\LocalHero.dds</Button>
+			<PromotionCombatMods>
+				<PromotionCombatMod>
+					<PromotionType>PROMOTION_HERO</PromotionType>
+					<iCombatMod>-50</iCombatMod>
+				</PromotionCombatMod>
+			</PromotionCombatMods>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Homesickness -->
 			<Type>PROMOTION_HOMESICKNESS</Type>
@@ -59,6 +65,10 @@
 				</UnitCombat>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>

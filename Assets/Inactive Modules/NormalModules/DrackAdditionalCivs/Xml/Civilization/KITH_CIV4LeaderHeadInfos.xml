@@ -28,6 +28,7 @@
 			<iSomniumAggressiveness>30</iSomniumAggressiveness>
 			<Alignment>ALIGNMENT_GOOD</Alignment>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
+			<iEthicalAlignmentModifier>500</iEthicalAlignmentModifier>
 			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
 			<iWonderConstructRand>10</iWonderConstructRand>
 			<iBaseAttitude>0</iBaseAttitude>
@@ -467,6 +468,7 @@
 			<iSomniumAggressiveness>30</iSomniumAggressiveness>
 			<Alignment>ALIGNMENT_NEUTRAL</Alignment>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_CHAOTIC</EthicalAlignment>
+			<iEthicalAlignmentModifier>-500</iEthicalAlignmentModifier>
 			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
 			<iWonderConstructRand>10</iWonderConstructRand>
 			<iBaseAttitude>0</iBaseAttitude>
@@ -902,6 +904,7 @@
 			<iSomniumAggressiveness>30</iSomniumAggressiveness>
 			<Alignment>ALIGNMENT_EVIL</Alignment>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
+			<iEthicalAlignmentModifier>300</iEthicalAlignmentModifier>
 			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
 			<iWonderConstructRand>10</iWonderConstructRand>
 			<iBaseAttitude>0</iBaseAttitude>
@@ -1337,6 +1340,7 @@
 			<iSomniumAggressiveness>30</iSomniumAggressiveness>
 			<Alignment>ALIGNMENT_NEUTRAL</Alignment>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
+			<iEthicalAlignmentModifier>400</iEthicalAlignmentModifier>
 			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
 			<iWonderConstructRand>10</iWonderConstructRand>
 			<iBaseAttitude>0</iBaseAttitude>
@@ -1772,6 +1776,7 @@
 			<iSomniumAggressiveness>30</iSomniumAggressiveness>
 			<Alignment>ALIGNMENT_GOOD</Alignment>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_NEUTRAL</EthicalAlignment>
+			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
 			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
 			<iWonderConstructRand>10</iWonderConstructRand>
 			<iBaseAttitude>0</iBaseAttitude>

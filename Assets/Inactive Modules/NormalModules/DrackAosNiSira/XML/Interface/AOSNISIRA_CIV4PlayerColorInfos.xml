@@ -27,7 +27,7 @@
 		<PlayerColorInfo>
 			<Type>PLAYERCOLOR_COURTOFMISRAK</Type>
 			<ColorTypePrimary>COLOR_PLAYER_COURTOFMISRAK_MAIN</ColorTypePrimary> 
-			<ColorTypeSecondary>COLOR_PLAYER_GOLD</ColorTypeSecondary>
+			<ColorTypeSecondary>COLOR_PLAYER_BLACK</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_COURTOFMISRAK_MAIN</TextColorType>
 		</PlayerColorInfo>
 	</PlayerColorInfos>

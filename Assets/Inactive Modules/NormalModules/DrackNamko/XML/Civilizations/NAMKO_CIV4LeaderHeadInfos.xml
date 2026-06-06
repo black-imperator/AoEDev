@@ -14,7 +14,7 @@
 			<LeaderClass>LEADERCLASS_HISTORICAL</LeaderClass>
 			<Alignment>ALIGNMENT_GOOD</Alignment>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
-			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
+			<iEthicalAlignmentModifier>500</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_HALL_OF_KINGS</FavoriteWonder>
 			<Traits>
 				<Trait>
@@ -389,6 +389,7 @@
 			<LeaderClass>LEADERCLASS_IMPORTANT</LeaderClass>
 			<Alignment>ALIGNMENT_EVIL</Alignment>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_CHAOTIC</EthicalAlignment>
+			<iEthicalAlignmentModifier>-500</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_MINES_OF_GALDUR</FavoriteWonder>
 			<Traits>
 				<Trait>
@@ -759,6 +760,7 @@
 			<LeaderClass>LEADERCLASS_HISTORICAL</LeaderClass>
 			<Alignment>ALIGNMENT_NEUTRAL</Alignment>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
+			<iEthicalAlignmentModifier>500</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_MINES_OF_GALDUR</FavoriteWonder>
 			<Traits>
 				<Trait>
@@ -1134,6 +1136,7 @@
 			<FavoriteCivic>CIVIC_SCHOLARSHIP</FavoriteCivic>
 			<Alignment>ALIGNMENT_EVIL</Alignment>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_CHAOTIC</EthicalAlignment>
+			<iEthicalAlignmentModifier>-500</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_MINES_OF_GALDUR</FavoriteWonder>
 			<Traits>
 				<Trait>
@@ -1266,7 +1269,6 @@
 			<iFreedomAppreciation>0</iFreedomAppreciation>
 			<bFemale>0</bFemale>
 			<iSomniumAggressiveness>30</iSomniumAggressiveness>
-			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
 			<ContactRands>
 				<ContactRand>
 					<ContactType>CONTACT_RELIGION_PRESSURE</ContactType>
@@ -1512,6 +1514,7 @@
 			</Traits>
 			<Alignment>ALIGNMENT_NEUTRAL</Alignment>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_NEUTRAL</EthicalAlignment>
+			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
 			<ReligionWeightModifiers>
 				 <ReligionWeightModifier>
 					<ReligionType>RELIGION_THE_ASHEN_VEIL</ReligionType>
@@ -1636,7 +1639,6 @@
 			<iVassalPowerModifier>20</iVassalPowerModifier>
 			<iFreedomAppreciation>0</iFreedomAppreciation>
 			<bFemale>0</bFemale>
-			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
 			<ContactRands>
 				<ContactRand>
 					<ContactType>CONTACT_RELIGION_PRESSURE</ContactType>

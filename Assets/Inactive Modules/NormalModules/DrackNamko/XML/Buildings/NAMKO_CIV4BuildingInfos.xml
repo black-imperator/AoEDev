@@ -442,5 +442,35 @@
 				</Flavor>
 			</Flavors>
 		</BuildingInfo>
+        <BuildingInfo>	<!-- Infirmary UB - Boneweaver Temple-->
+			<BuildingClass>BUILDINGCLASS_INFIRMARY</BuildingClass>
+			<Type>BUILDING_INFIRMARY_NAMKO</Type>
+			<Description>TXT_KEY_BUILDING_INFIRMARY_NAMKO</Description>
+			<Civilopedia>TXT_KEY_BUILDING_INFIRMARY_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_GROWTH</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_INFIRMARY_NAMKO</ArtDefineTag>
+			<PrereqTech>TECH_MEDICINE</PrereqTech>
+			<iAIWeight>10</iAIWeight>
+			<iCost>350</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iConquestProb>25</iConquestProb>
+			<iHealRateChange>15</iHealRateChange>
+			<iAsset>5</iAsset>
+			<fVisibilityPriority>1</fVisibilityPriority>
+			<SpecialistClassCounts>
+				<SpecialistClassCount>
+					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
+					<iSpecialistClassCount>3</iSpecialistClassCount>
+				</SpecialistClassCount>
+			</SpecialistClassCounts>
+			<ConstructSound>AS2D_BUILD_UNIVERSITY</ConstructSound>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+			<RemovePromotion>PROMOTION_DISEASED</RemovePromotion>
+		</BuildingInfo>
     </BuildingInfos>
 </Civ4BuildingInfos>

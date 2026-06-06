@@ -56,7 +56,7 @@ def onBeginPlayerTurn(self, argsList):
  
 	buildingPalace = gc.getInfoTypeForString('BUILDING_PALACE_COURTOFMISRAK')
 	buildingDollhouse = gc.getInfoTypeForString('BUILDING_FAIRY_DOLLHOUSE')
-	specialistSlave = gc.getInfoTypeForString('SPECIALIST_SLAVE')
+	specialistSlave = gc.getInfoTypeForString('SPECIALISTCLASS_SLAVE')
 	traitFairyHighCuddler = gc.getInfoTypeForString('TRAIT_FAIRY_HIGH_CUDDLER')
  
 	isPlayerHighCuddler = pPlayer.hasTrait(traitFairyHighCuddler)
@@ -73,7 +73,7 @@ def onBeginPlayerTurn(self, argsList):
 			newSouls += 1
 			
 		# Count the number of slave specialists in the city
-		slaveCount = pCity.getSpecialistCount(specialistSlave)
+		slaveCount = pCity.getSpecialistClassCount(specialistSlave)
 		### If High Cuddler, Double Souls from Slaves
 		if isPlayerHighCuddler:
 			slaveCount *=2
@@ -89,4 +89,21 @@ def onBeginPlayerTurn(self, argsList):
 	pPlayer.changeCivCounter(newSouls)
 	CyInterface().addMessage(iPlayer, False, 15, CyTranslator().getText("TXT_KEY_FAIRY_On_TURN_NEW_SOULS", (newSouls,)), "", 3, "", ColorTypes(8), -1, -1, True, True)
 	
+	# Automatically increases Cities of AI if they have enough souls to 10 to ensure they are a challenge
+	if not pPlayer.isHuman():
+		(pCity, iter) = pPlayer.firstCity(False)
+		while(pCity):
+			currentSoulsOfPlayer = pPlayer.getCivCounter()
+			if(currentSoulsOfPlayer < 100):
+				break
+			currentPopulation = pCity.getPopulation()
+			if(currentPopulation < 10):
+				pCity.changePopulation(1)
+				pPlayer.changeCivCounter(-10)
+
+			# Set Next City
+			(pCity, iter) = pPlayer.nextCity(iter, False)
+  
+		
+		
 	

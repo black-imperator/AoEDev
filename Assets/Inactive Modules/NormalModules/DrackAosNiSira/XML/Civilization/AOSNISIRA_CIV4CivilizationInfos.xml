@@ -964,6 +964,14 @@
 						<iYield>0</iYield>
 					</FeatureYields>
 				</FeatureYieldChange>
+				<FeatureYieldChange>
+					<FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+					<FeatureYields>
+						<iYield>-1</iYield>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+					</FeatureYields>
+				</FeatureYieldChange>
 			</FeatureYieldChanges>
 			<TerrainYieldChanges>
 				<TerrainYieldChange>

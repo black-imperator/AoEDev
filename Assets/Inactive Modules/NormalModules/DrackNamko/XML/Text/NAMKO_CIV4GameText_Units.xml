@@ -138,4 +138,20 @@ To Anubila, there is no greater purpose than ensuring the empires eternal reign.
         <Tag>TXT_KEY_UNIT_NAMKO_HOPLIAN_STRATEGY</Tag>
         <English>Hoplian are stronger than Spearman in attack and have a chance to retreat from combat. They are also secondary disciple units, giving them access to certain promotion.</English>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPECIALIST_NAMKO_BONEWEAVER</Tag>
+        <English>Boneweaver</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPECIALIST_NAMKO_BONEWEAVER_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_HIGH_NAMKO_BONEWEAVER</Tag>
+        <English>Great Boneweaver</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPECIALIST_GREAT_HEALER_STRATEGY</Tag>
+        <English>TODO</English>
+    </TEXT>
 </Civ4GameText>
