@@ -536,6 +536,83 @@ void CvInitCore::reassignPlayerAdvanced(PlayerTypes eOldID, PlayerTypes eNewID, 
 			GET_PLAYER(eNewID).changeTempPlayerTimer(iTimer);
 			GET_PLAYER(eNewID).setRealPlayer(eOldID);
 		}
+
+		// Bugfix (#433): CvGame::setActivePlayer (called above for the
+		// player switch) dirties CultureBorders and re-emits per-plot
+		// fog/visibility/minimap-color, but two things are still wrong
+		// after reassignPlayerAdvanced returns:
+		//
+		//   (1) The engine's render-binding cache keeps showing the OLD
+		//       player's view (fog texture, cultural borders, minimap
+		//       colors) until something nukes it.  Comparing against
+		//       the military advisor screen — which reads CvPlot data
+		//       directly per-team and always renders correctly — the
+		//       gameplay state is fine; only the cache is stale.
+		//       RebuildAllPlots() is the only DLL-reachable call that
+		//       fully invalidates that cache.
+		//
+		//   (2) RebuildAllPlots() in turn clobbers the per-plot fog
+		//       texture state that the earlier setActivePlayer chain
+		//       set up, so we have to re-emit updateFog/updateVisibility/
+		//       updateMinimapColor *after* RebuildAllPlots — with the new
+		//       active player fully consistent — for the new view to be
+		//       drawn correctly.
+		//
+		//   (3) The existing clearSelectionList() call inside
+		//       CvGame::setActivePlayer isn't enough to actually clear
+		//       the selected unit / re-bind the camera.  Without an
+		//       explicit lookAt() to the new active player's capital,
+		//       the camera stays parked wherever the old player was
+		//       looking — and the old player's "explored area" bounds
+		//       prevent the user from scrolling to their actual units.
+		//
+		// Net effect: the original symptom reported as "Impersonate
+		// Leader (Gibbon Goetia / Aphelion Amulet) never returns control
+		// to my civ" — investigated via hapdbg + WinDbg on 2026-05-28 —
+		// turned out to be control returning correctly but the renderer
+		// stuck on the previous player's view (cultural borders gone,
+		// fog over the player's own cities, camera frozen).  This block
+		// makes the visible state match the gameplay state on both the
+		// forward swap (Khazad -> Bannor) and the back swap (Bannor ->
+		// Khazad, fired from CvPlayer::doTurn when the timer hits 0).
+		if (GC.IsGraphicsInitialized())
+		{
+			gDLL->getEngineIFace()->RebuildAllPlots();
+
+			GC.getMapINLINE().updateFog();
+			GC.getMapINLINE().updateVisibility();
+			GC.getMapINLINE().updateMinimapColor();
+
+			gDLL->getEngineIFace()->SetDirty(CultureBorders_DIRTY_BIT, true);
+			gDLL->getEngineIFace()->SetDirty(MinimapTexture_DIRTY_BIT, true);
+
+			PlayerTypes eActive = GC.getInitCore().getActivePlayer();
+			if (eActive != NO_PLAYER && GET_PLAYER(eActive).isAlive())
+			{
+				gDLL->getInterfaceIFace()->clearSelectionList();
+				gDLL->getInterfaceIFace()->clearSelectedCities();
+
+				CvCity* pCapital = GET_PLAYER(eActive).getCapitalCity();
+				CvPlot* pLookPlot = NULL;
+				if (pCapital != NULL)
+				{
+					pLookPlot = pCapital->plot();
+				}
+				else
+				{
+					int iLoop = 0;
+					CvUnit* pFirstUnit = GET_PLAYER(eActive).firstUnit(&iLoop, false);
+					if (pFirstUnit != NULL)
+					{
+						pLookPlot = pFirstUnit->plot();
+					}
+				}
+				if (pLookPlot != NULL)
+				{
+					gDLL->getInterfaceIFace()->lookAt(pLookPlot->getPoint(), CAMERALOOKAT_NORMAL);
+				}
+			}
+		}
 	}
 }
 //FfH: End Add
