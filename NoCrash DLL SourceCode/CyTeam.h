@@ -230,6 +230,7 @@ public:
 	int AI_getAtWarCounter(int /*TeamTypes*/ eTeam) const;
 	int AI_getAtPeaceCounter(int /*TeamTypes*/ eTeam) const;
 	int AI_getWarSuccess(int /*TeamTypes*/ eIndex) const;
+	int AI_getHasMetCounter(int /*TeamTypes*/ eTeam) const;
 /*************************************************************************************************/
 /**	New Tag Defs	(ProjectInfos)			09/12/08								Xienwolf	**/
 /**	New Tag Defs	(TeamInfos)				09/12/08											**/

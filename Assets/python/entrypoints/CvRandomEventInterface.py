@@ -3487,7 +3487,12 @@ def canTriggerBabyBoom(argsList):
 
 	for iLoopTeam in range(gc.getMAX_CIV_TEAMS()):
 		if iLoopTeam != iTeam:
-			if pTeam.AI_getAtPeaceCounter(iLoopTeam) == 1:
+			# Bugfix #382: AtPeaceCounter resets to 0 on declareWar and starts
+			# at 0 on first meeting.  AtPeace == 1 alone matches both "just made
+			# peace" and "just met".  Require HasMet > AtPeace so a war must
+			# have happened between meeting and now.
+			if (pTeam.AI_getAtPeaceCounter(iLoopTeam) == 1
+			 and pTeam.AI_getHasMetCounter(iLoopTeam) > pTeam.AI_getAtPeaceCounter(iLoopTeam)):
 				return True
 
 	return False
