@@ -2285,7 +2285,7 @@ int CvTechInfo::getBonusCostModValuesVectorElement(int i)		{return m_aiBonusCost
 
 int CvTechInfo::getSpecialistTypeYieldChange(int i, int j)
 {
-	FAssertMsg(i < GC.getNumSpecialistTypes(), "Index out of bounds");
+	FAssertMsg(i < GC.getNumSpecialistInfos(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
 	FAssertMsg(j < NUM_YIELD_TYPES, "Index out of bounds");
 	FAssertMsg(j > -1, "Index out of bounds");
@@ -2294,14 +2294,14 @@ int CvTechInfo::getSpecialistTypeYieldChange(int i, int j)
 
 const int* CvTechInfo::getSpecialistTypeYieldChangeArray(int i)
 {
-	FAssertMsg(i < GC.getNumSpecialistTypes(), "Index out of bounds");
+	FAssertMsg(i < GC.getNumSpecialistInfos(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
 	return m_ppiSpecialistTypeYieldChanges ? m_ppiSpecialistTypeYieldChanges[i] : NULL;
 }
 
 int CvTechInfo::getSpecialistTypeCommerceChange(int i, int j)
 {
-	FAssertMsg(i < GC.getNumSpecialistTypes(), "Index out of bounds");
+	FAssertMsg(i < GC.getNumSpecialistInfos(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
 	FAssertMsg(j < NUM_COMMERCE_TYPES, "Index out of bounds");
 	FAssertMsg(j > -1, "Index out of bounds");
@@ -2310,28 +2310,28 @@ int CvTechInfo::getSpecialistTypeCommerceChange(int i, int j)
 
 const int* CvTechInfo::getSpecialistTypeCommerceChangeArray(int i)
 {
-	FAssertMsg(i < GC.getNumSpecialistTypes(), "Index out of bounds");
+	FAssertMsg(i < GC.getNumSpecialistInfos(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
 	return m_ppiSpecialistTypeCommerceChanges ? m_ppiSpecialistTypeCommerceChanges[i] : NULL;
 }
 
 int CvTechInfo::getSpecialistTypeHealthChange(int i)
 {
-	FAssertMsg(i < GC.getNumSpecialistTypes(), "Index out of bounds");
+	FAssertMsg(i < GC.getNumSpecialistInfos(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
 	return m_piSpecialistTypeHealthChanges ? m_piSpecialistTypeHealthChanges[i] : 0;
 }
 
 int CvTechInfo::getSpecialistTypeHappinessChange(int i)
 {
-	FAssertMsg(i < GC.getNumSpecialistTypes(), "Index out of bounds");
+	FAssertMsg(i < GC.getNumSpecialistInfos(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
 	return m_piSpecialistTypeHappinessChanges ? m_piSpecialistTypeHappinessChanges[i] : 0;
 }
 
 int CvTechInfo::getSpecialistTypeCrimeChange(int i)
 {
-	FAssertMsg(i < GC.getNumSpecialistTypes(), "Index out of bounds");
+	FAssertMsg(i < GC.getNumSpecialistInfos(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
 	return m_piSpecialistTypeCrimeChanges ? m_piSpecialistTypeCrimeChanges[i] : 0;
 }

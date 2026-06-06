@@ -5765,7 +5765,7 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 				}
 			}
 
-			if (iPass > 0 && !isHuman())
+			if (!isHuman())
 			{
 				iValue += kBuilding.getAIWeight();
 				if (iValue > 0)
