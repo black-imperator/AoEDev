@@ -143,6 +143,51 @@
 	<ElementType name="FirstTraitGainTemporarys" content="eltOnly">
 		<element type="TraitGainTemporary" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
+	<ElementType name="SpecialistType" content="textOnly"/>
+	<ElementType name="iYield" content="textOnly" dt:type="int"/>
+	<ElementType name="SpecialistTypeYields" content="eltOnly">
+		<element type="iYield" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="SpecialistTypeYieldChange" content="eltOnly">
+		<element type="SpecialistType"/>
+		<element type="SpecialistTypeYields"/>
+	</ElementType>
+	<ElementType name="SpecialistTypeYieldChanges" content="eltOnly">
+		<element type="SpecialistTypeYieldChange" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="iCommerce" content="textOnly" dt:type="int"/>
+	<ElementType name="SpecialistTypeCommerces" content="eltOnly">
+		<element type="iCommerce" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="SpecialistTypeCommerceChange" content="eltOnly">
+		<element type="SpecialistType"/>
+		<element type="SpecialistTypeCommerces"/>
+	</ElementType>
+	<ElementType name="SpecialistTypeCommerceChanges" content="eltOnly">
+		<element type="SpecialistTypeCommerceChange" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="SpecialistTypeHealthChange" content="eltOnly">
+		<element type="SpecialistType"/>
+		<element type="iHealth"/>
+	</ElementType>
+	<ElementType name="SpecialistTypeHealthChanges" content="eltOnly">
+		<element type="SpecialistTypeHealthChange" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="SpecialistTypeHappinessChange" content="eltOnly">
+		<element type="SpecialistType"/>
+		<element type="iHappiness"/>
+	</ElementType>
+	<ElementType name="SpecialistTypeHappinessChanges" content="eltOnly">
+		<element type="SpecialistTypeHappinessChange" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="iCrime" content="textOnly" dt:type="int"/>
+	<ElementType name="SpecialistTypeCrimeChange" content="eltOnly">
+		<element type="SpecialistType"/>
+		<element type="iCrime"/>
+	</ElementType>
+	<ElementType name="SpecialistTypeCrimeChanges" content="eltOnly">
+		<element type="SpecialistTypeCrimeChange" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
 	<ElementType name="TechInfo" content="eltOnly" order="many">
 		<element type="TraitCounterModifiers" minOccurs="0"/>
 		<element type="FirstTraitCounterModifiers" minOccurs="0"/>
@@ -225,6 +270,11 @@
 		<element type="iVictoryInfluenceModifier"/>
 		<element type="iDefeatInfluenceModifier"/>
 		<element type="iPillageInfluenceModifier"/>
+		<element type="SpecialistTypeYieldChanges"/>
+		<element type="SpecialistTypeCommerceChanges"/>
+		<element type="SpecialistTypeHealthChanges"/>
+		<element type="SpecialistTypeHappinessChanges"/>
+		<element type="SpecialistTypeCrimeChanges"/>
 	</ElementType>
 	<ElementType name="TechType" content="textOnly"/>
 	<ElementType name="BonusType" content="textOnly"/>

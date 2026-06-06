@@ -771,4 +771,8 @@
 		<!-- Used instead of DEFAULT_SPECIALIST -->
 		<DefineTextVal>SPECIALISTCLASS_CITIZEN</DefineTextVal>
 	</Define>
+	<Define>
+		<DefineName>NUM_UNIT_PREREQ_OR_BONUSES</DefineName>
+		<iDefineIntVal>5</iDefineIntVal>
+	</Define>
 </Civ4Defines>

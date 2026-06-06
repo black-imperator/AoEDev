@@ -93,7 +93,7 @@
 			</UnitAIs>
 			<GreatPeoples>
 				<GreatPeople>
-					<GreatPeopleType>SPECIALIST_GREAT_ENGINEER</GreatPeopleType>
+					<GreatPeopleClass>SPECIALISTCLASS_GREAT_ENGINEER</GreatPeopleClass>
 					<bGreatPeople>1</bGreatPeople>
 				</GreatPeople>
 			</GreatPeoples>
@@ -231,7 +231,7 @@
 			</UnitAIs>
 			<GreatPeoples>
 				<GreatPeople>
-					<GreatPeopleType>SPECIALIST_GREAT_ENGINEER</GreatPeopleType>
+					<GreatPeopleClass>SPECIALISTCLASS_GREAT_ENGINEER</GreatPeopleClass>
 					<bGreatPeople>1</bGreatPeople>
 				</GreatPeople>
 			</GreatPeoples>

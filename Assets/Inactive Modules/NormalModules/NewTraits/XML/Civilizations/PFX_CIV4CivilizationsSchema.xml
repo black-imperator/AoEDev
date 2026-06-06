@@ -486,6 +486,7 @@
 	<ElementType name="iModReligionSpreadChance" content="textOnly" dt:type="int"/>
 	<ElementType name="bBarbarianAlly" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bIgnoreFood" content="textOnly" dt:type="boolean"/><!-- the player does not consume food. Fallow and undying traits (dtesh, frozen, infernal, scions) -->
+	<ElementType name="bIgnoreProduction" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bIgnoreHealth" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bIgnoreHappy" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bInsane" content="textOnly" dt:type="boolean"/>
@@ -766,6 +767,7 @@
 <!-- CityPop Cap END -->
 		<element type="bBarbarianAlly"/>
 		<element type="bIgnoreFood"/>
+		<element type="bIgnoreProduction"/>
 		<element type="bIgnoreHealth"/>
 		<element type="bIgnoreHappy"/>
 		<element type="bInsane"/>

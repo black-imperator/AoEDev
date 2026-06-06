@@ -1390,6 +1390,32 @@
 	<ElementType name="iOrderPriority" content="textOnly" dt:type="int"/>
 	<ElementType name="bVisible" content="textOnly" dt:type="boolean"/>
 	<ElementType name="iGreatPeopleRateChange" content="textOnly" dt:type="int"/>
+	<ElementType name="iCityDefense" content="textOnly" dt:type="int"/>
+	<ElementType name="iExtraTradeRoutes" content="textOnly" dt:type="int"/>
+	<ElementType name="UnitCombatType" content="textOnly"/>
+	<ElementType name="UnitCombatFreeXP" content="eltOnly">
+		<element type="UnitCombatType" minOccurs="0" maxOccurs="*"/>
+		<element type="iExperience" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="UnitCombatFreeXPs" content="eltOnly">
+		<element type="UnitCombatFreeXP" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="iTrainXPCap" content="textOnly" dt:type="float"/>
+	<ElementType name="TrainXPCap" content="eltOnly">
+		<element type="UnitCombatType" minOccurs="0" maxOccurs="*"/>
+		<element type="iTrainXPCap" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="TrainXPCaps" content="eltOnly">
+		<element type="TrainXPCap" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="iTrainXPRate" content="textOnly" dt:type="float"/>
+	<ElementType name="TrainXPRate" content="eltOnly">
+		<element type="UnitCombatType" minOccurs="0" maxOccurs="*"/>
+		<element type="iTrainXPRate" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="TrainXPRates" content="eltOnly">
+		<element type="TrainXPRate" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
 	<ElementType name="SpecialistClass" content="textOnly"/>
 	<ElementType name="SpecialistInfo" content="eltOnly" order="many">
 		<element type="SpecialistClass"/>
@@ -1412,8 +1438,16 @@
 		<element type="iHealth"/>
 		<element type="iCrime"/>
 		<element type="iHappiness"/>
+		<element type="iCityDefense"/>
+		<element type="iExtraTradeRoutes"/>
 <!-- SPECIALIST ENHANCEMENTS				END							-->
 		<element type="iExperience"/>
+		<element type="UnitCombatFreeXPs"/>
+		<element type="TrainXPCaps"/>
+		<element type="TrainXPRates"/>
+		<element type="SpecialistClassYieldChanges"/>
+		<element type="SpecialistClassCommerceChanges"/>
+		<element type="SpecialistClassCrimeChanges"/>
 		<element type="Flavors"/>
 		<element type="HotKey"/>
 		<element type="bAltDown"/>
