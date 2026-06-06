@@ -18392,7 +18392,7 @@ void CvUnitInfo::copyNonDefaults(CvUnitInfo* pClassInfo, CvXMLLoadUtility* pXML)
 		for(int i = 0; i < pClassInfo->getNumUnitNames(); ++i)
 		{
 			bool bLoad = true;
-			for(int j = 0; i < getNumUnitNames(); ++i)
+			for(int j = 0; j < getNumUnitNames(); ++j)
 			{
 				if(pClassInfo->getUnitNames(i) == cDefault || pClassInfo->getUnitNames(i) == getUnitNames(j))
 				{
@@ -18425,7 +18425,7 @@ void CvUnitInfo::copyNonDefaults(CvUnitInfo* pClassInfo, CvXMLLoadUtility* pXML)
 		for(int i = 0; i < pClassInfo->getNumQuotes(); ++i)
 		{
 			bool bLoad = true;
-			for(int j = 0; i < getNumQuotes(); ++i)
+			for(int j = 0; j < getNumQuotes(); ++j)
 			{
 				if(pClassInfo->getQuotes(i) == cDefault || pClassInfo->getQuotes(i) == getQuotes(j))
 				{
@@ -18458,7 +18458,7 @@ void CvUnitInfo::copyNonDefaults(CvUnitInfo* pClassInfo, CvXMLLoadUtility* pXML)
 		for(int i = 0; i < pClassInfo->getNumImages(); ++i)
 		{
 			bool bLoad = true;
-			for(int j = 0; i < getNumImages(); ++i)
+			for(int j = 0; j < getNumImages(); ++j)
 			{
 				if(pClassInfo->getImages(i) == cDefault || pClassInfo->getImages(i) == getImages(j))
 				{
