@@ -20235,7 +20235,7 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_SEE_INVISIBLE"));
 	}
-	CvWString* szSpecialistNameBuffer = new CvWString[GC.getNumSpecialistClassInfos()];
+	std::vector<CvWString> szSpecialistNameBuffer(GC.getNumSpecialistClassInfos());
 	bool* bBufferEmpty = new bool[GC.getNumSpecialistClassInfos()];
 	for (int iI = 0; iI < GC.getNumSpecialistClassInfos(); ++iI)
 	{
@@ -20355,7 +20355,6 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 			szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_FREE_SPECIALIST", kBuilding.getFreeSpecialistClassCount(iI), szSpecialistNameBuffer[iI].GetCString()));
 		}
 	}
-	SAFE_DELETE_ARRAY(szSpecialistNameBuffer);
 	SAFE_DELETE_ARRAY(bBufferEmpty);
 
 	if (kBuilding.isNoCivicAnger())
@@ -29843,12 +29842,12 @@ void CvGameTextMgr::setEventHelp(CvWStringBuffer& szBuffer, EventTypes eEvent, i
 				if (kEvent.isCityEffect() || kEvent.isOtherPlayerCityEffect())
 				{
 					szBuffer.append(NEWLINE);
-					szBuffer.append(gDLL->getText("TXT_KEY_EVENT_UNHEALTH", -kEvent.getHealth(), szCity.GetCString()));
+					szBuffer.append(gDLL->getText("TXT_KEY_EVENT_UNHEALTH_CITY", -kEvent.getHealth(), szCity.GetCString()));
 				}
 				else
 				{
 					szBuffer.append(NEWLINE);
-					szBuffer.append(gDLL->getText("TXT_KEY_EVENT_UNHEALTH_CITY", -kEvent.getHealth()));
+					szBuffer.append(gDLL->getText("TXT_KEY_EVENT_UNHEALTH", -kEvent.getHealth()));
 				}
 			}
 		}
