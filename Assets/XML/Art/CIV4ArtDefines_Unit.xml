@@ -32595,6 +32595,29 @@
 				<AudioRunTypeEnd/>
 			</AudioRunSounds>
 		</UnitArtInfo>
+		<UnitArtInfo> <!-- UNIT_BAT -->
+			<Type>ART_DEF_UNIT_BAT</Type>
+			<Button>Art/Interface/Buttons/Units/Batty.dds</Button>
+			<fScale>3.0</fScale>
+			<fInterfaceScale>0.4</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>1</bActAsAir>
+			<NIF>Art/Units/Animal/Bat/Bat.nif</NIF>
+			<KFM>Art/Units/Animal/HornedOwl/owl.kfm</KFM>
+		<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/FighterShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.15</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>1.1</fBattleDistance>
+			<fRangedDeathTime>0.35</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+		<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
 		<UnitArtInfo> <!-- UNIT_BEREGUINE -->
 			<Type>ART_DEF_UNIT_BEREGUINE</Type>
 			<Button>Art/units/default/druid/druid.dds</Button>

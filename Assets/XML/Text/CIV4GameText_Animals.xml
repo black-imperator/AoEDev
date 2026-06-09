@@ -458,6 +458,22 @@
 		<Spanish>Toad Knot</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_BAT</Tag>
+		<English>Bats</English>
+		<French>Bats</French>
+		<German>Bats</German>
+		<Italian>Bats</Italian>
+		<Spanish>Bats</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BAT_PEDIA</Tag>
+		<English>Du nu nu nu, Bat-bat!</English>
+		<French>Du nu nu nu, Bat-bat!</French>
+		<German>Du nu nu nu, Bat-bat!</German>
+		<Italian>Du nu nu nu, Bat-bat!</Italian>
+		<Spanish>Du nu nu nu, Bat-bat!</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_SEA_SERPENT</Tag>
 		<English>Sea Serpent</English>
 		<French>
