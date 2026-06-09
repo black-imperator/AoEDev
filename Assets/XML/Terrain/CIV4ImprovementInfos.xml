@@ -9364,6 +9364,18 @@
 			</TerrainMakesValids>
 			<BonusTypeStructs>
 				<BonusTypeStruct>
+					<BonusType>BONUS_WINE</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>1</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>1</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+				<BonusTypeStruct>
 					<BonusType>BONUS_CORN</BonusType>
 					<bBonusMakesValid>1</bBonusMakesValid>
 					<bBonusTrade>1</bBonusTrade>
@@ -10284,7 +10296,7 @@
 			<PrereqCivilization>CIVILIZATION_GRIGORI</PrereqCivilization>
 			<FreeSpecialistClass>SPECIALISTCLASS_STATESMAN</FreeSpecialistClass>
 			<YieldChanges>
-				<iYieldChange>0</iYieldChange>
+				<iYieldChange>1</iYieldChange>
 				<iYieldChange>0</iYieldChange>
 				<iYieldChange>0</iYieldChange>
 			</YieldChanges>
@@ -10326,6 +10338,18 @@
 				</TerrainMakesValid>
 			</TerrainMakesValids>
 			<BonusTypeStructs>
+				<BonusTypeStruct>
+					<BonusType>BONUS_WINE</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>1</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>1</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
 				<BonusTypeStruct>
 					<BonusType>BONUS_BANANA</BonusType>
 					<bBonusMakesValid>1</bBonusMakesValid>

@@ -625,9 +625,67 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 			</Units>
+			<Specialists>
+				<Specialist>
+					<SpecialistClassType>SPECIALISTCLASS_STATESMAN</SpecialistClassType>
+					<SpecialistType>SPECIALIST_SLEEPING_AIFON</SpecialistType>
+				</Specialist>
+			</Specialists>
 			<Improvements>
 				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_FARM</ImprovementClassType>
+					<ImprovementType>IMPROVEMENT_AIFON_LAND</ImprovementType>
+				</Improvement>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_CAMP</ImprovementClassType>
+					<ImprovementType>NONE</ImprovementType>
+				</Improvement>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_PASTURE</ImprovementClassType>
+					<ImprovementType>NONE</ImprovementType>
+				</Improvement>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_WINERY</ImprovementClassType>
+					<ImprovementType>NONE</ImprovementType>
+				</Improvement>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_MINE</ImprovementClassType>
+					<ImprovementType>NONE</ImprovementType>
+				</Improvement>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_WINDMILL</ImprovementClassType>
+					<ImprovementType>NONE</ImprovementType>
+				</Improvement>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_WATERMILL</ImprovementClassType>
+					<ImprovementType>NONE</ImprovementType>
+				</Improvement>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_LUMBERMILL</ImprovementClassType>
+					<ImprovementType>NONE</ImprovementType>
+				</Improvement>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_PLANTATION</ImprovementClassType>
+					<ImprovementType>NONE</ImprovementType>
+				</Improvement>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_QUARRY</ImprovementClassType>
+					<ImprovementType>NONE</ImprovementType>
+				</Improvement>
+				<Improvement>
 					<ImprovementClassType>IMPROVEMENTCLASS_COTTAGE</ImprovementClassType>
+					<ImprovementType>NONE</ImprovementType>
+				</Improvement>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_TRAWLING_BOATS</ImprovementClassType>
+					<ImprovementType>NONE</ImprovementType>
+				</Improvement>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_FISHING_BOATS</ImprovementClassType>
+					<ImprovementType>IMPROVEMENT_FISHING_BOATS_AIFON</ImprovementType>
+				</Improvement>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_WORKSHOP</ImprovementClassType>
 					<ImprovementType>NONE</ImprovementType>
 				</Improvement>
 				<Improvement>
@@ -724,58 +782,7 @@
 					<iCultureDistanceChange>1</iCultureDistanceChange>
 				</TerrainCultureDistanceChange>
 			</TerrainCultureDistanceChanges>
-			<Image>Modules/NormalModules/ViciousSeas/Art/Interface/Popups/Civ/DreamAifonsBanner.dds</Image>
-			<ImprovementYieldChanges>
-				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
-					<ImprovementYields>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-						<iYield>0</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_TRAWLING_BOATS</ImprovementType>
-					<ImprovementYields>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-						<iYield>0</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_STYGIAN_SHRINE</ImprovementType>
-					<ImprovementYields>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-						<iYield>0</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_STYGIAN_TEMPLE</ImprovementType>
-					<ImprovementYields>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-						<iYield>0</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_STYGIAN_CATHEDRAL</ImprovementType>
-					<ImprovementYields>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-						<iYield>0</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_STYGIAN_GRAND_SPIRE</ImprovementType>
-					<ImprovementYields>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-						<iYield>0</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-			</ImprovementYieldChanges>
-			<FormClimateZoneType>CLIMATEZONE_WASTELAND</FormClimateZoneType>
+			<Image>Modules/NormalModules/ViciousSeas/Art/Interface/Popups/Civ/AifonBorder.dds</Image>
 		</CivilizationInfo>
 		<CivilizationInfo><!-- Barbarian (Orc) -->
 			<Type>CIVILIZATION_ORC</Type>

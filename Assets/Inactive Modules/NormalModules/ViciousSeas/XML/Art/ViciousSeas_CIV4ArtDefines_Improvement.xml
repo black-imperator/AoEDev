@@ -37,7 +37,7 @@
 		<ImprovementArtInfo>
 			<Type>ART_DEF_IMPROVEMENT_SEA_COTTAGE</Type>
 			<bExtraAnimations>0</bExtraAnimations>
-			<fScale>6.0</fScale>
+			<fScale>9.0</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<NIF>Modules/NormalModules/ViciousSeas/Art/Structures/Improvements/Sea_cottages/Sea_Cottage.nif</NIF>
 			<KFM/>
@@ -46,7 +46,7 @@
 		<ImprovementArtInfo>
 			<Type>ART_DEF_IMPROVEMENT_SEA_HAMLET</Type>
 			<bExtraAnimations>0</bExtraAnimations>
-			<fScale>6.0</fScale>
+			<fScale>9.0</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<NIF>Modules/NormalModules/ViciousSeas/Art/Structures/Improvements/Sea_cottages/Sea_Hamlet.nif</NIF>
 			<KFM/>
@@ -55,7 +55,7 @@
 		<ImprovementArtInfo>
 			<Type>ART_DEF_IMPROVEMENT_SEA_VILLAGE</Type>
 			<bExtraAnimations>0</bExtraAnimations>
-			<fScale>6.0</fScale>
+			<fScale>9.0</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<NIF>Modules/NormalModules/ViciousSeas/Art/Structures/Improvements/Sea_cottages/Sea_Village.nif</NIF>
 			<KFM/>
@@ -64,11 +64,29 @@
 		<ImprovementArtInfo>
 			<Type>ART_DEF_IMPROVEMENT_SEA_TOWN</Type>
 			<bExtraAnimations>0</bExtraAnimations>
-			<fScale>6.0</fScale>
+			<fScale>9.0</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<NIF>Modules/NormalModules/ViciousSeas/Art/Structures/Improvements/Sea_cottages/Sea_Town.nif</NIF>
 			<KFM/>
 			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Improvements/SeaHaven.dds</Button>
+		</ImprovementArtInfo>
+		<ImprovementArtInfo>		<!-- Aifon Fishing -->
+			<Type>ART_DEF_IMPROVEMENT_AIFON_FISHING</Type>
+			<bExtraAnimations>0</bExtraAnimations>
+			<fScale>12</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Improvements/Lairs/Barrow/Stone Resource/shadowminingpost.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Improvements/UnderwaterWarren.dds</Button>
+		</ImprovementArtInfo>
+		<ImprovementArtInfo> <!-- Aifon Land Improvement -->
+			<Type>ART_DEF_IMPROVEMENT_AIFON_WORKSHOP</Type>
+			<bExtraAnimations>0</bExtraAnimations>
+			<fScale>10.0</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Modules/NormalModules/ViciousSeas/Art/Structures/Improvements/AifonWorkshop/humanbank.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Improvements/Haven.dds</Button>
 		</ImprovementArtInfo>
 	</ImprovementArtInfos>
 </Civ4ArtDefines>

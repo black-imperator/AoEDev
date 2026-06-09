@@ -2370,7 +2370,7 @@
 			<iMoves>1</iMoves>
 			<iWorkRate>300</iWorkRate>
 			<iCombat>4</iCombat>
-			<iCombatDefense>3</iCombatDefense>
+			<iCombatDefense>4</iCombatDefense>
 			<iCultureGarrison>3</iCultureGarrison>
 			<iAsset>16</iAsset>
 			<UnitMeshGroups>
@@ -2743,6 +2743,56 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
+		</UnitInfo>
+		<UnitInfo>        <!-- Artisan -->
+			<Class>UNITCLASS_FABRICAFORMA_ARTISAN</Class>
+			<Type>UNIT_FABRICAFORMA_ARTISAN</Type>
+			<AllowPromotions>
+				<Promotion>PROMOTION_NIGHTMARE_AIFON</Promotion>
+				<Promotion>PROMOTION_NIGHTMARE_AIFON_HIDDEN_NATIONALITY_BLANKET</Promotion>
+				<Promotion>PROMOTION_DREAMING_AIFON</Promotion>
+				<Promotion>PROMOTION_DREAM</Promotion>
+			</AllowPromotions>
+		</UnitInfo>
+		<UnitInfo>        <!-- Farmer -->
+			<Class>UNITCLASS_FARMERS_GUILD_FARMER</Class>
+			<Type>UNIT_FARMERS_GUILD_FARMER</Type>
+			<AllowPromotions>
+				<Promotion>PROMOTION_NIGHTMARE_AIFON</Promotion>
+				<Promotion>PROMOTION_NIGHTMARE_AIFON_HIDDEN_NATIONALITY_BLANKET</Promotion>
+				<Promotion>PROMOTION_DREAMING_AIFON</Promotion>
+				<Promotion>PROMOTION_DREAM</Promotion>
+			</AllowPromotions>
+		</UnitInfo>
+		<UnitInfo>        <!-- Fishing Boat -->
+			<Class>UNITCLASS_FISHINGBOAT</Class>
+			<Type>UNIT_FISHINGBOAT</Type>
+			<AllowPromotions>
+				<Promotion>PROMOTION_NIGHTMARE_AIFON</Promotion>
+				<Promotion>PROMOTION_NIGHTMARE_AIFON_HIDDEN_NATIONALITY_BLANKET</Promotion>
+				<Promotion>PROMOTION_DREAMING_AIFON</Promotion>
+				<Promotion>PROMOTION_DREAM</Promotion>
+			</AllowPromotions>
+		</UnitInfo>
+		<UnitInfo>        <!-- Masquerade Travelling Wagon -->
+			<Class>UNITCLASS_MASQUERADE_TRAVELLING_WAGON</Class>
+			<Type>UNIT_MASQUERADE_TRAVELLING_WAGON</Type>
+			<AllowPromotions>
+				<Promotion>PROMOTION_NIGHTMARE_AIFON</Promotion>
+				<Promotion>PROMOTION_NIGHTMARE_AIFON_HIDDEN_NATIONALITY_BLANKET</Promotion>
+				<Promotion>PROMOTION_DREAMING_AIFON</Promotion>
+				<Promotion>PROMOTION_DREAM</Promotion>
+			</AllowPromotions>
+		</UnitInfo>
+		<UnitInfo>        <!-- Stonefire Smith -->
+			<Class>UNITCLASS_STONEFIRE_SMITH</Class>
+			<Type>UNIT_STONEFIRE_SMITH</Type>
+			<AllowPromotions>
+				<Promotion>PROMOTION_NIGHTMARE_AIFON</Promotion>
+				<Promotion>PROMOTION_NIGHTMARE_AIFON_HIDDEN_NATIONALITY_BLANKET</Promotion>
+				<Promotion>PROMOTION_DREAMING_AIFON</Promotion>
+				<Promotion>PROMOTION_DREAM</Promotion>
+			</AllowPromotions>
 		</UnitInfo>
 </UnitInfos>
 </Civ4UnitInfos>

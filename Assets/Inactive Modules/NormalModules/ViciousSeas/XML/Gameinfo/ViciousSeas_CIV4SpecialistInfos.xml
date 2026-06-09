@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Soren Johnson (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Specialist -->
+<Civ4SpecialistInfos xmlns="x-schema:ViciousSeas_CIV4GameInfoSchema.xml">
+	<SpecialistInfos>
+    <SpecialistInfo>  <!-- Sleep Walker Aifon -->
+	    <Type>SPECIALIST_SLEEPING_AIFON</Type>
+			<SpecialistClass>SPECIALISTCLASS_STATESMAN</SpecialistClass>
+			<Description>TXT_KEY_SPECIALIST_SLEEPING_AIFON</Description>
+			<Civilopedia>TXT_KEY_SPECIALIST_SLEEPING_AIFON_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_SPECIALIST_SLEEPING_AIFON_PEDIA</Strategy>
+			<Texture>Art/Interface/Buttons/Units/Lunatic.dds</Texture>
+			<bVisible>1</bVisible>
+			<Yields>
+				<iYield>0</iYield>
+				<iYield>0</iYield>
+				<iYield>0</iYield>
+			</Yields>
+			<Commerces>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>1</iCommerce>
+			</Commerces>
+			<Button>Art/Interface/Buttons/Units/Lunatic.dds</Button>
+		</SpecialistInfo> 
+	</SpecialistInfos>
+</Civ4SpecialistInfos>

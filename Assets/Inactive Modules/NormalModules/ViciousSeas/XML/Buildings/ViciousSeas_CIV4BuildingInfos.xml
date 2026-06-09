@@ -653,7 +653,7 @@
 					<fCulture>0.20</fCulture>
 				</PerPopBonus>
 			</PerPopBonuses>
-			<iExtraCrimePerUnhappy>2</iExtraCrimePerUnhappy>
+			<iExtraCrimePerUnhappy>6</iExtraCrimePerUnhappy>
 			<iWarWearinessModifier>0</iWarWearinessModifier>
 			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
 			<iCost>-1</iCost>

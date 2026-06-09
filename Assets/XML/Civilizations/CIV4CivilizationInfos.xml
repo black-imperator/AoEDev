@@ -2706,6 +2706,10 @@
 					<ImprovementType>NONE</ImprovementType>
 				</Improvement>
 				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_WINERY</ImprovementClassType>
+					<ImprovementType>NONE</ImprovementType>
+				</Improvement>
+				<Improvement>
 					<ImprovementClassType>IMPROVEMENTCLASS_MINE</ImprovementClassType>
 					<ImprovementType>NONE</ImprovementType>
 				</Improvement>

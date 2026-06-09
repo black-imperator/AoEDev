@@ -112,7 +112,7 @@
 			<Civilopedia>TXT_KEY_TRAIT_DREAM_PEDIA</Civilopedia>
 			<ShortDescription>TXT_KEY_TRAIT_DREAM_SHORT</ShortDescription>
 			<bIgnoreHealth>1</bIgnoreHealth>
-			<bAmphibian>1</bAmphibian>
+			<bAmphibian>0</bAmphibian>
 			<PlotEffectSpawnChances>
 				<PlotEffectSpawnChance>
 					<PlotEffectType>PLOT_EFFECT_DREAMWORLD</PlotEffectType>
@@ -191,6 +191,14 @@
 						<iYield>1</iYield>
 					</ImprovementYields>
 				</ImprovementYieldChange>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_FISHING_BOATS_AIFON</ImprovementType>
+					<ImprovementYields>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
 			</ImprovementYieldChanges>
 		</TraitInfo>
 		<TraitInfo>		<!-- Condatis Trait Real -->
@@ -199,16 +207,34 @@
 			<Description>TXT_KEY_TRAITCLASS_REAL_VS</Description>
 			<Civilopedia>TXT_KEY_TRAITCLASS_REAL_VS_PEDIA</Civilopedia>
 			<ShortDescription>TXT_KEY_TRAIT_REAL_VS_SHORT</ShortDescription>	
-			<TerrainYieldChanges>
-				<TerrainYieldChange>
-					<TerrainType>TERRAIN_WASTELAND</TerrainType>
-					<TerrainYields>
+			<ExtraBuildingClasses>
+				<ExtraBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_CRIME_ILLEGAL_IMMIGRATION</BuildingClassType>
+					<BuildingType>BUILDING_CRIME_ILLEGAL_IMMIGRATION</BuildingType>
+				</ExtraBuildingClass>
+				<ExtraBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_CRIME_TAX_EVASION</BuildingClassType>
+					<BuildingType>BUILDING_CRIME_TAX_EVASION</BuildingType>
+				</ExtraBuildingClass>
+				<ExtraBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_CRIME_MURDER</BuildingClassType>
+					<BuildingType>BUILDING_CRIME_MURDER</BuildingType>
+				</ExtraBuildingClass>
+				<ExtraBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_CRIME_RIOTS</BuildingClassType>
+					<BuildingType>BUILDING_CRIME_RIOTS</BuildingType>
+				</ExtraBuildingClass>
+			</ExtraBuildingClasses>
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_AIFON_LAND</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
 						<iYield>2</iYield>
 						<iYield>1</iYield>
-						<iYield>1</iYield>
-					</TerrainYields>
-				</TerrainYieldChange>
-			</TerrainYieldChanges>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 			<FreePromotions>
 				<FreePromotion>
 					<PromotionType>PROMOTION_REAL_VS</PromotionType>
