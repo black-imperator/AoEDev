@@ -22675,7 +22675,7 @@ void CvGameTextMgr::buildBuildingRequiresString(CvWStringBuffer& szBuffer, Build
 				szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_REQUIRES_NUM_CITIES", kBuilding.getNumCitiesPrereq()));
 			}
 /**								----  End Original Code  ----									**/
-			if (NO_PLAYER == ePlayer || ((GET_PLAYER(ePlayer).getMaxCities() != -1 && (GET_PLAYER(ePlayer).getMaxCities() < kBuilding.getNumCitiesPrereq())) ? (GET_PLAYER(ePlayer).getNumCities() < GET_PLAYER(ePlayer).getMaxCities()): GET_PLAYER(ePlayer).getNumCities() < kBuilding.getNumCitiesPrereq()))
+			if (NO_PLAYER == ePlayer || ((GET_PLAYER(ePlayer).getMaxCities() != -1 && (GET_PLAYER(ePlayer).getMaxCities() < kBuilding.getNumCitiesPrereq())) ? ((GET_PLAYER(ePlayer).getNumCities() - GET_PLAYER(ePlayer).getNumSettlements()) < GET_PLAYER(ePlayer).getMaxCities()): GET_PLAYER(ePlayer).getNumCities() < kBuilding.getNumCitiesPrereq()))
 			{
 				szBuffer.append(NEWLINE);
 				szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_REQUIRES_NUM_CITIES", (NO_PLAYER == ePlayer ? (kBuilding.getNumCitiesPrereq()) : ((GET_PLAYER(ePlayer).getMaxCities() != -1 && (GET_PLAYER(ePlayer).getMaxCities() < kBuilding.getNumCitiesPrereq())) ? (GET_PLAYER(ePlayer).getMaxCities()) : kBuilding.getNumCitiesPrereq()))));
