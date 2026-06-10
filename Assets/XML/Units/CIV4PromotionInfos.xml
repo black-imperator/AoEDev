@@ -14059,6 +14059,42 @@
 			<bNoXP>1</bNoXP>
 			<Button>Art/Interface/Buttons/Promotions/Shimmering_Core.dds</Button>
 		</PromotionInfo>
+		<PromotionInfo>		<!-- Tear Core -->
+			<Type>PROMOTION_TEAR_CORE</Type>
+			<Description>TXT_KEY_PROMOTION_TEAR_CORE</Description>
+			<bNoXP>1</bNoXP>
+			<AuraBonuses>
+				<AuraBonus>
+					<bApplyEnemy>1</bApplyEnemy>
+					<bApplyRival>1</bApplyRival>
+					<bApplyTeam>1</bApplyTeam>
+					<bApplySelf>1</bApplySelf>
+					<iBonusRange>1</iBonusRange>
+					<Promotion>PROMOTION_IMMUNE_DISEASE</Promotion>
+				</AuraBonus>
+			</AuraBonuses>
+			<Button>Art/Interface/Buttons/Promotions/SacredTear.dds</Button>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Shimmering Human Form -->
+			<Type>PROMOTION_SHIMMERING_HUMAN_FORM</Type>
+			<Description>TXT_KEY_PROMOTION_SHIMMERING_HUMAN_FORM</Description>
+			<bNoXP>1</bNoXP>
+			<ReplaceArtType>ART_DEF_UNIT_SHIMMERING_HUMAN</ReplaceArtType>
+			<Button>Art/Interface/Buttons/Units/ShimmeringHuman.dds</Button>
+			<iPromotionDuration>2</iPromotionDuration>
+			<bOnlyDefensive>1</bOnlyDefensive>
+			<CityBonuses>
+				<CityBonus>
+					<bApplyEnemy>1</bApplyEnemy>
+					<bApplyRival>1</bApplyRival>
+					<bApplyTeam>1</bApplyTeam>
+					<bApplySelf>1</bApplySelf>
+					<fHappy>3</fHappy>
+					<fHealth>10</fHealth>
+					<iBonusRange>4</iBonusRange>
+				</CityBonus>
+			</CityBonuses>
+		</PromotionInfo>
 		<PromotionInfo>		<!-- Form of Lighthouse -->
 			<Type>PROMOTION_FORM_OF_LIGHTHOUSE</Type>
 			<Description>TXT_KEY_PROMOTION_FORM_OF_LIGHTHOUSE</Description>

@@ -11310,6 +11310,30 @@ A moment later, rain begins to fall.</Spanish>
 		<Spanish>Shimmering Core</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_TEAR_CORE</Tag>
+		<English>Tear Core</English>
+		<French>Tear Core</French>
+		<German>Tear Core</German>
+		<Italian>Tear Core</Italian>
+		<Spanish>Tear Core</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_SHIMMERING_HUMAN_FORM</Tag>
+		<English>Shimmering Human Form</English>
+		<French>Shimmering Human Form</French>
+		<German>Shimmering Human Form</German>
+		<Italian>Shimmering Human Form</Italian>
+		<Spanish>Shimmering Human Form</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_SHIMMERING_FORM</Tag>
+		<English>Take Mortal Form</English>
+		<French>Take Mortal Form</French>
+		<German>Take Mortal Form</German>
+		<Italian>Take Mortal Form</Italian>
+		<Spanish>Take Mortal Form</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_FORM_OF_LIGHTHOUSE</Tag>
 		<English>A Suspicious Lighthouse...</English>
 		<French>A Suspicious Lighthouse...</French>
@@ -11332,6 +11356,22 @@ A moment later, rain begins to fall.</Spanish>
 		<German>A Suspicious Turtle...</German>
 		<Italian>A Suspicious Turtle...</Italian>
 		<Spanish>A Suspicious Turtle...</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SHIMMERING_DRAGON</Tag>
+		<English>Shimmering Dragon</English>
+		<French>Shimmering Dragon</French>
+		<German>Shimmering Dragon</German>
+		<Italian>Shimmering Dragon</Italian>
+		<Spanish>Shimmering Dragon</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SHIMMERING_DRAGON_PEDIA</Tag>
+		<English>Shimmering Dragons glow with a white, prismatic light, like glowing pearl. They are beautiful, elegant creatures and occasionally change to a beautiful human form. They are fast flyers, and though they are hesitant to ever attack, they are powerful fighters when they do. Instead of a breath weapon they sing, this can range from a soothing song that puts anyone who hears it asleep, to a sonic attack that will shatter glass and eardrums and crack stone. The tear of a shimmering dragon cures disease and insanity.</English>
+		<French>Shimmering Dragons glow with a white, prismatic light, like glowing pearl. They are beautiful, elegant creatures and occasionally change to a beautiful human form. They are fast flyers, and though they are hesitant to ever attack, they are powerful fighters when they do. Instead of a breath weapon they sing, this can range from a soothing song that puts anyone who hears it asleep, to a sonic attack that will shatter glass and eardrums and crack stone. The tear of a shimmering dragon cures disease and insanity.</French>
+		<German>Shimmering Dragons glow with a white, prismatic light, like glowing pearl. They are beautiful, elegant creatures and occasionally change to a beautiful human form. They are fast flyers, and though they are hesitant to ever attack, they are powerful fighters when they do. Instead of a breath weapon they sing, this can range from a soothing song that puts anyone who hears it asleep, to a sonic attack that will shatter glass and eardrums and crack stone. The tear of a shimmering dragon cures disease and insanity.</German>
+		<Italian>Shimmering Dragons glow with a white, prismatic light, like glowing pearl. They are beautiful, elegant creatures and occasionally change to a beautiful human form. They are fast flyers, and though they are hesitant to ever attack, they are powerful fighters when they do. Instead of a breath weapon they sing, this can range from a soothing song that puts anyone who hears it asleep, to a sonic attack that will shatter glass and eardrums and crack stone. The tear of a shimmering dragon cures disease and insanity.</Italian>
+		<Spanish>Shimmering Dragons glow with a white, prismatic light, like glowing pearl. They are beautiful, elegant creatures and occasionally change to a beautiful human form. They are fast flyers, and though they are hesitant to ever attack, they are powerful fighters when they do. Instead of a breath weapon they sing, this can range from a soothing song that puts anyone who hears it asleep, to a sonic attack that will shatter glass and eardrums and crack stone. The tear of a shimmering dragon cures disease and insanity.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SEED_DRAGON</Tag>

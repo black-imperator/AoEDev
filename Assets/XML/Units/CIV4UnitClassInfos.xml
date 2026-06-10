@@ -4674,7 +4674,18 @@
 			<DefaultUnit>UNIT_SEED_DRAGON</DefaultUnit>
 			<iMercenaryWeight>0</iMercenaryWeight>
 		</UnitClassInfo>
-	<UnitClassInfo>		<!-- Kezef -->
+		<UnitClassInfo>		<!-- Shimmering Dragon -->
+			<Type>UNITCLASS_SHIMMERING_DRAGON</Type>
+			<Description>TXT_KEY_UNIT_SHIMMERING_DRAGON</Description>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<bUnique>1</bUnique>
+			<DefaultUnit>UNIT_SHIMMERING_DRAGON</DefaultUnit>
+			<iMercenaryWeight>0</iMercenaryWeight>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- Kezef -->
 			<Type>UNITCLASS_KEZEF</Type>
 			<Description>TXT_KEY_UNIT_KEZEF</Description>
 			<iMaxGlobalInstances>1</iMaxGlobalInstances>

@@ -36321,6 +36321,31 @@
 			<SelectionSound>AS3D_UN_DRAGON_BREATH_IN_SELECT</SelectionSound>
 			<ActionSound>AS3D_UN_DRAGON_ROAR</ActionSound>
 		</UnitArtInfo>
+		<UnitArtInfo> <!-- Shimmering Dragon Human Form -->
+			<Type>ART_DEF_UNIT_SHIMMERING_HUMAN</Type> 
+			<Button>Art/Interface/Buttons/Units/ShimmeringHuman.dds</Button>
+			<fScale>0.6</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Heroes/ShimmeringHuman/mage_water.nif</NIF>
+			<KFM>Art/Units/Heroes/ShimmeringHuman/mage_water.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.9</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.05</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+			<SelectionSound>AS3D_UN_SPY_SURR_VOX</SelectionSound>
+			<ActionSound>AS3D_UN_SPY_SURR_VOX</ActionSound>
+		</UnitArtInfo>
 		<UnitArtInfo>  <!-- UNIT_SCALED_DRAGON -->
 			<Type>ART_DEF_UNIT_SCALED_DRAGON</Type>
 			<Button>Art/Interface/Buttons/Units/pseudolonewolf.dds</Button>
