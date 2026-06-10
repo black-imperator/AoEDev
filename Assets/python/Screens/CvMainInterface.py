@@ -2643,6 +2643,11 @@ class CvMainInterface:
 					if (not isLimitedWonderClass(i)):
 						eLoopBuilding = pHeadSelectedCity.getCityBuildings(i)
 
+						# UI: a city that is already a government center cannot build a second one
+						# (Forbidden Palace / Winter Palace) - don't offer the button in such cities.
+						if (eLoopBuilding != -1 and gc.getBuildingInfo(eLoopBuilding).isGovernmentCenter() and pHeadSelectedCity.isGovernmentCenter()):
+							continue
+
 						if (pHeadSelectedCity.canConstruct(eLoopBuilding, False, True, False)):
 # High Res stuff - Modified by Grey Fox 03/29/2010
 							screen.appendMultiListButton( eMultiList, gc.getBuildingInfo(eLoopBuilding).getButton(), iRow, WidgetTypes.WIDGET_CONSTRUCT, i, -1, False )
@@ -2671,6 +2676,11 @@ class CvMainInterface:
 				for i in xrange( g_NumBuildingClassInfos ):
 					if (isLimitedWonderClass(i)):
 						eLoopBuilding = gc.getCivilizationInfo(pHeadSelectedCity.getCivilizationType()).getCivilizationBuildings(i)
+
+						# UI: a city that is already a government center cannot build a second one
+						# (Forbidden Palace / Winter Palace) - don't offer the button in such cities.
+						if (eLoopBuilding != -1 and gc.getBuildingInfo(eLoopBuilding).isGovernmentCenter() and pHeadSelectedCity.isGovernmentCenter()):
+							continue
 
 						if (pHeadSelectedCity.canConstruct(eLoopBuilding, False, True, False)):
 # High Res stuff - Modified by Grey Fox 03/29/2010
