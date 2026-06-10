@@ -466,6 +466,14 @@
 		<Spanish>Bats</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_SCORPION_BAT</Tag>
+		<English>Scorpion Bats</English>
+		<French>Scorpion Bats</French>
+		<German>Scorpion Bats</German>
+		<Italian>Scorpion Bats</Italian>
+		<Spanish>Scorpion Bats</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_BAT_PEDIA</Tag>
 		<English>Du nu nu nu, Bat-bat!</English>
 		<French>Du nu nu nu, Bat-bat!</French>

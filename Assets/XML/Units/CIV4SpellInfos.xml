@@ -10054,6 +10054,40 @@
 			<Sound>AS3D_WATER_FLOW</Sound>
 			<Button>Art/Interface/Buttons/Improvements/Tower.dds</Button>
 		</SpellInfo>
+		<SpellInfo>			<!-- Blood Dragon - Human Form -->
+			<Type>SPELL_BLOOD_DRAGON_HUMAN</Type>
+			<Description>TXT_KEY_SPELL_BLOODY_FORM</Description>
+			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
+			<PromotionPrereq1>PROMOTION_BLOOD_CORE</PromotionPrereq1>
+			<bAllowAI>1</bAllowAI>
+			<iAIWeight>50</iAIWeight>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+			<bAbility>1</bAbility>
+			<AddPromotions>
+				<AddPromotion>PROMOTION_BLOOD_HUMAN_FORM</AddPromotion>
+			</AddPromotions>
+			<bBuffCasterOnly>1</bBuffCasterOnly>
+			<Effect>EFFECT_WIND_SWIRL</Effect>
+			<Sound>AS3D_WATER_FLOW</Sound>
+			<Button>Art/Interface/Buttons/Units/BloodyHuman.dds</Button>
+		</SpellInfo>
+		<SpellInfo>			<!-- Swarm of Locusts -->
+			<Type>SPELL_SWARM_OF_SCORPIONBATS</Type>
+			<Description>TXT_KEY_SPELL_SWARM_OF_SCORPIONBATS</Description>
+			<Civilopedia>TXT_KEY_UNIT_SWARM_OF_SCORPIONBATS_PEDIA</Civilopedia>
+			<PromotionPrereq1>PROMOTION_BLOOD_CORE</PromotionPrereq1>
+			<bAllowAI>1</bAllowAI>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+			<bIsAutoCastable>1</bIsAutoCastable>
+			<CreateUnitType>UNIT_SCORPION_BAT</CreateUnitType>
+			<iCreateUnitNum>3</iCreateUnitNum>
+			<CreateUnitPromotion>PROMOTION_FREE_UNIT</CreateUnitPromotion>
+			<Effect>EFFECT_SPELL1</Effect>
+			<Sound>AS3D_SPELL_LOCUSTS</Sound>
+			<Button>Art/Interface/Buttons/Units/Batty.dds</Button>
+		</SpellInfo>
 		<SpellInfo>			<!-- Shimmering Dragon - Human Form -->
 			<Type>SPELL_SHIMMERINGDRAGON_HUMAN</Type>
 			<Description>TXT_KEY_SPELL_SHIMMERING_FORM</Description>

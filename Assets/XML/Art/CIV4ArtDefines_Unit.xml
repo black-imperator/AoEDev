@@ -37465,7 +37465,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- UNIT_BLOOD_DRAGON_HUMAN -->
 			<Type>ART_DEF_UNIT_BLOOD_DRAGON_HUMAN</Type>
-			<Button>Art/Interface/Buttons/Units/Swordsman.dds</Button>
+			<Button>Art/Interface/Buttons/Units/BloodyHuman.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -37489,7 +37489,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- UNIT_BLOOD_DRAGON -->
 			<Type>ART_DEF_UNIT_BLOOD_DRAGON</Type>
-			<Button>Art/Interface/Buttons/Units/BloodDragon.dds</Button>
+			<Button>Art/Interface/Buttons/Units/SirMarilKalameetButton.dds</Button>
 			<fScale>1.4</fScale>
 			<fInterfaceScale>0.4</fInterfaceScale>
 			<bActAsLand>1</bActAsLand>

@@ -11334,6 +11334,46 @@ A moment later, rain begins to fall.</Spanish>
 		<Spanish>Take Mortal Form</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_BLOOD_CORE</Tag>
+		<English>Blood Core</English>
+		<French>Blood Core</French>
+		<German>Blood Core</German>
+		<Italian>Blood Core</Italian>
+		<Spanish>Blood Core</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_BLOOD_DRAGON_AURA</Tag>
+		<English>Blood Tithe</English>
+		<French>Blood Tithe</French>
+		<German>Blood Tithe</German>
+		<Italian>Blood Tithe</Italian>
+		<Spanish>Blood Tithe</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_BLOOD_HUMAN_FORM</Tag>
+		<English>Bloodlord Human Form</English>
+		<French>Bloodlord Human Form</French>
+		<German>Bloodlord Human Form</German>
+		<Italian>Bloodlord Human Form</Italian>
+		<Spanish>Bloodlord Human Form</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_BLOODY_FORM</Tag>
+		<English>Take A Lordly Form</English>
+		<French>Take A Lordly Form</French>
+		<German>Take A Lordly Form</German>
+		<Italian>Take A Lordly Form</Italian>
+		<Spanish>Take A Lordly Form</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_SWARM_OF_SCORPIONBATS</Tag>
+		<English>Summon Scorpion Bats</English>
+		<French>Summon Scorpion Bats</French>
+		<German>Summon Scorpion Bats</German>
+		<Italian>Summon Scorpion Bats</Italian>
+		<Spanish>Summon Scorpion Bats</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_FORM_OF_LIGHTHOUSE</Tag>
 		<English>A Suspicious Lighthouse...</English>
 		<French>A Suspicious Lighthouse...</French>
@@ -11372,6 +11412,22 @@ A moment later, rain begins to fall.</Spanish>
 		<German>Shimmering Dragons glow with a white, prismatic light, like glowing pearl. They are beautiful, elegant creatures and occasionally change to a beautiful human form. They are fast flyers, and though they are hesitant to ever attack, they are powerful fighters when they do. Instead of a breath weapon they sing, this can range from a soothing song that puts anyone who hears it asleep, to a sonic attack that will shatter glass and eardrums and crack stone. The tear of a shimmering dragon cures disease and insanity.</German>
 		<Italian>Shimmering Dragons glow with a white, prismatic light, like glowing pearl. They are beautiful, elegant creatures and occasionally change to a beautiful human form. They are fast flyers, and though they are hesitant to ever attack, they are powerful fighters when they do. Instead of a breath weapon they sing, this can range from a soothing song that puts anyone who hears it asleep, to a sonic attack that will shatter glass and eardrums and crack stone. The tear of a shimmering dragon cures disease and insanity.</Italian>
 		<Spanish>Shimmering Dragons glow with a white, prismatic light, like glowing pearl. They are beautiful, elegant creatures and occasionally change to a beautiful human form. They are fast flyers, and though they are hesitant to ever attack, they are powerful fighters when they do. Instead of a breath weapon they sing, this can range from a soothing song that puts anyone who hears it asleep, to a sonic attack that will shatter glass and eardrums and crack stone. The tear of a shimmering dragon cures disease and insanity.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BLOOD_DRAGON</Tag>
+		<English>Blood Dragon</English>
+		<French>Blood Dragon</French>
+		<German>Blood Dragon</German>
+		<Italian>Blood Dragon</Italian>
+		<Spanish>Blood Dragon</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BLOOD_DRAGON_PEDIA</Tag>
+		<English>Also called an Altar Dragon as it prefers sacrifices. They usually have a pool of blood nearby to drink from, and if their servants don't keep it filled they will usually find themselves added to it. Blood Dragons can take human form, and usually prefer to form of a dark nobleman, always with a goblet in hand. The roar of a Blood Dragon vomits up thousands of blood covered, biting, clawing, flying and venomous creatures, a torrent of creatures that are a mix between bats and scorpions. Blood Dragons maintain a collection of perfectly preserved body parts of their victims, skin, faces, organs, all displayed in a place the dragon can admire.</English>
+		<French>Also called an Altar Dragon as it prefers sacrifices. They usually have a pool of blood nearby to drink from, and if their servants don't keep it filled they will usually find themselves added to it. Blood Dragons can take human form, and usually prefer to form of a dark nobleman, always with a goblet in hand. The roar of a Blood Dragon vomits up thousands of blood covered, biting, clawing, flying and venomous creatures, a torrent of creatures that are a mix between bats and scorpions. Blood Dragons maintain a collection of perfectly preserved body parts of their victims, skin, faces, organs, all displayed in a place the dragon can admire.</French>
+		<German>Also called an Altar Dragon as it prefers sacrifices. They usually have a pool of blood nearby to drink from, and if their servants don't keep it filled they will usually find themselves added to it. Blood Dragons can take human form, and usually prefer to form of a dark nobleman, always with a goblet in hand. The roar of a Blood Dragon vomits up thousands of blood covered, biting, clawing, flying and venomous creatures, a torrent of creatures that are a mix between bats and scorpions. Blood Dragons maintain a collection of perfectly preserved body parts of their victims, skin, faces, organs, all displayed in a place the dragon can admire.</German>
+		<Italian>Also called an Altar Dragon as it prefers sacrifices. They usually have a pool of blood nearby to drink from, and if their servants don't keep it filled they will usually find themselves added to it. Blood Dragons can take human form, and usually prefer to form of a dark nobleman, always with a goblet in hand. The roar of a Blood Dragon vomits up thousands of blood covered, biting, clawing, flying and venomous creatures, a torrent of creatures that are a mix between bats and scorpions. Blood Dragons maintain a collection of perfectly preserved body parts of their victims, skin, faces, organs, all displayed in a place the dragon can admire.</Italian>
+		<Spanish>Also called an Altar Dragon as it prefers sacrifices. They usually have a pool of blood nearby to drink from, and if their servants don't keep it filled they will usually find themselves added to it. Blood Dragons can take human form, and usually prefer to form of a dark nobleman, always with a goblet in hand. The roar of a Blood Dragon vomits up thousands of blood covered, biting, clawing, flying and venomous creatures, a torrent of creatures that are a mix between bats and scorpions. Blood Dragons maintain a collection of perfectly preserved body parts of their victims, skin, faces, organs, all displayed in a place the dragon can admire.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SEED_DRAGON</Tag>

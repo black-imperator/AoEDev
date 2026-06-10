@@ -7417,6 +7417,10 @@
 			<Buildings/>
 			<Units>
 				<Unit>
+					<UnitClassType>UNITCLASS_BAT</UnitClassType>
+					<UnitType>UNIT_BAT</UnitType>
+				</Unit>
+				<Unit>
 					<UnitClassType>UNITCLASS_TOAD</UnitClassType>
 					<UnitType>UNIT_TOAD</UnitType>
 				</Unit>
@@ -7772,6 +7776,10 @@
 				<Unit>
 					<UnitClassType>UNITCLASS_GYRE_CARLIN</UnitClassType>
 					<UnitType>UNIT_GYRE_CARLIN</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_SCORPION_BAT</UnitClassType>
+					<UnitType>UNIT_SCORPION_BAT</UnitType>
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_BATSWARM</UnitClassType>

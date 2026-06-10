@@ -14095,6 +14095,37 @@
 				</CityBonus>
 			</CityBonuses>
 		</PromotionInfo>
+		<PromotionInfo>		<!-- Blood Core -->
+			<Type>PROMOTION_BLOOD_CORE</Type>
+			<Description>TXT_KEY_PROMOTION_BLOOD_CORE</Description>
+			<bNoXP>1</bNoXP>
+			<AuraBonuses>
+				<AuraBonus>
+					<bApplyEnemy>1</bApplyEnemy>
+					<bApplyRival>1</bApplyRival>
+					<iBonusRange>3</iBonusRange>
+					<Promotion>PROMOTION_BLOOD_DRAGON_AURA</Promotion>
+				</AuraBonus>
+			</AuraBonuses>
+			<Button>Art/Interface/Buttons/Promotions/BloodCore.dds</Button>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Blood Dragon Aura -->
+			<Type>PROMOTION_BLOOD_DRAGON_AURA</Type>
+			<Description>TXT_KEY_PROMOTION_BLOOD_DRAGON_AURA</Description>
+			<bNoXP>1</bNoXP>
+			<iEnemyHealChange>-10</iEnemyHealChange>
+			<iNeutralHealChange>-10</iNeutralHealChange>
+			<iFriendlyHealChange>-10</iFriendlyHealChange>
+			<Button>Art/Interface/Buttons/Promotions/BloodCore.dds</Button>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Blood Dragon Human Form -->
+			<Type>PROMOTION_BLOOD_HUMAN_FORM</Type>
+			<Description>TXT_KEY_PROMOTION_BLOOD_HUMAN_FORM</Description>
+			<bNoXP>1</bNoXP>
+			<ReplaceArtType>ART_DEF_UNIT_BLOOD_DRAGON_HUMAN</ReplaceArtType>
+			<Button>Art/Interface/Buttons/Units/BloodyHuman.dds</Button>
+			<iPromotionDuration>2</iPromotionDuration>
+		</PromotionInfo>
 		<PromotionInfo>		<!-- Form of Lighthouse -->
 			<Type>PROMOTION_FORM_OF_LIGHTHOUSE</Type>
 			<Description>TXT_KEY_PROMOTION_FORM_OF_LIGHTHOUSE</Description>
