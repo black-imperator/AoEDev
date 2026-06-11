@@ -9086,6 +9086,25 @@ def exploreLairSeedDragon(argsList):
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_SEED_DRAGON'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
+def exploreLairBloodDragon(argsList):
+	pUnit, pPlot = argsList
+	pPlayer = gc.getPlayer(pUnit.getOwner())
+	bPlayer=gc.getPlayer(gc.getANIMAL_PLAYER())
+	pNewPlot = findClearPlot(-1, pPlot)
+	newUnit = bPlayer.initUnit(getInfoType('UNIT_BLOOD_DRAGON'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+
+def exploreLairShimmeringDragonbad(argsList):
+	pUnit, pPlot = argsList
+	pPlayer = gc.getPlayer(pUnit.getOwner())
+	bPlayer=gc.getPlayer(gc.getANIMAL_PLAYER())
+	pNewPlot = findClearPlot(-1, pPlot)
+	newUnit = bPlayer.initUnit(getInfoType('UNIT_SHIMMERING_DRAGON'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+	
+def exploreLairShimmeringDragon(argsList):
+	pUnit, pPlot = argsList
+	pPlayer = gc.getPlayer(pUnit.getOwner())
+	newUnit = pPlayer.initUnit(getInfoType('UNIT_SHIMMERING_DRAGON'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+
 def exploreLairScaledDragon(argsList):
 	pUnit, pPlot = argsList
 	pPlayer = gc.getPlayer(pUnit.getOwner())

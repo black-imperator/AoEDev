@@ -10072,12 +10072,13 @@
 			<Sound>AS3D_WATER_FLOW</Sound>
 			<Button>Art/Interface/Buttons/Units/BloodyHuman.dds</Button>
 		</SpellInfo>
-		<SpellInfo>			<!-- Swarm of Locusts -->
+		<SpellInfo>			<!-- Swarm of Scorpion Bats -->
 			<Type>SPELL_SWARM_OF_SCORPIONBATS</Type>
 			<Description>TXT_KEY_SPELL_SWARM_OF_SCORPIONBATS</Description>
 			<Civilopedia>TXT_KEY_UNIT_SWARM_OF_SCORPIONBATS_PEDIA</Civilopedia>
 			<PromotionPrereq1>PROMOTION_BLOOD_CORE</PromotionPrereq1>
 			<bAllowAI>1</bAllowAI>
+			<iAIWeight>50</iAIWeight>
 			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
 			<bHasCasted>1</bHasCasted>
 			<bIsAutoCastable>1</bIsAutoCastable>

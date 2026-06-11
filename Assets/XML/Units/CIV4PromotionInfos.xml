@@ -14083,6 +14083,7 @@
 			<Button>Art/Interface/Buttons/Units/ShimmeringHuman.dds</Button>
 			<iPromotionDuration>2</iPromotionDuration>
 			<bOnlyDefensive>1</bOnlyDefensive>
+			<TempUnitCombat>UNITCOMBAT_MELEE</TempUnitCombat>
 			<CityBonuses>
 				<CityBonus>
 					<bApplyEnemy>1</bApplyEnemy>
@@ -14116,6 +14117,7 @@
 			<iEnemyHealChange>-10</iEnemyHealChange>
 			<iNeutralHealChange>-10</iNeutralHealChange>
 			<iFriendlyHealChange>-10</iFriendlyHealChange>
+			<iPromotionDuration>2</iPromotionDuration>
 			<Button>Art/Interface/Buttons/Promotions/BloodCore.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Blood Dragon Human Form -->
@@ -14124,6 +14126,7 @@
 			<bNoXP>1</bNoXP>
 			<ReplaceArtType>ART_DEF_UNIT_BLOOD_DRAGON_HUMAN</ReplaceArtType>
 			<Button>Art/Interface/Buttons/Units/BloodyHuman.dds</Button>
+			<TempUnitCombat>UNITCOMBAT_MELEE</TempUnitCombat>
 			<iPromotionDuration>2</iPromotionDuration>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Form of Lighthouse -->
