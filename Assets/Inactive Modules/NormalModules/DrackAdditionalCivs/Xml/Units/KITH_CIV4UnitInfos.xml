@@ -843,5 +843,51 @@
 			<iTier>4</iTier>
 			<iPowerMult>7</iPowerMult>
 		</UnitInfo>
+		<UnitInfo>        <!-- Settler UB - Landbuend -->
+			<Class>UNITCLASS_SETTLER</Class>
+			<Type>UNIT_KITH_SETTLER</Type>
+			<Capture>UNITCLASS_WORKER</Capture>
+			<DefaultUnitAI>UNITAI_SETTLE</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_KITH_SETTLER</Description>
+			<Civilopedia>TXT_KEY_UNIT_SETTLER_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_GROWTH</Advisor>
+			<bFood>1</bFood>
+			<bOnlyDefensive>1</bOnlyDefensive>
+			<bFound>1</bFound>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_SETTLE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<ProductionTraits>
+				<ProductionTrait>
+					<ProductionTraitType>TRAIT_IMPERIALIST</ProductionTraitType>
+					<iProductionTrait>100</iProductionTrait>
+				</ProductionTrait>
+			</ProductionTraits>
+			<iCost>80</iCost>
+			<iAdvancedStartCostIncrease>50</iAdvancedStartCostIncrease>
+			<iMoves>2</iMoves>
+			<iAsset>0</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>6</iGroupSize>
+				<iMeleeWaveSize>6</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>2</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_SETTLER_MALE</EarlyArtDefineTag>
+				</UnitMeshGroup>
+				<UnitMeshGroup>
+					<iRequired>2</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_SETTLER_FEMALE</EarlyArtDefineTag>
+				</UnitMeshGroup>
+				<UnitMeshGroup>
+					<iRequired>2</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_SETTLER_CHILD</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<iTier>1</iTier>
+		</UnitInfo>
 	</UnitInfos>
 </Civ4UnitInfos>

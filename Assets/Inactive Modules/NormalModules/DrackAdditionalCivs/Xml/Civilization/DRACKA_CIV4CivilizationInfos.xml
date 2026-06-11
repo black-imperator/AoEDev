@@ -229,6 +229,10 @@
 					<UnitClassType>UNITCLASS_CANNON</UnitClassType>
 					<UnitType>UNIT_KITH_CANNON</UnitType>
 				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
+					<UnitType>UNIT_KITH_SETTLER</UnitType>
+				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>

@@ -10,7 +10,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_KITH_WOODROW_PEDIA</Tag>
-        <English>TODO</English>
+        <English>
+"You are the children of fire and frost, of the anvil and the arcane. The Patria sought to make us tools, but the Age of Ice taught us we are so much more. We are survivors. We are the Kith. Yet survival is not enough. We must thrive. And to thrive, we must stand as one. The dwarves have their mountains, the elves their forests, but we, the Kith, have each other. The Eadig Kith is our promise: That no clan will starve while another has bread, that no hearth will grow cold while another burns bright.
+I, Woodrow, swear to uphold this bond. Will you swear with me?"
+
+Woodrow was one of the Gnomes that united the Kith under one banner and brought unity to the Kith. He was led by the strong fear that the Kith, each alone, would fall under the whip of a new empire, again nothing but slaves. 
+        </English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_KITH_AMBERLY</Tag>
@@ -18,7 +23,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_KITH_AMBERLY_PEDIA</Tag>
-        <English>TODO</English>
+        <English>
+"I have traded with every island, from the misty coves to the black sand shores. I have seen the skill of your fishermen, the craft of your shipwrights, the wisdom of your elders. But I have also seen the empty docks, the raided stores, the children who go hungry because one islands plenty is anothers famine.
+This is not the way of the Kith. We are clever, resourceful! Why should we beg the fates for mercy when we can build our own fortune? The Eadig Kith is not a kingdom. It is a market where every clan brings its best, and every clan takes what it needs. No more bartering with luck. No more praying to the storm gods alone.
+Join us. Lets make the islands a single, unbreakable chain."
+        </English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_KITH_FREDA</Tag>
@@ -26,7 +35,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_KITH_FREDA_PEDIA</Tag>
-        <English>TODO</English>
+        <English>
+Freda rose from the remnants of a Kith that was nearly wiped out by the Age of Ice. She survived by outmaneuvering rival warlords and seizing their resources, forging her reputation as a conqueror who takes what she needs. She believes the weak deserve to fall, and the strong deserve to rule.
+        </English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_KITH_KYLA</Tag>
@@ -34,7 +45,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_KITH_KYLA_PEDIA</Tag>
-        <English>TODO</English>
+        <English>
+Kyla was raised in a Kith that preserved fragments of Patrian magic. She dedicated her life to piecing together the lost spells and rituals of the Age of Magic, even if it means delving into forbidden or dangerous knowledge. In her obsession with magic, she believes that it will help the Kith to become a power that can rival with the great nations of Erebus.
+        </English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_KITH_SILVIA</Tag>
@@ -42,6 +55,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_KITH_SILVIA_PEDIA</Tag>
-        <English>TODO</English>
+        <English>
+Silvia was there when Woodrow and Amberly first united the Kith. She fought in the early battles to secure the borders of the new union, and shes spent every day since ensuring those borders remain unbroken. She sees herself as the living embodiment of the Eadig Kiths promise: that no Kith will ever be left to face the dark alone again.
+        </English>
     </TEXT>
 </Civ4GameText>
