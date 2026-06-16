@@ -5493,5 +5493,22 @@
 			<PythonCallback>exploreLairClockworkGolem</PythonCallback>
 			<PrereqEra>ERA_CLASSICAL</PrereqEra>
 		</GoodyInfo>
+		<GoodyInfo>	<!--Discover the Illians test - LAIR CIVILIZATION SPAWNS -->
+			<Type>GOODY_FREE_ILLIANS</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>999999999</iWeight>
+			<Description>TXT_KEY_GOODY_FREED_ILLIANS</Description>
+			<Sound>AS2D_GOODY_HOSTILE</Sound>
+			<iDestroyLairChance>0</iDestroyLairChance>
+			<bUnique>1</bUnique>
+			<bBad>0</bBad>
+			<PythonPrereq>reqLairFreeIllians</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+		</GoodyInfo>
 	</GoodyInfos>
 </Civ4GoodyInfo>

@@ -11380,6 +11380,10 @@
 					<PromotionType>PROMOTION_DIMENSIONAL1</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_FREE_UNIT</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
 			</FreePromotions>
 		</UnitInfo>
 		<UnitInfo>        <!-- Supplies -->                                                              <!-- END GREAT PEOPLE LIST -->
