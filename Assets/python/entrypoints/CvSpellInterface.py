@@ -13169,7 +13169,10 @@ def exploreSlavers(argsList):
 
 
 def reqLairFreeIllians(argsList):
+        iCiv		= [gc.getInfoTypeForString("CIVILIZATION_ILLIANS")]
+
         if CyGame().getNumCivActive(gc.getInfoTypeForString('CIVILIZATION_ILLIANS')) > 0: return False
+        if not gc.getCivilizationInfo(iCiv).isPlayable() : return False
         return True
 
 def exploreLairFreeIllians(argsList):
@@ -13449,16 +13452,26 @@ def exploreLairFreeCiv(argsList):
 			# for now our list of lists would contain [UnitClassID, Number of units to spawn, XP to add]
 			lUnitList.append([iHeroClass, 1, 2500])
 
-	# let's set t1 units
+	# let's sett1e units
 	iUCMelee		= gc.getInfoTypeForString("UNITCLASS_AXEMAN")
+	if iCiv == gc.getInfoTypeForString("CIVILIZATION_HIPPUS"):
+                iUCMelee	= gc.getInfoTypeForString("UNITCLASS_HORSEMAN")
+	if iCiv == gc.getInfoTypeForString("CIVILIZATION_DTESH"):
+                iUCMelee	= gc.getInfoTypeForString("UNITCLASS_SPEARMAN")
+	if iCiv == gc.getInfoTypeForString("CIVILIZATION_MEKARA"):
+                iUCMelee	= gc.getInfoTypeForString("UNITCLASS_HUNTER")
+	if iCiv == gc.getInfoTypeForString("CIVILIZATION_SHEAIM"):
+                iUCMelee	= gc.getInfoTypeForString("UNITCLASS_PYRE_ZOMBIE")
 	iUCRanged		= gc.getInfoTypeForString("UNITCLASS_ARCHER")
+	if iCiv == gc.getInfoTypeForString("CIVILIZATION_HIPPUS"):
+                iUCRanged	= gc.getInfoTypeForString("UNITCLASS_HORSEMAN")
 	iUCRecon		= gc.getInfoTypeForString("UNITCLASS_HUNTER")
 	iUCAdept		= gc.getInfoTypeForString("UNITCLASS_ADEPT")
 	# If you want to spawn nonconventional civs, like D'Tesh you'll need to change Workers/Settlers here
 	iUCWorker		= gc.getInfoTypeForString("UNITCLASS_WORKER")
-	if iCiv == gc.getInfoTypeForString("CIVILIZATION_DTESH"):
-		iUCWorker	= gc.getInfoTypeForString("UNITCLASS_VESSEL_DTESH")
 	iUCSettler		= gc.getInfoTypeForString("UNITCLASS_SETTLER")
+	if iCiv == gc.getInfoTypeForString("CIVILIZATION_DTESH"):
+                iUCSettler	= gc.getInfoTypeForString("UNITCLASS_VESSEL_DTESH")
 	# we will leave t3 as -1 for now
 	iUCDisciple		= -1
 	iUCMeleeT3		= -1
@@ -13495,30 +13508,69 @@ def exploreLairFreeCiv(argsList):
 	if pNewPlayer.isHasTech(gc.getInfoTypeForString('TECH_IRON_WORKING')):
 		# let's change our melee unit for a beter one
 		iUCMelee		= gc.getInfoTypeForString("UNITCLASS_CHAMPION")
+                if iCiv == gc.getInfoTypeForString("CIVILIZATION_DTESH"):
+                        iUCMelee	= gc.getInfoTypeForString("UNITCLASS_PIKEMAN")
+                if iCiv == gc.getInfoTypeForString("CIVILIZATION_MEKARA"):
+                        iUCMelee	= gc.getInfoTypeForString("UNITCLASS_RANGER")
+                if iCiv == gc.getInfoTypeForString("CIVILIZATION_SHEAIM"):
+                        iUCMelee	= gc.getInfoTypeForString("UNITCLASS_SUCCUBUS")
 		# and add a few more units
 		iCountMelee		+= 2
 		iCountWorker	+= 1
 		iCountSettler	+= 1
 		iCountSupp		+= 3
+        	iXPWorker		= 10
 
 	# i'll leave other techs for you to populate
 	# remove 'pass', add stuff that you want
 	if pNewPlayer.isHasTech(gc.getInfoTypeForString('TECH_BOWYERS')):
-#		iUCRanged		= gc.getInfoTypeForString("UNITCLASS_LONGBOWMAN")
-		pass
+		iUCRanged		= gc.getInfoTypeForString("UNITCLASS_LONGBOWMAN")
+                if iCiv == gc.getInfoTypeForString("CIVILIZATION_KHAZAD"):
+                        iUCRanged	= gc.getInfoTypeForString("UNITCLASS_CANNON")
+                if iCiv == gc.getInfoTypeForString("CIVILIZATION_HIPPUS"):
+                        iUCRanged	= gc.getInfoTypeForString("UNITCLASS_HORSE_ARCHER")
+                iCountRanged		+= 2
+		iCountWorker	+= 1
+		iCountSettler	+= 1
+		iCountSupp		+= 3
+        	iXPWorker		= 10
 
 
 	if pNewPlayer.isHasTech(gc.getInfoTypeForString('TECH_ANIMAL_HANDLING')):
-		pass
+		iUCRecon		= gc.getInfoTypeForString("UNITCLASS_RANGER")
+                if iCiv == gc.getInfoTypeForString("CIVILIZATION_KHAZAD"):
+                        iUCRecon	= gc.getInfoTypeForString("UNITCLASS_ASSASSIN")
+                if iCiv == gc.getInfoTypeForString("CIVILIZATION_HIPPUS"):
+                        iUCRecon	= gc.getInfoTypeForString("UNITCLASS_HORSE_ARCHER")
+                iCountRecon		+= 2
+		iCountWorker	+= 1
+		iCountSettler	+= 1
+		iCountSupp		+= 3
+        	iXPWorker		= 10
 
 	if pNewPlayer.isHasTech(gc.getInfoTypeForString('TECH_SORCERY')):
-		pass
+		iUCAdept		= gc.getInfoTypeForString("UNITCLASS_MAGE")
+                if iCiv == gc.getInfoTypeForString("CIVILIZATION_KHAZAD"):
+                        iUCAdept	= gc.getInfoTypeForString("UNITCLASS_CANNON")
+                if iCiv == gc.getInfoTypeForString("CIVILIZATION_HIPPUS"):
+                        iUCAdept	= gc.getInfoTypeForString("UNITCLASS_HORSE_ARCHER")
+                iCountAdept		+= 2
+		iCountWorker	+= 1
+		iCountSettler	+= 1
+		iCountSupp		+= 3
+        	iXPWorker		= 10
 
 	if pNewPlayer.isHasTech(gc.getInfoTypeForString('TECH_SANITATION')):
-		pass
+		iCountWorker	+= 1
+		iCountSettler	+= 1
+		iCountSupp		+= 3
+        	iXPWorker		= 10
 
 	if pNewPlayer.isHasTech(gc.getInfoTypeForString('TECH_PRIESTHOOD')):
-		pass
+		iCountWorker	+= 1
+		iCountSettler	+= 1
+		iCountSupp		+= 3
+        	iXPWorker		= 10
 
 	if pNewPlayer.isHasTech(iDiscipleTech):
 		iCountDisciple += 4
@@ -13526,24 +13578,47 @@ def exploreLairFreeCiv(argsList):
 	if pNewPlayer.isHasTech(gc.getInfoTypeForString('TECH_MITHRIL_WORKING')):
 		# we need to put t3 in separate list to respect max instance count
 		iUCMeleeT3		= gc.getInfoTypeForString("UNITCLASS_PHALANX")
+                if iCiv == gc.getInfoTypeForString("CIVILIZATION_HIPPUS"):
+                        iUCMeleeT3	= gc.getInfoTypeForString("UNITCLASS_KNIGHT")
 		iCountMeleeT3	= 4
 		iCountWorker	+= 1
 		iCountSettler	+= 1
 		iCountSupp		+= 2
+        	iXPWorker		= 10
 
 	if pNewPlayer.isHasTech(gc.getInfoTypeForString('TECH_ANIMAL_MASTERY')):
-		pass
-#		iUCReconT3		=
+		iUCReconT3		= gc.getInfoTypeForString("UNITCLASS_BEASTMASTER")
+                if iCiv == gc.getInfoTypeForString("CIVILIZATION_SCIONS"):
+                        iUCMeleeT3	= gc.getInfoTypeForString("UNITCLASS_IMMORTAL")
+                if iCiv == gc.getInfoTypeForString("CIVILIZATION_LUCHUIRP"):
+                        iUCMeleeT3	= gc.getInfoTypeForString("UNITCLASS_IMMORTAL")
+                if iCiv == gc.getInfoTypeForString("CIVILIZATION_DTESH"):
+                        iUCMeleeT3	= gc.getInfoTypeForString("UNITCLASS_ANGEL_OF_DEATH")
+		iCountMeleeT3	= 4
+		iCountWorker	+= 1
+		iCountSettler	+= 1
+		iCountSupp		+= 2
+        	iXPWorker		= 10
 
 	if pNewPlayer.isHasTech(gc.getInfoTypeForString('TECH_STRENGTH_OF_WILL')):
-		pass
-#		iUCAdeptT3		= 
+		iUCAdeptT3		= gc.getInfoTypeForString("UNITCLASS_ARCHMAGE")
+                if iCiv == gc.getInfoTypeForString("CIVILIZATION_KHAZAD"):
+                        iUCAdeptT3	= gc.getInfoTypeForString("UNITCLASS_KNIGHT")
+                if iCiv == gc.getInfoTypeForString("CIVILIZATION_HIPPUS"):
+                        iUCAdeptT3	= gc.getInfoTypeForString("UNITCLASS_WAR_CHARIOT")
+		iCountMeleeT3	= 4
+		iCountWorker	+= 1
+		iCountSettler	+= 1
+		iCountSupp		+= 2
+        	iXPWorker		= 10
 
 	if pNewPlayer.isHasTech(gc.getInfoTypeForString('TECH_TAXATION')):
-		pass
+		iCountSupp		+= 6
+        	iXPWorker		= 10
 
 	if pNewPlayer.isHasTech(gc.getInfoTypeForString('TECH_TRADE')):
-		pass
+		iCountSupp		+= 3
+        	iXPWorker		= 10
 
 	# When all techs are done we can compile our list of lists
 	lUnitList.append([iUCMelee,		iCountMelee,	iXPMelee]	)
@@ -13579,6 +13654,16 @@ def exploreLairFreeCiv(argsList):
 
 	for iCount in xrange(iCountSupp):
 		newUnit = pNewPlayer.initUnit(gc.getInfoTypeForString("UNIT_SUPPLIES"), iX, iY, iAI, iDirection)
+        if pPlayer.isHuman():
+		popupInfo = CyPopupInfo()
+		popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_PYTHON)
+		popupInfo.setText(CyTranslator().getText("TXT_KEY_POPUP_CONTROL_CIVILIZATION_LAIR_SPAWN",()))
+		popupInfo.setData1(iPlayer)
+		popupInfo.setData2(iNewPlayer)
+		popupInfo.addPythonButton(CyTranslator().getText("TXT_KEY_POPUP_YES", ()), "")
+		popupInfo.addPythonButton(CyTranslator().getText("TXT_KEY_POPUP_NO", ()), "")
+		popupInfo.setOnClickedPythonCallback("reassignPlayer")
+		popupInfo.addPopup(iPlayer)
 
 
 # GOODY_ENCHANTED_MAP

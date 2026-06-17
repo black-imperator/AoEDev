@@ -12000,11 +12000,26 @@ The bandit saluted like a soldier and left the tent and your unit to its fate.</
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GOODY_FREED_CHISLEV</Tag>
-		<English></English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
+		<English>Your unit finds a group of men and women chained up in the bowels of the goblin fort.
+On freeing them, they introduce themselves as the 'Chislev' and swear a blood oath of vengeance on the goblin foe.
+They divide themselves into seven groups and carve the symbol of their new clan into their palms.
+"By the will of Nanosuelta, we shall live for today!"</English>
+		<French>Your unit finds a group of men and women chained up in the bowels of the goblin fort.
+On freeing them, they introduce themselves as the 'Chislev' and swear a blood oath of vengeance on the goblin foe.
+They divide themselves into seven groups and carve the symbol of their new clan into their palms.
+"By the will of Nanosuelta, we shall live for today!"</French>
+		<German>Your unit finds a group of men and women chained up in the bowels of the goblin fort.
+On freeing them, they introduce themselves as the 'Chislev' and swear a blood oath of vengeance on the goblin foe.
+They divide themselves into seven groups and carve the symbol of their new clan into their palms.
+"By the will of Nanosuelta, we shall live for today!"</German>
+		<Italian>Your unit finds a group of men and women chained up in the bowels of the goblin fort.
+On freeing them, they introduce themselves as the 'Chislev' and swear a blood oath of vengeance on the goblin foe.
+They divide themselves into seven groups and carve the symbol of their new clan into their palms.
+"By the will of Nanosuelta, we shall live for today!"</Italian>
+		<Spanish>Your unit finds a group of men and women chained up in the bowels of the goblin fort.
+On freeing them, they introduce themselves as the 'Chislev' and swear a blood oath of vengeance on the goblin foe.
+They divide themselves into seven groups and carve the symbol of their new clan into their palms.
+"By the will of Nanosuelta, we shall live for today!"</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GOODY_FREED_CLAN_OF_EMBERS</Tag>
@@ -12016,35 +12031,140 @@ The bandit saluted like a soldier and left the tent and your unit to its fate.</
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GOODY_FREED_CUALLI</Tag>
-		<English></English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
+		<English>Your unit is captured and strung up by a group of robed lizardmen.
+Teasing the unit, the lizardmen tell them that they are to be blood offerings in the next day's ceremony of sacrifice.
+
+Your unit screams and pleads that they are diplomats of your powerful civilisation and eventually convinces the retched creatures that it would be more beneficial to let them live.
+
+The chief lizardmen's followers seem none too amused.</English>
+		<French>Your unit is captured and strung up by a group of robed lizardmen.
+Teasing the unit, the lizardmen tell them that they are to be blood offerings in the next day's ceremony of sacrifice.
+
+Your unit screams and pleads that they are diplomats of your powerful civilisation and eventually convinces the retched creatures that it would be more beneficial to let them live.
+
+The chief lizardmen's followers seem none too amused.</French>
+		<German>Your unit is captured and strung up by a group of robed lizardmen.
+Teasing the unit, the lizardmen tell them that they are to be blood offerings in the next day's ceremony of sacrifice.
+
+Your unit screams and pleads that they are diplomats of your powerful civilisation and eventually convinces the retched creatures that it would be more beneficial to let them live.
+
+The chief lizardmen's followers seem none too amused.</German>
+		<Italian>Your unit is captured and strung up by a group of robed lizardmen.
+Teasing the unit, the lizardmen tell them that they are to be blood offerings in the next day's ceremony of sacrifice.
+
+Your unit screams and pleads that they are diplomats of your powerful civilisation and eventually convinces the retched creatures that it would be more beneficial to let them live.
+
+The chief lizardmen's followers seem none too amused.</Italian>
+		<Spanish>Your unit is captured and strung up by a group of robed lizardmen.
+Teasing the unit, the lizardmen tell them that they are to be blood offerings in the next day's ceremony of sacrifice.
+
+Your unit screams and pleads that they are diplomats of your powerful civilisation and eventually convinces the retched creatures that it would be more beneficial to let them live.
+
+The chief lizardmen's followers seem none too amused.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GOODY_FREED_DOVIELLO</Tag>
-		<English></English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
+		<English>Scrounging around in the littered bones of this animal den, your unit turns around to find the inhabitants of this cave returning from the latest hunt.
+
+Not beast, but not far off. 
+Feral men, gnashing teeth and cruel laughter, make chase after your unit as they flee the den.</English>
+		<French>Scrounging around in the littered bones of this animal den, your unit turns around to find the inhabitants of this cave returning from the latest hunt.
+
+Not beast, but not far off. 
+Feral men, gnashing teeth and cruel laughter, make chase after your unit as they flee the den.</French>
+		<German>Scrounging around in the littered bones of this animal den, your unit turns around to find the inhabitants of this cave returning from the latest hunt.
+
+Not beast, but not far off. 
+Feral men, gnashing teeth and cruel laughter, make chase after your unit as they flee the den.</German>
+		<Italian>Scrounging around in the littered bones of this animal den, your unit turns around to find the inhabitants of this cave returning from the latest hunt.
+
+Not beast, but not far off. 
+Feral men, gnashing teeth and cruel laughter, make chase after your unit as they flee the den.</Italian>
+		<Spanish>Scrounging around in the littered bones of this animal den, your unit turns around to find the inhabitants of this cave returning from the latest hunt.
+
+Not beast, but not far off. 
+Feral men, gnashing teeth and cruel laughter, make chase after your unit as they flee the den.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GOODY_FREED_ELOHIM</Tag>
-		<English></English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
+		<English>Your unit is indulging in the usual pleasures of exploring deadly forgotten places: filling their pockets with all that glitters.
+Today, however, as your unit is teetering on one foot to reach out for a blackened gem, they are interupted by a voice: "Wouldn't do that, if you enjoy breathing."
+
+Standing only a few feet away, a monk had appeared.
+"This place is under our protection, so that dangers like that don't find their way into the hands of someone who can use it."
+Your unit remarks that there are more ancient sites than just this one, and the monk is very concerned to hear this.
+"It seems to me that we Elohim have been shirking our responsibilities to these other sites. Come, we shall meet the others, and you can tell us of everything you have found on your travels."</English>
+		<French>Your unit is indulging in the usual pleasures of exploring deadly forgotten places: filling their pockets with all that glitters.
+Today, however, as your unit is teetering on one foot to reach out for a blackened gem, they are interupted by a voice: "Wouldn't do that, if you enjoy breathing."
+
+Standing only a few feet away, a monk had appeared.
+"This place is under our protection, so that dangers like that don't find their way into the hands of someone who can use it."
+Your unit remarks that there are more ancient sites than just this one, and the monk is very concerned to hear this.
+"It seems to me that we Elohim have been shirking our responsibilities to these other sites. Come, we shall meet the others, and you can tell us of everything you have found on your travels."</French>
+		<German>Your unit is indulging in the usual pleasures of exploring deadly forgotten places: filling their pockets with all that glitters.
+Today, however, as your unit is teetering on one foot to reach out for a blackened gem, they are interupted by a voice: "Wouldn't do that, if you enjoy breathing."
+
+Standing only a few feet away, a monk had appeared.
+"This place is under our protection, so that dangers like that don't find their way into the hands of someone who can use it."
+Your unit remarks that there are more ancient sites than just this one, and the monk is very concerned to hear this.
+"It seems to me that we Elohim have been shirking our responsibilities to these other sites. Come, we shall meet the others, and you can tell us of everything you have found on your travels."</German>
+		<Italian>Your unit is indulging in the usual pleasures of exploring deadly forgotten places: filling their pockets with all that glitters.
+Today, however, as your unit is teetering on one foot to reach out for a blackened gem, they are interupted by a voice: "Wouldn't do that, if you enjoy breathing."
+
+Standing only a few feet away, a monk had appeared.
+"This place is under our protection, so that dangers like that don't find their way into the hands of someone who can use it."
+Your unit remarks that there are more ancient sites than just this one, and the monk is very concerned to hear this.
+"It seems to me that we Elohim have been shirking our responsibilities to these other sites. Come, we shall meet the others, and you can tell us of everything you have found on your travels."</Italian>
+		<Spanish>Your unit is indulging in the usual pleasures of exploring deadly forgotten places: filling their pockets with all that glitters.
+Today, however, as your unit is teetering on one foot to reach out for a blackened gem, they are interupted by a voice: "Wouldn't do that, if you enjoy breathing."
+
+Standing only a few feet away, a monk had appeared.
+"This place is under our protection, so that dangers like that don't find their way into the hands of someone who can use it."
+Your unit remarks that there are more ancient sites than just this one, and the monk is very concerned to hear this.
+"It seems to me that we Elohim have been shirking our responsibilities to these other sites. Come, we shall meet the others, and you can tell us of everything you have found on your travels."</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GOODY_FREED_GRIGORI</Tag>
-		<English></English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
+		<English>Your unit is stumbling around in the dark of this lair, in the daily search for treasure, when suddenly the room lights up from an approaching stranger.
+Wary, your unit takes a defensive stance and yells a challenge to the oncommer.
+
+"Ho, friend! Sorry to startle you, I was actually wanting to ask you a few questions." The man said with a smile, holding his cap in his hands. "Have you perhaps met our lordly angel and saviour, Cassiel? He has called all who will listen to join him in a new settlement, not far from here, in rejection of the old ways and pursuit of freedom!"
+
+Your unit is extremely confused and wants to know why they are preaching in a place like this.
+Offended, the man puts up his nose. "Preaching?! I'm not preaching! I'm spreading the good news! 
+Besides, I like being alive.  I fear a priest far more than any goblin!"</English>
+		<French>Your unit is stumbling around in the dark of this lair, in the daily search for treasure, when suddenly the room lights up from an approaching stranger.
+Wary, your unit takes a defensive stance and yells a challenge to the oncommer.
+
+"Ho, friend! Sorry to startle you, I was actually wanting to ask you a few questions." The man said with a smile, holding his cap in his hands. "Have you perhaps met our lordly angel and saviour, Cassiel? He has called all who will listen to join him in a new settlement, not far from here, in rejection of the old ways and pursuit of freedom!"
+
+Your unit is extremely confused and wants to know why they are preaching in a place like this.
+Offended, the man puts up his nose. "Preaching?! I'm not preaching! I'm spreading the good news! 
+Besides, I like being alive.  I fear a priest far more than any goblin!"</French>
+		<German>Your unit is stumbling around in the dark of this lair, in the daily search for treasure, when suddenly the room lights up from an approaching stranger.
+Wary, your unit takes a defensive stance and yells a challenge to the oncommer.
+
+"Ho, friend! Sorry to startle you, I was actually wanting to ask you a few questions." The man said with a smile, holding his cap in his hands. "Have you perhaps met our lordly angel and saviour, Cassiel? He has called all who will listen to join him in a new settlement, not far from here, in rejection of the old ways and pursuit of freedom!"
+
+Your unit is extremely confused and wants to know why they are preaching in a place like this.
+Offended, the man puts up his nose. "Preaching?! I'm not preaching! I'm spreading the good news! 
+Besides, I like being alive.  I fear a priest far more than any goblin!"</German>
+		<Italian>Your unit is stumbling around in the dark of this lair, in the daily search for treasure, when suddenly the room lights up from an approaching stranger.
+Wary, your unit takes a defensive stance and yells a challenge to the oncommer.
+
+"Ho, friend! Sorry to startle you, I was actually wanting to ask you a few questions." The man said with a smile, holding his cap in his hands. "Have you perhaps met our lordly angel and saviour, Cassiel? He has called all who will listen to join him in a new settlement, not far from here, in rejection of the old ways and pursuit of freedom!"
+
+Your unit is extremely confused and wants to know why they are preaching in a place like this.
+Offended, the man puts up his nose. "Preaching?! I'm not preaching! I'm spreading the good news! 
+Besides, I like being alive.  I fear a priest far more than any goblin!"</Italian>
+		<Spanish>Your unit is stumbling around in the dark of this lair, in the daily search for treasure, when suddenly the room lights up from an approaching stranger.
+Wary, your unit takes a defensive stance and yells a challenge to the oncommer.
+
+"Ho, friend! Sorry to startle you, I was actually wanting to ask you a few questions." The man said with a smile, holding his cap in his hands. "Have you perhaps met our lordly angel and saviour, Cassiel? He has called all who will listen to join him in a new settlement, not far from here, in rejection of the old ways and pursuit of freedom!"
+
+Your unit is extremely confused and wants to know why they are preaching in a place like this.
+Offended, the man puts up his nose. "Preaching?! I'm not preaching! I'm spreading the good news! 
+Besides, I like being alive.  I fear a priest far more than any goblin!"</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GOODY_FREED_HIPPUS</Tag>
@@ -12056,27 +12176,27 @@ The bandit saluted like a soldier and left the tent and your unit to its fate.</
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GOODY_FREED_ILLIANS</Tag>
-		<English>After driving off a band of feral frostlings, our unit finds a group of humans standing still in their crudely constructed cages, unfazed by the biting cold air from the surrounding tundra.
+		<English>After driving off a band of feral frostlings, your unit finds a group of humans standing still in their crudely constructed cages, unfazed by the biting cold air from the surrounding tundra.
 
 As they begin to open the prisoner cages, a tall, armoured man with piercing blue eyes approaches them and says they have done well today and will be rewarded when the great winter returns.
 
 With a sense of dread, this unit wonders if they may have just made a huge mistake.</English>
-		<French>After driving off a band of feral frostlings, our unit finds a group of humans standing still in their crudely constructed cages, unfazed by the biting cold air from the surrounding tundra.
+		<French>After driving off a band of feral frostlings, your unit finds a group of humans standing still in their crudely constructed cages, unfazed by the biting cold air from the surrounding tundra.
 
 As they begin to open the prisoner cages, a tall, armoured man with piercing blue eyes approaches them and says they have done well today and will be rewarded when the great winter returns.
 
 With a sense of dread, this unit wonders if they may have just made a huge mistake.</French>
-		<German>After driving off a band of feral frostlings, our unit finds a group of humans standing still in their crudely constructed cages, unfazed by the biting cold air from the surrounding tundra.
+		<German>After driving off a band of feral frostlings, your unit finds a group of humans standing still in their crudely constructed cages, unfazed by the biting cold air from the surrounding tundra.
 
 As they begin to open the prisoner cages, a tall, armoured man with piercing blue eyes approaches them and says they have done well today and will be rewarded when the great winter returns.
 
 With a sense of dread, this unit wonders if they may have just made a huge mistake.</German>
-		<Italian>After driving off a band of feral frostlings, our unit finds a group of humans standing still in their crudely constructed cages, unfazed by the biting cold air from the surrounding tundra.
+		<Italian>After driving off a band of feral frostlings, your unit finds a group of humans standing still in their crudely constructed cages, unfazed by the biting cold air from the surrounding tundra.
 
 As they begin to open the prisoner cages, a tall, armoured man with piercing blue eyes approaches them and says they have done well today and will be rewarded when the great winter returns.
 
 With a sense of dread, this unit wonders if they may have just made a huge mistake.</Italian>
-		<Spanish>After driving off a band of feral frostlings, our unit finds a group of humans standing still in their crudely constructed cages, unfazed by the biting cold air from the surrounding tundra.
+		<Spanish>After driving off a band of feral frostlings, your unit finds a group of humans standing still in their crudely constructed cages, unfazed by the biting cold air from the surrounding tundra.
 
 As they begin to open the prisoner cages, a tall, armoured man with piercing blue eyes approaches them and says they have done well today and will be rewarded when the great winter returns.
 
