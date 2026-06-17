@@ -1678,5 +1678,12 @@
 				<Promotion>PROMOTION_DREAMING_AIFON</Promotion>
 			</PromotionAllows>
 		</PromotionInfo>
+		<PromotionInfo>		<!-- Longship -->
+			<Type>PROMOTION_LONGSHIP</Type>
+			<iMovesChange>1</iMovesChange>
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_JOTNAR</DependencyType>
+		     </AndDependencyTypes>
+		</PromotionInfo>
 	</PromotionInfos>
 </Civ4PromotionInfos>

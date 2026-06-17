@@ -982,5 +982,9 @@
 				</Unit>
 			</Units>
 		</CivilizationInfo>
+		<CivilizationInfo><!-- Lanun -->
+			<Type>CIVILIZATION_LANUN</Type>
+			<CivTrait>TRAIT_FREEBOOTERS</CivTrait>
+		</CivilizationInfo>
 	</CivilizationInfos>
 </Civ4CivilizationInfos>

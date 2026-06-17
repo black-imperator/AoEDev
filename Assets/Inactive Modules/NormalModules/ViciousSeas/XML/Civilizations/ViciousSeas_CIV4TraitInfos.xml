@@ -296,5 +296,28 @@
 				</FreePromotionUnitCombat>
 			</FreePromotionUnitCombats>
 		</TraitInfo>
+		<TraitInfo>		<!-- Freebooters -->
+			<Type>TRAIT_FREEBOOTERS</Type>
+			<TraitClass>TRAITCLASS_CIVILIZATION</TraitClass>
+			<Description>TXT_KEY_TRAIT_FREEBOOTERS</Description>
+			<Civilopedia>TXT_KEY_TRAIT_FREEBOOTERS_PEDIA</Civilopedia>
+			<ShortDescription>TXT_KEY_TRAIT_FREEBOOTERS_SHORT</ShortDescription>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_HARDY1</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_BOUNTY_HUNTER</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
+			</FreePromotions>
+			<FreePromotionUnitCombats>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+			</FreePromotionUnitCombats>
+		</TraitInfo>
 	</TraitInfos> 
 </Civ4TraitInfos>

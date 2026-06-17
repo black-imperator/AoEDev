@@ -108,5 +108,23 @@
 			<Button>,Art/Interface/Buttons/TechTree/Optics.dds,Art/Interface/Buttons/TechTree_Atlas.dds,2,6</Button>
 			<bWater>1</bWater>
 		</TechInfo>
+		<TechInfo>		<!-- Seafaring -->
+			<Type>TECH_SEAFARING</Type>
+			<Description>TXT_KEY_TECH_SEAFARING</Description>
+			<Strategy>TXT_KEY_TECH_SEAFARING_STRATEGY</Strategy>
+			<Advisor>ADVISOR_GROWTH</Advisor>
+			<iCost>-1</iCost>
+			<iAdvancedStartCost>-1</iAdvancedStartCost>
+			<Era>ERA_ANCIENT</Era>
+			<bWaterWork>1</bWaterWork>
+			<iGridX>1</iGridX>
+			<iGridY>10</iGridY>
+			<Quote>TXT_KEY_TECH_SEAFARING_QUOTE</Quote>
+			<Sound>AS2D_TECH_DING</Sound>
+			<SoundMP>AS2D_TECH_DING</SoundMP>
+			<Button>Art/Interface/Buttons/TechTree/Seafaring.dds</Button>
+			<bWater>1</bWater>
+			<bForceOverwrite>1</bForceOverwrite>
+		</TechInfo>
 	</TechInfos>
 </Civ4TechInfos>
