@@ -6,10 +6,20 @@
 <!-- Terrain Infos -->
 <Civ4TerrainInfos xmlns="x-schema:ViciousSeas_CIV4TerrainSchema.xml">
 	<TerrainInfos>
+		<TerrainInfo> <!-- Ocean -->
+			<TerrainClass>TERRAINCLASS_OCEAN</TerrainClass>
+			<Type>TERRAIN_OCEAN</Type>
+			<iMovement>2</iMovement>
+		</TerrainInfo>
+		<TerrainInfo> <!-- Blackwater -->
+			<TerrainClass>TERRAINCLASS_OCEAN</TerrainClass>
+			<Type>TERRAIN_BLACKWATER</Type>
+			<iMovement>2</iMovement>
+		</TerrainInfo>
 		<TerrainInfo> <!-- Deep Ocean -->
 			<TerrainClass>TERRAINCLASS_OCEAN_DEEP</TerrainClass>
 			<Type>TERRAIN_OCEAN_DEEP</Type>
-			<iMovement>1.5</iMovement>
+			<iMovement>3</iMovement>
 		</TerrainInfo>
 	</TerrainInfos>
 </Civ4TerrainInfos>

@@ -1567,15 +1567,15 @@
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
-					<iTerrainMoveCost>1</iTerrainMoveCost>
+					<iTerrainMoveCost>2</iTerrainMoveCost>
 				</TerrainMoveCost>
 			</TerrainMoveCosts>
 		</UnitInfo>
@@ -1590,15 +1590,15 @@
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
-					<iTerrainMoveCost>1</iTerrainMoveCost>
+					<iTerrainMoveCost>2</iTerrainMoveCost>
 				</TerrainMoveCost>
 			</TerrainMoveCosts>
 		</UnitInfo>
@@ -1614,15 +1614,15 @@
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
-					<iTerrainMoveCost>1</iTerrainMoveCost>
+					<iTerrainMoveCost>2</iTerrainMoveCost>
 				</TerrainMoveCost>
 			</TerrainMoveCosts>
 		</UnitInfo>
@@ -1633,15 +1633,15 @@
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
-					<iTerrainMoveCost>1</iTerrainMoveCost>
+					<iTerrainMoveCost>2</iTerrainMoveCost>
 				</TerrainMoveCost>
 			</TerrainMoveCosts>
 		</UnitInfo>
@@ -1652,15 +1652,15 @@
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 			</TerrainMoveCosts>
 		</UnitInfo>
@@ -1671,15 +1671,15 @@
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 			</TerrainMoveCosts>
 		</UnitInfo>
@@ -1690,15 +1690,15 @@
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 			</TerrainMoveCosts>
 		</UnitInfo>
@@ -1709,15 +1709,15 @@
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
-					<iTerrainMoveCost>1</iTerrainMoveCost>
+					<iTerrainMoveCost>2</iTerrainMoveCost>
 				</TerrainMoveCost>
 			</TerrainMoveCosts>
 			<FreePromotions>
@@ -1734,15 +1734,15 @@
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
-					<iTerrainMoveCost>1</iTerrainMoveCost>
+					<iTerrainMoveCost>2</iTerrainMoveCost>
 				</TerrainMoveCost>
 			</TerrainMoveCosts>
 			<FreePromotions>
@@ -1759,15 +1759,15 @@
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
-					<iTerrainMoveCost>1</iTerrainMoveCost>
+					<iTerrainMoveCost>2</iTerrainMoveCost>
 				</TerrainMoveCost>
 			</TerrainMoveCosts>
 		</UnitInfo>
@@ -1778,15 +1778,15 @@
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 			</TerrainMoveCosts>
 		</UnitInfo>
@@ -1797,15 +1797,15 @@
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 			</TerrainMoveCosts>
 		</UnitInfo>
@@ -1816,15 +1816,15 @@
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 			</TerrainMoveCosts>
 		</UnitInfo>
@@ -1834,15 +1834,15 @@
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
-					<iTerrainMoveCost>1</iTerrainMoveCost>
+					<iTerrainMoveCost>2</iTerrainMoveCost>
 				</TerrainMoveCost>
 			</TerrainMoveCosts>
 		</UnitInfo>
@@ -1853,15 +1853,15 @@
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
-					<iTerrainMoveCost>1</iTerrainMoveCost>
+					<iTerrainMoveCost>2</iTerrainMoveCost>
 				</TerrainMoveCost>
 			</TerrainMoveCosts>
 			<FreePromotions>
@@ -1952,11 +1952,11 @@
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
@@ -1971,19 +1971,18 @@
 			<Class>UNITCLASS_THE_FLYING_PATRIAN</Class>
 			<Type>UNIT_THE_FLYING_PATRIAN</Type>
 			<iMoves>1</iMoves>
-			<iMoves>1</iMoves>
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
-					<iTerrainMoveCost>1</iTerrainMoveCost>
+					<iTerrainMoveCost>2</iTerrainMoveCost>
 				</TerrainMoveCost>
 			</TerrainMoveCosts>
 		     <AndDependencyTypes>
@@ -1995,21 +1994,18 @@
 			<Type>UNIT_LILYPAD</Type>
 			<iMoves>1</iMoves>
 			<TerrainMoveCosts>
-			<iMoves>1</iMoves>
-			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
-					<iTerrainMoveCost>1</iTerrainMoveCost>
+					<iTerrainMoveCost>2</iTerrainMoveCost>
 				</TerrainMoveCost>
-			</TerrainMoveCosts>
 			</TerrainMoveCosts>
 		     <AndDependencyTypes>
 		        <DependencyType>MODULE_KCZ_WOODS</DependencyType>
@@ -2022,15 +2018,15 @@
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 			</TerrainMoveCosts>
 		     <AndDependencyTypes>
@@ -2304,11 +2300,11 @@
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
@@ -2340,11 +2336,11 @@
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
-					<iTerrainMoveCost>0.5</iTerrainMoveCost>
+					<iTerrainMoveCost>1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
