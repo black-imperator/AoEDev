@@ -3622,6 +3622,14 @@
 		<Spanish>Water Walking</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_WATER_WALKING_SPELL</Tag>
+		<English>Water Walking: Temporary</English>
+		<French>Marche Aquatique</French>
+		<German>Wasserwandeln</German>
+		<Italian>Water Walking: Temporary</Italian>
+		<Spanish>Water Walking: Temporary</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_WATER_WALKING_PEDIA</Tag>
 		<English>[ICON_BULLET]Allows the unit to travel over water tiles</English>
 		<French>[ICON_BULLET]L'unité peut traverser les cases d'eau.</French>

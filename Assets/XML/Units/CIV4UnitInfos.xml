@@ -11361,6 +11361,10 @@
 					<BuildingType>BUILDING_WEAPONSMITH</BuildingType>
 					<bBuilding>1</bBuilding>
 				</Building>
+				<Building>
+					<BuildingType>BUILDING_MAGE_GUILD</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
 			</Buildings>
 			<iMoves>1</iMoves>
 			<iCultureGarrison>5</iCultureGarrison>
@@ -11637,6 +11641,10 @@
 				</Building>
 				<Building>
 					<BuildingType>BUILDING_WEAPONSMITH</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_MAGE_GUILD</BuildingType>
 					<bBuilding>1</bBuilding>
 				</Building>
 			</Buildings>

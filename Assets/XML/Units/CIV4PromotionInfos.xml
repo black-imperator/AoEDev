@@ -14095,6 +14095,7 @@
 					<iBonusRange>4</iBonusRange>
 				</CityBonus>
 			</CityBonuses>
+			<bDispellable>1</bDispellable>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Blood Core -->
 			<Type>PROMOTION_BLOOD_CORE</Type>
@@ -14118,6 +14119,7 @@
 			<iNeutralHealChange>-10</iNeutralHealChange>
 			<iFriendlyHealChange>-10</iFriendlyHealChange>
 			<iPromotionDuration>2</iPromotionDuration>
+			<bDispellable>1</bDispellable>
 			<Button>Art/Interface/Buttons/Promotions/BloodCore.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Blood Dragon Human Form -->
@@ -14128,6 +14130,7 @@
 			<Button>Art/Interface/Buttons/Units/BloodyHuman.dds</Button>
 			<TempUnitCombat>UNITCOMBAT_MELEE</TempUnitCombat>
 			<iPromotionDuration>2</iPromotionDuration>
+			<bDispellable>1</bDispellable>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Form of Lighthouse -->
 			<Type>PROMOTION_FORM_OF_LIGHTHOUSE</Type>
@@ -14138,6 +14141,7 @@
 			<iPromotionDuration>1</iPromotionDuration>
 			<iVisibilityChange>5</iVisibilityChange>
 			<iExtraPerception>5</iExtraPerception>
+			<bDispellable>1</bDispellable>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Form of Water -->
 			<Type>PROMOTION_FORM_OF_WATER</Type>
@@ -14148,6 +14152,7 @@
 			<ReplaceArtType>ART_DEF_UNIT_SCALED_DRAGON_WATER</ReplaceArtType>
 			<Button>Art/Interface/Buttons/Promotions/Shimmering_Core.dds</Button>
 			<iPromotionDuration>1</iPromotionDuration>
+			<bDispellable>1</bDispellable>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Form of Turtle -->
 			<Type>PROMOTION_FORM_OF_TURTLE</Type>
@@ -14158,6 +14163,7 @@
 			<ReplaceArtType>ART_DEF_UNIT_GIANT_TORTOISE</ReplaceArtType>
 			<Button>Art/Interface/Buttons/Promotions/Shimmering_Core.dds</Button>
 			<iPromotionDuration>1</iPromotionDuration>
+			<bDispellable>1</bDispellable>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Form of Bird -->
 			<Type>PROMOTION_FORM_OF_BIRD</Type>
@@ -14172,6 +14178,7 @@
 			<iMovesChange>2</iMovesChange>
 			<iCombatPercent>-50</iCombatPercent>
 			<bFlying>1</bFlying>
+			<bDispellable>1</bDispellable>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Monk Enlightenment -->
 			<Type>PROMOTION_MONK_ENLIGHTENMENT</Type>
@@ -18932,6 +18939,18 @@
 			<Button>Art/Interface/Buttons/Promotions/Waterwalking.dds</Button>
 			<bWaterWalking>1</bWaterWalking>
 			<iAIWeight>100</iAIWeight>
+			<iMinLevel>-1</iMinLevel>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Water Walking - WATER II -->
+			<Type>PROMOTION_WATER_WALKING_DURATION</Type>
+			<Description>TXT_KEY_PROMOTION_WATER_WALKING_SPELL</Description>
+			<bAmphib>1</bAmphib>
+			<bRiver>1</bRiver>
+			<Button>Art/Interface/Buttons/Promotions/Waterwalking.dds</Button>
+			<bWaterWalking>1</bWaterWalking>
+			<iAIWeight>100</iAIWeight>
+			<bDispellable>1</bDispellable>
+			<iPromotionDuration>10</iPromotionDuration>
 			<iMinLevel>-1</iMinLevel>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Water Walking - Rinwell -->

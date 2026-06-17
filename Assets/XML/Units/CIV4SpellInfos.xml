@@ -2624,12 +2624,14 @@
 			</SpellClasses>
 			<PromotionPrereq1>PROMOTION_WATER2</PromotionPrereq1>
 			<bAllowAI>1</bAllowAI>
+			<bIsAutoCastable>1</bIsAutoCastable>
 			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
 			<bHasCasted>1</bHasCasted>
 			<AddPromotions>
-				<AddPromotion>PROMOTION_WATER_WALKING</AddPromotion>
+				<AddPromotion>PROMOTION_WATER_WALKING_DURATION</AddPromotion>
 			</AddPromotions>
-			<bBuffCasterOnly>1</bBuffCasterOnly>
+			<bImmuneNeutral>1</bImmuneNeutral>
+			<bImmuneNotAlive>1</bImmuneNotAlive>
 			<Effect>EFFECT_CREATION</Effect>
 			<Sound>AS3D_SPELL_WATER</Sound>
 			<Button>Art/Interface/Buttons/Promotions/Waterwalking.dds</Button>
