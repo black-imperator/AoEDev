@@ -1722,9 +1722,24 @@
 			<Button>Art/Interface/Buttons/Promotions/NavalCrew/Naval_Longshoremen.dds</Button>
 			<bForceOverwrite>1</bForceOverwrite>
 		</PromotionInfo>
-		<PromotionInfo>		<!-- Hidden Nationality Blocker for Bhall (so troops can board) -->
-			<Type>PROMOTION_HIDDEN_NATIONALITY_BLOCK</Type>
-			<iCargoChange>3</iCargoChange>
+		<PromotionInfo>		<!-- ORC CARGO invasions -->
+			<Type>PROMOTION_ORC_CARGO</Type>
+			<Description>TXT_KEY_PROMOTION_ORC_CARGO</Description>
+			<Civilopedia>TXT_KEY_PROMOTION_ORC_CARGO_PEDIA</Civilopedia>
+			<PrereqCivilizations>
+				<PrereqCivilization>CIVILIZATION_ORC</PrereqCivilization>
+			</PrereqCivilizations>
+			<bMustMaintain>1</bMustMaintain>
+			<bAutoAcquire>1</bAutoAcquire>
+			<bNoXP>1</bNoXP>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<iCargoChange>2</iCargoChange>
+			<Button>Art/Interface/Buttons/Promotions/Expandedhull.dds</Button>
 		</PromotionInfo>
 	</PromotionInfos>
 </Civ4PromotionInfos>

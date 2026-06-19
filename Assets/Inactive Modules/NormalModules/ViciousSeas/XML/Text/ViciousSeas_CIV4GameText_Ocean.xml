@@ -840,4 +840,12 @@ Sometimes, a cultist will not be content worshiping on land. This marine shrine 
 		<Italian>FBT</Italian>
 		<Spanish>FBT</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_ORC_CARGO</Tag>
+		<English>Unsafe Cargo Holds</English>
+		<French>Unsafe Cargo Holds</French>
+		<German>Unsafe Cargo Holds</German>
+		<Italian>Unsafe Cargo Holds</Italian>
+		<Spanish>Unsafe Cargo Holds</Spanish>
+	</TEXT>
 </Civ4GameText>

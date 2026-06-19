@@ -45479,7 +45479,6 @@
 			<Type>PROMOTION_FLAGSHIP_NAV_2</Type>
 			<Description>TXT_KEY_PROMOTION_FLAGSHIP_NAV_2</Description>
 			<PromotionNextLevel>PROMOTION_FLAGSHIP_NAV_3</PromotionNextLevel>
-			<iMovesChange>1</iMovesChange>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
@@ -45512,6 +45511,7 @@
 					<iPrereqApplications>1</iPrereqApplications>
 				</PrereqPromotionAND>
 			</PrereqPromotionANDs>
+			<iMovesChange>1</iMovesChange>
 			<MinionPromotions>
 				<PromotionType>PROMOTION_MINION_NAV_3</PromotionType>
 			</MinionPromotions>
@@ -45664,7 +45664,7 @@
 				</UnitCombat>
 			</UnitCombats>
 			<iMinLevel>-1</iMinLevel>
-			<iMovesChange>1</iMovesChange>
+			<iWithdrawalChange>20</iWithdrawalChange>
 			<Button>Art/Modules/Admirals/Buttons/Minion_Nav_2.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Minion - Navigation III -->
@@ -45685,7 +45685,7 @@
 				</UnitCombat>
 			</UnitCombats>
 			<iMinLevel>-1</iMinLevel>
-			<iWithdrawalChange>20</iWithdrawalChange>
+			<iMovesChange>1</iMovesChange>
 			<Button>Art/Modules/Admirals/Buttons/Minion_Nav_3.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Minion - Field Repairs I -->

@@ -1893,6 +1893,41 @@
 				</FreePromotion>
 			</FreePromotions>
 		</UnitInfo>
+		<UnitInfo>        <!-- Airship -->                       <!--KURIOTATES-->
+			<Class>UNITCLASS_QUEEN_OF_THE_LINE</Class>
+			<Type>UNIT_AIRSHIP</Type>
+			<iMoves>2</iMoves>
+		</UnitInfo>
+		<UnitInfo>        <!-- Thopter -->
+			<Class>UNITCLASS_CARAVEL</Class>
+			<Type>UNIT_THOPTER</Type>
+			<iMoves>1</iMoves>
+		</UnitInfo>
+		<UnitInfo>        <!-- Aquilan Thopter -->
+			<Class>UNITCLASS_MAN_O_WAR</Class>
+			<Type>UNIT_AQUILAN_THOPTER</Type>
+			<iMoves>2</iMoves>
+		</UnitInfo>
+		<UnitInfo>        <!-- Lenora -->
+			<Class>UNITCLASS_LENORA</Class>
+			<Type>UNIT_LENORA</Type>
+			<iMoves>2</iMoves>
+		</UnitInfo>
+		<UnitInfo>        <!-- Dirigible Fleet -->
+			<Class>UNITCLASS_QUEEN_OF_THE_LINE</Class>
+			<Type>UNIT_DIRIGIBLE</Type>
+			<iMoves>2</iMoves>
+		</UnitInfo>
+		<UnitInfo>        <!-- Manticore -->
+			<Class>UNITCLASS_MANTICORE</Class>
+			<Type>UNIT_MANTICORE</Type>
+			<iMoves>2</iMoves>
+		</UnitInfo>
+		<UnitInfo>        <!-- Pegasus -->
+			<Class>UNITCLASS_PEGASUS</Class>
+			<Type>UNIT_PEGASUS</Type>
+			<iMoves>2</iMoves>
+		</UnitInfo>
 		<UnitInfo>        <!-- Workboat -->
 			<Class>UNITCLASS_WORKBOAT</Class>
 			<Type>UNIT_WORKBOAT</Type>
@@ -2036,6 +2071,11 @@
 		     <AndDependencyTypes>
 		        <DependencyType>MODULE_DRACKAOSNISIRA</DependencyType>
 		     </AndDependencyTypes>
+		</UnitInfo>
+		<UnitInfo>        	<!-- Fae Dragon Rider -->
+			<Class>UNITCLASS_KNIGHT</Class>
+			<Type>UNIT_FAE_DRAGON_RIDER</Type>
+			<iMoves>2</iMoves>
 		</UnitInfo>
 		<UnitInfo>		<!--Flying Patrian -->
 			<Class>UNITCLASS_THE_FLYING_PATRIAN</Class>
