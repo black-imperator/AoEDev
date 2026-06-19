@@ -1,0 +1,267 @@
+<?xml version="1.0" ?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Promotion Infos -->
+<Civ4PromotionInfos xmlns="x-schema:DRACKA_CIV4UnitSchema.xml">
+	<PromotionInfos>
+		<PromotionInfo> <!-- Kinari Species Promotion -->
+			<Type>PROMOTION_KINARI</Type>
+			<Description>Kinari</Description>
+			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Promotions\Yinara\KinariRace.dds</Button> 
+			<bRace>1</bRace>
+            <iResistMagic>50</iResistMagic>
+            <bImmuneToMagic>1</bImmuneToMagic>
+			<DamageTypeResists>
+				<DamageTypeResist>
+					<DamageType>DAMAGE_COLD</DamageType>
+					<iResist>40</iResist>
+				</DamageTypeResist>
+				<DamageTypeResist>
+					<DamageType>DAMAGE_FIRE</DamageType>
+					<iResist>40</iResist>
+				</DamageTypeResist>
+				<DamageTypeResist>
+					<DamageType>DAMAGE_LIGHTNING</DamageType>
+					<iResist>40</iResist>
+				</DamageTypeResist>
+			</DamageTypeResists>
+			<BonusAffinities>
+				<BonusAffinity>
+					<BonusType>BONUS_MANA_MIND</BonusType>
+					<iAffinity>1</iAffinity>
+				</BonusAffinity>
+			</BonusAffinities>
+		</PromotionInfo>
+		<PromotionInfo> <!-- Yinara Caste Born -->
+			<Type>PROMOTION_YINARA_CASTE_BORN</Type>
+			<Description>Yinara Caste Born</Description>
+			<iMinLevel>-1</iMinLevel>
+            <iFriendlyHealChange>15</iFriendlyHealChange>
+			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Promotions\Yinara\CasteBorn.dds</Button>
+		</PromotionInfo>
+        <PromotionInfo> <!-- Bushin Caste -->
+			<Type>PROMOTION_YINARA_CASTE_BUSHIN</Type>
+			<Description>Bushin Caste</Description>
+            <PrereqPromotionANDs>
+				<PrereqPromotionAND>
+					<PromotionType>PROMOTION_YINARA_CASTE_BORN</PromotionType>
+					<iPrereqApplications>1</iPrereqApplications>
+				</PrereqPromotionAND>
+			</PrereqPromotionANDs>
+            <bAutoAcquire>1</bAutoAcquire>
+			<bMustMaintain>1</bMustMaintain>
+			<bNoXP>1</bNoXP>
+			<iCombatPercent>25</iCombatPercent>
+			<iCombatPercentDefense>-50</iCombatPercentDefense>
+            <iWithdrawalChange>-50</iWithdrawalChange>
+            <UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Promotions\Yinara\BushinCaste.dds</Button> 
+		</PromotionInfo>
+        <PromotionInfo> <!-- Tetsuji Caste -->
+			<Type>PROMOTION_YINARA_CASTE_TETSUJI</Type>
+			<Description>Tetsuji Caste</Description>
+            <PrereqPromotionANDs>
+				<PrereqPromotionAND>
+					<PromotionType>PROMOTION_YINARA_CASTE_BORN</PromotionType>
+					<iPrereqApplications>1</iPrereqApplications>
+				</PrereqPromotionAND>
+			</PrereqPromotionANDs>
+            <bAutoAcquire>1</bAutoAcquire>
+			<bMustMaintain>1</bMustMaintain>
+			<bNoXP>1</bNoXP>
+			<iCombatPercent>-25</iCombatPercent>
+			<iCombatPercentDefense>50</iCombatPercentDefense>
+            <iWithdrawalChange>-50</iWithdrawalChange>
+            <UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Promotions\Yinara\TetsujiCaste.dds</Button> 
+		</PromotionInfo>
+        <PromotionInfo> <!-- Yumiya Caste -->
+			<Type>PROMOTION_YINARA_CASTE_YUMIYA</Type>
+			<Description>Yumiya Caste</Description>
+            <PrereqPromotionANDs>
+				<PrereqPromotionAND>
+					<PromotionType>PROMOTION_YINARA_CASTE_BORN</PromotionType>
+					<iPrereqApplications>1</iPrereqApplications>
+				</PrereqPromotionAND>
+			</PrereqPromotionANDs>
+            <bAutoAcquire>1</bAutoAcquire>
+			<bMustMaintain>1</bMustMaintain>
+			<bNoXP>1</bNoXP>
+            <iExtraCombatStr>-1</iExtraCombatStr>
+			<iExtraCombatDefense>-1</iExtraCombatDefense>
+            <iCombatPercent>-15</iCombatPercent>
+            <iAirCombat>2</iAirCombat>
+			<iAirCombatLimitBoost>10</iAirCombatLimitBoost>
+			<iAirRangeChange>1</iAirRangeChange>
+            <UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Promotions\Yinara\YumiyaCaste.dds</Button> 
+		</PromotionInfo>
+        <PromotionInfo> <!-- Hayate Caste -->
+			<Type>PROMOTION_YINARA_CASTE_HAYATE</Type>
+			<Description>Hayate Caste</Description>
+            <PrereqPromotionANDs>
+				<PrereqPromotionAND>
+					<PromotionType>PROMOTION_YINARA_CASTE_BORN</PromotionType>
+					<iPrereqApplications>1</iPrereqApplications>
+				</PrereqPromotionAND>
+			</PrereqPromotionANDs>
+            <bAutoAcquire>1</bAutoAcquire>
+			<bMustMaintain>1</bMustMaintain>
+			<bNoXP>1</bNoXP>
+            <iMovesChange>1</iMovesChange>
+            <iCityAttack>-50</iCityAttack>
+			<iExtraCombatDefense>-2</iExtraCombatDefense>
+            <UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Promotions\Yinara\HayateCaste.dds</Button> 
+		</PromotionInfo>
+        <PromotionInfo> <!-- Miko Caste -->
+			<Type>PROMOTION_YINARA_CASTE_MIKO</Type>
+			<Description>Miko Caste</Description>
+            <PrereqPromotionANDs>
+				<PrereqPromotionAND>
+					<PromotionType>PROMOTION_YINARA_CASTE_BORN</PromotionType>
+					<iPrereqApplications>1</iPrereqApplications>
+				</PrereqPromotionAND>
+			</PrereqPromotionANDs>
+            <bAutoAcquire>1</bAutoAcquire>
+			<bMustMaintain>1</bMustMaintain>
+			<bNoXP>1</bNoXP>
+            <iSpellCasterXP>10</iSpellCasterXP>
+            <iBetterDefenderThanPercent>-25</iBetterDefenderThanPercent>
+            <fCasterXPRate>0.50</fCasterXPRate>
+			<bGetCasterXP>1</bGetCasterXP>
+            <UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Promotions\Yinara\MikoCaste.dds</Button>
+		</PromotionInfo>
+        <PromotionInfo> <!-- Mitsukake Caste -->
+			<Type>PROMOTION_YINARA_CASTE_MITSUKAKE</Type>
+			<Description>Mitsukake Caste</Description>
+            <PrereqPromotionANDs>
+				<PrereqPromotionAND>
+					<PromotionType>PROMOTION_YINARA_CASTE_BORN</PromotionType>
+					<iPrereqApplications>1</iPrereqApplications>
+				</PrereqPromotionAND>
+			</PrereqPromotionANDs>
+            <bAutoAcquire>1</bAutoAcquire>
+			<bMustMaintain>1</bMustMaintain>
+			<bNoXP>1</bNoXP>
+            <iCityAttack>-25</iCityAttack>
+            <iCityDefense>-25</iCityDefense>
+            <FeatureAttacks>
+				<FeatureAttack>
+					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<iFeatureAttack>30</iFeatureAttack>
+				</FeatureAttack>
+				<FeatureAttack>
+					<FeatureType>FEATURE_FOREST</FeatureType>
+					<iFeatureAttack>30</iFeatureAttack>
+				</FeatureAttack>
+				<FeatureAttack>
+					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
+					<iFeatureAttack>30</iFeatureAttack>
+				</FeatureAttack>
+			</FeatureAttacks>
+			<FeatureDefenses>
+				<FeatureDefense>
+					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<iFeatureDefense>30</iFeatureDefense>
+				</FeatureDefense>
+				<FeatureDefense>
+					<FeatureType>FEATURE_FOREST</FeatureType>
+					<iFeatureDefense>30</iFeatureDefense>
+				</FeatureDefense>
+				<FeatureDefense>
+					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
+					<iFeatureDefense>30</iFeatureDefense>
+				</FeatureDefense>
+			</FeatureDefenses>
+            <iExtraPerception>1</iExtraPerception>
+			<bIgnoreTerrainCosts>1</bIgnoreTerrainCosts>
+            <UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Promotions\Yinara\MitsukakeCaste.dds</Button> 
+		</PromotionInfo>
+        <PromotionInfo> <!-- Nue Caste -->
+			<Type>PROMOTION_YINARA_CASTE_NUE</Type>
+			<Description>Nue Caste</Description>
+            <PrereqPromotionANDs>
+				<PrereqPromotionAND>
+					<PromotionType>PROMOTION_YINARA_CASTE_BORN</PromotionType>
+					<iPrereqApplications>1</iPrereqApplications>
+				</PrereqPromotionAND>
+			</PrereqPromotionANDs>
+            <bAutoAcquire>1</bAutoAcquire>
+			<bMustMaintain>1</bMustMaintain>
+			<bNoXP>1</bNoXP>
+            <iVisibilityChange>1</iVisibilityChange>
+            <iExtraCombatStr>-1</iExtraCombatStr>
+			<iExtraCombatDefense>-1</iExtraCombatDefense>
+            <UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Promotions\Yinara\NueCaste.dds</Button> 
+		</PromotionInfo>
+        <PromotionInfo> <!-- Senshi Caste -->
+			<Type>PROMOTION_YINARA_CASTE_SENSHI</Type>
+			<Description>Senshi Caste</Description>
+            <PrereqPromotionANDs>
+				<PrereqPromotionAND>
+					<PromotionType>PROMOTION_YINARA_CASTE_BORN</PromotionType>
+					<iPrereqApplications>1</iPrereqApplications>
+				</PrereqPromotionAND>
+			</PrereqPromotionANDs>
+            <bAutoAcquire>1</bAutoAcquire>
+			<bMustMaintain>1</bMustMaintain>
+			<bNoXP>1</bNoXP>
+            <CityBonuses>
+				<CityBonus>
+					<bApplySelf>1</bApplySelf>
+					<bApplyTeam>1</bApplyTeam>
+					<fCrime>-5</fCrime>
+					<iBonusRange>0</iBonusRange>
+				</CityBonus>
+			</CityBonuses>
+            <UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Promotions\Yinara\SenshiCaste.dds</Button>
+		</PromotionInfo>
+	</PromotionInfos>
+</Civ4PromotionInfos>

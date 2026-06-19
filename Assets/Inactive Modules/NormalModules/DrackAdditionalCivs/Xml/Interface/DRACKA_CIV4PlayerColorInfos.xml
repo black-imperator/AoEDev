@@ -12,5 +12,11 @@
 			<ColorTypeSecondary>COLOR_PLAYER_KITH_SECONDARY</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_KITH</TextColorType>
 		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_DRACKA_YINARA</Type>
+			<ColorTypePrimary>COLOR_PLAYER_YINARA</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_YINARA_SECONDARY</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_YINARA</TextColorType>
+		</PlayerColorInfo>
 	</PlayerColorInfos>
 </Civ4PlayerColorInfos>

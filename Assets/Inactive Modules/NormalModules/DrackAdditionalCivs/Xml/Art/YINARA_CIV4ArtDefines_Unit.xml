@@ -1,0 +1,795 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Unit art path information -->
+<Civ4ArtDefines xmlns="x-schema:DRACKA_CIV4ArtDefinesSchema.xml">
+    <UnitArtInfos>
+        <UnitArtInfo> <!-- Hana no Yume -->
+            <Type>ART_DEF_UNIT_YINARA_HANA</Type>
+            <Button>Modules/NormalModules/DrackAdditionalCivs/Art/Units/Yinara/Hana.dds</Button> 
+            <fScale>0.44</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Civs/Calabim/Archmage/Pikeman.nif</NIF>
+			<KFM>Art/Units/Civs/Calabim/Archmage/Pikeman blood.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop />
+				<AudioRunTypeEnd />
+			</AudioRunSounds>
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
+        </UnitArtInfo>
+        <UnitArtInfo> <!-- Yami no Tsume -->
+            <Type>ART_DEF_UNIT_YINARA_YAMI</Type>
+            <Button>Modules/NormalModules/DrackAdditionalCivs/Art/Units/Yinara/Yami.dds</Button> 
+            <fScale>0.44</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Civs/Elohim/Devout/sumerian vulture.nif</NIF>
+			<KFM>Art\animations\vulture\Unique_Sumerian_Vulture.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop />
+				<AudioRunTypeEnd />
+			</AudioRunSounds>
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
+        </UnitArtInfo>
+        <UnitArtInfo> <!-- Jinrai no Kiba -->
+            <Type>ART_DEF_UNIT_YINARA_JINRAI</Type>
+            <Button>Modules/NormalModules/DrackAdditionalCivs/Art/Units/Yinara/Jinrai.dds</Button> 
+            <fScale>0.4</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Civs/Scions/council3/ancientspy.nif</NIF>
+			<KFM>Art/Units/AncientSpy/AncientSpy.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.9</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.4</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop />
+				<AudioRunTypeEnd />
+			</AudioRunSounds>
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
+        </UnitArtInfo>
+        <UnitArtInfo> <!-- Yakumo -->
+            <Type>ART_DEF_UNIT_YINARA_YAKUMO</Type>
+            <Button>Modules/NormalModules/DrackAdditionalCivs/Art/Units/Yinara/Yakumo.dds</Button> 
+            <fScale>0.44</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/spawns/mage_earth/mage_earth.nif</NIF>
+            <KFM>Art/Units/spawns/mage_earth/mage_earth.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>1.0</fShadowScale>
+            </ShadowDef>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop />
+				<AudioRunTypeEnd />
+			</AudioRunSounds>
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
+        </UnitArtInfo>
+        <UnitArtInfo> <!-- Ashigaru -->
+            <Type>ART_DEF_UNIT_YINARA_ASHIGARU</Type> 
+            <Button>Modules/NormalModules/DrackAdditionalCivs/Art/Units/Yinara/Ashigaru.dds</Button> 
+            <fScale>0.44</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Modules/Dao/Units/Spearman/Spearman_Chinese.nif</NIF>
+            <KFM>Art/Units/Spearman_Chinese/Spearman_Chinese.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>1.0</fShadowScale>
+            </ShadowDef>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop />
+                <AudioRunTypeEnd />
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo> <!-- Miko -->
+            <Type>ART_DEF_UNIT_ADEPT_YINARA</Type>
+            <Button>Modules/NormalModules/DrackAdditionalCivs/Art/Units/Yinara/Miko.dds</Button> 
+            <fScale>0.44</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/spawns/mage_air/mage_air.nif</NIF>
+            <KFM>Art/animations/mage_air/mage_air.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>1.0</fShadowScale>
+            </ShadowDef>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop />
+				<AudioRunTypeEnd />
+			</AudioRunSounds>
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
+        </UnitArtInfo>
+        <UnitArtInfo> <!-- Hachibi -->
+            <Type>ART_DEF_UNIT_ARCHMAGE_YINARA</Type>
+            <Button>Modules/NormalModules/DrackAdditionalCivs/Art/Units/Yinara/Hachibi.dds</Button> 
+            <fScale>0.44</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/spawns/mage_fire/mage_fire.nif</NIF>
+            <KFM>Art/Units/spawns/mage_fire/mage_fire.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>1.0</fShadowScale>
+            </ShadowDef>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop />
+				<AudioRunTypeEnd />
+			</AudioRunSounds>
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
+        </UnitArtInfo>
+        <UnitArtInfo> <!-- Miketsu -->
+            <Type>ART_DEF_UNIT_MAGE_YINARA</Type>
+            <Button>Modules/NormalModules/DrackAdditionalCivs/Art/Units/Yinara/Miketsu.dds</Button> 
+            <fScale>0.44</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/spawns/mage_water/mage_water.nif</NIF>
+            <KFM>Art/animations/mage_water/mage_water.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>1.0</fShadowScale>
+            </ShadowDef>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_FEMALE_FAERIES_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop />
+				<AudioRunTypeEnd />
+			</AudioRunSounds>
+			<SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
+        </UnitArtInfo>
+        <UnitArtInfo> <!-- Start Unit Style -->
+            <Type>ART_DEF_UNIT_WARRIOR_YINARA</Type>
+            <Button>, ,Art/Modules/Dao/Dao_Atlas.dds,1,5</Button>
+            <fScale>0.44</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Warrior_Asian/Warrior_Asian.nif</NIF>
+            <KFM>Art/Units/Warrior_Asian/Warrior.kfm</KFM>
+            <SHADERNIF>Art/Units/Warrior_Asian/Warrior_Asian_FX.nif</SHADERNIF>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>1.0</fShadowScale>
+            </ShadowDef>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop />
+                <AudioRunTypeEnd />
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_WORKER_YINARA</Type>
+            <Button>, ,Art/Modules/Dao/Dao_Atlas.dds,2,4</Button>
+            <fScale>0.44</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Worker_Asian/Worker_Asian.nif</NIF>
+            <KFM>Art/animations/CombatWorker/CombatWorker.kfm</KFM>
+            <SHADERNIF>Art/Units/Worker_Asian/Worker_Asian_FX.nif</SHADERNIF>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>0.9</fShadowScale>
+            </ShadowDef>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop />
+                <AudioRunTypeEnd />
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_SCOUT_YINARA</Type>
+            <Button>, ,Art/Modules/Dao/Dao_Atlas.dds,5,7</Button>
+            <fScale>0.44</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Scout_Asian/Scout_Asian.nif</NIF>
+            <KFM>Art/Units/Scout_Asian/Scout.kfm</KFM>
+            <SHADERNIF>Art/Units/Scout_Asian/Scout_Asian_FX.nif</SHADERNIF>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>1.0</fShadowScale>
+            </ShadowDef>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop />
+                <AudioRunTypeEnd />
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_SETTLER_CHILD_YINARA</Type>
+            <Button>, ,Art/Modules/Dao/Dao_Atlas.dds,1,4</Button>
+            <fScale>0.47</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Settler_Asian/Settler_Asian_child.nif</NIF>
+            <KFM>Art/Units/Settler_Asian/Settler_Child.kfm</KFM>
+            <SHADERNIF>Art/Units/Settler_Asian/Settler_Asian_Child_fx.nif</SHADERNIF>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>0.7</fShadowScale>
+            </ShadowDef>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop />
+                <AudioRunTypeEnd />
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_SETTLER_DOG</Type>
+            <Button>Art/Interface/Buttons/Units/Wolf.dds</Button>
+            <fScale>0.33</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Modules/Dao/Units/Dog/Wolf.nif</NIF>
+            <KFM>Art/Units/Charlemagne_SupplyTrain/SupplyTrain.kfm</KFM>
+            <SHADERNIF>Art/Modules/Dao/Units/Dog/Wolf_FX.nif</SHADERNIF>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/WolfShadow.nif</ShadowNIF>
+                <ShadowAttachNode>LionBip Spine1</ShadowAttachNode>
+                <fShadowScale>1</fShadowScale>
+            </ShadowDef>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.28</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop />
+                <AudioRunTypeEnd />
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_SETTLER_PACK_HORSE</Type>
+            <Button>Art/Interface/Buttons/Units/Wolf.dds</Button>
+            <fScale>0.35</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Modules/Dao/Units/Donkey/donkey.nif</NIF>
+            <KFM>Art/Units/Charlemagne_SupplyTrain/SupplyTrain.kfm</KFM>
+            <SHADERNIF>Art/Modules/Dao/Units/Donkey/donkey.nif</SHADERNIF>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/HorseShadow.nif</ShadowNIF>
+                <ShadowAttachNode>HorseBip Spine1</ShadowAttachNode>
+                <fShadowScale>1</fShadowScale>
+            </ShadowDef>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.28</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop />
+                <AudioRunTypeEnd />
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_SETTLER_ELDER_YINARA</Type>
+            <Button>, ,Art/Modules/Dao/Dao_Atlas.dds,1,4</Button>
+            <fScale>0.44</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Settler_Asian/Settler_Asian_Male.nif</NIF>
+            <KFM>Art/Units/Settler_Asian/Settler_Male.kfm</KFM>
+            <SHADERNIF>Art/Units/Settler_Asian/Settler_Asian_Male_fx.nif</SHADERNIF>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>1.0</fShadowScale>
+            </ShadowDef>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop />
+                <AudioRunTypeEnd />
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_SETTLER_FEMALE_YINARA</Type>
+            <Button>, ,Art/Modules/Dao/Dao_Atlas.dds,1,4</Button>
+            <fScale>0.47</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Settler_Asian/Settler_Asian_Female.nif</NIF>
+            <KFM>Art/Units/Settler_Asian/Settler_Female.kfm</KFM>
+            <SHADERNIF>Art/Units/Settler_Asian/Settler_Asian_Female_FX.nif</SHADERNIF>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>0.9</fShadowScale>
+            </ShadowDef>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop />
+                <AudioRunTypeEnd />
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_SWORDSMAN_YINARA</Type>
+            <Button>, ,Art/Modules/Dao/Dao_Atlas.dds,2,5</Button>
+            <fScale>0.44</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Swordsman_Chinese/Swordsman_Chinese.nif</NIF>
+            <KFM>Art/Units/Swordsman_Chinese/Swordsman_Chinese.kfm</KFM>
+            <SHADERNIF>Art/Units/Swordsman_Chinese/Swordsman_Chinese_FX.nif</SHADERNIF>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>1.0</fShadowScale>
+            </ShadowDef>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop />
+                <AudioRunTypeEnd />
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_CHAMPION_YINARA</Type>
+            <Button>, ,Art/Modules/Dao/Dao_Atlas.dds,3,5</Button>
+            <fScale>0.44</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Modules/Dao/Units/Champion/ChokonuSword.nif</NIF>
+            <KFM>Art/Units/Charlemagne_HeavySwordsman/HeavySwordsman.kfm</KFM>
+            <SHADERNIF>Art/Modules/Dao/Units/Champion/ChokonuSword_FX.nif</SHADERNIF>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>1</fShadowScale>
+            </ShadowDef>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop />
+                <AudioRunTypeEnd />
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_SPEARMAN_YINARA</Type>
+            <Button>, ,Art/Modules/Dao/Dao_Atlas.dds,4,5</Button>
+            <fScale>0.44</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Modules/Dao/Units/Spearman/Spearman_Chinese.nif</NIF>
+            <KFM>Art/Units/Spearman_Chinese/Spearman_Chinese.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>1.0</fShadowScale>
+            </ShadowDef>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop />
+                <AudioRunTypeEnd />
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_PIKEMAN_YINARA</Type>
+            <Button>, ,Art/Modules/Dao/Dao_Atlas.dds,5,5</Button>
+            <fScale>0.44</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Modules/Dao/Units/Pikeman/pikeman_fx.nif</NIF>
+            <KFM>Art/animations/Pikeman/Pikeman blood.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>1</fShadowScale>
+            </ShadowDef>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop />
+                <AudioRunTypeEnd />
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_HORSEMAN_YINARA</Type>
+            <Button>, ,Art/Modules/Dao/Dao_Atlas.dds,2,7</Button>
+            <fScale>0.42</fScale>
+            <fInterfaceScale>0.9</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Horseman_Eurasian/Horseman_Eurasian.nif</NIF>
+            <KFM>Art/Units/Horseman_Eurasian/Horseman_Eurasian.kfm</KFM>
+            <SHADERNIF>Art/Units/Horseman_Eurasian/Horseman_Eurasian_FX.nif</SHADERNIF>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/HorseShadow.nif</ShadowNIF>
+                <ShadowAttachNode>HorseBip Spine1</ShadowAttachNode>
+                <fShadowScale>1.0</fShadowScale>
+            </ShadowDef>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop />
+                <AudioRunTypeEnd />
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_KNIGHT_YINARA</Type>
+            <Button>, ,Art/Modules/Dao/Dao_Atlas.dds,4,7</Button>
+            <fScale>0.42</fScale>
+            <fInterfaceScale>0.9</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/MountedSwordsman_Mongol/Mounted_Swordsman_Mongol.nif</NIF>
+            <KFM>Art/Units/MountedSwordsman_Mongol/mounted_swordsman_mongol.kfm</KFM>
+            <SHADERNIF>Art/Units/MountedSwordsman_Mongol/Mounted_Swordsman_Mongol_FX.nif</SHADERNIF>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/HorseShadow.nif</ShadowNIF>
+                <ShadowAttachNode>HorseBip Spine1</ShadowAttachNode>
+                <fShadowScale>1.0</fShadowScale>
+            </ShadowDef>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop />
+                <AudioRunTypeEnd />
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_ARCHER_YINARA</Type>
+            <Button>, ,Art/Modules/Dao/Dao_Atlas.dds,1,6</Button>
+            <fScale>0.44</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Modules/Dao/Units/Archer/sanguoarcher.nif</NIF>
+            <KFM>Art/Units/Archer_Chinese/Archer_Chinese.kfm</KFM>
+            <SHADERNIF>Art/Modules/Dao/Units/Archer/SanguoArcher.nif</SHADERNIF>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>0.85</fShadowScale>
+            </ShadowDef>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>1</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop />
+                <AudioRunTypeEnd />
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_MARKSMAN_YINARA</Type>
+            <Button>, ,Art/Modules/Dao/Dao_Atlas.dds,5,6</Button>
+            <fScale>0.44</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Modules/Dao/Units/Marksman/threekingdomsarcherlv2.nif</NIF>
+            <KFM>Art/Units/Archer_Chinese/Archer_Chinese.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>0.85</fShadowScale>
+            </ShadowDef>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>1</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop />
+                <AudioRunTypeEnd />
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_LONGBOWMAN_YINARA</Type>
+            <Button>, ,Art/Modules/Dao/Dao_Atlas.dds,2,6</Button>
+            <fScale>0.44</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Archer_Chinese/Archer_Chinese.nif</NIF>
+            <KFM>Art/Units/Archer_Chinese/Archer_Chinese.kfm</KFM>
+            <SHADERNIF>Art/Units/Archer_Chinese/Archer_Chinese_FX.nif</SHADERNIF>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>0.85</fShadowScale>
+            </ShadowDef>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>1</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop />
+                <AudioRunTypeEnd />
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_CROSSBOWMAN_YINARA</Type>
+            <Button>, ,Art/Modules/Dao/Dao_Atlas.dds,3,6</Button>
+            <fScale>0.44</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Modules/Dao/Units/chokonu/Chokunu.nif</NIF>
+            <KFM>Art/animations/chokonu/ChoKuNu.kfm</KFM>
+            <SHADERNIF>Art/Modules/Dao/Units/chokonu/Chokunu_fx.nif</SHADERNIF>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>1</fShadowScale>
+            </ShadowDef>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>1</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop />
+                <AudioRunTypeEnd />
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_ARQUEBUS_YINARA</Type>
+            <Button>, ,Art/Modules/Dao/Dao_Atlas.dds,4,6</Button>
+            <fScale>0.46</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Modules/Dao/Units/Arquebus/gun.nif</NIF>
+            <KFM>Art/Units/Unique/England/Redcoat/RedCoat.kfm</KFM>
+            <SHADERNIF>Art/Modules/Dao/Units/Arquebus/gun_fx.nif</SHADERNIF>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>1</fShadowScale>
+            </ShadowDef>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.05</fRangedDeathTime>
+            <bActAsRanged>1</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop />
+                <AudioRunTypeEnd />
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_HUNTER_YINARA</Type>
+            <Button>, ,Art/Modules/Dao/Dao_Atlas.dds,6,7</Button>
+            <fScale>0.44</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Archer_Eurasian/Archer_Eurasian.nif</NIF>
+            <KFM>Art/Units/Archer_Eurasian/Archer_Eurasian.kfm</KFM>
+            <SHADERNIF>Art/Units/Archer_Eurasian/Archer_Eurasian_FX.nif</SHADERNIF>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>1</fShadowScale>
+            </ShadowDef>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>1</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop />
+                <AudioRunTypeEnd />
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_RANGER_YINARA</Type>
+            <Button>, ,Art/Modules/Dao/Dao_Atlas.dds,6,6</Button>
+            <fScale>0.44</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Mongolian_JavelinThrower/Mongolian_JavelinThrower.nif</NIF>
+            <KFM>Art/Units/Mongolian_JavelinThrower/Mongolian_JavelinThrower.kfm</KFM>
+            <SHADERNIF>Art/Units/Mongolian_JavelinThrower/Mongolian_JavelinThrower_FX.nif</SHADERNIF>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>1</fShadowScale>
+            </ShadowDef>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>1</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop />
+                <AudioRunTypeEnd />
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_IMMORTAL_YINARA</Type>
+            <Button>, ,Art/Modules/Dao/Dao_Atlas.dds,8,5</Button>
+            <fScale>0.44</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Modules/Dao/Units/Immortal2/swordsman.nif</NIF>
+            <KFM>Art/Units/Swordsman/Swordsman.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>1</fShadowScale>
+            </ShadowDef>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop />
+                <AudioRunTypeEnd />
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_BERSERKER_YINARA</Type>
+            <Button>, ,Art/Modules/Dao/Dao_Atlas.dds,7,5</Button>
+            <fScale>0.42</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Modules/Dao/Units/Berserker/HeavySpearman heqi.nif</NIF>
+            <KFM>Art/Units/Viking_Berserker/Berserker.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>1</fShadowScale>
+            </ShadowDef>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop />
+                <AudioRunTypeEnd />
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_PHALANX_YINARA</Type>
+            <Button>, ,Art/Modules/Dao/Dao_Atlas.dds,6,5</Button>
+            <fScale>0.44</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Modules/Dao/Units/Phalanx/threekingdomsswordsmanlv4final.nif</NIF>
+            <KFM>Art/Units/Swordsman_Chinese/Swordsman_Chinese.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>1</fShadowScale>
+            </ShadowDef>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop />
+                <AudioRunTypeEnd />
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_WAR_ELEPHANT_YINARA</Type>
+            <Button>, ,Art/Modules/Dao/Dao_Atlas.dds,8,7</Button>
+            <fScale>0.32</fScale>
+            <fInterfaceScale>0.6</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/units/warelephant/WarElephant.nif</NIF>
+            <KFM>Art/Units/WarElephant/WarElephant.kfm</KFM>
+            <SHADERNIF>Art/Units/Civs/Dao/Elephant/WarElephant_fx.nif</SHADERNIF>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/WarElephantShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>1</fShadowScale>
+            </ShadowDef>
+            <fBattleDistance>0.45</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop />
+                <AudioRunTypeEnd />
+            </AudioRunSounds>
+        </UnitArtInfo> <!-- End Unit Style -->
+    </UnitArtInfos>
+</Civ4ArtDefines>

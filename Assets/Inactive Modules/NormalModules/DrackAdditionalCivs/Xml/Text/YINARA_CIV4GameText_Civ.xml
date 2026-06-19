@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Risna -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_CIV_DRACKA_YINARA_NAME</Tag>
+        <English>Yinara</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_DRACKA_YINARA_PEDIA</Tag>
+        <English>
+Moonlight on petals,
+Kinari weave harmony
+Nine tails guard the peace.
+
+The people of Yinara live under the gentle, but absolute rule of the most powerful of the Kinari, the nine tailed ones. In the Age of Ice, the Kinari weaved a sanctuary with their powerful magic, allowing a growing group of humans to survive. The nine tailed ones hid them not only from the cold, but also from the raids of the Doviello and the rule of the Illian. Over time, faith arose and a natural order with the Kinari rulers on top of a strict caste hierarchy. Each member of society must follow their given tasks and specializes in it without ever leaving their given path.
+        </English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_DRACKA_YINARA_STRATEGY</Tag>
+        <English>
+Complexity: Standard
+Harmony under the golden Tails.
+[H2]General[\H2]
+The strength of the Yinara lies in their Specialists. You should have big cities with many Specialists to fully use their mechanics. Using the Caste System or Guilds Civic is a good choice.
+[H2]Army[\H2]
+- All Units receive the Yinara Caste Born promotion due to the Greater Harmony Trait.
+- Depending on the Unit Combat Type, this Promotion grants one additional Promotion that specializes the unit.
+- It is recommend to use units from different combat types to have a well balanced army.
+[H2]Dynasties[\H2]
+- Each Leader of the Yinara has a Dynasty Trait.
+- Each Dynasty Trait grants different benefits, but also access to special units and buildings.
+- Your Palace only grants Mind Mana. The Dynasty Traits grants you 2 Mana each.
+- Hian Dynasty is focussed on Water and Naval Warfare.
+- Takk Dynasty is focussed on Big Cities and fast growth.
+- Juin Dynasty is focussed on Assassins and Crimes.
+        </English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_DRACKA_YINARA</Tag>
+        <English>Greater Harmony</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_DRACKA_YINARA_PEDIA</Tag>
+        <English>
+Whispers in the wind,
+Kinari guide the path,
+Unity blooms bright.
+
+All who walk under the guidance of the Yinara Kinari follow their given path. It is not theirs to question the commands of the nine tailed ones, nor to waste time about discussing their wise words. The Kinari expect their sheep to follow them blindly and without ever daring to raise their voice against them.
+        </English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_DRACKA_YINARA_SHORT</Tag>
+        <English>GH</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_DRACKA_YINARA_HIAN</Tag>
+        <English>Hian Dynasty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_DRACKA_YINARA_HIAN_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_DRACKA_YINARA_HIAN_SHORT</Tag>
+        <English>HD</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_DRACKA_YINARA_JUN</Tag>
+        <English>Jun Dynasty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_DRACKA_YINARA_JUN_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_DRACKA_YINARA_JUN_SHORT</Tag>
+        <English>JD</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_DRACKA_YINARA_TAKK</Tag>
+        <English>Takk Dynasty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_DRACKA_YINARA_TAKK_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_DRACKA_YINARA_TAKK_SHORT</Tag>
+        <English>TD</English>
+    </TEXT>
+</Civ4GameText>

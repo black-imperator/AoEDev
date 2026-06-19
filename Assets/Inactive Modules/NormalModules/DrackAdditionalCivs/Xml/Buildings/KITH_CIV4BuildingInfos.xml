@@ -11,7 +11,6 @@
             <Type>BUILDING_PALACE_DRACKA_KITH</Type>
             <Description>TXT_KEY_BUILDING_PALACE_DRACKA_KITH_NAME</Description>
             <Civilopedia>TXT_KEY_BUILDING_PALACE_PEDIA</Civilopedia>
-            <Help>TXT_KEY_BUILDING_PALACE_HELP</Help>
             <Strategy>TXT_KEY_BUILDING_DRACKA_PALACE_KITH_STRATEGY</Strategy>
             <bCapital>1</bCapital>
             <iHealth>2</iHealth>
