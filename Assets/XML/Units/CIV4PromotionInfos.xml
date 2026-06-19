@@ -27548,7 +27548,7 @@
 					<fProduction>2</fProduction>
 					<fGPP>2</fGPP>
 					<fGold>0</fGold>
-					<iBonusRange>20</iBonusRange>
+					<bFullMap>1</bFullMap>
 				</CityBonus>
 			</CityBonuses>
 			<iExtraSupport>-1</iExtraSupport>
@@ -27585,7 +27585,7 @@
 					<fProduction>4</fProduction>
 					<fGPP>4</fGPP>
 					<fCulture>2</fCulture>
-					<iBonusRange>20</iBonusRange>
+					<bFullMap>1</bFullMap>
 				</CityBonus>
 			</CityBonuses>
 			<PromotionOverwrites>
@@ -27634,7 +27634,7 @@
 					<fGPP>6</fGPP>
 					<fCulture>4</fCulture>
 					<fTradeRoutes>1</fTradeRoutes>
-					<iBonusRange>20</iBonusRange>
+					<bFullMap>1</bFullMap>
 				</CityBonus>
 			</CityBonuses>
 			<PromotionOverwrites>
@@ -27752,7 +27752,7 @@
 					<iResist>-25</iResist>
 				</DamageTypeResist>
 			</DamageTypeResists>
-			<Button>Art/Interface/Buttons/Promotions/EQHighQualityBronzeMelee.dds</Button>
+			<Button>Art/Interface/Buttons/Promotions/Bronzeweapons.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Iron Weapons Militia Grigori -->
 			<Type>PROMOTION_IRON_WEAPONS_MILITIA</Type>
@@ -27789,7 +27789,7 @@
 					<iCombatMod>10</iCombatMod>
 				</PromotionCombatMod>
 			</PromotionCombatMods>
-			<Button>Art/Interface/Buttons/Promotions/EQHighQualitySteelMelee.dds</Button>
+			<Button>Art/Interface/Buttons/Promotions/Ironweapons.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Mithril Weapons Militia Grigori -->
 			<Type>PROMOTION_MITHRIL_WEAPONS_MILITIA</Type>
@@ -27826,7 +27826,7 @@
 				</PromotionCombatMod>
 			</PromotionCombatMods>
 			<ReplaceArtType>ART_DEF_UNIT_PIKEMAN</ReplaceArtType>
-			<Button>Art/Interface/Buttons/Promotions/EQHighQualityMithrilMelee.dds</Button>
+			<Button>Art/Interface/Buttons/Promotions/Mithrilweapons.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Price of Power Influence -->
 			<Type>PROMOTION_PRICE_OF_POWER_INFLUENCE</Type>

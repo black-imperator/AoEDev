@@ -11,14 +11,21 @@
 			<Description>TXT_KEY_SPAWN_GROUP_GALLEY_ONE</Description>
 			<bNaval>1</bNaval>
 			<iWeight>1000</iWeight>
+			<CommanderUnits>
+				<Unit>UNIT_GALLEY</Unit>
+			</CommanderUnits>
 			<GroupUnitClasses>
 				<GroupUnitClass>
 					<UnitClass>UNITCLASS_GALLEY</UnitClass>
 					<iNumUnits>1</iNumUnits>
 				</GroupUnitClass>
+				<GroupUnitClass>
+					<UnitClass>UNITCLASS_WARRIOR</UnitClass>
+					<iNumUnits>4</iNumUnits>
+				</GroupUnitClass>
 			</GroupUnitClasses>
 			<PrereqTechANDs>
-				<Tech>TECH_SAILING</Tech>
+				<Tech>TECH_NEVER</Tech>
 			</PrereqTechANDs>
 			<BlockTechANDs>
 				<Tech>TECH_OPTICS</Tech>
@@ -29,9 +36,16 @@
 			<Description>TXT_KEY_SPAWN_GROUP_GALLEY</Description>
 			<bNaval>1</bNaval>
 			<iWeight>1000</iWeight>
+			<CommanderUnits>
+				<Unit>UNIT_AXEMAN</Unit>
+			</CommanderUnits>
 			<GroupUnitClasses>
 				<GroupUnitClass>
 					<UnitClass>UNITCLASS_GALLEY</UnitClass>
+					<iNumUnits>2</iNumUnits>
+				</GroupUnitClass>
+				<GroupUnitClass>
+					<UnitClass>UNITCLASS_WARRIOR</UnitClass>
 					<iNumUnits>3</iNumUnits>
 				</GroupUnitClass>
 			</GroupUnitClasses>
@@ -39,7 +53,7 @@
 				<Tech>TECH_SAILING</Tech>
 			</PrereqTechANDs>
 			<BlockTechANDs>
-				<Tech>TECH_ASTRONOMY</Tech>
+				<Tech>TECH_SMELTING</Tech>
 			</BlockTechANDs>
 		</SpawnGroupInfo>
 		<SpawnGroupInfo>	<!--  Galleon -->
@@ -50,20 +64,21 @@
 			<GroupUnitClasses>
 				<GroupUnitClass>
 					<UnitClass>UNITCLASS_GALLEON</UnitClass>
-					<iNumUnits>3</iNumUnits>
+					<iNumUnits>1</iNumUnits>
 				</GroupUnitClass>
 				<GroupUnitClass>
-					<UnitClass>UNITCLASS_GALLEY</UnitClass>
-					<iNumUnits>2</iNumUnits>
+					<UnitClass>UNITCLASS_OGRE</UnitClass>
+					<iNumUnits>1</iNumUnits>
+				</GroupUnitClass>
+				<GroupUnitClass>
+					<UnitClass>UNITCLASS_AXEMAN</UnitClass>
+					<iNumUnits>4</iNumUnits>
 				</GroupUnitClass>
 			</GroupUnitClasses>
 			<PrereqTechANDs>
-				<Tech>TECH_NEVER</Tech>
+				<Tech>TECH_OPTICS</Tech>
+				<Tech>TECH_WARFARE</Tech>
 			</PrereqTechANDs>
-			<BlockTechANDs>
-				<Tech>TECH_ASTRONOMY</Tech>
-				<Tech>TECH_ENGINEERING</Tech>
-			</BlockTechANDs>
 		</SpawnGroupInfo>
 		<SpawnGroupInfo>	<!--  Caravel -->
 			<Type>SPAWN_GROUP_CARAVEL</Type>
@@ -106,12 +121,21 @@
 			<iWeight>1000</iWeight>
 			<GroupUnitClasses>
 				<GroupUnitClass>
-					<UnitClass>UNITCLASS_PRIVATEER</UnitClass>
-					<iNumUnits>3</iNumUnits>
+					<UnitClass>UNITCLASS_GALLEON</UnitClass>
+					<iNumUnits>1</iNumUnits>
+				</GroupUnitClass>
+				<GroupUnitClass>
+					<UnitClass>UNITCLASS_OGRE</UnitClass>
+					<iNumUnits>1</iNumUnits>
+				</GroupUnitClass>
+				<GroupUnitClass>
+					<UnitClass>UNITCLASS_CHAMPION</UnitClass>
+					<iNumUnits>4</iNumUnits>
 				</GroupUnitClass>
 			</GroupUnitClasses>
 			<PrereqTechANDs>
-				<Tech>TECH_OPTICS</Tech>
+				<Tech>TECH_ASTRONOMY</Tech>
+				<Tech>TECH_IRON_WORKING</Tech>
 			</PrereqTechANDs>
 		</SpawnGroupInfo>
 		<SpawnGroupInfo>	<!--  Frigate -->

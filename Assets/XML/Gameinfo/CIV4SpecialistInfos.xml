@@ -68,7 +68,7 @@
 			<Yields>
 				<iYield>0</iYield>
 				<iYield>0</iYield>
-				<iYield>0</iYield>
+				<iYield>1</iYield>
 			</Yields>
 			<Commerces>
 				<iCommerce>0</iCommerce>
@@ -387,59 +387,59 @@
 			<TrainXPCaps>
 				<TrainXPCap>
 					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
-					<iTrainXPCap>2</iTrainXPCap>
+					<iTrainXPCap>5</iTrainXPCap>
 				</TrainXPCap>
 				<TrainXPCap>
 					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
-					<iTrainXPCap>2</iTrainXPCap>
+					<iTrainXPCap>4</iTrainXPCap>
 				</TrainXPCap>
 				<TrainXPCap>
 					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
-					<iTrainXPCap>2</iTrainXPCap>
+					<iTrainXPCap>4</iTrainXPCap>
 				</TrainXPCap>
 				<TrainXPCap>
 					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
-					<iTrainXPCap>2</iTrainXPCap>
+					<iTrainXPCap>4</iTrainXPCap>
 				</TrainXPCap>
 				<TrainXPCap>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
-					<iTrainXPCap>2</iTrainXPCap>
+					<iTrainXPCap>4</iTrainXPCap>
 				</TrainXPCap>
 				<TrainXPCap>
 					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
-					<iTrainXPCap>2</iTrainXPCap>
+					<iTrainXPCap>4</iTrainXPCap>
 				</TrainXPCap>
 				<TrainXPCap>
 					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
-					<iTrainXPCap>2</iTrainXPCap>
+					<iTrainXPCap>4</iTrainXPCap>
 				</TrainXPCap>
 				<TrainXPCap>
 					<UnitCombatType>UNITCOMBAT_BEAST</UnitCombatType>
-					<iTrainXPCap>2</iTrainXPCap>
+					<iTrainXPCap>4</iTrainXPCap>
 				</TrainXPCap>
 				<TrainXPCap>
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
-					<iTrainXPCap>2</iTrainXPCap>
+					<iTrainXPCap>4</iTrainXPCap>
 				</TrainXPCap>
 				<TrainXPCap>
 					<UnitCombatType>UNITCOMBAT_ANIMAL</UnitCombatType>
-					<iTrainXPCap>2</iTrainXPCap>
+					<iTrainXPCap>4</iTrainXPCap>
 				</TrainXPCap>
 				<TrainXPCap>
 					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
-					<iTrainXPCap>2</iTrainXPCap>
+					<iTrainXPCap>4</iTrainXPCap>
 				</TrainXPCap>
 				<TrainXPCap>
 					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
-					<iTrainXPCap>2</iTrainXPCap>
+					<iTrainXPCap>4</iTrainXPCap>
 				</TrainXPCap>
 				<TrainXPCap>
 					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
-					<iTrainXPCap>2</iTrainXPCap>
+					<iTrainXPCap>4</iTrainXPCap>
 				</TrainXPCap>
 				<TrainXPCap>
 					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
-					<iTrainXPCap>2</iTrainXPCap>
+					<iTrainXPCap>4</iTrainXPCap>
 				</TrainXPCap>
 			</TrainXPCaps>
 			<TrainXPRates>

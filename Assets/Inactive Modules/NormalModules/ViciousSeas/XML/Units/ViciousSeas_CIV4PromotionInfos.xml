@@ -1685,5 +1685,46 @@
 		        <DependencyType>MODULE_JOTNAR</DependencyType>
 		     </AndDependencyTypes>
 		</PromotionInfo>
+		<PromotionInfo>		<!-- Buccaneers -->
+			<Type>PROMOTION_BUCCANEERS</Type>
+			<Description>TXT_KEY_PROMOTION_BUCCANEERS</Description>
+			<bNoXP>1</bNoXP>
+			<PrereqInCity>1</PrereqInCity>
+			<PromotionClass>PROMOTIONCLASS_NAVAL_CREW</PromotionClass>
+			<iWithdrawalChange>-35</iWithdrawalChange>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Art/Interface/Buttons/Promotions/NavalCrew/Naval_Buccaneers.dds</Button>
+			<iExtraCombatStr>1</iExtraCombatStr>
+			<iExtraCombatDefense>1</iExtraCombatDefense>
+			<bForceOverwrite>1</bForceOverwrite>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Longshoremen -->
+			<Type>PROMOTION_LONGSHOREMEN</Type>
+			<Description>TXT_KEY_PROMOTION_LONGSHOREMEN</Description>
+			<bNoXP>1</bNoXP>
+			<PrereqInCity>1</PrereqInCity>
+			<PromotionClass>PROMOTIONCLASS_NAVAL_CREW</PromotionClass>
+			<iCargoChange>-1</iCargoChange>
+			<iNeutralHealChange>10</iNeutralHealChange>
+			<iFriendlyHealChange>10</iFriendlyHealChange>
+			<iEnemyHealChange>5</iEnemyHealChange>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Art/Interface/Buttons/Promotions/NavalCrew/Naval_Longshoremen.dds</Button>
+			<bForceOverwrite>1</bForceOverwrite>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Hidden Nationality Blocker for Bhall (so troops can board) -->
+			<Type>PROMOTION_HIDDEN_NATIONALITY_BLOCK</Type>
+			<iCargoChange>3</iCargoChange>
+		</PromotionInfo>
 	</PromotionInfos>
 </Civ4PromotionInfos>

@@ -519,6 +519,7 @@
 	  <!-- <SpawnGroupType>SPAWN_GROUP_GALLEY</SpawnGroupType>  - feels really bad -->
 			<ImmediateSpawnUnitType>UNIT_BOARDING_PARTY</ImmediateSpawnUnitType>
 			<SpawnUnitCiv>CIVILIZATION_ORC</SpawnUnitCiv>
+			<iSpawnUnitChancePercentMod>-40</iSpawnUnitChancePercentMod>
 			<bSpawnOnlyForOwner>1</bSpawnOnlyForOwner>
 			<iSpawnAtOnceLimit>3</iSpawnAtOnceLimit>
 			<bExplorable>1</bExplorable>
@@ -922,7 +923,7 @@
 			<SpawnUnitCiv>CIVILIZATION_DEMON</SpawnUnitCiv>
 			<bSpawnOnlyForOwner>1</bSpawnOnlyForOwner>
 			<iSpawnAtOnceLimit>3</iSpawnAtOnceLimit>
-			<iSpawnUnitChancePercentMod>-50</iSpawnUnitChancePercentMod>
+			<iSpawnUnitChancePercentMod>-75</iSpawnUnitChancePercentMod>
 			<bExplorable>1</bExplorable>
 			<iLairTier>1</iLairTier>
 			<bWater>1</bWater>
@@ -983,7 +984,7 @@
 			<SpawnUnitCiv>CIVILIZATION_DEMON</SpawnUnitCiv>
 			<bSpawnOnlyForOwner>1</bSpawnOnlyForOwner>
 			<iSpawnAtOnceLimit>3</iSpawnAtOnceLimit>
-			<iSpawnUnitChancePercentMod>-50</iSpawnUnitChancePercentMod>
+			<iSpawnUnitChancePercentMod>-75</iSpawnUnitChancePercentMod>
 			<bExplorable>1</bExplorable>
 			<iLairTier>2</iLairTier>
 			<bWater>1</bWater>
@@ -1944,5 +1945,19 @@
 				</TechYieldChange>
 			</TechYieldChanges>
 		</ImprovementInfo>	
+		<ImprovementInfo><!-- Fishing Boats Grigori -->
+			<Type>IMPROVEMENT_FISHING_BOATS_GRIGORI</Type>
+			<ImprovementClass>IMPROVEMENTCLASS_FISHING_BOATS</ImprovementClass>
+			<TerrainMakesValids>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_COAST</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_BLIGHTED_COAST</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+			</TerrainMakesValids>
+		</ImprovementInfo>
 	</ImprovementInfos>
 </Civ4ImprovementInfos>
