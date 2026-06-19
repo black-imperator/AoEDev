@@ -16,7 +16,7 @@
 		</ImprovementInfo>
 		<ImprovementInfo>		<!-- Badb's Blizzard -->
 			<Type>IMPROVEMENT_BADBS_BLIZZARD</Type>
-			<PythonOnMove>onMoveSearchableUF(pCaster, pPlot)</PythonOnMove>
+			<PythonOnMove>onMoveBadbCastle(pCaster, pPlot)</PythonOnMove>
 		</ImprovementInfo>
 		<ImprovementInfo>		<!-- Bair of Lacuna -->
 			<Type>IMPROVEMENT_BAIR_OF_LACUNA</Type>

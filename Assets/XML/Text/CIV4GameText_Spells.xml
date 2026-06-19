@@ -1631,6 +1631,14 @@
 		<Spanish>[ICON_BULLET]Teleports the unit to his capital</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_ESCAPE_BLOCKED</Tag>
+		<English>[ICON_BULLET][COLOR_RED]Can only be cast once[COLOR_REVERT]</English>
+		<French>[ICON_BULLET][COLOR_RED]Can only be cast once[COLOR_REVERT]</French>
+		<German>[ICON_BULLET][COLOR_RED]Can only be cast once[COLOR_REVERT]</German>
+		<Italian>[ICON_BULLET][COLOR_RED]Can only be cast once[COLOR_REVERT]</Italian>
+		<Spanish>[ICON_BULLET][COLOR_RED]Can only be cast once[COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_SPELL_FAIR_WINDS</Tag>
 		<English>Fair Winds</English>
 		<French>Bons Vents</French>

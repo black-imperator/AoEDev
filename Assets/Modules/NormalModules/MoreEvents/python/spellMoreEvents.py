@@ -192,6 +192,14 @@ def onMoveSearchableUF(pCaster, pPlot):
 		doTreasureHunterNewSearch(iPlayer, pPlayer, iImprovement)
 		return
 
+def onMoveBadbCastle(pCaster, pPlot):
+	iPlayer			= pCaster.getOwner()
+	pPlayer			= gc.getPlayer(iPlayer)
+	iImprovement	= pPlot.getImprovementType()
+	if pPlayer.isHasFlag(getInfoType('FLAG_TREASURE_HUNTER_BADBS_BLIZZARD')):
+		doTreasureHunterNewSearch(iPlayer, pPlayer, iImprovement)
+	CvSpellInterface.onMoveBlizzard(pCaster, pPlot)
+
 def onMoveBrokenSepulcher(pCaster, pPlot):
 	iPlayer			= pCaster.getOwner()
 	pPlayer			= gc.getPlayer(iPlayer)
@@ -283,6 +291,7 @@ def onMovePoolOfTears2(pCaster, pPlot):
 	git				= gc.getInfoTypeForString
 	iImprovement	= pPlot.getImprovementType()
 	lIllness		= [git("PROMOTION_DISEASED"),git("PROMOTION_PLAGUED"),git("PROMOTION_POISONED"),git("PROMOTION_WITHERED")]
+	iCaster			= pCaster.getID()
 	for iPromotion in lIllness:
 		if pCaster.isHasPromotion(iPromotion):
 			pCaster.setHasPromotion(iPromotion, False)

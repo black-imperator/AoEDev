@@ -47,10 +47,8 @@ def elvenRacialSelection(pCaster):
 def postCombatWonHamsterCommander(pCaster, pOpponent):
 	iHamsterCommander = getInfoType('PROMOTION_HAMSTER_COMMANDER')
 
-	if pCaster.isMadeAttack():
-		iOdds = getCombatOdds(pCaster, pOpponent)
-	else:
-		iOdds = getCombatOdds(pOpponent, pCaster)
+	iOdds = getCombatOdds(pCaster, pOpponent)
+
 	iOdds = iOdds / 100
 
 	iOdds = 2 - iOdds

@@ -45720,5 +45720,12 @@
 			<Button>Art/Interface/Buttons/Promotions/warbeastminion2.dds</Button>
 			<iMinLevel>-1</iMinLevel>
 		</PromotionInfo>
+		<PromotionInfo>		<!-- Teleport Block -->										
+			<Type>PROMOTION_ESCAPE_BLOCK</Type>
+			<Description>TXT_KEY_PROMOTION_ESCAPE_BLOCK</Description>
+			<bGraphicalOnly>1</bGraphicalOnly>
+			<Button>Art/Interface/Buttons/Promotions/Dimensional1.dds</Button>
+			<iMinLevel>-1</iMinLevel>
+		</PromotionInfo>
 	</PromotionInfos>
 </Civ4PromotionInfos>

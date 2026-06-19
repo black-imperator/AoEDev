@@ -1764,10 +1764,26 @@ def spellEntertain(caster):
 
 def reqEscape(caster):
 	pPlayer = gc.getPlayer(caster.getOwner())
-	if pPlayer.isHuman() == False:
-		if caster.getDamage() >= 50:
-			return False
+	if not caster.isHasPromotion(gc.getInfoTypeForString("PROMOTION_CHANNELING1")) and caster.isHasPromotion(gc.getInfoTypeForString("PROMOTION_ESCAPE_BLOCK")):
+		return False
+	if not pPlayer.isHuman():
+		if caster.getDamage() >= 50: return False
 	return True
+
+def getHelpEscape(argsList):
+	ePromotion, pCaster = argsList
+	iPlayer		= pCaster.getOwner()
+	pPlayer		= gc.getPlayer(iPlayer)
+	iCiv		= pPlayer.getCivilizationType()
+	szHelp = ""
+	if pCaster == -1 or pCaster.isNone():
+		return szHelp
+	elif pCaster.isHasPromotion(gc.getInfoTypeForString("PROMOTION_ESCAPE_BLOCK")):
+		szHelp = localText.getText("TXT_KEY_ESCAPE_BLOCKED", ())
+	elif not pCaster.isHasPromotion(gc.getInfoTypeForString("PROMOTION_CHANNELING1")) and iCiv != gc.getInfoTypeForString("CIVILIZATION_AMURITES"):
+		if pCaster.getSpecialUnitType() == gc.getInfoTypeForString("SPECIALUNIT_PEOPLE") or pCaster.getUnitCombatType() in (gc.getInfoTypeForString("UNITCOMBAT_BEAST"), gc.getInfoTypeForString("UNITCOMBAT_ANIMAL")):
+			szHelp = localText.getText("TXT_KEY_ESCAPE_BLOCKED", ())
+	return szHelp
 
 def reqFeast(caster):
 	pPlot = caster.plot()
@@ -2729,10 +2745,10 @@ def spellSlaveDrive(caster):
 	iPlayer = caster.getOwner()
 	pPlayer = gc.getPlayer(iPlayer)
 	iSlaveBuilding = getInfoType('BUILDING_SLAVE_PIT')
-
-	for iCity in range(pPlayer.getNumCities()):
-		pCity = pPlayer.getCity(iCity)
-		pCity.setNumRealBuilding(iSlaveBuilding, 1)
+	(pLoopCity, iter) = pPlayer.firstCity(False)
+	while(pLoopCity):
+		pLoopCity.setNumRealBuilding(iSlaveBuilding, 1)
+		(pLoopCity, iter) = pPlayer.nextCity(iter, False)
 
 def reqFoundWyvern(caster):
 	iPlayer = caster.getOwner()
@@ -3154,12 +3170,13 @@ def spellWarpath(caster):
 	pPlayer = gc.getPlayer(caster.getOwner())
 	pTeam = gc.getTeam(pPlayer.getTeam())
 
-	for iCity in range(pPlayer.getNumCities()):
-		pCity = pPlayer.getCity(iCity)
-		if pCity.getNumBuilding(getInfoType('BUILDING_COUNCIL_OF_THE_WARCHIEF')) == 1:
-			iLoop = (pCity.getPopulation() / 3) + 3
-			for i in range(iLoop):
-				iRnd = CyGame().getSorenRandNum(60, "Bob")
+	(pLoopCity, iter) = pPlayer.firstCity(False)
+	while(pLoopCity):
+		if pLoopCity.getNumBuilding(getInfoType('BUILDING_COUNCIL_OF_THE_WARCHIEF')) == 1:
+			(pLoopCity, iter) = pPlayer.nextCity(iter, False)
+			iLoop = (pLoopCity.getPopulation() / 3) + 3
+			for i in xrange(iLoop):
+				iRnd = CyGame().getSorenRandNum(60, "Warpath")
 				iUnit = -1
 				if iRnd <= 10:
 					iUnit = getInfoType('UNITCLASS_SCOUT')
@@ -3201,8 +3218,7 @@ def spellWarpath(caster):
 					infoCiv = gc.getCivilizationInfo(pPlayer.getCivilizationType())
 					iUnit = infoCiv.getCivilizationUnits(iUnit)
 					if iUnit != -1:
-						newUnit = pPlayer.initUnit(iUnit, pCity.getX(), pCity.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_NORTH)
-
+						newUnit = pPlayer.initUnit(iUnit, pLoopCity.getX(), pLoopCity.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_NORTH)
 
 def reqRecruitMercenary(caster):
 	pPlayer = gc.getPlayer(caster.getOwner())
@@ -3419,23 +3435,22 @@ def spellRevelry(caster):
 	iPlayer = caster.getOwner()
 	pPlayer = gc.getPlayer(iPlayer)
 	pPlayer.changeGoldenAgeTurns(CyGame().goldenAgeLength() * 2)
-	for iPlayer2 in range(gc.getMAX_PLAYERS()):
-		pPlayer2 = gc.getPlayer(iPlayer2)
-		if iPlayer2 != iPlayer and pPlayer2.isAlive():
-			for iCity in range(pPlayer2.getNumCities()):
-				pCity = pPlayer2.getCity(iCity)
-				pPlot = pCity.plot()
-				if pPlot is not None and not pPlot.isNone():
-					iCulture = 0
-					for iPlayer3 in xrange(gc.getMAX_PLAYERS()):
-						if iPlayer3 != iPlayer:
-							iCulture = iCulture + pPlot.getCulture(iPlayer3)
-							if iPlayer3 != pCity.getOwner() :
-								pPlot.setCulture(iPlayer3,0,True)
-						
-					pPlot.setCulture(iPlayer,iCulture,True)
-				
-				
+	for iLoopPlayer in range(gc.getMAX_PLAYERS()):
+		pLoopPlayer = gc.getPlayer(iLoopPlayer)
+		if iLoopPlayer == iPlayer:		continue
+		if not pLoopPlayer.isAlive():	continue
+		(pLoopCity, iter) = pPlayer.firstCity(False)
+		while(pLoopCity):
+			pPlot = pLoopCity.plot()
+			iCulture = 0
+			for iloopPlayer2 in xrange(gc.getMAX_PLAYERS()):
+				if iloopPlayer2 == iPlayer:		continue
+				iCulture += pPlot.getCulture(iPlayer3)
+				if iloopPlayer2 == iLoopPlayer:	continue
+				pPlot.setCulture(iloopPlayer2, 0, True)
+			pPlot.setCulture(iPlayer, iCulture, True)
+			(pLoopCity, iter) = pPlayer.nextCity(iter, False)
+
 def reqRevelation(caster):
 	pPlayer = gc.getPlayer(caster.getOwner())
 	iTeam = pPlayer.getTeam()
@@ -3512,26 +3527,23 @@ def spellRiverOfBlood(pCaster):
 	iPlayer = pCaster.getOwner()
 	pPlayer = gc.getPlayer(iPlayer)
 	iTeam   = pPlayer.getTeam()
+	(pLoopCity, iter) = pPlayer.firstCity(False)
+	while(pLoopCity):
+		pLoopCity.changePopulation(2)
+		CyInterface().addMessage(iLoopPlayer,True,25,CyTranslator().getText("TXT_KEY_MESSAGE_RIVER_OF_BLOOD_CALABIM", ()),'',1,'Art/Interface/Buttons/Spells/River of Blood.dds',ColorTypes(8),pCity.getX(),pCity.getY(),True,True)
+		(pLoopCity, iter) = pPlayer.nextCity(iter, False)
 	for iLoopPlayer in range(gc.getMAX_PLAYERS()):
-		pLoopPlayer = gc.getPlayer(iLoopPlayer)
-		if pLoopPlayer.isAlive():
-			iLoopTeam   = pLoopPlayer.getTeam()
-			iLoopCiv    = pLoopPlayer.getCivilizationType()
-			if iLoopPlayer == iPlayer: # if current player, pop+2
-				for iCity in range(pPlayer.getNumCities()):
-					pCity = pPlayer.getCity(iCity)
-					pCity.changePopulation(2)
-					CyInterface().addMessage(iLoopPlayer,True,25,CyTranslator().getText("TXT_KEY_MESSAGE_RIVER_OF_BLOOD_CALABIM", ()),'',1,'Art/Interface/Buttons/Spells/River of Blood.dds',ColorTypes(8),pCity.getX(),pCity.getY(),True,True)
-			elif (iLoopTeam != iTeam) and (iLoopCiv not in [Civ["Scions"],Civ["D'Tesh"],Civ["Infernal"]]): # if not immune (player's team or special civilization), lose 2 pop (lose 1 if pop is 2)
-				for iCity in range(pLoopPlayer.getNumCities()):
-					pCity = pLoopPlayer.getCity(iCity)
-					if pCity.getPopulation() > 1:
-						if pCity.getPopulation() > 2:
-							iLoss = -2
-						else:
-							iLoss = -1
-						pCity.changePopulation(iLoss)
-						CyInterface().addMessage(iLoopPlayer,True,25,CyTranslator().getText("TXT_KEY_MESSAGE_RIVER_OF_BLOOD", (iLoss, )),'',1,'Art/Interface/Buttons/Spells/River of Blood.dds',ColorTypes(7),pCity.getX(),pCity.getY(),True,True)
+		pLoopPlayer	= gc.getPlayer(iLoopPlayer)
+		if not pLoopPlayer.isAlive(): continue
+		iLoopTeam	= pLoopPlayer.getTeam()
+		iLoopCiv	= pLoopPlayer.getCivilizationType()
+		if (iLoopTeam != iTeam) and (iLoopCiv not in [Civ["Scions"],Civ["D'Tesh"],Civ["Infernal"]]): # if not immune (player's team or special civilization), lose 2 pop (lose 1 if pop is 2)
+			(pLoopCity, iter) = pLoopPlayer.firstCity(False)
+			while(pLoopCity):
+				iPopChange = max(1, (pLoopCity.getPopulation() - 2))
+				pLoopCity.setPopulation(iPopChange)
+				CyInterface().addMessage(iLoopPlayer,True,25,CyTranslator().getText("TXT_KEY_MESSAGE_RIVER_OF_BLOOD", (iLoss, )),'',1,'Art/Interface/Buttons/Spells/River of Blood.dds',ColorTypes(7),pCity.getX(),pCity.getY(),True,True)
+				(pLoopCity, iter) = pLoopPlayer.nextCity(iter, False)
 
 def reqRoar(caster):
 	pPlayer = gc.getPlayer(caster.getOwner())
@@ -4550,21 +4562,29 @@ def spellTaunt(caster):
 							pUnit.setHasPromotion(iEnraged, False)
 
 def spellTeleport(caster,loc):
-	player = caster.getOwner()
-	pPlayer = gc.getPlayer(player)
-	pCity = pPlayer.getCapitalCity()
+	player		= caster.getOwner()
+	pPlayer		= gc.getPlayer(player)
+	pCity		= pPlayer.getCapitalCity()
+	iCiv		= pPlayer.getCivilizationType()
+	bOneTime	= False
+	if not caster.isHasPromotion(gc.getInfoTypeForString("PROMOTION_CHANNELING1")) and iCiv != gc.getInfoTypeForString("CIVILIZATION_AMURITES"):
+		if caster.getSpecialUnitType() == gc.getInfoTypeForString("SPECIALUNIT_PEOPLE") or caster.getUnitCombatType() in (gc.getInfoTypeForString("UNITCOMBAT_BEAST"), gc.getInfoTypeForString("UNITCOMBAT_ANIMAL")):
+			bOneTime = True
 	if loc == 'Capital':
 		if pCity.isNone():
 			pPlot = caster.getSpawnPlot()
 			if caster.canMoveInto(pPlot, False, False, True):
 				caster.setXY(pPlot.getX(), pPlot.getY(), False, True, True,False)
+				if bOneTime: caster.setHasPromotion(gc.getInfoTypeForString("PROMOTION_ESCAPE_BLOCK"), True)
 		else:
 			if (caster.getDomainType()==getInfoType("DOMAIN_SEA")and not pCity.isCoastal(10)):
 				pNearestCity = gc.getMap().findCity(pCity.getX(), pCity.getY(), -1, pCity.getTeam(), False, True, -1, -1, pCity, True)
 				if (not pNearestCity.isNone()):
 					caster.setXY(pNearestCity.getX(),pNearestCity.getY(),False,True,True,False)
+					if bOneTime: caster.setHasPromotion(gc.getInfoTypeForString("PROMOTION_ESCAPE_BLOCK"), True)
 			else:
 				caster.setXY(pCity.getX(), pCity.getY(), False, True, True,False)
+				if bOneTime: caster.setHasPromotion(gc.getInfoTypeForString("PROMOTION_ESCAPE_BLOCK"), True)
 	if loc == 'Random':
 		pBestPlot	= -1
 		iBestPlot	= -1
@@ -7217,9 +7237,10 @@ def effectWanderingCurse(caster):
 		return
 	pPlot = caster.plot()
 	pPlot2 = findClearPlot(caster, caster.plot())
-	if pPlot2 != -1:
+	if pPlot2 != -1 and CyMap().calculatePathDistance(pPlot, pPlot2) != -1:
 		caster.setXY(pPlot2.getX(), pPlot2.getY(), False, True, True,True)
-		CyInterface().addMessage(caster.getOwner(),True,25,CyTranslator().getText("TXT_KEY_MESSAGE_UNIT_WANDERING", ()),'AS2D_FEATUREGROWTH',1,'Art/Interface/Buttons/Promotions/Lost.dds',ColorTypes(7),pPlot.getX(),pPlot.getY(),True,True)
+		if  CyGame().getAIAutoPlay() == 0:
+			CyInterface().addMessage(caster.getOwner(),True,25,CyTranslator().getText("TXT_KEY_MESSAGE_UNIT_WANDERING", ()),'AS2D_FEATUREGROWTH',1,'Art/Interface/Buttons/Promotions/Lost.dds',ColorTypes(7),pPlot.getX(),pPlot.getY(),True,True)
 
 def effectFieldExercise(caster):
 	caster.changeExperienceTimes100(200/(caster.getLevel()*caster.getLevel()+1),-1,False,False,False)
@@ -13511,15 +13532,14 @@ def exploreSacellum(argsList):
 def reqArcaneFlare(argsList):
 	pUnit, pPlot		= argsList
 	iPlayer				= pUnit.getOwner()
-	for i in range (CyMap().numPlots()):
-		iPlot = CyMap().plotByIndex(i)
-		if iPlot.getBonusType(-1) != -1 and iPlot.getOwner() == iPlayer:
-			if gc.getBonusInfo(iPlot.getBonusType(-1)).getBonusClassType() == getInfoType('BONUSCLASS_MANA'):
-				if iPlot.getImprovementType() == -1:
-					return True
-				else:
-					if gc.getImprovementInfo(iPlot.getImprovementType()).isUnique() == False:
-						return True
+	for iLoopPlot in range (CyMap().numPlots()):
+		pLoopPlot = CyMap().plotByIndex(iLoopPlot)
+		if pLoopPlot.getBonusType(-1) == -1:	continue
+		if pLoopPlot.getOwner() != iPlayer:		continue
+		if gc.getBonusInfo(pLoopPlot.getBonusType(-1)).getBonusClassType() != gc.getInfoTypeForString('BONUSCLASS_MANA'): continue
+		if pLoopPlot.getImprovementType() != -1:
+			if gc.getImprovementInfo(pLoopPlot.getImprovementType()).isUnique():	continue
+		return True
 	return False
 
 def exploreArcaneFlare(argsList):
@@ -13527,22 +13547,26 @@ def exploreArcaneFlare(argsList):
 	iPlayer				= pUnit.getOwner()
 	iRnd				= CyGame().getSorenRandNum(3, "Arcane Flare, Extra Dispel")
 	NodesDispeled		= 1 + iRnd
-	for i in range (CyMap().numPlots()):
-		iPlot = CyMap().plotByIndex(i)
-		if iPlot.getBonusType(-1) != -1 and iPlot.getOwner() == iPlayer:
-			if gc.getBonusInfo(iPlot.getBonusType(-1)).getBonusClassType() == getInfoType('BONUSCLASS_MANA'):
-				if iPlot.getImprovementType() == -1:
-					iPlot.setBonusType(getInfoType('BONUS_MANA'))
-					NodesDispeled += -1
-					if NodesDispeled == 0:
-						break
-				else:
-					if gc.getImprovementInfo(iPlot.getImprovementType()).isUnique() == False:
-						iPlot.setBonusType(getInfoType('BONUS_MANA'))
-						iPlot.setImprovementType(-1)
-						NodesDispeled += -1
-						if NodesDispeled == 0:
-							break
+	for iLoopPlot in range (CyMap().numPlots()):
+		pLoopPlot = CyMap().plotByIndex(iLoopPlot)
+		if pLoopPlot.getBonusType(-1) == -1:										continue 
+		if pLoopPlot.getOwner() != iPlayer:											continue
+		if gc.getBonusInfo(pLoopPlot.getBonusType(-1)).getBonusClassType() != gc.getInfoTypeForString('BONUSCLASS_MANA'): continue
+
+		if pLoopPlot.getImprovementType() != -1:
+			if gc.getImprovementInfo(pLoopPlot.getImprovementType()).isUnique():	continue
+			else: pLoopPlot.setImprovementType(-1)
+
+		szText		= CyTranslator().getText("TXT_KEY_GOODY_FLARE_OF_ARCANE_ENERGY",())
+		szArt		= gc.getBonusInfo(pLoopPlot.getBonusType(-1)).getButton()
+		iRed		= gc.getInfoTypeForString("COLOR_RED")
+		szSound		= 'AS2D_DISCOVERBONUS'
+		iMessage	= InterfaceMessageTypes.MESSAGE_TYPE_MAJOR_EVENT
+		CyInterface().addMessage(iPlayer, True, 25, szText, szSound, iMessage, szArt, iRed, pLoopPlot.getX(), pLoopPlot.getY(), True, True)
+
+		pLoopPlot.setBonusType(getInfoType('BONUS_MANA'))
+		NodesDispeled += -1
+		if NodesDispeled == 0: break
 
 # GOODY_TRADE_SHIP
 def exploreTradeShip(argsList):

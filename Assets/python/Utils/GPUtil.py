@@ -98,30 +98,30 @@ def findNextCity():
 	iThreshold = pPlayer.greatPeopleThreshold(False)
 	pBestCity = None
 
-	for iCity in range(pPlayer.getNumCities()):
-		pCity = pPlayer.getCity(iCity)
-		if (pCity):
-			iRate = pCity.getGreatPeopleRate()
-			if (iRate > 0):
-				iProgress = pCity.getGreatPeopleProgress()
-				iTurns = (iThreshold - iProgress + iRate - 1) / iRate
-				if (iTurns < iMinTurns):
-					iMinTurns = iTurns
-					pBestCity = pCity
+
+	(pLoopCity, iter) = pPlayer.firstCity(False)
+	while(pLoopCity):
+		iRate = pLoopCity.getGreatPeopleRate()
+		if (iRate > 0):
+			iProgress = pLoopCity.getGreatPeopleProgress()
+			iTurns = (iThreshold - iProgress + iRate - 1) / iRate
+			if (iTurns < iMinTurns):
+				iMinTurns = iTurns
+				pBestCity = pLoopCity
+		(pLoopCity, iter) = pPlayer.nextCity(iter, False)
 	return (pBestCity, iMinTurns)
 
 def findMaxCity():
 	iMaxProgress = 0
 	pPlayer = gc.getPlayer(gc.getGame().getActivePlayer())
 	pBestCity = None
-
-	for iCity in range(pPlayer.getNumCities()):
-		pCity = pPlayer.getCity(iCity)
-		if (pCity):
-			iProgress = pCity.getGreatPeopleProgress()
-			if (iProgress > iMaxProgress):
-				iMaxProgress = iProgress
-				pBestCity = pCity
+	(pLoopCity, iter) = pPlayer.firstCity(False)
+	while(pLoopCity):
+		iProgress = pLoopCity.getGreatPeopleProgress()
+		if (iProgress > iMaxProgress):
+			iMaxProgress = iProgress
+			pBestCity = pLoopCity
+		(pLoopCity, iter) = pPlayer.nextCity(iter, False)
 	return (pBestCity, iMaxProgress)
 
 def getCityTurns(pCity):

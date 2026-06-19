@@ -1636,4 +1636,12 @@
 		<Italian>Change %s1_commerce Rate by 10% (5% with Shift)</Italian>
 		<Spanish>Change %s1_commerce Rate by 10% (5% with Shift)</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_OTHER_TRAIT_CLASSES</Tag>
+		<English>Other Traits</English>
+		<French>Other Traits</French>
+		<German>Other Traits</German>
+		<Italian>Other Traits</Italian>
+		<Spanish>Other Traits</Spanish>
+	</TEXT>
 </Civ4GameText>

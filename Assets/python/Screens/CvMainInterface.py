@@ -1055,6 +1055,8 @@ class CvMainInterface:
 			szName = "ScoreText" + str(i)
 			screen.setText( szName, "Background", u"", CvUtil.FONT_RIGHT_JUSTIFY, 996, 622, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_CONTACT_CIV, i, -1 )
 			screen.hide( szName )
+		screen.setText( "ActivePlayerScore", "Background", u"", CvUtil.FONT_RIGHT_JUSTIFY, 996, 622, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+		screen.hide( "ActivePlayerScore" )
 
 		# This should be a forced redraw screen
 		screen.setForcedRedraw( True )
@@ -2574,10 +2576,6 @@ class CvMainInterface:
 					if CyInterface().isCitySelected(loopCity):
 						iSelectedCount+=1
 					(loopCity,iter)=pPlayer.nextCity(iter,False)
-		#		for iCity in xrange (pPlayer.getNumCities()):
-		#			pCity = pPlayer.getCity(iCity)
-		#			if CyInterface().isCitySelected(pCity):
-		#				iSelectedCount += 1
 				if iSelectedCount == 1:
 					for i in xrange ( gc.getNumSpellInfos() ):
 
@@ -4864,6 +4862,7 @@ class CvMainInterface:
 		screen.hide( "DisableSpellcastingTag" )
 		for i in xrange( gc.getMAX_PLAYERS() ):
 			screen.hide( "ScoreText" + str(i) )
+		screen.hide( "ActivePlayerScore" )
 		if CyGame().getWBMapScript():
 			screen.hide( "GoalTag" )
 
@@ -5058,7 +5057,11 @@ class CvMainInterface:
 			if CyInterface().determineWidth(szPlayerString) > iWidth:
 				iWidth = CyInterface().determineWidth(szPlayerString)
 
-			screen.setText( szName, "Background", szPlayerString, CvUtil.FONT_RIGHT_JUSTIFY, iX, iY - (iRow * iBtnHeight), -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_CONTACT_CIV, iPlayer, -1 )
+			if iPlayer != iActivePlayer:
+				screen.setText( szName, "Background", szPlayerString, CvUtil.FONT_RIGHT_JUSTIFY, iX, iY - (iRow * iBtnHeight), -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_CONTACT_CIV, iPlayer, -1 )
+			else:
+				szName = "ActivePlayerScore"
+				screen.setText( szName, "Background", szPlayerString, CvUtil.FONT_RIGHT_JUSTIFY, iX, iY - (iRow * iBtnHeight), -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_CONTACT_CIV, iPlayer, -1 )
 			screen.show( szName )
 			iRow += 1
 
@@ -5790,7 +5793,7 @@ class CvMainInterface:
 			self.updateInfoPaneStrings()
 			return 1
 
-		if(inputClass.getNotifyCode() == NotifyCode.NOTIFY_CLICKED and inputClass.getFunctionName() == "ScoreToggle"):
+		if(inputClass.getNotifyCode() == NotifyCode.NOTIFY_CLICKED and inputClass.getFunctionName() in ("ScoreToggle", "ActivePlayerScore")):
 			iScoreState += 1
 			if iScoreState > 2:
 				iScoreState = 0

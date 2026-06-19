@@ -1192,6 +1192,7 @@
 			<Description>TXT_KEY_SPELL_ESCAPE</Description>
 			<Civilopedia>TXT_KEY_SPELL_ESCAPE_PEDIA</Civilopedia>
 			<Help>TXT_KEY_SPELL_ESCAPE_HELP</Help>
+			<PyHelp>getHelpEscape</PyHelp>
 			<SpellClasses>
 				<SpellClass>
 					<SpellClassType>SPELLCLASS_DIMENSIONAL</SpellClassType>
@@ -4281,6 +4282,7 @@
 			<Description>TXT_KEY_SPELL_HUNTERS_PRIZE</Description>
 			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
 			<Help>TXT_KEY_SPELL_ESCAPE_HELP</Help>
+			<PyHelp>getHelpEscape</PyHelp>
 			<PromotionPrereq1>PROMOTION_TAME</PromotionPrereq1>
 			<bAllowAI>1</bAllowAI>
 			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>

@@ -1244,14 +1244,15 @@ class CvEventManager:
 			pPlot			= pUnit.plot()
 			if iButtonId == 1:
 				return
-			if iImprovement == git("IMPROVEMENT_BROKEN_SEPULCHER"):
-				pUnit.setHasPromotion(git('PROMOTION_GELA'), False)
-				for iCity in xrange(pPlayer.getNumCities()):
-					pCity = pPlayer.getCity(iCity)
+			if iImprovement == gc.getInfoTypeForString("IMPROVEMENT_BROKEN_SEPULCHER"):
+				pUnit.setHasPromotion(gc.getInfoTypeForString('PROMOTION_GELA'), False)
+				(pLoopCity, iter) = pPlayer.firstCity(False)
+				while(pLoopCity):
 					if CyGame().getSorenRandNum(100,"effect Gela, Broken Sepulcher") <= 60:
-						newUnit = pPlayer.initUnit(git('UNIT_MANES'), pCity.getX(), pCity.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-					if pCity.getPopulation() > 2:
-						pCity.changePopulation(-2)
+						newUnit = pPlayer.initUnit(gc.getInfoTypeForString('UNIT_MANES'), pLoopCity.getX(), pLoopCity.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+					iPopChange = max(1, (pLoopCity.getPopulation() - 2))
+					pLoopCity.setPopulation(iPopChange)
+					(pLoopCity, iter) = pPlayer.nextCity(iter, False)
 				CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_MESSAGE_GELA_BROKEN",()),'AS2D_FEATUREGROWTH',3,'Art/Interface/Buttons/Improvements/brokensepulcher.dds',ColorTypes(7),pUnit.getX(),pUnit.getY(),True,True)
 			elif iImprovement == git("IMPROVEMENT_MIRROR_OF_HEAVEN"):
 				pUnit.setHasPromotion(git('PROMOTION_GELA'), False)
@@ -1288,18 +1289,22 @@ class CvEventManager:
 				iRnd = CyGame().getSorenRandNum(100, "effect Gela, Pool of Tears, Plague") <= 20
 				if iRnd <= 20 or (pPlayer.getStateReligion() != git('RELIGION_FELLOWSHIP_OF_LEAVES') and iRnd <= 50):
 					CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_MESSAGE_TEARS_GELA_PLAGUE",()),'AS2D_FEATUREGROWTH',3,'Art/Interface/Buttons/Improvements/pooloftears.dds',ColorTypes(8),pUnit.getX(),pUnit.getY(),True,True)
-					for iPlayer2 in range(gc.getMAX_PLAYERS()):
-						pPlayer2 = gc.getPlayer(iPlayer2)
-						if pPlayer2.getCivilizationType() != git('CIVILIZATION_INFERNAL'):
-							for iCity in xrange(pPlayer2.getNumCities()):
-								pCity = pPlayer.getCity(iCity)
-								i = CyGame().getSorenRandNum(5, "Blight")
-								i += pCity.getPopulation() - 2
-								i -= pCity.totalGoodBuildingHealth()
-								pCity.changeEspionageHealthCounter(i)
-							for iUnit in xrange(pPlayer2.getNumUnits()):
-								pUnit2 = pPlayer.getUnit(iUnit)
-								pUnit2.doDamageNoCaster(40, 100, git('DAMAGE_DEATH'), False)
+					for iLoopPlayer in range(gc.getMAX_PLAYERS()):
+						pLoopPlayer = gc.getPlayer(iLoopPlayer)
+						if pLoopPlayer.getCivilizationType() != git('CIVILIZATION_INFERNAL'):
+							(pLoopCity, iter) = pLoopPlayer.firstCity(False)
+							while(pLoopCity):
+								iBlight = CyGame().getSorenRandNum(5, "Gela - PoT, City")
+								iBlight += pLoopCity.getPopulation() - 2
+								iBlight -= pLoopCity.totalGoodBuildingHealth()
+								pLoopCity.changeEspionageHealthCounter(iBlight)
+								(pLoopCity, iter) = pLoopPlayer.nextCity(iter, False)
+							for iUnit in xrange(pLoopPlayer.getNumUnits()):
+								pLoopUnit	= pLoopPlayer.getUnit(iUnit)
+								if not pLoopUnit.isAlive(): continue
+								iDeathCap	= CyGame().getSorenRandNum(2, "Gela - PoT, Unit") + 99
+								iDamage		= CyGame().getSorenRandNum(20, "Gela - PoT, Unit 2") + 20
+								pLoopUnit.doDamageNoCaster(iDamage, iDeathCap, git('DAMAGE_DEATH'), False)
 			elif iImprovement == git("IMPROVEMENT_PYRE_OF_THE_SERAPHIC"):
 				pUnit.setHasPromotion(git('PROMOTION_GELA'), False)
 				pPlot.setImprovementType(-1)

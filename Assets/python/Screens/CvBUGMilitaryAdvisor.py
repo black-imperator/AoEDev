@@ -774,11 +774,12 @@ class CvMilitaryAdvisor:
 		for i in range (gc.getNumUnitClassInfos()):
 			iUnit = civInfo.getCivilizationUnits(i)
 			if gc.getUnitInfo(iUnit).getUnitCombatType() > 0: # ie, not settler, worker, missionary, etc
-				for c in range(pPlayer.getNumCities()):
-					pCity = pPlayer.getCity(c)
-					if pCity and not pCity.isNone() and pCity.canTrain(iUnit, False, False):
+				(pLoopCity, iter) = pPlayer.firstCity(False)
+				while(pLoopCity):
+					if pLoopCity.canTrain(iUnit, False, False):
 						iUnits.add(iUnit)
 						break
+					(pLoopCity, iter) = pPlayer.nextCity(iter, False)
 
 		return iUnits
 

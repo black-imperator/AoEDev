@@ -239,7 +239,7 @@ class CvPediaImprovement:
 					szButton = gc.getTechInfo(iTech).getButton()
 					szDicountText = "DISCOUNT: %d" % (iDiscount) + u"%c" % (gc.getYieldInfo(YieldTypes.YIELD_PRODUCTION).getChar())
 					screen.setLabel(self.top.getNextWidgetName(), "Background", u"<font=4>" + szDicountText + u"</font>", CvUtil.FONT_LEFT_JUSTIFY, self.X_COST, Y_DISCOUNT, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
-					screen.addDDSGFC(self.top.getNextWidgetName(), szButton, self.X_COST + 190, Y_DISCOUNT + 5, 22, 22, WidgetTypes.WIDGET_PEDIA_JUMP_TO_TECH, i, -1 )
+					screen.addDDSGFC(self.top.getNextWidgetName(), szButton, self.X_COST + 190, Y_DISCOUNT + 5, 22, 22, WidgetTypes.WIDGET_PEDIA_JUMP_TO_TECH, iTech, -1 )
 
 		# Bonus animation
 		screen.addImprovementGraphicGFC(self.top.getNextWidgetName(), self.iImprovement, self.X_IMPROVEMENT_ANIMATION, self.Y_IMPROVEMENT_ANIMATION, self.W_IMPROVEMENT_ANIMATION, self.H_IMPROVEMENT_ANIMATION, WidgetTypes.WIDGET_GENERAL, -1, -1, self.X_ROTATION_IMPROVEMENT_ANIMATION, self.Z_ROTATION_IMPROVEMENT_ANIMATION, self.SCALE_ANIMATION, True)
