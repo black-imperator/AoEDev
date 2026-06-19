@@ -24,7 +24,7 @@ def reqWelcomeGuest(caster):
 		iMax += 1
 	if pCity.getNumBuilding(git('BUILDING_FAIRY_CANDY_SHOP')) == 1:
 		iMax += 2
-	iCount = pCity.getFreeSpecialistCount(git('SPECIALIST_SLAVE'))
+	iCount = pCity.getFreeSpecialistClassCount(git('SPECIALISTCLASS_SLAVE'))
 	if iCount >= iMax:
 		return False
 	else:
