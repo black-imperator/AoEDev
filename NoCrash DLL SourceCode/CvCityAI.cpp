@@ -6123,12 +6123,12 @@ int CvCityAI::AI_projectValue(ProjectTypes eProject)
 
 	if (GC.getProjectInfo(eProject).getHideUnits() > 0 && !GET_PLAYER(getOwner()).isHideUnits())
 	{
-		iValue += GET_TEAM(getTeam()).getAtWarCount(true) * GC.getProjectInfo(eProject).getHideUnits() /  std::max(1, GET_TEAM((TeamTypes)iI).getHideUnits());
+		iValue += GET_TEAM(getTeam()).getAtWarCount(true) * GC.getProjectInfo(eProject).getHideUnits() /  std::max(1, GET_TEAM(getTeam()).getHideUnits());
 	}
 
 	if (GC.getProjectInfo(eProject).getSeeInvisible() > 0 && !GET_PLAYER(getOwner()).isSeeInvisible())
 	{
-		iValue += GET_TEAM(getTeam()).getAtWarCount(true) * GC.getProjectInfo(eProject).getSeeInvisible() /  std::max(1, GET_TEAM((TeamTypes)iI).getSeeInvisible());
+		iValue += GET_TEAM(getTeam()).getAtWarCount(true) * GC.getProjectInfo(eProject).getSeeInvisible() /  std::max(1, GET_TEAM(getTeam()).getSeeInvisible());
 	}
 
 	if ((((GC.getProjectInfo(eProject).getSeeInvisible() > 0) && !GET_PLAYER(getOwner()).isSeeInvisible()) || ((GC.getProjectInfo(eProject).getHideUnits() > 0) && !GET_PLAYER(getOwner()).isHideUnits())) && ((GET_TEAM(getTeam()).getAnyWarPlanCount(true) > 0) || (area()->getAreaAIType(getTeam()) == AREAAI_DEFENSIVE) || (area()->getAreaAIType(getTeam()) == AREAAI_OFFENSIVE) || (area()->getAreaAIType(getTeam()) == AREAAI_MASSING) ||(area()->getAreaAIType(getTeam()) == AREAAI_ASSAULT) || GET_TEAM(getTeam()).AI_isWarPossible()))

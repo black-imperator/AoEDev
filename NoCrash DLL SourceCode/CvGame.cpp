@@ -6212,7 +6212,7 @@ void CvGame::makeSpecialBuildingValid(SpecialBuildingTypes eIndex, bool bAnnounc
 			{
 				if (GET_PLAYER((PlayerTypes)iI).isAlive())
 				{
-					gDLL->getInterfaceIFace()->addMessage(((PlayerTypes)iI), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_PROJECT_COMPLETED", MESSAGE_TYPE_MAJOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"));
+					GC.getGame().addMessage(((PlayerTypes)iI), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_PROJECT_COMPLETED", MESSAGE_TYPE_MAJOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"));
 				}
 			}
 		}
@@ -6381,12 +6381,12 @@ void CvGame::setHolyCity(ReligionTypes eIndex, CvCity* pNewValue, bool bAnnounce
 							)
 							{
 								szBuffer = gDLL->getText("TXT_KEY_MISC_REL_FOUNDED", GC.getReligionInfo(eIndex).getTextKeyWide(), pHolyCity->getNameKey());
-								gDLL->getInterfaceIFace()->addMessage(((PlayerTypes)iI), false, GC.getDefineINT("EVENT_MESSAGE_TIME_LONG"), szBuffer, GC.getReligionInfo(eIndex).getSound(), MESSAGE_TYPE_MAJOR_EVENT, GC.getReligionInfo(eIndex).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), pHolyCity->getX_INLINE(), pHolyCity->getY_INLINE());
+								GC.getGame().addMessage(((PlayerTypes)iI), false, GC.getDefineINT("EVENT_MESSAGE_TIME_LONG"), szBuffer, GC.getReligionInfo(eIndex).getSound(), MESSAGE_TYPE_MAJOR_EVENT, GC.getReligionInfo(eIndex).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), pHolyCity->getX_INLINE(), pHolyCity->getY_INLINE());
 							}
 							else
 							{
 								szBuffer = gDLL->getText("TXT_KEY_MISC_REL_FOUNDED_UNKNOWN", GC.getReligionInfo(eIndex).getTextKeyWide());
-								gDLL->getInterfaceIFace()->addMessage(((PlayerTypes)iI), false, GC.getDefineINT("EVENT_MESSAGE_TIME_LONG"), szBuffer, GC.getReligionInfo(eIndex).getSound(), MESSAGE_TYPE_MAJOR_EVENT, GC.getReligionInfo(eIndex).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"));
+								GC.getGame().addMessage(((PlayerTypes)iI), false, GC.getDefineINT("EVENT_MESSAGE_TIME_LONG"), szBuffer, GC.getReligionInfo(eIndex).getSound(), MESSAGE_TYPE_MAJOR_EVENT, GC.getReligionInfo(eIndex).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"));
 							}
 						}
 					}
@@ -6484,12 +6484,12 @@ void CvGame::setHeadquarters(CorporationTypes eIndex, CvCity* pNewValue, bool bA
 						{
 							if (pHeadquarters->isRevealed(GET_PLAYER((PlayerTypes)iI).getTeam(), false))
 							{
-								gDLL->getInterfaceIFace()->addMessage(((PlayerTypes)iI), false, GC.getDefineINT("EVENT_MESSAGE_TIME_LONG"), szBuffer, GC.getCorporationInfo(eIndex).getSound(), MESSAGE_TYPE_MAJOR_EVENT, GC.getCorporationInfo(eIndex).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), pHeadquarters->getX_INLINE(), pHeadquarters->getY_INLINE());
+								GC.getGame().addMessage(((PlayerTypes)iI), false, GC.getDefineINT("EVENT_MESSAGE_TIME_LONG"), szBuffer, GC.getCorporationInfo(eIndex).getSound(), MESSAGE_TYPE_MAJOR_EVENT, GC.getCorporationInfo(eIndex).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), pHeadquarters->getX_INLINE(), pHeadquarters->getY_INLINE());
 							}
 							else
 							{
 								CvWString szBuffer2 = gDLL->getText("TXT_KEY_MISC_CORPORATION_FOUNDED_UNKNOWN", GC.getCorporationInfo(eIndex).getTextKeyWide());
-								gDLL->getInterfaceIFace()->addMessage(((PlayerTypes)iI), false, GC.getDefineINT("EVENT_MESSAGE_TIME_LONG"), szBuffer2, GC.getCorporationInfo(eIndex).getSound(), MESSAGE_TYPE_MAJOR_EVENT, GC.getCorporationInfo(eIndex).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"));
+								GC.getGame().addMessage(((PlayerTypes)iI), false, GC.getDefineINT("EVENT_MESSAGE_TIME_LONG"), szBuffer2, GC.getCorporationInfo(eIndex).getSound(), MESSAGE_TYPE_MAJOR_EVENT, GC.getCorporationInfo(eIndex).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"));
 							}
 						}
 					}
@@ -7003,7 +7003,7 @@ void CvGame::doGlobalWarming()
 						if (pPlot->isVisible(pCity->getTeam(), false))
 						{
 							CvWString szBuffer = gDLL->getText("TXT_KEY_MISC_GLOBAL_WARMING_NEAR_CITY", pCity->getNameKey());
-							gDLL->getInterfaceIFace()->addMessage(pCity->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_GLOBALWARMING", MESSAGE_TYPE_INFO, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_NEGATIVE_TEXT"), pPlot->getX_INLINE(), pPlot->getY_INLINE(), true, true);
+							GC.getGame().addMessage(pCity->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_GLOBALWARMING", MESSAGE_TYPE_INFO, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_NEGATIVE_TEXT"), pPlot->getX_INLINE(), pPlot->getY_INLINE(), true, true);
 						}
 					}
 				}
@@ -9668,7 +9668,7 @@ void CvGame::setVoteSourceReligion(VoteSourceTypes eVoteSource, ReligionTypes eR
 			{
 				if (GET_PLAYER((PlayerTypes)iI).isAlive())
 				{
-					gDLL->getInterfaceIFace()->addMessage(((PlayerTypes)iI), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, GC.getReligionInfo(eReligion).getSound(), MESSAGE_TYPE_MAJOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"));
+					GC.getGame().addMessage(((PlayerTypes)iI), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, GC.getReligionInfo(eReligion).getSound(), MESSAGE_TYPE_MAJOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"));
 				}
 			}
 		}
@@ -10068,7 +10068,7 @@ void CvGame::doVoteResults()
 				{
 					CvWString szMessage;
 					szMessage.Format(L"%s: %s", gDLL->getText("TXT_KEY_ELECTION_CANCELLED").GetCString(), GC.getVoteInfo(eVote).getDescription());
-					gDLL->getInterfaceIFace()->addMessage((PlayerTypes)iPlayer, false, GC.getEVENT_MESSAGE_TIME(), szMessage, "AS2D_NEW_ERA", MESSAGE_TYPE_INFO, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"));
+					GC.getGame().addMessage((PlayerTypes)iPlayer, false, GC.getEVENT_MESSAGE_TIME(), szMessage, "AS2D_NEW_ERA", MESSAGE_TYPE_INFO, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"));
 				}
 			}
 		}
@@ -10254,7 +10254,7 @@ void CvGame::doVoteResults()
 					if (bShow && bPassed)
 					{
 						CvWString szMessage = gDLL->getText("TXT_KEY_VOTE_RESULTS", GC.getVoteSourceInfo(eVoteSource).getTextKeyWide(), pVoteTriggered->kVoteOption.szText.GetCString());
-						gDLL->getInterfaceIFace()->addMessage(((PlayerTypes)iI), false, GC.getEVENT_MESSAGE_TIME(), szMessage, "AS2D_NEW_ERA", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"));
+						GC.getGame().addMessage(((PlayerTypes)iI), false, GC.getEVENT_MESSAGE_TIME(), szMessage, "AS2D_NEW_ERA", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"));
 					}
 
 				}
@@ -11824,7 +11824,7 @@ void CvGame::createSpawnGroup(SpawnGroupTypes eSpawnGroup, CvPlot* pPlot, Player
 				else
 					szBuffer = gDLL->getText("TXT_KEY_SPAWNGROUP_SPAWN_GROUP", pCommanderUnit->getName().GetCString());
 			}
-			gDLL->getInterfaceIFace()->addMessage(ePlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer,  "AS2D_UNITGIFTED", MESSAGE_TYPE_INFO,
+			GC.getGame().addMessage(ePlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer,  "AS2D_UNITGIFTED", MESSAGE_TYPE_INFO,
 				pCommanderUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_YELLOW"), pPlot->getX_INLINE(), pPlot->getY_INLINE(), true, true);
 
 			if (GC.getSpawnGroupInfo(eSpawnGroup).getNumCommanderPromotions() > 0)
@@ -11885,7 +11885,7 @@ void CvGame::createSpawnGroup(SpawnGroupTypes eSpawnGroup, CvPlot* pPlot, Player
 				else if (ePlayer != DEMON_PLAYER && ePlayer != ANIMAL_PLAYER && ePlayer != ORC_PLAYER)
 				{
 					szBuffer = gDLL->getText("TXT_KEY_SPAWNGROUP_SPAWN_UNIT", pUnit->getName().GetCString());
-					gDLL->getInterfaceIFace()->addMessage(ePlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer,  "AS2D_UNITGIFTED", MESSAGE_TYPE_INFO,
+					GC.getGame().addMessage(ePlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer,  "AS2D_UNITGIFTED", MESSAGE_TYPE_INFO,
 						pUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_YELLOW"), pPlot->getX_INLINE(), pPlot->getY_INLINE(), iK==0, iK==0);
 				}
 			}
@@ -12142,5 +12142,18 @@ void CvGame::setTriggeredGoody(GoodyTypes eIndex, bool bValue)
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumGoodyInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
 	m_pabTriggeredGoodies[eIndex] = bValue;
+}
+void CvGame::addMessage(PlayerTypes ePlayer, bool bForce, int iLength, CvWString szString, LPCTSTR pszSound,
+	InterfaceMessageTypes eType, LPCSTR pszIcon, ColorTypes eFlashColor,
+	int iFlashX, int iFlashY, bool bShowOffScreenArrows, bool bShowOnScreenArrows)
+{
+	if (getAIAutoPlay()>0)
+	{
+		return;
+	}
+	else
+	{
+		gDLL->getInterfaceIFace()->addMessage(ePlayer, bForce, iLength, szString, pszSound, eType, pszIcon, eFlashColor, iFlashX, iFlashY, bShowOffScreenArrows, bShowOnScreenArrows);
+	}
 }
 

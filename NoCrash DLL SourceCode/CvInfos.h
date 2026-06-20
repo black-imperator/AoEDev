@@ -9388,6 +9388,7 @@ public:
 	bool isOverflowProduction() const;
 	bool isFoodUnitProduction() const;
 	bool isFoodBuildingProduction() const;
+	bool isFoodProjectProduction() const;
 /*************************************************************************************************/
 /**	Multiple Production							END												**/
 /*************************************************************************************************/
@@ -9592,6 +9593,7 @@ protected:
 	bool m_bOverflowProduction;
 	bool m_bFoodUnitProduction;
 	bool m_bFoodBuildingProduction;
+	bool m_bFoodProjectProduction;
 /*************************************************************************************************/
 /**	Multiple Production							END												**/
 /*************************************************************************************************/

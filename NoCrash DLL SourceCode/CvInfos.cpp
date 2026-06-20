@@ -41574,6 +41574,7 @@ m_iPillageInfluenceModifier(100),
 m_bOverflowProduction(false),
 m_bFoodUnitProduction(false),
 m_bFoodBuildingProduction(false),
+m_bFoodProjectProduction(false),
 /*************************************************************************************************/
 /**	Multiple Production							END												**/
 /*************************************************************************************************/
@@ -42019,6 +42020,10 @@ bool CvTraitInfo::isFoodBuildingProduction() const
 {
 	return m_bFoodBuildingProduction;
 }
+bool CvTraitInfo::isFoodProjectProduction() const
+{
+	return m_bFoodProjectProduction;
+}
 /*************************************************************************************************/
 /**	Multiple Production							END												**/
 /*************************************************************************************************/
@@ -42431,6 +42436,7 @@ bool CvTraitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bOverflowProduction, "bOverflowProduction");
 	pXML->GetChildXmlValByName(&m_bFoodUnitProduction, "bFoodUnitProduction");
 	pXML->GetChildXmlValByName(&m_bFoodBuildingProduction, "bFoodBuildingProduction");
+	pXML->GetChildXmlValByName(&m_bFoodProjectProduction, "bFoodProjectProduction");
 /*************************************************************************************************/
 /**	Multiple Production							END												**/
 /*************************************************************************************************/
@@ -42972,6 +42978,7 @@ void CvTraitInfo::copyNonDefaults(CvTraitInfo* pClassInfo, CvXMLLoadUtility* pXM
 	/*************************************************************************************************/
 	if (isOverflowProduction() == false)		m_bOverflowProduction = pClassInfo->isOverflowProduction();
 	if (isFoodBuildingProduction() == false)		m_bFoodBuildingProduction = pClassInfo->isFoodBuildingProduction();
+	if (isFoodProjectProduction() == false)		m_bFoodProjectProduction = pClassInfo->isFoodProjectProduction();
 	if (isFoodUnitProduction() == false)		m_bFoodUnitProduction = pClassInfo->isFoodUnitProduction();
 	/*************************************************************************************************/
 	/**	Multiple Production							END												**/

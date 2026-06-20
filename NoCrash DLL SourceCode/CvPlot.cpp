@@ -720,7 +720,7 @@ void CvPlot::doTurn()
 							if (GET_TEAM(pCity->getTeam()).isHasTech((TechTypes)(GC.getBonusInfo(getBonusType()).getTechReveal())))
 							{
 								szBuffer = gDLL->getText("TXT_KEY_MISC_LOST_WINTER_RESOURCE", GC.getBonusInfo(getBonusType()).getTextKeyWide(), pCity->getNameKey());
-								gDLL->getInterfaceIFace()->addMessage(pCity->getOwner(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DISCOVERBONUS", MESSAGE_TYPE_MINOR_EVENT, GC.getBonusInfo(getBonusType()).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
+								GC.getGame().addMessage(pCity->getOwner(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DISCOVERBONUS", MESSAGE_TYPE_MINOR_EVENT, GC.getBonusInfo(getBonusType()).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
 							}
 						}
 
@@ -729,7 +729,7 @@ void CvPlot::doTurn()
 							if (GET_TEAM(pCity->getTeam()).isHasTech((TechTypes)(GC.getBonusInfo(getRealBonusType()).getTechReveal())))
 							{
 								szBuffer = gDLL->getText("TXT_KEY_MISC_DISCOVERED_SUMMER_RESOURCE", GC.getBonusInfo(getRealBonusType()).getTextKeyWide(), pCity->getNameKey());
-								gDLL->getInterfaceIFace()->addMessage(pCity->getOwner(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DISCOVERBONUS", MESSAGE_TYPE_MINOR_EVENT, GC.getBonusInfo(getRealBonusType()).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
+								GC.getGame().addMessage(pCity->getOwner(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DISCOVERBONUS", MESSAGE_TYPE_MINOR_EVENT, GC.getBonusInfo(getRealBonusType()).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
 							}
 						}
 					}
@@ -806,21 +806,21 @@ void CvPlot::doUniqueLairTimecheck()
 	if (iTurnsLeftUnexplored == 0 || getOwnershipDuration() == 1)
 	{
 		szBuffer = gDLL->getText("TXT_KEY_UF_NOTIFY_EXPLORE", GC.getImprovementInfo(getImprovementType()).getTextKeyWide());
-		gDLL->getInterfaceIFace()->addMessage(getOwner(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer,  "AS2D_ENEMY_TROOPS", MESSAGE_TYPE_MINOR_EVENT, GC.getImprovementInfo(getImprovementType()).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_YELLOW"), getX_INLINE(), getY_INLINE(), true, true);
+		GC.getGame().addMessage(getOwner(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer,  "AS2D_ENEMY_TROOPS", MESSAGE_TYPE_MINOR_EVENT, GC.getImprovementInfo(getImprovementType()).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_YELLOW"), getX_INLINE(), getY_INLINE(), true, true);
 	}
 	// Evil plots to summon beasties can't progress if the thing is outside owned territory... I guess? For balance. Otherwise it can trigger if the tile is acquired after being unowned for a long time
 	else if ((iTurnsLeftUnexplored == iCycleLength * 2 && getOwnershipDuration() >= iCycleLength * 2)
 		  || (iTurnsLeftUnexplored >= iCycleLength * 2 && getOwnershipDuration() == iCycleLength * 2))
 	{
 		szBuffer = gDLL->getText("TXT_KEY_UF_NOTIFY_EXPLORE_BUILDUP", GC.getImprovementInfo(getImprovementType()).getTextKeyWide());
-		gDLL->getInterfaceIFace()->addMessage(getOwner(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer,  "AS2D_ENEMY_TROOPS", MESSAGE_TYPE_MINOR_EVENT,
+		GC.getGame().addMessage(getOwner(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer,  "AS2D_ENEMY_TROOPS", MESSAGE_TYPE_MINOR_EVENT,
 			GC.getImprovementInfo(getImprovementType()).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
 	}
 	// You done fucked up now son! If xml enabled.
 	else if (GC.getDefineINT("LAIR_AUTO_EXPLORE") > 0 && iTurnsLeftUnexplored >= 4 * iCycleLength && getOwnershipDuration() >= 4 * iCycleLength)
 	{
 		szBuffer = gDLL->getText("TXT_KEY_UF_NOTIFY_BUILDUP_COMPLETE", GC.getImprovementInfo(getImprovementType()).getTextKeyWide());
-		gDLL->getInterfaceIFace()->addMessage(getOwner(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer,  "AS2D_PILLAGED", MESSAGE_TYPE_MAJOR_EVENT,
+		GC.getGame().addMessage(getOwner(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer,  "AS2D_PILLAGED", MESSAGE_TYPE_MAJOR_EVENT,
 			GC.getImprovementInfo(getImprovementType()).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
 
 		CyUnit* pyCaster;
@@ -978,7 +978,7 @@ void CvPlot::doLairSpawn()
 		if (eSpawnPlayer != DEMON_PLAYER && eSpawnPlayer != ANIMAL_PLAYER && eSpawnPlayer != ORC_PLAYER)
 		{
 			szBuffer = gDLL->getText("TXT_KEY_IMPROVEMENT_SPAWN_UNIT", GC.getImprovementInfo(getImprovementType()).getTextKeyWide(), pUnit->getName().GetCString());
-			gDLL->getInterfaceIFace()->addMessage(eSpawnPlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer,  "AS2D_UNITGIFTED", MESSAGE_TYPE_INFO,
+			GC.getGame().addMessage(eSpawnPlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer,  "AS2D_UNITGIFTED", MESSAGE_TYPE_INFO,
 				GC.getUnitInfo((UnitTypes)iUnit).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_YELLOW"), getX_INLINE(), getY_INLINE(), true, true);
 		}
 
@@ -1082,7 +1082,7 @@ void CvPlot::doImprovementCityWorking()
 		if (pCity != NULL)
 		{
 			szBuffer = gDLL->getText("TXT_KEY_MISC_DISCOVERED_NEW_RESOURCE", GC.getBonusInfo((BonusTypes)iBonus).getTextKeyWide(), pCity->getNameKey());
-			gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DISCOVERBONUS", MESSAGE_TYPE_MINOR_EVENT,
+			GC.getGame().addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DISCOVERBONUS", MESSAGE_TYPE_MINOR_EVENT,
 				GC.getBonusInfo((BonusTypes)iBonus).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
 		}
 	}
@@ -6315,8 +6315,8 @@ void CvPlot::setOwner(PlayerTypes eNewValue, bool bCheckUnits, bool bUpdatePlotG
 	if (pOldCity != NULL)
 	{
 		szBuffer = gDLL->getText("TXT_KEY_MISC_CITY_REVOLTED_JOINED", pOldCity->getNameKey(), GET_PLAYER(eNewValue).getCivilizationDescriptionKey());
-		gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CULTUREFLIP", MESSAGE_TYPE_MAJOR_EVENT,  ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_NEGATIVE_TEXT"), getX_INLINE(), getY_INLINE(), true, true);
-		gDLL->getInterfaceIFace()->addMessage(eNewValue, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CULTUREFLIP", MESSAGE_TYPE_MAJOR_EVENT,  ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_POSITIVE_TEXT"), getX_INLINE(), getY_INLINE(), true, true);
+		GC.getGame().addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CULTUREFLIP", MESSAGE_TYPE_MAJOR_EVENT,  ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_NEGATIVE_TEXT"), getX_INLINE(), getY_INLINE(), true, true);
+		GC.getGame().addMessage(eNewValue, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CULTUREFLIP", MESSAGE_TYPE_MAJOR_EVENT,  ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_POSITIVE_TEXT"), getX_INLINE(), getY_INLINE(), true, true);
 
 		szBuffer = gDLL->getText("TXT_KEY_MISC_CITY_REVOLTS_JOINS", pOldCity->getNameKey(), GET_PLAYER(eNewValue).getCivilizationDescriptionKey());
 		GC.getGameINLINE().addReplayMessage(REPLAY_MESSAGE_MAJOR_EVENT, getOwnerINLINE(), szBuffer, getX_INLINE(), getY_INLINE(), (ColorTypes)GC.getInfoTypeForString("COLOR_ALT_HIGHLIGHT_TEXT"));
@@ -10162,7 +10162,7 @@ bool CvPlot::changeBuildProgress(BuildTypes eBuild, int iChange, TeamTypes eTeam
 						pCity->changeFeatureProduction(iProduction);
 
 						szBuffer = gDLL->getText("TXT_KEY_MISC_CLEARING_FEATURE_BONUS", GC.getFeatureInfo(getFeatureType()).getTextKeyWide(), iProduction, pCity->getNameKey());
-						gDLL->getInterfaceIFace()->addMessage(pCity->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer,  ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), MESSAGE_TYPE_INFO, GC.getFeatureInfo(getFeatureType()).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
+						GC.getGame().addMessage(pCity->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer,  ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), MESSAGE_TYPE_INFO, GC.getFeatureInfo(getFeatureType()).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
 					}
 
 					// Python Event
@@ -11028,7 +11028,7 @@ void CvPlot::doPlotEffect()
 				{
 					// Tell the owner of this city.
 					szBuffer = gDLL->getText("TXT_KEY_MISC_PLOT_EFFECT_APPEAR_NEAR_CITY", GC.getPlotEffectInfo((PlotEffectTypes)iI).getTextKeyWide(), pCity->getNameKey());
-				//	gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_FEATUREGROWTH", MESSAGE_TYPE_INFO,
+				//	GC.getGame().addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_FEATUREGROWTH", MESSAGE_TYPE_INFO,
 				//		GC.getPlotEffectInfo((PlotEffectTypes)iI).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
 				}
 			}
@@ -11194,7 +11194,7 @@ void CvPlot::doFeature()
 								{
 									// Tell the owner of this city.
 									szBuffer = gDLL->getText("TXT_KEY_MISC_FEATURE_GROWN_NEAR_CITY", GC.getFeatureInfo((FeatureTypes) iI).getTextKeyWide(), pCity->getNameKey());
-									gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_FEATUREGROWTH", MESSAGE_TYPE_INFO, GC.getFeatureInfo((FeatureTypes) iI).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
+									GC.getGame().addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_FEATUREGROWTH", MESSAGE_TYPE_INFO, GC.getFeatureInfo((FeatureTypes) iI).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
 								}
 
 								break;
@@ -11310,8 +11310,8 @@ void CvPlot::doCulture()
 
 								// XXX announce for all seen cities?
 								szBuffer = gDLL->getText("TXT_KEY_MISC_REVOLT_IN_CITY", GET_PLAYER(eCulturalOwner).getCivilizationAdjective(), pCity->getNameKey());
-								gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CITY_REVOLT", MESSAGE_TYPE_MINOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("INTERFACE_RESISTANCE")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_NEGATIVE_TEXT"), getX_INLINE(), getY_INLINE(), true, true);
-								gDLL->getInterfaceIFace()->addMessage(eCulturalOwner, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CITY_REVOLT", MESSAGE_TYPE_MINOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("INTERFACE_RESISTANCE")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_POSITIVE_TEXT"), getX_INLINE(), getY_INLINE(), true, true);
+								GC.getGame().addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CITY_REVOLT", MESSAGE_TYPE_MINOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("INTERFACE_RESISTANCE")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_NEGATIVE_TEXT"), getX_INLINE(), getY_INLINE(), true, true);
+								GC.getGame().addMessage(eCulturalOwner, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CITY_REVOLT", MESSAGE_TYPE_MINOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("INTERFACE_RESISTANCE")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_POSITIVE_TEXT"), getX_INLINE(), getY_INLINE(), true, true);
 							}
 						}
 					}

@@ -8182,6 +8182,10 @@ void CvGameTextMgr::parseTraits(CvWStringBuffer &szHelpString, TraitTypes eTrait
 		{
 			szHelpString.append(gDLL->getText("TXT_KEY_TRAIT_FOOD_BUILDING_PRODUCTION_HELP"));
 		}
+		if (GC.getTraitInfo(eTrait).isFoodProjectProduction())
+		{
+			szHelpString.append(gDLL->getText("TXT_KEY_TRAIT_FOOD_PROJECT_PRODUCTION_HELP"));
+		}
 		/*************************************************************************************************/
 /**	Multiple Production							END												**/
 /*************************************************************************************************/

@@ -1355,7 +1355,7 @@ void CvGame::handleAction(int iAction)
 				}
 				if (GC.getSpellInfo((SpellTypes)GC.getActionInfo(iAction).getOriginalIndex()).isGlobal() && GC.getSpellInfo((SpellTypes)GC.getActionInfo(iAction).getOriginalIndex()).isTargeted())
 				{
-					gDLL->getInterfaceIFace()->addMessage(gDLL->getInterfaceIFace()->getHeadSelectedUnit()->getOwner(), true, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_MESSAGE_SPELL_GLOBAL_TARGETED", GC.getActionInfo(iAction).getTextKeyWide()), "", MESSAGE_TYPE_MAJOR_EVENT, "art/interface/buttons/promotions/magicresistance.dds", (ColorTypes)GC.getInfoTypeForString("COLOR_NEGATIVE_TEXT"), gDLL->getInterfaceIFace()->getHeadSelectedUnit()->getX_INLINE(), gDLL->getInterfaceIFace()->getHeadSelectedUnit()->getY_INLINE(), true, true);
+					GC.getGame().addMessage(gDLL->getInterfaceIFace()->getHeadSelectedUnit()->getOwner(), true, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_MESSAGE_SPELL_GLOBAL_TARGETED", GC.getActionInfo(iAction).getTextKeyWide()), "", MESSAGE_TYPE_MAJOR_EVENT, "art/interface/buttons/promotions/magicresistance.dds", (ColorTypes)GC.getInfoTypeForString("COLOR_NEGATIVE_TEXT"), gDLL->getInterfaceIFace()->getHeadSelectedUnit()->getX_INLINE(), gDLL->getInterfaceIFace()->getHeadSelectedUnit()->getY_INLINE(), true, true);
 
 				}
 				if (GC.getSpellInfo((SpellTypes)GC.getActionInfo(iAction).getOriginalIndex()).isCausesWar() && !GC.getSpellInfo((SpellTypes)GC.getActionInfo(iAction).getOriginalIndex()).isTargeted())
@@ -1378,7 +1378,7 @@ void CvGame::handleAction(int iAction)
 				}
 				if (GC.getSpellInfo((SpellTypes)GC.getActionInfo(iAction).getOriginalIndex()).isCausesWar() && GC.getSpellInfo((SpellTypes)GC.getActionInfo(iAction).getOriginalIndex()).isTargeted())
 				{
-					gDLL->getInterfaceIFace()->addMessage(gDLL->getInterfaceIFace()->getHeadSelectedUnit()->getOwner(), true, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_MESSAGE_SPELL_WAR_TARGETED", GC.getActionInfo(iAction).getTextKeyWide()), "", MESSAGE_TYPE_MAJOR_EVENT, "art/interface/buttons/promotions/magicresistance.dds", (ColorTypes)GC.getInfoTypeForString("COLOR_NEGATIVE_TEXT"), gDLL->getInterfaceIFace()->getHeadSelectedUnit()->getX_INLINE(), gDLL->getInterfaceIFace()->getHeadSelectedUnit()->getY_INLINE(), true, true);
+					GC.getGame().addMessage(gDLL->getInterfaceIFace()->getHeadSelectedUnit()->getOwner(), true, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_MESSAGE_SPELL_WAR_TARGETED", GC.getActionInfo(iAction).getTextKeyWide()), "", MESSAGE_TYPE_MAJOR_EVENT, "art/interface/buttons/promotions/magicresistance.dds", (ColorTypes)GC.getInfoTypeForString("COLOR_NEGATIVE_TEXT"), gDLL->getInterfaceIFace()->getHeadSelectedUnit()->getX_INLINE(), gDLL->getInterfaceIFace()->getHeadSelectedUnit()->getY_INLINE(), true, true);
 				}
 
 			}

@@ -1407,6 +1407,8 @@ public:
 	void  changeFoodUnitProduction(int iNewValue);
 	bool isFoodBuildingProduction() const;
 	void  changeFoodBuildingProduction(int iNewValue);
+	bool isFoodProjectProduction() const;
+	void  changeFoodProjectProduction(int iNewValue);
 
 /*************************************************************************************************/
 /**	Multiple Production							END												**/
@@ -1938,6 +1940,7 @@ protected:
 	int m_iOverflowProduction;
 	int m_iFoodUnitProduction;
 	int m_iFoodBuildingProduction;
+	int m_iFoodProjectProduction;
 	/*************************************************************************************************/
 /**	Multiple Production							END												**/
 /*************************************************************************************************/

@@ -112,6 +112,7 @@ public:
 	bool isFoodProduction() const;																								// Exposed to Python
 	bool isFoodProduction(UnitTypes eUnit) const;																	// Exposed to Python
 	bool isFoodProduction(BuildingTypes eBuilding) const;																	// Exposed to Python
+	bool isFoodProduction(ProjectTypes eProject) const;																	// Exposed to Python
 	int getFirstUnitOrder(UnitTypes eUnit) const;																	// Exposed to Python
 	int getFirstBuildingOrder(BuildingTypes eBuilding) const;											// Exposed to Python
 	int getFirstProjectOrder(ProjectTypes eProject) const;												// Exposed to Python

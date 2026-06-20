@@ -17311,7 +17311,7 @@ bool CvUnitAI::AI_safety()
 	int iValue;
 	int iBestValue;
 	int iCount;
-	int iPass;
+	int iPassTracker=0;
 	int iDX, iDY;
 
 	iSearchRange = AI_searchRange(1);
@@ -17343,6 +17343,7 @@ bool CvUnitAI::AI_safety()
 /**								----  End Original Code  ----									**/
 	for (int iPass = 0; iPass < 3; iPass++)
 	{
+		iPassTracker = iPass;
 		for (iDX = -(iSearchRange); iDX <= iSearchRange; iDX++)
 		{
 			for (iDY = -(iSearchRange); iDY <= iSearchRange; iDY++)
@@ -17428,7 +17429,7 @@ bool CvUnitAI::AI_safety()
 		}
 		else
 		{
-			getGroup()->pushMission(MISSION_MOVE_TO, pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), ((iPass > 0) ? MOVE_IGNORE_DANGER : 0));
+			getGroup()->pushMission(MISSION_MOVE_TO, pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), ((iPassTracker > 0) ? MOVE_IGNORE_DANGER : 0));
 			return true;
 		}
 	}
@@ -24175,7 +24176,7 @@ bool CvUnitAI::AI_retreatToCity(bool bPrimary, bool bAirlift, int iMaxPath)
 	int iPathTurns;
 	int iValue;
 	int iBestValue = MAX_INT;
-	int iPass;
+	int iPassTracker=0;
 	int iLoop;
 	int iCurrentDanger = GET_PLAYER(getOwnerINLINE()).AI_getPlotDanger(plot());
 
@@ -24205,6 +24206,7 @@ bool CvUnitAI::AI_retreatToCity(bool bPrimary, bool bAirlift, int iMaxPath)
 
 	for (int iPass = 0; iPass < 4; iPass++)
 	{
+		iPassTracker = iPass;
 		for (pLoopCity = GET_PLAYER(getOwnerINLINE()).firstCity(&iLoop); pLoopCity != NULL; pLoopCity = GET_PLAYER(getOwnerINLINE()).nextCity(&iLoop))
 		{
 			if (AI_plotValid(pLoopCity->plot()))
@@ -24350,7 +24352,7 @@ bool CvUnitAI::AI_retreatToCity(bool bPrimary, bool bAirlift, int iMaxPath)
 	if (pBestPlot != NULL)
 	{
 		FAssert(!atPlot(pBestPlot));
-		getGroup()->pushMission(MISSION_MOVE_TO, pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), ((iPass > 1) ? MOVE_IGNORE_DANGER : ((iPass == 0) ? MOVE_SAFE_TERRITORY : 0)));
+		getGroup()->pushMission(MISSION_MOVE_TO, pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), ((iPassTracker > 1) ? MOVE_IGNORE_DANGER : ((iPassTracker == 0) ? MOVE_SAFE_TERRITORY : 0)));
 		return true;
 	}
 
@@ -30731,7 +30733,7 @@ bool CvUnitAI::AI_AddPopToCity()
 	int iPathTurns;
 	int iValue;
 	int iBestValue = MAX_INT;
-	int iPass;
+	int iPassTracker=0;
 	int iLoop;
 	CvString szError;
 
@@ -30761,6 +30763,7 @@ bool CvUnitAI::AI_AddPopToCity()
 
 	for (int iPass = 0; iPass < 4; iPass++)
 	{
+		iPassTracker = iPass;
 		for (pLoopCity = GET_PLAYER(getOwnerINLINE()).firstCity(&iLoop); pLoopCity != NULL; pLoopCity = GET_PLAYER(getOwnerINLINE()).nextCity(&iLoop))
 		{
 			if (AI_plotValid(pLoopCity->plot()))
@@ -30885,7 +30888,7 @@ bool CvUnitAI::AI_AddPopToCity()
 		FAssert(!atPlot(pBestPlot));
 		//	szError.Format("pushed move mission ");			
 		//	gDLL->logMsg("scionai.log", szError);
-		getGroup()->pushMission(MISSION_MOVE_TO, pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), ((iPass > 0) ? MOVE_IGNORE_DANGER : 0));
+		getGroup()->pushMission(MISSION_MOVE_TO, pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), ((iPassTracker > 0) ? MOVE_IGNORE_DANGER : 0));
 		return true;
 	}
 	return false;

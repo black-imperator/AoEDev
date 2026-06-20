@@ -1304,6 +1304,14 @@
 		<Spanish>[NEWLINE][ICON_BULLET]Can Build Buildings with Food.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_TRAIT_FOOD_PROJECT_PRODUCTION_HELP</Tag>
+		<English>[NEWLINE][ICON_BULLET]Can Build Rituals with Food.</English>
+		<French>[NEWLINE][ICON_BULLET]Can Build Rituals with Food.</French>
+		<German>[NEWLINE][ICON_BULLET]Can Build Rituals with Food.</German>
+		<Italian>[NEWLINE][ICON_BULLET]Can Build Rituals with Food.</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]Can Build Rituals with Food.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_TRAIT_PEACECOMMERCE_MODIFIERS</Tag>
 		<English>[NEWLINE][ICON_BULLET]%D1%% %F2_commerce when at peace</English>
 		<French>[NEWLINE][ICON_BULLET]%D1%% %F2_commerce en période de paix</French>

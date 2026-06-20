@@ -680,7 +680,9 @@ public:
 
 	bool isUniDay(); // Exposed to Python
 	bool isTikuCurse();
-
+	void addMessage(PlayerTypes ePlayer, bool bForce, int iLength, CvWString szString, LPCTSTR pszSound = NULL,
+		InterfaceMessageTypes eType = MESSAGE_TYPE_INFO, LPCSTR pszIcon = NULL, ColorTypes eFlashColor = NO_COLOR,
+		int iFlashX = -1, int iFlashY = -1, bool bShowOffScreenArrows = false, bool bShowOnScreenArrows = false);
 protected:
 
 	int m_iEndTurnMessagesSent;
