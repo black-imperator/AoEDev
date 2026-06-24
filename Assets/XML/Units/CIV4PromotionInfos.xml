@@ -12202,7 +12202,6 @@
 				<Promotion>PROMOTION_HIDDEN_NATIONALITY</Promotion>
 			</PromotionOverwrites>
 			<Button>Art/Interface/Buttons/Promotions/HiddenNationality.dds</Button>
-			<iMinLevel>-1</iMinLevel>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Homeland -->
 			<Type>PROMOTION_HOMELAND</Type>
@@ -27529,7 +27528,7 @@
 					<fCrime>10</fCrime>
 					<fFood>-3</fFood>
 					<fHealth>-3</fHealth>
-					<iBonusRange>4</iBonusRange>
+					<iBonusRange>3</iBonusRange>
 				</CityBonus>
 			</CityBonuses>
 			<PrereqUnits>
@@ -27551,10 +27550,10 @@
 					<bFullMap>1</bFullMap>
 				</CityBonus>
 			</CityBonuses>
-			<iExtraSupport>-1</iExtraSupport>
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
+			<iExtraSupport>-1</iExtraSupport>
 			<bFreeUnit>1</bFreeUnit>
 			<bNoSupply>1</bNoSupply>
 			<PrereqCivilizations>
@@ -27594,7 +27593,6 @@
 			<PromotionExcludes>
 				<Promotion>PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE</Promotion>
 			</PromotionExcludes>
-			<iExtraSupport>-1</iExtraSupport>
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
@@ -27633,7 +27631,6 @@
 					<fProduction>6</fProduction>
 					<fGPP>6</fGPP>
 					<fCulture>4</fCulture>
-					<fTradeRoutes>1</fTradeRoutes>
 					<bFullMap>1</bFullMap>
 				</CityBonus>
 			</CityBonuses>
@@ -27645,7 +27642,6 @@
 				<Promotion>PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE</Promotion>
 				<Promotion>PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE2</Promotion>
 			</PromotionExcludes>
-			<iExtraSupport>-1</iExtraSupport>
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
@@ -34072,7 +34068,7 @@
 				<CityBonus>
 					<bApplyRival>1</bApplyRival>
 					<fCulture>-0.4</fCulture>
-					<iBonusRange>3</iBonusRange>
+					<iBonusRange>2</iBonusRange>
 				</CityBonus>
 			</CityBonuses>
 			<iMinLevel>-1</iMinLevel>
@@ -34171,7 +34167,7 @@
 					<bApplyEnemy>1</bApplyEnemy>
 					<bApplyRival>1</bApplyRival>
 					<fHealth>-0.75</fHealth>
-					<iBonusRange>3</iBonusRange>
+					<iBonusRange>2</iBonusRange>
 				</CityBonus>
 			</CityBonuses>
 			<iMinLevel>-1</iMinLevel>
@@ -41566,7 +41562,7 @@
 					<bApplyEnemy>1</bApplyEnemy>
 					<fHappy>-2</fHappy>
 					<fHealth>-2</fHealth>
-					<iBonusRange>4</iBonusRange>
+					<iBonusRange>3</iBonusRange>
 				</CityBonus>
 			</CityBonuses>
 			<Button>Art/Interface/Buttons/Promotions/Blank_promo.dds</Button>
@@ -41792,7 +41788,7 @@
 					<bApplyEnemy>1</bApplyEnemy>
 					<bApplyRival>1</bApplyRival>
 					<fHappy>-2</fHappy>
-					<iBonusRange>4</iBonusRange>
+					<iBonusRange>3</iBonusRange>
 				</CityBonus>
 			</CityBonuses>
 			<bNoXP>1</bNoXP>

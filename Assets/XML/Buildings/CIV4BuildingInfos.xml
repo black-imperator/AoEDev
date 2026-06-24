@@ -14832,7 +14832,6 @@
 			<iFreePromotionPick>0</iFreePromotionPick>
 			<iGlobalResistEnemyModify>0</iGlobalResistEnemyModify>
 			<iGlobalResistModify>0</iGlobalResistModify>
-			<iPlotRadius>2</iPlotRadius>
 			<FreeBonus2>BONUS_MANA_SHADOW</FreeBonus2>
 			<FreeBonus3>BONUS_MANA_FIRE</FreeBonus3>
 		</BuildingInfo>
@@ -14903,7 +14902,6 @@
 					<iFlavor>25</iFlavor>
 				</Flavor>
 			</Flavors>
-			<iPlotRadius>2</iPlotRadius>
 		</BuildingInfo>
 		<BuildingInfo>		<!-- Dtesh Dungeon -->
 			<BuildingClass>BUILDINGCLASS_DUNGEON</BuildingClass>
@@ -16293,6 +16291,7 @@
 					<iFlavor>5</iFlavor>
 				</Flavor>
 			</Flavors>
+			<iPlotRadius>2</iPlotRadius>
 		</BuildingInfo>
 		<BuildingInfo>		<!-- Dwelling of Refuge                                         Grigori UB -->
 			<BuildingClass>BUILDINGCLASS_DWELLING_OF_REFUGE</BuildingClass>

@@ -2536,6 +2536,7 @@
 			<TraitClass>TRAITCLASS_EMERGENT</TraitClass>
 			<Description>TXT_KEY_TRAIT_TREACHEROUS</Description>
 			<ShortDescription>TXT_KEY_TRAIT_TREACHEROUS_SHORT</ShortDescription>
+			<Help>TXT_KEY_TRAIT_TREACHEROUS_HELP</Help>
 			<FreePromotions>
 				<FreePromotion>
 					<PromotionType>PROMOTION_TREACHEROUS</PromotionType>

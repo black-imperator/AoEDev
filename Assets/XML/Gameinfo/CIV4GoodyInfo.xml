@@ -1089,7 +1089,7 @@
 				</GoodyClass>
 			</GoodyClasses>
 			<iWeight>250</iWeight>
-			<Description>TXT_KEY_GOODY_RAGEBLADE</Description>
+			<Description>TXT_KEY_GOODY_RAGESWORD</Description>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>40</iDestroyLairChance>
 			<PythonCallback>exploreLairCurseThirstSavant</PythonCallback>

@@ -2583,6 +2583,10 @@
 					<BuildingType>NONE</BuildingType>
 				</Building>
 				<Building>
+					<BuildingClassType>BUILDINGCLASS_CITY_OF_A_THOUSAND_SLUMS</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
+				<Building>
 					<BuildingClassType>BUILDINGCLASS_MEMORIAL_REFUGEE</BuildingClassType>
 					<BuildingType>BUILDING_MEMORIAL_REFUGEE</BuildingType>
 				</Building>
