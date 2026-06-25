@@ -36475,7 +36475,7 @@
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Structures/Buildings/Lighthouse/Lighthouse.nif</NIF>
+			<NIF>Art/Units/Heroes/ScaledLighthouse/Lighthouse.nif</NIF>
 			<KFM>Art/animations/wolf/wolf.kfm</KFM>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>

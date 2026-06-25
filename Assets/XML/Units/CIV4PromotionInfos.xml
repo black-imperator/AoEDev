@@ -14110,6 +14110,20 @@
 			</AuraBonuses>
 			<Button>Art/Interface/Buttons/Promotions/BloodCore.dds</Button>
 		</PromotionInfo>
+		<PromotionInfo>		<!-- Empty Core -->
+			<Type>PROMOTION_EMPTY_CORE</Type>
+			<Description>TXT_KEY_PROMOTION_EMPTY_CORE</Description>
+			<bNoXP>1</bNoXP>
+			<AuraBonuses>
+				<AuraBonus>
+					<bApplyEnemy>1</bApplyEnemy>
+					<bApplyRival>1</bApplyRival>
+					<iBonusRange>2</iBonusRange>
+					<Promotion>PROMOTION_TERRIFIED</Promotion>
+				</AuraBonus>
+			</AuraBonuses>
+			<Button>Art/Interface/Buttons/Promotions/EmptyCore.dds</Button>
+		</PromotionInfo>
 		<PromotionInfo>		<!-- Blood Dragon Aura -->
 			<Type>PROMOTION_BLOOD_DRAGON_AURA</Type>
 			<Description>TXT_KEY_PROMOTION_BLOOD_DRAGON_AURA</Description>
@@ -17665,7 +17679,6 @@
 		<PromotionInfo>		<!-- Terrified -->
 			<Type>PROMOTION_TERRIFIED</Type>
 			<Description>TXT_KEY_PROMOTION_TERRIFIED</Description>
-			<Help>TXT_KEY_PROMOTION_TERRIFIED_HELP</Help>
 			<iPromotionDuration>3</iPromotionDuration>
 			<iMovesChange>-1</iMovesChange>
 			<bPrereqAlive>1</bPrereqAlive>
@@ -20861,7 +20874,7 @@
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Channeling 2 Decay -->
 			<Type>PROMOTION_CHANNELING2_DECAY</Type>
-			<Description>TXT_KEY_PROMOTION_CHANNELING2</Description>
+			<Description>TXT_KEY_PROMOTION_CHANNELING2_DECAY</Description>
 			<Help>TXT_KEY_PROMOTION_CHANNELING2_PEDIA</Help>
 			<PrereqPromotionANDs>
 				<PrereqPromotionAND>

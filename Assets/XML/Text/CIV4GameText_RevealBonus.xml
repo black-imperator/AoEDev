@@ -11622,6 +11622,61 @@ A great and terrible dragon turns it's eye to glower down at the unit, the same 
 		<Spanish>The ground in the forest is shaking. Something old has awoken.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_PIT_DRAGON</Tag>
+		<English>Pit Dragon</English>
+		<French>Pit Dragon</French>
+		<German>Pit Dragon</German>
+		<Italian>Pit Dragon</Italian>
+		<Spanish>Pit Dragon</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PIT_DRAGON_PEDIA</Tag>
+		<English>Also called a Chain Dragon, Demonic Dragon or Dragon of the Depths. These horrific creatures dwell in bottomless pits and Agares has chained a great rock to each of them that they must drag after them. They are capable of short flight even with this rock, but it requires great labor on their part. It is uncertain if Agares did this because he enjoys tormenting the powerful creatures, if they displeased him, or if it serves some other purpose.
+The dragon exudes an aura of fear that terrifies all life, even without being seen. Though it usually ignores life outside of its pit, it is drawn to suffering. A Pit Dragon's breath weapon is a dark vapor that corrodes metal, withers flesh and crumbles stone, but has no effect on the dragons chains or the great stone it is chained to. Unlike most other dragons, Pit Dragons don't collect anything.</English>
+		<French>Also called a Chain Dragon, Demonic Dragon or Dragon of the Depths. These horrific creatures dwell in bottomless pits and Agares has chained a great rock to each of them that they must drag after them. They are capable of short flight even with this rock, but it requires great labor on their part. It is uncertain if Agares did this because he enjoys tormenting the powerful creatures, if they displeased him, or if it serves some other purpose.
+The dragon exudes an aura of fear that terrifies all life, even without being seen. Though it usually ignores life outside of its pit, it is drawn to suffering. A Pit Dragon's breath weapon is a dark vapor that corrodes metal, withers flesh and crumbles stone, but has no effect on the dragons chains or the great stone it is chained to. Unlike most other dragons, Pit Dragons don't collect anything.</French>
+		<German>Also called a Chain Dragon, Demonic Dragon or Dragon of the Depths. These horrific creatures dwell in bottomless pits and Agares has chained a great rock to each of them that they must drag after them. They are capable of short flight even with this rock, but it requires great labor on their part. It is uncertain if Agares did this because he enjoys tormenting the powerful creatures, if they displeased him, or if it serves some other purpose.
+The dragon exudes an aura of fear that terrifies all life, even without being seen. Though it usually ignores life outside of its pit, it is drawn to suffering. A Pit Dragon's breath weapon is a dark vapor that corrodes metal, withers flesh and crumbles stone, but has no effect on the dragons chains or the great stone it is chained to. Unlike most other dragons, Pit Dragons don't collect anything.</German>
+		<Italian>Also called a Chain Dragon, Demonic Dragon or Dragon of the Depths. These horrific creatures dwell in bottomless pits and Agares has chained a great rock to each of them that they must drag after them. They are capable of short flight even with this rock, but it requires great labor on their part. It is uncertain if Agares did this because he enjoys tormenting the powerful creatures, if they displeased him, or if it serves some other purpose.
+The dragon exudes an aura of fear that terrifies all life, even without being seen. Though it usually ignores life outside of its pit, it is drawn to suffering. A Pit Dragon's breath weapon is a dark vapor that corrodes metal, withers flesh and crumbles stone, but has no effect on the dragons chains or the great stone it is chained to. Unlike most other dragons, Pit Dragons don't collect anything.</Italian>
+		<Spanish>Also called a Chain Dragon, Demonic Dragon or Dragon of the Depths. These horrific creatures dwell in bottomless pits and Agares has chained a great rock to each of them that they must drag after them. They are capable of short flight even with this rock, but it requires great labor on their part. It is uncertain if Agares did this because he enjoys tormenting the powerful creatures, if they displeased him, or if it serves some other purpose.
+The dragon exudes an aura of fear that terrifies all life, even without being seen. Though it usually ignores life outside of its pit, it is drawn to suffering. A Pit Dragon's breath weapon is a dark vapor that corrodes metal, withers flesh and crumbles stone, but has no effect on the dragons chains or the great stone it is chained to. Unlike most other dragons, Pit Dragons don't collect anything.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_PIT_DRAGON_CREATION</Tag>
+		<English>The sweet and sickly aroma of the growing despair in Erebus has become too tempting to resist.
+A tormented tormentor, one of the Pit Dragons of Agares, has dragged themself from the depths to sow terror and rot.</English>
+		<French>The sweet and sickly aroma of the growing despair in Erebus has become too tempting to resist.
+A tormented tormentor, one of the Pit Dragons of Agares, has dragged themself from the depths to sow terror and rot.</French>
+		<German>The sweet and sickly aroma of the growing despair in Erebus has become too tempting to resist.
+A tormented tormentor, one of the Pit Dragons of Agares, has dragged themself from the depths to sow terror and rot.</German>
+		<Italian>The sweet and sickly aroma of the growing despair in Erebus has become too tempting to resist.
+A tormented tormentor, one of the Pit Dragons of Agares, has dragged themself from the depths to sow terror and rot.</Italian>
+		<Spanish>The sweet and sickly aroma of the growing despair in Erebus has become too tempting to resist.
+A tormented tormentor, one of the Pit Dragons of Agares, has dragged themself from the depths to sow terror and rot.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_EXPLORE_LAIR_PIT_DRAGON</Tag>
+		<English>Your unit has been succumbing to the aura of misery blanketing this place, lost in memories of past and future failings.
+Unfortunately for your unit, misery loves company.</English>
+		<French>Your unit has been succumbing to the aura of misery blanketing this place, lost in memories of past and future failings.
+Unfortunately for your unit, misery loves company.</French>
+		<German>Your unit has been succumbing to the aura of misery blanketing this place, lost in memories of past and future failings.
+Unfortunately for your unit, misery loves company.</German>
+		<Italian>Your unit has been succumbing to the aura of misery blanketing this place, lost in memories of past and future failings.
+Unfortunately for your unit, misery loves company.</Italian>
+		<Spanish>Your unit has been succumbing to the aura of misery blanketing this place, lost in memories of past and future failings.
+Unfortunately for your unit, misery loves company.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_EMPTY_CORE</Tag>
+		<English>Empty Core</English>
+		<French>Empty Core</French>
+		<German>Empty Core</German>
+		<Italian>Empty Core</Italian>
+		<Spanish>Empty Core</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_KEZEF</Tag>
 		<English>Kezef</English>
 		<French>Kezef</French>

@@ -15,6 +15,15 @@
 				</Build>
 			</Builds>
 		</UnitInfo>
+		<UnitInfo>        <!-- Gretchin -->
+			<Type>UNIT_GRETCHIN</Type>
+			<Builds>
+				<Build>
+					<BuildType>BUILD_IMPERIAL_ROAD</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+			</Builds>
+		</UnitInfo>
 		<UnitInfo>        <!-- Worker -->
 			<Type>UNIT_WORKER_MALAKIM</Type>
 			<Builds>

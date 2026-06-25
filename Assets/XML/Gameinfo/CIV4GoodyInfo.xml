@@ -3981,6 +3981,22 @@
 			<bBad>1</bBad>
 			<PythonCallback>exploreLairBloodDragon</PythonCallback>
 		</GoodyInfo>
+		<GoodyInfo> <!--PitDragon		Unique-->
+			<Type>GOODY_EXPLORE_LAIR_PITDRAGON</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_DEMONIC_MAJOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>10</iWeight>
+			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_PIT_DRAGON</Description>
+			<Sound>AS2D_GOODY_HOSTILE</Sound>
+			<iDestroyLairChance>75</iDestroyLairChance>
+			<bUnique>1</bUnique>
+			<bBad>1</bBad>
+			<PythonCallback>exploreLairPitDragon</PythonCallback>
+		</GoodyInfo>
 		<GoodyInfo> <!--ShimmeringDragon		Unique-->
 			<Type>GOODY_EXPLORE_LAIR_SHIMMERINGDRAGON</Type>
 			<GoodyClasses>
