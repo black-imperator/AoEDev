@@ -10057,7 +10057,7 @@
 			<Special>SPECIALUNIT_PEOPLE</Special>
 			<Combat>UNITCOMBAT_DISCIPLE</Combat>
 			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_RESERVE</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_MAGE</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_HIGH_NECROMANCER</Description>
 			<Civilopedia>TXT_KEY_UNIT_HIGH_NECROMANCER_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
@@ -10069,7 +10069,11 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 				<UnitAI>
-					<UnitAIType>UNITAI_RESERVE</UnitAIType>
+					<UnitAIType>UNITAI_MAGE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_WARWIZARD</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
@@ -53447,9 +53451,9 @@
 			<iWeaponTierMax>3</iWeaponTierMax>
 			<iPowerMult>4</iPowerMult>
 		</UnitInfo>
-		<UnitInfo>        <!-- Jarl -->                       <!-- Begin "Staedding" Spawns -->
+		<UnitInfo>		<!-- Jarl -->
 			<Class>UNITCLASS_CHAMPION</Class>
-			<Type>UNIT_JARL</Type>
+			<Type>UNIT_JOT_GIANT_CHAMPION</Type>
 			<Combat>UNITCOMBAT_MELEE</Combat>
 			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_JARL</Description>
@@ -53459,7 +53463,11 @@
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
 			<bPillage>1</bPillage>
-			<bNoDefensiveBonus>1</bNoDefensiveBonus>
+			<UnitClassUpgrades>
+					<UnitClassUpgradeType>UNITCLASS_IMMORTAL</UnitClassUpgradeType>
+					<UnitClassUpgradeType>UNITCLASS_BERSERKER</UnitClassUpgradeType>
+					<UnitClassUpgradeType>UNITCLASS_PHALANX</UnitClassUpgradeType>
+			</UnitClassUpgrades>
 			<UnitAIs>
 				<UnitAI>
 					<UnitAIType>UNITAI_PILLAGE</UnitAIType>
@@ -53469,14 +53477,35 @@
 					<UnitAIType>UNITAI_ATTACK_CITY</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_RESERVE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_COUNTER</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_CITY_COUNTER</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
 			</UnitAIs>
-			<iCost>-1</iCost>
+			<PrereqTech>TECH_IRON_WORKING</PrereqTech>
+			<TechTypes>
+				<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
+			</TechTypes>
+			<iCost>240</iCost>
+			<iPopCost>1</iPopCost>
+			<iAdvancedStartCost>300</iAdvancedStartCost>
 			<iMoves>2</iMoves>
+			<iWorkRate>250</iWorkRate>
 			<iCombat>7</iCombat>
-			<iCombatDefense>5</iCombatDefense>
+			<iCombatLimit>100</iCombatLimit>
+			<iXPValueAttack>8</iXPValueAttack>
+			<iXPValueDefense>4</iXPValueDefense>
 			<iCollateralDamage>100</iCollateralDamage>
 			<iCollateralDamageLimit>75</iCollateralDamageLimit>
-			<iCollateralDamageMaxUnits>3</iCollateralDamageMaxUnits>
+			<iCollateralDamageMaxUnits>6</iCollateralDamageMaxUnits>
 			<iBombardRate>20</iBombardRate>
 			<iAsset>4</iAsset>
 			<UnitMeshGroups>
@@ -53500,20 +53529,17 @@
 					<PromotionType>PROMOTION_COURAGE</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_SECONDARY_DEFENSIVE_MELEE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
 			</FreePromotions>
+			<bNeverObsolete>1</bNeverObsolete>
+			<iCombatDefense>8</iCombatDefense>
+			<iExtraGoldSupport>2</iExtraGoldSupport>
 			<iTier>3</iTier>
 			<iWeaponTierMax>3</iWeaponTierMax>
-			<iPowerMult>3</iPowerMult>
-			<TerrainImpassables>
-				<TerrainImpassable>
-					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
-					<bTerrainImpassable>1</bTerrainImpassable>
-				</TerrainImpassable>
-				<TerrainImpassable>
-					<TerrainType>TERRAIN_OCEAN</TerrainType>
-					<bTerrainImpassable>1</bTerrainImpassable>
-				</TerrainImpassable>
-			</TerrainImpassables>
+			<PrereqBuildingClass>BUILDINGCLASS_TRAINING_YARD</PrereqBuildingClass>
 		</UnitInfo>
 		<UnitInfo>        <!-- Skald -->                      <!-- End "Staedding" Spawns -->
 			<Class>UNITCLASS_MAGE</Class>

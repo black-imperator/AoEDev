@@ -610,11 +610,11 @@ This effect fires once per turn.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HARLEQUIN_STRATEGY</Tag>
-		<English>Being able to capture animals for the Balseraph carnivals and use the Taunt ability to cause nearby enemy units to attack their stack, Harlequin's are useful in times of war or peace.</English>
-		<French>Capables de capturer des animaux sauvages pour les carnavals Balséraphs et d'utiliser la provocation pour pousser les ennemis proches à attaquer leur pile, les Arlequins sont utiles en temps de paix comme de guerre.</French>
-		<German>Being able to capture animals for the Balseraph carnivals and use the Taunt ability to cause nearby enemy units to attack their stack, Harlequin's are useful in times of war or peace.</German>
-		<Italian>Gli Arlecchini rimpiazzano i Ranger per i Balseraph, e sacrificano 1 di forza e la capacità di trasportare un falco per ottenere il 25% di probabilità di ritirarsi da uno scontro sfavorevole, questo gli permette di sopravviere più di un normale ranger nelle terre selvagge e rende ancor più fastidioso per un giocatore eliminarli definitivamente.</Italian>
-		<Spanish>Being able to capture animals for the Balseraph carnivals and use the Taunt ability to cause nearby enemy units to attack their stack, Harlequin's are useful in times of war or peace.</Spanish>
+		<English>Being able to use the Performer trait to spread culture to friends and foes alike alongside more permanent methods, Harlequin's are useful in times of war or peace.</English>
+		<French>Being able to use the Performer trait to spread culture to friends and foes alike alongside more permanent methods, Harlequin's are useful in times of war or peace.</French>
+		<German>Being able to use the Performer trait to spread culture to friends and foes alike alongside more permanent methods, Harlequin's are useful in times of war or peace.</German>
+		<Italian>Being able to use the Performer trait to spread culture to friends and foes alike alongside more permanent methods, Harlequin's are useful in times of war or peace.</Italian>
+		<Spanish>Being able to use the Performer trait to spread culture to friends and foes alike alongside more permanent methods, Harlequin's are useful in times of war or peace.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LOKI</Tag>

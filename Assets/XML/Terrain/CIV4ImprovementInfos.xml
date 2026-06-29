@@ -5033,7 +5033,7 @@
 			</TerrainMakesValids>
 			<ImprovementUpgrade>IMPROVEMENTCLASS_STAEDDING_LEGENDARY</ImprovementUpgrade>
 			<SpawnUnitType>UNIT_HILL_GIANT</SpawnUnitType>
-			<ImmediateSpawnUnitType>UNIT_JARL</ImmediateSpawnUnitType>
+			<ImmediateSpawnUnitType>UNIT_JOT_GIANT_CHAMPION</ImmediateSpawnUnitType>
 			<SpawnUnitCiv>CIVILIZATION_ORC</SpawnUnitCiv>
 			<iSpawnUnitChancePercentMod>25</iSpawnUnitChancePercentMod>
 			<iSpawnAtOnceLimit>3</iSpawnAtOnceLimit>
@@ -5091,6 +5091,8 @@
 			</LairUpgradeTechs>
 			<GuardianPromotions>
 				<Promotion>PROMOTION_LEASH_1</Promotion>
+				<Promotion>PROMOTION_WEAK</Promotion>
+				<Promotion>PROMOTION_RUSTED</Promotion>
 			</GuardianPromotions>
 		</ImprovementInfo>
 		<ImprovementInfo><!-- Legendary Staedding -->

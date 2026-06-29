@@ -888,12 +888,9 @@
 				<Promotion>PROMOTION_BAD_KRAKEN</Promotion>
 				<Promotion>PROMOTION_LEASH_4</Promotion>
 				<Promotion>PROMOTION_STIGMATA</Promotion>
-				<Promotion>PROMOTION_WICKED</Promotion>
-				<Promotion>PROMOTION_CRAZED</Promotion>
 				<Promotion>PROMOTION_DROWNING_CREW</Promotion>
 				<Promotion>PROMOTION_COMMAND1</Promotion>
 				<Promotion>PROMOTION_COMMAND2</Promotion>
-				<Promotion>PROMOTION_COMMAND3</Promotion>
 				<Promotion>PROMOTION_DEEPENED_VISION</Promotion>
 			</GuardianPromotions>
 		</ImprovementInfo>

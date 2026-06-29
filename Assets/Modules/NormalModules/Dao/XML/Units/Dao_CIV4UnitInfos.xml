@@ -1554,9 +1554,8 @@
 			</FreePromotions>
 			<Combat>UNITCOMBAT_MELEE</Combat>
 			<Domain>DOMAIN_LAND</Domain>
-			<iMinLevel>5</iMinLevel>
 			<iTier>3</iTier>
-			<iCost>100</iCost>
+			<iCost>120</iCost>
 			<iAdvancedStartCost>1000</iAdvancedStartCost>
 			<bMilitaryHappiness>1</bMilitaryHappiness>
 			<bMilitaryProduction>1</bMilitaryProduction>

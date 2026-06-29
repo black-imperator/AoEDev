@@ -1609,7 +1609,6 @@
 				</SpellBonus>
 			</SpellBonuses>	
 			<bImmuneNeutral>1</bImmuneNeutral>
-			<bImmuneNotAlive>1</bImmuneNotAlive>
 			<Effect>EFFECT_CREATION</Effect>
 			<Sound>AS3D_SPELL_WATER</Sound>
 			<Button>Art/Interface/Buttons/Promotions/Waterwalking.dds</Button>

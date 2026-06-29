@@ -11366,6 +11366,111 @@ A moment later, rain begins to fall.</Spanish>
 		<Spanish>Take A Lordly Form</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_SPELL_OFFERING_OF_SACRIFICE</Tag>
+		<English>Offering of Sacrifice</English>
+		<French>Offering of Sacrifice</French>
+		<German>Offering of Sacrifice</German>
+		<Italian>Offering of Sacrifice</Italian>
+		<Spanish>Offering of Sacrifice</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_OFFERING_OF_SACRIFICE_PEDIA</Tag>
+		<English>Around him smouldered the remains of his village, his farmstead, and most of his family.
+And now it was his turn.
+
+As he sat there, trembling, with his eyes tightly shut, a voice wormed its way  into his mind.
+"Are you afraid to die?"
+"Yes!"
+"Good. Fear sours the blood, and I am fond of sour sweets."
+"Please! I have a family!"
+"YES! You DO! And you know something? There is one taste I am even more partial to than fear... Betrayal!"
+
+The farmer did not hesitate. 
+Will you?</English>
+		<French>Around him smouldered the remains of his village, his farmstead, and most of his family.
+And now it was his turn.
+
+As he sat there, trembling, with his eyes tightly shut, a voice wormed its way  into his mind.
+"Are you afraid to die?"
+"Yes!"
+"Good. Fear sours the blood, and I am fond of sour sweets."
+"Please! I have a family!"
+"YES! You DO! And you know something? There is one taste I am even more partial to than fear... Betrayal!"
+
+The farmer did not hesitate. 
+Will you?</French>
+		<German>Around him smouldered the remains of his village, his farmstead, and most of his family.
+And now it was his turn.
+
+As he sat there, trembling, with his eyes tightly shut, a voice wormed its way  into his mind.
+"Are you afraid to die?"
+"Yes!"
+"Good. Fear sours the blood, and I am fond of sour sweets."
+"Please! I have a family!"
+"YES! You DO! And you know something? There is one taste I am even more partial to than fear... Betrayal!"
+
+The farmer did not hesitate. 
+Will you?</German>
+		<Italian>Around him smouldered the remains of his village, his farmstead, and most of his family.
+And now it was his turn.
+
+As he sat there, trembling, with his eyes tightly shut, a voice wormed its way  into his mind.
+"Are you afraid to die?"
+"Yes!"
+"Good. Fear sours the blood, and I am fond of sour sweets."
+"Please! I have a family!"
+"YES! You DO! And you know something? There is one taste I am even more partial to than fear... Betrayal!"
+
+The farmer did not hesitate. 
+Will you?</Italian>
+		<Spanish>Around him smouldered the remains of his village, his farmstead, and most of his family.
+And now it was his turn.
+
+As he sat there, trembling, with his eyes tightly shut, a voice wormed its way  into his mind.
+"Are you afraid to die?"
+"Yes!"
+"Good. Fear sours the blood, and I am fond of sour sweets."
+"Please! I have a family!"
+"YES! You DO! And you know something? There is one taste I am even more partial to than fear... Betrayal!"
+
+The farmer did not hesitate. 
+Will you?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_OFFERING_OF_SACRIFICE_HELP</Tag>
+		<English>[ICON_BULLET]Requires a lv 15 unit, or a lv 10 Hero, or a unit with 8 or more animal bloods.
+[ICON_BULLET]Kills the unit in exchange for the Blood Dragon's allegiance.
+[ICON_BULLET]After gaining the Blood Dragon, other factions can still make the same offering to switch the dragon's allegiance again!</English>
+		<French>[ICON_BULLET]Requires a lv 15 unit, or a lv 10 Hero, or a unit with 8 or more animal bloods.
+[ICON_BULLET]Kills the unit in exchange for the Blood Dragon's allegiance.
+[ICON_BULLET]After gaining the Blood Dragon, other factions can still make the same offering to switch the dragon's allegiance again!</French>
+		<German>[ICON_BULLET]Requires a lv 15 unit, or a lv 10 Hero, or a unit with 8 or more animal bloods.
+[ICON_BULLET]Kills the unit in exchange for the Blood Dragon's allegiance.
+[ICON_BULLET]After gaining the Blood Dragon, other factions can still make the same offering to switch the dragon's allegiance again!</German>
+		<Italian>[ICON_BULLET]Requires a lv 15 unit, or a lv 10 Hero, or a unit with 8 or more animal bloods.
+[ICON_BULLET]Kills the unit in exchange for the Blood Dragon's allegiance.
+[ICON_BULLET]After gaining the Blood Dragon, other factions can still make the same offering to switch the dragon's allegiance again!</Italian>
+		<Spanish>[ICON_BULLET]Requires a lv 15 unit, or a lv 10 Hero, or a unit with 8 or more animal bloods.
+[ICON_BULLET]Kills the unit in exchange for the Blood Dragon's allegiance.
+[ICON_BULLET]After gaining the Blood Dragon, other factions can still make the same offering to switch the dragon's allegiance again!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_BLOOD_DRAGON_LOST</Tag>
+		<English>The Blood Dragon accepts a new sacrifice and has abandonned any former allegiance!</English>
+		<French>The Blood Dragon accepts a new sacrifice and has abandonned any former allegiance!</French>
+		<German>The Blood Dragon accepts a new sacrifice and has abandonned any former allegiance!</German>
+		<Italian>The Blood Dragon accepts a new sacrifice and has abandonned any former allegiance!</Italian>
+		<Spanish>The Blood Dragon accepts a new sacrifice and has abandonned any former allegiance!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_BLOOD_DRAGON_JOINED</Tag>
+		<English>The Blood Dragon accepts a new sacrifice and changes their allegience!</English>
+		<French>The Blood Dragon accepts a new sacrifice and changes their allegience!</French>
+		<German>The Blood Dragon accepts a new sacrifice and changes their allegience!</German>
+		<Italian>The Blood Dragon accepts a new sacrifice and changes their allegience!</Italian>
+		<Spanish>The Blood Dragon accepts a new sacrifice and changes their allegience!</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_SPELL_SWARM_OF_SCORPIONBATS</Tag>
 		<English>Summon Scorpion Bats</English>
 		<French>Summon Scorpion Bats</French>

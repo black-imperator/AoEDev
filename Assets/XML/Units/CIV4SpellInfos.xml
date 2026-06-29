@@ -2631,7 +2631,6 @@
 				<AddPromotion>PROMOTION_WATER_WALKING_DURATION</AddPromotion>
 			</AddPromotions>
 			<bImmuneNeutral>1</bImmuneNeutral>
-			<bImmuneNotAlive>1</bImmuneNotAlive>
 			<Effect>EFFECT_CREATION</Effect>
 			<Sound>AS3D_SPELL_WATER</Sound>
 			<Button>Art/Interface/Buttons/Promotions/Waterwalking.dds</Button>
@@ -10073,6 +10072,23 @@
 			<Effect>EFFECT_WIND_SWIRL</Effect>
 			<Sound>AS3D_WATER_FLOW</Sound>
 			<Button>Art/Interface/Buttons/Units/BloodyHuman.dds</Button>
+		</SpellInfo>
+		<SpellInfo>			<!-- Blood Dragon Offering of Sacrifice -->
+			<Type>SPELL_OFFERING_OF_SACRIFICE</Type>
+			<Description>TXT_KEY_SPELL_OFFERING_OF_SACRIFICE</Description>
+			<Civilopedia>TXT_KEY_SPELL_OFFERING_OF_SACRIFICE_PEDIA</Civilopedia>
+			<Help>TXT_KEY_SPELL_OFFERING_OF_SACRIFICE_HELP</Help>
+			<PromotionPrereq1>PROMOTION_BLOOD_DRAGON_AURA</PromotionPrereq1>
+			<bAllowAI>1</bAllowAI>
+			<iAIWeight>999</iAIWeight>
+			<bHasCasted>1</bHasCasted>
+			<bSacrificeCaster>1</bSacrificeCaster>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<PyRequirement>reqBloodDragonSac(pCaster) </PyRequirement>
+			<PyResult>spellBloodDragonSac(pCaster)</PyResult>
+			<Effect>EFFECT_SACRIFICE</Effect>
+			<Sound>AS3D_SPELL_FEAST</Sound>
+			<Button>Art/Interface/Buttons/Spells/BloodSacrifice.dds</Button>
 		</SpellInfo>
 		<SpellInfo>			<!-- Swarm of Scorpion Bats -->
 			<Type>SPELL_SWARM_OF_SCORPIONBATS</Type>

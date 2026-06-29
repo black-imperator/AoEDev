@@ -430,7 +430,6 @@
 			</SpawnFeatures>
 			<PrereqTechORs>
 				<Tech>TECH_TRACKING</Tech>
-				<Tech>TECH_WAY_OF_THE_FORESTS</Tech>
 			</PrereqTechORs>
 		</SpawnGroupInfo>
 		<SpawnGroupInfo>	<!--  Trolls-->
@@ -1133,7 +1132,6 @@
 			</GroupUnits>
 			<PrereqTechORs>
 				<Tech>TECH_FANATICISM</Tech>
-				<Tech>TECH_MESSAGE_FROM_THE_DEEP</Tech>
 			</PrereqTechORs>
 		</SpawnGroupInfo>
 		<SpawnGroupInfo>	<!--  Savage Horde -->
@@ -2025,7 +2023,7 @@
 			</CommanderUnits>
 			<GroupUnits>
 				<GroupUnit>
-					<Unit>UNIT_JARL</Unit>
+					<Unit>UNIT_JOT_GIANT_CHAMPION</Unit>
 					<iNumUnits>1</iNumUnits>
 				</GroupUnit>
 			</GroupUnits>
