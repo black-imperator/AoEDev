@@ -10209,7 +10209,7 @@
 			<bInCityOnly>1</bInCityOnly>
 			<bHasCasted>1</bHasCasted>
 			<bAbility>1</bAbility>
-			<iCost>30</iCost>
+			<iCost>40</iCost>
 			<PyResult>spellSlaveTradeBuy(pCaster)</PyResult>
 			<PyRequirement>reqSlaveTradeBuy(pCaster)</PyRequirement>
 			<Effect>EFFECT_SPELL1</Effect>

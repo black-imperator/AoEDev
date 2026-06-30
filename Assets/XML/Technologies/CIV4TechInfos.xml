@@ -329,7 +329,7 @@
 			<Strategy>TEXT_MUST_BE_WRITTEN</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iAIWeight>60</iAIWeight>
-			<iCost>6400</iCost>
+			<iCost>4600</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_MEDIEVAL</Era>
 			<iAsset>56</iAsset>
@@ -452,7 +452,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iAIWeight>55</iAIWeight>
 			<iAITradeModifier>10</iAITradeModifier>
-			<iCost>2400</iCost>
+			<iCost>2100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_CLASSICAL</Era>
 			<iAsset>48</iAsset>
@@ -2157,7 +2157,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iAIWeight>80</iAIWeight>
 			<iAITradeModifier>10</iAITradeModifier>
-			<iCost>8000</iCost>
+			<iCost>7700</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_MEDIEVAL</Era>
 			<iAsset>56</iAsset>
@@ -2546,7 +2546,7 @@
 			<Strategy>TEXT_MUST_BE_WRITTEN</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iAIWeight>30</iAIWeight>
-			<iCost>800</iCost>
+			<iCost>950</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_CLASSICAL</Era>
 			<iAsset>32</iAsset>
@@ -2587,7 +2587,7 @@
 			<Strategy>TEXT_MUST_BE_WRITTEN</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iAIWeight>30</iAIWeight>
-			<iCost>6400</iCost>
+			<iCost>3200</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_MEDIEVAL</Era>
 			<iAsset>56</iAsset>
