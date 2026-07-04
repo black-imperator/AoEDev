@@ -4,14 +4,14 @@
 <!-- Copyright Firaxis Games 2005 -->
 <!-- -->
 <!-- Build Infos -->
-<Civ4BuildInfos xmlns="x-schema:CIV4UnitSchema.xml">
+<Civ4BuildInfos xmlns="x-schema:CI_CIV4UnitSchema.xml">
 	<BuildInfos>
 		<BuildInfo> <!-- Road 0-->
 			<Type>BUILD_ROAD</Type>
 			<Description>TXT_KEY_BUILD_ROAD</Description>
 			<Help/>
-			<PrereqTech>NONE</PrereqTech>
-			<iTime>800</iTime>
+			<PrereqTech>TECH_EXPLORATION</PrereqTech>
+			<iTime>400</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<bStandard>1</bStandard>
@@ -27,12 +27,12 @@
 			<Button>,Art/Interface/Buttons/Builds/BuildRoad.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,1,8</Button>
 			<TechBuildDiscounts>
 				<TechBuildDiscount>
-					<TechType>TECH_EXPLORATION</TechType>
-					<iDiscount>250</iDiscount>
+					<TechType>TECH_MATHEMATICS</TechType>
+					<iDiscount>50</iDiscount>
 				</TechBuildDiscount>
 				<TechBuildDiscount>
 					<TechType>TECH_TRADE</TechType>
-					<iDiscount>250</iDiscount>
+					<iDiscount>50</iDiscount>
 				</TechBuildDiscount>
 			</TechBuildDiscounts>
 		</BuildInfo>
@@ -41,7 +41,7 @@
 			<Description>TXT_KEY_BUILD_RAILROAD</Description>
 			<Help/>
 			<PrereqTech>TECH_STEAM_POWER</PrereqTech>
-			<iTime>1200</iTime>
+			<iTime>600</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<ImprovementType>NONE</ImprovementType>
@@ -62,7 +62,7 @@
 			<Description>TXT_KEY_BUILD_TRAIL</Description>
 			<Help/>
 			<PrereqTech>NONE</PrereqTech>
-			<iTime>600</iTime>
+			<iTime>300</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<ImprovementType>NONE</ImprovementType>
@@ -81,7 +81,7 @@
 			<Description>TXT_KEY_BUILD_PATH_OF_LUGUS</Description>
 			<Help/>
 			<PrereqTech>TECH_HONOR</PrereqTech>
-			<iTime>1200</iTime>
+			<iTime>600</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<ImprovementType>NONE</ImprovementType>
@@ -96,12 +96,12 @@
 			<Button>Art/Interface/Buttons/Builds/LugusCharlesUrbach.dds</Button>
 			<TechBuildDiscounts>
 				<TechBuildDiscount>
-					<TechType>TECH_EXPLORATION</TechType>
-					<iDiscount>250</iDiscount>
+					<TechType>TECH_DIVINATION</TechType>
+					<iDiscount>100</iDiscount>
 				</TechBuildDiscount>
 				<TechBuildDiscount>
-					<TechType>TECH_TRADE</TechType>
-					<iDiscount>250</iDiscount>
+					<TechType>TECH_PRIESTHOOD</TechType>
+					<iDiscount>100</iDiscount>
 				</TechBuildDiscount>
 			</TechBuildDiscounts>
 		</BuildInfo>
@@ -110,7 +110,7 @@
 			<Description>TXT_KEY_STYGIAN_SHRINE</Description>
 			<PrereqTech>TECH_MESSAGE_FROM_THE_DEEP</PrereqTech>
 			<Help/>
-			<iTime>1500</iTime>
+			<iTime>1800</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<ImprovementType>IMPROVEMENTCLASS_STYGIAN_SHRINE</ImprovementType>
@@ -125,20 +125,22 @@
 			<TechBuildDiscounts>
 				<TechBuildDiscount>
 					<TechType>TECH_CONSTRUCTION</TechType>
-					<iDiscount>700</iDiscount>
+					<iDiscount>300</iDiscount>
 				</TechBuildDiscount>
 				<TechBuildDiscount>
 					<TechType>TECH_MIND_STAPLING</TechType>
-					<iDiscount>700</iDiscount>
+					<iDiscount>300</iDiscount>
 				</TechBuildDiscount>
+			</TechBuildDiscounts>
+			<TechBuildDiscounts>
 			</TechBuildDiscounts>
 		</BuildInfo>
 		<BuildInfo> <!-- Farm -->
 			<Type>BUILD_FARM</Type>
 			<Description>TXT_KEY_BUILD_FARM</Description>
 			<Help/>
-			<PrereqTech>NONE</PrereqTech>
-			<iTime>2000</iTime>
+			<PrereqTech>TECH_AGRICULTURE</PrereqTech>
+			<iTime>900</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<bStandard>1</bStandard>
@@ -194,12 +196,16 @@
 			<Button>,Art/Interface/Buttons/Builds/BuildFarm.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,3,7</Button>
 			<TechBuildDiscounts>
 				<TechBuildDiscount>
-					<TechType>TECH_AGRICULTURE</TechType>
-					<iDiscount>500</iDiscount>
+					<TechType>TECH_SANITATION</TechType>
+					<iDiscount>150</iDiscount>
 				</TechBuildDiscount>
 				<TechBuildDiscount>
 					<TechType>TECH_FEUDALISM</TechType>
-					<iDiscount>500</iDiscount>
+					<iDiscount>150</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_AGRICULTURE</TechType>
+					<iDiscount>5</iDiscount>
 				</TechBuildDiscount>
 			</TechBuildDiscounts>
 		</BuildInfo>
@@ -227,8 +233,8 @@
 			<Type>BUILD_MINE</Type>
 			<Description>TXT_KEY_BUILD_MINE</Description>
 			<Help/>
-			<PrereqTech>NONE</PrereqTech>
-			<iTime>2500</iTime>
+			<PrereqTech>TECH_MINING</PrereqTech>
+			<iTime>900</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<bStandard>1</bStandard>
@@ -284,8 +290,12 @@
 			<Button>,Art/Interface/Buttons/Builds/BuildMine.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,6,7</Button>
 			<TechBuildDiscounts>
 				<TechBuildDiscount>
+					<TechType>TECH_SMELTING</TechType>
+					<iDiscount>300</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
 					<TechType>TECH_MINING</TechType>
-					<iDiscount>825</iDiscount>
+					<iDiscount>5</iDiscount>
 				</TechBuildDiscount>
 			</TechBuildDiscounts>
 		</BuildInfo>
@@ -293,8 +303,8 @@
 			<Type>BUILD_CATACOMBS</Type>
 			<Description>TXT_KEY_BUILD_CATACOMBS</Description>
 			<Help/>
-			<PrereqTech>NONE</PrereqTech>
-			<iTime>2500</iTime>
+			<PrereqTech>TECH_MINING</PrereqTech>
+			<iTime>900</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<LinkedBuilds>
@@ -349,8 +359,12 @@
 			<Button>Art/Civs/Dtesh/HauntedMine/HauntedMine.dds</Button>
 			<TechBuildDiscounts>
 				<TechBuildDiscount>
+					<TechType>TECH_SMELTING</TechType>
+					<iDiscount>300</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
 					<TechType>TECH_MINING</TechType>
-					<iDiscount>825</iDiscount>
+					<iDiscount>5</iDiscount>
 				</TechBuildDiscount>
 			</TechBuildDiscounts>
 		</BuildInfo>
@@ -358,8 +372,8 @@
 			<Type>BUILD_WORKSHOP</Type>
 			<Description>TXT_KEY_BUILD_WORKSHOP</Description>
 			<Help/>
-			<PrereqTech>NONE</PrereqTech>
-			<iTime>2500</iTime>
+			<PrereqTech>TECH_MASONRY</PrereqTech>
+			<iTime>900</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<LinkedBuilds>
@@ -414,12 +428,16 @@
 			<Button>,Art/Interface/Buttons/Builds/BuildWorkshop.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,8,8</Button>
 			<TechBuildDiscounts>
 				<TechBuildDiscount>
-					<TechType>TECH_CRAFTING</TechType>
-					<iDiscount>625</iDiscount>
+					<TechType>TECH_MATHEMATICS</TechType>
+					<iDiscount>150</iDiscount>
 				</TechBuildDiscount>
 				<TechBuildDiscount>
 					<TechType>TECH_SMELTING</TechType>
-					<iDiscount>625</iDiscount>
+					<iDiscount>150</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_CRAFTING</TechType>
+					<iDiscount>5</iDiscount>
 				</TechBuildDiscount>
 			</TechBuildDiscounts>
 		</BuildInfo>
@@ -428,7 +446,7 @@
 			<Description>TXT_KEY_BUILD_LUMBERMILL</Description>
 			<Help/>
 			<PrereqTech>TECH_SMELTING</PrereqTech>
-			<iTime>3500</iTime>
+			<iTime>1350</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<ImprovementType>IMPROVEMENTCLASS_LUMBERMILL</ImprovementType>
@@ -444,7 +462,7 @@
 			<TechBuildDiscounts>
 				<TechBuildDiscount>
 					<TechType>TECH_IRON_WORKING</TechType>
-					<iDiscount>1750</iDiscount>
+					<iDiscount>450</iDiscount>
 				</TechBuildDiscount>
 			</TechBuildDiscounts>
 		</BuildInfo>
@@ -453,7 +471,7 @@
 			<Description>TXT_KEY_BUILD_WINDMILL</Description>
 			<Help/>
 			<PrereqTech>TECH_MATHEMATICS</PrereqTech>
-			<iTime>3500</iTime>
+			<iTime>1350</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<LinkedBuilds>
@@ -509,7 +527,7 @@
 			<TechBuildDiscounts>
 				<TechBuildDiscount>
 					<TechType>TECH_ENGINEERING</TechType>
-					<iDiscount>1750</iDiscount>
+					<iDiscount>450</iDiscount>
 				</TechBuildDiscount>
 			</TechBuildDiscounts>
 		</BuildInfo>
@@ -518,7 +536,7 @@
 			<Description>TXT_KEY_BUILD_WATERMILL</Description>
 			<Help/>
 			<PrereqTech>TECH_MATHEMATICS</PrereqTech>
-			<iTime>3500</iTime>
+			<iTime>1350</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<LinkedBuilds>
@@ -574,7 +592,7 @@
 			<TechBuildDiscounts>
 				<TechBuildDiscount>
 					<TechType>TECH_ENGINEERING</TechType>
-					<iDiscount>1750</iDiscount>
+					<iDiscount>450</iDiscount>
 				</TechBuildDiscount>
 			</TechBuildDiscounts>
 		</BuildInfo>
@@ -583,7 +601,7 @@
 			<Description>TXT_KEY_BUILD_PLANTATION</Description>
 			<Help/>
 			<PrereqTech>TECH_CALENDAR</PrereqTech>
-			<iTime>2500</iTime>
+			<iTime>900</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<LinkedBuilds>
@@ -643,7 +661,7 @@
 			<Description>TXT_KEY_BUILD_QUARRY</Description>
 			<Help/>
 			<PrereqTech>TECH_MASONRY</PrereqTech>
-			<iTime>2500</iTime>
+			<iTime>900</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<LinkedBuilds>
@@ -703,7 +721,7 @@
 			<Description>TXT_KEY_BUILD_PASTURE</Description>
 			<Help/>
 			<PrereqTech>TECH_ANIMAL_HUSBANDRY</PrereqTech>
-			<iTime>2000</iTime>
+			<iTime>900</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<LinkedBuilds>
@@ -762,8 +780,8 @@
 			<Type>BUILD_CAMP</Type>
 			<Description>TXT_KEY_BUILD_CAMP</Description>
 			<Help/>
-			<PrereqTech>NONE</PrereqTech>
-			<iTime>2000</iTime>
+			<PrereqTech>TECH_CARTOGRAPHY</PrereqTech>
+			<iTime>900</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<bStandard>1</bStandard>
@@ -780,7 +798,11 @@
 			<TechBuildDiscounts>
 				<TechBuildDiscount>
 					<TechType>TECH_HUNTING</TechType>
-					<iDiscount>500</iDiscount>
+					<iDiscount>150</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_ANIMAL_HANDLING</TechType>
+					<iDiscount>150</iDiscount>
 				</TechBuildDiscount>
 			</TechBuildDiscounts>
 		</BuildInfo>
@@ -789,7 +811,7 @@
 			<Description>TXT_KEY_BUILD_WINERY</Description>
 			<Help/>
 			<PrereqTech>TECH_CRAFTING</PrereqTech>
-			<iTime>2000</iTime>
+			<iTime>900</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<LinkedBuilds>
@@ -847,8 +869,8 @@
 			<Type>BUILD_COTTAGE</Type>
 			<Description>TXT_KEY_BUILD_COTTAGE</Description>
 			<Help/>
-			<PrereqTech>NONE</PrereqTech>
-			<iTime>3000</iTime>
+			<PrereqTech>TECH_EDUCATION</PrereqTech>
+			<iTime>1350</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<bStandard>1</bStandard>
@@ -904,12 +926,16 @@
 			<Button>,Art/Interface/Buttons/Builds/BuildCottage.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,2,7</Button>
 			<TechBuildDiscounts>
 				<TechBuildDiscount>
-					<TechType>TECH_EDUCATION</TechType>
-					<iDiscount>750</iDiscount>
+					<TechType>TECH_CONSTRUCTION</TechType>
+					<iDiscount>225</iDiscount>
 				</TechBuildDiscount>
 				<TechBuildDiscount>
 					<TechType>TECH_CURRENCY</TechType>
-					<iDiscount>750</iDiscount>
+					<iDiscount>225</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_EDUCATION</TechType>
+					<iDiscount>5</iDiscount>
 				</TechBuildDiscount>
 			</TechBuildDiscounts>
 		</BuildInfo>
@@ -917,8 +943,8 @@
 			<Type>BUILD_FORT</Type>
 			<Description>TXT_KEY_BUILD_FORT</Description>
 			<Help/>
-			<PrereqTech>NONE</PrereqTech>
-			<iTime>3200</iTime>
+			<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
+			<iTime>1350</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<LinkedBuilds>
@@ -973,8 +999,12 @@
 			<Button>,Art/Interface/Buttons/Builds/BuildFort.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,7,9</Button>
 			<TechBuildDiscounts>
 				<TechBuildDiscount>
+					<TechType>TECH_MILITARY_STRATEGY</TechType>
+					<iDiscount>450</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
 					<TechType>TECH_CONSTRUCTION</TechType>
-					<iDiscount>2400</iDiscount>
+					<iDiscount>5</iDiscount>
 				</TechBuildDiscount>
 			</TechBuildDiscounts>
 		</BuildInfo>
@@ -983,7 +1013,7 @@
 			<Description>TXT_KEY_BUILD_MAUSOLEUM_LESSER</Description>
 			<Help/>
 			<PrereqTech>NONE</PrereqTech>
-			<iTime>3200</iTime>
+			<iTime>1350</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<LinkedBuilds>
@@ -1038,134 +1068,14 @@
 			<Button>Art/Civs/Dtesh/HauntedFort/HauntedFort.dds</Button>
 			<TechBuildDiscounts>
 				<TechBuildDiscount>
-					<TechType>TECH_CONSTRUCTION</TechType>
-					<iDiscount>2400</iDiscount>
+					<TechType>TECH_MILITARY_STRATEGY</TechType>
+					<iDiscount>450</iDiscount>
 				</TechBuildDiscount>
-			</TechBuildDiscounts>
-		</BuildInfo>
-		<BuildInfo> <!-- Mausoleum -->
-			<Type>BUILD_MAUSOLEUM</Type>
-			<Description>TXT_KEY_BUILD_MAUSOLEUM</Description>
-			<Help/>
-			<PrereqTech>NONE</PrereqTech>
-			<iTime>3200</iTime>
-			<iCost>0</iCost>
-			<bKill>0</bKill>
-			<LinkedBuilds>
-				<LinkedBuild>BUILD_REMOVE_FOREST</LinkedBuild>
-				<LinkedBuild>BUILD_REMOVE_JUNGLE</LinkedBuild>
-			</LinkedBuilds>
-			<ImprovementType>IMPROVEMENTCLASS_CASTLE</ImprovementType>
-			<RouteType>NONE</RouteType>
-			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
-			<FeatureStructs>
-				<FeatureStruct>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>1000</iTime>
-					<iProduction>10</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>800</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>2000</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-			</FeatureStructs>
-			<HotKey>KB_F</HotKey>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>0</bShiftDown>
-			<bCtrlDown>1</bCtrlDown>
-			<iHotKeyPriority>0</iHotKeyPriority>
-			<Button>Art/Civs/Dtesh/HauntedFort/HauntedCastle.dds</Button>
-			<TechBuildDiscounts>
 				<TechBuildDiscount>
 					<TechType>TECH_CONSTRUCTION</TechType>
-					<iDiscount>2400</iDiscount>
+					<iDiscount>5</iDiscount>
 				</TechBuildDiscount>
 			</TechBuildDiscounts>
-		</BuildInfo>
-		<BuildInfo> <!-- Castle 20-->
-			<Type>BUILD_CASTLE</Type>
-			<Description>TXT_KEY_BUILD_CASTLE</Description>
-			<Help/>
-			<PrereqTech>NONE</PrereqTech>
-			<iTime>800</iTime>
-			<iCost>0</iCost>
-			<bKill>0</bKill>
-			<LinkedBuilds>
-				<LinkedBuild>BUILD_REMOVE_FOREST</LinkedBuild>
-				<LinkedBuild>BUILD_REMOVE_JUNGLE</LinkedBuild>
-			</LinkedBuilds>
-			<ImprovementType>IMPROVEMENTCLASS_CASTLE</ImprovementType>
-			<RouteType>NONE</RouteType>
-			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
-			<FeatureStructs>
-				<FeatureStruct>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>1000</iTime>
-					<iProduction>10</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>800</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>2000</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-			</FeatureStructs>
-			<HotKey>KB_F</HotKey>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>0</bShiftDown>
-			<bCtrlDown>1</bCtrlDown>
-			<iHotKeyPriority>0</iHotKeyPriority>
-			<Button>,Art/Interface/Buttons/Builds/BuildFort.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,7,9</Button>
 		</BuildInfo>
 		<BuildInfo> <!-- Remove Jungle -->
 			<Type>BUILD_REMOVE_JUNGLE</Type>
@@ -1182,7 +1092,7 @@
 				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
 					<PrereqTech>NONE</PrereqTech>
-					<iTime>600</iTime>
+					<iTime>300</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
@@ -1211,28 +1121,28 @@
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
 					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
+					<iTime>250</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
 					<PrereqTech>NONE</PrereqTech>
-					<iTime>100</iTime>
+					<iTime>50</iTime>
 					<iProduction>5</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
 					<PrereqTech>NONE</PrereqTech>
-					<iTime>250</iTime>
+					<iTime>125</iTime>
 					<iProduction>15</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
 					<PrereqTech>NONE</PrereqTech>
-					<iTime>1000</iTime>
+					<iTime>500</iTime>
 					<iProduction>45</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
@@ -1246,1251 +1156,12 @@
 			<TechBuildDiscounts>
 			</TechBuildDiscounts>
 		</BuildInfo>
-		<BuildInfo>
-			<Type>BUILD_MANA_AIR</Type>
-			<Description>TXT_KEY_BUILD_MANA_AIR</Description>
-			<Help/>
-			<PrereqTech>TECH_ELEMENTALISM</PrereqTech>
-			<iTime>1200</iTime>
-			<iCost>0</iCost>
-			<bKill>0</bKill>
-			<LinkedBuilds>
-				<LinkedBuild>BUILD_REMOVE_FOREST</LinkedBuild>
-				<LinkedBuild>BUILD_REMOVE_JUNGLE</LinkedBuild>
-			</LinkedBuilds>
-			<ImprovementType>IMPROVEMENTCLASS_MANA_AIR</ImprovementType>
-			<RouteType>NONE</RouteType>
-			<EntityEvent>ENTITY_EVENT_SHOVEL</EntityEvent>
-			<FeatureStructs>
-				<FeatureStruct>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>1000</iTime>
-					<iProduction>10</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>800</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>2000</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-			</FeatureStructs>
-			<HotKey>KB_S</HotKey>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>1</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>1</iHotKeyPriority>
-			<Button>Art/Interface/Buttons/Worldbuilder/Air.dds</Button>
-		</BuildInfo>
-		<BuildInfo>
-			<Type>BUILD_MANA_BODY</Type>
-			<Description>TXT_KEY_BUILD_MANA_BODY</Description>
-			<Help/>
-			<PrereqTech>TECH_ALTERATION</PrereqTech>
-			<iTime>1200</iTime>
-			<iCost>0</iCost>
-			<bKill>0</bKill>
-			<LinkedBuilds>
-				<LinkedBuild>BUILD_REMOVE_FOREST</LinkedBuild>
-				<LinkedBuild>BUILD_REMOVE_JUNGLE</LinkedBuild>
-			</LinkedBuilds>
-			<ImprovementType>IMPROVEMENTCLASS_MANA_BODY</ImprovementType>
-			<RouteType>NONE</RouteType>
-			<EntityEvent>ENTITY_EVENT_SHOVEL</EntityEvent>
-			<FeatureStructs>
-				<FeatureStruct>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>1000</iTime>
-					<iProduction>10</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>800</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>2000</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-			</FeatureStructs>
-			<HotKey>KB_S</HotKey>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>1</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>1</iHotKeyPriority>
-			<Button>Art/Interface/Buttons/Worldbuilder/Body.dds</Button>
-		</BuildInfo>
-		<BuildInfo>
-			<Type>BUILD_MANA_CHAOS</Type>
-			<Description>TXT_KEY_BUILD_MANA_CHAOS</Description>
-			<Help/>
-			<PrereqTech>TECH_NECROMANCY</PrereqTech>
-			<iTime>1200</iTime>
-			<iCost>0</iCost>
-			<bKill>0</bKill>
-			<LinkedBuilds>
-				<LinkedBuild>BUILD_REMOVE_FOREST</LinkedBuild>
-				<LinkedBuild>BUILD_REMOVE_JUNGLE</LinkedBuild>
-			</LinkedBuilds>
-			<ImprovementType>IMPROVEMENTCLASS_MANA_CHAOS</ImprovementType>
-			<RouteType>NONE</RouteType>
-			<EntityEvent>ENTITY_EVENT_SHOVEL</EntityEvent>
-			<FeatureStructs>
-				<FeatureStruct>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>1000</iTime>
-					<iProduction>10</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>800</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>2000</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-			</FeatureStructs>
-			<HotKey>KB_S</HotKey>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>1</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>1</iHotKeyPriority>
-			<Button>Art/Interface/Buttons/Worldbuilder/Chaos.dds</Button>
-		</BuildInfo>
-		<BuildInfo>
-			<Type>BUILD_MANA_CREATION</Type>
-			<Description>TXT_KEY_BUILD_MANA_CREATION</Description>
-			<Help/>
-			<PrereqTech>TECH_ALTERATION</PrereqTech>
-			<iTime>1200</iTime>
-			<iCost>0</iCost>
-			<bKill>0</bKill>
-			<LinkedBuilds>
-				<LinkedBuild>BUILD_REMOVE_FOREST</LinkedBuild>
-				<LinkedBuild>BUILD_REMOVE_JUNGLE</LinkedBuild>
-			</LinkedBuilds>
-			<ImprovementType>IMPROVEMENTCLASS_MANA_CREATION</ImprovementType>
-			<RouteType>NONE</RouteType>
-			<EntityEvent>ENTITY_EVENT_SHOVEL</EntityEvent>
-			<FeatureStructs>
-				<FeatureStruct>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>1000</iTime>
-					<iProduction>10</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>800</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>2000</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-			</FeatureStructs>
-			<HotKey>KB_S</HotKey>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>1</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>1</iHotKeyPriority>
-			<Button>Art/Interface/Buttons/Improvements/Creation.dds</Button>
-		</BuildInfo>
-		<BuildInfo>
-			<Type>BUILD_MANA_DEATH</Type>
-			<Description>TXT_KEY_BUILD_MANA_DEATH</Description>
-			<Help/>
-			<PrereqTech>TECH_NECROMANCY</PrereqTech>
-			<iTime>1200</iTime>
-			<iCost>0</iCost>
-			<bKill>0</bKill>
-			<LinkedBuilds>
-				<LinkedBuild>BUILD_REMOVE_FOREST</LinkedBuild>
-				<LinkedBuild>BUILD_REMOVE_JUNGLE</LinkedBuild>
-			</LinkedBuilds>
-			<ImprovementType>IMPROVEMENTCLASS_MANA_DEATH</ImprovementType>
-			<RouteType>NONE</RouteType>
-			<EntityEvent>ENTITY_EVENT_SHOVEL</EntityEvent>
-			<FeatureStructs>
-				<FeatureStruct>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>1000</iTime>
-					<iProduction>10</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>800</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>2000</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-			</FeatureStructs>
-			<HotKey>KB_S</HotKey>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>1</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>1</iHotKeyPriority>
-			<Button>Art/Interface/Buttons/Worldbuilder/Death.dds</Button>
-		</BuildInfo>
-		<BuildInfo>
-			<Type>BUILD_MANA_DIMENSIONAL</Type>
-			<Description>TXT_KEY_BUILD_MANA_DIMENSIONAL</Description>
-			<Help/>
-			<PrereqTech>TECH_NECROMANCY</PrereqTech>
-			<iTime>1200</iTime>
-			<iCost>0</iCost>
-			<bKill>0</bKill>
-			<LinkedBuilds>
-				<LinkedBuild>BUILD_REMOVE_FOREST</LinkedBuild>
-				<LinkedBuild>BUILD_REMOVE_JUNGLE</LinkedBuild>
-			</LinkedBuilds>
-			<ImprovementType>IMPROVEMENTCLASS_MANA_DIMENSIONAL</ImprovementType>
-			<RouteType>NONE</RouteType>
-			<EntityEvent>ENTITY_EVENT_SHOVEL</EntityEvent>
-			<FeatureStructs>
-				<FeatureStruct>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>1000</iTime>
-					<iProduction>10</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>800</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>2000</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-			</FeatureStructs>
-			<HotKey>KB_S</HotKey>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>1</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>1</iHotKeyPriority>
-			<Button>Art/Interface/Buttons/Improvements/Dimensional.dds</Button>
-		</BuildInfo>
-		<BuildInfo>
-			<Type>BUILD_MANA_EARTH</Type>
-			<Description>TXT_KEY_BUILD_MANA_EARTH</Description>
-			<Help/>
-			<PrereqTech>TECH_ELEMENTALISM</PrereqTech>
-			<iTime>1200</iTime>
-			<iCost>0</iCost>
-			<bKill>0</bKill>
-			<LinkedBuilds>
-				<LinkedBuild>BUILD_REMOVE_FOREST</LinkedBuild>
-				<LinkedBuild>BUILD_REMOVE_JUNGLE</LinkedBuild>
-			</LinkedBuilds>
-			<ImprovementType>IMPROVEMENTCLASS_MANA_EARTH</ImprovementType>
-			<RouteType>NONE</RouteType>
-			<EntityEvent>ENTITY_EVENT_SHOVEL</EntityEvent>
-			<FeatureStructs>
-				<FeatureStruct>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>1000</iTime>
-					<iProduction>10</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>800</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>2000</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-			</FeatureStructs>
-			<HotKey>KB_S</HotKey>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>1</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>1</iHotKeyPriority>
-			<Button>Art/Interface/Buttons/Worldbuilder/Earth.dds</Button>
-		</BuildInfo>
-		<BuildInfo><!-- Enchantment Mana 30-->
-			<Type>BUILD_MANA_ENCHANTMENT</Type>
-			<Description>TXT_KEY_BUILD_MANA_ENCHANTMENT</Description>
-			<Help/>
-			<PrereqTech>TECH_ALTERATION</PrereqTech>
-			<iTime>1200</iTime>
-			<iCost>0</iCost>
-			<bKill>0</bKill>
-			<LinkedBuilds>
-				<LinkedBuild>BUILD_REMOVE_FOREST</LinkedBuild>
-				<LinkedBuild>BUILD_REMOVE_JUNGLE</LinkedBuild>
-			</LinkedBuilds>
-			<ImprovementType>IMPROVEMENTCLASS_MANA_ENCHANTMENT</ImprovementType>
-			<RouteType>NONE</RouteType>
-			<EntityEvent>ENTITY_EVENT_SHOVEL</EntityEvent>
-			<FeatureStructs>
-				<FeatureStruct>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>1000</iTime>
-					<iProduction>10</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>800</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>2000</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-			</FeatureStructs>
-			<HotKey>KB_S</HotKey>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>1</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>1</iHotKeyPriority>
-			<Button>Art/Interface/Buttons/Worldbuilder/Enchantment.dds</Button>
-		</BuildInfo>
-		<BuildInfo>
-			<Type>BUILD_MANA_ENTROPY</Type>
-			<Description>TXT_KEY_BUILD_MANA_ENTROPY</Description>
-			<Help/>
-			<PrereqTech>TECH_NECROMANCY</PrereqTech>
-			<iTime>1200</iTime>
-			<iCost>0</iCost>
-			<bKill>0</bKill>
-			<LinkedBuilds>
-				<LinkedBuild>BUILD_REMOVE_FOREST</LinkedBuild>
-				<LinkedBuild>BUILD_REMOVE_JUNGLE</LinkedBuild>
-			</LinkedBuilds>
-			<ImprovementType>IMPROVEMENTCLASS_MANA_ENTROPY</ImprovementType>
-			<RouteType>NONE</RouteType>
-			<EntityEvent>ENTITY_EVENT_SHOVEL</EntityEvent>
-			<FeatureStructs>
-				<FeatureStruct>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>1000</iTime>
-					<iProduction>10</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>800</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>2000</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-			</FeatureStructs>
-			<HotKey>KB_S</HotKey>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>1</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>1</iHotKeyPriority>
-			<Button>Art/Interface/Buttons/Worldbuilder/Entropy.dds</Button>
-		</BuildInfo>
-		<BuildInfo>
-			<Type>BUILD_MANA_FIRE</Type>
-			<Description>TXT_KEY_BUILD_MANA_FIRE</Description>
-			<Help/>
-			<PrereqTech>TECH_ELEMENTALISM</PrereqTech>
-			<iTime>1200</iTime>
-			<iCost>0</iCost>
-			<bKill>0</bKill>
-			<LinkedBuilds>
-				<LinkedBuild>BUILD_REMOVE_FOREST</LinkedBuild>
-				<LinkedBuild>BUILD_REMOVE_JUNGLE</LinkedBuild>
-			</LinkedBuilds>
-			<ImprovementType>IMPROVEMENTCLASS_MANA_FIRE</ImprovementType>
-			<RouteType>NONE</RouteType>
-			<EntityEvent>ENTITY_EVENT_SHOVEL</EntityEvent>
-			<FeatureStructs>
-				<FeatureStruct>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>1000</iTime>
-					<iProduction>10</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>800</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>2000</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-			</FeatureStructs>
-			<HotKey>KB_S</HotKey>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>1</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>1</iHotKeyPriority>
-			<Button>Art/Interface/Buttons/Worldbuilder/Fire.dds</Button>
-		</BuildInfo>
-		<BuildInfo>
-			<Type>BUILD_MANA_FORCE</Type>
-			<Description>TXT_KEY_BUILD_MANA_FORCE</Description>
-			<Help/>
-			<PrereqTech>TECH_ALTERATION</PrereqTech>
-			<iTime>1200</iTime>
-			<iCost>0</iCost>
-			<bKill>0</bKill>
-			<LinkedBuilds>
-				<LinkedBuild>BUILD_REMOVE_FOREST</LinkedBuild>
-				<LinkedBuild>BUILD_REMOVE_JUNGLE</LinkedBuild>
-			</LinkedBuilds>
-			<ImprovementType>IMPROVEMENTCLASS_MANA_FORCE</ImprovementType>
-			<RouteType>NONE</RouteType>
-			<EntityEvent>ENTITY_EVENT_SHOVEL</EntityEvent>
-			<FeatureStructs>
-				<FeatureStruct>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>1000</iTime>
-					<iProduction>10</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>800</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>2000</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-			</FeatureStructs>
-			<HotKey>KB_S</HotKey>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>1</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>1</iHotKeyPriority>
-			<Button>Art/Interface/Buttons/Improvements/Force.dds</Button>
-		</BuildInfo>
-		<BuildInfo>
-			<Type>BUILD_MANA_ICE</Type>
-			<Description>TXT_KEY_BUILD_MANA_ICE</Description>
-			<Help/>
-			<PrereqTech>TECH_ELEMENTALISM</PrereqTech>
-			<iTime>1200</iTime>
-			<iCost>0</iCost>
-			<bKill>0</bKill>
-			<LinkedBuilds>
-				<LinkedBuild>BUILD_REMOVE_FOREST</LinkedBuild>
-				<LinkedBuild>BUILD_REMOVE_JUNGLE</LinkedBuild>
-			</LinkedBuilds>
-			<ImprovementType>IMPROVEMENTCLASS_MANA_ICE</ImprovementType>
-			<RouteType>NONE</RouteType>
-			<EntityEvent>ENTITY_EVENT_SHOVEL</EntityEvent>
-			<FeatureStructs>
-				<FeatureStruct>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>1000</iTime>
-					<iProduction>10</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>800</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>2000</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-			</FeatureStructs>
-			<HotKey>KB_S</HotKey>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>1</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>1</iHotKeyPriority>
-			<Button>Art/Interface/Buttons/Improvements/Ice.dds</Button>
-		</BuildInfo>
-		<BuildInfo>
-			<Type>BUILD_MANA_LAW</Type>
-			<Description>TXT_KEY_BUILD_MANA_LAW</Description>
-			<Help/>
-			<PrereqTech>TECH_DIVINATION</PrereqTech>
-			<iTime>1200</iTime>
-			<iCost>0</iCost>
-			<bKill>0</bKill>
-			<LinkedBuilds>
-				<LinkedBuild>BUILD_REMOVE_FOREST</LinkedBuild>
-				<LinkedBuild>BUILD_REMOVE_JUNGLE</LinkedBuild>
-			</LinkedBuilds>
-			<ImprovementType>IMPROVEMENTCLASS_MANA_LAW</ImprovementType>
-			<RouteType>NONE</RouteType>
-			<EntityEvent>ENTITY_EVENT_SHOVEL</EntityEvent>
-			<FeatureStructs>
-				<FeatureStruct>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>1000</iTime>
-					<iProduction>10</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>800</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>2000</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-			</FeatureStructs>
-			<HotKey>KB_S</HotKey>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>1</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>1</iHotKeyPriority>
-			<Button>Art/Interface/Buttons/Worldbuilder/Law.dds</Button>
-		</BuildInfo>
-		<BuildInfo>
-			<Type>BUILD_MANA_LIFE</Type>
-			<Description>TXT_KEY_BUILD_MANA_LIFE</Description>
-			<Help/>
-			<PrereqTech>TECH_DIVINATION</PrereqTech>
-			<iTime>1200</iTime>
-			<iCost>0</iCost>
-			<bKill>0</bKill>
-			<LinkedBuilds>
-				<LinkedBuild>BUILD_REMOVE_FOREST</LinkedBuild>
-				<LinkedBuild>BUILD_REMOVE_JUNGLE</LinkedBuild>
-			</LinkedBuilds>
-			<ImprovementType>IMPROVEMENTCLASS_MANA_LIFE</ImprovementType>
-			<RouteType>NONE</RouteType>
-			<EntityEvent>ENTITY_EVENT_SHOVEL</EntityEvent>
-			<FeatureStructs>
-				<FeatureStruct>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>1000</iTime>
-					<iProduction>10</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>800</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>2000</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-			</FeatureStructs>
-			<HotKey>KB_S</HotKey>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>1</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>1</iHotKeyPriority>
-			<Button>Art/Interface/Buttons/Worldbuilder/Life.dds</Button>
-		</BuildInfo>
-		<BuildInfo>
-			<Type>BUILD_MANA_METAMAGIC</Type>
-			<Description>TXT_KEY_BUILD_MANA_METAMAGIC</Description>
-			<Help/>
-			<PrereqTech>TECH_SORCERY</PrereqTech>
-			<iTime>1200</iTime>
-			<iCost>0</iCost>
-			<bKill>0</bKill>
-			<LinkedBuilds>
-				<LinkedBuild>BUILD_REMOVE_FOREST</LinkedBuild>
-				<LinkedBuild>BUILD_REMOVE_JUNGLE</LinkedBuild>
-			</LinkedBuilds>
-			<ImprovementType>IMPROVEMENTCLASS_MANA_METAMAGIC</ImprovementType>
-			<RouteType>NONE</RouteType>
-			<EntityEvent>ENTITY_EVENT_SHOVEL</EntityEvent>
-			<FeatureStructs>
-				<FeatureStruct>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>1000</iTime>
-					<iProduction>10</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>800</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>2000</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-			</FeatureStructs>
-			<HotKey>KB_S</HotKey>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>1</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>1</iHotKeyPriority>
-			<Button>Art/Interface/Buttons/Worldbuilder/Metamagic.dds</Button>
-		</BuildInfo>
-		<BuildInfo>
-			<Type>BUILD_MANA_MIND</Type>
-			<Description>TXT_KEY_BUILD_MANA_MIND</Description>
-			<Help/>
-			<PrereqTech>TECH_DIVINATION</PrereqTech>
-			<iTime>1200</iTime>
-			<iCost>0</iCost>
-			<bKill>0</bKill>
-			<LinkedBuilds>
-				<LinkedBuild>BUILD_REMOVE_FOREST</LinkedBuild>
-				<LinkedBuild>BUILD_REMOVE_JUNGLE</LinkedBuild>
-			</LinkedBuilds>
-			<ImprovementType>IMPROVEMENTCLASS_MANA_MIND</ImprovementType>
-			<RouteType>NONE</RouteType>
-			<EntityEvent>ENTITY_EVENT_SHOVEL</EntityEvent>
-			<FeatureStructs>
-				<FeatureStruct>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>1000</iTime>
-					<iProduction>10</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>800</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>2000</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-			</FeatureStructs>
-			<HotKey>KB_S</HotKey>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>1</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>1</iHotKeyPriority>
-			<Button>Art/Interface/Buttons/Worldbuilder/Mind.dds</Button>
-		</BuildInfo>
-		<BuildInfo>
-			<Type>BUILD_MANA_NATURE</Type>
-			<Description>TXT_KEY_BUILD_MANA_NATURE</Description>
-			<Help/>
-			<PrereqTech>TECH_ALTERATION</PrereqTech>
-			<iTime>1200</iTime>
-			<iCost>0</iCost>
-			<bKill>0</bKill>
-			<LinkedBuilds>
-				<LinkedBuild>BUILD_REMOVE_FOREST</LinkedBuild>
-				<LinkedBuild>BUILD_REMOVE_JUNGLE</LinkedBuild>
-			</LinkedBuilds>
-			<ImprovementType>IMPROVEMENTCLASS_MANA_NATURE</ImprovementType>
-			<RouteType>NONE</RouteType>
-			<EntityEvent>ENTITY_EVENT_SHOVEL</EntityEvent>
-			<FeatureStructs>
-				<FeatureStruct>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>1000</iTime>
-					<iProduction>10</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>800</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>2000</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-			</FeatureStructs>
-			<HotKey>KB_S</HotKey>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>1</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>1</iHotKeyPriority>
-			<Button>Art/Interface/Buttons/Worldbuilder/Nature.dds</Button>
-		</BuildInfo>
-		<BuildInfo><!-- Spirit Mana 40-->
-			<Type>BUILD_MANA_SPIRIT</Type>
-			<Description>TXT_KEY_BUILD_MANA_SPIRIT</Description>
-			<Help/>
-			<PrereqTech>TECH_DIVINATION</PrereqTech>
-			<iTime>1200</iTime>
-			<iCost>0</iCost>
-			<bKill>0</bKill>
-			<LinkedBuilds>
-				<LinkedBuild>BUILD_REMOVE_FOREST</LinkedBuild>
-				<LinkedBuild>BUILD_REMOVE_JUNGLE</LinkedBuild>
-			</LinkedBuilds>
-			<ImprovementType>IMPROVEMENTCLASS_MANA_SPIRIT</ImprovementType>
-			<RouteType>NONE</RouteType>
-			<EntityEvent>ENTITY_EVENT_SHOVEL</EntityEvent>
-			<FeatureStructs>
-				<FeatureStruct>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>1000</iTime>
-					<iProduction>10</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>800</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>2000</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-			</FeatureStructs>
-			<HotKey>KB_S</HotKey>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>1</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>1</iHotKeyPriority>
-			<Button>Art/Interface/Buttons/Worldbuilder/Spirit.dds</Button>
-		</BuildInfo>
-		<BuildInfo>
-			<Type>BUILD_MANA_WATER</Type>
-			<Description>TXT_KEY_BUILD_MANA_WATER</Description>
-			<Help/>
-			<PrereqTech>TECH_ELEMENTALISM</PrereqTech>
-			<iTime>1200</iTime>
-			<iCost>0</iCost>
-			<bKill>0</bKill>
-			<LinkedBuilds>
-				<LinkedBuild>BUILD_REMOVE_FOREST</LinkedBuild>
-				<LinkedBuild>BUILD_REMOVE_JUNGLE</LinkedBuild>
-			</LinkedBuilds>
-			<ImprovementType>IMPROVEMENTCLASS_MANA_WATER</ImprovementType>
-			<RouteType>NONE</RouteType>
-			<EntityEvent>ENTITY_EVENT_SHOVEL</EntityEvent>
-			<FeatureStructs>
-				<FeatureStruct>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>1000</iTime>
-					<iProduction>10</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>800</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>2000</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-			</FeatureStructs>
-			<HotKey>KB_S</HotKey>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>1</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>1</iHotKeyPriority>
-			<Button>Art/Interface/Buttons/Worldbuilder/Water.dds</Button>
-		</BuildInfo>
-		<BuildInfo>
-			<Type>BUILD_MANA_SHADOW</Type>
-			<Description>TXT_KEY_BUILD_MANA_SHADOW</Description>
-			<Help/>
-			<PrereqTech>TECH_NECROMANCY</PrereqTech>
-			<iTime>1200</iTime>
-			<iCost>0</iCost>
-			<bKill>0</bKill>
-			<LinkedBuilds>
-				<LinkedBuild>BUILD_REMOVE_FOREST</LinkedBuild>
-				<LinkedBuild>BUILD_REMOVE_JUNGLE</LinkedBuild>
-			</LinkedBuilds>
-			<ImprovementType>IMPROVEMENTCLASS_MANA_SHADOW</ImprovementType>
-			<RouteType>NONE</RouteType>
-			<EntityEvent>ENTITY_EVENT_SHOVEL</EntityEvent>
-			<FeatureStructs>
-				<FeatureStruct>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>1000</iTime>
-					<iProduction>10</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>800</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>2000</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-			</FeatureStructs>
-			<HotKey>KB_S</HotKey>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>1</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>1</iHotKeyPriority>
-			<Button>Art/Interface/Buttons/Worldbuilder/Shadow.dds</Button>
-		</BuildInfo>
-		<BuildInfo>
-			<Type>BUILD_MANA_SUN</Type>
-			<Description>TXT_KEY_BUILD_MANA_SUN</Description>
-			<Help/>
-			<PrereqTech>TECH_DIVINATION</PrereqTech>
-			<iTime>1200</iTime>
-			<iCost>0</iCost>
-			<bKill>0</bKill>
-			<LinkedBuilds>
-				<LinkedBuild>BUILD_REMOVE_FOREST</LinkedBuild>
-				<LinkedBuild>BUILD_REMOVE_JUNGLE</LinkedBuild>
-			</LinkedBuilds>
-			<ImprovementType>IMPROVEMENTCLASS_MANA_SUN</ImprovementType>
-			<RouteType>NONE</RouteType>
-			<EntityEvent>ENTITY_EVENT_SHOVEL</EntityEvent>
-			<FeatureStructs>
-				<FeatureStruct>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>1000</iTime>
-					<iProduction>10</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>800</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>500</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<PrereqTech>NONE</PrereqTech>
-					<iTime>2000</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-			</FeatureStructs>
-			<HotKey>KB_S</HotKey>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>1</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>1</iHotKeyPriority>
-			<Button>Art/Interface/Buttons/Worldbuilder/Sun.dds</Button>
-		</BuildInfo>
 		<BuildInfo> <!-- Bedouin Sit 44-->
 			<Type>BUILD_BEDOUIN_SIT</Type>
 			<Description>TXT_KEY_BUILD_BEDOUIN_SIT</Description>
 			<Help/>
 			<PrereqTech>NONE</PrereqTech>
-			<iTime>600</iTime>
+			<iTime>1350</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<LinkedBuilds>
@@ -2539,8 +1210,8 @@
 			<Type>BUILD_PYRE</Type>
 			<Description>TXT_KEY_BUILD_PYRE</Description>
 			<Help/>
-			<PrereqTech>TECH_DARK_SECRETS</PrereqTech>
-			<iTime>800</iTime>
+			<PrereqTech>TECH_CALENDAR</PrereqTech>
+			<iTime>900</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<LinkedBuilds>
@@ -2595,11 +1266,11 @@
 			<TechBuildDiscounts>
 				<TechBuildDiscount>
 					<TechType>TECH_NECROMANCY</TechType>
-					<iDiscount>200</iDiscount>
+					<iDiscount>150</iDiscount>
 				</TechBuildDiscount>
 				<TechBuildDiscount>
 					<TechType>TECH_SMELTING</TechType>
-					<iDiscount>200</iDiscount>
+					<iDiscount>150</iDiscount>
 				</TechBuildDiscount>
 			</TechBuildDiscounts>
 			<Button>Art/Civs/Dtesh/Pyre/Pyre.dds</Button>
@@ -2608,7 +1279,7 @@
 			<Type>BUILD_PYRE_AQUATIC</Type>
 			<Description>TXT_KEY_BUILD_PYRE_AQUATIC</Description>
 			<Help/>
-			<PrereqTech>TECH_DARK_SECRETS</PrereqTech>
+			<PrereqTech>TECH_FISHING</PrereqTech>
 			<iTime>0</iTime>
 			<iCost>0</iCost>
 			<bKill>1</bKill>
@@ -2650,8 +1321,8 @@
 			<Type>BUILD_DTESH_CRYPT</Type>
 			<Description>TXT_KEY_BUILD_CRYPT</Description>
 			<Help/>
-			<PrereqTech>TECH_DARK_SECRETS</PrereqTech>
-			<iTime>800</iTime>
+			<PrereqTech>TECH_MASONRY</PrereqTech>
+			<iTime>900</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<LinkedBuilds>
@@ -2705,12 +1376,16 @@
 			<iHotKeyPriority>0</iHotKeyPriority>
 			<TechBuildDiscounts>
 				<TechBuildDiscount>
-					<TechType>TECH_CONSTRUCTION</TechType>
-					<iDiscount>200</iDiscount>
+					<TechType>TECH_SMELTING</TechType>
+					<iDiscount>150</iDiscount>
 				</TechBuildDiscount>
 				<TechBuildDiscount>
 					<TechType>TECH_MATHEMATICS</TechType>
-					<iDiscount>200</iDiscount>
+					<iDiscount>150</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_CONSTRUCTION</TechType>
+					<iDiscount>5</iDiscount>
 				</TechBuildDiscount>
 			</TechBuildDiscounts>
 			<Button>Art/Civs/Dtesh/HauntedRuin/Crypt.dds</Button>
@@ -2720,7 +1395,7 @@
 			<Description>TXT_KEY_BUILD_REFINERY</Description>
 			<Help/>
 			<PrereqTech>TECH_STEAM_POWER</PrereqTech>
-			<iTime>1500</iTime>
+			<iTime>1350</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<LinkedBuilds>
@@ -2779,7 +1454,7 @@
 			<Description>TXT_KEY_BUILD_PASTURE_CORRUPTED</Description>
 			<Help/>
 			<PrereqTech>TECH_ANIMAL_HUSBANDRY</PrereqTech>
-			<iTime>1600</iTime>
+			<iTime>900</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<LinkedBuilds>
@@ -2838,7 +1513,7 @@
 			<Description>TXT_KEY_BUILD_SACRED_CULL</Description>
 			<Help/>
 			<PrereqTech>TECH_WAY_OF_THE_FORESTS</PrereqTech>
-			<iTime>2800</iTime>
+			<iTime>1800</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<ImprovementType>IMPROVEMENTCLASS_SACRED_HARVEST</ImprovementType>
@@ -2853,12 +1528,16 @@
 			<Button>Art/Interface/Buttons/improvements/SacredHarvest.dds</Button>
 			<TechBuildDiscounts>
 				<TechBuildDiscount>
-					<TechType>TECH_HUNTING</TechType>
-					<iDiscount>750</iDiscount>
+					<TechType>TECH_ANIMAL_HANDLING</TechType>
+					<iDiscount>300</iDiscount>
 				</TechBuildDiscount>
 				<TechBuildDiscount>
 					<TechType>TECH_PHILOSOPHY</TechType>
-					<iDiscount>750</iDiscount>
+					<iDiscount>300</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_HUNTING</TechType>
+					<iDiscount>5</iDiscount>
 				</TechBuildDiscount>
 			</TechBuildDiscounts>
 		</BuildInfo>
@@ -2867,7 +1546,7 @@
 			<Description>TXT_KEY_BUILD_THIEVES_DEN</Description>
 			<Help/>
 			<PrereqTech>TECH_DECEPTION</PrereqTech>
-			<iTime>2800</iTime>
+			<iTime>1800</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<ImprovementType>IMPROVEMENTCLASS_THIEVES_DEN</ImprovementType>
@@ -2919,12 +1598,16 @@
 			</FeatureStructs>
 			<TechBuildDiscounts>
 				<TechBuildDiscount>
-					<TechType>TECH_TRADE</TechType>
-					<iDiscount>750</iDiscount>
+					<TechType>TECH_GUILDS</TechType>
+					<iDiscount>300</iDiscount>
 				</TechBuildDiscount>
 				<TechBuildDiscount>
 					<TechType>TECH_CURRENCY</TechType>
-					<iDiscount>750</iDiscount>
+					<iDiscount>300</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_TRADE</TechType>
+					<iDiscount>5</iDiscount>
 				</TechBuildDiscount>
 			</TechBuildDiscounts>
 		</BuildInfo>
@@ -2933,7 +1616,7 @@
 			<Description>TXT_KEY_BUILD_AERON_VAULTGATE</Description>
 			<Help/>
 			<PrereqTech>TECH_CORRUPTION_OF_SPIRIT</PrereqTech>
-			<iTime>2800</iTime>
+			<iTime>1800</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<ImprovementType>IMPROVEMENTCLASS_AERON_VAULTGATE</ImprovementType>
@@ -2985,12 +1668,16 @@
 			</FeatureStructs>
 			<TechBuildDiscounts>
 				<TechBuildDiscount>
-					<TechType>TECH_TRADE</TechType>
-					<iDiscount>750</iDiscount>
+					<TechType>TECH_ARCANE_LORE</TechType>
+					<iDiscount>300</iDiscount>
 				</TechBuildDiscount>
 				<TechBuildDiscount>
 					<TechType>TECH_NECROMANCY</TechType>
-					<iDiscount>750</iDiscount>
+					<iDiscount>300</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_TRADE</TechType>
+					<iDiscount>5</iDiscount>
 				</TechBuildDiscount>
 			</TechBuildDiscounts>
 		</BuildInfo>	
@@ -2999,7 +1686,7 @@
 			<Description>TXT_KEY_BUILD_PENITENTIARY</Description>
 			<Help/>
 			<PrereqTech>TECH_ORDERS_FROM_HEAVEN</PrereqTech>
-			<iTime>2800</iTime>
+			<iTime>1800</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<LinkedBuilds>
@@ -3054,12 +1741,20 @@
 			<Button>Art/Interface/Buttons/Improvements/Penitentiary.dds</Button>
 			<TechBuildDiscounts>
 				<TechBuildDiscount>
-					<TechType>TECH_CODE_OF_LAWS</TechType>
-					<iDiscount>700</iDiscount>
+					<TechType>TECH_FEUDALISM</TechType>
+					<iDiscount>300</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_RELIGIOUS_LAW</TechType>
+					<iDiscount>300</iDiscount>
 				</TechBuildDiscount>
 				<TechBuildDiscount>
 					<TechType>TECH_CONSTRUCTION</TechType>
-					<iDiscount>700</iDiscount>
+					<iDiscount>5</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_CODE_OF_LAWS</TechType>
+					<iDiscount>5</iDiscount>
 				</TechBuildDiscount>
 			</TechBuildDiscounts>
 		</BuildInfo>	
@@ -3068,7 +1763,7 @@
 			<Description>TXT_KEY_BUILD_POLAR_NEXUS</Description>
 			<Help/>
 			<PrereqTech>TECH_WHITE_HAND</PrereqTech>
-			<iTime>2800</iTime>
+			<iTime>1800</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<LinkedBuilds>
@@ -3123,12 +1818,16 @@
 			<Button>Art/Interface/Buttons/Improvements/PolarNexus.dds</Button>
 			<TechBuildDiscounts>
 				<TechBuildDiscount>
-					<TechType>TECH_CODE_OF_LAWS</TechType>
-					<iDiscount>700</iDiscount>
+					<TechType>TECH_RELIGIOUS_LAW</TechType>
+					<iDiscount>300</iDiscount>
 				</TechBuildDiscount>
 				<TechBuildDiscount>
 					<TechType>TECH_ELEMENTALISM</TechType>
-					<iDiscount>700</iDiscount>
+					<iDiscount>300</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_CODE_OF_LAWS</TechType>
+					<iDiscount>5</iDiscount>
 				</TechBuildDiscount>
 			</TechBuildDiscounts>
 		</BuildInfo>
@@ -3137,7 +1836,7 @@
 			<Description>TXT_KEY_BUILD_DWARVEN_MINE</Description>
 			<Help/>
 			<PrereqTech>TECH_WAY_OF_THE_EARTHMOTHER</PrereqTech>
-			<iTime>2800</iTime>
+			<iTime>1800</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<LinkedBuilds>
@@ -3192,12 +1891,20 @@
 			<Button>Art/Civs/Other/FortCommander/FortB.dds</Button>
 			<TechBuildDiscounts>
 				<TechBuildDiscount>
+					<TechType>TECH_SMELTING</TechType>
+					<iDiscount>300</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_IRON_WORKING</TechType>
+					<iDiscount>300</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
 					<TechType>TECH_MINING</TechType>
-					<iDiscount>700</iDiscount>
+					<iDiscount>5</iDiscount>
 				</TechBuildDiscount>
 				<TechBuildDiscount>
 					<TechType>TECH_CONSTRUCTION</TechType>
-					<iDiscount>700</iDiscount>
+					<iDiscount>5</iDiscount>
 				</TechBuildDiscount>
 			</TechBuildDiscounts>
 		</BuildInfo>
@@ -3205,8 +1912,8 @@
 			<Type>BUILD_FISHING_BOATS_LANUN</Type>
 			<Description>TXT_KEY_BUILD_FISHING_BOATS</Description>
 			<Help/>
-			<PrereqTech>NONE</PrereqTech>
-			<iTime>400</iTime>
+			<PrereqTech>TECH_FISHING</PrereqTech>
+			<iTime>200</iTime>
 			<iCost>0</iCost>
 			<ImprovementType>IMPROVEMENTCLASS_FISHING_BOATS</ImprovementType>
 			<RouteType>NONE</RouteType>
@@ -3224,7 +1931,7 @@
 			<Description>TXT_KEY_BUILD_PIRATE_COVE</Description>
 			<Help/>
 			<PrereqTech>TECH_SEAFARING</PrereqTech>
-			<iTime>400</iTime>
+			<iTime>200</iTime>
 			<iCost>0</iCost>
 			<ImprovementType>IMPROVEMENTCLASS_PIRATE_COVE</ImprovementType>
 			<RouteType>NONE</RouteType>
@@ -3242,7 +1949,7 @@
 			<Description>TXT_KEY_SPELL_CREATE_SWAMP</Description>
 			<Help/>
 			<PrereqTech>TECH_SWAMPDWELLING</PrereqTech>
-			<iTime>2000</iTime>
+			<iTime>900</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<ImprovementType>IMPROVEMENTCLASS_SWAMP</ImprovementType>
@@ -3260,8 +1967,8 @@
 			<Type>BUILD_CHISLEV_CLAN</Type>
 			<Description>TXT_KEY_BUILD_CHISLEV_CLAN</Description>
 			<Help/>
-			<PrereqTech>NONE</PrereqTech>
-			<iTime>3000</iTime>
+			<PrereqTech>TECH_EDUCATION</PrereqTech>
+			<iTime>1350</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<bStandard>1</bStandard>
@@ -3313,14 +2020,1014 @@
 			<Button>Art/Interface/Buttons/Buildings/TribalShrine.dds</Button>
 			<TechBuildDiscounts>
 				<TechBuildDiscount>
-					<TechType>TECH_EDUCATION</TechType>
-					<iDiscount>750</iDiscount>
+					<TechType>TECH_CONSTRUCTION</TechType>
+					<iDiscount>225</iDiscount>
 				</TechBuildDiscount>
 				<TechBuildDiscount>
 					<TechType>TECH_CURRENCY</TechType>
-					<iDiscount>750</iDiscount>
+					<iDiscount>225</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_EDUCATION</TechType>
+					<iDiscount>5</iDiscount>
 				</TechBuildDiscount>
 			</TechBuildDiscounts>
+		</BuildInfo>
+		<BuildInfo> <!-- Hunting Reef  VS START -->
+			<Type>BUILD_HUNTING_REEF</Type>
+			<Description>TXT_KEY_BUILD_HUNTING_REEF</Description>
+			<Help/>
+			<PrereqTech>TECH_SWAMPDWELLING</PrereqTech>
+			<iTime>900</iTime>
+			<iCost>0</iCost>
+			<ImprovementType>IMPROVEMENTCLASS_HUNTING_REEF</ImprovementType>
+			<RouteType>NONE</RouteType>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<FeatureStructs/>
+			<HotKey>KB_F</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>1</iHotKeyPriority>
+			<Button>Art/Interface/Buttons/Improvements/piratecove.dds</Button>
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_VICIOUSSEAS</DependencyType>
+		     </AndDependencyTypes>
+		</BuildInfo>
+		<BuildInfo> <!-- Aifon Sea Haven (cottage) -->
+			<Type>BUILD_SEA_COTTAGE</Type>
+			<Description>TXT_KEY_BUILD_SEA_HAVEN</Description>
+			<Help/>
+			<PrereqTech>TECH_EDUCATION</PrereqTech>
+			<iTime>1350</iTime>
+			<iCost>0</iCost>
+			<bKill>0</bKill>
+			<ImprovementType>IMPROVEMENTCLASS_SEA_COTTAGE</ImprovementType>
+			<RouteType>NONE</RouteType>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<FeatureStructs>
+				<FeatureStruct>
+					<FeatureType>FEATURE_KELP</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>1000</iTime>
+					<iProduction>10</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_KELP_FOREST</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>2000</iTime>
+					<iProduction>20</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_REEFS</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>500</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+			</FeatureStructs>
+			<HotKey>KB_T</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Improvements/Seahaven.dds</Button>
+			<TechBuildDiscounts>
+				<TechBuildDiscount>
+					<TechType>TECH_EDUCATION</TechType>
+					<iDiscount>5</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_CURRENCY</TechType>
+					<iDiscount>225</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_CONSTRUCTION</TechType>
+					<iDiscount>225</iDiscount>
+				</TechBuildDiscount>
+			</TechBuildDiscounts>
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_VICIOUSSEAS</DependencyType>
+		     </AndDependencyTypes>
+		</BuildInfo>
+		<BuildInfo> <!-- Coral Fort -->
+			<Type>BUILD_CORAL_FORT</Type>
+			<Description>TXT_KEY_BUILD_FORT</Description>
+			<Help/>
+			<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
+			<iTime>1350</iTime>
+			<iCost>0</iCost>
+			<bKill>0</bKill>
+			<ImprovementType>IMPROVEMENTCLASS_CORAL_FORT</ImprovementType>
+			<RouteType>NONE</RouteType>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<HotKey>KB_F</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>1</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<Button>,Art/Interface/Buttons/Builds/BuildFort.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,7,9</Button>
+			<TechBuildDiscounts>
+				<TechBuildDiscount>
+					<TechType>TECH_MATHEMATICS</TechType>
+					<iDiscount>450</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_CONSTRUCTION</TechType>
+					<iDiscount>5</iDiscount>
+				</TechBuildDiscount>
+			</TechBuildDiscounts>
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_VICIOUSSEAS</DependencyType>
+		     </AndDependencyTypes>
+		</BuildInfo>
+		<BuildInfo> <!-- Trawling Boats -->
+			<Type>BUILD_TRAWLING_BOATS</Type>
+			<Description>TXT_KEY_BUILD_TRAWLING_BOATS</Description>
+			<Help/>
+			<PrereqTech>TECH_OPTICS</PrereqTech>
+			<iTime>1350</iTime>
+			<iCost>0</iCost>
+			<bKill>0</bKill>
+			<ImprovementType>IMPROVEMENTCLASS_TRAWLING_BOATS</ImprovementType>
+			<RouteType>NONE</RouteType>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<FeatureStructs/>
+			<HotKey>KB_F</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>1</iHotKeyPriority>
+			<Button>Art/Interface/Buttons/TerrainFeatures/Reefs.dds</Button>
+			<TechBuildDiscounts>
+				<TechBuildDiscount>
+					<TechType>TECH_ASTRONOMY</TechType>
+					<iDiscount>450</iDiscount>
+				</TechBuildDiscount>
+			</TechBuildDiscounts>
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_VICIOUSSEAS</DependencyType>
+		     </AndDependencyTypes>
+		</BuildInfo>
+		<BuildInfo> <!-- Trawling Boats Lanun -->
+			<Type>BUILD_TRAWLING_BOATS_LANUN</Type>
+			<Description>TXT_KEY_BUILD_TRAWLING_BOATS</Description>
+			<Help/>
+			<PrereqTech>TECH_OPTICS</PrereqTech>
+			<iTime>1350</iTime>
+			<iCost>0</iCost>
+			<ImprovementType>IMPROVEMENTCLASS_TRAWLING_BOATS</ImprovementType>
+			<RouteType>NONE</RouteType>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<FeatureStructs/>
+			<HotKey>KB_F</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>1</iHotKeyPriority>
+			<Button>Art/Interface/Buttons/TerrainFeatures/Reefs.dds</Button>
+			<TechBuildDiscounts>
+				<TechBuildDiscount>
+					<TechType>TECH_ASTRONOMY</TechType>
+					<iDiscount>450</iDiscount>
+				</TechBuildDiscount>
+			</TechBuildDiscounts>
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_VICIOUSSEAS</DependencyType>
+		     </AndDependencyTypes>
+		</BuildInfo>	
+		<BuildInfo> <!-- Aquatic Pyre -->
+			<Type>BUILD_PYRE_AQUATIC</Type>
+			<Description>TXT_KEY_BUILD_PYRE_AQUATIC</Description>
+			<Help/>
+			<PrereqTech>TECH_DARK_SECRETS</PrereqTech>
+			<iTime>900</iTime>
+			<iCost>0</iCost>
+			<bKill>0</bKill>
+			<ImprovementType>IMPROVEMENTCLASS_FISHING_BOATS</ImprovementType>
+			<RouteType>NONE</RouteType>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<FeatureStructs>
+				<FeatureStruct>
+					<FeatureType>FEATURE_KELP</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>0</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_KELP_FOREST</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>0</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_REEFS</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>0</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+			</FeatureStructs>
+			<TechBuildDiscounts>
+				<TechBuildDiscount>
+					<TechType>TECH_SAILING</TechType>
+					<iDiscount>100</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_OPTICS</TechType>
+					<iDiscount>100</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_ASTRONOMY</TechType>
+					<iDiscount>100</iDiscount>
+				</TechBuildDiscount>
+			</TechBuildDiscounts>
+			<HotKey>KB_R</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<Button>Art/Civs/Dtesh/Pyre/Pyre.dds</Button>
+			<bForceOverwrite>1</bForceOverwrite>
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_VICIOUSSEAS</DependencyType>
+		     </AndDependencyTypes>
+		</BuildInfo>
+		<BuildInfo> <!-- Fishing Boats -->
+			<Type>BUILD_FISHING_BOATS</Type>
+			<Description>TXT_KEY_BUILD_FISHING_BOATS</Description>
+			<Help/>
+			<PrereqTech>TECH_FISHING</PrereqTech>
+			<iTime>900</iTime>
+			<iCost>0</iCost>
+			<bKill>0</bKill>
+			<ImprovementType>IMPROVEMENTCLASS_FISHING_BOATS</ImprovementType>
+			<RouteType>NONE</RouteType>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<TechBuildDiscounts>
+				<TechBuildDiscount>
+					<TechType>TECH_SAILING</TechType>
+					<iDiscount>100</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_OPTICS</TechType>
+					<iDiscount>100</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_ASTRONOMY</TechType>
+					<iDiscount>100</iDiscount>
+				</TechBuildDiscount>
+			</TechBuildDiscounts>
+			<FeatureStructs/>
+			<HotKey>KB_F</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>1</iHotKeyPriority>
+			<Button>,Art/Interface/Buttons/Builds/BuildFishingBoats.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,7,7</Button>
+			<bForceOverwrite>1</bForceOverwrite>
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_VICIOUSSEAS</DependencyType>
+		     </AndDependencyTypes>
+		</BuildInfo>
+		<BuildInfo> <!-- Fishing Boats Lanun -->
+			<Type>BUILD_FISHING_BOATS_LANUN</Type>
+			<iTime>900</iTime>
+			<TechBuildDiscounts>
+				<TechBuildDiscount>
+					<TechType>TECH_SAILING</TechType>
+					<iDiscount>100</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_OPTICS</TechType>
+					<iDiscount>100</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_ASTRONOMY</TechType>
+					<iDiscount>100</iDiscount>
+				</TechBuildDiscount>
+			</TechBuildDiscounts>
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_VICIOUSSEAS</DependencyType>
+		     </AndDependencyTypes>
+		</BuildInfo>
+		<BuildInfo> <!-- Fishing Boats Wyrmfisher -->
+			<Type>BUILD_FISHING_BOATS_WYRMFISHER</Type>
+			<iTime>900</iTime>
+			<bKill>0</bKill>
+			<TechBuildDiscounts>
+				<TechBuildDiscount>
+					<TechType>TECH_SAILING</TechType>
+					<iDiscount>100</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_OPTICS</TechType>
+					<iDiscount>100</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_ASTRONOMY</TechType>
+					<iDiscount>100</iDiscount>
+				</TechBuildDiscount>
+			</TechBuildDiscounts>
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_VICIOUSSEAS</DependencyType>
+		     </AndDependencyTypes>
+		</BuildInfo>
+		<BuildInfo> <!-- Pirate Cove -->
+			<Type>BUILD_PIRATE_COVE</Type>
+			<Description>TXT_KEY_BUILD_PIRATE_COVE</Description>
+			<Help/>
+			<PrereqTech>TECH_SEAFARING</PrereqTech>
+			<iTime>900</iTime>
+			<iCost>0</iCost>
+			<ImprovementType>IMPROVEMENTCLASS_PIRATE_COVE</ImprovementType>
+			<RouteType>NONE</RouteType>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<FeatureStructs/>
+			<HotKey>KB_F</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>1</iHotKeyPriority>
+			<Button>Art/Interface/Buttons/Improvements/piratecove.dds</Button>
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_VICIOUSSEAS</DependencyType>
+		     </AndDependencyTypes>
+		</BuildInfo>
+		
+		<BuildInfo> <!-- Feeding Pen Arachniphobia Start -->
+			<Type>BUILD_FEEDING_PEN</Type>
+			<Description>TXT_KEY_BUILD_FEEDING_PEN</Description>
+			<Help/>
+			<iTime>900</iTime>
+			<iCost>0</iCost>
+			<bKill>0</bKill>
+			<LinkedBuilds>
+				<LinkedBuild>BUILD_REMOVE_FOREST</LinkedBuild>
+				<LinkedBuild>BUILD_REMOVE_JUNGLE</LinkedBuild>
+			</LinkedBuilds>
+			<ImprovementType>IMPROVEMENTCLASS_FEEDING_PEN</ImprovementType>
+			<RouteType>NONE</RouteType>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<FeatureStructs>
+				<FeatureStruct>
+					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>1000</iTime>
+					<iProduction>10</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>800</iTime>
+					<iProduction>20</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>500</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>500</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>2000</iTime>
+					<iProduction>20</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+			</FeatureStructs>
+			<HotKey>KB_P</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>1</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>1</iHotKeyPriority>
+			<Button>Art/Modules/Arachnophobia/Buttons/Feeding_Pen.dds</Button>
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_ARACHNOPHOBIA</DependencyType>
+		     </AndDependencyTypes>
+		</BuildInfo>
+		<BuildInfo> <!-- Maze of Webs -->
+			<Type>BUILD_MAZE_OF_WEBS</Type>
+			<Description>TXT_KEY_BUILD_MAZE_OF_WEBS</Description>
+			<Help/>
+			<PrereqTech>NONE</PrereqTech>
+			<iTime>600</iTime>
+			<iCost>0</iCost>
+			<bKill>0</bKill>
+			<ImprovementType>IMPROVEMENTCLASS_MAZE_OF_WEBS</ImprovementType>
+			<RouteType>NONE</RouteType>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<FeatureStructs/>
+			<HotKey>KB_H</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>1</iHotKeyPriority>
+			<Button>Art/Modules/Arachnophobia/Buttons/Maze_Of_Webs.dds</Button>
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_ARACHNOPHOBIA</DependencyType>
+		     </AndDependencyTypes>
+		</BuildInfo>
+		<BuildInfo> <!-- Nesting Ground -->
+			<Type>BUILD_NESTING_GROUND</Type>
+			<Description>TXT_KEY_BUILD_NESTING_GROUND</Description>
+			<Help/>
+			<PrereqTech>TECH_HUNTING</PrereqTech>
+			<iTime>1350</iTime>
+			<iCost>0</iCost>
+			<bKill>0</bKill>
+			<LinkedBuilds>
+				<LinkedBuild>BUILD_REMOVE_FOREST</LinkedBuild>
+				<LinkedBuild>BUILD_REMOVE_JUNGLE</LinkedBuild>
+			</LinkedBuilds>
+			<ImprovementType>IMPROVEMENTCLASS_NESTING_GROUND</ImprovementType>
+			<RouteType>NONE</RouteType>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<FeatureStructs>
+				<FeatureStruct>
+					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>1000</iTime>
+					<iProduction>10</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>800</iTime>
+					<iProduction>20</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>500</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>500</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>2000</iTime>
+					<iProduction>20</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+			</FeatureStructs>
+			<HotKey>KB_H</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>1</iHotKeyPriority>
+			<Button>Art/Modules/Arachnophobia/Buttons/Nesting_Ground.dds</Button>
+			<TechBuildDiscounts>
+				<TechBuildDiscount>
+					<TechType>TECH_FERAL_BOND</TechType>
+					<iDiscount>450</iDiscount>
+				</TechBuildDiscount>
+			</TechBuildDiscounts>
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_ARACHNOPHOBIA</DependencyType>
+		     </AndDependencyTypes>
+		</BuildInfo>
+		
+		
+        <BuildInfo> <!-- Plant Forest Heart Aos Ni start -->
+            <Type>BUILD_FOREST_HEART</Type>
+            <Description>TXT_KEY_BUILD_TREE_ROOT</Description>
+            <Help/>
+            <PrereqTech>NONE</PrereqTech>
+            <iTime>1800</iTime>
+            <iCost>0</iCost>
+            <bKill>0</bKill>
+            <ImprovementType>IMPROVEMENTCLASS_FORT</ImprovementType>
+            <RouteType>NONE</RouteType>
+            <EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+            <HotKey>KB_F</HotKey>
+            <bAltDown>0</bAltDown>
+            <bShiftDown>0</bShiftDown>
+            <bCtrlDown>1</bCtrlDown>
+            <iHotKeyPriority>0</iHotKeyPriority>
+            <Button>Art/Interface/Buttons/Improvements/Yggdrasil.dds</Button>
+            <TechBuildDiscounts>
+                <TechBuildDiscount>
+                    <TechType>TECH_TRACKING</TechType>
+                    <iDiscount>300</iDiscount>
+                </TechBuildDiscount>
+                <TechBuildDiscount>
+                    <TechType>TECH_HIDDEN_PATHS</TechType>
+                    <iDiscount>300</iDiscount>
+                </TechBuildDiscount>
+            </TechBuildDiscounts>
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_DRACKAOSNISIRA</DependencyType>
+		     </AndDependencyTypes>
+        </BuildInfo>
+        <BuildInfo> <!-- Fishing Boats Aos Ni Sira Special -->
+			<Type>BUILD_FISHING_BOATS_AOSNISIRA</Type>
+			<Description>TXT_KEY_BUILD_FISHING_BOATS</Description>
+			<Help/>
+			<PrereqTech>NONE</PrereqTech>
+			<iTime>600</iTime>
+			<iCost>0</iCost>
+			<ImprovementType>IMPROVEMENTCLASS_FISHING_BOATS</ImprovementType>
+			<RouteType>NONE</RouteType>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<FeatureStructs/>
+			<HotKey>KB_F</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>1</iHotKeyPriority>
+			<Button>,Art/Interface/Buttons/Builds/BuildFishingBoats.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,7,7</Button>
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_DRACKAOSNISIRA</DependencyType>
+		     </AndDependencyTypes>
+		</BuildInfo>
+		
+		
+		<BuildInfo> <!-- Dwarven Mine Khazad Dwarves Module Start -->
+			<Type>BUILD_DWARVEN_MINE_KHAZAD</Type>
+			<Description>TXT_KEY_BUILD_DWARVEN_MINE</Description>
+			<Help/>
+			<PrereqTech>TECH_MINING</PrereqTech>
+			<iTime>1800</iTime>
+			<iCost>0</iCost>
+			<bKill>0</bKill>
+			<LinkedBuilds>
+				<LinkedBuild>BUILD_REMOVE_FOREST</LinkedBuild>
+				<LinkedBuild>BUILD_REMOVE_JUNGLE</LinkedBuild>
+			</LinkedBuilds>
+			<ImprovementType>IMPROVEMENTCLASS_DWARVEN_MINE</ImprovementType>
+			<RouteType>NONE</RouteType>
+			<EntityEvent>ENTITY_EVENT_MINE</EntityEvent>
+			<FeatureStructs>
+				<FeatureStruct>
+					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>1000</iTime>
+					<iProduction>10</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>800</iTime>
+					<iProduction>20</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>500</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>500</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>2000</iTime>
+					<iProduction>20</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+			</FeatureStructs>
+			<HotKey>KB_M</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<Button>Art/Civs/Other/FortCommander/FortB.dds</Button>
+			<TechBuildDiscounts>
+				<TechBuildDiscount>
+					<TechType>TECH_SMELTING</TechType>
+					<iDiscount>300</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_IRON_WORKING</TechType>
+					<iDiscount>300</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_MINING</TechType>
+					<iDiscount>5</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_CONSTRUCTION</TechType>
+					<iDiscount>5</iDiscount>
+				</TechBuildDiscount>
+			</TechBuildDiscounts>
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_DWARVES</DependencyType>
+		     </AndDependencyTypes>
+		</BuildInfo>
+		<BuildInfo> <!-- Dwarven Settlement -->
+			<Type>BUILD_DWARVEN_SETTLEMENT</Type>
+			<Description>TXT_KEY_BUILD_DWARVEN_SETTLEMENT</Description>
+			<Help></Help>
+			<PrereqTech>NONE</PrereqTech>
+			<iTime>1800</iTime>
+			<iCost>0</iCost>
+			<bKill>0</bKill>
+			<LinkedBuilds>
+				<LinkedBuild>BUILD_REMOVE_FOREST</LinkedBuild>
+				<LinkedBuild>BUILD_REMOVE_JUNGLE</LinkedBuild>
+			</LinkedBuilds>
+			<ImprovementType>IMPROVEMENTCLASS_DWARVEN_SETTLEMENT</ImprovementType>
+			<RouteType>NONE</RouteType>
+			<EntityEvent>ENTITY_EVENT_MINE</EntityEvent>
+			<FeatureStructs>
+				<FeatureStruct>
+					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>1000</iTime>
+					<iProduction>10</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>800</iTime>
+					<iProduction>20</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>500</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>500</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>2000</iTime>
+					<iProduction>20</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+			</FeatureStructs>
+			<HotKey>KB_M</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<Button>Art/Civs/Other/FortCommander/FortB.dds</Button>
+			<TechBuildDiscounts>
+				<TechBuildDiscount>
+					<TechType>TECH_SMELTING</TechType>
+					<iDiscount>300</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_IRON_WORKING</TechType>
+					<iDiscount>300</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_MINING</TechType>
+					<iDiscount>5</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_CONSTRUCTION</TechType>
+					<iDiscount>5</iDiscount>
+				</TechBuildDiscount>
+			</TechBuildDiscounts>
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_DWARVES</DependencyType>
+		     </AndDependencyTypes>
+		</BuildInfo>
+		<BuildInfo> <!-- Dwarven Hall-->
+			<Type>BUILD_DWARVEN_HALL</Type>
+			<Description>TXT_KEY_BUILD_DWARVEN_HALL</Description>
+			<Help></Help>
+			<PrereqTech>NONE</PrereqTech>
+			<iTime>1800</iTime>
+			<iCost>0</iCost>
+			<bKill>0</bKill>
+			<LinkedBuilds>
+				<LinkedBuild>BUILD_REMOVE_FOREST</LinkedBuild>
+				<LinkedBuild>BUILD_REMOVE_JUNGLE</LinkedBuild>
+			</LinkedBuilds>
+			<ImprovementType>IMPROVEMENTCLASS_DWARVEN_HALL</ImprovementType>
+			<RouteType>NONE</RouteType>
+			<EntityEvent>ENTITY_EVENT_MINE</EntityEvent>
+			<FeatureStructs>
+				<FeatureStruct>
+					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>1000</iTime>
+					<iProduction>10</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>800</iTime>
+					<iProduction>20</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>500</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>500</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>2000</iTime>
+					<iProduction>20</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+			</FeatureStructs>
+			<HotKey>KB_M</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<Button>Art/Civs/Other/FortCommander/FortB.dds</Button>
+			<TechBuildDiscounts>
+				<TechBuildDiscount>
+					<TechType>TECH_SMELTING</TechType>
+					<iDiscount>300</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_IRON_WORKING</TechType>
+					<iDiscount>300</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_MINING</TechType>
+					<iDiscount>5</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_CONSTRUCTION</TechType>
+					<iDiscount>5</iDiscount>
+				</TechBuildDiscount>
+			</TechBuildDiscounts>
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_DWARVES</DependencyType>
+		     </AndDependencyTypes>
+		</BuildInfo>
+		<BuildInfo> <!-- Citadel -->
+			<Type>BUILD_CITADEL</Type>
+			<Description>TXT_KEY_BUILD_CITADEL</Description>
+			<Help/>
+			<PrereqTech>NONE</PrereqTech>
+			<iTime>1800</iTime>
+			<iCost>0</iCost>
+			<bKill>0</bKill>
+			<LinkedBuilds>
+				<LinkedBuild>BUILD_REMOVE_FOREST</LinkedBuild>
+				<LinkedBuild>BUILD_REMOVE_JUNGLE</LinkedBuild>
+			</LinkedBuilds>
+			<ImprovementType>IMPROVEMENTCLASS_CITADEL</ImprovementType>
+			<RouteType>NONE</RouteType>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<FeatureStructs>
+				<FeatureStruct>
+					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>1000</iTime>
+					<iProduction>10</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>800</iTime>
+					<iProduction>20</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>500</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>500</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>2000</iTime>
+					<iProduction>20</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+			</FeatureStructs>
+			<HotKey>KB_F</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>1</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<Button>,Art/Interface/Buttons/Builds/BuildFort.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,7,9</Button>
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_DWARVES</DependencyType>
+		     </AndDependencyTypes>
+		</BuildInfo>
+		
+		
+		<BuildInfo> <!-- Dwarven Mine Woods Start WHY YOU SO UNSTABLE? -->
+			<Type>BUILD_ANIMAL_COLONY</Type>
+			<Description>TXT_KEY_BUILD_ANIMAL_COLONY</Description>
+			<Help/>
+			<PrereqTech>NONE</PrereqTech>
+			<iTime>1800</iTime>
+			<iCost>0</iCost>
+			<bKill>0</bKill>
+			<ImprovementType>IMPROVEMENTCLASS_ANIMAL_COLONY</ImprovementType>
+			<RouteType>NONE</RouteType>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<FeatureStructs>
+				<FeatureStruct>
+					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>-500</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>0</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>-800</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>0</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>-500</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>0</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>500</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>0</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>-1000</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>0</bRemove>
+				</FeatureStruct>
+			</FeatureStructs>
+			<HotKey>KB_M</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<Button>Art/Civs/Other/FortCommander/FortB.dds</Button>
+			<TechBuildDiscounts>
+				<TechBuildDiscount>
+					<TechType>TECH_ANIMAL_HUSBANDRY</TechType>
+					<iDiscount>300</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_ANIMAL_HANDLING</TechType>
+					<iDiscount>300</iDiscount>
+				</TechBuildDiscount>
+			</TechBuildDiscounts>
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_KCZ_WOODS</DependencyType>
+		     </AndDependencyTypes>
+		</BuildInfo>
+		<BuildInfo> <!-- Dwarven Mine -->
+			<Type>BUILD_WILD_GARDEN</Type>
+			<Description>TXT_KEY_BUILD_WILD_GARDEN</Description>
+			<Help/>
+			<PrereqTech>NONE</PrereqTech>
+			<iTime>1800</iTime>
+			<iCost>0</iCost>
+			<bKill>0</bKill>
+			<ImprovementType>IMPROVEMENTCLASS_WILD_GARDEN</ImprovementType>
+			<RouteType>NONE</RouteType>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<FeatureStructs>
+				<FeatureStruct>
+					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>-500</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>0</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>-800</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>0</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>-500</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>0</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>500</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>0</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>-1000</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>0</bRemove>
+				</FeatureStruct>
+			</FeatureStructs>
+			<HotKey>KB_M</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<Button>Art/Civs/Other/FortCommander/FortB.dds</Button>
+			<TechBuildDiscounts>
+				<TechBuildDiscount>
+					<TechType>TECH_COMMUNE_WITH_NATURE</TechType>
+					<iDiscount>300</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_HUNTING</TechType>
+					<iDiscount>300</iDiscount>
+				</TechBuildDiscount>
+			</TechBuildDiscounts>
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_KCZ_WOODS</DependencyType>
+		     </AndDependencyTypes>
+		</BuildInfo>
+		
+		
+		<BuildInfo> <!-- Highroads module start -->
+			<Type>BUILD_IMPERIAL_ROAD</Type>
+			<Description>TXT_KEY_BUILD_IMPERIAL_ROAD</Description>
+			<Help/>
+			<PrereqTech>TECH_MACHINERY</PrereqTech>
+			<iTime>1250</iTime>
+			<iCost>0</iCost>
+			<bKill>0</bKill>
+			<ImprovementType>NONE</ImprovementType>
+			<RouteType>ROUTE_ROMANROAD</RouteType>
+			<EntityEvent>ENTITY_EVENT_SHOVEL</EntityEvent>
+			<HotKey>KB_R</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>2</iHotKeyPriority>
+			<Button>Art/Modules/ImperialRoads/BuildRomanroad.dds</Button>
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_IMPERIAL_ROADS</DependencyType>
+		     </AndDependencyTypes>
 		</BuildInfo>
 	</BuildInfos>
 </Civ4BuildInfos>

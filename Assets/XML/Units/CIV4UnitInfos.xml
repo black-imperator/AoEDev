@@ -40155,6 +40155,7 @@
 					<iAffinity>1</iAffinity>
 				</BonusAffinity>
 			</BonusAffinities>
+			<PrereqBuilding>BUILDING_WIZARDS_HALL</PrereqBuilding>
 		</UnitInfo>
 		<UnitInfo>        <!-- Wraith -->                                                                <!-- END SUMMONED UNITS LIST -->
 			<Class>UNITCLASS_WRAITH</Class>

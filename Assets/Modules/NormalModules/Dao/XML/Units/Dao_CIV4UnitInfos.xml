@@ -967,9 +967,6 @@
 			<Combat>UNITCOMBAT_MELEE</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<iTier>2</iTier>
-			<UnitClassUpgrades>
-					<UnitClassUpgradeType>UNITCLASS_AIR_ELEMENTAL</UnitClassUpgradeType>
-			</UnitClassUpgrades>
 			<iCost>-1</iCost>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<bMilitaryHappiness>1</bMilitaryHappiness>
@@ -1055,9 +1052,6 @@
 			<Combat>UNITCOMBAT_MELEE</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<iTier>2</iTier>
-			<UnitClassUpgrades>
-					<UnitClassUpgradeType>UNITCLASS_EARTH_ELEMENTAL</UnitClassUpgradeType>
-			</UnitClassUpgrades>
 			<iCost>-1</iCost>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<bMilitaryHappiness>1</bMilitaryHappiness>
@@ -1125,9 +1119,6 @@
 			<Combat>UNITCOMBAT_MELEE</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<iTier>2</iTier>
-			<UnitClassUpgrades>
-					<UnitClassUpgradeType>UNITCLASS_FIRE_ELEMENTAL</UnitClassUpgradeType>
-			</UnitClassUpgrades>
 			<iCost>-1</iCost>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<bMilitaryHappiness>1</bMilitaryHappiness>
@@ -1210,9 +1201,6 @@
 			<Combat>UNITCOMBAT_MELEE</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<iTier>2</iTier>
-			<UnitClassUpgrades>
-					<UnitClassUpgradeType>UNITCLASS_WATER_ELEMENTAL</UnitClassUpgradeType>
-			</UnitClassUpgrades>
 			<iCost>-1</iCost>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<bMilitaryHappiness>1</bMilitaryHappiness>
