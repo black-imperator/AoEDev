@@ -34,6 +34,10 @@
 					<TechType>TECH_TRADE</TechType>
 					<iDiscount>50</iDiscount>
 				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_EXPLORATION</TechType>
+					<iDiscount>1</iDiscount>
+				</TechBuildDiscount>
 			</TechBuildDiscounts>
 		</BuildInfo>
 		<BuildInfo> <!-- Railroad -->
@@ -102,6 +106,10 @@
 				<TechBuildDiscount>
 					<TechType>TECH_PRIESTHOOD</TechType>
 					<iDiscount>100</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_EXPLORATION</TechType>
+					<iDiscount>1</iDiscount>
 				</TechBuildDiscount>
 			</TechBuildDiscounts>
 		</BuildInfo>
@@ -2203,7 +2211,7 @@
 			<Description>TXT_KEY_BUILD_PYRE_AQUATIC</Description>
 			<Help/>
 			<PrereqTech>TECH_DARK_SECRETS</PrereqTech>
-			<iTime>900</iTime>
+			<iTime>600</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<ImprovementType>IMPROVEMENTCLASS_FISHING_BOATS</ImprovementType>
@@ -2262,7 +2270,7 @@
 			<Description>TXT_KEY_BUILD_FISHING_BOATS</Description>
 			<Help/>
 			<PrereqTech>TECH_FISHING</PrereqTech>
-			<iTime>900</iTime>
+			<iTime>600</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<ImprovementType>IMPROVEMENTCLASS_FISHING_BOATS</ImprovementType>
@@ -2296,7 +2304,7 @@
 		</BuildInfo>
 		<BuildInfo> <!-- Fishing Boats Lanun -->
 			<Type>BUILD_FISHING_BOATS_LANUN</Type>
-			<iTime>900</iTime>
+			<iTime>600</iTime>
 			<TechBuildDiscounts>
 				<TechBuildDiscount>
 					<TechType>TECH_SAILING</TechType>
@@ -2317,7 +2325,7 @@
 		</BuildInfo>
 		<BuildInfo> <!-- Fishing Boats Wyrmfisher -->
 			<Type>BUILD_FISHING_BOATS_WYRMFISHER</Type>
-			<iTime>900</iTime>
+			<iTime>600</iTime>
 			<bKill>0</bKill>
 			<TechBuildDiscounts>
 				<TechBuildDiscount>
