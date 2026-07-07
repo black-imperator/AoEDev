@@ -10131,7 +10131,7 @@
 			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
 			<PromotionPrereq1>PROMOTION_SHIMMERING_CORE</PromotionPrereq1>
 			<bAllowAI>1</bAllowAI>
-			<iAIWeight>100</iAIWeight>
+			<iAIWeight>50</iAIWeight>
 			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
 			<bHasCasted>1</bHasCasted>
 			<bIsAutoCastable>1</bIsAutoCastable>

@@ -15004,17 +15004,27 @@
 			<UnitCombatMods>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_ANIMAL</UnitCombatType>
-					<iUnitCombatMod>50</iUnitCombatMod>
+					<iUnitCombatMod>33</iUnitCombatMod>
 				</UnitCombatMod>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_BEAST</UnitCombatType>
-					<iUnitCombatMod>50</iUnitCombatMod>
+					<iUnitCombatMod>33</iUnitCombatMod>
+				</UnitCombatMod>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<iUnitCombatMod>33</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
 			<SpecialCargo>SPECIALUNIT_BIRD</SpecialCargo>
 			<DomainCargo>DOMAIN_AIR</DomainCargo>
 			<iCargo>1</iCargo>
 			<iAsset>10</iAsset>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_GRASS_STALKER</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
 			<UnitMeshGroups>
 				<iGroupSize>3</iGroupSize>
 				<iMeleeWaveSize>3</iMeleeWaveSize>
@@ -16358,7 +16368,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
-			<iCost>150</iCost>
+			<iCost>170</iCost>
 			<iMoves>1</iMoves>
 			<iAirRange>1</iAirRange>
 			<iCombat>7</iCombat>

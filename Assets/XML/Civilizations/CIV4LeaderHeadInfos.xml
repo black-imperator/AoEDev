@@ -32679,7 +32679,7 @@
 			<VassalRefuseAttitudeThreshold>ATTITUDE_PLEASED</VassalRefuseAttitudeThreshold>
 			<iVassalPowerModifier>20</iVassalPowerModifier>
 			<iFreedomAppreciation>0</iFreedomAppreciation>
-			<FavoriteCivic>CIVIC_SLAVERY</FavoriteCivic>
+			<FavoriteCivic>CIVIC_CONQUEST</FavoriteCivic>
 			<Traits>
 				<Trait>
 					<TraitType>TRAIT_SUMMONER</TraitType>
@@ -48674,7 +48674,7 @@
 			<VassalRefuseAttitudeThreshold>ATTITUDE_PLEASED</VassalRefuseAttitudeThreshold>
 			<iVassalPowerModifier>20</iVassalPowerModifier>
 			<iFreedomAppreciation>0</iFreedomAppreciation>
-			<FavoriteCivic>CIVIC_SLAVERY</FavoriteCivic>
+			<FavoriteCivic>CIVIC_CONQUEST</FavoriteCivic>
 			<Traits>
 				<Trait>
 					<TraitType>TRAIT_TREACHEROUS</TraitType>

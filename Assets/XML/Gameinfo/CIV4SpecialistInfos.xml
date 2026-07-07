@@ -32,7 +32,7 @@
 			<Yields>
 				<iYield>0</iYield>
 				<iYield>1</iYield>
-				<iYield>1</iYield>
+				<iYield>0</iYield>
 			</Yields>
 			<Button>Art/Civs/CivSpecialists/Undead/Citizen.dds</Button>
 		</SpecialistInfo>

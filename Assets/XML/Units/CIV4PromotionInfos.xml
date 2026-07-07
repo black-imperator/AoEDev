@@ -10484,6 +10484,42 @@
 				</DamageTypeCombat>
 			</DamageTypeCombats>
 		</PromotionInfo>
+		<PromotionInfo>		<!-- Grass Stalker - used by Chislev Greenstalkers -->
+			<Type>PROMOTION_GRASS_STALKER</Type>
+			<Description>TXT_KEY_PROMOTION_GRASS_STALKER</Description>
+			<Help>TXT_KEY_PROMOTION_GRASS_STALKER_HELP</Help>
+			<Button>Art/Interface/Buttons/Promotions/Greenstalker.dds</Button>
+			<iMinLevel>-1</iMinLevel>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Grassland Stalking - used by Chislev Greenstalkers.  -->
+			<Type>PROMOTION_GRASS_STALKING</Type>
+			<Description>TXT_KEY_PROMOTION_FOREST_STEALTH</Description>
+			<PrereqPromotionANDs>
+				<PrereqPromotionAND>
+					<PromotionType>PROMOTION_GRASS_STALKER</PromotionType>
+					<iPrereqApplications>1</iPrereqApplications>
+				</PrereqPromotionAND>
+			</PrereqPromotionANDs>
+			<bAutoAcquire>1</bAutoAcquire>
+			<bMustMaintain>1</bMustMaintain>
+			<bNoXP>1</bNoXP>
+			<iExtraPerception>2</iExtraPerception>
+			<iWithdrawalChange>15</iWithdrawalChange>
+			<PrereqTerrains>
+				<PrereqTerrain>TERRAIN_GRASS</PrereqTerrain>
+			</PrereqTerrains>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Art/Interface/Buttons/Promotions/Greenstalking.dds</Button>
+		</PromotionInfo>
 		<PromotionInfo>		<!-- Fort Captain -->
 			<Type>PROMOTION_FORTCAPTAIN</Type>
 			<Description>TXT_KEY_PROMOTION_COMBATSIEGE</Description>

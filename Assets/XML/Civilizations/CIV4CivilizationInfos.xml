@@ -5369,6 +5369,10 @@
 					<UnitClassType>UNITCLASS_BORIS</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_ARCANE_BARGE</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
 			</Units>
 			<Improvements>
 				<Improvement>
@@ -7120,15 +7124,7 @@
 					</FeatureYields>
 				</FeatureYieldChange>
 				<FeatureYieldChange>
-					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
-					<FeatureYields>
-						<iYield>0</iYield>
-						<iYield>-1</iYield>
-						<iYield>0</iYield>
-					</FeatureYields>
-				</FeatureYieldChange>
-				<FeatureYieldChange>
-					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
+					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
 					<FeatureYields>
 						<iYield>0</iYield>
 						<iYield>-1</iYield>
@@ -7145,6 +7141,14 @@
 				</FeatureYieldChange>
 			</FeatureYieldChanges>
 			<TerrainYieldChanges>
+				<TerrainYieldChange>
+					<TerrainType>TERRAIN_DESERT</TerrainType>
+					<TerrainYields>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+					</TerrainYields>
+				</TerrainYieldChange>
 				<TerrainYieldChange>
 					<TerrainType>TERRAIN_WASTELAND</TerrainType>
 					<TerrainYields>

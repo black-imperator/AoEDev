@@ -9434,7 +9434,7 @@
 			<Type>BUILDING_TOTEM_OF_OLD_ENEMY</Type>
 			<Description>TXT_KEY_BUILDING_TOTEM_OF_OLD_ENEMY</Description>
 			<Civilopedia></Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_TOTEM_OF_OLD_ENEMY_STRATEGY</Strategy>
+			<Strategy></Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BEAR_TOTEM</ArtDefineTag>
 			<PrereqTech>TECH_MILITARY_STRATEGY</PrereqTech>
@@ -14931,7 +14931,7 @@
 					<YieldChanges>
 						<iYield>0</iYield>
 						<iYield>1</iYield>
-						<iYield>1</iYield>
+						<iYield>0</iYield>
 					</YieldChanges>
 				</LocalSpecialistClassYieldChange>
 			</LocalSpecialistClassYieldChanges>
@@ -15095,6 +15095,16 @@
 					<iFlavor>20</iFlavor>
 				</Flavor>
 			</Flavors>
+			<LocalSpecialistClassCommerceChanges>
+				<LocalSpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_CITIZEN</SpecialistClass>
+					<CommerceChanges>
+						<iCommerce>0</iCommerce>
+						<iCommerce>1</iCommerce>
+						<iCommerce>0</iCommerce>
+					</CommerceChanges>
+				</LocalSpecialistClassCommerceChange>
+			</LocalSpecialistClassCommerceChanges>
 			<iFreePromotionPick>0</iFreePromotionPick>
 			<iGlobalResistEnemyModify>0</iGlobalResistEnemyModify>
 			<iGlobalResistModify>0</iGlobalResistModify>
@@ -15117,16 +15127,17 @@
 			<iCityCapModifier>3</iCityCapModifier>
 			<bNeverCapture>0</bNeverCapture>
 			<bNukeImmune>0</bNukeImmune>
-			<iAIWeight>20</iAIWeight>
+			<iAIWeight>50</iAIWeight>
 			<iCost>120</iCost>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>25</iConquestProb>
 			<iAsset>4</iAsset>
 			<fVisibilityPriority>10</fVisibilityPriority>
+			<iCrime>-20</iCrime>
 			<CommerceModifiers>
 				<iCommerce>0</iCommerce>
-				<iCommerce>40</iCommerce>
+				<iCommerce>30</iCommerce>
 				<iCommerce>0</iCommerce>
 			</CommerceModifiers>
 			<SpecialistClassCounts>
@@ -15150,6 +15161,16 @@
 					<iFlavor>15</iFlavor>
 				</Flavor>
 			</Flavors>
+			<LocalSpecialistClassCommerceChanges>
+				<LocalSpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_CITIZEN</SpecialistClass>
+					<CommerceChanges>
+						<iCommerce>0</iCommerce>
+						<iCommerce>1</iCommerce>
+						<iCommerce>0</iCommerce>
+					</CommerceChanges>
+				</LocalSpecialistClassCommerceChange>
+			</LocalSpecialistClassCommerceChanges>
 			<iFreePromotionPick>0</iFreePromotionPick>
 			<iGlobalResistEnemyModify>0</iGlobalResistEnemyModify>
 			<iGlobalResistModify>0</iGlobalResistModify>
