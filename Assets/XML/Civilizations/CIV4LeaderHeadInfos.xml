@@ -49142,7 +49142,7 @@
 			<iAttitudeToMales>0</iAttitudeToMales>
 			<iSomniumAggressiveness>85</iSomniumAggressiveness>
 			<Alignment>ALIGNMENT_EVIL</Alignment>
-			<LeaderClass>LEADERCLASS_EMERGENT</LeaderClass>
+			<LeaderClass>LEADERCLASS_IMPORTANT</LeaderClass>
 			<iAlignmentModifier>-330</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
 			<iEthicalAlignmentModifier>425</iEthicalAlignmentModifier>
