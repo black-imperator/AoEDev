@@ -39150,7 +39150,7 @@
 					<iAffinity>1</iAffinity>
 				</BonusAffinity>
 			</BonusAffinities>
-			<PythonPostCombatLost>spellFrozenLands(pCaster)</PythonPostCombatLost>
+			<!-- <PythonPostCombatLost>spellFrozenLands(pCaster)</PythonPostCombatLost>-->
 		</UnitInfo>
 		<UnitInfo>        <!-- Ira -->
 			<Class>UNITCLASS_IRA</Class>

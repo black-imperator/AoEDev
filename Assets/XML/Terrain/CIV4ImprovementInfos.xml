@@ -8379,7 +8379,7 @@
 			</YieldChanges>
 			<iUpgradeTime>45</iUpgradeTime>
 			<iAirBombDefense>10</iAirBombDefense>
-			<iDefenseModifier>40</iDefenseModifier>
+			<iDefenseModifier>30</iDefenseModifier>
 			<iPillageGold>20</iPillageGold>
 			<bFort>1</bFort>
 			<bWater>1</bWater>
@@ -8499,7 +8499,7 @@
 			<bActsAsCity>1</bActsAsCity>
 			<iUpgradeTime>60</iUpgradeTime>
 			<iAirBombDefense>10</iAirBombDefense>
-			<iDefenseModifier>60</iDefenseModifier>
+			<iDefenseModifier>40</iDefenseModifier>
 			<iPillageGold>30</iPillageGold>
 			<bFort>1</bFort>
 			<bWater>1</bWater>
@@ -8622,7 +8622,7 @@
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
 				<iYieldChange>1</iYieldChange>
-				<iYieldChange>1</iYieldChange>
+				<iYieldChange>0</iYieldChange>
 			</YieldChanges>
 			<bFort>1</bFort>
 			<iAdvancedStartCost>24</iAdvancedStartCost>
@@ -8775,7 +8775,7 @@
 			<ArtDefineTag>ART_DEF_IMPROVEMENT_DWARVEN_SETTLEMENT</ArtDefineTag>
 			<YieldChanges>
 				<iYieldChange>1</iYieldChange>
-				<iYieldChange>2</iYieldChange>
+				<iYieldChange>1</iYieldChange>
 				<iYieldChange>1</iYieldChange>
 			</YieldChanges>
 			<iUpgradeTime>30</iUpgradeTime>
@@ -8928,11 +8928,11 @@
 			<YieldChanges>
 				<iYieldChange>1</iYieldChange>
 				<iYieldChange>2</iYieldChange>
-				<iYieldChange>2</iYieldChange>
+				<iYieldChange>1</iYieldChange>
 			</YieldChanges>
 			<iUpgradeTime>45</iUpgradeTime>
 			<iAirBombDefense>10</iAirBombDefense>
-			<iDefenseModifier>40</iDefenseModifier>
+			<iDefenseModifier>30</iDefenseModifier>
 			<iPillageGold>20</iPillageGold>
 			<bFort>1</bFort>
 			<bPeakMakesValid>1</bPeakMakesValid>
@@ -9096,7 +9096,7 @@
 			<bActsAsCity>1</bActsAsCity>
 			<iUpgradeTime>60</iUpgradeTime>
 			<iAirBombDefense>10</iAirBombDefense>
-			<iDefenseModifier>60</iDefenseModifier>
+			<iDefenseModifier>40</iDefenseModifier>
 			<iPillageGold>30</iPillageGold>
 			<bFort>1</bFort>
 			<bPeakMakesValid>1</bPeakMakesValid>
