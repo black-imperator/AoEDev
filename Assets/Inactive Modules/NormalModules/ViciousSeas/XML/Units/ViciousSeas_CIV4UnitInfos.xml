@@ -3349,6 +3349,7 @@
 				<Promotion>PROMOTION_NIGHTMARE_AIFON_HIDDEN_NATIONALITY_BLANKET</Promotion>
 				<Promotion>PROMOTION_DREAMING_AIFON</Promotion>
 				<Promotion>PROMOTION_DREAM</Promotion>
+				<Promotion>PROMOTION_LIZARDMAN_BEZERI</Promotion>
 			</AllowPromotions>
 		</UnitInfo>
 		<UnitInfo>        <!-- Farmer -->
@@ -3359,6 +3360,7 @@
 				<Promotion>PROMOTION_NIGHTMARE_AIFON_HIDDEN_NATIONALITY_BLANKET</Promotion>
 				<Promotion>PROMOTION_DREAMING_AIFON</Promotion>
 				<Promotion>PROMOTION_DREAM</Promotion>
+				<Promotion>PROMOTION_LIZARDMAN_BEZERI</Promotion>
 			</AllowPromotions>
 		</UnitInfo>
 		<UnitInfo>        <!-- Fishing Boat -->
@@ -3369,6 +3371,7 @@
 				<Promotion>PROMOTION_NIGHTMARE_AIFON_HIDDEN_NATIONALITY_BLANKET</Promotion>
 				<Promotion>PROMOTION_DREAMING_AIFON</Promotion>
 				<Promotion>PROMOTION_DREAM</Promotion>
+				<Promotion>PROMOTION_LIZARDMAN_BEZERI</Promotion>
 			</AllowPromotions>
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
@@ -3393,6 +3396,7 @@
 				<Promotion>PROMOTION_NIGHTMARE_AIFON_HIDDEN_NATIONALITY_BLANKET</Promotion>
 				<Promotion>PROMOTION_DREAMING_AIFON</Promotion>
 				<Promotion>PROMOTION_DREAM</Promotion>
+				<Promotion>PROMOTION_LIZARDMAN_BEZERI</Promotion>
 			</AllowPromotions>
 		</UnitInfo>
 		<UnitInfo>        <!-- Stonefire Smith -->
@@ -3403,7 +3407,22 @@
 				<Promotion>PROMOTION_NIGHTMARE_AIFON_HIDDEN_NATIONALITY_BLANKET</Promotion>
 				<Promotion>PROMOTION_DREAMING_AIFON</Promotion>
 				<Promotion>PROMOTION_DREAM</Promotion>
+				<Promotion>PROMOTION_LIZARDMAN_BEZERI</Promotion>
 			</AllowPromotions>
+		</UnitInfo>
+		<UnitInfo>        <!-- Nomad Wagon Catcivics -->
+			<Class>UNITCLASS_NOMAD_WAGON</Class>
+			<Type>UNIT_NOMAD_WAGON</Type>
+			<AllowPromotions>
+				<Promotion>PROMOTION_NIGHTMARE_AIFON</Promotion>
+				<Promotion>PROMOTION_NIGHTMARE_AIFON_HIDDEN_NATIONALITY_BLANKET</Promotion>
+				<Promotion>PROMOTION_DREAMING_AIFON</Promotion>
+				<Promotion>PROMOTION_DREAM</Promotion>
+				<Promotion>PROMOTION_LIZARDMAN_BEZERI</Promotion>
+			</AllowPromotions>
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_CATSCIVICS</DependencyType>
+		     </AndDependencyTypes>
 		</UnitInfo>
 </UnitInfos>
 </Civ4UnitInfos>
