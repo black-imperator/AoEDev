@@ -12368,27 +12368,107 @@ So, if you would please drop your weapons, your belt and your valuables, in that
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GOODY_FREED_LEGION</Tag>
-		<English></English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
+		<English>Your unit is exploring the dank dark depths of this wretched place when the ground starts to rumble.
+The rumbling grows and grows, and your unit takes shelter behind a pillar.
+A shambling line of skeletons emerges from the farthest tunnel and streams past your unit's hiding spot and heads towards the surface.
+The rumbling only grows as the line keeps moving forward, and the sheer scale of the horde starts to dawn on your unit; they don't know how long they will be stuck hiding here.</English>
+		<French>Your unit is exploring the dank dark depths of this wretched place when the ground starts to rumble.
+The rumbling grows and grows, and your unit takes shelter behind a pillar.
+A shambling line of skeletons emerges from the farthest tunnel and streams past your unit's hiding spot and heads towards the surface.
+The rumbling only grows as the line keeps moving forward, and the sheer scale of the horde starts to dawn on your unit; they don't know how long they will be stuck hiding here.</French>
+		<German>Your unit is exploring the dank dark depths of this wretched place when the ground starts to rumble.
+The rumbling grows and grows, and your unit takes shelter behind a pillar.
+A shambling line of skeletons emerges from the farthest tunnel and streams past your unit's hiding spot and heads towards the surface.
+The rumbling only grows as the line keeps moving forward, and the sheer scale of the horde starts to dawn on your unit; they don't know how long they will be stuck hiding here.</German>
+		<Italian>Your unit is exploring the dank dark depths of this wretched place when the ground starts to rumble.
+The rumbling grows and grows, and your unit takes shelter behind a pillar.
+A shambling line of skeletons emerges from the farthest tunnel and streams past your unit's hiding spot and heads towards the surface.
+The rumbling only grows as the line keeps moving forward, and the sheer scale of the horde starts to dawn on your unit; they don't know how long they will be stuck hiding here.</Italian>
+		<Spanish>Your unit is exploring the dank dark depths of this wretched place when the ground starts to rumble.
+The rumbling grows and grows, and your unit takes shelter behind a pillar.
+A shambling line of skeletons emerges from the farthest tunnel and streams past your unit's hiding spot and heads towards the surface.
+The rumbling only grows as the line keeps moving forward, and the sheer scale of the horde starts to dawn on your unit; they don't know how long they will be stuck hiding here.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GOODY_FREED_LJOSALFER</Tag>
-		<English></English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
+		<English>Your unit is wandering in a forest, completely lost as every tree looks the same, with an otherworldly perfection to them.
+Turning the corner, your unit is surprised to find they are now standing in the middle of a village, hewn into the trees themselves.
+Your unit is even more surprised to realise there are twenty knocked arrows pointed at their head.</English>
+		<French>Your unit is wandering in a forest, completely lost as every tree looks the same, with an otherworldly perfection to them.
+Turning the corner, your unit is surprised to find they are now standing in the middle of a village, hewn into the trees themselves.
+Your unit is even more surprised to realise there are twenty knocked arrows pointed at their head.</French>
+		<German>Your unit is wandering in a forest, completely lost as every tree looks the same, with an otherworldly perfection to them.
+Turning the corner, your unit is surprised to find they are now standing in the middle of a village, hewn into the trees themselves.
+Your unit is even more surprised to realise there are twenty knocked arrows pointed at their head.</German>
+		<Italian>Your unit is wandering in a forest, completely lost as every tree looks the same, with an otherworldly perfection to them.
+Turning the corner, your unit is surprised to find they are now standing in the middle of a village, hewn into the trees themselves.
+Your unit is even more surprised to realise there are twenty knocked arrows pointed at their head.</Italian>
+		<Spanish>Your unit is wandering in a forest, completely lost as every tree looks the same, with an otherworldly perfection to them.
+Turning the corner, your unit is surprised to find they are now standing in the middle of a village, hewn into the trees themselves.
+Your unit is even more surprised to realise there are twenty knocked arrows pointed at their head.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GOODY_FREED_LUCHUIRP</Tag>
-		<English></English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
+		<English>As your unit is exploring the depths, the walls of the dungeon begin to tremble and shake.
+As the rumble builds to a scream, great arms of stone and clay smash through the far wall and begin diligently excavating the new entryway.
+The figures appear as men, though nearly as tall as a lowland giant, with no facial features.
+Your unit realises these are automatons, and standing amongst them is a smaller figure with an air of authority.
+Seeing you, the figure hails a greeting and comes marching over, with two stone golems in tow.
+"Ho, friend! Careful where you stand; these golems have orders to clear the passageway, so try not to look like an obstacle!"
+Your unit shuffles to the side as the dwarf continues:
+"Tell me, have we reached the surface?"
+Your unit stammers that they are still deep underground.
+"Blast, well, give me a moment; I must make adjustments."
+With a whistle and a sharp hand gesture, the dwarf begins speaking in what sounds like an unknown language, though your unit can pick out the repeated phrases "dash" and "dot".
+The golems stop what they are doing and begin digging in a new direction, straight up.</English>
+		<French>As your unit is exploring the depths, the walls of the dungeon begin to tremble and shake.
+As the rumble builds to a scream, great arms of stone and clay smash through the far wall and begin diligently excavating the new entryway.
+The figures appear as men, though nearly as tall as a lowland giant, with no facial features.
+Your unit realises these are automatons, and standing amongst them is a smaller figure with an air of authority.
+Seeing you, the figure hails a greeting and comes marching over, with two stone golems in tow.
+"Ho, friend! Careful where you stand; these golems have orders to clear the passageway, so try not to look like an obstacle!"
+Your unit shuffles to the side as the dwarf continues:
+"Tell me, have we reached the surface?"
+Your unit stammers that they are still deep underground.
+"Blast, well, give me a moment; I must make adjustments."
+With a whistle and a sharp hand gesture, the dwarf begins speaking in what sounds like an unknown language, though your unit can pick out the repeated phrases "dash" and "dot".
+The golems stop what they are doing and begin digging in a new direction, straight up.</French>
+		<German>As your unit is exploring the depths, the walls of the dungeon begin to tremble and shake.
+As the rumble builds to a scream, great arms of stone and clay smash through the far wall and begin diligently excavating the new entryway.
+The figures appear as men, though nearly as tall as a lowland giant, with no facial features.
+Your unit realises these are automatons, and standing amongst them is a smaller figure with an air of authority.
+Seeing you, the figure hails a greeting and comes marching over, with two stone golems in tow.
+"Ho, friend! Careful where you stand; these golems have orders to clear the passageway, so try not to look like an obstacle!"
+Your unit shuffles to the side as the dwarf continues:
+"Tell me, have we reached the surface?"
+Your unit stammers that they are still deep underground.
+"Blast, well, give me a moment; I must make adjustments."
+With a whistle and a sharp hand gesture, the dwarf begins speaking in what sounds like an unknown language, though your unit can pick out the repeated phrases "dash" and "dot".
+The golems stop what they are doing and begin digging in a new direction, straight up.</German>
+		<Italian>As your unit is exploring the depths, the walls of the dungeon begin to tremble and shake.
+As the rumble builds to a scream, great arms of stone and clay smash through the far wall and begin diligently excavating the new entryway.
+The figures appear as men, though nearly as tall as a lowland giant, with no facial features.
+Your unit realises these are automatons, and standing amongst them is a smaller figure with an air of authority.
+Seeing you, the figure hails a greeting and comes marching over, with two stone golems in tow.
+"Ho, friend! Careful where you stand; these golems have orders to clear the passageway, so try not to look like an obstacle!"
+Your unit shuffles to the side as the dwarf continues:
+"Tell me, have we reached the surface?"
+Your unit stammers that they are still deep underground.
+"Blast, well, give me a moment; I must make adjustments."
+With a whistle and a sharp hand gesture, the dwarf begins speaking in what sounds like an unknown language, though your unit can pick out the repeated phrases "dash" and "dot".
+The golems stop what they are doing and begin digging in a new direction, straight up.</Italian>
+		<Spanish>As your unit is exploring the depths, the walls of the dungeon begin to tremble and shake.
+As the rumble builds to a scream, great arms of stone and clay smash through the far wall and begin diligently excavating the new entryway.
+The figures appear as men, though nearly as tall as a lowland giant, with no facial features.
+Your unit realises these are automatons, and standing amongst them is a smaller figure with an air of authority.
+Seeing you, the figure hails a greeting and comes marching over, with two stone golems in tow.
+"Ho, friend! Careful where you stand; these golems have orders to clear the passageway, so try not to look like an obstacle!"
+Your unit shuffles to the side as the dwarf continues:
+"Tell me, have we reached the surface?"
+Your unit stammers that they are still deep underground.
+"Blast, well, give me a moment; I must make adjustments."
+With a whistle and a sharp hand gesture, the dwarf begins speaking in what sounds like an unknown language, though your unit can pick out the repeated phrases "dash" and "dot".
+The golems stop what they are doing and begin digging in a new direction, straight up.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GOODY_FREED_MALAKIM</Tag>
@@ -12458,11 +12538,21 @@ And they are noticed instantly - a woman equipped for engineering work approache
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GOODY_FREED_SVARTALFER</Tag>
-		<English></English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
+		<English>Your unit is wandering in a forest, completely lost as every tree looks the same, with an otherworldly perfection to them.
+Turning the corner, your unit is surprised to find they are now standing in the middle of a village, hewn into the trees themselves.
+Your unit is even more surprised to realise there are two figures standing beside them, holding their arms pinned and pressing a dagger against their ribs.</English>
+		<French>Your unit is wandering in a forest, completely lost as every tree looks the same, with an otherworldly perfection to them.
+Turning the corner, your unit is surprised to find they are now standing in the middle of a village, hewn into the trees themselves.
+Your unit is even more surprised to realise there are two figures standing beside them, holding their arms pinned and pressing a dagger against their ribs.</French>
+		<German>Your unit is wandering in a forest, completely lost as every tree looks the same, with an otherworldly perfection to them.
+Turning the corner, your unit is surprised to find they are now standing in the middle of a village, hewn into the trees themselves.
+Your unit is even more surprised to realise there are two figures standing beside them, holding their arms pinned and pressing a dagger against their ribs.</German>
+		<Italian>Your unit is wandering in a forest, completely lost as every tree looks the same, with an otherworldly perfection to them.
+Turning the corner, your unit is surprised to find they are now standing in the middle of a village, hewn into the trees themselves.
+Your unit is even more surprised to realise there are two figures standing beside them, holding their arms pinned and pressing a dagger against their ribs.</Italian>
+		<Spanish>Your unit is wandering in a forest, completely lost as every tree looks the same, with an otherworldly perfection to them.
+Turning the corner, your unit is surprised to find they are now standing in the middle of a village, hewn into the trees themselves.
+Your unit is even more surprised to realise there are two figures standing beside them, holding their arms pinned and pressing a dagger against their ribs.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_</Tag>
