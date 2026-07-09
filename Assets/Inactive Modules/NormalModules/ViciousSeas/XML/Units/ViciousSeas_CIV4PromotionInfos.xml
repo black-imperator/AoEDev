@@ -1113,13 +1113,13 @@
 			<PlotEffectDefenses>
 				<PlotEffectDefense>
 					<PlotEffectType>PLOT_EFFECT_DREAMWORLD</PlotEffectType>
-					<iPlotEffectDefense>25</iPlotEffectDefense>
+					<iPlotEffectDefense>10</iPlotEffectDefense>
 				</PlotEffectDefense>
 			</PlotEffectDefenses>
 			<PlotEffectAttacks>
 				<PlotEffectAttack>
 					<PlotEffectType>PLOT_EFFECT_DREAMWORLD</PlotEffectType>
-					<iPlotEffectAttack>25</iPlotEffectAttack>
+					<iPlotEffectAttack>10</iPlotEffectAttack>
 				</PlotEffectAttack>
 			</PlotEffectAttacks>
 			<DamageTypeResists>

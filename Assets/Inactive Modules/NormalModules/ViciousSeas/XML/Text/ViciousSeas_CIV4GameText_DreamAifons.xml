@@ -274,61 +274,71 @@ As the Dreaming syphons more and more reality into itself, living things inside 
 	</TEXT>
 	<TEXT> 
 		<Tag>TXT_KEY_CIV_DREAM_AIFONS_STRATEGY</Tag>
-		<English>Complexity: Advanced[NEWLINE][WORK IN PROGRESS]The Dreaming Aifons are an aberration; nothing they do is normal.
+		<English>Complexity: Advanced
+The Dreaming Aifons are an aberration; nothing they do is normal.
 
-[ICON_BULLET]The Dream Aifons appear as hidden nationality monsters outside of their cultural borders, and angelic beings who inject culture in nearby neutral or hostile cities when inside their own borders.
+[ICON_BULLET]Military: The Dream Aifons appear as hidden nationality monsters outside of their cultural borders, and angelic beings who inject culture into nearby neutral or hostile cities when inside their own borders.
 This means the only way they can capture a city is by culture flipping it!
-[ICON_BULLET]Dream cities have terrible hammer production, especially if settled in the open ocean. Instead, they start with the unique civic [LINK=CIVIC_MELDING]Melding[\LINK], allowing them to convert their culture into production for completing units or structures.
-[ICON_BULLET]Being born of Danalin's troubled dreams, these false Aifons are able to settle cities on the ocean and have better yields there than on land.
-[ICON_BULLET]The Dreaming terrain type spreads inside their culture, giving them a defensive bonus inside of it and slightly hurting other units. It can be dispelled with Metamagic, leaving the cities exposed as the nightmarish wasteland they are.
-[ICON_BULLET]The Dreaming terrain also saps the life of the normal terrain around it, spreading wasteland, not that those caught in the Dreaming would be able to see it for what it really is.
-[ICON_BULLET]Crime is your biggest enemy: losing control of crime in a dreaming city is extremely dangerous and will quickly lead to a total collapse of the dream. Especially with each [LINK=BUILDING_NIGHTMARES]Population point[\LINK] producing extra crime.
-[ICON_BULLET]The Dream of the Aifons have access to a unique version of the Alter of Luonnotar, strengthening the city it is built in, giving XP to disciple units, and providing units with the [LINK=PROMOTION_DOOMGIVER]Doomgiver[\LINK] promotion.
-[ICON_BULLET]The Dream Aifons do not have arcane units besides Hemah. Instead, they get the insatiable Empty, a disciple mimic unit who is unable to gain experience from combat but can steal promotions, including spellcasting.</English>
-		<French>Complexity: Advanced[NEWLINE][WORK IN PROGRESS]The Dreaming Aifons are an aberration; nothing they do is normal.
+[ICON_BULLET]Culture: Dream cities have terrible hammer production, especially if settled in the open ocean. Instead, they start with the unique civic [LINK=CIVIC_MELDING]Melding[\LINK], which allows them to spend their culture on production to complete units or structures.
+[ICON_BULLET]Oceanic: Being born of Danalin's troubled dreams, these false Aifons are able to walk across water, fight better on water, and have better yields at sea than on land.
+[ICON_BULLET]Corruption: The Dreaming plot effect spreads inside their culture, giving them a defensive bonus inside of it and slightly hurting other units. It can be dispelled with Metamagic.
+[ICON_BULLET]Improvements: The Aifons have several unique improvements; on land, they have the Haven improvement, which is worse than other improvements but can exploit resources and gives culture directly to cities, and at sea is the fishing replacement, the Undersea Warrens.
+In the open ocean, the Pearlstone Communes and Coral Fortresses can be built for commerce and defence, respectively.
+[ICON_BULLET]Crime:  Crime is your biggest enemy, with no unhealth in cities and ocean tiles giving lots of food,  losing control of crime in a dreaming city is extremely dangerous and will quickly lead to a total collapse of the dream. Especially with each [LINK=BUILDING_NIGHTMARES]Population point[\LINK] producing extra crime from unhappy pops.
+[ICON_BULLET]Victory: The Dream of the Aifons has access to a unique version of the Alter of Luonnotar, strengthening the city it is built in, giving XP to disciple units, and providing units with the [LINK=PROMOTION_DOOMGIVER]Doomgiver[\LINK] promotion.
+[ICON_BULLET]Magic: The Dream Aifons do not have arcane units besides Hemah. Instead, they get the insatiable Empty, a disciple mimic unit who is unable to gain experience from combat but can steal promotions, including spellcasting.</English>
+		<French>Complexity: Advanced
+The Dreaming Aifons are an aberration; nothing they do is normal.
 
-[ICON_BULLET]The Dream Aifons appear as hidden nationality monsters outside of their cultural borders, and angelic beings who inject culture in nearby neutral or hostile cities when inside their own borders.
+[ICON_BULLET]Military: The Dream Aifons appear as hidden nationality monsters outside of their cultural borders, and angelic beings who inject culture into nearby neutral or hostile cities when inside their own borders.
 This means the only way they can capture a city is by culture flipping it!
-[ICON_BULLET]Dream cities have terrible hammer production, especially if settled in the open ocean. Instead, they start with the unique civic [LINK=CIVIC_MELDING]Melding[\LINK], allowing them to convert their culture into production for completing units or structures.
-[ICON_BULLET]Being born of Danalin's troubled dreams, these false Aifons are able to settle cities on the ocean and have better yields there than on land.
-[ICON_BULLET]The Dreaming terrain type spreads inside their culture, giving them a defensive bonus inside of it and slightly hurting other units. It can be dispelled with Metamagic, leaving the cities exposed as the nightmarish wasteland they are.
-[ICON_BULLET]The Dreaming terrain also saps the life of the normal terrain around it, spreading wasteland, not that those caught in the Dreaming would be able to see it for what it really is.
-[ICON_BULLET]Crime is your biggest enemy: losing control of crime in a dreaming city is extremely dangerous and will quickly lead to a total collapse of the dream. Especially with each [LINK=BUILDING_NIGHTMARES]Population point[\LINK] producing extra crime.
-[ICON_BULLET]The Dream of the Aifons have access to a unique version of the Alter of Luonnotar, strengthening the city it is built in, giving XP to disciple units, and providing units with the [LINK=PROMOTION_DOOMGIVER]Doomgiver[\LINK] promotion.
-[ICON_BULLET]The Dream Aifons do not have arcane units besides Hemah. Instead, they get the insatiable Empty, a disciple mimic unit who is unable to gain experience from combat but can steal promotions, including spellcasting.</French>
-		<German>Complexity: Advanced[NEWLINE][WORK IN PROGRESS]The Dreaming Aifons are an aberration; nothing they do is normal.
+[ICON_BULLET]Culture: Dream cities have terrible hammer production, especially if settled in the open ocean. Instead, they start with the unique civic [LINK=CIVIC_MELDING]Melding[\LINK], which allows them to spend their culture on production to complete units or structures.
+[ICON_BULLET]Oceanic: Being born of Danalin's troubled dreams, these false Aifons are able to walk across water, fight better on water, and have better yields at sea than on land.
+[ICON_BULLET]Corruption: The Dreaming plot effect spreads inside their culture, giving them a defensive bonus inside of it and slightly hurting other units. It can be dispelled with Metamagic.
+[ICON_BULLET]Improvements: The Aifons have several unique improvements; on land, they have the Haven improvement, which is worse than other improvements but can exploit resources and gives culture directly to cities, and at sea is the fishing replacement, the Undersea Warrens.
+In the open ocean, the Pearlstone Communes and Coral Fortresses can be built for commerce and defence, respectively.
+[ICON_BULLET]Crime:  Crime is your biggest enemy, with no unhealth in cities and ocean tiles giving lots of food,  losing control of crime in a dreaming city is extremely dangerous and will quickly lead to a total collapse of the dream. Especially with each [LINK=BUILDING_NIGHTMARES]Population point[\LINK] producing extra crime from unhappy pops.
+[ICON_BULLET]Victory: The Dream of the Aifons has access to a unique version of the Alter of Luonnotar, strengthening the city it is built in, giving XP to disciple units, and providing units with the [LINK=PROMOTION_DOOMGIVER]Doomgiver[\LINK] promotion.
+[ICON_BULLET]Magic: The Dream Aifons do not have arcane units besides Hemah. Instead, they get the insatiable Empty, a disciple mimic unit who is unable to gain experience from combat but can steal promotions, including spellcasting.</French>
+		<German>Complexity: Advanced
+The Dreaming Aifons are an aberration; nothing they do is normal.
 
-[ICON_BULLET]The Dream Aifons appear as hidden nationality monsters outside of their cultural borders, and angelic beings who inject culture in nearby neutral or hostile cities when inside their own borders.
+[ICON_BULLET]Military: The Dream Aifons appear as hidden nationality monsters outside of their cultural borders, and angelic beings who inject culture into nearby neutral or hostile cities when inside their own borders.
 This means the only way they can capture a city is by culture flipping it!
-[ICON_BULLET]Dream cities have terrible hammer production, especially if settled in the open ocean. Instead, they start with the unique civic [LINK=CIVIC_MELDING]Melding[\LINK], allowing them to convert their culture into production for completing units or structures.
-[ICON_BULLET]Being born of Danalin's troubled dreams, these false Aifons are able to settle cities on the ocean and have better yields there than on land.
-[ICON_BULLET]The Dreaming terrain type spreads inside their culture, giving them a defensive bonus inside of it and slightly hurting other units. It can be dispelled with Metamagic, leaving the cities exposed as the nightmarish wasteland they are.
-[ICON_BULLET]The Dreaming terrain also saps the life of the normal terrain around it, spreading wasteland, not that those caught in the Dreaming would be able to see it for what it really is.
-[ICON_BULLET]Crime is your biggest enemy: losing control of crime in a dreaming city is extremely dangerous and will quickly lead to a total collapse of the dream. Especially with each [LINK=BUILDING_NIGHTMARES]Population point[\LINK] producing extra crime.
-[ICON_BULLET]The Dream of the Aifons have access to a unique version of the Alter of Luonnotar, strengthening the city it is built in, giving XP to disciple units, and providing units with the [LINK=PROMOTION_DOOMGIVER]Doomgiver[\LINK] promotion.
-[ICON_BULLET]The Dream Aifons do not have arcane units besides Hemah. Instead, they get the insatiable Empty, a disciple mimic unit who is unable to gain experience from combat but can steal promotions, including spellcasting.</German>
-		<Italian>Complexity: Advanced[NEWLINE][WORK IN PROGRESS]The Dreaming Aifons are an aberration; nothing they do is normal.
+[ICON_BULLET]Culture: Dream cities have terrible hammer production, especially if settled in the open ocean. Instead, they start with the unique civic [LINK=CIVIC_MELDING]Melding[\LINK], which allows them to spend their culture on production to complete units or structures.
+[ICON_BULLET]Oceanic: Being born of Danalin's troubled dreams, these false Aifons are able to walk across water, fight better on water, and have better yields at sea than on land.
+[ICON_BULLET]Corruption: The Dreaming plot effect spreads inside their culture, giving them a defensive bonus inside of it and slightly hurting other units. It can be dispelled with Metamagic.
+[ICON_BULLET]Improvements: The Aifons have several unique improvements; on land, they have the Haven improvement, which is worse than other improvements but can exploit resources and gives culture directly to cities, and at sea is the fishing replacement, the Undersea Warrens.
+In the open ocean, the Pearlstone Communes and Coral Fortresses can be built for commerce and defence, respectively.
+[ICON_BULLET]Crime:  Crime is your biggest enemy, with no unhealth in cities and ocean tiles giving lots of food,  losing control of crime in a dreaming city is extremely dangerous and will quickly lead to a total collapse of the dream. Especially with each [LINK=BUILDING_NIGHTMARES]Population point[\LINK] producing extra crime from unhappy pops.
+[ICON_BULLET]Victory: The Dream of the Aifons has access to a unique version of the Alter of Luonnotar, strengthening the city it is built in, giving XP to disciple units, and providing units with the [LINK=PROMOTION_DOOMGIVER]Doomgiver[\LINK] promotion.
+[ICON_BULLET]Magic: The Dream Aifons do not have arcane units besides Hemah. Instead, they get the insatiable Empty, a disciple mimic unit who is unable to gain experience from combat but can steal promotions, including spellcasting.</German>
+		<Italian>Complexity: Advanced
+The Dreaming Aifons are an aberration; nothing they do is normal.
 
-[ICON_BULLET]The Dream Aifons appear as hidden nationality monsters outside of their cultural borders, and angelic beings who inject culture in nearby neutral or hostile cities when inside their own borders.
+[ICON_BULLET]Military: The Dream Aifons appear as hidden nationality monsters outside of their cultural borders, and angelic beings who inject culture into nearby neutral or hostile cities when inside their own borders.
 This means the only way they can capture a city is by culture flipping it!
-[ICON_BULLET]Dream cities have terrible hammer production, especially if settled in the open ocean. Instead, they start with the unique civic [LINK=CIVIC_MELDING]Melding[\LINK], allowing them to convert their culture into production for completing units or structures.
-[ICON_BULLET]Being born of Danalin's troubled dreams, these false Aifons are able to settle cities on the ocean and have better yields there than on land.
-[ICON_BULLET]The Dreaming terrain type spreads inside their culture, giving them a defensive bonus inside of it and slightly hurting other units. It can be dispelled with Metamagic, leaving the cities exposed as the nightmarish wasteland they are.
-[ICON_BULLET]The Dreaming terrain also saps the life of the normal terrain around it, spreading wasteland, not that those caught in the Dreaming would be able to see it for what it really is.
-[ICON_BULLET]Crime is your biggest enemy: losing control of crime in a dreaming city is extremely dangerous and will quickly lead to a total collapse of the dream. Especially with each [LINK=BUILDING_NIGHTMARES]Population point[\LINK] producing extra crime.
-[ICON_BULLET]The Dream of the Aifons have access to a unique version of the Alter of Luonnotar, strengthening the city it is built in, giving XP to disciple units, and providing units with the [LINK=PROMOTION_DOOMGIVER]Doomgiver[\LINK] promotion.
-[ICON_BULLET]The Dream Aifons do not have arcane units besides Hemah. Instead, they get the insatiable Empty, a disciple mimic unit who is unable to gain experience from combat but can steal promotions, including spellcasting.</Italian>
-		<Spanish>Complexity: Advanced[NEWLINE][WORK IN PROGRESS]The Dreaming Aifons are an aberration; nothing they do is normal.
+[ICON_BULLET]Culture: Dream cities have terrible hammer production, especially if settled in the open ocean. Instead, they start with the unique civic [LINK=CIVIC_MELDING]Melding[\LINK], which allows them to spend their culture on production to complete units or structures.
+[ICON_BULLET]Oceanic: Being born of Danalin's troubled dreams, these false Aifons are able to walk across water, fight better on water, and have better yields at sea than on land.
+[ICON_BULLET]Corruption: The Dreaming plot effect spreads inside their culture, giving them a defensive bonus inside of it and slightly hurting other units. It can be dispelled with Metamagic.
+[ICON_BULLET]Improvements: The Aifons have several unique improvements; on land, they have the Haven improvement, which is worse than other improvements but can exploit resources and gives culture directly to cities, and at sea is the fishing replacement, the Undersea Warrens.
+In the open ocean, the Pearlstone Communes and Coral Fortresses can be built for commerce and defence, respectively.
+[ICON_BULLET]Crime:  Crime is your biggest enemy, with no unhealth in cities and ocean tiles giving lots of food,  losing control of crime in a dreaming city is extremely dangerous and will quickly lead to a total collapse of the dream. Especially with each [LINK=BUILDING_NIGHTMARES]Population point[\LINK] producing extra crime from unhappy pops.
+[ICON_BULLET]Victory: The Dream of the Aifons has access to a unique version of the Alter of Luonnotar, strengthening the city it is built in, giving XP to disciple units, and providing units with the [LINK=PROMOTION_DOOMGIVER]Doomgiver[\LINK] promotion.
+[ICON_BULLET]Magic: The Dream Aifons do not have arcane units besides Hemah. Instead, they get the insatiable Empty, a disciple mimic unit who is unable to gain experience from combat but can steal promotions, including spellcasting.</Italian>
+		<Spanish>Complexity: Advanced
+The Dreaming Aifons are an aberration; nothing they do is normal.
 
-[ICON_BULLET]The Dream Aifons appear as hidden nationality monsters outside of their cultural borders, and angelic beings who inject culture in nearby neutral or hostile cities when inside their own borders.
+[ICON_BULLET]Military: The Dream Aifons appear as hidden nationality monsters outside of their cultural borders, and angelic beings who inject culture into nearby neutral or hostile cities when inside their own borders.
 This means the only way they can capture a city is by culture flipping it!
-[ICON_BULLET]Dream cities have terrible hammer production, especially if settled in the open ocean. Instead, they start with the unique civic [LINK=CIVIC_MELDING]Melding[\LINK], allowing them to convert their culture into production for completing units or structures.
-[ICON_BULLET]Being born of Danalin's troubled dreams, these false Aifons are able to settle cities on the ocean and have better yields there than on land.
-[ICON_BULLET]The Dreaming terrain type spreads inside their culture, giving them a defensive bonus inside of it and slightly hurting other units. It can be dispelled with Metamagic, leaving the cities exposed as the nightmarish wasteland they are.
-[ICON_BULLET]The Dreaming terrain also saps the life of the normal terrain around it, spreading wasteland, not that those caught in the Dreaming would be able to see it for what it really is.
-[ICON_BULLET]Crime is your biggest enemy: losing control of crime in a dreaming city is extremely dangerous and will quickly lead to a total collapse of the dream. Especially with each [LINK=BUILDING_NIGHTMARES]Population point[\LINK] producing extra crime.
-[ICON_BULLET]The Dream of the Aifons have access to a unique version of the Alter of Luonnotar, strengthening the city it is built in, giving XP to disciple units, and providing units with the [LINK=PROMOTION_DOOMGIVER]Doomgiver[\LINK] promotion.
-[ICON_BULLET]The Dream Aifons do not have arcane units besides Hemah. Instead, they get the insatiable Empty, a disciple mimic unit who is unable to gain experience from combat but can steal promotions, including spellcasting.</Spanish>
+[ICON_BULLET]Culture: Dream cities have terrible hammer production, especially if settled in the open ocean. Instead, they start with the unique civic [LINK=CIVIC_MELDING]Melding[\LINK], which allows them to spend their culture on production to complete units or structures.
+[ICON_BULLET]Oceanic: Being born of Danalin's troubled dreams, these false Aifons are able to walk across water, fight better on water, and have better yields at sea than on land.
+[ICON_BULLET]Corruption: The Dreaming plot effect spreads inside their culture, giving them a defensive bonus inside of it and slightly hurting other units. It can be dispelled with Metamagic.
+[ICON_BULLET]Improvements: The Aifons have several unique improvements; on land, they have the Haven improvement, which is worse than other improvements but can exploit resources and gives culture directly to cities, and at sea is the fishing replacement, the Undersea Warrens.
+In the open ocean, the Pearlstone Communes and Coral Fortresses can be built for commerce and defence, respectively.
+[ICON_BULLET]Crime:  Crime is your biggest enemy, with no unhealth in cities and ocean tiles giving lots of food,  losing control of crime in a dreaming city is extremely dangerous and will quickly lead to a total collapse of the dream. Especially with each [LINK=BUILDING_NIGHTMARES]Population point[\LINK] producing extra crime from unhappy pops.
+[ICON_BULLET]Victory: The Dream of the Aifons has access to a unique version of the Alter of Luonnotar, strengthening the city it is built in, giving XP to disciple units, and providing units with the [LINK=PROMOTION_DOOMGIVER]Doomgiver[\LINK] promotion.
+[ICON_BULLET]Magic: The Dream Aifons do not have arcane units besides Hemah. Instead, they get the insatiable Empty, a disciple mimic unit who is unable to gain experience from combat but can steal promotions, including spellcasting.</Spanish>
 	</TEXT>
 	<TEXT> 
 		<Tag>TXT_KEY_TRAIT_DREAM</Tag>
