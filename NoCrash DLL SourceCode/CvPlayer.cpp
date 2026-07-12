@@ -8371,7 +8371,11 @@ bool CvPlayer::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestV
 /**								---- Start Original Code ----									**
 		if (getNumCities() < GC.getBuildingInfo(eBuilding).getNumCitiesPrereq())
 /**								----  End Original Code  ----									**/
-		if (getNumCities() < GC.getBuildingInfo(eBuilding).getNumCitiesPrereq() || (getMaxCities() != -1 && (getMaxCities() < GC.getBuildingInfo(eBuilding).getNumCitiesPrereq()) && (getNumCities() != getMaxCities())))
+/**	Settlement-count fix: getMaxCities() caps only full cities, but getNumCities() also		**/
+/**	counts settlements, so getNumCities()==getMaxCities() was unreachable for any Kuriotate	**/
+/**	with a settlement, permanently blocking buildings whose prereq exceeds the cap.			**/
+/**	Compare the real-city count (getNumCities()-getNumSettlements()), matching CvCity.cpp.	**/
+		if (getNumCities() < GC.getBuildingInfo(eBuilding).getNumCitiesPrereq() || (getMaxCities() != -1 && (getMaxCities() < GC.getBuildingInfo(eBuilding).getNumCitiesPrereq()) && ((getNumCities() - getNumSettlements()) != getMaxCities())))
 /*************************************************************************************************/
 /**	Tweak									END													**/
 /*************************************************************************************************/
