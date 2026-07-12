@@ -129,7 +129,7 @@
 		</TechInfo>
 		<TechInfo>		<!-- Poisons -->
 			<Type>TECH_POISONS</Type>
-			<iCost>1000</iCost>
+			<iCost>1600</iCost>
 		</TechInfo>
 		<TechInfo>		<!-- Priesthood -->
 			<Type>TECH_PRIESTHOOD</Type>
@@ -174,7 +174,7 @@
 		<!-- Tier 5s (1600 -> 2500) -->
 		<TechInfo>		<!-- Animal Mastery -->
 			<Type>TECH_ANIMAL_MASTERY</Type>
-			<iCost>2500</iCost>
+			<iCost>6000</iCost>
 		</TechInfo>
 		<TechInfo>		<!-- Astronomy -->
 			<Type>TECH_ASTRONOMY</Type>
@@ -223,7 +223,7 @@
 		</TechInfo>
 		<TechInfo>		<!-- Bowyers -->
 			<Type>TECH_BOWYERS</Type>
-			<iCost>6000</iCost>
+			<iCost>3000</iCost>
 		</TechInfo>
 		<TechInfo>		<!-- Alchemy -->
 			<Type>TECH_ALCHEMY</Type>
@@ -273,11 +273,11 @@
 		<!-- Tier 7s (6400 -> 15625) -->
 		<TechInfo>		<!-- Armored Cavalry -->
 			<Type>TECH_ARMORED_CAVALRY</Type>
-			<iCost>22500</iCost>
+			<iCost>10000</iCost>
 		</TechInfo>
 		<TechInfo>		<!-- Precision -->
 			<Type>TECH_PRECISION</Type>
-			<iCost>22500</iCost>
+			<iCost>7500</iCost>
 		</TechInfo>
 		<TechInfo>		<!-- Strength of Will -->
 			<Type>TECH_STRENGTH_OF_WILL</Type>
@@ -290,7 +290,7 @@
 		</TechInfo>
 		<TechInfo>		<!-- Mithril Working -->
 			<Type>TECH_MITHRIL_WORKING</Type>
-			<iCost>25000</iCost>
+			<iCost>20000</iCost>
 		</TechInfo>
 		<TechInfo>		<!-- Omniscience -->
 			<Type>TECH_OMNISCIENCE</Type>

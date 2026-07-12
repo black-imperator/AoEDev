@@ -1113,13 +1113,13 @@
 			<PlotEffectDefenses>
 				<PlotEffectDefense>
 					<PlotEffectType>PLOT_EFFECT_DREAMWORLD</PlotEffectType>
-					<iPlotEffectDefense>25</iPlotEffectDefense>
+					<iPlotEffectDefense>10</iPlotEffectDefense>
 				</PlotEffectDefense>
 			</PlotEffectDefenses>
 			<PlotEffectAttacks>
 				<PlotEffectAttack>
 					<PlotEffectType>PLOT_EFFECT_DREAMWORLD</PlotEffectType>
-					<iPlotEffectAttack>25</iPlotEffectAttack>
+					<iPlotEffectAttack>10</iPlotEffectAttack>
 				</PlotEffectAttack>
 			</PlotEffectAttacks>
 			<DamageTypeResists>
@@ -1677,6 +1677,69 @@
 				<Promotion>PROMOTION_NIGHTMARE_AIFON</Promotion>
 				<Promotion>PROMOTION_DREAMING_AIFON</Promotion>
 			</PromotionAllows>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Longship -->
+			<Type>PROMOTION_LONGSHIP</Type>
+			<iMovesChange>1</iMovesChange>
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_JOTNAR</DependencyType>
+		     </AndDependencyTypes>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Buccaneers -->
+			<Type>PROMOTION_BUCCANEERS</Type>
+			<Description>TXT_KEY_PROMOTION_BUCCANEERS</Description>
+			<bNoXP>1</bNoXP>
+			<PrereqInCity>1</PrereqInCity>
+			<PromotionClass>PROMOTIONCLASS_NAVAL_CREW</PromotionClass>
+			<iWithdrawalChange>-35</iWithdrawalChange>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Art/Interface/Buttons/Promotions/NavalCrew/Naval_Buccaneers.dds</Button>
+			<iExtraCombatStr>1</iExtraCombatStr>
+			<iExtraCombatDefense>1</iExtraCombatDefense>
+			<bForceOverwrite>1</bForceOverwrite>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Longshoremen -->
+			<Type>PROMOTION_LONGSHOREMEN</Type>
+			<Description>TXT_KEY_PROMOTION_LONGSHOREMEN</Description>
+			<bNoXP>1</bNoXP>
+			<PrereqInCity>1</PrereqInCity>
+			<PromotionClass>PROMOTIONCLASS_NAVAL_CREW</PromotionClass>
+			<iCargoChange>-1</iCargoChange>
+			<iNeutralHealChange>10</iNeutralHealChange>
+			<iFriendlyHealChange>10</iFriendlyHealChange>
+			<iEnemyHealChange>5</iEnemyHealChange>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Art/Interface/Buttons/Promotions/NavalCrew/Naval_Longshoremen.dds</Button>
+			<bForceOverwrite>1</bForceOverwrite>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- ORC CARGO invasions -->
+			<Type>PROMOTION_ORC_CARGO</Type>
+			<Description>TXT_KEY_PROMOTION_ORC_CARGO</Description>
+			<Civilopedia>TXT_KEY_PROMOTION_ORC_CARGO_PEDIA</Civilopedia>
+			<PrereqCivilizations>
+				<PrereqCivilization>CIVILIZATION_ORC</PrereqCivilization>
+			</PrereqCivilizations>
+			<bMustMaintain>1</bMustMaintain>
+			<bAutoAcquire>1</bAutoAcquire>
+			<bNoXP>1</bNoXP>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<iCargoChange>2</iCargoChange>
+			<Button>Art/Interface/Buttons/Promotions/Expandedhull.dds</Button>
 		</PromotionInfo>
 	</PromotionInfos>
 </Civ4PromotionInfos>

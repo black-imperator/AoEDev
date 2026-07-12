@@ -2624,12 +2624,13 @@
 			</SpellClasses>
 			<PromotionPrereq1>PROMOTION_WATER2</PromotionPrereq1>
 			<bAllowAI>1</bAllowAI>
+			<bIsAutoCastable>1</bIsAutoCastable>
 			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
 			<bHasCasted>1</bHasCasted>
 			<AddPromotions>
-				<AddPromotion>PROMOTION_WATER_WALKING</AddPromotion>
+				<AddPromotion>PROMOTION_WATER_WALKING_DURATION</AddPromotion>
 			</AddPromotions>
-			<bBuffCasterOnly>1</bBuffCasterOnly>
+			<bImmuneNeutral>1</bImmuneNeutral>
 			<Effect>EFFECT_CREATION</Effect>
 			<Sound>AS3D_SPELL_WATER</Sound>
 			<Button>Art/Interface/Buttons/Promotions/Waterwalking.dds</Button>
@@ -10054,13 +10055,83 @@
 			<Sound>AS3D_WATER_FLOW</Sound>
 			<Button>Art/Interface/Buttons/Improvements/Tower.dds</Button>
 		</SpellInfo>
+		<SpellInfo>			<!-- Blood Dragon - Human Form -->
+			<Type>SPELL_BLOOD_DRAGON_HUMAN</Type>
+			<Description>TXT_KEY_SPELL_BLOODY_FORM</Description>
+			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
+			<PromotionPrereq1>PROMOTION_BLOOD_CORE</PromotionPrereq1>
+			<bAllowAI>1</bAllowAI>
+			<iAIWeight>50</iAIWeight>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+			<bAbility>1</bAbility>
+			<AddPromotions>
+				<AddPromotion>PROMOTION_BLOOD_HUMAN_FORM</AddPromotion>
+			</AddPromotions>
+			<bBuffCasterOnly>1</bBuffCasterOnly>
+			<Effect>EFFECT_WIND_SWIRL</Effect>
+			<Sound>AS3D_WATER_FLOW</Sound>
+			<Button>Art/Interface/Buttons/Units/BloodyHuman.dds</Button>
+		</SpellInfo>
+		<SpellInfo>			<!-- Blood Dragon Offering of Sacrifice -->
+			<Type>SPELL_OFFERING_OF_SACRIFICE</Type>
+			<Description>TXT_KEY_SPELL_OFFERING_OF_SACRIFICE</Description>
+			<Civilopedia>TXT_KEY_SPELL_OFFERING_OF_SACRIFICE_PEDIA</Civilopedia>
+			<Help>TXT_KEY_SPELL_OFFERING_OF_SACRIFICE_HELP</Help>
+			<PromotionPrereq1>PROMOTION_BLOOD_DRAGON_AURA</PromotionPrereq1>
+			<bAllowAI>1</bAllowAI>
+			<iAIWeight>999</iAIWeight>
+			<bHasCasted>1</bHasCasted>
+			<bSacrificeCaster>1</bSacrificeCaster>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<PyRequirement>reqBloodDragonSac(pCaster) </PyRequirement>
+			<PyResult>spellBloodDragonSac(pCaster)</PyResult>
+			<Effect>EFFECT_SACRIFICE</Effect>
+			<Sound>AS3D_SPELL_FEAST</Sound>
+			<Button>Art/Interface/Buttons/Spells/BloodSacrifice.dds</Button>
+		</SpellInfo>
+		<SpellInfo>			<!-- Swarm of Scorpion Bats -->
+			<Type>SPELL_SWARM_OF_SCORPIONBATS</Type>
+			<Description>TXT_KEY_SPELL_SWARM_OF_SCORPIONBATS</Description>
+			<Civilopedia>TXT_KEY_UNIT_SWARM_OF_SCORPIONBATS_PEDIA</Civilopedia>
+			<PromotionPrereq1>PROMOTION_BLOOD_CORE</PromotionPrereq1>
+			<bAllowAI>1</bAllowAI>
+			<iAIWeight>50</iAIWeight>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+			<bIsAutoCastable>1</bIsAutoCastable>
+			<CreateUnitType>UNIT_SCORPION_BAT</CreateUnitType>
+			<iCreateUnitNum>3</iCreateUnitNum>
+			<CreateUnitPromotion>PROMOTION_FREE_UNIT</CreateUnitPromotion>
+			<Effect>EFFECT_SPELL1</Effect>
+			<Sound>AS3D_SPELL_LOCUSTS</Sound>
+			<Button>Art/Interface/Buttons/Units/Batty.dds</Button>
+		</SpellInfo>
+		<SpellInfo>			<!-- Shimmering Dragon - Human Form -->
+			<Type>SPELL_SHIMMERINGDRAGON_HUMAN</Type>
+			<Description>TXT_KEY_SPELL_SHIMMERING_FORM</Description>
+			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
+			<PromotionPrereq1>PROMOTION_TEAR_CORE</PromotionPrereq1>
+			<bAllowAI>1</bAllowAI>
+			<iAIWeight>50</iAIWeight>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+			<bAbility>1</bAbility>
+			<AddPromotions>
+				<AddPromotion>PROMOTION_SHIMMERING_HUMAN_FORM</AddPromotion>
+			</AddPromotions>
+			<bBuffCasterOnly>1</bBuffCasterOnly>
+			<Effect>EFFECT_WIND_SWIRL</Effect>
+			<Sound>AS3D_WATER_FLOW</Sound>
+			<Button>Art/Interface/Buttons/Units/ShimmeringHuman.dds</Button>
+		</SpellInfo>
 		<SpellInfo>			<!-- Scaled Dragon - Water -->
 			<Type>SPELL_SCALEDRDAGON_WATER</Type>
 			<Description>TXT_KEY_SPELL_FORM_OF_WATER</Description>
 			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
 			<PromotionPrereq1>PROMOTION_SHIMMERING_CORE</PromotionPrereq1>
 			<bAllowAI>1</bAllowAI>
-			<iAIWeight>100</iAIWeight>
+			<iAIWeight>50</iAIWeight>
 			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
 			<bHasCasted>1</bHasCasted>
 			<bIsAutoCastable>1</bIsAutoCastable>
@@ -10138,7 +10209,7 @@
 			<bInCityOnly>1</bInCityOnly>
 			<bHasCasted>1</bHasCasted>
 			<bAbility>1</bAbility>
-			<iCost>30</iCost>
+			<iCost>40</iCost>
 			<PyResult>spellSlaveTradeBuy(pCaster)</PyResult>
 			<PyRequirement>reqSlaveTradeBuy(pCaster)</PyRequirement>
 			<Effect>EFFECT_SPELL1</Effect>

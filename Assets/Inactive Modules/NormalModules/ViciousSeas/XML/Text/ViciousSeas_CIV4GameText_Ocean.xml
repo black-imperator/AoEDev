@@ -816,4 +816,36 @@ Sometimes, a cultist will not be content worshiping on land. This marine shrine 
 		<Italian>Mature Into Kraken</Italian>
 		<Spanish>Mature Into Kraken</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_FREEBOOTERS</Tag>
+		<English>Freebooters</English>
+		<French>Freebooters</French>
+		<German>Freebooters</German>
+		<Italian>Freebooters</Italian>
+		<Spanish>Freebooters</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_FREEBOOTERS_PEDIA</Tag>
+		<English>Hoist the mizzenmast and set sail for destiny! Yarhar!</English>
+		<French>Hoist the mizzenmast and set sail for destiny! Yarhar!</French>
+		<German>Hoist the mizzenmast and set sail for destiny! Yarhar!</German>
+		<Italian>Hoist the mizzenmast and set sail for destiny! Yarhar!</Italian>
+		<Spanish>Hoist the mizzenmast and set sail for destiny! Yarhar!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_FREEBOOTERS_SHORT</Tag>
+		<English>FBT</English>
+		<French>FBT</French>
+		<German>FBT</German>
+		<Italian>FBT</Italian>
+		<Spanish>FBT</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_ORC_CARGO</Tag>
+		<English>Unsafe Cargo Holds</English>
+		<French>Unsafe Cargo Holds</French>
+		<German>Unsafe Cargo Holds</German>
+		<Italian>Unsafe Cargo Holds</Italian>
+		<Spanish>Unsafe Cargo Holds</Spanish>
+	</TEXT>
 </Civ4GameText>

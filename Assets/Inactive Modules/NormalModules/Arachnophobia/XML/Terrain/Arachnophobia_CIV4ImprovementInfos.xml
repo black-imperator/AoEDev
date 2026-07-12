@@ -136,6 +136,16 @@
 					</TechYields>
 				</TechYieldChange>
 			</TechYieldChanges>
+			<RouteYieldChanges>
+				<RouteYieldChange>
+					<RouteType>ROUTE_PATH_OF_LUGUS</RouteType>
+					<RouteYields>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+					</RouteYields>
+				</RouteYieldChange>
+            </RouteYieldChanges>
 		</ImprovementInfo>
 		<ImprovementInfo><!-- Maze of Webs -->
 			<Type>IMPROVEMENT_MAZE_OF_WEBS</Type>
@@ -227,6 +237,16 @@
 					</TechYields>
 				</TechYieldChange>
 			</TechYieldChanges>
+			<RouteYieldChanges>
+				<RouteYieldChange>
+					<RouteType>ROUTE_PATH_OF_LUGUS</RouteType>
+					<RouteYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</RouteYields>
+				</RouteYieldChange>
+            </RouteYieldChanges>
 			<PythonOnMove>onMoveMazeOfWebs(pCaster, pPlot)</PythonOnMove>
 		</ImprovementInfo>
 		<ImprovementInfo><!-- Nesting Ground -->

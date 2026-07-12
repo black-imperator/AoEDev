@@ -10484,6 +10484,42 @@
 				</DamageTypeCombat>
 			</DamageTypeCombats>
 		</PromotionInfo>
+		<PromotionInfo>		<!-- Grass Stalker - used by Chislev Greenstalkers -->
+			<Type>PROMOTION_GRASS_STALKER</Type>
+			<Description>TXT_KEY_PROMOTION_GRASS_STALKER</Description>
+			<Help>TXT_KEY_PROMOTION_GRASS_STALKER_HELP</Help>
+			<Button>Art/Interface/Buttons/Promotions/Greenstalker.dds</Button>
+			<iMinLevel>-1</iMinLevel>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Grassland Stalking - used by Chislev Greenstalkers.  -->
+			<Type>PROMOTION_GRASS_STALKING</Type>
+			<Description>TXT_KEY_PROMOTION_FOREST_STEALTH</Description>
+			<PrereqPromotionANDs>
+				<PrereqPromotionAND>
+					<PromotionType>PROMOTION_GRASS_STALKER</PromotionType>
+					<iPrereqApplications>1</iPrereqApplications>
+				</PrereqPromotionAND>
+			</PrereqPromotionANDs>
+			<bAutoAcquire>1</bAutoAcquire>
+			<bMustMaintain>1</bMustMaintain>
+			<bNoXP>1</bNoXP>
+			<iExtraPerception>2</iExtraPerception>
+			<iWithdrawalChange>15</iWithdrawalChange>
+			<PrereqTerrains>
+				<PrereqTerrain>TERRAIN_GRASS</PrereqTerrain>
+			</PrereqTerrains>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Art/Interface/Buttons/Promotions/Greenstalking.dds</Button>
+		</PromotionInfo>
 		<PromotionInfo>		<!-- Fort Captain -->
 			<Type>PROMOTION_FORTCAPTAIN</Type>
 			<Description>TXT_KEY_PROMOTION_COMBATSIEGE</Description>
@@ -12202,7 +12238,6 @@
 				<Promotion>PROMOTION_HIDDEN_NATIONALITY</Promotion>
 			</PromotionOverwrites>
 			<Button>Art/Interface/Buttons/Promotions/HiddenNationality.dds</Button>
-			<iMinLevel>-1</iMinLevel>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Homeland -->
 			<Type>PROMOTION_HOMELAND</Type>
@@ -14059,6 +14094,93 @@
 			<bNoXP>1</bNoXP>
 			<Button>Art/Interface/Buttons/Promotions/Shimmering_Core.dds</Button>
 		</PromotionInfo>
+		<PromotionInfo>		<!-- Tear Core -->
+			<Type>PROMOTION_TEAR_CORE</Type>
+			<Description>TXT_KEY_PROMOTION_TEAR_CORE</Description>
+			<bNoXP>1</bNoXP>
+			<AuraBonuses>
+				<AuraBonus>
+					<bApplyEnemy>1</bApplyEnemy>
+					<bApplyRival>1</bApplyRival>
+					<bApplyTeam>1</bApplyTeam>
+					<bApplySelf>1</bApplySelf>
+					<iBonusRange>1</iBonusRange>
+					<Promotion>PROMOTION_IMMUNE_DISEASE</Promotion>
+				</AuraBonus>
+			</AuraBonuses>
+			<Button>Art/Interface/Buttons/Promotions/SacredTear.dds</Button>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Shimmering Human Form -->
+			<Type>PROMOTION_SHIMMERING_HUMAN_FORM</Type>
+			<Description>TXT_KEY_PROMOTION_SHIMMERING_HUMAN_FORM</Description>
+			<bNoXP>1</bNoXP>
+			<ReplaceArtType>ART_DEF_UNIT_SHIMMERING_HUMAN</ReplaceArtType>
+			<Button>Art/Interface/Buttons/Units/ShimmeringHuman.dds</Button>
+			<iPromotionDuration>2</iPromotionDuration>
+			<bOnlyDefensive>1</bOnlyDefensive>
+			<TempUnitCombat>UNITCOMBAT_MELEE</TempUnitCombat>
+			<CityBonuses>
+				<CityBonus>
+					<bApplyEnemy>1</bApplyEnemy>
+					<bApplyRival>1</bApplyRival>
+					<bApplyTeam>1</bApplyTeam>
+					<bApplySelf>1</bApplySelf>
+					<fHappy>3</fHappy>
+					<fHealth>10</fHealth>
+					<iBonusRange>4</iBonusRange>
+				</CityBonus>
+			</CityBonuses>
+			<bDispellable>1</bDispellable>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Blood Core -->
+			<Type>PROMOTION_BLOOD_CORE</Type>
+			<Description>TXT_KEY_PROMOTION_BLOOD_CORE</Description>
+			<bNoXP>1</bNoXP>
+			<AuraBonuses>
+				<AuraBonus>
+					<bApplyEnemy>1</bApplyEnemy>
+					<bApplyRival>1</bApplyRival>
+					<iBonusRange>3</iBonusRange>
+					<Promotion>PROMOTION_BLOOD_DRAGON_AURA</Promotion>
+				</AuraBonus>
+			</AuraBonuses>
+			<Button>Art/Interface/Buttons/Promotions/BloodCore.dds</Button>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Empty Core -->
+			<Type>PROMOTION_EMPTY_CORE</Type>
+			<Description>TXT_KEY_PROMOTION_EMPTY_CORE</Description>
+			<bNoXP>1</bNoXP>
+			<AuraBonuses>
+				<AuraBonus>
+					<bApplyEnemy>1</bApplyEnemy>
+					<bApplyRival>1</bApplyRival>
+					<iBonusRange>2</iBonusRange>
+					<Promotion>PROMOTION_TERRIFIED</Promotion>
+				</AuraBonus>
+			</AuraBonuses>
+			<Button>Art/Interface/Buttons/Promotions/EmptyCore.dds</Button>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Blood Dragon Aura -->
+			<Type>PROMOTION_BLOOD_DRAGON_AURA</Type>
+			<Description>TXT_KEY_PROMOTION_BLOOD_DRAGON_AURA</Description>
+			<bNoXP>1</bNoXP>
+			<iEnemyHealChange>-10</iEnemyHealChange>
+			<iNeutralHealChange>-10</iNeutralHealChange>
+			<iFriendlyHealChange>-10</iFriendlyHealChange>
+			<iPromotionDuration>2</iPromotionDuration>
+			<bDispellable>1</bDispellable>
+			<Button>Art/Interface/Buttons/Promotions/BloodCore.dds</Button>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Blood Dragon Human Form -->
+			<Type>PROMOTION_BLOOD_HUMAN_FORM</Type>
+			<Description>TXT_KEY_PROMOTION_BLOOD_HUMAN_FORM</Description>
+			<bNoXP>1</bNoXP>
+			<ReplaceArtType>ART_DEF_UNIT_BLOOD_DRAGON_HUMAN</ReplaceArtType>
+			<Button>Art/Interface/Buttons/Units/BloodyHuman.dds</Button>
+			<TempUnitCombat>UNITCOMBAT_MELEE</TempUnitCombat>
+			<iPromotionDuration>2</iPromotionDuration>
+			<bDispellable>1</bDispellable>
+		</PromotionInfo>
 		<PromotionInfo>		<!-- Form of Lighthouse -->
 			<Type>PROMOTION_FORM_OF_LIGHTHOUSE</Type>
 			<Description>TXT_KEY_PROMOTION_FORM_OF_LIGHTHOUSE</Description>
@@ -14068,6 +14190,7 @@
 			<iPromotionDuration>1</iPromotionDuration>
 			<iVisibilityChange>5</iVisibilityChange>
 			<iExtraPerception>5</iExtraPerception>
+			<bDispellable>1</bDispellable>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Form of Water -->
 			<Type>PROMOTION_FORM_OF_WATER</Type>
@@ -14078,6 +14201,7 @@
 			<ReplaceArtType>ART_DEF_UNIT_SCALED_DRAGON_WATER</ReplaceArtType>
 			<Button>Art/Interface/Buttons/Promotions/Shimmering_Core.dds</Button>
 			<iPromotionDuration>1</iPromotionDuration>
+			<bDispellable>1</bDispellable>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Form of Turtle -->
 			<Type>PROMOTION_FORM_OF_TURTLE</Type>
@@ -14088,6 +14212,7 @@
 			<ReplaceArtType>ART_DEF_UNIT_GIANT_TORTOISE</ReplaceArtType>
 			<Button>Art/Interface/Buttons/Promotions/Shimmering_Core.dds</Button>
 			<iPromotionDuration>1</iPromotionDuration>
+			<bDispellable>1</bDispellable>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Form of Bird -->
 			<Type>PROMOTION_FORM_OF_BIRD</Type>
@@ -14102,6 +14227,7 @@
 			<iMovesChange>2</iMovesChange>
 			<iCombatPercent>-50</iCombatPercent>
 			<bFlying>1</bFlying>
+			<bDispellable>1</bDispellable>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Monk Enlightenment -->
 			<Type>PROMOTION_MONK_ENLIGHTENMENT</Type>
@@ -17589,7 +17715,6 @@
 		<PromotionInfo>		<!-- Terrified -->
 			<Type>PROMOTION_TERRIFIED</Type>
 			<Description>TXT_KEY_PROMOTION_TERRIFIED</Description>
-			<Help>TXT_KEY_PROMOTION_TERRIFIED_HELP</Help>
 			<iPromotionDuration>3</iPromotionDuration>
 			<iMovesChange>-1</iMovesChange>
 			<bPrereqAlive>1</bPrereqAlive>
@@ -18862,6 +18987,60 @@
 			<Button>Art/Interface/Buttons/Promotions/Waterwalking.dds</Button>
 			<bWaterWalking>1</bWaterWalking>
 			<iAIWeight>100</iAIWeight>
+			<iMinLevel>-1</iMinLevel>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Water Walking - WATER II -->
+			<Type>PROMOTION_WATER_WALKING_DURATION</Type>
+			<Description>TXT_KEY_PROMOTION_WATER_WALKING_SPELL</Description>
+			<bAmphib>1</bAmphib>
+			<bRiver>1</bRiver>
+			<Button>Art/Interface/Buttons/Promotions/Waterwalking.dds</Button>
+			<bWaterWalking>1</bWaterWalking>
+			<iAIWeight>100</iAIWeight>
+			<bDispellable>1</bDispellable>
+			<iPromotionDuration>10</iPromotionDuration>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_BEAST</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
 			<iMinLevel>-1</iMinLevel>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Water Walking - Rinwell -->
@@ -20731,7 +20910,7 @@
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Channeling 2 Decay -->
 			<Type>PROMOTION_CHANNELING2_DECAY</Type>
-			<Description>TXT_KEY_PROMOTION_CHANNELING2</Description>
+			<Description>TXT_KEY_PROMOTION_CHANNELING2_DECAY</Description>
 			<Help>TXT_KEY_PROMOTION_CHANNELING2_PEDIA</Help>
 			<PrereqPromotionANDs>
 				<PrereqPromotionAND>
@@ -27398,7 +27577,7 @@
 					<fCrime>10</fCrime>
 					<fFood>-3</fFood>
 					<fHealth>-3</fHealth>
-					<iBonusRange>4</iBonusRange>
+					<iBonusRange>3</iBonusRange>
 				</CityBonus>
 			</CityBonuses>
 			<PrereqUnits>
@@ -27417,13 +27596,13 @@
 					<fProduction>2</fProduction>
 					<fGPP>2</fGPP>
 					<fGold>0</fGold>
-					<iBonusRange>20</iBonusRange>
+					<bFullMap>1</bFullMap>
 				</CityBonus>
 			</CityBonuses>
-			<iExtraSupport>-1</iExtraSupport>
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
+			<iExtraSupport>-1</iExtraSupport>
 			<bFreeUnit>1</bFreeUnit>
 			<bNoSupply>1</bNoSupply>
 			<PrereqCivilizations>
@@ -27454,7 +27633,7 @@
 					<fProduction>4</fProduction>
 					<fGPP>4</fGPP>
 					<fCulture>2</fCulture>
-					<iBonusRange>20</iBonusRange>
+					<bFullMap>1</bFullMap>
 				</CityBonus>
 			</CityBonuses>
 			<PromotionOverwrites>
@@ -27463,7 +27642,6 @@
 			<PromotionExcludes>
 				<Promotion>PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE</Promotion>
 			</PromotionExcludes>
-			<iExtraSupport>-1</iExtraSupport>
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
@@ -27502,8 +27680,7 @@
 					<fProduction>6</fProduction>
 					<fGPP>6</fGPP>
 					<fCulture>4</fCulture>
-					<fTradeRoutes>1</fTradeRoutes>
-					<iBonusRange>20</iBonusRange>
+					<bFullMap>1</bFullMap>
 				</CityBonus>
 			</CityBonuses>
 			<PromotionOverwrites>
@@ -27514,7 +27691,6 @@
 				<Promotion>PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE</Promotion>
 				<Promotion>PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE2</Promotion>
 			</PromotionExcludes>
-			<iExtraSupport>-1</iExtraSupport>
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
@@ -27621,7 +27797,7 @@
 					<iResist>-25</iResist>
 				</DamageTypeResist>
 			</DamageTypeResists>
-			<Button>Art/Interface/Buttons/Promotions/EQHighQualityBronzeMelee.dds</Button>
+			<Button>Art/Interface/Buttons/Promotions/Bronzeweapons.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Iron Weapons Militia Grigori -->
 			<Type>PROMOTION_IRON_WEAPONS_MILITIA</Type>
@@ -27658,7 +27834,7 @@
 					<iCombatMod>10</iCombatMod>
 				</PromotionCombatMod>
 			</PromotionCombatMods>
-			<Button>Art/Interface/Buttons/Promotions/EQHighQualitySteelMelee.dds</Button>
+			<Button>Art/Interface/Buttons/Promotions/Ironweapons.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Mithril Weapons Militia Grigori -->
 			<Type>PROMOTION_MITHRIL_WEAPONS_MILITIA</Type>
@@ -27695,7 +27871,7 @@
 				</PromotionCombatMod>
 			</PromotionCombatMods>
 			<ReplaceArtType>ART_DEF_UNIT_PIKEMAN</ReplaceArtType>
-			<Button>Art/Interface/Buttons/Promotions/EQHighQualityMithrilMelee.dds</Button>
+			<Button>Art/Interface/Buttons/Promotions/Mithrilweapons.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Price of Power Influence -->
 			<Type>PROMOTION_PRICE_OF_POWER_INFLUENCE</Type>
@@ -33941,7 +34117,7 @@
 				<CityBonus>
 					<bApplyRival>1</bApplyRival>
 					<fCulture>-0.4</fCulture>
-					<iBonusRange>3</iBonusRange>
+					<iBonusRange>2</iBonusRange>
 				</CityBonus>
 			</CityBonuses>
 			<iMinLevel>-1</iMinLevel>
@@ -34040,7 +34216,7 @@
 					<bApplyEnemy>1</bApplyEnemy>
 					<bApplyRival>1</bApplyRival>
 					<fHealth>-0.75</fHealth>
-					<iBonusRange>3</iBonusRange>
+					<iBonusRange>2</iBonusRange>
 				</CityBonus>
 			</CityBonuses>
 			<iMinLevel>-1</iMinLevel>
@@ -41435,7 +41611,7 @@
 					<bApplyEnemy>1</bApplyEnemy>
 					<fHappy>-2</fHappy>
 					<fHealth>-2</fHealth>
-					<iBonusRange>4</iBonusRange>
+					<iBonusRange>3</iBonusRange>
 				</CityBonus>
 			</CityBonuses>
 			<Button>Art/Interface/Buttons/Promotions/Blank_promo.dds</Button>
@@ -41661,7 +41837,7 @@
 					<bApplyEnemy>1</bApplyEnemy>
 					<bApplyRival>1</bApplyRival>
 					<fHappy>-2</fHappy>
-					<iBonusRange>4</iBonusRange>
+					<iBonusRange>3</iBonusRange>
 				</CityBonus>
 			</CityBonuses>
 			<bNoXP>1</bNoXP>
@@ -45348,7 +45524,6 @@
 			<Type>PROMOTION_FLAGSHIP_NAV_2</Type>
 			<Description>TXT_KEY_PROMOTION_FLAGSHIP_NAV_2</Description>
 			<PromotionNextLevel>PROMOTION_FLAGSHIP_NAV_3</PromotionNextLevel>
-			<iMovesChange>1</iMovesChange>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
@@ -45381,6 +45556,7 @@
 					<iPrereqApplications>1</iPrereqApplications>
 				</PrereqPromotionAND>
 			</PrereqPromotionANDs>
+			<iMovesChange>1</iMovesChange>
 			<MinionPromotions>
 				<PromotionType>PROMOTION_MINION_NAV_3</PromotionType>
 			</MinionPromotions>
@@ -45533,7 +45709,7 @@
 				</UnitCombat>
 			</UnitCombats>
 			<iMinLevel>-1</iMinLevel>
-			<iMovesChange>1</iMovesChange>
+			<iWithdrawalChange>20</iWithdrawalChange>
 			<Button>Art/Modules/Admirals/Buttons/Minion_Nav_2.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Minion - Navigation III -->
@@ -45554,7 +45730,7 @@
 				</UnitCombat>
 			</UnitCombats>
 			<iMinLevel>-1</iMinLevel>
-			<iWithdrawalChange>20</iWithdrawalChange>
+			<iMovesChange>1</iMovesChange>
 			<Button>Art/Modules/Admirals/Buttons/Minion_Nav_3.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Minion - Field Repairs I -->

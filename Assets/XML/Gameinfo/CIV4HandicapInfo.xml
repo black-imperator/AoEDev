@@ -49,9 +49,9 @@
 			<iBarbarianBonus>-30</iBarbarianBonus>
 			<iDemonBonus>-50</iDemonBonus>
 			<!-- Maluses these factions get when fighting an AI -->
-			<iAIAnimalBonus>0</iAIAnimalBonus>
-			<iAIBarbarianBonus>0</iAIBarbarianBonus>
-			<iAIDemonBonus>0</iAIDemonBonus>
+			<iAIAnimalBonus>10</iAIAnimalBonus>
+			<iAIBarbarianBonus>10</iAIBarbarianBonus>
+			<iAIDemonBonus>10</iAIDemonBonus>
 			<iStartingDefenseUnits>0</iStartingDefenseUnits>
 			<iStartingWorkerUnits>0</iStartingWorkerUnits>
 			<iStartingExploreUnits>0</iStartingExploreUnits>
@@ -157,9 +157,9 @@
 			<iAnimalBonus>-20</iAnimalBonus>
 			<iBarbarianBonus>-20</iBarbarianBonus>
 			<iDemonBonus>-30</iDemonBonus>
-			<iAIAnimalBonus>-10</iAIAnimalBonus>
-			<iAIBarbarianBonus>-10</iAIBarbarianBonus>
-			<iAIDemonBonus>-10</iAIDemonBonus>
+			<iAIAnimalBonus>-20</iAIAnimalBonus>
+			<iAIBarbarianBonus>-20</iAIBarbarianBonus>
+			<iAIDemonBonus>-20</iAIDemonBonus>
 			<iStartingDefenseUnits>0</iStartingDefenseUnits>
 			<iStartingWorkerUnits>0</iStartingWorkerUnits>
 			<iStartingExploreUnits>0</iStartingExploreUnits>
@@ -261,9 +261,9 @@
 			<iAnimalBonus>-10</iAnimalBonus>
 			<iBarbarianBonus>-10</iBarbarianBonus>
 			<iDemonBonus>-20</iDemonBonus>
-			<iAIAnimalBonus>-20</iAIAnimalBonus>
-			<iAIBarbarianBonus>-20</iAIBarbarianBonus>
-			<iAIDemonBonus>-20</iAIDemonBonus>
+			<iAIAnimalBonus>-30</iAIAnimalBonus>
+			<iAIBarbarianBonus>-30</iAIBarbarianBonus>
+			<iAIDemonBonus>-30</iAIDemonBonus>
 			<iStartingDefenseUnits>0</iStartingDefenseUnits>
 			<iStartingWorkerUnits>0</iStartingWorkerUnits>
 			<iStartingExploreUnits>0</iStartingExploreUnits>
@@ -361,9 +361,9 @@
 			<iAnimalBonus>0</iAnimalBonus>
 			<iBarbarianBonus>0</iBarbarianBonus>
 			<iDemonBonus>0</iDemonBonus>
-			<iAIAnimalBonus>-30</iAIAnimalBonus>
-			<iAIBarbarianBonus>-30</iAIBarbarianBonus>
-			<iAIDemonBonus>-30</iAIDemonBonus>
+			<iAIAnimalBonus>-40</iAIAnimalBonus>
+			<iAIBarbarianBonus>-40</iAIBarbarianBonus>
+			<iAIDemonBonus>-40</iAIDemonBonus>
 			<iStartingDefenseUnits>0</iStartingDefenseUnits>
 			<iStartingWorkerUnits>0</iStartingWorkerUnits>
 			<iStartingExploreUnits>0</iStartingExploreUnits>
@@ -458,9 +458,9 @@
 			<iAnimalBonus>0</iAnimalBonus>
 			<iBarbarianBonus>0</iBarbarianBonus>
 			<iDemonBonus>0</iDemonBonus>
-			<iAIAnimalBonus>-40</iAIAnimalBonus>
-			<iAIBarbarianBonus>-40</iAIBarbarianBonus>
-			<iAIDemonBonus>-40</iAIDemonBonus>
+			<iAIAnimalBonus>-50</iAIAnimalBonus>
+			<iAIBarbarianBonus>-50</iAIBarbarianBonus>
+			<iAIDemonBonus>-50</iAIDemonBonus>
 			<iStartingDefenseUnits>0</iStartingDefenseUnits>
 			<iStartingWorkerUnits>0</iStartingWorkerUnits>
 			<iStartingExploreUnits>0</iStartingExploreUnits>
@@ -555,9 +555,9 @@
 			<iAnimalBonus>0</iAnimalBonus>
 			<iBarbarianBonus>0</iBarbarianBonus>
 			<iDemonBonus>0</iDemonBonus>
-			<iAIAnimalBonus>-50</iAIAnimalBonus>
-			<iAIBarbarianBonus>-50</iAIBarbarianBonus>
-			<iAIDemonBonus>-50</iAIDemonBonus>
+			<iAIAnimalBonus>-60</iAIAnimalBonus>
+			<iAIBarbarianBonus>-60</iAIBarbarianBonus>
+			<iAIDemonBonus>-60</iAIDemonBonus>
 			<iStartingDefenseUnits>0</iStartingDefenseUnits>
 			<iStartingWorkerUnits>0</iStartingWorkerUnits>
 			<iStartingExploreUnits>0</iStartingExploreUnits>
@@ -658,9 +658,9 @@
 			<iAnimalBonus>0</iAnimalBonus>
 			<iBarbarianBonus>0</iBarbarianBonus>
 			<iDemonBonus>0</iDemonBonus>
-			<iAIAnimalBonus>-55</iAIAnimalBonus>
-			<iAIBarbarianBonus>-55</iAIBarbarianBonus>
-			<iAIDemonBonus>-55</iAIDemonBonus>
+			<iAIAnimalBonus>-65</iAIAnimalBonus>
+			<iAIBarbarianBonus>-65</iAIBarbarianBonus>
+			<iAIDemonBonus>-65</iAIDemonBonus>
 			<iStartingDefenseUnits>0</iStartingDefenseUnits>
 			<iStartingWorkerUnits>0</iStartingWorkerUnits>
 			<iStartingExploreUnits>0</iStartingExploreUnits>
@@ -765,9 +765,9 @@
 			<iAnimalBonus>0</iAnimalBonus>
 			<iBarbarianBonus>0</iBarbarianBonus>
 			<iDemonBonus>0</iDemonBonus>
-			<iAIAnimalBonus>-60</iAIAnimalBonus>
-			<iAIBarbarianBonus>-60</iAIBarbarianBonus>
-			<iAIDemonBonus>-60</iAIDemonBonus>
+			<iAIAnimalBonus>-70</iAIAnimalBonus>
+			<iAIBarbarianBonus>-70</iAIBarbarianBonus>
+			<iAIDemonBonus>-70</iAIDemonBonus>
 			<iStartingDefenseUnits>0</iStartingDefenseUnits>
 			<iStartingWorkerUnits>0</iStartingWorkerUnits>
 			<iStartingExploreUnits>0</iStartingExploreUnits>
@@ -875,9 +875,9 @@
 			<iAnimalBonus>0</iAnimalBonus>
 			<iBarbarianBonus>0</iBarbarianBonus>
 			<iDemonBonus>0</iDemonBonus>
-			<iAIAnimalBonus>-65</iAIAnimalBonus>
-			<iAIBarbarianBonus>-65</iAIBarbarianBonus>
-			<iAIDemonBonus>-65</iAIDemonBonus>
+			<iAIAnimalBonus>-75</iAIAnimalBonus>
+			<iAIBarbarianBonus>-75</iAIBarbarianBonus>
+			<iAIDemonBonus>-75</iAIDemonBonus>
 			<iStartingDefenseUnits>0</iStartingDefenseUnits>
 			<iStartingWorkerUnits>0</iStartingWorkerUnits>
 			<iStartingExploreUnits>0</iStartingExploreUnits>

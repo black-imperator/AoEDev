@@ -33,7 +33,7 @@
 					<bBuilding>1</bBuilding>
 				</Building>
 			</Buildings>
-			<iMoves>3</iMoves>
+			<iMoves>1</iMoves>
 			<iCombat>14</iCombat>
 			<iAsset>0</iAsset>
 			<UnitMeshGroups>
@@ -88,7 +88,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<iMoves>3</iMoves>
+			<iMoves>1</iMoves>
 			<iCombat>16</iCombat>
 			<TerrainNatives>
 				<TerrainNative>
@@ -147,7 +147,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<iMoves>3</iMoves>
+			<iMoves>1</iMoves>
 			<iCombat>6</iCombat>
 			<TerrainNatives>
 				<TerrainNative>
@@ -194,6 +194,7 @@
 			<Type>UNIT_GIANT_TORTOISE</Type>
 			<Special>SPECIALUNIT_SEABEAST</Special>
 			<Description>TXT_KEY_UNIT_GIANT_TURTLE</Description>
+			<iMoves>1</iMoves>
 		</UnitInfo>
 		<UnitInfo>        <!-- Shark Hunter BEZERI START-->
 			<Class>UNITCLASS_ARCHER</Class>
@@ -408,7 +409,7 @@
 			<PrereqTech>TECH_SAILING</PrereqTech>
 			<iCost>75</iCost>
 			<iMinAreaSize>20</iMinAreaSize>
-			<iMoves>2</iMoves>
+			<iMoves>1</iMoves>
 			<iCombat>7</iCombat>
 			<iBombardRate>10</iBombardRate>
 			<iAsset>5</iAsset>
@@ -473,7 +474,7 @@
 			<PrereqTech>TECH_ASTRONOMY</PrereqTech>
 			<iCost>225</iCost>
 			<iMinAreaSize>20</iMinAreaSize>
-			<iMoves>5</iMoves>
+			<iMoves>1</iMoves>
 			<iCombat>12</iCombat>
 			<UnitClassAttackMods>
 				<UnitClassAttackMod>
@@ -542,6 +543,20 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
+			<TerrainMoveCosts>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<iTerrainMoveCost>-2</iTerrainMoveCost>
+				</TerrainMoveCost>
+			</TerrainMoveCosts>
 			<Builds>
 				<Build>
 					<BuildType>BUILD_CORAL_FORT</BuildType>
@@ -1200,7 +1215,7 @@
 			<BonusType>BONUS_WHALE</BonusType>
 			<iCost>300</iCost>
 			<iMinAreaSize>20</iMinAreaSize>
-			<iMoves>3</iMoves>
+			<iMoves>2</iMoves>
 			<iAirRange>2</iAirRange>
 			<iCombat>16</iCombat>
 			<iAirCombat>8</iAirCombat>
@@ -1286,7 +1301,7 @@
 			</PrereqBonuses>
 			<iCost>150</iCost>
 			<iMinAreaSize>20</iMinAreaSize>
-			<iMoves>3</iMoves>
+			<iMoves>1</iMoves>
 			<iCombat>9</iCombat>
 			<iBombardRate>20</iBombardRate>
 			<DomainCargo>DOMAIN_LAND</DomainCargo>
@@ -1401,37 +1416,56 @@
 			<Class>UNITCLASS_SEA_SERPENT</Class>
 			<Type>UNIT_SEA_SERPENT</Type>
 			<Special>SPECIALUNIT_SEABEAST</Special>
+			<iMoves>1</iMoves>
 		</UnitInfo>
 		<UnitInfo>        <!-- Nuckelavee -->
 			<Class>UNITCLASS_NUCKELAVEE</Class>
 			<Type>UNIT_NUCKELAVEE</Type>
             <Special>SPECIALUNIT_SEABEAST</Special>
+			<iMoves>2</iMoves>
 		</UnitInfo>
 		<UnitInfo>        <!-- Bunyip -->
 			<Class>UNITCLASS_BUNYIP</Class>
 			<Type>UNIT_BUNYIP</Type>
             <Special>SPECIALUNIT_SEABEAST</Special>
+			<iMoves>1</iMoves>
 		</UnitInfo>
 		<UnitInfo>        <!-- Kraken -->
 			<Class>UNITCLASS_KRAKEN</Class>
 			<Type>UNIT_KRAKEN</Type>
             <Special>SPECIALUNIT_SEABEAST</Special>
 			<iExtraPerception>3</iExtraPerception>
+			<iMoves>1</iMoves>
 		</UnitInfo>
 		<UnitInfo>        <!-- Sea Drake -->
 			<Class>UNITCLASS_SEA_DRAKE</Class>
 			<Type>UNIT_SEA_DRAKE</Type>
             <Special>SPECIALUNIT_SEABEAST</Special>
+			<iMoves>2</iMoves>
 		</UnitInfo>
 		<UnitInfo>        <!-- Leviathan -->
 			<Class>UNITCLASS_LEVIATHAN</Class>
 			<Type>UNIT_LEVIATHAN</Type>
             <Special>SPECIALUNIT_SEABEAST</Special>
+			<iMoves>1</iMoves>
 		</UnitInfo>
 		<UnitInfo>        <!-- Bleeding God -->
 			<Class>UNITCLASS_BLEEDING_GOD</Class>
 			<Type>UNIT_BLEEDING_GOD</Type>
             <Special>SPECIALUNIT_SEABEAST</Special>
+			<iMoves>1</iMoves>
+		</UnitInfo>
+		<UnitInfo>        <!-- Otoloch -->
+			<Class>UNITCLASS_OTOLOCH</Class>
+			<Type>UNIT_OTOLOCH</Type>
+            <Special>SPECIALUNIT_SEABEAST</Special>
+			<iMoves>1</iMoves>
+		</UnitInfo>	
+		<UnitInfo>        <!-- Otoloch Queen -->
+			<Class>UNITCLASS_OTOLOCH_QUEEN</Class>
+			<Type>UNIT_OTOLOCH_QUEEN</Type>
+            <Special>SPECIALUNIT_SEABEAST</Special>
+			<iMoves>1</iMoves>
 		</UnitInfo>
 		<UnitInfo>        <!-- Kraken Spawn -->
 			<Class>UNITCLASS_KRAKEN</Class>
@@ -1456,7 +1490,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<iMoves>3</iMoves>
+			<iMoves>1</iMoves>
 			<iCombat>7</iCombat>
 			<TerrainNatives>
 				<TerrainNative>
@@ -1543,6 +1577,21 @@
 			<Class>UNITCLASS_GALLEY</Class>
 			<Type>UNIT_GALLEY</Type>
 			<PrereqTech>TECH_FISHING</PrereqTech>
+			<iMoves>1</iMoves>
+			<TerrainMoveCosts>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+			</TerrainMoveCosts>
 		</UnitInfo>
 		<UnitInfo>        <!-- Trireme -->
 			<Class>UNITCLASS_TRIREME</Class>
@@ -1551,6 +1600,21 @@
 			<TechTypes>
 				<PrereqTech>TECH_CRAFTING</PrereqTech>
 			</TechTypes>
+			<iMoves>1</iMoves>
+			<TerrainMoveCosts>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+			</TerrainMoveCosts>
 		</UnitInfo>
 		<UnitInfo>        <!-- Galleon -->
 			<Class>UNITCLASS_GALLEON</Class>
@@ -1560,11 +1624,309 @@
 				<BonusType>BONUS_IRON</BonusType>
 				<BonusType>BONUS_MITHRIL</BonusType>
 			</PrereqBonuses>
+			<iMoves>1</iMoves>
+			<TerrainMoveCosts>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+			</TerrainMoveCosts>
 		</UnitInfo>
 		<UnitInfo>        <!-- Caravel -->
 			<Class>UNITCLASS_CARAVEL</Class>
 			<Type>UNIT_CARAVEL</Type>
-			<iMoves>5</iMoves>
+			<iMoves>2</iMoves>
+			<TerrainMoveCosts>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+			</TerrainMoveCosts>
+		</UnitInfo>
+		<UnitInfo>        <!-- Sailor's Dirge -->
+			<Class>UNITCLASS_SAILORS_DIRGE</Class>
+			<Type>UNIT_SAILORS_DIRGE</Type>
+			<iMoves>2</iMoves>
+			<TerrainMoveCosts>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<iTerrainMoveCost>-2</iTerrainMoveCost>
+				</TerrainMoveCost>
+			</TerrainMoveCosts>
+		</UnitInfo>
+		<UnitInfo>        <!-- The Black Wind -->
+			<Class>UNITCLASS_BLACK_WIND</Class>
+			<Type>UNIT_BLACK_WIND</Type>
+			<iMoves>2</iMoves>
+			<TerrainMoveCosts>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<iTerrainMoveCost>-2</iTerrainMoveCost>
+				</TerrainMoveCost>
+			</TerrainMoveCosts>
+		</UnitInfo>
+		<UnitInfo>        <!-- Ironclad -->
+			<Class>UNITCLASS_MAN_O_WAR</Class>
+			<Type>UNIT_IRONCLAD</Type>
+			<iMoves>1</iMoves>
+			<TerrainMoveCosts>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<iTerrainMoveCost>-2</iTerrainMoveCost>
+				</TerrainMoveCost>
+			</TerrainMoveCosts>
+		</UnitInfo>
+		<UnitInfo>        <!-- Pirate -->
+			<Class>UNITCLASS_PRIVATEER</Class>
+			<Type>UNIT_PIRATE</Type>
+			<iMoves>1</iMoves>
+			<TerrainMoveCosts>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+			</TerrainMoveCosts>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_HARDY1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+		</UnitInfo>
+		<UnitInfo>        <!-- Privateer -->
+			<Class>UNITCLASS_PRIVATEER</Class>
+			<Type>UNIT_PRIVATEER</Type>
+			<iMoves>1</iMoves>
+			<TerrainMoveCosts>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+			</TerrainMoveCosts>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_HARDY1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+		</UnitInfo>
+		<UnitInfo>        <!-- Carrack -->
+			<Class>UNITCLASS_CARRACK</Class>
+			<Type>UNIT_CARRACK</Type>
+			<iMoves>1</iMoves>
+			<TerrainMoveCosts>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+			</TerrainMoveCosts>
+		</UnitInfo>
+		<UnitInfo>        <!-- Frigate -->
+			<Class>UNITCLASS_FRIGATE</Class>
+			<Type>UNIT_FRIGATE</Type>
+			<iMoves>1</iMoves>
+			<TerrainMoveCosts>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<iTerrainMoveCost>-2</iTerrainMoveCost>
+				</TerrainMoveCost>
+			</TerrainMoveCosts>
+		</UnitInfo>
+		<UnitInfo>        <!-- Queen of the Line -->
+			<Class>UNITCLASS_QUEEN_OF_THE_LINE</Class>
+			<Type>UNIT_QUEEN_OF_THE_LINE</Type>
+			<iMoves>1</iMoves>
+			<TerrainMoveCosts>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<iTerrainMoveCost>-2</iTerrainMoveCost>
+				</TerrainMoveCost>
+			</TerrainMoveCosts>
+		</UnitInfo>
+		<UnitInfo>        <!-- Man O' War -->
+			<Class>UNITCLASS_MAN_O_WAR</Class>
+			<Type>UNIT_MAN_O_WAR</Type>
+			<iMoves>1</iMoves>
+			<TerrainMoveCosts>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<iTerrainMoveCost>-2</iTerrainMoveCost>
+				</TerrainMoveCost>
+			</TerrainMoveCosts>
+		</UnitInfo>
+		<UnitInfo>        <!-- Tradeship 500-->
+			<Class>UNITCLASS_TRADESHIP</Class>
+			<Type>UNIT_TRADESHIP</Type>
+			<TerrainMoveCosts>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+			</TerrainMoveCosts>
+		</UnitInfo>
+		<UnitInfo>        <!-- Arcane Barge -->
+			<Class>UNITCLASS_ARCANE_BARGE</Class>
+			<Type>UNIT_ARCANE_BARGE</Type>
+			<iMoves>1</iMoves>
+			<TerrainMoveCosts>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+			</TerrainMoveCosts>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_SECONDARY_ARCANE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_CHANNELING1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_CHANNELING2</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+		</UnitInfo>
+		<UnitInfo>        <!-- Airship -->                       <!--KURIOTATES-->
+			<Class>UNITCLASS_QUEEN_OF_THE_LINE</Class>
+			<Type>UNIT_AIRSHIP</Type>
+			<iMoves>2</iMoves>
+		</UnitInfo>
+		<UnitInfo>        <!-- Thopter -->
+			<Class>UNITCLASS_CARAVEL</Class>
+			<Type>UNIT_THOPTER</Type>
+			<iMoves>1</iMoves>
+		</UnitInfo>
+		<UnitInfo>        <!-- Aquilan Thopter -->
+			<Class>UNITCLASS_MAN_O_WAR</Class>
+			<Type>UNIT_AQUILAN_THOPTER</Type>
+			<iMoves>2</iMoves>
+		</UnitInfo>
+		<UnitInfo>        <!-- Lenora -->
+			<Class>UNITCLASS_LENORA</Class>
+			<Type>UNIT_LENORA</Type>
+			<iMoves>2</iMoves>
+		</UnitInfo>
+		<UnitInfo>        <!-- Dirigible Fleet -->
+			<Class>UNITCLASS_QUEEN_OF_THE_LINE</Class>
+			<Type>UNIT_DIRIGIBLE</Type>
+			<iMoves>2</iMoves>
+		</UnitInfo>
+		<UnitInfo>        <!-- Manticore -->
+			<Class>UNITCLASS_MANTICORE</Class>
+			<Type>UNIT_MANTICORE</Type>
+			<iMoves>2</iMoves>
+		</UnitInfo>
+		<UnitInfo>        <!-- Pegasus -->
+			<Class>UNITCLASS_PEGASUS</Class>
+			<Type>UNIT_PEGASUS</Type>
+			<iMoves>2</iMoves>
 		</UnitInfo>
 		<UnitInfo>        <!-- Workboat -->
 			<Class>UNITCLASS_WORKBOAT</Class>
@@ -1579,6 +1941,20 @@
 					<bBuild>1</bBuild>
 				</Build>
 			</Builds>
+			<TerrainMoveCosts>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+			</TerrainMoveCosts>
 			<iCost>75</iCost>
 			<bFood>1</bFood>
 		</UnitInfo>
@@ -1595,6 +1971,20 @@
 					<bBuild>1</bBuild>
 				</Build>
 			</Builds>
+			<TerrainMoveCosts>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+			</TerrainMoveCosts>
 			<iWorkRate>150</iWorkRate>
 			<bFood>1</bFood>
 		</UnitInfo>	
@@ -1615,6 +2005,20 @@
 					<bBuild>1</bBuild>
 				</Build>
 			</Builds>
+			<TerrainMoveCosts>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+			</TerrainMoveCosts>
 			<iWorkRate>150</iWorkRate>
 			<bFood>1</bFood>
 		</UnitInfo>
@@ -1631,7 +2035,114 @@
 					<bBuild>1</bBuild>
 				</Build>
 			</Builds>
+			<TerrainMoveCosts>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+			</TerrainMoveCosts>
 		</UnitInfo>	
+		<UnitInfo>		<!-- Possessed Giant Tortoise - MODULE BALANCE -->
+			<Class>UNITCLASS_AOSNISIRA_POSSESSED_GIANT_TORTOISE</Class>
+			<Type>UNIT_AOSNISIRA_POSSESSED_GIANT_TORTOISE</Type>
+			<iMoves>1</iMoves>
+			<TerrainMoveCosts>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<iTerrainMoveCost>-2</iTerrainMoveCost>
+				</TerrainMoveCost>
+			</TerrainMoveCosts>
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_DRACKAOSNISIRA</DependencyType>
+		     </AndDependencyTypes>
+		</UnitInfo>
+		<UnitInfo>        	<!-- Fae Dragon Rider -->
+			<Class>UNITCLASS_KNIGHT</Class>
+			<Type>UNIT_FAE_DRAGON_RIDER</Type>
+			<iMoves>2</iMoves>
+		</UnitInfo>
+		<UnitInfo>		<!--Flying Patrian -->
+			<Class>UNITCLASS_THE_FLYING_PATRIAN</Class>
+			<Type>UNIT_THE_FLYING_PATRIAN</Type>
+			<iMoves>1</iMoves>
+			<TerrainMoveCosts>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+			</TerrainMoveCosts>
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_MORE_EVENTS</DependencyType>
+		     </AndDependencyTypes>
+		</UnitInfo>
+		<UnitInfo>        <!-- Lilypad -->            <!-- NAVAL UNITS -->
+			<Class>UNITCLASS_GALLEY</Class>
+			<Type>UNIT_LILYPAD</Type>
+			<iMoves>1</iMoves>
+			<TerrainMoveCosts>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+			</TerrainMoveCosts>
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_KCZ_WOODS</DependencyType>
+		     </AndDependencyTypes>
+		</UnitInfo>
+		<UnitInfo>        <!-- Queen of the Line -->
+			<Class>UNITCLASS_QUEEN_OF_THE_LINE</Class>
+			<Type>UNIT_FLOATING_ISLAND</Type>
+			<iMoves>1</iMoves>
+			<TerrainMoveCosts>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<iTerrainMoveCost>-2</iTerrainMoveCost>
+				</TerrainMoveCost>
+			</TerrainMoveCosts>
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_KCZ_WOODS</DependencyType>
+		     </AndDependencyTypes>
+		</UnitInfo>
 		<UnitInfo>		<!-- Egrass -->
 			<Class>UNITCLASS_EGRASS</Class>
 			<Type>UNIT_EGRASS</Type>
@@ -1793,6 +2304,20 @@
 					<bBuild>1</bBuild>
 				</Build>
 			</Builds>
+			<TerrainMoveCosts>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<iTerrainMoveCost>-2</iTerrainMoveCost>
+				</TerrainMoveCost>
+			</TerrainMoveCosts>
 		     <AndDependencyTypes>
 		        <DependencyType>MODULE_JOTNAR</DependencyType>
 		     </AndDependencyTypes>
@@ -1874,6 +2399,20 @@
 					<bBuild>1</bBuild>
 				</Build>
 			</Builds>
+			<TerrainMoveCosts>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<iTerrainMoveCost>-2</iTerrainMoveCost>
+				</TerrainMoveCost>
+			</TerrainMoveCosts>
 		     <AndDependencyTypes>
 		        <DependencyType>MODULE_JOTNAR</DependencyType>
 		     </AndDependencyTypes>
@@ -1895,6 +2434,21 @@
 					<bBuild>1</bBuild>
 				</Build>
 			</Builds>
+			<iMoves>1</iMoves>
+			<TerrainMoveCosts>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<iTerrainMoveCost>-2</iTerrainMoveCost>
+				</TerrainMoveCost>
+			</TerrainMoveCosts>
 		     <AndDependencyTypes>
 		        <DependencyType>MODULE_JOTNAR</DependencyType>
 		     </AndDependencyTypes>
@@ -1916,6 +2470,21 @@
 					<bBuild>1</bBuild>
 				</Build>
 			</Builds>
+			<iMoves>1</iMoves>
+			<TerrainMoveCosts>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+			</TerrainMoveCosts>
 		     <AndDependencyTypes>
 		        <DependencyType>MODULE_JOTNAR</DependencyType>
 		     </AndDependencyTypes>
@@ -1938,6 +2507,20 @@
 		     </AndDependencyTypes>
 			<iCost>75</iCost>
 			<bFood>1</bFood>
+			<TerrainMoveCosts>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<iTerrainMoveCost>-2</iTerrainMoveCost>
+				</TerrainMoveCost>
+			</TerrainMoveCosts>
 		</UnitInfo>
 		<UnitInfo>        <!-- Great Prophet -->
 			<Class>UNITCLASS_PROPHET</Class>
@@ -1981,6 +2564,20 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<bFood>1</bFood>
 			<bOnlyDefensive>1</bOnlyDefensive>
+			<TerrainMoveCosts>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<iTerrainMoveCost>-2</iTerrainMoveCost>
+				</TerrainMoveCost>
+			</TerrainMoveCosts>
 			<UnitAIs>
 				<UnitAI>
 					<UnitAIType>UNITAI_WORKER</UnitAIType>
@@ -2370,7 +2967,7 @@
 			<iMoves>1</iMoves>
 			<iWorkRate>300</iWorkRate>
 			<iCombat>4</iCombat>
-			<iCombatDefense>3</iCombatDefense>
+			<iCombatDefense>4</iCombatDefense>
 			<iCultureGarrison>3</iCultureGarrison>
 			<iAsset>16</iAsset>
 			<UnitMeshGroups>
@@ -2743,6 +3340,89 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
+		</UnitInfo>
+		<UnitInfo>        <!-- Artisan -->
+			<Class>UNITCLASS_FABRICAFORMA_ARTISAN</Class>
+			<Type>UNIT_FABRICAFORMA_ARTISAN</Type>
+			<AllowPromotions>
+				<Promotion>PROMOTION_NIGHTMARE_AIFON</Promotion>
+				<Promotion>PROMOTION_NIGHTMARE_AIFON_HIDDEN_NATIONALITY_BLANKET</Promotion>
+				<Promotion>PROMOTION_DREAMING_AIFON</Promotion>
+				<Promotion>PROMOTION_DREAM</Promotion>
+				<Promotion>PROMOTION_LIZARDMAN_BEZERI</Promotion>
+			</AllowPromotions>
+		</UnitInfo>
+		<UnitInfo>        <!-- Farmer -->
+			<Class>UNITCLASS_FARMERS_GUILD_FARMER</Class>
+			<Type>UNIT_FARMERS_GUILD_FARMER</Type>
+			<AllowPromotions>
+				<Promotion>PROMOTION_NIGHTMARE_AIFON</Promotion>
+				<Promotion>PROMOTION_NIGHTMARE_AIFON_HIDDEN_NATIONALITY_BLANKET</Promotion>
+				<Promotion>PROMOTION_DREAMING_AIFON</Promotion>
+				<Promotion>PROMOTION_DREAM</Promotion>
+				<Promotion>PROMOTION_LIZARDMAN_BEZERI</Promotion>
+			</AllowPromotions>
+		</UnitInfo>
+		<UnitInfo>        <!-- Fishing Boat -->
+			<Class>UNITCLASS_FISHINGBOAT</Class>
+			<Type>UNIT_FISHINGBOAT</Type>
+			<AllowPromotions>
+				<Promotion>PROMOTION_NIGHTMARE_AIFON</Promotion>
+				<Promotion>PROMOTION_NIGHTMARE_AIFON_HIDDEN_NATIONALITY_BLANKET</Promotion>
+				<Promotion>PROMOTION_DREAMING_AIFON</Promotion>
+				<Promotion>PROMOTION_DREAM</Promotion>
+				<Promotion>PROMOTION_LIZARDMAN_BEZERI</Promotion>
+			</AllowPromotions>
+			<TerrainMoveCosts>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+			</TerrainMoveCosts>
+		</UnitInfo>
+		<UnitInfo>        <!-- Masquerade Travelling Wagon -->
+			<Class>UNITCLASS_MASQUERADE_TRAVELLING_WAGON</Class>
+			<Type>UNIT_MASQUERADE_TRAVELLING_WAGON</Type>
+			<AllowPromotions>
+				<Promotion>PROMOTION_NIGHTMARE_AIFON</Promotion>
+				<Promotion>PROMOTION_NIGHTMARE_AIFON_HIDDEN_NATIONALITY_BLANKET</Promotion>
+				<Promotion>PROMOTION_DREAMING_AIFON</Promotion>
+				<Promotion>PROMOTION_DREAM</Promotion>
+				<Promotion>PROMOTION_LIZARDMAN_BEZERI</Promotion>
+			</AllowPromotions>
+		</UnitInfo>
+		<UnitInfo>        <!-- Stonefire Smith -->
+			<Class>UNITCLASS_STONEFIRE_SMITH</Class>
+			<Type>UNIT_STONEFIRE_SMITH</Type>
+			<AllowPromotions>
+				<Promotion>PROMOTION_NIGHTMARE_AIFON</Promotion>
+				<Promotion>PROMOTION_NIGHTMARE_AIFON_HIDDEN_NATIONALITY_BLANKET</Promotion>
+				<Promotion>PROMOTION_DREAMING_AIFON</Promotion>
+				<Promotion>PROMOTION_DREAM</Promotion>
+				<Promotion>PROMOTION_LIZARDMAN_BEZERI</Promotion>
+			</AllowPromotions>
+		</UnitInfo>
+		<UnitInfo>        <!-- Nomad Wagon Catcivics -->
+			<Class>UNITCLASS_NOMAD_WAGON</Class>
+			<Type>UNIT_NOMAD_WAGON</Type>
+			<AllowPromotions>
+				<Promotion>PROMOTION_NIGHTMARE_AIFON</Promotion>
+				<Promotion>PROMOTION_NIGHTMARE_AIFON_HIDDEN_NATIONALITY_BLANKET</Promotion>
+				<Promotion>PROMOTION_DREAMING_AIFON</Promotion>
+				<Promotion>PROMOTION_DREAM</Promotion>
+				<Promotion>PROMOTION_LIZARDMAN_BEZERI</Promotion>
+			</AllowPromotions>
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_CATSCIVICS</DependencyType>
+		     </AndDependencyTypes>
 		</UnitInfo>
 </UnitInfos>
 </Civ4UnitInfos>

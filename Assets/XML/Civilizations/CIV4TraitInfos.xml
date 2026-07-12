@@ -230,6 +230,14 @@
 						<iYield>1</iYield>
 					</ImprovementYields>
 				</ImprovementYieldChange>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_FISHING_BOATS_GRIGORI</ImprovementType>
+					<ImprovementYields>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
 			</ImprovementYieldChanges>
 		</TraitInfo>
 		<TraitInfo>		<!-- Hunter -->
@@ -267,6 +275,14 @@
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
 					<ImprovementType>IMPROVEMENT_CAMP</ImprovementType>
+					<ImprovementYields>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_CAMP_GRIGORI</ImprovementType>
 					<ImprovementYields>
 						<iYield>1</iYield>
 						<iYield>0</iYield>
@@ -2515,11 +2531,10 @@
 		</TraitInfo>
 		<TraitInfo>		<!-- Treacherous -->
 			<Type>TRAIT_TREACHEROUS</Type>
-			<NextTrait>TRAIT_TREACHEROUS2</NextTrait>
-			<iLevel>1</iLevel>
-			<TraitClass>TRAITCLASS_EMERGENT</TraitClass>
+			<TraitClass>TRAITCLASS_PERSONALITY</TraitClass>
 			<Description>TXT_KEY_TRAIT_TREACHEROUS</Description>
 			<ShortDescription>TXT_KEY_TRAIT_TREACHEROUS_SHORT</ShortDescription>
+			<Help>TXT_KEY_TRAIT_TREACHEROUS_HELP</Help>
 			<FreePromotions>
 				<FreePromotion>
 					<PromotionType>PROMOTION_TREACHEROUS</PromotionType>
@@ -2533,7 +2548,7 @@
 				</FreePromotionUnitCombat>
 			</FreePromotionUnitCombats>
 		</TraitInfo>
-		<TraitInfo>		<!-- Treacherous 2-->
+		<!--<TraitInfo>		<!{1}** Treacherous 2**{1}>
 			<Type>TRAIT_TREACHEROUS2</Type>
 			<ParentTrait>TRAIT_TREACHEROUS</ParentTrait>
 			<NextTrait>TRAIT_TREACHEROUS3</NextTrait>
@@ -2543,7 +2558,7 @@
 			<Description>TXT_KEY_TRAIT_TREACHEROUS</Description>
 			<ShortDescription>TXT_KEY_TRAIT_TREACHEROUS_SHORT</ShortDescription>
 		</TraitInfo>
-		<TraitInfo>		<!-- Treacherous 3-->
+		<TraitInfo>		<!{1}** Treacherous 3**{1}>
 			<Type>TRAIT_TREACHEROUS3</Type>
 			<ParentTrait>TRAIT_TREACHEROUS</ParentTrait>
 			<iLevel>3</iLevel>
@@ -2551,7 +2566,7 @@
 			<TraitClass>TRAITCLASS_EMERGENT</TraitClass>
 			<Description>TXT_KEY_TRAIT_TREACHEROUS</Description>
 			<ShortDescription>TXT_KEY_TRAIT_TREACHEROUS_SHORT</ShortDescription>
-		</TraitInfo>
+		</TraitInfo>-->
 		<TraitInfo>		<!-- Veinhunter -->
 			<Type>TRAIT_VEINHUNTER</Type>
 			<NextTrait>TRAIT_VEINHUNTER2</NextTrait>

@@ -9086,6 +9086,32 @@ def exploreLairSeedDragon(argsList):
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_SEED_DRAGON'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
+def exploreLairBloodDragon(argsList):
+	pUnit, pPlot = argsList
+	pPlayer = gc.getPlayer(pUnit.getOwner())
+	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
+	pNewPlot = findClearPlot(-1, pPlot)
+	newUnit = bPlayer.initUnit(getInfoType('UNIT_BLOOD_DRAGON'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+
+def exploreLairPitDragon(argsList):
+	pUnit, pPlot = argsList
+	pPlayer = gc.getPlayer(pUnit.getOwner())
+	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
+	pNewPlot = findClearPlot(-1, pPlot)
+	newUnit = bPlayer.initUnit(getInfoType('UNIT_PIT_DRAGON'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+
+def exploreLairShimmeringDragonbad(argsList):
+	pUnit, pPlot = argsList
+	pPlayer = gc.getPlayer(pUnit.getOwner())
+	bPlayer=gc.getPlayer(gc.getANIMAL_PLAYER())
+	pNewPlot = findClearPlot(-1, pPlot)
+	newUnit = bPlayer.initUnit(getInfoType('UNIT_SHIMMERING_DRAGON'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+	
+def exploreLairShimmeringDragon(argsList):
+	pUnit, pPlot = argsList
+	pPlayer = gc.getPlayer(pUnit.getOwner())
+	newUnit = pPlayer.initUnit(getInfoType('UNIT_SHIMMERING_DRAGON'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+
 def exploreLairScaledDragon(argsList):
 	pUnit, pPlot = argsList
 	pPlayer = gc.getPlayer(pUnit.getOwner())
@@ -14390,3 +14416,76 @@ def effectOtoloch(caster):
 		if CyGame().getSorenRandNum(100, "otoloch")<5:
 			caster.setHasPromotion(gc.getInfoTypeForString("PROMOTION_LEASH_1"),True)
 			pPlot.setImprovementType(gc.getInfoTypeForString("IMPROVEMENT_SHIMMERING_PORTAL"))
+
+def reqBloodDragonSac(pCaster):
+	iLevel		= pCaster.getLevel()
+	bHero		= pCaster.isHasPromotion(gc.getInfoTypeForString("PROMOTION_HERO"))
+	iBloodCount	= 0
+
+	lBloods	= [	gc.getInfoTypeForString("PROMOTION_BEAR_BLOOD"),	gc.getInfoTypeForString("PROMOTION_BOAR_BLOOD"),		gc.getInfoTypeForString("PROMOTION_ELEPHANT_BLOOD"),
+				gc.getInfoTypeForString("PROMOTION_GORILLA_BLOOD"),	gc.getInfoTypeForString("PROMOTION_GRIFFON_BLOOD"),		gc.getInfoTypeForString("PROMOTION_LION_BLOOD"),
+				gc.getInfoTypeForString("PROMOTION_RAPTOR_BLOOD"),	gc.getInfoTypeForString("PROMOTION_SCORPION_BLOOD"),	gc.getInfoTypeForString("PROMOTION_SPIDER_BLOOD"),
+				gc.getInfoTypeForString("PROMOTION_STAG_BLOOD"),	gc.getInfoTypeForString("PROMOTION_TIGER_BLOOD"),		gc.getInfoTypeForString("PROMOTION_WOLF_BLOOD"),
+				gc.getInfoTypeForString("PROMOTION_RAT_BLOOD"),		gc.getInfoTypeForString("PROMOTION_BAT_BLOOD"),			gc.getInfoTypeForString("PROMOTION_TOAD_BLOOD") ]
+
+	if gc.getInfoTypeForString("MODULE_ANIMAL_LAIRS") != -1:
+		lBloods += [gc.getInfoTypeForString("PROMOTION_WYRM_BLOOD"), gc.getInfoTypeForString("PROMOTION_SERPENT_BLOOD")]
+
+	for iPromotion in lBloods:
+		if pCaster.isHasPromotion(iPromotion): iBloodCount += 1
+
+	if	 iLevel >= 15:				return True
+	elif iLevel >= 10 and bHero:	return True
+	elif iBloodCount >= 8:			return True
+	return False
+
+def spellBloodDragonSac(pCaster):
+	iRange	= 4 # Making it one bigger than Aura, idk if distance in plotsInRange and dll is calculated the same, TW.
+	pDragon	= -1
+	lBloodTransfusion = []
+
+	lBloods	= [	gc.getInfoTypeForString("PROMOTION_BEAR_BLOOD"),	gc.getInfoTypeForString("PROMOTION_BOAR_BLOOD"),		gc.getInfoTypeForString("PROMOTION_ELEPHANT_BLOOD"),
+				gc.getInfoTypeForString("PROMOTION_GORILLA_BLOOD"),	gc.getInfoTypeForString("PROMOTION_GRIFFON_BLOOD"),		gc.getInfoTypeForString("PROMOTION_LION_BLOOD"),
+				gc.getInfoTypeForString("PROMOTION_RAPTOR_BLOOD"),	gc.getInfoTypeForString("PROMOTION_SCORPION_BLOOD"),	gc.getInfoTypeForString("PROMOTION_SPIDER_BLOOD"),
+				gc.getInfoTypeForString("PROMOTION_STAG_BLOOD"),	gc.getInfoTypeForString("PROMOTION_TIGER_BLOOD"),		gc.getInfoTypeForString("PROMOTION_WOLF_BLOOD"),
+				gc.getInfoTypeForString("PROMOTION_RAT_BLOOD"),		gc.getInfoTypeForString("PROMOTION_BAT_BLOOD"),			gc.getInfoTypeForString("PROMOTION_TOAD_BLOOD") ]
+
+	if gc.getInfoTypeForString("MODULE_ANIMAL_LAIRS") != -1:
+		lBloods += [gc.getInfoTypeForString("PROMOTION_WYRM_BLOOD"), gc.getInfoTypeForString("PROMOTION_SERPENT_BLOOD")]
+
+	for iPromotion in lBloods:
+		if pCaster.isHasPromotion(iPromotion): lBloodTransfusion.append(iPromotion)
+
+	for x, y in plotsInRange(pCaster.getX(), pCaster.getY(), iRange):
+		pLoopPlot = CyMap().plot(x, y)
+		if pDragon != -1: break
+		for iLoopUnit in xrange(pLoopPlot.getNumUnits()):
+			pLoopUnit	= pLoopPlot.getUnit(iLoopUnit)
+			if pLoopUnit.getUnitType() != gc.getInfoTypeForString("UNIT_BLOOD_DRAGON"): continue
+			pDragon = pLoopUnit
+			break
+
+	if pDragon == -1:
+		raise IndexError("Prereqs for a dragon spell were valid, but no dragon in range was found")
+	else:
+		pPlot			= pCaster.plot()
+		iPlayer			= pCaster.getOwner()
+		pPlayer			= gc.getPlayer(iPlayer)
+		iPreviousOwner	= pDragon.getOwner()
+		newUnit = pPlayer.initUnit(gc.getInfoTypeForString("UNIT_BLOOD_DRAGON"), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+		newUnit.convert(pDragon)
+		newUnit.changeImmobileTimer(1)
+		newUnit.setPreviousOwner(iPreviousOwner)
+		for iPromotion in lBloodTransfusion:
+			newUnit.setHasPromotion(iPromotion, True)
+#		pCaster.kill(False, -1)
+
+		szText1		= CyTranslator().getText("TXT_KEY_MESSAGE_BLOOD_DRAGON_JOINED",())
+		szText2		= CyTranslator().getText("TXT_KEY_MESSAGE_BLOOD_DRAGON_LOST",())
+		szSound		= 'AS2D_DISCOVERBONUS'
+		szArt		= 'Art/Interface/Buttons/Units/SirMarilKalameetButton.dds'	# Change to a proper icon
+		iGreen		= gc.getInfoTypeForString("COLOR_GREEN")
+		iRed		= gc.getInfoTypeForString("COLOR_RED")
+		iMessage	= InterfaceMessageTypes.MESSAGE_TYPE_MINOR_EVENT
+		CyInterface().addMessage(iPlayer, True, 25, szText1, szSound, iMessage, szArt, iGreen, pPlot.getX(), pPlot.getY(), True, True)
+		CyInterface().addMessage(iPreviousOwner, True, 25, szText2, szSound, iMessage, szArt, iRed, pPlot.getX(), pPlot.getY(), True, True)

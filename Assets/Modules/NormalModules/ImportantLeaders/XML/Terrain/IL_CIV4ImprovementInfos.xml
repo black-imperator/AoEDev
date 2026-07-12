@@ -69,6 +69,7 @@
 			<SpawnPromotions>
 				<Promotion>PROMOTION_WYRM_DUST_AFFINITY</Promotion>
 				<Promotion>PROMOTION_HIDDEN_NATIONALITY</Promotion>
+				<Promotion>PROMOTION_CRAZED</Promotion>
 			</SpawnPromotions>
 		</ImprovementInfo>
 	</ImprovementInfos>

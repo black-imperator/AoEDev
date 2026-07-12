@@ -653,7 +653,7 @@
 					<fCulture>0.20</fCulture>
 				</PerPopBonus>
 			</PerPopBonuses>
-			<iExtraCrimePerUnhappy>2</iExtraCrimePerUnhappy>
+			<iExtraCrimePerUnhappy>6</iExtraCrimePerUnhappy>
 			<iWarWearinessModifier>0</iWarWearinessModifier>
 			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
 			<iCost>-1</iCost>
@@ -772,10 +772,11 @@
 				<PerPopBonus>
 					<fCulture>-1</fCulture>
 					<fCrime>2</fCrime>
+					<fHappy>-1</fHappy>
 				</PerPopBonus>
 			</PerPopBonuses>
 			<YieldModifiers>
-				<iYield>-500</iYield>
+				<iYield>0</iYield>
 				<iYield>0</iYield>
 				<iYield>0</iYield>
 			</YieldModifiers>

@@ -1,0 +1,6 @@
+<fScale>5.0</fScale>
+<fInterfaceScale>0.35</fInterfaceScale>
+<bActAsLand>0</bActAsLand>
+<bActAsAir>1</bActAsAir>
+<NIF>Art/Units/Animal/Bat/Bat.nif</NIF>
+<KFM>Art/Units/Animal/HornedOwl/owl.kfm</KFM>

@@ -1856,6 +1856,14 @@
 		<Spanish>Gain the Treacherous Trait.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_TRAIT_TREACHEROUS_HELP</Tag>
+		<English>[NEWLINE][ICON_BULLET]Recon, Commander, and Rogue units gain the [LINK=PROMOTION_CREEPING_DEAD]Creeping Dead[\LINK] promotion.</English>
+		<French>[NEWLINE][ICON_BULLET]Recon, Commander, and Rogue units gain the [LINK=PROMOTION_CREEPING_DEAD]Creeping Dead[\LINK] promotion.</French>
+		<German>[NEWLINE][ICON_BULLET]Recon, Commander, and Rogue units gain the [LINK=PROMOTION_CREEPING_DEAD]Creeping Dead[\LINK] promotion.</German>
+		<Italian>[NEWLINE][ICON_BULLET]Recon, Commander, and Rogue units gain the [LINK=PROMOTION_CREEPING_DEAD]Creeping Dead[\LINK] promotion.</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]Recon, Commander, and Rogue units gain the [LINK=PROMOTION_CREEPING_DEAD]Creeping Dead[\LINK] promotion.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_EVENT_ADD_TREACHEROUS_TRAIT_1</Tag>
 		<English>Gain the Treacherous Trait, Lose the Important Status.</English>
 		<French>Obtenir le trait Perfide, perdre le Statut de Dirigeant Important.</French>

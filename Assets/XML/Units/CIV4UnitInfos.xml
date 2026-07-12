@@ -10057,7 +10057,7 @@
 			<Special>SPECIALUNIT_PEOPLE</Special>
 			<Combat>UNITCOMBAT_DISCIPLE</Combat>
 			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_RESERVE</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_MAGE</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_HIGH_NECROMANCER</Description>
 			<Civilopedia>TXT_KEY_UNIT_HIGH_NECROMANCER_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
@@ -10069,7 +10069,11 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 				<UnitAI>
-					<UnitAIType>UNITAI_RESERVE</UnitAIType>
+					<UnitAIType>UNITAI_MAGE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_WARWIZARD</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
@@ -11361,6 +11365,10 @@
 					<BuildingType>BUILDING_WEAPONSMITH</BuildingType>
 					<bBuilding>1</bBuilding>
 				</Building>
+				<Building>
+					<BuildingType>BUILDING_MAGE_GUILD</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
 			</Buildings>
 			<iMoves>1</iMoves>
 			<iCultureGarrison>5</iCultureGarrison>
@@ -11637,6 +11645,10 @@
 				</Building>
 				<Building>
 					<BuildingType>BUILDING_WEAPONSMITH</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_MAGE_GUILD</BuildingType>
 					<bBuilding>1</bBuilding>
 				</Building>
 			</Buildings>
@@ -14222,7 +14234,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqBuilding>BUILDING_PAGAN_TEMPLE</PrereqBuilding>
+			<PrereqBuildingClass>BUILDINGCLASS_PAGAN_TEMPLE</PrereqBuildingClass>
 			<iCost>45</iCost>
 			<iMoves>1</iMoves>
 			<iCombat>3</iCombat>
@@ -14992,17 +15004,27 @@
 			<UnitCombatMods>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_ANIMAL</UnitCombatType>
-					<iUnitCombatMod>50</iUnitCombatMod>
+					<iUnitCombatMod>33</iUnitCombatMod>
 				</UnitCombatMod>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_BEAST</UnitCombatType>
-					<iUnitCombatMod>50</iUnitCombatMod>
+					<iUnitCombatMod>33</iUnitCombatMod>
+				</UnitCombatMod>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<iUnitCombatMod>33</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
 			<SpecialCargo>SPECIALUNIT_BIRD</SpecialCargo>
 			<DomainCargo>DOMAIN_AIR</DomainCargo>
 			<iCargo>1</iCargo>
 			<iAsset>10</iAsset>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_GRASS_STALKER</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
 			<UnitMeshGroups>
 				<iGroupSize>3</iGroupSize>
 				<iMeleeWaveSize>3</iMeleeWaveSize>
@@ -16346,7 +16368,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
-			<iCost>150</iCost>
+			<iCost>170</iCost>
 			<iMoves>1</iMoves>
 			<iAirRange>1</iAirRange>
 			<iCombat>7</iCombat>
@@ -19727,6 +19749,79 @@
 			<bNeverObsolete>1</bNeverObsolete>
 			<iTier>3</iTier>
 			<iWeaponTierMax>3</iWeaponTierMax>
+			<PrereqBuildingClass>BUILDINGCLASS_BARRACKS</PrereqBuildingClass>
+		</UnitInfo>
+		<UnitInfo>        <!-- Scorpion Bats -->
+			<Class>UNITCLASS_SCORPION_BAT</Class>
+			<Type>UNIT_SCORPION_BAT</Type>
+			<Combat>UNITCOMBAT_MELEE</Combat>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_SCORPION_BAT</Description>
+			<Civilopedia>TXT_KEY_UNIT_BLOOD_DRAGON_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bMilitarySupport>1</bMilitarySupport>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<bPillage>1</bPillage>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ATTACK</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_ATTACK_CITY</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<PrereqTech>TECH_IRON_WORKING</PrereqTech>
+			<iCost>120</iCost>
+			<iMoves>2</iMoves>
+			<iCombat>7</iCombat>
+			<iCombatDefense>5</iCombatDefense>
+			<UnitCombatMods>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<iUnitCombatMod>25</iUnitCombatMod>
+				</UnitCombatMod>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iUnitCombatMod>-25</iUnitCombatMod>
+				</UnitCombatMod>
+			</UnitCombatMods>
+			<DamageTypeCombats>
+				<DamageTypeCombat>
+					<DamageType>DAMAGE_POISON</DamageType>
+					<iCombat>2</iCombat>
+				</DamageTypeCombat>
+			</DamageTypeCombats>
+			<iConscription>3</iConscription>
+			<iCultureGarrison>6</iCultureGarrison>
+			<iAsset>9</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>3</iGroupSize>
+				<iMeleeWaveSize>3</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>3</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_SCORPION_BAT</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_DEMON</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_FLYING</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_STIGMATA</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+			<bNeverObsolete>1</bNeverObsolete>
+			<iTier>3</iTier>
 			<PrereqBuildingClass>BUILDINGCLASS_BARRACKS</PrereqBuildingClass>
 		</UnitInfo>
 		<UnitInfo>        <!-- Gnosling -->                      <!--KAHDI-->
@@ -39055,7 +39150,7 @@
 					<iAffinity>1</iAffinity>
 				</BonusAffinity>
 			</BonusAffinities>
-			<PythonPostCombatLost>spellFrozenLands(pCaster)</PythonPostCombatLost>
+			<!-- <PythonPostCombatLost>spellFrozenLands(pCaster)</PythonPostCombatLost>-->
 		</UnitInfo>
 		<UnitInfo>        <!-- Ira -->
 			<Class>UNITCLASS_IRA</Class>
@@ -40070,6 +40165,7 @@
 					<iAffinity>1</iAffinity>
 				</BonusAffinity>
 			</BonusAffinities>
+			<PrereqBuilding>BUILDING_WIZARDS_HALL</PrereqBuilding>
 		</UnitInfo>
 		<UnitInfo>        <!-- Wraith -->                                                                <!-- END SUMMONED UNITS LIST -->
 			<Class>UNITCLASS_WRAITH</Class>
@@ -48786,6 +48882,98 @@
 			</AppearanceTechs>
 			<iPowerMult>5</iPowerMult>
 		</UnitInfo>
+		<UnitInfo>        <!-- Bat T2 -->                    <!-- Bats -->
+			<Class>UNITCLASS_BAT</Class>
+			<Type>UNIT_BAT</Type>
+			<Combat>UNITCOMBAT_ANIMAL</Combat>
+			<DefaultUnitAI>UNITAI_ANIMAL</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_BAT</Description>
+			<Strategy>TXT_KEY_UNIT_BAT_STRATEGY</Strategy>
+			<Civilopedia>TXT_KEY_UNIT_BAT_PEDIA</Civilopedia>
+			<Advisor>NONE</Advisor>
+			<iExtraPerception>7</iExtraPerception>
+			<bAnimal>1</bAnimal>
+			<bMilitarySupport>1</bMilitarySupport>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ANIMAL</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<iMoves>1</iMoves>
+			<iCombat>4</iCombat>
+			<TerrainNatives>
+				<TerrainNative>
+					<TerrainType>TERRAIN_MARSH</TerrainType>
+					<bTerrainNative>1</bTerrainNative>
+				</TerrainNative>
+				<TerrainNative>
+					<TerrainType>TERRAIN_GRASS</TerrainType>
+					<bTerrainNative>1</bTerrainNative>
+				</TerrainNative>
+				<TerrainNative>
+					<TerrainType>TERRAIN_PLAINS</TerrainType>
+					<bTerrainNative>1</bTerrainNative>
+				</TerrainNative>
+			</TerrainNatives>
+			<FeatureNatives>
+				<FeatureNative>
+					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<bFeatureNative>1</bFeatureNative>
+				</FeatureNative>
+				<FeatureNative>
+					<FeatureType>FEATURE_FOREST</FeatureType>
+					<bFeatureNative>1</bFeatureNative>
+				</FeatureNative>
+				<FeatureNative>
+					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
+					<bFeatureNative>1</bFeatureNative>
+				</FeatureNative>
+			</FeatureNatives>
+			<iAsset>0</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>3</iGroupSize>
+				<iMeleeWaveSize>3</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>3</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_BAT</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_BAT_BLOOD</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_FLYING</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+			<iTier>2</iTier>
+			<iAppearanceProb>-1</iAppearanceProb>
+			<AppearanceTechs>
+				<AppearanceTech>
+					<AppearanceTechType>TECH_MINING</AppearanceTechType>
+					<iAppearanceTech>101</iAppearanceTech>
+				</AppearanceTech>
+				<AppearanceTech>
+					<AppearanceTechType>TECH_BLASTING_POWDER</AppearanceTechType>
+					<iAppearanceTech>50</iAppearanceTech>
+				</AppearanceTech>
+			</AppearanceTechs>
+			<UnitCombatMods>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iUnitCombatMod>-50</iUnitCombatMod>
+				</UnitCombatMod>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<iUnitCombatMod>50</iUnitCombatMod>
+				</UnitCombatMod>
+			</UnitCombatMods>
+		</UnitInfo>
 		<UnitInfo>        <!-- Toad T1 -->                    <!-- Toads -->
 			<Class>UNITCLASS_TOAD</Class>
 			<Type>UNIT_TOAD</Type>
@@ -51410,7 +51598,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
+			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
 			<iCost>120</iCost>
 			<iHurryCostModifier>50</iHurryCostModifier>
 			<iAdvancedStartCost>200</iAdvancedStartCost>
@@ -51474,7 +51662,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_CALENDAR</PrereqTech>
+			<PrereqTech>TECH_PHILOSOPHY</PrereqTech>
 			<iCost>75</iCost>
 			<iMoves>1</iMoves>
 			<iCombat>4</iCombat>
@@ -53274,9 +53462,9 @@
 			<iWeaponTierMax>3</iWeaponTierMax>
 			<iPowerMult>4</iPowerMult>
 		</UnitInfo>
-		<UnitInfo>        <!-- Jarl -->                       <!-- Begin "Staedding" Spawns -->
+		<UnitInfo>		<!-- Jarl -->
 			<Class>UNITCLASS_CHAMPION</Class>
-			<Type>UNIT_JARL</Type>
+			<Type>UNIT_JOT_GIANT_CHAMPION</Type>
 			<Combat>UNITCOMBAT_MELEE</Combat>
 			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_JARL</Description>
@@ -53286,7 +53474,11 @@
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
 			<bPillage>1</bPillage>
-			<bNoDefensiveBonus>1</bNoDefensiveBonus>
+			<UnitClassUpgrades>
+					<UnitClassUpgradeType>UNITCLASS_IMMORTAL</UnitClassUpgradeType>
+					<UnitClassUpgradeType>UNITCLASS_BERSERKER</UnitClassUpgradeType>
+					<UnitClassUpgradeType>UNITCLASS_PHALANX</UnitClassUpgradeType>
+			</UnitClassUpgrades>
 			<UnitAIs>
 				<UnitAI>
 					<UnitAIType>UNITAI_PILLAGE</UnitAIType>
@@ -53296,14 +53488,35 @@
 					<UnitAIType>UNITAI_ATTACK_CITY</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_RESERVE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_COUNTER</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_CITY_COUNTER</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
 			</UnitAIs>
-			<iCost>-1</iCost>
+			<PrereqTech>TECH_IRON_WORKING</PrereqTech>
+			<TechTypes>
+				<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
+			</TechTypes>
+			<iCost>240</iCost>
+			<iPopCost>1</iPopCost>
+			<iAdvancedStartCost>300</iAdvancedStartCost>
 			<iMoves>2</iMoves>
+			<iWorkRate>250</iWorkRate>
 			<iCombat>7</iCombat>
-			<iCombatDefense>5</iCombatDefense>
+			<iCombatLimit>100</iCombatLimit>
+			<iXPValueAttack>8</iXPValueAttack>
+			<iXPValueDefense>4</iXPValueDefense>
 			<iCollateralDamage>100</iCollateralDamage>
 			<iCollateralDamageLimit>75</iCollateralDamageLimit>
-			<iCollateralDamageMaxUnits>3</iCollateralDamageMaxUnits>
+			<iCollateralDamageMaxUnits>6</iCollateralDamageMaxUnits>
 			<iBombardRate>20</iBombardRate>
 			<iAsset>4</iAsset>
 			<UnitMeshGroups>
@@ -53327,20 +53540,17 @@
 					<PromotionType>PROMOTION_COURAGE</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_SECONDARY_DEFENSIVE_MELEE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
 			</FreePromotions>
+			<bNeverObsolete>1</bNeverObsolete>
+			<iCombatDefense>8</iCombatDefense>
+			<iExtraGoldSupport>2</iExtraGoldSupport>
 			<iTier>3</iTier>
 			<iWeaponTierMax>3</iWeaponTierMax>
-			<iPowerMult>3</iPowerMult>
-			<TerrainImpassables>
-				<TerrainImpassable>
-					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
-					<bTerrainImpassable>1</bTerrainImpassable>
-				</TerrainImpassable>
-				<TerrainImpassable>
-					<TerrainType>TERRAIN_OCEAN</TerrainType>
-					<bTerrainImpassable>1</bTerrainImpassable>
-				</TerrainImpassable>
-			</TerrainImpassables>
+			<PrereqBuildingClass>BUILDINGCLASS_TRAINING_YARD</PrereqBuildingClass>
 		</UnitInfo>
 		<UnitInfo>        <!-- Skald -->                      <!-- End "Staedding" Spawns -->
 			<Class>UNITCLASS_MAGE</Class>
@@ -58450,7 +58660,7 @@
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
 			<bPillage>1</bPillage>
-			<PrereqTech>TECH_PHILOSOPHY</PrereqTech>
+			<PrereqTech>TECH_WAY_OF_THE_WICKED</PrereqTech>
 			<UnitAIs>
 				<UnitAI>
 					<UnitAIType>UNITAI_COUNTER</UnitAIType>
@@ -58578,6 +58788,322 @@
 			</DamageTypeCombats>
 			<Image>Art/Interface/Popups/SeedDragon.dds</Image>
 			<Quote>TXT_KEY_POPUP_SEED_DRAGON_CREATION</Quote>
+			<iPowerAdd>200</iPowerAdd>
+			<iPowerMult>10</iPowerMult>
+		</UnitInfo>
+		<UnitInfo>        <!-- BLOOD Dragon-->
+			<Class>UNITCLASS_BLOOD_DRAGON</Class>
+			<Type>UNIT_BLOOD_DRAGON</Type>
+			<Combat>UNITCOMBAT_BEAST</Combat>
+			<DefaultUnitAI>UNITAI_HERO</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_BLOOD_DRAGON</Description>
+			<Civilopedia>TXT_KEY_UNIT_BLOOD_DRAGON_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<bPillage>1</bPillage>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_HERO</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_ATTACK_CITY</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+			<iAIWeight>200</iAIWeight>
+			<iMoves>4</iMoves>
+			<iCombat>30</iCombat>
+			<iXPValueAttack>100</iXPValueAttack>
+			<iXPValueDefense>50</iXPValueDefense>
+			<!-- Collateral -->
+			<iCollateralDamage>100</iCollateralDamage>
+			<iCollateralDamageLimit>100</iCollateralDamageLimit>
+			<iCollateralDamageMaxUnits>6</iCollateralDamageMaxUnits>
+			<!-- /Collateral -->
+			<iCultureGarrison>16</iCultureGarrison>
+			<iAsset>38</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>1</iGroupSize>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_BLOOD_DRAGON</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MAGIC_IMMUNE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_DRAGON</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_HERO</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MONSTROUS_CREATURE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_FLYING</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_CHANNELING1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_CHANNELING2</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_CHANNELING3</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_VAMPIRE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_BLOOD_CORE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+			<DenyPromotions>
+				<Promotion>PROMOTION_TAME</Promotion>
+			</DenyPromotions>
+			<iTier>4</iTier>
+			<DamageTypeCombats>
+				<DamageTypeCombat>
+					<DamageType>DAMAGE_UNHOLY</DamageType>
+					<iCombat>5</iCombat>
+				</DamageTypeCombat>
+			</DamageTypeCombats>
+			<Image>Art/Interface/Popups/SirMarilKalameet.dds</Image>
+			<Quote>TXT_KEY_POPUP_BLOOD_DRAGON_CREATION</Quote>
+			<iPowerAdd>200</iPowerAdd>
+			<iPowerMult>10</iPowerMult>
+			<PythonPostCombatWon>postCombatReducePopulationDTesh(pCaster,pOpponent)</PythonPostCombatWon>
+		</UnitInfo>
+		<UnitInfo>        <!-- Pit Dragon-->
+			<Class>UNITCLASS_PIT_DRAGON</Class>
+			<Type>UNIT_PIT_DRAGON</Type>
+			<Combat>UNITCOMBAT_BEAST</Combat>
+			<DefaultUnitAI>UNITAI_HERO</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_PIT_DRAGON</Description>
+			<Civilopedia>TXT_KEY_UNIT_PIT_DRAGON_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<bPillage>1</bPillage>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_HERO</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_ATTACK_CITY</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+			<iAIWeight>200</iAIWeight>
+			<iMoves>2</iMoves>
+			<iCombat>25</iCombat>
+			<iXPValueAttack>100</iXPValueAttack>
+			<iXPValueDefense>50</iXPValueDefense>
+			<!-- Collateral -->
+			<iCollateralDamage>100</iCollateralDamage>
+			<iCollateralDamageLimit>100</iCollateralDamageLimit>
+			<iCollateralDamageMaxUnits>6</iCollateralDamageMaxUnits>
+			<!-- /Collateral -->
+			<iCultureGarrison>16</iCultureGarrison>
+			<iAsset>38</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>1</iGroupSize>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_PIT_DRAGON</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MAGIC_IMMUNE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_DRAGON</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_HERO</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MONSTROUS_CREATURE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_FLYING</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_CHANNELING1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_CHANNELING2</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_CHANNELING3</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_ENTROPY3</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_EMPTY_CORE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+			<DenyPromotions>
+				<Promotion>PROMOTION_TAME</Promotion>
+			</DenyPromotions>
+			<iTier>4</iTier>
+			<DamageTypeCombats>
+				<DamageTypeCombat>
+					<DamageType>DAMAGE_UNHOLY</DamageType>
+					<iCombat>10</iCombat>
+				</DamageTypeCombat>
+			</DamageTypeCombats>
+			<Image>Art/Interface/Popups/PitDragonBanner.dds</Image>
+			<Quote>TXT_KEY_POPUP_PIT_DRAGON_CREATION</Quote>
+			<iPowerAdd>200</iPowerAdd>
+			<iPowerMult>10</iPowerMult>
+		</UnitInfo>
+		<UnitInfo>        <!-- Shimmering Dragon-->
+			<Class>UNITCLASS_SHIMMERING_DRAGON</Class>
+			<Type>UNIT_SHIMMERING_DRAGON</Type>
+			<Combat>UNITCOMBAT_BEAST</Combat>
+			<DefaultUnitAI>UNITAI_HERO</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_SHIMMERING_DRAGON</Description>
+			<Civilopedia>TXT_KEY_UNIT_SHIMMERING_DRAGON_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<bPillage>1</bPillage>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_HERO</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_CITY_DEFENSE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+			<iAIWeight>200</iAIWeight>
+			<iMoves>5</iMoves>
+			<iCombat>30</iCombat>
+			<iXPValueAttack>100</iXPValueAttack>
+			<iXPValueDefense>50</iXPValueDefense>
+			<!-- Collateral -->
+			<iCollateralDamage>100</iCollateralDamage>
+			<iCollateralDamageLimit>100</iCollateralDamageLimit>
+			<iCollateralDamageMaxUnits>6</iCollateralDamageMaxUnits>
+			<!-- /Collateral -->
+			<iCultureGarrison>16</iCultureGarrison>
+			<iAsset>38</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>1</iGroupSize>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_SHIMMERING_DRAGON</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MAGIC_IMMUNE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_DRAGON</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_HERO</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MONSTROUS_CREATURE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_FLYING</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_CHANNELING1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_CHANNELING2</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_CHANNELING3</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_IMMUNE_DISEASE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_TEAR_CORE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+			<DenyPromotions>
+				<Promotion>PROMOTION_TAME</Promotion>
+			</DenyPromotions>
+			<iTier>4</iTier>
+			<DamageTypeCombats>
+				<DamageTypeCombat>
+					<DamageType>DAMAGE_HOLY</DamageType>
+					<iCombat>5</iCombat>
+				</DamageTypeCombat>
+			</DamageTypeCombats>
+			<Image>Art/Interface/Popups/SandaraWhiteCrystalDragon.dds</Image>
+			<Quote>TXT_KEY_POPUP_SHIMMERING_DRAGON_CREATION</Quote>
 			<iPowerAdd>200</iPowerAdd>
 			<iPowerMult>10</iPowerMult>
 		</UnitInfo>

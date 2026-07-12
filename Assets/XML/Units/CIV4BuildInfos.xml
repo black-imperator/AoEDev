@@ -127,8 +127,6 @@
 					<TechType>TECH_CONSTRUCTION</TechType>
 					<iDiscount>700</iDiscount>
 				</TechBuildDiscount>
-			</TechBuildDiscounts>
-			<TechBuildDiscounts>
 				<TechBuildDiscount>
 					<TechType>TECH_MIND_STAPLING</TechType>
 					<iDiscount>700</iDiscount>
@@ -2847,7 +2845,7 @@
 			<RouteType>NONE</RouteType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs/>
-			<HotKey>KB_S</HotKey>
+			<HotKey>KB_H</HotKey>
 			<bAltDown>0</bAltDown>
 			<bShiftDown>0</bShiftDown>
 			<bCtrlDown>0</bCtrlDown>
@@ -2876,7 +2874,7 @@
 			<RouteType>NONE</RouteType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs/>
-			<HotKey>KB_T</HotKey>
+			<HotKey>KB_A</HotKey>
 			<bAltDown>0</bAltDown>
 			<bShiftDown>0</bShiftDown>
 			<bCtrlDown>0</bCtrlDown>
@@ -3048,7 +3046,7 @@
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 			</FeatureStructs>
-			<HotKey>KB_M</HotKey>
+			<HotKey>KB_P</HotKey>
 			<bAltDown>0</bAltDown>
 			<bShiftDown>0</bShiftDown>
 			<bCtrlDown>0</bCtrlDown>
@@ -3117,7 +3115,7 @@
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 			</FeatureStructs>
-			<HotKey>KB_M</HotKey>
+			<HotKey>KB_V</HotKey>
 			<bAltDown>0</bAltDown>
 			<bShiftDown>0</bShiftDown>
 			<bCtrlDown>0</bCtrlDown>
@@ -3186,7 +3184,7 @@
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 			</FeatureStructs>
-			<HotKey>KB_M</HotKey>
+			<HotKey>KB_D</HotKey>
 			<bAltDown>0</bAltDown>
 			<bShiftDown>0</bShiftDown>
 			<bCtrlDown>0</bCtrlDown>

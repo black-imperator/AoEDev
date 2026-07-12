@@ -2583,6 +2583,10 @@
 					<BuildingType>NONE</BuildingType>
 				</Building>
 				<Building>
+					<BuildingClassType>BUILDINGCLASS_CITY_OF_A_THOUSAND_SLUMS</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
+				<Building>
 					<BuildingClassType>BUILDINGCLASS_MEMORIAL_REFUGEE</BuildingClassType>
 					<BuildingType>BUILDING_MEMORIAL_REFUGEE</BuildingType>
 				</Building>
@@ -2703,6 +2707,10 @@
 				</Improvement>
 				<Improvement>
 					<ImprovementClassType>IMPROVEMENTCLASS_PASTURE</ImprovementClassType>
+					<ImprovementType>NONE</ImprovementType>
+				</Improvement>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_WINERY</ImprovementClassType>
 					<ImprovementType>NONE</ImprovementType>
 				</Improvement>
 				<Improvement>
@@ -5361,6 +5369,10 @@
 					<UnitClassType>UNITCLASS_BORIS</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_ARCANE_BARGE</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
 			</Units>
 			<Improvements>
 				<Improvement>
@@ -7112,15 +7124,7 @@
 					</FeatureYields>
 				</FeatureYieldChange>
 				<FeatureYieldChange>
-					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
-					<FeatureYields>
-						<iYield>0</iYield>
-						<iYield>-1</iYield>
-						<iYield>0</iYield>
-					</FeatureYields>
-				</FeatureYieldChange>
-				<FeatureYieldChange>
-					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
+					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
 					<FeatureYields>
 						<iYield>0</iYield>
 						<iYield>-1</iYield>
@@ -7137,6 +7141,14 @@
 				</FeatureYieldChange>
 			</FeatureYieldChanges>
 			<TerrainYieldChanges>
+				<TerrainYieldChange>
+					<TerrainType>TERRAIN_DESERT</TerrainType>
+					<TerrainYields>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+					</TerrainYields>
+				</TerrainYieldChange>
 				<TerrainYieldChange>
 					<TerrainType>TERRAIN_WASTELAND</TerrainType>
 					<TerrainYields>
@@ -7412,6 +7424,10 @@
 			</Cities>
 			<Buildings/>
 			<Units>
+				<Unit>
+					<UnitClassType>UNITCLASS_BAT</UnitClassType>
+					<UnitType>UNIT_BAT</UnitType>
+				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_TOAD</UnitClassType>
 					<UnitType>UNIT_TOAD</UnitType>
@@ -7768,6 +7784,10 @@
 				<Unit>
 					<UnitClassType>UNITCLASS_GYRE_CARLIN</UnitClassType>
 					<UnitType>UNIT_GYRE_CARLIN</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_SCORPION_BAT</UnitClassType>
+					<UnitType>UNIT_SCORPION_BAT</UnitType>
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_BATSWARM</UnitClassType>

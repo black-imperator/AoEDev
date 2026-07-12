@@ -11,7 +11,7 @@
 			<Description>TXT_KEY_BUILD_HUNTING_REEF</Description>
 			<Help/>
 			<PrereqTech>TECH_SWAMPDWELLING</PrereqTech>
-			<iTime>1300</iTime>
+			<iTime>1500</iTime>
 			<iCost>0</iCost>
 			<ImprovementType>IMPROVEMENTCLASS_HUNTING_REEF</ImprovementType>
 			<RouteType>NONE</RouteType>
@@ -273,6 +273,24 @@
 					<iDiscount>300</iDiscount>
 				</TechBuildDiscount>
 			</TechBuildDiscounts>
+		</BuildInfo>
+		<BuildInfo> <!-- Pirate Cove -->
+			<Type>BUILD_PIRATE_COVE</Type>
+			<Description>TXT_KEY_BUILD_PIRATE_COVE</Description>
+			<Help/>
+			<PrereqTech>TECH_SEAFARING</PrereqTech>
+			<iTime>1200</iTime>
+			<iCost>0</iCost>
+			<ImprovementType>IMPROVEMENTCLASS_PIRATE_COVE</ImprovementType>
+			<RouteType>NONE</RouteType>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<FeatureStructs/>
+			<HotKey>KB_F</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>1</iHotKeyPriority>
+			<Button>Art/Interface/Buttons/Improvements/piratecove.dds</Button>
 		</BuildInfo>
 	</BuildInfos>
 </Civ4BuildInfos>

@@ -5033,7 +5033,7 @@
 			</TerrainMakesValids>
 			<ImprovementUpgrade>IMPROVEMENTCLASS_STAEDDING_LEGENDARY</ImprovementUpgrade>
 			<SpawnUnitType>UNIT_HILL_GIANT</SpawnUnitType>
-			<ImmediateSpawnUnitType>UNIT_JARL</ImmediateSpawnUnitType>
+			<ImmediateSpawnUnitType>UNIT_JOT_GIANT_CHAMPION</ImmediateSpawnUnitType>
 			<SpawnUnitCiv>CIVILIZATION_ORC</SpawnUnitCiv>
 			<iSpawnUnitChancePercentMod>25</iSpawnUnitChancePercentMod>
 			<iSpawnAtOnceLimit>3</iSpawnAtOnceLimit>
@@ -5091,6 +5091,8 @@
 			</LairUpgradeTechs>
 			<GuardianPromotions>
 				<Promotion>PROMOTION_LEASH_1</Promotion>
+				<Promotion>PROMOTION_WEAK</Promotion>
+				<Promotion>PROMOTION_RUSTED</Promotion>
 			</GuardianPromotions>
 		</ImprovementInfo>
 		<ImprovementInfo><!-- Legendary Staedding -->
@@ -6381,7 +6383,7 @@
 					<YieldChanges>
 						<iYieldChange>0</iYieldChange>
 						<iYieldChange>0</iYieldChange>
-						<iYieldChange>2</iYieldChange>
+						<iYieldChange>3</iYieldChange>
 					</YieldChanges>
 				</BonusTypeStruct>
 				<BonusTypeStruct>
@@ -6753,9 +6755,21 @@
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
 				<iYieldChange>0</iYieldChange>
-				<iYieldChange>3</iYieldChange>
+				<iYieldChange>0</iYieldChange>
 			</YieldChanges>
 			<BonusTypeStructs>
+				<BonusTypeStruct>
+					<BonusType>BONUS_ASH</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>3</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
 				<BonusTypeStruct>
 					<BonusType>BONUS_CLAM</BonusType>
 					<bBonusMakesValid>1</bBonusMakesValid>
@@ -6859,6 +6873,7 @@
 					</TechYields>
 				</TechYieldChange>
 			</TechYieldChanges>
+			<BonusConvert>BONUS_ASH</BonusConvert>
 		</ImprovementInfo>
 		<ImprovementInfo><!-- D'teshi Catacombs -->
 			<Type>IMPROVEMENT_DTESH_CATACOMBS</Type>
@@ -8364,7 +8379,7 @@
 			</YieldChanges>
 			<iUpgradeTime>45</iUpgradeTime>
 			<iAirBombDefense>10</iAirBombDefense>
-			<iDefenseModifier>40</iDefenseModifier>
+			<iDefenseModifier>30</iDefenseModifier>
 			<iPillageGold>20</iPillageGold>
 			<bFort>1</bFort>
 			<bWater>1</bWater>
@@ -8484,7 +8499,7 @@
 			<bActsAsCity>1</bActsAsCity>
 			<iUpgradeTime>60</iUpgradeTime>
 			<iAirBombDefense>10</iAirBombDefense>
-			<iDefenseModifier>60</iDefenseModifier>
+			<iDefenseModifier>40</iDefenseModifier>
 			<iPillageGold>30</iPillageGold>
 			<bFort>1</bFort>
 			<bWater>1</bWater>
@@ -8607,7 +8622,7 @@
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
 				<iYieldChange>1</iYieldChange>
-				<iYieldChange>1</iYieldChange>
+				<iYieldChange>0</iYieldChange>
 			</YieldChanges>
 			<bFort>1</bFort>
 			<iAdvancedStartCost>24</iAdvancedStartCost>
@@ -8760,7 +8775,7 @@
 			<ArtDefineTag>ART_DEF_IMPROVEMENT_DWARVEN_SETTLEMENT</ArtDefineTag>
 			<YieldChanges>
 				<iYieldChange>1</iYieldChange>
-				<iYieldChange>2</iYieldChange>
+				<iYieldChange>1</iYieldChange>
 				<iYieldChange>1</iYieldChange>
 			</YieldChanges>
 			<iUpgradeTime>30</iUpgradeTime>
@@ -8913,11 +8928,11 @@
 			<YieldChanges>
 				<iYieldChange>1</iYieldChange>
 				<iYieldChange>2</iYieldChange>
-				<iYieldChange>2</iYieldChange>
+				<iYieldChange>1</iYieldChange>
 			</YieldChanges>
 			<iUpgradeTime>45</iUpgradeTime>
 			<iAirBombDefense>10</iAirBombDefense>
-			<iDefenseModifier>40</iDefenseModifier>
+			<iDefenseModifier>30</iDefenseModifier>
 			<iPillageGold>20</iPillageGold>
 			<bFort>1</bFort>
 			<bPeakMakesValid>1</bPeakMakesValid>
@@ -9081,7 +9096,7 @@
 			<bActsAsCity>1</bActsAsCity>
 			<iUpgradeTime>60</iUpgradeTime>
 			<iAirBombDefense>10</iAirBombDefense>
-			<iDefenseModifier>60</iDefenseModifier>
+			<iDefenseModifier>40</iDefenseModifier>
 			<iPillageGold>30</iPillageGold>
 			<bFort>1</bFort>
 			<bPeakMakesValid>1</bPeakMakesValid>
@@ -9363,6 +9378,18 @@
 				</TerrainMakesValid>
 			</TerrainMakesValids>
 			<BonusTypeStructs>
+				<BonusTypeStruct>
+					<BonusType>BONUS_WINE</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>1</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>1</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
 				<BonusTypeStruct>
 					<BonusType>BONUS_CORN</BonusType>
 					<bBonusMakesValid>1</bBonusMakesValid>
@@ -10284,7 +10311,7 @@
 			<PrereqCivilization>CIVILIZATION_GRIGORI</PrereqCivilization>
 			<FreeSpecialistClass>SPECIALISTCLASS_STATESMAN</FreeSpecialistClass>
 			<YieldChanges>
-				<iYieldChange>0</iYieldChange>
+				<iYieldChange>1</iYieldChange>
 				<iYieldChange>0</iYieldChange>
 				<iYieldChange>0</iYieldChange>
 			</YieldChanges>
@@ -10326,6 +10353,18 @@
 				</TerrainMakesValid>
 			</TerrainMakesValids>
 			<BonusTypeStructs>
+				<BonusTypeStruct>
+					<BonusType>BONUS_WINE</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>1</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>1</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
 				<BonusTypeStruct>
 					<BonusType>BONUS_BANANA</BonusType>
 					<bBonusMakesValid>1</bBonusMakesValid>
@@ -10502,6 +10541,18 @@
 					<iSpreadRand>0</iSpreadRand>
 					<YieldChanges>
 						<iYieldChange>1</iYieldChange>
+						<iYieldChange>1</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+				<BonusTypeStruct>
+					<BonusType>BONUS_CAMEL</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>1750</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
 						<iYieldChange>1</iYieldChange>
 						<iYieldChange>0</iYieldChange>
 					</YieldChanges>

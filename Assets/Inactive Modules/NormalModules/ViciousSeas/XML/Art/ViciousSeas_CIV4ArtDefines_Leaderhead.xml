@@ -40,8 +40,8 @@
 		</LeaderheadArtInfo>
 		<LeaderheadArtInfo>
 			<Type>ART_DEF_LEADER_MIRROR</Type>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/LeaderHeads/MirrorButton2.dds</Button>
-			<NIF>Modules/NormalModules/ViciousSeas/Art/Interface/LeaderHeads/Mirror2.dds</NIF>
+			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/LeaderHeads/Ophelia_BlueDesignButton.dds</Button>
+			<NIF>Modules/NormalModules/ViciousSeas/Art/Interface/LeaderHeads/Ophelia_BlueDesign.dds</NIF>
 			<KFM/>
 			<NoShaderNIF/>
 			<BackgroundKFM/>

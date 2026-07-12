@@ -274,61 +274,71 @@ As the Dreaming syphons more and more reality into itself, living things inside 
 	</TEXT>
 	<TEXT> 
 		<Tag>TXT_KEY_CIV_DREAM_AIFONS_STRATEGY</Tag>
-		<English>Complexity: Advanced[NEWLINE][WORK IN PROGRESS]The Dreaming Aifons are an aberration; nothing they do is normal.
+		<English>Complexity: Advanced
+The Dreaming Aifons are an aberration; nothing they do is normal.
 
-[ICON_BULLET]The Dream Aifons appear as hidden nationality monsters outside of their cultural borders, and angelic beings who inject culture in nearby neutral or hostile cities when inside their own borders.
+[ICON_BULLET]Military: The Dream Aifons appear as hidden nationality monsters outside of their cultural borders, and angelic beings who inject culture into nearby neutral or hostile cities when inside their own borders.
 This means the only way they can capture a city is by culture flipping it!
-[ICON_BULLET]Dream cities have terrible hammer production, especially if settled in the open ocean. Instead, they start with the unique civic [LINK=CIVIC_MELDING]Melding[\LINK], allowing them to convert their culture into production for completing units or structures.
-[ICON_BULLET]Being born of Danalin's troubled dreams, these false Aifons are able to settle cities on the ocean and have better yields there than on land.
-[ICON_BULLET]The Dreaming terrain type spreads inside their culture, giving them a defensive bonus inside of it and slightly hurting other units. It can be dispelled with Metamagic, leaving the cities exposed as the nightmarish wasteland they are.
-[ICON_BULLET]The Dreaming terrain also saps the life of the normal terrain around it, spreading wasteland, not that those caught in the Dreaming would be able to see it for what it really is.
-[ICON_BULLET]Crime is your biggest enemy: losing control of crime in a dreaming city is extremely dangerous and will quickly lead to a total collapse of the dream. Especially with each [LINK=BUILDING_NIGHTMARES]Population point[\LINK] producing extra crime.
-[ICON_BULLET]The Dream of the Aifons have access to a unique version of the Alter of Luonnotar, strengthening the city it is built in, giving XP to disciple units, and providing units with the [LINK=PROMOTION_DOOMGIVER]Doomgiver[\LINK] promotion.
-[ICON_BULLET]The Dream Aifons do not have arcane units besides Hemah. Instead, they get the insatiable Empty, a disciple mimic unit who is unable to gain experience from combat but can steal promotions, including spellcasting.</English>
-		<French>Complexity: Advanced[NEWLINE][WORK IN PROGRESS]The Dreaming Aifons are an aberration; nothing they do is normal.
+[ICON_BULLET]Culture: Dream cities have terrible hammer production, especially if settled in the open ocean. Instead, they start with the unique civic [LINK=CIVIC_MELDING]Melding[\LINK], which allows them to spend their culture on production to complete units or structures.
+[ICON_BULLET]Oceanic: Being born of Danalin's troubled dreams, these false Aifons are able to walk across water, fight better on water, and have better yields at sea than on land.
+[ICON_BULLET]Corruption: The Dreaming plot effect spreads inside their culture, giving them a defensive bonus inside of it and slightly hurting other units. It can be dispelled with Metamagic.
+[ICON_BULLET]Improvements: The Aifons have several unique improvements; on land, they have the Haven improvement, which is worse than other improvements but can exploit resources and gives culture directly to cities, and at sea is the fishing replacement, the Undersea Warrens.
+In the open ocean, the Pearlstone Communes and Coral Fortresses can be built for commerce and defence, respectively.
+[ICON_BULLET]Crime:  Crime is your biggest enemy, with no unhealth in cities and ocean tiles giving lots of food,  losing control of crime in a dreaming city is extremely dangerous and will quickly lead to a total collapse of the dream. Especially with each [LINK=BUILDING_NIGHTMARES]Population point[\LINK] producing extra crime from unhappy pops.
+[ICON_BULLET]Victory: The Dream of the Aifons has access to a unique version of the Alter of Luonnotar, strengthening the city it is built in, giving XP to disciple units, and providing units with the [LINK=PROMOTION_DOOMGIVER]Doomgiver[\LINK] promotion.
+[ICON_BULLET]Magic: The Dream Aifons do not have arcane units besides Hemah. Instead, they get the insatiable Empty, a disciple mimic unit who is unable to gain experience from combat but can steal promotions, including spellcasting.</English>
+		<French>Complexity: Advanced
+The Dreaming Aifons are an aberration; nothing they do is normal.
 
-[ICON_BULLET]The Dream Aifons appear as hidden nationality monsters outside of their cultural borders, and angelic beings who inject culture in nearby neutral or hostile cities when inside their own borders.
+[ICON_BULLET]Military: The Dream Aifons appear as hidden nationality monsters outside of their cultural borders, and angelic beings who inject culture into nearby neutral or hostile cities when inside their own borders.
 This means the only way they can capture a city is by culture flipping it!
-[ICON_BULLET]Dream cities have terrible hammer production, especially if settled in the open ocean. Instead, they start with the unique civic [LINK=CIVIC_MELDING]Melding[\LINK], allowing them to convert their culture into production for completing units or structures.
-[ICON_BULLET]Being born of Danalin's troubled dreams, these false Aifons are able to settle cities on the ocean and have better yields there than on land.
-[ICON_BULLET]The Dreaming terrain type spreads inside their culture, giving them a defensive bonus inside of it and slightly hurting other units. It can be dispelled with Metamagic, leaving the cities exposed as the nightmarish wasteland they are.
-[ICON_BULLET]The Dreaming terrain also saps the life of the normal terrain around it, spreading wasteland, not that those caught in the Dreaming would be able to see it for what it really is.
-[ICON_BULLET]Crime is your biggest enemy: losing control of crime in a dreaming city is extremely dangerous and will quickly lead to a total collapse of the dream. Especially with each [LINK=BUILDING_NIGHTMARES]Population point[\LINK] producing extra crime.
-[ICON_BULLET]The Dream of the Aifons have access to a unique version of the Alter of Luonnotar, strengthening the city it is built in, giving XP to disciple units, and providing units with the [LINK=PROMOTION_DOOMGIVER]Doomgiver[\LINK] promotion.
-[ICON_BULLET]The Dream Aifons do not have arcane units besides Hemah. Instead, they get the insatiable Empty, a disciple mimic unit who is unable to gain experience from combat but can steal promotions, including spellcasting.</French>
-		<German>Complexity: Advanced[NEWLINE][WORK IN PROGRESS]The Dreaming Aifons are an aberration; nothing they do is normal.
+[ICON_BULLET]Culture: Dream cities have terrible hammer production, especially if settled in the open ocean. Instead, they start with the unique civic [LINK=CIVIC_MELDING]Melding[\LINK], which allows them to spend their culture on production to complete units or structures.
+[ICON_BULLET]Oceanic: Being born of Danalin's troubled dreams, these false Aifons are able to walk across water, fight better on water, and have better yields at sea than on land.
+[ICON_BULLET]Corruption: The Dreaming plot effect spreads inside their culture, giving them a defensive bonus inside of it and slightly hurting other units. It can be dispelled with Metamagic.
+[ICON_BULLET]Improvements: The Aifons have several unique improvements; on land, they have the Haven improvement, which is worse than other improvements but can exploit resources and gives culture directly to cities, and at sea is the fishing replacement, the Undersea Warrens.
+In the open ocean, the Pearlstone Communes and Coral Fortresses can be built for commerce and defence, respectively.
+[ICON_BULLET]Crime:  Crime is your biggest enemy, with no unhealth in cities and ocean tiles giving lots of food,  losing control of crime in a dreaming city is extremely dangerous and will quickly lead to a total collapse of the dream. Especially with each [LINK=BUILDING_NIGHTMARES]Population point[\LINK] producing extra crime from unhappy pops.
+[ICON_BULLET]Victory: The Dream of the Aifons has access to a unique version of the Alter of Luonnotar, strengthening the city it is built in, giving XP to disciple units, and providing units with the [LINK=PROMOTION_DOOMGIVER]Doomgiver[\LINK] promotion.
+[ICON_BULLET]Magic: The Dream Aifons do not have arcane units besides Hemah. Instead, they get the insatiable Empty, a disciple mimic unit who is unable to gain experience from combat but can steal promotions, including spellcasting.</French>
+		<German>Complexity: Advanced
+The Dreaming Aifons are an aberration; nothing they do is normal.
 
-[ICON_BULLET]The Dream Aifons appear as hidden nationality monsters outside of their cultural borders, and angelic beings who inject culture in nearby neutral or hostile cities when inside their own borders.
+[ICON_BULLET]Military: The Dream Aifons appear as hidden nationality monsters outside of their cultural borders, and angelic beings who inject culture into nearby neutral or hostile cities when inside their own borders.
 This means the only way they can capture a city is by culture flipping it!
-[ICON_BULLET]Dream cities have terrible hammer production, especially if settled in the open ocean. Instead, they start with the unique civic [LINK=CIVIC_MELDING]Melding[\LINK], allowing them to convert their culture into production for completing units or structures.
-[ICON_BULLET]Being born of Danalin's troubled dreams, these false Aifons are able to settle cities on the ocean and have better yields there than on land.
-[ICON_BULLET]The Dreaming terrain type spreads inside their culture, giving them a defensive bonus inside of it and slightly hurting other units. It can be dispelled with Metamagic, leaving the cities exposed as the nightmarish wasteland they are.
-[ICON_BULLET]The Dreaming terrain also saps the life of the normal terrain around it, spreading wasteland, not that those caught in the Dreaming would be able to see it for what it really is.
-[ICON_BULLET]Crime is your biggest enemy: losing control of crime in a dreaming city is extremely dangerous and will quickly lead to a total collapse of the dream. Especially with each [LINK=BUILDING_NIGHTMARES]Population point[\LINK] producing extra crime.
-[ICON_BULLET]The Dream of the Aifons have access to a unique version of the Alter of Luonnotar, strengthening the city it is built in, giving XP to disciple units, and providing units with the [LINK=PROMOTION_DOOMGIVER]Doomgiver[\LINK] promotion.
-[ICON_BULLET]The Dream Aifons do not have arcane units besides Hemah. Instead, they get the insatiable Empty, a disciple mimic unit who is unable to gain experience from combat but can steal promotions, including spellcasting.</German>
-		<Italian>Complexity: Advanced[NEWLINE][WORK IN PROGRESS]The Dreaming Aifons are an aberration; nothing they do is normal.
+[ICON_BULLET]Culture: Dream cities have terrible hammer production, especially if settled in the open ocean. Instead, they start with the unique civic [LINK=CIVIC_MELDING]Melding[\LINK], which allows them to spend their culture on production to complete units or structures.
+[ICON_BULLET]Oceanic: Being born of Danalin's troubled dreams, these false Aifons are able to walk across water, fight better on water, and have better yields at sea than on land.
+[ICON_BULLET]Corruption: The Dreaming plot effect spreads inside their culture, giving them a defensive bonus inside of it and slightly hurting other units. It can be dispelled with Metamagic.
+[ICON_BULLET]Improvements: The Aifons have several unique improvements; on land, they have the Haven improvement, which is worse than other improvements but can exploit resources and gives culture directly to cities, and at sea is the fishing replacement, the Undersea Warrens.
+In the open ocean, the Pearlstone Communes and Coral Fortresses can be built for commerce and defence, respectively.
+[ICON_BULLET]Crime:  Crime is your biggest enemy, with no unhealth in cities and ocean tiles giving lots of food,  losing control of crime in a dreaming city is extremely dangerous and will quickly lead to a total collapse of the dream. Especially with each [LINK=BUILDING_NIGHTMARES]Population point[\LINK] producing extra crime from unhappy pops.
+[ICON_BULLET]Victory: The Dream of the Aifons has access to a unique version of the Alter of Luonnotar, strengthening the city it is built in, giving XP to disciple units, and providing units with the [LINK=PROMOTION_DOOMGIVER]Doomgiver[\LINK] promotion.
+[ICON_BULLET]Magic: The Dream Aifons do not have arcane units besides Hemah. Instead, they get the insatiable Empty, a disciple mimic unit who is unable to gain experience from combat but can steal promotions, including spellcasting.</German>
+		<Italian>Complexity: Advanced
+The Dreaming Aifons are an aberration; nothing they do is normal.
 
-[ICON_BULLET]The Dream Aifons appear as hidden nationality monsters outside of their cultural borders, and angelic beings who inject culture in nearby neutral or hostile cities when inside their own borders.
+[ICON_BULLET]Military: The Dream Aifons appear as hidden nationality monsters outside of their cultural borders, and angelic beings who inject culture into nearby neutral or hostile cities when inside their own borders.
 This means the only way they can capture a city is by culture flipping it!
-[ICON_BULLET]Dream cities have terrible hammer production, especially if settled in the open ocean. Instead, they start with the unique civic [LINK=CIVIC_MELDING]Melding[\LINK], allowing them to convert their culture into production for completing units or structures.
-[ICON_BULLET]Being born of Danalin's troubled dreams, these false Aifons are able to settle cities on the ocean and have better yields there than on land.
-[ICON_BULLET]The Dreaming terrain type spreads inside their culture, giving them a defensive bonus inside of it and slightly hurting other units. It can be dispelled with Metamagic, leaving the cities exposed as the nightmarish wasteland they are.
-[ICON_BULLET]The Dreaming terrain also saps the life of the normal terrain around it, spreading wasteland, not that those caught in the Dreaming would be able to see it for what it really is.
-[ICON_BULLET]Crime is your biggest enemy: losing control of crime in a dreaming city is extremely dangerous and will quickly lead to a total collapse of the dream. Especially with each [LINK=BUILDING_NIGHTMARES]Population point[\LINK] producing extra crime.
-[ICON_BULLET]The Dream of the Aifons have access to a unique version of the Alter of Luonnotar, strengthening the city it is built in, giving XP to disciple units, and providing units with the [LINK=PROMOTION_DOOMGIVER]Doomgiver[\LINK] promotion.
-[ICON_BULLET]The Dream Aifons do not have arcane units besides Hemah. Instead, they get the insatiable Empty, a disciple mimic unit who is unable to gain experience from combat but can steal promotions, including spellcasting.</Italian>
-		<Spanish>Complexity: Advanced[NEWLINE][WORK IN PROGRESS]The Dreaming Aifons are an aberration; nothing they do is normal.
+[ICON_BULLET]Culture: Dream cities have terrible hammer production, especially if settled in the open ocean. Instead, they start with the unique civic [LINK=CIVIC_MELDING]Melding[\LINK], which allows them to spend their culture on production to complete units or structures.
+[ICON_BULLET]Oceanic: Being born of Danalin's troubled dreams, these false Aifons are able to walk across water, fight better on water, and have better yields at sea than on land.
+[ICON_BULLET]Corruption: The Dreaming plot effect spreads inside their culture, giving them a defensive bonus inside of it and slightly hurting other units. It can be dispelled with Metamagic.
+[ICON_BULLET]Improvements: The Aifons have several unique improvements; on land, they have the Haven improvement, which is worse than other improvements but can exploit resources and gives culture directly to cities, and at sea is the fishing replacement, the Undersea Warrens.
+In the open ocean, the Pearlstone Communes and Coral Fortresses can be built for commerce and defence, respectively.
+[ICON_BULLET]Crime:  Crime is your biggest enemy, with no unhealth in cities and ocean tiles giving lots of food,  losing control of crime in a dreaming city is extremely dangerous and will quickly lead to a total collapse of the dream. Especially with each [LINK=BUILDING_NIGHTMARES]Population point[\LINK] producing extra crime from unhappy pops.
+[ICON_BULLET]Victory: The Dream of the Aifons has access to a unique version of the Alter of Luonnotar, strengthening the city it is built in, giving XP to disciple units, and providing units with the [LINK=PROMOTION_DOOMGIVER]Doomgiver[\LINK] promotion.
+[ICON_BULLET]Magic: The Dream Aifons do not have arcane units besides Hemah. Instead, they get the insatiable Empty, a disciple mimic unit who is unable to gain experience from combat but can steal promotions, including spellcasting.</Italian>
+		<Spanish>Complexity: Advanced
+The Dreaming Aifons are an aberration; nothing they do is normal.
 
-[ICON_BULLET]The Dream Aifons appear as hidden nationality monsters outside of their cultural borders, and angelic beings who inject culture in nearby neutral or hostile cities when inside their own borders.
+[ICON_BULLET]Military: The Dream Aifons appear as hidden nationality monsters outside of their cultural borders, and angelic beings who inject culture into nearby neutral or hostile cities when inside their own borders.
 This means the only way they can capture a city is by culture flipping it!
-[ICON_BULLET]Dream cities have terrible hammer production, especially if settled in the open ocean. Instead, they start with the unique civic [LINK=CIVIC_MELDING]Melding[\LINK], allowing them to convert their culture into production for completing units or structures.
-[ICON_BULLET]Being born of Danalin's troubled dreams, these false Aifons are able to settle cities on the ocean and have better yields there than on land.
-[ICON_BULLET]The Dreaming terrain type spreads inside their culture, giving them a defensive bonus inside of it and slightly hurting other units. It can be dispelled with Metamagic, leaving the cities exposed as the nightmarish wasteland they are.
-[ICON_BULLET]The Dreaming terrain also saps the life of the normal terrain around it, spreading wasteland, not that those caught in the Dreaming would be able to see it for what it really is.
-[ICON_BULLET]Crime is your biggest enemy: losing control of crime in a dreaming city is extremely dangerous and will quickly lead to a total collapse of the dream. Especially with each [LINK=BUILDING_NIGHTMARES]Population point[\LINK] producing extra crime.
-[ICON_BULLET]The Dream of the Aifons have access to a unique version of the Alter of Luonnotar, strengthening the city it is built in, giving XP to disciple units, and providing units with the [LINK=PROMOTION_DOOMGIVER]Doomgiver[\LINK] promotion.
-[ICON_BULLET]The Dream Aifons do not have arcane units besides Hemah. Instead, they get the insatiable Empty, a disciple mimic unit who is unable to gain experience from combat but can steal promotions, including spellcasting.</Spanish>
+[ICON_BULLET]Culture: Dream cities have terrible hammer production, especially if settled in the open ocean. Instead, they start with the unique civic [LINK=CIVIC_MELDING]Melding[\LINK], which allows them to spend their culture on production to complete units or structures.
+[ICON_BULLET]Oceanic: Being born of Danalin's troubled dreams, these false Aifons are able to walk across water, fight better on water, and have better yields at sea than on land.
+[ICON_BULLET]Corruption: The Dreaming plot effect spreads inside their culture, giving them a defensive bonus inside of it and slightly hurting other units. It can be dispelled with Metamagic.
+[ICON_BULLET]Improvements: The Aifons have several unique improvements; on land, they have the Haven improvement, which is worse than other improvements but can exploit resources and gives culture directly to cities, and at sea is the fishing replacement, the Undersea Warrens.
+In the open ocean, the Pearlstone Communes and Coral Fortresses can be built for commerce and defence, respectively.
+[ICON_BULLET]Crime:  Crime is your biggest enemy, with no unhealth in cities and ocean tiles giving lots of food,  losing control of crime in a dreaming city is extremely dangerous and will quickly lead to a total collapse of the dream. Especially with each [LINK=BUILDING_NIGHTMARES]Population point[\LINK] producing extra crime from unhappy pops.
+[ICON_BULLET]Victory: The Dream of the Aifons has access to a unique version of the Alter of Luonnotar, strengthening the city it is built in, giving XP to disciple units, and providing units with the [LINK=PROMOTION_DOOMGIVER]Doomgiver[\LINK] promotion.
+[ICON_BULLET]Magic: The Dream Aifons do not have arcane units besides Hemah. Instead, they get the insatiable Empty, a disciple mimic unit who is unable to gain experience from combat but can steal promotions, including spellcasting.</Spanish>
 	</TEXT>
 	<TEXT> 
 		<Tag>TXT_KEY_TRAIT_DREAM</Tag>
@@ -601,10 +611,210 @@ Hearing this reflection say all the things she wished to say to her husband, and
 A key turned, a lock is opened, Condatis turned her face towards her husband, eyes aglow with a terrible wrath.
 
 One Condatis was a battle worthy of song, two Condatis is a sick joke by The One, thought Hastur, and he immediately tore a hole in reality, diving through it to escape.</English>
-		<French>Condatis, Twin-Soul</French>
-		<German>Condatis, Twin-Soul</German>
-		<Italian>Condatis, Twin-Soul</Italian>
-		<Spanish>Condatis, Twin-Soul</Spanish>
+		<French>Condatis heard the sound of waves.
+
+Not small waves, not ripples on the shoreline hissing onto the sand.
+No, this was the great crashing boom of water smashing into a lighthouse on a storm-swept isle, grand and terrible.
+
+She always heard the ocean, whether or not she was anywhere near the coast; it was always there - sometimes close, sometimes far, but ever present.
+Condatis had noticed that whenever the waves grew louder, her husband would seem to find urgent missions for her, far from the sea, and the sound of waves grew distant.
+
+Then, a change; the sound of waves began to come not from the sea, but from across the land, and as they grew louder, Hastur's missions would come more frequently and send her farther and farther away.
+But still, the sound of waves grew louder, as if they were drawn to Condatis.
+
+
+Now the waves roared in her ears; whatever it was, it had found her!
+She drew her weapon and fell into a battle stance - Whatever it was, it would not harm her beloved Hastur!
+She dove around the corner and faced... herself?
+The women stared at her with wide eyes... and then lunged with weapons drawn!
+Condatis raised her own to meet them as the sound of waves crashed around her.
+
+"You dare to take my form, dreamling!?" they said in unison.
+
+Back-and-forth blows were traded, strikes that shattered marble floors and crumbled statues, as the duo continued their frightful dance.
+
+"Too strong to be a dream! ...What are you??" Echoed the warriors.
+
+Condatis leapt over the great dining table, as it was smashed to floatsam behind her, and counter-attacked with a surging wall of water that swept everything in the stone halls away.
+
+All except this stranger, unmoved and glowering up at her.
+
+"ENOUGH!" The combined roar blew out the dining hall windows as the angels both unfurled their wings, blasting out their full radiance.
+Condatis held for a moment, but then she was swept up in the surging tide and flung into the wall behind her.
+
+Everything was cloudy as Condatis struggled to gasp air back into her lungs and regain her footing.
+When she looked up, the stranger was uncomfortably close to her face, as if to inspect a piece of craftsmanship.
+"You are a fraud," The stranger said with bemusement, "But a mere mimic would not be able to do THAT. There is something more at work here."
+
+As if on cue, Hastur the Lord of Nightmares came bursting into the hall's entranceway. 
+"CONDATIS! WHAT ARE YOU DOING... In... here?" Hastur started with a snarl that quickly trailed off, his gaze going from one Condatis to the other.
+
+The stranger looked back at her and then at Hastur.
+"Oh... So this is how you handle rejection, 'dear husband'?" The woman spat the last word out like a curse, "You know, you're supposed to find someone who looks like me, not a literal copy, you perverse creature!"
+
+As the stranger poised to strike, Condatis dove in front to deflect the blow, crying out: "I am Condatis! Archangel of the Seas, and you will not harm my husband!"
+
+"Maybe you are of me, perhaps a fragment, no doubt stolen,"  said her mirror, glaring towards Hastur pointedly, "But that is not your husband; that has not been your husband for a very long time, sister of my soul. That is a traitor, and our enemy!"
+
+Condatis stood stunned as the angel's words caused a flood of suppressed memories to wash over her, like a burst dam; all the little barbed words, all the demeaning moments, and all the brutal beatings...
+Hearing this reflection say all the things she wished to say to her husband, and with all the strength and confidence she dreamt of having while saying it.
+
+A key turned, a lock is opened, Condatis turned her face towards her husband, eyes aglow with a terrible wrath.
+
+One Condatis was a battle worthy of song, two Condatis is a sick joke by The One, thought Hastur, and he immediately tore a hole in reality, diving through it to escape.</French>
+		<German>Condatis heard the sound of waves.
+
+Not small waves, not ripples on the shoreline hissing onto the sand.
+No, this was the great crashing boom of water smashing into a lighthouse on a storm-swept isle, grand and terrible.
+
+She always heard the ocean, whether or not she was anywhere near the coast; it was always there - sometimes close, sometimes far, but ever present.
+Condatis had noticed that whenever the waves grew louder, her husband would seem to find urgent missions for her, far from the sea, and the sound of waves grew distant.
+
+Then, a change; the sound of waves began to come not from the sea, but from across the land, and as they grew louder, Hastur's missions would come more frequently and send her farther and farther away.
+But still, the sound of waves grew louder, as if they were drawn to Condatis.
+
+
+Now the waves roared in her ears; whatever it was, it had found her!
+She drew her weapon and fell into a battle stance - Whatever it was, it would not harm her beloved Hastur!
+She dove around the corner and faced... herself?
+The women stared at her with wide eyes... and then lunged with weapons drawn!
+Condatis raised her own to meet them as the sound of waves crashed around her.
+
+"You dare to take my form, dreamling!?" they said in unison.
+
+Back-and-forth blows were traded, strikes that shattered marble floors and crumbled statues, as the duo continued their frightful dance.
+
+"Too strong to be a dream! ...What are you??" Echoed the warriors.
+
+Condatis leapt over the great dining table, as it was smashed to floatsam behind her, and counter-attacked with a surging wall of water that swept everything in the stone halls away.
+
+All except this stranger, unmoved and glowering up at her.
+
+"ENOUGH!" The combined roar blew out the dining hall windows as the angels both unfurled their wings, blasting out their full radiance.
+Condatis held for a moment, but then she was swept up in the surging tide and flung into the wall behind her.
+
+Everything was cloudy as Condatis struggled to gasp air back into her lungs and regain her footing.
+When she looked up, the stranger was uncomfortably close to her face, as if to inspect a piece of craftsmanship.
+"You are a fraud," The stranger said with bemusement, "But a mere mimic would not be able to do THAT. There is something more at work here."
+
+As if on cue, Hastur the Lord of Nightmares came bursting into the hall's entranceway. 
+"CONDATIS! WHAT ARE YOU DOING... In... here?" Hastur started with a snarl that quickly trailed off, his gaze going from one Condatis to the other.
+
+The stranger looked back at her and then at Hastur.
+"Oh... So this is how you handle rejection, 'dear husband'?" The woman spat the last word out like a curse, "You know, you're supposed to find someone who looks like me, not a literal copy, you perverse creature!"
+
+As the stranger poised to strike, Condatis dove in front to deflect the blow, crying out: "I am Condatis! Archangel of the Seas, and you will not harm my husband!"
+
+"Maybe you are of me, perhaps a fragment, no doubt stolen,"  said her mirror, glaring towards Hastur pointedly, "But that is not your husband; that has not been your husband for a very long time, sister of my soul. That is a traitor, and our enemy!"
+
+Condatis stood stunned as the angel's words caused a flood of suppressed memories to wash over her, like a burst dam; all the little barbed words, all the demeaning moments, and all the brutal beatings...
+Hearing this reflection say all the things she wished to say to her husband, and with all the strength and confidence she dreamt of having while saying it.
+
+A key turned, a lock is opened, Condatis turned her face towards her husband, eyes aglow with a terrible wrath.
+
+One Condatis was a battle worthy of song, two Condatis is a sick joke by The One, thought Hastur, and he immediately tore a hole in reality, diving through it to escape.</German>
+		<Italian>Condatis heard the sound of waves.
+
+Not small waves, not ripples on the shoreline hissing onto the sand.
+No, this was the great crashing boom of water smashing into a lighthouse on a storm-swept isle, grand and terrible.
+
+She always heard the ocean, whether or not she was anywhere near the coast; it was always there - sometimes close, sometimes far, but ever present.
+Condatis had noticed that whenever the waves grew louder, her husband would seem to find urgent missions for her, far from the sea, and the sound of waves grew distant.
+
+Then, a change; the sound of waves began to come not from the sea, but from across the land, and as they grew louder, Hastur's missions would come more frequently and send her farther and farther away.
+But still, the sound of waves grew louder, as if they were drawn to Condatis.
+
+
+Now the waves roared in her ears; whatever it was, it had found her!
+She drew her weapon and fell into a battle stance - Whatever it was, it would not harm her beloved Hastur!
+She dove around the corner and faced... herself?
+The women stared at her with wide eyes... and then lunged with weapons drawn!
+Condatis raised her own to meet them as the sound of waves crashed around her.
+
+"You dare to take my form, dreamling!?" they said in unison.
+
+Back-and-forth blows were traded, strikes that shattered marble floors and crumbled statues, as the duo continued their frightful dance.
+
+"Too strong to be a dream! ...What are you??" Echoed the warriors.
+
+Condatis leapt over the great dining table, as it was smashed to floatsam behind her, and counter-attacked with a surging wall of water that swept everything in the stone halls away.
+
+All except this stranger, unmoved and glowering up at her.
+
+"ENOUGH!" The combined roar blew out the dining hall windows as the angels both unfurled their wings, blasting out their full radiance.
+Condatis held for a moment, but then she was swept up in the surging tide and flung into the wall behind her.
+
+Everything was cloudy as Condatis struggled to gasp air back into her lungs and regain her footing.
+When she looked up, the stranger was uncomfortably close to her face, as if to inspect a piece of craftsmanship.
+"You are a fraud," The stranger said with bemusement, "But a mere mimic would not be able to do THAT. There is something more at work here."
+
+As if on cue, Hastur the Lord of Nightmares came bursting into the hall's entranceway. 
+"CONDATIS! WHAT ARE YOU DOING... In... here?" Hastur started with a snarl that quickly trailed off, his gaze going from one Condatis to the other.
+
+The stranger looked back at her and then at Hastur.
+"Oh... So this is how you handle rejection, 'dear husband'?" The woman spat the last word out like a curse, "You know, you're supposed to find someone who looks like me, not a literal copy, you perverse creature!"
+
+As the stranger poised to strike, Condatis dove in front to deflect the blow, crying out: "I am Condatis! Archangel of the Seas, and you will not harm my husband!"
+
+"Maybe you are of me, perhaps a fragment, no doubt stolen,"  said her mirror, glaring towards Hastur pointedly, "But that is not your husband; that has not been your husband for a very long time, sister of my soul. That is a traitor, and our enemy!"
+
+Condatis stood stunned as the angel's words caused a flood of suppressed memories to wash over her, like a burst dam; all the little barbed words, all the demeaning moments, and all the brutal beatings...
+Hearing this reflection say all the things she wished to say to her husband, and with all the strength and confidence she dreamt of having while saying it.
+
+A key turned, a lock is opened, Condatis turned her face towards her husband, eyes aglow with a terrible wrath.
+
+One Condatis was a battle worthy of song, two Condatis is a sick joke by The One, thought Hastur, and he immediately tore a hole in reality, diving through it to escape.</Italian>
+		<Spanish>Condatis heard the sound of waves.
+
+Not small waves, not ripples on the shoreline hissing onto the sand.
+No, this was the great crashing boom of water smashing into a lighthouse on a storm-swept isle, grand and terrible.
+
+She always heard the ocean, whether or not she was anywhere near the coast; it was always there - sometimes close, sometimes far, but ever present.
+Condatis had noticed that whenever the waves grew louder, her husband would seem to find urgent missions for her, far from the sea, and the sound of waves grew distant.
+
+Then, a change; the sound of waves began to come not from the sea, but from across the land, and as they grew louder, Hastur's missions would come more frequently and send her farther and farther away.
+But still, the sound of waves grew louder, as if they were drawn to Condatis.
+
+
+Now the waves roared in her ears; whatever it was, it had found her!
+She drew her weapon and fell into a battle stance - Whatever it was, it would not harm her beloved Hastur!
+She dove around the corner and faced... herself?
+The women stared at her with wide eyes... and then lunged with weapons drawn!
+Condatis raised her own to meet them as the sound of waves crashed around her.
+
+"You dare to take my form, dreamling!?" they said in unison.
+
+Back-and-forth blows were traded, strikes that shattered marble floors and crumbled statues, as the duo continued their frightful dance.
+
+"Too strong to be a dream! ...What are you??" Echoed the warriors.
+
+Condatis leapt over the great dining table, as it was smashed to floatsam behind her, and counter-attacked with a surging wall of water that swept everything in the stone halls away.
+
+All except this stranger, unmoved and glowering up at her.
+
+"ENOUGH!" The combined roar blew out the dining hall windows as the angels both unfurled their wings, blasting out their full radiance.
+Condatis held for a moment, but then she was swept up in the surging tide and flung into the wall behind her.
+
+Everything was cloudy as Condatis struggled to gasp air back into her lungs and regain her footing.
+When she looked up, the stranger was uncomfortably close to her face, as if to inspect a piece of craftsmanship.
+"You are a fraud," The stranger said with bemusement, "But a mere mimic would not be able to do THAT. There is something more at work here."
+
+As if on cue, Hastur the Lord of Nightmares came bursting into the hall's entranceway. 
+"CONDATIS! WHAT ARE YOU DOING... In... here?" Hastur started with a snarl that quickly trailed off, his gaze going from one Condatis to the other.
+
+The stranger looked back at her and then at Hastur.
+"Oh... So this is how you handle rejection, 'dear husband'?" The woman spat the last word out like a curse, "You know, you're supposed to find someone who looks like me, not a literal copy, you perverse creature!"
+
+As the stranger poised to strike, Condatis dove in front to deflect the blow, crying out: "I am Condatis! Archangel of the Seas, and you will not harm my husband!"
+
+"Maybe you are of me, perhaps a fragment, no doubt stolen,"  said her mirror, glaring towards Hastur pointedly, "But that is not your husband; that has not been your husband for a very long time, sister of my soul. That is a traitor, and our enemy!"
+
+Condatis stood stunned as the angel's words caused a flood of suppressed memories to wash over her, like a burst dam; all the little barbed words, all the demeaning moments, and all the brutal beatings...
+Hearing this reflection say all the things she wished to say to her husband, and with all the strength and confidence she dreamt of having while saying it.
+
+A key turned, a lock is opened, Condatis turned her face towards her husband, eyes aglow with a terrible wrath.
+
+One Condatis was a battle worthy of song, two Condatis is a sick joke by The One, thought Hastur, and he immediately tore a hole in reality, diving through it to escape.</Spanish>
 	</TEXT>
 	<TEXT> 
 		<Tag>TXT_KEY_PROMOTION_NIGHTMARE_AIFON</Tag>
@@ -1924,6 +2134,74 @@ Condatis is awake, Condatis is real! ([LINK=LEADER_DREAM_CONDATIS]Condatis, Twin
 		<German>The fragment of Condatis's soul yearns to rejoin the whole, and with a warm embrace, the sister souls merge together. (The real Condatis is empowered by [LINK=PROMOTION_MERGED_VS]Condatis as One[\LINK], and the Dream Condatis disappears)([LINK=LEADER_DREAM_CONDATIS]Condatis, Twin-Soul[\LINK], takes over leadership of the Dream Aifons)</German>
 		<Italian>The fragment of Condatis's soul yearns to rejoin the whole, and with a warm embrace, the sister souls merge together. (The real Condatis is empowered by [LINK=PROMOTION_MERGED_VS]Condatis as One[\LINK], and the Dream Condatis disappears)([LINK=LEADER_DREAM_CONDATIS]Condatis, Twin-Soul[\LINK], takes over leadership of the Dream Aifons)</Italian>
 		<Spanish>The fragment of Condatis's soul yearns to rejoin the whole, and with a warm embrace, the sister souls merge together. (The real Condatis is empowered by [LINK=PROMOTION_MERGED_VS]Condatis as One[\LINK], and the Dream Condatis disappears)([LINK=LEADER_DREAM_CONDATIS]Condatis, Twin-Soul[\LINK], takes over leadership of the Dream Aifons)</Spanish>
+	</TEXT>
+	<TEXT> 
+		<Tag>TXT_KEY_SPECIALIST_SLEEPING_AIFON</Tag>
+		<English>Sleepwalker</English>
+		<French>Sleepwalker</French>
+		<German>Sleepwalker</German>
+		<Italian>Sleepwalker</Italian>
+		<Spanish>Sleepwalker</Spanish>
+	</TEXT>
+	<TEXT> 
+		<Tag>TXT_KEY_SPECIALIST_SLEEPING_AIFON_PEDIA</Tag>
+		<English>Dreams</English>
+		<French>Dreams</French>
+		<German>Dreams</German>
+		<Italian>Dreams</Italian>
+		<Spanish>Dreams</Spanish>
+	</TEXT>
+	<TEXT> 
+		<Tag>TXT_KEY_IMPROVEMENT_AIFON_LAND</Tag>
+		<English>Haven</English>
+		<French>Haven</French>
+		<German>Haven</German>
+		<Italian>Haven</Italian>
+		<Spanish>Haven</Spanish>
+	</TEXT>
+	<TEXT> 
+		<Tag>TXT_KEY_IMPROVEMENT_AIFON_LAND_PEDIA</Tag>
+		<English>The Dreaming wants to become real, and the Little Nightmares need to become whole.
+The Dreaming needs actors to convince the denizens of Erebus into believing, and the Little Nightmares gain a form, a voice and a purpose in serving as barmaids, children, soldiers, whatever is imagined of them. 
+But while the Dreaming does these things purely out of instinct, the Little Nightmares are still thinking, feeling creatures; behind the charming barmaid's warm smile, cold malice lurks.</English>
+		<French>The Dreaming wants to become real, and the Little Nightmares need to become whole.
+The Dreaming needs actors to convince the denizens of Erebus into believing, and the Little Nightmares gain a form, a voice and a purpose in serving as barmaids, children, soldiers, whatever is imagined of them. 
+But while the Dreaming does these things purely out of instinct, the Little Nightmares are still thinking, feeling creatures; behind the charming barmaid's warm smile, cold malice lurks.</French>
+		<German>The Dreaming wants to become real, and the Little Nightmares need to become whole.
+The Dreaming needs actors to convince the denizens of Erebus into believing, and the Little Nightmares gain a form, a voice and a purpose in serving as barmaids, children, soldiers, whatever is imagined of them. 
+But while the Dreaming does these things purely out of instinct, the Little Nightmares are still thinking, feeling creatures; behind the charming barmaid's warm smile, cold malice lurks.</German>
+		<Italian>The Dreaming wants to become real, and the Little Nightmares need to become whole.
+The Dreaming needs actors to convince the denizens of Erebus into believing, and the Little Nightmares gain a form, a voice and a purpose in serving as barmaids, children, soldiers, whatever is imagined of them. 
+But while the Dreaming does these things purely out of instinct, the Little Nightmares are still thinking, feeling creatures; behind the charming barmaid's warm smile, cold malice lurks.</Italian>
+		<Spanish>The Dreaming wants to become real, and the Little Nightmares need to become whole.
+The Dreaming needs actors to convince the denizens of Erebus into believing, and the Little Nightmares gain a form, a voice and a purpose in serving as barmaids, children, soldiers, whatever is imagined of them. 
+But while the Dreaming does these things purely out of instinct, the Little Nightmares are still thinking, feeling creatures; behind the charming barmaid's warm smile, cold malice lurks.</Spanish>
+	</TEXT>
+	<TEXT> 
+		<Tag>TXT_KEY_IMPROVEMENT_FISHING_BOATS_AIFON</Tag>
+		<English>Undersea Warrens</English>
+		<French>Undersea Warrens</French>
+		<German>Undersea Warrens</German>
+		<Italian>Undersea Warrens</Italian>
+		<Spanish>Undersea Warrens</Spanish>
+	</TEXT>
+	<TEXT> 
+		<Tag>TXT_KEY_IMPROVEMENT_FISHING_BOATS_AIFON_PEDIA</Tag>
+		<English>A skittering horde ripples over the coral and barnacles, casting their gaze upwards at the sunlit world above.
+
+Alerted by the sound of an approaching vessel, the unmade retreated into the mucus-filled passages beneath the reefs, their cousins on the surface are working hard to lure newcomers onto the rocks, and it would be a shame to give the game away too soon.</English>
+		<French>A skittering horde ripples over the coral and barnacles, casting their gaze upwards at the sunlit world above.
+
+Alerted by the sound of an approaching vessel, the unmade retreated into the mucus-filled passages beneath the reefs, their cousins on the surface are working hard to lure newcomers onto the rocks, and it would be a shame to give the game away too soon.</French>
+		<German>A skittering horde ripples over the coral and barnacles, casting their gaze upwards at the sunlit world above.
+
+Alerted by the sound of an approaching vessel, the unmade retreated into the mucus-filled passages beneath the reefs, their cousins on the surface are working hard to lure newcomers onto the rocks, and it would be a shame to give the game away too soon.</German>
+		<Italian>A skittering horde ripples over the coral and barnacles, casting their gaze upwards at the sunlit world above.
+
+Alerted by the sound of an approaching vessel, the unmade retreated into the mucus-filled passages beneath the reefs, their cousins on the surface are working hard to lure newcomers onto the rocks, and it would be a shame to give the game away too soon.</Italian>
+		<Spanish>A skittering horde ripples over the coral and barnacles, casting their gaze upwards at the sunlit world above.
+
+Alerted by the sound of an approaching vessel, the unmade retreated into the mucus-filled passages beneath the reefs, their cousins on the surface are working hard to lure newcomers onto the rocks, and it would be a shame to give the game away too soon.</Spanish>
 	</TEXT>
 
 	</Civ4GameText>

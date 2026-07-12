@@ -11290,15 +11290,15 @@ A band of different colored hairs, moldy cloth, and dried blood tied together wi
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SCALED_DRAGON_CREATION</Tag>
-		<English>Surging from the depths, a shimmering dragon with eyes of blazing sapphire and teeth made of conch shells, spreads its wings like a great shoal and, with three powerful beats, rises into the mists and disappears.
+		<English>Surging from the depths, a Scaled Dragon with eyes of blazing sapphire and teeth made of conch shells, spreads its wings like a great shoal and, with three powerful beats, rises into the mists and disappears.
 A moment later, rain begins to fall.</English>
-		<French>Surging from the depths, a shimmering dragon with eyes of blazing sapphire and teeth made of conch shells, spreads its wings like a great shoal and, with three powerful beats, rises into the mists and disappears.
+		<French>Surging from the depths, a Scaled Dragon with eyes of blazing sapphire and teeth made of conch shells, spreads its wings like a great shoal and, with three powerful beats, rises into the mists and disappears.
 A moment later, rain begins to fall.</French>
-		<German>Surging from the depths, a shimmering dragon with eyes of blazing sapphire and teeth made of conch shells, spreads its wings like a great shoal and, with three powerful beats, rises into the mists and disappears.
+		<German>Surging from the depths, a Scaled Dragon with eyes of blazing sapphire and teeth made of conch shells, spreads its wings like a great shoal and, with three powerful beats, rises into the mists and disappears.
 A moment later, rain begins to fall.</German>
-		<Italian>Surging from the depths, a shimmering dragon with eyes of blazing sapphire and teeth made of conch shells, spreads its wings like a great shoal and, with three powerful beats, rises into the mists and disappears.
+		<Italian>Surging from the depths, a Scaled Dragon with eyes of blazing sapphire and teeth made of conch shells, spreads its wings like a great shoal and, with three powerful beats, rises into the mists and disappears.
 A moment later, rain begins to fall.</Italian>
-		<Spanish>Surging from the depths, a shimmering dragon with eyes of blazing sapphire and teeth made of conch shells, spreads its wings like a great shoal and, with three powerful beats, rises into the mists and disappears.
+		<Spanish>Surging from the depths, a Scaled Dragon with eyes of blazing sapphire and teeth made of conch shells, spreads its wings like a great shoal and, with three powerful beats, rises into the mists and disappears.
 A moment later, rain begins to fall.</Spanish>
 	</TEXT>
 	<TEXT>
@@ -11308,6 +11308,175 @@ A moment later, rain begins to fall.</Spanish>
 		<German>Shimmering Core</German>
 		<Italian>Shimmering Core</Italian>
 		<Spanish>Shimmering Core</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_TEAR_CORE</Tag>
+		<English>Tear Core</English>
+		<French>Tear Core</French>
+		<German>Tear Core</German>
+		<Italian>Tear Core</Italian>
+		<Spanish>Tear Core</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_SHIMMERING_HUMAN_FORM</Tag>
+		<English>Shimmering Human Form</English>
+		<French>Shimmering Human Form</French>
+		<German>Shimmering Human Form</German>
+		<Italian>Shimmering Human Form</Italian>
+		<Spanish>Shimmering Human Form</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_SHIMMERING_FORM</Tag>
+		<English>Take Mortal Form</English>
+		<French>Take Mortal Form</French>
+		<German>Take Mortal Form</German>
+		<Italian>Take Mortal Form</Italian>
+		<Spanish>Take Mortal Form</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_BLOOD_CORE</Tag>
+		<English>Blood Core</English>
+		<French>Blood Core</French>
+		<German>Blood Core</German>
+		<Italian>Blood Core</Italian>
+		<Spanish>Blood Core</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_BLOOD_DRAGON_AURA</Tag>
+		<English>Blood Tithe</English>
+		<French>Blood Tithe</French>
+		<German>Blood Tithe</German>
+		<Italian>Blood Tithe</Italian>
+		<Spanish>Blood Tithe</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_BLOOD_HUMAN_FORM</Tag>
+		<English>Bloodlord Human Form</English>
+		<French>Bloodlord Human Form</French>
+		<German>Bloodlord Human Form</German>
+		<Italian>Bloodlord Human Form</Italian>
+		<Spanish>Bloodlord Human Form</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_BLOODY_FORM</Tag>
+		<English>Take A Lordly Form</English>
+		<French>Take A Lordly Form</French>
+		<German>Take A Lordly Form</German>
+		<Italian>Take A Lordly Form</Italian>
+		<Spanish>Take A Lordly Form</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_OFFERING_OF_SACRIFICE</Tag>
+		<English>Offering of Sacrifice</English>
+		<French>Offering of Sacrifice</French>
+		<German>Offering of Sacrifice</German>
+		<Italian>Offering of Sacrifice</Italian>
+		<Spanish>Offering of Sacrifice</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_OFFERING_OF_SACRIFICE_PEDIA</Tag>
+		<English>Around him smouldered the remains of his village, his farmstead, and most of his family.
+And now it was his turn.
+
+As he sat there, trembling, with his eyes tightly shut, a voice wormed its way  into his mind.
+"Are you afraid to die?"
+"Yes!"
+"Good. Fear sours the blood, and I am fond of sour sweets."
+"Please! I have a family!"
+"YES! You DO! And you know something? There is one taste I am even more partial to than fear... Betrayal!"
+
+The farmer did not hesitate. 
+Will you?</English>
+		<French>Around him smouldered the remains of his village, his farmstead, and most of his family.
+And now it was his turn.
+
+As he sat there, trembling, with his eyes tightly shut, a voice wormed its way  into his mind.
+"Are you afraid to die?"
+"Yes!"
+"Good. Fear sours the blood, and I am fond of sour sweets."
+"Please! I have a family!"
+"YES! You DO! And you know something? There is one taste I am even more partial to than fear... Betrayal!"
+
+The farmer did not hesitate. 
+Will you?</French>
+		<German>Around him smouldered the remains of his village, his farmstead, and most of his family.
+And now it was his turn.
+
+As he sat there, trembling, with his eyes tightly shut, a voice wormed its way  into his mind.
+"Are you afraid to die?"
+"Yes!"
+"Good. Fear sours the blood, and I am fond of sour sweets."
+"Please! I have a family!"
+"YES! You DO! And you know something? There is one taste I am even more partial to than fear... Betrayal!"
+
+The farmer did not hesitate. 
+Will you?</German>
+		<Italian>Around him smouldered the remains of his village, his farmstead, and most of his family.
+And now it was his turn.
+
+As he sat there, trembling, with his eyes tightly shut, a voice wormed its way  into his mind.
+"Are you afraid to die?"
+"Yes!"
+"Good. Fear sours the blood, and I am fond of sour sweets."
+"Please! I have a family!"
+"YES! You DO! And you know something? There is one taste I am even more partial to than fear... Betrayal!"
+
+The farmer did not hesitate. 
+Will you?</Italian>
+		<Spanish>Around him smouldered the remains of his village, his farmstead, and most of his family.
+And now it was his turn.
+
+As he sat there, trembling, with his eyes tightly shut, a voice wormed its way  into his mind.
+"Are you afraid to die?"
+"Yes!"
+"Good. Fear sours the blood, and I am fond of sour sweets."
+"Please! I have a family!"
+"YES! You DO! And you know something? There is one taste I am even more partial to than fear... Betrayal!"
+
+The farmer did not hesitate. 
+Will you?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_OFFERING_OF_SACRIFICE_HELP</Tag>
+		<English>[ICON_BULLET]Requires a lv 15 unit, or a lv 10 Hero, or a unit with 8 or more animal bloods.
+[ICON_BULLET]Kills the unit in exchange for the Blood Dragon's allegiance.
+[ICON_BULLET]After gaining the Blood Dragon, other factions can still make the same offering to switch the dragon's allegiance again!</English>
+		<French>[ICON_BULLET]Requires a lv 15 unit, or a lv 10 Hero, or a unit with 8 or more animal bloods.
+[ICON_BULLET]Kills the unit in exchange for the Blood Dragon's allegiance.
+[ICON_BULLET]After gaining the Blood Dragon, other factions can still make the same offering to switch the dragon's allegiance again!</French>
+		<German>[ICON_BULLET]Requires a lv 15 unit, or a lv 10 Hero, or a unit with 8 or more animal bloods.
+[ICON_BULLET]Kills the unit in exchange for the Blood Dragon's allegiance.
+[ICON_BULLET]After gaining the Blood Dragon, other factions can still make the same offering to switch the dragon's allegiance again!</German>
+		<Italian>[ICON_BULLET]Requires a lv 15 unit, or a lv 10 Hero, or a unit with 8 or more animal bloods.
+[ICON_BULLET]Kills the unit in exchange for the Blood Dragon's allegiance.
+[ICON_BULLET]After gaining the Blood Dragon, other factions can still make the same offering to switch the dragon's allegiance again!</Italian>
+		<Spanish>[ICON_BULLET]Requires a lv 15 unit, or a lv 10 Hero, or a unit with 8 or more animal bloods.
+[ICON_BULLET]Kills the unit in exchange for the Blood Dragon's allegiance.
+[ICON_BULLET]After gaining the Blood Dragon, other factions can still make the same offering to switch the dragon's allegiance again!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_BLOOD_DRAGON_LOST</Tag>
+		<English>The Blood Dragon accepts a new sacrifice and has abandonned any former allegiance!</English>
+		<French>The Blood Dragon accepts a new sacrifice and has abandonned any former allegiance!</French>
+		<German>The Blood Dragon accepts a new sacrifice and has abandonned any former allegiance!</German>
+		<Italian>The Blood Dragon accepts a new sacrifice and has abandonned any former allegiance!</Italian>
+		<Spanish>The Blood Dragon accepts a new sacrifice and has abandonned any former allegiance!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_BLOOD_DRAGON_JOINED</Tag>
+		<English>The Blood Dragon accepts a new sacrifice and changes their allegience!</English>
+		<French>The Blood Dragon accepts a new sacrifice and changes their allegience!</French>
+		<German>The Blood Dragon accepts a new sacrifice and changes their allegience!</German>
+		<Italian>The Blood Dragon accepts a new sacrifice and changes their allegience!</Italian>
+		<Spanish>The Blood Dragon accepts a new sacrifice and changes their allegience!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_SWARM_OF_SCORPIONBATS</Tag>
+		<English>Summon Scorpion Bats</English>
+		<French>Summon Scorpion Bats</French>
+		<German>Summon Scorpion Bats</German>
+		<Italian>Summon Scorpion Bats</Italian>
+		<Spanish>Summon Scorpion Bats</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_FORM_OF_LIGHTHOUSE</Tag>
@@ -11332,6 +11501,198 @@ A moment later, rain begins to fall.</Spanish>
 		<German>A Suspicious Turtle...</German>
 		<Italian>A Suspicious Turtle...</Italian>
 		<Spanish>A Suspicious Turtle...</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SHIMMERING_DRAGON</Tag>
+		<English>Shimmering Dragon</English>
+		<French>Shimmering Dragon</French>
+		<German>Shimmering Dragon</German>
+		<Italian>Shimmering Dragon</Italian>
+		<Spanish>Shimmering Dragon</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SHIMMERING_DRAGON_PEDIA</Tag>
+		<English>Shimmering Dragons glow with a white, prismatic light, like glowing pearl. They are beautiful, elegant creatures and occasionally change to a beautiful human form. They are fast flyers, and though they are hesitant to ever attack, they are powerful fighters when they do. Instead of a breath weapon they sing, this can range from a soothing song that puts anyone who hears it asleep, to a sonic attack that will shatter glass and eardrums and crack stone. The tear of a shimmering dragon cures disease and insanity.</English>
+		<French>Shimmering Dragons glow with a white, prismatic light, like glowing pearl. They are beautiful, elegant creatures and occasionally change to a beautiful human form. They are fast flyers, and though they are hesitant to ever attack, they are powerful fighters when they do. Instead of a breath weapon they sing, this can range from a soothing song that puts anyone who hears it asleep, to a sonic attack that will shatter glass and eardrums and crack stone. The tear of a shimmering dragon cures disease and insanity.</French>
+		<German>Shimmering Dragons glow with a white, prismatic light, like glowing pearl. They are beautiful, elegant creatures and occasionally change to a beautiful human form. They are fast flyers, and though they are hesitant to ever attack, they are powerful fighters when they do. Instead of a breath weapon they sing, this can range from a soothing song that puts anyone who hears it asleep, to a sonic attack that will shatter glass and eardrums and crack stone. The tear of a shimmering dragon cures disease and insanity.</German>
+		<Italian>Shimmering Dragons glow with a white, prismatic light, like glowing pearl. They are beautiful, elegant creatures and occasionally change to a beautiful human form. They are fast flyers, and though they are hesitant to ever attack, they are powerful fighters when they do. Instead of a breath weapon they sing, this can range from a soothing song that puts anyone who hears it asleep, to a sonic attack that will shatter glass and eardrums and crack stone. The tear of a shimmering dragon cures disease and insanity.</Italian>
+		<Spanish>Shimmering Dragons glow with a white, prismatic light, like glowing pearl. They are beautiful, elegant creatures and occasionally change to a beautiful human form. They are fast flyers, and though they are hesitant to ever attack, they are powerful fighters when they do. Instead of a breath weapon they sing, this can range from a soothing song that puts anyone who hears it asleep, to a sonic attack that will shatter glass and eardrums and crack stone. The tear of a shimmering dragon cures disease and insanity.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_SHIMMERING_DRAGON_CREATION</Tag>
+		<English>Blessed wings of forgiveness, the Shimmering Dragon of Sirona, has returned to Erebus.
+This great beast walks the realms of man as one of theirs, slow to anger and quick to forgive.
+The blessing of her magic brings prosperity to the city she calls home.
+Though even the kindest dragon is still a tool of war.</English>
+		<French>Blessed wings of forgiveness, the Shimmering Dragon of Sirona, has returned to Erebus.
+This great beast walks the realms of man as one of theirs, slow to anger and quick to forgive.
+The blessing of her magic brings prosperity to the city she calls home.
+Though even the kindest dragon is still a tool of war.</French>
+		<German>Blessed wings of forgiveness, the Shimmering Dragon of Sirona, has returned to Erebus.
+This great beast walks the realms of man as one of theirs, slow to anger and quick to forgive.
+The blessing of her magic brings prosperity to the city she calls home.
+Though even the kindest dragon is still a tool of war.</German>
+		<Italian>Blessed wings of forgiveness, the Shimmering Dragon of Sirona, has returned to Erebus.
+This great beast walks the realms of man as one of theirs, slow to anger and quick to forgive.
+The blessing of her magic brings prosperity to the city she calls home.
+Though even the kindest dragon is still a tool of war.</Italian>
+		<Spanish>Blessed wings of forgiveness, the Shimmering Dragon of Sirona, has returned to Erebus.
+This great beast walks the realms of man as one of theirs, slow to anger and quick to forgive.
+The blessing of her magic brings prosperity to the city she calls home.
+Though even the kindest dragon is still a tool of war.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_EXPLORE_LAIR_SHIMMERING_DRAGON_BAD</Tag>
+		<English>Walking into a clearing, the unit encounters a woman with shining blond-and-purple hair who sits on a rock overlooking the streams, with a gleaming sword resting over one shoulder.
+
+Turning to your unit, she looks at them with a sad smile and remarks that true forgiveness is a gift nurtured over lifetimes, but in your people, she can see its virtue has been snuffed out as completely as if they were the Infernals themselves.
+For so long as your people hold to this path, she shall be the one to stop them, for their own sake.</English>
+		<French>Walking into a clearing, the unit encounters a woman with shining blond-and-purple hair who sits on a rock overlooking the streams, with a gleaming sword resting over one shoulder.
+
+Turning to your unit, she looks at them with a sad smile and remarks that true forgiveness is a gift nurtured over lifetimes, but in your people, she can see its virtue has been snuffed out as completely as if they were the Infernals themselves.
+For so long as your people hold to this path, she shall be the one to stop them, for their own sake.</French>
+		<German>Walking into a clearing, the unit encounters a woman with shining blond-and-purple hair who sits on a rock overlooking the streams, with a gleaming sword resting over one shoulder.
+
+Turning to your unit, she looks at them with a sad smile and remarks that true forgiveness is a gift nurtured over lifetimes, but in your people, she can see its virtue has been snuffed out as completely as if they were the Infernals themselves.
+For so long as your people hold to this path, she shall be the one to stop them, for their own sake.</German>
+		<Italian>Walking into a clearing, the unit encounters a woman with shining blond-and-purple hair who sits on a rock overlooking the streams, with a gleaming sword resting over one shoulder.
+
+Turning to your unit, she looks at them with a sad smile and remarks that true forgiveness is a gift nurtured over lifetimes, but in your people, she can see its virtue has been snuffed out as completely as if they were the Infernals themselves.
+For so long as your people hold to this path, she shall be the one to stop them, for their own sake.</Italian>
+		<Spanish>Walking into a clearing, the unit encounters a woman with shining blond-and-purple hair who sits on a rock overlooking the streams, with a gleaming sword resting over one shoulder.
+
+Turning to your unit, she looks at them with a sad smile and remarks that true forgiveness is a gift nurtured over lifetimes, but in your people, she can see its virtue has been snuffed out as completely as if they were the Infernals themselves.
+For so long as your people hold to this path, she shall be the one to stop them, for their own sake.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_EXPLORE_LAIR_SHIMMERING_DRAGON</Tag>
+		<English>Walking into a clearing, the unit encounters a woman with shining blond-and-purple hair who sits peacefully on a rock overlooking the streams.
+
+Turning to your unit, she welcomes them with a smile and remarks that true forgiveness is a gift nurtured over lifetimes, but in your people, she can see its virtue shining brightest of all the kingdoms.
+For so long as your people hold to her goddess, she shall be with them.</English>
+		<French>Walking into a clearing, the unit encounters a woman with shining blond-and-purple hair who sits peacefully on a rock overlooking the streams.
+
+Turning to your unit, she welcomes them with a smile and remarks that true forgiveness is a gift nurtured over lifetimes, but in your people, she can see its virtue shining brightest of all the kingdoms.
+For so long as your people hold to her goddess, she shall be with them.</French>
+		<German>Walking into a clearing, the unit encounters a woman with shining blond-and-purple hair who sits peacefully on a rock overlooking the streams.
+
+Turning to your unit, she welcomes them with a smile and remarks that true forgiveness is a gift nurtured over lifetimes, but in your people, she can see its virtue shining brightest of all the kingdoms.
+For so long as your people hold to her goddess, she shall be with them.</German>
+		<Italian>Walking into a clearing, the unit encounters a woman with shining blond-and-purple hair who sits peacefully on a rock overlooking the streams.
+
+Turning to your unit, she welcomes them with a smile and remarks that true forgiveness is a gift nurtured over lifetimes, but in your people, she can see its virtue shining brightest of all the kingdoms.
+For so long as your people hold to her goddess, she shall be with them.</Italian>
+		<Spanish>Walking into a clearing, the unit encounters a woman with shining blond-and-purple hair who sits peacefully on a rock overlooking the streams.
+
+Turning to your unit, she welcomes them with a smile and remarks that true forgiveness is a gift nurtured over lifetimes, but in your people, she can see its virtue shining brightest of all the kingdoms.
+For so long as your people hold to her goddess, she shall be with them.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BLOOD_DRAGON</Tag>
+		<English>Blood Dragon</English>
+		<French>Blood Dragon</French>
+		<German>Blood Dragon</German>
+		<Italian>Blood Dragon</Italian>
+		<Spanish>Blood Dragon</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_BLOOD_DRAGON_CREATION</Tag>
+		<English>A cursed beast of sacrifice, the Blood Dragon, has emerged on Erebus.
+Towns will be razed, cities decimated, heroes flayed and kept as trophies.
+To stave off damnation, an offering must be made: the Flesh of the Conqueror, the Bones of Heroes, or the  Blood of a Great Hunter.</English>
+		<French>A cursed beast of sacrifice, the Blood Dragon, has emerged on Erebus.
+Towns will be razed, cities decimated, heroes flayed and kept as trophies.
+To stave off damnation, an offering must be made: the Flesh of the Conqueror, the Bones of Heroes, or the  Blood of a Great Hunter.</French>
+		<German>A cursed beast of sacrifice, the Blood Dragon, has emerged on Erebus.
+Towns will be razed, cities decimated, heroes flayed and kept as trophies.
+To stave off damnation, an offering must be made: the Flesh of the Conqueror, the Bones of Heroes, or the  Blood of a Great Hunter.</German>
+		<Italian>A cursed beast of sacrifice, the Blood Dragon, has emerged on Erebus.
+Towns will be razed, cities decimated, heroes flayed and kept as trophies.
+To stave off damnation, an offering must be made: the Flesh of the Conqueror, the Bones of Heroes, or the  Blood of a Great Hunter.</Italian>
+		<Spanish>A cursed beast of sacrifice, the Blood Dragon, has emerged on Erebus.
+Towns will be razed, cities decimated, heroes flayed and kept as trophies.
+To stave off damnation, an offering must be made: the Flesh of the Conqueror, the Bones of Heroes, or the  Blood of a Great Hunter.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BLOOD_DRAGON_PEDIA</Tag>
+		<English>Also called an Altar Dragon as it prefers sacrifices. They usually have a pool of blood nearby to drink from, and if their servants don't keep it filled they will usually find themselves added to it. Blood Dragons can take human form, and usually prefer to form of a dark nobleman, always with a goblet in hand. The roar of a Blood Dragon vomits up thousands of blood covered, biting, clawing, flying and venomous creatures, a torrent of creatures that are a mix between bats and scorpions. Blood Dragons maintain a collection of perfectly preserved body parts of their victims, skin, faces, organs, all displayed in a place the dragon can admire.</English>
+		<French>Also called an Altar Dragon as it prefers sacrifices. They usually have a pool of blood nearby to drink from, and if their servants don't keep it filled they will usually find themselves added to it. Blood Dragons can take human form, and usually prefer to form of a dark nobleman, always with a goblet in hand. The roar of a Blood Dragon vomits up thousands of blood covered, biting, clawing, flying and venomous creatures, a torrent of creatures that are a mix between bats and scorpions. Blood Dragons maintain a collection of perfectly preserved body parts of their victims, skin, faces, organs, all displayed in a place the dragon can admire.</French>
+		<German>Also called an Altar Dragon as it prefers sacrifices. They usually have a pool of blood nearby to drink from, and if their servants don't keep it filled they will usually find themselves added to it. Blood Dragons can take human form, and usually prefer to form of a dark nobleman, always with a goblet in hand. The roar of a Blood Dragon vomits up thousands of blood covered, biting, clawing, flying and venomous creatures, a torrent of creatures that are a mix between bats and scorpions. Blood Dragons maintain a collection of perfectly preserved body parts of their victims, skin, faces, organs, all displayed in a place the dragon can admire.</German>
+		<Italian>Also called an Altar Dragon as it prefers sacrifices. They usually have a pool of blood nearby to drink from, and if their servants don't keep it filled they will usually find themselves added to it. Blood Dragons can take human form, and usually prefer to form of a dark nobleman, always with a goblet in hand. The roar of a Blood Dragon vomits up thousands of blood covered, biting, clawing, flying and venomous creatures, a torrent of creatures that are a mix between bats and scorpions. Blood Dragons maintain a collection of perfectly preserved body parts of their victims, skin, faces, organs, all displayed in a place the dragon can admire.</Italian>
+		<Spanish>Also called an Altar Dragon as it prefers sacrifices. They usually have a pool of blood nearby to drink from, and if their servants don't keep it filled they will usually find themselves added to it. Blood Dragons can take human form, and usually prefer to form of a dark nobleman, always with a goblet in hand. The roar of a Blood Dragon vomits up thousands of blood covered, biting, clawing, flying and venomous creatures, a torrent of creatures that are a mix between bats and scorpions. Blood Dragons maintain a collection of perfectly preserved body parts of their victims, skin, faces, organs, all displayed in a place the dragon can admire.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_EXPLORE_LAIR_BLOOD_DRAGON</Tag>
+		<English>Your unit finds an incredibly powerful magic seal converging on a metal box suspended by twenty-one pentagrams of power.
+This is far, far beyond anything they know how to deal with, and they decide against getting any closer.
+
+But as they turn to leave, a voice rumbles inside the room, inside their chest, inside their head.
+It promises power, unbelievable power, in exchange for a drop of blood.
+
+The unit, heartbeat pounding in their ears, returns to the seal and hesitently pulls a knife from their belt.
+Hands trembling, they prick their finger and watch the drop of blood fall down onto the swirling magic, going through it as if nothing was there, before landing on the metal box.
+
+The box begins to darken, and then the metal takes on a scaled texture, growing larger and larger, the box unfurls wings, claws and finally. fangs.
+
+A great and terrible dragon turns it's eye to glower down at the unit, the same rumbling voice as they had just heard in their hearts.
+
+"I promise power, I promise glory, and all I ask for. is everything!"</English>
+		<French>Your unit finds an incredibly powerful magic seal converging on a metal box suspended by twenty-one pentagrams of power.
+This is far, far beyond anything they know how to deal with, and they decide against getting any closer.
+
+But as they turn to leave, a voice rumbles inside the room, inside their chest, inside their head.
+It promises power, unbelievable power, in exchange for a drop of blood.
+
+The unit, heartbeat pounding in their ears, returns to the seal and hesitently pulls a knife from their belt.
+Hands trembling, they prick their finger and watch the drop of blood fall down onto the swirling magic, going through it as if nothing was there, before landing on the metal box.
+
+The box begins to darken, and then the metal takes on a scaled texture, growing larger and larger, the box unfurls wings, claws and finally. fangs.
+
+A great and terrible dragon turns it's eye to glower down at the unit, the same rumbling voice as they had just heard in their hearts.
+
+"I promise power, I promise glory, and all I ask for. is everything!"</French>
+		<German>Your unit finds an incredibly powerful magic seal converging on a metal box suspended by twenty-one pentagrams of power.
+This is far, far beyond anything they know how to deal with, and they decide against getting any closer.
+
+But as they turn to leave, a voice rumbles inside the room, inside their chest, inside their head.
+It promises power, unbelievable power, in exchange for a drop of blood.
+
+The unit, heartbeat pounding in their ears, returns to the seal and hesitently pulls a knife from their belt.
+Hands trembling, they prick their finger and watch the drop of blood fall down onto the swirling magic, going through it as if nothing was there, before landing on the metal box.
+
+The box begins to darken, and then the metal takes on a scaled texture, growing larger and larger, the box unfurls wings, claws and finally. fangs.
+
+A great and terrible dragon turns it's eye to glower down at the unit, the same rumbling voice as they had just heard in their hearts.
+
+"I promise power, I promise glory, and all I ask for. is everything!"</German>
+		<Italian>Your unit finds an incredibly powerful magic seal converging on a metal box suspended by twenty-one pentagrams of power.
+This is far, far beyond anything they know how to deal with, and they decide against getting any closer.
+
+But as they turn to leave, a voice rumbles inside the room, inside their chest, inside their head.
+It promises power, unbelievable power, in exchange for a drop of blood.
+
+The unit, heartbeat pounding in their ears, returns to the seal and hesitently pulls a knife from their belt.
+Hands trembling, they prick their finger and watch the drop of blood fall down onto the swirling magic, going through it as if nothing was there, before landing on the metal box.
+
+The box begins to darken, and then the metal takes on a scaled texture, growing larger and larger, the box unfurls wings, claws and finally. fangs.
+
+A great and terrible dragon turns it's eye to glower down at the unit, the same rumbling voice as they had just heard in their hearts.
+
+"I promise power, I promise glory, and all I ask for. is everything!"</Italian>
+		<Spanish>Your unit finds an incredibly powerful magic seal converging on a metal box suspended by twenty-one pentagrams of power.
+This is far, far beyond anything they know how to deal with, and they decide against getting any closer.
+
+But as they turn to leave, a voice rumbles inside the room, inside their chest, inside their head.
+It promises power, unbelievable power, in exchange for a drop of blood.
+
+The unit, heartbeat pounding in their ears, returns to the seal and hesitently pulls a knife from their belt.
+Hands trembling, they prick their finger and watch the drop of blood fall down onto the swirling magic, going through it as if nothing was there, before landing on the metal box.
+
+The box begins to darken, and then the metal takes on a scaled texture, growing larger and larger, the box unfurls wings, claws and finally. fangs.
+
+A great and terrible dragon turns it's eye to glower down at the unit, the same rumbling voice as they had just heard in their hearts.
+
+"I promise power, I promise glory, and all I ask for. is everything!"</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SEED_DRAGON</Tag>
@@ -11364,6 +11725,61 @@ A moment later, rain begins to fall.</Spanish>
 		<German>The ground in the forest is shaking. Something old has awoken.</German>
 		<Italian>The ground in the forest is shaking. Something old has awoken.</Italian>
 		<Spanish>The ground in the forest is shaking. Something old has awoken.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PIT_DRAGON</Tag>
+		<English>Pit Dragon</English>
+		<French>Pit Dragon</French>
+		<German>Pit Dragon</German>
+		<Italian>Pit Dragon</Italian>
+		<Spanish>Pit Dragon</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PIT_DRAGON_PEDIA</Tag>
+		<English>Also called a Chain Dragon, Demonic Dragon or Dragon of the Depths. These horrific creatures dwell in bottomless pits and Agares has chained a great rock to each of them that they must drag after them. They are capable of short flight even with this rock, but it requires great labor on their part. It is uncertain if Agares did this because he enjoys tormenting the powerful creatures, if they displeased him, or if it serves some other purpose.
+The dragon exudes an aura of fear that terrifies all life, even without being seen. Though it usually ignores life outside of its pit, it is drawn to suffering. A Pit Dragon's breath weapon is a dark vapor that corrodes metal, withers flesh and crumbles stone, but has no effect on the dragons chains or the great stone it is chained to. Unlike most other dragons, Pit Dragons don't collect anything.</English>
+		<French>Also called a Chain Dragon, Demonic Dragon or Dragon of the Depths. These horrific creatures dwell in bottomless pits and Agares has chained a great rock to each of them that they must drag after them. They are capable of short flight even with this rock, but it requires great labor on their part. It is uncertain if Agares did this because he enjoys tormenting the powerful creatures, if they displeased him, or if it serves some other purpose.
+The dragon exudes an aura of fear that terrifies all life, even without being seen. Though it usually ignores life outside of its pit, it is drawn to suffering. A Pit Dragon's breath weapon is a dark vapor that corrodes metal, withers flesh and crumbles stone, but has no effect on the dragons chains or the great stone it is chained to. Unlike most other dragons, Pit Dragons don't collect anything.</French>
+		<German>Also called a Chain Dragon, Demonic Dragon or Dragon of the Depths. These horrific creatures dwell in bottomless pits and Agares has chained a great rock to each of them that they must drag after them. They are capable of short flight even with this rock, but it requires great labor on their part. It is uncertain if Agares did this because he enjoys tormenting the powerful creatures, if they displeased him, or if it serves some other purpose.
+The dragon exudes an aura of fear that terrifies all life, even without being seen. Though it usually ignores life outside of its pit, it is drawn to suffering. A Pit Dragon's breath weapon is a dark vapor that corrodes metal, withers flesh and crumbles stone, but has no effect on the dragons chains or the great stone it is chained to. Unlike most other dragons, Pit Dragons don't collect anything.</German>
+		<Italian>Also called a Chain Dragon, Demonic Dragon or Dragon of the Depths. These horrific creatures dwell in bottomless pits and Agares has chained a great rock to each of them that they must drag after them. They are capable of short flight even with this rock, but it requires great labor on their part. It is uncertain if Agares did this because he enjoys tormenting the powerful creatures, if they displeased him, or if it serves some other purpose.
+The dragon exudes an aura of fear that terrifies all life, even without being seen. Though it usually ignores life outside of its pit, it is drawn to suffering. A Pit Dragon's breath weapon is a dark vapor that corrodes metal, withers flesh and crumbles stone, but has no effect on the dragons chains or the great stone it is chained to. Unlike most other dragons, Pit Dragons don't collect anything.</Italian>
+		<Spanish>Also called a Chain Dragon, Demonic Dragon or Dragon of the Depths. These horrific creatures dwell in bottomless pits and Agares has chained a great rock to each of them that they must drag after them. They are capable of short flight even with this rock, but it requires great labor on their part. It is uncertain if Agares did this because he enjoys tormenting the powerful creatures, if they displeased him, or if it serves some other purpose.
+The dragon exudes an aura of fear that terrifies all life, even without being seen. Though it usually ignores life outside of its pit, it is drawn to suffering. A Pit Dragon's breath weapon is a dark vapor that corrodes metal, withers flesh and crumbles stone, but has no effect on the dragons chains or the great stone it is chained to. Unlike most other dragons, Pit Dragons don't collect anything.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_PIT_DRAGON_CREATION</Tag>
+		<English>The sweet and sickly aroma of the growing despair in Erebus has become too tempting to resist.
+A tormented tormentor, one of the Pit Dragons of Agares, has dragged themself from the depths to sow terror and rot.</English>
+		<French>The sweet and sickly aroma of the growing despair in Erebus has become too tempting to resist.
+A tormented tormentor, one of the Pit Dragons of Agares, has dragged themself from the depths to sow terror and rot.</French>
+		<German>The sweet and sickly aroma of the growing despair in Erebus has become too tempting to resist.
+A tormented tormentor, one of the Pit Dragons of Agares, has dragged themself from the depths to sow terror and rot.</German>
+		<Italian>The sweet and sickly aroma of the growing despair in Erebus has become too tempting to resist.
+A tormented tormentor, one of the Pit Dragons of Agares, has dragged themself from the depths to sow terror and rot.</Italian>
+		<Spanish>The sweet and sickly aroma of the growing despair in Erebus has become too tempting to resist.
+A tormented tormentor, one of the Pit Dragons of Agares, has dragged themself from the depths to sow terror and rot.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_EXPLORE_LAIR_PIT_DRAGON</Tag>
+		<English>Your unit has been succumbing to the aura of misery blanketing this place, lost in memories of past and future failings.
+Unfortunately for your unit, misery loves company.</English>
+		<French>Your unit has been succumbing to the aura of misery blanketing this place, lost in memories of past and future failings.
+Unfortunately for your unit, misery loves company.</French>
+		<German>Your unit has been succumbing to the aura of misery blanketing this place, lost in memories of past and future failings.
+Unfortunately for your unit, misery loves company.</German>
+		<Italian>Your unit has been succumbing to the aura of misery blanketing this place, lost in memories of past and future failings.
+Unfortunately for your unit, misery loves company.</Italian>
+		<Spanish>Your unit has been succumbing to the aura of misery blanketing this place, lost in memories of past and future failings.
+Unfortunately for your unit, misery loves company.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_EMPTY_CORE</Tag>
+		<English>Empty Core</English>
+		<French>Empty Core</French>
+		<German>Empty Core</German>
+		<Italian>Empty Core</Italian>
+		<Spanish>Empty Core</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_KEZEF</Tag>

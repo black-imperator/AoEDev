@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!-- Formatted by Xienwolf -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Promotion Infos -->
+<Civ4PromotionInfos xmlns="x-schema:CI_CIV4UnitSchema.xml">
+	<PromotionInfos>
+		<PromotionInfo>		<!-- Orthus's Axe -->
+			<Type>PROMOTION_ORTHUSS_AXE</Type>
+			<iWorkRateModify>25</iWorkRateModify>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Stone Tools -->
+			<Type>PROMOTION_STONE_TOOLS</Type>
+			<iWorkRateModify>20</iWorkRateModify>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Obsidian Tools -->
+			<Type>PROMOTION_OBSIDIAN_TOOLS</Type>
+			<iWorkRateModify>40</iWorkRateModify>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Masterwork Tools -->
+			<Type>PROMOTION_MASTERWORK_TOOLS</Type>
+			<iWorkRateModify>60</iWorkRateModify>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Skilled I -->
+			<Type>PROMOTION_SKILLED1</Type>
+			<iWorkRateModify>20</iWorkRateModify>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Skilled II -->
+			<Type>PROMOTION_SKILLED2</Type>
+			<iWorkRateModify>20</iWorkRateModify>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Skilled III -->
+			<Type>PROMOTION_SKILLED3</Type>
+			<iWorkRateModify>20</iWorkRateModify>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Skilled IV -->
+			<Type>PROMOTION_SKILLED4</Type>
+			<iWorkRateModify>20</iWorkRateModify>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Skilled V -->
+			<Type>PROMOTION_SKILLED5</Type>
+			<iWorkRateModify>20</iWorkRateModify>
+		</PromotionInfo>
+	</PromotionInfos>
+</Civ4PromotionInfos>
