@@ -12249,7 +12249,122 @@ Their lives flashing before their eyes, the scouts are shocked and relieved when
 		<Spanish>[ICON_BULLET]changes Spell Power by %d1</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_</Tag>
+		<Tag>TXT_KEY_POPUP_CONTROL_CIVILIZATION_LAIR_SPAWN</Tag>
+		<English>This civilisation has been freed and will now take its place upon Erebus.
+Do you wish to leave your current civilisation behind and lead this one instead?</English>
+		<French>This civilisation has been freed and will now take its place upon Erebus.
+Do you wish to leave your current civilisation behind and lead this one instead?</French>
+		<German>This civilisation has been freed and will now take its place upon Erebus.
+Do you wish to leave your current civilisation behind and lead this one instead?</German>
+		<Italian>This civilisation has been freed and will now take its place upon Erebus.
+Do you wish to leave your current civilisation behind and lead this one instead?</Italian>
+		<Spanish>This civilisation has been freed and will now take its place upon Erebus.
+Do you wish to leave your current civilisation behind and lead this one instead?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_FREED_AMURITE</Tag>
+		<English>Your unit stumbled on a chamber filled with arcane symbols and a group of people standing frozen behind them.
+Approaching a pedestal, the unit pulls a lever, releasing the magical energies and freeing this group of strangers.
+
+They introduce themselves as "The Amurites".</English>
+		<French>Your unit stumbled on a chamber filled with arcane symbols and a group of people standing frozen behind them.
+Approaching a pedestal, the unit pulls a lever, releasing the magical energies and freeing this group of strangers.
+
+They introduce themselves as "The Amurites".</French>
+		<German>Your unit stumbled on a chamber filled with arcane symbols and a group of people standing frozen behind them.
+Approaching a pedestal, the unit pulls a lever, releasing the magical energies and freeing this group of strangers.
+
+They introduce themselves as "The Amurites".</German>
+		<Italian>Your unit stumbled on a chamber filled with arcane symbols and a group of people standing frozen behind them.
+Approaching a pedestal, the unit pulls a lever, releasing the magical energies and freeing this group of strangers.
+
+They introduce themselves as "The Amurites".</Italian>
+		<Spanish>Your unit stumbled on a chamber filled with arcane symbols and a group of people standing frozen behind them.
+Approaching a pedestal, the unit pulls a lever, releasing the magical energies and freeing this group of strangers.
+
+They introduce themselves as "The Amurites".</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_FREED_ARCHOS</Tag>
+		<English>Exploring in the depths, your unit stumbles through a thin layer of soil into a vast, cobwebbed cavern.
+As they scramble to their feet, they wave a torch in front of them and are greeted by the skittering roil of a thousand dog-sized spiders and, even more bizarre, a man sitting on a rock nearby.
+
+The man says the spiders are his 'friends' and they will take your unit to meet his queen.</English>
+		<French>Exploring in the depths, your unit stumbles through a thin layer of soil into a vast, cobwebbed cavern.
+As they scramble to their feet, they wave a torch in front of them and are greeted by the skittering roil of a thousand dog-sized spiders and, even more bizarre, a man sitting on a rock nearby.
+
+The man says the spiders are his 'friends' and they will take your unit to meet his queen.</French>
+		<German>Exploring in the depths, your unit stumbles through a thin layer of soil into a vast, cobwebbed cavern.
+As they scramble to their feet, they wave a torch in front of them and are greeted by the skittering roil of a thousand dog-sized spiders and, even more bizarre, a man sitting on a rock nearby.
+
+The man says the spiders are his 'friends' and they will take your unit to meet his queen.</German>
+		<Italian>Exploring in the depths, your unit stumbles through a thin layer of soil into a vast, cobwebbed cavern.
+As they scramble to their feet, they wave a torch in front of them and are greeted by the skittering roil of a thousand dog-sized spiders and, even more bizarre, a man sitting on a rock nearby.
+
+The man says the spiders are his 'friends' and they will take your unit to meet his queen.</Italian>
+		<Spanish>Exploring in the depths, your unit stumbles through a thin layer of soil into a vast, cobwebbed cavern.
+As they scramble to their feet, they wave a torch in front of them and are greeted by the skittering roil of a thousand dog-sized spiders and, even more bizarre, a man sitting on a rock nearby.
+
+The man says the spiders are his 'friends' and they will take your unit to meet his queen.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_FREED_AUSTRIN</Tag>
+		<English>Your unit finds this location is abandoned, and was just about to leave, when suddenly your unit is knocked aside by a strange woman in traveller's gear who walks briskly into the clearing, looks around, and then takes out a flag with the symbol of a black bird flying through a green sky, and plants it into the ground at her feet.
+
+"Here's good!" she exclaims before turning to face your unit
+"Ah, sorry about that! Name's Deirdra, welcome to the home of the Austrin! Care to help me with that log over there?"</English>
+		<French>Your unit finds this location is abandoned, and was just about to leave, when suddenly your unit is knocked aside by a strange woman in traveller's gear who walks briskly into the clearing, looks around, and then takes out a flag with the symbol of a black bird flying through a green sky, and plants it into the ground at her feet.
+
+"Here's good!" she exclaims before turning to face your unit
+"Ah, sorry about that! Name's Deirdra, welcome to the home of the Austrin! Care to help me with that log over there?"</French>
+		<German>Your unit finds this location is abandoned, and was just about to leave, when suddenly your unit is knocked aside by a strange woman in traveller's gear who walks briskly into the clearing, looks around, and then takes out a flag with the symbol of a black bird flying through a green sky, and plants it into the ground at her feet.
+
+"Here's good!" she exclaims before turning to face your unit
+"Ah, sorry about that! Name's Deirdra, welcome to the home of the Austrin! Care to help me with that log over there?"</German>
+		<Italian>Your unit finds this location is abandoned, and was just about to leave, when suddenly your unit is knocked aside by a strange woman in traveller's gear who walks briskly into the clearing, looks around, and then takes out a flag with the symbol of a black bird flying through a green sky, and plants it into the ground at her feet.
+
+"Here's good!" she exclaims before turning to face your unit
+"Ah, sorry about that! Name's Deirdra, welcome to the home of the Austrin! Care to help me with that log over there?"</Italian>
+		<Spanish>Your unit finds this location is abandoned, and was just about to leave, when suddenly your unit is knocked aside by a strange woman in traveller's gear who walks briskly into the clearing, looks around, and then takes out a flag with the symbol of a black bird flying through a green sky, and plants it into the ground at her feet.
+
+"Here's good!" she exclaims before turning to face your unit
+"Ah, sorry about that! Name's Deirdra, welcome to the home of the Austrin! Care to help me with that log over there?"</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_FREED_BALSERAPHS</Tag>
+		<English>Your unit comes upon the scene of a battlefield, fragments of stone men and dismembered carnival troupe members scattered over trees and rocks.
+
+A man in a rainbow frock with wild bloodshot eyes comes over to greet your unit with a handshake that almost dislocates their shoulder.
+
+"Big plans, friend! Big plans! No time to talk! Grab that beaver and follow me!"
+Looking down, your unit sees a large rodent with buck teeth and bends over to pick the creature up.</English>
+		<French>Your unit comes upon the scene of a battlefield, fragments of stone men and dismembered carnival troupe members scattered over trees and rocks.
+
+A man in a rainbow frock with wild bloodshot eyes comes over to greet your unit with a handshake that almost dislocates their shoulder.
+
+"Big plans, friend! Big plans! No time to talk! Grab that beaver and follow me!"
+Looking down, your unit sees a large rodent with buck teeth and bends over to pick the creature up.</French>
+		<German>Your unit comes upon the scene of a battlefield, fragments of stone men and dismembered carnival troupe members scattered over trees and rocks.
+
+A man in a rainbow frock with wild bloodshot eyes comes over to greet your unit with a handshake that almost dislocates their shoulder.
+
+"Big plans, friend! Big plans! No time to talk! Grab that beaver and follow me!"
+Looking down, your unit sees a large rodent with buck teeth and bends over to pick the creature up.</German>
+		<Italian>Your unit comes upon the scene of a battlefield, fragments of stone men and dismembered carnival troupe members scattered over trees and rocks.
+
+A man in a rainbow frock with wild bloodshot eyes comes over to greet your unit with a handshake that almost dislocates their shoulder.
+
+"Big plans, friend! Big plans! No time to talk! Grab that beaver and follow me!"
+Looking down, your unit sees a large rodent with buck teeth and bends over to pick the creature up.</Italian>
+		<Spanish>Your unit comes upon the scene of a battlefield, fragments of stone men and dismembered carnival troupe members scattered over trees and rocks.
+
+A man in a rainbow frock with wild bloodshot eyes comes over to greet your unit with a handshake that almost dislocates their shoulder.
+
+"Big plans, friend! Big plans! No time to talk! Grab that beaver and follow me!"
+Looking down, your unit sees a large rodent with buck teeth and bends over to pick the creature up.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_FREED_BANNOR</Tag>
 		<English></English>
 		<French></French>
 		<German></German>
@@ -12257,7 +12372,73 @@ Their lives flashing before their eyes, the scouts are shocked and relieved when
 		<Spanish></Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_</Tag>
+		<Tag>TXT_KEY_GOODY_FREED_CALABIM</Tag>
+		<English>Your unit is struck over the head while exploring the perimeter of this bandit camp.
+
+When they awake, they are bound and gagged on the silk carpet laid out on the rough dirt floor.
+Above them is a cold iron throne with dark purple upholstery, upon which sits a woman clad in black furs and a crimson gown hanging somehow spotless mere inches from the dirt floor.
+
+"They have found our headquarters; it seems my plans will have to be accelerated..
+Mahon, begin moving our forces to the nearby villages at once. We will need to assume control of the chattle before we can move forward with the rituals."
+The bandit saluted like a soldier and left the tent and your unit to its fate.</English>
+		<French>Your unit is struck over the head while exploring the perimeter of this bandit camp.
+
+When they awake, they are bound and gagged on the silk carpet laid out on the rough dirt floor.
+Above them is a cold iron throne with dark purple upholstery, upon which sits a woman clad in black furs and a crimson gown hanging somehow spotless mere inches from the dirt floor.
+
+"They have found our headquarters; it seems my plans will have to be accelerated..
+Mahon, begin moving our forces to the nearby villages at once. We will need to assume control of the chattle before we can move forward with the rituals."
+The bandit saluted like a soldier and left the tent and your unit to its fate.</French>
+		<German>Your unit is struck over the head while exploring the perimeter of this bandit camp.
+
+When they awake, they are bound and gagged on the silk carpet laid out on the rough dirt floor.
+Above them is a cold iron throne with dark purple upholstery, upon which sits a woman clad in black furs and a crimson gown hanging somehow spotless mere inches from the dirt floor.
+
+"They have found our headquarters; it seems my plans will have to be accelerated..
+Mahon, begin moving our forces to the nearby villages at once. We will need to assume control of the chattle before we can move forward with the rituals."
+The bandit saluted like a soldier and left the tent and your unit to its fate.</German>
+		<Italian>Your unit is struck over the head while exploring the perimeter of this bandit camp.
+
+When they awake, they are bound and gagged on the silk carpet laid out on the rough dirt floor.
+Above them is a cold iron throne with dark purple upholstery, upon which sits a woman clad in black furs and a crimson gown hanging somehow spotless mere inches from the dirt floor.
+
+"They have found our headquarters; it seems my plans will have to be accelerated..
+Mahon, begin moving our forces to the nearby villages at once. We will need to assume control of the chattle before we can move forward with the rituals."
+The bandit saluted like a soldier and left the tent and your unit to its fate.</Italian>
+		<Spanish>Your unit is struck over the head while exploring the perimeter of this bandit camp.
+
+When they awake, they are bound and gagged on the silk carpet laid out on the rough dirt floor.
+Above them is a cold iron throne with dark purple upholstery, upon which sits a woman clad in black furs and a crimson gown hanging somehow spotless mere inches from the dirt floor.
+
+"They have found our headquarters; it seems my plans will have to be accelerated..
+Mahon, begin moving our forces to the nearby villages at once. We will need to assume control of the chattle before we can move forward with the rituals."
+The bandit saluted like a soldier and left the tent and your unit to its fate.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_FREED_CHISLEV</Tag>
+		<English>Your unit finds a group of men and women chained up in the bowels of the goblin fort.
+On freeing them, they introduce themselves as the 'Chislev' and swear a blood oath of vengeance on the goblin foe.
+They divide themselves into seven groups and carve the symbol of their new clan into their palms.
+"By the will of Nanosuelta, we shall live for today!"</English>
+		<French>Your unit finds a group of men and women chained up in the bowels of the goblin fort.
+On freeing them, they introduce themselves as the 'Chislev' and swear a blood oath of vengeance on the goblin foe.
+They divide themselves into seven groups and carve the symbol of their new clan into their palms.
+"By the will of Nanosuelta, we shall live for today!"</French>
+		<German>Your unit finds a group of men and women chained up in the bowels of the goblin fort.
+On freeing them, they introduce themselves as the 'Chislev' and swear a blood oath of vengeance on the goblin foe.
+They divide themselves into seven groups and carve the symbol of their new clan into their palms.
+"By the will of Nanosuelta, we shall live for today!"</German>
+		<Italian>Your unit finds a group of men and women chained up in the bowels of the goblin fort.
+On freeing them, they introduce themselves as the 'Chislev' and swear a blood oath of vengeance on the goblin foe.
+They divide themselves into seven groups and carve the symbol of their new clan into their palms.
+"By the will of Nanosuelta, we shall live for today!"</Italian>
+		<Spanish>Your unit finds a group of men and women chained up in the bowels of the goblin fort.
+On freeing them, they introduce themselves as the 'Chislev' and swear a blood oath of vengeance on the goblin foe.
+They divide themselves into seven groups and carve the symbol of their new clan into their palms.
+"By the will of Nanosuelta, we shall live for today!"</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_FREED_CLAN_OF_EMBERS</Tag>
 		<English></English>
 		<French></French>
 		<German></German>
@@ -12265,12 +12446,529 @@ Their lives flashing before their eyes, the scouts are shocked and relieved when
 		<Spanish></Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_</Tag>
+		<Tag>TXT_KEY_GOODY_FREED_CUALLI</Tag>
+		<English>Your unit is captured and strung up by a group of robed lizardmen.
+Teasing the unit, the lizardmen tell them that they are to be blood offerings in the next day's ceremony of sacrifice.
+
+Your unit screams and pleads that they are diplomats of your powerful civilisation and eventually convinces the retched creatures that it would be more beneficial to let them live.
+
+The chief lizardmen's followers seem none too amused.</English>
+		<French>Your unit is captured and strung up by a group of robed lizardmen.
+Teasing the unit, the lizardmen tell them that they are to be blood offerings in the next day's ceremony of sacrifice.
+
+Your unit screams and pleads that they are diplomats of your powerful civilisation and eventually convinces the retched creatures that it would be more beneficial to let them live.
+
+The chief lizardmen's followers seem none too amused.</French>
+		<German>Your unit is captured and strung up by a group of robed lizardmen.
+Teasing the unit, the lizardmen tell them that they are to be blood offerings in the next day's ceremony of sacrifice.
+
+Your unit screams and pleads that they are diplomats of your powerful civilisation and eventually convinces the retched creatures that it would be more beneficial to let them live.
+
+The chief lizardmen's followers seem none too amused.</German>
+		<Italian>Your unit is captured and strung up by a group of robed lizardmen.
+Teasing the unit, the lizardmen tell them that they are to be blood offerings in the next day's ceremony of sacrifice.
+
+Your unit screams and pleads that they are diplomats of your powerful civilisation and eventually convinces the retched creatures that it would be more beneficial to let them live.
+
+The chief lizardmen's followers seem none too amused.</Italian>
+		<Spanish>Your unit is captured and strung up by a group of robed lizardmen.
+Teasing the unit, the lizardmen tell them that they are to be blood offerings in the next day's ceremony of sacrifice.
+
+Your unit screams and pleads that they are diplomats of your powerful civilisation and eventually convinces the retched creatures that it would be more beneficial to let them live.
+
+The chief lizardmen's followers seem none too amused.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_FREED_DOVIELLO</Tag>
+		<English>Scrounging around in the littered bones of this animal den, your unit turns around to find the inhabitants of this cave returning from the latest hunt.
+
+Not beast, but not far off. 
+Feral men, gnashing teeth and cruel laughter, make chase after your unit as they flee the den.</English>
+		<French>Scrounging around in the littered bones of this animal den, your unit turns around to find the inhabitants of this cave returning from the latest hunt.
+
+Not beast, but not far off. 
+Feral men, gnashing teeth and cruel laughter, make chase after your unit as they flee the den.</French>
+		<German>Scrounging around in the littered bones of this animal den, your unit turns around to find the inhabitants of this cave returning from the latest hunt.
+
+Not beast, but not far off. 
+Feral men, gnashing teeth and cruel laughter, make chase after your unit as they flee the den.</German>
+		<Italian>Scrounging around in the littered bones of this animal den, your unit turns around to find the inhabitants of this cave returning from the latest hunt.
+
+Not beast, but not far off. 
+Feral men, gnashing teeth and cruel laughter, make chase after your unit as they flee the den.</Italian>
+		<Spanish>Scrounging around in the littered bones of this animal den, your unit turns around to find the inhabitants of this cave returning from the latest hunt.
+
+Not beast, but not far off. 
+Feral men, gnashing teeth and cruel laughter, make chase after your unit as they flee the den.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_FREED_ELOHIM</Tag>
+		<English>Your unit is indulging in the usual pleasures of exploring deadly forgotten places: filling their pockets with all that glitters.
+Today, however, as your unit is teetering on one foot to reach out for a blackened gem, they are interupted by a voice: "Wouldn't do that, if you enjoy breathing."
+
+Standing only a few feet away, a monk had appeared.
+"This place is under our protection, so that dangers like that don't find their way into the hands of someone who can use it."
+Your unit remarks that there are more ancient sites than just this one, and the monk is very concerned to hear this.
+"It seems to me that we Elohim have been shirking our responsibilities to these other sites. Come, we shall meet the others, and you can tell us of everything you have found on your travels."</English>
+		<French>Your unit is indulging in the usual pleasures of exploring deadly forgotten places: filling their pockets with all that glitters.
+Today, however, as your unit is teetering on one foot to reach out for a blackened gem, they are interupted by a voice: "Wouldn't do that, if you enjoy breathing."
+
+Standing only a few feet away, a monk had appeared.
+"This place is under our protection, so that dangers like that don't find their way into the hands of someone who can use it."
+Your unit remarks that there are more ancient sites than just this one, and the monk is very concerned to hear this.
+"It seems to me that we Elohim have been shirking our responsibilities to these other sites. Come, we shall meet the others, and you can tell us of everything you have found on your travels."</French>
+		<German>Your unit is indulging in the usual pleasures of exploring deadly forgotten places: filling their pockets with all that glitters.
+Today, however, as your unit is teetering on one foot to reach out for a blackened gem, they are interupted by a voice: "Wouldn't do that, if you enjoy breathing."
+
+Standing only a few feet away, a monk had appeared.
+"This place is under our protection, so that dangers like that don't find their way into the hands of someone who can use it."
+Your unit remarks that there are more ancient sites than just this one, and the monk is very concerned to hear this.
+"It seems to me that we Elohim have been shirking our responsibilities to these other sites. Come, we shall meet the others, and you can tell us of everything you have found on your travels."</German>
+		<Italian>Your unit is indulging in the usual pleasures of exploring deadly forgotten places: filling their pockets with all that glitters.
+Today, however, as your unit is teetering on one foot to reach out for a blackened gem, they are interupted by a voice: "Wouldn't do that, if you enjoy breathing."
+
+Standing only a few feet away, a monk had appeared.
+"This place is under our protection, so that dangers like that don't find their way into the hands of someone who can use it."
+Your unit remarks that there are more ancient sites than just this one, and the monk is very concerned to hear this.
+"It seems to me that we Elohim have been shirking our responsibilities to these other sites. Come, we shall meet the others, and you can tell us of everything you have found on your travels."</Italian>
+		<Spanish>Your unit is indulging in the usual pleasures of exploring deadly forgotten places: filling their pockets with all that glitters.
+Today, however, as your unit is teetering on one foot to reach out for a blackened gem, they are interupted by a voice: "Wouldn't do that, if you enjoy breathing."
+
+Standing only a few feet away, a monk had appeared.
+"This place is under our protection, so that dangers like that don't find their way into the hands of someone who can use it."
+Your unit remarks that there are more ancient sites than just this one, and the monk is very concerned to hear this.
+"It seems to me that we Elohim have been shirking our responsibilities to these other sites. Come, we shall meet the others, and you can tell us of everything you have found on your travels."</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_FREED_GRIGORI</Tag>
+		<English>Your unit is stumbling around in the dark of this lair, in the daily search for treasure, when suddenly the room lights up from an approaching stranger.
+Wary, your unit takes a defensive stance and yells a challenge to the oncommer.
+
+"Ho, friend! Sorry to startle you, I was actually wanting to ask you a few questions." The man said with a smile, holding his cap in his hands. "Have you perhaps met our lordly angel and saviour, Cassiel? He has called all who will listen to join him in a new settlement, not far from here, in rejection of the old ways and pursuit of freedom!"
+
+Your unit is extremely confused and wants to know why they are preaching in a place like this.
+Offended, the man puts up his nose. "Preaching?! I'm not preaching! I'm spreading the good news! 
+Besides, I like being alive.  I fear a priest far more than any goblin!"</English>
+		<French>Your unit is stumbling around in the dark of this lair, in the daily search for treasure, when suddenly the room lights up from an approaching stranger.
+Wary, your unit takes a defensive stance and yells a challenge to the oncommer.
+
+"Ho, friend! Sorry to startle you, I was actually wanting to ask you a few questions." The man said with a smile, holding his cap in his hands. "Have you perhaps met our lordly angel and saviour, Cassiel? He has called all who will listen to join him in a new settlement, not far from here, in rejection of the old ways and pursuit of freedom!"
+
+Your unit is extremely confused and wants to know why they are preaching in a place like this.
+Offended, the man puts up his nose. "Preaching?! I'm not preaching! I'm spreading the good news! 
+Besides, I like being alive.  I fear a priest far more than any goblin!"</French>
+		<German>Your unit is stumbling around in the dark of this lair, in the daily search for treasure, when suddenly the room lights up from an approaching stranger.
+Wary, your unit takes a defensive stance and yells a challenge to the oncommer.
+
+"Ho, friend! Sorry to startle you, I was actually wanting to ask you a few questions." The man said with a smile, holding his cap in his hands. "Have you perhaps met our lordly angel and saviour, Cassiel? He has called all who will listen to join him in a new settlement, not far from here, in rejection of the old ways and pursuit of freedom!"
+
+Your unit is extremely confused and wants to know why they are preaching in a place like this.
+Offended, the man puts up his nose. "Preaching?! I'm not preaching! I'm spreading the good news! 
+Besides, I like being alive.  I fear a priest far more than any goblin!"</German>
+		<Italian>Your unit is stumbling around in the dark of this lair, in the daily search for treasure, when suddenly the room lights up from an approaching stranger.
+Wary, your unit takes a defensive stance and yells a challenge to the oncommer.
+
+"Ho, friend! Sorry to startle you, I was actually wanting to ask you a few questions." The man said with a smile, holding his cap in his hands. "Have you perhaps met our lordly angel and saviour, Cassiel? He has called all who will listen to join him in a new settlement, not far from here, in rejection of the old ways and pursuit of freedom!"
+
+Your unit is extremely confused and wants to know why they are preaching in a place like this.
+Offended, the man puts up his nose. "Preaching?! I'm not preaching! I'm spreading the good news! 
+Besides, I like being alive.  I fear a priest far more than any goblin!"</Italian>
+		<Spanish>Your unit is stumbling around in the dark of this lair, in the daily search for treasure, when suddenly the room lights up from an approaching stranger.
+Wary, your unit takes a defensive stance and yells a challenge to the oncommer.
+
+"Ho, friend! Sorry to startle you, I was actually wanting to ask you a few questions." The man said with a smile, holding his cap in his hands. "Have you perhaps met our lordly angel and saviour, Cassiel? He has called all who will listen to join him in a new settlement, not far from here, in rejection of the old ways and pursuit of freedom!"
+
+Your unit is extremely confused and wants to know why they are preaching in a place like this.
+Offended, the man puts up his nose. "Preaching?! I'm not preaching! I'm spreading the good news! 
+Besides, I like being alive.  I fear a priest far more than any goblin!"</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_FREED_HIPPUS</Tag>
+		<English>Your unit is surprised to learn that this place is not a bandit camp at all, but a clan gathering of the local horse folk, and judging by the number of banners flying, something big is happening on this day.
+
+Your unit is met with suspicion but not outright hostility as they are escorted to the main tent. As they enter, two groups of rough, armoured men and women turn to look at them.
+
+They all looked like warriors who had earned their scars, but the one standing between them was the only one whose glance made the unit salute.
+One of the warriors grinned and remarked.
+"Ah, you see that? The ink has not even dried yet, and our first contract has already found us."
+The gathered warriors laughed and cheered until the steel-eyed leader waved a hand for calm and addressed your unit:
+"Take this message to your masters, the clans of the rolling planes have unified on this day, and from this point forward, all who seek strength of arm and might of steed may petition here for a contract. 
+Now, go."</English>
+		<French>Your unit is surprised to learn that this place is not a bandit camp at all, but a clan gathering of the local horse folk, and judging by the number of banners flying, something big is happening on this day.
+
+Your unit is met with suspicion but not outright hostility as they are escorted to the main tent. As they enter, two groups of rough, armoured men and women turn to look at them.
+
+They all looked like warriors who had earned their scars, but the one standing between them was the only one whose glance made the unit salute.
+One of the warriors grinned and remarked.
+"Ah, you see that? The ink has not even dried yet, and our first contract has already found us."
+The gathered warriors laughed and cheered until the steel-eyed leader waved a hand for calm and addressed your unit:
+"Take this message to your masters, the clans of the rolling planes have unified on this day, and from this point forward, all who seek strength of arm and might of steed may petition here for a contract. 
+Now, go."</French>
+		<German>Your unit is surprised to learn that this place is not a bandit camp at all, but a clan gathering of the local horse folk, and judging by the number of banners flying, something big is happening on this day.
+
+Your unit is met with suspicion but not outright hostility as they are escorted to the main tent. As they enter, two groups of rough, armoured men and women turn to look at them.
+
+They all looked like warriors who had earned their scars, but the one standing between them was the only one whose glance made the unit salute.
+One of the warriors grinned and remarked.
+"Ah, you see that? The ink has not even dried yet, and our first contract has already found us."
+The gathered warriors laughed and cheered until the steel-eyed leader waved a hand for calm and addressed your unit:
+"Take this message to your masters, the clans of the rolling planes have unified on this day, and from this point forward, all who seek strength of arm and might of steed may petition here for a contract. 
+Now, go."</German>
+		<Italian>Your unit is surprised to learn that this place is not a bandit camp at all, but a clan gathering of the local horse folk, and judging by the number of banners flying, something big is happening on this day.
+
+Your unit is met with suspicion but not outright hostility as they are escorted to the main tent. As they enter, two groups of rough, armoured men and women turn to look at them.
+
+They all looked like warriors who had earned their scars, but the one standing between them was the only one whose glance made the unit salute.
+One of the warriors grinned and remarked.
+"Ah, you see that? The ink has not even dried yet, and our first contract has already found us."
+The gathered warriors laughed and cheered until the steel-eyed leader waved a hand for calm and addressed your unit:
+"Take this message to your masters, the clans of the rolling planes have unified on this day, and from this point forward, all who seek strength of arm and might of steed may petition here for a contract. 
+Now, go."</Italian>
+		<Spanish>Your unit is surprised to learn that this place is not a bandit camp at all, but a clan gathering of the local horse folk, and judging by the number of banners flying, something big is happening on this day.
+
+Your unit is met with suspicion but not outright hostility as they are escorted to the main tent. As they enter, two groups of rough, armoured men and women turn to look at them.
+
+They all looked like warriors who had earned their scars, but the one standing between them was the only one whose glance made the unit salute.
+One of the warriors grinned and remarked.
+"Ah, you see that? The ink has not even dried yet, and our first contract has already found us."
+The gathered warriors laughed and cheered until the steel-eyed leader waved a hand for calm and addressed your unit:
+"Take this message to your masters, the clans of the rolling planes have unified on this day, and from this point forward, all who seek strength of arm and might of steed may petition here for a contract. 
+Now, go."</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_FREED_ILLIANS</Tag>
+		<English>After driving off a band of feral frostlings, your unit finds a group of humans standing still in their crudely constructed cages, unfazed by the biting cold air from the surrounding tundra.
+
+As they begin to open the prisoner cages, a tall, armoured man with piercing blue eyes approaches them and says they have done well today and will be rewarded when the great winter returns.
+
+With a sense of dread, this unit wonders if they may have just made a huge mistake.</English>
+		<French>After driving off a band of feral frostlings, your unit finds a group of humans standing still in their crudely constructed cages, unfazed by the biting cold air from the surrounding tundra.
+
+As they begin to open the prisoner cages, a tall, armoured man with piercing blue eyes approaches them and says they have done well today and will be rewarded when the great winter returns.
+
+With a sense of dread, this unit wonders if they may have just made a huge mistake.</French>
+		<German>After driving off a band of feral frostlings, your unit finds a group of humans standing still in their crudely constructed cages, unfazed by the biting cold air from the surrounding tundra.
+
+As they begin to open the prisoner cages, a tall, armoured man with piercing blue eyes approaches them and says they have done well today and will be rewarded when the great winter returns.
+
+With a sense of dread, this unit wonders if they may have just made a huge mistake.</German>
+		<Italian>After driving off a band of feral frostlings, your unit finds a group of humans standing still in their crudely constructed cages, unfazed by the biting cold air from the surrounding tundra.
+
+As they begin to open the prisoner cages, a tall, armoured man with piercing blue eyes approaches them and says they have done well today and will be rewarded when the great winter returns.
+
+With a sense of dread, this unit wonders if they may have just made a huge mistake.</Italian>
+		<Spanish>After driving off a band of feral frostlings, your unit finds a group of humans standing still in their crudely constructed cages, unfazed by the biting cold air from the surrounding tundra.
+
+As they begin to open the prisoner cages, a tall, armoured man with piercing blue eyes approaches them and says they have done well today and will be rewarded when the great winter returns.
+
+With a sense of dread, this unit wonders if they may have just made a huge mistake.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_FREED_KHAZAD</Tag>
+		<English>Your unit is exploring the deepest depths of this dungeon when suddenly the wall to their side buckles and then collapses. As the dust settles, there are multiple beams of what seem to be candlelight shining, and multiple persons seem to be in an argument.
+"I said TAP it with your pick, TAP."
+"I did tap it; the rock was flimsy."
+"Most would say you don't need an overhead swing to tap."
+"Oh, shut up, Belfus, or I'll pull your beard off!"
+"Enough of this grumbleswill. Grogni, check the tunnel for gas."
+"There's someone in there!"
+As your unit is backing away, seven heads poke through the new dungeon window and glare at your unit.
+"Ah, Kilmorphs lower beard, did we hit the surface?? Arturus is going to go berserk.."
+"No point crying over cracked geodes; grab the surface thing and let's find out what they know."
+
+</English>
+		<French>Your unit is exploring the deepest depths of this dungeon when suddenly the wall to their side buckles and then collapses. As the dust settles, there are multiple beams of what seem to be candlelight shining, and multiple persons seem to be in an argument.
+"I said TAP it with your pick, TAP."
+"I did tap it; the rock was flimsy."
+"Most would say you don't need an overhead swing to tap."
+"Oh, shut up, Belfus, or I'll pull your beard off!"
+"Enough of this grumbleswill. Grogni, check the tunnel for gas."
+"There's someone in there!"
+As your unit is backing away, seven heads poke through the new dungeon window and glare at your unit.
+"Ah, Kilmorphs lower beard, did we hit the surface?? Arturus is going to go berserk.."
+"No point crying over cracked geodes; grab the surface thing and let's find out what they know."
+
+</French>
+		<German>Your unit is exploring the deepest depths of this dungeon when suddenly the wall to their side buckles and then collapses. As the dust settles, there are multiple beams of what seem to be candlelight shining, and multiple persons seem to be in an argument.
+"I said TAP it with your pick, TAP."
+"I did tap it; the rock was flimsy."
+"Most would say you don't need an overhead swing to tap."
+"Oh, shut up, Belfus, or I'll pull your beard off!"
+"Enough of this grumbleswill. Grogni, check the tunnel for gas."
+"There's someone in there!"
+As your unit is backing away, seven heads poke through the new dungeon window and glare at your unit.
+"Ah, Kilmorphs lower beard, did we hit the surface?? Arturus is going to go berserk.."
+"No point crying over cracked geodes; grab the surface thing and let's find out what they know."
+
+</German>
+		<Italian>Your unit is exploring the deepest depths of this dungeon when suddenly the wall to their side buckles and then collapses. As the dust settles, there are multiple beams of what seem to be candlelight shining, and multiple persons seem to be in an argument.
+"I said TAP it with your pick, TAP."
+"I did tap it; the rock was flimsy."
+"Most would say you don't need an overhead swing to tap."
+"Oh, shut up, Belfus, or I'll pull your beard off!"
+"Enough of this grumbleswill. Grogni, check the tunnel for gas."
+"There's someone in there!"
+As your unit is backing away, seven heads poke through the new dungeon window and glare at your unit.
+"Ah, Kilmorphs lower beard, did we hit the surface?? Arturus is going to go berserk.."
+"No point crying over cracked geodes; grab the surface thing and let's find out what they know."
+
+</Italian>
+		<Spanish>Your unit is exploring the deepest depths of this dungeon when suddenly the wall to their side buckles and then collapses. As the dust settles, there are multiple beams of what seem to be candlelight shining, and multiple persons seem to be in an argument.
+"I said TAP it with your pick, TAP."
+"I did tap it; the rock was flimsy."
+"Most would say you don't need an overhead swing to tap."
+"Oh, shut up, Belfus, or I'll pull your beard off!"
+"Enough of this grumbleswill. Grogni, check the tunnel for gas."
+"There's someone in there!"
+As your unit is backing away, seven heads poke through the new dungeon window and glare at your unit.
+"Ah, Kilmorphs lower beard, did we hit the surface?? Arturus is going to go berserk.."
+"No point crying over cracked geodes; grab the surface thing and let's find out what they know."
+
+</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_FREED_KURIOTATES</Tag>
+		<English>As your unit approaches the centaur camp, they notice that the tents and poles have been decorated with an emblem of a golden dragon set against a royal purple backdrop.
+Instead of being attacked, the centaurs greet your unit with an arm over chest salute and bid them follow to the main pavilion.
+
+Inside, expecting a centaur chieftain, they are taken aback to discover the leader of this band is a young boy in a golden robe.
+The encounter is amenable, and the unit is unharmed, but all the same, your unit is rushing back to report as fast as their legs can carry them.
+Something about that boy just screams doom...</English>
+		<French>As your unit approaches the centaur camp, they notice that the tents and poles have been decorated with an emblem of a golden dragon set against a royal purple backdrop.
+Instead of being attacked, the centaurs greet your unit with an arm over chest salute and bid them follow to the main pavilion.
+
+Inside, expecting a centaur chieftain, they are taken aback to discover the leader of this band is a young boy in a golden robe.
+The encounter is amenable, and the unit is unharmed, but all the same, your unit is rushing back to report as fast as their legs can carry them.
+Something about that boy just screams doom...</French>
+		<German>As your unit approaches the centaur camp, they notice that the tents and poles have been decorated with an emblem of a golden dragon set against a royal purple backdrop.
+Instead of being attacked, the centaurs greet your unit with an arm over chest salute and bid them follow to the main pavilion.
+
+Inside, expecting a centaur chieftain, they are taken aback to discover the leader of this band is a young boy in a golden robe.
+The encounter is amenable, and the unit is unharmed, but all the same, your unit is rushing back to report as fast as their legs can carry them.
+Something about that boy just screams doom...</German>
+		<Italian>As your unit approaches the centaur camp, they notice that the tents and poles have been decorated with an emblem of a golden dragon set against a royal purple backdrop.
+Instead of being attacked, the centaurs greet your unit with an arm over chest salute and bid them follow to the main pavilion.
+
+Inside, expecting a centaur chieftain, they are taken aback to discover the leader of this band is a young boy in a golden robe.
+The encounter is amenable, and the unit is unharmed, but all the same, your unit is rushing back to report as fast as their legs can carry them.
+Something about that boy just screams doom...</Italian>
+		<Spanish>As your unit approaches the centaur camp, they notice that the tents and poles have been decorated with an emblem of a golden dragon set against a royal purple backdrop.
+Instead of being attacked, the centaurs greet your unit with an arm over chest salute and bid them follow to the main pavilion.
+
+Inside, expecting a centaur chieftain, they are taken aback to discover the leader of this band is a young boy in a golden robe.
+The encounter is amenable, and the unit is unharmed, but all the same, your unit is rushing back to report as fast as their legs can carry them.
+Something about that boy just screams doom...</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_FREED_LANUN</Tag>
+		<English>Your unit and the rest of the crew are exploring this dank dwelling when suddenly a man in a tricorne hat is standing next to them, pistol out, and hammer cocked. 
+"Terribly sorry about this, but you see, our ship ran aground, and we are in need of a new vessel. 
+So, if you would please drop your weapons, your belt and your valuables, in that order." The Pirate said with a slight drunken wobble.
+"Oh, and you are surrounded. Cheers!"</English>
+		<French>Your unit and the rest of the crew are exploring this dank dwelling when suddenly a man in a tricorne hat is standing next to them, pistol out, and hammer cocked. 
+"Terribly sorry about this, but you see, our ship ran aground, and we are in need of a new vessel. 
+So, if you would please drop your weapons, your belt and your valuables, in that order." The Pirate said with a slight drunken wobble.
+"Oh, and you are surrounded. Cheers!"</French>
+		<German>Your unit and the rest of the crew are exploring this dank dwelling when suddenly a man in a tricorne hat is standing next to them, pistol out, and hammer cocked. 
+"Terribly sorry about this, but you see, our ship ran aground, and we are in need of a new vessel. 
+So, if you would please drop your weapons, your belt and your valuables, in that order." The Pirate said with a slight drunken wobble.
+"Oh, and you are surrounded. Cheers!"</German>
+		<Italian>Your unit and the rest of the crew are exploring this dank dwelling when suddenly a man in a tricorne hat is standing next to them, pistol out, and hammer cocked. 
+"Terribly sorry about this, but you see, our ship ran aground, and we are in need of a new vessel. 
+So, if you would please drop your weapons, your belt and your valuables, in that order." The Pirate said with a slight drunken wobble.
+"Oh, and you are surrounded. Cheers!"</Italian>
+		<Spanish>Your unit and the rest of the crew are exploring this dank dwelling when suddenly a man in a tricorne hat is standing next to them, pistol out, and hammer cocked. 
+"Terribly sorry about this, but you see, our ship ran aground, and we are in need of a new vessel. 
+So, if you would please drop your weapons, your belt and your valuables, in that order." The Pirate said with a slight drunken wobble.
+"Oh, and you are surrounded. Cheers!"</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_FREED_LEGION</Tag>
+		<English>Your unit is exploring the dank dark depths of this wretched place when the ground starts to rumble.
+The rumbling grows and grows, and your unit takes shelter behind a pillar.
+A shambling line of skeletons emerges from the farthest tunnel and streams past your unit's hiding spot and heads towards the surface.
+The rumbling only grows as the line keeps moving forward, and the sheer scale of the horde starts to dawn on your unit; they don't know how long they will be stuck hiding here.</English>
+		<French>Your unit is exploring the dank dark depths of this wretched place when the ground starts to rumble.
+The rumbling grows and grows, and your unit takes shelter behind a pillar.
+A shambling line of skeletons emerges from the farthest tunnel and streams past your unit's hiding spot and heads towards the surface.
+The rumbling only grows as the line keeps moving forward, and the sheer scale of the horde starts to dawn on your unit; they don't know how long they will be stuck hiding here.</French>
+		<German>Your unit is exploring the dank dark depths of this wretched place when the ground starts to rumble.
+The rumbling grows and grows, and your unit takes shelter behind a pillar.
+A shambling line of skeletons emerges from the farthest tunnel and streams past your unit's hiding spot and heads towards the surface.
+The rumbling only grows as the line keeps moving forward, and the sheer scale of the horde starts to dawn on your unit; they don't know how long they will be stuck hiding here.</German>
+		<Italian>Your unit is exploring the dank dark depths of this wretched place when the ground starts to rumble.
+The rumbling grows and grows, and your unit takes shelter behind a pillar.
+A shambling line of skeletons emerges from the farthest tunnel and streams past your unit's hiding spot and heads towards the surface.
+The rumbling only grows as the line keeps moving forward, and the sheer scale of the horde starts to dawn on your unit; they don't know how long they will be stuck hiding here.</Italian>
+		<Spanish>Your unit is exploring the dank dark depths of this wretched place when the ground starts to rumble.
+The rumbling grows and grows, and your unit takes shelter behind a pillar.
+A shambling line of skeletons emerges from the farthest tunnel and streams past your unit's hiding spot and heads towards the surface.
+The rumbling only grows as the line keeps moving forward, and the sheer scale of the horde starts to dawn on your unit; they don't know how long they will be stuck hiding here.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_FREED_LJOSALFER</Tag>
+		<English>Your unit is wandering in a forest, completely lost as every tree looks the same, with an otherworldly perfection to them.
+Turning the corner, your unit is surprised to find they are now standing in the middle of a village, hewn into the trees themselves.
+Your unit is even more surprised to realise there are twenty knocked arrows pointed at their head.</English>
+		<French>Your unit is wandering in a forest, completely lost as every tree looks the same, with an otherworldly perfection to them.
+Turning the corner, your unit is surprised to find they are now standing in the middle of a village, hewn into the trees themselves.
+Your unit is even more surprised to realise there are twenty knocked arrows pointed at their head.</French>
+		<German>Your unit is wandering in a forest, completely lost as every tree looks the same, with an otherworldly perfection to them.
+Turning the corner, your unit is surprised to find they are now standing in the middle of a village, hewn into the trees themselves.
+Your unit is even more surprised to realise there are twenty knocked arrows pointed at their head.</German>
+		<Italian>Your unit is wandering in a forest, completely lost as every tree looks the same, with an otherworldly perfection to them.
+Turning the corner, your unit is surprised to find they are now standing in the middle of a village, hewn into the trees themselves.
+Your unit is even more surprised to realise there are twenty knocked arrows pointed at their head.</Italian>
+		<Spanish>Your unit is wandering in a forest, completely lost as every tree looks the same, with an otherworldly perfection to them.
+Turning the corner, your unit is surprised to find they are now standing in the middle of a village, hewn into the trees themselves.
+Your unit is even more surprised to realise there are twenty knocked arrows pointed at their head.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_FREED_LUCHUIRP</Tag>
+		<English>As your unit is exploring the depths, the walls of the dungeon begin to tremble and shake.
+As the rumble builds to a scream, great arms of stone and clay smash through the far wall and begin diligently excavating the new entryway.
+The figures appear as men, though nearly as tall as a lowland giant, with no facial features.
+Your unit realises these are automatons, and standing amongst them is a smaller figure with an air of authority.
+Seeing you, the figure hails a greeting and comes marching over, with two stone golems in tow.
+"Ho, friend! Careful where you stand; these golems have orders to clear the passageway, so try not to look like an obstacle!"
+Your unit shuffles to the side as the dwarf continues:
+"Tell me, have we reached the surface?"
+Your unit stammers that they are still deep underground.
+"Blast, well, give me a moment; I must make adjustments."
+With a whistle and a sharp hand gesture, the dwarf begins speaking in what sounds like an unknown language, though your unit can pick out the repeated phrases "dash" and "dot".
+The golems stop what they are doing and begin digging in a new direction, straight up.</English>
+		<French>As your unit is exploring the depths, the walls of the dungeon begin to tremble and shake.
+As the rumble builds to a scream, great arms of stone and clay smash through the far wall and begin diligently excavating the new entryway.
+The figures appear as men, though nearly as tall as a lowland giant, with no facial features.
+Your unit realises these are automatons, and standing amongst them is a smaller figure with an air of authority.
+Seeing you, the figure hails a greeting and comes marching over, with two stone golems in tow.
+"Ho, friend! Careful where you stand; these golems have orders to clear the passageway, so try not to look like an obstacle!"
+Your unit shuffles to the side as the dwarf continues:
+"Tell me, have we reached the surface?"
+Your unit stammers that they are still deep underground.
+"Blast, well, give me a moment; I must make adjustments."
+With a whistle and a sharp hand gesture, the dwarf begins speaking in what sounds like an unknown language, though your unit can pick out the repeated phrases "dash" and "dot".
+The golems stop what they are doing and begin digging in a new direction, straight up.</French>
+		<German>As your unit is exploring the depths, the walls of the dungeon begin to tremble and shake.
+As the rumble builds to a scream, great arms of stone and clay smash through the far wall and begin diligently excavating the new entryway.
+The figures appear as men, though nearly as tall as a lowland giant, with no facial features.
+Your unit realises these are automatons, and standing amongst them is a smaller figure with an air of authority.
+Seeing you, the figure hails a greeting and comes marching over, with two stone golems in tow.
+"Ho, friend! Careful where you stand; these golems have orders to clear the passageway, so try not to look like an obstacle!"
+Your unit shuffles to the side as the dwarf continues:
+"Tell me, have we reached the surface?"
+Your unit stammers that they are still deep underground.
+"Blast, well, give me a moment; I must make adjustments."
+With a whistle and a sharp hand gesture, the dwarf begins speaking in what sounds like an unknown language, though your unit can pick out the repeated phrases "dash" and "dot".
+The golems stop what they are doing and begin digging in a new direction, straight up.</German>
+		<Italian>As your unit is exploring the depths, the walls of the dungeon begin to tremble and shake.
+As the rumble builds to a scream, great arms of stone and clay smash through the far wall and begin diligently excavating the new entryway.
+The figures appear as men, though nearly as tall as a lowland giant, with no facial features.
+Your unit realises these are automatons, and standing amongst them is a smaller figure with an air of authority.
+Seeing you, the figure hails a greeting and comes marching over, with two stone golems in tow.
+"Ho, friend! Careful where you stand; these golems have orders to clear the passageway, so try not to look like an obstacle!"
+Your unit shuffles to the side as the dwarf continues:
+"Tell me, have we reached the surface?"
+Your unit stammers that they are still deep underground.
+"Blast, well, give me a moment; I must make adjustments."
+With a whistle and a sharp hand gesture, the dwarf begins speaking in what sounds like an unknown language, though your unit can pick out the repeated phrases "dash" and "dot".
+The golems stop what they are doing and begin digging in a new direction, straight up.</Italian>
+		<Spanish>As your unit is exploring the depths, the walls of the dungeon begin to tremble and shake.
+As the rumble builds to a scream, great arms of stone and clay smash through the far wall and begin diligently excavating the new entryway.
+The figures appear as men, though nearly as tall as a lowland giant, with no facial features.
+Your unit realises these are automatons, and standing amongst them is a smaller figure with an air of authority.
+Seeing you, the figure hails a greeting and comes marching over, with two stone golems in tow.
+"Ho, friend! Careful where you stand; these golems have orders to clear the passageway, so try not to look like an obstacle!"
+Your unit shuffles to the side as the dwarf continues:
+"Tell me, have we reached the surface?"
+Your unit stammers that they are still deep underground.
+"Blast, well, give me a moment; I must make adjustments."
+With a whistle and a sharp hand gesture, the dwarf begins speaking in what sounds like an unknown language, though your unit can pick out the repeated phrases "dash" and "dot".
+The golems stop what they are doing and begin digging in a new direction, straight up.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_FREED_MALAKIM</Tag>
 		<English></English>
 		<French></French>
 		<German></German>
 		<Italian></Italian>
 		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_FREED_MAZATL</Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_FREED_MECHANOS</Tag>
+		<English>As your unit approaches the Clockwork City, a mild surprise flares up from within as they discover an encampment right beside it. Upon arrival, the surprise becomes overt: various people hard at work, masses of papers being organized and even written on... it feels like an organized expedition more than a mere camp.
+
+And they are noticed instantly - a woman equipped for engineering work approaches them, her status apparent by the two guards flanking her. "If you are not slaves to the Gods, you are welcome to study this wonder beside us. We call ourselves the Mechanos. And we herald a new era, free of their grasp."</English>
+		<French>As your unit approaches the Clockwork City, a mild surprise flares up from within as they discover an encampment right beside it. Upon arrival, the surprise becomes overt: various people hard at work, masses of papers being organized and even written on... it feels like an organized expedition more than a mere camp.
+
+And they are noticed instantly - a woman equipped for engineering work approaches them, her status apparent by the two guards flanking her. "If you are not slaves to the Gods, you are welcome to study this wonder beside us. We call ourselves the Mechanos. And we herald a new era, free of their grasp."</French>
+		<German>As your unit approaches the Clockwork City, a mild surprise flares up from within as they discover an encampment right beside it. Upon arrival, the surprise becomes overt: various people hard at work, masses of papers being organized and even written on... it feels like an organized expedition more than a mere camp.
+
+And they are noticed instantly - a woman equipped for engineering work approaches them, her status apparent by the two guards flanking her. "If you are not slaves to the Gods, you are welcome to study this wonder beside us. We call ourselves the Mechanos. And we herald a new era, free of their grasp."</German>
+		<Italian>As your unit approaches the Clockwork City, a mild surprise flares up from within as they discover an encampment right beside it. Upon arrival, the surprise becomes overt: various people hard at work, masses of papers being organized and even written on... it feels like an organized expedition more than a mere camp.
+
+And they are noticed instantly - a woman equipped for engineering work approaches them, her status apparent by the two guards flanking her. "If you are not slaves to the Gods, you are welcome to study this wonder beside us. We call ourselves the Mechanos. And we herald a new era, free of their grasp."</Italian>
+		<Spanish>As your unit approaches the Clockwork City, a mild surprise flares up from within as they discover an encampment right beside it. Upon arrival, the surprise becomes overt: various people hard at work, masses of papers being organized and even written on... it feels like an organized expedition more than a mere camp.
+
+And they are noticed instantly - a woman equipped for engineering work approaches them, her status apparent by the two guards flanking her. "If you are not slaves to the Gods, you are welcome to study this wonder beside us. We call ourselves the Mechanos. And we herald a new era, free of their grasp."</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_FREED_MEKARA</Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_FREED_SCIONS_OF_PATRIA</Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_FREED_SHEAIM</Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_FREED_SIDAR</Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_FREED_SVARTALFER</Tag>
+		<English>Your unit is wandering in a forest, completely lost as every tree looks the same, with an otherworldly perfection to them.
+Turning the corner, your unit is surprised to find they are now standing in the middle of a village, hewn into the trees themselves.
+Your unit is even more surprised to realise there are two figures standing beside them, holding their arms pinned and pressing a dagger against their ribs.</English>
+		<French>Your unit is wandering in a forest, completely lost as every tree looks the same, with an otherworldly perfection to them.
+Turning the corner, your unit is surprised to find they are now standing in the middle of a village, hewn into the trees themselves.
+Your unit is even more surprised to realise there are two figures standing beside them, holding their arms pinned and pressing a dagger against their ribs.</French>
+		<German>Your unit is wandering in a forest, completely lost as every tree looks the same, with an otherworldly perfection to them.
+Turning the corner, your unit is surprised to find they are now standing in the middle of a village, hewn into the trees themselves.
+Your unit is even more surprised to realise there are two figures standing beside them, holding their arms pinned and pressing a dagger against their ribs.</German>
+		<Italian>Your unit is wandering in a forest, completely lost as every tree looks the same, with an otherworldly perfection to them.
+Turning the corner, your unit is surprised to find they are now standing in the middle of a village, hewn into the trees themselves.
+Your unit is even more surprised to realise there are two figures standing beside them, holding their arms pinned and pressing a dagger against their ribs.</Italian>
+		<Spanish>Your unit is wandering in a forest, completely lost as every tree looks the same, with an otherworldly perfection to them.
+Turning the corner, your unit is surprised to find they are now standing in the middle of a village, hewn into the trees themselves.
+Your unit is even more surprised to realise there are two figures standing beside them, holding their arms pinned and pressing a dagger against their ribs.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_</Tag>
