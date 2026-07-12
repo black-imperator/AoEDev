@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Soren Johnson (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Specialist -->
+<Civ4SpecialistInfos xmlns="x-schema:AOSNISIRA_CIV4GameInfoSchema.xml">
+	<SpecialistInfos>
+        <SpecialistInfo> <!-- Slave - Doll-->
+			<Type>SPECIALIST_FAIRY_DOLL</Type>
+			<SpecialistClass>SPECIALISTCLASS_SLAVE</SpecialistClass>
+			<Description>TXT_KEY_SPECIALIST_FAIRY_DOLL</Description>
+			<Civilopedia>TXT_KEY_CONCEPT_SPECIALISTS_PEDIA</Civilopedia>
+			<Texture>Art/Civs/CivSpecialists/Human/Citizen.dds</Texture>
+			<bVisible>1</bVisible>
+			<Commerces>
+				<iCommerce>2</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+			</Commerces>
+			<Button>Art/Civs/CivSpecialists/Human/Citizen.dds</Button>
+		</SpecialistInfo>
+    </SpecialistInfos>
+</Civ4SpecialistInfos>

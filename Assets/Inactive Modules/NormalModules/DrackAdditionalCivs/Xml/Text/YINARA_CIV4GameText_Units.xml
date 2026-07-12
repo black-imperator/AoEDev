@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Risna -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_ARCHMAGE_YINARA</Tag>
+        <English>Hachibi</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_ARCHMAGE_PEDIA_YINARA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_MAGE_YINARA</Tag>
+        <English>Miketsu</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_ADEPT_YINARA</Tag>
+        <English>Miko</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_YINARA_ASHIGARU</Tag>
+        <English>Ashigaru</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_YINARA_ASHIGARU_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_YINARA_YAKUMO</Tag>
+        <English>Yakumo</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_YINARA_YAKUMO_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_YINARA_JINRAI</Tag>
+        <English>Jinrai no Kiba</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_YINARA_JINRAI_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_YINARA_YAMI</Tag>
+        <English>Yami no Tsume</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_YINARA_YAMI_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_YINARA_HANA</Tag>
+        <English>Hana no Yume</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_YINARA_HANA_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+</Civ4GameText>

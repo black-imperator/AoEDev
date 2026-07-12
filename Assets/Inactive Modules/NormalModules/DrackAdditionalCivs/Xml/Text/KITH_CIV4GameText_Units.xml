@@ -92,4 +92,8 @@
         <Tag>TXT_KEY_UNIT_KITH_CANNON_STRATEGY</Tag>
         <English>Todo</English>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_KITH_SETTLER</Tag>
+        <English>Landbuend</English>
+    </TEXT>
 </Civ4GameText>

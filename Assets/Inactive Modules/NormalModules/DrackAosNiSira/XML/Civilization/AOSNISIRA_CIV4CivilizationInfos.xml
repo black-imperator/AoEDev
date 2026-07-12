@@ -1142,6 +1142,12 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 			</Units>
+			<Specialists>
+				<Specialist>
+					<SpecialistClassType>SPECIALISTCLASS_SLAVE</SpecialistClassType>
+					<SpecialistType>SPECIALIST_FAIRY_DOLL</SpecialistType>
+				</Specialist>
+			</Specialists>
 			<Improvements>
 			</Improvements>
 			<FreeUnitClasses>

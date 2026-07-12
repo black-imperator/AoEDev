@@ -201,9 +201,9 @@ The Fairies of Misrak learned about how to pull out the soul of others and how t
 Complexity: Advanced
 Come, let me give you a hug. I am sure your soul tastes wonderful!
 
-The Court of Misrak are Soul-Consuming Fairies that do not require food. They focus around Slaves, Souls as a currency and strong rogue units.. They are a Court Nation with the Fairy Houses.
+The Court of Misrak are Soul-Consuming Fairies that do not require food. They focus around Dolls (Slave Replacement), Souls as a currency and strong rogue units.. They are a Court Nation with the Fairy Houses.
 [H2]Soul System[\H2]
-[ICON_BULLET] Souls are a currency at the top left of your screen. You can gain them through certain buildings, by having slaves in your cities and by killing living units.
+[ICON_BULLET] Souls are a currency at the top left of your screen. You can gain them through certain buildings, by having Dolls in your cities and by killing living units.
 [ICON_BULLET] Your Cities grow with the [LINK=PROJECT_FAIRY_CONVERT_SOULS1]Convert Souls Ritual[\LINK]. The higher levels require more souls.
 [ICON_BULLET] You Receive 100 Souls at game start.
 [ICON_BULLET] You have no Settlers. Instead, your Candyfae can found cities. This costs you 50 Souls.
@@ -360,7 +360,7 @@ The Court of Misrak are Soul-Consuming Fairies that do not require food. They fo
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_FAIRY_HIGH_CUDDLER_HELP</Tag>
-        <English>[NEWLINE][ICON_BULLET]Settled Slaves give more Souls</English>
+        <English>[NEWLINE][ICON_BULLET]Settled Dolls give more Souls</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SPELL_MATERIALIZE_CITY</Tag>
@@ -429,5 +429,9 @@ The Court of Misrak are Soul-Consuming Fairies that do not require food. They fo
     <TEXT>
         <Tag>TXT_KEY_TRAIT_FAIRY_REFUGEE_SHORT</Tag>
         <English>FR</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPECIALIST_FAIRY_DOLL</Tag>
+        <English>Doll</English>
     </TEXT>
 </Civ4GameText>

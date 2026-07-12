@@ -25,9 +25,8 @@
 			<Description>Kith Militia</Description>
 			<bFreeUnit>1</bFreeUnit>
 			<iMinLevel>-1</iMinLevel>
-			<iCombatPercent>-25</iCombatPercent>
-			<iExtraCombatStr>-1</iExtraCombatStr>
-			<iExtraCombatDefense>-1</iExtraCombatDefense>
+			<iCombatPercent>-35</iCombatPercent>
+			<iExtraCombatStr>-2</iExtraCombatStr>
 			<PromotionAllows>
 				<Promotion>PROMOTION_CITY_GARRISON1</Promotion>
 			</PromotionAllows>

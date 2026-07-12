@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSpy v2006 sp1 U (http://www.altova.com) by Derek Paxton (None) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Jesse Smith (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- UnitClass Schema -->
+<Civ4UnitClassInfos xmlns="x-schema:DRACKA_CIV4UnitSchema.xml">
+	<UnitClassInfos>
+        <UnitClassInfo> <!-- Hero Yakumo -->
+			<Type>UNITCLASS_YINARA_YAKUMO</Type>
+			<Description>Yakumo</Description>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_YINARA_YAKUMO</DefaultUnit>
+			<bUnique>1</bUnique>
+		</UnitClassInfo>
+        <UnitClassInfo> <!-- Hero Jinrai no Kiba -->
+			<Type>UNITCLASS_YINARA_JINRAI</Type>
+			<Description>Jinrai no Kiba</Description>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_YINARA_JINRAI</DefaultUnit>
+			<bUnique>1</bUnique>
+		</UnitClassInfo>
+        <UnitClassInfo> <!-- Hero Yami no Tsume -->
+			<Type>UNITCLASS_YINARA_YAMI</Type>
+			<Description>Yami no Tsume</Description>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_YINARA_YAMI</DefaultUnit>
+			<bUnique>1</bUnique>
+		</UnitClassInfo>
+        <UnitClassInfo> <!-- Hero Hana no Yume -->
+			<Type>UNITCLASS_YINARA_HANA</Type>
+			<Description>Hana no Yume</Description>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_YINARA_HANA</DefaultUnit>
+			<bUnique>1</bUnique>
+		</UnitClassInfo>
+		<UnitClassInfo> <!-- Ashigaru -->
+			<Type>UNITCLASS_YINARA_ASHIGARU</Type>
+			<Description>Ashigaru</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_YINARA_ASHIGARU</DefaultUnit>
+			<bUnique>1</bUnique>
+		</UnitClassInfo>
+	</UnitClassInfos>
+</Civ4UnitClassInfos>

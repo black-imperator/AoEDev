@@ -20,5 +20,19 @@
 			<fBlue>0.00</fBlue>
 			<fAlpha>1.00</fAlpha>
 		</ColorVal>
+		<ColorVal>
+			<Type>COLOR_PLAYER_YINARA</Type>
+			<fRed>1.00</fRed>
+			<fGreen>0.10</fGreen>
+			<fBlue>0.10</fBlue>
+			<fAlpha>1.00</fAlpha>
+		</ColorVal>
+		<ColorVal>
+			<Type>COLOR_PLAYER_YINARA_SECONDARY</Type>
+			<fRed>1.00</fRed>
+			<fGreen>1.00</fGreen>
+			<fBlue>1.00</fBlue>
+			<fAlpha>1.00</fAlpha>
+		</ColorVal>
 	</ColorVals>
 </Civ4ColorVals>

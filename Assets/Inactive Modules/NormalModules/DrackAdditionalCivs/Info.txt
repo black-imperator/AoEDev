@@ -8,7 +8,7 @@ DrackAdditionalCivs
 ;Note: it have to be number, so only numberic characters and none or one period
 ;note: one line
 [version]
-0.1
+1.0
 ;
 ;
 ;RifE version - version of RifE for which is this module tested, checked, developed, etc
@@ -34,3 +34,4 @@ Adds addional Civilizations made by Drackzahn
 ;note: can be multiline
 [desc]
 Adds the new Civilization Eadig Kith
+Adds the new Civilization Yinara

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Risna -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_PALACE_DRACKA_YINARA_NAME</Tag>
+        <English>Lotus Harmony Hall</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_PAGAN_TEMPLE_YINARA</Tag>
+        <English>Sakura Garden</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_PAGAN_TEMPLE_PEDIA_YINARA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_PAGAN_TEMPLE_STRATEGY_YINARA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_CARNIVAL_YINARA</Tag>
+        <English>Stage of Cherry Blossom Viewing</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_CARNIVAL_PEDIA_YINARA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_CARNIVAL_STRATEGY_YINARA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_LIBRARY_YINARA</Tag>
+        <English>Hall of Blessed Fortune</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_LIBRARY_PEDIA_YINARA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_LIBRARY_STRATEGY_YINARA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_MONEYCHANGER_YINARA</Tag>
+        <English>Land of Mutual Benefit</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_MONEYCHANGER_PEDIA_YINARA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_THEATRE_YINARA</Tag>
+        <English>Hall of Rare Sights</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_THEATRE_PEDIA_YINARA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_ARTISANS_WORKSHOP_YINARA</Tag>
+        <English>Garden of Strong Arms</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_ARTISANS_WORKSHOP_PEDIA_YINARA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FORGE_YINARA</Tag>
+        <English>Dragon Pavilion Hall</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_TAX_OFFICE_YINARA</Tag>
+        <English>Fox Masks Market</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_TAX_OFFICE_PEDIA_YINARA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_YINARA_PALACE_NINE_TAILS</Tag>
+        <English>Palace of the Nine Tails</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_YINARA_PALACE_NINE_TAILS_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_YINARA_HIAN_DOCKS</Tag>
+        <English>Hian Docks</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_YINARA_HIAN_DOCKS_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_YINARA_SHADOW_GARDEN</Tag>
+        <English>Shadow Garden</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_YINARA_SHADOW_GARDEN_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_CRIME_YINARI_ENDLESS_SLUMBER</Tag>
+        <English>Endless Slumber</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_CRIME_YINARI_ENDLESS_SLUMBER_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_YINARA_TAKK_STOREHOUSE</Tag>
+        <English>Takk Storehouse</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_YINARA_TAKK_STOREHOUSE_PEDIA</Tag>
+        <English>TODO</English>
+    </TEXT>
+</Civ4GameText>

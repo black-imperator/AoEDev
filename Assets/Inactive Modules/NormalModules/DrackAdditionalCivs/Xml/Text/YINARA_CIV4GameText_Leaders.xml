@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Risna -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_YINARA_TAMAMO</Tag>
+        <English>Tamamo no Mae</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_YINARA_TAMAMO_PEDIA</Tag>
+        <English>
+Silken tails align,
+Order flows from her command,
+Purity in rule.
+
+Tamamo is one of the oldest living Kinari. She ruled her Dynasty longer than any other and will forever guide the path of her people. Not much is known about her origin, nor the exact extend of her powers. Her presence alone suppresses anyone who would dare to challenge her absolute rule.
+Yet, Tamamo is a good soul, a caring ruler that hears the problems of her followers and sends her children to solve them.
+        </English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_YINARA_LINGMEI</Tag>
+        <English>Lingmei</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_YINARA_LINGMEI_PEDIA</Tag>
+        <English>
+Unpredictable,
+Yet her kindness heals all,
+Chaos with a smile.
+
+Lingmei is a chaotic leader of her Dynasty. She cares little about exact court traditions, nor the unspoken rules of hiarchy. She goes wherever she wishes to in her realm, finds problems and solves them. She is loved by her people, yet also feared due to her unpredictable nature. A food crisis can be solved in many ways. One may increase the food supply from other regions, or introduces new agriculture procedures, or find new food sources. A different solution could also be to draft half the villages population to the army. 
+        </English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_YINARA_HANA</Tag>
+        <English>Hana no Daji</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_YINARA_HANA_PEDIA</Tag>
+        <English>
+No pity in her eyes,
+The fox strikes without warning,
+Death blooms where she treads.
+
+Hana rules not by respect nor love, but by fear. These that dare to question her are quickly removed. She takes what she wants without respecting traditions or rules. For her, only the law of the fittest counts. If she needs soldiers, she recruits the local villages. If she likes a man, she let his wife forgets about him and takes him for herself. And if she dislikes a neighbor, she destroys them.
+        </English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_YINARA_YUKI</Tag>
+        <English>Yuki no Yunhu</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_YINARA_YUKI_PEDIA</Tag>
+        <English>
+No path she will take,
+The wind is her only guide,
+A spirit unbound.
+
+Some may say it was her destiny to become one of the nine tailed ones. Others may say she was raised for this position by her clan. Yuki herself would say it was pure luck. She was just at the right place at the right time as a young Miko and rose the ranks and gained power over the years. For the people under her rule, it was a mercy that she was chosen as their new governess. Yuki is a kind and free spirit.
+        </English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_YINARA_RIN</Tag>
+        <English>Rin Xia</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_YINARA_RIN_PEDIA</Tag>
+        <English>
+Harvests rise and fall,
+Her tail sways with the grain,
+No one sleeps empty.
+
+In the local villages, Rin Xia is only known as the goddess of harvest. Farmers offer her parts of their harvest and she blesses them with fertile land. To her name, the children wear fox masks and roam the fields in the hope to find her and be blessed. These who are, become her Mikos, her little one tailed Kinari followers that bring her blessings to their local villages.
+        </English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_YINARA_KAZE</Tag>
+        <English>Kaze no Yueya</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_YINARA_KAZE_PEDIA</Tag>
+        <English>
+Iron in the wind,
+Kazes word is final law,
+No dissent is heard.
+
+To live under the rule of Kaze is a blessing for these that follow her rules strictly and without daring to look up. These who only listen to her words and fulfill it in every detail are blessed and live long lives. But those poor souls who make mistakes are quickly put to their end, as Kaze does not need those that make mistakes in her presence.
+        </English>
+    </TEXT>
+    
+</Civ4GameText>

@@ -174,7 +174,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FAIRY_CANDY_SHOP_HELP</Tag>
-        <English>[ICON_BULLET]+2 Max Slaves in City</English>
+        <English>[ICON_BULLET]+2 Max Dolls in City</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FAIRY_DOLLHOUSE</Tag>
@@ -190,7 +190,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FAIRY_DOLLHOUSE_HELP</Tag>
-        <English>[ICON_BULLET]Grants 1 Souls per turn[NEWLINE][ICON_BULLET]Allows to settle Slaves[NEWLINE][ICON_BULLET]+2 Max Slaves in City</English>
+        <English>[ICON_BULLET]Grants 1 Souls per turn[NEWLINE][ICON_BULLET]Allows to settle Dolls[NEWLINE][ICON_BULLET]+2 Max Dolls in City</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FAIRY_CHAINCANDY_CHATEAU</Tag>
@@ -218,7 +218,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FAIRY_CARAMEL_CAGE_HELP</Tag>
-        <English>[ICON_BULLET]+1 Max Slaves in City</English>
+        <English>[ICON_BULLET]+1 Max Dolls in City</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FAIRY_SHROOM_HALL</Tag>

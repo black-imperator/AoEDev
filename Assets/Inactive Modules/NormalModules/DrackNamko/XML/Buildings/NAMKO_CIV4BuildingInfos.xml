@@ -11,7 +11,6 @@
             <Type>BUILDING_PALACE_NAMKO</Type>
             <Description>TXT_KEY_BUILDING_NAMKO_PALACE_NAME</Description>
             <Civilopedia>TXT_KEY_BUILDING_PALACE_PEDIA</Civilopedia>
-            <Help>TXT_KEY_BUILDING_PALACE_HELP</Help>
             <Strategy>TXT_KEY_BUILDING_NAMKO_PALACE_PEDIA</Strategy>
             <bCapital>1</bCapital>
 			<bGovernmentCenter>1</bGovernmentCenter>

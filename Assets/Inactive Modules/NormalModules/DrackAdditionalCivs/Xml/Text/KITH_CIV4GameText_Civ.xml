@@ -10,7 +10,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_DRACKA_EADIG_KITH_PEDIA</Tag>
-        <English>TODO</English>
+        <English>
+Many easily switch the gnomes of the Kith with dwarves, and indeed, they certainly share common ancestors. The Kith were a creation during the Age of Magic by Patrian mages in cruel experiments. The idea was to use the robust and clever surface dwarves as workers. The result was the slightly smaller gnomes. They were split into different groups, each receiving their own tasks and specializations. 
+
+After Patria fell apart in the Age of Ice, the gnomes stayed in their groups and tried to survive during this harsh age. Each Kith, the name that formed for these groups, developed its own culture and way of handling things. Most Kith fell apart or simply vanished during the blizzards or ran out of resources to sustain themselves. Some ended in civil wars that broke out over the dwindling food and heat sources. 
+
+With the Age of Rebirth, two gnomes stepped forward and contacted all Kith in their reach. Woodrow and Amberly united the Kith under their banner, a federal union that was built on cooperation between the Kith without destroying their self-governance and culture. It was the birth of the Eadig Kith, the Blessed Kith Union.
+        </English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_DRACKA_EADIG_KITH_STRATEGY</Tag>
@@ -41,7 +47,9 @@ In unity lays our size!
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_DRACKA_KITH_PEDIA</Tag>
-        <English>TODO</English>
+        <English>
+The Kith Tribal System is based on the promise of cooperation between the Kith without harming their own cultural values and their self governence. Each Kith specialized and shared their products for the greater good of all Kith.
+        </English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_DRACKA_KITH_SHORT</Tag>

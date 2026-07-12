@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Building Class Infos -->
+<!-- Created by Drackzahn -->
+<Civ4BuildingClassInfos xmlns="x-schema:DRACKA_CIV4BuildingsSchema.xml">
+	<BuildingClassInfos>
+		<BuildingClassInfo> <!-- Palace of the Nine Tails -->
+			<Type>BUILDINGCLASS_YINARA_PALACE_NINE_TAILS</Type>
+			<Description>TXT_KEY_BUILDING_YINARA_PALACE_NINE_TAILS</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_YINARA_PALACE_NINE_TAILS</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo> <!-- Hian Docks -->
+			<Type>BUILDINGCLASS_YINARA_HIAN_DOCKS</Type>
+			<Description>TXT_KEY_BUILDING_YINARA_HIAN_DOCKS</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_YINARA_HIAN_DOCKS</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo> <!-- Shadow Garden -->
+			<Type>BUILDINGCLASS_YINARA_SHADOW_GARDEN</Type>
+			<Description>TXT_KEY_BUILDING_YINARA_SHADOW_GARDEN</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_YINARA_SHADOW_GARDEN</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo> <!-- Takk Storehouse -->
+			<Type>BUILDINGCLASS_YINARA_TAKK_STOREHOUSE</Type>
+			<Description>TXT_KEY_BUILDING_YINARA_TAKK_STOREHOUSE</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_YINARA_TAKK_STOREHOUSE</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+	</BuildingClassInfos>
+</Civ4BuildingClassInfos>
