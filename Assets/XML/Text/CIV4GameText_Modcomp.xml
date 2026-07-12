@@ -2310,11 +2310,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COMBAT_UNIT_GENERATION_CHANCE</Tag>
-		<English>[ICON_BULLET]%d1%% chance to generate a %s2_Unit after Combat</English>
-		<French>[ICON_BULLET]%d1%% de chance de créer un %s2_Unit au combat</French>
+		<English>[ICON_BULLET]%d1%% chance to generate a unit after Combat</English>
+		<French>[ICON_BULLET]%d1%% de chance de créer un unit au combat</French>
 		<German>[ICON_BULLET]%d1%% Chance, eine Einheit %[s2_Unit] nach dem Kampf zu erschaffen</German>
-		<Italian>[ICON_BULLET]%d1%% chance to generate a %s2_Unit after Combat</Italian>
-		<Spanish>[ICON_BULLET]%d1%% chance to generate a %s2_Unit after Combat</Spanish>
+		<Italian>[ICON_BULLET]%d1%% chance to generate a unit after Combat</Italian>
+		<Spanish>[ICON_BULLET]%d1%% chance to generate a unit after Combat</Spanish>
 	</TEXT>
 		<TEXT>
 		<Tag>TXT_KEY_UNIT_CAPTURE_CHANCE</Tag>
@@ -2326,11 +2326,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COMBAT_CONVERSION_CHANCE</Tag>
-		<English>[ICON_BULLET]%d1%% chance to become a %s2_Unit after Combat</English>
-		<French>[ICON_BULLET]%d1%% de chance de devenir un %s2_Unit au combat</French>
+		<English>[ICON_BULLET]%d1%% chance to become a unit after Combat</English>
+		<French>[ICON_BULLET]%d1%% de chance de devenir un unit au combat</French>
 		<German>[ICON_BULLET]%d1%% Chance, eine Einheit %[s2_Unit] nach dem Kampf zu werden</German>
-		<Italian>[ICON_BULLET]%d1%% chance to become a %s2_Unit after Combat</Italian>
-		<Spanish>[ICON_BULLET]%d1%% chance to become a %s2_Unit after Combat</Spanish>
+		<Italian>[ICON_BULLET]%d1%% chance to become a unit after Combat</Italian>
+		<Spanish>[ICON_BULLET]%d1%% chance to become a unit after Combat</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_BASE_FROM_UNIT_LOSS</Tag>

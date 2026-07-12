@@ -164,11 +164,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_FREE_SPECIALIST</Tag>
-		<English>[ICON_BULLET]%D1_Change Free [COLOR_HIGHLIGHT_TEXT][LINK=%s2]%s3_SpclstName[\LINK][COLOR_REVERT]</English>
-		<French>[ICON_BULLET]Donne %D1_Change [COLOR_HIGHLIGHT_TEXT][LINK=%s2]%s3_SpclstName[\LINK][COLOR_REVERT] gratuit</French>
-		<German>[ICON_BULLET]%D1_Change freien Spezialisten [COLOR_HIGHLIGHT_TEXT][LINK=%s2]%s3_SpclstName[\LINK][COLOR_REVERT]</German>
-		<Italian>[ICON_BULLET]%D1_Change [COLOR_HIGHLIGHT_TEXT][LINK=%s2]%s3_SpclstName[\LINK][COLOR_REVERT] gratis</Italian>
-		<Spanish>[ICON_BULLET]%D1_Change [COLOR_HIGHLIGHT_TEXT][LINK=%s2]%s3_SpclstName[\LINK][COLOR_REVERT] gratis</Spanish>
+		<English>[ICON_BULLET]%D1_Change Free [COLOR_HIGHLIGHT_TEXT]%s2_SpclstName[COLOR_REVERT]</English>
+		<French>[ICON_BULLET]Donne %D1_Change [COLOR_HIGHLIGHT_TEXT]%s2_SpclstName[COLOR_REVERT] gratuit</French>
+		<German>[ICON_BULLET]%D1_Change freien Spezialisten [COLOR_HIGHLIGHT_TEXT]%s2_SpclstName[COLOR_REVERT]</German>
+		<Italian>[ICON_BULLET]%D1_Change [COLOR_HIGHLIGHT_TEXT]%s2_SpclstName[COLOR_REVERT] gratis</Italian>
+		<Spanish>[ICON_BULLET]%D1_Change [COLOR_HIGHLIGHT_TEXT]%s2_SpclstName[COLOR_REVERT] gratis</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_FREE_XP_UNITS</Tag>
@@ -741,11 +741,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_IMMEDIATE_SPAWN_UNIT_TYPE</Tag>
-		<English>[ICON_BULLET]Spawns a %s3_Adjective [LINK=%s1]%s2_unit[\LINK] on creation</English>
+		<English>[ICON_BULLET]Spawns a %s2_Adjective [LINK=literal]%s1_unit[\LINK] on creation</English>
 		<French>[ICON_BULLET]Peut faire apparaître des [LINK=%s1]%s2:2_unit[\LINK] %s3:3_Adjective</French>
 		<German>[ICON_BULLET]Erschafft %[s3_adj]e [LINK=%s1]%[s2_unit][\LINK]-Einheiten</German>
-		<Italian>[ICON_BULLET]Spawns %s3_Adjective [LINK=%s1]%s2_unit[\LINK] units</Italian>
-		<Spanish>[ICON_BULLET]Spawns %s3_Adjective [LINK=%s1]%s2_unit[\LINK] units</Spanish>
+		<Italian>[ICON_BULLET]Spawns %s2_Adjective [LINK=literal]%s1_unit[\LINK] units</Italian>
+		<Spanish>[ICON_BULLET]Spawns %s2_Adjective [LINK=literal]%s1_unit[\LINK] units</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_MINIMUM_DISTANCE</Tag>
@@ -1702,19 +1702,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SPELL_REMOVE_PROMOTION</Tag>
-		<English>[ICON_BULLET]Removes the [LINK=%s1]%s2_promotion[\LINK] promotion</English>
-		<French>[ICON_BULLET]Enlève la promotion [LINK=%s1]%s2_promotion[\LINK]</French>
-		<German>[ICON_BULLET]entfernt die [LINK=%s1]%s2_promotion[\LINK] Beförderung</German>
-		<Italian>[ICON_BULLET]Removes the [LINK=%s1]%s2_promotion[\LINK] promotion</Italian>
-		<Spanish>[ICON_BULLET]Removes the [LINK=%s1]%s2_promotion[\LINK] promotion</Spanish>
+		<English>[ICON_BULLET]Removes the [LINK=literal]%s1_promotion[\LINK] promotion</English>
+		<French>[ICON_BULLET]Enlève la promotion [LINK=literal]%s1_promotion[\LINK]</French>
+		<German>[ICON_BULLET]entfernt die [LINK=literal]%s1_promotion[\LINK] Beförderung</German>
+		<Italian>[ICON_BULLET]Removes the [LINK=literal]%s1_promotion[\LINK] promotion</Italian>
+		<Spanish>[ICON_BULLET]Removes the [LINK=literal]%s1_promotion[\LINK] promotion</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SPELL_REMOVE_PROMOTION_CASTER</Tag>
-		<English>[ICON_BULLET]Removes the [LINK=%s1]%s2_promotion[\LINK] promotion from the caster</English>
-		<French>[ICON_BULLET]Enlève la promotion [LINK=%s1]%s2_promotion[\LINK] du lanceur</French>
-		<German>[ICON_BULLET]entfernt die [LINK=%s1]%s2_promotion[\LINK] Beförderung von dem Zaubernden</German>
-		<Italian>[ICON_BULLET]Removes the [LINK=%s1]%s2_promotion[\LINK] promotion from the caster</Italian>
-		<Spanish>[ICON_BULLET]Removes the [LINK=%s1]%s2_promotion[\LINK] promotion from the caster</Spanish>
+		<English>[ICON_BULLET]Removes the [LINK=literal]%s1_promotion[\LINK] promotion from the caster</English>
+		<French>[ICON_BULLET]Enlève la promotion [LINK=literal]%s1_promotion[\LINK] du lanceur</French>
+		<German>[ICON_BULLET]entfernt die [LINK=literal]%s1_promotion[\LINK] Beförderung von dem Zaubernden</German>
+		<Italian>[ICON_BULLET]Removes the [LINK=literal]%s1_promotion[\LINK] promotion from the caster</Italian>
+		<Spanish>[ICON_BULLET]Removes the [LINK=literal]%s1_promotion[\LINK] promotion from the caster</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SPELL_RESURRECT</Tag>
