@@ -101,6 +101,14 @@ class CvPediaTrait:
 				"Value to Check" : 'eTrait.getTraitClass()',
 				"Desired Result" : 'gc.getInfoTypeForString("TRAITCLASS_DEMON_PACT")',
 			},
+			{
+				"name" : 'localText.getText("TXT_KEY_OTHER_TRAIT_CLASSES", ())',
+				"Purpose" : "Other Traits",
+				"Hardcoded" : False,
+				"HardcodeList" : [],
+				"Value to Check" : 'eTrait.getTraitClass() not in (gc.getInfoTypeForString("TRAITCLASS_DEMON_PACT"), gc.getInfoTypeForString("TRAITCLASS_KAHD"), gc.getInfoTypeForString("TRAITCLASS_REPUBLIC"), gc.getInfoTypeForString("TRAITCLASS_SAVAGE"), gc.getInfoTypeForString("TRAITCLASS_KEEPERS"), gc.getInfoTypeForString("TRAITCLASS_EMERGENT"), gc.getInfoTypeForString("TRAITCLASS_PERSONALITY"), gc.getInfoTypeForString("TRAITCLASS_CIVILIZATION"))',
+				"Desired Result" : 'True',
+			},
 			]
 
 			# List the filters which you want to be available initially, or self.FILTERS to have all of them available from the start

@@ -211,12 +211,12 @@ class EndGameTurnCityAlertManager(AbstractStatefulAlert):
 		iTurn = argsList[0]
 		iPlayer = gc.getGame().getActivePlayer()
 		player = gc.getActivePlayer()
-		for iCity in range(player.getNumCities()):
-			city = player.getCity(iCity)
-			if (city and not city.isNone()):
-				for alert in self.alerts:
-					iCityID = city.getID()
-					alert.checkCity(iTurn, iCityID, city, iPlayer, player)
+		(pLoopCity, iter) = player.firstCity(False)
+		while(pLoopCity):
+			for alert in self.alerts:
+				iCityID = pLoopCity.getID()
+				alert.checkCity(iTurn, iCityID, pLoopCity, iPlayer, player)
+			(pLoopCity, iter) = player.nextCity(iter, False)
 
 	def _init(self):
 		"Initializes each alert."
@@ -258,11 +258,11 @@ class AbstractCityAlert:
 	def reset(self):
 		"Clears state kept for each city."
 		self._beforeReset()
-		player = gc.getActivePlayer()
-		for iCity in range(player.getNumCities()):
-			city = player.getCity(iCity)
-			if (city and not city.isNone()):
-				self.resetCity(city)
+		player	= gc.getActivePlayer()
+		(pLoopCity, iter) = player.firstCity(False)
+		while(pLoopCity):
+			self.resetCity(pLoopCity)
+			(pLoopCity, iter) = player.nextCity(iter, False)
 	
 	def _beforeReset(self):
 		"Performs clearing of state before looping over cities."

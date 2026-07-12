@@ -259,8 +259,6 @@ class CustomFunctions:
 		gc				= CyGlobalContext()
 		git				= gc.getInfoTypeForString
 		iPlotTreshold	= gc.getDefineINT("PLOT_COUNTER_HELL_THRESHOLD")
-		iJungleChance	= 10
-		iSwampChance	= 25
 		iHLSeed			= 0
 
 		if iNumScions:
@@ -279,7 +277,10 @@ class CustomFunctions:
 				break
 
 		for i in xrange(CyMap().numPlots()):
-			pPlot			 	= CyMap().plotByIndex(i)
+			iJungleChance		= 10
+			iSwampChance		= 25
+			iHLSpread			= iHLSeed
+			pPlot				= CyMap().plotByIndex(i)
 			if pPlot == None: continue
 			iPlotCounter		= pPlot.getPlotCounter()
 			iBonus 				= pPlot.getBonusType(-1)
@@ -316,16 +317,16 @@ class CustomFunctions:
 
 				#### Haunted Lands Section
 				elif eCiv == self.Civilizations["Scions"]:
-					if iPlotEffect != self.Feature["Haunted Lands"] and iHLSeed > 0 and not bPeak and not bCity:
+					if iPlotEffect != self.Feature["Haunted Lands"] and iHLSpread > 0 and not bPeak and not bCity:
 						if   iFeature in (self.Feature["Forest"], self.Feature["Ancient Forest"], self.Feature["Jungle"]): 
-							iHLSeed *= 1.5
+							iHLSpread *= 1.5
 						elif iFeature == self.Feature["Flood Plains"] or iTerrain in (self.Terrain["Grass"], self.Terrain["Plains"], self.Terrain["Marsh"]):
-							iHLSeed = iHLSeed
+							iHLSpread = iHLSpread
 						elif iTerrain == self.Terrain["Desert"]:
-							iHLSeed *= 0.5
+							iHLSpread *= 0.5
 						else:
-							iHLSeed = 0
-						if CyGame().getSorenRandNum(1100, "Chance for HL") < iHLSeed:
+							iHLSpread = 0
+						if CyGame().getSorenRandNum(1100, "Chance for HL") < iHLSpread:
 							pPlot.setPlotEffectType(self.Feature["Haunted Lands"])
 
 			if iImprovement == self.Improvements["Swamp"] and iTerrain != self.Terrain["Marsh"]: pPlot.setImprovementType(-1)
@@ -1740,7 +1741,7 @@ class CustomFunctions:
 		for iX,iY in RANGE2:
 			pClearPlot = CyMap().plot(iX+pBestPlot.getX(),iY+pBestPlot.getY())
 			for i in xrange(pClearPlot.getNumUnits()):
-				pUnit = pPlot.getUnit(i)
+				pUnit = pClearPlot.getUnit(i)
 				if pUnit.isBarbarian() and not gc.getUnitClassInfo(pUnit.getUnitClassType()).isUnique():
 					pUnit.kill()
 		# Spawning Civilization
