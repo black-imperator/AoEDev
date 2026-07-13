@@ -13227,212 +13227,9 @@ def reqLairFreeIllians(argsList):
 
 	return True
 
-def exploreLairFreeIllians(argsList):
-	pUnit, pPlot = argsList
-	game 		= CyGame()
-	iPlayer = pUnit.getOwner()
-	map = CyMap()
-	iInfernalPlayer = getOpenPlayer()
-	pBestPlot=pPlot
-	pPlot.setPythonActive(False)
-        getPlayer 		= gc.getPlayer
-	pPlayer 		= getPlayer(iPlayer)
-	if (iInfernalPlayer != -1 and pBestPlot != -1):
-		iX = pBestPlot.getX(); iY = pBestPlot.getY()
-		pBestPlot.setPlotType(PlotTypes.PLOT_LAND, True, True)
-		for iiX,iiY in RANGE2:
-			getPlot = map.plot
-			pPlot2 = getPlot(iX+iiX,iY+iiY)
-			for i in xrange(pPlot2.getNumUnits()):
-				pLoopUnit = pPlot.getUnit(i)
-				if pLoopUnit.getOwner()==gc.getORC_PLAYER() or pLoopUnit.getOwner()==gc.getDEMON_PLAYER() or pLoopUnit.getOwner()==gc.getANIMAL_PLAYER():
-					pLoopUnit.kill()
-		game.addPlayerAdvanced(iInfernalPlayer, -1, getInfoType("LEADER_AURIC"), getInfoType("CIVILIZATION_ILLIANS"),iPlayer)
-		iFounderTeam  = gc.getPlayer(iPlayer).getTeam()
-		eFounderTeam  = gc.getTeam(gc.getPlayer(iPlayer).getTeam())
-		iInfernalTeam = gc.getPlayer(iInfernalPlayer).getTeam()
-		eInfernalTeam = gc.getTeam(iInfernalTeam)
-		for iTech in xrange(gc.getNumTechInfos()):
-			if eFounderTeam.isHasTech(iTech):
-				eInfernalTeam.setHasTech(iTech, True, iInfernalPlayer, True, False)
-		pInfernalPlayer = gc.getPlayer(iInfernalPlayer)
-		pInfernalPlayer.AI_changeAttitudeExtra(iPlayer,4)
-		pInfernalPlayer.initCity(iX,iY)
-		pInfernalPlayer.changeGoldenAgeTurns(CyGame().goldenAgeLength())
-		initUnit = pInfernalPlayer.initUnit
-		newUnit1  = initUnit(getInfoType("UNIT_AURIC"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-		newUnit1.setExperienceTimes100(2500, -1)
-		newUnit2  = initUnit( getInfoType("UNIT_AXEMAN"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                newUnit2.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-		newUnit3  = initUnit( getInfoType("UNIT_AXEMAN"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                newUnit3.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-		newUnit4  = initUnit( getInfoType("UNIT_JAVELIN_THROWER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                newUnit4.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-		newUnit5  = initUnit( getInfoType("UNIT_JAVELIN_THROWER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                newUnit5.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-		newUnit6  = initUnit( getInfoType("UNIT_ADEPT"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                newUnit6.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-		newUnit7  = initUnit( getInfoType("UNIT_ADEPT"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                newUnit7.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-		newUnit8  = initUnit( getInfoType("UNIT_HUNTER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                newUnit8.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-		newUnit9  = initUnit( getInfoType("UNIT_HUNTER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                newUnit9.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-		newUnit10  = initUnit( getInfoType("UNIT_WORKER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                newUnit10.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-		newUnit11  = initUnit( getInfoType("UNIT_WORKER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                newUnit11.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-		newUnit12  = initUnit( getInfoType("UNIT_SETTLER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                newUnit12.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-		newUnit13  = initUnit( getInfoType("UNIT_SUPPLIES"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-		newUnit14  = initUnit( getInfoType("UNIT_SUPPLIES"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-		newUnit15  = initUnit( getInfoType("UNIT_SUPPLIES"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                if pPlayer.isHasTech(getInfoType('TECH_IRON_WORKING')):
-                        newUnit16  = initUnit( getInfoType("UNIT_CHAMPION"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit16.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-                        newUnit17  = initUnit( getInfoType("UNIT_CHAMPION"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit17.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-                        newUnit18  = initUnit( getInfoType("UNIT_SETTLER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit18.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-                        newUnit19  = initUnit( getInfoType("UNIT_SUPPLIES"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit20  = initUnit( getInfoType("UNIT_SUPPLIES"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit21  = initUnit( getInfoType("UNIT_WORKER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit21.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True, True)
-                if pPlayer.isHasTech(getInfoType('TECH_BOWYERS')):
-                        newUnit22  = initUnit( getInfoType("UNIT_LONGBOW"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit22.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-                        newUnit23  = initUnit( getInfoType("UNIT_LONGBOW"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit23.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-                        newUnit24  = initUnit( getInfoType("UNIT_SETTLER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit24.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-                        newUnit25  = initUnit( getInfoType("UNIT_SUPPLIES"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit26  = initUnit( getInfoType("UNIT_SUPPLIES"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit27  = initUnit( getInfoType("UNIT_WORKER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit27.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True, True)
-                if pPlayer.isHasTech(getInfoType('TECH_ANIMAL_HANDLING')):
-                        newUnit28  = initUnit( getInfoType("UNIT_RANGER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit28.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-                        newUnit29  = initUnit( getInfoType("UNIT_RANGER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit29.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-                        newUnit30  = initUnit( getInfoType("UNIT_SETTLER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit30.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-                        newUnit31  = initUnit( getInfoType("UNIT_SUPPLIES"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit32  = initUnit( getInfoType("UNIT_SUPPLIES"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit33  = initUnit( getInfoType("UNIT_WORKER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit33.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True, True)
-                if pPlayer.isHasTech(getInfoType('TECH_SORCERY')):
-                        newUnit34  = initUnit( getInfoType("UNIT_MAGE"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit34.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-                        newUnit35  = initUnit( getInfoType("UNIT_MAGE"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit35.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-                        newUnit36  = initUnit( getInfoType("UNIT_SETTLER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit36.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-                        newUnit37  = initUnit( getInfoType("UNIT_SUPPLIES"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit38  = initUnit( getInfoType("UNIT_SUPPLIES"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit39  = initUnit( getInfoType("UNIT_WORKER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit39.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True, True)
-                if pPlayer.isHasTech(getInfoType('TECH_SANITATION')):
-                        newUnit40  = initUnit( getInfoType("UNIT_SUPPLIES"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit40.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-                        newUnit41  = initUnit( getInfoType("UNIT_SUPPLIES"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit41.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-                        newUnit42  = initUnit( getInfoType("UNIT_SETTLER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit42.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-                        newUnit43  = initUnit( getInfoType("UNIT_SUPPLIES"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit44  = initUnit( getInfoType("UNIT_SUPPLIES"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit45  = initUnit( getInfoType("UNIT_WORKER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit45.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True, True)
-                if pPlayer.isHasTech(getInfoType('TECH_PRIESTHOOD')):
-                        newUnit46  = initUnit( getInfoType("UNIT_SUPPLIES"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit47  = initUnit( getInfoType("UNIT_SUPPLIES"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit48  = initUnit( getInfoType("UNIT_SETTLER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit48.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-                        newUnit49  = initUnit( getInfoType("UNIT_SUPPLIES"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit50  = initUnit( getInfoType("UNIT_SUPPLIES"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit51  = initUnit( getInfoType("UNIT_WORKER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit51.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True, True)
-                if pPlayer.isHasTech(getInfoType('TECH_MALEVOLENT_DESIGNS')):
-                        newUnit52  = initUnit( getInfoType("UNIT_EIDOLON"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit52.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-                        newUnit53  = initUnit( getInfoType("UNIT_EIDOLON"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit53.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-                        newUnit54  = initUnit( getInfoType("UNIT_EIDOLON"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit54.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-                        newUnit55  = initUnit( getInfoType("UNIT_EIDOLON"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit55.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-                        newUnit56  = initUnit( getInfoType("UNIT_SETTLER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit56.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-                        newUnit57  = initUnit( getInfoType("UNIT_SUPPLIES"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit57  = initUnit( getInfoType("UNIT_SUPPLIES"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit58  = initUnit( getInfoType("UNIT_WORKER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit58.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True, True)
-                if pPlayer.isHasTech(getInfoType('TECH_MITHRIL_WORKING')):
-                        newUnit59  = initUnit( getInfoType("UNIT_PHALANX"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit59.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-                        newUnit60  = initUnit( getInfoType("UNIT_PHALANX"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit60.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-                        newUnit61  = initUnit( getInfoType("UNIT_PHALANX"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit61.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-                        newUnit62  = initUnit( getInfoType("UNIT_PHALANX"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit62.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-                        newUnit63  = initUnit( getInfoType("UNIT_SETTLER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit63.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-                        newUnit64  = initUnit( getInfoType("UNIT_SUPPLIES"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit64  = initUnit( getInfoType("UNIT_SUPPLIES"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit65  = initUnit( getInfoType("UNIT_WORKER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit65.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True, True)
-                if pPlayer.isHasTech(getInfoType('TECH_ANIMAL_MASTERY')):
-                        newUnit66  = initUnit( getInfoType("UNIT_BEASTMASTER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit66.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-                        newUnit67  = initUnit( getInfoType("UNIT_BEASTMASTER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit67.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-                        newUnit68  = initUnit( getInfoType("UNIT_BEASTMASTER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit68.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-                        newUnit69  = initUnit( getInfoType("UNIT_BEASTMASTER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit69.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-                        newUnit70  = initUnit( getInfoType("UNIT_SETTLER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit70.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-                        newUnit71  = initUnit( getInfoType("UNIT_SUPPLIES"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit71  = initUnit( getInfoType("UNIT_SUPPLIES"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit72  = initUnit( getInfoType("UNIT_WORKER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit72.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True, True)
-                if pPlayer.isHasTech(getInfoType('TECH_STRENGTH_OF_WILL')):
-                        newUnit73  = initUnit( getInfoType("UNIT_ARCHMAGE"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit73.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-                        newUnit74  = initUnit( getInfoType("UNIT_ARCHMAGE"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit74.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-                        newUnit75  = initUnit( getInfoType("UNIT_ARCHMAGE"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit75.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-                        newUnit76  = initUnit( getInfoType("UNIT_ARCHMAGE"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit76.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-                        newUnit77  = initUnit( getInfoType("UNIT_SETTLER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit77.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True)
-                        newUnit78  = initUnit( getInfoType("UNIT_SUPPLIES"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit78  = initUnit( getInfoType("UNIT_SUPPLIES"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit79  = initUnit( getInfoType("UNIT_WORKER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit79.setHasPromotion(getInfoType('PROMOTION_FREE_UNIT'),True, True)
-                if pPlayer.isHasTech(getInfoType('TECH_TAXATION')):
-                        newUnit80  = initUnit( getInfoType("UNIT_SUPPLIES"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit81  = initUnit( getInfoType("UNIT_SUPPLIES"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit82  = initUnit( getInfoType("UNIT_SUPPLIES"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit83  = initUnit( getInfoType("UNIT_SUPPLIES"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH, True)
-                if pPlayer.isHasTech(getInfoType('TECH_TRADE')):
-                        newUnit84  = initUnit( getInfoType("UNIT_SUPPLIES"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit85  = initUnit( getInfoType("UNIT_SUPPLIES"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit86  = initUnit( getInfoType("UNIT_SUPPLIES"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                        newUnit87  = initUnit( getInfoType("UNIT_SUPPLIES"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH, True)
-		if pPlayer.isHuman():
-			popupInfo = CyPopupInfo()
-			popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_PYTHON)
-			popupInfo.setText(CyTranslator().getText("TXT_KEY_POPUP_CONTROL_CIVILIZATION_LAIR_SPAWN",()))
-			popupInfo.setData1(iPlayer)
-			popupInfo.setData2(iInfernalPlayer)
-			popupInfo.addPythonButton(CyTranslator().getText("TXT_KEY_POPUP_YES", ()), "")
-			popupInfo.addPythonButton(CyTranslator().getText("TXT_KEY_POPUP_NO", ()), "")
-			popupInfo.setOnClickedPythonCallback("reassignPlayer")
-			popupInfo.addPopup(iPlayer)
-
-def exploreLairFreeCiv(argsList):
+def  exploreLairFreeCiv(argsList, sCiv='', sLeader=' '): 
+	print "startingexplorelairfreeciv DEF"
+	szBuffer = ''
 	pUnit, pPlot = argsList
 	iPlayer		= pUnit.getOwner()
 	pPlayer		= gc.getPlayer(iPlayer)
@@ -13446,11 +13243,12 @@ def exploreLairFreeCiv(argsList):
 	# just to prevent unnecessary if ladders for ease of reading
 	if iNewPlayer == -1:	return
 	if pSpawnPlot.isNone():	return
-
+	print "startingexplorelairfreeciv pSPAWN"
 	# we can turn this part into a list of civs to spawn if you want some universal result
-	lCiv		= [gc.getInfoTypeForString("CIVILIZATION_ILLIANS"),	gc.getInfoTypeForString("CIVILIZATION_AUSTRIN")]
-	lLeader		= [gc.getInfoTypeForString("LEADER_AURIC"),			gc.getInfoTypeForString("LEADER_DEIRDRA")]
-
+	lCiv		= [gc.getInfoTypeForString(sCiv)]
+	print "startingexplorelairfreeciv lCiv"
+	lLeader		= [gc.getInfoTypeForString(sLeader)]
+	print "startingexplorelairfreeciv lLeader"
 	iCiv		= lCiv[0]
 	iLeader		= lLeader[0]
 
@@ -13469,7 +13267,7 @@ def exploreLairFreeCiv(argsList):
 	pNewPlayer		= gc.getPlayer(iNewPlayer)
 	iNewTeam		= pNewPlayer.getTeam()
 	pNewTeam		= gc.getTeam(iNewTeam)
-
+	print "startingexplorelairfreeciv Spawn civ"
 	# Set the same techs
 	iTechCount = 0
 	for iTech in xrange(gc.getNumTechInfos()):
@@ -13483,7 +13281,7 @@ def exploreLairFreeCiv(argsList):
 	pTomb	= pNewPlayer.initCity(iX, iY)
 
 	pNewPlayer.changeGoldenAgeTurns(CyGame().goldenAgeLength() + (iTechCount / 3))
-
+	print "startingexplorelairfreeciv pNewPlayer"
 	# let's start with an empty list of units and populate it as we go
 	# we can use a bit more complex one, for example we can make list of lists to customize our needs
 	# [[UnitID0, Count0, XP0], [UnitID1, Count1, XP1],...]
@@ -13716,6 +13514,7 @@ def exploreLairFreeCiv(argsList):
 			popupInfo.addPythonButton(CyTranslator().getText("TXT_KEY_POPUP_NO", ()), "")
 			popupInfo.setOnClickedPythonCallback("reassignPlayer")
 			popupInfo.addPopup(iPlayer)
+
 
 
 # GOODY_ENCHANTED_MAP

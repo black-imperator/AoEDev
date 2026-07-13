@@ -5567,14 +5567,14 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
-			<iWeight>10</iWeight>
+			<iWeight>99999</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_ILLIANS</Description>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>0</iDestroyLairChance>
 			<bUnique>1</bUnique>
-			<bBad>1</bBad>
+			<bBad>0</bBad>
 			<PythonPrereq>reqLairFreeIllians</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+			<PythonCallback>exploreLairFreeCiv( 'CIVILIZATION_ILLIANS', 'LEADER_AURIC')</PythonCallback>
 		</GoodyInfo>
 		<!--<GoodyInfo>	<!{1}**Discover the Amurites	 **{1}>
 			<Type>GOODY_FREE_AMURITES</Type>
