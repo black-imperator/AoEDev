@@ -5844,6 +5844,28 @@
 		</UnitArtInfo>
 	<!-- Austrin End-->
 <!-- Balseraph Start -->
+		<UnitArtInfo> <!-- UNIT_HORNCRIER -->
+            <Type>ART_DEF_UNIT_HORNCRIER</Type>
+            <Button>Art/Interface/Buttons/Units/Horncrier.dds</Button>
+            <fScale>0.55</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Civs/Balseraphs/Horncrier/horncrier.nif</NIF>
+            <KFM>Art/Animations/Skirmisher/maliskirmisher blood.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>0.95</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.35</fBattleDistance>
+                <fRangedDeathTime>0.31</fRangedDeathTime>
+                <bActAsRanged>1</bActAsRanged>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
 		<UnitArtInfo>  <!-- UNIT_ADEPT in UNIT_ARTSTYLE_BALSERAPHS -->
 			<Type>ART_DEF_UNIT_ADEPT_BALSERAPHS</Type>
 			<Button>Art/Interface/Buttons/Units/Adept Balseraphs.dds</Button>
@@ -6144,6 +6166,29 @@
 			<bActAsAir>0</bActAsAir>
 			<NIF>Art/Units/Civs/Balseraphs/Hunter/Scout.nif</NIF>
 			<KFM>Art/Units/Scout/Scout.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>  <!-- UNIT_PERPENTACH -->
+			<Type>ART_DEF_UNIT_PERPENTACH</Type>
+			<Button>Art/Interface/Leaderheads/Perpentach Button.dds</Button>
+			<fScale>0.55</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Heroes/Perpentach/DogSoldier.nif</NIF>
+			<KFM>Art/Units/Unique_NativeAmerica_DogSoldier/DogSoldier.kfm</KFM>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -28963,6 +29008,98 @@
 		</UnitArtInfo>
 	<!-- Scions End -->
 <!-- Sheaim Start -->
+		<UnitArtInfo><!-- UNIT_GOSEA -->
+			<Type>ART_DEF_UNIT_GOSEA</Type>
+			<Button>Art/Interface/Leaderheads/gosea button.dds</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Heroes/Gosea/Aztec_Jaguar.nif</NIF>
+			<KFM>Art/Units/Unique/Aztec/Jaguar/Aztec_Jaguar.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.4</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- UNIT_GOSEA with Basium Mase -->
+			<Type>ART_DEF_UNIT_GOSEA_MACE</Type>
+			<Button>Art/Interface/Leaderheads/gosea button.dds</Button>
+			<fScale>0.55</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Heroes/Gosea/Unique_Sumerian_Vulture_w_basiumMace.nif</NIF>
+			<KFM>Art\animations\vulture\Unique_Sumerian_Vulture.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+     	<UnitArtInfo> <!-- UNIT_OSGABELLA -->
+			<Type>ART_DEF_UNIT_OS_GABELLA</Type>
+			<Button>Art/Interface/Leaderheads/os-gabella Button.dds</Button>
+			<fScale>0.55</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Heroes/Gabella/Swordsman.nif</NIF>
+			<KFM>Art/Units/Swordsman/Swordsman.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- UNIT_OSGABELLA_REDEEMED -->
+			<Type>ART_DEF_UNIT_OS_GABELLA_REDEEMED</Type>
+			<Button>Art/Interface/Buttons/Units/OsgabellaRedeemed.dds</Button>
+			<fScale>0.55</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Heroes/Gabella_Redeemed/Maceman.nif</NIF>
+			<KFM>Art/Units/Maceman/Maceman.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
 		<UnitArtInfo>  <!-- UNIT_ABASHI -->
 			<Type>ART_DEF_UNIT_ABASHI</Type>
 			<Button>Art/Interface/Buttons/Units/Abashi.dds</Button>
@@ -31501,6 +31638,67 @@
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
 				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- UNIT_CHARIOT in UNIT_ARTSTYLE_ONCE_ELF-->
+			<Type>ART_DEF_UNIT_CHARIOT_ONCE_ELVES</Type>
+			<Button>Art/Interface/Buttons/Units/Chariot.dds</Button>
+			<fScale>0.35</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/civs/Onceelves/OnceElf_Chariot/Chariot.nif</NIF>
+			<KFM>Art/Units/Chariot/Chariot.kfm</KFM>
+			<SHADERNIF>Art/Units/default/Chariot/Chariot_FX.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/ChariotShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<TrailDefinition>
+				<Texture>Art/Shared/wheeltread.dds</Texture>
+				<fWidth>1</fWidth>
+				<fLength>180</fLength>
+				<fTaper>0</fTaper>
+				<fFadeStartTime>0.2</fFadeStartTime>
+				<fFadeFalloff>0.35</fFadeFalloff>
+			</TrailDefinition>
+			<fBattleDistance>0.2</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bSmoothMove>1</bSmoothMove>
+			<fAngleInterpRate>360</fAngleInterpRate>
+			<fExchangeAngle>-30</fExchangeAngle>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- UNIT_WAR_CHARIOT in UNIT_ARTSTYLE_ONCE_ELF -->
+			<Type>ART_DEF_UNIT_WAR_CHARIOT_ONCE_ELVES</Type>
+			<Button>Art/Interface/Buttons/Units/War Chariot.dds</Button>
+			<fScale>0.37</fScale>
+			<fInterfaceScale>0.8</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Civs/Onceelves/OnceElf_WarChariot/WarChariot.nif</NIF>
+			<KFM>Art/animations/WarChariot/EgyptianWarChariot.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/WarChariotShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.2</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bSmoothMove>1</bSmoothMove>
+			<fAngleInterpRate>360</fAngleInterpRate>
+			<fExchangeAngle>-30</fExchangeAngle>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop>LOOPSTEP_WHEELS_2</AudioRunTypeLoop>
+				<AudioRunTypeEnd>ENDSTEP_WHEELS_2</AudioRunTypeEnd>
 			</AudioRunSounds>
 		</UnitArtInfo>
 	
@@ -35483,6 +35681,29 @@
 		</UnitArtInfo>
 <!-- Fellowship of Leaves End -->
 <!-- Octopus Overlords Start -->
+		<UnitArtInfo> <!-- UNIT_BURNT_PRIEST -->
+			<Type>ART_DEF_UNIT_PRIEST_OVERLORDS</Type>
+			<Button>Art/Interface/Buttons/Units/Burnpriest.dds</Button>
+			<fScale>0.55</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Heroes/Burnt_Priest/Spearman.nif</NIF>
+			<KFM>Art/Units/Spearman/Spearman.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
 		<UnitArtInfo>  <!-- UNIT_DISCIPLE_OCTOPUS_OVERLORDS -->
 			<Type>ART_DEF_UNIT_DISCIPLE_OVERLORDS</Type>
 			<Button>Art/Interface/Buttons/Units/Disciple Overlords.dds</Button>
@@ -35698,6 +35919,29 @@
 		</UnitArtInfo>
 <!-- Octopus Overlords End -->
 <!-- Order Start -->
+		<UnitArtInfo> <!-- UNIT_ASHMEDAI -->
+			<Type>ART_DEF_UNIT_ASHMEDAI</Type>
+			<Button>Art/Interface/Buttons/Units/Ashmedai.dds</Button>
+			<fScale>0.55</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Heroes/Ashmedai/HeavySpearman.nif</NIF>
+			<KFM>Art/Units/Charlemagne_HeavySpearman/HeavySpearman.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
 		<UnitArtInfo>  <!-- UNIT_CRUSADER -->
 			<Type>ART_DEF_UNIT_CRUSADER</Type>
 			<Button>Art/Interface/Buttons/Units/Crusader.dds</Button>

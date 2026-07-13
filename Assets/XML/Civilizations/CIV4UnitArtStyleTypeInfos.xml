@@ -3119,6 +3119,22 @@
 			<Type>UNIT_ARTSTYLE_ONCE_ELF</Type>
 			<StyleUnits>
 				<StyleUnit>
+					<UnitType>UNIT_WAR_CHARIOT</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_WAR_CHARIOT_ONCE_ELVES</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_WAR_CHARIOT_ONCE_ELVES</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_WAR_CHARIOT_ONCE_ELVES</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_CHARIOT</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_CHARIOT_ONCE_ELVES</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_CHARIOT_ONCE_ELVES</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_CHARIOT_ONCE_ELVES</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
 					<UnitType>UNIT_CHAMPION</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_CHAMPION_ONCE_ELVES</EarlyArtDefineTag>
