@@ -387,7 +387,7 @@
 			<TrainXPCaps>
 				<TrainXPCap>
 					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
-					<iTrainXPCap>5</iTrainXPCap>
+					<iTrainXPCap>4</iTrainXPCap>
 				</TrainXPCap>
 				<TrainXPCap>
 					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>

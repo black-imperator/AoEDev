@@ -13075,6 +13075,38 @@
 			<bRequiresFlatlands>1</bRequiresFlatlands>
 			<bRequiresFeature>1</bRequiresFeature>
 			<bPermanent>1</bPermanent>
+			<bExplorable>1</bExplorable>
+			<iLairTier>3</iLairTier>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_VOLCANO</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_SUBTERRAN_MAJOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_SUBTERRAN_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_SUBTERRAN_MODERATE</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LIZARD_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LIZARD_MAJOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LIZARD_MODERATE</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
 			<iHappiness>100</iHappiness>
 			<FeatureMakesValids>
 				<FeatureMakesValid>

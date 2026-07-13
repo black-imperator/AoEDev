@@ -296,5 +296,67 @@
 			<BarbarianClass>NONE</BarbarianClass>
 			<PythonCallback>exploreLairRogueNecromancerBad</PythonCallback>
 		</GoodyInfo>
+		
+		<!--<GoodyInfo>	<!{1}**Discover the Elohim	- LAIR CIVILIZATION SPAWN **{1}>
+			<Type>GOODY_FREE_ELOHIM</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_VOLCANO</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_BAIR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_CLOCKWORK</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_EYES</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LETUM</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_PATRIA</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_PYRE</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_SEPULCHER</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_ABADDON</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_ASMODAY</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_WANDERING_CASTLE</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_WHISPERING</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>5</iWeight>
+			<Description>TXT_KEY_GOODY_FREED_ELOHIM</Description>
+			<Sound>AS2D_GOODY_SETTLER</Sound>
+			<iDestroyLairChance>0</iDestroyLairChance>
+			<bUnique>1</bUnique>
+			<bBad>0</bBad>
+			<PythonPrereq>reqLairFree</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+		</GoodyInfo>-->
 	</GoodyInfos>
 </Civ4GoodyInfo>

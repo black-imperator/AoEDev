@@ -13216,12 +13216,16 @@ def exploreSlavers(argsList):
 
 
 def reqLairFreeIllians(argsList):
-        iCiv		= [gc.getInfoTypeForString("CIVILIZATION_ILLIANS")]
+#	Enable this once DLL updated
+#	if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_LAIR_CIVILIZATIONS):
+#		return False
+	if CyGame().getNumCivActive(gc.getInfoTypeForString('CIVILIZATION_ILLIANS')) > 0:
+		return False
 
-        if CyGame().getNumCivActive(gc.getInfoTypeForString('CIVILIZATION_ILLIANS')) > 0: return False
-        #Currently not working
-        if not gc.getCivilizationInfo(iCiv).isPlayable() : return False
-        return True
+	if not gc.getCivilizationInfo(gc.getInfoTypeForString('CIVILIZATION_ILLIANS')).isPlayable():
+		return False
+
+	return True
 
 def exploreLairFreeIllians(argsList):
 	pUnit, pPlot = argsList

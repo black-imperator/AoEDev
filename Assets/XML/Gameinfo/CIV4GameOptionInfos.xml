@@ -321,6 +321,13 @@
 			<bDefault>0</bDefault>
 			<bVisible>1</bVisible>
 		</GameOptionInfo>
+		<GameOptionInfo>		<!-- No Freed Civilizations -->
+			<Type>GAMEOPTION_LAIR_CIVILIZATIONS</Type>
+			<Description>TXT_KEY_GAME_OPTION_LAIR_CIVILIZATIONS</Description>
+			<Help>TXT_KEY_GAME_OPTION_LAIR_CIVILIZATIONS_HELP</Help>
+			<bDefault>0</bDefault>
+			<bVisible>1</bVisible>
+		</GameOptionInfo>
 		<GameOptionInfo>		<!-- No Lairs -->
 			<Type>GAMEOPTION_NO_LAIRS</Type>
 			<Description>TXT_KEY_GAME_OPTION_NO_LAIRS</Description>
@@ -438,21 +445,21 @@
 			<Description>TXT_KEY_GAME_OPTION_NO_ACHERON</Description>
 			<Help>TXT_KEY_GAME_OPTION_NO_ACHERON_HELP</Help>
 			<bDefault>0</bDefault>
-			<bVisible>0</bVisible>
+			<bVisible>1</bVisible>
 		</GameOptionInfo>
 		<GameOptionInfo>		<!-- No Duin -->
 			<Type>GAMEOPTION_NO_DUIN</Type>
 			<Description>TXT_KEY_GAME_OPTION_NO_DUIN</Description>
 			<Help>TXT_KEY_GAME_OPTION_NO_DUIN_HELP</Help>
 			<bDefault>0</bDefault>
-			<bVisible>0</bVisible>
+			<bVisible>1</bVisible>
 		</GameOptionInfo>
 		<GameOptionInfo>		<!-- No Orthus -->
 			<Type>GAMEOPTION_NO_ORTHUS</Type>
 			<Description>TXT_KEY_GAME_OPTION_NO_ORTHUS</Description>
 			<Help>TXT_KEY_GAME_OPTION_NO_ORTHUS_HELP</Help>
 			<bDefault>0</bDefault>
-			<bVisible>0</bVisible>
+			<bVisible>1</bVisible>
 		</GameOptionInfo>
 		<GameOptionInfo>		<!-- Religious Hud -->
 			<Type>GAMEOPTION_RELIGIOUS_HUD</Type>

@@ -558,6 +558,22 @@
 		<Spanish>No Inflation</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_GAME_OPTION_LAIR_CIVILIZATIONS_HELP</Tag>
+		<English>Block Civilizations from being freed from lairs</English>
+		<French>Block Civilizations from being freed from lairs</French>
+		<German>Block Civilizations from being freed from lairs</German>
+		<Italian>Block Civilizations from being freed from lairs</Italian>
+		<Spanish>Block Civilizations from being freed from lairs</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GAME_OPTION_LAIR_CIVILIZATIONS</Tag>
+		<English>No Freed Civilizations</English>
+		<French>No Freed Civilizations</French>
+		<German>No Freed Civilizations</German>
+		<Italian>No Freed Civilizations</Italian>
+		<Spanish>No Freed Civilizations</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_GAME_OPTION_NO_LAIRS</Tag>
 		<English>No Lairs</English>
 		<French>Pas de donjons</French>

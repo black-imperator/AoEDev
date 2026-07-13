@@ -298,6 +298,57 @@
 			<DamageType>DAMAGE_POISON</DamageType>
 			<iDamageLimit>50</iDamageLimit>
 		</GoodyInfo>
+		<!--<GoodyInfo>	<!{1}**Discover the Archos	- CIVILIZATION LAIR SPAWNS **{1}>
+			<Type>GOODY_FREE_ARCHOS</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_ANIMAL_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>10</iWeight>
+			<Description>TXT_KEY_GOODY_FREED_ARCHOS</Description>
+			<Sound>AS2D_GOODY_HOSTILE</Sound>
+			<iDestroyLairChance>0</iDestroyLairChance>
+			<bUnique>1</bUnique>
+			<bBad>1</bBad>
+			<PythonPrereq>reqLairFree</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+		</GoodyInfo>
+		<GoodyInfo>	<!{1}**Discover the Doviello	 **{1}>
+			<Type>GOODY_FREE_DOVIELLO</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_ANIMAL_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>10</iWeight>
+			<Description>TXT_KEY_GOODY_FREED_DOVIELLO</Description>
+			<Sound>AS2D_GOODY_HOSTILE</Sound>
+			<iDestroyLairChance>0</iDestroyLairChance>
+			<bUnique>1</bUnique>
+			<bBad>1</bBad>
+			<PythonPrereq>reqLairFree</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+		</GoodyInfo>
+		<GoodyInfo>	<!{1}**Discover the Malakim	 **{1}>
+			<Type>GOODY_FREE_MALAKIM</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_ANIMAL_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>10</iWeight>
+			<Description>TXT_KEY_GOODY_FREED_MALAKIM</Description>
+			<Sound>AS2D_GOODY_GOLD</Sound>
+			<iDestroyLairChance>0</iDestroyLairChance>
+			<bUnique>1</bUnique>
+			<bBad>0</bBad>
+			<PythonPrereq>reqLairFree</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+		</GoodyInfo>-->
 
 <!--Nature Minor Blood promotions alternative-->
 		<GoodyInfo> <!--Random Blood-->

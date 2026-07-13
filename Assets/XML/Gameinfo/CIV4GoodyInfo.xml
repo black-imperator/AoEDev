@@ -5559,22 +5559,379 @@
 			<PythonCallback>exploreLairClockworkGolem</PythonCallback>
 			<PrereqEra>ERA_CLASSICAL</PrereqEra>
 		</GoodyInfo>
-		<GoodyInfo>	<!--Discover the Illians test - LAIR CIVILIZATION SPAWNS -->
+		<GoodyInfo>	<!--Discover the Illians	 - LAIR CIVILIZATION SPAWNS -->
 			<Type>GOODY_FREE_ILLIANS</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LETUM</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>10</iWeight>
+			<Description>TXT_KEY_GOODY_FREED_ILLIANS</Description>
+			<Sound>AS2D_GOODY_HOSTILE</Sound>
+			<iDestroyLairChance>0</iDestroyLairChance>
+			<bUnique>1</bUnique>
+			<bBad>1</bBad>
+			<PythonPrereq>reqLairFreeIllians</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+		</GoodyInfo>
+		<!--<GoodyInfo>	<!{1}**Discover the Amurites	 **{1}>
+			<Type>GOODY_FREE_AMURITES</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>10</iWeight>
+			<Description>TXT_KEY_GOODY_FREED_AMURITE</Description>
+			<Sound>AS2D_GOODY_SCOUT</Sound>
+			<iDestroyLairChance>0</iDestroyLairChance>
+			<bUnique>1</bUnique>
+			<bBad>0</bBad>
+			<PythonPrereq>reqLairFree</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+		</GoodyInfo>
+		<GoodyInfo>	<!{1}**Discover the Austrin	 **{1}>
+			<Type>GOODY_FREE_AUSTRIN</Type>
 			<GoodyClasses>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
-			<iWeight>999999999</iWeight>
-			<Description>TXT_KEY_GOODY_FREED_ILLIANS</Description>
+			<iWeight>1</iWeight>
+			<Description>TXT_KEY_GOODY_FREED_AUSTRIN</Description>
+			<Sound>AS2D_GOODY_MAP</Sound>
+			<iDestroyLairChance>0</iDestroyLairChance>
+			<bUnique>1</bUnique>
+			<bBad>0</bBad>
+			<PythonPrereq>reqLairFree</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+		</GoodyInfo>
+		<GoodyInfo>	<!{1}**Discover the Balseraph	 **{1}>
+			<Type>GOODY_FREE_BALSERAPH</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_EYES</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>10</iWeight>
+			<Description>TXT_KEY_GOODY_FREED_BALSERAPH</Description>
+			<Sound>AS2D_GOODY_HOSTILE</Sound>
+			<iDestroyLairChance>0</iDestroyLairChance>
+			<bUnique>1</bUnique>
+			<bBad>1</bBad>
+			<PythonPrereq>reqLairFree</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+		</GoodyInfo>
+		<GoodyInfo>	<!{1}**Discover the Calabim	 **{1}>
+			<Type>GOODY_FREE_CALABIM</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_BANDIT_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>10</iWeight>
+			<Description>TXT_KEY_GOODY_FREED_CALABIM</Description>
+			<Sound>AS2D_GOODY_HOSTILE</Sound>
+			<iDestroyLairChance>0</iDestroyLairChance>
+			<bUnique>1</bUnique>
+			<bBad>1</bBad>
+			<PythonPrereq>reqLairFree</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+		</GoodyInfo>
+		<GoodyInfo>	<!{1}**Discover the Chislev	 **{1}>
+			<Type>GOODY_FREE_CHISLEV</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_GOBLIN_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>10</iWeight>
+			<Description>TXT_KEY_GOODY_FREED_CHISLEV</Description>
+			<Sound>AS2D_GOODY_SCOUT</Sound>
+			<iDestroyLairChance>0</iDestroyLairChance>
+			<bUnique>1</bUnique>
+			<bBad>0</bBad>
+			<PythonPrereq>reqLairFree</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+		</GoodyInfo>
+		<GoodyInfo>	<!{1}**Discover the Cualli	 **{1}>
+			<Type>GOODY_FREE_CUALLI</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LIZARD_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>10</iWeight>
+			<Description>TXT_KEY_GOODY_FREED_CUALLI</Description>
+			<Sound>AS2D_GOODY_HOSTILE</Sound>
+			<iDestroyLairChance>0</iDestroyLairChance>
+			<bUnique>1</bUnique>
+			<bBad>1</bBad>
+			<PythonPrereq>reqLairFree</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+		</GoodyInfo>
+		<GoodyInfo>	<!{1}**Discover the Grigori	 **{1}>
+			<Type>GOODY_FREE_GRIGORI</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_SUBTERRAN_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>10</iWeight>
+			<Description>TXT_KEY_GOODY_FREED_GRIGORI</Description>
+			<Sound>AS2D_GOODY_SETTLER</Sound>
+			<iDestroyLairChance>0</iDestroyLairChance>
+			<bUnique>1</bUnique>
+			<bBad>0</bBad>
+			<PythonPrereq>reqLairFree</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+		</GoodyInfo>
+		<GoodyInfo>	<!{1}**Discover the Hippus	 **{1}>
+			<Type>GOODY_FREE_HIPPUS</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_BANDIT_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>10</iWeight>
+			<Description>TXT_KEY_GOODY_FREED_HIPPUS</Description>
+			<Sound>AS2D_GOODY_SCOUT</Sound>
+			<iDestroyLairChance>0</iDestroyLairChance>
+			<bUnique>1</bUnique>
+			<bBad>0</bBad>
+			<PythonPrereq>reqLairFree</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+		</GoodyInfo>
+		<GoodyInfo>	<!{1}**Discover the Khazad	 **{1}>
+			<Type>GOODY_FREE_KHAZAD</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_SUBTERRAN_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>10</iWeight>
+			<Description>TXT_KEY_GOODY_FREED_KHAZAD</Description>
+			<Sound>AS2D_GOODY_GOLD</Sound>
+			<iDestroyLairChance>0</iDestroyLairChance>
+			<bUnique>1</bUnique>
+			<bBad>0</bBad>
+			<PythonPrereq>reqLairFree</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+		</GoodyInfo>
+		<GoodyInfo>	<!{1}**Discover the Kuriotates	 **{1}>
+			<Type>GOODY_FREE_KURIOTATES</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_CENTAUR_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>10</iWeight>
+			<Description>TXT_KEY_GOODY_FREED_KURIOTATES</Description>
+			<Sound>AS2D_GOODY_SETTLER</Sound>
+			<iDestroyLairChance>0</iDestroyLairChance>
+			<bUnique>1</bUnique>
+			<bBad>0</bBad>
+			<PythonPrereq>reqLairFree</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+		</GoodyInfo>
+		<GoodyInfo>	<!{1}**Discover the Lanun	 **{1}>
+			<Type>GOODY_FREE_LANUN</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_WATER_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>10</iWeight>
+			<Description>TXT_KEY_GOODY_FREED_LANUN</Description>
+			<Sound>AS2D_GOODY_GOLD</Sound>
+			<iDestroyLairChance>0</iDestroyLairChance>
+			<bUnique>1</bUnique>
+			<bBad>0</bBad>
+			<PythonPrereq>reqLairFree</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+		</GoodyInfo>
+		<GoodyInfo>	<!{1}**Discover the Legion	 **{1}>
+			<Type>GOODY_FREE_THE_LEGION</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_SEPULCHER</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>10</iWeight>
+			<Description>TXT_KEY_GOODY_FREED_LEGION</Description>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>0</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
-			<PythonPrereq>reqLairFreeIllians</PythonPrereq>
+			<PythonPrereq>reqLairFree</PythonPrereq>
 			<PythonCallback>exploreLairFreeCiv</PythonCallback>
 		</GoodyInfo>
+		<GoodyInfo>	<!{1}**Discover the Ljosalfer	 **{1}>
+			<Type>GOODY_FREE_LJOSALFER</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_NATURE_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>10</iWeight>
+			<Description>TXT_KEY_GOODY_FREED_LJOSALFER</Description>
+			<Sound>AS2D_GOODY_SCOUT</Sound>
+			<iDestroyLairChance>0</iDestroyLairChance>
+			<bUnique>1</bUnique>
+			<bBad>0</bBad>
+			<PythonPrereq>reqLairFree</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+		</GoodyInfo>
+		<GoodyInfo>	<!{1}**Discover the Luchuirp	 **{1}>
+			<Type>GOODY_FREE_LUCHUIRP</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_SUBTERRAN_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>10</iWeight>
+			<Description>TXT_KEY_GOODY_FREED_LUCHUIRP</Description>
+			<Sound>AS2D_GOODY_WORKER</Sound>
+			<iDestroyLairChance>0</iDestroyLairChance>
+			<bUnique>1</bUnique>
+			<bBad>0</bBad>
+			<PythonPrereq>reqLairFree</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+		</GoodyInfo>
+		<GoodyInfo>	<!{1}**Discover the Mazatl	 **{1}>
+			<Type>GOODY_FREE_MAZATL</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_VOLCANO</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>10</iWeight>
+			<Description>TXT_KEY_GOODY_FREED_MAZATL</Description>
+			<Sound>AS2D_GOODY_WORKER</Sound>
+			<iDestroyLairChance>0</iDestroyLairChance>
+			<bUnique>1</bUnique>
+			<bBad>0</bBad>
+			<PythonPrereq>reqLairFree</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+		</GoodyInfo>
+		<GoodyInfo>	<!{1}**Discover the Mechanos	 **{1}>
+			<Type>GOODY_FREE_MECHANOS</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_CLOCKWORK</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>10</iWeight>
+			<Description>TXT_KEY_GOODY_FREED_MECHANOS</Description>
+			<Sound>AS2D_GOODY_SETTLER</Sound>
+			<iDestroyLairChance>0</iDestroyLairChance>
+			<bUnique>1</bUnique>
+			<bBad>0</bBad>
+			<PythonPrereq>reqLairFree</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+		</GoodyInfo>
+		<GoodyInfo>	<!{1}**Discover the Mekara	 **{1}>
+			<Type>GOODY_FREE_MEKARA</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_BANDIT_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>10</iWeight>
+			<Description>TXT_KEY_GOODY_FREED_MEKARA</Description>
+			<Sound>AS2D_GOODY_HOSTILE</Sound>
+			<iDestroyLairChance>0</iDestroyLairChance>
+			<bUnique>1</bUnique>
+			<bBad>1</bBad>
+			<PythonPrereq>reqLairFree</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+		</GoodyInfo>
+		<GoodyInfo>	<!{1}**Discover the Scions	 **{1}>
+			<Type>GOODY_FREE_SCIONS</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_SUBTERRAN_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>10</iWeight>
+			<Description>TXT_KEY_GOODY_FREED_SCIONS</Description>
+			<Sound>AS2D_GOODY_HEAL</Sound>
+			<iDestroyLairChance>0</iDestroyLairChance>
+			<bUnique>1</bUnique>
+			<bBad>0</bBad>
+			<PythonPrereq>reqLairFree</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+		</GoodyInfo>
+		<GoodyInfo>	<!{1}**Discover the Sheaim	 **{1}>
+			<Type>GOODY_FREE_SHEAIM</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_BAIR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>10</iWeight>
+			<Description>TXT_KEY_GOODY_FREED_SHEAIM</Description>
+			<Sound>AS2D_GOODY_HOSTILE</Sound>
+			<iDestroyLairChance>0</iDestroyLairChance>
+			<bUnique>1</bUnique>
+			<bBad>1</bBad>
+			<PythonPrereq>reqLairFree</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+		</GoodyInfo>
+		<GoodyInfo>	<!{1}**Discover the Sidar	 **{1}>
+			<Type>GOODY_FREE_SIDAR</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_SPIRIT_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>10</iWeight>
+			<Description>TXT_KEY_GOODY_FREED_SIDAR</Description>
+			<Sound>AS2D_GOODY_SCOUT</Sound>
+			<iDestroyLairChance>0</iDestroyLairChance>
+			<bUnique>1</bUnique>
+			<bBad>0</bBad>
+			<PythonPrereq>reqLairFree</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+		</GoodyInfo>
+		<GoodyInfo>	<!{1}**Discover the Svartalfer	 **{1}>
+			<Type>GOODY_FREE_SVARTALFER</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_NATURE_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>10</iWeight>
+			<Description>TXT_KEY_GOODY_FREED_SVARTALFER</Description>
+			<Sound>AS2D_GOODY_HOSTILE</Sound>
+			<iDestroyLairChance>0</iDestroyLairChance>
+			<bUnique>1</bUnique>
+			<bBad>1</bBad>
+			<PythonPrereq>reqLairFree</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+		</GoodyInfo>-->
 	</GoodyInfos>
 </Civ4GoodyInfo>

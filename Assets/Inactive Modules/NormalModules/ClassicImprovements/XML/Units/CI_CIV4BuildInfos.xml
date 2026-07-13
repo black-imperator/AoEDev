@@ -1921,7 +1921,7 @@
 			<Description>TXT_KEY_BUILD_FISHING_BOATS</Description>
 			<Help/>
 			<PrereqTech>TECH_FISHING</PrereqTech>
-			<iTime>200</iTime>
+			<iTime>400</iTime>
 			<iCost>0</iCost>
 			<ImprovementType>IMPROVEMENTCLASS_FISHING_BOATS</ImprovementType>
 			<RouteType>NONE</RouteType>
@@ -1939,7 +1939,7 @@
 			<Description>TXT_KEY_BUILD_PIRATE_COVE</Description>
 			<Help/>
 			<PrereqTech>TECH_SEAFARING</PrereqTech>
-			<iTime>200</iTime>
+			<iTime>400</iTime>
 			<iCost>0</iCost>
 			<ImprovementType>IMPROVEMENTCLASS_PIRATE_COVE</ImprovementType>
 			<RouteType>NONE</RouteType>
@@ -2156,7 +2156,7 @@
 			<Description>TXT_KEY_BUILD_TRAWLING_BOATS</Description>
 			<Help/>
 			<PrereqTech>TECH_OPTICS</PrereqTech>
-			<iTime>1350</iTime>
+			<iTime>400</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<ImprovementType>IMPROVEMENTCLASS_TRAWLING_BOATS</ImprovementType>
@@ -2184,7 +2184,7 @@
 			<Description>TXT_KEY_BUILD_TRAWLING_BOATS</Description>
 			<Help/>
 			<PrereqTech>TECH_OPTICS</PrereqTech>
-			<iTime>1350</iTime>
+			<iTime>400</iTime>
 			<iCost>0</iCost>
 			<ImprovementType>IMPROVEMENTCLASS_TRAWLING_BOATS</ImprovementType>
 			<RouteType>NONE</RouteType>
@@ -2211,7 +2211,7 @@
 			<Description>TXT_KEY_BUILD_PYRE_AQUATIC</Description>
 			<Help/>
 			<PrereqTech>TECH_DARK_SECRETS</PrereqTech>
-			<iTime>600</iTime>
+			<iTime>400</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<ImprovementType>IMPROVEMENTCLASS_FISHING_BOATS</ImprovementType>
@@ -2270,7 +2270,7 @@
 			<Description>TXT_KEY_BUILD_FISHING_BOATS</Description>
 			<Help/>
 			<PrereqTech>TECH_FISHING</PrereqTech>
-			<iTime>600</iTime>
+			<iTime>400</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<ImprovementType>IMPROVEMENTCLASS_FISHING_BOATS</ImprovementType>
@@ -2304,7 +2304,7 @@
 		</BuildInfo>
 		<BuildInfo> <!-- Fishing Boats Lanun -->
 			<Type>BUILD_FISHING_BOATS_LANUN</Type>
-			<iTime>600</iTime>
+			<iTime>400</iTime>
 			<TechBuildDiscounts>
 				<TechBuildDiscount>
 					<TechType>TECH_SAILING</TechType>
@@ -2325,7 +2325,7 @@
 		</BuildInfo>
 		<BuildInfo> <!-- Fishing Boats Wyrmfisher -->
 			<Type>BUILD_FISHING_BOATS_WYRMFISHER</Type>
-			<iTime>600</iTime>
+			<iTime>400</iTime>
 			<bKill>0</bKill>
 			<TechBuildDiscounts>
 				<TechBuildDiscount>
@@ -2350,7 +2350,7 @@
 			<Description>TXT_KEY_BUILD_PIRATE_COVE</Description>
 			<Help/>
 			<PrereqTech>TECH_SEAFARING</PrereqTech>
-			<iTime>900</iTime>
+			<iTime>400</iTime>
 			<iCost>0</iCost>
 			<ImprovementType>IMPROVEMENTCLASS_PIRATE_COVE</ImprovementType>
 			<RouteType>NONE</RouteType>
