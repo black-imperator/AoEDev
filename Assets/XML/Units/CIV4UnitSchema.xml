@@ -1256,8 +1256,6 @@
 	</ElementType>
 	<ElementType name="iWorkRateChange" content="textOnly" dt:type="int"/><!--  Can increase/decrease the Workrate of a Unit. -->
 	<ElementType name="CaptureUnitClass" content="textOnly"/>
-	<ElementType name="iCombatConversionChance" content="textOnly" dt:type="int"/>
-	<ElementType name="iCombatUnitGenerationChance" content="textOnly" dt:type="int"/>
 	<ElementType name="iSlaveGenerationChance" content="textOnly" dt:type="int"/>
 	<ElementType name="iGiftableXP" content="textOnly" dt:type="float"/>
 	<ElementType name="iCombatExtraDuration" content="textOnly" dt:type="int"/>
@@ -1747,10 +1745,8 @@
 		<element type="iCollateralLimitCap"/>
 		<element type="iCollateralLimitBoost"/>
 		<element type="iCollateralTargetsLimit"/>
-		<element type="iCombatConversionChance"/>
 		<element type="iCombatDmgCapBoost"/>
 		<element type="iCombatExtraDuration"/>
-		<element type="iCombatUnitGenerationChance"/>
 		<element type="iLeashRange"/>
 		<element type="iLeashChance"/>
 		<element type="iCommandLimit"/>

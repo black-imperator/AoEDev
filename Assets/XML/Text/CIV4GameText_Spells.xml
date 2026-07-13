@@ -823,19 +823,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SPELL_ADD_PROMOTION</Tag>
-		<English>[ICON_BULLET]Adds the [LINK=literal]%s1_promotion[\LINK] promotion to units in the caster's stack</English>
-		<French>[ICON_BULLET]Ajoute la promotion [LINK=literal]%s1_promotion[\LINK] à des unités de la case</French>
-		<German>[ICON_BULLET]fügt die [LINK=literal]%s1_promotion[\LINK] Beförderung hinzu</German>
-		<Italian>[ICON_BULLET]Adds the [LINK=literal]%s1_promotion[\LINK] promotion to units in the caster's stack</Italian>
-		<Spanish>[ICON_BULLET]Adds the [LINK=literal]%s1_promotion[\LINK] promotion to units in the caster's stack</Spanish>
+		<English>[ICON_BULLET]Adds the [LINK=%s1]%s2_promotion[\LINK] promotion to units in the caster's stack</English>
+		<French>[ICON_BULLET]Ajoute la promotion [LINK=%s1]%s2_promotion[\LINK] à des unités de la case</French>
+		<German>[ICON_BULLET]fügt die [LINK=%s1]%s2_promotion[\LINK] Beförderung hinzu</German>
+		<Italian>[ICON_BULLET]Adds the [LINK=%s1]%s2_promotion[\LINK] promotion to units in the caster's stack</Italian>
+		<Spanish>[ICON_BULLET]Adds the [LINK=%s1]%s2_promotion[\LINK] promotion to units in the caster's stack</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SPELL_ADD_PROMOTION_AT_RANGE</Tag>
-		<English>[ICON_BULLET]Adds the [LINK=literal]%s1_promotion[\LINK] promotion to units within %d2 range</English>
-		<French>[ICON_BULLET]Ajoute la promotion [LINK=literal]%s1_promotion[\LINK] aux unités à %d2 [NUM3:case:cases] de distance.</French>
-		<German>[ICON_BULLET]fügt die [LINK=literal]%s1_promotion[\LINK] Beförderung für Einheiten innerhalb %d2 Reichweite hinzu</German>
-		<Italian>[ICON_BULLET]Adds the [LINK=literal]%s1_promotion[\LINK] promotion to units within %d2 range</Italian>
-		<Spanish>[ICON_BULLET]Adds the [LINK=literal]%s1_promotion[\LINK] promotion to units within %d2 range</Spanish>
+		<English>[ICON_BULLET]Adds the [LINK=%s1]%s2_promotion[\LINK] promotion to units within %d3 range</English>
+		<French>[ICON_BULLET]Ajoute la promotion [LINK=%s1]%s2_promotion[\LINK] aux unités à %d3 [NUM3:case:cases] de distance.</French>
+		<German>[ICON_BULLET]fügt die [LINK=%s1]%s2_promotion[\LINK] Beförderung für Einheiten innerhalb %d3 Reichweite hinzu</German>
+		<Italian>[ICON_BULLET]Adds the [LINK=%s1]%s2_promotion[\LINK] promotion to units within %d3 range</Italian>
+		<Spanish>[ICON_BULLET]Adds the [LINK=%s1]%s2_promotion[\LINK] promotion to units within %d3 range</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SPELL_REMOVE_PROMOTION_AT_RANGE</Tag>
@@ -847,11 +847,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SPELL_ADD_PROMOTION_CASTER</Tag>
-		<English>[ICON_BULLET]Adds the [LINK=literal]%s1_promotion[\LINK] promotion to the caster</English>
-		<French>[ICON_BULLET]Ajoute la promotion [LINK=literal]%s1_promotion[\LINK] au lanceur.</French>
-		<German>[ICON_BULLET]fügt die [LINK=literal]%s1_promotion[\LINK] Beförderung zum Zaubernden hinzu</German>
-		<Italian>[ICON_BULLET]Adds the [LINK=literal]%s1_promotion[\LINK] promotion to the caster</Italian>
-		<Spanish>[ICON_BULLET]Adds the [LINK=literal]%s1_promotion[\LINK] promotion to the caster</Spanish>
+		<English>[ICON_BULLET]Adds the [LINK=%s1]%s2_promotion[\LINK] promotion to the caster</English>
+		<French>[ICON_BULLET]Ajoute la promotion [LINK=%s1]%s2_promotion[\LINK] au lanceur.</French>
+		<German>[ICON_BULLET]fügt die [LINK=%s1]%s2_promotion[\LINK] Beförderung zum Zaubernden hinzu</German>
+		<Italian>[ICON_BULLET]Adds the [LINK=%s1]%s2_promotion[\LINK] promotion to the caster</Italian>
+		<Spanish>[ICON_BULLET]Adds the [LINK=%s1]%s2_promotion[\LINK] promotion to the caster</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SPELL_ADD_TO_CITY</Tag>

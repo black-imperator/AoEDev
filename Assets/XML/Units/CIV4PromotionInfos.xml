@@ -104,10 +104,8 @@
 			<iCollateralLimitCap>0</iCollateralLimitCap>
 			<iCollateralLimitBoost>0</iCollateralLimitBoost>
 			<iCollateralTargetsLimit>0</iCollateralTargetsLimit>
-			<iCombatConversionChance>0</iCombatConversionChance>
 			<iCombatDmgCapBoost>0</iCombatDmgCapBoost>
 			<iCombatExtraDuration>0</iCombatExtraDuration>
-			<iCombatUnitGenerationChance>0</iCombatUnitGenerationChance>
 			<iCommandLimit>0</iCommandLimit>
 			<iCommandRange>0</iCommandRange>
 			<iCommandXPShareRate>0</iCommandXPShareRate>

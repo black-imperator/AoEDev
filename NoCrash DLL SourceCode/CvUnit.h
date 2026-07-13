@@ -1239,12 +1239,12 @@ public:
 	int getExtraDropRange() const;
 	void setExtraDropRange(int iNewValue);
 	void changeExtraDropRange(int iChange);
-	int getCombatConversionChance() const;
+	/*int getCombatConversionChance() const;
 	void setCombatConversionChance(int iNewValue);
 	void changeCombatConversionChance(int iChange);
 	int getCombatUnitGenerationChance() const;
 	void setCombatUnitGenerationChance(int iNewValue);
-	void changeCombatUnitGenerationChance(int iChange);
+	void changeCombatUnitGenerationChance(int iChange); */
 	int getSlaveGenerationChance() const;
 	void setSlaveGenerationChance(int iNewValue);
 	void changeSlaveGenerationChance(int iChange);

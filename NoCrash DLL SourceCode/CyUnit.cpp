@@ -2378,8 +2378,8 @@ int CyUnit::getAirCombat()							{return m_pUnit ? m_pUnit->getAirCombat() : 0;}
 int CyUnit::getAirCombatLimitBoost()				{return m_pUnit ? m_pUnit->getAirCombatLimitBoost() : 0;}
 int CyUnit::getExtraDropRange()						{return m_pUnit ? m_pUnit->getExtraDropRange() : 0;}
 int CyUnit::getSpellExtraRange() const				{return m_pUnit ? m_pUnit->getSpellExtraRange() : 0;}
-int CyUnit::getCombatConversionChance()				{return m_pUnit ? m_pUnit->getCombatConversionChance() : 0;}
-int CyUnit::getCombatUnitGenerationChance()			{return m_pUnit ? m_pUnit->getCombatUnitGenerationChance() : 0;}
+/*int CyUnit::getCombatConversionChance()				{return m_pUnit ? m_pUnit->getCombatConversionChance() : 0;}
+int CyUnit::getCombatUnitGenerationChance()			{return m_pUnit ? m_pUnit->getCombatUnitGenerationChance() : 0;}*/
 int CyUnit::getSlaveGenerationChance()				{return m_pUnit ? m_pUnit->getSlaveGenerationChance() : 0;}
 int CyUnit::getGiftableXP()							{return m_pUnit ? m_pUnit->getGiftableXP() : 0;}
 int CyUnit::getCombatExtraDuration()				{return m_pUnit ? m_pUnit->getCombatExtraDuration() : 0;}

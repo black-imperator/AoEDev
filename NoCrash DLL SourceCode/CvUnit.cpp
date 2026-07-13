@@ -17410,7 +17410,7 @@ void CvUnit::setSpellExtraRange(int iNewValue)
 void CvUnit::changeSpellExtraRange(int iChange)
 {
 	setSpellExtraRange(getSpellExtraRange() + iChange);
-}
+}/*
 int CvUnit::getCombatConversionChance() const
 {
 	return m_iCombatConversionChance;
@@ -17434,7 +17434,7 @@ void CvUnit::setCombatUnitGenerationChance(int iNewValue)
 void CvUnit::changeCombatUnitGenerationChance(int iChange)
 {
 	setCombatUnitGenerationChance(getCombatUnitGenerationChance() + iChange);
-}
+}*/
 int CvUnit::getSlaveGenerationChance() const
 {
 	return m_iSlaveGenerationChance;
@@ -22524,8 +22524,8 @@ void CvUnit::setHasPromotion(PromotionTypes eIndex, bool bNewValue, bool bSupres
 		changeAirCombatLimitBoost(kPromotion.getAirCombatLimitBoost() * iChange);
 		changeExtraDropRange(kPromotion.getExtraDropRange() * iChange);
 		changeSpellExtraRange(kPromotion.getSpellExtraRange() * iChange);
-		changeCombatConversionChance(kPromotion.getCombatConversionChance() * iChange);
-		changeCombatUnitGenerationChance(kPromotion.getCombatUnitGenerationChance() * iChange);
+	//	changeCombatConversionChance(kPromotion.getCombatConversionChance() * iChange);
+	//	changeCombatUnitGenerationChance(kPromotion.getCombatUnitGenerationChance() * iChange);
 		changeSlaveGenerationChance(kPromotion.getSlaveGenerationChance() * iChange);
 		changeGiftableXP(kPromotion.getGiftableXP() * iChange);
 		changeCombatExtraDuration(kPromotion.getCombatExtraDuration() * iChange);

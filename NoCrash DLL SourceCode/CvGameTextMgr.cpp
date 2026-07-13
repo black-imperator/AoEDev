@@ -1487,7 +1487,7 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 
 		if (!bShort)
 		{
-			if (pUnit->getCombatConversionChance() != 0)
+			/*if (pUnit->getCombatConversionChance() != 0)
 			{
 				szString.append(NEWLINE);
 				szString.append(gDLL->getText("TXT_KEY_UNIT_COMBAT_CONVERSION_CHANCE", pUnit->getCombatConversionChance()));
@@ -1497,7 +1497,7 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 			{
 				szString.append(NEWLINE);
 				szString.append(gDLL->getText("TXT_KEY_UNIT_COMBAT_UNIT_GENERATION_CHANCE", pUnit->getCombatUnitGenerationChance()));
-			}
+			}*/
 
 			if (pUnit->getSlaveGenerationChance() + GC.getUnitInfo(pUnit->getUnitType()).getEnslavementChance() + GET_PLAYER(pUnit->getOwnerINLINE()).getEnslavementChance() > 0)
 			{
@@ -14708,40 +14708,32 @@ void CvGameTextMgr::parseSpellHelp(CvWStringBuffer &szBuffer, SpellTypes eSpell,
 			}
 		}
 	}
-	// TODO Ronkhar : transform into generic code (bug 477)
-	if (GC.getSpellInfo(eSpell).getRemovePromotionType1() != NO_PROMOTION)
-	{
-		if (GC.getSpellInfo(eSpell).isBuffCasterOnly())
-		{
-			szBuffer.append(pcNewline);
-			szBuffer.append(gDLL->getText("TXT_KEY_SPELL_REMOVE_PROMOTION_CASTER", GC.getPromotionInfo((PromotionTypes)GC.getSpellInfo(eSpell).getRemovePromotionType1()).getTextKeyWide()));
-			if (GC.getSpellInfo(eSpell).getRemovePromotionType2() != NO_PROMOTION)
-			{
-				szBuffer.append(pcNewline);
-				szBuffer.append(gDLL->getText("TXT_KEY_SPELL_REMOVE_PROMOTION_CASTER", GC.getPromotionInfo((PromotionTypes)GC.getSpellInfo(eSpell).getRemovePromotionType2()).getTextKeyWide()));
-			}
-			if (GC.getSpellInfo(eSpell).getRemovePromotionType3() != NO_PROMOTION)
-			{
-				szBuffer.append(pcNewline);
-				szBuffer.append(gDLL->getText("TXT_KEY_SPELL_REMOVE_PROMOTION_CASTER", GC.getPromotionInfo((PromotionTypes)GC.getSpellInfo(eSpell).getRemovePromotionType3()).getTextKeyWide()));
-			}
-		}
-		else
-		{
-			szBuffer.append(pcNewline);
-			szBuffer.append(gDLL->getText("TXT_KEY_SPELL_REMOVE_PROMOTION", GC.getPromotionInfo((PromotionTypes)GC.getSpellInfo(eSpell).getRemovePromotionType1()).getTextKeyWide()));
-			if (GC.getSpellInfo(eSpell).getRemovePromotionType2() != NO_PROMOTION)
-			{
-				szBuffer.append(pcNewline);
-				szBuffer.append(gDLL->getText("TXT_KEY_SPELL_REMOVE_PROMOTION", GC.getPromotionInfo((PromotionTypes)GC.getSpellInfo(eSpell).getRemovePromotionType2()).getTextKeyWide()));
-			}
-			if (GC.getSpellInfo(eSpell).getRemovePromotionType3() != NO_PROMOTION)
-			{
-				szBuffer.append(pcNewline);
-				szBuffer.append(gDLL->getText("TXT_KEY_SPELL_REMOVE_PROMOTION", GC.getPromotionInfo((PromotionTypes)GC.getSpellInfo(eSpell).getRemovePromotionType3()).getTextKeyWide()));
-			}
-		}
-	}
+	//// TODO Ronkhar : transform into generic code (bug 477)
+	//if (GC.getSpellInfo(eSpell).getRemovePromotionType1() != NO_PROMOTION)
+	//{
+	//	if (GC.getSpellInfo(eSpell).isBuffCasterOnly())
+	//	{
+	//		szBuffer.append(pcNewline);
+	//		szBuffer.append(gDLL->getText("TXT_KEY_SPELL_REMOVE_PROMOTION_CASTER", GC.getPromotionInfo((PromotionTypes)GC.getSpellInfo(eSpell).getRemovePromotionType1()).getTextKeyWide()));
+	//		if (GC.getSpellInfo(eSpell).getRemovePromotionType2() != NO_PROMOTION)
+	//		{
+	//			szBuffer.append(pcNewline);
+	//			szBuffer.append(gDLL->getText("TXT_KEY_SPELL_REMOVE_PROMOTION_CASTER", GC.getPromotionInfo((PromotionTypes)GC.getSpellInfo(eSpell).getRemovePromotionType2()).getTextKeyWide()));
+	//		}
+	//		szBuffer.append(pcNewline);
+	//		szBuffer.append(gDLL->getText("TXT_KEY_SPELL_REMOVE_PROMOTION", GC.getPromotionInfo((PromotionTypes)GC.getSpellInfo(eSpell).getRemovePromotionType1()).getTextKeyWide()));
+	//		if (GC.getSpellInfo(eSpell).getRemovePromotionType2() != NO_PROMOTION)
+	//		{
+	//			szBuffer.append(pcNewline);
+	//			szBuffer.append(gDLL->getText("TXT_KEY_SPELL_REMOVE_PROMOTION", GC.getPromotionInfo((PromotionTypes)GC.getSpellInfo(eSpell).getRemovePromotionType2()).getTextKeyWide()));
+	//		}
+	//		if (GC.getSpellInfo(eSpell).getRemovePromotionType3() != NO_PROMOTION)
+	//		{
+	//			szBuffer.append(pcNewline);
+	//			szBuffer.append(gDLL->getText("TXT_KEY_SPELL_REMOVE_PROMOTION", GC.getPromotionInfo((PromotionTypes)GC.getSpellInfo(eSpell).getRemovePromotionType3()).getTextKeyWide()));
+	//		}
+	//	}
+	//}
 /*************************************************************************************************/
 /**	New Tag Defs	(SpellInfos)			05/15/08								Xienwolf	**/
 /**																								**/
@@ -20239,7 +20231,7 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_SEE_INVISIBLE"));
 	}
-	std::vector<CvWString> szSpecialistNameBuffer(GC.getNumSpecialistClassInfos());
+	CvWString* szSpecialistNameBuffer = new CvWString[GC.getNumSpecialistClassInfos()];
 	bool* bBufferEmpty = new bool[GC.getNumSpecialistClassInfos()];
 	for (int iI = 0; iI < GC.getNumSpecialistClassInfos(); ++iI)
 	{
@@ -20353,12 +20345,13 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 			}
 		}
 
-		if (kBuilding.getFreeSpecialistClassCount(iI) > 0)
-		{
-			szBuffer.append(NEWLINE);
-			szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_FREE_SPECIALIST", kBuilding.getFreeSpecialistClassCount(iI), szSpecialistNameBuffer[iI].GetCString()));
-		}
+//		if (kBuilding.getFreeSpecialistClassCount(iI) > 0)
+//		{
+//			szBuffer.append(NEWLINE);
+//			szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_FREE_SPECIALIST", kBuilding.getFreeSpecialistClassCount(iI), szSpecialistNameBuffer[iI].GetCString(), szSpecialistNameBuffer[iI].GetCString()));
+//		}
 	}
+	SAFE_DELETE_ARRAY(szSpecialistNameBuffer);
 	SAFE_DELETE_ARRAY(bBufferEmpty);
 
 	if (kBuilding.isNoCivicAnger())
@@ -26818,7 +26811,7 @@ void CvGameTextMgr::setImprovementHelp(CvWStringBuffer &szBuffer, ImprovementTyp
 	if (info.getImmediateSpawnGroupType() != NO_SPAWNGROUP)
 	{
 		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_IMMEDIATE_SPAWN_UNIT_TYPE", GC.getSpawnGroupInfo((SpawnGroupTypes)info.getImmediateSpawnGroupType()).getDescription(), GC.getCivilizationInfo((CivilizationTypes)info.getSpawnUnitCiv()).getAdjective()));
+		szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_IMMEDIATE_SPAWN_UNIT_TYPE", ((CvWString)GC.getSpawnGroupInfo((SpawnGroupTypes)info.getImmediateSpawnGroupType()).getType()).c_str(), GC.getSpawnGroupInfo((SpawnGroupTypes)info.getImmediateSpawnGroupType()).getDescription(), GC.getCivilizationInfo((CivilizationTypes)info.getSpawnUnitCiv()).getAdjective()));
 	}
 /*************************************************************************************************/
 /**	New Tag Defs							END													**/
