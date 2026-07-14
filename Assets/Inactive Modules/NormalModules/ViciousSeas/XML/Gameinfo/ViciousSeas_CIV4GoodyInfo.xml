@@ -130,7 +130,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>100</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairGoldenAge</PythonCallback>
+			<PythonCallback>exploreLairGoldenAge(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--Heroic-->
 			<Type>GOODY_EXPLORE_LAIR_HEROIC_WATER</Type>
@@ -177,7 +177,7 @@
 			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_COMMANDER_SECONDARY</Description>
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
-			<PythonCallback>exploreLairSecondaryCommander</PythonCallback>
+			<PythonCallback>exploreLairSecondaryCommander(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Treasure-->
 			<Type>GOODY_EXPLORE_LAIR_TREASURE_WATER</Type>
@@ -192,7 +192,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>70</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairTreasure</PythonCallback>
+			<PythonCallback>exploreLairTreasure(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Urn Rotting Flesh		 Unique-->
 			<Type>GOODY_EXPLORE_LAIR_ITEM_URN_ROTTING_FLESH_5_WATER</Type>
@@ -241,7 +241,7 @@
 			<Description>TXT_KEY_MESSAGE_EXPLORE_LAIR_GEAR_STASH</Description>
 			<Sound>AS2D_GOODY_SETTLER</Sound>
 			<bBad>0</bBad>
-			<PythonCallback>exploreGearStash</PythonCallback>
+			<PythonCallback>exploreGearStash(pUnit,pPlot)</PythonCallback>
 			<PythonPrereq>reqGearStash</PythonPrereq>
 		</GoodyInfo>
 	</GoodyInfos>

@@ -155,6 +155,11 @@ def canCast(argsList):
 	spell = gc.getSpellInfo(eSpell)
 	return eval(spell.getPyRequirement())
 
+def doGoody(argsList):
+	pUnit,eGoody,pPlot=argsList
+	goody=gc.getGoodyInfo(eGoody)
+	eval(goody.getPythonCallback())
+
 def effect(argsList):
 	pCaster, eProm = argsList
 	prom = gc.getPromotionInfo(eProm)
@@ -13227,10 +13232,9 @@ def reqLairFreeIllians(argsList):
 
 	return True
 
-def  exploreLairFreeCiv(argsList, sCiv='', sLeader=' '): 
+def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader): 
 	print "startingexplorelairfreeciv DEF"
 	szBuffer = ''
-	pUnit, pPlot = argsList
 	iPlayer		= pUnit.getOwner()
 	pPlayer		= gc.getPlayer(iPlayer)
 	iNewPlayer	= getOpenPlayer()

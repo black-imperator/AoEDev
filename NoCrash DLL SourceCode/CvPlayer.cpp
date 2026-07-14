@@ -7613,12 +7613,14 @@ void CvPlayer::receiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit)
 
 	if (!CvString(GC.getGoodyInfo(eGoody).getPythonCallback()).empty())
 	{
+		CvString data = CvString(GC.getGoodyInfo(eGoody).getPythonCallback());
 		CyUnit* pyUnit = new CyUnit(pUnit);
 		CyPlot* pyPlot = new CyPlot(pPlot);
 		CyArgsList argsList;
 		argsList.add(gDLL->getPythonIFace()->makePythonObject(pyUnit));
+		argsList.add(eGoody);
 		argsList.add(gDLL->getPythonIFace()->makePythonObject(pyPlot));
-		gDLL->getPythonIFace()->callFunction(PYSpellModule, GC.getGoodyInfo(eGoody).getPythonCallback(), argsList.makeFunctionArgs());
+		gDLL->getPythonIFace()->callFunction(PYSpellModule, "doGoody", argsList.makeFunctionArgs());
 		delete pyUnit;
 		delete pyPlot;
 	}

@@ -7459,11 +7459,12 @@
 	</TEXT>
 	<TEXT>	<!--DEMAND_TRIBUTE_EQ -->
 		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_LEADER_KORINNA</Tag>
-		<English>Friend, will you help me fuflil my duty?</English>
-		<French>Friend, will you help me fuflil my duty?</French>
-		<German>Friend, will you help me fuflil my duty?</German>
-		<Italian>Friend, will you help me fuflil my duty?</Italian>
-		<Spanish>Friend, will you help me fuflil my duty?</Spanish>
+		<English>Friend, will you help me fufill my duty?</English>
+		<French>Friend, will you help me fufill my duty?</French>
+		<German>Friend, will you help me fufill my duty?</German>
+		<Italian>Friend, will you help me fufill my duty?</Italian>
+		<Spanish>Friend, will you help me fufill my duty?</Spanish>
+		<Spanish>Friend, will you help me fufill my duty?</Spanish>
 	</TEXT>
 	<TEXT>	<!--DEMAND_TRIBUTE_WE -->
 		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_LEADER_KORINNA</Tag>

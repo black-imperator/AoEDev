@@ -30,7 +30,7 @@
 			<bTech>0</bTech>
 			<bBad>1</bBad>
 			<UnitClass>NONE</UnitClass>
-			<PythonCallback>exploreLairSerpentTribe</PythonCallback>
+			<PythonCallback>exploreLairSerpentTribe(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 	
 	</GoodyInfos>

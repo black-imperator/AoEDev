@@ -383,6 +383,7 @@ void CyInfoPythonInterface2()
 		/*************************************************************************************************/
 
 		.def("getSound", &CvGoodyInfo::getSound, "string ()")
+		.def("getPythonCallback", &CvGoodyInfo::getPythonCallback, "string ()")
 		;
 
 	python::class_<CvRouteInfo, python::bases<CvInfoBase> >("CvRouteInfo")

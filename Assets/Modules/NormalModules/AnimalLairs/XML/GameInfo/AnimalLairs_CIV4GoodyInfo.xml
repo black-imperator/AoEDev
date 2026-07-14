@@ -19,7 +19,7 @@
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
 			<Sound/>
-			<PythonCallback>exploreLairFriendly</PythonCallback>
+			<PythonCallback>exploreLairFriendly(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 
 		<GoodyInfo> <!--Adds Subdue Animal to a recon unit-->
@@ -72,7 +72,7 @@
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>1</bBad>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
-			<PythonCallback>exploreLairHostileT1</PythonCallback>
+			<PythonCallback>exploreLairHostileT1(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 
 		<GoodyInfo> <!--Goblin Recon Unit attacks player-->
@@ -88,7 +88,7 @@
 			<iDestroyLairChance>60</iDestroyLairChance>
 			<bBad>1</bBad>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
-			<PythonCallback>exploreLairHostileGoblin</PythonCallback>
+			<PythonCallback>exploreLairHostileGoblin(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 
 		<GoodyInfo> <!--Adds Poisoned Blade to a recon unit-->
@@ -161,7 +161,7 @@
 			<iDestroyLairChance>100</iDestroyLairChance>
 			<bBad>0</bBad>
 			<Sound>AS2D_GOODY_GOLD</Sound>
-			<PythonCallback>exploreLairLivestock</PythonCallback>
+			<PythonCallback>exploreLairLivestock(pUnit,pPlot)</PythonCallback>
 			<PythonPrereq>reqLairLivestock</PythonPrereq>
 		</GoodyInfo>	
 		
@@ -200,7 +200,7 @@
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>1</bBad>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
-			<PythonCallback>exploreLairHostileT2</PythonCallback>
+			<PythonCallback>exploreLairHostileT2(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 
 		<GoodyInfo> <!--Adds Great Hunter to any unit (cuz it has no UnitCombat)-->
@@ -273,7 +273,7 @@
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>1</bBad>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
-			<PythonCallback>exploreLairHostileT3</PythonCallback>
+			<PythonCallback>exploreLairHostileT3(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 
 		<GoodyInfo> <!--Adds Withered and Plagued to any unit and damages it-->
@@ -313,7 +313,7 @@
 			<bUnique>1</bUnique>
 			<bBad>1</bBad>
 			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!{1}**Discover the Doviello	 **{1}>
 			<Type>GOODY_FREE_DOVIELLO</Type>
@@ -330,7 +330,7 @@
 			<bUnique>1</bUnique>
 			<bBad>1</bBad>
 			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!{1}**Discover the Malakim	 **{1}>
 			<Type>GOODY_FREE_MALAKIM</Type>
@@ -347,13 +347,13 @@
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
 			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>-->
 
 <!--Nature Minor Blood promotions alternative-->
 		<GoodyInfo> <!--Random Blood-->
 			<Type>GOODY_EXPLORE_LAIR_ANIMAL_BLOOD</Type>
-			<PythonCallback>exploreLairAnimalBlood</PythonCallback>
+			<PythonCallback>exploreLairAnimalBlood(pUnit,pPlot)</PythonCallback>
 			<PythonPrereq>reqLairAnimalBlood</PythonPrereq>
 		</GoodyInfo>
 

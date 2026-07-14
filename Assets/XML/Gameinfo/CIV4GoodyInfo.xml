@@ -47,7 +47,7 @@
 			<UnitClass>UNITCLASS_SETTLER</UnitClass>							<!--Spawns UnitClass, if BarbarianCivilization is not stated - unit spawned for player, please use PythonCallback for unit spawn!-->
 			<BarbarianCivilization>CIVILIZATION_ORC</BarbarianCivilization>		<!--Used to state Civ of created via XML unit, please use PythonCallback for unit spawn!-->
 			<bAnyPromotion>0</bAnyPromotion>									<!--If 0 promotion above can only be applied to unit with valid UnitCombat, if 1 to any unit-->
-			<PythonCallback>exploreGearStash</PythonCallback>					<!--Function called after lair is triggered, Args (pUnit, pPlot)-->
+			<PythonCallback>exploreGearStash(pUnit,pPlot)</PythonCallback>					<!--Function called after lair is triggered, Args (pUnit, pPlot)-->
 			<PythonPrereq>reqGearStash</PythonPrereq>							<!--Function called before lair is added to valid ones, if True is returned function passed prereq, if False - result is not valid, Args (pUnit, pPlot)-->
 			<PrereqEra>ERA_CLASSICAL</PrereqEra>								<!--Era prereq, mostly redundant, there are better ways to do it with GoodyClass and PythonPrereq-->
 			<PrereqAlignment>ALIGNMENT_EVIL</PrereqAlignment>					<!--Alignment prereq-->
@@ -191,14 +191,14 @@
 			<Description>TXT_KEY_GOODY_BARBARIANS</Description>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairWarrior</PythonCallback>
+			<PythonCallback>exploreLairWarrior(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Barb Strong-->
 			<Type>GOODY_BARBARIANS_STRONG</Type>
 			<Description>TXT_KEY_GOODY_BARBARIANS</Description>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairAxemen</PythonCallback>
+			<PythonCallback>exploreLairAxemen(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--DecreaseCounter			Thematic Results Demonic	Good Minor	  -->
 			<Type>GOODY_EXPLORE_LAIR_DECREASE_COUNTER</Type>
@@ -213,7 +213,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>80</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairArmageddonDecrease</PythonCallback>
+			<PythonCallback>exploreLairArmageddonDecrease(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>	
 		<GoodyInfo>	<!-- Deal with Imp -->
 			<Type>GOODY_DEAL_WITH_IMP</Type>
@@ -228,7 +228,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreDealWithImp</PythonCallback>
+			<PythonCallback>exploreDealWithImp(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Urn Rotting Flesh		 Unique-->
 			<Type>GOODY_EXPLORE_LAIR_ITEM_URN_ROTTING_FLESH_6</Type>
@@ -262,7 +262,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>50</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairPitBeast</PythonCallback>
+			<PythonCallback>exploreLairPitBeast(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--IncreaseCounter-->
 			<Type>GOODY_EXPLORE_LAIR_INCREASE_COUNTER</Type>
@@ -277,7 +277,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>40</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairArmageddonIncrease</PythonCallback>
+			<PythonCallback>exploreLairArmageddonIncrease(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>	
 		<GoodyInfo>	<!-- Abandoned Ritual 		Thematic Results Demonic	Good Moderate	-->
 			<Type>GOODY_ABANDONED_RITUAL</Type>
@@ -292,7 +292,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>100</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreAbandonedRitual</PythonCallback>
+			<PythonCallback>exploreAbandonedRitual(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!-- Cowardly Cultist -->
 			<Type>GOODY_COWARDLY_CULTIST</Type>
@@ -307,7 +307,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreCowardlyCultist</PythonCallback>
+			<PythonCallback>exploreCowardlyCultist(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Hellhounds				Thematic Results Demonic 	Bad  Moderate -->
 			<Type>GOODY_MARNOK_HELLHOUNDS</Type>
@@ -322,7 +322,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>50</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairHellhounds</PythonCallback>
+			<PythonCallback>exploreLairHellhounds(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!-- Deal Succubus Trap -->
 			<Type>GOODY_SUCCUBUS_TRAP</Type>
@@ -337,7 +337,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>60</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreSuccubusTrap</PythonCallback>
+			<PythonCallback>exploreSuccubusTrap(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Possessed				Thematic Results Demonic 	Bad  Major    -->
 			<Type>GOODY_MARNOK_POSSESSED</Type>
@@ -371,7 +371,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>40</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairGatesHell</PythonCallback>
+			<PythonCallback>exploreLairGatesHell(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--BeastAgares-->
 			<Type>GOODY_MARNOK_BEAST_AGARES</Type>
@@ -386,7 +386,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>50</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairBeastOfAgares</PythonCallback>
+			<PythonCallback>exploreLairBeastOfAgares(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Map 					Thematic Results Generic 	Good Minor    -->
 			<Type>GOODY_MARNOK_MAP</Type>
@@ -422,7 +422,7 @@
 			<Description>TXT_KEY_MESSAGE_EXPLORE_LAIR_GEAR_STASH</Description>
 			<Sound>AS2D_GOODY_SETTLER</Sound>
 			<bBad>0</bBad>
-			<PythonCallback>exploreGearStash</PythonCallback>
+			<PythonCallback>exploreGearStash(pUnit,pPlot)</PythonCallback>
 			<PythonPrereq>reqGearStash</PythonPrereq>
 		</GoodyInfo>
 		<GoodyInfo> <!--Experience-->
@@ -473,7 +473,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>70</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairTreasure</PythonCallback>
+			<PythonCallback>exploreLairTreasure(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Urn Rotting Flesh		 Unique-->
 			<Type>GOODY_EXPLORE_LAIR_ITEM_URN_ROTTING_FLESH_5</Type>
@@ -665,7 +665,7 @@
 			<Sound></Sound>
 			<iDestroyLairChance>65</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairPortal</PythonCallback>
+			<PythonCallback>exploreLairPortal(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Depths-->
 			<Type>GOODY_EXPLORE_LAIR_DEPTHS</Type>
@@ -680,7 +680,7 @@
 			<Sound></Sound>
 			<iDestroyLairChance>65</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairDepths</PythonCallback>
+			<PythonCallback>exploreLairDepths(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--IronWeapons-->
 			<Type>GOODY_EXPLORE_LAIR_IRON_WEAPONS</Type>
@@ -715,7 +715,7 @@
 			<Description>TXT_KEY_MESSAGE_EXPLORE_FORT</Description>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>0</iDestroyLairChance>
-			<PythonCallback>exploreLairFort</PythonCallback>
+			<PythonCallback>exploreLairFort(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>	
 		<GoodyInfo> <!--Dungeon-->
 			<Type>GOODY_EXPLORE_LAIR_DUNGEON</Type>
@@ -729,7 +729,7 @@
 			<Description>TXT_KEY_MESSAGE_EXPLORE_DUNGEON</Description>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>0</iDestroyLairChance>
-			<PythonCallback>exploreLairDungeon</PythonCallback>
+			<PythonCallback>exploreLairDungeon(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>	
 		<GoodyInfo> <!--Graveyard-->
 			<Type>GOODY_EXPLORE_LAIR_GRAVEYARD</Type>
@@ -743,7 +743,7 @@
 			<Description>TXT_KEY_MESSAGE_EXPLORE_GRAVEYARD</Description>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>0</iDestroyLairChance>
-			<PythonCallback>exploreLairGraveyard</PythonCallback>
+			<PythonCallback>exploreLairGraveyard(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>	
 		<GoodyInfo>	<!--CommanderSecondary-->
 			<Type>GOODY_EXPLORE_LAIR_COMMANDER_SECONDARY</Type>
@@ -757,7 +757,7 @@
 			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_COMMANDER_SECONDARY</Description>
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
-			<PythonCallback>exploreLairSecondaryCommander</PythonCallback>
+			<PythonCallback>exploreLairSecondaryCommander(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Minotaur				Thematic Results Generic 	Bad  Moderate -->
 			<Type>GOODY_MINOTAUR</Type>
@@ -772,7 +772,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>80</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairMinotaur</PythonCallback>
+			<PythonCallback>exploreLairMinotaur(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!-- Sealed Well -->
 			<Type>GOODY_SEALED_WELL</Type>
@@ -787,7 +787,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>60</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreSealedWell</PythonCallback>
+			<PythonCallback>exploreSealedWell(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Tech					Thematic Results Generic 	Good Major	   -->
 			<Type>GOODY_MARNOK_TECH</Type>
@@ -856,7 +856,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>100</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairGoldenAge</PythonCallback>
+			<PythonCallback>exploreLairGoldenAge(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--Heroic-->
 			<Type>GOODY_EXPLORE_LAIR_HEROIC</Type>
@@ -904,7 +904,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>40</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairBigBad</PythonCallback>
+			<PythonCallback>exploreLairBigBad(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!-- Banana Field 			Thematic Results Living		Good Minor	-->
 			<Type>GOODY_BANANA_FIELD</Type>
@@ -1092,7 +1092,7 @@
 			<Description>TXT_KEY_GOODY_RAGESWORD</Description>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>40</iDestroyLairChance>
-			<PythonCallback>exploreLairCurseThirstSavant</PythonCallback>
+			<PythonCallback>exploreLairCurseThirstSavant(pUnit,pPlot)</PythonCallback>
 			<bBad>0</bBad>
 		</GoodyInfo>
 		<GoodyInfo>	<!-- Boots of Waterwalking		Good Minor	-->
@@ -1124,7 +1124,7 @@
 			<Description>TXT_KEY_GOODY_BANESWORD_ANGEL</Description>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>40</iDestroyLairChance>
-			<PythonCallback>exploreLairSuccubusAngel</PythonCallback>
+			<PythonCallback>exploreLairSuccubusAngel(pUnit,pPlot)</PythonCallback>
 			<bBad>1</bBad>
 		</GoodyInfo>
 		<GoodyInfo>	<!-- Demonsbane	Bad Minor	-->
@@ -1139,7 +1139,7 @@
 			<Description>TXT_KEY_GOODY_BANESWORD_DEMON</Description>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>40</iDestroyLairChance>
-			<PythonCallback>exploreLairRighteousNobhead</PythonCallback>
+			<PythonCallback>exploreLairRighteousNobhead(pUnit,pPlot)</PythonCallback>
 			<bBad>1</bBad>
 		</GoodyInfo>
 		<GoodyInfo>	<!-- Elementals Bane Conjurers		Good Minor	-->
@@ -1171,7 +1171,7 @@
 			<Description>TXT_KEY_GOODY_SPIRIT_SEVER</Description>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>40</iDestroyLairChance>
-			<PythonCallback>exploreLairScreamingPuppet</PythonCallback>
+			<PythonCallback>exploreLairScreamingPuppet(pUnit,pPlot)</PythonCallback>
 			<bBad>1</bBad>
 		</GoodyInfo>
 		<GoodyInfo>	<!-- Bards Harp	Good Minor	-->
@@ -1220,7 +1220,7 @@
 			<Description>TXT_KEY_GOODY_TRICKY_DAGGER</Description>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>40</iDestroyLairChance>
-			<PythonCallback>exploreLairNinjaFawn</PythonCallback>
+			<PythonCallback>exploreLairNinjaFawn(pUnit,pPlot)</PythonCallback>
 			<bBad>1</bBad>
 		</GoodyInfo>
 		<GoodyInfo>	<!-- Casualty Axe	Good Minor	-->
@@ -1270,7 +1270,7 @@
 			<Description>TXT_KEY_GOODY_ICXTH</Description>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>40</iDestroyLairChance>
-			<PythonCallback>exploreLairSluaghLord</PythonCallback>
+			<PythonCallback>exploreLairSluaghLord(pUnit,pPlot)</PythonCallback>
 			<bBad>1</bBad>
 			<bUnique>1</bUnique>
 		</GoodyInfo>
@@ -1287,7 +1287,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairSkeletonPatrian</PythonCallback>
+			<PythonCallback>exploreLairSkeletonPatrian(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!-- Pondering Hat	Good Minor	-->
 			<Type>GOODY_PONDER_HAT</Type>
@@ -1355,7 +1355,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>60</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreBurnedLair</PythonCallback>
+			<PythonCallback>exploreBurnedLair(pUnit,pPlot)</PythonCallback>
 			<PythonPrereq>reqBurnedLair</PythonPrereq>
 		</GoodyInfo>
 		<GoodyInfo> <!--Assassin				Thematic Results Living		Good Moderate -->
@@ -1440,7 +1440,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairPopulation</PythonCallback>
+			<PythonCallback>exploreLairPopulation(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>	
 		<GoodyInfo>	<!-- Bottle of Liquid Stone Thematic Results Living		Bad Moderate -->
 			<Type>GOODY_BOTTLE_OF_LIQUID_STONE</Type>
@@ -1455,7 +1455,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>60</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLiquidStone</PythonCallback>
+			<PythonCallback>exploreLiquidStone(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Random GP, 				Thematic Results Living, 	Good Major-->
 			<Type>GOODY_MARNOK_RELEASE_PRISONER_MAJOR</Type>
@@ -1470,7 +1470,7 @@
 			<Sound>AS2D_GOODY_SETTLER</Sound>
 			<iDestroyLairChance>100</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreReleasePrisoner</PythonCallback>
+			<PythonCallback>exploreReleasePrisoner(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!-- Unblemished shelter	Thematic Results Living		Bad Major -->
 			<Type>GOODY_UNBLEMISHED_SHELTER</Type>
@@ -1485,7 +1485,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>60</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairUnblemishedShelter</PythonCallback>
+			<PythonCallback>exploreLairUnblemishedShelter(pUnit,pPlot)</PythonCallback>
 			<PythonPrereq>reqUnblemishedShelter</PythonPrereq>
 		</GoodyInfo>
 		<GoodyInfo>	<!-- New Chieftain 			Thematic Results Orcish	 	Good Minor -->
@@ -1501,7 +1501,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreNewChieftain</PythonCallback>
+			<PythonCallback>exploreNewChieftain(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!-- Unique Map -->
 			<Type>GOODY_UNIQUE_MAP</Type>
@@ -1516,7 +1516,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreUniqueMap</PythonCallback>
+			<PythonCallback>exploreUniqueMap(pUnit,pPlot)</PythonCallback>
 			<PythonPrereq>reqUniqueMap</PythonPrereq>
 		</GoodyInfo>
 		<GoodyInfo> <!--Barb Weak				Thematic Results Orcish	 	Bad  Minor	   -->
@@ -1532,7 +1532,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>60</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairWarrior</PythonCallback>
+			<PythonCallback>exploreLairWarrior(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!-- Through Fire			Thematic Results Orcish		Good Moderate -->
 			<Type>GOODY_THROUGH_FIRE</Type>
@@ -1565,7 +1565,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>50</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairAxemen</PythonCallback>
+			<PythonCallback>exploreLairAxemen(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Ogre-->
 			<Type>GOODY_MARNOK_OGRE</Type>
@@ -1580,7 +1580,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>40</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairOgre</PythonCallback>
+			<PythonCallback>exploreLairOgre(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Diseased-->
 			<Type>GOODY_MARNOK_DISEASED</Type>
@@ -1613,7 +1613,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>40</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairOgreChief</PythonCallback>
+			<PythonCallback>exploreLairOgreChief(pUnit,pPlot)</PythonCallback>
 			<PrereqEra>ERA_CLASSICAL</PrereqEra>
 		</GoodyInfo>
 		<GoodyInfo>	<!-- Sense of Allegiance	Thematic Results Spirit		Good Minor -->
@@ -1647,7 +1647,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreArguingFigures</PythonCallback>
+			<PythonCallback>exploreArguingFigures(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Enraged					Thematic Results Spirit  	Bad  Minor    -->
 			<Type>GOODY_MARNOK_ENRAGED</Type>
@@ -1717,7 +1717,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreMirror1</PythonCallback>
+			<PythonCallback>exploreMirror1(pUnit,pPlot)</PythonCallback>
 			<PythonPrereq>reqMirror1</PythonPrereq>
 		</GoodyInfo>
 		<GoodyInfo> <!--Crazed					Thematic Results Spirit  	Bad  Moderate -->
@@ -1751,7 +1751,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>60</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreMirror2</PythonCallback>
+			<PythonCallback>exploreMirror2(pUnit,pPlot)</PythonCallback>
 			<PythonPrereq>reqMirror1</PythonPrereq>
 		</GoodyInfo>
 		<GoodyInfo> <!--Immortal				Thematic Results Spirit  	Good Major    -->
@@ -1787,7 +1787,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>100</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreMirror3</PythonCallback>
+			<PythonCallback>exploreMirror3(pUnit,pPlot)</PythonCallback>
 			<PythonPrereq>reqMirror1</PythonPrereq>
 		</GoodyInfo>
 		<GoodyInfo>	<!-- Swanmay Good -->
@@ -1803,7 +1803,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>100</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreSwanmayGood</PythonCallback>
+			<PythonCallback>exploreSwanmayGood(pUnit,pPlot)</PythonCallback>
 			<PythonPrereq>reqSwanmayGood</PythonPrereq>
 		</GoodyInfo>
 		<GoodyInfo>	<!-- Swanmay Evil -->
@@ -1819,7 +1819,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>100</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreSwanmayEvil</PythonCallback>
+			<PythonCallback>exploreSwanmayEvil(pUnit,pPlot)</PythonCallback>
 			<PythonPrereq>reqSwanmayEvil</PythonPrereq>
 		</GoodyInfo>
 		<GoodyInfo> <!--Subterran resources, Thematic Results Subterran, 	Good Minor--> 
@@ -1836,7 +1836,7 @@
 			<iGold>10</iGold>
 			<iGoldRand1>10</iGoldRand1>
 			<iGoldRand2>10</iGoldRand2>
-			<PythonCallback>exploreSubterranBonusMinor</PythonCallback>
+			<PythonCallback>exploreSubterranBonusMinor(pUnit,pPlot)</PythonCallback>
 			<PythonPrereq>reqSubterranBonusMinor</PythonPrereq>
 			<bBad>0</bBad>
 		</GoodyInfo>
@@ -1853,7 +1853,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>60</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreCaveIn</PythonCallback>
+			<PythonCallback>exploreCaveIn(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Iron					Thematic Results Subterran	Good Moderate -->
 			<Type>GOODY_MARNOK_BONUS_IRON</Type>
@@ -1885,7 +1885,7 @@
 			<Sound></Sound>
 			<iDestroyLairChance>65</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairDwarfVsLizard</PythonCallback>
+			<PythonCallback>exploreLairDwarfVsLizard(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!-- Earthquake			Thematic Results Subterran	Bad  Moderate -->
 			<Type>GOODY_EARTHQUAKE</Type>
@@ -1903,7 +1903,7 @@
 			<DamageType>DAMAGE_PHYSICAL</DamageType>
 			<iDamageLimit>50</iDamageLimit>
 			<bBad>1</bBad>
-			<PythonCallback>exploreEarthquake</PythonCallback>
+			<PythonCallback>exploreEarthquake(pUnit,pPlot)</PythonCallback>
 			<PythonPrereq>reqLairEarthquake</PythonPrereq>
 		</GoodyInfo>
 		<GoodyInfo>	<!-- Basilisk	 -->
@@ -1919,7 +1919,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>40</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairBasilisk</PythonCallback>
+			<PythonCallback>exploreLairBasilisk(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Mithril					Thematic Results Subterran  Good Major	  -->
 			<Type>GOODY_MARNOK_BONUS_MITHRIL</Type>
@@ -1953,7 +1953,7 @@
 			<iGoldRand1>10</iGoldRand1>
 			<iGoldRand2>10</iGoldRand2>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairDwarvenDruid</PythonCallback>
+			<PythonCallback>exploreLairDwarvenDruid(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Myconid					Thematic Results Subterran  Bad  Major    -->
 			<Type>GOODY_EXPLORE_LAIR_MYCONID</Type>
@@ -1968,7 +1968,7 @@
 			<Sound></Sound>
 			<iDestroyLairChance>40</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairMyconid</PythonCallback>
+			<PythonCallback>exploreLairMyconid(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Redcaps-->
 			<Type>GOODY_EXPLORE_LAIR_REDCAPS</Type>
@@ -1983,7 +1983,7 @@
 			<Sound></Sound>
 			<iDestroyLairChance>40</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairRedcaps</PythonCallback>
+			<PythonCallback>exploreLairRedcaps(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--BoardingParty			Lair	 Results Bandit		Good Minor	  -->
 			<Type>GOODY_EXPLORE_LAIR_BOARDING_PARTY</Type>
@@ -1997,7 +1997,7 @@
 			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_BOARDING_PARTY</Description>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairBoardingParty</PythonCallback>
+			<PythonCallback>exploreLairBoardingParty(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!-- Stolen Supplies -->
 			<Type>GOODY_STOLEN_SUPPLIES</Type>
@@ -2012,7 +2012,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreStolenSupplies</PythonCallback>
+			<PythonCallback>exploreStolenSupplies(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Urn Rotting Flesh		 Unique-->
 			<Type>GOODY_EXPLORE_LAIR_ITEM_URN_ROTTING_FLESH_3</Type>
@@ -2046,7 +2046,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreSlavers</PythonCallback>
+			<PythonCallback>exploreSlavers(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Nightwatch				Lair	 Results Bandit     Bad  Moderate -->
 			<Type>GOODY_EXPLORE_LAIR_SPAWN_NIGHTWATCH</Type>
@@ -2060,7 +2060,7 @@
 			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_SPAWN_NIGHTWATCH</Description>
 			<iDestroyLairChance>60</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairNightWatch</PythonCallback>
+			<PythonCallback>exploreLairNightWatch(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!-- Enchanting Map			Lair	 Results Bandit		Good Major -->
 			<Type>GOODY_ENCHANTED_MAP</Type>
@@ -2075,7 +2075,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreEnchantedMap</PythonCallback>
+			<PythonCallback>exploreEnchantedMap(pUnit,pPlot)</PythonCallback>
 			<PythonPrereq>reqEnchantedMap</PythonPrereq>
 		</GoodyInfo>
 		<GoodyInfo> <!--Shadow					Lair	 Results Bandit     Bad  Major    -->
@@ -2090,7 +2090,7 @@
 			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_SPAWN_NIGHTWATCH</Description>
 			<iDestroyLairChance>60</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairShadow</PythonCallback>
+			<PythonCallback>exploreLairShadow(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Shadowrider-->
 			<Type>GOODY_EXPLORE_LAIR_SPAWN_SHADOWRIDER</Type>
@@ -2104,7 +2104,7 @@
 			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_SPAWN_NIGHTWATCH</Description>
 			<iDestroyLairChance>60</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairShadowRider</PythonCallback>
+			<PythonCallback>exploreLairShadowRider(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--CannibalCentaur			Lair	 Results Centaur	Good Minor	  -->
 			<Type>GOODY_EXPLORE_LAIR_CANNIBAL_CENTAUR</Type>
@@ -2118,7 +2118,7 @@
 			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_CANNIBAL_CENTAUR</Description>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairCannibalCentaur</PythonCallback>
+			<PythonCallback>exploreLairCannibalCentaur(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--CentaurAmbushEasy		Lair	 Results Centaur	Bad  Minor	  -->
 			<Type>GOODY_EXPLORE_LAIR_CENTAUR_AMBUSH_EASY</Type>
@@ -2132,7 +2132,7 @@
 			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_CENTAUR_AMBUSH</Description>
 			<iDestroyLairChance>60</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairCentaurAmbushEasy</PythonCallback>
+			<PythonCallback>exploreLairCentaurAmbushEasy(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!-- The Outrunerest -->
 			<Type>GOODY_THE_OUTRUNEREST</Type>
@@ -2147,7 +2147,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>60</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreTheOutrunerest</PythonCallback>
+			<PythonCallback>exploreTheOutrunerest(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--CentaurAmbushMedium		Lair	 Results Centaur	Bad  Moderate -->
 			<Type>GOODY_EXPLORE_LAIR_CENTAUR_AMBUSH_MEDIUM</Type>
@@ -2161,7 +2161,7 @@
 			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_CENTAUR_AMBUSH</Description>
 			<iDestroyLairChance>60</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairCentaurAmbushMedium</PythonCallback>
+			<PythonCallback>exploreLairCentaurAmbushMedium(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!-- Evasive Centaurs -->
 			<Type>GOODY_EVASIVE_CENTAURS</Type>
@@ -2176,7 +2176,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>60</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreEvasiveCentaurs</PythonCallback>
+			<PythonCallback>exploreEvasiveCentaurs(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--ClanChiefDuel			Lair	 Results Centaur	Good Major	  -->
 			<Type>GOODY_EXPLORE_LAIR_CLANCHIEFDUEL</Type>
@@ -2190,7 +2190,7 @@
 			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_CLANCHIEFDUEL</Description>
 			<iDestroyLairChance>100</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairClanChiefDuel</PythonCallback>
+			<PythonCallback>exploreLairClanChiefDuel(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!-- Deal with Centaurs Tribe -->
 			<Type>GOODY_DEAL_WITH_CENTAURS_TRIBE</Type>
@@ -2205,7 +2205,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>100</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreDealwithTribe</PythonCallback>
+			<PythonCallback>exploreDealwithTribe(pUnit,pPlot)</PythonCallback>
 			<PythonPrereq>reqDealwithTribe</PythonPrereq>
 		</GoodyInfo>
 		<GoodyInfo> <!--CentaurAmbushHard		Lair	 Results Centaur	Bad  Major    -->
@@ -2220,7 +2220,7 @@
 			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_CENTAUR_AMBUSH</Description>
 			<iDestroyLairChance>60</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairCentaurAmbushHard</PythonCallback>
+			<PythonCallback>exploreLairCentaurAmbushHard(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!-- Agares Worshipers -->
 			<Type>GOODY_AGARES_WORSHIPERS</Type>
@@ -2235,7 +2235,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>60</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreAgaresWorshipers</PythonCallback>
+			<PythonCallback>exploreAgaresWorshipers(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--FriendlyFrostling		Lair	 Results Frostling 	Good  Minor    -->	
 			<Type>GOODY_FRIENDLY_FROSTLING</Type>
@@ -2250,7 +2250,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>80</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairFriendlyFrostling</PythonCallback>
+			<PythonCallback>exploreLairFriendlyFrostling(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Snow-->	
 			<Type>GOODY_SNOW</Type>
@@ -2265,7 +2265,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>80</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairSnow</PythonCallback>
+			<PythonCallback>exploreLairSnow(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--AngryFrostlingEasy		Lair	 Results Frostling 	Bad  Minor    -->	
 			<Type>GOODY_ANGRY_FROSTLING_EASY</Type>
@@ -2280,7 +2280,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>80</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairAngryFrostlingEasy</PythonCallback>
+			<PythonCallback>exploreLairAngryFrostlingEasy(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Wintered -->	
 			<Type>GOODY_WINTERED</Type>
@@ -2295,7 +2295,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>80</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairWintered</PythonCallback>
+			<PythonCallback>exploreLairWintered(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Cold Strength		Lair	 Results Frostling 	Good  Moderate    -->	
 			<Type>GOODY_COLD_STRENGTH</Type>
@@ -2310,7 +2310,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>80</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairColdStrength</PythonCallback>
+			<PythonCallback>exploreLairColdStrength(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Frozen Pop-->	
 			<Type>GOODY_FROZEN_POP</Type>
@@ -2325,7 +2325,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>80</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairPopulation</PythonCallback>
+			<PythonCallback>exploreLairPopulation(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--AngryFrostlingMedium		Lair	 Results Frostling 	Bad  Moderate    -->	
 			<Type>GOODY_ANGRY_FROSTLING_MEDIUM</Type>
@@ -2340,7 +2340,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>80</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairAngryFrostlingMedium</PythonCallback>
+			<PythonCallback>exploreLairAngryFrostlingMedium(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Blizzard -->	
 			<Type>GOODY_BLIZZARD</Type>
@@ -2355,7 +2355,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>80</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairBlizzard</PythonCallback>
+			<PythonCallback>exploreLairBlizzard(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Frostling Adept		Lair	 Results Frostling 	Good  Major    -->	
 			<Type>GOODY_FROSTLING_ADEPT</Type>
@@ -2370,7 +2370,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>80</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairFrostlingAdept</PythonCallback>
+			<PythonCallback>exploreLairFrostlingAdept(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--GoblinCommander-->	
 			<Type>GOODY_GOBLIN_COMMANDER</Type>
@@ -2385,7 +2385,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>80</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairGoblinCommander</PythonCallback>
+			<PythonCallback>exploreLairGoblinCommander(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--AngryFrostlingHard		Lair	 Results Frostling 	Bad  Major    -->	
 			<Type>GOODY_ANGRY_FROSTLING_HARD</Type>
@@ -2400,7 +2400,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>80</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairAngryFrostlingHard</PythonCallback>
+			<PythonCallback>exploreLairAngryFrostlingHard(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--FrostGiant -->	
 			<Type>GOODY_FROST_GIANT</Type>
@@ -2415,7 +2415,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>80</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairFrostGiant</PythonCallback>
+			<PythonCallback>exploreLairFrostGiant(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Cyclop					Lair	 Results Giant	 	Bad  Minor    -->	
 			<Type>GOODY_CYKLOP</Type>
@@ -2430,7 +2430,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>80</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairCyklop</PythonCallback>
+			<PythonCallback>exploreLairCyklop(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--HillGiant-->	
 			<Type>GOODY_MARNOK_HILLGIANT</Type>
@@ -2445,7 +2445,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>80</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairHillGiant</PythonCallback>
+			<PythonCallback>exploreLairHillGiant(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!-- Pet Roc			Lair	 Results Giant		Good Moderate -->
 			<Type>GOODY_PET_ROC</Type>
@@ -2460,7 +2460,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>explorePetRoc</PythonCallback>
+			<PythonCallback>explorePetRoc(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Kezef		Unique	lair	Results Giant		Bad Major -->
 			<Type>GOODY_EXPLORE_LAIR_KEZEF</Type>
@@ -2476,7 +2476,7 @@
 			<iDestroyLairChance>75</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairKezef</PythonCallback>
+			<PythonCallback>exploreLairKezef(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Wolf					Lair	 Results Goblin		Good Minor	  -->
 			<Type>GOODY_EXPLORE_LAIR_WOLF</Type>
@@ -2490,7 +2490,7 @@
 			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_WOLF</Description>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairWolf</PythonCallback>
+			<PythonCallback>exploreLairWolf(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--GoblinAdept-->
 			<Type>GOODY_EXPLORE_GOBLIN_ADEPT</Type>
@@ -2505,7 +2505,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairGoblinAdept</PythonCallback>
+			<PythonCallback>exploreLairGoblinAdept(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--GoblinTroop-->
 			<Type>GOODY_EXPLORE_GOBLIN_TROOP</Type>
@@ -2520,7 +2520,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairGoblinTroop</PythonCallback>
+			<PythonCallback>exploreLairGoblinTroop(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--MurisPrisoner-->
 			<Type>GOODY_EXPLORE_MURIS_PRISONER</Type>
@@ -2535,7 +2535,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairMurisPrisoner</PythonCallback>
+			<PythonCallback>exploreLairMurisPrisoner(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--LukosPrisoner-->
 			<Type>GOODY_EXPLORE_LUKOS_PRISONER</Type>
@@ -2550,7 +2550,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairLukosPrisoner</PythonCallback>
+			<PythonCallback>exploreLairLukosPrisoner(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--NeithPrisoner-->
 			<Type>GOODY_EXPLORE_NEITH_PRISONER</Type>
@@ -2565,7 +2565,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairNeithPrisoner</PythonCallback>
+			<PythonCallback>exploreLairNeithPrisoner(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--ScorpionPrisoner-->
 			<Type>GOODY_EXPLORE_SCORPION_PRISONER</Type>
@@ -2580,7 +2580,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairScorpionPrisoner</PythonCallback>
+			<PythonCallback>exploreLairScorpionPrisoner(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--PoisonBladeGoblin-->
 			<Type>GOODY_GOBLIN_POISONED_BLADE</Type>
@@ -2648,7 +2648,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>80</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairFawn</PythonCallback>
+			<PythonCallback>exploreLairFawn(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--AngryGoblinsEasy-->
 			<Type>GOODY_EXPLORE_ANGRY_GOBLIN_EASY</Type>
@@ -2663,7 +2663,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairAngryGoblinEasy</PythonCallback>
+			<PythonCallback>exploreLairAngryGoblinEasy(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--Boar					Lair	 Results Goblin		Good Moderate -->
 			<Type>GOODY_EXPLORE_LAIR_BOAR</Type>
@@ -2677,7 +2677,7 @@
 			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_BOAR</Description>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairBoar</PythonCallback>
+			<PythonCallback>exploreLairBoar(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--GoblinConflictRedYellow-->
 			<Type>GOODY_EXPLORE_LAIR_GOBLIN_CONFLICT_RED_YELLOW</Type>
@@ -2692,7 +2692,7 @@
 			<Sound></Sound>
 			<iDestroyLairChance>65</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairGoblinConflictRedYellow</PythonCallback>
+			<PythonCallback>exploreLairGoblinConflictRedYellow(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--AngryGoblinsModerate  	Lair	 Results Goblin		Bad  Moderate -->
 			<Type>GOODY_EXPLORE_ANGRY_GOBLIN_MEDIUM</Type>
@@ -2707,7 +2707,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairAngryGoblinMedium</PythonCallback>
+			<PythonCallback>exploreLairAngryGoblinMedium(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--OrcishBullies-->
 			<Type>GOODY_EXPLORE_ORCISH_BULLIES</Type>
@@ -2722,7 +2722,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairOrcishBullies</PythonCallback>
+			<PythonCallback>exploreLairOrcishBullies(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--WolfRiderAmbush-->
 			<Type>GOODY_EXPLORE_WOLF_RIDER_AMBUSH</Type>
@@ -2737,7 +2737,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairWolfRiderAmbush</PythonCallback>
+			<PythonCallback>exploreLairWolfRiderAmbush(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--AngryGoblinsHard		Lair	 Results Goblin		Bad  Major	  -->
 			<Type>GOODY_EXPLORE_ANGRY_GOBLIN_HARD</Type>
@@ -2752,7 +2752,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairAngryGoblinHard</PythonCallback>
+			<PythonCallback>exploreLairAngryGoblinHard(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!-- Lizardmen Gear			Lair	 Results Lizard		Good Minor -->
 			<Type>GOODY_LIZARDMEN_GEAR</Type>
@@ -2789,7 +2789,7 @@
 				<Promotion>PROMOTION_POISON_RESISTANCE</Promotion>
 			</PromotionAdds>
 			<bAnyPromotion>1</bAnyPromotion>
-			<PythonCallback>exploreLizardmenBooze</PythonCallback>
+			<PythonCallback>exploreLizardmenBooze(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Lizardman				Lair	 Results Lizard     Bad  Minor	  -->
 			<Type>GOODY_EXPLORE_LAIR_SPAWN_LIZARDMAN</Type>
@@ -2820,7 +2820,7 @@
 				</GoodyClass>
 			</GoodyClasses>
 			<iWeight>500</iWeight>
-			<PythonCallback>exploreLairBlowpipe</PythonCallback>
+			<PythonCallback>exploreLairBlowpipe(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--KalshekkPriest			Lair	 Results Lizard     Good Moderate -->
 			<Type>GOODY_EXPLORE_LAIR_KALSHEKK</Type>
@@ -2834,7 +2834,7 @@
 				</GoodyClass>
 			</GoodyClasses>
 			<iWeight>500</iWeight>
-			<PythonCallback>exploreLairKalshekk</PythonCallback>
+			<PythonCallback>exploreLairKalshekk(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--OmorrPriest-->
 			<Type>GOODY_EXPLORE_LAIR_OMORR</Type>
@@ -2848,7 +2848,7 @@
 				</GoodyClass>
 			</GoodyClasses>
 			<iWeight>500</iWeight>
-			<PythonCallback>exploreLairOmorr</PythonCallback>
+			<PythonCallback>exploreLairOmorr(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--AgruonnPriest			Lair	 Results Lizard     Bad  Moderate -->
 			<Type>GOODY_EXPLORE_LAIR_SPAWN_AGRUONN</Type>
@@ -2862,7 +2862,7 @@
 				</GoodyClass>
 			</GoodyClasses>
 			<iWeight>100</iWeight>
-			<PythonCallback>exploreLairPriestAgruonn</PythonCallback>
+			<PythonCallback>exploreLairPriestAgruonn(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!-- Hidden Ruins			Lair 	 Results Lizard		Good Major -->
 			<Type>GOODY_HIDDEN_RUINS</Type>
@@ -2877,7 +2877,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreHiddenRuins</PythonCallback>
+			<PythonCallback>exploreHiddenRuins(pUnit,pPlot)</PythonCallback>
 			<PythonPrereq>reqHiddenRuins</PythonPrereq>
 		</GoodyInfo>
 		<GoodyInfo>	<!-- City of Gold -->
@@ -2893,7 +2893,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>100</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreCityOfGold</PythonCallback>
+			<PythonCallback>exploreCityOfGold(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--AgruonnRitual			Lair	 Results Lizard     Bad  Major -->
 			<Type>GOODY_EXPLORE_LAIR_SPAWN_AGRUONN_RITUAL</Type>
@@ -2907,7 +2907,7 @@
 				</GoodyClass>
 			</GoodyClasses>
 			<iWeight>500</iWeight>
-			<PythonCallback>exploreLairAgruonnRitual</PythonCallback>
+			<PythonCallback>exploreLairAgruonnRitual(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!-- Sacellum -->
 			<Type>GOODY_SACELLUM</Type>
@@ -2922,7 +2922,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>60</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreSacellum</PythonCallback>
+			<PythonCallback>exploreSacellum(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--EnchantedBlade			Lair	 Results Magic	 	Good Minor    -->
 			<Type>GOODY_MARNOK_ENCHANTED_BLADE</Type>
@@ -3138,7 +3138,7 @@
 			<bAnyPromotion>1</bAnyPromotion>
 			<iHealing>100</iHealing>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairRogueAdept</PythonCallback>
+			<PythonCallback>exploreLairRogueAdept(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--PotionInvisibility		Lair	 Results Magic 		Good Moderate -->
 			<Type>GOODY_EXPLORE_LAIR_ITEM_POTION_OF_INVISIBILITY</Type>
@@ -3227,7 +3227,7 @@
 			<bAnyPromotion>1</bAnyPromotion>
 			<iHealing>100</iHealing>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairRogueMage</PythonCallback>
+			<PythonCallback>exploreLairRogueMage(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!-- Flare of Arcane Energy -->
 			<Type>GOODY_FLARE_OF_ARCANE_ENERGY</Type>
@@ -3242,7 +3242,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>60</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreArcaneFlare</PythonCallback>
+			<PythonCallback>exploreArcaneFlare(pUnit,pPlot)</PythonCallback>
 			<PythonPrereq>reqArcaneFlare</PythonPrereq>
 		</GoodyInfo>
 		<GoodyInfo> <!--Random Mana, 					 Results Magic, 	Good Major -->
@@ -3257,7 +3257,7 @@
 			<Description>TXT_KEY_GOODY_MARNOK_MANA</Description>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreMarnokMana</PythonCallback>
+			<PythonCallback>exploreMarnokMana(pUnit,pPlot)</PythonCallback>
 			<PythonPrereq>reqMarnokMana</PythonPrereq>
 		</GoodyInfo>
 		<GoodyInfo> <!--JadeTorc-->
@@ -3452,7 +3452,7 @@
 			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_BOTTLED_DJINN</Description>
 			<Sound>AS2D_GOODY_SETTLER</Sound>
 			<iDestroyLairChance>100</iDestroyLairChance>
-			<PythonCallback>exploreLairDjinn2</PythonCallback>
+			<PythonCallback>exploreLairDjinn2(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--ArmaWeapon-->
 			<Type>GOODY_ARMA_WEAPON</Type>
@@ -3501,7 +3501,7 @@
 			<Sound>AS2D_GOODY_SETTLER</Sound>
 			<iDestroyLairChance>100</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairGoat</PythonCallback>
+			<PythonCallback>exploreLairGoat(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>		
 		<GoodyInfo> <!--AphelionAmulet	 Unique-->
 			<Type>GOODY_EXPLORE_LAIR_ITEM_APHELION_AMULET</Type>
@@ -3540,7 +3540,7 @@
 			</PromotionAdds>
 			<bAnyPromotion>1</bAnyPromotion>
 			<bUnique>1</bUnique>
-				<PythonCallback>exploreLairAkharien</PythonCallback>
+				<PythonCallback>exploreLairAkharien(pUnit,pPlot)</PythonCallback>
 			<bBad>0</bBad>
 		</GoodyInfo>		
 		<GoodyInfo> <!--Heartstone		 Unique-->
@@ -3596,7 +3596,7 @@
 			<bAnyPromotion>1</bAnyPromotion>
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairSkullAsmoday</PythonCallback>
+			<PythonCallback>exploreLairSkullAsmoday(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--MaskFaeryl 		 Unique-->
 			<Type>GOODY_EXPLORE_LAIR_ITEM_MASK_FAERYL</Type>
@@ -3650,7 +3650,7 @@
 			<iDestroyLairChance>0</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairTheHive</PythonCallback>
+			<PythonCallback>exploreLairTheHive(pUnit,pPlot)</PythonCallback>
 			<PrereqEra>ERA_CLASSICAL</PrereqEra>
 		</GoodyInfo>
 		<GoodyInfo>	<!--MimicEnemy-->
@@ -3666,7 +3666,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>40</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairMimicEnemy</PythonCallback>
+			<PythonCallback>exploreLairMimicEnemy(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--BottledDjinn2-->
 			<Type>GOODY_EXPLORE_LAIR_BOTTLED_DJINN_2</Type>
@@ -3681,7 +3681,7 @@
 			<Sound>AS2D_GOODY_SETTLER</Sound>
 			<iDestroyLairChance>40</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairDjinn</PythonCallback>
+			<PythonCallback>exploreLairDjinn(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--RogueArchmage-->
 			<Type>GOODY_MARNOK_ROGUE_ARCHMAGE</Type>
@@ -3698,7 +3698,7 @@
 			<bAnyPromotion>1</bAnyPromotion>
 			<iHealing>100</iHealing>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairRogueArchmage</PythonCallback>
+			<PythonCallback>exploreLairRogueArchmage(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Vitalize				Lair	 Results Nature		Good Minor	  -->
 			<Type>GOODY_EXPLORE_LAIR_VITALIZE</Type>
@@ -3713,7 +3713,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>80</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairVitalize</PythonCallback>
+			<PythonCallback>exploreLairVitalize(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Random Blood-->
 			<Type>GOODY_EXPLORE_LAIR_ANIMAL_BLOOD</Type>
@@ -3728,7 +3728,7 @@
 			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_ANIMAL_BLOOD</Description>
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>80</iDestroyLairChance>
-			<PythonCallback>exploreAnimalBlood</PythonCallback>
+			<PythonCallback>exploreAnimalBlood(pUnit,pPlot)</PythonCallback>
 			<bBad>0</bBad>
 			<iHealing>-10</iHealing>
 			<DamageType>DAMAGE_PHYSICAL</DamageType>
@@ -3747,7 +3747,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>60</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairBear</PythonCallback>
+			<PythonCallback>exploreLairBear(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Reagents				Lair     Results Nature		Good Moderate -->
 			<Type>GOODY_MARNOK_BONUS_REAGENTS</Type>
@@ -3779,7 +3779,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>75</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreBlightedForest</PythonCallback>
+			<PythonCallback>exploreBlightedForest(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--Stag-->
 			<Type>GOODY_EXPLORE_LAIR_STAG</Type>
@@ -3793,7 +3793,7 @@
 			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_STAG</Description>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairStag</PythonCallback>
+			<PythonCallback>exploreLairStag(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--Pegasus-->
 			<Type>GOODY_EXPLORE_LAIR_PEGASUS</Type>
@@ -3807,7 +3807,7 @@
 			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_PEGASUS</Description>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairPegasus</PythonCallback>
+			<PythonCallback>exploreLairPegasus(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--Pixies 				  -->
 			<Type>GOODY_EXPLORE_LAIR_PIXIES</Type>
@@ -3838,7 +3838,7 @@
 			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_SLYPH</Description>
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
-			<PythonCallback>exploreLairSlyph</PythonCallback>
+			<PythonCallback>exploreLairSlyph(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Spider					Lair	 Results Nature		Bad  Moderate -->
 			<Type>GOODY_MARNOK_SPIDER</Type>
@@ -3853,7 +3853,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>50</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairGiantSpider</PythonCallback>
+			<PythonCallback>exploreLairGiantSpider(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--GreatHunter 			Lair	 Results Nature     Good Major	  -->
 			<Type>GOODY_EXPLORE_LAIR_GREAT_HUNTER</Type>
@@ -3885,7 +3885,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<PythonPrereq>reqBocquillon</PythonPrereq>
-			<PythonCallback>exploreLairBocquillon</PythonCallback>
+			<PythonCallback>exploreLairBocquillon(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Treant					Lair     Results Nature		Bad  Major    -->
 			<Type>GOODY_MARNOK_TREANT</Type>
@@ -3900,7 +3900,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>40</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairTreant</PythonCallback>
+			<PythonCallback>exploreLairTreant(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--ShadowTreant-->
 			<Type>GOODY_EXPLORE_LAIR_SHADOW_TREANT</Type>
@@ -3915,7 +3915,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>40</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairShadowTreant</PythonCallback>
+			<PythonCallback>exploreLairShadowTreant(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Bereguine-->
 			<Type>GOODY_EXPLORE_LAIR_BEREGUINE</Type>
@@ -3931,7 +3931,7 @@
 			<iDestroyLairChance>40</iDestroyLairChance>
 			<bBad>1</bBad>
 			<PythonPrereq>reqBereguine</PythonPrereq>
-			<PythonCallback>exploreLairBereguine</PythonCallback>
+			<PythonCallback>exploreLairBereguine(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Murderhoof		Unique-->
 			<Type>GOODY_EXPLORE_LAIR_MURDERHOOF</Type>
@@ -3947,7 +3947,7 @@
 			<iDestroyLairChance>75</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairMurderhoof</PythonCallback>
+			<PythonCallback>exploreLairMurderhoof(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--SeedDragon		Unique-->
 			<Type>GOODY_EXPLORE_LAIR_SEEDDRAGON</Type>
@@ -3963,7 +3963,7 @@
 			<iDestroyLairChance>75</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairSeedDragon</PythonCallback>
+			<PythonCallback>exploreLairSeedDragon(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--BloodDragon		Unique-->
 			<Type>GOODY_EXPLORE_LAIR_BLOODDRAGON</Type>
@@ -3979,7 +3979,7 @@
 			<iDestroyLairChance>75</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairBloodDragon</PythonCallback>
+			<PythonCallback>exploreLairBloodDragon(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--PitDragon		Unique-->
 			<Type>GOODY_EXPLORE_LAIR_PITDRAGON</Type>
@@ -3995,7 +3995,7 @@
 			<iDestroyLairChance>75</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairPitDragon</PythonCallback>
+			<PythonCallback>exploreLairPitDragon(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--ShimmeringDragon		Unique-->
 			<Type>GOODY_EXPLORE_LAIR_SHIMMERINGDRAGON</Type>
@@ -4012,7 +4012,7 @@
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
 			<PrereqAlignment>ALIGNMENT_GOOD</PrereqAlignment>
-			<PythonCallback>exploreLairShimmeringDragon</PythonCallback>
+			<PythonCallback>exploreLairShimmeringDragon(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--ShimmeringDragon bad		Unique-->
 			<Type>GOODY_EXPLORE_LAIR_SHIMMERINGDRAGON_BAD</Type>
@@ -4029,7 +4029,7 @@
 			<bUnique>1</bUnique>
 			<bBad>1</bBad>
 			<PrereqAlignment>ALIGNMENT_EVIL</PrereqAlignment>
-			<PythonCallback>exploreLairShimmeringDragonbad</PythonCallback>
+			<PythonCallback>exploreLairShimmeringDragonbad(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Elven Aeron-->
 			<Type>GOODY_EXPLORE_LAIR_ELVEN_AERON</Type>
@@ -4044,7 +4044,7 @@
 			<Sound></Sound>
 			<iDestroyLairChance>40</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairElvenAeron</PythonCallback>
+			<PythonCallback>exploreLairElvenAeron(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--GraveLowGold			Lair	 Results Undead     Good Minor    -->
 			<Type>GOODY_GRAVE_LOW_GOLD</Type>
@@ -4091,7 +4091,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>80</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairArmageddonDecrease</PythonCallback>
+			<PythonCallback>exploreLairArmageddonDecrease(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>	
 		<GoodyInfo>	<!--BearBloodUndead-->
 			<Type>GOODY_EXPLORE_LAIR_BEAR_BLOOD_UNDEAD</Type>
@@ -4143,7 +4143,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>50</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairSkeleton</PythonCallback>
+			<PythonCallback>exploreLairSkeleton(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Skeletons-->
 			<Type>GOODY_EXPLORE_LAIR_SPAWN_SKELETON</Type>
@@ -4157,7 +4157,7 @@
 			<bBad>1</bBad>
 			<iWeight>333</iWeight>
 			<iDestroyLairChance>60</iDestroyLairChance>
-			<PythonCallback>exploreLairSkeletons</PythonCallback>
+			<PythonCallback>exploreLairSkeletons(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Plagued Rats-->
 			<Type>GOODY_EXPLORE_LAIR_SPAWN_PLAGUED_RATS</Type>
@@ -4171,7 +4171,7 @@
 			<bBad>1</bBad>
 			<iWeight>150</iWeight>
 			<iDestroyLairChance>60</iDestroyLairChance>
-			<PythonCallback>exploreLairPlaguedRats</PythonCallback>
+			<PythonCallback>exploreLairPlaguedRats(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--GraveHighGold			Lair	 Results Undead		Good Moderate -->
 			<Type>GOODY_GRAVE_HIGH_GOLD</Type>
@@ -4291,7 +4291,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairHallWarriorsEvil</PythonCallback>
+			<PythonCallback>exploreLairHallWarriorsEvil(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--PaladinTombGood-->
 			<Type>GOODY_EXPLORE_PALADIN_TOMB_GOOD</Type>
@@ -4307,7 +4307,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairEinherjar2</PythonCallback>
+			<PythonCallback>exploreLairEinherjar2(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--PaladinTombNeutral-->
 			<Type>GOODY_EXPLORE_PALADIN_TOMB_NEUTRAL</Type>
@@ -4341,7 +4341,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairEinherjarVsDiseasedCorpse</PythonCallback>
+			<PythonCallback>exploreLairEinherjarVsDiseasedCorpse(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--SpectreGood-->
 			<Type>GOODY_EXPLORE_SPECTRE_GOOD</Type>
@@ -4357,7 +4357,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairArmageddonDecrease</PythonCallback>
+			<PythonCallback>exploreLairArmageddonDecrease(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--SpecterEvil-->
 			<Type>GOODY_EXPLORE_SPECTER_EVIL</Type>
@@ -4373,7 +4373,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairSpecterEvil</PythonCallback>
+			<PythonCallback>exploreLairSpecterEvil(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--UndeadBeakers-->
 			<Type>GOODY_UNDEAD_BEAKERS_HIGH</Type>
@@ -4421,7 +4421,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>40</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairDiseasedCorpse</PythonCallback>
+			<PythonCallback>exploreLairDiseasedCorpse(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Spectre-->
 			<Type>GOODY_GRAVE_SPECTRE</Type>
@@ -4436,7 +4436,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>50</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairSpectre</PythonCallback>
+			<PythonCallback>exploreLairSpectre(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Tomb Warden-->
 			<Type>GOODY_GRAVE_TOMB_WARDEN</Type>
@@ -4451,7 +4451,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>50</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairTombWarden</PythonCallback>
+			<PythonCallback>exploreLairTombWarden(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--SpectreNeutral-->
 			<Type>GOODY_EXPLORE_SPECTRE_NEUTRAL</Type>
@@ -4467,7 +4467,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairSpecterNeutral</PythonCallback>
+			<PythonCallback>exploreLairSpecterNeutral(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--PrescientGraveNegative-->
 			<Type>GOODY_PRESCIENT_GRAVE_2</Type>
@@ -4517,7 +4517,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairResurrect</PythonCallback>
+			<PythonCallback>exploreLairResurrect(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo> -->
 		<GoodyInfo> <!--TaintedLandEvil-->
 			<Type>GOODY_TAINTED_LANDS_EVIL</Type>
@@ -4550,7 +4550,7 @@
 			<iExperience>20</iExperience>
 			<bBad>0</bBad>
 			<BarbarianCivilization>NONE</BarbarianCivilization>
-			<PythonCallback>exploreLairArmageddonDecrease</PythonCallback>
+			<PythonCallback>exploreLairArmageddonDecrease(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--RingofUnlife-->
 			<Type>GOODY_EXPLORE_LAIR_ITEM_RING_OF_UNLIFE</Type>
@@ -4618,7 +4618,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>80</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairLich</PythonCallback>
+			<PythonCallback>exploreLairLich(pUnit,pPlot)</PythonCallback>
 			<PrereqEra>ERA_CLASSICAL</PrereqEra>
 		</GoodyInfo>
 		<GoodyInfo> <!--Graveleech-->
@@ -4634,7 +4634,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>40</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairGraveleech</PythonCallback>
+			<PythonCallback>exploreLairGraveleech(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Abomination-->
 			<Type>GOODY_EXPLORE_LAIR_ABOMINATION</Type>
@@ -4649,7 +4649,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>40</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairAbomination</PythonCallback>
+			<PythonCallback>exploreLairAbomination(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--bonegolem-->
 			<Type>GOODY_EXPLORE_LAIR_BONEGOLEM</Type>
@@ -4664,7 +4664,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>40</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairBoneGolem</PythonCallback>
+			<PythonCallback>exploreLairBoneGolem(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--HauntedLandSpawn-->
 			<Type>GOODY_EXPLORE_LAIR_HAUNTED_SPAWN</Type>
@@ -4679,7 +4679,7 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>40</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairHauntedSpawn</PythonCallback>
+			<PythonCallback>exploreLairHauntedSpawn(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--FairWinds				Lair	 Results Water		Good Minor	  -->
 			<Type>GOODY_EXPLORE_LAIR_FAIR_WINDS</Type>
@@ -4711,7 +4711,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreTradeShip</PythonCallback>
+			<PythonCallback>exploreTradeShip(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Drown					Lair	 Results Water      Bad  Minor	  -->
 			<Type>GOODY_EXPLORE_LAIR_SPAWN_DROWN</Type>
@@ -4725,7 +4725,7 @@
 			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_SPAWN_DROWN</Description>
 			<iDestroyLairChance>60</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairDrown</PythonCallback>
+			<PythonCallback>exploreLairDrown(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Clam					Lair	 Results Water		Good Moderate -->
 			<Type>GOODY_BONUS_CLAM</Type>
@@ -4795,7 +4795,7 @@
 			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_SPAWN_SEA_SERPENT</Description>
 			<iDestroyLairChance>60</iDestroyLairChance>
 			<bBad>1</bBad>
-					<PythonCallback>exploreLairSeaSerpent</PythonCallback>
+					<PythonCallback>exploreLairSeaSerpent(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Tortoise-->
 			<Type>GOODY_EXPLORE_LAIR_SPAWN_TORTOISE</Type>
@@ -4809,7 +4809,7 @@
 			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_SPAWN_TORTOISE</Description>
 			<iDestroyLairChance>60</iDestroyLairChance>
 			<bBad>1</bBad>
-				<PythonCallback>exploreLairTortoise</PythonCallback>
+				<PythonCallback>exploreLairTortoise(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Kraken-->
 			<Type>GOODY_EXPLORE_LAIR_SPAWN_KRAKEN</Type>
@@ -4823,7 +4823,7 @@
 			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_SPAWN_KRAKEN</Description>
 			<iDestroyLairChance>60</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairKraken</PythonCallback>
+			<PythonCallback>exploreLairKraken(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Stygian Guard-->
 			<Type>GOODY_EXPLORE_LAIR_SPAWN_STYGIAN</Type>
@@ -4837,7 +4837,7 @@
 			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_SPAWN_DROWN</Description>
 			<iDestroyLairChance>60</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairStygianGuard</PythonCallback>
+			<PythonCallback>exploreLairStygianGuard(pUnit,pPlot)</PythonCallback>
 
 		</GoodyInfo>
 		<GoodyInfo> <!--Pirate-->
@@ -4852,7 +4852,7 @@
 			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_SPAWN_PIRATE</Description>
 			<iDestroyLairChance>60</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairPirate</PythonCallback>
+			<PythonCallback>exploreLairPirate(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--SeaSerpentFriend		Lair	 Results Water		Good Major    -->
 			<Type>GOODY_EXPLORE_LAIR_PRISONER_SEA_SERPENT</Type>
@@ -4866,7 +4866,7 @@
 			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_PRISONER_SEA_SERPENT</Description>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairSeaSerpent2</PythonCallback>
+			<PythonCallback>exploreLairSeaSerpent2(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Scaled Dragon		Unique-->
 			<Type>GOODY_EXPLORE_LAIR_SCALEDDRAGON</Type>
@@ -4886,7 +4886,7 @@
 			<iDestroyLairChance>75</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairScaledDragon</PythonCallback>
+			<PythonCallback>exploreLairScaledDragon(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--WarTortoiseAlly-->
 			<Type>GOODY_EXPLORE_LAIR_DOMESTICATED_WAR_TORTOISE</Type>
@@ -4900,7 +4900,7 @@
 			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_DOMESTICATED_WAR_TORTOISE</Description>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairDomesticatedWarTortoise</PythonCallback>
+			<PythonCallback>exploreLairDomesticatedWarTortoise(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Fish				lair	 Results Shimmering	Good -->
 			<Type>GOODY_BONUS_FISH_BEAKY</Type>
@@ -4929,7 +4929,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreKelp</PythonCallback>
+			<PythonCallback>exploreKelp(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Reagents -->
 			<Type>GOODY_BONUS_REAGENTS_SHIMMERING</Type>
@@ -4943,7 +4943,7 @@
 			<Description>TXT_KEY_MESSAGE_EXPLORE_LAIR_BONUS_REAGENTS_SHIMMERING</Description>
 			<iDestroyLairChance>100</iDestroyLairChance>
 			<BonusType>BONUS_REAGENTS</BonusType>
-			<PythonCallback>exploreKelpReagents</PythonCallback>
+			<PythonCallback>exploreKelpReagents(pUnit,pPlot)</PythonCallback>
 			<bBad>0</bBad>
 		</GoodyInfo>
 		<GoodyInfo>	<!--Otoloch			Unique-->
@@ -4960,7 +4960,7 @@
 			<iDestroyLairChance>100</iDestroyLairChance>
 			<bBad>0</bBad>
 			<bUnique>1</bUnique>
-			<PythonCallback>exploreLairOtoloch2</PythonCallback>
+			<PythonCallback>exploreLairOtoloch2(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--Condatis			Unique-->
 			<Type>GOODY_EXPLORE_LAIR_CONDATIS</Type>
@@ -4976,7 +4976,7 @@
 			<iDestroyLairChance>200</iDestroyLairChance>
 			<bBad>0</bBad>
 			<bUnique>1</bUnique>
-			<PythonCallback>exploreLairCondatis</PythonCallback>
+			<PythonCallback>exploreLairCondatis(pUnit,pPlot)</PythonCallback>
 			<PrereqEra>ERA_CLASSICAL</PrereqEra>
 		</GoodyInfo>
 		<GoodyInfo> <!--VampireKraken				Lair	 Results Shimmering      Bad  -->
@@ -4991,7 +4991,7 @@
 			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_SPAWN_VAMPIRE_KRAKEN</Description>
 			<iDestroyLairChance>60</iDestroyLairChance>
 			<bBad>1</bBad>
-					<PythonCallback>exploreLairVampireKraken</PythonCallback>
+					<PythonCallback>exploreLairVampireKraken(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Tsunami-->
 			<Type>GOODY_EXPLORE_LAIR_TSUNAMI</Type>
@@ -5005,7 +5005,7 @@
 			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_TSUNAMI</Description>
 			<iDestroyLairChance>60</iDestroyLairChance>
 			<bBad>1</bBad>
-					<PythonCallback>exploreLairTsunami</PythonCallback>
+					<PythonCallback>exploreLairTsunami(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Enraged -->
 			<Type>GOODY_EXPLORE_LAIR_ENRAGED</Type>
@@ -5058,7 +5058,7 @@
 			<bAnyPromotion>1</bAnyPromotion>
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairUrorBand</PythonCallback>
+			<PythonCallback>exploreLairUrorBand(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--Tapestry House Curator Unique-->
 			<Type>GOODY_EXPLORE_LAIR_TAPESTRY_HOUSE_CURATOR</Type>
@@ -5093,7 +5093,7 @@
 			<iDestroyLairChance>100</iDestroyLairChance>
 			<bBad>0</bBad>
 			<bUnique>1</bUnique>
-			<PythonCallback>exploreLairNemed</PythonCallback>
+			<PythonCallback>exploreLairNemed(pUnit,pPlot)</PythonCallback>
 			<PythonPrereq>exploreLairNoSheaimPrereq</PythonPrereq>
 		</GoodyInfo>
 		<GoodyInfo>	<!--BoredSuccubus-->
@@ -5110,7 +5110,7 @@
 			<iDestroyLairChance>100</iDestroyLairChance>
 			<bBad>0</bBad>
 			<bUnique>0</bUnique>
-			<PythonCallback>exploreLairSuccubus</PythonCallback>
+			<PythonCallback>exploreLairSuccubus(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--BreakBair         Unique-->
 			<Type>GOODY_EXPLORE_LAIR_ITEM_BREAK_BAIR</Type>
@@ -5130,7 +5130,7 @@
 			</PromotionAdds>
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairBreakBair</PythonCallback>
+			<PythonCallback>exploreLairBreakBair(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--ChaosMarauder			ULair	 Results Bair       Bad           -->
 			<Type>GOODY_EXPLORE_LAIR_SPAWN_CHAOS_MARAUDER</Type>
@@ -5144,7 +5144,7 @@
 			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_SPAWN_CHAOS_MARAUDER</Description>
 			<iDestroyLairChance>60</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairChaosMarauder</PythonCallback>
+			<PythonCallback>exploreLairChaosMarauder(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Manticore-->
 			<Type>GOODY_EXPLORE_LAIR_SPAWN_MANTICORE</Type>
@@ -5158,7 +5158,7 @@
 			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_SPAWN_MANTICORE</Description>
 			<iDestroyLairChance>60</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairManticore</PythonCallback>
+			<PythonCallback>exploreLairManticore(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Minotaur-->
 			<Type>GOODY_EXPLORE_LAIR_SPAWN_MINOTAUR</Type>
@@ -5172,7 +5172,7 @@
 			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_BAIR_MINOTAUR</Description>
 			<iDestroyLairChance>60</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairMinotaur</PythonCallback>
+			<PythonCallback>exploreLairMinotaur(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--TarDemon-->
 			<Type>GOODY_EXPLORE_LAIR_SPAWN_TAR_DEMON</Type>
@@ -5186,7 +5186,7 @@
 			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_BAIR_TAR_DEMON</Description>
 			<iDestroyLairChance>60</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairTarDemon</PythonCallback>
+			<PythonCallback>exploreLairTarDemon(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--SuccubusOrgy-->
 			<Type>GOODY_EXPLORE_LAIR_SPAWN_SUCCUBUS_ORGY</Type>
@@ -5200,7 +5200,7 @@
 			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_BAIR_SUCCUBUS_ORGY</Description>
 			<iDestroyLairChance>60</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairSuccubusOrgy</PythonCallback>
+			<PythonCallback>exploreLairSuccubusOrgy(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Emrys-->
 			<Type>GOODY_EXPLORE_LAIR_SPAWN_EMRYS</Type>
@@ -5214,7 +5214,7 @@
 			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_BAIR_EMRYS</Description>
 			<iDestroyLairChance>60</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairBairEmrys</PythonCallback>
+			<PythonCallback>exploreLairBairEmrys(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--MobiusWitches-->
 			<Type>GOODY_EXPLORE_LAIR_SPAWN_MOBIUS_WITCHES</Type>
@@ -5228,7 +5228,7 @@
 			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_SPAWN_MOBIUS_WITCHES</Description>
 			<iDestroyLairChance>60</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairBairMobiusWitches</PythonCallback>
+			<PythonCallback>exploreLairBairMobiusWitches(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--Barbatos 		 Unique ULair	 Results Sepulcher  Bad   	      -->
 			<Type>GOODY_BARBATOS</Type>
@@ -5244,7 +5244,7 @@
 			<iDestroyLairChance>0</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairBarbatos</PythonCallback>
+			<PythonCallback>exploreLairBarbatos(pUnit,pPlot)</PythonCallback>
 			<PrereqEra>ERA_CLASSICAL</PrereqEra>
 		</GoodyInfo>
 		<GoodyInfo>	<!--Rotten Earth Elem -->
@@ -5260,7 +5260,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>0</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairRottenEarthElem</PythonCallback>
+			<PythonCallback>exploreLairRottenEarthElem(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--Death Knight -->
 			<Type>GOODY_DEATH_KNIGHT</Type>
@@ -5275,7 +5275,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>0</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairDeathKnight</PythonCallback>
+			<PythonCallback>exploreLairDeathKnight(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--Drake -->
 			<Type>GOODY_UNDEAD_DRAKE</Type>
@@ -5290,7 +5290,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>0</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairUndeadDrake</PythonCallback>
+			<PythonCallback>exploreLairUndeadDrake(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--Mulyalfar		 		ULair	 Results Letum		Good 		  -->
 			<Type>GOODY_EXPLORE_LAIR_MULYALFAR</Type>
@@ -5305,7 +5305,7 @@
 			<Sound>AS2D_GOODY_SETTLER</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairMulyalfar</PythonCallback>
+			<PythonCallback>exploreLairMulyalfar(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--Priest of winter -->
 			<Type>GOODY_EXPLORE_LAIR_PRIEST_WINTER</Type>
@@ -5320,7 +5320,7 @@
 			<Sound>AS2D_GOODY_SETTLER</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairPriestWinter</PythonCallback>
+			<PythonCallback>exploreLairPriestWinter(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--Frostling Warrior -->
 			<Type>GOODY_EXPLORE_LAIR_FROSTLING_WARRIOR</Type>
@@ -5335,7 +5335,7 @@
 			<Sound>AS2D_GOODY_SETTLER</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairFrostlingWarrior</PythonCallback>
+			<PythonCallback>exploreLairFrostlingWarrior(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--FrostGiant				ULair	 Results Letum      Bad           -->
 			<Type>GOODY_EXPLORE_LAIR_SPAWN_FROST_GIANT</Type>
@@ -5349,7 +5349,7 @@
 			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_SPAWN_FROST_GIANT</Description>
 			<iDestroyLairChance>60</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairFrostGiant</PythonCallback>
+			<PythonCallback>exploreLairFrostGiant(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--IceElemental-->
 			<Type>GOODY_EXPLORE_LAIR_SPAWN_ICE_ELEMENTAL</Type>
@@ -5363,7 +5363,7 @@
 			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_SPAWN_ICE_ELEMENTAL</Description>
 			<iDestroyLairChance>60</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairIceElemental</PythonCallback>
+			<PythonCallback>exploreLairIceElemental(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--FrostlingAmbush-->
 			<Type>GOODY_EXPLORE_LAIR_FROSTLING_AMBUSH</Type>
@@ -5378,7 +5378,7 @@
 			<Sound>AS2D_GOODY_SETTLER</Sound>
 			<iDestroyLairChance>30</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairFrostlingAmbushHard</PythonCallback>
+			<PythonCallback>exploreLairFrostlingAmbushHard(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--Seraph		 			ULair	 Results Pyre		Bad 		  -->
 			<Type>GOODY_EXPLORE_LAIR_SERAPH</Type>
@@ -5393,7 +5393,7 @@
 			<Sound>AS2D_GOODY_SETTLER</Sound>
 			<iDestroyLairChance>30</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairSeraph</PythonCallback>
+			<PythonCallback>exploreLairSeraph(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--BhallHighPriest-->
 			<Type>GOODY_EXPLORE_LAIR_BHALL_HIGH_PRIEST</Type>
@@ -5408,7 +5408,7 @@
 			<Sound>AS2D_GOODY_SETTLER</Sound>
 			<iDestroyLairChance>30</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairBhallHighPriest</PythonCallback>
+			<PythonCallback>exploreLairBhallHighPriest(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--MaskAlexis		 Unique ULair	 Results Patria		Good 		  -->
 			<Type>GOODY_EXPLORE_LAIR_ITEM_MASK_ALEXIS</Type>
@@ -5442,7 +5442,7 @@
 			<Sound>AS2D_GOODY_SETTLER</Sound>
 			<iDestroyLairChance>30</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairGolemDefender</PythonCallback>
+			<PythonCallback>exploreLairGolemDefender(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--UndeadCarnival-->
 			<Type>GOODY_EXPLORE_LAIR_UNDEAD_CARNIVAL</Type>
@@ -5457,7 +5457,7 @@
 			<Sound>AS2D_GOODY_SETTLER</Sound>
 			<iDestroyLairChance>30</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairUndeadCarnival</PythonCallback>
+			<PythonCallback>exploreLairUndeadCarnival(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--Velgyr Golem2 			ULair	 Results ClockWork  Good   	      -->
 			<Type>GOODY_VELGYR_GOLEM_2</Type>
@@ -5472,7 +5472,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>0</iDestroyLairChance>
 			<bBad>0</bBad>
-			<PythonCallback>exploreLairVelgyrGolem2</PythonCallback>
+			<PythonCallback>exploreLairVelgyrGolem2(pUnit,pPlot)</PythonCallback>
 			<PrereqEra>ERA_CLASSICAL</PrereqEra>
 		</GoodyInfo>
 		<GoodyInfo>	<!--Velgyr Knight2-->
@@ -5489,7 +5489,7 @@
 			<iDestroyLairChance>0</iDestroyLairChance>
 			<bBad>0</bBad>
 			<BarbarianCivilization>CIVILIZATION_DEMON</BarbarianCivilization>
-			<PythonCallback>exploreLairVelgyrKnight2</PythonCallback>
+			<PythonCallback>exploreLairVelgyrKnight2(pUnit,pPlot)</PythonCallback>
 			<PrereqEra>ERA_CLASSICAL</PrereqEra>
 		</GoodyInfo>
 		<GoodyInfo>	<!--ClockWork Dragon Unique ULair	 Results ClockWork  Bad   	      -->
@@ -5506,7 +5506,7 @@
 			<iDestroyLairChance>0</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairMechDragon</PythonCallback>
+			<PythonCallback>exploreLairMechDragon(pUnit,pPlot)</PythonCallback>
 			<PrereqEra>ERA_CLASSICAL</PrereqEra>
 		</GoodyInfo>
 		<GoodyInfo>	<!--Velgyr Golem-->
@@ -5522,7 +5522,7 @@
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>0</iDestroyLairChance>
 			<bBad>1</bBad>
-			<PythonCallback>exploreLairVelgyrGolem</PythonCallback>
+			<PythonCallback>exploreLairVelgyrGolem(pUnit,pPlot)</PythonCallback>
 			<PrereqEra>ERA_CLASSICAL</PrereqEra>
 		</GoodyInfo>
 		<GoodyInfo>	<!--Velgyr Knight-->
@@ -5539,7 +5539,7 @@
 			<iDestroyLairChance>0</iDestroyLairChance>
 			<bBad>1</bBad>
 			<BarbarianCivilization>CIVILIZATION_DEMON</BarbarianCivilization>
-			<PythonCallback>exploreLairVelgyrKnight</PythonCallback>
+			<PythonCallback>exploreLairVelgyrKnight(pUnit,pPlot)</PythonCallback>
 			<PrereqEra>ERA_CLASSICAL</PrereqEra>
 		</GoodyInfo>
 		<GoodyInfo>	<!--ClockWork Golem-->
@@ -5556,7 +5556,7 @@
 			<iDestroyLairChance>0</iDestroyLairChance>
 			<bBad>1</bBad>
 			<BarbarianCivilization>CIVILIZATION_DEMON</BarbarianCivilization>
-			<PythonCallback>exploreLairClockworkGolem</PythonCallback>
+			<PythonCallback>exploreLairClockworkGolem(pUnit,pPlot)</PythonCallback>
 			<PrereqEra>ERA_CLASSICAL</PrereqEra>
 		</GoodyInfo>
 		<GoodyInfo>	<!--Discover the Illians	 - LAIR CIVILIZATION SPAWNS -->
@@ -5574,7 +5574,7 @@
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
 			<PythonPrereq>reqLairFreeIllians</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv( 'CIVILIZATION_ILLIANS', 'LEADER_AURIC')</PythonCallback>
+			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_ILLIANS','LEADER_AURIC')</PythonCallback>
 		</GoodyInfo>
 		<!--<GoodyInfo>	<!{1}**Discover the Amurites	 **{1}>
 			<Type>GOODY_FREE_AMURITES</Type>
@@ -5591,7 +5591,7 @@
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
 			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!{1}**Discover the Austrin	 **{1}>
 			<Type>GOODY_FREE_AUSTRIN</Type>
@@ -5608,7 +5608,7 @@
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
 			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!{1}**Discover the Balseraph	 **{1}>
 			<Type>GOODY_FREE_BALSERAPH</Type>
@@ -5625,7 +5625,7 @@
 			<bUnique>1</bUnique>
 			<bBad>1</bBad>
 			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!{1}**Discover the Calabim	 **{1}>
 			<Type>GOODY_FREE_CALABIM</Type>
@@ -5642,7 +5642,7 @@
 			<bUnique>1</bUnique>
 			<bBad>1</bBad>
 			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!{1}**Discover the Chislev	 **{1}>
 			<Type>GOODY_FREE_CHISLEV</Type>
@@ -5659,7 +5659,7 @@
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
 			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!{1}**Discover the Cualli	 **{1}>
 			<Type>GOODY_FREE_CUALLI</Type>
@@ -5676,7 +5676,7 @@
 			<bUnique>1</bUnique>
 			<bBad>1</bBad>
 			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!{1}**Discover the Grigori	 **{1}>
 			<Type>GOODY_FREE_GRIGORI</Type>
@@ -5693,7 +5693,7 @@
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
 			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!{1}**Discover the Hippus	 **{1}>
 			<Type>GOODY_FREE_HIPPUS</Type>
@@ -5710,7 +5710,7 @@
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
 			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!{1}**Discover the Khazad	 **{1}>
 			<Type>GOODY_FREE_KHAZAD</Type>
@@ -5727,7 +5727,7 @@
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
 			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!{1}**Discover the Kuriotates	 **{1}>
 			<Type>GOODY_FREE_KURIOTATES</Type>
@@ -5744,7 +5744,7 @@
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
 			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!{1}**Discover the Lanun	 **{1}>
 			<Type>GOODY_FREE_LANUN</Type>
@@ -5761,7 +5761,7 @@
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
 			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!{1}**Discover the Legion	 **{1}>
 			<Type>GOODY_FREE_THE_LEGION</Type>
@@ -5778,7 +5778,7 @@
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
 			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!{1}**Discover the Ljosalfer	 **{1}>
 			<Type>GOODY_FREE_LJOSALFER</Type>
@@ -5795,7 +5795,7 @@
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
 			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!{1}**Discover the Luchuirp	 **{1}>
 			<Type>GOODY_FREE_LUCHUIRP</Type>
@@ -5812,7 +5812,7 @@
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
 			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!{1}**Discover the Mazatl	 **{1}>
 			<Type>GOODY_FREE_MAZATL</Type>
@@ -5829,7 +5829,7 @@
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
 			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!{1}**Discover the Mechanos	 **{1}>
 			<Type>GOODY_FREE_MECHANOS</Type>
@@ -5846,7 +5846,7 @@
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
 			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!{1}**Discover the Mekara	 **{1}>
 			<Type>GOODY_FREE_MEKARA</Type>
@@ -5863,7 +5863,7 @@
 			<bUnique>1</bUnique>
 			<bBad>1</bBad>
 			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!{1}**Discover the Scions	 **{1}>
 			<Type>GOODY_FREE_SCIONS</Type>
@@ -5880,7 +5880,7 @@
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
 			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!{1}**Discover the Sheaim	 **{1}>
 			<Type>GOODY_FREE_SHEAIM</Type>
@@ -5897,7 +5897,7 @@
 			<bUnique>1</bUnique>
 			<bBad>1</bBad>
 			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!{1}**Discover the Sidar	 **{1}>
 			<Type>GOODY_FREE_SIDAR</Type>
@@ -5914,7 +5914,7 @@
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
 			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!{1}**Discover the Svartalfer	 **{1}>
 			<Type>GOODY_FREE_SVARTALFER</Type>
@@ -5931,7 +5931,7 @@
 			<bUnique>1</bUnique>
 			<bBad>1</bBad>
 			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>-->
 	</GoodyInfos>
 </Civ4GoodyInfo>

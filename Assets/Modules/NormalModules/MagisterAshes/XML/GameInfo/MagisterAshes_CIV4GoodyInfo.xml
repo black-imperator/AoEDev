@@ -96,7 +96,7 @@
 			<bBad>1</bBad>
 			<UnitClass>NONE</UnitClass>
 			<BarbarianClass>NONE</BarbarianClass>
-			<PythonCallback>exploreLairUmberguardHostile</PythonCallback>
+			<PythonCallback>exploreLairUmberguardHostile(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--Umberguard Friend -->
 			<Type>GOODY_UMBERGUARD_FRIEND</Type>
@@ -124,7 +124,7 @@
 			<bBad>0</bBad>
 			<UnitClass>NONE</UnitClass>
 			<BarbarianClass>NONE</BarbarianClass>
-			<PythonCallback>exploreLairUmberguardFriend</PythonCallback>
+			<PythonCallback>exploreLairUmberguardFriend(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--Discover the Once Elves -->
 			<Type>GOODY_ONCE_ELVES</Type>
@@ -181,7 +181,7 @@
 			<UnitClass>NONE</UnitClass>
 			<BarbarianClass>NONE</BarbarianClass>
 			<PythonPrereq>reqBreakWiddershinsCurse</PythonPrereq>
-			<PythonCallback>exploreLairBreakWiddershinsCurse</PythonCallback>
+			<PythonCallback>exploreLairBreakWiddershinsCurse(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--Nether Blade -->
 			<Type>GOODY_NETHER_BLADE</Type>
@@ -210,7 +210,7 @@
 			<UnitClass>NONE</UnitClass>
 			<BarbarianClass>NONE</BarbarianClass>
 			<PythonPrereq>reqNetherBlade</PythonPrereq>
-			<PythonCallback>exploreLairNetherBlade</PythonCallback>
+			<PythonCallback>exploreLairNetherBlade(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--Ostaurii Patrol -->
 			<Type>GOODY_OSTAURII_PATROL</Type>
@@ -238,7 +238,7 @@
 			<bBad>1</bBad>
 			<UnitClass>NONE</UnitClass>
 			<BarbarianClass>NONE</BarbarianClass>
-			<PythonCallback>exploreLairOstauriiPatrol</PythonCallback>
+			<PythonCallback>exploreLairOstauriiPatrol(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--Rogue Necromancer Good -->
 			<Type>GOODY_ROGUE_NECROMANCER_GOOD</Type>
@@ -266,7 +266,7 @@
 			<bBad>0</bBad>
 			<UnitClass>NONE</UnitClass>
 			<BarbarianClass>NONE</BarbarianClass>
-			<PythonCallback>exploreLairRogueNecromancerGood</PythonCallback>
+			<PythonCallback>exploreLairRogueNecromancerGood(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--Rogue Necromancer Bad -->
 			<Type>GOODY_ROGUE_NECROMANCER_BAD</Type>
@@ -294,7 +294,7 @@
 			<bBad>1</bBad>
 			<UnitClass>NONE</UnitClass>
 			<BarbarianClass>NONE</BarbarianClass>
-			<PythonCallback>exploreLairRogueNecromancerBad</PythonCallback>
+			<PythonCallback>exploreLairRogueNecromancerBad(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		
 		<!--<GoodyInfo>	<!{1}**Discover the Elohim	- LAIR CIVILIZATION SPAWN **{1}>
@@ -356,7 +356,7 @@
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
 			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv</PythonCallback>
+			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>-->
 	</GoodyInfos>
 </Civ4GoodyInfo>
