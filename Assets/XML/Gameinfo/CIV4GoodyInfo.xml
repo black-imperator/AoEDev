@@ -5880,7 +5880,7 @@
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
 			<PythonPrereq>reqLairFreeScions</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_SCIONS','LEADER_RISEN_EMPEROR')</PythonCallback>
+			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_SCIONS','LEADER_KORINNA')</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--Discover the Sheaim	 -->
 			<Type>GOODY_FREE_SHEAIM</Type>

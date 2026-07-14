@@ -297,7 +297,7 @@
 			<PythonCallback>exploreLairRogueNecromancerBad(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		
-		<!--<GoodyInfo>	<!{1}**Discover the Elohim	- LAIR CIVILIZATION SPAWN **{1}>
+		<GoodyInfo>	<!--Discover the Elohim	- LAIR CIVILIZATION SPAWN -->
 			<Type>GOODY_FREE_ELOHIM</Type>
 			<GoodyClasses>
 				<GoodyClass>
@@ -355,8 +355,8 @@
 			<iDestroyLairChance>0</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
-			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
-		</GoodyInfo>-->
+			<PythonPrereq>reqLairFreeElohim</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_ELOHIM','LEADER_ETHNE')</PythonCallback>
+		</GoodyInfo>
 	</GoodyInfos>
 </Civ4GoodyInfo>

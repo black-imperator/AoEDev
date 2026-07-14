@@ -13231,6 +13231,282 @@ def reqLairFreeIllians(argsList):
 
 	return True
 
+def reqLairFreeAmurites(argsList):
+
+	if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_LAIR_CIVILIZATIONS):
+		return False
+	if CyGame().getNumCivActive(gc.getInfoTypeForString('CIVILIZATION_AMURITES')) > 0:
+		return False
+	if not gc.getCivilizationInfo(gc.getInfoTypeForString('CIVILIZATION_AMURITES')).isPlayable():
+		return False
+
+	return True
+
+def reqLairFreeAustrin(argsList):
+
+	if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_LAIR_CIVILIZATIONS):
+		return False
+	if CyGame().getNumCivActive(gc.getInfoTypeForString('CIVILIZATION_AUSTRIN')) > 0:
+		return False
+	if not gc.getCivilizationInfo(gc.getInfoTypeForString('CIVILIZATION_AUSTRIN')).isPlayable():
+		return False
+
+	return True
+
+def reqLairFreeBalseraph(argsList):
+
+	if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_LAIR_CIVILIZATIONS):
+		return False
+	if CyGame().getNumCivActive(gc.getInfoTypeForString('CIVILIZATION_BALSERAPHS')) > 0:
+		return False
+	if not gc.getCivilizationInfo(gc.getInfoTypeForString('CIVILIZATION_BALSERAPHS')).isPlayable():
+		return False
+
+	return True
+
+def reqLairFreeCalabim(argsList):
+
+	if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_LAIR_CIVILIZATIONS):
+		return False
+	if CyGame().getNumCivActive(gc.getInfoTypeForString('CIVILIZATION_CALABIM')) > 0:
+		return False
+	if not gc.getCivilizationInfo(gc.getInfoTypeForString('CIVILIZATION_CALABIM')).isPlayable():
+		return False
+
+	return True
+
+def reqLairFreeChislev(argsList):
+
+	if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_LAIR_CIVILIZATIONS):
+		return False
+	if CyGame().getNumCivActive(gc.getInfoTypeForString('CIVILIZATION_CHISLEV')) > 0:
+		return False
+	if not gc.getCivilizationInfo(gc.getInfoTypeForString('CIVILIZATION_CHISLEV')).isPlayable():
+		return False
+
+	return True
+
+def reqLairFreeCualli(argsList):
+
+	if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_LAIR_CIVILIZATIONS):
+		return False
+	if CyGame().getNumCivActive(gc.getInfoTypeForString('CIVILIZATION_CUALLI')) > 0:
+		return False
+	if not gc.getCivilizationInfo(gc.getInfoTypeForString('CIVILIZATION_CUALLI')).isPlayable():
+		return False
+
+	return True
+
+def reqLairFreeGrigori(argsList):
+
+	if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_LAIR_CIVILIZATIONS):
+		return False
+	if CyGame().getNumCivActive(gc.getInfoTypeForString('CIVILIZATION_GRIGORI')) > 0:
+		return False
+	if not gc.getCivilizationInfo(gc.getInfoTypeForString('CIVILIZATION_GRIGORI')).isPlayable():
+		return False
+
+	return True
+
+def reqLairFreeHippus(argsList):
+
+	if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_LAIR_CIVILIZATIONS):
+		return False
+	if CyGame().getNumCivActive(gc.getInfoTypeForString('CIVILIZATION_HIPPUS')) > 0:
+		return False
+	if not gc.getCivilizationInfo(gc.getInfoTypeForString('CIVILIZATION_HIPPUS')).isPlayable():
+		return False
+
+	return True
+
+def reqLairFreeKhazad(argsList):
+
+	if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_LAIR_CIVILIZATIONS):
+		return False
+	if CyGame().getNumCivActive(gc.getInfoTypeForString('CIVILIZATION_KHAZAD')) > 0:
+		return False
+	if not gc.getCivilizationInfo(gc.getInfoTypeForString('CIVILIZATION_KHAZAD')).isPlayable():
+		return False
+
+	return True
+
+def reqLairFreeKuriotate(argsList):
+
+	if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_LAIR_CIVILIZATIONS):
+		return False
+	if CyGame().getNumCivActive(gc.getInfoTypeForString('CIVILIZATION_KURIOTATES')) > 0:
+		return False
+	if not gc.getCivilizationInfo(gc.getInfoTypeForString('CIVILIZATION_KURIOTATES')).isPlayable():
+		return False
+
+	return True
+
+def reqLairFreeLanun(argsList):
+
+	if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_LAIR_CIVILIZATIONS):
+		return False
+	if CyGame().getNumCivActive(gc.getInfoTypeForString('CIVILIZATION_LANUN')) > 0:
+		return False
+	if not gc.getCivilizationInfo(gc.getInfoTypeForString('CIVILIZATION_LANUN')).isPlayable():
+		return False
+
+	return True
+
+def reqLairFreeLegion(argsList):
+
+	if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_LAIR_CIVILIZATIONS):
+		return False
+	if CyGame().getNumCivActive(gc.getInfoTypeForString('CIVILIZATION_DTESH')) > 0:
+		return False
+	if not gc.getCivilizationInfo(gc.getInfoTypeForString('CIVILIZATION_DTESH')).isPlayable():
+		return False
+
+	return True
+
+def reqLairFreeLjosalfar(argsList):
+
+	if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_LAIR_CIVILIZATIONS):
+		return False
+	if CyGame().getNumCivActive(gc.getInfoTypeForString('CIVILIZATION_LJOSALFAR')) > 0:
+		return False
+	if not gc.getCivilizationInfo(gc.getInfoTypeForString('CIVILIZATION_LJOSALFAR')).isPlayable():
+		return False
+
+	return True
+
+def reqLairFreeLuchuirp(argsList):
+
+	if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_LAIR_CIVILIZATIONS):
+		return False
+	if CyGame().getNumCivActive(gc.getInfoTypeForString('CIVILIZATION_LUCHUIRP')) > 0:
+		return False
+	if not gc.getCivilizationInfo(gc.getInfoTypeForString('CIVILIZATION_LUCHUIRP')).isPlayable():
+		return False
+
+	return True
+
+def reqLairFreeMazatl(argsList):
+
+	if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_LAIR_CIVILIZATIONS):
+		return False
+	if CyGame().getNumCivActive(gc.getInfoTypeForString('CIVILIZATION_MAZATL')) > 0:
+		return False
+	if not gc.getCivilizationInfo(gc.getInfoTypeForString('CIVILIZATION_MAZATL')).isPlayable():
+		return False
+
+	return True
+
+def reqLairFreeMechanos(argsList):
+
+	if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_LAIR_CIVILIZATIONS):
+		return False
+	if CyGame().getNumCivActive(gc.getInfoTypeForString('CIVILIZATION_MECHANOS')) > 0:
+		return False
+	if not gc.getCivilizationInfo(gc.getInfoTypeForString('CIVILIZATION_MECHANOS')).isPlayable():
+		return False
+
+	return True
+
+def reqLairFreeMekara(argsList):
+
+	if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_LAIR_CIVILIZATIONS):
+		return False
+	if CyGame().getNumCivActive(gc.getInfoTypeForString('CIVILIZATION_MEKARA_V2')) > 0:
+		return False
+	if not gc.getCivilizationInfo(gc.getInfoTypeForString('CIVILIZATION_MEKARA_V2')).isPlayable():
+		return False
+
+	return True
+
+def reqLairFreeScions(argsList):
+
+	if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_LAIR_CIVILIZATIONS):
+		return False
+	if CyGame().getNumCivActive(gc.getInfoTypeForString('CIVILIZATION_SCIONS')) > 0:
+		return False
+	if not gc.getCivilizationInfo(gc.getInfoTypeForString('CIVILIZATION_SCIONS')).isPlayable():
+		return False
+
+	return True
+
+def reqLairFreeSheaim(argsList):
+
+	if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_LAIR_CIVILIZATIONS):
+		return False
+	if CyGame().getNumCivActive(gc.getInfoTypeForString('CIVILIZATION_SHEAIM')) > 0:
+		return False
+	if not gc.getCivilizationInfo(gc.getInfoTypeForString('CIVILIZATION_SHEAIM')).isPlayable():
+		return False
+
+	return True
+
+def reqLairFreeSidar(argsList):
+
+	if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_LAIR_CIVILIZATIONS):
+		return False
+	if CyGame().getNumCivActive(gc.getInfoTypeForString('CIVILIZATION_SIDAR')) > 0:
+		return False
+	if not gc.getCivilizationInfo(gc.getInfoTypeForString('CIVILIZATION_SIDAR')).isPlayable():
+		return False
+
+	return True
+
+def reqLairFreeSvartalfer(argsList):
+
+	if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_LAIR_CIVILIZATIONS):
+		return False
+	if CyGame().getNumCivActive(gc.getInfoTypeForString('CIVILIZATION_SVARTALFAR')) > 0:
+		return False
+	if not gc.getCivilizationInfo(gc.getInfoTypeForString('CIVILIZATION_SVARTALFAR')).isPlayable():
+		return False
+
+	return True
+
+def reqLairFreeElohim(argsList):
+
+	if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_LAIR_CIVILIZATIONS):
+		return False
+	if CyGame().getNumCivActive(gc.getInfoTypeForString('CIVILIZATION_ELOHIM')) > 0:
+		return False
+	if not gc.getCivilizationInfo(gc.getInfoTypeForString('CIVILIZATION_ELOHIM')).isPlayable():
+		return False
+
+	return True
+
+def reqLairFreeArchos(argsList):
+
+	if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_LAIR_CIVILIZATIONS):
+		return False
+	if CyGame().getNumCivActive(gc.getInfoTypeForString('CIVILIZATION_ARCHOS')) > 0:
+		return False
+	if not gc.getCivilizationInfo(gc.getInfoTypeForString('CIVILIZATION_ARCHOS')).isPlayable():
+		return False
+
+	return True
+
+def reqLairFreeDoviello(argsList):
+
+	if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_LAIR_CIVILIZATIONS):
+		return False
+	if CyGame().getNumCivActive(gc.getInfoTypeForString('CIVILIZATION_DOVIELLO')) > 0:
+		return False
+	if not gc.getCivilizationInfo(gc.getInfoTypeForString('CIVILIZATION_DOVIELLO')).isPlayable():
+		return False
+
+	return True
+
+def reqLairFreeMalakim(argsList):
+
+	if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_LAIR_CIVILIZATIONS):
+		return False
+	if CyGame().getNumCivActive(gc.getInfoTypeForString('CIVILIZATION_MALAKIM')) > 0:
+		return False
+	if not gc.getCivilizationInfo(gc.getInfoTypeForString('CIVILIZATION_MALAKIM')).isPlayable():
+		return False
+
+	return True
+
+#Explorelairfreeciv made by TiberiusW and Black_Imperator in July, 2026
 def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader): 
 
 	szBuffer = ''
@@ -13298,6 +13574,30 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 	# we don't want Wilbowman for illians, though
 	if iCiv == gc.getInfoTypeForString("CIVILIZATION_ILLIANS"):
 		iHeroClass = gc.getInfoTypeForString("UNITCLASS_AURIC")
+	if iCiv == gc.getInfoTypeForString("CIVILIZATION_KURIOTATES"):
+		iHeroClass = gc.getInfoTypeForString("UNITCLASS_ADVENTURER")
+	if iCiv == gc.getInfoTypeForString("CIVILIZATION_GRIGORI"):
+		iHeroClass = gc.getInfoTypeForString("UNITCLASS_ADVENTURER")
+	if iCiv == gc.getInfoTypeForString("CIVILIZATION_MAZATL"):
+		iHeroClass = gc.getInfoTypeForString("UNITCLASS_ADVENTURER")
+	if iCiv == gc.getInfoTypeForString("CIVILIZATION_ARCHOS"):
+		iHeroClass = gc.getInfoTypeForString("UNITCLASS_ADVENTURER")
+	if iCiv == gc.getInfoTypeForString("CIVILIZATION_DOVIELLO"):
+		iHeroClass = gc.getInfoTypeForString("UNITCLASS_LUCIAN")
+	if iCiv == gc.getInfoTypeForString("CIVILIZATION_MECHANOS"):
+		iHeroClass = gc.getInfoTypeForString("UNITCLASS_FERIS")
+	if iCiv == gc.getInfoTypeForString("CIVILIZATION_DTESH"):
+		iHeroClass = gc.getInfoTypeForString("UNITCLASS_HEALER")
+	if iCiv == gc.getInfoTypeForString("CIVILIZATION_SCIONS"):
+		iHeroClass = gc.getInfoTypeForString("UNITCLASS_KORRINA")
+	if iCiv == gc.getInfoTypeForString("CIVILIZATION_LANUN"):
+		iHeroClass = gc.getInfoTypeForString("UNITCLASS_GUYBRUSH")
+	if iCiv == gc.getInfoTypeForString("CIVILIZATION_SHEAIM"):
+		iHeroClass = gc.getInfoTypeForString("UNITCLASS_ADVENTURER")
+	if iCiv == gc.getInfoTypeForString("CIVILIZATION_BALSERAPHS"):
+		iHeroClass = gc.getInfoTypeForString("UNITCLASS_ADVENTURER")
+	if iCiv == gc.getInfoTypeForString("CIVILIZATION_CUALLI"):
+		iHeroClass = gc.getInfoTypeForString("UNITCLASS_ADVENTURER")
 	if iHeroClass != -1:
 		# we can check for duplicates right here
 		if CyGame().isUnitClassMaxedOut(iHeroClass, 0) == False:
