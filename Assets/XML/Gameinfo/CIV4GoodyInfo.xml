@@ -5567,16 +5567,16 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
-			<iWeight>99999</iWeight>
+			<iWeight>10</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_ILLIANS</Description>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>0</iDestroyLairChance>
 			<bUnique>1</bUnique>
-			<bBad>0</bBad>
+			<bBad>1</bBad>
 			<PythonPrereq>reqLairFreeIllians</PythonPrereq>
 			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_ILLIANS','LEADER_AURIC')</PythonCallback>
 		</GoodyInfo>
-		<!--<GoodyInfo>	<!{1}**Discover the Amurites	 **{1}>
+		<GoodyInfo>	<!-- Discover the Amurites	 -->
 			<Type>GOODY_FREE_AMURITES</Type>
 			<GoodyClasses>
 				<GoodyClass>
@@ -5590,10 +5590,10 @@
 			<iDestroyLairChance>0</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
-			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
+			<PythonPrereq>reqLairFreeAmurites</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_AMURITES','LEADER_DAIN')</PythonCallback>
 		</GoodyInfo>
-		<GoodyInfo>	<!{1}**Discover the Austrin	 **{1}>
+		<GoodyInfo>	<!--Discover the Austrin	 -->
 			<Type>GOODY_FREE_AUSTRIN</Type>
 			<GoodyClasses>
 				<GoodyClass>
@@ -5607,10 +5607,10 @@
 			<iDestroyLairChance>0</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
-			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
+			<PythonPrereq>reqLairFreeAustrin</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_AUSTRIN','LEADER_DEIRDRA')</PythonCallback>
 		</GoodyInfo>
-		<GoodyInfo>	<!{1}**Discover the Balseraph	 **{1}>
+		<GoodyInfo>	<!--Discover the Balseraph	 -->
 			<Type>GOODY_FREE_BALSERAPH</Type>
 			<GoodyClasses>
 				<GoodyClass>
@@ -5624,10 +5624,10 @@
 			<iDestroyLairChance>0</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>1</bBad>
-			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
+			<PythonPrereq>reqLairFreeBalseraph</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_BALSERAPHS','LEADER_PERPENTACH')</PythonCallback>
 		</GoodyInfo>
-		<GoodyInfo>	<!{1}**Discover the Calabim	 **{1}>
+		<GoodyInfo>	<!--Discover the Calabim	 -->
 			<Type>GOODY_FREE_CALABIM</Type>
 			<GoodyClasses>
 				<GoodyClass>
@@ -5641,10 +5641,10 @@
 			<iDestroyLairChance>0</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>1</bBad>
-			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
+			<PythonPrereq>reqLairFreeCalabim</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_CALABIM','LEADER_ALEXIS')</PythonCallback>
 		</GoodyInfo>
-		<GoodyInfo>	<!{1}**Discover the Chislev	 **{1}>
+		<GoodyInfo>	<!--Discover the Chislev	 -->
 			<Type>GOODY_FREE_CHISLEV</Type>
 			<GoodyClasses>
 				<GoodyClass>
@@ -5658,10 +5658,10 @@
 			<iDestroyLairChance>0</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
-			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
+			<PythonPrereq>reqLairFreeChislev</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_CHISLEV','LEADER_CHISLEV')</PythonCallback>
 		</GoodyInfo>
-		<GoodyInfo>	<!{1}**Discover the Cualli	 **{1}>
+		<GoodyInfo>	<!--Discover the Cualli	 -->
 			<Type>GOODY_FREE_CUALLI</Type>
 			<GoodyClasses>
 				<GoodyClass>
@@ -5675,10 +5675,10 @@
 			<iDestroyLairChance>0</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>1</bBad>
-			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
+			<PythonPrereq>reqLairFreeCualli</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_CUALLI','LEADER_KOLSEHVAHN')</PythonCallback>
 		</GoodyInfo>
-		<GoodyInfo>	<!{1}**Discover the Grigori	 **{1}>
+		<GoodyInfo>	<!--Discover the Grigori	 -->
 			<Type>GOODY_FREE_GRIGORI</Type>
 			<GoodyClasses>
 				<GoodyClass>
@@ -5692,10 +5692,10 @@
 			<iDestroyLairChance>0</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
-			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
+			<PythonPrereq>reqLairFreeGrigori</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_GRIGORI','LEADER_CASSIEL')</PythonCallback>
 		</GoodyInfo>
-		<GoodyInfo>	<!{1}**Discover the Hippus	 **{1}>
+		<GoodyInfo>	<!--Discover the Hippus	 -->
 			<Type>GOODY_FREE_HIPPUS</Type>
 			<GoodyClasses>
 				<GoodyClass>
@@ -5709,10 +5709,10 @@
 			<iDestroyLairChance>0</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
-			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
+			<PythonPrereq>reqLairFreeHippus</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_HIPPUS','LEADER_RHOANNA')</PythonCallback>
 		</GoodyInfo>
-		<GoodyInfo>	<!{1}**Discover the Khazad	 **{1}>
+		<GoodyInfo>	<!--Discover the Khazad	 -->
 			<Type>GOODY_FREE_KHAZAD</Type>
 			<GoodyClasses>
 				<GoodyClass>
@@ -5726,10 +5726,10 @@
 			<iDestroyLairChance>0</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
-			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
+			<PythonPrereq>reqLairFreeKhazad</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_KHAZAD','LEADER_ARTURUS')</PythonCallback>
 		</GoodyInfo>
-		<GoodyInfo>	<!{1}**Discover the Kuriotates	 **{1}>
+		<GoodyInfo>	<!--Discover the Kuriotates	 -->
 			<Type>GOODY_FREE_KURIOTATES</Type>
 			<GoodyClasses>
 				<GoodyClass>
@@ -5743,10 +5743,10 @@
 			<iDestroyLairChance>0</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
-			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
+			<PythonPrereq>reqLairFreeKuriotate</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_KURIOTATES','LEADER_CARDITH')</PythonCallback>
 		</GoodyInfo>
-		<GoodyInfo>	<!{1}**Discover the Lanun	 **{1}>
+		<GoodyInfo>	<!--Discover the Lanun	 -->
 			<Type>GOODY_FREE_LANUN</Type>
 			<GoodyClasses>
 				<GoodyClass>
@@ -5760,10 +5760,10 @@
 			<iDestroyLairChance>0</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
-			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
+			<PythonPrereq>reqLairFreeLanun</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_LANUN','LEADER_FALAMAR')</PythonCallback>
 		</GoodyInfo>
-		<GoodyInfo>	<!{1}**Discover the Legion	 **{1}>
+		<GoodyInfo>	<!--Discover the Legion	 -->
 			<Type>GOODY_FREE_THE_LEGION</Type>
 			<GoodyClasses>
 				<GoodyClass>
@@ -5777,11 +5777,11 @@
 			<iDestroyLairChance>0</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
-			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
+			<PythonPrereq>reqLairFreeLegion</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_DTESH','LEADER_DTESH')</PythonCallback>
 		</GoodyInfo>
-		<GoodyInfo>	<!{1}**Discover the Ljosalfer	 **{1}>
-			<Type>GOODY_FREE_LJOSALFER</Type>
+		<GoodyInfo>	<!--Discover the Ljosalfer	 -->
+			<Type>GOODY_FREE_LJOSALFAR</Type>
 			<GoodyClasses>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_NATURE_MINOR</GoodyClassType>
@@ -5794,10 +5794,10 @@
 			<iDestroyLairChance>0</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
-			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
+			<PythonPrereq>reqLairFreeLjosalfar</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_LJOSALFAR','LEADER_THESSA')</PythonCallback>
 		</GoodyInfo>
-		<GoodyInfo>	<!{1}**Discover the Luchuirp	 **{1}>
+		<GoodyInfo>	<!--Discover the Luchuirp	 -->
 			<Type>GOODY_FREE_LUCHUIRP</Type>
 			<GoodyClasses>
 				<GoodyClass>
@@ -5811,10 +5811,10 @@
 			<iDestroyLairChance>0</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
-			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
+			<PythonPrereq>reqLairFreeLuchuirp</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_LUCHUIRP','LEADER_BEERI')</PythonCallback>
 		</GoodyInfo>
-		<GoodyInfo>	<!{1}**Discover the Mazatl	 **{1}>
+		<GoodyInfo>	<!--Discover the Mazatl	 -->
 			<Type>GOODY_FREE_MAZATL</Type>
 			<GoodyClasses>
 				<GoodyClass>
@@ -5828,10 +5828,10 @@
 			<iDestroyLairChance>0</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
-			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
+			<PythonPrereq>reqLairFreeMazatl</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_MAZATL','LEADER_MAZATL')</PythonCallback>
 		</GoodyInfo>
-		<GoodyInfo>	<!{1}**Discover the Mechanos	 **{1}>
+		<GoodyInfo>	<!--Discover the Mechanos	 -->
 			<Type>GOODY_FREE_MECHANOS</Type>
 			<GoodyClasses>
 				<GoodyClass>
@@ -5845,10 +5845,10 @@
 			<iDestroyLairChance>0</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
-			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
+			<PythonPrereq>reqLairFreeMechanos</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_MECHANOS','LEADER_MAER')</PythonCallback>
 		</GoodyInfo>
-		<GoodyInfo>	<!{1}**Discover the Mekara	 **{1}>
+		<GoodyInfo>	<!--Discover the Mekara	 -->
 			<Type>GOODY_FREE_MEKARA</Type>
 			<GoodyClasses>
 				<GoodyClass>
@@ -5862,10 +5862,10 @@
 			<iDestroyLairChance>0</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>1</bBad>
-			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
+			<PythonPrereq>reqLairFreeMekara</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_MEKARA_V2','LEADER_IRAM')</PythonCallback>
 		</GoodyInfo>
-		<GoodyInfo>	<!{1}**Discover the Scions	 **{1}>
+		<GoodyInfo>	<!--Discover the Scions	 -->
 			<Type>GOODY_FREE_SCIONS</Type>
 			<GoodyClasses>
 				<GoodyClass>
@@ -5879,10 +5879,10 @@
 			<iDestroyLairChance>0</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
-			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
+			<PythonPrereq>reqLairFreeScions</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_SCIONS','LEADER_RISEN_EMPEROR')</PythonCallback>
 		</GoodyInfo>
-		<GoodyInfo>	<!{1}**Discover the Sheaim	 **{1}>
+		<GoodyInfo>	<!--Discover the Sheaim	 -->
 			<Type>GOODY_FREE_SHEAIM</Type>
 			<GoodyClasses>
 				<GoodyClass>
@@ -5896,10 +5896,10 @@
 			<iDestroyLairChance>0</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>1</bBad>
-			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
+			<PythonPrereq>reqLairFreeSheaim</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_SHEAIM','LEADER_OS-GABELLA')</PythonCallback>
 		</GoodyInfo>
-		<GoodyInfo>	<!{1}**Discover the Sidar	 **{1}>
+		<GoodyInfo>	<!--Discover the Sidar	 -->
 			<Type>GOODY_FREE_SIDAR</Type>
 			<GoodyClasses>
 				<GoodyClass>
@@ -5913,10 +5913,10 @@
 			<iDestroyLairChance>0</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
-			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
+			<PythonPrereq>reqLairFreeSidar</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_SIDAR','LEADER_SANDALPHON')</PythonCallback>
 		</GoodyInfo>
-		<GoodyInfo>	<!{1}**Discover the Svartalfer	 **{1}>
+		<GoodyInfo>	<!--Discover the Svartalfer	 -->
 			<Type>GOODY_FREE_SVARTALFER</Type>
 			<GoodyClasses>
 				<GoodyClass>
@@ -5930,8 +5930,8 @@
 			<iDestroyLairChance>0</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>1</bBad>
-			<PythonPrereq>reqLairFree</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv(pUnit,pPlot)</PythonCallback>
-		</GoodyInfo>-->
+			<PythonPrereq>reqLairFreeSvartalfer</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_SVARTALFAR','LEADER_FAERYL')</PythonCallback>
+		</GoodyInfo>
 	</GoodyInfos>
 </Civ4GoodyInfo>

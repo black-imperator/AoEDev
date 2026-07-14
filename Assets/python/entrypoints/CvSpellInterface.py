@@ -13221,19 +13221,18 @@ def exploreSlavers(argsList):
 
 
 def reqLairFreeIllians(argsList):
-#	Enable this once DLL updated
-#	if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_LAIR_CIVILIZATIONS):
-#		return False
+
+	if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_LAIR_CIVILIZATIONS):
+		return False
 	if CyGame().getNumCivActive(gc.getInfoTypeForString('CIVILIZATION_ILLIANS')) > 0:
 		return False
-
 	if not gc.getCivilizationInfo(gc.getInfoTypeForString('CIVILIZATION_ILLIANS')).isPlayable():
 		return False
 
 	return True
 
 def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader): 
-	print "startingexplorelairfreeciv DEF"
+
 	szBuffer = ''
 	iPlayer		= pUnit.getOwner()
 	pPlayer		= gc.getPlayer(iPlayer)
@@ -13247,12 +13246,11 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 	# just to prevent unnecessary if ladders for ease of reading
 	if iNewPlayer == -1:	return
 	if pSpawnPlot.isNone():	return
-	print "startingexplorelairfreeciv pSPAWN"
+
 	# we can turn this part into a list of civs to spawn if you want some universal result
 	lCiv		= [gc.getInfoTypeForString(sCiv)]
-	print "startingexplorelairfreeciv lCiv"
 	lLeader		= [gc.getInfoTypeForString(sLeader)]
-	print "startingexplorelairfreeciv lLeader"
+
 	iCiv		= lCiv[0]
 	iLeader		= lLeader[0]
 
@@ -13271,7 +13269,7 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 	pNewPlayer		= gc.getPlayer(iNewPlayer)
 	iNewTeam		= pNewPlayer.getTeam()
 	pNewTeam		= gc.getTeam(iNewTeam)
-	print "startingexplorelairfreeciv Spawn civ"
+
 	# Set the same techs
 	iTechCount = 0
 	for iTech in xrange(gc.getNumTechInfos()):
@@ -13285,7 +13283,7 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 	pTomb	= pNewPlayer.initCity(iX, iY)
 
 	pNewPlayer.changeGoldenAgeTurns(CyGame().goldenAgeLength() + (iTechCount / 3))
-	print "startingexplorelairfreeciv pNewPlayer"
+
 	# let's start with an empty list of units and populate it as we go
 	# we can use a bit more complex one, for example we can make list of lists to customize our needs
 	# [[UnitID0, Count0, XP0], [UnitID1, Count1, XP1],...]
@@ -13508,16 +13506,16 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 
 	for iCount in xrange(iCountSupp):
 		newUnit = pNewPlayer.initUnit(gc.getInfoTypeForString("UNIT_SUPPLIES"), iX, iY, iAI, iDirection)
-		if pPlayer.isHuman():
-			popupInfo = CyPopupInfo()
-			popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_PYTHON)
-			popupInfo.setText(CyTranslator().getText("TXT_KEY_POPUP_CONTROL_CIVILIZATION_LAIR_SPAWN",()))
-			popupInfo.setData1(iPlayer)
-			popupInfo.setData2(iNewPlayer)
-			popupInfo.addPythonButton(CyTranslator().getText("TXT_KEY_POPUP_YES", ()), "")
-			popupInfo.addPythonButton(CyTranslator().getText("TXT_KEY_POPUP_NO", ()), "")
-			popupInfo.setOnClickedPythonCallback("reassignPlayer")
-			popupInfo.addPopup(iPlayer)
+	if pPlayer.isHuman():
+		popupInfo = CyPopupInfo()
+		popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_PYTHON)
+		popupInfo.setText(CyTranslator().getText("TXT_KEY_POPUP_CONTROL_CIVILIZATION_LAIR_SPAWN",()))
+		popupInfo.setData1(iPlayer)
+		popupInfo.setData2(iNewPlayer)
+		popupInfo.addPythonButton(CyTranslator().getText("TXT_KEY_POPUP_YES", ()), "")
+		popupInfo.addPythonButton(CyTranslator().getText("TXT_KEY_POPUP_NO", ()), "")
+		popupInfo.setOnClickedPythonCallback("reassignPlayer")
+		popupInfo.addPopup(iPlayer)
 
 
 

@@ -264,7 +264,7 @@ class FoxTools:
 		Option["Cut Losers"]            = isOption(GameOptionTypes.GAMEOPTION_CHALLENGE_CUT_LOSERS)
 		Option["High to Low"]           = isOption(GameOptionTypes.GAMEOPTION_CHALLENGE_HIGH_TO_LOW)
 		Option["Increasing Difficulty"] = isOption(GameOptionTypes.GAMEOPTION_CHALLENGE_INCREASING_DIFFICULTY)
-#		Option["No Freed Civilizations"] = isOption(GameOptionTypes.GAMEOPTION_LAIR_CIVILIZATIONS)
+		Option["No Freed Civilizations"] = isOption(GameOptionTypes.GAMEOPTION_LAIR_CIVILIZATIONS)
 		self.GameOptions                = Option
 
 	def getGameSpeedDict(self):	return self.GameSpeeds
