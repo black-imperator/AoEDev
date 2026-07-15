@@ -13518,6 +13518,7 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 	iY			= pSpawnPlot.getY()
 	iAI			= UnitAITypes.NO_UNITAI
 	iDirection	= DirectionTypes.DIRECTION_SOUTH
+	iGold		= 1000
 
 	# just to prevent unnecessary if ladders for ease of reading
 	if iNewPlayer == -1:	return
@@ -13559,7 +13560,7 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 	pTomb	= pNewPlayer.initCity(iX, iY)
 
 	pNewPlayer.changeGoldenAgeTurns(CyGame().goldenAgeLength() + (iTechCount / 3))
-
+	pNewPlayer.changeGold(iGold)
 	# let's start with an empty list of units and populate it as we go
 	# we can use a bit more complex one, for example we can make list of lists to customize our needs
 	# [[UnitID0, Count0, XP0], [UnitID1, Count1, XP1],...]

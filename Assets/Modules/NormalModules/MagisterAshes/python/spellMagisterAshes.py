@@ -114,12 +114,12 @@ def reqNetherBlade(argsList):
 	pUnit, pPlot = argsList
 	return not (game.getNumCivActive(getInfoType("CIVILIZATION_SIDAR"))>0)
 	
-def exploreLairNetherBlade(argsList):
-	pUnit,pPlot = argsList
+def exploreLairNetherBlade(pUnit, pPlot):
+
 	pUnit.setHasPromotion(getInfoType("PROMOTION_NETHER_BLADE"),True)
 	
-def exploreLairOstauriiPatrol(argsList):
-	pUnit,pPlot = argsList
+def exploreLairOstauriiPatrol(pUnit, pPlot):
+
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
@@ -128,8 +128,8 @@ def exploreLairOstauriiPatrol(argsList):
 	newUnit1 = bPlayer.initUnit(getInfoType('UNIT_OSTAURII_RIDER'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit1.setHasPromotion(getInfoType("PROMOTION_ONCE_ELF"),True)
 
-def exploreLairRogueNecromancerBad(argsList):
-	pUnit,pPlot = argsList
+def exploreLairRogueNecromancerBad(pUnit, pPlot):
+
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
@@ -137,15 +137,15 @@ def exploreLairRogueNecromancerBad(argsList):
 	newUnit.setHasPromotion(getInfoType("PROMOTION_ONCE_ELF"),True)
 
 
-def exploreLairRogueNecromancerGood(argsList):
-	pUnit,pPlot = argsList
+def exploreLairRogueNecromancerGood(pUnit, pPlot):
+
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	newUnit = pPlayer.initUnit(getInfoType('UNIT_NECROMANCER'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit.setHasPromotion(getInfoType("PROMOTION_ONCE_ELF"),True)
 	
 
-def exploreLairBreakWiddershinsCurse(argsList):
-	pUnit, pPlot = argsList
+def exploreLairBreakWiddershinsCurse(pUnit, pPlot):
+
 	game 		= CyGame()
 	iPlayer = pUnit.getOwner()
 	map = CyMap()

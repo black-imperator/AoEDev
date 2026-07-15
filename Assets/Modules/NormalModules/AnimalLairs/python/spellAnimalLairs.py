@@ -50,8 +50,8 @@ ScorpionLairs		= [LairScorpion1,LairScorpion2,LairScorpion3]
 # AnimalLairsT3		= [LairBear3,LairRoc3,LairLion3,LairSpider3,LairWolf3,LairScorpion3]
 
 # GOODY_EXPLORE_LAIR_DEN_FRIENDLY_ANIMAL
-def exploreLairFriendly(argsList):
-	pUnit, pPlot	= argsList
+def exploreLairFriendly(pUnit, pPlot):
+
 	pPlayer			= gc.getPlayer(pUnit.getOwner())
 	iRandStrength	= gc.getGame().getSorenRandNum(100, "Friendly Animal Lair") # 0-49 - weak result; 50-89 - normal result; 90-99 - strong result
 	iLair			= pPlot.getImprovementType()
@@ -105,8 +105,8 @@ def exploreLairFriendly(argsList):
 			newUnit.setHasPromotion(git('PROMOTION_STRONG'),True)
 
 # GOODY_EXPLORE_LAIR_HOSTILE_ANIMAL_T1
-def exploreLairHostileT1(argsList):
-	pUnit, pPlot	= argsList
+def exploreLairHostileT1(pUnit, pPlot):
+
 	pPlayer			= gc.getPlayer(pUnit.getOwner())
 	CernPlayer		= gc.getPlayer(gc.getANIMAL_PLAYER())
 	pNewPlot		= findClearPlot(-1, pPlot)
@@ -166,8 +166,8 @@ def exploreLairHostileT1(argsList):
 		newUnit.setHasPromotion(git('PROMOTION_LOYALTY2'),True)
 
 # GOODY_EXPLORE_LAIR_DEN_HOSTILE_RECON
-def exploreLairHostileGoblin(argsList):
-	pUnit, pPlot	= argsList
+def exploreLairHostileGoblin(pUnit, pPlot):
+
 	pPlayer 		= gc.getPlayer(pUnit.getOwner())
 	GoblinCiv		= gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot		= findClearPlot(-1, pPlot)
@@ -185,8 +185,8 @@ def exploreLairHostileGoblin(argsList):
 		newUnit.setHasPromotion(git('PROMOTION_MOBILITY1'),True)
 
 # GOODY_EXPLORE_LAIR_HOSTILE_ANIMAL_T2
-def exploreLairHostileT2(argsList):
-	pUnit, pPlot	= argsList
+def exploreLairHostileT2(pUnit, pPlot):
+
 	pPlayer			= gc.getPlayer(pUnit.getOwner())
 	CernPlayer		= gc.getPlayer(gc.getANIMAL_PLAYER())
 	pNewPlot		= findClearPlot(-1, pPlot)
@@ -246,8 +246,8 @@ def exploreLairHostileT2(argsList):
 		newUnit.setHasPromotion(git('PROMOTION_LOYALTY2'),True)
 
 # GOODY_EXPLORE_LAIR_HOSTILE_ANIMAL_T3
-def exploreLairHostileT3(argsList):
-	pUnit, pPlot	= argsList
+def exploreLairHostileT3(pUnit, pPlot):
+
 	pPlayer			= gc.getPlayer(pUnit.getOwner())
 	CernPlayer		= gc.getPlayer(gc.getANIMAL_PLAYER())
 	pNewPlot		= findClearPlot(-1, pPlot)
@@ -422,8 +422,8 @@ def reqConvertLairDovielloAL(pCaster):
 
 # Alt result for Nature Minor Blood promotions
 # GOODY_EXPLORE_LAIR_ANIMAL_BLOOD
-def exploreLairAnimalBlood(argsList):
-	pUnit, pPlot	= argsList
+def exploreLairAnimalBlood(pUnit, pPlot):
+
 	pPlayer			= gc.getPlayer(pUnit.getOwner())
 	iLair			= pPlot.getImprovementType()
 	BloodListExt	= [git('PROMOTION_BEAR_BLOOD'),git('PROMOTION_BOAR_BLOOD'),git('PROMOTION_ELEPHANT_BLOOD'),git('PROMOTION_GORILLA_BLOOD'),git('PROMOTION_GRIFFON_BLOOD'),git('PROMOTION_LION_BLOOD'),git('PROMOTION_RAPTOR_BLOOD'),git('PROMOTION_SCORPION_BLOOD'),git('PROMOTION_SPIDER_BLOOD'),git('PROMOTION_STAG_BLOOD'),git('PROMOTION_TIGER_BLOOD'),git('PROMOTION_WOLF_BLOOD'),git('PROMOTION_WYRM_BLOOD'),git('PROMOTION_SERPENT_BLOOD')]
@@ -476,8 +476,8 @@ def reqLairAnimalBlood(argsList):
 	return True
 
 # GOODY_EXPLORE_LAIR_DEN_LIVESTOCK
-def exploreLairLivestock(argsList):
-	pUnit, pPlot	= argsList
+def exploreLairLivestock(pUnit, pPlot):
+
 	BonusList		= []
 	BonusList.append(git('BONUS_SHEEP'))
 	BonusList.append(git('BONUS_COW'))

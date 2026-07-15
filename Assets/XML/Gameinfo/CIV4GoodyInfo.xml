@@ -5567,7 +5567,7 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
-			<iWeight>10</iWeight>
+			<iWeight>30</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_ILLIANS</Description>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>0</iDestroyLairChance>
@@ -5584,7 +5584,7 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
-			<iWeight>10</iWeight>
+			<iWeight>30</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_AMURITE</Description>
 			<Sound>AS2D_GOODY_SCOUT</Sound>
 			<iDestroyLairChance>0</iDestroyLairChance>
@@ -5601,7 +5601,7 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
-			<iWeight>1</iWeight>
+			<iWeight>10</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_AUSTRIN</Description>
 			<Sound>AS2D_GOODY_MAP</Sound>
 			<iDestroyLairChance>0</iDestroyLairChance>
@@ -5618,7 +5618,7 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
-			<iWeight>10</iWeight>
+			<iWeight>30</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_BALSERAPH</Description>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>0</iDestroyLairChance>
@@ -5635,7 +5635,7 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
-			<iWeight>10</iWeight>
+			<iWeight>30</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_CALABIM</Description>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>0</iDestroyLairChance>
@@ -5652,7 +5652,7 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
-			<iWeight>10</iWeight>
+			<iWeight>30</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_CHISLEV</Description>
 			<Sound>AS2D_GOODY_SCOUT</Sound>
 			<iDestroyLairChance>0</iDestroyLairChance>
@@ -5669,7 +5669,7 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
-			<iWeight>10</iWeight>
+			<iWeight>30</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_CUALLI</Description>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>0</iDestroyLairChance>
@@ -5686,7 +5686,7 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
-			<iWeight>10</iWeight>
+			<iWeight>30</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_GRIGORI</Description>
 			<Sound>AS2D_GOODY_SETTLER</Sound>
 			<iDestroyLairChance>0</iDestroyLairChance>
@@ -5703,7 +5703,7 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
-			<iWeight>10</iWeight>
+			<iWeight>30</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_HIPPUS</Description>
 			<Sound>AS2D_GOODY_SCOUT</Sound>
 			<iDestroyLairChance>0</iDestroyLairChance>
@@ -5720,7 +5720,7 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
-			<iWeight>10</iWeight>
+			<iWeight>30</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_KHAZAD</Description>
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>0</iDestroyLairChance>
@@ -5737,7 +5737,7 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
-			<iWeight>10</iWeight>
+			<iWeight>30</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_KURIOTATES</Description>
 			<Sound>AS2D_GOODY_SETTLER</Sound>
 			<iDestroyLairChance>0</iDestroyLairChance>
@@ -5754,7 +5754,7 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
-			<iWeight>10</iWeight>
+			<iWeight>30</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_LANUN</Description>
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>0</iDestroyLairChance>
@@ -5771,7 +5771,7 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
-			<iWeight>10</iWeight>
+			<iWeight>30</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_LEGION</Description>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>0</iDestroyLairChance>
@@ -5788,7 +5788,7 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
-			<iWeight>10</iWeight>
+			<iWeight>30</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_LJOSALFER</Description>
 			<Sound>AS2D_GOODY_SCOUT</Sound>
 			<iDestroyLairChance>0</iDestroyLairChance>
@@ -5805,7 +5805,7 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
-			<iWeight>10</iWeight>
+			<iWeight>30</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_LUCHUIRP</Description>
 			<Sound>AS2D_GOODY_WORKER</Sound>
 			<iDestroyLairChance>0</iDestroyLairChance>
@@ -5822,7 +5822,7 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
-			<iWeight>10</iWeight>
+			<iWeight>30</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_MAZATL</Description>
 			<Sound>AS2D_GOODY_WORKER</Sound>
 			<iDestroyLairChance>0</iDestroyLairChance>
@@ -5839,7 +5839,7 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
-			<iWeight>10</iWeight>
+			<iWeight>30</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_MECHANOS</Description>
 			<Sound>AS2D_GOODY_SETTLER</Sound>
 			<iDestroyLairChance>0</iDestroyLairChance>
@@ -5856,7 +5856,7 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
-			<iWeight>10</iWeight>
+			<iWeight>30</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_MEKARA</Description>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>0</iDestroyLairChance>
@@ -5873,7 +5873,7 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
-			<iWeight>10</iWeight>
+			<iWeight>30</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_SCIONS</Description>
 			<Sound>AS2D_GOODY_HEAL</Sound>
 			<iDestroyLairChance>0</iDestroyLairChance>
@@ -5890,7 +5890,7 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
-			<iWeight>10</iWeight>
+			<iWeight>30</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_SHEAIM</Description>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>0</iDestroyLairChance>
@@ -5907,7 +5907,7 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
-			<iWeight>10</iWeight>
+			<iWeight>30</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_SIDAR</Description>
 			<Sound>AS2D_GOODY_SCOUT</Sound>
 			<iDestroyLairChance>0</iDestroyLairChance>
@@ -5924,7 +5924,7 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
-			<iWeight>10</iWeight>
+			<iWeight>30</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_SVARTALFER</Description>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>0</iDestroyLairChance>
