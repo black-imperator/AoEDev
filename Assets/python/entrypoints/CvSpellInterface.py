@@ -8613,8 +8613,7 @@ def spellDefileCrypt(pCaster):
 #Snarko 26-06-2010
 #Making lairs use the SDK/XML system. But not all of them...
 # Note: This one is mostly depreciated; custom function one used more often. Should probably be merged... later...
-def exploreLairBigBad(argsList):
-	pUnit, pPlot = argsList
+def exploreLairBigBad(pUnit, pPlot):
 	Manager		= CvEventInterface.getEventManager()
 	gc = CyGlobalContext()
 	getTeam 			= gc.getTeam
@@ -8783,8 +8782,7 @@ def exploreLairBigBad(argsList):
 	return
 
 
-def exploreLairPortal(argsList):
-	pUnit, pPlot	= argsList
+def exploreLairPortal(pUnit, pPlot):
 	iPlayer			= pUnit.getOwner()
 	pPlayer			= gc.getPlayer(iPlayer)
 	iUnit			= pUnit.getID()
@@ -8826,8 +8824,7 @@ def effectLairPortal(argsList):
 			pUnit.setXY(pBestPlot.getX(), pBestPlot.getY(), False, True, True,False)
 			CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_MESSAGE_EXPLORE_LAIR_PORTAL",()),'',1,'Art/Interface/Buttons/Spells/Explore Lair.dds',ColorTypes(8),pBestPlot.getX(),pBestPlot.getY(),True,True)
 
-def exploreLairDwarfVsLizard(argsList):
-	pUnit, pPlot	= argsList
+def exploreLairDwarfVsLizard(pUnit, pPlot):
 	iPlayer			= pUnit.getOwner()
 	pPlayer			= gc.getPlayer(iPlayer)
 	iUnit			= pUnit.getID()
@@ -8913,8 +8910,7 @@ def effectLairDwarfVsLizard(argsList):
 			if bPoison == True:
 				newUnitSecond.setHasPromotion(git('PROMOTION_POISONED_BLADE'), True)
 
-def exploreLairDepths(argsList):
-	pUnit, pPlot	= argsList
+def exploreLairDepths(pUnit, pPlot):
 	iPlayer			= pUnit.getOwner()
 	pPlayer			= gc.getPlayer(iPlayer)
 	iUnit			= pUnit.getID()
@@ -8956,20 +8952,17 @@ def effectLairDepths(argsList):
 			eGoody = possibleGoodies[CyGame().getSorenRandNum(len(possibleGoodies), "Lair Depth, Roll Goody")]
 			pPlayer.receiveGoody(pUnit.plot(), eGoody, pUnit)
 
-def exploreLairTreasure(argsList):
-	pUnit, pPlot = argsList
+def exploreLairTreasure(pUnit, pPlot):
 	Manager		= CvEventInterface.getEventManager()
 	placeTreasure(pUnit.getOwner(), Manager.Units["Equipment"]["Treasure"])
 	return
 
-def exploreLairGoldenAge(argsList):
-	pUnit, pPlot = argsList
+def exploreLairGoldenAge(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	pPlayer.changeGoldenAgeTurns(CyGame().goldenAgeLength())
 	return
 
-def exploreBlightedForest(argsList):
-	pUnit, pPlot	= argsList
+def exploreBlightedForest(pUnit, pPlot):
 		#TODO What if the animal civ is turned off?
 	pPlayer			= gc.getPlayer(pUnit.getOwner())
 	pTeam			= gc.getTeam(pPlayer.getTeam())
@@ -8995,71 +8988,60 @@ def exploreBlightedForest(argsList):
 		newUnit.setHasPromotion(getInfoType('PROMOTION_DISEASED'), True)
 	return
 
-def exploreLairArmageddonIncrease(argsList):
-	pUnit, pPlot = argsList
+def exploreLairArmageddonIncrease(pUnit, pPlot):
 	gc = CyGlobalContext()
 	gc.getGame().changeGlobalCounter(3)
 	
-def exploreLairArmageddonDecrease(argsList):
-	pUnit, pPlot = argsList
+def exploreLairArmageddonDecrease(pUnit, pPlot):
 	gc = CyGlobalContext()
 	gc.getGame().changeGlobalCounter(-3)
 
-def exploreLairFort(argsList):
-	pUnit, pPlot = argsList
+def exploreLairFort(pUnit, pPlot):
 	gc = CyGlobalContext()
 	getInfoType 		= gc.getInfoTypeForString
 	pPlot.setImprovementType(getInfoType("IMPROVEMENT_FORT"))
 	
-def exploreLairVitalize(argsList):
-	pUnit, pPlot = argsList
+def exploreLairVitalize(pUnit, pPlot):
 	gc = CyGlobalContext()
 	getInfoType 		= gc.getInfoTypeForString
 	spellVitalize(pUnit,False)
 	
-def exploreLairDungeon(argsList):
-	pUnit, pPlot = argsList
+def exploreLairDungeon(pUnit, pPlot):
 	gc = CyGlobalContext()
 	getInfoType 		= gc.getInfoTypeForString
 	pPlot.setImprovementType(getInfoType("IMPROVEMENT_DUNGEON"))
 
-def exploreLairGraveyard(argsList):
-	pUnit, pPlot = argsList
+def exploreLairGraveyard(pUnit, pPlot):
 	gc = CyGlobalContext()
 	getInfoType 		= gc.getInfoTypeForString
 	pPlot.setImprovementType(getInfoType("IMPROVEMENT_GRAVEYARD"))
 
-def exploreLairPopulation(argsList):
-	pUnit, pPlot = argsList
+def exploreLairPopulation(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	pCapital = pPlayer.getCapitalCity()
 	pNearestCity = CyMap().findCity(pUnit.getX(), pUnit.getY(), -1, pUnit.getTeam(), False, False, -1, -1, pCapital, False)
 	pNearestCity.changePopulation(1)
 
-def exploreLairResurrect(argsList):
-	pUnit, pPlot = argsList
+def exploreLairResurrect(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	pCapital = pPlayer.getCapitalCity()
 	if (not gc.isNoCrash()):
 		if pUnit.canCastResurrect():
 			pUnit.castResurrect()
 
-def exploreLairSpecterEvil(argsList):
-	pUnit, pPlot = argsList
+def exploreLairSpecterEvil(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	newUnit = pPlayer.initUnit(getInfoType('UNIT_SPECTRE'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit.setHasPromotion(getInfoType('PROMOTION_PROPHECY_MARK'),True)
 	
-def exploreLairSpecterNeutral(argsList):
-	pUnit, pPlot = argsList
+def exploreLairSpecterNeutral(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_SPECTRE'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit.setHasPromotion(getInfoType('PROMOTION_PROPHECY_MARK'),True)
 	
-def exploreLairBhallHighPriest(argsList):
-	pUnit, pPlot = argsList
+def exploreLairBhallHighPriest(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
@@ -9069,16 +9051,14 @@ def exploreLairBhallHighPriest(argsList):
 	newUnit.setHasPromotion(getInfoType('PROMOTION_FIRE3'),True)
 	newUnit1 = bPlayer.initUnit(getInfoType('UNIT_FIRE_ELEMENTAL'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
-def exploreLairGolemDefender(argsList):
-	pUnit, pPlot = argsList
+def exploreLairGolemDefender(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_NULLSTONE_GOLEM'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit1 = bPlayer.initUnit(getInfoType('UNIT_NULLSTONE_GOLEM'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
-def exploreLairUnblemishedShelter(argsList):
-	pUnit, pPlot = argsList
+def exploreLairUnblemishedShelter(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getANIMAL_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
@@ -9095,8 +9075,7 @@ def reqUnblemishedShelter(argsList):
 	getPlot				= CyMap().plot
 	return (not CyGame().isUnitClassMaxedOut(getInfoType("UNITCLASS_PHOENIX"),0))
 	
-def exploreLairMurderhoof(argsList):
-	pUnit, pPlot = argsList
+def exploreLairMurderhoof(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getANIMAL_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
@@ -9105,57 +9084,49 @@ def exploreLairMurderhoof(argsList):
 	newUnit.setHasPromotion(getInfoType('PROMOTION_HERO'),True)
 	newUnit.setHasPromotion(getInfoType('PROMOTION_COMBAT1'),True)
 
-def exploreLairSeedDragon(argsList):
-	pUnit, pPlot = argsList
+def exploreLairSeedDragon(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getANIMAL_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_SEED_DRAGON'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
-def exploreLairBloodDragon(argsList):
-	pUnit, pPlot = argsList
+def exploreLairBloodDragon(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_BLOOD_DRAGON'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
-def exploreLairPitDragon(argsList):
-	pUnit, pPlot = argsList
+def exploreLairPitDragon(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_PIT_DRAGON'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
-def exploreLairShimmeringDragonbad(argsList):
-	pUnit, pPlot = argsList
+def exploreLairShimmeringDragonbad(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getANIMAL_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_SHIMMERING_DRAGON'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairShimmeringDragon(argsList):
-	pUnit, pPlot = argsList
+def exploreLairShimmeringDragon(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	newUnit = pPlayer.initUnit(getInfoType('UNIT_SHIMMERING_DRAGON'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
-def exploreLairScaledDragon(argsList):
-	pUnit, pPlot = argsList
+def exploreLairScaledDragon(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getANIMAL_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_SCALED_DRAGON'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
 	
-def exploreLairKezef(argsList):
-	pUnit, pPlot = argsList
+def exploreLairKezef(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_KEZEF'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
 	
-def exploreLairUndeadCarnival(argsList):
-	pUnit, pPlot = argsList
+def exploreLairUndeadCarnival(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
@@ -9168,36 +9139,31 @@ def exploreLairUndeadCarnival(argsList):
 	newUnit3 = bPlayer.initUnit(getInfoType('UNIT_FREAK'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit3.setHasPromotion(getInfoType('PROMOTION_UNDEAD'),True)
 	
-def exploreLairVelgyrKnight(argsList):
-	pUnit, pPlot = argsList
+def exploreLairVelgyrKnight(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_KNIGHT_VELGYR'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairClockworkGolem(argsList):
-	pUnit, pPlot = argsList
+def exploreLairClockworkGolem(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_CLOCKWORK_GOLEM'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 		
-def exploreLairVelgyrKnight2(argsList):
-	pUnit, pPlot = argsList
+def exploreLairVelgyrKnight2(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = pPlayer.initUnit(getInfoType('UNIT_KNIGHT_VELGYR'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 		
 	
-def exploreLairHallWarriorsEvil(argsList):
-	pUnit, pPlot = argsList
+def exploreLairHallWarriorsEvil(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	newUnit = pPlayer.initUnit(getInfoType('UNIT_HONORED_BAND'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit.setHasPromotion(getInfoType('PROMOTION_ENCHANTED_BLADE'),True)
 	
-def exploreLairGatesHell(argsList):
-	pUnit, pPlot = argsList
+def exploreLairGatesHell(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
@@ -9205,16 +9171,14 @@ def exploreLairGatesHell(argsList):
 	newUnit.setHasPromotion(getInfoType('PROMOTION_LEASH_1'),True)
 	pNewPlot.setImprovementType(getInfoType("IMPROVEMENT_HELLFIRE"))
 	
-def exploreLairHauntedSpawn(argsList):
-	pUnit, pPlot = argsList
+def exploreLairHauntedSpawn(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	for x, y in plotsInRange( pUnit.getX(), pUnit.getY(), 1 ):
 		getPlot	= CyMap().plot
 		pLoopPlot = getPlot(x, y)
 		pLoopPlot.setPlotEffectType(getInfoType("PLOT_EFFECT_HAUNTED_LANDS"))
 	
-def exploreLairMimicEnemy(argsList):
-	pUnit, pPlot = argsList
+def exploreLairMimicEnemy(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
@@ -9223,8 +9187,7 @@ def exploreLairMimicEnemy(argsList):
 		if pUnit.isHasPromotion(id) and not gc.getPromotionInfo(id).isEquipment():
 			newUnit.setHasPromotion(id,True)
 
-def exploreLairGoblinConflictRedYellow(argsList):
-	pUnit, pPlot	= argsList
+def exploreLairGoblinConflictRedYellow(pUnit, pPlot):
 	iPlayer			= pUnit.getOwner()
 	pPlayer			= gc.getPlayer(iPlayer)
 	iUnit			= pUnit.getID()
@@ -9246,133 +9209,110 @@ def exploreLairGoblinConflictRedYellow(argsList):
 		argsList	= [AIPick,iUnit,iPlayer,2]
 		effectLairDwarfVsLizard(argsList)
 	
-def exploreLairMurisPrisoner(argsList):
-	pUnit, pPlot = argsList
+def exploreLairMurisPrisoner(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	newUnit = pPlayer.initUnit(getInfoType('UNIT_GOBLIN_MURIS_CLAN'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
-def exploreLairLukosPrisoner(argsList):
-	pUnit, pPlot = argsList
+def exploreLairLukosPrisoner(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	newUnit = pPlayer.initUnit(getInfoType('UNIT_GOBLIN_LUKOS_CLAN'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
-def exploreLairNeithPrisoner(argsList):
-	pUnit, pPlot = argsList
+def exploreLairNeithPrisoner(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	newUnit = pPlayer.initUnit(getInfoType('UNIT_GOBLIN_NEITH_CLAN'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
-def exploreLairScorpionPrisoner(argsList):
-	pUnit, pPlot = argsList
+def exploreLairScorpionPrisoner(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	newUnit = pPlayer.initUnit(getInfoType('UNIT_GOBLIN_SCORPION_CLAN'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 			
-def exploreLairGoblinTroop(argsList):
-	pUnit, pPlot = argsList
+def exploreLairGoblinTroop(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	newUnit = pPlayer.initUnit(getInfoType('UNIT_GOBLIN'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit.setHasPromotion(getInfoType('PROMOTION_HEROIC'),True)
 	
-def exploreLairGoblinAdept(argsList):
-	pUnit, pPlot = argsList
+def exploreLairGoblinAdept(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	newUnit = pPlayer.initUnit(getInfoType('UNIT_ADEPT_MURIS_CLAN'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit.setHasPromotion(getInfoType('PROMOTION_FIRE1'),True)
 	newUnit.setHasPromotion(getInfoType('PROMOTION_CHAOS1'),True)
 
-def exploreLairCannibalCentaur(argsList):
-	pUnit, pPlot = argsList
+def exploreLairCannibalCentaur(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	newUnit = pPlayer.initUnit(getInfoType('UNIT_CENTAUR'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit.setHasPromotion(getInfoType('PROMOTION_CANNIBALIZE'),True)
 
-def exploreLairClanChiefDuel(argsList):
-	pUnit, pPlot = argsList
+def exploreLairClanChiefDuel(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	newUnit = pPlayer.initUnit(getInfoType('UNIT_CENTAUR_CLANCHIEF'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit.changeDamage(70,0)
 
-def exploreLairMulyalfar(argsList):
-	pUnit, pPlot = argsList
+def exploreLairMulyalfar(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	newUnit = pPlayer.initUnit(getInfoType('UNIT_ICE_DRUID'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit.changeDamage(70,0)
 
-def exploreLairPriestWinter(argsList):
-	pUnit, pPlot = argsList
+def exploreLairPriestWinter(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	newUnit = pPlayer.initUnit(getInfoType('UNIT_PRIEST_OF_WINTER'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit.changeDamage(70,0)
 	newUnit.setHasPromotion(getInfoType("PROMOTION_IMMORTAL"),True)
 
-def exploreLairFrostlingWarrior(argsList):
-	pUnit, pPlot = argsList
+def exploreLairFrostlingWarrior(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	newUnit = pPlayer.initUnit(getInfoType('UNIT_FROSTLING_AXEMAN'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit.changeDamage(70,0)
 	newUnit.setHasPromotion(getInfoType("PROMOTION_MITHRIL_WEAPONS"),True)
 	newUnit.setHasPromotion(getInfoType("PROMOTION_MAGIC_IMMUNE"),True)
 
-def exploreLairDwarvenDruid(argsList):
-	pUnit, pPlot = argsList
+def exploreLairDwarvenDruid(pUnit, pPlot):	
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	newUnit = pPlayer.initUnit(getInfoType('UNIT_DWARVEN_DRUID'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit.changeDamage(70,0)
 
-def exploreLairBoardingParty(argsList):
-	pUnit, pPlot = argsList
+def exploreLairBoardingParty(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	newUnit = pPlayer.initUnit(getInfoType('UNIT_BOARDING_PARTY'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
-def exploreLairVelgyrGolem2(argsList):
-	pUnit, pPlot = argsList
+def exploreLairVelgyrGolem2(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	newUnit = pPlayer.initUnit(getInfoType('UNIT_VELGYR_GOLEM'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
-def exploreLairSuccubus(argsList):
-	pUnit, pPlot = argsList
+def exploreLairSuccubus(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	newUnit = pPlayer.initUnit(getInfoType('UNIT_SUCCUBUS'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
-def exploreLairNemed(argsList):
-	pUnit, pPlot = argsList
+def exploreLairNemed(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	newUnit = pPlayer.initUnit(getInfoType('UNIT_NEMED'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
-def exploreLairSeaSerpent2(argsList):
-	pUnit, pPlot = argsList
+def exploreLairSeaSerpent2(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	newUnit = pPlayer.initUnit(getInfoType('UNIT_SEA_SERPENT'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
-def exploreLairEinherjarVsDiseasedCorpse(argsList):
-	pUnit, pPlot = argsList
+def exploreLairEinherjarVsDiseasedCorpse(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	newUnit = pPlayer.initUnit(getInfoType('UNIT_DISEASED_CORPSE'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit2 = bPlayer.initUnit(getInfoType('UNIT_EINHERJAR'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairEinherjar2(argsList):
-	pUnit, pPlot = argsList
+def exploreLairEinherjar2(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	newUnit = pPlayer.initUnit(getInfoType('UNIT_EINHERJAR'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
-def exploreLairPegasus(argsList):
-	pUnit, pPlot = argsList
+def exploreLairPegasus(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	newUnit = pPlayer.initUnit(getInfoType('UNIT_PEGASUS'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
-def exploreLairSlyph(argsList):
-	pUnit, pPlot = argsList
+def exploreLairSlyph(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	newUnit = pPlayer.initUnit(getInfoType('UNIT_SLYPH'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
-def exploreLairStag(argsList):
-	pUnit, pPlot = argsList
+def exploreLairStag(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	newUnit = pPlayer.initUnit(getInfoType('UNIT_STAG'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
-def exploreLairGoat(argsList):
-	pUnit, pPlot = argsList
+def exploreLairGoat(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	RndApophis = gc.getGame().getSorenRandNum(25, "Apophis")
 	if RndApophis == 21 and CyGame().getUnitCreatedCount(getInfoType('UNIT_GOAT_2')) == 0:
@@ -9386,51 +9326,43 @@ def reqAkharien(argsList):
 	if pPlayer.isHasFlag(gc.getInfoTypeForString("FLAG_AKHARIEN_LOST")):
 		return False
 	return True
-def exploreLairAkharien(argsList):
+def exploreLairAkharien(pUnit, pPlot):
 	gc.getGame().setGlobalFlag(gc.getInfoTypeForString('FLAG_AKHARIEN_LOST'),False)
 						
 
-def exploreLairDjinn2(argsList):
-	pUnit, pPlot = argsList
+def exploreLairDjinn2(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	newUnit = pPlayer.initUnit(getInfoType('UNIT_DJINN'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
-def exploreLairBoar(argsList):
-	pUnit, pPlot = argsList
+def exploreLairBoar(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	newUnit = pPlayer.initUnit(getInfoType('UNIT_BOAR'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
-def exploreLairWolf(argsList):
-	pUnit, pPlot = argsList
+def exploreLairWolf(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	newUnit = pPlayer.initUnit(getInfoType('UNIT_WOLF'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairDomesticatedWarTortoise(argsList):
-	pUnit, pPlot = argsList
+def exploreLairDomesticatedWarTortoise(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	newUnit = pPlayer.initUnit(getInfoType('UNIT_WAR_TORTOISE'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
-def exploreLairKalshekk(argsList):
-	pUnit, pPlot = argsList
+def exploreLairKalshekk(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	newUnit = pPlayer.initUnit(getInfoType('UNIT_LIZARD_PRIEST_OF_KALSHEKK'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit.setHasPromotion(getInfoType("PROMOTION_LIZARDMAN_MAZATL"),True)
 	
-def exploreLairOmorr(argsList):
-	pUnit, pPlot = argsList
+def exploreLairOmorr(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	newUnit = pPlayer.initUnit(getInfoType('UNIT_LIZARD_PRIEST_OF_OMORR'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit.setHasPromotion(getInfoType("PROMOTION_LIZARDMAN_MAZATL"),True)
 	
-def exploreLairPirate(argsList):
-	pUnit, pPlot = argsList
+def exploreLairPirate(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_PIRATE'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairRogueAdept(argsList):
-	pUnit, pPlot = argsList
+def exploreLairRogueAdept(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
@@ -9463,8 +9395,7 @@ def exploreLairRogueAdept(argsList):
 		newUnit.setHasPromotion(iSphere[0],True)
 		
 							
-def exploreLairRogueMage(argsList):
-	pUnit, pPlot = argsList
+def exploreLairRogueMage(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
@@ -9497,8 +9428,7 @@ def exploreLairRogueMage(argsList):
 		newUnit.setHasPromotion(iSphere[0],True)
 		newUnit.setHasPromotion(iSphere[1],True)
 	
-def exploreLairRogueArchmage(argsList):
-	pUnit, pPlot = argsList
+def exploreLairRogueArchmage(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
@@ -9532,62 +9462,54 @@ def exploreLairRogueArchmage(argsList):
 		newUnit.setHasPromotion(iSphere[1],True)
 		newUnit.setHasPromotion(iSphere[2],True)
 	
-def exploreLairAngryGoblinEasy(argsList):
-	pUnit, pPlot = argsList
+def exploreLairAngryGoblinEasy(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_GOBLIN_SCORPION_CLAN'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit1 = bPlayer.initUnit(getInfoType('UNIT_GOBLIN_SCORPION_CLAN'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairRedcaps(argsList):
-	pUnit, pPlot = argsList
+def exploreLairRedcaps(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_REDCAP'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit1 = bPlayer.initUnit(getInfoType('UNIT_REDCAP'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
-def exploreLairElvenAeron(argsList):
-	pUnit, pPlot = argsList
+def exploreLairElvenAeron(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_ELVEN_AERON_WORSHIPPER'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
 
-def exploreLairCentaurAmbushEasy(argsList):
-	pUnit, pPlot = argsList
+def exploreLairCentaurAmbushEasy(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_CENTAUR'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit1 = bPlayer.initUnit(getInfoType('UNIT_CENTAUR'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
-def exploreLairMyconid(argsList):
-	pUnit, pPlot = argsList
+def exploreLairMyconid(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_MYCONID'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
-def exploreLairBoneGolem(argsList):
-	pUnit, pPlot = argsList
+def exploreLairBoneGolem(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_BONE_GOLEM'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
-def exploreLairAbomination(argsList):
-	pUnit, pPlot = argsList
+def exploreLairAbomination(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_ABOMINATION'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit.setHasPromotion(getInfoType("PROMOTION_DEMON_LAIR"),True)
 	
-def exploreLairHellhounds(argsList):
-	pUnit, pPlot = argsList
+def exploreLairHellhounds(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
@@ -9595,15 +9517,13 @@ def exploreLairHellhounds(argsList):
 	newUnit1 = bPlayer.initUnit(getInfoType('UNIT_HELLHOUND'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit2 = bPlayer.initUnit(getInfoType('UNIT_HELLHOUND'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
-def exploreLairBlowpipe(argsList):
-	pUnit, pPlot = argsList
+def exploreLairBlowpipe(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_LIZARD_BLOWPIPE'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
-def exploreLairAgruonnRitual(argsList):
-	pUnit, pPlot = argsList
+def exploreLairAgruonnRitual(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
@@ -9612,8 +9532,7 @@ def exploreLairAgruonnRitual(argsList):
 	newUnit3 = bPlayer.initUnit(getInfoType('UNIT_LIZARD_PRIEST_OF_AGRUONN'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
 	
-def exploreLairGraveleech(argsList):
-	pUnit, pPlot = argsList
+def exploreLairGraveleech(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
@@ -9621,8 +9540,7 @@ def exploreLairGraveleech(argsList):
 	newUnit.setHasPromotion(getInfoType('PROMOTION_UNDEAD'),True)
 	newUnit.setHasPromotion(getInfoType('PROMOTION_GRAVELEECH'),True)
 	
-def exploreLairAngryGoblinMedium(argsList):
-	pUnit, pPlot = argsList
+def exploreLairAngryGoblinMedium(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
@@ -9632,8 +9550,7 @@ def exploreLairAngryGoblinMedium(argsList):
 	newUnit3 = bPlayer.initUnit(getInfoType('UNIT_ARCHER_SCORPION_CLAN'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit4 = bPlayer.initUnit(getInfoType('UNIT_ARCHER_SCORPION_CLAN'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairWolfRiderAmbush(argsList):
-	pUnit, pPlot = argsList
+def exploreLairWolfRiderAmbush(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
@@ -9642,8 +9559,7 @@ def exploreLairWolfRiderAmbush(argsList):
 	newUnit2 = bPlayer.initUnit(getInfoType('UNIT_WOLF_RIDER_SCORPION_CLAN'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit3 = bPlayer.initUnit(getInfoType('UNIT_WOLF_RIDER_SCORPION_CLAN'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
-def exploreLairCentaurAmbushMedium(argsList):
-	pUnit, pPlot = argsList
+def exploreLairCentaurAmbushMedium(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
@@ -9653,8 +9569,7 @@ def exploreLairCentaurAmbushMedium(argsList):
 	newUnit3 = bPlayer.initUnit(getInfoType('UNIT_CENTAUR_ARCHER'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit4 = bPlayer.initUnit(getInfoType('UNIT_CENTAUR_ARCHER'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairAngryGoblinHard(argsList):
-	pUnit, pPlot = argsList
+def exploreLairAngryGoblinHard(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
@@ -9668,8 +9583,7 @@ def exploreLairAngryGoblinHard(argsList):
 	newUnit7 = bPlayer.initUnit(getInfoType('UNIT_CHARIOT_SCORPION_CLAN'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit8 = bPlayer.initUnit(getInfoType('UNIT_CHARIOT_SCORPION_CLAN'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
-def exploreLairFrostlingAmbushHard(argsList):
-	pUnit, pPlot = argsList
+def exploreLairFrostlingAmbushHard(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
@@ -9684,8 +9598,7 @@ def exploreLairFrostlingAmbushHard(argsList):
 	newUnit8 = bPlayer.initUnit(getInfoType('UNIT_FROSTLING_WOLF_RIDER'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
 	
-def exploreLairCentaurAmbushHard(argsList):
-	pUnit, pPlot = argsList
+def exploreLairCentaurAmbushHard(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
@@ -9699,8 +9612,7 @@ def exploreLairCentaurAmbushHard(argsList):
 	newUnit7 = bPlayer.initUnit(getInfoType('UNIT_CENTAUR_LANCER'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit8 = bPlayer.initUnit(getInfoType('UNIT_CENTAUR_CLANCHIEF'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairOrcishBullies(argsList):
-	pUnit, pPlot = argsList
+def exploreLairOrcishBullies(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
@@ -9708,63 +9620,55 @@ def exploreLairOrcishBullies(argsList):
 	newUnit1 = bPlayer.initUnit(getInfoType('UNIT_AXEMAN'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit2 = bPlayer.initUnit(getInfoType('UNIT_WAR_BOSS'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
-def exploreLairPitBeast(argsList):
-	pUnit, pPlot = argsList
+def exploreLairPitBeast(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_PIT_BEAST'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairBeastOfAgares(argsList):
-	pUnit, pPlot = argsList
+def exploreLairBeastOfAgares(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_BEAST_OF_AGARES'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit.setHasPromotion(getInfoType("PROMOTION_DEMON_LAIR"),True)
 
-def exploreLairCurseThirstSavant(argsList):
-	pUnit, pPlot = argsList
+def exploreLairCurseThirstSavant(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_DISCIPLE_THE_ASHEN_VEIL'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit.setHasPromotion(getInfoType("PROMOTION_RAGESWORD"),True)
 
-def exploreLairSuccubusAngel(argsList):
-	pUnit, pPlot = argsList
+def exploreLairSuccubusAngel(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_SUCCUBUS'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit.setHasPromotion(getInfoType("PROMOTION_BANESWORD_ANGEL"),True)
 
-def exploreLairSkeletonPatrian(argsList):
-	pUnit, pPlot = argsList
+def exploreLairSkeletonPatrian(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_SKELETON'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit.setHasPromotion(getInfoType("PROMOTION_CUIRASS_DRAGON"),True)
 
-def exploreLairNinjaFawn(argsList):
-	pUnit, pPlot = argsList
+def exploreLairNinjaFawn(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_FAWN'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit.setHasPromotion(getInfoType("PROMOTION_TRICKY_DAGGER"),True)
 
-def exploreLairSluaghLord(argsList):
-	pUnit, pPlot = argsList
+def exploreLairSluaghLord(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_SLUAGH'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit.setHasPromotion(getInfoType("PROMOTION_ICXTH"),True)
 
-def exploreLairScreamingPuppet(argsList):
-	pUnit, pPlot = argsList
+def exploreLairScreamingPuppet(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
@@ -9772,200 +9676,172 @@ def exploreLairScreamingPuppet(argsList):
 	newUnit.setHasPromotion(getInfoType("PROMOTION_SPIRIT_SEVER"),True)
 	newUnit.setHasPromotion(getInfoType("PROMOTION_PUPPET"),True)
 
-def exploreLairRighteousNobhead(argsList):
-	pUnit, pPlot = argsList
+def exploreLairRighteousNobhead(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_DISCIPLE_THE_ORDER'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit.setHasPromotion(getInfoType("PROMOTION_BANESWORD_DEMON"),True)
 	
-def exploreLairWarrior(argsList):
-	pUnit, pPlot = argsList
+def exploreLairWarrior(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_WARRIOR'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairAxemen(argsList):
-	pUnit, pPlot = argsList
+def exploreLairAxemen(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_AXEMAN'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit2 = bPlayer.initUnit(getInfoType('UNIT_AXEMAN'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairOgre(argsList):
-	pUnit, pPlot = argsList
+def exploreLairOgre(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_OGRE'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairOgreChief(argsList):
-	pUnit, pPlot = argsList
+def exploreLairOgreChief(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_OGRE_WARCHIEF'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
-def exploreLairBasilisk(argsList):
-	pUnit, pPlot = argsList
+def exploreLairBasilisk(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getANIMAL_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_BASILISK'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairNightWatch(argsList):
-	pUnit, pPlot = argsList
+def exploreLairNightWatch(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_NIGHTWATCH'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairShadow(argsList):
-	pUnit, pPlot = argsList
+def exploreLairShadow(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_SHADOW'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairShadowRider(argsList):
-	pUnit, pPlot = argsList
+def exploreLairShadowRider(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_SHADOWRIDER'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairCyklop(argsList):
-	pUnit, pPlot = argsList
+def exploreLairCyklop(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_CYKLOP'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairHillGiant(argsList):
-	pUnit, pPlot = argsList
+def exploreLairHillGiant(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_HILL_GIANT'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairFawn(argsList):
-	pUnit, pPlot = argsList
+def exploreLairFawn(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getANIMAL_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_FAWN'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairPriestAgruonn(argsList):
-	pUnit, pPlot = argsList
+def exploreLairPriestAgruonn(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_LIZARD_PRIEST_OF_AGRUONN'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairWraith(argsList):
-	pUnit, pPlot = argsList
+def exploreLairWraith(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_WRAITH'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit.setHasPromotion(getInfoType('PROMOTION_DEATH1'),True)
 
-def exploreLairAirElemental(argsList):
-	pUnit, pPlot = argsList
+def exploreLairAirElemental(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_AIR_ELEMENTAL'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairMobiusWitch(argsList):
-	pUnit, pPlot = argsList
+def exploreLairMobiusWitch(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_MOBIUS_WITCH'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairEarthElemental(argsList):
-	pUnit, pPlot = argsList
+def exploreLairEarthElemental(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_EARTH_ELEMENTAL'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairFireElemental(argsList):
-	pUnit, pPlot = argsList
+def exploreLairFireElemental(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_FIRE_ELEMENTAL'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairMistform(argsList):
-	pUnit, pPlot = argsList
+def exploreLairMistform(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_MISTFORM'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairWaterElemental(argsList):
-	pUnit, pPlot = argsList
+def exploreLairWaterElemental(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_WATER_ELEMENTAL'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairTheHive(argsList):
-	pUnit, pPlot = argsList
+def exploreLairTheHive(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_THE_HIVE'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairDjinn(argsList):
-	pUnit, pPlot = argsList
+def exploreLairDjinn(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_DJINN'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairBear(argsList):
-	pUnit, pPlot = argsList
+def exploreLairBear(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getANIMAL_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_BEAR'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairGiantSpider(argsList):
-	pUnit, pPlot = argsList
+def exploreLairGiantSpider(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getANIMAL_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_GIANT_SPIDER'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairTreant(argsList):
-	pUnit, pPlot = argsList
+def exploreLairTreant(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getANIMAL_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_TREANT'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairShadowTreant(argsList):
-	pUnit, pPlot = argsList
+def exploreLairShadowTreant(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_SHADOW_TREANT'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairSkeleton(argsList):
-	pUnit, pPlot = argsList
+def exploreLairSkeleton(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_SKELETON'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairSkeletons(argsList):
-	pUnit, pPlot = argsList
+def exploreLairSkeletons(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
@@ -9973,58 +9849,50 @@ def exploreLairSkeletons(argsList):
 	newUnit1 = bPlayer.initUnit(getInfoType('UNIT_SKELETON'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit2 = bPlayer.initUnit(getInfoType('UNIT_SKELETON'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairEinherjar(argsList):
-	pUnit, pPlot = argsList
+def exploreLairEinherjar(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_EINHERJAR'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairDiseasedCorpse(argsList):
-	pUnit, pPlot = argsList
+def exploreLairDiseasedCorpse(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_DISEASED_CORPSE'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairSpectre(argsList):
-	pUnit, pPlot = argsList
+def exploreLairSpectre(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_SPECTRE'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
-def exploreLairTombWarden(argsList):
-	pUnit, pPlot = argsList
+def exploreLairTombWarden(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getANIMAL_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_TOMB_WARDEN'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairLich(argsList):
-	pUnit, pPlot = argsList
+def exploreLairLich(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_LICH'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit.setHasPromotion(getInfoType('PROMOTION_DEATH2'),True)
 
-def exploreLairDrown(argsList):
-	pUnit, pPlot = argsList
+def exploreLairDrown(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_DROWN'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairSeaSerpent(argsList):
-	pUnit, pPlot = argsList
+def exploreLairSeaSerpent(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getANIMAL_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_SEA_SERPENT'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
-def exploreLairVampireKraken(argsList):
-	pUnit, pPlot = argsList
+def exploreLairVampireKraken(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
@@ -10032,72 +9900,61 @@ def exploreLairVampireKraken(argsList):
 	newUnit.setHasPromotion(getInfoType("PROMOTION_VAMPIRE"),True)
 	newUnit.setHasPromotion(getInfoType("PROMOTION_DEMON"),True)
 
-def exploreLairOtoloch2(argsList):
-	pUnit, pPlot = argsList
+def exploreLairOtoloch2(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	newUnit = pPlayer.initUnit(getInfoType('UNIT_OTOLOCH_2'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit.setName("Kumitara, the Otoloch Whisperer")
 
-def exploreLairCondatis(argsList):
-	pUnit, pPlot = argsList
+def exploreLairCondatis(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	newUnit = pPlayer.initUnit(getInfoType('UNIT_CONDATIS'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairTsunami(argsList):
-	pUnit, pPlot = argsList
+def exploreLairTsunami(pUnit, pPlot):
 	pUnit.cast(getInfoType("SPELL_TSUNAMI"))
 
-def exploreLairTortoise(argsList):
-	pUnit, pPlot = argsList
+def exploreLairTortoise(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getANIMAL_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_GIANT_TORTOISE'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairKraken(argsList):
-	pUnit, pPlot = argsList
+def exploreLairKraken(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getANIMAL_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_KRAKEN'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairStygianGuard(argsList):
-	pUnit, pPlot = argsList
+def exploreLairStygianGuard(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_STYGIAN_GUARD'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairChaosMarauder(argsList):
-	pUnit, pPlot = argsList
+def exploreLairChaosMarauder(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_CHAOS_MARAUDER'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairManticore(argsList):
-	pUnit, pPlot = argsList
+def exploreLairManticore(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_MANTICORE'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairMinotaur(argsList):
-	pUnit, pPlot = argsList
+def exploreLairMinotaur(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_MINOTAUR'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairTarDemon(argsList):
-	pUnit, pPlot = argsList
+def exploreLairTarDemon(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_TAR_DEMON'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairSuccubusOrgy(argsList):
-	pUnit, pPlot = argsList
+def exploreLairSuccubusOrgy(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
@@ -10106,73 +9963,63 @@ def exploreLairSuccubusOrgy(argsList):
 	newUnit3 = bPlayer.initUnit(getInfoType('UNIT_SUCCUBUS'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit4 = bPlayer.initUnit(getInfoType('UNIT_SUCCUBUS'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairBarbatos(argsList):
-	pUnit, pPlot = argsList
+def exploreLairBarbatos(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_BARBATOS'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
-def exploreLairRottenEarthElem(argsList):
-	pUnit, pPlot = argsList
+def exploreLairRottenEarthElem(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_EARTH_ELEMENTAL'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit.setHasPromotion(getInfoType("PROMOTION_ROTTEN"),True)
 
-def exploreLairDeathKnight(argsList):
-	pUnit, pPlot = argsList
+def exploreLairDeathKnight(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_DEATH_KNIGHT'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
-def exploreLairUndeadDrake(argsList):
-	pUnit, pPlot = argsList
+def exploreLairUndeadDrake(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_UNDEAD_DRAKE'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairFrostGiant(argsList):
-	pUnit, pPlot = argsList
+def exploreLairFrostGiant(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_FROST_GIANT'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
-def exploreLairPlaguedRats(argsList):
-	pUnit, pPlot = argsList
+def exploreLairPlaguedRats(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getANIMAL_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_PLAGUED_RAT_PACK'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairIceElemental(argsList):
-	pUnit, pPlot = argsList
+def exploreLairIceElemental(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_ICE_ELEMENTAL'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairSeraph(argsList):
-	pUnit, pPlot = argsList
+def exploreLairSeraph(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_SERAPH'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreLairMechDragon(argsList):
-	pUnit, pPlot = argsList
+def exploreLairMechDragon(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_MECH_DRAGON'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit.setHasPromotion(getInfoType('PROMOTION_LEASH_0'),True)
 
-def exploreLairVelgyrGolem(argsList):
-	pUnit, pPlot = argsList
+def exploreLairVelgyrGolem(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
@@ -10191,25 +10038,21 @@ def exploreLairNoGoodUnitPrereq(argsList):
 		return False
 	return True
 	
-def exploreLairUrorBand(argsList):
-	pUnit, pPlot = argsList
+def exploreLairUrorBand(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	newUnit = pPlayer.initUnit(getInfoType('EQUIPMENT_CONTAINER'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit.setHasPromotion(getInfoType('PROMOTION_UROR_BAND'),True)
 
-def exploreLairSkullAsmoday(argsList):
-	pUnit, pPlot = argsList
+def exploreLairSkullAsmoday(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	newUnit = pPlayer.initUnit(getInfoType('EQUIPMENT_CONTAINER'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit.setHasPromotion(getInfoType('PROMOTION_SKULL_OF_ASMODAY'),True)
 	
-def exploreLairBreakBair(argsList):
-	pUnit, pPlot = argsList
+def exploreLairBreakBair(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	gc.getGame().setGlobalFlag(gc.getInfoTypeForString('FLAG_CONTROLED_LACUNA'),True)
 	
-def exploreLairBairMobiusWitches(argsList):
-	pUnit, pPlot = argsList
+def exploreLairBairMobiusWitches(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
@@ -10241,8 +10084,7 @@ def exploreLairBairMobiusWitches(argsList):
 	newUnit2.setHasPromotion(getInfoType('PROMOTION_DIMENSIONAL1'),True)
 	newUnit2.setHasPromotion(getInfoType('PROMOTION_DIMENSIONAL2'),True)
 
-def exploreLairBairEmrys(argsList):
-	pUnit, pPlot = argsList
+def exploreLairBairEmrys(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
@@ -10270,56 +10112,46 @@ def exploreLairBairEmrys(argsList):
 	newUnit.setHasPromotion(getInfoType('PROMOTION_SHADOW3'),True)
 	newUnit.setHasPromotion(getInfoType('PROMOTION_EMRYS'),True)
 	
-def exploreLairSecondaryCommander(argsList):
-	pUnit, pPlot = argsList
+def exploreLairSecondaryCommander(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	pUnit.setHasPromotion(getInfoType('PROMOTION_SECONDARY_COMMANDER'),True)
 
-def exploreLairFriendlyFrostling(argsList):
-	pUnit, pPlot = argsList
+def exploreLairFriendlyFrostling(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	newUnit = pPlayer.initUnit(getInfoType('UNIT_FROSTLING'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)	
 	newUnit.setHasPromotion(getInfoType('PROMOTION_AMBUSH1'),True)
 
-def exploreLairSnow(argsList):
-	pUnit, pPlot = argsList
+def exploreLairSnow(pUnit, pPlot):
 	pPlot.setTerrainType(Terrain["Tundra"], True, True)
 
-def exploreLairWintered(argsList):
-	pUnit, pPlot = argsList
+def exploreLairWintered(pUnit, pPlot):
 	pUnit.setHasPromotion(getInfoType('PROMOTION_WINTERED'),True)
 
-def exploreLairColdStrength(argsList):
-	pUnit, pPlot = argsList
+def exploreLairColdStrength(pUnit, pPlot):
 	pUnit.setHasPromotion(getInfoType('PROMOTION_COLD_STRENGTH'),True)
 
-def exploreLairBlizzard(argsList):
-	pUnit, pPlot = argsList
+def exploreLairBlizzard(pUnit, pPlot):
 	pPlot.setFeatureType(getInfoType("FEATURE_BLIZZARD"), -1)
 	
-def exploreLairFrostlingAdept(argsList):
-	pUnit, pPlot = argsList
+def exploreLairFrostlingAdept(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	newUnit = pPlayer.initUnit(getInfoType('UNIT_FROSTLING_SHAMAN'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit.setHasPromotion(getInfoType('PROMOTION_ICE1'),True)
 	newUnit.setHasPromotion(getInfoType('PROMOTION_LAW1'),True)
 
-def exploreLairGoblinCommander(argsList):
-	pUnit, pPlot = argsList
+def exploreLairGoblinCommander(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	newUnit = pPlayer.initUnit(getInfoType('UNIT_MURIS_CLAN_LORD'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit.setExperienceTimes100(1000,-1)	
 	
-def exploreLairAngryFrostlingEasy(argsList):
-	pUnit, pPlot = argsList
+def exploreLairAngryFrostlingEasy(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_FROSTLING'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit1 = bPlayer.initUnit(getInfoType('UNIT_FROSTLING'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
-def exploreLairAngryFrostlingMedium(argsList):
-	pUnit, pPlot = argsList
+def exploreLairAngryFrostlingMedium(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
@@ -10329,8 +10161,7 @@ def exploreLairAngryFrostlingMedium(argsList):
 	newUnit3 = bPlayer.initUnit(getInfoType('UNIT_FROSTLING_ARCHER'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit4 = bPlayer.initUnit(getInfoType('UNIT_FROSTLING_ARCHER'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
-def exploreLairAngryFrostlingHard(argsList):
-	pUnit, pPlot = argsList
+def exploreLairAngryFrostlingHard(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
@@ -12637,8 +12468,7 @@ def reqRestoreFP(caster):
 
 # Combining similar goodies r363
 # GOODY_MARNOK_GEAR_STASH
-def exploreGearStash(argsList):
-	pUnit, pPlot	= argsList
+def exploreGearStash(pUnit, pPlot):
 	pUnitCombat		= pUnit.getUnitCombatType()
 	pPlayer			= gc.getPlayer(pUnit.getOwner())
 	ReconUC			= getInfoType('UNITCOMBAT_RECON')
@@ -12732,8 +12562,7 @@ def reqBereguine(argsList):
 	if pPlayer.getStateReligion() !=getInfoType("RELIGION_FELLOWSHIP_OF_LEAVES"):
 		return True
 	return False
-def exploreLairBereguine(argsList):
-	pUnit, pPlot		= argsList
+def exploreLairBereguine(pUnit, pPlot):
 	pPlayer				= gc.getPlayer(pUnit.getOwner())
 	OrcPlayer			= gc.getPlayer(gc.getANIMAL_PLAYER())
 	pNewPlot			= findClearPlot(-1, pPlot)
@@ -12745,8 +12574,7 @@ def reqBocquillon(argsList):
 	if pPlayer.getStateReligion()==getInfoType("RELIGION_FELLOWSHIP_OF_LEAVES"):
 		return True
 	return False
-def exploreLairBocquillon(argsList):
-	pUnit, pPlot		= argsList
+def exploreLairBocquillon(pUnit, pPlot):
 	pPlayer				= gc.getPlayer(pUnit.getOwner())
 	OrcPlayer			= gc.getPlayer(gc.getANIMAL_PLAYER())
 	pNewPlot			= findClearPlot(-1, pPlot)
@@ -12754,8 +12582,7 @@ def exploreLairBocquillon(argsList):
 	
 
 # GOODY_MARNOK_RELEASE_PRISONER_MAJOR
-def exploreReleasePrisoner(argsList):
-	pUnit, pPlot	= argsList
+def exploreReleasePrisoner(pUnit, pPlot):
 	pPlayer			= gc.getPlayer(pUnit.getOwner())
 	PrisonersList	= []
 	PrisonersList.append('UNIT_ADVENTURER')
@@ -12776,8 +12603,7 @@ def exploreReleasePrisoner(argsList):
 	newUnit			= pPlayer.initUnit(getInfoType(Prisoner), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
 # GOODY_MARNOK_SUBTERRAN_BONUS_MINOR
-def exploreSubterranBonusMinor(argsList):
-	pUnit, pPlot	= argsList
+def exploreSubterranBonusMinor(pUnit, pPlot):
 	BonusList		= []
 	BonusList.append(getInfoType('BONUS_GOLD'))
 	BonusList.append(getInfoType('BONUS_COPPER'))
@@ -12795,8 +12621,7 @@ def reqSubterranBonusMinor(argsList):
 	return False
 
 # GOODY_MARNOK_RANDOM_MANA
-def exploreMarnokMana(argsList):
-	pUnit, pPlot	= argsList
+def exploreMarnokMana(pUnit, pPlot):
 	ManaList		= []
 	ManaList.append('_AIR')
 	ManaList.append('_BODY')
@@ -12832,8 +12657,7 @@ def reqMarnokMana(argsList):
 		
 	return False
 # GOODY_EXPLORE_LAIR_ANIMAL_BLOOD
-def exploreAnimalBlood(argsList):
-	pUnit, pPlot	= argsList
+def exploreAnimalBlood(pUnit, pPlot):
 	pPlayer			= gc.getPlayer(pUnit.getOwner())
 	iLair			= pPlot.getImprovementType()
 	BloodList		= [getInfoType('PROMOTION_BEAR_BLOOD'),getInfoType('PROMOTION_BOAR_BLOOD'),getInfoType('PROMOTION_ELEPHANT_BLOOD'),getInfoType('PROMOTION_GORILLA_BLOOD'),getInfoType('PROMOTION_GRIFFON_BLOOD'),getInfoType('PROMOTION_LION_BLOOD'),getInfoType('PROMOTION_RAPTOR_BLOOD'),getInfoType('PROMOTION_SCORPION_BLOOD'),getInfoType('PROMOTION_SPIDER_BLOOD'),getInfoType('PROMOTION_STAG_BLOOD'),getInfoType('PROMOTION_TIGER_BLOOD'),getInfoType('PROMOTION_WOLF_BLOOD')]
@@ -12850,8 +12674,7 @@ def exploreAnimalBlood(argsList):
 		pPlayer.changeGold(25+RndGold)
 			
 # GOODY_DEAL_WITH_IMP
-def exploreDealWithImp(argsList):
-	pUnit, pPlot		= argsList
+def exploreDealWithImp(pUnit, pPlot):
 	pPlayer				= gc.getPlayer(pUnit.getOwner())
 	ElementalPromo		= [('PROMOTION_FIRE1', 1),('PROMOTION_ICE1', 1),('PROMOTION_WATER1', 1),('PROMOTION_EARTH1', 1),('PROMOTION_AIR1', 1)]
 	NecromancyPromo		= [('PROMOTION_ENTROPY1', 1),('PROMOTION_DIMENSIONAL1', 1),('PROMOTION_DEATH1', 1),('PROMOTION_SHADOW1', 1),('PROMOTION_CHAOS1', 1)]
@@ -12863,8 +12686,7 @@ def exploreDealWithImp(argsList):
 	newUnit.setHasPromotion(getInfoType('PROMOTION_HIGH_MAINTENANCE'),True)
 
 # GOODY_SUCCUBUS_TRAP
-def exploreSuccubusTrap(argsList):
-	pUnit, pPlot		= argsList
+def exploreSuccubusTrap(pUnit, pPlot):
 	pNewPlot			= findClearPlot(-1, pPlot)
 	pDemonPlayer		= gc.getPlayer(gc.getDEMON_PLAYER())
 	newUnit1			= pDemonPlayer.initUnit(getInfoType('UNIT_SUCCUBUS'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
@@ -12875,8 +12697,7 @@ def exploreSuccubusTrap(argsList):
 		pUnit.changeImmobileTimer(2)
 
 # GOODY_ABANDONED_RITUAL
-def exploreAbandonedRitual(argsList):
-	pUnit, pPlot	= argsList
+def exploreAbandonedRitual(pUnit, pPlot):
 	iPlayer			= pUnit.getOwner()
 	pPlayer			= gc.getPlayer(iPlayer)
 	git				= gc.getInfoTypeForString
@@ -12907,8 +12728,7 @@ def exploreAbandonedRitual(argsList):
 			CyGame().changeGlobalCounter(iChange)
 
 # GOODY_COWARDLY_CULTIST
-def exploreCowardlyCultist(argsList):
-	pUnit, pPlot		= argsList
+def exploreCowardlyCultist(pUnit, pPlot):
 	pPlayer				= gc.getPlayer(pUnit.getOwner())
 	NecromancyPromoList	= []
 	NecromancyPromoList.append('PROMOTION_ENTROPY')
@@ -12931,8 +12751,7 @@ def exploreCowardlyCultist(argsList):
 	newUnit.setDamage(50,-1)
 
 # GOODY_SEALED_WELL
-def exploreSealedWell(argsList):
-	pUnit, pPlot		= argsList
+def exploreSealedWell(pUnit, pPlot):
 	getPlot				= CyMap().plot
 	pPlot.changePlotCounter(10 + CyGame().getSorenRandNum(70, "Could be a little evil, could be a lot of evil..."))
 
@@ -12950,8 +12769,7 @@ def reqBurnedLair(argsList):
 		return True
 	return False
 
-def exploreBurnedLair(argsList):
-	pUnit, pPlot		= argsList
+def exploreBurnedLair(pUnit, pPlot):
 	getPlot				= CyMap().plot
 	for x, y in plotsInRange(pPlot.getX(),pPlot.getY(),1,0):
 		iPlot			= getPlot(x,y)
@@ -12960,16 +12778,14 @@ def exploreBurnedLair(argsList):
 				iPlot.setImprovementType(getInfoType('IMPROVEMENT_SMOKE'))
 
 # GOODY_BOTTLE_OF_LIQUID_STONE
-def exploreLiquidStone(argsList):
-	pUnit, pPlot		= argsList
+def exploreLiquidStone(pUnit, pPlot):
 	pUnit.changeImmobileTimer(4)
 	pUnit.setHasPromotion(getInfoType('PROMOTION_STONESKIN'),True)
 	if pUnit.getUnitType() == getInfoType('UNIT_EARTH_ELEMENTAL'):
 		pUnit.changeStrBoost(1)
 
 # GOODY_NEW_CHIEFTAIN
-def exploreNewChieftain(argsList):
-	pUnit, pPlot		= argsList
+def exploreNewChieftain(pUnit, pPlot):
 	pPlayer				= gc.getPlayer(pUnit.getOwner())
 	OrcPlayer			= gc.getPlayer(gc.getORC_PLAYER())
 	newUnit				= pPlayer.initUnit(getInfoType('UNIT_AXEMAN'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
@@ -12988,8 +12804,7 @@ def reqUniqueMap(argsList):
 			return True
 	return False
 
-def exploreUniqueMap(argsList):
-	pUnit, pPlot		= argsList
+def exploreUniqueMap(pUnit, pPlot):
 	getPlot				= CyMap().plot
 	pTeam				= pUnit.getTeam()
 	iNumPlots = CyMap().numPlots()
@@ -13013,8 +12828,7 @@ def exploreUniqueMap(argsList):
 			break
 
 # GOODY_TWENTY_ONE_ARGUING_FIGURES
-def exploreArguingFigures(argsList):
-	pUnit, pPlot		= argsList
+def exploreArguingFigures(pUnit, pPlot):
 	PromotionList		= []
 	PromotionList.append('PROMOTION_AIR1')
 	PromotionList.append('PROMOTION_BODY1')
@@ -13071,8 +12885,7 @@ def reqMirror1(argsList):
 	return False
 
 
-def exploreMirror1(argsList):
-	pUnit, pPlot		= argsList
+def exploreMirror1(pUnit, pPlot):
 	BaseXP				= pUnit.getExperienceTimes100()
 	ExtraXP				= BaseXP * 0.2
 	ExtraXP				= int(ExtraXP)
@@ -13089,8 +12902,7 @@ def reqSwanmayGood(argsList):
 		return True
 	return False
 
-def exploreSwanmayGood(argsList):
-	pUnit, pPlot		= argsList
+def exploreSwanmayGood(pUnit, pPlot):
 	pPlayer				= gc.getPlayer(pUnit.getOwner())
 	newUnit				= pPlayer.initUnit(getInfoType('UNIT_SWANMAY'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
@@ -13102,14 +12914,12 @@ def reqSwanmayEvil(argsList):
 		return True
 	return False
 
-def exploreSwanmayEvil(argsList):
-	pUnit, pPlot		= argsList
+def exploreSwanmayEvil(pUnit, pPlot):
 	pPlayer				= gc.getPlayer(pUnit.getOwner())
 	pUnit.setHasPromotion(getInfoType("PROMOTION_SWANMAY_CLOAK"),True)
 	
 # GOODY_HORRORS_OF_FUTURE
-def exploreMirror2(argsList):
-	pUnit, pPlot		= argsList
+def exploreMirror2(pUnit, pPlot):
 	BaseXP				= pUnit.getExperienceTimes100()
 	ExtraXP				= BaseXP * 0.2
 	ExtraXP				= int(ExtraXP)
@@ -13119,8 +12929,7 @@ def exploreMirror2(argsList):
 	pUnit.setExperienceTimes100(NewXP, -1)
 
 # GOODY_MIRROR_MIRROR
-def exploreMirror3(argsList):
-	pUnit, pPlot		= argsList
+def exploreMirror3(pUnit, pPlot):
 	pPlayer				= gc.getPlayer(pUnit.getOwner())
 	iPlayer				= pUnit.getOwner()
 	qUnit				= pPlayer.initUnit(pUnit.getUnitType(), pUnit.getX(), pUnit.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
@@ -13159,8 +12968,7 @@ def exploreMirror3(argsList):
 		if pUnit.getUnitType() == getInfoType("UNIT_KEEPER"):
 			setKeeperLevel(qUnit,getKeeperLevel(qUnit))
 # GOODY_CAVE_IN
-def exploreCaveIn(argsList):
-	pUnit, pPlot		= argsList
+def exploreCaveIn(pUnit, pPlot):
 	pUnit.changeImmobileTimer(3)
 
 # GOODY_EARTHQUAKE
@@ -13174,8 +12982,7 @@ def reqLairEarthquake(argsList):
 				return False
 	return True
 
-def exploreEarthquake(argsList):
-	pUnit, pPlot		= argsList
+def exploreEarthquake(pUnit, pPlot):
 	getPlot				= CyMap().plot
 	for x, y in plotsInRange(pPlot.getX(),pPlot.getY(),1,0):
 		iPlot = getPlot(x,y)
@@ -13189,14 +12996,12 @@ def exploreEarthquake(argsList):
 				iPlot.setPlotType(PlotTypes.PLOT_HILLS, True, True)
 
 # GOODY_STOLEN_SUPPLIES
-def exploreStolenSupplies(argsList):
-	pUnit, pPlot		= argsList
+def exploreStolenSupplies(pUnit, pPlot):
 	pPlayer				= gc.getPlayer(pUnit.getOwner())
 	newUnit				= pPlayer.initUnit(getInfoType('UNIT_SUPPLIES'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
 # GOODY_SLAVERS
-def exploreSlavers(argsList):
-	pUnit, pPlot		= argsList
+def exploreSlavers(pUnit, pPlot):
 	pPlayer				= gc.getPlayer(pUnit.getOwner())
 	infoCiv 	= gc.getCivilizationInfo(pPlayer.getCivilizationType())
 	if pPlayer.getCivilizationType() == getInfoType('CIVILIZATION_DTESH'):
@@ -13828,8 +13633,7 @@ def reqEnchantedMap(argsList):
 		return False
 	return True
 
-def exploreEnchantedMap(argsList):
-	pUnit, pPlot		= argsList
+def exploreEnchantedMap(pUnit, pPlot):
 	getPlot				= CyMap().plot
 	pPlayer				= gc.getPlayer(pUnit.getOwner())
 	pTeam 				= pPlayer.getTeam()
@@ -13839,8 +13643,7 @@ def exploreEnchantedMap(argsList):
 			iPlot.setRevealed(pTeam, True, False, TeamTypes.NO_TEAM)
 
 # GOODY_THE_OUTRUNEREST
-def exploreTheOutrunerest(argsList):
-	pUnit, pPlot		= argsList
+def exploreTheOutrunerest(pUnit, pPlot):
 	pOrcPlayer			= gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot			= findClearPlot(-1, pPlot)
 	newUnit1			= pOrcPlayer.initUnit(getInfoType('UNIT_CENTAUR_OUTRUNNER'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.UNITAI_EXPLORE, DirectionTypes.DIRECTION_SOUTH)
@@ -13857,8 +13660,7 @@ def exploreTheOutrunerest(argsList):
 	newUnit2.setHasPromotion(getInfoType('PROMOTION_UNSTOPPABLE'),True)
 
 # GOODY_EVASIVE_CENTAURS
-def exploreEvasiveCentaurs(argsList):
-	pUnit, pPlot		= argsList
+def exploreEvasiveCentaurs(pUnit, pPlot):
 	pOrcPlayer			= gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot			= findClearPlot(-1, pPlot)
 	newUnit1			= pOrcPlayer.initUnit(getInfoType('UNIT_CENTAUR_CLANCHIEF'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
@@ -13879,8 +13681,7 @@ def reqDealwithTribe(argsList):
 		return False
 	return True
 
-def exploreDealwithTribe(argsList):
-	pUnit, pPlot	= argsList
+def exploreDealwithTribe(pUnit, pPlot):
 	iPlayer			= pUnit.getOwner()
 	pPlayer			= gc.getPlayer(iPlayer)
 	git				= gc.getInfoTypeForString
@@ -13958,8 +13759,7 @@ def effectDealwithTribe(argsList):
 	# pPlayer.setFreePromotion(git("UNITCOMBAT_MOUNTED"),git("PROMOTION_SHOCK"),true)
 
 # GOODY_AGARES_WORSHIPERS
-def exploreAgaresWorshipers(argsList):
-	pUnit, pPlot		= argsList
+def exploreAgaresWorshipers(pUnit, pPlot):
 	pNewPlot			= findClearPlot(-1, pPlot)
 	pDemonPlayer		= gc.getPlayer(gc.getDEMON_PLAYER())
 	newUnit1			= pDemonPlayer.initUnit(getInfoType('UNIT_CENTAUR_CLANCHIEF'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
@@ -14004,14 +13804,12 @@ def exploreAgaresWorshipers(argsList):
 		newUnit5.changeStrBoost(1)
 
 # GOODY_PET_ROC
-def explorePetRoc(argsList):
-	pUnit, pPlot		= argsList
+def explorePetRoc(pUnit, pPlot):
 	pPlayer				= gc.getPlayer(pUnit.getOwner())
 	newUnit				= pPlayer.initUnit(getInfoType('UNIT_ROC'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
 # GOODY_LIZARDMEN_BOOZE
-def exploreLizardmenBooze(argsList):
-	pUnit, pPlot		= argsList
+def exploreLizardmenBooze(pUnit, pPlot):
 	if not pUnit.isHasPromotion(getInfoType('PROMOTION_IMMUNE_DISEASE')) or pUnit.isHasPromotion(getInfoType('PROMOTION_LIZARDMAN')):
 		pUnit.doDamage(20, 100, pUnit, getInfoType('DAMAGE_POISON'), False)
 
@@ -14029,8 +13827,7 @@ def reqHiddenRuins(argsList):
 		return True
 	return False
 
-def exploreHiddenRuins(argsList):
-	pUnit, pPlot		= argsList
+def exploreHiddenRuins(pUnit, pPlot):
 	getPlot				= CyMap().plot
 	RuinCap				= 2
 	ExtraRandomRuins	= CyGame().getSorenRandNum(3, "Extra Ruins")
@@ -14061,8 +13858,7 @@ def exploreHiddenRuins(argsList):
 				break
 
 # GOODY_CITY_OF_GOLD
-def exploreCityOfGold(argsList):
-	pUnit, pPlot	= argsList
+def exploreCityOfGold(pUnit, pPlot):
 	iPlayer			= pUnit.getOwner()
 	pPlayer			= gc.getPlayer(iPlayer)
 	git				= gc.getInfoTypeForString
@@ -14128,8 +13924,7 @@ def effectCityOfGold(argsList):
 			pUnit.setHasPromotion(git('PROMOTION_PILLAGED_GOLD'),True)
 
 # GOODY_SACELLUM
-def exploreSacellum(argsList):
-	pUnit, pPlot		= argsList
+def exploreSacellum(pUnit, pPlot):
 	iPlayer				= pUnit.getOwner()
 	pPlayer				= gc.getPlayer(pUnit.getOwner())
 	iRndConflict		= CyGame().getSorenRandNum(100, "Sacellum, Chance to avoid conflict")
@@ -14174,8 +13969,7 @@ def reqArcaneFlare(argsList):
 		return True
 	return False
 
-def exploreArcaneFlare(argsList):
-	pUnit, pPlot		= argsList
+def exploreArcaneFlare(pUnit, pPlot):
 	iPlayer				= pUnit.getOwner()
 	iRnd				= CyGame().getSorenRandNum(3, "Arcane Flare, Extra Dispel")
 	NodesDispeled		= 1 + iRnd
@@ -14201,19 +13995,16 @@ def exploreArcaneFlare(argsList):
 		if NodesDispeled == 0: break
 
 # GOODY_TRADE_SHIP
-def exploreTradeShip(argsList):
-	pUnit, pPlot		= argsList
+def exploreTradeShip(pUnit, pPlot):
 	pPlayer				= gc.getPlayer(pUnit.getOwner())
 	newUnit				= pPlayer.initUnit(getInfoType('UNIT_TRADESHIP'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	
-def exploreKelp(argsList):
-	pUnit, pPlot		= argsList
+def exploreKelp(pUnit, pPlot):
 	for x, y in plotsInRange(pPlot.getX(),pPlot.getY(),1,1):
 		iPlot = CyMap().plot(x,y)
 		iPlot.setFeatureType(getInfoType("FEATURE_KELP"),0)
 	
-def exploreKelpReagents(argsList):
-	pUnit, pPlot		= argsList
+def exploreKelpReagents(pUnit, pPlot):
 	pPlot.setFeatureType(getInfoType("FEATURE_KELP"),0)
 	
 	
