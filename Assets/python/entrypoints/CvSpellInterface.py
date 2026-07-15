@@ -8609,6 +8609,10 @@ def spellDefileCrypt(pCaster):
 	pPlot.setImprovementType(getInfoType('IMPROVEMENT_DTESH_CRYPT_DEFILED'))
 #	newUnit = pPlayer.initUnit(getInfoType('UNIT_SLAVE_UNDEAD'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
+def exploreLairBigBad2(argsList):
+	pUnit,pPlot=argsList
+	exploreLairBigBad(pUnit,pPlot)
+	return
 
 #Snarko 26-06-2010
 #Making lairs use the SDK/XML system. But not all of them...

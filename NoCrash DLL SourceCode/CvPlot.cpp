@@ -831,7 +831,7 @@ void CvPlot::doUniqueLairTimecheck()
 		CyArgsList argsList;
 		argsList.add(gDLL->getPythonIFace()->makePythonObject(pyCaster));
 		argsList.add(gDLL->getPythonIFace()->makePythonObject(pyPlot));
-		gDLL->getPythonIFace()->callFunction(PYSpellModule, "exploreLairBigBad", argsList.makeFunctionArgs());
+		gDLL->getPythonIFace()->callFunction(PYSpellModule, "exploreLairBigBad2", argsList.makeFunctionArgs());
 		delete pyPlot; // python fxn must not hold on to this pointer (?)
 		delete pyCaster;
 
