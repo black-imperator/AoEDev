@@ -13408,6 +13408,34 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 		iHeroClass = gc.getInfoTypeForString("UNITCLASS_ADVENTURER")
 	if iCiv == gc.getInfoTypeForString("CIVILIZATION_CUALLI"):
 		iHeroClass = gc.getInfoTypeForString("UNITCLASS_ADVENTURER")
+	if iCiv == gc.getInfoTypeForString("CIVILIZATION_AMURITES"):
+		iHeroClass = gc.getInfoTypeForString("UNITCLASS_GOVANNON")
+	if iCiv == gc.getInfoTypeForString("CIVILIZATION_AUSTRIN"):
+		iHeroClass = gc.getInfoTypeForString("UNITCLASS_HARMATT")
+	if iCiv == gc.getInfoTypeForString("CIVILIZATION_BALSERAPHS"):
+		iHeroClass = gc.getInfoTypeForString("UNITCLASS_LOKI")
+	if iCiv == gc.getInfoTypeForString("CIVILIZATION_CALABIM"):
+		iHeroClass = gc.getInfoTypeForString("UNITCLASS_LOSHA")
+	if iCiv == gc.getInfoTypeForString("CIVILIZATION_CHISLEV"):
+		iHeroClass = gc.getInfoTypeForString("UNITCLASS_MESKWAKI")
+	if iCiv == gc.getInfoTypeForString("CIVILIZATION_HIPPUS"):
+		iHeroClass = gc.getInfoTypeForString("UNITCLASS_ADVENTURER")
+	if iCiv == gc.getInfoTypeForString("CIVILIZATION_KHAZAD"):
+		iHeroClass = gc.getInfoTypeForString("UNITCLASS_MAROS")
+	if iCiv == gc.getInfoTypeForString("CIVILIZATION_LJOSALFAR"):
+		iHeroClass = gc.getInfoTypeForString("UNITCLASS_GILDEN")
+	if iCiv == gc.getInfoTypeForString("CIVILIZATION_LUCHUIRP"):
+		iHeroClass = gc.getInfoTypeForString("UNITCLASS_BARNAXUS")
+	if iCiv == gc.getInfoTypeForString("CIVILIZATION_MEKARA_V2"):
+		iHeroClass = gc.getInfoTypeForString("UNITCLASS_ADVENTURER")
+	if iCiv == gc.getInfoTypeForString("CIVILIZATION_SIDAR"):
+		iHeroClass = gc.getInfoTypeForString("UNITCLASS_ADVENTURER")
+	if iCiv == gc.getInfoTypeForString("CIVILIZATION_SVARTALFAR"):
+		iHeroClass = gc.getInfoTypeForString("UNITCLASS_ADVENTURER")
+	if iCiv == gc.getInfoTypeForString("CIVILIZATION_MALAKIM"):
+		iHeroClass = gc.getInfoTypeForString("UNITCLASS_ADVENTURER")
+	if iCiv == gc.getInfoTypeForString("CIVILIZATION_ELOHIM"):
+		iHeroClass = gc.getInfoTypeForString("UNITCLASS_CORLINDALE")
 	if iHeroClass != -1:
 		# we can check for duplicates right here
 		if CyGame().isUnitClassMaxedOut(iHeroClass, 0) == False:
@@ -13415,7 +13443,7 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 			lUnitList.append([iHeroClass, 1, 2500])
 
 	# let's sett1e units
-	iUCMelee		= gc.getInfoTypeForString("UNITCLASS_AXEMAN")
+	iUCMelee		= gc.getInfoTypeForString("UNITCLASS_SPEARMAN")
 	if iCiv == gc.getInfoTypeForString("CIVILIZATION_HIPPUS"):
 		iUCMelee	= gc.getInfoTypeForString("UNITCLASS_HORSEMAN")
 	if iCiv == gc.getInfoTypeForString("CIVILIZATION_DTESH"):
@@ -13440,21 +13468,21 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 	iUCReconT3		= -1
 	iUCAdeptT3		= -1
 	# their base count
-	iCountMelee		= 2
-	iCountRanged	= 2
-	iCountRecon		= 2
+	iCountMelee		= 3
+	iCountRanged	= 3
+	iCountRecon		= 3
 	iCountAdept		= 2
 	iCountWorker	= 2
-	iCountSettler	= 1
+	iCountSettler	= 2
 	iCountDisciple	= 0
 	# base XP, that you can chenge with extra tech
-	iXPMelee		= 0
-	iXPRanged		= 0
-	iXPRecon		= 0
-	iXPAdept		= 0
+	iXPMelee		= 2
+	iXPRanged		= 2
+	iXPRecon		= 2
+	iXPAdept		= 2
 	iXPWorker		= 0
 	iXPSettler		= 0
-	iXPDisciple		= 0
+	iXPDisciple		= 2
 
 	# we can check for alignment here to decide what disciple to give and what tech to check
 	if   pNewPlayer.getAlignment() == gc.getInfoTypeForString("ALIGNMENT_EVIL"):
@@ -13467,9 +13495,17 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 		iUCDisciple	= gc.getInfoTypeForString("UNITCLASS_DRUID")
 		iDiscipleTech	= gc.getInfoTypeForString("TECH_COMMUNE_WITH_NATURE")
 
+	if pNewPlayer.isHasTech(gc.getInfoTypeForString('TECH_BRONZE_WORKING')):
+		iCountMelee		+= 4
+		iCountWorker	+= 1
+		iCountSettler	+= 1
+		iCountSupp		+= 3
+		iXPMelee		= 5
+		iXPWorker		= 4
+
 	if pNewPlayer.isHasTech(gc.getInfoTypeForString('TECH_IRON_WORKING')):
 		# let's change our melee unit for a beter one
-		iUCMelee		= gc.getInfoTypeForString("UNITCLASS_CHAMPION")
+		iUCMelee		= gc.getInfoTypeForString("UNITCLASS_PIKEMAN")
 		if iCiv == gc.getInfoTypeForString("CIVILIZATION_DTESH"):
 			iUCMelee	= gc.getInfoTypeForString("UNITCLASS_PIKEMAN")
 		if iCiv == gc.getInfoTypeForString("CIVILIZATION_MEKARA"):
@@ -13477,10 +13513,19 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 		if iCiv == gc.getInfoTypeForString("CIVILIZATION_SHEAIM"):
 			iUCMelee	= gc.getInfoTypeForString("UNITCLASS_SUCCUBUS")
 		# and add a few more units
-		iCountMelee		+= 2
+		iCountMelee		+= 8
+		iCountWorker	+= 3
+		iCountSettler	+= 1
+		iCountSupp		+= 3
+		iXPMelee		= 10
+		iXPWorker		= 10
+
+	if pNewPlayer.isHasTech(gc.getInfoTypeForString('TECH_ARCHERY')):
+		iCountRanged	+= 4
 		iCountWorker	+= 1
 		iCountSettler	+= 1
 		iCountSupp		+= 3
+		iXPRanged		= 5
 		iXPWorker		= 10
 
 	# i'll leave other techs for you to populate
@@ -13491,12 +13536,20 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 			iUCRanged	= gc.getInfoTypeForString("UNITCLASS_CANNON")
 		if iCiv == gc.getInfoTypeForString("CIVILIZATION_HIPPUS"):
 			iUCRanged	= gc.getInfoTypeForString("UNITCLASS_HORSE_ARCHER")
-		iCountRanged	+= 2
+		iCountRanged	+= 8
+		iCountWorker	+= 3
+		iCountSettler	+= 1
+		iCountSupp		+= 3
+		iXPRanged		= 10
+		iXPWorker		= 10
+
+	if pNewPlayer.isHasTech(gc.getInfoTypeForString('TECH_TRACKING')):
+		iCountRecon		+= 4
 		iCountWorker	+= 1
 		iCountSettler	+= 1
 		iCountSupp		+= 3
+		iXPRecon		= 5
 		iXPWorker		= 10
-
 
 	if pNewPlayer.isHasTech(gc.getInfoTypeForString('TECH_ANIMAL_HANDLING')):
 		iUCRecon		= gc.getInfoTypeForString("UNITCLASS_RANGER")
@@ -13504,10 +13557,21 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 			iUCRecon	= gc.getInfoTypeForString("UNITCLASS_ASSASSIN")
 		if iCiv == gc.getInfoTypeForString("CIVILIZATION_HIPPUS"):
 			iUCRecon	= gc.getInfoTypeForString("UNITCLASS_HORSE_ARCHER")
-		iCountRecon		+= 2
+		if iCiv == gc.getInfoTypeForString("CIVILIZATION_LUCHUIRP"):
+			iUCRecon	= gc.getInfoTypeForString("UNITCLASS_ASSASSIN")
+		iCountRecon		+= 8
+		iCountWorker	+= 3
+		iCountSettler	+= 1
+		iCountSupp		+= 3
+		iXPRecon		= 10
+		iXPWorker		= 10
+
+	if pNewPlayer.isHasTech(gc.getInfoTypeForString('TECH_KNOWLEDGE_OF_THE_ETHER')):
+		iCountAdept		+= 2
 		iCountWorker	+= 1
 		iCountSettler	+= 1
 		iCountSupp		+= 3
+		iXPAdept		= 5
 		iXPWorker		= 10
 
 	if pNewPlayer.isHasTech(gc.getInfoTypeForString('TECH_SORCERY')):
@@ -13516,26 +13580,28 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 			iUCAdept	= gc.getInfoTypeForString("UNITCLASS_CANNON")
 		if iCiv == gc.getInfoTypeForString("CIVILIZATION_HIPPUS"):
 			iUCAdept	= gc.getInfoTypeForString("UNITCLASS_HORSE_ARCHER")
-		iCountAdept		+= 2
-		iCountWorker	+= 1
+		iCountAdept		+= 8
+		iCountWorker	+= 3
 		iCountSettler	+= 1
 		iCountSupp		+= 3
+		iXPAdept		= 20
 		iXPWorker		= 10
 
 	if pNewPlayer.isHasTech(gc.getInfoTypeForString('TECH_SANITATION')):
-		iCountWorker	+= 1
+		iCountWorker	+= 2
 		iCountSettler	+= 1
 		iCountSupp		+= 3
 		iXPWorker		= 10
 
 	if pNewPlayer.isHasTech(gc.getInfoTypeForString('TECH_PRIESTHOOD')):
-		iCountWorker	+= 1
+		iCountWorker	+= 2
 		iCountSettler	+= 1
 		iCountSupp		+= 3
 		iXPWorker		= 10
 
 	if pNewPlayer.isHasTech(iDiscipleTech):
 		iCountDisciple += 4
+		iXPDisciple		= 50
 
 	if pNewPlayer.isHasTech(gc.getInfoTypeForString('TECH_MITHRIL_WORKING')):
 		# we need to put t3 in separate list to respect max instance count
@@ -13543,23 +13609,27 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 		if iCiv == gc.getInfoTypeForString("CIVILIZATION_HIPPUS"):
 			iUCMeleeT3	= gc.getInfoTypeForString("UNITCLASS_KNIGHT")
 		iCountMeleeT3	= 4
+		iCountMelee		+= 12
 		iCountWorker	+= 1
 		iCountSettler	+= 1
-		iCountSupp		+= 2
+		iCountSupp		+= 4
+		iXPMelee		= 50
 		iXPWorker		= 10
 
 	if pNewPlayer.isHasTech(gc.getInfoTypeForString('TECH_ANIMAL_MASTERY')):
 		iUCReconT3		= gc.getInfoTypeForString("UNITCLASS_BEASTMASTER")
 		if iCiv == gc.getInfoTypeForString("CIVILIZATION_SCIONS"):
-			iUCMeleeT3	= gc.getInfoTypeForString("UNITCLASS_IMMORTAL")
+			iUCReconT3	= gc.getInfoTypeForString("UNITCLASS_IMMORTAL")
 		if iCiv == gc.getInfoTypeForString("CIVILIZATION_LUCHUIRP"):
-			iUCMeleeT3	= gc.getInfoTypeForString("UNITCLASS_IMMORTAL")
+			iUCReconT3	= gc.getInfoTypeForString("UNITCLASS_IMMORTAL")
 		if iCiv == gc.getInfoTypeForString("CIVILIZATION_DTESH"):
-			iUCMeleeT3	= gc.getInfoTypeForString("UNITCLASS_ANGEL_OF_DEATH")
-		iCountMeleeT3	= 4
-		iCountWorker	+= 1
+			iUCReconT3	= gc.getInfoTypeForString("UNITCLASS_ANGEL_OF_DEATH")
+		iCountReconT3	= 4
+		iCountRecon		+= 12
+		iCountWorker	+= 3
 		iCountSettler	+= 1
-		iCountSupp		+= 2
+		iCountSupp		+= 4
+		iXPRecon		= 50
 		iXPWorker		= 10
 
 	if pNewPlayer.isHasTech(gc.getInfoTypeForString('TECH_STRENGTH_OF_WILL')):
@@ -13568,10 +13638,14 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 			iUCAdeptT3	= gc.getInfoTypeForString("UNITCLASS_KNIGHT")
 		if iCiv == gc.getInfoTypeForString("CIVILIZATION_HIPPUS"):
 			iUCAdeptT3	= gc.getInfoTypeForString("UNITCLASS_WAR_CHARIOT")
-		iCountMeleeT3	= 4
-		iCountWorker	+= 1
+		iCountAdeptT3	= 4
+		iCountAdept		+= 6
+		iCountMelee		+= 3
+		iCountRecon		+= 3
+		iCountWorker	+= 3
 		iCountSettler	+= 1
 		iCountSupp		+= 2
+		iXPAdept		= 50
 		iXPWorker		= 10
 
 	if pNewPlayer.isHasTech(gc.getInfoTypeForString('TECH_TAXATION')):
@@ -13579,7 +13653,7 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 		iXPWorker		= 10
 
 	if pNewPlayer.isHasTech(gc.getInfoTypeForString('TECH_TRADE')):
-		iCountSupp		+= 3
+		iCountSupp		+= 6
 		iXPWorker		= 10
 
 	# When all techs are done we can compile our list of lists

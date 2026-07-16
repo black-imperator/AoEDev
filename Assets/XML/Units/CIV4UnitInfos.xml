@@ -16371,8 +16371,8 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
-			<iCost>170</iCost>
+			<PrereqTech>TECH_SANITATION</PrereqTech>
+			<iCost>150</iCost>
 			<iMoves>1</iMoves>
 			<iAirRange>1</iAirRange>
 			<iCombat>7</iCombat>
@@ -51602,7 +51602,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
+			<PrereqTech>TECH_CURRENCY</PrereqTech>
 			<iCost>120</iCost>
 			<iHurryCostModifier>50</iHurryCostModifier>
 			<iAdvancedStartCost>200</iAdvancedStartCost>
@@ -58664,7 +58664,7 @@
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
 			<bPillage>1</bPillage>
-			<PrereqTech>TECH_WAY_OF_THE_WICKED</PrereqTech>
+			<PrereqTech>TECH_CORRUPTION_OF_SPIRIT</PrereqTech>
 			<UnitAIs>
 				<UnitAI>
 					<UnitAIType>UNITAI_COUNTER</UnitAIType>

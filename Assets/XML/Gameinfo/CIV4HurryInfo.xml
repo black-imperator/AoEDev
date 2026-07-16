@@ -28,7 +28,7 @@
 			<Type>HURRY_CULTURE_VS</Type>
 			<Description>TXT_KEY_HURRY_CULTURE_VS</Description>
 			<iGoldPerProduction>0</iGoldPerProduction>
-			<iCulturePerProduction>3</iCulturePerProduction>
+			<iCulturePerProduction>9</iCulturePerProduction>
 			<iProductionPerPopulation>0</iProductionPerPopulation>
 			<Button>Art/Interface/MainScreen/CityScreen/hurry_slavery.dds</Button>
 		</HurryInfo>

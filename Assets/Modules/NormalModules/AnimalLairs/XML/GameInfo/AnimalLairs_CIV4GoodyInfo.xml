@@ -21,6 +21,24 @@
 			<Sound/>
 			<PythonCallback>exploreLairFriendly(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
+		
+		<GoodyInfo>	<!--Discover the Doviello	 -->
+			<Type>GOODY_FREE_DOVIELLO</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_ANIMAL_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>30</iWeight>
+			<Description>TXT_KEY_GOODY_FREED_DOVIELLO</Description>
+			<Sound>AS2D_GOODY_HOSTILE</Sound>
+			<iDestroyLairChance>100</iDestroyLairChance>
+			<bUnique>1</bUnique>
+			<bBad>1</bBad>
+			<PythonPrereq>reqLairFreeDoviello</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_DOVIELLO','LEADER_CHARADON')</PythonCallback>
+		</GoodyInfo>
 
 		<GoodyInfo> <!--Adds Subdue Animal to a recon unit-->
 			<Type>GOODY_EXPLORE_LAIR_DEN_SUBDUE_ANIMAL</Type>
@@ -302,48 +320,31 @@
 			<Type>GOODY_FREE_ARCHOS</Type>
 			<GoodyClasses>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_ANIMAL_MINOR</GoodyClassType>
+					<GoodyClassType>GOODYCLASS_SPIDERS</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
 			<iWeight>30</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_ARCHOS</Description>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
-			<iDestroyLairChance>0</iDestroyLairChance>
+			<iDestroyLairChance>100</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>1</bBad>
 			<PythonPrereq>reqLairFreeArchos</PythonPrereq>
 			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_ARCHOS','LEADER_DARACAAT')</PythonCallback>
 		</GoodyInfo>
-		<GoodyInfo>	<!--Discover the Doviello	 -->
-			<Type>GOODY_FREE_DOVIELLO</Type>
-			<GoodyClasses>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_ANIMAL_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-			</GoodyClasses>
-			<iWeight>30</iWeight>
-			<Description>TXT_KEY_GOODY_FREED_DOVIELLO</Description>
-			<Sound>AS2D_GOODY_HOSTILE</Sound>
-			<iDestroyLairChance>0</iDestroyLairChance>
-			<bUnique>1</bUnique>
-			<bBad>1</bBad>
-			<PythonPrereq>reqLairFreeDoviello</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_DOVIELLO','LEADER_CHARADON')</PythonCallback>
-		</GoodyInfo>
 		<GoodyInfo>	<!--Discover the Malakim	 -->
 			<Type>GOODY_FREE_MALAKIM</Type>
 			<GoodyClasses>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_ANIMAL_MINOR</GoodyClassType>
+					<GoodyClassType>GOODYCLASS_DESERT_NOMADS</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
 			<iWeight>30</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_MALAKIM</Description>
 			<Sound>AS2D_GOODY_GOLD</Sound>
-			<iDestroyLairChance>0</iDestroyLairChance>
+			<iDestroyLairChance>100</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
 			<PythonPrereq>reqLairFreeMalakim</PythonPrereq>
