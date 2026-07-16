@@ -183,6 +183,60 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 			</Units>
+			<SpecialistArtstyles>
+				<SpecialistArtstyle>
+					<SpecialistClassType>SPECIALISTCLASS_ARTIST</SpecialistClassType>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_BARD_UNDEAD</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
+					<SpecialistClassType>SPECIALISTCLASS_CITIZEN</SpecialistClassType>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_CITIZEN_UNDEAD</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
+					<SpecialistClassType>SPECIALISTCLASS_ENGINEER</SpecialistClassType>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_ENGINEER_UNDEAD</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
+					<SpecialistClassType>SPECIALISTCLASS_GREAT_ARTIST</SpecialistClassType>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_GREAT_BARD_UNDEAD</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
+					<SpecialistClassType>SPECIALISTCLASS_GREAT_ENGINEER</SpecialistClassType>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_GREAT_ENGINEER_UNDEAD</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
+					<SpecialistClassType>SPECIALISTCLASS_GREAT_HEALER</SpecialistClassType>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_GREAT_HEALER_UNDEAD</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
+					<SpecialistClassType>SPECIALISTCLASS_GREAT_MERCHANT</SpecialistClassType>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_GREAT_MERCHANT_UNDEAD</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
+					<SpecialistClassType>SPECIALISTCLASS_GREAT_PRIEST</SpecialistClassType>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_GREAT_PRIEST_UNDEAD</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
+					<SpecialistClassType>SPECIALISTCLASS_GREAT_SCIENTIST</SpecialistClassType>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_GREAT_SAGE_UNDEAD</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
+					<SpecialistClassType>SPECIALISTCLASS_HEALER</SpecialistClassType>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_HEALER_UNDEAD</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
+					<SpecialistClassType>SPECIALISTCLASS_MERCHANT</SpecialistClassType>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_MERCHANT_UNDEAD</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
+					<SpecialistClassType>SPECIALISTCLASS_PRIEST</SpecialistClassType>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_PRIEST_UNDEAD</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
+					<SpecialistClassType>SPECIALIST_SCIENTIST</SpecialistClassType>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_SAGE_UNDEAD</SpecialistArtTag>
+				</SpecialistArtstyle>
+			</SpecialistArtstyles>
 			<Specialists>
 				<Specialist>
 					<SpecialistClassType>SPECIALISTCLASS_HEALER</SpecialistClassType>
