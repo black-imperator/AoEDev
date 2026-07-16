@@ -8669,7 +8669,7 @@
 			<bEffectProm>1</bEffectProm>
 			<iChanceMiscast>50</iChanceMiscast>
 			<iDamageOnRemove>50</iDamageOnRemove>
-			<iPromotionDuration>3</iPromotionDuration>
+			<iExpireChance>10</iExpireChance>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
@@ -8721,7 +8721,6 @@
 				</UnitCombat>
 			</UnitCombats>
 			<Button>Art/Interface/Buttons/Promotions/DeadlyMishap.dds</Button>
-			<bRemovedByCombat>1</bRemovedByCombat>
 			<iAIWeight>-50</iAIWeight>
 			<iMinLevel>-1</iMinLevel>
 		</PromotionInfo>
@@ -8732,7 +8731,7 @@
 			<Sound>NONE</Sound>
 			<iChanceMiscast>50</iChanceMiscast>
 			<iDamageOnRemove>50</iDamageOnRemove>
-			<iPromotionDuration>3</iPromotionDuration>
+			<iExpireChance>10</iExpireChance>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
@@ -8784,7 +8783,6 @@
 				</UnitCombat>
 			</UnitCombats>
 			<Button>Art/Interface/Buttons/Promotions/DeadlyMishap.dds</Button>
-			<bRemovedByCombat>1</bRemovedByCombat>
 			<iAIWeight>-50</iAIWeight>
 			<iMinLevel>-1</iMinLevel>
 		</PromotionInfo>

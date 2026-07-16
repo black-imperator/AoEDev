@@ -24303,7 +24303,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 				<UnitAI>
-					<UnitAIType>UNITAI_CITY_COUNTER</UnitAIType>
+					<UnitAIType>UNITAI_WORKER</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
@@ -25243,7 +25243,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 				<UnitAI>
-					<UnitAIType>UNITAI_CITY_COUNTER</UnitAIType>
+					<UnitAIType>UNITAI_WORKER</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
