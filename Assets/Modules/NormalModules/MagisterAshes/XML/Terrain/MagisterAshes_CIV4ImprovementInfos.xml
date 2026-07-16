@@ -68,6 +68,10 @@
 					<GoodyClassType>GOODYCLASS_ABADDON</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_WORLDENDERS</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
 			</GoodyClasses>
 			<iBasePlotCounterModify>50</iBasePlotCounterModify>
 		</ImprovementInfo>
@@ -201,6 +205,10 @@
 				</GoodyClass>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_ASMODAY</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_WORLDENDERS</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
@@ -451,6 +459,18 @@
 				</GoodyClass>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_WHISPERING</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_FALSE_PATRIA</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_ELVEN_COURT</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_FADED</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>

@@ -85,8 +85,8 @@ def postCombatCarnivean(pCaster):
 def postCombatBadb(pCaster):
 	gc.getGame().setGlobalFlag(gc.getInfoTypeForString('FLAG_DEAD_BADB'),True)
 
-def exploreLairUmberguardHostile(argsList):
-	pUnit, pPlot = argsList
+def exploreLairUmberguardHostile(pUnit, pPlot):
+
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
@@ -95,8 +95,8 @@ def exploreLairUmberguardHostile(argsList):
 	newUnit1 = bPlayer.initUnit(getInfoType('UNIT_DWARVEN_DEFENDER'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit1.setHasPromotion(getInfoType('PROMOTION_UMBERGUARD'),True)
 
-def exploreLairUmberguardFriend(argsList):
-	pUnit, pPlot = argsList
+def exploreLairUmberguardFriend(pUnit, pPlot):
+
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	newUnit = pPlayer.initUnit(getInfoType('UNIT_DWARVEN_DEFENDER'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	newUnit.setHasPromotion(getInfoType('PROMOTION_UMBERGUARD'),True)

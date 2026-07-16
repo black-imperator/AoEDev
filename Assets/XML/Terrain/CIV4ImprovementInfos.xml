@@ -2542,6 +2542,18 @@
 					<GoodyClassType>GOODYCLASS_BANDIT_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_VAMPIRES</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_HORSELORDS</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_DEPRAVED</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
 			</GoodyClasses>
 			<iAppearanceProbability>60</iAppearanceProbability>
 			<iLairCreationWeight>100</iLairCreationWeight>
@@ -2646,6 +2658,18 @@
 				</GoodyClass>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_BANDIT_MODERATE</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_VAMPIRES</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_HORSELORDS</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_DEPRAVED</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>	
 			</GoodyClasses>
@@ -2767,6 +2791,18 @@
 					<GoodyClassType>GOODYCLASS_BANDIT_MAJOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_VAMPIRES</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_HORSELORDS</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_DEPRAVED</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
 			</GoodyClasses>
 			<LairCreationWeightTechs>
 				<LairCreationWeightTech>
@@ -2852,11 +2888,11 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_CENTAUR_MINOR</GoodyClassType>
+					<GoodyClassType>GOODYCLASS_NATURE_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_NATURE_MINOR</GoodyClassType>
+					<GoodyClassType>GOODYCLASS_ELVEN_COURT</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
@@ -2966,19 +3002,15 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_CENTAUR_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_CENTAUR_MODERATE</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_NATURE_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_NATURE_MODERATE</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_ELVEN_COURT</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
@@ -3094,18 +3126,6 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_CENTAUR_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_CENTAUR_MODERATE</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_CENTAUR_MAJOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_NATURE_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
@@ -3115,6 +3135,10 @@
 				</GoodyClass>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_NATURE_MAJOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_ELVEN_COURT</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
@@ -3211,6 +3235,18 @@
 				</GoodyClass>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_SPIRIT_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LEGION</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_WORLDENDERS</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_FADED</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
@@ -3336,6 +3372,18 @@
 				</GoodyClass>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_DEMONIC_MODERATE</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LEGION</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_WORLDENDERS</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_FADED</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
@@ -3476,6 +3524,18 @@
 					<GoodyClassType>GOODYCLASS_DEMONIC_MAJOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LEGION</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_WORLDENDERS</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_FADED</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
 			</GoodyClasses>
 			<LairCreationWeightTechs>
 				<LairCreationWeightTech>
@@ -3569,6 +3629,10 @@
 				</GoodyClass>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_NATURE_MAJOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_ELVEN_COURT</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
@@ -4029,6 +4093,38 @@
 					<GoodyClassType>GOODYCLASS_LIZARD_MODERATE</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_VAMPIRES</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LEGION</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_ELVEN_COURT</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_DWARVES</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_DEPRAVED</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_FALSE_PATRIA</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_WORLDENDERS</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_FADED</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
 			</GoodyClasses>
 			<iAppearanceProbability>75</iAppearanceProbability>
 			<iLairCreationWeight>5</iLairCreationWeight>
@@ -4108,6 +4204,18 @@
 				</GoodyClass>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LEGION</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_DEPRAVED</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_WORLDENDERS</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
@@ -4199,6 +4307,18 @@
 				</GoodyClass>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_MAGIC_MODERATE</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LEGION</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_DEPRAVED</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_WORLDENDERS</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
@@ -4324,6 +4444,18 @@
 				</GoodyClass>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_MAGIC_MAJOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LEGION</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_DEPRAVED</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_WORLDENDERS</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
@@ -4776,6 +4908,18 @@
 					<GoodyClassType>GOODYCLASS_UNDEAD_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_VAMPIRES</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LEGION</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_FADED</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
 			</GoodyClasses>
 			<iAppearanceProbability>75</iAppearanceProbability>
 			<iLairCreationWeight>5</iLairCreationWeight>
@@ -4879,6 +5023,10 @@
 					<GoodyClassType>GOODYCLASS_WATER_MAJOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_PIRATES</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
 			</GoodyClasses>
 			<iAppearanceProbability>10</iAppearanceProbability>
 			<iLairCreationWeight>20</iLairCreationWeight>
@@ -4956,6 +5104,10 @@
 				</GoodyClass>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_SUBTERRAN_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_DWARVES</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
@@ -5070,6 +5222,10 @@
 				</GoodyClass>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_SUBTERRAN_MODERATE</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_DWARVES</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
@@ -5200,6 +5356,10 @@
 					<GoodyClassType>GOODYCLASS_SUBTERRAN_MAJOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_DWARVES</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
 			</GoodyClasses>
 			<LairCreationWeightTechs>
 				<LairCreationWeightTech>
@@ -5254,6 +5414,10 @@
 				</GoodyClass>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_LIZARD_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_DWARVES</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
@@ -5338,6 +5502,10 @@
 				</GoodyClass>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_LIZARD_MODERATE</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_DWARVES</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
@@ -5435,6 +5603,14 @@
 				</GoodyClass>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_LIZARD_MAJOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_DWARVES</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_DWARVES</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
@@ -5591,6 +5767,10 @@
 					<GoodyClassType>GOODYCLASS_NATURE_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_ILLIANS</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
 			</GoodyClasses>
 			<iAppearanceProbability>50</iAppearanceProbability>
 			<iLairCreationWeight>45</iLairCreationWeight>
@@ -5677,6 +5857,10 @@
 				</GoodyClass>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_NATURE_MODERATE</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_ILLIANS</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
@@ -5780,6 +5964,10 @@
 				</GoodyClass>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_NATURE_MAJOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_ILLIANS</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
@@ -12310,6 +12498,10 @@
 					<GoodyClassType>GOODYCLASS_AIFON</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_PIRATES</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
 			</GoodyClasses>
 		</ImprovementInfo>
 		<ImprovementInfo><!-- Bair of Lacuna -->
@@ -12396,6 +12588,14 @@
 					<GoodyClassType>GOODYCLASS_BAIR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_VAMPIRES</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_WORLDENDERS</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
 			</GoodyClasses>
 			<BonusConvert>BONUS_MANA_DIMENSIONAL</BonusConvert>
 		</ImprovementInfo>
@@ -12476,6 +12676,14 @@
 				</GoodyClass>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_BRADELINE</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_FALSE_PATRIA</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_WORLDENDERS</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
@@ -12612,6 +12820,10 @@
 				</GoodyClass>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_SEPULCHER</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LEGION</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
@@ -12821,6 +13033,14 @@
 					<GoodyClassType>GOODYCLASS_NATURE_MAJOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_PIRATES</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LEGION</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
 			</GoodyClasses>
 		</ImprovementInfo>
 		<ImprovementInfo><!-- Foxford -->
@@ -12951,6 +13171,10 @@
 				</GoodyClass>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_LETUM</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_ILLIANS</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
@@ -13087,15 +13311,7 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_SUBTERRAN_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_SUBTERRAN_MODERATE</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_LIZARD_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 				<GoodyClass>
@@ -13104,6 +13320,10 @@
 				</GoodyClass>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_LIZARD_MODERATE</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_DWARVES</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
@@ -13364,6 +13584,10 @@
 				</GoodyClass>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_PATRIA</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_FADED</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
@@ -13956,6 +14180,18 @@
 				</GoodyClass>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_MAGIC_MAJOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LEGION</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_VAMPIRES</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_FALSE_PATRIA</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>

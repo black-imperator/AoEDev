@@ -230,6 +230,23 @@
 			<bBad>0</bBad>
 			<PythonCallback>exploreDealWithImp(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
+		<GoodyInfo>	<!-- Defiler Rod		Good Minor	-->
+			<Type>GOODY_DEFILER_ROD</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_DEMONIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>150</iWeight>
+			<Description>TXT_KEY_GOODY_DEFILER_ROD</Description>
+			<Sound>AS2D_GOODY_GOLD</Sound>
+			<iDestroyLairChance>90</iDestroyLairChance>
+			<bBad>0</bBad>
+			<PromotionAdds>
+				<Promotion>PROMOTION_DEFILER_ROD</Promotion>
+			</PromotionAdds>
+		</GoodyInfo>
 		<GoodyInfo> <!--Urn Rotting Flesh		 Unique-->
 			<Type>GOODY_EXPLORE_LAIR_ITEM_URN_ROTTING_FLESH_6</Type>
 			<GoodyClasses>
@@ -263,6 +280,51 @@
 			<iDestroyLairChance>50</iDestroyLairChance>
 			<bBad>1</bBad>
 			<PythonCallback>exploreLairPitBeast(pUnit,pPlot)</PythonCallback>
+		</GoodyInfo>
+		<GoodyInfo>	<!-- Angelsbane	Bad Minor	-->
+			<Type>GOODY_BANESWORD_ANGEL</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_DEMONIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>250</iWeight>
+			<Description>TXT_KEY_GOODY_BANESWORD_ANGEL</Description>
+			<Sound>AS2D_GOODY_HOSTILE</Sound>
+			<iDestroyLairChance>40</iDestroyLairChance>
+			<PythonCallback>exploreLairSuccubusAngel(pUnit,pPlot)</PythonCallback>
+			<bBad>1</bBad>
+		</GoodyInfo>
+		<GoodyInfo>	<!-- Demonsbane	Bad Minor	-->
+			<Type>GOODY_BANESWORD_DEMON</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LIVING_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>250</iWeight>
+			<Description>TXT_KEY_GOODY_BANESWORD_DEMON</Description>
+			<Sound>AS2D_GOODY_HOSTILE</Sound>
+			<iDestroyLairChance>40</iDestroyLairChance>
+			<PythonCallback>exploreLairRighteousNobhead(pUnit,pPlot)</PythonCallback>
+			<bBad>1</bBad>
+		</GoodyInfo>
+		<GoodyInfo>	<!-- Curse-Thirst Blade		Bad Minor	-->
+			<Type>GOODY_RAGEBLADE</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_DEMONIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>250</iWeight>
+			<Description>TXT_KEY_GOODY_RAGESWORD</Description>
+			<Sound>AS2D_GOODY_HOSTILE</Sound>
+			<iDestroyLairChance>40</iDestroyLairChance>
+			<PythonCallback>exploreLairCurseThirstSavant(pUnit,pPlot)</PythonCallback>
+			<bBad>1</bBad>
 		</GoodyInfo>
 		<GoodyInfo> <!--IncreaseCounter-->
 			<Type>GOODY_EXPLORE_LAIR_INCREASE_COUNTER</Type>
@@ -408,6 +470,92 @@
 			<iMapProb>80</iMapProb>
 			<bBad>0</bBad>
 			<iMaxTurnsElapsed>100</iMaxTurnsElapsed>
+		</GoodyInfo>
+		<GoodyInfo>	<!-- Bards Harp	Good Minor	-->
+			<Type>GOODY_BARD_HARP</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>150</iWeight>
+			<Description>TXT_KEY_GOODY_BARD_HARP</Description>
+			<Sound>AS2D_GOODY_GOLD</Sound>
+			<iDestroyLairChance>90</iDestroyLairChance>
+			<bBad>0</bBad>
+			<PromotionAdds>
+				<Promotion>PROMOTION_BARD_HARP</Promotion>
+			</PromotionAdds>
+		</GoodyInfo>
+		<GoodyInfo>	<!-- Smiths Hammer	Good Minor	-->
+			<Type>GOODY_SMITHS_HAMMER</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>150</iWeight>
+			<Description>TXT_KEY_GOODY_SMITHS_HAMMER</Description>
+			<Sound>AS2D_GOODY_GOLD</Sound>
+			<iDestroyLairChance>90</iDestroyLairChance>
+			<bBad>0</bBad>
+			<PromotionAdds>
+				<Promotion>PROMOTION_SMITHS_HAMMER</Promotion>
+			</PromotionAdds>
+		</GoodyInfo>
+		<GoodyInfo>	<!-- Lord's Broach		Good Minor	-->
+			<Type>GOODY_LORD_BROACH</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>150</iWeight>
+			<Description>TXT_KEY_GOODY_LORD_BROACH</Description>
+			<Sound>AS2D_GOODY_GOLD</Sound>
+			<iDestroyLairChance>90</iDestroyLairChance>
+			<bBad>0</bBad>
+			<PromotionAdds>
+				<Promotion>PROMOTION_LORD_BROACH</Promotion>
+			</PromotionAdds>
+		</GoodyInfo>
+		<GoodyInfo>	<!--Discover the Austrin	 -->
+			<Type>GOODY_FREE_AUSTRIN</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>10</iWeight>
+			<Description>TXT_KEY_GOODY_FREED_AUSTRIN</Description>
+			<Sound>AS2D_GOODY_MAP</Sound>
+			<iDestroyLairChance>100</iDestroyLairChance>
+			<bUnique>1</bUnique>
+			<bBad>0</bBad>
+			<PythonPrereq>reqLairFreeAustrin</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_AUSTRIN','LEADER_DEIRDRA')</PythonCallback>
+		</GoodyInfo>
+		<GoodyInfo>	<!-- Foxmen Feather Charm		Good Minor	-->
+			<Type>GOODY_FOXMEN_FEATHER</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>150</iWeight>
+			<Description>TXT_KEY_GOODY_FOXMEN_FEATHER</Description>
+			<Sound>AS2D_GOODY_GOLD</Sound>
+			<iDestroyLairChance>90</iDestroyLairChance>
+			<bBad>0</bBad>
+			<PromotionAdds>
+				<Promotion>PROMOTION_FOXFEATHER</Promotion>
+			</PromotionAdds>
+			<iExperience>10</iExperience>
 		</GoodyInfo>
 		<GoodyInfo> <!--Gear Stash-->
 			<Type>GOODY_MARNOK_GEAR_STASH</Type>
@@ -906,406 +1054,6 @@
 			<bBad>1</bBad>
 			<PythonCallback>exploreLairBigBad(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
-		<GoodyInfo>	<!-- Banana Field 			Thematic Results Living		Good Minor	-->
-			<Type>GOODY_BANANA_FIELD</Type>
-			<GoodyClasses>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_LIVING_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-			</GoodyClasses>
-			<iWeight>100</iWeight>
-			<Description>TXT_KEY_GOODY_BANANA_FIELD</Description>
-			<Sound>AS2D_GOODY_GOLD</Sound>
-			<iDestroyLairChance>90</iDestroyLairChance>
-			<bBad>0</bBad>
-			<BonusType>BONUS_BANANA</BonusType>
-		</GoodyInfo>
-		<GoodyInfo>	<!-- Herambo's BananaScythe		Good Minor	-->
-			<Type>GOODY_BANANA_SCYTHE</Type>
-			<GoodyClasses>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_LIZARD_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-			</GoodyClasses>
-			<iWeight>100</iWeight>
-			<bUnique>1</bUnique>
-			<Description>TXT_KEY_GOODY_BANANA_SCYTHE</Description>
-			<Sound>AS2D_GOODY_GOLD</Sound>
-			<iDestroyLairChance>90</iDestroyLairChance>
-			<bBad>0</bBad>
-			<PromotionAdds>
-				<Promotion>PROMOTION_BANANA_SCYTHE</Promotion>
-			</PromotionAdds>
-			<BonusType>BONUS_BANANA</BonusType>
-		</GoodyInfo>
-		<GoodyInfo>	<!-- Grognar's Hunt		Good Minor	-->
-			<Type>GOODY_GROGNAR_HAMMER</Type>
-			<GoodyClasses>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_BANDIT_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-			</GoodyClasses>
-			<iWeight>150</iWeight>
-			<bUnique>1</bUnique>
-			<Description>TXT_KEY_GOODY_GROGNARS_HUNT</Description>
-			<Sound>AS2D_GOODY_GOLD</Sound>
-			<iDestroyLairChance>90</iDestroyLairChance>
-			<bBad>0</bBad>
-			<PromotionAdds>
-				<Promotion>PROMOTION_GROGNAR_HAMMER</Promotion>
-			</PromotionAdds>
-			<BonusType>BONUS_FUR</BonusType>
-		</GoodyInfo>
-		<GoodyInfo>	<!-- Foxmen Feather Charm		Good Minor	-->
-			<Type>GOODY_FOXMEN_FEATHER</Type>
-			<GoodyClasses>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-			</GoodyClasses>
-			<iWeight>150</iWeight>
-			<Description>TXT_KEY_GOODY_FOXMEN_FEATHER</Description>
-			<Sound>AS2D_GOODY_GOLD</Sound>
-			<iDestroyLairChance>90</iDestroyLairChance>
-			<bBad>0</bBad>
-			<PromotionAdds>
-				<Promotion>PROMOTION_FOXFEATHER</Promotion>
-			</PromotionAdds>
-			<iExperience>10</iExperience>
-		</GoodyInfo>
-		<GoodyInfo>	<!-- Defiler Rod		Good Minor	-->
-			<Type>GOODY_DEFILER_ROD</Type>
-			<GoodyClasses>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_DEMONIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-			</GoodyClasses>
-			<iWeight>150</iWeight>
-			<Description>TXT_KEY_GOODY_DEFILER_ROD</Description>
-			<Sound>AS2D_GOODY_GOLD</Sound>
-			<iDestroyLairChance>90</iDestroyLairChance>
-			<bBad>0</bBad>
-			<PromotionAdds>
-				<Promotion>PROMOTION_DEFILER_ROD</Promotion>
-			</PromotionAdds>
-		</GoodyInfo>
-		<GoodyInfo>	<!-- Guiding Light Lantern		Good Minor	-->
-			<Type>GOODY_GUIDING_LIGHT_LANTERN</Type>
-			<GoodyClasses>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-			</GoodyClasses>
-			<iWeight>150</iWeight>
-			<Description>TXT_KEY_GOODY_GUIDING_LIGHT_LANTERN</Description>
-			<Sound>AS2D_GOODY_GOLD</Sound>
-			<iDestroyLairChance>90</iDestroyLairChance>
-			<bBad>0</bBad>
-			<PromotionAdds>
-				<Promotion>PROMOTION_GUIDE_LANTERN</Promotion>
-			</PromotionAdds>
-		</GoodyInfo>
-		<GoodyInfo>	<!-- Winter's Grasp		Good Minor	-->
-			<Type>GOODY_WINTERS_GRASP</Type>
-			<GoodyClasses>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_FROSTLING_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-			</GoodyClasses>
-			<iWeight>150</iWeight>
-			<Description>TXT_KEY_GOODY_WINTERS_GRASP</Description>
-			<Sound>AS2D_GOODY_GOLD</Sound>
-			<iDestroyLairChance>90</iDestroyLairChance>
-			<bBad>0</bBad>
-			<PromotionAdds>
-				<Promotion>PROMOTION_WINTER_GRASP</Promotion>
-			</PromotionAdds>
-			<bUnique>1</bUnique>
-		</GoodyInfo>
-		<GoodyInfo>	<!-- Cut Throat's Cloak		Good Minor	-->
-			<Type>GOODY_HIDDEN_CLOAK</Type>
-			<GoodyClasses>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_BANDIT_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-			</GoodyClasses>
-			<iWeight>150</iWeight>
-			<Description>TXT_KEY_GOODY_HIDDEN_CLOAK</Description>
-			<Sound>AS2D_GOODY_GOLD</Sound>
-			<iDestroyLairChance>90</iDestroyLairChance>
-			<bBad>0</bBad>
-			<PromotionAdds>
-				<Promotion>PROMOTION_HIDDEN_CLOAK</Promotion>
-			</PromotionAdds>
-		</GoodyInfo>
-		<GoodyInfo>	<!-- Performer's Cloak		Good Minor	-->
-			<Type>GOODY_EVADE_CLOAK</Type>
-			<GoodyClasses>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_LIVING_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-			</GoodyClasses>
-			<iWeight>150</iWeight>
-			<Description>TXT_KEY_GOODY_EVADE_CLOAK</Description>
-			<Sound>AS2D_GOODY_GOLD</Sound>
-			<iDestroyLairChance>90</iDestroyLairChance>
-			<bBad>0</bBad>
-			<PromotionAdds>
-				<Promotion>PROMOTION_EVADE_CLOAK</Promotion>
-			</PromotionAdds>
-		</GoodyInfo>
-		<GoodyInfo>	<!-- Lord's Broach		Good Minor	-->
-			<Type>GOODY_LORD_BROACH</Type>
-			<GoodyClasses>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-			</GoodyClasses>
-			<iWeight>150</iWeight>
-			<Description>TXT_KEY_GOODY_LORD_BROACH</Description>
-			<Sound>AS2D_GOODY_GOLD</Sound>
-			<iDestroyLairChance>90</iDestroyLairChance>
-			<bBad>0</bBad>
-			<PromotionAdds>
-				<Promotion>PROMOTION_LORD_BROACH</Promotion>
-			</PromotionAdds>
-		</GoodyInfo>
-		<GoodyInfo>	<!-- Curse-Thirst Blade		Bad Minor	-->
-			<Type>GOODY_RAGEBLADE</Type>
-			<GoodyClasses>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_DEMONIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-			</GoodyClasses>
-			<iWeight>250</iWeight>
-			<Description>TXT_KEY_GOODY_RAGESWORD</Description>
-			<Sound>AS2D_GOODY_HOSTILE</Sound>
-			<iDestroyLairChance>40</iDestroyLairChance>
-			<PythonCallback>exploreLairCurseThirstSavant(pUnit,pPlot)</PythonCallback>
-			<bBad>0</bBad>
-		</GoodyInfo>
-		<GoodyInfo>	<!-- Boots of Waterwalking		Good Minor	-->
-			<Type>GOODY_WATER_BOOTS</Type>
-			<GoodyClasses>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_WATER_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-			</GoodyClasses>
-			<iWeight>150</iWeight>
-			<Description>TXT_KEY_GOODY_WATER_BOOTS</Description>
-			<Sound>AS2D_GOODY_GOLD</Sound>
-			<iDestroyLairChance>90</iDestroyLairChance>
-			<bBad>0</bBad>
-			<PromotionAdds>
-				<Promotion>PROMOTION_WATER_BOOTS</Promotion>
-			</PromotionAdds>
-		</GoodyInfo>
-		<GoodyInfo>	<!-- Angelsbane	Bad Minor	-->
-			<Type>GOODY_BANESWORD_ANGEL</Type>
-			<GoodyClasses>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_DEMONIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-			</GoodyClasses>
-			<iWeight>250</iWeight>
-			<Description>TXT_KEY_GOODY_BANESWORD_ANGEL</Description>
-			<Sound>AS2D_GOODY_HOSTILE</Sound>
-			<iDestroyLairChance>40</iDestroyLairChance>
-			<PythonCallback>exploreLairSuccubusAngel(pUnit,pPlot)</PythonCallback>
-			<bBad>1</bBad>
-		</GoodyInfo>
-		<GoodyInfo>	<!-- Demonsbane	Bad Minor	-->
-			<Type>GOODY_BANESWORD_DEMON</Type>
-			<GoodyClasses>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_LIVING_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-			</GoodyClasses>
-			<iWeight>250</iWeight>
-			<Description>TXT_KEY_GOODY_BANESWORD_DEMON</Description>
-			<Sound>AS2D_GOODY_HOSTILE</Sound>
-			<iDestroyLairChance>40</iDestroyLairChance>
-			<PythonCallback>exploreLairRighteousNobhead(pUnit,pPlot)</PythonCallback>
-			<bBad>1</bBad>
-		</GoodyInfo>
-		<GoodyInfo>	<!-- Elementals Bane Conjurers		Good Minor	-->
-			<Type>GOODY_BANESWORD_ELEMENTAL</Type>
-			<GoodyClasses>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-			</GoodyClasses>
-			<iWeight>150</iWeight>
-			<Description>TXT_KEY_GOODY_BANESWORD_ELEMENTAL</Description>
-			<Sound>AS2D_GOODY_GOLD</Sound>
-			<iDestroyLairChance>90</iDestroyLairChance>
-			<bBad>0</bBad>
-			<PromotionAdds>
-				<Promotion>PROMOTION_BANESWORD_ELEMENTAL</Promotion>
-			</PromotionAdds>
-		</GoodyInfo>
-		<GoodyInfo>	<!-- Spirit Sever	Bad Minor	-->
-			<Type>GOODY_SPIRIT_SEVER</Type>
-			<GoodyClasses>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_SPIRIT_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-			</GoodyClasses>
-			<iWeight>250</iWeight>
-			<Description>TXT_KEY_GOODY_SPIRIT_SEVER</Description>
-			<Sound>AS2D_GOODY_HOSTILE</Sound>
-			<iDestroyLairChance>40</iDestroyLairChance>
-			<PythonCallback>exploreLairScreamingPuppet(pUnit,pPlot)</PythonCallback>
-			<bBad>1</bBad>
-		</GoodyInfo>
-		<GoodyInfo>	<!-- Bards Harp	Good Minor	-->
-			<Type>GOODY_BARD_HARP</Type>
-			<GoodyClasses>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-			</GoodyClasses>
-			<iWeight>150</iWeight>
-			<Description>TXT_KEY_GOODY_BARD_HARP</Description>
-			<Sound>AS2D_GOODY_GOLD</Sound>
-			<iDestroyLairChance>90</iDestroyLairChance>
-			<bBad>0</bBad>
-			<PromotionAdds>
-				<Promotion>PROMOTION_BARD_HARP</Promotion>
-			</PromotionAdds>
-		</GoodyInfo>
-		<GoodyInfo>	<!-- Smiths Hammer	Good Minor	-->
-			<Type>GOODY_SMITHS_HAMMER</Type>
-			<GoodyClasses>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-			</GoodyClasses>
-			<iWeight>150</iWeight>
-			<Description>TXT_KEY_GOODY_SMITHS_HAMMER</Description>
-			<Sound>AS2D_GOODY_GOLD</Sound>
-			<iDestroyLairChance>90</iDestroyLairChance>
-			<bBad>0</bBad>
-			<PromotionAdds>
-				<Promotion>PROMOTION_SMITHS_HAMMER</Promotion>
-			</PromotionAdds>
-		</GoodyInfo>
-		<GoodyInfo>	<!-- Sideclaw Kamas	Bad Minor	-->
-			<Type>GOODY_TRICKY_DAGGER</Type>
-			<GoodyClasses>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_NATURE_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-			</GoodyClasses>
-			<iWeight>250</iWeight>
-			<Description>TXT_KEY_GOODY_TRICKY_DAGGER</Description>
-			<Sound>AS2D_GOODY_HOSTILE</Sound>
-			<iDestroyLairChance>40</iDestroyLairChance>
-			<PythonCallback>exploreLairNinjaFawn(pUnit,pPlot)</PythonCallback>
-			<bBad>1</bBad>
-		</GoodyInfo>
-		<GoodyInfo>	<!-- Casualty Axe	Good Minor	-->
-			<Type>GOODY_CASUALTY_AXE</Type>
-			<GoodyClasses>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_ORC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-			</GoodyClasses>
-			<iWeight>150</iWeight>
-			<Description>TXT_KEY_GOODY_CASUALTY_AXE</Description>
-			<Sound>AS2D_GOODY_GOLD</Sound>
-			<iDestroyLairChance>90</iDestroyLairChance>
-			<bBad>0</bBad>
-			<PromotionAdds>
-				<Promotion>PROMOTION_CASUALTY_AXE</Promotion>
-			</PromotionAdds>
-			<bUnique>1</bUnique>
-		</GoodyInfo>
-		<GoodyInfo>	<!-- Dragon Shield	Good Minor	-->
-			<Type>GOODY_SHIELD_DRAGON</Type>
-			<GoodyClasses>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_LIZARD_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-			</GoodyClasses>
-			<iWeight>150</iWeight>
-			<Description>TXT_KEY_GOODY_SHIELD_DRAGON</Description>
-			<Sound>AS2D_GOODY_GOLD</Sound>
-			<iDestroyLairChance>90</iDestroyLairChance>
-			<bBad>0</bBad>
-			<PromotionAdds>
-				<Promotion>PROMOTION_SHIELD_DRAGON</Promotion>
-			</PromotionAdds>
-		</GoodyInfo>
-		<GoodyInfo>	<!-- Icxth	Bad Minor	-->
-			<Type>GOODY_ICXTH</Type>
-			<GoodyClasses>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_FROSTLING_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-			</GoodyClasses>
-			<iWeight>250</iWeight>
-			<Description>TXT_KEY_GOODY_ICXTH</Description>
-			<Sound>AS2D_GOODY_HOSTILE</Sound>
-			<iDestroyLairChance>40</iDestroyLairChance>
-			<PythonCallback>exploreLairSluaghLord(pUnit,pPlot)</PythonCallback>
-			<bBad>1</bBad>
-			<bUnique>1</bUnique>
-		</GoodyInfo>
-		<GoodyInfo>	<!-- Dragonlord Cuirass	Good Minor	-->
-			<Type>GOODY_CUIRASS_DRAGON</Type>
-			<GoodyClasses>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-			</GoodyClasses>
-			<iWeight>250</iWeight>
-			<Description>TXT_KEY_GOODY_CUIRASS_DRAGON</Description>
-			<Sound>AS2D_GOODY_HOSTILE</Sound>
-			<iDestroyLairChance>90</iDestroyLairChance>
-			<bBad>1</bBad>
-			<PythonCallback>exploreLairSkeletonPatrian(pUnit,pPlot)</PythonCallback>
-		</GoodyInfo>
-		<GoodyInfo>	<!-- Pondering Hat	Good Minor	-->
-			<Type>GOODY_PONDER_HAT</Type>
-			<GoodyClasses>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-			</GoodyClasses>
-			<iWeight>150</iWeight>
-			<Description>TXT_KEY_GOODY_PONDER_HAT</Description>
-			<Sound>AS2D_GOODY_GOLD</Sound>
-			<iDestroyLairChance>90</iDestroyLairChance>
-			<bBad>0</bBad>
-			<PromotionAdds>
-				<Promotion>PROMOTION_PONDER_HAT</Promotion>
-			</PromotionAdds>
-		</GoodyInfo>
 		<GoodyInfo> <!--Urn Rotting Flesh		 Unique-->
 			<Type>GOODY_EXPLORE_LAIR_ITEM_URN_ROTTING_FLESH_4</Type>
 			<GoodyClasses>
@@ -1324,6 +1072,38 @@
 			<bAnyPromotion>1</bAnyPromotion>
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
+		</GoodyInfo>
+		<GoodyInfo>	<!-- Banana Field 	Thematic Results Living	Good Minor	-->
+			<Type>GOODY_BANANA_FIELD</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LIVING_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>100</iWeight>
+			<Description>TXT_KEY_GOODY_BANANA_FIELD</Description>
+			<Sound>AS2D_GOODY_GOLD</Sound>
+			<iDestroyLairChance>90</iDestroyLairChance>
+			<bBad>0</bBad>
+			<BonusType>BONUS_BANANA</BonusType>
+		</GoodyInfo>
+		<GoodyInfo>	<!-- Performer's Cloak		Good Minor	-->
+			<Type>GOODY_EVADE_CLOAK</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LIVING_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>150</iWeight>
+			<Description>TXT_KEY_GOODY_EVADE_CLOAK</Description>
+			<Sound>AS2D_GOODY_GOLD</Sound>
+			<iDestroyLairChance>90</iDestroyLairChance>
+			<bBad>0</bBad>
+			<PromotionAdds>
+				<Promotion>PROMOTION_EVADE_CLOAK</Promotion>
+			</PromotionAdds>
 		</GoodyInfo>
 		<GoodyInfo>	<!-- Rose Water Pool		Thematic Results Living		Bad  Minor  -->
 			<Type>GOODY_ROSE_WATER_POOL</Type>
@@ -1503,6 +1283,24 @@
 			<bBad>0</bBad>
 			<PythonCallback>exploreNewChieftain(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
+		<GoodyInfo>	<!-- Casualty Axe	Good Minor	-->
+			<Type>GOODY_CASUALTY_AXE</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_ORC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>150</iWeight>
+			<Description>TXT_KEY_GOODY_CASUALTY_AXE</Description>
+			<Sound>AS2D_GOODY_GOLD</Sound>
+			<iDestroyLairChance>90</iDestroyLairChance>
+			<bBad>0</bBad>
+			<PromotionAdds>
+				<Promotion>PROMOTION_CASUALTY_AXE</Promotion>
+			</PromotionAdds>
+			<bUnique>1</bUnique>
+		</GoodyInfo>
 		<GoodyInfo>	<!-- Unique Map -->
 			<Type>GOODY_UNIQUE_MAP</Type>
 			<GoodyClasses>
@@ -1665,6 +1463,21 @@
 				<Promotion>PROMOTION_ENRAGED</Promotion>
 			</PromotionAdds>
 			<bAnyPromotion>1</bAnyPromotion>
+			<bBad>1</bBad>
+		</GoodyInfo>
+		<GoodyInfo>	<!-- Spirit Sever	Bad Minor	-->
+			<Type>GOODY_SPIRIT_SEVER</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_SPIRIT_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>250</iWeight>
+			<Description>TXT_KEY_GOODY_SPIRIT_SEVER</Description>
+			<Sound>AS2D_GOODY_HOSTILE</Sound>
+			<iDestroyLairChance>40</iDestroyLairChance>
+			<PythonCallback>exploreLairScreamingPuppet(pUnit,pPlot)</PythonCallback>
 			<bBad>1</bBad>
 		</GoodyInfo>
 		<GoodyInfo> <!--Enervated-->
@@ -1840,6 +1653,23 @@
 			<PythonPrereq>reqSubterranBonusMinor</PythonPrereq>
 			<bBad>0</bBad>
 		</GoodyInfo>
+		<GoodyInfo>	<!--Discover the Grigori	 -->
+			<Type>GOODY_FREE_GRIGORI</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_SUBTERRAN_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>30</iWeight>
+			<Description>TXT_KEY_GOODY_FREED_GRIGORI</Description>
+			<Sound>AS2D_GOODY_SETTLER</Sound>
+			<iDestroyLairChance>100</iDestroyLairChance>
+			<bUnique>1</bUnique>
+			<bBad>0</bBad>
+			<PythonPrereq>reqLairFreeGrigori</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_GRIGORI','LEADER_CASSIEL')</PythonCallback>
+		</GoodyInfo>
 		<GoodyInfo>	<!-- Cave In			 Thematic Results Subterran		Bad  Minor -->
 			<Type>GOODY_CAVE_IN</Type>
 			<GoodyClasses>
@@ -2014,6 +1844,23 @@
 			<bBad>0</bBad>
 			<PythonCallback>exploreStolenSupplies(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
+		<GoodyInfo>	<!-- Cut Throat's Cloak		Good Minor	-->
+			<Type>GOODY_HIDDEN_CLOAK</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_BANDIT_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>150</iWeight>
+			<Description>TXT_KEY_GOODY_HIDDEN_CLOAK</Description>
+			<Sound>AS2D_GOODY_GOLD</Sound>
+			<iDestroyLairChance>90</iDestroyLairChance>
+			<bBad>0</bBad>
+			<PromotionAdds>
+				<Promotion>PROMOTION_HIDDEN_CLOAK</Promotion>
+			</PromotionAdds>
+		</GoodyInfo>
 		<GoodyInfo> <!--Urn Rotting Flesh		 Unique-->
 			<Type>GOODY_EXPLORE_LAIR_ITEM_URN_ROTTING_FLESH_3</Type>
 			<GoodyClasses>
@@ -2119,6 +1966,23 @@
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
 			<PythonCallback>exploreLairCannibalCentaur(pUnit,pPlot)</PythonCallback>
+		</GoodyInfo>
+		<GoodyInfo>	<!--Discover the Kuriotates	 -->
+			<Type>GOODY_FREE_KURIOTATES</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_CENTAUR_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>30</iWeight>
+			<Description>TXT_KEY_GOODY_FREED_KURIOTATES</Description>
+			<Sound>AS2D_GOODY_SETTLER</Sound>
+			<iDestroyLairChance>100</iDestroyLairChance>
+			<bUnique>1</bUnique>
+			<bBad>0</bBad>
+			<PythonPrereq>reqLairFreeKuriotate</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_KURIOTATES','LEADER_CARDITH')</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--CentaurAmbushEasy		Lair	 Results Centaur	Bad  Minor	  -->
 			<Type>GOODY_EXPLORE_LAIR_CENTAUR_AMBUSH_EASY</Type>
@@ -2252,6 +2116,24 @@
 			<bBad>0</bBad>
 			<PythonCallback>exploreLairFriendlyFrostling(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
+		<GoodyInfo>	<!-- Winter's Grasp		Good Minor	-->
+			<Type>GOODY_WINTERS_GRASP</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_FROSTLING_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>150</iWeight>
+			<Description>TXT_KEY_GOODY_WINTERS_GRASP</Description>
+			<Sound>AS2D_GOODY_GOLD</Sound>
+			<iDestroyLairChance>90</iDestroyLairChance>
+			<bBad>0</bBad>
+			<PromotionAdds>
+				<Promotion>PROMOTION_WINTER_GRASP</Promotion>
+			</PromotionAdds>
+			<bUnique>1</bUnique>
+		</GoodyInfo>
 		<GoodyInfo> <!--Snow-->	
 			<Type>GOODY_SNOW</Type>
 			<GoodyClasses>
@@ -2281,6 +2163,22 @@
 			<iDestroyLairChance>80</iDestroyLairChance>
 			<bBad>1</bBad>
 			<PythonCallback>exploreLairAngryFrostlingEasy(pUnit,pPlot)</PythonCallback>
+		</GoodyInfo>
+		<GoodyInfo>	<!-- Icxth	Bad Minor	-->
+			<Type>GOODY_ICXTH</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_FROSTLING_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>250</iWeight>
+			<Description>TXT_KEY_GOODY_ICXTH</Description>
+			<Sound>AS2D_GOODY_HOSTILE</Sound>
+			<iDestroyLairChance>40</iDestroyLairChance>
+			<PythonCallback>exploreLairSluaghLord(pUnit,pPlot)</PythonCallback>
+			<bBad>1</bBad>
+			<bUnique>1</bUnique>
 		</GoodyInfo>
 		<GoodyInfo> <!--Wintered -->	
 			<Type>GOODY_WINTERED</Type>
@@ -2491,6 +2389,23 @@
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
 			<PythonCallback>exploreLairWolf(pUnit,pPlot)</PythonCallback>
+		</GoodyInfo>
+		<GoodyInfo>	<!--Discover the Chislev	 -->
+			<Type>GOODY_FREE_CHISLEV</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_GOBLIN_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>30</iWeight>
+			<Description>TXT_KEY_GOODY_FREED_CHISLEV</Description>
+			<Sound>AS2D_GOODY_SCOUT</Sound>
+			<iDestroyLairChance>100</iDestroyLairChance>
+			<bUnique>1</bUnique>
+			<bBad>0</bBad>
+			<PythonPrereq>reqLairFreeChislev</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_CHISLEV','LEADER_CHISLEV')</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--GoblinAdept-->
 			<Type>GOODY_EXPLORE_GOBLIN_ADEPT</Type>
@@ -2772,6 +2687,42 @@
 			</PromotionAdds>
 			<bAnyPromotion>1</bAnyPromotion>
 		</GoodyInfo>
+		<GoodyInfo>	<!-- Dragon Shield	Good Minor	-->
+			<Type>GOODY_SHIELD_DRAGON</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LIZARD_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>150</iWeight>
+			<Description>TXT_KEY_GOODY_SHIELD_DRAGON</Description>
+			<Sound>AS2D_GOODY_GOLD</Sound>
+			<iDestroyLairChance>90</iDestroyLairChance>
+			<bBad>0</bBad>
+			<PromotionAdds>
+				<Promotion>PROMOTION_SHIELD_DRAGON</Promotion>
+			</PromotionAdds>
+		</GoodyInfo>
+		<GoodyInfo>	<!-- Herambo's BananaScythe		Good Minor	-->
+			<Type>GOODY_BANANA_SCYTHE</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LIZARD_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>100</iWeight>
+			<bUnique>1</bUnique>
+			<Description>TXT_KEY_GOODY_BANANA_SCYTHE</Description>
+			<Sound>AS2D_GOODY_GOLD</Sound>
+			<iDestroyLairChance>90</iDestroyLairChance>
+			<bBad>0</bBad>
+			<PromotionAdds>
+				<Promotion>PROMOTION_BANANA_SCYTHE</Promotion>
+			</PromotionAdds>
+			<BonusType>BONUS_BANANA</BonusType>
+		</GoodyInfo>
 		<GoodyInfo>	<!-- Lizardmen Booze -->
 			<Type>GOODY_LIZARDMEN_BOOZE</Type>
 			<GoodyClasses>
@@ -2807,6 +2758,23 @@
 			<BarbarianCivilization>CIVILIZATION_ORC</BarbarianCivilization>
 			<iBarbarianUnitProb>30</iBarbarianUnitProb>
 			<iMinBarbarians>1</iMinBarbarians>
+		</GoodyInfo>
+		<GoodyInfo>	<!--Discover the Cualli	 -->
+			<Type>GOODY_FREE_CUALLI</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LIZARD_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>30</iWeight>
+			<Description>TXT_KEY_GOODY_FREED_CUALLI</Description>
+			<Sound>AS2D_GOODY_HOSTILE</Sound>
+			<iDestroyLairChance>100</iDestroyLairChance>
+			<bUnique>1</bUnique>
+			<bBad>1</bBad>
+			<PythonPrereq>reqLairFreeCualli</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_CUALLI','LEADER_KOLSEHVAHN')</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--Blowpipe-->
 			<Type>GOODY_EXPLORE_LAIR_SPAWN_BLOWPIPE</Type>
@@ -2940,6 +2908,89 @@
 				<Promotion>PROMOTION_ENCHANTED_BLADE</Promotion>
 			</PromotionAdds>
 			<bBad>0</bBad>
+		</GoodyInfo>
+		<GoodyInfo>	<!-- Elementals Bane Conjurers		Good Minor	-->
+			<Type>GOODY_BANESWORD_ELEMENTAL</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>150</iWeight>
+			<Description>TXT_KEY_GOODY_BANESWORD_ELEMENTAL</Description>
+			<Sound>AS2D_GOODY_GOLD</Sound>
+			<iDestroyLairChance>90</iDestroyLairChance>
+			<bBad>0</bBad>
+			<PromotionAdds>
+				<Promotion>PROMOTION_BANESWORD_ELEMENTAL</Promotion>
+			</PromotionAdds>
+		</GoodyInfo>
+		<GoodyInfo>	<!-- Guiding Light Lantern		Good Minor	-->
+			<Type>GOODY_GUIDING_LIGHT_LANTERN</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>150</iWeight>
+			<Description>TXT_KEY_GOODY_GUIDING_LIGHT_LANTERN</Description>
+			<Sound>AS2D_GOODY_GOLD</Sound>
+			<iDestroyLairChance>90</iDestroyLairChance>
+			<bBad>0</bBad>
+			<PromotionAdds>
+				<Promotion>PROMOTION_GUIDE_LANTERN</Promotion>
+			</PromotionAdds>
+		</GoodyInfo>
+		<GoodyInfo>	<!-- Dragonlord Cuirass	Good Minor	-->
+			<Type>GOODY_CUIRASS_DRAGON</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>250</iWeight>
+			<Description>TXT_KEY_GOODY_CUIRASS_DRAGON</Description>
+			<Sound>AS2D_GOODY_HOSTILE</Sound>
+			<iDestroyLairChance>90</iDestroyLairChance>
+			<bBad>1</bBad>
+			<PythonCallback>exploreLairSkeletonPatrian(pUnit,pPlot)</PythonCallback>
+		</GoodyInfo>
+		<GoodyInfo>	<!-- Pondering Hat	Good Minor	-->
+			<Type>GOODY_PONDER_HAT</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>150</iWeight>
+			<Description>TXT_KEY_GOODY_PONDER_HAT</Description>
+			<Sound>AS2D_GOODY_GOLD</Sound>
+			<iDestroyLairChance>90</iDestroyLairChance>
+			<bBad>0</bBad>
+			<PromotionAdds>
+				<Promotion>PROMOTION_PONDER_HAT</Promotion>
+			</PromotionAdds>
+		</GoodyInfo>
+		<GoodyInfo>	<!-- Discover the Amurites	 -->
+			<Type>GOODY_FREE_AMURITES</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>30</iWeight>
+			<Description>TXT_KEY_GOODY_FREED_AMURITE</Description>
+			<Sound>AS2D_GOODY_SCOUT</Sound>
+			<iDestroyLairChance>100</iDestroyLairChance>
+			<bUnique>1</bUnique>
+			<bBad>0</bBad>
+			<PythonPrereq>reqLairFreeAmurites</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_AMURITES','LEADER_DAIN')</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--SpellStaff-->
 			<Type>GOODY_MARNOK_SPELLSTAFF</Type>
@@ -3714,6 +3765,40 @@
 			<iDestroyLairChance>80</iDestroyLairChance>
 			<bBad>0</bBad>
 			<PythonCallback>exploreLairVitalize(pUnit,pPlot)</PythonCallback>
+		</GoodyInfo>
+		<GoodyInfo>	<!-- Sideclaw Kamas	Bad Minor	-->
+			<Type>GOODY_TRICKY_DAGGER</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_NATURE_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>250</iWeight>
+			<Description>TXT_KEY_GOODY_TRICKY_DAGGER</Description>
+			<Sound>AS2D_GOODY_HOSTILE</Sound>
+			<iDestroyLairChance>40</iDestroyLairChance>
+			<PythonCallback>exploreLairNinjaFawn(pUnit,pPlot)</PythonCallback>
+			<bBad>1</bBad>
+		</GoodyInfo>
+		<GoodyInfo>	<!-- Grognar's Hunt		Good Minor	-->
+			<Type>GOODY_GROGNAR_HAMMER</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_NATURE_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>150</iWeight>
+			<bUnique>1</bUnique>
+			<Description>TXT_KEY_GOODY_GROGNARS_HUNT</Description>
+			<Sound>AS2D_GOODY_GOLD</Sound>
+			<iDestroyLairChance>90</iDestroyLairChance>
+			<bBad>0</bBad>
+			<PromotionAdds>
+				<Promotion>PROMOTION_GROGNAR_HAMMER</Promotion>
+			</PromotionAdds>
+			<BonusType>BONUS_FUR</BonusType>
 		</GoodyInfo>
 		<GoodyInfo> <!--Random Blood-->
 			<Type>GOODY_EXPLORE_LAIR_ANIMAL_BLOOD</Type>
@@ -4698,6 +4783,23 @@
 			</PromotionAdds>
 			<bBad>0</bBad>
 		</GoodyInfo>
+		<GoodyInfo>	<!-- Boots of Waterwalking		Good Minor	-->
+			<Type>GOODY_WATER_BOOTS</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_WATER_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>150</iWeight>
+			<Description>TXT_KEY_GOODY_WATER_BOOTS</Description>
+			<Sound>AS2D_GOODY_GOLD</Sound>
+			<iDestroyLairChance>90</iDestroyLairChance>
+			<bBad>0</bBad>
+			<PromotionAdds>
+				<Promotion>PROMOTION_WATER_BOOTS</Promotion>
+			</PromotionAdds>
+		</GoodyInfo>
 		<GoodyInfo>	<!-- Trade Ship -->
 			<Type>GOODY_TRADE_SHIP</Type>
 			<GoodyClasses>
@@ -5492,6 +5594,23 @@
 			<PythonCallback>exploreLairVelgyrKnight2(pUnit,pPlot)</PythonCallback>
 			<PrereqEra>ERA_CLASSICAL</PrereqEra>
 		</GoodyInfo>
+		<GoodyInfo>	<!--Discover the Mechanos	 -->
+			<Type>GOODY_FREE_MECHANOS</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_CLOCKWORK</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>30</iWeight>
+			<Description>TXT_KEY_GOODY_FREED_MECHANOS</Description>
+			<Sound>AS2D_GOODY_SETTLER</Sound>
+			<iDestroyLairChance>100</iDestroyLairChance>
+			<bUnique>1</bUnique>
+			<bBad>0</bBad>
+			<PythonPrereq>reqLairFreeMechanos</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_MECHANOS','LEADER_MAER')</PythonCallback>
+		</GoodyInfo>
 		<GoodyInfo>	<!--ClockWork Dragon Unique ULair	 Results ClockWork  Bad   	      -->
 			<Type>GOODY_CLOCKWORK_DRAGON</Type>
 			<GoodyClasses>
@@ -5563,52 +5682,18 @@
 			<Type>GOODY_FREE_ILLIANS</Type>
 			<GoodyClasses>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_LETUM</GoodyClassType>
+					<GoodyClassType>GOODYCLASS_ILLIANS</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
 			<iWeight>30</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_ILLIANS</Description>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
-			<iDestroyLairChance>0</iDestroyLairChance>
+			<iDestroyLairChance>100</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>1</bBad>
 			<PythonPrereq>reqLairFreeIllians</PythonPrereq>
 			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_ILLIANS','LEADER_AURIC')</PythonCallback>
-		</GoodyInfo>
-		<GoodyInfo>	<!-- Discover the Amurites	 -->
-			<Type>GOODY_FREE_AMURITES</Type>
-			<GoodyClasses>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_MAGIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-			</GoodyClasses>
-			<iWeight>30</iWeight>
-			<Description>TXT_KEY_GOODY_FREED_AMURITE</Description>
-			<Sound>AS2D_GOODY_SCOUT</Sound>
-			<iDestroyLairChance>0</iDestroyLairChance>
-			<bUnique>1</bUnique>
-			<bBad>0</bBad>
-			<PythonPrereq>reqLairFreeAmurites</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_AMURITES','LEADER_DAIN')</PythonCallback>
-		</GoodyInfo>
-		<GoodyInfo>	<!--Discover the Austrin	 -->
-			<Type>GOODY_FREE_AUSTRIN</Type>
-			<GoodyClasses>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_GENERIC_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-			</GoodyClasses>
-			<iWeight>10</iWeight>
-			<Description>TXT_KEY_GOODY_FREED_AUSTRIN</Description>
-			<Sound>AS2D_GOODY_MAP</Sound>
-			<iDestroyLairChance>0</iDestroyLairChance>
-			<bUnique>1</bUnique>
-			<bBad>0</bBad>
-			<PythonPrereq>reqLairFreeAustrin</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_AUSTRIN','LEADER_DEIRDRA')</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo>	<!--Discover the Balseraph	 -->
 			<Type>GOODY_FREE_BALSERAPH</Type>
@@ -5621,7 +5706,7 @@
 			<iWeight>30</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_BALSERAPH</Description>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
-			<iDestroyLairChance>0</iDestroyLairChance>
+			<iDestroyLairChance>100</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>1</bBad>
 			<PythonPrereq>reqLairFreeBalseraph</PythonPrereq>
@@ -5631,82 +5716,31 @@
 			<Type>GOODY_FREE_CALABIM</Type>
 			<GoodyClasses>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_BANDIT_MINOR</GoodyClassType>
+					<GoodyClassType>GOODYCLASS_VAMPIRES</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
 			<iWeight>30</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_CALABIM</Description>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
-			<iDestroyLairChance>0</iDestroyLairChance>
+			<iDestroyLairChance>100</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>1</bBad>
 			<PythonPrereq>reqLairFreeCalabim</PythonPrereq>
 			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_CALABIM','LEADER_ALEXIS')</PythonCallback>
 		</GoodyInfo>
-		<GoodyInfo>	<!--Discover the Chislev	 -->
-			<Type>GOODY_FREE_CHISLEV</Type>
-			<GoodyClasses>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_GOBLIN_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-			</GoodyClasses>
-			<iWeight>30</iWeight>
-			<Description>TXT_KEY_GOODY_FREED_CHISLEV</Description>
-			<Sound>AS2D_GOODY_SCOUT</Sound>
-			<iDestroyLairChance>0</iDestroyLairChance>
-			<bUnique>1</bUnique>
-			<bBad>0</bBad>
-			<PythonPrereq>reqLairFreeChislev</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_CHISLEV','LEADER_CHISLEV')</PythonCallback>
-		</GoodyInfo>
-		<GoodyInfo>	<!--Discover the Cualli	 -->
-			<Type>GOODY_FREE_CUALLI</Type>
-			<GoodyClasses>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_LIZARD_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-			</GoodyClasses>
-			<iWeight>30</iWeight>
-			<Description>TXT_KEY_GOODY_FREED_CUALLI</Description>
-			<Sound>AS2D_GOODY_HOSTILE</Sound>
-			<iDestroyLairChance>0</iDestroyLairChance>
-			<bUnique>1</bUnique>
-			<bBad>1</bBad>
-			<PythonPrereq>reqLairFreeCualli</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_CUALLI','LEADER_KOLSEHVAHN')</PythonCallback>
-		</GoodyInfo>
-		<GoodyInfo>	<!--Discover the Grigori	 -->
-			<Type>GOODY_FREE_GRIGORI</Type>
-			<GoodyClasses>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_SUBTERRAN_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-			</GoodyClasses>
-			<iWeight>30</iWeight>
-			<Description>TXT_KEY_GOODY_FREED_GRIGORI</Description>
-			<Sound>AS2D_GOODY_SETTLER</Sound>
-			<iDestroyLairChance>0</iDestroyLairChance>
-			<bUnique>1</bUnique>
-			<bBad>0</bBad>
-			<PythonPrereq>reqLairFreeGrigori</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_GRIGORI','LEADER_CASSIEL')</PythonCallback>
-		</GoodyInfo>
 		<GoodyInfo>	<!--Discover the Hippus	 -->
 			<Type>GOODY_FREE_HIPPUS</Type>
 			<GoodyClasses>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_BANDIT_MINOR</GoodyClassType>
+					<GoodyClassType>GOODYCLASS_HORSELORDS</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
 			<iWeight>30</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_HIPPUS</Description>
 			<Sound>AS2D_GOODY_SCOUT</Sound>
-			<iDestroyLairChance>0</iDestroyLairChance>
+			<iDestroyLairChance>100</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
 			<PythonPrereq>reqLairFreeHippus</PythonPrereq>
@@ -5716,48 +5750,31 @@
 			<Type>GOODY_FREE_KHAZAD</Type>
 			<GoodyClasses>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_SUBTERRAN_MINOR</GoodyClassType>
+					<GoodyClassType>GOODYCLASS_DWARVES</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
 			<iWeight>30</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_KHAZAD</Description>
 			<Sound>AS2D_GOODY_GOLD</Sound>
-			<iDestroyLairChance>0</iDestroyLairChance>
+			<iDestroyLairChance>100</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
 			<PythonPrereq>reqLairFreeKhazad</PythonPrereq>
 			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_KHAZAD','LEADER_ARTURUS')</PythonCallback>
 		</GoodyInfo>
-		<GoodyInfo>	<!--Discover the Kuriotates	 -->
-			<Type>GOODY_FREE_KURIOTATES</Type>
-			<GoodyClasses>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_CENTAUR_MINOR</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-			</GoodyClasses>
-			<iWeight>30</iWeight>
-			<Description>TXT_KEY_GOODY_FREED_KURIOTATES</Description>
-			<Sound>AS2D_GOODY_SETTLER</Sound>
-			<iDestroyLairChance>0</iDestroyLairChance>
-			<bUnique>1</bUnique>
-			<bBad>0</bBad>
-			<PythonPrereq>reqLairFreeKuriotate</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_KURIOTATES','LEADER_CARDITH')</PythonCallback>
-		</GoodyInfo>
 		<GoodyInfo>	<!--Discover the Lanun	 -->
 			<Type>GOODY_FREE_LANUN</Type>
 			<GoodyClasses>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_WATER_MINOR</GoodyClassType>
+					<GoodyClassType>GOODYCLASS_PIRATES</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
 			<iWeight>30</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_LANUN</Description>
 			<Sound>AS2D_GOODY_GOLD</Sound>
-			<iDestroyLairChance>0</iDestroyLairChance>
+			<iDestroyLairChance>100</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
 			<PythonPrereq>reqLairFreeLanun</PythonPrereq>
@@ -5767,14 +5784,14 @@
 			<Type>GOODY_FREE_THE_LEGION</Type>
 			<GoodyClasses>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_SEPULCHER</GoodyClassType>
+					<GoodyClassType>GOODYCLASS_LEGION</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
 			<iWeight>30</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_LEGION</Description>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
-			<iDestroyLairChance>0</iDestroyLairChance>
+			<iDestroyLairChance>100</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
 			<PythonPrereq>reqLairFreeLegion</PythonPrereq>
@@ -5784,14 +5801,14 @@
 			<Type>GOODY_FREE_LJOSALFAR</Type>
 			<GoodyClasses>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_NATURE_MINOR</GoodyClassType>
+					<GoodyClassType>GOODYCLASS_SUMMER_COURT</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
 			<iWeight>30</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_LJOSALFER</Description>
 			<Sound>AS2D_GOODY_SCOUT</Sound>
-			<iDestroyLairChance>0</iDestroyLairChance>
+			<iDestroyLairChance>100</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
 			<PythonPrereq>reqLairFreeLjosalfar</PythonPrereq>
@@ -5801,14 +5818,14 @@
 			<Type>GOODY_FREE_LUCHUIRP</Type>
 			<GoodyClasses>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_SUBTERRAN_MINOR</GoodyClassType>
+					<GoodyClassType>GOODYCLASS_DWARVES</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
 			<iWeight>30</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_LUCHUIRP</Description>
 			<Sound>AS2D_GOODY_WORKER</Sound>
-			<iDestroyLairChance>0</iDestroyLairChance>
+			<iDestroyLairChance>100</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
 			<PythonPrereq>reqLairFreeLuchuirp</PythonPrereq>
@@ -5825,41 +5842,24 @@
 			<iWeight>30</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_MAZATL</Description>
 			<Sound>AS2D_GOODY_WORKER</Sound>
-			<iDestroyLairChance>0</iDestroyLairChance>
+			<iDestroyLairChance>100</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
 			<PythonPrereq>reqLairFreeMazatl</PythonPrereq>
 			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_MAZATL','LEADER_MAZATL')</PythonCallback>
 		</GoodyInfo>
-		<GoodyInfo>	<!--Discover the Mechanos	 -->
-			<Type>GOODY_FREE_MECHANOS</Type>
-			<GoodyClasses>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_CLOCKWORK</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-			</GoodyClasses>
-			<iWeight>30</iWeight>
-			<Description>TXT_KEY_GOODY_FREED_MECHANOS</Description>
-			<Sound>AS2D_GOODY_SETTLER</Sound>
-			<iDestroyLairChance>0</iDestroyLairChance>
-			<bUnique>1</bUnique>
-			<bBad>0</bBad>
-			<PythonPrereq>reqLairFreeMechanos</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_MECHANOS','LEADER_MAER')</PythonCallback>
-		</GoodyInfo>
 		<GoodyInfo>	<!--Discover the Mekara	 -->
 			<Type>GOODY_FREE_MEKARA</Type>
 			<GoodyClasses>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_BANDIT_MINOR</GoodyClassType>
+					<GoodyClassType>GOODYCLASS_DEPRAVED</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
 			<iWeight>30</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_MEKARA</Description>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
-			<iDestroyLairChance>0</iDestroyLairChance>
+			<iDestroyLairChance>100</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>1</bBad>
 			<PythonPrereq>reqLairFreeMekara</PythonPrereq>
@@ -5869,14 +5869,14 @@
 			<Type>GOODY_FREE_SCIONS</Type>
 			<GoodyClasses>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_SUBTERRAN_MINOR</GoodyClassType>
+					<GoodyClassType>GOODYCLASS_FALSE_PATRIA</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
 			<iWeight>30</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_SCIONS</Description>
 			<Sound>AS2D_GOODY_HEAL</Sound>
-			<iDestroyLairChance>0</iDestroyLairChance>
+			<iDestroyLairChance>100</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
 			<PythonPrereq>reqLairFreeScions</PythonPrereq>
@@ -5886,14 +5886,14 @@
 			<Type>GOODY_FREE_SHEAIM</Type>
 			<GoodyClasses>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_BAIR</GoodyClassType>
+					<GoodyClassType>GOODYCLASS_WORLDENDERS</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
 			<iWeight>30</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_SHEAIM</Description>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
-			<iDestroyLairChance>0</iDestroyLairChance>
+			<iDestroyLairChance>100</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>1</bBad>
 			<PythonPrereq>reqLairFreeSheaim</PythonPrereq>
@@ -5903,14 +5903,14 @@
 			<Type>GOODY_FREE_SIDAR</Type>
 			<GoodyClasses>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_SPIRIT_MINOR</GoodyClassType>
+					<GoodyClassType>GOODYCLASS_FADED</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
 			<iWeight>30</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_SIDAR</Description>
 			<Sound>AS2D_GOODY_SCOUT</Sound>
-			<iDestroyLairChance>0</iDestroyLairChance>
+			<iDestroyLairChance>100</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>0</bBad>
 			<PythonPrereq>reqLairFreeSidar</PythonPrereq>
@@ -5920,14 +5920,14 @@
 			<Type>GOODY_FREE_SVARTALFER</Type>
 			<GoodyClasses>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_NATURE_MINOR</GoodyClassType>
+					<GoodyClassType>GOODYCLASS_SUMMER_COURT</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
 			<iWeight>30</iWeight>
 			<Description>TXT_KEY_GOODY_FREED_SVARTALFER</Description>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
-			<iDestroyLairChance>0</iDestroyLairChance>
+			<iDestroyLairChance>100</iDestroyLairChance>
 			<bUnique>1</bUnique>
 			<bBad>1</bBad>
 			<PythonPrereq>reqLairFreeSvartalfer</PythonPrereq>

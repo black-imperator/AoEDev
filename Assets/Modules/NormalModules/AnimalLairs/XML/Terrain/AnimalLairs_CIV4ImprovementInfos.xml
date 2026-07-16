@@ -447,6 +447,10 @@
 					<GoodyClassType>GOODYCLASS_NATURE_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_DESERT_NOMADS</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
 			</GoodyClasses>
 			<LairCreationWeightTechs>
 				<LairCreationWeightTech>
@@ -519,6 +523,10 @@
 				</GoodyClass>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_NATURE_MODERATE</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_DESERT_NOMADS</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
@@ -603,6 +611,10 @@
 					<GoodyClassType>GOODYCLASS_NATURE_MAJOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_DESERT_NOMADS</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
 			</GoodyClasses>
 			<LairCreationWeightTechs>
 				<LairCreationWeightTech>
@@ -668,6 +680,10 @@
 				</GoodyClass>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_NATURE_MINOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_SPIDERS</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
@@ -750,6 +766,10 @@
 				</GoodyClass>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_NATURE_MODERATE</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_SPIDERS</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
@@ -840,6 +860,10 @@
 				</GoodyClass>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_NATURE_MAJOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_SPIDERS</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
@@ -1142,6 +1166,10 @@
 					<GoodyClassType>GOODYCLASS_NATURE_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_DESERT_NOMADS</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
 			</GoodyClasses>
 			<!-- Not entirely sure I know the justification for choosing these techs, but look I'm just trying to spread things out a little, mmk -->
 			<LairCreationWeightTechs>
@@ -1204,6 +1232,10 @@
 				</GoodyClass>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_NATURE_MODERATE</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_DESERT_NOMADS</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
@@ -1275,6 +1307,10 @@
 				</GoodyClass>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_NATURE_MAJOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_DESERT_NOMADS</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
