@@ -9929,7 +9929,15 @@ void CvGameTextMgr::parseLeaderTraits(CvWStringBuffer &szHelpString, LeaderHeadT
 			}
 		}
 //FfH: End Add
+		for (int iI = 0; iI < GC.getNumReligionInfos(); iI++)
+		{
+			if (GC.getLeaderHeadInfo(eLeader).getReligionWeightModifier(iI) == -100)
+			{
+				szHelpString.append(NEWLINE);
+				szHelpString.append(gDLL->getText("TXT_KEY_LEADER_CANNOT_DO_RELIGION", GC.getReligionInfo((ReligionTypes)iI).getDescription()));
 
+			}
+		}
 		bool bFirst = true;
 		for (int iI = 0; iI < GC.getNumTraitInfos(); ++iI)
 		{

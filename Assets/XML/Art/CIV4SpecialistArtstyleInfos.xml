@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Firaxis Games (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Civilization art path information -->
+<Civ4SpecialistArtstyleInfos xmlns="x-schema:CIV4ArtDefinesSchema.xml">
+	<SpecialistArtstyleInfos>
+		<SpecialistArtstyleInfo>
+			<Type>ART_DEF_SPECIALIST_BARD_DWARF</Type>
+			<Button>Art/civs/civspecialists/dwarves/bard.dds</Button>
+			<Path>Art/civs/civspecialists/dwarves/bard.dds</Path>
+		</SpecialistArtstyleInfo>
+	</SpecialistArtstyleInfos>
+</Civ4SpecialistArtstyleInfos>

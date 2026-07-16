@@ -910,6 +910,7 @@ bool CvXMLLoadUtility::LoadPreMenuGlobals()
 
 	// ModuleId Start
 	LoadGlobalClassInfo(GC.getModuleIdInfo(), "CIV4ModuleIdInfos", "GameInfo", "Civ4ModuleIdInfos/ModuleIdInfos/ModuleIdInfo", false);
+	LoadGlobalClassInfo(GC.getSpecialistArtstyleInfo(), "CIV4SpecialistArtstyleInfos", "Art", "Civ4SpecialistArtstyleInfos/SpecialistArtstyleInfos/SpecialistArtstyleInfo", false);
 	LoadGlobalClassInfo(GC.getGameSpeedInfo(), "CIV4GameSpeedInfo", "GameInfo", "Civ4GameSpeedInfo/GameSpeedInfos/GameSpeedInfo", false);
 	LoadGlobalClassInfo(GC.getTurnTimerInfo(), "CIV4TurnTimerInfo", "GameInfo", "Civ4TurnTimerInfo/TurnTimerInfos/TurnTimerInfo", false);
 	LoadGlobalClassInfo(GC.getWorldInfo(), "CIV4WorldInfo", "GameInfo", "Civ4WorldInfo/WorldInfos/WorldInfo", false);

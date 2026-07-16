@@ -2704,6 +2704,24 @@ CvSpecialistClassInfo& CvGlobals::getSpecialistClassInfo(SpecialistClassTypes eS
 	return *(m_paSpecialistClassInfo[eSpecialistClassNum]);
 }
 
+int CvGlobals::getNumSpecialistArtstyleInfos()
+{
+	return (int)m_paSpecialistArtstyleInfo.size();
+}
+
+std::vector<CvSpecialistArtstyleInfo*>& CvGlobals::getSpecialistArtstyleInfo()	// For Moose - XML Load Util, CvInfos
+{
+	return m_paSpecialistArtstyleInfo;
+}
+
+CvSpecialistArtstyleInfo& CvGlobals::getSpecialistArtstyleInfo(SpecialistArtstyleTypes eSpecialistClassNum)
+{
+	FAssert(eSpecialistClassNum > -1);
+	FAssert(eSpecialistClassNum < GC.getNumSpecialistArtstyleInfos());
+	return *(m_paSpecialistArtstyleInfo[eSpecialistClassNum]);
+}
+
+
 int CvGlobals::getNumSpecialistInfos()
 {
 	return (int)m_paSpecialistInfo.size();

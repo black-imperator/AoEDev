@@ -2028,6 +2028,10 @@ enum SpecialistClassTypes
 {
 	NO_SPECIALISTCLASS = -1,
 };
+enum SpecialistArtstyleTypes
+{
+	NO_SPECIALISTARTSTYLE = -1,
+};
 
 enum SpecialistTypes			// Exposed to Python
 {

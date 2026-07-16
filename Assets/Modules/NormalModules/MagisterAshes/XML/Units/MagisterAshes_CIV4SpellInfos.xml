@@ -31,7 +31,7 @@
 			<TechPrereq>TECH_MALEVOLENT_DESIGNS</TechPrereq>
 			<PromotionPrereq1>PROMOTION_SUNDERED</PromotionPrereq1>
 			<PromotionPrereq2>PROMOTION_BONE_CIRCLET</PromotionPrereq2>
-						<RemovePromotions>
+			<RemovePromotions>
 				<RemovePromotion>PROMOTION_BONE_CIRCLET</RemovePromotion>
 			</RemovePromotions>
 			<UnitInStackPrereq>UNIT_GOAT_2</UnitInStackPrereq>

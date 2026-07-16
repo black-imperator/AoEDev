@@ -10218,6 +10218,7 @@ def perTurnUrorBand(pCaster):
 		pCaster.kill(True,0)
 
 def perTurnApophis(pCaster):
+	pPlot = pCaster.plot()
 	pPlayer = gc.getPlayer(pCaster.getOwner())
 	for id in range(gc.getNumPromotionInfos()):
 		if pCaster.isHasPromotion(id) and gc.getPromotionInfo(id).isEquipment():
@@ -10230,8 +10231,12 @@ def perTurnApophis(pCaster):
 				pCaster.setName(CyTranslator().getText("TXT_KEY_UNIT_GOAT_2", ()))
 				CyInterface().addMessage(pCaster.getOwner(),True,25,CyTranslator().getText("TXT_KEY_MESSAGE_APOPHIS_REVEALED", ()),'',1,'Art/Interface/Buttons/Units/Goat.dds',ColorTypes(8),pCaster.getX(),pCaster.getY(),True,True)
 				pCaster.setHasPromotion(getInfoType('PROMOTION_APOPHIS'),True)
-
-					
+			if id == getInfoType("PROMOTION_BONE_CIRCLET"):
+				iUnit = getInfoType('UNIT_APOPHIS')
+				pCaster.changeImmortal(-100)
+				pCaster.kill()
+				newUnit = pPlayer.initUnit(iUnit, pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+				
 def spellHauntedBreath(pCaster):
 	getPlot		= CyMap().plot
 	pCaster.changeStrBoost(1)

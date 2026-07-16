@@ -111,6 +111,12 @@
 					<UnitType>UNIT_APPRENTICE</UnitType>
 				</Unit>
 			</Units>
+			<SpecialistArtstyles>
+				<SpecialistArtstyle>
+					<SpecialistClassType>SPECIALISTCLASS_ARTIST</SpecialistClassType>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_BARD_DWARF</SpecialistArtTag>
+				</SpecialistArtstyle>
+			</SpecialistArtstyles>
 			<FreeUnitClasses>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>

@@ -92,6 +92,7 @@ public:
 	CvVoteInfo* getVoteInfo(int i) const;
 	CvProcessInfo* getProcessInfo(int i) const;
 	CvSpecialistClassInfo* getSpecialistClassInfo(int i) const;
+	CvSpecialistArtstyleInfo* getSpecialistArtstyleInfo(int i) const;
 	CvSpecialistInfo* getSpecialistInfo(int i) const;
 	CvSpawnGroupInfo* getSpawnGroupInfo(int i) const;
 	CvAffinityInfo* getAffinityInfo(int i) const;
@@ -260,6 +261,7 @@ public:
 	int getNumTechInfos() const { return GC.getNumTechInfos(); }
 	int getNumReligionInfos() const { return GC.getNumReligionInfos(); }
 	int getNumCorporationInfos() const { return GC.getNumCorporationInfos(); }
+	int getNumSpecialistArtstyleInfos() const { return GC.getNumSpecialistArtstyleInfos(); }
 	int getNumSpecialistClassInfos() const { return GC.getNumSpecialistClassInfos(); }
 	int getNumSpecialistInfos() const { return GC.getNumSpecialistInfos(); }
 	int getNumSpawnGroupInfos() const { return GC.getNumSpawnGroupInfos(); }

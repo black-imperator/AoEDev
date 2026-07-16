@@ -1743,7 +1743,7 @@ class CustomFunctions:
 			for i in xrange(pClearPlot.getNumUnits()):
 				pUnit = pClearPlot.getUnit(i)
 				if pUnit.isBarbarian() and not gc.getUnitClassInfo(pUnit.getUnitClassType()).isUnique():
-					pUnit.kill()
+					pUnit.kill(False,-1)
 		# Spawning Civilization
 		CyGame().addPlayerAdvanced(iInfernalPlayer, -1, iLeader, self.Civilizations["Infernal"], iPlayer)
 		iFounderTeam	= gc.getPlayer(iPlayer).getTeam()
@@ -2703,7 +2703,7 @@ class CustomFunctions:
 			if not bChanneling3:	continue
 			iSphere3	= gc.getPromotionInfo(iSphere2).getPromotionNextLevel()
 			pUnit.setHasPromotion(iSphere3, True)
-
+			
 	### TODO: Dictionaries
 	def unitCreatedAspect(self, pUnit):
 		if CyGame().getSorenRandNum(100, "Aspect") >= 5:	return

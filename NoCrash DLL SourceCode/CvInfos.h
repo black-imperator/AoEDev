@@ -343,6 +343,28 @@ protected:
 	bool m_bUnique;
 };
 
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//
+//  class : CvSpecialistArtstyleInfo
+//
+//  DESC:
+//
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+class CvSpecialistArtstyleInfo :
+	public CvHotkeyInfo
+{
+	//---------------------------------------PUBLIC INTERFACE---------------------------------
+public:
+
+	CvSpecialistArtstyleInfo();
+	virtual ~CvSpecialistArtstyleInfo();
+	bool read(CvXMLLoadUtility* pXML);
+
+	//---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
+protected:
+};
+
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //
 //  class : CvSpecialistInfo
@@ -5597,6 +5619,7 @@ public:
 	DllExport CvString getCivilizationBuildingArtDefines(int i) const;				// Exposed to Python
 	DllExport int getCivilizationBuildings(int i) const;				// Exposed to Python
 	DllExport int getCivilizationSpecialists(int i) const;				// Exposed to Python
+	DllExport int getSpecialistArtstyle(int i) const;				// Exposed to Python
 	DllExport int getCivilizationImprovements(int i) const;				// Exposed to Python
 	DllExport int getCivilizationUnits(int i) const;				// Exposed to Python
 	DllExport int getCivilizationFreeUnitsClass(int i) const;				// Exposed to Python
@@ -5681,6 +5704,7 @@ protected:
 	CvString* m_piCivilizationBuildingArtDefines;
 	int* m_piCivilizationBuildings;
 	int* m_piCivilizationSpecialists;
+	int* m_piSpecialistArtstyles;
 	int* m_piCivilizationImprovements;
 	int* m_piCivilizationUnits;
 	int* m_piCivilizationFreeUnitsClass;

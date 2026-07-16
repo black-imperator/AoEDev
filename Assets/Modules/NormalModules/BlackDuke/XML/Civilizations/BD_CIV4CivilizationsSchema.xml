@@ -854,6 +854,14 @@
 	<ElementType name="Specialists" content="eltOnly">
 		<element type="Specialist" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
+	<ElementType name="SpecialistArtTag" content="textOnly"/>
+	<ElementType name="SpecialistArtstyle" content="eltOnly">
+		<element type="SpecialistClassType"/>
+		<element type="SpecialistArtTag"/>
+	</ElementType>
+	<ElementType name="SpecialistArtstyles" content="eltOnly">
+		<element type="SpecialistArtstyle" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
 	<ElementType name="iFreeUnits" content="textOnly" dt:type="int"/>
 	<ElementType name="FreeUnitClass" content="eltOnly">
 		<element type="UnitClassType"/>
@@ -991,6 +999,7 @@
 		<element type="Buildings"/>
 		<element type="Units"/>
 		<element type="Specialists"/>
+		<element type="SpecialistArtstyles"/>
 		<element type="Improvements"/>
 		<element type="FreeUnitClasses"/>
 		<element type="FreeBuildingClasses"/>

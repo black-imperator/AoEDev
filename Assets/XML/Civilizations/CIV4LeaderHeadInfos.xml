@@ -13574,7 +13574,7 @@
 			<Description>TXT_KEY_LEADER_CUAI_IXL</Description>
 			<Civilopedia>TXT_KEY_LEADER_CUAI_IXL_PEDIA</Civilopedia>
 			<DefeatQuote>TXT_KEY_POPUP_DEFEATED_CUAI_IXL</DefeatQuote>
-			<Image>Art/Civs/MinorLeaders/CuaLH.dds</Image>
+			<Image>Art/interface/Leaderheads/new_cuai_ixl_banner.dds</Image>
 			<ArtDefineTag>ART_DEF_LEADER_CUAIIXL</ArtDefineTag>
 			<iWonderConstructRand>0</iWonderConstructRand>
 			<iBaseAttitude>0</iBaseAttitude>

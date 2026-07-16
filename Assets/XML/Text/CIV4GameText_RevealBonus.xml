@@ -13075,6 +13075,115 @@ Your unit is even more surprised to realise there are two figures standing besid
 Turning the corner, your unit is surprised to find they are now standing in the middle of a village, hewn into the trees themselves.
 Your unit is even more surprised to realise there are two figures standing beside them, holding their arms pinned and pressing a dagger against their ribs.</Spanish>
 	</TEXT>
+		<TEXT>
+		<Tag>TXT_KEY_GLOBAL_SPELL</Tag>
+		<English>World Spell: %s1</English>
+		<French>Sort Mondial : %s1</French>
+		<German>Weltzauber: %s1</German>
+		<Italian>World Spell: %s1</Italian>
+		<Spanish>Conjuro Mundial: %s1</Spanish>
+	</TEXT>
+
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_CANNOT_DO_RELIGION</Tag>
+		<English>Cannot Adopt %s1.</English>
+		<French>Cannot Adopt %s1.</French>
+		<German>Cannot Adopt %s1.</German>
+		<Italian>Cannot Adopt %s1.</Italian>
+		<Spanish>Cannot Adopt %s1.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VOTE_UN_FORCE_PEACE</Tag>
+		<English>Overcouncil Peacekeeping</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_</Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_</Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_</Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_</Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_</Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_</Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_</Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_</Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_</Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_</Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_</Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_</Tag>
 		<English></English>

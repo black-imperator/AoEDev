@@ -86,6 +86,7 @@ void CyInfoPythonInterface2()
 		.def("getAdjective", &CvCivilizationInfo::pyGetAdjective, "wstring ()")
 		.def("getFlagTexture", &CvCivilizationInfo::getFlagTexture, "string ()")
 		.def("getArtDefineTag", &CvCivilizationInfo::getArtDefineTag, "string ()")
+		.def("getSpecialistArtstyle", &CvCivilizationInfo::getSpecialistArtstyle, "string (int i)")
 		.def("getButton", &CvCivilizationInfo::getButton, "string ()")
 
 		.def("getDerivativeCiv", &CvCivilizationInfo::getDerivativeCiv, "int ()")

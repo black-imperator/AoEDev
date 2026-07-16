@@ -2851,8 +2851,11 @@ class CvMainInterface:
 									pCity = pPlot.getPlotCity()
 									iSpecialistClass = getAction(i).getMissionData()
 									iSpecialistType = pCity.getSpecialistTypeFromClass(iSpecialistClass)
+									image=gc.getSpecialistInfo(iSpecialistType).getTexture()
+									if(gc.getCivilizationInfo(pHeadSelectedCity.getCivilizationType()).getSpecialistArtstyle(iSpecialistClass)!=-1):
+										image=gc.getSpecialistArtstyleInfo(gc.getCivilizationInfo(pHeadSelectedCity.getCivilizationType()).getSpecialistArtstyle(iSpecialistClass)).getButton()
 									if iSpecialistType != -1:
-										szButton = gc.getSpecialistInfo(iSpecialistType).getButton()
+										szButton = image
 							elif eMissionType	== MissionTypes.MISSION_CONSTRUCT:
 								eMultiList = "BottomButtonContainer2"
 							elif eMissionType	== MissionTypes.MISSION_DISCOVER:
@@ -3079,9 +3082,12 @@ class CvMainInterface:
 					for i in xrange(gc.getNumSpecialistClassInfos()):
 						if (pHeadSelectedCity.getFreeSpecialistClassCount(i) > 0):
 							iSpecialist = pHeadSelectedCity.getSpecialistTypeFromClass(i)
+							image=gc.getSpecialistInfo(iSpecialist).getTexture()
+							if(gc.getCivilizationInfo(pHeadSelectedCity.getCivilizationType()).getSpecialistArtstyle(i)!=-1):
+								image=gc.getSpecialistArtstyleInfo(gc.getCivilizationInfo(pHeadSelectedCity.getCivilizationType()).getSpecialistArtstyle(i)).getButton()
 							if (iCount < MAX_CITIZEN_BUTTONS):
 								szName = "FreeSpecialist" + str(iCount)
-								screen.setImageButton(szName, gc.getSpecialistInfo(iSpecialist).getTexture(),
+								screen.setImageButton(szName, image,
 													  (xResolution - 74 - (26 * iCount)), yResolution - 206, 24, 24,
 													  WidgetTypes.WIDGET_FREE_CITIZEN, i, 1)
 								screen.show(szName)
@@ -3092,9 +3098,12 @@ class CvMainInterface:
 					for i in xrange(gc.getNumSpecialistClassInfos()):
 						for j in xrange(pHeadSelectedCity.getFreeSpecialistClassCount(i)):
 							iSpecialist = pHeadSelectedCity.getSpecialistTypeFromClass(i)
+							image=gc.getSpecialistInfo(iSpecialist).getTexture()
+							if(gc.getCivilizationInfo(pHeadSelectedCity.getCivilizationType()).getSpecialistArtstyle(i)!=-1):
+								image=gc.getSpecialistArtstyleInfo(gc.getCivilizationInfo(pHeadSelectedCity.getCivilizationType()).getSpecialistArtstyle(i)).getButton()
 							if (iCount < MAX_CITIZEN_BUTTONS):
 								szName = "FreeSpecialist" + str(iCount)
-								screen.setImageButton(szName, gc.getSpecialistInfo(iSpecialist).getTexture(),
+								screen.setImageButton(szName, image,
 													  (xResolution - 74 - (26 * iCount)), yResolution - 206, 24, 24,
 													  WidgetTypes.WIDGET_FREE_CITIZEN, i, -1)
 								screen.show(szName)
@@ -3110,6 +3119,9 @@ class CvMainInterface:
 						continue
 					if not gc.getSpecialistInfo(iSpecialist).isVisible():
 						continue
+					image=gc.getSpecialistInfo(iSpecialist).getTexture()
+					if(gc.getCivilizationInfo(pHeadSelectedCity.getCivilizationType()).getSpecialistArtstyle(i)!=-1):
+						image=gc.getSpecialistArtstyleInfo(gc.getCivilizationInfo(pHeadSelectedCity.getCivilizationType()).getSpecialistArtstyle(i)).getButton()
 					if (pHeadSelectedCity.getOwner() == gc.getGame().getActivePlayer() or gc.getGame().isDebugMode()):
 
 						if (pHeadSelectedCity.isCitizensAutomated()):
@@ -3129,7 +3141,7 @@ class CvMainInterface:
 												ButtonStyles.BUTTON_STYLE_CITY_PLUS)
 							screen.show(szName)
 							szName = "CitizenDisabledButton" + str(i)
-							screen.setImageButton(szName, gc.getSpecialistInfo(iSpecialist).getTexture(),
+							screen.setImageButton(szName,image,
 												  xResolution - 74,
 												  (yResolution - 272 - (26 * iButtonOffset)), 24, 24,
 												  WidgetTypes.WIDGET_DISABLED_CITIZEN, i, -1)
@@ -3158,7 +3170,7 @@ class CvMainInterface:
 					for j in xrange(iCount):
 						bHandled = True
 						szName = "CitizenButton" + str((i * 100) + j)
-						screen.addCheckBoxGFC(szName, gc.getSpecialistInfo(iSpecialist).getTexture(), "",
+						screen.addCheckBoxGFC(szName, image, "",
 											  xResolution - 74 - (26 * j), (yResolution - 272 - (26 * iButtonOffset)),
 											  24, 24, WidgetTypes.WIDGET_CITIZEN, i, j, ButtonStyles.BUTTON_STYLE_LABEL)
 						screen.show(szName)
@@ -3185,7 +3197,7 @@ class CvMainInterface:
 
 					if (not bHandled):
 						szName = "CitizenDisabledButton" + str(i)
-						screen.setImageButton(szName, gc.getSpecialistInfo(iSpecialist).getTexture(), xResolution - 74,
+						screen.setImageButton(szName, image, xResolution - 74,
 											  (yResolution - 272 - (26 * iButtonOffset)), 24, 24,
 											  WidgetTypes.WIDGET_DISABLED_CITIZEN, i, -1)
 						screen.enable(szName, False)

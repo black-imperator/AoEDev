@@ -48,6 +48,8 @@ void CyInfoPythonInterface1()
 
 	python::class_<CvSpecialistClassInfo, python::bases<CvInfoBase> >("CvSpecialistClassInfo")
 		;
+	python::class_<CvSpecialistArtstyleInfo, python::bases<CvInfoBase> >("CvSpecialistArtstyleInfo")
+		;
 
 	python::class_<CvTechInfo, python::bases<CvInfoBase> >("CvTechInfo")
 		.def("getAdvisorType", &CvTechInfo::getAdvisorType, "int ()")

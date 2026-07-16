@@ -346,6 +346,11 @@ CvSpecialistClassInfo* CyGlobalContext::getSpecialistClassInfo(int i) const
 	return (i >= 0 && i < GC.getNumSpecialistClassInfos()) ? &GC.getSpecialistClassInfo((SpecialistClassTypes)i) : NULL;
 }
 
+CvSpecialistArtstyleInfo* CyGlobalContext::getSpecialistArtstyleInfo(int i) const
+{
+	return (i >= 0 && i < GC.getNumSpecialistArtstyleInfos()) ? &GC.getSpecialistArtstyleInfo((SpecialistArtstyleTypes)i) : NULL;
+}
+
 CvSpecialistInfo* CyGlobalContext::getSpecialistInfo(int i) const
 {
 	return (i>=0 && i<GC.getNumSpecialistInfos()) ? &GC.getSpecialistInfo((SpecialistTypes) i) : NULL;

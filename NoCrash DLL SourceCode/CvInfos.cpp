@@ -1234,6 +1234,31 @@ void CvSpecialistClassInfo::copyNonDefaults(CvSpecialistClassInfo* pClassInfo, C
 /**	TrueModular								END													**/
 /*************************************************************************************************/
 
+
+
+CvSpecialistArtstyleInfo::CvSpecialistArtstyleInfo()
+{
+}
+
+//------------------------------------------------------------------------------------------------------
+//
+//  FUNCTION:   ~CvSpecialistArtstyleInfo()
+//
+//  PURPOSE :   Default destructor
+//
+//------------------------------------------------------------------------------------------------------
+CvSpecialistArtstyleInfo::~CvSpecialistArtstyleInfo()
+{
+}
+bool CvSpecialistArtstyleInfo::read(CvXMLLoadUtility* pXML)
+{
+	if (!CvHotkeyInfo::read(pXML))
+	{
+		return false;
+	}
+	return true;
+}
+
 //======================================================================================================
 //					CvSpecialistInfo
 //======================================================================================================
@@ -27201,6 +27226,7 @@ m_bNoCrimeCiv(false),
 m_piCivilizationBuildingArtDefines(NULL),
 m_piCivilizationBuildings(NULL),
 m_piCivilizationSpecialists(NULL),
+m_piSpecialistArtstyles(NULL),
 m_piCivilizationImprovements(NULL),
 m_piCivilizationUnits(NULL),
 m_piCivilizationFreeUnitsClass(NULL),
@@ -27521,7 +27547,12 @@ int CvCivilizationInfo::getCivilizationSpecialists(int i) const
 	FAssertMsg(i > -1, "Index out of bounds");
 	return m_piCivilizationSpecialists ? m_piCivilizationSpecialists[i] : -1;
 }
-
+int CvCivilizationInfo::getSpecialistArtstyle(int i) const
+{
+	FAssertMsg(i < GC.getNumSpecialistClassInfos(), "Index out of bounds");
+	FAssertMsg(i > -1, "Index out of bounds");
+	return m_piSpecialistArtstyles ? m_piSpecialistArtstyles[i] : NO_SPECIALISTARTSTYLE;
+}
 int CvCivilizationInfo::getCivilizationImprovements(int i) const
 {
 	FAssertMsg(i < GC.getNumImprovementClassInfos(), "Index out of bounds");
@@ -27788,6 +27819,10 @@ void CvCivilizationInfo::read(FDataStreamBase* stream)
 	SAFE_DELETE_ARRAY(m_piCivilizationSpecialists);
 	m_piCivilizationSpecialists = new int[GC.getNumSpecialistClassInfos()];
 	stream->Read(GC.getNumSpecialistClassInfos(), m_piCivilizationSpecialists);
+	
+//	SAFE_DELETE_ARRAY(m_piSpecialistArtstyles);
+//	m_piSpecialistArtstyles = new CvString[GC.getNumSpecialistClassInfos()];
+//	stream->Read(GC.getNumSpecialistClassInfos(), m_piSpecialistArtstyles);
 
 	SAFE_DELETE_ARRAY(m_piCivilizationImprovements);
 	m_piCivilizationImprovements = new int[GC.getNumImprovementClassInfos()];
@@ -27895,6 +27930,7 @@ void CvCivilizationInfo::write(FDataStreamBase* stream)
 	}
 	stream->Write(GC.getNumBuildingClassInfos(), m_piCivilizationBuildings);
 	stream->Write(GC.getNumSpecialistClassInfos(), m_piCivilizationSpecialists);
+//	stream->Write(GC.getNumSpecialistClassInfos(), m_piSpecialistArtstyles);
 	stream->Write(GC.getNumImprovementClassInfos(), m_piCivilizationImprovements);
 	stream->Write(GC.getNumUnitClassInfos(), m_piCivilizationUnits);
 	stream->Write(GC.getNumUnitClassInfos(), m_piCivilizationFreeUnitsClass);
@@ -28417,6 +28453,75 @@ bool CvCivilizationInfo::read(CvXMLLoadUtility* pXML)
 			}
 		}*/
 	}
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "SpecialistArtstyles"))
+	{
+		// pXML->Skip any comments and stop at the next value we might want
+		if (pXML->SkipToNextVal())
+		{
+			m_piSpecialistArtstyles = new int[GC.getNumSpecialistClassInfos()];
+			for (int i = 0; i < GC.getNumSpecialistClassInfos(); i++)
+			{
+				m_piSpecialistArtstyles[i] = NO_SPECIALISTARTSTYLE;
+			}
+			// get the total number of children the current xml node has
+			iNumSibs = gDLL->getXMLIFace()->GetNumChildren(pXML->GetXML());
+			// if the call to the function that sets the current xml node to it's first non-comment
+			// child and sets the parameter with the new node's value succeeds
+			if ((0 < iNumSibs) && (gDLL->getXMLIFace()->SetToChild(pXML->GetXML())))
+			{
+				int iSpecialistClassIndex;
+
+				FAssertMsg((iNumSibs <= GC.getNumSpecialistClassInfos()), "In SetGlobalCivilizationInfo iNumSibs is greater than GC.getNumSpecialistClassInfos()");
+
+				// loop through all the siblings
+				for (j = 0; j < iNumSibs; j++)
+				{
+					if (pXML->GetChildXmlVal(szClassVal))
+					{
+						// get the index into the array based on the Specialist class type
+						iSpecialistClassIndex = pXML->FindInInfoClass(szClassVal);
+						if (-1 < iSpecialistClassIndex)
+						{
+							// get the next value which should be the Specialist type to set this civilization's version of this Specialist class too
+							pXML->GetNextXmlVal(szTextVal);
+							// call the find in list function to return either -1 if no value is found
+							// or the index in the list the match is found at
+							m_piSpecialistArtstyles[iSpecialistClassIndex] = pXML->FindInInfoClass(szTextVal);
+						}
+						else
+						{
+							FAssertMsg(0, "SpecialistClass index is -1 in SetGlobalCivilizationInfo function");
+						}
+
+						// set the current xml node to it's parent node
+						gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+					}
+
+					// if the call to the function that sets the current xml node to it's first non-comment
+					// sibling and sets the parameter with the new node's value does not succeed
+					// we will break out of this for loop
+					if (!gDLL->getXMLIFace()->NextSibling(pXML->GetXML()))
+					{
+						break;
+					}
+				}
+
+				// set the current xml node to it's parent node
+				gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+			}
+		}
+
+		// set the current xml node to it's parent node
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+	else
+	{
+		m_piSpecialistArtstyles = new int[GC.getNumSpecialistClassInfos()];
+		for (j = 0; j < GC.getNumSpecialistClassInfos(); j++)
+		{
+			m_piSpecialistArtstyles[j] = NO_SPECIALISTARTSTYLE;
+		}
+	}
 
 	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "Improvements"))
 	{
@@ -28746,6 +28851,7 @@ void CvCivilizationInfo::copyNonDefaults(CvCivilizationInfo* pClassInfo, CvXMLLo
 	{
 		int iDefaultSpecialist = (GC.getSpecialistClassInfo((SpecialistClassTypes)i).isUnique() || isLimitedSelection()) ? -1 : GC.getSpecialistClassInfo((SpecialistClassTypes)i).getDefaultSpecialistIndex();
 		if (getCivilizationSpecialists(i) == iDefaultSpecialist)	m_piCivilizationSpecialists[i] = pClassInfo->getCivilizationSpecialists(i);
+		if (getSpecialistArtstyle(i) == NO_SPECIALISTARTSTYLE)	m_piSpecialistArtstyles[i] = pClassInfo->getSpecialistArtstyle(i);
 	}
 	for (int i = 0; i < GC.getNumImprovementClassInfos(); i++)
 	{

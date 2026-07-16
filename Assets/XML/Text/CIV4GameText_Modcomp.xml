@@ -713,7 +713,7 @@
 		<French>%s1 has questioned his loyalty to our Empire</French>
 		<German>%s1 stellt Loyalität zu Eurem Reich in frage.</German>
 		<Italian>%s1 has questioned his loyalty to our Empire</Italian>
-		<Spanish>s1 has questioned his loyalty to our Empire</Spanish>
+		<Spanish>%s1 has questioned his loyalty to our Empire</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LOYAL_TO_DEATH</Tag>
@@ -721,7 +721,7 @@
 		<French>%s1 has taken his own life rather than turn upon our Empire</French>
 		<German>Die Einheit %s1 hat sich lieber umgebracht, als sich gegen Euer Reich zu wenden.</German>
 		<Italian>%s1 has taken his own life rather than turn upon our Empire</Italian>
-		<Spanish>s1 has taken his own life rather than turn upon our Empire</Spanish>
+		<Spanish>%s1 has taken his own life rather than turn upon our Empire</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_FREE_XP</Tag>
