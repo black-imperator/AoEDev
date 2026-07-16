@@ -234,7 +234,7 @@
 					<SpecialistArtTag>ART_DEF_SPECIALIST_PRIEST_LIZARDMEN</SpecialistArtTag>
 				</SpecialistArtstyle>
 				<SpecialistArtstyle>
-					<SpecialistClassType>SPECIALIST_SCIENTIST</SpecialistClassType>
+					<SpecialistClassType>SPECIALISTCLASS_SCIENTIST</SpecialistClassType>
 					<SpecialistArtTag>ART_DEF_SPECIALIST_SAGE_LIZARDMEN</SpecialistArtTag>
 				</SpecialistArtstyle>
 			</SpecialistArtstyles>

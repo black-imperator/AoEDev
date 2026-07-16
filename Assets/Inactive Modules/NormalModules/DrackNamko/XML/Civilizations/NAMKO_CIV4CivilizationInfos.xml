@@ -233,7 +233,7 @@
 					<SpecialistArtTag>ART_DEF_SPECIALIST_PRIEST_UNDEAD</SpecialistArtTag>
 				</SpecialistArtstyle>
 				<SpecialistArtstyle>
-					<SpecialistClassType>SPECIALIST_SCIENTIST</SpecialistClassType>
+					<SpecialistClassType>SPECIALISTCLASS_SCIENTIST</SpecialistClassType>
 					<SpecialistArtTag>ART_DEF_SPECIALIST_SAGE_UNDEAD</SpecialistArtTag>
 				</SpecialistArtstyle>
 			</SpecialistArtstyles>

@@ -319,7 +319,7 @@
 					<SpecialistArtTag>ART_DEF_SPECIALIST_PRIEST_ELVES</SpecialistArtTag>
 				</SpecialistArtstyle>
 				<SpecialistArtstyle>
-					<SpecialistClassType>SPECIALIST_SCIENTIST</SpecialistClassType>
+					<SpecialistClassType>SPECIALISTCLASS_SCIENTIST</SpecialistClassType>
 					<SpecialistArtTag>ART_DEF_SPECIALIST_SAGE_ELVES</SpecialistArtTag>
 				</SpecialistArtstyle>
 			</SpecialistArtstyles>
@@ -697,7 +697,7 @@
 					<SpecialistArtTag>ART_DEF_SPECIALIST_PRIEST_ELVES</SpecialistArtTag>
 				</SpecialistArtstyle>
 				<SpecialistArtstyle>
-					<SpecialistClassType>SPECIALIST_SCIENTIST</SpecialistClassType>
+					<SpecialistClassType>SPECIALISTCLASS_SCIENTIST</SpecialistClassType>
 					<SpecialistArtTag>ART_DEF_SPECIALIST_SAGE_ELVES</SpecialistArtTag>
 				</SpecialistArtstyle>
 			</SpecialistArtstyles>
@@ -985,7 +985,7 @@
 					<SpecialistArtTag>ART_DEF_SPECIALIST_PRIEST_ELVES</SpecialistArtTag>
 				</SpecialistArtstyle>
 				<SpecialistArtstyle>
-					<SpecialistClassType>SPECIALIST_SCIENTIST</SpecialistClassType>
+					<SpecialistClassType>SPECIALISTCLASS_SCIENTIST</SpecialistClassType>
 					<SpecialistArtTag>ART_DEF_SPECIALIST_SAGE_ELVES</SpecialistArtTag>
 				</SpecialistArtstyle>
 			</SpecialistArtstyles>
@@ -1354,7 +1354,7 @@
 					<SpecialistArtTag>ART_DEF_SPECIALIST_PRIEST_ELVES</SpecialistArtTag>
 				</SpecialistArtstyle>
 				<SpecialistArtstyle>
-					<SpecialistClassType>SPECIALIST_SCIENTIST</SpecialistClassType>
+					<SpecialistClassType>SPECIALISTCLASS_SCIENTIST</SpecialistClassType>
 					<SpecialistArtTag>ART_DEF_SPECIALIST_SAGE_ELVES</SpecialistArtTag>
 				</SpecialistArtstyle>
 			</SpecialistArtstyles>
