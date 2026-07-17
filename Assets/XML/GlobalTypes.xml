@@ -193,6 +193,20 @@
 		<GoodyClassType>GOODYCLASS_CLOCKWORK</GoodyClassType>
 		<GoodyClassType>GOODYCLASS_WHISPERING</GoodyClassType>
 		<GoodyClassType>GOODYCLASS_SHIMMERING</GoodyClassType>
+		<GoodyClassType>GOODYCLASS_ILLIANS</GoodyClassType>
+		<GoodyClassType>GOODYCLASS_PIRATES</GoodyClassType>
+		<GoodyClassType>GOODYCLASS_SPIDERS</GoodyClassType>
+		<GoodyClassType>GOODYCLASS_DESERT_NOMADS</GoodyClassType>
+		<GoodyClassType>GOODYCLASS_ELVEN_COURT</GoodyClassType>
+		<GoodyClassType>GOODYCLASS_FADED</GoodyClassType>
+		<GoodyClassType>GOODYCLASS_WORLDENDERS</GoodyClassType>
+		<GoodyClassType>GOODYCLASS_FALSE_PATRIA</GoodyClassType>
+		<GoodyClassType>GOODYCLASS_DEPRAVED</GoodyClassType>
+		<GoodyClassType>GOODYCLASS_VOLCANO</GoodyClassType>
+		<GoodyClassType>GOODYCLASS_DWARVES</GoodyClassType>
+		<GoodyClassType>GOODYCLASS_LEGION</GoodyClassType>
+		<GoodyClassType>GOODYCLASS_HORSELORDS</GoodyClassType>
+		<GoodyClassType>GOODYCLASS_VAMPIRES</GoodyClassType>
 	</GoodyClassTypes>
 	<CivFlavorTypes>
 		<!--Changes must be reflected in CvEnums.h-->

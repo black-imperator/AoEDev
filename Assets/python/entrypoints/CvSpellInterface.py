@@ -13351,7 +13351,7 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 		for i in xrange(pClearPlot.getNumUnits()):
 			pLoopUnit = pClearPlot.getUnit(i)
 			if pLoopUnit.isBarbarian() and not gc.getUnitClassInfo(pLoopUnit.getUnitClassType()).isUnique():
-				pLoopUnit.kill()
+				pLoopUnit.kill(False, -1)
 
 	# Spawn
 	CyGame().addPlayerAdvanced(iNewPlayer, -1, iLeader, iCiv, iPlayer)
@@ -13372,6 +13372,10 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 	# You should find a better place for a city than a rando spot near UF
 	# You can use pTomb to change buildings, pop, etc
 	pTomb	= pNewPlayer.initCity(iX, iY)
+	iCulture = 450
+	iNewCityPlayer = pTomb.getOwner()
+	pTomb.changePopulation(4)
+	pTomb.changeCulture(iNewCityPlayer, iCulture, True)
 
 	pNewPlayer.changeGoldenAgeTurns(CyGame().goldenAgeLength() + (iTechCount / 3))
 	pNewPlayer.changeGold(iGold)
@@ -13464,6 +13468,8 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 	iUCAdept		= gc.getInfoTypeForString("UNITCLASS_ADEPT")
 	# If you want to spawn nonconventional civs, like D'Tesh you'll need to change Workers/Settlers here
 	iUCWorker		= gc.getInfoTypeForString("UNITCLASS_WORKER")
+	if iCiv == gc.getInfoTypeForString("CIVILIZATION_LANUN"):
+		iUCWorker	= gc.getInfoTypeForString("UNITCLASS_WORKBOAT")
 	iUCSettler		= gc.getInfoTypeForString("UNITCLASS_SETTLER")
 	if iCiv == gc.getInfoTypeForString("CIVILIZATION_DTESH"):
 		iUCSettler	= gc.getInfoTypeForString("UNITCLASS_VESSEL_DTESH")

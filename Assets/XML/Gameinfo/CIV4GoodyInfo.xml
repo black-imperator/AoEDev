@@ -5546,6 +5546,23 @@
 			<bBad>1</bBad>
 			<PythonCallback>exploreLairGolemDefender(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
+		<GoodyInfo>	<!--Discover the Balseraph	 -->
+			<Type>GOODY_FREE_BALSERAPH</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_EYES</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>30</iWeight>
+			<Description>TXT_KEY_GOODY_FREED_BALSERAPH</Description>
+			<Sound>AS2D_GOODY_HOSTILE</Sound>
+			<iDestroyLairChance>100</iDestroyLairChance>
+			<bUnique>1</bUnique>
+			<bBad>1</bBad>
+			<PythonPrereq>reqLairFreeBalseraph</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_BALSERAPHS','LEADER_PERPENTACH')</PythonCallback>
+		</GoodyInfo>
 		<GoodyInfo>	<!--UndeadCarnival-->
 			<Type>GOODY_EXPLORE_LAIR_UNDEAD_CARNIVAL</Type>
 			<GoodyClasses>
@@ -5695,23 +5712,6 @@
 			<PythonPrereq>reqLairFreeIllians</PythonPrereq>
 			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_ILLIANS','LEADER_AURIC')</PythonCallback>
 		</GoodyInfo>
-		<GoodyInfo>	<!--Discover the Balseraph	 -->
-			<Type>GOODY_FREE_BALSERAPH</Type>
-			<GoodyClasses>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_EYES</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-			</GoodyClasses>
-			<iWeight>30</iWeight>
-			<Description>TXT_KEY_GOODY_FREED_BALSERAPH</Description>
-			<Sound>AS2D_GOODY_HOSTILE</Sound>
-			<iDestroyLairChance>100</iDestroyLairChance>
-			<bUnique>1</bUnique>
-			<bBad>1</bBad>
-			<PythonPrereq>reqLairFreeBalseraph</PythonPrereq>
-			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_BALSERAPHS','LEADER_PERPENTACH')</PythonCallback>
-		</GoodyInfo>
 		<GoodyInfo>	<!--Discover the Calabim	 -->
 			<Type>GOODY_FREE_CALABIM</Type>
 			<GoodyClasses>
@@ -5801,7 +5801,7 @@
 			<Type>GOODY_FREE_LJOSALFAR</Type>
 			<GoodyClasses>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_SUMMER_COURT</GoodyClassType>
+					<GoodyClassType>GOODYCLASS_ELVEN_COURT</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
@@ -5920,7 +5920,7 @@
 			<Type>GOODY_FREE_SVARTALFER</Type>
 			<GoodyClasses>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_SUMMER_COURT</GoodyClassType>
+					<GoodyClassType>GOODYCLASS_ELVEN_COURT</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
