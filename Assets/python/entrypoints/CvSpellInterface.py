@@ -10234,7 +10234,7 @@ def perTurnApophis(pCaster):
 			if id == getInfoType("PROMOTION_BONE_CIRCLET"):
 				iUnit = getInfoType('UNIT_APOPHIS')
 				pCaster.changeImmortal(-100)
-				pCaster.kill()
+				pCaster.kill(False,-1)
 				newUnit = pPlayer.initUnit(iUnit, pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 				
 def spellHauntedBreath(pCaster):

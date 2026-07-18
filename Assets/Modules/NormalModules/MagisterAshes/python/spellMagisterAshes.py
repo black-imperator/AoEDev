@@ -62,7 +62,7 @@ def spellUnleashApophis(caster):
 		pUnit = pPlot.getUnit(i)
 		if pUnit.getUnitType() == getInfoType("UNIT_GOAT_2"):
 			pUnit.changeImmortal(-100)
-			pUnit.kill()
+			pUnit.kill(False,-1)
 	
 	newUnit = pPlayer.initUnit(iUnit, pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
@@ -161,7 +161,7 @@ def exploreLairBreakWiddershinsCurse(pUnit, pPlot):
 			for i in xrange(pPlot2.getNumUnits()):
 				pLoopUnit = pPlot.getUnit(i)
 				if pLoopUnit.getOwner()==gc.getORC_PLAYER() or pLoopUnit.getOwner()==gc.getDEMON_PLAYER() or pLoopUnit.getOwner()==gc.getANIMAL_PLAYER():
-					pLoopUnit.kill()
+					pLoopUnit.kill(False,-1)
 		game.addPlayerAdvanced(iInfernalPlayer, -1, getInfoType("LEADER_HAERLOND"), getInfoType("CIVILIZATION_ONCE_ELVES"),iPlayer)
 		iFounderTeam  = gc.getPlayer(iPlayer).getTeam()
 		eFounderTeam  = gc.getTeam(gc.getPlayer(iPlayer).getTeam())
