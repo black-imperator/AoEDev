@@ -2852,8 +2852,8 @@ class CvMainInterface:
 									iSpecialistClass = getAction(i).getMissionData()
 									iSpecialistType = pCity.getSpecialistTypeFromClass(iSpecialistClass)
 									image=gc.getSpecialistInfo(iSpecialistType).getTexture()
-									if(gc.getCivilizationInfo(pHeadSelectedCity.getCivilizationType()).getSpecialistArtstyle(iSpecialistClass)!=-1):
-										image=gc.getSpecialistArtstyleInfo(gc.getCivilizationInfo(pHeadSelectedCity.getCivilizationType()).getSpecialistArtstyle(iSpecialistClass)).getButton()
+									if(gc.getCivilizationInfo(pCity.getCivilizationType()).getSpecialistArtstyle(iSpecialistClass)!=-1):
+										image=gc.getSpecialistArtstyleInfo(gc.getCivilizationInfo(pCity.getCivilizationType()).getSpecialistArtstyle(iSpecialistClass)).getButton()
 									if iSpecialistType != -1:
 										szButton = image
 							elif eMissionType	== MissionTypes.MISSION_CONSTRUCT:
