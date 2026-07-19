@@ -3351,7 +3351,7 @@ void CvPlayer::setHasTrait(TraitTypes eTrait, bool bNewValue)
 	{
 		changeExtraBuildingHappiness((BuildingTypes)iI, GC.getBuildingInfo((BuildingTypes)iI).getHappinessTraits((int)eTrait) * iChange);
 	}
-
+	changeHappyPerMilitaryUnit(GC.getTraitInfo(eTrait).getHappyPerMilitaryUnit() * iChange);
 	changeUpkeepModifier(GC.getTraitInfo(eTrait).getUpkeepModifier() * iChange);
 	changeDistanceMaintenanceModifier(GC.getTraitInfo(eTrait).getDistanceMaintenanceModifier() * iChange);
 	changeRitualProductionModifier(GC.getTraitInfo(eTrait).getRitualProductionModifier() * iChange);

@@ -3450,7 +3450,7 @@ def spellRevelry(caster):
 			iCulture = 0
 			for iloopPlayer2 in xrange(gc.getMAX_PLAYERS()):
 				if iloopPlayer2 == iPlayer:		continue
-				iCulture += pPlot.getCulture(iPlayer3)
+				iCulture += pPlot.getCulture(iloopPlayer2)
 				if iloopPlayer2 == iLoopPlayer:	continue
 				pPlot.setCulture(iloopPlayer2, 0, True)
 			pPlot.setCulture(iPlayer, iCulture, True)
@@ -3706,7 +3706,8 @@ def reqSacrificeSlaveCualli(caster):
 	iHeroPriest = getInfoType('UNIT_MIQUIZTLI')
 	if (not caster.getUnitType() == iShadowPriest) and (not caster.getUnitType()== iHeroPriest):
 		return False
-
+	if (pPlot.isCity() and pPlot.getPlotCity().getFreeSpecialistClassCount(getInfoType('SPECIALISTCLASS_SLAVE'))>0):
+		return True
 	for i in range(pPlot.getNumUnits()):
 		pUnit = pPlot.getUnit(i)
 		if pUnit.getUnitType() == getInfoType('UNIT_SLAVE'):
@@ -3727,7 +3728,8 @@ def spellSacrificeSlaveCualli(caster):
 	bOdio = caster.getUnitType()== getInfoType('UNIT_ODIO')
 	bBrigit = caster.getUnitType()==getInfoType('UNIT_BRIGIT')
 	bSauros = pPlayer.getLeaderType()==getInfoType("LEADER_SAUROS")
-
+	if (pPlot.isCity()):
+		iLevel+=pPlot.getPlotCity().getFreeSpecialistClassCount(getInfoType('SPECIALISTCLASS_SLAVE'))/2
 	for i in range(pPlot.getNumUnits()):
 		pUnit = pPlot.getUnit(i)
 		if pUnit.getUnitType() == getInfoType('UNIT_SLAVE'):

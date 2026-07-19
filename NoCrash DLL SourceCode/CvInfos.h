@@ -1335,6 +1335,8 @@ public:
 	bool isPrereqRevealed() const;				// Exposed to Python
 	bool isPrereqHidden() const;				// Exposed to Python
 	bool isRace() const;
+	bool isMentalEffect() const;
+	bool isCompanion() const;
 	bool isGraphicalAddOnPromotion() const;
 	bool isRemovedByCasting() const;
 	bool isRemovedByCombat() const;
@@ -1964,6 +1966,8 @@ protected:
 	bool m_bPrereqRevealed;
 	bool m_bPrereqHidden;
 	bool m_bRace;
+	bool m_bMentalEffect;
+	bool m_bCompanion;
 	bool m_bGraphicalAddOnPromotion;
 	bool m_bRemovedByCasting;
 	bool m_bRemovedByCombat;
@@ -9349,6 +9353,7 @@ public:
 
 	int getHealth() const;				// Exposed to Python
 	int getHappiness() const;				// Exposed to Python
+	int getHappyPerMilitaryUnit() const;				// Exposed to Python
 	int getMaxAnarchy() const;				// Exposed to Python
 	int getFreeBuildingClass() const;				// Exposed to Python
 	int getUpkeepModifier() const;				// Exposed to Python
@@ -9560,6 +9565,7 @@ protected:
 	int m_iParentTrait;
 	int m_iHealth;
 	int m_iHappiness;
+	int m_iHappyPerMilitaryUnit;
 	int m_iMaxAnarchy;
 	int m_iFreeBuildingClass;
 	CvString m_iFreeBuildingClassforPass3;

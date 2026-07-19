@@ -33509,6 +33509,30 @@
 				<AudioRunTypeEnd/>
 			</AudioRunSounds>
 		</UnitArtInfo>
+		<UnitArtInfo> <!-- UNIT_SCORPION Demon-->
+			<Type>ART_DEF_UNIT_SCORPION_DEMON</Type>
+			<Button>Art/Interface/Buttons/Units/Scorpion.dds</Button>
+			<fScale>10</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/animal/scorpiondemon/scorp.nif</NIF>
+			<KFM>Art/Units/animal/scorpion/scorp.kfm</KFM>
+			<SHADERNIF>Art/Units/animal/scorpiondemon/scorp.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/LionShadow.nif</ShadowNIF>
+				<ShadowAttachNode>Bip01 Spine</ShadowAttachNode>
+				<fShadowScale>0.03</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.28</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
 		<UnitArtInfo> <!-- UNIT_GIANT_TORTOISE -->
 			<Type>ART_DEF_UNIT_GIANT_TORTOISE</Type>
 			<Button>Art/Interface/Buttons/Units/Giant Tortoise.dds</Button>

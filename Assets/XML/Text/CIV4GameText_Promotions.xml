@@ -3094,6 +3094,22 @@
 		<Spanish>[ICON_BULLET]Race: %s1_promotion</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_COMPANION_PEDIA</Tag>
+		<English>[ICON_BULLET]Companion: %s1_promotion</English>
+		<French>[ICON_BULLET]Companion: %s1_promotion</French>
+		<German>[ICON_BULLET]Companion: %s1_promotion</German>
+		<Italian>[ICON_BULLET]Companion: %s1_promotion</Italian>
+		<Spanish>[ICON_BULLET]Companion: %s1_promotion</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MENTAL_EFFECT_PEDIA</Tag>
+		<English>[ICON_BULLET]Mental Effect</English>
+		<French>[ICON_BULLET]Mental Effect</French>
+		<German>[ICON_BULLET]Mental Effect</German>
+		<Italian>[ICON_BULLET]Mental Effect</Italian>
+		<Spanish>[ICON_BULLET]Mental Effect</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_RECRUITER</Tag>
 		<English>Recruiter</English>
 		<French>Recruteur</French>

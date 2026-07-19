@@ -6132,7 +6132,10 @@ bool CvUnit::canGift(bool bTestVisible, bool bTestTransport)
 {
 
 //FfH: Added by Kael 04/22/2008 (to disable gifting)
-	return false;
+	if (!GC.getGameINLINE().isOption(GAMEOPTION_CAN_GIFT))
+	{
+		return false;
+	}
 //FfH: End Add
 
 	CvPlot* pPlot = plot();
@@ -18323,10 +18326,9 @@ void CvUnit::applyAuraBonus(AuraBonuses cbTemp, CvUnit* pCheckUnit, bool bNewVal
 			if (GC.getPromotionInfo(cbTemp.promotion).getUnitCombat(i))
 			{
 				requireunitcombat = true;
-				if (isUnitCombat((UnitCombatTypes)i))
+				if (pCheckUnit->isUnitCombat((UnitCombatTypes)i))
 				{
 					pCheckUnit->setHasPromotion(cbTemp.promotion, bNewValue, false, false);
-					return;
 				}
 			}
 		}
@@ -18335,6 +18337,7 @@ void CvUnit::applyAuraBonus(AuraBonuses cbTemp, CvUnit* pCheckUnit, bool bNewVal
 			pCheckUnit->setHasPromotion(cbTemp.promotion, bNewValue, false, false);
 		}
 	}
+	return;
 }
 void CvUnit::applyAuraBonusEffects(bool bActivate, bool bAlterFullMap, bool bCleanUp)
 {
@@ -20884,7 +20887,7 @@ bool CvUnit::canAcquirePromotion(PromotionTypes ePromotion,bool bMustMaintainChe
 /*************************************************************************************************/
 	if ((GC.getPromotionInfo(ePromotion).isPrereqInCity() || GC.getPromotionInfo(ePromotion).getNumPrereqBuildingORs() > 0 || GC.getPromotionInfo(ePromotion).getNumPrereqBuildingANDs() > 0))
 	{
-		if (plot() == NULL || !plot()->isCity())
+		if (plot() == NULL || !plot()->isCity()|| !(plot()->getImprovementType()!=NO_IMPROVEMENT && GC.getImprovementInfo((ImprovementTypes)plot()->getImprovementType()).isActsAsCity()))
 		{
 			return false;
 		}
@@ -25945,6 +25948,11 @@ void CvUnit::castDamage(int spell, CvPlot* pTargetPlot)
 	CvPlot* pLoopPlot;
 	bool* bUnitHit = NULL;
 	bool bValid=true;
+	bool bStartWar = true;
+	if (GET_PLAYER(getOwner()).isBarbarian())
+	{
+		bStartWar = false ;
+	}
 	for (int i = -iRange; i <= iRange; ++i)
 	{
 		for (int j = -iRange; j <= iRange; ++j)
@@ -25981,12 +25989,12 @@ void CvUnit::castDamage(int spell, CvPlot* pTargetPlot)
 									{
 										if (!pLoopUnit->isResisted(this, spell))
 										{
-											pLoopUnit->doDamage((iDmg / 2) + GC.getGameINLINE().getSorenRandNum(iDmg, "doDamage"), iDmgLimit, this, iDmgType, true);
+											pLoopUnit->doDamage((iDmg / 2) + GC.getGameINLINE().getSorenRandNum(iDmg, "doDamage"), iDmgLimit, this, iDmgType, bStartWar);
 										}
 									}
 									else
 									{
-										pLoopUnit->doDamage((iDmg / 2) + GC.getGameINLINE().getSorenRandNum(iDmg, "doDamage"), iDmgLimit, this, iDmgType, true);
+										pLoopUnit->doDamage((iDmg / 2) + GC.getGameINLINE().getSorenRandNum(iDmg, "doDamage"), iDmgLimit, this, iDmgType, bStartWar);
 									}
 								}
 							}
@@ -26051,7 +26059,7 @@ void CvUnit::castDamage(int spell, CvPlot* pTargetPlot)
 							}
 							if (pBestUnit != NULL)
 							{
-								pBestUnit->doDamage(iDmg, iDmgLimit, this, iDmgType, true);
+								pBestUnit->doDamage(iDmg, iDmgLimit, this, iDmgType, bStartWar);
 								bUnitHit[iBestUnitCounter] = true;
 							}
 						}
@@ -26802,7 +26810,7 @@ void CvUnit::castCreateUnit(int spell, CvPlot* pTargetPlot)
 					{
 						if (GC.getSpellInfo((SpellTypes)spell).isCopyCastersPromotions())
 						{
-							if (!GC.getPromotionInfo((PromotionTypes)iI).isEquipment() && !GC.getPromotionInfo((PromotionTypes)iI).isRace() && !GC.getPromotionInfo((PromotionTypes)iI).isEffectProm() && iI != GC.getDefineINT("GREAT_COMMANDER_PROMOTION") && !GC.getPromotionInfo((PromotionTypes)iI).isGraphicalAddOnPromotion())
+							if (!GC.getPromotionInfo((PromotionTypes)iI).isEquipment() && !GC.getPromotionInfo((PromotionTypes)iI).isRace() && !GC.getPromotionInfo((PromotionTypes)iI).isCompanion() && !GC.getPromotionInfo((PromotionTypes)iI).isEffectProm() && iI != GC.getDefineINT("GREAT_COMMANDER_PROMOTION") && !GC.getPromotionInfo((PromotionTypes)iI).isGraphicalAddOnPromotion())
 							{
 								pUnit->setHasPromotion((PromotionTypes)iI, true);
 							}

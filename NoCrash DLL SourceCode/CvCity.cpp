@@ -3620,7 +3620,7 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 	}
 	if (GC.getBuildingInfo(eBuilding).getPlotRadius() != 0)
 	{
-		if (GC.getBuildingInfo(eBuilding).getPlotRadius() == getPlotRadius())
+		if (GC.getBuildingInfo(eBuilding).getPlotRadius() == getPlotRadius() && !bCheckStillValid)
 		{
 			return false;
 		}
@@ -9334,6 +9334,7 @@ void CvCity::changeProximityFreeXP(float fChange)
 void CvCity::changeProximityGold(float fChange)
 {
 	m_fProximityGold = m_fProximityGold + fChange;
+	updateCommerce();
 	updateMaintenance();
 }
 void CvCity::changeProximityGPP(float fChange)
@@ -12025,17 +12026,17 @@ int CvCity::getCommerceRateTimes100(CommerceTypes eIndex) const
 /**																								**/
 /**							Includes Modifiers due to Unit Proximity							**/
 /*************************************************************************************************/
-	if (eIndex == COMMERCE_CULTURE)
-	{
-		iRate += int(getProximityCulture() * getTotalCommerceRateModifier(COMMERCE_CULTURE));
-		iRate += int(getPerPopCulture() * getPopulation() * getTotalCommerceRateModifier(COMMERCE_CULTURE));
-
-	}
-	if (eIndex == COMMERCE_GOLD)
-	{
-		iRate += int(getProximityGold() * getTotalCommerceRateModifier(COMMERCE_GOLD));
-		iRate += int(getPerPopGold() * getPopulation() * getTotalCommerceRateModifier(COMMERCE_GOLD));
-	}
+//	if (eIndex == COMMERCE_CULTURE)
+		//	{
+//		iRate += int(getProximityCulture() * getTotalCommerceRateModifier(COMMERCE_CULTURE));
+//		iRate += int(getPerPopCulture() * getPopulation() * getTotalCommerceRateModifier(COMMERCE_CULTURE));
+		//
+		//	}
+//	if (eIndex == COMMERCE_GOLD)
+//	{
+//		iRate += int(getProximityGold() * getTotalCommerceRateModifier(COMMERCE_GOLD));
+//		iRate += int(getPerPopGold() * getPopulation() * getTotalCommerceRateModifier(COMMERCE_GOLD));
+//	}
 
 /*************************************************************************************************/
 /**	People's Choice							END													**/
@@ -12123,6 +12124,16 @@ int CvCity::getBaseCommerceRateTimes100(CommerceTypes eIndex) const
 /*************************************************************************************************/
 	//Crime
 	iBaseCommerceRate += 100 * getPerCrimeEffectCommerce(eIndex) * getNumCrimeEffects();
+
+	if (eIndex == COMMERCE_GOLD) {
+		iBaseCommerceRate += 100 * getProximityGold();
+		iBaseCommerceRate+=100* getPerPopGold() * getPopulation();
+	}
+	if (eIndex == COMMERCE_CULTURE) {
+		iBaseCommerceRate += 100 * getProximityCulture();
+		iBaseCommerceRate += 100 * getPerPopCulture() * getPopulation();
+	}
+
 	return iBaseCommerceRate;
 }
 
@@ -12151,8 +12162,8 @@ void CvCity::updateCommerce(CommerceTypes eIndex)
 	{
 		iNewCommerce = (getBaseCommerceRateTimes100(eIndex) * getTotalCommerceRateModifier(eIndex)) / 100;
 		iNewCommerce += getYieldRate(YIELD_PRODUCTION) * getProductionToCommerceModifier(eIndex);
-		iNewCommerce += getTradeCommerce(eIndex);
-		iNewCommerce += getPerCrimeEffectCommerce(eIndex) * getNumCrimeEffects();
+	//	iNewCommerce += getTradeCommerce(eIndex);
+	//	iNewCommerce += getPerCrimeEffectCommerce(eIndex) * getNumCrimeEffects();
 	}
 
 	if (iOldCommerce != iNewCommerce)

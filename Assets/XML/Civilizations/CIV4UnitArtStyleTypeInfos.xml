@@ -757,6 +757,14 @@
 						<MiddleArtDefineTag>ART_DEF_UNIT_KRAKEN_DEMON</MiddleArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
+				<StyleUnit><!--Scorpion demon-->
+					<UnitType>UNIT_SCORPION</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_SCORPION_DEMON</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_SCORPION_DEMON</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_SCORPION_DEMON</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
 			</StyleUnits>
 		</UnitArtStyleTypeInfo>
 		<UnitArtStyleTypeInfo>	<!--Dwarf-->

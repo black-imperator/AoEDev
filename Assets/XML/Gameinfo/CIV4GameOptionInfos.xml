@@ -552,6 +552,13 @@
 			<bDefault>1</bDefault>
 			<bVisible>1</bVisible>
 		</GameOptionInfo>
+		<GameOptionInfo>		<!-- Can Gift -->
+			<Type>GAMEOPTION_CAN_GIFT</Type>
+			<Description>TXT_KEY_GAME_OPTION_CAN_GIFT</Description>
+			<Help>TXT_KEY_GAME_OPTION_CAN_GIFT_HELP</Help>
+			<bDefault>0</bDefault>
+			<bVisible>1</bVisible>
+		</GameOptionInfo>
 		<GameOptionInfo>		<!-- No Autocast -->
 			<Type>GAMEOPTION_NO_AUTOCAST</Type>
 			<Description>TXT_KEY_GAME_OPTION_NO_AUTOCAST</Description>
@@ -563,6 +570,13 @@
 			<Type>GAMEOPTION_NO_NATIONAL_LIMIT</Type>
 			<Description>TXT_KEY_GAME_OPTION_NO_NATIONAL_LIMIT</Description>
 			<Help>TXT_KEY_GAME_OPTION_NO_NATIONAL_LIMIT_HELP</Help>
+			<bDefault>0</bDefault>
+			<bVisible>1</bVisible>
+		</GameOptionInfo>
+		<GameOptionInfo>		<!-- unique is good -->
+			<Type>GAMEOPTION_UNIQUE_IS_GOOD</Type>
+			<Description>TXT_KEY_GAME_OPTION_UNIQUE_IS_GOOD</Description>
+			<Help>TXT_KEY_GAME_OPTION_UNIQUE_IS_GOOD_HELP</Help>
 			<bDefault>0</bDefault>
 			<bVisible>1</bVisible>
 		</GameOptionInfo>

@@ -14,7 +14,9 @@
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
-			<PrereqCivics>CIVIC_MAGOCRACY</PrereqCivics>
+			<PrereqCivics>
+				<PrereqCivic>CIVIC_MAGOCRACY</PrereqCivic>
+			</PrereqCivics>
 			<MinionPromotions>
 				<PromotionType>PROMOTION_ARCANE_BATTLE_SUPPORT</PromotionType>
 			</MinionPromotions>
@@ -46,7 +48,9 @@
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
-			<PrereqCivics>CIVIC_MAGOCRACY</PrereqCivics>
+			<PrereqCivics>
+				<PrereqCivic>CIVIC_MAGOCRACY</PrereqCivic>
+			</PrereqCivics>
 			<iExtraSupport>1</iExtraSupport>
 			<MinionPromotions>
 				<PromotionType>PROMOTION_ARCANE_AUXILIARY1</PromotionType>
@@ -75,7 +79,9 @@
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
-			<PrereqCivics>CIVIC_MAGOCRACY</PrereqCivics>
+			<PrereqCivics>
+				<PrereqCivic>CIVIC_MAGOCRACY</PrereqCivic>
+			</PrereqCivics>
 			<iExtraSupport>1</iExtraSupport>
 			<MinionPromotions>
 				<PromotionType>PROMOTION_ARCANE_AUXILIARY2</PromotionType>
@@ -190,7 +196,9 @@
 			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Promotions/ArcaneAuxiliary1.dds</Button>
 			<bOverrideHelpText>1</bOverrideHelpText>
 			<iMinLevel>-1</iMinLevel>
-			<PrereqCivics>CIVIC_MAGOCRACY</PrereqCivics>
+			<PrereqCivics>
+				<PrereqCivic>CIVIC_MAGOCRACY</PrereqCivic>
+			</PrereqCivics>
 			<PromotionAllows>
 				<Promotion>PROMOTION_AIR1</Promotion>
 				<Promotion>PROMOTION_BODY1</Promotion>
@@ -297,7 +305,9 @@
 			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Promotions/ArcaneAuxiliary2.dds</Button>
 			<bOverrideHelpText>1</bOverrideHelpText>
 			<iMinLevel>-1</iMinLevel>
-			<PrereqCivics>CIVIC_MAGOCRACY</PrereqCivics>
+			<PrereqCivics>
+				<PrereqCivic>CIVIC_MAGOCRACY</PrereqCivic>
+			</PrereqCivics>
 			<PromotionAllows>
 				<Promotion>PROMOTION_AIR2</Promotion>
 				<Promotion>PROMOTION_BODY2</Promotion>
@@ -1633,7 +1643,9 @@
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
-			<PrereqCivics>CIVIC_THEOCRACY</PrereqCivics>
+			<PrereqCivics>
+				<PrereqCivic>CIVIC_THEOCRACY</PrereqCivic>
+			</PrereqCivics>
 			<PrereqPromotionANDs>
 				<PrereqPromotionAND>
 					<PromotionType>PROMOTION_CHANNELING2</PromotionType>
@@ -1663,7 +1675,9 @@
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
-			<PrereqCivics>CIVIC_THEOCRACY</PrereqCivics>
+			<PrereqCivics>
+				<PrereqCivic>CIVIC_THEOCRACY</PrereqCivic>
+			</PrereqCivics>
 			<iExtraSupport>1</iExtraSupport>
 			<MinionPromotions>
 				<PromotionType>PROMOTION_DIVINE_BATTLE_SUPPORT</PromotionType>
@@ -1738,7 +1752,9 @@
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
-			<PrereqCivics>CIVIC_MAFIOCRACY</PrereqCivics>
+			<PrereqCivics>
+				<PrereqCivic>CIVIC_MAFIOCRACY</PrereqCivic>
+			</PrereqCivics>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
@@ -1811,7 +1827,9 @@
 			<Type>PROMOTION_C_ADVENTURING</Type>
 			<Description>TXT_KEY_PROMOTION_C_ADVENTURING</Description>
 			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Promotions/Culture.dds</Button>
-			<PrereqCivics>CIVIC_NATIONHOOD</PrereqCivics>
+			<PrereqCivics>
+				<PrereqCivic>CIVIC_NATIONHOOD</PrereqCivic>
+			</PrereqCivics>
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
@@ -1845,7 +1863,9 @@
 			<Description>TXT_KEY_PROMOTION_C_PACIFISM</Description>
 			<Help>TXT_KEY_PROMOTION_C_PACIFISM_HELP</Help>
 			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Promotions/Culture.dds</Button>
-			<PrereqCivics>CIVIC_PACIFISM</PrereqCivics>
+			<PrereqCivics>
+				<PrereqCivic>CIVIC_PACIFISM</PrereqCivic>
+			</PrereqCivics>
 			<PrereqInBorderEnemy>1</PrereqInBorderEnemy>
 			<PrereqInBorderNone>1</PrereqInBorderNone>
 			<PrereqInBorderRival>1</PrereqInBorderRival>
@@ -1900,7 +1920,9 @@
 			<Type>PROMOTION_C_SECLUSION</Type>
 			<Description>TXT_KEY_PROMOTION_C_SECLUSION</Description>
 			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Promotions/Culture.dds</Button>
-			<PrereqCivics>CIVIC_RELIGION</PrereqCivics>
+			<PrereqCivics>
+				<PrereqCivic>CIVIC_RELIGION</PrereqCivic>
+			</PrereqCivics>
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
@@ -1952,7 +1974,9 @@
 			<Type>PROMOTION_C_EXCESS</Type>
 			<Description>TXT_KEY_PROMOTION_C_EXCESS</Description>
 			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Promotions/Culture.dds</Button>
-			<PrereqCivics>CIVIC_CONSUMPTION</PrereqCivics>
+			<PrereqCivics>
+				<PrereqCivic>CIVIC_CONSUMPTION</PrereqCivic>
+			</PrereqCivics>
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP> 
@@ -2006,7 +2030,9 @@
 			<Type>PROMOTION_C_TINKERING</Type>
 			<Description>TXT_KEY_PROMOTION_C_TINKERING</Description>
 			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Promotions/Culture.dds</Button>
-			<PrereqCivics>CIVIC_SCHOLARSHIP</PrereqCivics>
+			<PrereqCivics>
+				<PrereqCivic>CIVIC_CONSUMPTION</PrereqCivic>
+			</PrereqCivics>
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP> 
@@ -2060,7 +2086,9 @@
 			<Type>PROMOTION_C_RAPTURED</Type>
 			<Description>TXT_KEY_PROMOTION_C_RAPTURED</Description>
 			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Promotions/Culture.dds</Button>
-			<PrereqCivics>CIVIC_SOCIAL_ORDER</PrereqCivics>
+			<PrereqCivics>
+				<PrereqCivic>CIVIC_SOCIAL_ORDER</PrereqCivic>
+			</PrereqCivics>
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP> 
@@ -2114,7 +2142,9 @@
 			<Type>PROMOTION_C_FREEDOM</Type>
 			<Description>TXT_KEY_PROMOTION_C_FREEDOM</Description>
 			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Promotions/Culture.dds</Button>
-			<PrereqCivics>CIVIC_LIBERTY</PrereqCivics>
+			<PrereqCivics>
+				<PrereqCivic>CIVIC_LIBERTY</PrereqCivic>
+			</PrereqCivics>
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP> 
@@ -2169,7 +2199,9 @@
 			<Description>TXT_KEY_PROMOTION_C_DECLINE</Description>
 			<Help>TXT_KEY_PROMOTION_C_DECLINE_HELP</Help>
 			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Promotions/Culture.dds</Button>
-			<PrereqCivics>CIVIC_SACRIFICE_THE_WEAK</PrereqCivics>
+			<PrereqCivics>
+				<PrereqCivic>CIVIC_SACRIFICE_THE_WEAK</PrereqCivic>
+			</PrereqCivics>
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
@@ -2230,7 +2262,9 @@
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
-			<PrereqCivics>CIVIC_TRIBALISM</PrereqCivics>
+			<PrereqCivics>
+				<PrereqCivic>CIVIC_TRIBALISM</PrereqCivic>
+			</PrereqCivics>
 			<iSlaveGenerationChance>30</iSlaveGenerationChance>
 			<bPrereqAliveCapture>1</bPrereqAliveCapture>
 			<CaptureUnitClass>UNITCLASS_WARRIOR</CaptureUnitClass>
@@ -2301,7 +2335,9 @@
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
-			<PrereqCivics>CIVIC_APPRENTICESHIP</PrereqCivics>
+			<PrereqCivics>
+				<PrereqCivic>CIVIC_APPRENTICESHIP</PrereqCivic>
+			</PrereqCivics>
 			<iMinLevel>6</iMinLevel>
 			<UnitCombats>
 				<UnitCombat>
@@ -2323,7 +2359,9 @@
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
-			<PrereqCivics>CIVIC_APPRENTICESHIP</PrereqCivics>
+			<PrereqCivics>
+				<PrereqCivic>CIVIC_APPRENTICESHIP</PrereqCivic>
+			</PrereqCivics>
 			<iMinLevel>6</iMinLevel>
 			<UnitCombats>
 				<UnitCombat>
@@ -2345,7 +2383,9 @@
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
-			<PrereqCivics>CIVIC_APPRENTICESHIP</PrereqCivics>
+			<PrereqCivics>
+				<PrereqCivic>CIVIC_APPRENTICESHIP</PrereqCivic>
+			</PrereqCivics>
 			<iMinLevel>6</iMinLevel>
 			<UnitCombats>
 				<UnitCombat>
@@ -2367,7 +2407,9 @@
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
-			<PrereqCivics>CIVIC_APPRENTICESHIP</PrereqCivics>
+			<PrereqCivics>
+				<PrereqCivic>CIVIC_APPRENTICESHIP</PrereqCivic>
+			</PrereqCivics>
 			<iMinLevel>6</iMinLevel>
 			<UnitCombats>
 				<UnitCombat>
@@ -2389,7 +2431,9 @@
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
-			<PrereqCivics>CIVIC_APPRENTICESHIP</PrereqCivics>
+			<PrereqCivics>
+				<PrereqCivic>CIVIC_APPRENTICESHIP</PrereqCivic>
+			</PrereqCivics>
 			<iMinLevel>6</iMinLevel>
 			<UnitCombats>
 				<UnitCombat>
@@ -2411,7 +2455,9 @@
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
-			<PrereqCivics>CIVIC_APPRENTICESHIP</PrereqCivics>
+			<PrereqCivics>
+				<PrereqCivic>CIVIC_APPRENTICESHIP</PrereqCivic>
+			</PrereqCivics>
 			<iMinLevel>6</iMinLevel>
 			<UnitCombats>
 				<UnitCombat>
@@ -2433,7 +2479,9 @@
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
-			<PrereqCivics>CIVIC_APPRENTICESHIP</PrereqCivics>
+			<PrereqCivics>
+				<PrereqCivic>CIVIC_APPRENTICESHIP</PrereqCivic>
+			</PrereqCivics>
 			<iMinLevel>6</iMinLevel>
 			<UnitCombats>
 				<UnitCombat>
@@ -2455,7 +2503,9 @@
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
-			<PrereqCivics>CIVIC_APPRENTICESHIP</PrereqCivics>
+			<PrereqCivics>
+				<PrereqCivic>CIVIC_APPRENTICESHIP</PrereqCivic>
+			</PrereqCivics>
 			<iMinLevel>6</iMinLevel>
 			<UnitCombats>
 				<UnitCombat>
@@ -2477,7 +2527,9 @@
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
-			<PrereqCivics>CIVIC_APPRENTICESHIP</PrereqCivics>
+			<PrereqCivics>
+				<PrereqCivic>CIVIC_APPRENTICESHIP</PrereqCivic>
+			</PrereqCivics>
 			<iMinLevel>6</iMinLevel>
 			<UnitCombats>
 				<UnitCombat>
@@ -2499,7 +2551,9 @@
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
-			<PrereqCivics>CIVIC_APPRENTICESHIP</PrereqCivics>
+			<PrereqCivics>
+				<PrereqCivic>CIVIC_APPRENTICESHIP</PrereqCivic>
+			</PrereqCivics>
 			<iMinLevel>12</iMinLevel>
 			<iExtraSupport>1</iExtraSupport>
 			<CityBonuses>
@@ -2682,7 +2736,9 @@
 			<Description>TXT_KEY_PROMOTION_NOMADIC</Description>
 			<Help>TXT_KEY_PROMOTION_NOMADIC_HELP</Help>
 			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Promotions/Nomadic.dds</Button>
-			<PrereqCivics>CIVIC_DECENTRALIZATION</PrereqCivics>
+			<PrereqCivics>
+				<PrereqCivic>CIVIC_DECENTRALIZATION</PrereqCivic>
+			</PrereqCivics>
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<UnitCombats>

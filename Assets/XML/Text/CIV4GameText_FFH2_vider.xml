@@ -1493,11 +1493,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MESSAGE_EYES_AND_EARS_NETWORK_FREE_TECH</Tag>
-		<English>You received a free Tech from the Eyes and Ears Network</English>
-		<French>Vous avez reçu une technologie gratuite de la part du réseau des Yeux et Oreilles</French>
+		<English>You received %s1 as a free Tech from the Eyes and Ears Network</English>
+		<French>Vous avez reçu gratuitement la technologie %s1 de la part du réseau des Yeux et Oreilles</French>
 		<German>Du empfängst eine Technologie vom Netzwerk der Augen und Ohren</German>
-		<Italian>You received a free Tech from the Eyes and Ears Network</Italian>
-		<Spanish>You received a free Tech from the Eyes and Ears Network</Spanish>
+		<Italian>You received %s1 as a free Tech from the Eyes and Ears Network</Italian>
+		<Spanish>You received %s1 as a free Tech from the Eyes and Ears Network</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MESSAGE_FEAR</Tag>

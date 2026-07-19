@@ -178,6 +178,7 @@
 					<iCombat>30</iCombat>
 				</DamageTypeCombat>
 			</DamageTypeCombats>
+			<PyPerTurn>spellSnowfallPassive(pCaster)</PyPerTurn>
 		</UnitInfo>
 		<UnitInfo>		<!-- Aquilan -->						<!--FROZEN-->
 			<Class>UNITCLASS_KNIGHT</Class>

@@ -42875,6 +42875,7 @@
 			</CityBonuses>
 			<Button>Art/units/Civs/Mazatl/coatl_fixed/CoatlannButton.dds</Button>
 			<ExtraArtType>ART_DEF_UNIT_COUATL</ExtraArtType>
+			<bCompanion>1</bCompanion>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Pixie Companion -->
 			<Type>PROMOTION_PIXIE_COMPANION</Type>
@@ -42893,6 +42894,7 @@
 			</CityBonuses>
 			<Button>Art/units/spawns/fairy/fairy.dds</Button>
 			<ExtraArtType>ART_DEF_UNIT_PIXIE</ExtraArtType>
+			<bCompanion>1</bCompanion>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Loireag Companion -->
 			<Type>PROMOTION_LOIREAG_COMPANION</Type>
@@ -42910,6 +42912,7 @@
 			</CityBonuses>
 			<Button>Art/units/spawns/fairy/fairy.dds</Button>
 			<ExtraArtType>ART_DEF_UNIT_LOIREAG</ExtraArtType>
+			<bCompanion>1</bCompanion>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- PseudoDragon Companion -->
 			<Type>PROMOTION_PSEUDODRAGON_COMPANION</Type>
@@ -42919,6 +42922,7 @@
 			<bNoXP>1</bNoXP>
 					<Button>Art/Interface/Buttons/Units/Eurabatres.dds</Button>
 			<ExtraArtType>ART_DEF_UNIT_PSEUDODRAGON</ExtraArtType>
+			<bCompanion>1</bCompanion>
 			<DamageTypeCombats>
 				<DamageTypeCombat>
 					<DamageType>DAMAGE_POISON</DamageType>
@@ -42936,6 +42940,7 @@
 			<iMinLevel>-1</iMinLevel>
 					<Button>Art/Interface/Buttons/promotions/companions/amicus.dds</Button>
 			<ExtraArtType>ART_DEF_UNIT_AMICUS</ExtraArtType>
+			<bCompanion>1</bCompanion>
 				<fFreeXPCap>50</fFreeXPCap>
 			<iNoBadExplore>10</iNoBadExplore>
 			<iFreeXPPerTurn>0.5</iFreeXPPerTurn>
@@ -42986,6 +42991,7 @@
 			<bNoXP>1</bNoXP>
 					<Button>Art/Interface/Buttons/promotions/companions/appeleur.dds</Button>
 			<ExtraArtType>ART_DEF_UNIT_APPELEUR</ExtraArtType>
+			<bCompanion>1</bCompanion>
 			<iWithdrawalChange>20</iWithdrawalChange>
 			<iNoBadExplore>20</iNoBadExplore>
 		</PromotionInfo>

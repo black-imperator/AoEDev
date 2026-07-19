@@ -87,48 +87,6 @@ def spellWintering(pCaster):
 						if iOwnerTeam != iFrozenTeam:
 							pUnit.setHasPromotion(iWintered, True)
 
-def spellSnowfallPassive(caster):
-	gc			= CyGlobalContext()
-	if gc.getGame().isNetworkMultiPlayer(): # In a multiplayer game, this spell causes OOS (because pyRequirement is local context, but terraforming is global context)
-		return False
-	getInfoType	= gc.getInfoTypeForString
-	randNum		= CyGame().getSorenRandNum
-	iX = caster.getX()
-	iY = caster.getY()
-	getPlot		= CyMap().plot
-	pPlot 		= getPlot(iX, iY)
-	iFlames 	= getInfoType('FEATURE_FLAMES')
-	iFloodPlains= getInfoType('FEATURE_FLOOD_PLAINS')
-	iForest 	= getInfoType('FEATURE_FOREST')
-	iJungle 	= getInfoType('FEATURE_JUNGLE')
-	iScrub 		= getInfoType('FEATURE_SCRUB')
-	iSmoke 		= getInfoType('IMPROVEMENT_SMOKE')
-	iIce 		= getInfoType('FEATURE_ICE')
-	for iiX,iiY in RANGE2:
-		pLoopPlot = getPlot(iX+iiX,iY+iiY)
-		if not pPlot.isNone():
-			iRnd = randNum(12, "Snowfall") + 6
-			if not pLoopPlot.isWater():
-				if pLoopPlot.getTerrainType() != iTundra:
-					pLoopPlot.setTempTerrainType(iTundra, iRnd)
-					if pLoopPlot.getImprovementType() == iSmoke:
-						pLoopPlot.setImprovementType(-1)
-					iFeature = pLoopPlot.getFeatureType()
-					if iFeature == iForest:
-						pLoopPlot.setFeatureType(iForest, 2)
-					if iFeature == iJungle:
-						pLoopPlot.setFeatureType(iForest, 2)
-					if iFeature == iFlames:
-						pLoopPlot.setFeatureType(-1, -1)
-					if iFeature == iFloodPlains:
-						pLoopPlot.setFeatureType(-1, -1)
-					if iFeature == iScrub:
-						pLoopPlot.setFeatureType(-1, -1)
-			if pPlot.isWater():
-				if pPlot.getFeatureType() != iIce:
-					pPlot.setFeatureType(iIce, 0)
-	return False
-
 def reqFreezeForest(caster):
 	pPlot = caster.plot()
 	pPlayer = gc.getPlayer(caster.getOwner())

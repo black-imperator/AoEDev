@@ -8402,7 +8402,7 @@
 				</TriggerText>
 			</TriggerTexts>
 			<iPercentGamesActive>100</iPercentGamesActive>
-			<iWeight>5</iWeight>
+			<iWeight>1000</iWeight>
 			<iMaxOurLandmass>-1</iMaxOurLandmass>
 			<iNumUnits>1</iNumUnits>
 			<iUnitExperienceWeight>1</iUnitExperienceWeight>

@@ -3509,7 +3509,11 @@ class CvEventManager:
 		eLeader		= pPlayer.getLeaderType()
 		iCiv		= pPlayer.getCivilizationType()
 		iPop		= pCity.getPopulation()
-
+		
+		if gc.getInfoTypeForString("MODULE_IMPORTANT_LEADERS") != -1:
+			if pPlayer.hasTrait(gc.getInfoTypeForString("TRAIT_TYRANT")):
+				pCity.setNumRealBuilding(gc.getInfoTypeForString("BUILDING_TYRANT"), 1)
+				
 		if eLeader == gc.getInfoTypeForString("LEADER_SAUROS"):
 			if   iCiv == self.Civilizations["Clan of Embers"]:
 				pCity.setCityClass(gc.getInfoTypeForString("CITYCLASS_SAUROS_CLAN"))

@@ -8731,6 +8731,38 @@
 		<Spanish>Prevents Autocasting. Recommended for Multiplayer</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_GAME_OPTION_CAN_GIFT</Tag>
+		<English>Gifts Allowed</English>
+		<French>Gifts Allowed</French>
+		<German>Gifts Allowed</German>
+		<Italian>Gifts Allowed</Italian>
+		<Spanish>Gifts Allowed</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GAME_OPTION_CAN_GIFT_HELP</Tag>
+		<English>Units can be gifted to other players.</English>
+		<French>Units can be gifted to other players.</French>
+		<German>Units can be gifted to other players.</German>
+		<Italian>Units can be gifted to other players.</Italian>
+		<Spanish>Units can be gifted to other players.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GAME_OPTION_UNIQUE_IS_GOOD</Tag>
+		<English>Unique is Good</English>
+		<French>Unique is Good</French>
+		<German>Unique is Good</German>
+		<Italian>Unique is Good</Italian>
+		<Spanish>Unique is Good</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GAME_OPTION_UNIQUE_IS_GOOD_HELP</Tag>
+		<English>Unique Lair results are considered good results, thus more likely to spawn when the lairs are explored with trained lair explorers.</English>
+		<French>Unique Lair results are considered good results, thus more likely to spawn when the lairs are explored with trained lair explorers.</French>
+		<German>Unique Lair results are considered good results, thus more likely to spawn when the lairs are explored with trained lair explorers.</German>
+		<Italian>Unique Lair results are considered good results, thus more likely to spawn when the lairs are explored with trained lair explorers.</Italian>
+		<Spanish>Unique Lair results are considered good results, thus more likely to spawn when the lairs are explored with trained lair explorers.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_ARMAGEDDON_COUNTER_COMBAT</Tag>
 		<English>[ICON_BULLET]%D1_Bonus%% of Armageddon Counter as additional Strength modifier </English>
 		<French>[ICON_BULLET]%D1_Bonus%% of Armageddon Counter as additional Strength modifier </French>
@@ -13097,12 +13129,12 @@ Your unit is even more surprised to realise there are two figures standing besid
 		<English>Overcouncil Peacekeeping</English>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_</Tag>
-		<English></English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
+		<Tag>TXT_KEY_PROMOTION_ONLY_DEFENSIVE_PEDIA</Tag>
+		<English>[ICON_BULLET]Unit cannot attack.</English>
+		<French>[ICON_BULLET]Unit cannot attack.</French>
+		<German>[ICON_BULLET]Unit cannot attack.</German>
+		<Italian>[ICON_BULLET]Unit cannot attack.</Italian>
+		<Spanish>[ICON_BULLET]Unit cannot attack.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_</Tag>

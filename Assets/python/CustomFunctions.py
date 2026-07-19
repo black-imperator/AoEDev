@@ -2241,14 +2241,15 @@ class CustomFunctions:
 				pPlayer.setHasTrait((iTrait),True,-1,True,True)
 			else:
 				pPlayer.setHasTrait((iTrait),True)
-		if randFlag < 10: pPlayer.setHasFlag(gc.getInfoTypeForString("FLAG_PERPENTACH_BODY_SWITCH"),True)
-		if pCapital.isNone():return
-		iColor		= CyGame().getSorenRandNum(123, "Insane Color Pick")
-		szMessage	= CyTranslator().getText("TXT_KEY_INSANE_HELP", (gc.getTraitInfo(lTraits[0]).getDescription(), gc.getTraitInfo(lTraits[1]).getDescription(), gc.getTraitInfo(lTraits[2]).getDescription(),))
-		iMessage	= InterfaceMessageTypes.MESSAGE_TYPE_MINOR_EVENT
-		lIcon		= ["Art/Interface/Buttons/General/happy_person.dds", "Art/Interface/mainscreen/cityscreen/angry_citizen.dds", "Art/Interface/Buttons/General/unhealthy_person.dds", "Art/Interface/Buttons/WorldBuilder/Crab.dds"]
-		iIcon		= lIcon[CyGame().getSorenRandNum(len(lIcon), "Insane Icon Pick")]
-		CyInterface().addMessage(iPlayer, True, 25, szMessage, '', 3, iIcon, ColorTypes(iColor), pCapital.getX(), pCapital.getY(), True, True)
+		if randFlag < 10: 
+			pPlayer.setHasFlag(gc.getInfoTypeForString("FLAG_PERPENTACH_BODY_SWITCH"),True)
+			if pCapital.isNone():return
+			iColor		= CyGame().getSorenRandNum(123, "Insane Color Pick")
+			szMessage	= CyTranslator().getText("TXT_KEY_INSANE_HELP", (gc.getTraitInfo(lTraits[0]).getDescription(), gc.getTraitInfo(lTraits[1]).getDescription(), gc.getTraitInfo(lTraits[2]).getDescription(),))
+			iMessage	= InterfaceMessageTypes.MESSAGE_TYPE_MINOR_EVENT
+			lIcon		= ["Art/Interface/Buttons/General/happy_person.dds", "Art/Interface/mainscreen/cityscreen/angry_citizen.dds", "Art/Interface/Buttons/General/unhealthy_person.dds", "Art/Interface/Buttons/WorldBuilder/Crab.dds"]
+			iIcon		= lIcon[CyGame().getSorenRandNum(len(lIcon), "Insane Icon Pick")]
+			CyInterface().addMessage(iPlayer, True, 25, szMessage, '', 3, iIcon, ColorTypes(iColor), pCapital.getX(), pCapital.getY(), True, True)
 
 	def doAdaptive(self, iPlayer, iTurn):
 		gc			= CyGlobalContext()
@@ -3029,7 +3030,6 @@ class CustomFunctions:
 		gc			= CyGlobalContext()
 		lRelTechs	= [	self.Techs["Corruption of Spirit"],		self.Techs["Orders from Heaven"],	self.Techs["Way of the Forests"],	self.Techs["Way of the Earthmother"],
 						self.Techs["Message from the Deep"],	self.Techs["Honor"],				self.Techs["Deception"],			self.Techs["White Hand"]]
-
 		if not iTechType in lRelTechs:						return
 		pPlayer		= gc.getPlayer(iPlayer)
 		if not self.canReceiveReligionUnit(pPlayer):		return
@@ -3498,7 +3498,7 @@ class CustomFunctions:
 			if iCount < 3:							continue
 			pTeam.setHasTech(iTech, True, iPlayer, False, True)
 
-			szText		= CyTranslator().getText("TXT_KEY_MESSAGE_EYES_AND_EARS_NETWORK_FREE_TECH", ())
+			szText		= CyTranslator().getText("TXT_KEY_MESSAGE_EYES_AND_EARS_NETWORK_FREE_TECH", (gc.getTechInfo(iTech).getDescription(),))
 			szSound		= 'AS2D_TECH_DING'
 			iMessage	= InterfaceMessageTypes.MESSAGE_TYPE_MINOR_EVENT
 			szArt		= 'Art/Interface/Buttons/Buildings/Eyesandearsnetwork.dds'

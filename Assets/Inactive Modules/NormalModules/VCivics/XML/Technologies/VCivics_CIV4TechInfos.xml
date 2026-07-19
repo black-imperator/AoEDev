@@ -5,18 +5,14 @@
 		<TechInfo>		<!-- Mathematics -->
 			<Type>TECH_MATHEMATICS</Type>
 			<iCost>1600</iCost>
-			<iGridX>8</iGridX>
 		</TechInfo>
 		<TechInfo>		<!-- Engineering -->
 			<Type>TECH_ENGINEERING</Type>
 			<iCost>2400</iCost>
-			<iGridX>9</iGridX>
 		</TechInfo>
 		<TechInfo>		<!-- Alchemy -->
 			<Type>TECH_ALCHEMY</Type>
 			<Era>ERA_CLASSICAL</Era> <!-- was Medieval -->
-			<iGridX>9</iGridX>
-			<iGridY>25</iGridY>
 			<OrPreReqs>
 				<PrereqTech>TECH_STEAM_POWER</PrereqTech>
 				<PrereqTech>TECH_ENGINEERING</PrereqTech>
@@ -25,8 +21,6 @@
 		<TechInfo>		<!-- Steam Power -->
 			<Type>TECH_STEAM_POWER</Type>
 			<Era>ERA_CLASSICAL</Era> <!-- was Ancient -->
-			<iGridX>5</iGridX>
-			<iGridY>27</iGridY>
 			<OrPreReqs>
 				<PrereqTech>TECH_KNOWLEDGE_OF_THE_ETHER</PrereqTech>
 			</OrPreReqs>

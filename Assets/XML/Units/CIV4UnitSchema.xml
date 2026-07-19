@@ -1543,6 +1543,8 @@
 	<ElementType name="bPrereqAlive" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bPrereqAliveCapture" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bRace" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bMentalEffect" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bCompanion" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bGraphicalSwap" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bRemovedByCasting" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bRemovedByCombat" content="textOnly" dt:type="boolean"/>
@@ -1949,6 +1951,8 @@
 		<element type="bPrereqAlive"/>
 		<element type="bPrereqAliveCapture"/>
 		<element type="bRace"/>
+		<element type="bMentalEffect"/>
+		<element type="bCompanion"/>
 		<element type="bGraphicalSwap"/>
 		<element type="bRemovedByCasting"/>
 		<element type="bRemovedByCombat"/>

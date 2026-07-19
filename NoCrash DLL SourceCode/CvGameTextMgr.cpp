@@ -711,7 +711,6 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 		szTempBuffer.Format(SETCOLR L"%s" ENDCOLR, GET_PLAYER(pUnit->getVisualOwner(NO_TEAM)).getPlayerTextColorR(), GET_PLAYER(pUnit->getVisualOwner(NO_TEAM)).getPlayerTextColorG(), GET_PLAYER(pUnit->getVisualOwner(NO_TEAM)).getPlayerTextColorB(), GET_PLAYER(pUnit->getVisualOwner(NO_TEAM)).getPlayerTextColorA(), GET_PLAYER(pUnit->getVisualOwner(NO_TEAM)).getName());
 		szString.append(szTempBuffer);
 	}
-
 	for (int iI = 0; iI < GC.getNumPromotionInfos(); ++iI)
 	{
 		if (pUnit->isHasPromotion((PromotionTypes)iI))
@@ -818,6 +817,11 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 				szString.append(gDLL->getText("TXT_KEY_UNIT_CAN_CAST", pUnit->getCastingLimit()+1));
 			}
 		}
+	}
+	if (pUnit->isImmortal())
+	{
+		szString.append(NEWLINE);
+		szString.append(gDLL->getText("TXT_KEY_PROMOTION_IMMORTAL_PEDIA"));
 	}
 	if (pUnit->isBlind())
 	{
@@ -7330,6 +7334,21 @@ void CvGameTextMgr::parseTraits(CvWStringBuffer &szHelpString, TraitTypes eTrait
 		{
 			szHelpString.append(gDLL->getText("TXT_KEY_TRAIT_CIVIC_UPKEEP_MODIFIER", GC.getTraitInfo(eTrait).getUpkeepModifier()));
 		}
+		if (GC.getTraitInfo(eTrait).getHappyPerMilitaryUnit() != 0)
+		{
+			CvWString szHappyString;
+			if (GC.getTraitInfo(eTrait).getHappyPerMilitaryUnit() * 0.01f == int(GC.getTraitInfo(eTrait).getHappyPerMilitaryUnit() * 0.01f))
+			{
+				szHappyString.Format(L"%.0f", 0.01f * GC.getTraitInfo(eTrait).getHappyPerMilitaryUnit());
+			}
+			else
+			{
+				szHappyString.Format(L"%.2f", 0.01f * GC.getTraitInfo(eTrait).getHappyPerMilitaryUnit());
+			}
+			szHelpString.append(NEWLINE);
+			szHelpString.append(gDLL->getText("TXT_KEY_CIVIC_UNIT_HAPPINESS", szHappyString.GetCString(), (GC.getTraitInfo(eTrait).getHappyPerMilitaryUnit() > 0 ? gDLL->getSymbolID(HAPPY_CHAR) : gDLL->getSymbolID(UNHAPPY_CHAR))));
+		}
+
 		// iDistanceMaintenanceModifier
 		if (GC.getTraitInfo(eTrait).getDistanceMaintenanceModifier() != 0)
 		{
@@ -10875,6 +10894,16 @@ void CvGameTextMgr::parsePromotionHelp(CvWStringBuffer &szBuffer, PromotionTypes
 		szBuffer.append(pcNewline);
 		szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_RACE_PEDIA", GC.getPromotionInfo(ePromotion).getDescription()));
 	}
+	if (GC.getPromotionInfo(ePromotion).isCompanion())
+	{
+		szBuffer.append(pcNewline);
+		szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_COMPANION_PEDIA", GC.getPromotionInfo(ePromotion).getDescription()));
+	}
+	if (GC.getPromotionInfo(ePromotion).isMentalEffect())
+	{
+		szBuffer.append(pcNewline);
+		szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_MENTAL_EFFECT_PEDIA" ));
+	}
 	if (GC.getPromotionInfo(ePromotion).isDispellable())
 	{
 		szBuffer.append(NEWLINE);
@@ -13959,6 +13988,11 @@ void CvGameTextMgr::parsePromotionHelp(CvWStringBuffer &szBuffer, PromotionTypes
 	{
 		szBuffer.append(pcNewline);
 		szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_BOARDING_PEDIA"));
+	}
+	if (GC.getPromotionInfo(ePromotion).isOnlyDefensive())
+	{
+		szBuffer.append(pcNewline);
+		szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_ONLY_DEFENSIVE_PEDIA"));
 	}
 	if (GC.getPromotionInfo(ePromotion).getCaptureUnitCombat() != NO_UNITCOMBAT)
 	{
@@ -20319,46 +20353,6 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 /**	GWSLocalSpecialist																		END	**/
 /*************************************************************************************************/
 	}
-	for (iI = 0; iI < GC.getNumSpecialistClassInfos(); ++iI)
-	{
-		if (bBufferEmpty[iI])
-			continue;
-		szFirstBuffer = gDLL->getText("TXT_KEY_BUILDING_FROM_IN_ALL_CITIES", szSpecialistNameBuffer[iI].GetCString());
-		setYieldChangeHelp(szBuffer, L"", L"", szFirstBuffer, kBuilding.getSpecialistClassYieldChangeArray(iI));
-		/*************************************************************************************************/
-		/**	GWSLocalSpecialist																	Milaga	**/
-		/** Buildings can change give bonuses to specialists in only one city							**/
-		/*************************************************************************************************/
-		szFirstBuffer = gDLL->getText("TXT_KEY_BUILDING_FROM_IN_LOCAL", szSpecialistNameBuffer[iI].GetCString());
-		setYieldChangeHelp(szBuffer, L"", L"", szFirstBuffer, kBuilding.getLocalSpecialistClassYieldChangeArray(iI));
-		/*************************************************************************************************/
-		/**	GWSLocalSpecialist																		END	**/
-		/*************************************************************************************************/
-	}
-	for (iI = 0; iI < GC.getNumSpecialistClassInfos(); ++iI)
-	{
-		if (bBufferEmpty[iI])
-			continue;
-		if (kBuilding.getSpecialistClassCount(iI) > 0)
-		{
-			if (kBuilding.getSpecialistClassCount(iI) == 1)
-			{
-				szBuffer.append(NEWLINE);
-				szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_TURN_CITIZEN_INTO", szSpecialistNameBuffer[iI].GetCString()));
-			}
-			else
-			{
-				szBuffer.append(NEWLINE);
-				szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_TURN_CITIZENS_INTO", kBuilding.getSpecialistClassCount(iI), szSpecialistNameBuffer[iI].GetCString()));
-			}
-		}
-
-//		if (kBuilding.getFreeSpecialistClassCount(iI) > 0)
-//		{
-//			szBuffer.append(NEWLINE);
-//			szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_FREE_SPECIALIST", kBuilding.getFreeSpecialistClassCount(iI), szSpecialistNameBuffer[iI].GetCString(), szSpecialistNameBuffer[iI].GetCString()));
-//		}
-	}
 	SAFE_DELETE_ARRAY(szSpecialistNameBuffer);
 	SAFE_DELETE_ARRAY(bBufferEmpty);
 
@@ -22364,12 +22358,18 @@ void CvGameTextMgr::buildBuildingRequiresString(CvWStringBuffer& szBuffer, Build
 				if (kBuilding.getPrereqBuildingClassAtRange(eLoopBuildingClass) > 0)
 				{
 					eLoopBuilding = ((BuildingTypes)(GC.getCivilizationInfo(GET_PLAYER(ePlayer).getCivilizationType()).getCivilizationBuildings(iLoopBuildingClass)));
-					szTempBuffer.Format(L"%s%s", NEWLINE, gDLL->getText("TXT_KEY_BUILDING_REQUIRES_BUILDING_AT_RANGE", GC.getBuildingInfo(eLoopBuilding).getTextKeyWide(), kBuilding.getPrereqBuildingClassAtRange(eLoopBuildingClass)).c_str());
+					if (eLoopBuilding != NO_BUILDING)
+					{
+						szTempBuffer.Format(L"%s%s", NEWLINE, gDLL->getText("TXT_KEY_BUILDING_REQUIRES_BUILDING_AT_RANGE", GC.getBuildingInfo(eLoopBuilding).getTextKeyWide(), kBuilding.getPrereqBuildingClassAtRange(eLoopBuildingClass)).c_str());
+					}
 				}
 				else
 				{
 					eLoopBuilding = ((BuildingTypes)(GC.getCivilizationInfo(GET_PLAYER(ePlayer).getCivilizationType()).getCivilizationBuildings(iLoopBuildingClass)));
-					szTempBuffer.Format(L"%s%s", NEWLINE, gDLL->getText("TXT_KEY_BUILDING_REQUIRES_BUILDING_AT_ANY_RANGE", GC.getBuildingInfo(eLoopBuilding).getTextKeyWide()).c_str());
+					if (eLoopBuilding != NO_BUILDING)
+					{
+						szTempBuffer.Format(L"%s%s", NEWLINE, gDLL->getText("TXT_KEY_BUILDING_REQUIRES_BUILDING_AT_ANY_RANGE", GC.getBuildingInfo(eLoopBuilding).getTextKeyWide()).c_str());
+					}
 				}
 				szBuffer.append(szTempBuffer);
 
@@ -26480,16 +26480,18 @@ void CvGameTextMgr::setImprovementHelp(CvWStringBuffer &szBuffer, ImprovementTyp
 /**																								**/
 /**						Allows improvements to grant specific specialists						**/
 /*************************************************************************************************/
-	if (info.getFreeSpecialistClass() != NO_SPECIALIST)
+	if (info.getFreeSpecialistClass() != NO_SPECIALISTCLASS)
 	{
 		szBuffer.append(NEWLINE);
 		if (info.getPrereqCivilization() == NO_CIVILIZATION)
 		{
-			szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_FREE_SPECIALISTS", GC.getSpecialistInfo((SpecialistTypes) info.getFreeSpecialistClass()).getDescription()));
+			int eSpecialist = GC.getSpecialistClassInfo((SpecialistClassTypes)info.getFreeSpecialistClass()).getDefaultSpecialistIndex();
+			szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_FREE_SPECIALISTS", GC.getSpecialistInfo((SpecialistTypes)eSpecialist).getTextKeyWide(), GC.getSpecialistInfo((SpecialistTypes)eSpecialist).getDescription()));
 		}
 		else
 		{
-			szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_FREE_SPECIALISTS_CIV", GC.getSpecialistInfo((SpecialistTypes) info.getFreeSpecialistClass()).getDescription(), GC.getCivilizationInfo((CivilizationTypes) info.getPrereqCivilization()).getDescription()));
+			int eSpecialist = GC.getCivilizationInfo((CivilizationTypes)info.getPrereqCivilization()).getCivilizationSpecialists(info.getFreeSpecialistClass());
+			szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_FREE_SPECIALISTS_CIV", GC.getSpecialistInfo((SpecialistTypes)eSpecialist).getDescription(), GC.getCivilizationInfo((CivilizationTypes) info.getPrereqCivilization()).getDescription()));
 		}
 	}
 	if (info.getWorkingCityCrime() != 0)
@@ -28628,7 +28630,8 @@ void CvGameTextMgr::setCommerceHelp(CvWStringBuffer &szBuffer, CvCity& city, Com
 	szBuffer.append(NEWLINE);
 
 //FfH: Modified by Kael 12/19/2007
-	int iSpecialistCommerce = city.getSpecialistCommerce(eCommerceType) + city.getExtraSpecialistCommerce(eCommerceType);
+	int iSpecialistCommerce = city.getSpecialistCommerce(eCommerceType); //+ city.getExtraSpecialistCommerce(eCommerceType);
+	//int iSpecialistCommerce = 0;
 /*************************************************************************************************/
 /**	GWSLocalSpecialist																	Milaga	**/
 /** Buildings can change give bonuses to specialists in only one city							**/
@@ -28640,7 +28643,7 @@ void CvGameTextMgr::setCommerceHelp(CvWStringBuffer &szBuffer, CvCity& city, Com
 				city.getSpecialistClassCount((SpecialistClassTypes)iI)
 				+ city.getFreeSpecialistClassCount((SpecialistClassTypes)iI)
 			)
-			* city.getLocalSpecialistClassCommerce((SpecialistClassTypes)iI, eCommerceType)
+			*(GET_PLAYER(city.getOwner()).getSpecialistClassExtraCommerce((SpecialistClassTypes)iI, eCommerceType))+ city.getLocalSpecialistClassCommerce((SpecialistClassTypes)iI, eCommerceType)
 		);
 	}
 /*************************************************************************************************/
@@ -28706,8 +28709,24 @@ void CvGameTextMgr::setCommerceHelp(CvWStringBuffer &szBuffer, CvCity& city, Com
 			iBaseCommerceRate += 100 * CrimeCommerce;
 		}
 	}
+
+	// Crime
+	int CrimeCommerce = city.getPerCrimeEffectCommerce(eCommerceType) * city.getNumCrimeEffects();
+	if (0 != CrimeCommerce)
+	{
+		szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_YIELD_CRIME", CrimeCommerce, info.getChar()));
+		szBuffer.append(NEWLINE);
+		iBaseCommerceRate += 100 * CrimeCommerce;
+	}
 	if (eCommerceType == COMMERCE_GOLD)
 	{
+		int ProxiCommerce = city.getProximityGold();
+		if (0 != ProxiCommerce)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_YIELD_PROXIMITY", ProxiCommerce, info.getChar()));
+			szBuffer.append(NEWLINE);
+			iBaseCommerceRate += 100 * ProxiCommerce;
+		}
 		int CrimeCommerce = city.getPerPopGold() * city.getPopulation();
 		if (0 != CrimeCommerce)
 		{
@@ -28716,17 +28735,29 @@ void CvGameTextMgr::setCommerceHelp(CvWStringBuffer &szBuffer, CvCity& city, Com
 			iBaseCommerceRate += 100 * CrimeCommerce;
 		}
 	}
-	// Crime
-	int CrimeCommerce = city.getPerCrimeEffectCommerce(eCommerceType)*city.getNumCrimeEffects();
-	if (0 != CrimeCommerce)
+	if (eCommerceType == COMMERCE_CULTURE)
 	{
-		szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_YIELD_CRIME", CrimeCommerce, info.getChar()));
-		szBuffer.append(NEWLINE);
-		iBaseCommerceRate += 100 * CrimeCommerce;
+		int ProxiCommerce = city.getProximityCulture();
+		if (0 != ProxiCommerce)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_YIELD_PROXIMITY", ProxiCommerce, info.getChar()));
+			szBuffer.append(NEWLINE);
+			iBaseCommerceRate += 100 * ProxiCommerce;
+		}
+		int CrimeCommerce = city.getPerPopCulture() * city.getPopulation();
+		if (0 != CrimeCommerce)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_YIELD_POPULATION", CrimeCommerce, info.getChar()));
+			szBuffer.append(NEWLINE);
+			iBaseCommerceRate += 100 * CrimeCommerce;
+		}
 	}
-
 	FAssertMsg(city.getBaseCommerceRateTimes100(eCommerceType) == iBaseCommerceRate, "Base Commerce rate does not agree with actual value");
 
+	
+	
+
+	
 	int iModifier = 100;
 
 	// Buildings
@@ -28787,6 +28818,22 @@ void CvGameTextMgr::setCommerceHelp(CvWStringBuffer &szBuffer, CvCity& city, Com
 			szBuffer.append(NEWLINE);
 			iModifier += iBonusResearchMod;
 		}
+	}
+	int iBonusCommerceMod = 0;
+	int iNumBonus = 0;
+	for (int eBonus = 0; eBonus < GC.getNumBonusInfos(); eBonus++)
+	{
+		if (GC.getBonusInfo((BonusTypes)eBonus).getCommerceModifier(eCommerceType) != 0)
+		{
+			iNumBonus = owner.getNumAvailableBonuses((BonusTypes)eBonus);
+			iBonusCommerceMod += GC.getBonusInfo((BonusTypes)eBonus).getCommerceModifier(eCommerceType) * iNumBonus;
+		}
+	}
+	if (0 != iBonusCommerceMod)
+	{
+		szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_YIELD_BONUS", iBonusCommerceMod, info.getChar()));
+		szBuffer.append(NEWLINE);
+		iModifier += iBonusCommerceMod;
 	}
 
 	// Trait

@@ -4081,6 +4081,8 @@ m_bPrereqAlive(false),
 m_bPrereqRevealed(false),
 m_bPrereqHidden(false),
 m_bRace(false),
+m_bMentalEffect(false),
+m_bCompanion(false),
 m_bGraphicalAddOnPromotion(false),
 m_bRemovedByCasting(false),
 m_bRemovedByCombat(false),
@@ -5323,6 +5325,14 @@ bool CvPromotionInfo::isPrereqHidden() const
 bool CvPromotionInfo::isRace() const
 {
 	return m_bRace;
+}
+bool CvPromotionInfo::isMentalEffect() const
+{
+	return m_bMentalEffect;
+}
+bool CvPromotionInfo::isCompanion() const
+{
+	return m_bCompanion;
 }
 bool CvPromotionInfo::isGraphicalAddOnPromotion() const
 {
@@ -6665,6 +6675,8 @@ void CvPromotionInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_bPrereqRevealed);
 	stream->Read(&m_bPrereqHidden);
 	stream->Read(&m_bRace);
+	stream->Read(&m_bMentalEffect);
+	stream->Read(&m_bCompanion);
 	stream->Read(&m_bGraphicalAddOnPromotion);
 	stream->Read(&m_bRemovedByCasting);
 	stream->Read(&m_bRemovedByCombat);
@@ -7394,6 +7406,8 @@ void CvPromotionInfo::write(FDataStreamBase* stream)
 	stream->Write(m_bPrereqRevealed);
 	stream->Write(m_bPrereqHidden);
 	stream->Write(m_bRace);
+	stream->Write(m_bMentalEffect);
+	stream->Write(m_bCompanion);
 	stream->Write(m_bGraphicalAddOnPromotion);
 	stream->Write(m_bRemovedByCasting);
 	stream->Write(m_bRemovedByCombat);
@@ -8080,6 +8094,8 @@ bool CvPromotionInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bPrereqRevealed, "bPrereqRevealed");
 	pXML->GetChildXmlValByName(&m_bPrereqHidden, "bPrereqHidden");
 	pXML->GetChildXmlValByName(&m_bRace, "bRace");
+	pXML->GetChildXmlValByName(&m_bMentalEffect, "bMentalEffect");
+	pXML->GetChildXmlValByName(&m_bCompanion, "bCompanion");
 	pXML->GetChildXmlValByName(&m_bGraphicalAddOnPromotion, "bGraphicalSwap");
 	pXML->GetChildXmlValByName(&m_bRemovedByCasting, "bRemovedByCasting");
 	pXML->GetChildXmlValByName(&m_bRemovedByCombat, "bRemovedByCombat");
@@ -8690,6 +8706,8 @@ void CvPromotionInfo::copyNonDefaults(CvPromotionInfo* pClassInfo, CvXMLLoadUtil
 	if (isPrereqRevealed() 						== false)				m_bPrereqRevealed 					= pClassInfo->isPrereqRevealed();
 	if (isPrereqHidden() 						== false)				m_bPrereqHidden 					= pClassInfo->isPrereqHidden();
 	if (isRace()								== false)				m_bRace								= pClassInfo->isRace();
+	if (isMentalEffect() == false)				m_bMentalEffect = pClassInfo->isMentalEffect();
+	if (isCompanion() == false)				m_bCompanion = pClassInfo->isCompanion();
 	if (isGraphicalAddOnPromotion() 			== false)				m_bGraphicalAddOnPromotion 			= pClassInfo->isGraphicalAddOnPromotion();
 	if (isRemovedByCasting()					== false)				m_bRemovedByCasting					= pClassInfo->isRemovedByCasting();
 	if (isRemovedByCombat()						== false)				m_bRemovedByCombat					= pClassInfo->isRemovedByCombat();
@@ -31396,6 +31414,11 @@ CvString CvGoodyInfo::getBarbarianCivilizationVectorElement(int i)		{return m_as
 /*************************************************************************************************/
 bool CvGoodyInfo::isBad() const
 {
+	if (GC.getGame().isOption(GAMEOPTION_UNIQUE_IS_GOOD) && isUnique())
+	{
+		return true;
+	}
+
 	return m_bBad;
 }
 
@@ -41625,6 +41648,7 @@ m_iParentTrait(NO_TRAIT),
 
 m_iHealth(0),
 m_iHappiness(0),
+m_iHappyPerMilitaryUnit(0),
 m_iMaxAnarchy(0),
 m_iFreeBuildingClass(NO_BUILDINGCLASS),
 m_iUpkeepModifier(0),
@@ -41913,6 +41937,10 @@ int CvTraitInfo::getHealth() const
 int CvTraitInfo::getHappiness() const
 {
 	return m_iHappiness;
+}
+int CvTraitInfo::getHappyPerMilitaryUnit() const
+{
+	return m_iHappyPerMilitaryUnit;
 }
 
 int CvTraitInfo::getMaxAnarchy() const
@@ -42489,6 +42517,7 @@ bool CvTraitInfo::read(CvXMLLoadUtility* pXML)
 	
 	pXML->GetChildXmlValByName(&m_iHealth, "iHealth");
 	pXML->GetChildXmlValByName(&m_iHappiness, "iHappiness");
+	pXML->GetChildXmlValByName(&m_iHappyPerMilitaryUnit, "iHappyPerMilitaryUnit");
 	pXML->GetChildXmlValByName(&m_iMaxAnarchy, "iMaxAnarchy", -1);
 	pXML->GetChildXmlValByName(szTextVal, "FreeBuilding");
 	m_iFreeBuildingClassforPass3 = szTextVal;
@@ -43123,6 +43152,7 @@ void CvTraitInfo::copyNonDefaults(CvTraitInfo* pClassInfo, CvXMLLoadUtility* pXM
 	if (getModReligionSpreadChance() == 0)			m_iModReligionSpreadChance = pClassInfo->getModReligionSpreadChance();
 	if (getHealth() == 0)			m_iHealth = pClassInfo->getHealth();
 	if (getHappiness() == 0)			m_iHappiness = pClassInfo->getHappiness();
+	if (getHappyPerMilitaryUnit() == 0)			m_iHappyPerMilitaryUnit = pClassInfo->getHappyPerMilitaryUnit();
 	if (getUpkeepModifier() == 0)			m_iUpkeepModifier = pClassInfo->getUpkeepModifier();
 	if (getDistanceMaintenanceModifier() == 0)			m_iDistanceMaintenanceModifier = pClassInfo->getDistanceMaintenanceModifier();
 	if (getRitualProductionModifier() == 0)			m_iRitualProductionModifier = pClassInfo->getRitualProductionModifier();

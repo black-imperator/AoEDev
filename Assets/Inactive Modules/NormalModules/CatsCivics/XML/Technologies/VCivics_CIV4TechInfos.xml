@@ -13,9 +13,7 @@
 		<TechInfo>		<!-- Alchemy -->
 			<Type>TECH_ALCHEMY</Type>
 			<Era>ERA_CLASSICAL</Era> <!-- was Medieval -->
-			<iGridX>6</iGridX>
-			<iGridY>22</iGridY>
-			<OrPreReqs>
+				<OrPreReqs>
 				<PrereqTech>TECH_STEAM_POWER</PrereqTech>
 				<PrereqTech>TECH_ENGINEERING</PrereqTech>
 			</OrPreReqs>
@@ -23,8 +21,6 @@
 		<TechInfo>		<!-- Steam Power -->
 			<Type>TECH_STEAM_POWER</Type>
 			<Era>ERA_CLASSICAL</Era> <!-- was Ancient -->
-			<iGridX>5</iGridX>
-			<iGridY>22</iGridY>
 			<OrPreReqs>
 				<PrereqTech>TECH_KNOWLEDGE_OF_THE_ETHER</PrereqTech>
 			</OrPreReqs>
@@ -45,6 +41,8 @@
 			<iAsset>64</iAsset>
 			<iPower>16</iPower>
 			<bGoodyTech>1</bGoodyTech>
+			<iGridX>12</iGridX>
+			<iGridY>15</iGridY>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GROWTH</FlavorType>

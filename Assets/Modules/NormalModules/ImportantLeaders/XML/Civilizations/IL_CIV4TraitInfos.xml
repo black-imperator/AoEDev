@@ -10,6 +10,7 @@
 			<TraitClass>TRAITCLASS_PERSONALITY</TraitClass>
 			<iHealth>-5</iHealth>
 			<iHappiness>0</iHappiness>
+			<iHappyPerMilitaryUnit>100</iHappyPerMilitaryUnit>
 			<iMaxAnarchy>-1</iMaxAnarchy>
 			<iUpkeepModifier>0</iUpkeepModifier>
 			<iLevelExperienceModifier>0</iLevelExperienceModifier>

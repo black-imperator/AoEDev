@@ -932,6 +932,14 @@
 		<Spanish>[ICON_BULLET]%D1 %F2 from Population</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_MISC_HELP_YIELD_PROXIMITY</Tag>
+		<English>[ICON_BULLET]%D1%F2 from Nearby Units</English>
+		<French>[ICON_BULLET]%D1%F2 from Nearby Units</French>
+		<German>[ICON_BULLET]%D1%F2 from Nearby Units</German>
+		<Italian>[ICON_BULLET]%D1%F2 from Nearby Units</Italian>
+		<Spanish>[ICON_BULLET]%D1 %F2 from Nearby Units</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_MISC_LOST_PROD_CONVERTED</Tag>
 		<English>%s1_CityName can't carry over [ICON_PRODUCTION] overflow any more. The lost %d2_NumProduction[ICON_PRODUCTION] is converted into %d3_NumGold[ICON_GOLD]!</English>
 		<French>%s1_CityName ne peut plus reporter le surplus de [ICON_PRODUCTION]. Les %d2_NumProduction[ICON_PRODUCTION] en excédent sont convertis en %d3_NumGold[ICON_GOLD]!</French>
@@ -2927,11 +2935,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_FREE_SPECIALISTS</Tag>
-		<English>[ICON_BULLET]Provides a free [COLOR_HIGHLIGHT_TEXT][LINK=literal]%s1[\LINK][COLOR_REVERT] to the nearest city</English>
-		<French>[ICON_BULLET]Provides a free [COLOR_HIGHLIGHT_TEXT][LINK=literal]%s1[\LINK][COLOR_REVERT] to the nearest city</French>
-		<German>[ICON_BULLET]Erzeugt einen freien [COLOR_HIGHLIGHT_TEXT][LINK=literal]%s1[\LINK][COLOR_REVERT] für die nahegelegenste Stadt</German>
-		<Italian>[ICON_BULLET]Provides a free [COLOR_HIGHLIGHT_TEXT][LINK=literal]%s1[\LINK][COLOR_REVERT] to the nearest city</Italian>
-		<Spanish>[ICON_BULLET]Provides a free [COLOR_HIGHLIGHT_TEXT][LINK=literal]%s1[\LINK][COLOR_REVERT] to the nearest city</Spanish>
+		<English>[ICON_BULLET]Provides a free [COLOR_HIGHLIGHT_TEXT][LINK=%s1]%s2[\LINK][COLOR_REVERT] to the nearest city</English>
+		<French>[ICON_BULLET]Provides a free [COLOR_HIGHLIGHT_TEXT][LINK=%s1]%s2[\LINK][COLOR_REVERT] to the nearest city</French>
+		<German>[ICON_BULLET]Erzeugt einen freien [COLOR_HIGHLIGHT_TEXT][LINK=%s1]%s2[\LINK][COLOR_REVERT] für die nahegelegenste Stadt</German>
+		<Italian>[ICON_BULLET]Provides a free [COLOR_HIGHLIGHT_TEXT][LINK=%s1]%s2[\LINK][COLOR_REVERT] to the nearest city</Italian>
+		<Spanish>[ICON_BULLET]Provides a free [COLOR_HIGHLIGHT_TEXT][LINK=%s1]%s2[\LINK][COLOR_REVERT] to the nearest city</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_CITY_CRIME_PLOT</Tag>

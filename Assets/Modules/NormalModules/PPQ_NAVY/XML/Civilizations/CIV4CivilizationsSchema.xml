@@ -464,6 +464,7 @@
 	<ElementType name="Help" content="textOnly"/>
 	<ElementType name="iHealth" content="textOnly" dt:type="int"/>
 	<ElementType name="iHappiness" content="textOnly" dt:type="int"/>
+	<ElementType name="iHappyPerMilitaryUnit" content="textOnly" dt:type="int"/>
 	<ElementType name="iMaxAnarchy" content="textOnly" dt:type="int"/>
 	<ElementType name="iUpkeepModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iRelationModifier" content="textOnly" dt:type="int"/>
@@ -728,6 +729,7 @@
 		<element type="iRitualProductionModifier"/>
 		<element type="iMilitaryProductionModifier"/>
 		<element type="iHappiness"/>
+		<element type="iHappyPerMilitaryUnit"/>
 		<element type="iMaxAnarchy"/>
 		<element type="iUpkeepModifier"/>
 		<element type="iRelationModifier"/>

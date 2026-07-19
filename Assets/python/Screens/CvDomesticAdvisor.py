@@ -252,7 +252,13 @@ class CvDomesticAdvisor:
 
 		# Espionage rate...
 		#screen.setTableInt( "CityListBackground", 9, i, unicode(pLoopCity.getCommerceRate(CommerceTypes.COMMERCE_ESPIONAGE)), "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-		screen.setTableInt( "CityListBackground", 9, i, unicode(pLoopCity.getCrime()), "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+		szCrime = unicode(pLoopCity.getCrime())
+		iCrimePerTurn = pLoopCity.getCrimePerTurn()
+		if iCrimePerTurn>0:
+			szCrime+=u" (+"+unicode(iCrimePerTurn)+u")"
+		else:
+			szCrime+=u" ("+unicode(iCrimePerTurn)+u")"
+		screen.setTableInt( "CityListBackground", 9, i,szCrime , "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 
 		# Culture status...
 		szCulture = unicode(pLoopCity.getCommerceRate(CommerceTypes.COMMERCE_CULTURE))
