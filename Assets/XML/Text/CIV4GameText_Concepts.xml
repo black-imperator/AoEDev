@@ -1978,4 +1978,327 @@ multipliers:
 [BOLD]Sky
 [ICON_BULLET]Likes religion, culture and constructing buildings.</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_FREED_CIVILIZATIONS</Tag>
+		<English>Freed Civilizations</English>
+		<French>Freed Civilizations</French>
+		<German>Freed Civilizations</German>
+		<Italian>Freed Civilizations</Italian>
+		<Spanish>Freed Civilizations</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_FREED_CIVILIZATIONS_PEDIA</Tag>
+		<English>Freed Civilizations
+
+Most of the factions of Erebus emerged after the age of ice ended, setting out to stake their claim in the new world they found themselves in.
+But not all of them noticed the age of ice ending.
+Some got comfortable underground, some lost track of time, and others got captured and held prisoner.
+Further still, some may have lacked the numbers and needed time to gather like-minded people to their banner before they could form a nation.
+
+Whatever the reason, these factions have a chance of emerging at later stages of the game, triggered by exploration of lairs associated with their themes or stories.
+
+Things to know:
+
+[ICON_BULLET] If the player is the one who frees a faction, they will be given the option to abandon their current faction and assume control of the freed faction.
+[ICON_BULLET] The freed faction will throw down their first city next to where they were freed. The lair being inside another faction's borders will not stop the freed faction from settling there. 
+[ICON_BULLET] The freed faction will join the game with troops, supplies, workers, and settlers.
+[ICON_BULLET] The number of these units and troops is affected by how many technologies are known by the faction that helped free them. If you know Ironworking, and you free a faction, they will have more melee troops, and they will be upgraded to pikemen, for example.
+[ICON_BULLET]The freed factions' units will also have more experience based on technologies already researched. A freed faction's magic troops will have more starting experience if Strength of Will is known.
+[ICON_BULLET] Freed Civilizations appear with a hero unit related to their faction, if possible.
+
+
+The conditions to see a faction join the game are as follows:
+
+
+[ICON_BULLET] Is the faction already in play? If so, it will not be possible to free them unless the first instance of the faction dies off; then the faction may return at a later point. (Don't call it a comeback!)
+[ICON_BULLET] Is the faction disabled from using the Restrict Random Civilizations game option? Then it will not be freed.
+[ICON_BULLET] Is the No Freed Civilizations game option turned on? Then it will not be freed.
+[ICON_BULLET] Is the lair you are exploring associated with a faction? To find the Kuriotates, for example, you would want to explore Centaur Camps.
+[ICON_BULLET] Is the civilisation evil? Evil Civilizations are generally counted as Bad Lair Events and will be less likely to be found by scouts or heroes, and more likely to be found by other unit types.
+[ICON_BULLET] Freeing a faction is considered a Low Chance Event, meaning that you may not see a freed civilisation appear every game. (Though if the dice roll well, it may become quite the party in Erebus!)
+
+
+Not all factions can be freed.
+As of yet, the factions in the Freed Civilizations system are loosely as follows:
+
+Amurites in places with magic.
+Archos in places with spiders.
+Austrin anywhere.
+Balseraphs in the Tower of Eyes.
+Calabim in places with banditry or death.
+Chislev in places with Bhall's followers.
+Cualli in places with lizardmen.
+Doviello in places with animals.
+Elohim in places of importance.
+Grigori in places with depths for adventurers to explore.
+Hippus in places with Bandits.
+Illians in places with a connection to Ice.
+Khazad in places closer to the Underhome.
+Kuriotates in places with Centaurs.
+Lanun in places with an ocean.
+The Legion in places with the undead.
+Ljosalfar in places with nature.
+Luchuirp in places closer to the Underhome.
+Malakim in places with Scorpions and Lions.
+Mechanos in places with clockwork marvels.
+Mekara in places with banditry and magic.
+Scions in places with access to the afterlife.
+Sheaim in places with corruption, demons and dark magic.
+Sidar in places with undead to hunt.
+Svartalfar in places with nature.
+
+Dungeon lairs can contain nearly anything.
+[NEWLINE]
+[NEWLINE]
+
+</English>
+		<French>Freed Civilizations
+
+Most of the factions of Erebus emerged after the age of ice ended, setting out to stake their claim in the new world they found themselves in.
+But not all of them noticed the age of ice ending.
+Some got comfortable underground, some lost track of time, and others got captured and held prisoner.
+Further still, some may have lacked the numbers and needed time to gather like-minded people to their banner before they could form a nation.
+
+Whatever the reason, these factions have a chance of emerging at later stages of the game, triggered by exploration of lairs associated with their themes or stories.
+
+Things to know:
+
+[ICON_BULLET] If the player is the one who frees a faction, they will be given the option to abandon their current faction and assume control of the freed faction.
+[ICON_BULLET] The freed faction will throw down their first city next to where they were freed. The lair being inside another faction's borders will not stop the freed faction from settling there. 
+[ICON_BULLET] The freed faction will join the game with troops, supplies, workers, and settlers.
+[ICON_BULLET] The number of these units and troops is affected by how many technologies are known by the faction that helped free them. If you know Ironworking, and you free a faction, they will have more melee troops, and they will be upgraded to pikemen, for example.
+[ICON_BULLET]The freed factions' units will also have more experience based on technologies already researched. A freed faction's magic troops will have more starting experience if Strength of Will is known.
+[ICON_BULLET] Freed Civilizations appear with a hero unit related to their faction, if possible.
+
+
+The conditions to see a faction join the game are as follows:
+
+
+[ICON_BULLET] Is the faction already in play? If so, it will not be possible to free them unless the first instance of the faction dies off; then the faction may return at a later point. (Don't call it a comeback!)
+[ICON_BULLET] Is the faction disabled from using the Restrict Random Civilizations game option? Then it will not be freed.
+[ICON_BULLET] Is the No Freed Civilizations game option turned on? Then it will not be freed.
+[ICON_BULLET] Is the lair you are exploring associated with a faction? To find the Kuriotates, for example, you would want to explore Centaur Camps.
+[ICON_BULLET] Is the civilisation evil? Evil Civilizations are generally counted as Bad Lair Events and will be less likely to be found by scouts or heroes, and more likely to be found by other unit types.
+[ICON_BULLET] Freeing a faction is considered a Low Chance Event, meaning that you may not see a freed civilisation appear every game. (Though if the dice roll well, it may become quite the party in Erebus!)
+
+
+Not all factions can be freed.
+As of yet, the factions in the Freed Civilizations system are loosely as follows:
+
+Amurites in places with magic.
+Archos in places with spiders.
+Austrin anywhere.
+Balseraphs in the Tower of Eyes.
+Calabim in places with banditry or death.
+Chislev in places with Bhall's followers.
+Cualli in places with lizardmen.
+Doviello in places with animals.
+Elohim in places of importance.
+Grigori in places with depths for adventurers to explore.
+Hippus in places with Bandits.
+Illians in places with a connection to Ice.
+Khazad in places closer to the Underhome.
+Kuriotates in places with Centaurs.
+Lanun in places with an ocean.
+The Legion in places with the undead.
+Ljosalfar in places with nature.
+Luchuirp in places closer to the Underhome.
+Malakim in places with Scorpions and Lions.
+Mechanos in places with clockwork marvels.
+Mekara in places with banditry and magic.
+Scions in places with access to the afterlife.
+Sheaim in places with corruption, demons and dark magic.
+Sidar in places with undead to hunt.
+Svartalfar in places with nature.
+
+Dungeon lairs can contain nearly anything.
+[NEWLINE]
+[NEWLINE]</French>
+		<German>Freed Civilizations
+
+Most of the factions of Erebus emerged after the age of ice ended, setting out to stake their claim in the new world they found themselves in.
+But not all of them noticed the age of ice ending.
+Some got comfortable underground, some lost track of time, and others got captured and held prisoner.
+Further still, some may have lacked the numbers and needed time to gather like-minded people to their banner before they could form a nation.
+
+Whatever the reason, these factions have a chance of emerging at later stages of the game, triggered by exploration of lairs associated with their themes or stories.
+
+Things to know:
+
+[ICON_BULLET] If the player is the one who frees a faction, they will be given the option to abandon their current faction and assume control of the freed faction.
+[ICON_BULLET] The freed faction will throw down their first city next to where they were freed. The lair being inside another faction's borders will not stop the freed faction from settling there. 
+[ICON_BULLET] The freed faction will join the game with troops, supplies, workers, and settlers.
+[ICON_BULLET] The number of these units and troops is affected by how many technologies are known by the faction that helped free them. If you know Ironworking, and you free a faction, they will have more melee troops, and they will be upgraded to pikemen, for example.
+[ICON_BULLET]The freed factions' units will also have more experience based on technologies already researched. A freed faction's magic troops will have more starting experience if Strength of Will is known.
+[ICON_BULLET] Freed Civilizations appear with a hero unit related to their faction, if possible.
+
+
+The conditions to see a faction join the game are as follows:
+
+
+[ICON_BULLET] Is the faction already in play? If so, it will not be possible to free them unless the first instance of the faction dies off; then the faction may return at a later point. (Don't call it a comeback!)
+[ICON_BULLET] Is the faction disabled from using the Restrict Random Civilizations game option? Then it will not be freed.
+[ICON_BULLET] Is the No Freed Civilizations game option turned on? Then it will not be freed.
+[ICON_BULLET] Is the lair you are exploring associated with a faction? To find the Kuriotates, for example, you would want to explore Centaur Camps.
+[ICON_BULLET] Is the civilisation evil? Evil Civilizations are generally counted as Bad Lair Events and will be less likely to be found by scouts or heroes, and more likely to be found by other unit types.
+[ICON_BULLET] Freeing a faction is considered a Low Chance Event, meaning that you may not see a freed civilisation appear every game. (Though if the dice roll well, it may become quite the party in Erebus!)
+
+
+Not all factions can be freed.
+As of yet, the factions in the Freed Civilizations system are loosely as follows:
+
+Amurites in places with magic.
+Archos in places with spiders.
+Austrin anywhere.
+Balseraphs in the Tower of Eyes.
+Calabim in places with banditry or death.
+Chislev in places with Bhall's followers.
+Cualli in places with lizardmen.
+Doviello in places with animals.
+Elohim in places of importance.
+Grigori in places with depths for adventurers to explore.
+Hippus in places with Bandits.
+Illians in places with a connection to Ice.
+Khazad in places closer to the Underhome.
+Kuriotates in places with Centaurs.
+Lanun in places with an ocean.
+The Legion in places with the undead.
+Ljosalfar in places with nature.
+Luchuirp in places closer to the Underhome.
+Malakim in places with Scorpions and Lions.
+Mechanos in places with clockwork marvels.
+Mekara in places with banditry and magic.
+Scions in places with access to the afterlife.
+Sheaim in places with corruption, demons and dark magic.
+Sidar in places with undead to hunt.
+Svartalfar in places with nature.
+
+Dungeon lairs can contain nearly anything.
+[NEWLINE]
+[NEWLINE]</German>
+		<Italian>Freed Civilizations
+
+Most of the factions of Erebus emerged after the age of ice ended, setting out to stake their claim in the new world they found themselves in.
+But not all of them noticed the age of ice ending.
+Some got comfortable underground, some lost track of time, and others got captured and held prisoner.
+Further still, some may have lacked the numbers and needed time to gather like-minded people to their banner before they could form a nation.
+
+Whatever the reason, these factions have a chance of emerging at later stages of the game, triggered by exploration of lairs associated with their themes or stories.
+
+Things to know:
+
+[ICON_BULLET] If the player is the one who frees a faction, they will be given the option to abandon their current faction and assume control of the freed faction.
+[ICON_BULLET] The freed faction will throw down their first city next to where they were freed. The lair being inside another faction's borders will not stop the freed faction from settling there. 
+[ICON_BULLET] The freed faction will join the game with troops, supplies, workers, and settlers.
+[ICON_BULLET] The number of these units and troops is affected by how many technologies are known by the faction that helped free them. If you know Ironworking, and you free a faction, they will have more melee troops, and they will be upgraded to pikemen, for example.
+[ICON_BULLET]The freed factions' units will also have more experience based on technologies already researched. A freed faction's magic troops will have more starting experience if Strength of Will is known.
+[ICON_BULLET] Freed Civilizations appear with a hero unit related to their faction, if possible.
+
+
+The conditions to see a faction join the game are as follows:
+
+
+[ICON_BULLET] Is the faction already in play? If so, it will not be possible to free them unless the first instance of the faction dies off; then the faction may return at a later point. (Don't call it a comeback!)
+[ICON_BULLET] Is the faction disabled from using the Restrict Random Civilizations game option? Then it will not be freed.
+[ICON_BULLET] Is the No Freed Civilizations game option turned on? Then it will not be freed.
+[ICON_BULLET] Is the lair you are exploring associated with a faction? To find the Kuriotates, for example, you would want to explore Centaur Camps.
+[ICON_BULLET] Is the civilisation evil? Evil Civilizations are generally counted as Bad Lair Events and will be less likely to be found by scouts or heroes, and more likely to be found by other unit types.
+[ICON_BULLET] Freeing a faction is considered a Low Chance Event, meaning that you may not see a freed civilisation appear every game. (Though if the dice roll well, it may become quite the party in Erebus!)
+
+
+Not all factions can be freed.
+As of yet, the factions in the Freed Civilizations system are loosely as follows:
+
+Amurites in places with magic.
+Archos in places with spiders.
+Austrin anywhere.
+Balseraphs in the Tower of Eyes.
+Calabim in places with banditry or death.
+Chislev in places with Bhall's followers.
+Cualli in places with lizardmen.
+Doviello in places with animals.
+Elohim in places of importance.
+Grigori in places with depths for adventurers to explore.
+Hippus in places with Bandits.
+Illians in places with a connection to Ice.
+Khazad in places closer to the Underhome.
+Kuriotates in places with Centaurs.
+Lanun in places with an ocean.
+The Legion in places with the undead.
+Ljosalfar in places with nature.
+Luchuirp in places closer to the Underhome.
+Malakim in places with Scorpions and Lions.
+Mechanos in places with clockwork marvels.
+Mekara in places with banditry and magic.
+Scions in places with access to the afterlife.
+Sheaim in places with corruption, demons and dark magic.
+Sidar in places with undead to hunt.
+Svartalfar in places with nature.
+
+Dungeon lairs can contain nearly anything.
+[NEWLINE]
+[NEWLINE]</Italian>
+		<Spanish>Freed Civilizations
+
+Most of the factions of Erebus emerged after the age of ice ended, setting out to stake their claim in the new world they found themselves in.
+But not all of them noticed the age of ice ending.
+Some got comfortable underground, some lost track of time, and others got captured and held prisoner.
+Further still, some may have lacked the numbers and needed time to gather like-minded people to their banner before they could form a nation.
+
+Whatever the reason, these factions have a chance of emerging at later stages of the game, triggered by exploration of lairs associated with their themes or stories.
+
+Things to know:
+
+[ICON_BULLET] If the player is the one who frees a faction, they will be given the option to abandon their current faction and assume control of the freed faction.
+[ICON_BULLET] The freed faction will throw down their first city next to where they were freed. The lair being inside another faction's borders will not stop the freed faction from settling there. 
+[ICON_BULLET] The freed faction will join the game with troops, supplies, workers, and settlers.
+[ICON_BULLET] The number of these units and troops is affected by how many technologies are known by the faction that helped free them. If you know Ironworking, and you free a faction, they will have more melee troops, and they will be upgraded to pikemen, for example.
+[ICON_BULLET]The freed factions' units will also have more experience based on technologies already researched. A freed faction's magic troops will have more starting experience if Strength of Will is known.
+[ICON_BULLET] Freed Civilizations appear with a hero unit related to their faction, if possible.
+
+
+The conditions to see a faction join the game are as follows:
+
+
+[ICON_BULLET] Is the faction already in play? If so, it will not be possible to free them unless the first instance of the faction dies off; then the faction may return at a later point. (Don't call it a comeback!)
+[ICON_BULLET] Is the faction disabled from using the Restrict Random Civilizations game option? Then it will not be freed.
+[ICON_BULLET] Is the No Freed Civilizations game option turned on? Then it will not be freed.
+[ICON_BULLET] Is the lair you are exploring associated with a faction? To find the Kuriotates, for example, you would want to explore Centaur Camps.
+[ICON_BULLET] Is the civilisation evil? Evil Civilizations are generally counted as Bad Lair Events and will be less likely to be found by scouts or heroes, and more likely to be found by other unit types.
+[ICON_BULLET] Freeing a faction is considered a Low Chance Event, meaning that you may not see a freed civilisation appear every game. (Though if the dice roll well, it may become quite the party in Erebus!)
+
+
+Not all factions can be freed.
+As of yet, the factions in the Freed Civilizations system are loosely as follows:
+
+Amurites in places with magic.
+Archos in places with spiders.
+Austrin anywhere.
+Balseraphs in the Tower of Eyes.
+Calabim in places with banditry or death.
+Chislev in places with Bhall's followers.
+Cualli in places with lizardmen.
+Doviello in places with animals.
+Elohim in places of importance.
+Grigori in places with depths for adventurers to explore.
+Hippus in places with Bandits.
+Illians in places with a connection to Ice.
+Khazad in places closer to the Underhome.
+Kuriotates in places with Centaurs.
+Lanun in places with an ocean.
+The Legion in places with the undead.
+Ljosalfar in places with nature.
+Luchuirp in places closer to the Underhome.
+Malakim in places with Scorpions and Lions.
+Mechanos in places with clockwork marvels.
+Mekara in places with banditry and magic.
+Scions in places with access to the afterlife.
+Sheaim in places with corruption, demons and dark magic.
+Sidar in places with undead to hunt.
+Svartalfar in places with nature.
+
+Dungeon lairs can contain nearly anything.
+[NEWLINE]
+[NEWLINE]</Spanish>
+	</TEXT>
 </Civ4GameText>

@@ -403,5 +403,10 @@
 			<Description>TXT_KEY_CONCEPT_THE_COUNCIL_DYNAMIC_LEADER</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_THE_COUNCIL_DYNAMIC_LEADER_PEDIA</Civilopedia>
 		</ConceptInfo>
+		<ConceptInfo>
+			<Type>CONCEPT_FREED_CIVILISATIONS</Type>
+			<Description>TXT_KEY_CONCEPT_FREED_CIVILIZATIONS</Description>
+			<Civilopedia>TXT_KEY_CONCEPT_FREED_CIVILIZATIONS_PEDIA</Civilopedia>
+		</ConceptInfo>
 	</ConceptInfos>
 </Civ4BasicInfos>

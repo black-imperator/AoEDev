@@ -374,6 +374,10 @@
 					<FeatureType>FEATURE_KELP_FOREST</FeatureType>
 					<iFeatureDefense>25</iFeatureDefense>
 				</FeatureDefense>
+				<FeatureDefense>
+					<FeatureType>FEATURE_REEFS</FeatureType>
+					<iFeatureDefense>25</iFeatureDefense>
+				</FeatureDefense>
 			</FeatureDefenses>
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
@@ -399,7 +403,7 @@
 			</TerrainMoveCosts>
 			<FeatureMoveCosts>
 				<FeatureMoveCost>
-					<FeatureType>FEATURE_KELP</FeatureType>
+					<FeatureType>FEATURE_REEFS</FeatureType>
 					<iFeatureMoveCost>-1</iFeatureMoveCost>
 				</FeatureMoveCost>
 				<FeatureMoveCost>

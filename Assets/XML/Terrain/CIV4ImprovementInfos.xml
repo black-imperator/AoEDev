@@ -13301,6 +13301,7 @@
 			<bPermanent>1</bPermanent>
 			<bExplorable>1</bExplorable>
 			<iLairTier>3</iLairTier>
+			<iExploreDelay>75</iExploreDelay>
 			<GoodyClasses>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_VOLCANO</GoodyClassType>
