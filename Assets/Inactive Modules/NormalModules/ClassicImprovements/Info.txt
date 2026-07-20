@@ -33,3 +33,4 @@ Reduce improvement build times, worker promotion power, add back tech requiremen
 ;Description - text showed in message box
 ;note: can be multiline
 [desc]
+Reduce improvement build times, worker promotion power, add back tech requirements.
