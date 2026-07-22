@@ -13477,6 +13477,8 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 	iUCRanged		= gc.getInfoTypeForString("UNITCLASS_ARCHER")
 	if iCiv == gc.getInfoTypeForString("CIVILIZATION_HIPPUS"):
 		iUCRanged	= gc.getInfoTypeForString("UNITCLASS_HORSEMAN")
+	if iLeader == gc.getInfoTypeForString("LEADER_TRISTESSA"):
+		iUCRanged	= gc.getInfoTypeForString("UNITCLASS_HORSEMAN")
 	iUCRecon		= gc.getInfoTypeForString("UNITCLASS_HUNTER")
 	iUCAdept		= gc.getInfoTypeForString("UNITCLASS_ADEPT")
 	# If you want to spawn nonconventional civs, like D'Tesh you'll need to change Workers/Settlers here
@@ -13559,6 +13561,8 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 		if iCiv == gc.getInfoTypeForString("CIVILIZATION_KHAZAD"):
 			iUCRanged	= gc.getInfoTypeForString("UNITCLASS_CANNON")
 		if iCiv == gc.getInfoTypeForString("CIVILIZATION_HIPPUS"):
+			iUCRanged	= gc.getInfoTypeForString("UNITCLASS_HORSE_ARCHER")
+		if iLeader == gc.getInfoTypeForString("LEADER_TRISTESSA"):
 			iUCRanged	= gc.getInfoTypeForString("UNITCLASS_HORSE_ARCHER")
 		iCountRanged	+= 8
 		iCountWorker	+= 3
@@ -13700,7 +13704,8 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 		# now we need to turn UClass type into a Unit type
 		# we will check civilizationInfos.xml or the base unit if unspecified
 		# lUnit[0] is our UClass id
-		iUnit = gc.getCivilizationInfo(iCiv).getCivilizationUnits(lUnit[0])
+		iUnit = pNewPlayer.getPlayerUnit(lUnit[0])
+		#iUnit = gc.getCivilizationInfo(iCiv).getCivilizationUnits(lUnit[0])
 		# if our unit is none in XML we'll move to the next one
 		if iUnit == -1: continue
 		# lUnit[1] will return us second item in the sublist - count

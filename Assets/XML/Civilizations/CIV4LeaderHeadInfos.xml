@@ -4567,7 +4567,7 @@
 				</ReligionWeightModifier>
 				<ReligionWeightModifier>
 					<ReligionType>RELIGION_THE_EMPYREAN</ReligionType>
-					<iWeightModifier>-100</iWeightModifier>
+					<iWeightModifier>-85</iWeightModifier>
 				</ReligionWeightModifier>
 				<ReligionWeightModifier>
 					<ReligionType>RELIGION_COUNCIL_OF_ESUS</ReligionType>
