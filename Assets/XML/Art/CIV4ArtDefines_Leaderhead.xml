@@ -838,5 +838,13 @@
 			<NoShaderNIF/>
 			<BackgroundKFM/>
 		</LeaderheadArtInfo>
+		<LeaderheadArtInfo> 	<!--Tristessa -->
+			<Type>ART_DEF_LEADER_TRISTESSA</Type>
+			<Button>art/interface/LeaderHeads/ChickstonLillianaButton.dds</Button>
+			<NIF>Art/interface/LeaderHeads/ChickstonLilliana.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
 	</LeaderheadArtInfos>
 </Civ4ArtDefines>

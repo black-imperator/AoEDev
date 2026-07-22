@@ -3057,6 +3057,86 @@
 			<ShortDescription>TXT_KEY_TRAIT_TOLERANT_SHORT</ShortDescription>
 			<bAssimilation>1</bAssimilation>
 		</TraitInfo>
+		<TraitInfo>		<!-- Wellspring of Undeath -->
+			<Type>TRAIT_WELLSPRING_OF_UNDEATH</Type>
+			<TraitClass>TRAITCLASS_PERSONALITY</TraitClass>
+			<Description>TXT_KEY_TRAIT_WELLSPRING_OF_UNDEATH</Description>
+			<Civilopedia>TXT_KEY_TRAIT_WELLSPRING_OF_UNDEATH_PEDIA</Civilopedia>
+			<ShortDescription>TXT_KEY_TRAIT_WELLSPRING_OF_UNDEATH_SHORT</ShortDescription>
+			<Help>TXT_KEY_TRAIT_WELLSPRING_OF_UNDEATH_HELP</Help>
+			<ExtraUnitClasses>
+				<ExtraUnitClass>
+					<UnitClassType>UNITCLASS_WARRIOR</UnitClassType>
+					<UnitType>UNIT_WATCHER</UnitType>
+				</ExtraUnitClass>
+				<ExtraUnitClass>
+					<UnitClassType>UNITCLASS_AXEMAN</UnitClassType>
+					<UnitType>UNIT_SENTINEL</UnitType>
+				</ExtraUnitClass>
+				<ExtraUnitClass>
+					<UnitClassType>UNITCLASS_SPEARMAN</UnitClassType>
+					<UnitType>UNIT_SENTINEL</UnitType>
+				</ExtraUnitClass>
+				<ExtraUnitClass>
+					<UnitClassType>UNITCLASS_PIKEMAN</UnitClassType>
+					<UnitType>UNIT_DEATHS_HEAD</UnitType>
+				</ExtraUnitClass>
+				<ExtraUnitClass>
+					<UnitClassType>UNITCLASS_PIKEMAN</UnitClassType>
+					<UnitType>UNIT_DEATHS_HEAD</UnitType>
+				</ExtraUnitClass>
+				<ExtraUnitClass>
+					<UnitClassType>UNITCLASS_HORSEMAN</UnitClassType>
+					<UnitType>UNIT_HORSEMAN_WELLSPRING</UnitType>
+				</ExtraUnitClass>
+				<ExtraUnitClass>
+					<UnitClassType>UNITCLASS_HORSE_ARCHER</UnitClassType>
+					<UnitType>UNIT_HORSE_ARCHER_WELLSPRING</UnitType>
+				</ExtraUnitClass>
+				<ExtraUnitClass>
+					<UnitClassType>UNITCLASS_KNIGHT</UnitClassType>
+					<UnitType>UNIT_KNIGHT_WELLSPRING</UnitType>
+				</ExtraUnitClass>
+				<ExtraUnitClass>
+					<UnitClassType>UNITCLASS_CHARIOT</UnitClassType>
+					<UnitType>UNIT_UNDEAD_DRAKE_RIDERS</UnitType>
+				</ExtraUnitClass>
+				<ExtraUnitClass>
+					<UnitClassType>UNITCLASS_WAR_CHARIOT</UnitClassType>
+					<UnitType>UNIT_UNDEAD_DRAKE_LORD</UnitType>
+				</ExtraUnitClass>
+			</ExtraUnitClasses>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_DEATH1</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_UNDEAD_HONOUR_GUARD</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
+			</FreePromotions>
+			<FreeBonuses>
+				<FreeBonus>
+					<BonusType>BONUS_MANA_DEATH</BonusType>
+					<bFreeBonus>1</bFreeBonus>
+				</FreeBonus>
+			</FreeBonuses>
+			<FreePromotionUnitCombats>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+			</FreePromotionUnitCombats>
+		</TraitInfo>
 		<TraitInfo>		<!-- Ruthless -->
 			<Type>TRAIT_RUTHLESS</Type>
 			<TraitClass>TRAITCLASS_PERSONALITY</TraitClass>

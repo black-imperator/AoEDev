@@ -13091,6 +13091,15 @@ def reqLairFreeCalabim(argsList):
 
 	return True
 
+def reqLairFreeAshegate(argsList):
+
+	if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_LAIR_CIVILIZATIONS):
+		return False
+	if not gc.getCivilizationInfo(gc.getInfoTypeForString('CIVILIZATION_CALABIM')).isPlayable():
+		return False
+
+	return True
+
 def reqLairFreeChislev(argsList):
 
 	if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_LAIR_CIVILIZATIONS):
@@ -13378,6 +13387,8 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 	iNewCityPlayer = pTomb.getOwner()
 	pTomb.changePopulation(4)
 	pTomb.changeCulture(iNewCityPlayer, iCulture, True)
+	if iLeader == gc.getInfoTypeForString("LEADER_TRISTESSA"):
+		pTomb.setName("Ashgate", False)
 
 	pNewPlayer.changeGoldenAgeTurns(CyGame().goldenAgeLength() + (iTechCount / 3))
 	pNewPlayer.changeGold(iGold)
