@@ -18752,7 +18752,6 @@
 				</UnitCombat>
 			</UnitCombats>
 			<Button>Art/Interface/Buttons/Improvements/bradelineswell.dds</Button>
-			<iMinLevel>-1</iMinLevel>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Undead Honour Guard -->
 			<Type>PROMOTION_UNDEAD_HONOUR_GUARD</Type>
