@@ -15376,11 +15376,6 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_HORSEBACK_RIDING</PrereqTech>
-			<PrereqBonuses>
-				<BonusType>BONUS_HORSE</BonusType>
-				<BonusType>BONUS_NIGHTMARE</BonusType>
-				<BonusType>BONUS_HYAPON</BonusType>
-			</PrereqBonuses>
 			<FreePromotions>
 				<FreePromotion>
 					<PromotionType>PROMOTION_UNDEAD</PromotionType>
@@ -15462,11 +15457,6 @@
 			<TechTypes>
 				<PrereqTech>TECH_ARCHERY</PrereqTech>
 			</TechTypes>
-			<PrereqBonuses>
-				<BonusType>BONUS_HORSE</BonusType>
-				<BonusType>BONUS_NIGHTMARE</BonusType>
-				<BonusType>BONUS_HYAPON</BonusType>
-			</PrereqBonuses>
 			<FreePromotions>
 				<FreePromotion>
 					<PromotionType>PROMOTION_UNDEAD</PromotionType>
@@ -15530,11 +15520,6 @@
 			</UnitAIs>
 			<PrereqBuilding>BUILDING_HIPPODROME</PrereqBuilding>
 			<PrereqTech>TECH_ARMORED_CAVALRY</PrereqTech>
-			<PrereqBonuses>
-				<BonusType>BONUS_HORSE</BonusType>
-				<BonusType>BONUS_NIGHTMARE</BonusType>
-				<BonusType>BONUS_HYAPON</BonusType>
-			</PrereqBonuses>
 			<FreePromotions>
 				<FreePromotion>
 					<PromotionType>PROMOTION_UNDEAD</PromotionType>
@@ -15597,11 +15582,6 @@
 			<TechTypes>
 				<PrereqTech>TECH_FEUDALISM</PrereqTech>
 			</TechTypes>
-			<PrereqBonuses>
-				<BonusType>BONUS_HORSE</BonusType>
-				<BonusType>BONUS_NIGHTMARE</BonusType>
-				<BonusType>BONUS_HYAPON</BonusType>
-			</PrereqBonuses>
 			<FreePromotions>
 				<FreePromotion>
 					<PromotionType>PROMOTION_VAMPIRE</PromotionType>
@@ -15658,11 +15638,6 @@
 			</UnitAIs>
 			<PrereqBuilding>BUILDING_GOVERNORS_MANOR</PrereqBuilding>
 			<PrereqTech>TECH_WARHORSES</PrereqTech>
-			<PrereqBonuses>
-				<BonusType>BONUS_HORSE</BonusType>
-				<BonusType>BONUS_NIGHTMARE</BonusType>
-				<BonusType>BONUS_HYAPON</BonusType>
-			</PrereqBonuses>
 			<FreePromotions>
 				<FreePromotion>
 					<PromotionType>PROMOTION_VAMPIRE</PromotionType>

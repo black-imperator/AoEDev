@@ -1107,7 +1107,7 @@
 				</Leader>
 				<Leader>
 					<LeaderName>LEADER_TRISTESSA</LeaderName>
-					<bLeaderAvailability>1</bLeaderAvailability>
+					<bLeaderAvailability>0</bLeaderAvailability>
 				</Leader>
 			</Leaders>
 			<SecondaryLeaders>

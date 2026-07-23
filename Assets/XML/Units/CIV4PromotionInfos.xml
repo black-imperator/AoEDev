@@ -23635,7 +23635,12 @@
 		<PromotionInfo>		<!-- Crafting Tradition -->
 			<Type>PROMOTION_CRAFTING_TRADITION</Type>
 			<Description>TXT_KEY_PROMOTION_CRAFTING_TRADITION</Description>
-			<iMinLevel>-1</iMinLevel>
+			<bAutoAcquire>1</bAutoAcquire>
+			<bNoXP>1</bNoXP>
+			<PrereqTraits>
+				<PrereqTrait>TRAIT_INDUSTRIOUS</PrereqTrait>
+				<PrereqTrait>TRAIT_INDUSTRIOUS_REPUBLIC</PrereqTrait>
+			</PrereqTraits>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
