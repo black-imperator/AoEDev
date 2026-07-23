@@ -1479,8 +1479,8 @@ public:
 //---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
 	//Magic Rework
 	int getMagicalPower() const;
-//	int getDominionCapacity() const;
-//	int getSpellClassExtraPower(int i) const;
+	int getMinMagicalPower() const;
+	//	int getDominionCapacity() const;
 
 protected:
 
@@ -1524,8 +1524,8 @@ protected:
 	int m_iKamikazePercent;
 	//Magic Rework
 	int m_iMagicalPower;
-//	bool m_iDominionCapacity;
-//	int* m_piSpellClassExtraPower;
+	int m_iMinMagicalPower;
+	//	bool m_iDominionCapacity;
 
 	bool m_bLeader;
 	bool m_bBlitz;
@@ -2254,6 +2254,7 @@ public:
 	int getDamageType() const;
 	int getDelay() const;
 	int getCreateUnitNum() const;
+	int getCreateUnitDuration() const;
 	int getAddPromotionType1() const;
 	int getAddPromotionType2() const;
 	int getAddPromotionType3() const;
@@ -2456,6 +2457,7 @@ protected:
 	int m_iCreateImprovementType;
 	int m_iSpreadReligion;
 	int m_iCreateUnitNum;
+	int m_iCreateUnitDuration;
 	int m_iCreateUnitPromotion;
 	int m_iCreateUnitType;
 	bool m_bCopyCastersPromotions;

@@ -580,6 +580,13 @@
 			<bDefault>0</bDefault>
 			<bVisible>1</bVisible>
 		</GameOptionInfo>
+		<GameOptionInfo>		<!-- NO IDW -->
+			<Type>GAMEOPTION_NO_IDW</Type>
+			<Description>TXT_KEY_GAME_OPTION_NO_IDW</Description>
+			<Help>TXT_KEY_GAME_OPTION_NO_IDW_HELP</Help>
+			<bDefault>0</bDefault>
+			<bVisible>1</bVisible>
+		</GameOptionInfo>
 		<GameOptionInfo>		<!-- Wb Against The Grey -->
 			<Type>GAMEOPTION_WB_AGAINST_THE_GREY</Type>
 			<Description>TXT_KEY_GAME_OPTION_WB_AGAINST_THE_GREY</Description>

@@ -4212,7 +4212,8 @@ m_iDomainCargo(NO_DOMAIN),
 m_iPromotionClassOverwrite(NO_PROMOTIONCLASS),
 
 //Magic Rework
-m_iMagicalPower(0)
+m_iMagicalPower(0),
+m_iMinMagicalPower(0)
 //m_iDominionCapacity(0),
 //m_piSpellClassExtraPower(NULL)
 
@@ -5911,6 +5912,10 @@ int CvPromotionInfo::getMagicalPower() const
 {
 	return m_iMagicalPower;
 }
+int CvPromotionInfo::getMinMagicalPower() const
+{
+	return m_iMinMagicalPower;
+}
 //int CvPromotionInfo::getDominionCapacity() const
 //{
 //	return m_iDominionCapacity;
@@ -6870,11 +6875,9 @@ void CvPromotionInfo::read(FDataStreamBase* stream)
 	//Magic Rework
 
 	stream->Read(&m_iMagicalPower);
+	stream->Read(&m_iMinMagicalPower);
 	//stream->Read(&m_iDominionCapacity);
-	//SAFE_DELETE_ARRAY(m_piSpellClassExtraPower);
-	//m_piSpellClassExtraPower = new int[GC.getNumSpellClassInfos()];
-	//stream->Read(GC.getNumSpellClassInfos(), m_piSpellClassExtraPower);
-
+	
 }
 
 void CvPromotionInfo::write(FDataStreamBase* stream)
@@ -7544,9 +7547,9 @@ void CvPromotionInfo::write(FDataStreamBase* stream)
 	stream->Write(GC.getNumPlotEffectInfos(), m_pbPlotEffectDoubleMove);
 	//Magic Rework
 	stream->Write(m_iMagicalPower);
+	stream->Write(m_iMinMagicalPower);
 	//stream->Write(m_iDominionCapacity);
-	//stream->Write(GC.getNumSpellClassInfos(), m_piSpellClassExtraPower);
-
+	
 }
 
 bool CvPromotionInfo::read(CvXMLLoadUtility* pXML)
@@ -7619,10 +7622,9 @@ bool CvPromotionInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iKamikazePercent, "iKamikazePercent");
 	//Magic Rework
 	pXML->GetChildXmlValByName(&m_iMagicalPower, "iMagicalPower", 0);
+	pXML->GetChildXmlValByName(&m_iMinMagicalPower, "iMinMagicalPower", 0);
 	//pXML->GetChildXmlValByName(&m_iDominionCapacity, "iDominionCapacity", 0);
-	//pXML->SetVariableListTagPair(&m_piSpellClassExtraPower, "SpellClassExtraPowers", sizeof(GC.getSpellClassInfo((SpellClassTypes)0)), GC.getNumSpellClassInfos());
-
-	//pXML->SetVariableListTagPair(&m_piNoBadExploreImprovement, "NoBadExploreImprovements", sizeof(GC.getImprovementInfo((ImprovementTypes)0)), GC.getNumImprovementInfos());
+	
 	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "NoBadExploreImprovements"))
 	{
 		if (pXML->SkipToNextVal())
@@ -8639,11 +8641,8 @@ void CvPromotionInfo::copyNonDefaults(CvPromotionInfo* pClassInfo, CvXMLLoadUtil
 	if (isEffectProm()							== false)				m_bEffectProm						= pClassInfo->isEffectProm();
 	//Magic Rework
 	if (getMagicalPower() == 0)				m_iMagicalPower = pClassInfo->getMagicalPower();
+	if (getMinMagicalPower() == 0)				m_iMinMagicalPower = pClassInfo->getMinMagicalPower();
 	//if (getDominionCapacity() == 0)				m_iDominionCapacity = pClassInfo->getDominionCapacity();
-	//for (int i = 0; i < GC.getNumSpellClassInfos(); ++i)
-	//{
-	//	if (getSpellClassExtraPower(i) == 0)				m_piSpellClassExtraPower[i] = pClassInfo->getSpellClassExtraPower(i);
-	//}
 	if (m_bLeader || m_bEffectProm)		m_bGraphicalOnly = true;
 	if (isBlitz()								== false)				m_bBlitz							= pClassInfo->isBlitz();
 	if (isAmphib()								== false)				m_bAmphib							= pClassInfo->isAmphib();
@@ -11248,6 +11247,7 @@ m_iCreateImprovementType(NO_IMPROVEMENT),
 m_iSpreadReligion(NO_RELIGION),
 m_iCreateUnitType(NO_UNIT),
 m_iCreateUnitNum(0),
+m_iCreateUnitDuration(-1),
 m_bCopyCastersPromotions(false),
 m_bPermanentUnitCreate(false),
 m_iCreateUnitPromotion(NO_PROMOTION),
@@ -11754,6 +11754,11 @@ int CvSpellInfo::getCreateUnitNum() const
 {
 	return m_iCreateUnitNum;
 }
+int CvSpellInfo::getCreateUnitDuration() const
+{
+	return m_iCreateUnitDuration;
+}
+
 
 int CvSpellInfo::getAddPromotionType1() const
 {
@@ -12050,6 +12055,7 @@ void CvSpellInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iSpreadReligion);
 	stream->Read(&m_iCreateUnitType);
 	stream->Read(&m_iCreateUnitNum);
+	stream->Read(&m_iCreateUnitDuration);
 	stream->Read(&m_bCopyCastersPromotions);
 	stream->Read(&m_bPermanentUnitCreate);
 	stream->Read(&m_iCreateUnitPromotion);
@@ -12241,6 +12247,7 @@ void CvSpellInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iSpreadReligion);
 	stream->Write(m_iCreateUnitType);
 	stream->Write(m_iCreateUnitNum);
+	stream->Write(m_iCreateUnitDuration);
 	stream->Write(m_bCopyCastersPromotions);
 	stream->Write(m_bPermanentUnitCreate);
 	stream->Write(m_iCreateUnitPromotion);
@@ -12280,7 +12287,7 @@ void CvSpellInfo::write(FDataStreamBase* stream)
 /*************************************************************************************************/
 	//Magic Rework
 	stream->Write(m_iMagicalPowerPrereq);
-	stream->Write(GC.getNumTraitInfos(), m_pbSpellClass);
+	stream->Write(GC.getNumSpellClassInfos(), m_pbSpellClass);
 }
 
 bool CvSpellInfo::read(CvXMLLoadUtility* pXML)
@@ -12387,10 +12394,16 @@ bool CvSpellInfo::read(CvXMLLoadUtility* pXML)
 					pXML->GetChildXmlValByName(&(cbTemp.iExtraImmobileTurns), "iExtraImmobileTurns", 0);
 					pXML->GetChildXmlValByName(&(cbTemp.iExtraFortifyTurns), "iExtraFortifyTurns", 0);
 					pXML->GetChildXmlValByName(&(cbTemp.iExtraPromotionApply), "iExtraPromotionApply", 0);
+					pXML->GetChildXmlValByName(&(cbTemp.iExtraSummonDuration), "iExtraSummonDuration", 0);
+					pXML->GetChildXmlValByName(&(cbTemp.iExtraSummonNumber), "iExtraSummonNumber", 0);
+					pXML->GetChildXmlValByName(szTextVal, "ExtraSummonPromotion");
+					if (szTextVal != "") cbTemp.iExtraSummonPromotion = pXML->FindInInfoClass(szTextVal);
+					pXML->GetChildXmlValByName(&(cbTemp.iExtraSummonPromotionApply), "iExtraSummonPromotionApply", 0);
 					pXML->GetChildXmlValByName(&(cbTemp.bExtraImmuneTeam), "bExtraImmuneTeam");
 					pXML->GetChildXmlValByName(&(cbTemp.bExtraImmuneNeutral), "bExtraImmuneNeutral");
 					pXML->GetChildXmlValByName(&(cbTemp.bExtraImmuneEnemy), "bExtraImmuneEnemy");
 					pXML->GetChildXmlValByName(&(cbTemp.bExtraPermanent), "bExtraPermanent");
+					pXML->GetChildXmlValByName(&(cbTemp.bExtraSummonPermanent), "bExtraSummonPermanent");
 					m_cbSpellBonuses.push_back(cbTemp);
 					if (!gDLL->getXMLIFace()->NextSibling(pXML->GetXML()))						break;
 				}
@@ -12489,6 +12502,7 @@ bool CvSpellInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(szTextVal, "CreateUnitType");
 	if (szTextVal != "") m_iCreateUnitType = pXML->FindInInfoClass(szTextVal);
 	pXML->GetChildXmlValByName(&m_iCreateUnitNum, "iCreateUnitNum");
+	pXML->GetChildXmlValByName(&m_iCreateUnitDuration, "iCreateUnitDuration");
 	pXML->GetChildXmlValByName(&m_bCopyCastersPromotions, "bCopyCastersPromotions");
 	pXML->GetChildXmlValByName(&m_bPermanentUnitCreate, "bPermanentUnitCreate");
 	pXML->GetChildXmlValByName(szTextVal, "CreateUnitPromotion");
@@ -12664,6 +12678,7 @@ void CvSpellInfo::copyNonDefaults(CvSpellInfo* pClassInfo, CvXMLLoadUtility* pXM
 	if (getDamage()						== 0)					m_iDamage						= pClassInfo->getDamage();
 	if (getDamageLimit()				== 0)					m_iDamageLimit					= pClassInfo->getDamageLimit();
 	if (getCreateUnitNum()				== 0)					m_iCreateUnitNum				= pClassInfo->getCreateUnitNum();
+	if (getCreateUnitDuration() == 0)					m_iCreateUnitDuration = pClassInfo->getCreateUnitDuration();
 	if (getChangePopulation()			== 0)					m_iChangePopulation				= pClassInfo->getChangePopulation();
 	if (getCost()						== 0)					m_iCost							= pClassInfo->getCost();
 	if (getNumTargets() == -1)					m_iNumTargets = pClassInfo->getNumTargets();

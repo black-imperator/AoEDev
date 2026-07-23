@@ -1240,12 +1240,8 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 /*************************************************************************************************/
 //Magic Rework
 	m_iExtraMagicalPower = 0;
-//	m_iExtraDominionCapacity = 0;
-//	m_piSpellClassExtraPower = new int[GC.getNumSpellClassInfos()];
-//	for (int iI = 0; iI < GC.getNumSpellClassInfos(); iI++)
-	//{
-	//	m_piSpellClassExtraPower[iI] = 0;
-	//}
+	m_iMinMagicalPower = 0;
+	//	m_iExtraDominionCapacity = 0;
 }
 
 
@@ -3608,7 +3604,7 @@ void CvUnit::updateCombat(bool bQuick)
 /* Original Author Moctezuma              End                                                   */
 /************************************************************************************************/
 			float fInfluenceRatio = 0.0;
-			if(GET_PLAYER(getOwner()).isInfluenceAllowed())
+			if(GET_PLAYER(getOwner()).isInfluenceAllowed() && !GC.getGame().isOption(GAMEOPTION_NO_IDW))
 			{
 				if(canDeathInfluenceWar() && pDefender->canInfluenceWar())
 				{
@@ -3698,7 +3694,7 @@ void CvUnit::updateCombat(bool bQuick)
 /* Original Author Moctezuma              End                                                   */
 /************************************************************************************************/
 			float fInfluenceRatio = 0.0;
-			if(GET_PLAYER(getOwner()).isInfluenceAllowed())
+			if(GET_PLAYER(getOwner()).isInfluenceAllowed() && !GC.getGame().isOption(GAMEOPTION_NO_IDW))
 			{
 				if(pDefender->canDeathInfluenceWar() && canInfluenceWar())
 				{
@@ -8211,7 +8207,7 @@ bool CvUnit::pillage()
 				float fInfluenceRatio = 0.0f;
 				if (atWar(pPlot->getTeam(), getTeam()))
 				{
-					if (pPlot->canBeInfluenced())
+					if (pPlot->canBeInfluenced() && !GC.getGame().isOption(GAMEOPTION_NO_IDW))
 					{
 						fInfluenceRatio = doPillageInfluence();
 					}
@@ -15957,7 +15953,7 @@ void CvUnit::setXY(int iX, int iY, bool bGroup, bool bUpdate, bool bShow, bool b
 								float fInfluenceRatio = 0.0f;
 								if (atWar(pNewPlot->getTeam(), getTeam()))
 								{
-									if (pNewPlot->canBeInfluenced())
+									if (pNewPlot->canBeInfluenced() && !GC.getGame().isOption(GAMEOPTION_NO_IDW))
 									{
 										fInfluenceRatio = doPillageInfluence();
 									}
@@ -22813,10 +22809,10 @@ void CvUnit::setHasPromotion(PromotionTypes eIndex, bool bNewValue, bool bSupres
 		//Magic Rework
 		changeExtraMagicalPower(kPromotion.getMagicalPower() * iChange);
 	//	changeExtraDominionCapacity(kPromotion.getDominionCapacity() * iChange);
-	//	for (int i = 0; i < GC.getNumSpellClassInfos(); i++)
-	//	{
-	//		changeSpellClassExtraPower(i, kPromotion.getSpellClassExtraPower(i) * iChange);
-	//	}
+		if (kPromotion.getMinMagicalPower() != 0)
+		{
+			updateMinMagicalPower();
+		}
 
 		if (IsSelected())
 		{
@@ -23934,6 +23930,11 @@ SpellUpgradeData CvUnit::getSpellData(int spell)
 	int iMagicalPower = getSpellMagicalPower(spell);
 	int iExtraPower = iMagicalPower - GC.getSpellInfo((SpellTypes)spell).getMagicalPowerPrereq();
 	SpellUpgradeData data;
+	data.piSummonPromotionData = new int[GC.getNumPromotionInfos()];
+	for (int i = 0 ; i < GC.getNumPromotionInfos(); i++)
+	{
+		data.piSummonPromotionData[i] = 0;
+	}
 	SpellBonuses bonus;
 	int iNumBonusApplications=0;
 	//Core Spell Data
@@ -23953,6 +23954,17 @@ SpellUpgradeData CvUnit::getSpellData(int spell)
 
 	}
 	data.bPermanent = false;
+	data.iSummonDuration = 1;
+	if (GC.getSpellInfo((SpellTypes)spell).getCreateUnitDuration() > 0)
+	{
+		data.iSummonDuration = GC.getSpellInfo((SpellTypes)spell).getCreateUnitDuration();
+	}
+	data.iSummonNumber = GC.getSpellInfo((SpellTypes)spell).getCreateUnitNum();
+	if (GC.getSpellInfo((SpellTypes)spell).getCreateUnitPromotion() != NO_PROMOTION)
+	{
+		data.piSummonPromotionData[GC.getSpellInfo((SpellTypes)spell).getCreateUnitPromotion()] = 1;
+	}
+	data.bSummonPermanent = GC.getSpellInfo((SpellTypes)spell).isPermanentUnitCreate();
 
 	//Applying Spell Bonuses
 	for (int iI = 0; iI < GC.getSpellInfo((SpellTypes)spell).getNumSpellBonuses(); iI++)
@@ -23977,10 +23989,25 @@ SpellUpgradeData CvUnit::getSpellData(int spell)
 			 {
 			 	data.bPermanent = true;
 			 }
+			 data.iSummonDuration += bonus.iExtraSummonDuration * iNumBonusApplications;
+			 data.iSummonNumber += bonus.iExtraSummonNumber * iNumBonusApplications;
+			 if (bonus.iExtraSummonPromotion != NO_PROMOTION)
+			 {
+				 data.piSummonPromotionData[bonus.iExtraSummonPromotion] += bonus.iExtraSummonPromotionApply * iNumBonusApplications;
+			 }
+			 if (bonus.bExtraSummonPermanent)
+			 {
+				 data.bSummonPermanent = true;
+			 }
+
 		}
 		if (data.bPermanent)
 		{
 			data.iDuration = -1;
+		}
+		if (data.bSummonPermanent)
+		{
+			data.iSummonDuration = -1;
 		}
 	}
 	return data;
@@ -24403,40 +24430,40 @@ bool CvUnit::canCreateUnit(int spell, CvPlot* pTargetPlot) const
 	{
 		return false;
 	}
-	if (GC.getSpellInfo((SpellTypes)spell).isPermanentUnitCreate())
-	{
-/*************************************************************************************************/
-/**	Whiplash								07/23/08								Xienwolf	**/
-/**	Can now easily allow more than 1 of specific units per caster, by Spell/Summoner/Civ/etc..	**/
-/**			Tracks Unit's Summoned by Caster and Caster who Summoned Conjured Units				**/
-/*************************************************************************************************/
-/**								---- Start Original Code ----									**
-		int iCount = 0;
-		int iLoop = 0;
-		CvUnit* pLoopUnit;
-		CvPlayer& kPlayer = GET_PLAYER(getOwnerINLINE());
-		for (pLoopUnit = kPlayer.firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = kPlayer.nextUnit(&iLoop))
-		{
-			if ((GC.getSpellInfo((SpellTypes)spell).getPromotionPrereq1() == NO_PROMOTION ||
-			  pLoopUnit->isHasPromotion((PromotionTypes)GC.getSpellInfo((SpellTypes)spell).getPromotionPrereq1())) &&
-			  (GC.getSpellInfo((SpellTypes)spell).getPromotionPrereq2() == NO_PROMOTION ||
-			  pLoopUnit->isHasPromotion((PromotionTypes)GC.getSpellInfo((SpellTypes)spell).getPromotionPrereq2())) &&
-			  (GC.getSpellInfo((SpellTypes)spell).getReligionPrereq() == NO_RELIGION ||
-			  pLoopUnit->getReligion() == GC.getSpellInfo((SpellTypes)spell).getReligionPrereq()))
-			{
-				iCount += 1;
-			}
-		}
-		if (iCount <= kPlayer.getUnitClassCount((UnitClassTypes)GC.getUnitInfo((UnitTypes)GC.getSpellInfo((SpellTypes)spell).getCreateUnitType()).getUnitClassType()))
-/**								----  End Original Code  ----									**/
-		if (getNumSlavesOfClass((UnitClassTypes)GC.getUnitInfo((UnitTypes)GC.getSpellInfo((SpellTypes)spell).getCreateUnitType()).getUnitClassType()) > 0)
-/*************************************************************************************************/
-/**	Whiplash								END													**/
-/*************************************************************************************************/
-		{
-			return false;
-		}
-	}
+//	if (GC.getSpellInfo((SpellTypes)spell).isPermanentUnitCreate())
+//	{
+///*************************************************************************************************/
+///**	Whiplash								07/23/08								Xienwolf	**/
+///**	Can now easily allow more than 1 of specific units per caster, by Spell/Summoner/Civ/etc..	**/
+///**			Tracks Unit's Summoned by Caster and Caster who Summoned Conjured Units				**/
+///*************************************************************************************************/
+///**								---- Start Original Code ----									**
+//		int iCount = 0;
+//		int iLoop = 0;
+//		CvUnit* pLoopUnit;
+//		CvPlayer& kPlayer = GET_PLAYER(getOwnerINLINE());
+//		for (pLoopUnit = kPlayer.firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = kPlayer.nextUnit(&iLoop))
+//		{
+//			if ((GC.getSpellInfo((SpellTypes)spell).getPromotionPrereq1() == NO_PROMOTION ||
+//			  pLoopUnit->isHasPromotion((PromotionTypes)GC.getSpellInfo((SpellTypes)spell).getPromotionPrereq1())) &&
+//			  (GC.getSpellInfo((SpellTypes)spell).getPromotionPrereq2() == NO_PROMOTION ||
+//			  pLoopUnit->isHasPromotion((PromotionTypes)GC.getSpellInfo((SpellTypes)spell).getPromotionPrereq2())) &&
+//			  (GC.getSpellInfo((SpellTypes)spell).getReligionPrereq() == NO_RELIGION ||
+//			  pLoopUnit->getReligion() == GC.getSpellInfo((SpellTypes)spell).getReligionPrereq()))
+//			{
+//				iCount += 1;
+//			}
+//		}
+//		if (iCount <= kPlayer.getUnitClassCount((UnitClassTypes)GC.getUnitInfo((UnitTypes)GC.getSpellInfo((SpellTypes)spell).getCreateUnitType()).getUnitClassType()))
+///**								----  End Original Code  ----									**/
+//		if (getNumSlavesOfClass((UnitClassTypes)GC.getUnitInfo((UnitTypes)GC.getSpellInfo((SpellTypes)spell).getCreateUnitType()).getUnitClassType()) > 0)
+///*************************************************************************************************/
+///**	Whiplash								END													**/
+///*************************************************************************************************/
+//		{
+//			return false;
+//		}
+//	}
 	return true;
 }
 
@@ -26739,6 +26766,14 @@ void CvUnit::castConvertUnit(int spell)
 
 void CvUnit::castCreateUnit(int spell, CvPlot* pTargetPlot)
 {
+	if (pTargetPlot == NULL)
+	{
+		pTargetPlot = plot();
+	}
+	SpellUpgradeData spellData = getSpellData(spell);
+	int iNumUnit = spellData.iSummonNumber;
+	int iDuration = spellData.iSummonDuration;
+	bool bPermanent = spellData.bSummonPermanent;
 	int iI;
 	CvUnit* pUnit;
 	int iRange = GC.getSpellInfo((SpellTypes)spell).getRange();
@@ -26759,123 +26794,129 @@ void CvUnit::castCreateUnit(int spell, CvPlot* pTargetPlot)
 	{
 		for (int j = -iRange; j <= iRange; ++j)
 		{
-			pLoopPlot = ::plotXY(pTargetPlot->getX_INLINE(), pTargetPlot->getY_INLINE(), i, j);
-			if (NULL != pLoopPlot && canCastTargetPlot(spell, false, pLoopPlot) && canCreateUnit(spell,pLoopPlot))
+			for (int k = 0; k < iNumUnit; k++)
 			{
-				pUnit = GET_PLAYER(getOwnerINLINE()).initUnit((UnitTypes)GC.getSpellInfo((SpellTypes)spell).getCreateUnitType(), pLoopPlot->getX(), pLoopPlot->getY(), UNITAI_ATTACK);
-				pUnit->setSummoner(getID());
-				/*************************************************************************************************/
-				/**	Whiplash								07/23/08								Xienwolf	**/
-				/**						Prevents Unit Upkeep costs from Summons									**/
-				/**			Tracks Unit's Summoned by Caster and Caster who Summoned Conjured Units				**/
-				/*************************************************************************************************/
-				pUnit->changeFreeUnit(1);
-				pUnit->changeNoSupply(1);
-				pUnit->setMasterUnit(getIDInfo());
-				pUnit->setLeashUnit(getIDInfo());
+				pLoopPlot = ::plotXY(pTargetPlot->getX_INLINE(), pTargetPlot->getY_INLINE(), i, j);
+				if (NULL != pLoopPlot && canCastTargetPlot(spell, false, pLoopPlot) && canCreateUnit(spell, pLoopPlot))
+				{
+					pUnit = GET_PLAYER(getOwnerINLINE()).initUnit((UnitTypes)GC.getSpellInfo((SpellTypes)spell).getCreateUnitType(), pLoopPlot->getX(), pLoopPlot->getY(), UNITAI_ATTACK);
+					pUnit->setSummoner(getID());
+					/*************************************************************************************************/
+					/**	Whiplash								07/23/08								Xienwolf	**/
+					/**						Prevents Unit Upkeep costs from Summons									**/
+					/**			Tracks Unit's Summoned by Caster and Caster who Summoned Conjured Units				**/
+					/*************************************************************************************************/
+					pUnit->changeFreeUnit(1);
+					pUnit->changeNoSupply(1);
+					pUnit->setMasterUnit(getIDInfo());
+					pUnit->setLeashUnit(getIDInfo());
 
-				addSlaveUnit(pUnit->getID());
-				/*************************************************************************************************/
-				/**	Whiplash								END													**/
-				/*************************************************************************************************/
-				if (GC.getSpellInfo((SpellTypes)spell).isPermanentUnitCreate())
-				{
-					pUnit->changeImmobileTimer(2);
-				}
-				else
-				{
-					pUnit->changeDuration(2);
-					if (pUnit->getSpecialUnitType() != GC.getDefineINT("SPECIALUNIT_SPELL"))
+					addSlaveUnit(pUnit->getID());
+					/*************************************************************************************************/
+					/**	Whiplash								END													**/
+					/*************************************************************************************************/
+					if (bPermanent)
 					{
-						pUnit->changeDuration(GET_PLAYER(getOwnerINLINE()).getSummonDuration());
+						pUnit->changeImmobileTimer(2);
 					}
-					/*************************************************************************************************/
-					/**	Xienwolf Tweak							06/18/09											**/
-					/**																								**/
-					/**						This is already handled by setFreeUnit(1) above							**/
-					/*************************************************************************************************/
-					/**								---- Start Original Code ----									**
-							if (plot()->getTeam() != getTeam())
-							{
-								GET_PLAYER(getOwnerINLINE()).changeNumOutsideUnits(-1);
-							}
-					/**								----  End Original Code  ----									**/
-					/*************************************************************************************************/
-					/**	Tweak									END													**/
-					/*************************************************************************************************/
-				}
-				for (int iI = 0; iI < GC.getNumPromotionInfos(); iI++)
-				{
-					if (isHasPromotion((PromotionTypes)iI))
+					else
 					{
-						if (GC.getSpellInfo((SpellTypes)spell).isCopyCastersPromotions())
+						pUnit->changeDuration(iDuration+1);
+						if (pUnit->getSpecialUnitType() != GC.getDefineINT("SPECIALUNIT_SPELL"))
 						{
-							if (!GC.getPromotionInfo((PromotionTypes)iI).isEquipment() && !GC.getPromotionInfo((PromotionTypes)iI).isRace() && !GC.getPromotionInfo((PromotionTypes)iI).isCompanion() && !GC.getPromotionInfo((PromotionTypes)iI).isEffectProm() && iI != GC.getDefineINT("GREAT_COMMANDER_PROMOTION") && !GC.getPromotionInfo((PromotionTypes)iI).isGraphicalAddOnPromotion())
+							pUnit->changeDuration(GET_PLAYER(getOwnerINLINE()).getSummonDuration());
+						}
+						/*************************************************************************************************/
+						/**	Xienwolf Tweak							06/18/09											**/
+						/**																								**/
+						/**						This is already handled by setFreeUnit(1) above							**/
+						/*************************************************************************************************/
+						/**								---- Start Original Code ----									**
+								if (plot()->getTeam() != getTeam())
+								{
+									GET_PLAYER(getOwnerINLINE()).changeNumOutsideUnits(-1);
+								}
+						/**								----  End Original Code  ----									**/
+						/*************************************************************************************************/
+						/**	Tweak									END													**/
+						/*************************************************************************************************/
+					}
+					for (int iI = 0; iI < GC.getNumPromotionInfos(); iI++)
+					{
+						if (isHasPromotion((PromotionTypes)iI))
+						{
+							if (GC.getSpellInfo((SpellTypes)spell).isCopyCastersPromotions())
+							{
+								if (!GC.getPromotionInfo((PromotionTypes)iI).isEquipment() && !GC.getPromotionInfo((PromotionTypes)iI).isRace() && !GC.getPromotionInfo((PromotionTypes)iI).isCompanion() && !GC.getPromotionInfo((PromotionTypes)iI).isEffectProm() && iI != GC.getDefineINT("GREAT_COMMANDER_PROMOTION") && !GC.getPromotionInfo((PromotionTypes)iI).isGraphicalAddOnPromotion())
+								{
+									pUnit->setHasPromotion((PromotionTypes)iI, true);
+								}
+							}
+							else
+							{
+								if (GC.getPromotionInfo((PromotionTypes)iI).getPromotionSummonPerk() != NO_PROMOTION)
+								{
+									/*************************************************************************************************/
+									/**	Xienwolf Tweak							10/01/08											**/
+									/**																								**/
+									/**						Prevents Duration Enhancements on Fireballs								**/
+									/*************************************************************************************************/
+									CvPromotionInfo& kPerkInfo = GC.getPromotionInfo((PromotionTypes)GC.getPromotionInfo((PromotionTypes)iI).getPromotionSummonPerk());
+									bool bDurationAlter = (kPerkInfo.getDurationAlter() > 0 || kPerkInfo.getDurationPerTurn() > 0 || kPerkInfo.getChangeDuration() > 0);
+									if (pUnit->getSpecialUnitType() != GC.getDefineINT("SPECIALUNIT_SPELL") || !bDurationAlter)
+									{
+										/*************************************************************************************************/
+										/**	1.4										03/28/11								Valkrionn	**/
+										/**																								**/
+										/**									New tags required for 1.4									**/
+										/*************************************************************************************************/
+										if (GC.getPromotionInfo((PromotionTypes)GC.getPromotionInfo((PromotionTypes)iI).getPromotionSummonPerk()).isStackEffect())
+										{
+											int iApplications = pUnit->countHasPromotion((PromotionTypes)iI);
+											iApplications = std::min(iApplications, GC.getPromotionInfo((PromotionTypes)GC.getPromotionInfo((PromotionTypes)iI).getPromotionSummonPerk()).getMaxApplications());
+											for (int iJ = 0; iJ < iApplications; iJ++)
+											{
+												pUnit->setHasPromotion((PromotionTypes)GC.getPromotionInfo((PromotionTypes)iI).getPromotionSummonPerk(), true);
+											}
+										}
+										else
+										{
+											pUnit->setHasPromotion((PromotionTypes)GC.getPromotionInfo((PromotionTypes)iI).getPromotionSummonPerk(), true);
+										}
+										/*************************************************************************************************/
+										/**												END												**/
+										/*************************************************************************************************/
+									}
+									/*************************************************************************************************/
+									/**	Tweak									END													**/
+									/*************************************************************************************************/
+								}
+							}
+						}
+						if (spellData.piSummonPromotionData[iI]>0)
+						{ 
+							for (int l=0; l < spellData.piSummonPromotionData[iI]; l++)
 							{
 								pUnit->setHasPromotion((PromotionTypes)iI, true);
 							}
 						}
-						else
-						{
-							if (GC.getPromotionInfo((PromotionTypes)iI).getPromotionSummonPerk() != NO_PROMOTION)
-							{
-								/*************************************************************************************************/
-								/**	Xienwolf Tweak							10/01/08											**/
-								/**																								**/
-								/**						Prevents Duration Enhancements on Fireballs								**/
-								/*************************************************************************************************/
-								CvPromotionInfo& kPerkInfo = GC.getPromotionInfo((PromotionTypes)GC.getPromotionInfo((PromotionTypes)iI).getPromotionSummonPerk());
-								bool bDurationAlter = (kPerkInfo.getDurationAlter() > 0 || kPerkInfo.getDurationPerTurn() > 0 || kPerkInfo.getChangeDuration() > 0);
-								if (pUnit->getSpecialUnitType() != GC.getDefineINT("SPECIALUNIT_SPELL") || !bDurationAlter)
-								{
-									/*************************************************************************************************/
-									/**	1.4										03/28/11								Valkrionn	**/
-									/**																								**/
-									/**									New tags required for 1.4									**/
-									/*************************************************************************************************/
-									if (GC.getPromotionInfo((PromotionTypes)GC.getPromotionInfo((PromotionTypes)iI).getPromotionSummonPerk()).isStackEffect())
-									{
-										int iApplications = pUnit->countHasPromotion((PromotionTypes)iI);
-										iApplications = std::min(iApplications, GC.getPromotionInfo((PromotionTypes)GC.getPromotionInfo((PromotionTypes)iI).getPromotionSummonPerk()).getMaxApplications());
-										for (int iJ = 0; iJ < iApplications; iJ++)
-										{
-											pUnit->setHasPromotion((PromotionTypes)GC.getPromotionInfo((PromotionTypes)iI).getPromotionSummonPerk(), true);
-										}
-									}
-									else
-									{
-										pUnit->setHasPromotion((PromotionTypes)GC.getPromotionInfo((PromotionTypes)iI).getPromotionSummonPerk(), true);
-									}
-									/*************************************************************************************************/
-									/**												END												**/
-									/*************************************************************************************************/
-								}
-								/*************************************************************************************************/
-								/**	Tweak									END													**/
-								/*************************************************************************************************/
-							}
-						}
 					}
-				}
-				if (GC.getSpellInfo((SpellTypes)spell).getCreateUnitPromotion() != NO_PROMOTION)
-				{
-					pUnit->setHasPromotion((PromotionTypes)GC.getSpellInfo((SpellTypes)spell).getCreateUnitPromotion(), true);
-				}
-				pUnit->doTurn();
-				/*************************************************************************************************/
-				/**	Tweak									09/06/10									Snarko	**/
-				/**																								**/
-				/**					No need to try to move the unit if it can't (skeletons etc)					**/
-				/*************************************************************************************************/
-				/**			---- Start Original Code ----						**
-					if (!isHuman())
-				/**			----  End Original Code  ----						**/
-				if (!isHuman() && pUnit->canMove())
+					pUnit->doTurn();
 					/*************************************************************************************************/
-					/**	Tweak									END													**/
+					/**	Tweak									09/06/10									Snarko	**/
+					/**																								**/
+					/**					No need to try to move the unit if it can't (skeletons etc)					**/
 					/*************************************************************************************************/
-				{
-					pUnit->AI_update();
+					/**			---- Start Original Code ----						**
+						if (!isHuman())
+					/**			----  End Original Code  ----						**/
+					if (!isHuman() && pUnit->canMove())
+						/*************************************************************************************************/
+						/**	Tweak									END													**/
+						/*************************************************************************************************/
+					{
+						pUnit->AI_update();
+					}
 				}
 			}
 		}
@@ -30227,6 +30268,7 @@ void CvUnit::read(FDataStreamBase* pStream)
 //Magic rework
 	pStream->Read(&m_iMissionSpell);
 	pStream->Read(&m_iExtraMagicalPower);
+	pStream->Read(&m_iMinMagicalPower);
 //	pStream->Read(&m_iExtraDominionCapacity);
 }
 
@@ -30749,7 +30791,8 @@ void CvUnit::write(FDataStreamBase* pStream)
 
 	//Magic Rework
 	pStream->Write(m_iExtraMagicalPower);
-//	pStream->Write(m_iExtraDominionCapacity); 
+	pStream->Write(m_iMinMagicalPower);
+	//	pStream->Write(m_iExtraDominionCapacity); 
 }
 
 // Protected Functions...
@@ -34223,7 +34266,7 @@ int CvUnit::getMagicalPower() const
 //	{
 //		res = res + GC.getMAGICAL_POWER_PER_DOMINION() * getDominionCapacity();
 //	}
-	return res;
+	return std::max(res,getMinMagicalPower());
 }
 
 int CvUnit::getSpellMagicalPower(int spell) const
@@ -34259,6 +34302,37 @@ void CvUnit::setExtraMagicalPower(int iNewValue)
 {
 	m_iExtraMagicalPower = iNewValue;
 }
+int CvUnit::getMinMagicalPower() const
+{
+	return m_iMinMagicalPower;
+}
+
+void CvUnit::changeMinMagicalPower(int iNewValue)
+{
+	m_iMinMagicalPower += iNewValue;
+}
+
+void CvUnit::setMinMagicalPower(int iNewValue)
+{
+	m_iMinMagicalPower = iNewValue;
+}
+
+void CvUnit::updateMinMagicalPower()
+{
+	int min = 0;
+	for (int i = 0; i < GC.getNumPromotionInfos(); i++)
+	{
+		if (isHasPromotion((PromotionTypes)i) && GC.getPromotionInfo((PromotionTypes)i).getMinMagicalPower() != 0)
+		{
+			if (min < GC.getPromotionInfo((PromotionTypes)i).getMinMagicalPower())
+			{
+				min = GC.getPromotionInfo((PromotionTypes)i).getMinMagicalPower();
+			}
+		}
+	}
+	setMinMagicalPower(min);
+
+}
 //int CvUnit::getExtraDominionCapacity() const
 //{
 //	return m_iExtraDominionCapacity;
@@ -34274,18 +34348,6 @@ void CvUnit::setExtraMagicalPower(int iNewValue)
 //	m_iExtraDominionCapacity = iNewValue;
 //}
 //
-//int CvUnit::getSpellClassExtraPower(int i) const
-//{
-//	FAssertMsg(i < GC.getNumSpellClassInfos(), "Index out of bounds");
-//	FAssertMsg(i > -1, "Index out of bounds");
-//	return m_piSpellClassExtraPower ? m_piSpellClassExtraPower[i] : 0;
-//}
-//void CvUnit::changeSpellClassExtraPower(int i, int iChange)
-//{
-//	FAssertMsg(i < GC.getNumSpellClassInfos(), "Index out of bounds");
-//	FAssertMsg(i > -1, "Index out of bounds");
-//	m_piSpellClassExtraPower[i] += iChange;
-//}
 
 
 int CvUnit::getRealFreeXPRate() const

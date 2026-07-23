@@ -8763,6 +8763,22 @@
 		<Spanish>Unique Lair results are considered good results, thus more likely to spawn when the lairs are explored with trained lair explorers.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_GAME_OPTION_NO_IDW</Tag>
+		<English>No Influence Driven War</English>
+		<French>No Influence Driven War</French>
+		<German>No Influence Driven War</German>
+		<Italian>No Influence Driven War</Italian>
+		<Spanish>No Influence Driven War</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GAME_OPTION_NO_IDW_HELP</Tag>
+		<English>Battles will not influence the culture of tiles.</English>
+		<French>Battles will not influence the culture of tiles.</French>
+		<German>Battles will not influence the culture of tiles.</German>
+		<Italian>Battles will not influence the culture of tiles.</Italian>
+		<Spanish>Battles will not influence the culture of tiles.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_ARMAGEDDON_COUNTER_COMBAT</Tag>
 		<English>[ICON_BULLET]%D1_Bonus%% of Armageddon Counter as additional Strength modifier </English>
 		<French>[ICON_BULLET]%D1_Bonus%% of Armageddon Counter as additional Strength modifier </French>
@@ -12279,6 +12295,14 @@ Their lives flashing before their eyes, the scouts are shocked and relieved when
 		<German>[ICON_BULLET]changes Spell Power by %d1</German>
 		<Italian>[ICON_BULLET]changes Spell Power by %d1</Italian>
 		<Spanish>[ICON_BULLET]changes Spell Power by %d1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MIN_MAGICAL_POWER</Tag>
+		<English>[ICON_BULLET]grants a minimum Spell Power of %d1</English>
+		<French>[ICON_BULLET]grants a minimum Spell Power of %d1</French>
+		<German>[ICON_BULLET]grants a minimum Spell Power of %d1</German>
+		<Italian>[ICON_BULLET]grants a minimum Spell Power of %d1</Italian>
+		<Spanish>[ICON_BULLET]grants a minimum Spell Power of %d1</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_CONTROL_CIVILIZATION_LAIR_SPAWN</Tag>

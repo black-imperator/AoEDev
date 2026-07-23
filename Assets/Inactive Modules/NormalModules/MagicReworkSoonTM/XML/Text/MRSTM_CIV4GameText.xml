@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_SUMMONING_BOND_STRONG</Tag>
+		<English>Strong Summoning Bond</English>
+		<French>Strong Summoning Bond</French>
+		<German>Strong Summoning Bond</German>
+		<Italian>Strong Summoning Bond</Italian>
+		<Spanish>Strong Summoning Bond</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_SUMMONING_BOND_STRONG_FEEDBACK</Tag>
+		<English>Strong Summoning Bond Feedback</English>
+		<French>Strong Summoning Bond Feedback</French>
+		<German>Strong Summoning Bond Feedback</German>
+		<Italian>Strong Summoning Bond Feedback</Italian>
+		<Spanish>Strong Summoning Bond Feedback</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_SUMMONING_BOND_MEDIUM</Tag>
+		<English>Average Summoning Bond</English>
+		<French>Average Summoning Bond</French>
+		<German>Average Summoning Bond</German>
+		<Italian>Average Summoning Bond</Italian>
+		<Spanish>Average Summoning Bond</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_SUMMONING_BOND_MEDIUM_FEEDBACK</Tag>
+		<English>Average Summoning Bond Feedback</English>
+		<French>Average Summoning Bond Feedback</French>
+		<German>Average Summoning Bond Feedback</German>
+		<Italian>Average Summoning Bond Feedback</Italian>
+		<Spanish>Average Summoning Bond Feedback</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_SUMMONING_BOND_WEAK</Tag>
+		<English>Weak Summoning Bond</English>
+		<French>Weak Summoning Bond</French>
+		<German>Weak Summoning Bond</German>
+		<Italian>Weak Summoning Bond</Italian>
+		<Spanish>Weak Summoning Bond</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_SUMMONING_BOND_WEAK_FEEDBACK</Tag>
+		<English>Weak Summoning Bond Feedback</English>
+		<French>Weak Summoning Bond Feedback</French>
+		<German>Weak Summoning Bond Feedback</German>
+		<Italian>Weak Summoning Bond Feedback</Italian>
+		<Spanish>Weak Summoning Bond Feedback</Spanish>
+	</TEXT>
+		
+</Civ4GameText>

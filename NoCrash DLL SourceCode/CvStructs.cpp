@@ -835,10 +835,15 @@ void SpellBonuses::read(FDataStreamBase* pStream)
 	pStream->Read(&iExtraImmobileTurns);
 	pStream->Read(&iExtraFortifyTurns);
 	pStream->Read(&iExtraPromotionApply);
+	pStream->Read(&iExtraSummonDuration);
+	pStream->Read(&iExtraSummonNumber);
+	pStream->Read(&iExtraSummonPromotion);
+	pStream->Read(&iExtraSummonPromotionApply);
 	pStream->Read(&bExtraImmuneTeam);
 	pStream->Read(&bExtraImmuneNeutral);
 	pStream->Read(&bExtraImmuneEnemy);
 	pStream->Read(&bExtraPermanent);
+	pStream->Read(&bExtraSummonPermanent);
 }
 
 void SpellBonuses::write(FDataStreamBase* pStream)
@@ -853,10 +858,15 @@ void SpellBonuses::write(FDataStreamBase* pStream)
 	pStream->Write(iExtraImmobileTurns);
 	pStream->Write(iExtraFortifyTurns);
 	pStream->Write(iExtraPromotionApply);
+	pStream->Write(iExtraSummonDuration);
+	pStream->Write(iExtraSummonNumber);
+	pStream->Write(iExtraSummonPromotion);
+	pStream->Write(iExtraSummonPromotionApply);
 	pStream->Write(bExtraImmuneTeam);
 	pStream->Write(bExtraImmuneNeutral);
 	pStream->Write(bExtraImmuneEnemy);
 	pStream->Write(bExtraPermanent);
+	pStream->Write(bExtraSummonPermanent);
 }
 
 bool SpellBonuses::compare(SpellBonuses cbTemp)
@@ -872,10 +882,15 @@ bool SpellBonuses::compare(SpellBonuses cbTemp)
 	else if (iExtraImmobileTurns != cbTemp.iExtraImmobileTurns) bSame = false;
 	else if (iExtraFortifyTurns != cbTemp.iExtraFortifyTurns) bSame = false;
 	else if (iExtraPromotionApply != cbTemp.iExtraPromotionApply) bSame = false;
+	else if (iExtraSummonDuration != cbTemp.iExtraSummonDuration) bSame = false;
+	else if (iExtraSummonNumber != cbTemp.iExtraSummonNumber) bSame = false;
+	else if (iExtraSummonPromotion != cbTemp.iExtraSummonPromotion) bSame = false;
+	else if (iExtraSummonPromotionApply != cbTemp.iExtraSummonPromotionApply) bSame = false;
 	else if (bExtraImmuneTeam != cbTemp.bExtraImmuneTeam) bSame = false;
 	else if (bExtraImmuneNeutral != cbTemp.bExtraImmuneNeutral) bSame = false;
 	else if (bExtraImmuneEnemy != cbTemp.bExtraImmuneEnemy) bSame = false;
 	else if (bExtraPermanent != cbTemp.bExtraPermanent) bSame = false;
+	else if (bExtraSummonPermanent != cbTemp.bExtraSummonPermanent) bSame = false;
 	return bSame;
 }
 void SpellUpgradeData::read(FDataStreamBase* pStream)
@@ -887,7 +902,14 @@ void SpellUpgradeData::read(FDataStreamBase* pStream)
 	pStream->Read(&iFortifyTurns);
 	pStream->Read(&iPromotionApply);
 	pStream->Read(&iDuration);
+	pStream->Read(&iSummonDuration);
+	pStream->Read(&iSummonNumber);
+	SAFE_DELETE_ARRAY(piSummonPromotionData);
+	piSummonPromotionData = new int[GC.getNumPromotionInfos()];
+	pStream->Read(GC.getNumPromotionInfos(), piSummonPromotionData);
+
 	pStream->Read(&bPermanent);
+	pStream->Read(&bSummonPermanent);
 }
 
 void SpellUpgradeData::write(FDataStreamBase* pStream)
@@ -899,7 +921,12 @@ void SpellUpgradeData::write(FDataStreamBase* pStream)
 	pStream->Write(iFortifyTurns);
 	pStream->Write(iPromotionApply);
 	pStream->Write(iDuration);
+	pStream->Write(iSummonDuration);
+	pStream->Write(iSummonNumber);
+	pStream->Write(GC.getNumPromotionInfos(), piSummonPromotionData);
+
 	pStream->Write(bPermanent);
+	pStream->Write(bSummonPermanent);
 }
 
 bool SpellUpgradeData::compare(SpellUpgradeData cbTemp)
@@ -912,6 +939,9 @@ bool SpellUpgradeData::compare(SpellUpgradeData cbTemp)
 	else if (iFortifyTurns != cbTemp.iFortifyTurns) bSame = false;
 	else if (iPromotionApply != cbTemp.iPromotionApply) bSame = false;
 	else if (iDuration != cbTemp.iDuration) bSame = false;
+	else if (iSummonDuration != cbTemp.iSummonDuration) bSame = false;
+	else if (iSummonNumber != cbTemp.iSummonNumber) bSame = false;
 	else if (bPermanent != cbTemp.bPermanent) bSame = false;
+	else if (bSummonPermanent != cbTemp.bSummonPermanent) bSame = false;
 	return bSame;
 }

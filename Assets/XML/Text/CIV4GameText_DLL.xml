@@ -403,6 +403,38 @@
 		<Spanish>%d1 Extra Promotion Stacking[SPACE]</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_SPELL_BONUS_EXTRA_SUMMON_DURATION</Tag>
+		<English>%d1 Extra Summon Duration[SPACE]</English>
+		<French>%d1 Extra Summon Duration[SPACE]</French>
+		<German>%d1 Extra Summon Duration[SPACE]</German>
+		<Italian>%d1 Extra Summon Duration[SPACE]</Italian>
+		<Spanish>%d1 Extra Summon Duration[SPACE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_BONUS_EXTRA_SUMMON_NUMBER</Tag>
+		<English>%d1 Extra Number of Summons[SPACE]</English>
+		<French>%d1 Extra  Number of Summons[SPACE]</French>
+		<German>%d1 Extra  Number of Summons[SPACE]</German>
+		<Italian>%d1 Extra  Number of Summons[SPACE]</Italian>
+		<Spanish>%d1 Extra  Number of Summons[SPACE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_BONUS_EXTRA_SUMMON_PROMOTION</Tag>
+		<English>Applies %s1 to Summons[SPACE]</English>
+		<French>Applies %s1 to Summons[SPACE]</French>
+		<German>Applies %s1 to Summons[SPACE]</German>
+		<Italian>Applies %s1 to Summons[SPACE]</Italian>
+		<Spanish>Applies %s1 to Summons[SPACE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_BONUS_EXTRA_SUMMON_PROMOTION_APPLY</Tag>
+		<English>%d1 Extra Promotion Stacking on Summons[SPACE]</English>
+		<French>%d1 Extra Promotion Stacking on Summons[SPACE]</French>
+		<German>%d1 Extra Promotion Stacking on Summons[SPACE]</German>
+		<Italian>%d1 Extra Promotion Stacking on Summons[SPACE]</Italian>
+		<Spanish>%d1 Extra Promotion Stacking on Summons[SPACE]</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_SPELL_BONUS_EXTRA_IMMOBILE_TURNS</Tag>
 		<English>%d1 Extra Turns of Immobility[SPACE]</English>
 		<French>%d1 Extra Turns of Immobility[SPACE]</French>
@@ -449,6 +481,14 @@
 		<German>Permanent Effect</German>
 		<Italian>Permanent Effect</Italian>
 		<Spanish>Permanent Effect</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_BONUS_EXTRA_SUMMON_PERMANENT</Tag>
+		<English>Permanent Summons</English>
+		<French>Permanent Summons</French>
+		<German>Permanent Summons</German>
+		<Italian>Permanent Summons</Italian>
+		<Spanish>Permanent Summons</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SPELL_NUM_TARGETS</Tag>
@@ -1766,11 +1806,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SPELL_SUMMON_UNIT_TEMPORARY</Tag>
-		<English>[SPACE](temporary)</English>
-		<French>[SPACE](temporaire)</French>
-		<German>[SPACE](temporary)</German>
-		<Italian>[SPACE](temporary)</Italian>
-		<Spanish>[SPACE](temporary)</Spanish>
+		<English>[SPACE](temporary) for %d1 turns</English>
+		<French>[SPACE](temporaire) for %d1 turns</French>
+		<German>[SPACE](temporary) for %d1 turns</German>
+		<Italian>[SPACE](temporary) for %d1 turns</Italian>
+		<Spanish>[SPACE](temporary) for %d1 turns</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TECH_PREREQ_RELIGION</Tag>

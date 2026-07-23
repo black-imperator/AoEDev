@@ -182,6 +182,7 @@ CvPlayer::CvPlayer()
 	// Free Tech Popup Fix
 	m_bChoosingFreeTech = false;
 	m_bUpdatePlotGroups = false;
+	m_bRunningCityUpdate = false;
 /************************************************************************************************/
 /* UNOFFICIAL_PATCH                        END                                                  */
 /************************************************************************************************/
@@ -4292,10 +4293,12 @@ void CvPlayer::doTurn()
 	szError.Format("Player::doTurn-docities Turn %i, Leader %s", GC.getGame().getGameTurn(), GC.getLeaderHeadInfo(getLeaderType()).getType());
 	profiler2.profile(szError);
 
+	setRunningCityUpdate(true);
 	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 	{
 		pLoopCity->doTurn();
 	}
+	setRunningCityUpdate(false);
 	profiler2.profile(NULL, true);
 	szError.Format("Player::doTurn-doplotgroups Turn %i, Leader %s", GC.getGame().getGameTurn(), GC.getLeaderHeadInfo(getLeaderType()).getType());
 	profiler2.profile(szError);
@@ -4985,6 +4988,16 @@ bool CvPlayer::isUpdatePlotGroups() const
 void CvPlayer::setUpdatePlotGroups(bool bValue)
 {
 	m_bUpdatePlotGroups = bValue;
+}
+
+bool CvPlayer::isRunningCityUpdate() const
+{
+	return m_bRunningCityUpdate;
+}
+
+void CvPlayer::setRunningCityUpdate(bool bValue)
+{
+	m_bRunningCityUpdate = bValue;
 }
 
 /************************************************************************************************/

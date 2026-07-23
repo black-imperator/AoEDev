@@ -176,7 +176,7 @@
 		</UnitInfo>
 		<UnitInfo>        <!-- Govannon -->
 			<Type>UNIT_GOVANNON</Type>
-			<iMagicalPower>450</iMagicalPower>
+			<iMagicalPower>800</iMagicalPower>
 		</UnitInfo>
 		<UnitInfo>        <!-- Hemah -->
 			<Type>UNIT_HEMAH</Type>

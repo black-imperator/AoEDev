@@ -6496,7 +6496,14 @@ void CvPlot::setOwner(PlayerTypes eNewValue, bool bCheckUnits, bool bUpdatePlotG
 
 		if (bUpdatePlotGroup)
 		{
-			updatePlotGroup();
+			if (GET_PLAYER(eNewValue).isRunningCityUpdate())
+			{
+				GET_PLAYER(eNewValue).setUpdatePlotGroups(true);
+			}
+			else
+			{
+				updatePlotGroup();
+			}
 		}
 
 		if (bCheckUnits)
@@ -8640,7 +8647,7 @@ void CvPlot::changeCulture(PlayerTypes eIndex, int iChange, bool bUpdate)
 {
 	if (0 != iChange)
 	{
-		setCulture(eIndex, (getCulture(eIndex) + iChange), bUpdate, true);
+		setCulture(eIndex, (getCulture(eIndex) + iChange), bUpdate, !GET_PLAYER(eIndex).isUpdatePlotGroups());
 	}
 }
 

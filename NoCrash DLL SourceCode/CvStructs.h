@@ -616,7 +616,7 @@ struct TraitTriggeredData
 
 struct SpellBonuses
 {
-	SpellBonuses() :iPrereqExtraPower(0), iMaxApplications(0), iExtraDamage(0), iExtraMaxDamage(0), iExtraNumTargets(0), iExtraTargetRange(0), iExtraDuration(0), iExtraImmobileTurns(0), iExtraFortifyTurns(0), iExtraPromotionApply(0), bExtraPermanent(false), bExtraImmuneTeam(false), bExtraImmuneNeutral(false), bExtraImmuneEnemy(false)
+	SpellBonuses() :iPrereqExtraPower(0), iMaxApplications(0), iExtraDamage(0), iExtraMaxDamage(0), iExtraNumTargets(0), iExtraTargetRange(0), iExtraDuration(0), iExtraImmobileTurns(0), iExtraFortifyTurns(0), iExtraPromotionApply(0), iExtraSummonPromotion(NO_PROMOTION), iExtraSummonPromotionApply(0), iExtraSummonDuration(0), iExtraSummonNumber(0), bExtraPermanent(false), bExtraImmuneTeam(false), bExtraImmuneNeutral(false), bExtraImmuneEnemy(false), bExtraSummonPermanent(false)
 	{
 	}
 	int iPrereqExtraPower;
@@ -629,10 +629,15 @@ struct SpellBonuses
 	int iExtraImmobileTurns;
 	int iExtraFortifyTurns;
 	int iExtraPromotionApply;
+	int iExtraSummonPromotion;
+	int iExtraSummonPromotionApply;
+	int iExtraSummonDuration;
+	int iExtraSummonNumber;
 	bool bExtraPermanent;
 	bool bExtraImmuneTeam;
 	bool bExtraImmuneNeutral;
 	bool bExtraImmuneEnemy;
+	bool bExtraSummonPermanent;
 
 
 	void read(FDataStreamBase* pStream);
@@ -641,7 +646,7 @@ struct SpellBonuses
 };
 struct SpellUpgradeData
 {
-	SpellUpgradeData() :iDamage(0),iMaxDamage(0),iNumTargets(0), iDuration(0), iImmobileTurns(0), iFortifyTurns(0), iPromotionApply(0),bPermanent(false)
+	SpellUpgradeData() :iDamage(0),iMaxDamage(0),iNumTargets(0), iDuration(0), iImmobileTurns(0), iFortifyTurns(0), iPromotionApply(0), iSummonDuration(0), iSummonNumber(0), piSummonPromotionData(NULL), bPermanent(false),bSummonPermanent(false)
 	{
 	}
 	int iDamage;
@@ -651,7 +656,11 @@ struct SpellUpgradeData
 	int iFortifyTurns;
 	int iPromotionApply;
 	int iDuration;
+	int iSummonDuration;
+	int iSummonNumber;
+	int* piSummonPromotionData;
 	bool bPermanent;
+	bool bSummonPermanent;
 
 	void read(FDataStreamBase* pStream);
 	void write(FDataStreamBase* pStream);

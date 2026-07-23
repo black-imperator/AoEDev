@@ -159,6 +159,8 @@ public:
 	void setChoosingFreeTech(bool bValue);
 	bool isUpdatePlotGroups() const;
 	void setUpdatePlotGroups(bool bValue);
+	bool isRunningCityUpdate() const;
+	void setRunningCityUpdate(bool bValue);
 	/************************************************************************************************/
 /* UNOFFICIAL_PATCH                        END                                                  */
 /************************************************************************************************/
@@ -1791,6 +1793,7 @@ protected:
 	// Free Tech Popup Fix
 	bool m_bChoosingFreeTech;
 	bool m_bUpdatePlotGroups;
+	bool m_bRunningCityUpdate;
 /************************************************************************************************/
 /* UNOFFICIAL_PATCH                        END                                                  */
 /************************************************************************************************/

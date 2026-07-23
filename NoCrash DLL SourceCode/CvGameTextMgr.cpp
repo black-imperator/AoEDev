@@ -13983,6 +13983,11 @@ void CvGameTextMgr::parsePromotionHelp(CvWStringBuffer &szBuffer, PromotionTypes
 		szBuffer.append(pcNewline); // TXT_KEY_TERRAIN_HILL
 		szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_MAGICAL_POWER", GC.getPromotionInfo(ePromotion).getMagicalPower()));
 	}
+	if (GC.getPromotionInfo(ePromotion).getMinMagicalPower() != 0)
+	{
+		szBuffer.append(pcNewline); // TXT_KEY_TERRAIN_HILL
+		szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_MIN_MAGICAL_POWER", GC.getPromotionInfo(ePromotion).getMinMagicalPower()));
+	}
 
 	if (GC.getPromotionInfo(ePromotion).isBoarding())
 	{
@@ -14631,7 +14636,7 @@ void CvGameTextMgr::parseSpellHelp(CvWStringBuffer &szBuffer, SpellTypes eSpell,
 		}
 		else
 		{
-			szBuffer.append(gDLL->getText("TXT_KEY_SPELL_SUMMON_UNIT_TEMPORARY"));
+			szBuffer.append(gDLL->getText("TXT_KEY_SPELL_SUMMON_UNIT_TEMPORARY", GC.getSpellInfo(eSpell).getCreateUnitDuration()));
 		}
 		if (GC.getSpellInfo(eSpell).isCopyCastersPromotions())
 		{
@@ -15252,6 +15257,61 @@ void CvGameTextMgr::parseSpellHelp(CvWStringBuffer &szBuffer, SpellTypes eSpell,
 			}
 			szTempBuffer += gDLL->getText("TXT_KEY_SPELL_BONUS_EXTRA_PROMOTION_APPLY", iValue);
 		}
+		iValue = cbTemp.iExtraSummonDuration;
+		if (iValue != 0)
+		{
+			szBonusString.Format(L"%.0f", iValue);
+			if (!bFirst)
+			{
+				szTempBuffer += L", ";
+			}
+			else
+			{
+				bFirst = false;
+			}
+			szTempBuffer += gDLL->getText("TXT_KEY_SPELL_BONUS_EXTRA_SUMMON_DURATION", iValue);
+		}
+		iValue = cbTemp.iExtraSummonNumber;
+		if (iValue != 0)
+		{
+			szBonusString.Format(L"%.0f", iValue);
+			if (!bFirst)
+			{
+				szTempBuffer += L", ";
+			}
+			else
+			{
+				bFirst = false;
+			}
+			szTempBuffer += gDLL->getText("TXT_KEY_SPELL_BONUS_EXTRA_SUMMON_NUMBER", iValue);
+		}
+		iValue = cbTemp.iExtraSummonPromotion;
+		if (iValue != NO_PROMOTION)
+		{
+			if (!bFirst)
+			{
+				szTempBuffer += L", ";
+			}
+			else
+			{
+				bFirst = false;
+			}
+			szTempBuffer += gDLL->getText("TXT_KEY_SPELL_BONUS_EXTRA_SUMMON_PROMOTION", GC.getPromotionInfo((PromotionTypes)iValue).getDescription());
+		}
+		iValue = cbTemp.iExtraSummonPromotionApply;
+		if (iValue != 0)
+		{
+			szBonusString.Format(L"%.0f", iValue);
+			if (!bFirst)
+			{
+				szTempBuffer += L", ";
+			}
+			else
+			{
+				bFirst = false;
+			}
+			szTempBuffer += gDLL->getText("TXT_KEY_SPELL_BONUS_EXTRA_SUMMON_PROMOTION_APPLY", iValue);
+		}
 		if (cbTemp.bExtraPermanent != false)
 		{
 			if (!bFirst)
@@ -15263,6 +15323,18 @@ void CvGameTextMgr::parseSpellHelp(CvWStringBuffer &szBuffer, SpellTypes eSpell,
 				bFirst = false;
 			}
 			szTempBuffer += gDLL->getText("TXT_KEY_SPELL_BONUS_EXTRA_PERMANENT", iValue);
+		}
+		if (cbTemp.bExtraSummonPermanent != false)
+		{
+			if (!bFirst)
+			{
+				szTempBuffer += L", ";
+			}
+			else
+			{
+				bFirst = false;
+			}
+			szTempBuffer += gDLL->getText("TXT_KEY_SPELL_BONUS_EXTRA_SUMMON_PERMANENT", iValue);
 		}
 		if (cbTemp.bExtraImmuneTeam != false)
 		{

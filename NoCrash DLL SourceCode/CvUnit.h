@@ -1764,11 +1764,13 @@ public:
 	int getExtraMagicalPower() const;
 	void changeExtraMagicalPower(int iNewValue);
 	void setExtraMagicalPower(int iNewValue);
-//	int getExtraDominionCapacity() const;
+	int getMinMagicalPower() const;
+	void changeMinMagicalPower(int iNewValue);
+	void setMinMagicalPower(int iNewValue);
+	void updateMinMagicalPower();
+	//	int getExtraDominionCapacity() const;
 //	void changeExtraDominionCapacity(int iNewValue);
 //	void setExtraDominionCapacity(int iNewValue);
-//	int getSpellClassExtraPower(int i) const;
-//	void changeSpellClassExtraPower(int i, int iNewValue);
 
 protected:
 
@@ -2188,8 +2190,8 @@ protected:
 /*************************************************************************************************/
 	///Magic Rework
 	int m_iExtraMagicalPower;
-//	int m_iExtraDominionCapacity;
-//	int* m_piSpellClassExtraPower;
+	int m_iMinMagicalPower;
+	//	int m_iExtraDominionCapacity;
 
 	PlayerTypes m_eOwner;
 	PlayerTypes m_eCapturingPlayer;
