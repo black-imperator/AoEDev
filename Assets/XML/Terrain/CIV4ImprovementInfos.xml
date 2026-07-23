@@ -14244,6 +14244,76 @@
 			<bUnique>1</bUnique>
 			<BonusConvert>BONUS_MANA_SPIRIT</BonusConvert>
 		</ImprovementInfo>
+		<ImprovementInfo><!-- Well of Ashes -->
+			<Type>IMPROVEMENT_WELL_OF_ASHES</Type>
+			<ImprovementClass>IMPROVEMENTCLASS_WELL_OF_ASHES</ImprovementClass>
+			<Description>TXT_KEY_IMPROVEMENT_WELL_OF_ASHES</Description>
+			<Civilopedia>TXT_KEY_LEADER_TRISTESSA_PEDIA</Civilopedia>
+			<ArtDefineTag>ART_DEF_IMPROVEMENT_BRADELINES_WELL</ArtDefineTag>
+			<YieldChanges>
+			</YieldChanges>
+			<bPermanent>1</bPermanent>
+			<iExploreDelay>75</iExploreDelay>
+			<BonusTypeStructs>
+				<BonusTypeStruct>
+					<BonusType>BONUS_MANA_DEATH</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+			</BonusTypeStructs>
+			<TechYieldChanges>
+				<TechYieldChange>
+					<PrereqTech>TECH_NECROMANCY</PrereqTech>
+					<TechYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>4</iYield>
+					</TechYields>
+				</TechYieldChange>
+			</TechYieldChanges>
+			<bUnique>1</bUnique>
+			<BonusConvert>BONUS_MANA_DEATH</BonusConvert>
+			<bExplorable>1</bExplorable>
+			<iLairTier>3</iLairTier>
+			<iBasePlotCounterModify>40</iBasePlotCounterModify>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_GENERIC_MAJOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_UNDEAD_MAJOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_SPIRIT_MAJOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_MAGIC_MAJOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_LEGION</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_VAMPIRES</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_FALSE_PATRIA</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+		</ImprovementInfo>
 		<ImprovementInfo><!-- Air Mana Node -->                 <!-- Mana Nodes -->
 			<Type>IMPROVEMENT_MANA_AIR</Type>
 			<ImprovementClass>IMPROVEMENTCLASS_MANA_AIR</ImprovementClass>

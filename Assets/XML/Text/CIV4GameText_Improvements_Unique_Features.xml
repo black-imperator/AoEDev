@@ -382,6 +382,14 @@
 		<Spanish>Well of Souls (Open)</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_WELL_OF_ASHES</Tag>
+		<English>Well of Ashes</English>
+		<French>Puits des Cendres</French>
+		<German>Well of Ashes</German>
+		<Italian>Well of Ashes</Italian>
+		<Spanish>Well of Ashes</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_FOXFORD</Tag>
 		<English>Foxford</English>
 		<French>Foxford</French>

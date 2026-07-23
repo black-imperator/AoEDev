@@ -3482,7 +3482,9 @@ class CvEventManager:
 		if (pPlayer.hasTrait(self.Traits["Scorched Earth"])):	cf.razeScorcedEarth(pCity)
 		if   eNewOwnerCiv == self.Civilizations["Scions"]:		cf.razeScions(pCity)
 		elif eNewOwnerCiv == self.Civilizations["D'Tesh"]:		cf.razeDtesh(pCity)
-
+		
+		if pCity.getName()=="Ashgate":
+			pPlot.setImprovementType(gc.getInfoTypeForString("IMPROVEMENT_WELL_OF_ASHES"))
 		if CyGame().getWBMapScript():
 			sf.onCityRazed(pCity, iPlayer)
 

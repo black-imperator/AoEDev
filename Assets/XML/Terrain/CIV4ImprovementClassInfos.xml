@@ -720,6 +720,12 @@
 			<bUnique>0</bUnique>
 			<DefaultImprovement>IMPROVEMENT_WELL_OF_SOULS_OPEN</DefaultImprovement>
 		</ImprovementClassInfo>
+		<ImprovementClassInfo><!-- Well of Ashes -->
+			<Type>IMPROVEMENTCLASS_WELL_OF_ASHES</Type>
+			<Description></Description>
+			<bUnique>0</bUnique>
+			<DefaultImprovement>IMPROVEMENT_WELL_OF_ASHES</DefaultImprovement>
+		</ImprovementClassInfo>
 		<ImprovementClassInfo><!-- Air Mana Node -->
 			<Type>IMPROVEMENTCLASS_MANA_AIR</Type>
 			<Description></Description>
