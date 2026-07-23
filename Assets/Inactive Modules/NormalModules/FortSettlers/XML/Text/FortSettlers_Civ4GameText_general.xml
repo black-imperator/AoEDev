@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Units -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_FORTSETTLE</Tag>
+		<English>Convert Fort into a City</English>
+		<French>Convert Fort into a City</French>
+		<German>Convert Fort into a City</German>
+		<Italian>Convert Fort into a City</Italian>
+		<Spanish>Convert Fort into a City­</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_FORTSETTLE_PEDIA</Tag>
+		<English>It has been common practice that castles and forts would serve as the foundation that a settlement would grow from.</English>
+		<French>It has been common practice that castles and forts would serve as the foundation that a settlement would grow from.</French>
+		<German>It has been common practice that castles and forts would serve as the foundation that a settlement would grow from.</German>
+		<Italian>It has been common practice that castles and forts would serve as the foundation that a settlement would grow from.</Italian>
+		<Spanish>It has been common practice that castles and forts would serve as the foundation that a settlement would grow from.­</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_FORTSETTLE_STRATEGY</Tag>
+		<English>When your fort commanders are high enough level, they can be sacrificed to found a city on this fort. This will come with all the upsides and downsides of any other city. Think carefully before you do so.</English>
+		<French>When your fort commanders are high enough level, they can be sacrificed to found a city on this fort. This will come with all the upsides and downsides of any other city. Think carefully before you do so.</French>
+		<German>When your fort commanders are high enough level, they can be sacrificed to found a city on this fort. This will come with all the upsides and downsides of any other city. Think carefully before you do so.</German>
+		<Italian>When your fort commanders are high enough level, they can be sacrificed to found a city on this fort. This will come with all the upsides and downsides of any other city. Think carefully before you do so.</Italian>
+		<Spanish>When your fort commanders are high enough level, they can be sacrificed to found a city on this fort. This will come with all the upsides and downsides of any other city. Think carefully before you do so.</Spanish>
+	</TEXT>
+</Civ4GameText>

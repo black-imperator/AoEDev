@@ -5729,6 +5729,23 @@
 			<PythonPrereq>reqLairFreeCalabim</PythonPrereq>
 			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_CALABIM','LEADER_ALEXIS')</PythonCallback>
 		</GoodyInfo>
+		<GoodyInfo>	<!--Discover Ashgate	 -->
+			<Type>GOODY_FREE_ASHGATE</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_VAMPIRES</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>30</iWeight>
+			<Description>TXT_KEY_GOODY_FREED_ASHGATE</Description>
+			<Sound>AS2D_GOODY_HOSTILE</Sound>
+			<iDestroyLairChance>100</iDestroyLairChance>
+			<bUnique>1</bUnique>
+			<bBad>1</bBad>
+			<PythonPrereq>reqLairFreeAshegate</PythonPrereq>
+			<PythonCallback>exploreLairFreeCiv(pUnit, pPlot,'CIVILIZATION_CALABIM','LEADER_TRISTESSA')</PythonCallback>
+		</GoodyInfo>
 		<GoodyInfo>	<!--Discover the Hippus	 -->
 			<Type>GOODY_FREE_HIPPUS</Type>
 			<GoodyClasses>

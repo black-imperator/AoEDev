@@ -12471,6 +12471,79 @@ Mahon, begin moving our forces to the nearby villages at once. We will need to a
 The bandit saluted like a soldier and left the tent and your unit to its fate.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_GOODY_FREED_ASHGATE</Tag>
+		<English>Your unit has discovered an entire city tucked between the hills of this region.
+
+The air hangs heavy with fog, muffling the sounds around them except the cawing of crows.
+As they make their way down the valley and enter the outskirts, they find villagers who will not meet their gaze or answer their greeting, quickly making their way inside and shuttering the doors.
+
+Your unit can feel something wrong about this place, something that reminds them of standing at funerals, empty and alone while surrounded by others.
+Your unit resists the strange urge to lie down and rest on the cobblestone road, just for a moment, or maybe forever.
+As they push on towards the city, they find a road sign, half rotten; the sign reads "Ashgate".
+
+It is at this moment that they feel something sharp poking into their back.
+Turning around, they find themselves at spearpoint from two ghastly, half-rotten soldiers.
+"Welcome to Ashgate, Food." The remark came from a robed man standing behind the guards, smiling in a way that didn't reach the eyes.
+Your unit makes a greeting and attempts to announce themself as a diplomat of your civilization.
+The robed man ignores them and remarks to the guards: "Bring it to the stockades for questioning. If it runs, bleed it."</English>
+		<French>Your unit has discovered an entire city tucked between the hills of this region.
+
+The air hangs heavy with fog, muffling the sounds around them except the cawing of crows.
+As they make their way down the valley and enter the outskirts, they find villagers who will not meet their gaze or answer their greeting, quickly making their way inside and shuttering the doors.
+
+Your unit can feel something wrong about this place, something that reminds them of standing at funerals, empty and alone while surrounded by others.
+Your unit resists the strange urge to lie down and rest on the cobblestone road, just for a moment, or maybe forever.
+As they push on towards the city, they find a road sign, half rotten; the sign reads "Ashgate".
+
+It is at this moment that they feel something sharp poking into their back.
+Turning around, they find themselves at spearpoint from two ghastly, half-rotten soldiers.
+"Welcome to Ashgate, Food." The remark came from a robed man standing behind the guards, smiling in a way that didn't reach the eyes.
+Your unit makes a greeting and attempts to announce themself as a diplomat of your civilization.
+The robed man ignores them and remarks to the guards: "Bring it to the stockades for questioning. If it runs, bleed it."</French>
+		<German>Your unit has discovered an entire city tucked between the hills of this region.
+
+The air hangs heavy with fog, muffling the sounds around them except the cawing of crows.
+As they make their way down the valley and enter the outskirts, they find villagers who will not meet their gaze or answer their greeting, quickly making their way inside and shuttering the doors.
+
+Your unit can feel something wrong about this place, something that reminds them of standing at funerals, empty and alone while surrounded by others.
+Your unit resists the strange urge to lie down and rest on the cobblestone road, just for a moment, or maybe forever.
+As they push on towards the city, they find a road sign, half rotten; the sign reads "Ashgate".
+
+It is at this moment that they feel something sharp poking into their back.
+Turning around, they find themselves at spearpoint from two ghastly, half-rotten soldiers.
+"Welcome to Ashgate, Food." The remark came from a robed man standing behind the guards, smiling in a way that didn't reach the eyes.
+Your unit makes a greeting and attempts to announce themself as a diplomat of your civilization.
+The robed man ignores them and remarks to the guards: "Bring it to the stockades for questioning. If it runs, bleed it."</German>
+		<Italian>Your unit has discovered an entire city tucked between the hills of this region.
+
+The air hangs heavy with fog, muffling the sounds around them except the cawing of crows.
+As they make their way down the valley and enter the outskirts, they find villagers who will not meet their gaze or answer their greeting, quickly making their way inside and shuttering the doors.
+
+Your unit can feel something wrong about this place, something that reminds them of standing at funerals, empty and alone while surrounded by others.
+Your unit resists the strange urge to lie down and rest on the cobblestone road, just for a moment, or maybe forever.
+As they push on towards the city, they find a road sign, half rotten; the sign reads "Ashgate".
+
+It is at this moment that they feel something sharp poking into their back.
+Turning around, they find themselves at spearpoint from two ghastly, half-rotten soldiers.
+"Welcome to Ashgate, Food." The remark came from a robed man standing behind the guards, smiling in a way that didn't reach the eyes.
+Your unit makes a greeting and attempts to announce themself as a diplomat of your civilization.
+The robed man ignores them and remarks to the guards: "Bring it to the stockades for questioning. If it runs, bleed it."</Italian>
+		<Spanish>Your unit has discovered an entire city tucked between the hills of this region.
+
+The air hangs heavy with fog, muffling the sounds around them except the cawing of crows.
+As they make their way down the valley and enter the outskirts, they find villagers who will not meet their gaze or answer their greeting, quickly making their way inside and shuttering the doors.
+
+Your unit can feel something wrong about this place, something that reminds them of standing at funerals, empty and alone while surrounded by others.
+Your unit resists the strange urge to lie down and rest on the cobblestone road, just for a moment, or maybe forever.
+As they push on towards the city, they find a road sign, half rotten; the sign reads "Ashgate".
+
+It is at this moment that they feel something sharp poking into their back.
+Turning around, they find themselves at spearpoint from two ghastly, half-rotten soldiers.
+"Welcome to Ashgate, Food." The remark came from a robed man standing behind the guards, smiling in a way that didn't reach the eyes.
+Your unit makes a greeting and attempts to announce themself as a diplomat of your civilization.
+The robed man ignores them and remarks to the guards: "Bring it to the stockades for questioning. If it runs, bleed it."</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_GOODY_FREED_CHISLEV</Tag>
 		<English>Your unit finds a group of men and women chained up in the bowels of the goblin fort.
 On freeing them, they introduce themselves as the 'Chislev' and swear a blood oath of vengeance on the goblin foe.
@@ -13083,11 +13156,146 @@ And they are noticed instantly - a woman equipped for engineering work approache
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GOODY_FREED_MEKARA</Tag>
-		<English></English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
+		<English>Your unit discovers that what they thought was an encampment of bandits was something far worse: Slavers!
+Trying to flee, a slaver throws a net over your unit, entangling them. 
+The rest of the band descend on the unit with wooden clubs, and before long they are unconscious.
+
+Drugged and gagged, the days blur together until time loses any meaning.
+Flickers of lucidity grant glimpses of the back of a cart, inside of a metal cage; this blurs into a burly slaver taking coin from a group wearing hooded cowls and amurite city sidgels around their necks, and last a smiling man in doctors' robes, whose voice was just so warm, it almost didn't matter what they were saying. Something about the greater good.
+There were others, behind the man, in chains as well, listening and smiling as the man spoke to them like a kindly uncle. 
+In the background, a motion catches your unit's eye as more hooded men pull up and lead the other people away into a building; they seem scared, but it doesn't matter; the man is saying something important.
+
+Your unit jolts back to awareness as their back slams onto the cold stone table; the room is lit by green flame, with flickering shadows masking the goings on, but the darkness does not mask the sounds.
+The sounds of cutting, of wrenching, of popping, and of screams.
+
+The person holding this unit to the table begins to move in a jerking, jolting motion as they reach to clasp wrists and ankles to the frame. Light flickers over their face and your unit realises they do not have one. 
+Just a single eye in their forehead and two ears in the wrong places.
+
+Your unit realises that time is about to run out, and, flailing wildly, is able to knock the homonculus over; both of them fall to the cold stone floor, slick with gore and littered with bone.
+
+Your unit scrambles to their feet and, grabbing a nearby femur, attempts to land blows on the creature's face.
+The blows have no effect, and the thing is shuffling forward to grab onto them again.
+
+The flames flicker again, and your unit sees a man in the corner with runes carved into their chest, who appears deep in a trance.
+Acting on an impulse, your unit throws the femur across the room, and with the grace of luck, it strikes the man across the face, laying them out flat.
+
+The humonculus stops its advance, turns, and then begins to stride towards the unconscious man.
+It and several others like it all converge on the man, but instead of helping him up, they begin pulling on parts of him.
+It doesn't take long before pieces start to come loose.
+
+Your unit turns on its heel and flees this place; they have to get back, they have to tell everyone about what is coming.</English>
+		<French>Your unit discovers that what they thought was an encampment of bandits was something far worse: Slavers!
+Trying to flee, a slaver throws a net over your unit, entangling them. 
+The rest of the band descend on the unit with wooden clubs, and before long they are unconscious.
+
+Drugged and gagged, the days blur together until time loses any meaning.
+Flickers of lucidity grant glimpses of the back of a cart, inside of a metal cage; this blurs into a burly slaver taking coin from a group wearing hooded cowls and amurite city sidgels around their necks, and last a smiling man in doctors' robes, whose voice was just so warm, it almost didn't matter what they were saying. Something about the greater good.
+There were others, behind the man, in chains as well, listening and smiling as the man spoke to them like a kindly uncle. 
+In the background, a motion catches your unit's eye as more hooded men pull up and lead the other people away into a building; they seem scared, but it doesn't matter; the man is saying something important.
+
+Your unit jolts back to awareness as their back slams onto the cold stone table; the room is lit by green flame, with flickering shadows masking the goings on, but the darkness does not mask the sounds.
+The sounds of cutting, of wrenching, of popping, and of screams.
+
+The person holding this unit to the table begins to move in a jerking, jolting motion as they reach to clasp wrists and ankles to the frame. Light flickers over their face and your unit realises they do not have one. 
+Just a single eye in their forehead and two ears in the wrong places.
+
+Your unit realises that time is about to run out, and, flailing wildly, is able to knock the homonculus over; both of them fall to the cold stone floor, slick with gore and littered with bone.
+
+Your unit scrambles to their feet and, grabbing a nearby femur, attempts to land blows on the creature's face.
+The blows have no effect, and the thing is shuffling forward to grab onto them again.
+
+The flames flicker again, and your unit sees a man in the corner with runes carved into their chest, who appears deep in a trance.
+Acting on an impulse, your unit throws the femur across the room, and with the grace of luck, it strikes the man across the face, laying them out flat.
+
+The humonculus stops its advance, turns, and then begins to stride towards the unconscious man.
+It and several others like it all converge on the man, but instead of helping him up, they begin pulling on parts of him.
+It doesn't take long before pieces start to come loose.
+
+Your unit turns on its heel and flees this place; they have to get back, they have to tell everyone about what is coming.</French>
+		<German>Your unit discovers that what they thought was an encampment of bandits was something far worse: Slavers!
+Trying to flee, a slaver throws a net over your unit, entangling them. 
+The rest of the band descend on the unit with wooden clubs, and before long they are unconscious.
+
+Drugged and gagged, the days blur together until time loses any meaning.
+Flickers of lucidity grant glimpses of the back of a cart, inside of a metal cage; this blurs into a burly slaver taking coin from a group wearing hooded cowls and amurite city sidgels around their necks, and last a smiling man in doctors' robes, whose voice was just so warm, it almost didn't matter what they were saying. Something about the greater good.
+There were others, behind the man, in chains as well, listening and smiling as the man spoke to them like a kindly uncle. 
+In the background, a motion catches your unit's eye as more hooded men pull up and lead the other people away into a building; they seem scared, but it doesn't matter; the man is saying something important.
+
+Your unit jolts back to awareness as their back slams onto the cold stone table; the room is lit by green flame, with flickering shadows masking the goings on, but the darkness does not mask the sounds.
+The sounds of cutting, of wrenching, of popping, and of screams.
+
+The person holding this unit to the table begins to move in a jerking, jolting motion as they reach to clasp wrists and ankles to the frame. Light flickers over their face and your unit realises they do not have one. 
+Just a single eye in their forehead and two ears in the wrong places.
+
+Your unit realises that time is about to run out, and, flailing wildly, is able to knock the homonculus over; both of them fall to the cold stone floor, slick with gore and littered with bone.
+
+Your unit scrambles to their feet and, grabbing a nearby femur, attempts to land blows on the creature's face.
+The blows have no effect, and the thing is shuffling forward to grab onto them again.
+
+The flames flicker again, and your unit sees a man in the corner with runes carved into their chest, who appears deep in a trance.
+Acting on an impulse, your unit throws the femur across the room, and with the grace of luck, it strikes the man across the face, laying them out flat.
+
+The humonculus stops its advance, turns, and then begins to stride towards the unconscious man.
+It and several others like it all converge on the man, but instead of helping him up, they begin pulling on parts of him.
+It doesn't take long before pieces start to come loose.
+
+Your unit turns on its heel and flees this place; they have to get back, they have to tell everyone about what is coming.</German>
+		<Italian>Your unit discovers that what they thought was an encampment of bandits was something far worse: Slavers!
+Trying to flee, a slaver throws a net over your unit, entangling them. 
+The rest of the band descend on the unit with wooden clubs, and before long they are unconscious.
+
+Drugged and gagged, the days blur together until time loses any meaning.
+Flickers of lucidity grant glimpses of the back of a cart, inside of a metal cage; this blurs into a burly slaver taking coin from a group wearing hooded cowls and amurite city sidgels around their necks, and last a smiling man in doctors' robes, whose voice was just so warm, it almost didn't matter what they were saying. Something about the greater good.
+There were others, behind the man, in chains as well, listening and smiling as the man spoke to them like a kindly uncle. 
+In the background, a motion catches your unit's eye as more hooded men pull up and lead the other people away into a building; they seem scared, but it doesn't matter; the man is saying something important.
+
+Your unit jolts back to awareness as their back slams onto the cold stone table; the room is lit by green flame, with flickering shadows masking the goings on, but the darkness does not mask the sounds.
+The sounds of cutting, of wrenching, of popping, and of screams.
+
+The person holding this unit to the table begins to move in a jerking, jolting motion as they reach to clasp wrists and ankles to the frame. Light flickers over their face and your unit realises they do not have one. 
+Just a single eye in their forehead and two ears in the wrong places.
+
+Your unit realises that time is about to run out, and, flailing wildly, is able to knock the homonculus over; both of them fall to the cold stone floor, slick with gore and littered with bone.
+
+Your unit scrambles to their feet and, grabbing a nearby femur, attempts to land blows on the creature's face.
+The blows have no effect, and the thing is shuffling forward to grab onto them again.
+
+The flames flicker again, and your unit sees a man in the corner with runes carved into their chest, who appears deep in a trance.
+Acting on an impulse, your unit throws the femur across the room, and with the grace of luck, it strikes the man across the face, laying them out flat.
+
+The humonculus stops its advance, turns, and then begins to stride towards the unconscious man.
+It and several others like it all converge on the man, but instead of helping him up, they begin pulling on parts of him.
+It doesn't take long before pieces start to come loose.
+
+Your unit turns on its heel and flees this place; they have to get back, they have to tell everyone about what is coming.</Italian>
+		<Spanish>Your unit discovers that what they thought was an encampment of bandits was something far worse: Slavers!
+Trying to flee, a slaver throws a net over your unit, entangling them. 
+The rest of the band descend on the unit with wooden clubs, and before long they are unconscious.
+
+Drugged and gagged, the days blur together until time loses any meaning.
+Flickers of lucidity grant glimpses of the back of a cart, inside of a metal cage; this blurs into a burly slaver taking coin from a group wearing hooded cowls and amurite city sidgels around their necks, and last a smiling man in doctors' robes, whose voice was just so warm, it almost didn't matter what they were saying. Something about the greater good.
+There were others, behind the man, in chains as well, listening and smiling as the man spoke to them like a kindly uncle. 
+In the background, a motion catches your unit's eye as more hooded men pull up and lead the other people away into a building; they seem scared, but it doesn't matter; the man is saying something important.
+
+Your unit jolts back to awareness as their back slams onto the cold stone table; the room is lit by green flame, with flickering shadows masking the goings on, but the darkness does not mask the sounds.
+The sounds of cutting, of wrenching, of popping, and of screams.
+
+The person holding this unit to the table begins to move in a jerking, jolting motion as they reach to clasp wrists and ankles to the frame. Light flickers over their face and your unit realises they do not have one. 
+Just a single eye in their forehead and two ears in the wrong places.
+
+Your unit realises that time is about to run out, and, flailing wildly, is able to knock the homonculus over; both of them fall to the cold stone floor, slick with gore and littered with bone.
+
+Your unit scrambles to their feet and, grabbing a nearby femur, attempts to land blows on the creature's face.
+The blows have no effect, and the thing is shuffling forward to grab onto them again.
+
+The flames flicker again, and your unit sees a man in the corner with runes carved into their chest, who appears deep in a trance.
+Acting on an impulse, your unit throws the femur across the room, and with the grace of luck, it strikes the man across the face, laying them out flat.
+
+The humonculus stops its advance, turns, and then begins to stride towards the unconscious man.
+It and several others like it all converge on the man, but instead of helping him up, they begin pulling on parts of him.
+It doesn't take long before pieces start to come loose.
+
+Your unit turns on its heel and flees this place; they have to get back, they have to tell everyone about what is coming.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GOODY_FREED_SCIONS_OF_PATRIA</Tag>

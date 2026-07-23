@@ -35,7 +35,7 @@ def reqBuildFuneralPyre(caster):
             return False
 			
 			
-def exploreLairSerpentTribe((pUnit, pPlot):
+def exploreLairSerpentTribe(pUnit, pPlot):
 
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())

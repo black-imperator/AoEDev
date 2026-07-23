@@ -1105,7 +1105,17 @@
 					<LeaderName>LEADER_CHUREL</LeaderName>
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
+				<Leader>
+					<LeaderName>LEADER_TRISTESSA</LeaderName>
+					<bLeaderAvailability>0</bLeaderAvailability>
+				</Leader>
 			</Leaders>
+			<SecondaryLeaders>
+				<SecondaryLeader>
+                    <LeaderName>LEADER_TRISTESSA</LeaderName>
+                    <bLeaderAvailability>1</bLeaderAvailability>
+                </SecondaryLeader>
+        </SecondaryLeaders>
 			<DerivativeCiv>NONE</DerivativeCiv>
 			<CivilizationSelectionSound>AS3D_ARABIA_SELECT</CivilizationSelectionSound>
 			<CivilizationActionSound>AS3D_ARABIA_ORDER</CivilizationActionSound>

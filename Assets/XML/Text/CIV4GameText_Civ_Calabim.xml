@@ -493,4 +493,100 @@ Elijah interrupted his servant, "Enough, it seems clear that Alexis is again beh
 		<Italian>Le tue incursioni nelle città avversarie hanno fruttato abbastanza popolani da incrementare la popolazione delle tue città di 2</Italian>
 		<Spanish>Your raids on enemy cities brought back enough peasants to increase your city population by 2</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_TRISTESSA</Tag>
+		<English>Tristessa</English>
+		<French>Tristessa</French>
+		<German>Tristessa</German>
+		<Italian>Tristessa</Italian>
+		<Spanish>Tristessa</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_TRISTESSA_PEDIA</Tag>
+		<English>Ashgate is a Calabim city that sits on one of the passages into the Otherworld (thats what "Ashgate" is refering to). Tristessa of Ashgate is a very powerful archmage and necromancer that led a revolution in Ashgate and overthrew a weak Calabim governor. The story between her and Alexis is a long one but the short version is that Tristessa was strong enough (and able to pull some truly horrible things out of the Otherworld) that Alexis didn't want to fight her directly. Tristessa claimed independence and in the end, Alexis ruined her.</English>
+		<French>Ashgate is a Calabim city that sits on one of the passages into the Otherworld (thats what "Ashgate" is refering to). Tristessa of Ashgate is a very powerful archmage and necromancer that led a revolution in Ashgate and overthrew a weak Calabim governor. The story between her and Alexis is a long one but the short version is that Tristessa was strong enough (and able to pull some truly horrible things out of the Otherworld) that Alexis didn't want to fight her directly. Tristessa claimed independence and in the end, Alexis ruined her.</French>
+		<German>Ashgate is a Calabim city that sits on one of the passages into the Otherworld (thats what "Ashgate" is refering to). Tristessa of Ashgate is a very powerful archmage and necromancer that led a revolution in Ashgate and overthrew a weak Calabim governor. The story between her and Alexis is a long one but the short version is that Tristessa was strong enough (and able to pull some truly horrible things out of the Otherworld) that Alexis didn't want to fight her directly. Tristessa claimed independence and in the end, Alexis ruined her.</German>
+		<Italian>Ashgate is a Calabim city that sits on one of the passages into the Otherworld (thats what "Ashgate" is refering to). Tristessa of Ashgate is a very powerful archmage and necromancer that led a revolution in Ashgate and overthrew a weak Calabim governor. The story between her and Alexis is a long one but the short version is that Tristessa was strong enough (and able to pull some truly horrible things out of the Otherworld) that Alexis didn't want to fight her directly. Tristessa claimed independence and in the end, Alexis ruined her.</Italian>
+		<Spanish>Ashgate is a Calabim city that sits on one of the passages into the Otherworld (thats what "Ashgate" is refering to). Tristessa of Ashgate is a very powerful archmage and necromancer that led a revolution in Ashgate and overthrew a weak Calabim governor. The story between her and Alexis is a long one but the short version is that Tristessa was strong enough (and able to pull some truly horrible things out of the Otherworld) that Alexis didn't want to fight her directly. Tristessa claimed independence and in the end, Alexis ruined her.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_WELLSPRING_OF_UNDEATH</Tag>
+		<English>Wellspring of Undeath</English>
+		<French>Wellspring of Undeath</French>
+		<German>Wellspring of Undeath</German>
+		<Italian>Wellspring of Undeath</Italian>
+		<Spanish>Wellspring of Undeath</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_WELLSPRING_OF_UNDEATH_PEDIA</Tag>
+		<English>Ashgate is a Calabim city that rests on top of one of the Great Wells, making death magic nearly effortless and undead constructs exceptionally hard to kill.</English>
+		<French>Ashgate is a Calabim city that rests on top of one of the Great Wells, making death magic nearly effortless and undead constructs exceptionally hard to kill.</French>
+		<German>Ashgate is a Calabim city that rests on top of one of the Great Wells, making death magic nearly effortless and undead constructs exceptionally hard to kill.</German>
+		<Italian>Ashgate is a Calabim city that rests on top of one of the Great Wells, making death magic nearly effortless and undead constructs exceptionally hard to kill.</Italian>
+		<Spanish>Ashgate is a Calabim city that rests on top of one of the Great Wells, making death magic nearly effortless and undead constructs exceptionally hard to kill.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_WELLSPRING_OF_UNDEATH_HELP</Tag>
+		<English>[NEWLINE][ICON_BULLET]Undead units gain the [LINK=PROMOTION_WELLSPRING_OF_UNDEATH]Wellspring of Undeath[\LINK] promotion.</English>
+		<French>WSPU</French>
+		<German>WSPU</German>
+		<Italian>WSPU</Italian>
+		<Spanish>WSPU</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_WELLSPRING_OF_UNDEATH_SHORT</Tag>
+		<English>WSPU</English>
+		<French>WSPU</French>
+		<German>WSPU</German>
+		<Italian>WSPU</Italian>
+		<Spanish>WSPU</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HORSEMAN_WELLSPRING</Tag>
+		<English>Ash Riders</English>
+		<French>Ash Riders</French>
+		<German>Ash Riders</German>
+		<Italian>Ash Riders</Italian>
+		<Spanish>Ash Riders</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HORSE_ARCHER_WELLSPRING</Tag>
+		<English>Pale Riders</English>
+		<French>Pale Riders</French>
+		<German>Pale Riders</German>
+		<Italian>Pale Riders</Italian>
+		<Spanish>Pale Riders</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_KNIGHT_WELLSPRING</Tag>
+		<English>Tristessa's Honour Guard</English>
+		<French>Tristessa's Honour Guard</French>
+		<German>Tristessa's Honour Guard</German>
+		<Italian>Tristessa's Honour Guard</Italian>
+		<Spanish>Tristessa's Honour Guard</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_UNDEAD_DRAKE_RIDERS</Tag>
+		<English>Undead Drake Riders</English>
+		<French>Undead Drake Riders</French>
+		<German>Undead Drake Riders</German>
+		<Italian>Undead Drake Riders</Italian>
+		<Spanish>Undead Drake Riders</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_UNDEAD_DRAKE_LORD</Tag>
+		<English>Undead Drake Lord</English>
+		<French>Undead Drake Lord</French>
+		<German>Undead Drake Lord</German>
+		<Italian>Undead Drake Lord</Italian>
+		<Spanish>Undead Drake Lord</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_UNDEAD_HONOUR_GUARD</Tag>
+		<English>Undead Honour Guard</English>
+		<French>Undead Honour Guard</French>
+		<German>Undead Honour Guard</German>
+		<Italian>Undead Honour Guard</Italian>
+		<Spanish>Undead Honour Guard</Spanish>
+	</TEXT>
 </Civ4GameText>

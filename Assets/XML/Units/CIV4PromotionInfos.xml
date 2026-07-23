@@ -18682,6 +18682,88 @@
 			<Description>TXT_KEY_PROMOTION_GREATER_GRAVELEECH</Description>
 		<Button>Art/Interface/Buttons/Units/graveleech.dds</Button>
 		</PromotionInfo>
+		<PromotionInfo>		<!-- Wellspring of Undeath -->
+			<Type>PROMOTION_WELLSPRING_OF_UNDEATH</Type>
+			<Description>TXT_KEY_TRAIT_WELLSPRING_OF_UNDEATH</Description>
+			<iEnemyHealChange>5</iEnemyHealChange>
+			<iNeutralHealChange>5</iNeutralHealChange>
+			<iFriendlyHealChange>5</iFriendlyHealChange>
+			<bLeveledImmortality>1</bLeveledImmortality>
+			<bAutoAcquire>1</bAutoAcquire>
+			<bNoXP>1</bNoXP>
+			<bMustMaintain>1</bMustMaintain>
+			<PrereqTraits>
+				<PrereqTrait>TRAIT_WELLSPRING_OF_UNDEATH</PrereqTrait>
+			</PrereqTraits>
+			<PrereqPromotionANDs>
+				<PrereqPromotionAND>
+					<PromotionType>PROMOTION_UNDEAD</PromotionType>
+					<iPrereqApplications>1</iPrereqApplications>
+				</PrereqPromotionAND>
+			</PrereqPromotionANDs>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ANIMAL</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_BEAST</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Art/Interface/Buttons/Improvements/bradelineswell.dds</Button>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Undead Honour Guard -->
+			<Type>PROMOTION_UNDEAD_HONOUR_GUARD</Type>
+			<Description>TXT_KEY_PROMOTION_UNDEAD_HONOUR_GUARD</Description>
+			<iAsset>10</iAsset>
+			<bNoXP>1</bNoXP>
+			<iCombatPercent>25</iCombatPercent>
+			<iExtraPerception>1</iExtraPerception>
+			<Button>Art/Interface/Buttons/Units/Dtesh/Sentinel.dds</Button>
+			<ExtraArtType>ART_DEF_UNIT_SENTINEL</ExtraArtType>
+			<bCompanion>1</bCompanion>
+		</PromotionInfo>
 		<PromotionInfo>		<!-- Vile Touch -->
 			<Type>PROMOTION_VILE_TOUCH</Type>
 			<Description>TXT_KEY_PROMOTION_VILE_TOUCH</Description>
@@ -23553,7 +23635,12 @@
 		<PromotionInfo>		<!-- Crafting Tradition -->
 			<Type>PROMOTION_CRAFTING_TRADITION</Type>
 			<Description>TXT_KEY_PROMOTION_CRAFTING_TRADITION</Description>
-			<iMinLevel>-1</iMinLevel>
+			<bAutoAcquire>1</bAutoAcquire>
+			<bNoXP>1</bNoXP>
+			<PrereqTraits>
+				<PrereqTrait>TRAIT_INDUSTRIOUS</PrereqTrait>
+				<PrereqTrait>TRAIT_INDUSTRIOUS_REPUBLIC</PrereqTrait>
+			</PrereqTraits>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>

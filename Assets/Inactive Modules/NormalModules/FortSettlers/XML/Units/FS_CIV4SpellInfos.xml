@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Spell Infos -->
+<Civ4SpellInfos xmlns="x-schema:FS_CIV4UnitSpellSchema.xml">
+	<SpellInfos>
+		<SpellInfo>			<!-- Fort Settle (Fortcommander) -->
+			<Type>SPELL_FORT_SETTLE</Type>
+			<Description>TXT_KEY_SPELL_FORTSETTLE</Description>
+			<Civilopedia>TXT_KEY_SPELL_FORTSETTLE_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_SPELL_FORTSETTLE_STRATEGY</Strategy>
+			<PromotionPrereq1>PROMOTION_INFLUENCE</PromotionPrereq1>
+			<bAllowAI>1</bAllowAI>
+			<iAIWeight>500</iAIWeight>
+			<iCasterMinLevel>5</iCasterMinLevel>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+			<bAbility>1</bAbility>
+			<iRange>1</iRange>
+			<RemovePromotions>
+				<RemovePromotion>PROMOTION_INFLUENCE</RemovePromotion>
+			</RemovePromotions>
+			<iCost>0</iCost>
+			<PyResult>spellFortSettle(pCaster)</PyResult>
+			<PyRequirement>reqFortSettle(pCaster)</PyRequirement>
+			<Effect>EFFECT_SPELL1</Effect>
+			<Sound>AS3D_SPELL_MUTATION</Sound>
+			<Button>Art/Interface/Buttons/Projects/PrepareExpedition.dds</Button>
+		</SpellInfo>
+	</SpellInfos>
+</Civ4SpellInfos>
