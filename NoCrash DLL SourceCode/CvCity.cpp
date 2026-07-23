@@ -1518,17 +1518,18 @@ void CvCity::kill(bool bUpdatePlotGroups)
 	eOwner = getOwnerINLINE();
 
 	bCapital = isCapital();
-
-	pPlot->setImprovementType((ImprovementTypes)(GC.getDefineINT("RUINS_IMPROVEMENT")));
-
-/*************************************************************************************************/
-/**	Improvements Mods by Jeckel		imported by Ahwaric	20.09.09 | Valkrionn	09.24.09		**/
-/*************************************************************************************************/
-	pPlot->setImprovementOwner(getOriginalOwner());
-	pPlot->addCultureControl(getOriginalOwner(), (ImprovementTypes) GC.getDefineINT("RUINS_IMPROVEMENT"), true);
-/*************************************************************************************************/
-/**	Improvements Mods	END								**/
-/*************************************************************************************************/
+	if (pPlot->getImprovementType() == NO_IMPROVEMENT || !GC.getImprovementInfo((ImprovementTypes)pPlot->getImprovementType()).isPermanent())
+	{
+		pPlot->setImprovementType((ImprovementTypes)(GC.getDefineINT("RUINS_IMPROVEMENT")));
+		/*************************************************************************************************/
+		/**	Improvements Mods by Jeckel		imported by Ahwaric	20.09.09 | Valkrionn	09.24.09		**/
+		/*************************************************************************************************/
+		pPlot->setImprovementOwner(getOriginalOwner());
+		pPlot->addCultureControl(getOriginalOwner(), (ImprovementTypes)GC.getDefineINT("RUINS_IMPROVEMENT"), true);
+		/*************************************************************************************************/
+		/**	Improvements Mods	END								**/
+		/*************************************************************************************************/
+	}
 
 	CvEventReporter::getInstance().cityLost(this);
 

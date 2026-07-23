@@ -6494,7 +6494,7 @@ void CvPlot::setOwner(PlayerTypes eNewValue, bool bCheckUnits, bool bUpdatePlotG
 		updateIrrigated();
 		updateYield();
 
-		if (bUpdatePlotGroup)
+		if (bUpdatePlotGroup && eNewValue!=NO_PLAYER)
 		{
 			if (GET_PLAYER(eNewValue).isRunningCityUpdate())
 			{
@@ -7379,7 +7379,7 @@ void CvPlot::setImprovementType(ImprovementTypes eNewValue)
 		if (isOwned())
 		{
 			TraitTriggeredData kData;
-			kData.m_iImprovement = eOldImprovement;
+			kData.m_iImprovement = eNewValue;
 			GET_PLAYER(getOwner()).doTraitTriggers(TRAITHOOK_GAIN_IMPROVEMENT, &kData);
 		}
 		// Erase link to potential old lair spawns. Upgraded lairs thus may have more guards, if weaker

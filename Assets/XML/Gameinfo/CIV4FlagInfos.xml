@@ -375,5 +375,9 @@
 			<Type>FLAG_REPUBLIC_TIMER</Type>
 			<Description>TXT_KEY_FLAG_REPUBLIC_TIMER</Description>
 		</FlagInfo>
+		<FlagInfo>
+			<Type>FLAG_NETHERBLADE_FOUND</Type>
+			<Description>TXT_KEY_FLAG_NETHERBLADE_FOUND</Description>
+		</FlagInfo>
 	</FlagInfos>
 </Civ4FlagInfos>

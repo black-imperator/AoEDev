@@ -13273,7 +13273,10 @@ def reqLairFreeSidar(argsList):
 		return False
 	if not gc.getCivilizationInfo(gc.getInfoTypeForString('CIVILIZATION_SIDAR')).isPlayable():
 		return False
-
+	pUnit, pPlot	= argsList
+	pPlayer=gc.getPlayer(pUnit.getOwner())
+	if pPlayer.isHasFlag(gc.getInfoTypeForString("FLAG_NETHERBLADE_FOUND")):
+		return False
 	return True
 
 def reqLairFreeSvartalfer(argsList):

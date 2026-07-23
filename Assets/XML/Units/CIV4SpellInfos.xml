@@ -1101,7 +1101,6 @@
 			<bHasCasted>1</bHasCasted>
 			<CreateUnitType>UNIT_SKELETON</CreateUnitType>
 			<iCreateUnitNum>1</iCreateUnitNum>
-			<bPermanentUnitCreate>1</bPermanentUnitCreate>
 			<PyResult>spellRaiseSkeleton(pCaster)</PyResult>
 			<Effect>EFFECT_SPELL2</Effect>
 			<Sound>AS3D_SPELL_RAISE_SKELETON</Sound>

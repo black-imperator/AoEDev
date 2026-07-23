@@ -2609,6 +2609,9 @@ class CvEventManager:
 
 		cf.unitCreatedTraits(pUnit)
 
+		if iUnitType == gc.getInfoTypeForString("UNIT_RATHUS"):
+			gc.getGame().setGlobalFlag(gc.getInfoTypeForString('FLAG_NETHERBLADE_FOUND'),True)
+			
 		if iUnitType == self.Units["Scorpion Clan"]["Whelp"]: pUnit =	cf.unitCreatedWelp(pUnit)
 		if iUnitCombat == self.UnitCombats["Adept"]:					cf.unitCreatedAdept(pUnit)
 

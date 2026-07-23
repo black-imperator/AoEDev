@@ -112,11 +112,16 @@ def reqBreakWiddershinsCurse(argsList):
 def reqNetherBlade(argsList):
 	game 		= CyGame()
 	pUnit, pPlot = argsList
+	pPlayer=gc.getPlayer(pUnit.getOwner())
+	if pPlayer.isHasFlag(gc.getInfoTypeForString("FLAG_NETHERBLADE_FOUND")):
+		return False
+	
 	return not (game.getNumCivActive(getInfoType("CIVILIZATION_SIDAR"))>0)
 	
 def exploreLairNetherBlade(pUnit, pPlot):
 
 	pUnit.setHasPromotion(getInfoType("PROMOTION_NETHER_BLADE"),True)
+	gc.getGame().setGlobalFlag(gc.getInfoTypeForString('FLAG_NETHERBLADE_FOUND'),True)
 	
 def exploreLairOstauriiPatrol(pUnit, pPlot):
 
