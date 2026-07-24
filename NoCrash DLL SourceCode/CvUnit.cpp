@@ -1076,6 +1076,7 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 /**	Tweak									END													**/
 /*************************************************************************************************/
 	m_iRace = NO_PROMOTION;
+	m_iOriginalCiv = NO_CIVILIZATION;
 	m_iGraphicalAddOnPromotion = NO_PROMOTION;
 	m_iReligion = NO_RELIGION;
 	m_iResist = 0;
@@ -9078,7 +9079,7 @@ bool CvUnit::found()
 		gDLL->getInterfaceIFace()->lookAt(plot()->getPoint(), CAMERALOOKAT_NORMAL);
 	}
 
-	GET_PLAYER(getOwnerINLINE()).found(getX_INLINE(), getY_INLINE());
+	GET_PLAYER(getOwnerINLINE()).found(getX_INLINE(), getY_INLINE(),this);
 
 	if (plot()->isActiveVisible(false))
 	{
@@ -11753,6 +11754,10 @@ HandicapTypes CvUnit::getHandicapType() const
 
 CivilizationTypes CvUnit::getCivilizationType() const
 {
+	if (getOriginalCiv() != NO_CIVILIZATION)
+	{
+		return(CivilizationTypes) getOriginalCiv();
+	}
 	return GET_PLAYER(getOwnerINLINE()).getCivilizationType();
 }
 
@@ -24430,40 +24435,40 @@ bool CvUnit::canCreateUnit(int spell, CvPlot* pTargetPlot) const
 	{
 		return false;
 	}
-//	if (GC.getSpellInfo((SpellTypes)spell).isPermanentUnitCreate())
-//	{
-///*************************************************************************************************/
-///**	Whiplash								07/23/08								Xienwolf	**/
-///**	Can now easily allow more than 1 of specific units per caster, by Spell/Summoner/Civ/etc..	**/
-///**			Tracks Unit's Summoned by Caster and Caster who Summoned Conjured Units				**/
-///*************************************************************************************************/
-///**								---- Start Original Code ----									**
-//		int iCount = 0;
-//		int iLoop = 0;
-//		CvUnit* pLoopUnit;
-//		CvPlayer& kPlayer = GET_PLAYER(getOwnerINLINE());
-//		for (pLoopUnit = kPlayer.firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = kPlayer.nextUnit(&iLoop))
-//		{
-//			if ((GC.getSpellInfo((SpellTypes)spell).getPromotionPrereq1() == NO_PROMOTION ||
-//			  pLoopUnit->isHasPromotion((PromotionTypes)GC.getSpellInfo((SpellTypes)spell).getPromotionPrereq1())) &&
-//			  (GC.getSpellInfo((SpellTypes)spell).getPromotionPrereq2() == NO_PROMOTION ||
-//			  pLoopUnit->isHasPromotion((PromotionTypes)GC.getSpellInfo((SpellTypes)spell).getPromotionPrereq2())) &&
-//			  (GC.getSpellInfo((SpellTypes)spell).getReligionPrereq() == NO_RELIGION ||
-//			  pLoopUnit->getReligion() == GC.getSpellInfo((SpellTypes)spell).getReligionPrereq()))
-//			{
-//				iCount += 1;
-//			}
-//		}
-//		if (iCount <= kPlayer.getUnitClassCount((UnitClassTypes)GC.getUnitInfo((UnitTypes)GC.getSpellInfo((SpellTypes)spell).getCreateUnitType()).getUnitClassType()))
-///**								----  End Original Code  ----									**/
-//		if (getNumSlavesOfClass((UnitClassTypes)GC.getUnitInfo((UnitTypes)GC.getSpellInfo((SpellTypes)spell).getCreateUnitType()).getUnitClassType()) > 0)
-///*************************************************************************************************/
-///**	Whiplash								END													**/
-///*************************************************************************************************/
-//		{
-//			return false;
-//		}
-//	}
+	if (GC.getSpellInfo((SpellTypes)spell).isPermanentUnitCreate())
+	{
+/*************************************************************************************************/
+/**	Whiplash								07/23/08								Xienwolf	**/
+/**	Can now easily allow more than 1 of specific units per caster, by Spell/Summoner/Civ/etc..	**/
+/**			Tracks Unit's Summoned by Caster and Caster who Summoned Conjured Units				**/
+/*************************************************************************************************/
+/**								---- Start Original Code ----									**
+		int iCount = 0;
+		int iLoop = 0;
+		CvUnit* pLoopUnit;
+		CvPlayer& kPlayer = GET_PLAYER(getOwnerINLINE());
+		for (pLoopUnit = kPlayer.firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = kPlayer.nextUnit(&iLoop))
+		{
+			if ((GC.getSpellInfo((SpellTypes)spell).getPromotionPrereq1() == NO_PROMOTION ||
+			  pLoopUnit->isHasPromotion((PromotionTypes)GC.getSpellInfo((SpellTypes)spell).getPromotionPrereq1())) &&
+			  (GC.getSpellInfo((SpellTypes)spell).getPromotionPrereq2() == NO_PROMOTION ||
+			  pLoopUnit->isHasPromotion((PromotionTypes)GC.getSpellInfo((SpellTypes)spell).getPromotionPrereq2())) &&
+			  (GC.getSpellInfo((SpellTypes)spell).getReligionPrereq() == NO_RELIGION ||
+			  pLoopUnit->getReligion() == GC.getSpellInfo((SpellTypes)spell).getReligionPrereq()))
+			{
+				iCount += 1;
+			}
+		}
+		if (iCount <= kPlayer.getUnitClassCount((UnitClassTypes)GC.getUnitInfo((UnitTypes)GC.getSpellInfo((SpellTypes)spell).getCreateUnitType()).getUnitClassType()))
+/**								----  End Original Code  ----									**/
+		if (getNumSlavesOfClass((UnitClassTypes)GC.getUnitInfo((UnitTypes)GC.getSpellInfo((SpellTypes)spell).getCreateUnitType()).getUnitClassType()) > 0)
+/*************************************************************************************************/
+/**	Whiplash								END													**/
+/*************************************************************************************************/
+		{
+			return false;
+		}
+	}
 	return true;
 }
 
@@ -27965,6 +27970,16 @@ void CvUnit::setRace(int iNewValue)
 	}
 	m_iRace = iNewValue;
 }
+int CvUnit::getOriginalCiv() const
+{
+	return m_iOriginalCiv;
+}
+
+void CvUnit::setOriginalCiv(int iNewValue)
+{
+
+	m_iOriginalCiv = iNewValue;
+}
 int CvUnit::getGraphicalAddOnPromotion() const
 {
 	return m_iGraphicalAddOnPromotion;
@@ -30170,6 +30185,7 @@ void CvUnit::read(FDataStreamBase* pStream)
 /**	CandyMan								END													**/
 /*************************************************************************************************/
 	pStream->Read(&m_iRace);
+	pStream->Read(&m_iOriginalCiv);
 	pStream->Read(&m_iGraphicalAddOnPromotion);
 	pStream->Read(&m_iReligion);
 	pStream->Read(&m_iResist);
@@ -30694,6 +30710,7 @@ void CvUnit::write(FDataStreamBase* pStream)
 /**	CandyMan								END													**/
 /*************************************************************************************************/
 	pStream->Write(m_iRace);
+	pStream->Write(m_iOriginalCiv);
 	pStream->Write(m_iGraphicalAddOnPromotion);
 	pStream->Write(m_iReligion);
 	pStream->Write(m_iResist);

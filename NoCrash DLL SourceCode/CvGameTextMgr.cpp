@@ -7372,7 +7372,7 @@ void CvGameTextMgr::parseTraits(CvWStringBuffer &szHelpString, TraitTypes eTrait
 		// iLevelExperienceModifier
 		if (GC.getTraitInfo(eTrait).getLevelExperienceModifier() != 0)
 		{
-			szHelpString.append(gDLL->getText("TXT_KEY_TRAIT_CIVIC_LEVEL_MODIFIER", GC.getTraitInfo(eTrait).getLevelExperienceModifier()));
+			szHelpString.append(gDLL->getText("TXT_KEY_TRAIT_TRAIT_LEVEL_MODIFIER", GC.getTraitInfo(eTrait).getLevelExperienceModifier()));
 		}
 
 		// iGreatPeopleRateModifier
@@ -22451,6 +22451,29 @@ void CvGameTextMgr::buildBuildingRequiresString(CvWStringBuffer& szBuffer, Build
 /*************************************************************************************************/
 		}
 
+		for (int iLoopImprovement = 0; iLoopImprovement < GC.getNumImprovementInfos(); iLoopImprovement++)
+		{
+			if (kBuilding.getPrereqImprovementAtRange(iLoopImprovement) > 0)
+			{
+				szTempBuffer.Format(L"%s%s", NEWLINE, gDLL->getText("TXT_KEY_BUILDING_REQUIRES_THING_AT_RANGE", GC.getImprovementInfo((ImprovementTypes)iLoopImprovement).getTextKeyWide(), kBuilding.getPrereqImprovementAtRange(iLoopImprovement)).c_str());
+			}
+		}
+
+		for (int iLoopFeature = 0; iLoopFeature < GC.getNumFeatureInfos(); iLoopFeature++)
+		{
+			if (kBuilding.getPrereqFeatureAtRange(iLoopFeature) > 0)
+			{
+				szTempBuffer.Format(L"%s%s", NEWLINE, gDLL->getText("TXT_KEY_BUILDING_REQUIRES_THING_AT_RANGE", GC.getFeatureInfo((FeatureTypes)iLoopFeature).getTextKeyWide(), kBuilding.getPrereqFeatureAtRange(iLoopFeature)).c_str());
+			}
+		}
+
+		for (int iLoopBonus = 0; iLoopBonus < GC.getNumBonusInfos(); iLoopBonus++)
+		{
+			if (kBuilding.getPrereqBonusAtRange(iLoopBonus) > 0)
+			{
+				szTempBuffer.Format(L"%s%s", NEWLINE, gDLL->getText("TXT_KEY_BUILDING_REQUIRES_THING_AT_RANGE", GC.getBonusInfo((BonusTypes)iLoopBonus).getTextKeyWide(), kBuilding.getPrereqBonusAtRange(iLoopBonus)).c_str());
+			}
+		}
 /*************************************************************************************************/
 /**	New Tag Defs	(BuildingInfos)			05/15/08								Xienwolf	**/
 /**																								**/

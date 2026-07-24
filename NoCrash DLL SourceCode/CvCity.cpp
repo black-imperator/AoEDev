@@ -3519,6 +3519,7 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 						if (pLoopCity->getID() != getID() && pLoopCity->getNumBuilding(ePrereqBuilding) > 0)
 						{
 							bValid = true;
+							break;
 						}
 					}
 					if (!bValid)
@@ -3529,6 +3530,99 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 				}
 			}
 			
+		}
+		for (int iI = 0; iI < GC.getNumImprovementInfos(); iI++)
+		{
+			if (GC.getBuildingInfo(eBuilding).getPrereqImprovementAtRange(iI) > 0)
+			{
+				bValid = false;
+				for (iX = -GC.getBuildingInfo(eBuilding).getPrereqImprovementAtRange(iI); iX <= GC.getBuildingInfo(eBuilding).getPrereqImprovementAtRange(iI); iX++)
+				{
+					for (iY = -GC.getBuildingInfo(eBuilding).getPrereqImprovementAtRange(iI); iY <= GC.getBuildingInfo(eBuilding).getPrereqImprovementAtRange(iI); iY++)
+					{
+
+						if (iX != 0 || iY != 0)
+						{
+							pLoopPlot = plotXY(getX_INLINE(), getY_INLINE(), iX, iY);
+
+							if (pLoopPlot != NULL  && pLoopPlot->getOwner() == getOwner())
+							{
+								if (pLoopPlot->getImprovementType() ==iI)
+								{
+									bValid = true;
+									break;
+								}
+							}
+						}
+					}
+				}
+				if (!bValid)
+				{
+					return false;
+				}
+			}
+		}
+		for (int iI = 0; iI < GC.getNumFeatureInfos(); iI++)
+		{
+			if (GC.getBuildingInfo(eBuilding).getPrereqFeatureAtRange(iI) > 0)
+			{
+				bValid = false;
+				for (iX = -GC.getBuildingInfo(eBuilding).getPrereqFeatureAtRange(iI); iX <= GC.getBuildingInfo(eBuilding).getPrereqFeatureAtRange(iI); iX++)
+				{
+					for (iY = -GC.getBuildingInfo(eBuilding).getPrereqFeatureAtRange(iI); iY <= GC.getBuildingInfo(eBuilding).getPrereqFeatureAtRange(iI); iY++)
+					{
+
+						if (iX != 0 || iY != 0)
+						{
+							pLoopPlot = plotXY(getX_INLINE(), getY_INLINE(), iX, iY);
+
+							if (pLoopPlot != NULL && pLoopPlot->getOwner() == getOwner())
+							{
+								if (pLoopPlot->getFeatureType() == iI)
+								{
+									bValid = true;
+									break;
+								}
+							}
+						}
+					}
+				}
+				if (!bValid)
+				{
+					return false;
+				}
+			}
+		}
+		for (int iI = 0; iI < GC.getNumBonusInfos(); iI++)
+		{
+			if (GC.getBuildingInfo(eBuilding).getPrereqBonusAtRange(iI) > 0)
+			{
+				bValid = false;
+				for (iX = -GC.getBuildingInfo(eBuilding).getPrereqBonusAtRange(iI); iX <= GC.getBuildingInfo(eBuilding).getPrereqBonusAtRange(iI); iX++)
+				{
+					for (iY = -GC.getBuildingInfo(eBuilding).getPrereqBonusAtRange(iI); iY <= GC.getBuildingInfo(eBuilding).getPrereqBonusAtRange(iI); iY++)
+					{
+
+						if (iX != 0 || iY != 0)
+						{
+							pLoopPlot = plotXY(getX_INLINE(), getY_INLINE(), iX, iY);
+
+							if (pLoopPlot != NULL && pLoopPlot->getOwner() == getOwner())
+							{
+								if (pLoopPlot->getBonusType(getTeam()) == iI)
+								{
+									bValid = true;
+									break;
+								}
+							}
+						}
+					}
+				}
+				if (!bValid)
+				{
+					return false;
+				}
+			}
 		}
 	}
 
@@ -5355,6 +5449,7 @@ CvUnit* CvCity::initConscriptedUnit()
 	}
 
 	CvUnit* pUnit = GET_PLAYER(getOwnerINLINE()).initUnit(eConscriptUnit, getX_INLINE(), getY_INLINE(), eCityAI);
+	pUnit->setOriginalCiv(getCivilizationType());
 	FAssertMsg(pUnit != NULL, "pUnit expected to be assigned (not NULL)");
 
 	if (NULL != pUnit)
@@ -15561,6 +15656,7 @@ void CvCity::popOrder(int iNum, bool bFinish, bool bChoose)
 /*************************************************************************************************/
 
 			pUnit = GET_PLAYER(getOwnerINLINE()).initUnit(eTrainUnit, getX_INLINE(), getY_INLINE(), eTrainAIUnit);
+			pUnit->setOriginalCiv(getCivilizationType());
 			FAssertMsg(pUnit != NULL, "pUnit is expected to be assigned a valid unit object");
 
 //FfH: Modified by Kael 07/05/2008
@@ -18781,6 +18877,7 @@ void CvCity::applyEvent(EventTypes eEvent, const EventTriggeredData& kTriggeredD
 //FfH: Modified by Kael 10/29/2007
 //				GET_PLAYER(getOwnerINLINE()).initUnit(eUnit, getX_INLINE(), getY_INLINE());
 				CvUnit* pUnit = GET_PLAYER(getOwnerINLINE()).initUnit(eUnit, getX_INLINE(), getY_INLINE());
+				pUnit->setOriginalCiv(getCivilizationType());
 				if (kEvent.getUnitPromotion() != NO_PROMOTION)
 				{
 					pUnit->setHasPromotion((PromotionTypes)kEvent.getUnitPromotion(), true);
@@ -22141,6 +22238,8 @@ void CvCity::castCreateUnit(int spell)
 	CvSpellInfo &kSpell = GC.getSpellInfo((SpellTypes)spell);
 	CvUnit* pUnit;
 	pUnit = GET_PLAYER(getOwnerINLINE()).initUnit((UnitTypes)kSpell.getCreateUnitType(), getX_INLINE(), getY_INLINE(), UNITAI_ATTACK);
+	pUnit->setOriginalCiv(getCivilizationType());
+
 /*************************************************************************************************/
 /**	Whiplash								07/23/08								Xienwolf	**/
 /**						Prevents Unit Upkeep costs from Summons									**/

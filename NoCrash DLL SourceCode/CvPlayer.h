@@ -223,7 +223,7 @@ public:
 	void doGoody(CvPlot* pPlot, CvUnit* pUnit);																											// Exposed to Python
 
 	DllExport bool canFound(int iX, int iY, bool bTestVisible = false) const;															// Exposed to Python
-	void found(int iX, int iY);																																			// Exposed to Python
+	void found(int iX, int iY,CvUnit* pFoundingUnit=NULL);																																			// Exposed to Python
 
 	DllExport bool canTrain(UnitTypes eUnit, bool bContinue = false, bool bTestVisible = false, bool bIgnoreCost = false) const;										// Exposed to Python
 /*************************************************************************************************/

@@ -1640,6 +1640,8 @@ public:
 /*************************************************************************************************/
 	DllExport int getRace() const;
 	void setRace(int iNewValue);
+	DllExport int getOriginalCiv() const;
+	void setOriginalCiv(int iNewValue);
 	DllExport int getGraphicalAddOnPromotion() const;
 	void setGraphicalAddOnPromotion(int iNewValue);
 	DllExport int getReligion() const;
@@ -2163,6 +2165,7 @@ protected:
 /**	CandyMan								END													**/
 /*************************************************************************************************/
 	int m_iRace;
+	int m_iOriginalCiv;
 	int m_iGraphicalAddOnPromotion;
 	int m_iReligion;
 	int m_iResist;

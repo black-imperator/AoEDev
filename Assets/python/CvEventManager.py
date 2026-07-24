@@ -1877,6 +1877,7 @@ class CvEventManager:
 		elif eCiv == self.Civilizations["Mercurians"]:		cf.doTurnMercurians(iPlayer)
 
 		if pPlayer.hasTrait(self.Traits["Insane"]):			cf.doInsane(iPlayer)
+		if pPlayer.hasTrait(gc.getInfoTypeForString("TRAIT_POSSESSED")):			cf.doPossessed(iPlayer)
 		if pPlayer.hasTrait(self.Traits["Adaptive"]):		cf.doAdaptive(iPlayer, iGameTurn)
 
 		## Reminders

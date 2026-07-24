@@ -1597,7 +1597,12 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
-			<TraitClass>TRAITCLASS_EMERGENT</TraitClass>
+			<FreePromotionUnitCombats>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+			</FreePromotionUnitCombats><TraitClass>TRAITCLASS_EMERGENT</TraitClass>
 			<Description>TXT_KEY_TRAIT_HEMAPYROSYNCRETISTIC</Description>
 			<Civilopedia>TXT_KEY_TRAIT_HEMAPYROSYNCRETISTIC_PEDIA</Civilopedia>
 			<ShortDescription>TXT_KEY_TRAIT_HEMAPYROSYNCRETISTIC_SHORT</ShortDescription>
@@ -2998,6 +3003,14 @@
 			<Civilopedia>TXT_KEY_TRAIT_INSANE_PEDIA</Civilopedia>
 			<ShortDescription>TXT_KEY_TRAIT_INSANE_SHORT</ShortDescription>
 			<bInsane>1</bInsane>
+		</TraitInfo>
+		<TraitInfo>		<!-- Possessed -->
+			<Type>TRAIT_POSSESSED</Type>
+			<TraitClass>TRAITCLASS_PERSONALITY</TraitClass>
+			<Description>TXT_KEY_TRAIT_POSSESSED</Description>
+			<Civilopedia>TXT_KEY_TRAIT_POSSESSED_PEDIA</Civilopedia>
+			<ShortDescription>TXT_KEY_TRAIT_POSSESSED_SHORT</ShortDescription>
+			<Help>TXT_KEY_TRAIT_POSSESSED_HELP</Help>
 		</TraitInfo>
 		<TraitInfo>		<!-- Magic Resistant -->
 			<Type>TRAIT_MAGIC_RESISTANT</Type>

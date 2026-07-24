@@ -680,15 +680,22 @@ int CvCityAI::AI_specialistClassValue(SpecialistClassTypes eSpecialistClass, boo
 		{
 			int iUnitClass = GC.getSpecialistInfo(eSpecialist).getGreatPeopleUnitClass();
 			FAssert(iUnitClass != NO_UNITCLASS);
-
-			//UnitTypes eGreatPeopleUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iUnitClass);
-			UnitTypes eGreatPeopleUnit = (UnitTypes)getCityUnits(iUnitClass);
-			if (eGreatPeopleUnit != NO_UNIT)
+			if (iUnitClass == NO_UNITCLASS)
 			{
-				CvUnitInfo& kUnitInfo = GC.getUnitInfo(eGreatPeopleUnit);
-				if (kUnitInfo.getGreatWorkCulture() > 0)
+				iTempValue += 10;
+			}
+			else
+			{
+
+				//UnitTypes eGreatPeopleUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iUnitClass);
+				UnitTypes eGreatPeopleUnit = (UnitTypes)getCityUnits(iUnitClass);
+				if (eGreatPeopleUnit != NO_UNIT)
 				{
-					iTempValue += kUnitInfo.getGreatWorkCulture() / ((GET_PLAYER(getOwnerINLINE()).AI_isDoVictoryStrategy(AI_VICTORY_CULTURE, 3)) ? 200 : 350);
+					CvUnitInfo& kUnitInfo = GC.getUnitInfo(eGreatPeopleUnit);
+					if (kUnitInfo.getGreatWorkCulture() > 0)
+					{
+						iTempValue += kUnitInfo.getGreatWorkCulture() / ((GET_PLAYER(getOwnerINLINE()).AI_isDoVictoryStrategy(AI_VICTORY_CULTURE, 3)) ? 200 : 350);
+					}
 				}
 			}
 		}
@@ -699,30 +706,36 @@ int CvCityAI::AI_specialistClassValue(SpecialistClassTypes eSpecialistClass, boo
 		{
 			int iUnitClass = GC.getSpecialistInfo(eSpecialist).getGreatPeopleUnitClass();
 			FAssert(iUnitClass != NO_UNITCLASS);
-
-			//UnitTypes eGreatPeopleUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iUnitClass);
-			UnitTypes eGreatPeopleUnit = (UnitTypes)getCityUnits(iUnitClass);
-			if (eGreatPeopleUnit != NO_UNIT)
+			if (iUnitClass == NO_UNITCLASS)
 			{
-				CvUnitInfo& kUnitInfo = GC.getUnitInfo(eGreatPeopleUnit);
-				for (int iI = 0; iI < GC.getNumBuildingClassInfos(); iI++)
+				iTempValue += 10;
+			}
+			else
+			{
+				//UnitTypes eGreatPeopleUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iUnitClass);
+				UnitTypes eGreatPeopleUnit = (UnitTypes)getCityUnits(iUnitClass);
+				if (eGreatPeopleUnit != NO_UNIT)
 				{
-					BuildingTypes eBuilding = (BuildingTypes)getCityBuildings(iI);
-					if (NO_BUILDING != eBuilding)
+					CvUnitInfo& kUnitInfo = GC.getUnitInfo(eGreatPeopleUnit);
+					for (int iI = 0; iI < GC.getNumBuildingClassInfos(); iI++)
 					{
-						if (kUnitInfo.getBuildings(eBuilding))
+						BuildingTypes eBuilding = (BuildingTypes)getCityBuildings(iI);
+						if (NO_BUILDING != eBuilding)
 						{
-							if (GET_PLAYER(getOwnerINLINE()).canConstruct(eBuilding, false, false, true))
+							if (kUnitInfo.getBuildings(eBuilding))
 							{
-								for (int iVictory = 0; iVictory < GC.getNumVictoryInfos(); iVictory++)
+								if (GET_PLAYER(getOwnerINLINE()).canConstruct(eBuilding, false, false, true))
 								{
-									if (GC.getGame().isVictoryValid((VictoryTypes)iVictory))
+									for (int iVictory = 0; iVictory < GC.getNumVictoryInfos(); iVictory++)
 									{
-										if (GET_TEAM(getTeam()).getBuildingClassCount((BuildingClassTypes)iI) < GC.getBuildingClassInfo((BuildingClassTypes)iI).getVictoryThreshold(iVictory))
+										if (GC.getGame().isVictoryValid((VictoryTypes)iVictory))
 										{
-											//CHANGE THIS FROM 100 TO SOMETHING LOWER
-											//TEMP TESTING
-											iTempValue += 100;
+											if (GET_TEAM(getTeam()).getBuildingClassCount((BuildingClassTypes)iI) < GC.getBuildingClassInfo((BuildingClassTypes)iI).getVictoryThreshold(iVictory))
+											{
+												//CHANGE THIS FROM 100 TO SOMETHING LOWER
+												//TEMP TESTING
+												iTempValue += 100;
+											}
 										}
 									}
 								}
@@ -751,25 +764,30 @@ int CvCityAI::AI_specialistClassValue(SpecialistClassTypes eSpecialistClass, boo
 
 					int iUnitClass = GC.getSpecialistInfo(eSpecialist).getGreatPeopleUnitClass();
 					FAssert(iUnitClass != NO_UNITCLASS);
-
-					//UnitTypes eGreatPeopleUnit = (UnitTypes) pCivilizationInfo->getCivilizationUnits(iUnitClass);
-					UnitTypes eGreatPeopleUnit = (UnitTypes)getCityUnits(iUnitClass);
-					if (eGreatPeopleUnit != NO_UNIT)
+					if (iUnitClass == NO_UNITCLASS)
 					{
-						// note, for normal XML, this count will be one (there is only 1 shrine building for each religion)
-						int	shrineBuildingCount = GC.getGameINLINE().getShrineBuildingCount(eReligion);
-						for (int iI = 0; iI < shrineBuildingCount; iI++)
+						iTempValue += 10;
+					}
+					else
+					{
+						//UnitTypes eGreatPeopleUnit = (UnitTypes) pCivilizationInfo->getCivilizationUnits(iUnitClass);
+						UnitTypes eGreatPeopleUnit = (UnitTypes)getCityUnits(iUnitClass);
+						if (eGreatPeopleUnit != NO_UNIT)
 						{
-							int eBuilding = (int)GC.getGameINLINE().getShrineBuilding(iI, eReligion);
-
-							// if this unit builds this building
-							if (GC.getUnitInfo(eGreatPeopleUnit).getBuildings(eBuilding))
+							// note, for normal XML, this count will be one (there is only 1 shrine building for each religion)
+							int	shrineBuildingCount = GC.getGameINLINE().getShrineBuildingCount(eReligion);
+							for (int iI = 0; iI < shrineBuildingCount; iI++)
 							{
-								bNeedProphet = true;
-								iBestSpreadValue = std::max(iBestSpreadValue, GC.getGameINLINE().countReligionLevels(eReligion));
+								int eBuilding = (int)GC.getGameINLINE().getShrineBuilding(iI, eReligion);
+
+								// if this unit builds this building
+								if (GC.getUnitInfo(eGreatPeopleUnit).getBuildings(eBuilding))
+								{
+									bNeedProphet = true;
+									iBestSpreadValue = std::max(iBestSpreadValue, GC.getGameINLINE().countReligionLevels(eReligion));
+								}
 							}
 						}
-
 					}
 				}
 			}

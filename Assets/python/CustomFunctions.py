@@ -2250,6 +2250,36 @@ class CustomFunctions:
 			lIcon		= ["Art/Interface/Buttons/General/happy_person.dds", "Art/Interface/mainscreen/cityscreen/angry_citizen.dds", "Art/Interface/Buttons/General/unhealthy_person.dds", "Art/Interface/Buttons/WorldBuilder/Crab.dds"]
 			iIcon		= lIcon[CyGame().getSorenRandNum(len(lIcon), "Insane Icon Pick")]
 			CyInterface().addMessage(iPlayer, True, 25, szMessage, '', 3, iIcon, ColorTypes(iColor), pCapital.getX(), pCapital.getY(), True, True)
+	def doPossessed(self, iPlayer):
+		if CyGame().getSorenRandNum(100, "Possessed Trait Roll") > 10: return
+		gc			= CyGlobalContext()
+		pPlayer		= gc.getPlayer(iPlayer)
+		pCapital	= pPlayer.getCapitalCity()
+		iInsane		= gc.getInfoTypeForString("TRAIT_POSSESSED")
+		lTraits		= []
+		for iTrait in xrange(gc.getNumTraitInfos()):
+			if not gc.getTraitInfo(iTrait).getTraitClass()==gc.getInfoTypeForString("TRAITCLASS_DEMON_PACT"):	continue
+			if iTrait == iInsane:							continue
+			if not gc.isNoCrash():
+				pPlayer.setHasTrait((iTrait),False,-1,True,True)
+			else:
+				pPlayer.setHasTrait((iTrait),False)
+			lTraits.append(iTrait)
+		if len(lTraits) >= 2:
+			lTraits = sorted(lTraits, key=lambda x: CyGame().getSorenRandNum(67, "Possessed Trait"))
+			lTraits = lTraits[:2]
+		for iTrait in lTraits:
+			if not gc.isNoCrash():
+				pPlayer.setHasTrait((iTrait),True,-1,True,True)
+			else:
+				pPlayer.setHasTrait((iTrait),True)
+		if pCapital.isNone():return
+		iColor		= CyGame().getSorenRandNum(123, "Possessed Color Pick")
+		szMessage	= CyTranslator().getText("TXT_KEY_POSSESSED_HELP", (gc.getTraitInfo(lTraits[0]).getDescription(), gc.getTraitInfo(lTraits[1]).getDescription(),))
+		iMessage	= InterfaceMessageTypes.MESSAGE_TYPE_MINOR_EVENT
+		lIcon		= ["Art/Interface/Buttons/General/happy_person.dds", "Art/Interface/mainscreen/cityscreen/angry_citizen.dds", "Art/Interface/Buttons/General/unhealthy_person.dds", "Art/Interface/Buttons/WorldBuilder/Crab.dds"]
+		iIcon		= lIcon[CyGame().getSorenRandNum(len(lIcon), "Possessed Icon Pick")]
+		CyInterface().addMessage(iPlayer, True, 25, szMessage, '', 3, iIcon, ColorTypes(iColor), pCapital.getX(), pCapital.getY(), True, True)
 
 	def doAdaptive(self, iPlayer, iTurn):
 		gc			= CyGlobalContext()

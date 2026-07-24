@@ -4843,6 +4843,9 @@ public:
 	int getBuildingHappinessChanges(int i) const;				// Exposed to Python
 	int getPrereqNumOfBuildingClass(int i) const;				// Exposed to Python
 	int getPrereqBuildingClassAtRange(int i) const;				// Exposed to Python
+	int getPrereqImprovementAtRange(int i) const;				// Exposed to Python
+	int getPrereqFeatureAtRange(int i) const;				// Exposed to Python
+	int getPrereqBonusAtRange(int i) const;				// Exposed to Python
 	int getBuildingExclude(int i) const;				// Exposed to Python
 	int getFlavorValue(int i) const;				// Exposed to Python
 	int getImprovementFreeSpecialistClass(int i) const;				// Exposed to Python
@@ -5269,6 +5272,9 @@ protected:
 	int* m_piBuildingHappinessChanges;
 	int* m_piPrereqNumOfBuildingClass;
 	int* m_piPrereqBuildingClassAtRange;
+	int* m_piPrereqImprovementAtRange;
+	int* m_piPrereqFeatureAtRange;
+	int* m_piPrereqBonusAtRange;
 	int* m_piBuildingExclude;
 	int* m_piFlavorValue;
 	int* m_piImprovementFreeSpecialistClass;

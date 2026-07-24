@@ -9207,6 +9207,15 @@
 		<Spanish>[ICON_BULLET][COLOR_WARNING_TEXT]Requires %s1_Name within Owned City at Range %d2_NumTotal [COLOR_REVERT]</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BUILDING_REQUIRES_THING_AT_RANGE</Tag>
+		<!-- %s1_Name = Can be Buildings, Units, etc -->
+		<English>[ICON_BULLET][COLOR_WARNING_TEXT]Requires %s1_Name at Range %d2_NumTotal [COLOR_REVERT]</English>
+		<French>[ICON_BULLET][COLOR_WARNING_TEXT]Requires %s1_Name at Range %d2_NumTotal [COLOR_REVERT]</French>
+		<German>[ICON_BULLET][COLOR_WARNING_TEXT]Requires %s1_Name at Range %d2_NumTotal [COLOR_REVERT]</German>
+		<Italian>[ICON_BULLET][COLOR_WARNING_TEXT]Requires %s1_Name at Range %d2_NumTotal [COLOR_REVERT]</Italian>
+		<Spanish>[ICON_BULLET][COLOR_WARNING_TEXT]Requires %s1_Name at Range %d2_NumTotal [COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_REQUIRES_BUILDING_AT_ANY_RANGE</Tag>
 		<!-- %s1_Name = Can be Buildings, Units, etc -->
 		<English>[ICON_BULLET][COLOR_WARNING_TEXT]Requires %s1_Name within Any Other Owned City[COLOR_REVERT]</English>
@@ -9215,6 +9224,15 @@
 		<Italian>[ICON_BULLET][COLOR_WARNING_TEXT]Requires %s1_Name within Any Other Owned City[COLOR_REVERT]</Italian>
 		<Spanish>[ICON_BULLET][COLOR_WARNING_TEXT]Requires %s1_Name within Any Other Owned City[COLOR_REVERT]</Spanish>
 	</TEXT>
+		<TEXT>
+		<Tag>TXT_KEY_TRAIT_TRAIT_LEVEL_MODIFIER</Tag>
+		<English>[NEWLINE][ICON_BULLET]%D1%% XP Needed for Unit Promotions</English>
+		<French>[NEWLINE][ICON_BULLET]%D1%% EXP pour la promotion des unit&#233;s</French>
+		<German>[NEWLINE][ICON_BULLET]%D1%% EP f&#252;r Einheitenbef&#246;rderungen erforderlich</German>
+		<Italian>[NEWLINE][ICON_BULLET]%D1%% PE richiesti per la promozione</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]%D1%% PX necesarios para ascender unidades.</Spanish>
+	</TEXT>
+
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_THIEVES_DEN</Tag>
 		<English>Thieves' Den</English>
@@ -13369,28 +13387,36 @@ Your unit is even more surprised to realise there are two figures standing besid
 		<Spanish>[ICON_BULLET]Unit cannot attack.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_</Tag>
-		<English></English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
+		<Tag>TXT_KEY_TRAIT_POSSESSED</Tag>
+		<English>Possessed</English>
+		<French>Possessed</French>
+		<German>Possessed</German>
+		<Italian>Possessed</Italian>
+		<Spanish>Possessed</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_</Tag>
-		<English></English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
+		<Tag>TXT_KEY_TRAIT_POSSESSED_SHORT</Tag>
+		<English>Pos</English>
+		<French>Pos</French>
+		<German>Pos</German>
+		<Italian>Pos</Italian>
+		<Spanish>Pos</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_</Tag>
-		<English></English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
+		<Tag>TXT_KEY_TRAIT_POSSESSED_HELP</Tag>
+		<English>[NEWLINE][ICON_BULLET]Will randomly gain 2 Demon Pact Traits every few turns.</English>
+		<French>[NEWLINE][ICON_BULLET]Will randomly gain 2 Demon Pact Traits every few turns.</French>
+		<German>[NEWLINE][ICON_BULLET]Will randomly gain 2 Demon Pact Traits every few turns.</German>
+		<Italian>[NEWLINE][ICON_BULLET]Will randomly gain 2 Demon Pact Traits every few turns.</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]Will randomly gain 2 Demon Pact Traits every few turns.</Spanish>
+	</TEXT>
+		<TEXT>
+		<Tag>TXT_KEY_POSSESSED_HELP</Tag>
+		<English>Your traits have changed: %s1, %s2.</English>
+		<French>Your traits have changed: %s1, %s2.</French>
+		<German>Your traits have changed: %s1, %s2.</German>
+		<Italian>Your traits have changed: %s1, %s2.</Italian>
+		<Spanish>Your traits have changed: %s1, %s2.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_</Tag>

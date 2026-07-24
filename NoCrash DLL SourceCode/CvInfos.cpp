@@ -21963,6 +21963,9 @@ m_piDomainProductionModifier(NULL),
 m_piBuildingHappinessChanges(NULL),
 m_piPrereqNumOfBuildingClass(NULL),
 m_piPrereqBuildingClassAtRange(NULL),
+m_piPrereqImprovementAtRange(NULL),
+m_piPrereqFeatureAtRange(NULL),
+m_piPrereqBonusAtRange(NULL),
 m_piBuildingExclude(NULL),
 m_piFlavorValue(NULL),
 m_piImprovementFreeSpecialistClass(NULL),
@@ -22214,6 +22217,9 @@ CvBuildingInfo::~CvBuildingInfo()
 	SAFE_DELETE_ARRAY(m_piBuildingHappinessChanges);
 	SAFE_DELETE_ARRAY(m_piPrereqNumOfBuildingClass);
 	SAFE_DELETE_ARRAY(m_piPrereqBuildingClassAtRange);
+	SAFE_DELETE_ARRAY(m_piPrereqImprovementAtRange);
+	SAFE_DELETE_ARRAY(m_piPrereqFeatureAtRange);
+	SAFE_DELETE_ARRAY(m_piPrereqBonusAtRange);
 	SAFE_DELETE_ARRAY(m_piBuildingExclude);
 	SAFE_DELETE_ARRAY(m_piFlavorValue);
 	SAFE_DELETE_ARRAY(m_piImprovementFreeSpecialistClass);
@@ -23701,6 +23707,27 @@ int CvBuildingInfo::getPrereqBuildingClassAtRange(int i) const
 	return m_piPrereqBuildingClassAtRange ? m_piPrereqBuildingClassAtRange[i] : 0;
 }
 
+int CvBuildingInfo::getPrereqImprovementAtRange(int i) const
+{
+	FAssertMsg(i < GC.getNumImprovementInfos(), "Index out of bounds");
+	FAssertMsg(i > -1, "Index out of bounds");
+	return m_piPrereqImprovementAtRange ? m_piPrereqImprovementAtRange[i] : 0;
+}
+
+int CvBuildingInfo::getPrereqFeatureAtRange(int i) const
+{
+	FAssertMsg(i < GC.getNumFeatureInfos(), "Index out of bounds");
+	FAssertMsg(i > -1, "Index out of bounds");
+	return m_piPrereqFeatureAtRange ? m_piPrereqFeatureAtRange[i] : 0;
+}
+
+int CvBuildingInfo::getPrereqBonusAtRange(int i) const
+{
+	FAssertMsg(i < GC.getNumBonusInfos(), "Index out of bounds");
+	FAssertMsg(i > -1, "Index out of bounds");
+	return m_piPrereqBonusAtRange ? m_piPrereqBonusAtRange[i] : 0;
+}
+
 int CvBuildingInfo::getBuildingExclude(int i) const
 {
 	FAssertMsg(i < GC.getNumBuildingClassInfos(), "Index out of bounds");
@@ -24427,6 +24454,18 @@ void CvBuildingInfo::read(FDataStreamBase* stream)
 	m_piPrereqBuildingClassAtRange = new int[GC.getNumBuildingClassInfos()];
 	stream->Read(GC.getNumBuildingClassInfos(), m_piPrereqBuildingClassAtRange);
 
+	SAFE_DELETE_ARRAY(m_piPrereqImprovementAtRange);
+	m_piPrereqImprovementAtRange = new int[GC.getNumImprovementInfos()];
+	stream->Read(GC.getNumImprovementInfos(), m_piPrereqImprovementAtRange);
+
+	SAFE_DELETE_ARRAY(m_piPrereqFeatureAtRange);
+	m_piPrereqFeatureAtRange = new int[GC.getNumFeatureInfos()];
+	stream->Read(GC.getNumFeatureInfos(), m_piPrereqFeatureAtRange);
+
+	SAFE_DELETE_ARRAY(m_piPrereqBonusAtRange);
+	m_piPrereqBonusAtRange = new int[GC.getNumBonusInfos()];
+	stream->Read(GC.getNumBonusInfos(), m_piPrereqBonusAtRange);
+
 	SAFE_DELETE_ARRAY(m_piBuildingExclude);
 	m_piBuildingExclude = new int[GC.getNumBuildingClassInfos()];
 	stream->Read(GC.getNumBuildingClassInfos(), m_piBuildingExclude);
@@ -24939,6 +24978,9 @@ void CvBuildingInfo::write(FDataStreamBase* stream)
 	stream->Write(GC.getNumBuildingClassInfos(), m_piBuildingHappinessChanges);
 	stream->Write(GC.getNumBuildingClassInfos(), m_piPrereqNumOfBuildingClass);
 	stream->Write(GC.getNumBuildingClassInfos(), m_piPrereqBuildingClassAtRange);
+	stream->Write(GC.getNumImprovementInfos(), m_piPrereqImprovementAtRange);
+	stream->Write(GC.getNumFeatureInfos(), m_piPrereqFeatureAtRange);
+	stream->Write(GC.getNumBonusInfos(), m_piPrereqBonusAtRange);
 	stream->Write(GC.getNumBuildingClassInfos(), m_piBuildingExclude);
 	stream->Write(GC.getNumFlavorTypes(), m_piFlavorValue);
 	stream->Write(GC.getNumImprovementInfos(), m_piImprovementFreeSpecialistClass);
@@ -25834,6 +25876,9 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 	pXML->SetVariableListTagPair(&m_piPrereqNumOfBuildingClass, "PrereqBuildingClasses", sizeof(GC.getBuildingClassInfo((BuildingClassTypes)0)), GC.getNumBuildingClassInfos());
 	pXML->SetVariableListTagPair(&m_pbBuildingClassNeededInCity, "BuildingClassNeededs", sizeof(GC.getBuildingClassInfo((BuildingClassTypes)0)), GC.getNumBuildingClassInfos());
 	pXML->SetVariableListTagPair(&m_piPrereqBuildingClassAtRange, "PrereqBuildingAtRanges", sizeof(GC.getBuildingClassInfo((BuildingClassTypes)0)), GC.getNumBuildingClassInfos());
+	pXML->SetVariableListTagPair(&m_piPrereqImprovementAtRange, "PrereqImprovementAtRanges", sizeof(GC.getImprovementInfo((ImprovementTypes)0)), GC.getNumImprovementInfos());
+	pXML->SetVariableListTagPair(&m_piPrereqFeatureAtRange, "PrereqFeatureAtRanges", sizeof(GC.getFeatureInfo((FeatureTypes)0)), GC.getNumFeatureInfos());
+	pXML->SetVariableListTagPair(&m_piPrereqBonusAtRange, "PrereqBonusAtRanges", sizeof(GC.getBonusInfo((BonusTypes)0)), GC.getNumBonusInfos());
 	pXML->SetVariableListTagPair(&m_piBuildingExclude, "BuildingExcludes", sizeof(GC.getBuildingClassInfo((BuildingClassTypes)0)), GC.getNumBuildingClassInfos());
 
 	pXML->Init2DIntList(&m_ppaiSpecialistClassYieldChange, GC.getNumSpecialistClassInfos(), NUM_YIELD_TYPES);
@@ -26505,6 +26550,11 @@ void CvBuildingInfo::copyNonDefaults(CvBuildingInfo* pClassInfo, CvXMLLoadUtilit
 		{
 			if (getFeatureYieldChange(j, i) == 0)					m_ppaiFeatureYieldChange[j][i] = pClassInfo->getFeatureYieldChange(j, i);
 		}
+		if (getPrereqFeatureAtRange(j) == 0)					m_piPrereqFeatureAtRange[j] = pClassInfo->getPrereqFeatureAtRange(j);
+	}
+	for (int j = 0; j < GC.getNumImprovementInfos(); j++)
+	{
+		if (getPrereqImprovementAtRange(j) == 0)					m_piPrereqImprovementAtRange[j] = pClassInfo->getPrereqImprovementAtRange(j);
 	}
 	for ( int j = 0; j < GC.getNumSpecialistClassInfos(); j++)
 	{
@@ -26548,6 +26598,7 @@ void CvBuildingInfo::copyNonDefaults(CvBuildingInfo* pClassInfo, CvXMLLoadUtilit
 		if (getBonusHealthChanges(j)			== 0)					m_piBonusHealthChanges[j]			= pClassInfo->getBonusHealthChanges(j);
 		if (getBonusHappinessChanges(j)			== 0)					m_piBonusHappinessChanges[j]		= pClassInfo->getBonusHappinessChanges(j);
 		if (getBonusProductionModifier(j)		== 0)					m_piBonusProductionModifier[j]		= pClassInfo->getBonusProductionModifier(j);
+		if (getPrereqBonusAtRange(j) == 0)					m_piPrereqBonusAtRange[j] = pClassInfo->getPrereqBonusAtRange(j);
 		for ( int i = 0; i < NUM_YIELD_TYPES; i++)
 		{
 /*************************************************************************************************/

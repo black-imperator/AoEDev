@@ -7854,7 +7854,7 @@ bool CvPlayer::canFound(int iX, int iY, bool bTestVisible) const
 }
 
 
-void CvPlayer::found(int iX, int iY)
+void CvPlayer::found(int iX, int iY,CvUnit* pFounderUnit)
 {
 	CvCity* pCity;
 	BuildingTypes eLoopBuilding;
@@ -7867,6 +7867,10 @@ void CvPlayer::found(int iX, int iY)
 	}
 
 	pCity = initCity(iX, iY, true, true);
+	if (pFounderUnit != NULL)
+	{
+		pCity->setCivilizationType(pFounderUnit->getCivilizationType());
+	}
 	FAssertMsg(pCity != NULL, "City is not assigned a valid value");
 	// DynTraits Start
 	TraitTriggeredData kTrigger;
