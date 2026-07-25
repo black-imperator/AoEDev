@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- Civic Infos -->
-<Civ4CivicInfos xmlns="x-schema:VCivics_CIV4GameInfoSchema.xml">
+<Civ4CivicInfos xmlns="x-schema:CatsCivics_CIV4GameInfoSchema.xml">
 	<CivicInfos>
 		
 						<!-- Government -->

@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- Promotion Infos -->
-<Civ4PromotionInfos xmlns="x-schema:CatsCivics_CIV4UnitSchema.xml">
+<Civ4PromotionInfos xmlns="x-schema:CCL_CIV4UnitSchema.xml">
 	<PromotionInfos>
 	
 	<!-- Government -->

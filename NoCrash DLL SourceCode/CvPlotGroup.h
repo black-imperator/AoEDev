@@ -23,7 +23,7 @@ public:
 
 	void addPlot(CvPlot* pPlot);
 	void removePlot(CvPlot* pPlot);
-	void recalculatePlots(bool bForce=false);
+	void recalculatePlots();
 
 	int getID() const;
 	void setID(int iID);
@@ -48,8 +48,6 @@ public:
 	// for serialization
 	void read(FDataStreamBase* pStream);
 	void write(FDataStreamBase* pStream);
-	void updatePlotGroupBonusCity(CvCity* pCity);
-	void updatePlotGroupBonusCities();
 
 protected:
 

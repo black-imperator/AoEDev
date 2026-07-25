@@ -65,7 +65,7 @@ void CvPlotGroup::reset(int iID, PlayerTypes eOwner, bool bConstructorCall)
 	{
 		FAssertMsg((0 < GC.getNumBonusInfos()), "GC.getNumBonusInfos() is not greater than zero but an array is being allocated in CvPlotGroup::reset");
 		m_paiNumBonuses = new int [GC.getNumBonusInfos()];
-		for (int iI = 0; iI < GC.getNumBonusInfos(); iI++)
+		for (iI = 0; iI < GC.getNumBonusInfos(); iI++)
 		{
 			m_paiNumBonuses[iI] = 0;
 		}
@@ -109,14 +109,13 @@ void CvPlotGroup::removePlot(CvPlot* pPlot)
 }
 
 
-void CvPlotGroup::recalculatePlots(bool bForce)
+void CvPlotGroup::recalculatePlots()
 {
 	PROFILE_FUNC();
 
 	CLLNode<XYCoords>* pPlotNode;
 	CvPlot* pPlot;
 	CLinkList<XYCoords> oldPlotGroup;
-	CLinkList<XYCoords> oldCityGroup;
 	XYCoords xy;
 	PlayerTypes eOwner;
 	int iCount;
@@ -134,7 +133,7 @@ void CvPlotGroup::recalculatePlots(bool bForce)
 		gDLL->getFAStarIFace()->SetData(&GC.getPlotGroupFinder(), &iCount);
 		gDLL->getFAStarIFace()->GeneratePath(&GC.getPlotGroupFinder(), pPlot->getX_INLINE(), pPlot->getY_INLINE(), -1, -1, false, eOwner);
 
-		if (iCount == getLengthPlots() && !bForce)
+		if (iCount == getLengthPlots())
 		{
 			return;
 		}
@@ -144,7 +143,6 @@ void CvPlotGroup::recalculatePlots(bool bForce)
 		PROFILE("CvPlotGroup::recalculatePlots update");
 
 		oldPlotGroup.clear();
-		oldCityGroup.clear();
 
 		pPlotNode = headPlotsNode();
 
@@ -160,11 +158,6 @@ void CvPlotGroup::recalculatePlots(bool bForce)
 			xy.iY = pPlot->getY_INLINE();
 
 			oldPlotGroup.insertAtEnd(xy);
-			if (pPlot->isCity())
-			{
-				oldCityGroup.insertAtEnd(xy);
-				pPlot->getPlotCity()->setDelayBonusUpdate(true);
-			}
 
 			pPlot->setPlotGroup(eOwner, NULL);
 
@@ -185,29 +178,6 @@ void CvPlotGroup::recalculatePlots(bool bForce)
 
 			pPlotNode = oldPlotGroup.deleteNode(pPlotNode);
 		}
-
-		pPlotNode = oldCityGroup.head();
-
-		while (pPlotNode != NULL)
-		{
-			PROFILE("CvPlotGroup::recalculatePlots update 2");
-
-			pPlot = GC.getMapINLINE().plotSorenINLINE(pPlotNode->m_data.iX, pPlotNode->m_data.iY);
-
-			FAssertMsg(pPlot != NULL, "Plot is not assigned a valid value");
-			pPlot->getPlotCity()->setDelayBonusUpdate(false);
-			if (pPlot->getPlotCity()->plotGroup(eOwner) != NULL)
-			{
-				pPlot->getPlotCity()->plotGroup(eOwner)->updatePlotGroupBonusCity(pPlot->getPlotCity());
-			}
-			else
-			{
-				GET_PLAYER(eOwner).initPlotGroup(pPlot)->updatePlotGroupBonusCity(pPlot->getPlotCity());
-			}
-			pPlotNode = oldCityGroup.deleteNode(pPlotNode);
-		}
-
-
 	}
 }
 
@@ -260,42 +230,18 @@ void CvPlotGroup::changeNumBonuses(BonusTypes eBonus, int iChange)
 		m_paiNumBonuses[eBonus] = (m_paiNumBonuses[eBonus] + iChange);
 
 		//FAssertMsg(m_paiNumBonuses[eBonus] >= 0, "m_paiNumBonuses[eBonus] is expected to be non-negative (invalid Index)"); XXX
-		
-		
+
 		pPlotNode = headPlotsNode();
 
 		while (pPlotNode != NULL)
 		{
 			pCity = GC.getMapINLINE().plotSorenINLINE(pPlotNode->m_data.iX, pPlotNode->m_data.iY)->getPlotCity();
 
-			if (pCity != NULL && ! pCity->isDelayBonusUpdate())
+			if (pCity != NULL)
 			{
 				if (pCity->getOwnerINLINE() == getOwnerINLINE())
 				{
-//					pCity->changeNumBonuses(eBonus, iChange);
-					if (((iOldNumBonuses *getNumBonuses(eBonus) <= 0)) && !GC.getBonusInfo(eBonus).isModifierPerBonus())
-					{
-						if (getNumBonuses(eBonus) > 0 && pCity->getOldNumBonuses(eBonus) <=0)
-						{
-							pCity->processBonus(eBonus, 1);
-							pCity->setNumBonuses(eBonus, getNumBonuses(eBonus));
-						}
-						else if (getNumBonuses(eBonus)<=0 && pCity->getOldNumBonuses(eBonus) >0)
-						{
-							pCity->processBonus(eBonus, -1);
-							pCity->setNumBonuses(eBonus, getNumBonuses(eBonus));
-						}
-					}
-
-					if (GC.getBonusInfo(eBonus).isModifierPerBonus() && pCity->getOldNumBonuses(eBonus) != getNumBonuses(eBonus))
-					{
-						pCity->processBonus(eBonus, getNumBonuses(eBonus) - pCity->getOldNumBonuses(eBonus));
-						pCity->setNumBonuses(eBonus, getNumBonuses(eBonus));
-					}
-					if (pCity->getOldNumBonuses(eBonus) != getNumBonuses(eBonus))
-					{
-						pCity->setNumBonuses(eBonus, getNumBonuses(eBonus));
-					}
+					pCity->changeNumBonuses(eBonus, iChange);
 				}
 			}
 
@@ -389,71 +335,4 @@ void CvPlotGroup::write(FDataStreamBase* pStream)
 	pStream->Write(GC.getNumBonusInfos(), m_paiNumBonuses);
 
 	m_plots.Write(pStream);
-}
-
-void CvPlotGroup::updatePlotGroupBonusCities()
-{
-	CLLNode<XYCoords>* pPlotNode;
-	CvPlot* pPlot;
-	
-	pPlotNode = headPlotsNode();
-
-	while (pPlotNode != NULL)
-	{
-		PROFILE("CvPlotGroup::recalculatePlots update 1");
-
-		pPlot = GC.getMapINLINE().plotSorenINLINE(pPlotNode->m_data.iX, pPlotNode->m_data.iY);
-
-		FAssertMsg(pPlot != NULL, "Plot is not assigned a valid value");
-
-		
-		if (pPlot->isCity())
-		{
-			updatePlotGroupBonusCity(pPlot->getPlotCity());
-		}
-
-		
-		pPlotNode = nextPlotsNode(pPlotNode); // will delete this PlotGroup...
-	}
-}
-
-void CvPlotGroup::updatePlotGroupBonusCity(CvCity* pCity)
-{
-	BonusTypes eBonus;
-	if (pCity != NULL)
-	{
-		if (pCity->getOwnerINLINE() == getOwnerINLINE())
-		{
-			
-			for (int iI = 0; iI < GC.getNumBonusInfos(); iI++)
-			{
-				eBonus = (BonusTypes)iI;
-				if (!GC.getBonusInfo(eBonus).isModifierPerBonus())
-				{
-					if (getNumBonuses(eBonus) > 0 &&pCity->getOldNumBonuses(eBonus) <=0)
-					{
-						pCity->processBonus(eBonus, 1);
-						pCity->setNumBonuses(eBonus, getNumBonuses(eBonus));
-					}
-					else if (getNumBonuses(eBonus) <= 0 && pCity->getOldNumBonuses(eBonus) > 0)
-					{
-						pCity->processBonus(eBonus, -1);
-						pCity->setNumBonuses(eBonus, getNumBonuses(eBonus));
-					}
-				}
-
-				if (GC.getBonusInfo(eBonus).isModifierPerBonus() && pCity->getOldNumBonuses(eBonus) != getNumBonuses(eBonus))
-				{
-					pCity->processBonus(eBonus, getNumBonuses(eBonus)- pCity->getOldNumBonuses(eBonus));
-					pCity->setNumBonuses(eBonus, getNumBonuses(eBonus));
-				}
-				if (pCity->getOldNumBonuses(eBonus) != getNumBonuses(eBonus))
-				{
-					pCity->setNumBonuses(eBonus, getNumBonuses(eBonus));
-				}
-
-			}
-		}
-	}
-
 }

@@ -181,8 +181,6 @@ CvPlayer::CvPlayer()
 /************************************************************************************************/
 	// Free Tech Popup Fix
 	m_bChoosingFreeTech = false;
-	m_bUpdatePlotGroups = false;
-	m_bRunningCityUpdate = false;
 /************************************************************************************************/
 /* UNOFFICIAL_PATCH                        END                                                  */
 /************************************************************************************************/
@@ -4293,22 +4291,10 @@ void CvPlayer::doTurn()
 	szError.Format("Player::doTurn-docities Turn %i, Leader %s", GC.getGame().getGameTurn(), GC.getLeaderHeadInfo(getLeaderType()).getType());
 	profiler2.profile(szError);
 
-	setRunningCityUpdate(true);
 	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 	{
 		pLoopCity->doTurn();
 	}
-	setRunningCityUpdate(false);
-	profiler2.profile(NULL, true);
-	szError.Format("Player::doTurn-doplotgroups Turn %i, Leader %s", GC.getGame().getGameTurn(), GC.getLeaderHeadInfo(getLeaderType()).getType());
-	profiler2.profile(szError);
-	if (isUpdatePlotGroups())
-	{
-		GC.getGame().updatePlotGroups();
-		setUpdatePlotGroups(false);
-	}
-	profiler2.profile(NULL, true);
-
 /*************************************************************************************************/
 /**	Xienwolf Tweak							12/27/08											**/
 /**																								**/
@@ -4596,36 +4582,20 @@ void CvPlayer::updatePlotGroups()
 	CvPlotGroup* pLoopPlotGroup;
 	int iLoop;
 	int iI;
-	CvCity* pLoopCity;
 
 	if (!(GC.getGameINLINE().isFinalInitialized()))
 	{
 		return;
 	}
 
-	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
-	{
-		pLoopCity->setDelayBonusUpdate(true);
-	}
 	for(pLoopPlotGroup = firstPlotGroup(&iLoop); pLoopPlotGroup != NULL; pLoopPlotGroup = nextPlotGroup(&iLoop))
 	{
-		pLoopPlotGroup->recalculatePlots(true);
+		pLoopPlotGroup->recalculatePlots();
 	}
-	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
-	{
-		pLoopCity->setDelayBonusUpdate(true);
-	}
-	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+
+	for (iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
 	{
 		GC.getMapINLINE().plotByIndexINLINE(iI)->updatePlotGroup(getID(), false);
-	}
-	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
-	{
-		pLoopCity->setDelayBonusUpdate(false);
-	}
-	for (pLoopPlotGroup = firstPlotGroup(&iLoop); pLoopPlotGroup != NULL; pLoopPlotGroup = nextPlotGroup(&iLoop))
-	{
-		pLoopPlotGroup->recalculatePlots();
 	}
 
 	updateTradeRoutes();
@@ -4980,26 +4950,6 @@ void CvPlayer::setChoosingFreeTech(bool bValue)
 {
 	m_bChoosingFreeTech = bValue;
 }
-bool CvPlayer::isUpdatePlotGroups() const
-{
-	return m_bUpdatePlotGroups;
-}
-
-void CvPlayer::setUpdatePlotGroups(bool bValue)
-{
-	m_bUpdatePlotGroups = bValue;
-}
-
-bool CvPlayer::isRunningCityUpdate() const
-{
-	return m_bRunningCityUpdate;
-}
-
-void CvPlayer::setRunningCityUpdate(bool bValue)
-{
-	m_bRunningCityUpdate = bValue;
-}
-
 /************************************************************************************************/
 /* UNOFFICIAL_PATCH                        END                                                  */
 /************************************************************************************************/
@@ -17169,42 +17119,7 @@ void CvPlayer::deletePlotGroup(int iID)
 	m_plotGroups.removeAt(iID);
 }
 
-bool CvPlayer::findEmptyPlotGroup(CvPlot* pPlot)
-{
-	CvPlotGroup* pLoopPlotGroup;
-	int iLoop;
-	for (pLoopPlotGroup = firstPlotGroup(&iLoop); pLoopPlotGroup != NULL; pLoopPlotGroup = nextPlotGroup(&iLoop))
-	{
-		if (pLoopPlotGroup->getLengthPlots() == 0)
-		{
-			pLoopPlotGroup->addPlot(pPlot);
-			return true;
-		}
-	}
-	return false;
-}
 
-CvPlotGroup* CvPlayer::findPlotGroup(CvPlot* pPlot)
-{
-	CvPlotGroup* pLoopPlotGroup;
-	int iLoop;
-	CLLNode<XYCoords>* pPlotNode;
-	for (pLoopPlotGroup = firstPlotGroup(&iLoop); pLoopPlotGroup != NULL; pLoopPlotGroup = nextPlotGroup(&iLoop))
-	{
-		
-		pPlotNode = pLoopPlotGroup->headPlotsNode();
-
-		while (pPlotNode != NULL)
-		{
-			if (GC.getMapINLINE().plotSorenINLINE(pPlotNode->m_data.iX, pPlotNode->m_data.iY) == pPlot)
-			{
-				return pLoopPlotGroup;
-			}
-			pPlotNode = pLoopPlotGroup->nextPlotsNode(pPlotNode);
-		}
-	}
-	return NULL;
-}
 CvCity* CvPlayer::firstCity(int *pIterIdx, bool bRev) const
 {
 	return !bRev ? m_cities.beginIter(pIterIdx) : m_cities.endIter(pIterIdx);

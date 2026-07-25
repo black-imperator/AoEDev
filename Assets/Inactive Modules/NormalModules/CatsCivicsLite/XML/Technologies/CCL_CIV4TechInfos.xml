@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- Tech Infos -->
-<Civ4TechInfos xmlns="x-schema:VCivics_CIV4TechnologiesSchema.xml">
+<Civ4TechInfos xmlns="x-schema:CCL_CIV4TechnologiesSchema.xml">
 	<TechInfos>
 			<TechInfo>		<!-- Mathematics -->
 			<Type>TECH_MATHEMATICS</Type>

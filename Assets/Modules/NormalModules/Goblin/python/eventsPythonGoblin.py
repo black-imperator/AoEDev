@@ -50,7 +50,7 @@ def doScorpionSabotage3(argsList):
 	kTriggeredData = argsList[1]
 	pPlayer        = gc.getPlayer(kTriggeredData.ePlayer)
 	pCity          = pPlayer.getCity(kTriggeredData.iCityId)
-	(pLoopCity, iter) = player.firstCity(false)
+	(pLoopCity, iter) = pPlayer.firstCity(false)
 	while(pLoopCity):
 		if (pLoopCity!=pCity):
 			if (pLoopCity.getCityClass()==getInfoType("CITYCLASS_SCORPION")):

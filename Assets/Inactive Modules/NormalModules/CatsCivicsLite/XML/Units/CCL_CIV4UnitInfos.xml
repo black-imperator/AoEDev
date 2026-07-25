@@ -4,7 +4,7 @@
 <!-- Copyright Firaxis Games 2005 -->
 <!-- -->
 <!-- Unit Infos -->
-<Civ4UnitInfos xmlns="x-schema:CatsCivics_CIV4UnitSchema.xml">
+<Civ4UnitInfos xmlns="x-schema:CCL_CIV4UnitSchema.xml">
 	<UnitInfos>
 		<UnitInfo>        <!-- Adventuring Party -->
 			<Class>UNITCLASS_ADVENTURING_PARTY</Class>

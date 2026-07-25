@@ -23327,6 +23327,26 @@ bool CvUnit::canCast(int spell, bool bTestVisible, CvPlot* pTargetPlot)
 			return false;
 		}
 	}
+	if (GC.getSpellInfo(eSpell).getPrereqCivic() != NO_CIVIC)
+	{
+		bValid = false;
+		for (int iI = 0; iI < GC.getDefineINT("MAX_CIVIC_OPTIONS"); iI++)
+		{
+			if (GET_PLAYER(getOwnerINLINE()).getCivics((CivicOptionTypes)iI) == GC.getSpellInfo(eSpell).getPrereqCivic())
+			{
+				bValid = true;
+				break;
+			}
+		}
+		if (GET_PLAYER(getOwnerINLINE()).isAnarchy())
+		{
+			bValid = true;
+		}
+		if (!bValid)
+		{
+			return false;
+		}
+	}
 	if (GC.getSpellInfo(eSpell).getTechPrereq() != NO_TECH)
 	{
 		if (!GET_TEAM(getTeam()).isHasTech((TechTypes)GC.getSpellInfo(eSpell).getTechPrereq()))
@@ -23930,46 +23950,46 @@ bool CvUnit::canCast(int spell, bool bTestVisible, CvPlot* pTargetPlot)
 /*************************************************************************************************/
 	return false;
 }
-SpellUpgradeData CvUnit::getSpellData(int spell)
+SpellUpgradeData* CvUnit::getSpellData(int spell)
 {
 	int iMagicalPower = getSpellMagicalPower(spell);
 	int iExtraPower = iMagicalPower - GC.getSpellInfo((SpellTypes)spell).getMagicalPowerPrereq();
-	SpellUpgradeData data;
-	data.piSummonPromotionData = new int[GC.getNumPromotionInfos()];
+	SpellUpgradeData* data=new SpellUpgradeData();
+	data->piSummonPromotionData = new int[GC.getNumPromotionInfos()];
 	for (int i = 0 ; i < GC.getNumPromotionInfos(); i++)
 	{
-		data.piSummonPromotionData[i] = 0;
+		data->piSummonPromotionData[i] = 0;
 	}
 	SpellBonuses bonus;
 	int iNumBonusApplications=0;
 	//Core Spell Data
-	data.iDamage = GC.getSpellInfo((SpellTypes)spell).getDamage();
-	data.iMaxDamage = GC.getSpellInfo((SpellTypes)spell).getDamageLimit();
-	data.iNumTargets = GC.getSpellInfo((SpellTypes)spell).getNumTargets();
-	data.iDuration = GC.getSpellInfo((SpellTypes)spell).getPromotionDuration();
-	data.iImmobileTurns = GC.getSpellInfo((SpellTypes)spell).getImmobileTurns();
-	data.iFortifyTurns = GC.getSpellInfo((SpellTypes)spell).getFortifyTurns();
+	data->iDamage = GC.getSpellInfo((SpellTypes)spell).getDamage();
+	data->iMaxDamage = GC.getSpellInfo((SpellTypes)spell).getDamageLimit();
+	data->iNumTargets = GC.getSpellInfo((SpellTypes)spell).getNumTargets();
+	data->iDuration = GC.getSpellInfo((SpellTypes)spell).getPromotionDuration();
+	data->iImmobileTurns = GC.getSpellInfo((SpellTypes)spell).getImmobileTurns();
+	data->iFortifyTurns = GC.getSpellInfo((SpellTypes)spell).getFortifyTurns();
 	if (GC.getSpellInfo((SpellTypes)spell).getNumAddPromotions() > 0)
 	{
-		data.iPromotionApply = 1;
+		data->iPromotionApply = 1;
 	}
 	else
 	{
-		data.iPromotionApply = 0;
+		data->iPromotionApply = 0;
 
 	}
-	data.bPermanent = false;
-	data.iSummonDuration = 1;
+	data->bPermanent = false;
+	data->iSummonDuration = 1;
 	if (GC.getSpellInfo((SpellTypes)spell).getCreateUnitDuration() > 0)
 	{
-		data.iSummonDuration = GC.getSpellInfo((SpellTypes)spell).getCreateUnitDuration();
+		data->iSummonDuration = GC.getSpellInfo((SpellTypes)spell).getCreateUnitDuration();
 	}
-	data.iSummonNumber = GC.getSpellInfo((SpellTypes)spell).getCreateUnitNum();
+	data->iSummonNumber = GC.getSpellInfo((SpellTypes)spell).getCreateUnitNum();
 	if (GC.getSpellInfo((SpellTypes)spell).getCreateUnitPromotion() != NO_PROMOTION)
 	{
-		data.piSummonPromotionData[GC.getSpellInfo((SpellTypes)spell).getCreateUnitPromotion()] = 1;
+		data->piSummonPromotionData[GC.getSpellInfo((SpellTypes)spell).getCreateUnitPromotion()] = 1;
 	}
-	data.bSummonPermanent = GC.getSpellInfo((SpellTypes)spell).isPermanentUnitCreate();
+	data->bSummonPermanent = GC.getSpellInfo((SpellTypes)spell).isPermanentUnitCreate();
 
 	//Applying Spell Bonuses
 	for (int iI = 0; iI < GC.getSpellInfo((SpellTypes)spell).getNumSpellBonuses(); iI++)
@@ -23979,40 +23999,40 @@ SpellUpgradeData CvUnit::getSpellData(int spell)
 		 iNumBonusApplications =std::min( (iExtraPower/(bonus.iPrereqExtraPower)), bonus.iMaxApplications);
 		 if (iNumBonusApplications > 0)
 		 {
-			 data.iDamage += bonus.iExtraDamage * iNumBonusApplications;
-			 data.iMaxDamage += bonus.iExtraMaxDamage * iNumBonusApplications;
-			 data.iNumTargets += bonus.iExtraNumTargets * iNumBonusApplications;
-			 if (bonus.iExtraDuration > 0 && data.iDuration == -1)
+			 data->iDamage += bonus.iExtraDamage * iNumBonusApplications;
+			 data->iMaxDamage += bonus.iExtraMaxDamage * iNumBonusApplications;
+			 data->iNumTargets += bonus.iExtraNumTargets * iNumBonusApplications;
+			 if (bonus.iExtraDuration > 0 && data->iDuration == -1)
 			 {
-				data.iDuration = 0;
+				data->iDuration = 0;
 			 } 
-			 data.iDuration += bonus.iExtraDuration * iNumBonusApplications;
-			 data.iImmobileTurns += bonus.iExtraImmobileTurns * iNumBonusApplications;
-			 data.iFortifyTurns += bonus.iExtraFortifyTurns * iNumBonusApplications;
-			 data.iPromotionApply += bonus.iExtraPromotionApply * iNumBonusApplications;
+			 data->iDuration += bonus.iExtraDuration * iNumBonusApplications;
+			 data->iImmobileTurns += bonus.iExtraImmobileTurns * iNumBonusApplications;
+			 data->iFortifyTurns += bonus.iExtraFortifyTurns * iNumBonusApplications;
+			 data->iPromotionApply += bonus.iExtraPromotionApply * iNumBonusApplications;
 			 if (bonus.bExtraPermanent)
 			 {
-			 	data.bPermanent = true;
+			 	data->bPermanent = true;
 			 }
-			 data.iSummonDuration += bonus.iExtraSummonDuration * iNumBonusApplications;
-			 data.iSummonNumber += bonus.iExtraSummonNumber * iNumBonusApplications;
+			 data->iSummonDuration += bonus.iExtraSummonDuration * iNumBonusApplications;
+			 data->iSummonNumber += bonus.iExtraSummonNumber * iNumBonusApplications;
 			 if (bonus.iExtraSummonPromotion != NO_PROMOTION)
 			 {
-				 data.piSummonPromotionData[bonus.iExtraSummonPromotion] += bonus.iExtraSummonPromotionApply * iNumBonusApplications;
+				 data->piSummonPromotionData[bonus.iExtraSummonPromotion] += bonus.iExtraSummonPromotionApply * iNumBonusApplications;
 			 }
 			 if (bonus.bExtraSummonPermanent)
 			 {
-				 data.bSummonPermanent = true;
+				 data->bSummonPermanent = true;
 			 }
 
 		}
-		if (data.bPermanent)
+		if (data->bPermanent)
 		{
-			data.iDuration = -1;
+			data->iDuration = -1;
 		}
-		if (data.bSummonPermanent)
+		if (data->bSummonPermanent)
 		{
-			data.iSummonDuration = -1;
+			data->iSummonDuration = -1;
 		}
 	}
 	return data;
@@ -24496,11 +24516,11 @@ bool CvUnit::canSummonMaster(int spell)
 /*************************************************************************************************/
 bool CvUnit::canAddPromotion(int spell, CvPlot* pTargetPlot)
 {
-	SpellUpgradeData spellData = getSpellData(spell);
+	SpellUpgradeData* spellData = getSpellData(spell);
 	bool bResistable = GC.getSpellInfo((SpellTypes)spell).isResistable();
 	int iRange = GC.getSpellInfo((SpellTypes)spell).getRange();
 	iRange += getSpellExtraRange();
-	int iDuration = spellData.iDuration;
+	int iDuration = spellData->iDuration;
 
 	if (pTargetPlot == NULL)
 	{
@@ -24617,11 +24637,11 @@ bool CvUnit::canAddPromotion(int spell, CvPlot* pTargetPlot)
 }
 bool CvUnit::canCastDamage(int spell, CvPlot* pTargetPlot)
 {
-	SpellUpgradeData spellData = getSpellData(spell);
+	SpellUpgradeData* spellData = getSpellData(spell);
 	bool bResistable = GC.getSpellInfo((SpellTypes)spell).isResistable();
-	int iDmg = spellData.iDamage;
-	int iDmgLimit = spellData.iMaxDamage;
-	int iNumTargets = spellData.iNumTargets;
+	int iDmg = spellData->iDamage;
+	int iDmgLimit = spellData->iMaxDamage;
+	int iNumTargets = spellData->iNumTargets;
 	int iDmgType = GC.getSpellInfo((SpellTypes)spell).getDamageType();
 	int iRange = GC.getSpellInfo((SpellTypes)spell).getRange();
 
@@ -25120,11 +25140,11 @@ bool CvUnit::canRemovePromotion(int spell, CvPlot* pTargetPlot)
 	{
 		pTargetPlot = plot();
 	}
-	SpellUpgradeData spellData = getSpellData(spell);
+	SpellUpgradeData* spellData = getSpellData(spell);
 	bool bResistable = GC.getSpellInfo((SpellTypes)spell).isResistable();
 	int iRange = GC.getSpellInfo((SpellTypes)spell).getRange();
 	iRange += getSpellExtraRange();
-	int iDuration = spellData.iDuration;
+	int iDuration = spellData->iDuration;
 
 	CvSpellInfo& kSpell = GC.getSpellInfo((SpellTypes)spell);
 	for (int promidx = 0; promidx < kSpell.getNumRemovePromotions(); promidx++)
@@ -25673,12 +25693,12 @@ void CvUnit::castAddPromotion(int spell, CvPlot* pTargetPlot)
 	{
 		pTargetPlot = plot();
 	}
-	SpellUpgradeData spellData = getSpellData(spell);
+	SpellUpgradeData* spellData = getSpellData(spell);
 	bool bResistable = GC.getSpellInfo((SpellTypes)spell).isResistable();
-	int iDuration = spellData.iDuration;
-	int iNumTargets = spellData.iNumTargets;
-	int iExtraApply = spellData.iPromotionApply;
-	bool bPermanent = spellData.bPermanent;
+	int iDuration = spellData->iDuration;
+	int iNumTargets = spellData->iNumTargets;
+	int iExtraApply = spellData->iPromotionApply;
+	bool bPermanent = spellData->bPermanent;
 
 	for (int promidx = 0; promidx < GC.getSpellInfo((SpellTypes)spell).getNumAddPromotions(); promidx++)
 	{
@@ -25705,7 +25725,7 @@ void CvUnit::castAddPromotion(int spell, CvPlot* pTargetPlot)
 				{
 					setPromotionDuration(ePromotion1, iDuration);
 				}
-				if (GC.getPromotionInfo(ePromotion1).getDuration() > 0 && spellData.bPermanent)
+				if (GC.getPromotionInfo(ePromotion1).getDuration() > 0 && spellData->bPermanent)
 				{
 					setPromotionDuration(ePromotion1, -1);
 					setPermanentSpellPromotion(ePromotion1, true);
@@ -25783,7 +25803,7 @@ void CvUnit::castAddPromotion(int spell, CvPlot* pTargetPlot)
 															{
 																pLoopUnit->setPromotionDuration(ePromotion1, iDuration);
 															}
-															if (GC.getPromotionInfo(ePromotion1).getDuration() > 0 && spellData.bPermanent)
+															if (GC.getPromotionInfo(ePromotion1).getDuration() > 0 && spellData->bPermanent)
 															{
 																pLoopUnit->setPromotionDuration(ePromotion1, -1);
 																pLoopUnit->setPermanentSpellPromotion(ePromotion1, true);
@@ -25818,7 +25838,7 @@ void CvUnit::castAddPromotion(int spell, CvPlot* pTargetPlot)
 														{
 															pLoopUnit->setPromotionDuration(ePromotion1, iDuration);
 														}
-														if (GC.getPromotionInfo(ePromotion1).getDuration() > 0 && spellData.bPermanent)
+														if (GC.getPromotionInfo(ePromotion1).getDuration() > 0 && spellData->bPermanent)
 														{
 															pLoopUnit->setPromotionDuration(ePromotion1, -1);
 															pLoopUnit->setPermanentSpellPromotion(ePromotion1, true);
@@ -25925,7 +25945,7 @@ void CvUnit::castAddPromotion(int spell, CvPlot* pTargetPlot)
 													{
 														pBestUnit->setPromotionDuration(ePromotion1, iDuration);
 													}
-													if (GC.getPromotionInfo(ePromotion1).getDuration() > 0 && spellData.bPermanent)
+													if (GC.getPromotionInfo(ePromotion1).getDuration() > 0 && spellData->bPermanent)
 													{
 														pLoopUnit->setPromotionDuration(ePromotion1, -1);
 														pLoopUnit->setPermanentSpellPromotion(ePromotion1, true);
@@ -25955,11 +25975,11 @@ void CvUnit::castDamage(int spell, CvPlot* pTargetPlot)
 	{
 		pTargetPlot = plot();
 	}
-	SpellUpgradeData spellData = getSpellData(spell);
+	SpellUpgradeData* spellData = getSpellData(spell);
 	bool bResistable = GC.getSpellInfo((SpellTypes)spell).isResistable();
-	int iDmg = spellData.iDamage;
-	int iDmgLimit = spellData.iMaxDamage;
-	int iNumTargets = spellData.iNumTargets;
+	int iDmg = spellData->iDamage;
+	int iDmgLimit = spellData->iMaxDamage;
+	int iNumTargets = spellData->iNumTargets;
 	int iDmgType = GC.getSpellInfo((SpellTypes)spell).getDamageType();
 	int iRange = GC.getSpellInfo((SpellTypes)spell).getRange();
 
@@ -26184,11 +26204,11 @@ void CvUnit::castImmobile(int spell, CvPlot* pTargetPlot)
 	{
 		pTargetPlot = plot();
 	}
-	SpellUpgradeData spellData = getSpellData(spell);
+	SpellUpgradeData* spellData = getSpellData(spell);
 	bool bResistable = GC.getSpellInfo((SpellTypes)spell).isResistable();
-	int iNumTargets = spellData.iNumTargets;
-	int iImmobileTurns = spellData.iImmobileTurns;
-	int iFortifyTurns = spellData.iFortifyTurns;
+	int iNumTargets = spellData->iNumTargets;
+	int iImmobileTurns = spellData->iImmobileTurns;
+	int iFortifyTurns = spellData->iFortifyTurns;
 	int iRange = GC.getSpellInfo((SpellTypes)spell).getRange();
 /*************************************************************************************************/
 /**	Spellcasting Range						04/08/08	Written: Grey Fox	Imported: Xienwolf	**/
@@ -26353,11 +26373,11 @@ void CvUnit::castFortify(int spell, CvPlot* pTargetPlot)
 	{
 		pTargetPlot = plot();
 	}
-	SpellUpgradeData spellData = getSpellData(spell);
+	SpellUpgradeData* spellData = getSpellData(spell);
 	bool bResistable = GC.getSpellInfo((SpellTypes)spell).isResistable();
-	int iNumTargets = spellData.iNumTargets;
-	int iImmobileTurns = spellData.iImmobileTurns;
-	int iFortifyTurns = spellData.iFortifyTurns;
+	int iNumTargets = spellData->iNumTargets;
+	int iImmobileTurns = spellData->iImmobileTurns;
+	int iFortifyTurns = spellData->iFortifyTurns;
 	int iRange = GC.getSpellInfo((SpellTypes)spell).getRange();
 	/*************************************************************************************************/
 	/**	Spellcasting Range						04/08/08	Written: Grey Fox	Imported: Xienwolf	**/
@@ -26588,10 +26608,10 @@ void CvUnit::castRemovePromotion(int spell, CvPlot* pTargetPlot)
 	{
 		pTargetPlot = plot();
 	}
-	SpellUpgradeData spellData = getSpellData(spell);
+	SpellUpgradeData* spellData = getSpellData(spell);
 	bool bResistable = GC.getSpellInfo((SpellTypes)spell).isResistable();
-	int iDuration = spellData.iDuration;
-	int iNumTargets = spellData.iNumTargets;
+	int iDuration = spellData->iDuration;
+	int iNumTargets = spellData->iNumTargets;
 
 	CvSpellInfo& kSpell = GC.getSpellInfo((SpellTypes)spell);
 	for (int promidx = 0; promidx < kSpell.getNumRemovePromotions(); promidx++)
@@ -26775,10 +26795,10 @@ void CvUnit::castCreateUnit(int spell, CvPlot* pTargetPlot)
 	{
 		pTargetPlot = plot();
 	}
-	SpellUpgradeData spellData = getSpellData(spell);
-	int iNumUnit = spellData.iSummonNumber;
-	int iDuration = spellData.iSummonDuration;
-	bool bPermanent = spellData.bSummonPermanent;
+	SpellUpgradeData* spellData = getSpellData(spell);
+	int iNumUnit = spellData->iSummonNumber;
+	int iDuration = spellData->iSummonDuration;
+	bool bPermanent = spellData->bSummonPermanent;
 	int iI;
 	CvUnit* pUnit;
 	int iRange = GC.getSpellInfo((SpellTypes)spell).getRange();
@@ -26898,9 +26918,9 @@ void CvUnit::castCreateUnit(int spell, CvPlot* pTargetPlot)
 								}
 							}
 						}
-						if (spellData.piSummonPromotionData[iI]>0)
+						if (spellData->piSummonPromotionData[iI]>0)
 						{ 
-							for (int l=0; l < spellData.piSummonPromotionData[iI]; l++)
+							for (int l=0; l < spellData->piSummonPromotionData[iI]; l++)
 							{
 								pUnit->setHasPromotion((PromotionTypes)iI, true);
 							}

@@ -368,7 +368,7 @@ class CustomFunctions:
 					CyGame().changeTrophyValue(t, 1)
 					addPopupWB(CyTranslator().getText("TXT_KEY_FFH_INTRO",()),'art/interface/popups/FfHIntro.dds')
 		# Global Unit Spawn
-		bOrthus			= not CyGame().isOption(self.GameOptions["No Orthus"])
+		bOrthus			= not CyGame().isOption(GameOptionTypes.GAMEOPTION_NO_ORTHUS)
 		lSpawnTurns		= [75, 100, 120] # Orthus, Zarcaz, Gyre
 		fSpeedMod		= float(gc.getGameSpeedInfo(gc.getGame().getGameSpeedType()).getGrowthPercent()) / 100
 		lSpawnTurns		= [int(iSpawnTurn * fSpeedMod) for iSpawnTurn in lSpawnTurns]
@@ -3078,7 +3078,7 @@ class CustomFunctions:
 	### TODO: Dictionaries
 	def infernalPact(self, iTechType, iPlayer):
 		gc			= CyGlobalContext()
-		if gc.getGame().isOption(self.GameOptions["No Hyborem or Basium"]):	return
+		if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_NO_HYBOREM_OR_BASIUM):	return
 		pPlayer		= gc.getPlayer(iPlayer)
 		iLeader		= pPlayer.getLeaderType()
 

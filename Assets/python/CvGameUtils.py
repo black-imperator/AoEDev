@@ -777,7 +777,7 @@ class CvGameUtils:
 			if not CyGame().isUnitClassMaxedOut(Manager.Heroes["Class-Miquiztli"], 0): return True
 
 		elif eUnit == Manager.Heroes["Acheron"]:
-			if Manager.GameOptions["No Acheron"]: return True
+			if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_NO_ACHERON): return True
 
 		elif eUnit == Manager.Heroes["Duin"]:
 			if Manager.GameOptions["No Duin"]: return True
@@ -856,7 +856,7 @@ class CvGameUtils:
 			if pPlayer.getLeaderType() == Manager.Leaders["Risen Emperor"]: return True
 
 		elif eBuilding == Manager.Buildings["Mercurian Gate"]:
-			if Manager.GameOptions["No Hyborem or Basium"]: return True
+			if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_NO_HYBOREM_OR_BASIUM): return True
 			if pPlayer.getStateReligion() == Manager.Religions["Ashen Veil"]: return True
 			if pCity.isCapital() and not pCity.getCivilizationType() == Manager.Civilizations["Mercurians"]: return True
 

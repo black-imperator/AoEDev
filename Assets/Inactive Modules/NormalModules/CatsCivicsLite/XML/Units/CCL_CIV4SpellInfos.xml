@@ -4,7 +4,7 @@
 <!-- Copyright Firaxis Games 2005 -->
 <!-- -->
 <!-- Spell Infos -->
-<Civ4SpellInfos xmlns="x-schema:VCivics_CIV4UnitSpellSchema.xml">
+<Civ4SpellInfos xmlns="x-schema:CCL_CIV4UnitSpellSchema.xml">
 	<SpellInfos>
 		<SpellInfo>			<!-- Pacifism: Plead -->
 			<Type>SPELL_PLEAD</Type>

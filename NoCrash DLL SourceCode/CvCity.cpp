@@ -99,7 +99,6 @@ CvCity::CvCity()
 	m_paiNoBonus = NULL;
 	m_paiFreeBonus = NULL;
 	m_paiNumBonuses = NULL;
-	m_pabBonusPlotGroupUpdates = NULL;
 	m_paiNumCorpProducedBonuses = NULL;
 	m_paiProjectProduction = NULL;
 	m_paiBuildingProduction = NULL;
@@ -550,7 +549,6 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 
 	if (bUpdatePlotGroups)
 	{
-		plot()->updatePlotGroup(m_eOwner, true);
 		GC.getGameINLINE().updatePlotGroups();
 	}
 
@@ -595,7 +593,6 @@ void CvCity::uninit()
 	SAFE_DELETE_ARRAY(m_paiNoBonus);
 	SAFE_DELETE_ARRAY(m_paiFreeBonus);
 	SAFE_DELETE_ARRAY(m_paiNumBonuses);
-	SAFE_DELETE_ARRAY(m_pabBonusPlotGroupUpdates);
 	SAFE_DELETE_ARRAY(m_paiNumCorpProducedBonuses);
 	SAFE_DELETE_ARRAY(m_paiProjectProduction);
 	SAFE_DELETE_ARRAY(m_paiBuildingProduction);
@@ -1138,7 +1135,6 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 		m_paiNoBonus = new int[GC.getNumBonusInfos()];
 		m_paiFreeBonus = new int[GC.getNumBonusInfos()];
 		m_paiNumBonuses = new int[GC.getNumBonusInfos()];
-		m_pabBonusPlotGroupUpdates = new bool[GC.getNumBonusInfos()];
 		m_paiNumCorpProducedBonuses = new int[GC.getNumBonusInfos()];
 		for (int iI = 0; iI < GC.getNumBonusInfos(); iI++)
 		{
@@ -1146,7 +1142,6 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 			m_paiFreeBonus[iI] = 0;
 			m_paiNumBonuses[iI] = 0;
 			m_paiNumCorpProducedBonuses[iI] = 0;
-			m_pabBonusPlotGroupUpdates[iI] = false;
 		}
 
 		m_paiProjectProduction = new int[GC.getNumProjectInfos()];
@@ -11024,11 +11019,6 @@ void CvCity::setCultureLevel(CultureLevelTypes eNewValue, bool bUpdatePlotGroups
 
 	if (eOldValue != eNewValue)
 	{
-		if (bUpdatePlotGroups)
-		{
-			GET_PLAYER(getOwner()).setUpdatePlotGroups(true);
-			bUpdatePlotGroups = false;
-		}
 		m_eCultureLevel = eNewValue;
 
 		if (eOldValue != NO_CULTURELEVEL)
@@ -13544,41 +13534,10 @@ int CvCity::getNumBonuses(BonusTypes eIndex) const
 		return 0;
 	}
 //FfH: End Add
-	if (plotGroup(getOwner()) != NULL)
-	{
-		return plotGroup(getOwner())->getNumBonuses(eIndex) + m_paiNumCorpProducedBonuses[eIndex]+ GET_PLAYER(getOwnerINLINE()).getFreeBonus(eIndex);
-	}
-	else
-	{
-		return 0;
-	}
-//	return m_paiNumBonuses[eIndex] + m_paiNumCorpProducedBonuses[eIndex];
-}
-bool CvCity::isBonusPlotGroupUpdated(BonusTypes eIndex) const
-{
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < GC.getNumBonusInfos(), "eIndex expected to be < GC.getNumBonusInfos()");
-	return m_pabBonusPlotGroupUpdates[eIndex];
 
+	return m_paiNumBonuses[eIndex] + m_paiNumCorpProducedBonuses[eIndex];
 }
 
-void CvCity::setBonusPlotGroupUpdated(BonusTypes eIndex, bool bchange)
-{
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < GC.getNumBonusInfos(), "eIndex expected to be < GC.getNumBonusInfos()");
-	m_pabBonusPlotGroupUpdates[eIndex] = bchange;
-
-}
-void CvCity::setDelayBonusUpdate(bool bChange)
-{
-	m_bDelayBonusUpdate = bChange;
-
-}
-bool CvCity::isDelayBonusUpdate() const
-{
-	return m_bDelayBonusUpdate;
-
-}
 
 bool CvCity::hasBonus(BonusTypes eIndex) const
 {

@@ -2895,6 +2895,14 @@
 		<Spanish>[ICON_BULLET]Player must have the [LINK=%s1]%s2_religion[\LINK] state religion</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_SPELL_CIVIC_PREREQ</Tag>
+		<English>[ICON_BULLET]Player must have the [LINK=%s1]%s2_religion[\LINK] civic</English>
+		<French>[ICON_BULLET]Player must have the [LINK=%s1]%s2_religion[\LINK] civic</French>
+		<German>[ICON_BULLET]Player must have the [LINK=%s1]%s2_religion[\LINK] civic</German>
+		<Italian>[ICON_BULLET]Player must have the [LINK=%s1]%s2_religion[\LINK] civic</Italian>
+		<Spanish>[ICON_BULLET]Player must have the [LINK=%s1]%s2_religion[\LINK] civic</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_SPELL_STEAL</Tag>
 		<English>Steal</English>
 		<French>Voler</French>

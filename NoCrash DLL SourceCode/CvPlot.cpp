@@ -6494,17 +6494,11 @@ void CvPlot::setOwner(PlayerTypes eNewValue, bool bCheckUnits, bool bUpdatePlotG
 		updateIrrigated();
 		updateYield();
 
-		if (bUpdatePlotGroup && eNewValue!=NO_PLAYER)
+		if (bUpdatePlotGroup)
 		{
-			if (GET_PLAYER(eNewValue).isRunningCityUpdate())
-			{
-				GET_PLAYER(eNewValue).setUpdatePlotGroups(true);
-			}
-			else
-			{
-				updatePlotGroup();
-			}
+			updatePlotGroup();
 		}
+	
 
 		if (bCheckUnits)
 		{
@@ -7750,10 +7744,10 @@ void CvPlot::setPlotCity(CvCity* pNewValue)
 			if (pPlotGroup != NULL)
 			{
 				FAssertMsg((0 < GC.getNumBonusInfos()), "GC.getNumBonusInfos() is not greater than zero but an array is being allocated in CvPlot::setPlotCity");
-			//	for (int iI = 0; iI < GC.getNumBonusInfos(); ++iI)
-			//	{
-			//		getPlotCity()->changeNumBonuses(((BonusTypes)iI), pPlotGroup->getNumBonuses((BonusTypes)iI));
-			//	}
+				for (iI = 0; iI < GC.getNumBonusInfos(); ++iI)
+				{
+					getPlotCity()->changeNumBonuses(((BonusTypes)iI), pPlotGroup->getNumBonuses((BonusTypes)iI));
+				}
 			}
 		}
 		updatePlotGroupBonus(true);
@@ -8647,7 +8641,7 @@ void CvPlot::changeCulture(PlayerTypes eIndex, int iChange, bool bUpdate)
 {
 	if (0 != iChange)
 	{
-		setCulture(eIndex, (getCulture(eIndex) + iChange), bUpdate, !GET_PLAYER(eIndex).isUpdatePlotGroups());
+		setCulture(eIndex, (getCulture(eIndex) + iChange), bUpdate, true);
 	}
 }
 
@@ -9105,11 +9099,10 @@ void CvPlot::setPlotGroup(PlayerTypes ePlayer, CvPlotGroup* pNewValue)
 				if (pCity->getOwnerINLINE() == ePlayer)
 				{
 					FAssertMsg((0 < GC.getNumBonusInfos()), "GC.getNumBonusInfos() is not greater than zero but an array is being allocated in CvPlot::setPlotGroup");
-				//	for (int iI = 0; iI < GC.getNumBonusInfos(); ++iI)
-				//	{
-				//		pCity->changeNumBonuses(((BonusTypes)iI), -(pOldPlotGroup->getNumBonuses((BonusTypes)iI)));
-				//		pCity->setBonusPlotGroupUpdated((BonusTypes)iI, true);
-				//	}
+					for (iI = 0; iI < GC.getNumBonusInfos(); ++iI)
+					{
+						pCity->changeNumBonuses(((BonusTypes)iI), -(pOldPlotGroup->getNumBonuses((BonusTypes)iI)));
+					}
 				}
 			}
 		}
@@ -9122,17 +9115,25 @@ void CvPlot::setPlotGroup(PlayerTypes ePlayer, CvPlotGroup* pNewValue)
 		{
 			m_aiPlotGroup[ePlayer] = pNewValue->getID();
 		}
-		//pOldPlotGroup->removePlot(this);
+
+		if (getPlotGroup(ePlayer) != NULL)
+		{
+			if (pCity != NULL)
+			{
+				if (pCity->getOwnerINLINE() == ePlayer)
+				{
+					FAssertMsg((0 < GC.getNumBonusInfos()), "GC.getNumBonusInfos() is not greater than zero but an array is being allocated in CvPlot::setPlotGroup");
+					for (iI = 0; iI < GC.getNumBonusInfos(); ++iI)
+					{
+						pCity->changeNumBonuses(((BonusTypes)iI), getPlotGroup(ePlayer)->getNumBonuses((BonusTypes)iI));
+					}
+				}
+			}
+		}
 		if (ePlayer == getOwnerINLINE())
 		{
 			updatePlotGroupBonus(true);
-			if (pNewValue != NULL)
-			{
-				pNewValue->updatePlotGroupBonusCities();
-			}
 		}
-		
-
 	}
 }
 
@@ -9146,7 +9147,7 @@ void CvPlot::updatePlotGroup()
 	{
 		if (GET_PLAYER((PlayerTypes)iI).isAlive())
 		{
-			updatePlotGroup((PlayerTypes)iI,true);
+			updatePlotGroup((PlayerTypes)iI);
 		}
 	}
 }
@@ -9251,62 +9252,61 @@ void CvPlot::updatePlotGroup(PlayerTypes ePlayer, bool bRecalculate)
 		{
 			GET_PLAYER(ePlayer).initPlotGroup(this);
 		}
+		mergeCityPlotGroup(ePlayer);
 	}
-	if (getMaxOutgoingAirlift()>0|| (isCity() && getPlotCity()->getMaxAirlift()>0))
+}
+
+void CvPlot::mergeCityPlotGroup(PlayerTypes ePlayer)
+{
+	CvPlotGroup* pPlotGroup = getPlotGroup(ePlayer);
+
+	if (pPlotGroup == NULL)
 	{
-		TeamTypes team = GET_PLAYER(ePlayer).getTeam();
-		CvCity* pLoopCity;
-		int iI;
-		int iLoop;
-		for (int iI = 0; iI < MAX_PLAYERS; iI++)
+		return;
+	}
+	CvCity* pCity = NULL;
+	CLLNode<XYCoords>* pPlotNode;
+	CvPlot* pLoopPlot;
+	pPlotNode = pPlotGroup->headPlotsNode();
+
+	while (pPlotNode != NULL)
+	{
+		pLoopPlot = GC.getMapINLINE().plotSorenINLINE(pPlotNode->m_data.iX, pPlotNode->m_data.iY);
+		if (pLoopPlot->isCity() && pLoopPlot->getPlotCity()->getOwner() == ePlayer && pLoopPlot->getPlotCity()->getMaxAirlift() > 0)
 		{
-			if (GET_PLAYER((PlayerTypes)iI).isAlive())
+			pCity = pLoopPlot->getPlotCity();
+			break;
+		}
+		pPlotNode = pPlotGroup->nextPlotsNode(pPlotNode);
+	}
+	if (pCity == NULL)
+	{
+		return;
+	}
+	int iLoop;
+	CvCity* pLoopCity;
+	for (int iI = 0; iI < MAX_PLAYERS; iI++)
+	{
+		if (GET_PLAYER((PlayerTypes)iI).isAlive() && (iI == ePlayer || GET_PLAYER((PlayerTypes)iI).getTeam() == GET_PLAYER((PlayerTypes)ePlayer).getTeam()))
+		{
+			for (pLoopCity = GET_PLAYER((PlayerTypes)iI).firstCity(&iLoop); pLoopCity != NULL; pLoopCity = GET_PLAYER((PlayerTypes)iI).nextCity(&iLoop))
 			{
-				for (pLoopCity = GET_PLAYER((PlayerTypes)iI).firstCity(&iLoop); pLoopCity != NULL; pLoopCity = GET_PLAYER((PlayerTypes)iI).nextCity(&iLoop))
+				if (pLoopCity->getMaxAirlift() > 0 && pLoopCity->plot()->getPlotGroup(ePlayer) != pPlotGroup)
 				{
-					pAdjacentPlotGroup = pLoopCity->plot()->getPlotGroup(ePlayer);
-					if ((pAdjacentPlotGroup != NULL) && (pAdjacentPlotGroup != pPlotGroup))
+					if (pLoopCity->plot()->getPlotGroup(ePlayer) != NULL)
 					{
-						if ((pLoopCity->getMaxAirlift()) && (pLoopCity->isVisible(team, false)))
-						{
-							if (pPlotGroup == NULL)
-							{
-								pAdjacentPlotGroup->addPlot(this);
-								pPlotGroup = pAdjacentPlotGroup;
-								FAssertMsg(getPlotGroup(ePlayer) == pPlotGroup, "ePlayer's plot group is expected to equal pPlotGroup");
-							}
-							else
-							{
-								FAssertMsg(getPlotGroup(ePlayer) == pPlotGroup, "ePlayer's plot group is expected to equal pPlotGroup");
-								GC.getMapINLINE().combinePlotGroups(ePlayer, pPlotGroup, pAdjacentPlotGroup);
-								pPlotGroup = getPlotGroup(ePlayer);
-								FAssertMsg(pPlotGroup != NULL, "PlotGroup is not assigned a valid value");
-							}
-						}
+						GC.getMapINLINE().combinePlotGroups(ePlayer, pPlotGroup, pLoopCity->plot()->getPlotGroup(ePlayer));
+						pPlotGroup = getPlotGroup(ePlayer);
+					}
+					else
+					{
+						pPlotGroup->addPlot(pLoopCity->plot());
 					}
 				}
 			}
 		}
-		if (pPlotGroup == NULL)
-		{
-			CvPlotGroup* pSecondPlotGroup = GET_PLAYER(ePlayer).findPlotGroup(this);
-			if (pSecondPlotGroup == NULL)
-			{
-				if (!GET_PLAYER(ePlayer).findEmptyPlotGroup(this))
-				{
-					pPlotGroup = GET_PLAYER(ePlayer).initPlotGroup(this);
-					pPlotGroup->addPlot(this);
-				}
-			}
-			else
-			{
-				setPlotGroup(ePlayer, pSecondPlotGroup);
-			}
-		}
 	}
-
 }
-
 
 int CvPlot::getVisibilityCount(TeamTypes eTeam) const
 {

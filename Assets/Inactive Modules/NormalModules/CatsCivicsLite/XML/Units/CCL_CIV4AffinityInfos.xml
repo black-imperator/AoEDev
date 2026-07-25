@@ -4,7 +4,7 @@
 <!-- Copyright Firaxis Games 2005 -->
 <!-- -->
 <!-- Basic Infos -->
-<Civ4AffinityInfos xmlns="x-schema:CatsCivics_CIV4UnitSchema.xml">
+<Civ4AffinityInfos xmlns="x-schema:CCL_CIV4UnitSchema.xml">
 	<AffinityInfos>
 		<AffinityInfo><!-- Excess Affinity -->
 			<Type>AFFINITY_EXCESS</Type>

@@ -11166,6 +11166,7 @@ CvSpellInfo::CvSpellInfo() :
 	m_iReligionPrereq(NO_RELIGION),
 	m_iStateReligionPrereq(NO_RELIGION),
 	m_iTechPrereq(NO_TECH),
+	m_iPrereqCivic(NO_CIVIC),
 	m_iNumPrereqTraits(0),
 	m_piPrereqTraits(NULL),
 	m_iNumPromotionsPrereq(0),
@@ -11456,6 +11457,10 @@ int CvSpellInfo::getStateReligionPrereq() const
 int CvSpellInfo::getTechPrereq() const
 {
 	return m_iTechPrereq;
+}
+int CvSpellInfo::getPrereqCivic() const
+{
+	return m_iPrereqCivic;
 }
 int CvSpellInfo::getPrereqTrait(int iI) const { return (getNumPrereqTraits() > iI) ? m_piPrereqTraits[iI] : -1; }
 int CvSpellInfo::getNumPrereqTraits() const { return m_iNumPrereqTraits; }
@@ -11937,6 +11942,7 @@ void CvSpellInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iReligionPrereq);
 	stream->Read(&m_iStateReligionPrereq);
 	stream->Read(&m_iTechPrereq);
+	stream->Read(&m_iPrereqCivic);
 	stream->Read(&m_iNumPrereqTraits);
 	if (m_iNumPrereqTraits > 0)
 	{
@@ -12144,6 +12150,7 @@ void CvSpellInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iReligionPrereq);
 	stream->Write(m_iStateReligionPrereq);
 	stream->Write(m_iTechPrereq);
+	stream->Write(m_iPrereqCivic);
 
 	stream->Write(m_iNumPrereqTraits);
 	if (m_iNumPrereqTraits > 0)
@@ -12362,6 +12369,8 @@ bool CvSpellInfo::read(CvXMLLoadUtility* pXML)
 	if (szTextVal != "") m_iStateReligionPrereq = pXML->FindInInfoClass(szTextVal);
 	pXML->GetChildXmlValByName(szTextVal, "TechPrereq");
 	if (szTextVal != "") m_iTechPrereq = pXML->FindInInfoClass(szTextVal);
+	pXML->GetChildXmlValByName(szTextVal, "PrereqCivic");
+	if (szTextVal != "") m_iPrereqCivic = pXML->FindInInfoClass(szTextVal);
 
 	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "PrereqTraits"))		pXML->SetStringWithChildList(&m_iNumPrereqTraits, &m_aszPrereqTraitsforPass3);
 
@@ -12700,6 +12709,7 @@ void CvSpellInfo::copyNonDefaults(CvSpellInfo* pClassInfo, CvXMLLoadUtility* pXM
 	if (getUnitInStackPrereq()			== NO_UNIT)				m_iUnitInStackPrereq			= pClassInfo->getUnitInStackPrereq();
 	if (getConvertUnitType()			== NO_UNIT)				m_iConvertUnitType				= pClassInfo->getConvertUnitType();
 	if (getTechPrereq()					== NO_TECH)				m_iTechPrereq					= pClassInfo->getTechPrereq();
+	if (getPrereqCivic() == NO_CIVIC)				m_iPrereqCivic = pClassInfo->getPrereqCivic();
 	if (getEffect()						== NO_EFFECT)			m_iEffect						= pClassInfo->getEffect();
 	if (getDamageType()					== NO_DAMAGE)			m_iDamageType					= pClassInfo->getDamageType();
 	if (getCreateFeatureType()			== NO_FEATURE)			m_iCreateFeatureType			= pClassInfo->getCreateFeatureType();

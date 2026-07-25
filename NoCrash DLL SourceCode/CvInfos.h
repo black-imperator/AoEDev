@@ -2188,6 +2188,7 @@ public:
 	int getReligionPrereq() const;
 	int getStateReligionPrereq() const;
 	int getTechPrereq() const;
+	int getPrereqCivic() const;
 	int getPrereqTrait(int iI) const;
 	int getNumPrereqTraits() const;
 	CvString getPrereqTraitsVectorElement(int i);
@@ -2373,6 +2374,7 @@ protected:
 	int m_iReligionPrereq;
 	int m_iStateReligionPrereq;
 	int m_iTechPrereq;
+	int m_iPrereqCivic;
 	int m_iNumPrereqTraits;
 	int* m_piPrereqTraits;
 	std::vector<CvString> m_aszPrereqTraitsforPass3;

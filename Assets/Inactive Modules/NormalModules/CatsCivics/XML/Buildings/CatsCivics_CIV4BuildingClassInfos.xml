@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- Building Class Infos -->
-<Civ4BuildingClassInfos xmlns="x-schema:VCivics_CIV4BuildingsSchema.xml">
+<Civ4BuildingClassInfos xmlns="x-schema:CatsCivics_CIV4BuildingsSchema.xml">
 	<BuildingClassInfos>
 	
 		<!-- Imperium -->

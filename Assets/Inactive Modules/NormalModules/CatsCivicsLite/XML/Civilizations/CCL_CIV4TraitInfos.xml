@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- Leader Trait Infos -->
-<Civ4TraitInfos xmlns="x-schema:VCivics_CIV4CivilizationsSchema.xml">
+<Civ4TraitInfos xmlns="x-schema:CCL_CIV4CivilizationsSchema.xml">
 	<TraitInfos>
 		<TraitInfo>		<!-- Sprawling - Kuriotates -->
 			<Type>TRAIT_SPRAWLING</Type>

@@ -546,7 +546,7 @@ public:
 	void setPlotGroup(PlayerTypes ePlayer, CvPlotGroup* pNewValue);
 	void updatePlotGroup();
 	void updatePlotGroup(PlayerTypes ePlayer, bool bRecalculate = true);
-
+	void mergeCityPlotGroup(PlayerTypes ePlayer);
 	int getVisibilityCount(TeamTypes eTeam) const;																											// Exposed to Python
 	void changeVisibilityCount(TeamTypes eTeam, int iChange, InvisibleTypes eSeeInvisible, bool bUpdatePlotGroups);							// Exposed to Python
 

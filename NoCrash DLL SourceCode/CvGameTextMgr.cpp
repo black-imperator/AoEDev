@@ -14564,6 +14564,11 @@ void CvGameTextMgr::parseSpellHelp(CvWStringBuffer &szBuffer, SpellTypes eSpell,
 		szBuffer.append(pcNewline);
 		szBuffer.append(gDLL->getText("TXT_KEY_SPELL_STATE_RELIGION_PREREQ", ((CvWString)(GC.getReligionInfo((ReligionTypes)GC.getSpellInfo(eSpell).getStateReligionPrereq()).getType())).c_str(), GC.getReligionInfo((ReligionTypes)GC.getSpellInfo(eSpell).getStateReligionPrereq()).getTextKeyWide()));
 	}
+	if (GC.getSpellInfo(eSpell).getPrereqCivic() != NO_CIVIC)
+	{
+		szBuffer.append(pcNewline);
+		szBuffer.append(gDLL->getText("TXT_KEY_SPELL_CIVIC_PREREQ", ((CvWString)(GC.getCivicInfo((CivicTypes)GC.getSpellInfo(eSpell).getPrereqCivic()).getType())).c_str(), GC.getCivicInfo((CivicTypes)GC.getSpellInfo(eSpell).getPrereqCivic()).getTextKeyWide()));
+	}
 	if (GC.getSpellInfo(eSpell).getTechPrereq() != NO_TECH)
 	{
 		szBuffer.append(pcNewline);
@@ -20403,21 +20408,24 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 		if (kBuilding.getLocalSpecialistClassHappinessChange(iI) != 0)
 		{
 			szBuffer.append(NEWLINE);
-			szTempBuffer.Format(L", +%d%c", abs(kBuilding.getLocalSpecialistClassHappinessChange(iI)), ((kBuilding.getLocalSpecialistClassHappinessChange(iI) > 0) ? gDLL->getSymbolID(HAPPY_CHAR) : gDLL->getSymbolID(UNHAPPY_CHAR)));
+			szBuffer.append(gDLL->getText("[ICON_BULLET]"));
+			szTempBuffer.Format(L" +%d%c", abs(kBuilding.getLocalSpecialistClassHappinessChange(iI)), ((kBuilding.getLocalSpecialistClassHappinessChange(iI) > 0) ? gDLL->getSymbolID(HAPPY_CHAR) : gDLL->getSymbolID(UNHAPPY_CHAR)));
 			szBuffer.append(szTempBuffer);
 			szBuffer.append(szFirstBuffer);
 		}
 		if (kBuilding.getLocalSpecialistClassHealthChange(iI) != 0)
 		{
 			szBuffer.append(NEWLINE);
-			szTempBuffer.Format(L", +%d%c", abs(kBuilding.getLocalSpecialistClassHealthChange(iI)), ((kBuilding.getLocalSpecialistClassHealthChange(iI) > 0) ? gDLL->getSymbolID(HEALTHY_CHAR) : gDLL->getSymbolID(UNHEALTHY_CHAR)));
+			szBuffer.append(gDLL->getText("[ICON_BULLET]"));
+			szTempBuffer.Format(L"+%d%c", abs(kBuilding.getLocalSpecialistClassHealthChange(iI)), ((kBuilding.getLocalSpecialistClassHealthChange(iI) > 0) ? gDLL->getSymbolID(HEALTHY_CHAR) : gDLL->getSymbolID(UNHEALTHY_CHAR)));
 			szBuffer.append(szTempBuffer);
 			szBuffer.append(szFirstBuffer);
 		}
 		if (kBuilding.getLocalSpecialistClassCrimeChange(iI) != 0)
 		{
 			szBuffer.append(NEWLINE);
-			szTempBuffer.Format(L", %d Crime", kBuilding.getLocalSpecialistClassCrimeChange(iI));
+			szBuffer.append(gDLL->getText("[ICON_BULLET]"));
+			szTempBuffer.Format(L" %d Crime", kBuilding.getLocalSpecialistClassCrimeChange(iI));
 			szBuffer.append(szTempBuffer);
 			szBuffer.append(szFirstBuffer);
 		}

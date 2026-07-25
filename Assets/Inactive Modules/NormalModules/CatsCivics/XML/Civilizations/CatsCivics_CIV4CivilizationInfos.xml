@@ -4,7 +4,7 @@
 <!-- Copyright Firaxis Games 2005 -->
 <!-- -->
 <!-- Civilization Infos -->
-<Civ4CivilizationInfos xmlns="x-schema:VCivics_CIV4CivilizationsSchema.xml">
+<Civ4CivilizationInfos xmlns="x-schema:CatsCivics_CIV4CivilizationsSchema.xml">
 	<CivilizationInfos>
 		<CivilizationInfo><!-- Amurites -->
 			<Type>CIVILIZATION_AMURITES</Type>

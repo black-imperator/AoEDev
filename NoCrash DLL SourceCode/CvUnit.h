@@ -1446,7 +1446,7 @@ public:
 	bool canPush(int spell);
 	bool canRemovePromotion(int spell, CvPlot* pTargetPlot = NULL);
 	//TargetedSpell 0924 blackimp
-	SpellUpgradeData getSpellData(int spell);
+	SpellUpgradeData* getSpellData(int spell);
 	int getSpellTargetRange(int spell);
 	bool isSpellImmuneTeam(int spell);
 	bool isSpellImmuneNeutral(int spell);

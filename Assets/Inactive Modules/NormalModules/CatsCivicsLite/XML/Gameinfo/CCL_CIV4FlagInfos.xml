@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- Flag Infos -->
-<Civ4FlagInfos xmlns="x-schema:VCivics_CIV4GameInfoSchema.xml">
+<Civ4FlagInfos xmlns="x-schema:CCL_CIV4GameInfoSchema.xml">
 	<FlagInfos>
 		<FlagInfo>
 			<Type>FLAG_CITY_STATES</Type>

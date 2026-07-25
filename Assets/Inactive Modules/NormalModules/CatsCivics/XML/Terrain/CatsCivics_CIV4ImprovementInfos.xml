@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- Improvement Infos -->
-<Civ4ImprovementInfos xmlns="x-schema:VCivics_CIV4TerrainSchema.xml">
+<Civ4ImprovementInfos xmlns="x-schema:CatsCivics_CIV4TerrainSchema.xml">
 	<ImprovementInfos>
 		<ImprovementInfo><!-- Lumbermill -->
 			<Type>IMPROVEMENT_LUMBERMILL</Type>
