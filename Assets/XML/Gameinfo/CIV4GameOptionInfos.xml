@@ -584,7 +584,7 @@
 			<Type>GAMEOPTION_NO_IDW</Type>
 			<Description>TXT_KEY_GAME_OPTION_NO_IDW</Description>
 			<Help>TXT_KEY_GAME_OPTION_NO_IDW_HELP</Help>
-			<bDefault>0</bDefault>
+			<bDefault>1</bDefault>
 			<bVisible>1</bVisible>
 		</GameOptionInfo>
 		<GameOptionInfo>		<!-- Wb Against The Grey -->
