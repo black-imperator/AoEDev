@@ -1,0 +1,40 @@
+;Name - no need to explain
+;note: one line
+[name]
+LessMAFs
+;
+;
+;Version - version of module
+;Note: it have to be number, so only numberic characters and none or one period
+;note: one line
+[version]
+1.0
+;
+;
+;RifE version - version of RifE for which is this module tested, checked, developed, etc
+;Note: it have to be number, so only numberic characters and none or one period
+;note: one line
+[rifeversion]
+386
+;
+;
+;
+[compatible]
+
+;Author - you
+;note: one line
+[author]
+Tikumara
+;
+;
+;Short description - text showed in contect menu
+;note: one line
+[shortdesc]
+Reduce memory allocation failure by disabling map trading.
+;
+;
+;Description - text showed in message box
+;note: can be multiline
+[desc]
+Reduce memory allocation failure by disabling map trading.
+###
