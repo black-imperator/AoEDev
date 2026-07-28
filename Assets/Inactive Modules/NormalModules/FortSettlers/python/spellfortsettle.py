@@ -42,8 +42,8 @@ def reqFortSettle(pCaster):
 
 	if pPlot.isOwned() and pPlot.getOwner() != pCaster.getOwner():
 		return False
-	if not pPlayer.isHuman():
-		if pPlot.getFoundValue(pPlayer.getID()) < (pPlot.area().getBestFoundValue(pPlayer.getID()) * 2) / 3:
-			return False
+#	if not pPlayer.isHuman():
+#		if pPlot.getFoundValue(pPlayer.getID()) < (pPlot.area().getBestFoundValue(pPlayer.getID()) * 2) / 3:
+#			return False
 
 	return True
