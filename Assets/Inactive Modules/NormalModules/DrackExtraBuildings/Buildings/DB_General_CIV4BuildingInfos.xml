@@ -82,7 +82,7 @@
             <PrereqTech>TECH_MASONRY</PrereqTech>
             <bCenterInCity>0</bCenterInCity>
             <iAIWeight>0</iAIWeight>
-            <iCost>100</iCost>
+            <iCost>60</iCost>
             <iAdvancedStartCost>140</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iMinAreaSize>-1</iMinAreaSize>
@@ -100,7 +100,7 @@
             <iPower>2</iPower>
             <YieldChanges>
 				<iYield>0</iYield> <!-- Food -->
-                <iYield>1</iYield> <!-- Production -->
+                <iYield>2</iYield> <!-- Production -->
                 <iYield>0</iYield> <!-- Gold -->
             </YieldChanges>
             <fVisibilityPriority>10000</fVisibilityPriority>
@@ -163,7 +163,7 @@
                 </Flavor>
                 <Flavor>
 					<FlavorType>FLAVOR_GOLD</FlavorType>
-					<iFlavor>10</iFlavor>
+					<iFlavor>7</iFlavor>
 				</Flavor>
             </Flavors>
         </BuildingInfo>
@@ -175,7 +175,7 @@
             <Description>TXT_KEY_DRACKBUILDING_LEAVES_FRUITGARDEN</Description>
             <Civilopedia>TXT_KEY_DRACKBUILDING_LEAVES_FRUITGARDEN_LORE</Civilopedia>
             <Strategy>TXT_KEY_DRACKBUILDING_LEAVES_FRUITGARDEN_STRATEGY</Strategy>
-            <iCrime>8</iCrime>
+            <iCrime>3</iCrime>
             <Advisor>ADVISOR_RELIGION</Advisor>
             <ArtDefineTag>ART_DEF_BUILDING_DRACK_FRUITGARDEN</ArtDefineTag>  
             <ReligionType>RELIGION_FELLOWSHIP_OF_LEAVES</ReligionType>
@@ -267,7 +267,7 @@
             <Flavors>
                 <Flavor>
                     <FlavorType>FLAVOR_MILITARY</FlavorType>
-                    <iFlavor>20</iFlavor>
+                    <iFlavor>10</iFlavor>
                 </Flavor>
             </Flavors>
         </BuildingInfo>
@@ -384,7 +384,7 @@
             <Flavors>
                 <Flavor>
                     <FlavorType>FLAVOR_GROWTH</FlavorType>
-                    <iFlavor>20</iFlavor>
+                    <iFlavor>10</iFlavor>
                 </Flavor>
             </Flavors>
         </BuildingInfo>
@@ -494,7 +494,7 @@
             <Flavors>
                 <Flavor>
                     <FlavorType>FLAVOR_RELIGION</FlavorType>
-                    <iFlavor>15</iFlavor>
+                    <iFlavor>5</iFlavor>
                 </Flavor>
             </Flavors>
         </BuildingInfo>
@@ -621,7 +621,7 @@
             <Flavors>
                 <Flavor>
                     <FlavorType>FLAVOR_RELIGION</FlavorType>
-                    <iFlavor>15</iFlavor>
+                    <iFlavor>5</iFlavor>
                 </Flavor>
             </Flavors>
             <iMilitaryProductionModifier>-15</iMilitaryProductionModifier>
@@ -711,7 +711,7 @@
                 </Flavor>
                 <Flavor>
                     <FlavorType>FLAVOR_GROWTH</FlavorType>
-                    <iFlavor>15</iFlavor>
+                    <iFlavor>7</iFlavor>
                 </Flavor>
             </Flavors>
         </BuildingInfo>
@@ -841,7 +841,7 @@
                 </Flavor>
                 <Flavor>
                     <FlavorType>FLAVOR_GOLD</FlavorType>
-                    <iFlavor>15</iFlavor>
+                    <iFlavor>7</iFlavor>
                 </Flavor>
             </Flavors>
         </BuildingInfo>
@@ -965,7 +965,7 @@
                 </Flavor>
                 <Flavor>
                     <FlavorType>FLAVOR_MILITARY</FlavorType>
-                    <iFlavor>15</iFlavor>
+                    <iFlavor>7</iFlavor>
                 </Flavor>
             </Flavors>
             <TrainXPRates>
@@ -1032,7 +1032,7 @@
                     <iHappinessChange>-1</iHappinessChange>
                 </BonusHappinessChange>
                 <BonusHappinessChange>
-                    <BonusType>BONUS_MANA_DEATH</BonusType>
+                    <BonusType>BONUS_MANA_ENTROPY</BonusType>
                     <iHappinessChange>-1</iHappinessChange>
                 </BonusHappinessChange>
             </BonusHappinessChanges>
@@ -1180,7 +1180,7 @@
                 </Flavor>
                 <Flavor>
                     <FlavorType>FLAVOR_MILITARY</FlavorType>
-                    <iFlavor>25</iFlavor>
+                    <iFlavor>7</iFlavor>
                 </Flavor>
             </Flavors>
             <TrainXPRates>
@@ -1279,7 +1279,7 @@
                 </Flavor>
                 <Flavor>
                     <FlavorType>FLAVOR_GROWTH</FlavorType>
-                    <iFlavor>15</iFlavor>
+                    <iFlavor>7</iFlavor>
                 </Flavor>
             </Flavors>
         </BuildingInfo>
@@ -1352,7 +1352,7 @@
                 </Flavor>
                 <Flavor>
                     <FlavorType>FLAVOR_GOLD</FlavorType>
-                    <iFlavor>25</iFlavor>
+                    <iFlavor>8</iFlavor>
                 </Flavor>
             </Flavors>
         </BuildingInfo>
@@ -1566,11 +1566,11 @@
                 </Flavor>
                 <Flavor>
                     <FlavorType>FLAVOR_GOLD</FlavorType>
-                    <iFlavor>5</iFlavor>
+                    <iFlavor>6</iFlavor>
                 </Flavor>
                 <Flavor>
                     <FlavorType>FLAVOR_SCIENCE</FlavorType>
-                    <iFlavor>5</iFlavor>
+                    <iFlavor>7</iFlavor>
                 </Flavor>
             </Flavors>
         </BuildingInfo>
@@ -1647,7 +1647,7 @@
                 </Flavor>
                 <Flavor>
                     <FlavorType>FLAVOR_MILITARY</FlavorType>
-                    <iFlavor>5</iFlavor>
+                    <iFlavor>7</iFlavor>
                 </Flavor>
             </Flavors>
             <TrainXPRates>
@@ -1859,7 +1859,7 @@
 				</Flavor>
                 <Flavor>
 					<FlavorType>FLAVOR_GOLD</FlavorType>
-					<iFlavor>10</iFlavor>
+					<iFlavor>1</iFlavor>
 				</Flavor>
 			</Flavors>
 		</BuildingInfo>
@@ -1895,7 +1895,7 @@
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GROWTH</FlavorType>
-					<iFlavor>20</iFlavor>
+					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
 		</BuildingInfo>
@@ -1921,7 +1921,7 @@
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_MILITARY</FlavorType>
-					<iFlavor>20</iFlavor>
+					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
             <iHappiness>1</iHappiness>
@@ -1975,7 +1975,7 @@
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GROWTH</FlavorType>
-					<iFlavor>20</iFlavor>
+					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
 		</BuildingInfo>
@@ -2034,7 +2034,7 @@
 				</Flavor>
                 <Flavor>
 					<FlavorType>FLAVOR_GOLD</FlavorType>
-					<iFlavor>10</iFlavor>
+					<iFlavor>5</iFlavor>
 				</Flavor>
 			</Flavors>
 		</BuildingInfo>
@@ -2072,7 +2072,7 @@
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GOLD</FlavorType>
-					<iFlavor>20</iFlavor>
+					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
 		</BuildingInfo>
@@ -2111,11 +2111,11 @@
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GOLD</FlavorType>
-					<iFlavor>20</iFlavor>
+					<iFlavor>8</iFlavor>
 				</Flavor>
                 <Flavor>
 					<FlavorType>FLAVOR_GROWTH</FlavorType>
-					<iFlavor>20</iFlavor>
+					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
 		</BuildingInfo>
@@ -2132,17 +2132,13 @@
             <bStateReligion>1</bStateReligion>
             <PrereqReligion>RELIGION_COUNCIL_OF_ESUS</PrereqReligion>
 			<iAIWeight>40</iAIWeight>
+            <iDefense>25</iDefense>
 			<iCost>180</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>25</iConquestProb>
 			<iAsset>2</iAsset>
             <iCrime>12</iCrime>
 			<iPower>4</iPower>
-            <CommerceChanges>
-				<iCommerce>-3</iCommerce>
-				<iCommerce>0</iCommerce>
-				<iCommerce>0</iCommerce>
-			</CommerceChanges>
             <iMaintenanceModifier>10</iMaintenanceModifier>
             <PerCrimeTrainXPRates>
 				<TrainXPRate>
@@ -2158,26 +2154,30 @@
 					<fTrainXPRate>0.1</fTrainXPRate>
 				</TrainXPRate>
 			</PerCrimeTrainXPRates>
+            <PerCrimeEffectYieldChanges>
+                <iYield>0</iYield>
+                <iYield>2</iYield>
+                <iYield>0</iYield>
+            </PerCrimeEffectYieldChanges>
 			<PerCrimeTrainXPCaps>
 				<TrainXPCap>
 					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
-					<fTrainXPCap>3</fTrainXPCap>
+					<fTrainXPCap>5</fTrainXPCap>
 				</TrainXPCap>
                 <TrainXPCap>
 					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
-					<fTrainXPCap>3</fTrainXPCap>
+					<fTrainXPCap>5</fTrainXPCap>
 				</TrainXPCap>
                 <TrainXPCap>
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
-					<fTrainXPCap>3</fTrainXPCap>
+					<fTrainXPCap>5</fTrainXPCap>
 				</TrainXPCap>
 			</PerCrimeTrainXPCaps>
-            <FreePromotion>PROMOTION_AMBUSH1</FreePromotion>
 			<fVisibilityPriority>10</fVisibilityPriority>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_MILITARY</FlavorType>
-					<iFlavor>20</iFlavor>
+					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
 		</BuildingInfo>
@@ -2200,11 +2200,11 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>25</iConquestProb>
 			<iAsset>2</iAsset>
-            <iCrime>15</iCrime>
+            <iCrime>10</iCrime>
 			<iPower>4</iPower>
             <iPerCrimeEffectHappy>1</iPerCrimeEffectHappy>
             <PerCrimeEffectCommerceChanges>
-				<iCommerce>0</iCommerce>
+				<iCommerce>1</iCommerce>
 				<iCommerce>2</iCommerce>
 				<iCommerce>0</iCommerce>
 			</PerCrimeEffectCommerceChanges>
@@ -2228,7 +2228,7 @@
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_SCIENCE</FlavorType>
-					<iFlavor>20</iFlavor>
+					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
 		</BuildingInfo>
@@ -2238,6 +2238,7 @@
 			<Type>BUILDING_DRACK_NORELIGION_SCHOOL</Type>
 			<Description>TXT_KEY_BUILDING_DRACK_NORELIGION_SCHOOL</Description>
 			<Civilopedia>TXT_KEY_BUILDING_DRACK_NORELIGION_SCHOOL_PEDIA</Civilopedia>
+            <Help>TXT_KEY_BUILDING_DRACK_NORELIGION_SCHOOL_HELP</Help>
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_DRACK_NORELIGION_SCHOOL</ArtDefineTag>
 			<PrereqTech>TECH_WRITING</PrereqTech>
@@ -2263,7 +2264,7 @@
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GOLD</FlavorType>
-					<iFlavor>20</iFlavor>
+					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
 		</BuildingInfo>

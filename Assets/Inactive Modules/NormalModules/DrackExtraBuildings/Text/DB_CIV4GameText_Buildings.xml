@@ -721,6 +721,10 @@
         <English>Lore</English>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_BUILDING_DRACK_NORELIGION_SCHOOL_HELP</Tag>
+        <English>[ICON_BULLET]Requires no State Religion[NEWLINE][ICON_BULLET]Will be destroyed if a state religion is taken</English>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_DRACKBUILDING_TRENTON_MILL</Tag>
         <English>Trenton Mill</English>
     </TEXT>
