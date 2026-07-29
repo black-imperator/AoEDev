@@ -464,6 +464,7 @@
 	<ElementType name="Help" content="textOnly"/>
 	<ElementType name="iHealth" content="textOnly" dt:type="int"/>
 	<ElementType name="iHappiness" content="textOnly" dt:type="int"/>
+	<ElementType name="iHappyPerMilitaryUnit" content="textOnly" dt:type="int"/>
 	<ElementType name="iMaxAnarchy" content="textOnly" dt:type="int"/>
 	<ElementType name="iUpkeepModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iRelationModifier" content="textOnly" dt:type="int"/>
@@ -486,6 +487,7 @@
 	<ElementType name="iModReligionSpreadChance" content="textOnly" dt:type="int"/>
 	<ElementType name="bBarbarianAlly" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bIgnoreFood" content="textOnly" dt:type="boolean"/><!-- the player does not consume food. Fallow and undying traits (dtesh, frozen, infernal, scions) -->
+	<ElementType name="bIgnoreProduction" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bIgnoreHealth" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bIgnoreHappy" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bInsane" content="textOnly" dt:type="boolean"/>
@@ -727,6 +729,7 @@
 		<element type="iRitualProductionModifier"/>
 		<element type="iMilitaryProductionModifier"/>
 		<element type="iHappiness"/>
+		<element type="iHappyPerMilitaryUnit"/>
 		<element type="iMaxAnarchy"/>
 		<element type="iUpkeepModifier"/>
 		<element type="iRelationModifier"/>
@@ -766,6 +769,7 @@
 <!-- CityPop Cap END -->
 		<element type="bBarbarianAlly"/>
 		<element type="bIgnoreFood"/>
+		<element type="bIgnoreProduction"/>
 		<element type="bIgnoreHealth"/>
 		<element type="bIgnoreHappy"/>
 		<element type="bInsane"/>
@@ -851,6 +855,14 @@
 	</ElementType>
 	<ElementType name="Specialists" content="eltOnly">
 		<element type="Specialist" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="SpecialistArtTag" content="textOnly"/>
+	<ElementType name="SpecialistArtstyle" content="eltOnly">
+		<element type="SpecialistClassType"/>
+		<element type="SpecialistArtTag"/>
+	</ElementType>
+	<ElementType name="SpecialistArtstyles" content="eltOnly">
+		<element type="SpecialistArtstyle" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="iFreeUnits" content="textOnly" dt:type="int"/>
 	<ElementType name="FreeUnitClass" content="eltOnly">
@@ -989,6 +1001,7 @@
 		<element type="Buildings"/>
 		<element type="Units"/>
 		<element type="Specialists"/>
+		<element type="SpecialistArtstyles"/>
 		<element type="Improvements"/>
 		<element type="FreeUnitClasses"/>
 		<element type="FreeBuildingClasses"/>

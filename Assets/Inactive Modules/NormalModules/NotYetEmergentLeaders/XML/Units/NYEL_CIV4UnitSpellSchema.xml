@@ -41,11 +41,16 @@
 	<ElementType name="iExtraImmobileTurns" content="textOnly" dt:type="int"/>
 	<ElementType name="iExtraFortifyTurns" content="textOnly" dt:type="int"/>
 	<ElementType name="iExtraPromotionApply" content="textOnly" dt:type="int"/>
+	<ElementType name="iExtraSummonDuration" content="textOnly" dt:type="int"/>
+	<ElementType name="iExtraSummonNumber" content="textOnly" dt:type="int"/>
+	<ElementType name="ExtraSummonPromotion" content="textOnly"/>
+	<ElementType name="iExtraSummonPromotionApply" content="textOnly" dt:type="int"/>
 	<ElementType name="iMaxApplications" content="textOnly" dt:type="int"/>
 	<ElementType name="bExtraImmuneTeam" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bExtraImmuneNeutral" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bExtraImmuneEnemy" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bExtraPermanent" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bExtraSummonPermanent" content="textOnly" dt:type="boolean"/>
 	
 	<ElementType name="SpellBonus" content="eltOnly" order="many">
 		<element type="iPrereqExtraPower"/>
@@ -57,11 +62,16 @@
 		<element type="iExtraImmobileTurns"/>
 		<element type="iExtraFortifyTurns"/>
 		<element type="iExtraPromotionApply"/>
+		<element type="iExtraSummonDuration"/>
+		<element type="iExtraSummonNumber"/>
+		<element type="ExtraSummonPromotion"/>
+		<element type="iExtraSummonPromotionApply"/>
 		<element type="iMaxApplications"/>
 		<element type="bExtraImmuneTeam"/>
 		<element type="bExtraImmuneNeutral"/>
 		<element type="bExtraImmuneEnemy"/>
 		<element type="bExtraPermanent"/>
+		<element type="bExtraSummonPermanent"/>
 	</ElementType>
 	<ElementType name="SpellBonuses" content="eltOnly">
 		<element type="SpellBonus" minOccurs="0"/>
@@ -157,6 +167,7 @@
 	<ElementType name="SpreadReligion" content="textOnly"/>
 	<ElementType name="CreateUnitType" content="textOnly"/>
 	<ElementType name="iCreateUnitNum" content="textOnly" dt:type="int"/>
+	<ElementType name="iCreateUnitDuration" content="textOnly" dt:type="int"/>
 	<ElementType name="bCopyCastersPromotions" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bPermanentUnitCreate" content="textOnly" dt:type="boolean"/>
 	<ElementType name="CreateUnitPromotion" content="textOnly"/>
@@ -284,6 +295,7 @@
 		<element type="SpreadReligion"/>
 		<element type="CreateUnitType"/>
 		<element type="iCreateUnitNum"/>
+		<element type="iCreateUnitDuration"/>
 		<element type="bCopyCastersPromotions"/>
 		<element type="bPermanentUnitCreate"/>
 		<element type="CreateUnitPromotion"/>

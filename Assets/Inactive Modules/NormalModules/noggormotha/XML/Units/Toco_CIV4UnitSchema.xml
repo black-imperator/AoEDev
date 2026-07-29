@@ -15,6 +15,7 @@
 	<ElementType name="ImprovementName" content="textOnly"/>
 	<ElementType name="iYield" content="textOnly" dt:type="int"/>
 	<ElementType name="iMagicalPower" content="textOnly" dt:type="int"/>
+	<ElementType name="iMinMagicalPower" content="textOnly" dt:type="int"/>
 	<ElementType name="iDominionCapacity" content="textOnly" dt:type="int"/>
 	<ElementType name="TerrainType" content="textOnly"/>
 	<ElementType name="FeatureType" content="textOnly"/>
@@ -1256,8 +1257,6 @@
 	</ElementType>
 	<ElementType name="iWorkRateChange" content="textOnly" dt:type="int"/><!--  Can increase/decrease the Workrate of a Unit. -->
 	<ElementType name="CaptureUnitClass" content="textOnly"/>
-	<ElementType name="iCombatConversionChance" content="textOnly" dt:type="int"/>
-	<ElementType name="iCombatUnitGenerationChance" content="textOnly" dt:type="int"/>
 	<ElementType name="iSlaveGenerationChance" content="textOnly" dt:type="int"/>
 	<ElementType name="iGiftableXP" content="textOnly" dt:type="float"/>
 	<ElementType name="iCombatExtraDuration" content="textOnly" dt:type="int"/>
@@ -1545,6 +1544,8 @@
 	<ElementType name="bPrereqAlive" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bPrereqAliveCapture" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bRace" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bMentalEffect" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bCompanion" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bGraphicalSwap" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bRemovedByCasting" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bRemovedByCombat" content="textOnly" dt:type="boolean"/>
@@ -1738,6 +1739,7 @@
 		<element type="iRangedCombatPercentInBorders"/>
 		<element type="iRangedCombatPercentGlobalCounter"/>
 		<element type="iMagicalPower"/>
+		<element type="iMinMagicalPower"/>
 		<element type="iDominionCapacity"/>
 		<element type="iAsset"/>
 		<element type="iBeakerSacrifice"/>
@@ -1747,10 +1749,8 @@
 		<element type="iCollateralLimitCap"/>
 		<element type="iCollateralLimitBoost"/>
 		<element type="iCollateralTargetsLimit"/>
-		<element type="iCombatConversionChance"/>
 		<element type="iCombatDmgCapBoost"/>
 		<element type="iCombatExtraDuration"/>
-		<element type="iCombatUnitGenerationChance"/>
 		<element type="iLeashRange"/>
 		<element type="iLeashChance"/>
 		<element type="iCommandLimit"/>
@@ -1953,6 +1953,8 @@
 		<element type="bPrereqAlive"/>
 		<element type="bPrereqAliveCapture"/>
 		<element type="bRace"/>
+		<element type="bMentalEffect"/>
+		<element type="bCompanion"/>
 		<element type="bGraphicalSwap"/>
 		<element type="bRemovedByCasting"/>
 		<element type="bRemovedByCombat"/>

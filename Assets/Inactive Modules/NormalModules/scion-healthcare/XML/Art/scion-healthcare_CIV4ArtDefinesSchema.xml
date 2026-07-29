@@ -207,6 +207,18 @@
 	<ElementType name="CivilizationArtInfos" content="eltOnly">
 		<element type="CivilizationArtInfo" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
+	<ElementType name="SpecialistArtstyleInfo" content="eltOnly">
+		<element type="Type"/>
+		<element type="Button"/>
+		<element type="Path"/>
+	</ElementType>
+	<ElementType name="SpecialistArtstyleInfos" content="eltOnly">
+		<element type="SpecialistArtstyleInfo" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="Civ4SpecialistArtstyleInfos" content="eltOnly">
+		<element type="SpecialistArtstyleInfos" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	
 	<ElementType name="LeaderheadArtInfo" content="eltOnly">
 		<element type="Type"/>
 		<element type="Button"/>

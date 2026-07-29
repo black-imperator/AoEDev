@@ -269,60 +269,60 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 			</Units>
-			<Specialists>
-				<Specialist>
+			<SpecialistArtstyles>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_ARTIST</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_BARD_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_BARD_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_CITIZEN</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_CITIZEN_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_CITIZEN_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_ENGINEER</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_ENGINEER_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_ENGINEER_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_GREAT_ARTIST</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_GREAT_BARD_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_GREAT_BARD_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_GREAT_ENGINEER</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_GREAT_ENGINEER_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_GREAT_ENGINEER_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_GREAT_HEALER</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_GREAT_HEALER_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_GREAT_HEALER_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_GREAT_MERCHANT</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_GREAT_MERCHANT_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_GREAT_MERCHANT_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_GREAT_PRIEST</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_GREAT_PRIEST_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_GREAT_PRIEST_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_GREAT_SCIENTIST</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_GREAT_SAGE_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_GREAT_SAGE_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_HEALER</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_HEALER_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_HEALER_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_MERCHANT</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_MERCHANT_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_MERCHANT_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_PRIEST</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_PRIEST_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_PRIEST_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_SCIENTIST</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_SAGE_ELVES</SpecialistType>
-				</Specialist>
-			</Specialists>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_SAGE_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+			</SpecialistArtstyles>
 			<Improvements>
 				<Improvement>
 					<ImprovementClassType>IMPROVEMENTCLASS_FORT</ImprovementClassType>
@@ -647,60 +647,60 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 			</Units>
-			<Specialists>
-				<Specialist>
+			<SpecialistArtstyles>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_ARTIST</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_BARD_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_BARD_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_CITIZEN</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_CITIZEN_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_CITIZEN_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_ENGINEER</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_ENGINEER_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_ENGINEER_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_GREAT_ARTIST</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_GREAT_BARD_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_GREAT_BARD_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_GREAT_ENGINEER</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_GREAT_ENGINEER_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_GREAT_ENGINEER_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_GREAT_HEALER</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_GREAT_HEALER_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_GREAT_HEALER_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_GREAT_MERCHANT</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_GREAT_MERCHANT_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_GREAT_MERCHANT_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_GREAT_PRIEST</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_GREAT_PRIEST_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_GREAT_PRIEST_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_GREAT_SCIENTIST</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_GREAT_SAGE_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_GREAT_SAGE_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_HEALER</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_HEALER_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_HEALER_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_MERCHANT</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_MERCHANT_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_MERCHANT_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_PRIEST</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_PRIEST_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_PRIEST_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_SCIENTIST</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_SAGE_ELVES</SpecialistType>
-				</Specialist>
-			</Specialists>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_SAGE_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+			</SpecialistArtstyles>
 			<Improvements>
 				<Improvement>
 					<ImprovementClassType>IMPROVEMENTCLASS_HOMESTEAD</ImprovementClassType>
@@ -935,60 +935,60 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 			</Units>
-			<Specialists>
-				<Specialist>
+			<SpecialistArtstyles>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_ARTIST</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_BARD_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_BARD_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_CITIZEN</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_CITIZEN_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_CITIZEN_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_ENGINEER</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_ENGINEER_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_ENGINEER_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_GREAT_ARTIST</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_GREAT_BARD_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_GREAT_BARD_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_GREAT_ENGINEER</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_GREAT_ENGINEER_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_GREAT_ENGINEER_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_GREAT_HEALER</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_GREAT_HEALER_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_GREAT_HEALER_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_GREAT_MERCHANT</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_GREAT_MERCHANT_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_GREAT_MERCHANT_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_GREAT_PRIEST</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_GREAT_PRIEST_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_GREAT_PRIEST_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_GREAT_SCIENTIST</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_GREAT_SAGE_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_GREAT_SAGE_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_HEALER</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_HEALER_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_HEALER_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_MERCHANT</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_MERCHANT_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_MERCHANT_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_PRIEST</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_PRIEST_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_PRIEST_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_SCIENTIST</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_SAGE_ELVES</SpecialistType>
-				</Specialist>
-			</Specialists>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_SAGE_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+			</SpecialistArtstyles>
 			<Improvements>
 				<Improvement>
 					<ImprovementClassType>IMPROVEMENTCLASS_COTTAGE</ImprovementClassType>
@@ -1304,60 +1304,60 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 			</Units>
-			<Specialists>
-				<Specialist>
+			<SpecialistArtstyles>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_ARTIST</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_BARD_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_BARD_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_CITIZEN</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_CITIZEN_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_CITIZEN_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_ENGINEER</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_ENGINEER_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_ENGINEER_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_GREAT_ARTIST</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_GREAT_BARD_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_GREAT_BARD_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_GREAT_ENGINEER</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_GREAT_ENGINEER_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_GREAT_ENGINEER_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_GREAT_HEALER</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_GREAT_HEALER_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_GREAT_HEALER_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_GREAT_MERCHANT</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_GREAT_MERCHANT_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_GREAT_MERCHANT_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_GREAT_PRIEST</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_GREAT_PRIEST_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_GREAT_PRIEST_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_GREAT_SCIENTIST</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_GREAT_SAGE_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_GREAT_SAGE_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_HEALER</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_HEALER_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_HEALER_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_MERCHANT</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_MERCHANT_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_MERCHANT_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_PRIEST</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_PRIEST_ELVES</SpecialistType>
-				</Specialist>
-				<Specialist>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_PRIEST_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+				<SpecialistArtstyle>
 					<SpecialistClassType>SPECIALISTCLASS_SCIENTIST</SpecialistClassType>
-					<SpecialistType>ART_DEF_SPECIALIST_SAGE_ELVES</SpecialistType>
-				</Specialist>
-			</Specialists>
+					<SpecialistArtTag>ART_DEF_SPECIALIST_SAGE_ELVES</SpecialistArtTag>
+				</SpecialistArtstyle>
+			</SpecialistArtstyles>
 			<Specialists>
 				<Specialist>
 					<SpecialistClassType>SPECIALISTCLASS_SLAVE</SpecialistClassType>

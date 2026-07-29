@@ -1147,7 +1147,7 @@
 					</ImprovementYields>
 				</ImprovementYieldChange>
 				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_WWORKSHOP_GRIGORI</ImprovementType>
+					<ImprovementType>IMPROVEMENT_WORKSHOP_GRIGORI</ImprovementType>
 					<ImprovementYields>
 						<iYield>0</iYield>
 						<iYield>0</iYield>
