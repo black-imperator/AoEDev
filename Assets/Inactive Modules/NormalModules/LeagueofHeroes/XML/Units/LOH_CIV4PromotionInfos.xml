@@ -171,6 +171,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
+			<bTypeDependency>1</bTypeDependency>
 		     <AndDependencyTypes>
 		        <DependencyType>MODULE_VICIOUSSEAS</DependencyType>
 		     </AndDependencyTypes>
