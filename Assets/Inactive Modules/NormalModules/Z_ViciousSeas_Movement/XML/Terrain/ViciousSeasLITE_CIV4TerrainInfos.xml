@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Michael Curran (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Terrain Infos -->
+<Civ4TerrainInfos xmlns="x-schema:ViciousSeasLITE_CIV4TerrainSchema.xml">
+	<TerrainInfos>
+		<TerrainInfo> <!-- Ocean -->
+			<TerrainClass>TERRAINCLASS_OCEAN</TerrainClass>
+			<Type>TERRAIN_OCEAN</Type>
+			<iMovement>1</iMovement>
+		</TerrainInfo>
+		<TerrainInfo> <!-- Blackwater -->
+			<TerrainClass>TERRAINCLASS_OCEAN</TerrainClass>
+			<Type>TERRAIN_BLACKWATER</Type>
+			<iMovement>1</iMovement>
+		</TerrainInfo>
+	</TerrainInfos>
+</Civ4TerrainInfos>

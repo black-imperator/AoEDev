@@ -1,0 +1,37 @@
+;Name - no need to explain
+;note: one line
+[name]
+Z_ViciousSeas_Movement
+;
+;
+;Version - version of module
+;Note: it have to be number, so only numberic characters and none or one period
+;note: one line
+[version]
+1
+;
+;
+;RifE version - version of RifE for which is this module tested, checked, developed, etc
+;Note: it have to be number, so only numberic characters and none or one period
+;note: one line
+[rifeversion]
+386
+;
+;
+;Author - you
+;note: one line
+[author]
+Tikumara
+;
+;
+;Short description - text showed in contect menu
+;note: one line
+[shortdesc]
+Returns movement to default for ViciousSeas
+;
+;
+;Description - text showed in message box
+;note: can be multiline
+[desc]
+Reverts the changes ViciousSeas made to movement and ocean type movement bonuses for water units, animals, and thopters.
+Ship Crew and tech vision range remain the same as ViciousSeas.

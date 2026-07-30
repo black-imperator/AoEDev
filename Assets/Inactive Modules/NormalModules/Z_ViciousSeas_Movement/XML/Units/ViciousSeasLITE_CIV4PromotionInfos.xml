@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!-- Formatted by Xienwolf -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Promotion Infos -->
+<Civ4PromotionInfos xmlns="x-schema:ViciousSeasLITE_CIV4UnitSchema.xml">
+	<PromotionInfos>
+		<PromotionInfo>		<!-- Longship -->
+			<Type>PROMOTION_LONGSHIP</Type>
+			<iMovesChange>2</iMovesChange>
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_JOTNAR</DependencyType>
+		     </AndDependencyTypes>
+		</PromotionInfo>
+	</PromotionInfos>
+</Civ4PromotionInfos>

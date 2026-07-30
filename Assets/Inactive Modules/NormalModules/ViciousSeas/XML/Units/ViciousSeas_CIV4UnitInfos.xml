@@ -2076,6 +2076,9 @@
 			<Class>UNITCLASS_KNIGHT</Class>
 			<Type>UNIT_FAE_DRAGON_RIDER</Type>
 			<iMoves>2</iMoves>
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_DRACKAOSNISIRA</DependencyType>
+		     </AndDependencyTypes>
 		</UnitInfo>
 		<UnitInfo>		<!--Flying Patrian -->
 			<Class>UNITCLASS_THE_FLYING_PATRIAN</Class>
