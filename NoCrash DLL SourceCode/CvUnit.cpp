@@ -20888,7 +20888,7 @@ bool CvUnit::canAcquirePromotion(PromotionTypes ePromotion,bool bMustMaintainChe
 /*************************************************************************************************/
 	if ((GC.getPromotionInfo(ePromotion).isPrereqInCity() || GC.getPromotionInfo(ePromotion).getNumPrereqBuildingORs() > 0 || GC.getPromotionInfo(ePromotion).getNumPrereqBuildingANDs() > 0))
 	{
-		if (plot() == NULL || !plot()->isCity()|| !(plot()->getImprovementType()!=NO_IMPROVEMENT && GC.getImprovementInfo((ImprovementTypes)plot()->getImprovementType()).isActsAsCity()))
+		if (plot() == NULL || !(plot()->isCity()|| (plot()->getImprovementType()!=NO_IMPROVEMENT && GC.getImprovementInfo((ImprovementTypes)plot()->getImprovementType()).isActsAsCity())))
 		{
 			return false;
 		}
