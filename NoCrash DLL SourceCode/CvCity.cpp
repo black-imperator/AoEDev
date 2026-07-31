@@ -567,6 +567,13 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 /*************************************************************************************************/
 /**	People's Choice							END													**/
 /*************************************************************************************************/
+	for (int iI = 0; iI < GC.getNumBonusInfos(); iI++)
+	{
+		if (GET_PLAYER(getOwner()).getFreeBonus(iI) != 0)
+		{
+			changeNumBonuses((BonusTypes)iI, GET_PLAYER(getOwner()).getFreeBonus(iI));
+		}
+	}
 	AI_init();
 }
 

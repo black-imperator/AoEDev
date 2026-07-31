@@ -11901,6 +11901,11 @@ void CvPlayer::changeFreeBonus(int fChange, int iI)
 	{
 		m_paiFreeBonus[iI] += fChange;
 	}
+	int iLoop;
+	for (CvCity* pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+	{
+		pLoopCity->changeNumBonuses((BonusTypes)iI, fChange);
+	}
 }
 void CvPlayer::changeAvailableBuild(int fChange, int iI)
 {
