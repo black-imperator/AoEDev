@@ -790,6 +790,6 @@
                 <AudioRunTypeLoop />
                 <AudioRunTypeEnd />
             </AudioRunSounds>
-        </UnitArtInfo> <!-- End Unit Style -->
+        </UnitArtInfo> 
     </UnitArtInfos>
 </Civ4ArtDefines>

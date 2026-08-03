@@ -2624,10 +2624,10 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_BAR_CRIME</Tag>
 		<English>[ICON_CRIME] : %d1 (+ %d2/turn)</English>
-		<French>Taux de criminalité : %d1(+ %d2/turn)</French>
-		<German>Verbrechensrate : %d1(+ %d2/turn)</German>
-		<Italian>Crime Rate : %d1(+ %d2/turn)</Italian>
-		<Spanish>Índice de Criminalidad : %d1(+ %d2/turn)</Spanish>
+		<French>Taux de criminalité : %d1 (+ %d2/turn)</French>
+		<German>Verbrechensrate : %d1 (+ %d2/turn)</German>
+		<Italian>Crime Rate : %d1 (+ %d2/turn)</Italian>
+		<Spanish>Índice de Criminalidad : %d1 (+ %d2/turn)</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_TRAIT</Tag>

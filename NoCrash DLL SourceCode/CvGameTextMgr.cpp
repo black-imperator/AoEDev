@@ -9958,6 +9958,7 @@ void CvGameTextMgr::parseLeaderTraits(CvWStringBuffer &szHelpString, LeaderHeadT
 			}
 		}
 		bool bFirst = true;
+		bool bAdaptive = false;
 		for (int iI = 0; iI < GC.getNumTraitInfos(); ++iI)
 		{
 			if (GC.getLeaderHeadInfo(eLeader).hasTrait(iI))
@@ -9974,8 +9975,19 @@ void CvGameTextMgr::parseLeaderTraits(CvWStringBuffer &szHelpString, LeaderHeadT
 					bFirst = false;
 				}
 				parseTraits(szHelpString, ((TraitTypes)iI), eCivilization, bDawnOfMan);
+				if (GC.getTraitInfo((TraitTypes)iI).isAdaptive())
+				{
+					bAdaptive = true;
+				}
 			}
 		}
+		if (bAdaptive)
+		{
+			szHelpString.append(NEWLINE);
+			szHelpString.append(gDLL->getText("TXT_KEY_ADAPTIVE_PERMANENT_TRAIT", GC.getTraitInfo((TraitTypes)GC.getLeaderHeadInfo(eLeader).getPermanentTrait()).getDescription()));
+
+		}
+
 	}
 	else
 	{
@@ -10014,6 +10026,12 @@ void CvGameTextMgr::parseLeaderTraits(CvWStringBuffer &szHelpString, PlayerTypes
 			{
 				parseTraits(szHelpString, ((TraitTypes)iI), eCivilization, false);
 			}
+		}
+		if (GET_PLAYER(ePlayer).isAdaptive())
+		{
+			szHelpString.append(NEWLINE);
+			szHelpString.append(gDLL->getText("TXT_KEY_ADAPTIVE_PERMANENT_TRAIT", GC.getTraitInfo((TraitTypes)GC.getLeaderHeadInfo(eLeader).getPermanentTrait()).getDescription()));
+
 		}
 	}
 	else

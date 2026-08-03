@@ -3825,6 +3825,17 @@
 			<iMercenaryWeight>0</iMercenaryWeight>
 		</UnitClassInfo>
 		<UnitClassInfo>
+			<Type>UNITCLASS_HELL_WORM</Type>
+			<Description>TXT_KEY_UNIT_HELL_WORM</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<bUnique>1</bUnique>
+			<DefaultUnit>UNIT_HELL_WORM</DefaultUnit>
+			<iMercenaryWeight>0</iMercenaryWeight>
+		</UnitClassInfo>
+		<UnitClassInfo>
 			<Type>UNITCLASS_MOBILE_FORTRESS</Type>
 			<Description>TXT_KEY_UNIT_MOBILE_FORTRESS</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>

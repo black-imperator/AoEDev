@@ -34737,6 +34737,29 @@
 			<SelectionSound>AS3D_WORMLIONFIDC</SelectionSound>
 			<ActionSound>AS3D_WORMLIONATTKC</ActionSound>
 		</UnitArtInfo>
+		<UnitArtInfo> <!-- UNIT_HELL_WORM -->
+			<Type>ART_DEF_UNIT_HELL_WORM</Type>
+			<Button>Art/Interface/Buttons/Units/wyrm.dds</Button>
+			<fScale>.55</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/animal/hellworm/sandworm.nif</NIF>
+			<KFM>Art/Units/animal/hellworm/marshworm.kfm</KFM><!-- We need a kfm editor (not just a hex editor) to change "sandworm.nif" into "marshworm.nif" before we can update the name of the nif file -->
+			<SHADERNIF>Art/Units/animal/hellworm/sandworm.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>Bone</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>1.5</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds/>
+			<SelectionSound>AS3D_WORMLIONFIDC</SelectionSound>
+			<ActionSound>AS3D_WORMLIONATTKC</ActionSound>
+		</UnitArtInfo>
 		<UnitArtInfo>  <!-- UNIT_GUARDIAN_VINES -->
 			<Type>ART_DEF_UNIT_GUARDIAN_VINES</Type>
 			<Button>Art/Interface/Buttons/Units/Guardian Vines.dds</Button>

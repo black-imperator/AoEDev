@@ -8165,6 +8165,10 @@
 					<UnitType>UNIT_MARSH_WORM</UnitType>
 				</Unit>
 				<Unit>
+					<UnitClassType>UNITCLASS_HELL_WORM</UnitClassType>
+					<UnitType>UNIT_HELL_WORM</UnitType>
+				</Unit>
+				<Unit>
 					<UnitClassType>UNITCLASS_SEA_SERPENT</UnitClassType>
 					<UnitType>UNIT_SEA_SERPENT</UnitType>
 				</Unit>
@@ -8436,6 +8440,10 @@
 				<Unit>
 					<UnitClassType>UNITCLASS_FORT_COMMANDER</UnitClassType>
 					<UnitType>UNIT_ZABULUS</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_HELL_WORM</UnitClassType>
+					<UnitType>UNIT_HELL_WORM</UnitType>
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_TRADESHIP</UnitClassType>

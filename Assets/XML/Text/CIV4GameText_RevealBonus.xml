@@ -1549,11 +1549,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>INTERFACE_CRIME_PER_TURN</Tag>
-		<English>%d1 per Turn</English>
-		<French>(%d1 par tour)</French>
-		<German>%d1 per Turn</German>
-		<Italian>%d1 per Turn</Italian>
-		<Spanish>%d1 per Turn</Spanish>
+		<English> (%d1 per Turn)</English>
+		<French> (%d1 par tour)</French>
+		<German> (%d1 per Turn)</German>
+		<Italian> (%d1 per Turn)</Italian>
+		<Spanish> (%d1 per Turn)</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_HELP_CRIME_POPULATION</Tag>
@@ -13924,12 +13924,12 @@ Your unit is even more surprised to realise there are two figures standing besid
 		<Spanish>Your traits have changed: %s1, %s2.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_</Tag>
-		<English></English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
+		<Tag>TXT_KEY_ADAPTIVE_PERMANENT_TRAIT</Tag>
+		<English>[ICON_BULLET]%s1 will not be lost when Adaptive triggers.</English>
+		<French>[ICON_BULLET]%s1 will not be lost when Adaptive triggers.</French>
+		<German>[ICON_BULLET]%s1 will not be lost when Adaptive triggers.</German>
+		<Italian>[ICON_BULLET]%s1 will not be lost when Adaptive triggers.</Italian>
+		<Spanish>[ICON_BULLET]%s1 will not be lost when Adaptive triggers.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_</Tag>
