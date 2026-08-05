@@ -1406,15 +1406,15 @@
 			<VictoryThresholds/>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
-			<Type>BUILDINGCLASS_THE_DRAGONS_HOARD</Type>
-			<Description>TXT_KEY_BUILDING_THE_DRAGONS_HOARD</Description>
+			<Type>BUILDINGCLASS_THE_BLOOMSEED</Type>
+			<Description>TXT_KEY_BUILDING_THE_BLOOMSEED</Description>
 			<iMaxGlobalInstances>1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
 			<iExtraPlayerInstances>0</iExtraPlayerInstances>
 			<bNoLimit>0</bNoLimit>
 			<bMonument>0</bMonument>
-			<DefaultBuilding>BUILDING_THE_DRAGONS_HOARD</DefaultBuilding>
+			<DefaultBuilding>BUILDING_THE_BLOOMSEED</DefaultBuilding>
 			<VictoryThresholds/>
 		</BuildingClassInfo>
 		<BuildingClassInfo>

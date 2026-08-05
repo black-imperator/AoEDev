@@ -9730,7 +9730,7 @@
 			<CreateBuildingType>BUILDING_THE_DRAGON_TEAR_FOUNTAIN</CreateBuildingType>
 			<bAbility>1</bAbility>
 			<Effect>EFFECT_SPELL1</Effect>
-			<Sound>AS3D_SPELL_TRAIN</Sound>
+			<Sound>AS3D_SPELL_BLESS</Sound>
 			<bGraphicalOnly>1</bGraphicalOnly>
 			<Button>Art/Interface/Buttons/Equipment/DragonTears.dds</Button>
 		</SpellInfo>
@@ -9751,7 +9751,7 @@
 			<CreateBuildingType>BUILDING_THE_TROVE_OF_SHELLS</CreateBuildingType>
 			<bAbility>1</bAbility>
 			<Effect>EFFECT_SPELL1</Effect>
-			<Sound>AS3D_SPELL_TRAIN</Sound>
+			<Sound>AS3D_SPELL_BLESS</Sound>
 			<bGraphicalOnly>1</bGraphicalOnly>
 			<Button>Art/Interface/Buttons/Equipment/TroveofShells.dds</Button>
 		</SpellInfo>
@@ -9772,7 +9772,7 @@
 			<CreateBuildingType>BUILDING_THE_CHALICE_OF_SACRIFICE</CreateBuildingType>
 			<bAbility>1</bAbility>
 			<Effect>EFFECT_SPELL1</Effect>
-			<Sound>AS3D_SPELL_TRAIN</Sound>
+			<Sound>AS3D_SPELL_SACRIFICE</Sound>
 			<bGraphicalOnly>1</bGraphicalOnly>
 			<Button>Art/Interface/Buttons/Equipment/ChaliceofBlood.dds</Button>
 		</SpellInfo>
@@ -9793,9 +9793,30 @@
 			<CreateBuildingType>BUILDING_THE_MISERY_STONE</CreateBuildingType>
 			<bAbility>1</bAbility>
 			<Effect>EFFECT_SPELL1</Effect>
-			<Sound>AS3D_SPELL_TRAIN</Sound>
+			<Sound>AS3D_SPELL_REVOLT</Sound>
 			<bGraphicalOnly>1</bGraphicalOnly>
 			<Button>Art/Interface/Buttons/Equipment/MiseryStone.dds</Button>
+		</SpellInfo>
+		<SpellInfo>			<!-- Drop The Seed of the First Grove -->
+			<Type>SPELL_DROP_BLOOMSEED</Type>
+			<Description>TXT_KEY_SPELL_DROP_BLOOMSEED</Description>
+			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
+			<PromotionPrereq1>PROMOTION_BLOOMSEED</PromotionPrereq1>
+			<bAllowAI>1</bAllowAI>
+			<bInBordersOnly>1</bInBordersOnly>
+			<bInCityOnly>1</bInCityOnly>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+			<RemovePromotions>
+				<RemovePromotion>PROMOTION_BLOOMSEED</RemovePromotion>
+			</RemovePromotions>
+			<bBuffCasterOnly>1</bBuffCasterOnly>
+			<CreateBuildingType>BUILDING_THE_BLOOMSEED</CreateBuildingType>
+			<bAbility>1</bAbility>
+			<Effect>EFFECT_SPELL1</Effect>
+			<Sound>AS3D_SPELL_BLOOM</Sound>
+			<bGraphicalOnly>1</bGraphicalOnly>
+			<Button>Art/Interface/Buttons/Equipment/BloomSeed.dds</Button>
 		</SpellInfo>
 		<SpellInfo>			<!-- Drop The Heron Throne -->
 			<Type>SPELL_DROP_HERON_THRONE</Type>
@@ -10478,6 +10499,27 @@
 			<Sound>AS3D_SPELL_TRAIN</Sound>
 			<bGraphicalOnly>1</bGraphicalOnly>
 			<Button>Art/Interface/Buttons/Equipment/Miserystone.dds</Button>
+		</SpellInfo>
+		<SpellInfo>			<!-- Take Seed of the First Grove (Building) -->
+			<Type>SPELL_TAKE_BLOOMSEED_BUILDING</Type>
+			<Description>TXT_KEY_SPELL_TAKE_BLOOMSEED</Description>
+			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
+			<Help>TXT_KEY_SPELL_TAKE_EQUIPMENT_HELP</Help>
+			<BuildingPrereq>BUILDING_THE_BLOOMSEED</BuildingPrereq>
+			<bInBordersOnly>1</bInBordersOnly>
+			<bInCityOnly>1</bInCityOnly>
+			<bHasCasted>1</bHasCasted>
+			<AddPromotions>
+				<AddPromotion>PROMOTION_BLOOMSEED</AddPromotion>
+			</AddPromotions>
+			<bBuffCasterOnly>1</bBuffCasterOnly>
+			<bAbility>1</bAbility>
+			<PyResult>spellTakeEquipmentBuilding(pCaster,'BUILDING_THE_BLOOMSEED')</PyResult>
+			<PyRequirement>reqTakeEquipmentBuilding(pCaster,'BUILDING_THE_BLOOMSEED')</PyRequirement>
+			<Effect>EFFECT_SPELL1</Effect>
+			<Sound>AS3D_SPELL_TRAIN</Sound>
+			<bGraphicalOnly>1</bGraphicalOnly>
+			<Button>Art/Interface/Buttons/Equipment/BloomSeed.dds</Button>
 		</SpellInfo>
 		<SpellInfo>			<!-- Take Heron Throne (Building) -->
 			<Type>SPELL_TAKE_HERON_THRONE_BUILDING</Type>

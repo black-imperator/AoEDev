@@ -2640,6 +2640,21 @@
 			</DamageTypeResists>
 			<iMovesChange>-1</iMovesChange>
 		</PromotionInfo>
+		<PromotionInfo>		<!-- Seed of the First Grove -->
+			<Type>PROMOTION_BLOOMSEED</Type>
+			<Description>TXT_KEY_EQUIPMENT_BLOOMSEED</Description>
+			<Civilopedia>TXT_KEY_EQUIPMENT_BLOOMSEED_PEDIA</Civilopedia>
+			<Help>TXT_KEY_EQUIPMENT_BLOOMSEED_HELP</Help>
+			<Button>Art/Interface/Buttons/Equipment/BloomSeed.dds</Button>
+			<bEquipment>1</bEquipment>
+			<BonusAffinities>
+				<BonusAffinity>
+					<BonusType>BONUS_MANA_LIFE</BonusType>
+					<iAffinity>1</iAffinity>
+				</BonusAffinity>
+			</BonusAffinities>
+			<PyPerTurn>effectAutoBloomSeed(pCaster)</PyPerTurn>
+		</PromotionInfo>
 		<PromotionInfo>		<!-- Heron Throne -->
 			<Type>PROMOTION_HERON_THRONE</Type>
 			<Description>TXT_KEY_BUILDING_HERON_THRONE</Description>

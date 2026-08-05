@@ -12031,6 +12031,43 @@ Put there by Agares himself, these stones radiate misery and attract wraiths lik
 Put there by Agares himself, these stones radiate misery and attract wraiths like moths to a flame.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_BLOOMSEED</Tag>
+		<English>Seed of the First Grove</English>
+		<French>Seed of the First Grove</French>
+		<German>Seed of the First Grove</German>
+		<Italian>Seed of the First Grove</Italian>
+		<Spanish>Seed of the First Grove</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BLOOMSEED</Tag>
+		<English>The Heart of Sucellus</English>
+		<French>The Heart of Sucellus</French>
+		<German>The Heart of Sucellus</German>
+		<Italian>The Heart of Sucellus</Italian>
+		<Spanish>The Heart of Sucellus</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_BLOOMSEED_PEDIA</Tag>
+		<English>A seed from the very first forest of Sucellus, when gods still walked this land.
+The seed waits patiently for the chance to bloom with life.</English>
+		<French>A seed from the very first forest of Sucellus, when gods still walked this land.
+The seed waits patiently for the chance to bloom with life.</French>
+		<German>A seed from the very first forest of Sucellus, when gods still walked this land.
+The seed waits patiently for the chance to bloom with life.</German>
+		<Italian>A seed from the very first forest of Sucellus, when gods still walked this land.
+The seed waits patiently for the chance to bloom with life.</Italian>
+		<Spanish>A seed from the very first forest of Sucellus, when gods still walked this land.
+The seed waits patiently for the chance to bloom with life.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_BLOOMSEED_HELP</Tag>
+		<English>[ICON_BULLET]Creates a New Forest, a Jungle, or Kelp on this tile every turn</English>
+		<French>[ICON_BULLET]Creates a New Forest, a Jungle, or Kelp on this tile every turn</French>
+		<German>[ICON_BULLET]Creates a New Forest, a Jungle, or Kelp on this tile every turn</German>
+		<Italian>[ICON_BULLET]Creates a New Forest, a Jungle, or Kelp on this tile every turn</Italian>
+		<Spanish>[ICON_BULLET]Creates a New Forest, a Jungle, or Kelp on this tile every turn</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_SPELL_DROP_DRAGONS_TEARS</Tag>
 		<English>Drops the Vial of Dragons Tears</English>
 		<French>Drops the Vial of Dragons Tears</French>
@@ -12093,6 +12130,22 @@ Put there by Agares himself, these stones radiate misery and attract wraiths lik
 		<German>Take the Misery Stone</German>
 		<Italian>Take the Misery Stone</Italian>
 		<Spanish>Take the Misery Stone</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_TAKE_BLOOMSEED</Tag>
+		<English>Take the Seed of the First Grove</English>
+		<French>Take the Seed of the First Grove</French>
+		<German>Take the Seed of the First Grove</German>
+		<Italian>Take the Seed of the First Grove</Italian>
+		<Spanish>Take the Seed of the First Grove</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_DROP_BLOOMSEED</Tag>
+		<English>Drop the Seed of the First Grove</English>
+		<French>Drop the Seed of the First Grove</French>
+		<German>Drop the Seed of the First Grove</German>
+		<Italian>Drop the Seed of the First Grove</Italian>
+		<Spanish>Drop the Seed of the First Grove</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_KEZEF</Tag>

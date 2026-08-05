@@ -11425,7 +11425,53 @@ def spellBloom(caster):
 	elif iTerrain == getInfoType('TERRAIN_TAIGA'):
 		pPlot.setFeatureType(getInfoType('FEATURE_FOREST_NEW'), -1)
 	elif iTerrain == getInfoType('TERRAIN_MARSH'):
+		pPlot.setFeatureType(getInfoType('FEATURE_JUNGLE'), -1)
+
+def effectAutoBloomSeed(caster):
+	pPlot = caster.plot()
+	iFeature = pPlot.getFeatureType()
+	if iFeature == getinfoType('FEATURE_FOREST_ANCIENT):
+		return
+	if iFeature == getinfoType('FEATURE_FOREST):
+		return
+	if iFeature == getinfoType('FEATURE_KELP_FOREST):
+		return
+	if iFeature == getinfoType('FEATURE_JUNGLE):
+		return
+	if iFeature == getinfoType('FEATURE_OASIS):
+		return
+	if iFeature == getinfoType('FEATURE_FOREST_ANCIENT):
+		return
+	if iFeature == getinfoType('FEATURE_VOLCANO):
+		return
+	if iFeature == getinfoType('FEATURE_FOREST_ANCIENT):
+		return
+	if iFeature == getinfoType('FEATURE_REEFS):
+		return
+	if iFeature == getinfoType('FEATURE_FLOOD_PLAINS):
+		return
+	if iFeature == getinfoType('FEATURE_FOREST_NEW):
+		return
+	spellBloomSeed(caster)
+
+def spellBloomSeed(caster):
+	pPlot = caster.plot()
+	iTerrain = pPlot.getTerrainType()
+	if iTerrain == getInfoType('TERRAIN_TUNDRA'):
 		pPlot.setFeatureType(getInfoType('FEATURE_FOREST_NEW'), -1)
+	elif iTerrain == getInfoType('TERRAIN_GRASS'):
+		pPlot.setFeatureType(getInfoType('FEATURE_FOREST_NEW'), -1)
+	elif iTerrain == getInfoType('TERRAIN_PLAINS'):
+		pPlot.setFeatureType(getInfoType('FEATURE_FOREST_NEW'), -1)
+	elif iTerrain == getInfoType('TERRAIN_TAIGA'):
+		pPlot.setFeatureType(getInfoType('FEATURE_FOREST_NEW'), -1)
+	elif iTerrain == getInfoType('TERRAIN_MARSH'):
+		pPlot.setFeatureType(getInfoType('FEATURE_FOREST_NEW'), -1)
+	elif iTerrain == getInfoType('TERRAIN_COAST'):
+		pPlot.setFeatureType(getInfoType('FEATURE_KELP'), -1)
+	elif iTerrain == getInfoType('TERRAIN_OCEAN'):
+		pPlot.setFeatureType(getInfoType('FEATURE_KELP'), -1)
+	
 # *******************
 # Mekara V2 Python: 2025-04-13
 #
@@ -13491,6 +13537,8 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 	iUCSettler		= gc.getInfoTypeForString("UNITCLASS_SETTLER")
 	if iCiv == gc.getInfoTypeForString("CIVILIZATION_DTESH"):
 		iUCSettler	= gc.getInfoTypeForString("UNITCLASS_VESSEL_DTESH")
+	if iCiv == gc.getInfoTypeForString("CIVILIZATION_SCIONS"):
+		iUCSettler	= gc.getInfoTypeForString("UNITCLASS_AWAKENED")
 	# we will leave t3 as -1 for now
 	iUCDisciple		= -1
 	iUCMeleeT3		= -1
