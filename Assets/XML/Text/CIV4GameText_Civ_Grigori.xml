@@ -54,9 +54,9 @@ The common folk and would-be heroes form a kingdom safe from gods.
 [ICON_BULLET]Adventurers: The Adventurer great person is able to upgrade into any unit type and comes with the powerful Hero promotion. The Greenhorn specialist also gives Adventurer points.
 [ICON_BULLET]Luonnotar: The Great Luonnotar is a Great Prophet who can found an academy or settle in the city to provide unit training XP and city defence instead of gold and hammers, in addition to the other Great Prophet abilities. The Apostate specialist is also able to train units and give city defence, at the cost of currency.
 [ICON_BULLET]Agnostic: The Grigori follow the teachings of Cassiel and the Luonnotar and do not follow any religion; instead, they walk either the path of personal freedom(Adventurers) or the protection of that freedom(Apostates).
-[ICON_BULLET]Decentralised: Grigori cities only work the first ring of tiles and have higher upkeep costs; they also have weaker improvements that give free Volunteer specialists, and gain the majority of their production from their forts (Commune Settlements), which supply cities from far away and can defend themselves with Freefolk Militia.
+[ICON_BULLET]Decentralised: Grigori cities only work the first ring of tiles and have higher upkeep costs; they also have weaker improvements that give free Volunteer specialists, and gain the majority of their production from their forts (Commune Settlements), which supply cities from far away with the commanders [LINK=PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE]Commune Tax - Meagre[\LINK], and can defend themselves with Freefolk Militia.
 [ICON_BULLET]Growth: Multiple mechanics for the Grigori grow with investment, such as: 
-Commune Settlements send higher yields when appropriate tech is researched (Trade+Construction+Code of Laws for T2, and Guilds, Engineering, Feudalism for T3). 
+Commune Settlements send higher yields from the commander's promotion when appropriate tech is researched (Trade+Construction+Code of Laws for [LINK=PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE2]Commune Tax - Moderate[\LINK], and Guilds, Engineering, Feudalism for [LINK=PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE3]Commune Tax - Bountiful[\LINK]). 
 Volunteers from improvements gain additional yields from the tech tree. 
 Greenhorn and Apostate specialists improve each other; the more of both of them you have, the better they both perform.
 
@@ -68,13 +68,11 @@ The common folk and would-be heroes form a kingdom safe from gods.
 [ICON_BULLET]Adventurers: The Adventurer great person is able to upgrade into any unit type and comes with the powerful Hero promotion. The Greenhorn specialist also gives Adventurer points.
 [ICON_BULLET]Luonnotar: The Great Luonnotar is a Great Prophet who can found an academy or settle in the city to provide unit training XP and city defence instead of gold and hammers, in addition to the other Great Prophet abilities. The Apostate specialist is also able to train units and give city defence, at the cost of currency.
 [ICON_BULLET]Agnostic: The Grigori follow the teachings of Cassiel and the Luonnotar and do not follow any religion; instead, they walk either the path of personal freedom(Adventurers) or the protection of that freedom(Apostates).
-[ICON_BULLET]Decentralised: Grigori cities only work the first ring of tiles and have higher upkeep costs; they also have weaker improvements that give free Volunteer specialists, and gain the majority of their production from their forts (Commune Settlements), which supply cities from far away and can defend themselves with Freefolk Militia.
+[ICON_BULLET]Decentralised: Grigori cities only work the first ring of tiles and have higher upkeep costs; they also have weaker improvements that give free Volunteer specialists, and gain the majority of their production from their forts (Commune Settlements), which supply cities from far away with the commanders [LINK=PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE]Commune Tax - Meagre[\LINK], and can defend themselves with Freefolk Militia.
 [ICON_BULLET]Growth: Multiple mechanics for the Grigori grow with investment, such as: 
-Commune Settlements send higher yields when appropriate tech is researched (Trade+Construction+Code of Laws for T2, and Guilds, Engineering, Feudalism for T3). 
+Commune Settlements send higher yields from the commander's promotion when appropriate tech is researched (Trade+Construction+Code of Laws for [LINK=PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE2]Commune Tax - Moderate[\LINK], and Guilds, Engineering, Feudalism for [LINK=PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE3]Commune Tax - Bountiful[\LINK]). 
 Volunteers from improvements gain additional yields from the tech tree. 
-Greenhorn and Apostate specialists improve each other; the more of both of them you have, the better they both perform.
-
-</French>
+Greenhorn and Apostate specialists improve each other; the more of both of them you have, the better they both perform.</French>
 		<German>Complexity: Advanced.
 The common folk and would-be heroes form a kingdom safe from gods.
 
@@ -82,13 +80,11 @@ The common folk and would-be heroes form a kingdom safe from gods.
 [ICON_BULLET]Adventurers: The Adventurer great person is able to upgrade into any unit type and comes with the powerful Hero promotion. The Greenhorn specialist also gives Adventurer points.
 [ICON_BULLET]Luonnotar: The Great Luonnotar is a Great Prophet who can found an academy or settle in the city to provide unit training XP and city defence instead of gold and hammers, in addition to the other Great Prophet abilities. The Apostate specialist is also able to train units and give city defence, at the cost of currency.
 [ICON_BULLET]Agnostic: The Grigori follow the teachings of Cassiel and the Luonnotar and do not follow any religion; instead, they walk either the path of personal freedom(Adventurers) or the protection of that freedom(Apostates).
-[ICON_BULLET]Decentralised: Grigori cities only work the first ring of tiles and have higher upkeep costs; they also have weaker improvements that give free Volunteer specialists, and gain the majority of their production from their forts (Commune Settlements), which supply cities from far away and can defend themselves with Freefolk Militia.
+[ICON_BULLET]Decentralised: Grigori cities only work the first ring of tiles and have higher upkeep costs; they also have weaker improvements that give free Volunteer specialists, and gain the majority of their production from their forts (Commune Settlements), which supply cities from far away with the commanders [LINK=PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE]Commune Tax - Meagre[\LINK], and can defend themselves with Freefolk Militia.
 [ICON_BULLET]Growth: Multiple mechanics for the Grigori grow with investment, such as: 
-Commune Settlements send higher yields when appropriate tech is researched (Trade+Construction+Code of Laws for T2, and Guilds, Engineering, Feudalism for T3). 
+Commune Settlements send higher yields from the commander's promotion when appropriate tech is researched (Trade+Construction+Code of Laws for [LINK=PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE2]Commune Tax - Moderate[\LINK], and Guilds, Engineering, Feudalism for [LINK=PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE3]Commune Tax - Bountiful[\LINK]). 
 Volunteers from improvements gain additional yields from the tech tree. 
-Greenhorn and Apostate specialists improve each other; the more of both of them you have, the better they both perform.
-
-</German>
+Greenhorn and Apostate specialists improve each other; the more of both of them you have, the better they both perform.</German>
 		<Italian>Complexity: Advanced.
 The common folk and would-be heroes form a kingdom safe from gods.
 
@@ -96,13 +92,11 @@ The common folk and would-be heroes form a kingdom safe from gods.
 [ICON_BULLET]Adventurers: The Adventurer great person is able to upgrade into any unit type and comes with the powerful Hero promotion. The Greenhorn specialist also gives Adventurer points.
 [ICON_BULLET]Luonnotar: The Great Luonnotar is a Great Prophet who can found an academy or settle in the city to provide unit training XP and city defence instead of gold and hammers, in addition to the other Great Prophet abilities. The Apostate specialist is also able to train units and give city defence, at the cost of currency.
 [ICON_BULLET]Agnostic: The Grigori follow the teachings of Cassiel and the Luonnotar and do not follow any religion; instead, they walk either the path of personal freedom(Adventurers) or the protection of that freedom(Apostates).
-[ICON_BULLET]Decentralised: Grigori cities only work the first ring of tiles and have higher upkeep costs; they also have weaker improvements that give free Volunteer specialists, and gain the majority of their production from their forts (Commune Settlements), which supply cities from far away and can defend themselves with Freefolk Militia.
+[ICON_BULLET]Decentralised: Grigori cities only work the first ring of tiles and have higher upkeep costs; they also have weaker improvements that give free Volunteer specialists, and gain the majority of their production from their forts (Commune Settlements), which supply cities from far away with the commanders [LINK=PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE]Commune Tax - Meagre[\LINK], and can defend themselves with Freefolk Militia.
 [ICON_BULLET]Growth: Multiple mechanics for the Grigori grow with investment, such as: 
-Commune Settlements send higher yields when appropriate tech is researched (Trade+Construction+Code of Laws for T2, and Guilds, Engineering, Feudalism for T3). 
+Commune Settlements send higher yields from the commander's promotion when appropriate tech is researched (Trade+Construction+Code of Laws for [LINK=PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE2]Commune Tax - Moderate[\LINK], and Guilds, Engineering, Feudalism for [LINK=PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE3]Commune Tax - Bountiful[\LINK]). 
 Volunteers from improvements gain additional yields from the tech tree. 
-Greenhorn and Apostate specialists improve each other; the more of both of them you have, the better they both perform.
-
-</Italian>
+Greenhorn and Apostate specialists improve each other; the more of both of them you have, the better they both perform.</Italian>
 		<Spanish>Complexity: Advanced.
 The common folk and would-be heroes form a kingdom safe from gods.
 
@@ -110,13 +104,11 @@ The common folk and would-be heroes form a kingdom safe from gods.
 [ICON_BULLET]Adventurers: The Adventurer great person is able to upgrade into any unit type and comes with the powerful Hero promotion. The Greenhorn specialist also gives Adventurer points.
 [ICON_BULLET]Luonnotar: The Great Luonnotar is a Great Prophet who can found an academy or settle in the city to provide unit training XP and city defence instead of gold and hammers, in addition to the other Great Prophet abilities. The Apostate specialist is also able to train units and give city defence, at the cost of currency.
 [ICON_BULLET]Agnostic: The Grigori follow the teachings of Cassiel and the Luonnotar and do not follow any religion; instead, they walk either the path of personal freedom(Adventurers) or the protection of that freedom(Apostates).
-[ICON_BULLET]Decentralised: Grigori cities only work the first ring of tiles and have higher upkeep costs; they also have weaker improvements that give free Volunteer specialists, and gain the majority of their production from their forts (Commune Settlements), which supply cities from far away and can defend themselves with Freefolk Militia.
+[ICON_BULLET]Decentralised: Grigori cities only work the first ring of tiles and have higher upkeep costs; they also have weaker improvements that give free Volunteer specialists, and gain the majority of their production from their forts (Commune Settlements), which supply cities from far away with the commanders [LINK=PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE]Commune Tax - Meagre[\LINK], and can defend themselves with Freefolk Militia.
 [ICON_BULLET]Growth: Multiple mechanics for the Grigori grow with investment, such as: 
-Commune Settlements send higher yields when appropriate tech is researched (Trade+Construction+Code of Laws for T2, and Guilds, Engineering, Feudalism for T3). 
+Commune Settlements send higher yields from the commander's promotion when appropriate tech is researched (Trade+Construction+Code of Laws for [LINK=PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE2]Commune Tax - Moderate[\LINK], and Guilds, Engineering, Feudalism for [LINK=PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE3]Commune Tax - Bountiful[\LINK]). 
 Volunteers from improvements gain additional yields from the tech tree. 
-Greenhorn and Apostate specialists improve each other; the more of both of them you have, the better they both perform.
-
-</Spanish>
+Greenhorn and Apostate specialists improve each other; the more of both of them you have, the better they both perform.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_CASSIEL</Tag>
@@ -830,35 +822,35 @@ Where the Grigori cities are best at producing coin and research, the Grigori Co
 A mix of both cities and communes will yield the best results.
 
 With research, the amount of yields they provide to cities grows.
-(Trade+Construction+Code of Laws upgrades the tax from Meagre to Moderate, and then Guilds+Feudalism+Engineering upgrades it again to Bountiful)</English>
+(Trade+Construction+Code of Laws upgrades the tax from [LINK=PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE]Commune Tax - Meagre[\LINK] to [LINK=PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE2]Commune Tax - Moderate[\LINK], and then Guilds+Feudalism+Engineering upgrades it again to [LINK=PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE3]Commune Tax - Bountiful[\LINK])</English>
 		<French>The men and women of the Communes work tirelessly in their wilderness homes as a freefolk militia, serving the dual role of protector and provider of the Grigori realms
 
 Where the Grigori cities are best at producing coin and research, the Grigori Communes are best at working the land and sending a portion of that production supply back to the cities.
 A mix of both cities and communes will yield the best results.
 
 With research, the amount of yields they provide to cities grows.
-(Trade+Construction+Code of Laws upgrades the tax from Meagre to Moderate, and then Guilds+Feudalism+Engineering upgrades it again to Bountiful)</French>
+(Trade+Construction+Code of Laws upgrades the tax from [LINK=PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE]Commune Tax - Meagre[\LINK] to [LINK=PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE2]Commune Tax - Moderate[\LINK], and then Guilds+Feudalism+Engineering upgrades it again to [LINK=PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE3]Commune Tax - Bountiful[\LINK])</French>
 		<German>The men and women of the Communes work tirelessly in their wilderness homes as a freefolk militia, serving the dual role of protector and provider of the Grigori realms
 
 Where the Grigori cities are best at producing coin and research, the Grigori Communes are best at working the land and sending a portion of that production supply back to the cities.
 A mix of both cities and communes will yield the best results.
 
 With research, the amount of yields they provide to cities grows.
-(Trade+Construction+Code of Laws upgrades the tax from Meagre to Moderate, and then Guilds+Feudalism+Engineering upgrades it again to Bountiful)</German>
+(Trade+Construction+Code of Laws upgrades the tax from [LINK=PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE]Commune Tax - Meagre[\LINK] to [LINK=PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE2]Commune Tax - Moderate[\LINK], and then Guilds+Feudalism+Engineering upgrades it again to [LINK=PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE3]Commune Tax - Bountiful[\LINK])</German>
 		<Italian>The men and women of the Communes work tirelessly in their wilderness homes as a freefolk militia, serving the dual role of protector and provider of the Grigori realms
 
 Where the Grigori cities are best at producing coin and research, the Grigori Communes are best at working the land and sending a portion of that production supply back to the cities.
 A mix of both cities and communes will yield the best results.
 
 With research, the amount of yields they provide to cities grows.
-(Trade+Construction+Code of Laws upgrades the tax from Meagre to Moderate, and then Guilds+Feudalism+Engineering upgrades it again to Bountiful)</Italian>
+(Trade+Construction+Code of Laws upgrades the tax from [LINK=PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE]Commune Tax - Meagre[\LINK] to [LINK=PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE2]Commune Tax - Moderate[\LINK], and then Guilds+Feudalism+Engineering upgrades it again to [LINK=PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE3]Commune Tax - Bountiful[\LINK])</Italian>
 		<Spanish>The men and women of the Communes work tirelessly in their wilderness homes as a freefolk militia, serving the dual role of protector and provider of the Grigori realms
 
 Where the Grigori cities are best at producing coin and research, the Grigori Communes are best at working the land and sending a portion of that production supply back to the cities.
 A mix of both cities and communes will yield the best results.
 
 With research, the amount of yields they provide to cities grows.
-(Trade+Construction+Code of Laws upgrades the tax from Meagre to Moderate, and then Guilds+Feudalism+Engineering upgrades it again to Bountiful)</Spanish>
+(Trade+Construction+Code of Laws upgrades the tax from [LINK=PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE]Commune Tax - Meagre[\LINK] to [LINK=PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE2]Commune Tax - Moderate[\LINK], and then Guilds+Feudalism+Engineering upgrades it again to [LINK=PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE3]Commune Tax - Bountiful[\LINK])</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_BRONZE_WEAPONS_MILITIA</Tag>

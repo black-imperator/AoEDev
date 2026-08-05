@@ -11430,27 +11430,36 @@ def spellBloom(caster):
 def effectAutoBloomSeed(caster):
 	pPlot = caster.plot()
 	iFeature = pPlot.getFeatureType()
-	if iFeature == getinfoType('FEATURE_FOREST_ANCIENT):
+	iForestOld = getInfoType('FEATURE_FOREST_ANCIENT')
+	iForest = getInfoType('FEATURE_FOREST')
+	iKelpOld = getInfoType('FEATURE_KELP_FOREST')
+	iJungle = getInfoType('FEATURE_JUNGLE')
+	iOasis = getInfoType('FEATURE_OASIS')
+	iVolcano = getInfoType('FEATURE_VOLCANO')
+	iReefs = getInfoType('FEATURE_REEFS')
+	iKelp = getInfoType('FEATURE_KELP')
+	iFloodPlains = getInfoType('FEATURE_FLOOD_PLAINS')
+	iForestNew = getInfoType('FEATURE_FOREST_NEW')
+
+	if iFeature == iForestOld:
 		return
-	if iFeature == getinfoType('FEATURE_FOREST):
+	if iFeature == iForest:
 		return
-	if iFeature == getinfoType('FEATURE_KELP_FOREST):
+	if iFeature == iKelpOld:
 		return
-	if iFeature == getinfoType('FEATURE_JUNGLE):
+	if iFeature == iJungle:
 		return
-	if iFeature == getinfoType('FEATURE_OASIS):
+	if iFeature == iOasis:
 		return
-	if iFeature == getinfoType('FEATURE_FOREST_ANCIENT):
+	if iFeature == iVolcano:
 		return
-	if iFeature == getinfoType('FEATURE_VOLCANO):
+	if iFeature == iReefs:
 		return
-	if iFeature == getinfoType('FEATURE_FOREST_ANCIENT):
+	if iFeature == iKelp:
 		return
-	if iFeature == getinfoType('FEATURE_REEFS):
+	if iFeature == iFloodPlains:
 		return
-	if iFeature == getinfoType('FEATURE_FLOOD_PLAINS):
-		return
-	if iFeature == getinfoType('FEATURE_FOREST_NEW):
+	if iFeature == iForestNew:
 		return
 	spellBloomSeed(caster)
 

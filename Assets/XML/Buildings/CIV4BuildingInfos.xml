@@ -10719,6 +10719,10 @@
 				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_SKY</BuildingClassType>
 				<bExclude>1</bExclude>
 			</BuildingExclude>
+			<BuildingExclude>
+				<BuildingClassType>BUILDINGCLASS_TOTEM_OF_THE_THREE_SISTERS</BuildingClassType>
+				<bExclude>1</bExclude>
+			</BuildingExclude>
 			</BuildingExcludes>
 		<PrereqBuildingAtRanges>
 				<PrereqBuildingAtRange>

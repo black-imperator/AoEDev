@@ -9497,7 +9497,7 @@
 			<iDefenseModifier>20</iDefenseModifier>
 			<iPillageGold>10</iPillageGold>
 			<bOutsideBorders>1</bOutsideBorders>
-			<iMinimumDistance>4</iMinimumDistance>
+			<iMinimumDistance>3</iMinimumDistance>
 			<bActsAsCity>1</bActsAsCity>
 			<bFort>1</bFort>
 			<YieldChanges>

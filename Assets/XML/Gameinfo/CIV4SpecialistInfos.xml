@@ -231,6 +231,14 @@
 						<iYield>1</iYield>
 					</SpecialistClassYields>
 				</SpecialistClassYieldChange>
+				<SpecialistClassYieldChange>
+					<SpecialistClass>SPECIALISTCLASS_GREAT_PRIEST</SpecialistClass>
+					<SpecialistClassYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</SpecialistClassYields>
+				</SpecialistClassYieldChange>
 			</SpecialistClassYieldChanges>
 			<Button>Art/Interface/Buttons/Units/Adventurer.dds</Button>
 		</SpecialistInfo>
@@ -247,7 +255,7 @@
 			<Yields>
 				<iYield>0</iYield>
 				<iYield>0</iYield>
-				<iYield>-3</iYield>
+				<iYield>-2</iYield>
 			</Yields>
 			<iCityDefense>5</iCityDefense>
 			<TrainXPCaps>

@@ -573,7 +573,12 @@
 		<PromotionInfo>		<!-- Sea Stealth  -->
 			<Type>PROMOTION_SEA_STEALTH</Type>
 			<Description>TXT_KEY_PROMOTION_SEA_STEALTH</Description>
+			<bForceOverwrite>1</bForceOverwrite>
 			<PrereqPromotionORs>
+				<PrereqPromotionOR>
+					<PromotionType>PROMOTION_TROVE_OF_SHELLS</PromotionType>
+					<iPrereqApplications>1</iPrereqApplications>
+				</PrereqPromotionOR>
 				<PrereqPromotionOR>
 					<PromotionType>PROMOTION_SEA_SNEAK</PromotionType>
 					<iPrereqApplications>1</iPrereqApplications>
