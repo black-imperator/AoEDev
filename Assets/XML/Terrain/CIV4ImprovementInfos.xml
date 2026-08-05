@@ -13712,6 +13712,7 @@
 			<bUnique>1</bUnique>
 			<SpawnUnitType>UNIT_DROWN</SpawnUnitType>
 			<SpawnUnitCiv>CIVILIZATION_DEMON</SpawnUnitCiv>
+			<iSpawnUnitChancePercentMod>-50</iSpawnUnitChancePercentMod>
 			<iBasePlotCounterModify>20</iBasePlotCounterModify>
 			<iSpawnAtOnceLimit>3</iSpawnAtOnceLimit>
 			<iCultureRange>2</iCultureRange>
@@ -13733,6 +13734,7 @@
 			<bUnique>1</bUnique>
 			<SpawnUnitType>UNIT_STYGIAN_GUARD</SpawnUnitType>
 			<SpawnUnitCiv>CIVILIZATION_DEMON</SpawnUnitCiv>
+			<iSpawnUnitChancePercentMod>-50</iSpawnUnitChancePercentMod>
 			<iBasePlotCounterModify>30</iBasePlotCounterModify>
 			<iSpawnAtOnceLimit>4</iSpawnAtOnceLimit>
 			<iCultureRange>3</iCultureRange>

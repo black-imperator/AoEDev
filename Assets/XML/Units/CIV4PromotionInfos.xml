@@ -2502,6 +2502,144 @@
 				</CityBonus>
 			</CityBonuses>
 		</PromotionInfo>
+		<PromotionInfo>		<!-- Dragon's Tears -->
+			<Type>PROMOTION_DRAGONS_TEARS</Type>
+			<Description>TXT_KEY_EQUIPMENT_DRAGONS_TEARS</Description>
+			<Civilopedia>TXT_KEY_EQUIPMENT_DRAGON_TEARS_PEDIA</Civilopedia>
+			<Button>Art/Interface/Buttons/Equipment/DragonTears.dds</Button>
+			<bEquipment>1</bEquipment>
+			<iSameTileHealChange>30</iSameTileHealChange>
+			<PromotionExcludes>
+				<Promotion>PROMOTION_CRAZED</Promotion>
+				<Promotion>PROMOTION_DISEASED</Promotion>
+				<Promotion>PROMOTION_WITHERED</Promotion>
+				<Promotion>PROMOTION_POISONED</Promotion>
+				<Promotion>PROMOTION_PLAGUED</Promotion>
+			</PromotionExcludes>
+			<PromotionOverwrites>
+				<Promotion>PROMOTION_CRAZED</Promotion>
+				<Promotion>PROMOTION_DISEASED</Promotion>
+				<Promotion>PROMOTION_WITHERED</Promotion>
+				<Promotion>PROMOTION_POISONED</Promotion>
+				<Promotion>PROMOTION_PLAGUED</Promotion>
+			</PromotionOverwrites>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Trove of Shells -->
+			<Type>PROMOTION_TROVE_OF_SHELLS</Type>
+			<Description>TXT_KEY_EQUIPMENT_TROVE_OF_SHELLS</Description>
+			<Civilopedia>TXT_KEY_EQUIPMENT_TROVE_OF_SHELLS_PEDIA</Civilopedia>
+			<Help>TXT_KEY_EQUIPMENT_TROVE_OF_SHELLS_HELP</Help>
+			<Button>Art/Interface/Buttons/Equipment/TroveofShells.dds</Button>
+			<bEquipment>1</bEquipment>
+			<bWaterWalking>1</bWaterWalking>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Chalice of Sacrifice -->
+			<Type>PROMOTION_CHALICE_OF_SACRIFICE</Type>
+			<Description>TXT_KEY_EQUIPMENT_CHALICE_OF_SACRIFICE</Description>
+			<Civilopedia>TXT_KEY_EQUIPMENT_CHALICE_OF_SACRIFICE_PEDIA</Civilopedia>
+			<Button>Art/Interface/Buttons/Equipment/ChaliceofBlood.dds</Button>
+			<bEquipment>1</bEquipment>
+			<iCombatHealPercent>20</iCombatHealPercent>
+			<AuraBonuses>
+				<AuraBonus>
+					<bApplyEnemy>1</bApplyEnemy>
+					<bApplyRival>1</bApplyRival>
+					<iBonusRange>3</iBonusRange>
+					<Promotion>PROMOTION_BLOOD_DRAGON_AURA_LESSER</Promotion>
+				</AuraBonus>
+			</AuraBonuses>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Misery Stone -->
+			<Type>PROMOTION_MISERY_STONE</Type>
+			<Description>TXT_KEY_EQUIPMENT_MISERY_STONE</Description>
+			<Civilopedia>TXT_KEY_EQUIPMENT_MISERY_STONE_PEDIA</Civilopedia>
+			<Button>Art/Interface/Buttons/Equipment/MiseryStone.dds</Button>
+			<bEquipment>1</bEquipment>
+			<iMovesChange>-1</iMovesChange>
+			<AuraBonuses>
+				<AuraBonus>
+					<bApplyEnemy>1</bApplyEnemy>
+					<bApplyRival>1</bApplyRival>
+					<iBonusRange>3</iBonusRange>
+					<Promotion>PROMOTION_TERRIFIED</Promotion>
+				</AuraBonus>
+			</AuraBonuses>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Pure Sheut Stone Shard-->
+			<Type>PROMOTION_SHEUT_STONE_GREATER</Type>
+			<Description>TXT_KEY_PROMOTION_SHEUT_STONE_GREATER</Description>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ANIMAL</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_BEAST</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<PromotionExcludes>
+				<Promotion>PROMOTION_SHEUT_STONE</Promotion>
+			</PromotionExcludes>
+			<PromotionOverwrites>
+				<Promotion>PROMOTION_SHEUT_STONE</Promotion>
+			</PromotionOverwrites>
+			<Button>Art/Interface/Buttons/Promotions/PureSheutShard.dds</Button>
+			<iMinLevel>-1</iMinLevel>
+			<DamageTypeCombats>
+				<DamageTypeCombat>
+					<DamageType>DAMAGE_DEATH</DamageType>
+					<iCombat>2</iCombat>
+				</DamageTypeCombat>
+			</DamageTypeCombats>
+			<DamageTypeResists>
+				<DamageTypeResist>
+					<DamageType>DAMAGE_DEATH</DamageType>
+					<iResist>50</iResist>
+				</DamageTypeResist>
+				<DamageTypeResist>
+					<DamageType>DAMAGE_HOLY</DamageType>
+					<iResist>-20</iResist>
+				</DamageTypeResist>
+			</DamageTypeResists>
+			<iMovesChange>-1</iMovesChange>
+		</PromotionInfo>
 		<PromotionInfo>		<!-- Heron Throne -->
 			<Type>PROMOTION_HERON_THRONE</Type>
 			<Description>TXT_KEY_BUILDING_HERON_THRONE</Description>
@@ -10480,6 +10618,75 @@
 				</DamageTypeCombat>
 			</DamageTypeCombats>
 		</PromotionInfo>
+		<PromotionInfo>		<!-- Sea Stealth  -->
+			<Type>PROMOTION_SEA_STEALTH</Type>
+			<Description>TXT_KEY_PROMOTION_SEA_STEALTH</Description>
+			<PrereqPromotionORs>
+				<PrereqPromotionOR>
+					<PromotionType>PROMOTION_TROVE_OF_SHELLS</PromotionType>
+					<iPrereqApplications>1</iPrereqApplications>
+				</PrereqPromotionOR>
+			</PrereqPromotionORs>
+			<bAutoAcquire>1</bAutoAcquire>
+			<bMustMaintain>1</bMustMaintain>
+			<bNoXP>1</bNoXP>
+			<iInvisibleLevel>3</iInvisibleLevel>
+			<iChanceFirstStrikesChange>1</iChanceFirstStrikesChange>
+			<PrereqTerrains>
+				<PrereqTerrain>TERRAIN_COAST</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_OCEAN</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_OCEAN_DEEP</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_BLIGHTED_COAST</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_BLACKWATER</PrereqTerrain>
+			</PrereqTerrains>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Art/Interface/Buttons/Promotions/ForestStealth.dds</Button>
+		</PromotionInfo>
 		<PromotionInfo>		<!-- Grass Stalker - used by Chislev Greenstalkers -->
 			<Type>PROMOTION_GRASS_STALKER</Type>
 			<Description>TXT_KEY_PROMOTION_GRASS_STALKER</Description>
@@ -10489,7 +10696,7 @@
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Grassland Stalking - used by Chislev Greenstalkers.  -->
 			<Type>PROMOTION_GRASS_STALKING</Type>
-			<Description>TXT_KEY_PROMOTION_FOREST_STEALTH</Description>
+			<Description>TXT_KEY_PROMOTION_GRASS_STALKING</Description>
 			<PrereqPromotionANDs>
 				<PrereqPromotionAND>
 					<PromotionType>PROMOTION_GRASS_STALKER</PromotionType>
@@ -14163,6 +14370,17 @@
 			<iEnemyHealChange>-10</iEnemyHealChange>
 			<iNeutralHealChange>-10</iNeutralHealChange>
 			<iFriendlyHealChange>-10</iFriendlyHealChange>
+			<iPromotionDuration>2</iPromotionDuration>
+			<bDispellable>1</bDispellable>
+			<Button>Art/Interface/Buttons/Promotions/BloodCore.dds</Button>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Blood Dragon Aura Lesser -->
+			<Type>PROMOTION_BLOOD_DRAGON_AURA_LESSER</Type>
+			<Description>TXT_KEY_PROMOTION_BLOOD_DRAGON_AURA_LESSER</Description>
+			<bNoXP>1</bNoXP>
+			<iEnemyHealChange>-5</iEnemyHealChange>
+			<iNeutralHealChange>-5</iNeutralHealChange>
+			<iFriendlyHealChange>-5</iFriendlyHealChange>
 			<iPromotionDuration>2</iPromotionDuration>
 			<bDispellable>1</bDispellable>
 			<Button>Art/Interface/Buttons/Promotions/BloodCore.dds</Button>

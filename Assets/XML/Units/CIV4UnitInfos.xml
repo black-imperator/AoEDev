@@ -16432,7 +16432,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<iCost>60</iCost>
+			<iCost>50</iCost>
 			<iMoves>1</iMoves>
 			<iCombat>3</iCombat>
 			<iCityAttack>15</iCityAttack>

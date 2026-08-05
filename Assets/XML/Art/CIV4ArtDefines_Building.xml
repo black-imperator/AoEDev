@@ -1757,6 +1757,46 @@
 			<Button>Art/Interface/Buttons/Equipment/DragonsHoard.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_DRAGON_TEARS</Type>
+			<LSystem>LSYSTEM_3x3</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>2.0</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Equipment/DragonsHoard/TreasurePile.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Equipment/DragonTears.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_TROVE_OF_SHELLS</Type>
+			<LSystem>LSYSTEM_3x3</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>2.0</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Equipment/DragonsHoard/TreasurePile.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Equipment/TroveofShells.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_CHALICE_OF_SACRIFICE</Type>
+			<LSystem>LSYSTEM_3x3</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>2.0</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Equipment/DragonsHoard/TreasurePile.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Equipment/ChaliceofBlood.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_MISERY_STONE</Type>
+			<LSystem>LSYSTEM_3x3</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>2.0</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Equipment/DragonsHoard/TreasurePile.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Equipment/MiseryStone.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_SLAVE_MARKET</Type>
 			<LSystem>LSYSTEM_1x1</LSystem>
 			<bAnimated>1</bAnimated>
