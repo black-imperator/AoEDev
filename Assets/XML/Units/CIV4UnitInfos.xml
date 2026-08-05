@@ -10546,15 +10546,23 @@
 			</GreatPeoples>
 			<FreePromotions>
 				<FreePromotion>
+					<PromotionType>PROMOTION_ARMY_OF_THE_DEAD_LEADER</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_GC_FIELD_MEDIC1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_GC_FIELD_MEDIC2</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
 					<PromotionType>PROMOTION_MEDIC1</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 				<FreePromotion>
 					<PromotionType>PROMOTION_MEDIC2</PromotionType>
-					<iNumApplied>1</iNumApplied>
-				</FreePromotion>
-				<FreePromotion>
-					<PromotionType>PROMOTION_MEDIC3</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 				<FreePromotion>

@@ -6215,6 +6215,11 @@
 			<ArtDefineTag>ART_DEF_IMPROVEMENT_DTESHI_CRYPT</ArtDefineTag>
 			<bRequiresFlatlands>1</bRequiresFlatlands>
 			<iPillageGold>10</iPillageGold>
+			<YieldChanges>
+				<iYieldChange>0</iYieldChange>
+				<iYieldChange>1</iYieldChange>
+				<iYieldChange>0</iYieldChange>
+			</YieldChanges>
 			<BonusTypeStructs>
 				<BonusTypeStruct>
 					<BonusType>BONUS_MARBLE</BonusType>
