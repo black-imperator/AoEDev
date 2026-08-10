@@ -99,6 +99,41 @@ import CvMapGeneratorUtil
 ##################################################################################
 import MapScriptTools as mst
 
+# ---------------------------------------------------------------------------------
+# Diagnostics. Everything is written to PythonDbg.log (needs LoggingEnabled = 1 in
+# My Games\Beyond the Sword\CivilizationIV.ini, which is the default). Grep for
+# "[TECT]" to get the whole map-generation report out of a real game.
+# ---------------------------------------------------------------------------------
+bTectDebug = True
+
+def dbg( msg ):
+	# Civ4 pipes stdout through a C printf, so a bare '%' in the message is eaten
+	# as a conversion specifier ("94%  flat" came out as "94 0.000000lat").
+	# Doubling them makes printf emit a single literal '%'.
+	if bTectDebug:
+		print "[TECT] %s" % msg.replace( "%", "%%" )
+
+def dbgClock():
+	try:
+		import time
+		return time.clock()
+	except:
+		return 0.0
+
+def dbgTraceback( where ):
+	"""Civ4 swallows most map-script exceptions and just leaves you with a broken
+	   or empty map, so print the traceback ourselves before re-raising."""
+	dbg( "*****************************************************************" )
+	dbg( "EXCEPTION in %s" % where )
+	try:
+		import sys, traceback
+		for line in traceback.format_exception( sys.exc_info()[0], sys.exc_info()[1], sys.exc_info()[2] ):
+			for sub in line.split("\n"):
+				if sub.strip(): dbg( "  %s" % sub )
+	except:
+		dbg( "  (could not format the traceback)" )
+	dbg( "*****************************************************************" )
+
 # The following two functions are not exactly neccessary, but they should be
 # in all map-scripts. Just comment them out if they are already in the script.
 # ----------------------------------------------------------------------------
@@ -126,7 +161,21 @@ def beforeGeneration():
 	# Create evaluation string for latitudes
 	compGetLat = None
 	if CyMap().getCustomMapOption(0) == 5:
-		compLat = "90 * ( 5/18.0 + 4*(%i-y) / (%i*9.0) )" % (CyMap().getGridHeight(),CyMap().getGridHeight())
+		compGetLat = "90 * ( 5/18.0 + 4*(%i-y) / (%i*9.0) )" % (CyMap().getGridHeight(),CyMap().getGridHeight())
+	# Forget the land-quality map of a previously generated world
+	resetLandQuality()
+
+	dbg( "=================================================================" )
+	dbg( "beforeGeneration(): Tectonics %s" % getVersion() )
+	dbg( "  grid %ix%i, wrapX=%s wrapY=%s" % ( CyMap().getGridWidth(), CyMap().getGridHeight(),
+	                                           CyMap().isWrapX(), CyMap().isWrapY() ) )
+	dbg( "  landmass option=%i (%s)" % ( CyMap().getCustomMapOption(0),
+	     ["Earth70","Earth60","Pangaea","Lakes","Islands","Mediterranean","Terra","TerraOldWorld"][CyMap().getCustomMapOption(0)] ) )
+	dbg( "  climate option =%i (%s)" % ( CyMap().getCustomMapOption(1),
+	     ["Arid","Normal","Wet","NoIce"][CyMap().getCustomMapOption(1)] ) )
+	dbg( "  civ players    =%i" % CyGlobalContext().getGame().countCivPlayersEverAlive() )
+	dbg( "=================================================================" )
+
 	# Create mapInfo string
 	mapInfo = ""
 	for opt in range( getNumCustomMapOptions() ):
@@ -180,7 +229,11 @@ def generateTerrainTypes():
 		terraingen = ClimateGenerator()
 
 	# Create the terrain and return the result.
-	terrainTypes = terraingen.generateTerrain()
+	try:
+		terrainTypes = terraingen.generateTerrain()
+	except:
+		dbgTraceback( "generateTerrainTypes()" )
+		raise
 	return terrainTypes
 
 # this function will be called by the system, after generateTerrainTypes() and before addLakes()
@@ -493,8 +546,13 @@ class voronoiMap:
 				self.plotTypes[i] = PlotTypes.PLOT_OCEAN
 
 	def generate(self):
+		t0 = dbgClock()
 		self.sowSeeds()
 		self.fillPlates()
+		dbg( "%s: %i land plates + %i sea plates, plateSize=%s" %
+		     ( self.__class__.__name__, self.numContinents, self.numSeaPlates,
+		       str(self.plateSize) ) )
+		dbg( "  fillPlates() needed %i passes (a plateSize left at 0 makes this explode)" % self.fillPasses )
 		self.movePlates(true)
 		self.erode()
 		self.movePlates(false)
@@ -503,7 +561,19 @@ class voronoiMap:
 		self.hotspots()
 		self.createMap()
 		self.finalizeMap()
+		self.dbgPlotStats( dbgClock() - t0 )
 		return self.plotTypes
+
+	def dbgPlotStats(self, fSecs):
+		nOcean = nLand = nHills = nPeak = 0
+		for t in self.plotTypes:
+			if t == PlotTypes.PLOT_OCEAN: nOcean += 1
+			elif t == PlotTypes.PLOT_LAND: nLand += 1
+			elif t == PlotTypes.PLOT_HILLS: nHills += 1
+			else: nPeak += 1
+		iAll = self.mapWidth * self.mapHeight
+		dbg( "  plots: water %i%%  flat %i%%  hills %i%%  peak %i%%   (%.1fs)" %
+		     ( 100*nOcean/iAll, 100*nLand/iAll, 100*nHills/iAll, 100*nPeak/iAll, fSecs ) )
 
 	def sowSeeds(self):
 		self.mostLands = self.dice.get(2,"mostland hemisphere")
@@ -513,9 +583,13 @@ class voronoiMap:
 			self.plate[self.numSeaPlates + i] = self.landAltitude + self.dice.get(3,"Land altitude")
 		for i in range(self.numContinents + self.numSeaPlates):
 			x, y = self.getCoord(i)
-			while self.plateMap[y*self.mapWidth + x] != 0:
+			# bounded: if the seed area is already full this used to spin forever
+			tries = 0
+			while (self.plateMap[y*self.mapWidth + x] != 0) and (tries < 100):
 				x, y = self.getCoord(i)
-			self.plateMap[y*self.mapWidth + x] = i
+				tries += 1
+			if self.plateMap[y*self.mapWidth + x] == 0:
+				self.plateMap[y*self.mapWidth + x] = i
 			self.plateSize[i] = 2 + self.dice.get(6,"Some randomness in plate sizes")
 
 	def getCoord(self,i):
@@ -533,8 +607,10 @@ class voronoiMap:
 
 	def fillPlates(self):
 		filled = False
+		self.fillPasses = 0
 		bufferPlateMap = [0] * (self.mapWidth*self.mapHeight)
 		while filled == False:
+			self.fillPasses += 1
 			filled = True
 			for x in range(self.mapWidth):
 				for y in range(self.mapHeight):
@@ -846,6 +922,12 @@ class voronoiMediterraneanMap(voronoiMap):
 			else:
 				x = self.dice.get(self.mapWidth,"x seed for land plate")
 				y = self.getLandY(i)
+		# The 'i >= numSeaPlates*3' branch multiplies a plate index by
+		# mapWidth/numSeaPlates and runs well past the right edge of the map for any
+		# decent player count - and past the end of plateMap[] on the lower rows,
+		# which is an IndexError that kills the whole map-script.
+		x = max( 0, min( x, self.mapWidth - 1 ) )
+		y = max( 0, min( y, self.mapHeight - 1 ) )
 		return x, y
 
 	def getLandY(self,i):
@@ -865,10 +947,15 @@ class voronoiMediterraneanMap(voronoiMap):
 			x = minX + self.dice.get(maxX,"Hotspot X")
 			y = minY + self.dice.get(yRange,"Hotspot Y")
 			i = y*self.mapWidth + x
-			while (self.plotTypes[i] != PlotTypes.PLOT_OCEAN):
+			# bounded: plotTypes is still all-ocean at this point (createMap() has
+			# not run yet), so this test always passed - but if that ever changes
+			# the loop would have no way out
+			tries = 0
+			while (self.plotTypes[i] != PlotTypes.PLOT_OCEAN) and (tries < 100):
 				x = minX + self.dice.get(maxX,"Hotspot X")
 				y = minY + self.dice.get(yRange,"Hotspot Y")
 				i = y*self.mapWidth + x
+				tries += 1
 			self.heightMap[i] = self.heightMap[i] + self.dice.get(self.peakAltitude,"Hotspot altitude")
 			self.spreadHotSpot(i)
 
@@ -878,7 +965,10 @@ class voronoiMediterraneanMap(voronoiMap):
 		self.spreadIsland(i+self.mapWidth)
 		self.spreadIsland(i-self.mapWidth)
 
+	# i+1/i-1/i+mapWidth/i-mapWidth are raw offsets into heightMap[]: a negative one
+	# silently wraps to the far end of the map and one past the end is an IndexError
 	def spreadIsland(self,i):
+		if (i < 0) or (i >= self.mapWidth*self.mapHeight): return
 		self.heightMap[i] = self.heightMap[i] + self.dice.get(self.peakAltitude,"Hotspot altitude")
 		if (self.heightMap[i] > self.landAltitude):
 			self.spreadBigIsland(i+1)
@@ -887,6 +977,7 @@ class voronoiMediterraneanMap(voronoiMap):
 			self.spreadBigIsland(i-self.mapWidth)
 
 	def spreadBigIsland(self,i):
+		if (i < 0) or (i >= self.mapWidth*self.mapHeight): return
 		if (self.heightMap[i] <= self.landAltitude):
 			self.heightMap[i] = self.dice.get(self.peakAltitude,"Island altitude")
 
@@ -1081,21 +1172,25 @@ class voronoiTerraMap(voronoiMap):
 		y = 4*self.mapHeight/9 -1
 		for i in range(self.mapWidth/5):
 			self.plotTypes[x + y*self.mapWidth + i] = PlotTypes.PLOT_OCEAN
+		# x-1 / x+1 / y-1 are used raw below. At the map edges a negative index
+		# silently wraps around to the far side of the map, and x+1 on the last
+		# column of the last row runs one past the end of plotTypes[] - an
+		# IndexError that kills the whole map-script.
 		#Force Greenland to be an island
 		for x in range(self.mapWidth):
 			for y in range(self.mapHeight):
 				if (self.plateMap[x + y*self.mapWidth] == 17):
-					if (self.plateMap[x-1 + y*self.mapWidth] != 17):
+					if (x > 0) and (y > 0) and (self.plateMap[x-1 + y*self.mapWidth] != 17):
 						self.plotTypes[x + y*self.mapWidth] = PlotTypes.PLOT_OCEAN
 						self.plotTypes[x + (y-1)*self.mapWidth] = PlotTypes.PLOT_OCEAN
 		#Force Arabia
 		for x in range(self.mapWidth):
 			for y in range(self.mapHeight):
 				if self.plateMap[x + y*self.mapWidth] == 15:
-					if self.plateMap[x + (y-1)*self.mapWidth] != 15:
+					if (y > 0) and (self.plateMap[x + (y-1)*self.mapWidth] != 15):
 						self.plotTypes[x + y*self.mapWidth] = PlotTypes.PLOT_OCEAN
 						self.plotTypes[x + (y-1)*self.mapWidth] = PlotTypes.PLOT_OCEAN
-					if self.plateMap[x+1 + y*self.mapWidth] != 15:
+					if (x < self.mapWidth-1) and (self.plateMap[x+1 + y*self.mapWidth] != 15):
 						self.plotTypes[x + y*self.mapWidth] = PlotTypes.PLOT_OCEAN
 						self.plotTypes[x+1 + y*self.mapWidth] = PlotTypes.PLOT_OCEAN
 		#Force Central America
@@ -1142,6 +1237,13 @@ class voronoiPangaeaMap(voronoiMap):
 		self.yTilt = self.dice.get(4,"YTilt")
 		self.plate[0] = 0
 		self.plate[1] = 0
+		# plateSize is the probability of a plate growing into a neighbouring plot.
+		# This override never used to set it, so every plate kept the 0 from
+		# __init__(); neighbour() then degenerated into a fixed
+		# left-before-right-before-top preference at a flat 10% growth rate and
+		# the plates came out as horizontal stripes instead of voronoi cells.
+		self.plateSize[0] = 2
+		self.plateSize[1] = 3						# the ocean border
 		for x in range(self.mapWidth):
 			self.plateMap[x] = 1
 			self.plateMap[self.mapWidth + x] = 1
@@ -1154,13 +1256,19 @@ class voronoiPangaeaMap(voronoiMap):
 			self.plateMap[y*self.mapWidth + self.mapWidth - 1] = 1
 		for i in range(self.numContinents):
 			self.plate[i + self.numSeaPlates] = 4 + self.dice.get(3,"Land altitude")
+			self.plateSize[i + self.numSeaPlates] = 2 + self.dice.get(6,"Some randomness in plate sizes")
 			x, y = self.getCoord(i)
-			while self.plateMap[y*self.mapWidth + x] != 0:
+			# bounded: with many players the seed band gets narrow enough that a
+			# free plot may not exist at all, and this used to spin forever
+			tries = 0
+			while (self.plateMap[y*self.mapWidth + x] != 0) and (tries < 100):
 				x, y = self.getCoord(i)
-			self.plateMap[y*self.mapWidth + x] = i + 2
+				tries += 1
+			if self.plateMap[y*self.mapWidth + x] == 0:
+				self.plateMap[y*self.mapWidth + x] = i + 2
 
 	def getCoord(self,i):
-		step = self.mapWidth/(2*self.numContinents)
+		step = max( 1, self.mapWidth/(2*self.numContinents) )
 		x = self.mapWidth/4 + i*step + self.dice.get(step,"x seed for plate")
 		quarterHeight = self.mapHeight/4
 		eigthHeight = self.mapHeight/8
@@ -1175,6 +1283,9 @@ class voronoiPangaeaMap(voronoiMap):
 			else:
 				y -= eigthHeight
 		# else: Let it be the way it was generated
+		# more continents than half the map is wide would push x off the map
+		x = min( x, self.mapWidth - 3 )
+		y = max( 2, min( y, self.mapHeight - 3 ) )
 		return x, y
 
 class ClimateGenerator:
@@ -1211,10 +1322,86 @@ class ClimateGenerator:
 		return self.map.plot(iX,iY).getLatitude()
 
 	def generateTerrain(self):
+		t0 = dbgClock()
+		dbg( "climate: maxWindForce=%i (mapWidth/%i), moisture carried per wind=%i" %
+		     ( self.maxWindForce, self.mapWidth/max(1,self.maxWindForce), 5 + self.maxWindForce ) )
 		self.blowWinds()
 		self.blur()
 		self.computeTerrain()
+		self.dbgTerrainStats( dbgClock() - t0 )
 		return self.terrain
+
+	def dbgTerrainStats(self, fSecs):
+		"""Reports the two numbers that describe the 'map is just lines of terrain'
+		   complaint: how much moisture actually reaches the land, and how uniform
+		   each row of land is. rowUniformity 1.00 means every row is a single
+		   terrain, i.e. terrain follows latitude only."""
+		W, H = self.mapWidth, self.mapHeight
+		gc = CyGlobalContext()
+		names = {}
+		for t in ( self.terrainDesert, self.terrainPlains, self.terrainTundra,
+		           self.terrainTaiga, self.terrainGrass ):
+			if t >= 0: names[t] = gc.getTerrainInfo(t).getType()
+
+		iLand = 0
+		iWet = 0
+		counts = {}
+		fUnifSum = 0.0
+		iUnifRows = 0
+		for y in range(H):
+			row = {}
+			for x in range(W):
+				if self.map.plot(x,y).isWater(): continue
+				i = y*W + x
+				iLand += 1
+				if self.moisture[i] > 4: iWet += 1
+				t = self.terrain[i]
+				counts[t] = counts.get(t,0) + 1
+				row[t] = row.get(t,0) + 1
+			iRowLand = 0
+			iRowBest = 0
+			for t in row.keys():
+				iRowLand += row[t]
+				if row[t] > iRowBest: iRowBest = row[t]
+			if iRowLand >= 8:
+				fUnifSum += float(iRowBest) / iRowLand
+				iUnifRows += 1
+		if iLand == 0:
+			dbg( "climate: no land at all!" )
+			return
+		mix = []
+		for t in counts.keys():
+			mix.append( "%s:%i%%" % ( names.get(t, "terrain%i" % t), 100*counts[t]/iLand ) )
+		mix.sort()
+		dbg( "climate: land above the moisture-5 grass threshold: %i%%" % (100*iWet/iLand) )
+		dbg( "climate: terrain mix  %s" % "  ".join(mix) )
+		# The measure that actually detects the 'terrain in lines' complaint: how
+		# much land sits inside an unbroken horizontal run of one terrain. Islands
+		# and Earthlike sit near 2-6%; a Pangaea with belts spanning the continent
+		# runs 40%+.
+		iRunLand = 0
+		iRunLong = 0
+		iRunMax = 0
+		for y in range(H):
+			x = 0
+			while x < W:
+				if self.map.plot(x,y).isWater():
+					x += 1
+					continue
+				t = self.terrain[y*W + x]
+				n = 0
+				while (x+n < W) and (not self.map.plot(x+n,y).isWater()) and (self.terrain[y*W+x+n] == t):
+					n += 1
+				iRunLand += n
+				if n >= 20: iRunLong += n
+				if n > iRunMax: iRunMax = n
+				x += n
+		if iRunLand > 0:
+			dbg( "climate: %i%% of land sits in a horizontal run of 20+ identical terrain, longest run %i  (>25%% = terrain in lines)"
+			     % ( 100*iRunLong/iRunLand, iRunMax ) )
+		if iUnifRows > 0:
+			dbg( "climate: rowUniformity=%.2f over %i rows" % ( fUnifSum/iUnifRows, iUnifRows ) )
+		dbg( "climate: took %.1fs" % fSecs )
 
 	def computeTerrain(self):
 		terrain = [0] * (self.mapWidth*self.mapHeight)
@@ -1224,6 +1411,11 @@ class ClimateGenerator:
 					self.terrain[y*self.mapWidth+x] = self.map.plot(x,y).getTerrainType()
 				else:
 					terrain[y*self.mapWidth+x] = self.getTerrain(self.getLatitudeAtPlot(x,y),self.moisture[y*self.mapWidth + x])
+		# The neighbouring row is only allowed to be copied from when it is land:
+		# for water plots the local 'terrain' array was never filled and still holds
+		# 0, which is a valid terrain index (TERRAIN_GRASS), so every coastal land
+		# plot used to have a 1-in-3 chance per direction of being forced to grass.
+		iForcedGrass = 0
 		for x in range(self.mapWidth):
 			for y in range(self.mapHeight):
 				if (not self.map.plot(x,y).isWater()):
@@ -1231,9 +1423,12 @@ class ClimateGenerator:
 					self.terrain[i] = terrain[i]
 					bias = self.dice.get(3,"Random terrain")
 					if bias == 0 and y > 1:
-						self.terrain[i] = terrain[i-self.mapWidth]
+						if self.map.plot(x,y-1).isWater(): iForcedGrass += 1
+						else: self.terrain[i] = terrain[i-self.mapWidth]
 					if bias == 2 and y < self.mapHeight - 1:
-						self.terrain[i] = terrain[i+self.mapWidth]
+						if self.map.plot(x,y+1).isWater(): iForcedGrass += 1
+						else: self.terrain[i] = terrain[i+self.mapWidth]
+		dbg( "computeTerrain(): %i coastal plots kept their own terrain (used to be forced to terrain 0)" % iForcedGrass )
 		for x in range(self.mapWidth):
 			for y in range(self.mapHeight):
 				if (not self.map.plot(x,y).isWater()):
@@ -1350,7 +1545,11 @@ class ClimateGenerator:
 
 	def blow(self,localMoisture,maxHorizontal,horizontal,vertical,x,y):
 		plotType = self.map.plot(x,y).getPlotType()
-		if (y+vertical > 0 and y+vertical < self.mapHeight):
+		# Once maxHorizontal drops below 0 the deposit-loop below is empty, and it
+		# only ever shrinks further down the recursion - so there is nothing left
+		# to do. Without this the wind kept recursing to the map edge doing
+		# nothing, once for every water plot on the map.
+		if (maxHorizontal >= 2) and (y+vertical > 0 and y+vertical < self.mapHeight):
 			if (plotType != PlotTypes.PLOT_PEAK):
 				if (plotType == PlotTypes.PLOT_HILLS):
 					self.blow(localMoisture - 7,maxHorizontal-2,horizontal,vertical,x,y+vertical)
@@ -1373,22 +1572,95 @@ class ClimateGenerator:
 			if (localMoisture <= 0):
 				return
 
+	def moistureNoise(self, iScale, iAmp):
+		"""Mid-scale value-noise: a coarse random lattice, bilinearly interpolated.
+		   The wind only carries moisture about 8 plots inland, so on a big landmass
+		   two thirds of the land sits at moisture 0 and getTerrain() then decides on
+		   latitude alone - which is what turns the interior into belts of a single
+		   terrain running the whole width of the continent. This gives the dry
+		   interior some variation at a ~8 plot scale so the terrain thresholds are
+		   crossed in different places instead of along a latitude line."""
+		iGridW = self.mapWidth/iScale + 2
+		iGridH = self.mapHeight/iScale + 2
+		grid = []
+		for gy in range(iGridH):
+			row = []
+			for gx in range(iGridW):
+				row.append( self.dice.get( iAmp+1, "climate noise" ) )
+			row[ self.mapWidth/iScale ] = row[0]			# wrap in x
+			grid.append( row )
+		noise = [0] * (self.mapWidth*self.mapHeight)
+		for y in range(self.mapHeight):
+			gy = y/iScale
+			fy = float( y % iScale ) / iScale
+			for x in range(self.mapWidth):
+				gx = x/iScale
+				fx = float( x % iScale ) / iScale
+				noise[y*self.mapWidth + x] = int( grid[gy][gx]     * (1-fx) * (1-fy)
+				                                + grid[gy][gx+1]   *   fx   * (1-fy)
+				                                + grid[gy+1][gx]   * (1-fx) *   fy
+				                                + grid[gy+1][gx+1] *   fx   *   fy )
+		return noise
+
 	def blur(self):
-		max = 1
+		# getTerrain() reads moisture as a 0..100 percentage and all of its
+		# decisions sit between 4 and 17. The original scale was the single wettest
+		# plot of the WHOLE map - and moisture is deposited on water too, where it
+		# piles up from every neighbouring water plot and reaches several times the
+		# land maximum, even though it is never read there. Dividing by that outlier
+		# pushed almost all the land to the bottom of the scale, so moisture stopped
+		# influencing the result and terrain was decided by latitude alone - which is
+		# what produced the belts of one terrain running the width of a continent.
+		#
+		# Scale against a representative wet LAND plot instead (95th percentile) and
+		# clamp to the 0..100 the terrain code expects.
+		landMoisture = []
+		iLandSum = 0
+		iLandDry = 0
+		iAllMax = 1
 		for y in range(self.mapHeight):
 			for x in range(self.mapWidth):
 				i = y*self.mapWidth + x
-				if (max < self.moisture[i]):
-					max = self.moisture[i]
-		for y in range(1,self.mapHeight-2):
+				if (iAllMax < self.moisture[i]):
+					iAllMax = self.moisture[i]
+				if self.map.plot(x,y).isWater(): continue
+				landMoisture.append( self.moisture[i] )
+				iLandSum += self.moisture[i]
+				if self.moisture[i] == 0: iLandDry += 1
+		if len(landMoisture) == 0: return
+		landMoisture.sort()
+		iLand = len(landMoisture)
+		max = landMoisture[ min( iLand-1, (iLand*95)/100 ) ]
+		if max < 1: max = 1
+		dbg( "climate: land plots=%i  raw moisture mean=%i  p95=%i  landMax=%i  whole-map max=%i (was the scale)  dry land=%i%%"
+		     % (iLand, iLandSum/iLand, max, landMoisture[iLand-1], iAllMax, 100*iLandDry/iLand) )
+		# all rows, not 1..mapHeight-3: the three rows that were skipped kept their
+		# raw (unscaled) moisture, which drowned the poles in grass and plains
+		for y in range(self.mapHeight):
 			for x in range(self.mapWidth):
 				i = y*self.mapWidth + x
-				self.moisture[i] = self.moisture[i]*100/max
+				self.moisture[i] = min( 100, self.moisture[i]*100/max )
+
+		# Break up the latitude belts - see moistureNoise().
+		iAmp = 24
+		noise = self.moistureNoise( 8, iAmp )
+		for i in range( self.mapWidth*self.mapHeight ):
+			m = self.moisture[i] + noise[i] - iAmp/2
+			if m < 0: m = 0
+			elif m > 100: m = 100
+			self.moisture[i] = m
 
 #
 # Main terrain generation fonction
 #
 def generatePlotTypes():
+	try:
+		return generatePlotTypes2()
+	except:
+		dbgTraceback( "generatePlotTypes()" )
+		raise
+
+def generatePlotTypes2():
 	"Generates a map with several continents and a few islands."
 	userInputLandmass = CyMap().getCustomMapOption(0)
 	gc = CyGlobalContext()
@@ -1413,7 +1685,12 @@ def generatePlotTypes():
 		hotspotsFrequency = 1600
 	elif (userInputLandmass == 4):     #                 "Islands"
 		numContinents = numPlayers
-		numSeaPlates = numPlayers*6 - 1
+		# was numPlayers*6 - 1, which left only 14% of the plate seeds on land and
+		# about 6-9% of the map above water once erosion had eaten the coasts of all
+		# those small plates - roughly 40 land plots per player. *4 gives ~14% land
+		# and a biggest island of ~380 plots instead of ~210, without turning the
+		# archipelago into a continent (which is what *2 does).
+		numSeaPlates = numPlayers*4 - 1
 		hotspotsFrequency = 300
 	elif (userInputLandmass == 5):     #                 "Mediterranean"
 		generator = voronoiMediterraneanMap(numPlayers)
@@ -1422,6 +1699,8 @@ def generatePlotTypes():
 		generator = voronoiTerraMap()
 		return generator.generate()
 	width = gc.getMap().getGridWidth()
+	dbg( "generatePlotTypes(): option %i -> scaledPlayers=%i, %i continents, %i sea plates, hotspots 1/%i" %
+	     ( userInputLandmass, numPlayers, numContinents, numSeaPlates, hotspotsFrequency ) )
 	generator = voronoiMap(numContinents,numSeaPlates,hotspotsFrequency)
 	return generator.generate()
 
@@ -1693,8 +1972,10 @@ class riversFromSea:
 		maxNumber = (self.width + self.height) / divider
 		userInputLandmass = self.map.getCustomMapOption(0)
 		riversNumber = 1 + maxNumber
-		if (userInputLandmass == 1):       # Pangaea
+		if (userInputLandmass == 2):       # Pangaea (was 1, which is Earthlike 60%)
 			riversNumber = maxNumber/2
+		self.riversWanted = riversNumber
+		self.riversStarted = 0
 		self.coasts = self.collateCoasts()
 		coastsNumber = len(self.coasts)
 		if (coastsNumber == 0):
@@ -1707,9 +1988,16 @@ class riversFromSea:
 				tries = tries + 1
 				(x,y,flow) = self.generateRiver(i,coastShare)
 			if flow != CardinalDirectionTypes.NO_CARDINALDIRECTION:
+				# getNextRiverID() is a pure getter - the DLL always pairs it with
+				# incrementNextRiverID() (see CvMapGenerator::doRiver). Without the
+				# increment every river on the map was given river ID 0, so joins()
+				# could never tell two rivers apart and riverLength/riverTurns were
+				# shared by every river at once.
 				riverID = self.gc.getMap().getNextRiverID()
+				self.gc.getMap().incrementNextRiverID()
 				self.riverLength[riverID] = 0
 				self.riverTurns[riverID] = 0
+				self.riversStarted += 1
 				self.addRiverFrom(x,y,flow,riverID)
 
 	def collateCoasts(self):
@@ -1823,9 +2111,9 @@ class riversFromSea:
 				return true
 			if (self.map.plot(x,y-1).isWater()):
 				return true
-			if (self.map.plot(x+1,y).isWater()):
+			if (self.map.plot(eastX,y).isWater()):			# was x+1, unwrapped
 				return true
-			if (self.map.plot(x+1,y-1).isWater()):
+			if (self.map.plot(eastX,y-1).isWater()):		# was x+1, unwrapped
 				return true
 		if (flow == CardinalDirectionTypes.CARDINALDIRECTION_SOUTH):
 			if (plot.isWOfRiver()):
@@ -1840,9 +2128,9 @@ class riversFromSea:
 				return true
 			if (self.map.plot(x,y+1).isWater()):
 				return true
-			if (self.map.plot(x+1,y).isWater()):
+			if (self.map.plot(eastX,y).isWater()):			# was x+1, unwrapped
 				return true
-			if (self.map.plot(x+1,y+1).isWater()):
+			if (self.map.plot(eastX,y+1).isWater()):		# was x+1, unwrapped
 				return true
 		return false
 
@@ -1875,7 +2163,12 @@ class riversFromSea:
 		nextY = y + yShift
 		if (nextX >= self.width):
 			nextX = 0
-		if (nextY >= self.height):
+		if (nextX < 0):
+			nextX = self.width - 1
+		if (nextY >= self.height) or (nextY < 0):
+			# nextY < 0 was missing: CyPlot wraps a NULL plot and answers every
+			# query with a harmless default, so a north-flowing river used to keep
+			# running off the top of the map instead of stopping
 			return
 		nextI = nextY*self.width + nextX
 		if (self.canFlowFrom(plot,self.map.plot(nextX,nextY)) == False):
@@ -1973,7 +2266,7 @@ class riversFromSea:
 	def westX(self,x):
 		westX = x - 1
 		if (westX < 0):
-			westX = self.width
+			westX = self.width - 1			# was self.width, one plot off the map
 		return westX
 
 	def eastX(self,x):
@@ -1984,8 +2277,20 @@ class riversFromSea:
 
 def addRivers2():
 	#riverGenerator = riversMap()
-	riverGenerator = riversFromSea()
-	riverGenerator.seedRivers()
+	t0 = dbgClock()
+	try:
+		riverGenerator = riversFromSea()
+		riverGenerator.riversWanted = 0
+		riverGenerator.riversStarted = 0
+		riverGenerator.coasts = []
+		riverGenerator.seedRivers()
+		dbg( "rivers: %i coastal plots, %i wanted, %i actually started, %i distinct river IDs (%.1fs)" %
+		     ( len(riverGenerator.coasts), riverGenerator.riversWanted,
+		       riverGenerator.riversStarted, len(riverGenerator.riverLength),
+		       dbgClock() - t0 ) )
+	except:
+		dbgTraceback( "addRivers2()" )
+		raise
 
 # ------------------------------
 # Temudjins Cool Starting Plots
@@ -2026,10 +2331,159 @@ def okMapEdge( x, y, ok=3 ):
 # END Temudjin's Cool Starting Plots
 # ----------------------------------
 
+# ---------------------------------------------------------------------------------
+# Bounded starting-plot search
+# ---------------------------------------------------------------------------------
+# CvMapGeneratorUtil.findStartingPlot() searches inside an unbounded 'while true'
+# loop and only leaves it once its validity-function accepts a plot with a positive
+# found-value. Its one relaxation knob is useless: iPass is only fed to
+# CvPlayer::startingPlotWithinRange(), which returns false unconditionally in the
+# BtS DLL. So a validity-function that can never be satisfied hangs map-generation
+# forever while printing a line to PythonDbg.log on every pass.
+#
+# That is exactly what happened on 'Islands': okLandPlots(x,y,10) wants more than 10
+# hill/flat plots in the 5x5 around the plot (peaks do not count), which a small
+# peak-heavy island simply cannot offer - and the area-preference pins the search to
+# one island at a time.
+#
+# The replacement below relaxes its demands pass by pass and always terminates.
+# ---------------------------------------------------------------------------------
+
+# ( minimum 5x5 land count, keep off the map edge, stay on the preferred area,
+#   stay out of the polar circle )
+startingPlotPasses = [ ( 10, True,  True,  True  ),
+                       (  6, True,  True,  True  ),
+                       (  3, True,  True,  True  ),
+                       ( -1, True,  True,  True  ),
+                       (  6, True,  False, True  ),
+                       ( -1, False, False, True  ),
+                       ( -1, False, False, False ) ]
+
+# cached result of buildLandCandidates(); reset for every new world in beforeGeneration()
+landCandidates = None
+
+def resetLandQuality():
+	global landCandidates
+	landCandidates = None
+
+def buildLandCandidates():
+	"""One entry per land plot: ( plotIndex, plot, quality, bEdgeOk, bLatitudeOk ),
+	   where quality is the number of hill/flat plots in the surrounding 5x5 - or 0
+	   when the inner 3x3 holds 3 or less of them. So 'quality > ok' is equivalent to
+	   okLandPlots(x,y,ok). Built once per world instead of once per plot, per pass
+	   and per player, which is what made the original search so slow."""
+	global landCandidates
+	if landCandidates != None:
+		return landCandidates
+
+	map = CyMap()
+	w = map.getGridWidth()
+	h = map.getGridHeight()
+	bWrapX = map.isWrapX()
+
+	land = [0] * (w*h)
+	for y in range(h):
+		for x in range(w):
+			plot = map.plot( x, y )
+			if plot.isHills() or plot.isFlatlands():
+				land[ y*w + x ] = 1
+
+	t0 = dbgClock()
+	landCandidates = []
+	for y in range(h):
+		for x in range(w):
+			plot = map.plot( x, y )
+			if plot.isWater(): continue
+			land5 = 0
+			land3 = 0
+			for dy in range(-2,3):
+				yy = y + dy
+				if (yy < 0) or (yy >= h): continue
+				for dx in range(-2,3):
+					xx = x + dx
+					if xx < 0:
+						if not bWrapX: continue
+						xx += w
+					elif xx >= w:
+						if not bWrapX: continue
+						xx -= w
+					if land[ yy*w + xx ] == 0: continue
+					land5 += 1
+					if (dy > -2) and (dy < 2) and (dx > -2) and (dx < 2):
+						land3 += 1
+			quality = 0
+			if land3 > 3:
+				quality = land5
+			landCandidates.append( ( y*w + x, plot, quality,
+			                         okMapEdge( x, y, 3 ), plot.getLatitude() < 75 ) )
+
+	nStrict = 0
+	for c in landCandidates:
+		if (c[2] > 10) and c[3] and c[4]: nStrict += 1
+	dbg( "startingPlot: %i land plots, %i of them pass the strict okLandPlots(10) test (%.1fs)"
+	     % ( len(landCandidates), nStrict, dbgClock() - t0 ) )
+	if nStrict == 0:
+		dbg( "startingPlot: NO plot anywhere passes the strict test - the old code would have hung here" )
+	return landCandidates
+
+def findBoundedStartingPlot( playerID, iPreferredArea, bCheckLatitude ):
+	gc = CyGlobalContext()
+	candidates = buildLandCandidates()
+	gc.getPlayer( playerID ).AI_updateFoundValues( True )
+
+	if len( candidates ) == 0:
+		dbg( "startingPlot: player %i - the map has no land plot at all" % playerID )
+		return -1
+
+	# How many plots the strict test would have accepted on the preferred area.
+	# 0 means the old CvMapGeneratorUtil.findStartingPlot() would have hung here.
+	iStrict = 0
+	iOnArea = 0
+	for ( i, plot, quality, bEdgeOk, bLatitudeOk ) in candidates:
+		if plot.getArea() != iPreferredArea: continue
+		iOnArea += 1
+		if (quality > 10) and bEdgeOk and (bLatitudeOk or not bCheckLatitude):
+			iStrict += 1
+	if iStrict == 0:
+		dbg( "startingPlot: player %i - area %i has %i land plots but NONE pass okLandPlots(10); "
+		     "this is where the old code looped forever" % ( playerID, iPreferredArea, iOnArea ) )
+
+	for iPass in range( len(startingPlotPasses) ):
+		( okLand, bEdge, bArea, bPolar ) = startingPlotPasses[ iPass ]
+		iBestValue = 0
+		iBestPlot = -1
+		for ( i, plot, quality, bEdgeOk, bLatitudeOk ) in candidates:
+			if quality <= okLand: continue
+			if bEdge and not bEdgeOk: continue
+			if bPolar and bCheckLatitude and not bLatitudeOk: continue
+			# areas get renumbered by the recalculateAreas() above, so this one
+			# cannot be cached with the rest
+			if bArea and (plot.getArea() != iPreferredArea): continue
+			iValue = plot.getFoundValue( playerID )
+			if iValue > iBestValue:
+				iBestValue = iValue
+				iBestPlot = i
+		if iBestPlot >= 0:
+			dbg( "startingPlot: player %i placed on pass %i %s (area %i, %i strict plots there, foundValue %i)"
+			     % ( playerID, iPass, str(startingPlotPasses[iPass]), iPreferredArea, iStrict, iBestValue ) )
+			return iBestPlot
+
+	# No land plot on the whole map carries a found-value - take any land at all
+	# rather than leaving the player without a start.
+	dbg( "startingPlot: player %i - no plot with a found-value anywhere, falling back to any land" % playerID )
+	return candidates[0][0]
+
 #
 # Starting position generation.
 #
 def findStartingPlot(argsList):
+	try:
+		return findStartingPlot2(argsList)
+	except:
+		dbgTraceback( "findStartingPlot()" )
+		raise
+
+def findStartingPlot2(argsList):
 	gc = CyGlobalContext()
 	map = CyMap()
 	map.recalculateAreas()
@@ -2077,19 +2531,10 @@ def findStartingPlot(argsList):
 		playerID = shuffledPlayers[assign_loop]
 		player = gc.getPlayer(playerID)
 		if (allOnBest):
-			def isValid(playerID, x, y):
-				map = CyMap()
-				pPlot = map.plot(x, y)
-				if (pPlot.getArea() != map.findBiggestArea(False).getID()):
-					return False
-				########## Temudjin START
-				#return True
-				# Also check for Temudjin's cool starting plots
-				return ( okLandPlots(x,y,10) and okMapEdge(x,y,3) )
-				########## Temudjin END
+			bestArea = map.findBiggestArea(False).getID()
+			bCheckLatitude = False
 		else:
 			bestAreaValue = 0
-			global bestArea
 			bestArea = -1
 			for area in areas:
 				if area.isWater(): continue
@@ -2104,23 +2549,21 @@ def findStartingPlot(argsList):
 				if (value > bestAreaValue):
 					bestAreaValue = value;
 					bestArea = area.getID()
+			bCheckLatitude = True
+			# bestArea stays -1 if no landmass scored anything - the later passes
+			# of findBoundedStartingPlot() drop the area preference and still find
+			# a plot, instead of searching for an area that does not exist.
 
-			#-----
-			def isValid(playerID, x, y):
-				global bestArea
-				plot = CyMap().plot(x,y)
-				if (plot.getArea() != bestArea):
-					return false
-				if (plot.getLatitude() >= 75):
-					return false
-				########## Temudjin START
-				#return True
-				# Also check for Temudjin's cool starting plots
-				return ( okLandPlots(x,y,10) and okMapEdge(x,y,3) )
-				########## Temudjin END
-			#-----
-
-		findstart = CvMapGeneratorUtil.findStartingPlot(playerID,isValid)
+		########## Temudjin START
+		#findstart = CvMapGeneratorUtil.findStartingPlot(playerID,isValid)
+		# CvMapGeneratorUtil.findStartingPlot() never returns when the cool-starting-
+		# plot test cannot be satisfied - see findBoundedStartingPlot() above.
+		findstart = findBoundedStartingPlot( playerID, bestArea, bCheckLatitude )
+		########## Temudjin END
+		if findstart < 0:
+			print "-- findStartingPlot(): no land on the map, using default implementation"
+			CyPythonMgr().allowDefaultImpl()
+			return
 		sPlot = map.plotByIndex(findstart)
 		player.setStartingPlot(sPlot,true)
 
