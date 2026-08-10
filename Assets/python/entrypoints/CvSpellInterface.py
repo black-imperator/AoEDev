@@ -13495,7 +13495,7 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 	if iCiv == gc.getInfoTypeForString("CIVILIZATION_BALSERAPHS"):
 		iHeroClass = gc.getInfoTypeForString("UNITCLASS_PERPENTACH")
 	if iCiv == gc.getInfoTypeForString("CIVILIZATION_CALABIM"):
-		iHeroClass = gc.getInfoTypeForString("UNITCLASS_LOSHA")
+		iHeroClass = gc.getInfoTypeForString("UNITCLASS_ADVENTURER")
 	if iCiv == gc.getInfoTypeForString("CIVILIZATION_CHISLEV"):
 		iHeroClass = gc.getInfoTypeForString("UNITCLASS_MESKWAKI")
 	if iCiv == gc.getInfoTypeForString("CIVILIZATION_HIPPUS"):
