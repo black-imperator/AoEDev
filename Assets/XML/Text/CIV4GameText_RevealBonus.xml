@@ -11856,6 +11856,48 @@ Unfortunately for your unit, misery loves company.</Spanish>
 		<Spanish>Empty Core</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_ELDER_DRAGON</Tag>
+		<English>Elder Dragon</English>
+		<French>Elder Dragon</French>
+		<German>Elder Dragon</German>
+		<Italian>Elder Dragon</Italian>
+		<Spanish>Elder Dragon</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ELDER_DRAGON_PEDIA</Tag>
+		<English>The largest of the dragons, Elder Dragons tower over castles and most giants. They are typically avoided by other dragons and most lair together in one remote location, the valley of seven pines, where the gods gathered to forge the compact. These dragons met Kylorin when he came to the valley, and allowed him to take the godslayer with him when he left. He occasionally returns and spends years with the Elder Dragons. Although all dragons are immune to mortal magic, Elder Dragons are even immune to the power of the gods (this was given to them as part of the compact, that they might enforce its commands). The roar of an elder dragon fractures creation, permanently leaving fissures of nothingness in the area. Elder Dragons don't collect anything, but they have a fondness for children of all species and are typically kind to them.</English>
+		<French>The largest of the dragons, Elder Dragons tower over castles and most giants. They are typically avoided by other dragons and most lair together in one remote location, the valley of seven pines, where the gods gathered to forge the compact. These dragons met Kylorin when he came to the valley, and allowed him to take the godslayer with him when he left. He occasionally returns and spends years with the Elder Dragons. Although all dragons are immune to mortal magic, Elder Dragons are even immune to the power of the gods (this was given to them as part of the compact, that they might enforce its commands). The roar of an elder dragon fractures creation, permanently leaving fissures of nothingness in the area. Elder Dragons don't collect anything, but they have a fondness for children of all species and are typically kind to them.</French>
+		<German>The largest of the dragons, Elder Dragons tower over castles and most giants. They are typically avoided by other dragons and most lair together in one remote location, the valley of seven pines, where the gods gathered to forge the compact. These dragons met Kylorin when he came to the valley, and allowed him to take the godslayer with him when he left. He occasionally returns and spends years with the Elder Dragons. Although all dragons are immune to mortal magic, Elder Dragons are even immune to the power of the gods (this was given to them as part of the compact, that they might enforce its commands). The roar of an elder dragon fractures creation, permanently leaving fissures of nothingness in the area. Elder Dragons don't collect anything, but they have a fondness for children of all species and are typically kind to them.</German>
+		<Italian>The largest of the dragons, Elder Dragons tower over castles and most giants. They are typically avoided by other dragons and most lair together in one remote location, the valley of seven pines, where the gods gathered to forge the compact. These dragons met Kylorin when he came to the valley, and allowed him to take the godslayer with him when he left. He occasionally returns and spends years with the Elder Dragons. Although all dragons are immune to mortal magic, Elder Dragons are even immune to the power of the gods (this was given to them as part of the compact, that they might enforce its commands). The roar of an elder dragon fractures creation, permanently leaving fissures of nothingness in the area. Elder Dragons don't collect anything, but they have a fondness for children of all species and are typically kind to them.</Italian>
+		<Spanish>The largest of the dragons, Elder Dragons tower over castles and most giants. They are typically avoided by other dragons and most lair together in one remote location, the valley of seven pines, where the gods gathered to forge the compact. These dragons met Kylorin when he came to the valley, and allowed him to take the godslayer with him when he left. He occasionally returns and spends years with the Elder Dragons. Although all dragons are immune to mortal magic, Elder Dragons are even immune to the power of the gods (this was given to them as part of the compact, that they might enforce its commands). The roar of an elder dragon fractures creation, permanently leaving fissures of nothingness in the area. Elder Dragons don't collect anything, but they have a fondness for children of all species and are typically kind to them.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_ELDER_DRAGON_CREATION</Tag>
+		<English>The Compact is null, cheated and skirted around time and time again.
+And now the envoy of Dagda has come to wipe the slate clean.
+So that the world may be reborn anew.</English>
+		<French>The Compact is null, cheated and skirted around time and time again.
+And now the envoy of Dagda has come to wipe the slate clean.
+So that the world may be reborn anew.</French>
+		<German>The Compact is null, cheated and skirted around time and time again.
+And now the envoy of Dagda has come to wipe the slate clean.
+So that the world may be reborn anew.</German>
+		<Italian>The Compact is null, cheated and skirted around time and time again.
+And now the envoy of Dagda has come to wipe the slate clean.
+So that the world may be reborn anew.</Italian>
+		<Spanish>The Compact is null, cheated and skirted around time and time again.
+And now the envoy of Dagda has come to wipe the slate clean.
+So that the world may be reborn anew.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_TRUE_CORE</Tag>
+		<English>True Core</English>
+		<French>True Core</French>
+		<German>True Core</German>
+		<Italian>True Core</Italian>
+		<Spanish>True Core</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_DRAGON_TEARS</Tag>
 		<English>The Dragon Tear Fountain</English>
 		<French>The Dragon Tear Fountain</French>

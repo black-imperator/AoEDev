@@ -60116,6 +60116,101 @@
 			<iPowerAdd>200</iPowerAdd>
 			<iPowerMult>10</iPowerMult>
 		</UnitInfo>
+		<UnitInfo>        <!-- Elder Dragon-->
+			<Class>UNITCLASS_ELDER_DRAGON</Class>
+			<Type>UNIT_ELDER_DRAGON</Type>
+			<Combat>UNITCOMBAT_BEAST</Combat>
+			<DefaultUnitAI>UNITAI_HERO</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_ELDER_DRAGON</Description>
+			<Civilopedia>TXT_KEY_UNIT_ELDER_DRAGON_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<bPillage>1</bPillage>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_HERO</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_CITY_DEFENSE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+			<iAIWeight>200</iAIWeight>
+			<iMoves>4</iMoves>
+			<iCombat>35</iCombat>
+			<iXPValueAttack>100</iXPValueAttack>
+			<iXPValueDefense>50</iXPValueDefense>
+			<!-- Collateral -->
+			<iCollateralDamage>100</iCollateralDamage>
+			<iCollateralDamageLimit>100</iCollateralDamageLimit>
+			<iCollateralDamageMaxUnits>6</iCollateralDamageMaxUnits>
+			<!-- /Collateral -->
+			<iCultureGarrison>16</iCultureGarrison>
+			<iAsset>38</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>1</iGroupSize>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_ELDER_DRAGON</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MAGIC_IMMUNE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_DRAGON</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_HERO</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MONSTROUS_CREATURE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_FLYING</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_CHANNELING1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_CHANNELING2</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_CHANNELING3</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_TRUE_CORE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+			<DenyPromotions>
+				<Promotion>PROMOTION_TAME</Promotion>
+			</DenyPromotions>
+			<iTier>4</iTier>
+			<Image>Art/Interface/Popups/AndrewMarKlauth.dds</Image>
+			<Quote>TXT_KEY_POPUP_ELDER_DRAGON_CREATION</Quote>
+			<iPowerAdd>200</iPowerAdd>
+			<iPowerMult>10</iPowerMult>
+		</UnitInfo>
 		<UnitInfo>        <!-- Kezef -->
 			<Class>UNITCLASS_KEZEF</Class>
 			<Type>UNIT_KEZEF</Type>

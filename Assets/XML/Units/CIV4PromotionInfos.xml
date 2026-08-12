@@ -14378,6 +14378,22 @@
 			</AuraBonuses>
 			<Button>Art/Interface/Buttons/Promotions/EmptyCore.dds</Button>
 		</PromotionInfo>
+		<PromotionInfo>		<!-- True Core -->
+			<Type>PROMOTION_TRUE_CORE</Type>
+			<Description>TXT_KEY_PROMOTION_TRUE_CORE</Description>
+			<bNoXP>1</bNoXP>
+			<PromotionCombatMods>
+				<PromotionCombatMod>
+					<PromotionType>PROMOTION_AVATAR</PromotionType>
+					<iCombatMod>70</iCombatMod>
+				</PromotionCombatMod>
+				<PromotionCombatMod>
+					<PromotionType>PROMOTION_DRAGON</PromotionType>
+					<iCombatMod>15</iCombatMod>
+				</PromotionCombatMod>
+			</PromotionCombatMods>
+			<Button>Art/Interface/Buttons/Promotions/TrueCore.dds</Button>
+		</PromotionInfo>
 		<PromotionInfo>		<!-- Blood Dragon Aura -->
 			<Type>PROMOTION_BLOOD_DRAGON_AURA</Type>
 			<Description>TXT_KEY_PROMOTION_BLOOD_DRAGON_AURA</Description>
