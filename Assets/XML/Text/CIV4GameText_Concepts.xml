@@ -2301,4 +2301,470 @@ Dungeon lairs can contain nearly anything.
 [NEWLINE]
 [NEWLINE]</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_KANTOLIN_PERCEPTION</Tag>
+		<English>Kantolin's Quick Perception Guide</English>
+		<French>Kantolin's Quick Perception Guide</French>
+		<German>Kantolin's Quick Perception Guide</German>
+		<Italian>Kantolin's Quick Perception Guide</Italian>
+		<Spanish>Kantolin's Quick Perception Guide</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_KANTOLIN_PERCEPTION_PEDIA</Tag>
+		<English>Kantolin's Quick Perception Guide!
+
+(Not absolutely comprehensive, but should be a good list?)
+
+Base Units: (Base Perception)
+Scout:  2 
+Hunter:  2 
+Ranger:  2 
+Beastmaster: 2 
+Hawk: 4
+Marksman: 3 
+Celvar (Hamstalfar): 4
+Chalid Astrakein (Empyrean): 2
+Corgayle Ascendwed (Mekara): 3
+Deadeye (Jotnar): 3
+Devout (Elohim): 2
+Evangelist (Elohim): 2
+Apostle (Elohim): 2
+Dietrich, Chosen of Hali (Teuhali Order): 3
+Feris (Mechanos): 3
+Giant Spider: 2
+Gothi (Jotnar): 2
+Greater Werewolf: 2
+Hamstertruppen (Hamstalfar): 2
+Harmatt (Austrin): 2
+Miquiztli (Cualli): 2
+Mouth of the Divine (Jotnar): 3
+Ravenous Werewolf: 2
+Shadow Priest of Arguonn: 2
+Solar (Mercurian): 5
+Taranis Ascended (Illians, Frozen): 3
+Arcane Barge: Casts Floating Eye, which is a 3
+
+Religious Units: 
+Ecclessiastic: 1
+Vicar: 2 
+Luridus: 2
+Radiant Guard: 3
+Ratha: 3
+Fawn: 2
+Satyr: 2
+Elder Satyr: 2
+Kithra Kyriel: 3
+Emryss (Sheaim, Veil): 3
+High Priest of the Emyress (Sheaim, Veil): 3
+
+Animal Units: 
+Bats: 8
+Kraken: 3
+Kraken Spawn: 3
+Videlicet (Scorpion promotion): 3
+Spider: 2
+Giant Spider: 2
+Wyrm (All of them): 2
+
+Spells:
+Floating Eye (Metamagic 1): 3
+Illuminating Light (Sun 1): Stack gets +2 Perception
+Crown of Brilliance (Empyrean Archpriest): +2
+Revelation (Empyrean Priest): +3
+(Surprisingly, not Aurealis)
+Burning Eye (Sheaim, Fire 2): 6
+Sand Lion (Malakim, Channeling 2): 2
+
+Promotions: 
+Sentry 1: +1 (Requires combat 1 and the tracking technology, or the cathedral of tali)
+Sentry 2: +1 (Requires sentry 1, only Recon, Archery, Worker, and Commanders)
+Perfect Sight: +2 (Requires Sentry 2, only Recon, Archery, and Commander)
+Dinosaur Blood: +1
+Dragon: +1
+Flying: +1
+Giantkin: +1
+Griffon Blood: +1
+Monstrous Creature: +1
+Videlicet (Scorpion promotion): 3
+Deepened Vision (Vicious Seas, Megalair): +1 
+Pack Alpha (Werewolf level 6): +1
+Help! I am being attacked by a...
+Thief (Stealth 1): Any recon unit
+
+Assassin (Stealth 2): Hawk, Floating Eye (Meta 1), Recon with a bump (Sun 1 adept, Dinosaur blood, Sentry 1).
+
+Shadow (Stealth 4): Combine effects.  Recon with sun 1 and sentry, Recon with Dinosaur Blood and Sentry 2, Vicar using Revelation, Kithra Kyriel with Sentry and Deepened Vision.
+
+Mask of the Coven (Stealth 8): Recon with Perfect Sight, Illuminating Light, and a blood promotion.  Marksman can do it without the extra blood needed.  A bat with any buff can do it (Try illuminating light)
+
+Always works: Light of Lugus is a ritual learned with the Way of the Wise technology, and automatically reveals anyone in your civilization's borders that is stealthed.  Building Deis Dei (Requires the holy city of Empyrean and a great prophet) gives you a permanent Light of Lugus effect.
+
+High Defense: The Guardsman promotion (requires Combat 2 or City Defense 2) lets a Beast unit or a Defensive Melee unit protect the stack against assassins or shadows.  Assassins are 8s, and thus may struggle to get through a spearsman with iron (That's a 7 plus you get defensive bonus), let alone pikemen.  If concerned further, you can also learn guardsman 2, giving you a +50% bonus against rogue units - this enables a pikemen with iron to block a shadow, presuming equal promotions.  The Patrol promotion line lowers crime in a city and simultaneously helps the unit be yet further resistant to rogue units, so you could stack all of these and have a good unit with Guardsman 2 and Patrol 3 who makes the stack functionally immune to rogues.
+
+Bring multiple defenders and a good healer if you're worried about successive attacks.</English>
+		<French>Kantolin's Quick Perception Guide!
+
+(Not absolutely comprehensive, but should be a good list?)
+
+Base Units: (Base Perception)
+Scout:  2 
+Hunter:  2 
+Ranger:  2 
+Beastmaster: 2 
+Hawk: 4
+Marksman: 3 
+Celvar (Hamstalfar): 4
+Chalid Astrakein (Empyrean): 2
+Corgayle Ascendwed (Mekara): 3
+Deadeye (Jotnar): 3
+Devout (Elohim): 2
+Evangelist (Elohim): 2
+Apostle (Elohim): 2
+Dietrich, Chosen of Hali (Teuhali Order): 3
+Feris (Mechanos): 3
+Giant Spider: 2
+Gothi (Jotnar): 2
+Greater Werewolf: 2
+Hamstertruppen (Hamstalfar): 2
+Harmatt (Austrin): 2
+Miquiztli (Cualli): 2
+Mouth of the Divine (Jotnar): 3
+Ravenous Werewolf: 2
+Shadow Priest of Arguonn: 2
+Solar (Mercurian): 5
+Taranis Ascended (Illians, Frozen): 3
+Arcane Barge: Casts Floating Eye, which is a 3
+
+Religious Units: 
+Ecclessiastic: 1
+Vicar: 2 
+Luridus: 2
+Radiant Guard: 3
+Ratha: 3
+Fawn: 2
+Satyr: 2
+Elder Satyr: 2
+Kithra Kyriel: 3
+Emryss (Sheaim, Veil): 3
+High Priest of the Emyress (Sheaim, Veil): 3
+
+Animal Units: 
+Bats: 8
+Kraken: 3
+Kraken Spawn: 3
+Videlicet (Scorpion promotion): 3
+Spider: 2
+Giant Spider: 2
+Wyrm (All of them): 2
+
+Spells:
+Floating Eye (Metamagic 1): 3
+Illuminating Light (Sun 1): Stack gets +2 Perception
+Crown of Brilliance (Empyrean Archpriest): +2
+Revelation (Empyrean Priest): +3
+(Surprisingly, not Aurealis)
+Burning Eye (Sheaim, Fire 2): 6
+Sand Lion (Malakim, Channeling 2): 2
+
+Promotions: 
+Sentry 1: +1 (Requires combat 1 and the tracking technology, or the cathedral of tali)
+Sentry 2: +1 (Requires sentry 1, only Recon, Archery, Worker, and Commanders)
+Perfect Sight: +2 (Requires Sentry 2, only Recon, Archery, and Commander)
+Dinosaur Blood: +1
+Dragon: +1
+Flying: +1
+Giantkin: +1
+Griffon Blood: +1
+Monstrous Creature: +1
+Videlicet (Scorpion promotion): 3
+Deepened Vision (Vicious Seas, Megalair): +1 
+Pack Alpha (Werewolf level 6): +1
+Help! I am being attacked by a...
+Thief (Stealth 1): Any recon unit
+
+Assassin (Stealth 2): Hawk, Floating Eye (Meta 1), Recon with a bump (Sun 1 adept, Dinosaur blood, Sentry 1).
+
+Shadow (Stealth 4): Combine effects.  Recon with sun 1 and sentry, Recon with Dinosaur Blood and Sentry 2, Vicar using Revelation, Kithra Kyriel with Sentry and Deepened Vision.
+
+Mask of the Coven (Stealth 8): Recon with Perfect Sight, Illuminating Light, and a blood promotion.  Marksman can do it without the extra blood needed.  A bat with any buff can do it (Try illuminating light)
+
+Always works: Light of Lugus is a ritual learned with the Way of the Wise technology, and automatically reveals anyone in your civilization's borders that is stealthed.  Building Deis Dei (Requires the holy city of Empyrean and a great prophet) gives you a permanent Light of Lugus effect.
+
+High Defense: The Guardsman promotion (requires Combat 2 or City Defense 2) lets a Beast unit or a Defensive Melee unit protect the stack against assassins or shadows.  Assassins are 8s, and thus may struggle to get through a spearsman with iron (That's a 7 plus you get defensive bonus), let alone pikemen.  If concerned further, you can also learn guardsman 2, giving you a +50% bonus against rogue units - this enables a pikemen with iron to block a shadow, presuming equal promotions.  The Patrol promotion line lowers crime in a city and simultaneously helps the unit be yet further resistant to rogue units, so you could stack all of these and have a good unit with Guardsman 2 and Patrol 3 who makes the stack functionally immune to rogues.
+
+Bring multiple defenders and a good healer if you're worried about successive attacks.</French>
+		<German>Kantolin's Quick Perception Guide!
+
+(Not absolutely comprehensive, but should be a good list?)
+
+Base Units: (Base Perception)
+Scout:  2 
+Hunter:  2 
+Ranger:  2 
+Beastmaster: 2 
+Hawk: 4
+Marksman: 3 
+Celvar (Hamstalfar): 4
+Chalid Astrakein (Empyrean): 2
+Corgayle Ascendwed (Mekara): 3
+Deadeye (Jotnar): 3
+Devout (Elohim): 2
+Evangelist (Elohim): 2
+Apostle (Elohim): 2
+Dietrich, Chosen of Hali (Teuhali Order): 3
+Feris (Mechanos): 3
+Giant Spider: 2
+Gothi (Jotnar): 2
+Greater Werewolf: 2
+Hamstertruppen (Hamstalfar): 2
+Harmatt (Austrin): 2
+Miquiztli (Cualli): 2
+Mouth of the Divine (Jotnar): 3
+Ravenous Werewolf: 2
+Shadow Priest of Arguonn: 2
+Solar (Mercurian): 5
+Taranis Ascended (Illians, Frozen): 3
+Arcane Barge: Casts Floating Eye, which is a 3
+
+Religious Units: 
+Ecclessiastic: 1
+Vicar: 2 
+Luridus: 2
+Radiant Guard: 3
+Ratha: 3
+Fawn: 2
+Satyr: 2
+Elder Satyr: 2
+Kithra Kyriel: 3
+Emryss (Sheaim, Veil): 3
+High Priest of the Emyress (Sheaim, Veil): 3
+
+Animal Units: 
+Bats: 8
+Kraken: 3
+Kraken Spawn: 3
+Videlicet (Scorpion promotion): 3
+Spider: 2
+Giant Spider: 2
+Wyrm (All of them): 2
+
+Spells:
+Floating Eye (Metamagic 1): 3
+Illuminating Light (Sun 1): Stack gets +2 Perception
+Crown of Brilliance (Empyrean Archpriest): +2
+Revelation (Empyrean Priest): +3
+(Surprisingly, not Aurealis)
+Burning Eye (Sheaim, Fire 2): 6
+Sand Lion (Malakim, Channeling 2): 2
+
+Promotions: 
+Sentry 1: +1 (Requires combat 1 and the tracking technology, or the cathedral of tali)
+Sentry 2: +1 (Requires sentry 1, only Recon, Archery, Worker, and Commanders)
+Perfect Sight: +2 (Requires Sentry 2, only Recon, Archery, and Commander)
+Dinosaur Blood: +1
+Dragon: +1
+Flying: +1
+Giantkin: +1
+Griffon Blood: +1
+Monstrous Creature: +1
+Videlicet (Scorpion promotion): 3
+Deepened Vision (Vicious Seas, Megalair): +1 
+Pack Alpha (Werewolf level 6): +1
+Help! I am being attacked by a...
+Thief (Stealth 1): Any recon unit
+
+Assassin (Stealth 2): Hawk, Floating Eye (Meta 1), Recon with a bump (Sun 1 adept, Dinosaur blood, Sentry 1).
+
+Shadow (Stealth 4): Combine effects.  Recon with sun 1 and sentry, Recon with Dinosaur Blood and Sentry 2, Vicar using Revelation, Kithra Kyriel with Sentry and Deepened Vision.
+
+Mask of the Coven (Stealth 8): Recon with Perfect Sight, Illuminating Light, and a blood promotion.  Marksman can do it without the extra blood needed.  A bat with any buff can do it (Try illuminating light)
+
+Always works: Light of Lugus is a ritual learned with the Way of the Wise technology, and automatically reveals anyone in your civilization's borders that is stealthed.  Building Deis Dei (Requires the holy city of Empyrean and a great prophet) gives you a permanent Light of Lugus effect.
+
+High Defense: The Guardsman promotion (requires Combat 2 or City Defense 2) lets a Beast unit or a Defensive Melee unit protect the stack against assassins or shadows.  Assassins are 8s, and thus may struggle to get through a spearsman with iron (That's a 7 plus you get defensive bonus), let alone pikemen.  If concerned further, you can also learn guardsman 2, giving you a +50% bonus against rogue units - this enables a pikemen with iron to block a shadow, presuming equal promotions.  The Patrol promotion line lowers crime in a city and simultaneously helps the unit be yet further resistant to rogue units, so you could stack all of these and have a good unit with Guardsman 2 and Patrol 3 who makes the stack functionally immune to rogues.
+
+Bring multiple defenders and a good healer if you're worried about successive attacks.</German>
+		<Italian>Kantolin's Quick Perception Guide!
+
+(Not absolutely comprehensive, but should be a good list?)
+
+Base Units: (Base Perception)
+Scout:  2 
+Hunter:  2 
+Ranger:  2 
+Beastmaster: 2 
+Hawk: 4
+Marksman: 3 
+Celvar (Hamstalfar): 4
+Chalid Astrakein (Empyrean): 2
+Corgayle Ascendwed (Mekara): 3
+Deadeye (Jotnar): 3
+Devout (Elohim): 2
+Evangelist (Elohim): 2
+Apostle (Elohim): 2
+Dietrich, Chosen of Hali (Teuhali Order): 3
+Feris (Mechanos): 3
+Giant Spider: 2
+Gothi (Jotnar): 2
+Greater Werewolf: 2
+Hamstertruppen (Hamstalfar): 2
+Harmatt (Austrin): 2
+Miquiztli (Cualli): 2
+Mouth of the Divine (Jotnar): 3
+Ravenous Werewolf: 2
+Shadow Priest of Arguonn: 2
+Solar (Mercurian): 5
+Taranis Ascended (Illians, Frozen): 3
+Arcane Barge: Casts Floating Eye, which is a 3
+
+Religious Units: 
+Ecclessiastic: 1
+Vicar: 2 
+Luridus: 2
+Radiant Guard: 3
+Ratha: 3
+Fawn: 2
+Satyr: 2
+Elder Satyr: 2
+Kithra Kyriel: 3
+Emryss (Sheaim, Veil): 3
+High Priest of the Emyress (Sheaim, Veil): 3
+
+Animal Units: 
+Bats: 8
+Kraken: 3
+Kraken Spawn: 3
+Videlicet (Scorpion promotion): 3
+Spider: 2
+Giant Spider: 2
+Wyrm (All of them): 2
+
+Spells:
+Floating Eye (Metamagic 1): 3
+Illuminating Light (Sun 1): Stack gets +2 Perception
+Crown of Brilliance (Empyrean Archpriest): +2
+Revelation (Empyrean Priest): +3
+(Surprisingly, not Aurealis)
+Burning Eye (Sheaim, Fire 2): 6
+Sand Lion (Malakim, Channeling 2): 2
+
+Promotions: 
+Sentry 1: +1 (Requires combat 1 and the tracking technology, or the cathedral of tali)
+Sentry 2: +1 (Requires sentry 1, only Recon, Archery, Worker, and Commanders)
+Perfect Sight: +2 (Requires Sentry 2, only Recon, Archery, and Commander)
+Dinosaur Blood: +1
+Dragon: +1
+Flying: +1
+Giantkin: +1
+Griffon Blood: +1
+Monstrous Creature: +1
+Videlicet (Scorpion promotion): 3
+Deepened Vision (Vicious Seas, Megalair): +1 
+Pack Alpha (Werewolf level 6): +1
+Help! I am being attacked by a...
+Thief (Stealth 1): Any recon unit
+
+Assassin (Stealth 2): Hawk, Floating Eye (Meta 1), Recon with a bump (Sun 1 adept, Dinosaur blood, Sentry 1).
+
+Shadow (Stealth 4): Combine effects.  Recon with sun 1 and sentry, Recon with Dinosaur Blood and Sentry 2, Vicar using Revelation, Kithra Kyriel with Sentry and Deepened Vision.
+
+Mask of the Coven (Stealth 8): Recon with Perfect Sight, Illuminating Light, and a blood promotion.  Marksman can do it without the extra blood needed.  A bat with any buff can do it (Try illuminating light)
+
+Always works: Light of Lugus is a ritual learned with the Way of the Wise technology, and automatically reveals anyone in your civilization's borders that is stealthed.  Building Deis Dei (Requires the holy city of Empyrean and a great prophet) gives you a permanent Light of Lugus effect.
+
+High Defense: The Guardsman promotion (requires Combat 2 or City Defense 2) lets a Beast unit or a Defensive Melee unit protect the stack against assassins or shadows.  Assassins are 8s, and thus may struggle to get through a spearsman with iron (That's a 7 plus you get defensive bonus), let alone pikemen.  If concerned further, you can also learn guardsman 2, giving you a +50% bonus against rogue units - this enables a pikemen with iron to block a shadow, presuming equal promotions.  The Patrol promotion line lowers crime in a city and simultaneously helps the unit be yet further resistant to rogue units, so you could stack all of these and have a good unit with Guardsman 2 and Patrol 3 who makes the stack functionally immune to rogues.
+
+Bring multiple defenders and a good healer if you're worried about successive attacks.</Italian>
+		<Spanish>Kantolin's Quick Perception Guide!
+
+(Not absolutely comprehensive, but should be a good list?)
+
+Base Units: (Base Perception)
+Scout:  2 
+Hunter:  2 
+Ranger:  2 
+Beastmaster: 2 
+Hawk: 4
+Marksman: 3 
+Celvar (Hamstalfar): 4
+Chalid Astrakein (Empyrean): 2
+Corgayle Ascendwed (Mekara): 3
+Deadeye (Jotnar): 3
+Devout (Elohim): 2
+Evangelist (Elohim): 2
+Apostle (Elohim): 2
+Dietrich, Chosen of Hali (Teuhali Order): 3
+Feris (Mechanos): 3
+Giant Spider: 2
+Gothi (Jotnar): 2
+Greater Werewolf: 2
+Hamstertruppen (Hamstalfar): 2
+Harmatt (Austrin): 2
+Miquiztli (Cualli): 2
+Mouth of the Divine (Jotnar): 3
+Ravenous Werewolf: 2
+Shadow Priest of Arguonn: 2
+Solar (Mercurian): 5
+Taranis Ascended (Illians, Frozen): 3
+Arcane Barge: Casts Floating Eye, which is a 3
+
+Religious Units: 
+Ecclessiastic: 1
+Vicar: 2 
+Luridus: 2
+Radiant Guard: 3
+Ratha: 3
+Fawn: 2
+Satyr: 2
+Elder Satyr: 2
+Kithra Kyriel: 3
+Emryss (Sheaim, Veil): 3
+High Priest of the Emyress (Sheaim, Veil): 3
+
+Animal Units: 
+Bats: 8
+Kraken: 3
+Kraken Spawn: 3
+Videlicet (Scorpion promotion): 3
+Spider: 2
+Giant Spider: 2
+Wyrm (All of them): 2
+
+Spells:
+Floating Eye (Metamagic 1): 3
+Illuminating Light (Sun 1): Stack gets +2 Perception
+Crown of Brilliance (Empyrean Archpriest): +2
+Revelation (Empyrean Priest): +3
+(Surprisingly, not Aurealis)
+Burning Eye (Sheaim, Fire 2): 6
+Sand Lion (Malakim, Channeling 2): 2
+
+Promotions: 
+Sentry 1: +1 (Requires combat 1 and the tracking technology, or the cathedral of tali)
+Sentry 2: +1 (Requires sentry 1, only Recon, Archery, Worker, and Commanders)
+Perfect Sight: +2 (Requires Sentry 2, only Recon, Archery, and Commander)
+Dinosaur Blood: +1
+Dragon: +1
+Flying: +1
+Giantkin: +1
+Griffon Blood: +1
+Monstrous Creature: +1
+Videlicet (Scorpion promotion): 3
+Deepened Vision (Vicious Seas, Megalair): +1 
+Pack Alpha (Werewolf level 6): +1
+Help! I am being attacked by a...
+Thief (Stealth 1): Any recon unit
+
+Assassin (Stealth 2): Hawk, Floating Eye (Meta 1), Recon with a bump (Sun 1 adept, Dinosaur blood, Sentry 1).
+
+Shadow (Stealth 4): Combine effects.  Recon with sun 1 and sentry, Recon with Dinosaur Blood and Sentry 2, Vicar using Revelation, Kithra Kyriel with Sentry and Deepened Vision.
+
+Mask of the Coven (Stealth 8): Recon with Perfect Sight, Illuminating Light, and a blood promotion.  Marksman can do it without the extra blood needed.  A bat with any buff can do it (Try illuminating light)
+
+Always works: Light of Lugus is a ritual learned with the Way of the Wise technology, and automatically reveals anyone in your civilization's borders that is stealthed.  Building Deis Dei (Requires the holy city of Empyrean and a great prophet) gives you a permanent Light of Lugus effect.
+
+High Defense: The Guardsman promotion (requires Combat 2 or City Defense 2) lets a Beast unit or a Defensive Melee unit protect the stack against assassins or shadows.  Assassins are 8s, and thus may struggle to get through a spearsman with iron (That's a 7 plus you get defensive bonus), let alone pikemen.  If concerned further, you can also learn guardsman 2, giving you a +50% bonus against rogue units - this enables a pikemen with iron to block a shadow, presuming equal promotions.  The Patrol promotion line lowers crime in a city and simultaneously helps the unit be yet further resistant to rogue units, so you could stack all of these and have a good unit with Guardsman 2 and Patrol 3 who makes the stack functionally immune to rogues.
+
+Bring multiple defenders and a good healer if you're worried about successive attacks.</Spanish>
+	</TEXT>
 </Civ4GameText>

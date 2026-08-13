@@ -3907,7 +3907,8 @@ def spellSanctify(caster):
         iCrossroad = getInfoType('UNIT_DEVILCASTER')
 	if iImprovement == getInfoType('IMPROVEMENT_AERON_VAULTGATE'):
 		pPlot.setImprovementType(-1)
-		pPlot.setBonusType(-1)
+		if gc.getBonusInfo(pPlot.getBonusType(-1)).getBonusClassType() == getInfoType('BONUSCLASS_MANA'):
+			pPlot.setBonusType(-1)
 		pPlayer.changeGlobalCounterContrib(-1)
                 for x,y in plotsInRange( caster.getX(), caster.getY(), iRange ):
                         pPlot = getPlot(x,y)
