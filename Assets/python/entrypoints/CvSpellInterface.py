@@ -11413,6 +11413,17 @@ def reqCorgayleChanneling2(pCaster):
 		return False
 	return True
 #Seems fine
+
+def spellRealityBreak(caster):
+	pPlot = caster.plot()
+	pCity = caster.plot().getPlotCity()
+	if not pPlot.isWater():
+		pPlot.setPlotType(PlotTypes.PLOT_LAND, True, True)
+	pPlot.setFeatureType(getInfoType('FEATURE_NON_PLANAR'), -1)
+	pPlot.setBonusType(-1)
+	pCity.kill()
+	pPlot.setImprovementType(-1)
+	
 def spellBloom(caster):
 	pPlot = caster.plot()
 	iTerrain = pPlot.getTerrainType()
