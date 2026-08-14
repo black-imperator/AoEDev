@@ -13535,22 +13535,10 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 			lUnitList.append([iHeroClass, 1, 2500])
 
 	# let's sett1e units
-	iUCMelee		= gc.getInfoTypeForString("UNITCLASS_SPEARMAN")
-	if iCiv == gc.getInfoTypeForString("CIVILIZATION_HIPPUS"):
-		iUCMelee	= gc.getInfoTypeForString("UNITCLASS_HORSEMAN")
-	if iCiv == gc.getInfoTypeForString("CIVILIZATION_DTESH"):
-		iUCMelee	= gc.getInfoTypeForString("UNITCLASS_SPEARMAN")
-	if iCiv == gc.getInfoTypeForString("CIVILIZATION_MEKARA"):
-		iUCMelee	= gc.getInfoTypeForString("UNITCLASS_HUNTER")
-	if iCiv == gc.getInfoTypeForString("CIVILIZATION_SHEAIM"):
-		iUCMelee	= gc.getInfoTypeForString("UNITCLASS_PYRE_ZOMBIE")
-	iUCRanged		= gc.getInfoTypeForString("UNITCLASS_ARCHER")
-	if iCiv == gc.getInfoTypeForString("CIVILIZATION_HIPPUS"):
-		iUCRanged	= gc.getInfoTypeForString("UNITCLASS_HORSEMAN")
-	if iLeader == gc.getInfoTypeForString("LEADER_TRISTESSA"):
-		iUCRanged	= gc.getInfoTypeForString("UNITCLASS_HORSEMAN")
-	iUCRecon		= gc.getInfoTypeForString("UNITCLASS_HUNTER")
-	iUCAdept		= gc.getInfoTypeForString("UNITCLASS_ADEPT")
+	iUCMelee		= gc.getInfoTypeForString("UNITCLASS_WARRIOR")
+	iUCRanged		= gc.getInfoTypeForString("UNITCLASS_WARRIOR")
+	iUCRecon		= gc.getInfoTypeForString("UNITCLASS_SCOUT")
+	iUCAdept		= gc.getInfoTypeForString("UNITCLASS_SCOUT")
 	# If you want to spawn nonconventional civs, like D'Tesh you'll need to change Workers/Settlers here
 	iUCWorker		= gc.getInfoTypeForString("UNITCLASS_WORKER")
 	if iCiv == gc.getInfoTypeForString("CIVILIZATION_LANUN"):
@@ -13566,9 +13554,9 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 	iUCReconT3		= -1
 	iUCAdeptT3		= -1
 	# their base count
-	iCountMelee		= 3
-	iCountRanged	= 3
-	iCountRecon		= 3
+	iCountMelee		= 2
+	iCountRanged	= 2
+	iCountRecon		= 2
 	iCountAdept		= 2
 	iCountWorker	= 2
 	iCountSettler	= 2
@@ -13594,6 +13582,13 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 		iDiscipleTech	= gc.getInfoTypeForString("TECH_COMMUNE_WITH_NATURE")
 
 	if pNewPlayer.isHasTech(gc.getInfoTypeForString('TECH_BRONZE_WORKING')):
+		iUCMelee		= gc.getInfoTypeForString("UNITCLASS_SPEARMAN")
+		if iCiv == gc.getInfoTypeForString("CIVILIZATION_HIPPUS"):
+			iUCMelee	= gc.getInfoTypeForString("UNITCLASS_HORSEMAN")
+		if iCiv == gc.getInfoTypeForString("CIVILIZATION_MEKARA"):
+			iUCMelee	= gc.getInfoTypeForString("UNITCLASS_HUNTER")
+		if iCiv == gc.getInfoTypeForString("CIVILIZATION_SHEAIM"):
+			iUCMelee	= gc.getInfoTypeForString("UNITCLASS_PYRE_ZOMBIE")
 		iCountMelee		+= 4
 		iCountWorker	+= 1
 		iCountSettler	+= 1
@@ -13604,14 +13599,12 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 	if pNewPlayer.isHasTech(gc.getInfoTypeForString('TECH_IRON_WORKING')):
 		# let's change our melee unit for a beter one
 		iUCMelee		= gc.getInfoTypeForString("UNITCLASS_PIKEMAN")
-		if iCiv == gc.getInfoTypeForString("CIVILIZATION_DTESH"):
-			iUCMelee	= gc.getInfoTypeForString("UNITCLASS_PIKEMAN")
 		if iCiv == gc.getInfoTypeForString("CIVILIZATION_MEKARA"):
 			iUCMelee	= gc.getInfoTypeForString("UNITCLASS_RANGER")
 		if iCiv == gc.getInfoTypeForString("CIVILIZATION_SHEAIM"):
 			iUCMelee	= gc.getInfoTypeForString("UNITCLASS_SUCCUBUS")
 		# and add a few more units
-		iCountMelee		+= 8
+		iCountMelee		+= 9
 		iCountWorker	+= 3
 		iCountSettler	+= 1
 		iCountSupp		+= 3
@@ -13619,6 +13612,11 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 		iXPWorker		= 10
 
 	if pNewPlayer.isHasTech(gc.getInfoTypeForString('TECH_ARCHERY')):
+		iUCRanged		= gc.getInfoTypeForString("UNITCLASS_ARCHER")
+		if iCiv == gc.getInfoTypeForString("CIVILIZATION_HIPPUS"):
+			iUCRanged	= gc.getInfoTypeForString("UNITCLASS_HORSEMAN")
+		if iLeader == gc.getInfoTypeForString("LEADER_TRISTESSA"):
+			iUCRanged	= gc.getInfoTypeForString("UNITCLASS_HORSEMAN")
 		iCountRanged	+= 4
 		iCountWorker	+= 1
 		iCountSettler	+= 1
@@ -13636,14 +13634,15 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 			iUCRanged	= gc.getInfoTypeForString("UNITCLASS_HORSE_ARCHER")
 		if iLeader == gc.getInfoTypeForString("LEADER_TRISTESSA"):
 			iUCRanged	= gc.getInfoTypeForString("UNITCLASS_HORSE_ARCHER")
-		iCountRanged	+= 8
+		iCountRanged	+= 9
 		iCountWorker	+= 3
 		iCountSettler	+= 1
 		iCountSupp		+= 3
 		iXPRanged		= 10
 		iXPWorker		= 10
 
-	if pNewPlayer.isHasTech(gc.getInfoTypeForString('TECH_TRACKING')):
+	if pNewPlayer.isHasTech(gc.getInfoTypeForString('TECH_HUNTING')):
+		iUCRecon		= gc.getInfoTypeForString("UNITCLASS_HUNTER")
 		iCountRecon		+= 4
 		iCountWorker	+= 1
 		iCountSettler	+= 1
@@ -13659,7 +13658,7 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 			iUCRecon	= gc.getInfoTypeForString("UNITCLASS_HORSE_ARCHER")
 		if iCiv == gc.getInfoTypeForString("CIVILIZATION_LUCHUIRP"):
 			iUCRecon	= gc.getInfoTypeForString("UNITCLASS_ASSASSIN")
-		iCountRecon		+= 8
+		iCountRecon		+= 9
 		iCountWorker	+= 3
 		iCountSettler	+= 1
 		iCountSupp		+= 3
@@ -13667,6 +13666,7 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 		iXPWorker		= 10
 
 	if pNewPlayer.isHasTech(gc.getInfoTypeForString('TECH_KNOWLEDGE_OF_THE_ETHER')):
+		iUCAdept		= gc.getInfoTypeForString("UNITCLASS_ADEPT")
 		iCountAdept		+= 2
 		iCountWorker	+= 1
 		iCountSettler	+= 1

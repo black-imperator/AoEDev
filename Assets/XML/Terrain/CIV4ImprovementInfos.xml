@@ -12819,6 +12819,14 @@
 					<GoodyClassType>GOODYCLASS_LEGION</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_VAMPIRES</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_FADED</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
 			</GoodyClasses>
 		</ImprovementInfo>
 		<ImprovementInfo><!-- Cliffs of Kelle -->
@@ -14180,10 +14188,6 @@
 				</GoodyClass>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_LEGION</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_VAMPIRES</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 				<GoodyClass>
