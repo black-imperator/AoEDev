@@ -1,5 +1,5 @@
 ##############################################################################
-## File: ErebusContinent.py version 2.57
+## File: ErebusContinent.py version 2.58
 ## Author: Keith Sponburgh (Seven05) based on FaireWeather.py by Rich Marinaccio
 ## Copyright 2008 Rich Marinaccio
 ##############################################################################
@@ -8,9 +8,10 @@
 ## Europe or Africa rather than an entire global world.  The script attempts to
 ## generate a single primary landmass with a highly detailed coastline and
 ## features that are interesting and add a believable atmosphere to the game
-## world.  Being a regional map, features such as wrapping are only partially
-## supported, they work from a functional standpoint however the world isn't
-## created with wrapping in mind so there may be anomolies near the world edges.
+## world.  Being a regional map, wrapping defaults to off, but as of 2.58 an
+## enabled axis is wrapped by the generator as well as reported to the engine,
+## so coastlines and landmasses carry across the seam instead of the map edge
+## being sunk beneath it.  Inland Sea is the exception and is always flat.
 ##
 ## The climate is also designed to simulate a single region rather than a global
 ## climate.  This means that while you can have a full range of tropical, arctic
@@ -20,6 +21,27 @@
 ##
 ##############################################################################
 ## Version History
+##
+## 2.58 -   Fixed a crash in starting plot selection when Cohesion was set to
+##             Inland Sea, the tile separation table only had entries for the
+##             first three Cohesion settings
+##          World Wrap now actually wraps the generated world instead of only
+##             being reported to the engine.  The generator's own wrap flags
+##             were never set, so the seam was still sunk beneath the margin
+##             and a landmass crossing it counted as two continents
+##          Wrapped axes are trimmed to a multiple of the grain so the midpoint
+##             displacement lattice closes cleanly at the seam
+##          Inland Sea and World Wrap are mutually exclusive.  That was already
+##             the case but was applied silently, the option labels now say so
+##             and the override is written to the log
+##          Fixed the Inland Sea edge ramp, which summed the whole ramp into a
+##             single tile and flattened the seeded peaks
+##          Added a Continents option, either one landmass for everybody or one
+##             per 2, 3, 4 or 5 players.  Takes the option slot of the team
+##             start setting listed under 2.57, which was never exposed in the
+##             setup screen and never read during generation
+##          Fixed a potential crash when no landmass was left over to become
+##             the New World
 ##
 ## 2.57 -   Fixed an error where the default option for Deserts, Jungles
 ##             and Taiga were using a High selection instead
@@ -357,11 +379,16 @@ class MapConstants :
 		self.hmWidth = 193
 		self.hmHeight = 145
 
-		#Controls wrapping (not sure if this makes sense yet)
+		#Controls wrapping during generation: GetIndex/GetHmIndex/GetIndexGeneral
+		#wrap coordinates instead of returning -1, combineMaps stops depressing
+		#the margin on a wrapped axis, and Areamap scans landmasses across the
+		#seam. Set from the World Wrap option in initInGameOptions.
 		self.WrapX = False
 		self.WrapY = False
 
-		#Cheap hack, testing forced margins on wrap enabled worlds
+		#What getWrapX/getWrapY report to the engine. Kept separate from the
+		#flags above because Inland Sea has to force both pairs off regardless
+		#of what the player picked.
 		self.FinalWrapX = False
 		self.FinalWrapY = False
 
@@ -375,6 +402,17 @@ class MapConstants :
 		#middle of the map. The possible choices are 0 = NO_SEPARATION,
 		#1 = NORTH_SOUTH_SEPARATION and 2 = EAST_WEST_SEPARATION.
 		self.hmSeparation = 0
+
+		#Number of landmass nuclei to grow continents around, from the
+		#Continents option. 0 keeps the original behaviour (one blob shaped only
+		#by cohesion and the margins). Set in initInGameOptions; the nuclei
+		#themselves are chosen in combineMaps once the height map size is final.
+		self.continentCount = 0
+
+		#Upper bound on nuclei. Past this the height map cannot give each
+		#landmass enough room to be worth starting a civ on, and the starting
+		#area chooser starts failing to converge.
+		self.maxContinentNuclei = 8
 
 		#If you sink the margins all the way to 0.0, they become too obvious.
 		#This variable sets the maximum amount of sinking
@@ -773,7 +811,27 @@ class MapConstants :
 
 		#Wrap
 		selectionID = mmap.getCustomMapOption(7)
-		if mmap.getCustomMapOption(0) == 3: #mediterenean, no wrap possible
+		# Inland Sea sinks the middle of the map and raises a ring of land around
+		# the border (see combineMaps) so the sea is enclosed by the map edges
+		# themselves. A wrapping axis has no edge to close that ring with, so the
+		# sea would drain into an open band running right around the map. The two
+		# settings are therefore mutually exclusive and Inland Sea wins.
+		#
+		# The setup screen cannot express this: it queries the option lists once,
+		# when the map script is picked, and never consults the script again, so
+		# neither option can grey out the other. Cohesion also offers Random, so
+		# this can fire without the player ever choosing Inland Sea. Announce the
+		# override rather than dropping the player's choice in silence.
+		if mmap.getCustomMapOption(0) == 3: #Inland Sea, no wrap possible
+			if selectionID != 0:
+				wrapNames = {1:"East-West (x)", 2:"North-South (y)", 3:"All (x & y)"}
+				print "ErebusContinent: World Wrap '%s' ignored - Inland Sea requires a Flat map. Generating Flat." \
+					% wrapNames.get(selectionID,str(selectionID))
+			selectionID = 0 # Flat
+			mc.WrapX = False
+			mc.WrapY = False
+			mc.FinalWrapX = False
+			mc.FinalWrapY = False
 			mc.eastWaterBand = 0
 			mc.eastCrop = 0
 			mc.westWaterBand = 0
@@ -784,6 +842,7 @@ class MapConstants :
 			mc.southCrop = 0
 			self.hmMaxGrain = 8
 		elif selectionID == 1: # X
+			mc.WrapX = True
 			mc.FinalWrapX = True
 			mc.eastWaterBand = 0
 			mc.eastCrop = 0
@@ -791,6 +850,7 @@ class MapConstants :
 			mc.westCrop = 0
 			self.hmMaxGrain = 8
 		elif selectionID == 2: # Y
+			mc.WrapY = True
 			mc.FinalWrapY = True
 			mc.northWaterBand = 0
 			mc.northCrop = 0
@@ -800,11 +860,13 @@ class MapConstants :
 			mc.bottomLattitude = 85
 			mc.hmMaxGrain = 8
 		elif selectionID == 3: # Both
+			mc.WrapX = True
 			mc.FinalWrapX = True
 			mc.eastWaterBand = 0
 			mc.eastCrop = 0
 			mc.westWaterBand = 0
 			mc.westCrop = 0
+			mc.WrapY = True
 			mc.FinalWrapY = True
 			mc.northWaterBand = 0
 			mc.northCrop = 0
@@ -813,6 +875,59 @@ class MapConstants :
 			mc.topLattitude = -85
 			mc.bottomLattitude = 85
 			mc.hmMaxGrain = 8
+
+		# The height map is 2**n + 1 on each axis (193 x 145), which is the size
+		# diamond-square needs when an axis does NOT wrap. A wrapped axis has no
+		# duplicate edge point, so trim it to an exact multiple of the grain -
+		# otherwise the square pass steps 192 -> 200 -> 7 and the lattice lands
+		# 7 columns out of phase at the seam, corrupting the join. Done here, at
+		# the end, because each branch above may have changed hmMaxGrain.
+		# initialize() restores 193 x 145 before every generation.
+		if mc.WrapX:
+			mc.hmWidth = int(mc.hmWidth / mc.hmMaxGrain) * mc.hmMaxGrain
+		if mc.WrapY:
+			mc.hmHeight = int(mc.hmHeight / mc.hmMaxGrain) * mc.hmMaxGrain
+		if mc.WrapX or mc.WrapY:
+			print "ErebusContinent: wrapping X=%s Y=%s, height map %dx%d grain %d" \
+				% (mc.WrapX,mc.WrapY,mc.hmWidth,mc.hmHeight,mc.hmMaxGrain)
+
+		#Continents
+		selectionID = mmap.getCustomMapOption(13)
+		if selectionID == 0:
+			#Default: no nuclei, no mask. Landmasses come out however cohesion,
+			#sea level and the plates decide, exactly as before this option
+			#existed - so leaving it alone cannot change anyone's maps.
+			mc.continentCount = 0
+		else:
+			if selectionID == 1: # All players on one
+				wanted = 1
+			else:                # 2 -> 1 per 2 players, ... 5 -> 1 per 5
+				playersPerContinent = selectionID
+				players = gc.getGame().countCivPlayersEverAlive()
+				#Round up: 15 players at 5 each wants 3 continents.
+				wanted = max(1,int((players + playersPerContinent - 1) / playersPerContinent))
+
+			# Not every landmass gets starting plots. getNewWorldID takes
+			# continents largest first until they pass 66% of all land, and
+			# merges everything left into a single New World area that players
+			# never start on. So seed extra nuclei, enough that `wanted` of them
+			# should land inside the 66%. Real continents are not equal sized,
+			# so this is an estimate - both the nuclei count and the resulting
+			# number of starting areas are printed, which is what to check when
+			# a map comes out with the wrong spread.
+			nuclei = wanted
+			while int(0.66 * nuclei) + 1 < wanted:
+				nuclei += 1
+			mc.continentCount = min(nuclei,mc.maxContinentNuclei)
+			if mmap.getCustomMapOption(0) == 3:
+				#Inland Sea shapes the whole map itself (combineMaps skips the
+				#margin pass and the nuclei mask for it), so there is nothing to
+				#split. Same silent-override trap as World Wrap - say so.
+				print "ErebusContinent: Continents ignored - Inland Sea shapes the map itself."
+				mc.continentCount = 0
+			else:
+				print "ErebusContinent: want %d startable continent(s), seeding %d nuclei" \
+					% (wanted,mc.continentCount)
 
 		#Unit Placement
 		selectionID = mmap.getCustomMapOption(8)
@@ -978,6 +1093,18 @@ def NormalizeMap(fMap,width,height):
 		fMap[i] = fMap[i] * scaler
 	return
 
+def HmDistance(x1,y1,x2,y2):
+	#Straight line distance on the height map, taking the short way round on
+	#any axis that wraps - otherwise continent nuclei placed either side of the
+	#seam would look far apart when they are actually neighbours.
+	dx = abs(x1 - x2)
+	if mc.WrapX and dx > mc.hmWidth / 2:
+		dx = mc.hmWidth - dx
+	dy = abs(y1 - y2)
+	if mc.WrapY and dy > mc.hmHeight / 2:
+		dy = mc.hmHeight - dy
+	return math.sqrt(float(dx * dx + dy * dy))
+
 def ShrinkMap(largeMap,lWidth,lHeight,sWidth,sHeight):
 	smallMap = array('d')
 	yScale = float(lHeight)/float(sHeight)
@@ -1139,9 +1266,16 @@ class HeightMap :
 		#hm map dimensions(minus 1 if no wrapping) must be evenly divisible
 		#by max grain
 		ok = True
-		# Doesn't like wrapping, so we force it :)
-		width = mc.hmWidth - 1
-		height = mc.hmHeight - 1
+		# A wrapped axis meets itself at the seam, so it must be an exact
+		# multiple of the grain: the lattice step from the last grid point has
+		# to land back on 0. An unwrapped axis carries one extra edge point on
+		# top of that (the classic 2**n + 1 diamond-square size).
+		width = mc.hmWidth
+		if not mc.WrapX:
+			width -= 1
+		height = mc.hmHeight
+		if not mc.WrapY:
+			height -= 1
 		if 0 != width % mc.hmMaxGrain:
 			ok = False
 		if 0 != height % mc.hmMaxGrain:
@@ -1151,6 +1285,93 @@ class HeightMap :
 			raise ValueError, "height map dimesions not divisible by mc.hmMaxGrain. also check wrapping options"
 
 		return
+
+	def continentMargin(self):
+		return int(mc.hmMaxGrain * mc.hmGrainMargin)
+
+	def continentSpacing(self):
+		#Typical centre to centre distance for mc.continentCount nuclei spread
+		#over the part of the map they can actually occupy. Nuclei are kept out
+		#of the margins on an unwrapped axis, so that band must not be counted -
+		#including it makes the spacing look roomier than it is and the nuclei
+		#end up packed together.
+		margin = self.continentMargin()
+		usableW = mc.hmWidth
+		if not mc.WrapX:
+			usableW = max(1,mc.hmWidth - 2 * margin)
+		usableH = mc.hmHeight
+		if not mc.WrapY:
+			usableH = max(1,mc.hmHeight - 2 * margin)
+		return math.sqrt(float(usableW * usableH) / float(mc.continentCount))
+
+	def continentRadius(self):
+		#Land keeps full weight within half of this and is sunk to hmMarginDepth
+		#beyond it. It must stay below half the nucleus spacing so the fade has
+		#finished by the midpoint between two nuclei - if it has not, the gap
+		#never drops under sea level and the two landmasses merge into one.
+		return self.continentSpacing() * 0.45
+
+	def pickContinentCenters(self):
+		#Choose mc.continentCount nuclei for the landmasses to grow around, by
+		#rejection sampling: draw a candidate, keep it only if it clears every
+		#nucleus chosen so far. If the map is too crowded to place them all,
+		#relax the spacing rather than spin forever, and give up with however
+		#many were placed - fewer, bigger continents beats hanging generation.
+		centers = list()
+		if mc.continentCount < 1:
+			return centers
+
+		minDist = self.continentSpacing() * 0.95
+		margin = self.continentMargin()
+		attempts = 0
+		while len(centers) < mc.continentCount:
+			attempts += 1
+			if attempts > 3000:
+				#No room left at this spacing. Stop with however many fit rather
+				#than packing the rest in closer: two nuclei nearer than the
+				#spacing share one continuous strip of land above sea level and
+				#come out as a single landmass, which is worse than just having
+				#fewer, properly separated continents.
+				break
+			#Nuclei may sit anywhere on a wrapped axis, but must stay clear of
+			#the margin on an unwrapped one or the continent is half drowned.
+			if mc.WrapX:
+				x = PRand.randint(0,mc.hmWidth - 1)
+			else:
+				x = PRand.randint(margin,max(margin,mc.hmWidth - margin - 1))
+			if mc.WrapY:
+				y = PRand.randint(0,mc.hmHeight - 1)
+			else:
+				y = PRand.randint(margin,max(margin,mc.hmHeight - margin - 1))
+
+			tooClose = False
+			for cx,cy in centers:
+				if HmDistance(x,y,cx,cy) < minDist:
+					tooClose = True
+					break
+			if not tooClose:
+				centers.append((x,y))
+
+		print "ErebusContinent: seeded %d of %d continent nuclei, spacing %.1f radius %.1f" \
+			% (len(centers),mc.continentCount,self.continentSpacing(),self.continentRadius())
+		return centers
+
+	def continentMask(self,x,y,centers,radius):
+		#1.0 out to half a radius from the nearest nucleus, then falling to
+		#hmMarginDepth by a full radius. Multiplying the height map by this
+		#sinks the gaps between nuclei so calculateSeaLevel floods them, which
+		#is what actually separates the continents.
+		nearest = -1.0
+		for cx,cy in centers:
+			d = HmDistance(x,y,cx,cy)
+			if nearest < 0.0 or d < nearest:
+				nearest = d
+		if nearest <= radius * 0.5:
+			return 1.0
+		if nearest >= radius:
+			return mc.hmMarginDepth
+		t = (nearest - radius * 0.5) / (radius * 0.5)
+		return 1.0 - t * (1.0 - mc.hmMarginDepth)
 
 	def isPlotOnMargin(self,x,y):
 		if mc.hmSeparation != mc.NO_SEPARATION:
@@ -1241,6 +1462,11 @@ class HeightMap :
 		if landformID == 3:
 			for y in range(0,mc.hmHeight):
 				for x in range(0,mc.hmWidth):
+					# i must be recomputed per plot. It used to inherit the last
+					# peak index from the loop above, so the whole edge ramp was
+					# summed into one cell and NormalizeMap below then scaled
+					# every other cell to ~0, wiping out the seeded peaks.
+					i = GetHmIndex(x,y)
 					weight = EdgeWeight(x,y,mc.hmWidth,mc.hmHeight)
 					self.heightMap[i] += weight
 
@@ -1661,9 +1887,18 @@ class HeightMap :
 		#depress margins, this time with brute force
 		if landformID < 3:
 			marginSize = mc.hmMaxGrain * mc.hmGrainMargin
+			#Continents option: sink everything that is far from a nucleus so
+			#the landmasses come out separated. Inland Sea (landformID 3) does
+			#its own shaping above and is excluded.
+			continentCenters = self.pickContinentCenters()
+			continentRadius = 0.0
+			if continentCenters:
+				continentRadius = self.continentRadius()
 			for y in range(mc.hmHeight):
 				for x in range(mc.hmWidth):
 					i = GetHmIndex(x,y)
+					if continentCenters:
+						self.heightMap[i] *= self.continentMask(x,y,continentCenters,continentRadius)
 					if mc.WrapX == False:
 						if x < marginSize:
 							self.heightMap[i] *= (float(x)/float(marginSize)) * (1.0 - mc.hmMarginDepth) + mc.hmMarginDepth
@@ -3155,6 +3390,14 @@ class Areamap :
 
 		#get ID for the next continent, we will use this ID for 'New World'
 		#designation
+		if len(continentList) == 0:
+			#Everything cleared the 66% bar, so there is no New World at all.
+			#Normally the tiny islands are left over to fill this role, but with
+			#few, evenly sized continents (which the Continents option can now
+			#produce deliberately) the list can come back empty. Return an ID
+			#that matches no area rather than indexing off the end.
+			print "ErebusContinent: no New World continent - all land is Old World"
+			return -1
 		nID = continentList[0].ID
 		del continentList[0] #delete to avoid unnecessary overwrite
 
@@ -3813,7 +4056,10 @@ def getNumCustomMapOptions():
 	Number of different user-defined options for this map
 	Return an integer
 	"""
-	return 13
+	#Option 13 is Continents. It replaced a "Team Start" option that had a name
+	#and descriptions but was never exposed (this returned 13, so ids 0..12) and
+	#was never read during generation.
+	return 14
 
 def getCustomMapOptionName(argsList):
 		"""
@@ -3837,7 +4083,11 @@ def getCustomMapOptionName(argsList):
 		elif optionID == 6:
 			return "Forest Density"
 		elif optionID == 7:
-			return "World Wrap"
+			# The "(no Inland Sea)" note is the only way to surface the conflict
+			# from this side: the setup screen builds every dropdown once and
+			# never asks the map script again, so one option cannot disable
+			# another. See getCustomMapOptionDescAt and initInGameOptions.
+			return "World Wrap (no Inland Sea)"
 		elif optionID == 8:
 			return "Unit Placement"
 		elif optionID == 9:
@@ -3849,7 +4099,7 @@ def getCustomMapOptionName(argsList):
 		elif optionID == 12:
 			return "Ancient City Ruins"
 		elif optionID == 13:
-			return "Team Start"
+			return "Continents"
 		return u""
 
 def getNumCustomMapOptionValues(argsList):
@@ -3885,8 +4135,8 @@ def getNumCustomMapOptionValues(argsList):
 			return 4
 		elif optionID == 12:
 			return 2
-		elif optionID == 13:
-			return 3
+		elif optionID == 13: #Continents
+			return 6
 		return 0
 
 def getCustomMapOptionDescAt(argsList):
@@ -3906,7 +4156,12 @@ def getCustomMapOptionDescAt(argsList):
 		elif selectionID == 2:
 			return "Low"
 		elif selectionID == 3:
-			return "Inland Sea"
+			# Inland Sea encloses its sea with land raised at the map border, so
+			# it needs real edges and cannot wrap. Selecting it forces World Wrap
+			# to Flat (see MapConstants.initInGameOptions). The setup screen has
+			# no way to grey out one option from another, so the constraint is
+			# spelled out in the label instead.
+			return "Inland Sea (forces Flat)"
 	elif optionID == 1: #Mountains
 		if selectionID == 0:
 			return "Standard (Default)"
@@ -3974,6 +4229,9 @@ def getCustomMapOptionDescAt(argsList):
 		elif selectionID == 2:
 			return "Increased"
 	elif optionID == 7: #Wrap
+		# Any wrapping choice here is overridden to Flat when Cohesion is set to
+		# Inland Sea, including when Cohesion is left on Random and happens to
+		# roll it. The option name carries the warning; see initInGameOptions.
 		if selectionID == 0:
 			return "Flat (Default)"
 		elif selectionID == 1:
@@ -4013,13 +4271,22 @@ def getCustomMapOptionDescAt(argsList):
 			return "Off"
 		elif selectionID == 1:
 			return "On"
-	elif optionID == 13: #Team Start
+	elif optionID == 13: #Continents
+		# Values 2..5 are read as "this many players per continent", so the
+		# continent count follows the size of the game: 15 players at 1 per 5
+		# asks for 3. See MapConstants.initInGameOptions.
 		if selectionID == 0:
-			return "Team Neighbors"
+			return "Default (by Cohesion)"
 		if selectionID == 1:
-			return "Team Separated"
+			return "All players on one"
 		if selectionID == 2:
-			return "Randomly Placed"
+			return "1 per 2 players"
+		if selectionID == 3:
+			return "1 per 3 players"
+		if selectionID == 4:
+			return "1 per 4 players"
+		if selectionID == 5:
+			return "1 per 5 players"
 	return u""
 
 def getCustomMapOptionDefault(argsList):
@@ -5548,17 +5815,19 @@ class StartingArea :
 
 		# Varying distance preferences based on world size and cohesion
 		worldsizes = {
-			WorldSizeTypes.WORLDSIZE_DUEL:      [7,6,5],
-			WorldSizeTypes.WORLDSIZE_TINY:      [7,6,5],
-			WorldSizeTypes.WORLDSIZE_SMALL:     [8,7,6],
-			WorldSizeTypes.WORLDSIZE_STANDARD:  [8,7,6],
-			WorldSizeTypes.WORLDSIZE_LARGE:     [9,8,7],
-			WorldSizeTypes.WORLDSIZE_HUGE:      [9,8,7],
-			WorldSizeTypes.WORLDSIZE_HUGER:      [10,9,8]
+			# One entry per Cohesion value (option 0): High, Medium, Low, Inland Sea.
+			# Inland Sea reuses the Low spacing.
+			WorldSizeTypes.WORLDSIZE_DUEL:      [7,6,5,5],
+			WorldSizeTypes.WORLDSIZE_TINY:      [7,6,5,5],
+			WorldSizeTypes.WORLDSIZE_SMALL:     [8,7,6,6],
+			WorldSizeTypes.WORLDSIZE_STANDARD:  [8,7,6,6],
+			WorldSizeTypes.WORLDSIZE_LARGE:     [9,8,7,7],
+			WorldSizeTypes.WORLDSIZE_HUGE:      [9,8,7,7],
+			WorldSizeTypes.WORLDSIZE_HUGER:      [10,9,8,8]
 			}
 #FlavourMod: Added by Jean Elcard 02/26/2009
 		if hasattr(WorldSizeTypes, "WORLDSIZE_GIANT"):
-			worldsizes[WorldSizeTypes.WORLDSIZE_GIANT] = [10,9,8]
+			worldsizes[WorldSizeTypes.WORLDSIZE_GIANT] = [10,9,8,8]
 
 		grain_list = worldsizes[gameMap.getWorldSize()]
 		grain = grain_list[gameMap.getCustomMapOption(0)]
