@@ -249,7 +249,6 @@
 			<iDefensiveStrikeChance>20</iDefensiveStrikeChance>
 			<iDefensiveStrikeDamage>10</iDefensiveStrikeDamage>
 			<iTier>3</iTier>
-			<PrereqBuildingClass>BUILDINGCLASS_STABLE</PrereqBuildingClass>
 			<iPowerMult>5</iPowerMult>
 		</UnitInfo>
 		<UnitInfo>        <!-- Malakim Wyrm Knight -->
@@ -276,7 +275,6 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqBuilding>BUILDING_HIPPODROME</PrereqBuilding>
 			<PrereqTech>TECH_ARMORED_CAVALRY</PrereqTech>
 			<PrereqBonuses>
 				<BonusType>BONUS_ASH</BonusType>

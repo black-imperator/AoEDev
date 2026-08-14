@@ -3907,7 +3907,8 @@ def spellSanctify(caster):
         iCrossroad = getInfoType('UNIT_DEVILCASTER')
 	if iImprovement == getInfoType('IMPROVEMENT_AERON_VAULTGATE'):
 		pPlot.setImprovementType(-1)
-		pPlot.setBonusType(-1)
+		if gc.getBonusInfo(pPlot.getBonusType(-1)).getBonusClassType() == getInfoType('BONUSCLASS_MANA'):
+			pPlot.setBonusType(-1)
 		pPlayer.changeGlobalCounterContrib(-1)
                 for x,y in plotsInRange( caster.getX(), caster.getY(), iRange ):
                         pPlot = getPlot(x,y)
@@ -11413,6 +11414,17 @@ def reqCorgayleChanneling2(pCaster):
 		return False
 	return True
 #Seems fine
+
+def spellRealityBreak(caster):
+	pPlot = caster.plot()
+	pCity = caster.plot().getPlotCity()
+	if not pPlot.isWater():
+		pPlot.setPlotType(PlotTypes.PLOT_LAND, True, True)
+	pPlot.setFeatureType(getInfoType('FEATURE_NON_PLANAR'), -1)
+	pPlot.setBonusType(-1)
+	pCity.kill()
+	pPlot.setImprovementType(-1)
+	
 def spellBloom(caster):
 	pPlot = caster.plot()
 	iTerrain = pPlot.getTerrainType()
@@ -11425,7 +11437,62 @@ def spellBloom(caster):
 	elif iTerrain == getInfoType('TERRAIN_TAIGA'):
 		pPlot.setFeatureType(getInfoType('FEATURE_FOREST_NEW'), -1)
 	elif iTerrain == getInfoType('TERRAIN_MARSH'):
+		pPlot.setFeatureType(getInfoType('FEATURE_JUNGLE'), -1)
+
+def effectAutoBloomSeed(caster):
+	pPlot = caster.plot()
+	iFeature = pPlot.getFeatureType()
+	iForestOld = getInfoType('FEATURE_FOREST_ANCIENT')
+	iForest = getInfoType('FEATURE_FOREST')
+	iKelpOld = getInfoType('FEATURE_KELP_FOREST')
+	iJungle = getInfoType('FEATURE_JUNGLE')
+	iOasis = getInfoType('FEATURE_OASIS')
+	iVolcano = getInfoType('FEATURE_VOLCANO')
+	iReefs = getInfoType('FEATURE_REEFS')
+	iKelp = getInfoType('FEATURE_KELP')
+	iFloodPlains = getInfoType('FEATURE_FLOOD_PLAINS')
+	iForestNew = getInfoType('FEATURE_FOREST_NEW')
+
+	if iFeature == iForestOld:
+		return
+	if iFeature == iForest:
+		return
+	if iFeature == iKelpOld:
+		return
+	if iFeature == iJungle:
+		return
+	if iFeature == iOasis:
+		return
+	if iFeature == iVolcano:
+		return
+	if iFeature == iReefs:
+		return
+	if iFeature == iKelp:
+		return
+	if iFeature == iFloodPlains:
+		return
+	if iFeature == iForestNew:
+		return
+	spellBloomSeed(caster)
+
+def spellBloomSeed(caster):
+	pPlot = caster.plot()
+	iTerrain = pPlot.getTerrainType()
+	if iTerrain == getInfoType('TERRAIN_TUNDRA'):
 		pPlot.setFeatureType(getInfoType('FEATURE_FOREST_NEW'), -1)
+	elif iTerrain == getInfoType('TERRAIN_GRASS'):
+		pPlot.setFeatureType(getInfoType('FEATURE_FOREST_NEW'), -1)
+	elif iTerrain == getInfoType('TERRAIN_PLAINS'):
+		pPlot.setFeatureType(getInfoType('FEATURE_FOREST_NEW'), -1)
+	elif iTerrain == getInfoType('TERRAIN_TAIGA'):
+		pPlot.setFeatureType(getInfoType('FEATURE_FOREST_NEW'), -1)
+	elif iTerrain == getInfoType('TERRAIN_MARSH'):
+		pPlot.setFeatureType(getInfoType('FEATURE_FOREST_NEW'), -1)
+	elif iTerrain == getInfoType('TERRAIN_COAST'):
+		pPlot.setFeatureType(getInfoType('FEATURE_KELP'), -1)
+	elif iTerrain == getInfoType('TERRAIN_OCEAN'):
+		pPlot.setFeatureType(getInfoType('FEATURE_KELP'), -1)
+	
 # *******************
 # Mekara V2 Python: 2025-04-13
 #
@@ -13440,7 +13507,7 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 	if iCiv == gc.getInfoTypeForString("CIVILIZATION_BALSERAPHS"):
 		iHeroClass = gc.getInfoTypeForString("UNITCLASS_PERPENTACH")
 	if iCiv == gc.getInfoTypeForString("CIVILIZATION_CALABIM"):
-		iHeroClass = gc.getInfoTypeForString("UNITCLASS_LOSHA")
+		iHeroClass = gc.getInfoTypeForString("UNITCLASS_ADVENTURER")
 	if iCiv == gc.getInfoTypeForString("CIVILIZATION_CHISLEV"):
 		iHeroClass = gc.getInfoTypeForString("UNITCLASS_MESKWAKI")
 	if iCiv == gc.getInfoTypeForString("CIVILIZATION_HIPPUS"):
@@ -13468,22 +13535,10 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 			lUnitList.append([iHeroClass, 1, 2500])
 
 	# let's sett1e units
-	iUCMelee		= gc.getInfoTypeForString("UNITCLASS_SPEARMAN")
-	if iCiv == gc.getInfoTypeForString("CIVILIZATION_HIPPUS"):
-		iUCMelee	= gc.getInfoTypeForString("UNITCLASS_HORSEMAN")
-	if iCiv == gc.getInfoTypeForString("CIVILIZATION_DTESH"):
-		iUCMelee	= gc.getInfoTypeForString("UNITCLASS_SPEARMAN")
-	if iCiv == gc.getInfoTypeForString("CIVILIZATION_MEKARA"):
-		iUCMelee	= gc.getInfoTypeForString("UNITCLASS_HUNTER")
-	if iCiv == gc.getInfoTypeForString("CIVILIZATION_SHEAIM"):
-		iUCMelee	= gc.getInfoTypeForString("UNITCLASS_PYRE_ZOMBIE")
-	iUCRanged		= gc.getInfoTypeForString("UNITCLASS_ARCHER")
-	if iCiv == gc.getInfoTypeForString("CIVILIZATION_HIPPUS"):
-		iUCRanged	= gc.getInfoTypeForString("UNITCLASS_HORSEMAN")
-	if iLeader == gc.getInfoTypeForString("LEADER_TRISTESSA"):
-		iUCRanged	= gc.getInfoTypeForString("UNITCLASS_HORSEMAN")
-	iUCRecon		= gc.getInfoTypeForString("UNITCLASS_HUNTER")
-	iUCAdept		= gc.getInfoTypeForString("UNITCLASS_ADEPT")
+	iUCMelee		= gc.getInfoTypeForString("UNITCLASS_WARRIOR")
+	iUCRanged		= gc.getInfoTypeForString("UNITCLASS_WARRIOR")
+	iUCRecon		= gc.getInfoTypeForString("UNITCLASS_SCOUT")
+	iUCAdept		= gc.getInfoTypeForString("UNITCLASS_SCOUT")
 	# If you want to spawn nonconventional civs, like D'Tesh you'll need to change Workers/Settlers here
 	iUCWorker		= gc.getInfoTypeForString("UNITCLASS_WORKER")
 	if iCiv == gc.getInfoTypeForString("CIVILIZATION_LANUN"):
@@ -13491,15 +13546,17 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 	iUCSettler		= gc.getInfoTypeForString("UNITCLASS_SETTLER")
 	if iCiv == gc.getInfoTypeForString("CIVILIZATION_DTESH"):
 		iUCSettler	= gc.getInfoTypeForString("UNITCLASS_VESSEL_DTESH")
+	if iCiv == gc.getInfoTypeForString("CIVILIZATION_SCIONS"):
+		iUCSettler	= gc.getInfoTypeForString("UNITCLASS_AWAKENED")
 	# we will leave t3 as -1 for now
 	iUCDisciple		= -1
 	iUCMeleeT3		= -1
 	iUCReconT3		= -1
 	iUCAdeptT3		= -1
 	# their base count
-	iCountMelee		= 3
-	iCountRanged	= 3
-	iCountRecon		= 3
+	iCountMelee		= 2
+	iCountRanged	= 2
+	iCountRecon		= 2
 	iCountAdept		= 2
 	iCountWorker	= 2
 	iCountSettler	= 2
@@ -13525,6 +13582,13 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 		iDiscipleTech	= gc.getInfoTypeForString("TECH_COMMUNE_WITH_NATURE")
 
 	if pNewPlayer.isHasTech(gc.getInfoTypeForString('TECH_BRONZE_WORKING')):
+		iUCMelee		= gc.getInfoTypeForString("UNITCLASS_SPEARMAN")
+		if iCiv == gc.getInfoTypeForString("CIVILIZATION_HIPPUS"):
+			iUCMelee	= gc.getInfoTypeForString("UNITCLASS_HORSEMAN")
+		if iCiv == gc.getInfoTypeForString("CIVILIZATION_MEKARA"):
+			iUCMelee	= gc.getInfoTypeForString("UNITCLASS_HUNTER")
+		if iCiv == gc.getInfoTypeForString("CIVILIZATION_SHEAIM"):
+			iUCMelee	= gc.getInfoTypeForString("UNITCLASS_PYRE_ZOMBIE")
 		iCountMelee		+= 4
 		iCountWorker	+= 1
 		iCountSettler	+= 1
@@ -13535,14 +13599,12 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 	if pNewPlayer.isHasTech(gc.getInfoTypeForString('TECH_IRON_WORKING')):
 		# let's change our melee unit for a beter one
 		iUCMelee		= gc.getInfoTypeForString("UNITCLASS_PIKEMAN")
-		if iCiv == gc.getInfoTypeForString("CIVILIZATION_DTESH"):
-			iUCMelee	= gc.getInfoTypeForString("UNITCLASS_PIKEMAN")
 		if iCiv == gc.getInfoTypeForString("CIVILIZATION_MEKARA"):
 			iUCMelee	= gc.getInfoTypeForString("UNITCLASS_RANGER")
 		if iCiv == gc.getInfoTypeForString("CIVILIZATION_SHEAIM"):
 			iUCMelee	= gc.getInfoTypeForString("UNITCLASS_SUCCUBUS")
 		# and add a few more units
-		iCountMelee		+= 8
+		iCountMelee		+= 9
 		iCountWorker	+= 3
 		iCountSettler	+= 1
 		iCountSupp		+= 3
@@ -13550,6 +13612,11 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 		iXPWorker		= 10
 
 	if pNewPlayer.isHasTech(gc.getInfoTypeForString('TECH_ARCHERY')):
+		iUCRanged		= gc.getInfoTypeForString("UNITCLASS_ARCHER")
+		if iCiv == gc.getInfoTypeForString("CIVILIZATION_HIPPUS"):
+			iUCRanged	= gc.getInfoTypeForString("UNITCLASS_HORSEMAN")
+		if iLeader == gc.getInfoTypeForString("LEADER_TRISTESSA"):
+			iUCRanged	= gc.getInfoTypeForString("UNITCLASS_HORSEMAN")
 		iCountRanged	+= 4
 		iCountWorker	+= 1
 		iCountSettler	+= 1
@@ -13567,14 +13634,15 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 			iUCRanged	= gc.getInfoTypeForString("UNITCLASS_HORSE_ARCHER")
 		if iLeader == gc.getInfoTypeForString("LEADER_TRISTESSA"):
 			iUCRanged	= gc.getInfoTypeForString("UNITCLASS_HORSE_ARCHER")
-		iCountRanged	+= 8
+		iCountRanged	+= 9
 		iCountWorker	+= 3
 		iCountSettler	+= 1
 		iCountSupp		+= 3
 		iXPRanged		= 10
 		iXPWorker		= 10
 
-	if pNewPlayer.isHasTech(gc.getInfoTypeForString('TECH_TRACKING')):
+	if pNewPlayer.isHasTech(gc.getInfoTypeForString('TECH_HUNTING')):
+		iUCRecon		= gc.getInfoTypeForString("UNITCLASS_HUNTER")
 		iCountRecon		+= 4
 		iCountWorker	+= 1
 		iCountSettler	+= 1
@@ -13590,7 +13658,7 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 			iUCRecon	= gc.getInfoTypeForString("UNITCLASS_HORSE_ARCHER")
 		if iCiv == gc.getInfoTypeForString("CIVILIZATION_LUCHUIRP"):
 			iUCRecon	= gc.getInfoTypeForString("UNITCLASS_ASSASSIN")
-		iCountRecon		+= 8
+		iCountRecon		+= 9
 		iCountWorker	+= 3
 		iCountSettler	+= 1
 		iCountSupp		+= 3
@@ -13598,6 +13666,7 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 		iXPWorker		= 10
 
 	if pNewPlayer.isHasTech(gc.getInfoTypeForString('TECH_KNOWLEDGE_OF_THE_ETHER')):
+		iUCAdept		= gc.getInfoTypeForString("UNITCLASS_ADEPT")
 		iCountAdept		+= 2
 		iCountWorker	+= 1
 		iCountSettler	+= 1

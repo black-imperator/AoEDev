@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Jason Winokur (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Building art path information -->
+<Civ4ArtDefines xmlns="x-schema:XtraEsusUnits_CIV4ArtDefinesSchema.xml">
+	<BuildingArtInfos>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_APHOTIC_THRONE_UPGRADE</Type>
+			<LSystem>LSYSTEM_3x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.6</fScale>
+			<fInterfaceScale>0.7</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Temple of the Veil/undeadtemple.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/XtraEsusUnits/Art/Interface/Buttons/Buildings/aphoticthroneupgrade.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_APHOTIC_THRONE_FAERYL_UPGRADE</Type>
+			<LSystem>LSYSTEM_3x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.6</fScale>
+			<fInterfaceScale>0.7</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Temple of the Veil/undeadtemple.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/XtraEsusUnits/Art/Interface/Buttons/Buildings/aphoticthroneupgradefaeryl.dds</Button>
+		</BuildingArtInfo>
+	</BuildingArtInfos>
+</Civ4ArtDefines>

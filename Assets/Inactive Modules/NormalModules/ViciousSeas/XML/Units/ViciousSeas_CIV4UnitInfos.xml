@@ -1467,6 +1467,11 @@
             <Special>SPECIALUNIT_SEABEAST</Special>
 			<iMoves>1</iMoves>
 		</UnitInfo>
+		<UnitInfo>        <!-- Scaled Dragon-->
+			<Class>UNITCLASS_SCALED_DRAGON</Class>
+			<Type>UNIT_SCALED_DRAGON</Type>
+            <Special>SPECIALUNIT_SEABEAST</Special>
+		</UnitInfo>
 		<UnitInfo>        <!-- Kraken Spawn -->
 			<Class>UNITCLASS_KRAKEN</Class>
 			<Type>UNIT_KRAKEN_SPAWN</Type>

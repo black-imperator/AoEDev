@@ -429,8 +429,20 @@
 			<Plural>0:1</Plural>
 		</French>
 		<German>Marsch Lindwurm</German>
-		<Italian>Sand Wyrm</Italian>
-		<Spanish>Sand Wyrm</Spanish>
+		<Italian>Marsh Wyrm</Italian>
+		<Spanish>Marsh Wyrm</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HELL_WORM</Tag>
+		<English>Hell Wyrm</English>
+		<French>
+			<Text>Ver des Enfers:Vers des Enfers</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Hell Lindwurm</German>
+		<Italian>Hell Wyrm</Italian>
+		<Spanish>Hell Wyrm</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SAND_WORM</Tag>

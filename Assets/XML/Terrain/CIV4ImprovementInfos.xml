@@ -4908,18 +4908,6 @@
 					<GoodyClassType>GOODYCLASS_UNDEAD_MINOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_VAMPIRES</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_LEGION</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_FADED</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
 			</GoodyClasses>
 			<iAppearanceProbability>75</iAppearanceProbability>
 			<iLairCreationWeight>5</iLairCreationWeight>
@@ -6215,6 +6203,11 @@
 			<ArtDefineTag>ART_DEF_IMPROVEMENT_DTESHI_CRYPT</ArtDefineTag>
 			<bRequiresFlatlands>1</bRequiresFlatlands>
 			<iPillageGold>10</iPillageGold>
+			<YieldChanges>
+				<iYieldChange>0</iYieldChange>
+				<iYieldChange>1</iYieldChange>
+				<iYieldChange>0</iYieldChange>
+			</YieldChanges>
 			<BonusTypeStructs>
 				<BonusTypeStruct>
 					<BonusType>BONUS_MARBLE</BonusType>
@@ -9497,7 +9490,7 @@
 			<iDefenseModifier>20</iDefenseModifier>
 			<iPillageGold>10</iPillageGold>
 			<bOutsideBorders>1</bOutsideBorders>
-			<iMinimumDistance>4</iMinimumDistance>
+			<iMinimumDistance>3</iMinimumDistance>
 			<bActsAsCity>1</bActsAsCity>
 			<bFort>1</bFort>
 			<YieldChanges>
@@ -12826,6 +12819,14 @@
 					<GoodyClassType>GOODYCLASS_LEGION</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_VAMPIRES</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_FADED</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
 			</GoodyClasses>
 		</ImprovementInfo>
 		<ImprovementInfo><!-- Cliffs of Kelle -->
@@ -13712,6 +13713,7 @@
 			<bUnique>1</bUnique>
 			<SpawnUnitType>UNIT_DROWN</SpawnUnitType>
 			<SpawnUnitCiv>CIVILIZATION_DEMON</SpawnUnitCiv>
+			<iSpawnUnitChancePercentMod>-50</iSpawnUnitChancePercentMod>
 			<iBasePlotCounterModify>20</iBasePlotCounterModify>
 			<iSpawnAtOnceLimit>3</iSpawnAtOnceLimit>
 			<iCultureRange>2</iCultureRange>
@@ -13733,6 +13735,7 @@
 			<bUnique>1</bUnique>
 			<SpawnUnitType>UNIT_STYGIAN_GUARD</SpawnUnitType>
 			<SpawnUnitCiv>CIVILIZATION_DEMON</SpawnUnitCiv>
+			<iSpawnUnitChancePercentMod>-50</iSpawnUnitChancePercentMod>
 			<iBasePlotCounterModify>30</iBasePlotCounterModify>
 			<iSpawnAtOnceLimit>4</iSpawnAtOnceLimit>
 			<iCultureRange>3</iCultureRange>
@@ -14185,10 +14188,6 @@
 				</GoodyClass>
 				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_LEGION</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_VAMPIRES</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 				<GoodyClass>

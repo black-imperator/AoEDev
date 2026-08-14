@@ -1,0 +1,57 @@
+;Name - no need to explain
+;note: one line
+[name]
+XtraEsusUnits
+;
+;
+;Version - version of module
+;Note: it have to be number, so only numberic characters and none or one period
+;note: one line
+[version]
+0.1
+;
+;
+;RifE version - version of RifE for which is this module tested, checked, developed, etc
+;Note: it have to be number, so only numberic characters and none or one period
+;note: one line
+[rifeversion]
+1.1
+;
+;
+;Author - you
+;note: one line
+[author]
+Wonderblunder
+;
+;
+;Short description - text showed in contect menu
+;note: one line
+[shortdesc]
+Adds a few unique units for the Council of Esus religion and the ability to upgrade Aphotic Thrones later in the game.
+;
+;
+;Description - text showed in message box
+;note: can be multiline
+[desc]
+
+Added the Proprietor, Death Merchant, Enforcer, and Whisper as religious units you can build if you have the Council of Esus as your state religion. Each has its own specific use and are meant to add some extra flair to the religion and its themes.
+
+Proprietor:
+- Convert Crime into culture
+- Steal Culture for your Capital
+- Steal GPP for your Capital
+
+Death Merchant:
+- Convert Crime into gold
+- Boost military production
+- Boost Crime
+
+Whisper
+- Slightly weaker assassin that can cast shadow spells for themselves and your unit stacks
+
+Enforcer
+- Melee unit that gains strength the more Crime a city you own has
+
+Additionally, once you research Guilds, you can spend gold to upgrade your Aphotic Thrones.
+
+V1.0

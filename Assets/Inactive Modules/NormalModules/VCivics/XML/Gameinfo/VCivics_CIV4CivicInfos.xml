@@ -1374,7 +1374,7 @@
 			<Type>CIVIC_SLUMBERING_COVEN</Type>
 			<Description>TXT_KEY_CIVIC_SLUMBERING_COVEN</Description>
 			<Civilopedia>TXT_KEY_CIVIC_SLUMBERING_COVEN_PEDIA</Civilopedia>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Civics/SlumberingCoven.dds</Button>
+			<Button>Art/Interface/Buttons/Civics/SlumberingCoven.dds</Button>
 			<TechPrereq>TECH_MIND_STAPLING</TechPrereq>
 			<PrereqReligion>RELIGION_OCTOPUS_OVERLORDS</PrereqReligion>
 			<bStateReligion>1</bStateReligion>

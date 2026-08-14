@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!-- Formatted by Xienwolf -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Promotion Infos -->
+<Civ4PromotionInfos xmlns="x-schema:XtraEsusUnits_CIV4UnitSchema.xml">
+	<PromotionInfos>
+		<PromotionInfo>		<!-- Test Promotion -->				<!-- Full Fields for use as a Template -->
+			<Type>PROMOTION_ESUS_CRIMINAL_CONNECTIONS</Type>
+			<Description>TXT_KEY_PROMOTION_ESUS_CRIMINAL_CONNECTIONS</Description>
+			<Help>TXT_KEY_UNIT_ESUS_ENFORCER_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<StateReligionPrereq>RELIGION_COUNCIL_OF_ESUS</StateReligionPrereq>
+			<bMustMaintain>1</bMustMaintain>
+			<iMinLevel>-1</iMinLevel>
+			<!--<bCityNoHappy>1</bCityNoHappy>-->
+			<bOverrideHelpText>0</bOverrideHelpText>
+			<PrereqPermission>0</PrereqPermission>
+			<PromotionExcludes>
+				<Promotion>PROMOTION_PATROL1</Promotion>
+			</PromotionExcludes>
+			<PythonOnRemove>crimeLordStrengthRemove(pCaster)</PythonOnRemove>
+			<PyPerTurn>crimeLordStrength(pCaster)</PyPerTurn>
+			<Button>Modules/NormalModules/XtraEsusUnits/Art/Interface/Buttons/Spells/deathmerchant2.dds</Button>
+		</PromotionInfo>	
+	</PromotionInfos>
+</Civ4PromotionInfos>

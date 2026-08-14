@@ -1,7 +1,7 @@
 ;Name - no need to explain
 ;note: one line
 [name]
-Chislev Expansion
+Chislev Legacy
 ;
 ;
 ;Version - version of module

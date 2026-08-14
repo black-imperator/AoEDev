@@ -89,7 +89,7 @@ def reqElementalEquilibrium(caster):
 
 
 def spellElementalEquilibrium(caster):
-        pPlayer = gc.getPlayer(caster.getOwner())
+	pPlayer = gc.getPlayer(caster.getOwner())
 	pPlot = caster.plot()
 	iKan = pPlayer.getImprovementCount(gc.getInfoTypeForString('IMPROVEMENT_MANA_WATER_I_DAO'))
 	iLi = pPlayer.getImprovementCount(gc.getInfoTypeForString('IMPROVEMENT_MANA_FIRE_I_DAO'))

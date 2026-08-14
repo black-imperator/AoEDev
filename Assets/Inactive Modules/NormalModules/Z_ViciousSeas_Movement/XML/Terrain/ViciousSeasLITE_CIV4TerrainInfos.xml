@@ -9,12 +9,17 @@
 		<TerrainInfo> <!-- Ocean -->
 			<TerrainClass>TERRAINCLASS_OCEAN</TerrainClass>
 			<Type>TERRAIN_OCEAN</Type>
-			<iMovement>1</iMovement>
+			<iMovement>2</iMovement>
 		</TerrainInfo>
 		<TerrainInfo> <!-- Blackwater -->
 			<TerrainClass>TERRAINCLASS_OCEAN</TerrainClass>
 			<Type>TERRAIN_BLACKWATER</Type>
-			<iMovement>1</iMovement>
+			<iMovement>2</iMovement>
+		</TerrainInfo>
+		<TerrainInfo> <!-- Deep Ocean -->
+			<TerrainClass>TERRAINCLASS_OCEAN_DEEP</TerrainClass>
+			<Type>TERRAIN_OCEAN_DEEP</Type>
+			<iMovement>3</iMovement>
 		</TerrainInfo>
 	</TerrainInfos>
 </Civ4TerrainInfos>

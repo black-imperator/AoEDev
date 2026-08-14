@@ -9713,6 +9713,111 @@
 			<bGraphicalOnly>1</bGraphicalOnly>
 			<Button>Art/Interface/Buttons/Equipment/DragonsHoard.dds</Button>
 		</SpellInfo>
+		<SpellInfo>			<!-- Drop The Vial of Dragons Tears -->
+			<Type>SPELL_DROP_DRAGONS_TEARS</Type>
+			<Description>TXT_KEY_SPELL_DROP_DRAGONS_TEARS</Description>
+			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
+			<PromotionPrereq1>PROMOTION_DRAGONS_TEARS</PromotionPrereq1>
+			<bAllowAI>1</bAllowAI>
+			<bInBordersOnly>1</bInBordersOnly>
+			<bInCityOnly>1</bInCityOnly>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+			<RemovePromotions>
+				<RemovePromotion>PROMOTION_DRAGONS_TEARS</RemovePromotion>
+			</RemovePromotions>
+			<bBuffCasterOnly>1</bBuffCasterOnly>
+			<CreateBuildingType>BUILDING_THE_DRAGON_TEAR_FOUNTAIN</CreateBuildingType>
+			<bAbility>1</bAbility>
+			<Effect>EFFECT_SPELL1</Effect>
+			<Sound>AS3D_SPELL_BLESS</Sound>
+			<bGraphicalOnly>1</bGraphicalOnly>
+			<Button>Art/Interface/Buttons/Equipment/DragonTears.dds</Button>
+		</SpellInfo>
+		<SpellInfo>			<!-- Drop The Trove of Shells -->
+			<Type>SPELL_DROP_TROVE_OF_SHELLS</Type>
+			<Description>TXT_KEY_SPELL_DROP_TROVE_OF_SHELLS</Description>
+			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
+			<PromotionPrereq1>PROMOTION_TROVE_OF_SHELLS</PromotionPrereq1>
+			<bAllowAI>1</bAllowAI>
+			<bInBordersOnly>1</bInBordersOnly>
+			<bInCityOnly>1</bInCityOnly>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+			<RemovePromotions>
+				<RemovePromotion>PROMOTION_TROVE_OF_SHELLS</RemovePromotion>
+			</RemovePromotions>
+			<bBuffCasterOnly>1</bBuffCasterOnly>
+			<CreateBuildingType>BUILDING_THE_TROVE_OF_SHELLS</CreateBuildingType>
+			<bAbility>1</bAbility>
+			<Effect>EFFECT_SPELL1</Effect>
+			<Sound>AS3D_SPELL_BLESS</Sound>
+			<bGraphicalOnly>1</bGraphicalOnly>
+			<Button>Art/Interface/Buttons/Equipment/TroveofShells.dds</Button>
+		</SpellInfo>
+		<SpellInfo>			<!-- Drop The Chalice of Sacrifice -->
+			<Type>SPELL_DROP_CHALICE_OF_SACRIFICE</Type>
+			<Description>TXT_KEY_SPELL_DROP_CHALICE_OF_SACRIFICE</Description>
+			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
+			<PromotionPrereq1>PROMOTION_CHALICE_OF_SACRIFICE</PromotionPrereq1>
+			<bAllowAI>1</bAllowAI>
+			<bInBordersOnly>1</bInBordersOnly>
+			<bInCityOnly>1</bInCityOnly>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+			<RemovePromotions>
+				<RemovePromotion>PROMOTION_CHALICE_OF_SACRIFICE</RemovePromotion>
+			</RemovePromotions>
+			<bBuffCasterOnly>1</bBuffCasterOnly>
+			<CreateBuildingType>BUILDING_THE_CHALICE_OF_SACRIFICE</CreateBuildingType>
+			<bAbility>1</bAbility>
+			<Effect>EFFECT_SPELL1</Effect>
+			<Sound>AS3D_SPELL_SACRIFICE</Sound>
+			<bGraphicalOnly>1</bGraphicalOnly>
+			<Button>Art/Interface/Buttons/Equipment/ChaliceofBlood.dds</Button>
+		</SpellInfo>
+		<SpellInfo>			<!-- Drop The Misery Stone -->
+			<Type>SPELL_DROP_MISERY_STONE</Type>
+			<Description>TXT_KEY_SPELL_DROP_MISERY_STONE</Description>
+			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
+			<PromotionPrereq1>PROMOTION_MISERY_STONE</PromotionPrereq1>
+			<bAllowAI>1</bAllowAI>
+			<bInBordersOnly>1</bInBordersOnly>
+			<bInCityOnly>1</bInCityOnly>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+			<RemovePromotions>
+				<RemovePromotion>PROMOTION_MISERY_STONE</RemovePromotion>
+			</RemovePromotions>
+			<bBuffCasterOnly>1</bBuffCasterOnly>
+			<CreateBuildingType>BUILDING_THE_MISERY_STONE</CreateBuildingType>
+			<bAbility>1</bAbility>
+			<Effect>EFFECT_SPELL1</Effect>
+			<Sound>AS3D_SPELL_REVOLT</Sound>
+			<bGraphicalOnly>1</bGraphicalOnly>
+			<Button>Art/Interface/Buttons/Equipment/MiseryStone.dds</Button>
+		</SpellInfo>
+		<SpellInfo>			<!-- Drop The Seed of the First Grove -->
+			<Type>SPELL_DROP_BLOOMSEED</Type>
+			<Description>TXT_KEY_SPELL_DROP_BLOOMSEED</Description>
+			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
+			<PromotionPrereq1>PROMOTION_BLOOMSEED</PromotionPrereq1>
+			<bAllowAI>1</bAllowAI>
+			<bInBordersOnly>1</bInBordersOnly>
+			<bInCityOnly>1</bInCityOnly>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+			<RemovePromotions>
+				<RemovePromotion>PROMOTION_BLOOMSEED</RemovePromotion>
+			</RemovePromotions>
+			<bBuffCasterOnly>1</bBuffCasterOnly>
+			<CreateBuildingType>BUILDING_THE_BLOOMSEED</CreateBuildingType>
+			<bAbility>1</bAbility>
+			<Effect>EFFECT_SPELL1</Effect>
+			<Sound>AS3D_SPELL_BLOOM</Sound>
+			<bGraphicalOnly>1</bGraphicalOnly>
+			<Button>Art/Interface/Buttons/Equipment/BloomSeed.dds</Button>
+		</SpellInfo>
 		<SpellInfo>			<!-- Drop The Heron Throne -->
 			<Type>SPELL_DROP_HERON_THRONE</Type>
 			<Description>TXT_KEY_SPELL_DROP_HERON_THRONE</Description>
@@ -10109,6 +10214,23 @@
 			<Sound>AS3D_SPELL_LOCUSTS</Sound>
 			<Button>Art/Interface/Buttons/Units/Batty.dds</Button>
 		</SpellInfo>
+		<SpellInfo>			<!-- Feed the Chalice -->
+			<Type>SPELL_FEED_THE_CHALICE_OF_SACRIFICE</Type>
+			<Description>TXT_KEY_SPELL_FEED_THE_CHALICE_OF_SACRIFICE</Description>
+			<Civilopedia>TXT_KEY_UNIT_SWARM_OF_SCORPIONBATS_PEDIA</Civilopedia>
+			<BuildingPrereq>BUILDING_THE_CHALICE_OF_SACRIFICE</BuildingPrereq>
+			<bAllowAI>1</bAllowAI>
+			<iAIWeight>50</iAIWeight>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+			<bSacrificeCaster>1</bSacrificeCaster>
+			<CreateUnitType>UNIT_SCORPION_BAT</CreateUnitType>
+			<bPermanentUnitCreate>1</bPermanentUnitCreate>
+			<bCasterNoDuration>1</bCasterNoDuration>
+			<Effect>EFFECT_SPELL1</Effect>
+			<Sound>AS3D_SPELL_LOCUSTS</Sound>             
+			<Button>Art/Interface/Buttons/Units/Batty.dds</Button>
+		</SpellInfo>
 		<SpellInfo>			<!-- Shimmering Dragon - Human Form -->
 			<Type>SPELL_SHIMMERINGDRAGON_HUMAN</Type>
 			<Description>TXT_KEY_SPELL_SHIMMERING_FORM</Description>
@@ -10164,6 +10286,26 @@
 			<Effect>EFFECT_WIND_SWIRL</Effect>
 			<Sound>AS3D_WATER_FLOW</Sound>
 			<Button>Art/Interface/Buttons/Units/War Tortoise.dds</Button>
+		</SpellInfo>
+		<SpellInfo>			<!-- Elder Dragon - Reality Break -->
+			<Type>SPELL_ELDER_DRAGON_REALITY_BREAK</Type>
+			<Description>TXT_KEY_SPELL_ELDER_DRAGON_REALITY_BREAK</Description>
+			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
+			<PromotionPrereq1>PROMOTION_TRUE_CORE</PromotionPrereq1>
+			<bAllowAI>1</bAllowAI>
+			<iAIWeight>50</iAIWeight>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+			<bAbility>1</bAbility>
+			<bCausesWar>1</bCausesWar>
+			<iRange>2</iRange>
+			<iDamage>40</iDamage>
+			<iDamageLimit>95</iDamageLimit>
+			<DamageType>DAMAGE_PHYSICAL</DamageType>
+			<PyResult>spellRealityBreak(pCaster)</PyResult>
+			<Effect>EFFECT_MAELSTROM</Effect>
+			<Sound>AS3D_SPELL_DESTROY_UNDEAD</Sound>
+			<Button>Art/Interface/Buttons/promotions/TrueCore.dds</Button>
 		</SpellInfo>
 		<SpellInfo>			<!-- Foxmens Feather Form -->
 			<Type>SPELL_FOXMEN_FEATHER</Type>
@@ -10293,6 +10435,111 @@
 			<Sound>AS3D_SPELL_TRAIN</Sound>
 			<bGraphicalOnly>1</bGraphicalOnly>
 			<Button>Art/Interface/Buttons/Equipment/DragonsHoard.dds</Button>
+		</SpellInfo>
+		<SpellInfo>			<!-- Take Vial of Dragons Tears (Building) -->
+			<Type>SPELL_TAKE_DRAGONS_TEARS_BUILDING</Type>
+			<Description>TXT_KEY_SPELL_TAKE_DRAGONS_TEARS</Description>
+			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
+			<Help>TXT_KEY_SPELL_TAKE_EQUIPMENT_HELP</Help>
+			<BuildingPrereq>BUILDING_THE_DRAGON_TEAR_FOUNTAIN</BuildingPrereq>
+			<bInBordersOnly>1</bInBordersOnly>
+			<bInCityOnly>1</bInCityOnly>
+			<bHasCasted>1</bHasCasted>
+			<AddPromotions>
+				<AddPromotion>PROMOTION_DRAGONS_TEARS</AddPromotion>
+			</AddPromotions>
+			<bBuffCasterOnly>1</bBuffCasterOnly>
+			<bAbility>1</bAbility>
+			<PyResult>spellTakeEquipmentBuilding(pCaster,'BUILDING_THE_DRAGON_TEAR_FOUNTAIN')</PyResult>
+			<PyRequirement>reqTakeEquipmentBuilding(pCaster,'BUILDING_THE_DRAGON_TEAR_FOUNTAIN')</PyRequirement>
+			<Effect>EFFECT_SPELL1</Effect>
+			<Sound>AS3D_SPELL_TRAIN</Sound>
+			<bGraphicalOnly>1</bGraphicalOnly>
+			<Button>Art/Interface/Buttons/Equipment/DragonsTears.dds</Button>
+		</SpellInfo>
+		<SpellInfo>			<!-- Take Trove of Shells (Building) -->
+			<Type>SPELL_TAKE_TROVE_OF_SHELLS_BUILDING</Type>
+			<Description>TXT_KEY_SPELL_TAKE_TROVE_OF_SHELLS</Description>
+			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
+			<Help>TXT_KEY_SPELL_TAKE_EQUIPMENT_HELP</Help>
+			<BuildingPrereq>BUILDING_THE_TROVE_OF_SHELLS</BuildingPrereq>
+			<bInBordersOnly>1</bInBordersOnly>
+			<bInCityOnly>1</bInCityOnly>
+			<bHasCasted>1</bHasCasted>
+			<AddPromotions>
+				<AddPromotion>PROMOTION_TROVE_OF_SHELLS</AddPromotion>
+			</AddPromotions>
+			<bBuffCasterOnly>1</bBuffCasterOnly>
+			<bAbility>1</bAbility>
+			<PyResult>spellTakeEquipmentBuilding(pCaster,'BUILDING_THE_TROVE_OF_SHELLS')</PyResult>
+			<PyRequirement>reqTakeEquipmentBuilding(pCaster,'BUILDING_THE_TROVE_OF_SHELLS')</PyRequirement>
+			<Effect>EFFECT_SPELL1</Effect>
+			<Sound>AS3D_SPELL_TRAIN</Sound>
+			<bGraphicalOnly>1</bGraphicalOnly>
+			<Button>Art/Interface/Buttons/Equipment/TroveofShells.dds</Button>
+		</SpellInfo>
+		<SpellInfo>			<!-- Take Chalice of Sacrifice (Building) -->
+			<Type>SPELL_TAKE_CHALICE_OF_SACRIFICE_BUILDING</Type>
+			<Description>TXT_KEY_SPELL_TAKE_CHALICE_OF_SACRIFICE</Description>
+			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
+			<Help>TXT_KEY_SPELL_TAKE_EQUIPMENT_HELP</Help>
+			<BuildingPrereq>BUILDING_THE_CHALICE_OF_SACRIFICE</BuildingPrereq>
+			<bInBordersOnly>1</bInBordersOnly>
+			<bInCityOnly>1</bInCityOnly>
+			<bHasCasted>1</bHasCasted>
+			<AddPromotions>
+				<AddPromotion>PROMOTION_CHALICE_OF_SACRIFICE</AddPromotion>
+			</AddPromotions>
+			<bBuffCasterOnly>1</bBuffCasterOnly>
+			<bAbility>1</bAbility>
+			<PyResult>spellTakeEquipmentBuilding(pCaster,'BUILDING_THE_CHALICE_OF_SACRIFICE')</PyResult>
+			<PyRequirement>reqTakeEquipmentBuilding(pCaster,'BUILDING_THE_CHALICE_OF_SACRIFICE')</PyRequirement>
+			<Effect>EFFECT_SPELL1</Effect>
+			<Sound>AS3D_SPELL_TRAIN</Sound>
+			<bGraphicalOnly>1</bGraphicalOnly>
+			<Button>Art/Interface/Buttons/Equipment/ChaliceofBlood.dds</Button>
+		</SpellInfo>
+		<SpellInfo>			<!-- Take Misery Stone (Building) -->
+			<Type>SPELL_TAKE_MISERY_STONE_BUILDING</Type>
+			<Description>TXT_KEY_SPELL_TAKE_MISERY_STONE</Description>
+			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
+			<Help>TXT_KEY_SPELL_TAKE_EQUIPMENT_HELP</Help>
+			<BuildingPrereq>BUILDING_THE_MISERY_STONE</BuildingPrereq>
+			<bInBordersOnly>1</bInBordersOnly>
+			<bInCityOnly>1</bInCityOnly>
+			<bHasCasted>1</bHasCasted>
+			<AddPromotions>
+				<AddPromotion>PROMOTION_MISERY_STONE</AddPromotion>
+			</AddPromotions>
+			<bBuffCasterOnly>1</bBuffCasterOnly>
+			<bAbility>1</bAbility>
+			<PyResult>spellTakeEquipmentBuilding(pCaster,'BUILDING_THE_MISERY_STONE')</PyResult>
+			<PyRequirement>reqTakeEquipmentBuilding(pCaster,'BUILDING_THE_MISERY_STONE')</PyRequirement>
+			<Effect>EFFECT_SPELL1</Effect>
+			<Sound>AS3D_SPELL_TRAIN</Sound>
+			<bGraphicalOnly>1</bGraphicalOnly>
+			<Button>Art/Interface/Buttons/Equipment/Miserystone.dds</Button>
+		</SpellInfo>
+		<SpellInfo>			<!-- Take Seed of the First Grove (Building) -->
+			<Type>SPELL_TAKE_BLOOMSEED_BUILDING</Type>
+			<Description>TXT_KEY_SPELL_TAKE_BLOOMSEED</Description>
+			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
+			<Help>TXT_KEY_SPELL_TAKE_EQUIPMENT_HELP</Help>
+			<BuildingPrereq>BUILDING_THE_BLOOMSEED</BuildingPrereq>
+			<bInBordersOnly>1</bInBordersOnly>
+			<bInCityOnly>1</bInCityOnly>
+			<bHasCasted>1</bHasCasted>
+			<AddPromotions>
+				<AddPromotion>PROMOTION_BLOOMSEED</AddPromotion>
+			</AddPromotions>
+			<bBuffCasterOnly>1</bBuffCasterOnly>
+			<bAbility>1</bAbility>
+			<PyResult>spellTakeEquipmentBuilding(pCaster,'BUILDING_THE_BLOOMSEED')</PyResult>
+			<PyRequirement>reqTakeEquipmentBuilding(pCaster,'BUILDING_THE_BLOOMSEED')</PyRequirement>
+			<Effect>EFFECT_SPELL1</Effect>
+			<Sound>AS3D_SPELL_TRAIN</Sound>
+			<bGraphicalOnly>1</bGraphicalOnly>
+			<Button>Art/Interface/Buttons/Equipment/BloomSeed.dds</Button>
 		</SpellInfo>
 		<SpellInfo>			<!-- Take Heron Throne (Building) -->
 			<Type>SPELL_TAKE_HERON_THRONE_BUILDING</Type>
