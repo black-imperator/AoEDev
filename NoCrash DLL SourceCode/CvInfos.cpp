@@ -3673,6 +3673,10 @@ m_bImmuneToFirstStrikes(false),
 m_bDurationDecreaseSpellpower(false),
 
 m_bTradeDefender(false),
+m_bNeverResurrect(false),
+m_bMayResurrect(false),
+m_iDeathListTarget(-1),
+m_iDeathListCombat(-1),
 
 m_piNoBadExploreImprovement(NULL),
 m_piTerrainAttackPercent(NULL),
@@ -4647,6 +4651,26 @@ bool CvPromotionInfo::isDurationDecreaseSpellpower() const
 bool CvPromotionInfo::isTradeDefender() const
 {
 	return m_bTradeDefender;
+}
+
+bool CvPromotionInfo::isNeverResurrect() const
+{
+	return m_bNeverResurrect;
+}
+
+bool CvPromotionInfo::isMayResurrect() const
+{
+	return m_bMayResurrect;
+}
+
+int CvPromotionInfo::getDeathListTarget() const
+{
+	return m_iDeathListTarget;
+}
+
+int CvPromotionInfo::getDeathListCombat() const
+{
+	return m_iDeathListCombat;
 }
 
 
@@ -5988,6 +6012,10 @@ void CvPromotionInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_bDurationDecreaseSpellpower);
 
 	stream->Read(&m_bTradeDefender);
+	stream->Read(&m_bNeverResurrect);
+	stream->Read(&m_bMayResurrect);
+	stream->Read(&m_iDeathListTarget);
+	stream->Read(&m_iDeathListCombat);
 
 	stream->ReadString(m_szSound);
 /*************************************************************************************************/
@@ -6938,7 +6966,11 @@ void CvPromotionInfo::write(FDataStreamBase* stream)
 	stream->Write(m_bDurationDecreaseSpellpower);
 
 	stream->Write(m_bTradeDefender);
-	
+	stream->Write(m_bNeverResurrect);
+	stream->Write(m_bMayResurrect);
+	stream->Write(m_iDeathListTarget);
+	stream->Write(m_iDeathListCombat);
+
 	stream->WriteString(m_szSound);
 /*************************************************************************************************/
 /**	Promotion PyHelp		 				07/09/10								Valkrionn	**/
@@ -7590,7 +7622,11 @@ bool CvPromotionInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bImmuneToFirstStrikes, "bImmuneToFirstStrikes");
 	
 	pXML->GetChildXmlValByName(&m_bTradeDefender, "bTradeDefender");
-	
+	pXML->GetChildXmlValByName(&m_bNeverResurrect, "bNeverResurrect");
+	pXML->GetChildXmlValByName(&m_bMayResurrect, "bMayResurrect");
+	pXML->GetChildXmlValByName(m_szDeathListTargetforPass3, "DeathList");
+	pXML->GetChildXmlValByName(m_szDeathListCombatApplicationforPass3, "DeathListCombat");
+	pXML->GetChildXmlValByName(&m_bTradeDefender, "bTradeDefender");
 	pXML->GetChildXmlValByName(&m_iVisibilityChange, "iVisibilityChange");
 	pXML->GetChildXmlValByName(&m_iMovesChange, "iMovesChange");
 	pXML->GetChildXmlValByName(&m_iMoveDiscountChange, "iMoveDiscountChange");
@@ -8603,10 +8639,19 @@ bool CvPromotionInfo::readPass3()
 			break;
 		}
 	}
-/*************************************************************************************************/
+	
+	if (GC.getInfoTypeForString(m_szDeathListTargetforPass3, true) != -1)
+	{
+		m_iDeathListTarget = GC.getInfoTypeForString(m_szDeathListTargetforPass3);
+	}
+	if (GC.getInfoTypeForString(m_szDeathListCombatApplicationforPass3, true) != -1)
+	{
+		m_iDeathListCombat = GC.getInfoTypeForString(m_szDeathListCombatApplicationforPass3);
+	}
+	/*************************************************************************************************/
 /**	TrueModular								END													**/
 /*************************************************************************************************/
-	m_aszExtraXMLforPass3.clear();
+	
 	m_piNoBadExploreImprovement = new int[GC.getNumImprovementInfos()];
 	for (int iI = 0; iI < GC.getNumImprovementInfos(); iI++)
 	{
@@ -8653,6 +8698,10 @@ void CvPromotionInfo::copyNonDefaults(CvPromotionInfo* pClassInfo, CvXMLLoadUtil
 	if (isImmuneToFirstStrikes()				== false)				m_bImmuneToFirstStrikes				= pClassInfo->isImmuneToFirstStrikes();
 	if (isDurationDecreaseSpellpower() == false)				m_bDurationDecreaseSpellpower = pClassInfo->isDurationDecreaseSpellpower();
 	if (isTradeDefender() 						== false)				m_bTradeDefender 					= pClassInfo->isTradeDefender();
+	if (isNeverResurrect() == false)				m_bNeverResurrect = pClassInfo->isNeverResurrect();
+	if (isMayResurrect() == false)				m_bMayResurrect = pClassInfo->isMayResurrect();
+	if (getDeathListTarget() == -1)					m_iDeathListTarget = pClassInfo->getDeathListTarget();
+	if (getDeathListCombat() == -1)					m_iDeathListCombat = pClassInfo->getDeathListCombat();
 	if (isEnraged()							== false)				m_bEnraged						= pClassInfo->isEnraged();
 	if (isBoarding()							== false)				m_bBoarding							= pClassInfo->isBoarding();
 	if (isOnlyDefensive()						== false)				m_bOnlyDefensive					= pClassInfo->isOnlyDefensive();
@@ -11263,6 +11312,7 @@ m_bDispel(false),
 m_bPush(false),
 m_bRemoveHasCasted(false),
 m_bSacrificeCaster(false),
+m_bResurrect(false),
 m_iChangePopulation(0),
 m_iCost(0),
 m_iNumTargets(-1),
@@ -11692,6 +11742,10 @@ bool CvSpellInfo::isSacrificeCaster() const
 {
 	return m_bSacrificeCaster;
 }
+bool CvSpellInfo::isResurrect() const
+{
+	return m_bResurrect;
+}
 /*************************************************************************************************/
 /**	AutoCast								24/05/10									Snarko	**/
 /**																								**/
@@ -12076,6 +12130,7 @@ void CvSpellInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_bPush);
 	stream->Read(&m_bRemoveHasCasted);
 	stream->Read(&m_bSacrificeCaster);
+	stream->Read(&m_bResurrect);
 	stream->Read(&m_iChangePopulation);
 	stream->Read(&m_iCost);
 	stream->Read(&m_iNumTargets);
@@ -12269,6 +12324,7 @@ void CvSpellInfo::write(FDataStreamBase* stream)
 	stream->Write(m_bPush);
 	stream->Write(m_bRemoveHasCasted);
 	stream->Write(m_bSacrificeCaster);
+	stream->Write(m_bResurrect);
 	stream->Write(m_iChangePopulation);
 	stream->Write(m_iCost);
 	stream->Write(m_iNumTargets);
@@ -12527,6 +12583,7 @@ bool CvSpellInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bPush, "bPush");
 	pXML->GetChildXmlValByName(&m_bRemoveHasCasted, "bRemoveHasCasted");
 	pXML->GetChildXmlValByName(&m_bSacrificeCaster, "bSacrificeCaster");
+	pXML->GetChildXmlValByName(&m_bResurrect, "bResurrect");
 /*************************************************************************************************/
 /**	AutoCast								24/05/10									Snarko	**/
 /**																								**/
@@ -12634,6 +12691,7 @@ void CvSpellInfo::copyNonDefaults(CvSpellInfo* pClassInfo, CvXMLLoadUtility* pXM
 	if (isPush()						== false)				m_bPush							= pClassInfo->isPush();
 	if (isRemoveHasCasted()				== false)				m_bRemoveHasCasted				= pClassInfo->isRemoveHasCasted();
 	if (isSacrificeCaster()				== false)				m_bSacrificeCaster				= pClassInfo->isSacrificeCaster();
+	if (isResurrect() == false)				m_bResurrect = pClassInfo->isResurrect();
 	if (isSummonMaster()				== false)				m_bSummonMaster					= pClassInfo->isSummonMaster();
 	if (isAllowAI()						== false)				m_bAllowAI						= pClassInfo->isAllowAI();
 	if (isAdjacentToWaterOnly()			== false)				m_bAdjacentToWaterOnly			= pClassInfo->isAdjacentToWaterOnly();
@@ -40505,6 +40563,7 @@ m_iEthicalAlignmentShiftTowardsNeutral(-1),
 /**	Lawful-Chaotic Alignments					END												**/
 /*************************************************************************************************/
 //FfH Religion: Added by Kael 08/09/2007
+m_iDeathList(NO_DEATHLIST),
 m_bHidden(false),
 m_bNoCrimeUnhappy(false),
 m_bSneakAttack(false),
@@ -40863,6 +40922,7 @@ int CvReligionInfo::getEthicalAlignmentShiftTowardsNeutral() const      {return 
 /**	Lawful-Chaotic Alignments					END												**/
 /*************************************************************************************************/
 //FfH Religion: Added by Kael 08/09/2007
+int CvReligionInfo::getDeathList() const { return m_iDeathList; }
 bool CvReligionInfo::isHidden() const
 {
 	return m_bHidden;
@@ -41160,8 +41220,36 @@ bool CvReligionInfo::read(CvXMLLoadUtility* pXML)
 /*************************************************************************************************/
 //FfH: End Add
 
+	pXML->GetChildXmlValByName(m_szDeathListforPass3, "DeathList");
 	return true;
 }
+
+bool CvReligionInfo::readPass3()
+{
+	/*************************************************************************************************/
+	/**	New Tag Defs	(PromotionInfos)		08/09/08								Xienwolf	**/
+	/**																								**/
+	/**					Third Pass to reference information which didn't exist before				**/
+	/*************************************************************************************************/
+	/**								---- Start Original Code ----									**
+		if (m_aszExtraXMLforPass3.size() < 1)
+		{
+			FAssert(false);
+			return false;
+		}
+	/**								----  End Original Code  ----									**/
+	if (GC.getInfoTypeForString(m_szDeathListforPass3, true) != -1)
+	{
+		m_iDeathList = GC.getInfoTypeForString(m_szDeathListforPass3);
+	}
+	/*************************************************************************************************/
+/**	TrueModular								END													**/
+/*************************************************************************************************/
+
+
+	return true;
+}
+
 /*************************************************************************************************/
 /**	TrueModular								05/26/09	Written: Mr. Genie	Imported: Xienwolf	**/
 /**	New Tag Defs	(ReligionInfos)																**/
@@ -55992,3 +56080,130 @@ void CvImprovementClassInfo::copyNonDefaults(CvImprovementClassInfo* pClassInfo,
 /*************************************************************************************************/
 /**	TrueModular								END													**/
 /*************************************************************************************************/
+//======================================================================================================
+//					CvDeathListInfo
+//======================================================================================================
+
+//------------------------------------------------------------------------------------------------------
+//
+//  FUNCTION:   CvDeathListInfo()
+//
+//  PURPOSE :   Default constructor
+//
+//------------------------------------------------------------------------------------------------------
+CvDeathListInfo::CvDeathListInfo() :
+	m_bBypassImmortal(false),
+	m_bRequiresLivingCiv(false),
+	m_bKeepExp(false),
+	m_bKeepPromo(false),
+	m_iDefaultUnitType(NO_UNIT),
+	m_iPriority(0),
+	m_iReturnDelay(0),
+	m_iMaxUnitsReleased(0),
+	m_iCivReceiver(NO_CIVILIZATION)
+{
+}
+
+//------------------------------------------------------------------------------------------------------
+//
+//  FUNCTION:   ~CvDeathListInfo()
+//
+//  PURPOSE :   Default destructor
+//
+//------------------------------------------------------------------------------------------------------
+CvDeathListInfo::~CvDeathListInfo()
+{
+}
+bool CvDeathListInfo::isBypassImmortal() const
+{
+	return m_bBypassImmortal;
+}
+bool CvDeathListInfo::isRequiresLivingCiv() const
+{
+	return m_bRequiresLivingCiv;
+}
+bool CvDeathListInfo::isKeepExp() const
+{
+	return m_bKeepExp;
+
+}
+bool CvDeathListInfo::isKeepPromo() const
+{
+	return m_bKeepPromo;
+
+}
+int CvDeathListInfo::getDefaultUnitType() const
+{
+	return m_iDefaultUnitType;
+
+}
+int CvDeathListInfo::getReturnDelay() const
+{
+	return m_iReturnDelay;
+}
+int CvDeathListInfo::getPriority() const
+{
+	return m_iPriority;
+}
+int CvDeathListInfo::getMaxUnitsReleased() const
+{
+	return m_iMaxUnitsReleased;
+}
+int CvDeathListInfo::getCivReceiver() const
+{
+	return m_iCivReceiver;
+
+}
+
+
+const char* CvDeathListInfo::getPythonPrereq() const
+{
+	return m_szPythonPrereq;
+}
+
+bool CvDeathListInfo::read(CvXMLLoadUtility* pXML)
+{
+	CvString szTextVal;
+	if (!CvInfoBase::read(pXML))
+	{
+		return false;
+	}
+
+	pXML->GetChildXmlValByName(&m_bBypassImmortal, "bBypassImmortal");
+	pXML->GetChildXmlValByName(&m_bKeepExp, "bKeepExp");
+	pXML->GetChildXmlValByName(&m_bKeepPromo, "bKeepPromo");
+
+	pXML->GetChildXmlValByName(szTextVal, "DefaultUnitType");
+	m_iDefaultUnitType = pXML->FindInInfoClass(szTextVal);
+	pXML->GetChildXmlValByName(&m_iPriority, "iPriority");
+
+	pXML->GetChildXmlValByName(&m_iReturnDelay, "iReturnDelay");
+	pXML->GetChildXmlValByName(&m_iMaxUnitsReleased, "iMaxUnitsReleased");
+	
+	pXML->GetChildXmlValByName(szTextVal, "CivReceiver");
+	m_iCivReceiver = pXML->FindInInfoClass(szTextVal);
+	pXML->GetChildXmlValByName(&m_bRequiresLivingCiv, "bRequiresLivingCiv");
+
+	pXML->GetChildXmlValByName(m_szPythonPrereq, "PythonPrereq");
+
+	return true;
+}
+
+void CvDeathListInfo::copyNonDefaults(CvDeathListInfo* pClassInfo, CvXMLLoadUtility* pXML)
+{
+	CvString cDefault = CvString::format("").GetCString();
+	CvWString wDefault = CvWString::format(L"").GetCString();
+
+	CvInfoBase::copyNonDefaults(pClassInfo, pXML);
+
+	if (isBypassImmortal() == false)			m_bBypassImmortal = pClassInfo->isBypassImmortal();
+	if (isRequiresLivingCiv() == false)			m_bRequiresLivingCiv = pClassInfo->isRequiresLivingCiv();
+	if (isKeepExp() == false)			m_bKeepExp = pClassInfo->isKeepExp();
+	if (isKeepPromo() == false)			m_bKeepPromo = pClassInfo->isKeepPromo();
+	if (getDefaultUnitType() == NO_UNIT)	m_iDefaultUnitType = pClassInfo->getDefaultUnitType();
+	if (getPriority() == 0)	m_iPriority = pClassInfo->getPriority();
+	if (getReturnDelay() == 0)	m_iReturnDelay = pClassInfo->getReturnDelay();
+	if (getMaxUnitsReleased() == 0)	m_iMaxUnitsReleased = pClassInfo->getMaxUnitsReleased();
+	if (getCivReceiver() == NO_CIVILIZATION)	m_iCivReceiver = pClassInfo->getCivReceiver();
+	if (getPythonPrereq() == cDefault)		m_szPythonPrereq = pClassInfo->getPythonPrereq();
+}

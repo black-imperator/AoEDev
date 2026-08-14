@@ -1072,7 +1072,8 @@ bool CvXMLLoadUtility::LoadPreMenuGlobals()
 
 	LoadGlobalClassInfo(GC.getUnitArtStyleTypeInfo(), "CIV4UnitArtStyleTypeInfos", "Civilizations", "Civ4UnitArtStyleTypeInfos/UnitArtStyleTypeInfos/UnitArtStyleTypeInfo", false);
 	LoadGlobalClassInfo(GC.getCivilizationInfo(), "CIV4CivilizationInfos", "Civilizations", "Civ4CivilizationInfos/CivilizationInfos/CivilizationInfo", true, &CvDLLUtilityIFaceBase::createCivilizationInfoCacheObject);
-/*************************************************************************************************/
+	LoadGlobalClassInfo(GC.getDeathListInfo(), "CIV4DeathListInfos", "GameInfo", "Civ4DeathListInfos/DeathListInfos/DeathListInfo", false);
+	/*************************************************************************************************/
 /**	StateNames								12/12/08								Jean Elcard	**/
 /**																								**/
 /**						Load the new XML file with the State Names Infos.						**/
@@ -1139,6 +1140,10 @@ bool CvXMLLoadUtility::LoadPreMenuGlobals()
 	for (int i=0; i < GC.getNumProjectInfos(); ++i)
 	{
 		GC.getProjectInfo((ProjectTypes)i).readPass3();
+	}
+	for (int i = 0; i < GC.getNumReligionInfos(); ++i)
+	{
+		GC.getReligionInfo((ReligionTypes)i).readPass3();
 	}
 /*************************************************************************************************/
 /**	CivPlotMods								03/23/09								Jean Elcard	**/

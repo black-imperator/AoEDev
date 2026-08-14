@@ -1133,7 +1133,7 @@
 			<Sound>AS3D_SPELL_SPECTRE</Sound>
 			<Button>Art/Interface/Buttons/Units/Spectre.dds</Button>
 		</SpellInfo>
-		<SpellInfo>			<!-- Death 3 - Summon Wraith -->
+		<SpellInfo>			<!-- Death 3 - Summon Wraith 50-->
 			<Type>SPELL_SUMMON_WRAITH</Type>
 			<Description>TXT_KEY_SPELL_SUMMON_WRAITH</Description>
 			<Civilopedia>TXT_KEY_SPELL_SUMMON_WRAITH_PEDIA</Civilopedia>
@@ -1388,7 +1388,7 @@
 			<Sound>AS3D_SPELL_REPAIR</Sound>
 			<Button>Art/Interface/Buttons/Spells/Repair.dds</Button>
 		</SpellInfo>
-		<SpellInfo>			<!-- Enchtanment 2 - Flaming Arrows -->
+		<SpellInfo>			<!-- Enchtanment 2 - Flaming Arrows 60-->
 			<Type>SPELL_FLAMING_ARROWS</Type>
 			<Description>TXT_KEY_SPELL_FLAMING_ARROWS</Description>
 			<Civilopedia>TXT_KEY_SPELL_FLAMING_ARROWS_PEDIA</Civilopedia>
@@ -1678,7 +1678,7 @@
 			<Sound>AS3D_SPELL_CONTAGION</Sound>
 			<Button>Art/Interface/Buttons/Spells/DisruptMagic.dds</Button>
 		</SpellInfo>
-		<SpellInfo>			<!-- Force 3 - Wall of Force -->
+		<SpellInfo>			<!-- Force 3 - Wall of Force 70-->
 			<Type>SPELL_WALL_OF_FORCE</Type>
 			<Description>TXT_KEY_MULTI_WALL_OF_FORCE</Description>
 			<Civilopedia>TXT_KEY_MULTI_WALL_OF_FORCE_PEDIA</Civilopedia>
@@ -1940,7 +1940,7 @@
 			<bGraphicalOnly>1</bGraphicalOnly>
 			<Button>Art/Interface/Buttons/Spells/endautocastSanctify.dds</Button>
 		</SpellInfo>
-		<SpellInfo>			<!-- Life 2 - Banishment -->
+		<SpellInfo>			<!-- Life 2 - Banishment 80-->
 			<Type>SPELL_DESTROY_UNDEAD</Type>
 			<Description>TXT_KEY_SPELL_DESTROY_UNDEAD</Description>
 			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
@@ -1971,7 +1971,7 @@
 			<Sound>AS3D_SPELL_DESTROY_UNDEAD</Sound>
 			<Button>Art/Interface/Buttons/Spells/Destroy Undead.dds</Button>
 		</SpellInfo>
-		<SpellInfo>			<!-- Life 3 - Resurrection -->
+		<SpellInfo>			<!-- Life 3 - Resurrection 81-->
 			<Type>SPELL_RESURRECTION</Type>
 			<Description>TXT_KEY_SPELL_RESURRECTION</Description>
 			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
@@ -1987,7 +1987,6 @@
 			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
 			<bResurrect>1</bResurrect>
 			<bHasCasted>1</bHasCasted>
-			<iDelay>7</iDelay>
 			<Effect>EFFECT_RESURRECTION</Effect>
 			<Sound>AS3D_SPELL_CURE_DISEASE</Sound>
 			<Button>Art/Interface/Buttons/Spells/Resurrection.dds</Button>

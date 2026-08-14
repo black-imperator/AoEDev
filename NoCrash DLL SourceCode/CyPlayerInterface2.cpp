@@ -239,7 +239,8 @@ void CyPlayerPythonInterface2(python::class_<CyPlayer>& x)
 			.def("setNumMaxTraitPerClass", &CyPlayer::setNumMaxTraitPerClass, "void (int i)")
 			.def("initValidTraitTriggers", &CyPlayer::initValidTraitTriggers, "void ()")
 			.def("setGainingTrait", &CyPlayer::setGainingTrait, "void (bool b)")
-/*************************************************************************************************/
+			.def("addToResurrectList", &CyPlayer::addToResurrectList, "void (int iUnitType,int iExp)")
+			/*************************************************************************************************/
 /** End                                                                                         **/
 /*************************************************************************************************/
 		;

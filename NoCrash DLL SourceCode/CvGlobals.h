@@ -208,6 +208,8 @@ class CvPlotEffectInfo;
 //Magic Rework
 class CvSpellClassInfo;
 
+class CvDeathListInfo;
+
 //PromotionClass
 class CvPromotionClassInfo;
 
@@ -999,6 +1001,11 @@ public:
 	int getNumSpellClassInfos();
 	std::vector<CvSpellClassInfo*>& getSpellClassInfo();
 	CvSpellClassInfo& getSpellClassInfo(SpellClassTypes eSpellClass);
+
+
+	int getNumDeathListInfos();
+	std::vector<CvDeathListInfo*>& getDeathListInfo();
+	CvDeathListInfo& getDeathListInfo(DeathListTypes eDeathList);
 
 	//PromotionClass
 	int getNumPromotionClassInfos();
@@ -1930,6 +1937,7 @@ protected:
 	std::vector<CvPlotEffectInfo*> m_paPlotEffectInfo;
 	//Magic Rework
 	std::vector<CvSpellClassInfo*> m_paSpellClassInfo;
+	std::vector<CvDeathListInfo*> m_paDeathListInfo;
 
 	//PromotionClass
 	std::vector<CvPromotionClassInfo*> m_paPromotionClassInfo;

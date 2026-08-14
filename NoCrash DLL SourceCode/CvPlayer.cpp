@@ -269,6 +269,7 @@ void CvPlayer::init(PlayerTypes eID)
 	m_plotGroups.init();
 
 	m_cities.init();
+	m_deadunits.init();
 
 	m_units.init();
 
@@ -754,6 +755,7 @@ void CvPlayer::uninit()
 	m_plotGroups.uninit();
 
 	m_cities.uninit();
+	m_deadunits.uninit();
 
 	m_units.uninit();
 
@@ -1617,6 +1619,7 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	m_plotGroups.removeAll();
 
 	m_cities.removeAll();
+	m_deadunits.removeAll();
 
 	m_units.removeAll();
 
@@ -4288,6 +4291,31 @@ void CvPlayer::doTurn()
 
 
 	doEspionagePoints();
+	bool bFinished = true;
+	int iReleased = 0;
+	for (int iI = 0; iI < GC.getNumDeathListInfos(); iI++)
+	{
+		if (GC.getDeathListInfo((DeathListTypes)iI).getCivReceiver() == getCivilizationType())
+		{
+			if (GC.getDeathListInfo((DeathListTypes)iI).getMaxUnitsReleased() > 0)
+			{
+				while (bFinished && iReleased < GC.getDeathListInfo((DeathListTypes)iI).getMaxUnitsReleased())
+				{
+					bFinished = GC.getGame().releaseNextDeathListUnit(iI, false, getID(), false);
+					iReleased++;
+				}
+			}
+			else
+			{
+				while (bFinished)
+				{
+					bFinished = GC.getGame().releaseNextDeathListUnit(iI, false, getID(), false);
+				}
+			}
+		}
+	}
+	
+	
 	szError.Format("Player::doTurn-docities Turn %i, Leader %s", GC.getGame().getGameTurn(), GC.getLeaderHeadInfo(getLeaderType()).getType());
 	profiler2.profile(szError);
 
@@ -17161,6 +17189,58 @@ void CvPlayer::deleteCity(int iID)
 }
 
 
+DeadUnitData* CvPlayer::firstDeadUnit(int* pIterIdx, bool bRev) const
+{
+	return !bRev ? m_deadunits.beginIter(pIterIdx) : m_deadunits.endIter(pIterIdx);
+}
+
+
+DeadUnitData* CvPlayer::nextDeadUnit(int* pIterIdx, bool bRev) const
+{
+	return !bRev ? m_deadunits.nextIter(pIterIdx) : m_deadunits.prevIter(pIterIdx);
+}
+
+
+int CvPlayer::getNumDeadUnits() const
+{
+	return m_deadunits.getCount();
+}
+
+
+DeadUnitData* CvPlayer::getDeadUnit(int iID) const
+{
+	return(m_deadunits.getAt(iID));
+}
+
+
+DeadUnitData* CvPlayer::addDeadUnit()
+{
+	return(m_deadunits.add());
+}
+
+void CvPlayer::addToResurrectList(int iUnitType, int iExp)
+{
+	DeadUnitData* data = addDeadUnit();
+	data->iDeathList = -1;
+	data->iUnitType = iUnitType;
+	data->iDeathTurn = 0;
+	data->iExperience = iExp;
+	data->iLevel = 1;
+	data->iOriginalOwner = getID();
+	data->piPromotions = new int[GC.getNumPromotionInfos()];
+	for (int i = 0; i < GC.getNumPromotionInfos(); i++)
+	{
+		data->piPromotions[i] = 0;
+	}
+
+}
+void CvPlayer::deleteDeadUnit(int iID)
+{
+	m_deadunits.removeAt(iID);
+}
+
+
+
 CvUnit* CvPlayer::firstUnit(int *pIterIdx, bool bRev) const
 {
 	return !bRev ? m_units.beginIter(pIterIdx) : m_units.endIter(pIterIdx);
@@ -21295,6 +21375,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 
 	ReadStreamableFFreeListTrashArray(m_plotGroups, pStream);
 	ReadStreamableFFreeListTrashArray(m_cities, pStream);
+	ReadStreamableFFreeListTrashArray(m_deadunits, pStream);
 	ReadStreamableFFreeListTrashArray(m_units, pStream);
 	ReadStreamableFFreeListTrashArray(m_selectionGroups, pStream);
 	ReadStreamableFFreeListTrashArray(m_eventsTriggered, pStream);
@@ -22068,6 +22149,7 @@ void CvPlayer::write(FDataStreamBase* pStream)
 
 	WriteStreamableFFreeListTrashArray(m_plotGroups, pStream);
 	WriteStreamableFFreeListTrashArray(m_cities, pStream);
+	WriteStreamableFFreeListTrashArray(m_deadunits, pStream);
 	WriteStreamableFFreeListTrashArray(m_units, pStream);
 	WriteStreamableFFreeListTrashArray(m_selectionGroups, pStream);
 	WriteStreamableFFreeListTrashArray(m_eventsTriggered, pStream);

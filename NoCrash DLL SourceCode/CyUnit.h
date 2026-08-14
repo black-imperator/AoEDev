@@ -536,6 +536,10 @@ public:
 	void setBaseCombatStrDefense(int iCombat);
 	int baseCombatStrDefense() const;
 	bool canCast(int spell, bool bTestVisible) const;
+	bool canCastResurrect(int spell) const;
+	void castResurrect(int spell);
+	void setDeathListTarget(int eDeathlist);
+	int getDeathListTarget() const;
 	bool canDispel(int spell) const;
 	void cast(int spell);
 	void castOnPlot(int spell, CyPlot* pPlot = NULL);

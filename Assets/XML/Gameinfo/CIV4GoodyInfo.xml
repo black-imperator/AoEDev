@@ -4589,7 +4589,7 @@
 			</PromotionAdds>
 		</GoodyInfo>
 			<!-- Resurrect (Disabled for now, does nothing) -->
-		<!-- <GoodyInfo>
+	 <GoodyInfo>
 			<Type>GOODY_EXPLORE_RESURRECT</Type>
 			<GoodyClasses>
 				<GoodyClass>
@@ -4602,8 +4602,9 @@
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>90</iDestroyLairChance>
 			<bBad>0</bBad>
+			<PythonPrereq>reqexploreLairResurrect</PythonPrereq>							<!--Function called before lair is added to valid ones, if True is returned function passed prereq, if False - result is not valid, Args (pUnit, pPlot)-->
 			<PythonCallback>exploreLairResurrect(pUnit,pPlot)</PythonCallback>
-		</GoodyInfo> -->
+		</GoodyInfo>
 		<GoodyInfo> <!--TaintedLandEvil-->
 			<Type>GOODY_TAINTED_LANDS_EVIL</Type>
 			<GoodyClasses>

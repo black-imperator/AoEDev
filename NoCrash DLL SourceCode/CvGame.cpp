@@ -196,6 +196,7 @@ void CvGame::init(HandicapTypes eHandicap)
 	//--------------------------------
 	// Init containers
 	m_deals.init();
+	m_deadunits.init();
 	m_voteSelections.init();
 	m_votesTriggered.init();
 
@@ -741,6 +742,7 @@ void CvGame::uninit()
 	m_aszGreatPeopleBorn.clear();
 
 	m_deals.uninit();
+	m_deadunits.uninit();
 	m_voteSelections.uninit();
 	m_votesTriggered.uninit();
 
@@ -1032,6 +1034,7 @@ void CvGame::reset(HandicapTypes eHandicap, bool bConstructorCall)
 	}
 
 	m_deals.removeAll();
+	m_deadunits.removeAll();
 	m_voteSelections.removeAll();
 	m_votesTriggered.removeAll();
 
@@ -8310,7 +8313,118 @@ CvDeal* CvGame::nextDeal(int *pIterIdx, bool bRev)
 	return !bRev ? m_deals.nextIter(pIterIdx) : m_deals.prevIter(pIterIdx);
 }
 
+DeadUnitData* CvGame::firstDeadUnit(int* pIterIdx, bool bRev) const
+{
+	return !bRev ? m_deadunits.beginIter(pIterIdx) : m_deadunits.endIter(pIterIdx);
+}
 
+
+DeadUnitData* CvGame::nextDeadUnit(int* pIterIdx, bool bRev) const
+{
+	return !bRev ? m_deadunits.nextIter(pIterIdx) : m_deadunits.prevIter(pIterIdx);
+}
+
+
+int CvGame::getNumDeadUnits() const
+{
+	return m_deadunits.getCount();
+}
+
+
+DeadUnitData* CvGame::getDeadUnit(int iID) const
+{
+	return(m_deadunits.getAt(iID));
+}
+
+
+DeadUnitData* CvGame::addDeadUnit()
+{
+	return(m_deadunits.add());
+}
+void CvGame::deleteDeadUnit(int iID)
+{
+	m_deadunits.removeAt(iID);
+}
+
+DeadUnitData* CvGame::nextDeathListUnit(int iDeathList, bool bypassreturndelay) const
+{
+	DeadUnitData* pLoopData;
+	int iLoop;
+	for (pLoopData = firstDeadUnit(&iLoop); pLoopData != NULL; pLoopData = nextDeadUnit(&iLoop))
+	{
+		if (pLoopData->iDeathList== iDeathList)
+		{
+			if (!bypassreturndelay && GC.getDeathListInfo((DeathListTypes)iDeathList).getReturnDelay() > 0)
+			{
+				if (pLoopData->iDeathTurn + GC.getDeathListInfo((DeathListTypes)iDeathList).getReturnDelay() <= getTurnSlice())
+				{
+					return pLoopData;
+				}
+			}
+			else
+			{
+				return pLoopData;
+			}
+		}
+	}
+	return NULL;
+}
+
+bool CvGame::releaseNextDeathListUnit(int iDeathList, bool bReturnOriginalOwner, int inewOwner, bool bBypassDelay)
+{
+	DeadUnitData* pData = nextDeathListUnit(iDeathList, bBypassDelay);
+	int iOwner = inewOwner;
+	CvUnit* pUnit;
+	if (pData != NULL)
+	{
+		if (bReturnOriginalOwner)
+		{
+			iOwner =pData->iOriginalOwner;
+		}
+		if (GET_PLAYER((PlayerTypes)iOwner).isAlive() && GET_PLAYER((PlayerTypes)iOwner).getCapitalCity() != NULL)
+		{
+			if (GC.getDeathListInfo((DeathListTypes)iDeathList).getDefaultUnitType() != NO_UNIT)
+			{
+				pUnit = GET_PLAYER((PlayerTypes)iOwner).initUnit((UnitTypes)GC.getDeathListInfo((DeathListTypes)iDeathList).getDefaultUnitType(), GET_PLAYER((PlayerTypes)iOwner).getCapitalCity()->getX_INLINE(), GET_PLAYER((PlayerTypes)iOwner).getCapitalCity()->getY_INLINE());
+			}
+			else
+			{
+				pUnit = GET_PLAYER((PlayerTypes)iOwner).initUnit((UnitTypes)pData->iUnitType, GET_PLAYER((PlayerTypes)iOwner).getCapitalCity()->getX_INLINE(), GET_PLAYER((PlayerTypes)iOwner).getCapitalCity()->getY_INLINE());
+			}
+			if (GC.getDeathListInfo((DeathListTypes)iDeathList).isKeepExp())
+			{
+				pUnit->setLevel(pData->iLevel);
+				pUnit->setExperience(pData->iExperience);
+			}
+			if (GC.getDeathListInfo((DeathListTypes)iDeathList).isKeepPromo())
+			{
+				for (int i = 0; i < GC.getNumPromotionInfos(); i++)
+				{
+					if (pData->piPromotions[i] > 0)
+					{
+						for (int j = 0; j < pData->piPromotions[i]; j++)
+						{
+							if (!GC.getPromotionInfo((PromotionTypes)i).isEquipment())
+							{
+								pUnit->setHasPromotion((PromotionTypes)i, true);
+							}
+						}
+					}
+				}
+			}
+			deleteDeadUnit(pData->iID);
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+	else
+	{
+		return false;
+	}
+}
  CvRandom& CvGame::getMapRand()
 {
 	return m_mapRand;

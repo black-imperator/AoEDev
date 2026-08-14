@@ -64,7 +64,10 @@ void CyGlobalContextPythonInterface1(python::class_<CyGlobalContext>& x)
 
 		.def("getNumCityClassInfos", &CyGlobalContext::getNumCityClassInfos, "() - Total CityClass Infos XML\\Buildings\\CIV4CityClassInfos.xml")
 		.def("getCityClassInfo", &CyGlobalContext::getCityClassInfo, python::return_value_policy<python::reference_existing_object>(), "(CityClassID) - CvInfo for CityClassID")
-		
+
+		.def("getNumDeathListInfos", &CyGlobalContext::getNumDeathListInfos, "() - Total DeathList Infos XML\\GameInfo\\CIV4DeathListInfos.xml")
+		.def("getDeathListInfo", &CyGlobalContext::getDeathListInfo, python::return_value_policy<python::reference_existing_object>(), "(DeathListID) - CvInfo for DeathListID")
+
 		.def("getNumTraitClassInfos", &CyGlobalContext::getNumTraitClassInfos, "() - Total TraitClass Infos XML\\Civilizationz\\CIV4TraitClassInfos.xml")
 		.def("getTraitClassInfo", &CyGlobalContext::getTraitClassInfo, python::return_value_policy<python::reference_existing_object>(), "(TraitClassID) - CvInfo for TraitClassID")
 

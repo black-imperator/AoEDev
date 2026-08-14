@@ -666,4 +666,24 @@ struct SpellUpgradeData
 	void write(FDataStreamBase* pStream);
 	bool compare(SpellUpgradeData cbTemp);
 };
+
+struct DeadUnitData
+{
+	DeadUnitData() :iOriginalOwner(-1), iID(-1), iUnitType(-1),  iExperience(0), iLevel(0), iDeathTurn(-1), iDeathList(-1), piPromotions(NULL)
+	{}
+	int iOriginalOwner;
+	int iID;
+	int iUnitType;
+	int iExperience;
+	int iLevel;
+	int iDeathTurn;
+	int iDeathList;
+	int* piPromotions;
+	void read(FDataStreamBase* pStream);
+	void write(FDataStreamBase* pStream);
+	int getID();
+	void setID(int inewid);
+	bool compare(DeadUnitData cbTemp);
+
+};
 #endif	// CVSTRUCTS_H

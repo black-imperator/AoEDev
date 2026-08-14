@@ -2939,3 +2939,11 @@ int CyPlayer::getPlayerImprovement(int /*ImprovementClassTypes*/ iIndex)
 {
 	return m_pPlayer ? m_pPlayer->getPlayerImprovement((ImprovementClassTypes)iIndex) : 0;
 }
+
+void CyPlayer::addToResurrectList(int iUnitType, int iExp)
+{
+	if (m_pPlayer)
+	{
+		m_pPlayer->addToResurrectList(iUnitType, iExp);
+	}
+}

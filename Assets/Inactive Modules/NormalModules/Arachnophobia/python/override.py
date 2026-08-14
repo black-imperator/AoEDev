@@ -222,9 +222,10 @@ def onUnitCreated(self, argsList):
 		isMutated = False
 		for spiderVariant, Mutations in spiderMutationDict.items():
 			iValue = CyGame().getSorenRandNum(100, "spidermutation")
-			if (iValue <= spiderCounts[spiderVariant] * 10):
+			if (iValue < spiderCounts[spiderVariant] * 10):
 				for mutation in Mutations:
 					pUnit.setHasPromotion(getInfoType(mutation), True)
+					
 				isMutated = True
 		
 		if isMutated:

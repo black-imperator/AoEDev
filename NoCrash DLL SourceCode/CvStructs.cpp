@@ -945,3 +945,52 @@ bool SpellUpgradeData::compare(SpellUpgradeData cbTemp)
 	else if (bSummonPermanent != cbTemp.bSummonPermanent) bSame = false;
 	return bSame;
 }
+
+void DeadUnitData::read(FDataStreamBase* pStream)
+{
+	pStream->Read(&iOriginalOwner);
+	pStream->Read(&iID);
+	pStream->Read(&iUnitType);
+	pStream->Read(&iExperience);
+	pStream->Read(&iLevel);
+	pStream->Read(&iDeathTurn);
+	pStream->Read(&iDeathList);
+	SAFE_DELETE_ARRAY(piPromotions);
+	piPromotions = new int[GC.getNumPromotionInfos()];
+	pStream->Read(GC.getNumPromotionInfos(), piPromotions);
+}
+
+void DeadUnitData::write(FDataStreamBase* pStream)
+{
+	pStream->Write(iOriginalOwner);
+	pStream->Write(iID);
+	pStream->Write(iUnitType);
+	pStream->Write(iExperience);
+	pStream->Write(iLevel);
+	pStream->Write(iDeathTurn);
+	pStream->Write(iDeathList);
+	pStream->Write(GC.getNumPromotionInfos(), piPromotions);
+}
+
+int DeadUnitData::getID()
+{
+	return iID;
+}
+void DeadUnitData::setID(int inewid)
+{
+	iID = inewid;
+}
+bool DeadUnitData::compare(DeadUnitData cbTemp)
+{
+	bool bSame = true;
+	if (iOriginalOwner != cbTemp.iOriginalOwner) bSame = false;
+	else if (iID != cbTemp.iID) bSame = false;
+	else if (iUnitType != cbTemp.iUnitType) bSame = false;
+	else if (iExperience != cbTemp.iExperience) bSame = false;
+	else if (iLevel != cbTemp.iLevel) bSame = false;
+	else if (iDeathTurn != cbTemp.iDeathTurn) bSame = false;
+	else if (iDeathList != cbTemp.iDeathList) bSame = false;
+
+	return bSame;
+
+}

@@ -2069,6 +2069,26 @@ bool CyUnit::canCast(int spell, bool bTestVisible) const
 	return m_pUnit ? m_pUnit->canCast(spell, bTestVisible) : false;
 }
 
+bool CyUnit::canCastResurrect(int spell) const
+{
+	return m_pUnit ? m_pUnit->canCastResurrect(spell) : false;
+}
+void CyUnit::castResurrect(int spell)
+{
+	if (m_pUnit)
+		m_pUnit->castResurrect(spell);
+
+}
+void CyUnit::setDeathListTarget(int eDeathlist)
+{
+
+	if (m_pUnit)
+		m_pUnit->setDeathListTarget((DeathListTypes)eDeathlist);
+}
+int CyUnit::getDeathListTarget() const
+{
+	return m_pUnit ? m_pUnit->getDeathListTarget() : NO_DEATHLIST;
+}
 bool CyUnit::canDispel(int spell) const
 {
 	return m_pUnit ? m_pUnit->canDispel(spell) : false;

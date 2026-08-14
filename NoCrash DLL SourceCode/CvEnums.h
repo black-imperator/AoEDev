@@ -3502,6 +3502,12 @@ enum SpellClassTypes		// Exposed to Python
 	NO_SPELLCLASS = -1,
 };
 
+enum DeathListTypes		// Exposed to Python
+{
+	NO_DEATHLIST = -1,
+};
+
+
 //PromotionClass
 enum PromotionClassTypes		// Exposed to Python
 {

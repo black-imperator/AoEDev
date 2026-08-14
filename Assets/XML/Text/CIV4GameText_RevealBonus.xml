@@ -13882,6 +13882,10 @@ Your unit is even more surprised to realise there are two figures standing besid
 	<TEXT>
 		<Tag>TXT_KEY_VOTE_UN_FORCE_PEACE</Tag>
 		<English>Overcouncil Peacekeeping</English>
+		<French>Overcouncil Peacekeeping</French>
+		<German>Overcouncil Peacekeeping</German>
+		<Italian>Overcouncil Peacekeeping</Italian>
+		<Spanish>Overcouncil Peacekeeping</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_ONLY_DEFENSIVE_PEDIA</Tag>
@@ -13932,12 +13936,12 @@ Your unit is even more surprised to realise there are two figures standing besid
 		<Spanish>[ICON_BULLET]%s1 will not be lost when Adaptive triggers.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_</Tag>
-		<English></English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
+		<Tag>TXT_KEY_DEATHLIST_DEMON_CONVERSION</Tag>
+		<English>Demonic Conversion</English>
+		<French>Demonic Conversion</French>
+		<German>Demonic Conversion</German>
+		<Italian>Demonic Conversion</Italian>
+		<Spanish>Demonic Conversion</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_</Tag>

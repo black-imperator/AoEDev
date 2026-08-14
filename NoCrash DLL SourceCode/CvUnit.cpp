@@ -1089,6 +1089,7 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 	m_iUnitArtStyleType = NO_UNIT_ARTSTYLE;
 	m_iWorkRateModify = 0;
 	m_iWorkRateModifier = 0;
+	m_eDeathListTarget = NO_DEATHLIST;
 /*************************************************************************************************/
 /**	AutoCast								24/05/10									Snarko	**/
 /**																								**/
@@ -1536,6 +1537,9 @@ void CvUnit::convert(CvUnit* pUnit)
 
 	setName(pUnit->getNameNoDesc());
 	setLeaderUnitType(pUnit->getLeaderUnitType());
+	//transfer of deathlist on conversion
+	setDeathListTarget(pUnit->getDeathListTarget());
+	pUnit->setDeathListTarget(NO_DEATHLIST);
 
 	//FfH: Added by Kael 10/03/2008
 	if (!isWorldUnitClass((UnitClassTypes)(m_pUnitInfo->getUnitClassType())) && isWorldUnitClass((UnitClassTypes)(pUnit->getUnitClassType())))
@@ -1605,12 +1609,12 @@ void CvUnit::convert(CvUnit* pUnit)
 /**	Tweak									END													**/
 /*************************************************************************************************/
 
-	pUnit->kill(true);
+	pUnit->kill(true,NO_PLAYER,true);
 }
 
 
 // Python must NOT kill the unit during this process
-void CvUnit::kill(bool bDelay, PlayerTypes ePlayer)
+void CvUnit::kill(bool bDelay, PlayerTypes ePlayer, bool bPostConvert)
 {
 	PROFILE_FUNC();
 
@@ -1621,6 +1625,8 @@ void CvUnit::kill(bool bDelay, PlayerTypes ePlayer)
 	CvWString szBuffer;
 	PlayerTypes eCapturingPlayer;
 	UnitTypes eCaptureUnitType;
+	DeathListTypes eActiveDeathList = NO_DEATHLIST;
+	bool bValidDeathlist=true;
 	int iRace = getRace();
 
 	pPlot = plot();
@@ -1639,10 +1645,38 @@ void CvUnit::kill(bool bDelay, PlayerTypes ePlayer)
 	// When placed after delay death check, setting recon plot was failing to update vision. Why... I'm not 100% sure. Null unit on second call, is my guess.
 	setReconPlot(NULL);
 	setBlockading(false);
-
+	if (getDeathListTarget() != NO_DEATHLIST && !bPostConvert)
+	{
+		if (GC.getDeathListInfo(getDeathListTarget()).isRequiresLivingCiv())
+		{
+			for (int iPlayer = 0; iPlayer < MAX_CIV_PLAYERS; iPlayer++)
+			{
+				if (GET_PLAYER((PlayerTypes)iPlayer).getCivilizationType() != GC.getDeathListInfo(getDeathListTarget()).getCivReceiver())
+				{
+					bValidDeathlist = false;
+				}
+			}
+		}
+		if (bValidDeathlist && !CvString(GC.getDeathListInfo(getDeathListTarget()).getPythonPrereq()).empty())
+		{
+			CyUnit* pyUnit = new CyUnit(this);
+			CyPlot* pyPlot = new CyPlot(pPlot);
+			CyArgsList argsList;
+			argsList.add(gDLL->getPythonIFace()->makePythonObject(pyUnit));
+			argsList.add(gDLL->getPythonIFace()->makePythonObject(pyPlot));
+			long lResult = 0;
+			gDLL->getPythonIFace()->callFunction(PYSpellModule, GC.getDeathListInfo(getDeathListTarget()).getPythonPrereq(), argsList.makeFunctionArgs(), &lResult);
+			delete pyUnit;
+			delete pyPlot;
+			if (!(lResult == 0))
+			{
+				eActiveDeathList = getDeathListTarget();
+			}
+		}
+	}
 	// DeathPython - Xienwolf - 12/07/08 - Relocated Immortal Rebirth to pre-empt announcement of death
 	// Runs a Python function on the death of a unit, be careful not to call kill on the unit during the python unless you disable the python call
-	if (isImmortal())
+	if (isImmortal() && !bPostConvert && (eActiveDeathList==NO_DEATHLIST || !GC.getDeathListInfo(eActiveDeathList).isBypassImmortal()))
 	{
 		if (doImmortalRebirth())
 		{
@@ -1658,7 +1692,7 @@ void CvUnit::kill(bool bDelay, PlayerTypes ePlayer)
 		   return;
 		}
 	}
-	if (!CvString(GC.getUnitInfo(getUnitType()).getPyDeath()).empty() && !isDisablePyDeath())
+	if (!CvString(GC.getUnitInfo(getUnitType()).getPyDeath()).empty() && !isDisablePyDeath() && !bPostConvert)
 	{
 		setDisablePyDeath(true);
 		CyUnit* pyCaster = new CyUnit(this);
@@ -2052,7 +2086,37 @@ void CvUnit::kill(bool bDelay, PlayerTypes ePlayer)
 		}
 	}
 
+	if (canResurrect() && eActiveDeathList==NO_DEATHLIST && !bPostConvert)
+	{
+		DeadUnitData* data = GET_PLAYER(getOwner()).addDeadUnit();
+		data->iDeathList = -1; //getDeathListTarget();
+		data->iDeathTurn = GC.getGameINLINE().getTurnSlice();
+		data->iExperience = getExperience();
+		data->iLevel = getLevel();
+		data->iOriginalOwner = getOwner();
+		data->iUnitType = getUnitType();
+		data->piPromotions = new int[GC.getNumPromotionInfos()];
+		for (int i = 0; i < GC.getNumPromotionInfos(); i++)
+		{
+			data->piPromotions[i] = countHasPromotion((PromotionTypes)i);
+		}
+	}
 
+	if (eActiveDeathList != NULL && !bPostConvert)
+	{
+		DeadUnitData* data = GC.getGameINLINE().addDeadUnit();
+		data->iDeathList = eActiveDeathList;
+		data->iDeathTurn = GC.getGameINLINE().getTurnSlice();
+		data->iExperience = getExperience();
+		data->iLevel = getLevel();
+		data->iOriginalOwner = getOwner();
+		data->iUnitType = getUnitType();
+		data->piPromotions = new int[GC.getNumPromotionInfos()];
+		for (int i = 0; i < GC.getNumPromotionInfos(); i++)
+		{
+			data->piPromotions[i] = countHasPromotion((PromotionTypes)i);
+		}
+	}
 	setXY(INVALID_PLOT_COORD, INVALID_PLOT_COORD, true);
 
 	joinGroup(NULL, false, false);
@@ -21080,7 +21144,19 @@ bool CvUnit::canAcquirePromotion(PromotionTypes ePromotion,bool bMustMaintainChe
 				}
 			}
 		}
-
+		else
+		{
+			iNumPrereqs = GC.getPromotionInfo(ePromotion).getNumPrereqBuildingORs();
+			if (iNumPrereqs > 0)
+			{
+				return false;
+			}
+			iNumPrereqs = GC.getPromotionInfo(ePromotion).getNumPrereqBuildingANDs();
+			if (iNumPrereqs > 0)
+			{
+				return false;
+			}
+		}
 		int iNumPrereqs = GC.getPromotionInfo(ePromotion).getNumPrereqUnitTypesOnTile();
 		if (iNumPrereqs > 0)
 		{
@@ -22214,7 +22290,10 @@ void CvUnit::setHasPromotion(PromotionTypes eIndex, bool bNewValue, bool bSupres
 		{
 			changeMaxExpReward(kPromotion.getMaxExpReward() * iChange);
 		}
-
+		if (kPromotion.getDeathListTarget() != NO_DEATHLIST && bNewValue )
+		{
+			setDeathListTarget((DeathListTypes)kPromotion.getDeathListTarget());
+		}
 /*************************************************************************************************/
 /**	MobileCage								 6/17/2009								Cyther		**/
 /**	Expanded by Valkrionn					01/28/2010											**/
@@ -23767,6 +23846,13 @@ bool CvUnit::canCast(int spell, bool bTestVisible, CvPlot* pTargetPlot)
 		//	}
 		}
 	}
+	if (GC.getSpellInfo(eSpell).isResurrect())
+	{
+		if (!canCastResurrect(spell, pTargetPlot))
+		{
+			return false;
+		}
+	}
 	if (GC.getSpellInfo(eSpell).getCreateBuildingType() != NO_BUILDING)
 	{
 		if (!canCreateBuilding(spell,pTargetPlot))
@@ -23857,6 +23943,10 @@ bool CvUnit::canCast(int spell, bool bTestVisible, CvPlot* pTargetPlot)
 		return true;
 	}
 	if (GC.getSpellInfo(eSpell).getCreateUnitType() != NO_UNIT)
+	{
+		return true;
+	}
+	if (GC.getSpellInfo(eSpell).isResurrect())
 	{
 		return true;
 	}
@@ -24432,6 +24522,58 @@ int CvUnit::getRemovePromotionSpellDefenderValue(CvUnit* pLoopUnit, CvPlot* pTar
 	}
 
 	return iValue;
+}
+bool CvUnit::canCastResurrect(int spell, CvPlot* pTargetPlot) const
+{
+	if (pTargetPlot == NULL)
+	{
+		pTargetPlot = plot();
+	}
+
+	if (pTargetPlot->isVisibleEnemyUnit(getOwnerINLINE())) // keeps invisible units from CtDing summoning on top of enemies
+	{
+		return false;
+	}
+
+	if (GET_PLAYER(getOwner()).getNumDeadUnits() == 0)
+	{
+		return false;
+	}
+	//probably need to add some valid domain checks
+	return true;
+}
+
+bool CvUnit::canResurrect() const
+{
+	if (!isAlive())
+	{
+		return false;
+	}
+	bool temp = false;
+//	if (GC.getUnitInfo((UnitTypes)getUnitType()).isNeverResurrect())
+//		return false;
+	if (getDeathListTarget()!=NO_DEATHLIST)
+		return false;
+//	if (GC.getUnitInfo((UnitTypes)getUnitType()).isMayResurrect())
+//		temp = true;
+	for (int iI = 0; iI < GC.getNumPromotionInfos(); iI++)
+	{
+		if (isHasPromotion((PromotionTypes)iI))
+		{
+			if (GC.getPromotionInfo((PromotionTypes)iI).isNeverResurrect())
+			{
+				return false;
+			}
+			if (GC.getPromotionInfo((PromotionTypes)iI).isMayResurrect())
+			{
+				temp = true;
+			}
+		}
+	}
+	if (temp || isWorldUnitClass((UnitClassTypes)(getUnitClassType())))
+		return true;
+	else
+		return false;
 }
 
 bool CvUnit::canCreateUnit(int spell, CvPlot* pTargetPlot) const
@@ -25461,6 +25603,11 @@ void CvUnit::cast(int spell,CvPlot* pTargetPlot)
 	{
 		castConvertUnit(spell);
 	}
+	if (GC.getSpellInfo((SpellTypes)spell).isResurrect())
+	{
+		castResurrect(spell);
+	}
+
 	if (GC.getSpellInfo((SpellTypes)spell).getCreateBuildingType() != NO_BUILDING)
 	{
 		if (canCreateBuilding(spell,pTargetPlot))
@@ -26789,6 +26936,34 @@ void CvUnit::castConvertUnit(int spell)
 	pUnit->changeImmobileTimer(1);
 }
 
+void CvUnit::castResurrect(int spell, CvPlot* pTargetPlot)
+{
+	if (pTargetPlot == NULL)
+	{
+		pTargetPlot = plot();
+	}
+	int iLoop=0;
+	
+	DeadUnitData* data = GET_PLAYER(getOwner()).firstDeadUnit(&iLoop);
+	CvUnit* pUnit = GET_PLAYER(getOwnerINLINE()).initUnit((UnitTypes)data->iUnitType,getX_INLINE(), getY_INLINE(), AI_getUnitAIType());
+	pUnit->setLevel(data->iLevel);
+	pUnit->setExperience(data->iExperience);
+	for (int i = 0; i < GC.getNumPromotionInfos(); i++)
+	{
+		if (data->piPromotions[i] > 0)
+		{
+			for (int j = 0; j < data->piPromotions[i]; j++)
+			{
+				if (!GC.getPromotionInfo((PromotionTypes)i).isEquipment())
+				{
+					pUnit->setHasPromotion((PromotionTypes)i, true);
+				}
+			}
+		}
+	}
+	GET_PLAYER(getOwner()).deleteDeadUnit(data->iID);
+
+}
 void CvUnit::castCreateUnit(int spell, CvPlot* pTargetPlot)
 {
 	if (pTargetPlot == NULL)
@@ -28018,6 +28193,10 @@ int CvUnit::getReligion() const
 void CvUnit::setReligion(int iReligion)
 {
 	m_iReligion = iReligion;
+	if (GC.getReligionInfo((ReligionTypes)iReligion).getDeathList() != NO_DEATHLIST)
+	{
+		setDeathListTarget((DeathListTypes)GC.getReligionInfo((ReligionTypes)iReligion).getDeathList());
+	}
 }
 
 int CvUnit::getResist() const
@@ -28928,6 +29107,11 @@ void CvUnit::combatWon(CvUnit* pLoser, bool bAttacking)
 					}
 				}
 			}
+
+			if (GC.getPromotionInfo((PromotionTypes)iI).getDeathListCombat() != NO_DEATHLIST)
+			{
+				pLoser->setDeathListTarget((DeathListTypes)GC.getPromotionInfo((PromotionTypes)iI).getDeathListCombat());
+			}
 		/*************************************************************************************************/
 /**	PyPromote								04/08/08	Written: Grey Fox	Imported: Xienwolf	**/
 /**																								**/
@@ -28973,6 +29157,10 @@ void CvUnit::combatWon(CvUnit* pLoser, bool bAttacking)
 						}
 					}
 				}
+			}
+			if (GC.getPromotionInfo((PromotionTypes)iI).getDeathListCombat() != NO_DEATHLIST)
+			{
+				setDeathListTarget((DeathListTypes)GC.getPromotionInfo((PromotionTypes)iI).getDeathListCombat());
 			}
 /*************************************************************************************************/
 /**	PyPromote								04/08/08	Written: Grey Fox	Imported: Xienwolf	**/
@@ -30287,6 +30475,7 @@ void CvUnit::read(FDataStreamBase* pStream)
 /**																								**/
 /**						Making the human able to set units to autocast spells					**/
 /*************************************************************************************************/
+	pStream->Read((int*)&m_eDeathListTarget);
 	pStream->Read((int*)&m_eAutoCast);
 	pStream->Read(&m_bAutoCastPre);
 /*************************************************************************************************/
@@ -30810,6 +30999,7 @@ void CvUnit::write(FDataStreamBase* pStream)
 /**																								**/
 /**						Making the human able to set units to autocast spells					**/
 /*************************************************************************************************/
+	pStream->Write(m_eDeathListTarget);
 	pStream->Write(m_eAutoCast);
 	pStream->Write(m_bAutoCastPre);
 /*************************************************************************************************/
@@ -33255,6 +33445,40 @@ bool CvUnit::isAutoCast(bool bPreTurn) const
 /**	Autocast								END													**/
 /*************************************************************************************************/
 
+void CvUnit::setDeathListTarget(DeathListTypes eDeathList)
+{
+	if (getDeathListTarget() != eDeathList)
+	{
+		if (getDeathListTarget() == NO_DEATHLIST || (eDeathList != NO_DEATHLIST && GC.getDeathListInfo(getDeathListTarget()).getPriority() < GC.getDeathListInfo(eDeathList).getPriority()))
+		{
+			if (!CvString(GC.getDeathListInfo(eDeathList).getPythonPrereq()).empty())
+			{
+				CyUnit* pyUnit = new CyUnit(this);
+				CyPlot* pyPlot = new CyPlot(plot());
+				CyArgsList argsList;
+				argsList.add(gDLL->getPythonIFace()->makePythonObject(pyUnit));
+				argsList.add(gDLL->getPythonIFace()->makePythonObject(pyPlot));
+				long lResult = 0;
+				gDLL->getPythonIFace()->callFunction(PYSpellModule, GC.getDeathListInfo(eDeathList).getPythonPrereq(), argsList.makeFunctionArgs(), &lResult);
+				delete pyUnit;
+				delete pyPlot;
+				if (!(lResult == 0))
+				{
+					m_eDeathListTarget = eDeathList;
+				}
+			}
+		}
+		else if (eDeathList == NO_DEATHLIST)
+		{
+			m_eDeathListTarget = eDeathList;
+		}
+	}
+}
+
+DeathListTypes CvUnit::getDeathListTarget() const
+{
+	return m_eDeathListTarget;
+}
 /*************************************************************************************************/
 /**	MISSION_CLAIM_FORT/MISSION_EXPLORE_LAIR	19/06/10									Snarko	**/
 /**																								**/

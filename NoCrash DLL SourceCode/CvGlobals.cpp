@@ -5247,3 +5247,20 @@ int CvGlobals:: getCRIME_RATE_PER_POP()
 { 
 	return m_iCRIME_RATE_PER_POP;
 }
+
+int CvGlobals::getNumDeathListInfos()
+{
+	return (int)m_paDeathListInfo.size();
+}
+
+std::vector<CvDeathListInfo*>& CvGlobals::getDeathListInfo()
+{
+	return m_paDeathListInfo;
+}
+CvDeathListInfo& CvGlobals::getDeathListInfo(DeathListTypes eDeathList)
+{
+	FAssert(eDeathList > -1);
+	FAssert(eDeathList < GC.getNumDeathListInfos());
+	return *(m_paDeathListInfo[eDeathList]);
+
+}

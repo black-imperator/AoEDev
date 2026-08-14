@@ -445,7 +445,15 @@ public:
 	// iteration
 	DllExport CvDeal* firstDeal(int *pIterIdx, bool bRev=false);													// Exposed to Python
 	DllExport CvDeal* nextDeal(int *pIterIdx, bool bRev=false);														// Exposed to Python
-
+	
+	DllExport DeadUnitData* firstDeadUnit(int* pIterIdx, bool bRev = false) const;																// Exposed to Python
+	DllExport DeadUnitData* nextDeadUnit(int* pIterIdx, bool bRev = false) const;																	// Exposed to Python
+	DllExport int getNumDeadUnits() const;																																// Exposed to Python
+	DllExport DeadUnitData* getDeadUnit(int iID) const;																													// Exposed to Python
+	DllExport DeadUnitData* nextDeathListUnit(int iDeathlist, bool bypassreturndelay=false) const;																													// Exposed to Python
+	DeadUnitData* addDeadUnit();
+	void deleteDeadUnit(int iID);
+	bool releaseNextDeathListUnit(int iDeathList, bool bReturnOriginalOwner, int inewOwner, bool bBypassDelay);
 	VoteSelectionData* getVoteSelection(int iID) const;
 	VoteSelectionData* addVoteSelection(VoteSourceTypes eVoteSource);
 	void deleteVoteSelection(int iID);
@@ -803,6 +811,7 @@ protected:
 	std::vector<CvWString> m_aszGreatPeopleBorn;
 
 	FFreeListTrashArray<CvDeal> m_deals;
+	FFreeListTrashArray<DeadUnitData> m_deadunits;
 	FFreeListTrashArray<VoteSelectionData> m_voteSelections;
 	FFreeListTrashArray<VoteTriggeredData> m_votesTriggered;
 

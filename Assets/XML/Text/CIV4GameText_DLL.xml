@@ -1300,6 +1300,30 @@
 		<Spanish>[ICON_BULLET]Units with this promotion are worthy of resurrection</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_DEATHLIST_TARGET</Tag>
+		<English>[ICON_BULLET]Units with this promotion are bound to %s1</English>
+		<French>[ICON_BULLET]Units with this promotion are bound to %s1</French>
+		<German>[ICON_BULLET]Units with this promotion are bound to %s1</German>
+		<Italian>[ICON_BULLET]Units with this promotion are bound to %s1</Italian>
+		<Spanish>[ICON_BULLET]Units with this promotion are bound to %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RELIGION_DEATHLIST</Tag>
+		<English>[ICON_BULLET]Units following this religion are bound to %s1</English>
+		<French>[ICON_BULLET]Units following this religion are bound to %s1</French>
+		<German>[ICON_BULLET]Units following this religion are bound to %s1</German>
+		<Italian>[ICON_BULLET]Units following this religion are bound to %s1</Italian>
+		<Spanish>[ICON_BULLET]Units following this religion are bound to %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_DEATHLIST_COMBAT</Tag>
+		<English>[ICON_BULLET]Units with this promotion bind their enemies to %s1</English>
+		<French>[ICON_BULLET]Units with this promotion bind their enemies to %s1</French>
+		<German>[ICON_BULLET]Units with this promotion bind their enemies to %s1</German>
+		<Italian>[ICON_BULLET]Units with this promotion bind their enemies to %s1</Italian>
+		<Spanish>[ICON_BULLET]Units with this promotion bind their enemies to %s1</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_MINION_PRE</Tag>
 		<English>[ICON_BULLET]Grants Minion Units:[SPACE]</English>
 		<French>[ICON_BULLET]Fournit aux subalternes :[SPACE]</French>

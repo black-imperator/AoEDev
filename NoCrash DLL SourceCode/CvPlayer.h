@@ -969,6 +969,15 @@ public:
 	CvCity* addCity();
 	void deleteCity(int iID);
 
+	// deadunit iteration
+	DllExport DeadUnitData* firstDeadUnit(int* pIterIdx, bool bRev = false) const;																// Exposed to Python
+	DllExport DeadUnitData* nextDeadUnit(int* pIterIdx, bool bRev = false) const;																	// Exposed to Python
+	DllExport int getNumDeadUnits() const;																																// Exposed to Python
+	DllExport DeadUnitData* getDeadUnit(int iID) const;																													// Exposed to Python
+	DeadUnitData* addDeadUnit();
+	void addToResurrectList(int iUnitType, int iExp);
+	void deleteDeadUnit(int iID);
+
 	// unit iteration
 	DllExport CvUnit* firstUnit(int *pIterIdx, bool bRev=false) const;																// Exposed to Python
 	DllExport CvUnit* nextUnit(int *pIterIdx, bool bRev=false) const;																	// Exposed to Python
@@ -2151,6 +2160,7 @@ protected:
 
 	FFreeListTrashArray<CvCityAI> m_cities;
 
+	FFreeListTrashArray<DeadUnitData> m_deadunits;
 	FFreeListTrashArray<CvUnitAI> m_units;
 
 	FFreeListTrashArray<CvSelectionGroupAI> m_selectionGroups;

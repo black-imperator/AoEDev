@@ -754,6 +754,8 @@
 	<ElementType name="PyHelp" content="textOnly"/>
 	<ElementType name="bMayResurrect" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bNeverResurrect" content="textOnly" dt:type="boolean"/>
+	<ElementType name="DeathList" content="textOnly"/>
+	<ElementType name="DeathListCombat" content="textOnly"/>
 	<ElementType name="DamageType" content="textOnly"/>
 	<ElementType name="DamageTypeCombat" content="eltOnly">
 		<element type="DamageType"/>
@@ -2018,6 +2020,8 @@
 		<element type="bInquisition"/>
 		<element type="bMayResurrect"/>
 		<element type="bNeverResurrect"/>
+		<element type="DeathList"/>
+		<element type="DeathListCombat"/>
 		<element type="DamageTypeCombats"/>
 		<element type="BonusAffinities"/>
 		<element type="SpellClassExtraPowers"/>

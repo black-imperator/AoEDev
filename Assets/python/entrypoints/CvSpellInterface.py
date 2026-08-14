@@ -9031,9 +9031,8 @@ def exploreLairPopulation(pUnit, pPlot):
 def exploreLairResurrect(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	pCapital = pPlayer.getCapitalCity()
-	if (not gc.isNoCrash()):
-		if pUnit.canCastResurrect():
-			pUnit.castResurrect()
+	if pUnit.canCastResurrect(-1):
+		pUnit.castResurrect()
 
 def exploreLairSpecterEvil(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
@@ -12566,6 +12565,9 @@ def reqGearStash(argsList):
 	if pUnitCombat in AllowedUC:
 		return True
 	return False
+def reqexploreLairResurrect(argsList):
+	pUnit, pPlot	= argsList
+	pUnit.canCastResurrect(-1)
 
 def reqBereguine(argsList):
 	pUnit, pPlot	= argsList

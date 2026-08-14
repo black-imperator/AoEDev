@@ -860,6 +860,10 @@ public:
 	bool isDurationDecreaseSpellpower() const;				// Exposed to Python
 
 	bool isTradeDefender() const;
+	bool isNeverResurrect() const;
+	bool isMayResurrect() const;
+	int getDeathListTarget() const;
+	int getDeathListCombat() const;
 
 	const TCHAR* getSound() const;				// Exposed to Python
 	void setSound(const TCHAR* szVal);
@@ -1537,6 +1541,12 @@ protected:
 	bool m_bImmuneToFirstStrikes;
 	bool m_bDurationDecreaseSpellpower;
 	bool m_bTradeDefender;
+	bool m_bNeverResurrect;
+	bool m_bMayResurrect;
+	int m_iDeathListTarget;
+	int m_iDeathListCombat;
+	CvString m_szDeathListTargetforPass3;
+	CvString m_szDeathListCombatApplicationforPass3;
 
 	CvString m_szSound;
 	int m_iMaxExpReward;
@@ -2305,6 +2315,7 @@ public:
 	bool isRemoveHasCasted() const;
 	bool isResistable() const;
 	bool isSacrificeCaster() const;
+	bool isResurrect() const;
 /*************************************************************************************************/
 /**	AutoCast								24/05/10									Snarko	**/
 /**																								**/
@@ -2475,6 +2486,7 @@ protected:
 	bool m_bPush;
 	bool m_bRemoveHasCasted;
 	bool m_bSacrificeCaster;
+	bool m_bResurrect;
 	int m_iChangePopulation;
 	int m_iCost;
 	int m_iNumTargets;
@@ -9113,6 +9125,7 @@ public:
 /*************************************************************************************************/
 /**	Lawful-Chaotic Alignments					END												**/
 /*************************************************************************************************/
+	int getDeathList() const;
 /*************************************************************************************************/
 /**	Religion Based Music					02/09/10									Snarko	**/
 /**				Changing music from eras to religions (or eras if no religion)					**/
@@ -9125,7 +9138,8 @@ public:
 //FfH: End Add
 
 	bool read(CvXMLLoadUtility* pXML);
-/*************************************************************************************************/
+	bool readPass3();
+	/*************************************************************************************************/
 /**	TrueModular								05/26/09	Written: Mr. Genie	Imported: Xienwolf	**/
 /**																								**/
 /**	Properly links Modular modifications to previous elements, and allows partial overwriting	**/
@@ -9167,6 +9181,7 @@ protected:
 	CvString m_szMovieSound;
 	CvString m_szSound;
 	CvWString m_szAdjectiveKey;
+	CvString m_szDeathListforPass3;
 
 /*************************************************************************************************/
 /**	New Tag Defs	(ReligionInfos)			05/15/08								Xienwolf	**/
@@ -9215,7 +9230,8 @@ protected:
 /*************************************************************************************************/
 /**	Lawful-Chaotic Alignments					END												**/
 /*************************************************************************************************/
-/*************************************************************************************************/
+	int m_iDeathList;
+	/*************************************************************************************************/
 /**	Religion Based Music					02/09/10									Snarko	**/
 /**				Changing music from eras to religions (or eras if no religion)					**/
 /*************************************************************************************************/
@@ -13449,3 +13465,47 @@ protected:
 
 };
 
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//
+//  class : CvDeathListInfo
+//
+//  DESC:   
+//
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+class CvDeathListInfo : public CvInfoBase
+{
+	//---------------------------------------PUBLIC INTERFACE---------------------------------
+public:
+
+	DllExport CvDeathListInfo();
+	DllExport virtual ~CvDeathListInfo();
+
+	bool isBypassImmortal() const;
+	bool isRequiresLivingCiv() const;
+	bool isKeepExp() const;
+	bool isKeepPromo() const;
+	int getDefaultUnitType() const;
+	int getPriority() const;
+	int getReturnDelay() const;
+	int getMaxUnitsReleased() const;
+	int getCivReceiver() const;
+	const char* getPythonPrereq() const;
+
+	bool read(CvXMLLoadUtility* pXML);
+	void copyNonDefaults(CvDeathListInfo* pClassInfo = NULL, CvXMLLoadUtility* pXML = NULL);
+
+	//---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
+
+protected:
+	bool m_bBypassImmortal;
+	bool m_bKeepExp;
+	bool m_bKeepPromo;
+	int m_iDefaultUnitType;
+	int m_iPriority;
+	int m_iReturnDelay;
+	int m_iMaxUnitsReleased;
+	int m_iCivReceiver;
+	bool m_bRequiresLivingCiv;
+
+	CvString m_szPythonPrereq;
+};

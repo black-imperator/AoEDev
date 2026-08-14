@@ -12417,7 +12417,27 @@ void CvGameTextMgr::parsePromotionHelp(CvWStringBuffer &szBuffer, PromotionTypes
 		szBuffer.append(pcNewline);
 		szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_LEVELED_IMMORTALITY"));
 	}
-/*************************************************************************************************/
+	if (GC.getPromotionInfo(ePromotion).isNeverResurrect())
+	{
+		szBuffer.append(pcNewline);
+		szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_NEVER_RESURRECT"));
+	}
+	if (GC.getPromotionInfo(ePromotion).isMayResurrect())
+	{
+		szBuffer.append(pcNewline);
+		szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_MAY_RESURRECT"));
+	}
+	if (GC.getPromotionInfo(ePromotion).getDeathListTarget()!=NO_DEATHLIST)
+	{
+		szBuffer.append(pcNewline);
+		szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_DEATHLIST_TARGET",GC.getDeathListInfo((DeathListTypes)GC.getPromotionInfo(ePromotion).getDeathListTarget()).getDescription()));
+	}
+	if (GC.getPromotionInfo(ePromotion).getDeathListCombat() != NO_DEATHLIST)
+	{
+		szBuffer.append(pcNewline);
+		szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_DEATHLIST_COMBAT", GC.getDeathListInfo((DeathListTypes)GC.getPromotionInfo(ePromotion).getDeathListCombat()).getDescription()));
+	}
+	/*************************************************************************************************/
 /**	New Tag Defs							END													**/
 /*************************************************************************************************/
 	if (GC.getPromotionInfo(ePromotion).getCommandLimit() != 0)
@@ -24965,6 +24985,11 @@ void CvGameTextMgr::setReligionHelp(CvWStringBuffer &szBuffer, ReligionTypes eRe
 /**	Lawful-Chaotic Alignments					END												**/
 /*************************************************************************************************/
 
+	if (religion.getDeathList() != NO_DEATHLIST)
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_RELIGION_DEATHLIST", GC.getDeathListInfo((DeathListTypes)religion.getDeathList()).getDescription()));
+	}
 	if (!CvWString(religion.getHelp()).empty())
 	{
 		szBuffer.append(NEWLINE);

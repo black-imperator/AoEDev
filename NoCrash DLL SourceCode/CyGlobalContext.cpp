@@ -330,6 +330,11 @@ CvCityClassInfo* CyGlobalContext::getCityClassInfo(int i) const
 	return (i >= 0 && i < GC.getNumCityClassInfos()) ? &GC.getCityClassInfo((CityClassTypes)i) : NULL;
 }
 
+CvDeathListInfo* CyGlobalContext::getDeathListInfo(int i) const
+{
+	return (i >= 0 && i < GC.getNumDeathListInfos()) ? &GC.getDeathListInfo((DeathListTypes)i) : NULL;
+}
+
 CvTraitClassInfo* CyGlobalContext::getTraitClassInfo(int i) const
 {
 	return (i >= 0 && i < GC.getNumTraitClassInfos()) ? &GC.getTraitClassInfo((TraitClassTypes)i) : NULL;

@@ -443,7 +443,7 @@ def spellCommunion(caster, spiderVariant):
 				for mutation in Mutations:
 					pUnit.setHasPromotion(getInfoType(mutation), True)
 				pUnit.setHasPromotion(iMutated, True)
-
+				
 
 def reqCommunion(caster, iSpiderVariant):
 	cost = getArachnomancyCost(caster, 20)

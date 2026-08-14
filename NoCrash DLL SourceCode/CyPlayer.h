@@ -744,6 +744,7 @@ public:
 	void setNumMaxTraitPerClass(int /*TraitClassTypes*/iIndex,int iNewValue);
 	void initValidTraitTriggers();
 	void setGainingTrait(bool val);
+	void addToResurrectList(int iUnitType, int iExp);
 
 	int getPlayerUnit(int iClass);
 	int getPlayerImprovement(int iClass);

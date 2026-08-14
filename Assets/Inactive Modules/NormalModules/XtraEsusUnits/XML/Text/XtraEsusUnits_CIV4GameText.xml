@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Units -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT> 
+		<Tag>TXT_KEY_UNIT_ESUS_PROPRIETOR</Tag>
+		<English>Proprietor</English>
+		<French>Proprietor</French>
+		<German>Proprietor</German>
+		<Italian>Proprietor</Italian>
+		<Spanish>Proprietor</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_PROPRIETOR_STEAL_CULTURE_HELP</Tag>
+		<English>[ICON_BULLET]Steals 15 [ICON_CULTURE] from the target city and transfers it to your [ICON_SILVER_STAR] Capital.[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</English>
+		<French>[ICON_BULLET]Steals 15 [ICON_CULTURE] from the target city and transfers it to your [ICON_SILVER_STAR] Capital.[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</French> 
+		<German>[ICON_BULLET]Steals 15 [ICON_CULTURE] from the target city and transfers it to your [ICON_SILVER_STAR] Capital.[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</German>
+		<Italian>[ICON_BULLET]Steals 15 [ICON_CULTURE] from the target city and transfers it to your [ICON_SILVER_STAR] Capital.[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</Italian>
+		<Spanish>[ICON_BULLET]Steals 15 [ICON_CULTURE] from the target city and transfers it to your [ICON_SILVER_STAR] Capital.[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_PROPRIETOR_STEAL_GPP_HELP</Tag>
+		<English>[ICON_BULLET]Steals 10 [ICON_GREATPEOPLE] from the target city and transfers it to your [ICON_SILVER_STAR] Capital.[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</English>
+		<French>[ICON_BULLET]Steals 10 [ICON_GREATPEOPLE] from the target city and transfers it to your [ICON_SILVER_STAR] Capital.[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</French>
+		<German>[ICON_BULLET]Steals 10 [ICON_GREATPEOPLE] from the target city and transfers it to your [ICON_SILVER_STAR] Capital.[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</German>
+		<Italian>[ICON_BULLET]Steals 10 [ICON_GREATPEOPLE] from the target city and transfers it to your [ICON_SILVER_STAR] Capital.[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</Italian>
+		<Spanish>[ICON_BULLET]Steals 10 [ICON_GREATPEOPLE] from the target city and transfers it to your [ICON_SILVER_STAR] Capital.[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_PROPRIETOR_FORGERY</Tag>
+		<English>%D1 [ICON_CULTURE] has been generated through Forgery.</English>
+		<French>%D1 [ICON_CULTURE] has been generated through Forgery.</French>
+		<German>%D1 [ICON_CULTURE] has been generated through Forgery.</German>
+		<Italian>%D1 [ICON_CULTURE] has been generated through Forgery.</Italian>
+		<Spanish>%D1 [ICON_CULTURE] has been generated through Forgery.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_DEATH_MERCHANT_TRADE</Tag>
+		<English>%D1 [ICON_GOLD] has been generated through Illicit Trade.</English>
+		<French>%D1 [ICON_GOLD] has been generated through Illicit Trade.</French>
+		<German>%D1 [ICON_GOLD] has been generated through Illicit Trade.</German>
+		<Italian>%D1 [ICON_GOLD] has been generated through Illicit Trade.</Italian>
+		<Spanish>%D1 [ICON_GOLD] has been generated through Illicit Trade.</Spanish>
+	</TEXT>
+	<TEXT> 
+		<Tag>TXT_KEY_UNIT_ESUS_PROPRIETOR_STRATEGY</Tag>
+		<English>The Proprietor's abilities are limited to cities where the Council of Esus religion has already spread. As long as you have enough gold to spend, they can steal Culture or Great Person Points and transfer them to your capital. Alternatively, you can use their [BOLD]Forgery[\BOLD] ability to boost the Culture of your city based on its current Crime.</English>
+		<French>The Proprietor's abilities are limited to cities where the Council of Esus religion has already spread. As long as you have enough gold to spend, they can steal Culture or Great Person Points and transfer them to your capital. Alternatively, you can use their [BOLD]Forgery[\BOLD] ability to boost the Culture of your city based on its current Crime.</French>
+		<German>The Proprietor's abilities are limited to cities where the Council of Esus religion has already spread. As long as you have enough gold to spend, they can steal Culture or Great Person Points and transfer them to your capital. Alternatively, you can use their [BOLD]Forgery[\BOLD] ability to boost the Culture of your city based on its current Crime.</German>
+		<Italian>The Proprietor's abilities are limited to cities where the Council of Esus religion has already spread. As long as you have enough gold to spend, they can steal Culture or Great Person Points and transfer them to your capital. Alternatively, you can use their [BOLD]Forgery[\BOLD] ability to boost the Culture of your city based on its current Crime.</Italian>
+		<Spanish>The Proprietor's abilities are limited to cities where the Council of Esus religion has already spread. As long as you have enough gold to spend, they can steal Culture or Great Person Points and transfer them to your capital. Alternatively, you can use their [BOLD]Forgery[\BOLD] ability to boost the Culture of your city based on its current Crime.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ESUS_PROPRIETOR_HELP</Tag>
+		<English>[ICON_BULLET]Can steal [ICON_CULTURE] and [ICON_GREATPEOPLE][NEWLINE][ICON_BULLET]Can convert [ICON_CRIME] into [ICON_CULTURE]</English>
+		<French>[ICON_BULLET]Can steal [ICON_CULTURE] and [ICON_GREATPEOPLE][NEWLINE][ICON_BULLET]Can convert [ICON_CRIME] into [ICON_CULTURE]</French>
+		<German>[ICON_BULLET]Can steal [ICON_CULTURE] and [ICON_GREATPEOPLE][NEWLINE][ICON_BULLET]Can convert [ICON_CRIME] into [ICON_CULTURE]</German>
+		<Italian>[ICON_BULLET]Can steal [ICON_CULTURE] and [ICON_GREATPEOPLE][NEWLINE][ICON_BULLET]Can convert [ICON_CRIME] into [ICON_CULTURE]</Italian>
+		<Spanish>[ICON_BULLET]Can steal [ICON_CULTURE] and [ICON_GREATPEOPLE][NEWLINE][ICON_BULLET]Can convert [ICON_CRIME] into [ICON_CULTURE]</Spanish>
+	</TEXT>
+	<TEXT> 
+		<Tag>TXT_KEY_UNIT_ESUS_DEATH_MERCHANT</Tag>
+		<English>Death Merchant</English>
+		<French>Death Merchant</French>
+		<German>Death Merchant</German>
+		<Italian>Death Merchant</Italian>
+		<Spanish>Death Merchant</Spanish>
+	</TEXT>
+	<TEXT> 
+		<Tag>TXT_KEY_UNIT_ESUS_DEATH_MERCHANT_STRATEGY</Tag>
+		<English>The Death Merchant's abilities are limited to cities where the Council of Esus religion has already spread. If you have enough gold, a Death Merchant can set up an [BOLD]Arms Smuggling Operation[\BOLD] in one of your cities to boost military production at the cost of increasing the local crimerate.[NEWLINE][NEWLINE]Alternatively, Death Merchants can be used to economically sabotage your opponent's cities by increasing their Crime, or as a means of quickly gaining gold in your own cities through their [BOLD]Illicit Trade[\BOLD] ability.</English>
+		<French>The Death Merchant's abilities are limited to cities where the Council of Esus religion has already spread. If you have enough gold, a Death Merchant can set up an [BOLD]Arms Smuggling Operation[\BOLD] in one of your cities to boost military production at the cost of increasing the local crimerate.[NEWLINE][NEWLINE]Alternatively, Death Merchants can be used to economically sabotage your opponent's cities by increasing their Crime, or as a means of quickly gaining gold in your own cities through their [BOLD]Illicit Trade[\BOLD] ability.</French>
+		<German>The Death Merchant's abilities are limited to cities where the Council of Esus religion has already spread. If you have enough gold, a Death Merchant can set up an [BOLD]Arms Smuggling Operation[\BOLD] in one of your cities to boost military production at the cost of increasing the local crimerate.[NEWLINE][NEWLINE]Alternatively, Death Merchants can be used to economically sabotage your opponent's cities by increasing their Crime, or as a means of quickly gaining gold in your own cities through their [BOLD]Illicit Trade[\BOLD] ability.</German>
+		<Italian>The Death Merchant's abilities are limited to cities where the Council of Esus religion has already spread. If you have enough gold, a Death Merchant can set up an [BOLD]Arms Smuggling Operation[\BOLD] in one of your cities to boost military production at the cost of increasing the local crimerate.[NEWLINE][NEWLINE]Alternatively, Death Merchants can be used to economically sabotage your opponent's cities by increasing their Crime, or as a means of quickly gaining gold in your own cities through their [BOLD]Illicit Trade[\BOLD] ability.</Italian>
+		<Spanish>The Death Merchant's abilities are limited to cities where the Council of Esus religion has already spread. If you have enough gold, a Death Merchant can set up an [BOLD]Arms Smuggling Operation[\BOLD] in one of your cities to boost military production at the cost of increasing the local crimerate.[NEWLINE][NEWLINE]Alternatively, Death Merchants can be used to economically sabotage your opponent's cities by increasing their Crime, or as a means of quickly gaining gold in your own cities through their [BOLD]Illicit Trade[\BOLD] ability.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ESUS_DEATH_MERCHANT_HELP</Tag>
+		<English>[ICON_BULLET]Can increase military production[NEWLINE][ICON_BULLET]Can increase [ICON_CRIME][NEWLINE][ICON_BULLET]Can convert [ICON_CRIME] into [ICON_GOLD]</English>
+		<French>[ICON_BULLET]Can increase military production[NEWLINE][ICON_BULLET]Can increase [ICON_CRIME][NEWLINE][ICON_BULLET]Can convert [ICON_CRIME] into [ICON_GOLD]</French>
+		<German>[ICON_BULLET]Can increase military production[NEWLINE][ICON_BULLET]Can increase [ICON_CRIME][NEWLINE][ICON_BULLET]Can convert [ICON_CRIME] into [ICON_GOLD]</German>
+		<Italian>[ICON_BULLET]Can increase military production[NEWLINE][ICON_BULLET]Can increase [ICON_CRIME][NEWLINE][ICON_BULLET]Can convert [ICON_CRIME] into [ICON_GOLD]</Italian>
+		<Spanish>[ICON_BULLET]Can increase military production[NEWLINE][ICON_BULLET]Can increase [ICON_CRIME][NEWLINE][ICON_BULLET]Can convert [ICON_CRIME] into [ICON_GOLD]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROPRIETOR_CRIME_CULTURE</Tag>
+		<English>Forgery</English>
+		<French>Forgery</French>
+		<German>Forgery</German>
+		<Italian>Forgery</Italian>
+		<Spanish>Forgery</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROPRIETOR_STEAL_CULTURE</Tag>
+		<English>Art Heist</English>
+		<French>Art Heist</French>
+		<German>Art Heist</German>
+		<Italian>Art Heist</Italian>
+		<Spanish>Art Heist</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROPRIETOR_STEAL_GPP</Tag>
+		<English>Talent Acquisition</English>
+		<French>Talent Acquisition</French>
+		<German>Talent Acquisition</German>
+		<Italian>Talent Acquisition</Italian>
+		<Spanish>Talent Acquisition</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROPRIETOR_FORGERY</Tag>
+		<English>Art Forgery</English>
+		<French>Art Forgery</French>
+		<German>Art Forgery</German>
+		<Italian>Art Forgery</Italian>
+		<Spanish>Art Forgery</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_PROPRIETOR_FORGERY_HELP</Tag>
+		<English>[ICON_BULLET]Generates 1 [ICON_CULTURE] for every 2 [ICON_CRIME] in the city.[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</English>
+		<French>[ICON_BULLET]Generates 1 [ICON_CULTURE] for every 2 [ICON_CRIME] in the city.[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</French>
+		<German>[ICON_BULLET]Generates 1 [ICON_CULTURE] for every 2 [ICON_CRIME] in the city.[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</German>
+		<Italian>[ICON_BULLET]Generates 1 [ICON_CULTURE] for every 2 [ICON_CRIME] in the city.[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</Italian>
+		<Spanish>[ICON_BULLET]Generates 1 [ICON_CULTURE] for every 2 [ICON_CRIME] in the city.[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_DEATH_MERCHANT_PROFITEER</Tag>
+		<English>Illicit Trade</English>
+		<French>Illicit Trade</French>
+		<German>Illicit Trade</German>
+		<Italian>Illicit Trade</Italian>
+		<Spanish>Illicit Trade</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DEATH_MERCHANT_PROFITEER_HELP</Tag>
+		<English>[ICON_BULLET]Generates 1 [ICON_GOLD] for every 2 [ICON_CRIME] in the city.[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</English>
+		<French>[ICON_BULLET]Generates 1 [ICON_GOLD] for every 2 [ICON_CRIME] in the city.[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</French>
+		<German>[ICON_BULLET]Generates 1 [ICON_GOLD] for every 2 [ICON_CRIME] in the city.[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</German>
+		<Italian>[ICON_BULLET]Generates 1 [ICON_GOLD] for every 2 [ICON_CRIME] in the city.[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</Italian>
+		<Spanish>[ICON_BULLET]Generates 1 [ICON_GOLD] for every 2 [ICON_CRIME] in the city.[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DEATH_MERCHANT_BOOST_CRIME_HELP</Tag>
+		<English>[ICON_BULLET]Immediately adds 100 [ICON_CRIME] in the city.[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</English>
+		<French>[ICON_BULLET]Immediately adds 100 [ICON_CRIME] in the city.[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</French>
+		<German>[ICON_BULLET]Immediately adds 100 [ICON_CRIME] in the city.[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</German>
+		<Italian>[ICON_BULLET]Immediately adds 100 [ICON_CRIME] in the city.[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</Italian>
+		<Spanish>[ICON_BULLET]Immediately adds 100 [ICON_CRIME] in the city.[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DEATH_MERCHANT_ARMS_SMUGGLING_HELP</Tag>
+		<English>[ICON_BULLET]Boosts military production each turn.[NEWLINE][ICON_BULLET]+10 [ICON_CRIME]/turn.[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</English>
+		<French>[ICON_BULLET]Boosts military production each turn.[NEWLINE][ICON_BULLET]+10 [ICON_CRIME]/turn.[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</French>
+		<German>[ICON_BULLET]Boosts military production each turn.[NEWLINE][ICON_BULLET]+10 [ICON_CRIME]/turn.[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</German>
+		<Italian>[ICON_BULLET]Boosts military production each turn.[NEWLINE][ICON_BULLET]+10 [ICON_CRIME]/turn.[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</Italian>
+		<Spanish>[ICON_BULLET]Boosts military production each turn.[NEWLINE][ICON_BULLET]+10 [ICON_CRIME]/turn.[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_DEATH_MERCHANT_ARMS_SMUGGLING</Tag>
+		<English>Arms Smuggling</English>
+		<French>Arms Smuggling</French>
+		<German>Arms Smuggling</German>
+		<Italian>Arms Smuggling</Italian>
+		<Spanish>Arms Smuggling</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ARMS_SMUGGLING</Tag>
+		<English>Arms Smuggling Operation</English>
+		<French>Arms Smuggling Operation</French>
+		<German>Arms Smuggling Operation</German>
+		<Italian>Arms Smuggling Operation</Italian>
+		<Spanish>Arms Smuggling Operation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_DEATH_MERCHANT_BOOST_CRIME</Tag>
+		<English>Supply Crime Lords</English>
+		<French>Supply Crime Lords</French>
+		<German>Supply Crime Lords</German>
+		<Italian>Supply Crime Lords</Italian>
+		<Spanish>Supply Crime Lords</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ESUS_WHISPER</Tag>
+		<English>Whisper</English>
+		<French>Whisper</French>
+		<German>Whisper</German>
+		<Italian>Whisper</Italian>
+		<Spanish>Whisper</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ESUS_WHISPER_STRATEGY</Tag>
+		<English>Whispers are alternatives to assassins available to civilizations that adopt the Council of Esus as their state religion. While their base strength is weaker than a normal assassin, they make up for it with a higher level of Invisibility and the ability to cast Shadow I (which can be used to support a stack of units) and Shadow II spells (which can be used to buff themselves or a stack).</English>
+		<French>Whispers are alternatives to assassins available to civilizations that adopt the Council of Esus as their state religion. While their base strength is weaker than a normal assassin, they make up for it with a higher level of Invisibility and the ability to cast Shadow I (which can be used to support a stack of units) and Shadow II spells (which can be used to buff themselves or a stack).</French>
+		<German>Whispers are alternatives to assassins available to civilizations that adopt the Council of Esus as their state religion. While their base strength is weaker than a normal assassin, they make up for it with a higher level of Invisibility and the ability to cast Shadow I (which can be used to support a stack of units) and Shadow II spells (which can be used to buff themselves or a stack).</German>
+		<Italian>Whispers are alternatives to assassins available to civilizations that adopt the Council of Esus as their state religion. While their base strength is weaker than a normal assassin, they make up for it with a higher level of Invisibility and the ability to cast Shadow I (which can be used to support a stack of units) and Shadow II spells (which can be used to buff themselves or a stack).</Italian>
+		<Spanish>Whispers are alternatives to assassins available to civilizations that adopt the Council of Esus as their state religion. While their base strength is weaker than a normal assassin, they make up for it with a higher level of Invisibility and the ability to cast Shadow I (which can be used to support a stack of units) and Shadow II spells (which can be used to buff themselves or a stack).</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ESUS_ENFORCER</Tag>
+		<English>Enforcer</English>
+		<French>Enforcer</French>
+		<German>Enforcer</German>
+		<Italian>Enforcer</Italian>
+		<Spanish>Enforcer</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ESUS_ENFORCER_STRATEGY</Tag>
+		<English>Enforcers serve as cheap units available to civilizations that have converted to the Council of Esus.[NEWLINE][NEWLINE]While initially weaker than other units in their tier, so long as they are near a city you control, their strength will scale based on its Crime. Any unit they promote to will retain this ability.</English>
+		<French>Enforcers serve as cheap units available to civilizations that have converted to the Council of Esus.[NEWLINE][NEWLINE]While initially weaker than other units in their tier, so long as they are near a city you control, their strength will scale based on its Crime. Any unit they promote to will retain this ability.</French>
+		<German>Enforcers serve as cheap units available to civilizations that have converted to the Council of Esus.[NEWLINE][NEWLINE]While initially weaker than other units in their tier, so long as they are near a city you control, their strength will scale based on its Crime. Any unit they promote to will retain this ability.</German>
+		<Italian>Enforcers serve as cheap units available to civilizations that have converted to the Council of Esus.[NEWLINE][NEWLINE]While initially weaker than other units in their tier, so long as they are near a city you control, their strength will scale based on its Crime. Any unit they promote to will retain this ability.</Italian>
+		<Spanish>Enforcers serve as cheap units available to civilizations that have converted to the Council of Esus.[NEWLINE][NEWLINE]While initially weaker than other units in their tier, so long as they are near a city you control, their strength will scale based on its Crime. Any unit they promote to will retain this ability.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ESUS_ENFORCER_HELP</Tag>
+		<English>[ICON_BULLET]+1 [ICON_STRENGTH] for every 200 [ICON_CRIME] in a nearby city you own (Up to 3)</English>
+		<French>[ICON_BULLET]+1 [ICON_STRENGTH] for every 200 [ICON_CRIME] in a nearby city you own (Up to 3)</French>
+		<German>[ICON_BULLET]+1 [ICON_STRENGTH] for every 200 [ICON_CRIME] in a nearby city you own (Up to 3)</German>
+		<Italian>[ICON_BULLET]+1 [ICON_STRENGTH] for every 200 [ICON_CRIME] in a nearby city you own (Up to 3)</Italian>
+		<Spanish>[ICON_BULLET]+1 [ICON_STRENGTH] for every 200 [ICON_CRIME] in a nearby city you own (Up to 3)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_ESUS_CRIMINAL_CONNECTIONS</Tag>
+		<English>Criminal Enforcer</English>
+		<French>Criminal Enforcer</French>
+		<German>Criminal Enforcer</German>
+		<Italian>Criminal Enforcer</Italian>
+		<Spanish>Criminal Enforcer</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_APHOTIC_THRONE_MERCHANT_UPGRADED</Tag>
+		<English>Aphotic Throne II (Merchant Syndicate)</English>
+		<French>Aphotic Throne II (Merchant Syndicate)</French>
+		<German>Aphotic Throne II (Merchant Syndicate)</German>
+		<Italian>Aphotic Throne II (Merchant Syndicate)</Italian>
+		<Spanish>Aphotic Throne II (Merchant Syndicate)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_APHOTIC_THRONE_SLAVER_UPGRADED</Tag>
+		<English>Aphotic Throne II (Slave Ring)</English>
+		<French>Aphotic Throne II (Slave Ring)</French>
+		<German>Aphotic Throne II (Slave Ring)</German>
+		<Italian>Aphotic Throne II (Slave Ring)</Italian>
+		<Spanish>Aphotic Throne II (Slave Ring)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_APHOTIC_THRONE_POISONER_UPGRADED</Tag>
+		<English>Aphotic Throne II (Poisoner Guild)</English>
+		<French>Aphotic Throne II (Poisoner Guild)</French>
+		<German>Aphotic Throne II (Poisoner Guild)</German>
+		<Italian>Aphotic Throne II (Poisoner Guild)</Italian>
+		<Spanish>Aphotic Throne II (Poisoner Guild)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_APHOTIC_THRONE_BORED_NOBLE_UPGRADED</Tag>
+		<English>Aphotic Throne II (Secret Society)</English>
+		<French>Aphotic Throne II (Secret Society)</French>
+		<German>Aphotic Throne II (Secret Society)</German>
+		<Italian>Aphotic Throne II (Secret Society)</Italian>
+		<Spanish>Aphotic Throne II (Secret Society)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_APHOTIC_THRONE_FAERYL_UPGRADED_COURT</Tag>
+		<English>Aphotic Throne II (Winter Court)</English>
+		<French>Aphotic Throne II (Winter Court)</French>
+		<German>Aphotic Throne II (Winter Court)</German>
+		<Italian>Aphotic Throne II (Winter Court)</Italian>
+		<Spanish>Aphotic Throne II (Winter Court)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_APHOTIC_THRONE_FAERYL_UPGRADED_PRIESTHOOD</Tag>
+		<English>Aphotic Throne II (Grand Priesthood)</English>
+		<French>Aphotic Throne II (Grand Priesthood)</French>
+		<German>Aphotic Throne II (Grand Priesthood)</German>
+		<Italian>Aphotic Throne II (Grand Priesthood)</Italian>
+		<Spanish>Aphotic Throne II (Grand Priesthood)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_APHOTIC_THRONE_UPGRADED_STRATEGY</Tag>
+		<English>Once a civilization researches Guilds and has the Council of Esus as their state religion, they can upgrade a city's Aphotic Throne for 300 gold. These upgraded buildings come with additional benefits.</English>
+		<French>Once a civilization researches Guilds and has the Council of Esus as their state religion, they can upgrade a city's Aphotic Throne for 300 gold. These upgraded buildings come with additional benefits.</French>
+		<German>Once a civilization researches Guilds and has the Council of Esus as their state religion, they can upgrade a city's Aphotic Throne for 300 gold. These upgraded buildings come with additional benefits.</German>
+		<Italian>Once a civilization researches Guilds and has the Council of Esus as their state religion, they can upgrade a city's Aphotic Throne for 300 gold. These upgraded buildings come with additional benefits.</Italian>
+		<Spanish>Once a civilization researches Guilds and has the Council of Esus as their state religion, they can upgrade a city's Aphotic Throne for 300 gold. These upgraded buildings come with additional benefits.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_APHOTIC_THRONE_UPGRADED_FAERYL_STRATEGY</Tag>
+		<English>The Svartalfar are able to upgrade Faeryl's Aphotic Thrones once Guilds have been researched, choosing between one that specializes in research and another that specializes in culture.</English>
+		<French>The Svartalfar are able to upgrade Faeryl's Aphotic Thrones once Guilds have been researched, choosing between one that specializes in research and another that specializes in culture.</French>
+		<German>The Svartalfar are able to upgrade Faeryl's Aphotic Thrones once Guilds have been researched, choosing between one that specializes in research and another that specializes in culture.</German>
+		<Italian>The Svartalfar are able to upgrade Faeryl's Aphotic Thrones once Guilds have been researched, choosing between one that specializes in research and another that specializes in culture.</Italian>
+		<Spanish>The Svartalfar are able to upgrade Faeryl's Aphotic Thrones once Guilds have been researched, choosing between one that specializes in research and another that specializes in culture.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_UPGRADE_APHOTIC_THRONE</Tag>
+		<English>Upgrade Aphotic Throne</English>
+		<French>Upgrade Aphotic Throne</French>
+		<German>Upgrade Aphotic Throne</German>
+		<Italian>Upgrade Aphotic Throne</Italian>
+		<Spanish>Upgrade Aphotic Throne</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_UPGRADE_APHOTIC_THRONE_HELP</Tag>
+		<English>[ICON_BULLET]Upgrades the city's Aphotic Throne</English>
+		<French>[ICON_BULLET]Upgrades the city's Aphotic Throne</French>
+		<German>[ICON_BULLET]Upgrades the city's Aphotic Throne</German>
+		<Italian>[ICON_BULLET]Upgrades the city's Aphotic Throne</Italian>
+		<Spanish>[ICON_BULLET]Upgrades the city's Aphotic Throne</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_UPGRADE_APHOTIC_THRONE_PRIEST</Tag>
+		<English>Upgrade to Grand Priesthood</English>
+		<French>Upgrade to Grand Priesthood</French>
+		<German>Upgrade to Grand Priesthood</German>
+		<Italian>Upgrade to Grand Priesthood</Italian>
+		<Spanish>Upgrade to Grand Priesthood</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_UPGRADE_APHOTIC_THRONE_COURT</Tag>
+		<English>Upgrade to Winter Court</English>
+		<French>Upgrade to Winter Court</French>
+		<German>Upgrade to Winter Court</German>
+		<Italian>Upgrade to Winter Court</Italian>
+		<Spanish>Upgrade to Winter Court</Spanish>
+	</TEXT>
+	</Civ4GameText>

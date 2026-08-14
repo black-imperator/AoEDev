@@ -25120,6 +25120,7 @@
 			</UnitCombats>
 			<Button>Art/Interface/Buttons/Promotions/Entropy3.dds</Button>
 			<iAIWeight>150</iAIWeight>
+			<DeathList>DEATHLIST_DEMON_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Expanded Hull -->
 			<Type>PROMOTION_EXPANDED_HULL</Type>

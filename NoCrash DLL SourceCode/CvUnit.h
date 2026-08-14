@@ -81,7 +81,7 @@ public:
 	void setupGraphical();
 
 	void convert(CvUnit* pUnit);																																	// Exposed to Python
-	void kill(bool bDelay, PlayerTypes ePlayer = NO_PLAYER);														// Exposed to Python
+	void kill(bool bDelay, PlayerTypes ePlayer = NO_PLAYER, bool bPostConvert=false);														// Exposed to Python
 
 	DllExport void NotifyEntity(MissionTypes eMission);
 
@@ -1429,6 +1429,8 @@ public:
 	bool canCast(int spell, bool bTestVisible, CvPlot* pTargetPlot = NULL);
 	bool canCastTargetPlot(int spell, bool bTestVisible, CvPlot* pTargetPlot = NULL) const;
 	bool canCastAnyPlot(int spell, bool bTestVisible);
+	bool canResurrect() const;
+	bool canCastResurrect(int spell, CvPlot* pTargetPlot = NULL) const;
 	bool canCreateUnit(int spell, CvPlot* pTargetPlot = NULL) const;
 	bool canAddPromotion(int spell, CvPlot* pTargetPlot = NULL);
 	bool canCastDamage(int spell, CvPlot* pTargetPlot = NULL);
@@ -1461,6 +1463,7 @@ public:
 	void castAddPromotion(int spell, CvPlot* pTargetPlot = NULL);
 	void castCreateUnit(int spell, CvPlot* pTargetPlot = NULL);
 	void castConvertUnit(int spell);
+	void castResurrect(int spell, CvPlot* pTargetPlot = NULL);
 	void castDamage(int spell, CvPlot* pTargetPlot = NULL);
 	void castDispel(int spell, CvPlot* pTargetPlot = NULL);
 	void castImmobile(int spell, CvPlot* pTargetPlot = NULL);
@@ -1725,6 +1728,9 @@ public:
 /*************************************************************************************************/
 /**	Autocast								END													**/
 /*************************************************************************************************/
+	void setDeathListTarget(DeathListTypes eDeathList);
+	DeathListTypes getDeathListTarget() const;
+	
 /*************************************************************************************************/
 /**	MISSION_CLAIM_FORT/MISSION_EXPLORE_LAIR	19/06/10									Snarko	**/
 /**																								**/
@@ -2305,7 +2311,8 @@ protected:
 /**	Immortal Respawn fix						3/5/2010								Cyth	**/
 /*************************************************************************************************/
 	bool m_bImmortDeath;
-/*************************************************************************************************/
+	DeathListTypes m_eDeathListTarget;
+	/*************************************************************************************************/
 /**	TEST											END											**/
 /*************************************************************************************************/
 
