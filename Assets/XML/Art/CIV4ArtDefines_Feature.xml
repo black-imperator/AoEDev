@@ -1196,5 +1196,83 @@
 				<bGenerateRotations>0</bGenerateRotations>
 				<VarietyButton>, ,Art/Interface/Buttons/Misc_Atlas3.dds,5,11</VarietyButton>
 			</FeatureVariety>
-		</FeatureArtInfo></FeatureArtInfos>
+		</FeatureArtInfo>
+		<FeatureArtInfo>
+			<Type>ART_DEF_FEATURE_PLANE_BORDER</Type>
+			<bAnimated>1</bAnimated>
+			<bRiverArt>0</bRiverArt>
+			<TileArtType>TILE_ART_TYPE_HALF_TILING</TileArtType>
+			<LightType>LIGHT_TYPE_SUN</LightType>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<Button>Art/Interface/Buttons/Promotions/TrueCore.dds</Button>
+			<FeatureVariety>
+				<FeatureArtPieces>
+					<FeatureArtPiece>
+						<ModelFile>Art/Terrain/Features/PlaneBorder/PlaneBorder01_01.nif</ModelFile>
+						<Connections>NW</Connections>
+					</FeatureArtPiece>
+					<FeatureArtPiece>
+						<ModelFile>Art/Terrain/Features/PlaneBorder/PlaneBorder02_01.nif</ModelFile>
+						<Connections>NE</Connections>
+					</FeatureArtPiece>
+					<FeatureArtPiece>
+						<ModelFile>Art/Terrain/Features/PlaneBorder/PlaneBorder03_01.nif</ModelFile>
+						<Connections>NW NE</Connections>
+					</FeatureArtPiece>
+					<FeatureArtPiece>
+						<ModelFile>Art/Terrain/Features/PlaneBorder/PlaneBorder04_01.nif</ModelFile>
+						<Connections>SE</Connections>
+					</FeatureArtPiece>
+					<FeatureArtPiece>
+						<ModelFile>Art/Terrain/Features/PlaneBorder/PlaneBorder05_01.nif</ModelFile>
+						<Connections>NW SE</Connections>
+					</FeatureArtPiece>
+					<FeatureArtPiece>
+						<ModelFile>Art/Terrain/Features/PlaneBorder/PlaneBorder06_01.nif</ModelFile>
+						<Connections>NE SE</Connections>
+					</FeatureArtPiece>
+					<FeatureArtPiece>
+						<ModelFile>Art/Terrain/Features/PlaneBorder/PlaneBorder07_01.nif</ModelFile>
+						<Connections>NW NE SE</Connections>
+					</FeatureArtPiece>
+					<FeatureArtPiece>
+						<ModelFile>Art/Terrain/Features/PlaneBorder/PlaneBorder08_01.nif</ModelFile>
+						<Connections>SW</Connections>
+					</FeatureArtPiece>
+					<FeatureArtPiece>
+						<ModelFile>Art/Terrain/Features/PlaneBorder/PlaneBorder09_01.nif</ModelFile>
+						<Connections>NW SW</Connections>
+					</FeatureArtPiece>
+					<FeatureArtPiece>
+						<ModelFile>Art/Terrain/Features/PlaneBorder/PlaneBorder10_01.nif</ModelFile>
+						<Connections>NE SW</Connections>
+					</FeatureArtPiece>
+					<FeatureArtPiece>
+						<ModelFile>Art/Terrain/Features/PlaneBorder/PlaneBorder11_01.nif</ModelFile>
+						<Connections>NW NE SW</Connections>
+					</FeatureArtPiece>
+					<FeatureArtPiece>
+						<ModelFile>Art/Terrain/Features/PlaneBorder/PlaneBorder12_01.nif</ModelFile>
+						<Connections>SE SW</Connections>
+					</FeatureArtPiece>
+					<FeatureArtPiece>
+						<ModelFile>Art/Terrain/Features/PlaneBorder/PlaneBorder13_01.nif</ModelFile>
+						<Connections>NW SE SW</Connections>
+					</FeatureArtPiece>
+					<FeatureArtPiece>
+						<ModelFile>Art/Terrain/Features/PlaneBorder/PlaneBorder14_01.nif</ModelFile>
+						<Connections>NE SE SW</Connections>
+					</FeatureArtPiece>
+					<FeatureArtPiece>
+						<ModelFile>Art/Terrain/Features/PlaneBorder/PlaneBorder15_01.nif</ModelFile>
+						<Connections>NW NE SE SW</Connections>
+					</FeatureArtPiece>
+				</FeatureArtPieces>
+				<FeatureDummyNodes/>
+				<bGenerateRotations>0</bGenerateRotations>
+				<VarietyButton>Art/Interface/Buttons/TerrainFeatures/Ice.dds</VarietyButton>
+			</FeatureVariety>
+		</FeatureArtInfo>
+	</FeatureArtInfos>
 </Civ4ArtDefines>

@@ -318,6 +318,10 @@
 				</BonusAffinity>
 			</BonusAffinities>
 		</PromotionInfo>
+		<PromotionInfo>		<!-- Misery Stone -->
+			<Type>PROMOTION_MISERY_STONE</Type>
+			<PyPerTurn>effectBoneCirclet(pCaster)</PyPerTurn>
+		</PromotionInfo>
 		<PromotionInfo>
 			<Type>PROMOTION_MATRON_ESSENDI</Type>
 			<Description>TXT_KEY_EQUIPMENT_MATRON_ESSENDI</Description>

@@ -700,6 +700,16 @@
 			<bGoodyTech>1</bGoodyTech>
 			<bBridgeBuilding>1</bBridgeBuilding>
 			<bIrrigation>1</bIrrigation>
+			<SpecialistTypeYieldChanges>
+				<SpecialistTypeYieldChange>
+					<SpecialistType>SPECIALIST_VOLUNTEER_GRIGORI</SpecialistType>
+					<SpecialistTypeYields>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+					</SpecialistTypeYields>
+				</SpecialistTypeYieldChange>
+			</SpecialistTypeYieldChanges>
 			<iGridX>4</iGridX>
 			<iGridY>2</iGridY>
 			<Flavors>

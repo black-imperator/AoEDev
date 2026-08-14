@@ -346,5 +346,10 @@
 				</Flavor>
 			</Flavors>
 		</BuildingInfo> 
+		<BuildingInfo>		<!-- The Chalice of Sacrifice                                        World Wonder -->
+			<BuildingClass>BUILDINGCLASS_THE_CHALICE_OF_SACRIFICE</BuildingClass>
+			<Type>BUILDING_THE_CHALICE_OF_SACRIFICE</Type>
+			<FreePromotion>PROMOTION_ALTAR_GRAFT1</FreePromotion>
+		</BuildingInfo>
 	</BuildingInfos>
 </Civ4BuildingInfos>

@@ -4718,6 +4718,17 @@
 			<DefaultUnit>UNIT_BLOOD_DRAGON</DefaultUnit>
 			<iMercenaryWeight>0</iMercenaryWeight>
 		</UnitClassInfo>
+		<UnitClassInfo>		<!-- Elder Dragon -->
+			<Type>UNITCLASS_ELDER_DRAGON</Type>
+			<Description>TXT_KEY_UNIT_ELDER_DRAGON</Description>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<bUnique>1</bUnique>
+			<DefaultUnit>UNIT_ELDER_DRAGON</DefaultUnit>
+			<iMercenaryWeight>0</iMercenaryWeight>
+		</UnitClassInfo>
 		<UnitClassInfo>		<!-- Pit Dragon -->
 			<Type>UNITCLASS_PIT_DRAGON</Type>
 			<Description>TXT_KEY_UNIT_PIT_DRAGON</Description>

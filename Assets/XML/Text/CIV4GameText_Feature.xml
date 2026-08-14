@@ -257,6 +257,22 @@
 		<Spanish>Volcán</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_NON_PLANAR_FEATURE</Tag>
+		<English>Void</English>
+		<French>Void</French>
+		<German>Void</German>
+		<Italian>Void</Italian>
+		<Spanish>Void</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_NON_PLANAR_FEATURE_PEDIA</Tag>
+		<English>The roar of an elder dragon fractures creation, permanently leaving fissures of nothingness in the area</English>
+		<French>The roar of an elder dragon fractures creation, permanently leaving fissures of nothingness in the area.</French>
+		<German>The roar of an elder dragon fractures creation, permanently leaving fissures of nothingness in the area.</German>
+		<Italian>The roar of an elder dragon fractures creation, permanently leaving fissures of nothingness in the area.</Italian>
+		<Spanish>The roar of an elder dragon fractures creation, permanently leaving fissures of nothingness in the area.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_FEATURE_WALLS</Tag>
 		<English>Walls</English>
 		<French>Remparts</French>

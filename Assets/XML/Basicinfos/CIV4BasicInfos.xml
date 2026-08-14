@@ -408,5 +408,10 @@
 			<Description>TXT_KEY_CONCEPT_FREED_CIVILIZATIONS</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_FREED_CIVILIZATIONS_PEDIA</Civilopedia>
 		</ConceptInfo>
+		<ConceptInfo>
+			<Type>CONCEPT_KANTOLIN_PERCEPTION</Type>
+			<Description>TXT_KEY_CONCEPT_KANTOLIN_PERCEPTION</Description>
+			<Civilopedia>TXT_KEY_CONCEPT_KANTOLIN_PERCEPTION_PEDIA</Civilopedia>
+		</ConceptInfo>
 	</ConceptInfos>
 </Civ4BasicInfos>
