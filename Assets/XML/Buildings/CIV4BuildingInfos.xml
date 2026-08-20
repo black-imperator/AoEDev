@@ -15817,10 +15817,20 @@
 					<YieldChanges>
 						<iYield>0</iYield>
 						<iYield>0</iYield>
-						<iYield>2</iYield>
+						<iYield>0</iYield>
 					</YieldChanges>
 				</LocalSpecialistClassYieldChange>
 			</LocalSpecialistClassYieldChanges>
+			<LocalSpecialistClassCommerceChanges>
+				<LocalSpecialistClassCommerceChange>
+					<SpecialistClass>SPECIALISTCLASS_SLAVE</SpecialistClass>
+					<CommerceChanges>
+						<iCommerce>2</iCommerce>
+						<iCommerce>0</iCommerce>
+						<iCommerce>0</iCommerce>
+					</CommerceChanges>
+				</LocalSpecialistClassCommerceChange>
+			</LocalSpecialistClassCommerceChanges>
 			<SpecialistClassCounts>
 				<SpecialistClassCount>
 					<SpecialistClass>SPECIALISTCLASS_MERCHANT</SpecialistClass>

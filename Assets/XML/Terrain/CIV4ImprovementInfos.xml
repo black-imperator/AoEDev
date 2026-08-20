@@ -1217,7 +1217,7 @@
 			<ImprovementClass>IMPROVEMENTCLASS_LUMBERMILL</ImprovementClass>
 			<Description>TXT_KEY_IMPROVEMENT_LUMBERMILL</Description>
 			<Civilopedia>TXT_KEY_IMPROVEMENT_LUMBERMILL_PEDIA</Civilopedia>
-			<Help/>
+			<Help>TXT_KEY_BUILD_LUMBERMILL_HELP</Help><Help/>
 			<ArtDefineTag>ART_DEF_IMPROVEMENT_LUMBERMILL</ArtDefineTag>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>

@@ -49694,7 +49694,7 @@
 			<Strategy>TXT_KEY_UNIT_BAT_STRATEGY</Strategy>
 			<Civilopedia>TXT_KEY_UNIT_BAT_PEDIA</Civilopedia>
 			<Advisor>NONE</Advisor>
-			<iExtraPerception>7</iExtraPerception>
+			<iExtraPerception>4</iExtraPerception>
 			<bAnimal>1</bAnimal>
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
@@ -49758,7 +49758,7 @@
 			<iAppearanceProb>-1</iAppearanceProb>
 			<AppearanceTechs>
 				<AppearanceTech>
-					<AppearanceTechType>TECH_MINING</AppearanceTechType>
+					<AppearanceTechType>TECH_BRONZE_WORKING</AppearanceTechType>
 					<iAppearanceTech>101</iAppearanceTech>
 				</AppearanceTech>
 				<AppearanceTech>

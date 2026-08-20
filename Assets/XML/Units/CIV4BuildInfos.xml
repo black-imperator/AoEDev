@@ -426,7 +426,7 @@
 		<BuildInfo> <!-- Lumbermill -->
 			<Type>BUILD_LUMBERMILL</Type>
 			<Description>TXT_KEY_BUILD_LUMBERMILL</Description>
-			<Help/>
+			<Help>TXT_KEY_BUILD_LUMBERMILL_HELP</Help>
 			<PrereqTech>TECH_SMELTING</PrereqTech>
 			<iTime>3500</iTime>
 			<iCost>0</iCost>

@@ -459,6 +459,22 @@
 					<iAttitudeChange>-1</iAttitudeChange>
 				</LeaderAttitudeChange>
 			</LeaderAttitudeChanges>
+			<LeaderAttitudeChanges>
+				<LeaderAttitudeChange>
+					<TargetLeaderType>LEADER_TRISTESSA</TargetLeaderType>
+					<iAttitudeChange>-8</iAttitudeChange>
+				</LeaderAttitudeChange>
+			</LeaderAttitudeChanges>
+		</LeaderRelationInfo>
+		<LeaderRelationInfo>	<!-- Tristessa -->
+			<Type>LEADERRELATION_TRISTESSA</Type>
+			<Leader>LEADER_TRISTESSA</Leader>
+			<LeaderAttitudeChanges>
+				<LeaderAttitudeChange>
+					<TargetLeaderType>LEADER_ALEXIS</TargetLeaderType>
+					<iAttitudeChange>-8</iAttitudeChange>
+				</LeaderAttitudeChange>
+			</LeaderAttitudeChanges>
 		</LeaderRelationInfo>
 	</LeaderRelationInfos>
 </Civ4LeaderRelationInfos>
