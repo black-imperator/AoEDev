@@ -12439,7 +12439,7 @@
             </RouteYieldChanges>
 			<iWorkingCityCrime>3</iWorkingCityCrime>
 			<FreeSpecialistClass>SPECIALISTCLASS_CITIZEN</FreeSpecialistClass>
-			<iSpawnUnitChancePercentMod>-75</iSpawnUnitChancePercentMod>
+			<iSpawnUnitChancePercentMod>-85</iSpawnUnitChancePercentMod>
 			<SpawnUnitType>UNIT_FREE_SPIRITS</SpawnUnitType>
 			<bSpawnOnlyForOwner>1</bSpawnOnlyForOwner>
 			<iSpawnAtOnceLimit>1</iSpawnAtOnceLimit>

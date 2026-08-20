@@ -43285,9 +43285,11 @@
 					<Button>Art/Interface/Buttons/promotions/companions/amicus.dds</Button>
 			<ExtraArtType>ART_DEF_UNIT_AMICUS</ExtraArtType>
 			<bCompanion>1</bCompanion>
-				<fFreeXPCap>50</fFreeXPCap>
+	  <!-- <fFreeXPCap>50</fFreeXPCap>
+			<iFreeXPPerTurn>0.5</iFreeXPPerTurn> -->
+			<iExperiencePercent>20</iExperiencePercent>
+			<iFreeXPFromCombat>1</iFreeXPFromCombat>
 			<iNoBadExplore>10</iNoBadExplore>
-			<iFreeXPPerTurn>0.5</iFreeXPPerTurn>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
