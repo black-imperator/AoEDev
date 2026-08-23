@@ -168,6 +168,32 @@ void CvUnit::reloadEntity()
 }
 
 
+void CvUnit::applyTraitFreePromotions(TraitTypes eTrait)
+{
+	if (getUnitCombatType() == NO_UNITCOMBAT)
+	{
+		return;
+	}
+	if (!GET_PLAYER(getOwnerINLINE()).hasTrait(eTrait))
+	{
+		return;
+	}
+	for (int iI = 0; iI < GC.getNumPromotionInfos(); iI++)
+	{
+		if (GC.getTraitInfo(eTrait).isFreePromotion(iI))
+		{
+			for (int iJ = 0; iJ < GC.getNumUnitCombatInfos(); iJ++)
+			{
+				if ((isUnitCombat((UnitCombatTypes)iJ) && GC.getTraitInfo(eTrait).isFreePromotionUnitCombat(iJ)))
+				{
+					setHasPromotion(((PromotionTypes)iI), true);
+				}
+			}
+		}
+	}
+}
+
+
 void CvUnit::init(int iID, UnitTypes eUnit, UnitAITypes eUnitAI, PlayerTypes eOwner, int iX, int iY, DirectionTypes eFacingDirection)
 {
 	CvWString szBuffer;
@@ -344,27 +370,9 @@ void CvUnit::init(int iID, UnitTypes eUnit, UnitAITypes eUnitAI, PlayerTypes eOw
 		}
 	}
 	FAssertMsg((GC.getNumTraitInfos() > 0), "GC.getNumTraitInfos() is less than or equal to zero but is expected to be larger than zero in CvUnit::init");
-	if (getUnitCombatType() != NO_UNITCOMBAT)
+	for (int iI = 0; iI < GC.getNumTraitInfos(); iI++)
 	{
-		for (int iI = 0; iI < GC.getNumTraitInfos(); iI++)
-		{
-			if (GET_PLAYER(getOwnerINLINE()).hasTrait((TraitTypes)iI))
-			{
-				for (int iJ = 0; iJ < GC.getNumPromotionInfos(); iJ++)
-				{
-					if (GC.getTraitInfo((TraitTypes)iI).isFreePromotion(iJ))
-					{
-						for (int ik = 0; ik < GC.getNumUnitCombatInfos(); ik++)
-						{
-							if ((isUnitCombat((UnitCombatTypes)ik) && GC.getTraitInfo((TraitTypes)iI).isFreePromotionUnitCombat(ik)))
-							{
-								setHasPromotion(((PromotionTypes)iJ), true);
-							}
-						}
-					}
-				}
-			}
-		}
+		applyTraitFreePromotions((TraitTypes)iI);
 	}
 	for (int iI = 0; iI < GC.getNumSpellClassInfos(); iI++)
 	{

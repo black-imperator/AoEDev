@@ -3722,6 +3722,11 @@ void CvPlayer::setHasTrait(TraitTypes eTrait, bool bNewValue)
 	updateMaxAnarchyTurns();
 	if (bNewValue)
 	{
+		int iLoop;
+		for (CvUnit* pLoopUnit = firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = nextUnit(&iLoop))
+		{
+			pLoopUnit->applyTraitFreePromotions(eTrait);
+		}
 		CvEventReporter::getInstance().traitGained(eTrait, getID());
 	}
 	else
