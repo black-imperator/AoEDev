@@ -8880,9 +8880,10 @@ void CvPlot::clearCultureControl(PlayerTypes ePlayer, ImprovementTypes eImprovem
 		return;
 	}
 
+	changeCultureControl(ePlayer, -GC.getImprovementInfo(eImprovement).getCultureCenterBonus(), bUpdateInterface);
+
 	int iRange = GC.getImprovementInfo(eImprovement).getCultureRange();
 	int iStrength = GC.getImprovementInfo(eImprovement).getCultureControlStrength();
-	int iCenterTileBonus = GC.getImprovementInfo(eImprovement).getCultureCenterBonus();
 	int iDX, iDY;
 	CvPlot* pLoopPlot;
 	for (iDX = -iRange; iDX <= iRange; iDX++)
@@ -8903,7 +8904,7 @@ void CvPlot::clearCultureControl(PlayerTypes ePlayer, ImprovementTypes eImprovem
 
 			if (iStrength > 0)
 			{
-				pLoopPlot->changeCultureControl(ePlayer, -pLoopPlot->getCultureControl(ePlayer), bUpdateInterface);
+				pLoopPlot->changeCultureControl(ePlayer, -iStrength, bUpdateInterface);
 			}
 		}
 	}
