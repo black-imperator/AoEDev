@@ -7937,6 +7937,7 @@ def reqChin(caster):
 def spellChin(caster):
 	bCanCast = reqChin(caster)	# 2nd check in case the player settled after launching the spell or the player "cheated" by casting simultaneously Chin on 2 neighbour tiles
 	if bCanCast:
+		pPlot = caster.plot()
 		pPlot.setPlotType(PlotTypes.PLOT_PEAK, True, True)
 
 def reqWomb(caster):
