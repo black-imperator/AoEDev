@@ -3535,7 +3535,7 @@ def spellRiverOfBlood(pCaster):
 	(pLoopCity, iter) = pPlayer.firstCity(False)
 	while(pLoopCity):
 		pLoopCity.changePopulation(2)
-		CyInterface().addMessage(iLoopPlayer,True,25,CyTranslator().getText("TXT_KEY_MESSAGE_RIVER_OF_BLOOD_CALABIM", ()),'',1,'Art/Interface/Buttons/Spells/River of Blood.dds',ColorTypes(8),pCity.getX(),pCity.getY(),True,True)
+		CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_MESSAGE_RIVER_OF_BLOOD_CALABIM", ()),'',1,'Art/Interface/Buttons/Spells/River of Blood.dds',ColorTypes(8),pLoopCity.getX(),pLoopCity.getY(),True,True)
 		(pLoopCity, iter) = pPlayer.nextCity(iter, False)
 	for iLoopPlayer in range(gc.getMAX_PLAYERS()):
 		pLoopPlayer	= gc.getPlayer(iLoopPlayer)
@@ -3546,8 +3546,10 @@ def spellRiverOfBlood(pCaster):
 			(pLoopCity, iter) = pLoopPlayer.firstCity(False)
 			while(pLoopCity):
 				iPopChange = max(1, (pLoopCity.getPopulation() - 2))
+				iLoss = pLoopCity.getPopulation() - iPopChange
 				pLoopCity.setPopulation(iPopChange)
-				CyInterface().addMessage(iLoopPlayer,True,25,CyTranslator().getText("TXT_KEY_MESSAGE_RIVER_OF_BLOOD", (iLoss, )),'',1,'Art/Interface/Buttons/Spells/River of Blood.dds',ColorTypes(7),pCity.getX(),pCity.getY(),True,True)
+				if iLoss > 0:
+					CyInterface().addMessage(iLoopPlayer,True,25,CyTranslator().getText("TXT_KEY_MESSAGE_RIVER_OF_BLOOD", (iLoss, )),'',1,'Art/Interface/Buttons/Spells/River of Blood.dds',ColorTypes(7),pLoopCity.getX(),pLoopCity.getY(),True,True)
 				(pLoopCity, iter) = pLoopPlayer.nextCity(iter, False)
 
 def reqRoar(caster):
