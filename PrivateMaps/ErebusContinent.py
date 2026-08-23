@@ -6044,7 +6044,7 @@ class StartPlot :
 		gameMap = CyMap()
 		return gameMap.plot(self.x,self.y)
 	def copy(self):
-		cp = StartPlot(self,x,y,desertValue,plainsValue,grassValue,marshValue,taigaValue,tundraValue,hillValue,peakValue,forestValue,jungleValue,coastValue,bonusValue,northValue,westValue,edgeValue)
+		cp = StartPlot(self.x,self.y,self.desertValue,self.plainsValue,self.grassValue,self.marshValue,self.taigaValue,self.tundraValue,self.hillValue,self.peakValue,self.forestValue,self.jungleValue,self.coastValue,self.bonusValue,self.northValue,self.westValue,self.edgeValue)
 		cp.totalValue = self.totalValue
 		cp.numberOfOwnedCities = self.numberOfOwnedCities
 		cp.distanceToOwner = self.distanceToOwner

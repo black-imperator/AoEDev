@@ -1288,7 +1288,7 @@ def getHelpAdmiralJoin(argsList):
 	eSpell, pCaster = argsList
 	pPlot		= pCaster.plot()
 	iTeam		= pCaster.getTeam()
-	iAdmClass	= git("UNITCLASS_COMMANDER")
+	iAdmClass	= getInfoType("UNITCLASS_COMMANDER")
 	fCasterXP	= pCaster.getExperience()
 	pTarget		= -1
 	szHelp		= ""
@@ -1306,7 +1306,7 @@ def getHelpAdmiralJoin(argsList):
 def spellAdmiralJoin(pCaster):
 	pPlot		= pCaster.plot()
 	iTeam		= pCaster.getTeam()
-	iAdmClass	= git("UNITCLASS_COMMANDER")
+	iAdmClass	= getInfoType("UNITCLASS_COMMANDER")
 	fCasterXP	= pCaster.getExperience()
 	pTarget		= -1
 	for iUnit in xrange(pPlot.getNumUnits()):
@@ -1327,8 +1327,8 @@ def spellAdmiralJoin(pCaster):
 def reqAdmiralJoin(pCaster):
 	pPlot		= pCaster.plot()
 	iTeam		= pCaster.getTeam()
-	iAdmClass	= git("UNITCLASS_COMMANDER")
-	lBlackList	= [git("UNITCLASS_TRADESHIP"),git("UNITCLASS_WYRMFISHER"),git("UNITCLASS_WORKBOAT")]
+	iAdmClass	= getInfoType("UNITCLASS_COMMANDER")
+	lBlackList	= [getInfoType("UNITCLASS_TRADESHIP"),getInfoType("UNITCLASS_WYRMFISHER"),getInfoType("UNITCLASS_WORKBOAT")]
 	if not pCaster.getDomainType() == DomainTypes.DOMAIN_SEA:
 		return False
 	if pCaster.getUnitClassType() in lBlackList:
@@ -1912,7 +1912,7 @@ def spellFeedUndead(caster):
 
 def postCombatWinUndeadEater(pCaster, pOpponent):
 	if pOpponent.isHasPromotion(getInfoType("PROMOTION_UNDEAD")):
-		pCaster.setDamage(caster.getDamage() - 20, caster.getOwner())
+		pCaster.setDamage(pCaster.getDamage() - 20, pCaster.getOwner())
 		pCaster.setHasPromotion(getInfoType('PROMOTION_UNDEAD_SOUL'),True)
 
 	
@@ -3750,6 +3750,7 @@ def spellSacrificeSlaveCualli(caster):
 			iEmpower8 = getInfoType('PROMOTION_SACRIFICIAL_BLOOD_8')
 			iEmpowerPriest = getInfoType('PROMOTION_SACRIFICIAL_BLOOD_PRIEST')
 			iEmpowerDivine = getInfoType('PROMOTION_SACRIFICIAL_BLOOD_DIVINE')
+			iEmpowerFire = getInfoType('PROMOTION_SACRIFICIAL_BLOOD_FIRE')
 			pUnit.setHasPromotion(iEmpower1, True)
 			if(iLevel>2):
 				pUnit.setHasPromotion(iEmpower2, True)
@@ -14905,7 +14906,7 @@ def spellDropEquipment(pCaster):
 			if pPlot.getUnit(iUnit).getUnitType() == getInfoType('EQUIPMENT_CONTAINER'):
 				containerUnit = pPlot.getUnit(iUnit)
 		if containerUnit == -1:
-			containerUnit = gc.getPlayer(gc.getORC_PLAYER()).initUnit(git('EQUIPMENT_CONTAINER'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+			containerUnit = gc.getPlayer(gc.getORC_PLAYER()).initUnit(getInfoType('EQUIPMENT_CONTAINER'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 		containerUnit.setHasPromotion(lEquipmentList[0],True)
 		pCaster.setHasPromotion(lEquipmentList[0],False)
 	if len(lEquipmentList) > 1:

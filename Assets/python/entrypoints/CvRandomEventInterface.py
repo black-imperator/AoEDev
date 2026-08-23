@@ -5850,7 +5850,7 @@ def doElectionSupportPeasant(argsList):
 		(loopCity, iter) = pPlayer.firstCity(False)
 		while(loopCity):
 			loopCity.changeHappinessTimer(30)
-			pCity.changeEspionageHealthCounter(-5)
+			loopCity.changeEspionageHealthCounter(-5)
 			(loopCity, iter) = pPlayer.nextCity(iter, False)
 
 	else:

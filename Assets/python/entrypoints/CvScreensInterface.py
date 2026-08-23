@@ -232,7 +232,7 @@ def showUnVictoryScreen(argsList):
 # DynTraits Start
 dynTraitsScreen = CvTraitScreen.CvTraitScreen()
 def showTraitsScreen():
-	dynTraitsScreen.interfaceScreen(argsList[0])
+	dynTraitsScreen.interfaceScreen()
 	
 def showTraitPopup(argsList):
 	CvTraitScreen.showTraitPopup(argsList)
@@ -824,7 +824,7 @@ def effectRepublic(argsList):
 			(loopCity, iter) = pPlayer.firstCity(False)
 			while(loopCity):
 				loopCity.changeHappinessTimer(30)
-				pCity.changeEspionageHealthCounter(-5)
+				loopCity.changeEspionageHealthCounter(-5)
 				(loopCity, iter) = pPlayer.nextCity(iter, False)
 		if iElectionIndex == 4: # Church wins
 			pPlayer.initUnit(git('UNIT_PROPHET'), pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
