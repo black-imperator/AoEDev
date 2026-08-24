@@ -2061,6 +2061,7 @@
 		     <AndDependencyTypes>
 		        <DependencyType>MODULE_VICIOUSSEAS</DependencyType>
 		     </AndDependencyTypes>
+			 <bForceOverwrite>1</bForceOverwrite>
 		</BuildInfo>
 		<BuildInfo> <!-- Aifon Sea Haven (cottage) -->
 			<Type>BUILD_SEA_COTTAGE</Type>
@@ -2119,6 +2120,7 @@
 		     <AndDependencyTypes>
 		        <DependencyType>MODULE_VICIOUSSEAS</DependencyType>
 		     </AndDependencyTypes>
+			 <bForceOverwrite>1</bForceOverwrite>
 		</BuildInfo>
 		<BuildInfo> <!-- Coral Fort -->
 			<Type>BUILD_CORAL_FORT</Type>
@@ -2150,6 +2152,7 @@
 		     <AndDependencyTypes>
 		        <DependencyType>MODULE_VICIOUSSEAS</DependencyType>
 		     </AndDependencyTypes>
+			 <bForceOverwrite>1</bForceOverwrite>
 		</BuildInfo>
 		<BuildInfo> <!-- Trawling Boats -->
 			<Type>BUILD_TRAWLING_BOATS</Type>
@@ -2178,6 +2181,7 @@
 		     <AndDependencyTypes>
 		        <DependencyType>MODULE_VICIOUSSEAS</DependencyType>
 		     </AndDependencyTypes>
+			 <bForceOverwrite>1</bForceOverwrite>
 		</BuildInfo>
 		<BuildInfo> <!-- Trawling Boats Lanun -->
 			<Type>BUILD_TRAWLING_BOATS_LANUN</Type>
@@ -2205,6 +2209,7 @@
 		     <AndDependencyTypes>
 		        <DependencyType>MODULE_VICIOUSSEAS</DependencyType>
 		     </AndDependencyTypes>
+			 <bForceOverwrite>1</bForceOverwrite>
 		</BuildInfo>	
 		<BuildInfo> <!-- Aquatic Pyre -->
 			<Type>BUILD_PYRE_AQUATIC</Type>
@@ -2264,6 +2269,7 @@
 		     <AndDependencyTypes>
 		        <DependencyType>MODULE_VICIOUSSEAS</DependencyType>
 		     </AndDependencyTypes>
+			 <bForceOverwrite>1</bForceOverwrite>
 		</BuildInfo>
 		<BuildInfo> <!-- Fishing Boats -->
 			<Type>BUILD_FISHING_BOATS</Type>
@@ -2301,6 +2307,7 @@
 		     <AndDependencyTypes>
 		        <DependencyType>MODULE_VICIOUSSEAS</DependencyType>
 		     </AndDependencyTypes>
+			 <bForceOverwrite>1</bForceOverwrite>
 		</BuildInfo>
 		<BuildInfo> <!-- Fishing Boats Lanun -->
 			<Type>BUILD_FISHING_BOATS_LANUN</Type>
@@ -2322,6 +2329,7 @@
 		     <AndDependencyTypes>
 		        <DependencyType>MODULE_VICIOUSSEAS</DependencyType>
 		     </AndDependencyTypes>
+			 <bForceOverwrite>1</bForceOverwrite>
 		</BuildInfo>
 		<BuildInfo> <!-- Fishing Boats Wyrmfisher -->
 			<Type>BUILD_FISHING_BOATS_WYRMFISHER</Type>
@@ -2344,6 +2352,7 @@
 		     <AndDependencyTypes>
 		        <DependencyType>MODULE_VICIOUSSEAS</DependencyType>
 		     </AndDependencyTypes>
+			 <bForceOverwrite>1</bForceOverwrite>
 		</BuildInfo>
 		<BuildInfo> <!-- Pirate Cove -->
 			<Type>BUILD_PIRATE_COVE</Type>
@@ -2365,6 +2374,7 @@
 		     <AndDependencyTypes>
 		        <DependencyType>MODULE_VICIOUSSEAS</DependencyType>
 		     </AndDependencyTypes>
+			 <bForceOverwrite>1</bForceOverwrite>
 		</BuildInfo>
 		
 		<BuildInfo> <!-- Feeding Pen Arachniphobia Start -->

@@ -1992,6 +1992,18 @@
 					<TerrainType>TERRAIN_BLIGHTED_COAST</TerrainType>
 					<bMakesValid>1</bMakesValid>
 				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
 			</TerrainMakesValids>
 		</ImprovementInfo>
 	</ImprovementInfos>
