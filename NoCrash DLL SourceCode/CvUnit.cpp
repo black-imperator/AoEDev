@@ -3881,6 +3881,17 @@ void CvUnit::updateCombat(bool bQuick)
 		}
 		else
 		{
+			// An immortal that lost is reborn instead of dying (CvUnit::kill -> doImmortalRebirth),
+			// so neither isDead() branch above runs and the withdrawal branches below do not apply.
+			// The attack was therefore never charged for.  Harmless for a normal unit, which cannot
+			// attack again after setMadeAttack(true), but a Blitz unit keeps a full movement bar and
+			// can attack an immortal an unlimited number of times in one turn.
+			if (isImmortDeath() || pDefender->isImmortDeath())
+			{
+				changeMoves(std::max(GC.getMOVE_DENOMINATOR(), pPlot->movementCost(this, plot())));
+				checkRemoveSelectionAfterAttack();
+			}
+
 
 //FfH Promotions: Modified by Kael 08/12/2007
 //			szBuffer = gDLL->getText("TXT_KEY_MISC_YOU_UNIT_WITHDRAW", getNameKey(), pDefender->getNameKey());
