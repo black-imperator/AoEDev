@@ -3269,9 +3269,11 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 			}
 		}
 
-		if (isDead() || pDefender->isDead())
+		// A reborn immortal is not isDead(), so without the ImmortDeath terms the winner
+		// would be denied combat experience for a fight it actually won.
+		if (isDead() || pDefender->isDead() || isImmortDeath() || pDefender->isImmortDeath())
 		{
-			if (isDead())
+			if (isDead() || isImmortDeath())
 			{
 				int iExperience = defenseXPValue();
 				iExperience = ((iExperience * iAttackerStrength) / iDefenderStrength);
@@ -3282,7 +3284,10 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 			}
 			else
 			{
-				flankingStrikeCombat(pPlot, iAttackerStrength, iAttackerFirepower, iAttackerKillOdds, iDefenderDamage, pDefender);
+				if (pDefender->isDead())      // flanking strikes follow an actual kill, not a rebirth
+				{
+					flankingStrikeCombat(pPlot, iAttackerStrength, iAttackerFirepower, iAttackerKillOdds, iDefenderDamage, pDefender);
+				}
 
 				int iExperience = pDefender->attackXPValue();
 				iExperience = ((iExperience * iDefenderStrength) / iAttackerStrength);
@@ -3305,12 +3310,8 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 			pDefender->changeCombatFirstStrikes(-1);
 		}
 
-		// Maybe one tier too high? Should be outside the combat while loop?? Blaze
-		// Immortal Respawn fix : Cyth 3/5/2010
-		if(isImmortDeath() || pDefender->isImmortDeath())
-		{
-			break;
-		}
+		// Immortal Respawn fix : Cyth 3/5/2010 - folded into the death check above, which
+		// now breaks on a rebirth too and awards the winner its experience first.
 
 	}
 }
