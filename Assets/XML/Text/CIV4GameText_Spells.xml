@@ -2544,11 +2544,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SPELL_REVELATION_HELP</Tag>
-		<English>[ICON_BULLET]Destroys all enemy illusions within range[NEWLINE][ICON_BULLET]Removes invisibility and Hidden Nationality from all enemy units within range</English>
-		<French>[ICON_BULLET]Détruit toutes les illusions ennemies à portée[NEWLINE][ICON_BULLET]Retire l'invisibilité et la Nationalité Caché de toutes les unités ennemies à portée</French>
-		<German>[ICON_BULLET]Zerstört alle feindlichen Illusionen innerhalb der Reichweite[NEWLINE][ICON_BULLET]Entfernt Unsichtbarkeit und versteckte Nationalität von allen feindlichen Einheiten innerhalb der Reichweite</German>
-		<Italian>[ICON_BULLET]Destroys all enemy illusions within range[NEWLINE][ICON_BULLET]Removes invisibility and Hidden Nationality from all enemy units within range</Italian>
-		<Spanish>[ICON_BULLET]Destroys all enemy illusions within range[NEWLINE][ICON_BULLET]Removes invisibility and Hidden Nationality from all enemy units within range</Spanish>
+		<English>[ICON_BULLET]Destroys all enemy illusions within range[NEWLINE][ICON_BULLET]Removes the Hidden, Invisible and Hidden Nationality promotions from all enemy units within range (other forms of concealment, such as terrain stealth, are unaffected)</English>
+		<French>[ICON_BULLET]Détruit toutes les illusions ennemies à portée[NEWLINE][ICON_BULLET]Retire les promotions Caché, Invisible et Nationalité Cachée de toutes les unités ennemies à portée (les autres formes de dissimulation, comme la furtivité de terrain, ne sont pas affectées)</French>
+		<German>[ICON_BULLET]Zerstört alle feindlichen Illusionen innerhalb der Reichweite[NEWLINE][ICON_BULLET]Entfernt die Beförderungen Versteckt, Unsichtbar und Versteckte Nationalität von allen feindlichen Einheiten innerhalb der Reichweite (andere Formen der Tarnung, etwa Geländetarnung, bleiben unberührt)</German>
+		<Italian>[ICON_BULLET]Destroys all enemy illusions within range[NEWLINE][ICON_BULLET]Removes the Hidden, Invisible and Hidden Nationality promotions from all enemy units within range (other forms of concealment, such as terrain stealth, are unaffected)</Italian>
+		<Spanish>[ICON_BULLET]Destroys all enemy illusions within range[NEWLINE][ICON_BULLET]Removes the Hidden, Invisible and Hidden Nationality promotions from all enemy units within range (other forms of concealment, such as terrain stealth, are unaffected)</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SPELL_REVIVE</Tag>
