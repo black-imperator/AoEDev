@@ -6936,7 +6936,7 @@
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
 				<iYieldChange>0</iYieldChange>
-				<iYieldChange>0</iYieldChange>
+				<iYieldChange>3</iYieldChange>
 			</YieldChanges>
 			<BonusTypeStructs>
 				<BonusTypeStruct>
@@ -6948,7 +6948,7 @@
 					<YieldChanges>
 						<iYieldChange>0</iYieldChange>
 						<iYieldChange>0</iYieldChange>
-						<iYieldChange>3</iYieldChange>
+						<iYieldChange>0</iYieldChange>
 					</YieldChanges>
 				</BonusTypeStruct>
 				<BonusTypeStruct>
@@ -7035,6 +7035,18 @@
 						<iYieldChange>0</iYieldChange>
 					</YieldChanges>
 				</BonusTypeStruct>
+				<BonusTypeStruct>
+					<BonusType>BONUS_WHALE</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
 			</BonusTypeStructs>
 			<TechYieldChanges>
 				<TechYieldChange>
@@ -7054,7 +7066,6 @@
 					</TechYields>
 				</TechYieldChange>
 			</TechYieldChanges>
-			<BonusConvert>BONUS_ASH</BonusConvert>
 		</ImprovementInfo>
 		<ImprovementInfo><!-- D'teshi Catacombs -->
 			<Type>IMPROVEMENT_DTESH_CATACOMBS</Type>

@@ -58580,7 +58580,7 @@
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 			<HotKey/>
 			<FreePromotions>
-					<FreePromotion>
+				<FreePromotion>
 					<PromotionType>PROMOTION_DEMON</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
@@ -58596,7 +58596,7 @@
 					<PromotionType>PROMOTION_HERO</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
-			<FreePromotion>
+				<FreePromotion>
 					<PromotionType>PROMOTION_ENTROPY1</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
@@ -58618,6 +58618,10 @@
 				</FreePromotion>
 				<FreePromotion>
 					<PromotionType>PROMOTION_BODY3</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MIMIC_ABILITY</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 				<FreePromotion>
