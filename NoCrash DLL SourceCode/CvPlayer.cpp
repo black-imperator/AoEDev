@@ -11842,7 +11842,30 @@ bool CvPlayer::isRevealBonus(int iI)
 bool CvPlayer::isNoBonus(int iI) const
 {
 	if (iI < 0 || iI > GC.getNumBonusInfos()) return false;
-	return (m_paiNoBonus[iI]>0);
+	if (m_paiNoBonus[iI]>0) return true;
+/*************************************************************************************************/
+/**	Overcouncil Bonus Ban					08/24/26									 Fix #420	**/
+/**		m_paiNoBonus now only carries the permanent trait granted bans. Council bans live on		**/
+/**		the vote source and are resolved against live membership here, so they lapse when a		**/
+/**		player leaves the council, exactly like isSlaveTrade or isSmugglingRing.					**/
+/*************************************************************************************************/
+	if (GC.getGameINLINE().isAnyNoBonus())
+	{
+		for (int iJ = 0; iJ < GC.getNumVoteSourceInfos(); iJ++)
+		{
+			if (GC.getGameINLINE().isNoBonus((VoteSourceTypes)iJ, (BonusTypes)iI))
+			{
+				if (isFullMember((VoteSourceTypes)iJ))
+				{
+					return true;
+				}
+			}
+		}
+	}
+/*************************************************************************************************/
+/**	Overcouncil Bonus Ban					END													**/
+/*************************************************************************************************/
+	return false;
 }
 
 int CvPlayer::getFreeBonus(int iI) const
@@ -21645,6 +21668,37 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(GC.getNumFlagInfos(), m_pabPlayerFlags);
 	// DynTraits Start
 
+/*************************************************************************************************/
+/**	Overcouncil Bonus Ban					08/24/26									 Fix #420	**/
+/**		Old saves baked council bans into m_paiNoBonus, where nothing could ever remove them.	**/
+/**		For every bonus a resolution can ban, drop back to the trait granted count, which is		**/
+/**		the only permanent contributor. CvGame::read rebuilds the council side.					**/
+/*************************************************************************************************/
+	if (uiFlag < 2)
+	{
+		for (int iVote = 0; iVote < GC.getNumVoteInfos(); iVote++)
+		{
+			int iBonus = GC.getVoteInfo((VoteTypes)iVote).getNoBonus();
+			if (iBonus != NO_BONUS)
+			{
+				int iTraitCount = 0;
+				for (int iTrait = 0; iTrait < GC.getNumTraitInfos(); iTrait++)
+				{
+					if (hasTrait((TraitTypes)iTrait))
+					{
+						if (GC.getTraitInfo((TraitTypes)iTrait).isNoBonus(iBonus))
+						{
+							iTraitCount++;
+						}
+					}
+				}
+				m_paiNoBonus[iBonus] = iTraitCount;
+			}
+		}
+	}
+/*************************************************************************************************/
+/**	Overcouncil Bonus Ban					END													**/
+/*************************************************************************************************/
 }
 
 //
@@ -21655,7 +21709,7 @@ void CvPlayer::write(FDataStreamBase* pStream)
 {
 	int iI;
 
-	uint uiFlag = 1;
+	uint uiFlag = 2;	// 2: m_paiNoBonus no longer holds council bans (Fix #420)
 	pStream->Write(uiFlag);		// flag for expansion
 
 	pStream->Write(m_iStartingX);

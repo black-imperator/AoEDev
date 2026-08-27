@@ -625,8 +625,18 @@ public:
 	void setEventTriggered(EventTriggerTypes eTrigger, bool bNewValue);
 	bool isGamblingRing(VoteSourceTypes eIndex) const;
 	void setGamblingRing(VoteSourceTypes eIndex, bool bNewValue);
-	bool isNoBonus(BonusTypes eIndex) const;
-	void setNoBonus(BonusTypes eIndex, bool bNewValue);
+/*************************************************************************************************/
+/**	Overcouncil Bonus Ban					08/24/26									 Fix #420	**/
+/**		Council bonus bans are stored per vote source, like the other council decrees,			**/
+/**		so that they lapse for a player who leaves the council.									**/
+/*************************************************************************************************/
+	bool isNoBonus(VoteSourceTypes eVoteSource, BonusTypes eIndex) const;
+	void setNoBonus(VoteSourceTypes eVoteSource, BonusTypes eIndex, bool bNewValue);
+	bool isAnyNoBonus() const;
+	void updateAnyNoBonus();
+/*************************************************************************************************/
+/**	Overcouncil Bonus Ban					END													**/
+/*************************************************************************************************/
 	bool isNoOutsideTechTrades(VoteSourceTypes eIndex) const;
 	void setNoOutsideTechTrades(VoteSourceTypes eIndex, bool bNewValue);
 	bool isSlaveTrade(VoteSourceTypes eIndex) const;
@@ -763,7 +773,16 @@ protected:
 	int m_iScenarioCounter;
 	bool* m_pabEventTriggered;
 	bool* m_pabGamblingRing;
-	bool* m_pabNoBonus;
+/*************************************************************************************************/
+/**	Overcouncil Bonus Ban					08/24/26									 Fix #420	**/
+/**		Was bool* m_pabNoBonus, indexed by bonus only. Now [vote source][bonus], with a			**/
+/**		cached "is anything banned at all" flag to keep CvPlayer::isNoBonus cheap.				**/
+/*************************************************************************************************/
+	bool** m_ppabNoBonus;
+	bool m_bAnyNoBonus;
+/*************************************************************************************************/
+/**	Overcouncil Bonus Ban					END													**/
+/*************************************************************************************************/
 	bool* m_pabNoOutsideTechTrades;
 	bool* m_pabSlaveTrade;
 	bool* m_pabSmugglingRing;
