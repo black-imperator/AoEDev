@@ -4386,6 +4386,19 @@ PlayerTypes CvPlot::calculateCulturalOwner() const
 
 					if (pLoopCity != NULL)
 					{
+/*************************************************************************************************/
+/**	Teammate tile assignment fix														  START	**/
+/**	The scan above walks a fixed CITY_PLOTS_RADIUS (3) fat cross, but a city's own working	**/
+/**	radius is 1, 2 or 3 (Settlements, normal cities, Sprawling/iPlotRadius buildings).		**/
+/**	Only a city that can actually work this plot may claim it from the culture winner.		**/
+/*************************************************************************************************/
+						if (pLoopCity->getCityPlotIndex(this) == -1)
+						{
+							continue;
+						}
+/*************************************************************************************************/
+/**	Teammate tile assignment fix														    END	**/
+/*************************************************************************************************/
 						if (pLoopCity->getTeam() == GET_PLAYER(eBestPlayer).getTeam() || GET_TEAM(GET_PLAYER(eBestPlayer).getTeam()).isVassal(pLoopCity->getTeam()))
 						{
 							if (getCulture(pLoopCity->getOwnerINLINE()) > 0)
@@ -4396,7 +4409,16 @@ PlayerTypes CvPlot::calculateCulturalOwner() const
 
 									if (pLoopCity->getTeam() == GET_PLAYER(eBestPlayer).getTeam())
 									{
-										iPriority += 5; // priority ranges from 0 to 4 -> give priority to Masters of a Vassal
+/*************************************************************************************************/
+/**	Teammate tile assignment fix														  START	**/
+/**	aiCityPlotPriority was extended to 37 entries (ring 3 = 5/6/7), so the old +5 offset		**/
+/**	no longer kept every Master ahead of every same-team city.								**/
+/*************************************************************************************************/
+//										iPriority += 5; // priority ranges from 0 to 4 -> give priority to Masters of a Vassal
+										iPriority += 8; // priority ranges from 0 to 7 with CITY_PLOTS_RADIUS 3 -> give priority to Masters of a Vassal
+/*************************************************************************************************/
+/**	Teammate tile assignment fix														    END	**/
+/*************************************************************************************************/
 									}
 
 									if ((iPriority < iBestPriority) || ((iPriority == iBestPriority) && (pLoopCity->getOwnerINLINE() == eBestPlayer)))
