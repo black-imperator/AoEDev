@@ -14748,8 +14748,14 @@ def spellDemonLairSpawn(caster):
 	pPlot = caster.plot()
 	pPlayer = gc.getPlayer(caster.getOwner())
 	if pPlayer.isBarbarian():
-		pPlot.setImprovementType(getInfoType("IMPROVEMENT_HELLFIRE"))
-		caster.setHasPromotion(getInfoType('PROMOTION_LEASH_1'),True)
+		iImprovement = pPlot.getImprovementType()
+		bValid = True
+		if iImprovement != -1 :
+			if gc.getImprovementInfo(iImprovement).isPermanent():
+				bValid = False
+		if bValid :
+			pPlot.setImprovementType(getInfoType("IMPROVEMENT_HELLFIRE"))
+			caster.setHasPromotion(getInfoType('PROMOTION_LEASH_1'),True)
 
 def helpTakeEquipment(argsList):
 	eSpell, pCaster = argsList
