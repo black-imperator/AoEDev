@@ -2441,6 +2441,8 @@ def reqLichdom(caster):
 		#return False
 	if caster.isHasPromotion(getInfoType('PROMOTION_PUPPET')):
 		return False
+	if caster.isHasPromotion(getInfoType('PROMOTION_DRAGON')):
+		return False
 	if isWorldUnitClass(caster.getUnitClassType()):
 		return False
 	#pyPlayer = PyPlayer(caster.getOwner()) TODO REMOVE

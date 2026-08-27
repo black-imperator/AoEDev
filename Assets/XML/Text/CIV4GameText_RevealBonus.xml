@@ -11906,6 +11906,30 @@ So that the world may be reborn anew.</Spanish>
 		<Spanish>Reality Break</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_DRACOLICH</Tag>
+		<English>Dracolich</English>
+		<French>Dracolich</French>
+		<German>Dracolich</German>
+		<Italian>Dracolich</Italian>
+		<Spanish>Dracolich</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_DRACOLICH_PEDIA</Tag>
+		<English>Dracolich</English>
+		<French>Dracolich</French>
+		<German>Dracolich</German>
+		<Italian>Dracolich</Italian>
+		<Spanish>Dracolich</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_DRACOLICH_CREATION</Tag>
+		<English>Dracolich</English>
+		<French>Dracolich</French>
+		<German>Dracolich</German>
+		<Italian>Dracolich</Italian>
+		<Spanish>Dracolich</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_DRAGON_TEARS</Tag>
 		<English>The Dragon Tear Fountain</English>
 		<French>The Dragon Tear Fountain</French>
