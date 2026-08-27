@@ -11559,12 +11559,24 @@ void CvGame::createBarbarianUnits()
 		return;
 
 	// Random spawn can't be on 1-tile island I guess, nor in deep ocean. Weighting is also weird for peaks, so don't spawn on those
-	iFlags = RANDPLOT_ORC_ALLY | RANDPLOT_ADJACENT_LAND | RANDPLOT_NOT_PEAK | RANDPLOT_PASSIBLE | RANDPLOT_UNOCCUPIED;
+	iFlags = RANDPLOT_ORC_ALLY | RANDPLOT_ADJACENT_LAND | RANDPLOT_NOT_PEAK | RANDPLOT_PASSIBLE | RANDPLOT_UNOCCUPIED | RANDPLOT_NOT_ENCLOSED_WATER;
 	if (isOption(GAMEOPTION_NO_VISIBLE_BARBARIANS))
 		iFlags |= RANDPLOT_NOT_VISIBLE_TO_CIV;
 
 	for (pLoopArea = GC.getMapINLINE().firstArea(&iLoop); pLoopArea != NULL; pLoopArea = GC.getMapINLINE().nextArea(&iLoop))
 	{
+/*************************************************************************************************/
+/**	LakeBarbFix								2026									 Issue #161 **/
+/**																								**/
+/**		Barbarian navies have nowhere to go in a lake, so lakes do not count					**/
+/**		towards naval barbarian density either													**/
+/*************************************************************************************************/
+		if (pLoopArea->isWater() && pLoopArea->isLake())
+			continue;
+/*************************************************************************************************/
+/**	LakeBarbFix								END													**/
+/*************************************************************************************************/
+
 		// Spawn at most 10% of the actual missing amount, gamespeed modulated. This prevents instant-replacement of killed animals when near target threshold
 		iTargetBarbs = calcTargetBarbs(pLoopArea, ORC_PLAYER);
 		iNeededBarbs = iTargetBarbs - pLoopArea->getUnitsPerPlayer(ORC_PLAYER);

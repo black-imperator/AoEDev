@@ -718,6 +718,33 @@ CvPlot* CvMap::syncRandPlot(int iFlags, int iArea, int iMinUnitDistance, int iTi
 		{
 			if (!(pTestPlot->isAdjacentToLand())) continue;
 		}
+/*************************************************************************************************/
+/**	LakeBarbFix								2026									 Issue #161 **/
+/**																								**/
+/**		Reject water plots a ship could never leave: one-tile lakes and dead ends				**/
+/*************************************************************************************************/
+		if (iFlags & RANDPLOT_NOT_ENCLOSED_WATER)
+		{
+			if (pTestPlot->isWater())
+			{
+				int iAdjacentWater = 0;
+				for (int iDirection = 0; iDirection < NUM_DIRECTION_TYPES; iDirection++)
+				{
+					CvPlot* pAdjacentPlot = plotDirection(pTestPlot->getX_INLINE(), pTestPlot->getY_INLINE(), ((DirectionTypes)iDirection));
+
+					if (pAdjacentPlot != NULL && pAdjacentPlot->isWater() && pAdjacentPlot->getArea() == pTestPlot->getArea())
+					{
+						iAdjacentWater++;
+					}
+				}
+
+				// 0 means a one-tile lake, 1 means a dead-end pocket. Nothing put there can ever move.
+				if (iAdjacentWater < 2) continue;
+			}
+		}
+/*************************************************************************************************/
+/**	LakeBarbFix								END													**/
+/*************************************************************************************************/
 		if (iFlags & RANDPLOT_PASSIBLE)
 		{
 			if (pTestPlot->isImpassable()) continue;
