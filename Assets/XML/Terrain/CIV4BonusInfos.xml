@@ -2560,6 +2560,7 @@
 				<iRandApp4>0</iRandApp4>
 			</Rands>
 			<DamageType>DAMAGE_LIGHTNING</DamageType>
+			<bDiscoverable>1</bDiscoverable>
 		</BonusInfo>
 		<BonusInfo>		<!-- Mana Body -->
 			<Type>BONUS_MANA_BODY</Type>
