@@ -3941,11 +3941,26 @@ void CvUnit::updateCombat(bool bQuick)
 /*************************************************************************************************/
 /**	Tweak									END													**/
 /*************************************************************************************************/
+/*************************************************************************************************/
+/**	Bugfix									08/27/26											**/
+/**																									**/
+/**			Attacking a defender that withdraws must still cost the attacker movement		**/
+/*************************************************************************************************/
+				bool bAdvance = (pPlot->getNumVisibleEnemyDefenders(this) == 0) && canAdvance(pPlot, 0);
+
+				if (!bAdvance)
+				{
+					changeMoves(std::max(GC.getMOVE_DENOMINATOR(), pPlot->movementCost(this, plot())));
+				}
+
 				checkRemoveSelectionAfterAttack();
 				if (pPlot->getNumVisibleEnemyDefenders(this) == 0)
 				{
-					getGroup()->groupMove(pPlot, true, ((canAdvance(pPlot, 0)) ? this : NULL));
+					getGroup()->groupMove(pPlot, true, ((bAdvance) ? this : NULL));
 				}
+/*************************************************************************************************/
+/**	Bugfix									END													**/
+/*************************************************************************************************/
 				getGroup()->clearMissionQueue();
 /*************************************************************************************************/
 /**	Xienwolf Tweak							02/14/09											**/
