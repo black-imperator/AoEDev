@@ -307,6 +307,9 @@ def cityAdvise(pCity, iPlayer):
 				popupInfo = CyPopupInfo()
 				popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_PYTHON)
 				popupInfo.setData1(pCity.getID())
+				# Issue #334: carry the destination civ with the popup so the accept
+				# handler transfers the city to the civ this text actually named.
+				popupInfo.setData2(eLiberationPlayer)
 				popupInfo.setText(localText.getText("TXT_KEY_POPUP_LIBERATION_DEMAND", (pCity.getNameKey(), gc.getPlayer(eLiberationPlayer).getCivilizationDescriptionKey(), gc.getPlayer(eLiberationPlayer).getNameKey())))
 				popupInfo.setOnClickedPythonCallback("liberateOnClickedCallback")
 				popupInfo.setOnFocusPythonCallback("cityWarningOnFocusCallback")
