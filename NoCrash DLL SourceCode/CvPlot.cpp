@@ -1491,10 +1491,24 @@ void CvPlot::verifyUnitValidPlot()
 		// Check to catch instance where python does something silly to a transport unit without touching its cargo
 		if (pLoopUnit->isCargo())
 		{
-			if (pLoopUnit->getTransportUnit()->plot() != this && !pLoopUnit->jumpToNearestValidPlot())
+			CvPlot* pTransportPlot = pLoopUnit->getTransportUnit()->plot();
+
+			if (pTransportPlot != NULL && pTransportPlot != this)
 			{
-				it = aUnits.erase(it);
-				continue;
+				// A transport standing elsewhere does NOT have to mean a broken link. It is also the normal
+				// transient state inside CvUnit::setXY: the transport relocates itself, runs city capture and
+				// plot ownership code (which re-enters here), and only drags its cargo along at the very end.
+				// So follow the transport rather than jumping to an arbitrary friendly city - a jump would run
+				// the cargo's own setXY with the transport not at the destination, which severs m_transportUnit.
+				if (pTransportPlot->isValidDomainForLocation(*pLoopUnit))
+				{
+					pLoopUnit->setXY(pTransportPlot->getX_INLINE(), pTransportPlot->getY_INLINE(), true, false, false);
+				}
+				else if (!pLoopUnit->jumpToNearestValidPlot())
+				{
+					it = aUnits.erase(it);
+					continue;
+				}
 			}
 
 			++it;
