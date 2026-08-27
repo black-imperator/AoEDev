@@ -349,8 +349,14 @@ class CustomFunctions:
 					elif iBonus == self.Resources["Marble"]:
 						pPlot.setBonusType(self.Resources["Sheut"])
 					elif iBonus in (self.Resources["Corn"], self.Resources["Rice"], self.Resources["Wheat"]):
-						pPlot.setBonusType(-1)
-						pPlot.setImprovementType(self.Improvements["Snake Pillar"])
+						# Don't evict a permanent improvement (lairs, wells, unique features).
+						# Lairs with iBasePlotCounterModify hellify their own plot, so without this
+						# guard a Barrow placed on a grain resource plants a Snake Pillar over itself.
+						# Mirrors the rule CvPlot::canHaveImprovement already enforces in the DLL.
+						iCurrentImprovement = pPlot.getImprovementType()
+						if iCurrentImprovement == -1 or not gc.getImprovementInfo(iCurrentImprovement).isPermanent():
+							pPlot.setBonusType(-1)
+							pPlot.setImprovementType(self.Improvements["Snake Pillar"])
 				elif iPlotCounter <= iPlotTreshold:
 					if iImprovement == self.Improvements["Snake Pillar"]:
 						pPlot.setImprovementType(-1)
