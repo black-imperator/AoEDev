@@ -1522,11 +1522,11 @@ Workshops are the only improvement able to properly "exploit" the Obsidian resou
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_PATH_OF_LUGUS</Tag>
-		<English>Build a [LINK=ROUT_PATH_OF_LUGUS]Path of Lugus[\LINK],</English>
-		<French>Build a [LINK=ROUT_PATH_OF_LUGUS]Path of Lugus[\LINK],</French>
-		<German>Build a [LINK=ROUT_PATH_OF_LUGUS]Path of Lugus[\LINK],</German>
-		<Italian>Build a [LINK=ROUT_PATH_OF_LUGUS]Path of Lugus[\LINK],</Italian>
-		<Spanish>Build a [LINK=ROUT_PATH_OF_LUGUS]Path of Lugus[\LINK],,</Spanish>
+		<English>Build a [LINK=ROUTE_PATH_OF_LUGUS]Path of Lugus[\LINK],</English>
+		<French>Build a [LINK=ROUTE_PATH_OF_LUGUS]Path of Lugus[\LINK],</French>
+		<German>Build a [LINK=ROUTE_PATH_OF_LUGUS]Path of Lugus[\LINK],</German>
+		<Italian>Build a [LINK=ROUTE_PATH_OF_LUGUS]Path of Lugus[\LINK],</Italian>
+		<Spanish>Build a [LINK=ROUTE_PATH_OF_LUGUS]Path of Lugus[\LINK],</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_AERON_VAULTGATE</Tag>
