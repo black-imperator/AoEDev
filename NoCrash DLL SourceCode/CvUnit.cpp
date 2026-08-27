@@ -22055,7 +22055,15 @@ void CvUnit::setHasPromotion(PromotionTypes eIndex, bool bNewValue, bool bSupres
 		}
 		else
 		{
-			if (getExtraArtDefineTag() == kPromotion.getExtraArtType())
+/*************************************************************************************************/
+/**	Bugfix (Issue #240)						08/27/26											**/
+/**		The extra model added by a promotion was never released when the promotion was lost.		**/
+/**		getExtraArtDefineTag() and getExtraArtType() both return const TCHAR*, so comparing		**/
+/**		them directly compared ADDRESSES (unit member vs promotion member) and was always		**/
+/**		false.  Hold the promotion's tag in a CvString so each test is a value comparison.		**/
+/*************************************************************************************************/
+			CvString cPromoArt = kPromotion.getExtraArtType();
+			if (cPromoArt == getExtraArtDefineTag())
 			{
 				setExtraGroupSize(getExtraGroupSize() - 1);
 				if (getExtraArtDefineTag3() != cDefault)
@@ -22073,7 +22081,7 @@ void CvUnit::setHasPromotion(PromotionTypes eIndex, bool bNewValue, bool bSupres
 					setExtraArtDefineTag(cDefault);
 				}
 			}
-			else if (getExtraArtDefineTag2() == kPromotion.getExtraArtType())
+			else if (cPromoArt == getExtraArtDefineTag2())
 
 			{
 				setExtraGroupSize(getExtraGroupSize() - 1);
@@ -22088,12 +22096,15 @@ void CvUnit::setHasPromotion(PromotionTypes eIndex, bool bNewValue, bool bSupres
 				}
 
 			}
-			else if (getExtraArtDefineTag3() == kPromotion.getExtraArtType())
+			else if (cPromoArt == getExtraArtDefineTag3())
 			{
 				setExtraGroupSize(getExtraGroupSize() - 1);
-				
-				setExtraArtDefineTag2(cDefault);
+
+				setExtraArtDefineTag3(cDefault);
 			}
+/*************************************************************************************************/
+/**	Bugfix									END													**/
+/*************************************************************************************************/
 			reloadEntity();
 		}
 	}
