@@ -14905,7 +14905,6 @@ void CvGameTextMgr::parseSpellHelp(CvWStringBuffer &szBuffer, SpellTypes eSpell,
 	{
 		if (!CvWString(GC.getSpellInfo(eSpell).getPythonHelp()).empty())
 		{
-			CvWString szHelp;
 			CLLNode<IDInfo>* pSelectedUnitNode;
 			CvUnit* pSelectedUnit;
 			pSelectedUnitNode = gDLL->getInterfaceIFace()->headSelectionListNode();
@@ -14914,8 +14913,9 @@ void CvGameTextMgr::parseSpellHelp(CvWStringBuffer &szBuffer, SpellTypes eSpell,
 			{
 				pSelectedUnit = ::getUnit(pSelectedUnitNode->m_data);
 
-				if (pSelectedUnit->canCast(eSpell, false))
+				if (pSelectedUnit->canCast(eSpell, true))
 				{
+					CvWString szHelp;
 					CyUnit* pyCaster;
 					CyArgsList argsList;
 					argsList.add(eSpell);
