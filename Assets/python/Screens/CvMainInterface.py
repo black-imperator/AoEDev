@@ -2673,7 +2673,13 @@ class CvMainInterface:
 				i = 0
 				for i in xrange( g_NumBuildingClassInfos ):
 					if (isLimitedWonderClass(i)):
-						eLoopBuilding = gc.getCivilizationInfo(pHeadSelectedCity.getCivilizationType()).getCivilizationBuildings(i)
+						# Trait-granted building classes (CIV4TraitInfos <ExtraBuildingClasses>) are never
+						# listed in any civilization's <Buildings> block, and a bUnique class gets no
+						# per-civ default, so getCivilizationBuildings() answers -1 for them.  Ask the
+						# owning player first, then fall back to the city's own civilization.
+						eLoopBuilding = gc.getPlayer(pHeadSelectedCity.getOwner()).getPlayerBuilding(i)
+						if (eLoopBuilding == -1):
+							eLoopBuilding = gc.getCivilizationInfo(pHeadSelectedCity.getCivilizationType()).getCivilizationBuildings(i)
 
 						# UI: a city that is already a government center cannot build a second one
 						# (Forbidden Palace / Winter Palace) - don't offer the button in such cities.
