@@ -6882,6 +6882,11 @@
 			<bAbility>1</bAbility>
 			<bSacrificeCaster>1</bSacrificeCaster>
 			<iCost>-10</iCost>
+			<AdditionalCostFlag>FLAG_SLAVE_MARKET</AdditionalCostFlag>
+			<iAdditionalCostFlagChange>5</iAdditionalCostFlagChange>
+			<Flag>FLAG_SLAVE_MARKET</Flag>
+			<iFlagChange>-1</iFlagChange>
+			<bGlobalFlagChange>1</bGlobalFlagChange>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_ILL_BELL</Sound>
 			<bGraphicalOnly>1</bGraphicalOnly>
@@ -10353,15 +10358,22 @@
 			<bInCityOnly>1</bInCityOnly>
 			<bHasCasted>1</bHasCasted>
 			<bAbility>1</bAbility>
+			<bAllowAI>1</bAllowAI>
+			<iAIWeight>50</iAIWeight>
 			<iCost>40</iCost>
+			<AdditionalCostFlag>FLAG_SLAVE_MARKET</AdditionalCostFlag>
+			<iAdditionalCostFlagChange>5</iAdditionalCostFlagChange>
+			<Flag>FLAG_SLAVE_MARKET</Flag>
+			<iFlagChange>1</iFlagChange>
+			<bGlobalFlagChange>1</bGlobalFlagChange>
 			<PyResult>spellSlaveTradeBuy(pCaster)</PyResult>
-			<PyRequirement>reqSlaveTradeBuy(pCaster)</PyRequirement>
+			<!-- <PyRequirement>reqSlaveTradeBuy(pCaster)</PyRequirement> -->
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_ILL_BELL</Sound>
 			<bGraphicalOnly>1</bGraphicalOnly>
 			<Button>Art/Interface/Buttons/Units/Slave.dds</Button>
 		</SpellInfo>
-		<SpellInfo>			<!-- Mekara Slave Trade (Buy) -->  <!-- even slavers are squeemish about selling to Mekara -->
+		<!--<SpellInfo>			<!{1}** Mekara Slave Trade (Buy) **{1}>  <!{1}** even slavers are squeemish about selling to Mekara **{1}>
 			<Type>SPELL_SLAVE_TRADE_BUY_MEKARA</Type>
 			<Description>TXT_KEY_SPELL_SLAVE_TRADE_BUY_MEKARA</Description>
 			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
@@ -10378,7 +10390,7 @@
 			<Sound>AS3D_ILL_BELL</Sound>
 			<bGraphicalOnly>1</bGraphicalOnly>
 			<Button>Art/Interface/Buttons/Units/Slave.dds</Button>
-		</SpellInfo>
+		</SpellInfo>-->
 		<SpellInfo>			<!-- Slave Trade (Sell) -->
 			<Type>SPELL_SLAVE_TRADE_SELL</Type>
 			<Description>TXT_KEY_SPELL_SLAVE_TRADE_SELL</Description>
@@ -10388,7 +10400,14 @@
 			<bHasCasted>1</bHasCasted>
 			<bAbility>1</bAbility>
 			<bSacrificeCaster>1</bSacrificeCaster>
+			<bAllowAI>1</bAllowAI>
+			<iAIWeight>10</iAIWeight>
 			<iCost>-10</iCost>
+			<AdditionalCostFlag>FLAG_SLAVE_MARKET</AdditionalCostFlag>
+			<iAdditionalCostFlagChange>5</iAdditionalCostFlagChange>
+			<Flag>FLAG_SLAVE_MARKET</Flag>
+			<iFlagChange>-1</iFlagChange>
+			<bGlobalFlagChange>1</bGlobalFlagChange>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_ILL_BELL</Sound>
 			<bGraphicalOnly>1</bGraphicalOnly>

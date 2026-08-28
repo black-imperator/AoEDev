@@ -383,5 +383,9 @@
 			<Type>FLAG_ELDER_DRAGON_FIRST</Type>
 			<Description>TXT_KEY_FLAG_ELDER_DRAGON_FIRST</Description>
 		</FlagInfo>
+		<FlagInfo>
+			<Type>FLAG_SLAVE_MARKET</Type>
+			<Description>TXT_KEY_FLAG_SLAVE_TRADE</Description>
+		</FlagInfo>
 	</FlagInfos>
 </Civ4FlagInfos>

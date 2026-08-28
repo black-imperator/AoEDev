@@ -14303,6 +14303,14 @@ Your unit is even more surprised to realise there are two figures standing besid
 		<Spanish>[ICON_BULLET]Unit cannot attack.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_FLAG_SLAVE_TRADE</Tag>
+		<English>The Slave Trade</English>
+		<French>The Slave Trade</French>
+		<German>The Slave Trade</German>
+		<Italian>The Slave Trade</Italian>
+		<Spanish>The Slave Trade</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_TRAIT_POSSESSED</Tag>
 		<English>Possessed</English>
 		<French>Possessed</French>
