@@ -818,7 +818,10 @@ def effectRepublic(argsList):
 		CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText(lRepublicTraitsText[iElectionIndex], ()),'',3,'Art/Interface/Buttons/Civics/Republic.dds',git("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
 	else: # Alt Rewards
 		if iElectionIndex == 0: # Hawk wins
-			pPlayer.initUnit(git('UNIT_COMMANDER'), pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+			iRewardUnit = pPlayer.getPlayerUnit(git('UNITCLASS_COMMANDER'))
+			if iRewardUnit == -1:
+				iRewardUnit = git('UNIT_COMMANDER')
+			pPlayer.initUnit(iRewardUnit, pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 		if iElectionIndex == 1: # Dove wins
 			for iLoopPlayer in range(gc.getMAX_CIV_PLAYERS()):
 				loopPlayer = gc.getPlayer(iLoopPlayer)
@@ -827,7 +830,10 @@ def effectRepublic(argsList):
 						loopPlayer.AI_changeAttitudeExtra(iPlayer, 3)
 						pPlayer.AI_changeAttitudeExtra(iLoopPlayer, 3)
 		if iElectionIndex == 2: # Landowner wins
-			pPlayer.initUnit(git('UNIT_MERCHANT'), pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+			iRewardUnit = pPlayer.getPlayerUnit(git('UNITCLASS_MERCHANT'))
+			if iRewardUnit == -1:
+				iRewardUnit = git('UNIT_MERCHANT')
+			pPlayer.initUnit(iRewardUnit, pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 		if iElectionIndex == 3: # Pesants win
 			(loopCity, iter) = pPlayer.firstCity(False)
 			while(loopCity):
@@ -835,13 +841,22 @@ def effectRepublic(argsList):
 				loopCity.changeEspionageHealthCounter(-5)
 				(loopCity, iter) = pPlayer.nextCity(iter, False)
 		if iElectionIndex == 4: # Church wins
-			pPlayer.initUnit(git('UNIT_PROPHET'), pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+			iRewardUnit = pPlayer.getPlayerUnit(git('UNITCLASS_PROPHET'))
+			if iRewardUnit == -1:
+				iRewardUnit = git('UNIT_PROPHET')
+			pPlayer.initUnit(iRewardUnit, pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 		if iElectionIndex == 5: # State wins
 			pPlayer.changeGoldenAgeTurns(CyGame().goldenAgeLength())
 		if iElectionIndex == 6: # Labor wins
-			pPlayer.initUnit(git('UNIT_ENGINEER'), pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+			iRewardUnit = pPlayer.getPlayerUnit(git('UNITCLASS_ENGINEER'))
+			if iRewardUnit == -1:
+				iRewardUnit = git('UNIT_ENGINEER')
+			pPlayer.initUnit(iRewardUnit, pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 		if iElectionIndex == 7: # Academia wins
-			pPlayer.initUnit(git('UNIT_SCIENTIST'), pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+			iRewardUnit = pPlayer.getPlayerUnit(git('UNITCLASS_SCIENTIST'))
+			if iRewardUnit == -1:
+				iRewardUnit = git('UNIT_SCIENTIST')
+			pPlayer.initUnit(iRewardUnit, pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 		CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText(lRepublicAltText[iElectionIndex], ()),'',3,'Art/Interface/Buttons/Civics/Republic.dds',git("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
 
 def passToModNetMessage(argsList):
