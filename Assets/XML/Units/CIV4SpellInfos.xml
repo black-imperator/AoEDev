@@ -10301,6 +10301,7 @@
 			<iDamage>40</iDamage>
 			<iDamageLimit>95</iDamageLimit>
 			<DamageType>DAMAGE_PHYSICAL</DamageType>
+			<PyRequirement>reqRealityBreak(pCaster)</PyRequirement>
 			<PyResult>spellRealityBreak(pCaster)</PyResult>
 			<Effect>EFFECT_MAELSTROM</Effect>
 			<Sound>AS3D_SPELL_DESTROY_UNDEAD</Sound>

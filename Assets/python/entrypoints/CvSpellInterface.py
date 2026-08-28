@@ -11448,7 +11448,22 @@ def reqCorgayleChanneling2(pCaster):
 		return False
 	return True
 #Seems fine
-
+def reqRealityBreak(caster):
+	pPlayer = gc.getPlayer(caster.getOwner())
+	iTeam = pPlayer.getTeam()
+	getPlot	= CyMap().plot
+	pPlot = caster.plot()
+	iRange = 1 + caster.getSpellExtraRange()
+	if pPlot.getImprovementType() == getInfoType('IMPROVEMENT_SEVEN_PINES'):
+		return False
+	for x, y in plotsInRange( caster.getX(), caster.getY(), iRange ):
+		pPlot = getPlot(x, y)
+		if not pPlot.isNone():
+			for i in xrange(pPlot.getNumUnits()):
+				pUnit = pPlot.getUnit(i)
+				if pUnit.isHasPromotion(getInfoType('PROMOTION_AVATAR')) or pUnit.isHasPromotion(getInfoType('PROMOTION_DRAGON')):
+					return True
+	return False
 def spellRealityBreak(caster):
 	pPlot = caster.plot()
 	pCity = caster.plot().getPlotCity()
