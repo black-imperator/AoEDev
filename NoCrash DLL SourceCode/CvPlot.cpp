@@ -583,53 +583,53 @@ void CvPlot::doTurn()
 	doPlotEffect();
 	doCulture();
 
-	if (getImprovementType() != NO_IMPROVEMENT)
+	if (getImprovementType() != NO_IMPROVEMENT && getImprovementOwner() != NO_PLAYER)
 	{
-		if (GC.getImprovementInfo(getImprovementType()).getCultureControlStrength() > 0)
+		if (!GET_PLAYER((PlayerTypes)getImprovementOwner()).isAlive())
 		{
-			if (getImprovementOwner() != NO_PLAYER)
+			// Release the tile when its improvement owner is dead. This test used to
+			// sit underneath the getCultureControlStrength() > 0 check, so forts and
+			// unique features that project no culture control kept a dead civ as their
+			// improvement owner for ever - and CvPlot::updateCulture hands plot
+			// ownership straight to getImprovementOwner() for any fort.
+			if (GC.getImprovementInfo(getImprovementType()).getCultureControlStrength() > 0
+			 && !GC.getImprovementInfo(getImprovementType()).isUnique())
 			{
-				if (GET_PLAYER((PlayerTypes)getImprovementOwner()).isAlive())
-				{
-					PlayerTypes ePlayer = getImprovementOwner();
-					CvPlot* pLoopPlot;
-					int iPlotDistance;
-					int iRange = GC.getImprovementInfo(getImprovementType()).getCultureRange();
-					int iStrength = GC.getImprovementInfo(getImprovementType()).getCultureControlStrength();
-					int iCenterTileBonus = GC.getImprovementInfo(getImprovementType()).getCultureCenterBonus();
-					int iDX, iDY;
-					int iRate = GC.getDefineINT("CULTURAL_CONTROL_CONVERSION_FACTOR");
+				setImprovementType(NO_IMPROVEMENT);
+			}
+			else
+			{
+				setImprovementOwner(NO_PLAYER);
+			}
+		}
+		else if (GC.getImprovementInfo(getImprovementType()).getCultureControlStrength() > 0)
+		{
+			PlayerTypes ePlayer = getImprovementOwner();
+			CvPlot* pLoopPlot;
+			int iPlotDistance;
+			int iRange = GC.getImprovementInfo(getImprovementType()).getCultureRange();
+			int iStrength = GC.getImprovementInfo(getImprovementType()).getCultureControlStrength();
+			int iCenterTileBonus = GC.getImprovementInfo(getImprovementType()).getCultureCenterBonus();
+			int iDX, iDY;
+			int iRate = GC.getDefineINT("CULTURAL_CONTROL_CONVERSION_FACTOR");
 
-					for (iDX = -iRange; iDX <= iRange; iDX++)
-					{
-						for (iDY = -iRange; iDY <= iRange; iDY++)
-						{
-							// This will make it skip the 4 corner Plots
-							if ((iRange > 1) && (iDX == iRange || iDX == -iRange) && (iDY == iRange || iDY == -iRange))
-							{
-								continue;
-							}
-							pLoopPlot = plotXY(getX_INLINE(), getY_INLINE(), iDX, iDY);
-							if (pLoopPlot != NULL)
-							{
-								iPlotDistance = (plotDistance(getX(), getY(), pLoopPlot->getX(), pLoopPlot->getY()));
-								if (iStrength > 0)
-								{
-									pLoopPlot->changeCulture(ePlayer, (((iStrength + iCenterTileBonus) - iPlotDistance) * iRate), true);
-								}
-							}
-						}
-					}
-				}
-				else 
+			for (iDX = -iRange; iDX <= iRange; iDX++)
+			{
+				for (iDY = -iRange; iDY <= iRange; iDY++)
 				{
-					if (GC.getImprovementInfo(getImprovementType()).isUnique())
+					// This will make it skip the 4 corner Plots
+					if ((iRange > 1) && (iDX == iRange || iDX == -iRange) && (iDY == iRange || iDY == -iRange))
 					{
-						setImprovementOwner(NO_PLAYER);
+						continue;
 					}
-					else
+					pLoopPlot = plotXY(getX_INLINE(), getY_INLINE(), iDX, iDY);
+					if (pLoopPlot != NULL)
 					{
-						setImprovementType(NO_IMPROVEMENT);
+						iPlotDistance = (plotDistance(getX(), getY(), pLoopPlot->getX(), pLoopPlot->getY()));
+						if (iStrength > 0)
+						{
+							pLoopPlot->changeCulture(ePlayer, (((iStrength + iCenterTileBonus) - iPlotDistance) * iRate), true);
+						}
 					}
 				}
 			}
@@ -1206,8 +1206,12 @@ void CvPlot::updateCulture(bool bBumpUnits, bool bUpdatePlotGroups)
 
 	// Improvements will sometimes overwrite cultural border : Improvements Mods expanded by Ahwaric	21.09.09
 	// Original: setOwner(calculateCulturalOwner(), bBumpUnits, bUpdatePlotGroups);
+	// A dead improvement owner must not keep hold of the plot - fall through to the
+	// normal cultural computation rather than handing the tile to a civ that no
+	// longer exists.
 	if (getImprovementType() != NO_IMPROVEMENT
 	 && getImprovementOwner() != NO_PLAYER
+	 && GET_PLAYER((PlayerTypes)getImprovementOwner()).isAlive()
 	 && (GC.getImprovementInfo(getImprovementType()).isOutsideBorders() || (GC.getImprovementInfo(getImprovementType()).isFort())))
 	{
 		setOwner(getImprovementOwner(), bBumpUnits, bUpdatePlotGroups);
@@ -8696,7 +8700,12 @@ int CvPlot::countTotalCultureControl() const
 }
 PlayerTypes CvPlot::findHighestCultureControlPlayer() const
 {
-	if (getImprovementOwner() != NO_PLAYER && getImprovementType() != NO_IMPROVEMENT)
+	// The culture-control loops below only consider living players; this
+	// short-circuit must do the same, or a dead improvement owner is returned
+	// as the cultural owner of the plot.
+	if (getImprovementOwner() != NO_PLAYER
+	 && GET_PLAYER((PlayerTypes)getImprovementOwner()).isAlive()
+	 && getImprovementType() != NO_IMPROVEMENT)
 	{
 		if (GC.getImprovementInfo(getImprovementType()).isOutsideBorders())
 		{
