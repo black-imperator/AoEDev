@@ -14311,11 +14311,26 @@ bool CvUnit::canMoveAllTerrain() const
 {
 
 //FfH Flying: Added by Kael 07/30/2007
-	if (isFlying() || isWaterWalking())
+	if (isFlying())
 	{
 		return true;
 	}
 //FfH: End Add
+/*************************************************************************************************/
+/**	Bugfix (Issue #156)					08/28/26											**/
+/**		Water walking says nothing about a ship, which already floats - but it was the only		**/
+/**		thing standing between a DOMAIN_SEA unit and dry land, because canMoveAllTerrain()		**/
+/**		short-circuits the sea/land guard in canMoveInto().  AoE grants water walking			**/
+/**		automatically from the plot a unit stands on (Rinwell and others), so a galley			**/
+/**		sitting on a naval fort picked it up and sailed onto the continent.						**/
+/*************************************************************************************************/
+	if (isWaterWalking() && getDomainType() != DOMAIN_SEA)
+	{
+		return true;
+	}
+/*************************************************************************************************/
+/**	Bugfix								END													**/
+/*************************************************************************************************/
 
 	return m_pUnitInfo->isCanMoveAllTerrain();
 }
