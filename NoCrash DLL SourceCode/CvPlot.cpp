@@ -583,53 +583,53 @@ void CvPlot::doTurn()
 	doPlotEffect();
 	doCulture();
 
-	if (getImprovementType() != NO_IMPROVEMENT)
+	if (getImprovementType() != NO_IMPROVEMENT && getImprovementOwner() != NO_PLAYER)
 	{
-		if (GC.getImprovementInfo(getImprovementType()).getCultureControlStrength() > 0)
+		if (!GET_PLAYER((PlayerTypes)getImprovementOwner()).isAlive())
 		{
-			if (getImprovementOwner() != NO_PLAYER)
+			// Release the tile when its improvement owner is dead. This test used to
+			// sit underneath the getCultureControlStrength() > 0 check, so forts and
+			// unique features that project no culture control kept a dead civ as their
+			// improvement owner for ever - and CvPlot::updateCulture hands plot
+			// ownership straight to getImprovementOwner() for any fort.
+			if (GC.getImprovementInfo(getImprovementType()).getCultureControlStrength() > 0
+			 && !GC.getImprovementInfo(getImprovementType()).isUnique())
 			{
-				if (GET_PLAYER((PlayerTypes)getImprovementOwner()).isAlive())
-				{
-					PlayerTypes ePlayer = getImprovementOwner();
-					CvPlot* pLoopPlot;
-					int iPlotDistance;
-					int iRange = GC.getImprovementInfo(getImprovementType()).getCultureRange();
-					int iStrength = GC.getImprovementInfo(getImprovementType()).getCultureControlStrength();
-					int iCenterTileBonus = GC.getImprovementInfo(getImprovementType()).getCultureCenterBonus();
-					int iDX, iDY;
-					int iRate = GC.getDefineINT("CULTURAL_CONTROL_CONVERSION_FACTOR");
+				setImprovementType(NO_IMPROVEMENT);
+			}
+			else
+			{
+				setImprovementOwner(NO_PLAYER);
+			}
+		}
+		else if (GC.getImprovementInfo(getImprovementType()).getCultureControlStrength() > 0)
+		{
+			PlayerTypes ePlayer = getImprovementOwner();
+			CvPlot* pLoopPlot;
+			int iPlotDistance;
+			int iRange = GC.getImprovementInfo(getImprovementType()).getCultureRange();
+			int iStrength = GC.getImprovementInfo(getImprovementType()).getCultureControlStrength();
+			int iCenterTileBonus = GC.getImprovementInfo(getImprovementType()).getCultureCenterBonus();
+			int iDX, iDY;
+			int iRate = GC.getDefineINT("CULTURAL_CONTROL_CONVERSION_FACTOR");
 
-					for (iDX = -iRange; iDX <= iRange; iDX++)
-					{
-						for (iDY = -iRange; iDY <= iRange; iDY++)
-						{
-							// This will make it skip the 4 corner Plots
-							if ((iRange > 1) && (iDX == iRange || iDX == -iRange) && (iDY == iRange || iDY == -iRange))
-							{
-								continue;
-							}
-							pLoopPlot = plotXY(getX_INLINE(), getY_INLINE(), iDX, iDY);
-							if (pLoopPlot != NULL)
-							{
-								iPlotDistance = (plotDistance(getX(), getY(), pLoopPlot->getX(), pLoopPlot->getY()));
-								if (iStrength > 0)
-								{
-									pLoopPlot->changeCulture(ePlayer, (((iStrength + iCenterTileBonus) - iPlotDistance) * iRate), true);
-								}
-							}
-						}
-					}
-				}
-				else 
+			for (iDX = -iRange; iDX <= iRange; iDX++)
+			{
+				for (iDY = -iRange; iDY <= iRange; iDY++)
 				{
-					if (GC.getImprovementInfo(getImprovementType()).isUnique())
+					// This will make it skip the 4 corner Plots
+					if ((iRange > 1) && (iDX == iRange || iDX == -iRange) && (iDY == iRange || iDY == -iRange))
 					{
-						setImprovementOwner(NO_PLAYER);
+						continue;
 					}
-					else
+					pLoopPlot = plotXY(getX_INLINE(), getY_INLINE(), iDX, iDY);
+					if (pLoopPlot != NULL)
 					{
-						setImprovementType(NO_IMPROVEMENT);
+						iPlotDistance = (plotDistance(getX(), getY(), pLoopPlot->getX(), pLoopPlot->getY()));
+						if (iStrength > 0)
+						{
+							pLoopPlot->changeCulture(ePlayer, (((iStrength + iCenterTileBonus) - iPlotDistance) * iRate), true);
+						}
 					}
 				}
 			}
@@ -1035,7 +1035,11 @@ void CvPlot::doImprovementCityWorking()
 	int iSpeedMod = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getImprovementPercent();
 	int iDiscoverMod = std::max(-99, GET_PLAYER(getOwnerINLINE()).getDiscoverRandModifier());
 	int iSpreadMod = std::max(-99, GET_PLAYER(getOwnerINLINE()).getSpreadRandModifier());
-	int iOffset = GC.getGameINLINE().getMapRandNum(GC.getNumBonusInfos(), "Don't wanna weigh first bonuses differently");
+	/** Bonus discovery is gameplay, not map generation, so it must roll on the synced
+		Soren RNG. The map RNG is seeded once from the map seed and is deliberately never
+		reseeded on load, which made every discovery a fixed function of the map seed and
+		made "New Random Seed on Reload" a no-op for it. **/
+	int iOffset = GC.getGameINLINE().getSorenRandNum(GC.getNumBonusInfos(), "Don't wanna weigh first bonuses differently");
 
 	for (int iI = iOffset; iI < GC.getNumBonusInfos() + iOffset; ++iI)
 	{
@@ -1052,7 +1056,7 @@ void CvPlot::doImprovementCityWorking()
 		if (iChance > 0 && canHaveBonus((BonusTypes)iBonus))
 		{
 			iChance = iChance * iSpeedMod / (100 + iDiscoverMod);
-			if (GC.getGameINLINE().getMapRandNum(std::max(0, iChance), "Bonus Discovery") == 0)
+			if (GC.getGameINLINE().getSorenRandNum(std::max(0, iChance), "Bonus Discovery") == 0)
 			{
 				setBonusType((BonusTypes)iBonus);
 				bFound = true;
@@ -1067,7 +1071,7 @@ void CvPlot::doImprovementCityWorking()
 			continue;
 		}
 		iChance = iChance * iSpeedMod / (100 + iSpreadMod);
-		if (GC.getGameINLINE().getMapRandNum(std::max(0, iChance), "Bonus Spread") == 0)
+		if (GC.getGameINLINE().getSorenRandNum(std::max(0, iChance), "Bonus Spread") == 0)
 		{
 			setBonusType((BonusTypes)iBonus);
 			bFound = true;
@@ -1206,8 +1210,12 @@ void CvPlot::updateCulture(bool bBumpUnits, bool bUpdatePlotGroups)
 
 	// Improvements will sometimes overwrite cultural border : Improvements Mods expanded by Ahwaric	21.09.09
 	// Original: setOwner(calculateCulturalOwner(), bBumpUnits, bUpdatePlotGroups);
+	// A dead improvement owner must not keep hold of the plot - fall through to the
+	// normal cultural computation rather than handing the tile to a civ that no
+	// longer exists.
 	if (getImprovementType() != NO_IMPROVEMENT
 	 && getImprovementOwner() != NO_PLAYER
+	 && GET_PLAYER((PlayerTypes)getImprovementOwner()).isAlive()
 	 && (GC.getImprovementInfo(getImprovementType()).isOutsideBorders() || (GC.getImprovementInfo(getImprovementType()).isFort())))
 	{
 		setOwner(getImprovementOwner(), bBumpUnits, bUpdatePlotGroups);
@@ -4386,6 +4394,19 @@ PlayerTypes CvPlot::calculateCulturalOwner() const
 
 					if (pLoopCity != NULL)
 					{
+/*************************************************************************************************/
+/**	Teammate tile assignment fix														  START	**/
+/**	The scan above walks a fixed CITY_PLOTS_RADIUS (3) fat cross, but a city's own working	**/
+/**	radius is 1, 2 or 3 (Settlements, normal cities, Sprawling/iPlotRadius buildings).		**/
+/**	Only a city that can actually work this plot may claim it from the culture winner.		**/
+/*************************************************************************************************/
+						if (pLoopCity->getCityPlotIndex(this) == -1)
+						{
+							continue;
+						}
+/*************************************************************************************************/
+/**	Teammate tile assignment fix														    END	**/
+/*************************************************************************************************/
 						if (pLoopCity->getTeam() == GET_PLAYER(eBestPlayer).getTeam() || GET_TEAM(GET_PLAYER(eBestPlayer).getTeam()).isVassal(pLoopCity->getTeam()))
 						{
 							if (getCulture(pLoopCity->getOwnerINLINE()) > 0)
@@ -4396,7 +4417,16 @@ PlayerTypes CvPlot::calculateCulturalOwner() const
 
 									if (pLoopCity->getTeam() == GET_PLAYER(eBestPlayer).getTeam())
 									{
-										iPriority += 5; // priority ranges from 0 to 4 -> give priority to Masters of a Vassal
+/*************************************************************************************************/
+/**	Teammate tile assignment fix														  START	**/
+/**	aiCityPlotPriority was extended to 37 entries (ring 3 = 5/6/7), so the old +5 offset		**/
+/**	no longer kept every Master ahead of every same-team city.								**/
+/*************************************************************************************************/
+//										iPriority += 5; // priority ranges from 0 to 4 -> give priority to Masters of a Vassal
+										iPriority += 8; // priority ranges from 0 to 7 with CITY_PLOTS_RADIUS 3 -> give priority to Masters of a Vassal
+/*************************************************************************************************/
+/**	Teammate tile assignment fix														    END	**/
+/*************************************************************************************************/
 									}
 
 									if ((iPriority < iBestPriority) || ((iPriority == iBestPriority) && (pLoopCity->getOwnerINLINE() == eBestPlayer)))
@@ -8696,7 +8726,12 @@ int CvPlot::countTotalCultureControl() const
 }
 PlayerTypes CvPlot::findHighestCultureControlPlayer() const
 {
-	if (getImprovementOwner() != NO_PLAYER && getImprovementType() != NO_IMPROVEMENT)
+	// The culture-control loops below only consider living players; this
+	// short-circuit must do the same, or a dead improvement owner is returned
+	// as the cultural owner of the plot.
+	if (getImprovementOwner() != NO_PLAYER
+	 && GET_PLAYER((PlayerTypes)getImprovementOwner()).isAlive()
+	 && getImprovementType() != NO_IMPROVEMENT)
 	{
 		if (GC.getImprovementInfo(getImprovementType()).isOutsideBorders())
 		{
@@ -8880,9 +8915,10 @@ void CvPlot::clearCultureControl(PlayerTypes ePlayer, ImprovementTypes eImprovem
 		return;
 	}
 
+	changeCultureControl(ePlayer, -GC.getImprovementInfo(eImprovement).getCultureCenterBonus(), bUpdateInterface);
+
 	int iRange = GC.getImprovementInfo(eImprovement).getCultureRange();
 	int iStrength = GC.getImprovementInfo(eImprovement).getCultureControlStrength();
-	int iCenterTileBonus = GC.getImprovementInfo(eImprovement).getCultureCenterBonus();
 	int iDX, iDY;
 	CvPlot* pLoopPlot;
 	for (iDX = -iRange; iDX <= iRange; iDX++)
@@ -8903,7 +8939,7 @@ void CvPlot::clearCultureControl(PlayerTypes ePlayer, ImprovementTypes eImprovem
 
 			if (iStrength > 0)
 			{
-				pLoopPlot->changeCultureControl(ePlayer, -pLoopPlot->getCultureControl(ePlayer), bUpdateInterface);
+				pLoopPlot->changeCultureControl(ePlayer, -iStrength, bUpdateInterface);
 			}
 		}
 	}
@@ -14017,9 +14053,21 @@ void CvPlot::setClimate(ClimateZoneTypes eClimate)
 
 		if (GC.IsGraphicsInitialized())
 		{
+			// Capture the feature BEFORE the terrain is switched. setTerrainClassType
+			// -> setTerrainType strips any feature that is not valid on the new
+			// terrain (a Forest cannot stand on Desert), so by the time the callback
+			// runs the plot has already lost it. onClimateChange has to know which
+			// feature the plot HAD in order to convert it - without this every
+			// tree-conversion branch in the hook silently tests NO_FEATURE and does
+			// nothing, and the feature is simply destroyed instead of transformed.
+			FeatureTypes eOldFeature = getFeatureType();
+			int iOldFeatureVariety = getFeatureVariety();
+
 			setTerrainClassType((TerrainClassTypes)GC.getClimateZoneInfo(getClimate()).getTerrainClass(), false, false);
 
 			argsList.add(getClimate());
+			argsList.add(eOldFeature);
+			argsList.add(iOldFeatureVariety);
 			gDLL->getPythonIFace()->callFunction(PYFlavourModule, "onClimateChange", argsList.makeFunctionArgs());
 		}
 	}

@@ -28,5 +28,14 @@
 				</Building>
 			</Buildings>
 		</CivilizationInfo>
+		<CivilizationInfo>
+			<Type>CIVILIZATION_DTESH</Type>
+			<Buildings>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PILLORY</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
+			</Buildings>
+		</CivilizationInfo>
 	</CivilizationInfos>
 </Civ4CivilizationInfos>

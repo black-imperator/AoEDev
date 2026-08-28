@@ -899,7 +899,7 @@ class MapConstants :
 			#existed - so leaving it alone cannot change anyone's maps.
 			mc.continentCount = 0
 		else:
-			if selectionID == 1: # All players on one
+			if selectionID == 1: # One landmass for everybody
 				wanted = 1
 			else:                # 2 -> 1 per 2 players, ... 5 -> 1 per 5
 				playersPerContinent = selectionID
@@ -1311,6 +1311,49 @@ class HeightMap :
 		#never drops under sea level and the two landmasses merge into one.
 		return self.continentSpacing() * 0.45
 
+	def continentNoiseScale(self,radius):
+		#Lattice cell size for the warp noise, in height map cells. A little
+		#over half a continent radius: coarse enough that the coastline gets
+		#bays and peninsulas rather than a fringe of static, fine enough that a
+		#landmass is not simply displaced as a whole.
+		return max(4,int(radius * 0.6))
+
+	def generateContinentNoise(self,scale):
+		#Coarse value noise, bilinearly interpolated over the height map - the
+		#same construction Tectonics uses for its moisture noise. Built once per
+		#generation because continentMask runs for every point of the height
+		#map. The lattice is stretched to fit the map exactly, so on a wrapped
+		#axis taking the far edge from the near one leaves no seam.
+		gridW = max(2,mc.hmWidth / scale)
+		gridH = max(2,mc.hmHeight / scale)
+		grid = list()
+		for gy in range(gridH + 1):
+			row = list()
+			for gx in range(gridW + 1):
+				row.append(PRand.random())
+			if mc.WrapX:
+				row[gridW] = row[0]
+			grid.append(row)
+		if mc.WrapY:
+			grid[gridH] = grid[0]
+
+		xStep = float(gridW) / float(mc.hmWidth)
+		yStep = float(gridH) / float(mc.hmHeight)
+		noise = list()
+		for y in range(mc.hmHeight):
+			v = float(y) * yStep
+			gy = int(v)
+			fy = v - float(gy)
+			for x in range(mc.hmWidth):
+				u = float(x) * xStep
+				gx = int(u)
+				fx = u - float(gx)
+				noise.append(grid[gy][gx] * (1.0 - fx) * (1.0 - fy) \
+					+ grid[gy][gx + 1] * fx * (1.0 - fy) \
+					+ grid[gy + 1][gx] * (1.0 - fx) * fy \
+					+ grid[gy + 1][gx + 1] * fx * fy)
+		return noise
+
 	def pickContinentCenters(self):
 		#Choose mc.continentCount nuclei for the landmasses to grow around, by
 		#rejection sampling: draw a candidate, keep it only if it clears every
@@ -1352,18 +1395,45 @@ class HeightMap :
 			if not tooClose:
 				centers.append((x,y))
 
-		print "ErebusContinent: seeded %d of %d continent nuclei, spacing %.1f radius %.1f" \
-			% (len(centers),mc.continentCount,self.continentSpacing(),self.continentRadius())
+		#The coverage figure is the one to read when a map comes out wrong: the
+		#disks have to hold comfortably more than the land target, or the sea
+		#level percentile falls in the mask falloff and the mask draws the
+		#coastline itself instead of the terrain doing it.
+		radius = self.continentRadius()
+		coverage = len(centers) * math.pi * radius * radius \
+			/ float(mc.hmWidth * mc.hmHeight)
+		print "ErebusContinent: seeded %d of %d continent nuclei, spacing %.1f radius %.1f, disks cover %.0f%% of height map against %.0f%% land target" \
+			% (len(centers),mc.continentCount,self.continentSpacing(),radius,100.0 * coverage,100.0 * mc.landPercent)
 		return centers
 
-	def continentMask(self,x,y,centers,radius):
+	def continentMask(self,x,y,centers,radius,warpX,warpY):
 		#1.0 out to half a radius from the nearest nucleus, then falling to
 		#hmMarginDepth by a full radius. Multiplying the height map by this
 		#sinks the gaps between nuclei so calculateSeaLevel floods them, which
 		#is what actually separates the continents.
+		#
+		#Distance is measured from a point displaced by a coarse noise field
+		#rather than from where the cell really is. Without that displacement
+		#the mask is a function of distance alone, and it - not the terrain -
+		#is what picks the coastline: the disks can hold barely more land than
+		#mc.landPercent asks for, because continentRadius is capped by the
+		#nucleus spacing, so calculateSeaLevel's percentile lands inside the
+		#falloff band. The shoreline then follows a contour of a radial
+		#function, which is a circle, and that is the "every zone comes out as
+		#a sphere" report. Displacing the query point bends those contours into
+		#coastlines with bays and peninsulas. It leaves the mask itself alone -
+		#same plateau, same falloff, same floor - so the gaps between nuclei
+		#are no shallower than before and the landmasses still separate.
+		#
+		#Half a radius on each axis. Much more and the warp folds hard enough
+		#to drag two nuclei's land together; much less and the coastline is
+		#still visibly a circle.
+		warp = radius * 0.5
+		wx = float(x) + warp * (2.0 * warpX - 1.0)
+		wy = float(y) + warp * (2.0 * warpY - 1.0)
 		nearest = -1.0
 		for cx,cy in centers:
-			d = HmDistance(x,y,cx,cy)
+			d = HmDistance(wx,wy,cx,cy)
 			if nearest < 0.0 or d < nearest:
 				nearest = d
 		if nearest <= radius * 0.5:
@@ -1892,13 +1962,20 @@ class HeightMap :
 			#its own shaping above and is excluded.
 			continentCenters = self.pickContinentCenters()
 			continentRadius = 0.0
+			continentWarpX = None
+			continentWarpY = None
 			if continentCenters:
 				continentRadius = self.continentRadius()
+				#One field per axis, built once here rather than per cell -
+				#continentMask runs for every point of the height map.
+				noiseScale = self.continentNoiseScale(continentRadius)
+				continentWarpX = self.generateContinentNoise(noiseScale)
+				continentWarpY = self.generateContinentNoise(noiseScale)
 			for y in range(mc.hmHeight):
 				for x in range(mc.hmWidth):
 					i = GetHmIndex(x,y)
 					if continentCenters:
-						self.heightMap[i] *= self.continentMask(x,y,continentCenters,continentRadius)
+						self.heightMap[i] *= self.continentMask(x,y,continentCenters,continentRadius,continentWarpX[i],continentWarpY[i])
 					if mc.WrapX == False:
 						if x < marginSize:
 							self.heightMap[i] *= (float(x)/float(marginSize)) * (1.0 - mc.hmMarginDepth) + mc.hmMarginDepth
@@ -4275,10 +4352,16 @@ def getCustomMapOptionDescAt(argsList):
 		# Values 2..5 are read as "this many players per continent", so the
 		# continent count follows the size of the game: 15 players at 1 per 5
 		# asks for 3. See MapConstants.initInGameOptions.
+		#
+		# Selection 1 is the fewest-continents extreme and so reads out of
+		# sequence sitting above "1 per 2 players". It cannot be moved without
+		# changing what a saved custom-map selection means, because
+		# initInGameOptions uses the selection index itself as the players per
+		# continent divisor - so say plainly what it does instead.
 		if selectionID == 0:
 			return "Default (by Cohesion)"
 		if selectionID == 1:
-			return "All players on one"
+			return "One landmass for everybody"
 		if selectionID == 2:
 			return "1 per 2 players"
 		if selectionID == 3:
@@ -6044,7 +6127,7 @@ class StartPlot :
 		gameMap = CyMap()
 		return gameMap.plot(self.x,self.y)
 	def copy(self):
-		cp = StartPlot(self,x,y,desertValue,plainsValue,grassValue,marshValue,taigaValue,tundraValue,hillValue,peakValue,forestValue,jungleValue,coastValue,bonusValue,northValue,westValue,edgeValue)
+		cp = StartPlot(self.x,self.y,self.desertValue,self.plainsValue,self.grassValue,self.marshValue,self.taigaValue,self.tundraValue,self.hillValue,self.peakValue,self.forestValue,self.jungleValue,self.coastValue,self.bonusValue,self.northValue,self.westValue,self.edgeValue)
 		cp.totalValue = self.totalValue
 		cp.numberOfOwnedCities = self.numberOfOwnedCities
 		cp.distanceToOwner = self.distanceToOwner

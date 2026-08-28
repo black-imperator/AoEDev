@@ -313,7 +313,7 @@ class CvUnitStatisticsEventManager:
 		pOldUnit = genericArgs[0]
 		pNewUnit = genericArgs[1]
 
-		if((g_bTrackAllPlayers or gc.getGame().isGameMultiPlayer()) or pOldUnit.getOwner() == gc.getGame().getActivePlayer() or pNewUnit.getOwner() == gc.getGame().getActivePlayer() and (objUnitStatisticsTools.isNotSpell(pUnit) or g_bFfHTrackSpells)):
+		if((g_bTrackAllPlayers or gc.getGame().isGameMultiPlayer()) or pOldUnit.getOwner() == gc.getGame().getActivePlayer() or pNewUnit.getOwner() == gc.getGame().getActivePlayer() and (objUnitStatisticsTools.isNotSpell(pNewUnit) or g_bFfHTrackSpells)):
 			objUnitStatisticsUtils.logUnitUpgraded(argsList)
 
 	def onUnitConverted(self, argsList):
@@ -326,7 +326,7 @@ class CvUnitStatisticsEventManager:
 		pNewUnit = genericArgs[0]
 		pOldUnit = genericArgs[1]
 
-		if((g_bTrackAllPlayers or gc.getGame().isGameMultiPlayer()) or pOldUnit.getOwner() == gc.getGame().getActivePlayer() or pNewUnit.getOwner() == gc.getGame().getActivePlayer() and (objUnitStatisticsTools.isNotSpell(pUnit) or g_bFfHTrackSpells)):
+		if((g_bTrackAllPlayers or gc.getGame().isGameMultiPlayer()) or pOldUnit.getOwner() == gc.getGame().getActivePlayer() or pNewUnit.getOwner() == gc.getGame().getActivePlayer() and (objUnitStatisticsTools.isNotSpell(pNewUnit) or g_bFfHTrackSpells)):
 			objUnitStatisticsUtils.logUnitConverted(pNewUnit, pOldUnit)
 
 ## 	Not working.

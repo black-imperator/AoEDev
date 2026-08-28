@@ -571,4 +571,12 @@ Scalpel pierces flesh.
 Silence.
 "Good. Now, I'm starving. Who brought lunch?"</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RESTRICTED_SPECIALIST</Tag>
+		<English>This Specialist is not currently assigned to a Civilization.</English>
+		<French>This Specialist is not currently assigned to a Civilization.</French>
+		<German>This Specialist is not currently assigned to a Civilization.</German>
+		<Italian>This Specialist is not currently assigned to a Civilization.</Italian>
+		<Spanish>This Specialist is not currently assigned to a Civilization.</Spanish>
+	</TEXT>
 </Civ4GameText>

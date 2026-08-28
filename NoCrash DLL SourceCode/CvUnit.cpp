@@ -168,6 +168,32 @@ void CvUnit::reloadEntity()
 }
 
 
+void CvUnit::applyTraitFreePromotions(TraitTypes eTrait)
+{
+	if (getUnitCombatType() == NO_UNITCOMBAT)
+	{
+		return;
+	}
+	if (!GET_PLAYER(getOwnerINLINE()).hasTrait(eTrait))
+	{
+		return;
+	}
+	for (int iI = 0; iI < GC.getNumPromotionInfos(); iI++)
+	{
+		if (GC.getTraitInfo(eTrait).isFreePromotion(iI))
+		{
+			for (int iJ = 0; iJ < GC.getNumUnitCombatInfos(); iJ++)
+			{
+				if ((isUnitCombat((UnitCombatTypes)iJ) && GC.getTraitInfo(eTrait).isFreePromotionUnitCombat(iJ)))
+				{
+					setHasPromotion(((PromotionTypes)iI), true);
+				}
+			}
+		}
+	}
+}
+
+
 void CvUnit::init(int iID, UnitTypes eUnit, UnitAITypes eUnitAI, PlayerTypes eOwner, int iX, int iY, DirectionTypes eFacingDirection)
 {
 	CvWString szBuffer;
@@ -344,27 +370,9 @@ void CvUnit::init(int iID, UnitTypes eUnit, UnitAITypes eUnitAI, PlayerTypes eOw
 		}
 	}
 	FAssertMsg((GC.getNumTraitInfos() > 0), "GC.getNumTraitInfos() is less than or equal to zero but is expected to be larger than zero in CvUnit::init");
-	if (getUnitCombatType() != NO_UNITCOMBAT)
+	for (int iI = 0; iI < GC.getNumTraitInfos(); iI++)
 	{
-		for (int iI = 0; iI < GC.getNumTraitInfos(); iI++)
-		{
-			if (GET_PLAYER(getOwnerINLINE()).hasTrait((TraitTypes)iI))
-			{
-				for (int iJ = 0; iJ < GC.getNumPromotionInfos(); iJ++)
-				{
-					if (GC.getTraitInfo((TraitTypes)iI).isFreePromotion(iJ))
-					{
-						for (int ik = 0; ik < GC.getNumUnitCombatInfos(); ik++)
-						{
-							if ((isUnitCombat((UnitCombatTypes)ik) && GC.getTraitInfo((TraitTypes)iI).isFreePromotionUnitCombat(ik)))
-							{
-								setHasPromotion(((PromotionTypes)iJ), true);
-							}
-						}
-					}
-				}
-			}
-		}
+		applyTraitFreePromotions((TraitTypes)iI);
 	}
 	for (int iI = 0; iI < GC.getNumSpellClassInfos(); iI++)
 	{
@@ -2117,6 +2125,13 @@ void CvUnit::kill(bool bDelay, PlayerTypes ePlayer, bool bPostConvert)
 			data->piPromotions[i] = countHasPromotion((PromotionTypes)i);
 		}
 	}
+	// Bugfix: setXY() below only strips the ranged CityBonus effects, so a dying unit
+	// used to leave its FullMap CityBonus contributions on every city forever.  Remove
+	// them here (FullMap only, or setXY would subtract the ranged ones a second time).
+	if (getNumCityBonuses() > 0)
+	{
+		applyCityBonusEffects(false, true, true);
+	}
 	setXY(INVALID_PLOT_COORD, INVALID_PLOT_COORD, true);
 
 	joinGroup(NULL, false, false);
@@ -3269,9 +3284,11 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 			}
 		}
 
-		if (isDead() || pDefender->isDead())
+		// A reborn immortal is not isDead(), so without the ImmortDeath terms the winner
+		// would be denied combat experience for a fight it actually won.
+		if (isDead() || pDefender->isDead() || isImmortDeath() || pDefender->isImmortDeath())
 		{
-			if (isDead())
+			if (isDead() || isImmortDeath())
 			{
 				int iExperience = defenseXPValue();
 				iExperience = ((iExperience * iAttackerStrength) / iDefenderStrength);
@@ -3282,7 +3299,10 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 			}
 			else
 			{
-				flankingStrikeCombat(pPlot, iAttackerStrength, iAttackerFirepower, iAttackerKillOdds, iDefenderDamage, pDefender);
+				if (pDefender->isDead())      // flanking strikes follow an actual kill, not a rebirth
+				{
+					flankingStrikeCombat(pPlot, iAttackerStrength, iAttackerFirepower, iAttackerKillOdds, iDefenderDamage, pDefender);
+				}
 
 				int iExperience = pDefender->attackXPValue();
 				iExperience = ((iExperience * iDefenderStrength) / iAttackerStrength);
@@ -3305,12 +3325,8 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 			pDefender->changeCombatFirstStrikes(-1);
 		}
 
-		// Maybe one tier too high? Should be outside the combat while loop?? Blaze
-		// Immortal Respawn fix : Cyth 3/5/2010
-		if(isImmortDeath() || pDefender->isImmortDeath())
-		{
-			break;
-		}
+		// Immortal Respawn fix : Cyth 3/5/2010 - folded into the death check above, which
+		// now breaks on a rebirth too and awards the winner its experience first.
 
 	}
 }
@@ -3395,10 +3411,6 @@ void CvUnit::updateCombat(bool bQuick)
 
 	//FAssertMsg((pPlot == pDefender->plot()), "There is not expected to be a defender or the defender's plot is expected to be pPlot (the attack plot)");
 
-	//FfH: Added by Kael 07/30/2007
-	if (!isImmuneToDefensiveStrike())
-		pDefender->doDefensiveStrike(this);
-
 	if (pDefender->isFear() && !isImmuneToFear())
 	{
 		if (GC.getGameINLINE().getSorenRandNum(100, "Im afeared!") < pDefender->calcFearChance(this))
@@ -3422,6 +3434,13 @@ void CvUnit::updateCombat(bool bQuick)
 			}
 
 			setMadeAttack(true);
+
+			//FfH: Added by Kael 07/30/2007
+			//Moved inside the one-time combat setup block: updateCombat is re-entered
+			//on the bFinish pass and once per frame while blocked by the isFighting()
+			//check above, which made the strike proc repeatedly for a single attack.
+			if (!isImmuneToDefensiveStrike())
+				pDefender->doDefensiveStrike(this);
 
 			//rotate to face plot
 			DirectionTypes newDirection = estimateDirection(this->plot(), pDefender->plot());
@@ -3881,6 +3900,17 @@ void CvUnit::updateCombat(bool bQuick)
 		}
 		else
 		{
+			// An immortal that lost is reborn instead of dying (CvUnit::kill -> doImmortalRebirth),
+			// so neither isDead() branch above runs and the withdrawal branches below do not apply.
+			// The attack was therefore never charged for.  Harmless for a normal unit, which cannot
+			// attack again after setMadeAttack(true), but a Blitz unit keeps a full movement bar and
+			// can attack an immortal an unlimited number of times in one turn.
+			if (isImmortDeath() || pDefender->isImmortDeath())
+			{
+				changeMoves(std::max(GC.getMOVE_DENOMINATOR(), pPlot->movementCost(this, plot())));
+				checkRemoveSelectionAfterAttack();
+			}
+
 
 //FfH Promotions: Modified by Kael 08/12/2007
 //			szBuffer = gDLL->getText("TXT_KEY_MISC_YOU_UNIT_WITHDRAW", getNameKey(), pDefender->getNameKey());
@@ -3941,11 +3971,26 @@ void CvUnit::updateCombat(bool bQuick)
 /*************************************************************************************************/
 /**	Tweak									END													**/
 /*************************************************************************************************/
+/*************************************************************************************************/
+/**	Bugfix									08/27/26											**/
+/**																									**/
+/**			Attacking a defender that withdraws must still cost the attacker movement		**/
+/*************************************************************************************************/
+				bool bAdvance = (pPlot->getNumVisibleEnemyDefenders(this) == 0) && canAdvance(pPlot, 0);
+
+				if (!bAdvance)
+				{
+					changeMoves(std::max(GC.getMOVE_DENOMINATOR(), pPlot->movementCost(this, plot())));
+				}
+
 				checkRemoveSelectionAfterAttack();
 				if (pPlot->getNumVisibleEnemyDefenders(this) == 0)
 				{
-					getGroup()->groupMove(pPlot, true, ((canAdvance(pPlot, 0)) ? this : NULL));
+					getGroup()->groupMove(pPlot, true, ((bAdvance) ? this : NULL));
 				}
+/*************************************************************************************************/
+/**	Bugfix									END													**/
+/*************************************************************************************************/
 				getGroup()->clearMissionQueue();
 /*************************************************************************************************/
 /**	Xienwolf Tweak							02/14/09											**/
@@ -8703,7 +8748,7 @@ bool CvUnit::sabotage()
 /*************************************************************************************************/
 		if (pPlot->getImprovementOwner() != NO_PLAYER)
 		{
-			pPlot->addCultureControl(pPlot->getImprovementOwner(), (ImprovementTypes)GET_PLAYER(pPlot->getImprovementOwner()).getPlayerImprovement((ImprovementClassTypes)GC.getImprovementInfo(pPlot->getImprovementType()).getImprovementClassPillage()), true);
+			pPlot->addCultureControl(pPlot->getImprovementOwner(), pPlot->getImprovementType(), true);
 		}
 /*************************************************************************************************/
 /**	Improvements Mods	END								**/
@@ -14311,11 +14356,26 @@ bool CvUnit::canMoveAllTerrain() const
 {
 
 //FfH Flying: Added by Kael 07/30/2007
-	if (isFlying() || isWaterWalking())
+	if (isFlying())
 	{
 		return true;
 	}
 //FfH: End Add
+/*************************************************************************************************/
+/**	Bugfix (Issue #156)					08/28/26											**/
+/**		Water walking says nothing about a ship, which already floats - but it was the only		**/
+/**		thing standing between a DOMAIN_SEA unit and dry land, because canMoveAllTerrain()		**/
+/**		short-circuits the sea/land guard in canMoveInto().  AoE grants water walking			**/
+/**		automatically from the plot a unit stands on (Rinwell and others), so a galley			**/
+/**		sitting on a naval fort picked it up and sailed onto the continent.						**/
+/*************************************************************************************************/
+	if (isWaterWalking() && getDomainType() != DOMAIN_SEA)
+	{
+		return true;
+	}
+/*************************************************************************************************/
+/**	Bugfix								END													**/
+/*************************************************************************************************/
 
 	return m_pUnitInfo->isCanMoveAllTerrain();
 }
@@ -18311,19 +18371,28 @@ void CvUnit::changeCityBonuses(bool bApply, std::list<CityBonuses> cbCityBonus)
 	}
 	else
 	{
+		// Bugfix: the rotation used to spin forever whenever the requested bonus
+		// was not held by the unit (and dereferenced front() on an empty list).
+		// Rotate at most once around the list, then drop the request either way.
 		while (!cbCityBonus.empty())
 		{
-			if (m_cbCityBonuses.front().compare(cbCityBonus.front()))
+			bool bFound = false;
+			for (size_t i = 0; i < m_cbCityBonuses.size(); ++i)
 			{
-				m_iNumCityBonuses--;
-				cbCityBonus.pop_front();
-				m_cbCityBonuses.pop_front();
-			}
-			else
-			{
+				if (m_cbCityBonuses.front().compare(cbCityBonus.front()))
+				{
+					bFound = true;
+					break;
+				}
 				m_cbCityBonuses.push_back(m_cbCityBonuses.front());
 				m_cbCityBonuses.pop_front();
 			}
+			if (bFound)
+			{
+				m_iNumCityBonuses--;
+				m_cbCityBonuses.pop_front();
+			}
+			cbCityBonus.pop_front();
 		}
 	}
 }
@@ -18364,19 +18433,28 @@ void CvUnit::changeAuraBonuses(bool bApply, std::list<AuraBonuses> cbAuraBonus)
 	}
 	else
 	{
+		// Bugfix: the rotation used to spin forever whenever the requested bonus
+		// was not held by the unit (and dereferenced front() on an empty list).
+		// Rotate at most once around the list, then drop the request either way.
 		while (!cbAuraBonus.empty())
 		{
-			if (m_cbAuraBonuses.front().compare(cbAuraBonus.front()))
+			bool bFound = false;
+			for (size_t i = 0; i < m_cbAuraBonuses.size(); ++i)
 			{
-				m_iNumAuraBonuses--;
-				cbAuraBonus.pop_front();
-				m_cbAuraBonuses.pop_front();
-			}
-			else
-			{
+				if (m_cbAuraBonuses.front().compare(cbAuraBonus.front()))
+				{
+					bFound = true;
+					break;
+				}
 				m_cbAuraBonuses.push_back(m_cbAuraBonuses.front());
 				m_cbAuraBonuses.pop_front();
 			}
+			if (bFound)
+			{
+				m_iNumAuraBonuses--;
+				m_cbAuraBonuses.pop_front();
+			}
+			cbAuraBonus.pop_front();
 		}
 	}
 }
@@ -22456,6 +22534,23 @@ void CvUnit::setHasPromotion(PromotionTypes eIndex, bool bNewValue, bool bSupres
 		}
 		setPromotionDuration(eIndex, (bNewValue ? kPromotion.getDuration() : 0));
 		
+		// Bugfix: keep the unit's CityBonus/AuraBonus lists in step with m_paiHasPromotion
+		// before the PromotionOverwrites/ReplacedBy handling below can recurse into
+		// setHasPromotion(), otherwise a nested call tries to remove bonuses the unit has
+		// not been given yet.
+		applyCityBonusEffects(false, true);
+		if (kPromotion.getNumCityBonuses() > 0)
+		{
+			changeCityBonuses(bNewValue, kPromotion.listCityBonuses());
+		}
+		applyCityBonusEffects(true, true);
+		if (kPromotion.getNumAuraBonuses() > 0)
+		{
+			applyAuraBonusEffects(false, true,false);
+			changeAuraBonuses(bNewValue, kPromotion.listAuraBonuses());
+			applyAuraBonusEffects(true, true,false);
+		}
+
 		if (bNewValue)
 		{
 			for (int iI = 0; iI < GC.getNumPromotionInfos(); iI++)
@@ -22646,18 +22741,6 @@ void CvUnit::setHasPromotion(PromotionTypes eIndex, bool bNewValue, bool bSupres
 		changeExtraCulturePerPop(kPromotion.getExtraCulturePerPop() * iChange);
 		changeXPTranserRate(kPromotion.getXPTranserRate() * iChange);
 		changeCastingLimit((kPromotion.getMulticast()) *iChange);
-		applyCityBonusEffects(false, true);
-		if (kPromotion.getNumCityBonuses() > 0)
-		{
-			changeCityBonuses(bNewValue, kPromotion.listCityBonuses());
-		}
-		applyCityBonusEffects(true, true);
-		if (kPromotion.getNumAuraBonuses() > 0)
-		{
-			applyAuraBonusEffects(false, true,false);
-			changeAuraBonuses(bNewValue, kPromotion.listAuraBonuses());
-			applyAuraBonusEffects(true, true,false);
-		}
 		for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
 		{
 			changeYieldFromWin(iI, (kPromotion.getYieldFromWin(iI) * iChange));
@@ -26298,7 +26381,7 @@ void CvUnit::castDispel(int spell, CvPlot* pTargetPlot)
 		for (int j = -iRange; j <= iRange; ++j)
 		{
 			pLoopPlot = ::plotXY(pTargetPlot->getX_INLINE(), pTargetPlot->getY_INLINE(), i, j);
-			if (NULL != pLoopPlot && canCastTargetPlot(spell,false,pTargetPlot))
+			if (NULL != pLoopPlot && canCastTargetPlot(spell,false,pLoopPlot))
 			{
 				if (pLoopPlot->getPlotEffectType()!=NO_PLOT_EFFECT && GC.getPlotEffectInfo((PlotEffectTypes)pLoopPlot->getPlotEffectType()).isDispellable() && (GC.getPlotEffectInfo((PlotEffectTypes)pLoopPlot->getPlotEffectType()).getPrereqDispelPower() == 0 || GC.getPlotEffectInfo((PlotEffectTypes)pLoopPlot->getPlotEffectType()).getPrereqDispelPower() <= getSpellMagicalPower(spell)))
 				{
@@ -32929,7 +33012,7 @@ void CvUnit::applyCityBonus(CityBonuses cbTemp, CvCity* pCheckCity, int iChange,
 	if (cbTemp.fTrainXPCap != 0) pCheckCity->changeProximityTrainXPCap(iChange * 100 * (cbTemp.fTrainXPCap + iDistance*cbTemp.fDecayRate), m_pUnitInfo->getUnitCombatType());
 	if (cbTemp.fTrainXPRate != 0) pCheckCity->changeProximityTrainXPRate(iChange * (cbTemp.fTrainXPRate + iDistance*cbTemp.fDecayRate), m_pUnitInfo->getUnitCombatType());
 }
-void CvUnit::applyCityBonusEffects(bool bActivate, bool bAlterFullMap)
+void CvUnit::applyCityBonusEffects(bool bActivate, bool bAlterFullMap, bool bFullMapOnly)
 {
 	PROFILE("CvUnit::applyCityBonusEffects");
 
@@ -32978,7 +33061,7 @@ void CvUnit::applyCityBonusEffects(bool bActivate, bool bAlterFullMap)
 				}
 			}
 		}
-		else
+		else if (!bFullMapOnly)
 		{
 			for (int jX = -cbTemp.iBonusRange; jX < cbTemp.iBonusRange+1; jX++)
 			{
@@ -33599,7 +33682,7 @@ bool CvUnit::claimFort(bool bBuilt)
 		}
 	}
 
-	plot()->clearCultureControl(plot()->getOwner(), plot()->getImprovementType(), true);
+	plot()->clearCultureControl(plot()->getImprovementOwner(), plot()->getImprovementType(), true);
 	plot()->setImprovementOwner(getOwnerINLINE());
 	plot()->addCultureControl(getOwnerINLINE(), plot()->getImprovementType(), true);
 	// Need a distinct call to update culture; above ones won't update if the improvement doesn't have culture control

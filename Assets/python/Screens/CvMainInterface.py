@@ -2673,7 +2673,13 @@ class CvMainInterface:
 				i = 0
 				for i in xrange( g_NumBuildingClassInfos ):
 					if (isLimitedWonderClass(i)):
-						eLoopBuilding = gc.getCivilizationInfo(pHeadSelectedCity.getCivilizationType()).getCivilizationBuildings(i)
+						# Trait-granted building classes (CIV4TraitInfos <ExtraBuildingClasses>) are never
+						# listed in any civilization's <Buildings> block, and a bUnique class gets no
+						# per-civ default, so getCivilizationBuildings() answers -1 for them.  Ask the
+						# owning player first, then fall back to the city's own civilization.
+						eLoopBuilding = gc.getPlayer(pHeadSelectedCity.getOwner()).getPlayerBuilding(i)
+						if (eLoopBuilding == -1):
+							eLoopBuilding = gc.getCivilizationInfo(pHeadSelectedCity.getCivilizationType()).getCivilizationBuildings(i)
 
 						# UI: a city that is already a government center cannot build a second one
 						# (Forbidden Palace / Winter Palace) - don't offer the button in such cities.
@@ -3563,17 +3569,17 @@ class CvMainInterface:
 
 		screen.addPanel( "BonusPane0", u"", u"", True, False, xResolution - 244, 94, 57, yResolution - 560, PanelStyles.PANEL_STYLE_CITY_COLUMNL )
 		screen.hide( "BonusPane0" )
-		screen.addScrollPanel( "BonusBack0", u"", xResolution - 242, 94, 157, yResolution - 576, PanelStyles.PANEL_STYLE_EXTERNAL )
+		screen.addScrollPanel( "BonusBack0", u"", xResolution - 242, 94, 53, yResolution - 576, PanelStyles.PANEL_STYLE_EXTERNAL )
 		screen.hide( "BonusBack0" )
 
 		screen.addPanel( "BonusPane1", u"", u"", True, False, xResolution - 187, 94, 68, yResolution - 560, PanelStyles.PANEL_STYLE_CITY_COLUMNC )
 		screen.hide( "BonusPane1" )
-		screen.addScrollPanel( "BonusBack1", u"", xResolution - 191, 94, 184, yResolution - 576, PanelStyles.PANEL_STYLE_EXTERNAL )
+		screen.addScrollPanel( "BonusBack1", u"", xResolution - 185, 94, 64, yResolution - 576, PanelStyles.PANEL_STYLE_EXTERNAL )
 		screen.hide( "BonusBack1" )
 
 		screen.addPanel( "BonusPane2", u"", u"", True, False, xResolution - 119, 94, 107, yResolution - 560, PanelStyles.PANEL_STYLE_CITY_COLUMNR )
 		screen.hide( "BonusPane2" )
-		screen.addScrollPanel( "BonusBack2", u"", xResolution - 125, 94, 205, yResolution - 576, PanelStyles.PANEL_STYLE_EXTERNAL )
+		screen.addScrollPanel( "BonusBack2", u"", xResolution - 117, 94, 103, yResolution - 576, PanelStyles.PANEL_STYLE_EXTERNAL )
 		screen.hide( "BonusBack2" )
 
 		screen.hide( "TradeRouteTable" )
@@ -4235,7 +4241,7 @@ class CvMainInterface:
 							szName = "RightBonusItemLeft" + str(iRightCount)
 							screen.setLabelAt( szName, "BonusBack2", szLeadBuffer, CvUtil.FONT_LEFT_JUSTIFY, 0, (iRightCount * 20) + 4, -0.1, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_PEDIA_JUMP_TO_BONUS, i, -1 )
 							szName = "RightBonusItemRight" + str(iRightCount)
-							screen.setLabelAt( szName, "BonusBack2", szTempBuffer, CvUtil.FONT_RIGHT_JUSTIFY, 102, (iRightCount * 20) + 4, -0.1, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_PEDIA_JUMP_TO_BONUS, i, -1 )
+							screen.setLabelAt( szName, "BonusBack2", szTempBuffer, CvUtil.FONT_RIGHT_JUSTIFY, 84, (iRightCount * 20) + 4, -0.1, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_PEDIA_JUMP_TO_BONUS, i, -1 )
 
 							iRightCount = iRightCount + 1
 
@@ -4250,7 +4256,7 @@ class CvMainInterface:
 							szName = "CenterBonusItemLeft" + str(iCenterCount)
 							screen.setLabelAt( szName, "BonusBack1", szLeadBuffer, CvUtil.FONT_LEFT_JUSTIFY, 0, (iCenterCount * 20) + 4, -0.1, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_PEDIA_JUMP_TO_BONUS, i, -1 )
 							szName = "CenterBonusItemRight" + str(iCenterCount)
-							screen.setLabelAt( szName, "BonusBack1", szTempBuffer, CvUtil.FONT_RIGHT_JUSTIFY, 62, (iCenterCount * 20) + 4, -0.1, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_PEDIA_JUMP_TO_BONUS, i, -1 )
+							screen.setLabelAt( szName, "BonusBack1", szTempBuffer, CvUtil.FONT_RIGHT_JUSTIFY, 46, (iCenterCount * 20) + 4, -0.1, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_PEDIA_JUMP_TO_BONUS, i, -1 )
 
 							iCenterCount = iCenterCount + 1
 

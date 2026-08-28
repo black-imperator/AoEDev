@@ -2204,6 +2204,27 @@ CvCity* CvPlayer::initCity(int iX, int iY, bool bBumpUnits, bool bUpdatePlotGrou
 
 	CvCity* pCity;
 
+/*************************************************************************************************/
+/**	People's Choice							07/30/08								Xienwolf	**/
+/**																								**/
+/**					Updates CityBonuses when Founding a City or Changing Owners					**/
+/**																								**/
+/**	Bugfix: this sweep used to live inside CvCity::init, where the new city was already			**/
+/**	in the player's city list and so got debited for FullMap bonuses it had never been			**/
+/**	credited with.  Removing the effects before the city exists lets the matching				**/
+/**	updateCityBonuses(true) at the end of CvCity::init credit it like every other city.			**/
+/*************************************************************************************************/
+	for (int iI = 0; iI < MAX_PLAYERS; iI++)
+	{
+		if (GET_PLAYER((PlayerTypes)iI).isAlive())
+		{
+			GET_PLAYER((PlayerTypes)iI).updateCityBonuses(false);
+		}
+	}
+/*************************************************************************************************/
+/**	People's Choice							END														**/
+/*************************************************************************************************/
+
 	pCity = addCity();
 
 	FAssertMsg(pCity != NULL, "City is not assigned a valid value");
@@ -3722,6 +3743,11 @@ void CvPlayer::setHasTrait(TraitTypes eTrait, bool bNewValue)
 	updateMaxAnarchyTurns();
 	if (bNewValue)
 	{
+		int iLoop;
+		for (CvUnit* pLoopUnit = firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = nextUnit(&iLoop))
+		{
+			pLoopUnit->applyTraitFreePromotions(eTrait);
+		}
 		CvEventReporter::getInstance().traitGained(eTrait, getID());
 	}
 	else
@@ -8269,17 +8295,22 @@ bool CvPlayer::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestV
 		}
 	}
 
-	if (GC.getGameINLINE().isBuildingClassMaxedOut(eBuildingClass))
+	// A building being re-validated (bStillValid) already counts itself in the class
+	// counts these checks read, so discount it. Without this any must-maintain building
+	// whose class has a finite cap reports itself as maxed out and gets deleted.
+	int iStillValidExtra = ((bStillValid) ? -1 : 0);
+
+	if (GC.getGameINLINE().isBuildingClassMaxedOut(eBuildingClass, iStillValidExtra))
 	{
 		return false;
 	}
 
-	if (currentTeam.isBuildingClassMaxedOut(eBuildingClass))
+	if (currentTeam.isBuildingClassMaxedOut(eBuildingClass, iStillValidExtra))
 	{
 		return false;
 	}
 
-	if (isBuildingClassMaxedOut(eBuildingClass))
+	if (isBuildingClassMaxedOut(eBuildingClass, iStillValidExtra))
 	{
 		return false;
 	}

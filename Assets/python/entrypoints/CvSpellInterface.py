@@ -868,8 +868,13 @@ def postCombatDeathMarked(pCaster, pOpponent):
 
 def postCombatDeadLands(pCaster, pOpponent):
 	pDemonPlayer = gc.getPlayer(gc.getDEMON_PLAYER())
+	pPlot2 = findClearPlot(-1, pCaster.plot())
+	if pCaster.isHasPromotion(getInfoType('PROMOTION_DRAGON')) == True:
+		if pPlot2!=-1:
+			newDracolich = pDemonPlayer.initUnit(getInfoType('UNIT_DRACOLICH'), pPlot2.getX(), pPlot2.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+			newDracolich.setMadeAttack(True)
+			return
 	if(pCaster.isAlive()):
-		pPlot2 = findClearPlot(-1, pCaster.plot())
 		if pPlot2!=-1:
 			newUnit = pDemonPlayer.initUnit(pCaster.getUnitType(), pPlot2.getX(), pPlot2.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 			newUnit.setHasPromotion(getInfoType('PROMOTION_UNDEAD'), True)
@@ -1288,7 +1293,7 @@ def getHelpAdmiralJoin(argsList):
 	eSpell, pCaster = argsList
 	pPlot		= pCaster.plot()
 	iTeam		= pCaster.getTeam()
-	iAdmClass	= git("UNITCLASS_COMMANDER")
+	iAdmClass	= getInfoType("UNITCLASS_COMMANDER")
 	fCasterXP	= pCaster.getExperience()
 	pTarget		= -1
 	szHelp		= ""
@@ -1306,7 +1311,7 @@ def getHelpAdmiralJoin(argsList):
 def spellAdmiralJoin(pCaster):
 	pPlot		= pCaster.plot()
 	iTeam		= pCaster.getTeam()
-	iAdmClass	= git("UNITCLASS_COMMANDER")
+	iAdmClass	= getInfoType("UNITCLASS_COMMANDER")
 	fCasterXP	= pCaster.getExperience()
 	pTarget		= -1
 	for iUnit in xrange(pPlot.getNumUnits()):
@@ -1327,8 +1332,8 @@ def spellAdmiralJoin(pCaster):
 def reqAdmiralJoin(pCaster):
 	pPlot		= pCaster.plot()
 	iTeam		= pCaster.getTeam()
-	iAdmClass	= git("UNITCLASS_COMMANDER")
-	lBlackList	= [git("UNITCLASS_TRADESHIP"),git("UNITCLASS_WYRMFISHER"),git("UNITCLASS_WORKBOAT")]
+	iAdmClass	= getInfoType("UNITCLASS_COMMANDER")
+	lBlackList	= [getInfoType("UNITCLASS_TRADESHIP"),getInfoType("UNITCLASS_WYRMFISHER"),getInfoType("UNITCLASS_WORKBOAT")]
 	if not pCaster.getDomainType() == DomainTypes.DOMAIN_SEA:
 		return False
 	if pCaster.getUnitClassType() in lBlackList:
@@ -1912,7 +1917,7 @@ def spellFeedUndead(caster):
 
 def postCombatWinUndeadEater(pCaster, pOpponent):
 	if pOpponent.isHasPromotion(getInfoType("PROMOTION_UNDEAD")):
-		pCaster.setDamage(caster.getDamage() - 20, caster.getOwner())
+		pCaster.setDamage(pCaster.getDamage() - 20, pCaster.getOwner())
 		pCaster.setHasPromotion(getInfoType('PROMOTION_UNDEAD_SOUL'),True)
 
 	
@@ -2440,6 +2445,8 @@ def reqLichdom(caster):
 	#if caster.getUnitClassType() == getInfoType('UNITCLASS_FLESH_GOLEM'):
 		#return False
 	if caster.isHasPromotion(getInfoType('PROMOTION_PUPPET')):
+		return False
+	if caster.isHasPromotion(getInfoType('PROMOTION_DRAGON')):
 		return False
 	if isWorldUnitClass(caster.getUnitClassType()):
 		return False
@@ -3535,7 +3542,7 @@ def spellRiverOfBlood(pCaster):
 	(pLoopCity, iter) = pPlayer.firstCity(False)
 	while(pLoopCity):
 		pLoopCity.changePopulation(2)
-		CyInterface().addMessage(iLoopPlayer,True,25,CyTranslator().getText("TXT_KEY_MESSAGE_RIVER_OF_BLOOD_CALABIM", ()),'',1,'Art/Interface/Buttons/Spells/River of Blood.dds',ColorTypes(8),pCity.getX(),pCity.getY(),True,True)
+		CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_MESSAGE_RIVER_OF_BLOOD_CALABIM", ()),'',1,'Art/Interface/Buttons/Spells/River of Blood.dds',ColorTypes(8),pLoopCity.getX(),pLoopCity.getY(),True,True)
 		(pLoopCity, iter) = pPlayer.nextCity(iter, False)
 	for iLoopPlayer in range(gc.getMAX_PLAYERS()):
 		pLoopPlayer	= gc.getPlayer(iLoopPlayer)
@@ -3546,8 +3553,10 @@ def spellRiverOfBlood(pCaster):
 			(pLoopCity, iter) = pLoopPlayer.firstCity(False)
 			while(pLoopCity):
 				iPopChange = max(1, (pLoopCity.getPopulation() - 2))
+				iLoss = pLoopCity.getPopulation() - iPopChange
 				pLoopCity.setPopulation(iPopChange)
-				CyInterface().addMessage(iLoopPlayer,True,25,CyTranslator().getText("TXT_KEY_MESSAGE_RIVER_OF_BLOOD", (iLoss, )),'',1,'Art/Interface/Buttons/Spells/River of Blood.dds',ColorTypes(7),pCity.getX(),pCity.getY(),True,True)
+				if iLoss > 0:
+					CyInterface().addMessage(iLoopPlayer,True,25,CyTranslator().getText("TXT_KEY_MESSAGE_RIVER_OF_BLOOD", (iLoss, )),'',1,'Art/Interface/Buttons/Spells/River of Blood.dds',ColorTypes(7),pLoopCity.getX(),pLoopCity.getY(),True,True)
 				(pLoopCity, iter) = pLoopPlayer.nextCity(iter, False)
 
 def reqRoar(caster):
@@ -3750,6 +3759,7 @@ def spellSacrificeSlaveCualli(caster):
 			iEmpower8 = getInfoType('PROMOTION_SACRIFICIAL_BLOOD_8')
 			iEmpowerPriest = getInfoType('PROMOTION_SACRIFICIAL_BLOOD_PRIEST')
 			iEmpowerDivine = getInfoType('PROMOTION_SACRIFICIAL_BLOOD_DIVINE')
+			iEmpowerFire = getInfoType('PROMOTION_SACRIFICIAL_BLOOD_FIRE')
 			pUnit.setHasPromotion(iEmpower1, True)
 			if(iLevel>2):
 				pUnit.setHasPromotion(iEmpower2, True)
@@ -4956,6 +4966,7 @@ def spellWonder(caster):
 	bFavored = caster.isHasPromotion(getInfoType('PROMOTION_FAVORED_SON'))
 	iCount = CyGame().getSorenRandNum(3, "Wonder") + 3
 	pPlayer = gc.getPlayer(caster.getOwner())
+	iCasterID = caster.getID()
 	pPlot = caster.plot()
 	bCity = False
 	point = pPlot.getPoint()
@@ -4964,6 +4975,9 @@ def spellWonder(caster):
 	if pPlot.isCity():
 		bCity = True
 	for i in xrange(iCount):
+		caster = pPlayer.getUnit(iCasterID)
+		if caster.isNone():
+			return
 		iRnd = CyGame().getSorenRandNum(66, "Wonder")
 		iUnit = -1
 		if iRnd == 0:
@@ -5182,6 +5196,9 @@ def spellWonder(caster):
 	rebuildGraphics()
 # FF: End Add
 
+	caster = pPlayer.getUnit(iCasterID)
+	if caster.isNone():
+		return
 	caster.setCastingLimit(iStartingCasts)
 	caster.setHasCasted(bStartingCast)
 
@@ -5444,6 +5461,28 @@ def onMoveCarcer(pCaster, pPlot):
 				if not CyGame().isHasTrophy(t):
 					CyGame().changeTrophyValue(t, 1)
 
+def onMoveDragonBones(pCaster, pPlot):
+	if pCaster.isHasPromotion(getInfoType('PROMOTION_OPALUS_MORTIS')) or pCaster.isHasPromotion(getInfoType('PROMOTION_MASTER_OF_DEATH_AND_SHADOW')) or pCaster.getUnitType() == getInfoType('UNIT_TRISTESSA') or pCaster.getUnitType() == getInfoType('UNIT_WALDRUN') or pCaster.getUnitType() == getInfoType('UNIT_BARBATOS'):
+		iPlayer		= pCaster.getOwner()
+		pPlayer		= gc.getPlayer(iPlayer)
+		pPlot2 = findClearPlot(-1, pCaster.plot())
+		if pPlot2!=-1:
+			newDracolich = pPlayer.initUnit(getInfoType('UNIT_DRACOLICH'), pPlot2.getX(), pPlot2.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+			newDracolich.setMadeAttack(True)
+			pPlot.setImprovementType(-1)
+
+def onMoveSevenPines(pCaster, pPlot):
+	pOrcPlayer = gc.getPlayer(gc.getORC_PLAYER())
+	pPlot2 = findClearPlot(-1, pCaster.plot())
+	if not pOrcPlayer.isHasFlag(getInfoType("FLAG_ELDER_DRAGON_FIRST")):
+		if pCaster.isHasPromotion(getInfoType('PROMOTION_DEMON')) or pCaster.isHasPromotion(getInfoType('PROMOTION_ANGEL')) and not pCaster.getUnitType() == getInfoType('UNIT_SPHENER') or pCaster.isHasPromotion(getInfoType('PROMOTION_AVATAR')) or pCaster.isHasPromotion(getInfoType('PROMOTION_ANGEL')) or pCaster.isHasPromotion(getInfoType('PROMOTION_AVATAR')) or pCaster.isHasPromotion(getInfoType('PROMOTION_FALLEN_ANGEL')) or pCaster.isHasPromotion(getInfoType('PROMOTION_ICE_DEMON')):
+			if pPlot2!=-1:
+				newDragon = pOrcPlayer.initUnit(getInfoType('UNIT_ELDER_DRAGON'), pPlot2.getX(), pPlot2.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+				newDragon.setHasPromotion(getInfoType('PROMOTION_LEASH_1'), True)
+				newDragon.setMadeAttack(True)
+				gc.getGame().setGlobalFlag(getInfoType('FLAG_ELDER_DRAGON_FIRST'),True)
+
+			
 def onMoveSironasBeacon(pCaster, pPlot):
 	# pPlayer = gc.getPlayer(pCaster.getOwner())
 	# if pPlayer.isFeatAccomplished(FeatTypes.FEAT_VISIT_SIRONAS_BEACON) == False:
@@ -5530,6 +5569,7 @@ def onMoveBradelinesWell(pCaster, pPlot):
 	return
 
 def onMoveFoxford(pCaster,pPlot):
+	if CyGame().GetWorldBuilderMode(): return
 	iPlayer			= pCaster.getOwner()
 	pPlayer			= gc.getPlayer(iPlayer)
 	git				= gc.getInfoTypeForString
@@ -7937,6 +7977,7 @@ def reqChin(caster):
 def spellChin(caster):
 	bCanCast = reqChin(caster)	# 2nd check in case the player settled after launching the spell or the player "cheated" by casting simultaneously Chin on 2 neighbour tiles
 	if bCanCast:
+		pPlot = caster.plot()
 		pPlot.setPlotType(PlotTypes.PLOT_PEAK, True, True)
 
 def reqWomb(caster):
@@ -9101,6 +9142,12 @@ def exploreLairBloodDragon(pUnit, pPlot):
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_BLOOD_DRAGON'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+
+def exploreLairDracoLich(pUnit, pPlot):
+	pPlayer = gc.getPlayer(pUnit.getOwner())
+	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
+	pNewPlot = findClearPlot(-1, pPlot)
+	newUnit = bPlayer.initUnit(getInfoType('UNIT_DRACOLICH'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
 def exploreLairPitDragon(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
@@ -11413,7 +11460,22 @@ def reqCorgayleChanneling2(pCaster):
 		return False
 	return True
 #Seems fine
-
+def reqRealityBreak(caster):
+	pPlayer = gc.getPlayer(caster.getOwner())
+	iTeam = pPlayer.getTeam()
+	getPlot	= CyMap().plot
+	pPlot = caster.plot()
+	iRange = 1 + caster.getSpellExtraRange()
+	if pPlot.getImprovementType() == getInfoType('IMPROVEMENT_SEVEN_PINES'):
+		return False
+	for x, y in plotsInRange( caster.getX(), caster.getY(), iRange ):
+		pPlot = getPlot(x, y)
+		if not pPlot.isNone():
+			for i in xrange(pPlot.getNumUnits()):
+				pUnit = pPlot.getUnit(i)
+				if pUnit.isHasPromotion(getInfoType('PROMOTION_AVATAR')) or pUnit.isHasPromotion(getInfoType('PROMOTION_DRAGON')):
+					return True
+	return False
 def spellRealityBreak(caster):
 	pPlot = caster.plot()
 	pCity = caster.plot().getPlotCity()
@@ -14905,7 +14967,7 @@ def spellDropEquipment(pCaster):
 			if pPlot.getUnit(iUnit).getUnitType() == getInfoType('EQUIPMENT_CONTAINER'):
 				containerUnit = pPlot.getUnit(iUnit)
 		if containerUnit == -1:
-			containerUnit = gc.getPlayer(gc.getORC_PLAYER()).initUnit(git('EQUIPMENT_CONTAINER'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+			containerUnit = gc.getPlayer(gc.getORC_PLAYER()).initUnit(getInfoType('EQUIPMENT_CONTAINER'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 		containerUnit.setHasPromotion(lEquipmentList[0],True)
 		pCaster.setHasPromotion(lEquipmentList[0],False)
 	if len(lEquipmentList) > 1:

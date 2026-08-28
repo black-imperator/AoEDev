@@ -496,11 +496,28 @@ void CvInitCore::reassignPlayerAdvanced(PlayerTypes eOldID, PlayerTypes eNewID, 
 		m_aszPythonCheck[eOldID] = szPythonCheck;
 		m_aszXMLCheck[eOldID] = szXMLCheck;
 
+/*************************************************************************************************/
+/**	AoE MP Fix																			**/
+/**																							**/
+/**			Swap the PlayerOptions rather than clearing the old slot, so that a			**/
+/**			repeated reassign stays a clean no-op instead of wiping both slots.			**/
+/*************************************************************************************************/
+/**								---- Start Original Code ----							**
 		for (int iI = 0; iI < NUM_PLAYEROPTION_TYPES; iI++)
 		{
 			GET_PLAYER(eNewID).setOption((PlayerOptionTypes)iI,GET_PLAYER(eOldID).isOption((PlayerOptionTypes)iI));
 			GET_PLAYER(eOldID).setOption((PlayerOptionTypes)iI,false);
 		}
+/**								----  End Original Code  ----							**/
+		for (int iI = 0; iI < NUM_PLAYEROPTION_TYPES; iI++)
+		{
+			bool bOldOption = GET_PLAYER(eNewID).isOption((PlayerOptionTypes)iI);
+			GET_PLAYER(eNewID).setOption((PlayerOptionTypes)iI,GET_PLAYER(eOldID).isOption((PlayerOptionTypes)iI));
+			GET_PLAYER(eOldID).setOption((PlayerOptionTypes)iI,bOldOption);
+		}
+/*************************************************************************************************/
+/**	AoE MP Fix						END													**/
+/*************************************************************************************************/
 
 		// We may have a new active player id...
 		if (getActivePlayer() == eOldID)

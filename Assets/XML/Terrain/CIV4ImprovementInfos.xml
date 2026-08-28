@@ -1217,7 +1217,7 @@
 			<ImprovementClass>IMPROVEMENTCLASS_LUMBERMILL</ImprovementClass>
 			<Description>TXT_KEY_IMPROVEMENT_LUMBERMILL</Description>
 			<Civilopedia>TXT_KEY_IMPROVEMENT_LUMBERMILL_PEDIA</Civilopedia>
-			<Help/>
+			<Help>TXT_KEY_BUILD_LUMBERMILL_HELP</Help><Help/>
 			<ArtDefineTag>ART_DEF_IMPROVEMENT_LUMBERMILL</ArtDefineTag>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
@@ -6936,7 +6936,7 @@
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
 				<iYieldChange>0</iYieldChange>
-				<iYieldChange>0</iYieldChange>
+				<iYieldChange>3</iYieldChange>
 			</YieldChanges>
 			<BonusTypeStructs>
 				<BonusTypeStruct>
@@ -6948,7 +6948,7 @@
 					<YieldChanges>
 						<iYieldChange>0</iYieldChange>
 						<iYieldChange>0</iYieldChange>
-						<iYieldChange>3</iYieldChange>
+						<iYieldChange>0</iYieldChange>
 					</YieldChanges>
 				</BonusTypeStruct>
 				<BonusTypeStruct>
@@ -7035,6 +7035,18 @@
 						<iYieldChange>0</iYieldChange>
 					</YieldChanges>
 				</BonusTypeStruct>
+				<BonusTypeStruct>
+					<BonusType>BONUS_WHALE</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
 			</BonusTypeStructs>
 			<TechYieldChanges>
 				<TechYieldChange>
@@ -7054,7 +7066,6 @@
 					</TechYields>
 				</TechYieldChange>
 			</TechYieldChanges>
-			<BonusConvert>BONUS_ASH</BonusConvert>
 		</ImprovementInfo>
 		<ImprovementInfo><!-- D'teshi Catacombs -->
 			<Type>IMPROVEMENT_DTESH_CATACOMBS</Type>
@@ -12439,7 +12450,7 @@
             </RouteYieldChanges>
 			<iWorkingCityCrime>3</iWorkingCityCrime>
 			<FreeSpecialistClass>SPECIALISTCLASS_CITIZEN</FreeSpecialistClass>
-			<iSpawnUnitChancePercentMod>-75</iSpawnUnitChancePercentMod>
+			<iSpawnUnitChancePercentMod>-85</iSpawnUnitChancePercentMod>
 			<SpawnUnitType>UNIT_FREE_SPIRITS</SpawnUnitType>
 			<bSpawnOnlyForOwner>1</bSpawnOnlyForOwner>
 			<iSpawnAtOnceLimit>1</iSpawnAtOnceLimit>
@@ -13313,15 +13324,11 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_SUBTERRAN_MODERATE</GoodyClassType>
-					<bGoodyClass>1</bGoodyClass>
-				</GoodyClass>
-				<GoodyClass>
 					<GoodyClassType>GOODYCLASS_LIZARD_MAJOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 				<GoodyClass>
-					<GoodyClassType>GOODYCLASS_LIZARD_MODERATE</GoodyClassType>
+					<GoodyClassType>GOODYCLASS_NATURE_MAJOR</GoodyClassType>
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 				<GoodyClass>

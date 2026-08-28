@@ -1609,7 +1609,7 @@ def generateTerrainTypes():
 	useMapData = False
 
 	if terrainMethod == "standard":
-		terraingen = TerrainGenerator()
+		terraingen = CvMapGeneratorUtil.TerrainGenerator()
 		terrainTypes = terraingen.generateTerrain()
 		OutputMessage("Python: SmartMap: Step 3 Generate Terrain: complete standard")
 		return terrainTypes
@@ -2182,7 +2182,7 @@ def addFeatures2():
 
 	global featuregen
 	if featureMethod == "standard":
-		featuregen = FeatureGenerator()
+		featuregen = CvMapGeneratorUtil.FeatureGenerator()
 		featuregen.addFeatures()
 		OutputMessage("Python: SmartMap: Step 4 Feature Generation: complete standard")
 		return

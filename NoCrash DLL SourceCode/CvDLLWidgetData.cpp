@@ -1182,6 +1182,21 @@ bool CvDLLWidgetData::executeAltAction( CvWidgetDataStruct &widgetDataStruct )
 		break;
 //FfH: End Add
 
+
+	case WIDGET_PEDIA_JUMP_TO_UNIT_COMBAT:
+		doPediaUnitCombatJump(widgetDataStruct);
+		break;
+	case WIDGET_ACTION:
+		doPediaActionJump(widgetDataStruct);
+		break;
+	case WIDGET_PLOT_LIST:
+	case WIDGET_SLAVE_LIST:
+	case WIDGET_MINION_LIST:
+	case WIDGET_MASTER_UNIT:
+	case WIDGET_COMMANDER_UNIT:
+		doPediaPlotListUnitJump(widgetDataStruct);
+		break;
+
 	default:
 		bHandled = false;
 		break;
@@ -2109,6 +2124,110 @@ void CvDLLWidgetData::doPediaBuildJump(CvWidgetDataStruct &widgetDataStruct)
 	{
 		argsList.add(GC.getImprovementClassInfo(eImprovementClass).getDefaultImprovementIndex());
 		gDLL->getPythonIFace()->callFunction(PYScreensModule, "pediaJumpToImprovement", argsList.makeFunctionArgs());
+	}
+}
+
+void CvDLLWidgetData::doPediaActionJump(CvWidgetDataStruct &widgetDataStruct)
+{
+
+	if (widgetDataStruct.m_iData1 < 0 || widgetDataStruct.m_iData1 >= GC.getNumActionInfos())
+	{
+		return;
+	}
+
+	CvActionInfo& kAction = GC.getActionInfo(widgetDataStruct.m_iData1);
+
+	CvWidgetDataStruct widgetData = widgetDataStruct;
+	widgetData.m_iData1 = kAction.getOriginalIndex();
+
+	switch (kAction.getSubType())
+	{
+	case ACTIONSUBTYPE_PROMOTION:
+		doPediaPromotionJump(widgetData);
+		break;
+	case ACTIONSUBTYPE_SPELL:
+		doPediaSpellJump(widgetData);
+		break;
+	case ACTIONSUBTYPE_UNIT:
+		doPediaUnitJump(widgetData);
+		break;
+	case ACTIONSUBTYPE_BUILDING:
+		doPediaBuildingJump(widgetData);
+		break;
+	case ACTIONSUBTYPE_RELIGION:
+		doPediaReligionJump(widgetData);
+		break;
+	case ACTIONSUBTYPE_CORPORATION:
+		doPediaCorporationJump(widgetData);
+		break;
+	case ACTIONSUBTYPE_SPECIALIST:
+		widgetData.m_iData1 = GC.getSpecialistClassInfo((SpecialistClassTypes)kAction.getOriginalIndex()).getDefaultSpecialistIndex();
+		if (widgetData.m_iData1 != NO_SPECIALIST)
+		{
+			doPediaSpecialistJump(widgetData);
+		}
+		break;
+	case ACTIONSUBTYPE_BUILD:
+		widgetData.m_iData2 = kAction.getOriginalIndex();
+		doPediaBuildJump(widgetData);
+
+	default:
+		break;
+	}
+}
+
+void CvDLLWidgetData::doPediaPlotListUnitJump(CvWidgetDataStruct &widgetDataStruct)
+{
+	CvUnit* pUnit = NULL;
+	CvUnit* pSelectedUnit;
+
+	switch (widgetDataStruct.m_eWidgetType)
+	{
+	case WIDGET_PLOT_LIST:
+		{
+			int iUnitIndex = widgetDataStruct.m_iData1 + gDLL->getInterfaceIFace()->getPlotListColumn() - gDLL->getInterfaceIFace()->getPlotListOffset();
+			pUnit = gDLL->getInterfaceIFace()->getInterfacePlotUnit(gDLL->getInterfaceIFace()->getSelectionPlot(), iUnitIndex);
+		}
+		break;
+
+	case WIDGET_SLAVE_LIST:
+		pSelectedUnit = gDLL->getInterfaceIFace()->getHeadSelectedUnit();
+		if (pSelectedUnit != NULL)
+		{
+			pUnit = pSelectedUnit->getSlaveUnit(widgetDataStruct.m_iData1);
+		}
+		break;
+
+	case WIDGET_MINION_LIST:
+		pSelectedUnit = gDLL->getInterfaceIFace()->getHeadSelectedUnit();
+		if (pSelectedUnit != NULL)
+		{
+			pUnit = pSelectedUnit->getMinionUnit(widgetDataStruct.m_iData1);
+		}
+		break;
+
+	case WIDGET_MASTER_UNIT:
+		pSelectedUnit = gDLL->getInterfaceIFace()->getHeadSelectedUnit();
+		if (pSelectedUnit != NULL)
+		{
+			pUnit = pSelectedUnit->getMasterUnit();
+		}
+		break;
+
+	case WIDGET_COMMANDER_UNIT:
+		pSelectedUnit = gDLL->getInterfaceIFace()->getHeadSelectedUnit();
+		if (pSelectedUnit != NULL)
+		{
+			pUnit = pSelectedUnit->getCommanderUnit();
+		}
+		break;
+	}
+
+	if (pUnit != NULL)
+	{
+		CvWidgetDataStruct widgetData = widgetDataStruct;
+		widgetData.m_iData1 = pUnit->getUnitType();
+		doPediaUnitJump(widgetData);
 	}
 }
 
@@ -3048,7 +3167,7 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 				{
 					szBuffer.append(NEWLINE);
 					szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_WHEN_LEADING"));
-					GAMETEXT.parsePromotionHelp(szBuffer, (PromotionTypes)pHeadSelectedUnit->getUnitInfo().getLeaderPromotion(), L"\n   ");
+					GAMETEXT.parsePromotionHelp(szBuffer, (PromotionTypes)pHeadSelectedUnit->getUnitInfo().getLeaderPromotion(), false, L"\n   ");
 				}
 			}
 			else if (GC.getActionInfo(widgetDataStruct.m_iData1).getMissionType() == MISSION_ESPIONAGE)
@@ -3076,6 +3195,21 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 					if (eImprovement != NO_IMPROVEMENT)
 					{
 						iYield += pMissionPlot->calculateImprovementYieldChange(eImprovement, ((YieldTypes)iI), pHeadSelectedUnit->getOwnerINLINE());
+
+						// The improvement may swap the plot's bonus when it completes (mana nodes,
+						// refinery, ...) - see CvPlot::setImprovementType / getBonusConvert.
+						// calculateImprovementYieldChange keyed the improvement's bonus yield off the
+						// bonus present NOW, so re-base it onto the bonus that will be there instead.
+						BonusTypes eNewBonus = (BonusTypes)GC.getImprovementInfo(eImprovement).getBonusConvert();
+						if (eNewBonus != NO_BONUS && eNewBonus != eBonus)
+						{
+							iYield += GC.getImprovementInfo(eImprovement).getImprovementBonusYield(eNewBonus, iI);
+							if (eBonus != NO_BONUS)
+							{
+								iYield -= GC.getImprovementInfo(eImprovement).getImprovementBonusYield(eBonus, iI);
+							}
+						}
+
 						if (pMissionPlot->getImprovementType() != NO_IMPROVEMENT)
 						{
 							iYield -= pMissionPlot->calculateImprovementYieldChange(pMissionPlot->getImprovementType(), ((YieldTypes)iI), pHeadSelectedUnit->getOwnerINLINE());

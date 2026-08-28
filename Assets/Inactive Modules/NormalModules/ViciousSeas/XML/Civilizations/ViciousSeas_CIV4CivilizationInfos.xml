@@ -842,5 +842,14 @@
 			<Type>CIVILIZATION_LANUN</Type>
 			<CivTrait>TRAIT_FREEBOOTERS</CivTrait>
 		</CivilizationInfo>
+		<CivilizationInfo><!-- Grigori -->
+			<Type>CIVILIZATION_GRIGORI</Type>
+			<Improvements>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_TRAWLING_BOATS</ImprovementClassType>
+					<ImprovementType>NONE</ImprovementType>
+				</Improvement>
+			</Improvements>
+		</CivilizationInfo>
 	</CivilizationInfos>
 </Civ4CivilizationInfos>

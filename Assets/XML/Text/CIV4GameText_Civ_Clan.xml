@@ -45,7 +45,7 @@
 [ICON_BULLET]An important unique building, the [LINK=BUILDING_WARRENS]Agoge[\LINK], is available at [LINK=TECH_MASONRY]Masonry[\LINK]. It provides a large bonus to military production and lets you build multiple units in one turn if your production is high enough.
 [ICON_BULLET]Your unique recon units - the [LINK=UNIT_LOOTER]Looter[\LINK] and its upgrades - don't have the usual bonus against animals like most recon units, but they also don't have any penalty to city attack.
 [ICON_BULLET]The Clan hero, [LINK=UNIT_RANTINE]Rantine[\LINK], may seem like an unremarkable melee unit, but his unique strength lies in his ability to convert Barbarian cities to your faction - as long as he is the unit with the highest Attack in it. Percentage based promotions like Combat don't help, but base attack promotions like [LINK=PROMOITION_HEROIC_STRENGTH]Heroic Strength[\LINK] do.
-[ICON_BULLET]You can secure a military advantage over your early neighbours with the help of your [LINK=UNIT_OGRE]Ogres[\LINK], an all-around strong unit more powerful than most units of a similar tech level - and it also has ranged attacks, collateral damage, and can bombard city defenses! They require both [LINK=TECH_CONTSRUCTION]Construction[\LINK] and a [LINK=BUILDING_BARRACKS]Barracks[\LINK] (from [LINK=TECH_BRONZE_WORKING]Bronze Working)[\LINK] to be built.
+[ICON_BULLET]In the mid game, you have access to the powerful and versatile Ogre, an all-around unit with good strength, ranged attacks, collateral damage, and the ability to bombard city defenses! They require both Sanitation and a Barracks (from Bronze Working) to be built.
 [ICON_BULLET]While you can adopt any religion, you also get a line of unique Disciples of Bhall with access to damaging fire spells. The [LINK=UNIT_HIGH_PRIESTESS_OF_BHALL]High Priestess of Bhall[\LINK] is available with [LINK=TECH_THEOLOGY]Theology[\LINK] - and on the way, the flame slinging [LINK=UNIT_PRIEST_OF_BHALL]Orcish Druid[\LINK] is available at [LINK=TECH_FANATICISM]Fanaticism[\LINK].
 [ICON_BULLET]The Clan also has a special line of buildable commander units - the [LINK=UNIT_BOSS]Boss[\LINK], [LINK=UNIT_BIG_BOSS]Big Boss[\LINK], and [LINK=UNIT_WAR_BOSS]War Boss[\LINK] (who also replaces great generals). These units, as well as the [LINK=UNIT_OVERLORD]Overlord[\LINK] (which replaces fort commanders), can hire various Savage units for gold - starting with only [LINK=UNIT_JOT_TROLL]Wild Trolls[\LINK] but with more units becoming available with more technology. Check their [LINK=PROMOTION_WHIP]Where There's A Whip[\LINK] promotion for details. Units hired this way have a chance to turn Barbarian each turn, but these commander units prevent any unit under their command from changing faction.
 [ICON_BULLET]Your World Spell, [LINK=SPELL_FOR_THE_HORDE]For the Horde[\LINK], summons all Savages to the city it is used in, though they have a moderate chance of turning back into a Barbarian each turn - use them for a quick conquest against someone on your border.
@@ -206,11 +206,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_OGRE_WARCHIEF_STRATEGY</Tag>
-		<English>Say what you will about the lumbering Ogre Warchief, but they are to crafty to be trapped in battle. They will reappear in your capital if they are defeated.</English>
-		<French>Say what you will about the lumbering Ogre Warchief, but they are to crafty to be trapped in battle. They will reappear in your capital if they are defeated.</French>
-		<German>Say what you will about the lumbering Ogre Warchief, but they are to crafty to be trapped in battle. They will reappear in your capital if they are defeated.</German>
+		<English>Say what you will about the lumbering Ogre Warchief, but they are too crafty to be trapped in battle. They will reappear in your capital if they are defeated.</English>
+		<French>Say what you will about the lumbering Ogre Warchief, but they are too crafty to be trapped in battle. They will reappear in your capital if they are defeated.</French>
+		<German>Say what you will about the lumbering Ogre Warchief, but they are too crafty to be trapped in battle. They will reappear in your capital if they are defeated.</German>
 		<Italian>Si può dire quello che si vuole dei goffi Capoguerra Ogre, ma sono difficili da intrappolare in battaglia. Riappariranno nella tua capitale se vengono sconfitti.</Italian>
-		<Spanish>Say what you will about the lumbering Ogre Warchief, but they are to crafty to be trapped in battle. They will reappear in your capital if they are defeated.</Spanish>
+		<Spanish>Say what you will about the lumbering Ogre Warchief, but they are too crafty to be trapped in battle. They will reappear in your capital if they are defeated.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_STONESKIN_OGRE</Tag>

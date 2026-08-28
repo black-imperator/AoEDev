@@ -813,6 +813,14 @@ Workshops are the only improvement able to properly "exploit" the Obsidian resou
 		<Spanish>Logs go in one end, and cut beams, boards, posts, and shingles come out the other. Usually found near the edge of a forest, these mills are mainly powered by muscle and engineering.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BUILD_LUMBERMILL_HELP</Tag>
+		<English>[ICON_BULLET]Can not be Built on Ancient Forests.</English>
+		<French>[ICON_BULLET]Can not be Built on Ancient Forests.</French>
+		<German>[ICON_BULLET]Can not be Built on Ancient Forests.</German>
+		<Italian>[ICON_BULLET]Can not be Built on Ancient Forests.</Italian>
+		<Spanish>[ICON_BULLET]Can not be Built on Ancient Forests.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_STAEDDING_OLD_PEDIA</Tag>
 		<English>This steadding has been known to be home to giants. Though it's old now, it's doubtful the giants are all gone.</English>
 		<French>This steadding has been known to be home to giants. Though it's old now, it's doubtful the giants are all gone.</French>
@@ -1522,11 +1530,11 @@ Workshops are the only improvement able to properly "exploit" the Obsidian resou
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_PATH_OF_LUGUS</Tag>
-		<English>Build a [LINK=ROUT_PATH_OF_LUGUS]Path of Lugus[\LINK],</English>
-		<French>Build a [LINK=ROUT_PATH_OF_LUGUS]Path of Lugus[\LINK],</French>
-		<German>Build a [LINK=ROUT_PATH_OF_LUGUS]Path of Lugus[\LINK],</German>
-		<Italian>Build a [LINK=ROUT_PATH_OF_LUGUS]Path of Lugus[\LINK],</Italian>
-		<Spanish>Build a [LINK=ROUT_PATH_OF_LUGUS]Path of Lugus[\LINK],,</Spanish>
+		<English>Build a [LINK=ROUTE_PATH_OF_LUGUS]Path of Lugus[\LINK],</English>
+		<French>Build a [LINK=ROUTE_PATH_OF_LUGUS]Path of Lugus[\LINK],</French>
+		<German>Build a [LINK=ROUTE_PATH_OF_LUGUS]Path of Lugus[\LINK],</German>
+		<Italian>Build a [LINK=ROUTE_PATH_OF_LUGUS]Path of Lugus[\LINK],</Italian>
+		<Spanish>Build a [LINK=ROUTE_PATH_OF_LUGUS]Path of Lugus[\LINK],</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_AERON_VAULTGATE</Tag>

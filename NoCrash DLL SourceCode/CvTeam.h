@@ -136,6 +136,13 @@ public:
 	bool isMinorCiv() const;																														// Exposed to Python
 	PlayerTypes getLeaderID() const;																										// Exposed to Python
 	PlayerTypes getSecretaryID() const;																									// Exposed to Python
+/************************************************************************************************/
+/* AOE_COUNCIL_TEAM_MEMBERSHIP            08/27/26                                  Issue #521  */
+/************************************************************************************************/
+	PlayerTypes getSecretaryID(VoteSourceTypes eVoteSource) const;
+/************************************************************************************************/
+/* AOE_COUNCIL_TEAM_MEMBERSHIP            END                                                   */
+/************************************************************************************************/
 	HandicapTypes getHandicapType() const;																							// Exposed to Python
 	DllExport CvWString getName() const;																								// Exposed to Python
 

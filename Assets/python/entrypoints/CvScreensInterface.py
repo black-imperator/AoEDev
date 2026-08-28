@@ -232,7 +232,7 @@ def showUnVictoryScreen(argsList):
 # DynTraits Start
 dynTraitsScreen = CvTraitScreen.CvTraitScreen()
 def showTraitsScreen():
-	dynTraitsScreen.interfaceScreen(argsList[0])
+	dynTraitsScreen.interfaceScreen()
 	
 def showTraitPopup(argsList):
 	CvTraitScreen.showTraitPopup(argsList)
@@ -662,7 +662,15 @@ def liberateOnClickedCallback(argsList):
 	city = CyGlobalContext().getPlayer(CyGlobalContext().getGame().getActivePlayer()).getCity(iData1)
 	if (not city.isNone()):
 		if (iButtonId == 0):
-			CyMessageControl().sendDoTask(iData1, TaskTypes.TASK_LIBERATE, 0, -1, False, False, False, False)
+			# Issue #334: iData2 is the civ the popup promised the city to.
+			# TASK_LIBERATE re-derives that civ and silently does nothing when the
+			# answer has changed, so send TASK_GIFT instead: it still calls
+			# liberate() while getLiberationPlayer() agrees, and falls back to
+			# acquireCity() when it no longer does.
+			if (iData2 >= 0 and CyGlobalContext().getPlayer(iData2).isAlive()):
+				CyMessageControl().sendDoTask(iData1, TaskTypes.TASK_GIFT, iData2, -1, False, False, False, False)
+			else:
+				CyMessageControl().sendDoTask(iData1, TaskTypes.TASK_LIBERATE, 0, -1, False, False, False, False)
 		elif (iButtonId == 2):
 			CyInterface().selectCity(city, False)
 

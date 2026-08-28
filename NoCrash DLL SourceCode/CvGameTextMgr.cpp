@@ -106,6 +106,7 @@ void CvGameTextMgr::DeInitialize()
 	{
 		delete [] m_apbPromotion[i];
 	}
+	m_apbPromotion.clear();
 }
 
 //----------------------------------------------------------------------------
@@ -3756,11 +3757,15 @@ void CvGameTextMgr::setPlotListHelp(CvWStringBuffer &szString, CvPlot* pPlot, bo
 		aiUnitStrength.erase(aiUnitStrength.begin(), aiUnitStrength.end());
 		aiUnitMaxStrength.erase(aiUnitMaxStrength.begin(), aiUnitMaxStrength.end());
 
+		// The promotion tally is stored sparsely: only the (unit type, owner) pairs actually
+		// present on this plot ever get a row.  Allocating all of them up front would ask for
+		// getNumUnitInfos() * MAX_PLAYERS * getNumPromotionInfos() ints in one burst, which is
+		// hundreds of megabytes with current data and fails in a 32 bit process.
 		if (m_apbPromotion.size() == 0)
 		{
 			for (int iI = 0; iI < (GC.getNumUnitInfos() * MAX_PLAYERS); ++iI)
 			{
-				m_apbPromotion.push_back(new int[numPromotionInfos]);
+				m_apbPromotion.push_back(NULL);
 			}
 		}
 
@@ -3769,10 +3774,6 @@ void CvGameTextMgr::setPlotListHelp(CvWStringBuffer &szString, CvPlot* pPlot, bo
 			aiUnitNumbers.push_back(0);
 			aiUnitStrength.push_back(0);
 			aiUnitMaxStrength.push_back(0);
-			for (int iJ = 0; iJ < numPromotionInfos; iJ++)
-			{
-				m_apbPromotion[iI][iJ] = 0;
-			}
 		}
 	}
 
@@ -3791,6 +3792,17 @@ void CvGameTextMgr::setPlotListHelp(CvWStringBuffer &szString, CvPlot* pPlot, bo
 				if (aiUnitNumbers[iIndex] == 0)
 				{
 					++iCount;
+
+					// first time this unit type / owner pair is seen on this plot, so create
+					// its promotion row if we do not have one yet and clear it for this pass
+					if (m_apbPromotion[iIndex] == NULL)
+					{
+						m_apbPromotion[iIndex] = new int[numPromotionInfos];
+					}
+					for (int iJ = 0; iJ < numPromotionInfos; iJ++)
+					{
+						m_apbPromotion[iIndex][iJ] = 0;
+					}
 				}
 				++aiUnitNumbers[iIndex];
 
@@ -3818,7 +3830,7 @@ void CvGameTextMgr::setPlotListHelp(CvWStringBuffer &szString, CvPlot* pPlot, bo
 	{
 		if (pPlot->getCenterUnit())
 		{
-			setUnitHelp(szString, pPlot->getCenterUnit(), iNumVisibleUnits > iMaxNumUnits);
+			setUnitHelp(szString, pPlot->getCenterUnit(), iNumVisibleUnits > iMaxNumUnits, true);
 		}
 
 		uint iNumShown = std::min<uint>(iMaxNumUnits, iNumVisibleUnits);
@@ -11742,10 +11754,13 @@ void CvGameTextMgr::parsePromotionHelp(CvWStringBuffer &szBuffer, PromotionTypes
 			{
 				szBuffer.append(gDLL->getText("TXT_KEY_LINK", GC.getImprovementInfo((ImprovementTypes)GC.getImprovementClassInfo((ImprovementClassTypes)GC.getBuildInfo((BuildTypes)GC.getPromotionInfo(ePromotion).getPromotionBuilds(iI)).getImprovementClass()).getDefaultImprovementIndex()).getTextKeyWide(), GC.getImprovementInfo((ImprovementTypes)GC.getImprovementClassInfo((ImprovementClassTypes)GC.getBuildInfo((BuildTypes)GC.getPromotionInfo(ePromotion).getPromotionBuilds(iI)).getImprovementClass()).getDefaultImprovementIndex()).getTextKeyWide()));
 			}
-			else
+			else if (GC.getBuildInfo((BuildTypes)GC.getPromotionInfo(ePromotion).getPromotionBuilds(iI)).getRoute() != NO_ROUTE)
 			{
 				szBuffer.append(gDLL->getText("TXT_KEY_LINK", GC.getRouteInfo((RouteTypes)GC.getBuildInfo((BuildTypes)GC.getPromotionInfo(ePromotion).getPromotionBuilds(iI)).getRoute()).getTextKeyWide(), GC.getRouteInfo((RouteTypes)GC.getBuildInfo((BuildTypes)GC.getPromotionInfo(ePromotion).getPromotionBuilds(iI)).getRoute()).getTextKeyWide()));
-
+			}
+			else
+			{
+				szBuffer.append(gDLL->getText("TXT_KEY_LINK", GC.getBuildInfo((BuildTypes)GC.getPromotionInfo(ePromotion).getPromotionBuilds(iI)).getTextKeyWide(), GC.getBuildInfo((BuildTypes)GC.getPromotionInfo(ePromotion).getPromotionBuilds(iI)).getTextKeyWide()));
 			}
 			bFirst = false;
 		}
@@ -11763,7 +11778,18 @@ void CvGameTextMgr::parsePromotionHelp(CvWStringBuffer &szBuffer, PromotionTypes
 			{
 				szBuffer.append(gDLL->getText("TXT_KEY_AND"));
 			}
-			szBuffer.append(gDLL->getText("TXT_KEY_LINK", GC.getImprovementClassInfo((ImprovementClassTypes)GC.getBuildInfo((BuildTypes)GC.getPromotionInfo(ePromotion).getPromotionCannotBuilds(iI)).getImprovementClass()).getTextKeyWide(), GC.getImprovementClassInfo((ImprovementClassTypes)GC.getBuildInfo((BuildTypes)GC.getPromotionInfo(ePromotion).getPromotionCannotBuilds(iI)).getImprovementClass()).getTextKeyWide()));
+			if (GC.getBuildInfo((BuildTypes)GC.getPromotionInfo(ePromotion).getPromotionCannotBuilds(iI)).getImprovementClass() != NO_IMPROVEMENTCLASS)
+			{
+				szBuffer.append(gDLL->getText("TXT_KEY_LINK", GC.getImprovementInfo((ImprovementTypes)GC.getImprovementClassInfo((ImprovementClassTypes)GC.getBuildInfo((BuildTypes)GC.getPromotionInfo(ePromotion).getPromotionCannotBuilds(iI)).getImprovementClass()).getDefaultImprovementIndex()).getTextKeyWide(), GC.getImprovementInfo((ImprovementTypes)GC.getImprovementClassInfo((ImprovementClassTypes)GC.getBuildInfo((BuildTypes)GC.getPromotionInfo(ePromotion).getPromotionCannotBuilds(iI)).getImprovementClass()).getDefaultImprovementIndex()).getTextKeyWide()));
+			}
+			else if (GC.getBuildInfo((BuildTypes)GC.getPromotionInfo(ePromotion).getPromotionCannotBuilds(iI)).getRoute() != NO_ROUTE)
+			{
+				szBuffer.append(gDLL->getText("TXT_KEY_LINK", GC.getRouteInfo((RouteTypes)GC.getBuildInfo((BuildTypes)GC.getPromotionInfo(ePromotion).getPromotionCannotBuilds(iI)).getRoute()).getTextKeyWide(), GC.getRouteInfo((RouteTypes)GC.getBuildInfo((BuildTypes)GC.getPromotionInfo(ePromotion).getPromotionCannotBuilds(iI)).getRoute()).getTextKeyWide()));
+			}
+			else
+			{
+				szBuffer.append(gDLL->getText("TXT_KEY_LINK", GC.getBuildInfo((BuildTypes)GC.getPromotionInfo(ePromotion).getPromotionCannotBuilds(iI)).getTextKeyWide(), GC.getBuildInfo((BuildTypes)GC.getPromotionInfo(ePromotion).getPromotionCannotBuilds(iI)).getTextKeyWide()));
+			}
 			bFirst = false;
 		}
 	}
@@ -14905,7 +14931,6 @@ void CvGameTextMgr::parseSpellHelp(CvWStringBuffer &szBuffer, SpellTypes eSpell,
 	{
 		if (!CvWString(GC.getSpellInfo(eSpell).getPythonHelp()).empty())
 		{
-			CvWString szHelp;
 			CLLNode<IDInfo>* pSelectedUnitNode;
 			CvUnit* pSelectedUnit;
 			pSelectedUnitNode = gDLL->getInterfaceIFace()->headSelectionListNode();
@@ -14914,8 +14939,9 @@ void CvGameTextMgr::parseSpellHelp(CvWStringBuffer &szBuffer, SpellTypes eSpell,
 			{
 				pSelectedUnit = ::getUnit(pSelectedUnitNode->m_data);
 
-				if (pSelectedUnit->canCast(eSpell, false))
+				if (pSelectedUnit->canCast(eSpell, true))
 				{
+					CvWString szHelp;
 					CyUnit* pyCaster;
 					CyArgsList argsList;
 					argsList.add(eSpell);

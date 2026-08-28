@@ -305,21 +305,6 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 	setName(GET_PLAYER(getOwnerINLINE()).getNewCityName());
 
 	setEverOwned(getOwnerINLINE(), true);
-	/*************************************************************************************************/
-	/**	People's Choice							07/30/08								Xienwolf	**/
-	/**																								**/
-	/**					Updates CityBonuses when Founding a City or Changing Owners					**/
-	/*************************************************************************************************/
-	for (int iI = 0; iI < MAX_PLAYERS; iI++)
-	{
-		if (GET_PLAYER((PlayerTypes)iI).isAlive())
-		{
-			GET_PLAYER((PlayerTypes)iI).updateCityBonuses(false);
-		}
-	}
-	/*************************************************************************************************/
-	/**	People's Choice							END													**/
-	/*************************************************************************************************/
 
 	updateCultureLevel(false);
 

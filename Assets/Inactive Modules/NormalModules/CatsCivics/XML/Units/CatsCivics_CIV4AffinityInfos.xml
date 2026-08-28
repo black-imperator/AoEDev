@@ -25,10 +25,10 @@
 				</AffinityDamageType>
 			</AffinityDamageTypes>
 		</AffinityInfo>
-		<AffinityInfo><!-- Tinker Affinity -->
+		<AffinityInfo><!-- Tinker Affinity ViciousSeas -->
 			<Type>AFFINITY_TINKER</Type>
 			<Description>TXT_KEY_AFFINITY_TINKER</Description>
-			<Civilopedia>TXT_KEY_AFFINITY_AFFINITY_TINKER</Civilopedia>
+			<Civilopedia>TXT_KEY_AFFINITY_TINKER_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_AFFINITY_TINKER_STRATEGY</Strategy>
 			<BonusTypes>
 				<BonusType>BONUS_REAGENTS</BonusType>
@@ -36,6 +36,27 @@
 				<BonusType>BONUS_COPPER</BonusType>
 				<BonusType>BONUS_MANA_ENCHANTMENT</BonusType>
 				<BonusType>BONUS_GIANT_KRAKEN_EYE</BonusType>
+			</BonusTypes>
+			<AffinityDamageTypes>
+				<AffinityDamageType>
+					<DamageType>DAMAGE_PHYSICAL</DamageType>
+					<fCombat>0.1</fCombat>
+				</AffinityDamageType>
+			</AffinityDamageTypes>
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_VICIOUSSEAS</DependencyType>
+		     </AndDependencyTypes>
+		</AffinityInfo>
+		<AffinityInfo><!-- Tinker Affinity -->
+			<Type>AFFINITY_TINKER</Type>
+			<Description>TXT_KEY_AFFINITY_TINKER</Description>
+			<Civilopedia>TXT_KEY_AFFINITY_TINKER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_AFFINITY_TINKER_STRATEGY</Strategy>
+			<BonusTypes>
+				<BonusType>BONUS_REAGENTS</BonusType>
+				<BonusType>BONUS_GUNPOWDER</BonusType>
+				<BonusType>BONUS_COPPER</BonusType>
+				<BonusType>BONUS_MANA_ENCHANTMENT</BonusType>
 			</BonusTypes>
 			<AffinityDamageTypes>
 				<AffinityDamageType>

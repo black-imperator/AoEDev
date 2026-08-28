@@ -733,9 +733,9 @@ class CvCorporationScreen:
 				cs.handleAction(9, self.iLeftPlayer)
 
 		elif sTag == "currentPlayer" :
+			del self.turnMovie[0]
 			if self.iActivePlayer == self.iLeftPlayer :
 				cs.handleAction(10, self.iLeftPlayer, lArgs[0])
-				del self.turnMovie[0]
 
 		elif sTag == "endMovieMP" :
 			del self.turnMovie[0]

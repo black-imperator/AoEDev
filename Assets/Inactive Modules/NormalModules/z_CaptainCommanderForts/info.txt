@@ -1,0 +1,14 @@
+[name]
+CaptainCommanderForts
+[version]
+0.3
+[rifeversion]
+368
+[author]
+Captain
+[dependency]
+;
+[compatible]
+;
+[desc]
+Changes fort commanders to be commander type units with no range attacks, UUs rebalanced appropriately. More in changes.txt.

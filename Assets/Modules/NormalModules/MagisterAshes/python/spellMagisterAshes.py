@@ -36,11 +36,11 @@ def helpUnleashUnraveling(lpUnits, eSpell, sUnit='', iAC=0):
 			szBuffer += '\n' + sHelp
 	return szBuffer
 
-def helpUnleashAbaddon(argsList):
+def helpUnleashAbaddon(argsList, iAC=0):
 	szBuffer = ''
 	iUnit = gc.getInfoTypeForString('UNIT_ABADDON')
 	if -1 < iUnit < gc.getNumUnitInfos():
-		Unitinfo =GC.getUnitInfo(iUnit)
+		Unitinfo =gc.getUnitInfo(iUnit)
 		szBuffer += CyTranslator().getText("TXT_KEY_SPELL_SUMMON_UNIT", (Unitinfo.getDescription(),))
 		if iAC > 0:
 			sHelp = CyTranslator().getText("TXT_KEY_UNIT_PREREQ_GLOBAL_COUNTER", (iAC,))
@@ -190,16 +190,16 @@ def exploreLairBreakWiddershinsCurse(pUnit, pPlot):
 		newUnit8  = initUnit( getInfoType("UNIT_OSTAURII_RIDER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 		newUnit9  = initUnit( getInfoType("UNIT_OSTAURII_RIDER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 		newUnit10  = initUnit( getInfoType("UNIT_WORKER"), iX, iY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-		if pPlayer.isHuman():
+		if gc.getPlayer(iPlayer).isHuman():
 			popupInfo = CyPopupInfo()
 			popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_PYTHON)
 			popupInfo.setText(CyTranslator().getText("TXT_KEY_POPUP_CONTROL_ONCE_ELVES",()))
-			popupInfo.setData1(player)
+			popupInfo.setData1(iPlayer)
 			popupInfo.setData2(iInfernalPlayer)
 			popupInfo.addPythonButton(CyTranslator().getText("TXT_KEY_POPUP_YES", ()), "")
 			popupInfo.addPythonButton(CyTranslator().getText("TXT_KEY_POPUP_NO", ()), "")
 			popupInfo.setOnClickedPythonCallback("reassignPlayer")
-			popupInfo.addPopup(player)
+			popupInfo.addPopup(iPlayer)
 #		if getPlayer(iPlayer).isHuman() and not game.GetWorldBuilderMode():
 #			popupInfo = CyPopupInfo()
 #			popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_PYTHON)
@@ -258,7 +258,7 @@ def spellUnleashOdio(pCaster, eSpell=-1):
 def effectBoneCirclet(pCaster):
 	iRnd = CyGame().getSorenRandNum(100,"Bonecirclet wraith")
 	if iRnd<3:
-		pNewPlot = findClearPlot(-1, pPlot)
+		pNewPlot = findClearPlot(-1, pCaster.plot())
 		bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 		newUnit = bPlayer.initUnit(getInfoType('UNIT_WRAITH'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	

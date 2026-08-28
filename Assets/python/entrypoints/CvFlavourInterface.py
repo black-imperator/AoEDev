@@ -422,9 +422,14 @@ def onClimateChange(argsList):
 	eClimateOld = argsList[2]
 	eClimateNew = argsList[3]
 	eTerrain = pPlot.getTerrainType()
-	eFeature = pPlot.getFeatureType()
-	eImprovement = pPlot.getImprovementType()
-	iVariety = pPlot.getFeatureVariety()
+	# CvPlot::setClimate has ALREADY switched the terrain before calling us, and
+	# CvPlot::setTerrainType strips any feature that is not valid on the new
+	# terrain - a Forest cannot stand on Desert. Reading pPlot.getFeatureType()
+	# here therefore returns NO_FEATURE for exactly the transitions this hook is
+	# meant to handle, which silently destroyed the feature instead of converting
+	# it. The DLL now passes in the feature the plot held before the change.
+	eFeature = argsList[4]
+	iVariety = argsList[5]
 	eImprovement = pPlot.getImprovementType()
 
 	iOasis = GetInfoType('FEATURE_OASIS')
@@ -441,12 +446,20 @@ def onClimateChange(argsList):
 	sTrees = ['FOREST', 'FOREST_NEW', 'JUNGLE', "SCRUB"]
 	iTrees = [GetInfoType('FEATURE_' + sFeature) for sFeature in sTrees]
 
+	# Each conversion below clears the plot before planting the replacement:
+	# canHaveFeature() reports False while any feature is still present, and it
+	# is what keeps us from planting a feature the new terrain cannot hold (for
+	# instance Forest on the Tundra of a Frost zone). A plot whose replacement is
+	# invalid is simply left bare, which is what happened before this fix.
+
 	# Was Arid: Remove Flood Plains and transform Scrubs to New Forests
 	if eClimateOld == GetInfoType("CLIMATEZONE_ARID"):
 		if eFeature == iFloodPlains:
 			pPlot.setFeatureType(FeatureTypes.NO_FEATURE, VarietyTypes.NO_VARIETY)
 		if eFeature == iScrub:
-			pPlot.setFeatureType(iNewForest, VarietyTypes.NO_VARIETY)
+			pPlot.setFeatureType(FeatureTypes.NO_FEATURE, VarietyTypes.NO_VARIETY)
+			if pPlot.canHaveFeature(iNewForest):
+				pPlot.setFeatureType(iNewForest, VarietyTypes.NO_VARIETY)
 
 	# Was Glacial: Remove Crystal Plains
 	elif eClimateOld == GetInfoType("CLIMATEZONE_GLACIAL"):
@@ -461,38 +474,49 @@ def onClimateChange(argsList):
 	# Became Frost: Make Forest Boreal
 	if eClimateNew == GetInfoType("CLIMATEZONE_FROST"):
 		if eFeature in iTrees:
-			pPlot.setFeatureType(iForest, VarietyTypes.BOREAL_FOREST)
+			pPlot.setFeatureType(FeatureTypes.NO_FEATURE, VarietyTypes.NO_VARIETY)
+			if pPlot.canHaveFeature(iForest):
+				pPlot.setFeatureType(iForest, VarietyTypes.BOREAL_FOREST)
 
 	# Became Glacial: Make Forest Boreal
 	elif eClimateNew == GetInfoType("CLIMATEZONE_GLACIAL"):
 		if eFeature in iTrees:
-			pPlot.setFeatureType(iForest, VarietyTypes.BOREAL_FOREST)
+			pPlot.setFeatureType(FeatureTypes.NO_FEATURE, VarietyTypes.NO_VARIETY)
+			if pPlot.canHaveFeature(iForest):
+				pPlot.setFeatureType(iForest, VarietyTypes.BOREAL_FOREST)
 		if pPlot.canHaveFeature(iCrystalPlains):
 			pPlot.setFeatureType(iCrystalPlains, VarietyTypes.NO_VARIETY)
 
 	# Became Boreal: Make Forest Boreal
 	elif eClimateNew == GetInfoType("CLIMATEZONE_BOREAL"):
 		if eFeature in iTrees:
-			pPlot.setFeatureType(iForest, VarietyTypes.BOREAL_FOREST)
+			pPlot.setFeatureType(FeatureTypes.NO_FEATURE, VarietyTypes.NO_VARIETY)
+			if pPlot.canHaveFeature(iForest):
+				pPlot.setFeatureType(iForest, VarietyTypes.BOREAL_FOREST)
 
 	# Became Temperate:
 	elif eClimateNew == GetInfoType("CLIMATEZONE_TEMPERATE"):
 		if eFeature in iTrees:
 			if eFeature != iNewForest:
-				pPlot.setFeatureType(iForest, VarietyTypes.NO_VARIETY)
+				pPlot.setFeatureType(FeatureTypes.NO_FEATURE, VarietyTypes.NO_VARIETY)
+				if pPlot.canHaveFeature(iForest):
+					pPlot.setFeatureType(iForest, VarietyTypes.NO_VARIETY)
 
 	# Became Semiarid:
 	elif eClimateNew == GetInfoType("CLIMATEZONE_SEMIARID"):
 		if eFeature in iTrees:
 			if eFeature != iNewForest:
-				pPlot.setFeatureType(iForest, VarietyTypes.NO_VARIETY)
+				pPlot.setFeatureType(FeatureTypes.NO_FEATURE, VarietyTypes.NO_VARIETY)
+				if pPlot.canHaveFeature(iForest):
+					pPlot.setFeatureType(iForest, VarietyTypes.NO_VARIETY)
 
 	# Became Arid: Add Scrubs, Flood Plains and the occasional Oasis
 	elif eClimateNew == GetInfoType("CLIMATEZONE_ARID"):
 		if eFeature in iTrees:
 			pPlot.setFeatureType(FeatureTypes.NO_FEATURE, VarietyTypes.NO_VARIETY)
 			if not pPlot.isRiver():
-				pPlot.setFeatureType(iScrub, VarietyTypes.NO_VARIETY)
+				if pPlot.canHaveFeature(iScrub):
+					pPlot.setFeatureType(iScrub, VarietyTypes.NO_VARIETY)
 		if pPlot.canHaveFeature(iFloodPlains):
 			pPlot.setFeatureType(iFloodPlains, VarietyTypes.NO_VARIETY)
 		if pPlot.canHaveFeature(iOasis):
@@ -508,7 +532,14 @@ def onClimateChange(argsList):
 			pPlot.setFeatureType(FeatureTypes.NO_FEATURE, VarietyTypes.NO_VARIETY)
 			pPlot.setPlotEffectType(iHauntedLands)
 		if eFeature == iAncientForest:
-			pPlot.setImprovementType(iBlightedForest)
+			# Only blight a forest that is actually still standing.
+			# IMPROVEMENT_BLIGHTED_FOREST is bPermanent + bRequiresFeature and lists
+			# no FeatureMakesValid, so once it is placed CvPlot::setFeatureType
+			# refuses every later feature change on the plot. Placing it on a tile
+			# whose forest the terrain switch already removed would wedge that tile
+			# with a permanent improvement and no feature.
+			if pPlot.getFeatureType() == iAncientForest:
+				pPlot.setImprovementType(iBlightedForest)
 		if eFeature == iOasis:
 			pPlot.setFeatureType(FeatureTypes.NO_FEATURE, VarietyTypes.NO_VARIETY)
 		# Rather than remove rivers, wasteland gains no benefit from river adjacency.

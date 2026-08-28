@@ -933,6 +933,7 @@ public:
 /*************************************************************************************************/
 /**	Tweak									END													**/
 /*************************************************************************************************/
+	void applyTraitFreePromotions(TraitTypes eTrait);
 
 	DllExport int getSubUnitCount() const;
 	DllExport int getSubUnitsAlive() const;
@@ -1365,7 +1366,7 @@ public:
 	int getPromotionDuration(PromotionTypes eIndex) const;
 	void setPromotionDuration(PromotionTypes eIndex, int iNewValue);
 	void salvage(CvUnit* pDeadUnit);
-	void applyCityBonusEffects(bool bActivate, bool bAlterFullMap = false);
+	void applyCityBonusEffects(bool bActivate, bool bAlterFullMap = false, bool bFullMapOnly = false);
 	void ReportEventToPython(CvUnit* pUnit, char* szEvent);
 	void ReportEventToPython(CvUnit* pUnit, int iValue, char* szEvent);
 	void ReportEventToPython(CvUnit* pUnit, int iValue1, int iValue2, char* szEvent);
