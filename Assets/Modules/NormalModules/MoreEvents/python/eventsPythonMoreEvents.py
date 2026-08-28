@@ -378,7 +378,10 @@ def doDemonSign2(argsList):
 	kTriggeredData = argsList[1]
 	pPlayer = gc.getPlayer(kTriggeredData.ePlayer)
 	pCity = pPlayer.getCity(kTriggeredData.iCityId)
-	newUnit = pPlayer.initUnit(gc.getInfoTypeForString('UNIT_PROPHET'), pCity.getX(), pCity.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+	iRewardUnit = pCity.getCityUnits(gc.getInfoTypeForString('UNITCLASS_PROPHET'))
+	if iRewardUnit == -1:
+		iRewardUnit = gc.getInfoTypeForString('UNIT_PROPHET')
+	newUnit = pPlayer.initUnit(iRewardUnit, pCity.getX(), pCity.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
 def helpDemonSign2(argsList):
 	iEvent = argsList[0]
