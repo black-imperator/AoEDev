@@ -106,6 +106,7 @@ void CvGameTextMgr::DeInitialize()
 	{
 		delete [] m_apbPromotion[i];
 	}
+	m_apbPromotion.clear();
 }
 
 //----------------------------------------------------------------------------
@@ -3756,11 +3757,15 @@ void CvGameTextMgr::setPlotListHelp(CvWStringBuffer &szString, CvPlot* pPlot, bo
 		aiUnitStrength.erase(aiUnitStrength.begin(), aiUnitStrength.end());
 		aiUnitMaxStrength.erase(aiUnitMaxStrength.begin(), aiUnitMaxStrength.end());
 
+		// The promotion tally is stored sparsely: only the (unit type, owner) pairs actually
+		// present on this plot ever get a row.  Allocating all of them up front would ask for
+		// getNumUnitInfos() * MAX_PLAYERS * getNumPromotionInfos() ints in one burst, which is
+		// hundreds of megabytes with current data and fails in a 32 bit process.
 		if (m_apbPromotion.size() == 0)
 		{
 			for (int iI = 0; iI < (GC.getNumUnitInfos() * MAX_PLAYERS); ++iI)
 			{
-				m_apbPromotion.push_back(new int[numPromotionInfos]);
+				m_apbPromotion.push_back(NULL);
 			}
 		}
 
@@ -3769,10 +3774,6 @@ void CvGameTextMgr::setPlotListHelp(CvWStringBuffer &szString, CvPlot* pPlot, bo
 			aiUnitNumbers.push_back(0);
 			aiUnitStrength.push_back(0);
 			aiUnitMaxStrength.push_back(0);
-			for (int iJ = 0; iJ < numPromotionInfos; iJ++)
-			{
-				m_apbPromotion[iI][iJ] = 0;
-			}
 		}
 	}
 
@@ -3791,6 +3792,17 @@ void CvGameTextMgr::setPlotListHelp(CvWStringBuffer &szString, CvPlot* pPlot, bo
 				if (aiUnitNumbers[iIndex] == 0)
 				{
 					++iCount;
+
+					// first time this unit type / owner pair is seen on this plot, so create
+					// its promotion row if we do not have one yet and clear it for this pass
+					if (m_apbPromotion[iIndex] == NULL)
+					{
+						m_apbPromotion[iIndex] = new int[numPromotionInfos];
+					}
+					for (int iJ = 0; iJ < numPromotionInfos; iJ++)
+					{
+						m_apbPromotion[iIndex][iJ] = 0;
+					}
 				}
 				++aiUnitNumbers[iIndex];
 
