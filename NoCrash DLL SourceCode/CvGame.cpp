@@ -9084,37 +9084,11 @@ void CvGame::read(FDataStreamBase* pStream)
 	pStream->Read(GC.getNumVoteSourceInfos(), m_pabGamblingRing);
 /*************************************************************************************************/
 /**	Overcouncil Bonus Ban					08/24/26									 Fix #420	**/
-/**		Saves before uiFlag 2 hold a single bonus indexed array that nothing ever read.			**/
-/**		Consume it to keep the stream aligned, then rebuild the real bans from the				**/
-/**		resolutions that are still in force.													**/
+/**		NoBonus bans are stored per vote source instead of as one global bonus-indexed array.	**/
 /*************************************************************************************************/
-	if (uiFlag < 2)
+	for (int iSource = 0; iSource < GC.getNumVoteSourceInfos(); iSource++)
 	{
-		bool* pabLegacyNoBonus = new bool[GC.getNumBonusInfos()];
-		pStream->Read(GC.getNumBonusInfos(), pabLegacyNoBonus);
-		SAFE_DELETE_ARRAY(pabLegacyNoBonus);
-
-		for (int iVote = 0; iVote < GC.getNumVoteInfos(); iVote++)
-		{
-			CvVoteInfo& kVote = GC.getVoteInfo((VoteTypes)iVote);
-			if (kVote.getNoBonus() != NO_BONUS && isVotePassed((VoteTypes)iVote))
-			{
-				for (int iSource = 0; iSource < GC.getNumVoteSourceInfos(); iSource++)
-				{
-					if (kVote.isVoteSourceType(iSource))
-					{
-						m_ppabNoBonus[iSource][kVote.getNoBonus()] = true;
-					}
-				}
-			}
-		}
-	}
-	else
-	{
-		for (int iSource = 0; iSource < GC.getNumVoteSourceInfos(); iSource++)
-		{
-			pStream->Read(GC.getNumBonusInfos(), m_ppabNoBonus[iSource]);
-		}
+		pStream->Read(GC.getNumBonusInfos(), m_ppabNoBonus[iSource]);
 	}
 	updateAnyNoBonus();
 /*************************************************************************************************/
