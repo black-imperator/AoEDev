@@ -13,7 +13,7 @@
 			<Help>TXT_KEY_SPELL_GO_HUNTING_SPIDER_STANCES_HELP</Help>
 			<PromotionPrereq1>PROMOTION_SPIDER_TERRITORIAL</PromotionPrereq1>
 			<bAllowAI>0</bAllowAI>
-			<bDisplayWhenDisabled>0</bDisplayWhenDisabled>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
 			<bHasCasted>1</bHasCasted>
 			<AddPromotions>
 				<AddPromotion>PROMOTION_SPIDER_HUNTING</AddPromotion>
@@ -34,7 +34,7 @@
 			<Help>TXT_KEY_SPELL_PROTECT_TERRITORY_SPIDER_STANCES_HELP</Help>
 			<PromotionPrereq1>PROMOTION_SPIDER_HUNTING</PromotionPrereq1>
 			<bAllowAI>0</bAllowAI>
-			<bDisplayWhenDisabled>0</bDisplayWhenDisabled>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
 			<bHasCasted>1</bHasCasted>
 			<AddPromotions>
 				<AddPromotion>PROMOTION_SPIDER_TERRITORIAL</AddPromotion>

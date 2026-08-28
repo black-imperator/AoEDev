@@ -1,7 +1,7 @@
 The aim of this module is to let Archos (mainly, though other civs can too) use their spiders as 'regular melee units'. One weakness of using regular giant spiders in your army previously is that they all have forced hidden nationality and stealth, making them unable to block enemies if the enemy lacked perception and prone to getting attacked by random wandering units. Now you can put them in territorial mode to have them act normally.
 
 [ OVERVIEW v1 ]
-Baby Spiders, Spiders, and Giant Spiders now can toggle between two modes while in allied borders. In hunting mode, they have stealth 1, hidden nationality, and cannot receive defensive bonuses. While in territorial mode, they do not have stealth or hidden nationality, but can receive defensive bonuses. 
+Baby Spiders, Spiders, and Giant Spiders now can toggle between two modes while in your own borders. In hunting mode, they have stealth 1, hidden nationality, and cannot receive defensive bonuses. While in territorial mode, they do not have stealth or hidden nationality, but can receive defensive bonuses. 
 
 When a spider upgrades, either a baby spider growing up or a medium spider using the become giant spell, it defaults back to hunting mode - all that bulking up makes them hungry again. (technically a small implementation limitation)
 
