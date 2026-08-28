@@ -714,6 +714,7 @@ class GoldTrade(AbstractStatefulAlert):
 		for iLoopPlayer in range(gc.getMAX_PLAYERS()):
 			if (iLoopPlayer == iPlayer): continue #ignore ourselves and go to next player
 			pLoopPlayer = gc.getPlayer(iLoopPlayer)
+			if (not pLoopPlayer.isAlive()): continue #empty player slots have no leader, AI_maxGoldTrade would crash
 			iLoopTeam = pLoopPlayer.getTeam()
 			pLoopTeam = gc.getTeam(iLoopTeam)
 			# TODO: does this need to check for war or trade denial?
@@ -761,6 +762,7 @@ class GoldPerTurnTrade(AbstractStatefulAlert):
 		for rival in range(gc.getMAX_PLAYERS()):
 			if (rival == player): continue
 			rivalPlayer = gc.getPlayer(rival)
+			if (not rivalPlayer.isAlive()): continue #empty player slots have no leader, AI_maxGoldPerTurnTrade would crash
 			rivalTeam = gc.getTeam(rivalPlayer.getTeam())
 			# TODO: does this need to check for war or trade denial?
 			if (team.isHasMet(rivalPlayer.getTeam())

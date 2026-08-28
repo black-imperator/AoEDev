@@ -10813,6 +10813,11 @@ int CvPlayerAI::AI_maxGoldTrade(PlayerTypes ePlayer) const
 
 	FAssert(ePlayer != getID());
 
+	if (!isAlive() || getPersonalityType() == NO_LEADER)
+	{
+		return 0;	// hardening: an empty player slot has no leader head info to index
+	}
+
 	if (isHuman() || (GET_PLAYER(ePlayer).getTeam() == getTeam()))
 	{
 		iMaxGold = getGold();
@@ -10848,6 +10853,11 @@ int CvPlayerAI::AI_maxGoldPerTurnTrade(PlayerTypes ePlayer) const
 	int iMaxGoldPerTurn;
 
 	FAssert(ePlayer != getID());
+
+	if (!isAlive() || getPersonalityType() == NO_LEADER)
+	{
+		return 0;	// hardening: an empty player slot has no leader head info to index
+	}
 
 	if (isHuman() || (GET_PLAYER(ePlayer).getTeam() == getTeam()))
 	{
