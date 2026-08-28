@@ -137,21 +137,26 @@ def getCityTurns(pCity):
 
 def calcPercentages(pCity):
 	init()
+	percents = []
+	if (not pCity or pCity.isNone()):
+		return percents
 	pPlayer = gc.getPlayer(pCity.getOwner())
-	infoCiv = gc.getCivilizationInfo(pPlayer.getCivilizationType())
+	if (pPlayer is None):
+		return percents
+	if (gc.getCivilizationInfo(pPlayer.getCivilizationType()) is None):
+		return percents
 	# Calc total rate
 	iTotal = 0
 	for iUnitClass in range(gc.getNumUnitClassInfos()):
-		iUnit = infoCiv.getCivilizationUnits(iUnitClass)
+		iUnit = pCity.getCityUnits(iUnitClass)
 		if (iUnit != -1):
 			iTotal += pCity.getGreatPeopleUnitProgress(iUnit)
 
 	# Calc individual percentages based on rates and total
-	percents = []
 	if (iTotal > 0):
 		iLeftover = 100
 		for iUnitClass in range(gc.getNumUnitClassInfos()):
-			iUnit = infoCiv.getCivilizationUnits(iUnitClass)
+			iUnit = pCity.getCityUnits(iUnitClass)
 			if (iUnit != -1):
 				iProgress = pCity.getGreatPeopleUnitProgress(iUnit)
 				if (iProgress > 0):
@@ -159,7 +164,7 @@ def calcPercentages(pCity):
 					iLeftover -= iPercent
 					percents.append((iPercent, iUnitClass))
 		# Add remaining from 100 to first in list to match Civ4
-		if (iLeftover > 0):
+		if (iLeftover > 0 and len(percents) > 0):
 			percents[0] = (percents[0][0] + iLeftover, percents[0][1])
 	return percents
 
@@ -201,8 +206,6 @@ def getGreatPeopleText(pCity, iGPTurns, iGPBarWidth, bGPBarTypesNone, bGPBarType
 				szText = sGreatPeopleChar
 	else:
 		lPercents = calcPercentages(pCity)
-		pPlayer = gc.getPlayer(pCity.getOwner())
-		infoCiv = gc.getCivilizationInfo(pPlayer.getCivilizationType())
 		if (len(lPercents) == 0):
 			if (iGPTurns is not None):
 				if (bIncludeCityName):
@@ -215,9 +218,11 @@ def getGreatPeopleText(pCity, iGPTurns, iGPBarWidth, bGPBarTypesNone, bGPBarType
 			lPercents.sort(reverse=True)
 			if (bGPBarTypesOne or len(lPercents) == 1):
 				iPercent, iUnitClass = lPercents[0]
-				iUnit = infoCiv.getCivilizationUnits(iUnitClass)
+				iUnit = pCity.getCityUnits(iUnitClass)
 				pInfo = gc.getUnitInfo(iUnit)
-				if (iGPTurns is not None):
+				if (pInfo is None):
+					szText = localText.getText("INTERFACE_GREAT_PERSON_NONE", (sGreatPeopleChar, ))
+				elif (iGPTurns is not None):
 					if (bIncludeCityName):
 						szText = localText.getText("INTERFACE_GREAT_PERSON_CITY_TURNS", (pInfo.getDescription(), pCity.getName(), iGPTurns, sGPTypeReminder))
 					else:
