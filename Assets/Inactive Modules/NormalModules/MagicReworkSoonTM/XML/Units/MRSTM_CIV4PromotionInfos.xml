@@ -364,5 +364,13 @@
 			<iMinLevel>-1</iMinLevel>
 			<iMagicalPower>-50</iMagicalPower>
 		</PromotionInfo>
+		<PromotionInfo>		<!-- Runic Pyro Helix - grants FIRE2 to golems via Blasting Workshop; needs spell power to actually cast Fireball -->
+			<Type>PROMOTION_RUNIC_PYROHELIX</Type>
+			<iMagicalPower>150</iMagicalPower>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Runic Solar Prism - grants SUN2 to golems via Pallens Engine; needs spell power to cast Blinding Light -->
+			<Type>PROMOTION_RUNIC_SOLARPRISM</Type>
+			<iMagicalPower>150</iMagicalPower>
+		</PromotionInfo>
 	</PromotionInfos>
 </Civ4PromotionInfos>
