@@ -690,64 +690,7 @@ class CvEventManager:
 				pPlayer.setHasTrait((iTrait),True)
 
 		elif iData1 == 101:
-			iButtonId	= iData2
-			iPlayer		= iData3
-			iElection	= iData4
-			gc			= CyGlobalContext()
-			git			= gc.getInfoTypeForString
-			pPlayer		= gc.getPlayer(iPlayer)
-			iRnd		= CyGame().getSorenRandNum(100, "Republic Election")
-			iShift		= iButtonId
-			if iRnd < 20 and iButtonId != 2: # 20% to fail if someone is supported
-				CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_REPUBLIC_ELECTION_OPPOSITION_PARTY_WINS", ()),'',3,'Art/Interface/Buttons/Civics/Republic.dds',git("COLOR_RED"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
-				return
-			lRepublicTraits		= [git("TRAIT_AGGRESSIVE_REPUBLIC"),git("TRAIT_DEFENDER_REPUBLIC"),git("TRAIT_FINANCIAL_REPUBLIC"),git("TRAIT_EXPANSIVE_REPUBLIC"),git("TRAIT_SPIRITUAL_REPUBLIC"),git("TRAIT_ORGANIZED_REPUBLIC"),git("TRAIT_INDUSTRIOUS_REPUBLIC"),git("TRAIT_PHILOSOPHICAL_REPUBLIC")]
-			lTraits				= [git("TRAIT_AGGRESSIVE"),git("TRAIT_DEFENDER"),git("TRAIT_FINANCIAL"),git("TRAIT_EXPANSIVE"),git("TRAIT_SPIRITUAL"),git("TRAIT_ORGANIZED"),git("TRAIT_INDUSTRIOUS"),git("TRAIT_PHILOSOPHICAL")]
-			lRepublicTraitsText = ["TXT_KEY_EVENT_REPUBLIC_ELECTION_HAWK_WINS","TXT_KEY_EVENT_REPUBLIC_ELECTION_DOVE_WINS","TXT_KEY_EVENT_REPUBLIC_ELECTION_LANDOWNER_WINS","TXT_KEY_EVENT_REPUBLIC_ELECTION_PEASANT_WINS","TXT_KEY_EVENT_REPUBLIC_ELECTION_CHURCH_WINS","TXT_KEY_EVENT_REPUBLIC_ELECTION_STATE_WINS","TXT_KEY_EVENT_REPUBLIC_ELECTION_LABOR_WINS","TXT_KEY_EVENT_REPUBLIC_ELECTION_ACADEMIA_WINS"]
-			lRepublicAltText	= ["TXT_KEY_EVENT_REPUBLIC_ELECTION_HAWK_WINS_ALREADY_AGGRESSIVE","TXT_KEY_EVENT_REPUBLIC_ELECTION_DOVE_WINS_ALREADY_DEFENSIVE","TXT_KEY_EVENT_REPUBLIC_ELECTION_LANDOWNER_WINS_ALREADY_FINANCIAL","TXT_KEY_EVENT_REPUBLIC_ELECTION_PEASANT_WINS_ALREADY_EXPANSIVE","TXT_KEY_EVENT_REPUBLIC_ELECTION_CHURCH_WINS_ALREADY_SPIRITUAL","TXT_KEY_EVENT_REPUBLIC_ELECTION_STATE_WINS_ALREADY_ORGANIZED","TXT_KEY_EVENT_REPUBLIC_ELECTION_LABOR_WINS_ALREADY_INDUSTRIOUS","TXT_KEY_EVENT_REPUBLIC_ELECTION_ACADEMIA_WINS_ALREADY_PHILOSOPHICAL"]
-			if iRnd < 50 and iButtonId == 2: # 50/50 for every party to win if no one is supported
-				iShift = 0
-			elif iButtonId == 2:
-				iShift = 1
-			iElectionIndex = iElection * 2 + iShift # Based on Election Type and Button pressed: Hawk = 0, Dove = 1, Landowner = 2, Pesants = 3, Church = 4, State = 5, Labor = 6, Academia = 7
-			bRepeatTrait = 0
-			iTrait = lTraits[iElectionIndex]
-			iRepublicTrait = lRepublicTraits[iElectionIndex]
-			if pPlayer.hasTrait(iTrait) or pPlayer.hasTrait(iRepublicTrait):
-				bRepeatTrait = 1
-			if bRepeatTrait == 0: # Trait Rewards
-				if not gc.isNoCrash():
-					pPlayer.setHasTrait((iRepublicTrait),True,-1,True,True)
-				else:
-					pPlayer.setHasTrait((iRepublicTrait),True)
-				CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText(lRepublicTraitsText[iElectionIndex], ()),'',3,'Art/Interface/Buttons/Civics/Republic.dds',git("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
-			else: # Alt Rewards
-				if iElectionIndex == 0: # Hawk wins
-					pPlayer.initUnit(git('UNIT_COMMANDER'), pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-				if iElectionIndex == 1: # Dove wins
-					for iLoopPlayer in range(gc.getMAX_CIV_PLAYERS()):
-						loopPlayer = gc.getPlayer(iLoopPlayer)
-						if loopPlayer.isAlive():
-							if loopPlayer.getTeam() != pPlayer.getTeam():
-								loopPlayer.AI_changeAttitudeExtra(iPlayer, 3)
-								pPlayer.AI_changeAttitudeExtra(iLoopPlayer, 3)
-				if iElectionIndex == 2: # Landowner wins
-					pPlayer.initUnit(git('UNIT_MERCHANT'), pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-				if iElectionIndex == 3: # Pesants win
-					(loopCity, iter) = pPlayer.firstCity(False)
-					while(loopCity):
-						loopCity.changeHappinessTimer(30)
-						loopCity.changeEspionageHealthCounter(-5)
-						(loopCity, iter) = pPlayer.nextCity(iter, False)
-				if iElectionIndex == 4: # Church wins
-					pPlayer.initUnit(git('UNIT_PROPHET'), pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-				if iElectionIndex == 5: # State wins
-					pPlayer.changeGoldenAgeTurns(CyGame().goldenAgeLength())
-				if iElectionIndex == 6: # Labor wins
-					pPlayer.initUnit(git('UNIT_ENGINEER'), pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-				if iElectionIndex == 7: # Academia wins
-					pPlayer.initUnit(git('UNIT_SCIENTIST'), pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-				CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText(lRepublicAltText[iElectionIndex], ()),'',3,'Art/Interface/Buttons/Civics/Republic.dds',git("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
+			cf.doRepublicElection(iData2, iData3, iData4)
 
 		elif iData1 == 102:
 			iPlayer = iData2
