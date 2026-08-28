@@ -129,6 +129,24 @@
 		<Spanish>Carnivean</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_CARNIVEAN_STRATEGY</Tag>
+		<English>[ICON_BULLET]Carnivean will always move to within two tiles distance from a city.
+[ICON_BULLET]Carnivean Can not move to tiles that already have an improvement.
+[ICON_BULLET]Carnivean is more likely to appear on tiles with roads on them. </English>
+		<French>[ICON_BULLET]Carnivean will always move to within two tiles distance from a city.
+[ICON_BULLET]Carnivean Can not move to tiles that already have an improvement.
+[ICON_BULLET]Carnivean is more likely to appear on tiles with roads on them. </French>
+		<German>[ICON_BULLET]Carnivean will always move to within two tiles distance from a city.
+[ICON_BULLET]Carnivean Can not move to tiles that already have an improvement.
+[ICON_BULLET]Carnivean is more likely to appear on tiles with roads on them. </German>
+		<Italian>[ICON_BULLET]Carnivean will always move to within two tiles distance from a city.
+[ICON_BULLET]Carnivean Can not move to tiles that already have an improvement.
+[ICON_BULLET]Carnivean is more likely to appear on tiles with roads on them. </Italian>
+		<Spanish>[ICON_BULLET]Carnivean will always move to within two tiles distance from a city.
+[ICON_BULLET]Carnivean Can not move to tiles that already have an improvement.
+[ICON_BULLET]Carnivean is more likely to appear on tiles with roads on them. </Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_CARNIVEAN_PEDIA</Tag>
 		<English>Carnivean was a rogue and swordsman, with his chaos affinity manifesting as incredible luck benefitting him and crushing his opposition. If there was ever a favored son in creation, it would be him; bridges collapsed under his enemies, even as he would run with perfect footing across the falling rubble.</English>
 		<French>Carnivean was a rogue and swordsman, with his chaos affinity manifesting as incredible luck benefitting him and crushing his opposition. If there was ever a favored son in creation, it would be him; bridges collapsed under his enemies, even as he would run with perfect footing across the falling rubble.</French>

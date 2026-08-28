@@ -5336,6 +5336,7 @@
 			<DefaultUnitAI>UNITAI_HERO</DefaultUnitAI>
 			<Description>TXT_KEY_MULTI_DTESH</Description>
 			<Civilopedia>TXT_KEY_UNIT_DTESH_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_DTESH_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<bMilitaryHappiness>1</bMilitaryHappiness>
 			<bMilitarySupport>1</bMilitarySupport>
@@ -19490,10 +19491,6 @@
 					<bBuilding>1</bBuilding>
 				</Building>
 				<Building>
-					<BuildingType>BUILDING_ACADEMY</BuildingType>
-					<bBuilding>1</bBuilding>
-				</Building>
-				<Building>
 					<BuildingType>BUILDING_ALTAR_OF_THE_LUONNOTAR</BuildingType>
 					<bBuilding>1</bBuilding>
 				</Building>
@@ -32263,7 +32260,7 @@
 			<PrereqTech>TECH_CURRENCY</PrereqTech>
 			<iCost>150</iCost>
 			<iMoves>2</iMoves>
-			<iCombat>6</iCombat>
+			<iCombat>7</iCombat>
 			<iCityAttack>-20</iCityAttack>
 			<UnitCombatMods>
 				<UnitCombatMod>
@@ -32293,7 +32290,7 @@
 			</FreePromotions>
 			<bNeverObsolete>1</bNeverObsolete>
 			<iTier>3</iTier>
-			<iCombatDefense>6</iCombatDefense>
+			<iCombatDefense>7</iCombatDefense>
 			<PrereqBuildingClass>BUILDINGCLASS_PAGAN_TEMPLE</PrereqBuildingClass>
 		</UnitInfo>
 		<UnitInfo>        <!-- Raid Commander -->
@@ -34279,7 +34276,8 @@
 					<bBuild>1</bBuild>
 				</Build>
 			</Builds>
-			<iCost>100</iCost>
+			<iCost>75</iCost>
+			<bFood>1</bFood>
 			<iMoves>2</iMoves>
 			<iWorkRate>100</iWorkRate>
 			<iAsset>0</iAsset>
@@ -60202,6 +60200,18 @@
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 				<FreePromotion>
+					<PromotionType>PROMOTION_FORCE1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_FORCE2</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_FORCE3</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
 					<PromotionType>PROMOTION_TRUE_CORE</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
@@ -60328,7 +60338,7 @@
 					<iCombat>20</iCombat>
 				</DamageTypeCombat>
 			</DamageTypeCombats>
-			<Image>Art/Interface/Popups/SandaraBlackDragon.dds</Image>
+			<Image>Art/Interface/Popups/SandaraBlackDragonBanner.dds</Image>
 			<Quote>TXT_KEY_POPUP_DRACOLICH_CREATION</Quote>
 			<iPowerAdd>200</iPowerAdd>
 			<iPowerMult>10</iPowerMult>

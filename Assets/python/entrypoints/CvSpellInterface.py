@@ -868,8 +868,13 @@ def postCombatDeathMarked(pCaster, pOpponent):
 
 def postCombatDeadLands(pCaster, pOpponent):
 	pDemonPlayer = gc.getPlayer(gc.getDEMON_PLAYER())
+	pPlot2 = findClearPlot(-1, pCaster.plot())
+	if pCaster.isHasPromotion(getInfoType('PROMOTION_DRAGON')) == True:
+		if pPlot2!=-1:
+			newDracolich = pDemonPlayer.initUnit(getInfoType('UNIT_DRACOLICH'), pPlot2.getX(), pPlot2.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+			newDracolich.setMadeAttack(True)
+			return
 	if(pCaster.isAlive()):
-		pPlot2 = findClearPlot(-1, pCaster.plot())
 		if pPlot2!=-1:
 			newUnit = pDemonPlayer.initUnit(pCaster.getUnitType(), pPlot2.getX(), pPlot2.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 			newUnit.setHasPromotion(getInfoType('PROMOTION_UNDEAD'), True)
@@ -5446,6 +5451,28 @@ def onMoveCarcer(pCaster, pPlot):
 				if not CyGame().isHasTrophy(t):
 					CyGame().changeTrophyValue(t, 1)
 
+def onMoveDragonBones(pCaster, pPlot):
+	if pCaster.isHasPromotion(getInfoType('PROMOTION_OPALUS_MORTIS')) or pCaster.isHasPromotion(getInfoType('PROMOTION_MASTER_OF_DEATH_AND_SHADOW')) or pCaster.getUnitType() == getInfoType('UNIT_TRISTESSA') or pCaster.getUnitType() == getInfoType('UNIT_WALDRUN') or pCaster.getUnitType() == getInfoType('UNIT_BARBATOS'):
+		iPlayer		= pCaster.getOwner()
+		pPlayer		= gc.getPlayer(iPlayer)
+		pPlot2 = findClearPlot(-1, pCaster.plot())
+		if pPlot2!=-1:
+			newDracolich = pPlayer.initUnit(getInfoType('UNIT_DRACOLICH'), pPlot2.getX(), pPlot2.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+			newDracolich.setMadeAttack(True)
+			pPlot.setImprovementType(-1)
+
+def onMoveSevenPines(pCaster, pPlot):
+	pOrcPlayer = gc.getPlayer(gc.getORC_PLAYER())
+	pPlot2 = findClearPlot(-1, pCaster.plot())
+	if not pOrcPlayer.isHasFlag(getInfoType("FLAG_ELDER_DRAGON_FIRST")):
+		if pCaster.isHasPromotion(getInfoType('PROMOTION_DEMON')) or pCaster.isHasPromotion(getInfoType('PROMOTION_ANGEL')) and not pCaster.getUnitType() == getInfoType('UNIT_SPHENER') or pCaster.isHasPromotion(getInfoType('PROMOTION_AVATAR')) or pCaster.isHasPromotion(getInfoType('PROMOTION_ANGEL')) or pCaster.isHasPromotion(getInfoType('PROMOTION_AVATAR')) or pCaster.isHasPromotion(getInfoType('PROMOTION_FALLEN_ANGEL')) or pCaster.isHasPromotion(getInfoType('PROMOTION_ICE_DEMON')):
+			if pPlot2!=-1:
+				newDragon = pOrcPlayer.initUnit(getInfoType('UNIT_ELDER_DRAGON'), pPlot2.getX(), pPlot2.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+				newDragon.setHasPromotion(getInfoType('PROMOTION_LEASH_1'), True)
+				newDragon.setMadeAttack(True)
+				gc.getGame().setGlobalFlag(getInfoType('FLAG_ELDER_DRAGON_FIRST'),True)
+
+			
 def onMoveSironasBeacon(pCaster, pPlot):
 	# pPlayer = gc.getPlayer(pCaster.getOwner())
 	# if pPlayer.isFeatAccomplished(FeatTypes.FEAT_VISIT_SIRONAS_BEACON) == False:
@@ -9103,6 +9130,12 @@ def exploreLairBloodDragon(pUnit, pPlot):
 	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_BLOOD_DRAGON'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+
+def exploreLairDracoLich(pUnit, pPlot):
+	pPlayer = gc.getPlayer(pUnit.getOwner())
+	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
+	pNewPlot = findClearPlot(-1, pPlot)
+	newUnit = bPlayer.initUnit(getInfoType('UNIT_DRACOLICH'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
 def exploreLairPitDragon(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())

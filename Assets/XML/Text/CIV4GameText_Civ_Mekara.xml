@@ -1188,6 +1188,62 @@
 		<Italian>[ICON_BULLET]Aumenta il limite di Schiavi di 4</Italian>
 		<Spanish>[ICON_BULLET]Increases the Slave limit by 4</Spanish>
 	</TEXT>
+	<TEXT>	<!-- Healing Church -->
+		<Tag>TXT_KEY_BUILDING_HEALING_CHURCH</Tag>
+		<English>Church of Healing</English>
+		<French>Church of Healing</French>
+		<German>Church of Healing</German>
+		<Italian>Church of Healing</Italian>
+		<Spanish>Church of Healing</Spanish>
+	</TEXT>
+	<TEXT>	<!-- Healing Church Pedia -->
+		<Tag>TXT_KEY_BUILDING_HEALING_CHURCH_PEDIA</Tag>
+		<English>The Church of Healing is staffed by the saint-like sisters of the Healing Church, working tirelessly to save as many souls as possible from the clutches of Arawn.
+Tragically, the number they can save is often fewer than half, primarily slaves who suffer from the deadly illness 'anima imperfecta', which causes a victim to quickly waste away.
+The Sisterhood warns it is an illness born of poor moral quality, and so most commonly infects slaves or thieves.
+
+Yet for each loss, no matter how insignificant, they can be seen crying, with hands over their face, and the sound of quiet sobs echoes down the hallways.
+This pious self-sacrifice, for the good of all men, has earned deep respect from the people of the city.
+
+
+Rumours that the sound is actually laughter are seen as extremely distasteful, and the magistrate's office encourages all citizens to report such vile behaviour to the Bureau of Moral Purity.</English>
+		<French>The Church of Healing is staffed by the saint-like sisters of the Healing Church, working tirelessly to save as many souls as possible from the clutches of Arawn.
+Tragically, the number they can save is often fewer than half, primarily slaves who suffer from the deadly illness 'anima imperfecta', which causes a victim to quickly waste away.
+The Sisterhood warns it is an illness born of poor moral quality, and so most commonly infects slaves or thieves.
+
+Yet for each loss, no matter how insignificant, they can be seen crying, with hands over their face, and the sound of quiet sobs echoes down the hallways.
+This pious self-sacrifice, for the good of all men, has earned deep respect from the people of the city.
+
+
+Rumours that the sound is actually laughter are seen as extremely distasteful, and the magistrate's office encourages all citizens to report such vile behaviour to the Bureau of Moral Purity.</French>
+		<German>The Church of Healing is staffed by the saint-like sisters of the Healing Church, working tirelessly to save as many souls as possible from the clutches of Arawn.
+Tragically, the number they can save is often fewer than half, primarily slaves who suffer from the deadly illness 'anima imperfecta', which causes a victim to quickly waste away.
+The Sisterhood warns it is an illness born of poor moral quality, and so most commonly infects slaves or thieves.
+
+Yet for each loss, no matter how insignificant, they can be seen crying, with hands over their face, and the sound of quiet sobs echoes down the hallways.
+This pious self-sacrifice, for the good of all men, has earned deep respect from the people of the city.
+
+
+Rumours that the sound is actually laughter are seen as extremely distasteful, and the magistrate's office encourages all citizens to report such vile behaviour to the Bureau of Moral Purity.</German>
+		<Italian>The Church of Healing is staffed by the saint-like sisters of the Healing Church, working tirelessly to save as many souls as possible from the clutches of Arawn.
+Tragically, the number they can save is often fewer than half, primarily slaves who suffer from the deadly illness 'anima imperfecta', which causes a victim to quickly waste away.
+The Sisterhood warns it is an illness born of poor moral quality, and so most commonly infects slaves or thieves.
+
+Yet for each loss, no matter how insignificant, they can be seen crying, with hands over their face, and the sound of quiet sobs echoes down the hallways.
+This pious self-sacrifice, for the good of all men, has earned deep respect from the people of the city.
+
+
+Rumours that the sound is actually laughter are seen as extremely distasteful, and the magistrate's office encourages all citizens to report such vile behaviour to the Bureau of Moral Purity.</Italian>
+		<Spanish>The Church of Healing is staffed by the saint-like sisters of the Healing Church, working tirelessly to save as many souls as possible from the clutches of Arawn.
+Tragically, the number they can save is often fewer than half, primarily slaves who suffer from the deadly illness 'anima imperfecta', which causes a victim to quickly waste away.
+The Sisterhood warns it is an illness born of poor moral quality, and so most commonly infects slaves or thieves.
+
+Yet for each loss, no matter how insignificant, they can be seen crying, with hands over their face, and the sound of quiet sobs echoes down the hallways.
+This pious self-sacrifice, for the good of all men, has earned deep respect from the people of the city.
+
+
+Rumours that the sound is actually laughter are seen as extremely distasteful, and the magistrate's office encourages all citizens to report such vile behaviour to the Bureau of Moral Purity.</Spanish>
+	</TEXT>
 	<TEXT>	<!-- Shaper's Laboratory -->
 		<Tag>TXT_KEY_BUILDING_SHAPER_LAB</Tag>
 		<English>Shaper's Laboratory</English>
