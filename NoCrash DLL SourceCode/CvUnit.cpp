@@ -8740,7 +8740,7 @@ bool CvUnit::sabotage()
 /*************************************************************************************************/
 		if (pPlot->getImprovementOwner() != NO_PLAYER)
 		{
-			pPlot->addCultureControl(pPlot->getImprovementOwner(), (ImprovementTypes)GET_PLAYER(pPlot->getImprovementOwner()).getPlayerImprovement((ImprovementClassTypes)GC.getImprovementInfo(pPlot->getImprovementType()).getImprovementClassPillage()), true);
+			pPlot->addCultureControl(pPlot->getImprovementOwner(), pPlot->getImprovementType(), true);
 		}
 /*************************************************************************************************/
 /**	Improvements Mods	END								**/
@@ -33674,7 +33674,7 @@ bool CvUnit::claimFort(bool bBuilt)
 		}
 	}
 
-	plot()->clearCultureControl(plot()->getOwner(), plot()->getImprovementType(), true);
+	plot()->clearCultureControl(plot()->getImprovementOwner(), plot()->getImprovementType(), true);
 	plot()->setImprovementOwner(getOwnerINLINE());
 	plot()->addCultureControl(getOwnerINLINE(), plot()->getImprovementType(), true);
 	// Need a distinct call to update culture; above ones won't update if the improvement doesn't have culture control
