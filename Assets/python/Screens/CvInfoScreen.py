@@ -959,6 +959,19 @@ class CvInfoScreen:
 		iHealthGameAverage = 0
 		iNetTradeGameAverage = 0
 
+		# The active player is skipped by the isAlive() guard in the loop below once
+		# they are dead, so none of these nine locals was ever bound and the
+		# Demographics tab raised UnboundLocalError instead of drawing.
+		iEconomy = 0
+		iIndustry = 0
+		iAgriculture = 0
+		iMilitary = 0
+		iLandArea = 0
+		iPopulation = 0
+		iHappiness = 0
+		iHealth = 0
+		iNetTrade = 0
+
 		# Lists of Player values - will be used to determine rank, strength and average per city
 		aiGroupEconomy = []
 		aiGroupIndustry = []
