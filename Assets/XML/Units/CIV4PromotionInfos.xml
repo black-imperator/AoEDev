@@ -10130,6 +10130,7 @@
 		<PromotionInfo>		<!-- Enraged -->
 			<Type>PROMOTION_ENRAGED</Type>
 			<Description>TXT_KEY_PROMOTION_ENRAGED</Description>
+			<Help>TXT_KEY_PROMOTION_ENRAGED_HELP</Help>
 			<bAllowAttacks>1</bAllowAttacks>
 			<bFreeUnit>1</bFreeUnit>
 			<bNoSupply>1</bNoSupply>
@@ -17899,6 +17900,7 @@
 		<PromotionInfo>		<!-- Suppressed Rage -->
 			<Type>PROMOTION_SUPPRESSED_RAGE</Type>
 			<Description>TXT_KEY_PROMOTION_SUPPRESSED_RAGE</Description>
+			<Help>TXT_KEY_PROMOTION_SUPPRESSED_RAGE_HELP</Help>
 			<bEffectProm>1</bEffectProm>
 			<iPromotionRandomApplyChance>100</iPromotionRandomApplyChance>
 			<Button>Art/Interface/Buttons/Promotions/Crazed.dds</Button>
