@@ -16,7 +16,7 @@ def spawn_eert_forests():
         pPlayer = gc.getPlayer(i)
         if pPlayer.isAlive():
             civ_info = gc.getCivilizationInfo(pPlayer.getCivilizationType())
-            if civ_info.getType() == "CIVILIZATION_EERT":
+            if civ_info is not None and civ_info.getType() == "CIVILIZATION_EERT":
                 eert_player_ids.append(i)
 
     if not eert_player_ids:
@@ -58,7 +58,8 @@ def spawn_eert_forests():
                         continue
                     if (iImprovement != -1 and iImprovement !=
                             gc.getCivilizationInfo(eert).getCivilizationImprovements(iImprovementClass)):
-                        if gc.getPlayer(pPlot.getOwner()).getCivilizationType() == eert:
+                        iOwner = pPlot.getOwner()
+                        if iOwner != -1 and gc.getPlayer(iOwner).getCivilizationType() == eert:
                             if game.getSorenRandNum(100, "") < 20:
                                 pPlot.setImprovementType(-1)
                 continue
