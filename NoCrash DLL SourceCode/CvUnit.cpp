@@ -18471,7 +18471,19 @@ void CvUnit::applyAuraBonus(AuraBonuses cbTemp, CvUnit* pCheckUnit, bool bNewVal
 				requireunitcombat = true;
 				if (pCheckUnit->isUnitCombat((UnitCombatTypes)i))
 				{
+/*************************************************************************************************/
+/**	Aura Promotion Fix						08/28/26									 Fix #374	**/
+/**		A promotion may list many UnitCombats - PROMOTION_DURAL_STUDENT_INSTRUCTOR lists 14 -	**/
+/**		and a unit can match several of them at once through its secondary unit combats.		**/
+/**		Without this return the loop applied the SAME promotion once per matching combat, and	**/
+/**		since setHasPromotion is reference counted (m_paiHasPromotion += iChange) every extra	**/
+/**		application re-added everything the promotion grants, fFreeXPCap included. Apply once.	**/
+/*************************************************************************************************/
 					pCheckUnit->setHasPromotion(cbTemp.promotion, bNewValue, false, false);
+					return;
+/*************************************************************************************************/
+/**	Aura Promotion Fix							END												**/
+/*************************************************************************************************/
 				}
 			}
 		}
