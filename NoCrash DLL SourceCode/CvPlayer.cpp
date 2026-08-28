@@ -8290,17 +8290,22 @@ bool CvPlayer::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestV
 		}
 	}
 
-	if (GC.getGameINLINE().isBuildingClassMaxedOut(eBuildingClass))
+	// A building being re-validated (bStillValid) already counts itself in the class
+	// counts these checks read, so discount it. Without this any must-maintain building
+	// whose class has a finite cap reports itself as maxed out and gets deleted.
+	int iStillValidExtra = ((bStillValid) ? -1 : 0);
+
+	if (GC.getGameINLINE().isBuildingClassMaxedOut(eBuildingClass, iStillValidExtra))
 	{
 		return false;
 	}
 
-	if (currentTeam.isBuildingClassMaxedOut(eBuildingClass))
+	if (currentTeam.isBuildingClassMaxedOut(eBuildingClass, iStillValidExtra))
 	{
 		return false;
 	}
 
-	if (isBuildingClassMaxedOut(eBuildingClass))
+	if (isBuildingClassMaxedOut(eBuildingClass, iStillValidExtra))
 	{
 		return false;
 	}
