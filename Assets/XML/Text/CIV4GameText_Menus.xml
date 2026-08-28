@@ -1273,6 +1273,30 @@
 		<Spanish>Blocked Units</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_PEDIA_CIV_MENU_UNIQUE_SPECIALISTS</Tag>
+		<English>Unique Specialists</English>
+		<French>Unique Specialists</French>
+		<German>Unique Specialists</German>
+		<Italian>Unique Specialists</Italian>
+		<Spanish>Unique Specialists</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_CIV_MENU_BLOCKED_SPECIALISTS</Tag>
+		<English>Blocked Specialists</English>
+		<French>Blocked Specialists</French>
+		<German>Blocked Specialists</German>
+		<Italian>Blocked Specialists</Italian>
+		<Spanish>Blocked Specialists</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RESTRICTED_SPECIALIST</Tag>
+		<English>Cannot be used by any civilization</English>
+		<French>Cannot be used by any civilization</French>
+		<German>Cannot be used by any civilization</German>
+		<Italian>Cannot be used by any civilization</Italian>
+		<Spanish>Cannot be used by any civilization</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_PEDIA_PROMO_UNITS</Tag>
 		<English>Units beginning with this promotion</English>
 		<French>Unités apparaissant avec la promotion</French>
