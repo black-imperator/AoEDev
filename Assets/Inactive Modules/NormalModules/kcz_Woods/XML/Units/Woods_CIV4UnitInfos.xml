@@ -1098,7 +1098,7 @@
 					<iAffinity>2</iAffinity>
 				</BonusAffinity>
 			</BonusAffinities>
-			<Quote>TXT_KEY_UNIT_EERTIAN_HERO_STRATEGY</Quote>
+			<Quote>TXT_KEY_POPUP_EERTIAN_HERO_CREATION</Quote>
 		</UnitInfo>
 		<UnitInfo>        <!-- Eagles -->            <!-- NAVAL UNITS -->
 			<Class>UNITCLASS_TRIREME</Class>
