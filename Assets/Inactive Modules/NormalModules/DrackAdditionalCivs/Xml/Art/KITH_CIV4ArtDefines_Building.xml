@@ -114,7 +114,7 @@
 			<fInterfaceScale>0.58</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Library/Library.nif</NIF>
 			<KFM/>
-			<Button>,Modules\NormalModules\DrackAdditionalCivs\Art\Buildings\BocernHord.dds</Button>
+			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Buildings\BocernHord.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo> <!-- Beacon -->
 			<Type>ART_DEF_BUILDING_KITH_LIGHTHOUSE</Type>
@@ -124,7 +124,7 @@
 			<fInterfaceScale>0.75</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Lighthouse/Lighthouse.nif</NIF>
 			<KFM/>
-			<Button>,Modules\NormalModules\DrackAdditionalCivs\Art\Buildings\Beacon.dds</Button>
+			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Buildings\Beacon.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo> <!-- Skipwright --> 
 			<Type>ART_DEF_BUILDING_KITH_SHIPYARD</Type>
@@ -144,7 +144,7 @@
 			<fInterfaceScale>1.5</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Harbor/Harbor.nif</NIF>
 			<KFM/>
-			<Button>,Modules\NormalModules\DrackAdditionalCivs\Art\Buildings\Porth.dds</Button>
+			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Buildings\Porth.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo> <!-- Korenloft --> 
 			<Type>ART_DEF_BUILDING_KITH_GRANARY</Type>
@@ -154,7 +154,7 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Granary/Granary.nif</NIF>
 			<KFM/>
-			<Button>,Modules\NormalModules\DrackAdditionalCivs\Art\Buildings\Korenloft.dds</Button>
+			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Buildings\Korenloft.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo> <!-- Smocrook  --> 
 			<Type>ART_DEF_BUILDING_KITH_SMOKEHOUSE</Type>
