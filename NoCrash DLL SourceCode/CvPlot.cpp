@@ -1035,7 +1035,11 @@ void CvPlot::doImprovementCityWorking()
 	int iSpeedMod = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getImprovementPercent();
 	int iDiscoverMod = std::max(-99, GET_PLAYER(getOwnerINLINE()).getDiscoverRandModifier());
 	int iSpreadMod = std::max(-99, GET_PLAYER(getOwnerINLINE()).getSpreadRandModifier());
-	int iOffset = GC.getGameINLINE().getMapRandNum(GC.getNumBonusInfos(), "Don't wanna weigh first bonuses differently");
+	/** Bonus discovery is gameplay, not map generation, so it must roll on the synced
+		Soren RNG. The map RNG is seeded once from the map seed and is deliberately never
+		reseeded on load, which made every discovery a fixed function of the map seed and
+		made "New Random Seed on Reload" a no-op for it. **/
+	int iOffset = GC.getGameINLINE().getSorenRandNum(GC.getNumBonusInfos(), "Don't wanna weigh first bonuses differently");
 
 	for (int iI = iOffset; iI < GC.getNumBonusInfos() + iOffset; ++iI)
 	{
@@ -1052,7 +1056,7 @@ void CvPlot::doImprovementCityWorking()
 		if (iChance > 0 && canHaveBonus((BonusTypes)iBonus))
 		{
 			iChance = iChance * iSpeedMod / (100 + iDiscoverMod);
-			if (GC.getGameINLINE().getMapRandNum(std::max(0, iChance), "Bonus Discovery") == 0)
+			if (GC.getGameINLINE().getSorenRandNum(std::max(0, iChance), "Bonus Discovery") == 0)
 			{
 				setBonusType((BonusTypes)iBonus);
 				bFound = true;
@@ -1067,7 +1071,7 @@ void CvPlot::doImprovementCityWorking()
 			continue;
 		}
 		iChance = iChance * iSpeedMod / (100 + iSpreadMod);
-		if (GC.getGameINLINE().getMapRandNum(std::max(0, iChance), "Bonus Spread") == 0)
+		if (GC.getGameINLINE().getSorenRandNum(std::max(0, iChance), "Bonus Spread") == 0)
 		{
 			setBonusType((BonusTypes)iBonus);
 			bFound = true;
