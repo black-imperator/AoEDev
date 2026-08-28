@@ -26373,7 +26373,7 @@ void CvUnit::castDispel(int spell, CvPlot* pTargetPlot)
 		for (int j = -iRange; j <= iRange; ++j)
 		{
 			pLoopPlot = ::plotXY(pTargetPlot->getX_INLINE(), pTargetPlot->getY_INLINE(), i, j);
-			if (NULL != pLoopPlot && canCastTargetPlot(spell,false,pTargetPlot))
+			if (NULL != pLoopPlot && canCastTargetPlot(spell,false,pLoopPlot))
 			{
 				if (pLoopPlot->getPlotEffectType()!=NO_PLOT_EFFECT && GC.getPlotEffectInfo((PlotEffectTypes)pLoopPlot->getPlotEffectType()).isDispellable() && (GC.getPlotEffectInfo((PlotEffectTypes)pLoopPlot->getPlotEffectType()).getPrereqDispelPower() == 0 || GC.getPlotEffectInfo((PlotEffectTypes)pLoopPlot->getPlotEffectType()).getPrereqDispelPower() <= getSpellMagicalPower(spell)))
 				{
