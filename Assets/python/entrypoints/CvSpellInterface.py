@@ -4956,6 +4956,7 @@ def spellWonder(caster):
 	bFavored = caster.isHasPromotion(getInfoType('PROMOTION_FAVORED_SON'))
 	iCount = CyGame().getSorenRandNum(3, "Wonder") + 3
 	pPlayer = gc.getPlayer(caster.getOwner())
+	iCasterID = caster.getID()
 	pPlot = caster.plot()
 	bCity = False
 	point = pPlot.getPoint()
@@ -4964,6 +4965,9 @@ def spellWonder(caster):
 	if pPlot.isCity():
 		bCity = True
 	for i in xrange(iCount):
+		caster = pPlayer.getUnit(iCasterID)
+		if caster.isNone():
+			return
 		iRnd = CyGame().getSorenRandNum(66, "Wonder")
 		iUnit = -1
 		if iRnd == 0:
@@ -5182,6 +5186,9 @@ def spellWonder(caster):
 	rebuildGraphics()
 # FF: End Add
 
+	caster = pPlayer.getUnit(iCasterID)
+	if caster.isNone():
+		return
 	caster.setCastingLimit(iStartingCasts)
 	caster.setHasCasted(bStartingCast)
 
