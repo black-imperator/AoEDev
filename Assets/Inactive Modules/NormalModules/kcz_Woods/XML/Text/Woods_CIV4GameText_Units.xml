@@ -373,6 +373,30 @@
 [ICON_BULLET]Resurrected in the Capital if killer in a Forest or Ancient Forest</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_POPUP_EERTIAN_HERO_CREATION</Tag>
+		<English>Bartek was old before the Eert had a word for old. He slept with his roots in the deep water while the forest grew up around him, and he woke only when the axes came close enough to hear. Now the oldest oak in the world has pulled himself out of the earth, and the woods walk to meet their enemies.</English>
+		<French>Bartek was old before the Eert had a word for old. He slept with his roots in the deep water while the forest grew up around him, and he woke only when the axes came close enough to hear. Now the oldest oak in the world has pulled himself out of the earth, and the woods walk to meet their enemies.</French>
+		<German>Bartek was old before the Eert had a word for old. He slept with his roots in the deep water while the forest grew up around him, and he woke only when the axes came close enough to hear. Now the oldest oak in the world has pulled himself out of the earth, and the woods walk to meet their enemies.</German>
+		<Italian>Bartek was old before the Eert had a word for old. He slept with his roots in the deep water while the forest grew up around him, and he woke only when the axes came close enough to hear. Now the oldest oak in the world has pulled himself out of the earth, and the woods walk to meet their enemies.</Italian>
+		<Spanish>Bartek was old before the Eert had a word for old. He slept with his roots in the deep water while the forest grew up around him, and he woke only when the axes came close enough to hear. Now the oldest oak in the world has pulled himself out of the earth, and the woods walk to meet their enemies.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_EERTIAN_HERO_STRATEGY</Tag>
+		<English>Bartek the Oak is the champion of the Eert, and he grows stronger as your people learn the ways of the woods: Way of the Forests and Commune with Nature both add to his [ICON_STRENGTH]. So long as he falls in a Forest or an Ancient Forest the trees carry him back to your Capital, so keep him fighting under the canopy and never in the open field.</English>
+		<French>Bartek the Oak is the champion of the Eert, and he grows stronger as your people learn the ways of the woods: Way of the Forests and Commune with Nature both add to his [ICON_STRENGTH]. So long as he falls in a Forest or an Ancient Forest the trees carry him back to your Capital, so keep him fighting under the canopy and never in the open field.</French>
+		<German>Bartek the Oak is the champion of the Eert, and he grows stronger as your people learn the ways of the woods: Way of the Forests and Commune with Nature both add to his [ICON_STRENGTH]. So long as he falls in a Forest or an Ancient Forest the trees carry him back to your Capital, so keep him fighting under the canopy and never in the open field.</German>
+		<Italian>Bartek the Oak is the champion of the Eert, and he grows stronger as your people learn the ways of the woods: Way of the Forests and Commune with Nature both add to his [ICON_STRENGTH]. So long as he falls in a Forest or an Ancient Forest the trees carry him back to your Capital, so keep him fighting under the canopy and never in the open field.</Italian>
+		<Spanish>Bartek the Oak is the champion of the Eert, and he grows stronger as your people learn the ways of the woods: Way of the Forests and Commune with Nature both add to his [ICON_STRENGTH]. So long as he falls in a Forest or an Ancient Forest the trees carry him back to your Capital, so keep him fighting under the canopy and never in the open field.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_EERTIAN_HERO_PEDIA</Tag>
+		<English>The Eert do not remember planting Bartek. Their oldest songs already name him as the Oak that stood first, at the heart of the Ancient Forest, long before the Eert raised a single city. For most of an age he does nothing but drink and listen. When the forest is threatened he tears his roots free and walks, and while one Ancient Forest still stands his enemies are never rid of him for long.</English>
+		<French>The Eert do not remember planting Bartek. Their oldest songs already name him as the Oak that stood first, at the heart of the Ancient Forest, long before the Eert raised a single city. For most of an age he does nothing but drink and listen. When the forest is threatened he tears his roots free and walks, and while one Ancient Forest still stands his enemies are never rid of him for long.</French>
+		<German>The Eert do not remember planting Bartek. Their oldest songs already name him as the Oak that stood first, at the heart of the Ancient Forest, long before the Eert raised a single city. For most of an age he does nothing but drink and listen. When the forest is threatened he tears his roots free and walks, and while one Ancient Forest still stands his enemies are never rid of him for long.</German>
+		<Italian>The Eert do not remember planting Bartek. Their oldest songs already name him as the Oak that stood first, at the heart of the Ancient Forest, long before the Eert raised a single city. For most of an age he does nothing but drink and listen. When the forest is threatened he tears his roots free and walks, and while one Ancient Forest still stands his enemies are never rid of him for long.</Italian>
+		<Spanish>The Eert do not remember planting Bartek. Their oldest songs already name him as the Oak that stood first, at the heart of the Ancient Forest, long before the Eert raised a single city. For most of an age he does nothing but drink and listen. When the forest is threatened he tears his roots free and walks, and while one Ancient Forest still stands his enemies are never rid of him for long.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_EAGLE</Tag>
 		<English>Eagles</English>
 		<French>Eagles</French>
