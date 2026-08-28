@@ -1182,6 +1182,10 @@ bool CvDLLWidgetData::executeAltAction( CvWidgetDataStruct &widgetDataStruct )
 		break;
 //FfH: End Add
 
+	case WIDGET_ACTION:
+		doPediaActionJump(widgetDataStruct);
+		break;
+
 	default:
 		bHandled = false;
 		break;
@@ -2109,6 +2113,68 @@ void CvDLLWidgetData::doPediaBuildJump(CvWidgetDataStruct &widgetDataStruct)
 	{
 		argsList.add(GC.getImprovementClassInfo(eImprovementClass).getDefaultImprovementIndex());
 		gDLL->getPythonIFace()->callFunction(PYScreensModule, "pediaJumpToImprovement", argsList.makeFunctionArgs());
+	}
+}
+
+void CvDLLWidgetData::doPediaActionJump(CvWidgetDataStruct &widgetDataStruct)
+{
+	int iAction = widgetDataStruct.m_iData1;
+	if (iAction < 0 || iAction >= GC.getNumActionInfos())
+	{
+		return;
+	}
+
+	CvActionInfo& kAction = GC.getActionInfo(iAction);
+
+	CvWidgetDataStruct kJump = widgetDataStruct;
+	kJump.m_iData1 = kAction.getOriginalIndex();
+	kJump.m_iData2 = -1;
+
+	switch (kAction.getSubType())
+	{
+	case ACTIONSUBTYPE_PROMOTION:
+		doPediaPromotionJump(kJump);
+		break;
+
+	case ACTIONSUBTYPE_SPELL:
+		doPediaSpellJump(kJump);
+		break;
+
+	case ACTIONSUBTYPE_UNIT:
+		doPediaUnitJump(kJump);
+		break;
+
+	case ACTIONSUBTYPE_BUILDING:
+		doPediaBuildingJump(kJump);
+		break;
+
+	case ACTIONSUBTYPE_RELIGION:
+		doPediaReligionJump(kJump);
+		break;
+
+	case ACTIONSUBTYPE_CORPORATION:
+		doPediaCorporationJump(kJump);
+		break;
+
+	case ACTIONSUBTYPE_BUILD:
+		kJump.m_iData2 = kAction.getOriginalIndex();
+		doPediaBuildJump(kJump);
+		break;
+
+	case ACTIONSUBTYPE_SPECIALIST:
+		{
+			SpecialistClassTypes eSpecialistClass = (SpecialistClassTypes)kAction.getOriginalIndex();
+			int iSpecialist = GC.getSpecialistClassInfo(eSpecialistClass).getDefaultSpecialistIndex();
+			if (iSpecialist != NO_SPECIALIST)
+			{
+				kJump.m_iData1 = iSpecialist;
+				doPediaSpecialistJump(kJump);
+			}
+		}
+		break;
+
+	default:
+		break;
 	}
 }
 

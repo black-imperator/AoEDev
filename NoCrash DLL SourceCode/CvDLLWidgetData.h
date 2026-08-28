@@ -140,6 +140,7 @@ public:
 	void doPediaConstructJump(CvWidgetDataStruct &widgetDataStruct);
 	void doPediaTrainJump(CvWidgetDataStruct &widgetDataStruct);
 	void doPediaBuildJump(CvWidgetDataStruct &widgetDataStruct);
+	void doPediaActionJump(CvWidgetDataStruct &widgetDataStruct);
 	void doDealKill(CvWidgetDataStruct &widgetDataStruct);
 	void doRefreshMilitaryAdvisor(CvWidgetDataStruct &widgetDataStruct);
 	void doMenu( void );
