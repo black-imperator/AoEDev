@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- edited with XMLSpy v2008 rel. 2 (http://www.altova.com) by Hazem Shams al'Din (Baraka Designs) -->
+<!--
+  Copyright (c) 2007, BUG Mod.
+  This file is part of Civilization IV BUG Mod.
+  -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<!-- BUG -->
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_FORT_DEFENDER</Tag>
+		<English>Fort Defender</English>
+		<French>Fort Defender</French>
+		<German>Fort Defender</German>
+		<Italian>Fort Defender</Italian>
+		<Spanish>Fort Defender</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TOWER_MAGE_STRATEGY_COMMANDERFORT</Tag>
+		<English>Unlike regular Fort Commanders, Tower Mages are arcane units instead. They have force affinity and channeling 2, allowing them to learn (non-dimensional) spells instead of commanding units.</English>
+		<French>Unlike regular Fort Commanders, Tower Mages are arcane units instead. They have force affinity and channeling 2, allowing them to learn (non-dimensional) spells instead of commanding units. </French>
+		<German>Unlike regular Fort Commanders, Tower Mages are arcane units instead. They have force affinity and channeling 2, allowing them to learn (non-dimensional) spells instead of commanding units. </German>
+		<Italian>Unlike regular Fort Commanders, Tower Mages are arcane units instead. They have force affinity and channeling 2, allowing them to learn (non-dimensional) spells instead of commanding units. </Italian>
+		<Spanish>Unlike regular Fort Commanders, Tower Mages are arcane units instead. They have force affinity and channeling 2, allowing them to learn (non-dimensional) spells instead of commanding units. </Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_NESTING_SPIDER_STRATEGY_COMMANDERFORT</Tag>
+		<English>Unlike regular Fort Commanders, Nesting Spiders are beast units instead. They have 1 extra poison strength, 2 extra perception, and can get regular, combat related promotions instead of command promotions. As they gain levels, the gain [LINK=PROMOTION_FORTSPIDER1]Fort Spider I[\LINK] and [LINK=PROMOTION_FORTSPIDER2]Fort Spider II[\LINK] at level 3 and 5 respectively. [NEWLINE][ICON_BULLET]With Fort Spider I, they can turn any fortification into a [LINK=IMPROVEMENT_INFESTED_FORTRESS]Infested Fortress[\LINK] and [LINK=SPELL_SPAWN_BABY_SPIDER]summon a temporary baby spider[\LINK]. [NEWLINE][ICON_BULLET]With Fort Spider II, summoned baby spiders start with an extra strength.</English>
+		<French>Unlike regular Fort Commanders, Nesting Spiders are beast units instead. They have 1 extra poison strength, 2 extra perception, and can get regular, combat related promotions instead of command promotions. As they gain levels, the gain [LINK=PROMOTION_FORTSPIDER1]Fort Spider I[\LINK] and [LINK=PROMOTION_FORTSPIDER2]Fort Spider II[\LINK] at level 3 and 5 respectively. [NEWLINE][ICON_BULLET]With Fort Spider I, they can turn any fortification into a [LINK=IMPROVEMENT_INFESTED_FORTRESS]Infested Fortress[\LINK] and [LINK=SPELL_SPAWN_BABY_SPIDER]summon a temporary baby spider[\LINK]. [NEWLINE][ICON_BULLET]With Fort Spider II, summoned baby spiders start with an extra strength.</French>
+		<German>Unlike regular Fort Commanders, Nesting Spiders are beast units instead. They have 1 extra poison strength, 2 extra perception, and can get regular, combat related promotions instead of command promotions. As they gain levels, the gain [LINK=PROMOTION_FORTSPIDER1]Fort Spider I[\LINK] and [LINK=PROMOTION_FORTSPIDER2]Fort Spider II[\LINK] at level 3 and 5 respectively. [NEWLINE][ICON_BULLET]With Fort Spider I, they can turn any fortification into a [LINK=IMPROVEMENT_INFESTED_FORTRESS]Infested Fortress[\LINK] and [LINK=SPELL_SPAWN_BABY_SPIDER]summon a temporary baby spider[\LINK]. [NEWLINE][ICON_BULLET]With Fort Spider II, summoned baby spiders start with an extra strength.</German>
+		<Italian>Unlike regular Fort Commanders, Nesting Spiders are beast units instead. They have 1 extra poison strength, 2 extra perception, and can get regular, combat related promotions instead of command promotions. As they gain levels, the gain [LINK=PROMOTION_FORTSPIDER1]Fort Spider I[\LINK] and [LINK=PROMOTION_FORTSPIDER2]Fort Spider II[\LINK] at level 3 and 5 respectively. [NEWLINE][ICON_BULLET]With Fort Spider I, they can turn any fortification into a [LINK=IMPROVEMENT_INFESTED_FORTRESS]Infested Fortress[\LINK] and [LINK=SPELL_SPAWN_BABY_SPIDER]summon a temporary baby spider[\LINK]. [NEWLINE][ICON_BULLET]With Fort Spider II, summoned baby spiders start with an extra strength.</Italian>
+		<Spanish>Unlike regular Fort Commanders, Nesting Spiders are beast units instead. They have 1 extra poison strength, 2 extra perception, and can get regular, combat related promotions instead of command promotions. As they gain levels, the gain [LINK=PROMOTION_FORTSPIDER1]Fort Spider I[\LINK] and [LINK=PROMOTION_FORTSPIDER2]Fort Spider II[\LINK] at level 3 and 5 respectively. [NEWLINE][ICON_BULLET]With Fort Spider I, they can turn any fortification into a [LINK=IMPROVEMENT_INFESTED_FORTRESS]Infested Fortress[\LINK] and [LINK=SPELL_SPAWN_BABY_SPIDER]summon a temporary baby spider[\LINK]. [NEWLINE][ICON_BULLET]With Fort Spider II, summoned baby spiders start with an extra strength.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_FALCONER_STRATEGY_COMMANDERFORT</Tag>
+		<English>A Falconer can carry up to two birds, allowing you to quickly scout surrounding areas or spot nearby stealth units. They are otherwise identical to the Fort Commander they replace.</English>
+		<French>A Falconer can carry up to two birds, allowing you to quickly scout surrounding areas or spot nearby stealth units. They are otherwise identical to the Fort Commander they replace. </French>
+		<German>A Falconer can carry up to two birds, allowing you to quickly scout surrounding areas or spot nearby stealth units. They are otherwise identical to the Fort Commander they replace. </German>
+		<Italian>A Falconer can carry up to two birds, allowing you to quickly scout surrounding areas or spot nearby stealth units. They are otherwise identical to the Fort Commander they replace. </Italian>
+		<Spanish>A Falconer can carry up to two birds, allowing you to quickly scout surrounding areas or spot nearby stealth units. They are otherwise identical to the Fort Commander they replace. </Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GARRISON_CAPTAIN_STRATEGY_COMMANDERFORT</Tag>
+		<English>A Garrison Commander has 1 extra command range and can command 2 extra units. They are otherwise identical to the Fort Commander they replace.</English>
+		<French>A Garrison Commander has 1 extra command range and can command 2 extra units. They are otherwise identical to the Fort Commander they replace.</French>
+		<German>A Garrison Commander has 1 extra command range and can command 2 extra units. They are otherwise identical to the Fort Commander they replace.</German>
+		<Italian>A Garrison Commander has 1 extra command range and can command 2 extra units. They are otherwise identical to the Fort Commander they replace.</Italian>
+		<Spanish>A Garrison Commander has 1 extra command range and can command 2 extra units. They are otherwise identical to the Fort Commander they replace.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_WINDTALKER_STRATEGY_COMMANDERFORT</Tag>
+		<English>A Windtalker can carry up to two birds, allowing you to quickly scout surrounding areas or spot nearby stealth units, and have the Spirit Guide promotion to pass on a portion of their experience when they die. They are otherwise identical to the Fort Commander they replace.</English>
+		<French>A Windtalker can carry up to two birds, allowing you to quickly scout surrounding areas or spot nearby stealth units, and have the Spirit Guide promotion to pass on a portion of their experience when they die. They are otherwise identical to the Fort Commander they replace.</French>
+		<German>A Windtalker can carry up to two birds, allowing you to quickly scout surrounding areas or spot nearby stealth units, and have the Spirit Guide promotion to pass on a portion of their experience when they die. They are otherwise identical to the Fort Commander they replace.</German>
+		<Italian>A Windtalker can carry up to two birds, allowing you to quickly scout surrounding areas or spot nearby stealth units, and have the Spirit Guide promotion to pass on a portion of their experience when they die. They are otherwise identical to the Fort Commander they replace.</Italian>
+		<Spanish>A Windtalker can carry up to two birds, allowing you to quickly scout surrounding areas or spot nearby stealth units, and have the Spirit Guide promotion to pass on a portion of their experience when they die. They are otherwise identical to the Fort Commander they replace.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_OVERLORD_STRATEGY_COMMANDERFORT</Tag>
+		<English>An Overlord has 1 extra command range and can command 2 extra units. They are otherwise identical to the Fort Commander they replace.</English>
+		<French>An Overlord has 1 extra command range and can command 2 extra units. They are otherwise identical to the Fort Commander they replace.</French>
+		<German>An Overlord has 1 extra command range and can command 2 extra units. They are otherwise identical to the Fort Commander they replace.</German>
+		<Italian>An Overlord has 1 extra command range and can command 2 extra units. They are otherwise identical to the Fort Commander they replace.</Italian>
+		<Spanish>An Overlord has 1 extra command range and can command 2 extra units. They are otherwise identical to the Fort Commander they replace.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ZABULUS_STRATEGY_COMMANDERFORT</Tag>
+		<English>A Zabulus has 1 extra unholy strength, passes Charmed to units in combat, and increases unhappiness and crime in nearby cities they are hostile to. They are otherwise identical to the Fort Commander they replace.</English>
+		<French>A Zabulus has 1 extra unholy strength, passes Charmed to units in combat, and increases unhappiness and crime in nearby cities they are hostile to. They are otherwise identical to the Fort Commander they replace.</French>
+		<German>A Zabulus has 1 extra unholy strength, passes Charmed to units in combat, and increases unhappiness and crime in nearby cities they are hostile to. They are otherwise identical to the Fort Commander they replace.</German>
+		<Italian>A Zabulus has 1 extra unholy strength, passes Charmed to units in combat, and increases unhappiness and crime in nearby cities they are hostile to. They are otherwise identical to the Fort Commander they replace.</Italian>
+		<Spanish>A Zabulus has 1 extra unholy strength, passes Charmed to units in combat, and increases unhappiness and crime in nearby cities they are hostile to. They are otherwise identical to the Fort Commander they replace.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CLANHOLD_CHIEFTAIN_STRATEGY_COMMANDERFORT</Tag>
+		<English>A Clanhold Cheiftan starts with the Guerilla promotion, making them stronger in hills. They are otherwise identical to the Fort Commander they replace.</English>
+		<French>A Clanhold Cheiftan starts with the Guerilla promotion, making them stronger in hills. They are otherwise identical to the Fort Commander they replace.</French>
+		<German>A Clanhold Cheiftan starts with the Guerilla promotion, making them stronger in hills. They are otherwise identical to the Fort Commander they replace.</German>
+		<Italian>A Clanhold Cheiftan starts with the Guerilla promotion, making them stronger in hills. They are otherwise identical to the Fort Commander they replace.</Italian>
+		<Spanish>A Clanhold Cheiftan starts with the Guerilla promotion, making them stronger in hills. They are otherwise identical to the Fort Commander they replace.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SAGITTAR_STRATEGY_COMMANDERFORT</Tag>
+		<English>A Sagittar has a strong ranged attack with 2 range. They are otherwise identical to the Fort Commander they replace.</English>
+		<French>A Sagittar has a strong ranged attack with 2 range. They are otherwise identical to the Fort Commander they replace.</French>
+		<German>A Sagittar has a strong ranged attack with 2 range. They are otherwise identical to the Fort Commander they replace.</German>
+		<Italian>A Sagittar has a strong ranged attack with 2 range. They are otherwise identical to the Fort Commander they replace.</Italian>
+		<Spanish>A Sagittar has a strong ranged attack with 2 range. They are otherwise identical to the Fort Commander they replace.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PYRELORD_STRATEGY_COMMANDERFORT</Tag>
+		<English>A Pyrelord has extra fire strength, fire resistance, and explodes when killed to further damage enemy units. They are otherwise identical to the Fort Commander they replace.</English>
+		<French>A Pyrelord has extra fire strength, fire resistance, and explodes when killed to further damage enemy units. They are otherwise identical to the Fort Commander they replace.</French>
+		<German>A Pyrelord has extra fire strength, fire resistance, and explodes when killed to further damage enemy units. They are otherwise identical to the Fort Commander they replace.</German>
+		<Italian>A Pyrelord has extra fire strength, fire resistance, and explodes when killed to further damage enemy units. They are otherwise identical to the Fort Commander they replace.</Italian>
+		<Spanish>A Pyrelord has extra fire strength, fire resistance, and explodes when killed to further damage enemy units. They are otherwise identical to the Fort Commander they replace.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_DTESHI_COMMANDER_STRATEGY_COMMANDERFORT</Tag>
+		<English>A D'Teshi Commander has extra death strength, a small chance to capture slaves after combat, and can cast Flay Flesh to deal light damage to all nearby units. They are otherwise identical to the Fort Commander they replace.</English>
+		<French>A D'Teshi Commander has extra death strength, a small chance to capture slaves after combat, and can cast Flay Flesh to deal light damage to all nearby units. They are otherwise identical to the Fort Commander they replace.</French>
+		<German>A D'Teshi Commander has extra death strength, a small chance to capture slaves after combat, and can cast Flay Flesh to deal light damage to all nearby units. They are otherwise identical to the Fort Commander they replace.</German>
+		<Italian>A D'Teshi Commander has extra death strength, a small chance to capture slaves after combat, and can cast Flay Flesh to deal light damage to all nearby units. They are otherwise identical to the Fort Commander they replace.</Italian>
+		<Spanish>A D'Teshi Commander has extra death strength, a small chance to capture slaves after combat, and can cast Flay Flesh to deal light damage to all nearby units. They are otherwise identical to the Fort Commander they replace.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_FORT_COMMANDER_STRATEGY_COMMANDERFORT</Tag>
+		<English>A fort appointed with a Fort Commander exerts your culture on the tile, with the culture boundry increasing as the fort ages, allowing you to claim nearby territory or resources without building a city. This can be ideal for providing a strong defensive location to hold a chokepoint, or a safe space in an open area to retreat your units and heal. As for the Commander themselves:[NEWLINE][ICON_BULLET] A Fort Commander is a Commander type unit, allowing it to command and provide buffs to their minions. [NEWLINE][ICON_BULLET] They gain free exp up to 20, allowing them to take further command promotions to specialize in different unit types. [NEWLINE][ICON_BULLET] They gain extra strength with technology. 1 strength from Warfare and Military Strategy, and 2 from Engineering. [NEWLINE][ICON_BULLET] Their strength may allow them to hold against a small enemy attack, but make sure to provide units for them to command for any serious assault. [NEWLINE][ICON_BULLET] They cost 1 extra maintenence. [NEWLINE][ICON_BULLET] They always provide a small strength boost to melee, ranged, and defensive melee units under their command.</English>
+		<French>A fort appointed with a Fort Commander exerts your culture on the tile, with the culture boundry increasing as the fort ages, allowing you to claim nearby territory or resources without building a city. This can be ideal for providing a strong defensive location to hold a chokepoint, or a safe space in an open area to retreat your units and heal. As for the Commander themselves:[NEWLINE][ICON_BULLET] A Fort Commander is a Commander type unit, allowing it to command and provide buffs to their minions. [NEWLINE][ICON_BULLET] They gain free exp up to 20, allowing them to take further command promotions to specialize in different unit types. [NEWLINE][ICON_BULLET] They gain extra strength with technology. 1 strength from Warfare and Military Strategy, and 2 from Engineering. [NEWLINE][ICON_BULLET] Their strength may allow them to hold against a small enemy attack, but make sure to provide units for them to command for any serious assault. [NEWLINE][ICON_BULLET] They cost 1 extra maintenence. [NEWLINE][ICON_BULLET] They always provide a small strength boost to melee, ranged, and defensive melee units under their command.</French>
+		<German>A fort appointed with a Fort Commander exerts your culture on the tile, with the culture boundry increasing as the fort ages, allowing you to claim nearby territory or resources without building a city. This can be ideal for providing a strong defensive location to hold a chokepoint, or a safe space in an open area to retreat your units and heal. As for the Commander themselves:[NEWLINE][ICON_BULLET] A Fort Commander is a Commander type unit, allowing it to command and provide buffs to their minions. [NEWLINE][ICON_BULLET] They gain free exp up to 20, allowing them to take further command promotions to specialize in different unit types. [NEWLINE][ICON_BULLET] They gain extra strength with technology. 1 strength from Warfare and Military Strategy, and 2 from Engineering. [NEWLINE][ICON_BULLET] Their strength may allow them to hold against a small enemy attack, but make sure to provide units for them to command for any serious assault. [NEWLINE][ICON_BULLET] They cost 1 extra maintenence. [NEWLINE][ICON_BULLET] They always provide a small strength boost to melee, ranged, and defensive melee units under their command.</German>
+		<Italian>A fort appointed with a Fort Commander exerts your culture on the tile, with the culture boundry increasing as the fort ages, allowing you to claim nearby territory or resources without building a city. This can be ideal for providing a strong defensive location to hold a chokepoint, or a safe space in an open area to retreat your units and heal. As for the Commander themselves:[NEWLINE][ICON_BULLET] A Fort Commander is a Commander type unit, allowing it to command and provide buffs to their minions. [NEWLINE][ICON_BULLET] They gain free exp up to 20, allowing them to take further command promotions to specialize in different unit types. [NEWLINE][ICON_BULLET] They gain extra strength with technology. 1 strength from Warfare and Military Strategy, and 2 from Engineering. [NEWLINE][ICON_BULLET] Their strength may allow them to hold against a small enemy attack, but make sure to provide units for them to command for any serious assault. [NEWLINE][ICON_BULLET] They cost 1 extra maintenence. [NEWLINE][ICON_BULLET] They always provide a small strength boost to melee, ranged, and defensive melee units under their command.</Italian>
+		<Spanish>A fort appointed with a Fort Commander exerts your culture on the tile, with the culture boundry increasing as the fort ages, allowing you to claim nearby territory or resources without building a city. This can be ideal for providing a strong defensive location to hold a chokepoint, or a safe space in an open area to retreat your units and heal. As for the Commander themselves:[NEWLINE][ICON_BULLET] A Fort Commander is a Commander type unit, allowing it to command and provide buffs to their minions. [NEWLINE][ICON_BULLET] They gain free exp up to 20, allowing them to take further command promotions to specialize in different unit types. [NEWLINE][ICON_BULLET] They gain extra strength with technology. 1 strength from Warfare and Military Strategy, and 2 from Engineering. [NEWLINE][ICON_BULLET] Their strength may allow them to hold against a small enemy attack, but make sure to provide units for them to command for any serious assault. [NEWLINE][ICON_BULLET] They cost 1 extra maintenence. [NEWLINE][ICON_BULLET] They always provide a small strength boost to melee, ranged, and defensive melee units under their command.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_FORT_COMMANDER_GRIGORI_STRATEGY_COMMANDERFORT</Tag>
+		<English>A Grigori Militia Commander is mostly identical to a Fort Commander, but forts are replaced with [LINK=IMPROVEMENT_FORT_GRIGORI]Commune Settlements[\LINK] for Grigori, and serve an important role in their economy.</English>
+		<French>A Grigori Militia Commander is mostly identical to a Fort Commander, but forts are replaced with [LINK=IMPROVEMENT_FORT_GRIGORI]Commune Settlements[\LINK] for Grigori, and serve an important role in their economy.</French>
+		<German>A Grigori Militia Commander is mostly identical to a Fort Commander, but forts are replaced with [LINK=IMPROVEMENT_FORT_GRIGORI]Commune Settlements[\LINK] for Grigori, and serve an important role in their economy.</German>
+		<Italian>A Grigori Militia Commander is mostly identical to a Fort Commander, but forts are replaced with [LINK=IMPROVEMENT_FORT_GRIGORI]Commune Settlements[\LINK] for Grigori, and serve an important role in their economy.</Italian>
+		<Spanish>A Grigori Militia Commander is mostly identical to a Fort Commander, but forts are replaced with [LINK=IMPROVEMENT_FORT_GRIGORI]Commune Settlements[\LINK] for Grigori, and serve an important role in their economy.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MALIGNANT_FLORA_STRATEGY_COMMANDERFORT</Tag>
+		<English>A Malignant Flora has a strong ranged attack and starts with both Woodsman promotions, making them much stronger in forests. They are weak to fire, and do not command units, having access to regular combat promotions instead.</English>
+		<French>A Malignant Flora has a strong ranged attack and starts with both Woodsman promotions, making them much stronger in forests. They are weak to fire, and do not command units, having access to regular combat promotions instead.</French>
+		<German>A Malignant Flora has a strong ranged attack and starts with both Woodsman promotions, making them much stronger in forests. They are weak to fire, and do not command units, having access to regular combat promotions instead.</German>
+		<Italian>A Malignant Flora has a strong ranged attack and starts with both Woodsman promotions, making them much stronger in forests. They are weak to fire, and do not command units, having access to regular combat promotions instead.</Italian>
+		<Spanish>A Malignant Flora has a strong ranged attack and starts with both Woodsman promotions, making them much stronger in forests. They are weak to fire, and do not command units, having access to regular combat promotions instead.</Spanish>
+	</TEXT>
+</Civ4GameText>

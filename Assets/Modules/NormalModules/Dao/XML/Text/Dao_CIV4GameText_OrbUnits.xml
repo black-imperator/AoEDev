@@ -207,11 +207,11 @@ Conjurers can create towers of flame, carve canyons into cliffside and bring sto
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNIT_AIR_ELEMENTAL_DAO_STRATEGY</Tag>
-        <English>Although weak for a rank 3 summon, an Air Elemental can pass over any terrain, including water tiles, and it can see 2 tiles further than other units. Upon winning a combat, Air Elementals have 25% chance to summon [LINK=UNIT_AIR_ELEMENTAL_MINOR]Minor Air Elementals[/LINK].</English>
-        <French>Although weak for a rank 3 summon, an Air Elemental can pass over any terrain, including water tiles, and it can see 2 tiles further than other units. Upon winning a combat, Air Elementals have 25% chance to summon [LINK=UNIT_AIR_ELEMENTAL_MINOR]Minor Air Elementals[/LINK].</French>
+        <English>Although weak for a rank 3 summon, an Air Elemental can pass over any terrain, including water tiles, and it can see 2 tiles further than other units. Upon winning a combat, Air Elementals have 25% chance to summon [LINK=UNIT_AIR_ELEMENTAL_MINOR]Minor Air Elementals[\LINK].</English>
+        <French>Although weak for a rank 3 summon, an Air Elemental can pass over any terrain, including water tiles, and it can see 2 tiles further than other units. Upon winning a combat, Air Elementals have 25% chance to summon [LINK=UNIT_AIR_ELEMENTAL_MINOR]Minor Air Elementals[\LINK].</French>
         <German>Obwohl schwach für eine Level 3 Beschwörung, kann sich ein Luftelementar über jedes Gelände, inklusive Wasser, bewegen und 2 Felder weiter sehen als andere Einheiten. Wenn sie einen Kampf gewinnen, beschwören sie permanente Blitzelementare.</German>
-        <Italian>Although weak for a rank 3 summon, an Air Elemental can pass over any terrain, including water tiles, and it can see 2 tiles further than other units. Upon winning a combat, Air Elementals have 25% chance to summon [LINK=UNIT_AIR_ELEMENTAL_MINOR]Minor Air Elementals[/LINK].</Italian>
-        <Spanish>Although weak for a rank 3 summon, an Air Elemental can pass over any terrain, including water tiles, and it can see 2 tiles further than other units. Upon winning a combat, Air Elementals have 25% chance to summon [LINK=UNIT_AIR_ELEMENTAL_MINOR]Minor Air Elementals[/LINK].</Spanish>
+        <Italian>Although weak for a rank 3 summon, an Air Elemental can pass over any terrain, including water tiles, and it can see 2 tiles further than other units. Upon winning a combat, Air Elementals have 25% chance to summon [LINK=UNIT_AIR_ELEMENTAL_MINOR]Minor Air Elementals[\LINK].</Italian>
+        <Spanish>Although weak for a rank 3 summon, an Air Elemental can pass over any terrain, including water tiles, and it can see 2 tiles further than other units. Upon winning a combat, Air Elementals have 25% chance to summon [LINK=UNIT_AIR_ELEMENTAL_MINOR]Minor Air Elementals[\LINK].</Spanish>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNIT_AIR_ELEMENTAL_MINOR</Tag>

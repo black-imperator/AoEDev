@@ -2115,8 +2115,8 @@
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<TechPrereq>TECH_NEVER</TechPrereq>
 			<Button>Art/Interface/Buttons/Equipment/EquipTrickyDagger.dds</Button>
-			<iExtraCombatStr>-2</iExtraCombatStr>
-			<iExtraCombatDefense>-2</iExtraCombatDefense>
+			<iExtraCombatStr>-1</iExtraCombatStr>
+			<iExtraCombatDefense>-1</iExtraCombatDefense>
 			<iFirstStrikesChange>2</iFirstStrikesChange>
 			<bEquipment>1</bEquipment>
 		</PromotionInfo>
@@ -12449,6 +12449,7 @@
 				<PrereqCivilization>CIVILIZATION_ORC</PrereqCivilization>
 			</PrereqCivilizations>
 			<bAutoAcquire>1</bAutoAcquire>
+			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
 			<PromotionExcludes>
 				<Promotion>PROMOTION_HIDDEN_NATIONALITY</Promotion>
@@ -12456,6 +12457,9 @@
 			<PromotionOverwrites>
 				<Promotion>PROMOTION_HIDDEN_NATIONALITY</Promotion>
 			</PromotionOverwrites>
+			<PromotionDegradesTo>
+				<Promotion>PROMOTION_HIDDEN_NATIONALITY</Promotion>
+			</PromotionDegradesTo>
 			<Button>Art/Interface/Buttons/Promotions/HiddenNationality.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Homeland -->
@@ -43283,9 +43287,11 @@
 					<Button>Art/Interface/Buttons/promotions/companions/amicus.dds</Button>
 			<ExtraArtType>ART_DEF_UNIT_AMICUS</ExtraArtType>
 			<bCompanion>1</bCompanion>
-				<fFreeXPCap>50</fFreeXPCap>
+	  <!-- <fFreeXPCap>50</fFreeXPCap>
+			<iFreeXPPerTurn>0.5</iFreeXPPerTurn> -->
+			<iExperiencePercent>20</iExperiencePercent>
+			<iFreeXPFromCombat>1</iFreeXPFromCombat>
 			<iNoBadExplore>10</iNoBadExplore>
-			<iFreeXPPerTurn>0.5</iFreeXPPerTurn>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>

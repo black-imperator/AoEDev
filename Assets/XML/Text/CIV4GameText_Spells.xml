@@ -1816,11 +1816,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SPELL_HEAL_HELP</Tag>
-		<English>[ICON_BULLET]Heals all units in the tile</English>
+		<English>[ICON_BULLET]Heals all living units in the tile</English>
 		<French>[ICON_BULLET]Soigne les unités de la case</French>
 		<German>[ICON_BULLET]Heilt Einheiten auf dem Geländefeld.</German>
-		<Italian>[ICON_BULLET]Heals all units in the tile</Italian>
-		<Spanish>[ICON_BULLET]Heals all units in the tile</Spanish>
+		<Italian>[ICON_BULLET]Heals all living units in the tile</Italian>
+		<Spanish>[ICON_BULLET]Heals all living units in the tile</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SPELL_HELLFIRE</Tag>

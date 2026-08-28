@@ -15,7 +15,6 @@
 	<ElementType name="ImprovementName" content="textOnly"/>
 	<ElementType name="iYield" content="textOnly" dt:type="int"/>
 	<ElementType name="iMagicalPower" content="textOnly" dt:type="int"/>
-	<ElementType name="iMinMagicalPower" content="textOnly" dt:type="int"/>
 	<ElementType name="iDominionCapacity" content="textOnly" dt:type="int"/>
 	<ElementType name="TerrainType" content="textOnly"/>
 	<ElementType name="FeatureType" content="textOnly"/>
@@ -28,7 +27,6 @@
 	<ElementType name="Strategy" content="textOnly"/>
 	<ElementType name="iTime" content="textOnly" dt:type="int"/>
 	<ElementType name="bKill" content="textOnly" dt:type="boolean"/>
-	<ElementType name="bStandard" content="textOnly" dt:type="boolean"/>
 	<ElementType name="iXPValue" content="textOnly" dt:type="float"/>
 	<ElementType name="LinkedBuilds" content="eltOnly">
 		<element type="LinkedBuild" minOccurs="0"/>
@@ -78,7 +76,6 @@
 		<element type="iTime"/>
 		<element type="iCost"/>
 		<element type="bKill"/>
-		<element type="bStandard"/>
 		<element type="iXPValue"/>
 		<element type="LinkedBuilds"/>
 		<element type="BlockedBuilds"/>
@@ -273,10 +270,10 @@
 	<ElementType name="CorporationSpreads" content="eltOnly">
 		<element type="CorporationSpread" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
-	<ElementType name="GreatPeopleClass" content="textOnly"/>
+	<ElementType name="GreatPeopleType" content="textOnly"/>
 	<ElementType name="bGreatPeople" content="textOnly" dt:type="boolean"/>
 	<ElementType name="GreatPeople" content="eltOnly">
-		<element type="GreatPeopleClass"/>
+		<element type="GreatPeopleType"/>
 		<element type="bGreatPeople"/>
 	</ElementType>
 	<ElementType name="GreatPeoples" content="eltOnly">
@@ -290,6 +287,14 @@
 	</ElementType>
 	<ElementType name="Buildings" content="eltOnly">
 		<element type="Building" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="bForceBuilding" content="textOnly" dt:type="boolean"/>
+	<ElementType name="ForceBuilding" content="eltOnly">
+		<element type="BuildingType"/>
+		<element type="bForceBuilding"/>
+	</ElementType>
+	<ElementType name="ForceBuildings" content="eltOnly">
+		<element type="ForceBuilding" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="HolyCity" content="textOnly"/>
 	<ElementType name="StateReligion" content="textOnly"/>
@@ -894,6 +899,7 @@
 		<element type="CorporationSpreads"/>
 		<element type="GreatPeoples"/>
 		<element type="Buildings"/>
+		<element type="ForceBuildings"/>
 		<element type="HolyCity"/>
 		<element type="ReligionType"/>
 		<element type="StateReligion"/>
@@ -1240,7 +1246,6 @@
 	<ElementType name="bFirstStrikeVulnerable" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bFreeUnit" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bCannotCast" content="textOnly" dt:type="boolean"/>
-	<ElementType name="bRevealed" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bAllowDefenseBonuses" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bNonAbandon" content="textOnly" dt:type="boolean"/>
 	<ElementType name="YieldsFromWin" content="eltOnly">
@@ -1257,6 +1262,8 @@
 	</ElementType>
 	<ElementType name="iWorkRateChange" content="textOnly" dt:type="int"/><!--  Can increase/decrease the Workrate of a Unit. -->
 	<ElementType name="CaptureUnitClass" content="textOnly"/>
+	<ElementType name="iCombatConversionChance" content="textOnly" dt:type="int"/>
+	<ElementType name="iCombatUnitGenerationChance" content="textOnly" dt:type="int"/>
 	<ElementType name="iSlaveGenerationChance" content="textOnly" dt:type="int"/>
 	<ElementType name="iGiftableXP" content="textOnly" dt:type="float"/>
 	<ElementType name="iCombatExtraDuration" content="textOnly" dt:type="int"/>
@@ -1478,7 +1485,6 @@
 	<ElementType name="bHillsDoubleMove" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bClimbPeaks" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bImmuneToFirstStrikes" content="textOnly" dt:type="boolean"/>
-	<ElementType name="bDurationDecreaseSpellpower" content="textOnly" dt:type="boolean"/>
 	<ElementType name="iVisibilityChange" content="textOnly" dt:type="int"/>
 	<ElementType name="iExtraPerception" content="textOnly" dt:type="int"/>
 	<ElementType name="iMovesChange" content="textOnly" dt:type="int"/>
@@ -1523,10 +1529,9 @@
 	<ElementType name="PlotEffectDoubleMoves" content="eltOnly">
 		<element type="PlotEffectDoubleMove" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
-	<ElementType name="bEnraged" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bAIControl" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bBoarding" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bDispellable" content="textOnly" dt:type="boolean"/>
-	<ElementType name="iPrereqDispelPower" content="textOnly" dt:type="int"/>
 	<ElementType name="bDoubleFortifyBonus" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bEquipment" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bFear" content="textOnly" dt:type="boolean"/>
@@ -1544,15 +1549,13 @@
 	<ElementType name="bPrereqAlive" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bPrereqAliveCapture" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bRace" content="textOnly" dt:type="boolean"/>
-	<ElementType name="bMentalEffect" content="textOnly" dt:type="boolean"/>
-	<ElementType name="bCompanion" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bGraphicalSwap" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bRemovedByCasting" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bRemovedByCombat" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bRemovedWhenHealed" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bTargetWeakestUnit" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bTargetWeakestUnitCounter" content="textOnly" dt:type="boolean"/>
-	<ElementType name="iTwincast" content="textOnly" dt:type="int"/>
+	<ElementType name="bTwincast" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bValidate" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bWaterWalking" content="textOnly" dt:type="boolean"/>
 	<ElementType name="iBetrayalChance" content="textOnly" dt:type="int"/>
@@ -1576,7 +1579,6 @@
 	<ElementType name="iSpellDamageModify" content="textOnly" dt:type="int"/>
 	<ElementType name="iDamageOnRemove" content="textOnly" dt:type="int"/>
 	<ElementType name="iWorkRateModify" content="textOnly" dt:type="int"/>
-	<ElementType name="iWorkRateModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iPromotionRandomApplyChance" content="textOnly" dt:type="int"/>
 	<ElementType name="CaptureUnitCombat" content="textOnly"/>
 	<ElementType name="BlockedSpellClass" content="textOnly"/>
@@ -1659,7 +1661,6 @@
 	<ElementType name="iRangedCombatPercentGlobalCounter" content="textOnly" dt:type="int"/>
 	<ElementType name="iRangedCombatPercentInBorders" content="textOnly" dt:type="int"/>
 	<ElementType name="PromotionClass" content="textOnly"/>
-	<ElementType name="OverwritePromotionClass" content="textOnly"/>
 	<ElementType name="PromotionInfo" content="eltOnly" order="many">
 		<element type="Type"/>
 		<element type="PromotionClass"/>
@@ -1685,7 +1686,6 @@
 		<element type="bLeveledImmortality"/>
 		<element type="bCannotCapture"/>
 		<element type="bCannotCast"/>
-		<element type="bRevealed"/>
 		<element type="bCannotPillage"/>
 		<element type="bCanPillage"/>
 		<element type="bPrereqAtPeace"/>
@@ -1739,7 +1739,6 @@
 		<element type="iRangedCombatPercentInBorders"/>
 		<element type="iRangedCombatPercentGlobalCounter"/>
 		<element type="iMagicalPower"/>
-		<element type="iMinMagicalPower"/>
 		<element type="iDominionCapacity"/>
 		<element type="iAsset"/>
 		<element type="iBeakerSacrifice"/>
@@ -1749,8 +1748,10 @@
 		<element type="iCollateralLimitCap"/>
 		<element type="iCollateralLimitBoost"/>
 		<element type="iCollateralTargetsLimit"/>
+		<element type="iCombatConversionChance"/>
 		<element type="iCombatDmgCapBoost"/>
 		<element type="iCombatExtraDuration"/>
+		<element type="iCombatUnitGenerationChance"/>
 		<element type="iLeashRange"/>
 		<element type="iLeashChance"/>
 		<element type="iCommandLimit"/>
@@ -1867,7 +1868,6 @@
 		<element type="bAlwaysHeal"/>
 		<element type="bHillsDoubleMove"/>
 		<element type="bImmuneToFirstStrikes"/>
-		<element type="bDurationDecreaseSpellpower"/>
 		<element type="iVisibilityChange"/>
 		<element type="iExtraPerception"/>
 		<element type="iMovesChange"/>
@@ -1923,11 +1923,10 @@
 		<element type="bGraphicalOnly"/>
 		<element type="iHotKeyPriority"/>
 		<element type="Button"/>
-		<element type="bEnraged"/>
+		<element type="bAIControl"/>
 		<element type="bBoarding"/>
 		<element type="bOnlyDefensive"/>
 		<element type="bDispellable"/>
-		<element type="iPrereqDispelPower"/>
 		<element type="bDoubleFortifyBonus"/>
 		<element type="bEquipment"/>
 		<element type="bFear"/>
@@ -1953,15 +1952,13 @@
 		<element type="bPrereqAlive"/>
 		<element type="bPrereqAliveCapture"/>
 		<element type="bRace"/>
-		<element type="bMentalEffect"/>
-		<element type="bCompanion"/>
 		<element type="bGraphicalSwap"/>
 		<element type="bRemovedByCasting"/>
 		<element type="bRemovedByCombat"/>
 		<element type="bRemovedWhenHealed"/>
 		<element type="bTargetWeakestUnit"/>
 		<element type="bTargetWeakestUnitCounter"/>
-		<element type="iTwincast"/>
+		<element type="bTwincast"/>
 		<element type="bValidate"/>
 		<element type="bWaterWalking"/>
 		<element type="iAIWeight"/>
@@ -1989,7 +1986,6 @@
 		<element type="iSpellCasterXP"/>
 		<element type="iSpellDamageModify"/>
 		<element type="iWorkRateModify"/>
-		<element type="iWorkRateModifier"/>
 		<element type="bNonInfluence"/>
 		<element type="bInfluence"/>
 		<element type="iVictoryInfluenceModifier"/>
@@ -2024,7 +2020,6 @@
 		<element type="Affinities"/>
 		<element type="DamageTypeResists"/>
 		<element type="iOrderPriority"/>
-		<element type="OverwritePromotionClass"/>
 	</ElementType>
 	<ElementType name="PromotionInfos" content="eltOnly">
 		<element type="PromotionInfo" maxOccurs="*"/>
@@ -2170,7 +2165,6 @@
 	<ElementType name="fAttackStrengthMod" content="textOnly" dt:type="float"/>
 	<ElementType name="fDefenseStrength" content="textOnly" dt:type="float"/>
 	<ElementType name="fDefenseStrengthMod" content="textOnly" dt:type="float"/>
-	<ElementType name="fCityDefenseMod" content="textOnly" dt:type="float"/>
 	<ElementType name="fMovement" content="textOnly" dt:type="float"/>
 	<ElementType name="fMovementDiscount" content="textOnly" dt:type="float"/>
 	<ElementType name="fVisibility" content="textOnly" dt:type="float"/>
@@ -2215,13 +2209,6 @@
 	<ElementType name="AffinityDamageTypes" content="eltOnly">
 		<element type="AffinityDamageType" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
-	<ElementType name="TerrainDefenseMod" content="eltOnly">
-		<element type="TerrainType"/>
-		<element type="fCombat"/>
-	</ElementType>
-	<ElementType name="TerrainDefenseMods" content="eltOnly">
-		<element type="TerrainDefenseMod" minOccurs="0" maxOccurs="*"/>
-	</ElementType>
 	<ElementType name="fResist" content="textOnly" dt:type="float"/>
 	<ElementType name="AffinityDamageResist" content="eltOnly">
 		<element type="DamageType"/>
@@ -2249,7 +2236,6 @@
 		<element type="fAttackStrengthMod"/>
 		<element type="fDefenseStrength"/>
 		<element type="fDefenseStrengthMod"/>
-		<element type="fCityDefenseMod"/>
 		<element type="fMovement"/>
 		<element type="fMovementDiscount"/>
 		<element type="fVisibility"/>
@@ -2287,7 +2273,6 @@
 		<element type="fNeutralHealChange"/>
 		<element type="fFriendlyHealChange"/>
 		<element type="AffinityDamageTypes"/>
-		<element type="TerrainDefenseMods"/>
 		<element type="AffinityDamageResists"/>
 		<element type="AffinityPromotions"/>
 	</ElementType>

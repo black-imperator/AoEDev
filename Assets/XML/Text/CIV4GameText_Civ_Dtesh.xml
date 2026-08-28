@@ -667,4 +667,12 @@ And when their corpse can no longer work, their bones will be ground into paste,
 		<Italian>[ICON_BULLET]Crea uno Schiavo, ma riduce permanentemente il rendimento del terreno.</Italian>
 		<Spanish>[ICON_BULLET]Creates a Slave unit, but permanently decreases plot yields.</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_DTESH_STRATEGY</Tag>
+		<English>Bring Lord D'tesh to the Dragon Bones world feature to create a powerful Dracolich.</English>
+		<French>Bring Lord D'tesh to the Dragon Bones world feature to create a powerful Dracolich.</French>
+		<German>Bring Lord D'tesh to the Dragon Bones world feature to create a powerful Dracolich.</German>
+		<Italian>Bring Lord D'tesh to the Dragon Bones world feature to create a powerful Dracolich.</Italian>
+		<Spanish>Bring Lord D'tesh to the Dragon Bones world feature to create a powerful Dracolich.</Spanish>
+	</TEXT>
 </Civ4GameText>

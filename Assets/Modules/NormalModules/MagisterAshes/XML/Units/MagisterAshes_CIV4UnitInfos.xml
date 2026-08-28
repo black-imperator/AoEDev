@@ -232,6 +232,7 @@
 			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_CARNIVEAN</Description>
 			<Civilopedia>TXT_KEY_UNIT_CARNIVEAN_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_CARNIVEAN_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<UnitAIs>
 				<UnitAI>

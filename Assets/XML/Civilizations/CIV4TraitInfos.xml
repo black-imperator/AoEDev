@@ -4813,6 +4813,10 @@
 					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
 					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
 				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
 			</FreePromotionUnitCombats>
 		</TraitInfo>
 		<TraitInfo>		<!-- Defender -->

@@ -3774,10 +3774,10 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
-			<iWeight>250</iWeight>
+			<iWeight>200</iWeight>
 			<Description>TXT_KEY_GOODY_TRICKY_DAGGER</Description>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
-			<iDestroyLairChance>40</iDestroyLairChance>
+			<iDestroyLairChance>80</iDestroyLairChance>
 			<PythonCallback>exploreLairNinjaFawn(pUnit,pPlot)</PythonCallback>
 			<bBad>1</bBad>
 		</GoodyInfo>
@@ -4065,6 +4065,22 @@
 			<bUnique>1</bUnique>
 			<bBad>1</bBad>
 			<PythonCallback>exploreLairBloodDragon(pUnit,pPlot)</PythonCallback>
+		</GoodyInfo>
+		<GoodyInfo> <!--Dracolich		Unique-->
+			<Type>GOODY_EXPLORE_LAIR_DRACOLICH</Type>
+			<GoodyClasses>
+				<GoodyClass>
+					<GoodyClassType>GOODYCLASS_UNDEAD_MAJOR</GoodyClassType>
+					<bGoodyClass>1</bGoodyClass>
+				</GoodyClass>
+			</GoodyClasses>
+			<iWeight>10</iWeight>
+			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_DRACOLICH</Description>
+			<Sound>AS2D_GOODY_HOSTILE</Sound>
+			<iDestroyLairChance>75</iDestroyLairChance>
+			<bUnique>1</bUnique>
+			<bBad>1</bBad>
+			<PythonCallback>exploreLairDracoLich(pUnit,pPlot)</PythonCallback>
 		</GoodyInfo>
 		<GoodyInfo> <!--PitDragon		Unique-->
 			<Type>GOODY_EXPLORE_LAIR_PITDRAGON</Type>

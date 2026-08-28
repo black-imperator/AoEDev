@@ -8945,6 +8945,10 @@
 					<BuildingType>BUILDING_SHAPER_LAB</BuildingType>
 				</Building>
 				<Building>
+					<BuildingClassType>BUILDINGCLASS_INFIRMARY</BuildingClassType>
+					<BuildingType>BUILDING_HEALING_CHURCH</BuildingType>
+				</Building>
+				<Building>
 					<BuildingClassType>BUILDINGCLASS_SHRINE_OF_THE_CHAMPION</BuildingClassType>
 					<BuildingType>NONE</BuildingType>
 				</Building>

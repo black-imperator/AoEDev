@@ -5,11 +5,11 @@
 <!-- -->
 <!-- Basic Infos -->
 
-<Civ4ModuleIdInfos xmlns="x-schema:CF_CIV4GameInfoSchema.xml">
+<Civ4ModuleIdInfos xmlns="x-schema:CCF_CIV4GameInfoSchema.xml">
 	<ModuleIdInfos>
 		<ModuleIdInfo>
-			<Type>MODULE_COMMANDERFORT</Type>
-			<Description>TXT_KEY_MODULE_COMMANDERFORT</Description>
+			<Type>MODULE_CAPTAIN_COMMANDERFORT</Type>
+			<Description>TXT_KEY_MODULE_CAPTAIN_COMMANDERFORT</Description>
 		</ModuleIdInfo>
 	</ModuleIdInfos>
 </Civ4ModuleIdInfos>

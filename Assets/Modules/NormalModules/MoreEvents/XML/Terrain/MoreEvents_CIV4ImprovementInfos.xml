@@ -48,7 +48,7 @@
 		</ImprovementInfo>
 		<ImprovementInfo>		<!-- Dragon Bones -->
 			<Type>IMPROVEMENT_DRAGON_BONES</Type>
-			<PythonOnMove>onMoveSearchableUF(pCaster, pPlot)</PythonOnMove>
+			<PythonOnMove>onMoveDragonBones(pCaster, pPlot)</PythonOnMove>
 		</ImprovementInfo>
 		<ImprovementInfo>		<!-- Foxford -->
 			<Type>IMPROVEMENT_FOXFORD</Type>
@@ -112,7 +112,7 @@
 		</ImprovementInfo>
 		<ImprovementInfo>		<!-- Seven Pines -->
 			<Type>IMPROVEMENT_SEVEN_PINES</Type>
-			<PythonOnMove>onMoveSearchableUF(pCaster, pPlot)</PythonOnMove>
+			<PythonOnMove>onMoveSevenPines(pCaster, pPlot)</PythonOnMove>
 		</ImprovementInfo>
 		<ImprovementInfo>		<!-- Sirona's Beacon -->
 			<Type>IMPROVEMENT_SIRONAS_BEACON</Type>

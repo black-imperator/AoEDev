@@ -705,7 +705,7 @@
 					<SpecialistType>SPECIALIST_VOLUNTEER_GRIGORI</SpecialistType>
 					<SpecialistTypeYields>
 						<iYield>0</iYield>
-						<iYield>1</iYield>
+						<iYield>0</iYield>
 						<iYield>0</iYield>
 					</SpecialistTypeYields>
 				</SpecialistTypeYieldChange>

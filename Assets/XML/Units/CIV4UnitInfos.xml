@@ -5336,6 +5336,7 @@
 			<DefaultUnitAI>UNITAI_HERO</DefaultUnitAI>
 			<Description>TXT_KEY_MULTI_DTESH</Description>
 			<Civilopedia>TXT_KEY_UNIT_DTESH_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_DTESH_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<bMilitaryHappiness>1</bMilitaryHappiness>
 			<bMilitarySupport>1</bMilitarySupport>
@@ -19490,10 +19491,6 @@
 					<bBuilding>1</bBuilding>
 				</Building>
 				<Building>
-					<BuildingType>BUILDING_ACADEMY</BuildingType>
-					<bBuilding>1</bBuilding>
-				</Building>
-				<Building>
 					<BuildingType>BUILDING_ALTAR_OF_THE_LUONNOTAR</BuildingType>
 					<bBuilding>1</bBuilding>
 				</Building>
@@ -32263,7 +32260,7 @@
 			<PrereqTech>TECH_CURRENCY</PrereqTech>
 			<iCost>150</iCost>
 			<iMoves>2</iMoves>
-			<iCombat>6</iCombat>
+			<iCombat>7</iCombat>
 			<iCityAttack>-20</iCityAttack>
 			<UnitCombatMods>
 				<UnitCombatMod>
@@ -32293,7 +32290,7 @@
 			</FreePromotions>
 			<bNeverObsolete>1</bNeverObsolete>
 			<iTier>3</iTier>
-			<iCombatDefense>6</iCombatDefense>
+			<iCombatDefense>7</iCombatDefense>
 			<PrereqBuildingClass>BUILDINGCLASS_PAGAN_TEMPLE</PrereqBuildingClass>
 		</UnitInfo>
 		<UnitInfo>        <!-- Raid Commander -->
@@ -34279,7 +34276,8 @@
 					<bBuild>1</bBuild>
 				</Build>
 			</Builds>
-			<iCost>100</iCost>
+			<iCost>75</iCost>
+			<bFood>1</bFood>
 			<iMoves>2</iMoves>
 			<iWorkRate>100</iWorkRate>
 			<iAsset>0</iAsset>
@@ -49694,7 +49692,7 @@
 			<Strategy>TXT_KEY_UNIT_BAT_STRATEGY</Strategy>
 			<Civilopedia>TXT_KEY_UNIT_BAT_PEDIA</Civilopedia>
 			<Advisor>NONE</Advisor>
-			<iExtraPerception>7</iExtraPerception>
+			<iExtraPerception>4</iExtraPerception>
 			<bAnimal>1</bAnimal>
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
@@ -49758,7 +49756,7 @@
 			<iAppearanceProb>-1</iAppearanceProb>
 			<AppearanceTechs>
 				<AppearanceTech>
-					<AppearanceTechType>TECH_MINING</AppearanceTechType>
+					<AppearanceTechType>TECH_BRONZE_WORKING</AppearanceTechType>
 					<iAppearanceTech>101</iAppearanceTech>
 				</AppearanceTech>
 				<AppearanceTech>
@@ -58580,7 +58578,7 @@
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 			<HotKey/>
 			<FreePromotions>
-					<FreePromotion>
+				<FreePromotion>
 					<PromotionType>PROMOTION_DEMON</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
@@ -58596,7 +58594,7 @@
 					<PromotionType>PROMOTION_HERO</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
-			<FreePromotion>
+				<FreePromotion>
 					<PromotionType>PROMOTION_ENTROPY1</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
@@ -58618,6 +58616,10 @@
 				</FreePromotion>
 				<FreePromotion>
 					<PromotionType>PROMOTION_BODY3</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MIMIC_ABILITY</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 				<FreePromotion>
@@ -60198,6 +60200,18 @@
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 				<FreePromotion>
+					<PromotionType>PROMOTION_FORCE1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_FORCE2</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_FORCE3</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
 					<PromotionType>PROMOTION_TRUE_CORE</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
@@ -60208,6 +60222,124 @@
 			<iTier>4</iTier>
 			<Image>Art/Interface/Popups/AndrewMarKlauth.dds</Image>
 			<Quote>TXT_KEY_POPUP_ELDER_DRAGON_CREATION</Quote>
+			<iPowerAdd>200</iPowerAdd>
+			<iPowerMult>10</iPowerMult>
+		</UnitInfo>
+		<UnitInfo>        <!-- Dracolich -->
+			<Class>UNITCLASS_DRACOLICH</Class>
+			<Type>UNIT_DRACOLICH</Type>
+			<Combat>UNITCOMBAT_BEAST</Combat>
+			<DefaultUnitAI>UNITAI_HERO</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_DRACOLICH</Description>
+			<Civilopedia>TXT_KEY_UNIT_DRACOLICH_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<bPillage>1</bPillage>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_HERO</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_COLLATERAL</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+			<iAIWeight>200</iAIWeight>
+			<iMoves>4</iMoves>
+			<iCombat>15</iCombat>
+			<iXPValueAttack>100</iXPValueAttack>
+			<iXPValueDefense>50</iXPValueDefense>
+			<!-- Collateral -->
+			<iCollateralDamage>100</iCollateralDamage>
+			<iCollateralDamageLimit>100</iCollateralDamageLimit>
+			<iCollateralDamageMaxUnits>6</iCollateralDamageMaxUnits>
+			<!-- /Collateral -->
+			<iCultureGarrison>16</iCultureGarrison>
+			<iAsset>38</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>1</iGroupSize>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_DRACOLICH</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<bImmortal>1</bImmortal>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MAGIC_IMMUNE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_DRAGON</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_UNDEAD</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MONSTROUS_CREATURE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_FLYING</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_CHANNELING1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_CHANNELING2</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_CHANNELING3</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_DEATH1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_DEATH2</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_DEATH3</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_RAISE_THE_DEAD2</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_SECONDARY_ARCANE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+			<DenyPromotions>
+				<Promotion>PROMOTION_TAME</Promotion>
+			</DenyPromotions>
+			<iTier>4</iTier>
+			<DamageTypeCombats>
+				<DamageTypeCombat>
+					<DamageType>DAMAGE_DEATH</DamageType>
+					<iCombat>20</iCombat>
+				</DamageTypeCombat>
+			</DamageTypeCombats>
+			<Image>Art/Interface/Popups/SandaraBlackDragonBanner.dds</Image>
+			<Quote>TXT_KEY_POPUP_DRACOLICH_CREATION</Quote>
 			<iPowerAdd>200</iPowerAdd>
 			<iPowerMult>10</iPowerMult>
 		</UnitInfo>

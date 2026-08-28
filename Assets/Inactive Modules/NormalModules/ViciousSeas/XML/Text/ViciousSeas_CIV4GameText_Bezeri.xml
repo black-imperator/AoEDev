@@ -563,11 +563,11 @@ On top of this, Skaa'Raj is also able to wield metal weapons, giving him more po
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_WORKER_SHORESHAPER_PEDIA</Tag>
-		<English>The Bezeri worker is able to work land AND sea tiles, as well as build ocean Trails, build Hunting Reefs (to search for ocean resources), build Coral Fortresses that can become ocean cities at [Commune with Nature] and Grow Kelp with [Fellowship of Leaves]</English>
-		<French>The Bezeri worker is able to work land AND sea tiles, as well as build ocean Trails, build Hunting Reefs (to search for ocean resources), build Coral Fortresses that can become ocean cities at [Commune with Nature] and Grow Kelp with [Fellowship of Leaves]</French>
-		<German>The Bezeri worker is able to work land AND sea tiles, as well as build ocean Trails, build Hunting Reefs (to search for ocean resources), build Coral Fortresses that can become ocean cities at [Commune with Nature] and Grow Kelp with [Fellowship of Leaves]</German>
-		<Italian>The Bezeri worker is able to work land AND sea tiles, as well as build ocean Trails, build Hunting Reefs (to search for ocean resources), build Coral Fortresses that can become ocean cities at [Commune with Nature] and Grow Kelp with [Fellowship of Leaves]</Italian>
-		<Spanish>The Bezeri worker is able to work land AND sea tiles, as well as build ocean Trails, build Hunting Reefs (to search for ocean resources), build Coral Fortresses that can become ocean cities at [Commune with Nature] and Grow Kelp with [Fellowship of Leaves]</Spanish>
+		<English>The Bezeri worker is able to work land AND sea tiles, as well as build ocean Trails, build Hunting Reefs (to search for ocean resources), build Coral Fortresses and Grow Kelp with [Fellowship of Leaves]</English>
+		<French>The Bezeri worker is able to work land AND sea tiles, as well as build ocean Trails, build Hunting Reefs (to search for ocean resources), build Coral Fortresses and Grow Kelp with [Fellowship of Leaves]</French>
+		<German>The Bezeri worker is able to work land AND sea tiles, as well as build ocean Trails, build Hunting Reefs (to search for ocean resources), build Coral Fortresses and Grow Kelp with [Fellowship of Leaves]</German>
+		<Italian>The Bezeri worker is able to work land AND sea tiles, as well as build ocean Trails, build Hunting Reefs (to search for ocean resources), build Coral Fortresses and Grow Kelp with [Fellowship of Leaves]</Italian>
+		<Spanish>The Bezeri worker is able to work land AND sea tiles, as well as build ocean Trails, build Hunting Reefs (to search for ocean resources), build Coral Fortresses and Grow Kelp with [Fellowship of Leaves]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ADEPT_TIDECALLER_PEDIA</Tag>
