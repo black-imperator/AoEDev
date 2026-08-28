@@ -2390,19 +2390,40 @@ bool CvTeam::isFullMember(VoteSourceTypes eVoteSource) const
 		return true;
 	}
 
+/************************************************************************************************/
+/* AOE_COUNCIL_TEAM_MEMBERSHIP            08/27/26                                  Issue #521  */
+/*                                                                                              */
+/* Council membership is a per player civic in FfH/AoE, so the vanilla BtS rule that every       */
+/* member of the team must be a full member made a single teammate on a different council (or    */
+/* none at all) veto the whole team.  Alignment restrictions on CIVIC_OVERCOUNCIL /              */
+/* CIVIC_UNDERCOUNCIL can make a shared council impossible, which left mixed teams permanently   */
+/* ineligible for Secretary General and stalled the council entirely.  Ignore teammates who are  */
+/* simply not in this council, the way getVotes()/isVotingMember() already do, but still let a   */
+/* member who defied a resolution cost the team its standing.                                    */
+/************************************************************************************************/
+	bool bAnyMember = false;
+
 	for (int iI = 0; iI < MAX_PLAYERS; iI++)
 	{
 		CvPlayer& kLoopPlayer = GET_PLAYER((PlayerTypes)iI);
-		if (kLoopPlayer.getTeam() == getID())
+		if (kLoopPlayer.isAlive() && kLoopPlayer.getTeam() == getID())
 		{
-			if (!kLoopPlayer.isFullMember(eVoteSource))
+			if (kLoopPlayer.isVotingMember(eVoteSource))
 			{
-				return false;
+				if (!kLoopPlayer.isFullMember(eVoteSource))
+				{
+					return false;
+				}
+
+				bAnyMember = true;
 			}
 		}
 	}
 
-	return true;
+	return bAnyMember;
+/************************************************************************************************/
+/* AOE_COUNCIL_TEAM_MEMBERSHIP            END                                                   */
+/************************************************************************************************/
 }
 
 /************************************************************************************************/
@@ -3417,6 +3438,50 @@ PlayerTypes CvTeam::getSecretaryID() const
 
 	return getLeaderID();
 }
+
+
+/************************************************************************************************/
+/* AOE_COUNCIL_TEAM_MEMBERSHIP            08/27/26                                  Issue #521  */
+/*                                                                                              */
+/* Now that a team with mixed council membership can hold a Secretary General post, the          */
+/* resolution proposal must be handed to a team member who is actually in that council rather    */
+/* than to whichever human happens to sit lowest in the player array.                            */
+/************************************************************************************************/
+PlayerTypes CvTeam::getSecretaryID(VoteSourceTypes eVoteSource) const
+{
+	PlayerTypes eFallbackPlayer = NO_PLAYER;
+
+	for (int iI = 0; iI < MAX_PLAYERS; iI++)
+	{
+		CvPlayer& kLoopPlayer = GET_PLAYER((PlayerTypes)iI);
+		if (kLoopPlayer.isAlive() && kLoopPlayer.getTeam() == getID())
+		{
+			if (kLoopPlayer.isFullMember(eVoteSource))
+			{
+				if (kLoopPlayer.isHuman())
+				{
+					return ((PlayerTypes)iI);
+				}
+
+				if (eFallbackPlayer == NO_PLAYER)
+				{
+					eFallbackPlayer = ((PlayerTypes)iI);
+				}
+			}
+		}
+	}
+
+	if (eFallbackPlayer != NO_PLAYER)
+	{
+		return eFallbackPlayer;
+	}
+
+	// No member at all (the team can still be eligible through isForceTeamVoteEligible)
+	return getSecretaryID();
+}
+/************************************************************************************************/
+/* AOE_COUNCIL_TEAM_MEMBERSHIP            END                                                   */
+/************************************************************************************************/
 
 
 HandicapTypes CvTeam::getHandicapType() const

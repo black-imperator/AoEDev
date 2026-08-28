@@ -10423,7 +10423,7 @@ void CvGame::doVoteSelection()
 
 				if (eSecretaryGeneral != NO_TEAM)
 				{
-					eSecretaryPlayer = GET_TEAM(eSecretaryGeneral).getSecretaryID();
+					eSecretaryPlayer = GET_TEAM(eSecretaryGeneral).getSecretaryID(eVoteSource);
 				}
 				else
 				{
