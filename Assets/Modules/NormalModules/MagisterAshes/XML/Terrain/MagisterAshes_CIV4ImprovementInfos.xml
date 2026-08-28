@@ -265,6 +265,7 @@
 			<bSpawnOnlyForOwner>1</bSpawnOnlyForOwner>
 			<SpawnUnitType>UNIT_SCORPION</SpawnUnitType>
 			<SpawnUnitCiv>CIVILIZATION_DEMON</SpawnUnitCiv>
+			<SpawnUnitPromotion>PROMOTION_DEMON</SpawnUnitPromotion>
 			<iSpawnAtOnceLimit>3</iSpawnAtOnceLimit>
 			<iSpawnUnitChancePercentMod>-50</iSpawnUnitChancePercentMod>
 			<iBasePlotCounterModify>50</iBasePlotCounterModify>

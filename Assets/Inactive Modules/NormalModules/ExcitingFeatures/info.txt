@@ -8,7 +8,7 @@ Exciting Features
 ;Note: it have to be number, so only numberic characters and none or one period
 ;note: one line
 [version]
-0.2
+0.3
 ;
 ;
 ;RifE version - version of RifE for which is this module tested, checked, developed, etc
@@ -35,6 +35,12 @@ Buffs some low power unique features
 ;Description - text showed in message box
 ;note: can be multiline
 [desc]
+
+0.3
+Fixed oversights with Foxford(Town) spawning.
+Added Abbadon's Pit from MagisterAshes.
+Set upgrade for Standing Stones to correct tech.
+
 
 0.2
 Added yield on mana tech to mana node style improvements.

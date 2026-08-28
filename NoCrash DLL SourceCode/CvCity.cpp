@@ -3715,13 +3715,13 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 			}
 		}
 	}
-	if (GC.getBuildingInfo(eBuilding).getPlotRadius() != 0)
-	{
-		if (GC.getBuildingInfo(eBuilding).getPlotRadius() == getPlotRadius() && !bCheckStillValid)
-		{
-			return false;
-		}
-	}
+//	if (GC.getBuildingInfo(eBuilding).getPlotRadius() != 0)
+//	{
+//		if (GC.getBuildingInfo(eBuilding).getPlotRadius() == getPlotRadius() && !bCheckStillValid)
+//		{
+//			return false;
+//		}
+//	}
 	BuildingClassTypes eBuildingClass = ((BuildingClassTypes)(GC.getBuildingInfo(eBuilding).getBuildingClassType()));
 	if (getCityBuildings(eBuildingClass) != eBuilding)
 	{
