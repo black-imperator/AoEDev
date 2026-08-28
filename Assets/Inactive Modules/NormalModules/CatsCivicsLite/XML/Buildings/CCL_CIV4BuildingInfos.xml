@@ -253,7 +253,6 @@
 			<iGreatGeneralRateModifier>50</iGreatGeneralRateModifier>
 			<iTradeRouteModifier>50</iTradeRouteModifier>
 			<iTradeRoutes>5</iTradeRoutes>
-			<iPlotRadius>3</iPlotRadius>
 			<YieldModifiers>
 				<iYield>0</iYield>
 				<iYield>50</iYield>
