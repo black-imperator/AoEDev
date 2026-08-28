@@ -2117,6 +2117,13 @@ void CvUnit::kill(bool bDelay, PlayerTypes ePlayer, bool bPostConvert)
 			data->piPromotions[i] = countHasPromotion((PromotionTypes)i);
 		}
 	}
+	// Bugfix: setXY() below only strips the ranged CityBonus effects, so a dying unit
+	// used to leave its FullMap CityBonus contributions on every city forever.  Remove
+	// them here (FullMap only, or setXY would subtract the ranged ones a second time).
+	if (getNumCityBonuses() > 0)
+	{
+		applyCityBonusEffects(false, true, true);
+	}
 	setXY(INVALID_PLOT_COORD, INVALID_PLOT_COORD, true);
 
 	joinGroup(NULL, false, false);
@@ -18356,19 +18363,28 @@ void CvUnit::changeCityBonuses(bool bApply, std::list<CityBonuses> cbCityBonus)
 	}
 	else
 	{
+		// Bugfix: the rotation used to spin forever whenever the requested bonus
+		// was not held by the unit (and dereferenced front() on an empty list).
+		// Rotate at most once around the list, then drop the request either way.
 		while (!cbCityBonus.empty())
 		{
-			if (m_cbCityBonuses.front().compare(cbCityBonus.front()))
+			bool bFound = false;
+			for (size_t i = 0; i < m_cbCityBonuses.size(); ++i)
 			{
-				m_iNumCityBonuses--;
-				cbCityBonus.pop_front();
-				m_cbCityBonuses.pop_front();
-			}
-			else
-			{
+				if (m_cbCityBonuses.front().compare(cbCityBonus.front()))
+				{
+					bFound = true;
+					break;
+				}
 				m_cbCityBonuses.push_back(m_cbCityBonuses.front());
 				m_cbCityBonuses.pop_front();
 			}
+			if (bFound)
+			{
+				m_iNumCityBonuses--;
+				m_cbCityBonuses.pop_front();
+			}
+			cbCityBonus.pop_front();
 		}
 	}
 }
@@ -18409,19 +18425,28 @@ void CvUnit::changeAuraBonuses(bool bApply, std::list<AuraBonuses> cbAuraBonus)
 	}
 	else
 	{
+		// Bugfix: the rotation used to spin forever whenever the requested bonus
+		// was not held by the unit (and dereferenced front() on an empty list).
+		// Rotate at most once around the list, then drop the request either way.
 		while (!cbAuraBonus.empty())
 		{
-			if (m_cbAuraBonuses.front().compare(cbAuraBonus.front()))
+			bool bFound = false;
+			for (size_t i = 0; i < m_cbAuraBonuses.size(); ++i)
 			{
-				m_iNumAuraBonuses--;
-				cbAuraBonus.pop_front();
-				m_cbAuraBonuses.pop_front();
-			}
-			else
-			{
+				if (m_cbAuraBonuses.front().compare(cbAuraBonus.front()))
+				{
+					bFound = true;
+					break;
+				}
 				m_cbAuraBonuses.push_back(m_cbAuraBonuses.front());
 				m_cbAuraBonuses.pop_front();
 			}
+			if (bFound)
+			{
+				m_iNumAuraBonuses--;
+				m_cbAuraBonuses.pop_front();
+			}
+			cbAuraBonus.pop_front();
 		}
 	}
 }
@@ -22501,6 +22526,23 @@ void CvUnit::setHasPromotion(PromotionTypes eIndex, bool bNewValue, bool bSupres
 		}
 		setPromotionDuration(eIndex, (bNewValue ? kPromotion.getDuration() : 0));
 		
+		// Bugfix: keep the unit's CityBonus/AuraBonus lists in step with m_paiHasPromotion
+		// before the PromotionOverwrites/ReplacedBy handling below can recurse into
+		// setHasPromotion(), otherwise a nested call tries to remove bonuses the unit has
+		// not been given yet.
+		applyCityBonusEffects(false, true);
+		if (kPromotion.getNumCityBonuses() > 0)
+		{
+			changeCityBonuses(bNewValue, kPromotion.listCityBonuses());
+		}
+		applyCityBonusEffects(true, true);
+		if (kPromotion.getNumAuraBonuses() > 0)
+		{
+			applyAuraBonusEffects(false, true,false);
+			changeAuraBonuses(bNewValue, kPromotion.listAuraBonuses());
+			applyAuraBonusEffects(true, true,false);
+		}
+
 		if (bNewValue)
 		{
 			for (int iI = 0; iI < GC.getNumPromotionInfos(); iI++)
@@ -22691,18 +22733,6 @@ void CvUnit::setHasPromotion(PromotionTypes eIndex, bool bNewValue, bool bSupres
 		changeExtraCulturePerPop(kPromotion.getExtraCulturePerPop() * iChange);
 		changeXPTranserRate(kPromotion.getXPTranserRate() * iChange);
 		changeCastingLimit((kPromotion.getMulticast()) *iChange);
-		applyCityBonusEffects(false, true);
-		if (kPromotion.getNumCityBonuses() > 0)
-		{
-			changeCityBonuses(bNewValue, kPromotion.listCityBonuses());
-		}
-		applyCityBonusEffects(true, true);
-		if (kPromotion.getNumAuraBonuses() > 0)
-		{
-			applyAuraBonusEffects(false, true,false);
-			changeAuraBonuses(bNewValue, kPromotion.listAuraBonuses());
-			applyAuraBonusEffects(true, true,false);
-		}
 		for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
 		{
 			changeYieldFromWin(iI, (kPromotion.getYieldFromWin(iI) * iChange));
@@ -32974,7 +33004,7 @@ void CvUnit::applyCityBonus(CityBonuses cbTemp, CvCity* pCheckCity, int iChange,
 	if (cbTemp.fTrainXPCap != 0) pCheckCity->changeProximityTrainXPCap(iChange * 100 * (cbTemp.fTrainXPCap + iDistance*cbTemp.fDecayRate), m_pUnitInfo->getUnitCombatType());
 	if (cbTemp.fTrainXPRate != 0) pCheckCity->changeProximityTrainXPRate(iChange * (cbTemp.fTrainXPRate + iDistance*cbTemp.fDecayRate), m_pUnitInfo->getUnitCombatType());
 }
-void CvUnit::applyCityBonusEffects(bool bActivate, bool bAlterFullMap)
+void CvUnit::applyCityBonusEffects(bool bActivate, bool bAlterFullMap, bool bFullMapOnly)
 {
 	PROFILE("CvUnit::applyCityBonusEffects");
 
@@ -33023,7 +33053,7 @@ void CvUnit::applyCityBonusEffects(bool bActivate, bool bAlterFullMap)
 				}
 			}
 		}
-		else
+		else if (!bFullMapOnly)
 		{
 			for (int jX = -cbTemp.iBonusRange; jX < cbTemp.iBonusRange+1; jX++)
 			{
