@@ -2784,4 +2784,4 @@ class FoxTools:
 	def getDistance(self, pPlot, pTarget): # Ronkhar : this function is never used in RifE or AoE as of 2014_10
 		return plotDistance(pTarget.getX(), pTarget.getY(), pPlot.getX(), pPlot.getY())
 
-	def getMovesLeft(self, pUnit): return (pUnit.movesLeft() / gc.getMOVE_DENOMINATOR())
+	def getMovesLeft(self, pUnit): return (pUnit.movesLeft() / CyGlobalContext().getMOVE_DENOMINATOR())
