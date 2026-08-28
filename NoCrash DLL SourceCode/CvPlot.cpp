@@ -14017,9 +14017,21 @@ void CvPlot::setClimate(ClimateZoneTypes eClimate)
 
 		if (GC.IsGraphicsInitialized())
 		{
+			// Capture the feature BEFORE the terrain is switched. setTerrainClassType
+			// -> setTerrainType strips any feature that is not valid on the new
+			// terrain (a Forest cannot stand on Desert), so by the time the callback
+			// runs the plot has already lost it. onClimateChange has to know which
+			// feature the plot HAD in order to convert it - without this every
+			// tree-conversion branch in the hook silently tests NO_FEATURE and does
+			// nothing, and the feature is simply destroyed instead of transformed.
+			FeatureTypes eOldFeature = getFeatureType();
+			int iOldFeatureVariety = getFeatureVariety();
+
 			setTerrainClassType((TerrainClassTypes)GC.getClimateZoneInfo(getClimate()).getTerrainClass(), false, false);
 
 			argsList.add(getClimate());
+			argsList.add(eOldFeature);
+			argsList.add(iOldFeatureVariety);
 			gDLL->getPythonIFace()->callFunction(PYFlavourModule, "onClimateChange", argsList.makeFunctionArgs());
 		}
 	}
