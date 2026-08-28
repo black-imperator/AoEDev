@@ -1180,6 +1180,14 @@
 		<Spanish>Human Control</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_SUPPRESSED_RAGE_HELP</Tag>
+		<English>[ICON_BULLET]Unit is under the control of its owner instead of the AI, until its rage returns</English>
+		<French>[ICON_BULLET]Unit is under the control of its owner instead of the AI, until its rage returns</French>
+		<German>[ICON_BULLET]Unit is under the control of its owner instead of the AI, until its rage returns</German>
+		<Italian>[ICON_BULLET]Unit is under the control of its owner instead of the AI, until its rage returns</Italian>
+		<Spanish>[ICON_BULLET]Unit is under the control of its owner instead of the AI, until its rage returns</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_FREELANCER</Tag>
 		<English>Freelancer</English>
 		<French>Freelancer</French>
