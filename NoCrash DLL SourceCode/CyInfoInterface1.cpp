@@ -47,6 +47,8 @@ void CyInfoPythonInterface1()
 		;
 
 	python::class_<CvSpecialistClassInfo, python::bases<CvInfoBase> >("CvSpecialistClassInfo")
+		.def("getDefaultSpecialistIndex", &CvSpecialistClassInfo::getDefaultSpecialistIndex, "int ()")
+		.def("isUnique", &CvSpecialistClassInfo::isUnique, "bool ()")
 		;
 	python::class_<CvSpecialistArtstyleInfo, python::bases<CvInfoBase> >("CvSpecialistArtstyleInfo")
 		;

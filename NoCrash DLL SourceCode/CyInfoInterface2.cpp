@@ -94,6 +94,7 @@ void CyInfoPythonInterface2()
 		// Arrays
 
 		.def("getCivilizationBuildings", &CvCivilizationInfo::getCivilizationBuildings, "int (int i)")
+		.def("getCivilizationSpecialists", &CvCivilizationInfo::getCivilizationSpecialists, "int (int i)")
 		.def("getCivilizationImprovements", &CvCivilizationInfo::getCivilizationImprovements, "int (int i)")
 		.def("getCivilizationUnits", &CvCivilizationInfo::getCivilizationUnits, "int (int i)")
 		.def("getCivilizationFreeUnitsClass", &CvCivilizationInfo::getCivilizationFreeUnitsClass, "int (int i)")

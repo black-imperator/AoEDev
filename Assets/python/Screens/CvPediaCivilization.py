@@ -409,6 +409,35 @@ class CvPediaCivilization:
 				if iFeature != iLastFeature:
 					szText += ", "
 
+		lUniqueSpecialists = []
+		lBlockedSpecialists = []
+		for iSpecialistClass in range(gc.getNumSpecialistClassInfos()):
+			iUniqueSpecialist = gc.getCivilizationInfo(self.iCivilization).getCivilizationSpecialists(iSpecialistClass)
+			iDefaultSpecialist = gc.getSpecialistClassInfo(iSpecialistClass).getDefaultSpecialistIndex()
+			bUniqueClass = gc.getSpecialistClassInfo(iSpecialistClass).isUnique()
+			if iUniqueSpecialist > -1:
+				if (iDefaultSpecialist > -1 and iDefaultSpecialist != iUniqueSpecialist) or bUniqueClass:
+					if not gc.getSpecialistInfo(iUniqueSpecialist).isGraphicalOnly():
+						lUniqueSpecialists.append(iUniqueSpecialist)
+			else:
+				if iDefaultSpecialist > -1 and not bUniqueClass:
+					if not gc.getSpecialistInfo(iDefaultSpecialist).isGraphicalOnly():
+						lBlockedSpecialists.append(iDefaultSpecialist)
+
+		if lUniqueSpecialists:
+			szText += "\n\n" + localText.getText("TXT_KEY_PEDIA_CIV_MENU_UNIQUE_SPECIALISTS", ()) + " "
+			for iIndex in range(len(lUniqueSpecialists)):
+				if iIndex > 0:
+					szText += ", "
+				szText += gc.getSpecialistInfo(lUniqueSpecialists[iIndex]).getDescription()
+
+		if lBlockedSpecialists:
+			szText += "\n\n" + localText.getText("TXT_KEY_PEDIA_CIV_MENU_BLOCKED_SPECIALISTS", ()) + " "
+			for iIndex in range(len(lBlockedSpecialists)):
+				if iIndex > 0:
+					szText += ", "
+				szText += gc.getSpecialistInfo(lBlockedSpecialists[iIndex]).getDescription()
+
 		screen.attachMultilineText( panelName, szName, szText, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 
 	def placeHistory(self):
