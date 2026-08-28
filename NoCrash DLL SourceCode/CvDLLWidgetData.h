@@ -141,6 +141,7 @@ public:
 	void doPediaTrainJump(CvWidgetDataStruct &widgetDataStruct);
 	void doPediaBuildJump(CvWidgetDataStruct &widgetDataStruct);
 	void doPediaActionJump(CvWidgetDataStruct &widgetDataStruct);
+	void doPediaPlotListUnitJump(CvWidgetDataStruct &widgetDataStruct);
 	void doDealKill(CvWidgetDataStruct &widgetDataStruct);
 	void doRefreshMilitaryAdvisor(CvWidgetDataStruct &widgetDataStruct);
 	void doMenu( void );
