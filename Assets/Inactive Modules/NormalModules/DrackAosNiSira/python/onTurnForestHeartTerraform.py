@@ -136,6 +136,11 @@ def onBeginGameTurn(self, argsList):
 		# If Field is not a Forest heart, Ignore
 		if iRange == 0: continue
   
+		# Never terraform a water plot into land: setTerrainType() flips PLOT_OCEAN
+		# to PLOT_LAND when the new terrain's bWater differs (CvPlot.cpp:6985). (issue #255)
+		if pPlot.isWater():
+			continue
+  
 		# Terrain directly under Forest Heart becomes Grassland and Ancient Forest
 		forestHeartFeature = pPlot.getFeatureType()
 		forestHeartTerrain = pPlot.getTerrainType()
@@ -164,9 +169,7 @@ def onBeginGameTurn(self, argsList):
 
 			# Peaks and Oceans are not Terraformed
 			if bPeak: continue
-			if iTerrain == terrainOcean: continue
-			if iTerrain == terrainCoast: continue
-			if iTerrain == terrainDeepOcean: continue
+			if iPlot.isWater(): continue
 
 			iPlotIsOwned = iPlot.isOwned()
    

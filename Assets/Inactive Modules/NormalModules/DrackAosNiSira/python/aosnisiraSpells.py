@@ -18,13 +18,8 @@ def reqPlantForestHeartOnFort(pCaster):
 	iForestHeart3 = git('IMPROVEMENT_FORESTHEART_TITAN')
 	invalidFortTypes = [iForestHeart1, iForestHeart2, iForestHeart3]
 	
-	terrainOcean	 = git("TERRAIN_OCEAN")
-	terrainCoast	 = git("TERRAIN_COAST")
-	terrainDeepOcean = git("TERRAIN_OCEAN_DEEP")
-	waterTiles = [terrainOcean, terrainCoast, terrainDeepOcean]
- 	
-	pPlotTerrainType = pPlot.getTerrainType()
-	if pPlotTerrainType in waterTiles:
+	# Forest Hearts terraform their plot to Grassland; never allow one on water. (issue #255)
+	if pPlot.isWater():
 		return False
   
 	if iPlayer != -1:
