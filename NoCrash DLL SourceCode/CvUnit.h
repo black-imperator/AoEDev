@@ -933,6 +933,7 @@ public:
 /*************************************************************************************************/
 /**	Tweak									END													**/
 /*************************************************************************************************/
+	void applyTraitFreePromotions(TraitTypes eTrait);
 
 	DllExport int getSubUnitCount() const;
 	DllExport int getSubUnitsAlive() const;
