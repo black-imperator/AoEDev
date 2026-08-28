@@ -22014,100 +22014,6 @@ void CvUnit::setHasPromotion(PromotionTypes eIndex, bool bNewValue, bool bSupres
 /*************************************************************************************************/
 	}
 //FfH: End Add
-/*************************************************************************************************/
-/**	EquipRedux								05/31/09								Xienwolf	**/
-/**	Prevents the container from gaining stats from the equipment, and cleans them up when empty	**/
-/**		Removes the need to add units for each equipment item introduced into the game			**/
-/*************************************************************************************************/
-	CvString cDefault = CvString::format("").GetCString();
-	if (kPromotion.getReplaceArtType() != cDefault)
-	{
-		if (bNewValue)
-		{
-			setReplaceArtDefineTag(kPromotion.getReplaceArtType());
-		}
-		else
-		{
-			setReplaceArtDefineTag(cDefault);
-		}
-		reloadEntity();
-	}
-	if(kPromotion.getExtraArtType()!=cDefault)
-	{
-		if (bNewValue)
-		{
-			if (getExtraArtDefineTag() == cDefault)
-			{
-				setExtraGroupSize(getExtraGroupSize() + 1);
-				setExtraArtDefineTag(kPromotion.getExtraArtType());
-			}
-			else if (getExtraArtDefineTag2() == cDefault)
-			{
-				setExtraGroupSize(getExtraGroupSize() + 1);
-				setExtraArtDefineTag2(kPromotion.getExtraArtType());
-			}
-			else if (getExtraArtDefineTag3() == cDefault)
-			{
-				setExtraGroupSize(getExtraGroupSize() + 1);
-				setExtraArtDefineTag3(kPromotion.getExtraArtType());
-			}
-			reloadEntity();
-		}
-		else
-		{
-/*************************************************************************************************/
-/**	Bugfix (Issue #240)						08/27/26											**/
-/**		The extra model added by a promotion was never released when the promotion was lost.		**/
-/**		getExtraArtDefineTag() and getExtraArtType() both return const TCHAR*, so comparing		**/
-/**		them directly compared ADDRESSES (unit member vs promotion member) and was always		**/
-/**		false.  Hold the promotion's tag in a CvString so each test is a value comparison.		**/
-/*************************************************************************************************/
-			CvString cPromoArt = kPromotion.getExtraArtType();
-			if (cPromoArt == getExtraArtDefineTag())
-			{
-				setExtraGroupSize(getExtraGroupSize() - 1);
-				if (getExtraArtDefineTag3() != cDefault)
-				{
-					setExtraArtDefineTag(getExtraArtDefineTag3());
-					setExtraArtDefineTag3(cDefault);
-				}
-				else if (getExtraArtDefineTag2() != cDefault)
-				{
-					setExtraArtDefineTag(getExtraArtDefineTag2());
-					setExtraArtDefineTag2(cDefault);
-				}
-				else
-				{
-					setExtraArtDefineTag(cDefault);
-				}
-			}
-			else if (cPromoArt == getExtraArtDefineTag2())
-
-			{
-				setExtraGroupSize(getExtraGroupSize() - 1);
-				if (getExtraArtDefineTag3() != cDefault)
-				{
-					setExtraArtDefineTag2(getExtraArtDefineTag3());
-					setExtraArtDefineTag3(cDefault);
-				}
-				else
-				{
-					setExtraArtDefineTag2(cDefault);
-				}
-
-			}
-			else if (cPromoArt == getExtraArtDefineTag3())
-			{
-				setExtraGroupSize(getExtraGroupSize() - 1);
-
-				setExtraArtDefineTag3(cDefault);
-			}
-/*************************************************************************************************/
-/**	Bugfix									END													**/
-/*************************************************************************************************/
-			reloadEntity();
-		}
-	}
 	if (kPromotion.getSpecialCargo() != NO_SPECIALUNIT)
 	{
 		if (bNewValue)
@@ -22179,6 +22085,105 @@ void CvUnit::setHasPromotion(PromotionTypes eIndex, bool bNewValue, bool bSupres
 				delete pyCaster;
 				if (lResult == 1)
 					return;
+			}
+		}
+
+		// Issue #240: this art handling used to sit above the state-change guard, so a
+		// redundant setHasPromotion(P, true) consumed another art slot, and a PyOnRemove
+		// veto returned after the art had already been mutated. Kept inside the guard and
+		// after the veto so it only runs when the promotion really changes state.
+	/*************************************************************************************************/
+	/**	EquipRedux								05/31/09								Xienwolf	**/
+	/**	Prevents the container from gaining stats from the equipment, and cleans them up when empty	**/
+	/**		Removes the need to add units for each equipment item introduced into the game			**/
+	/*************************************************************************************************/
+		CvString cDefault = CvString::format("").GetCString();
+		if (kPromotion.getReplaceArtType() != cDefault)
+		{
+			if (bNewValue)
+			{
+				setReplaceArtDefineTag(kPromotion.getReplaceArtType());
+			}
+			else
+			{
+				setReplaceArtDefineTag(cDefault);
+			}
+			reloadEntity();
+		}
+		if(kPromotion.getExtraArtType()!=cDefault)
+		{
+			if (bNewValue)
+			{
+				if (getExtraArtDefineTag() == cDefault)
+				{
+					setExtraGroupSize(getExtraGroupSize() + 1);
+					setExtraArtDefineTag(kPromotion.getExtraArtType());
+				}
+				else if (getExtraArtDefineTag2() == cDefault)
+				{
+					setExtraGroupSize(getExtraGroupSize() + 1);
+					setExtraArtDefineTag2(kPromotion.getExtraArtType());
+				}
+				else if (getExtraArtDefineTag3() == cDefault)
+				{
+					setExtraGroupSize(getExtraGroupSize() + 1);
+					setExtraArtDefineTag3(kPromotion.getExtraArtType());
+				}
+				reloadEntity();
+			}
+			else
+			{
+	/*************************************************************************************************/
+	/**	Bugfix (Issue #240)						08/27/26											**/
+	/**		The extra model added by a promotion was never released when the promotion was lost.		**/
+	/**		getExtraArtDefineTag() and getExtraArtType() both return const TCHAR*, so comparing		**/
+	/**		them directly compared ADDRESSES (unit member vs promotion member) and was always		**/
+	/**		false.  Hold the promotion's tag in a CvString so each test is a value comparison.		**/
+	/*************************************************************************************************/
+				CvString cPromoArt = kPromotion.getExtraArtType();
+				if (cPromoArt == getExtraArtDefineTag())
+				{
+					setExtraGroupSize(getExtraGroupSize() - 1);
+					if (getExtraArtDefineTag3() != cDefault)
+					{
+						setExtraArtDefineTag(getExtraArtDefineTag3());
+						setExtraArtDefineTag3(cDefault);
+					}
+					else if (getExtraArtDefineTag2() != cDefault)
+					{
+						setExtraArtDefineTag(getExtraArtDefineTag2());
+						setExtraArtDefineTag2(cDefault);
+					}
+					else
+					{
+						setExtraArtDefineTag(cDefault);
+					}
+				}
+				else if (cPromoArt == getExtraArtDefineTag2())
+
+				{
+					setExtraGroupSize(getExtraGroupSize() - 1);
+					if (getExtraArtDefineTag3() != cDefault)
+					{
+						setExtraArtDefineTag2(getExtraArtDefineTag3());
+						setExtraArtDefineTag3(cDefault);
+					}
+					else
+					{
+						setExtraArtDefineTag2(cDefault);
+					}
+
+				}
+				else if (cPromoArt == getExtraArtDefineTag3())
+				{
+					setExtraGroupSize(getExtraGroupSize() - 1);
+
+					setExtraArtDefineTag3(cDefault);
+				}
+	/*************************************************************************************************/
+	/**	Bugfix									END													**/
+	/*************************************************************************************************/
+				reloadEntity();
 			}
 		}
 /*************************************************************************************************/
