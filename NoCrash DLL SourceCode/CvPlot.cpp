@@ -5180,6 +5180,23 @@ bool CvPlot::canHavePlotEffect(PlotEffectTypes ePlotEffect) const
 		return false;
 	}
 
+/*************************************************************************************************/
+/**	Plot Effects on Peaks					08/28/26											**/
+/**		Peaks are a PLOT TYPE, not a terrain: isPeak() tests getPlotType() == PLOT_PEAK, and		**/
+/**		nothing assigns TERRAIN_PEAK to a mountain - the DLL never derives terrain from plot		**/
+/**		type, and no shipped map script sets it. A peak therefore keeps the grass/plains/taiga	**/
+/**		terrain the generator gave it, all of which several plot effects permit, so effects		**/
+/**		could spawn and spread onto mountains. CvPlot::canHaveFeature already refuses peaks		**/
+/**		the same way; this brings plot effects into line with it.								**/
+/*************************************************************************************************/
+	if (isPeak())
+	{
+		return false;
+	}
+/*************************************************************************************************/
+/**	Plot Effects on Peaks						END												**/
+/*************************************************************************************************/
+
 	if (!GC.getPlotEffectInfo(ePlotEffect).isTerrain((TerrainTypes)getTerrainType()))
 	{
 		return false;
