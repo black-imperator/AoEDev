@@ -392,6 +392,11 @@ def placeTreasure(iPlayer, iUnit):
 	pPlayer 	= gc.getPlayer(iPlayer)
 	pBestPlot 	= -1
 	iBestPlot 	= -1
+	iTeam 		= pPlayer.getTeam()
+	lOtherTeams = []
+	for iLoopTeam in xrange(gc.getMAX_CIV_TEAMS()):
+		if iLoopTeam != iTeam and gc.getTeam(iLoopTeam).isAlive():
+			lOtherTeams.append(iLoopTeam)
 	for i in xrange(map.numPlots()):
 		pPlot = plotByIndex(i)
 		iPlot = -1
@@ -399,23 +404,28 @@ def placeTreasure(iPlayer, iUnit):
 			if pPlot.getNumUnits() == 0:
 				if not pPlot.isCity():
 					if not pPlot.isImpassable():
-						iPlot = getRandNum(1000, "Add Unit")
-						if pPlot.area().getNumTiles() < 8:
-							iPlot += 1000
-						if not pPlot.isOwned():
-							iPlot += 1000
-						if iPlot > iBestPlot:
-							iBestPlot = iPlot
-							pBestPlot = pPlot
+						bSeen = False
+						for iLoopTeam in lOtherTeams:
+							if pPlot.isVisible(iLoopTeam, False):
+								bSeen = True
+								break
+						if not bSeen:
+							iPlot = getRandNum(1000, "Add Unit")
+							if pPlot.area().getNumTiles() < 8:
+								iPlot += 1000
+							if not pPlot.isOwned():
+								iPlot += 1000
+							if iPlot > iBestPlot:
+								iBestPlot = iPlot
+								pBestPlot = pPlot
 	if iBestPlot != -1:
 		newUnit = pPlayer.initUnit(iUnit, pBestPlot.getX(), pBestPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 		CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_MESSAGE_EXPLORE_LAIR_TREASURE",()),'',1,'Art/Interface/Buttons/Equipment/Treasure.dds',ColorTypes(8),newUnit.getX(),newUnit.getY(),True,True)
+		signText = CvUtil.convertToStr(CyTranslator().getText("TXT_KEY_EQUIPMENT_TREASURE", ()))
+		pBestPlot.setRevealed(iTeam, True, False, TeamTypes.NO_TEAM)
+		CyEngine().addSign(pBestPlot, iPlayer, signText)
 		if (iPlayer == game.getActivePlayer()):
-			iTeam = pPlayer.getTeam()
-			signText = CvUtil.convertToStr(CyTranslator().getText("TXT_KEY_EQUIPMENT_TREASURE", ()))
-			pBestPlot.setRevealed(iTeam, True, False, TeamTypes.NO_TEAM)
 			CyCamera().JustLookAtPlot(pBestPlot)
-			CyEngine().addSign(pBestPlot, iPlayer, signText)
 
 def wchoice(weighted_choices, log_message='Log message' ):
 	objects, frequences = zip( *weighted_choices )
