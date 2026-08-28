@@ -2284,6 +2284,11 @@ public:
 	int getRemovePromotionType3() const;
 	int getResistModify() const;
 	int getCreateUnitPromotion() const;
+	int getAdditionalCostFlag() const;
+	int getAdditionalCostFlagChange() const;
+	int getFlag() const;
+	int getFlagChange() const;
+	bool isGlobalFlagChange() const;
 	int getCreateUnitType() const;
 	bool isAllowAI() const;
 	bool isAdjacentToWaterOnly() const;
@@ -2473,6 +2478,11 @@ protected:
 	int m_iCreateUnitDuration;
 	int m_iCreateUnitPromotion;
 	int m_iCreateUnitType;
+	int m_iAdditionalCostFlag;
+	int m_iAdditionalCostFlagChange;
+	int m_iFlag;
+	int m_iFlagChange;
+	bool m_bGlobalFlagChange;
 	bool m_bCopyCastersPromotions;
 	bool m_bPermanentUnitCreate;
 	bool m_bImmuneTeam;

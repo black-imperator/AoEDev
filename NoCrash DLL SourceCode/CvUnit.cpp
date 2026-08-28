@@ -23886,6 +23886,11 @@ bool CvUnit::canCast(int spell, bool bTestVisible, CvPlot* pTargetPlot)
 		{
 			iCost += (iCost * GET_PLAYER(getOwnerINLINE()).getUpgradeCostModifier()) / 100;
 		}
+		if (GC.getSpellInfo(eSpell).getAdditionalCostFlag() != NO_FLAG)
+		{	
+			iCost += GC.getSpellInfo(eSpell).getAdditionalCostFlagChange() * GET_PLAYER(getOwner()).getFlagValue(((FlagTypes)GC.getSpellInfo(eSpell).getAdditionalCostFlag()));	
+		}
+
 		if (GET_PLAYER(getOwnerINLINE()).getGold() < iCost)
 		{
 			return false;
@@ -25832,11 +25837,27 @@ void CvUnit::cast(int spell,CvPlot* pTargetPlot)
 		{
 			iCost += (iCost * GET_PLAYER(getOwnerINLINE()).getUpgradeCostModifier()) / 100;
 		}
+		if (GC.getSpellInfo((SpellTypes)spell).getAdditionalCostFlag() != NO_FLAG)
+		{
+			iCost += GC.getSpellInfo((SpellTypes)spell).getAdditionalCostFlagChange() * GET_PLAYER(getOwner()).getFlagValue(((FlagTypes)GC.getSpellInfo((SpellTypes)spell).getAdditionalCostFlag()));
+		}
+
 		GET_PLAYER(getOwnerINLINE()).changeGold(-1 * iCost);
 	}
 	if (GC.getSpellInfo((SpellTypes)spell).getChangePopulation() != 0)
 	{
 		pTargetPlot->getPlotCity()->changePopulation(GC.getSpellInfo((SpellTypes)spell).getChangePopulation());
+	}
+	if (GC.getSpellInfo((SpellTypes)spell).getFlag() != NO_FLAG)
+	{
+		if (GC.getSpellInfo((SpellTypes)spell).isGlobalFlagChange())
+		{
+			GC.getGame().changeGlobalFlagValue((FlagTypes)GC.getSpellInfo((SpellTypes)spell).getFlag(), GC.getSpellInfo((SpellTypes)spell).getFlagChange());
+		}
+		else
+		{
+			GET_PLAYER(getOwner()).changeFlagValue((FlagTypes)GC.getSpellInfo((SpellTypes)spell).getFlag(), GC.getSpellInfo((SpellTypes)spell).getFlagChange());
+		}
 	}
 	if (GC.getSpellInfo((SpellTypes)spell).isDispel())
 	{

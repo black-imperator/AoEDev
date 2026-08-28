@@ -11301,6 +11301,8 @@ m_iCreateUnitDuration(-1),
 m_bCopyCastersPromotions(false),
 m_bPermanentUnitCreate(false),
 m_iCreateUnitPromotion(NO_PROMOTION),
+m_iAdditionalCostFlag(NO_FLAG),
+m_iAdditionalCostFlagChange(0),
 m_bImmuneTeam(false),
 m_bImmuneNeutral(false),
 m_bImmuneEnemy(false),
@@ -11918,6 +11920,29 @@ int CvSpellInfo::getCreateUnitPromotion() const
 	return m_iCreateUnitPromotion;
 }
 
+int CvSpellInfo::getAdditionalCostFlag() const
+{
+	return m_iAdditionalCostFlag;
+}
+
+int CvSpellInfo::getAdditionalCostFlagChange() const
+{
+	return m_iAdditionalCostFlagChange;
+}
+int CvSpellInfo::getFlag() const
+{
+	return m_iFlag;
+}
+
+int CvSpellInfo::getFlagChange() const
+{
+	return m_iFlagChange;
+}
+bool CvSpellInfo::isGlobalFlagChange() const
+{
+	return m_bGlobalFlagChange;
+}
+
 const TCHAR *CvSpellInfo::getPyMiscast() const
 {
 	return m_szPyMiscast;
@@ -12119,6 +12144,11 @@ void CvSpellInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_bCopyCastersPromotions);
 	stream->Read(&m_bPermanentUnitCreate);
 	stream->Read(&m_iCreateUnitPromotion);
+	stream->Read(&m_iAdditionalCostFlag);
+	stream->Read(&m_iAdditionalCostFlagChange);
+	stream->Read(&m_iFlag);
+	stream->Read(&m_iFlagChange);
+	stream->Read(&m_bGlobalFlagChange);
 	stream->Read(&m_bImmuneTeam);
 	stream->Read(&m_bImmuneNeutral);
 	stream->Read(&m_bImmuneEnemy);
@@ -12313,6 +12343,11 @@ void CvSpellInfo::write(FDataStreamBase* stream)
 	stream->Write(m_bCopyCastersPromotions);
 	stream->Write(m_bPermanentUnitCreate);
 	stream->Write(m_iCreateUnitPromotion);
+	stream->Write(m_iAdditionalCostFlag);
+	stream->Write(m_iAdditionalCostFlagChange);
+	stream->Write(m_iFlag);
+	stream->Write(m_iFlagChange);
+	stream->Write(m_bGlobalFlagChange);
 	stream->Write(m_bImmuneTeam);
 	stream->Write(m_bImmuneNeutral);
 	stream->Write(m_bImmuneEnemy);
@@ -12572,6 +12607,13 @@ bool CvSpellInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bPermanentUnitCreate, "bPermanentUnitCreate");
 	pXML->GetChildXmlValByName(szTextVal, "CreateUnitPromotion");
 	if (szTextVal != "") m_iCreateUnitPromotion = pXML->FindInInfoClass(szTextVal);
+	pXML->GetChildXmlValByName(szTextVal, "AdditionalCostFlag");
+	if (szTextVal != "") m_iAdditionalCostFlag = pXML->FindInInfoClass(szTextVal);
+	pXML->GetChildXmlValByName(&m_iAdditionalCostFlagChange, "iAdditionalCostFlagChange");
+	pXML->GetChildXmlValByName(szTextVal, "Flag");
+	if (szTextVal != "") m_iFlag = pXML->FindInInfoClass(szTextVal);
+	pXML->GetChildXmlValByName(&m_iFlagChange, "iFlagChange");
+	pXML->GetChildXmlValByName(&m_bGlobalFlagChange, "bGlobalFlagChange");
 	pXML->GetChildXmlValByName(&m_bImmuneTeam, "bImmuneTeam");
 	pXML->GetChildXmlValByName(&m_bImmuneNeutral, "bImmuneNeutral");
 	pXML->GetChildXmlValByName(&m_bImmuneEnemy, "bImmuneEnemy");
@@ -12790,6 +12832,11 @@ void CvSpellInfo::copyNonDefaults(CvSpellInfo* pClassInfo, CvXMLLoadUtility* pXM
 	if (getPromotionInStackPrereq()		== NO_PROMOTION)		m_iPromotionInStackPrereq		= pClassInfo->getPromotionInStackPrereq();
 	if (getPromotionInStackTargetPrereq() == NO_PROMOTION)		m_iPromotionInStackTargetPrereq = pClassInfo->getPromotionInStackTargetPrereq();
 	if (getCreateUnitPromotion()		== NO_PROMOTION)		m_iCreateUnitPromotion			= pClassInfo->getCreateUnitPromotion();
+	if (getAdditionalCostFlag() == NO_FLAG)		m_iAdditionalCostFlag = pClassInfo->getAdditionalCostFlag();
+	if (getAdditionalCostFlagChange() == 0)		m_iAdditionalCostFlagChange = pClassInfo->getAdditionalCostFlagChange();
+	if (getFlag() == NO_FLAG)		m_iFlag = pClassInfo->getFlag();
+	if (getFlagChange() == 0)		m_iFlagChange = pClassInfo->getFlagChange();
+	if (isGlobalFlagChange() == false) m_bGlobalFlagChange = pClassInfo->isGlobalFlagChange();
 	if (getAddPromotionType1()			== NO_PROMOTION)		m_iAddPromotionType1			= pClassInfo->getAddPromotionType1();
 	if (getAddPromotionType2()			== NO_PROMOTION)		m_iAddPromotionType2			= pClassInfo->getAddPromotionType2();
 	if (getAddPromotionType3()			== NO_PROMOTION)		m_iAddPromotionType3			= pClassInfo->getAddPromotionType3();

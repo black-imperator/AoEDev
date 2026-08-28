@@ -273,6 +273,22 @@
 		<Spanish>All that is gold does not glitter,[NEWLINE]Not all those who wander are lost;[NEWLINE]The old that is strong does not wither,[NEWLINE]Deep roots are not reached by the frost.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_ADVENTURER_GREATESTPEOPLE_2</Tag>
+		<English>Pietra Theenadyne</English>
+		<French>Pietra Theenadyne</French>
+		<German>Pietra Theenadyne</German>
+		<Italian>Pietra Theenadyne</Italian>
+		<Spanish>Malohin</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_QUOTE_ADVENTURER_GREATESTPEOPLE_2</Tag>
+		<English>Thinking of you, wherever you are.[NEWLINE]We pray for our sorrows to end, and hope that our hearts will blend.[NEWLINE]Now I will step forward to realize this wish.[NEWLINE]And who knows:[NEWLINE]starting a new journey may not be so hard,[NEWLINE]or maybe it has already begun.[NEWLINE]There are many worlds, but they share the same sky[NEWLINE]one sky, one destiny</English>
+		<French>Thinking of you, wherever you are.[NEWLINE]We pray for our sorrows to end, and hope that our hearts will blend.[NEWLINE]Now I will step forward to realize this wish.[NEWLINE]And who knows:[NEWLINE]starting a new journey may not be so hard,[NEWLINE]or maybe it has already begun.[NEWLINE]There are many worlds, but they share the same sky[NEWLINE]one sky, one destiny</French>
+		<German>Thinking of you, wherever you are.[NEWLINE]We pray for our sorrows to end, and hope that our hearts will blend.[NEWLINE]Now I will step forward to realize this wish.[NEWLINE]And who knows:[NEWLINE]starting a new journey may not be so hard,[NEWLINE]or maybe it has already begun.[NEWLINE]There are many worlds, but they share the same sky[NEWLINE]one sky, one destiny</German>
+		<Italian>Thinking of you, wherever you are.[NEWLINE]We pray for our sorrows to end, and hope that our hearts will blend.[NEWLINE]Now I will step forward to realize this wish.[NEWLINE]And who knows:[NEWLINE]starting a new journey may not be so hard,[NEWLINE]or maybe it has already begun.[NEWLINE]There are many worlds, but they share the same sky[NEWLINE]one sky, one destiny</Italian>
+		<Spanish>Thinking of you, wherever you are.[NEWLINE]We pray for our sorrows to end, and hope that our hearts will blend.[NEWLINE]Now I will step forward to realize this wish.[NEWLINE]And who knows:[NEWLINE]starting a new journey may not be so hard,[NEWLINE]or maybe it has already begun.[NEWLINE]There are many worlds, but they share the same sky[NEWLINE]one sky, one destiny</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_SCIENTIST_GREATESTPEOPLE_2</Tag>
 		<English>Direlc Cnadek</English>
 		<French>Direlc Cnadek</French>

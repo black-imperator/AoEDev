@@ -14931,6 +14931,7 @@ void CvGameTextMgr::parseSpellHelp(CvWStringBuffer &szBuffer, SpellTypes eSpell,
 	{
 		if (!CvWString(GC.getSpellInfo(eSpell).getPythonHelp()).empty())
 		{
+			CvWString szHelp;
 			CLLNode<IDInfo>* pSelectedUnitNode;
 			CvUnit* pSelectedUnit;
 			pSelectedUnitNode = gDLL->getInterfaceIFace()->headSelectionListNode();
@@ -14941,7 +14942,6 @@ void CvGameTextMgr::parseSpellHelp(CvWStringBuffer &szBuffer, SpellTypes eSpell,
 
 				if (pSelectedUnit->canCast(eSpell, true))
 				{
-					CvWString szHelp;
 					CyUnit* pyCaster;
 					CyArgsList argsList;
 					argsList.add(eSpell);
@@ -15146,6 +15146,13 @@ void CvGameTextMgr::parseSpellHelp(CvWStringBuffer &szBuffer, SpellTypes eSpell,
 				iCost += (iCost * GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getUpgradeCostModifier()) / 100;
 			}
 		}
+		if (GC.getSpellInfo(eSpell).getAdditionalCostFlag() != NO_FLAG)
+		{
+			if (GC.getGameINLINE().getActivePlayer() != NO_PLAYER)
+			{
+				iCost += GC.getSpellInfo(eSpell).getAdditionalCostFlagChange() * GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getFlagValue(((FlagTypes)GC.getSpellInfo(eSpell).getAdditionalCostFlag()));
+			}
+		}
 		szBuffer.append(pcNewline);
 		if (iCost > 0)
 		{
@@ -15155,6 +15162,16 @@ void CvGameTextMgr::parseSpellHelp(CvWStringBuffer &szBuffer, SpellTypes eSpell,
 		{
 			szBuffer.append(gDLL->getText("TXT_KEY_SPELL_INCOME", -iCost));
 		}
+		if (GC.getSpellInfo(eSpell).getAdditionalCostFlag() != NO_FLAG)
+		{
+			if (GC.getGameINLINE().getActivePlayer() != NO_PLAYER)
+			{
+				szBuffer.append(pcNewline);
+				szBuffer.append(gDLL->getText("TXT_KEY_SPELL_EXTRA_COST", GC.getSpellInfo(eSpell).getAdditionalCostFlagChange()* GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getFlagValue(((FlagTypes)GC.getSpellInfo(eSpell).getAdditionalCostFlag())),GC.getFlagInfo((FlagTypes)GC.getSpellInfo(eSpell).getAdditionalCostFlag()).getDescription() ));
+
+			}
+		}
+
 	}
 	if (GC.getSpellInfo(eSpell).getDelay() != 0)
 	{

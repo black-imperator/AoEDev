@@ -1158,6 +1158,14 @@
 		<Spanish>[ICON_BULLET]Costs %d1 gold</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_SPELL_EXTRA_COST</Tag>
+		<English>[ICON_BULLET]Cost is increased by %d1 from %s2</English>
+		<French>[ICON_BULLET]Cost is increased by %d1 from %s2</French>
+		<German>[ICON_BULLET]Cost is increased by %d1 from %s2</German>
+		<Italian>[ICON_BULLET]Cost is increased by %d1 from %s2</Italian>
+		<Spanish>[ICON_BULLET]Cost is increased by %d1 from %s2</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_SPELL_INCOME</Tag>
 		<English>[ICON_BULLET]Gain %d1 gold</English>
 		<French>[ICON_BULLET]Rapporte %d1 or</French>

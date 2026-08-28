@@ -9547,6 +9547,7 @@
 				<UniqueName>TXT_KEY_UNIT_ADVENTURER_19</UniqueName>
 				<UniqueName>TXT_KEY_UNIT_ADVENTURER_20</UniqueName>
 				<UniqueName>TXT_KEY_UNIT_ADVENTURER_GREATESTPEOPLE_1</UniqueName>
+				<UniqueName>TXT_KEY_UNIT_ADVENTURER_GREATESTPEOPLE_2</UniqueName>
 			</UniqueNames>
 			<Quotes>
 				<Quote>TXT_KEY_QUOTE_ADVENTURER_1</Quote>
@@ -9570,6 +9571,7 @@
 				<Quote>TXT_KEY_QUOTE_ADVENTURER_19</Quote>
 				<Quote>TXT_KEY_QUOTE_ADVENTURER_20</Quote>
 				<Quote>TXT_KEY_QUOTE_ADVENTURER_GREATESTPEOPLE_1</Quote>
+				<Quote>TXT_KEY_QUOTE_ADVENTURER_GREATESTPEOPLE_2</Quote>
 			</Quotes>
 			<Images>
 				<Image>art\interface\popups\greatpeople\Branding.dds</Image>
@@ -9593,6 +9595,7 @@
 				<Image>art\interface\popups\greatpeople\Kimble the Quick.dds</Image>
 				<Image>art\interface\popups\greatpeople\Bakabushi.dds</Image>
 				<Image>art\interface\popups\greatpeople\Ian Holm.dds</Image>
+				<Image>art\interface\popups\greatpeople\hayden_panettiere.dds</Image>
 			</Images>
 			<DefaultUnitAI>UNITAI_ATTACK_CITY</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_ADVENTURER</Description>

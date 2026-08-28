@@ -305,6 +305,21 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 	setName(GET_PLAYER(getOwnerINLINE()).getNewCityName());
 
 	setEverOwned(getOwnerINLINE(), true);
+	/*************************************************************************************************/
+	/**	People's Choice							07/30/08								Xienwolf	**/
+	/**																								**/
+	/**					Updates CityBonuses when Founding a City or Changing Owners					**/
+	/*************************************************************************************************/
+//	for (int iI = 0; iI < MAX_PLAYERS; iI++)
+//	{
+//		if (GET_PLAYER((PlayerTypes)iI).isAlive())
+//		{
+//			GET_PLAYER((PlayerTypes)iI).updateCityBonuses(false);
+//		}
+//	}
+	/*************************************************************************************************/
+	/**	People's Choice							END													**/
+	/*************************************************************************************************/
 
 	updateCultureLevel(false);
 
@@ -20956,6 +20971,10 @@ bool CvCity::canCast(int spell, bool bTestVisible)
 		{
 			iCost += (iCost * kPlayer.getUpgradeCostModifier()) / 100;
 		}
+		if (kSpell.getAdditionalCostFlag() != NO_FLAG)
+		{
+			iCost += kSpell.getAdditionalCostFlagChange() * GET_PLAYER(getOwner()).getFlagValue(((FlagTypes)kSpell.getAdditionalCostFlag()));
+		}
 		if (kPlayer.getGold() < iCost)
 		{
 			return false;
@@ -21564,6 +21583,11 @@ void CvCity::cast(int spell)
 	int iGameSpeedPercent = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
 
 	int iCost = kSpell.getCost()*iGameSpeedPercent/100;
+	if (kSpell.getAdditionalCostFlag() != NO_FLAG)
+	{
+		iCost += kSpell.getAdditionalCostFlagChange() * GET_PLAYER(getOwner()).getFlagValue(((FlagTypes)kSpell.getAdditionalCostFlag()));
+	}
+
 	if (iCost != 0)
 	{
 		kPlayer.changeGold(-1 * iCost);
