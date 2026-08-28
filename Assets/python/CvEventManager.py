@@ -1116,11 +1116,20 @@ class CvEventManager:
 								loopPlayer.AI_changeAttitudeExtra(iPlayer, 3)
 								pPlayer.AI_changeAttitudeExtra(iLoopPlayer, 3)
 				elif iLeader == 1: # Coyote
-					pPlayer.initUnit(git('UNIT_ARTIST'), pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+					iRewardUnit = pPlayer.getPlayerUnit(git('UNITCLASS_ARTIST'))
+					if iRewardUnit == -1:
+						iRewardUnit = git('UNIT_ARTIST')
+					pPlayer.initUnit(iRewardUnit, pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 				elif iLeader == 2: # Bear
-					pPlayer.initUnit(git('UNIT_ENGINEER'), pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+					iRewardUnit = pPlayer.getPlayerUnit(git('UNITCLASS_ENGINEER'))
+					if iRewardUnit == -1:
+						iRewardUnit = git('UNIT_ENGINEER')
+					pPlayer.initUnit(iRewardUnit, pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 				elif iLeader == 3: # Serpent
-					pPlayer.initUnit(git('UNIT_COMMANDER'), pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+					iRewardUnit = pPlayer.getPlayerUnit(git('UNITCLASS_COMMANDER'))
+					if iRewardUnit == -1:
+						iRewardUnit = git('UNIT_COMMANDER')
+					pPlayer.initUnit(iRewardUnit, pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 				elif iLeader == 4: # Tortoise
 					pPlayer.changeGoldenAgeTurns(CyGame().goldenAgeLength())
 

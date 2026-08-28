@@ -5705,7 +5705,10 @@ def doElectionSupportHawk(argsList):
 
 	if pPlayer.hasTrait(getInfoType('TRAIT_AGGRESSIVE')):
 		CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_REPUBLIC_ELECTION_HAWK_WINS_ALREADY_AGGRESSIVE", ()),'',1,'Art/Interface/Buttons/Civics/Republic.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
-		pPlayer.initUnit(getInfoType('UNIT_COMMANDER'), pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+		iRewardUnit = pPlayer.getPlayerUnit(getInfoType('UNITCLASS_COMMANDER'))
+		if iRewardUnit == -1:
+			iRewardUnit = getInfoType('UNIT_COMMANDER')
+		pPlayer.initUnit(iRewardUnit, pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
 	else:
 		CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_REPUBLIC_ELECTION_HAWK_WINS", ()),'',1,'Art/Interface/Buttons/Civics/Republic.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
@@ -5763,7 +5766,10 @@ def doElectionFairHawkVsDove(argsList):
 
 		if pPlayer.hasTrait(getInfoType('TRAIT_AGGRESSIVE')):
 			CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_REPUBLIC_ELECTION_HAWK_WINS_ALREADY_AGGRESSIVE", ()),'',1,'Art/Interface/Buttons/Civics/Republic.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
-			pPlayer.initUnit(getInfoType('UNIT_COMMANDER'), pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+			iRewardUnit = pPlayer.getPlayerUnit(getInfoType('UNITCLASS_COMMANDER'))
+			if iRewardUnit == -1:
+				iRewardUnit = getInfoType('UNIT_COMMANDER')
+			pPlayer.initUnit(iRewardUnit, pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 		else:
 			CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_REPUBLIC_ELECTION_HAWK_WINS", ()),'',1,'Art/Interface/Buttons/Civics/Republic.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
 			pPlayer.setHasTrait(getInfoType('TRAIT_AGGRESSIVE_REPUBLIC'),True)
@@ -5818,7 +5824,10 @@ def doElectionSupportLandOwner(argsList):
 
 	if pPlayer.hasTrait(getInfoType('TRAIT_FINANCIAL')):
 		CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_REPUBLIC_ELECTION_LANDOWNER_WINS_ALREADY_FINANCIAL", ()),'',1,'Art/Interface/Buttons/Civics/Republic.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
-		pPlayer.initUnit(getInfoType('UNIT_MERCHANT'), pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+		iRewardUnit = pPlayer.getPlayerUnit(getInfoType('UNITCLASS_MERCHANT'))
+		if iRewardUnit == -1:
+			iRewardUnit = getInfoType('UNIT_MERCHANT')
+		pPlayer.initUnit(iRewardUnit, pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	else:
 		CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_REPUBLIC_ELECTION_LANDOWNER_WINS", ()),'',1,'Art/Interface/Buttons/Civics/Republic.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
 		pPlayer.setHasTrait(getInfoType('TRAIT_FINANCIAL_REPUBLIC'),True)
@@ -5878,7 +5887,10 @@ def doElectionFairLandOwnerVsPeasant(argsList):
 
 		if pPlayer.hasTrait(getInfoType('TRAIT_FINANCIAL')):
 			CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_REPUBLIC_ELECTION_LANDOWNER_WINS_ALREADY_FINANCIAL", ()),'',1,'Art/Interface/Buttons/Civics/Republic.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
-			pPlayer.initUnit(getInfoType('UNIT_MERCHANT'), pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+			iRewardUnit = pPlayer.getPlayerUnit(getInfoType('UNITCLASS_MERCHANT'))
+			if iRewardUnit == -1:
+				iRewardUnit = getInfoType('UNIT_MERCHANT')
+			pPlayer.initUnit(iRewardUnit, pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 		else:
 			CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_REPUBLIC_ELECTION_LANDOWNER_WINS", ()),'',1,'Art/Interface/Buttons/Civics/Republic.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
 			pPlayer.setHasTrait(getInfoType('TRAIT_FINANCIAL_REPUBLIC'),True)
@@ -5932,7 +5944,10 @@ def doElectionSupportChurch(argsList):
 
 	if pPlayer.hasTrait(getInfoType('TRAIT_SPIRITUAL')):
 		CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_REPUBLIC_ELECTION_CHURCH_WINS_ALREADY_SPIRITUAL", ()),'',1,'Art/Interface/Buttons/Civics/Republic.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
-		pPlayer.initUnit(getInfoType('UNIT_PROPHET'), pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+		iRewardUnit = pPlayer.getPlayerUnit(getInfoType('UNITCLASS_PROPHET'))
+		if iRewardUnit == -1:
+			iRewardUnit = getInfoType('UNIT_PROPHET')
+		pPlayer.initUnit(iRewardUnit, pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	else:
 		CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_REPUBLIC_ELECTION_CHURCH_WINS", ()),'',1,'Art/Interface/Buttons/Civics/Republic.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
 		pPlayer.setHasTrait(getInfoType('TRAIT_SPIRITUAL_REPUBLIC'),True)
@@ -5987,7 +6002,10 @@ def doElectionFairChurchVsState(argsList):
 
 		if pPlayer.hasTrait(getInfoType('TRAIT_SPIRITUAL')):
 			CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_REPUBLIC_ELECTION_CHURCH_WINS_ALREADY_SPIRITUAL", ()),'',1,'Art/Interface/Buttons/Civics/Republic.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
-			pPlayer.initUnit(getInfoType('UNIT_PROPHET'), pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+			iRewardUnit = pPlayer.getPlayerUnit(getInfoType('UNITCLASS_PROPHET'))
+			if iRewardUnit == -1:
+				iRewardUnit = getInfoType('UNIT_PROPHET')
+			pPlayer.initUnit(iRewardUnit, pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 		else:
 			CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_REPUBLIC_ELECTION_CHURCH_WINS", ()),'',1,'Art/Interface/Buttons/Civics/Republic.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
 			pPlayer.setHasTrait(getInfoType('TRAIT_SPIRITUAL_REPUBLIC'),True)
@@ -6035,7 +6053,10 @@ def doElectionSupportLabor(argsList):
 
 	if pPlayer.hasTrait(getInfoType('TRAIT_INDUSTRIOUS')):
 		CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_REPUBLIC_ELECTION_LABOR_WINS_ALREADY_INDUSTRIOUS", ()),'',1,'Art/Interface/Buttons/Civics/Republic.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
-		pPlayer.initUnit(getInfoType('UNIT_ENGINEER'), pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+		iRewardUnit = pPlayer.getPlayerUnit(getInfoType('UNITCLASS_ENGINEER'))
+		if iRewardUnit == -1:
+			iRewardUnit = getInfoType('UNIT_ENGINEER')
+		pPlayer.initUnit(iRewardUnit, pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	else:
 		CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_REPUBLIC_ELECTION_LABOR_WINS", ()),'',1,'Art/Interface/Buttons/Civics/Republic.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
 		pPlayer.setHasTrait(getInfoType('TRAIT_INDUSTRIOUS_REPUBLIC'),True)
@@ -6059,7 +6080,10 @@ def doElectionSupportAcademia(argsList):
 
 	if CyGame().getSorenRandNum(100, "Election") < 20:
 		CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_REPUBLIC_ELECTION_OPPOSITION_PARTY_WINS", ()),'',1,'Art/Interface/Buttons/Civics/Republic.dds',getInfoType("COLOR_RED"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
-		pPlayer.initUnit(getInfoType('UNIT_SCIENTIST'), pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+		iRewardUnit = pPlayer.getPlayerUnit(getInfoType('UNITCLASS_SCIENTIST'))
+		if iRewardUnit == -1:
+			iRewardUnit = getInfoType('UNIT_SCIENTIST')
+		pPlayer.initUnit(iRewardUnit, pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 		return
 
 	if pPlayer.hasTrait(getInfoType('TRAIT_PHILOSOPHICAL')):
@@ -6089,7 +6113,10 @@ def doElectionFairLaborVsAcademia(argsList):
 
 		if pPlayer.hasTrait(getInfoType('TRAIT_INDUSTRIOUS')):
 			CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_REPUBLIC_ELECTION_LABOR_WINS_ALREADY_INDUSTRIOUS", ()),'',1,'Art/Interface/Buttons/Civics/Republic.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
-			pPlayer.initUnit(getInfoType('UNIT_ENGINEER'), pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+			iRewardUnit = pPlayer.getPlayerUnit(getInfoType('UNITCLASS_ENGINEER'))
+			if iRewardUnit == -1:
+				iRewardUnit = getInfoType('UNIT_ENGINEER')
+			pPlayer.initUnit(iRewardUnit, pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 		else:
 			CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_REPUBLIC_ELECTION_LABOR_WINS", ()),'',1,'Art/Interface/Buttons/Civics/Republic.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
 			pPlayer.setHasTrait(getInfoType('TRAIT_INDUSTRIOUS_REPUBLIC'),True)
@@ -6097,7 +6124,10 @@ def doElectionFairLaborVsAcademia(argsList):
 	else:
 		if pPlayer.hasTrait(getInfoType('TRAIT_PHILOSOPHICAL')):
 			CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_REPUBLIC_ELECTION_ACADEMIA_WINS_ALREADY_PHILOSOPHICAL", ()),'',1,'Art/Interface/Buttons/Civics/Republic.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
-			pPlayer.initUnit(getInfoType('UNIT_SCIENTIST'), pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+			iRewardUnit = pPlayer.getPlayerUnit(getInfoType('UNITCLASS_SCIENTIST'))
+			if iRewardUnit == -1:
+				iRewardUnit = getInfoType('UNIT_SCIENTIST')
+			pPlayer.initUnit(iRewardUnit, pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 		else:
 			CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_REPUBLIC_ELECTION_ACADEMIA_WINS", ()),'',1,'Art/Interface/Buttons/Civics/Republic.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
 			pPlayer.setHasTrait(getInfoType('TRAIT_PHILOSOPHICAL_REPUBLIC'),True)
@@ -6995,12 +7025,20 @@ def doGetProphet(argsList): # This function used by different events and if even
 	pCity          = pPlayer.getCity(kTriggeredData.iCityId)
 	pCity2         = pPlayer.getCapitalCity()
 	if kTriggeredData.iCityId != -1:
-		newUnit        = pPlayer.initUnit(gc.getInfoTypeForString('UNIT_PROPHET'), pCity.getX(), pCity.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+		pTarget    = pCity
 	else:
-		newUnit        = pPlayer.initUnit(gc.getInfoTypeForString('UNIT_PROPHET'), pCity2.getX(), pCity2.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+		pTarget    = pCity2
+	iUnit          = pTarget.getCityUnits(gc.getInfoTypeForString('UNITCLASS_PROPHET'))
+	if iUnit == -1:
+		iUnit      = gc.getInfoTypeForString('UNIT_PROPHET')
+	newUnit        = pPlayer.initUnit(iUnit, pTarget.getX(), pTarget.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
 def helpGetProphet(argsList):
-	iUnit          = getInfoType('UNIT_PROPHET')
+	kTriggeredData = argsList[1]
+	pPlayer        = gc.getPlayer(kTriggeredData.ePlayer)
+	iUnit          = pPlayer.getPlayerUnit(getInfoType('UNITCLASS_PROPHET'))
+	if iUnit == -1:
+		iUnit      = getInfoType('UNIT_PROPHET')
 	szHelp         = localText.getText("TXT_KEY_EVENT_SUMMON", (1, gc.getUnitInfo(iUnit).getTextKey()));
 	return szHelp
 
@@ -7012,12 +7050,20 @@ def doGetArtist(argsList):
 	pCity          = pPlayer.getCity(kTriggeredData.iCityId)
 	pCity2         = pPlayer.getCapitalCity()
 	if kTriggeredData.iCityId != -1:
-		newUnit        = pPlayer.initUnit(gc.getInfoTypeForString('UNIT_ARTIST'), pCity.getX(), pCity.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+		pTarget    = pCity
 	else:
-		newUnit        = pPlayer.initUnit(gc.getInfoTypeForString('UNIT_ARTIST'), pCity2.getX(), pCity2.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+		pTarget    = pCity2
+	iUnit          = pTarget.getCityUnits(gc.getInfoTypeForString('UNITCLASS_ARTIST'))
+	if iUnit == -1:
+		iUnit      = gc.getInfoTypeForString('UNIT_ARTIST')
+	newUnit        = pPlayer.initUnit(iUnit, pTarget.getX(), pTarget.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
 def helpGetArtist(argsList):
-	iUnit          = getInfoType('UNIT_ARTIST')
+	kTriggeredData = argsList[1]
+	pPlayer        = gc.getPlayer(kTriggeredData.ePlayer)
+	iUnit          = pPlayer.getPlayerUnit(getInfoType('UNITCLASS_ARTIST'))
+	if iUnit == -1:
+		iUnit      = getInfoType('UNIT_ARTIST')
 	szHelp         = localText.getText("TXT_KEY_EVENT_SUMMON", (1, gc.getUnitInfo(iUnit).getTextKey()));
 	return szHelp
 
@@ -7029,12 +7075,20 @@ def doGetEngineer(argsList):
 	pCity          = pPlayer.getCity(kTriggeredData.iCityId)
 	pCity2         = pPlayer.getCapitalCity()
 	if kTriggeredData.iCityId != -1:
-		newUnit        = pPlayer.initUnit(gc.getInfoTypeForString('UNIT_ENGINEER'), pCity.getX(), pCity.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+		pTarget    = pCity
 	else:
-		newUnit        = pPlayer.initUnit(gc.getInfoTypeForString('UNIT_ENGINEER'), pCity2.getX(), pCity2.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+		pTarget    = pCity2
+	iUnit          = pTarget.getCityUnits(gc.getInfoTypeForString('UNITCLASS_ENGINEER'))
+	if iUnit == -1:
+		iUnit      = gc.getInfoTypeForString('UNIT_ENGINEER')
+	newUnit        = pPlayer.initUnit(iUnit, pTarget.getX(), pTarget.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
 def helpGetEngineer(argsList):
-	iUnit          = getInfoType('UNIT_ENGINEER')
+	kTriggeredData = argsList[1]
+	pPlayer        = gc.getPlayer(kTriggeredData.ePlayer)
+	iUnit          = pPlayer.getPlayerUnit(getInfoType('UNITCLASS_ENGINEER'))
+	if iUnit == -1:
+		iUnit      = getInfoType('UNIT_ENGINEER')
 	szHelp         = localText.getText("TXT_KEY_EVENT_SUMMON", (1, gc.getUnitInfo(iUnit).getTextKey()));
 	return szHelp
 
