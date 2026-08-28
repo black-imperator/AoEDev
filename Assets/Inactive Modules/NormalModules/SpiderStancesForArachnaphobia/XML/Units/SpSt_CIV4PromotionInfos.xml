@@ -9,6 +9,7 @@
 		<PromotionInfo>
 		<Type>PROMOTION_SPIDER_HUNTING</Type>
 			<Description>TXT_KEY_PROMOTION_SPIDER_HUNTING</Description>
+			<Help>TXT_KEY_PROMOTION_SPIDER_HUNTING_HELP</Help>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_ANIMAL</UnitCombatType>
@@ -32,6 +33,7 @@
 		<PromotionInfo>
 		<Type>PROMOTION_SPIDER_TERRITORIAL</Type>
 			<Description>TXT_KEY_PROMOTION_SPIDER_TERRITORIAL</Description>
+			<Help>TXT_KEY_PROMOTION_SPIDER_TERRITORIAL_HELP</Help>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_ANIMAL</UnitCombatType>

@@ -107,4 +107,20 @@
 		<Italian>Defend Territory</Italian>
 		<Spanish>Defend Territory</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_SPIDER_HUNTING_HELP</Tag>
+		<English>[NEWLINE][ICON_BULLET]This unit is hidden-nationality because of this promotion, not because of [LINK=PROMOTION_HIDDEN_NATIONALITY]Hidden Nationality[\LINK], so Declare Nationality cannot be used to shed it and the unit cannot capture cities.[NEWLINE][ICON_BULLET]The only way to drop it is to cast [LINK=SPELL_PROTECT_TERRITORY_SPIDER_STANCES]Protect Territory[\LINK], which can only be cast while the unit is standing inside your own cultural borders. The button is greyed out anywhere else.</English>
+		<French>[NEWLINE][ICON_BULLET]This unit is hidden-nationality because of this promotion, not because of [LINK=PROMOTION_HIDDEN_NATIONALITY]Hidden Nationality[\LINK], so Declare Nationality cannot be used to shed it and the unit cannot capture cities.[NEWLINE][ICON_BULLET]The only way to drop it is to cast [LINK=SPELL_PROTECT_TERRITORY_SPIDER_STANCES]Protect Territory[\LINK], which can only be cast while the unit is standing inside your own cultural borders. The button is greyed out anywhere else.</French>
+		<German>[NEWLINE][ICON_BULLET]This unit is hidden-nationality because of this promotion, not because of [LINK=PROMOTION_HIDDEN_NATIONALITY]Hidden Nationality[\LINK], so Declare Nationality cannot be used to shed it and the unit cannot capture cities.[NEWLINE][ICON_BULLET]The only way to drop it is to cast [LINK=SPELL_PROTECT_TERRITORY_SPIDER_STANCES]Protect Territory[\LINK], which can only be cast while the unit is standing inside your own cultural borders. The button is greyed out anywhere else.</German>
+		<Italian>[NEWLINE][ICON_BULLET]This unit is hidden-nationality because of this promotion, not because of [LINK=PROMOTION_HIDDEN_NATIONALITY]Hidden Nationality[\LINK], so Declare Nationality cannot be used to shed it and the unit cannot capture cities.[NEWLINE][ICON_BULLET]The only way to drop it is to cast [LINK=SPELL_PROTECT_TERRITORY_SPIDER_STANCES]Protect Territory[\LINK], which can only be cast while the unit is standing inside your own cultural borders. The button is greyed out anywhere else.</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]This unit is hidden-nationality because of this promotion, not because of [LINK=PROMOTION_HIDDEN_NATIONALITY]Hidden Nationality[\LINK], so Declare Nationality cannot be used to shed it and the unit cannot capture cities.[NEWLINE][ICON_BULLET]The only way to drop it is to cast [LINK=SPELL_PROTECT_TERRITORY_SPIDER_STANCES]Protect Territory[\LINK], which can only be cast while the unit is standing inside your own cultural borders. The button is greyed out anywhere else.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_SPIDER_TERRITORIAL_HELP</Tag>
+		<English>[NEWLINE][ICON_BULLET]Can be swapped back to [LINK=PROMOTION_SPIDER_HUNTING]On the Hunt[\LINK] with [LINK=SPELL_GO_HUNTING_SPIDER_STANCES]Go Hunting[\LINK], which can only be cast while inside your own cultural borders.</English>
+		<French>[NEWLINE][ICON_BULLET]Can be swapped back to [LINK=PROMOTION_SPIDER_HUNTING]On the Hunt[\LINK] with [LINK=SPELL_GO_HUNTING_SPIDER_STANCES]Go Hunting[\LINK], which can only be cast while inside your own cultural borders.</French>
+		<German>[NEWLINE][ICON_BULLET]Can be swapped back to [LINK=PROMOTION_SPIDER_HUNTING]On the Hunt[\LINK] with [LINK=SPELL_GO_HUNTING_SPIDER_STANCES]Go Hunting[\LINK], which can only be cast while inside your own cultural borders.</German>
+		<Italian>[NEWLINE][ICON_BULLET]Can be swapped back to [LINK=PROMOTION_SPIDER_HUNTING]On the Hunt[\LINK] with [LINK=SPELL_GO_HUNTING_SPIDER_STANCES]Go Hunting[\LINK], which can only be cast while inside your own cultural borders.</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]Can be swapped back to [LINK=PROMOTION_SPIDER_HUNTING]On the Hunt[\LINK] with [LINK=SPELL_GO_HUNTING_SPIDER_STANCES]Go Hunting[\LINK], which can only be cast while inside your own cultural borders.</Spanish>
+	</TEXT>
 </Civ4GameText>
