@@ -3269,9 +3269,11 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 			}
 		}
 
-		if (isDead() || pDefender->isDead())
+		// A reborn immortal is not isDead(), so without the ImmortDeath terms the winner
+		// would be denied combat experience for a fight it actually won.
+		if (isDead() || pDefender->isDead() || isImmortDeath() || pDefender->isImmortDeath())
 		{
-			if (isDead())
+			if (isDead() || isImmortDeath())
 			{
 				int iExperience = defenseXPValue();
 				iExperience = ((iExperience * iAttackerStrength) / iDefenderStrength);
@@ -3282,7 +3284,10 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 			}
 			else
 			{
-				flankingStrikeCombat(pPlot, iAttackerStrength, iAttackerFirepower, iAttackerKillOdds, iDefenderDamage, pDefender);
+				if (pDefender->isDead())      // flanking strikes follow an actual kill, not a rebirth
+				{
+					flankingStrikeCombat(pPlot, iAttackerStrength, iAttackerFirepower, iAttackerKillOdds, iDefenderDamage, pDefender);
+				}
 
 				int iExperience = pDefender->attackXPValue();
 				iExperience = ((iExperience * iDefenderStrength) / iAttackerStrength);
@@ -3305,12 +3310,8 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 			pDefender->changeCombatFirstStrikes(-1);
 		}
 
-		// Maybe one tier too high? Should be outside the combat while loop?? Blaze
-		// Immortal Respawn fix : Cyth 3/5/2010
-		if(isImmortDeath() || pDefender->isImmortDeath())
-		{
-			break;
-		}
+		// Immortal Respawn fix : Cyth 3/5/2010 - folded into the death check above, which
+		// now breaks on a rebirth too and awards the winner its experience first.
 
 	}
 }
@@ -3884,6 +3885,17 @@ void CvUnit::updateCombat(bool bQuick)
 		}
 		else
 		{
+			// An immortal that lost is reborn instead of dying (CvUnit::kill -> doImmortalRebirth),
+			// so neither isDead() branch above runs and the withdrawal branches below do not apply.
+			// The attack was therefore never charged for.  Harmless for a normal unit, which cannot
+			// attack again after setMadeAttack(true), but a Blitz unit keeps a full movement bar and
+			// can attack an immortal an unlimited number of times in one turn.
+			if (isImmortDeath() || pDefender->isImmortDeath())
+			{
+				changeMoves(std::max(GC.getMOVE_DENOMINATOR(), pPlot->movementCost(this, plot())));
+				checkRemoveSelectionAfterAttack();
+			}
+
 
 //FfH Promotions: Modified by Kael 08/12/2007
 //			szBuffer = gDLL->getText("TXT_KEY_MISC_YOU_UNIT_WITHDRAW", getNameKey(), pDefender->getNameKey());
