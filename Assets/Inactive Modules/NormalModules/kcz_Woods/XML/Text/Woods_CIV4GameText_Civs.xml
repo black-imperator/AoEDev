@@ -112,50 +112,50 @@ Warfare:
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_DRYAD</Tag>
-		<English>Elder Willow</English>
-		<French>Elder Willow</French>
-		<German>Elder Willow</German>
-		<Italian>Elder Willow</Italian>
-		<Spanish>Elder Willow</Spanish>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish>/Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_DEFEATED_EERT</Tag>
-		<English>"The last of my rings is cut. Let the seedlings remember what was done to the forest here."</English>
-		<French>"The last of my rings is cut. Let the seedlings remember what was done to the forest here."</French>
-		<German>"The last of my rings is cut. Let the seedlings remember what was done to the forest here."</German>
-		<Italian>"The last of my rings is cut. Let the seedlings remember what was done to the forest here."</Italian>
-		<Spanish>"The last of my rings is cut. Let the seedlings remember what was done to the forest here."</Spanish>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_DEFEATED_DRYAD_EERT</Tag>
-		<English>"Fell me if you must. The roots under your feet have my name now, and they are patient."</English>
-		<French>"Fell me if you must. The roots under your feet have my name now, and they are patient."</French>
-		<German>"Fell me if you must. The roots under your feet have my name now, and they are patient."</German>
-		<Italian>"Fell me if you must. The roots under your feet have my name now, and they are patient."</Italian>
-		<Spanish>"Fell me if you must. The roots under your feet have my name now, and they are patient."</Spanish>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_TREANT_PEDIA</Tag>
-		<English>The Ancient Oak was the first of the Eert to take a shape that could speak to the younger races, and he has never seen a reason to hurry since. He measures a war the way he measures a season, is slow to anger and slower to forgive, and treats a felled wood as a wound that has to be answered. Those who leave his forests alone find him an indifferent neighbour; those who do not find that he has been growing an army the entire time they were talking.</English>
-		<French>The Ancient Oak was the first of the Eert to take a shape that could speak to the younger races, and he has never seen a reason to hurry since. He measures a war the way he measures a season, is slow to anger and slower to forgive, and treats a felled wood as a wound that has to be answered. Those who leave his forests alone find him an indifferent neighbour; those who do not find that he has been growing an army the entire time they were talking.</French>
-		<German>The Ancient Oak was the first of the Eert to take a shape that could speak to the younger races, and he has never seen a reason to hurry since. He measures a war the way he measures a season, is slow to anger and slower to forgive, and treats a felled wood as a wound that has to be answered. Those who leave his forests alone find him an indifferent neighbour; those who do not find that he has been growing an army the entire time they were talking.</German>
-		<Italian>The Ancient Oak was the first of the Eert to take a shape that could speak to the younger races, and he has never seen a reason to hurry since. He measures a war the way he measures a season, is slow to anger and slower to forgive, and treats a felled wood as a wound that has to be answered. Those who leave his forests alone find him an indifferent neighbour; those who do not find that he has been growing an army the entire time they were talking.</Italian>
-		<Spanish>The Ancient Oak was the first of the Eert to take a shape that could speak to the younger races, and he has never seen a reason to hurry since. He measures a war the way he measures a season, is slow to anger and slower to forgive, and treats a felled wood as a wound that has to be answered. Those who leave his forests alone find him an indifferent neighbour; those who do not find that he has been growing an army the entire time they were talking.</Spanish>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_DRYAD_PEDIA</Tag>
-		<English>The Elder Willow speaks for the quicker half of the Eert, the dryads who move between the trees rather than standing as one. Where the Ancient Oak waits, she gathers: spirits, seeds, colonies of beasts, and the knowledge to make all three fight. She is the more dangerous of the two neighbours, because she is the one who will come to you.</English>
-		<French>The Elder Willow speaks for the quicker half of the Eert, the dryads who move between the trees rather than standing as one. Where the Ancient Oak waits, she gathers: spirits, seeds, colonies of beasts, and the knowledge to make all three fight. She is the more dangerous of the two neighbours, because she is the one who will come to you.</French>
-		<German>The Elder Willow speaks for the quicker half of the Eert, the dryads who move between the trees rather than standing as one. Where the Ancient Oak waits, she gathers: spirits, seeds, colonies of beasts, and the knowledge to make all three fight. She is the more dangerous of the two neighbours, because she is the one who will come to you.</German>
-		<Italian>The Elder Willow speaks for the quicker half of the Eert, the dryads who move between the trees rather than standing as one. Where the Ancient Oak waits, she gathers: spirits, seeds, colonies of beasts, and the knowledge to make all three fight. She is the more dangerous of the two neighbours, because she is the one who will come to you.</Italian>
-		<Spanish>The Elder Willow speaks for the quicker half of the Eert, the dryads who move between the trees rather than standing as one. Where the Ancient Oak waits, she gathers: spirits, seeds, colonies of beasts, and the knowledge to make all three fight. She is the more dangerous of the two neighbours, because she is the one who will come to you.</Spanish>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_EERT_PEDIA</Tag>
-		<English>The Eert are not a people who settled a forest; they are the forest, grown far enough to argue with itself. They raise no mines and cut no roads, and their cities are clearings tended by spirits and beasts rather than by hands. Dryads guard the young wood and treants come out of the deep wood when the young wood is not enough. Every improvement another civilization leaves behind is pulled apart and fed back into the soil, and where the Eert have passed there is only the canopy again.</English>
-		<French>The Eert are not a people who settled a forest; they are the forest, grown far enough to argue with itself. They raise no mines and cut no roads, and their cities are clearings tended by spirits and beasts rather than by hands. Dryads guard the young wood and treants come out of the deep wood when the young wood is not enough. Every improvement another civilization leaves behind is pulled apart and fed back into the soil, and where the Eert have passed there is only the canopy again.</French>
-		<German>The Eert are not a people who settled a forest; they are the forest, grown far enough to argue with itself. They raise no mines and cut no roads, and their cities are clearings tended by spirits and beasts rather than by hands. Dryads guard the young wood and treants come out of the deep wood when the young wood is not enough. Every improvement another civilization leaves behind is pulled apart and fed back into the soil, and where the Eert have passed there is only the canopy again.</German>
-		<Italian>The Eert are not a people who settled a forest; they are the forest, grown far enough to argue with itself. They raise no mines and cut no roads, and their cities are clearings tended by spirits and beasts rather than by hands. Dryads guard the young wood and treants come out of the deep wood when the young wood is not enough. Every improvement another civilization leaves behind is pulled apart and fed back into the soil, and where the Eert have passed there is only the canopy again.</Italian>
-		<Spanish>The Eert are not a people who settled a forest; they are the forest, grown far enough to argue with itself. They raise no mines and cut no roads, and their cities are clearings tended by spirits and beasts rather than by hands. Dryads guard the young wood and treants come out of the deep wood when the young wood is not enough. Every improvement another civilization leaves behind is pulled apart and fed back into the soil, and where the Eert have passed there is only the canopy again.</Spanish>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian</Italian>
+		<Spanish></Spanish>
 	</TEXT>
 </Civ4GameText>
