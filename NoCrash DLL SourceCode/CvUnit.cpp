@@ -1570,7 +1570,21 @@ void CvUnit::convert(CvUnit* pUnit)
 	if (pTransportUnit != NULL)
 	{
 		pUnit->setTransportUnit(NULL);
+/*************************************************************************************************/
+/**	Bugfix										08/23/26							Issue #151	**/
+/**																								**/
+/**				Never inherit a transport which is not standing on our own plot					**/
+/*************************************************************************************************/
+/**								---- Start Original Code ----									**
 		setTransportUnit(pTransportUnit);
+/**								----  End Original Code  ----									**/
+		if (pTransportUnit->atPlot(pPlot))
+		{
+			setTransportUnit(pTransportUnit);
+		}
+/*************************************************************************************************/
+/**	Bugfix									END													**/
+/*************************************************************************************************/
 	}
 
 	std::vector<CvUnit*> aCargoUnits;
@@ -1588,7 +1602,29 @@ void CvUnit::convert(CvUnit* pUnit)
 /**								----  End Original Code  ----									**/
 		if (aCargoUnits[i] != this)
 		{
-			aCargoUnits[i]->setTransportUnit(this);
+/*************************************************************************************************/
+/**	Bugfix										08/23/26							Issue #151	**/
+/**																								**/
+/**		Cargo may only be handed over if it stands on the same plot as the replacement unit.		**/
+/**		betray() and doCombatCapture() spawn the replacement elsewhere, and every cargo helper	**/
+/**		locates cargo by walking the transport's own plot, so a cross plot link is unreachable:	**/
+/**		the cargo can never be unloaded, carried again, or killed with its transport.			**/
+/*************************************************************************************************/
+			if (aCargoUnits[i]->atPlot(pPlot))
+			{
+				aCargoUnits[i]->setTransportUnit(this);
+			}
+			else
+			{
+				aCargoUnits[i]->setTransportUnit(NULL);
+				if (!aCargoUnits[i]->plot()->isValidDomainForLocation(*aCargoUnits[i]) && !aCargoUnits[i]->jumpToNearestValidPlot(false))
+				{
+					aCargoUnits[i]->kill(true);
+				}
+			}
+/*************************************************************************************************/
+/**	Bugfix									END													**/
+/*************************************************************************************************/
 		}
 		else
 		{
