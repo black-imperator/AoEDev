@@ -3076,6 +3076,21 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 					if (eImprovement != NO_IMPROVEMENT)
 					{
 						iYield += pMissionPlot->calculateImprovementYieldChange(eImprovement, ((YieldTypes)iI), pHeadSelectedUnit->getOwnerINLINE());
+
+						// The improvement may swap the plot's bonus when it completes (mana nodes,
+						// refinery, ...) - see CvPlot::setImprovementType / getBonusConvert.
+						// calculateImprovementYieldChange keyed the improvement's bonus yield off the
+						// bonus present NOW, so re-base it onto the bonus that will be there instead.
+						BonusTypes eNewBonus = (BonusTypes)GC.getImprovementInfo(eImprovement).getBonusConvert();
+						if (eNewBonus != NO_BONUS && eNewBonus != eBonus)
+						{
+							iYield += GC.getImprovementInfo(eImprovement).getImprovementBonusYield(eNewBonus, iI);
+							if (eBonus != NO_BONUS)
+							{
+								iYield -= GC.getImprovementInfo(eImprovement).getImprovementBonusYield(eBonus, iI);
+							}
+						}
+
 						if (pMissionPlot->getImprovementType() != NO_IMPROVEMENT)
 						{
 							iYield -= pMissionPlot->calculateImprovementYieldChange(pMissionPlot->getImprovementType(), ((YieldTypes)iI), pHeadSelectedUnit->getOwnerINLINE());
