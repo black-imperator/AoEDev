@@ -16501,7 +16501,7 @@ int CvPlayer::getCivicUpkeep(CivicTypes* paeCivics, bool bIgnoreAnarchy) const
 /**	StasisReworkCode					Feb 2 2026										Klauros	**/
 /**								Coding for Stasis Rework										**/
 /*************************************************************************************************/
-	iTotalUpkeep *= stasisEffectOnModifier(getStasisBaseCommerceModifier());
+	iTotalUpkeep *= std::max(0, (100 + stasisEffectOnModifier(getStasisBaseCommerceModifier())));
 	iTotalUpkeep /= 100;
 /*************************************************************************************************/
 /**	StasisReworkCode						END													**/
