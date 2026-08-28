@@ -693,7 +693,7 @@ class CvEventManager:
 			cf.doRepublicElection(iData2, iData3, iData4)
 
 		elif iData1 == 102:
-			iPlayer = iData2
+			iPlayer = iData3
 			pPlayer = gc.getPlayer(iPlayer)
 			git				= gc.getInfoTypeForString
 			pBestPlot = -1
@@ -725,7 +725,8 @@ class CvEventManager:
 				iTeam = pPlayer.getTeam()
 				signText = CvUtil.convertToStr(CyTranslator().getText("TXT_KEY_EQUIPMENT_GODSLAYER", ()))
 				pBestPlot.setRevealed(iTeam, True, False, TeamTypes.NO_TEAM)
-				CyCamera().JustLookAtPlot(pBestPlot)
+				if iPlayer == game.getActivePlayer():
+					CyCamera().JustLookAtPlot(pBestPlot)
 				CyEngine().addSign(pBestPlot, iPlayer, signText)
 
 		elif iData1 == 103:
