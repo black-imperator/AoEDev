@@ -3395,10 +3395,6 @@ void CvUnit::updateCombat(bool bQuick)
 
 	//FAssertMsg((pPlot == pDefender->plot()), "There is not expected to be a defender or the defender's plot is expected to be pPlot (the attack plot)");
 
-	//FfH: Added by Kael 07/30/2007
-	if (!isImmuneToDefensiveStrike())
-		pDefender->doDefensiveStrike(this);
-
 	if (pDefender->isFear() && !isImmuneToFear())
 	{
 		if (GC.getGameINLINE().getSorenRandNum(100, "Im afeared!") < pDefender->calcFearChance(this))
@@ -3422,6 +3418,13 @@ void CvUnit::updateCombat(bool bQuick)
 			}
 
 			setMadeAttack(true);
+
+			//FfH: Added by Kael 07/30/2007
+			//Moved inside the one-time combat setup block: updateCombat is re-entered
+			//on the bFinish pass and once per frame while blocked by the isFighting()
+			//check above, which made the strike proc repeatedly for a single attack.
+			if (!isImmuneToDefensiveStrike())
+				pDefender->doDefensiveStrike(this);
 
 			//rotate to face plot
 			DirectionTypes newDirection = estimateDirection(this->plot(), pDefender->plot());
