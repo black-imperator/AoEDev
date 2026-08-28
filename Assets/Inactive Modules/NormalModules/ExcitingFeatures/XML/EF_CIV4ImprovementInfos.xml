@@ -257,7 +257,6 @@
 				<iYieldChange>0</iYieldChange>
 				<iYieldChange>4</iYieldChange>
 			</YieldChanges>
-			<bRiverSideMakesValid>1</bRiverSideMakesValid>
 			<bRequiresFlatlands>1</bRequiresFlatlands>
 			<bPermanent>1</bPermanent>
 			<TechYieldChanges>
@@ -280,16 +279,6 @@
 					</RouteYields>
 				</RouteYieldChange>
             </RouteYieldChanges>
-			<TerrainMakesValids>
-				<TerrainMakesValid>
-					<TerrainType>TERRAIN_GRASS</TerrainType>
-					<bMakesValid>1</bMakesValid>
-				</TerrainMakesValid>
-				<TerrainMakesValid>
-					<TerrainType>TERRAIN_PLAINS</TerrainType>
-					<bMakesValid>1</bMakesValid>
-				</TerrainMakesValid>
-			</TerrainMakesValids>
 			<BonusTypeStructs>
 				<BonusTypeStruct>
 					<BonusType>BONUS_FUR</BonusType>
