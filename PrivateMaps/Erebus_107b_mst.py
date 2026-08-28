@@ -2638,7 +2638,7 @@ class StartingPlotFinder :
 		#and test the walk-around distance to see if this choke point is useful
 		for chokePoint in likelyChokeList:
 			if self.isConfirmedChokePoint(chokePoint):
-				print "Confirmed chokepoint at %(c)s" % {"c":str(chokePoint)}
+				print "Confirmed chokepoint at %(x)d, %(y)d" % {"x":chokePoint.x,"y":chokePoint.y}
 				self.chokePointList.append(chokePoint)
 			else:
 				print "Rejected chokepoint at %(x)d, %(y)d" % {"x":chokePoint.x,"y":chokePoint.y}
@@ -2899,7 +2899,8 @@ class ChokePoint :
 			rstring += "   %(x)d,%(y)d\n" % {"x":nChoke.x,"y":nChoke.y}
 		rstring += " neighborAreaList = \n"
 		for nArea in self.neighborAreaList:
-			rstring +="   ID=%(id)d, char=%(c)s, size=%(s)d \n" % {"id":nArea.ID,"c":chr(nArea.ID + 34),"s":nArea.size}
+			areaChar = chr(min(nArea.ID + 34, 127))
+			rstring +="   ID=%(id)d, char=%(c)s, size=%(s)d \n" % {"id":nArea.ID,"c":areaChar,"s":nArea.size}
 		rstring += " gateList = \n"
 		for x,y in self.gateList:
 			rstring += "   %(x)d,%(y)d\n" % {"x":x,"y":y}
@@ -2910,7 +2911,8 @@ class ChokeArea :
 		self.size = size
 		self.neighborChokeList = list()
 	def __str__(self):
-		rstring = "ID=%(id)d, char=%(c)s, size=%(s)d \n" % {"id":self.ID,"c":chr(self.ID + 34),"s":self.size}
+		areaChar = chr(min(self.ID + 34, 127))
+		rstring = "ID=%(id)d, char=%(c)s, size=%(s)d \n" % {"id":self.ID,"c":areaChar,"s":self.size}
 		rstring += " neighborChokeList = \n"
 		for nChoke in self.neighborChokeList:
 			rstring += "   %(x)d,%(y)d\n" % {"x":nChoke.x,"y":nChoke.y}
