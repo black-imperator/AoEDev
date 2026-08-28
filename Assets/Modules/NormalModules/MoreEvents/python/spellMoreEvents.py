@@ -404,6 +404,7 @@ def onMoveBradelinesWell2(pCaster, pPlot):
 	onMoveSearchableUF(pCaster, pPlot)
 
 def onMoveFoxford2(pCaster, pPlot):
+	if CyGame().GetWorldBuilderMode(): return
 	iPlayer			= pCaster.getOwner()
 	pPlayer			= gc.getPlayer(iPlayer)
 	iImprovement	= pPlot.getImprovementType()

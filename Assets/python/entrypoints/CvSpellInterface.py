@@ -5537,6 +5537,7 @@ def onMoveBradelinesWell(pCaster, pPlot):
 	return
 
 def onMoveFoxford(pCaster,pPlot):
+	if CyGame().GetWorldBuilderMode(): return
 	iPlayer			= pCaster.getOwner()
 	pPlayer			= gc.getPlayer(iPlayer)
 	git				= gc.getInfoTypeForString
