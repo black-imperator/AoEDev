@@ -616,6 +616,7 @@ class FoxTools:
 		Bonus["Gems"] 		= git('BONUS_GEMS')
 		Bonus["Gulagarm"]	= git('BONUS_GULAGARM')
 		Bonus["Horse"]		= git('BONUS_HORSE')
+		Bonus["Hyapon"]		= git('BONUS_HYAPON')
 		Bonus["Iron"] 		= git('BONUS_IRON')
 		Bonus["Ivory"] 		= git('BONUS_IVORY')
 		Bonus["Incense"] 	= git('BONUS_INCENSE')
