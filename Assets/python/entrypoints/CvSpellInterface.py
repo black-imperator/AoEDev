@@ -14755,7 +14755,7 @@ def spellDemonLairSpawn(caster):
 				bValid = False
 		if bValid :
 			pPlot.setImprovementType(getInfoType("IMPROVEMENT_HELLFIRE"))
-			caster.setHasPromotion(getInfoType('PROMOTION_LEASH_1'),True)
+		caster.setHasPromotion(getInfoType('PROMOTION_LEASH_1'),True)
 
 def helpTakeEquipment(argsList):
 	eSpell, pCaster = argsList
