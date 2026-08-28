@@ -117,7 +117,7 @@ CvGame::CvGame()
 //FfH: Added by Kael 11/14/2007
 	m_pabEventTriggered = NULL;
 	m_pabGamblingRing = NULL;
-	m_pabNoBonus = NULL;
+	m_ppabNoBonus = NULL;
 	m_pabNoOutsideTechTrades = NULL;
 	m_pabSlaveTrade = NULL;
 	m_pabSmugglingRing = NULL;
@@ -701,7 +701,20 @@ void CvGame::uninit()
 //FfH: Added by Kael 11/14/2007
 	SAFE_DELETE_ARRAY(m_pabEventTriggered);
 	SAFE_DELETE_ARRAY(m_pabGamblingRing);
-	SAFE_DELETE_ARRAY(m_pabNoBonus);
+/*************************************************************************************************/
+/**	Overcouncil Bonus Ban					08/24/26									 Fix #420	**/
+/*************************************************************************************************/
+	if (m_ppabNoBonus != NULL)
+	{
+		for (int iI = 0; iI < GC.getNumVoteSourceInfos(); iI++)
+		{
+			SAFE_DELETE_ARRAY(m_ppabNoBonus[iI]);
+		}
+		SAFE_DELETE_ARRAY(m_ppabNoBonus);
+	}
+/*************************************************************************************************/
+/**	Overcouncil Bonus Ban					END													**/
+/*************************************************************************************************/
 	SAFE_DELETE_ARRAY(m_pabNoOutsideTechTrades);
 	SAFE_DELETE_ARRAY(m_pabSlaveTrade);
 	SAFE_DELETE_ARRAY(m_pabSmugglingRing);
@@ -852,6 +865,13 @@ void CvGame::reset(HandicapTypes eHandicap, bool bConstructorCall)
 	m_iGlobalCounterLimit = GC.getDefineINT("GLOBAL_COUNTER_LIMIT_DEFAULT");
 	m_iScenarioCounter = 0;
 //FfH: End Add
+/*************************************************************************************************/
+/**	Overcouncil Bonus Ban					08/24/26									 Fix #420	**/
+/*************************************************************************************************/
+	m_bAnyNoBonus = false;
+/*************************************************************************************************/
+/**	Overcouncil Bonus Ban					END													**/
+/*************************************************************************************************/
 
 	for (int iI = 0; iI < MAX_PLAYERS; iI++)
 	{
@@ -881,11 +901,21 @@ void CvGame::reset(HandicapTypes eHandicap, bool bConstructorCall)
 		{
 			m_pabGamblingRing[iI] = false;
 		}
-		m_pabNoBonus = new bool[GC.getNumBonusInfos()];
-		for (int iI = 0; iI < GC.getNumBonusInfos(); iI++)
+/*************************************************************************************************/
+/**	Overcouncil Bonus Ban					08/24/26									 Fix #420	**/
+/*************************************************************************************************/
+		m_ppabNoBonus = new bool*[GC.getNumVoteSourceInfos()];
+		for (int iI = 0; iI < GC.getNumVoteSourceInfos(); iI++)
 		{
-			m_pabNoBonus[iI] = false;
+			m_ppabNoBonus[iI] = new bool[GC.getNumBonusInfos()];
+			for (int iJ = 0; iJ < GC.getNumBonusInfos(); iJ++)
+			{
+				m_ppabNoBonus[iI][iJ] = false;
+			}
 		}
+/*************************************************************************************************/
+/**	Overcouncil Bonus Ban					END													**/
+/*************************************************************************************************/
 		m_pabNoOutsideTechTrades = new bool[GC.getNumVoteSourceInfos()];
 		for (int iI = 0; iI < GC.getNumVoteSourceInfos(); iI++)
 		{
@@ -8090,19 +8120,20 @@ void CvGame::processVote(const VoteTriggeredData& kData, int iChange)
 	{
 		bChange = true;
 	}
+/*************************************************************************************************/
+/**	Overcouncil Bonus Ban					08/24/26									 Fix #420	**/
+/**		The ban used to be pushed into each member's CvPlayer::m_paiNoBonus counter, which		**/
+/**		froze the membership list at the moment the vote passed and gave the ban no way to		**/
+/**		ever lapse. Store it on the vote source instead, like the other council decrees, and	**/
+/**		let CvPlayer::isNoBonus resolve it against live membership.								**/
+/*************************************************************************************************/
 	if (kVote.getNoBonus() != NO_BONUS)
 	{
-	//	setNoBonus((BonusTypes)kVote.getNoBonus(), bChange);
-
-		for (int iPlayer = 0; iPlayer < MAX_CIV_PLAYERS; ++iPlayer)
-		{
-			CvPlayer& pPlayer = GET_PLAYER((PlayerTypes)iPlayer);
-			if (pPlayer.isAlive() && pPlayer.isFullMember(kData.eVoteSource))
-			{
-				pPlayer.changeNoBonus(iChange, kVote.getNoBonus());
-			}
-		}
+		setNoBonus(kData.eVoteSource, (BonusTypes)kVote.getNoBonus(), bChange);
 	}
+/*************************************************************************************************/
+/**	Overcouncil Bonus Ban					END													**/
+/*************************************************************************************************/
 	if (kVote.isGamblingRing())
 	{
 		setGamblingRing(kData.eVoteSource, bChange);
@@ -9051,7 +9082,18 @@ void CvGame::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iScenarioCounter);
 	pStream->Read(GC.getNumEventTriggerInfos(), m_pabEventTriggered);
 	pStream->Read(GC.getNumVoteSourceInfos(), m_pabGamblingRing);
-	pStream->Read(GC.getNumBonusInfos(), m_pabNoBonus);
+/*************************************************************************************************/
+/**	Overcouncil Bonus Ban					08/24/26									 Fix #420	**/
+/**		NoBonus bans are stored per vote source instead of as one global bonus-indexed array.	**/
+/*************************************************************************************************/
+	for (int iSource = 0; iSource < GC.getNumVoteSourceInfos(); iSource++)
+	{
+		pStream->Read(GC.getNumBonusInfos(), m_ppabNoBonus[iSource]);
+	}
+	updateAnyNoBonus();
+/*************************************************************************************************/
+/**	Overcouncil Bonus Ban					END													**/
+/*************************************************************************************************/
 	pStream->Read(GC.getNumVoteSourceInfos(), m_pabNoOutsideTechTrades);
 	pStream->Read(GC.getNumVoteSourceInfos(), m_pabSlaveTrade);
 	pStream->Read(GC.getNumVoteSourceInfos(), m_pabSmugglingRing);
@@ -9077,7 +9119,7 @@ void CvGame::write(FDataStreamBase* pStream)
 {
 	int iI;
 
-	uint uiFlag=1;
+	uint uiFlag=2;	// 2: NoBonus bans are stored per vote source (Fix #420)
 	pStream->Write(uiFlag);		// flag for expansion
 
 	pStream->Write(m_iElapsedGameTurns);
@@ -9269,7 +9311,16 @@ void CvGame::write(FDataStreamBase* pStream)
 	pStream->Write(m_iScenarioCounter);
 	pStream->Write(GC.getNumEventTriggerInfos(), m_pabEventTriggered);
 	pStream->Write(GC.getNumVoteSourceInfos(), m_pabGamblingRing);
-	pStream->Write(GC.getNumBonusInfos(), m_pabNoBonus);
+/*************************************************************************************************/
+/**	Overcouncil Bonus Ban					08/24/26									 Fix #420	**/
+/*************************************************************************************************/
+	for (int iSource = 0; iSource < GC.getNumVoteSourceInfos(); iSource++)
+	{
+		pStream->Write(GC.getNumBonusInfos(), m_ppabNoBonus[iSource]);
+	}
+/*************************************************************************************************/
+/**	Overcouncil Bonus Ban					END													**/
+/*************************************************************************************************/
 	pStream->Write(GC.getNumVoteSourceInfos(), m_pabNoOutsideTechTrades);
 	pStream->Write(GC.getNumVoteSourceInfos(), m_pabSlaveTrade);
 	pStream->Write(GC.getNumVoteSourceInfos(), m_pabSmugglingRing);
@@ -10898,15 +10949,45 @@ void CvGame::setGamblingRing(VoteSourceTypes eIndex, bool bNewValue)
 	m_pabGamblingRing[eIndex] = bNewValue;
 }
 
-bool CvGame::isNoBonus(BonusTypes eIndex) const
+/*************************************************************************************************/
+/**	Overcouncil Bonus Ban					08/24/26									 Fix #420	**/
+/**		Per vote source now, so CvPlayer::isNoBonus can test live council membership.			**/
+/*************************************************************************************************/
+bool CvGame::isNoBonus(VoteSourceTypes eVoteSource, BonusTypes eIndex) const
 {
-	return m_pabNoBonus[eIndex];
+	return m_ppabNoBonus[eVoteSource][eIndex];
 }
 
-void CvGame::setNoBonus(BonusTypes eIndex, bool bNewValue)
+void CvGame::setNoBonus(VoteSourceTypes eVoteSource, BonusTypes eIndex, bool bNewValue)
 {
-	m_pabNoBonus[eIndex] = bNewValue;
+	m_ppabNoBonus[eVoteSource][eIndex] = bNewValue;
+	updateAnyNoBonus();
 }
+
+bool CvGame::isAnyNoBonus() const
+{
+	return m_bAnyNoBonus;
+}
+
+// Cheap early out for CvPlayer::isNoBonus, which is called from CvCity::getNumBonuses.
+void CvGame::updateAnyNoBonus()
+{
+	m_bAnyNoBonus = false;
+	for (int iI = 0; iI < GC.getNumVoteSourceInfos(); iI++)
+	{
+		for (int iJ = 0; iJ < GC.getNumBonusInfos(); iJ++)
+		{
+			if (m_ppabNoBonus[iI][iJ])
+			{
+				m_bAnyNoBonus = true;
+				return;
+			}
+		}
+	}
+}
+/*************************************************************************************************/
+/**	Overcouncil Bonus Ban					END													**/
+/*************************************************************************************************/
 
 bool CvGame::isNoOutsideTechTrades(VoteSourceTypes eIndex) const
 {
