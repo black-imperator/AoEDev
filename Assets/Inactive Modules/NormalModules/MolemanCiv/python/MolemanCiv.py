@@ -300,7 +300,7 @@ def onBuildingBuilt(self, argsList):
 				iPlotEffect = pLoopPlot.getPlotEffectType()
 				if iPlotEffect == gc.getInfoTypeForString("PLOT_EFFECT_MOLERUN"):
 					sVariable = ""
-					if pLoopPlot.getOwner() == iPlayer and pCity.canWork(pLoopPlot):
+					if pLoopPlot.getOwner() == player and pCity.canWork(pLoopPlot):
 						if "HasMolerunEffectBonus" in pLoopPlot.getScriptData():
 							if bhasLarder and " FOOD " in pLoopPlot.getScriptData():
 									CyGame().setPlotExtraYield(pLoopPlot.getX(),pLoopPlot.getY(), gc.getInfoTypeForString("YIELD_FOOD"), -1)

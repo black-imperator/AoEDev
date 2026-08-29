@@ -61,6 +61,7 @@
 			<!-- /Collateral -->
 			<iCultureGarrison>16</iCultureGarrison>
 			<iAsset>42</iAsset>
+			<PrereqTech>TECH_ANIMAL_MASTERY</PrereqTech>
 			<UnitMeshGroups>
 				<iGroupSize>1</iGroupSize>
 				<iMeleeWaveSize>1</iMeleeWaveSize>
