@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Bart Muzzin (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Build Infos -->
+<Civ4BuildInfos xmlns="x-schema:MolemanCiv_CIV4UnitSchema.xml">
+	<BuildInfos>
+		<BuildInfo>
+			<!-- Moleman Tunnel -->
+			<Type>BUILD_MOLEMAN_TUNNELS</Type>
+			<Description>TXT_KEY_BUILD_MOLEMAN_TUNNEL</Description>
+			<Help/>
+			<PrereqTech>NONE</PrereqTech>
+			<iTime>1000</iTime>
+			<iCost>0</iCost>
+			<bKill>0</bKill>
+			<ImprovementType>NONE</ImprovementType>
+			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
+			<EntityEvent>ENTITY_EVENT_SHOVEL</EntityEvent>
+			<FeatureStructs/>
+			<HotKey>KB_R</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/underdwelling.dds</Button>
+			<TechBuildDiscounts>
+				<TechBuildDiscount>
+					<TechType>TECH_CONSTRUCTION</TechType>
+					<iDiscount>200</iDiscount>
+				</TechBuildDiscount>
+			</TechBuildDiscounts>
+		</BuildInfo>
+			<BuildInfo>
+			<!-- Sinkhole -->
+			<Type>BUILD_MOLEMAN_SINKHOLE</Type>
+			<Description>TXT_KEY_BUILD_MOLEMAN_SINKHOLE</Description>
+			<Help/>
+			<PrereqTech>NONE</PrereqTech>
+			<iTime>1200</iTime>
+			<iCost>0</iCost>
+			<bKill>0</bKill>
+			<ImprovementType>IMPROVEMENTCLASS_MOLEMAN_SINKHOLE</ImprovementType>
+			<EntityEvent>ENTITY_EVENT_SHOVEL</EntityEvent>
+			<FeatureStructs/>
+			<HotKey>KB_M</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/Buildings/sinkhole.dds</Button>
+			<TechBuildDiscounts>
+				<TechBuildDiscount>
+					<TechType>TECH_CONSTRUCTION</TechType>
+					<iDiscount>200</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_MASONRY</TechType>
+					<iDiscount>200</iDiscount>
+				</TechBuildDiscount>
+				<TechBuildDiscount>
+					<TechType>TECH_ENGINEERING</TechType>
+					<iDiscount>200</iDiscount>
+				</TechBuildDiscount>
+			</TechBuildDiscounts>
+		</BuildInfo>
+	</BuildInfos>
+</Civ4BuildInfos>

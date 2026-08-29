@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Bart Muzzin (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Player Color -->
+<Civ4PlayerColorInfos xmlns="x-schema:MolemanCiv_CIV4InterfaceSchema.xml">
+	<PlayerColorInfos>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_MOLEMAN</Type>
+			<ColorTypePrimary>COLOR_CITY_BROWN</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_PINK</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_PINK_TEXT</TextColorType>
+		</PlayerColorInfo>
+	</PlayerColorInfos>
+</Civ4PlayerColorInfos>

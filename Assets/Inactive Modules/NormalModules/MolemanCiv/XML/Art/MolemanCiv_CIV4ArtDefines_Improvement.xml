@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Jason Winokur (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Improvement art path information -->
+<Civ4ArtDefines xmlns="x-schema:MolemanCiv_CIV4ArtDefinesSchema.xml">
+	<ImprovementArtInfos>
+		<ImprovementArtInfo>
+			<Type>ART_DEF_IMPROVEMENT_MOLEMAN_SURFACE_TUNNEL</Type>
+			<bExtraAnimations>0</bExtraAnimations>
+			<fScale>0.7</fScale>
+			<fInterfaceScale>1.5</fInterfaceScale>
+			<NIF>Modules/NormalModules/MolemanCiv/Art/Buildings/Surface_Tunnel/moleman_tunnel.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/Buildings/surfacetunnel.dds</Button>
+		</ImprovementArtInfo>
+		<ImprovementArtInfo>
+			<Type>ART_DEF_IMPROVEMENT_MOLEMAN_SINKHOLE</Type>
+			<bExtraAnimations>0</bExtraAnimations>
+			<fScale>0.7</fScale>
+			<fInterfaceScale>1.5</fInterfaceScale>
+			<NIF>Modules/NormalModules/MolemanCiv/Art/Buildings/Moleman_Tunnel/moleman_tunnel_dirt.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/Buildings/sinkhole.dds</Button>
+		</ImprovementArtInfo>
+	</ImprovementArtInfos>
+</Civ4ArtDefines>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Route Infos -->
+<Civ4RouteInfos xmlns="x-schema:MolemanCiv_CIV4MiscSchema.xml">
+	<RouteInfos>
+		<RouteInfo>
+			<Type>ROUTE_MOLEMAN_TUNNELS</Type>
+			<Description>TXT_KEY_MOLEMAN_TUNNELS</Description>
+			<iValue>1</iValue>
+			<iAdvancedStartCost>12</iAdvancedStartCost>
+			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+			<iMovement>60</iMovement>
+			<iFlatMovement>60</iFlatMovement>
+			<BonusType>NONE</BonusType>
+			<PrereqOrBonuses/>
+			<Yields/>
+			<TechMovementChanges>
+				<TechMovementChange>
+					<PrereqTech>TECH_UNDERDWELLING</PrereqTech>
+					<iMovementChange>-30</iMovementChange>
+				</TechMovementChange>
+			</TechMovementChanges>
+			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/underdwelling.dds</Button>
+		</RouteInfo>
+	</RouteInfos>
+</Civ4RouteInfos>

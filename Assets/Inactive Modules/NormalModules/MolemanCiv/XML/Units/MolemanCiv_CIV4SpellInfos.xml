@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Spell Infos -->
+<Civ4SpellInfos xmlns="x-schema:MolemanCiv_CIV4UnitSpellSchema.xml">
+	<SpellInfos>
+		<SpellInfo>
+			<!-- Repulse Metal -->
+			<Type>SPELL_BREATH_REPULSE_METAL</Type>
+			<Description>TXT_KEY_SPELL_BREATH_REPULSE_METAL</Description>
+			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
+			<PromotionPrereq1>PROMOTION_MAGNETIC_FIELD</PromotionPrereq1>
+			<bAllowAI>1</bAllowAI>
+			<bIsAutoCastable>1</bIsAutoCastable>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+			<bResistable>1</bResistable>
+			<iRange>1</iRange>
+			<iResistModify>10</iResistModify>
+			<SpellClasses>
+				<SpellClass>
+					<SpellClassType>SPELLCLASS_EARTH</SpellClassType>
+					<bSpellClass>1</bSpellClass>
+				</SpellClass>
+				<SpellClass>
+					<SpellClassType>SPELLCLASS_DEBUFF</SpellClassType>
+					<bSpellClass>1</bSpellClass>
+				</SpellClass>
+			</SpellClasses>
+			<bImmuneTeam>1</bImmuneTeam>
+			<bImmuneNeutral>1</bImmuneNeutral>
+			<bAbility>1</bAbility>
+			<Effect>EFFECT_SPELL1</Effect>
+			<Sound>AS3D_SPELL_BREATH_FIRE</Sound>
+			<Button>Art/Interface/Buttons/Spells/repulsemetal.dds</Button>
+			<RemovePromotions>
+				<RemovePromotion>PROMOTION_BRONZE_WEAPONS</RemovePromotion>
+				<RemovePromotion>PROMOTION_IRON_WEAPONS</RemovePromotion>
+				<RemovePromotion>PROMOTION_MITHRIL_WEAPONS</RemovePromotion>
+			</RemovePromotions>
+		</SpellInfo>
+		<SpellInfo>
+			<!-- Add to Freak Show (Moleman) -->
+			<Type>SPELL_ADD_TO_FREAK_SHOW_MOLEMAN</Type>
+			<Description>TXT_KEY_SPELL_ADD_TO_FREAK_SHOW</Description>
+			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
+			<Help>TXT_KEY_SPELL_ADD_TO_FREAK_SHOW_HELP</Help>
+			<PromotionPrereq1>PROMOTION_MOLEMAN</PromotionPrereq1>
+			<UnitClassPrereq>UNITCLASS_SLAVE</UnitClassPrereq>
+			<CivilizationPrereq>CIVILIZATION_BALSERAPHS</CivilizationPrereq>
+			<bAllowAI>1</bAllowAI>
+			<bInBordersOnly>1</bInBordersOnly>
+			<bInCityOnly>1</bInCityOnly>
+			<iAIWeight>30</iAIWeight>
+			<bHasCasted>1</bHasCasted>
+			<bIgnoreHasCasted>1</bIgnoreHasCasted>
+			<CreateBuildingType>BUILDING_CAGE_MOLEMAN</CreateBuildingType>
+			<bAbility>1</bAbility>
+			<bSacrificeCaster>1</bSacrificeCaster>
+			<Effect>EFFECT_SPELL1</Effect>
+			<Sound>AS3D_SPELL_DISPEL_MAGIC</Sound>
+			<bGraphicalOnly>1</bGraphicalOnly>
+			<Button>Art/Interface/Buttons/Spells/Add to Freak Show.dds</Button>
+		</SpellInfo>
+	</SpellInfos>
+</Civ4SpellInfos>

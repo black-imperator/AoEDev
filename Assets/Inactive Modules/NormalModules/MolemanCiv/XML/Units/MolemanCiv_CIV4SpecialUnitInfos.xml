@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Special Unit Infos -->
+<Civ4SpecialUnitInfos xmlns="x-schema:MolemanCiv_CIV4UnitSchema.xml">
+	<SpecialUnitInfos>
+		<SpecialUnitInfo>
+			<Type>SPECIALUNIT_MOLEMAN</Type>
+			<Description>TXT_KEY_SPECIALUNIT_MOLEMAN</Description>
+			<bValid>1</bValid>
+			<bCityLoad>0</bCityLoad>
+			<CarrierUnitAIs>
+				<CarrierUnitAI>
+					<UnitAIType>UNITAI_ATTACK_CITY</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</CarrierUnitAI>
+				<CarrierUnitAI>
+					<UnitAIType>UNITAI_ASSAULT</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</CarrierUnitAI>
+				<CarrierUnitAI>
+					<UnitAIType>UNITAI_PARADROP</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</CarrierUnitAI>
+			</CarrierUnitAIs>
+			<ProductionTraits/>
+		</SpecialUnitInfo>
+	</SpecialUnitInfos>
+</Civ4SpecialUnitInfos>

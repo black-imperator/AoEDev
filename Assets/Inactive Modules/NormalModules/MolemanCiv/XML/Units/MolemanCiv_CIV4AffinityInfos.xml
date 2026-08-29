@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Basic Infos -->
+<Civ4AffinityInfos xmlns="x-schema:MolemanCiv_CIV4UnitSchema.xml">
+	<AffinityInfos>
+		<AffinityInfo><!-- Livestock Affinity--> 
+			<Type>AFFINITY_LIVESTOCK</Type>
+			<Description>TXT_KEY_AFFINITY_LIVESTOCK</Description>
+			<Civilopedia>TXT_KEY_AFFINITY_LIVESTOCK_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_AFFINITY_LIVESTOCK_STRATEGY</Strategy>
+			<BonusTypes>
+				<BonusType>BONUS_BISON</BonusType>
+				<BonusType>BONUS_PIG</BonusType>
+				<BonusType>BONUS_SHEEP</BonusType>
+				<BonusType>BONUS_COW</BonusType>
+				<BonusType>BONUS_DEER</BonusType>
+				<BonusType>BONUS_CAMEL</BonusType>
+				<BonusType>BONUS_HORSE</BonusType>
+				<BonusType>BONUS_NIGHTMARE</BonusType>
+			</BonusTypes>
+			<fAttackStrength>0.5</fAttackStrength>
+		</AffinityInfo>
+		<AffinityInfo><!-- Stone Affinity--> 
+			<Type>AFFINITY_STONE</Type>
+			<Description>TXT_KEY_AFFINITY_STONE</Description>
+			<Civilopedia>TXT_KEY_AFFINITY_STONE_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_AFFINITY_STONE_STRATEGY</Strategy>
+			<BonusTypes>
+				<BonusType>BONUS_STONE</BonusType>
+				<BonusType>BONUS_MARBLE</BonusType>
+			</BonusTypes>
+			<fDefenseStrength>0.5</fDefenseStrength>
+		</AffinityInfo>
+		<AffinityInfo>
+			<!-- Gem Affinity-->
+			<Type>AFFINITY_GEM</Type>
+			<Description>TXT_KEY_AFFINITY_GEM</Description>
+			<Civilopedia>TXT_KEY_AFFINITY_GEM_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_AFFINITY_GEM_STRATEGY</Strategy>
+			<BonusTypes>
+				<BonusType>BONUS_GEMS</BonusType>
+			</BonusTypes>
+			<fAttackStrength>0.5</fAttackStrength>
+		</AffinityInfo>
+	</AffinityInfos>
+</Civ4AffinityInfos>

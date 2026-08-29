@@ -1,0 +1,1035 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<!-- Moleman Building Text -->
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PALACE_MOLEMAN</Tag>
+		<English>Kusekh Palace</English>
+		<French>Kusekh Palace</French>
+		<German>Kusekh Palace</German>
+		<Italian>Kusekh Palace</Italian>
+		<Spanish>Kusekh Palace</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOLEMAN_PALACE_STRATEGY</Tag>
+		<English>As well as providing the usual bonuses of a palace, the Kusekh Palace also allows you to transport one unit between cities and [LINK=IMPROVEMENT_MOLEMAN_TUNNEL]Surface Tunnels[\LINK] each turn.</English>
+		<French>As well as providing the usual bonuses of a palace, the Kusekh Palace also allows you to transport one unit between cities and [LINK=IMPROVEMENT_MOLEMAN_TUNNEL]Surface Tunnels[\LINK] each turn.</French>
+		<German>As well as providing the usual bonuses of a palace, the Kusekh Palace also allows you to transport one unit between cities and [LINK=IMPROVEMENT_MOLEMAN_TUNNEL]Surface Tunnels[\LINK] each turn.</German>
+		<Italian>As well as providing the usual bonuses of a palace, the Kusekh Palace also allows you to transport one unit between cities and [LINK=IMPROVEMENT_MOLEMAN_TUNNEL]Surface Tunnels[\LINK] each turn.</Italian>
+		<Spanish>As well as providing the usual bonuses of a palace, the Kusekh Palace also allows you to transport one unit between cities and [LINK=IMPROVEMENT_MOLEMAN_TUNNEL]Surface Tunnels[\LINK] each turn.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOLEMAN_TUNNELS</Tag>
+		<English>Dirt Tunnels</English>
+		<French>Dirt Tunnels</French>
+		<German>Dirt Tunnels</German>
+		<Italian>Dirt Tunnels</Italian>
+		<Spanish>Dirt Tunnels</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOLEMAN_TUNNELS_PEDIA</Tag>
+		<English>[BOLD]Day 34[\BOLD][NEWLINE]We came across some old Patrian ruins that looked promising. Keefri did one of those quick detection spells she's apt to do and warned us of some undead lurking inside.[NEWLINE][NEWLINE][ITALICS]"Well, where there's undead, there's treasure, right?"[\ITALICS] I said. Jenkin laughed. She didn't. Oh well.[NEWLINE][NEWLINE]It ended up being two floors of what I can only assume was once an alchemy lab. There were a couple of skellies (what alchemist raises skeletons anyways?) and an overgrown rat (I guess it befriended the skellies), but that's about it.[NEWLINE][NEWLINE]A few rusted alchemy tools and a bag of coins was the hoard they were guarding. A bit disappointing.[NEWLINE][NEWLINE]Jenkin spotted a hatch that led to a second floor. Keefri did her thing again and detected nothing, so we hopped down.[NEWLINE][NEWLINE]By all appearances, it looked like someone beat us to the loot. There were a couple of large chests already open and emptied and the floor was littered with the scattered bones of what I'm pretty sure were more skelly guards (armored this time).[NEWLINE][NEWLINE]Very disappointing.[NEWLINE][NEWLINE]I'm not sure who out there likes to explore underground lairs from the bottom-up, but whoever they are forgot to close up the giant tunnel they dug. Jenkin wanted to explore the thing despite us being low on torches. Keefri did not. I had to side with Keefri on this one.[NEWLINE][NEWLINE]I'll see about organizing a proper expedition later to find out where that tunnel leads and see who dug it.[NEWLINE]-Journal entry of an Austrin explorer</English>
+		<French>[BOLD]Day 34[\BOLD][NEWLINE]We came across some old Patrian ruins that looked promising. Keefri did one of those quick detection spells she's apt to do and warned us of some undead lurking inside.[NEWLINE][NEWLINE][ITALICS]"Well, where there's undead, there's treasure, right?"[\ITALICS] I said. Jenkin laughed. She didn't. Oh well.[NEWLINE][NEWLINE]It ended up being two floors of what I can only assume was once an alchemy lab. There were a couple of skellies (what alchemist raises skeletons anyways?) and an overgrown rat (I guess it befriended the skellies), but that's about it.[NEWLINE][NEWLINE]A few rusted alchemy tools and a bag of coins was the hoard they were guarding. A bit disappointing.[NEWLINE][NEWLINE]Jenkin spotted a hatch that led to a second floor. Keefri did her thing again and detected nothing, so we hopped down.[NEWLINE][NEWLINE]By all appearances, it looked like someone beat us to the loot. There were a couple of large chests already open and emptied and the floor was littered with the scattered bones of what I'm pretty sure were more skelly guards (armored this time).[NEWLINE][NEWLINE]Very disappointing.[NEWLINE][NEWLINE]I'm not sure who out there likes to explore underground lairs from the bottom-up, but whoever they are forgot to close up the giant tunnel they dug. Jenkin wanted to explore the thing despite us being low on torches. Keefri did not. I had to side with Keefri on this one.[NEWLINE][NEWLINE]I'll see about organizing a proper expedition later to find out where that tunnel leads and see who dug it.[NEWLINE]-Journal entry of an Austrin explorer</French>
+		<German>[BOLD]Day 34[\BOLD][NEWLINE]We came across some old Patrian ruins that looked promising. Keefri did one of those quick detection spells she's apt to do and warned us of some undead lurking inside.[NEWLINE][NEWLINE][ITALICS]"Well, where there's undead, there's treasure, right?"[\ITALICS] I said. Jenkin laughed. She didn't. Oh well.[NEWLINE][NEWLINE]It ended up being two floors of what I can only assume was once an alchemy lab. There were a couple of skellies (what alchemist raises skeletons anyways?) and an overgrown rat (I guess it befriended the skellies), but that's about it.[NEWLINE][NEWLINE]A few rusted alchemy tools and a bag of coins was the hoard they were guarding. A bit disappointing.[NEWLINE][NEWLINE]Jenkin spotted a hatch that led to a second floor. Keefri did her thing again and detected nothing, so we hopped down.[NEWLINE][NEWLINE]By all appearances, it looked like someone beat us to the loot. There were a couple of large chests already open and emptied and the floor was littered with the scattered bones of what I'm pretty sure were more skelly guards (armored this time).[NEWLINE][NEWLINE]Very disappointing.[NEWLINE][NEWLINE]I'm not sure who out there likes to explore underground lairs from the bottom-up, but whoever they are forgot to close up the giant tunnel they dug. Jenkin wanted to explore the thing despite us being low on torches. Keefri did not. I had to side with Keefri on this one.[NEWLINE][NEWLINE]I'll see about organizing a proper expedition later to find out where that tunnel leads and see who dug it.[NEWLINE]-Journal entry of an Austrin explorer</German>
+		<Italian>[BOLD]Day 34[\BOLD][NEWLINE]We came across some old Patrian ruins that looked promising. Keefri did one of those quick detection spells she's apt to do and warned us of some undead lurking inside.[NEWLINE][NEWLINE][ITALICS]"Well, where there's undead, there's treasure, right?"[\ITALICS] I said. Jenkin laughed. She didn't. Oh well.[NEWLINE][NEWLINE]It ended up being two floors of what I can only assume was once an alchemy lab. There were a couple of skellies (what alchemist raises skeletons anyways?) and an overgrown rat (I guess it befriended the skellies), but that's about it.[NEWLINE][NEWLINE]A few rusted alchemy tools and a bag of coins was the hoard they were guarding. A bit disappointing.[NEWLINE][NEWLINE]Jenkin spotted a hatch that led to a second floor. Keefri did her thing again and detected nothing, so we hopped down.[NEWLINE][NEWLINE]By all appearances, it looked like someone beat us to the loot. There were a couple of large chests already open and emptied and the floor was littered with the scattered bones of what I'm pretty sure were more skelly guards (armored this time).[NEWLINE][NEWLINE]Very disappointing.[NEWLINE][NEWLINE]I'm not sure who out there likes to explore underground lairs from the bottom-up, but whoever they are forgot to close up the giant tunnel they dug. Jenkin wanted to explore the thing despite us being low on torches. Keefri did not. I had to side with Keefri on this one.[NEWLINE][NEWLINE]I'll see about organizing a proper expedition later to find out where that tunnel leads and see who dug it.[NEWLINE]-Journal entry of an Austrin explorer</Italian>
+		<Spanish>[BOLD]Day 34[\BOLD][NEWLINE]We came across some old Patrian ruins that looked promising. Keefri did one of those quick detection spells she's apt to do and warned us of some undead lurking inside.[NEWLINE][NEWLINE][ITALICS]"Well, where there's undead, there's treasure, right?"[\ITALICS] I said. Jenkin laughed. She didn't. Oh well.[NEWLINE][NEWLINE]It ended up being two floors of what I can only assume was once an alchemy lab. There were a couple of skellies (what alchemist raises skeletons anyways?) and an overgrown rat (I guess it befriended the skellies), but that's about it.[NEWLINE][NEWLINE]A few rusted alchemy tools and a bag of coins was the hoard they were guarding. A bit disappointing.[NEWLINE][NEWLINE]Jenkin spotted a hatch that led to a second floor. Keefri did her thing again and detected nothing, so we hopped down.[NEWLINE][NEWLINE]By all appearances, it looked like someone beat us to the loot. There were a couple of large chests already open and emptied and the floor was littered with the scattered bones of what I'm pretty sure were more skelly guards (armored this time).[NEWLINE][NEWLINE]Very disappointing.[NEWLINE][NEWLINE]I'm not sure who out there likes to explore underground lairs from the bottom-up, but whoever they are forgot to close up the giant tunnel they dug. Jenkin wanted to explore the thing despite us being low on torches. Keefri did not. I had to side with Keefri on this one.[NEWLINE][NEWLINE]I'll see about organizing a proper expedition later to find out where that tunnel leads and see who dug it.[NEWLINE]-Journal entry of an Austrin explorer</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOLEMAN_TUNNELS_BEDROCK</Tag>
+		<English>Bedrock Tunnels</English>
+		<French>Bedrock Tunnels</French>
+		<German>Bedrock Tunnels</German>
+		<Italian>BedrockTunnels</Italian>
+		<Spanish>Bedrock Tunnels</Spanish>
+	</TEXT>
+		<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOLEMAN_TUNNELS_BEDROCK_PEDIA</Tag>
+		<English>"Any good dwarf knows the underground isn't empty. Often, you'll mine straight into a cave that hasn't seen light since Kilmorph laid the stone you're standing on. Occasionally, you'll find something strange.[NEWLINE][NEWLINE]We've found a couple of tunnels not mined by us. Now, we haven't run into whoever made them yet, but that may be for the best... One of the boys found tools in one of those tunnels, and what I can tell you is that they were not crafted by dwarven hands."[NEWLINE]- account from a Khazad miner during the Age of Ice</English>
+		<French>"Any good dwarf knows the underground isn't empty. Often, you'll mine straight into a cave that hasn't seen light since Kilmorph laid the stone you're standing on. Occasionally, you'll find something strange.[NEWLINE][NEWLINE]We've found a couple of tunnels not mined by us. Now, we haven't run into whoever made them yet, but that may be for the best... One of the boys found tools in one of those tunnels, and what I can tell you is that they were not crafted by dwarven hands."[NEWLINE]- account from a Khazad miner during the Age of Ice</French>
+		<German>"Any good dwarf knows the underground isn't empty. Often, you'll mine straight into a cave that hasn't seen light since Kilmorph laid the stone you're standing on. Occasionally, you'll find something strange.[NEWLINE][NEWLINE]We've found a couple of tunnels not mined by us. Now, we haven't run into whoever made them yet, but that may be for the best... One of the boys found tools in one of those tunnels, and what I can tell you is that they were not crafted by dwarven hands."[NEWLINE]- account from a Khazad miner during the Age of Ice</German>
+		<Italian>"Any good dwarf knows the underground isn't empty. Often, you'll mine straight into a cave that hasn't seen light since Kilmorph laid the stone you're standing on. Occasionally, you'll find something strange.[NEWLINE][NEWLINE]We've found a couple of tunnels not mined by us. Now, we haven't run into whoever made them yet, but that may be for the best... One of the boys found tools in one of those tunnels, and what I can tell you is that they were not crafted by dwarven hands."[NEWLINE]- account from a Khazad miner during the Age of Ice</Italian>
+		<Spanish>"Any good dwarf knows the underground isn't empty. Often, you'll mine straight into a cave that hasn't seen light since Kilmorph laid the stone you're standing on. Occasionally, you'll find something strange.[NEWLINE][NEWLINE]We've found a couple of tunnels not mined by us. Now, we haven't run into whoever made them yet, but that may be for the best... One of the boys found tools in one of those tunnels, and what I can tell you is that they were not crafted by dwarven hands."[NEWLINE]- account from a Khazad miner during the Age of Ice</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOLEMAN_TUNNELS_GRANITE</Tag>
+		<English>Granite Tunnels</English>
+		<French>Granite Tunnels</French>
+		<German>Granite Tunnels</German>
+		<Italian>Granite Tunnels</Italian>
+		<Spanish>Granite Tunnels</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOLEMAN_TUNNELS_GRANITE_PEDIA</Tag>
+		<English>"I should congratulate Carenos on his [modification/creation] of the flesh [ritual/magic/spell]. The [chimera/beasts] cut into stone like it is water and carry their loads without struggle. The addition of chaos [magic/spells] to the [ritual/magic/spell] makes them very [malleable/susceptible] for my [mages/adepts] to mold like clay. I have ordered the [beasts/slaves] to dig deeper while my [mages/adepts] continue their work. I will update you if further [modification/creation] is required."[NEWLINE]- partially translated message recovered from an ancient Patrian quarry</English>
+		<French>"I should congratulate Carenos on his [modification/creation] of the flesh [ritual/magic/spell]. The [chimera/beasts] cut into stone like it is water and carry their loads without struggle. The addition of chaos [magic/spells] to the [ritual/magic/spell] makes them very [malleable/susceptible] for my [mages/adepts] to mold like clay. I have ordered the [beasts/slaves] to dig deeper while my [mages/adepts] continue their work. I will update you if further [modification/creation] is required."[NEWLINE]- partially translated message recovered from an ancient Patrian quarry</French>
+		<German>"I should congratulate Carenos on his [modification/creation] of the flesh [ritual/magic/spell]. The [chimera/beasts] cut into stone like it is water and carry their loads without struggle. The addition of chaos [magic/spells] to the [ritual/magic/spell] makes them very [malleable/susceptible] for my [mages/adepts] to mold like clay. I have ordered the [beasts/slaves] to dig deeper while my [mages/adepts] continue their work. I will update you if further [modification/creation] is required."[NEWLINE]- partially translated message recovered from an ancient Patrian quarry</German>
+		<Italian>"I should congratulate Carenos on his [modification/creation] of the flesh [ritual/magic/spell]. The [chimera/beasts] cut into stone like it is water and carry their loads without struggle. The addition of chaos [magic/spells] to the [ritual/magic/spell] makes them very [malleable/susceptible] for my [mages/adepts] to mold like clay. I have ordered the [beasts/slaves] to dig deeper while my [mages/adepts] continue their work. I will update you if further [modification/creation] is required."[NEWLINE]- partially translated message recovered from an ancient Patrian quarry</Italian>
+		<Spanish>"I should congratulate Carenos on his [modification/creation] of the flesh [ritual/magic/spell]. The [chimera/beasts] cut into stone like it is water and carry their loads without struggle. The addition of chaos [magic/spells] to the [ritual/magic/spell] makes them very [malleable/susceptible] for my [mages/adepts] to mold like clay. I have ordered the [beasts/slaves] to dig deeper while my [mages/adepts] continue their work. I will update you if further [modification/creation] is required."[NEWLINE]- partially translated message recovered from an ancient Patrian quarry</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOLEMAN_SACRED_CAVERN</Tag>
+		<English>Sacred Cavern</English>
+		<French>Sacred Cavern</French>
+		<German>Sacred Cavern</German>
+		<Italian>Sacred Cavern</Italian>
+		<Spanish>Sacred Cavern</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOLEMAN_SACRED_CAVERN_PEDIA</Tag>
+		<English>"Let me tell you, Captain, these molefolk offered us some of the most beautiful gems I ever laid eyes on. I know you say I exaggerate a lot, but it's the truth! You should have seen the way they gleamed under my torch! I almost wept at the sight of them.[NEWLINE][NEWLINE]Better yet, I think they have a whole hoard of the treasure waiting to be traded. While they led me through their home, I spied with my little eye a whole caravan of them carrying even bigger gems into some side-cave.[NEWLINE][NEWLINE]I ask my molefolk friend if I could take a look. You know, all diplomatically.[NEWLINE][NEWLINE]They said no![NEWLINE][NEWLINE]I asked why. All diplomatically.[NEWLINE][NEWLINE]They said it was none of my business![NEWLINE][NEWLINE]I'm telling you, Captain, that sounds like a treasure hoard to me!"[NEWLINE]- letter sent from a Lanun trader</English>
+		<French>"Let me tell you, Captain, these molefolk offered us some of the most beautiful gems I ever laid eyes on. I know you say I exaggerate a lot, but it's the truth! You should have seen the way they gleamed under my torch! I almost wept at the sight of them.[NEWLINE][NEWLINE]Better yet, I think they have a whole hoard of the treasure waiting to be traded. While they led me through their home, I spied with my little eye a whole caravan of them carrying even bigger gems into some side-cave.[NEWLINE][NEWLINE]I ask my molefolk friend if I could take a look. You know, all diplomatically.[NEWLINE][NEWLINE]They said no![NEWLINE][NEWLINE]I asked why. All diplomatically.[NEWLINE][NEWLINE]They said it was none of my business![NEWLINE][NEWLINE]I'm telling you, Captain, that sounds like a treasure hoard to me!"[NEWLINE]- letter sent from a Lanun trader</French>
+		<German>"Let me tell you, Captain, these molefolk offered us some of the most beautiful gems I ever laid eyes on. I know you say I exaggerate a lot, but it's the truth! You should have seen the way they gleamed under my torch! I almost wept at the sight of them.[NEWLINE][NEWLINE]Better yet, I think they have a whole hoard of the treasure waiting to be traded. While they led me through their home, I spied with my little eye a whole caravan of them carrying even bigger gems into some side-cave.[NEWLINE][NEWLINE]I ask my molefolk friend if I could take a look. You know, all diplomatically.[NEWLINE][NEWLINE]They said no![NEWLINE][NEWLINE]I asked why. All diplomatically.[NEWLINE][NEWLINE]They said it was none of my business![NEWLINE][NEWLINE]I'm telling you, Captain, that sounds like a treasure hoard to me!"[NEWLINE]- letter sent from a Lanun trader</German>
+		<Italian>"Let me tell you, Captain, these molefolk offered us some of the most beautiful gems I ever laid eyes on. I know you say I exaggerate a lot, but it's the truth! You should have seen the way they gleamed under my torch! I almost wept at the sight of them.[NEWLINE][NEWLINE]Better yet, I think they have a whole hoard of the treasure waiting to be traded. While they led me through their home, I spied with my little eye a whole caravan of them carrying even bigger gems into some side-cave.[NEWLINE][NEWLINE]I ask my molefolk friend if I could take a look. You know, all diplomatically.[NEWLINE][NEWLINE]They said no![NEWLINE][NEWLINE]I asked why. All diplomatically.[NEWLINE][NEWLINE]They said it was none of my business![NEWLINE][NEWLINE]I'm telling you, Captain, that sounds like a treasure hoard to me!"[NEWLINE]- letter sent from a Lanun trader</Italian>
+		<Spanish>"Let me tell you, Captain, these molefolk offered us some of the most beautiful gems I ever laid eyes on. I know you say I exaggerate a lot, but it's the truth! You should have seen the way they gleamed under my torch! I almost wept at the sight of them.[NEWLINE][NEWLINE]Better yet, I think they have a whole hoard of the treasure waiting to be traded. While they led me through their home, I spied with my little eye a whole caravan of them carrying even bigger gems into some side-cave.[NEWLINE][NEWLINE]I ask my molefolk friend if I could take a look. You know, all diplomatically.[NEWLINE][NEWLINE]They said no![NEWLINE][NEWLINE]I asked why. All diplomatically.[NEWLINE][NEWLINE]They said it was none of my business![NEWLINE][NEWLINE]I'm telling you, Captain, that sounds like a treasure hoard to me!"[NEWLINE]- letter sent from a Lanun trader</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOLEMAN_SACRED_CAVERN_STRATEGY</Tag>
+		<English>The Kusekh Sacred Cavern provides bonus health and culture to a city, as well as bonus XP to any disciple units you train. It is also required to build their unique hero, Mondrinth the Fang Dragon, and their unique unit, Dredgers.</English>
+		<French>The Kusekh Sacred Cavern provides bonus health and culture to a city, as well as bonus XP to any disciple units you train. It is also required to build their unique hero, Mondrinth the Fang Dragon, and their unique unit, Dredgers.</French>
+		<German>The Kusekh Sacred Cavern provides bonus health and culture to a city, as well as bonus XP to any disciple units you train. It is also required to build their unique hero, Mondrinth the Fang Dragon, and their unique unit, Dredgers.</German>
+		<Italian>The Kusekh Sacred Cavern provides bonus health and culture to a city, as well as bonus XP to any disciple units you train. It is also required to build their unique hero, Mondrinth the Fang Dragon, and their unique unit, Dredgers.</Italian>
+		<Spanish>The Kusekh Sacred Cavern provides bonus health and culture to a city, as well as bonus XP to any disciple units you train. It is also required to build their unique hero, Mondrinth the Fang Dragon, and their unique unit, Dredgers.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOLEMAN_SECRET_TUNNEL</Tag>
+		<English>Secret Tunnels</English>
+		<French>Secret Tunnels</French>
+		<German>Secret Tunnels</German>
+		<Italian>Secret Tunnels</Italian>
+		<Spanish>Secret Tunnels</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOLEMAN_SECRET_TUNNEL_STRATEGY</Tag>
+		<English>Secret Tunnels produce commerce based on the surrounding Molerun of a city while giving a small bonus to defense.</English>
+		<French>Secret Tunnels produce commerce based on the surrounding Molerun of a city while giving a small bonus to defense.</French>
+		<German>Secret Tunnels produce commerce based on the surrounding Molerun of a city while giving a small bonus to defense.</German>
+		<Italian>Secret Tunnels produce commerce based on the surrounding Molerun of a city while giving a small bonus to defense.</Italian>
+		<Spanish>Secret Tunnels produce commerce based on the surrounding Molerun of a city while giving a small bonus to defense.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOLEMAN_SECRET_TUNNEL_HELP</Tag>
+		<English>[ICON_BULLET]+1 [ICON_COMMERCE] on tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</English>
+		<French>[ICON_BULLET]+1 [ICON_COMMERCE] on tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</French>
+		<German>[ICON_BULLET]+1 [ICON_COMMERCE] on tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</German>
+		<Italian>[ICON_BULLET]+1 [ICON_COMMERCE] on tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</Italian>
+		<Spanish>[ICON_BULLET]+1 [ICON_COMMERCE] on tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOLEMAN_SECRET_TUNNEL_PEDIA</Tag>
+		<English>May contain bards.</English>
+		<French>May contain bards.</French>
+		<German>May contain bards.</German>
+		<Italian>May contain bards.</Italian>
+		<Spanish>May contain bards.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOLEMAN_TUNNELS_STRATEGY</Tag>
+		<English>Tunnels make up the backbone of Kusekh city infrastructure, allowing units to be immediately transported between cities and their [LINK=IMPROVEMENT_MOLEMAN_TUNNEL]Surface Tunnels[\LINK]. Tunnels will also connect a city to the Kusekh capital without the need for roads.</English>
+		<French>Tunnels make up the backbone of Kusekh city infrastructure, allowing units to be immediately transported between cities and their [LINK=IMPROVEMENT_MOLEMAN_TUNNEL]Surface Tunnels[\LINK]. Tunnels will also connect a city to the Kusekh capital without the need for roads.</French>
+		<German>Tunnels make up the backbone of Kusekh city infrastructure, allowing units to be immediately transported between cities and their [LINK=IMPROVEMENT_MOLEMAN_TUNNEL]Surface Tunnels[\LINK]. Tunnels will also connect a city to the Kusekh capital without the need for roads.</German>
+		<Italian>Tunnels make up the backbone of Kusekh city infrastructure, allowing units to be immediately transported between cities and their [LINK=IMPROVEMENT_MOLEMAN_TUNNEL]Surface Tunnels[\LINK]. Tunnels will also connect a city to the Kusekh capital without the need for roads.</Italian>
+		<Spanish>Tunnels make up the backbone of Kusekh city infrastructure, allowing units to be immediately transported between cities and their [LINK=IMPROVEMENT_MOLEMAN_TUNNEL]Surface Tunnels[\LINK]. Tunnels will also connect a city to the Kusekh capital without the need for roads.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOLEMAN_UNDERMINE</Tag>
+		<English>Undermine</English>
+		<French>Undermine</French>
+		<German>Undermine</German>
+		<Italian>Undermine</Italian>
+		<Spanish>Undermine</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOLEMAN_UNDERMINE_STRATEGY</Tag>
+		<English>Undermines produce extra production based on the surrounding Molerun of a city.</English>
+		<French>Undermines produce extra production based on the surrounding Molerun of a city.</French>
+		<German>Undermines produce extra production based on the surrounding Molerun of a city.</German>
+		<Italian>Undermines produce extra production based on the surrounding Molerun of a city.</Italian>
+		<Spanish>Undermines produce extra production based on the surrounding Molerun of a city.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOLEMAN_UNDERMINE_HELP</Tag>
+		<English>[ICON_BULLET]+1 [ICON_PRODUCTION] on tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</English>
+		<French>[ICON_BULLET]+1 [ICON_PRODUCTION] on tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</French>
+		<German>[ICON_BULLET]+1 [ICON_PRODUCTION] on tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</German>
+		<Italian>[ICON_BULLET]+1 [ICON_PRODUCTION] on tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</Italian>
+		<Spanish>[ICON_BULLET]+1 [ICON_PRODUCTION] on tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOLEMAN_UNDERMINE_PEDIA</Tag>
+		<English>"-Okay, so this lad, Votrur, has this uncanny ability to predict where a vein of ore will be, down to the centimeter. If he says we'll find iron twenty meters to the south, we mine twenty meters to the south![NEWLINE][NEWLINE]The only time he's been wrong - and I use "wrong" loosely" - is that time he said we'd find mithril 40 meters to the west of the Rulvir Branch. We knew that crossed over to mole territory, but it was mithril, so we didn't care too much about hurting the bramblenoses' feelings.[NEWLINE][NEWLINE]About 20 meters in we break into a mole mine! And it wasn't one of those cutesy little tunnels they like to dig, it was MASSIVE! I mean, I've been to the mines in the mountainhomes, and I swear that place could measure up to some of them![NEWLINE][NEWLINE]And you know what Votrur said? He said we should try digging down west for 20 more meters! Can you believe it! As if we weren't in the middle of a giant mole mine![NEWLINE][NEWLINE]I don't think Votrur has ever tried to predict a mithril vein since then! Though you could-[NEWLINE][NEWLINE]Huh? Oh, yeah, the moles saw us! I think it caused some sort of incident up above with the overseers, but that's not important. What IS important is my punchline, which is that you could say Votrur-"</English>
+		<French>"-Okay, so this lad, Votrur, has this uncanny ability to predict where a vein of ore will be, down to the centimeter. If he says we'll find iron twenty meters to the south, we mine twenty meters to the south![NEWLINE][NEWLINE]The only time he's been wrong - and I use "wrong" loosely" - is that time he said we'd find mithril 40 meters to the west of the Rulvir Branch. We knew that crossed over to mole territory, but it was mithril, so we didn't care too much about hurting the bramblenoses' feelings.[NEWLINE][NEWLINE]About 20 meters in we break into a mole mine! And it wasn't one of those cutesy little tunnels they like to dig, it was MASSIVE! I mean, I've been to the mines in the mountainhomes, and I swear that place could measure up to some of them![NEWLINE][NEWLINE]And you know what Votrur said? He said we should try digging down west for 20 more meters! Can you believe it! As if we weren't in the middle of a giant mole mine![NEWLINE][NEWLINE]I don't think Votrur has ever tried to predict a mithril vein since then! Though you could-[NEWLINE][NEWLINE]Huh? Oh, yeah, the moles saw us! I think it caused some sort of incident up above with the overseers, but that's not important. What IS important is my punchline, which is that you could say Votrur-"</French>
+		<German>"-Okay, so this lad, Votrur, has this uncanny ability to predict where a vein of ore will be, down to the centimeter. If he says we'll find iron twenty meters to the south, we mine twenty meters to the south![NEWLINE][NEWLINE]The only time he's been wrong - and I use "wrong" loosely" - is that time he said we'd find mithril 40 meters to the west of the Rulvir Branch. We knew that crossed over to mole territory, but it was mithril, so we didn't care too much about hurting the bramblenoses' feelings.[NEWLINE][NEWLINE]About 20 meters in we break into a mole mine! And it wasn't one of those cutesy little tunnels they like to dig, it was MASSIVE! I mean, I've been to the mines in the mountainhomes, and I swear that place could measure up to some of them![NEWLINE][NEWLINE]And you know what Votrur said? He said we should try digging down west for 20 more meters! Can you believe it! As if we weren't in the middle of a giant mole mine![NEWLINE][NEWLINE]I don't think Votrur has ever tried to predict a mithril vein since then! Though you could-[NEWLINE][NEWLINE]Huh? Oh, yeah, the moles saw us! I think it caused some sort of incident up above with the overseers, but that's not important. What IS important is my punchline, which is that you could say Votrur-"</German>
+		<Italian>"-Okay, so this lad, Votrur, has this uncanny ability to predict where a vein of ore will be, down to the centimeter. If he says we'll find iron twenty meters to the south, we mine twenty meters to the south![NEWLINE][NEWLINE]The only time he's been wrong - and I use "wrong" loosely" - is that time he said we'd find mithril 40 meters to the west of the Rulvir Branch. We knew that crossed over to mole territory, but it was mithril, so we didn't care too much about hurting the bramblenoses' feelings.[NEWLINE][NEWLINE]About 20 meters in we break into a mole mine! And it wasn't one of those cutesy little tunnels they like to dig, it was MASSIVE! I mean, I've been to the mines in the mountainhomes, and I swear that place could measure up to some of them![NEWLINE][NEWLINE]And you know what Votrur said? He said we should try digging down west for 20 more meters! Can you believe it! As if we weren't in the middle of a giant mole mine![NEWLINE][NEWLINE]I don't think Votrur has ever tried to predict a mithril vein since then! Though you could-[NEWLINE][NEWLINE]Huh? Oh, yeah, the moles saw us! I think it caused some sort of incident up above with the overseers, but that's not important. What IS important is my punchline, which is that you could say Votrur-"</Italian>
+		<Spanish>"-Okay, so this lad, Votrur, has this uncanny ability to predict where a vein of ore will be, down to the centimeter. If he says we'll find iron twenty meters to the south, we mine twenty meters to the south![NEWLINE][NEWLINE]The only time he's been wrong - and I use "wrong" loosely" - is that time he said we'd find mithril 40 meters to the west of the Rulvir Branch. We knew that crossed over to mole territory, but it was mithril, so we didn't care too much about hurting the bramblenoses' feelings.[NEWLINE][NEWLINE]About 20 meters in we break into a mole mine! And it wasn't one of those cutesy little tunnels they like to dig, it was MASSIVE! I mean, I've been to the mines in the mountainhomes, and I swear that place could measure up to some of them![NEWLINE][NEWLINE]And you know what Votrur said? He said we should try digging down west for 20 more meters! Can you believe it! As if we weren't in the middle of a giant mole mine![NEWLINE][NEWLINE]I don't think Votrur has ever tried to predict a mithril vein since then! Though you could-[NEWLINE][NEWLINE]Huh? Oh, yeah, the moles saw us! I think it caused some sort of incident up above with the overseers, but that's not important. What IS important is my punchline, which is that you could say Votrur-"</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOLEMAN_BURROWS</Tag>
+		<English>Deep Burrows</English>
+		<French>Deep Burrows</French>
+		<German>Deep Burrows</German>
+		<Italian>Deep Burrows</Italian>
+		<Spanish>Deep Burrows</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOLEMAN_BURROWS_PEDIA</Tag>
+		<English>"We smelled it far before we reached it. When we arrived at its entrance, the smell was so pungent that some of my men broke ranks to puke and gasp for air. I can't even describe the smell other than it was awful enough to make me wonder if the molemen had begun dabbling in something worse than necromancy.[NEWLINE]The burrow itself was just another hole in the ground, though much larger than what we saw in the city. I waited for our cleric to finish puking before ordering some light, then steeled myself to march in.[NEWLINE]That's when we all heard a terrible roar come from inside."[NEWLINE]-Bannor commander</English>
+		<French>"We smelled it far before we reached it. When we arrived at its entrance, the smell was so pungent that some of my men broke ranks to puke and gasp for air. I can't even describe the smell other than it was awful enough to make me wonder if the molemen had begun dabbling in something worse than necromancy.[NEWLINE]The burrow itself was just another hole in the ground, though much larger than what we saw in the city. I waited for our cleric to finish puking before ordering some light, then steeled myself to march in.[NEWLINE]That's when we all heard a terrible roar come from inside."[NEWLINE]-Bannor commander</French>
+		<German>"We smelled it far before we reached it. When we arrived at its entrance, the smell was so pungent that some of my men broke ranks to puke and gasp for air. I can't even describe the smell other than it was awful enough to make me wonder if the molemen had begun dabbling in something worse than necromancy.[NEWLINE]The burrow itself was just another hole in the ground, though much larger than what we saw in the city. I waited for our cleric to finish puking before ordering some light, then steeled myself to march in.[NEWLINE]That's when we all heard a terrible roar come from inside."[NEWLINE]-Bannor commander</German>
+		<Italian>"We smelled it far before we reached it. When we arrived at its entrance, the smell was so pungent that some of my men broke ranks to puke and gasp for air. I can't even describe the smell other than it was awful enough to make me wonder if the molemen had begun dabbling in something worse than necromancy.[NEWLINE]The burrow itself was just another hole in the ground, though much larger than what we saw in the city. I waited for our cleric to finish puking before ordering some light, then steeled myself to march in.[NEWLINE]That's when we all heard a terrible roar come from inside."[NEWLINE]-Bannor commander</Italian>
+		<Spanish>"We smelled it far before we reached it. When we arrived at its entrance, the smell was so pungent that some of my men broke ranks to puke and gasp for air. I can't even describe the smell other than it was awful enough to make me wonder if the molemen had begun dabbling in something worse than necromancy.[NEWLINE]The burrow itself was just another hole in the ground, though much larger than what we saw in the city. I waited for our cleric to finish puking before ordering some light, then steeled myself to march in.[NEWLINE]That's when we all heard a terrible roar come from inside."[NEWLINE]-Bannor commander</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOLEMAN_BURROWS_STRATEGY</Tag>
+		<English>Deep Burrows allow you to build the Kusekh's unique replacements for mounted units.</English>
+		<French>Deep Burrows allow you to build the Kusekh's unique replacements for mounted units.</French>
+		<German>Deep Burrows allow you to build the Kusekh's unique replacements for mounted units.</German>
+		<Italian>Deep Burrows allow you to build the Kusekh's unique replacements for mounted units.</Italian>
+		<Spanish>Deep Burrows allow you to build the Kusekh's unique replacements for mounted units.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOLEMAN_LARDER</Tag>
+		<English>Larder</English>
+		<French>Larder</French>
+		<German>Larder</German>
+		<Italian>Larder</Italian>
+		<Spanish>Larder</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOLEMAN_LARDER_HELP</Tag>
+		<English>[ICON_BULLET]+1 [ICON_FOOD] on tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</English>
+		<French>[ICON_BULLET]+1 [ICON_FOOD] on tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</French>
+		<German>[ICON_BULLET]+1 [ICON_FOOD] on tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</German>
+		<Italian>[ICON_BULLET]+1 [ICON_FOOD] on tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</Italian>
+		<Spanish>[ICON_BULLET]+1 [ICON_FOOD] on tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOLEMAN_LARDER_STRATEGY</Tag>
+		<English>The Kusekh Larder comes with all of the benefits of a normal Granary, but also adds one extra Food to nearby tiles that have Molerun.</English>
+		<French>The Kusekh Larder comes with all of the benefits of a normal Granary, but also adds one extra Food to nearby tiles that have Molerun.</French>
+		<German>The Kusekh Larder comes with all of the benefits of a normal Granary, but also adds one extra Food to nearby tiles that have Molerun.</German>
+		<Italian>The Kusekh Larder comes with all of the benefits of a normal Granary, but also adds one extra Food to nearby tiles that have Molerun.</Italian>
+		<Spanish>The Kusekh Larder comes with all of the benefits of a normal Granary, but also adds one extra Food to nearby tiles that have Molerun.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOLEMAN_WORM_TRAP</Tag>
+		<English>Worm Trap</English>
+		<French>Worm Trap</French>
+		<German>Worm Trap</German>
+		<Italian>Worm Trap</Italian>
+		<Spanish>Worm Trap</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOLEMAN_WORM_TRAP_STRATEGY</Tag>
+		<English>The Kusekh Worm Trap adds extra defense to a city, both through the bonus defense it gives and through the [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] it creates.</English>
+		<French>The Kusekh Worm Trap adds extra defense to a city, both through the bonus defense it gives and through the [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] it creates.</French>
+		<German>The Kusekh Worm Trap adds extra defense to a city, both through the bonus defense it gives and through the [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] it creates.</German>
+		<Italian>The Kusekh Worm Trap adds extra defense to a city, both through the bonus defense it gives and through the [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] it creates.</Italian>
+		<Spanish>The Kusekh Worm Trap adds extra defense to a city, both through the bonus defense it gives and through the [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] it creates.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOLEMAN_WORM_TRAP_PEDIA</Tag>
+		<English>"You'll know you've entered mole territory by the clouds of dust everywhere. Keep close to each other and keep an eye out stirring ground, or else you might start sinking into the earth."[NEWLINE]-Bannor commander</English>
+		<French>"You'll know you've entered mole territory by the clouds of dust everywhere. Keep close to each other and keep an eye out stirring ground, or else you might start sinking into the earth."[NEWLINE]-Bannor commander</French>
+		<German>"You'll know you've entered mole territory by the clouds of dust everywhere. Keep close to each other and keep an eye out stirring ground, or else you might start sinking into the earth."[NEWLINE]-Bannor commander</German>
+		<Italian>"You'll know you've entered mole territory by the clouds of dust everywhere. Keep close to each other and keep an eye out stirring ground, or else you might start sinking into the earth."[NEWLINE]-Bannor commander</Italian>
+		<Spanish>"You'll know you've entered mole territory by the clouds of dust everywhere. Keep close to each other and keep an eye out stirring ground, or else you might start sinking into the earth."[NEWLINE]-Bannor commander</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CAGE_MOLEMAN</Tag>
+		<English>Moleman Cage</English>
+		<French>Moleman Cage</French>
+		<German>Moleman Cage</German>
+		<Italian>Moleman Cage</Italian>
+		<Spanish>Moleman Cage</Spanish>
+	</TEXT>
+			<!-- Moleman improvement Text -->
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_MOLEMAN_TUNNEL</Tag>
+		<English>Surface Tunnel</English>
+		<French>Surface Tunnel</French>
+		<German>Surface Tunnel</German>
+		<Italian>Surface Tunnel</Italian>
+		<Spanish>Surface Tunnel</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_MOLEMAN_TUNNEL_STRATEGY</Tag>
+		<English>Surface Tunnels sacrifice the defensive buildup of a regular Fort improvement for the ability to act as a transport relay for the Kusekh. Any molekin unit that enters a Surface Tunnel receives [LINK=PROMOTION_MOLEMAN_TUNNEL_SUPPORT]Tunnel Access[\LINK], allowing them to teleport for a short distance. Additionally, Surface Tunnels give you access to the same resources that Mines do, and have a small chance to discover new ones.</English>
+		<French>Surface Tunnels sacrifice the defensive buildup of a regular Fort improvement for the ability to act as a transport relay for the Kusekh. Any molekin unit that enters a Surface Tunnel receives [LINK=PROMOTION_MOLEMAN_TUNNEL_SUPPORT]Tunnel Access[\LINK], allowing them to teleport for a short distance. Additionally, Surface Tunnels give you access to the same resources that Mines do, and have a small chance to discover new ones.</French>
+		<German>Surface Tunnels sacrifice the defensive buildup of a regular Fort improvement for the ability to act as a transport relay for the Kusekh. Any molekin unit that enters a Surface Tunnel receives [LINK=PROMOTION_MOLEMAN_TUNNEL_SUPPORT]Tunnel Access[\LINK], allowing them to teleport for a short distance. Additionally, Surface Tunnels give you access to the same resources that Mines do, and have a small chance to discover new ones.</German>
+		<Italian>Surface Tunnels sacrifice the defensive buildup of a regular Fort improvement for the ability to act as a transport relay for the Kusekh. Any molekin unit that enters a Surface Tunnel receives [LINK=PROMOTION_MOLEMAN_TUNNEL_SUPPORT]Tunnel Access[\LINK], allowing them to teleport for a short distance. Additionally, Surface Tunnels give you access to the same resources that Mines do, and have a small chance to discover new ones.</Italian>
+		<Spanish>Surface Tunnels sacrifice the defensive buildup of a regular Fort improvement for the ability to act as a transport relay for the Kusekh. Any molekin unit that enters a Surface Tunnel receives [LINK=PROMOTION_MOLEMAN_TUNNEL_SUPPORT]Tunnel Access[\LINK], allowing them to teleport for a short distance. Additionally, Surface Tunnels give you access to the same resources that Mines do, and have a small chance to discover new ones.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_MOLEMAN_TUNNEL_HELP</Tag>
+		<English>[ICON_BULLET]Gives [LINK=PROMOTION_MOLEMAN_TUNNEL_SUPPORT]Tunnel Access[\LINK] to [LINK=PROMOTION_MOLEMAN]Molekin[\LINK] units</English>
+		<French>[ICON_BULLET]Gives [LINK=PROMOTION_MOLEMAN_TUNNEL_SUPPORT]Tunnel Access[\LINK] to [LINK=PROMOTION_MOLEMAN]Molekin[\LINK] units</French>
+		<German>[ICON_BULLET]Gives [LINK=PROMOTION_MOLEMAN_TUNNEL_SUPPORT]Tunnel Access[\LINK] to [LINK=PROMOTION_MOLEMAN]Molekin[\LINK] units</German>
+		<Italian>[ICON_BULLET]Gives [LINK=PROMOTION_MOLEMAN_TUNNEL_SUPPORT]Tunnel Access[\LINK] to [LINK=PROMOTION_MOLEMAN]Molekin[\LINK] units</Italian>
+		<Spanish>[ICON_BULLET]Gives [LINK=PROMOTION_MOLEMAN_TUNNEL_SUPPORT]Tunnel Access[\LINK] to [LINK=PROMOTION_MOLEMAN]Molekin[\LINK] units</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_MOLEMAN_SINKHOLES_STRATEGY</Tag>
+		<English>Sinkholes act as a roadbump for any mobile units that may enter the Kusekh's territory, spreading [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] to the surrounding tiles. Sinkholes, similarly to Surface Tunnels, double as Mines.</English>
+		<French>Sinkholes act as a roadbump for any mobile units that may enter the Kusekh's territory, spreading [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] to the surrounding tiles. Sinkholes, similarly to Surface Tunnels, double as Mines.</French>
+		<German>Sinkholes act as a roadbump for any mobile units that may enter the Kusekh's territory, spreading [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] to the surrounding tiles. Sinkholes, similarly to Surface Tunnels, double as Mines.</German>
+		<Italian>Sinkholes act as a roadbump for any mobile units that may enter the Kusekh's territory, spreading [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] to the surrounding tiles. Sinkholes, similarly to Surface Tunnels, double as Mines.</Italian>
+		<Spanish>Sinkholes act as a roadbump for any mobile units that may enter the Kusekh's territory, spreading [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] to the surrounding tiles. Sinkholes, similarly to Surface Tunnels, double as Mines.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_SINKHOLE_HELP</Tag>
+		<English>[ICON_BULLET]Spreads [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK], which gives a [LINK=PROMOTION_MOLEMAN_SINKHOLE_MALUS]Molerun Malus[\LINK] to non-[LINK=PROMOTION_MOLEMAN]Molekin[\LINK] units within your borders</English>
+		<French>[ICON_BULLET]Spreads [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK], which gives a [LINK=PROMOTION_MOLEMAN_SINKHOLE_MALUS]Molerun Malus[\LINK] to non-[LINK=PROMOTION_MOLEMAN]Molekin[\LINK] units within your borders</French>
+		<German>[ICON_BULLET]Spreads [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK], which gives a [LINK=PROMOTION_MOLEMAN_SINKHOLE_MALUS]Molerun Malus[\LINK] to non-[LINK=PROMOTION_MOLEMAN]Molekin[\LINK] units within your borders</German>
+		<Italian>[ICON_BULLET]Spreads [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK], which gives a [LINK=PROMOTION_MOLEMAN_SINKHOLE_MALUS]Molerun Malus[\LINK] to non-[LINK=PROMOTION_MOLEMAN]Molekin[\LINK] units within your borders</Italian>
+		<Spanish>[ICON_BULLET]Spreads [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK], which gives a [LINK=PROMOTION_MOLEMAN_SINKHOLE_MALUS]Molerun Malus[\LINK] to non-[LINK=PROMOTION_MOLEMAN]Molekin[\LINK] units within your borders</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_MOLEMAN_SINKHOLE</Tag>
+		<English>Sinkhole</English>
+		<French>Sinkhole</French>
+		<German>Sinkhole</German>
+		<Italian>Sinkhole</Italian>
+		<Spanish>Sinkhole</Spanish>
+	</TEXT>
+	<TEXT>
+		<!-- Moleman promotion Text -->
+		<Tag>TXT_KEY_PROMOTION_MOLEMAN</Tag>
+		<English>Molekin</English>
+		<French>Molekin</French>
+		<German>Molekin</German>
+		<Italian>Molekin</Italian>
+		<Spanish>Molekin</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MOLEMAN_BURROWER_1</Tag>
+		<English>Tunneler I</English>
+		<French>Tunneler I</French>
+		<German>Tunneler I</German>
+		<Italian>Tunneler I</Italian>
+		<Spanish>Tunneler I</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MOLEMAN_BURROWER_2</Tag>
+		<English>Tunneler II</English>
+		<French>Tunneler II</French>
+		<German>Tunneler II</German>
+		<Italian>Tunneler II</Italian>
+		<Spanish>Tunneler II</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MOLEMAN_BURROWER_3</Tag>
+		<English>Tunneler III</English>
+		<French>Tunneler III</French>
+		<German>Tunneler III</German>
+		<Italian>Tunneler III</Italian>
+		<Spanish>Tunneler III</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MOLEMAN_ENGORGER_AFFINITY</Tag>
+		<English>Deep Burrow Feed</English>
+		<French>Deep Burrow Feed</French>
+		<German>Deep Burrow Feed</German>
+		<Italian>Deep Burrow Feed</Italian>
+		<Spanish>Deep Burrow Feed</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MOLEMAN_ENGORGER_AFFINITY_HELP</Tag>
+		<English>[ICON_BULLET]+1 Strength from Cows, Sheep, Bison, and Pigs</English>
+		<French>[ICON_BULLET]+1 Strength from Cows, Sheep, Bison, and Pigs</French>
+		<German>[ICON_BULLET]+1 Strength from Cows, Sheep, Bison, and Pigs</German>
+		<Italian>[ICON_BULLET]+1 Strength from Cows, Sheep, Bison, and Pigs</Italian>
+		<Spanish>[ICON_BULLET]+1 Strength from Cows, Sheep, Bison, and Pigs</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MOLEMAN_STONECLAW_AFFINITY</Tag>
+		<English>Stoneclaw Grafting</English>
+		<French>Stoneclaw Grafting</French>
+		<German>Stoneclaw Grafting</German>
+		<Italian>Stoneclaw Grafting</Italian>
+		<Spanish>Stoneclaw Grafting</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MOLEMAN_STONECLAW_AFFINITY_HELP</Tag>
+		<English>[ICON_BULLET]+0.5 Attack Strength from Gems[NEWLINE][ICON_BULLET]+0.25 Defense Strength from Stone and Marble</English>
+		<French>[ICON_BULLET]+0.5 Attack Strength from Gems[NEWLINE][ICON_BULLET]+0.25 Defense Strength from Stone and Marble</French>
+		<German>[ICON_BULLET]+0.5 Attack Strength from Gems[NEWLINE][ICON_BULLET]+0.25 Defense Strength from Stone and Marble</German>
+		<Italian>[ICON_BULLET]+0.5 Attack Strength from Gems[NEWLINE][ICON_BULLET]+0.25 Defense Strength from Stone and Marble</Italian>
+		<Spanish>[ICON_BULLET]+0.5 Attack Strength from Gems[NEWLINE][ICON_BULLET]+0.25 Defense Strength from Stone and Marble</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MOLEMAN_VARMIT</Tag>
+		<English>Varmit</English>
+		<French>Varmit</French>
+		<German>Varmit</German>
+		<Italian>Varmit</Italian>
+		<Spanish>Varmit</Spanish>
+	</TEXT>
+		<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MOLEMAN_TUNNEL_SUPPORT</Tag>
+		<English>Tunnel Access</English>
+		<French>Tunnel Access</French>
+		<German>Tunnel Access</German>
+		<Italian>Tunnel Access</Italian>
+		<Spanish>Tunnel Access</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MOLEMAN_SINKHOLE_MALUS</Tag>
+		<English>Molerun Malus</English>
+		<French>Molerun Malus</French>
+		<German>Molerun Malus</German>
+		<Italian>Molerun Malus</Italian>
+		<Spanish>Molerun Malus</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MOLEMAN_MOLERUN_PERCEPTION</Tag>
+		<English>Earthsense</English>
+		<French>Earthsense</French>
+		<German>Earthsense</German>
+		<Italian>Earthsense</Italian>
+		<Spanish>Earthsense</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>PROMOTION_MOLEMAN_MOLERUN_PERCEPTION_EFFECT</Tag>
+		<English>Active - Earthsense</English>
+		<French>Active - Earthsense</French>
+		<German>Active - Earthsense</German>
+		<Italian>Active - Earthsense</Italian>
+		<Spanish>Active - Earthsense</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MOLEMAN_MOLERUN_PERCEPTION_HELP</Tag>
+		<English>[ICON_BULLET]+2 Perception while on a tile with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK]</English>
+		<French>[ICON_BULLET]+2 Perception while on a tile with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK]</French>
+		<German>[ICON_BULLET]+2 Perception while on a tile with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK]</German>
+		<Italian>[ICON_BULLET]+2 Perception while on a tile with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK]</Italian>
+		<Spanish>[ICON_BULLET]+2 Perception while on a tile with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MOLEMAN_MOLERUN_STEALTH</Tag>
+		<English>Earthsneak</English>
+		<French>Earthsneak</French>
+		<German>Earthsneak</German>
+		<Italian>Earthsneak</Italian>
+		<Spanish>Earthsneak</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MOLEMAN_MOLERUN_STEALTH_EFFECT</Tag>
+		<English>Active - Earthsneak</English>
+		<French>Active - Earthsneak</French>
+		<German>Active - Earthsneak</German>
+		<Italian>Active - Earthsneak</Italian>
+		<Spanish>Active - Earthsneak</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MOLEMAN_MOLERUN_STEALTH_HELP</Tag>
+		<English>[ICON_BULLET]+1 Invisibility while on a tile with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK]</English>
+		<French>[ICON_BULLET]+1 Invisibility while on a tile with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK]</French>
+		<German>[ICON_BULLET]+1 Invisibility while on a tile with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK]</German>
+		<Italian>[ICON_BULLET]+1 Invisibility while on a tile with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK]</Italian>
+		<Spanish>[ICON_BULLET]+1 Invisibility while on a tile with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MOLEMAN_MOLERUN_DEFENSE</Tag>
+		<English>Quick Burrower</English>
+		<French>Quick Burrower</French>
+		<German>Quick Burrower</German>
+		<Italian>Quick Burrower</Italian>
+		<Spanish>Quick Burrower</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MOLEMAN_MOLERUN_DEFENSE_EFFECT</Tag>
+		<English>Active - Quick Burrower</English>
+		<French>Active - Quick Burrower</French>
+		<German>Active - Quick Burrower</German>
+		<Italian>Active - Quick Burrower</Italian>
+		<Spanish>Active - Quick Burrower</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MOLEMAN_MOLERUN_DEFENSE_HELP</Tag>
+		<English>[ICON_BULLET]+15% Withdrawal Chance while on a tile with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK]</English>
+		<French>[ICON_BULLET]+15% Withdrawal Chance while on a tile with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK]</French>
+		<German>[ICON_BULLET]+15% Withdrawal Chance while on a tile with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK]</German>
+		<Italian>[ICON_BULLET]+15% Withdrawal Chance while on a tile with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK]</Italian>
+		<Spanish>[ICON_BULLET]+15% Withdrawal Chance while on a tile with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MOLEMAN_MOLERUN_ATTACK</Tag>
+		<English>Tunnel Ambusher</English>
+		<French>Tunnel Ambusher</French>
+		<German>Tunnel Ambusher</German>
+		<Italian>Tunnel Ambusher</Italian>
+		<Spanish>Tunnel Ambusher</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MOLEMAN_MOLERUN_ATTACK_EFFECT</Tag>
+		<English>Active - Tunnel Ambusher</English>
+		<French>Active - Tunnel Ambusher</French>
+		<German>Active - Tunnel Ambusher</German>
+		<Italian>Active - Tunnel Ambusher</Italian>
+		<Spanish>Active - Tunnel Ambusher</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MOLEMAN_MOLERUN_ATTACK_HELP</Tag>
+		<English>[ICON_BULLET]+2 First Strikes while on a tile with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK]</English>
+		<French>[ICON_BULLET]+2 First Strikes while on a tile with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK]</French>
+		<German>[ICON_BULLET]+2 First Strikes while on a tile with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK]</German>
+		<Italian>[ICON_BULLET]+2 First Strikes while on a tile with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK]</Italian>
+		<Spanish>[ICON_BULLET]+2 First Strikes while on a tile with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MOLEMAN_EARTHSWIMMER</Tag>
+		<English>Earthswimmer</English>
+		<French>Earthswimmer</French>
+		<German>Earthswimmer</German>
+		<Italian>Earthswimmer</Italian>
+		<Spanish>Earthswimmer</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_EARTH_DRAGON_BITE</Tag>
+		<English>Fang Dragon Bite</English>
+		<French>Fang Dragon Bite</French>
+		<German>Fang Dragon Bite</German>
+		<Italian>Fang Dragon Bite</Italian>
+		<Spanish>Fang Dragon Bite</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MAGNETIC_FIELD</Tag>
+		<English>Magnetic Field</English>
+		<French>Magnetic Field</French>
+		<German>Magnetic Field</German>
+		<Italian>Magnetic Field</Italian>
+		<Spanish>Magnetic Field</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_BREATH_REPULSE_METAL</Tag>
+		<English>Repulse Metal</English>
+		<French>Repulse Metal</French>
+		<German>Repulse Metal</German>
+		<Italian>Repulse Metal</Italian>
+		<Spanish>Repulse Metal</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MOLEMEN_DESC</Tag>
+		<English>Kusekh</English>
+		<French>Kusekh</French>
+		<German>Kusekh</German>
+		<Italian>Kusekh</Italian>
+		<Spanish>Kusekh</Spanish>
+	</TEXT>
+	<TEXT>
+		<!-- Moleman Civ Text -->
+		<Tag>TXT_KEY_CIV_MOLEMEN_PEDIA</Tag>
+		<English>Of the beastmen that populate Erebus, the molemen were late arrivals, having been created by a circle of mages during the latter days of the Patrian Empire. Using a specialized combination of life and body rituals, their creators imbibed the molemen's bodies with the ability to physically morph into specialized niches through the repeated use of spells and constant repetition of tasks. While serving their Patrian masters, the molemen quickly proved to be excellent miners, excavators, and masons.[NEWLINE][NEWLINE]The fall of the Patrian Empire came before the molemen could spread across Erebus. Warfare and chaos struck down their masters, forcing them to flee into the mines and quarries they had dug. There they would hide, waiting out the rest of the civil war under the flames of social collapse.[NEWLINE][NEWLINE]Soon after the Age of Ice began. The longer winters and endless snows would force many on the surface to seek shelter underground. Borderline-feral by this time, the molemen proved no match for the more organized arrivals and would be pushed further underground, into caves and tunnels.[NEWLINE][NEWLINE]This cycle of downwards migration, encroachment, and fleeing continued as the Age of Ice worsened for those on the surface, until the molemen fled so deep into the underdark that none dared to pursue.[NEWLINE][NEWLINE]In this darkness is where what would become known as Kusekh society formed. Packs and bands became proper tribes. Settlements formed and their numbers grew. New mines were dug, disparate caverns were connected by intricate tunnel networks, and, for a time, it seemed as if the underdark would prove to be a stable home.[NEWLINE][NEWLINE]It wouldn't be until near the end of the Age of Ice that the Kusekh stumbled upon the shadow dragons. It started as a series of disappearances on the periphery, with scouts failing to return to their villages. Then the search parties disappeared. Then entire villages. Panic spread as rumors of an encroachment by a great dragon took root within Kusekh society.[NEWLINE][NEWLINE]Either out of hubris or desperation, the leaders of the Kusekh assembled an army to face this new threat. Only a handful of warriors returned, telling a horror story of not one, but dozens of shadow dragons so large they filled caverns and tunnels and so eager to gorge upon molemen that they twisted and climbed over each other to reach them.[NEWLINE][NEWLINE]And so again they fled, this time upwards, hunted and pursued as they climbed higher and higher.[NEWLINE][NEWLINE]With Mulcarn dead and the ice thawing, the first molemen breach the surface for the first time since the Age of Magic.</English>
+		<French>Of the beastmen that populate Erebus, the molemen were late arrivals, having been created by a circle of mages during the latter days of the Patrian Empire. Using a specialized combination of life and body rituals, their creators imbibed the molemen's bodies with the ability to physically morph into specialized niches through the repeated use of spells and constant repetition of tasks. While serving their Patrian masters, the molemen quickly proved to be excellent miners, excavators, and masons.[NEWLINE][NEWLINE]The fall of the Patrian Empire came before the molemen could spread across Erebus. Warfare and chaos struck down their masters, forcing them to flee into the mines and quarries they had dug. There they would hide, waiting out the rest of the civil war under the flames of social collapse.[NEWLINE][NEWLINE]Soon after the Age of Ice began. The longer winters and endless snows would force many on the surface to seek shelter underground. Borderline-feral by this time, the molemen proved no match for the more organized arrivals and would be pushed further underground, into caves and tunnels.[NEWLINE][NEWLINE]This cycle of downwards migration, encroachment, and fleeing continued as the Age of Ice worsened for those on the surface, until the molemen fled so deep into the underdark that none dared to pursue.[NEWLINE][NEWLINE]In this darkness is where what would become known as Kusekh society formed. Packs and bands became proper tribes. Settlements formed and their numbers grew. New mines were dug, disparate caverns were connected by intricate tunnel networks, and, for a time, it seemed as if the underdark would prove to be a stable home.[NEWLINE][NEWLINE]It wouldn't be until near the end of the Age of Ice that the Kusekh stumbled upon the shadow dragons. It started as a series of disappearances on the periphery, with scouts failing to return to their villages. Then the search parties disappeared. Then entire villages. Panic spread as rumors of an encroachment by a great dragon took root within Kusekh society.[NEWLINE][NEWLINE]Either out of hubris or desperation, the leaders of the Kusekh assembled an army to face this new threat. Only a handful of warriors returned, telling a horror story of not one, but dozens of shadow dragons so large they filled caverns and tunnels and so eager to gorge upon molemen that they twisted and climbed over each other to reach them.[NEWLINE][NEWLINE]And so again they fled, this time upwards, hunted and pursued as they climbed higher and higher.[NEWLINE][NEWLINE]With Mulcarn dead and the ice thawing, the first molemen breach the surface for the first time since the Age of Magic.</French>
+		<German>Of the beastmen that populate Erebus, the molemen were late arrivals, having been created by a circle of mages during the latter days of the Patrian Empire. Using a specialized combination of life and body rituals, their creators imbibed the molemen's bodies with the ability to physically morph into specialized niches through the repeated use of spells and constant repetition of tasks. While serving their Patrian masters, the molemen quickly proved to be excellent miners, excavators, and masons.[NEWLINE][NEWLINE]The fall of the Patrian Empire came before the molemen could spread across Erebus. Warfare and chaos struck down their masters, forcing them to flee into the mines and quarries they had dug. There they would hide, waiting out the rest of the civil war under the flames of social collapse.[NEWLINE][NEWLINE]Soon after the Age of Ice began. The longer winters and endless snows would force many on the surface to seek shelter underground. Borderline-feral by this time, the molemen proved no match for the more organized arrivals and would be pushed further underground, into caves and tunnels.[NEWLINE][NEWLINE]This cycle of downwards migration, encroachment, and fleeing continued as the Age of Ice worsened for those on the surface, until the molemen fled so deep into the underdark that none dared to pursue.[NEWLINE][NEWLINE]In this darkness is where what would become known as Kusekh society formed. Packs and bands became proper tribes. Settlements formed and their numbers grew. New mines were dug, disparate caverns were connected by intricate tunnel networks, and, for a time, it seemed as if the underdark would prove to be a stable home.[NEWLINE][NEWLINE]It wouldn't be until near the end of the Age of Ice that the Kusekh stumbled upon the shadow dragons. It started as a series of disappearances on the periphery, with scouts failing to return to their villages. Then the search parties disappeared. Then entire villages. Panic spread as rumors of an encroachment by a great dragon took root within Kusekh society.[NEWLINE][NEWLINE]Either out of hubris or desperation, the leaders of the Kusekh assembled an army to face this new threat. Only a handful of warriors returned, telling a horror story of not one, but dozens of shadow dragons so large they filled caverns and tunnels and so eager to gorge upon molemen that they twisted and climbed over each other to reach them.[NEWLINE][NEWLINE]And so again they fled, this time upwards, hunted and pursued as they climbed higher and higher.[NEWLINE][NEWLINE]With Mulcarn dead and the ice thawing, the first molemen breach the surface for the first time since the Age of Magic.</German>
+		<Italian>Of the beastmen that populate Erebus, the molemen were late arrivals, having been created by a circle of mages during the latter days of the Patrian Empire. Using a specialized combination of life and body rituals, their creators imbibed the molemen's bodies with the ability to physically morph into specialized niches through the repeated use of spells and constant repetition of tasks. While serving their Patrian masters, the molemen quickly proved to be excellent miners, excavators, and masons.[NEWLINE][NEWLINE]The fall of the Patrian Empire came before the molemen could spread across Erebus. Warfare and chaos struck down their masters, forcing them to flee into the mines and quarries they had dug. There they would hide, waiting out the rest of the civil war under the flames of social collapse.[NEWLINE][NEWLINE]Soon after the Age of Ice began. The longer winters and endless snows would force many on the surface to seek shelter underground. Borderline-feral by this time, the molemen proved no match for the more organized arrivals and would be pushed further underground, into caves and tunnels.[NEWLINE][NEWLINE]This cycle of downwards migration, encroachment, and fleeing continued as the Age of Ice worsened for those on the surface, until the molemen fled so deep into the underdark that none dared to pursue.[NEWLINE][NEWLINE]In this darkness is where what would become known as Kusekh society formed. Packs and bands became proper tribes. Settlements formed and their numbers grew. New mines were dug, disparate caverns were connected by intricate tunnel networks, and, for a time, it seemed as if the underdark would prove to be a stable home.[NEWLINE][NEWLINE]It wouldn't be until near the end of the Age of Ice that the Kusekh stumbled upon the shadow dragons. It started as a series of disappearances on the periphery, with scouts failing to return to their villages. Then the search parties disappeared. Then entire villages. Panic spread as rumors of an encroachment by a great dragon took root within Kusekh society.[NEWLINE][NEWLINE]Either out of hubris or desperation, the leaders of the Kusekh assembled an army to face this new threat. Only a handful of warriors returned, telling a horror story of not one, but dozens of shadow dragons so large they filled caverns and tunnels and so eager to gorge upon molemen that they twisted and climbed over each other to reach them.[NEWLINE][NEWLINE]And so again they fled, this time upwards, hunted and pursued as they climbed higher and higher.[NEWLINE][NEWLINE]With Mulcarn dead and the ice thawing, the first molemen breach the surface for the first time since the Age of Magic.</Italian>
+		<Spanish>Of the beastmen that populate Erebus, the molemen were late arrivals, having been created by a circle of mages during the latter days of the Patrian Empire. Using a specialized combination of life and body rituals, their creators imbibed the molemen's bodies with the ability to physically morph into specialized niches through the repeated use of spells and constant repetition of tasks. While serving their Patrian masters, the molemen quickly proved to be excellent miners, excavators, and masons.[NEWLINE][NEWLINE]The fall of the Patrian Empire came before the molemen could spread across Erebus. Warfare and chaos struck down their masters, forcing them to flee into the mines and quarries they had dug. There they would hide, waiting out the rest of the civil war under the flames of social collapse.[NEWLINE][NEWLINE]Soon after the Age of Ice began. The longer winters and endless snows would force many on the surface to seek shelter underground. Borderline-feral by this time, the molemen proved no match for the more organized arrivals and would be pushed further underground, into caves and tunnels.[NEWLINE][NEWLINE]This cycle of downwards migration, encroachment, and fleeing continued as the Age of Ice worsened for those on the surface, until the molemen fled so deep into the underdark that none dared to pursue.[NEWLINE][NEWLINE]In this darkness is where what would become known as Kusekh society formed. Packs and bands became proper tribes. Settlements formed and their numbers grew. New mines were dug, disparate caverns were connected by intricate tunnel networks, and, for a time, it seemed as if the underdark would prove to be a stable home.[NEWLINE][NEWLINE]It wouldn't be until near the end of the Age of Ice that the Kusekh stumbled upon the shadow dragons. It started as a series of disappearances on the periphery, with scouts failing to return to their villages. Then the search parties disappeared. Then entire villages. Panic spread as rumors of an encroachment by a great dragon took root within Kusekh society.[NEWLINE][NEWLINE]Either out of hubris or desperation, the leaders of the Kusekh assembled an army to face this new threat. Only a handful of warriors returned, telling a horror story of not one, but dozens of shadow dragons so large they filled caverns and tunnels and so eager to gorge upon molemen that they twisted and climbed over each other to reach them.[NEWLINE][NEWLINE]And so again they fled, this time upwards, hunted and pursued as they climbed higher and higher.[NEWLINE][NEWLINE]With Mulcarn dead and the ice thawing, the first molemen breach the surface for the first time since the Age of Magic.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MOLEMEN_SHORT_DESC</Tag>
+		<English>Molemen</English>
+		<French>Molemen</French>
+		<German>Molemen</German>
+		<Italian>Molemen</Italian>
+		<Spanish>Molemen</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MOLEMEN_ADJECTIVE</Tag>
+		<English>Kusekh</English>
+		<French>Kusekh</French>
+		<German>Kusekh</German>
+		<Italian>Kusekh</Italian>
+		<Spanish>Kusekh</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MOLEMEN_STRATEGY</Tag>
+		<English>
+			The the Kusekh are sluggish on the surface, but make up for it through their unique infrastructure and line of promotions.
+			[H1]Infrastructure[\H1]
+			[NEWLINE][BOLD]Roads[\BOLD]: The Kusekh build a network of tunnels instead of roads. While slightly more expensive to build, they can only be used by molekin units, meaning enemy units will always traverse your tiles as if there were no roads built.
+			[NEWLINE][BOLD]Surface Tunnels[\BOLD]: The Kusekh trade the gradual evolution of Forts for Surface Tunnels, which act both as mines and relay points for your city units to immediately transport to. Any molekin unit that enters a tile with a Surface Tunnel gains the Tunnel Access promotion, which allows them to teleport for short distances.
+			[NEWLINE][BOLD]Sinkholes[\BOLD]: Additionally, the Kusekh can build Sinkholes. Like Surface Tunnels, they act as mines. More importantly though, they spread Molerun.
+			[NEWLINE][BOLD]Molerun[\BOLD]: Molerun spreads from Sinkholes and the unique Worm Trap building. Non-molekin units within your territory get a movement and defense malus when in a tile with Molerun, making it a natural defense against invasions. However, stacks that have heroes, flying units, or arcane units with earth magic will be immune to this effect.
+			[NEWLINE][BOLD]Buildings[\BOLD]: The Kusekh have several unique buildings that allow them to transport their units between cities, such as Dirt Tunnels. Additionally, they come with a few that interact with Molerun, either spreading it around the city or increasing a tile's yield.
+			[H1]Military[\H1]
+			[NEWLINE][BOLD]Promotions[\BOLD]: The molekin have several unique promotions they can gain at certain levels. The Tunneler promotions allow for teleportation, making up for the Kusekh's slower movement speed. Other promotions give unique benefits while a Kusekh unit is in a tile with Molerun.
+			[NEWLINE][BOLD]Recon[\BOLD]: The Kusekh's unique recon units start with Tunneler promotions, allowing them to move around the map more quickly.
+			[NEWLINE][BOLD]Mounted Units[\BOLD]: The Kusekh replaces mounted units, starting with Giant Moles. All mounted unit replacements start with the Tunneling promotion for better movement. Giant Moles can build tunnel roads, Surface Tunnels, and Sinkholes, letting  you build up your infrastructure. The Kusekh unlock them early with Animal Husbandry. Burrowers and Excavators serve as better workers than Giant Moles. Additionally, they serve as transports for your slower land units. Gorgers and Gourmands give up the ability to build improvements in favor of livestock affinity. The more livestock resources you have access to, the stronger they get.
+			[NEWLINE][BOLD]Others[\BOLD]: The Kusekh have other unique units they can unlock in the late-game. Stoneclaws replace champions and have stone, marble, and gem affinity. Once you build a Sacred Cavern, you have access to their powerful dragon hero unit.
+		</English>
+		<French>
+			The the Kusekh are sluggish on the surface, but make up for it through their unique infrastructure and line of promotions.
+			[H1]Infrastructure[\H1]
+			[NEWLINE][BOLD]Roads[\BOLD]: The Kusekh build a network of tunnels instead of roads. While slightly more expensive to build, they can only be used by molekin units, meaning enemy units will always traverse your tiles as if there were no roads built.
+			[NEWLINE][BOLD]Surface Tunnels[\BOLD]: The Kusekh trade the gradual evolution of Forts for Surface Tunnels, which act both as mines and relay points for your city units to immediately transport to. Any molekin unit that enters a tile with a Surface Tunnel gains the Tunnel Access promotion, which allows them to teleport for short distances.
+			[NEWLINE][BOLD]Sinkholes[\BOLD]: Additionally, the Kusekh can build Sinkholes. Like Surface Tunnels, they act as mines. More importantly though, they spread Molerun.
+			[NEWLINE][BOLD]Molerun[\BOLD]: Molerun spreads from Sinkholes and the unique Worm Trap building. Non-molekin units within your territory get a movement and defense malus when in a tile with Molerun, making it a natural defense against invasions. However, stacks that have heroes, flying units, or arcane units with earth magic will be immune to this effect.
+			[NEWLINE][BOLD]Buildings[\BOLD]: The Kusekh have several unique buildings that allow them to transport their units between cities, such as Dirt Tunnels. Additionally, they come with a few that interact with Molerun, either spreading it around the city or increasing a tile's yield.
+			[H1]Military[\H1]
+			[NEWLINE][BOLD]Promotions[\BOLD]: The molekin have several unique promotions they can gain at certain levels. The Tunneler promotions allow for teleportation, making up for the Kusekh's slower movement speed. Other promotions give unique benefits while a Kusekh unit is in a tile with Molerun.
+			[NEWLINE][BOLD]Recon[\BOLD]: The Kusekh's unique recon units start with Tunneler promotions, allowing them to move around the map more quickly.
+			[NEWLINE][BOLD]Mounted Units[\BOLD]: The Kusekh replaces mounted units, starting with Giant Moles. All mounted unit replacements start with the Tunneling promotion for better movement. Giant Moles can build tunnel roads, Surface Tunnels, and Sinkholes, letting  you build up your infrastructure. The Kusekh unlock them early with Animal Husbandry. Burrowers and Excavators serve as better workers than Giant Moles. Additionally, they serve as transports for your slower land units. Gorgers and Gourmands give up the ability to build improvements in favor of livestock affinity. The more livestock resources you have access to, the stronger they get.
+			[NEWLINE][BOLD]Others[\BOLD]: The Kusekh have other unique units they can unlock in the late-game. Stoneclaws replace champions and have stone, marble, and gem affinity. Once you build a Sacred Cavern, you have access to their powerful dragon hero unit.
+		</French>
+		<German>
+			The the Kusekh are sluggish on the surface, but make up for it through their unique infrastructure and line of promotions.
+			[H1]Infrastructure[\H1]
+			[NEWLINE][BOLD]Roads[\BOLD]: The Kusekh build a network of tunnels instead of roads. While slightly more expensive to build, they can only be used by molekin units, meaning enemy units will always traverse your tiles as if there were no roads built.
+			[NEWLINE][BOLD]Surface Tunnels[\BOLD]: The Kusekh trade the gradual evolution of Forts for Surface Tunnels, which act both as mines and relay points for your city units to immediately transport to. Any molekin unit that enters a tile with a Surface Tunnel gains the Tunnel Access promotion, which allows them to teleport for short distances.
+			[NEWLINE][BOLD]Sinkholes[\BOLD]: Additionally, the Kusekh can build Sinkholes. Like Surface Tunnels, they act as mines. More importantly though, they spread Molerun.
+			[NEWLINE][BOLD]Molerun[\BOLD]: Molerun spreads from Sinkholes and the unique Worm Trap building. Non-molekin units within your territory get a movement and defense malus when in a tile with Molerun, making it a natural defense against invasions. However, stacks that have heroes, flying units, or arcane units with earth magic will be immune to this effect.
+			[NEWLINE][BOLD]Buildings[\BOLD]: The Kusekh have several unique buildings that allow them to transport their units between cities, such as Dirt Tunnels. Additionally, they come with a few that interact with Molerun, either spreading it around the city or increasing a tile's yield.
+			[H1]Military[\H1]
+			[NEWLINE][BOLD]Promotions[\BOLD]: The molekin have several unique promotions they can gain at certain levels. The Tunneler promotions allow for teleportation, making up for the Kusekh's slower movement speed. Other promotions give unique benefits while a Kusekh unit is in a tile with Molerun.
+			[NEWLINE][BOLD]Recon[\BOLD]: The Kusekh's unique recon units start with Tunneler promotions, allowing them to move around the map more quickly.
+			[NEWLINE][BOLD]Mounted Units[\BOLD]: The Kusekh replaces mounted units, starting with Giant Moles. All mounted unit replacements start with the Tunneling promotion for better movement. Giant Moles can build tunnel roads, Surface Tunnels, and Sinkholes, letting  you build up your infrastructure. The Kusekh unlock them early with Animal Husbandry. Burrowers and Excavators serve as better workers than Giant Moles. Additionally, they serve as transports for your slower land units. Gorgers and Gourmands give up the ability to build improvements in favor of livestock affinity. The more livestock resources you have access to, the stronger they get.
+			[NEWLINE][BOLD]Others[\BOLD]: The Kusekh have other unique units they can unlock in the late-game. Stoneclaws replace champions and have stone, marble, and gem affinity. Once you build a Sacred Cavern, you have access to their powerful dragon hero unit.
+		</German>
+		<Italian>
+			The the Kusekh are sluggish on the surface, but make up for it through their unique infrastructure and line of promotions.
+			[H1]Infrastructure[\H1]
+			[NEWLINE][BOLD]Roads[\BOLD]: The Kusekh build a network of tunnels instead of roads. While slightly more expensive to build, they can only be used by molekin units, meaning enemy units will always traverse your tiles as if there were no roads built.
+			[NEWLINE][BOLD]Surface Tunnels[\BOLD]: The Kusekh trade the gradual evolution of Forts for Surface Tunnels, which act both as mines and relay points for your city units to immediately transport to. Any molekin unit that enters a tile with a Surface Tunnel gains the Tunnel Access promotion, which allows them to teleport for short distances.
+			[NEWLINE][BOLD]Sinkholes[\BOLD]: Additionally, the Kusekh can build Sinkholes. Like Surface Tunnels, they act as mines. More importantly though, they spread Molerun.
+			[NEWLINE][BOLD]Molerun[\BOLD]: Molerun spreads from Sinkholes and the unique Worm Trap building. Non-molekin units within your territory get a movement and defense malus when in a tile with Molerun, making it a natural defense against invasions. However, stacks that have heroes, flying units, or arcane units with earth magic will be immune to this effect.
+			[NEWLINE][BOLD]Buildings[\BOLD]: The Kusekh have several unique buildings that allow them to transport their units between cities, such as Dirt Tunnels. Additionally, they come with a few that interact with Molerun, either spreading it around the city or increasing a tile's yield.
+			[H1]Military[\H1]
+			[NEWLINE][BOLD]Promotions[\BOLD]: The molekin have several unique promotions they can gain at certain levels. The Tunneler promotions allow for teleportation, making up for the Kusekh's slower movement speed. Other promotions give unique benefits while a Kusekh unit is in a tile with Molerun.
+			[NEWLINE][BOLD]Recon[\BOLD]: The Kusekh's unique recon units start with Tunneler promotions, allowing them to move around the map more quickly.
+			[NEWLINE][BOLD]Mounted Units[\BOLD]: The Kusekh replaces mounted units, starting with Giant Moles. All mounted unit replacements start with the Tunneling promotion for better movement. Giant Moles can build tunnel roads, Surface Tunnels, and Sinkholes, letting  you build up your infrastructure. The Kusekh unlock them early with Animal Husbandry. Burrowers and Excavators serve as better workers than Giant Moles. Additionally, they serve as transports for your slower land units. Gorgers and Gourmands give up the ability to build improvements in favor of livestock affinity. The more livestock resources you have access to, the stronger they get.
+			[NEWLINE][BOLD]Others[\BOLD]: The Kusekh have other unique units they can unlock in the late-game. Stoneclaws replace champions and have stone, marble, and gem affinity. Once you build a Sacred Cavern, you have access to their powerful dragon hero unit.
+		</Italian>
+		<Spanish>
+			The the Kusekh are sluggish on the surface, but make up for it through their unique infrastructure and line of promotions.
+			[H1]Infrastructure[\H1]
+			[NEWLINE][BOLD]Roads[\BOLD]: The Kusekh build a network of tunnels instead of roads. While slightly more expensive to build, they can only be used by molekin units, meaning enemy units will always traverse your tiles as if there were no roads built.
+			[NEWLINE][BOLD]Surface Tunnels[\BOLD]: The Kusekh trade the gradual evolution of Forts for Surface Tunnels, which act both as mines and relay points for your city units to immediately transport to. Any molekin unit that enters a tile with a Surface Tunnel gains the Tunnel Access promotion, which allows them to teleport for short distances.
+			[NEWLINE][BOLD]Sinkholes[\BOLD]: Additionally, the Kusekh can build Sinkholes. Like Surface Tunnels, they act as mines. More importantly though, they spread Molerun.
+			[NEWLINE][BOLD]Molerun[\BOLD]: Molerun spreads from Sinkholes and the unique Worm Trap building. Non-molekin units within your territory get a movement and defense malus when in a tile with Molerun, making it a natural defense against invasions. However, stacks that have heroes, flying units, or arcane units with earth magic will be immune to this effect.
+			[NEWLINE][BOLD]Buildings[\BOLD]: The Kusekh have several unique buildings that allow them to transport their units between cities, such as Dirt Tunnels. Additionally, they come with a few that interact with Molerun, either spreading it around the city or increasing a tile's yield.
+			[H1]Military[\H1]
+			[NEWLINE][BOLD]Promotions[\BOLD]: The molekin have several unique promotions they can gain at certain levels. The Tunneler promotions allow for teleportation, making up for the Kusekh's slower movement speed. Other promotions give unique benefits while a Kusekh unit is in a tile with Molerun.
+			[NEWLINE][BOLD]Recon[\BOLD]: The Kusekh's unique recon units start with Tunneler promotions, allowing them to move around the map more quickly.
+			[NEWLINE][BOLD]Mounted Units[\BOLD]: The Kusekh replaces mounted units, starting with Giant Moles. All mounted unit replacements start with the Tunneling promotion for better movement. Giant Moles can build tunnel roads, Surface Tunnels, and Sinkholes, letting  you build up your infrastructure. The Kusekh unlock them early with Animal Husbandry. Burrowers and Excavators serve as better workers than Giant Moles. Additionally, they serve as transports for your slower land units. Gorgers and Gourmands give up the ability to build improvements in favor of livestock affinity. The more livestock resources you have access to, the stronger they get.
+			[NEWLINE][BOLD]Others[\BOLD]: The Kusekh have other unique units they can unlock in the late-game. Stoneclaws replace champions and have stone, marble, and gem affinity. Once you build a Sacred Cavern, you have access to their powerful dragon hero unit.
+		</Spanish>
+	</TEXT>
+	<!--moleman leader text-->
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MOLEMEN_LEADER_1</Tag>
+		<English>Mesyx the Elder</English>
+		<French>Mesyx the Elder</French>
+		<German>Mesyx the Elder</German>
+		<Italian>Mesyx the Elder</Italian>
+		<Spanish>Mesyx the Elder</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MOLEMEN_LEADER_1_PEDIA</Tag>
+		<English>Mesyx is a reluctant leader, one who would have preferred giving the burden to someone else rather than himself. Yet unlike many, he remembers the surface and the Patrians who made the first molekin.[NEWLINE]He remembers the metal armor they wore, crafted by the minerals he mined.[NEWLINE]He remembers the walls of stone they erected, stone that he himself had to claw from the ground.[NEWLINE]He remembers their faces and how different they were from his.[NEWLINE]He remembers their cruelty.[NEWLINE]And these memories of the surface world and their civilizations have brought him wisdom.[NEWLINE]While others squabbled and made fiefdoms out of caverns, he united tribes.[NEWLINE]While others attacked outsiders or fled, he made peace.[NEWLINE]While others dug deeper, he was cautious.[NEWLINE]And now the others are dead, and he remains.</English>
+		<French>Mesyx is a reluctant leader, one who would have preferred giving the burden to someone else rather than himself. Yet unlike many, he remembers the surface and the Patrians who made the first molekin.[NEWLINE]He remembers the metal armor they wore, crafted by the minerals he mined.[NEWLINE]He remembers the walls of stone they erected, stone that he himself had to claw from the ground.[NEWLINE]He remembers their faces and how different they were from his.[NEWLINE]He remembers their cruelty.[NEWLINE]And these memories of the surface world and their civilizations have brought him wisdom.[NEWLINE]While others squabbled and made fiefdoms out of caverns, he united tribes.[NEWLINE]While others attacked outsiders or fled, he made peace.[NEWLINE]While others dug deeper, he was cautious.[NEWLINE]And now the others are dead, and he remains.</French>
+		<German>Mesyx is a reluctant leader, one who would have preferred giving the burden to someone else rather than himself. Yet unlike many, he remembers the surface and the Patrians who made the first molekin.[NEWLINE]He remembers the metal armor they wore, crafted by the minerals he mined.[NEWLINE]He remembers the walls of stone they erected, stone that he himself had to claw from the ground.[NEWLINE]He remembers their faces and how different they were from his.[NEWLINE]He remembers their cruelty.[NEWLINE]And these memories of the surface world and their civilizations have brought him wisdom.[NEWLINE]While others squabbled and made fiefdoms out of caverns, he united tribes.[NEWLINE]While others attacked outsiders or fled, he made peace.[NEWLINE]While others dug deeper, he was cautious.[NEWLINE]And now the others are dead, and he remains.</German>
+		<Italian>Mesyx is a reluctant leader, one who would have preferred giving the burden to someone else rather than himself. Yet unlike many, he remembers the surface and the Patrians who made the first molekin.[NEWLINE]He remembers the metal armor they wore, crafted by the minerals he mined.[NEWLINE]He remembers the walls of stone they erected, stone that he himself had to claw from the ground.[NEWLINE]He remembers their faces and how different they were from his.[NEWLINE]He remembers their cruelty.[NEWLINE]And these memories of the surface world and their civilizations have brought him wisdom.[NEWLINE]While others squabbled and made fiefdoms out of caverns, he united tribes.[NEWLINE]While others attacked outsiders or fled, he made peace.[NEWLINE]While others dug deeper, he was cautious.[NEWLINE]And now the others are dead, and he remains.</Italian>
+		<Spanish>Mesyx is a reluctant leader, one who would have preferred giving the burden to someone else rather than himself. Yet unlike many, he remembers the surface and the Patrians who made the first molekin.[NEWLINE]He remembers the metal armor they wore, crafted by the minerals he mined.[NEWLINE]He remembers the walls of stone they erected, stone that he himself had to claw from the ground.[NEWLINE]He remembers their faces and how different they were from his.[NEWLINE]He remembers their cruelty.[NEWLINE]And these memories of the surface world and their civilizations have brought him wisdom.[NEWLINE]While others squabbled and made fiefdoms out of caverns, he united tribes.[NEWLINE]While others attacked outsiders or fled, he made peace.[NEWLINE]While others dug deeper, he was cautious.[NEWLINE]And now the others are dead, and he remains.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_DEFEATED_MOLEMAN_1</Tag>
+		<English>"We're being pushed back into the darkness. Soon enough, you will learn why we tried to flee to the surface."</English>
+		<French>"We're being pushed back into the darkness. Soon enough, you will learn why we tried to flee to the surface."</French>
+		<German>"We're being pushed back into the darkness. Soon enough, you will learn why we tried to flee to the surface."</German>
+		<Italian>"We're being pushed back into the darkness. Soon enough, you will learn why we tried to flee to the surface."</Italian>
+		<Spanish>"We're being pushed back into the darkness. Soon enough, you will learn why we tried to flee to the surface."</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MOLEMEN_LEADER_2</Tag>
+		<English>Skrylyx the Ambitious</English>
+		<French>Skrylyx the Ambitious</French>
+		<German>Skrylyx the Ambitious</German>
+		<Italian>Skrylyx the Ambitious</Italian>
+		<Spanish>Skrylyx the Ambitious</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MOLEMEN_LEADER_2_PEDIA</Tag>
+		<English>When their Patrian masters fell, they fled deep into their mines. When the dwarves dug into their mines, they fled deeper into caverns and tunnels.. When the lizardfolk, the humans, the beasts, and so many more sought shelter from the endless cold in their caves, they fled yet again, into the darkness of the underdark.[NEWLINE]All they seemed to do was flee. All it ever did was make Skrylyx more embittered.[NEWLINE]Eventually they fled too deep and came across monsters that had gestated in the darkness for centuries.[NEWLINE]His kin fled again. Skrylyx did not.[NEWLINE]Where they saw terror, Skrylyx saw power. He wanted this power, by any means necessary.[NEWLINE]And somewhere in the darkness, something answered his desires.</English>
+		<French>When their Patrian masters fell, they fled deep into their mines. When the dwarves dug into their mines, they fled deeper into caverns and tunnels.. When the lizardfolk, the humans, the beasts, and so many more sought shelter from the endless cold in their caves, they fled yet again, into the darkness of the underdark.[NEWLINE]All they seemed to do was flee. All it ever did was make Skrylyx more embittered.[NEWLINE]Eventually they fled too deep and came across monsters that had gestated in the darkness for centuries.[NEWLINE]His kin fled again. Skrylyx did not.[NEWLINE]Where they saw terror, Skrylyx saw power. He wanted this power, by any means necessary.[NEWLINE]And somewhere in the darkness, something answered his desires.</French>
+		<German>When their Patrian masters fell, they fled deep into their mines. When the dwarves dug into their mines, they fled deeper into caverns and tunnels.. When the lizardfolk, the humans, the beasts, and so many more sought shelter from the endless cold in their caves, they fled yet again, into the darkness of the underdark.[NEWLINE]All they seemed to do was flee. All it ever did was make Skrylyx more embittered.[NEWLINE]Eventually they fled too deep and came across monsters that had gestated in the darkness for centuries.[NEWLINE]His kin fled again. Skrylyx did not.[NEWLINE]Where they saw terror, Skrylyx saw power. He wanted this power, by any means necessary.[NEWLINE]And somewhere in the darkness, something answered his desires.</German>
+		<Italian>When their Patrian masters fell, they fled deep into their mines. When the dwarves dug into their mines, they fled deeper into caverns and tunnels.. When the lizardfolk, the humans, the beasts, and so many more sought shelter from the endless cold in their caves, they fled yet again, into the darkness of the underdark.[NEWLINE]All they seemed to do was flee. All it ever did was make Skrylyx more embittered.[NEWLINE]Eventually they fled too deep and came across monsters that had gestated in the darkness for centuries.[NEWLINE]His kin fled again. Skrylyx did not.[NEWLINE]Where they saw terror, Skrylyx saw power. He wanted this power, by any means necessary.[NEWLINE]And somewhere in the darkness, something answered his desires.</Italian>
+		<Spanish>When their Patrian masters fell, they fled deep into their mines. When the dwarves dug into their mines, they fled deeper into caverns and tunnels.. When the lizardfolk, the humans, the beasts, and so many more sought shelter from the endless cold in their caves, they fled yet again, into the darkness of the underdark.[NEWLINE]All they seemed to do was flee. All it ever did was make Skrylyx more embittered.[NEWLINE]Eventually they fled too deep and came across monsters that had gestated in the darkness for centuries.[NEWLINE]His kin fled again. Skrylyx did not.[NEWLINE]Where they saw terror, Skrylyx saw power. He wanted this power, by any means necessary.[NEWLINE]And somewhere in the darkness, something answered his desires.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_DEFEATED_MOLEMAN_2</Tag>
+		<English>"This defeat is only temporary, surface-dweller. We'll bide our time and come back stronger than before."</English>
+		<French>"This defeat is only temporary, surface-dweller. We'll bide our time and come back stronger than before."</French>
+		<German>"This defeat is only temporary, surface-dweller. We'll bide our time and come back stronger than before."</German>
+		<Italian>"This defeat is only temporary, surface-dweller. We'll bide our time and come back stronger than before."</Italian>
+		<Spanish>"This defeat is only temporary, surface-dweller. We'll bide our time and come back stronger than before."</Spanish>
+	</TEXT>
+	<!-- Moleman Unit Text -->
+		<TEXT>
+		<Tag>TXT_KEY_UNIT_MOLEMAN_HORSEMAN</Tag>
+		<English>Giant Mole</English>
+		<French>Giant Mole</French>
+		<German>Giant Mole</German>
+		<Italian>Giant Mole</Italian>
+		<Spanish>Giant Mole</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOLEMAN_HORSEMAN_PEDIA</Tag>
+		<English>It is said that during the Age of Ice, lone molemen would transition into a feral state to survive. Over the years this changed their bodies into a more beastly form.[NEWLINE][NEWLINE]Whether this is true or not is up for debate. What is known is that wherever the Kusekh dig, these creatures are often working alongside them.</English>
+		<French>It is said that during the Age of Ice, lone molemen would transition into a feral state to survive. Over the years this changed their bodies into a more beastly form.[NEWLINE][NEWLINE]Whether this is true or not is up for debate. What is known is that wherever the Kusekh dig, these creatures are often working alongside them.</French>
+		<German>It is said that during the Age of Ice, lone molemen would transition into a feral state to survive. Over the years this changed their bodies into a more beastly form.[NEWLINE][NEWLINE]Whether this is true or not is up for debate. What is known is that wherever the Kusekh dig, these creatures are often working alongside them.</German>
+		<Italian>It is said that during the Age of Ice, lone molemen would transition into a feral state to survive. Over the years this changed their bodies into a more beastly form.[NEWLINE][NEWLINE]Whether this is true or not is up for debate. What is known is that wherever the Kusekh dig, these creatures are often working alongside them.</Italian>
+		<Spanish>It is said that during the Age of Ice, lone molemen would transition into a feral state to survive. Over the years this changed their bodies into a more beastly form.[NEWLINE][NEWLINE]Whether this is true or not is up for debate. What is known is that wherever the Kusekh dig, these creatures are often working alongside them.</Spanish>
+	</TEXT>
+		<TEXT>
+		<Tag>TXT_KEY_UNIT_MOLEMAN_HORSEMAN_STRATEGY</Tag>
+		<English>The Kusekh gain their Horseman replacement earlier than other civilizations. It is one of the few units the Kusekh has that can build [LINK=ROUTE_MOLEMAN_TUNNELS]Tunnels[\LINK], [LINK=IMPROVEMENT_MOLEMAN_SINKHOLE]Sinkholes[\LINK], and [LINK=IMPROVEMENT_MOLEMAN_TUNNEL]Surface Tunnels[\LINK], and while its movement speed is nothing compared to other mounted units, it starts with the [LINK=PROMOTION_MOLEMAN_BURROWER_1]Tunneler[\LINK] promotion, allowing it to teleport with ease.</English>
+		<French>The Kusekh gain their Horseman replacement earlier than other civilizations. It is one of the few units the Kusekh has that can build [LINK=ROUTE_MOLEMAN_TUNNELS]Tunnels[\LINK], [LINK=IMPROVEMENT_MOLEMAN_SINKHOLE]Sinkholes[\LINK], and [LINK=IMPROVEMENT_MOLEMAN_TUNNEL]Surface Tunnels[\LINK], and while its movement speed is nothing compared to other mounted units, it starts with the [LINK=PROMOTION_MOLEMAN_BURROWER_1]Tunneler[\LINK] promotion, allowing it to teleport with ease.</French>
+		<German>The Kusekh gain their Horseman replacement earlier than other civilizations. It is one of the few units the Kusekh has that can build [LINK=ROUTE_MOLEMAN_TUNNELS]Tunnels[\LINK], [LINK=IMPROVEMENT_MOLEMAN_SINKHOLE]Sinkholes[\LINK], and [LINK=IMPROVEMENT_MOLEMAN_TUNNEL]Surface Tunnels[\LINK], and while its movement speed is nothing compared to other mounted units, it starts with the [LINK=PROMOTION_MOLEMAN_BURROWER_1]Tunneler[\LINK] promotion, allowing it to teleport with ease.</German>
+		<Italian>The Kusekh gain their Horseman replacement earlier than other civilizations. It is one of the few units the Kusekh has that can build [LINK=ROUTE_MOLEMAN_TUNNELS]Tunnels[\LINK], [LINK=IMPROVEMENT_MOLEMAN_SINKHOLE]Sinkholes[\LINK], and [LINK=IMPROVEMENT_MOLEMAN_TUNNEL]Surface Tunnels[\LINK], and while its movement speed is nothing compared to other mounted units, it starts with the [LINK=PROMOTION_MOLEMAN_BURROWER_1]Tunneler[\LINK] promotion, allowing it to teleport with ease.</Italian>
+		<Spanish>The Kusekh gain their Horseman replacement earlier than other civilizations. It is one of the few units the Kusekh has that can build [LINK=ROUTE_MOLEMAN_TUNNELS]Tunnels[\LINK], [LINK=IMPROVEMENT_MOLEMAN_SINKHOLE]Sinkholes[\LINK], and [LINK=IMPROVEMENT_MOLEMAN_TUNNEL]Surface Tunnels[\LINK], and while its movement speed is nothing compared to other mounted units, it starts with the [LINK=PROMOTION_MOLEMAN_BURROWER_1]Tunneler[\LINK] promotion, allowing it to teleport with ease.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOLEMAN_HORSE_ARCHER</Tag>
+		<English>Burrower</English>
+		<French>Burrower</French>
+		<German>Burrower</German>
+		<Italian>Burrower</Italian>
+		<Spanish>Burrower</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOLEMAN_HORSE_ARCHER_PEDIA</Tag>
+		<English>By the Age of Rebirth, the Kusekh have partially learned to direct the process that allows their bodies to change. Deep burrows are made to serve as incubators for what will become burrowers. Whatever the process is that they've developed, it involves large quantities of food, namely livestock. These burrows are placed far outside of Kusekh cities, and many outsiders have mistaken them for monster lairs due to their pungent smell and piles of refuse at their entrances.[NEWLINE][NEWLINE]While they may appear to be giant animals, burrowers display incredible intelligence and, on occasion, have been seen to speak. They act as the backbone of Kusekh society, quickly digging out intricate tunnel systems during times of peace, and acting as giant troop transports during times of war.</English>
+		<French>By the Age of Rebirth, the Kusekh have partially learned to direct the process that allows their bodies to change. Deep burrows are made to serve as incubators for what will become burrowers. Whatever the process is that they've developed, it involves large quantities of food, namely livestock. These burrows are placed far outside of Kusekh cities, and many outsiders have mistaken them for monster lairs due to their pungent smell and piles of refuse at their entrances.[NEWLINE][NEWLINE]While they may appear to be giant animals, burrowers display incredible intelligence and, on occasion, have been seen to speak. They act as the backbone of Kusekh society, quickly digging out intricate tunnel systems during times of peace, and acting as giant troop transports during times of war.</French>
+		<German>By the Age of Rebirth, the Kusekh have partially learned to direct the process that allows their bodies to change. Deep burrows are made to serve as incubators for what will become burrowers. Whatever the process is that they've developed, it involves large quantities of food, namely livestock. These burrows are placed far outside of Kusekh cities, and many outsiders have mistaken them for monster lairs due to their pungent smell and piles of refuse at their entrances.[NEWLINE][NEWLINE]While they may appear to be giant animals, burrowers display incredible intelligence and, on occasion, have been seen to speak. They act as the backbone of Kusekh society, quickly digging out intricate tunnel systems during times of peace, and acting as giant troop transports during times of war.</German>
+		<Italian>By the Age of Rebirth, the Kusekh have partially learned to direct the process that allows their bodies to change. Deep burrows are made to serve as incubators for what will become burrowers. Whatever the process is that they've developed, it involves large quantities of food, namely livestock. These burrows are placed far outside of Kusekh cities, and many outsiders have mistaken them for monster lairs due to their pungent smell and piles of refuse at their entrances.[NEWLINE][NEWLINE]While they may appear to be giant animals, burrowers display incredible intelligence and, on occasion, have been seen to speak. They act as the backbone of Kusekh society, quickly digging out intricate tunnel systems during times of peace, and acting as giant troop transports during times of war.</Italian>
+		<Spanish>By the Age of Rebirth, the Kusekh have partially learned to direct the process that allows their bodies to change. Deep burrows are made to serve as incubators for what will become burrowers. Whatever the process is that they've developed, it involves large quantities of food, namely livestock. These burrows are placed far outside of Kusekh cities, and many outsiders have mistaken them for monster lairs due to their pungent smell and piles of refuse at their entrances.[NEWLINE][NEWLINE]While they may appear to be giant animals, burrowers display incredible intelligence and, on occasion, have been seen to speak. They act as the backbone of Kusekh society, quickly digging out intricate tunnel systems during times of peace, and acting as giant troop transports during times of war.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOLEMAN_HORSE_ARCHER_STRATEGY</Tag>
+		<English>The Kusekh burrower is an enhanced version of the giant mole, being able to teleport and build the unique Kusekh improvements. It sacrifices the ranged attack of a horse archer for cargo capacity, making it a decent transport unit for your otherwise low-mobility armies.</English>
+		<French>The Kusekh burrower is an enhanced version of the giant mole, being able to teleport and build the unique Kusekh improvements. It sacrifices the ranged attack of a horse archer for cargo capacity, making it a decent transport unit for your otherwise low-mobility armies.</French>
+		<German>The Kusekh burrower is an enhanced version of the giant mole, being able to teleport and build the unique Kusekh improvements. It sacrifices the ranged attack of a horse archer for cargo capacity, making it a decent transport unit for your otherwise low-mobility armies.</German>
+		<Italian>The Kusekh burrower is an enhanced version of the giant mole, being able to teleport and build the unique Kusekh improvements. It sacrifices the ranged attack of a horse archer for cargo capacity, making it a decent transport unit for your otherwise low-mobility armies.</Italian>
+		<Spanish>The Kusekh burrower is an enhanced version of the giant mole, being able to teleport and build the unique Kusekh improvements. It sacrifices the ranged attack of a horse archer for cargo capacity, making it a decent transport unit for your otherwise low-mobility armies.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOLEMAN_KNIGHT</Tag>
+		<English>Excavator</English>
+		<French>Excavator</French>
+		<German>Excavator</German>
+		<Italian>Excavator</Italian>
+		<Spanish>Excavator</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOLEMAN_KNIGHT_STRATEGY</Tag>
+		<English>The Excavator does everything that a Burrower does but better, on top of being a powerful unit in its own right.</English>
+		<French>The Excavator does everything that a Burrower does but better, on top of being a powerful unit in its own right.</French>
+		<German>The Excavator does everything that a Burrower does but better, on top of being a powerful unit in its own right.</German>
+		<Italian>The Excavator does everything that a Burrower does but better, on top of being a powerful unit in its own right.</Italian>
+		<Spanish>The Excavator does everything that a Burrower does but better, on top of being a powerful unit in its own right.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOLEMAN_KNIGHT_PEDIA</Tag>
+		<English>Years of careful feeding and continuous work further shape the burrower's bodies. Elder burrowers are called Excavators, and they live up to their namesake. Solid granite seems to churn and melt as these underground titans work, and it only takes a matter of hours for one to do what an entire mining crew would need months for.[NEWLINE][NEWLINE]It is said that a group of excavators can hollow out an artificial cavern so large it has its own weather system.</English>
+		<French>Years of careful feeding and continuous work further shape the burrower's bodies. Elder burrowers are called Excavators, and they live up to their namesake. Solid granite seems to churn and melt as these underground titans work, and it only takes a matter of hours for one to do what an entire mining crew would need months for.[NEWLINE][NEWLINE]It is said that a group of excavators can hollow out an artificial cavern so large it has its own weather system.</French>
+		<German>Years of careful feeding and continuous work further shape the burrower's bodies. Elder burrowers are called Excavators, and they live up to their namesake. Solid granite seems to churn and melt as these underground titans work, and it only takes a matter of hours for one to do what an entire mining crew would need months for.[NEWLINE][NEWLINE]It is said that a group of excavators can hollow out an artificial cavern so large it has its own weather system.</German>
+		<Italian>Years of careful feeding and continuous work further shape the burrower's bodies. Elder burrowers are called Excavators, and they live up to their namesake. Solid granite seems to churn and melt as these underground titans work, and it only takes a matter of hours for one to do what an entire mining crew would need months for.[NEWLINE][NEWLINE]It is said that a group of excavators can hollow out an artificial cavern so large it has its own weather system.</Italian>
+		<Spanish>Years of careful feeding and continuous work further shape the burrower's bodies. Elder burrowers are called Excavators, and they live up to their namesake. Solid granite seems to churn and melt as these underground titans work, and it only takes a matter of hours for one to do what an entire mining crew would need months for.[NEWLINE][NEWLINE]It is said that a group of excavators can hollow out an artificial cavern so large it has its own weather system.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOLEMAN_CHARIOT</Tag>
+		<English>Gorger</English>
+		<French>Gorger</French>
+		<German>Gorger</German>
+		<Italian>Gorger</Italian>
+		<Spanish>Gorger</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOLEMAN_CHARIOT_PEDIA</Tag>
+		<English>When the Kusekh go to war, a pungent smell of rot and death begins to permeate the deep burrows that usually gestate burrowers. Within days, gorgers begin to claw their way out.[NEWLINE][NEWLINE]A ravenous monster, their appetite can never be sated for long. They charge headlong into enemy lines, grabbing terrified soldiers and biting down on their flesh. Whenever a Kusekh army is on the move, Gorgers may be found wandering nearby, feasting on local farms and livestock.[NEWLINE][NEWLINE]Mages who have examined gorger corpses have detected traces of body magic, though what rituals the Kusekh use to create them is a closely guarded secret.</English>
+		<French>When the Kusekh go to war, a pungent smell of rot and death begins to permeate the deep burrows that usually gestate burrowers. Within days, gorgers begin to claw their way out.[NEWLINE][NEWLINE]A ravenous monster, their appetite can never be sated for long. They charge headlong into enemy lines, grabbing terrified soldiers and biting down on their flesh. Whenever a Kusekh army is on the move, Gorgers may be found wandering nearby, feasting on local farms and livestock.[NEWLINE][NEWLINE]Mages who have examined gorger corpses have detected traces of body magic, though what rituals the Kusekh use to create them is a closely guarded secret.</French>
+		<German>When the Kusekh go to war, a pungent smell of rot and death begins to permeate the deep burrows that usually gestate burrowers. Within days, gorgers begin to claw their way out.[NEWLINE][NEWLINE]A ravenous monster, their appetite can never be sated for long. They charge headlong into enemy lines, grabbing terrified soldiers and biting down on their flesh. Whenever a Kusekh army is on the move, Gorgers may be found wandering nearby, feasting on local farms and livestock.[NEWLINE][NEWLINE]Mages who have examined gorger corpses have detected traces of body magic, though what rituals the Kusekh use to create them is a closely guarded secret.</German>
+		<Italian>When the Kusekh go to war, a pungent smell of rot and death begins to permeate the deep burrows that usually gestate burrowers. Within days, gorgers begin to claw their way out.[NEWLINE][NEWLINE]A ravenous monster, their appetite can never be sated for long. They charge headlong into enemy lines, grabbing terrified soldiers and biting down on their flesh. Whenever a Kusekh army is on the move, Gorgers may be found wandering nearby, feasting on local farms and livestock.[NEWLINE][NEWLINE]Mages who have examined gorger corpses have detected traces of body magic, though what rituals the Kusekh use to create them is a closely guarded secret.</Italian>
+		<Spanish>When the Kusekh go to war, a pungent smell of rot and death begins to permeate the deep burrows that usually gestate burrowers. Within days, gorgers begin to claw their way out.[NEWLINE][NEWLINE]A ravenous monster, their appetite can never be sated for long. They charge headlong into enemy lines, grabbing terrified soldiers and biting down on their flesh. Whenever a Kusekh army is on the move, Gorgers may be found wandering nearby, feasting on local farms and livestock.[NEWLINE][NEWLINE]Mages who have examined gorger corpses have detected traces of body magic, though what rituals the Kusekh use to create them is a closely guarded secret.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOLEMAN_CHARIOT_STRATEGY</Tag>
+		<English>Gorgers sacrifice the transport and working ability of Burrowers in favor of strength. While starting off weaker than a Chariot, they gain strength for each livestock resource you own. They start with the [LINK=PROMOTION_MOLEMAN_BURROWER_1]Tunneler[\LINK] promotion, which grants them the ability to teleport, and the [LINK=PROMOTION_MOLEMAN_VARMIT]Varmit[\LINK] promotion, which allows them to heal by pillaging farms and pastures.</English>
+		<French>Gorgers sacrifice the transport and working ability of Burrowers in favor of strength. While starting off weaker than a Chariot, they gain strength for each livestock resource you own. They start with the [LINK=PROMOTION_MOLEMAN_BURROWER_1]Tunneler[\LINK] promotion, which grants them the ability to teleport, and the [LINK=PROMOTION_MOLEMAN_VARMIT]Varmit[\LINK] promotion, which allows them to heal by pillaging farms and pastures.</French>
+		<German>Gorgers sacrifice the transport and working ability of Burrowers in favor of strength. While starting off weaker than a Chariot, they gain strength for each livestock resource you own. They start with the [LINK=PROMOTION_MOLEMAN_BURROWER_1]Tunneler[\LINK] promotion, which grants them the ability to teleport, and the [LINK=PROMOTION_MOLEMAN_VARMIT]Varmit[\LINK] promotion, which allows them to heal by pillaging farms and pastures.</German>
+		<Italian>Gorgers sacrifice the transport and working ability of Burrowers in favor of strength. While starting off weaker than a Chariot, they gain strength for each livestock resource you own. They start with the [LINK=PROMOTION_MOLEMAN_BURROWER_1]Tunneler[\LINK] promotion, which grants them the ability to teleport, and the [LINK=PROMOTION_MOLEMAN_VARMIT]Varmit[\LINK] promotion, which allows them to heal by pillaging farms and pastures.</Italian>
+		<Spanish>Gorgers sacrifice the transport and working ability of Burrowers in favor of strength. While starting off weaker than a Chariot, they gain strength for each livestock resource you own. They start with the [LINK=PROMOTION_MOLEMAN_BURROWER_1]Tunneler[\LINK] promotion, which grants them the ability to teleport, and the [LINK=PROMOTION_MOLEMAN_VARMIT]Varmit[\LINK] promotion, which allows them to heal by pillaging farms and pastures.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOLEMAN_WAR_CHARIOT</Tag>
+		<English>Gourmand</English>
+		<French>Gourmand</French>
+		<German>Gourmand</German>
+		<Italian>Gourmand</Italian>
+		<Spanish>Gourmand</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOLEMAN_WAR_CHARIOT_PEDIA</Tag>
+		<English>"...It charged at us from the woods, taking us all by surprise. We immediately formed a defensive wall with the pikes while our commander rallied the horsemen for a counter charge.[NEWLINE][NEWLINE]The counter charge didn't even make it hesitate. I swear by Junil that thing snatched up the leading horse with the rider still on it and bit the poor animal in half. And it just kept running like that was a light snack."[NEWLINE]-account from a Bannor soldier</English>
+		<French>"...It charged at us from the woods, taking us all by surprise. We immediately formed a defensive wall with the pikes while our commander rallied the horsemen for a counter charge.[NEWLINE][NEWLINE]The counter charge didn't even make it hesitate. I swear by Junil that thing snatched up the leading horse with the rider still on it and bit the poor animal in half. And it just kept running like that was a light snack."[NEWLINE]-account from a Bannor soldier</French>
+		<German>"...It charged at us from the woods, taking us all by surprise. We immediately formed a defensive wall with the pikes while our commander rallied the horsemen for a counter charge.[NEWLINE][NEWLINE]The counter charge didn't even make it hesitate. I swear by Junil that thing snatched up the leading horse with the rider still on it and bit the poor animal in half. And it just kept running like that was a light snack."[NEWLINE]-account from a Bannor soldier</German>
+		<Italian>"...It charged at us from the woods, taking us all by surprise. We immediately formed a defensive wall with the pikes while our commander rallied the horsemen for a counter charge.[NEWLINE][NEWLINE]The counter charge didn't even make it hesitate. I swear by Junil that thing snatched up the leading horse with the rider still on it and bit the poor animal in half. And it just kept running like that was a light snack."[NEWLINE]-account from a Bannor soldier</Italian>
+		<Spanish>"...It charged at us from the woods, taking us all by surprise. We immediately formed a defensive wall with the pikes while our commander rallied the horsemen for a counter charge.[NEWLINE][NEWLINE]The counter charge didn't even make it hesitate. I swear by Junil that thing snatched up the leading horse with the rider still on it and bit the poor animal in half. And it just kept running like that was a light snack."[NEWLINE]-account from a Bannor soldier</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOLEMAN_WAR_CHARIOT_STRATEGY</Tag>
+		<English>Gourmands, in addition to being better Gorgers, start with the [LINK=PROMOTION_CANNIBALIZE]Cannibalize[\LINK] promotion, allowing them to heal by defeating enemy units, and are one of the only Kusekh units to have high mobility.</English>
+		<French>Gourmands, in addition to being better Gorgers, start with the [LINK=PROMOTION_CANNIBALIZE]Cannibalize[\LINK] promotion, allowing them to heal by defeating enemy units, and are one of the only Kusekh units to have high mobility.</French>
+		<German>Gourmands, in addition to being better Gorgers, start with the [LINK=PROMOTION_CANNIBALIZE]Cannibalize[\LINK] promotion, allowing them to heal by defeating enemy units, and are one of the only Kusekh units to have high mobility.</German>
+		<Italian>Gourmands, in addition to being better Gorgers, start with the [LINK=PROMOTION_CANNIBALIZE]Cannibalize[\LINK] promotion, allowing them to heal by defeating enemy units, and are one of the only Kusekh units to have high mobility.</Italian>
+		<Spanish>Gourmands, in addition to being better Gorgers, start with the [LINK=PROMOTION_CANNIBALIZE]Cannibalize[\LINK] promotion, allowing them to heal by defeating enemy units, and are one of the only Kusekh units to have high mobility.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOLEMAN_HUNTER</Tag>
+		<English>Delver</English>
+		<French>Delver</French>
+		<German>Delver</German>
+		<Italian>Delver</Italian>
+		<Spanish>Delver</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOLEMAN_HUNTER_PEDIA</Tag>
+		<English>Whereas scouts chart valleys and mountains, the molemen explore caverns and caves. Delvers lead the Kusekh's underground exploration, warning their companions of dangers and unstable ground. Whatever cave a surface-dweller discovers, there is a good chance a delver already knows of it.</English>
+		<French>Whereas scouts chart valleys and mountains, the molemen explore caverns and caves. Delvers lead the Kusekh's underground exploration, warning their companions of dangers and unstable ground. Whatever cave a surface-dweller discovers, there is a good chance a delver already knows of it.</French>
+		<German>Whereas scouts chart valleys and mountains, the molemen explore caverns and caves. Delvers lead the Kusekh's underground exploration, warning their companions of dangers and unstable ground. Whatever cave a surface-dweller discovers, there is a good chance a delver already knows of it.</German>
+		<Italian>Whereas scouts chart valleys and mountains, the molemen explore caverns and caves. Delvers lead the Kusekh's underground exploration, warning their companions of dangers and unstable ground. Whatever cave a surface-dweller discovers, there is a good chance a delver already knows of it.</Italian>
+		<Spanish>Whereas scouts chart valleys and mountains, the molemen explore caverns and caves. Delvers lead the Kusekh's underground exploration, warning their companions of dangers and unstable ground. Whatever cave a surface-dweller discovers, there is a good chance a delver already knows of it.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOLEMAN_HUNTER_STRATEGY</Tag>
+		<English>Delvers start with the Tunneler promotion, giving them the ability to teleport short distances.</English>
+		<French>Delvers start with the Tunneler promotion, giving them the ability to teleport short distances.</French>
+		<German>Delvers start with the Tunneler promotion, giving them the ability to teleport short distances.</German>
+		<Italian>Delvers start with the Tunneler promotion, giving them the ability to teleport short distances.</Italian>
+		<Spanish>Delvers start with the Tunneler promotion, giving them the ability to teleport short distances.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOLEMAN_RANGER</Tag>
+		<English>Caverner</English>
+		<French>Caverner</French>
+		<German>Caverner</German>
+		<Italian>Caverner</Italian>
+		<Spanish>Caverner</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOLEMAN_RANGER_PEDIA</Tag>
+		<English>Many molemen shy away from life on the surface, despite the dangers of the underdark. A life dedicated to underground exploration has morphed the caverner's body to be more slender and agile than the average moleman.</English>
+		<French>Many molemen shy away from life on the surface, despite the dangers of the underdark. A life dedicated to underground exploration has morphed the caverner's body to be more slender and agile than the average moleman.</French>
+		<German>Many molemen shy away from life on the surface, despite the dangers of the underdark. A life dedicated to underground exploration has morphed the caverner's body to be more slender and agile than the average moleman.</German>
+		<Italian>Many molemen shy away from life on the surface, despite the dangers of the underdark. A life dedicated to underground exploration has morphed the caverner's body to be more slender and agile than the average moleman.</Italian>
+		<Spanish>Many molemen shy away from life on the surface, despite the dangers of the underdark. A life dedicated to underground exploration has morphed the caverner's body to be more slender and agile than the average moleman.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOLEMAN_BEASTMASTER</Tag>
+		<English>Dredger</English>
+		<French>Dredger</French>
+		<German>Dredger</German>
+		<Italian>Dredger</Italian>
+		<Spanish>Dredger</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOLEMAN_BEASTMASTER_PEDIA</Tag>
+		<English>Even now, the underdark holds a strange allure for the Kusekh. Rarely, this allure takes a stranglehold on a moleman, prompting them to delve deeper into the earth where the shadow dragons roam. Sometimes they come back, morphed into a form that is almost unrecognizable to those that knew them.[NEWLINE][NEWLINE]Dredgers can twist and contort their bodies in ways that even other molemen find uncanny. Some say even their bones are malleable, to the point that they can push themselves through the smallest cracks in the stones.</English>
+		<French>Even now, the underdark holds a strange allure for the Kusekh. Rarely, this allure takes a stranglehold on a moleman, prompting them to delve deeper into the earth where the shadow dragons roam. Sometimes they come back, morphed into a form that is almost unrecognizable to those that knew them.[NEWLINE][NEWLINE]Dredgers can twist and contort their bodies in ways that even other molemen find uncanny. Some say even their bones are malleable, to the point that they can push themselves through the smallest cracks in the stones.</French>
+		<German>Even now, the underdark holds a strange allure for the Kusekh. Rarely, this allure takes a stranglehold on a moleman, prompting them to delve deeper into the earth where the shadow dragons roam. Sometimes they come back, morphed into a form that is almost unrecognizable to those that knew them.[NEWLINE][NEWLINE]Dredgers can twist and contort their bodies in ways that even other molemen find uncanny. Some say even their bones are malleable, to the point that they can push themselves through the smallest cracks in the stones.</German>
+		<Italian>Even now, the underdark holds a strange allure for the Kusekh. Rarely, this allure takes a stranglehold on a moleman, prompting them to delve deeper into the earth where the shadow dragons roam. Sometimes they come back, morphed into a form that is almost unrecognizable to those that knew them.[NEWLINE][NEWLINE]Dredgers can twist and contort their bodies in ways that even other molemen find uncanny. Some say even their bones are malleable, to the point that they can push themselves through the smallest cracks in the stones.</Italian>
+		<Spanish>Even now, the underdark holds a strange allure for the Kusekh. Rarely, this allure takes a stranglehold on a moleman, prompting them to delve deeper into the earth where the shadow dragons roam. Sometimes they come back, morphed into a form that is almost unrecognizable to those that knew them.[NEWLINE][NEWLINE]Dredgers can twist and contort their bodies in ways that even other molemen find uncanny. Some say even their bones are malleable, to the point that they can push themselves through the smallest cracks in the stones.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOLEMAN_BEASTMASTER_STRATEGY</Tag>
+		<English>Dredgers are the ultimate recon unit for the Kusekh. Not only do they start with the Tunneler II promotion, which allows them to teleport further than delvers and caverners, but they also start with the Earthswimmer promotion, allowing them to move through peaks.</English>
+		<French>Dredgers are the ultimate recon unit for the Kusekh. Not only do they start with the Tunneler II promotion, which allows them to teleport further than delvers and caverners, but they also start with the Earthswimmer promotion, allowing them to move through peaks.</French>
+		<German>Dredgers are the ultimate recon unit for the Kusekh. Not only do they start with the Tunneler II promotion, which allows them to teleport further than delvers and caverners, but they also start with the Earthswimmer promotion, allowing them to move through peaks.</German>
+		<Italian>Dredgers are the ultimate recon unit for the Kusekh. Not only do they start with the Tunneler II promotion, which allows them to teleport further than delvers and caverners, but they also start with the Earthswimmer promotion, allowing them to move through peaks.</Italian>
+		<Spanish>Dredgers are the ultimate recon unit for the Kusekh. Not only do they start with the Tunneler II promotion, which allows them to teleport further than delvers and caverners, but they also start with the Earthswimmer promotion, allowing them to move through peaks.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOLEMAN_WORKER</Tag>
+		<English>Moleman</English>
+		<French>Moleman</French>
+		<German>Moleman</German>
+		<Italian>Moleman</Italian>
+		<Spanish>Moleman</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOLEMAN_WORKER_PEDIA</Tag>
+		<English>"...There is scant evidence on what the molemen were up to during the Age of Ice, but we do know that the dwarves encountered them from time to time. While Luchuirp accounts correctly identified them as beastkin like the lizardfolk, Khazad miners were apparently so spooked by their encounters that it spawned the legend of the Bramblenose, an earth spirit that serves as an ill-omen for for those who wander too deep into caverns.[NEWLINE][NEWLINE]The Bramblenose legend became so prevalent that overseer of the Grimlock Mines, Dalrok Kazor, offered a reward of 1,000 gold pieces for whoever could prove the existence of the elusive creature..."[NEWLINE][NEWLINE]- Darlas Dunmore [ITALICS]"On the Beastkin of Erebus"[\ITALICS]</English>
+		<French>"...There is scant evidence on what the molemen were up to during the Age of Ice, but we do know that the dwarves encountered them from time to time. While Luchuirp accounts correctly identified them as beastkin like the lizardfolk, Khazad miners were apparently so spooked by their encounters that it spawned the legend of the Bramblenose, an earth spirit that serves as an ill-omen for for those who wander too deep into caverns.[NEWLINE][NEWLINE]The Bramblenose legend became so prevalent that overseer of the Grimlock Mines, Dalrok Kazor, offered a reward of 1,000 gold pieces for whoever could prove the existence of the elusive creature..."[NEWLINE][NEWLINE]- Darlas Dunmore [ITALICS]"On the Beastkin of Erebus"[\ITALICS]</French>
+		<German>"...There is scant evidence on what the molemen were up to during the Age of Ice, but we do know that the dwarves encountered them from time to time. While Luchuirp accounts correctly identified them as beastkin like the lizardfolk, Khazad miners were apparently so spooked by their encounters that it spawned the legend of the Bramblenose, an earth spirit that serves as an ill-omen for for those who wander too deep into caverns.[NEWLINE][NEWLINE]The Bramblenose legend became so prevalent that overseer of the Grimlock Mines, Dalrok Kazor, offered a reward of 1,000 gold pieces for whoever could prove the existence of the elusive creature..."[NEWLINE][NEWLINE]- Darlas Dunmore [ITALICS]"On the Beastkin of Erebus"[\ITALICS]</German>
+		<Italian>"...There is scant evidence on what the molemen were up to during the Age of Ice, but we do know that the dwarves encountered them from time to time. While Luchuirp accounts correctly identified them as beastkin like the lizardfolk, Khazad miners were apparently so spooked by their encounters that it spawned the legend of the Bramblenose, an earth spirit that serves as an ill-omen for for those who wander too deep into caverns.[NEWLINE][NEWLINE]The Bramblenose legend became so prevalent that overseer of the Grimlock Mines, Dalrok Kazor, offered a reward of 1,000 gold pieces for whoever could prove the existence of the elusive creature..."[NEWLINE][NEWLINE]- Darlas Dunmore [ITALICS]"On the Beastkin of Erebus"[\ITALICS]</Italian>
+		<Spanish>"...There is scant evidence on what the molemen were up to during the Age of Ice, but we do know that the dwarves encountered them from time to time. While Luchuirp accounts correctly identified them as beastkin like the lizardfolk, Khazad miners were apparently so spooked by their encounters that it spawned the legend of the Bramblenose, an earth spirit that serves as an ill-omen for for those who wander too deep into caverns.[NEWLINE][NEWLINE]The Bramblenose legend became so prevalent that overseer of the Grimlock Mines, Dalrok Kazor, offered a reward of 1,000 gold pieces for whoever could prove the existence of the elusive creature..."[NEWLINE][NEWLINE]- Darlas Dunmore [ITALICS]"On the Beastkin of Erebus"[\ITALICS]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOLEMAN_WORKER_STRATEGY</Tag>
+		<English>Molemen allow for the Kusekh to construct their road replacement, [LINK=ROUTE_MOLEMAN_TUNNELS]Tunnels[\LINK], as well as their unique improvements, [LINK=IMPROVEMENT_MOLEMAN_TUNNEL]Surface Tunnels[\LINK] and [LINK=IMPROVEMENT_MOLEMAN_SINKHOLE]Sinkholes[\LINK].</English>
+		<French>Molemen allow for the Kusekh to construct their road replacement, [LINK=ROUTE_MOLEMAN_TUNNELS]Tunnels[\LINK], as well as their unique improvements, [LINK=IMPROVEMENT_MOLEMAN_TUNNEL]Surface Tunnels[\LINK] and [LINK=IMPROVEMENT_MOLEMAN_SINKHOLE]Sinkholes[\LINK].</French>
+		<German>Molemen allow for the Kusekh to construct their road replacement, [LINK=ROUTE_MOLEMAN_TUNNELS]Tunnels[\LINK], as well as their unique improvements, [LINK=IMPROVEMENT_MOLEMAN_TUNNEL]Surface Tunnels[\LINK] and [LINK=IMPROVEMENT_MOLEMAN_SINKHOLE]Sinkholes[\LINK].</German>
+		<Italian>Molemen allow for the Kusekh to construct their road replacement, [LINK=ROUTE_MOLEMAN_TUNNELS]Tunnels[\LINK], as well as their unique improvements, [LINK=IMPROVEMENT_MOLEMAN_TUNNEL]Surface Tunnels[\LINK] and [LINK=IMPROVEMENT_MOLEMAN_SINKHOLE]Sinkholes[\LINK].</Italian>
+		<Spanish>Molemen allow for the Kusekh to construct their road replacement, [LINK=ROUTE_MOLEMAN_TUNNELS]Tunnels[\LINK], as well as their unique improvements, [LINK=IMPROVEMENT_MOLEMAN_TUNNEL]Surface Tunnels[\LINK] and [LINK=IMPROVEMENT_MOLEMAN_SINKHOLE]Sinkholes[\LINK].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOLEMAN_CHAMPION</Tag>
+		<English>Stoneclaw</English>
+		<French>Stoneclaw</French>
+		<German>Stoneclaw</German>
+		<Italian>Stoneclaw</Italian>
+		<Spanish>Stoneclaw</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOLEMAN_CHAMPION_STRATEGY</Tag>
+		<English>Stoneclaws start off slightly weaker than Champions, but make up for it with their [LINK=PROMOTION_MOLEMAN_STONECLAW_AFFINITY]Stoneclaw Grafting[\LINK], which increases their Defense and Attack strength based on how many Stone, Marble, and Gem resources you have access to. They keep this ability when upgraded into a more powerful unit.</English>
+		<French>Stoneclaws start off slightly weaker than Champions, but make up for it with their [LINK=PROMOTION_MOLEMAN_STONECLAW_AFFINITY]Stoneclaw Grafting[\LINK], which increases their Defense and Attack strength based on how many Stone, Marble, and Gem resources you have access to. They keep this ability when upgraded into a more powerful unit.</French>
+		<German>Stoneclaws start off slightly weaker than Champions, but make up for it with their [LINK=PROMOTION_MOLEMAN_STONECLAW_AFFINITY]Stoneclaw Grafting[\LINK], which increases their Defense and Attack strength based on how many Stone, Marble, and Gem resources you have access to. They keep this ability when upgraded into a more powerful unit.</German>
+		<Italian>Stoneclaws start off slightly weaker than Champions, but make up for it with their [LINK=PROMOTION_MOLEMAN_STONECLAW_AFFINITY]Stoneclaw Grafting[\LINK], which increases their Defense and Attack strength based on how many Stone, Marble, and Gem resources you have access to. They keep this ability when upgraded into a more powerful unit.</Italian>
+		<Spanish>Stoneclaws start off slightly weaker than Champions, but make up for it with their [LINK=PROMOTION_MOLEMAN_STONECLAW_AFFINITY]Stoneclaw Grafting[\LINK], which increases their Defense and Attack strength based on how many Stone, Marble, and Gem resources you have access to. They keep this ability when upgraded into a more powerful unit.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOLEMAN_CHAMPION_PEDIA</Tag>
+		<English>Over time a dragon cult has formed around Mondrinth among the Kusekh. Warriors calling themselves "stoneclaws" graft stone and gems onto their bodies, hoping to emulate the scales of the fang dragon. This tradition naturally meshes with their innate ability to transform their bodies, slowly making their skin appear as if it were made of the earth itself.[NEWLINE][NEWLINE]Stoneclaws are seen as the elites of Kusekh armies. During wars, they will pillage surface settlements and mines, collecting any gems they find for themselves and as tribute to Mondrinth.</English>
+		<French>Over time a dragon cult has formed around Mondrinth among the Kusekh. Warriors calling themselves "stoneclaws" graft stone and gems onto their bodies, hoping to emulate the scales of the fang dragon. This tradition naturally meshes with their innate ability to transform their bodies, slowly making their skin appear as if it were made of the earth itself.[NEWLINE][NEWLINE]Stoneclaws are seen as the elites of Kusekh armies. During wars, they will pillage surface settlements and mines, collecting any gems they find for themselves and as tribute to Mondrinth.</French>
+		<German>Over time a dragon cult has formed around Mondrinth among the Kusekh. Warriors calling themselves "stoneclaws" graft stone and gems onto their bodies, hoping to emulate the scales of the fang dragon. This tradition naturally meshes with their innate ability to transform their bodies, slowly making their skin appear as if it were made of the earth itself.[NEWLINE][NEWLINE]Stoneclaws are seen as the elites of Kusekh armies. During wars, they will pillage surface settlements and mines, collecting any gems they find for themselves and as tribute to Mondrinth.</German>
+		<Italian>Over time a dragon cult has formed around Mondrinth among the Kusekh. Warriors calling themselves "stoneclaws" graft stone and gems onto their bodies, hoping to emulate the scales of the fang dragon. This tradition naturally meshes with their innate ability to transform their bodies, slowly making their skin appear as if it were made of the earth itself.[NEWLINE][NEWLINE]Stoneclaws are seen as the elites of Kusekh armies. During wars, they will pillage surface settlements and mines, collecting any gems they find for themselves and as tribute to Mondrinth.</Italian>
+		<Spanish>Over time a dragon cult has formed around Mondrinth among the Kusekh. Warriors calling themselves "stoneclaws" graft stone and gems onto their bodies, hoping to emulate the scales of the fang dragon. This tradition naturally meshes with their innate ability to transform their bodies, slowly making their skin appear as if it were made of the earth itself.[NEWLINE][NEWLINE]Stoneclaws are seen as the elites of Kusekh armies. During wars, they will pillage surface settlements and mines, collecting any gems they find for themselves and as tribute to Mondrinth.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOLEMAN_SHADOW</Tag>
+		<English>Shadowclaw</English>
+		<French>Shadowclaw</French>
+		<German>Shadowclaw</German>
+		<Italian>Shadowclaw</Italian>
+		<Spanish>Shadowclaw</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOLEMAN_MONDRINTH</Tag>
+		<English>Mondrinth the Fang Dragon</English>
+		<French>Mondrinth the Fang Dragon</French>
+		<German>Mondrinth the Fang Dragon</German>
+		<Italian>Mondrinth the Fang Dragon</Italian>
+		<Spanish>Mondrinth the Fang Dragon</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOLEMAN_MONDRINTH_PEDIA</Tag>
+		<English>No one can say why Mondrinth took pity on the molemen, not even the dragon himself. Perhaps it was their connection to the earth, which reminded him of his creator. Perhaps he saw in them a way to obtain more beautiful gems. Perhaps it was a disdain for the creations of Esus seeping into a domain that should be Kilmorph's. And perhaps it was a matter of loneliness, brought by the silence of the Compact.[NEWLINE][NEWLINE]The dragon shook the thought from his head. He moved through the ground like it was water, passing through hills and mountains but somehow never disturbing the earth. He breached in one of the Kuskekh burrow cities, settling down as a crowd watched in awe. Many watched in awe, some bowed in respect or religious fervor, and a few, he noted, backed away nervously.[NEWLINE][NEWLINE]A few minutes passed before an entourage, led by the city's chief and head mage, approached. Behind them were a few burrowers laden with gems. A mix of adepts and soldiers unloaded the gems carefully in front of the dragon in two separate piles. Mondrinth could see there was a silent tension between the two groups, and it didn't take a genius to figure out that they saw their tributes as some kind of factional powerplay for his favor.[NEWLINE][NEWLINE]The mage opened his mouth to speak, only to be interrupted by the chief,[NEWLINE]"Please, great Mondrinth, accept our humble tribute. These are the finest gems we mined this season, handpicked by us just for you."[NEWLINE][NEWLINE]Such formal respect! The earth dragon didn't mind it, though he couldn't help but think back to the pleasant conversations he held in the Kusekh burrowcity a few mountains away.[NEWLINE][NEWLINE]Then the mage, side-eyeing the chief, bowed,[NEWLINE]"You will find, great dragon, that my adepts have found some gems of particular arcane value that the others missed."[NEWLINE][NEWLINE]Mondrinth surveyed the two piles. Nothing in either pile was particularly interesting. The "finest" the chief had picked were just scraps of amber he had seen thousands of times. The "arcane" gems the mage picked wouldn't be able to charge even a simple spell.[NEWLINE][NEWLINE]He took both piles, making sure he grabbed both piles at the same time so as to not show favoritism.[NEWLINE][NEWLINE]"Thank you, Kusekh. Your gifts please me, and you will have my protection for another season."[NEWLINE][NEWLINE]In truth, Mondrinth would stay by the molemen even without their gem offerings. Of course, he would never tell them that. That was a matter of pride.[NEWLINE][NEWLINE]He dived back into the stone, swimming kilometers away in mere moments, but never straying too far from the molemen.</English>
+		<French>No one can say why Mondrinth took pity on the molemen, not even the dragon himself. Perhaps it was their connection to the earth, which reminded him of his creator. Perhaps he saw in them a way to obtain more beautiful gems. Perhaps it was a disdain for the creations of Esus seeping into a domain that should be Kilmorph's. And perhaps it was a matter of loneliness, brought by the silence of the Compact.[NEWLINE][NEWLINE]The dragon shook the thought from his head. He moved through the ground like it was water, passing through hills and mountains but somehow never disturbing the earth. He breached in one of the Kuskekh burrow cities, settling down as a crowd watched in awe. Many watched in awe, some bowed in respect or religious fervor, and a few, he noted, backed away nervously.[NEWLINE][NEWLINE]A few minutes passed before an entourage, led by the city's chief and head mage, approached. Behind them were a few burrowers laden with gems. A mix of adepts and soldiers unloaded the gems carefully in front of the dragon in two separate piles. Mondrinth could see there was a silent tension between the two groups, and it didn't take a genius to figure out that they saw their tributes as some kind of factional powerplay for his favor.[NEWLINE][NEWLINE]The mage opened his mouth to speak, only to be interrupted by the chief,[NEWLINE]"Please, great Mondrinth, accept our humble tribute. These are the finest gems we mined this season, handpicked by us just for you."[NEWLINE][NEWLINE]Such formal respect! The earth dragon didn't mind it, though he couldn't help but think back to the pleasant conversations he held in the Kusekh burrowcity a few mountains away.[NEWLINE][NEWLINE]Then the mage, side-eyeing the chief, bowed,[NEWLINE]"You will find, great dragon, that my adepts have found some gems of particular arcane value that the others missed."[NEWLINE][NEWLINE]Mondrinth surveyed the two piles. Nothing in either pile was particularly interesting. The "finest" the chief had picked were just scraps of amber he had seen thousands of times. The "arcane" gems the mage picked wouldn't be able to charge even a simple spell.[NEWLINE][NEWLINE]He took both piles, making sure he grabbed both piles at the same time so as to not show favoritism.[NEWLINE][NEWLINE]"Thank you, Kusekh. Your gifts please me, and you will have my protection for another season."[NEWLINE][NEWLINE]In truth, Mondrinth would stay by the molemen even without their gem offerings. Of course, he would never tell them that. That was a matter of pride.[NEWLINE][NEWLINE]He dived back into the stone, swimming kilometers away in mere moments, but never straying too far from the molemen.</French>
+		<German>No one can say why Mondrinth took pity on the molemen, not even the dragon himself. Perhaps it was their connection to the earth, which reminded him of his creator. Perhaps he saw in them a way to obtain more beautiful gems. Perhaps it was a disdain for the creations of Esus seeping into a domain that should be Kilmorph's. And perhaps it was a matter of loneliness, brought by the silence of the Compact.[NEWLINE][NEWLINE]The dragon shook the thought from his head. He moved through the ground like it was water, passing through hills and mountains but somehow never disturbing the earth. He breached in one of the Kuskekh burrow cities, settling down as a crowd watched in awe. Many watched in awe, some bowed in respect or religious fervor, and a few, he noted, backed away nervously.[NEWLINE][NEWLINE]A few minutes passed before an entourage, led by the city's chief and head mage, approached. Behind them were a few burrowers laden with gems. A mix of adepts and soldiers unloaded the gems carefully in front of the dragon in two separate piles. Mondrinth could see there was a silent tension between the two groups, and it didn't take a genius to figure out that they saw their tributes as some kind of factional powerplay for his favor.[NEWLINE][NEWLINE]The mage opened his mouth to speak, only to be interrupted by the chief,[NEWLINE]"Please, great Mondrinth, accept our humble tribute. These are the finest gems we mined this season, handpicked by us just for you."[NEWLINE][NEWLINE]Such formal respect! The earth dragon didn't mind it, though he couldn't help but think back to the pleasant conversations he held in the Kusekh burrowcity a few mountains away.[NEWLINE][NEWLINE]Then the mage, side-eyeing the chief, bowed,[NEWLINE]"You will find, great dragon, that my adepts have found some gems of particular arcane value that the others missed."[NEWLINE][NEWLINE]Mondrinth surveyed the two piles. Nothing in either pile was particularly interesting. The "finest" the chief had picked were just scraps of amber he had seen thousands of times. The "arcane" gems the mage picked wouldn't be able to charge even a simple spell.[NEWLINE][NEWLINE]He took both piles, making sure he grabbed both piles at the same time so as to not show favoritism.[NEWLINE][NEWLINE]"Thank you, Kusekh. Your gifts please me, and you will have my protection for another season."[NEWLINE][NEWLINE]In truth, Mondrinth would stay by the molemen even without their gem offerings. Of course, he would never tell them that. That was a matter of pride.[NEWLINE][NEWLINE]He dived back into the stone, swimming kilometers away in mere moments, but never straying too far from the molemen.</German>
+		<Italian>No one can say why Mondrinth took pity on the molemen, not even the dragon himself. Perhaps it was their connection to the earth, which reminded him of his creator. Perhaps he saw in them a way to obtain more beautiful gems. Perhaps it was a disdain for the creations of Esus seeping into a domain that should be Kilmorph's. And perhaps it was a matter of loneliness, brought by the silence of the Compact.[NEWLINE][NEWLINE]The dragon shook the thought from his head. He moved through the ground like it was water, passing through hills and mountains but somehow never disturbing the earth. He breached in one of the Kuskekh burrow cities, settling down as a crowd watched in awe. Many watched in awe, some bowed in respect or religious fervor, and a few, he noted, backed away nervously.[NEWLINE][NEWLINE]A few minutes passed before an entourage, led by the city's chief and head mage, approached. Behind them were a few burrowers laden with gems. A mix of adepts and soldiers unloaded the gems carefully in front of the dragon in two separate piles. Mondrinth could see there was a silent tension between the two groups, and it didn't take a genius to figure out that they saw their tributes as some kind of factional powerplay for his favor.[NEWLINE][NEWLINE]The mage opened his mouth to speak, only to be interrupted by the chief,[NEWLINE]"Please, great Mondrinth, accept our humble tribute. These are the finest gems we mined this season, handpicked by us just for you."[NEWLINE][NEWLINE]Such formal respect! The earth dragon didn't mind it, though he couldn't help but think back to the pleasant conversations he held in the Kusekh burrowcity a few mountains away.[NEWLINE][NEWLINE]Then the mage, side-eyeing the chief, bowed,[NEWLINE]"You will find, great dragon, that my adepts have found some gems of particular arcane value that the others missed."[NEWLINE][NEWLINE]Mondrinth surveyed the two piles. Nothing in either pile was particularly interesting. The "finest" the chief had picked were just scraps of amber he had seen thousands of times. The "arcane" gems the mage picked wouldn't be able to charge even a simple spell.[NEWLINE][NEWLINE]He took both piles, making sure he grabbed both piles at the same time so as to not show favoritism.[NEWLINE][NEWLINE]"Thank you, Kusekh. Your gifts please me, and you will have my protection for another season."[NEWLINE][NEWLINE]In truth, Mondrinth would stay by the molemen even without their gem offerings. Of course, he would never tell them that. That was a matter of pride.[NEWLINE][NEWLINE]He dived back into the stone, swimming kilometers away in mere moments, but never straying too far from the molemen.</Italian>
+		<Spanish>No one can say why Mondrinth took pity on the molemen, not even the dragon himself. Perhaps it was their connection to the earth, which reminded him of his creator. Perhaps he saw in them a way to obtain more beautiful gems. Perhaps it was a disdain for the creations of Esus seeping into a domain that should be Kilmorph's. And perhaps it was a matter of loneliness, brought by the silence of the Compact.[NEWLINE][NEWLINE]The dragon shook the thought from his head. He moved through the ground like it was water, passing through hills and mountains but somehow never disturbing the earth. He breached in one of the Kuskekh burrow cities, settling down as a crowd watched in awe. Many watched in awe, some bowed in respect or religious fervor, and a few, he noted, backed away nervously.[NEWLINE][NEWLINE]A few minutes passed before an entourage, led by the city's chief and head mage, approached. Behind them were a few burrowers laden with gems. A mix of adepts and soldiers unloaded the gems carefully in front of the dragon in two separate piles. Mondrinth could see there was a silent tension between the two groups, and it didn't take a genius to figure out that they saw their tributes as some kind of factional powerplay for his favor.[NEWLINE][NEWLINE]The mage opened his mouth to speak, only to be interrupted by the chief,[NEWLINE]"Please, great Mondrinth, accept our humble tribute. These are the finest gems we mined this season, handpicked by us just for you."[NEWLINE][NEWLINE]Such formal respect! The earth dragon didn't mind it, though he couldn't help but think back to the pleasant conversations he held in the Kusekh burrowcity a few mountains away.[NEWLINE][NEWLINE]Then the mage, side-eyeing the chief, bowed,[NEWLINE]"You will find, great dragon, that my adepts have found some gems of particular arcane value that the others missed."[NEWLINE][NEWLINE]Mondrinth surveyed the two piles. Nothing in either pile was particularly interesting. The "finest" the chief had picked were just scraps of amber he had seen thousands of times. The "arcane" gems the mage picked wouldn't be able to charge even a simple spell.[NEWLINE][NEWLINE]He took both piles, making sure he grabbed both piles at the same time so as to not show favoritism.[NEWLINE][NEWLINE]"Thank you, Kusekh. Your gifts please me, and you will have my protection for another season."[NEWLINE][NEWLINE]In truth, Mondrinth would stay by the molemen even without their gem offerings. Of course, he would never tell them that. That was a matter of pride.[NEWLINE][NEWLINE]He dived back into the stone, swimming kilometers away in mere moments, but never straying too far from the molemen.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOLEMAN_MONDRINTH_STRATEGY</Tag>
+		<English>A powerful earth dragon, Mondrinth is able to teleport with ease. His magnetic fields gives him the ability to cast Repulse Metal, which robs enemy units of their weapon promotions.</English>
+		<French>A powerful earth dragon, Mondrinth is able to teleport with ease. His magnetic fields gives him the ability to cast Repulse Metal, which robs enemy units of their weapon promotions.</French>
+		<German>A powerful earth dragon, Mondrinth is able to teleport with ease. His magnetic fields gives him the ability to cast Repulse Metal, which robs enemy units of their weapon promotions.</German>
+		<Italian>A powerful earth dragon, Mondrinth is able to teleport with ease. His magnetic fields gives him the ability to cast Repulse Metal, which robs enemy units of their weapon promotions.</Italian>
+		<Spanish>A powerful earth dragon, Mondrinth is able to teleport with ease. His magnetic fields gives him the ability to cast Repulse Metal, which robs enemy units of their weapon promotions.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOLEMAN_MONDRINTH_CREATION</Tag>
+		<English>A powerful earth dragon, Mondrinth is able to teleport with ease. His magnetic fields gives him the ability to cast Repulse Metal, which robs enemy units of their weapon promotions.</English>
+		<French>A powerful earth dragon, Mondrinth is able to teleport with ease. His magnetic fields gives him the ability to cast Repulse Metal, which robs enemy units of their weapon promotions.</French>
+		<German>A powerful earth dragon, Mondrinth is able to teleport with ease. His magnetic fields gives him the ability to cast Repulse Metal, which robs enemy units of their weapon promotions.</German>
+		<Italian>A powerful earth dragon, Mondrinth is able to teleport with ease. His magnetic fields gives him the ability to cast Repulse Metal, which robs enemy units of their weapon promotions.</Italian>
+		<Spanish>A powerful earth dragon, Mondrinth is able to teleport with ease. His magnetic fields gives him the ability to cast Repulse Metal, which robs enemy units of their weapon promotions.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALUNIT_MOLEMAN</Tag>
+		<English>Molemen</English>
+		<French>Molemen</French>
+		<German>Molemen</German>
+		<Italian>Molemen</Italian>
+		<Spanish>Molemen</Spanish>
+	</TEXT>
+	<!--Misc-->
+	<TEXT>
+		<Tag>TXT_KEY_AFFINITY_LIVESTOCK</Tag>
+		<English>Livestock Affinity</English>
+		<French>Livestock Affinity</French>
+		<German>Livestock Affinity</German>
+		<Italian>Livestock Affinity</Italian>
+		<Spanish>Livestock Affinity</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_AFFINITY_STONE</Tag>
+		<English>Stone Grafting</English>
+		<French>Stone Grafting</French>
+		<German>Stone Grafting</German>
+		<Italian>Stone Grafting</Italian>
+		<Spanish>Stone Grafting</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_AFFINITY_GEM</Tag>
+		<English>Gem Grafting</English>
+		<French>Gem Grafting</French>
+		<German>Gem Grafting</German>
+		<Italian>Gem Grafting</Italian>
+		<Spanish>Gem Grafting</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MOLEMAN_TUNNELS</Tag>
+		<English>Tunnel</English>
+		<French>Tunnel</French>
+		<German>Tunnel</German>
+		<Italian>Tunnel</Italian>
+		<Spanish>Tunnel</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILD_MOLEMAN_TUNNEL</Tag>
+		<English>Build [LINK=ROUTE_MOLEMAN_TUNNELS]Tunnels[\LINK]</English>
+		<French>Build [LINK=ROUTE_MOLEMAN_TUNNELS]Tunnels[\LINK]</French>
+		<German>Build [LINK=ROUTE_MOLEMAN_TUNNELS]Tunnels[\LINK]</German>
+		<Italian>Build [LINK=ROUTE_MOLEMAN_TUNNELS]Tunnels[\LINK]</Italian>
+		<Spanish>Build [LINK=ROUTE_MOLEMAN_TUNNELS]Tunnels[\LINK]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILD_MOLEMAN_SINKHOLE</Tag>
+		<English>Create [LINK=IMPROVEMENT_MOLEMAN_SINKHOLE]Sinkhole[\LINK]</English>
+		<French>Create [LINK=IMPROVEMENT_MOLEMAN_SINKHOLE]Sinkhole[\LINK]</French>
+		<German>Create [LINK=IMPROVEMENT_MOLEMAN_SINKHOLE]Sinkhole[\LINK]</German>
+		<Italian>Create [LINK=IMPROVEMENT_MOLEMAN_SINKHOLE]Sinkhole[\LINK]</Italian>
+		<Spanish>Create [LINK=IMPROVEMENT_MOLEMAN_SINKHOLE]Sinkhole[\LINK]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_UNDERDWELLING</Tag>
+		<English>Underdwelling</English>
+		<French>Underdwelling</French>
+		<German>Underdwelling</German>
+		<Italian>Underdwelling</Italian>
+		<Spanish>Underdwelling</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_UNDERDWELLING_STRATEGY</Tag>
+		<English>This allows for [LINK=CIVILIZATION_MOLEMEN]Kusekh[\LINK] units to use [LINK=ROUTE_MOLEMAN_TUNNELS]Tunnels[\LINK].</English>
+		<French>Underdwelling</French>
+		<German>Underdwelling</German>
+		<Italian>Underdwelling</Italian>
+		<Spanish>Underdwelling</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_MOLERUN</Tag>
+		<English>Molerun</English>
+		<French>Molerun</French>
+		<German>Molerun</German>
+		<Italian>Molerun</Italian>
+		<Spanish>Molerun</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_MOLERUN_HELP</Tag>
+		<English>Gives a [LINK=PROMOTION_MOLEMAN_SINKHOLE_MALUS]Molerun Malus[\LINK] to non-[LINK=PROMOTION_MOLEMAN]Molekin[\LINK] units within the owner's territory, with some exceptions:[NEWLINE][ICON_BULLET]Units that the Kusekh own, including non-molekin units[NEWLINE][ICON_BULLET]Stacks that have a hero unit[NEWLINE][ICON_BULLET]Stacks that have a flying unit[NEWLINE][ICON_BULLET]Stacks that have a molekin unit[NEWLINE][ICON_BULLET]Stacks that have an arcane unit with earth magic</English>
+		<French>Gives a [LINK=PROMOTION_MOLEMAN_SINKHOLE_MALUS]Molerun Malus[\LINK] to non-[LINK=PROMOTION_MOLEMAN]Molekin[\LINK] units within the owner's territory, with some exceptions:[NEWLINE][ICON_BULLET]Units that the Kusekh own, including non-molekin units[NEWLINE][ICON_BULLET]Stacks that have a hero unit[NEWLINE][ICON_BULLET]Stacks that have a flying unit[NEWLINE][ICON_BULLET]Stacks that have a molekin unit[NEWLINE][ICON_BULLET]Stacks that have an arcane unit with earth magic</French>
+		<German>Gives a [LINK=PROMOTION_MOLEMAN_SINKHOLE_MALUS]Molerun Malus[\LINK] to non-[LINK=PROMOTION_MOLEMAN]Molekin[\LINK] units within the owner's territory, with some exceptions:[NEWLINE][ICON_BULLET]Units that the Kusekh own, including non-molekin units[NEWLINE][ICON_BULLET]Stacks that have a hero unit[NEWLINE][ICON_BULLET]Stacks that have a flying unit[NEWLINE][ICON_BULLET]Stacks that have a molekin unit[NEWLINE][ICON_BULLET]Stacks that have an arcane unit with earth magic</German>
+		<Italian>Gives a [LINK=PROMOTION_MOLEMAN_SINKHOLE_MALUS]Molerun Malus[\LINK] to non-[LINK=PROMOTION_MOLEMAN]Molekin[\LINK] units within the owner's territory, with some exceptions:[NEWLINE][ICON_BULLET]Units that the Kusekh own, including non-molekin units[NEWLINE][ICON_BULLET]Stacks that have a hero unit[NEWLINE][ICON_BULLET]Stacks that have a flying unit[NEWLINE][ICON_BULLET]Stacks that have a molekin unit[NEWLINE][ICON_BULLET]Stacks that have an arcane unit with earth magic</Italian>
+		<Spanish>Gives a [LINK=PROMOTION_MOLEMAN_SINKHOLE_MALUS]Molerun Malus[\LINK] to non-[LINK=PROMOTION_MOLEMAN]Molekin[\LINK] units within the owner's territory, with some exceptions:[NEWLINE][ICON_BULLET]Units that the Kusekh own, including non-molekin units[NEWLINE][ICON_BULLET]Stacks that have a hero unit[NEWLINE][ICON_BULLET]Stacks that have a flying unit[NEWLINE][ICON_BULLET]Stacks that have a molekin unit[NEWLINE][ICON_BULLET]Stacks that have an arcane unit with earth magic</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MOLEMAN_PILLAGE_HEAL_HELP</Tag>
+		<English>[ICON_BULLET]Regains 25% Health when pillaging Farms and Pastures (75% if within the owner's territory)</English>
+		<French>[ICON_BULLET]Regains 25% Health when pillaging Farms and Pastures (75% if within the owner's territory)</French>
+		<German>[ICON_BULLET]Regains 25% Health when pillaging Farms and Pastures (75% if within the owner's territory)</German>
+		<Italian>[ICON_BULLET]Regains 25% Health when pillaging Farms and Pastures (75% if within the owner's territory)</Italian>
+		<Spanish>[ICON_BULLET]Regains 25% Health when pillaging Farms and Pastures (75% if within the owner's territory)</Spanish>
+	</TEXT>
+</Civ4GameText>

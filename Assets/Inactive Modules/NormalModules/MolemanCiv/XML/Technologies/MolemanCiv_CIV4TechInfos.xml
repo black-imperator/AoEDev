@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Tech Infos -->
+<Civ4TechInfos xmlns="x-schema:MolemanCiv_CIV4TechnologiesSchema.xml">
+	<TechInfos>
+		<TechInfo>
+			<!-- Underdwelling -->
+			<Type>TECH_UNDERDWELLING</Type>
+			<Description>TXT_KEY_TECH_UNDERDWELLING</Description>
+			<Strategy>TXT_KEY_TECH_UNDERDWELLING_STRATEGY</Strategy>
+			<Advisor>ADVISOR_GROWTH</Advisor>
+			<iCost>-1</iCost>
+			<iAdvancedStartCost>-1</iAdvancedStartCost>
+			<Era>ERA_ANCIENT</Era>
+			<bDisable>1</bDisable>
+			<iGridX>1</iGridX>
+			<iGridY>12</iGridY>
+			<Quote>TXT_KEY_TECH_UNDERDWELLING_QUOTE</Quote>
+			<Sound>AS2D_TECH_DING</Sound>
+			<SoundMP>AS2D_TECH_DING</SoundMP>
+			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/underdwelling.dds</Button>
+		</TechInfo>
+	</TechInfos>
+</Civ4TechInfos>

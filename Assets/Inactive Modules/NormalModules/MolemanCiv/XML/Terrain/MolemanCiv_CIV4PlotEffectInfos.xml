@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Firaxis Games (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Feature -->
+<Civ4PlotEffectInfos xmlns="x-schema:MolemanCiv_CIV4TerrainSchema.xml">
+	<PlotEffectInfos>
+		<PlotEffectInfo>
+			<!-- Moleman Effect -->
+			<Type>PLOT_EFFECT_MOLERUN</Type>
+			<Description>TXT_KEY_FEATURE_MOLERUN</Description>
+			<Help>TXT_KEY_FEATURE_MOLERUN_HELP</Help>
+			<Civilopedia>TXT_KEY_FEATURE_MOLERUN_HELP</Civilopedia>
+			<DefaultFeatureGraphics>FEATURE_MOLERUN</DefaultFeatureGraphics>
+			<Button>Art/Civs/Sidar/mist.dds</Button>
+			<iSeeThrough>1</iSeeThrough>
+			<bDispellable>1</bDispellable>
+		</PlotEffectInfo>
+	</PlotEffectInfos>
+</Civ4PlotEffectInfos>

@@ -1,0 +1,39 @@
+;Name - no need to explain
+;note: one line
+[name]
+Moleman Civ
+;
+;
+;Version - version of module
+;Note: it have to be number, so only numberic characters and none or one period
+;note: one line
+[version]
+0.1
+;
+;
+;RifE version - version of RifE for which is this module tested, checked, developed, etc
+;Note: it have to be number, so only numberic characters and none or one period
+;note: one line
+[rifeversion]
+1.1
+;
+;
+;Author - you
+;note: one line
+[author]
+Wonderblunder
+;
+;
+;Short description - text showed in contect menu
+;note: one line
+[shortdesc]
+Adds the Kusekh, a moleman civilization
+;
+;
+;Description - text showed in message box
+;note: can be multiline
+[desc]
+
+Adds the molemen, chimeric experiments from the Age of Magic that escaped their creators and hid underground until the Age of Rebirth.
+
+V1.0
