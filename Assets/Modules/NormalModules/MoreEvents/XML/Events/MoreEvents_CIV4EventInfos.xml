@@ -879,13 +879,18 @@
 		</EventInfo>
 		<EventInfo><!-- Wayward Elves events-->
 			<Type>EVENT_WAYWARD_ELVES_5</Type>
+			<bForceOverwrite>1</bForceOverwrite>
 			<Description>TXT_KEY_EVENT_WAYWARD_ELVES_5</Description>
+			<AndDependencyTypes>
+		        <DependencyType>MODULE_MORE_EVENTS</DependencyType>
+		    </AndDependencyTypes>
 			<bPickCity>1</bPickCity>
 			<PythonCallback>doWayWardElves5</PythonCallback>
+			<PythonCanDo>canDoWaywardElves5</PythonCanDo>
 			<PythonHelp>helpWayWardElves5</PythonHelp>
 			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>1000</iAIValue>
-			<PrereqAlignment>ALIGNMENT_GOOD</PrereqAlignment>
+		
 		</EventInfo>
 		<EventInfo><!-- Renowned Market events-->
 			<Type>EVENT_RENOWNED_MARKET_1</Type>
@@ -1864,11 +1869,33 @@
 		</EventInfo>
 		<EventInfo><!--Save the Witch-->
 			<Type>EVENT_WITCH_1</Type>
+			<PythonCanDo>witchBlockCasters</PythonCanDo>
 			<PythonCallback>doWitch1</PythonCallback>
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_WITCH_2</Type>
+			<PythonCanDo>witchBlockCasters</PythonCanDo>
 			<PythonCallback>doWitch2</PythonCallback>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_WITCH_AMURITES</Type>
+			<Description>TXT_KEY_EVENT_WITCH_AMURITES</Description>
+			<bPickCity>1</bPickCity>
+			<PrereqCivilization>CIVILIZATION_AMURITES</PrereqCivilization>
+			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>1000</iAIValue>
+			<UnitClass>UNITCLASS_ADEPT</UnitClass>
+			<iNumFreeUnits>1</iNumFreeUnits>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_WITCH_SHEAIM</Type>
+			<Description>TXT_KEY_EVENT_WITCH_SHEAIM</Description>
+			<bPickCity>1</bPickCity>
+			<PrereqCivilization>CIVILIZATION_SHEAIM</PrereqCivilization>
+			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>1000</iAIValue>
+			<UnitClass>UNITCLASS_ADEPT</UnitClass>
+			<iNumFreeUnits>1</iNumFreeUnits>
 		</EventInfo>
 		<EventInfo><!--Assassin War-->
 			<Type>EVENT_ASSASSIN_WAR_1</Type>

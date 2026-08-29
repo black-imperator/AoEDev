@@ -6356,6 +6356,8 @@
 			<Events>
 				<Event>EVENT_WITCH_1</Event>
 				<Event>EVENT_WITCH_2</Event>
+				<Event>EVENT_WITCH_AMURITES</Event>
+				<Event>EVENT_WITCH_SHEAIM</Event>
 			</Events>
 			<bRecurring>1</bRecurring>
 			<bPickCity>1</bPickCity>

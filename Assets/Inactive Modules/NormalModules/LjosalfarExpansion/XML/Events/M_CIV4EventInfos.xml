@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Event Infos -->
+<Civ4EventInfos xmlns="x-schema:M_CIV4EventSchema.xml">
+	<EventInfos>
+		<EventInfo><!-- Wayward Elves events-->
+			<Type>EVENT_WAYWARD_ELVES_5</Type>
+			<PythonCallback>doWayWardElves5patched</PythonCallback>
+		</EventInfo>
+	</EventInfos>
+</Civ4EventInfos>

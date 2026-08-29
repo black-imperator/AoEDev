@@ -1035,6 +1035,44 @@ def helpWayWardElves4(argsList):
 	kTriggeredData = argsList[1]
 	szHelp = localText.getText("TXT_KEY_EVENT_WAYWARD_ELVES_4_HELP", ())
 	return szHelp
+	
+def witchBlockCasters(argsList):
+	iEvent = argsList[0]
+	kTriggeredData = argsList[1]
+	pPlayer = gc.getPlayer(kTriggeredData.ePlayer)
+	if (pPlayer.getCivilizationType() == gc.getInfoTypeForString("CIVILIZATION_AMURITES")):
+		return False
+	if (pPlayer.getCivilizationType() == gc.getInfoTypeForString("CIVILIZATION_SHEAIM")):
+		return False
+	return True
+
+def canDoWaywardElves5 (argsList):
+	iEvent = argsList[0]
+	kTriggeredData = argsList[1]
+	pPlayer = gc.getPlayer(kTriggeredData.ePlayer)
+	iGood = getInfoType('ALIGNMENT_GOOD')
+	if (pPlayer.getCivilizationType() == gc.getInfoTypeForString("CIVILIZATION_LJOSALFAR")):
+		return True
+	if (pPlayer.getCivilizationType() == gc.getInfoTypeForString("CIVILIZATION_GRIGORI")):
+		return True
+	
+	return pPlayer.getAlignment()== iGood
+
+#Patched is for LjosalfarExpansion
+def doWayWardElves5patched (argsList):
+	iEvent = argsList[0]
+	kTriggeredData = argsList[1]
+	pPlayer = gc.getPlayer(kTriggeredData.ePlayer)
+	pCity = pPlayer.getCity(kTriggeredData.iCityId)
+	
+	if (pPlayer.getCivilizationType() == gc.getInfoTypeForString("CIVILIZATION_LJOSALFAR")):
+		pCity.setNumRealBuilding(gc.getInfoTypeForString('BUILDING_ARCHERY_RANGE_LJOS'), 1)
+	else:
+		pCity.setNumRealBuilding(gc.getInfoTypeForString('BUILDING_ARCHERY_RANGE'), 1)
+	
+	newUnit1 = pPlayer.initUnit(gc.getInfoTypeForString('UNIT_ARCHER_LJOS'), pCity.getX(),pCity.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+	newUnit1.setHasPromotion(gc.getInfoTypeForString('PROMOTION_COMMANDO'), True)
+	newUnit1.setHasPromotion(gc.getInfoTypeForString('PROMOTION_ELF'), True)
 
 def doWayWardElves5 (argsList):
 	iEvent = argsList[0]
