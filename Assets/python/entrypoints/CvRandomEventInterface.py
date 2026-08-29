@@ -8430,3 +8430,15 @@ def popupTraitLethe(argsList):
 def popupTraitJudecca(argsList):
 	szHelp = CyGameTextMgr().parseTraits(getInfoType("TRAIT_PACT_JUDECCA"), -1, false)
 	return szHelp
+	
+	
+#EVENT_WITCH_1 2	
+def witchBlockCasters(argsList):
+	iEvent = argsList[0]
+	kTriggeredData = argsList[1]
+	pPlayer = gc.getPlayer(kTriggeredData.ePlayer)
+	if (pPlayer.getCivilizationType() == gc.getInfoTypeForString("CIVILIZATION_AMURITES")):
+		return False
+	if (pPlayer.getCivilizationType() == gc.getInfoTypeForString("CIVILIZATION_SHEAIM")):
+		return False
+	return True

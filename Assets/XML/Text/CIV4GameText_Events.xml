@@ -5302,4 +5302,20 @@
 		<Italian>[ICON_BULLET]Production in all cities: %D1[ICON_PRODUCTION]</Italian>
 		<Spanish>[ICON_BULLET]Production in all cities: %D1[ICON_PRODUCTION]</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>EVENT_WITCH_AMURITES</Tag>
+		<English>Are you crazy? That's one of the Caswallan's concubines!</English>
+		<French>Are you crazy? That's one of the Caswallan's concubines!</French>
+		<German>Are you crazy? That's one of the Caswallan's concubines!</German>
+		<Italian>Are you crazy? That's one of the Caswallan's concubines!</Italian>
+		<Spanish>Are you crazy? That's one of the Caswallan's concubines!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>EVENT_WITCH_SHEAIM</Tag>
+		<English>Recruit her!</English>
+		<French>Recruit her!</French>
+		<German>Recruit her!</German>
+		<Italian>Recruit her!</Italian>
+		<Spanish>Recruit her!</Spanish>
+	</TEXT>
 </Civ4GameText>

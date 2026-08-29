@@ -4554,6 +4554,7 @@
 		<EventInfo>
 			<Type>EVENT_WITCH_1</Type>
 			<Description>TXT_KEY_EVENT_WITCH_1</Description>
+			<PythonCanDo>witchBlockCasters</PythonCanDo>
 			<bPickCity>1</bPickCity>
 			<iHappyTurns>10</iHappyTurns>
 			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
@@ -4562,8 +4563,29 @@
 		<EventInfo>
 			<Type>EVENT_WITCH_2</Type>
 			<Description>TXT_KEY_EVENT_WITCH_2</Description>
+			<PythonCanDo>witchBlockCasters</PythonCanDo>
 			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>1000</iAIValue>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_WITCH_AMURITES</Type>
+			<Description>TXT_KEY_EVENT_WITCH_AMURITES</Description>
+			<bPickCity>1</bPickCity>
+			<PrereqCivilization>CIVILIZATION_AMURITES</PrereqCivilization>
+			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>1000</iAIValue>
+			<UnitClass>UNITCLASS_ADEPT</UnitClass>
+			<iNumFreeUnits>1</iNumFreeUnits>
+		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_WITCH_SHEAIM</Type>
+			<Description>TXT_KEY_EVENT_WITCH_SHEAIM</Description>
+			<bPickCity>1</bPickCity>
+			<PrereqCivilization>CIVILIZATION_SHEAIM</PrereqCivilization>
+			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>1000</iAIValue>
+			<UnitClass>UNITCLASS_ADEPT</UnitClass>
+			<iNumFreeUnits>1</iNumFreeUnits>
 		</EventInfo>
 		<EventInfo>
 			<Type>EVENT_LUNATIC_1</Type>
