@@ -296,6 +296,7 @@
 	<ElementType name="iBlockBonuses" content="textOnly" dt:type="int"/>
 	<ElementType name="iRestoreBonuses" content="textOnly" dt:type="int"/>
 	<ElementType name="iRevealAllBonuses" content="textOnly" dt:type="int"/>
+	<ElementType name="DeathList" content="textOnly"/>
 	<ElementType name="ReligionInfo" content="eltOnly" order="many">
 		<element type="Type"/>
 		<element type="Description"/>
@@ -343,6 +344,7 @@
 		<element type="StateReligionYields"/><!-- Revenue added to city (food, hammers, gold) if state religion in [this religion, no religion] -->
 		<element type="iOrderPriority"/>
 		<element type="ReligionInfoSoundtracks"/>
+		<element type="DeathList"/>
 	</ElementType>
 	<ElementType name="ReligionInfos" content="eltOnly">
 		<element type="ReligionInfo" maxOccurs="*"/>
@@ -1999,9 +2001,28 @@
 	<ElementType name="Civ4ModuleIdInfos" content="eltOnly">
 		<element type="ModuleIdInfos" minOccurs="0"/>
 	</ElementType>
-		<ElementType name="DeathListInfo" content="eltOnly">
+	<ElementType name="bBypassImmortal" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bKeepExp" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bKeepPromo" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bRequiresLivingCiv" content="textOnly" dt:type="boolean"/>
+	<ElementType name="DefaultUnitType" content="textOnly"/>
+	<ElementType name="CivReceiver" content="textOnly"/>
+	<ElementType name="iPriority" content="textOnly" dt:type="int"/>
+	<ElementType name="iReturnDelay" content="textOnly" dt:type="int"/>
+	<ElementType name="iMaxUnitsReleased" content="textOnly" dt:type="int"/>
+	<ElementType name="DeathListInfo" content="eltOnly" order="many">
 		<element type="Type"/>
 		<element type="Description"/>
+		<element type="bBypassImmortal"/>
+		<element type="bKeepExp"/>
+		<element type="bKeepPromo"/>
+		<element type="bRequiresLivingCiv"/>
+		<element type="DefaultUnitType"/>
+		<element type="CivReceiver"/>
+		<element type="iPriority"/>
+		<element type="iReturnDelay"/>
+		<element type="iMaxUnitsReleased"/>
+		<element type="PythonPrereq"/>
 	</ElementType>
 	<ElementType name="DeathListInfos" content="eltOnly">
 		<element type="DeathListInfo" minOccurs="0" maxOccurs="*"/>

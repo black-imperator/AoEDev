@@ -171,6 +171,11 @@
 	<ElementType name="bCopyCastersPromotions" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bPermanentUnitCreate" content="textOnly" dt:type="boolean"/>
 	<ElementType name="CreateUnitPromotion" content="textOnly"/>
+	<ElementType name="AdditionalCostFlag" content="textOnly"/>
+	<ElementType name="iAdditionalCostFlagChange" content="textOnly" dt:type="int"/>
+	<ElementType name="Flag" content="textOnly"/>
+	<ElementType name="iFlagChange" content="textOnly" dt:type="int"/>
+	<ElementType name="bGlobalFlagChange" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bImmuneTeam" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bImmuneNeutral" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bImmuneEnemy" content="textOnly" dt:type="boolean"/>
@@ -299,6 +304,11 @@
 		<element type="bCopyCastersPromotions"/>
 		<element type="bPermanentUnitCreate"/>
 		<element type="CreateUnitPromotion"/>
+		<element type="AdditionalCostFlag"/>
+		<element type="iAdditionalCostFlagChange"/>
+		<element type="Flag"/>
+		<element type="iFlagChange"/>
+		<element type="bGlobalFlagChange"/>
 		<element type="bImmuneTeam"/>
 		<element type="bImmuneNeutral"/>
 		<element type="bImmuneEnemy"/>
