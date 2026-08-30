@@ -30471,7 +30471,7 @@ void CvUnit::read(FDataStreamBase* pStream)
 	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PROMOTION, m_piDenyPromotion);
 	pStream->Read(&m_iSpawnPlotX);
 	pStream->Read(&m_iSpawnPlotY);
-	pStream->Read(&m_eSpawnImprovementType);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_IMPROVEMENT, &m_eSpawnImprovementType);
 	pStream->Read(&m_iNoBadExplore);
 	pStream->ReadString(m_szQuote);
 	pStream->ReadString(m_szImage);
@@ -30556,15 +30556,15 @@ void CvUnit::read(FDataStreamBase* pStream)
 /**							Allows Multiple Invisible types on a Unit							**/
 /*************************************************************************************************/
 /**								---- Start Original Code ----									**
-	pStream->Read(&m_iInvisibleType);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_INVISIBLE, &m_iInvisibleType);
 /**								----  End Original Code  ----									**/
 /*************************************************************************************************/
 /**	CandyMan								END													**/
 /*************************************************************************************************/
-	pStream->Read(&m_iRace);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_PROMOTION, &m_iRace);
 	pStream->Read(&m_iOriginalCiv);
-	pStream->Read(&m_iGraphicalAddOnPromotion);
-	pStream->Read(&m_iReligion);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_PROMOTION, &m_iGraphicalAddOnPromotion);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_RELIGION, &m_iReligion);
 	pStream->Read(&m_iResist);
 	pStream->Read(&m_iResistModify);
 	pStream->Read(&m_iScenarioCounter);
@@ -30572,7 +30572,7 @@ void CvUnit::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iSpellDamageModify);
 	pStream->Read(&m_iSummoner);
 	pStream->Read(&m_iTotalDamageTypeCombat);
-	pStream->Read(&m_iUnitArtStyleType);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_UNIT_ART_STYLE_TYPE, &m_iUnitArtStyleType);
 	pStream->Read(&m_iWorkRateModify);
 	pStream->Read(&m_iWorkRateModifier);
 	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_paiBonusAffinity);

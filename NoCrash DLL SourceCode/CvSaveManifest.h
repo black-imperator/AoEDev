@@ -207,6 +207,16 @@ namespace CvSaveManifest
 	// Content the build no longer has maps to -1, which is NO_X -- the right answer.
 	int remapId(ContentType eType, int iValue);
 
+	// Some content ids are stored in a short, not an int. The template below would
+	// read four bytes into a two byte field and take the next field with it, so this
+	// non-template overload -- which wins for short* -- reads the native width.
+	inline void readId(FDataStreamBase* pStream, ContentType eType, short* pDest)
+	{
+		short sValue = 0;
+		pStream->Read(&sValue);
+		*pDest = (short)remapId(eType, (int)sValue);
+	}
+
 	template <class T>
 	void readId(FDataStreamBase* pStream, ContentType eType, T* pDest)
 	{

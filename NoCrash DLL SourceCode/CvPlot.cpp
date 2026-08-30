@@ -11660,10 +11660,10 @@ void CvPlot::read(FDataStreamBase* pStream)
 /**	New Tag Defs	(PlotInfos)				12/31/08								Xienwolf	**/
 /**									Read Data from Save Files									**/
 /*************************************************************************************************/
-	pStream->Read(&m_eRealFeatureType);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_FEATURE, &m_eRealFeatureType);
 	pStream->Read(&m_iRealFeatureVariety);
 	pStream->Read(&m_iTempFeatureTimer);
-	pStream->Read(&m_eRealBonusType);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_BONUS, &m_eRealBonusType);
 	pStream->Read(&m_iTempBonusTimer);
 	pStream->Read(&m_iNumLairSpawnsAlive);
 	pStream->Read(&m_bNeedsRebuilding);

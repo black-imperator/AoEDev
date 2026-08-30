@@ -21098,7 +21098,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT_COMBAT, m_paiTrainXPCap);
 	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT_COMBAT, m_pafTrainXPRate);
 
-	pStream->Read(&m_eStateNameType);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_STATE_NAME, &m_eStateNameType);
 	pStream->Read(&m_iNumCitiesConquered);
 /*************************************************************************************************/
 /**	New Tag Defs							END													**/
