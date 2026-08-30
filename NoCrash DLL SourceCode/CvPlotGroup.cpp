@@ -10,6 +10,7 @@
 #include "CvDLLFAStarIFaceBase.h"
 #include "FProfiler.h"
 #include "CvSaveManifest.h"
+#include "CvTaggedStream.h"
 
 // Public Functions...
 
@@ -304,6 +305,17 @@ CLLNode<XYCoords>* CvPlotGroup::headPlotsNode()
 }
 
 
+// Tag numbers for this class's tagged record. APPEND ONLY: renumbering an existing
+// tag makes every save written before the change decode that field as something
+// else, silently. A retired field leaves its number unused rather than handing it on.
+namespace
+{
+	enum PlotGroupTag
+	{
+		TAG_ID = 1,
+		TAG_OWNER,
+	};
+}
 void CvPlotGroup::read(FDataStreamBase* pStream)
 {
 	// Init saved data
@@ -311,10 +323,28 @@ void CvPlotGroup::read(FDataStreamBase* pStream)
 
 	uint uiFlag=0;
 	pStream->Read(&uiFlag);	// flags for expansion
-
-	pStream->Read(&m_iID);
-
-	pStream->Read((int*)&m_eOwner);
+	if (uiFlag >= 1)
+	{
+		// Tagged. Order does not matter, an unknown tag is stepped over, and a field
+		// the writer omitted keeps what reset() gave it.
+		CvTagReader kReader(pStream);
+		while (kReader.next())
+		{
+			switch (kReader.tag())
+			{
+			case TAG_ID: m_iID = kReader.asInt(); break;
+			case TAG_OWNER: m_eOwner = (PlayerTypes)kReader.asInt(); break;
+			default: kReader.skip(); break;
+			}
+		}
+	}
+	else
+	{
+		// Positional, exactly as it always was. This branch is the compatibility
+		// shim; it is not new code and must not be edited.
+		pStream->Read(&m_iID);
+		pStream->Read((int*)&m_eOwner);
+	}
 
 	FAssertMsg((0 < GC.getNumBonusInfos()), "GC.getNumBonusInfos() is not greater than zero but an array is being allocated in CvPlotGroup::read");
 	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_paiNumBonuses);
@@ -325,12 +355,14 @@ void CvPlotGroup::read(FDataStreamBase* pStream)
 
 void CvPlotGroup::write(FDataStreamBase* pStream)
 {
-	uint uiFlag=0;
+	uint uiFlag=1;	// 1: tagged fields (CvTaggedStream)
 	pStream->Write(uiFlag);		// flag for expansion
-
-	pStream->Write(m_iID);
-
-	pStream->Write(m_eOwner);
+	{
+		CvTagWriter kWriter(pStream);
+		kWriter.write(TAG_ID, m_iID);
+		kWriter.write(TAG_OWNER, (int)m_eOwner);
+		kWriter.end();
+	}
 
 	FAssertMsg((0 < GC.getNumBonusInfos()), "GC.getNumBonusInfos() is not greater than zero but an array is being allocated in CvPlotGroup::write");
 	pStream->Write(GC.getNumBonusInfos(), m_paiNumBonuses);

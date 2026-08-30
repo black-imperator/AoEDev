@@ -34,6 +34,7 @@
 #include "CvDLLFAStarIFaceBase.h"
 #include "CvDLLPythonIFaceBase.h"
 #include "CvSaveManifest.h"
+#include "CvTaggedStream.h"
 
 // Public Functions...
 
@@ -1388,6 +1389,24 @@ void CvMap::invalidateIsTeamBorderCache(TeamTypes eTeam)
 // read object from a stream
 // used during load
 //
+// Tag numbers for this class's tagged record. APPEND ONLY: renumbering an existing
+// tag makes every save written before the change decode that field as something
+// else, silently. A retired field leaves its number unused rather than handing it on.
+namespace
+{
+	enum MapTag
+	{
+		TAG_GRID_WIDTH = 1,
+		TAG_GRID_HEIGHT,
+		TAG_LAND_PLOTS,
+		TAG_OWNED_PLOTS,
+		TAG_TOP_LATITUDE,
+		TAG_BOTTOM_LATITUDE,
+		TAG_NEXT_RIVER_ID,
+		TAG_WRAP_X,
+		TAG_WRAP_Y,
+	};
+}
 void CvMap::read(FDataStreamBase* pStream)
 {
 	CvMapInitData defaultMapData;
@@ -1397,17 +1416,42 @@ void CvMap::read(FDataStreamBase* pStream)
 
 	uint uiFlag=0;
 	pStream->Read(&uiFlag);	// flags for expansion
-
-	pStream->Read(&m_iGridWidth);
-	pStream->Read(&m_iGridHeight);
-	pStream->Read(&m_iLandPlots);
-	pStream->Read(&m_iOwnedPlots);
-	pStream->Read(&m_iTopLatitude);
-	pStream->Read(&m_iBottomLatitude);
-	pStream->Read(&m_iNextRiverID);
-
-	pStream->Read(&m_bWrapX);
-	pStream->Read(&m_bWrapY);
+	if (uiFlag >= 1)
+	{
+		// Tagged. Order does not matter, an unknown tag is stepped over, and a field
+		// the writer omitted keeps what reset() gave it.
+		CvTagReader kReader(pStream);
+		while (kReader.next())
+		{
+			switch (kReader.tag())
+			{
+			case TAG_GRID_WIDTH: m_iGridWidth = kReader.asInt(); break;
+			case TAG_GRID_HEIGHT: m_iGridHeight = kReader.asInt(); break;
+			case TAG_LAND_PLOTS: m_iLandPlots = kReader.asInt(); break;
+			case TAG_OWNED_PLOTS: m_iOwnedPlots = kReader.asInt(); break;
+			case TAG_TOP_LATITUDE: m_iTopLatitude = kReader.asInt(); break;
+			case TAG_BOTTOM_LATITUDE: m_iBottomLatitude = kReader.asInt(); break;
+			case TAG_NEXT_RIVER_ID: m_iNextRiverID = kReader.asInt(); break;
+			case TAG_WRAP_X: m_bWrapX = kReader.asBool(); break;
+			case TAG_WRAP_Y: m_bWrapY = kReader.asBool(); break;
+			default: kReader.skip(); break;
+			}
+		}
+	}
+	else
+	{
+		// Positional, exactly as it always was. This branch is the compatibility
+		// shim; it is not new code and must not be edited.
+		pStream->Read(&m_iGridWidth);
+		pStream->Read(&m_iGridHeight);
+		pStream->Read(&m_iLandPlots);
+		pStream->Read(&m_iOwnedPlots);
+		pStream->Read(&m_iTopLatitude);
+		pStream->Read(&m_iBottomLatitude);
+		pStream->Read(&m_iNextRiverID);
+		pStream->Read(&m_bWrapX);
+		pStream->Read(&m_bWrapY);
+	}
 
 /*************************************************************************************************/
 /**	FastRebuild								01/14/09								Jean Elcard **/
@@ -1443,19 +1487,21 @@ void CvMap::read(FDataStreamBase* pStream)
 //
 void CvMap::write(FDataStreamBase* pStream)
 {
-	uint uiFlag=0;
+	uint uiFlag=1;	// 1: tagged fields (CvTaggedStream)
 	pStream->Write(uiFlag);		// flag for expansion
-
-	pStream->Write(m_iGridWidth);
-	pStream->Write(m_iGridHeight);
-	pStream->Write(m_iLandPlots);
-	pStream->Write(m_iOwnedPlots);
-	pStream->Write(m_iTopLatitude);
-	pStream->Write(m_iBottomLatitude);
-	pStream->Write(m_iNextRiverID);
-
-	pStream->Write(m_bWrapX);
-	pStream->Write(m_bWrapY);
+	{
+		CvTagWriter kWriter(pStream);
+		kWriter.write(TAG_GRID_WIDTH, m_iGridWidth);
+		kWriter.write(TAG_GRID_HEIGHT, m_iGridHeight);
+		kWriter.write(TAG_LAND_PLOTS, m_iLandPlots);
+		kWriter.write(TAG_OWNED_PLOTS, m_iOwnedPlots);
+		kWriter.write(TAG_TOP_LATITUDE, m_iTopLatitude);
+		kWriter.write(TAG_BOTTOM_LATITUDE, m_iBottomLatitude);
+		kWriter.write(TAG_NEXT_RIVER_ID, m_iNextRiverID);
+		kWriter.write(TAG_WRAP_X, m_bWrapX);
+		kWriter.write(TAG_WRAP_Y, m_bWrapY);
+		kWriter.end();
+	}
 
 /*************************************************************************************************/
 /**	FastRebuild								01/14/09								Jean Elcard **/
