@@ -2,6 +2,7 @@
 // that can be exercised without the game, and a standalone test of it is worth more
 // than the convenience of the umbrella header.
 #include "CvTaggedStream.h"
+#include "CvSaveSizeProbe.h"
 #include <string.h>
 
 namespace
@@ -30,8 +31,9 @@ namespace
 // Writer
 // ---------------------------------------------------------------------------
 
-CvTagWriter::CvTagWriter(FDataStreamBase* pStream)
+CvTagWriter::CvTagWriter(FDataStreamBase* pStream, const char* szClass)
 	: m_pStream(pStream)
+	, m_szClass(szClass)
 	, m_bEnded(false)
 {
 	// Most records are small; save the early reallocations.
@@ -125,6 +127,11 @@ void CvTagWriter::end()
 	if (!m_buffer.empty())
 	{
 		m_pStream->Write((int)m_buffer.size(), (const unsigned char*)&m_buffer[0]);
+	}
+
+	if (m_szClass != 0)
+	{
+		CvSaveSizeProbe::countTagged(m_szClass, iPrefix + (int)m_buffer.size());
 	}
 }
 

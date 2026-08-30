@@ -3,22 +3,20 @@
 #ifndef CIV4_SAVE_SIZE_PROBE_H
 #define CIV4_SAVE_SIZE_PROBE_H
 
-#include "FDataStreamBase.h"
-
 //
-// Per-class byte accounting for a save, so where the bytes go is measured rather than
+// Per-class accounting for a save, so where the bytes go is measured rather than
 // reasoned about.
 //
 // This exists because reasoning about it kept being wrong. Tagging was predicted to
 // shrink saves by 30% on a raw-byte model; the first real save grew 23%. Eliding
 // defaults was predicted to recover that; it recovered 168 bytes. Converting the two
 // largest classes was predicted to pull it back; it added another 3%. Three models,
-// three wrong answers -- at which point the only useful thing to do is count.
+// three wrong answers.
 //
-// Scoped: construct at the top of a write(), and the destructor adds the bytes that
-// function produced to that class's running total. Nested writes are attributed to the
-// innermost probe, which is what you want -- a city's own bytes should not be charged
-// to the player that owns it.
+// Bytes are counted where they are produced. The first attempt read the stream position
+// before and after each write() and measured every class as zero:
+// FDataStreamBase::GetPosition() reports nothing useful on the save stream. CvTagWriter,
+// on the other hand, knows exactly how many bytes it emitted.
 //
 // Off unless SAVE_SIZE_PROBE is set in GlobalDefinesAlt.xml.
 //
@@ -26,45 +24,19 @@ namespace CvSaveSizeProbe
 {
 	bool isEnabled();
 
-	// Zero the totals. Called at the top of the outermost write.
-	void begin();
+	// One object of this class was written.
+	void countObject(const char* szClass);
 
-	// Write the table to CvGameCoreDLL_save_size.log. Called when the save is complete.
-	void report();
+	// A tagged record of this many bytes was written for this class.
+	void countTagged(const char* szClass, int iBytes);
 
-	void add(const char* szClass, int iBytes);
+	// Dumps whatever has accumulated and starts again.
+	//
+	// There is no end-of-save hook in the DLL: the EXE drives the body and CvGame is
+	// written FIRST, not last, so a report placed after it sees only itself -- which is
+	// exactly what the first attempt produced. The table for one save is therefore
+	// written out when the NEXT save or load begins.
+	void flush();
 }
-
-
-class CvSaveSizeScope
-{
-public:
-	CvSaveSizeScope(FDataStreamBase* pStream, const char* szClass)
-		: m_pStream(pStream)
-		, m_szClass(szClass)
-		, m_uiStart(0)
-	{
-		if (CvSaveSizeProbe::isEnabled())
-		{
-			m_uiStart = pStream->GetPosition();
-		}
-	}
-
-	~CvSaveSizeScope()
-	{
-		if (CvSaveSizeProbe::isEnabled())
-		{
-			CvSaveSizeProbe::add(m_szClass, (int)(m_pStream->GetPosition() - m_uiStart));
-		}
-	}
-
-private:
-	FDataStreamBase* m_pStream;
-	const char* m_szClass;
-	unsigned int m_uiStart;
-
-	CvSaveSizeScope(const CvSaveSizeScope&);
-	CvSaveSizeScope& operator=(const CvSaveSizeScope&);
-};
 
 #endif // CIV4_SAVE_SIZE_PROBE_H

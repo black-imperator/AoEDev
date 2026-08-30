@@ -8783,6 +8783,7 @@ void CvGame::read(FDataStreamBase* pStream)
 	// Unconditional, and before anything else: this clears remap state from any
 	// earlier load in the same session. Skipping it for a save with no manifest would
 	// leave the previous game's tables in place and silently permute this one.
+	CvSaveSizeProbe::flush();
 	CvSaveManifest::beginRead();
 
 	// The manifest sits immediately after the flag, at the very top of the compressed
@@ -9134,8 +9135,8 @@ void CvGame::read(FDataStreamBase* pStream)
 
 void CvGame::write(FDataStreamBase* pStream)
 {
-	CvSaveSizeProbe::begin();
-	CvSaveSizeScope kSizeScope(pStream, "CvGame");
+	CvSaveSizeProbe::flush();
+	CvSaveSizeProbe::countObject("CvGame");
 	int iI;
 
 	uint uiFlag=SAVE_FORMAT_VERSION;	// see SAVE_FORMAT_VERSION in CvSaveManifest.h

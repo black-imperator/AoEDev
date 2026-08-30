@@ -1083,7 +1083,7 @@ void CvSelectionGroupAI::read(FDataStreamBase* pStream)
 
 void CvSelectionGroupAI::write(FDataStreamBase* pStream)
 {
-	CvSaveSizeScope kSizeScope(pStream, "CvSelectionGroupAI");
+	CvSaveSizeProbe::countObject("CvSelectionGroupAI");
 	CvSelectionGroup::write(pStream);
 
 	uint uiFlag=0;

@@ -3901,7 +3901,7 @@ void CvTeamAI::read(FDataStreamBase* pStream)
 
 void CvTeamAI::write(FDataStreamBase* pStream)
 {
-	CvSaveSizeScope kSizeScope(pStream, "CvTeamAI");
+	CvSaveSizeProbe::countObject("CvTeamAI");
 	CvTeam::write(pStream);
 
 	uint uiFlag=0;

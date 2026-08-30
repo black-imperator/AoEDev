@@ -46,7 +46,8 @@
 class CvTagWriter
 {
 public:
-	explicit CvTagWriter(FDataStreamBase* pStream);
+	// szClass is only for the size probe; it may be NULL.
+	explicit CvTagWriter(FDataStreamBase* pStream, const char* szClass = 0);
 	~CvTagWriter();
 
 	void write(int iTag, int iValue);
@@ -86,6 +87,7 @@ private:
 	void putSigned(int iTag, int iValue);
 
 	FDataStreamBase* m_pStream;
+	const char* m_szClass;
 	std::vector<unsigned char> m_buffer;
 	bool m_bEnded;
 

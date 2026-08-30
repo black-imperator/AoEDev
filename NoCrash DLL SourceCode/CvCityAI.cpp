@@ -14454,7 +14454,7 @@ void CvCityAI::read(FDataStreamBase* pStream)
 //
 void CvCityAI::write(FDataStreamBase* pStream)
 {
-	CvSaveSizeScope kSizeScope(pStream, "CvCityAI");
+	CvSaveSizeProbe::countObject("CvCityAI");
 	CvCity::write(pStream);
 
 	uint uiFlag=0;

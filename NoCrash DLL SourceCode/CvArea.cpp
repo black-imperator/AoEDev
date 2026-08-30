@@ -1055,13 +1055,13 @@ void CvArea::read(FDataStreamBase* pStream)
 
 void CvArea::write(FDataStreamBase* pStream)
 {
-	CvSaveSizeScope kSizeScope(pStream, "CvArea");
+	CvSaveSizeProbe::countObject("CvArea");
 	int iI;
 
 	uint uiFlag=1;	// 1: tagged fields (CvTaggedStream)
 	pStream->Write(uiFlag);		// flag for expansion
 	{
-		CvTagWriter kWriter(pStream);
+		CvTagWriter kWriter(pStream, "CvArea");
 		kWriter.write(TAG_ID, m_iID);
 		kWriter.writeIfNonZero(TAG_NUM_TILES, m_iNumTiles);
 		kWriter.writeIfNonZero(TAG_NUM_OWNED_TILES, m_iNumOwnedTiles);

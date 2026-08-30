@@ -28519,7 +28519,7 @@ void CvUnitAI::read(FDataStreamBase* pStream)
 
 void CvUnitAI::write(FDataStreamBase* pStream)
 {
-	CvSaveSizeScope kSizeScope(pStream, "CvUnitAI");
+	CvSaveSizeProbe::countObject("CvUnitAI");
 	CvUnit::write(pStream);
 
 	uint uiFlag=0;

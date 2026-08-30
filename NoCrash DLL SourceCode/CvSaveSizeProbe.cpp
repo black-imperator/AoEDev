@@ -38,24 +38,23 @@ bool CvSaveSizeProbe::isEnabled()
 	return level() > 0;
 }
 
-void CvSaveSizeProbe::begin()
+void CvSaveSizeProbe::countObject(const char* szClass)
 {
-	g_totals.clear();
-}
-
-void CvSaveSizeProbe::add(const char* szClass, int iBytes)
-{
-	if (iBytes < 0)
+	if (isEnabled())
 	{
-		return;		// stream position went backwards; nothing useful to record
+		g_totals[std::string(szClass)].iCount++;
 	}
-
-	Entry& kEntry = g_totals[std::string(szClass)];
-	kEntry.iBytes += iBytes;
-	kEntry.iCount++;
 }
 
-void CvSaveSizeProbe::report()
+void CvSaveSizeProbe::countTagged(const char* szClass, int iBytes)
+{
+	if (isEnabled() && iBytes > 0)
+	{
+		g_totals[std::string(szClass)].iBytes += iBytes;
+	}
+}
+
+void CvSaveSizeProbe::flush()
 {
 	if (!isEnabled() || g_totals.empty())
 	{
@@ -79,36 +78,31 @@ void CvSaveSizeProbe::report()
 	strncat(szPath, "CvGameCoreDLL_save_size.log", MAX_PATH - strlen(szPath) - 1);
 
 	FILE* fp = fopen(szPath[0] ? szPath : "CvGameCoreDLL_save_size.log", "a");
-	if (fp == NULL)
+	if (fp != NULL)
 	{
-		return;
+		int iObjects = 0;
+		int iTagged = 0;
+		for (std::map<std::string, Entry>::const_iterator it = g_totals.begin();
+			it != g_totals.end(); ++it)
+		{
+			iObjects += it->second.iCount;
+			iTagged += it->second.iBytes;
+		}
+
+		fprintf(fp, "---- %d objects, %d bytes in tagged records ----\n", iObjects, iTagged);
+		fprintf(fp, "  %-22s %9s %13s %11s\n", "class", "objects", "taggedBytes", "perObject");
+
+		for (std::map<std::string, Entry>::const_iterator it = g_totals.begin();
+			it != g_totals.end(); ++it)
+		{
+			const int n = it->second.iCount;
+			const int b = it->second.iBytes;
+			fprintf(fp, "  %-22s %9d %13d %11d\n",
+				it->first.c_str(), n, b, (n > 0) ? (b / n) : 0);
+		}
+		fprintf(fp, "\n");
+		fclose(fp);
 	}
 
-	int iTotal = 0;
-	for (std::map<std::string, Entry>::const_iterator it = g_totals.begin();
-		it != g_totals.end(); ++it)
-	{
-		iTotal += it->second.iBytes;
-	}
-
-	fprintf(fp, "---- save, %d bytes accounted for across %d classes ----\n",
-		iTotal, (int)g_totals.size());
-
-	for (std::map<std::string, Entry>::const_iterator it = g_totals.begin();
-		it != g_totals.end(); ++it)
-	{
-		const int iBytes = it->second.iBytes;
-		const int iCount = it->second.iCount;
-		fprintf(fp, "  %-22s %10d bytes  %7d objects  %6d each  %5.1f%%\n",
-			it->first.c_str(), iBytes, iCount,
-			iCount > 0 ? iBytes / iCount : 0,
-			iTotal > 0 ? (iBytes * 100.0) / iTotal : 0.0);
-	}
-	fprintf(fp, "\n");
-	fclose(fp);
-
-	if (gDLL != NULL)
-	{
-		gDLL->logMsg("save_size.log", "save size table written", false, true);
-	}
+	g_totals.clear();
 }

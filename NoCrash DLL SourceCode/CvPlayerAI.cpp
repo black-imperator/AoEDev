@@ -18721,7 +18721,7 @@ void CvPlayerAI::read(FDataStreamBase* pStream)
 //
 void CvPlayerAI::write(FDataStreamBase* pStream)
 {
-	CvSaveSizeScope kSizeScope(pStream, "CvPlayerAI");
+	CvSaveSizeProbe::countObject("CvPlayerAI");
 	CvPlayer::write(pStream);	// write base class data first
 
 /************************************************************************************************/

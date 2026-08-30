@@ -441,7 +441,7 @@ void CvStatistics::read(FDataStreamBase* pStream)
 
 void CvStatistics::write(FDataStreamBase* pStream)
 {
-	CvSaveSizeScope kSizeScope(pStream, "CvStatistics");
+	CvSaveSizeProbe::countObject("CvStatistics");
 	// Write game data into record
 	m_GameRecord.write(pStream);
 

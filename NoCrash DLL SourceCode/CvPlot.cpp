@@ -11919,13 +11919,13 @@ void CvPlot::read(FDataStreamBase* pStream)
 //
 void CvPlot::write(FDataStreamBase* pStream)
 {
-	CvSaveSizeScope kSizeScope(pStream, "CvPlot");
+	CvSaveSizeProbe::countObject("CvPlot");
 	uint iI;
 
 	uint uiFlag=1;	// 1: tagged fields (CvTaggedStream)
 	pStream->Write(uiFlag);		// flag for expansion
 	{
-		CvTagWriter kWriter(pStream);
+		CvTagWriter kWriter(pStream, "CvPlot");
 		kWriter.write(TAG_X, m_iX);
 		kWriter.write(TAG_Y, m_iY);
 		kWriter.write(TAG_AREA, m_iArea);

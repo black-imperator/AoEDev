@@ -6050,11 +6050,11 @@ void CvSelectionGroup::read(FDataStreamBase* pStream)
 
 void CvSelectionGroup::write(FDataStreamBase* pStream)
 {
-	CvSaveSizeScope kSizeScope(pStream, "CvSelectionGroup");
+	CvSaveSizeProbe::countObject("CvSelectionGroup");
 	uint uiFlag=1;	// 1: tagged fields (CvTaggedStream)
 	pStream->Write(uiFlag);		// flag for expansion
 	{
-		CvTagWriter kWriter(pStream);
+		CvTagWriter kWriter(pStream, "CvSelectionGroup");
 		kWriter.write(TAG_ID, m_iID);
 		kWriter.writeIfNonZero(TAG_MISSION_TIMER, m_iMissionTimer);
 		kWriter.writeIfNonZero(TAG_FORCE_UPDATE, m_bForceUpdate);

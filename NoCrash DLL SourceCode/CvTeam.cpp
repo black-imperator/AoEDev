@@ -7594,13 +7594,13 @@ void CvTeam::read(FDataStreamBase* pStream)
 
 void CvTeam::write(FDataStreamBase* pStream)
 {
-	CvSaveSizeScope kSizeScope(pStream, "CvTeam");
+	CvSaveSizeProbe::countObject("CvTeam");
 	int iI;
 
 	uint uiFlag=1;	// 1: tagged fields (CvTaggedStream)
 	pStream->Write(uiFlag);		// flag for expansion
 	{
-		CvTagWriter kWriter(pStream);
+		CvTagWriter kWriter(pStream, "CvTeam");
 		kWriter.writeIfNonZero(TAG_NUM_MEMBERS, m_iNumMembers);
 		kWriter.writeIfNonZero(TAG_ALIVE_COUNT, m_iAliveCount);
 		kWriter.writeIfNonZero(TAG_EVER_ALIVE_COUNT, m_iEverAliveCount);

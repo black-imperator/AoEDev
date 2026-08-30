@@ -17712,13 +17712,13 @@ void CvCity::read(FDataStreamBase* pStream)
 
 void CvCity::write(FDataStreamBase* pStream)
 {
-	CvSaveSizeScope kSizeScope(pStream, "CvCity");
+	CvSaveSizeProbe::countObject("CvCity");
 	int iI;
 
 	uint uiFlag=1;	// 1: tagged fields (CvTaggedStream)
 	pStream->Write(uiFlag);		// flag for expansion
 	{
-		CvTagWriter kWriter(pStream);
+		CvTagWriter kWriter(pStream, "CvCity");
 		kWriter.write(TAG_ID, m_iID);
 		kWriter.write(TAG_X, m_iX);
 		kWriter.write(TAG_Y, m_iY);

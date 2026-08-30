@@ -356,11 +356,11 @@ void CvPlotGroup::read(FDataStreamBase* pStream)
 
 void CvPlotGroup::write(FDataStreamBase* pStream)
 {
-	CvSaveSizeScope kSizeScope(pStream, "CvPlotGroup");
+	CvSaveSizeProbe::countObject("CvPlotGroup");
 	uint uiFlag=1;	// 1: tagged fields (CvTaggedStream)
 	pStream->Write(uiFlag);		// flag for expansion
 	{
-		CvTagWriter kWriter(pStream);
+		CvTagWriter kWriter(pStream, "CvPlotGroup");
 		kWriter.write(TAG_ID, m_iID);
 		kWriter.write(TAG_OWNER, (int)m_eOwner);
 		kWriter.end();

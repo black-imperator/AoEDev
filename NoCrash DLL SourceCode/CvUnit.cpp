@@ -30782,11 +30782,11 @@ void CvUnit::read(FDataStreamBase* pStream)
 
 void CvUnit::write(FDataStreamBase* pStream)
 {
-	CvSaveSizeScope kSizeScope(pStream, "CvUnit");
+	CvSaveSizeProbe::countObject("CvUnit");
 	uint uiFlag=3;	// 3: tagged fields (CvTaggedStream)
 	pStream->Write(uiFlag);		// flag for expansion
 	{
-		CvTagWriter kWriter(pStream);
+		CvTagWriter kWriter(pStream, "CvUnit");
 		kWriter.write(TAG_ID, m_iID);
 		kWriter.write(TAG_GROUP_ID, m_iGroupID);
 		kWriter.write(TAG_HOT_KEY_NUMBER, m_iHotKeyNumber);

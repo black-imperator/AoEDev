@@ -665,11 +665,11 @@ namespace
 }
 void CvDeal::write(FDataStreamBase* pStream)
 {
-	CvSaveSizeScope kSizeScope(pStream, "CvDeal");
+	CvSaveSizeProbe::countObject("CvDeal");
 	uint uiFlag=1;	// 1: tagged fields (CvTaggedStream)
 	pStream->Write(uiFlag);		// flag for expansion
 	{
-		CvTagWriter kWriter(pStream);
+		CvTagWriter kWriter(pStream, "CvDeal");
 		kWriter.write(TAG_ID, m_iID);
 		kWriter.writeIfNonZero(TAG_INITIAL_GAME_TURN, m_iInitialGameTurn);
 		kWriter.write(TAG_FIRST_PLAYER, (int)m_eFirstPlayer);

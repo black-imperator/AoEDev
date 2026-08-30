@@ -1488,11 +1488,11 @@ void CvMap::read(FDataStreamBase* pStream)
 //
 void CvMap::write(FDataStreamBase* pStream)
 {
-	CvSaveSizeScope kSizeScope(pStream, "CvMap");
+	CvSaveSizeProbe::countObject("CvMap");
 	uint uiFlag=1;	// 1: tagged fields (CvTaggedStream)
 	pStream->Write(uiFlag);		// flag for expansion
 	{
-		CvTagWriter kWriter(pStream);
+		CvTagWriter kWriter(pStream, "CvMap");
 		kWriter.write(TAG_GRID_WIDTH, m_iGridWidth);
 		kWriter.write(TAG_GRID_HEIGHT, m_iGridHeight);
 		kWriter.writeIfNonZero(TAG_LAND_PLOTS, m_iLandPlots);
