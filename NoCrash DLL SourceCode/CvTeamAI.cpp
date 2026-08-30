@@ -15,6 +15,7 @@
 #include "CyArgsList.h"
 #include "CvDLLPythonIFaceBase.h"
 #include "CvSaveSizeProbe.h"
+#include "CvTaggedStream.h"
 
 // statics
 
@@ -3863,12 +3864,42 @@ int CvTeamAI::AI_teamCloseness(TeamTypes eIndex, int iMaxDistance) const
 }
 
 
+// Tag numbers for this class's tagged record. APPEND ONLY: renumbering an existing
+// tag makes every save written before the change decode that field as something
+// else, silently. A retired field leaves its number unused rather than handing it on.
+namespace
+{
+	enum TeamAITag
+	{
+		TAG_WORST_ENEMY = 1,
+	};
+}
 void CvTeamAI::read(FDataStreamBase* pStream)
 {
 	CvTeam::read(pStream);
 
 	uint uiFlag=0;
 	pStream->Read(&uiFlag);	// flags for expansion
+	if (uiFlag >= 1)
+	{
+		// Tagged. Order does not matter, an unknown tag is stepped over, and a field
+		// the writer omitted keeps what reset() gave it.
+		CvTagReader kReader(pStream);
+		while (kReader.next())
+		{
+			switch (kReader.tag())
+			{
+			case TAG_WORST_ENEMY: m_eWorstEnemy = (TeamTypes)kReader.asInt(); break;
+			default: kReader.skip(); break;
+			}
+		}
+	}
+	else
+	{
+		// Positional, exactly as it always was. This branch is the compatibility
+		// shim; it is not new code and must not be edited.
+		pStream->Read((int*)&m_eWorstEnemy);
+	}
 
 	pStream->Read(MAX_TEAMS, m_aiWarPlanStateCounter);
 	pStream->Read(MAX_TEAMS, m_aiAtWarCounter);
@@ -3882,7 +3913,6 @@ void CvTeamAI::read(FDataStreamBase* pStream)
 	pStream->Read(MAX_TEAMS, m_aiEnemyPeacetimeGrantValue);
 
 	pStream->Read(MAX_TEAMS, (int*)m_aeWarPlan);
-	pStream->Read((int*)&m_eWorstEnemy);
 /*************************************************************************************************/
 /**	MultiBarb								12/23/08								Xienwolf	**/
 /**																								**/
@@ -3904,8 +3934,13 @@ void CvTeamAI::write(FDataStreamBase* pStream)
 	CvSaveSizeProbe::countObject("CvTeamAI");
 	CvTeam::write(pStream);
 
-	uint uiFlag=0;
+	uint uiFlag=1;	// 1: tagged fields (CvTaggedStream)
 	pStream->Write(uiFlag);		// flag for expansion
+	{
+		CvTagWriter kWriter(pStream);
+		kWriter.write(TAG_WORST_ENEMY, (int)m_eWorstEnemy);
+		kWriter.end();
+	}
 
 	pStream->Write(MAX_TEAMS, m_aiWarPlanStateCounter);
 	pStream->Write(MAX_TEAMS, m_aiAtWarCounter);
@@ -3919,7 +3954,6 @@ void CvTeamAI::write(FDataStreamBase* pStream)
 	pStream->Write(MAX_TEAMS, m_aiEnemyPeacetimeGrantValue);
 
 	pStream->Write(MAX_TEAMS, (int*)m_aeWarPlan);
-	pStream->Write(m_eWorstEnemy);
 /*************************************************************************************************/
 /**	MultiBarb								12/23/08								Xienwolf	**/
 /**																								**/

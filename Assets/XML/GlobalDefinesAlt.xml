@@ -780,6 +780,6 @@
 		<!-- 1 writes CvGameCoreDLL_save_size.log next to the DLL on every save:
 		     bytes and object count per class. For finding where a save's size
 		     actually goes instead of reasoning about it. 0 off. -->
-		<iDefineIntVal>1</iDefineIntVal>
+		<iDefineIntVal>0</iDefineIntVal>
 	</Define>
 </Civ4Defines>

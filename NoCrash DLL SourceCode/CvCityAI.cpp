@@ -19,6 +19,7 @@
 #include "CvDLLFAStarIFaceBase.h"
 #include "CvSaveManifest.h"
 #include "CvSaveSizeProbe.h"
+#include "CvTaggedStream.h"
 
 
 #define BUILDINGFOCUS_FOOD					(1 << 1)
@@ -14408,17 +14409,51 @@ BuildingTypes CvCityAI::AI_bestAdvancedStartBuilding(int iPass)
 //
 //
 //
+// Tag numbers for this class's tagged record. APPEND ONLY: renumbering an existing
+// tag makes every save written before the change decode that field as something
+// else, silently. A retired field leaves its number unused rather than handing it on.
+namespace
+{
+	enum CityAITag
+	{
+		TAG_EMPHASIZE_AVOID_GROWTH_COUNT = 1,
+		TAG_EMPHASIZE_GREAT_PEOPLE_COUNT,
+		TAG_ASSIGN_WORK_DIRTY,
+		TAG_CHOOSE_PRODUCTION_DIRTY,
+	};
+}
 void CvCityAI::read(FDataStreamBase* pStream)
 {
 	CvCity::read(pStream);
 
 	uint uiFlag=0;
 	pStream->Read(&uiFlag);	// flags for expansion
-
-	pStream->Read(&m_iEmphasizeAvoidGrowthCount);
-	pStream->Read(&m_iEmphasizeGreatPeopleCount);
-	pStream->Read(&m_bAssignWorkDirty);
-	pStream->Read(&m_bChooseProductionDirty);
+	if (uiFlag >= 1)
+	{
+		// Tagged. Order does not matter, an unknown tag is stepped over, and a field
+		// the writer omitted keeps what reset() gave it.
+		CvTagReader kReader(pStream);
+		while (kReader.next())
+		{
+			switch (kReader.tag())
+			{
+			case TAG_EMPHASIZE_AVOID_GROWTH_COUNT: m_iEmphasizeAvoidGrowthCount = kReader.asInt(); break;
+			case TAG_EMPHASIZE_GREAT_PEOPLE_COUNT: m_iEmphasizeGreatPeopleCount = kReader.asInt(); break;
+			case TAG_ASSIGN_WORK_DIRTY: m_bAssignWorkDirty = kReader.asBool(); break;
+			case TAG_CHOOSE_PRODUCTION_DIRTY: m_bChooseProductionDirty = kReader.asBool(); break;
+			default: kReader.skip(); break;
+			}
+		}
+	}
+	else
+	{
+		// Positional, exactly as it always was. This branch is the compatibility
+		// shim; it is not new code and must not be edited.
+		pStream->Read(&m_iEmphasizeAvoidGrowthCount);
+		pStream->Read(&m_iEmphasizeGreatPeopleCount);
+		pStream->Read(&m_bAssignWorkDirty);
+		pStream->Read(&m_bChooseProductionDirty);
+	}
 
 /*************************************************************************************************/
 /**	New Tag Defs	(CityAIInfos)			11/15/08								Jean Elcard	**/
@@ -14457,13 +14492,16 @@ void CvCityAI::write(FDataStreamBase* pStream)
 	CvSaveSizeProbe::countObject("CvCityAI");
 	CvCity::write(pStream);
 
-	uint uiFlag=0;
+	uint uiFlag=1;	// 1: tagged fields (CvTaggedStream)
 	pStream->Write(uiFlag);		// flag for expansion
-
-	pStream->Write(m_iEmphasizeAvoidGrowthCount);
-	pStream->Write(m_iEmphasizeGreatPeopleCount);
-	pStream->Write(m_bAssignWorkDirty);
-	pStream->Write(m_bChooseProductionDirty);
+	{
+		CvTagWriter kWriter(pStream);
+		kWriter.write(TAG_EMPHASIZE_AVOID_GROWTH_COUNT, m_iEmphasizeAvoidGrowthCount);
+		kWriter.write(TAG_EMPHASIZE_GREAT_PEOPLE_COUNT, m_iEmphasizeGreatPeopleCount);
+		kWriter.write(TAG_ASSIGN_WORK_DIRTY, m_bAssignWorkDirty);
+		kWriter.write(TAG_CHOOSE_PRODUCTION_DIRTY, m_bChooseProductionDirty);
+		kWriter.end();
+	}
 
 /*************************************************************************************************/
 /**	New Tag Defs	(CityAIInfos)			11/15/08								Jean Elcard	**/
