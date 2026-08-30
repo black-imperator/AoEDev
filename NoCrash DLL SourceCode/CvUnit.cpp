@@ -27,6 +27,7 @@
 #include "CvPopupInfo.h"
 #include "CvArtFileMgr.h"
 #include "CvSaveManifest.h"
+#include "CvTaggedStream.h"
 
 // Public Functions...
 
@@ -30112,6 +30113,57 @@ void CvUnit::betray(PlayerTypes ePlayer)
 		pUnit->setDuration(0);
 }
 
+// Tag numbers for this class's tagged record. APPEND ONLY: renumbering an existing
+// tag makes every save written before the change decode that field as something
+// else, silently. A retired field leaves its number unused rather than handing it on.
+namespace
+{
+	enum UnitTag
+	{
+		TAG_ID = 1,
+		TAG_GROUP_ID,
+		TAG_HOT_KEY_NUMBER,
+		TAG_X,
+		TAG_Y,
+		TAG_LAST_MOVE_TURN,
+		TAG_RECON_X,
+		TAG_RECON_Y,
+		TAG_GAME_TURN_CREATED,
+		TAG_DAMAGE,
+		TAG_MOVES,
+		TAG_EXPERIENCE,
+		TAG_LEVEL,
+		TAG_CARGO,
+		TAG_SPECIAL_CARGO,
+		TAG_DOMAIN_CARGO,
+		TAG_CARGO_CAPACITY,
+		TAG_MAX_EXP_REWARD,
+		TAG_ATTACK_PLOT_X,
+		TAG_ATTACK_PLOT_Y,
+		TAG_COMBAT_TIMER,
+		TAG_COMBAT_FIRST_STRIKES,
+		TAG_FORTIFY_TURNS,
+		TAG_BLITZ_COUNT,
+		TAG_TRADE_DEFENDER_COUNT,
+		TAG_AMPHIB_COUNT,
+		TAG_RIVER_COUNT,
+		TAG_ENEMY_ROUTE_COUNT,
+		TAG_ALWAYS_HEAL_COUNT,
+		TAG_HILLS_DOUBLE_MOVE_COUNT,
+		TAG_IMMUNE_TO_FIRST_STRIKES_COUNT,
+		TAG_EXTRA_VISIBILITY_RANGE,
+		TAG_EXTRA_MOVES,
+		TAG_EXTRA_MOVE_DISCOUNT,
+		TAG_EXTRA_AIR_RANGE,
+		TAG_EXTRA_INTERCEPT,
+		TAG_EXTRA_EVASION,
+		TAG_EXTRA_FIRST_STRIKES,
+		TAG_EXTRA_CHANCE_FIRST_STRIKES,
+		TAG_EXTRA_WITHDRAWAL,
+		TAG_EXTRA_ENEMY_WITHDRAWAL,
+		TAG_EXTRA_COLLATERAL_DAMAGE,
+	};
+}
 void CvUnit::read(FDataStreamBase* pStream)
 {
 	// Init data before load
@@ -30119,49 +30171,109 @@ void CvUnit::read(FDataStreamBase* pStream)
 
 	uint uiFlag=0;
 	pStream->Read(&uiFlag);	// flags for expansion
+	if (uiFlag >= 3)
+	{
+		// Tagged. Order does not matter, an unknown tag is stepped over, and a field
+		// the writer omitted keeps what reset() gave it.
+		CvTagReader kReader(pStream);
+		while (kReader.next())
+		{
+			switch (kReader.tag())
+			{
+			case TAG_ID: m_iID = kReader.asInt(); break;
+			case TAG_GROUP_ID: m_iGroupID = kReader.asInt(); break;
+			case TAG_HOT_KEY_NUMBER: m_iHotKeyNumber = kReader.asInt(); break;
+			case TAG_X: m_iX = kReader.asInt(); break;
+			case TAG_Y: m_iY = kReader.asInt(); break;
+			case TAG_LAST_MOVE_TURN: m_iLastMoveTurn = kReader.asInt(); break;
+			case TAG_RECON_X: m_iReconX = kReader.asInt(); break;
+			case TAG_RECON_Y: m_iReconY = kReader.asInt(); break;
+			case TAG_GAME_TURN_CREATED: m_iGameTurnCreated = kReader.asInt(); break;
+			case TAG_DAMAGE: m_iDamage = kReader.asInt(); break;
+			case TAG_MOVES: m_iMoves = kReader.asInt(); break;
+			case TAG_EXPERIENCE: m_iExperience = kReader.asInt(); break;
+			case TAG_LEVEL: m_iLevel = kReader.asInt(); break;
+			case TAG_CARGO: m_iCargo = kReader.asInt(); break;
+			case TAG_SPECIAL_CARGO: m_iSpecialCargo = CvSaveManifest::remapId(CvSaveManifest::CONTENT_SPECIAL_UNIT, kReader.asInt()); break;
+			case TAG_DOMAIN_CARGO: m_iDomainCargo = kReader.asInt(); break;
+			case TAG_CARGO_CAPACITY: m_iCargoCapacity = kReader.asInt(); break;
+			case TAG_MAX_EXP_REWARD: m_iMaxExpReward = kReader.asInt(); break;
+			case TAG_ATTACK_PLOT_X: m_iAttackPlotX = kReader.asInt(); break;
+			case TAG_ATTACK_PLOT_Y: m_iAttackPlotY = kReader.asInt(); break;
+			case TAG_COMBAT_TIMER: m_iCombatTimer = kReader.asInt(); break;
+			case TAG_COMBAT_FIRST_STRIKES: m_iCombatFirstStrikes = kReader.asInt(); break;
+			case TAG_FORTIFY_TURNS: m_iFortifyTurns = kReader.asInt(); break;
+			case TAG_BLITZ_COUNT: m_iBlitzCount = kReader.asInt(); break;
+			case TAG_TRADE_DEFENDER_COUNT: m_iTradeDefenderCount = kReader.asInt(); break;
+			case TAG_AMPHIB_COUNT: m_iAmphibCount = kReader.asInt(); break;
+			case TAG_RIVER_COUNT: m_iRiverCount = kReader.asInt(); break;
+			case TAG_ENEMY_ROUTE_COUNT: m_iEnemyRouteCount = kReader.asInt(); break;
+			case TAG_ALWAYS_HEAL_COUNT: m_iAlwaysHealCount = kReader.asInt(); break;
+			case TAG_HILLS_DOUBLE_MOVE_COUNT: m_iHillsDoubleMoveCount = kReader.asInt(); break;
+			case TAG_IMMUNE_TO_FIRST_STRIKES_COUNT: m_iImmuneToFirstStrikesCount = kReader.asInt(); break;
+			case TAG_EXTRA_VISIBILITY_RANGE: m_iExtraVisibilityRange = kReader.asInt(); break;
+			case TAG_EXTRA_MOVES: m_iExtraMoves = kReader.asInt(); break;
+			case TAG_EXTRA_MOVE_DISCOUNT: m_iExtraMoveDiscount = kReader.asInt(); break;
+			case TAG_EXTRA_AIR_RANGE: m_iExtraAirRange = kReader.asInt(); break;
+			case TAG_EXTRA_INTERCEPT: m_iExtraIntercept = kReader.asInt(); break;
+			case TAG_EXTRA_EVASION: m_iExtraEvasion = kReader.asInt(); break;
+			case TAG_EXTRA_FIRST_STRIKES: m_iExtraFirstStrikes = kReader.asInt(); break;
+			case TAG_EXTRA_CHANCE_FIRST_STRIKES: m_iExtraChanceFirstStrikes = kReader.asInt(); break;
+			case TAG_EXTRA_WITHDRAWAL: m_iExtraWithdrawal = kReader.asInt(); break;
+			case TAG_EXTRA_ENEMY_WITHDRAWAL: m_iExtraEnemyWithdrawal = kReader.asInt(); break;
+			case TAG_EXTRA_COLLATERAL_DAMAGE: m_iExtraCollateralDamage = kReader.asInt(); break;
+			default: kReader.skip(); break;
+			}
+		}
+	}
+	else
+	{
+		// Positional, exactly as it always was. This branch is the compatibility
+		// shim; it is not new code and must not be edited.
+		pStream->Read(&m_iID);
+		pStream->Read(&m_iGroupID);
+		pStream->Read(&m_iHotKeyNumber);
+		pStream->Read(&m_iX);
+		pStream->Read(&m_iY);
+		pStream->Read(&m_iLastMoveTurn);
+		pStream->Read(&m_iReconX);
+		pStream->Read(&m_iReconY);
+		pStream->Read(&m_iGameTurnCreated);
+		pStream->Read(&m_iDamage);
+		pStream->Read(&m_iMoves);
+		pStream->Read(&m_iExperience);
+		pStream->Read(&m_iLevel);
+		pStream->Read(&m_iCargo);
+		CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_SPECIAL_UNIT, &m_iSpecialCargo);
+		pStream->Read(&m_iDomainCargo);
+		pStream->Read(&m_iCargoCapacity);
+		pStream->Read(&m_iMaxExpReward);
+		pStream->Read(&m_iAttackPlotX);
+		pStream->Read(&m_iAttackPlotY);
+		pStream->Read(&m_iCombatTimer);
+		pStream->Read(&m_iCombatFirstStrikes);
+		pStream->Read(&m_iFortifyTurns);
+		pStream->Read(&m_iBlitzCount);
+		pStream->Read(&m_iTradeDefenderCount);
+		pStream->Read(&m_iAmphibCount);
+		pStream->Read(&m_iRiverCount);
+		pStream->Read(&m_iEnemyRouteCount);
+		pStream->Read(&m_iAlwaysHealCount);
+		pStream->Read(&m_iHillsDoubleMoveCount);
+		pStream->Read(&m_iImmuneToFirstStrikesCount);
+		pStream->Read(&m_iExtraVisibilityRange);
+		pStream->Read(&m_iExtraMoves);
+		pStream->Read(&m_iExtraMoveDiscount);
+		pStream->Read(&m_iExtraAirRange);
+		pStream->Read(&m_iExtraIntercept);
+		pStream->Read(&m_iExtraEvasion);
+		pStream->Read(&m_iExtraFirstStrikes);
+		pStream->Read(&m_iExtraChanceFirstStrikes);
+		pStream->Read(&m_iExtraWithdrawal);
+		pStream->Read(&m_iExtraEnemyWithdrawal);
+		pStream->Read(&m_iExtraCollateralDamage);
+	}
 
-	pStream->Read(&m_iID);
-	pStream->Read(&m_iGroupID);
-	pStream->Read(&m_iHotKeyNumber);
-	pStream->Read(&m_iX);
-	pStream->Read(&m_iY);
-	pStream->Read(&m_iLastMoveTurn);
-	pStream->Read(&m_iReconX);
-	pStream->Read(&m_iReconY);
-	pStream->Read(&m_iGameTurnCreated);
-	pStream->Read(&m_iDamage);
-	pStream->Read(&m_iMoves);
-	pStream->Read(&m_iExperience);
-	pStream->Read(&m_iLevel);
-	pStream->Read(&m_iCargo);
-	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_SPECIAL_UNIT, &m_iSpecialCargo);
-	pStream->Read(&m_iDomainCargo);
-	pStream->Read(&m_iCargoCapacity);
-	pStream->Read(&m_iMaxExpReward);
-	pStream->Read(&m_iAttackPlotX);
-	pStream->Read(&m_iAttackPlotY);
-	pStream->Read(&m_iCombatTimer);
-	pStream->Read(&m_iCombatFirstStrikes);
-	pStream->Read(&m_iFortifyTurns);
-	pStream->Read(&m_iBlitzCount);
-	pStream->Read(&m_iTradeDefenderCount);
-	pStream->Read(&m_iAmphibCount);
-	pStream->Read(&m_iRiverCount);
-	pStream->Read(&m_iEnemyRouteCount);
-	pStream->Read(&m_iAlwaysHealCount);
-	pStream->Read(&m_iHillsDoubleMoveCount);
-	pStream->Read(&m_iImmuneToFirstStrikesCount);
-	pStream->Read(&m_iExtraVisibilityRange);
-	pStream->Read(&m_iExtraMoves);
-	pStream->Read(&m_iExtraMoveDiscount);
-	pStream->Read(&m_iExtraAirRange);
-	pStream->Read(&m_iExtraIntercept);
-	pStream->Read(&m_iExtraEvasion);
-	pStream->Read(&m_iExtraFirstStrikes);
-	pStream->Read(&m_iExtraChanceFirstStrikes);
-	pStream->Read(&m_iExtraWithdrawal);
-	pStream->Read(&m_iExtraEnemyWithdrawal);
-	pStream->Read(&m_iExtraCollateralDamage);
 /*************************************************************************************************/
 /**	Updated Flanking						2011-10-30									Jheral	**/
 /**																								**/
@@ -30669,51 +30781,55 @@ void CvUnit::read(FDataStreamBase* pStream)
 
 void CvUnit::write(FDataStreamBase* pStream)
 {
-	uint uiFlag=2;
+	uint uiFlag=3;	// 3: tagged fields (CvTaggedStream)
 	pStream->Write(uiFlag);		// flag for expansion
+	{
+		CvTagWriter kWriter(pStream);
+		kWriter.write(TAG_ID, m_iID);
+		kWriter.write(TAG_GROUP_ID, m_iGroupID);
+		kWriter.write(TAG_HOT_KEY_NUMBER, m_iHotKeyNumber);
+		kWriter.write(TAG_X, m_iX);
+		kWriter.write(TAG_Y, m_iY);
+		kWriter.writeIfNonZero(TAG_LAST_MOVE_TURN, m_iLastMoveTurn);
+		kWriter.write(TAG_RECON_X, m_iReconX);
+		kWriter.write(TAG_RECON_Y, m_iReconY);
+		kWriter.writeIfNonZero(TAG_GAME_TURN_CREATED, m_iGameTurnCreated);
+		kWriter.writeIfNonZero(TAG_DAMAGE, m_iDamage);
+		kWriter.writeIfNonZero(TAG_MOVES, m_iMoves);
+		kWriter.writeIfNonZero(TAG_EXPERIENCE, m_iExperience);
+		kWriter.write(TAG_LEVEL, m_iLevel);
+		kWriter.writeIfNonZero(TAG_CARGO, m_iCargo);
+		kWriter.write(TAG_SPECIAL_CARGO, m_iSpecialCargo);
+		kWriter.write(TAG_DOMAIN_CARGO, m_iDomainCargo);
+		kWriter.write(TAG_CARGO_CAPACITY, m_iCargoCapacity);
+		kWriter.write(TAG_MAX_EXP_REWARD, m_iMaxExpReward);
+		kWriter.write(TAG_ATTACK_PLOT_X, m_iAttackPlotX);
+		kWriter.write(TAG_ATTACK_PLOT_Y, m_iAttackPlotY);
+		kWriter.writeIfNonZero(TAG_COMBAT_TIMER, m_iCombatTimer);
+		kWriter.writeIfNonZero(TAG_COMBAT_FIRST_STRIKES, m_iCombatFirstStrikes);
+		kWriter.writeIfNonZero(TAG_FORTIFY_TURNS, m_iFortifyTurns);
+		kWriter.writeIfNonZero(TAG_BLITZ_COUNT, m_iBlitzCount);
+		kWriter.writeIfNonZero(TAG_TRADE_DEFENDER_COUNT, m_iTradeDefenderCount);
+		kWriter.writeIfNonZero(TAG_AMPHIB_COUNT, m_iAmphibCount);
+		kWriter.writeIfNonZero(TAG_RIVER_COUNT, m_iRiverCount);
+		kWriter.writeIfNonZero(TAG_ENEMY_ROUTE_COUNT, m_iEnemyRouteCount);
+		kWriter.writeIfNonZero(TAG_ALWAYS_HEAL_COUNT, m_iAlwaysHealCount);
+		kWriter.writeIfNonZero(TAG_HILLS_DOUBLE_MOVE_COUNT, m_iHillsDoubleMoveCount);
+		kWriter.writeIfNonZero(TAG_IMMUNE_TO_FIRST_STRIKES_COUNT, m_iImmuneToFirstStrikesCount);
+		kWriter.writeIfNonZero(TAG_EXTRA_VISIBILITY_RANGE, m_iExtraVisibilityRange);
+		kWriter.writeIfNonZero(TAG_EXTRA_MOVES, m_iExtraMoves);
+		kWriter.writeIfNonZero(TAG_EXTRA_MOVE_DISCOUNT, m_iExtraMoveDiscount);
+		kWriter.writeIfNonZero(TAG_EXTRA_AIR_RANGE, m_iExtraAirRange);
+		kWriter.writeIfNonZero(TAG_EXTRA_INTERCEPT, m_iExtraIntercept);
+		kWriter.writeIfNonZero(TAG_EXTRA_EVASION, m_iExtraEvasion);
+		kWriter.writeIfNonZero(TAG_EXTRA_FIRST_STRIKES, m_iExtraFirstStrikes);
+		kWriter.writeIfNonZero(TAG_EXTRA_CHANCE_FIRST_STRIKES, m_iExtraChanceFirstStrikes);
+		kWriter.writeIfNonZero(TAG_EXTRA_WITHDRAWAL, m_iExtraWithdrawal);
+		kWriter.writeIfNonZero(TAG_EXTRA_ENEMY_WITHDRAWAL, m_iExtraEnemyWithdrawal);
+		kWriter.writeIfNonZero(TAG_EXTRA_COLLATERAL_DAMAGE, m_iExtraCollateralDamage);
+		kWriter.end();
+	}
 
-	pStream->Write(m_iID);
-	pStream->Write(m_iGroupID);
-	pStream->Write(m_iHotKeyNumber);
-	pStream->Write(m_iX);
-	pStream->Write(m_iY);
-	pStream->Write(m_iLastMoveTurn);
-	pStream->Write(m_iReconX);
-	pStream->Write(m_iReconY);
-	pStream->Write(m_iGameTurnCreated);
-	pStream->Write(m_iDamage);
-	pStream->Write(m_iMoves);
-	pStream->Write(m_iExperience);
-	pStream->Write(m_iLevel);
-	pStream->Write(m_iCargo);
-	pStream->Write(m_iSpecialCargo);
-	pStream->Write(m_iDomainCargo);
-	pStream->Write(m_iCargoCapacity);
-	pStream->Write(m_iMaxExpReward);
-	pStream->Write(m_iAttackPlotX);
-	pStream->Write(m_iAttackPlotY);
-	pStream->Write(m_iCombatTimer);
-	pStream->Write(m_iCombatFirstStrikes);
-	pStream->Write(m_iFortifyTurns);
-	pStream->Write(m_iBlitzCount);
-	pStream->Write(m_iTradeDefenderCount);
-	pStream->Write(m_iAmphibCount);
-	pStream->Write(m_iRiverCount);
-	pStream->Write(m_iEnemyRouteCount);
-	pStream->Write(m_iAlwaysHealCount);
-	pStream->Write(m_iHillsDoubleMoveCount);
-	pStream->Write(m_iImmuneToFirstStrikesCount);
-	pStream->Write(m_iExtraVisibilityRange);
-	pStream->Write(m_iExtraMoves);
-	pStream->Write(m_iExtraMoveDiscount);
-	pStream->Write(m_iExtraAirRange);
-	pStream->Write(m_iExtraIntercept);
-	pStream->Write(m_iExtraEvasion);
-	pStream->Write(m_iExtraFirstStrikes);
-	pStream->Write(m_iExtraChanceFirstStrikes);
-	pStream->Write(m_iExtraWithdrawal);
-	pStream->Write(m_iExtraEnemyWithdrawal);
-	pStream->Write(m_iExtraCollateralDamage);
 /*************************************************************************************************/
 /**	Updated Flanking						2011-10-30									Jheral	**/
 /**																								**/

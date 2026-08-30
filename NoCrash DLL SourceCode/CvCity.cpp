@@ -31,6 +31,7 @@
 
 #include "CvSnarkoProfiler.h"
 #include "CvSaveManifest.h"
+#include "CvTaggedStream.h"
 
 CvCity::CvCity()
 {
@@ -17168,6 +17169,47 @@ void CvCity::doMeltdown()
 
 // Private Functions...
 
+// Tag numbers for this class's tagged record. APPEND ONLY: renumbering an existing
+// tag makes every save written before the change decode that field as something
+// else, silently. A retired field leaves its number unused rather than handing it on.
+namespace
+{
+	enum CityTag
+	{
+		TAG_ID = 1,
+		TAG_X,
+		TAG_Y,
+		TAG_RALLY_X,
+		TAG_RALLY_Y,
+		TAG_GAME_TURN_FOUNDED,
+		TAG_GAME_TURN_ACQUIRED,
+		TAG_CITY_CLASS,
+		TAG_POPULATION,
+		TAG_HIGHEST_POPULATION,
+		TAG_WORKING_POPULATION,
+		TAG_SPECIALIST_POPULATION,
+		TAG_NUM_GREAT_PEOPLE,
+		TAG_BASE_GREAT_PEOPLE_RATE,
+		TAG_GREAT_PEOPLE_RATE_MODIFIER,
+		TAG_GREAT_PEOPLE_PROGRESS,
+		TAG_NUM_WORLD_WONDERS,
+		TAG_NUM_TEAM_WONDERS,
+		TAG_NUM_NATIONAL_WONDERS,
+		TAG_NUM_BUILDINGS,
+		TAG_GOVERNMENT_CENTER_COUNT,
+		TAG_MAINTENANCE,
+		TAG_MAINTENANCE_MODIFIER,
+		TAG_WAR_WEARINESS_MODIFIER,
+		TAG_HURRY_ANGER_MODIFIER,
+		TAG_HEAL_RATE,
+		TAG_ESPIONAGE_HEALTH_COUNTER,
+		TAG_ESPIONAGE_HAPPINESS_COUNTER,
+		TAG_FRESH_WATER_GOOD_HEALTH,
+		TAG_FRESH_WATER_BAD_HEALTH,
+		TAG_FEATURE_GOOD_HEALTH,
+		TAG_FEATURE_BAD_HEALTH,
+	};
+}
 void CvCity::read(FDataStreamBase* pStream)
 {
 	int iI;
@@ -17178,40 +17220,89 @@ void CvCity::read(FDataStreamBase* pStream)
 
 	uint uiFlag=0;
 	pStream->Read(&uiFlag);	// flags for expansion
+	if (uiFlag >= 1)
+	{
+		// Tagged. Order does not matter, an unknown tag is stepped over, and a field
+		// the writer omitted keeps what reset() gave it.
+		CvTagReader kReader(pStream);
+		while (kReader.next())
+		{
+			switch (kReader.tag())
+			{
+			case TAG_ID: m_iID = kReader.asInt(); break;
+			case TAG_X: m_iX = kReader.asInt(); break;
+			case TAG_Y: m_iY = kReader.asInt(); break;
+			case TAG_RALLY_X: m_iRallyX = kReader.asInt(); break;
+			case TAG_RALLY_Y: m_iRallyY = kReader.asInt(); break;
+			case TAG_GAME_TURN_FOUNDED: m_iGameTurnFounded = kReader.asInt(); break;
+			case TAG_GAME_TURN_ACQUIRED: m_iGameTurnAcquired = kReader.asInt(); break;
+			case TAG_CITY_CLASS: m_iCityClass = kReader.asInt(); break;
+			case TAG_POPULATION: m_iPopulation = kReader.asInt(); break;
+			case TAG_HIGHEST_POPULATION: m_iHighestPopulation = kReader.asInt(); break;
+			case TAG_WORKING_POPULATION: m_iWorkingPopulation = kReader.asInt(); break;
+			case TAG_SPECIALIST_POPULATION: m_iSpecialistPopulation = kReader.asInt(); break;
+			case TAG_NUM_GREAT_PEOPLE: m_iNumGreatPeople = kReader.asInt(); break;
+			case TAG_BASE_GREAT_PEOPLE_RATE: m_iBaseGreatPeopleRate = kReader.asInt(); break;
+			case TAG_GREAT_PEOPLE_RATE_MODIFIER: m_iGreatPeopleRateModifier = kReader.asInt(); break;
+			case TAG_GREAT_PEOPLE_PROGRESS: m_iGreatPeopleProgress = kReader.asInt(); break;
+			case TAG_NUM_WORLD_WONDERS: m_iNumWorldWonders = kReader.asInt(); break;
+			case TAG_NUM_TEAM_WONDERS: m_iNumTeamWonders = kReader.asInt(); break;
+			case TAG_NUM_NATIONAL_WONDERS: m_iNumNationalWonders = kReader.asInt(); break;
+			case TAG_NUM_BUILDINGS: m_iNumBuildings = kReader.asInt(); break;
+			case TAG_GOVERNMENT_CENTER_COUNT: m_iGovernmentCenterCount = kReader.asInt(); break;
+			case TAG_MAINTENANCE: m_iMaintenance = kReader.asInt(); break;
+			case TAG_MAINTENANCE_MODIFIER: m_iMaintenanceModifier = kReader.asInt(); break;
+			case TAG_WAR_WEARINESS_MODIFIER: m_iWarWearinessModifier = kReader.asInt(); break;
+			case TAG_HURRY_ANGER_MODIFIER: m_iHurryAngerModifier = kReader.asInt(); break;
+			case TAG_HEAL_RATE: m_iHealRate = kReader.asInt(); break;
+			case TAG_ESPIONAGE_HEALTH_COUNTER: m_iEspionageHealthCounter = kReader.asInt(); break;
+			case TAG_ESPIONAGE_HAPPINESS_COUNTER: m_iEspionageHappinessCounter = kReader.asInt(); break;
+			case TAG_FRESH_WATER_GOOD_HEALTH: m_iFreshWaterGoodHealth = kReader.asInt(); break;
+			case TAG_FRESH_WATER_BAD_HEALTH: m_iFreshWaterBadHealth = kReader.asInt(); break;
+			case TAG_FEATURE_GOOD_HEALTH: m_iFeatureGoodHealth = kReader.asInt(); break;
+			case TAG_FEATURE_BAD_HEALTH: m_iFeatureBadHealth = kReader.asInt(); break;
+			default: kReader.skip(); break;
+			}
+		}
+	}
+	else
+	{
+		// Positional, exactly as it always was. This branch is the compatibility
+		// shim; it is not new code and must not be edited.
+		pStream->Read(&m_iID);
+		pStream->Read(&m_iX);
+		pStream->Read(&m_iY);
+		pStream->Read(&m_iRallyX);
+		pStream->Read(&m_iRallyY);
+		pStream->Read(&m_iGameTurnFounded);
+		pStream->Read(&m_iGameTurnAcquired);
+		pStream->Read(&m_iCityClass);
+		pStream->Read(&m_iPopulation);
+		pStream->Read(&m_iHighestPopulation);
+		pStream->Read(&m_iWorkingPopulation);
+		pStream->Read(&m_iSpecialistPopulation);
+		pStream->Read(&m_iNumGreatPeople);
+		pStream->Read(&m_iBaseGreatPeopleRate);
+		pStream->Read(&m_iGreatPeopleRateModifier);
+		pStream->Read(&m_iGreatPeopleProgress);
+		pStream->Read(&m_iNumWorldWonders);
+		pStream->Read(&m_iNumTeamWonders);
+		pStream->Read(&m_iNumNationalWonders);
+		pStream->Read(&m_iNumBuildings);
+		pStream->Read(&m_iGovernmentCenterCount);
+		pStream->Read(&m_iMaintenance);
+		pStream->Read(&m_iMaintenanceModifier);
+		pStream->Read(&m_iWarWearinessModifier);
+		pStream->Read(&m_iHurryAngerModifier);
+		pStream->Read(&m_iHealRate);
+		pStream->Read(&m_iEspionageHealthCounter);
+		pStream->Read(&m_iEspionageHappinessCounter);
+		pStream->Read(&m_iFreshWaterGoodHealth);
+		pStream->Read(&m_iFreshWaterBadHealth);
+		pStream->Read(&m_iFeatureGoodHealth);
+		pStream->Read(&m_iFeatureBadHealth);
+	}
 
-	pStream->Read(&m_iID);
-	pStream->Read(&m_iX);
-	pStream->Read(&m_iY);
-	pStream->Read(&m_iRallyX);
-	pStream->Read(&m_iRallyY);
-	pStream->Read(&m_iGameTurnFounded);
-	pStream->Read(&m_iGameTurnAcquired);
-	pStream->Read(&m_iCityClass);
-
-	pStream->Read(&m_iPopulation);
-	pStream->Read(&m_iHighestPopulation);
-	pStream->Read(&m_iWorkingPopulation);
-	pStream->Read(&m_iSpecialistPopulation);
-	pStream->Read(&m_iNumGreatPeople);
-	pStream->Read(&m_iBaseGreatPeopleRate);
-	pStream->Read(&m_iGreatPeopleRateModifier);
-	pStream->Read(&m_iGreatPeopleProgress);
-	pStream->Read(&m_iNumWorldWonders);
-	pStream->Read(&m_iNumTeamWonders);
-	pStream->Read(&m_iNumNationalWonders);
-	pStream->Read(&m_iNumBuildings);
-	pStream->Read(&m_iGovernmentCenterCount);
-	pStream->Read(&m_iMaintenance);
-	pStream->Read(&m_iMaintenanceModifier);
-	pStream->Read(&m_iWarWearinessModifier);
-	pStream->Read(&m_iHurryAngerModifier);
-	pStream->Read(&m_iHealRate);
-	pStream->Read(&m_iEspionageHealthCounter);
-	pStream->Read(&m_iEspionageHappinessCounter);
-	pStream->Read(&m_iFreshWaterGoodHealth);
-	pStream->Read(&m_iFreshWaterBadHealth);
-	pStream->Read(&m_iFeatureGoodHealth);
-	pStream->Read(&m_iFeatureBadHealth);
 /*************************************************************************************************/
 /** Specialists Enhancements, by Supercheese 10/9/09           Imported by Valkrionn   10/22/09  */
 /**                                                                                              */
@@ -17622,41 +17713,45 @@ void CvCity::write(FDataStreamBase* pStream)
 {
 	int iI;
 
-	uint uiFlag=0;
+	uint uiFlag=1;	// 1: tagged fields (CvTaggedStream)
 	pStream->Write(uiFlag);		// flag for expansion
+	{
+		CvTagWriter kWriter(pStream);
+		kWriter.write(TAG_ID, m_iID);
+		kWriter.write(TAG_X, m_iX);
+		kWriter.write(TAG_Y, m_iY);
+		kWriter.write(TAG_RALLY_X, m_iRallyX);
+		kWriter.write(TAG_RALLY_Y, m_iRallyY);
+		kWriter.writeIfNonZero(TAG_GAME_TURN_FOUNDED, m_iGameTurnFounded);
+		kWriter.writeIfNonZero(TAG_GAME_TURN_ACQUIRED, m_iGameTurnAcquired);
+		kWriter.write(TAG_CITY_CLASS, m_iCityClass);
+		kWriter.writeIfNonZero(TAG_POPULATION, m_iPopulation);
+		kWriter.writeIfNonZero(TAG_HIGHEST_POPULATION, m_iHighestPopulation);
+		kWriter.writeIfNonZero(TAG_WORKING_POPULATION, m_iWorkingPopulation);
+		kWriter.writeIfNonZero(TAG_SPECIALIST_POPULATION, m_iSpecialistPopulation);
+		kWriter.writeIfNonZero(TAG_NUM_GREAT_PEOPLE, m_iNumGreatPeople);
+		kWriter.writeIfNonZero(TAG_BASE_GREAT_PEOPLE_RATE, m_iBaseGreatPeopleRate);
+		kWriter.writeIfNonZero(TAG_GREAT_PEOPLE_RATE_MODIFIER, m_iGreatPeopleRateModifier);
+		kWriter.writeIfNonZero(TAG_GREAT_PEOPLE_PROGRESS, m_iGreatPeopleProgress);
+		kWriter.writeIfNonZero(TAG_NUM_WORLD_WONDERS, m_iNumWorldWonders);
+		kWriter.writeIfNonZero(TAG_NUM_TEAM_WONDERS, m_iNumTeamWonders);
+		kWriter.writeIfNonZero(TAG_NUM_NATIONAL_WONDERS, m_iNumNationalWonders);
+		kWriter.writeIfNonZero(TAG_NUM_BUILDINGS, m_iNumBuildings);
+		kWriter.writeIfNonZero(TAG_GOVERNMENT_CENTER_COUNT, m_iGovernmentCenterCount);
+		kWriter.writeIfNonZero(TAG_MAINTENANCE, m_iMaintenance);
+		kWriter.writeIfNonZero(TAG_MAINTENANCE_MODIFIER, m_iMaintenanceModifier);
+		kWriter.writeIfNonZero(TAG_WAR_WEARINESS_MODIFIER, m_iWarWearinessModifier);
+		kWriter.writeIfNonZero(TAG_HURRY_ANGER_MODIFIER, m_iHurryAngerModifier);
+		kWriter.writeIfNonZero(TAG_HEAL_RATE, m_iHealRate);
+		kWriter.writeIfNonZero(TAG_ESPIONAGE_HEALTH_COUNTER, m_iEspionageHealthCounter);
+		kWriter.writeIfNonZero(TAG_ESPIONAGE_HAPPINESS_COUNTER, m_iEspionageHappinessCounter);
+		kWriter.writeIfNonZero(TAG_FRESH_WATER_GOOD_HEALTH, m_iFreshWaterGoodHealth);
+		kWriter.writeIfNonZero(TAG_FRESH_WATER_BAD_HEALTH, m_iFreshWaterBadHealth);
+		kWriter.writeIfNonZero(TAG_FEATURE_GOOD_HEALTH, m_iFeatureGoodHealth);
+		kWriter.writeIfNonZero(TAG_FEATURE_BAD_HEALTH, m_iFeatureBadHealth);
+		kWriter.end();
+	}
 
-	pStream->Write(m_iID);
-	pStream->Write(m_iX);
-	pStream->Write(m_iY);
-	pStream->Write(m_iRallyX);
-	pStream->Write(m_iRallyY);
-	pStream->Write(m_iGameTurnFounded);
-	pStream->Write(m_iGameTurnAcquired);
-	pStream->Write(m_iCityClass);
-	pStream->Write(m_iPopulation);
-	pStream->Write(m_iHighestPopulation);
-	pStream->Write(m_iWorkingPopulation);
-	pStream->Write(m_iSpecialistPopulation);
-	pStream->Write(m_iNumGreatPeople);
-	pStream->Write(m_iBaseGreatPeopleRate);
-	pStream->Write(m_iGreatPeopleRateModifier);
-	pStream->Write(m_iGreatPeopleProgress);
-	pStream->Write(m_iNumWorldWonders);
-	pStream->Write(m_iNumTeamWonders);
-	pStream->Write(m_iNumNationalWonders);
-	pStream->Write(m_iNumBuildings);
-	pStream->Write(m_iGovernmentCenterCount);
-	pStream->Write(m_iMaintenance);
-	pStream->Write(m_iMaintenanceModifier);
-	pStream->Write(m_iWarWearinessModifier);
-	pStream->Write(m_iHurryAngerModifier);
-	pStream->Write(m_iHealRate);
-	pStream->Write(m_iEspionageHealthCounter);
-	pStream->Write(m_iEspionageHappinessCounter);
-	pStream->Write(m_iFreshWaterGoodHealth);
-	pStream->Write(m_iFreshWaterBadHealth);
-	pStream->Write(m_iFeatureGoodHealth);
-	pStream->Write(m_iFeatureBadHealth);
 /*************************************************************************************************/
 /** Specialists Enhancements, by Supercheese 10/9/09           Imported by Valkrionn   10/22/09  */
 /**                                                                                              */

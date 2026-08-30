@@ -107,12 +107,24 @@ void CvTagWriter::end()
 	}
 	m_bEnded = true;
 
-	const unsigned int uiLength = (unsigned int)m_buffer.size();
-	m_pStream->Write(uiLength);
-
-	if (uiLength > 0)
+	// The record length is a varint, not a fixed four bytes. Classes with many small
+	// instances -- CvSelectionGroup, CvPlotGroup -- pay this prefix once per object, and
+	// four bytes to say "eleven" is most of the overhead that made tagged saves bigger.
+	unsigned int uiLength = (unsigned int)m_buffer.size();
+	unsigned char aPrefix[5];
+	int iPrefix = 0;
+	while (uiLength >= 0x80u)
 	{
-		m_pStream->Write((int)uiLength, (const unsigned char*)&m_buffer[0]);
+		aPrefix[iPrefix++] = (unsigned char)(uiLength | 0x80u);
+		uiLength >>= 7;
+	}
+	aPrefix[iPrefix++] = (unsigned char)uiLength;
+
+	m_pStream->Write(iPrefix, aPrefix);
+
+	if (!m_buffer.empty())
+	{
+		m_pStream->Write((int)m_buffer.size(), (const unsigned char*)&m_buffer[0]);
 	}
 }
 
@@ -127,7 +139,18 @@ CvTagReader::CvTagReader(FDataStreamBase* pStream)
 	, m_bBad(false)
 {
 	unsigned int uiLength = 0;
-	pStream->Read(&uiLength);
+	int iShift = 0;
+	for (int i = 0; i < 5; i++)
+	{
+		unsigned char cByte = 0;
+		pStream->Read(&cByte);
+		uiLength |= ((unsigned int)(cByte & 0x7F)) << iShift;
+		if ((cByte & 0x80) == 0)
+		{
+			break;
+		}
+		iShift += 7;
+	}
 
 	if (uiLength > MAX_RECORD_BYTES)
 	{
