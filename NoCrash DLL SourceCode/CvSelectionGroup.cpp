@@ -3,6 +3,7 @@
 #include "CvGameCoreDLL.h"
 #include "CvGlobals.h"
 #include "CvSelectionGroup.h"
+#include "CvTaggedStream.h"
 #include "CvGameAI.h"
 #include "CvPlayerAI.h"
 #include "CvTeamAI.h"
@@ -5988,6 +5989,22 @@ int CvSelectionGroup::getMissionData2(int iNode) const
 }
 
 
+// Tag numbers for this class's tagged record. APPEND ONLY: renumbering an existing
+// tag makes every save written before the change decode that field as something else,
+// silently. A retired field leaves its number unused rather than handing it on.
+namespace
+{
+	enum SelectionGroupTag
+	{
+		TAG_ID = 1,
+		TAG_MISSION_TIMER,
+		TAG_FORCE_UPDATE,
+		TAG_OWNER,
+		TAG_ACTIVITY_TYPE,
+		TAG_AUTOMATE_TYPE
+	};
+}
+
 void CvSelectionGroup::read(FDataStreamBase* pStream)
 {
 	// Init saved data
@@ -5996,14 +6013,38 @@ void CvSelectionGroup::read(FDataStreamBase* pStream)
 	uint uiFlag=0;
 	pStream->Read(&uiFlag);	// flags for expansion
 
-	pStream->Read(&m_iID);
-	pStream->Read(&m_iMissionTimer);
+	if (uiFlag >= 1)
+	{
+		// Tagged. Fields arrive in any order, an unknown one is stepped over, and one
+		// the writer omitted keeps what reset() gave it above.
+		CvTagReader kReader(pStream);
+		while (kReader.next())
+		{
+			switch (kReader.tag())
+			{
+			case TAG_ID:            m_iID = kReader.asInt(); break;
+			case TAG_MISSION_TIMER: m_iMissionTimer = kReader.asInt(); break;
+			case TAG_FORCE_UPDATE:  m_bForceUpdate = kReader.asBool(); break;
+			case TAG_OWNER:         m_eOwner = (PlayerTypes)kReader.asInt(); break;
+			case TAG_ACTIVITY_TYPE: m_eActivityType = (ActivityTypes)kReader.asInt(); break;
+			case TAG_AUTOMATE_TYPE: m_eAutomateType = (AutomateTypes)kReader.asInt(); break;
+			default:                kReader.skip(); break;
+			}
+		}
+	}
+	else
+	{
+		// Positional, exactly as it always was. This branch is the compatibility shim;
+		// it is not new code and must not be edited.
+		pStream->Read(&m_iID);
+		pStream->Read(&m_iMissionTimer);
 
-	pStream->Read(&m_bForceUpdate);
+		pStream->Read(&m_bForceUpdate);
 
-	pStream->Read((int*)&m_eOwner);
-	pStream->Read((int*)&m_eActivityType);
-	pStream->Read((int*)&m_eAutomateType);
+		pStream->Read((int*)&m_eOwner);
+		pStream->Read((int*)&m_eActivityType);
+		pStream->Read((int*)&m_eAutomateType);
+	}
 
 	m_units.Read(pStream);
 	m_missionQueue.Read(pStream);
@@ -6012,17 +6053,19 @@ void CvSelectionGroup::read(FDataStreamBase* pStream)
 
 void CvSelectionGroup::write(FDataStreamBase* pStream)
 {
-	uint uiFlag=0;
+	uint uiFlag=1;	// 1: tagged fields (CvTaggedStream)
 	pStream->Write(uiFlag);		// flag for expansion
 
-	pStream->Write(m_iID);
-	pStream->Write(m_iMissionTimer);
-
-	pStream->Write(m_bForceUpdate);
-
-	pStream->Write(m_eOwner);
-	pStream->Write(m_eActivityType);
-	pStream->Write(m_eAutomateType);
+	{
+		CvTagWriter kWriter(pStream);
+		kWriter.write(TAG_ID, m_iID);
+		kWriter.write(TAG_MISSION_TIMER, m_iMissionTimer);
+		kWriter.write(TAG_FORCE_UPDATE, m_bForceUpdate);
+		kWriter.write(TAG_OWNER, (int)m_eOwner);
+		kWriter.write(TAG_ACTIVITY_TYPE, (int)m_eActivityType);
+		kWriter.write(TAG_AUTOMATE_TYPE, (int)m_eAutomateType);
+		kWriter.end();
+	}
 
 	m_units.Write(pStream);
 	m_missionQueue.Write(pStream);
