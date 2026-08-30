@@ -32,6 +32,7 @@
 #include "CvSnarkoProfiler.h"
 #include "CvSaveManifest.h"
 #include "CvTaggedStream.h"
+#include "CvSaveSizeProbe.h"
 
 CvCity::CvCity()
 {
@@ -17711,6 +17712,7 @@ void CvCity::read(FDataStreamBase* pStream)
 
 void CvCity::write(FDataStreamBase* pStream)
 {
+	CvSaveSizeScope kSizeScope(pStream, "CvCity");
 	int iI;
 
 	uint uiFlag=1;	// 1: tagged fields (CvTaggedStream)

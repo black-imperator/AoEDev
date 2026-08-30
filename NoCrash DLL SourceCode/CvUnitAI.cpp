@@ -21,6 +21,7 @@
 // interface uses
 #include "CvDLLInterfaceIFaceBase.h"
 #include "CvDLLFAStarIFaceBase.h"
+#include "CvSaveSizeProbe.h"
 
 #define FOUND_RANGE				(7)
 
@@ -28518,6 +28519,7 @@ void CvUnitAI::read(FDataStreamBase* pStream)
 
 void CvUnitAI::write(FDataStreamBase* pStream)
 {
+	CvSaveSizeScope kSizeScope(pStream, "CvUnitAI");
 	CvUnit::write(pStream);
 
 	uint uiFlag=0;

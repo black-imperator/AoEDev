@@ -12,6 +12,7 @@
 #include "CvDLLInterfaceIFaceBase.h"
 #include "CvEventReporter.h"
 #include "CvTaggedStream.h"
+#include "CvSaveSizeProbe.h"
 
 // Public Functions...
 
@@ -664,6 +665,7 @@ namespace
 }
 void CvDeal::write(FDataStreamBase* pStream)
 {
+	CvSaveSizeScope kSizeScope(pStream, "CvDeal");
 	uint uiFlag=1;	// 1: tagged fields (CvTaggedStream)
 	pStream->Write(uiFlag);		// flag for expansion
 	{

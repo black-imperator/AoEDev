@@ -28,6 +28,7 @@
 #include "CvArtFileMgr.h"
 #include "CvSaveManifest.h"
 #include "CvTaggedStream.h"
+#include "CvSaveSizeProbe.h"
 
 // Public Functions...
 
@@ -30781,6 +30782,7 @@ void CvUnit::read(FDataStreamBase* pStream)
 
 void CvUnit::write(FDataStreamBase* pStream)
 {
+	CvSaveSizeScope kSizeScope(pStream, "CvUnit");
 	uint uiFlag=3;	// 3: tagged fields (CvTaggedStream)
 	pStream->Write(uiFlag);		// flag for expansion
 	{

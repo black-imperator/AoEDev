@@ -14,6 +14,7 @@
 #include "FProfiler.h"
 #include "CyArgsList.h"
 #include "CvDLLPythonIFaceBase.h"
+#include "CvSaveSizeProbe.h"
 
 // statics
 
@@ -3900,6 +3901,7 @@ void CvTeamAI::read(FDataStreamBase* pStream)
 
 void CvTeamAI::write(FDataStreamBase* pStream)
 {
+	CvSaveSizeScope kSizeScope(pStream, "CvTeamAI");
 	CvTeam::write(pStream);
 
 	uint uiFlag=0;

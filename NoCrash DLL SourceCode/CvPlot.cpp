@@ -35,6 +35,7 @@
 #include "FAStarNode.h"
 #include "CvSaveManifest.h"
 #include "CvTaggedStream.h"
+#include "CvSaveSizeProbe.h"
 /************************************************************************************************/
 /* BETTER_BTS_AI_MOD                       END                                                  */
 /************************************************************************************************/
@@ -11918,6 +11919,7 @@ void CvPlot::read(FDataStreamBase* pStream)
 //
 void CvPlot::write(FDataStreamBase* pStream)
 {
+	CvSaveSizeScope kSizeScope(pStream, "CvPlot");
 	uint iI;
 
 	uint uiFlag=1;	// 1: tagged fields (CvTaggedStream)

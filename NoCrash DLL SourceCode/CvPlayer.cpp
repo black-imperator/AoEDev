@@ -43,6 +43,7 @@
 
 #include "CvSnarkoProfiler.h"
 #include "CvSaveManifest.h"
+#include "CvSaveSizeProbe.h"
 // Public Functions...
 
 CvPlayer::CvPlayer()
@@ -21739,6 +21740,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 //
 void CvPlayer::write(FDataStreamBase* pStream)
 {
+	CvSaveSizeScope kSizeScope(pStream, "CvPlayer");
 	int iI;
 
 	uint uiFlag = 2;	// 2: m_paiNoBonus no longer holds council bans (Fix #420)

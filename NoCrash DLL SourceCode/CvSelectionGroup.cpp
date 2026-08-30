@@ -23,6 +23,7 @@
 #include <set>
 #include "CvEventReporter.h"
 #include "CvTaggedStream.h"
+#include "CvSaveSizeProbe.h"
 
 /*************************************************************************************************/
 /**	K-mod merger								16/02/12								Snarko	**/
@@ -6049,6 +6050,7 @@ void CvSelectionGroup::read(FDataStreamBase* pStream)
 
 void CvSelectionGroup::write(FDataStreamBase* pStream)
 {
+	CvSaveSizeScope kSizeScope(pStream, "CvSelectionGroup");
 	uint uiFlag=1;	// 1: tagged fields (CvTaggedStream)
 	pStream->Write(uiFlag);		// flag for expansion
 	{

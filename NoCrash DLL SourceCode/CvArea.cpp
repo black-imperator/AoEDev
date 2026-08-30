@@ -14,6 +14,7 @@
 #include "CvDLLInterfaceIFaceBase.h"
 #include "CvSaveManifest.h"
 #include "CvTaggedStream.h"
+#include "CvSaveSizeProbe.h"
 
 // Public Functions...
 
@@ -1054,6 +1055,7 @@ void CvArea::read(FDataStreamBase* pStream)
 
 void CvArea::write(FDataStreamBase* pStream)
 {
+	CvSaveSizeScope kSizeScope(pStream, "CvArea");
 	int iI;
 
 	uint uiFlag=1;	// 1: tagged fields (CvTaggedStream)

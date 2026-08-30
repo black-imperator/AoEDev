@@ -6,6 +6,7 @@
 #include "CvGameAI.h"
 #include "CvPlayerAI.h"
 #include "CvSaveManifest.h"
+#include "CvSaveSizeProbe.h"
 
 CvGameRecord::CvGameRecord()
 {
@@ -440,6 +441,7 @@ void CvStatistics::read(FDataStreamBase* pStream)
 
 void CvStatistics::write(FDataStreamBase* pStream)
 {
+	CvSaveSizeScope kSizeScope(pStream, "CvStatistics");
 	// Write game data into record
 	m_GameRecord.write(pStream);
 

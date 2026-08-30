@@ -41,6 +41,7 @@
 #include "CvDLLPythonIFaceBase.h"
 
 #include "CvSnarkoProfiler.h"
+#include "CvSaveSizeProbe.h"
 
 #include <stdarg.h>
 #include <stdio.h>
@@ -9133,6 +9134,8 @@ void CvGame::read(FDataStreamBase* pStream)
 
 void CvGame::write(FDataStreamBase* pStream)
 {
+	CvSaveSizeProbe::begin();
+	CvSaveSizeScope kSizeScope(pStream, "CvGame");
 	int iI;
 
 	uint uiFlag=SAVE_FORMAT_VERSION;	// see SAVE_FORMAT_VERSION in CvSaveManifest.h

@@ -18,6 +18,7 @@
 #include "CvDLLInterfaceIFaceBase.h"
 #include "CvDLLFAStarIFaceBase.h"
 #include "CvSaveManifest.h"
+#include "CvSaveSizeProbe.h"
 
 
 #define BUILDINGFOCUS_FOOD					(1 << 1)
@@ -14453,6 +14454,7 @@ void CvCityAI::read(FDataStreamBase* pStream)
 //
 void CvCityAI::write(FDataStreamBase* pStream)
 {
+	CvSaveSizeScope kSizeScope(pStream, "CvCityAI");
 	CvCity::write(pStream);
 
 	uint uiFlag=0;

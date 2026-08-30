@@ -23,6 +23,7 @@
 #include "FProfiler.h"
 #include "CvSaveManifest.h"
 #include "CvTaggedStream.h"
+#include "CvSaveSizeProbe.h"
 
 // Public Functions...
 
@@ -7593,6 +7594,7 @@ void CvTeam::read(FDataStreamBase* pStream)
 
 void CvTeam::write(FDataStreamBase* pStream)
 {
+	CvSaveSizeScope kSizeScope(pStream, "CvTeam");
 	int iI;
 
 	uint uiFlag=1;	// 1: tagged fields (CvTaggedStream)

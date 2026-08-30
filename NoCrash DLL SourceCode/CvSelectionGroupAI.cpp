@@ -10,6 +10,7 @@
 #include "CvGameCoreUtils.h"
 #include "FProfiler.h"
 #include "CVInfos.h"
+#include "CvSaveSizeProbe.h"
 
 // Public Functions...
 
@@ -1082,6 +1083,7 @@ void CvSelectionGroupAI::read(FDataStreamBase* pStream)
 
 void CvSelectionGroupAI::write(FDataStreamBase* pStream)
 {
+	CvSaveSizeScope kSizeScope(pStream, "CvSelectionGroupAI");
 	CvSelectionGroup::write(pStream);
 
 	uint uiFlag=0;

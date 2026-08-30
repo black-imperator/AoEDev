@@ -6,6 +6,7 @@
 #include "CvTeamAI.h"
 #include "CvGlobals.h"
 #include "CvInfos.h"
+#include "CvSaveSizeProbe.h"
 
 // Public Functions...
 
@@ -153,6 +154,7 @@ void CvGameAI::read(FDataStreamBase* pStream)
 void CvGameAI::write(FDataStreamBase* pStream)
 {
 	CvGame::write(pStream);
+	CvSaveSizeProbe::report();
 
 	uint uiFlag=0;
 	pStream->Write(uiFlag);		// flag for expansion

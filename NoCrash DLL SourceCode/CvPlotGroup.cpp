@@ -11,6 +11,7 @@
 #include "FProfiler.h"
 #include "CvSaveManifest.h"
 #include "CvTaggedStream.h"
+#include "CvSaveSizeProbe.h"
 
 // Public Functions...
 
@@ -355,6 +356,7 @@ void CvPlotGroup::read(FDataStreamBase* pStream)
 
 void CvPlotGroup::write(FDataStreamBase* pStream)
 {
+	CvSaveSizeScope kSizeScope(pStream, "CvPlotGroup");
 	uint uiFlag=1;	// 1: tagged fields (CvTaggedStream)
 	pStream->Write(uiFlag);		// flag for expansion
 	{
