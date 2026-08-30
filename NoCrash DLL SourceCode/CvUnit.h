@@ -2233,6 +2233,19 @@ protected:
 /*************************************************************************************************/
 /**	Tweak									END													**/
 /*************************************************************************************************/
+/*************************************************************************************************/
+/**	Bugfix: bAutoAcquire recursion						2026-08-30						**/
+/**																								**/
+/**		Transient bookkeeping for setHasPromotion().  m_bInSetHasPromotion is true only while	**/
+/**		a setHasPromotion() cascade is on this unit's stack, and m_iPromotionChangeCount only	**/
+/**		has to be comparable against itself within one such cascade, so neither is written to	**/
+/**		the savegame -- the save format is unchanged.											**/
+/*************************************************************************************************/
+	bool m_bInSetHasPromotion;
+	int m_iPromotionChangeCount;
+/*************************************************************************************************/
+/**	Bugfix									END													**/
+/*************************************************************************************************/
 	int* m_paiNoBadExploreImprovement;
 
 	int* m_paiTerrainDoubleMoveCount;
