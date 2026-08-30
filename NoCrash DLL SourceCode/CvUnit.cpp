@@ -648,6 +648,8 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 	m_iID = iID;
 	m_iGroupID = FFreeList::INVALID_INDEX;
 	m_iHotKeyNumber = -1;
+	m_bInSetHasPromotion = false;
+	m_iPromotionChangeCount = 0;
 	m_iX = INVALID_PLOT_COORD;
 	m_iY = INVALID_PLOT_COORD;
 	m_iLastMoveTurn = 0;
@@ -22061,10 +22063,46 @@ int CvUnit::countHasPromotion(PromotionTypes eIndex) const
 void CvUnit::setHasPromotion(PromotionTypes eIndex, bool bNewValue)
 {
 /**								----  End Original Code  ----									**/
+/*************************************************************************************************/
+/**	Bugfix: bAutoAcquire recursion						2026-08-30						**/
+/**																								**/
+/**		Restores CvUnit::m_bInSetHasPromotion on every exit path.  setHasPromotion() has ten		**/
+/**		early returns, so a plain assignment at the end of the function would not be enough.		**/
+/*************************************************************************************************/
+namespace
+{
+	class CvSetHasPromotionReentryGuard
+	{
+	public:
+		CvSetHasPromotionReentryGuard(bool& bFlag) : m_bFlag(bFlag), m_bPrevious(bFlag) { m_bFlag = true; }
+		~CvSetHasPromotionReentryGuard() { m_bFlag = m_bPrevious; }
+	private:
+		bool& m_bFlag;
+		bool m_bPrevious;
+		CvSetHasPromotionReentryGuard(const CvSetHasPromotionReentryGuard&);
+		CvSetHasPromotionReentryGuard& operator=(const CvSetHasPromotionReentryGuard&);
+	};
+}
+/*************************************************************************************************/
+/**	Bugfix									END													**/
+/*************************************************************************************************/
 void CvUnit::setHasPromotion(PromotionTypes eIndex, bool bNewValue, bool bSupressEffects, bool bConvertUnit)
 {
 	CvPromotionInfo &kPromotion = GC.getPromotionInfo(eIndex);
 	bool bChange = false;
+/*************************************************************************************************/
+/**	Bugfix: bAutoAcquire recursion						2026-08-30						**/
+/**																								**/
+/**		This function calls itself, both directly (PromotionOverwrites, PromotionReplacedBy,		**/
+/**		PromotionClass) and indirectly through promote().  The AutoBots block at the end of the	**/
+/**		function must only run once the outermost of those calls has finished, so remember		**/
+/**		whether we are that outermost call.														**/
+/*************************************************************************************************/
+	const bool bOutermostPromotionChange = !m_bInSetHasPromotion;
+	CvSetHasPromotionReentryGuard kReentryGuard(m_bInSetHasPromotion);
+/*************************************************************************************************/
+/**	Bugfix									END													**/
+/*************************************************************************************************/
 /*************************************************************************************************/
 /**	Tweak									END													**/
 /*************************************************************************************************/
@@ -22326,6 +22364,7 @@ void CvUnit::setHasPromotion(PromotionTypes eIndex, bool bNewValue, bool bSupres
 		iChange = bNewValue ? 1 : -1;
 		m_paiHasPromotion[eIndex] += iChange;
 		bChange = true;
+		m_iPromotionChangeCount++;	// Bugfix: lets the AutoBots settle loop detect a pass that changed nothing
 /*************************************************************************************************/
 /**	Tweak									END													**/
 /*************************************************************************************************/
@@ -23155,23 +23194,86 @@ void CvUnit::setHasPromotion(PromotionTypes eIndex, bool bNewValue, bool bSupres
 /**																								**/
 /**					Automatically applies a Promotion if Unit meets conditions					**/
 /*************************************************************************************************/
-	if(bChange)
+/*************************************************************************************************/
+/**	Bugfix: bAutoAcquire recursion						2026-08-30						**/
+/**																								**/
+/**		This scan used to run at the end of EVERY setHasPromotion() call, including the nested	**/
+/**		ones this function makes itself to honour PromotionOverwrites, PromotionReplacedBy and	**/
+/**		PromotionClass, and the ones promote() makes below.  That let removal and re-acquisition	**/
+/**		chase each other without bound:															**/
+/**																								**/
+/**		  - the strip test asks canAcquirePromotion(), the re-grant test asks canPromote().  The	**/
+/**			two are not the same predicate, so for some data a promotion is stripped as no		**/
+/**			longer maintainable and then immediately re-granted as auto-acquirable.				**/
+/**		  - PromotionExcludes are applied before the PromotionOverwrites removal, so removing a	**/
+/**			tier lifts the DenyPromotion counts that were the only thing holding the lower tier	**/
+/**			back, and the removal's own scan puts the lower tier straight back on.				**/
+/**																								**/
+/**		Either way the recursion never returns.  It is not a stack overflow -- the depth stays	**/
+/**		around six frames -- so the game does not crash, it stops responding while			 	**/
+/**		changeCityBonuses() keeps appending to the unit's bonus list, and eventually dies of		**/
+/**		allocation failure.  The Grigori PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE 1/2/3 chain	**/
+/**		is exactly this shape: all three are bAutoAcquire and bMustMaintain, and each tier		**/
+/**		overwrites and excludes the tiers below it.												**/
+/**																								**/
+/**		Two changes make it terminate:															**/
+/**																								**/
+/**		  1. the scan runs only in the outermost setHasPromotion(), once the cascade has		 	**/
+/**			finished mutating state, instead of once per nested call.							**/
+/**		  2. within one outermost operation a promotion stripped for failing bMustMaintain is	**/
+/**			not a candidate for re-acquisition, which is what breaks the disagreement between	**/
+/**			the two predicates.																	**/
+/**																								**/
+/**		The scan still repeats while a pass actually changed something, so a chain that			**/
+/**		legitimately unlocks a lower-indexed promotion settles in the same operation as before.	**/
+/**		iMaxPasses bounds data that cannot settle at all; reaching it leaves the unit in a valid	**/
+/**		state and logs the unit rather than hanging the turn.									**/
+/*************************************************************************************************/
+	if (bChange && bOutermostPromotionChange)
 	{
-		for (int iI = 0; iI < GC.getNumPromotionInfos(); iI++)
+		const int iMaxPasses = 16;
+		const int iNumPromotions = GC.getNumPromotionInfos();
+		// left empty unless something is actually stripped, which is the rare case
+		std::vector<bool> abStripped;
+		bool bSettled = false;
+
+		for (int iPass = 0; iPass < iMaxPasses && !bSettled; iPass++)
 		{
-			if (isHasPromotion((PromotionTypes)iI) && GC.getPromotionInfo((PromotionTypes)iI).isMustMaintain() && !canAcquirePromotion((PromotionTypes)iI,true) && !m_pUnitInfo->getFreePromotions(iI))
+			const int iChangesBefore = m_iPromotionChangeCount;
+
+			for (int iI = 0; iI < iNumPromotions; iI++)
 			{
-				for(int k=0;k<countHasPromotion((PromotionTypes)iI);++k)
+				if (isHasPromotion((PromotionTypes)iI) && GC.getPromotionInfo((PromotionTypes)iI).isMustMaintain() && !canAcquirePromotion((PromotionTypes)iI,true) && !m_pUnitInfo->getFreePromotions(iI))
 				{
-					setHasPromotion(((PromotionTypes)iI), false);
+					if (abStripped.empty())
+					{
+						abStripped.resize(iNumPromotions, false);
+					}
+					abStripped[iI] = true;
+					for(int k=0;k<countHasPromotion((PromotionTypes)iI);++k)
+					{
+						setHasPromotion(((PromotionTypes)iI), false);
+					}
+				}
+				if (GC.getPromotionInfo((PromotionTypes)iI).isAutoAcquire() && (abStripped.empty() || !abStripped[iI]) && canPromote((PromotionTypes)iI, -1))
+				{
+					promote(((PromotionTypes)iI), -1);
 				}
 			}
-			if (GC.getPromotionInfo((PromotionTypes)iI).isAutoAcquire() && canPromote((PromotionTypes)iI, -1))
-			{
-				promote(((PromotionTypes)iI), -1);
-			}
+
+			bSettled = (m_iPromotionChangeCount == iChangesBefore);
+		}
+
+		if (!bSettled)
+		{
+			char szLog[256];
+			sprintf(szLog, "setHasPromotion: bAutoAcquire scan did not settle for unit id %d (unit type %d) after %d passes; check bAutoAcquire / bMustMaintain / PromotionOverwrites data\n", getID(), (int)getUnitType(), iMaxPasses);
+			gDLL->logMsg("PromotionSettle.log", szLog);
 		}
 	}
+/*************************************************************************************************/
+/**	Bugfix									END													**/
+/*************************************************************************************************/
 /*************************************************************************************************/
 /**	AutoBots									END												**/
 /*************************************************************************************************/
