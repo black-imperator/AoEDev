@@ -8843,11 +8843,11 @@ void CvGame::read(FDataStreamBase* pStream)
 	// m_bPlayerOptionsSent not saved
 	pStream->Read(&m_bNukesValid);
 
-	pStream->Read((int*)&m_eHandicap);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_HANDICAP, &m_eHandicap);
 	pStream->Read((int*)&m_ePausePlayer);
-	pStream->Read((int*)&m_eBestLandUnit);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_UNIT, &m_eBestLandUnit);
 	pStream->Read((int*)&m_eWinner);
-	pStream->Read((int*)&m_eVictory);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_VICTORY, &m_eVictory);
 	pStream->Read((int*)&m_eGameState);
 
 	pStream->ReadString(m_szScriptData);

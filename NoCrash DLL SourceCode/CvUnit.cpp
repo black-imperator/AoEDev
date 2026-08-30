@@ -30134,7 +30134,7 @@ void CvUnit::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iExperience);
 	pStream->Read(&m_iLevel);
 	pStream->Read(&m_iCargo);
-	pStream->Read(&m_iSpecialCargo);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_SPECIAL_UNIT, &m_iSpecialCargo);
 	pStream->Read(&m_iDomainCargo);
 	pStream->Read(&m_iCargoCapacity);
 	pStream->Read(&m_iMaxExpReward);
@@ -30583,10 +30583,10 @@ void CvUnit::read(FDataStreamBase* pStream)
 
 	pStream->Read((int*)&m_eOwner);
 	pStream->Read((int*)&m_eCapturingPlayer);
-	pStream->Read((int*)&m_eUnitType);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_UNIT, &m_eUnitType);
 	FAssert(NO_UNIT != m_eUnitType);
 	m_pUnitInfo = (NO_UNIT != m_eUnitType) ? &GC.getUnitInfo(m_eUnitType) : NULL;
-	pStream->Read((int*)&m_eLeaderUnitType);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_UNIT, &m_eLeaderUnitType);
 
 	pStream->Read((int*)&m_combatUnit.eOwner);
 	pStream->Read(&m_combatUnit.iID);
@@ -30644,8 +30644,8 @@ void CvUnit::read(FDataStreamBase* pStream)
 /**																								**/
 /**						Making the human able to set units to autocast spells					**/
 /*************************************************************************************************/
-	pStream->Read((int*)&m_eDeathListTarget);
-	pStream->Read((int*)&m_eAutoCast);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_DEATH_LIST, &m_eDeathListTarget);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_SPELL, &m_eAutoCast);
 	pStream->Read(&m_bAutoCastPre);
 /*************************************************************************************************/
 /**	Autocast								END													**/

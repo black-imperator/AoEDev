@@ -41,7 +41,7 @@ void EventTriggeredData::setID(int iID)
 void EventTriggeredData::read(FDataStreamBase* pStream)
 {
 	pStream->Read(&m_iId);
-	pStream->Read((int*)&m_eTrigger);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_EVENT_TRIGGER, &m_eTrigger);
 	pStream->Read(&m_iTurn);
 	pStream->Read((int*)&m_ePlayer);
 	pStream->Read(&m_iCityId);
@@ -50,9 +50,9 @@ void EventTriggeredData::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iUnitId);
 	pStream->Read((int*)&m_eOtherPlayer);
 	pStream->Read(&m_iOtherPlayerCityId);
-	pStream->Read((int*)&m_eReligion);
-	pStream->Read((int*)&m_eCorporation);
-	pStream->Read((int*)&m_eBuilding);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_RELIGION, &m_eReligion);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_CORPORATION, &m_eCorporation);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_BUILDING, &m_eBuilding);
 	pStream->ReadString(m_szText);
 	pStream->ReadString(m_szGlobalText);
 }

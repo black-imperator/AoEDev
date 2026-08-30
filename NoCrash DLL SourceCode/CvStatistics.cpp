@@ -63,7 +63,7 @@ void CvGameRecord::read(FDataStreamBase* pStream)
 	uint uiFlag=0;
 	pStream->Read(&uiFlag);	// flags for expansion
 
-	pStream->Read((int*)&m_eEra);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_ERA, &m_eEra);
 
 	pStream->ReadString(m_szMapName);
 }
@@ -279,8 +279,8 @@ void CvPlayerRecord::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iID);
 	pStream->Read(&m_iTime);
 
-	pStream->Read((int*)&m_eVictory);
-	pStream->Read((int*)&m_eLeader);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_VICTORY, &m_eVictory);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_LEADER_HEAD, &m_eLeader);
 
 	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT, m_piNumUnitsBuilt);
 	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT, m_piNumUnitsKilled);

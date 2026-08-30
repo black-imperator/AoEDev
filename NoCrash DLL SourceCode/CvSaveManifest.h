@@ -202,6 +202,19 @@ namespace CvSaveManifest
 	// manifest -- so remap state cannot leak from an earlier load in the same session.
 	void beginRead();
 
+	// Remap one stored content index from the save's numbering to this build's.
+	// NO_X (-1) and anything outside the save's own range pass through untouched.
+	// Content the build no longer has maps to -1, which is NO_X -- the right answer.
+	int remapId(ContentType eType, int iValue);
+
+	template <class T>
+	void readId(FDataStreamBase* pStream, ContentType eType, T* pDest)
+	{
+		int iValue = 0;
+		pStream->Read(&iValue);
+		*pDest = (T)remapId(eType, iValue);
+	}
+
 	int savedCount(ContentType eType);         // width the save used
 	int currentCount(ContentType eType);       // width this build uses
 	const int* remapTable(ContentType eType);  // old->new index, NULL when identity

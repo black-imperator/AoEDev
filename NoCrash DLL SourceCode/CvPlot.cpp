@@ -33,6 +33,7 @@
 /* General AI                                                                                   */
 /************************************************************************************************/
 #include "FAStarNode.h"
+#include "CvSaveManifest.h"
 /************************************************************************************************/
 /* BETTER_BTS_AI_MOD                       END                                                  */
 /************************************************************************************************/
@@ -11627,7 +11628,7 @@ void CvPlot::read(FDataStreamBase* pStream)
 	pStream->Read(&m_ePlotEffectType);
 	pStream->Read(&m_eBonusType);
 	pStream->Read(&m_eImprovementType);
-	pStream->Read(&m_eRouteType);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_ROUTE, &m_eRouteType);
 	pStream->Read(&m_eRiverNSDirection);
 	pStream->Read(&m_eRiverWEDirection);
 
@@ -11667,7 +11668,7 @@ void CvPlot::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iNumLairSpawnsAlive);
 	pStream->Read(&m_bNeedsRebuilding);
 	//ClimateSystem:
-	pStream->Read(&m_eClimate);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_CLIMATE, &m_eClimate);
 	pStream->Read(&m_eNaturalClimate);
 	pStream->Read(&m_iTemperature);
 	pStream->Read(&m_iHumidity);

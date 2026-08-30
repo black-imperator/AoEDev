@@ -21282,9 +21282,9 @@ void CvPlayer::read(FDataStreamBase* pStream)
 /*************************************************************************************************/
 
 	pStream->Read((int*)&m_eID);
-	pStream->Read((int*)&m_ePersonalityType);
-	pStream->Read((int*)&m_eCurrentEra);
-	pStream->Read((int*)&m_eLastStateReligion);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_LEADER_HEAD, &m_ePersonalityType);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_ERA, &m_eCurrentEra);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_RELIGION, &m_eLastStateReligion);
 	pStream->Read((int*)&m_eParent);
 	updateTeamType(); //m_eTeamType not saved
 	updateHuman();
@@ -21293,7 +21293,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 /**																								**/
 /**			Was sometimes called thousands of times per turn, which is slow						**/
 /*************************************************************************************************/
-	pStream->Read((int*)&m_eBestRouteCache);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_ROUTE, &m_eBestRouteCache);
 /*************************************************************************************************/
 /**	Speedup									END													**/
 /*************************************************************************************************/

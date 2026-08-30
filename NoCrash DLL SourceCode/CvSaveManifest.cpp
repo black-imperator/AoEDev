@@ -615,12 +615,13 @@ bool CvSaveManifest::readAndCheck(FDataStreamBase* pStream)
 	}
 
 	logManifestf("[MANIFEST] %s%d content type(s) differ.", "", iDiffering, 0);
-	logManifest("[MANIFEST] Re-enable the modules that supply the missing content, or convert");
-	logManifest("[MANIFEST] the save with aoe_save_migrator.");
-	logManifest("[MANIFEST] The rest of this load will desync: content arrays are written with");
-	logManifest("[MANIFEST] no element count, so the reader uses this build's counts and every");
-	logManifest("[MANIFEST] field after the first differing array decodes from the wrong offset.");
-	logManifest("[MANIFEST] Anything logged below this point is a consequence, not a new fault.");
+	logManifest("[MANIFEST] Arrays indexed by these types are read at the width the save used and");
+	logManifest("[MANIFEST] placed by name into this build's ordering, so the stream stays in step.");
+	logManifest("[MANIFEST] Content the save had and this build does not is dropped -- if that was");
+	logManifest("[MANIFEST] a module you meant to keep, re-enable it and load again.");
+	logManifest("[MANIFEST] Not yet remapped: content ids held in plain int fields that carry no");
+	logManifest("[MANIFEST] type. Those may still refer to the wrong entry, so report anything that");
+	logManifest("[MANIFEST] shows up as the wrong thing rather than assuming it is a separate bug.");
 	logManifest("[MANIFEST] ----------------------------------------------------------------");
 
 	return false;
@@ -668,4 +669,19 @@ const int* CvSaveManifest::remapTable(ContentType eType)
 		return NULL;
 	}
 	return &g_aiRemap[eType][0];
+}
+
+int CvSaveManifest::remapId(ContentType eType, int iValue)
+{
+	const int* piRemap = remapTable(eType);
+
+	if (piRemap == NULL || iValue < 0 || iValue >= savedCount(eType))
+	{
+		// No table means the content did not move. A negative value is NO_X and has
+		// to stay NO_X. An index past the save's own width was already meaningless,
+		// so inventing a new one for it would only hide the problem.
+		return iValue;
+	}
+
+	return piRemap[iValue];
 }

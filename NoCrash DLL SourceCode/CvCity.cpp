@@ -17314,7 +17314,7 @@ void CvCity::read(FDataStreamBase* pStream)
 	pStream->Read((int*)&m_eOwner);
 	pStream->Read((int*)&m_ePreviousOwner);
 	pStream->Read((int*)&m_eOriginalOwner);
-	pStream->Read((int*)&m_eCultureLevel);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_CULTURE_LEVEL, &m_eCultureLevel);
 
 //FfH: Added by Kael 08/21/2007
 	pStream->Read(&m_bSettlement);
