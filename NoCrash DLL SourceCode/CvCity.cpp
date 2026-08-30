@@ -30,6 +30,7 @@
 // Public Functions...
 
 #include "CvSnarkoProfiler.h"
+#include "CvSaveManifest.h"
 
 CvCity::CvCity()
 {
@@ -17396,17 +17397,17 @@ void CvCity::read(FDataStreamBase* pStream)
 	pStream->Read(&m_fProximityPotency);
 	pStream->Read(&m_fProximityShielding);
 	pStream->Read(&m_iPotency);
-	pStream->Read(GC.getNumBonusInfos(), m_pafPotencyAffinity);
-	pStream->Read(GC.getNumBonusInfos(), m_paiPotencyBonusPrereq);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_pafPotencyAffinity);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_paiPotencyBonusPrereq);
 	pStream->Read(&m_iShielding);
-	pStream->Read(GC.getNumBonusInfos(), m_pafShieldingAffinity);
-	pStream->Read(GC.getNumBonusInfos(), m_paiShieldingBonusPrereq);
-	pStream->Read(GC.getNumUnitCombatInfos(), m_paiTrainXPCap);
-	pStream->Read(GC.getNumUnitCombatInfos(), m_pafTrainXPRate);
-	pStream->Read(GC.getNumUnitCombatInfos(), m_pafPerCrimeTrainXPCap);
-	pStream->Read(GC.getNumUnitCombatInfos(), m_pafPerCrimeTrainXPRate);
-	pStream->Read(GC.getNumUnitCombatInfos(), m_pafProximityTrainXPCap);
-	pStream->Read(GC.getNumUnitCombatInfos(), m_pafProximityTrainXPRate);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_pafShieldingAffinity);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_paiShieldingBonusPrereq);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT_COMBAT, m_paiTrainXPCap);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT_COMBAT, m_pafTrainXPRate);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT_COMBAT, m_pafPerCrimeTrainXPCap);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT_COMBAT, m_pafPerCrimeTrainXPRate);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT_COMBAT, m_pafProximityTrainXPCap);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT_COMBAT, m_pafProximityTrainXPRate);
 /*************************************************************************************************/
 /**	New Tag Defs							END													**/
 /*************************************************************************************************/
@@ -17469,19 +17470,19 @@ void CvCity::read(FDataStreamBase* pStream)
 	pStream->ReadString(m_szName);
 	pStream->ReadString(m_szScriptData);
 
-	pStream->Read(GC.getNumBonusInfos(), m_paiNoBonus);
-	pStream->Read(GC.getNumBonusInfos(), m_paiFreeBonus);
-	pStream->Read(GC.getNumBonusInfos(), m_paiNumBonuses);
-	pStream->Read(GC.getNumBonusInfos(), m_paiNumCorpProducedBonuses);
-	pStream->Read(GC.getNumProjectInfos(), m_paiProjectProduction);
-	pStream->Read(GC.getNumBuildingInfos(), m_paiBuildingProduction);
-	pStream->Read(GC.getNumBuildingInfos(), m_paiBuildingProductionTime);
-	pStream->Read(GC.getNumBuildingInfos(), m_paiBuildingOriginalOwner);
-	pStream->Read(GC.getNumBuildingInfos(), m_paiBuildingOriginalTime);
-	pStream->Read(GC.getNumUnitInfos(), m_paiUnitProduction);
-	pStream->Read(GC.getNumUnitInfos(), m_paiUnitProductionTime);
-	pStream->Read(GC.getNumUnitInfos(), m_paiGreatPeopleUnitRate);
-	pStream->Read(GC.getNumUnitInfos(), m_paiGreatPeopleUnitProgress);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_paiNoBonus);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_paiFreeBonus);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_paiNumBonuses);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_paiNumCorpProducedBonuses);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PROJECT, m_paiProjectProduction);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BUILDING, m_paiBuildingProduction);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BUILDING, m_paiBuildingProductionTime);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BUILDING, m_paiBuildingOriginalOwner);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BUILDING, m_paiBuildingOriginalTime);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT, m_paiUnitProduction);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT, m_paiUnitProductionTime);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT, m_paiGreatPeopleUnitRate);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT, m_paiGreatPeopleUnitProgress);
 /*************************************************************************************************/
 /**	GWSLocalSpecialist																	Milaga	**/
 /** Buildings can change give bonuses to specialists in only one city							**/
@@ -17494,40 +17495,40 @@ void CvCity::read(FDataStreamBase* pStream)
 	{
 		pStream->Read(NUM_COMMERCE_TYPES, m_paaiLocalSpecialistCommerce[iI]);
 	}
-	pStream->Read(GC.getNumSpecialistClassInfos(), m_paiLocalSpecialistHappiness);
-	pStream->Read(GC.getNumSpecialistClassInfos(), m_paiLocalSpecialistHealth);
-	pStream->Read(GC.getNumSpecialistClassInfos(), m_paiLocalSpecialistCrime);
-	pStream->Read(GC.getNumSpecialistClassInfos(), m_paiLocalSpecialistGPP);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST_CLASS, m_paiLocalSpecialistHappiness);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST_CLASS, m_paiLocalSpecialistHealth);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST_CLASS, m_paiLocalSpecialistCrime);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST_CLASS, m_paiLocalSpecialistGPP);
 /*************************************************************************************************/
 /**	GWSLocalSpecialist																		END	**/
 /*************************************************************************************************/
-	pStream->Read(GC.getNumSpecialistClassInfos(), m_paiSpecialistClassCount);
-	pStream->Read(GC.getNumSpecialistClassInfos(), m_paiMaxSpecialistClassCount);
-	pStream->Read(GC.getNumSpecialistClassInfos(), m_pabBlockedSpecialistClass);
-	pStream->Read(GC.getNumSpecialistClassInfos(), m_paiForceSpecialistClassCount);
-	pStream->Read(GC.getNumSpecialistClassInfos(), m_paiFreeSpecialistClassCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST_CLASS, m_paiSpecialistClassCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST_CLASS, m_paiMaxSpecialistClassCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST_CLASS, m_pabBlockedSpecialistClass);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST_CLASS, m_paiForceSpecialistClassCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST_CLASS, m_paiFreeSpecialistClassCount);
 /*************************************************************************************************/
 /**	Statesmen								02/05/10											**/
 /**																								**/
 /**						Allows improvements to grant specific specialists						**/
 /*************************************************************************************************/
-	pStream->Read(GC.getNumSpecialistClassInfos(), m_paiImprovementSpecialistCount);
-	pStream->Read(GC.getNumSpecialistClassInfos(), m_paiStateReligionSpecialistCount);
-	pStream->Read(GC.getNumSpecialistClassInfos(), m_paiNonStateReligionSpecialistCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST_CLASS, m_paiImprovementSpecialistCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST_CLASS, m_paiStateReligionSpecialistCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST_CLASS, m_paiNonStateReligionSpecialistCount);
 /*************************************************************************************************/
 /**	Statesmen								END													**/
 /*************************************************************************************************/
-	pStream->Read(GC.getNumImprovementInfos(), m_paiImprovementFreeSpecialists);
-	pStream->Read(GC.getNumReligionInfos(), m_paiReligionInfluence);
-	pStream->Read(GC.getNumReligionInfos(), m_paiStateReligionHappiness);
-	pStream->Read(GC.getNumUnitCombatInfos(), m_paiUnitCombatFreeExperience);
-	pStream->Read(GC.getNumPromotionInfos(), m_paiFreePromotionCount);
-	pStream->Read(GC.getNumBuildingInfos(), m_paiNumRealBuilding);
-	pStream->Read(GC.getNumBuildingInfos(), m_paiNumFreeBuilding);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_IMPROVEMENT, m_paiImprovementFreeSpecialists);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_RELIGION, m_paiReligionInfluence);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_RELIGION, m_paiStateReligionHappiness);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT_COMBAT, m_paiUnitCombatFreeExperience);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PROMOTION, m_paiFreePromotionCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BUILDING, m_paiNumRealBuilding);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BUILDING, m_paiNumFreeBuilding);
 
 	pStream->Read(NUM_CITY_PLOTS, m_pabWorkingPlot);
-	pStream->Read(GC.getNumReligionInfos(), m_pabHasReligion);
-	pStream->Read(GC.getNumCorporationInfos(), m_pabHasCorporation);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_RELIGION, m_pabHasReligion);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_CORPORATION, m_pabHasCorporation);
 
 	for (int iI=0;iI<GC.getDefineINT("MAX_TRADE_ROUTES");iI++)
 	{
@@ -17613,8 +17614,8 @@ void CvCity::read(FDataStreamBase* pStream)
 	pStream->Read(&m_fPerPopInfectCulture);
 	pStream->Read(&m_fPerPopPotency);
 	pStream->Read(&m_fPerPopShielding);
-	pStream->Read(GC.getNumUnitCombatInfos(), m_pafPerPopTrainXPCap);
-	pStream->Read(GC.getNumUnitCombatInfos(), m_pafPerPopTrainXPRate);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT_COMBAT, m_pafPerPopTrainXPCap);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT_COMBAT, m_pafPerPopTrainXPRate);
 }
 
 void CvCity::write(FDataStreamBase* pStream)

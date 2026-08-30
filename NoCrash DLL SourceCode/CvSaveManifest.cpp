@@ -371,6 +371,12 @@ namespace
 		return szOut;
 	}
 
+	// Remap state for the load in progress. g_iSavedCount[t] < 0 means "the save did
+	// not tell us", in which case the current count is used and no remapping happens --
+	// which is exactly the old behaviour, and what every pre-manifest save gets.
+	int g_iSavedCount[CvSaveManifest::NUM_CONTENT_TYPES];
+	std::vector<int> g_aiRemap[CvSaveManifest::NUM_CONTENT_TYPES];
+
 	std::vector<std::string> currentNames(const ManifestType& kType)
 	{
 		std::vector<std::string> out;
@@ -489,15 +495,42 @@ bool CvSaveManifest::readAndCheck(FDataStreamBase* pStream)
 		if (it == saved.end())
 		{
 			// This build knows a content type the save never recorded -- the save
-			// predates it. Not itself a mismatch worth failing over.
+			// predates it. Leaving the saved width unknown makes reads of this type
+			// use the current count, which is what the old code always did.
 			continue;
 		}
 
 		const std::vector<std::string>& kSave = it->second;
 
+		// Remember the width the save was written at, so arrays of this type are read
+		// at that width instead of at ours. This is the half that stops the desync.
+		g_iSavedCount[iType] = (int)kSave.size();
+
 		if (kSave == kBuild)
 		{
+			// Identical content: no remap table, and readArray takes its fast path.
 			continue;
+		}
+
+		// Build old->new by name. Entries this build no longer has map to -1 and are
+		// dropped on read; entries it has gained keep whatever reset() left in them.
+		// This is the half that stops stored indices pointing at the wrong content.
+		{
+			std::map<std::string, int> kWhereNow;
+			for (int i = 0; i < (int)kBuild.size(); i++)
+			{
+				kWhereNow[kBuild[i]] = i;
+			}
+
+			std::vector<int>& kRemap = g_aiRemap[iType];
+			kRemap.resize(kSave.size());
+
+			for (int i = 0; i < (int)kSave.size(); i++)
+			{
+				const std::map<std::string, int>::const_iterator itFound =
+					kWhereNow.find(kSave[i]);
+				kRemap[i] = (itFound != kWhereNow.end()) ? itFound->second : -1;
+			}
 		}
 
 		if (!bHeaderWritten)
@@ -591,4 +624,48 @@ bool CvSaveManifest::readAndCheck(FDataStreamBase* pStream)
 	logManifest("[MANIFEST] ----------------------------------------------------------------");
 
 	return false;
+}
+
+// ---------------------------------------------------------------------------
+// Remap state
+// ---------------------------------------------------------------------------
+
+void CvSaveManifest::beginRead()
+{
+	for (int i = 0; i < NUM_CONTENT_TYPES; i++)
+	{
+		g_iSavedCount[i] = -1;
+		g_aiRemap[i].clear();
+	}
+}
+
+int CvSaveManifest::currentCount(ContentType eType)
+{
+	if (eType < 0 || eType >= NUM_CONTENT_TYPES)
+	{
+		return 0;
+	}
+	return MANIFEST_TYPES[eType].pfnCount();
+}
+
+int CvSaveManifest::savedCount(ContentType eType)
+{
+	if (eType < 0 || eType >= NUM_CONTENT_TYPES)
+	{
+		return 0;
+	}
+	if (g_iSavedCount[eType] < 0)
+	{
+		return currentCount(eType);
+	}
+	return g_iSavedCount[eType];
+}
+
+const int* CvSaveManifest::remapTable(ContentType eType)
+{
+	if (eType < 0 || eType >= NUM_CONTENT_TYPES || g_aiRemap[eType].empty())
+	{
+		return NULL;
+	}
+	return &g_aiRemap[eType][0];
 }

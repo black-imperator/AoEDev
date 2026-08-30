@@ -24,6 +24,7 @@
 #include "CvDLLFAStarIFaceBase.h"
 #include "FAStarNode.h"
 #include "CvEventReporter.h"
+#include "CvSaveManifest.h"
 
 /************************************************************************************************/
 /* BETTER_BTS_AI_MOD                      08/21/09                                jdog5000      */
@@ -18672,9 +18673,9 @@ void CvPlayerAI::read(FDataStreamBase* pStream)
 		}
 	}
 
-	pStream->Read(GC.getNumBonusInfos(), m_aiBonusValue);
-	pStream->Read(GC.getNumUnitClassInfos(), m_aiUnitClassWeights);
-	pStream->Read(GC.getNumUnitCombatInfos(), m_aiUnitCombatWeights);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_aiBonusValue);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT_CLASS, m_aiUnitClassWeights);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT_COMBAT, m_aiUnitCombatWeights);
 	pStream->Read(MAX_PLAYERS, m_aiCloseBordersAttitudeCache);
 /*************************************************************************************************/
 /**	New Tag Defs	(PlayerInfos)			09/01/08								Xienwolf	**/

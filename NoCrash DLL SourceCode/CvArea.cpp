@@ -12,6 +12,7 @@
 #include "CvInfos.h"
 
 #include "CvDLLInterfaceIFaceBase.h"
+#include "CvSaveManifest.h"
 
 // Public Functions...
 
@@ -993,8 +994,8 @@ void CvArea::read(FDataStreamBase* pStream)
 		pStream->Read(NUM_UNITAI_TYPES, m_aaiNumAIUnits[iI]);
 	}
 
-	pStream->Read(GC.getNumBonusInfos(), m_paiNumBonuses);
-	pStream->Read(GC.getNumImprovementInfos(), m_paiNumImprovements);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_paiNumBonuses);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_IMPROVEMENT, m_paiNumImprovements);
 /*************************************************************************************************/
 /**	New Tag Defs	(AreaInfos)				01/05/09								Xienwolf	**/
 /**																								**/

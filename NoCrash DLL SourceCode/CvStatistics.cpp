@@ -5,6 +5,7 @@
 #include "CvGlobals.h"
 #include "CvGameAI.h"
 #include "CvPlayerAI.h"
+#include "CvSaveManifest.h"
 
 CvGameRecord::CvGameRecord()
 {
@@ -281,11 +282,11 @@ void CvPlayerRecord::read(FDataStreamBase* pStream)
 	pStream->Read((int*)&m_eVictory);
 	pStream->Read((int*)&m_eLeader);
 
-	pStream->Read(GC.getNumUnitInfos(), m_piNumUnitsBuilt);
-	pStream->Read(GC.getNumUnitInfos(), m_piNumUnitsKilled);
-	pStream->Read(GC.getNumUnitInfos(), m_piNumUnitsWasKilled);
-	pStream->Read(GC.getNumBuildingInfos(), m_piNumBuildingsBuilt);
-	pStream->Read(GC.getNumReligionInfos(), m_pbReligionFounded);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT, m_piNumUnitsBuilt);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT, m_piNumUnitsKilled);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT, m_piNumUnitsWasKilled);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BUILDING, m_piNumBuildingsBuilt);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_RELIGION, m_pbReligionFounded);
 
 	pStream->Read(&m_iNumCitiesBuilt);
 	pStream->Read(&m_iNumCitiesRazed);

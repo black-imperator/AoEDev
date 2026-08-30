@@ -13,6 +13,7 @@
 
 #include "CvGameCoreDLL.h"
 #include "CvUnit.h"
+#include "CvSaveManifest.h"
 //#include "CvStructs.h"
 
 /*************************************************************************************************/
@@ -906,7 +907,7 @@ void SpellUpgradeData::read(FDataStreamBase* pStream)
 	pStream->Read(&iSummonNumber);
 	SAFE_DELETE_ARRAY(piSummonPromotionData);
 	piSummonPromotionData = new int[GC.getNumPromotionInfos()];
-	pStream->Read(GC.getNumPromotionInfos(), piSummonPromotionData);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PROMOTION, piSummonPromotionData);
 
 	pStream->Read(&bPermanent);
 	pStream->Read(&bSummonPermanent);
@@ -957,7 +958,7 @@ void DeadUnitData::read(FDataStreamBase* pStream)
 	pStream->Read(&iDeathList);
 	SAFE_DELETE_ARRAY(piPromotions);
 	piPromotions = new int[GC.getNumPromotionInfos()];
-	pStream->Read(GC.getNumPromotionInfos(), piPromotions);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PROMOTION, piPromotions);
 }
 
 void DeadUnitData::write(FDataStreamBase* pStream)

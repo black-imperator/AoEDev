@@ -8779,6 +8779,11 @@ void CvGame::read(FDataStreamBase* pStream)
 	uint uiFlag=0;
 	pStream->Read(&uiFlag);	// flags for expansion
 
+	// Unconditional, and before anything else: this clears remap state from any
+	// earlier load in the same session. Skipping it for a save with no manifest would
+	// leave the previous game's tables in place and silently permute this one.
+	CvSaveManifest::beginRead();
+
 	// The manifest sits immediately after the flag, at the very top of the compressed
 	// body, so it is read before any content-sized array has had a chance to desync.
 	// A mismatch is reported and the load continues: there is no engine-supported way
@@ -8859,30 +8864,30 @@ void CvGame::read(FDataStreamBase* pStream)
 	pStream->Read(MAX_TEAMS, m_aiTeamRank);
 	pStream->Read(MAX_TEAMS, m_aiTeamScore);
 
-	pStream->Read(GC.getNumUnitInfos(), m_paiUnitCreatedCount);
-	pStream->Read(GC.getNumUnitClassInfos(), m_paiUnitClassCreatedCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT, m_paiUnitCreatedCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT_CLASS, m_paiUnitClassCreatedCount);
 /*************************************************************************************************/
 /**	Spawn Groups						08/05/10									Valkrionn	**/
 /**																								**/
 /**					New spawn mechanic, allowing us to customize stacks							**/
 /*************************************************************************************************/
-	pStream->Read(GC.getNumSpawnGroupInfos(), m_paiSpawnGroupCreatedCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPAWN_GROUP, m_paiSpawnGroupCreatedCount);
 /*************************************************************************************************/
 /**	Spawn Groups							END													**/
 /*************************************************************************************************/
-	pStream->Read(GC.getNumBuildingClassInfos(), m_paiBuildingClassCreatedCount);
-	pStream->Read(GC.getNumProjectInfos(), m_paiProjectCreatedCount);
-	pStream->Read(GC.getNumCivicInfos(), m_paiForceCivicCount);
-	pStream->Read(GC.getNumVoteInfos(), (int*)m_paiVoteOutcome);
-	pStream->Read(GC.getNumReligionInfos(), m_paiReligionGameTurnFounded);
-	pStream->Read(GC.getNumCorporationInfos(), m_paiCorporationGameTurnFounded);
-	pStream->Read(GC.getNumVoteSourceInfos(), m_aiSecretaryGeneralTimer);
-	pStream->Read(GC.getNumVoteSourceInfos(), m_aiVoteTimer);
-	pStream->Read(GC.getNumVoteSourceInfos(), m_aiDiploVote);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BUILDING_CLASS, m_paiBuildingClassCreatedCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PROJECT, m_paiProjectCreatedCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_CIVIC, m_paiForceCivicCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_VOTE, (int*)m_paiVoteOutcome);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_RELIGION, m_paiReligionGameTurnFounded);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_CORPORATION, m_paiCorporationGameTurnFounded);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_VOTE_SOURCE, m_aiSecretaryGeneralTimer);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_VOTE_SOURCE, m_aiVoteTimer);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_VOTE_SOURCE, m_aiDiploVote);
 
-	pStream->Read(GC.getNumSpecialUnitInfos(), m_pabSpecialUnitValid);
-	pStream->Read(GC.getNumSpecialBuildingInfos(), m_pabSpecialBuildingValid);
-	pStream->Read(GC.getNumReligionInfos(), m_abReligionSlotTaken);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIAL_UNIT, m_pabSpecialUnitValid);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIAL_BUILDING, m_pabSpecialBuildingValid);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_RELIGION, m_abReligionSlotTaken);
 
 	for (int iI=0;iI<GC.getNumReligionInfos();iI++)
 	{
@@ -9076,8 +9081,8 @@ void CvGame::read(FDataStreamBase* pStream)
 	}
 
 	pStream->Read(&m_iShrineBuildingCount);
-	pStream->Read(GC.getNumBuildingInfos(), m_aiShrineBuilding);
-	pStream->Read(GC.getNumBuildingInfos(), m_aiShrineReligion);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BUILDING, m_aiShrineBuilding);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BUILDING, m_aiShrineReligion);
 	pStream->Read(&m_iNumCultureVictoryCities);
 	pStream->Read(&m_eCultureVictoryCultureLevel);
 
@@ -9091,23 +9096,23 @@ void CvGame::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iMaxGlobalCounter);
 	pStream->Read(&m_iGlobalCounterLimit);
 	pStream->Read(&m_iScenarioCounter);
-	pStream->Read(GC.getNumEventTriggerInfos(), m_pabEventTriggered);
-	pStream->Read(GC.getNumVoteSourceInfos(), m_pabGamblingRing);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_EVENT_TRIGGER, m_pabEventTriggered);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_VOTE_SOURCE, m_pabGamblingRing);
 /*************************************************************************************************/
 /**	Overcouncil Bonus Ban					08/24/26									 Fix #420	**/
 /**		NoBonus bans are stored per vote source instead of as one global bonus-indexed array.	**/
 /*************************************************************************************************/
 	for (int iSource = 0; iSource < GC.getNumVoteSourceInfos(); iSource++)
 	{
-		pStream->Read(GC.getNumBonusInfos(), m_ppabNoBonus[iSource]);
+		CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_ppabNoBonus[iSource]);
 	}
 	updateAnyNoBonus();
 /*************************************************************************************************/
 /**	Overcouncil Bonus Ban					END													**/
 /*************************************************************************************************/
-	pStream->Read(GC.getNumVoteSourceInfos(), m_pabNoOutsideTechTrades);
-	pStream->Read(GC.getNumVoteSourceInfos(), m_pabSlaveTrade);
-	pStream->Read(GC.getNumVoteSourceInfos(), m_pabSmugglingRing);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_VOTE_SOURCE, m_pabNoOutsideTechTrades);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_VOTE_SOURCE, m_pabSlaveTrade);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_VOTE_SOURCE, m_pabSmugglingRing);
 //FfH: End Add
 /*************************************************************************************************/
 /**	New Tag Defs	(ProjectInfos)			10/01/08								Xienwolf	**/
@@ -9122,7 +9127,7 @@ void CvGame::read(FDataStreamBase* pStream)
 /**	New Tag Defs							END													**/
 /*************************************************************************************************/
 
-	pStream->Read(GC.getNumGoodyInfos(), m_pabTriggeredGoodies);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_GOODY, m_pabTriggeredGoodies);
 }
 
 

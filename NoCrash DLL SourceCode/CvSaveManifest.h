@@ -28,7 +28,7 @@
 // The names recorded here are also what a later stage needs in order to remap content
 // old->new by name, so the format is written once and does not change again for that.
 //
-class FDataStreamBase;
+#include "FDataStreamBase.h"
 
 // The save format this build WRITES, carried in CvGame's uiFlag -- which is the first
 // value in the compressed body, so it version-stamps the save as a whole.
@@ -184,6 +184,66 @@ namespace CvSaveManifest
 	// Any difference is reported to CvGameCoreDLL_corrupt_save.log, the engine log and
 	// the debugger. Returns true when the save's content matches this build exactly.
 	bool readAndCheck(FDataStreamBase* pStream);
+
+	// -----------------------------------------------------------------------------
+	// Name-based content remapping.
+	//
+	// Content arrays are written with the count the writing build had, and the reader
+	// has always used its OWN count. That mismatch is the desync. With the manifest we
+	// know both the width the save used and, by name, where each of its entries lives
+	// now -- so an array can be read at the save's width and scattered into today's
+	// layout instead of being read at the wrong width.
+	//
+	// Content the build no longer has is dropped. Content the save never had is left
+	// at zero, which is what reset() would have given it.
+	// -----------------------------------------------------------------------------
+
+	// Call at the top of CvGame::read, UNCONDITIONALLY -- including for saves with no
+	// manifest -- so remap state cannot leak from an earlier load in the same session.
+	void beginRead();
+
+	int savedCount(ContentType eType);         // width the save used
+	int currentCount(ContentType eType);       // width this build uses
+	const int* remapTable(ContentType eType);  // old->new index, NULL when identity
+
+	template <class T>
+	void readArray(FDataStreamBase* pStream, ContentType eType, T* pDest)
+	{
+		const int iOld = savedCount(eType);
+		const int iNew = currentCount(eType);
+		const int* piRemap = remapTable(eType);
+
+		if (piRemap == NULL && iOld == iNew)
+		{
+			// Nothing moved: byte-for-byte what the old code did. This is the path
+			// every save without a manifest takes, and every save whose content
+			// matches, so the common case carries no cost and no new risk.
+			pStream->Read(iNew, pDest);
+			return;
+		}
+
+		for (int i = 0; i < iNew; i++)
+		{
+			pDest[i] = T();
+		}
+
+		if (iOld > 0)
+		{
+			T* pTemp = new T[iOld];
+			pStream->Read(iOld, pTemp);
+
+			for (int i = 0; i < iOld; i++)
+			{
+				const int iTo = (piRemap != NULL) ? piRemap[i] : i;
+				if (iTo >= 0 && iTo < iNew)
+				{
+					pDest[iTo] = pTemp[i];
+				}
+			}
+
+			delete [] pTemp;
+		}
+	}
 }
 
 #endif // CIV4_SAVE_MANIFEST_H

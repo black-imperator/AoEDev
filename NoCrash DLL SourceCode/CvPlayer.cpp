@@ -42,6 +42,7 @@
 /************************************************************************************************/
 
 #include "CvSnarkoProfiler.h"
+#include "CvSaveManifest.h"
 // Public Functions...
 
 CvPlayer::CvPlayer()
@@ -21080,22 +21081,22 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(NUM_COMMERCE_TYPES, m_aiBaseCommerceFromUnit);
 	pStream->Read(NUM_COMMERCE_TYPES, m_aiCommerceFromUnitModifier);
 
-	pStream->Read(GC.getNumBonusInfos(), m_pabRevealBonus);
-	pStream->Read(GC.getNumBonusInfos(), m_paiNoBonus);
-	pStream->Read(GC.getNumBonusInfos(), m_paiFreeBonus);
-	pStream->Read(GC.getNumBuildInfos(), m_paiAvailableBuild);
-	pStream->Read(GC.getNumReligionInfos(), m_paiReligionWeights);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_pabRevealBonus);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_paiNoBonus);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_paiFreeBonus);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BUILD, m_paiAvailableBuild);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_RELIGION, m_paiReligionWeights);
 
-	pStream->Read(GC.getNumPlotEffectInfos(), m_paiPlotEffectSpawnChance);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PLOT_EFFECT, m_paiPlotEffectSpawnChance);
 
 	pStream->Read(&m_iPotency);
-	pStream->Read(GC.getNumBonusInfos(), m_pafPotencyAffinity);
-	pStream->Read(GC.getNumBonusInfos(), m_paiPotencyBonusPrereq);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_pafPotencyAffinity);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_paiPotencyBonusPrereq);
 	pStream->Read(&m_iShielding);
-	pStream->Read(GC.getNumBonusInfos(), m_pafShieldingAffinity);
-	pStream->Read(GC.getNumBonusInfos(), m_paiShieldingBonusPrereq);
-	pStream->Read(GC.getNumUnitCombatInfos(), m_paiTrainXPCap);
-	pStream->Read(GC.getNumUnitCombatInfos(), m_pafTrainXPRate);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_pafShieldingAffinity);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_paiShieldingBonusPrereq);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT_COMBAT, m_paiTrainXPCap);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT_COMBAT, m_pafTrainXPRate);
 
 	pStream->Read(&m_eStateNameType);
 	pStream->Read(&m_iNumCitiesConquered);
@@ -21224,11 +21225,11 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iSummonDuration);
 	pStream->Read(&m_iTempPlayerTimer);
 	pStream->Read(&m_iUpgradeCostModifier);
-	pStream->Read(GC.getNumTraitInfos(), m_pbTraits);
-	pStream->Read(GC.getNumTraitInfos(), m_piTraitPoints);
-	pStream->Read(GC.getNumTraitClassInfos(), m_piNumTraitPerClass);
-	pStream->Read(GC.getNumTraitClassInfos(), m_piNumMaxTraitPerClass);
-	pStream->Read(GC.getNumTraitTriggerInfos(), m_pbValidTraitTriggers);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_TRAIT, m_pbTraits);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_TRAIT, m_piTraitPoints);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_TRAIT_CLASS, m_piNumTraitPerClass);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_TRAIT_CLASS, m_piNumMaxTraitPerClass);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_TRAIT_TRIGGER, m_pbValidTraitTriggers);
 	for (int iI = 0;iI<GC.getNumSpecialistClassInfos();iI++)
 	{
 		pStream->Read(NUM_COMMERCE_TYPES, m_ppaaiSpecialistClassExtraCommerce[iI]);
@@ -21237,8 +21238,8 @@ void CvPlayer::read(FDataStreamBase* pStream)
 /**	Miner Trait 	 	Orbis from Sanguo Mod		18/02/09	Ahwaric		**/
 /**									Read Data from Save Files									**/
 /*************************************************************************************************/
-	pStream->Read(GC.getNumFeatureInfos(), m_paiFeatureProductionChange);
-	pStream->Read(GC.getNumFeatureInfos(), m_paiFeatureGrowthChange);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_FEATURE, m_paiFeatureProductionChange);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_FEATURE, m_paiFeatureGrowthChange);
 /*************************************************************************************************/
 /**	Miner Trait							END			**/
 /*************************************************************************************************/
@@ -21333,40 +21334,40 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->ReadString(m_szName);
 
 	FAssertMsg((0 < GC.getNumBonusInfos()), "GC.getNumBonusInfos() is not greater than zero but it is expected to be in CvPlayer::read");
-	pStream->Read(GC.getNumBonusInfos(), m_paiBonusExport);
-	pStream->Read(GC.getNumBonusInfos(), m_paiBonusImport);
-	pStream->Read(GC.getNumImprovementInfos(), m_paiImprovementCount);
-	pStream->Read(GC.getNumBuildingClassInfos(), m_paiFreeBuildingCount);
-	pStream->Read(GC.getNumBuildingInfos(), m_paiExtraBuildingHappiness);
-	pStream->Read(GC.getNumBuildingInfos(), m_paiExtraBuildingHealth);
-	pStream->Read(GC.getNumFeatureInfos(), m_paiFeatureHappiness);
-	pStream->Read(GC.getNumUnitClassInfos(), m_paiExtraUnitClasses);
-	pStream->Read(GC.getNumBuildingClassInfos(), m_paiExtraBuildingClasses);
-	pStream->Read(GC.getNumUnitClassInfos(), m_paiUnitClassCount);
-	pStream->Read(GC.getNumUnitClassInfos(), m_paiUnitClassMaking);
-	pStream->Read(GC.getNumUnitClassInfos(), m_paiUnitClassPlayerInstancesChanges);
-	pStream->Read(GC.getNumBuildingClassInfos(), m_paiBuildingClassCount);
-	pStream->Read(GC.getNumBuildingClassInfos(), m_paiBuildingClassMaking);
-	pStream->Read(GC.getNumHurryInfos(), m_paiHurryCount);
-	pStream->Read(GC.getNumSpecialBuildingInfos(), m_paiSpecialBuildingNotRequiredCount);
-	pStream->Read(GC.getNumCivicOptionInfos(), m_paiHasCivicOptionCount);
-	pStream->Read(GC.getNumCivicOptionInfos(), m_paiNoCivicUpkeepCount);
-	pStream->Read(GC.getNumReligionInfos(), m_paiHasReligionCount);
-	pStream->Read(GC.getNumCorporationInfos(), m_paiHasCorporationCount);
-	pStream->Read(GC.getNumUpkeepInfos(), m_paiUpkeepCount);
-	pStream->Read(GC.getNumSpecialistClassInfos(), m_paiSpecialistClassValidCount);
-	pStream->Read(GC.getNumSpecialistClassInfos(), m_paiSpecialistClassCount);
-	pStream->Read(GC.getNumSpecialistClassInfos(), m_paiFreeSpecialistClassCount);
-	pStream->Read(GC.getNumSpecialistClassInfos(), m_paiFreeSpecialistClassStateReligion);
-	pStream->Read(GC.getNumSpecialistClassInfos(), m_paiFreeSpecialistClassNonStateReligion);
-	pStream->Read(GC.getNumSpecialistClassInfos(), m_paiSpecialistClassExtraHappiness);
-	pStream->Read(GC.getNumSpecialistClassInfos(), m_paiSpecialistClassExtraHealth);
-	pStream->Read(GC.getNumSpecialistClassInfos(), m_paiSpecialistClassExtraCrime);
-	pStream->Read(GC.getNumSpecialistClassInfos(), m_paiSpecialistClassExtraGPP);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_paiBonusExport);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_paiBonusImport);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_IMPROVEMENT, m_paiImprovementCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BUILDING_CLASS, m_paiFreeBuildingCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BUILDING, m_paiExtraBuildingHappiness);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BUILDING, m_paiExtraBuildingHealth);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_FEATURE, m_paiFeatureHappiness);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT_CLASS, m_paiExtraUnitClasses);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BUILDING_CLASS, m_paiExtraBuildingClasses);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT_CLASS, m_paiUnitClassCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT_CLASS, m_paiUnitClassMaking);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT_CLASS, m_paiUnitClassPlayerInstancesChanges);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BUILDING_CLASS, m_paiBuildingClassCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BUILDING_CLASS, m_paiBuildingClassMaking);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_HURRY, m_paiHurryCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIAL_BUILDING, m_paiSpecialBuildingNotRequiredCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_CIVIC_OPTION, m_paiHasCivicOptionCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_CIVIC_OPTION, m_paiNoCivicUpkeepCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_RELIGION, m_paiHasReligionCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_CORPORATION, m_paiHasCorporationCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UPKEEP, m_paiUpkeepCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST_CLASS, m_paiSpecialistClassValidCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST_CLASS, m_paiSpecialistClassCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST_CLASS, m_paiFreeSpecialistClassCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST_CLASS, m_paiFreeSpecialistClassStateReligion);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST_CLASS, m_paiFreeSpecialistClassNonStateReligion);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST_CLASS, m_paiSpecialistClassExtraHappiness);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST_CLASS, m_paiSpecialistClassExtraHealth);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST_CLASS, m_paiSpecialistClassExtraCrime);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST_CLASS, m_paiSpecialistClassExtraGPP);
 
-	pStream->Read(GC.getNumSpecialistInfos(), m_paiSpecialistTypeExtraHealth);
-	pStream->Read(GC.getNumSpecialistInfos(), m_paiSpecialistTypeExtraHappiness);
-	pStream->Read(GC.getNumSpecialistInfos(), m_paiSpecialistTypeExtraCrime);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST, m_paiSpecialistTypeExtraHealth);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST, m_paiSpecialistTypeExtraHappiness);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST, m_paiSpecialistTypeExtraCrime);
 	for (int iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
 	{
 		pStream->Read(NUM_YIELD_TYPES, m_ppaiSpecialistTypeExtraYield[iI]);
@@ -21377,9 +21378,9 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	}
 
 	FAssertMsg((0 < GC.getNumTechInfos()), "GC.getNumTechInfos() is not greater than zero but it is expected to be in CvPlayer::read");
-	pStream->Read(GC.getNumTechInfos(), m_pabResearchingTech);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_TECH, m_pabResearchingTech);
 
-	pStream->Read(GC.getNumVoteSourceInfos(), m_pabLoyalMember);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_VOTE_SOURCE, m_pabLoyalMember);
 
 	for (int iI=0;iI<GC.getNumCivicOptionInfos();iI++)
 	{
@@ -21696,7 +21697,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iPopRushHurryCount);
 	pStream->Read(&m_iInflationModifier);
 	// FlagSystem Start
-	pStream->Read(GC.getNumFlagInfos(), m_pabPlayerFlags);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_FLAG, m_pabPlayerFlags);
 	// DynTraits Start
 
 /*************************************************************************************************/

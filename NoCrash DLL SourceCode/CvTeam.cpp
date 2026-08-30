@@ -21,6 +21,7 @@
 #include "CvDLLPythonIFaceBase.h"
 #include "CyArgsList.h"
 #include "FProfiler.h"
+#include "CvSaveManifest.h"
 
 // Public Functions...
 
@@ -7438,7 +7439,7 @@ void CvTeam::read(FDataStreamBase* pStream)
 	pStream->Read(MAX_TEAMS, m_aiCounterespionageModAgainstTeam);
 	pStream->Read(NUM_COMMERCE_TYPES, m_aiCommerceFlexibleCount);
 	pStream->Read(NUM_DOMAIN_TYPES, m_aiExtraMoves);
-	pStream->Read(GC.getNumVoteSourceInfos(), m_aiForceTeamVoteEligibilityCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_VOTE_SOURCE, m_aiForceTeamVoteEligibilityCount);
 
 	pStream->Read(MAX_TEAMS, m_abHasMet);
 	pStream->Read(MAX_TEAMS, m_abAtWar);
@@ -7447,11 +7448,11 @@ void CvTeam::read(FDataStreamBase* pStream)
 	pStream->Read(MAX_TEAMS, m_abDefensivePact);
 	pStream->Read(MAX_TEAMS, m_abForcePeace);
 	pStream->Read(MAX_TEAMS, m_abVassal);
-	pStream->Read(GC.getNumVictoryInfos(), m_abCanLaunch);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_VICTORY, m_abCanLaunch);
 
-	pStream->Read(GC.getNumRouteInfos(), m_paiRouteChange);
-	pStream->Read(GC.getNumProjectInfos(), m_paiProjectCount);
-	pStream->Read(GC.getNumProjectInfos(), m_paiProjectDefaultArtTypes);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_ROUTE, m_paiRouteChange);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PROJECT, m_paiProjectCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PROJECT, m_paiProjectDefaultArtTypes);
 
 	//project art types
 	for(int i=0;i<GC.getNumProjectInfos();i++)
@@ -7464,17 +7465,17 @@ void CvTeam::read(FDataStreamBase* pStream)
 		}
 	}
 
-	pStream->Read(GC.getNumProjectInfos(), m_paiProjectMaking);
-	pStream->Read(GC.getNumUnitClassInfos(), m_paiUnitClassCount);
-	pStream->Read(GC.getNumBuildingClassInfos(), m_paiBuildingClassCount);
-	pStream->Read(GC.getNumBuildingInfos(), m_paiObsoleteBuildingCount);
-	pStream->Read(GC.getNumTechInfos(), m_paiResearchProgress);
-	pStream->Read(GC.getNumTechInfos(), m_paiTechCount);
-	pStream->Read(GC.getNumTerrainInfos(), m_paiTerrainTradeCount);
-	pStream->Read(GC.getNumVictoryInfos(), m_aiVictoryCountdown);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PROJECT, m_paiProjectMaking);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT_CLASS, m_paiUnitClassCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BUILDING_CLASS, m_paiBuildingClassCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BUILDING, m_paiObsoleteBuildingCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_TECH, m_paiResearchProgress);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_TECH, m_paiTechCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_TERRAIN, m_paiTerrainTradeCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_VICTORY, m_aiVictoryCountdown);
 
-	pStream->Read(GC.getNumTechInfos(), m_pabHasTech);
-	pStream->Read(GC.getNumTechInfos(), m_pabNoTradeTech);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_TECH, m_pabHasTech);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_TECH, m_pabNoTradeTech);
 
 	for (int i = 0; i < GC.getNumImprovementInfos(); ++i)
 	{

@@ -17,6 +17,7 @@
 #include "CvDLLPythonIFaceBase.h"
 #include "CvDLLInterfaceIFaceBase.h"
 #include "CvDLLFAStarIFaceBase.h"
+#include "CvSaveManifest.h"
 
 
 #define BUILDINGFOCUS_FOOD					(1 << 1)
@@ -14436,7 +14437,7 @@ void CvCityAI::read(FDataStreamBase* pStream)
 	pStream->Read(&m_bForceEmphasizeCulture);
 	pStream->Read(NUM_CITY_PLOTS, m_aiBestBuildValue);
 	pStream->Read(NUM_CITY_PLOTS, (int*)m_aeBestBuild);
-	pStream->Read(GC.getNumEmphasizeInfos(), m_pbEmphasize);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_EMPHASIZE, m_pbEmphasize);
 	pStream->Read(NUM_YIELD_TYPES, m_aiSpecialYieldMultiplier);
 	pStream->Read(&m_iCachePlayerClosenessTurn);
 	pStream->Read(&m_iCachePlayerClosenessDistance);

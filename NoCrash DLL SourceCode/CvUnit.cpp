@@ -26,6 +26,7 @@
 #include "FProfiler.h"
 #include "CvPopupInfo.h"
 #include "CvArtFileMgr.h"
+#include "CvSaveManifest.h"
 
 // Public Functions...
 
@@ -30242,9 +30243,9 @@ void CvUnit::read(FDataStreamBase* pStream)
 /**	New Tag Defs	(UnitInfos)				05/15/08											**/
 /**										Read Data from Save File								**/
 /*************************************************************************************************/
-	pStream->Read(GC.getNumPromotionInfos(), m_pabRealPromotion);
-	pStream->Read(GC.getNumPromotionInfos(), m_pabPermanentSpellPromotion);
-	pStream->Read(GC.getNumPromotionInfos(), m_aiSupplementalPromotions);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PROMOTION, m_pabRealPromotion);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PROMOTION, m_pabPermanentSpellPromotion);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PROMOTION, m_aiSupplementalPromotions);
 /************************************************************************************************/
 /* Influence Driven War                   06/08/10                                 Valkrionn    */
 /*                                                                                              */
@@ -30431,7 +30432,7 @@ void CvUnit::read(FDataStreamBase* pStream)
 	pStream->Read(NUM_YIELD_TYPES, m_piYieldForLoss);
 	pStream->Read(NUM_COMMERCE_TYPES, m_piCommerceFromWin);
 	pStream->Read(NUM_COMMERCE_TYPES, m_piCommerceForLoss);
-	pStream->Read(GC.getNumPromotionInfos(), m_piPromotionDuration);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PROMOTION, m_piPromotionDuration);
 	int iNumInvisTypes;
 	pStream->Read(&iNumInvisTypes);
 	for(int i=0;i<iNumInvisTypes;i++)
@@ -30448,12 +30449,12 @@ void CvUnit::read(FDataStreamBase* pStream)
 		pStream->Read(&iSeeInvisibleType);
 		m_aiSeeInvisibleTypes.push_back(iSeeInvisibleType);
 	}
-	pStream->Read(GC.getNumPromotionInfos(), m_piAllowPromotion);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PROMOTION, m_piAllowPromotion);
 /*************************************************************************************************/
 /**	Second Job							08/28/10									Valkrionn	**/
 /**				Allows units to qualify for the promotions of other UnitCombats					**/
 /*************************************************************************************************/
-	pStream->Read(GC.getNumUnitCombatInfos(), m_piSecondaryUnitCombat);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT_COMBAT, m_piSecondaryUnitCombat);
 /*************************************************************************************************/
 /**	TempCombat									END												**/
 /*************************************************************************************************/
@@ -30462,12 +30463,12 @@ void CvUnit::read(FDataStreamBase* pStream)
 /**																								**/
 /**					Vastly improved Affinity system, open to many tags							**/
 /*************************************************************************************************/
-	pStream->Read(GC.getNumAffinityInfos(), m_piAffinities);
-	pStream->Read(GC.getNumAffinityInfos(), m_piAffinityApplications);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_AFFINITY, m_piAffinities);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_AFFINITY, m_piAffinityApplications);
 /*************************************************************************************************/
 /**	Better Affinity							END													**/
 /*************************************************************************************************/
-	pStream->Read(GC.getNumPromotionInfos(), m_piDenyPromotion);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PROMOTION, m_piDenyPromotion);
 	pStream->Read(&m_iSpawnPlotX);
 	pStream->Read(&m_iSpawnPlotY);
 	pStream->Read(&m_eSpawnImprovementType);
@@ -30574,10 +30575,10 @@ void CvUnit::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iUnitArtStyleType);
 	pStream->Read(&m_iWorkRateModify);
 	pStream->Read(&m_iWorkRateModifier);
-	pStream->Read(GC.getNumBonusInfos(), m_paiBonusAffinity);
-	pStream->Read(GC.getNumBonusInfos(), m_paiBonusAffinityAmount);
-	pStream->Read(GC.getNumDamageTypeInfos(), m_paiDamageTypeCombat);
-	pStream->Read(GC.getNumDamageTypeInfos(), m_paiDamageTypeResist);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_paiBonusAffinity);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_paiBonusAffinityAmount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_DAMAGE_TYPE, m_paiDamageTypeCombat);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_DAMAGE_TYPE, m_paiDamageTypeResist);
 //FfH: End Add
 
 	pStream->Read((int*)&m_eOwner);
@@ -30607,23 +30608,23 @@ void CvUnit::read(FDataStreamBase* pStream)
 /**				Integer Tracking of Promotions for Containers and Stack Effects					**/
 /*************************************************************************************************/
 /**								---- Start Original Code ----									**
-	pStream->Read(GC.getNumPromotionInfos(), m_pabHasPromotion);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PROMOTION, m_pabHasPromotion);
 /**								----  End Original Code  ----									**/
-	pStream->Read(GC.getNumPromotionInfos(), m_paiHasPromotion);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PROMOTION, m_paiHasPromotion);
 /*************************************************************************************************/
 /**	Tweak									END													**/
 /*************************************************************************************************/
-	pStream->Read(GC.getNumImprovementInfos(), m_paiNoBadExploreImprovement);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_IMPROVEMENT, m_paiNoBadExploreImprovement);
 
-	pStream->Read(GC.getNumTerrainInfos(), m_paiTerrainDoubleMoveCount);
-	pStream->Read(GC.getNumFeatureInfos(), m_paiFeatureDoubleMoveCount);
-	pStream->Read(GC.getNumTerrainInfos(), m_paiExtraTerrainAttackPercent);
-	pStream->Read(GC.getNumTerrainInfos(), m_paiExtraTerrainDefensePercent);
-	pStream->Read(GC.getNumFeatureInfos(), m_paiExtraFeatureAttackPercent);
-	pStream->Read(GC.getNumFeatureInfos(), m_paiExtraFeatureDefensePercent);
-	pStream->Read(GC.getNumPlotEffectInfos(), m_paiPlotEffectDoubleMoveCount);
-	pStream->Read(GC.getNumPlotEffectInfos(), m_paiExtraPlotEffectAttackPercent);
-	pStream->Read(GC.getNumPlotEffectInfos(), m_paiExtraPlotEffectDefensePercent);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_TERRAIN, m_paiTerrainDoubleMoveCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_FEATURE, m_paiFeatureDoubleMoveCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_TERRAIN, m_paiExtraTerrainAttackPercent);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_TERRAIN, m_paiExtraTerrainDefensePercent);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_FEATURE, m_paiExtraFeatureAttackPercent);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_FEATURE, m_paiExtraFeatureDefensePercent);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PLOT_EFFECT, m_paiPlotEffectDoubleMoveCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PLOT_EFFECT, m_paiExtraPlotEffectAttackPercent);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PLOT_EFFECT, m_paiExtraPlotEffectDefensePercent);
 /*************************************************************************************************/
 /**	GWS										2010-08-23									Milaga	**/
 /**																								**/
@@ -30631,13 +30632,13 @@ void CvUnit::read(FDataStreamBase* pStream)
 /*************************************************************************************************/
 	pStream->Read(&m_iPeakCost);
 	pStream->Read(&m_iHillCost);
-	pStream->Read(GC.getNumTerrainInfos(), m_paiTerrainCost);
-	pStream->Read(GC.getNumFeatureInfos(), m_paiFeatureCost);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_TERRAIN, m_paiTerrainCost);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_FEATURE, m_paiFeatureCost);
 /*************************************************************************************************/
 /**	GWS										END													**/
 /*************************************************************************************************/
-	pStream->Read(GC.getNumUnitCombatInfos(), m_paiExtraUnitCombatModifier);
-	pStream->Read(GC.getNumSpellClassInfos(), m_paiExtraSpellClassPower);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT_COMBAT, m_paiExtraUnitCombatModifier);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPELL_CLASS, m_paiExtraSpellClassPower);
 /*************************************************************************************************/
 /**	AutoCast								02/09/10									Snarko	**/
 /**																								**/

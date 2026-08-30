@@ -33,6 +33,7 @@
 #include "CvDLLFAStarIFaceBase.h"
 #include "CvDLLFAStarIFaceBase.h"
 #include "CvDLLPythonIFaceBase.h"
+#include "CvSaveManifest.h"
 
 // Public Functions...
 
@@ -1418,8 +1419,8 @@ void CvMap::read(FDataStreamBase* pStream)
 /**	FastRebuild								END													**/
 /*************************************************************************************************/
 	FAssertMsg((0 < GC.getNumBonusInfos()), "GC.getNumBonusInfos() is not greater than zero but an array is being allocated");
-	pStream->Read(GC.getNumBonusInfos(), m_paiNumBonus);
-	pStream->Read(GC.getNumBonusInfos(), m_paiNumBonusOnLand);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_paiNumBonus);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_paiNumBonusOnLand);
 
 	if (numPlotsINLINE() > 0)
 	{

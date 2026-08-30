@@ -9,6 +9,7 @@
 #include "CvCity.h"
 #include "CvDLLFAStarIFaceBase.h"
 #include "FProfiler.h"
+#include "CvSaveManifest.h"
 
 // Public Functions...
 
@@ -316,7 +317,7 @@ void CvPlotGroup::read(FDataStreamBase* pStream)
 	pStream->Read((int*)&m_eOwner);
 
 	FAssertMsg((0 < GC.getNumBonusInfos()), "GC.getNumBonusInfos() is not greater than zero but an array is being allocated in CvPlotGroup::read");
-	pStream->Read(GC.getNumBonusInfos(), m_paiNumBonuses);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_paiNumBonuses);
 
 	m_plots.Read(pStream);
 }
