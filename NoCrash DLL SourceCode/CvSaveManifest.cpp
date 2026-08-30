@@ -34,128 +34,259 @@ namespace
 		ManifestNameFn  pfnName;
 	};
 
-	// One pair of accessors per content type. Generated mechanically from the set of
-	// XML-backed enums, so the table cannot drift from what CvGlobals actually exposes.
-	// Structural enums with a fixed NUM_X_TYPES count (YieldTypes, DomainTypes,
-	// CommerceTypes, ...) are deliberately absent: they cannot change with content.
+	// One pair of accessors per content type, generated from every getNumXInfos() /
+	// getXInfo() pair CvGlobals exposes -- from the engine itself, not from a list
+	// someone maintains, so it cannot fall behind. Deriving this from the vanilla BtS
+	// schema instead silently missed AoE's own content: SpecialistClass alone is read
+	// by 21 sites.
+	//
+	// Enums with a fixed NUM_X_TYPES count (YieldTypes, DomainTypes, CommerceTypes,
+	// ...) have no getNumXInfos() and are therefore absent, which is correct: their
+	// width is compiled into the DLL and cannot change with content.
 #define MANIFEST_ACCESSORS(Label, CountCall, InfoCall, EnumType)                       \
 	int mfCount_##Label() { return GC.CountCall(); }                                   \
 	const char* mfName_##Label(int i) { return GC.InfoCall((EnumType)i).getType(); }
 
+	MANIFEST_ACCESSORS(Action, getNumActionInfos, getActionInfo, int)
+	MANIFEST_ACCESSORS(Advisor, getNumAdvisorInfos, getAdvisorInfo, AdvisorTypes)
+	MANIFEST_ACCESSORS(Affinity, getNumAffinityInfos, getAffinityInfo, AffinityTypes)
+	MANIFEST_ACCESSORS(Alignment, getNumAlignmentInfos, getAlignmentInfo, AlignmentTypes)
+	MANIFEST_ACCESSORS(AnimationCategory, getNumAnimationCategoryInfos, getAnimationCategoryInfo, AnimationCategoryTypes)
+	MANIFEST_ACCESSORS(AnimationPath, getNumAnimationPathInfos, getAnimationPathInfo, AnimationPathTypes)
+	MANIFEST_ACCESSORS(Attachable, getNumAttachableInfos, getAttachableInfo, int)
+	MANIFEST_ACCESSORS(Automate, getNumAutomateInfos, getAutomateInfo, int)
 	MANIFEST_ACCESSORS(Bonus, getNumBonusInfos, getBonusInfo, BonusTypes)
+	MANIFEST_ACCESSORS(BonusClass, getNumBonusClassInfos, getBonusClassInfo, BonusClassTypes)
 	MANIFEST_ACCESSORS(Build, getNumBuildInfos, getBuildInfo, BuildTypes)
-	MANIFEST_ACCESSORS(BuildingClass, getNumBuildingClassInfos, getBuildingClassInfo, BuildingClassTypes)
 	MANIFEST_ACCESSORS(Building, getNumBuildingInfos, getBuildingInfo, BuildingTypes)
+	MANIFEST_ACCESSORS(BuildingClass, getNumBuildingClassInfos, getBuildingClassInfo, BuildingClassTypes)
 	MANIFEST_ACCESSORS(Calendar, getNumCalendarInfos, getCalendarInfo, CalendarTypes)
-	MANIFEST_ACCESSORS(CivicOption, getNumCivicOptionInfos, getCivicOptionInfo, CivicOptionTypes)
+	MANIFEST_ACCESSORS(Camera, getNumCameraInfos, getCameraInfo, CameraAnimationTypes)
+	MANIFEST_ACCESSORS(CityClass, getNumCityClassInfos, getCityClassInfo, CityClassTypes)
+	MANIFEST_ACCESSORS(CityTab, getNumCityTabInfos, getCityTabInfo, CityTabTypes)
 	MANIFEST_ACCESSORS(Civic, getNumCivicInfos, getCivicInfo, CivicTypes)
+	MANIFEST_ACCESSORS(CivicOption, getNumCivicOptionInfos, getCivicOptionInfo, CivicOptionTypes)
 	MANIFEST_ACCESSORS(Civilization, getNumCivilizationInfos, getCivilizationInfo, CivilizationTypes)
 	MANIFEST_ACCESSORS(Climate, getNumClimateInfos, getClimateInfo, ClimateTypes)
+	MANIFEST_ACCESSORS(ClimateZone, getNumClimateZoneInfos, getClimateZoneInfo, ClimateZoneTypes)
 	MANIFEST_ACCESSORS(Color, getNumColorInfos, getColorInfo, ColorTypes)
+	MANIFEST_ACCESSORS(Command, getNumCommandInfos, getCommandInfo, CommandTypes)
+	MANIFEST_ACCESSORS(Concept, getNumConceptInfos, getConceptInfo, ConceptTypes)
+	MANIFEST_ACCESSORS(Control, getNumControlInfos, getControlInfo, ControlTypes)
 	MANIFEST_ACCESSORS(Corporation, getNumCorporationInfos, getCorporationInfo, CorporationTypes)
 	MANIFEST_ACCESSORS(CultureLevel, getNumCultureLevelInfos, getCultureLevelInfo, CultureLevelTypes)
+	MANIFEST_ACCESSORS(Cursor, getNumCursorInfos, getCursorInfo, CursorTypes)
+	MANIFEST_ACCESSORS(DamageType, getNumDamageTypeInfos, getDamageTypeInfo, DamageTypes)
+	MANIFEST_ACCESSORS(DeathList, getNumDeathListInfos, getDeathListInfo, DeathListTypes)
+	MANIFEST_ACCESSORS(Denial, getNumDenialInfos, getDenialInfo, DenialTypes)
+	MANIFEST_ACCESSORS(Diplomacy, getNumDiplomacyInfos, getDiplomacyInfo, int)
+	MANIFEST_ACCESSORS(Effect, getNumEffectInfos, getEffectInfo, int)
 	MANIFEST_ACCESSORS(Emphasize, getNumEmphasizeInfos, getEmphasizeInfo, EmphasizeTypes)
+	MANIFEST_ACCESSORS(EntityEvent, getNumEntityEventInfos, getEntityEventInfo, EntityEventTypes)
 	MANIFEST_ACCESSORS(Era, getNumEraInfos, getEraInfo, EraTypes)
-	MANIFEST_ACCESSORS(EventTrigger, getNumEventTriggerInfos, getEventTriggerInfo, EventTriggerTypes)
+	MANIFEST_ACCESSORS(EspionageMission, getNumEspionageMissionInfos, getEspionageMissionInfo, EspionageMissionTypes)
+	MANIFEST_ACCESSORS(EthicalAlignment, getNumEthicalAlignmentInfos, getEthicalAlignmentInfo, EthicalAlignmentTypes)
 	MANIFEST_ACCESSORS(Event, getNumEventInfos, getEventInfo, EventTypes)
+	MANIFEST_ACCESSORS(EventTrigger, getNumEventTriggerInfos, getEventTriggerInfo, EventTriggerTypes)
 	MANIFEST_ACCESSORS(Feat, getNumFeatInfos, getFeatInfo, FeatTypes)
 	MANIFEST_ACCESSORS(Feature, getNumFeatureInfos, getFeatureInfo, FeatureTypes)
 	MANIFEST_ACCESSORS(Flag, getNumFlagInfos, getFlagInfo, FlagTypes)
+	MANIFEST_ACCESSORS(ForceControl, getNumForceControlInfos, getForceControlInfo, ForceControlTypes)
 	MANIFEST_ACCESSORS(GameOption, getNumGameOptionInfos, getGameOptionInfo, GameOptionTypes)
 	MANIFEST_ACCESSORS(GameSpeed, getNumGameSpeedInfos, getGameSpeedInfo, GameSpeedTypes)
 	MANIFEST_ACCESSORS(Goody, getNumGoodyInfos, getGoodyInfo, GoodyTypes)
 	MANIFEST_ACCESSORS(Handicap, getNumHandicapInfos, getHandicapInfo, HandicapTypes)
 	MANIFEST_ACCESSORS(Hurry, getNumHurryInfos, getHurryInfo, HurryTypes)
 	MANIFEST_ACCESSORS(Improvement, getNumImprovementInfos, getImprovementInfo, ImprovementTypes)
+	MANIFEST_ACCESSORS(ImprovementClass, getNumImprovementClassInfos, getImprovementClassInfo, ImprovementClassTypes)
+	MANIFEST_ACCESSORS(Invisible, getNumInvisibleInfos, getInvisibleInfo, InvisibleTypes)
+	MANIFEST_ACCESSORS(Landscape, getNumLandscapeInfos, getLandscapeInfo, int)
+	MANIFEST_ACCESSORS(LeaderClass, getNumLeaderClassInfos, getLeaderClassInfo, LeaderClassTypes)
 	MANIFEST_ACCESSORS(LeaderHead, getNumLeaderHeadInfos, getLeaderHeadInfo, LeaderHeadTypes)
+	MANIFEST_ACCESSORS(LeaderRelation, getNumLeaderRelationInfos, getLeaderRelationInfo, LeaderRelationTypes)
+	MANIFEST_ACCESSORS(LeaderStatus, getNumLeaderStatusInfos, getLeaderStatusInfo, LeaderStatusTypes)
+	MANIFEST_ACCESSORS(Lore, getNumLoreInfos, getLoreInfo, LoreTypes)
+	MANIFEST_ACCESSORS(MPOption, getNumMPOptionInfos, getMPOptionInfo, MultiplayerOptionTypes)
 	MANIFEST_ACCESSORS(Mission, getNumMissionInfos, getMissionInfo, MissionTypes)
+	MANIFEST_ACCESSORS(ModuleId, getNumModuleIdInfos, getModuleIdInfo, ModuleIds)
+	MANIFEST_ACCESSORS(Month, getNumMonthInfos, getMonthInfo, MonthTypes)
+	MANIFEST_ACCESSORS(NewConcept, getNumNewConceptInfos, getNewConceptInfo, NewConceptTypes)
 	MANIFEST_ACCESSORS(PlayerColor, getNumPlayerColorInfos, getPlayerColorInfo, PlayerColorTypes)
 	MANIFEST_ACCESSORS(PlayerOption, getNumPlayerOptionInfos, getPlayerOptionInfo, PlayerOptionTypes)
 	MANIFEST_ACCESSORS(PlotEffect, getNumPlotEffectInfos, getPlotEffectInfo, PlotEffectTypes)
+	MANIFEST_ACCESSORS(Process, getNumProcessInfos, getProcessInfo, ProcessTypes)
 	MANIFEST_ACCESSORS(Project, getNumProjectInfos, getProjectInfo, ProjectTypes)
 	MANIFEST_ACCESSORS(Promotion, getNumPromotionInfos, getPromotionInfo, PromotionTypes)
+	MANIFEST_ACCESSORS(PromotionClass, getNumPromotionClassInfos, getPromotionClassInfo, PromotionClassTypes)
+	MANIFEST_ACCESSORS(PythonModules, getNumPythonModulesInfos, getPythonModulesInfo, int)
+	MANIFEST_ACCESSORS(Quest, getNumQuestInfos, getQuestInfo, int)
 	MANIFEST_ACCESSORS(Religion, getNumReligionInfos, getReligionInfo, ReligionTypes)
+	MANIFEST_ACCESSORS(River, getNumRiverInfos, getRiverInfo, RiverTypes)
+	MANIFEST_ACCESSORS(RiverModel, getNumRiverModelInfos, getRiverModelInfo, int)
 	MANIFEST_ACCESSORS(Route, getNumRouteInfos, getRouteInfo, RouteTypes)
+	MANIFEST_ACCESSORS(RouteModel, getNumRouteModelInfos, getRouteModelInfo, int)
 	MANIFEST_ACCESSORS(SeaLevel, getNumSeaLevelInfos, getSeaLevelInfo, SeaLevelTypes)
+	MANIFEST_ACCESSORS(Season, getNumSeasonInfos, getSeasonInfo, SeasonTypes)
+	MANIFEST_ACCESSORS(SlideShow, getNumSlideShowInfos, getSlideShowInfo, int)
+	MANIFEST_ACCESSORS(SlideShowRandom, getNumSlideShowRandomInfos, getSlideShowRandomInfo, int)
+	MANIFEST_ACCESSORS(SpaceShip, getNumSpaceShipInfos, getSpaceShipInfo, int)
 	MANIFEST_ACCESSORS(SpawnGroup, getNumSpawnGroupInfos, getSpawnGroupInfo, SpawnGroupTypes)
 	MANIFEST_ACCESSORS(SpecialBuilding, getNumSpecialBuildingInfos, getSpecialBuildingInfo, SpecialBuildingTypes)
 	MANIFEST_ACCESSORS(SpecialUnit, getNumSpecialUnitInfos, getSpecialUnitInfo, SpecialUnitTypes)
 	MANIFEST_ACCESSORS(Specialist, getNumSpecialistInfos, getSpecialistInfo, SpecialistTypes)
+	MANIFEST_ACCESSORS(SpecialistArtstyle, getNumSpecialistArtstyleInfos, getSpecialistArtstyleInfo, SpecialistArtstyleTypes)
+	MANIFEST_ACCESSORS(SpecialistClass, getNumSpecialistClassInfos, getSpecialistClassInfo, SpecialistClassTypes)
+	MANIFEST_ACCESSORS(Spell, getNumSpellInfos, getSpellInfo, SpellTypes)
+	MANIFEST_ACCESSORS(SpellClass, getNumSpellClassInfos, getSpellClassInfo, SpellClassTypes)
+	MANIFEST_ACCESSORS(StateName, getNumStateNameInfos, getStateNameInfo, StateNameTypes)
 	MANIFEST_ACCESSORS(Tech, getNumTechInfos, getTechInfo, TechTypes)
 	MANIFEST_ACCESSORS(Terrain, getNumTerrainInfos, getTerrainInfo, TerrainTypes)
+	MANIFEST_ACCESSORS(TerrainClass, getNumTerrainClassInfos, getTerrainClassInfo, TerrainClassTypes)
+	MANIFEST_ACCESSORS(ThroneRoom, getNumThroneRoomInfos, getThroneRoomInfo, int)
+	MANIFEST_ACCESSORS(ThroneRoomStyle, getNumThroneRoomStyleInfos, getThroneRoomStyleInfo, int)
+	MANIFEST_ACCESSORS(Trait, getNumTraitInfos, getTraitInfo, TraitTypes)
 	MANIFEST_ACCESSORS(TraitClass, getNumTraitClassInfos, getTraitClassInfo, TraitClassTypes)
 	MANIFEST_ACCESSORS(TraitTrigger, getNumTraitTriggerInfos, getTraitTriggerInfo, TraitTriggerTypes)
-	MANIFEST_ACCESSORS(Trait, getNumTraitInfos, getTraitInfo, TraitTypes)
 	MANIFEST_ACCESSORS(TurnTimer, getNumTurnTimerInfos, getTurnTimerInfo, TurnTimerTypes)
+	MANIFEST_ACCESSORS(Tutorial, getNumTutorialInfos, getTutorialInfo, int)
+	MANIFEST_ACCESSORS(Unit, getNumUnitInfos, getUnitInfo, UnitTypes)
+	MANIFEST_ACCESSORS(UnitArtStyleType, getNumUnitArtStyleTypeInfos, getUnitArtStyleTypeInfo, UnitArtStyleTypes)
 	MANIFEST_ACCESSORS(UnitClass, getNumUnitClassInfos, getUnitClassInfo, UnitClassTypes)
 	MANIFEST_ACCESSORS(UnitCombat, getNumUnitCombatInfos, getUnitCombatInfo, UnitCombatTypes)
-	MANIFEST_ACCESSORS(Unit, getNumUnitInfos, getUnitInfo, UnitTypes)
+	MANIFEST_ACCESSORS(UnitFormation, getNumUnitFormationInfos, getUnitFormationInfo, int)
 	MANIFEST_ACCESSORS(Upkeep, getNumUpkeepInfos, getUpkeepInfo, UpkeepTypes)
 	MANIFEST_ACCESSORS(Victory, getNumVictoryInfos, getVictoryInfo, VictoryTypes)
-	MANIFEST_ACCESSORS(VoteSource, getNumVoteSourceInfos, getVoteSourceInfo, VoteSourceTypes)
 	MANIFEST_ACCESSORS(Vote, getNumVoteInfos, getVoteInfo, VoteTypes)
+	MANIFEST_ACCESSORS(VoteSource, getNumVoteSourceInfos, getVoteSourceInfo, VoteSourceTypes)
 	MANIFEST_ACCESSORS(World, getNumWorldInfos, getWorldInfo, WorldSizeTypes)
+	MANIFEST_ACCESSORS(WorldPicker, getNumWorldPickerInfos, getWorldPickerInfo, int)
 
 #undef MANIFEST_ACCESSORS
 
 	const ManifestType MANIFEST_TYPES[] =
 	{
-	{ "BonusTypes", mfCount_Bonus, mfName_Bonus },
-	{ "BuildTypes", mfCount_Build, mfName_Build },
-	{ "BuildingClassTypes", mfCount_BuildingClass, mfName_BuildingClass },
-	{ "BuildingTypes", mfCount_Building, mfName_Building },
-	{ "CalendarTypes", mfCount_Calendar, mfName_Calendar },
-	{ "CivicOptionTypes", mfCount_CivicOption, mfName_CivicOption },
-	{ "CivicTypes", mfCount_Civic, mfName_Civic },
-	{ "CivilizationTypes", mfCount_Civilization, mfName_Civilization },
-	{ "ClimateTypes", mfCount_Climate, mfName_Climate },
-	{ "ColorTypes", mfCount_Color, mfName_Color },
-	{ "CorporationTypes", mfCount_Corporation, mfName_Corporation },
-	{ "CultureLevelTypes", mfCount_CultureLevel, mfName_CultureLevel },
-	{ "EmphasizeTypes", mfCount_Emphasize, mfName_Emphasize },
-	{ "EraTypes", mfCount_Era, mfName_Era },
-	{ "EventTriggerTypes", mfCount_EventTrigger, mfName_EventTrigger },
-	{ "EventTypes", mfCount_Event, mfName_Event },
-	{ "FeatTypes", mfCount_Feat, mfName_Feat },
-	{ "FeatureTypes", mfCount_Feature, mfName_Feature },
-	{ "FlagTypes", mfCount_Flag, mfName_Flag },
-	{ "GameOptionTypes", mfCount_GameOption, mfName_GameOption },
-	{ "GameSpeedTypes", mfCount_GameSpeed, mfName_GameSpeed },
-	{ "GoodyTypes", mfCount_Goody, mfName_Goody },
-	{ "HandicapTypes", mfCount_Handicap, mfName_Handicap },
-	{ "HurryTypes", mfCount_Hurry, mfName_Hurry },
-	{ "ImprovementTypes", mfCount_Improvement, mfName_Improvement },
-	{ "LeaderHeadTypes", mfCount_LeaderHead, mfName_LeaderHead },
-	{ "MissionTypes", mfCount_Mission, mfName_Mission },
-	{ "PlayerColorTypes", mfCount_PlayerColor, mfName_PlayerColor },
-	{ "PlayerOptionTypes", mfCount_PlayerOption, mfName_PlayerOption },
-	{ "PlotEffectTypes", mfCount_PlotEffect, mfName_PlotEffect },
-	{ "ProjectTypes", mfCount_Project, mfName_Project },
-	{ "PromotionTypes", mfCount_Promotion, mfName_Promotion },
-	{ "ReligionTypes", mfCount_Religion, mfName_Religion },
-	{ "RouteTypes", mfCount_Route, mfName_Route },
-	{ "SeaLevelTypes", mfCount_SeaLevel, mfName_SeaLevel },
-	{ "SpawnGroupTypes", mfCount_SpawnGroup, mfName_SpawnGroup },
-	{ "SpecialBuildingTypes", mfCount_SpecialBuilding, mfName_SpecialBuilding },
-	{ "SpecialUnitTypes", mfCount_SpecialUnit, mfName_SpecialUnit },
-	{ "SpecialistTypes", mfCount_Specialist, mfName_Specialist },
-	{ "TechTypes", mfCount_Tech, mfName_Tech },
-	{ "TerrainTypes", mfCount_Terrain, mfName_Terrain },
-	{ "TraitClassTypes", mfCount_TraitClass, mfName_TraitClass },
-	{ "TraitTriggerTypes", mfCount_TraitTrigger, mfName_TraitTrigger },
-	{ "TraitTypes", mfCount_Trait, mfName_Trait },
-	{ "TurnTimerTypes", mfCount_TurnTimer, mfName_TurnTimer },
-	{ "UnitClassTypes", mfCount_UnitClass, mfName_UnitClass },
-	{ "UnitCombatTypes", mfCount_UnitCombat, mfName_UnitCombat },
-	{ "UnitTypes", mfCount_Unit, mfName_Unit },
-	{ "UpkeepTypes", mfCount_Upkeep, mfName_Upkeep },
-	{ "VictoryTypes", mfCount_Victory, mfName_Victory },
-	{ "VoteSourceTypes", mfCount_VoteSource, mfName_VoteSource },
-	{ "VoteTypes", mfCount_Vote, mfName_Vote },
-	{ "WorldTypes", mfCount_World, mfName_World },
+		{ "ActionTypes", mfCount_Action, mfName_Action },
+		{ "AdvisorTypes", mfCount_Advisor, mfName_Advisor },
+		{ "AffinityTypes", mfCount_Affinity, mfName_Affinity },
+		{ "AlignmentTypes", mfCount_Alignment, mfName_Alignment },
+		{ "AnimationCategoryTypes", mfCount_AnimationCategory, mfName_AnimationCategory },
+		{ "AnimationPathTypes", mfCount_AnimationPath, mfName_AnimationPath },
+		{ "AttachableTypes", mfCount_Attachable, mfName_Attachable },
+		{ "AutomateTypes", mfCount_Automate, mfName_Automate },
+		{ "BonusTypes", mfCount_Bonus, mfName_Bonus },
+		{ "BonusClassTypes", mfCount_BonusClass, mfName_BonusClass },
+		{ "BuildTypes", mfCount_Build, mfName_Build },
+		{ "BuildingTypes", mfCount_Building, mfName_Building },
+		{ "BuildingClassTypes", mfCount_BuildingClass, mfName_BuildingClass },
+		{ "CalendarTypes", mfCount_Calendar, mfName_Calendar },
+		{ "CameraTypes", mfCount_Camera, mfName_Camera },
+		{ "CityClassTypes", mfCount_CityClass, mfName_CityClass },
+		{ "CityTabTypes", mfCount_CityTab, mfName_CityTab },
+		{ "CivicTypes", mfCount_Civic, mfName_Civic },
+		{ "CivicOptionTypes", mfCount_CivicOption, mfName_CivicOption },
+		{ "CivilizationTypes", mfCount_Civilization, mfName_Civilization },
+		{ "ClimateTypes", mfCount_Climate, mfName_Climate },
+		{ "ClimateZoneTypes", mfCount_ClimateZone, mfName_ClimateZone },
+		{ "ColorTypes", mfCount_Color, mfName_Color },
+		{ "CommandTypes", mfCount_Command, mfName_Command },
+		{ "ConceptTypes", mfCount_Concept, mfName_Concept },
+		{ "ControlTypes", mfCount_Control, mfName_Control },
+		{ "CorporationTypes", mfCount_Corporation, mfName_Corporation },
+		{ "CultureLevelTypes", mfCount_CultureLevel, mfName_CultureLevel },
+		{ "CursorTypes", mfCount_Cursor, mfName_Cursor },
+		{ "DamageTypeTypes", mfCount_DamageType, mfName_DamageType },
+		{ "DeathListTypes", mfCount_DeathList, mfName_DeathList },
+		{ "DenialTypes", mfCount_Denial, mfName_Denial },
+		{ "DiplomacyTypes", mfCount_Diplomacy, mfName_Diplomacy },
+		{ "EffectTypes", mfCount_Effect, mfName_Effect },
+		{ "EmphasizeTypes", mfCount_Emphasize, mfName_Emphasize },
+		{ "EntityEventTypes", mfCount_EntityEvent, mfName_EntityEvent },
+		{ "EraTypes", mfCount_Era, mfName_Era },
+		{ "EspionageMissionTypes", mfCount_EspionageMission, mfName_EspionageMission },
+		{ "EthicalAlignmentTypes", mfCount_EthicalAlignment, mfName_EthicalAlignment },
+		{ "EventTypes", mfCount_Event, mfName_Event },
+		{ "EventTriggerTypes", mfCount_EventTrigger, mfName_EventTrigger },
+		{ "FeatTypes", mfCount_Feat, mfName_Feat },
+		{ "FeatureTypes", mfCount_Feature, mfName_Feature },
+		{ "FlagTypes", mfCount_Flag, mfName_Flag },
+		{ "ForceControlTypes", mfCount_ForceControl, mfName_ForceControl },
+		{ "GameOptionTypes", mfCount_GameOption, mfName_GameOption },
+		{ "GameSpeedTypes", mfCount_GameSpeed, mfName_GameSpeed },
+		{ "GoodyTypes", mfCount_Goody, mfName_Goody },
+		{ "HandicapTypes", mfCount_Handicap, mfName_Handicap },
+		{ "HurryTypes", mfCount_Hurry, mfName_Hurry },
+		{ "ImprovementTypes", mfCount_Improvement, mfName_Improvement },
+		{ "ImprovementClassTypes", mfCount_ImprovementClass, mfName_ImprovementClass },
+		{ "InvisibleTypes", mfCount_Invisible, mfName_Invisible },
+		{ "LandscapeTypes", mfCount_Landscape, mfName_Landscape },
+		{ "LeaderClassTypes", mfCount_LeaderClass, mfName_LeaderClass },
+		{ "LeaderHeadTypes", mfCount_LeaderHead, mfName_LeaderHead },
+		{ "LeaderRelationTypes", mfCount_LeaderRelation, mfName_LeaderRelation },
+		{ "LeaderStatusTypes", mfCount_LeaderStatus, mfName_LeaderStatus },
+		{ "LoreTypes", mfCount_Lore, mfName_Lore },
+		{ "MPOptionTypes", mfCount_MPOption, mfName_MPOption },
+		{ "MissionTypes", mfCount_Mission, mfName_Mission },
+		{ "ModuleIdTypes", mfCount_ModuleId, mfName_ModuleId },
+		{ "MonthTypes", mfCount_Month, mfName_Month },
+		{ "NewConceptTypes", mfCount_NewConcept, mfName_NewConcept },
+		{ "PlayerColorTypes", mfCount_PlayerColor, mfName_PlayerColor },
+		{ "PlayerOptionTypes", mfCount_PlayerOption, mfName_PlayerOption },
+		{ "PlotEffectTypes", mfCount_PlotEffect, mfName_PlotEffect },
+		{ "ProcessTypes", mfCount_Process, mfName_Process },
+		{ "ProjectTypes", mfCount_Project, mfName_Project },
+		{ "PromotionTypes", mfCount_Promotion, mfName_Promotion },
+		{ "PromotionClassTypes", mfCount_PromotionClass, mfName_PromotionClass },
+		{ "PythonModulesTypes", mfCount_PythonModules, mfName_PythonModules },
+		{ "QuestTypes", mfCount_Quest, mfName_Quest },
+		{ "ReligionTypes", mfCount_Religion, mfName_Religion },
+		{ "RiverTypes", mfCount_River, mfName_River },
+		{ "RiverModelTypes", mfCount_RiverModel, mfName_RiverModel },
+		{ "RouteTypes", mfCount_Route, mfName_Route },
+		{ "RouteModelTypes", mfCount_RouteModel, mfName_RouteModel },
+		{ "SeaLevelTypes", mfCount_SeaLevel, mfName_SeaLevel },
+		{ "SeasonTypes", mfCount_Season, mfName_Season },
+		{ "SlideShowTypes", mfCount_SlideShow, mfName_SlideShow },
+		{ "SlideShowRandomTypes", mfCount_SlideShowRandom, mfName_SlideShowRandom },
+		{ "SpaceShipTypes", mfCount_SpaceShip, mfName_SpaceShip },
+		{ "SpawnGroupTypes", mfCount_SpawnGroup, mfName_SpawnGroup },
+		{ "SpecialBuildingTypes", mfCount_SpecialBuilding, mfName_SpecialBuilding },
+		{ "SpecialUnitTypes", mfCount_SpecialUnit, mfName_SpecialUnit },
+		{ "SpecialistTypes", mfCount_Specialist, mfName_Specialist },
+		{ "SpecialistArtstyleTypes", mfCount_SpecialistArtstyle, mfName_SpecialistArtstyle },
+		{ "SpecialistClassTypes", mfCount_SpecialistClass, mfName_SpecialistClass },
+		{ "SpellTypes", mfCount_Spell, mfName_Spell },
+		{ "SpellClassTypes", mfCount_SpellClass, mfName_SpellClass },
+		{ "StateNameTypes", mfCount_StateName, mfName_StateName },
+		{ "TechTypes", mfCount_Tech, mfName_Tech },
+		{ "TerrainTypes", mfCount_Terrain, mfName_Terrain },
+		{ "TerrainClassTypes", mfCount_TerrainClass, mfName_TerrainClass },
+		{ "ThroneRoomTypes", mfCount_ThroneRoom, mfName_ThroneRoom },
+		{ "ThroneRoomStyleTypes", mfCount_ThroneRoomStyle, mfName_ThroneRoomStyle },
+		{ "TraitTypes", mfCount_Trait, mfName_Trait },
+		{ "TraitClassTypes", mfCount_TraitClass, mfName_TraitClass },
+		{ "TraitTriggerTypes", mfCount_TraitTrigger, mfName_TraitTrigger },
+		{ "TurnTimerTypes", mfCount_TurnTimer, mfName_TurnTimer },
+		{ "TutorialTypes", mfCount_Tutorial, mfName_Tutorial },
+		{ "UnitTypes", mfCount_Unit, mfName_Unit },
+		{ "UnitArtStyleTypeTypes", mfCount_UnitArtStyleType, mfName_UnitArtStyleType },
+		{ "UnitClassTypes", mfCount_UnitClass, mfName_UnitClass },
+		{ "UnitCombatTypes", mfCount_UnitCombat, mfName_UnitCombat },
+		{ "UnitFormationTypes", mfCount_UnitFormation, mfName_UnitFormation },
+		{ "UpkeepTypes", mfCount_Upkeep, mfName_Upkeep },
+		{ "VictoryTypes", mfCount_Victory, mfName_Victory },
+		{ "VoteTypes", mfCount_Vote, mfName_Vote },
+		{ "VoteSourceTypes", mfCount_VoteSource, mfName_VoteSource },
+		{ "WorldTypes", mfCount_World, mfName_World },
+		{ "WorldPickerTypes", mfCount_WorldPicker, mfName_WorldPicker },
 	};
 
 	const int NUM_MANIFEST_TYPES = sizeof(MANIFEST_TYPES) / sizeof(MANIFEST_TYPES[0]);
+
+	// The table and the ContentType enum are generated from one list and indexed by
+	// each other. If they ever diverge this fails to compile rather than silently
+	// remapping content through the wrong type.
+	typedef char ManifestTableMatchesEnum[
+		(sizeof(MANIFEST_TYPES) / sizeof(MANIFEST_TYPES[0]) == CvSaveManifest::NUM_CONTENT_TYPES) ? 1 : -1];
 
 	// ---------------------------------------------------------------------------
 	// Logging. Same three channels as logCorruptSave() in CvGame.cpp, and the same
