@@ -4,6 +4,7 @@
 #include "CvInfos.h"
 #include "FDataStreamBase.h"
 #include "CvDLLUtilityIFaceBase.h"
+#include "CvSaveSizeProbe.h"
 
 #include <string>
 #include <vector>
@@ -397,6 +398,12 @@ namespace
 
 void CvSaveManifest::write(FDataStreamBase* pStream)
 {
+	// Counted like any other producer. The manifest is proportional to how much CONTENT
+	// the mod has, not to how big the game is, so it is a fixed toll on every save --
+	// which makes it the first thing to suspect when a small save grows.
+	int iBytes = 12;			// magic, version, type count
+	int iEntries = 0;
+
 	pStream->Write(MANIFEST_MAGIC);
 	pStream->Write(MANIFEST_VERSION);
 	pStream->Write(NUM_MANIFEST_TYPES);
@@ -408,12 +415,22 @@ void CvSaveManifest::write(FDataStreamBase* pStream)
 
 		pStream->WriteString(std::string(kType.szTypeName));
 		pStream->Write(iCount);
+		iBytes += (int)strlen(kType.szTypeName) + 5;
 
 		for (int i = 0; i < iCount; i++)
 		{
 			const char* szName = kType.pfnName(i);
 			pStream->WriteString(std::string(szName != NULL ? szName : ""));
+			iBytes += (szName != NULL ? (int)strlen(szName) : 0) + 1;
+			iEntries++;
 		}
+	}
+
+	CvSaveSizeProbe::countObject("(manifest)");
+	CvSaveSizeProbe::countTagged("(manifest)", iBytes);
+	for (int i = 0; i < iEntries; i++)
+	{
+		CvSaveSizeProbe::countObject("(manifest entries)");
 	}
 }
 
