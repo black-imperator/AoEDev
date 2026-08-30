@@ -11,6 +11,7 @@
 #include "CvTeamAI.h"
 #include "CvGlobals.h"
 #include "CvInitCore.h"
+#include "CvSaveManifest.h"
 #include "CvMapGenerator.h"
 #include "CvArtFileMgr.h"
 #include "CvDiploParameters.h"
@@ -8778,6 +8779,16 @@ void CvGame::read(FDataStreamBase* pStream)
 	uint uiFlag=0;
 	pStream->Read(&uiFlag);	// flags for expansion
 
+	// The manifest sits immediately after the flag, at the very top of the compressed
+	// body, so it is read before any content-sized array has had a chance to desync.
+	// A mismatch is reported and the load continues: there is no engine-supported way
+	// to refuse a save from inside deserialisation, and reading on at least leaves the
+	// explanation as the first entry in the log rather than the last.
+	if (uiFlag >= SAVE_FORMAT_VERSION_MANIFEST)
+	{
+		CvSaveManifest::readAndCheck(pStream);
+	}
+
 	if (uiFlag < 1)
 	{
 		int iEndTurnMessagesSent;
@@ -9119,8 +9130,16 @@ void CvGame::write(FDataStreamBase* pStream)
 {
 	int iI;
 
-	uint uiFlag=2;	// 2: NoBonus bans are stored per vote source (Fix #420)
+	uint uiFlag=SAVE_FORMAT_VERSION;	// see SAVE_FORMAT_VERSION in CvSaveManifest.h
 	pStream->Write(uiFlag);		// flag for expansion
+
+	// Guarded, so that dropping SAVE_FORMAT_VERSION to 2 gives a build that READS
+	// manifests but still writes saves older builds can open. That is the transition
+	// build, if we want one before turning manifest writing on for everybody.
+	if (SAVE_FORMAT_VERSION >= SAVE_FORMAT_VERSION_MANIFEST)
+	{
+		CvSaveManifest::write(pStream);
+	}
 
 	pStream->Write(m_iElapsedGameTurns);
 	pStream->Write(m_iStartTurn);
