@@ -34,7 +34,6 @@
 /************************************************************************************************/
 #include "FAStarNode.h"
 #include "CvSaveManifest.h"
-#include "CvTaggedStream.h"
 #include "CvSaveSizeProbe.h"
 /************************************************************************************************/
 /* BETTER_BTS_AI_MOD                       END                                                  */
@@ -11550,18 +11549,6 @@ ColorTypes CvPlot::plotMinimapColor()
 // read object from a stream
 // used during load
 //
-// Tag numbers for this class's tagged record. APPEND ONLY: renumbering an existing
-// tag makes every save written before the change decode that field as something
-// else, silently. A retired field leaves its number unused rather than handing it on.
-namespace
-{
-	enum PlotTag
-	{
-		TAG_X = 1,
-		TAG_Y,
-		TAG_AREA,
-	};
-}
 void CvPlot::read(FDataStreamBase* pStream)
 {
 	int iI;
@@ -11574,31 +11561,10 @@ void CvPlot::read(FDataStreamBase* pStream)
 
 	uint uiFlag=0;
 	pStream->Read(&uiFlag);	// flags for expansion
-	if (uiFlag >= 1)
-	{
-		// Tagged. Order does not matter, an unknown tag is stepped over, and a field
-		// the writer omitted keeps what reset() gave it.
-		CvTagReader kReader(pStream);
-		while (kReader.next())
-		{
-			switch (kReader.tag())
-			{
-			case TAG_X: m_iX = kReader.asInt(); break;
-			case TAG_Y: m_iY = kReader.asInt(); break;
-			case TAG_AREA: m_iArea = kReader.asInt(); break;
-			default: kReader.skip(); break;
-			}
-		}
-	}
-	else
-	{
-		// Positional, exactly as it always was. This branch is the compatibility
-		// shim; it is not new code and must not be edited.
-		pStream->Read(&m_iX);
-		pStream->Read(&m_iY);
-		pStream->Read(&m_iArea);
-	}
 
+	pStream->Read(&m_iX);
+	pStream->Read(&m_iY);
+	pStream->Read(&m_iArea);
 	// m_pPlotArea not saved
 	pStream->Read(&m_iFeatureVariety);
 	pStream->Read(&m_iOwnershipDuration);
@@ -11922,16 +11888,12 @@ void CvPlot::write(FDataStreamBase* pStream)
 	CvSaveSizeProbe::countObject("CvPlot");
 	uint iI;
 
-	uint uiFlag=1;	// 1: tagged fields (CvTaggedStream)
+	uint uiFlag=0;
 	pStream->Write(uiFlag);		// flag for expansion
-	{
-		CvTagWriter kWriter(pStream, "CvPlot");
-		kWriter.write(TAG_X, m_iX);
-		kWriter.write(TAG_Y, m_iY);
-		kWriter.write(TAG_AREA, m_iArea);
-		kWriter.end();
-	}
 
+	pStream->Write(m_iX);
+	pStream->Write(m_iY);
+	pStream->Write(m_iArea);
 	// m_pPlotArea not saved
 	pStream->Write(m_iFeatureVariety);
 	pStream->Write(m_iOwnershipDuration);
