@@ -45,11 +45,17 @@
 //   0, 1  original Firaxis / FfH layout
 //   2     NoBonus bans stored per vote source
 //   3     a content manifest follows the flag
+//   4     CvGame's own fields are a tagged record
 //
-const unsigned int SAVE_FORMAT_VERSION = 3;
+const unsigned int SAVE_FORMAT_VERSION = 4;
 
 // First version that carries a manifest. Saves below this are read exactly as before.
+// Deliberately NOT raised with SAVE_FORMAT_VERSION: a version 3 save has a manifest
+// and positional CvGame fields, and must keep being read that way.
 const unsigned int SAVE_FORMAT_VERSION_MANIFEST = 3;
+
+// First version whose CvGame fields are tagged.
+const unsigned int SAVE_FORMAT_VERSION_TAGGED = 4;
 
 namespace CvSaveManifest
 {

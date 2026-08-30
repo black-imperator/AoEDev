@@ -1,6 +1,6 @@
 # Check every tagged class for the ways a version flag can be wrong.
 #
-# Three hazards, all of which have actually occurred here:
+# Four hazards, all of which have actually occurred here:
 #
 #   1. The writer emits a tagged record while advertising a flag its own reader treats
 #      as positional. The reader parses a length-prefixed blob as bare scalars, the
@@ -8,12 +8,13 @@
 #      declared its flag "uint uiFlag = 0;" with spaces and a literal-string bump
 #      matched nothing, silently.
 #
-#   2. The writer declares uiFlag MORE THAN ONCE, so a tool bumps one that is not the
-#      one actually written. CvPlayerAI has two declarations; the live one stayed at 3
-#      while the reader was left gating tagged at >= 1, which would have sent every
-#      existing save down the tagged branch.
+#   2. A commented-out declaration is mistaken for the real one. CvPlayerAI carries a
+#      disabled "uint uiFlag=0;" in a block comment above the live "uint uiFlag=3;".
 #
-#   3. The reader already tests the flag for older format steps and the tagged gate does
+#   3. The writer genuinely declares uiFlag more than once, so which one is written
+#      cannot be assumed.
+#
+#   4. The reader already tests the flag for older format steps and the tagged gate does
 #      not sit above all of them, so the tagged branch captures saves those tests were
 #      written to handle.
 import io
@@ -27,6 +28,16 @@ SRC = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
 
 def load(p):
     return io.open(p, "r", encoding="latin-1", newline="").read()
+
+
+def strip_comments(text):
+    """Blank out comments, preserving line structure, so disabled code is not read."""
+    def blank(m):
+        return re.sub(r"[^\r\n]", " ", m.group(0))
+
+    text = re.sub(r"/\*.*?\*/", blank, text, flags=re.S)
+    text = re.sub(r"//[^\r\n]*", blank, text)
+    return text
 
 
 def body(text, cls, fn):
@@ -64,37 +75,44 @@ for name in sorted(os.listdir(SRC)):
 
     checked += 1
     problems = []
+    wc, rc = strip_comments(w), strip_comments(r)
 
     if w_tagged != r_tagged:
         problems.append("writer tagged=%s but reader tagged=%s" % (w_tagged, r_tagged))
 
-    decls = re.findall(r"uint\s+uiFlag\s*=\s*(\d+)\s*;", w)
+    # a flag may be a literal or a named constant (CvGame's flag IS the format version)
+    decls = re.findall(r"uint\s+uiFlag\s*=\s*(\w+)\s*;", wc)
+    gate_m = re.search(r"if\s*\(\s*uiFlag\s*>=\s*(\w+)\s*\)", rc)
+
     if len(decls) == 0:
-        problems.append("no uiFlag literal in write")
+        problems.append("no uiFlag declaration in write")
     elif len(decls) > 1:
         problems.append("write declares uiFlag %d times (%s); which one is actually "
                         "written cannot be assumed" % (len(decls), ", ".join(decls)))
-
-    mr = re.search(r"if\s*\(\s*uiFlag\s*>=\s*(\d+)\s*\)", r)
-    if not mr:
+    if not gate_m:
         problems.append("no 'if (uiFlag >= N)' gate in read")
 
-    if len(decls) == 1 and mr:
-        written = int(decls[0])
-        gate = int(mr.group(1))
+    if len(decls) == 1 and gate_m:
+        written, gate = decls[0], gate_m.group(1)
 
-        if written < gate:
-            problems.append("writes flag %d but reader needs >= %d, so the reader takes "
-                            "the POSITIONAL branch on a tagged record" % (written, gate))
+        if written.isdigit() and gate.isdigit():
+            if int(written) < int(gate):
+                problems.append("writes flag %s but reader needs >= %s, so the reader "
+                                "takes the POSITIONAL branch on a tagged record"
+                                % (written, gate))
 
-        # Any other flag test in read belongs to an older format step. The tagged gate
-        # has to sit above all of them, or it captures saves they were meant to handle.
-        for op, num in re.findall(r"uiFlag\s*([<>]=?)\s*(\d+)", r):
-            if op == ">=" and int(num) == gate:
-                continue
-            if int(num) >= gate:
-                problems.append("reader also tests 'uiFlag %s %s', which the tagged gate "
-                                ">= %d overlaps" % (op, num, gate))
+            # Other flag tests belong to older format steps. The tagged gate must sit
+            # above all of them or it captures saves they were meant to handle.
+            for op, num in re.findall(r"uiFlag\s*([<>]=?)\s*(\d+)", rc):
+                if op == ">=" and num == gate:
+                    continue
+                if int(num) >= int(gate):
+                    problems.append("reader also tests 'uiFlag %s %s', which the tagged "
+                                    "gate >= %s overlaps" % (op, num, gate))
+        elif written != gate and not (written == "SAVE_FORMAT_VERSION"
+                                      and gate == "SAVE_FORMAT_VERSION_TAGGED"):
+            problems.append("writer flag %s and reader gate %s are named constants that "
+                            "are not a known matching pair" % (written, gate))
 
     if problems:
         bad += 1
@@ -102,7 +120,7 @@ for name in sorted(os.listdir(SRC)):
             print("  %-20s %s" % (cls, p))
     else:
         print("  %-20s ok (writes flag %s, reader gate >= %s)"
-              % (cls, decls[0], mr.group(1)))
+              % (cls, decls[0], gate_m.group(1)))
 
 print()
 print("%d tagged classes checked, %d with problems" % (checked, bad))
