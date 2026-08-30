@@ -64,6 +64,11 @@ void CvTagWriter::write(int iTag, short iValue)        { putSigned(iTag, (int)iV
 void CvTagWriter::write(int iTag, char iValue)         { putSigned(iTag, (int)iValue); }
 void CvTagWriter::write(int iTag, bool bValue)         { putSigned(iTag, bValue ? 1 : 0); }
 
+void CvTagWriter::writeIfNonZero(int iTag, int iValue)   { if (iValue != 0) putSigned(iTag, iValue); }
+void CvTagWriter::writeIfNonZero(int iTag, short iValue) { if (iValue != 0) putSigned(iTag, (int)iValue); }
+void CvTagWriter::writeIfNonZero(int iTag, char iValue)  { if (iValue != 0) putSigned(iTag, (int)iValue); }
+void CvTagWriter::writeIfNonZero(int iTag, bool bValue)  { if (bValue) putSigned(iTag, 1); }
+
 void CvTagWriter::write(int iTag, unsigned int uiValue)
 {
 	// Not zigzagged: an unsigned field has no small negatives to protect, and

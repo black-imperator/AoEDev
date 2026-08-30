@@ -55,6 +55,25 @@ public:
 	void write(int iTag, bool bValue);
 	void write(int iTag, unsigned int uiValue);
 
+	// Omits the field entirely when it still holds the value reset() gave it. Absent
+	// means "unchanged from the default", and the reader's own reset() has already put
+	// it there, so nothing is lost.
+	//
+	// This is not a micro-optimisation, it is what makes the format viable. The save
+	// body is zlib-compressed, and a positional zero is part of a long run of 0x00 that
+	// compresses to almost nothing, while a varint key is entropy that does not compress
+	// at all. Tagging every field shrank the RAW bytes by about 30% and grew the
+	// COMPRESSED save by about the same -- measured, on a real save, not predicted.
+	// Skipping defaults drops both the key and the value and brings it back to parity.
+	//
+	// Only correct where reset() sets the field to zero or false. Where it does not,
+	// write() unconditionally: omitting a field whose default is non-zero would have the
+	// reader keep that non-zero default instead of the zero that was meant.
+	void writeIfNonZero(int iTag, int iValue);
+	void writeIfNonZero(int iTag, short iValue);
+	void writeIfNonZero(int iTag, char iValue);
+	void writeIfNonZero(int iTag, bool bValue);
+
 	// Raw block, for anything without a scalar form yet.
 	void writeBytes(int iTag, const void* pData, int iLength);
 

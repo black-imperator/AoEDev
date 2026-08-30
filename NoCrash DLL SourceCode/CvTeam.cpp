@@ -7599,32 +7599,32 @@ void CvTeam::write(FDataStreamBase* pStream)
 	pStream->Write(uiFlag);		// flag for expansion
 	{
 		CvTagWriter kWriter(pStream);
-		kWriter.write(TAG_NUM_MEMBERS, m_iNumMembers);
-		kWriter.write(TAG_ALIVE_COUNT, m_iAliveCount);
-		kWriter.write(TAG_EVER_ALIVE_COUNT, m_iEverAliveCount);
-		kWriter.write(TAG_NUM_CITIES, m_iNumCities);
-		kWriter.write(TAG_TOTAL_POPULATION, m_iTotalPopulation);
-		kWriter.write(TAG_TOTAL_LAND, m_iTotalLand);
-		kWriter.write(TAG_NUKE_INTERCEPTION, m_iNukeInterception);
-		kWriter.write(TAG_EXTRA_WATER_SEE_FROM_COUNT, m_iExtraWaterSeeFromCount);
-		kWriter.write(TAG_MAP_TRADING_COUNT, m_iMapTradingCount);
-		kWriter.write(TAG_TECH_TRADING_COUNT, m_iTechTradingCount);
-		kWriter.write(TAG_GOLD_TRADING_COUNT, m_iGoldTradingCount);
-		kWriter.write(TAG_OPEN_BORDERS_TRADING_COUNT, m_iOpenBordersTradingCount);
-		kWriter.write(TAG_DEFENSIVE_PACT_TRADING_COUNT, m_iDefensivePactTradingCount);
-		kWriter.write(TAG_PERMANENT_ALLIANCE_TRADING_COUNT, m_iPermanentAllianceTradingCount);
-		kWriter.write(TAG_VASSAL_TRADING_COUNT, m_iVassalTradingCount);
-		kWriter.write(TAG_BRIDGE_BUILDING_COUNT, m_iBridgeBuildingCount);
-		kWriter.write(TAG_IRRIGATION_COUNT, m_iIrrigationCount);
-		kWriter.write(TAG_IGNORE_IRRIGATION_COUNT, m_iIgnoreIrrigationCount);
-		kWriter.write(TAG_WATER_WORK_COUNT, m_iWaterWorkCount);
-		kWriter.write(TAG_VASSAL_POWER, m_iVassalPower);
-		kWriter.write(TAG_MASTER_POWER, m_iMasterPower);
-		kWriter.write(TAG_ENEMY_WAR_WEARINESS_MODIFIER, m_iEnemyWarWearinessModifier);
-		kWriter.write(TAG_RIVER_TRADE_COUNT, m_iRiverTradeCount);
-		kWriter.write(TAG_ESPIONAGE_POINTS_EVER, m_iEspionagePointsEver);
-		kWriter.write(TAG_MAP_CENTERING, m_bMapCentering);
-		kWriter.write(TAG_CAPITULATED, m_bCapitulated);
+		kWriter.writeIfNonZero(TAG_NUM_MEMBERS, m_iNumMembers);
+		kWriter.writeIfNonZero(TAG_ALIVE_COUNT, m_iAliveCount);
+		kWriter.writeIfNonZero(TAG_EVER_ALIVE_COUNT, m_iEverAliveCount);
+		kWriter.writeIfNonZero(TAG_NUM_CITIES, m_iNumCities);
+		kWriter.writeIfNonZero(TAG_TOTAL_POPULATION, m_iTotalPopulation);
+		kWriter.writeIfNonZero(TAG_TOTAL_LAND, m_iTotalLand);
+		kWriter.writeIfNonZero(TAG_NUKE_INTERCEPTION, m_iNukeInterception);
+		kWriter.writeIfNonZero(TAG_EXTRA_WATER_SEE_FROM_COUNT, m_iExtraWaterSeeFromCount);
+		kWriter.writeIfNonZero(TAG_MAP_TRADING_COUNT, m_iMapTradingCount);
+		kWriter.writeIfNonZero(TAG_TECH_TRADING_COUNT, m_iTechTradingCount);
+		kWriter.writeIfNonZero(TAG_GOLD_TRADING_COUNT, m_iGoldTradingCount);
+		kWriter.writeIfNonZero(TAG_OPEN_BORDERS_TRADING_COUNT, m_iOpenBordersTradingCount);
+		kWriter.writeIfNonZero(TAG_DEFENSIVE_PACT_TRADING_COUNT, m_iDefensivePactTradingCount);
+		kWriter.writeIfNonZero(TAG_PERMANENT_ALLIANCE_TRADING_COUNT, m_iPermanentAllianceTradingCount);
+		kWriter.writeIfNonZero(TAG_VASSAL_TRADING_COUNT, m_iVassalTradingCount);
+		kWriter.writeIfNonZero(TAG_BRIDGE_BUILDING_COUNT, m_iBridgeBuildingCount);
+		kWriter.writeIfNonZero(TAG_IRRIGATION_COUNT, m_iIrrigationCount);
+		kWriter.writeIfNonZero(TAG_IGNORE_IRRIGATION_COUNT, m_iIgnoreIrrigationCount);
+		kWriter.writeIfNonZero(TAG_WATER_WORK_COUNT, m_iWaterWorkCount);
+		kWriter.writeIfNonZero(TAG_VASSAL_POWER, m_iVassalPower);
+		kWriter.writeIfNonZero(TAG_MASTER_POWER, m_iMasterPower);
+		kWriter.writeIfNonZero(TAG_ENEMY_WAR_WEARINESS_MODIFIER, m_iEnemyWarWearinessModifier);
+		kWriter.writeIfNonZero(TAG_RIVER_TRADE_COUNT, m_iRiverTradeCount);
+		kWriter.writeIfNonZero(TAG_ESPIONAGE_POINTS_EVER, m_iEspionagePointsEver);
+		kWriter.writeIfNonZero(TAG_MAP_CENTERING, m_bMapCentering);
+		kWriter.writeIfNonZero(TAG_CAPITULATED, m_bCapitulated);
 		kWriter.end();
 	}
 

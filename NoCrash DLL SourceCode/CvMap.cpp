@@ -1493,13 +1493,13 @@ void CvMap::write(FDataStreamBase* pStream)
 		CvTagWriter kWriter(pStream);
 		kWriter.write(TAG_GRID_WIDTH, m_iGridWidth);
 		kWriter.write(TAG_GRID_HEIGHT, m_iGridHeight);
-		kWriter.write(TAG_LAND_PLOTS, m_iLandPlots);
-		kWriter.write(TAG_OWNED_PLOTS, m_iOwnedPlots);
+		kWriter.writeIfNonZero(TAG_LAND_PLOTS, m_iLandPlots);
+		kWriter.writeIfNonZero(TAG_OWNED_PLOTS, m_iOwnedPlots);
 		kWriter.write(TAG_TOP_LATITUDE, m_iTopLatitude);
 		kWriter.write(TAG_BOTTOM_LATITUDE, m_iBottomLatitude);
-		kWriter.write(TAG_NEXT_RIVER_ID, m_iNextRiverID);
+		kWriter.writeIfNonZero(TAG_NEXT_RIVER_ID, m_iNextRiverID);
 		kWriter.write(TAG_WRAP_X, m_bWrapX);
-		kWriter.write(TAG_WRAP_Y, m_bWrapY);
+		kWriter.writeIfNonZero(TAG_WRAP_Y, m_bWrapY);
 		kWriter.end();
 	}
 

@@ -669,7 +669,7 @@ void CvDeal::write(FDataStreamBase* pStream)
 	{
 		CvTagWriter kWriter(pStream);
 		kWriter.write(TAG_ID, m_iID);
-		kWriter.write(TAG_INITIAL_GAME_TURN, m_iInitialGameTurn);
+		kWriter.writeIfNonZero(TAG_INITIAL_GAME_TURN, m_iInitialGameTurn);
 		kWriter.write(TAG_FIRST_PLAYER, (int)m_eFirstPlayer);
 		kWriter.write(TAG_SECOND_PLAYER, (int)m_eSecondPlayer);
 		kWriter.end();

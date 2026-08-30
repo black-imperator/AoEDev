@@ -252,24 +252,52 @@ static void testRecordIsSelfContained()
 	CHECK(iSentinel == 0x5EA15EA1, "stream positioned exactly after the record");
 }
 
-static void testSizeAgainstPositional()
+static void testDefaultsAreElided()
 {
-	printf("size against the positional format\n");
-	MemStream s;
+	// RAW size is NOT the metric. The save body is zlib-compressed, and a positional
+	// zero lives in a run of 0x00 that compresses to nothing while a varint key is
+	// entropy that does not compress at all. An earlier version of this test compared
+	// raw bytes, reported tagging as 31% SMALLER, and the first real save came out 23%
+	// BIGGER. Raw size is measured here only to prove elision actually drops the field;
+	// what matters is that a default costs nothing at all.
+	printf("fields at their default cost nothing\n");
+
+	MemStream sAll, sElided;
 	{
-		CvTagWriter w(&s);
-		// A unit-ish object: mostly small or zero, which is the real distribution.
-		for (int i = 1; i <= 200; i++)
-		{
-			w.write(i, (i % 17 == 0) ? i * 3 : 0);
-		}
+		CvTagWriter w(&sAll);
+		for (int i = 1; i <= 200; i++) w.write(i, (i % 17 == 0) ? i * 3 : 0);
 		w.end();
 	}
-	const int iTagged = (int)s.m_data.size();
-	const int iPositional = 200 * 4;
-	printf("    tagged %d bytes, positional %d bytes (%+d%%)\n",
-		iTagged, iPositional, (iTagged - iPositional) * 100 / iPositional);
-	CHECK(iTagged < iPositional, "tagged is smaller than positional for typical data");
+	{
+		CvTagWriter w(&sElided);
+		for (int i = 1; i <= 200; i++) w.writeIfNonZero(i, (i % 17 == 0) ? i * 3 : 0);
+		w.end();
+	}
+
+	const int iAll = (int)sAll.m_data.size();
+	const int iElided = (int)sElided.m_data.size();
+	printf("    200 fields, 11 of them non-zero: every field %d bytes, elided %d bytes\n",
+		iAll, iElided);
+
+	CHECK(iElided < iAll / 4, "elision drops the fields still at their default");
+
+	// and the elided record must still read back the values that were not default
+	sElided.Rewind();
+	CvTagReader r(&sElided);
+	int iSeen = 0, iSum = 0;
+	while (r.next())
+	{
+		iSeen++;
+		iSum += r.asInt();
+	}
+	int iExpected = 0, iCount = 0;
+	for (int i = 1; i <= 200; i++)
+	{
+		if (i % 17 == 0) { iExpected += i * 3; iCount++; }
+	}
+	CHECK(!r.bad(), "elided record parsed");
+	CHECK(iSeen == iCount, "only the non-default fields are present");
+	CHECK(iSum == iExpected, "their values survived");
 }
 
 int main()
@@ -278,7 +306,7 @@ int main()
 	testUnknownTagIsSkipped();
 	testMissingFieldKeepsDefault();
 	testRecordIsSelfContained();
-	testSizeAgainstPositional();
+	testDefaultsAreElided();
 
 	printf("\n%s\n", g_iFailures == 0 ? "all checks passed" : "FAILURES ABOVE");
 	return g_iFailures == 0 ? 0 : 1;

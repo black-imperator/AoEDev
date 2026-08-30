@@ -1061,13 +1061,13 @@ void CvArea::write(FDataStreamBase* pStream)
 	{
 		CvTagWriter kWriter(pStream);
 		kWriter.write(TAG_ID, m_iID);
-		kWriter.write(TAG_NUM_TILES, m_iNumTiles);
-		kWriter.write(TAG_NUM_OWNED_TILES, m_iNumOwnedTiles);
-		kWriter.write(TAG_NUM_RIVER_EDGES, m_iNumRiverEdges);
-		kWriter.write(TAG_NUM_UNITS, m_iNumUnits);
-		kWriter.write(TAG_NUM_CITIES, m_iNumCities);
-		kWriter.write(TAG_TOTAL_POPULATION, m_iTotalPopulation);
-		kWriter.write(TAG_NUM_STARTING_PLOTS, m_iNumStartingPlots);
+		kWriter.writeIfNonZero(TAG_NUM_TILES, m_iNumTiles);
+		kWriter.writeIfNonZero(TAG_NUM_OWNED_TILES, m_iNumOwnedTiles);
+		kWriter.writeIfNonZero(TAG_NUM_RIVER_EDGES, m_iNumRiverEdges);
+		kWriter.writeIfNonZero(TAG_NUM_UNITS, m_iNumUnits);
+		kWriter.writeIfNonZero(TAG_NUM_CITIES, m_iNumCities);
+		kWriter.writeIfNonZero(TAG_TOTAL_POPULATION, m_iTotalPopulation);
+		kWriter.writeIfNonZero(TAG_NUM_STARTING_PLOTS, m_iNumStartingPlots);
 		kWriter.write(TAG_WATER, m_bWater);
 		kWriter.end();
 	}
