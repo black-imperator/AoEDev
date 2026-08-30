@@ -775,4 +775,14 @@
 		<DefineName>NUM_UNIT_PREREQ_OR_BONUSES</DefineName>
 		<iDefineIntVal>5</iDefineIntVal>
 	</Define>
+	<Define>
+		<DefineName>SYNC_LOG</DefineName>
+		<!-- Multiplayer desync diagnosis. 0 off. 1 writes synclog_Pnn.txt next to
+		     CvGameCoreDLL.dll with one line per player per turn; collect the file from
+		     two clients that went out of sync and diff them, and the first differing
+		     line names the turn, the player and the field. 2 adds a line per unit,
+		     which is large but pins down which unit diverged. Observes only; it does
+		     not touch the sync checksum, so leaving it on cannot cause a desync. -->
+		<iDefineIntVal>0</iDefineIntVal>
+	</Define>
 </Civ4Defines>
