@@ -1050,6 +1050,32 @@ int getCombatOdds(CvUnit* pAttacker, CvUnit* pDefender)
 	FAssert((iAttackerStrength + iDefenderStrength) > 0);
 	FAssert((iAttackerFirepower + iDefenderFirepower) > 0);
 
+/*************************************************************************************************/
+/**	Bugfix: divide by zero in getCombatOdds					2026-08-31						**/
+/**																								**/
+/**		The assert above states the invariant but does nothing in a release build, and the		**/
+/**		divide below is unguarded. When both units compute zero combat strength it is an			**/
+/**		integer divide by zero and the process dies -- exception c0000094 at					**/
+/**		"idiv eax,ebx" with ebx = 0.															**/
+/**																								**/
+/**		It is reachable from Python, so a script can crash the game without any combat			**/
+/**		taking place. spellDovielloDuel calls getCombatOdds for every unit on the plot			**/
+/**		holding PROMOTION_CHALLENGER, and a caster and challenger that both come out at zero	**/
+/**		strength are enough to trigger it.														**/
+/**																								**/
+/**		Zero against zero has no meaningful winner, so report even odds rather than inventing	**/
+/**		an advantage for either side. The two guards immediately below already return 1000 and	**/
+/**		0 for the one-sided cases; this is the case they do not cover, because it never reaches	**/
+/**		them.																					**/
+/*************************************************************************************************/
+	if ((iAttackerStrength + iDefenderStrength) <= 0)
+	{
+		return 500;
+	}
+/*************************************************************************************************/
+/**	Bugfix									END													**/
+/*************************************************************************************************/
+
 	// From Lead From Behind by UncutDragon
 	// Chance of hitting in combat is based purely on relative strengths.
 	iDefenderOdds = ((GC.getCOMBAT_DIE_SIDES() * iDefenderStrength) / (iAttackerStrength + iDefenderStrength));
@@ -1067,7 +1093,22 @@ int getCombatOdds(CvUnit* pAttacker, CvUnit* pDefender)
 	}
 
 	// (average of attacker and defender firepower) + (0.5 ???)
-	iStrengthFactor = ((iAttackerFirepower + iDefenderFirepower + 1) / 2);
+/*************************************************************************************************/
+/**	Bugfix: divide by zero in getCombatOdds					2026-08-31						**/
+/**																								**/
+/**		Floored at 1 because iStrengthFactor is the ONLY thing keeping the two divisions below	**/
+/**		from dividing by zero. It is the invariant the second FAssert above states and, being	**/
+/**		an assert, does not enforce in a release build.											**/
+/**																								**/
+/**		With both firepowers at zero this expression is (0 + 0 + 1) / 2, which integer division	**/
+/**		makes 0, and then both denominators are 0 + 0. Any firepower at all gives a sum of at	**/
+/**		least 2 here, so the floor changes nothing in a real fight -- it only covers the case	**/
+/**		that used to kill the process.															**/
+/*************************************************************************************************/
+	iStrengthFactor = std::max(1, ((iAttackerFirepower + iDefenderFirepower + 1) / 2));
+/*************************************************************************************************/
+/**	Bugfix									END													**/
+/*************************************************************************************************/
 
 	// calculate damage done in one round. GlobalDefine "COMBAT_DAMAGE" is currently 20 (Blaze 2025)
 	// Strength factor used as moderating influence; instead of e.g. 1 / 3 damage, it's (1+2)/(3+2) or 3/5 damage.

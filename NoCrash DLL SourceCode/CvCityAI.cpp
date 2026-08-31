@@ -10140,8 +10140,10 @@ bool CvCityAI::AI_bestSpreadUnit(bool bMissionary, bool bExecutive, int iBaseCha
 			if (isHasReligion(eReligion))
 			{
 				int iHasCount = kPlayer.getHasReligionCount(eReligion);
+				// Bugfix: the divide only happens on the <= 4 branch, which includes 0, and
+				// the assert saying it cannot be 0 does nothing in a release build.
 				FAssert(iHasCount > 0);
-				int iRoll = (iHasCount > 4) ? iBaseChance : (((100 - iBaseChance) / iHasCount) + iBaseChance);
+				int iRoll = (iHasCount > 4) ? iBaseChance : (((100 - iBaseChance) / std::max(1, iHasCount)) + iBaseChance);
 				if (kPlayer.AI_isDoStrategy(AI_STRATEGY_MISSIONARY))
 				{
 					iRoll *= (kPlayer.getStateReligion() == eReligion) ? 170 : 65;
@@ -10224,8 +10226,9 @@ bool CvCityAI::AI_bestSpreadUnit(bool bMissionary, bool bExecutive, int iBaseCha
 			if (isActiveCorporation(eCorporation))
 			{
 				int iHasCount = kPlayer.getHasCorporationCount(eCorporation);
+				// Bugfix: same shape as the religion case just above.
 				FAssert(iHasCount > 0);
-				int iRoll = (iHasCount > 4) ? iBaseChance : (((100 - iBaseChance) / iHasCount) + iBaseChance);
+				int iRoll = (iHasCount > 4) ? iBaseChance : (((100 - iBaseChance) / std::max(1, iHasCount)) + iBaseChance);
 				if (!kTeam.hasHeadquarters(eCorporation))
 				{
 					iRoll /= 8;

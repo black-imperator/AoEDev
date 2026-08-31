@@ -13936,7 +13936,10 @@ int CvUnit::airCombatDamage(const CvUnit* pDefender) const
 	FAssertMsg(iOurStrength > 0, "Air combat strength is expected to be greater than zero");
 	iTheirStrength = pDefender->maxCombatStr(pPlot, this);
 
-	iStrengthFactor = ((iOurStrength + iTheirStrength + 1) / 2);
+	// Bugfix: floored. This is the only thing keeping the damage division below off
+	// zero, and (0 + 0 + 1) / 2 is 0 by integer division. Any strength at all makes
+	// the sum at least 2, so this changes nothing in a real fight.
+	iStrengthFactor = std::max(1, ((iOurStrength + iTheirStrength + 1) / 2));
 
 	iDamage = std::max(1, ((GC.getDefineINT("AIR_COMBAT_DAMAGE") * (iOurStrength + iStrengthFactor)) / (iTheirStrength + iStrengthFactor)));
 
@@ -13971,7 +13974,10 @@ int CvUnit::rangeCombatDamage(const CvUnit* pDefender) const
 /**		Ranged attack damage more dependant on unit strength and has random element				**/
 /*************************************************************************************************/
 /**								---- Start Original Code ----									**
-	iStrengthFactor = ((iOurStrength + iTheirStrength + 1) / 2);
+	// Bugfix: floored. This is the only thing keeping the damage division below off
+	// zero, and (0 + 0 + 1) / 2 is 0 by integer division. Any strength at all makes
+	// the sum at least 2, so this changes nothing in a real fight.
+	iStrengthFactor = std::max(1, ((iOurStrength + iTheirStrength + 1) / 2));
 
 	iDamage = std::max(1, ((GC.getDefineINT("RANGE_COMBAT_DAMAGE") * (iOurStrength + iStrengthFactor)) / (iTheirStrength + iStrengthFactor)));
 /**								----  End Original Code  ----									**/
@@ -31382,7 +31388,8 @@ void CvUnit::collateralCombat(const CvPlot* pPlot, CvUnit* pSkipUnit)
 /** Unofficial Patch  END															**/
 /*************************************************************************************************/
 
-				iStrengthFactor = ((iCollateralStrength + iTheirStrength + 1) / 2);
+				// Bugfix: floored, as with the other copies of this calculation.
+				iStrengthFactor = std::max(1, ((iCollateralStrength + iTheirStrength + 1) / 2));
 
 				iCollateralDamage = (GC.getDefineINT("COLLATERAL_COMBAT_DAMAGE") * (iCollateralStrength + iStrengthFactor)) / (iTheirStrength + iStrengthFactor);
 
@@ -32334,7 +32341,11 @@ void CvUnit::getDefenderCombatValues(CvUnit& kDefender, const CvPlot* pPlot, int
 	// original
 	//iTheirOdds = ((GC.getDefineINT("COMBAT_DIE_SIDES") * iTheirStrength) / (iOurStrength + iTheirStrength));
 	// modified
-	iTheirOdds = ((GC.getCOMBAT_DIE_SIDES() * iTheirStrength) / (iOurStrength + iTheirStrength));
+	// Bugfix: floored denominator. Two units that each compute zero strength divide by
+	// zero here. Flooring rather than returning early because this is mid-calculation:
+	// with both strengths at zero the numerator is zero too, so the odds come out zero,
+	// which the code below already handles.
+	iTheirOdds = ((GC.getCOMBAT_DIE_SIDES() * iTheirStrength) / std::max(1, (iOurStrength + iTheirStrength)));
 
 /*************************************************************************************************/
 /**	MultiBarb							12/23/08									Xienwolf	**/
@@ -34135,8 +34146,20 @@ int CvUnit::LFBgetDefenderCombatOdds(const CvUnit* pAttacker) const
 	FAssert((iAttackerStrength + iDefenderStrength) > 0);
 	FAssert((iAttackerFirepower + iDefenderFirepower) > 0);
 
+	// Bugfix: the two FAssert lines above state these invariants and do nothing in a
+	// release build, and both divisions below are unguarded. Two units that each compute
+	// zero strength divide by zero and kill the process; zero firepower on both sides
+	// makes iStrengthFactor zero, which leaves the damage divisions dividing by zero as
+	// well. Same defect as getCombatOdds in CvGameCoreUtils.cpp. Even odds is the
+	// honest answer when neither side has any strength, and flooring iStrengthFactor
+	// changes nothing whenever there is any firepower at all.
+	if ((iAttackerStrength + iDefenderStrength) <= 0)
+	{
+		return 500;
+	}
+
 	iDefenderOdds = ((GC.getCOMBAT_DIE_SIDES() * iDefenderStrength) / (iAttackerStrength + iDefenderStrength));
-	iStrengthFactor = ((iAttackerFirepower + iDefenderFirepower + 1) / 2);
+	iStrengthFactor = std::max(1, ((iAttackerFirepower + iDefenderFirepower + 1) / 2));
 
 	// calculate damage done in one round
 	//////
