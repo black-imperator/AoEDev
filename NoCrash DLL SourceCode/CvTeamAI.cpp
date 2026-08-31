@@ -858,8 +858,11 @@ int CvTeamAI::AI_calculateCapitalProximity(TeamTypes eTeam) const
 
 	if (iCount > 0)
 	{
+		// Bugfix: iCount > 0 above proves the loop ran, not that the maximum distance is
+		// non-zero. It is zero whenever every city considered sits on the same plot as the
+		// one being measured from, and the assert does nothing in a release build.
 		FAssert(iMaxDistance > 0);
-		return ((GC.getMapINLINE().maxPlotDistance() * (iMaxDistance - ((iTotalDistance / iCount) - iMinDistance))) / iMaxDistance);
+		return ((GC.getMapINLINE().maxPlotDistance() * (iMaxDistance - ((iTotalDistance / iCount) - iMinDistance))) / std::max(1, iMaxDistance));
 	}
 
 	return 0;

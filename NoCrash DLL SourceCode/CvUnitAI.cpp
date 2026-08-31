@@ -1317,13 +1317,23 @@ int CvUnitAI::AI_attackOdds(const CvPlot* pPlot, bool bPotentialEnemy) const
 	FAssert((iOurStrength + iTheirStrength) > 0);
 	FAssert((iOurFirepower + iTheirFirepower) > 0);
 
+	// Bugfix: as in getCombatOdds, the asserts above are compiled out and this divides
+	// by a sum that can be zero. This function returns a percentage, so an even fight is
+	// 50 rather than 500.
+	if ((iOurStrength + iTheirStrength) <= 0)
+	{
+		return 50;
+	}
+
 	iBaseOdds = (100 * iOurStrength) / (iOurStrength + iTheirStrength);
 	if (iBaseOdds == 0)
 	{
 		return 1;
 	}
 
-	iStrengthFactor = ((iOurFirepower + iTheirFirepower + 1) / 2);
+	// Bugfix: floored, because iStrengthFactor is the only thing keeping the damage
+	// divisions below off zero and (0 + 0 + 1) / 2 is 0 by integer division.
+	iStrengthFactor = std::max(1, ((iOurFirepower + iTheirFirepower + 1) / 2));
 
 	// UncutDragon
 	// original
@@ -1373,7 +1383,10 @@ int CvUnitAI::AI_attackOdds(const CvPlot* pPlot, bool bPotentialEnemy) const
 		iOurStrength *= (1 - iRoundsDiff);
 	}
 
-	int iOdds = 100 * iOurStrength / (iOurStrength + iTheirStrength);
+	// Bugfix: floored denominator. iOurStrength is scaled by (1 - iRoundsDiff) just
+	// above, which can drive it to zero or below, so the sum is not safe even when the
+	// strengths entering this function were not zero.
+	int iOdds = 100 * iOurStrength / std::max(1, (iOurStrength + iTheirStrength));
 	iOdds += (100 - iOdds) * combatWithdrawalProbability(pDefender) / 100;
 	iOdds += GET_PLAYER(getOwnerINLINE()).AI_getAttackOddsChange();
 

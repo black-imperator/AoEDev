@@ -3317,8 +3317,12 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 
 				int iDistanceToCapital = plotDistance(iCapitalX, iCapitalY, iX, iY);
 
+				// Bugfix: the assert is compiled out in release, and the maximum really can
+				// be zero -- a player whose only city IS the capital measures a distance of
+				// zero to it. Dividing by the floored value leaves the term at its maximum,
+				// which is the right answer when there is no spread to scale against.
 				FAssert(iMaxDistanceFromCapital > 0);
-				iValue *= 100 + (((bAdvancedStart ? 80 : 50) * std::max(0, (iMaxDistanceFromCapital - iDistance))) / iMaxDistanceFromCapital);
+				iValue *= 100 + (((bAdvancedStart ? 80 : 50) * std::max(0, (iMaxDistanceFromCapital - iDistance))) / std::max(1, iMaxDistanceFromCapital));
 				iValue /= 100;
 			}
 		}
