@@ -468,7 +468,18 @@ bool CvSaveManifest::readAndCheck(FDataStreamBase* pStream)
 		return false;
 	}
 
-	std::map<std::string, std::vector<std::string> > saved;
+	// The manifest is compared as it is read, one content type at a time, rather than
+	// being loaded into a map first.
+	//
+	// The first version built a std::map<std::string, std::vector<std::string> > of
+	// EVERY content name in the save -- around ten thousand short-lived std::strings --
+	// and then a second full copy per type to compare against. That ran on every load
+	// including the overwhelmingly common one where nothing has changed, and it ran
+	// during deserialisation of a large save, when the heap is already under pressure.
+	// Streaming keeps the peak at a single content type's worth of names, freed before
+	// the next type is read, and touches nothing at all for a type that matches.
+	int iDiffering = 0;
+	bool bHeaderWritten = false;
 
 	for (int iType = 0; iType < iNumTypes; iType++)
 	{
@@ -484,72 +495,95 @@ bool CvSaveManifest::readAndCheck(FDataStreamBase* pStream)
 			return false;
 		}
 
-		std::vector<std::string>& kNames = saved[szTypeName];
-		kNames.reserve(iCount);
+		// Which of our content types is this? Names are stable strings, so a linear
+		// scan over ~113 entries once per type is not worth indexing.
+		int iOurType = -1;
+		for (int i = 0; i < NUM_MANIFEST_TYPES; i++)
+		{
+			if (szTypeName == MANIFEST_TYPES[i].szTypeName)
+			{
+				iOurType = i;
+				break;
+			}
+		}
 
+		if (iOurType < 0)
+		{
+			// A content type this build has never heard of: the save comes from a newer
+			// build. Its names still have to be CONSUMED or the stream desyncs.
+			for (int i = 0; i < iCount; i++)
+			{
+				std::string szThrowaway;
+				pStream->ReadString(szThrowaway);
+			}
+
+			if (!bHeaderWritten)
+			{
+				logManifest("[MANIFEST] ----------------------------------------------------------------");
+				logManifest("[MANIFEST] this save was written with different content than this build has");
+				bHeaderWritten = true;
+			}
+			iDiffering++;
+			logManifestf("[MANIFEST] %-22s is in the save but unknown to this build (save is newer)", szTypeName.c_str(), 0, 0);
+			continue;
+		}
+
+		const ManifestType& kType = MANIFEST_TYPES[iOurType];
+		const int iBuildCount = kType.pfnCount();
+
+		// Read the save's names for this type, comparing against ours as we go. The
+		// names are kept only until we know whether this type moved; for a type that
+		// matches they are released immediately and nothing else is allocated.
+		std::vector<std::string> kSave;
+		kSave.reserve(iCount);
+
+		bool bSameOrder = (iCount == iBuildCount);
 		for (int i = 0; i < iCount; i++)
 		{
 			std::string szName;
 			pStream->ReadString(szName);
-			kNames.push_back(szName);
+
+			if (bSameOrder)
+			{
+				const char* szOurs = kType.pfnName(i);
+				if (szOurs == NULL || szName != szOurs)
+				{
+					bSameOrder = false;
+				}
+			}
+
+			kSave.push_back(szName);
 		}
-	}
-
-	// -----------------------------------------------------------------------
-	// Compare against what this build has loaded.
-	// -----------------------------------------------------------------------
-	int iDiffering = 0;
-	bool bHeaderWritten = false;
-
-	for (int iType = 0; iType < NUM_MANIFEST_TYPES; iType++)
-	{
-		const ManifestType& kType = MANIFEST_TYPES[iType];
-		const std::map<std::string, std::vector<std::string> >::const_iterator it =
-			saved.find(std::string(kType.szTypeName));
-
-		const std::vector<std::string> kBuild = currentNames(kType);
-
-		if (it == saved.end())
-		{
-			// This build knows a content type the save never recorded -- the save
-			// predates it. Leaving the saved width unknown makes reads of this type
-			// use the current count, which is what the old code always did.
-			continue;
-		}
-
-		const std::vector<std::string>& kSave = it->second;
 
 		// Remember the width the save was written at, so arrays of this type are read
 		// at that width instead of at ours. This is the half that stops the desync.
-		g_iSavedCount[iType] = (int)kSave.size();
+		g_iSavedCount[iOurType] = iCount;
 
-		if (kSave == kBuild)
+		if (bSameOrder)
 		{
-			// Identical content: no remap table, and readArray takes its fast path.
-			continue;
+			continue;	// identical content: no remap table, readArray takes its fast path
 		}
 
-		// Build old->new by name. Entries this build no longer has map to -1 and are
-		// dropped on read; entries it has gained keep whatever reset() left in them.
-		// This is the half that stops stored indices pointing at the wrong content.
+		// This type moved. Build old->new by name; entries this build no longer has map
+		// to -1 and are dropped on read, and entries it has gained keep whatever reset()
+		// left in them. This is the half that stops stored indices pointing at the wrong
+		// content.
+		std::map<std::string, int> kWhereNow;
+		for (int i = 0; i < iBuildCount; i++)
 		{
-			std::map<std::string, int> kWhereNow;
-			for (int i = 0; i < (int)kBuild.size(); i++)
-			{
-				kWhereNow[kBuild[i]] = i;
-			}
-
-			std::vector<int>& kRemap = g_aiRemap[iType];
-			kRemap.resize(kSave.size());
-
-			for (int i = 0; i < (int)kSave.size(); i++)
-			{
-				const std::map<std::string, int>::const_iterator itFound =
-					kWhereNow.find(kSave[i]);
-				kRemap[i] = (itFound != kWhereNow.end()) ? itFound->second : -1;
-			}
+			const char* szOurs = kType.pfnName(i);
+			kWhereNow[std::string(szOurs != NULL ? szOurs : "")] = i;
 		}
 
+		std::vector<int>& kRemap = g_aiRemap[iOurType];
+		kRemap.resize(iCount);
+		for (int i = 0; i < iCount; i++)
+		{
+			const std::map<std::string, int>::const_iterator itFound = kWhereNow.find(kSave[i]);
+			kRemap[i] = (itFound != kWhereNow.end()) ? itFound->second : -1;
+		}
+
+		// -------- report it --------
 		if (!bHeaderWritten)
 		{
 			logManifest("[MANIFEST] ----------------------------------------------------------------");
@@ -558,9 +592,16 @@ bool CvSaveManifest::readAndCheck(FDataStreamBase* pStream)
 		}
 		iDiffering++;
 
-		logManifestf("[MANIFEST] %-22s save %6d   build %6d", kType.szTypeName, (int)kSave.size(), (int)kBuild.size());
+		logManifestf("[MANIFEST] %-22s save %6d   build %6d", kType.szTypeName, iCount, iBuildCount);
 
-		const std::set<std::string> kSaveSet(kSave.begin(), kSave.end());
+		std::set<std::string> kSaveSet(kSave.begin(), kSave.end());
+		std::vector<std::string> kBuild;
+		kBuild.reserve(iBuildCount);
+		for (int i = 0; i < iBuildCount; i++)
+		{
+			const char* szOurs = kType.pfnName(i);
+			kBuild.push_back(std::string(szOurs != NULL ? szOurs : ""));
+		}
 		const std::set<std::string> kBuildSet(kBuild.begin(), kBuild.end());
 
 		const std::string szOnlyInBuild = diffNames(kBuild, kSaveSet);
@@ -572,17 +613,17 @@ bool CvSaveManifest::readAndCheck(FDataStreamBase* pStream)
 		}
 		if (!szOnlyInSave.empty())
 		{
-			// The line that usually matters: named content the player is missing,
-			// which in practice means a module that is turned off.
+			// The line that usually matters: named content the player is missing, which
+			// in practice means a module that is turned off.
 			logManifestf("[MANIFEST]   in save, not in build: %s", szOnlyInSave.c_str(), 0, 0);
 		}
 
 		if (szOnlyInBuild.empty() && szOnlyInSave.empty())
 		{
-			// Same names, different order. Counts match, so nothing desyncs -- but
-			// every stored ID of this type now points at the wrong entry, which is
-			// the failure mode where content silently loads as something else.
-			for (int i = 0; i < (int)kSave.size() && i < (int)kBuild.size(); i++)
+			// Same names, different order. Counts match, so nothing desyncs -- but every
+			// stored ID of this type now points at the wrong entry, which is the failure
+			// mode where content silently loads as something else.
+			for (int i = 0; i < iCount && i < iBuildCount; i++)
 			{
 				if (kSave[i] != kBuild[i])
 				{
@@ -595,34 +636,6 @@ bool CvSaveManifest::readAndCheck(FDataStreamBase* pStream)
 					break;
 				}
 			}
-		}
-	}
-
-	// Content types the save recorded that this build has never heard of: the save
-	// comes from a newer build than this one.
-	for (std::map<std::string, std::vector<std::string> >::const_iterator it = saved.begin();
-		it != saved.end(); ++it)
-	{
-		bool bKnown = false;
-		for (int iType = 0; iType < NUM_MANIFEST_TYPES; iType++)
-		{
-			if (it->first == MANIFEST_TYPES[iType].szTypeName)
-			{
-				bKnown = true;
-				break;
-			}
-		}
-
-		if (!bKnown)
-		{
-			if (!bHeaderWritten)
-			{
-				logManifest("[MANIFEST] ----------------------------------------------------------------");
-				logManifest("[MANIFEST] this save was written with different content than this build has");
-				bHeaderWritten = true;
-			}
-			iDiffering++;
-			logManifestf("[MANIFEST] %-22s is in the save but unknown to this build (save is newer)", it->first.c_str(), 0, 0);
 		}
 	}
 
