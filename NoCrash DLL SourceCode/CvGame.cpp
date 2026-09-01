@@ -11,7 +11,6 @@
 #include "CvTeamAI.h"
 #include "CvGlobals.h"
 #include "CvInitCore.h"
-#include "CvSyncLog.h"
 #include "CvMapGenerator.h"
 #include "CvArtFileMgr.h"
 #include "CvDiploParameters.h"
@@ -21,6 +20,7 @@
 #include "CvPopupInfo.h"
 #include "FProfiler.h"
 #include "CvReplayInfo.h"
+#include "CvSyncLog.h"
 #include "CvGameTextMgr.h"
 /*************************************************************************************************/
 /**	Xienwolf Tweak							02/01/09											**/
