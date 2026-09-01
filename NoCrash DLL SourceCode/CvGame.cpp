@@ -20,6 +20,7 @@
 #include "CvPopupInfo.h"
 #include "FProfiler.h"
 #include "CvReplayInfo.h"
+#include "CvSyncLog.h"
 #include "CvGameTextMgr.h"
 /*************************************************************************************************/
 /**	Xienwolf Tweak							02/01/09											**/
@@ -6687,6 +6688,12 @@ void CvGame::doTurn()
 
 	// END OF TURN
 	CvEventReporter::getInstance().beginGameTurn( getGameTurn() );
+
+	// Record the state this turn STARTS from, before anything processes it. If two
+	// clients diverge during turn N, it is turn N+1's lines that differ -- which dates
+	// the divergence to turn N's processing rather than leaving it unbounded. Off
+	// unless SYNC_LOG is set; see CvSyncLog.h.
+	CvSyncLog::logTurn();
 
 	doUpdateCacheOnTurn();
 	setTurnSliceSinceBeginning(0);
