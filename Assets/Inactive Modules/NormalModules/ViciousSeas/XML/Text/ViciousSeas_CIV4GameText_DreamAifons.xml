@@ -349,6 +349,14 @@ In the open ocean, the Pearlstone Communes and Coral Fortresses can be built for
 		<Spanish>Dreams</Spanish>
 	</TEXT>
 	<TEXT> 
+		<Tag>TXT_KEY_TRAIT_DREAM_SHORT</Tag>
+		<English>Dreams</English>
+		<French>Dreams</French>
+		<German>Dreams</German>
+		<Italian>Dreams</Italian>
+		<Spanish>Dreams</Spanish>
+	</TEXT>
+	<TEXT> 
 		<Tag>TXT_KEY_TRAITCLASS_DREAM</Tag>
 		<English>Dreams</English>
 		<French>Dreams</French>

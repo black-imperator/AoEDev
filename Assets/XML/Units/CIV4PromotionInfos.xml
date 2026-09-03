@@ -27960,7 +27960,6 @@
 				</UnitCombat>
 			</UnitCombats>
 			<Button>Art/Interface/Buttons/Promotions/Civs/Mekara/Militia.dds</Button>
-			<iPromotionDuration>10</iPromotionDuration>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Grigori fort commander  Influence Middle -->
 			<Type>PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE2</Type>
@@ -28008,7 +28007,6 @@
 				</UnitCombat>
 			</UnitCombats>
 			<Button>Art/Interface/Buttons/Promotions/Civs/Mekara/Militia.dds</Button>
-			<iPromotionDuration>10</iPromotionDuration>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Grigori fort commander  Influence Late -->
 			<Type>PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE3</Type>
@@ -28058,7 +28056,6 @@
 				</UnitCombat>
 			</UnitCombats>
 			<Button>Art/Interface/Buttons/Promotions/Civs/Mekara/Militia.dds</Button>
-			<iPromotionDuration>10</iPromotionDuration>
 		</PromotionInfo>
 <!--	<PromotionInfo>		<!{1}** Grigori Supplies Recieved   **{1}>
 			<Type>PROMOTION_GRIGORI_SUPPLY_RECIEVED</Type>

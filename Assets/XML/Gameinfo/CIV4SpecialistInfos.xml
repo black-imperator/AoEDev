@@ -213,13 +213,13 @@
 			<iGreatPeopleRateChange>3</iGreatPeopleRateChange>
 			<Yields>
 				<iYield>0</iYield>
-				<iYield>1</iYield>
+				<iYield>2</iYield>
 				<iYield>0</iYield>
 			</Yields>
 			<iCrime>3</iCrime>
 			<Commerces>
 				<iCommerce>0</iCommerce>
-				<iCommerce>1</iCommerce>
+				<iCommerce>0</iCommerce>
 				<iCommerce>1</iCommerce>
 			</Commerces>
 			<SpecialistClassYieldChanges>
@@ -252,11 +252,17 @@
 			<bVisible>1</bVisible>
 			<GreatPeopleUnitClass>UNITCLASS_PROPHET</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>3</iGreatPeopleRateChange>
+			<iHealth>2</iHealth>
 			<Yields>
 				<iYield>0</iYield>
 				<iYield>0</iYield>
 				<iYield>-2</iYield>
 			</Yields>
+			<Commerces>
+				<iCommerce>0</iCommerce>
+				<iCommerce>1</iCommerce>
+				<iCommerce>0</iCommerce>
+			</Commerces>
 			<iCityDefense>5</iCityDefense>
 			<TrainXPCaps>
 				<TrainXPCap>
@@ -391,6 +397,12 @@
 			<Texture>Art/Interface/Buttons/Units/Inquisitor Grigori.dds</Texture>
 			<GreatPeopleUnitClass>UNITCLASS_PROPHET</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
+			<iHealth>4</iHealth>
+			<Commerces>
+				<iCommerce>0</iCommerce>
+				<iCommerce>2</iCommerce>
+				<iCommerce>0</iCommerce>
+			</Commerces>
 			<iCityDefense>15</iCityDefense>
 			<TrainXPCaps>
 				<TrainXPCap>

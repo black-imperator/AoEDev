@@ -1637,7 +1637,7 @@
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>0</iConquestProb>
-			<iGreatPeopleRateModifier>25</iGreatPeopleRateModifier>
+			<!--<iGreatPeopleRateModifier>25</iGreatPeopleRateModifier>-->
 			<iAsset>2</iAsset>
 			<iPower>1</iPower>
 			<fVisibilityPriority>1</fVisibilityPriority>
@@ -5670,7 +5670,7 @@
 			<iHurryCostModifier>50</iHurryCostModifier>
 			<iConquestProb>0</iConquestProb>
 			<iCitiesPrereq>4</iCitiesPrereq>
-			<iGreatPeopleRateModifier>15</iGreatPeopleRateModifier>
+			<!--<iGreatPeopleRateModifier>15</iGreatPeopleRateModifier>-->
 			<iHappiness>1</iHappiness>
 			<fVisibilityPriority>10000</fVisibilityPriority>
 			<YieldChanges>
@@ -7326,6 +7326,8 @@
 					<iProductionTrait>100</iProductionTrait>
 				</ProductionTrait>
 			</ProductionTraits>
+			<GreatPeopleUnitClass>UNITCLASS_ADVENTURER</GreatPeopleUnitClass>
+			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bCenterInCity>1</bCenterInCity>
 			<iAIWeight>20</iAIWeight>
 			<iCost>60</iCost>
@@ -16427,7 +16429,7 @@
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<iGreatPeopleRateModifier>10</iGreatPeopleRateModifier>
+			<!--<iGreatPeopleRateModifier>10</iGreatPeopleRateModifier>-->
 			<iMaintenanceModifier>-5</iMaintenanceModifier>
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>1</fVisibilityPriority>
@@ -16497,7 +16499,7 @@
 			<Help>TXT_KEY_BUILDING_MEMORIAL_REFUGEE_HELP</Help>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MEMORIAL_REFUGEE</ArtDefineTag>
-			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
+			<PrereqTech>TECH_PRIESTHOOD</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
 			<iHurryCostModifier>50</iHurryCostModifier>
 			<iConquestProb>0</iConquestProb>
