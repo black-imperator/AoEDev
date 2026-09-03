@@ -797,5 +797,32 @@
 			<Button>Art/Interface/Buttons/WorldBuilder/bleedinggodwine.dds</Button>
 			<FontButtonIndex>127</FontButtonIndex>
 		</BonusArtInfo>
+		<BonusArtInfo>
+			<Type>ART_DEF_BONUS_WOOD_OAK</Type>
+			<fScale>0.7</fScale>
+			<fInterfaceScale>2.0</fInterfaceScale>
+			<NIF>Art/Terrain/Resources/Timber/Oak.nif</NIF>
+			<KFM>Art/Terrain/Resources/Timber/olive_press.kfm</KFM>
+			<Button>Art/Interface/Buttons/WorldBuilder/WoodOak.dds</Button>
+			<FontButtonIndex>2</FontButtonIndex>
+		</BonusArtInfo>
+		<BonusArtInfo>
+			<Type>ART_DEF_BONUS_WOOD_YEW</Type>
+			<fScale>0.7</fScale>
+			<fInterfaceScale>2.0</fInterfaceScale>
+			<NIF>Art/Terrain/Resources/Timber/Yew.nif</NIF>
+			<KFM>Art/Terrain/Resources/Timber/olive_press.kfm</KFM>
+			<Button>Art/Interface/Buttons/WorldBuilder/WoodYew.dds</Button>
+			<FontButtonIndex>4</FontButtonIndex>
+		</BonusArtInfo>
+		<BonusArtInfo>
+			<Type>ART_DEF_BONUS_WOOD_DUSK</Type>
+			<fScale>0.7</fScale>
+			<fInterfaceScale>2.0</fInterfaceScale>
+			<NIF>Art/Terrain/Resources/Timber/Dusk.nif</NIF>
+			<KFM>Art/Terrain/Resources/Timber/olive_press.kfm</KFM>
+			<Button>Art/Interface/Buttons/WorldBuilder/WoodDusk.dds</Button>
+			<FontButtonIndex>7</FontButtonIndex>
+		</BonusArtInfo>
 		</BonusArtInfos>
 </Civ4ArtDefines>

@@ -4562,4 +4562,52 @@ himself.</Spanish>
 		<Italian>Misery and Bad Fortune</Italian>
 		<Spanish>Misery and Bad Fortune</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_OAK_WEAPONS</Tag>
+		<English>Oak Weapons</English>
+		<French>Armes de Chêne</French>
+		<German>Eichewaffen</German>
+		<Italian>Oak Weapons</Italian>
+		<Spanish>Oak Weapons</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_YEW_WEAPONS</Tag>
+		<English>Yew Weapons</English>
+		<French>Armes de If</French>
+		<German>Eibewaffen</German>
+		<Italian>Yew Weapons</Italian>
+		<Spanish>Yew Weapons</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_DUSKWOOD_WEAPONS</Tag>
+		<English>Duskwood Weapons</English>
+		<French>Armes de Crépuscule</French>
+		<German>Dämmerwaldwaffen</German>
+		<Italian>Duskwood Weapons</Italian>
+		<Spanish>Duskwood Weapons</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_OAK_HULL</Tag>
+		<English>Oak Hull</English>
+		<French>Coque de Chêne</French>
+		<German>Eiche-Rumpf</German>
+		<Italian>Oak Hull</Italian>
+		<Spanish>Oak Hull</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_YEW_HULL</Tag>
+		<English>Yew Hull</English>
+		<French>Coque de If</French>
+		<German>Eibe-Rumpf</German>
+		<Italian>Yew Hull</Italian>
+		<Spanish>Yew Hull</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_DUSKWOOD_HULL</Tag>
+		<English>Duskwood Hull</English>
+		<French>Coque de Crépuscule</French>
+		<German>Dämmerwald-Rumpf</German>
+		<Italian>Duskwood Hull</Italian>
+		<Spanish>Duskwood Hull</Spanish>
+	</TEXT>
 </Civ4GameText>

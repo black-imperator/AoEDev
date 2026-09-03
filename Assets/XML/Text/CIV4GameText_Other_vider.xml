@@ -1054,11 +1054,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_AMBUSH1_HELP</Tag>
-		<English>[ICON_BULLET]+1 to Defense strength within Team borders.</English>
-		<French>[ICON_BULLET]+1 en défense, à l'intérieur des frontières de l'équipe.</French>
-		<German>[ICON_BULLET]+1 zur Verteidigungsstärke, wenn innerhalb der Team-Grenzen.</German>
-		<Italian>[ICON_BULLET]+1 to Defense strength within Team borders.</Italian>
-		<Spanish>[ICON_BULLET]+1 to Defense strength within Team borders.</Spanish>
+		<English>[ICON_BULLET]+1 to Attack strength within Team borders.</English>
+		<French>[ICON_BULLET]+1 en attaque, à l'intérieur des frontières de l'équipe.</French>
+		<German>[ICON_BULLET]+1 zur Angriff, wenn innerhalb der Team-Grenzen.</German>
+		<Italian>[ICON_BULLET]+1 to Attack strength within Team borders.</Italian>
+		<Spanish>[ICON_BULLET]+1 to Attack strength within Team borders.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SPELL_ENLIST</Tag>

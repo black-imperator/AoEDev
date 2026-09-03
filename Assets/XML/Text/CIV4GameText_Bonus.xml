@@ -1841,5 +1841,29 @@ This is the power of revelation and spiritual truth. At modest levels it can des
 		<Italian>Common in colder climates, this breed of deer is much hardier than its more temperant counterparts. In the harsh Age of Ice, Arctic Deer were the lifeline of many a scattered tribe fighting for its survival, and were considered a delicacy amongst the savage Doviello. Even in the Age of Rebirth, crafty settlements know how to make the most out of its bounty, aiding in even productive endeavors.</Italian>
 		<Spanish>Common in colder climates, this breed of deer is much hardier than its more temperant counterparts. In the harsh Age of Ice, Arctic Deer were the lifeline of many a scattered tribe fighting for its survival, and were considered a delicacy amongst the savage Doviello. Even in the Age of Rebirth, crafty settlements know how to make the most out of its bounty, aiding in even productive endeavors.</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_OAK</Tag>
+		<English>Oak</English>
+		<French>Oak</French>
+		<German>Oak</German>
+		<Italian>Oak</Italian>
+		<Spanish>Oak</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_YEW</Tag>
+		<English>Yew</English>
+		<French>Yew</French>
+		<German>Yew</German>
+		<Italian>Yew</Italian>
+		<Spanish>Yew</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_DUSKWOOD</Tag>
+		<English>Duskwood</English>
+		<French>Duskwood</French>
+		<German>Duskwood</German>
+		<Italian>Duskwood</Italian>
+		<Spanish>Duskwood</Spanish>
+	</TEXT>
 	
 </Civ4GameText>

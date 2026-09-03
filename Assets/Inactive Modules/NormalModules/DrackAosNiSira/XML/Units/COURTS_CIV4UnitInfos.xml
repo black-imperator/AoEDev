@@ -347,6 +347,7 @@
 					<iAffinity>1</iAffinity>
 				</BonusAffinity>
 			</BonusAffinities>
+			<iWeaponTierMax>2</iWeaponTierMax>
 		</UnitInfo>
 		<UnitInfo>			<!-- Sandfae -->
 			<Class>UNITCLASS_SCOUT</Class>

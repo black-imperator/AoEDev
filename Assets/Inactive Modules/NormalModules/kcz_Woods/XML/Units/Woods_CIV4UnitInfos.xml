@@ -164,6 +164,7 @@
 			</FreePromotions>
 			<PrereqBuildingClass>BUILDINGCLASS_PALACE</PrereqBuildingClass>
 			<iTier>2</iTier>
+			<iWeaponTierMax>2</iWeaponTierMax>
 		</UnitInfo>
 		<UnitInfo>        <!-- DRYAID -->           <!-- ARCANE UNITS -->
 			<Class>UNITCLASS_ADEPT</Class>
@@ -938,6 +939,7 @@
 				</FreePromotion>
 			</FreePromotions>
 			<iTier>4</iTier>
+			<iWeaponTierMax>3</iWeaponTierMax>
 		</UnitInfo>
 		<UnitInfo>        <!-- Forest Vanguard -->
 			<Class>UNITCLASS_WAR_CHARIOT</Class>
@@ -1241,6 +1243,7 @@
 			</UnitMeshGroups>
 			<iTier>2</iTier>
 			<iPowerMult>3</iPowerMult>
+			<iWeaponTierMax>3</iWeaponTierMax>
 		</UnitInfo>
 		<UnitInfo>        <!-- Queen of the Line -->
 			<Class>UNITCLASS_QUEEN_OF_THE_LINE</Class>
@@ -1307,6 +1310,7 @@
 			</BonusAffinities>
 			<iTier>4</iTier>
 			<iPowerMult>3</iPowerMult>
+			<iWeaponTierMax>3</iWeaponTierMax>
 		</UnitInfo>
 		<UnitInfo>        <!-- Naiad -->
 			<Class>UNITCLASS_WORKBOAT</Class>
