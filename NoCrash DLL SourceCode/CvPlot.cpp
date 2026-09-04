@@ -10320,14 +10320,27 @@ void CvPlot::updateFeatureSymbol(bool bForce)
 /*************************************************************************************************/
 	if (getPlotEffectType() != NO_PLOT_EFFECT)
 	{
-		eFeature = (FeatureTypes)GC.getPlotEffectInfo(getPlotEffectType()).getDefaultFeatureGraphics();
-	//	if (eFeature != NO_FEATURE)
-	//	{
-	//		eFeature = (FeatureTypes)GC.getPlotEffectInfo(getPlotEffectType()).getFeatureGraphics(eFeature);
-		CvString szError;
-		szError.Format("changing feature");
-		gDLL->logMsg("featuregraphics.log", szError);
-	//	}
+		// A plot effect draws its own feature art in place of whatever the plot has.
+		// Only when it actually specifies some: overwriting eFeature with NO_FEATURE
+		// reaches the test below and destroys the plot's feature symbol, so an effect
+		// with no art of its own would blank the forest or jungle underneath it rather
+		// than leaving it alone. Every plot effect currently ships DefaultFeatureGraphics,
+		// so this guard is for the next one that does not.
+		const FeatureTypes eEffectFeature =
+			(FeatureTypes)GC.getPlotEffectInfo(getPlotEffectType()).getDefaultFeatureGraphics();
+
+		if (eEffectFeature != NO_FEATURE)
+		{
+			eFeature = eEffectFeature;
+		}
+
+		// Note: CvPlotEffectInfo also carries a per-feature FeatureGraphics table, meant
+		// to let an effect vary its art with the feature underneath. The only reference
+		// to getFeatureGraphics() in the DLL was commented out here alongside a
+		// debugging logMsg, which was left live and wrote a constant "changing feature"
+		// line to featuregraphics.log for every affected plot on every tile art rebuild.
+		// The log call is gone. Re-enabling the per-feature lookup is a rendering change
+		// rather than a fix, so it stays disabled and recorded here instead of guessed at.
 	}
 
 
