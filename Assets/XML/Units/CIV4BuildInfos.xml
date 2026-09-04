@@ -1200,7 +1200,7 @@
 			<Type>BUILD_REMOVE_FOREST</Type>
 			<Description>TXT_KEY_BUILD_REMOVE_FOREST</Description>
 			<Help/>
-			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
+			<PrereqTech>TECH_ARCHERY</PrereqTech>
 			<iTime>0</iTime>
 			<iCost>0</iCost>
 			<bKill>0</bKill>

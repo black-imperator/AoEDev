@@ -824,5 +824,50 @@
 			<Button>Art/Interface/Buttons/WorldBuilder/WoodDusk.dds</Button>
 			<FontButtonIndex>7</FontButtonIndex>
 		</BonusArtInfo>
-		</BonusArtInfos>
+		<BonusArtInfo>
+			<Type>ART_DEF_BONUS_EFFLUVIUM</Type>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/effects/cities_smoking/fx_cities_smoking_01.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/WorldBuilder/Effluvium.dds</Button>
+			<FontButtonIndex>7</FontButtonIndex>
+		</BonusArtInfo>
+		<BonusArtInfo>
+			<Type>ART_DEF_BONUS_SERAPHIM_GOLD</Type>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Terrain/Resources/SeraphimGold/SeraphimGold.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/WorldBuilder/SeraphimGold.dds</Button>
+			<FontButtonIndex>7</FontButtonIndex>
+		</BonusArtInfo>
+		<BonusArtInfo>
+			<Type>ART_DEF_BONUS_DAGIAN_BRONZE</Type>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/effects/cities_smoking/fx_cities_smoking_01.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/WorldBuilder/Dagian.dds</Button>
+			<FontButtonIndex>7</FontButtonIndex>
+		</BonusArtInfo>
+		<BonusArtInfo>
+			<Type>ART_DEF_BONUS_CARCEREM</Type>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Terrain/Resources/Carcerem/Carcerem.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/WorldBuilder/Carcerem.dds</Button>
+			<FontButtonIndex>7</FontButtonIndex>
+		</BonusArtInfo>
+		<BonusArtInfo>
+			<Type>ART_DEF_BONUS_LIVING_IVORY</Type>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/effects/cities_smoking/fx_cities_smoking_01.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/WorldBuilder/LivingIvory.dds</Button>
+			<FontButtonIndex>7</FontButtonIndex>
+		</BonusArtInfo>
+	</BonusArtInfos>
 </Civ4ArtDefines>
