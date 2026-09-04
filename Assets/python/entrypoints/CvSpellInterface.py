@@ -1939,16 +1939,47 @@ def spellForTheHorde(caster):
 	iPromotionHorde = getInfoType('PROMOTION_FOR_THE_HORDE')
 	iFrostling = getInfoType('PROMOTION_FROSTLING')
 
-	py = PyPlayer(gc.getORC_PLAYER())
-	for pUnit in py.getUnitList():                                                  # teleport everyone except:
-		 if not pUnit.isHasPromotion(iHero):                                        # heroes
-			if not pUnit.isHasPromotion(iFrostling):                                # frostlings
-				if not (pUnit.getImmobileTimer() > 0):                              # immobile units
-					if not pUnit.isLeashed():                                       # leashed units
-						if not pUnit.isHasPromotion(Effect["Mana Guardian"]):       # Mana Guardians
-							newUnit = pPlayer.initUnit(pUnit.getUnitType(), caster.getX(), caster.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-							newUnit.convert(pUnit)
-							newUnit.setHasPromotion(iPromotionHorde, True)
+	# The orc units are collected by ID rather than kept as handles.
+	#
+	# convert() kills the unit it copies from, which releases that unit's slot in the
+	# orc player's array. getUnitList() returns CyUnit wrappers captured before any of
+	# that happened, so from the first conversion onwards the remaining entries can
+	# refer to units that no longer exist. Touching one of those throws out of the DLL
+	# as a type boost::python cannot name, which surfaces as
+	#
+	#     RuntimeError: unidentifiable C++ exception
+	#
+	# at whichever line happened to touch the dead handle. Same failure and same cause
+	# as spellWonder. An ID stays meaningful whether or not the unit is still alive, so
+	# it is re-fetched and checked before each use.
+	iOrcPlayer = gc.getORC_PLAYER()
+	pOrcPlayer = gc.getPlayer(iOrcPlayer)
+
+	aiUnitIDs = []
+	for pUnit in PyPlayer(iOrcPlayer).getUnitList():
+		aiUnitIDs.append(pUnit.getID())
+
+	for iUnitID in aiUnitIDs:
+		pUnit = pOrcPlayer.getUnit(iUnitID)
+		if pUnit is None or pUnit.isNone():                       # already converted
+			continue
+		if pUnit.isHasPromotion(iHero):                           # heroes
+			continue
+		if pUnit.isHasPromotion(iFrostling):                      # frostlings
+			continue
+		if pUnit.getImmobileTimer() > 0:                          # immobile units
+			continue
+		if pUnit.isLeashed():                                     # leashed units
+			continue
+		if pUnit.isHasPromotion(Effect["Mana Guardian"]):         # Mana Guardians
+			continue
+
+		newUnit = pPlayer.initUnit(pUnit.getUnitType(), caster.getX(), caster.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+		if newUnit is None or newUnit.isNone():
+			# initUnit can decline, and convert() on nothing throws the same way.
+			continue
+		newUnit.convert(pUnit)
+		newUnit.setHasPromotion(iPromotionHorde, True)
 
 def reqGiftsOfNantosuelta(caster):
 	pPlayer = gc.getPlayer(caster.getOwner())
