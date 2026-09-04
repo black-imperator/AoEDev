@@ -4663,9 +4663,10 @@ class CvMainInterface:
 				else:
 					szBuffer += localText.getText("INTERFACE_PANE_UNIT_NAME_HOT_KEY", (pHeadSelectedUnit.getHotKeyNumber(), pHeadSelectedUnit.getName()))
 				if (len(szBuffer) > 50):
-					print "len"
-					print szBuffer
-					print len(szBuffer)
+					# A long unit name is drawn one font size down so it still fits the
+					# panel. Nothing to report: this fires whenever a name happens to be
+					# long, which is often, and it was writing the name and its length to
+					# PythonDbg.log every time the selection changed.
 					szBuffer = "<font=2>" + szBuffer + "</font>"
 
 				screen.setText( "SelectedUnitLabel", "Background", szBuffer, CvUtil.FONT_LEFT_JUSTIFY, xPos, yPos - 2, -0.1, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_UNIT_NAME, -1, -1 )

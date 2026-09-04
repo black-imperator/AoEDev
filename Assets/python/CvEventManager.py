@@ -1722,6 +1722,12 @@ class CvEventManager:
 		iGameTurn = argsList[0]
 		cf	= self.cf
 
+		# One banner per game turn, so everything logged after it can be read as
+		# belonging to that turn. This used to sit in onBeginPlayerTurn, which runs once
+		# per living player, so PythonDbg.log carried the same turn number forty-odd
+		# times in a row and nothing said which player any of it was about.
+		CvUtil.pyPrint("=========== Game turn %d ===========" % (iGameTurn,))
+
 		cs.doTurn()
 		cf.doFFTurn(iGameTurn)
 		if CyGame().getWBMapScript():
@@ -1814,8 +1820,10 @@ class CvEventManager:
 		bAI					= self.Tools.isAI(iPlayer)
 		eCiv				= pPlayer.getCivilizationType()
 
-		print ("GameTurn: "+str(iGameTurn))
-
+		# The turn number is announced once, by onBeginGameTurn. This ran per player, so
+		# it repeated the same number once for every living civ and still never said
+		# which one was acting. Anything logged from here on that matters should name
+		# its own player instead.
 		if bAI and not CyGame().getWBMapScript():			cf.warScript(iPlayer)
 		if pPlayer.isCivic(self.Civics["Crusade"]):			cf.doCrusade(iPlayer)
 		if pPlayer.isCivic(self.Civics["Republic"]):		cf.doRepublic(iPlayer, iGameTurn)
