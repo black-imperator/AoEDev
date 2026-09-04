@@ -106,9 +106,19 @@ class UnitStatisticsUtils:
 		if (sdObjectExists("UnitStats", objUnit) == False):
 			self.setupUnitStats(objUnit)
 
-		print "unit created"
-		UnitID = str(objUnit.getID())+ "X" + str(objUnit.getOwner())
-		print UnitID
+		# One line that says which unit and whose, instead of a bare "unit created"
+		# followed by an "<id>X<owner>" string that had to be decoded by hand.
+		# Deliberately built from objUnit and gc only: this module does not import
+		# CvUtil, and it is loaded early enough that adding an import is not worth the
+		# risk for a log line.
+		iOwner = objUnit.getOwner()
+		pOwner = gc.getPlayer(iOwner)
+		if pOwner.isNone():
+			szOwner = "player %d" % (iOwner,)
+		else:
+			szOwner = "%s (player %d)" % (pOwner.getName(), iOwner)
+		print "unit created: %s id=%d owner=%s at (%d,%d)" % (
+			objUnit.getName(), objUnit.getID(), szOwner, objUnit.getX(), objUnit.getY())
 
 		# Save the new unit's location
 		sdObjectSetVal("UnitStats", objUnit, PLOT, [objUnit.getX(), objUnit.getY()])

@@ -94,12 +94,10 @@ g_bIsScreenActive = -1
 
 def toggleSetNoScreens():
 	global g_bIsScreenActive
-	print "SCREEN OFF"
 	g_bIsScreenActive = -1
 
 def toggleSetScreenOn(argsList):
 	global g_bIsScreenActive
-	print "%s SCREEN TURNED ON" %(argsList[0],)
 	g_bIsScreenActive = argsList[0]
 
 #diplomacyScreen = CvDiplomacy.CvDiplomacy()
