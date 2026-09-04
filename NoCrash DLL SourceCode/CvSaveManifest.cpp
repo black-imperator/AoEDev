@@ -537,13 +537,39 @@ bool CvSaveManifest::readAndCheck(FDataStreamBase* pStream)
 		std::vector<std::string> kSave;
 		kSave.reserve(iCount);
 
+		// Not every content type has names. The art and interface info classes --
+		// RouteModel, RiverModel, SlideShow, SpaceShip, ThroneRoom, UnitFormation,
+		// WorldPicker, Action, Automate -- are defined by position in their XML and
+		// carry no <Type> tag at all, so getType() returns an empty string for every
+		// entry. CIV4RouteModelInfos.xml has 280 entries and not one <Type>.
+		//
+		// Treating "" as a mismatch made all eleven of them report as differing on
+		// every load, with no names to show for it because both sides were empty. It
+		// also built a remap table for each: every key was the empty string, so each
+		// entry overwrote the last and every index ended up mapping to whichever came
+		// last. Nothing reads arrays of these types today, which is the only reason
+		// that did not corrupt anything.
+		//
+		// A type with no names cannot be matched by name, so it is compared by count
+		// and otherwise left alone.
+		bool bNamed = false;
+		for (int i = 0; i < iBuildCount; i++)
+		{
+			const char* szOurs = kType.pfnName(i);
+			if (szOurs != NULL && szOurs[0] != '\0')
+			{
+				bNamed = true;
+				break;
+			}
+		}
+
 		bool bSameOrder = (iCount == iBuildCount);
 		for (int i = 0; i < iCount; i++)
 		{
 			std::string szName;
 			pStream->ReadString(szName);
 
-			if (bSameOrder)
+			if (bSameOrder && bNamed)
 			{
 				const char* szOurs = kType.pfnName(i);
 				if (szOurs == NULL || szName != szOurs)
@@ -552,12 +578,34 @@ bool CvSaveManifest::readAndCheck(FDataStreamBase* pStream)
 				}
 			}
 
-			kSave.push_back(szName);
+			if (bNamed)
+			{
+				kSave.push_back(szName);
+			}
 		}
 
 		// Remember the width the save was written at, so arrays of this type are read
 		// at that width instead of at ours. This is the half that stops the desync.
 		g_iSavedCount[iOurType] = iCount;
+
+		if (!bNamed)
+		{
+			// Reading at the saved width is still correct; a remap is neither possible
+			// nor needed. Only a count change is worth reporting.
+			if (iCount != iBuildCount)
+			{
+				if (!bHeaderWritten)
+				{
+					logManifest("[MANIFEST] ----------------------------------------------------------------");
+					logManifest("[MANIFEST] this save was written with different content than this build has");
+					bHeaderWritten = true;
+				}
+				iDiffering++;
+				logManifestf("[MANIFEST] %-22s save %6d   build %6d  (unnamed, count only)",
+					kType.szTypeName, iCount, iBuildCount);
+			}
+			continue;
+		}
 
 		if (bSameOrder)
 		{
