@@ -571,8 +571,14 @@ bool CvSaveManifest::readAndCheck(FDataStreamBase* pStream)
 
 			if (bSameOrder && bNamed)
 			{
+				// write() emits "" for an entry whose getType() is NULL, so read() has to
+				// treat NULL the same way. Calling a NULL a mismatch made ActionTypes --
+				// 4742 entries, some of them unnamed -- report as differing on every load
+				// while the diff below found nothing to print, because by then both sides
+				// had already become "".
 				const char* szOurs = kType.pfnName(i);
-				if (szOurs == NULL || szName != szOurs)
+				const char* szOursSafe = (szOurs != NULL) ? szOurs : "";
+				if (szName != szOursSafe)
 				{
 					bSameOrder = false;
 				}

@@ -242,6 +242,21 @@ namespace CvSaveManifest
 		const int iNew = currentCount(eType);
 		const int* piRemap = remapTable(eType);
 
+		// iOld comes out of the manifest, so it is only as trustworthy as the manifest.
+		// Asking the stream for more than the save still holds is not a polite failure:
+		// the EXE serves reads from a memory-mapped view of the file and copies straight
+		// off the end of the mapping, killing the process inside the engine with nothing
+		// to say which DLL call caused it. Refuse and leave the destination at its
+		// reset() value instead.
+		if (iOld > 0 && (unsigned int)iOld * sizeof(T) > pStream->GetSizeLeft())
+		{
+			for (int i = 0; i < iNew; i++)
+			{
+				pDest[i] = T();
+			}
+			return;
+		}
+
 		if (piRemap == NULL && iOld == iNew)
 		{
 			// Nothing moved: byte-for-byte what the old code did. This is the path
