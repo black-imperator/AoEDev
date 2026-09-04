@@ -208,6 +208,20 @@ namespace CvSaveManifest
 	// manifest -- so remap state cannot leak from an earlier load in the same session.
 	void beginRead();
 
+	// Logged after the engine's LAST call into the DLL for a load, so the log always
+	// says whether our half of the load finished.
+	//
+	// Without it a save that dies in the engine's own container handling -- a truncated
+	// or mis-framed file, which the DLL cannot see or defend against because the chunk
+	// framing, the header and the footer all belong to the EXE -- is indistinguishable
+	// in the log from a save the DLL itself choked on. That ambiguity cost six
+	// reproduction cycles on PC Turn_0295, which turned out to be a damaged file that
+	// this DLL had read correctly and completely.
+	//
+	// Present: every byte the DLL is responsible for was read; look at the engine.
+	// Absent:  the DLL did not finish; the manifest lines above say how far it got.
+	void endRead();
+
 	// Remap one stored content index from the save's numbering to this build's.
 	// NO_X (-1) and anything outside the save's own range pass through untouched.
 	// Content the build no longer has maps to -1, which is NO_X -- the right answer.
@@ -243,12 +257,16 @@ namespace CvSaveManifest
 		const int* piRemap = remapTable(eType);
 
 		// iOld comes out of the manifest, so it is only as trustworthy as the manifest.
-		// Asking the stream for more than the save still holds is not a polite failure:
-		// the EXE serves reads from a memory-mapped view of the file and copies straight
-		// off the end of the mapping, killing the process inside the engine with nothing
-		// to say which DLL call caused it. Refuse and leave the destination at its
-		// reset() value instead.
-		if (iOld > 0 && (unsigned int)iOld * sizeof(T) > pStream->GetSizeLeft())
+		// No content type has ever had anything like this many entries, so a count past
+		// it means the manifest itself is damaged; leave the destination at its reset()
+		// value rather than issue an absurd read.
+		//
+		// This is a plausibility bound, not a bounds check against the file. The stream
+		// cannot be asked how many bytes remain -- GetSizeLeft() reports INT_MAX here --
+		// so a read that is plausible but still longer than the save is not detectable
+		// from inside the DLL.
+		const int iMaxPlausibleCount = 1000000;
+		if (iOld > iMaxPlausibleCount)
 		{
 			for (int i = 0; i < iNew; i++)
 			{

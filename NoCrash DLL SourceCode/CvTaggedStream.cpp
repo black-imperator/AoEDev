@@ -160,26 +160,15 @@ CvTagReader::CvTagReader(FDataStreamBase* pStream)
 	}
 
 	// The length came out of the stream, so it is only as trustworthy as the stream is.
-	// A record length is checked against what the save ACTUALLY still holds, not just
-	// against a generous cap.
+	// MAX_RECORD_BYTES is a plausibility bound and nothing more: a value past it is not
+	// a record, it is a misparse, and refusing beats trying to allocate it.
 	//
-	// This matters more than it looks. The EXE serves reads out of a memory-mapped view
-	// of the save file, so asking it for more bytes than remain does not fail politely:
-	// it memcpys straight off the end of the mapping and the process dies with a read
-	// access violation inside the engine, nowhere near the DLL that asked. That was
-	// exactly the failure being chased here --
-	//
-	//     Attempt to read from address 5de52000
-	//     esi = 5de51fff   <- last byte of PC Turn_0295.CivBeyondSwordSave
-	//
-	// with the engine trying to copy ~192KB out of a file that had one byte left.
-	//
-	// GetSizeLeft() is the authority. Anything larger means this is not a record, it is
-	// a misparse -- most likely a positional region being read as a tagged one -- and
-	// the right answer is to refuse rather than hand the engine an impossible request.
-	const unsigned int uiAvailable = pStream->GetSizeLeft();
-
-	if (uiLength > MAX_RECORD_BYTES || uiLength > uiAvailable)
+	// It is deliberately NOT checked against GetSizeLeft(). That was tried, and this
+	// stream reports GetSizeLeft() == 0x7FFFFFFF (INT_MAX) and GetPosition() == 0 --
+	// measured, not assumed -- so a comparison against it can never be true and the
+	// check was dead code that read like protection. There is no way to ask this stream
+	// how much of the save is left.
+	if (uiLength > MAX_RECORD_BYTES)
 	{
 		m_bBad = true;
 		return;

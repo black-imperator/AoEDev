@@ -437,6 +437,8 @@ void CvStatistics::read(FDataStreamBase* pStream)
 			getPlayerRecord(i)->read(pStream);
 		}
 	}
+
+	CvSaveManifest::endRead();
 }
 
 void CvStatistics::write(FDataStreamBase* pStream)

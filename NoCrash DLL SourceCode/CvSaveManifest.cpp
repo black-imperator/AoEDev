@@ -715,6 +715,12 @@ bool CvSaveManifest::readAndCheck(FDataStreamBase* pStream)
 // Remap state
 // ---------------------------------------------------------------------------
 
+void CvSaveManifest::endRead()
+{
+	logManifest("[MANIFEST] game data read complete; anything failing after this line is"
+		" outside the DLL's half of the save");
+}
+
 void CvSaveManifest::beginRead()
 {
 	for (int i = 0; i < NUM_CONTENT_TYPES; i++)
