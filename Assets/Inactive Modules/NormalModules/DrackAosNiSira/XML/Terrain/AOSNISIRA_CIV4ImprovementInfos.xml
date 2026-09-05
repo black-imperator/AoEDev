@@ -2233,7 +2233,6 @@
 				<iYield>0</iYield>
 				<iYield>0</iYield>
 			</IrrigatedYieldChange>
-			<ImprovementPillage>IMPROVEMENTCLASS_FARM</ImprovementPillage>
 			<bCarriesIrrigation>1</bCarriesIrrigation>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iPillageGold>10</iPillageGold>
