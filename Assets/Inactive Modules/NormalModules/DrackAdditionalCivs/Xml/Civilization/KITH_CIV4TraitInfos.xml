@@ -14,6 +14,7 @@
 			<ShortDescription>TXT_KEY_TRAIT_DRACKA_KITH_SHORT</ShortDescription>
 			<bSelectable>0</bSelectable>
 			<iDistanceMaintenanceModifier>-25</iDistanceMaintenanceModifier>
+			<iExtraGrowthThreshold>-25</iExtraGrowthThreshold>
 			<FreePromotions>
 				<FreePromotion>
 					<PromotionType>PROMOTION_KITH_MILITIA</PromotionType>

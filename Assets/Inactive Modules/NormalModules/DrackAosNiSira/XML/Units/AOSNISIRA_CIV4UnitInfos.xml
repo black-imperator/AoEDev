@@ -39,7 +39,7 @@
 			<iMoves>2</iMoves>
 			<iCombat>6</iCombat>
 			<iCombatDefense>3</iCombatDefense>
-			<iFirstStrikes>2</iFirstStrikes>
+			<iChanceFirstStrikes>2</iChanceFirstStrikes>
 			<PrereqTech>TECH_TRACKING</PrereqTech>
 			<UnitMeshGroups>
 				<iGroupSize>8</iGroupSize>
@@ -546,19 +546,11 @@
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 				<FreePromotion>
-					<PromotionType>PROMOTION_CHANNELING2</PromotionType>
-					<iNumApplied>1</iNumApplied>
-				</FreePromotion>
-				<FreePromotion>
 					<PromotionType>PROMOTION_DIVINE</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 				<FreePromotion>
 					<PromotionType>PROMOTION_NATURE1</PromotionType>
-					<iNumApplied>1</iNumApplied>
-				</FreePromotion>
-				<FreePromotion>
-					<PromotionType>PROMOTION_NATURE2</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 			</FreePromotions>
@@ -1457,10 +1449,6 @@
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 				<FreePromotion>
-					<PromotionType>PROMOTION_NATURE2</PromotionType>
-					<iNumApplied>1</iNumApplied>
-				</FreePromotion>
-				<FreePromotion>
 					<PromotionType>PROMOTION_CHAOS1</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
@@ -1678,6 +1666,10 @@
 				</FreePromotion>
 				<FreePromotion>
 					<PromotionType>PROMOTION_SECONDARY_COMMANDER</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_SECONDARY_DISCIPLE</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 			</FreePromotions>

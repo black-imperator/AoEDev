@@ -27,6 +27,7 @@
 			<bFemale>0</bFemale>
 			<iSomniumAggressiveness>30</iSomniumAggressiveness>
 			<Alignment>ALIGNMENT_GOOD</Alignment>
+			<iAlignmentModifier>750</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
 			<iEthicalAlignmentModifier>500</iEthicalAlignmentModifier>
 			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
@@ -467,6 +468,7 @@
 			<bFemale>1</bFemale>
 			<iSomniumAggressiveness>30</iSomniumAggressiveness>
 			<Alignment>ALIGNMENT_NEUTRAL</Alignment>
+			<iAlignmentModifier>0</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_CHAOTIC</EthicalAlignment>
 			<iEthicalAlignmentModifier>-500</iEthicalAlignmentModifier>
 			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
@@ -903,6 +905,7 @@
 			<bFemale>1</bFemale>
 			<iSomniumAggressiveness>30</iSomniumAggressiveness>
 			<Alignment>ALIGNMENT_EVIL</Alignment>
+			<iAlignmentModifier>-750</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
 			<iEthicalAlignmentModifier>300</iEthicalAlignmentModifier>
 			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
@@ -1339,6 +1342,7 @@
 			<bFemale>1</bFemale>
 			<iSomniumAggressiveness>30</iSomniumAggressiveness>
 			<Alignment>ALIGNMENT_NEUTRAL</Alignment>
+			<iAlignmentModifier>0</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
 			<iEthicalAlignmentModifier>400</iEthicalAlignmentModifier>
 			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
@@ -1775,6 +1779,7 @@
 			<bFemale>1</bFemale>
 			<iSomniumAggressiveness>30</iSomniumAggressiveness>
 			<Alignment>ALIGNMENT_GOOD</Alignment>
+			<iAlignmentModifier>750</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_NEUTRAL</EthicalAlignment>
 			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
 			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>

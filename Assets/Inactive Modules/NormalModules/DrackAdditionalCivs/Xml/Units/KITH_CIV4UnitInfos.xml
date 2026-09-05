@@ -758,7 +758,8 @@
 			<iCollateralDamage>100</iCollateralDamage>
 			<iCollateralDamageLimit>50</iCollateralDamageLimit>
 			<iCollateralDamageMaxUnits>6</iCollateralDamageMaxUnits>
-			<iCityDefense>400</iCityDefense>
+			<iCityAttack>300</iCityAttack>
+			<iCityDefense>300</iCityDefense>
 			<iBombardRate>35</iBombardRate>
 			<iCultureGarrison>4</iCultureGarrison>
 			<iAsset>6</iAsset>
@@ -866,7 +867,7 @@
 					<iProductionTrait>100</iProductionTrait>
 				</ProductionTrait>
 			</ProductionTraits>
-			<iCost>80</iCost>
+			<iCost>50</iCost>
 			<iAdvancedStartCostIncrease>50</iAdvancedStartCostIncrease>
 			<iMoves>2</iMoves>
 			<iAsset>0</iAsset>

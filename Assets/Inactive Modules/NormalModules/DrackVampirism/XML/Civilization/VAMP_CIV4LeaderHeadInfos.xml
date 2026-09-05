@@ -13,6 +13,7 @@
 			<ArtDefineTag>ART_DEF_LEADER_KIRI_ALEXIS</ArtDefineTag>
 			<LeaderClass>LEADERCLASS_EMERGENT</LeaderClass>
 			<Alignment>ALIGNMENT_EVIL</Alignment>
+			<iAlignmentModifier>-750</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_CHAOTIC</EthicalAlignment>
 			<iEthicalAlignmentModifier>-500</iEthicalAlignmentModifier>
 			<bFemale>1</bFemale>
@@ -453,6 +454,7 @@
 				</Trait>
 			</Traits>
 			<Alignment>ALIGNMENT_EVIL</Alignment>
+			<iAlignmentModifier>-750</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_CHAOTIC</EthicalAlignment>
 			<iEthicalAlignmentModifier>-600</iEthicalAlignmentModifier>
 			<LeaderClass>LEADERCLASS_EMERGENT</LeaderClass>
@@ -1067,6 +1069,7 @@
 			</Flavors>
 			<bFemale>1</bFemale>
 			<Alignment>ALIGNMENT_NEUTRAL</Alignment>
+			<iAlignmentModifier>0</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
 			<iEthicalAlignmentModifier>500</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_FORM_OF_THE_TITAN</FavoriteWonder>
@@ -1441,6 +1444,7 @@
 			</Flavors>
 			<bFemale>1</bFemale>
 			<Alignment>ALIGNMENT_EVIL</Alignment>
+			<iAlignmentModifier>-750</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
 			<iEthicalAlignmentModifier>400</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_FORM_OF_THE_TITAN</FavoriteWonder>

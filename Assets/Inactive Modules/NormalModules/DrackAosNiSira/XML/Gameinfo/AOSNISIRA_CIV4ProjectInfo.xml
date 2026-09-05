@@ -152,7 +152,7 @@
 			<Civilopedia>TXT_KEY_PROJECT_FAIRY_CONVERT_SOULS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_PROJECT_FAIRY_CONVERT_SOULS_STRATEGY</Strategy>
 			<Help>TXT_KEY_PROJECT_FAIRY_CONVERT_SOULS_HELP2</Help>
-			<iCost>50</iCost>
+			<iCost>25</iCost>
 			<Button>Modules\NormalModules\DrackAosNiSira\Art\Ritual\MisrakFairyTransformation.dds</Button>
 			<PrereqCivilizations>
 				<PrereqCivilization>CIVILIZATION_COURTOFMISRAK</PrereqCivilization>
@@ -165,7 +165,7 @@
 			<Civilopedia>TXT_KEY_PROJECT_FAIRY_CONVERT_SOULS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_PROJECT_FAIRY_CONVERT_SOULS_STRATEGY</Strategy>
 			<Help>TXT_KEY_PROJECT_FAIRY_CONVERT_SOULS_HELP3</Help>
-			<iCost>200</iCost>
+			<iCost>100</iCost>
 			<Button>Modules\NormalModules\DrackAosNiSira\Art\Ritual\MisrakFairyTransformation.dds</Button>
 			<PrereqCivilizations>
 				<PrereqCivilization>CIVILIZATION_COURTOFMISRAK</PrereqCivilization>
@@ -178,7 +178,7 @@
 			<Civilopedia>TXT_KEY_PROJECT_FAIRY_CONVERT_ALL_SOULS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_PROJECT_FAIRY_CONVERT_ALL_SOULS_STRATEGY</Strategy>
 			<Help>TXT_KEY_PROJECT_FAIRY_CONVERT_ALL_SOULS_HELP</Help>
-			<iCost>300</iCost>
+			<iCost>150</iCost>
 			<Button>Modules\NormalModules\DrackAosNiSira\Art\Ritual\MisrakFairyAllCities.dds</Button>
 			<PrereqCivilizations>
 				<PrereqCivilization>CIVILIZATION_COURTOFMISRAK</PrereqCivilization>

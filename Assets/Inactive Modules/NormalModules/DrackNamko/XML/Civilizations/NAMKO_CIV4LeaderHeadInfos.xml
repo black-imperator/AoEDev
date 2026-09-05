@@ -13,6 +13,7 @@
 			<ArtDefineTag>ART_DEF_LEADER_NEPHTHARIA</ArtDefineTag>
 			<LeaderClass>LEADERCLASS_HISTORICAL</LeaderClass>
 			<Alignment>ALIGNMENT_GOOD</Alignment>
+			<iAlignmentModifier>750</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
 			<iEthicalAlignmentModifier>500</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_HALL_OF_KINGS</FavoriteWonder>
@@ -388,6 +389,7 @@
 			<ArtDefineTag>ART_DEF_LEADER_THALMETRA</ArtDefineTag>
 			<LeaderClass>LEADERCLASS_IMPORTANT</LeaderClass>
 			<Alignment>ALIGNMENT_EVIL</Alignment>
+			<iAlignmentModifier>-750</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_CHAOTIC</EthicalAlignment>
 			<iEthicalAlignmentModifier>-500</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_MINES_OF_GALDUR</FavoriteWonder>
@@ -759,6 +761,7 @@
 			<ArtDefineTag>ART_DEF_LEADER_SETHARIA</ArtDefineTag>
 			<LeaderClass>LEADERCLASS_HISTORICAL</LeaderClass>
 			<Alignment>ALIGNMENT_NEUTRAL</Alignment>
+			<iAlignmentModifier>0</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
 			<iEthicalAlignmentModifier>500</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_MINES_OF_GALDUR</FavoriteWonder>
@@ -1135,6 +1138,7 @@
 			<LeaderClass>LEADERCLASS_EMERGENT</LeaderClass>
 			<FavoriteCivic>CIVIC_SCHOLARSHIP</FavoriteCivic>
 			<Alignment>ALIGNMENT_EVIL</Alignment>
+			<iAlignmentModifier>-750</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_CHAOTIC</EthicalAlignment>
 			<iEthicalAlignmentModifier>-500</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_MINES_OF_GALDUR</FavoriteWonder>
@@ -1513,6 +1517,7 @@
 				</Trait>
 			</Traits>
 			<Alignment>ALIGNMENT_NEUTRAL</Alignment>
+			<iAlignmentModifier>0</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_NEUTRAL</EthicalAlignment>
 			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
 			<ReligionWeightModifiers>

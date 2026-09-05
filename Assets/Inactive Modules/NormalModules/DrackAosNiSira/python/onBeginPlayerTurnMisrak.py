@@ -73,7 +73,7 @@ def onBeginPlayerTurn(self, argsList):
 			newSouls += 1
 			
 		# Count the number of slave specialists in the city
-		slaveCount = pCity.getSpecialistClassCount(specialistSlave)
+		slaveCount = pCity.getFreeSpecialistClassCount(specialistSlave)
 		### If High Cuddler, Double Souls from Slaves
 		if isPlayerHighCuddler:
 			slaveCount *=2
@@ -89,7 +89,7 @@ def onBeginPlayerTurn(self, argsList):
 	pPlayer.changeCivCounter(newSouls)
 	CyInterface().addMessage(iPlayer, False, 15, CyTranslator().getText("TXT_KEY_FAIRY_On_TURN_NEW_SOULS", (newSouls,)), "", 3, "", ColorTypes(8), -1, -1, True, True)
 	
-	# Automatically increases Cities of AI if they have enough souls to 10 to ensure they are a challenge
+	# Automatically increases Cities of AI if they have enough souls to 5 to ensure they are a challenge
 	if not pPlayer.isHuman():
 		(pCity, iter) = pPlayer.firstCity(False)
 		while(pCity):
@@ -97,7 +97,7 @@ def onBeginPlayerTurn(self, argsList):
 			if(currentSoulsOfPlayer < 100):
 				break
 			currentPopulation = pCity.getPopulation()
-			if(currentPopulation < 10):
+			if(currentPopulation < 5):
 				pCity.changePopulation(1)
 				pPlayer.changeCivCounter(-10)
 

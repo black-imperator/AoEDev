@@ -60,6 +60,11 @@
             <Advisor>ADVISOR_ECONOMY</Advisor>
             <ArtDefineTag>ART_DEF_BUILDING_PALACE_DRACKA_GNOME_HUTS</ArtDefineTag>
             <iCost>-1</iCost>
+			<YieldChanges>
+				<iYield>0</iYield>
+				<iYield>2</iYield>
+				<iYield>0</iYield>
+			</YieldChanges>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iPlotRadius>1</iPlotRadius>
             <iMaintenanceModifier>-40</iMaintenanceModifier>
@@ -103,7 +108,6 @@
                 <iYield>1</iYield> <!-- Gold -->
             </RiverPlotYieldChanges>
             <iCost>60</iCost>
-            <PrereqTech>TECH_AGRICULTURE</PrereqTech>
             <Flavors>
                 <Flavor>
                     <FlavorType>FLAVOR_GROWTH</FlavorType>
@@ -153,7 +157,6 @@
                 <iYield>0</iYield>
             </SeaPlotYieldChanges>
             <iCost>60</iCost>
-            <PrereqTech>TECH_FISHING</PrereqTech>
             <Flavors>
                 <Flavor>
                     <FlavorType>FLAVOR_GROWTH</FlavorType>
@@ -208,7 +211,6 @@
                 </SpecialistClassCounts>
             </SpecialistClassCounts>
             <iCost>60</iCost>
-            <PrereqTech>TECH_EDUCATION</PrereqTech>
             <Flavors>
                 <Flavor>
                     <FlavorType>FLAVOR_MAGIC</FlavorType>
@@ -259,7 +261,6 @@
             </ImprovementFreeSpecialists>
 			<FreePromotion>PROMOTION_HARDY1</FreePromotion>
             <iCost>60</iCost>
-            <PrereqTech>TECH_MINING</PrereqTech>
             <Flavors>
                 <Flavor>
                     <FlavorType>FLAVOR_GROWTH</FlavorType>
@@ -301,7 +302,6 @@
             <iTradeRouteModifier>10</iTradeRouteModifier>
             <iTradeRoutes>2</iTradeRoutes>
             <iCost>60</iCost>
-            <PrereqTech>TECH_TRADE</PrereqTech>
             <Flavors>
                 <Flavor>
                     <FlavorType>FLAVOR_GOLD</FlavorType>
@@ -343,7 +343,6 @@
             <iMilitaryProductionModifier>25</iMilitaryProductionModifier>
             <bOverflowProduction>1</bOverflowProduction>
             <iCost>60</iCost>
-            <PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
             <Flavors>
                 <Flavor>
                     <FlavorType>FLAVOR_MILITARY</FlavorType>

@@ -125,7 +125,8 @@
 				<AudioRunTypeLoop/>
 				<AudioRunTypeEnd/>
 			</AudioRunSounds>
-			<SelectionSound>AS3D_WRAITH_SELECT</SelectionSound>
+			<SelectionSound>AS3D_HUMAN_FIGHTER3_SELECT</SelectionSound>
+            <ActionSound>AS3D_HUMAN_FIGHTER3_TRAIN</ActionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>  <!-- Blutwache -->
 			<Type>ART_DEF_UNIT_TEUHALI_BLUTWACHE</Type>

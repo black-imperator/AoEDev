@@ -34,13 +34,13 @@ def reqMaterializeCity(caster):
 	pPlot = caster.plot()
 	pPlayer = gc.getPlayer(caster.getOwner())
 
-	# Check if Player has enough Souls (Only Counts for Humans)
+	# Check if Player has enough Souls
 	currentSoulsOfPlayer = pPlayer.getCivCounter()
 	if pPlayer.isHuman():
 		if currentSoulsOfPlayer < 50:
 			return False
 	else:
-		if currentSoulsOfPlayer < 25:
+		if currentSoulsOfPlayer < 40:
 			return False
 
 	if pPlot.isOwned() and pPlot.getOwner() != caster.getOwner():
@@ -77,7 +77,7 @@ def reqMaterializeCity(caster):
 	if not pPlayer.isHuman():
 		currentTurn = gc.getGame().getGameTurn()
 		if currentTurn < 100:
-			maxAllowedCities = currentTurn // 15  # Integer division: 1 city per 15 turns
+			maxAllowedCities = currentTurn // 20  # Integer division: 1 city per 20 turns
 			if pPlayer.getNumCities() > maxAllowedCities:
 				return False
 
@@ -93,7 +93,7 @@ def spellMaterializeCity(caster):
 	if pPlayer.isHuman():
 		pPlayer.changeCivCounter(-50)
 	else:
-		pPlayer.changeCivCounter(-25)
+		pPlayer.changeCivCounter(-40)
 
 def reqPlantScrub(caster):
 	pPlot = caster.plot()
