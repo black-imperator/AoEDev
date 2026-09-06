@@ -12,6 +12,9 @@
 #include "CvInfos.h"
 
 #include "CvDLLInterfaceIFaceBase.h"
+#include "CvSaveManifest.h"
+#include "CvTaggedStream.h"
+#include "CvSaveSizeProbe.h"
 
 // Public Functions...
 
@@ -937,6 +940,24 @@ void CvArea::changeNumEvilTiles(int iChange)
 /**	New Tag Defs							END													**/
 /*************************************************************************************************/
 
+// Tag numbers for this class's tagged record. APPEND ONLY: renumbering an existing
+// tag makes every save written before the change decode that field as something
+// else, silently. A retired field leaves its number unused rather than handing it on.
+namespace
+{
+	enum AreaTag
+	{
+		TAG_ID = 1,
+		TAG_NUM_TILES,
+		TAG_NUM_OWNED_TILES,
+		TAG_NUM_RIVER_EDGES,
+		TAG_NUM_UNITS,
+		TAG_NUM_CITIES,
+		TAG_TOTAL_POPULATION,
+		TAG_NUM_STARTING_PLOTS,
+		TAG_WATER,
+	};
+}
 void CvArea::read(FDataStreamBase* pStream)
 {
 	int iI;
@@ -946,17 +967,42 @@ void CvArea::read(FDataStreamBase* pStream)
 
 	uint uiFlag=0;
 	pStream->Read(&uiFlag);	// flags for expansion
-
-	pStream->Read(&m_iID);
-	pStream->Read(&m_iNumTiles);
-	pStream->Read(&m_iNumOwnedTiles);
-	pStream->Read(&m_iNumRiverEdges);
-	pStream->Read(&m_iNumUnits);
-	pStream->Read(&m_iNumCities);
-	pStream->Read(&m_iTotalPopulation);
-	pStream->Read(&m_iNumStartingPlots);
-
-	pStream->Read(&m_bWater);
+	if (uiFlag >= 1)
+	{
+		// Tagged. Order does not matter, an unknown tag is stepped over, and a field
+		// the writer omitted keeps what reset() gave it.
+		CvTagReader kReader(pStream);
+		while (kReader.next())
+		{
+			switch (kReader.tag())
+			{
+			case TAG_ID: m_iID = kReader.asInt(); break;
+			case TAG_NUM_TILES: m_iNumTiles = kReader.asInt(); break;
+			case TAG_NUM_OWNED_TILES: m_iNumOwnedTiles = kReader.asInt(); break;
+			case TAG_NUM_RIVER_EDGES: m_iNumRiverEdges = kReader.asInt(); break;
+			case TAG_NUM_UNITS: m_iNumUnits = kReader.asInt(); break;
+			case TAG_NUM_CITIES: m_iNumCities = kReader.asInt(); break;
+			case TAG_TOTAL_POPULATION: m_iTotalPopulation = kReader.asInt(); break;
+			case TAG_NUM_STARTING_PLOTS: m_iNumStartingPlots = kReader.asInt(); break;
+			case TAG_WATER: m_bWater = kReader.asBool(); break;
+			default: kReader.skip(); break;
+			}
+		}
+	}
+	else
+	{
+		// Positional, exactly as it always was. This branch is the compatibility
+		// shim; it is not new code and must not be edited.
+		pStream->Read(&m_iID);
+		pStream->Read(&m_iNumTiles);
+		pStream->Read(&m_iNumOwnedTiles);
+		pStream->Read(&m_iNumRiverEdges);
+		pStream->Read(&m_iNumUnits);
+		pStream->Read(&m_iNumCities);
+		pStream->Read(&m_iTotalPopulation);
+		pStream->Read(&m_iNumStartingPlots);
+		pStream->Read(&m_bWater);
+	}
 
 	pStream->Read(MAX_PLAYERS, m_aiUnitsPerPlayer);
 	pStream->Read(MAX_PLAYERS, m_aiAnimalsPerPlayer);
@@ -993,8 +1039,8 @@ void CvArea::read(FDataStreamBase* pStream)
 		pStream->Read(NUM_UNITAI_TYPES, m_aaiNumAIUnits[iI]);
 	}
 
-	pStream->Read(GC.getNumBonusInfos(), m_paiNumBonuses);
-	pStream->Read(GC.getNumImprovementInfos(), m_paiNumImprovements);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_paiNumBonuses);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_IMPROVEMENT, m_paiNumImprovements);
 /*************************************************************************************************/
 /**	New Tag Defs	(AreaInfos)				01/05/09								Xienwolf	**/
 /**																								**/
@@ -1009,21 +1055,24 @@ void CvArea::read(FDataStreamBase* pStream)
 
 void CvArea::write(FDataStreamBase* pStream)
 {
+	CvSaveSizeProbe::countObject("CvArea");
 	int iI;
 
-	uint uiFlag=0;
+	uint uiFlag=1;	// 1: tagged fields (CvTaggedStream)
 	pStream->Write(uiFlag);		// flag for expansion
-
-	pStream->Write(m_iID);
-	pStream->Write(m_iNumTiles);
-	pStream->Write(m_iNumOwnedTiles);
-	pStream->Write(m_iNumRiverEdges);
-	pStream->Write(m_iNumUnits);
-	pStream->Write(m_iNumCities);
-	pStream->Write(m_iTotalPopulation);
-	pStream->Write(m_iNumStartingPlots);
-
-	pStream->Write(m_bWater);
+	{
+		CvTagWriter kWriter(pStream, "CvArea");
+		kWriter.write(TAG_ID, m_iID);
+		kWriter.writeIfNonZero(TAG_NUM_TILES, m_iNumTiles);
+		kWriter.writeIfNonZero(TAG_NUM_OWNED_TILES, m_iNumOwnedTiles);
+		kWriter.writeIfNonZero(TAG_NUM_RIVER_EDGES, m_iNumRiverEdges);
+		kWriter.writeIfNonZero(TAG_NUM_UNITS, m_iNumUnits);
+		kWriter.writeIfNonZero(TAG_NUM_CITIES, m_iNumCities);
+		kWriter.writeIfNonZero(TAG_TOTAL_POPULATION, m_iTotalPopulation);
+		kWriter.writeIfNonZero(TAG_NUM_STARTING_PLOTS, m_iNumStartingPlots);
+		kWriter.write(TAG_WATER, m_bWater);
+		kWriter.end();
+	}
 
 	pStream->Write(MAX_PLAYERS, m_aiUnitsPerPlayer);
 	pStream->Write(MAX_PLAYERS, m_aiAnimalsPerPlayer);

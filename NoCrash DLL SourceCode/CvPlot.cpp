@@ -33,6 +33,8 @@
 /* General AI                                                                                   */
 /************************************************************************************************/
 #include "FAStarNode.h"
+#include "CvSaveManifest.h"
+#include "CvSaveSizeProbe.h"
 /************************************************************************************************/
 /* BETTER_BTS_AI_MOD                       END                                                  */
 /************************************************************************************************/
@@ -11627,7 +11629,7 @@ void CvPlot::read(FDataStreamBase* pStream)
 	pStream->Read(&m_ePlotEffectType);
 	pStream->Read(&m_eBonusType);
 	pStream->Read(&m_eImprovementType);
-	pStream->Read(&m_eRouteType);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_ROUTE, &m_eRouteType);
 	pStream->Read(&m_eRiverNSDirection);
 	pStream->Read(&m_eRiverWEDirection);
 
@@ -11659,15 +11661,15 @@ void CvPlot::read(FDataStreamBase* pStream)
 /**	New Tag Defs	(PlotInfos)				12/31/08								Xienwolf	**/
 /**									Read Data from Save Files									**/
 /*************************************************************************************************/
-	pStream->Read(&m_eRealFeatureType);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_FEATURE, &m_eRealFeatureType);
 	pStream->Read(&m_iRealFeatureVariety);
 	pStream->Read(&m_iTempFeatureTimer);
-	pStream->Read(&m_eRealBonusType);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_BONUS, &m_eRealBonusType);
 	pStream->Read(&m_iTempBonusTimer);
 	pStream->Read(&m_iNumLairSpawnsAlive);
 	pStream->Read(&m_bNeedsRebuilding);
 	//ClimateSystem:
-	pStream->Read(&m_eClimate);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_CLIMATE, &m_eClimate);
 	pStream->Read(&m_eNaturalClimate);
 	pStream->Read(&m_iTemperature);
 	pStream->Read(&m_iHumidity);
@@ -11883,6 +11885,7 @@ void CvPlot::read(FDataStreamBase* pStream)
 //
 void CvPlot::write(FDataStreamBase* pStream)
 {
+	CvSaveSizeProbe::countObject("CvPlot");
 	uint iI;
 
 	uint uiFlag=0;

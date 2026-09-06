@@ -21,6 +21,8 @@
 // interface uses
 #include "CvDLLInterfaceIFaceBase.h"
 #include "CvDLLFAStarIFaceBase.h"
+#include "CvSaveSizeProbe.h"
+#include "CvTaggedStream.h"
 
 #define FOUND_RANGE				(7)
 
@@ -28502,31 +28504,67 @@ bool CvUnitAI::AI_allowGroup(const CvUnit* pUnit, UnitAITypes eUnitAI) const
 }
 
 
+// Tag numbers for this class's tagged record. APPEND ONLY: renumbering an existing
+// tag makes every save written before the change decode that field as something
+// else, silently. A retired field leaves its number unused rather than handing it on.
+namespace
+{
+	enum UnitAITag
+	{
+		TAG_BIRTHMARK = 1,
+		TAG_UNIT_AITYPE,
+		TAG_AUTOMATED_ABORT_TURN,
+	};
+}
 void CvUnitAI::read(FDataStreamBase* pStream)
 {
 	CvUnit::read(pStream);
 
 	uint uiFlag=0;
 	pStream->Read(&uiFlag);	// flags for expansion
+	if (uiFlag >= 1)
+	{
+		// Tagged. Order does not matter, an unknown tag is stepped over, and a field
+		// the writer omitted keeps what reset() gave it.
+		CvTagReader kReader(pStream);
+		while (kReader.next())
+		{
+			switch (kReader.tag())
+			{
+			case TAG_BIRTHMARK: m_iBirthmark = kReader.asInt(); break;
+			case TAG_UNIT_AITYPE: m_eUnitAIType = (UnitAITypes)kReader.asInt(); break;
+			case TAG_AUTOMATED_ABORT_TURN: m_iAutomatedAbortTurn = kReader.asInt(); break;
+			default: kReader.skip(); break;
+			}
+		}
+	}
+	else
+	{
+		// Positional, exactly as it always was. This branch is the compatibility
+		// shim; it is not new code and must not be edited.
+		pStream->Read(&m_iBirthmark);
+		pStream->Read((int*)&m_eUnitAIType);
+		pStream->Read(&m_iAutomatedAbortTurn);
+	}
 
-	pStream->Read(&m_iBirthmark);
-
-	pStream->Read((int*)&m_eUnitAIType);
-	pStream->Read(&m_iAutomatedAbortTurn);
 }
 
 
 void CvUnitAI::write(FDataStreamBase* pStream)
 {
+	CvSaveSizeProbe::countObject("CvUnitAI");
 	CvUnit::write(pStream);
 
-	uint uiFlag=0;
+	uint uiFlag=1;	// 1: tagged fields (CvTaggedStream)
 	pStream->Write(uiFlag);		// flag for expansion
+	{
+		CvTagWriter kWriter(pStream);
+		kWriter.write(TAG_BIRTHMARK, m_iBirthmark);
+		kWriter.write(TAG_UNIT_AITYPE, (int)m_eUnitAIType);
+		kWriter.write(TAG_AUTOMATED_ABORT_TURN, m_iAutomatedAbortTurn);
+		kWriter.end();
+	}
 
-	pStream->Write(m_iBirthmark);
-
-	pStream->Write(m_eUnitAIType);
-	pStream->Write(m_iAutomatedAbortTurn);
 }
 
 // Private Functions...

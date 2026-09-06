@@ -11,6 +11,7 @@
 #include "CvTeamAI.h"
 #include "CvGlobals.h"
 #include "CvInitCore.h"
+#include "CvSaveManifest.h"
 #include "CvMapGenerator.h"
 #include "CvArtFileMgr.h"
 #include "CvDiploParameters.h"
@@ -40,6 +41,8 @@
 #include "CvDLLPythonIFaceBase.h"
 
 #include "CvSnarkoProfiler.h"
+#include "CvSaveSizeProbe.h"
+#include "CvTaggedStream.h"
 
 #include <stdarg.h>
 #include <stdio.h>
@@ -8769,6 +8772,36 @@ uint CvGame::getNumReplayMessages() const
 
 // Private Functions...
 
+// Tag numbers for this class's tagged record. APPEND ONLY: renumbering an existing
+// tag makes every save written before the change decode that field as something
+// else, silently. A retired field leaves its number unused rather than handing it on.
+namespace
+{
+	enum GameTag
+	{
+		TAG_ELAPSED_GAME_TURNS = 1,
+		TAG_START_TURN,
+		TAG_START_YEAR,
+		TAG_ESTIMATE_END_TURN,
+		TAG_TURN_SLICE,
+		TAG_CUTOFF_SLICE,
+		TAG_NUM_GAME_TURN_ACTIVE,
+		TAG_NUM_CITIES,
+		TAG_TOTAL_POPULATION,
+		TAG_TRADE_ROUTES,
+		TAG_FREE_TRADE_COUNT,
+		TAG_NO_NUKES_COUNT,
+		TAG_NUKES_EXPLODED,
+		TAG_MAX_POPULATION,
+		TAG_MAX_LAND,
+		TAG_MAX_TECH,
+		TAG_MAX_WONDERS,
+		TAG_INIT_POPULATION,
+		TAG_INIT_LAND,
+		TAG_INIT_TECH,
+		TAG_INIT_WONDERS,
+	};
+}
 void CvGame::read(FDataStreamBase* pStream)
 {
 	int iI;
@@ -8777,33 +8810,93 @@ void CvGame::read(FDataStreamBase* pStream)
 
 	uint uiFlag=0;
 	pStream->Read(&uiFlag);	// flags for expansion
+	// NOTE: this record is read BEFORE the manifest below, because that is the order
+	// the writer emits them in. Nothing in here may therefore use
+	// CvSaveManifest::remapId -- the remap tables do not exist yet. Every field here is
+	// a plain counter, which is why it is safe; a content id added to this record would
+	// silently skip remapping. Put such a field after the manifest read instead.
+	if (uiFlag >= SAVE_FORMAT_VERSION_TAGGED)
+	{
+		// Tagged. Order does not matter, an unknown tag is stepped over, and a field
+		// the writer omitted keeps what reset() gave it.
+		CvTagReader kReader(pStream);
+		while (kReader.next())
+		{
+			switch (kReader.tag())
+			{
+			case TAG_ELAPSED_GAME_TURNS: m_iElapsedGameTurns = kReader.asInt(); break;
+			case TAG_START_TURN: m_iStartTurn = kReader.asInt(); break;
+			case TAG_START_YEAR: m_iStartYear = kReader.asInt(); break;
+			case TAG_ESTIMATE_END_TURN: m_iEstimateEndTurn = kReader.asInt(); break;
+			case TAG_TURN_SLICE: m_iTurnSlice = kReader.asInt(); break;
+			case TAG_CUTOFF_SLICE: m_iCutoffSlice = kReader.asInt(); break;
+			case TAG_NUM_GAME_TURN_ACTIVE: m_iNumGameTurnActive = kReader.asInt(); break;
+			case TAG_NUM_CITIES: m_iNumCities = kReader.asInt(); break;
+			case TAG_TOTAL_POPULATION: m_iTotalPopulation = kReader.asInt(); break;
+			case TAG_TRADE_ROUTES: m_iTradeRoutes = kReader.asInt(); break;
+			case TAG_FREE_TRADE_COUNT: m_iFreeTradeCount = kReader.asInt(); break;
+			case TAG_NO_NUKES_COUNT: m_iNoNukesCount = kReader.asInt(); break;
+			case TAG_NUKES_EXPLODED: m_iNukesExploded = kReader.asInt(); break;
+			case TAG_MAX_POPULATION: m_iMaxPopulation = kReader.asInt(); break;
+			case TAG_MAX_LAND: m_iMaxLand = kReader.asInt(); break;
+			case TAG_MAX_TECH: m_iMaxTech = kReader.asInt(); break;
+			case TAG_MAX_WONDERS: m_iMaxWonders = kReader.asInt(); break;
+			case TAG_INIT_POPULATION: m_iInitPopulation = kReader.asInt(); break;
+			case TAG_INIT_LAND: m_iInitLand = kReader.asInt(); break;
+			case TAG_INIT_TECH: m_iInitTech = kReader.asInt(); break;
+			case TAG_INIT_WONDERS: m_iInitWonders = kReader.asInt(); break;
+			default: kReader.skip(); break;
+			}
+		}
+	}
+	else
+	{
+		// Positional, exactly as it always was. This branch is the compatibility
+		// shim; it is not new code and must not be edited.
+		pStream->Read(&m_iElapsedGameTurns);
+		pStream->Read(&m_iStartTurn);
+		pStream->Read(&m_iStartYear);
+		pStream->Read(&m_iEstimateEndTurn);
+		pStream->Read(&m_iTurnSlice);
+		pStream->Read(&m_iCutoffSlice);
+		pStream->Read(&m_iNumGameTurnActive);
+		pStream->Read(&m_iNumCities);
+		pStream->Read(&m_iTotalPopulation);
+		pStream->Read(&m_iTradeRoutes);
+		pStream->Read(&m_iFreeTradeCount);
+		pStream->Read(&m_iNoNukesCount);
+		pStream->Read(&m_iNukesExploded);
+		pStream->Read(&m_iMaxPopulation);
+		pStream->Read(&m_iMaxLand);
+		pStream->Read(&m_iMaxTech);
+		pStream->Read(&m_iMaxWonders);
+		pStream->Read(&m_iInitPopulation);
+		pStream->Read(&m_iInitLand);
+		pStream->Read(&m_iInitTech);
+		pStream->Read(&m_iInitWonders);
+	}
+
+	// Unconditional, and before anything else: this clears remap state from any
+	// earlier load in the same session. Skipping it for a save with no manifest would
+	// leave the previous game's tables in place and silently permute this one.
+	CvSaveSizeProbe::flush();
+	CvSaveManifest::beginRead();
+
+	// The manifest sits immediately after the flag, at the very top of the compressed
+	// body, so it is read before any content-sized array has had a chance to desync.
+	// A mismatch is reported and the load continues: there is no engine-supported way
+	// to refuse a save from inside deserialisation, and reading on at least leaves the
+	// explanation as the first entry in the log rather than the last.
+	if (uiFlag >= SAVE_FORMAT_VERSION_MANIFEST)
+	{
+		CvSaveManifest::readAndCheck(pStream);
+	}
 
 	if (uiFlag < 1)
 	{
 		int iEndTurnMessagesSent;
 		pStream->Read(&iEndTurnMessagesSent);
 	}
-	pStream->Read(&m_iElapsedGameTurns);
-	pStream->Read(&m_iStartTurn);
-	pStream->Read(&m_iStartYear);
-	pStream->Read(&m_iEstimateEndTurn);
-	pStream->Read(&m_iTurnSlice);
-	pStream->Read(&m_iCutoffSlice);
-	pStream->Read(&m_iNumGameTurnActive);
-	pStream->Read(&m_iNumCities);
-	pStream->Read(&m_iTotalPopulation);
-	pStream->Read(&m_iTradeRoutes);
-	pStream->Read(&m_iFreeTradeCount);
-	pStream->Read(&m_iNoNukesCount);
-	pStream->Read(&m_iNukesExploded);
-	pStream->Read(&m_iMaxPopulation);
-	pStream->Read(&m_iMaxLand);
-	pStream->Read(&m_iMaxTech);
-	pStream->Read(&m_iMaxWonders);
-	pStream->Read(&m_iInitPopulation);
-	pStream->Read(&m_iInitLand);
-	pStream->Read(&m_iInitTech);
-	pStream->Read(&m_iInitWonders);
 	pStream->Read(&m_iAIAutoPlay);
 /*************************************************************************************************/
 /**	xUPT								02/08/11									Afforess	**/
@@ -8827,11 +8920,11 @@ void CvGame::read(FDataStreamBase* pStream)
 	// m_bPlayerOptionsSent not saved
 	pStream->Read(&m_bNukesValid);
 
-	pStream->Read((int*)&m_eHandicap);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_HANDICAP, &m_eHandicap);
 	pStream->Read((int*)&m_ePausePlayer);
-	pStream->Read((int*)&m_eBestLandUnit);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_UNIT, &m_eBestLandUnit);
 	pStream->Read((int*)&m_eWinner);
-	pStream->Read((int*)&m_eVictory);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_VICTORY, &m_eVictory);
 	pStream->Read((int*)&m_eGameState);
 
 	pStream->ReadString(m_szScriptData);
@@ -8848,30 +8941,30 @@ void CvGame::read(FDataStreamBase* pStream)
 	pStream->Read(MAX_TEAMS, m_aiTeamRank);
 	pStream->Read(MAX_TEAMS, m_aiTeamScore);
 
-	pStream->Read(GC.getNumUnitInfos(), m_paiUnitCreatedCount);
-	pStream->Read(GC.getNumUnitClassInfos(), m_paiUnitClassCreatedCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT, m_paiUnitCreatedCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT_CLASS, m_paiUnitClassCreatedCount);
 /*************************************************************************************************/
 /**	Spawn Groups						08/05/10									Valkrionn	**/
 /**																								**/
 /**					New spawn mechanic, allowing us to customize stacks							**/
 /*************************************************************************************************/
-	pStream->Read(GC.getNumSpawnGroupInfos(), m_paiSpawnGroupCreatedCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPAWN_GROUP, m_paiSpawnGroupCreatedCount);
 /*************************************************************************************************/
 /**	Spawn Groups							END													**/
 /*************************************************************************************************/
-	pStream->Read(GC.getNumBuildingClassInfos(), m_paiBuildingClassCreatedCount);
-	pStream->Read(GC.getNumProjectInfos(), m_paiProjectCreatedCount);
-	pStream->Read(GC.getNumCivicInfos(), m_paiForceCivicCount);
-	pStream->Read(GC.getNumVoteInfos(), (int*)m_paiVoteOutcome);
-	pStream->Read(GC.getNumReligionInfos(), m_paiReligionGameTurnFounded);
-	pStream->Read(GC.getNumCorporationInfos(), m_paiCorporationGameTurnFounded);
-	pStream->Read(GC.getNumVoteSourceInfos(), m_aiSecretaryGeneralTimer);
-	pStream->Read(GC.getNumVoteSourceInfos(), m_aiVoteTimer);
-	pStream->Read(GC.getNumVoteSourceInfos(), m_aiDiploVote);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BUILDING_CLASS, m_paiBuildingClassCreatedCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PROJECT, m_paiProjectCreatedCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_CIVIC, m_paiForceCivicCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_VOTE, (int*)m_paiVoteOutcome);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_RELIGION, m_paiReligionGameTurnFounded);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_CORPORATION, m_paiCorporationGameTurnFounded);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_VOTE_SOURCE, m_aiSecretaryGeneralTimer);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_VOTE_SOURCE, m_aiVoteTimer);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_VOTE_SOURCE, m_aiDiploVote);
 
-	pStream->Read(GC.getNumSpecialUnitInfos(), m_pabSpecialUnitValid);
-	pStream->Read(GC.getNumSpecialBuildingInfos(), m_pabSpecialBuildingValid);
-	pStream->Read(GC.getNumReligionInfos(), m_abReligionSlotTaken);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIAL_UNIT, m_pabSpecialUnitValid);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIAL_BUILDING, m_pabSpecialBuildingValid);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_RELIGION, m_abReligionSlotTaken);
 
 	for (int iI=0;iI<GC.getNumReligionInfos();iI++)
 	{
@@ -9065,8 +9158,8 @@ void CvGame::read(FDataStreamBase* pStream)
 	}
 
 	pStream->Read(&m_iShrineBuildingCount);
-	pStream->Read(GC.getNumBuildingInfos(), m_aiShrineBuilding);
-	pStream->Read(GC.getNumBuildingInfos(), m_aiShrineReligion);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BUILDING, m_aiShrineBuilding);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BUILDING, m_aiShrineReligion);
 	pStream->Read(&m_iNumCultureVictoryCities);
 	pStream->Read(&m_eCultureVictoryCultureLevel);
 
@@ -9080,23 +9173,23 @@ void CvGame::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iMaxGlobalCounter);
 	pStream->Read(&m_iGlobalCounterLimit);
 	pStream->Read(&m_iScenarioCounter);
-	pStream->Read(GC.getNumEventTriggerInfos(), m_pabEventTriggered);
-	pStream->Read(GC.getNumVoteSourceInfos(), m_pabGamblingRing);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_EVENT_TRIGGER, m_pabEventTriggered);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_VOTE_SOURCE, m_pabGamblingRing);
 /*************************************************************************************************/
 /**	Overcouncil Bonus Ban					08/24/26									 Fix #420	**/
 /**		NoBonus bans are stored per vote source instead of as one global bonus-indexed array.	**/
 /*************************************************************************************************/
 	for (int iSource = 0; iSource < GC.getNumVoteSourceInfos(); iSource++)
 	{
-		pStream->Read(GC.getNumBonusInfos(), m_ppabNoBonus[iSource]);
+		CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_ppabNoBonus[iSource]);
 	}
 	updateAnyNoBonus();
 /*************************************************************************************************/
 /**	Overcouncil Bonus Ban					END													**/
 /*************************************************************************************************/
-	pStream->Read(GC.getNumVoteSourceInfos(), m_pabNoOutsideTechTrades);
-	pStream->Read(GC.getNumVoteSourceInfos(), m_pabSlaveTrade);
-	pStream->Read(GC.getNumVoteSourceInfos(), m_pabSmugglingRing);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_VOTE_SOURCE, m_pabNoOutsideTechTrades);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_VOTE_SOURCE, m_pabSlaveTrade);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_VOTE_SOURCE, m_pabSmugglingRing);
 //FfH: End Add
 /*************************************************************************************************/
 /**	New Tag Defs	(ProjectInfos)			10/01/08								Xienwolf	**/
@@ -9111,38 +9204,52 @@ void CvGame::read(FDataStreamBase* pStream)
 /**	New Tag Defs							END													**/
 /*************************************************************************************************/
 
-	pStream->Read(GC.getNumGoodyInfos(), m_pabTriggeredGoodies);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_GOODY, m_pabTriggeredGoodies);
 }
 
 
 void CvGame::write(FDataStreamBase* pStream)
 {
+	CvSaveSizeProbe::flush();
+	CvSaveSizeProbe::countObject("CvGame");
 	int iI;
 
-	uint uiFlag=2;	// 2: NoBonus bans are stored per vote source (Fix #420)
+	uint uiFlag=SAVE_FORMAT_VERSION;	// see SAVE_FORMAT_VERSION in CvSaveManifest.h
 	pStream->Write(uiFlag);		// flag for expansion
+	{
+		CvTagWriter kWriter(pStream);
+		kWriter.writeIfNonZero(TAG_ELAPSED_GAME_TURNS, m_iElapsedGameTurns);
+		kWriter.writeIfNonZero(TAG_START_TURN, m_iStartTurn);
+		kWriter.writeIfNonZero(TAG_START_YEAR, m_iStartYear);
+		kWriter.writeIfNonZero(TAG_ESTIMATE_END_TURN, m_iEstimateEndTurn);
+		kWriter.writeIfNonZero(TAG_TURN_SLICE, m_iTurnSlice);
+		kWriter.writeIfNonZero(TAG_CUTOFF_SLICE, m_iCutoffSlice);
+		kWriter.writeIfNonZero(TAG_NUM_GAME_TURN_ACTIVE, m_iNumGameTurnActive);
+		kWriter.writeIfNonZero(TAG_NUM_CITIES, m_iNumCities);
+		kWriter.writeIfNonZero(TAG_TOTAL_POPULATION, m_iTotalPopulation);
+		kWriter.writeIfNonZero(TAG_TRADE_ROUTES, m_iTradeRoutes);
+		kWriter.writeIfNonZero(TAG_FREE_TRADE_COUNT, m_iFreeTradeCount);
+		kWriter.writeIfNonZero(TAG_NO_NUKES_COUNT, m_iNoNukesCount);
+		kWriter.writeIfNonZero(TAG_NUKES_EXPLODED, m_iNukesExploded);
+		kWriter.writeIfNonZero(TAG_MAX_POPULATION, m_iMaxPopulation);
+		kWriter.writeIfNonZero(TAG_MAX_LAND, m_iMaxLand);
+		kWriter.writeIfNonZero(TAG_MAX_TECH, m_iMaxTech);
+		kWriter.writeIfNonZero(TAG_MAX_WONDERS, m_iMaxWonders);
+		kWriter.writeIfNonZero(TAG_INIT_POPULATION, m_iInitPopulation);
+		kWriter.writeIfNonZero(TAG_INIT_LAND, m_iInitLand);
+		kWriter.writeIfNonZero(TAG_INIT_TECH, m_iInitTech);
+		kWriter.writeIfNonZero(TAG_INIT_WONDERS, m_iInitWonders);
+		kWriter.end();
+	}
 
-	pStream->Write(m_iElapsedGameTurns);
-	pStream->Write(m_iStartTurn);
-	pStream->Write(m_iStartYear);
-	pStream->Write(m_iEstimateEndTurn);
-	pStream->Write(m_iTurnSlice);
-	pStream->Write(m_iCutoffSlice);
-	pStream->Write(m_iNumGameTurnActive);
-	pStream->Write(m_iNumCities);
-	pStream->Write(m_iTotalPopulation);
-	pStream->Write(m_iTradeRoutes);
-	pStream->Write(m_iFreeTradeCount);
-	pStream->Write(m_iNoNukesCount);
-	pStream->Write(m_iNukesExploded);
-	pStream->Write(m_iMaxPopulation);
-	pStream->Write(m_iMaxLand);
-	pStream->Write(m_iMaxTech);
-	pStream->Write(m_iMaxWonders);
-	pStream->Write(m_iInitPopulation);
-	pStream->Write(m_iInitLand);
-	pStream->Write(m_iInitTech);
-	pStream->Write(m_iInitWonders);
+	// Guarded, so that dropping SAVE_FORMAT_VERSION to 2 gives a build that READS
+	// manifests but still writes saves older builds can open. That is the transition
+	// build, if we want one before turning manifest writing on for everybody.
+	if (SAVE_FORMAT_VERSION >= SAVE_FORMAT_VERSION_MANIFEST)
+	{
+		CvSaveManifest::write(pStream);
+	}
+
 /*************************************************************************************************/
 /**	Xienwolf Tweak							02/01/09											**/
 /**																								**/

@@ -6,6 +6,8 @@
 #include "CvTeamAI.h"
 #include "CvGlobals.h"
 #include "CvInfos.h"
+#include "CvSaveSizeProbe.h"
+#include "CvTaggedStream.h"
 
 // Public Functions...
 
@@ -131,14 +133,43 @@ int CvGameAI::AI_turnsPercent(int iTurns, int iPercent)
 }
 
 
+// Tag numbers for this class's tagged record. APPEND ONLY: renumbering an existing
+// tag makes every save written before the change decode that field as something
+// else, silently. A retired field leaves its number unused rather than handing it on.
+namespace
+{
+	enum GameAITag
+	{
+		TAG_PAD = 1,
+	};
+}
 void CvGameAI::read(FDataStreamBase* pStream)
 {
 	CvGame::read(pStream);
 
 	uint uiFlag=0;
 	pStream->Read(&uiFlag);	// flags for expansion
+	if (uiFlag >= 1)
+	{
+		// Tagged. Order does not matter, an unknown tag is stepped over, and a field
+		// the writer omitted keeps what reset() gave it.
+		CvTagReader kReader(pStream);
+		while (kReader.next())
+		{
+			switch (kReader.tag())
+			{
+			case TAG_PAD: m_iPad = kReader.asInt(); break;
+			default: kReader.skip(); break;
+			}
+		}
+	}
+	else
+	{
+		// Positional, exactly as it always was. This branch is the compatibility
+		// shim; it is not new code and must not be edited.
+		pStream->Read(&m_iPad);
+	}
 
-	pStream->Read(&m_iPad);
 /*************************************************************************************************/
 /**	AI anti barb force				03/02/12											Snarko	**/
 /**					Helping the AI take out barbs, one unit at the time...						**/
@@ -154,10 +185,14 @@ void CvGameAI::write(FDataStreamBase* pStream)
 {
 	CvGame::write(pStream);
 
-	uint uiFlag=0;
+	uint uiFlag=1;	// 1: tagged fields (CvTaggedStream)
 	pStream->Write(uiFlag);		// flag for expansion
+	{
+		CvTagWriter kWriter(pStream);
+		kWriter.write(TAG_PAD, m_iPad);
+		kWriter.end();
+	}
 
-	pStream->Write(m_iPad);
 /*************************************************************************************************/
 /**	AI anti barb force				03/02/12											Snarko	**/
 /**					Helping the AI take out barbs, one unit at the time...						**/

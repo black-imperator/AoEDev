@@ -5,6 +5,8 @@
 #include "CvGlobals.h"
 #include "CvGameAI.h"
 #include "CvPlayerAI.h"
+#include "CvSaveManifest.h"
+#include "CvSaveSizeProbe.h"
 
 CvGameRecord::CvGameRecord()
 {
@@ -62,7 +64,7 @@ void CvGameRecord::read(FDataStreamBase* pStream)
 	uint uiFlag=0;
 	pStream->Read(&uiFlag);	// flags for expansion
 
-	pStream->Read((int*)&m_eEra);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_ERA, &m_eEra);
 
 	pStream->ReadString(m_szMapName);
 }
@@ -278,14 +280,14 @@ void CvPlayerRecord::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iID);
 	pStream->Read(&m_iTime);
 
-	pStream->Read((int*)&m_eVictory);
-	pStream->Read((int*)&m_eLeader);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_VICTORY, &m_eVictory);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_LEADER_HEAD, &m_eLeader);
 
-	pStream->Read(GC.getNumUnitInfos(), m_piNumUnitsBuilt);
-	pStream->Read(GC.getNumUnitInfos(), m_piNumUnitsKilled);
-	pStream->Read(GC.getNumUnitInfos(), m_piNumUnitsWasKilled);
-	pStream->Read(GC.getNumBuildingInfos(), m_piNumBuildingsBuilt);
-	pStream->Read(GC.getNumReligionInfos(), m_pbReligionFounded);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT, m_piNumUnitsBuilt);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT, m_piNumUnitsKilled);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT, m_piNumUnitsWasKilled);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BUILDING, m_piNumBuildingsBuilt);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_RELIGION, m_pbReligionFounded);
 
 	pStream->Read(&m_iNumCitiesBuilt);
 	pStream->Read(&m_iNumCitiesRazed);
@@ -435,10 +437,13 @@ void CvStatistics::read(FDataStreamBase* pStream)
 			getPlayerRecord(i)->read(pStream);
 		}
 	}
+
+	CvSaveManifest::endRead();
 }
 
 void CvStatistics::write(FDataStreamBase* pStream)
 {
+	CvSaveSizeProbe::countObject("CvStatistics");
 	// Write game data into record
 	m_GameRecord.write(pStream);
 

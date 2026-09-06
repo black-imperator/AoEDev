@@ -11,6 +11,8 @@
 #include "CvGameTextMgr.h"
 #include "CvDLLInterfaceIFaceBase.h"
 #include "CvEventReporter.h"
+#include "CvTaggedStream.h"
+#include "CvSaveSizeProbe.h"
 
 // Public Functions...
 
@@ -648,16 +650,32 @@ const CLinkList<TradeData>* CvDeal::getSecondTrades() const
 }
 
 
+// Tag numbers for this class's tagged record. APPEND ONLY: renumbering an existing
+// tag makes every save written before the change decode that field as something
+// else, silently. A retired field leaves its number unused rather than handing it on.
+namespace
+{
+	enum DealTag
+	{
+		TAG_ID = 1,
+		TAG_INITIAL_GAME_TURN,
+		TAG_FIRST_PLAYER,
+		TAG_SECOND_PLAYER,
+	};
+}
 void CvDeal::write(FDataStreamBase* pStream)
 {
-	uint uiFlag=0;
+	CvSaveSizeProbe::countObject("CvDeal");
+	uint uiFlag=1;	// 1: tagged fields (CvTaggedStream)
 	pStream->Write(uiFlag);		// flag for expansion
-
-	pStream->Write(m_iID);
-	pStream->Write(m_iInitialGameTurn);
-
-	pStream->Write(m_eFirstPlayer);
-	pStream->Write(m_eSecondPlayer);
+	{
+		CvTagWriter kWriter(pStream, "CvDeal");
+		kWriter.write(TAG_ID, m_iID);
+		kWriter.writeIfNonZero(TAG_INITIAL_GAME_TURN, m_iInitialGameTurn);
+		kWriter.write(TAG_FIRST_PLAYER, (int)m_eFirstPlayer);
+		kWriter.write(TAG_SECOND_PLAYER, (int)m_eSecondPlayer);
+		kWriter.end();
+	}
 
 	m_firstTrades.Write(pStream);
 	m_secondTrades.Write(pStream);
@@ -667,12 +685,32 @@ void CvDeal::read(FDataStreamBase* pStream)
 {
 	uint uiFlag=0;
 	pStream->Read(&uiFlag);	// flags for expansion
-
-	pStream->Read(&m_iID);
-	pStream->Read(&m_iInitialGameTurn);
-
-	pStream->Read((int*)&m_eFirstPlayer);
-	pStream->Read((int*)&m_eSecondPlayer);
+	if (uiFlag >= 1)
+	{
+		// Tagged. Order does not matter, an unknown tag is stepped over, and a field
+		// the writer omitted keeps what reset() gave it.
+		CvTagReader kReader(pStream);
+		while (kReader.next())
+		{
+			switch (kReader.tag())
+			{
+			case TAG_ID: m_iID = kReader.asInt(); break;
+			case TAG_INITIAL_GAME_TURN: m_iInitialGameTurn = kReader.asInt(); break;
+			case TAG_FIRST_PLAYER: m_eFirstPlayer = (PlayerTypes)kReader.asInt(); break;
+			case TAG_SECOND_PLAYER: m_eSecondPlayer = (PlayerTypes)kReader.asInt(); break;
+			default: kReader.skip(); break;
+			}
+		}
+	}
+	else
+	{
+		// Positional, exactly as it always was. This branch is the compatibility
+		// shim; it is not new code and must not be edited.
+		pStream->Read(&m_iID);
+		pStream->Read(&m_iInitialGameTurn);
+		pStream->Read((int*)&m_eFirstPlayer);
+		pStream->Read((int*)&m_eSecondPlayer);
+	}
 
 	m_firstTrades.Read(pStream);
 	m_secondTrades.Read(pStream);

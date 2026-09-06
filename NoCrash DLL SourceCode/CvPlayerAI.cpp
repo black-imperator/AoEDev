@@ -24,6 +24,9 @@
 #include "CvDLLFAStarIFaceBase.h"
 #include "FAStarNode.h"
 #include "CvEventReporter.h"
+#include "CvSaveManifest.h"
+#include "CvSaveSizeProbe.h"
+#include "CvTaggedStream.h"
 
 /************************************************************************************************/
 /* BETTER_BTS_AI_MOD                      08/21/09                                jdog5000      */
@@ -18566,22 +18569,65 @@ void CvPlayerAI::AI_doDiplo()
 // read object from a stream
 // used during load
 //
+// Tag numbers for this class's tagged record. APPEND ONLY: renumbering an existing
+// tag makes every save written before the change decode that field as something
+// else, silently. A retired field leaves its number unused rather than handing it on.
+namespace
+{
+	enum PlayerAITag
+	{
+		TAG_PEACE_WEIGHT = 1,
+		TAG_ESPIONAGE_WEIGHT,
+		TAG_ATTACK_ODDS_CHANGE,
+		TAG_CIVIC_TIMER,
+		TAG_RELIGION_TIMER,
+		TAG_EXTRA_GOLD_TARGET,
+		TAG_STRATEGY_HASH,
+		TAG_STRATEGY_HASH_CACHE_TURN,
+	};
+}
 void CvPlayerAI::read(FDataStreamBase* pStream)
 {
 	CvPlayer::read(pStream);	// read base class data first
 
 	uint uiFlag=0;
 	pStream->Read(&uiFlag);	// flags for expansion
+	if (uiFlag >= 4)
+	{
+		// Tagged. Order does not matter, an unknown tag is stepped over, and a field
+		// the writer omitted keeps what reset() gave it.
+		CvTagReader kReader(pStream);
+		while (kReader.next())
+		{
+			switch (kReader.tag())
+			{
+			case TAG_PEACE_WEIGHT: m_iPeaceWeight = kReader.asInt(); break;
+			case TAG_ESPIONAGE_WEIGHT: m_iEspionageWeight = kReader.asInt(); break;
+			case TAG_ATTACK_ODDS_CHANGE: m_iAttackOddsChange = kReader.asInt(); break;
+			case TAG_CIVIC_TIMER: m_iCivicTimer = kReader.asInt(); break;
+			case TAG_RELIGION_TIMER: m_iReligionTimer = kReader.asInt(); break;
+			case TAG_EXTRA_GOLD_TARGET: m_iExtraGoldTarget = kReader.asInt(); break;
+			case TAG_STRATEGY_HASH: m_iStrategyHash = kReader.asInt(); break;
+			case TAG_STRATEGY_HASH_CACHE_TURN: m_iStrategyHashCacheTurn = kReader.asInt(); break;
+			default: kReader.skip(); break;
+			}
+		}
+	}
+	else
+	{
+		// Positional, exactly as it always was. This branch is the compatibility
+		// shim; it is not new code and must not be edited.
+		pStream->Read(&m_iPeaceWeight);
+		pStream->Read(&m_iEspionageWeight);
+		pStream->Read(&m_iAttackOddsChange);
+		pStream->Read(&m_iCivicTimer);
+		pStream->Read(&m_iReligionTimer);
+		pStream->Read(&m_iExtraGoldTarget);
+		pStream->Read(&m_iStrategyHash);
+		pStream->Read(&m_iStrategyHashCacheTurn);
+	}
 
-	pStream->Read(&m_iPeaceWeight);
-	pStream->Read(&m_iEspionageWeight);
-	pStream->Read(&m_iAttackOddsChange);
-	pStream->Read(&m_iCivicTimer);
-	pStream->Read(&m_iReligionTimer);
-	pStream->Read(&m_iExtraGoldTarget);
 
-	pStream->Read(&m_iStrategyHash);
-	pStream->Read(&m_iStrategyHashCacheTurn);
 /************************************************************************************************/
 /* BETTER_BTS_AI_MOD                      03/18/10                                jdog5000      */
 /*                                                                                              */
@@ -18672,9 +18718,9 @@ void CvPlayerAI::read(FDataStreamBase* pStream)
 		}
 	}
 
-	pStream->Read(GC.getNumBonusInfos(), m_aiBonusValue);
-	pStream->Read(GC.getNumUnitClassInfos(), m_aiUnitClassWeights);
-	pStream->Read(GC.getNumUnitCombatInfos(), m_aiUnitCombatWeights);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_aiBonusValue);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT_CLASS, m_aiUnitClassWeights);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT_COMBAT, m_aiUnitCombatWeights);
 	pStream->Read(MAX_PLAYERS, m_aiCloseBordersAttitudeCache);
 /*************************************************************************************************/
 /**	New Tag Defs	(PlayerInfos)			09/01/08								Xienwolf	**/
@@ -18719,6 +18765,7 @@ void CvPlayerAI::read(FDataStreamBase* pStream)
 //
 void CvPlayerAI::write(FDataStreamBase* pStream)
 {
+	CvSaveSizeProbe::countObject("CvPlayerAI");
 	CvPlayer::write(pStream);	// write base class data first
 
 /************************************************************************************************/
@@ -18730,21 +18777,25 @@ void CvPlayerAI::write(FDataStreamBase* pStream)
 	uint uiFlag=0;
 */
 	// Flag for type of save
-	uint uiFlag=3;
+	uint uiFlag=4;	// 4: tagged fields (CvTaggedStream)
 /************************************************************************************************/
 /* BETTER_BTS_AI_MOD                       END                                                  */
 /************************************************************************************************/
 	pStream->Write(uiFlag);		// flag for expansion
+	{
+		CvTagWriter kWriter(pStream);
+		kWriter.write(TAG_PEACE_WEIGHT, m_iPeaceWeight);
+		kWriter.write(TAG_ESPIONAGE_WEIGHT, m_iEspionageWeight);
+		kWriter.write(TAG_ATTACK_ODDS_CHANGE, m_iAttackOddsChange);
+		kWriter.write(TAG_CIVIC_TIMER, m_iCivicTimer);
+		kWriter.write(TAG_RELIGION_TIMER, m_iReligionTimer);
+		kWriter.write(TAG_EXTRA_GOLD_TARGET, m_iExtraGoldTarget);
+		kWriter.write(TAG_STRATEGY_HASH, m_iStrategyHash);
+		kWriter.write(TAG_STRATEGY_HASH_CACHE_TURN, m_iStrategyHashCacheTurn);
+		kWriter.end();
+	}
 
-	pStream->Write(m_iPeaceWeight);
-	pStream->Write(m_iEspionageWeight);
-	pStream->Write(m_iAttackOddsChange);
-	pStream->Write(m_iCivicTimer);
-	pStream->Write(m_iReligionTimer);
-	pStream->Write(m_iExtraGoldTarget);
 
-	pStream->Write(m_iStrategyHash);
-	pStream->Write(m_iStrategyHashCacheTurn);
 /************************************************************************************************/
 /* BETTER_BTS_AI_MOD                      03/18/10                                jdog5000      */
 /*                                                                                              */

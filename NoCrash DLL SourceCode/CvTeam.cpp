@@ -21,6 +21,9 @@
 #include "CvDLLPythonIFaceBase.h"
 #include "CyArgsList.h"
 #include "FProfiler.h"
+#include "CvSaveManifest.h"
+#include "CvTaggedStream.h"
+#include "CvSaveSizeProbe.h"
 
 // Public Functions...
 
@@ -7387,6 +7390,41 @@ void CvTeam::setColony(bool bNewValue)
 /*************************************************************************************************/
 
 
+// Tag numbers for this class's tagged record. APPEND ONLY: renumbering an existing
+// tag makes every save written before the change decode that field as something
+// else, silently. A retired field leaves its number unused rather than handing it on.
+namespace
+{
+	enum TeamTag
+	{
+		TAG_NUM_MEMBERS = 1,
+		TAG_ALIVE_COUNT,
+		TAG_EVER_ALIVE_COUNT,
+		TAG_NUM_CITIES,
+		TAG_TOTAL_POPULATION,
+		TAG_TOTAL_LAND,
+		TAG_NUKE_INTERCEPTION,
+		TAG_EXTRA_WATER_SEE_FROM_COUNT,
+		TAG_MAP_TRADING_COUNT,
+		TAG_TECH_TRADING_COUNT,
+		TAG_GOLD_TRADING_COUNT,
+		TAG_OPEN_BORDERS_TRADING_COUNT,
+		TAG_DEFENSIVE_PACT_TRADING_COUNT,
+		TAG_PERMANENT_ALLIANCE_TRADING_COUNT,
+		TAG_VASSAL_TRADING_COUNT,
+		TAG_BRIDGE_BUILDING_COUNT,
+		TAG_IRRIGATION_COUNT,
+		TAG_IGNORE_IRRIGATION_COUNT,
+		TAG_WATER_WORK_COUNT,
+		TAG_VASSAL_POWER,
+		TAG_MASTER_POWER,
+		TAG_ENEMY_WAR_WEARINESS_MODIFIER,
+		TAG_RIVER_TRADE_COUNT,
+		TAG_ESPIONAGE_POINTS_EVER,
+		TAG_MAP_CENTERING,
+		TAG_CAPITULATED,
+	};
+}
 void CvTeam::read(FDataStreamBase* pStream)
 {
 	// Init data before load
@@ -7394,34 +7432,76 @@ void CvTeam::read(FDataStreamBase* pStream)
 
 	uint uiFlag=0;
 	pStream->Read(&uiFlag);	// flags for expansion
-
-	pStream->Read(&m_iNumMembers);
-	pStream->Read(&m_iAliveCount);
-	pStream->Read(&m_iEverAliveCount);
-	pStream->Read(&m_iNumCities);
-	pStream->Read(&m_iTotalPopulation);
-	pStream->Read(&m_iTotalLand);
-	pStream->Read(&m_iNukeInterception);
-	pStream->Read(&m_iExtraWaterSeeFromCount);
-	pStream->Read(&m_iMapTradingCount);
-	pStream->Read(&m_iTechTradingCount);
-	pStream->Read(&m_iGoldTradingCount);
-	pStream->Read(&m_iOpenBordersTradingCount);
-	pStream->Read(&m_iDefensivePactTradingCount);
-	pStream->Read(&m_iPermanentAllianceTradingCount);
-	pStream->Read(&m_iVassalTradingCount);
-	pStream->Read(&m_iBridgeBuildingCount);
-	pStream->Read(&m_iIrrigationCount);
-	pStream->Read(&m_iIgnoreIrrigationCount);
-	pStream->Read(&m_iWaterWorkCount);
-	pStream->Read(&m_iVassalPower);
-	pStream->Read(&m_iMasterPower);
-	pStream->Read(&m_iEnemyWarWearinessModifier);
-	pStream->Read(&m_iRiverTradeCount);
-	pStream->Read(&m_iEspionagePointsEver);
-
-	pStream->Read(&m_bMapCentering);
-	pStream->Read(&m_bCapitulated);
+	if (uiFlag >= 1)
+	{
+		// Tagged. Order does not matter, an unknown tag is stepped over, and a field
+		// the writer omitted keeps what reset() gave it.
+		CvTagReader kReader(pStream);
+		while (kReader.next())
+		{
+			switch (kReader.tag())
+			{
+			case TAG_NUM_MEMBERS: m_iNumMembers = kReader.asInt(); break;
+			case TAG_ALIVE_COUNT: m_iAliveCount = kReader.asInt(); break;
+			case TAG_EVER_ALIVE_COUNT: m_iEverAliveCount = kReader.asInt(); break;
+			case TAG_NUM_CITIES: m_iNumCities = kReader.asInt(); break;
+			case TAG_TOTAL_POPULATION: m_iTotalPopulation = kReader.asInt(); break;
+			case TAG_TOTAL_LAND: m_iTotalLand = kReader.asInt(); break;
+			case TAG_NUKE_INTERCEPTION: m_iNukeInterception = kReader.asInt(); break;
+			case TAG_EXTRA_WATER_SEE_FROM_COUNT: m_iExtraWaterSeeFromCount = kReader.asInt(); break;
+			case TAG_MAP_TRADING_COUNT: m_iMapTradingCount = kReader.asInt(); break;
+			case TAG_TECH_TRADING_COUNT: m_iTechTradingCount = kReader.asInt(); break;
+			case TAG_GOLD_TRADING_COUNT: m_iGoldTradingCount = kReader.asInt(); break;
+			case TAG_OPEN_BORDERS_TRADING_COUNT: m_iOpenBordersTradingCount = kReader.asInt(); break;
+			case TAG_DEFENSIVE_PACT_TRADING_COUNT: m_iDefensivePactTradingCount = kReader.asInt(); break;
+			case TAG_PERMANENT_ALLIANCE_TRADING_COUNT: m_iPermanentAllianceTradingCount = kReader.asInt(); break;
+			case TAG_VASSAL_TRADING_COUNT: m_iVassalTradingCount = kReader.asInt(); break;
+			case TAG_BRIDGE_BUILDING_COUNT: m_iBridgeBuildingCount = kReader.asInt(); break;
+			case TAG_IRRIGATION_COUNT: m_iIrrigationCount = kReader.asInt(); break;
+			case TAG_IGNORE_IRRIGATION_COUNT: m_iIgnoreIrrigationCount = kReader.asInt(); break;
+			case TAG_WATER_WORK_COUNT: m_iWaterWorkCount = kReader.asInt(); break;
+			case TAG_VASSAL_POWER: m_iVassalPower = kReader.asInt(); break;
+			case TAG_MASTER_POWER: m_iMasterPower = kReader.asInt(); break;
+			case TAG_ENEMY_WAR_WEARINESS_MODIFIER: m_iEnemyWarWearinessModifier = kReader.asInt(); break;
+			case TAG_RIVER_TRADE_COUNT: m_iRiverTradeCount = kReader.asInt(); break;
+			case TAG_ESPIONAGE_POINTS_EVER: m_iEspionagePointsEver = kReader.asInt(); break;
+			case TAG_MAP_CENTERING: m_bMapCentering = kReader.asBool(); break;
+			case TAG_CAPITULATED: m_bCapitulated = kReader.asBool(); break;
+			default: kReader.skip(); break;
+			}
+		}
+	}
+	else
+	{
+		// Positional, exactly as it always was. This branch is the compatibility
+		// shim; it is not new code and must not be edited.
+		pStream->Read(&m_iNumMembers);
+		pStream->Read(&m_iAliveCount);
+		pStream->Read(&m_iEverAliveCount);
+		pStream->Read(&m_iNumCities);
+		pStream->Read(&m_iTotalPopulation);
+		pStream->Read(&m_iTotalLand);
+		pStream->Read(&m_iNukeInterception);
+		pStream->Read(&m_iExtraWaterSeeFromCount);
+		pStream->Read(&m_iMapTradingCount);
+		pStream->Read(&m_iTechTradingCount);
+		pStream->Read(&m_iGoldTradingCount);
+		pStream->Read(&m_iOpenBordersTradingCount);
+		pStream->Read(&m_iDefensivePactTradingCount);
+		pStream->Read(&m_iPermanentAllianceTradingCount);
+		pStream->Read(&m_iVassalTradingCount);
+		pStream->Read(&m_iBridgeBuildingCount);
+		pStream->Read(&m_iIrrigationCount);
+		pStream->Read(&m_iIgnoreIrrigationCount);
+		pStream->Read(&m_iWaterWorkCount);
+		pStream->Read(&m_iVassalPower);
+		pStream->Read(&m_iMasterPower);
+		pStream->Read(&m_iEnemyWarWearinessModifier);
+		pStream->Read(&m_iRiverTradeCount);
+		pStream->Read(&m_iEspionagePointsEver);
+		pStream->Read(&m_bMapCentering);
+		pStream->Read(&m_bCapitulated);
+	}
 
 //FfH Traits: Added by Kael 08/02/2007
 	pStream->Read(&m_bBarbarianAlly);
@@ -7438,7 +7518,7 @@ void CvTeam::read(FDataStreamBase* pStream)
 	pStream->Read(MAX_TEAMS, m_aiCounterespionageModAgainstTeam);
 	pStream->Read(NUM_COMMERCE_TYPES, m_aiCommerceFlexibleCount);
 	pStream->Read(NUM_DOMAIN_TYPES, m_aiExtraMoves);
-	pStream->Read(GC.getNumVoteSourceInfos(), m_aiForceTeamVoteEligibilityCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_VOTE_SOURCE, m_aiForceTeamVoteEligibilityCount);
 
 	pStream->Read(MAX_TEAMS, m_abHasMet);
 	pStream->Read(MAX_TEAMS, m_abAtWar);
@@ -7447,11 +7527,11 @@ void CvTeam::read(FDataStreamBase* pStream)
 	pStream->Read(MAX_TEAMS, m_abDefensivePact);
 	pStream->Read(MAX_TEAMS, m_abForcePeace);
 	pStream->Read(MAX_TEAMS, m_abVassal);
-	pStream->Read(GC.getNumVictoryInfos(), m_abCanLaunch);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_VICTORY, m_abCanLaunch);
 
-	pStream->Read(GC.getNumRouteInfos(), m_paiRouteChange);
-	pStream->Read(GC.getNumProjectInfos(), m_paiProjectCount);
-	pStream->Read(GC.getNumProjectInfos(), m_paiProjectDefaultArtTypes);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_ROUTE, m_paiRouteChange);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PROJECT, m_paiProjectCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PROJECT, m_paiProjectDefaultArtTypes);
 
 	//project art types
 	for(int i=0;i<GC.getNumProjectInfos();i++)
@@ -7464,17 +7544,17 @@ void CvTeam::read(FDataStreamBase* pStream)
 		}
 	}
 
-	pStream->Read(GC.getNumProjectInfos(), m_paiProjectMaking);
-	pStream->Read(GC.getNumUnitClassInfos(), m_paiUnitClassCount);
-	pStream->Read(GC.getNumBuildingClassInfos(), m_paiBuildingClassCount);
-	pStream->Read(GC.getNumBuildingInfos(), m_paiObsoleteBuildingCount);
-	pStream->Read(GC.getNumTechInfos(), m_paiResearchProgress);
-	pStream->Read(GC.getNumTechInfos(), m_paiTechCount);
-	pStream->Read(GC.getNumTerrainInfos(), m_paiTerrainTradeCount);
-	pStream->Read(GC.getNumVictoryInfos(), m_aiVictoryCountdown);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PROJECT, m_paiProjectMaking);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT_CLASS, m_paiUnitClassCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BUILDING_CLASS, m_paiBuildingClassCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BUILDING, m_paiObsoleteBuildingCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_TECH, m_paiResearchProgress);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_TECH, m_paiTechCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_TERRAIN, m_paiTerrainTradeCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_VICTORY, m_aiVictoryCountdown);
 
-	pStream->Read(GC.getNumTechInfos(), m_pabHasTech);
-	pStream->Read(GC.getNumTechInfos(), m_pabNoTradeTech);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_TECH, m_pabHasTech);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_TECH, m_pabNoTradeTech);
 
 	for (int i = 0; i < GC.getNumImprovementInfos(); ++i)
 	{
@@ -7514,38 +7594,41 @@ void CvTeam::read(FDataStreamBase* pStream)
 
 void CvTeam::write(FDataStreamBase* pStream)
 {
+	CvSaveSizeProbe::countObject("CvTeam");
 	int iI;
 
-	uint uiFlag = 0;
+	uint uiFlag=1;	// 1: tagged fields (CvTaggedStream)
 	pStream->Write(uiFlag);		// flag for expansion
-
-	pStream->Write(m_iNumMembers);
-	pStream->Write(m_iAliveCount);
-	pStream->Write(m_iEverAliveCount);
-	pStream->Write(m_iNumCities);
-	pStream->Write(m_iTotalPopulation);
-	pStream->Write(m_iTotalLand);
-	pStream->Write(m_iNukeInterception);
-	pStream->Write(m_iExtraWaterSeeFromCount);
-	pStream->Write(m_iMapTradingCount);
-	pStream->Write(m_iTechTradingCount);
-	pStream->Write(m_iGoldTradingCount);
-	pStream->Write(m_iOpenBordersTradingCount);
-	pStream->Write(m_iDefensivePactTradingCount);
-	pStream->Write(m_iPermanentAllianceTradingCount);
-	pStream->Write(m_iVassalTradingCount);
-	pStream->Write(m_iBridgeBuildingCount);
-	pStream->Write(m_iIrrigationCount);
-	pStream->Write(m_iIgnoreIrrigationCount);
-	pStream->Write(m_iWaterWorkCount);
-	pStream->Write(m_iVassalPower);
-	pStream->Write(m_iMasterPower);
-	pStream->Write(m_iEnemyWarWearinessModifier);
-	pStream->Write(m_iRiverTradeCount);
-	pStream->Write(m_iEspionagePointsEver);
-
-	pStream->Write(m_bMapCentering);
-	pStream->Write(m_bCapitulated);
+	{
+		CvTagWriter kWriter(pStream, "CvTeam");
+		kWriter.writeIfNonZero(TAG_NUM_MEMBERS, m_iNumMembers);
+		kWriter.writeIfNonZero(TAG_ALIVE_COUNT, m_iAliveCount);
+		kWriter.writeIfNonZero(TAG_EVER_ALIVE_COUNT, m_iEverAliveCount);
+		kWriter.writeIfNonZero(TAG_NUM_CITIES, m_iNumCities);
+		kWriter.writeIfNonZero(TAG_TOTAL_POPULATION, m_iTotalPopulation);
+		kWriter.writeIfNonZero(TAG_TOTAL_LAND, m_iTotalLand);
+		kWriter.writeIfNonZero(TAG_NUKE_INTERCEPTION, m_iNukeInterception);
+		kWriter.writeIfNonZero(TAG_EXTRA_WATER_SEE_FROM_COUNT, m_iExtraWaterSeeFromCount);
+		kWriter.writeIfNonZero(TAG_MAP_TRADING_COUNT, m_iMapTradingCount);
+		kWriter.writeIfNonZero(TAG_TECH_TRADING_COUNT, m_iTechTradingCount);
+		kWriter.writeIfNonZero(TAG_GOLD_TRADING_COUNT, m_iGoldTradingCount);
+		kWriter.writeIfNonZero(TAG_OPEN_BORDERS_TRADING_COUNT, m_iOpenBordersTradingCount);
+		kWriter.writeIfNonZero(TAG_DEFENSIVE_PACT_TRADING_COUNT, m_iDefensivePactTradingCount);
+		kWriter.writeIfNonZero(TAG_PERMANENT_ALLIANCE_TRADING_COUNT, m_iPermanentAllianceTradingCount);
+		kWriter.writeIfNonZero(TAG_VASSAL_TRADING_COUNT, m_iVassalTradingCount);
+		kWriter.writeIfNonZero(TAG_BRIDGE_BUILDING_COUNT, m_iBridgeBuildingCount);
+		kWriter.writeIfNonZero(TAG_IRRIGATION_COUNT, m_iIrrigationCount);
+		kWriter.writeIfNonZero(TAG_IGNORE_IRRIGATION_COUNT, m_iIgnoreIrrigationCount);
+		kWriter.writeIfNonZero(TAG_WATER_WORK_COUNT, m_iWaterWorkCount);
+		kWriter.writeIfNonZero(TAG_VASSAL_POWER, m_iVassalPower);
+		kWriter.writeIfNonZero(TAG_MASTER_POWER, m_iMasterPower);
+		kWriter.writeIfNonZero(TAG_ENEMY_WAR_WEARINESS_MODIFIER, m_iEnemyWarWearinessModifier);
+		kWriter.writeIfNonZero(TAG_RIVER_TRADE_COUNT, m_iRiverTradeCount);
+		kWriter.writeIfNonZero(TAG_ESPIONAGE_POINTS_EVER, m_iEspionagePointsEver);
+		kWriter.writeIfNonZero(TAG_MAP_CENTERING, m_bMapCentering);
+		kWriter.writeIfNonZero(TAG_CAPITULATED, m_bCapitulated);
+		kWriter.end();
+	}
 
 //FfH Traits: Added by Kael 08/02/2007
 	pStream->Write(m_bBarbarianAlly);

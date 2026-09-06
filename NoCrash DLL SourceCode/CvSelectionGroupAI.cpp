@@ -10,6 +10,8 @@
 #include "CvGameCoreUtils.h"
 #include "FProfiler.h"
 #include "CVInfos.h"
+#include "CvSaveSizeProbe.h"
+#include "CvTaggedStream.h"
 
 // Public Functions...
 
@@ -1057,19 +1059,51 @@ CvUnit* CvSelectionGroupAI::AI_ejectBestDefender(CvPlot* pDefendPlot)
 
 // Protected Functions...
 
+// Tag numbers for this class's tagged record. APPEND ONLY: renumbering an existing
+// tag makes every save written before the change decode that field as something
+// else, silently. A retired field leaves its number unused rather than handing it on.
+namespace
+{
+	enum SelectionGroupAITag
+	{
+		TAG_MISSION_AIX = 1,
+		TAG_MISSION_AIY,
+		TAG_FORCE_SEPARATE,
+		TAG_MISSION_AITYPE,
+	};
+}
 void CvSelectionGroupAI::read(FDataStreamBase* pStream)
 {
 	CvSelectionGroup::read(pStream);
 
 	uint uiFlag=0;
 	pStream->Read(&uiFlag);	// flags for expansion
-
-	pStream->Read(&m_iMissionAIX);
-	pStream->Read(&m_iMissionAIY);
-
-	pStream->Read(&m_bForceSeparate);
-
-	pStream->Read((int*)&m_eMissionAIType);
+	if (uiFlag >= 1)
+	{
+		// Tagged. Order does not matter, an unknown tag is stepped over, and a field
+		// the writer omitted keeps what reset() gave it.
+		CvTagReader kReader(pStream);
+		while (kReader.next())
+		{
+			switch (kReader.tag())
+			{
+			case TAG_MISSION_AIX: m_iMissionAIX = kReader.asInt(); break;
+			case TAG_MISSION_AIY: m_iMissionAIY = kReader.asInt(); break;
+			case TAG_FORCE_SEPARATE: m_bForceSeparate = kReader.asBool(); break;
+			case TAG_MISSION_AITYPE: m_eMissionAIType = (MissionAITypes)kReader.asInt(); break;
+			default: kReader.skip(); break;
+			}
+		}
+	}
+	else
+	{
+		// Positional, exactly as it always was. This branch is the compatibility
+		// shim; it is not new code and must not be edited.
+		pStream->Read(&m_iMissionAIX);
+		pStream->Read(&m_iMissionAIY);
+		pStream->Read(&m_bForceSeparate);
+		pStream->Read((int*)&m_eMissionAIType);
+	}
 
 	pStream->Read((int*)&m_missionAIUnit.eOwner);
 	pStream->Read(&m_missionAIUnit.iID);
@@ -1082,17 +1116,19 @@ void CvSelectionGroupAI::read(FDataStreamBase* pStream)
 
 void CvSelectionGroupAI::write(FDataStreamBase* pStream)
 {
+	CvSaveSizeProbe::countObject("CvSelectionGroupAI");
 	CvSelectionGroup::write(pStream);
 
-	uint uiFlag=0;
+	uint uiFlag=1;	// 1: tagged fields (CvTaggedStream)
 	pStream->Write(uiFlag);		// flag for expansion
-
-	pStream->Write(m_iMissionAIX);
-	pStream->Write(m_iMissionAIY);
-
-	pStream->Write(m_bForceSeparate);
-
-	pStream->Write(m_eMissionAIType);
+	{
+		CvTagWriter kWriter(pStream);
+		kWriter.write(TAG_MISSION_AIX, m_iMissionAIX);
+		kWriter.write(TAG_MISSION_AIY, m_iMissionAIY);
+		kWriter.write(TAG_FORCE_SEPARATE, m_bForceSeparate);
+		kWriter.write(TAG_MISSION_AITYPE, (int)m_eMissionAIType);
+		kWriter.end();
+	}
 
 	pStream->Write(m_missionAIUnit.eOwner);
 	pStream->Write(m_missionAIUnit.iID);

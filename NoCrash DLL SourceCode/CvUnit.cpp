@@ -26,6 +26,9 @@
 #include "FProfiler.h"
 #include "CvPopupInfo.h"
 #include "CvArtFileMgr.h"
+#include "CvSaveManifest.h"
+#include "CvTaggedStream.h"
+#include "CvSaveSizeProbe.h"
 
 // Public Functions...
 
@@ -30111,6 +30114,57 @@ void CvUnit::betray(PlayerTypes ePlayer)
 		pUnit->setDuration(0);
 }
 
+// Tag numbers for this class's tagged record. APPEND ONLY: renumbering an existing
+// tag makes every save written before the change decode that field as something
+// else, silently. A retired field leaves its number unused rather than handing it on.
+namespace
+{
+	enum UnitTag
+	{
+		TAG_ID = 1,
+		TAG_GROUP_ID,
+		TAG_HOT_KEY_NUMBER,
+		TAG_X,
+		TAG_Y,
+		TAG_LAST_MOVE_TURN,
+		TAG_RECON_X,
+		TAG_RECON_Y,
+		TAG_GAME_TURN_CREATED,
+		TAG_DAMAGE,
+		TAG_MOVES,
+		TAG_EXPERIENCE,
+		TAG_LEVEL,
+		TAG_CARGO,
+		TAG_SPECIAL_CARGO,
+		TAG_DOMAIN_CARGO,
+		TAG_CARGO_CAPACITY,
+		TAG_MAX_EXP_REWARD,
+		TAG_ATTACK_PLOT_X,
+		TAG_ATTACK_PLOT_Y,
+		TAG_COMBAT_TIMER,
+		TAG_COMBAT_FIRST_STRIKES,
+		TAG_FORTIFY_TURNS,
+		TAG_BLITZ_COUNT,
+		TAG_TRADE_DEFENDER_COUNT,
+		TAG_AMPHIB_COUNT,
+		TAG_RIVER_COUNT,
+		TAG_ENEMY_ROUTE_COUNT,
+		TAG_ALWAYS_HEAL_COUNT,
+		TAG_HILLS_DOUBLE_MOVE_COUNT,
+		TAG_IMMUNE_TO_FIRST_STRIKES_COUNT,
+		TAG_EXTRA_VISIBILITY_RANGE,
+		TAG_EXTRA_MOVES,
+		TAG_EXTRA_MOVE_DISCOUNT,
+		TAG_EXTRA_AIR_RANGE,
+		TAG_EXTRA_INTERCEPT,
+		TAG_EXTRA_EVASION,
+		TAG_EXTRA_FIRST_STRIKES,
+		TAG_EXTRA_CHANCE_FIRST_STRIKES,
+		TAG_EXTRA_WITHDRAWAL,
+		TAG_EXTRA_ENEMY_WITHDRAWAL,
+		TAG_EXTRA_COLLATERAL_DAMAGE,
+	};
+}
 void CvUnit::read(FDataStreamBase* pStream)
 {
 	// Init data before load
@@ -30118,49 +30172,109 @@ void CvUnit::read(FDataStreamBase* pStream)
 
 	uint uiFlag=0;
 	pStream->Read(&uiFlag);	// flags for expansion
+	if (uiFlag >= 3)
+	{
+		// Tagged. Order does not matter, an unknown tag is stepped over, and a field
+		// the writer omitted keeps what reset() gave it.
+		CvTagReader kReader(pStream);
+		while (kReader.next())
+		{
+			switch (kReader.tag())
+			{
+			case TAG_ID: m_iID = kReader.asInt(); break;
+			case TAG_GROUP_ID: m_iGroupID = kReader.asInt(); break;
+			case TAG_HOT_KEY_NUMBER: m_iHotKeyNumber = kReader.asInt(); break;
+			case TAG_X: m_iX = kReader.asInt(); break;
+			case TAG_Y: m_iY = kReader.asInt(); break;
+			case TAG_LAST_MOVE_TURN: m_iLastMoveTurn = kReader.asInt(); break;
+			case TAG_RECON_X: m_iReconX = kReader.asInt(); break;
+			case TAG_RECON_Y: m_iReconY = kReader.asInt(); break;
+			case TAG_GAME_TURN_CREATED: m_iGameTurnCreated = kReader.asInt(); break;
+			case TAG_DAMAGE: m_iDamage = kReader.asInt(); break;
+			case TAG_MOVES: m_iMoves = kReader.asInt(); break;
+			case TAG_EXPERIENCE: m_iExperience = kReader.asInt(); break;
+			case TAG_LEVEL: m_iLevel = kReader.asInt(); break;
+			case TAG_CARGO: m_iCargo = kReader.asInt(); break;
+			case TAG_SPECIAL_CARGO: m_iSpecialCargo = CvSaveManifest::remapId(CvSaveManifest::CONTENT_SPECIAL_UNIT, kReader.asInt()); break;
+			case TAG_DOMAIN_CARGO: m_iDomainCargo = kReader.asInt(); break;
+			case TAG_CARGO_CAPACITY: m_iCargoCapacity = kReader.asInt(); break;
+			case TAG_MAX_EXP_REWARD: m_iMaxExpReward = kReader.asInt(); break;
+			case TAG_ATTACK_PLOT_X: m_iAttackPlotX = kReader.asInt(); break;
+			case TAG_ATTACK_PLOT_Y: m_iAttackPlotY = kReader.asInt(); break;
+			case TAG_COMBAT_TIMER: m_iCombatTimer = kReader.asInt(); break;
+			case TAG_COMBAT_FIRST_STRIKES: m_iCombatFirstStrikes = kReader.asInt(); break;
+			case TAG_FORTIFY_TURNS: m_iFortifyTurns = kReader.asInt(); break;
+			case TAG_BLITZ_COUNT: m_iBlitzCount = kReader.asInt(); break;
+			case TAG_TRADE_DEFENDER_COUNT: m_iTradeDefenderCount = kReader.asInt(); break;
+			case TAG_AMPHIB_COUNT: m_iAmphibCount = kReader.asInt(); break;
+			case TAG_RIVER_COUNT: m_iRiverCount = kReader.asInt(); break;
+			case TAG_ENEMY_ROUTE_COUNT: m_iEnemyRouteCount = kReader.asInt(); break;
+			case TAG_ALWAYS_HEAL_COUNT: m_iAlwaysHealCount = kReader.asInt(); break;
+			case TAG_HILLS_DOUBLE_MOVE_COUNT: m_iHillsDoubleMoveCount = kReader.asInt(); break;
+			case TAG_IMMUNE_TO_FIRST_STRIKES_COUNT: m_iImmuneToFirstStrikesCount = kReader.asInt(); break;
+			case TAG_EXTRA_VISIBILITY_RANGE: m_iExtraVisibilityRange = kReader.asInt(); break;
+			case TAG_EXTRA_MOVES: m_iExtraMoves = kReader.asInt(); break;
+			case TAG_EXTRA_MOVE_DISCOUNT: m_iExtraMoveDiscount = kReader.asInt(); break;
+			case TAG_EXTRA_AIR_RANGE: m_iExtraAirRange = kReader.asInt(); break;
+			case TAG_EXTRA_INTERCEPT: m_iExtraIntercept = kReader.asInt(); break;
+			case TAG_EXTRA_EVASION: m_iExtraEvasion = kReader.asInt(); break;
+			case TAG_EXTRA_FIRST_STRIKES: m_iExtraFirstStrikes = kReader.asInt(); break;
+			case TAG_EXTRA_CHANCE_FIRST_STRIKES: m_iExtraChanceFirstStrikes = kReader.asInt(); break;
+			case TAG_EXTRA_WITHDRAWAL: m_iExtraWithdrawal = kReader.asInt(); break;
+			case TAG_EXTRA_ENEMY_WITHDRAWAL: m_iExtraEnemyWithdrawal = kReader.asInt(); break;
+			case TAG_EXTRA_COLLATERAL_DAMAGE: m_iExtraCollateralDamage = kReader.asInt(); break;
+			default: kReader.skip(); break;
+			}
+		}
+	}
+	else
+	{
+		// Positional, exactly as it always was. This branch is the compatibility
+		// shim; it is not new code and must not be edited.
+		pStream->Read(&m_iID);
+		pStream->Read(&m_iGroupID);
+		pStream->Read(&m_iHotKeyNumber);
+		pStream->Read(&m_iX);
+		pStream->Read(&m_iY);
+		pStream->Read(&m_iLastMoveTurn);
+		pStream->Read(&m_iReconX);
+		pStream->Read(&m_iReconY);
+		pStream->Read(&m_iGameTurnCreated);
+		pStream->Read(&m_iDamage);
+		pStream->Read(&m_iMoves);
+		pStream->Read(&m_iExperience);
+		pStream->Read(&m_iLevel);
+		pStream->Read(&m_iCargo);
+		CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_SPECIAL_UNIT, &m_iSpecialCargo);
+		pStream->Read(&m_iDomainCargo);
+		pStream->Read(&m_iCargoCapacity);
+		pStream->Read(&m_iMaxExpReward);
+		pStream->Read(&m_iAttackPlotX);
+		pStream->Read(&m_iAttackPlotY);
+		pStream->Read(&m_iCombatTimer);
+		pStream->Read(&m_iCombatFirstStrikes);
+		pStream->Read(&m_iFortifyTurns);
+		pStream->Read(&m_iBlitzCount);
+		pStream->Read(&m_iTradeDefenderCount);
+		pStream->Read(&m_iAmphibCount);
+		pStream->Read(&m_iRiverCount);
+		pStream->Read(&m_iEnemyRouteCount);
+		pStream->Read(&m_iAlwaysHealCount);
+		pStream->Read(&m_iHillsDoubleMoveCount);
+		pStream->Read(&m_iImmuneToFirstStrikesCount);
+		pStream->Read(&m_iExtraVisibilityRange);
+		pStream->Read(&m_iExtraMoves);
+		pStream->Read(&m_iExtraMoveDiscount);
+		pStream->Read(&m_iExtraAirRange);
+		pStream->Read(&m_iExtraIntercept);
+		pStream->Read(&m_iExtraEvasion);
+		pStream->Read(&m_iExtraFirstStrikes);
+		pStream->Read(&m_iExtraChanceFirstStrikes);
+		pStream->Read(&m_iExtraWithdrawal);
+		pStream->Read(&m_iExtraEnemyWithdrawal);
+		pStream->Read(&m_iExtraCollateralDamage);
+	}
 
-	pStream->Read(&m_iID);
-	pStream->Read(&m_iGroupID);
-	pStream->Read(&m_iHotKeyNumber);
-	pStream->Read(&m_iX);
-	pStream->Read(&m_iY);
-	pStream->Read(&m_iLastMoveTurn);
-	pStream->Read(&m_iReconX);
-	pStream->Read(&m_iReconY);
-	pStream->Read(&m_iGameTurnCreated);
-	pStream->Read(&m_iDamage);
-	pStream->Read(&m_iMoves);
-	pStream->Read(&m_iExperience);
-	pStream->Read(&m_iLevel);
-	pStream->Read(&m_iCargo);
-	pStream->Read(&m_iSpecialCargo);
-	pStream->Read(&m_iDomainCargo);
-	pStream->Read(&m_iCargoCapacity);
-	pStream->Read(&m_iMaxExpReward);
-	pStream->Read(&m_iAttackPlotX);
-	pStream->Read(&m_iAttackPlotY);
-	pStream->Read(&m_iCombatTimer);
-	pStream->Read(&m_iCombatFirstStrikes);
-	pStream->Read(&m_iFortifyTurns);
-	pStream->Read(&m_iBlitzCount);
-	pStream->Read(&m_iTradeDefenderCount);
-	pStream->Read(&m_iAmphibCount);
-	pStream->Read(&m_iRiverCount);
-	pStream->Read(&m_iEnemyRouteCount);
-	pStream->Read(&m_iAlwaysHealCount);
-	pStream->Read(&m_iHillsDoubleMoveCount);
-	pStream->Read(&m_iImmuneToFirstStrikesCount);
-	pStream->Read(&m_iExtraVisibilityRange);
-	pStream->Read(&m_iExtraMoves);
-	pStream->Read(&m_iExtraMoveDiscount);
-	pStream->Read(&m_iExtraAirRange);
-	pStream->Read(&m_iExtraIntercept);
-	pStream->Read(&m_iExtraEvasion);
-	pStream->Read(&m_iExtraFirstStrikes);
-	pStream->Read(&m_iExtraChanceFirstStrikes);
-	pStream->Read(&m_iExtraWithdrawal);
-	pStream->Read(&m_iExtraEnemyWithdrawal);
-	pStream->Read(&m_iExtraCollateralDamage);
 /*************************************************************************************************/
 /**	Updated Flanking						2011-10-30									Jheral	**/
 /**																								**/
@@ -30242,9 +30356,9 @@ void CvUnit::read(FDataStreamBase* pStream)
 /**	New Tag Defs	(UnitInfos)				05/15/08											**/
 /**										Read Data from Save File								**/
 /*************************************************************************************************/
-	pStream->Read(GC.getNumPromotionInfos(), m_pabRealPromotion);
-	pStream->Read(GC.getNumPromotionInfos(), m_pabPermanentSpellPromotion);
-	pStream->Read(GC.getNumPromotionInfos(), m_aiSupplementalPromotions);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PROMOTION, m_pabRealPromotion);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PROMOTION, m_pabPermanentSpellPromotion);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PROMOTION, m_aiSupplementalPromotions);
 /************************************************************************************************/
 /* Influence Driven War                   06/08/10                                 Valkrionn    */
 /*                                                                                              */
@@ -30431,7 +30545,7 @@ void CvUnit::read(FDataStreamBase* pStream)
 	pStream->Read(NUM_YIELD_TYPES, m_piYieldForLoss);
 	pStream->Read(NUM_COMMERCE_TYPES, m_piCommerceFromWin);
 	pStream->Read(NUM_COMMERCE_TYPES, m_piCommerceForLoss);
-	pStream->Read(GC.getNumPromotionInfos(), m_piPromotionDuration);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PROMOTION, m_piPromotionDuration);
 	int iNumInvisTypes;
 	pStream->Read(&iNumInvisTypes);
 	for(int i=0;i<iNumInvisTypes;i++)
@@ -30448,12 +30562,12 @@ void CvUnit::read(FDataStreamBase* pStream)
 		pStream->Read(&iSeeInvisibleType);
 		m_aiSeeInvisibleTypes.push_back(iSeeInvisibleType);
 	}
-	pStream->Read(GC.getNumPromotionInfos(), m_piAllowPromotion);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PROMOTION, m_piAllowPromotion);
 /*************************************************************************************************/
 /**	Second Job							08/28/10									Valkrionn	**/
 /**				Allows units to qualify for the promotions of other UnitCombats					**/
 /*************************************************************************************************/
-	pStream->Read(GC.getNumUnitCombatInfos(), m_piSecondaryUnitCombat);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT_COMBAT, m_piSecondaryUnitCombat);
 /*************************************************************************************************/
 /**	TempCombat									END												**/
 /*************************************************************************************************/
@@ -30462,15 +30576,15 @@ void CvUnit::read(FDataStreamBase* pStream)
 /**																								**/
 /**					Vastly improved Affinity system, open to many tags							**/
 /*************************************************************************************************/
-	pStream->Read(GC.getNumAffinityInfos(), m_piAffinities);
-	pStream->Read(GC.getNumAffinityInfos(), m_piAffinityApplications);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_AFFINITY, m_piAffinities);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_AFFINITY, m_piAffinityApplications);
 /*************************************************************************************************/
 /**	Better Affinity							END													**/
 /*************************************************************************************************/
-	pStream->Read(GC.getNumPromotionInfos(), m_piDenyPromotion);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PROMOTION, m_piDenyPromotion);
 	pStream->Read(&m_iSpawnPlotX);
 	pStream->Read(&m_iSpawnPlotY);
-	pStream->Read(&m_eSpawnImprovementType);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_IMPROVEMENT, &m_eSpawnImprovementType);
 	pStream->Read(&m_iNoBadExplore);
 	pStream->ReadString(m_szQuote);
 	pStream->ReadString(m_szImage);
@@ -30555,15 +30669,15 @@ void CvUnit::read(FDataStreamBase* pStream)
 /**							Allows Multiple Invisible types on a Unit							**/
 /*************************************************************************************************/
 /**								---- Start Original Code ----									**
-	pStream->Read(&m_iInvisibleType);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_INVISIBLE, &m_iInvisibleType);
 /**								----  End Original Code  ----									**/
 /*************************************************************************************************/
 /**	CandyMan								END													**/
 /*************************************************************************************************/
-	pStream->Read(&m_iRace);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_PROMOTION, &m_iRace);
 	pStream->Read(&m_iOriginalCiv);
-	pStream->Read(&m_iGraphicalAddOnPromotion);
-	pStream->Read(&m_iReligion);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_PROMOTION, &m_iGraphicalAddOnPromotion);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_RELIGION, &m_iReligion);
 	pStream->Read(&m_iResist);
 	pStream->Read(&m_iResistModify);
 	pStream->Read(&m_iScenarioCounter);
@@ -30571,21 +30685,21 @@ void CvUnit::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iSpellDamageModify);
 	pStream->Read(&m_iSummoner);
 	pStream->Read(&m_iTotalDamageTypeCombat);
-	pStream->Read(&m_iUnitArtStyleType);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_UNIT_ART_STYLE_TYPE, &m_iUnitArtStyleType);
 	pStream->Read(&m_iWorkRateModify);
 	pStream->Read(&m_iWorkRateModifier);
-	pStream->Read(GC.getNumBonusInfos(), m_paiBonusAffinity);
-	pStream->Read(GC.getNumBonusInfos(), m_paiBonusAffinityAmount);
-	pStream->Read(GC.getNumDamageTypeInfos(), m_paiDamageTypeCombat);
-	pStream->Read(GC.getNumDamageTypeInfos(), m_paiDamageTypeResist);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_paiBonusAffinity);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_paiBonusAffinityAmount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_DAMAGE_TYPE, m_paiDamageTypeCombat);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_DAMAGE_TYPE, m_paiDamageTypeResist);
 //FfH: End Add
 
 	pStream->Read((int*)&m_eOwner);
 	pStream->Read((int*)&m_eCapturingPlayer);
-	pStream->Read((int*)&m_eUnitType);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_UNIT, &m_eUnitType);
 	FAssert(NO_UNIT != m_eUnitType);
 	m_pUnitInfo = (NO_UNIT != m_eUnitType) ? &GC.getUnitInfo(m_eUnitType) : NULL;
-	pStream->Read((int*)&m_eLeaderUnitType);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_UNIT, &m_eLeaderUnitType);
 
 	pStream->Read((int*)&m_combatUnit.eOwner);
 	pStream->Read(&m_combatUnit.iID);
@@ -30607,23 +30721,23 @@ void CvUnit::read(FDataStreamBase* pStream)
 /**				Integer Tracking of Promotions for Containers and Stack Effects					**/
 /*************************************************************************************************/
 /**								---- Start Original Code ----									**
-	pStream->Read(GC.getNumPromotionInfos(), m_pabHasPromotion);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PROMOTION, m_pabHasPromotion);
 /**								----  End Original Code  ----									**/
-	pStream->Read(GC.getNumPromotionInfos(), m_paiHasPromotion);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PROMOTION, m_paiHasPromotion);
 /*************************************************************************************************/
 /**	Tweak									END													**/
 /*************************************************************************************************/
-	pStream->Read(GC.getNumImprovementInfos(), m_paiNoBadExploreImprovement);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_IMPROVEMENT, m_paiNoBadExploreImprovement);
 
-	pStream->Read(GC.getNumTerrainInfos(), m_paiTerrainDoubleMoveCount);
-	pStream->Read(GC.getNumFeatureInfos(), m_paiFeatureDoubleMoveCount);
-	pStream->Read(GC.getNumTerrainInfos(), m_paiExtraTerrainAttackPercent);
-	pStream->Read(GC.getNumTerrainInfos(), m_paiExtraTerrainDefensePercent);
-	pStream->Read(GC.getNumFeatureInfos(), m_paiExtraFeatureAttackPercent);
-	pStream->Read(GC.getNumFeatureInfos(), m_paiExtraFeatureDefensePercent);
-	pStream->Read(GC.getNumPlotEffectInfos(), m_paiPlotEffectDoubleMoveCount);
-	pStream->Read(GC.getNumPlotEffectInfos(), m_paiExtraPlotEffectAttackPercent);
-	pStream->Read(GC.getNumPlotEffectInfos(), m_paiExtraPlotEffectDefensePercent);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_TERRAIN, m_paiTerrainDoubleMoveCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_FEATURE, m_paiFeatureDoubleMoveCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_TERRAIN, m_paiExtraTerrainAttackPercent);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_TERRAIN, m_paiExtraTerrainDefensePercent);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_FEATURE, m_paiExtraFeatureAttackPercent);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_FEATURE, m_paiExtraFeatureDefensePercent);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PLOT_EFFECT, m_paiPlotEffectDoubleMoveCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PLOT_EFFECT, m_paiExtraPlotEffectAttackPercent);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PLOT_EFFECT, m_paiExtraPlotEffectDefensePercent);
 /*************************************************************************************************/
 /**	GWS										2010-08-23									Milaga	**/
 /**																								**/
@@ -30631,20 +30745,20 @@ void CvUnit::read(FDataStreamBase* pStream)
 /*************************************************************************************************/
 	pStream->Read(&m_iPeakCost);
 	pStream->Read(&m_iHillCost);
-	pStream->Read(GC.getNumTerrainInfos(), m_paiTerrainCost);
-	pStream->Read(GC.getNumFeatureInfos(), m_paiFeatureCost);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_TERRAIN, m_paiTerrainCost);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_FEATURE, m_paiFeatureCost);
 /*************************************************************************************************/
 /**	GWS										END													**/
 /*************************************************************************************************/
-	pStream->Read(GC.getNumUnitCombatInfos(), m_paiExtraUnitCombatModifier);
-	pStream->Read(GC.getNumSpellClassInfos(), m_paiExtraSpellClassPower);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT_COMBAT, m_paiExtraUnitCombatModifier);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPELL_CLASS, m_paiExtraSpellClassPower);
 /*************************************************************************************************/
 /**	AutoCast								02/09/10									Snarko	**/
 /**																								**/
 /**						Making the human able to set units to autocast spells					**/
 /*************************************************************************************************/
-	pStream->Read((int*)&m_eDeathListTarget);
-	pStream->Read((int*)&m_eAutoCast);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_DEATH_LIST, &m_eDeathListTarget);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_SPELL, &m_eAutoCast);
 	pStream->Read(&m_bAutoCastPre);
 /*************************************************************************************************/
 /**	Autocast								END													**/
@@ -30668,51 +30782,56 @@ void CvUnit::read(FDataStreamBase* pStream)
 
 void CvUnit::write(FDataStreamBase* pStream)
 {
-	uint uiFlag=2;
+	CvSaveSizeProbe::countObject("CvUnit");
+	uint uiFlag=3;	// 3: tagged fields (CvTaggedStream)
 	pStream->Write(uiFlag);		// flag for expansion
+	{
+		CvTagWriter kWriter(pStream, "CvUnit");
+		kWriter.write(TAG_ID, m_iID);
+		kWriter.write(TAG_GROUP_ID, m_iGroupID);
+		kWriter.write(TAG_HOT_KEY_NUMBER, m_iHotKeyNumber);
+		kWriter.write(TAG_X, m_iX);
+		kWriter.write(TAG_Y, m_iY);
+		kWriter.writeIfNonZero(TAG_LAST_MOVE_TURN, m_iLastMoveTurn);
+		kWriter.write(TAG_RECON_X, m_iReconX);
+		kWriter.write(TAG_RECON_Y, m_iReconY);
+		kWriter.writeIfNonZero(TAG_GAME_TURN_CREATED, m_iGameTurnCreated);
+		kWriter.writeIfNonZero(TAG_DAMAGE, m_iDamage);
+		kWriter.writeIfNonZero(TAG_MOVES, m_iMoves);
+		kWriter.writeIfNonZero(TAG_EXPERIENCE, m_iExperience);
+		kWriter.write(TAG_LEVEL, m_iLevel);
+		kWriter.writeIfNonZero(TAG_CARGO, m_iCargo);
+		kWriter.write(TAG_SPECIAL_CARGO, m_iSpecialCargo);
+		kWriter.write(TAG_DOMAIN_CARGO, m_iDomainCargo);
+		kWriter.write(TAG_CARGO_CAPACITY, m_iCargoCapacity);
+		kWriter.write(TAG_MAX_EXP_REWARD, m_iMaxExpReward);
+		kWriter.write(TAG_ATTACK_PLOT_X, m_iAttackPlotX);
+		kWriter.write(TAG_ATTACK_PLOT_Y, m_iAttackPlotY);
+		kWriter.writeIfNonZero(TAG_COMBAT_TIMER, m_iCombatTimer);
+		kWriter.writeIfNonZero(TAG_COMBAT_FIRST_STRIKES, m_iCombatFirstStrikes);
+		kWriter.writeIfNonZero(TAG_FORTIFY_TURNS, m_iFortifyTurns);
+		kWriter.writeIfNonZero(TAG_BLITZ_COUNT, m_iBlitzCount);
+		kWriter.writeIfNonZero(TAG_TRADE_DEFENDER_COUNT, m_iTradeDefenderCount);
+		kWriter.writeIfNonZero(TAG_AMPHIB_COUNT, m_iAmphibCount);
+		kWriter.writeIfNonZero(TAG_RIVER_COUNT, m_iRiverCount);
+		kWriter.writeIfNonZero(TAG_ENEMY_ROUTE_COUNT, m_iEnemyRouteCount);
+		kWriter.writeIfNonZero(TAG_ALWAYS_HEAL_COUNT, m_iAlwaysHealCount);
+		kWriter.writeIfNonZero(TAG_HILLS_DOUBLE_MOVE_COUNT, m_iHillsDoubleMoveCount);
+		kWriter.writeIfNonZero(TAG_IMMUNE_TO_FIRST_STRIKES_COUNT, m_iImmuneToFirstStrikesCount);
+		kWriter.writeIfNonZero(TAG_EXTRA_VISIBILITY_RANGE, m_iExtraVisibilityRange);
+		kWriter.writeIfNonZero(TAG_EXTRA_MOVES, m_iExtraMoves);
+		kWriter.writeIfNonZero(TAG_EXTRA_MOVE_DISCOUNT, m_iExtraMoveDiscount);
+		kWriter.writeIfNonZero(TAG_EXTRA_AIR_RANGE, m_iExtraAirRange);
+		kWriter.writeIfNonZero(TAG_EXTRA_INTERCEPT, m_iExtraIntercept);
+		kWriter.writeIfNonZero(TAG_EXTRA_EVASION, m_iExtraEvasion);
+		kWriter.writeIfNonZero(TAG_EXTRA_FIRST_STRIKES, m_iExtraFirstStrikes);
+		kWriter.writeIfNonZero(TAG_EXTRA_CHANCE_FIRST_STRIKES, m_iExtraChanceFirstStrikes);
+		kWriter.writeIfNonZero(TAG_EXTRA_WITHDRAWAL, m_iExtraWithdrawal);
+		kWriter.writeIfNonZero(TAG_EXTRA_ENEMY_WITHDRAWAL, m_iExtraEnemyWithdrawal);
+		kWriter.writeIfNonZero(TAG_EXTRA_COLLATERAL_DAMAGE, m_iExtraCollateralDamage);
+		kWriter.end();
+	}
 
-	pStream->Write(m_iID);
-	pStream->Write(m_iGroupID);
-	pStream->Write(m_iHotKeyNumber);
-	pStream->Write(m_iX);
-	pStream->Write(m_iY);
-	pStream->Write(m_iLastMoveTurn);
-	pStream->Write(m_iReconX);
-	pStream->Write(m_iReconY);
-	pStream->Write(m_iGameTurnCreated);
-	pStream->Write(m_iDamage);
-	pStream->Write(m_iMoves);
-	pStream->Write(m_iExperience);
-	pStream->Write(m_iLevel);
-	pStream->Write(m_iCargo);
-	pStream->Write(m_iSpecialCargo);
-	pStream->Write(m_iDomainCargo);
-	pStream->Write(m_iCargoCapacity);
-	pStream->Write(m_iMaxExpReward);
-	pStream->Write(m_iAttackPlotX);
-	pStream->Write(m_iAttackPlotY);
-	pStream->Write(m_iCombatTimer);
-	pStream->Write(m_iCombatFirstStrikes);
-	pStream->Write(m_iFortifyTurns);
-	pStream->Write(m_iBlitzCount);
-	pStream->Write(m_iTradeDefenderCount);
-	pStream->Write(m_iAmphibCount);
-	pStream->Write(m_iRiverCount);
-	pStream->Write(m_iEnemyRouteCount);
-	pStream->Write(m_iAlwaysHealCount);
-	pStream->Write(m_iHillsDoubleMoveCount);
-	pStream->Write(m_iImmuneToFirstStrikesCount);
-	pStream->Write(m_iExtraVisibilityRange);
-	pStream->Write(m_iExtraMoves);
-	pStream->Write(m_iExtraMoveDiscount);
-	pStream->Write(m_iExtraAirRange);
-	pStream->Write(m_iExtraIntercept);
-	pStream->Write(m_iExtraEvasion);
-	pStream->Write(m_iExtraFirstStrikes);
-	pStream->Write(m_iExtraChanceFirstStrikes);
-	pStream->Write(m_iExtraWithdrawal);
-	pStream->Write(m_iExtraEnemyWithdrawal);
-	pStream->Write(m_iExtraCollateralDamage);
 /*************************************************************************************************/
 /**	Updated Flanking						2011-10-30									Jheral	**/
 /**																								**/

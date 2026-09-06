@@ -13,6 +13,7 @@
 
 #include "CvGameCoreDLL.h"
 #include "CvUnit.h"
+#include "CvSaveManifest.h"
 //#include "CvStructs.h"
 
 /*************************************************************************************************/
@@ -40,7 +41,7 @@ void EventTriggeredData::setID(int iID)
 void EventTriggeredData::read(FDataStreamBase* pStream)
 {
 	pStream->Read(&m_iId);
-	pStream->Read((int*)&m_eTrigger);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_EVENT_TRIGGER, &m_eTrigger);
 	pStream->Read(&m_iTurn);
 	pStream->Read((int*)&m_ePlayer);
 	pStream->Read(&m_iCityId);
@@ -49,9 +50,9 @@ void EventTriggeredData::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iUnitId);
 	pStream->Read((int*)&m_eOtherPlayer);
 	pStream->Read(&m_iOtherPlayerCityId);
-	pStream->Read((int*)&m_eReligion);
-	pStream->Read((int*)&m_eCorporation);
-	pStream->Read((int*)&m_eBuilding);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_RELIGION, &m_eReligion);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_CORPORATION, &m_eCorporation);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_BUILDING, &m_eBuilding);
 	pStream->ReadString(m_szText);
 	pStream->ReadString(m_szGlobalText);
 }
@@ -717,34 +718,34 @@ void TraitTriggeredData::read(FDataStreamBase* pStream)
 	pStream->Read(&m_bPeak);
 	pStream->Read(&m_bHappy);
 	pStream->Read(&m_bHealth);
-	pStream->Read(&m_iReligion);
-	pStream->Read(&m_iOldReligion);
-	pStream->Read(&m_iRace);
-	pStream->Read(&m_iKilledRace);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_RELIGION, &m_iReligion);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_RELIGION, &m_iOldReligion);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_PROMOTION, &m_iRace);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_PROMOTION, &m_iKilledRace);
 	pStream->Read(&m_iTrade);
-	pStream->Read(&m_iImprovement);
-	pStream->Read(&m_iRoute);
-	pStream->Read(&m_iProject);
-	pStream->Read(&m_iTerrain);
-	pStream->Read(&m_iFeature);
-	pStream->Read(&m_iBonus);
-	pStream->Read(&m_iTech);
-	pStream->Read(&m_iHurry);
-	pStream->Read(&m_iUnitClass);
-	pStream->Read(&m_iKilledUnitClass);
-	pStream->Read(&m_iPromotion);
-	pStream->Read(&m_iSpell);
-	pStream->Read(&m_iBuildingClass);
-	pStream->Read(&m_iUnitCombat);
-	pStream->Read(&m_iKilledUnitCombat);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_IMPROVEMENT, &m_iImprovement);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_ROUTE, &m_iRoute);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_PROJECT, &m_iProject);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_TERRAIN, &m_iTerrain);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_FEATURE, &m_iFeature);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_BONUS, &m_iBonus);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_TECH, &m_iTech);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_HURRY, &m_iHurry);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_UNIT_CLASS, &m_iUnitClass);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_UNIT_CLASS, &m_iKilledUnitClass);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_PROMOTION, &m_iPromotion);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_SPELL, &m_iSpell);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_BUILDING_CLASS, &m_iBuildingClass);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_UNIT_COMBAT, &m_iUnitCombat);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_UNIT_COMBAT, &m_iKilledUnitCombat);
 	pStream->Read(&m_iAlignment);
 	pStream->Read(&m_iKilledAlignment);
 	pStream->Read(&m_iEthicalAlignment);
 	pStream->Read(&m_iKilledEthicalAlignment);
-	pStream->Read(&m_iAlignmentStatus);
-	pStream->Read(&m_iKilledAlignmentStatus);
-	pStream->Read(&m_iEthicalAlignmentStatus);
-	pStream->Read(&m_iKilledEthicalAlignmentStatus);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_ALIGNMENT, &m_iAlignmentStatus);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_ALIGNMENT, &m_iKilledAlignmentStatus);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_ETHICAL_ALIGNMENT, &m_iEthicalAlignmentStatus);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_ETHICAL_ALIGNMENT, &m_iKilledEthicalAlignmentStatus);
 	pStream->Read(&m_bFirst);
 	pStream->Read(&m_bCoastal);
 	pStream->Read(&m_bConquest);
@@ -906,7 +907,7 @@ void SpellUpgradeData::read(FDataStreamBase* pStream)
 	pStream->Read(&iSummonNumber);
 	SAFE_DELETE_ARRAY(piSummonPromotionData);
 	piSummonPromotionData = new int[GC.getNumPromotionInfos()];
-	pStream->Read(GC.getNumPromotionInfos(), piSummonPromotionData);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PROMOTION, piSummonPromotionData);
 
 	pStream->Read(&bPermanent);
 	pStream->Read(&bSummonPermanent);
@@ -957,7 +958,7 @@ void DeadUnitData::read(FDataStreamBase* pStream)
 	pStream->Read(&iDeathList);
 	SAFE_DELETE_ARRAY(piPromotions);
 	piPromotions = new int[GC.getNumPromotionInfos()];
-	pStream->Read(GC.getNumPromotionInfos(), piPromotions);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PROMOTION, piPromotions);
 }
 
 void DeadUnitData::write(FDataStreamBase* pStream)

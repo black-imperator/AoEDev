@@ -42,6 +42,9 @@
 /************************************************************************************************/
 
 #include "CvSnarkoProfiler.h"
+#include "CvSaveManifest.h"
+#include "CvSaveSizeProbe.h"
+#include "CvTaggedStream.h"
 // Public Functions...
 
 CvPlayer::CvPlayer()
@@ -20922,6 +20925,117 @@ void CvPlayer::setPbemNewTurn(bool bNew)
 // read object from a stream
 // used during load
 //
+// Tag numbers for this class's tagged record. APPEND ONLY: renumbering an existing
+// tag makes every save written before the change decode that field as something
+// else, silently. A retired field leaves its number unused rather than handing it on.
+namespace
+{
+	enum PlayerTag
+	{
+		TAG_STARTING_X = 1,
+		TAG_STARTING_Y,
+		TAG_TOTAL_POPULATION,
+		TAG_TOTAL_LAND,
+		TAG_TOTAL_LAND_SCORED,
+		TAG_GOLD,
+		TAG_GOLD_PER_TURN,
+		TAG_ADVANCED_START_POINTS,
+		TAG_GOLDEN_AGE_TURNS,
+		TAG_NUM_UNIT_GOLDEN_AGES,
+		TAG_STRIKE_TURNS,
+		TAG_ANARCHY_TURNS,
+		TAG_MAX_ANARCHY_TURNS,
+		TAG_ANARCHY_MODIFIER,
+		TAG_GOLDEN_AGE_MODIFIER,
+		TAG_GLOBAL_HURRY_MODIFIER,
+		TAG_GREAT_PEOPLE_CREATED,
+		TAG_GREAT_GENERALS_CREATED,
+		TAG_GREAT_PEOPLE_THRESHOLD_MODIFIER,
+		TAG_GREAT_GENERALS_THRESHOLD_MODIFIER,
+		TAG_GREAT_PEOPLE_RATE_MODIFIER,
+		TAG_GREAT_GENERAL_RATE_MODIFIER,
+		TAG_DOMESTIC_GREAT_GENERAL_RATE_MODIFIER,
+		TAG_STATE_RELIGION_GREAT_PEOPLE_RATE_MODIFIER,
+		TAG_MAX_GLOBAL_BUILDING_PRODUCTION_MODIFIER,
+		TAG_MAX_TEAM_BUILDING_PRODUCTION_MODIFIER,
+		TAG_MAX_PLAYER_BUILDING_PRODUCTION_MODIFIER,
+		TAG_FREE_EXPERIENCE,
+		TAG_FEATURE_PRODUCTION_MODIFIER,
+		TAG_WORKER_SPEED_MODIFIER,
+		TAG_IMPROVEMENT_UPGRADE_RATE_MODIFIER,
+		TAG_MILITARY_PRODUCTION_MODIFIER,
+		TAG_SPACE_PRODUCTION_MODIFIER,
+		TAG_CITY_DEFENSE_MODIFIER,
+		TAG_NUM_NUKE_UNITS,
+		TAG_NUM_OUTSIDE_UNITS,
+		TAG_BASE_FREE_UNITS,
+		TAG_BASE_FREE_MILITARY_UNITS,
+		TAG_FREE_UNITS_POPULATION_PERCENT,
+		TAG_FREE_MILITARY_UNITS_POPULATION_PERCENT,
+		TAG_GOLD_PER_UNIT,
+		TAG_GOLD_PER_MILITARY_UNIT,
+		TAG_EXTRA_UNIT_COST,
+		TAG_NUM_MILITARY_UNITS,
+		TAG_HAPPY_PER_MILITARY_UNIT,
+		TAG_MILITARY_FOOD_PRODUCTION_COUNT,
+		TAG_CONSCRIPT_COUNT,
+		TAG_MAX_CONSCRIPT,
+		TAG_HIGHEST_UNIT_LEVEL,
+		TAG_OVERFLOW_RESEARCH,
+		TAG_NO_UNHEALTHY_POPULATION_COUNT,
+		TAG_EXP_IN_BORDER_MODIFIER,
+		TAG_BUILDING_ONLY_HEALTHY_COUNT,
+		TAG_RITUAL_PRODUCTION_MODIFIER,
+		TAG_DISTANCE_MAINTENANCE_MODIFIER,
+		TAG_NUM_CITIES_MAINTENANCE_MODIFIER,
+		TAG_CORPORATION_MAINTENANCE_MODIFIER,
+		TAG_TOTAL_MAINTENANCE,
+		TAG_UPKEEP_MODIFIER,
+		TAG_LEVEL_EXPERIENCE_MODIFIER,
+		TAG_EXTRA_HEALTH,
+		TAG_EXTRA_GROWTH_THRESHOLD,
+		TAG_ACGROWTH_THRESHOLD,
+		TAG_CRIME_PER_TURN,
+		TAG_BUILDING_GOOD_HEALTH,
+		TAG_BUILDING_BAD_HEALTH,
+		TAG_EXTRA_HAPPINESS,
+		TAG_BUILDING_HAPPINESS,
+		TAG_LARGEST_CITY_HAPPINESS,
+		TAG_WAR_WEARINESS_PERCENT_ANGER,
+		TAG_WAR_WEARINESS_MODIFIER,
+		TAG_FREE_SPECIALIST,
+		TAG_NO_FOREIGN_TRADE_COUNT,
+		TAG_NO_CORPORATIONS_COUNT,
+		TAG_NO_FOREIGN_CORPORATIONS_COUNT,
+		TAG_COASTAL_TRADE_ROUTES,
+		TAG_TRADE_ROUTES,
+		TAG_REVOLUTION_TIMER,
+		TAG_CONVERSION_TIMER,
+		TAG_STATE_RELIGION_COUNT,
+		TAG_NO_NON_STATE_RELIGION_SPREAD_COUNT,
+		TAG_STATE_RELIGION_HAPPINESS,
+		TAG_NON_STATE_RELIGION_HAPPINESS,
+		TAG_STATE_RELIGION_UNIT_PRODUCTION_MODIFIER,
+		TAG_STATE_RELIGION_BUILDING_PRODUCTION_MODIFIER,
+		TAG_STATE_RELIGION_FREE_EXPERIENCE,
+		TAG_CAPITAL_CITY_ID,
+		TAG_CITIES_LOST,
+		TAG_WINS_VS_BARBS,
+		TAG_ASSETS,
+		TAG_POWER,
+		TAG_TRIGGERS_INIT,
+		TAG_POPULATION_SCORE,
+		TAG_LAND_SCORE,
+		TAG_WONDERS_SCORE,
+		TAG_TECH_SCORE,
+		TAG_COMBAT_EXPERIENCE,
+		TAG_ALIVE,
+		TAG_EVER_ALIVE,
+		TAG_TURN_ACTIVE,
+		TAG_AUTO_MOVES,
+		TAG_END_TURN,
+	};
+}
 void CvPlayer::read(FDataStreamBase* pStream)
 {
 	int iI;
@@ -20931,110 +21045,230 @@ void CvPlayer::read(FDataStreamBase* pStream)
 
 	uint uiFlag=0;
 	pStream->Read(&uiFlag);	// flags for expansion
+	if (uiFlag >= 3)
+	{
+		// Tagged. Order does not matter, an unknown tag is stepped over, and a field
+		// the writer omitted keeps what reset() gave it.
+		CvTagReader kReader(pStream);
+		while (kReader.next())
+		{
+			switch (kReader.tag())
+			{
+			case TAG_STARTING_X: m_iStartingX = kReader.asInt(); break;
+			case TAG_STARTING_Y: m_iStartingY = kReader.asInt(); break;
+			case TAG_TOTAL_POPULATION: m_iTotalPopulation = kReader.asInt(); break;
+			case TAG_TOTAL_LAND: m_iTotalLand = kReader.asInt(); break;
+			case TAG_TOTAL_LAND_SCORED: m_iTotalLandScored = kReader.asInt(); break;
+			case TAG_GOLD: m_iGold = kReader.asInt(); break;
+			case TAG_GOLD_PER_TURN: m_iGoldPerTurn = kReader.asInt(); break;
+			case TAG_ADVANCED_START_POINTS: m_iAdvancedStartPoints = kReader.asInt(); break;
+			case TAG_GOLDEN_AGE_TURNS: m_iGoldenAgeTurns = kReader.asInt(); break;
+			case TAG_NUM_UNIT_GOLDEN_AGES: m_iNumUnitGoldenAges = kReader.asInt(); break;
+			case TAG_STRIKE_TURNS: m_iStrikeTurns = kReader.asInt(); break;
+			case TAG_ANARCHY_TURNS: m_iAnarchyTurns = kReader.asInt(); break;
+			case TAG_MAX_ANARCHY_TURNS: m_iMaxAnarchyTurns = kReader.asInt(); break;
+			case TAG_ANARCHY_MODIFIER: m_iAnarchyModifier = kReader.asInt(); break;
+			case TAG_GOLDEN_AGE_MODIFIER: m_iGoldenAgeModifier = kReader.asInt(); break;
+			case TAG_GLOBAL_HURRY_MODIFIER: m_iGlobalHurryModifier = kReader.asInt(); break;
+			case TAG_GREAT_PEOPLE_CREATED: m_iGreatPeopleCreated = kReader.asInt(); break;
+			case TAG_GREAT_GENERALS_CREATED: m_iGreatGeneralsCreated = kReader.asInt(); break;
+			case TAG_GREAT_PEOPLE_THRESHOLD_MODIFIER: m_iGreatPeopleThresholdModifier = kReader.asInt(); break;
+			case TAG_GREAT_GENERALS_THRESHOLD_MODIFIER: m_iGreatGeneralsThresholdModifier = kReader.asInt(); break;
+			case TAG_GREAT_PEOPLE_RATE_MODIFIER: m_iGreatPeopleRateModifier = kReader.asInt(); break;
+			case TAG_GREAT_GENERAL_RATE_MODIFIER: m_iGreatGeneralRateModifier = kReader.asInt(); break;
+			case TAG_DOMESTIC_GREAT_GENERAL_RATE_MODIFIER: m_iDomesticGreatGeneralRateModifier = kReader.asInt(); break;
+			case TAG_STATE_RELIGION_GREAT_PEOPLE_RATE_MODIFIER: m_iStateReligionGreatPeopleRateModifier = kReader.asInt(); break;
+			case TAG_MAX_GLOBAL_BUILDING_PRODUCTION_MODIFIER: m_iMaxGlobalBuildingProductionModifier = kReader.asInt(); break;
+			case TAG_MAX_TEAM_BUILDING_PRODUCTION_MODIFIER: m_iMaxTeamBuildingProductionModifier = kReader.asInt(); break;
+			case TAG_MAX_PLAYER_BUILDING_PRODUCTION_MODIFIER: m_iMaxPlayerBuildingProductionModifier = kReader.asInt(); break;
+			case TAG_FREE_EXPERIENCE: m_iFreeExperience = kReader.asInt(); break;
+			case TAG_FEATURE_PRODUCTION_MODIFIER: m_iFeatureProductionModifier = kReader.asInt(); break;
+			case TAG_WORKER_SPEED_MODIFIER: m_iWorkerSpeedModifier = kReader.asInt(); break;
+			case TAG_IMPROVEMENT_UPGRADE_RATE_MODIFIER: m_iImprovementUpgradeRateModifier = kReader.asInt(); break;
+			case TAG_MILITARY_PRODUCTION_MODIFIER: m_iMilitaryProductionModifier = kReader.asInt(); break;
+			case TAG_SPACE_PRODUCTION_MODIFIER: m_iSpaceProductionModifier = kReader.asInt(); break;
+			case TAG_CITY_DEFENSE_MODIFIER: m_iCityDefenseModifier = kReader.asInt(); break;
+			case TAG_NUM_NUKE_UNITS: m_iNumNukeUnits = kReader.asInt(); break;
+			case TAG_NUM_OUTSIDE_UNITS: m_iNumOutsideUnits = kReader.asInt(); break;
+			case TAG_BASE_FREE_UNITS: m_iBaseFreeUnits = kReader.asInt(); break;
+			case TAG_BASE_FREE_MILITARY_UNITS: m_iBaseFreeMilitaryUnits = kReader.asInt(); break;
+			case TAG_FREE_UNITS_POPULATION_PERCENT: m_iFreeUnitsPopulationPercent = kReader.asInt(); break;
+			case TAG_FREE_MILITARY_UNITS_POPULATION_PERCENT: m_iFreeMilitaryUnitsPopulationPercent = kReader.asInt(); break;
+			case TAG_GOLD_PER_UNIT: m_iGoldPerUnit = kReader.asInt(); break;
+			case TAG_GOLD_PER_MILITARY_UNIT: m_iGoldPerMilitaryUnit = kReader.asInt(); break;
+			case TAG_EXTRA_UNIT_COST: m_iExtraUnitCost = kReader.asInt(); break;
+			case TAG_NUM_MILITARY_UNITS: m_iNumMilitaryUnits = kReader.asInt(); break;
+			case TAG_HAPPY_PER_MILITARY_UNIT: m_iHappyPerMilitaryUnit = kReader.asInt(); break;
+			case TAG_MILITARY_FOOD_PRODUCTION_COUNT: m_iMilitaryFoodProductionCount = kReader.asInt(); break;
+			case TAG_CONSCRIPT_COUNT: m_iConscriptCount = kReader.asInt(); break;
+			case TAG_MAX_CONSCRIPT: m_iMaxConscript = kReader.asInt(); break;
+			case TAG_HIGHEST_UNIT_LEVEL: m_iHighestUnitLevel = kReader.asInt(); break;
+			case TAG_OVERFLOW_RESEARCH: m_iOverflowResearch = kReader.asInt(); break;
+			case TAG_NO_UNHEALTHY_POPULATION_COUNT: m_iNoUnhealthyPopulationCount = kReader.asInt(); break;
+			case TAG_EXP_IN_BORDER_MODIFIER: m_iExpInBorderModifier = kReader.asInt(); break;
+			case TAG_BUILDING_ONLY_HEALTHY_COUNT: m_iBuildingOnlyHealthyCount = kReader.asInt(); break;
+			case TAG_RITUAL_PRODUCTION_MODIFIER: m_iRitualProductionModifier = kReader.asInt(); break;
+			case TAG_DISTANCE_MAINTENANCE_MODIFIER: m_iDistanceMaintenanceModifier = kReader.asInt(); break;
+			case TAG_NUM_CITIES_MAINTENANCE_MODIFIER: m_iNumCitiesMaintenanceModifier = kReader.asInt(); break;
+			case TAG_CORPORATION_MAINTENANCE_MODIFIER: m_iCorporationMaintenanceModifier = kReader.asInt(); break;
+			case TAG_TOTAL_MAINTENANCE: m_iTotalMaintenance = kReader.asInt(); break;
+			case TAG_UPKEEP_MODIFIER: m_iUpkeepModifier = kReader.asInt(); break;
+			case TAG_LEVEL_EXPERIENCE_MODIFIER: m_iLevelExperienceModifier = kReader.asInt(); break;
+			case TAG_EXTRA_HEALTH: m_iExtraHealth = kReader.asInt(); break;
+			case TAG_EXTRA_GROWTH_THRESHOLD: m_iExtraGrowthThreshold = kReader.asInt(); break;
+			case TAG_ACGROWTH_THRESHOLD: m_iACGrowthThreshold = kReader.asInt(); break;
+			case TAG_CRIME_PER_TURN: m_iCrimePerTurn = kReader.asInt(); break;
+			case TAG_BUILDING_GOOD_HEALTH: m_iBuildingGoodHealth = kReader.asInt(); break;
+			case TAG_BUILDING_BAD_HEALTH: m_iBuildingBadHealth = kReader.asInt(); break;
+			case TAG_EXTRA_HAPPINESS: m_iExtraHappiness = kReader.asInt(); break;
+			case TAG_BUILDING_HAPPINESS: m_iBuildingHappiness = kReader.asInt(); break;
+			case TAG_LARGEST_CITY_HAPPINESS: m_iLargestCityHappiness = kReader.asInt(); break;
+			case TAG_WAR_WEARINESS_PERCENT_ANGER: m_iWarWearinessPercentAnger = kReader.asInt(); break;
+			case TAG_WAR_WEARINESS_MODIFIER: m_iWarWearinessModifier = kReader.asInt(); break;
+			case TAG_FREE_SPECIALIST: m_iFreeSpecialist = kReader.asInt(); break;
+			case TAG_NO_FOREIGN_TRADE_COUNT: m_iNoForeignTradeCount = kReader.asInt(); break;
+			case TAG_NO_CORPORATIONS_COUNT: m_iNoCorporationsCount = kReader.asInt(); break;
+			case TAG_NO_FOREIGN_CORPORATIONS_COUNT: m_iNoForeignCorporationsCount = kReader.asInt(); break;
+			case TAG_COASTAL_TRADE_ROUTES: m_iCoastalTradeRoutes = kReader.asInt(); break;
+			case TAG_TRADE_ROUTES: m_iTradeRoutes = kReader.asInt(); break;
+			case TAG_REVOLUTION_TIMER: m_iRevolutionTimer = kReader.asInt(); break;
+			case TAG_CONVERSION_TIMER: m_iConversionTimer = kReader.asInt(); break;
+			case TAG_STATE_RELIGION_COUNT: m_iStateReligionCount = kReader.asInt(); break;
+			case TAG_NO_NON_STATE_RELIGION_SPREAD_COUNT: m_iNoNonStateReligionSpreadCount = kReader.asInt(); break;
+			case TAG_STATE_RELIGION_HAPPINESS: m_iStateReligionHappiness = kReader.asInt(); break;
+			case TAG_NON_STATE_RELIGION_HAPPINESS: m_iNonStateReligionHappiness = kReader.asInt(); break;
+			case TAG_STATE_RELIGION_UNIT_PRODUCTION_MODIFIER: m_iStateReligionUnitProductionModifier = kReader.asInt(); break;
+			case TAG_STATE_RELIGION_BUILDING_PRODUCTION_MODIFIER: m_iStateReligionBuildingProductionModifier = kReader.asInt(); break;
+			case TAG_STATE_RELIGION_FREE_EXPERIENCE: m_iStateReligionFreeExperience = kReader.asInt(); break;
+			case TAG_CAPITAL_CITY_ID: m_iCapitalCityID = kReader.asInt(); break;
+			case TAG_CITIES_LOST: m_iCitiesLost = kReader.asInt(); break;
+			case TAG_WINS_VS_BARBS: m_iWinsVsBarbs = kReader.asInt(); break;
+			case TAG_ASSETS: m_iAssets = kReader.asInt(); break;
+			case TAG_POWER: m_iPower = kReader.asInt(); break;
+			case TAG_TRIGGERS_INIT: m_bTriggersInit = kReader.asBool(); break;
+			case TAG_POPULATION_SCORE: m_iPopulationScore = kReader.asInt(); break;
+			case TAG_LAND_SCORE: m_iLandScore = kReader.asInt(); break;
+			case TAG_WONDERS_SCORE: m_iWondersScore = kReader.asInt(); break;
+			case TAG_TECH_SCORE: m_iTechScore = kReader.asInt(); break;
+			case TAG_COMBAT_EXPERIENCE: m_iCombatExperience = kReader.asInt(); break;
+			case TAG_ALIVE: m_bAlive = kReader.asBool(); break;
+			case TAG_EVER_ALIVE: m_bEverAlive = kReader.asBool(); break;
+			case TAG_TURN_ACTIVE: m_bTurnActive = kReader.asBool(); break;
+			case TAG_AUTO_MOVES: m_bAutoMoves = kReader.asBool(); break;
+			case TAG_END_TURN: m_bEndTurn = kReader.asBool(); break;
+			default: kReader.skip(); break;
+			}
+		}
+	}
+	else
+	{
+		// Positional, exactly as it always was. This branch is the compatibility
+		// shim; it is not new code and must not be edited.
+		pStream->Read(&m_iStartingX);
+		pStream->Read(&m_iStartingY);
+		pStream->Read(&m_iTotalPopulation);
+		pStream->Read(&m_iTotalLand);
+		pStream->Read(&m_iTotalLandScored);
+		pStream->Read(&m_iGold);
+		pStream->Read(&m_iGoldPerTurn);
+		pStream->Read(&m_iAdvancedStartPoints);
+		pStream->Read(&m_iGoldenAgeTurns);
+		pStream->Read(&m_iNumUnitGoldenAges);
+		pStream->Read(&m_iStrikeTurns);
+		pStream->Read(&m_iAnarchyTurns);
+		pStream->Read(&m_iMaxAnarchyTurns);
+		pStream->Read(&m_iAnarchyModifier);
+		pStream->Read(&m_iGoldenAgeModifier);
+		pStream->Read(&m_iGlobalHurryModifier);
+		pStream->Read(&m_iGreatPeopleCreated);
+		pStream->Read(&m_iGreatGeneralsCreated);
+		pStream->Read(&m_iGreatPeopleThresholdModifier);
+		pStream->Read(&m_iGreatGeneralsThresholdModifier);
+		pStream->Read(&m_iGreatPeopleRateModifier);
+		pStream->Read(&m_iGreatGeneralRateModifier);
+		pStream->Read(&m_iDomesticGreatGeneralRateModifier);
+		pStream->Read(&m_iStateReligionGreatPeopleRateModifier);
+		pStream->Read(&m_iMaxGlobalBuildingProductionModifier);
+		pStream->Read(&m_iMaxTeamBuildingProductionModifier);
+		pStream->Read(&m_iMaxPlayerBuildingProductionModifier);
+		pStream->Read(&m_iFreeExperience);
+		pStream->Read(&m_iFeatureProductionModifier);
+		pStream->Read(&m_iWorkerSpeedModifier);
+		pStream->Read(&m_iImprovementUpgradeRateModifier);
+		pStream->Read(&m_iMilitaryProductionModifier);
+		pStream->Read(&m_iSpaceProductionModifier);
+		pStream->Read(&m_iCityDefenseModifier);
+		pStream->Read(&m_iNumNukeUnits);
+		pStream->Read(&m_iNumOutsideUnits);
+		pStream->Read(&m_iBaseFreeUnits);
+		pStream->Read(&m_iBaseFreeMilitaryUnits);
+		pStream->Read(&m_iFreeUnitsPopulationPercent);
+		pStream->Read(&m_iFreeMilitaryUnitsPopulationPercent);
+		pStream->Read(&m_iGoldPerUnit);
+		pStream->Read(&m_iGoldPerMilitaryUnit);
+		pStream->Read(&m_iExtraUnitCost);
+		pStream->Read(&m_iNumMilitaryUnits);
+		pStream->Read(&m_iHappyPerMilitaryUnit);
+		pStream->Read(&m_iMilitaryFoodProductionCount);
+		pStream->Read(&m_iConscriptCount);
+		pStream->Read(&m_iMaxConscript);
+		pStream->Read(&m_iHighestUnitLevel);
+		pStream->Read(&m_iOverflowResearch);
+		pStream->Read(&m_iNoUnhealthyPopulationCount);
+		pStream->Read(&m_iExpInBorderModifier);
+		pStream->Read(&m_iBuildingOnlyHealthyCount);
+		pStream->Read(&m_iRitualProductionModifier);
+		pStream->Read(&m_iDistanceMaintenanceModifier);
+		pStream->Read(&m_iNumCitiesMaintenanceModifier);
+		pStream->Read(&m_iCorporationMaintenanceModifier);
+		pStream->Read(&m_iTotalMaintenance);
+		pStream->Read(&m_iUpkeepModifier);
+		pStream->Read(&m_iLevelExperienceModifier);
+		pStream->Read(&m_iExtraHealth);
+		pStream->Read(&m_iExtraGrowthThreshold);
+		pStream->Read(&m_iACGrowthThreshold);
+		pStream->Read(&m_iCrimePerTurn);
+		pStream->Read(&m_iBuildingGoodHealth);
+		pStream->Read(&m_iBuildingBadHealth);
+		pStream->Read(&m_iExtraHappiness);
+		pStream->Read(&m_iBuildingHappiness);
+		pStream->Read(&m_iLargestCityHappiness);
+		pStream->Read(&m_iWarWearinessPercentAnger);
+		pStream->Read(&m_iWarWearinessModifier);
+		pStream->Read(&m_iFreeSpecialist);
+		pStream->Read(&m_iNoForeignTradeCount);
+		pStream->Read(&m_iNoCorporationsCount);
+		pStream->Read(&m_iNoForeignCorporationsCount);
+		pStream->Read(&m_iCoastalTradeRoutes);
+		pStream->Read(&m_iTradeRoutes);
+		pStream->Read(&m_iRevolutionTimer);
+		pStream->Read(&m_iConversionTimer);
+		pStream->Read(&m_iStateReligionCount);
+		pStream->Read(&m_iNoNonStateReligionSpreadCount);
+		pStream->Read(&m_iStateReligionHappiness);
+		pStream->Read(&m_iNonStateReligionHappiness);
+		pStream->Read(&m_iStateReligionUnitProductionModifier);
+		pStream->Read(&m_iStateReligionBuildingProductionModifier);
+		pStream->Read(&m_iStateReligionFreeExperience);
+		pStream->Read(&m_iCapitalCityID);
+		pStream->Read(&m_iCitiesLost);
+		pStream->Read(&m_iWinsVsBarbs);
+		pStream->Read(&m_iAssets);
+		pStream->Read(&m_iPower);
+		pStream->Read(&m_bTriggersInit);
+		pStream->Read(&m_iPopulationScore);
+		pStream->Read(&m_iLandScore);
+		pStream->Read(&m_iWondersScore);
+		pStream->Read(&m_iTechScore);
+		pStream->Read(&m_iCombatExperience);
+		pStream->Read(&m_bAlive);
+		pStream->Read(&m_bEverAlive);
+		pStream->Read(&m_bTurnActive);
+		pStream->Read(&m_bAutoMoves);
+		pStream->Read(&m_bEndTurn);
+	}
 
-	pStream->Read(&m_iStartingX);
-	pStream->Read(&m_iStartingY);
-	pStream->Read(&m_iTotalPopulation);
-	pStream->Read(&m_iTotalLand);
-	pStream->Read(&m_iTotalLandScored);
-	pStream->Read(&m_iGold);
-	pStream->Read(&m_iGoldPerTurn);
-	pStream->Read(&m_iAdvancedStartPoints);
-	pStream->Read(&m_iGoldenAgeTurns);
-	pStream->Read(&m_iNumUnitGoldenAges);
-	pStream->Read(&m_iStrikeTurns);
-	pStream->Read(&m_iAnarchyTurns);
-	pStream->Read(&m_iMaxAnarchyTurns);
-	pStream->Read(&m_iAnarchyModifier);
-	pStream->Read(&m_iGoldenAgeModifier);
-	pStream->Read(&m_iGlobalHurryModifier);
-	pStream->Read(&m_iGreatPeopleCreated);
-	pStream->Read(&m_iGreatGeneralsCreated);
-	pStream->Read(&m_iGreatPeopleThresholdModifier);
-	pStream->Read(&m_iGreatGeneralsThresholdModifier);
-	pStream->Read(&m_iGreatPeopleRateModifier);
-	pStream->Read(&m_iGreatGeneralRateModifier);
-	pStream->Read(&m_iDomesticGreatGeneralRateModifier);
-	pStream->Read(&m_iStateReligionGreatPeopleRateModifier);
-	pStream->Read(&m_iMaxGlobalBuildingProductionModifier);
-	pStream->Read(&m_iMaxTeamBuildingProductionModifier);
-	pStream->Read(&m_iMaxPlayerBuildingProductionModifier);
-	pStream->Read(&m_iFreeExperience);
-	pStream->Read(&m_iFeatureProductionModifier);
-	pStream->Read(&m_iWorkerSpeedModifier);
-	pStream->Read(&m_iImprovementUpgradeRateModifier);
-	pStream->Read(&m_iMilitaryProductionModifier);
-	pStream->Read(&m_iSpaceProductionModifier);
-	pStream->Read(&m_iCityDefenseModifier);
-	pStream->Read(&m_iNumNukeUnits);
-	pStream->Read(&m_iNumOutsideUnits);
-	pStream->Read(&m_iBaseFreeUnits);
-	pStream->Read(&m_iBaseFreeMilitaryUnits);
-	pStream->Read(&m_iFreeUnitsPopulationPercent);
-	pStream->Read(&m_iFreeMilitaryUnitsPopulationPercent);
-	pStream->Read(&m_iGoldPerUnit);
-	pStream->Read(&m_iGoldPerMilitaryUnit);
-	pStream->Read(&m_iExtraUnitCost);
-	pStream->Read(&m_iNumMilitaryUnits);
-	pStream->Read(&m_iHappyPerMilitaryUnit);
-	pStream->Read(&m_iMilitaryFoodProductionCount);
-	pStream->Read(&m_iConscriptCount);
-	pStream->Read(&m_iMaxConscript);
-	pStream->Read(&m_iHighestUnitLevel);
-	pStream->Read(&m_iOverflowResearch);
-	pStream->Read(&m_iNoUnhealthyPopulationCount);
-	pStream->Read(&m_iExpInBorderModifier);
-	pStream->Read(&m_iBuildingOnlyHealthyCount);
-	pStream->Read(&m_iRitualProductionModifier);
-	pStream->Read(&m_iDistanceMaintenanceModifier);
-	pStream->Read(&m_iNumCitiesMaintenanceModifier);
-	pStream->Read(&m_iCorporationMaintenanceModifier);
-	pStream->Read(&m_iTotalMaintenance);
-	pStream->Read(&m_iUpkeepModifier);
-	pStream->Read(&m_iLevelExperienceModifier);
-	pStream->Read(&m_iExtraHealth);
-	pStream->Read(&m_iExtraGrowthThreshold);
-	pStream->Read(&m_iACGrowthThreshold);
-	pStream->Read(&m_iCrimePerTurn);
-	pStream->Read(&m_iBuildingGoodHealth);
-	pStream->Read(&m_iBuildingBadHealth);
-	pStream->Read(&m_iExtraHappiness);
-	pStream->Read(&m_iBuildingHappiness);
-	pStream->Read(&m_iLargestCityHappiness);
-	pStream->Read(&m_iWarWearinessPercentAnger);
-	pStream->Read(&m_iWarWearinessModifier);
-	pStream->Read(&m_iFreeSpecialist);
-	pStream->Read(&m_iNoForeignTradeCount);
-	pStream->Read(&m_iNoCorporationsCount);
-	pStream->Read(&m_iNoForeignCorporationsCount);
-	pStream->Read(&m_iCoastalTradeRoutes);
-	pStream->Read(&m_iTradeRoutes);
-	pStream->Read(&m_iRevolutionTimer);
-	pStream->Read(&m_iConversionTimer);
-	pStream->Read(&m_iStateReligionCount);
-	pStream->Read(&m_iNoNonStateReligionSpreadCount);
-	pStream->Read(&m_iStateReligionHappiness);
-	pStream->Read(&m_iNonStateReligionHappiness);
-	pStream->Read(&m_iStateReligionUnitProductionModifier);
-	pStream->Read(&m_iStateReligionBuildingProductionModifier);
-	pStream->Read(&m_iStateReligionFreeExperience);
-	pStream->Read(&m_iCapitalCityID);
-	pStream->Read(&m_iCitiesLost);
-	pStream->Read(&m_iWinsVsBarbs);
-	pStream->Read(&m_iAssets);
-	pStream->Read(&m_iPower);
-	pStream->Read(&m_bTriggersInit);
-	pStream->Read(&m_iPopulationScore);
-	pStream->Read(&m_iLandScore);
-	pStream->Read(&m_iWondersScore);
-	pStream->Read(&m_iTechScore);
-	pStream->Read(&m_iCombatExperience);
 
-	pStream->Read(&m_bAlive);
-	pStream->Read(&m_bEverAlive);
-	pStream->Read(&m_bTurnActive);
-	pStream->Read(&m_bAutoMoves);
-	pStream->Read(&m_bEndTurn);
 	pStream->Read(&m_bPbemNewTurn);
 	pStream->Read(&m_bExtendedGame);
 	pStream->Read(&m_bFoundedFirstCity);
@@ -21080,24 +21314,24 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(NUM_COMMERCE_TYPES, m_aiBaseCommerceFromUnit);
 	pStream->Read(NUM_COMMERCE_TYPES, m_aiCommerceFromUnitModifier);
 
-	pStream->Read(GC.getNumBonusInfos(), m_pabRevealBonus);
-	pStream->Read(GC.getNumBonusInfos(), m_paiNoBonus);
-	pStream->Read(GC.getNumBonusInfos(), m_paiFreeBonus);
-	pStream->Read(GC.getNumBuildInfos(), m_paiAvailableBuild);
-	pStream->Read(GC.getNumReligionInfos(), m_paiReligionWeights);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_pabRevealBonus);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_paiNoBonus);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_paiFreeBonus);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BUILD, m_paiAvailableBuild);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_RELIGION, m_paiReligionWeights);
 
-	pStream->Read(GC.getNumPlotEffectInfos(), m_paiPlotEffectSpawnChance);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PLOT_EFFECT, m_paiPlotEffectSpawnChance);
 
 	pStream->Read(&m_iPotency);
-	pStream->Read(GC.getNumBonusInfos(), m_pafPotencyAffinity);
-	pStream->Read(GC.getNumBonusInfos(), m_paiPotencyBonusPrereq);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_pafPotencyAffinity);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_paiPotencyBonusPrereq);
 	pStream->Read(&m_iShielding);
-	pStream->Read(GC.getNumBonusInfos(), m_pafShieldingAffinity);
-	pStream->Read(GC.getNumBonusInfos(), m_paiShieldingBonusPrereq);
-	pStream->Read(GC.getNumUnitCombatInfos(), m_paiTrainXPCap);
-	pStream->Read(GC.getNumUnitCombatInfos(), m_pafTrainXPRate);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_pafShieldingAffinity);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_paiShieldingBonusPrereq);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT_COMBAT, m_paiTrainXPCap);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT_COMBAT, m_pafTrainXPRate);
 
-	pStream->Read(&m_eStateNameType);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_STATE_NAME, &m_eStateNameType);
 	pStream->Read(&m_iNumCitiesConquered);
 /*************************************************************************************************/
 /**	New Tag Defs							END													**/
@@ -21224,11 +21458,11 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iSummonDuration);
 	pStream->Read(&m_iTempPlayerTimer);
 	pStream->Read(&m_iUpgradeCostModifier);
-	pStream->Read(GC.getNumTraitInfos(), m_pbTraits);
-	pStream->Read(GC.getNumTraitInfos(), m_piTraitPoints);
-	pStream->Read(GC.getNumTraitClassInfos(), m_piNumTraitPerClass);
-	pStream->Read(GC.getNumTraitClassInfos(), m_piNumMaxTraitPerClass);
-	pStream->Read(GC.getNumTraitTriggerInfos(), m_pbValidTraitTriggers);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_TRAIT, m_pbTraits);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_TRAIT, m_piTraitPoints);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_TRAIT_CLASS, m_piNumTraitPerClass);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_TRAIT_CLASS, m_piNumMaxTraitPerClass);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_TRAIT_TRIGGER, m_pbValidTraitTriggers);
 	for (int iI = 0;iI<GC.getNumSpecialistClassInfos();iI++)
 	{
 		pStream->Read(NUM_COMMERCE_TYPES, m_ppaaiSpecialistClassExtraCommerce[iI]);
@@ -21237,8 +21471,8 @@ void CvPlayer::read(FDataStreamBase* pStream)
 /**	Miner Trait 	 	Orbis from Sanguo Mod		18/02/09	Ahwaric		**/
 /**									Read Data from Save Files									**/
 /*************************************************************************************************/
-	pStream->Read(GC.getNumFeatureInfos(), m_paiFeatureProductionChange);
-	pStream->Read(GC.getNumFeatureInfos(), m_paiFeatureGrowthChange);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_FEATURE, m_paiFeatureProductionChange);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_FEATURE, m_paiFeatureGrowthChange);
 /*************************************************************************************************/
 /**	Miner Trait							END			**/
 /*************************************************************************************************/
@@ -21281,9 +21515,9 @@ void CvPlayer::read(FDataStreamBase* pStream)
 /*************************************************************************************************/
 
 	pStream->Read((int*)&m_eID);
-	pStream->Read((int*)&m_ePersonalityType);
-	pStream->Read((int*)&m_eCurrentEra);
-	pStream->Read((int*)&m_eLastStateReligion);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_LEADER_HEAD, &m_ePersonalityType);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_ERA, &m_eCurrentEra);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_RELIGION, &m_eLastStateReligion);
 	pStream->Read((int*)&m_eParent);
 	updateTeamType(); //m_eTeamType not saved
 	updateHuman();
@@ -21292,7 +21526,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 /**																								**/
 /**			Was sometimes called thousands of times per turn, which is slow						**/
 /*************************************************************************************************/
-	pStream->Read((int*)&m_eBestRouteCache);
+	CvSaveManifest::readId(pStream, CvSaveManifest::CONTENT_ROUTE, &m_eBestRouteCache);
 /*************************************************************************************************/
 /**	Speedup									END													**/
 /*************************************************************************************************/
@@ -21333,40 +21567,40 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->ReadString(m_szName);
 
 	FAssertMsg((0 < GC.getNumBonusInfos()), "GC.getNumBonusInfos() is not greater than zero but it is expected to be in CvPlayer::read");
-	pStream->Read(GC.getNumBonusInfos(), m_paiBonusExport);
-	pStream->Read(GC.getNumBonusInfos(), m_paiBonusImport);
-	pStream->Read(GC.getNumImprovementInfos(), m_paiImprovementCount);
-	pStream->Read(GC.getNumBuildingClassInfos(), m_paiFreeBuildingCount);
-	pStream->Read(GC.getNumBuildingInfos(), m_paiExtraBuildingHappiness);
-	pStream->Read(GC.getNumBuildingInfos(), m_paiExtraBuildingHealth);
-	pStream->Read(GC.getNumFeatureInfos(), m_paiFeatureHappiness);
-	pStream->Read(GC.getNumUnitClassInfos(), m_paiExtraUnitClasses);
-	pStream->Read(GC.getNumBuildingClassInfos(), m_paiExtraBuildingClasses);
-	pStream->Read(GC.getNumUnitClassInfos(), m_paiUnitClassCount);
-	pStream->Read(GC.getNumUnitClassInfos(), m_paiUnitClassMaking);
-	pStream->Read(GC.getNumUnitClassInfos(), m_paiUnitClassPlayerInstancesChanges);
-	pStream->Read(GC.getNumBuildingClassInfos(), m_paiBuildingClassCount);
-	pStream->Read(GC.getNumBuildingClassInfos(), m_paiBuildingClassMaking);
-	pStream->Read(GC.getNumHurryInfos(), m_paiHurryCount);
-	pStream->Read(GC.getNumSpecialBuildingInfos(), m_paiSpecialBuildingNotRequiredCount);
-	pStream->Read(GC.getNumCivicOptionInfos(), m_paiHasCivicOptionCount);
-	pStream->Read(GC.getNumCivicOptionInfos(), m_paiNoCivicUpkeepCount);
-	pStream->Read(GC.getNumReligionInfos(), m_paiHasReligionCount);
-	pStream->Read(GC.getNumCorporationInfos(), m_paiHasCorporationCount);
-	pStream->Read(GC.getNumUpkeepInfos(), m_paiUpkeepCount);
-	pStream->Read(GC.getNumSpecialistClassInfos(), m_paiSpecialistClassValidCount);
-	pStream->Read(GC.getNumSpecialistClassInfos(), m_paiSpecialistClassCount);
-	pStream->Read(GC.getNumSpecialistClassInfos(), m_paiFreeSpecialistClassCount);
-	pStream->Read(GC.getNumSpecialistClassInfos(), m_paiFreeSpecialistClassStateReligion);
-	pStream->Read(GC.getNumSpecialistClassInfos(), m_paiFreeSpecialistClassNonStateReligion);
-	pStream->Read(GC.getNumSpecialistClassInfos(), m_paiSpecialistClassExtraHappiness);
-	pStream->Read(GC.getNumSpecialistClassInfos(), m_paiSpecialistClassExtraHealth);
-	pStream->Read(GC.getNumSpecialistClassInfos(), m_paiSpecialistClassExtraCrime);
-	pStream->Read(GC.getNumSpecialistClassInfos(), m_paiSpecialistClassExtraGPP);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_paiBonusExport);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_paiBonusImport);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_IMPROVEMENT, m_paiImprovementCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BUILDING_CLASS, m_paiFreeBuildingCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BUILDING, m_paiExtraBuildingHappiness);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BUILDING, m_paiExtraBuildingHealth);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_FEATURE, m_paiFeatureHappiness);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT_CLASS, m_paiExtraUnitClasses);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BUILDING_CLASS, m_paiExtraBuildingClasses);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT_CLASS, m_paiUnitClassCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT_CLASS, m_paiUnitClassMaking);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UNIT_CLASS, m_paiUnitClassPlayerInstancesChanges);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BUILDING_CLASS, m_paiBuildingClassCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BUILDING_CLASS, m_paiBuildingClassMaking);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_HURRY, m_paiHurryCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIAL_BUILDING, m_paiSpecialBuildingNotRequiredCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_CIVIC_OPTION, m_paiHasCivicOptionCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_CIVIC_OPTION, m_paiNoCivicUpkeepCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_RELIGION, m_paiHasReligionCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_CORPORATION, m_paiHasCorporationCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_UPKEEP, m_paiUpkeepCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST_CLASS, m_paiSpecialistClassValidCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST_CLASS, m_paiSpecialistClassCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST_CLASS, m_paiFreeSpecialistClassCount);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST_CLASS, m_paiFreeSpecialistClassStateReligion);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST_CLASS, m_paiFreeSpecialistClassNonStateReligion);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST_CLASS, m_paiSpecialistClassExtraHappiness);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST_CLASS, m_paiSpecialistClassExtraHealth);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST_CLASS, m_paiSpecialistClassExtraCrime);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST_CLASS, m_paiSpecialistClassExtraGPP);
 
-	pStream->Read(GC.getNumSpecialistInfos(), m_paiSpecialistTypeExtraHealth);
-	pStream->Read(GC.getNumSpecialistInfos(), m_paiSpecialistTypeExtraHappiness);
-	pStream->Read(GC.getNumSpecialistInfos(), m_paiSpecialistTypeExtraCrime);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST, m_paiSpecialistTypeExtraHealth);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST, m_paiSpecialistTypeExtraHappiness);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST, m_paiSpecialistTypeExtraCrime);
 	for (int iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
 	{
 		pStream->Read(NUM_YIELD_TYPES, m_ppaiSpecialistTypeExtraYield[iI]);
@@ -21377,9 +21611,9 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	}
 
 	FAssertMsg((0 < GC.getNumTechInfos()), "GC.getNumTechInfos() is not greater than zero but it is expected to be in CvPlayer::read");
-	pStream->Read(GC.getNumTechInfos(), m_pabResearchingTech);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_TECH, m_pabResearchingTech);
 
-	pStream->Read(GC.getNumVoteSourceInfos(), m_pabLoyalMember);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_VOTE_SOURCE, m_pabLoyalMember);
 
 	for (int iI=0;iI<GC.getNumCivicOptionInfos();iI++)
 	{
@@ -21696,7 +21930,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iPopRushHurryCount);
 	pStream->Read(&m_iInflationModifier);
 	// FlagSystem Start
-	pStream->Read(GC.getNumFlagInfos(), m_pabPlayerFlags);
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_FLAG, m_pabPlayerFlags);
 	// DynTraits Start
 
 /*************************************************************************************************/
@@ -21738,114 +21972,119 @@ void CvPlayer::read(FDataStreamBase* pStream)
 //
 void CvPlayer::write(FDataStreamBase* pStream)
 {
+	CvSaveSizeProbe::countObject("CvPlayer");
 	int iI;
 
-	uint uiFlag = 2;	// 2: m_paiNoBonus no longer holds council bans (Fix #420)
+	uint uiFlag=3;	// 3: tagged fields (CvTaggedStream)	// 2: m_paiNoBonus no longer holds council bans (Fix #420)
 	pStream->Write(uiFlag);		// flag for expansion
+	{
+		CvTagWriter kWriter(pStream);
+		kWriter.write(TAG_STARTING_X, m_iStartingX);
+		kWriter.write(TAG_STARTING_Y, m_iStartingY);
+		kWriter.writeIfNonZero(TAG_TOTAL_POPULATION, m_iTotalPopulation);
+		kWriter.writeIfNonZero(TAG_TOTAL_LAND, m_iTotalLand);
+		kWriter.writeIfNonZero(TAG_TOTAL_LAND_SCORED, m_iTotalLandScored);
+		kWriter.writeIfNonZero(TAG_GOLD, m_iGold);
+		kWriter.writeIfNonZero(TAG_GOLD_PER_TURN, m_iGoldPerTurn);
+		kWriter.write(TAG_ADVANCED_START_POINTS, m_iAdvancedStartPoints);
+		kWriter.writeIfNonZero(TAG_GOLDEN_AGE_TURNS, m_iGoldenAgeTurns);
+		kWriter.writeIfNonZero(TAG_NUM_UNIT_GOLDEN_AGES, m_iNumUnitGoldenAges);
+		kWriter.writeIfNonZero(TAG_STRIKE_TURNS, m_iStrikeTurns);
+		kWriter.writeIfNonZero(TAG_ANARCHY_TURNS, m_iAnarchyTurns);
+		kWriter.writeIfNonZero(TAG_MAX_ANARCHY_TURNS, m_iMaxAnarchyTurns);
+		kWriter.writeIfNonZero(TAG_ANARCHY_MODIFIER, m_iAnarchyModifier);
+		kWriter.writeIfNonZero(TAG_GOLDEN_AGE_MODIFIER, m_iGoldenAgeModifier);
+		kWriter.writeIfNonZero(TAG_GLOBAL_HURRY_MODIFIER, m_iGlobalHurryModifier);
+		kWriter.writeIfNonZero(TAG_GREAT_PEOPLE_CREATED, m_iGreatPeopleCreated);
+		kWriter.writeIfNonZero(TAG_GREAT_GENERALS_CREATED, m_iGreatGeneralsCreated);
+		kWriter.writeIfNonZero(TAG_GREAT_PEOPLE_THRESHOLD_MODIFIER, m_iGreatPeopleThresholdModifier);
+		kWriter.writeIfNonZero(TAG_GREAT_GENERALS_THRESHOLD_MODIFIER, m_iGreatGeneralsThresholdModifier);
+		kWriter.writeIfNonZero(TAG_GREAT_PEOPLE_RATE_MODIFIER, m_iGreatPeopleRateModifier);
+		kWriter.writeIfNonZero(TAG_GREAT_GENERAL_RATE_MODIFIER, m_iGreatGeneralRateModifier);
+		kWriter.writeIfNonZero(TAG_DOMESTIC_GREAT_GENERAL_RATE_MODIFIER, m_iDomesticGreatGeneralRateModifier);
+		kWriter.writeIfNonZero(TAG_STATE_RELIGION_GREAT_PEOPLE_RATE_MODIFIER, m_iStateReligionGreatPeopleRateModifier);
+		kWriter.writeIfNonZero(TAG_MAX_GLOBAL_BUILDING_PRODUCTION_MODIFIER, m_iMaxGlobalBuildingProductionModifier);
+		kWriter.writeIfNonZero(TAG_MAX_TEAM_BUILDING_PRODUCTION_MODIFIER, m_iMaxTeamBuildingProductionModifier);
+		kWriter.writeIfNonZero(TAG_MAX_PLAYER_BUILDING_PRODUCTION_MODIFIER, m_iMaxPlayerBuildingProductionModifier);
+		kWriter.writeIfNonZero(TAG_FREE_EXPERIENCE, m_iFreeExperience);
+		kWriter.writeIfNonZero(TAG_FEATURE_PRODUCTION_MODIFIER, m_iFeatureProductionModifier);
+		kWriter.writeIfNonZero(TAG_WORKER_SPEED_MODIFIER, m_iWorkerSpeedModifier);
+		kWriter.writeIfNonZero(TAG_IMPROVEMENT_UPGRADE_RATE_MODIFIER, m_iImprovementUpgradeRateModifier);
+		kWriter.writeIfNonZero(TAG_MILITARY_PRODUCTION_MODIFIER, m_iMilitaryProductionModifier);
+		kWriter.writeIfNonZero(TAG_SPACE_PRODUCTION_MODIFIER, m_iSpaceProductionModifier);
+		kWriter.writeIfNonZero(TAG_CITY_DEFENSE_MODIFIER, m_iCityDefenseModifier);
+		kWriter.writeIfNonZero(TAG_NUM_NUKE_UNITS, m_iNumNukeUnits);
+		kWriter.writeIfNonZero(TAG_NUM_OUTSIDE_UNITS, m_iNumOutsideUnits);
+		kWriter.writeIfNonZero(TAG_BASE_FREE_UNITS, m_iBaseFreeUnits);
+		kWriter.writeIfNonZero(TAG_BASE_FREE_MILITARY_UNITS, m_iBaseFreeMilitaryUnits);
+		kWriter.writeIfNonZero(TAG_FREE_UNITS_POPULATION_PERCENT, m_iFreeUnitsPopulationPercent);
+		kWriter.writeIfNonZero(TAG_FREE_MILITARY_UNITS_POPULATION_PERCENT, m_iFreeMilitaryUnitsPopulationPercent);
+		kWriter.writeIfNonZero(TAG_GOLD_PER_UNIT, m_iGoldPerUnit);
+		kWriter.writeIfNonZero(TAG_GOLD_PER_MILITARY_UNIT, m_iGoldPerMilitaryUnit);
+		kWriter.writeIfNonZero(TAG_EXTRA_UNIT_COST, m_iExtraUnitCost);
+		kWriter.writeIfNonZero(TAG_NUM_MILITARY_UNITS, m_iNumMilitaryUnits);
+		kWriter.writeIfNonZero(TAG_HAPPY_PER_MILITARY_UNIT, m_iHappyPerMilitaryUnit);
+		kWriter.writeIfNonZero(TAG_MILITARY_FOOD_PRODUCTION_COUNT, m_iMilitaryFoodProductionCount);
+		kWriter.writeIfNonZero(TAG_CONSCRIPT_COUNT, m_iConscriptCount);
+		kWriter.writeIfNonZero(TAG_MAX_CONSCRIPT, m_iMaxConscript);
+		kWriter.write(TAG_HIGHEST_UNIT_LEVEL, m_iHighestUnitLevel);
+		kWriter.writeIfNonZero(TAG_OVERFLOW_RESEARCH, m_iOverflowResearch);
+		kWriter.writeIfNonZero(TAG_NO_UNHEALTHY_POPULATION_COUNT, m_iNoUnhealthyPopulationCount);
+		kWriter.writeIfNonZero(TAG_EXP_IN_BORDER_MODIFIER, m_iExpInBorderModifier);
+		kWriter.writeIfNonZero(TAG_BUILDING_ONLY_HEALTHY_COUNT, m_iBuildingOnlyHealthyCount);
+		kWriter.writeIfNonZero(TAG_RITUAL_PRODUCTION_MODIFIER, m_iRitualProductionModifier);
+		kWriter.writeIfNonZero(TAG_DISTANCE_MAINTENANCE_MODIFIER, m_iDistanceMaintenanceModifier);
+		kWriter.writeIfNonZero(TAG_NUM_CITIES_MAINTENANCE_MODIFIER, m_iNumCitiesMaintenanceModifier);
+		kWriter.writeIfNonZero(TAG_CORPORATION_MAINTENANCE_MODIFIER, m_iCorporationMaintenanceModifier);
+		kWriter.writeIfNonZero(TAG_TOTAL_MAINTENANCE, m_iTotalMaintenance);
+		kWriter.writeIfNonZero(TAG_UPKEEP_MODIFIER, m_iUpkeepModifier);
+		kWriter.writeIfNonZero(TAG_LEVEL_EXPERIENCE_MODIFIER, m_iLevelExperienceModifier);
+		kWriter.writeIfNonZero(TAG_EXTRA_HEALTH, m_iExtraHealth);
+		kWriter.writeIfNonZero(TAG_EXTRA_GROWTH_THRESHOLD, m_iExtraGrowthThreshold);
+		kWriter.writeIfNonZero(TAG_ACGROWTH_THRESHOLD, m_iACGrowthThreshold);
+		kWriter.writeIfNonZero(TAG_CRIME_PER_TURN, m_iCrimePerTurn);
+		kWriter.writeIfNonZero(TAG_BUILDING_GOOD_HEALTH, m_iBuildingGoodHealth);
+		kWriter.writeIfNonZero(TAG_BUILDING_BAD_HEALTH, m_iBuildingBadHealth);
+		kWriter.writeIfNonZero(TAG_EXTRA_HAPPINESS, m_iExtraHappiness);
+		kWriter.writeIfNonZero(TAG_BUILDING_HAPPINESS, m_iBuildingHappiness);
+		kWriter.writeIfNonZero(TAG_LARGEST_CITY_HAPPINESS, m_iLargestCityHappiness);
+		kWriter.writeIfNonZero(TAG_WAR_WEARINESS_PERCENT_ANGER, m_iWarWearinessPercentAnger);
+		kWriter.writeIfNonZero(TAG_WAR_WEARINESS_MODIFIER, m_iWarWearinessModifier);
+		kWriter.writeIfNonZero(TAG_FREE_SPECIALIST, m_iFreeSpecialist);
+		kWriter.writeIfNonZero(TAG_NO_FOREIGN_TRADE_COUNT, m_iNoForeignTradeCount);
+		kWriter.writeIfNonZero(TAG_NO_CORPORATIONS_COUNT, m_iNoCorporationsCount);
+		kWriter.writeIfNonZero(TAG_NO_FOREIGN_CORPORATIONS_COUNT, m_iNoForeignCorporationsCount);
+		kWriter.writeIfNonZero(TAG_COASTAL_TRADE_ROUTES, m_iCoastalTradeRoutes);
+		kWriter.writeIfNonZero(TAG_TRADE_ROUTES, m_iTradeRoutes);
+		kWriter.writeIfNonZero(TAG_REVOLUTION_TIMER, m_iRevolutionTimer);
+		kWriter.writeIfNonZero(TAG_CONVERSION_TIMER, m_iConversionTimer);
+		kWriter.writeIfNonZero(TAG_STATE_RELIGION_COUNT, m_iStateReligionCount);
+		kWriter.writeIfNonZero(TAG_NO_NON_STATE_RELIGION_SPREAD_COUNT, m_iNoNonStateReligionSpreadCount);
+		kWriter.writeIfNonZero(TAG_STATE_RELIGION_HAPPINESS, m_iStateReligionHappiness);
+		kWriter.writeIfNonZero(TAG_NON_STATE_RELIGION_HAPPINESS, m_iNonStateReligionHappiness);
+		kWriter.writeIfNonZero(TAG_STATE_RELIGION_UNIT_PRODUCTION_MODIFIER, m_iStateReligionUnitProductionModifier);
+		kWriter.writeIfNonZero(TAG_STATE_RELIGION_BUILDING_PRODUCTION_MODIFIER, m_iStateReligionBuildingProductionModifier);
+		kWriter.writeIfNonZero(TAG_STATE_RELIGION_FREE_EXPERIENCE, m_iStateReligionFreeExperience);
+		kWriter.write(TAG_CAPITAL_CITY_ID, m_iCapitalCityID);
+		kWriter.writeIfNonZero(TAG_CITIES_LOST, m_iCitiesLost);
+		kWriter.writeIfNonZero(TAG_WINS_VS_BARBS, m_iWinsVsBarbs);
+		kWriter.writeIfNonZero(TAG_ASSETS, m_iAssets);
+		kWriter.writeIfNonZero(TAG_POWER, m_iPower);
+		kWriter.writeIfNonZero(TAG_TRIGGERS_INIT, m_bTriggersInit);
+		kWriter.writeIfNonZero(TAG_POPULATION_SCORE, m_iPopulationScore);
+		kWriter.writeIfNonZero(TAG_LAND_SCORE, m_iLandScore);
+		kWriter.writeIfNonZero(TAG_WONDERS_SCORE, m_iWondersScore);
+		kWriter.writeIfNonZero(TAG_TECH_SCORE, m_iTechScore);
+		kWriter.writeIfNonZero(TAG_COMBAT_EXPERIENCE, m_iCombatExperience);
+		kWriter.writeIfNonZero(TAG_ALIVE, m_bAlive);
+		kWriter.writeIfNonZero(TAG_EVER_ALIVE, m_bEverAlive);
+		kWriter.writeIfNonZero(TAG_TURN_ACTIVE, m_bTurnActive);
+		kWriter.writeIfNonZero(TAG_AUTO_MOVES, m_bAutoMoves);
+		kWriter.writeIfNonZero(TAG_END_TURN, m_bEndTurn);
+		kWriter.end();
+	}
 
-	pStream->Write(m_iStartingX);
-	pStream->Write(m_iStartingY);
-	pStream->Write(m_iTotalPopulation);
-	pStream->Write(m_iTotalLand);
-	pStream->Write(m_iTotalLandScored);
-	pStream->Write(m_iGold);
-	pStream->Write(m_iGoldPerTurn);
-	pStream->Write(m_iAdvancedStartPoints);
-	pStream->Write(m_iGoldenAgeTurns);
-	pStream->Write(m_iNumUnitGoldenAges);
-	pStream->Write(m_iStrikeTurns);
-	pStream->Write(m_iAnarchyTurns);
-	pStream->Write(m_iMaxAnarchyTurns);
-	pStream->Write(m_iAnarchyModifier);
-	pStream->Write(m_iGoldenAgeModifier);
-	pStream->Write(m_iGlobalHurryModifier);
-	pStream->Write(m_iGreatPeopleCreated);
-	pStream->Write(m_iGreatGeneralsCreated);
-	pStream->Write(m_iGreatPeopleThresholdModifier);
-	pStream->Write(m_iGreatGeneralsThresholdModifier);
-	pStream->Write(m_iGreatPeopleRateModifier);
-	pStream->Write(m_iGreatGeneralRateModifier);
-	pStream->Write(m_iDomesticGreatGeneralRateModifier);
-	pStream->Write(m_iStateReligionGreatPeopleRateModifier);
-	pStream->Write(m_iMaxGlobalBuildingProductionModifier);
-	pStream->Write(m_iMaxTeamBuildingProductionModifier);
-	pStream->Write(m_iMaxPlayerBuildingProductionModifier);
-	pStream->Write(m_iFreeExperience);
-	pStream->Write(m_iFeatureProductionModifier);
-	pStream->Write(m_iWorkerSpeedModifier);
-	pStream->Write(m_iImprovementUpgradeRateModifier);
-	pStream->Write(m_iMilitaryProductionModifier);
-	pStream->Write(m_iSpaceProductionModifier);
-	pStream->Write(m_iCityDefenseModifier);
-	pStream->Write(m_iNumNukeUnits);
-	pStream->Write(m_iNumOutsideUnits);
-	pStream->Write(m_iBaseFreeUnits);
-	pStream->Write(m_iBaseFreeMilitaryUnits);
-	pStream->Write(m_iFreeUnitsPopulationPercent);
-	pStream->Write(m_iFreeMilitaryUnitsPopulationPercent);
-	pStream->Write(m_iGoldPerUnit);
-	pStream->Write(m_iGoldPerMilitaryUnit);
-	pStream->Write(m_iExtraUnitCost);
-	pStream->Write(m_iNumMilitaryUnits);
-	pStream->Write(m_iHappyPerMilitaryUnit);
-	pStream->Write(m_iMilitaryFoodProductionCount);
-	pStream->Write(m_iConscriptCount);
-	pStream->Write(m_iMaxConscript);
-	pStream->Write(m_iHighestUnitLevel);
-	pStream->Write(m_iOverflowResearch);
-	pStream->Write(m_iNoUnhealthyPopulationCount);
-	pStream->Write(m_iExpInBorderModifier);
-	pStream->Write(m_iBuildingOnlyHealthyCount);
-	pStream->Write(m_iRitualProductionModifier);
-	pStream->Write(m_iDistanceMaintenanceModifier);
-	pStream->Write(m_iNumCitiesMaintenanceModifier);
-	pStream->Write(m_iCorporationMaintenanceModifier);
-	pStream->Write(m_iTotalMaintenance);
-	pStream->Write(m_iUpkeepModifier);
-	pStream->Write(m_iLevelExperienceModifier);
-	pStream->Write(m_iExtraHealth);
-	pStream->Write(m_iExtraGrowthThreshold);
-	pStream->Write(m_iACGrowthThreshold);
-	pStream->Write(m_iCrimePerTurn);
-	pStream->Write(m_iBuildingGoodHealth);
-	pStream->Write(m_iBuildingBadHealth);
-	pStream->Write(m_iExtraHappiness);
-	pStream->Write(m_iBuildingHappiness);
-	pStream->Write(m_iLargestCityHappiness);
-	pStream->Write(m_iWarWearinessPercentAnger);
-	pStream->Write(m_iWarWearinessModifier);
-	pStream->Write(m_iFreeSpecialist);
-	pStream->Write(m_iNoForeignTradeCount);
-	pStream->Write(m_iNoCorporationsCount);
-	pStream->Write(m_iNoForeignCorporationsCount);
-	pStream->Write(m_iCoastalTradeRoutes);
-	pStream->Write(m_iTradeRoutes);
-	pStream->Write(m_iRevolutionTimer);
-	pStream->Write(m_iConversionTimer);
-	pStream->Write(m_iStateReligionCount);
-	pStream->Write(m_iNoNonStateReligionSpreadCount);
-	pStream->Write(m_iStateReligionHappiness);
-	pStream->Write(m_iNonStateReligionHappiness);
-	pStream->Write(m_iStateReligionUnitProductionModifier);
-	pStream->Write(m_iStateReligionBuildingProductionModifier);
-	pStream->Write(m_iStateReligionFreeExperience);
-	pStream->Write(m_iCapitalCityID);
-	pStream->Write(m_iCitiesLost);
-	pStream->Write(m_iWinsVsBarbs);
-	pStream->Write(m_iAssets);
-	pStream->Write(m_iPower);
-	pStream->Write(m_bTriggersInit);
-	pStream->Write(m_iPopulationScore);
-	pStream->Write(m_iLandScore);
-	pStream->Write(m_iWondersScore);
-	pStream->Write(m_iTechScore);
-	pStream->Write(m_iCombatExperience);
 
-	pStream->Write(m_bAlive);
-	pStream->Write(m_bEverAlive);
-	pStream->Write(m_bTurnActive);
-	pStream->Write(m_bAutoMoves);
-	pStream->Write(m_bEndTurn);
 	pStream->Write(m_bPbemNewTurn && GC.getGameINLINE().isPbem());
 	pStream->Write(m_bExtendedGame);
 	pStream->Write(m_bFoundedFirstCity);
