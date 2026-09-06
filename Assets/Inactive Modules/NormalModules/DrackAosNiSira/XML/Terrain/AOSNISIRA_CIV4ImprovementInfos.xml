@@ -2219,21 +2219,20 @@
 		</ImprovementInfo>
 		<ImprovementInfo>	<!-- Shroom Farm-->
 			<Type>IMPROVEMENT_FAIRY_SHROOM_FARM</Type>
-			<ImprovementClass>IMPROVEMENTCLASS_HOMESTEAD</ImprovementClass>
+			<ImprovementClass>IMPROVEMENTCLASS_FARM</ImprovementClass>
 			<Description>TXT_KEY_IMPROVEMENT_FAIRY_SHROOM_FARM</Description>
 			<Civilopedia>TXT_KEY_IMPROVEMENT_FAIRY_SHROOM_FARM_PEDIA</Civilopedia>
 			<ArtDefineTag>ART_DEF_IMPROVEMENT_FAIRY_SHROOM_FARM</ArtDefineTag>
 			<YieldChanges>
-				<iYieldChange>2</iYieldChange>
 				<iYieldChange>1</iYieldChange>
-				<iYieldChange>1</iYieldChange>
+				<iYieldChange>0</iYieldChange>
+				<iYieldChange>0</iYieldChange>
 			</YieldChanges>
 			<IrrigatedYieldChange>
 				<iYield>1</iYield>
 				<iYield>0</iYield>
 				<iYield>0</iYield>
 			</IrrigatedYieldChange>
-			<ImprovementPillage>IMPROVEMENTCLASS_FARM</ImprovementPillage>
 			<bCarriesIrrigation>1</bCarriesIrrigation>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iPillageGold>10</iPillageGold>

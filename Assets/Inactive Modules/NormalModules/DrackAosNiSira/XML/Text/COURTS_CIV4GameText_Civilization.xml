@@ -272,7 +272,7 @@ The Court of Misrak are Soul-Consuming Fairies that do not require food. They fo
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROJECT_FAIRY_CONVERT_ALL_SOULS_HELP</Tag>
-        <English>[ICON_BULLET]Increases the Size of all cities, beginning my the lowest, by one. Stops if not enough souls are available.</English>
+        <English>[ICON_BULLET]Increases the Size of all cities, beginning by the lowest, by one. Stops if not enough souls are available.</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROJECT_FAIRY_CONVERT_SOULS3</Tag>

@@ -34,9 +34,9 @@
 			<bAllowAI>1</bAllowAI>
             <bAbility>1</bAbility>
 			<bHasCasted>1</bHasCasted>
-            <iDelay>5</iDelay>
+            <iDelay>6</iDelay>
             <bBuffCasterOnly>1</bBuffCasterOnly>
-            <iCost>100</iCost>
+            <iCost>250</iCost>
             <AddPromotions>
 				<AddPromotion>PROMOTION_IMMORTAL</AddPromotion>
 			</AddPromotions>

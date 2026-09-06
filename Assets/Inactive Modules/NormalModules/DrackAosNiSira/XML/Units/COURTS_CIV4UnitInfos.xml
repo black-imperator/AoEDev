@@ -932,7 +932,7 @@
 			<bFirstStrikeImmune>1</bFirstStrikeImmune>
 			<bPillage>1</bPillage>
 			<iCityAttack>-25</iCityAttack>
-			<iInvisibleLevel>4</iInvisibleLevel>
+			<iInvisibleLevel>3</iInvisibleLevel>
 			<UnitAIs>
 				<UnitAI>
 					<UnitAIType>UNITAI_RESERVE</UnitAIType>
@@ -993,12 +993,6 @@
 			<iCommandRange>1</iCommandRange>
 			<iTier>3</iTier>
 			<iWeaponTierMax>3</iWeaponTierMax>
-			<BonusAffinities>
-				<BonusAffinity>
-					<BonusType>BONUS_WINE</BonusType>
-					<iAffinity>1</iAffinity>
-				</BonusAffinity>
-			</BonusAffinities>
 		</UnitInfo>
 		<UnitInfo>       	<!-- Fae Rider -->
 			<Class>UNITCLASS_HORSE_ARCHER</Class>

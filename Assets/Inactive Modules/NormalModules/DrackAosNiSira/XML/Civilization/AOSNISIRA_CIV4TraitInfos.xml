@@ -135,10 +135,28 @@
 			<ShortDescription>TXT_KEY_TRAIT_SIRA_TRICKERY_SHORT</ShortDescription>
 			<bSelectable>0</bSelectable>
 			<TradeYieldModifiers>
-				<iYield>10</iYield>
 				<iYield>0</iYield>
-				<iYield>-35</iYield>
+				<iYield>0</iYield>
+				<iYield>-25</iYield>
 			</TradeYieldModifiers>
+			<FeatureYieldChanges>
+				<FeatureYieldChange>
+					<FeatureType>FEATURE_FOREST</FeatureType>
+					<FeatureYields>
+						<iYield>0</iYield>
+						<iYield>-1</iYield>
+						<iYield>0</iYield>
+					</FeatureYields>
+				</FeatureYieldChange>
+				<FeatureYieldChange>
+					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
+					<FeatureYields>
+						<iYield>0</iYield>
+						<iYield>-1</iYield>
+						<iYield>0</iYield>
+					</FeatureYields>
+				</FeatureYieldChange>
+			</FeatureYieldChanges>
         </TraitInfo>
 		<TraitInfo> <!-- Sira Trickery II -->
             <Type>TRAIT_SIRA_TRICKERY2</Type>
@@ -150,7 +168,6 @@
 			<Civilopedia>TXT_KEY_TRAIT_SIRA_TRICKERY_PEDIA</Civilopedia>
 			<ShortDescription>TXT_KEY_TRAIT_SIRA_TRICKERY_SHORT</ShortDescription>
 			<bSelectable>0</bSelectable>
-			<bOverflowProduction>1</bOverflowProduction>
 			<FeatureYieldChanges>
 				<FeatureYieldChange>
 					<FeatureType>FEATURE_FOREST</FeatureType>
@@ -401,7 +418,7 @@
 					<ImprovementYields>
 						<iYield>0</iYield>
 						<iYield>0</iYield>
-						<iYield>2</iYield>
+						<iYield>1</iYield>
 					</ImprovementYields>
 				</ImprovementYieldChange>
 				<ImprovementYieldChange>
@@ -409,7 +426,7 @@
 					<ImprovementYields>
 						<iYield>0</iYield>
 						<iYield>0</iYield>
-						<iYield>2</iYield>
+						<iYield>1</iYield>
 					</ImprovementYields>
 				</ImprovementYieldChange>
 				<ImprovementYieldChange>
@@ -417,7 +434,7 @@
 					<ImprovementYields>
 						<iYield>0</iYield>
 						<iYield>0</iYield>
-						<iYield>2</iYield>
+						<iYield>1</iYield>
 					</ImprovementYields>
 				</ImprovementYieldChange>
 				<ImprovementYieldChange>

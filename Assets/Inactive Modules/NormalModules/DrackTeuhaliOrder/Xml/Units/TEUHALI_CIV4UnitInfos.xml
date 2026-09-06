@@ -242,7 +242,7 @@
 			<iXPValueDefense>16</iXPValueDefense>
 			<iCultureGarrison>16</iCultureGarrison>
 			<iCityAttack>-50</iCityAttack>
-			<PrereqTech>TECH_MYSTICISM</PrereqTech>
+			<PrereqTech>TECH_PHILOSOPHY</PrereqTech>
 			<TechTypes>
 				<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
 			</TechTypes>
@@ -269,10 +269,6 @@
 				</FreePromotion>
 				<FreePromotion>
 					<PromotionType>PROMOTION_TEUHALI_CHOSEN_OF_HALI</PromotionType>
-					<iNumApplied>1</iNumApplied>
-				</FreePromotion>
-				<FreePromotion>
-					<PromotionType>PROMOTION_IMMORTAL</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 				<FreePromotion>

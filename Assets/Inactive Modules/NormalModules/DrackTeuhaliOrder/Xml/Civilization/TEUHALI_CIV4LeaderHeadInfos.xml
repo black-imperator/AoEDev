@@ -13,6 +13,7 @@
 			<ArtDefineTag>ART_DEF_LEADER_HALI</ArtDefineTag>
 			<LeaderClass>LEADERCLASS_TEUHALI_HISTORICAL</LeaderClass>
 			<Alignment>ALIGNMENT_GOOD</Alignment>
+			<iAlignmentModifier>750</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
 			<iEthicalAlignmentModifier>500</iEthicalAlignmentModifier>
 			<bFemale>1</bFemale>
@@ -456,6 +457,7 @@
 			<ArtDefineTag>ART_DEF_LEADER_SIGISMUND</ArtDefineTag>
 			<LeaderClass>LEADERCLASS_TEUHALI_HISTORICAL</LeaderClass>
 			<Alignment>ALIGNMENT_NEUTRAL</Alignment>
+			<iAlignmentModifier>0</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
 			<iEthicalAlignmentModifier>500</iEthicalAlignmentModifier>
 			<bFemale>0</bFemale>
@@ -899,6 +901,7 @@
 			<ArtDefineTag>ART_DEF_LEADER_ANNAVONNEUBURG</ArtDefineTag>
 			<LeaderClass>LEADERCLASS_TEUHALI_IMPORTANT</LeaderClass>
 			<Alignment>ALIGNMENT_NEUTRAL</Alignment>
+			<iAlignmentModifier>0</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
 			<iEthicalAlignmentModifier>300</iEthicalAlignmentModifier>
 			<bFemale>1</bFemale>
@@ -1338,6 +1341,7 @@
 			<ArtDefineTag>ART_DEF_LEADER_SABRINA</ArtDefineTag>
 			<LeaderClass>LEADERCLASS_TEUHALI_IMPORTANT</LeaderClass>
 			<Alignment>ALIGNMENT_NEUTRAL</Alignment>
+			<iAlignmentModifier>0</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
 			<iEthicalAlignmentModifier>400</iEthicalAlignmentModifier>
 			<bFemale>1</bFemale>
@@ -1777,6 +1781,7 @@
 			<ArtDefineTag>ART_DEF_LEADER_MARIA_AMARA_ZUCKER</ArtDefineTag>
 			<LeaderClass>LEADERCLASS_TEUHALI_IMPORTANT</LeaderClass>
 			<Alignment>ALIGNMENT_EVIL</Alignment>
+			<iAlignmentModifier>-750</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
 			<iEthicalAlignmentModifier>350</iEthicalAlignmentModifier>
 			<bFemale>1</bFemale>
@@ -2216,6 +2221,7 @@
 			<ArtDefineTag>ART_DEF_LEADER_BRUNHILDE_VON_MITTE</ArtDefineTag>
 			<LeaderClass>LEADERCLASS_TEUHALI_IMPORTANT</LeaderClass>
 			<Alignment>ALIGNMENT_EVIL</Alignment>
+			<iAlignmentModifier>-750</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
 			<iEthicalAlignmentModifier>300</iEthicalAlignmentModifier>
 			<bFemale>1</bFemale>

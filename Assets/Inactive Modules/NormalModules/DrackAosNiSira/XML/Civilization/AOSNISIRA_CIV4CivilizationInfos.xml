@@ -703,7 +703,7 @@
 			</SpecialistArtstyles>
 			<Improvements>
 				<Improvement>
-					<ImprovementClassType>IMPROVEMENTCLASS_HOMESTEAD</ImprovementClassType>
+					<ImprovementClassType>IMPROVEMENTCLASS_FARM</ImprovementClassType>
 					<ImprovementType>IMPROVEMENT_FAIRY_SHROOM_FARM</ImprovementType>
 				</Improvement>
 			</Improvements>

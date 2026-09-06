@@ -437,6 +437,7 @@
 			<bFemale>1</bFemale>
 			<iSomniumAggressiveness>30</iSomniumAggressiveness>
 			<Alignment>ALIGNMENT_GOOD</Alignment>
+			<iAlignmentModifier>750</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
 			<iEthicalAlignmentModifier>600</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_CATACOMB_LIBRALUS</FavoriteWonder>
@@ -872,6 +873,7 @@
 			<bFemale>1</bFemale>
 			<iSomniumAggressiveness>30</iSomniumAggressiveness>
 			<Alignment>ALIGNMENT_NEUTRAL</Alignment>
+			<iAlignmentModifier>0</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_NEUTRAL</EthicalAlignment>
 			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_CATACOMB_LIBRALUS</FavoriteWonder>
@@ -1311,6 +1313,7 @@
 			<bFemale>1</bFemale>
 			<iSomniumAggressiveness>30</iSomniumAggressiveness>
 			<Alignment>ALIGNMENT_NEUTRAL</Alignment>
+			<iAlignmentModifier>0</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
 			<iEthicalAlignmentModifier>660</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_CITY_OF_A_THOUSAND_SLUMS</FavoriteWonder>
@@ -1746,6 +1749,7 @@
 			<bFemale>1</bFemale>
 			<iSomniumAggressiveness>30</iSomniumAggressiveness>
 			<Alignment>ALIGNMENT_NEUTRAL</Alignment>
+			<iAlignmentModifier>0</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_CHAOTIC</EthicalAlignment>
 			<iEthicalAlignmentModifier>-600</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_PACT_OF_THE_NILHORN</FavoriteWonder>
@@ -2181,6 +2185,7 @@
 			<bFemale>1</bFemale>
 			<iSomniumAggressiveness>30</iSomniumAggressiveness>
 			<Alignment>ALIGNMENT_GOOD</Alignment>
+			<iAlignmentModifier>700</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_NEUTRAL</EthicalAlignment>
 			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_CROWN_OF_AKHARIEN</FavoriteWonder>
@@ -2260,6 +2265,7 @@
 			</Flavors>
 			<bFemale>1</bFemale>
 			<Alignment>ALIGNMENT_GOOD</Alignment>
+			<iAlignmentModifier>750</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
 			<iEthicalAlignmentModifier>500</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_MINES_OF_GALDUR</FavoriteWonder>
@@ -2634,6 +2640,7 @@
 			</Flavors>
 			<bFemale>1</bFemale>
 			<Alignment>ALIGNMENT_NEUTRAL</Alignment>
+			<iAlignmentModifier>0</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_NEUTRAL</EthicalAlignment>
 			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_CATACOMB_LIBRALUS</FavoriteWonder>
@@ -3012,6 +3019,7 @@
 			</Flavors>
 			<bFemale>1</bFemale>
 			<Alignment>ALIGNMENT_GOOD</Alignment>
+			<iAlignmentModifier>750</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
 			<iEthicalAlignmentModifier>600</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_MINES_OF_GALDUR</FavoriteWonder>
@@ -3390,6 +3398,7 @@
 			</Flavors>
 			<bFemale>0</bFemale>
 			<Alignment>ALIGNMENT_GOOD</Alignment>
+			<iAlignmentModifier>750</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
 			<iEthicalAlignmentModifier>400</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_CAMINUS_AUREUS</FavoriteWonder>
@@ -3764,6 +3773,7 @@
 			</Flavors>
 			<bFemale>1</bFemale>
 			<Alignment>ALIGNMENT_EVIL</Alignment>
+			<iAlignmentModifier>-750</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_NEUTRAL</EthicalAlignment>
 			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_MINES_OF_GALDUR</FavoriteWonder>
@@ -4142,6 +4152,7 @@
 			</Flavors>
 			<bFemale>1</bFemale>
 			<Alignment>ALIGNMENT_NEUTRAL</Alignment>
+			<iAlignmentModifier>0</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_NEUTRAL</EthicalAlignment>
 			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_MINES_OF_GALDUR</FavoriteWonder>
@@ -4509,6 +4520,7 @@
 			</Flavors>
 			<bFemale>1</bFemale>
 			<Alignment>ALIGNMENT_GOOD</Alignment>
+			<iAlignmentModifier>750</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_NEUTRAL</EthicalAlignment>
 			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_MINES_OF_GALDUR</FavoriteWonder>
@@ -4887,6 +4899,7 @@
 			</Flavors>
 			<bFemale>1</bFemale>
 			<Alignment>ALIGNMENT_EVIL</Alignment>
+			<iAlignmentModifier>-750</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_CHAOTIC</EthicalAlignment>
 			<iEthicalAlignmentModifier>-500</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_MINES_OF_GALDUR</FavoriteWonder>
@@ -5269,6 +5282,7 @@
 			</Flavors>
 			<bFemale>1</bFemale>
 			<Alignment>ALIGNMENT_NEUTRAL</Alignment>
+			<iAlignmentModifier>0</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_CHAOTIC</EthicalAlignment>
 			<iEthicalAlignmentModifier>-500</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_MINES_OF_GALDUR</FavoriteWonder>
@@ -5651,6 +5665,7 @@
 			</Flavors>
 			<bFemale>1</bFemale>
 			<Alignment>ALIGNMENT_EVIL</Alignment>
+			<iAlignmentModifier>-750</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_CHAOTIC</EthicalAlignment>
 			<iEthicalAlignmentModifier>-500</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_MINES_OF_GALDUR</FavoriteWonder>
@@ -6029,6 +6044,7 @@
 			</Flavors>
 			<bFemale>1</bFemale>
 			<Alignment>ALIGNMENT_NEUTRAL</Alignment>
+			<iAlignmentModifier>0</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
 			<iEthicalAlignmentModifier>500</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_MINES_OF_GALDUR</FavoriteWonder>
@@ -6396,6 +6412,7 @@
 			</Flavors>
 			<bFemale>1</bFemale>
 			<Alignment>ALIGNMENT_EVIL</Alignment>
+			<iAlignmentModifier>-750</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_NEUTRAL</EthicalAlignment>
 			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_MINES_OF_GALDUR</FavoriteWonder>
@@ -6770,6 +6787,7 @@
 			</Flavors>
 			<bFemale>1</bFemale>
 			<Alignment>ALIGNMENT_GOOD</Alignment>
+			<iAlignmentModifier>750</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_NEUTRAL</EthicalAlignment>
 			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_MINES_OF_GALDUR</FavoriteWonder>
@@ -7133,6 +7151,7 @@
 			</Flavors>
 			<bFemale>1</bFemale>
 			<Alignment>ALIGNMENT_GOOD</Alignment>
+			<iAlignmentModifier>750</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_NEUTRAL</EthicalAlignment>
 			<iEthicalAlignmentModifier>0</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_MINES_OF_GALDUR</FavoriteWonder>
