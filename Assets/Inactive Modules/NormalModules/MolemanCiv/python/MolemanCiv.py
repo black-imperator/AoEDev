@@ -136,7 +136,7 @@ def onCityDoTurn(self, argsList):
 		
 		##loops every tile around a Kusekh city to find molerun, then gives it +yield food if that city has onw of the UB.
 		if bhasLarder or bhasSecretTunnel or bhasUndermine:
-			for iiX, iiY in plotsInRange(pPlot.getX(), pPlot.getY(), pCity.getNumCityPlots()):
+			for iiX, iiY in plotsInRange(pPlot.getX(), pPlot.getY(), 1):
 				pLoopPlot = CyMap().plot(iiX, iiY)
 				if pLoopPlot.getTerrainType() != getInfoType("TERRAIN_OCEAN") and pLoopPlot.getTerrainType() != getInfoType("TERRAIN_COAST") and pLoopPlot.getTerrainType() != getInfoType("TERRAIN_PEAK") and pLoopPlot.getTerrainType() != getInfoType("TERRAIN_DEEP_OCEAN") and pLoopPlot.getTerrainType() != getInfoType("TERRAIN_BLIGHTED_COAST") and pLoopPlot.getTerrainType() != getInfoType("TERRAIN_BLACKWATER"):
 					iPlotEffect = pLoopPlot.getPlotEffectType()
@@ -212,7 +212,7 @@ def onCityAcquired(self, argsList): # triggered whenever a city is captured (bef
 
 		#removes +yields from UBs if the city is taken by a non-moleman civ
 		if bhasLarder or bhasSecretTunnel or bhasUndermine:
-			for iiX, iiY in plotsInRange(pPlot.getX(), pPlot.getY(), pCity.getNumCityPlots()):
+			for iiX, iiY in plotsInRange(pPlot.getX(), pPlot.getY(), 1):
 				pLoopPlot = CyMap().plot(iiX, iiY)
 				if pLoopPlot.getTerrainType() != getInfoType("TERRAIN_OCEAN") and pLoopPlot.getTerrainType() != getInfoType("TERRAIN_COAST") and pLoopPlot.getTerrainType() != getInfoType("TERRAIN_PEAK") and pLoopPlot.getTerrainType() != getInfoType("TERRAIN_DEEP_OCEAN") and pLoopPlot.getTerrainType() != getInfoType("TERRAIN_BLIGHTED_COAST") and pLoopPlot.getTerrainType() != getInfoType("TERRAIN_BLACKWATER"):
 					iPlotEffect = pLoopPlot.getPlotEffectType()
@@ -294,7 +294,7 @@ def onBuildingBuilt(self, argsList):
 					pLoopPlot.setPlotEffectType(gc.getInfoTypeForString("PLOT_EFFECT_MOLERUN"))
 
 	if bhasLarder or bhasSecretTunnel or bhasUndermine:
-		for iiX, iiY in plotsInRange(pCity.getX(), pCity.getY(), pCity.getNumCityPlots()):
+		for iiX, iiY in plotsInRange(pCity.getX(), pCity.getY(), 1):
 			pLoopPlot = CyMap().plot(iiX, iiY)
 			if pLoopPlot.getTerrainType() != getInfoType("TERRAIN_OCEAN") and pLoopPlot.getTerrainType() != getInfoType("TERRAIN_COAST") and pLoopPlot.getTerrainType() != getInfoType("TERRAIN_PEAK") and pLoopPlot.getTerrainType() != getInfoType("TERRAIN_DEEP_OCEAN") and pLoopPlot.getTerrainType() != getInfoType("TERRAIN_BLIGHTED_COAST") and pLoopPlot.getTerrainType() != getInfoType("TERRAIN_BLACKWATER"):
 				iPlotEffect = pLoopPlot.getPlotEffectType()

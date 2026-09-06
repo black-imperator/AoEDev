@@ -99,19 +99,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MOLEMAN_SECRET_TUNNEL_STRATEGY</Tag>
-		<English>Secret Tunnels produce commerce based on the surrounding Molerun of a city while giving a small bonus to defense.</English>
-		<French>Secret Tunnels produce commerce based on the surrounding Molerun of a city while giving a small bonus to defense.</French>
-		<German>Secret Tunnels produce commerce based on the surrounding Molerun of a city while giving a small bonus to defense.</German>
-		<Italian>Secret Tunnels produce commerce based on the surrounding Molerun of a city while giving a small bonus to defense.</Italian>
-		<Spanish>Secret Tunnels produce commerce based on the surrounding Molerun of a city while giving a small bonus to defense.</Spanish>
+		<English>Secret Tunnels give a small bonus to defense while also producing extra Commerce on neighboring tiles that have molerun.</English>
+		<French>Secret Tunnels give a small bonus to defense while also producing extra Commerce on neighboring tiles that have molerun.</French>
+		<German>Secret Tunnels give a small bonus to defense while also producing extra Commerce on neighboring tiles that have molerun.</German>
+		<Italian>Secret Tunnels give a small bonus to defense while also producing extra Commerce on neighboring tiles that have molerun.</Italian>
+		<Spanish>Secret Tunnels give a small bonus to defense while also producing extra Commerce on neighboring tiles that have molerun.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MOLEMAN_SECRET_TUNNEL_HELP</Tag>
-		<English>[ICON_BULLET]+1 [ICON_COMMERCE] on tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</English>
-		<French>[ICON_BULLET]+1 [ICON_COMMERCE] on tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</French>
-		<German>[ICON_BULLET]+1 [ICON_COMMERCE] on tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</German>
-		<Italian>[ICON_BULLET]+1 [ICON_COMMERCE] on tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</Italian>
-		<Spanish>[ICON_BULLET]+1 [ICON_COMMERCE] on tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</Spanish>
+		<English>[ICON_BULLET]+1 [ICON_COMMERCE] on neighboring tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</English>
+		<French>[ICON_BULLET]+1 [ICON_COMMERCE] on neighboring tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</French>
+		<German>[ICON_BULLET]+1 [ICON_COMMERCE] on neighboring tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</German>
+		<Italian>[ICON_BULLET]+1 [ICON_COMMERCE] on neighboring tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</Italian>
+		<Spanish>[ICON_BULLET]+1 [ICON_COMMERCE] on neighboring tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MOLEMAN_SECRET_TUNNEL_PEDIA</Tag>
@@ -139,19 +139,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MOLEMAN_UNDERMINE_STRATEGY</Tag>
-		<English>Undermines produce extra production based on the surrounding Molerun of a city.</English>
-		<French>Undermines produce extra production based on the surrounding Molerun of a city.</French>
-		<German>Undermines produce extra production based on the surrounding Molerun of a city.</German>
-		<Italian>Undermines produce extra production based on the surrounding Molerun of a city.</Italian>
-		<Spanish>Undermines produce extra production based on the surrounding Molerun of a city.</Spanish>
+		<English>Undermines produce extra production based on the surrounding Molerun of a city. This only effects tiles that neighbor the city.</English>
+		<French>Undermines produce extra production based on the surrounding Molerun of a city. This only effects tiles that neighbor the city.</French>
+		<German>Undermines produce extra production based on the surrounding Molerun of a city. This only effects tiles that neighbor the city.</German>
+		<Italian>Undermines produce extra production based on the surrounding Molerun of a city. This only effects tiles that neighbor the city.</Italian>
+		<Spanish>Undermines produce extra production based on the surrounding Molerun of a city. This only effects tiles that neighbor the city.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MOLEMAN_UNDERMINE_HELP</Tag>
-		<English>[ICON_BULLET]+1 [ICON_PRODUCTION] on tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</English>
-		<French>[ICON_BULLET]+1 [ICON_PRODUCTION] on tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</French>
-		<German>[ICON_BULLET]+1 [ICON_PRODUCTION] on tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</German>
-		<Italian>[ICON_BULLET]+1 [ICON_PRODUCTION] on tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</Italian>
-		<Spanish>[ICON_BULLET]+1 [ICON_PRODUCTION] on tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</Spanish>
+		<English>[ICON_BULLET]+1 [ICON_PRODUCTION] on neighboring tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</English>
+		<French>[ICON_BULLET]+1 [ICON_PRODUCTION] on neighboring tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</French>
+		<German>[ICON_BULLET]+1 [ICON_PRODUCTION] on neighboring tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</German>
+		<Italian>[ICON_BULLET]+1 [ICON_PRODUCTION] on neighboring tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</Italian>
+		<Spanish>[ICON_BULLET]+1 [ICON_PRODUCTION] on neighboring tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MOLEMAN_UNDERMINE_PEDIA</Tag>
@@ -195,19 +195,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MOLEMAN_LARDER_HELP</Tag>
-		<English>[ICON_BULLET]+1 [ICON_FOOD] on tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</English>
-		<French>[ICON_BULLET]+1 [ICON_FOOD] on tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</French>
-		<German>[ICON_BULLET]+1 [ICON_FOOD] on tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</German>
-		<Italian>[ICON_BULLET]+1 [ICON_FOOD] on tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</Italian>
-		<Spanish>[ICON_BULLET]+1 [ICON_FOOD] on tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</Spanish>
+		<English>[ICON_BULLET]+1 [ICON_FOOD] on neighboring tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</English>
+		<French>[ICON_BULLET]+1 [ICON_FOOD] on neighboring tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</French>
+		<German>[ICON_BULLET]+1 [ICON_FOOD] on neighboring tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</German>
+		<Italian>[ICON_BULLET]+1 [ICON_FOOD] on neighboring tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</Italian>
+		<Spanish>[ICON_BULLET]+1 [ICON_FOOD] on neighboring tiles with [LINK=PLOT_EFFECT_MOLERUN]Molerun[\LINK] that the city owns</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MOLEMAN_LARDER_STRATEGY</Tag>
-		<English>The Kusekh Larder comes with all of the benefits of a normal Granary, but also adds one extra Food to nearby tiles that have Molerun.</English>
-		<French>The Kusekh Larder comes with all of the benefits of a normal Granary, but also adds one extra Food to nearby tiles that have Molerun.</French>
-		<German>The Kusekh Larder comes with all of the benefits of a normal Granary, but also adds one extra Food to nearby tiles that have Molerun.</German>
-		<Italian>The Kusekh Larder comes with all of the benefits of a normal Granary, but also adds one extra Food to nearby tiles that have Molerun.</Italian>
-		<Spanish>The Kusekh Larder comes with all of the benefits of a normal Granary, but also adds one extra Food to nearby tiles that have Molerun.</Spanish>
+		<English>The Kusekh Larder comes with all of the benefits of a normal Granary, but also adds one extra Food to neighboring tiles that have Molerun.</English>
+		<French>The Kusekh Larder comes with all of the benefits of a normal Granary, but also adds one extra Food to neighboring tiles that have Molerun.</French>
+		<German>The Kusekh Larder comes with all of the benefits of a normal Granary, but also adds one extra Food to neighboring tiles that have Molerun.</German>
+		<Italian>The Kusekh Larder comes with all of the benefits of a normal Granary, but also adds one extra Food to neighboring tiles that have Molerun.</Italian>
+		<Spanish>The Kusekh Larder comes with all of the benefits of a normal Granary, but also adds one extra Food to neighboring tiles that have Molerun.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MOLEMAN_WORM_TRAP</Tag>
@@ -942,6 +942,14 @@
 		<German>Molemen</German>
 		<Italian>Molemen</Italian>
 		<Spanish>Molemen</Spanish>
+	</TEXT>
+		<TEXT>
+		<Tag>TXT_KEY_UNIT_MOLEMAN_FORT_COMMANDER</Tag>
+		<English>Burrowguard</English>
+		<French>Burrowguard</French>
+		<German>Burrowguard</German>
+		<Italian>Burrowguard</Italian>
+		<Spanish>Burrowguard</Spanish>
 	</TEXT>
 	<!--Misc-->
 	<TEXT>

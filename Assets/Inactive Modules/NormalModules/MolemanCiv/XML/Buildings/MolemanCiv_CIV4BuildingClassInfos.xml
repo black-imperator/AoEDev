@@ -45,18 +45,6 @@
 			<DefaultBuilding>BUILDING_MOLEMAN_TUNNELS_GRANITE</DefaultBuilding>
 			<VictoryThresholds/>
 		</BuildingClassInfo>
-			<BuildingClassInfo>
-			<Type>BUILDINGCLASS_MOLEMAN_BURROWS</Type>
-			<Description>TXT_KEY_BUILDING_MOLEMAN_BURROWS</Description>
-			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
-			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<iExtraPlayerInstances>0</iExtraPlayerInstances>
-			<bNoLimit>0</bNoLimit>
-			<bMonument>0</bMonument>
-			<DefaultBuilding>BUILDING_MOLEMAN_BURROWS</DefaultBuilding>
-			<VictoryThresholds/>
-		</BuildingClassInfo>
 		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_MOLEMAN_SECRET_TUNNEL</Type>
 			<Description>TXT_KEY_BUILDING_SECRET_TUNNEL</Description>

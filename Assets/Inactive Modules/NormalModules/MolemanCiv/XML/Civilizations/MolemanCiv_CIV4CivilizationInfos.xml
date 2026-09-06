@@ -136,6 +136,10 @@
 					<UnitClassType>UNITCLASS_CHAMPION</UnitClassType>
 					<UnitType>UNIT_MOLEMAN_CHAMPION</UnitType>
 				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_FORT_COMMANDER</UnitClassType>
+					<UnitType>UNIT_MOLEMAN_FORT_COMMANDER</UnitType>
+				</Unit>
 			</Units>
 			<Improvements>
 				<Improvement>

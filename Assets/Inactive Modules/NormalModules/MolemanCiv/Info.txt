@@ -8,7 +8,7 @@ Moleman Civ
 ;Note: it have to be number, so only numberic characters and none or one period
 ;note: one line
 [version]
-0.12
+0.2
 ;
 ;
 ;RifE version - version of RifE for which is this module tested, checked, developed, etc
@@ -36,4 +36,12 @@ Adds the Kusekh, a moleman civilization
 
 Adds the molemen, chimeric experiments from the Age of Magic that escaped their creators and hid underground until the Age of Rebirth.
 
-V1.0
+V0.2
+- Added the Burrowguard UU as a slightly weaker replacement for the Fort Commander based on feedback
+- Blocked the Fort Commander from being able to tunnel (but he can still get the molerun-based promotions)
+- Fixed workers and settlers not getting tunnel support on surface tunnels
+- Fixed workers not gaining XP over time
+- Fixed being able to get the Tunneler I promotion when you already have Tunneler II or Tunneler III
+- Larders, Undermines, and Secret Tunnels now only affect the tiles that neighbor a city
+- Gorgers and Gourmands now start with an extra movement point (may be OP with Tunneler but we'll see)
+- changed the upgrade paths of the mounted units so now your Giant Moles can upgrade to Gorgers
