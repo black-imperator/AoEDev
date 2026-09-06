@@ -3364,7 +3364,7 @@
 			<Civilopedia>TXT_KEY_BONUS_YEW_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_RUSH</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_WOOD_YEW</ArtDefineTag>
-			<TechReveal>TECH_ARCHERY</TechReveal>
+			<TechReveal>TECH_WOOD_WORKING</TechReveal>
 			<TechCityTrade>TECH_BOWYERS</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
@@ -3534,6 +3534,7 @@
 			<TechReveal>TECH_MATHEMATICS</TechReveal>
 			<TechCityTrade>TECH_ENGINEERING</TechCityTrade>
 			<TechObsolete>NONE</TechObsolete>
+			<iHappiness>1</iHappiness>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
 				<iYieldChange>0</iYieldChange>
@@ -3565,6 +3566,26 @@
 				</TerrainBoolean>
 				<TerrainBoolean>
 					<TerrainType>TERRAIN_WASTELAND</TerrainType>
+					<bTerrain>1</bTerrain>
+				</TerrainBoolean>
+				<TerrainBoolean>
+					<TerrainType>TERRAIN_MARSH</TerrainType>
+					<bTerrain>1</bTerrain>
+				</TerrainBoolean>
+				<TerrainBoolean>
+					<TerrainType>TERRAIN_PLAINS</TerrainType>
+					<bTerrain>1</bTerrain>
+				</TerrainBoolean>
+				<TerrainBoolean>
+					<TerrainType>TERRAIN_GRASS</TerrainType>
+					<bTerrain>1</bTerrain>
+				</TerrainBoolean>
+				<TerrainBoolean>
+					<TerrainType>TERRAIN_TAIGA</TerrainType>
+					<bTerrain>1</bTerrain>
+				</TerrainBoolean>
+				<TerrainBoolean>
+					<TerrainType>TERRAIN_TUNDRA</TerrainType>
 					<bTerrain>1</bTerrain>
 				</TerrainBoolean>
 			</TerrainBooleans>
@@ -3631,6 +3652,10 @@
 					<TerrainType>TERRAIN_TUNDRA</TerrainType>
 					<bTerrain>1</bTerrain>
 				</TerrainBoolean>
+				<TerrainBoolean>
+					<TerrainType>TERRAIN_MARSH</TerrainType>
+					<bTerrain>1</bTerrain>
+				</TerrainBoolean>
 			</TerrainBooleans>
 			<FeatureBooleans>
 				<FeatureBoolean>
@@ -3656,6 +3681,10 @@
 					<bFeatureTerrain>1</bFeatureTerrain>
 				</FeatureTerrainBoolean>
 				<FeatureTerrainBoolean>
+					<TerrainType>TERRAIN_MARSH</TerrainType>
+					<bFeatureTerrain>1</bFeatureTerrain>
+				</FeatureTerrainBoolean>
+				<FeatureTerrainBoolean>
 					<TerrainType>TERRAIN_TAIGA</TerrainType>
 					<bFeatureTerrain>1</bFeatureTerrain>
 				</FeatureTerrainBoolean>
@@ -3665,7 +3694,7 @@
 				</FeatureTerrainBoolean>
 			</FeatureTerrainBooleans>
 			<DamageType>NONE</DamageType>
-			<FreePromotion>NONE</FreePromotion>
+			<FreePromotion>PROMOTION_GOLDEN_GLYPHS</FreePromotion>
 		</BonusInfo>
 		<BonusInfo>		<!-- Dagian Bronze -->
 			<Type>BONUS_DAGIAN_BRONZE</Type>
@@ -3724,7 +3753,17 @@
 					<TerrainType>TERRAIN_TUNDRA</TerrainType>
 					<bTerrain>1</bTerrain>
 				</TerrainBoolean>
+				<TerrainBoolean>
+					<TerrainType>TERRAIN_MARSH</TerrainType>
+					<bTerrain>1</bTerrain>
+				</TerrainBoolean>
 			</TerrainBooleans>
+			<bModifierPerBonus>1</bModifierPerBonus>
+			<YieldModifiers>
+				<iYieldChange>0</iYieldChange>
+				<iYieldChange>5</iYieldChange>
+				<iYieldChange>0</iYieldChange>
+			</YieldModifiers>
 			<DamageType>NONE</DamageType>
 			<FreePromotion>NONE</FreePromotion>
 		</BonusInfo>
@@ -3787,6 +3826,10 @@
 					<TerrainType>TERRAIN_TUNDRA</TerrainType>
 					<bTerrain>1</bTerrain>
 				</TerrainBoolean>
+				<TerrainBoolean>
+					<TerrainType>TERRAIN_MARSH</TerrainType>
+					<bTerrain>1</bTerrain>
+				</TerrainBoolean>
 			</TerrainBooleans>
 			<FeatureBooleans>
 				<FeatureBoolean>
@@ -3821,7 +3864,7 @@
 				</FeatureTerrainBoolean>
 			</FeatureTerrainBooleans>
 			<DamageType>NONE</DamageType>
-			<FreePromotion>NONE</FreePromotion>
+			<FreePromotion>PROMOTION_CARCERUM_ENGRAVINGS</FreePromotion>
 		</BonusInfo>
 		<BonusInfo>		<!-- Living Ivory -->
 			<Type>BONUS_LIVING_IVORY</Type>
@@ -3882,6 +3925,10 @@
 					<TerrainType>TERRAIN_TUNDRA</TerrainType>
 					<bTerrain>1</bTerrain>
 				</TerrainBoolean>
+				<TerrainBoolean>
+					<TerrainType>TERRAIN_MARSH</TerrainType>
+					<bTerrain>1</bTerrain>
+				</TerrainBoolean>
 			</TerrainBooleans>
 			<FeatureBooleans>
 				<FeatureBoolean>
@@ -3916,7 +3963,9 @@
 				</FeatureTerrainBoolean>
 			</FeatureTerrainBooleans>
 			<DamageType>NONE</DamageType>
-			<FreePromotion>NONE</FreePromotion>
+			<FreePromotion>PROMOTION_LIVING_METAL</FreePromotion>
+			<iHealChange>5</iHealChange>
+			<bModifierPerBonus>1</bModifierPerBonus>
 		</BonusInfo>
 	</BonusInfos>
 </Civ4BonusInfos>

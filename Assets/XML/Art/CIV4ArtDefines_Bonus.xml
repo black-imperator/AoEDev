@@ -846,8 +846,8 @@
 			<Type>ART_DEF_BONUS_DAGIAN_BRONZE</Type>
 			<fScale>1.0</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
-			<NIF>Art/effects/cities_smoking/fx_cities_smoking_01.nif</NIF>
-			<KFM/>
+			<NIF>Art/Terrain/Resources/DagianBronze/Copper.nif</NIF>
+			<KFM>Art/Terrain/Resources/DagianBronze/Copper.kfm</KFM>
 			<Button>Art/Interface/Buttons/WorldBuilder/Dagian.dds</Button>
 			<FontButtonIndex>7</FontButtonIndex>
 		</BonusArtInfo>
@@ -862,9 +862,9 @@
 		</BonusArtInfo>
 		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_LIVING_IVORY</Type>
-			<fScale>1.0</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
-			<NIF>Art/effects/cities_smoking/fx_cities_smoking_01.nif</NIF>
+			<fScale>30.0</fScale>
+			<fInterfaceScale>2.0</fInterfaceScale>
+			<NIF>Art/Terrain/Resources/LivingIvory/LivingIvory.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/WorldBuilder/LivingIvory.dds</Button>
 			<FontButtonIndex>7</FontButtonIndex>

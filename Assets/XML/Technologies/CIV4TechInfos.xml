@@ -272,11 +272,11 @@
 				</Flavor>
 				<Flavor>
 					<FlavorType>FLAVOR_MILITARY</FlavorType>
-					<iFlavor>10</iFlavor>
+					<iFlavor>5</iFlavor>
 				</Flavor>
 				<Flavor>
 					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-					<iFlavor>2</iFlavor>
+					<iFlavor>5</iFlavor>
 				</Flavor>
 			</Flavors>
 			<OrPreReqs>
@@ -286,6 +286,44 @@
 			<Sound>AS2D_TECH_DING</Sound>
 			<SoundMP>AS2D_TECH_DING</SoundMP>
 			<Button>,Art/Interface/Buttons/TechTree/Archery.dds,Art/Interface/Buttons/TechTree_Atlas.dds,4,1</Button>
+		</TechInfo>
+		<TechInfo>		<!-- Wood Working -->
+			<Type>TECH_WOOD_WORKING</Type>
+			<Description>TXT_KEY_TECH_WOOD_WORKING</Description>
+			<Strategy>TEXT_MUST_BE_WRITTEN</Strategy>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<iAIWeight>60</iAIWeight>
+			<iAITradeModifier>10</iAITradeModifier>
+			<iCost>650</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<Era>ERA_CLASSICAL</Era>
+			<iAsset>24</iAsset>
+			<iPower>2</iPower>
+			<bTrade>1</bTrade>
+			<bGoodyTech>1</bGoodyTech>
+			<iGridX>5</iGridX>
+			<iGridY>5</iGridY>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_CULTURE</FlavorType>
+					<iFlavor>1</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<iFlavor>5</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<iFlavor>5</iFlavor>
+				</Flavor>
+			</Flavors>
+			<OrPreReqs>
+				<PrereqTech>TECH_ARCHERY</PrereqTech>
+			</OrPreReqs>
+			<Quote>TXT_KEY_TECH_WOOD_WORKING_QUOTE</Quote>
+			<Sound>AS2D_TECH_DING</Sound>
+			<SoundMP>AS2D_TECH_DING</SoundMP>
+			<Button>Art/Interface/Buttons/TechTree/WoodWorking.dds</Button>
 		</TechInfo>
 		<TechInfo>		<!-- Arete -->
 			<Type>TECH_ARETE</Type>
@@ -467,19 +505,16 @@
 				</Flavor>
 				<Flavor>
 					<FlavorType>FLAVOR_MILITARY</FlavorType>
-					<iFlavor>15</iFlavor>
+					<iFlavor>10</iFlavor>
 				</Flavor>
 				<Flavor>
 					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-					<iFlavor>2</iFlavor>
+					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
 			<OrPreReqs>
-				<PrereqTech>TECH_ARCHERY</PrereqTech>
+				<PrereqTech>TECH_WOOD_WORKING</PrereqTech>
 			</OrPreReqs>
-			<AndPreReqs>
-				<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
-			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_BOWYERS_QUOTE</Quote>
 			<Sound>AS2D_TECH_DING</Sound>
 			<SoundMP>AS2D_TECH_DING</SoundMP>
@@ -2432,6 +2467,9 @@
 			<OrPreReqs>
 				<PrereqTech>TECH_SAILING</PrereqTech>
 			</OrPreReqs>
+			<AndPreReqs>
+				<PrereqTech>TECH_WOOD_WORKING</PrereqTech>
+			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_OPTICS_QUOTE</Quote>
 			<Sound>AS2D_TECH_DING</Sound>
 			<SoundMP>AS2D_TECH_DING</SoundMP>

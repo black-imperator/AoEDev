@@ -21708,8 +21708,7 @@
 				<PrereqTech>TECH_ENGINEERING</PrereqTech>
 			</TechTypes>
 			<PrereqBonuses>
-				<BonusType>BONUS_IRON</BonusType>
-				<BonusType>BONUS_MITHRIL</BonusType>
+				<BonusType>BONUS_EFFLUVIUM</BonusType>
 			</PrereqBonuses>
 			<iCost>300</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -22666,6 +22665,12 @@
 				</UnitAI>
 			</NotUnitAIs>
 			<PrereqTech>TECH_OPTICS</PrereqTech>
+			<PrereqTech>TECH_TRADE</PrereqTech>
+			<PrereqBonuses>
+				<BonusType>BONUS_OAK</BonusType>
+				<BonusType>BONUS_YEW</BonusType>
+				<BonusType>BONUS_DUSKWOOD</BonusType>
+			</PrereqBonuses>
 			<iCost>100</iCost>
 			<iMinAreaSize>20</iMinAreaSize>
 			<iMoves>5</iMoves>
@@ -25236,8 +25241,7 @@
 				<PrereqTech>TECH_ALCHEMY</PrereqTech>
 			</TechTypes>
 			<PrereqBonuses>
-				<BonusType>BONUS_IRON</BonusType>
-				<BonusType>BONUS_MITHRIL</BonusType>
+				<BonusType>BONUS_EFFLUVIUM</BonusType>
 			</PrereqBonuses>
 			<iCost>250</iCost>
 			<iMoves>5</iMoves>
@@ -44495,6 +44499,12 @@
 				</UnitAI>
 			</NotUnitAIs>
 			<PrereqTech>TECH_OPTICS</PrereqTech>
+			<PrereqTech>TECH_TRADE</PrereqTech>
+			<PrereqBonuses>
+				<BonusType>BONUS_OAK</BonusType>
+				<BonusType>BONUS_YEW</BonusType>
+				<BonusType>BONUS_DUSKWOOD</BonusType>
+			</PrereqBonuses>
 			<iCost>100</iCost>
 			<iMinAreaSize>20</iMinAreaSize>
 			<iMoves>4</iMoves>
@@ -44656,6 +44666,10 @@
 			</UnitAIs>
 			<PrereqTech>TECH_OPTICS</PrereqTech>
 			<PrereqBonuses>
+				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_MITHRIL</BonusType>
+			</PrereqBonuses>
+			<PrereqBonuses>
 			</PrereqBonuses>
 			<iCost>150</iCost>
 			<iMinAreaSize>20</iMinAreaSize>
@@ -44803,8 +44817,9 @@
 			</UnitAIs>
 			<PrereqTech>TECH_OPTICS</PrereqTech>
 			<PrereqBonuses>
-				<BonusType>BONUS_IRON</BonusType>
-				<BonusType>BONUS_MITHRIL</BonusType>
+				<BonusType>BONUS_OAK</BonusType>
+				<BonusType>BONUS_YEW</BonusType>
+				<BonusType>BONUS_DUSKWOOD</BonusType>
 			</PrereqBonuses>
 			<iCost>150</iCost>
 			<iMinAreaSize>20</iMinAreaSize>
@@ -44867,8 +44882,9 @@
 				<PrereqTech>TECH_ENGINEERING</PrereqTech>
 			</TechTypes>
 			<PrereqBonuses>
-				<BonusType>BONUS_IRON</BonusType>
-				<BonusType>BONUS_MITHRIL</BonusType>
+				<BonusType>BONUS_OAK</BonusType>
+				<BonusType>BONUS_YEW</BonusType>
+				<BonusType>BONUS_DUSKWOOD</BonusType>
 			</PrereqBonuses>
 			<iCost>225</iCost>
 			<iMinAreaSize>20</iMinAreaSize>

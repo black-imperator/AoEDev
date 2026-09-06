@@ -4658,6 +4658,46 @@
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/TempleEsus.dds</Button>
 		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_GROWTH_CULTIVATORS</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>20.0</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Temple of Leaves/harountemple.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/Growers.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_WOOD_WEAVERS</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>20.0</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Temple of Leaves/harountemple.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/CarvedWood.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>	
+			<Type>ART_DEF_BUILDING_SAWMILL</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.27</fScale>
+			<fInterfaceScale>0.52</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/ArtisansBuildings/Barracks.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/WorkersTable.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_FOREMANS_OFFICE</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.27</fScale>
+			<fInterfaceScale>0.52</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/ArtisansBuildings/Barracks.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/ForemansOffice.dds</Button>
+		</BuildingArtInfo>
 		
 	</BuildingArtInfos>
 </Civ4ArtDefines>

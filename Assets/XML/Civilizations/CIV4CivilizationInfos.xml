@@ -4434,6 +4434,14 @@
 					<BuildingType>BUILDING_PALACE_LJOSALFAR</BuildingType>
 				</Building>
 				<Building>
+					<BuildingClassType>BUILDINGCLASS_FOREMANS_OFFICE</BuildingClassType>
+					<BuildingType>BUILDING_WOOD_WEAVERS</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_SAWMILL</BuildingClassType>
+					<BuildingType>BUILDING_GROWTH_CULTIVATORS</BuildingType>
+				</Building>
+				<Building>
 					<BuildingClassType>BUILDINGCLASS_SIEGE_WORKSHOP</BuildingClassType>
 					<BuildingType>NONE</BuildingType>
 				</Building>
@@ -5027,6 +5035,10 @@
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_CRIME_RIOTS</BuildingClassType>
 					<BuildingType>BUILDING_CRIME_NOMADIC_EXODUS</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_FOREMANS_OFFICE</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
 				</Building>
 			</Buildings>
 			<Units>
@@ -6882,6 +6894,14 @@
 					<BuildingType>NONE</BuildingType>
 				</Building>
 				<Building>
+					<BuildingClassType>BUILDINGCLASS_FOREMANS_OFFICE</BuildingClassType>
+					<BuildingType>BUILDING_WOOD_WEAVERS</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_SAWMILL</BuildingClassType>
+					<BuildingType>BUILDING_GROWTH_CULTIVATORS</BuildingType>
+				</Building>
+				<Building>
 					<BuildingClassType>BUILDINGCLASS_HUNTERS_HALL</BuildingClassType>
 					<BuildingType>BUILDING_SHROUDED_WOODS</BuildingType>
 				</Building>
@@ -7168,6 +7188,10 @@
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_SALTHOUSE</BuildingClassType>
 					<BuildingType>BUILDING_MORGUE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_FOREMANS_OFFICE</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_GRANARY</BuildingClassType>
@@ -9208,6 +9232,14 @@
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_SIEGE_WORKSHOP</BuildingClassType>
 					<BuildingType>NONE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_FOREMANS_OFFICE</BuildingClassType>
+					<BuildingType>BUILDING_WOOD_WEAVERS</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_SAWMILL</BuildingClassType>
+					<BuildingType>BUILDING_GROWTH_CULTIVATORS</BuildingType>
 				</Building>
 			</Buildings>
 			<Units>

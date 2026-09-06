@@ -46495,5 +46495,70 @@
 				</DamageTypeResist>
 			</DamageTypeResists>
 		</PromotionInfo>
+		<PromotionInfo>		<!-- Carcerum Engravings -->
+			<Type>PROMOTION_CARCERUM_ENGRAVINGS</Type>
+			<Description>TXT_KEY_PROMOTION_CARCEREM_ENGRAVINGS</Description>
+			<Help>TXT_KEY_EQUIPMENT_CLAVA_VINDEX_HELP</Help>
+			<PythonPostCombatWon>postCombatClavaVindex(pCaster, pOpponent)</PythonPostCombatWon>
+			<PythonPostCombatLost>postCombatClavaVindex(pCaster, pOpponent)</PythonPostCombatLost>
+			<UnitCombats>                                                   			
+				<UnitCombat>                                                
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>                  			
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Art/Interface/Buttons/Promotions/CarceremRunes.dds</Button>
+			<iMinLevel>-1</iMinLevel>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Living Metal -->
+			<Type>PROMOTION_LIVING_METAL</Type>
+			<Description>TXT_KEY_PROMOTION_LIVING_METAL</Description>
+			<UnitCombats>                                                   			
+				<UnitCombat>                                                
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>                  			
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<bAlwaysHeal>1</bAlwaysHeal>
+			<iEnemyHealChange>15</iEnemyHealChange>
+			<iNeutralHealChange>15</iNeutralHealChange>
+			<iFriendlyHealChange>15</iFriendlyHealChange>
+			<iCollateralDamageProtection>25</iCollateralDamageProtection>
+			<PromotionExcludes>
+				<Promotion>PROMOTION_RUSTED</Promotion>
+			</PromotionExcludes>
+			<PromotionOverwrites>
+				<Promotion>PROMOTION_RUSTED</Promotion>
+			</PromotionOverwrites>
+			<Button>Art/Interface/Buttons/Promotions/ImbuedLivingIvory.dds</Button>
+			<iMinLevel>-1</iMinLevel>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Golden Glyphs -->
+			<Type>PROMOTION_GOLDEN_GLYPHS</Type>
+			<Description>TXT_KEY_PROMOTION_GOLDEN_GLYPHS</Description>
+			<iChanceMiscast>-25</iChanceMiscast>
+			<iMagicalPower>100</iMagicalPower>
+			<PromotionSummonPerk>PROMOTION_LICH_DURATION</PromotionSummonPerk>
+			<UnitCombats>                                                   			
+				<UnitCombat>                                                
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>                  			
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Art/Interface/Buttons/Promotions/SeraphimBinding.dds</Button>
+			<iMinLevel>-1</iMinLevel>
+		</PromotionInfo>
 	</PromotionInfos>
 </Civ4PromotionInfos>

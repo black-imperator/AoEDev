@@ -4610,4 +4610,36 @@ himself.</Spanish>
 		<Italian>Duskwood Hull</Italian>
 		<Spanish>Duskwood Hull</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GOLDEN_GLYPHS</Tag>
+		<English>Golden Glyphs</English>
+		<French>Golden Glyphs</French>
+		<German>Golden Glyphs</German>
+		<Italian>Golden Glyphs</Italian>
+		<Spanish>Golden Glyphs</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_LIVING_METAL</Tag>
+		<English>Living Metal</English>
+		<French>Living Metal</French>
+		<German>Living Metal</German>
+		<Italian>Living Metal</Italian>
+		<Spanish>Living Metal</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_CARCEREM_ENGRAVINGS</Tag>
+		<English>Carcerem Engraving</English>
+		<French>Carcerem Engraving</French>
+		<German>Carcerem Engraving</German>
+		<Italian>Carcerem Engraving</Italian>
+		<Spanish>Carcerem Engraving</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_LICH_DURATION</Tag>
+		<English>Extra Summon Duration (2)</English>
+		<French>Extra Summon Duration (2)</French>
+		<German>Extra Summon Duration (2)</German>
+		<Italian>Extra Summon Duration (2)</Italian>
+		<Spanish>Extra Summon Duration (2)</Spanish>
+	</TEXT>
 </Civ4GameText>
