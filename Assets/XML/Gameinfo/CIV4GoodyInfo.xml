@@ -5908,7 +5908,7 @@
 				</GoodyClass>
 			</GoodyClasses>
 			<iWeight>30</iWeight>
-			<Description>TXT_KEY_GOODY_FREED_SCIONS</Description>
+			<Description>TXT_KEY_GOODY_FREED_SCIONS_OF_PATRIA</Description>
 			<Sound>AS2D_GOODY_HEAL</Sound>
 			<iDestroyLairChance>100</iDestroyLairChance>
 			<bUnique>1</bUnique>

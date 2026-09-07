@@ -7322,10 +7322,6 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
-					<iMaxApplications>0</iMaxApplications>
-				</UnitCombat>
-				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
@@ -12877,10 +12873,6 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
-					<iMaxApplications>0</iMaxApplications>
-				</UnitCombat>
-				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
@@ -14222,10 +14214,6 @@
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
-					<iMaxApplications>0</iMaxApplications>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 				<UnitCombat>
@@ -46263,7 +46251,7 @@
 			<bValidate>1</bValidate>
 			<iExtraCombatStr>1</iExtraCombatStr>
 			<iExtraCombatDefense>1</iExtraCombatDefense>
-			<iDefensiveStrikeDamage>5</iDefensiveStrikeDamage>
+			<iAirCombat>1</iAirCombat>
 			<bValidate>1</bValidate>
 			<PrereqBonusANDs>
 				<PrereqBonus>BONUS_OAK</PrereqBonus>
@@ -46310,7 +46298,7 @@
 			<bValidate>1</bValidate>
 			<iExtraCombatStr>2</iExtraCombatStr>
 			<iExtraCombatDefense>2</iExtraCombatDefense>
-			<iDefensiveStrikeDamage>10</iDefensiveStrikeDamage>
+			<iAirCombat>2</iAirCombat>
 			<PrereqBonusANDs>
 				<PrereqBonus>BONUS_YEW</PrereqBonus>
 			</PrereqBonusANDs>
@@ -46360,7 +46348,7 @@
 			<bValidate>1</bValidate>
 			<iExtraCombatStr>4</iExtraCombatStr>
 			<iExtraCombatDefense>4</iExtraCombatDefense>
-			<iDefensiveStrikeDamage>15</iDefensiveStrikeDamage>
+			<iAirCombat>4</iAirCombat>
 			<iAirRangeChange>1</iAirRangeChange>
 			<PrereqBonusANDs>
 				<PrereqBonus>BONUS_DUSKWOOD</PrereqBonus>
@@ -46376,12 +46364,9 @@
 			<PrereqWeaponTier>1</PrereqWeaponTier>
 			<PromotionExcludes>
 				<Promotion>PROMOTION_BRONZE_WEAPONS</Promotion>
-				<Promotion>PROMOTION_FINE_EQUIPMENT_MELEE</Promotion>
-				<Promotion>PROMOTION_FINE_BOWS_ARCHER</Promotion>
 			</PromotionExcludes>
 			<PromotionOverwrites>
 				<Promotion>PROMOTION_BRONZE_WEAPONS</Promotion>
-				<Promotion>PROMOTION_FINE_EQUIPMENT_MELEE</Promotion>
 			</PromotionOverwrites>
 			<PromotionReplacedBy>
 				<Promotion>PROMOTION_YEW_HULL</Promotion>
@@ -46417,15 +46402,11 @@
 				<Promotion>PROMOTION_IRON_WEAPONS</Promotion>
 				<Promotion>PROMOTION_OAK_WEAPONS</Promotion>
 				<Promotion>PROMOTION_BRONZE_WEAPONS</Promotion>
-				<Promotion>PROMOTION_FINE_EQUIPMENT_MELEE</Promotion>
-				<Promotion>PROMOTION_FINE_BOWS_ARCHER</Promotion>
 			</PromotionExcludes>
 			<PromotionOverwrites>
+				<Promotion>PROMOTION_OAK_WEAPONS</Promotion>
 				<Promotion>PROMOTION_IRON_WEAPONS</Promotion>
 				<Promotion>PROMOTION_BRONZE_WEAPONS</Promotion>
-				<Promotion>PROMOTION_HIGH_QUALITY_BRONZE_MELEE</Promotion>
-				<Promotion>PROMOTION_FINE_EQUIPMENT_MELEE</Promotion>
-				<Promotion>PROMOTION_FINE_BOWS_ARCHER</Promotion>
 			</PromotionOverwrites>
 			<PromotionReplacedBy>
 				<Promotion>PROMOTION_DUSKWOOD_HULL</Promotion>
@@ -46462,19 +46443,14 @@
 				<Promotion>PROMOTION_MITHRIL_WEAPONS</Promotion>
 				<Promotion>PROMOTION_BRONZE_WEAPONS</Promotion>
 				<Promotion>PROMOTION_IRON_WEAPONS</Promotion>
-				<Promotion>PROMOTION_FINE_EQUIPMENT_MELEE</Promotion>
-				<Promotion>PROMOTION_FINE_BOWS_ARCHER</Promotion>
 				<Promotion>PROMOTION_RUSTED</Promotion>
 			</PromotionExcludes>
 			<PromotionOverwrites>
-				<Promotion>PROMOTION_IRON_WEAPONS</Promotion>
+				<Promotion>PROMOTION_OAK_WEAPONS</Promotion>
+				<Promotion>PROMOTION_YEW_WEAPONS</Promotion>
 				<Promotion>PROMOTION_BRONZE_WEAPONS</Promotion>
-				<Promotion>PROMOTION_MITHRIL_WEAPONS</Promotion>
 				<Promotion>PROMOTION_IRON_WEAPONS</Promotion>
-				<Promotion>PROMOTION_HIGH_QUALITY_STEEL_MELEE</Promotion>
-				<Promotion>PROMOTION_HIGH_QUALITY_BRONZE_MELEE</Promotion>
-				<Promotion>PROMOTION_FINE_EQUIPMENT_MELEE</Promotion>
-				<Promotion>PROMOTION_FINE_BOWS_ARCHER</Promotion>
+				<Promotion>PROMOTION_MITHRIL_WEAPONS</Promotion>
 				<Promotion>PROMOTION_RUSTED</Promotion>
 			</PromotionOverwrites>
 			<UnitCombats>
