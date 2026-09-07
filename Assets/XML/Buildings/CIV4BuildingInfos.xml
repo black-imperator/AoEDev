@@ -1637,7 +1637,7 @@
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>0</iConquestProb>
-			<iGreatPeopleRateModifier>25</iGreatPeopleRateModifier>
+			<!--<iGreatPeopleRateModifier>25</iGreatPeopleRateModifier>-->
 			<iAsset>2</iAsset>
 			<iPower>1</iPower>
 			<fVisibilityPriority>1</fVisibilityPriority>
@@ -2262,6 +2262,7 @@
 			<ReligionType>RELIGION_THE_ORDER</ReligionType>
 			<GlobalReligionCommerce>RELIGION_THE_ORDER</GlobalReligionCommerce>
 			<FreeBonus>BONUS_MANA_LAW</FreeBonus>
+			<FreeBonus2>BONUS_CARCEREM</FreeBonus2>
 			<iNumFreeBonuses>1</iNumFreeBonuses>
 			<GreatPeopleUnitClass>UNITCLASS_ENGINEER</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -5670,7 +5671,7 @@
 			<iHurryCostModifier>50</iHurryCostModifier>
 			<iConquestProb>0</iConquestProb>
 			<iCitiesPrereq>4</iCitiesPrereq>
-			<iGreatPeopleRateModifier>15</iGreatPeopleRateModifier>
+			<!--<iGreatPeopleRateModifier>15</iGreatPeopleRateModifier>-->
 			<iHappiness>1</iHappiness>
 			<fVisibilityPriority>10000</fVisibilityPriority>
 			<YieldChanges>
@@ -5836,7 +5837,7 @@
 				<iCommerce>2</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<iCrime>-10</iCrime>
-			<FreeBonus2>BONUS_GOLD</FreeBonus2>
+			<FreeBonus2>BONUS_DAGIAN_BRONZE</FreeBonus2>
 			<FreeBonus3>BONUS_MANA_LAW</FreeBonus3>
 		</BuildingInfo>
 		<BuildingInfo>		<!-- Palace Kuriotates -->
@@ -6487,6 +6488,220 @@
 				</Flavor>
 			</Flavors>
 			<bApplyFreePromotionOnMove>1</bApplyFreePromotionOnMove>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Sawmill -->
+			<BuildingClass>BUILDINGCLASS_SAWMILL</BuildingClass>
+			<Type>BUILDING_SAWMILL</Type>
+			<Description>TXT_KEY_BUILDING_SAWMILL</Description>
+			<Civilopedia>TXT_KEY_BUILDING_SAWMILL_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_SAWMILL</ArtDefineTag>
+			<PrereqTech>TECH_WOOD_WORKING</PrereqTech>
+			<ProductionTraits>
+				<ProductionTrait>
+					<ProductionTraitType>TRAIT_INDUSTRIOUS</ProductionTraitType>
+					<iProductionTrait>100</iProductionTrait>
+				</ProductionTrait>
+			</ProductionTraits>
+			<iAIWeight>15</iAIWeight>
+			<iCost>160</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iMinAreaSize>10</iMinAreaSize>
+			<iConquestProb>25</iConquestProb>
+			<iAsset>1</iAsset>
+			<iPower>1</iPower>
+			<fVisibilityPriority>10</fVisibilityPriority>
+			<DomainProductionModifiers>
+				<DomainProductionModifier>
+					<DomainType>DOMAIN_SEA</DomainType>
+					<iProductionModifier>10</iProductionModifier>
+				</DomainProductionModifier>
+			</DomainProductionModifiers>
+			<iMilitaryProductionModifier>-10</iMilitaryProductionModifier>
+			<YieldModifiers>
+				<iYield>0</iYield>
+				<iYield>10</iYield>
+				<iYield>0</iYield>
+			</YieldModifiers>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Foreman's Office -->
+			<BuildingClass>BUILDINGCLASS_FOREMANS_OFFICE</BuildingClass>
+			<Type>BUILDING_FOREMANS_OFFICE</Type>
+			<Description>TXT_KEY_BUILDING_FOREMANS_OFFICE</Description>
+			<Civilopedia>TXT_KEY_BUILDING_FOREMANS_OFFICE_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_FOREMANS_OFFICE</ArtDefineTag>
+			<PrereqTech>TECH_BOWYERS</PrereqTech>
+			<ProductionTraits>
+				<ProductionTrait>
+					<ProductionTraitType>TRAIT_INDUSTRIOUS</ProductionTraitType>
+					<iProductionTrait>100</iProductionTrait>
+				</ProductionTrait>
+			</ProductionTraits>
+			<iAIWeight>15</iAIWeight>
+			<iCost>220</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iMinAreaSize>10</iMinAreaSize>
+			<iConquestProb>25</iConquestProb>
+			<iAsset>1</iAsset>
+			<iPower>1</iPower>
+			<fVisibilityPriority>10</fVisibilityPriority>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+			<FeatureYieldChanges>
+				<FeatureYieldChange>
+					<FeatureType>FEATURE_FOREST</FeatureType>
+					<FeatureYields>
+					<iYield>0</iYield>
+					<iYield>1</iYield>
+					<iYield>0</iYield>
+					</FeatureYields>
+				</FeatureYieldChange>
+				<FeatureYieldChange>
+					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
+					<FeatureYields>
+					<iYield>0</iYield>
+					<iYield>1</iYield>
+					<iYield>0</iYield>
+					</FeatureYields>
+				</FeatureYieldChange>
+				<FeatureYieldChange>
+					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
+					<FeatureYields>
+					<iYield>0</iYield>
+					<iYield>1</iYield>
+					<iYield>0</iYield>
+					</FeatureYields>
+				</FeatureYieldChange>
+				<FeatureYieldChange>
+					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<FeatureYields>
+					<iYield>0</iYield>
+					<iYield>1</iYield>
+					<iYield>0</iYield>
+					</FeatureYields>
+				</FeatureYieldChange>
+			</FeatureYieldChanges>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Growth Cultivators -->
+			<BuildingClass>BUILDINGCLASS_SAWMILL</BuildingClass>
+			<Type>BUILDING_GROWTH_CULTIVATORS</Type>
+			<Description>TXT_KEY_BUILDING_GROWTH_CULTIVATORS</Description>
+			<Civilopedia>TXT_KEY_BUILDING_GROWTH_CULTIVATORS_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_GROWTH_CULTIVATORS</ArtDefineTag>
+			<PrereqTech>TECH_WOOD_WORKING</PrereqTech>
+			<ProductionTraits>
+				<ProductionTrait>
+					<ProductionTraitType>TRAIT_INDUSTRIOUS</ProductionTraitType>
+					<iProductionTrait>100</iProductionTrait>
+				</ProductionTrait>
+			</ProductionTraits>
+			<iAIWeight>15</iAIWeight>
+			<iCost>160</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iMinAreaSize>10</iMinAreaSize>
+			<iConquestProb>25</iConquestProb>
+			<iAsset>1</iAsset>
+			<iPower>1</iPower>
+			<fVisibilityPriority>10</fVisibilityPriority>
+			<DomainFreeExperiences>
+				<DomainFreeExperience>
+					<DomainType>DOMAIN_SEA</DomainType>
+					<iExperience>2</iExperience>
+				</DomainFreeExperience>
+			</DomainFreeExperiences>
+			<YieldModifiers>
+				<iYield>0</iYield>
+				<iYield>10</iYield>
+				<iYield>0</iYield>
+			</YieldModifiers>
+			<iMilitaryProductionModifier>-10</iMilitaryProductionModifier>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Wood Weavers -->
+			<BuildingClass>BUILDINGCLASS_FOREMANS_OFFICE</BuildingClass>
+			<Type>BUILDING_WOOD_WEAVERS</Type>
+			<Description>TXT_KEY_BUILDING_WOOD_WEAVERS</Description>
+			<Civilopedia>TXT_KEY_BUILDING_WOOD_WEAVERS_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_WOOD_WEAVERS</ArtDefineTag>
+			<PrereqTech>TECH_BOWYERS</PrereqTech>
+			<ProductionTraits>
+				<ProductionTrait>
+					<ProductionTraitType>TRAIT_INDUSTRIOUS</ProductionTraitType>
+					<iProductionTrait>100</iProductionTrait>
+				</ProductionTrait>
+			</ProductionTraits>
+			<iAIWeight>15</iAIWeight>
+			<iCost>220</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iMinAreaSize>10</iMinAreaSize>
+			<iConquestProb>25</iConquestProb>
+			<iAsset>1</iAsset>
+			<iPower>1</iPower>
+			<fVisibilityPriority>10</fVisibilityPriority>
+			<BonusHappinessChanges>
+				<BonusHappinessChange>
+					<BonusType>BONUS_OAK</BonusType>
+					<iHappinessChange>1</iHappinessChange>
+				</BonusHappinessChange>
+				<BonusHappinessChange>
+					<BonusType>BONUS_YEW</BonusType>
+					<iHappinessChange>1</iHappinessChange>
+				</BonusHappinessChange>
+				<BonusHappinessChange>
+					<BonusType>BONUS_DUSKWOOD</BonusType>
+					<iHappinessChange>1</iHappinessChange>
+				</BonusHappinessChange>
+			</BonusHappinessChanges>
+			<BonusCommerceModifiers>
+				<BonusCommerceModifier>
+					<BonusType>BONUS_OAK</BonusType>
+					<CommerceModifiers>
+						<iCommerce>0</iCommerce>
+						<iCommerce>0</iCommerce>
+						<iCommerce>5</iCommerce>
+					</CommerceModifiers>
+				</BonusCommerceModifier>
+				<BonusCommerceModifier>
+					<BonusType>BONUS_YEW</BonusType>
+					<CommerceModifiers>
+						<iCommerce>0</iCommerce>
+						<iCommerce>0</iCommerce>
+						<iCommerce>5</iCommerce>
+					</CommerceModifiers>
+				</BonusCommerceModifier>
+				<BonusCommerceModifier>
+					<BonusType>BONUS_DUSKWOOD</BonusType>
+					<CommerceModifiers>
+						<iCommerce>0</iCommerce>
+						<iCommerce>0</iCommerce>
+						<iCommerce>10</iCommerce>
+					</CommerceModifiers>
+				</BonusCommerceModifier>
+			</BonusCommerceModifiers>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
 		</BuildingInfo>
 		<BuildingInfo>		<!-- Shipyard -->
 			<BuildingClass>BUILDINGCLASS_SHIPYARD</BuildingClass>
@@ -7326,6 +7541,8 @@
 					<iProductionTrait>100</iProductionTrait>
 				</ProductionTrait>
 			</ProductionTraits>
+			<GreatPeopleUnitClass>UNITCLASS_ADVENTURER</GreatPeopleUnitClass>
+			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bCenterInCity>1</bCenterInCity>
 			<iAIWeight>20</iAIWeight>
 			<iCost>60</iCost>
@@ -16427,7 +16644,7 @@
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<iGreatPeopleRateModifier>10</iGreatPeopleRateModifier>
+			<!--<iGreatPeopleRateModifier>10</iGreatPeopleRateModifier>-->
 			<iMaintenanceModifier>-5</iMaintenanceModifier>
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>1</fVisibilityPriority>
@@ -16497,7 +16714,7 @@
 			<Help>TXT_KEY_BUILDING_MEMORIAL_REFUGEE_HELP</Help>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MEMORIAL_REFUGEE</ArtDefineTag>
-			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
+			<PrereqTech>TECH_PRIESTHOOD</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
 			<iHurryCostModifier>50</iHurryCostModifier>
 			<iConquestProb>0</iConquestProb>

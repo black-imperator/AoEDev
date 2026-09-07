@@ -16,6 +16,7 @@
 			<iDefenseModifier>10</iDefenseModifier>
 			<iPillageGold>10</iPillageGold>
 			<bOutsideBorders>1</bOutsideBorders>
+			<PythonOnMove>onMoveSurfaceTunnel(pCaster, pPlot)</PythonOnMove>
 			<bFort>1</bFort>
 			<bActsAsCity>1</bActsAsCity>
 			<iMinimumDistance>2</iMinimumDistance>

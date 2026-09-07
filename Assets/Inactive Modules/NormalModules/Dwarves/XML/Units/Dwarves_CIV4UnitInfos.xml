@@ -325,6 +325,7 @@
 			</DenyPromotions>
 			<bNeverObsolete>1</bNeverObsolete>
 			<iCommandLimit>2</iCommandLimit>
+			<iWeaponTierMax>2</iWeaponTierMax>
 		</UnitInfo>		
 		<UnitInfo>		<!-- Engineer -->
 			<Class>UNITCLASS_MAGE</Class>
@@ -442,6 +443,7 @@
 					<PromotionType>PROMOTION_GUARDSMAN</PromotionType>
 			</DenyPromotions>
 			<iCommandLimit>3</iCommandLimit>
+			<iWeaponTierMax>3</iWeaponTierMax>
 		</UnitInfo>			
 		<UnitInfo>		<!-- Master Engineer -->
 			<Class>UNITCLASS_ARCHMAGE</Class>
@@ -559,6 +561,7 @@
 					<PromotionType>PROMOTION_GUARDSMAN</PromotionType>
 			</DenyPromotions>
 			<iCommandLimit>4</iCommandLimit>
+			<iWeaponTierMax>3</iWeaponTierMax>
 		</UnitInfo>	
 	</UnitInfos>
 </Civ4UnitInfos>

@@ -272,6 +272,7 @@
 			<iDefensiveStrikeChance>20</iDefensiveStrikeChance>
 			<iDefensiveStrikeDamage>10</iDefensiveStrikeDamage>
 			<iTier>2</iTier>
+			<iWeaponTierMax>2</iWeaponTierMax>
 		</UnitInfo>
 		<UnitInfo>        <!-- Serpent Hunters -->                      
 			<Class>UNITCLASS_LONGBOWMAN</Class>
@@ -369,7 +370,7 @@
 			<iDefensiveStrikeChance>30</iDefensiveStrikeChance>
 			<iDefensiveStrikeDamage>15</iDefensiveStrikeDamage>
 			<iTier>3</iTier>
-			<iWeaponTierMax>2</iWeaponTierMax>
+			<iWeaponTierMax>3</iWeaponTierMax>
 			<PrereqBuildingClass>BUILDINGCLASS_FLETCHER</PrereqBuildingClass>
 			<iPowerMult>1</iPowerMult>
 		</UnitInfo>

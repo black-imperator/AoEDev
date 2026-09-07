@@ -513,6 +513,22 @@ Players with Fine Clothes have new units get the Dressed to Kill promotion, whic
 		<Spanish>[TAB]Las bayas de los inocentes siempre están maduras. Pero se dice que el alma de todo aquel que las coma nunca podrá salir del infierno.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BONUS_BELRITE</Tag>
+		<English>Belrite</English>
+		<French>Belrite</French>
+		<German>Belrite</German>
+		<Italian>Belrite</Italian>
+		<Spanish>Belrite</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_BELRITE_PEDIA</Tag>
+		<English>A rock that explodes when it comes into contact with fire. Good for blowing up walls, bridges, etc.</English>
+		<French>A rock that explodes when it comes into contact with fire. Good for blowing up walls, bridges, etc.</French>
+		<German>A rock that explodes when it comes into contact with fire. Good for blowing up walls, bridges, etc.</German>
+		<Italian>A rock that explodes when it comes into contact with fire. Good for blowing up walls, bridges, etc.</Italian>
+		<Spanish>A rock that explodes when it comes into contact with fire. Good for blowing up walls, bridges, etc.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BONUS_GUNPOWDER</Tag>
 		<English>Gunpowder</English>
 		<French>Poudre à canon</French>
@@ -1840,6 +1856,115 @@ This is the power of revelation and spiritual truth. At modest levels it can des
 		<German>Common in colder climates, this breed of deer is much hardier than its more temperant counterparts. In the harsh Age of Ice, Arctic Deer were the lifeline of many a scattered tribe fighting for its survival, and were considered a delicacy amongst the savage Doviello. Even in the Age of Rebirth, crafty settlements know how to make the most out of its bounty, aiding in even productive endeavors.</German>
 		<Italian>Common in colder climates, this breed of deer is much hardier than its more temperant counterparts. In the harsh Age of Ice, Arctic Deer were the lifeline of many a scattered tribe fighting for its survival, and were considered a delicacy amongst the savage Doviello. Even in the Age of Rebirth, crafty settlements know how to make the most out of its bounty, aiding in even productive endeavors.</Italian>
 		<Spanish>Common in colder climates, this breed of deer is much hardier than its more temperant counterparts. In the harsh Age of Ice, Arctic Deer were the lifeline of many a scattered tribe fighting for its survival, and were considered a delicacy amongst the savage Doviello. Even in the Age of Rebirth, crafty settlements know how to make the most out of its bounty, aiding in even productive endeavors.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_OAK</Tag>
+		<English>Oak</English>
+		<French>Oak</French>
+		<German>Oak</German>
+		<Italian>Oak</Italian>
+		<Spanish>Oak</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_YEW</Tag>
+		<English>Yew</English>
+		<French>Yew</French>
+		<German>Yew</German>
+		<Italian>Yew</Italian>
+		<Spanish>Yew</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_DUSKWOOD</Tag>
+		<English>Duskwood</English>
+		<French>Duskwood</French>
+		<German>Duskwood</German>
+		<Italian>Duskwood</Italian>
+		<Spanish>Duskwood</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_EFFLUVIUM</Tag>
+		<English>Effluvium</English>
+		<French>Effluvium</French>
+		<German>Effluvium</German>
+		<Italian>Effluvium</Italian>
+		<Spanish>Effluvium</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_SERAPHIM_GOLD</Tag>
+		<English>Seraphim Gold</English>
+		<French>Seraphim Gold</French>
+		<German>Seraphim Gold</German>
+		<Italian>Seraphim Gold</Italian>
+		<Spanish>Seraphim Gold</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_DAGIAN_BRONZE</Tag>
+		<English>Dagian Bronze</English>
+		<French>Dagian Bronze</French>
+		<German>Dagian Bronze</German>
+		<Italian>Dagian Bronze</Italian>
+		<Spanish>Dagian Bronze</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_CARCEREM</Tag>
+		<English>Carcerem</English>
+		<French>Carcerem</French>
+		<German>Carcerem</German>
+		<Italian>Carcerem</Italian>
+		<Spanish>Carcerem</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_LIVING_IVORY</Tag>
+		<English>Living Ivory</English>
+		<French>Living Ivory</French>
+		<German>Living Ivory</German>
+		<Italian>Living Ivory</Italian>
+		<Spanish>Living Ivory</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_EFFLUVIUM_PEDIA</Tag>
+		<English>A gas which powered city lamp posts and caused divine visions (and would also be used by the Kuriotates to build airships).</English>
+		<French>A gas which powered city lamp posts and caused divine visions (and would also be used by the Kuriotates to build airships).</French>
+		<German>A gas which powered city lamp posts and caused divine visions (and would also be used by the Kuriotates to build airships).</German>
+		<Italian>A gas which powered city lamp posts and caused divine visions (and would also be used by the Kuriotates to build airships).</Italian>
+		<Spanish>A gas which powered city lamp posts and caused divine visions (and would also be used by the Kuriotates to build airships).</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_SERAPHIM_GOLD_PEDIA</Tag>
+		<English> It comes through in veins from the heaven of the goddess of earth and stone. Seraphim Gold conducts and enhances magic so it's the ideal material for summoning circles and enchanted items.
+</English>
+		<French> It comes through in veins from the heaven of the goddess of earth and stone. Seraphim Gold conducts and enhances magic so it's the ideal material for summoning circles and enchanted items.
+</French>
+		<German> It comes through in veins from the heaven of the goddess of earth and stone. Seraphim Gold conducts and enhances magic so it's the ideal material for summoning circles and enchanted items.
+</German>
+		<Italian> It comes through in veins from the heaven of the goddess of earth and stone. Seraphim Gold conducts and enhances magic so it's the ideal material for summoning circles and enchanted items.
+</Italian>
+		<Spanish> It comes through in veins from the heaven of the goddess of earth and stone. Seraphim Gold conducts and enhances magic so it's the ideal material for summoning circles and enchanted items.
+</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_DAGIAN_BRONZE_PEDIA</Tag>
+		<English>A forged metal that conducts light throughout its surface. It is manufactured by the Khazad (dwarves) and has long ribbons that go from above ground to the underground, and brings surface light into their cities</English>
+		<French>A forged metal that conducts light throughout its surface. It is manufactured by the Khazad (dwarves) and has long ribbons that go from above ground to the underground, and brings surface light into their cities</French>
+		<German>A forged metal that conducts light throughout its surface. It is manufactured by the Khazad (dwarves) and has long ribbons that go from above ground to the underground, and brings surface light into their cities</German>
+		<Italian>A forged metal that conducts light throughout its surface. It is manufactured by the Khazad (dwarves) and has long ribbons that go from above ground to the underground, and brings surface light into their cities</Italian>
+		<Spanish>A forged metal that conducts light throughout its surface. It is manufactured by the Khazad (dwarves) and has long ribbons that go from above ground to the underground, and brings surface light into their cities</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_CARCEREM_PEDIA</Tag>
+		<English>A crystalline substance that captures souls, which is the core of the Sawol Cavea dagger and of Basium's maul the Angelorum Cavea. </English>
+		<French>A crystalline substance that captures souls, which is the core of the Sawol Cavea dagger and of Basium's maul the Angelorum Cavea. </French>
+		<German>A crystalline substance that captures souls, which is the core of the Sawol Cavea dagger and of Basium's maul the Angelorum Cavea. </German>
+		<Italian>A crystalline substance that captures souls, which is the core of the Sawol Cavea dagger and of Basium's maul the Angelorum Cavea. </Italian>
+		<Spanish>A crystalline substance that captures souls, which is the core of the Sawol Cavea dagger and of Basium's maul the Angelorum Cavea. </Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_LIVING_IVORY_PEDIA</Tag>
+		<English>A divine metal that heals and repairs itself as well as enhancing healing in the bearer</English>
+		<French>A divine metal that heals and repairs itself as well as enhancing healing in the bearer</French>
+		<German>A divine metal that heals and repairs itself as well as enhancing healing in the bearer</German>
+		<Italian>A divine metal that heals and repairs itself as well as enhancing healing in the bearer</Italian>
+		<Spanish>A divine metal that heals and repairs itself as well as enhancing healing in the bearer</Spanish>
 	</TEXT>
 	
 </Civ4GameText>

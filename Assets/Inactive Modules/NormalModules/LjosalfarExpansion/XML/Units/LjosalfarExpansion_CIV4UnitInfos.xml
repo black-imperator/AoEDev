@@ -62,6 +62,7 @@
 			</UnitMeshGroups>
 			<iDefensiveStrikeChance>15</iDefensiveStrikeChance>
 			<iDefensiveStrikeDamage>5</iDefensiveStrikeDamage>
+			<iWeaponTierMax>2</iWeaponTierMax>
 			<iTier>1</iTier>
 		</UnitInfo>
 		<UnitInfo>        <!-- Archer -->            <!-- ARCHERY UNITS -->
@@ -128,7 +129,7 @@
 			<iDefensiveStrikeChance>20</iDefensiveStrikeChance>
 			<iDefensiveStrikeDamage>10</iDefensiveStrikeDamage>
 			<iTier>2</iTier>
-			<iWeaponTierMax>1</iWeaponTierMax>
+			<iWeaponTierMax>2</iWeaponTierMax>
 			<PrereqBuildingClass>BUILDINGCLASS_FLETCHER</PrereqBuildingClass>
 		</UnitInfo>
 		<UnitInfo>        <!-- Longbowman -->
@@ -186,7 +187,7 @@
 			<iDefensiveStrikeChance>30</iDefensiveStrikeChance>
 			<iDefensiveStrikeDamage>15</iDefensiveStrikeDamage>
 			<iTier>3</iTier>
-			<iWeaponTierMax>2</iWeaponTierMax>
+			<iWeaponTierMax>3</iWeaponTierMax>
 			<PrereqBuildingClass>BUILDINGCLASS_FLETCHER</PrereqBuildingClass>
 		</UnitInfo>
 		<UnitInfo>        <!-- Flurry -->                        <!--LJOSALFAR-->
@@ -248,7 +249,7 @@
 			<iDefensiveStrikeChance>40</iDefensiveStrikeChance>
 			<iDefensiveStrikeDamage>20</iDefensiveStrikeDamage>
 			<iTier>4</iTier>
-			<iWeaponTierMax>2</iWeaponTierMax>
+			<iWeaponTierMax>3</iWeaponTierMax>
 			<PrereqBuilding>BUILDING_ARCHERY_RANGE_UPGRADE_LJOS</PrereqBuilding>
 		</UnitInfo>
 		<UnitInfo>        <!-- Marksman -->
@@ -812,7 +813,7 @@
 			<iTier>2</iTier>
 			<Image>Art/Interface/Popups/Gilden Silveric.dds</Image>
 			<Quote>TXT_KEY_UNIT_GILDEN_STRATEGY</Quote>
-			<iWeaponTierMax>2</iWeaponTierMax>
+			<iWeaponTierMax>3</iWeaponTierMax>
 		</UnitInfo>
 
 	</UnitInfos>

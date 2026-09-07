@@ -89,7 +89,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 				<UnitCombat>
@@ -105,6 +105,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
+			<PromotionNextLevel>PROMOTION_MOLEMAN_BURROWER_2</PromotionNextLevel>
 		</PromotionInfo>
 		<PromotionInfo>
 			<Type>PROMOTION_MOLEMAN_BURROWER_2</Type>
@@ -117,9 +118,6 @@
 					<iPrereqApplications>1</iPrereqApplications>
 				</PrereqPromotionAND>
 			</PrereqPromotionANDs>
-			<PromotionOverwrites>
-				<Promotion>PROMOTION_MOLEMAN_BURROWER_1</Promotion>
-			</PromotionOverwrites>
 			<iMinLevel>5</iMinLevel>
 			<UnitCombats>
 				<UnitCombat>
@@ -155,7 +153,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 				<UnitCombat>
@@ -171,6 +169,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
+			<PromotionNextLevel>PROMOTION_MOLEMAN_BURROWER_3</PromotionNextLevel>
 		</PromotionInfo>
 		<PromotionInfo>
 			<Type>PROMOTION_MOLEMAN_BURROWER_3</Type>
@@ -183,10 +182,6 @@
 					<iPrereqApplications>1</iPrereqApplications>
 				</PrereqPromotionAND>
 			</PrereqPromotionANDs>
-			<PromotionOverwrites>
-				<Promotion>PROMOTION_MOLEMAN_BURROWER_1</Promotion>
-				<Promotion>PROMOTION_MOLEMAN_BURROWER_2</Promotion>
-			</PromotionOverwrites>
 			<iMinLevel>7</iMinLevel>
 			<UnitCombats>
 				<UnitCombat>
@@ -214,15 +209,15 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
-					<iMaxApplications>0</iMaxApplications>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 				<UnitCombat>
@@ -239,17 +234,6 @@
 				</UnitCombat>
 			</UnitCombats>
 		</PromotionInfo>
-		<!--Gives livestock affinity-->
-		<!--<PromotionInfo>
-			<Type>PROMOTION_MOLEMAN_ENGORGER_AFFINITY</Type>
-			<Description>TXT_KEY_PROMOTION_MOLEMAN_ENGORGER_AFFINITY</Description>
-			<Help>TXT_KEY_PROMOTION_MOLEMAN_ENGORGER_AFFINITY_HELP</Help>
-			<PyHelp>getHelpEngorgerAffinity</PyHelp>
-			<Button>Art/Interface/Buttons/Races/Race_Orc.dds</Button>
-			<Affinities>
-				<Affinity>AFFINITY_LIVESTOCK</Affinity>
-			</Affinities>
-		</PromotionInfo>-->
 		<PromotionInfo>
 			<!--Gives moleman grafting affinity-->
 			<Type>PROMOTION_MOLEMAN_STONECLAW_AFFINITY</Type>
@@ -300,10 +284,6 @@
 				</UnitCombat>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
-					<iMaxApplications>0</iMaxApplications>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 				<UnitCombat>
@@ -372,10 +352,6 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
-					<iMaxApplications>0</iMaxApplications>
-				</UnitCombat>
-				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
@@ -387,7 +363,33 @@
 					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+			</UnitCombat>
 			</UnitCombats>
+			<PrereqPromotionANDs>
+				<PrereqPromotionAND>
+					<PromotionType>PROMOTION_MOLEMAN</PromotionType>
+					<iPrereqApplications>1</iPrereqApplications>
+				</PrereqPromotionAND>
+			</PrereqPromotionANDs>
+		</PromotionInfo>
+		<PromotionInfo>
+			<!--Temporary teleport gained from going on the surface tunnel improvement (for settlers)-->
+			<Type>PROMOTION_MOLEMAN_TUNNEL_SUPPORT_SETTLER</Type>
+			<Description>TXT_KEY_PROMOTION_MOLEMAN_TUNNEL_SUPPORT</Description>
+			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/tunnelaccess.dds</Button>
+			<iExtraDropRange>3</iExtraDropRange>
+			<bMustMaintain>1</bMustMaintain>
+			<bAutoAcquire>1</bAutoAcquire>
+			<bNoXP>1</bNoXP>
+			<PrereqUnits>
+				<PrereqUnit>UNIT_SETTLER</PrereqUnit>
+			</PrereqUnits>
+			<PrereqImprovements>
+				<PrereqImprovement>IMPROVEMENT_MOLEMAN_TUNNEL</PrereqImprovement>
+			</PrereqImprovements>
 			<PrereqPromotionANDs>
 				<PrereqPromotionAND>
 					<PromotionType>PROMOTION_MOLEMAN</PromotionType>
@@ -668,7 +670,6 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
-			
 			<PrereqPromotionANDs>
 				<PrereqPromotionAND>
 					<PromotionType>PROMOTION_MOLEMAN_MOLERUN_PERCEPTION</PromotionType>
@@ -1060,7 +1061,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 				<UnitCombat>

@@ -811,7 +811,7 @@
 			<iDefensiveStrikeChance>30</iDefensiveStrikeChance>
 			<iDefensiveStrikeDamage>15</iDefensiveStrikeDamage>
 			<iTier>3</iTier>
-			<iWeaponTierMax>2</iWeaponTierMax>
+			<iWeaponTierMax>3</iWeaponTierMax>
 			<PrereqBuildingClass>BUILDINGCLASS_FLETCHER</PrereqBuildingClass>
 				<FreePromotions>
 				<FreePromotion>
@@ -885,6 +885,7 @@
 			<iDefensiveStrikeDamage>20</iDefensiveStrikeDamage>
 			<iMinLevel>6</iMinLevel>
 			<iTier>4</iTier>
+			<iWeaponTierMax>3</iWeaponTierMax>
 		<DamageTypeCombats>
 				<DamageTypeCombat>
 					<DamageType>DAMAGE_POISON</DamageType>
@@ -948,6 +949,7 @@
 			<FormationType>FORMATION_TYPE_RANGED</FormationType>
 			<iDefensiveStrikeChance>30</iDefensiveStrikeChance>
 			<iDefensiveStrikeDamage>15</iDefensiveStrikeDamage>
+			<iWeaponTierMax>3</iWeaponTierMax>
 			<iTier>4</iTier>
 						<FreePromotions>
 				<FreePromotion>
@@ -1023,7 +1025,7 @@
 			<iDefensiveStrikeChance>40</iDefensiveStrikeChance>
 			<iDefensiveStrikeDamage>20</iDefensiveStrikeDamage>
 			<iTier>4</iTier>
-			<iWeaponTierMax>2</iWeaponTierMax>
+			<iWeaponTierMax>3</iWeaponTierMax>
 			<PrereqBuildingClass>BUILDINGCLASS_BOWYER</PrereqBuildingClass>
 						<FreePromotions>
 				<FreePromotion>

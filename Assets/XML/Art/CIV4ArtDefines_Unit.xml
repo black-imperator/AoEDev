@@ -32559,6 +32559,31 @@
 				<AudioRunTypeEnd/>
 			</AudioRunSounds>
 		</UnitArtInfo>
+		<UnitArtInfo> <!-- UNIT_AUXHOUND -->
+			<Type>ART_DEF_UNIT_AUXHOUND</Type>
+			<Button>Art/Interface/Buttons/Units/Wolf Pack.dds</Button>
+			<fScale>0.45</fScale>
+			<fInterfaceScale>1.4</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/animal/Auxhound/Wolf.nif</NIF>
+			<KFM>Art/animations/Wolf/Wolf.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/WolfShadow.nif</ShadowNIF>
+				<ShadowAttachNode>LionBip Spine</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+			<SelectionSound>AS3D_UN_WOLF_FIDGT_VOX</SelectionSound>
+			<ActionSound>AS3D_UN_WOLF_ATTK_VOX</ActionSound>
+		</UnitArtInfo>
 		<UnitArtInfo> <!-- UNIT_AMICUS -->
 			<Type>ART_DEF_UNIT_AMICUS</Type>
 			<Button>Art/Interface/Buttons/Units/Wolf Pack.dds</Button>

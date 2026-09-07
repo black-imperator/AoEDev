@@ -61,6 +61,7 @@
 			<!-- /Collateral -->
 			<iCultureGarrison>16</iCultureGarrison>
 			<iAsset>42</iAsset>
+			<PrereqTech>TECH_ANIMAL_MASTERY</PrereqTech>
 			<UnitMeshGroups>
 				<iGroupSize>1</iGroupSize>
 				<iMeleeWaveSize>1</iMeleeWaveSize>
@@ -216,6 +217,13 @@
 			<iMoves>2</iMoves>
 			<iWorkRate>100</iWorkRate>
 			<iAsset>1</iAsset>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_APTITUDE1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+			<bFreeXP>1</bFreeXP>
 			<UnitMeshGroups>
 				<iGroupSize>2</iGroupSize>
 				<iMeleeWaveSize>2</iMeleeWaveSize>
@@ -226,7 +234,8 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<iTier>1</iTier>
-			<iWeaponTierMax>0</iWeaponTierMax>
+			<iWeaponTierMin>4</iWeaponTierMin>
+			<iWeaponTierMax>6</iWeaponTierMax>
 		</UnitInfo>
 		<UnitInfo>
 			<!-- Moleman Horseman UU -->
@@ -243,10 +252,11 @@
 			<bMilitaryProduction>1</bMilitaryProduction>
 			<bPillage>1</bPillage>
 			<bNoDefensiveBonus>1</bNoDefensiveBonus>
-			<iWorkRate>120</iWorkRate>
+			<iWorkRate>100</iWorkRate>
 			<iAIWeight>10</iAIWeight>
 			<UnitClassUpgrades>
 				<UnitClassUpgradeType>UNITCLASS_HORSE_ARCHER</UnitClassUpgradeType>
+				<UnitClassUpgradeType>UNITCLASS_CHARIOT</UnitClassUpgradeType>
 			</UnitClassUpgrades>
 			<UnitAIs>
 				<UnitAI>
@@ -374,11 +384,10 @@
 			<bMilitaryProduction>1</bMilitaryProduction>
 			<bPillage>1</bPillage>
 			<bNoDefensiveBonus>1</bNoDefensiveBonus>
-			<iWorkRate>250</iWorkRate>
+			<iWorkRate>150</iWorkRate>
 			<iAIWeight>10</iAIWeight>
 			<UnitClassUpgrades>
 				<UnitClassUpgradeType>UNITCLASS_KNIGHT</UnitClassUpgradeType>
-				<UnitClassUpgradeType>UNITCLASS_CHARIOT</UnitClassUpgradeType>
 			</UnitClassUpgrades>
 			<UnitAIs>
 				<UnitAI>
@@ -416,6 +425,13 @@
 			<TechTypes>
 				<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
 			</TechTypes>
+			<AllowPromotions>
+				<Promotion>PROMOTION_EMPOWER1</Promotion>
+				<Promotion>PROMOTION_EMPOWER2</Promotion>
+				<Promotion>PROMOTION_EMPOWER3</Promotion>
+				<Promotion>PROMOTION_EMPOWER4</Promotion>
+				<Promotion>PROMOTION_EMPOWER5</Promotion>
+			</AllowPromotions>
 			<BonusProductionModifiers>
 				<BonusProductionModifier>
 					<BonusType>BONUS_HORSE</BonusType>
@@ -510,7 +526,7 @@
 			<bMilitaryProduction>1</bMilitaryProduction>
 			<bPillage>1</bPillage>
 			<bNoDefensiveBonus>1</bNoDefensiveBonus>
-			<iWorkRate>500</iWorkRate>
+			<iWorkRate>200</iWorkRate>
 			<iAIWeight>500</iAIWeight>
 			<UnitAIs>
 				<UnitAI>
@@ -548,6 +564,13 @@
 			<TechTypes>
 				<PrereqTech>TECH_WARHORSES</PrereqTech>
 			</TechTypes>
+			<AllowPromotions>
+				<Promotion>PROMOTION_EMPOWER1</Promotion>
+				<Promotion>PROMOTION_EMPOWER2</Promotion>
+				<Promotion>PROMOTION_EMPOWER3</Promotion>
+				<Promotion>PROMOTION_EMPOWER4</Promotion>
+				<Promotion>PROMOTION_EMPOWER5</Promotion>
+			</AllowPromotions>
 			<BonusProductionModifiers>
 				<BonusProductionModifier>
 					<BonusType>BONUS_HORSE</BonusType>
@@ -688,7 +711,7 @@
 				<Affinity>AFFINITY_LIVESTOCK</Affinity>
 			</Affinities>
 			<iCost>120</iCost>
-			<iMoves>1</iMoves>
+			<iMoves>3</iMoves>
 			<iCombat>4</iCombat>
 			<iCombatDefense>3</iCombatDefense>
 			<iFirstStrikes>1</iFirstStrikes>
@@ -773,7 +796,7 @@
 				<Affinity>AFFINITY_LIVESTOCK</Affinity>
 			</Affinities>
 			<iCost>240</iCost>
-			<iMoves>1</iMoves>
+			<iMoves>3</iMoves>
 			<iCombat>12</iCombat>
 			<iCombatDefense>6</iCombatDefense>
 			<iFirstStrikes>1</iFirstStrikes>
@@ -794,74 +817,6 @@
 			<iPowerMult>1</iPowerMult>
 			<PrereqBuildingClass>BUILDINGCLASS_STABLE</PrereqBuildingClass>
 		</UnitInfo>
-		<!--Moleman Scout UU-->
-		<!--<UnitInfo>
-			<Class>UNITCLASS_SCOUT</Class>
-			<Type>UNIT_MOLEMAN_SCOUT</Type>
-			<Combat>UNITCOMBAT_RECON</Combat>
-			<DefaultUnitAI>UNITAI_EXPLORE</DefaultUnitAI>
-			<iExtraPerception>2</iExtraPerception>
-			<Description>TXT_KEY_UNIT_MOLEMAN_SCOUT</Description>
-			<Civilopedia>TXT_KEY_UNIT_SCOUT_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_SCOUT_STRATEGY</Strategy>
-			<Advisor>ADVISOR_GROWTH</Advisor>
-			<bNoBadGoodies>1</bNoBadGoodies>
-			<bMilitaryHappiness>1</bMilitaryHappiness>
-			<bMilitarySupport>1</bMilitarySupport>
-			<bMilitaryProduction>1</bMilitaryProduction>
-			<UnitClassUpgrades>
-				<UnitClassUpgradeType>UNITCLASS_HUNTER</UnitClassUpgradeType>
-				<UnitClassUpgradeType>UNITCLASS_THIEF</UnitClassUpgradeType>
-			</UnitClassUpgrades>
-			<UnitAIs>
-				<UnitAI>
-					<UnitAIType>UNITAI_EXPLORE</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-			</UnitAIs>
-			<NotUnitAIs>
-				<UnitAI>
-					<UnitAIType>UNITAI_CITY_DEFENSE</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_CITY_COUNTER</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-			</NotUnitAIs>
-			<iCost>25</iCost>
-			<iMoves>2</iMoves>
-			<iCombat>2</iCombat>
-			<UnitCombatMods>
-				<UnitCombatMod>
-					<UnitCombatType>UNITCOMBAT_ANIMAL</UnitCombatType>
-					<iUnitCombatMod>50</iUnitCombatMod>
-				</UnitCombatMod>
-				<UnitCombatMod>
-					<UnitCombatType>UNITCOMBAT_BEAST</UnitCombatType>
-					<iUnitCombatMod>50</iUnitCombatMod>
-				</UnitCombatMod>
-			</UnitCombatMods>
-			<iAsset>1</iAsset>
-			<UnitMeshGroups>
-				<iGroupSize>2</iGroupSize>
-				<iMeleeWaveSize>2</iMeleeWaveSize>
-				<iRangedWaveSize>0</iRangedWaveSize>
-				<UnitMeshGroup>
-					<iRequired>2</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_MOLEMAN_SCOUT</EarlyArtDefineTag>
-				</UnitMeshGroup>
-			</UnitMeshGroups>
-			<iTier>1</iTier>
-			<FreePromotions>
-				<FreePromotion>
-					<PromotionType>PROMOTION_MOLEMAN_BURROWER_1</PromotionType>
-					<iNumApplied>1</iNumApplied>
-				</FreePromotion>
-			</FreePromotions>
-			<UpgradeCiv>CIVILIZATION_MOLEMEN</UpgradeCiv>
-			<iAIWeight>5</iAIWeight>
-		</UnitInfo> -->
 		<UnitInfo>
 			<!-- Moleman Hunter UU -->
 			<Class>UNITCLASS_HUNTER</Class>
@@ -1124,80 +1079,77 @@
 			<iWeaponTierMax>3</iWeaponTierMax>
 			<PrereqBuildingClass>BUILDINGCLASS_BARRACKS</PrereqBuildingClass>
 		</UnitInfo>
-		<!-- Shadow -->
-		<!--<UnitInfo>
-			<Class>UNITCLASS_SHADOW</Class>
-			<Type>UNIT_MOLEMAN_SHADOW</Type>
-			<Combat>UNITCOMBAT_ROGUE</Combat>
-			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
-			<iInvisibleLevel>4</iInvisibleLevel>
-			<Description>TXT_KEY_UNIT_MOLEMAN_SHADOW</Description>
-			<Civilopedia>TXT_KEY_UNIT_SHADOW_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_SHADOW_STRATEGY</Strategy>
+		<UnitInfo>
+			<!-- Fort Commander-->
+			<Class>UNITCLASS_FORT_COMMANDER</Class>
+			<Type>UNIT_MOLEMAN_FORT_COMMANDER</Type>
+			<Combat>UNITCOMBAT_SIEGE</Combat>
+			<DefaultUnitAI>UNITAI_FORT_COMMANDER</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_MOLEMAN_FORT_COMMANDER</Description>
+			<Civilopedia>TXT_KEY_UNIT_FORT_COMMANDER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_MOLEMAN_FORT_COMMANDER_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
-			<bRivalTerritory>1</bRivalTerritory>
-			<bMilitaryHappiness>1</bMilitaryHappiness>
 			<bMilitarySupport>1</bMilitarySupport>
-			<bMilitaryProduction>1</bMilitaryProduction>
-			<bInvestigate>1</bInvestigate>
-			<bFirstStrikeImmune>1</bFirstStrikeImmune>
-			<UnitAIs>
-				<UnitAI>
-					<UnitAIType>UNITAI_ATTACK</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_ATTACK_CITY</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_SPY</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_PILLAGE</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-			</UnitAIs>
-			<PrereqTech>TECH_GUILDS</PrereqTech>
-			<iCost>240</iCost>
-			<iMoves>2</iMoves>
-			<iCombat>12</iCombat>
+			<bNukeImmune>1</bNukeImmune>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<iFlavor>3</iFlavor>
+				</Flavor>
+			</Flavors>
+			<iCost>-1</iCost>
+			<iAdvancedStartCost>-1</iAdvancedStartCost>
+			<iMoves>1</iMoves>
+			<iAirRange>1</iAirRange>
+			<iCombat>3</iCombat>
+			<iAirCombat>3</iAirCombat>
+			<iAirCombatLimit>50</iAirCombatLimit>
 			<iFirstStrikes>1</iFirstStrikes>
-			<iAsset>16</iAsset>
+			<iChanceFirstStrikes>1</iChanceFirstStrikes>
+			<iCollateralDamage>80</iCollateralDamage>
+			<iCollateralDamageLimit>40</iCollateralDamageLimit>
+			<iCollateralDamageMaxUnits>4</iCollateralDamageMaxUnits>
+			<iCityDefense>20</iCityDefense>
+			<UnitCombatMods>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<iUnitCombatMod>80</iUnitCombatMod>
+				</UnitCombatMod>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<iUnitCombatMod>120</iUnitCombatMod>
+				</UnitCombatMod>
+			</UnitCombatMods>
 			<UnitMeshGroups>
 				<iGroupSize>1</iGroupSize>
+				<fMaxSpeed>1.25</fMaxSpeed>
+				<fPadTime>1</fPadTime>
 				<iMeleeWaveSize>1</iMeleeWaveSize>
 				<iRangedWaveSize>0</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_SHADOW</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_MOLEMAN_SWORDSMAN</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
+			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 			<FreePromotions>
 				<FreePromotion>
-					<PromotionType>PROMOTION_MARKSMAN</PromotionType>
+					<PromotionType>PROMOTION_INFLUENCE</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 				<FreePromotion>
-					<PromotionType>PROMOTION_MOLEMAN_BURROWER_1</PromotionType>
-					<iNumApplied>1</iNumApplied>
-				</FreePromotion>
-				<FreePromotion>
-					<PromotionType>PROMOTION_SECONDARY_RECON</PromotionType>
+					<PromotionType>PROMOTION_SIEGECOMBAT</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 			</FreePromotions>
-			<PrereqBuildingClass>BUILDINGCLASS_THIEVES_DEN</PrereqBuildingClass>
-			<bImmuneToDefensiveStrike>1</bImmuneToDefensiveStrike>
-			<iCombatDefense>3</iCombatDefense>
-			<iTier>4</iTier>
-			<DamageTypeCombats>
-				<DamageTypeCombat>
-					<DamageType>DAMAGE_POISON</DamageType>
-					<iCombat>2</iCombat>
-				</DamageTypeCombat>
-			</DamageTypeCombats>
-		</UnitInfo>-->
+			<bFreeXP>1</bFreeXP>
+			<DenyPromotions>
+				<Promotion>PROMOTION_MOBILITY1</Promotion>
+				<Promotion>PROMOTION_MECHANOS_AFFINITY_ENABLER</Promotion>
+				<Promotion>PROMOTION_ENRAGED</Promotion>
+				<Promotion>PROMOTION_MOLEMAN_BURROWER_1</Promotion>
+			</DenyPromotions>
+			<iPowerMult>4</iPowerMult>
+		</UnitInfo>
 	</UnitInfos>
 </Civ4UnitInfos>

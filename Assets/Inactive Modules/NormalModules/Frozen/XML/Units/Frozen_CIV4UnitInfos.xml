@@ -460,7 +460,7 @@
 			<bNeverObsolete>1</bNeverObsolete>
 			<iCombatDefense>6</iCombatDefense>
 			<iTier>3</iTier>
-			<iWeaponTierMax>2</iWeaponTierMax>
+			<iWeaponTierMax>3</iWeaponTierMax>
 			<PrereqBuildingClass>BUILDINGCLASS_ARCHERY_RANGE</PrereqBuildingClass>
 			<DamageTypeCombats>
 				<DamageTypeCombat>

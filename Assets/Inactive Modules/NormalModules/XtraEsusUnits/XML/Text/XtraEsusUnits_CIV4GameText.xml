@@ -119,11 +119,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SPELL_PROPRIETOR_FORGERY_HELP</Tag>
-		<English>[ICON_BULLET]Generates 1 [ICON_CULTURE] for every 2 [ICON_CRIME] in the city.[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</English>
-		<French>[ICON_BULLET]Generates 1 [ICON_CULTURE] for every 2 [ICON_CRIME] in the city.[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</French>
-		<German>[ICON_BULLET]Generates 1 [ICON_CULTURE] for every 2 [ICON_CRIME] in the city.[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</German>
-		<Italian>[ICON_BULLET]Generates 1 [ICON_CULTURE] for every 2 [ICON_CRIME] in the city.[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</Italian>
-		<Spanish>[ICON_BULLET]Generates 1 [ICON_CULTURE] for every 2 [ICON_CRIME] in the city.[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</Spanish>
+		<English>[ICON_BULLET]Generates 1 [ICON_CULTURE] for every 2 [ICON_CRIME].[NEWLINE][ICON_BULLET]Halves the city's [ICON_CRIME].[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</English>
+		<French>[ICON_BULLET]Generates 1 [ICON_CULTURE] for every 2 [ICON_CRIME].[NEWLINE][ICON_BULLET]Halves the city's [ICON_CRIME].[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</French>
+		<German>[ICON_BULLET]Generates 1 [ICON_CULTURE] for every 2 [ICON_CRIME].[NEWLINE][ICON_BULLET]Halves the city's [ICON_CRIME].[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</German>
+		<Italian>[ICON_BULLET]Generates 1 [ICON_CULTURE] for every 2 [ICON_CRIME].[NEWLINE][ICON_BULLET]Halves the city's [ICON_CRIME].[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</Italian>
+		<Spanish>[ICON_BULLET]Generates 1 [ICON_CULTURE] for every 2 [ICON_CRIME].[NEWLINE][ICON_BULLET]Halves the city's [ICON_CRIME].[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SPELL_DEATH_MERCHANT_PROFITEER</Tag>
@@ -135,11 +135,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DEATH_MERCHANT_PROFITEER_HELP</Tag>
-		<English>[ICON_BULLET]Generates 1 [ICON_GOLD] for every 2 [ICON_CRIME] in the city.[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</English>
-		<French>[ICON_BULLET]Generates 1 [ICON_GOLD] for every 2 [ICON_CRIME] in the city.[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</French>
-		<German>[ICON_BULLET]Generates 1 [ICON_GOLD] for every 2 [ICON_CRIME] in the city.[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</German>
-		<Italian>[ICON_BULLET]Generates 1 [ICON_GOLD] for every 2 [ICON_CRIME] in the city.[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</Italian>
-		<Spanish>[ICON_BULLET]Generates 1 [ICON_GOLD] for every 2 [ICON_CRIME] in the city.[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</Spanish>
+		<English>[ICON_BULLET]Generates 1 [ICON_GOLD] for every 2 [ICON_CRIME] in the city.[NEWLINE][ICON_BULLET]Halves the city's [ICON_CRIME].[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</English>
+		<French>[ICON_BULLET]Generates 1 [ICON_GOLD] for every 2 [ICON_CRIME] in the city.[NEWLINE][ICON_BULLET]Halves the city's [ICON_CRIME].[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</French>
+		<German>[ICON_BULLET]Generates 1 [ICON_GOLD] for every 2 [ICON_CRIME] in the city.[NEWLINE][ICON_BULLET]Halves the city's [ICON_CRIME].[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</German>
+		<Italian>[ICON_BULLET]Generates 1 [ICON_GOLD] for every 2 [ICON_CRIME] in the city.[NEWLINE][ICON_BULLET]Halves the city's [ICON_CRIME].[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</Italian>
+		<Spanish>[ICON_BULLET]Generates 1 [ICON_GOLD] for every 2 [ICON_CRIME] in the city.[NEWLINE][ICON_BULLET]Halves the city's [ICON_CRIME].[NEWLINE][ICON_BULLET]The target city must have the Council of Esus religion.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DEATH_MERCHANT_BOOST_CRIME_HELP</Tag>
@@ -222,12 +222,28 @@
 		<Spanish>[ICON_BULLET]+1 [ICON_STRENGTH] for every 200 [ICON_CRIME] in a nearby city you own (Up to 3)</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_ESUS_ENFORCER_UPGRADE_HELP</Tag>
+		<English>[ICON_BULLET]+1 [ICON_STRENGTH] for every 200 [ICON_CRIME] in any nearby city (Up to 3)</English>
+		<French>[ICON_BULLET]+1 [ICON_STRENGTH] for every 200 [ICON_CRIME] in any nearby city (Up to 3)</French>
+		<German>[ICON_BULLET]+1 [ICON_STRENGTH] for every 200 [ICON_CRIME] in any nearby city (Up to 3)</German>
+		<Italian>[ICON_BULLET]+1 [ICON_STRENGTH] for every 200 [ICON_CRIME] in any nearby city (Up to 3)</Italian>
+		<Spanish>[ICON_BULLET]+1 [ICON_STRENGTH] for every 200 [ICON_CRIME] in any nearby city (Up to 3)</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_ESUS_CRIMINAL_CONNECTIONS</Tag>
 		<English>Criminal Enforcer</English>
 		<French>Criminal Enforcer</French>
 		<German>Criminal Enforcer</German>
 		<Italian>Criminal Enforcer</Italian>
 		<Spanish>Criminal Enforcer</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_ESUS_UNDERWORLD_CONNECTIONS</Tag>
+		<English>Crime Lord</English>
+		<French>Crime Lord</French>
+		<German>Crime Lord</German>
+		<Italian>Crime Lord</Italian>
+		<Spanish>Crime Lord</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_APHOTIC_THRONE_MERCHANT_UPGRADED</Tag>

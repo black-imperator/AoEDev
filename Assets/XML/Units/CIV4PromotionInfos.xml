@@ -6847,7 +6847,7 @@
 			</UnitCombats>
 			<bGraphicalOnly>1</bGraphicalOnly>
 			<Button>Art/Interface/Buttons/Promotions/Ambush1.dds</Button>
-			<iExtraCombatDefense>1</iExtraCombatDefense>
+			<iExtraCombatStr>1</iExtraCombatStr>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Ambush II (Effect)  -->
 			<Type>PROMOTION_AMBUSH2_EFFECT</Type>
@@ -6908,7 +6908,7 @@
 			</UnitCombats>
 			<bGraphicalOnly>1</bGraphicalOnly>
 			<Button>Art/Interface/Buttons/Promotions/Ambush2.dds</Button>
-			<iExtraCombatDefense>1</iExtraCombatDefense>
+			<iExtraCombatStr>1</iExtraCombatStr>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Arcane Crew -->
 			<Type>PROMOTION_ARCANE_CREW</Type>
@@ -6927,12 +6927,6 @@
 		<PromotionInfo>		<!-- Archery I -->
 			<Type>PROMOTION_ARCHERY1</Type>
 			<Description>TXT_KEY_PROMOTION_ARCHERY1</Description>
-			<PrereqPromotionANDs>
-				<PrereqPromotionAND>
-					<PromotionType>PROMOTION_DRILL1</PromotionType>
-					<iPrereqApplications>1</iPrereqApplications>
-				</PrereqPromotionAND>
-			</PrereqPromotionANDs>
 			<iAirCombat>1</iAirCombat>
 			<iAirCombatLimitBoost>10</iAirCombatLimitBoost>
 			<UnitCombats>
@@ -6953,7 +6947,7 @@
 					<iPrereqApplications>1</iPrereqApplications>
 				</PrereqPromotionAND>
 				<PrereqPromotionAND>
-					<PromotionType>PROMOTION_DRILL2</PromotionType>
+					<PromotionType>PROMOTION_DRILL1</PromotionType>
 					<iPrereqApplications>1</iPrereqApplications>
 				</PrereqPromotionAND>
 			</PrereqPromotionANDs>
@@ -6977,7 +6971,7 @@
 					<iPrereqApplications>1</iPrereqApplications>
 				</PrereqPromotionAND>
 				<PrereqPromotionAND>
-					<PromotionType>PROMOTION_DRILL3</PromotionType>
+					<PromotionType>PROMOTION_DRILL2</PromotionType>
 					<iPrereqApplications>1</iPrereqApplications>
 				</PrereqPromotionAND>
 			</PrereqPromotionANDs>
@@ -7341,10 +7335,6 @@
 				</UnitCombat>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_ANIMAL</UnitCombatType>
-					<iMaxApplications>0</iMaxApplications>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 				<UnitCombat>
@@ -12903,10 +12893,6 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
-					<iMaxApplications>0</iMaxApplications>
-				</UnitCombat>
-				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_BEAST</UnitCombatType>
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
@@ -14252,10 +14238,6 @@
 				</UnitCombat>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_ANIMAL</UnitCombatType>
-					<iMaxApplications>0</iMaxApplications>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 				<UnitCombat>
@@ -27960,7 +27942,6 @@
 				</UnitCombat>
 			</UnitCombats>
 			<Button>Art/Interface/Buttons/Promotions/Civs/Mekara/Militia.dds</Button>
-			<iPromotionDuration>10</iPromotionDuration>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Grigori fort commander  Influence Middle -->
 			<Type>PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE2</Type>
@@ -28008,7 +27989,6 @@
 				</UnitCombat>
 			</UnitCombats>
 			<Button>Art/Interface/Buttons/Promotions/Civs/Mekara/Militia.dds</Button>
-			<iPromotionDuration>10</iPromotionDuration>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Grigori fort commander  Influence Late -->
 			<Type>PROMOTION_GRIGORI_FORT_COMMANDER_INFLUENCE3</Type>
@@ -28058,7 +28038,6 @@
 				</UnitCombat>
 			</UnitCombats>
 			<Button>Art/Interface/Buttons/Promotions/Civs/Mekara/Militia.dds</Button>
-			<iPromotionDuration>10</iPromotionDuration>
 		</PromotionInfo>
 <!--	<PromotionInfo>		<!{1}** Grigori Supplies Recieved   **{1}>
 			<Type>PROMOTION_GRIGORI_SUPPLY_RECIEVED</Type>
@@ -46251,6 +46230,334 @@
 			<Description>TXT_KEY_PROMOTION_ESCAPE_BLOCK</Description>
 			<bGraphicalOnly>1</bGraphicalOnly>
 			<Button>Art/Interface/Buttons/Promotions/Dimensional1.dds</Button>
+			<iMinLevel>-1</iMinLevel>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Oak Weapons - Wood Promotions -->
+			<Type>PROMOTION_OAK_WEAPONS</Type>
+			<Description>TXT_KEY_PROMOTION_OAK_WEAPONS</Description>
+			<bAutoAcquire>1</bAutoAcquire>
+			<bNoXP>1</bNoXP>
+			<PrereqbAllowNULLUnitCombat>1</PrereqbAllowNULLUnitCombat>
+			<PrereqInCity>1</PrereqInCity>
+			<PrereqWeaponTier>1</PrereqWeaponTier>
+			<PromotionExcludes>
+				<Promotion>PROMOTION_BRONZE_WEAPONS</Promotion>
+				<Promotion>PROMOTION_FINE_EQUIPMENT_MELEE</Promotion>
+				<Promotion>PROMOTION_FINE_BOWS_ARCHER</Promotion>
+			</PromotionExcludes>
+			<PromotionOverwrites>
+				<Promotion>PROMOTION_BRONZE_WEAPONS</Promotion>
+				<Promotion>PROMOTION_FINE_EQUIPMENT_MELEE</Promotion>
+			</PromotionOverwrites>
+			<PromotionReplacedBy>
+				<Promotion>PROMOTION_YEW_WEAPONS</Promotion>
+				<Promotion>PROMOTION_DUSKWOOD_WEAPONS</Promotion>
+			</PromotionReplacedBy>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Art/Interface/Buttons/Promotions/OakWeapon.dds</Button>
+			<bValidate>1</bValidate>
+			<iExtraCombatStr>1</iExtraCombatStr>
+			<iExtraCombatDefense>1</iExtraCombatDefense>
+			<iDefensiveStrikeDamage>5</iDefensiveStrikeDamage>
+			<bValidate>1</bValidate>
+			<PrereqBonusANDs>
+				<PrereqBonus>BONUS_OAK</PrereqBonus>
+			</PrereqBonusANDs>
+			<DamageTypeResists>
+				<DamageTypeResist>
+					<DamageType>DAMAGE_FIRE</DamageType>
+					<iResist>-25</iResist>
+				</DamageTypeResist>
+			</DamageTypeResists>
+		</PromotionInfo>	
+		<PromotionInfo>		<!-- Yew Weapons -->
+			<Type>PROMOTION_YEW_WEAPONS</Type>
+			<Description>TXT_KEY_PROMOTION_YEW_WEAPONS</Description>
+			<bAutoAcquire>1</bAutoAcquire>
+			<bNoXP>1</bNoXP>
+			<PrereqbAllowNULLUnitCombat>1</PrereqbAllowNULLUnitCombat>
+			<PrereqInCity>1</PrereqInCity>
+			<PrereqWeaponTier>2</PrereqWeaponTier>
+			<PromotionExcludes>
+				<Promotion>PROMOTION_IRON_WEAPONS</Promotion>
+				<Promotion>PROMOTION_OAK_WEAPONS</Promotion>
+				<Promotion>PROMOTION_BRONZE_WEAPONS</Promotion>
+				<Promotion>PROMOTION_FINE_EQUIPMENT_MELEE</Promotion>
+				<Promotion>PROMOTION_FINE_BOWS_ARCHER</Promotion>
+			</PromotionExcludes>
+			<PromotionOverwrites>
+				<Promotion>PROMOTION_IRON_WEAPONS</Promotion>
+				<Promotion>PROMOTION_BRONZE_WEAPONS</Promotion>
+				<Promotion>PROMOTION_HIGH_QUALITY_BRONZE_MELEE</Promotion>
+				<Promotion>PROMOTION_FINE_EQUIPMENT_MELEE</Promotion>
+				<Promotion>PROMOTION_FINE_BOWS_ARCHER</Promotion>
+			</PromotionOverwrites>
+			<PromotionReplacedBy>
+				<Promotion>PROMOTION_DUSKWOOD_WEAPONS</Promotion>
+			</PromotionReplacedBy>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Art/Interface/Buttons/Promotions/YewWeapon.dds</Button>
+			<bValidate>1</bValidate>
+			<iExtraCombatStr>2</iExtraCombatStr>
+			<iExtraCombatDefense>2</iExtraCombatDefense>
+			<iDefensiveStrikeDamage>10</iDefensiveStrikeDamage>
+			<PrereqBonusANDs>
+				<PrereqBonus>BONUS_YEW</PrereqBonus>
+			</PrereqBonusANDs>
+			<DamageTypeResists>
+				<DamageTypeResist>
+					<DamageType>DAMAGE_FIRE</DamageType>
+					<iResist>-25</iResist>
+				</DamageTypeResist>
+			</DamageTypeResists>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Duskwood Weapons -->
+			<Type>PROMOTION_DUSKWOOD_WEAPONS</Type>
+			<Description>TXT_KEY_PROMOTION_DUSKWOOD_WEAPONS</Description>
+			<bAutoAcquire>1</bAutoAcquire>
+			<bNoXP>1</bNoXP>
+			<PrereqbAllowNULLUnitCombat>1</PrereqbAllowNULLUnitCombat>
+			<PrereqInCity>1</PrereqInCity>
+			<PrereqWeaponTier>3</PrereqWeaponTier>
+			<PromotionExcludes>
+				<Promotion>PROMOTION_OAK_WEAPONS</Promotion>
+				<Promotion>PROMOTION_YEW_WEAPONS</Promotion>
+				<Promotion>PROMOTION_MITHRIL_WEAPONS</Promotion>
+				<Promotion>PROMOTION_BRONZE_WEAPONS</Promotion>
+				<Promotion>PROMOTION_IRON_WEAPONS</Promotion>
+				<Promotion>PROMOTION_FINE_EQUIPMENT_MELEE</Promotion>
+				<Promotion>PROMOTION_FINE_BOWS_ARCHER</Promotion>
+				<Promotion>PROMOTION_RUSTED</Promotion>
+			</PromotionExcludes>
+			<PromotionOverwrites>
+				<Promotion>PROMOTION_IRON_WEAPONS</Promotion>
+				<Promotion>PROMOTION_BRONZE_WEAPONS</Promotion>
+				<Promotion>PROMOTION_MITHRIL_WEAPONS</Promotion>
+				<Promotion>PROMOTION_IRON_WEAPONS</Promotion>
+				<Promotion>PROMOTION_HIGH_QUALITY_STEEL_MELEE</Promotion>
+				<Promotion>PROMOTION_HIGH_QUALITY_BRONZE_MELEE</Promotion>
+				<Promotion>PROMOTION_FINE_EQUIPMENT_MELEE</Promotion>
+				<Promotion>PROMOTION_FINE_BOWS_ARCHER</Promotion>
+				<Promotion>PROMOTION_RUSTED</Promotion>
+			</PromotionOverwrites>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Art/Interface/Buttons/Promotions/DuskwoodWeapon.dds</Button>
+			<bValidate>1</bValidate>
+			<iExtraCombatStr>4</iExtraCombatStr>
+			<iExtraCombatDefense>4</iExtraCombatDefense>
+			<iDefensiveStrikeDamage>15</iDefensiveStrikeDamage>
+			<iAirRangeChange>1</iAirRangeChange>
+			<PrereqBonusANDs>
+				<PrereqBonus>BONUS_DUSKWOOD</PrereqBonus>
+			</PrereqBonusANDs>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Oak Hull - Wood Ship Promotions -->
+			<Type>PROMOTION_OAK_HULL</Type>
+			<Description>TXT_KEY_PROMOTION_OAK_HULL</Description>
+			<bAutoAcquire>1</bAutoAcquire>
+			<bNoXP>1</bNoXP>
+			<PrereqbAllowNULLUnitCombat>1</PrereqbAllowNULLUnitCombat>
+			<PrereqInCity>1</PrereqInCity>
+			<PrereqWeaponTier>1</PrereqWeaponTier>
+			<PromotionExcludes>
+				<Promotion>PROMOTION_BRONZE_WEAPONS</Promotion>
+				<Promotion>PROMOTION_FINE_EQUIPMENT_MELEE</Promotion>
+				<Promotion>PROMOTION_FINE_BOWS_ARCHER</Promotion>
+			</PromotionExcludes>
+			<PromotionOverwrites>
+				<Promotion>PROMOTION_BRONZE_WEAPONS</Promotion>
+				<Promotion>PROMOTION_FINE_EQUIPMENT_MELEE</Promotion>
+			</PromotionOverwrites>
+			<PromotionReplacedBy>
+				<Promotion>PROMOTION_YEW_HULL</Promotion>
+				<Promotion>PROMOTION_DUSKWOOD_HULL</Promotion>
+			</PromotionReplacedBy>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Art/Interface/Buttons/Worldbuilder/WoodOak.dds</Button>
+			<bValidate>1</bValidate>
+			<PrereqBonusANDs>
+				<PrereqBonus>BONUS_OAK</PrereqBonus>
+			</PrereqBonusANDs>
+			<DamageTypeResists>
+				<DamageTypeResist>
+					<DamageType>DAMAGE_PHYSICAL</DamageType>
+					<iResist>20</iResist>
+				</DamageTypeResist>
+			</DamageTypeResists>
+		</PromotionInfo>	
+		<PromotionInfo>		<!-- Yew Hull -->
+			<Type>PROMOTION_YEW_HULL</Type>
+			<Description>TXT_KEY_PROMOTION_YEW_HULL</Description>
+			<bAutoAcquire>1</bAutoAcquire>
+			<bNoXP>1</bNoXP>
+			<PrereqbAllowNULLUnitCombat>1</PrereqbAllowNULLUnitCombat>
+			<PrereqInCity>1</PrereqInCity>
+			<PrereqWeaponTier>2</PrereqWeaponTier>
+			<PromotionExcludes>
+				<Promotion>PROMOTION_IRON_WEAPONS</Promotion>
+				<Promotion>PROMOTION_OAK_WEAPONS</Promotion>
+				<Promotion>PROMOTION_BRONZE_WEAPONS</Promotion>
+				<Promotion>PROMOTION_FINE_EQUIPMENT_MELEE</Promotion>
+				<Promotion>PROMOTION_FINE_BOWS_ARCHER</Promotion>
+			</PromotionExcludes>
+			<PromotionOverwrites>
+				<Promotion>PROMOTION_IRON_WEAPONS</Promotion>
+				<Promotion>PROMOTION_BRONZE_WEAPONS</Promotion>
+				<Promotion>PROMOTION_HIGH_QUALITY_BRONZE_MELEE</Promotion>
+				<Promotion>PROMOTION_FINE_EQUIPMENT_MELEE</Promotion>
+				<Promotion>PROMOTION_FINE_BOWS_ARCHER</Promotion>
+			</PromotionOverwrites>
+			<PromotionReplacedBy>
+				<Promotion>PROMOTION_DUSKWOOD_HULL</Promotion>
+			</PromotionReplacedBy>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Art/Interface/Buttons/Worldbuilder/WoodYew.dds</Button>
+			<bValidate>1</bValidate>
+			<PrereqBonusANDs>
+				<PrereqBonus>BONUS_YEW</PrereqBonus>
+			</PrereqBonusANDs>
+			<DamageTypeResists>
+				<DamageTypeResist>
+					<DamageType>DAMAGE_PHYSICAL</DamageType>
+					<iResist>25</iResist>
+				</DamageTypeResist>
+			</DamageTypeResists>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Duskwood Hull -->
+			<Type>PROMOTION_DUSKWOOD_HULL</Type>
+			<Description>TXT_KEY_PROMOTION_DUSKWOOD_HULL</Description>
+			<bAutoAcquire>1</bAutoAcquire>
+			<bNoXP>1</bNoXP>
+			<PrereqbAllowNULLUnitCombat>1</PrereqbAllowNULLUnitCombat>
+			<PrereqInCity>1</PrereqInCity>
+			<PrereqWeaponTier>3</PrereqWeaponTier>
+			<PromotionExcludes>
+				<Promotion>PROMOTION_OAK_WEAPONS</Promotion>
+				<Promotion>PROMOTION_YEW_WEAPONS</Promotion>
+				<Promotion>PROMOTION_MITHRIL_WEAPONS</Promotion>
+				<Promotion>PROMOTION_BRONZE_WEAPONS</Promotion>
+				<Promotion>PROMOTION_IRON_WEAPONS</Promotion>
+				<Promotion>PROMOTION_FINE_EQUIPMENT_MELEE</Promotion>
+				<Promotion>PROMOTION_FINE_BOWS_ARCHER</Promotion>
+				<Promotion>PROMOTION_RUSTED</Promotion>
+			</PromotionExcludes>
+			<PromotionOverwrites>
+				<Promotion>PROMOTION_IRON_WEAPONS</Promotion>
+				<Promotion>PROMOTION_BRONZE_WEAPONS</Promotion>
+				<Promotion>PROMOTION_MITHRIL_WEAPONS</Promotion>
+				<Promotion>PROMOTION_IRON_WEAPONS</Promotion>
+				<Promotion>PROMOTION_HIGH_QUALITY_STEEL_MELEE</Promotion>
+				<Promotion>PROMOTION_HIGH_QUALITY_BRONZE_MELEE</Promotion>
+				<Promotion>PROMOTION_FINE_EQUIPMENT_MELEE</Promotion>
+				<Promotion>PROMOTION_FINE_BOWS_ARCHER</Promotion>
+				<Promotion>PROMOTION_RUSTED</Promotion>
+			</PromotionOverwrites>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Art/Interface/Buttons/Worldbuilder/WoodDusk.dds</Button>
+			<bValidate>1</bValidate>
+			<PrereqBonusANDs>
+				<PrereqBonus>BONUS_DUSKWOOD</PrereqBonus>
+			</PrereqBonusANDs>
+			<DamageTypeResists>
+				<DamageTypeResist>
+					<DamageType>DAMAGE_PHYSICAL</DamageType>
+					<iResist>35</iResist>
+				</DamageTypeResist>
+			</DamageTypeResists>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Carcerum Engravings -->
+			<Type>PROMOTION_CARCERUM_ENGRAVINGS</Type>
+			<Description>TXT_KEY_PROMOTION_CARCEREM_ENGRAVINGS</Description>
+			<Help>TXT_KEY_EQUIPMENT_CLAVA_VINDEX_HELP</Help>
+			<PythonPostCombatWon>postCombatClavaVindex(pCaster, pOpponent)</PythonPostCombatWon>
+			<PythonPostCombatLost>postCombatClavaVindex(pCaster, pOpponent)</PythonPostCombatLost>
+			<UnitCombats>                                                   			
+				<UnitCombat>                                                
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>                  			
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Art/Interface/Buttons/Promotions/CarceremRunes.dds</Button>
+			<iMinLevel>-1</iMinLevel>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Living Metal -->
+			<Type>PROMOTION_LIVING_METAL</Type>
+			<Description>TXT_KEY_PROMOTION_LIVING_METAL</Description>
+			<UnitCombats>                                                   			
+				<UnitCombat>                                                
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>                  			
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<bAlwaysHeal>1</bAlwaysHeal>
+			<iEnemyHealChange>15</iEnemyHealChange>
+			<iNeutralHealChange>15</iNeutralHealChange>
+			<iFriendlyHealChange>15</iFriendlyHealChange>
+			<iCollateralDamageProtection>25</iCollateralDamageProtection>
+			<PromotionExcludes>
+				<Promotion>PROMOTION_RUSTED</Promotion>
+			</PromotionExcludes>
+			<PromotionOverwrites>
+				<Promotion>PROMOTION_RUSTED</Promotion>
+			</PromotionOverwrites>
+			<Button>Art/Interface/Buttons/Promotions/ImbuedLivingIvory.dds</Button>
+			<iMinLevel>-1</iMinLevel>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Golden Glyphs -->
+			<Type>PROMOTION_GOLDEN_GLYPHS</Type>
+			<Description>TXT_KEY_PROMOTION_GOLDEN_GLYPHS</Description>
+			<iChanceMiscast>-25</iChanceMiscast>
+			<iMagicalPower>100</iMagicalPower>
+			<PromotionSummonPerk>PROMOTION_LICH_DURATION</PromotionSummonPerk>
+			<UnitCombats>                                                   			
+				<UnitCombat>                                                
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>                  			
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Art/Interface/Buttons/Promotions/SeraphimBinding.dds</Button>
 			<iMinLevel>-1</iMinLevel>
 		</PromotionInfo>
 	</PromotionInfos>

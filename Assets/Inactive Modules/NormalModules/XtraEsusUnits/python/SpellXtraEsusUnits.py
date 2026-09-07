@@ -159,6 +159,9 @@ def spellProprietorCultureBomb(caster):
 	iCrime = (int)(pCity.getCrime() / 2)
 
 	pCity.changeCulture(pCity.getOwner(), iCrime, True)
+
+	pCity.changeCrime(-iCrime)
+
 	szBuffer = CyTranslator().getText("TXT_KEY_MESSAGE_PROPRIETOR_FORGERY", (iCrime, ))
 	CyInterface().addMessage(caster.getOwner(),True,25,szBuffer,'',1,'Modules/NormalModules/XtraEsusUnits/Art/Interface/Buttons/Spells/proprietor1.dds',ColorTypes(8),pCity.getX(),pCity.getY(),True,True)
 
@@ -169,6 +172,7 @@ def spellDeathMerchantTradeMission(caster):
 	iCrime = (int)(pCity.getCrime() / 2)
 
 	pPlayer.changeGold(iCrime)
+	pCity.changeCrime(-iCrime)
 	szBuffer = CyTranslator().getText("TXT_KEY_MESSAGE_DEATH_MERCHANT_TRADE", (iCrime, ))
 	CyInterface().addMessage(caster.getOwner(),True,25,szBuffer,'',1,'Modules/NormalModules/XtraEsusUnits/Art/Interface/Buttons/Spells/deathmerchant3.dds',ColorTypes(8),pCity.getX(),pCity.getY(),True,True)
 
@@ -183,8 +187,8 @@ def crimeLordStrength(caster):
 	if not pCity.getOwner() == caster.getOwner():
 		iCrime = 0
 
-	if iCrime > 5:
-		iCrime = 5
+	if iCrime > 3:
+		iCrime = 3
 
 	iDif = iCrime - iStrength
 	caster.changeStrBoost(iDif)
@@ -199,14 +203,28 @@ def crimeLordStrengthRemove(caster):
 	if iCrime < 0:
 		iCrime = 0
 
-	if iCrime > 5:
-		iCrime = 5
+	if iCrime > 3:
+		iCrime = 3
 
 	iDif = iCrime - iStrength
 	caster.changeStrBoost(iDif)
 
 	if iCrime > 0:
 		caster.changeStrBoost(-iCrime)
+
+def crimeLordStrengthUpgraded(caster):
+	pCity = caster.plot().getWorkingCity()
+	iCrime = (int)(pCity.getCrime() / 200)
+	iStrength = caster.getStrBoost()
+
+	if iCrime < 0:
+		iCrime = 0
+
+	if iCrime > 3:
+		iCrime = 3
+
+	iDif = iCrime - iStrength
+	caster.changeStrBoost(iDif)
 
 def reqUpgradeAphoticThrone(caster):
 	pPlayer = gc.getPlayer(caster.getOwner())

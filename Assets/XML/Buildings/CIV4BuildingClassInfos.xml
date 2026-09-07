@@ -270,6 +270,30 @@
 			<DefaultBuilding>BUILDING_SHRINE_OF_THE_CHAMPION</DefaultBuilding>
 			<VictoryThresholds/>
 		</BuildingClassInfo>
+		<BuildingClassInfo><!-- Sawmill -->
+			<Type>BUILDINGCLASS_SAWMILL</Type>
+			<Description>TXT_KEY_BUILDING_SAWMILL</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<DefaultBuilding>BUILDING_SAWMILL</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo><!-- Foreman's Office -->
+			<Type>BUILDINGCLASS_FOREMANS_OFFICE</Type>
+			<Description>TXT_KEY_BUILDING_FOREMANS_OFFICE</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<DefaultBuilding>BUILDING_FOREMANS_OFFICE</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
 		<BuildingClassInfo><!-- Shipyard -->
 			<Type>BUILDINGCLASS_SHIPYARD</Type>
 			<Description>TXT_KEY_BUILDING_SHIPYARD</Description>

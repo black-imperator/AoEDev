@@ -334,7 +334,7 @@
 			<iDefensiveStrikeDamage>15</iDefensiveStrikeDamage>
 			<iExtraGoldSupport>2</iExtraGoldSupport>
 			<iTier>3</iTier>
-			<iWeaponTierMax>2</iWeaponTierMax>
+			<iWeaponTierMax>3</iWeaponTierMax>
 		</UnitInfo>
 		<UnitInfo>		<!-- Huscarl -->
 			<Class>UNITCLASS_AXEMAN</Class>
@@ -577,6 +577,7 @@
 			<DenyPromotions>
 				<Promotion>PROMOTION_MOBILITY1</Promotion>
 			</DenyPromotions>
+			<iWeaponTierMax>2</iWeaponTierMax>
 		</UnitInfo>
 		<UnitInfo>		<!-- Hurler -->
 			<Class>UNITCLASS_ARCHER</Class>
@@ -654,7 +655,7 @@
 			<iDefensiveStrikeDamage>10</iDefensiveStrikeDamage>
 			<iExtraGoldSupport>1</iExtraGoldSupport>
 			<iTier>2</iTier>
-			<iWeaponTierMax>1</iWeaponTierMax>
+			<iWeaponTierMax>2</iWeaponTierMax>
 		</UnitInfo>
 		<UnitInfo>		<!-- Fyrd -->
 			<Class>UNITCLASS_WARRIOR</Class>

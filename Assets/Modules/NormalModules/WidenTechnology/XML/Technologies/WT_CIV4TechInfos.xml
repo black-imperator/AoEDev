@@ -57,6 +57,10 @@
 			<Type>TECH_MILITARY_STRATEGY</Type>
 			<iCost>750</iCost>
 		</TechInfo>
+		<TechInfo>		<!-- Wood Working -->
+			<Type>TECH_WOOD_WORKING</Type>
+			<iCost>750</iCost>
+		</TechInfo>
 		<TechInfo> <!-- Rel: Earthmother -->
 			<Type>TECH_WAY_OF_THE_EARTHMOTHER</Type>
 			<iCost>550</iCost>

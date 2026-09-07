@@ -1359,4 +1359,20 @@
 		<Italian>I am greater than any magician, my pen more powerful than any wand. For inside it lies the laughter of every child, the tears of every man, the hearts of every woman, and the hopes and fears of every being.-Aldorien Silvermoon, Elven Bard.</Italian>
 		<Spanish>I am greater than any magician, my pen more powerful than any wand. For inside it lies the laughter of every child, the tears of every man, the hearts of every woman, and the hopes and fears of every being.-Aldorien Silvermoon, Elven Bard.</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_WOOD_WORKING</Tag>
+		<English>Wood Working</English>
+		<French>Wood Working</French>
+		<German>Wood Working</German>
+		<Italian>Wood Working</Italian>
+		<Spanish>Wood Working</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_WOOD_WORKING_QUOTE</Tag>
+		<English>Simple, Abundant, Strong, Perfect.</English>
+		<French>Simple, Abundant, Strong, Perfect.</French>
+		<German>Simple, Abundant, Strong, Perfect.</German>
+		<Italian>Simple, Abundant, Strong, Perfect.</Italian>
+		<Spanish>Simple, Abundant, Strong, Perfect.</Spanish>
+	</TEXT>
 </Civ4GameText>
