@@ -955,6 +955,7 @@ public:
 /**	GWSLocalSpecialist																	Milaga	**/
 /** Buildings can change give bonuses to specialists in only one city							**/
 /*************************************************************************************************/
+	void initLocalSpecialistExtras();
 	int getLocalSpecialistClassYield(SpecialistClassTypes eSpecialist, YieldTypes eYield) const;
 	int getLocalSpecialistYield(YieldTypes eYield) const;
 	void setLocalSpecialistClassYield(SpecialistClassTypes eSpecialist, YieldTypes eYield, int iValue);

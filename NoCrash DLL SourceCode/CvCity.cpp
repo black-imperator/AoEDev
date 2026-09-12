@@ -299,6 +299,11 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 	// Init saved data
 	reset(iID, eOwner, pPlot->getX_INLINE(), pPlot->getY_INLINE());
 
+	// Must follow reset(), which zeroes the local specialist accumulators, and precede
+	// anything that reads them.  reset() cannot do it itself: it also runs from the
+	// constructor and from uninit(), with no valid owner to read the totals from.
+	initLocalSpecialistExtras();
+
 	//--------------------------------
 	// Init non-saved data
 	setupGraphical();
@@ -1203,24 +1208,20 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 		m_paaiLocalSpecialistYield = new int*[GC.getNumSpecialistClassInfos()];
 		for (int iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 		{
-		//	SpecialistTypes eSpecialist = getSpecialistTypeFromClass((SpecialistClassTypes)iI);
 			m_paaiLocalSpecialistYield[iI] = new int[NUM_YIELD_TYPES];
 			for (int iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
 			{
 				m_paaiLocalSpecialistYield[iI][iJ] = 0;
-			//	m_paaiLocalSpecialistYield[iI][iJ] = (eSpecialist == NO_SPECIALIST) ? 0 : GET_PLAYER(getOwner()).getSpecialistTypeExtraYield(eSpecialist, (YieldTypes)iJ);
 			}
 		}
 		FAssertMsg(m_paaiLocalSpecialistCommerce==NULL, "About to leak memory, CvCity::m_paaiLocalSpecialistCommerce is NULL");
 		m_paaiLocalSpecialistCommerce = new int*[GC.getNumSpecialistClassInfos()];
 		for (int iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 		{
-		//	SpecialistTypes eSpecialist = getSpecialistTypeFromClass((SpecialistClassTypes)iI);
 			m_paaiLocalSpecialistCommerce[iI] = new int[NUM_COMMERCE_TYPES];
 			for (int iJ = 0; iJ < NUM_COMMERCE_TYPES; iJ++)
 			{
 				m_paaiLocalSpecialistCommerce[iI][iJ] = 0;
-				//m_paaiLocalSpecialistCommerce[iI][iJ] = (eSpecialist == NO_SPECIALIST) ? 0 : GET_PLAYER(getOwner()).getSpecialistTypeExtraCommerce(eSpecialist, (CommerceTypes)iJ);
 			}
 		}
 		m_paiLocalSpecialistHappiness = new int[GC.getNumSpecialistClassInfos()];
@@ -1229,13 +1230,9 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 		m_paiLocalSpecialistGPP = new int[GC.getNumSpecialistClassInfos()];
 		for (int iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 		{
-		//	SpecialistTypes eSpecialist = getSpecialistTypeFromClass((SpecialistClassTypes)iI);
 			m_paiLocalSpecialistHappiness[iI] = 0;
-			//m_paiLocalSpecialistHappiness[iI] = (eSpecialist == NO_SPECIALIST) ? 0 : GET_PLAYER(getOwner()).getSpecialistTypeExtraHappiness(eSpecialist);
 			m_paiLocalSpecialistHealth[iI] = 0;
-			//m_paiLocalSpecialistHealth[iI] = (eSpecialist == NO_SPECIALIST) ? 0 : GET_PLAYER(getOwner()).getSpecialistTypeExtraHealth(eSpecialist);
 			m_paiLocalSpecialistCrime[iI] = 0;
-			//m_paiLocalSpecialistCrime[iI] = (eSpecialist == NO_SPECIALIST) ? 0 : GET_PLAYER(getOwner()).getSpecialistTypeExtraCrime(eSpecialist);
 			m_paiLocalSpecialistGPP[iI] = 0;
 		}
 /*************************************************************************************************/
@@ -12112,6 +12109,50 @@ void CvCity::changeLocalSpecialistClassGPP(SpecialistClassTypes eSpecialist, int
 	{
 		setLocalSpecialistClassGPP(eSpecialist, getLocalSpecialistClassGPP(eSpecialist) + iChange);
 	}
+}
+
+/*************************************************************************************************/
+/**	Seed a new city from its owner's running specialist totals								**/
+/**																								**/
+/**	CvPlayer::changeSpecialistTypeExtraYield and its Commerce/Happiness/Health/Crime			**/
+/**	siblings keep a player-wide total AND push each delta into the cities that exist at		**/
+/**	that moment.  A city founded or captured later is not in that loop, so it kept the		**/
+/**	zeroes reset() left and permanently missed every bonus already earned -- which is why	**/
+/**	volunteers could pay 3, 2 or 1 commerce in one empire depending only on whether each	**/
+/**	city was founded before or after Education and Trade.  Seed the new city with the		**/
+/**	same totals that loop would have left it holding.										**/
+/*************************************************************************************************/
+void CvCity::initLocalSpecialistExtras()
+{
+	const CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
+
+	for (int iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
+	{
+		SpecialistClassTypes eSpecialistClass = (SpecialistClassTypes)iI;
+		SpecialistTypes eSpecialist = getSpecialistTypeFromClass(eSpecialistClass);
+
+		// A class this city's civilization does not staff has no total to inherit.
+		if (eSpecialist == NO_SPECIALIST)
+		{
+			continue;
+		}
+
+		for (int iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
+		{
+			changeLocalSpecialistClassYield(eSpecialistClass, (YieldTypes)iJ, kOwner.getSpecialistTypeExtraYield(eSpecialist, (YieldTypes)iJ));
+		}
+		for (int iJ = 0; iJ < NUM_COMMERCE_TYPES; iJ++)
+		{
+			changeLocalSpecialistClassCommerce(eSpecialistClass, (CommerceTypes)iJ, kOwner.getSpecialistTypeExtraCommerce(eSpecialist, (CommerceTypes)iJ));
+		}
+		changeLocalSpecialistClassHappiness(eSpecialistClass, kOwner.getSpecialistTypeExtraHappiness(eSpecialist));
+		changeLocalSpecialistClassHealth(eSpecialistClass, kOwner.getSpecialistTypeExtraHealth(eSpecialist));
+		changeLocalSpecialistClassCrime(eSpecialistClass, kOwner.getSpecialistTypeExtraCrime(eSpecialist));
+	}
+
+	// The same two refreshes the pushing loops run on every city they change.
+	updateExtraSpecialistYield();
+	updateCommerce();
 }
 
 /*************************************************************************************************/
