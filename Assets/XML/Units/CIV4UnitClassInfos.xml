@@ -4127,7 +4127,7 @@
 		</UnitClassInfo> -->
 		<!-- <UnitClassInfo> -->		<!-- Combat Overseer -->
 			<!-- <Type>UNITCLASS_COMBAT_OVERSEER</Type>
-			<Description>TXT_KEY_UNIT_COMBAT_OVERSEER</Description>
+			<Description>TXT_KEY_UNIT_COM_OVERSEER</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
@@ -4505,7 +4505,7 @@
 		</UnitClassInfo>
 		<UnitClassInfo>		<!-- Thief -->
 			<Type>UNITCLASS_THIEF</Type>
-			<Description>TXT_KEY_UNIT_THIER</Description>
+			<Description>TXT_KEY_UNIT_THIEF</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>

@@ -8,7 +8,7 @@
 	<BuildingClassInfos>
 		<BuildingClassInfo> <!-- Gnome Huts -->
 			<Type>BUILDINGCLASS_DRACKA_GNOME_HUTS</Type>
-			<Description>TXT_KEY_BUILDING_DRACKA_GNOME_HUTS</Description>
+			<Description>TXT_KEY_BUILDING_DRACKA_GNOME_HUTS_NAME</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>

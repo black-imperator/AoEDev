@@ -1395,7 +1395,7 @@
 		</BuildingClassInfo>
 		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_THE_TROVE_OF_SHELLS</Type>
-			<Description>TXT_KEY_BUILDING_THE_TROVE_OF_SHELLS</Description>
+			<Description>TXT_KEY_BUILDING_TROVE_OF_SHELLS</Description>
 			<iMaxGlobalInstances>1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
@@ -1407,7 +1407,7 @@
 		</BuildingClassInfo>
 		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_THE_CHALICE_OF_SACRIFICE</Type>
-			<Description>TXT_KEY_BUILDING_THE_CHALICE_OF_SACRIFICE</Description>
+			<Description>TXT_KEY_BUILDING_CHALICE_OF_SACRIFICE</Description>
 			<iMaxGlobalInstances>1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
@@ -1419,7 +1419,7 @@
 		</BuildingClassInfo>
 		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_THE_MISERY_STONE</Type>
-			<Description>TXT_KEY_BUILDING_THE_MISERY_STONE</Description>
+			<Description>TXT_KEY_BUILDING_MISERY_STONE</Description>
 			<iMaxGlobalInstances>1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
@@ -2449,7 +2449,7 @@
 		</BuildingClassInfo>
 		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_SEWERS</Type>
-			<Description>TXT_KEY_BUILDING_SEWERS</Description>
+			<Description>TXT_KEY_BUILDING_SEWER</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
