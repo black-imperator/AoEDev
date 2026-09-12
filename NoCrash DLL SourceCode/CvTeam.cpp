@@ -7530,17 +7530,31 @@ void CvTeam::read(FDataStreamBase* pStream)
 	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_VICTORY, m_abCanLaunch);
 
 	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_ROUTE, m_paiRouteChange);
-	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PROJECT, m_paiProjectCount);
+	// The art-type block below is written in the save's project order and framed by
+	// the save's own per-project counts, so those counts have to survive the remap
+	// long enough to walk it: a project this build dropped still has its art types
+	// in the stream and they still have to be consumed.
+	const int iSavedProjects = CvSaveManifest::savedCount(CvSaveManifest::CONTENT_PROJECT);
+	std::vector<int> aiSavedProjectCount((iSavedProjects > 0) ? iSavedProjects : 1, 0);
+
+	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PROJECT, m_paiProjectCount, &aiSavedProjectCount[0]);
 	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_PROJECT, m_paiProjectDefaultArtTypes);
 
 	//project art types
-	for(int i=0;i<GC.getNumProjectInfos();i++)
 	{
-		int temp;
-		for(int j=0;j<m_paiProjectCount[i];j++)
+		const int* piProjectRemap = CvSaveManifest::remapTable(CvSaveManifest::CONTENT_PROJECT);
+		for(int i=0;i<iSavedProjects;i++)
 		{
-			pStream->Read(&temp);
-			m_pavProjectArtTypes[i].push_back(temp);
+			const int iTo = (piProjectRemap != NULL) ? piProjectRemap[i] : i;
+			int temp;
+			for(int j=0;j<aiSavedProjectCount[i];j++)
+			{
+				pStream->Read(&temp);
+				if (iTo >= 0 && iTo < GC.getNumProjectInfos())
+				{
+					m_pavProjectArtTypes[iTo].push_back(temp);
+				}
+			}
 		}
 	}
 
@@ -7556,10 +7570,7 @@ void CvTeam::read(FDataStreamBase* pStream)
 	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_TECH, m_pabHasTech);
 	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_TECH, m_pabNoTradeTech);
 
-	for (int i = 0; i < GC.getNumImprovementInfos(); ++i)
-	{
-		pStream->Read(NUM_YIELD_TYPES, m_ppaaiImprovementYieldChange[i]);
-	}
+	CvSaveManifest::readRows(pStream, CvSaveManifest::CONTENT_IMPROVEMENT, m_ppaaiImprovementYieldChange, NUM_YIELD_TYPES);
 
 	int iSize;
 	m_aeRevealedBonuses.clear();
@@ -7580,10 +7591,7 @@ void CvTeam::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iHideUnits);
 	pStream->Read(&m_iSeeInvisible);
 
-	for (int i=0;i<GC.getNumProjectInfos();i++)
-	{
-		pStream->Read(GC.getMaxNumProjectsAllowed(), m_ppaaiProjectTimers[i]);
-	}
+	CvSaveManifest::readRows(pStream, CvSaveManifest::CONTENT_PROJECT, m_ppaaiProjectTimers, GC.getMaxNumProjectsAllowed());
 
 	pStream->Read(&m_bColony);
 /*************************************************************************************************/

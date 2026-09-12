@@ -46,8 +46,9 @@
 //   2     NoBonus bans stored per vote source
 //   3     a content manifest follows the flag
 //   4     CvGame's own fields are a tagged record
+//   5     CvCity's science floats and CityBonuses::fScience are present
 //
-const unsigned int SAVE_FORMAT_VERSION = 4;
+const unsigned int SAVE_FORMAT_VERSION = 5;
 
 // First version that carries a manifest. Saves below this are read exactly as before.
 // Deliberately NOT raised with SAVE_FORMAT_VERSION: a version 3 save has a manifest
@@ -56,6 +57,17 @@ const unsigned int SAVE_FORMAT_VERSION_MANIFEST = 3;
 
 // First version whose CvGame fields are tagged.
 const unsigned int SAVE_FORMAT_VERSION_TAGGED = 4;
+
+// First version carrying CvCity::m_fProximityScience, CvCity::m_fPerPopScience and
+// CityBonuses::fScience.
+//
+// Those three were added to POSITIONAL runs with no gate and no flag bump, so every
+// save written before them is 8 bytes short per city and 4 short per CityBonuses
+// record. The reader consumed them anyway and walked off the end of the first city,
+// which surfaces much later as a null-array write in a freelist load. Reads of these
+// fields are gated on this; writes are unconditional, because a write is always at
+// SAVE_FORMAT_VERSION.
+const unsigned int SAVE_FORMAT_VERSION_SCIENCE = 5;
 
 namespace CvSaveManifest
 {
@@ -206,7 +218,13 @@ namespace CvSaveManifest
 
 	// Call at the top of CvGame::read, UNCONDITIONALLY -- including for saves with no
 	// manifest -- so remap state cannot leak from an earlier load in the same session.
-	void beginRead();
+	// uiSaveVersion is CvGame's own flag, which IS the save format version.
+	void beginRead(unsigned int uiSaveVersion);
+
+	// The format version of the save being read, for gating a field that has not always
+	// existed. Zero outside a load, which reads as "older than everything" and so takes
+	// the conservative branch.
+	unsigned int saveVersion();
 
 	// Logged after the engine's LAST call into the DLL for a load, so the log always
 	// says whether our half of the load finished.
@@ -249,8 +267,12 @@ namespace CvSaveManifest
 	int currentCount(ContentType eType);       // width this build uses
 	const int* remapTable(ContentType eType);  // old->new index, NULL when identity
 
+	// pSavedOrder, when given, also receives the values in the SAVE's own ordering and
+	// at the save's width. Only needed where a LATER part of the stream is framed by
+	// these values AND is itself written in the save's order, so the remapped copy is
+	// not enough to walk it. CvTeam's project art types are the only such case.
 	template <class T>
-	void readArray(FDataStreamBase* pStream, ContentType eType, T* pDest)
+	void readArray(FDataStreamBase* pStream, ContentType eType, T* pDest, T* pSavedOrder = NULL)
 	{
 		const int iOld = savedCount(eType);
 		const int iNew = currentCount(eType);
@@ -281,6 +303,14 @@ namespace CvSaveManifest
 			// every save without a manifest takes, and every save whose content
 			// matches, so the common case carries no cost and no new risk.
 			pStream->Read(iNew, pDest);
+
+			if (pSavedOrder != NULL)
+			{
+				for (int i = 0; i < iNew; i++)
+				{
+					pSavedOrder[i] = pDest[i];
+				}
+			}
 			return;
 		}
 
@@ -301,9 +331,166 @@ namespace CvSaveManifest
 				{
 					pDest[iTo] = pTemp[i];
 				}
+				if (pSavedOrder != NULL)
+				{
+					pSavedOrder[i] = pTemp[i];
+				}
 			}
 
 			delete [] pTemp;
+		}
+	}
+
+	// -----------------------------------------------------------------------------
+	// Two-dimensional content arrays.
+	//
+	// readArray covers the one-dimensional form. The other shape the serialization
+	// uses is a loop over a content count with a row read inside it:
+	//
+	//     for (int i = 0; i < GC.getNumFeatureInfos(); i++)
+	//         pStream->Read(NUM_YIELD_TYPES, m_ppaaiFeatureYieldChange[i]);
+	//
+	// The bound is this build's count, so it is the same mismatch readArray exists to
+	// fix -- but applied once per row, so it is off by the row width TIMES the
+	// difference, and it carries the whole rest of the save with it. Five features
+	// added to a mod costs 60 bytes here, and the wreckage surfaces in the freelists
+	// a few lines later as a zero slot count meeting a live entry count in a null
+	// array, which reads as a crash in code that is not at fault.
+	//
+	// These read the save's row count and place each row where its content lives now.
+	// A row whose content this build no longer has is still read -- it is in the
+	// stream either way -- and discarded.
+	// -----------------------------------------------------------------------------
+
+	// Rows of iRowLen values each, one row per entry of eRowType. The row width is a
+	// fixed engine constant (NUM_YIELD_TYPES, NUM_COMMERCE_TYPES, the project cap),
+	// not content, so it cannot move between builds.
+	template <class T>
+	void readRows(FDataStreamBase* pStream, ContentType eRowType, T** ppDest, int iRowLen)
+	{
+		const int iOld = savedCount(eRowType);
+		const int iNew = currentCount(eRowType);
+		const int* piRemap = remapTable(eRowType);
+
+		if (iRowLen <= 0)
+		{
+			return;
+		}
+
+		// Same plausibility bound, and the same reasoning, as readArray.
+		const int iMaxPlausibleCount = 1000000;
+		if (iOld > iMaxPlausibleCount)
+		{
+			for (int i = 0; i < iNew; i++)
+			{
+				for (int j = 0; j < iRowLen; j++)
+				{
+					ppDest[i][j] = T();
+				}
+			}
+			return;
+		}
+
+		if (piRemap == NULL && iOld == iNew)
+		{
+			// Nothing moved: exactly the loop this replaced.
+			for (int i = 0; i < iNew; i++)
+			{
+				pStream->Read(iRowLen, ppDest[i]);
+			}
+			return;
+		}
+
+		for (int i = 0; i < iNew; i++)
+		{
+			for (int j = 0; j < iRowLen; j++)
+			{
+				ppDest[i][j] = T();
+			}
+		}
+
+		T* pDiscard = new T[iRowLen];
+
+		for (int i = 0; i < iOld; i++)
+		{
+			const int iTo = (piRemap != NULL) ? piRemap[i] : i;
+			pStream->Read(iRowLen, (iTo >= 0 && iTo < iNew) ? ppDest[iTo] : pDiscard);
+		}
+
+		delete [] pDiscard;
+	}
+
+	// Rows that are themselves content arrays, so both axes move.
+	template <class T>
+	void readRows(FDataStreamBase* pStream, ContentType eRowType, ContentType eColType, T** ppDest)
+	{
+		const int iOld = savedCount(eRowType);
+		const int iNew = currentCount(eRowType);
+		const int* piRemap = remapTable(eRowType);
+		const int iCols = currentCount(eColType);
+
+		for (int i = 0; i < iNew; i++)
+		{
+			for (int j = 0; j < iCols; j++)
+			{
+				ppDest[i][j] = T();
+			}
+		}
+
+		const int iMaxPlausibleCount = 1000000;
+		if (iOld > iMaxPlausibleCount)
+		{
+			return;
+		}
+
+		// readArray always writes currentCount(eColType) entries, so the row handed
+		// to it for dropped content has to be that wide.
+		T* pDiscard = new T[(iCols > 0) ? iCols : 1];
+
+		for (int i = 0; i < iOld; i++)
+		{
+			const int iTo = (piRemap != NULL) ? piRemap[i] : i;
+			readArray(pStream, eColType, (iTo >= 0 && iTo < iNew) ? ppDest[iTo] : pDiscard);
+		}
+
+		delete [] pDiscard;
+	}
+
+	// One stored content id per entry of eRowType -- CvPlayer's civics, a CivicTypes
+	// indexed by CivicOptionTypes. Both axes move: the row is placed by eRowType and
+	// the value is remapped by eValueType.
+	//
+	// Absent rows are left at NO_X, not at zero. Zero is a real content index, and a
+	// player silently running the first civic of an option they never had is worse
+	// than one running none.
+	template <class T>
+	void readIdArray(FDataStreamBase* pStream, ContentType eRowType, ContentType eValueType, T* pDest)
+	{
+		const int iOld = savedCount(eRowType);
+		const int iNew = currentCount(eRowType);
+		const int* piRemap = remapTable(eRowType);
+
+		for (int i = 0; i < iNew; i++)
+		{
+			pDest[i] = (T)-1;
+		}
+
+		const int iMaxPlausibleCount = 1000000;
+		if (iOld > iMaxPlausibleCount)
+		{
+			return;
+		}
+
+		for (int i = 0; i < iOld; i++)
+		{
+			int iValue = 0;
+			pStream->Read(&iValue);
+
+			const int iTo = (piRemap != NULL) ? piRemap[i] : i;
+			if (iTo >= 0 && iTo < iNew)
+			{
+				pDest[iTo] = (T)remapId(eValueType, iValue);
+			}
 		}
 	}
 }
