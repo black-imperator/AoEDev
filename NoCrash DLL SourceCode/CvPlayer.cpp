@@ -30696,13 +30696,16 @@ int CvPlayer::doMultipleResearch(int iOverflow)
 	while (eCurrentTech != NO_TECH)
 	{
 		// A tech the team already holds cannot be granted again: setHasTech returns
-		// without popping the research queue, so getCurrentResearch keeps handing back
-		// the same tech and the loop never ends. A save whose tech state and research
-		// queue disagree lands here. Bailing out leaves the queue for doResearch to sort
-		// out on the next call instead of hanging the turn.
+		// without popping the research queue, so getCurrentResearch would keep handing
+		// back the same tech and the loop would never end. A save whose tech state and
+		// research queue disagree lands here. Drop the stale entry and carry on with the
+		// rest of the queue -- leaving it in place would jam research permanently, since
+		// every later turn would pour beakers into a tech that can never complete.
 		if (GET_TEAM(getTeam()).isHasTech(eCurrentTech))
 		{
-			break;
+			popResearch(eCurrentTech);
+			eCurrentTech = getCurrentResearch();
+			continue;
 		}
 
 		int iResearchLeft = (100 * (GET_TEAM(getTeam()).getResearchCost(eCurrentTech) - GET_TEAM(getTeam()).getResearchProgress(eCurrentTech))) / std::max(1, calculateResearchModifier(eCurrentTech));
