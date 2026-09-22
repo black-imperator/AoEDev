@@ -33597,7 +33597,12 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
-			<iInvisibleLevel>1</iInvisibleLevel>
+			<DamageTypeCombats>
+				<DamageTypeCombat>
+					<DamageType>DAMAGE_POISON</DamageType>
+					<iCombat>1</iCombat>
+				</DamageTypeCombat>
+			</DamageTypeCombats>
 			<PromotionExcludes>
 				<Promotion>PROMOTION_WILD_DOVIELLO</Promotion>
 			</PromotionExcludes>
