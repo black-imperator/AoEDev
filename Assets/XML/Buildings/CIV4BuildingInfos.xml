@@ -4383,6 +4383,10 @@
 					<BonusType>BONUS_FUR</BonusType>
 					<iHappinessChange>1</iHappinessChange>
 				</BonusHappinessChange>
+				<BonusHappinessChange>
+					<BonusType>BONUS_PENGUINS</BonusType>
+					<iHappinessChange>1</iHappinessChange>
+				</BonusHappinessChange>
 			</BonusHappinessChanges>
 			<Flavors>
 				<Flavor>
@@ -11935,6 +11939,10 @@
 			<BonusHappinessChanges>
 				<BonusHappinessChange>
 					<BonusType>BONUS_FUR</BonusType>
+					<iHappinessChange>1</iHappinessChange>
+				</BonusHappinessChange>
+				<BonusHappinessChange>
+					<BonusType>BONUS_PENGUINS</BonusType>
 					<iHappinessChange>1</iHappinessChange>
 				</BonusHappinessChange>
 			</BonusHappinessChanges>

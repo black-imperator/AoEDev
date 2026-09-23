@@ -1221,6 +1221,14 @@
 					</YieldModifiers>
 				</BonusYieldModifier>
 				<BonusYieldModifier>
+					<BonusType>BONUS_PENGUINS</BonusType>
+					<YieldModifiers>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>2</iYield>
+					</YieldModifiers>
+				</BonusYieldModifier>
+				<BonusYieldModifier>
 					<BonusType>BONUS_GEMS</BonusType>
 					<YieldModifiers>
 						<iYield>0</iYield>

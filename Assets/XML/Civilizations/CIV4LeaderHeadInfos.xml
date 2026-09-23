@@ -30752,7 +30752,7 @@
 				</ReligionWeightModifier>
 				<ReligionWeightModifier>
 					<ReligionType>RELIGION_THE_ASHEN_VEIL</ReligionType>
-					<iWeightModifier>-40</iWeightModifier>
+					<iWeightModifier>-90</iWeightModifier>
 				</ReligionWeightModifier>
 				<ReligionWeightModifier>
 					<ReligionType>RELIGION_THE_EMPYREAN</ReligionType>
@@ -30760,7 +30760,7 @@
 				</ReligionWeightModifier>
 				<ReligionWeightModifier>
 					<ReligionType>RELIGION_WHITE_HAND</ReligionType>
-					<iWeightModifier>-80</iWeightModifier>
+					<iWeightModifier>-90</iWeightModifier>
 				</ReligionWeightModifier>
 			</ReligionWeightModifiers>
 		</LeaderHeadInfo>
@@ -53253,7 +53253,7 @@
 				</ReligionWeightModifier>
 				<ReligionWeightModifier>
 					<ReligionType>RELIGION_THE_ASHEN_VEIL</ReligionType>
-					<iWeightModifier>-40</iWeightModifier>
+					<iWeightModifier>-90</iWeightModifier>
 				</ReligionWeightModifier>
 				<ReligionWeightModifier>
 					<ReligionType>RELIGION_THE_EMPYREAN</ReligionType>
@@ -53261,7 +53261,7 @@
 				</ReligionWeightModifier>
 				<ReligionWeightModifier>
 					<ReligionType>RELIGION_WHITE_HAND</ReligionType>
-					<iWeightModifier>-80</iWeightModifier>
+					<iWeightModifier>-90</iWeightModifier>
 				</ReligionWeightModifier>
 			</ReligionWeightModifiers>
 		</LeaderHeadInfo>

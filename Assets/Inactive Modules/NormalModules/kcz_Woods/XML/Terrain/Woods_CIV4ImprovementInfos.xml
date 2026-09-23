@@ -595,6 +595,18 @@
 					</YieldChanges>
 				</BonusTypeStruct>
 				<BonusTypeStruct>
+					<BonusType>BONUS_PENGUINS</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>2</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+				<BonusTypeStruct>
 					<BonusType>BONUS_IVORY</BonusType>
 					<bBonusMakesValid>1</bBonusMakesValid>
 					<bBonusTrade>1</bBonusTrade>
@@ -1157,6 +1169,18 @@
 				</BonusTypeStruct>
 				<BonusTypeStruct>
 					<BonusType>BONUS_FUR</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<iSpreadRand>0</iSpreadRand>
+					<YieldChanges>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>0</iYieldChange>
+						<iYieldChange>2</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+				<BonusTypeStruct>
+					<BonusType>BONUS_PENGUINS</BonusType>
 					<bBonusMakesValid>1</bBonusMakesValid>
 					<bBonusTrade>1</bBonusTrade>
 					<iDiscoverRand>0</iDiscoverRand>

@@ -869,5 +869,14 @@
 			<Button>Art/Interface/Buttons/WorldBuilder/LivingIvory.dds</Button>
 			<FontButtonIndex>137</FontButtonIndex>
 		</BonusArtInfo>
+		<BonusArtInfo>
+			<Type>ART_DEF_BONUS_PENGUINS</Type>
+			<fScale>1.2</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Structures/Improvements/Penguins/pig.nif</NIF>
+			<KFM>Art/Terrain/Resources/Pig/pig.kfm</KFM>
+			<Button>Art/Interface/Buttons/WorldBuilder/ImperatorSelfInsert.dds</Button>
+			<FontButtonIndex>136</FontButtonIndex>
+		</BonusArtInfo>
 	</BonusArtInfos>
 </Civ4ArtDefines>
