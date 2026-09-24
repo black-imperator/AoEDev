@@ -715,6 +715,13 @@ bInGeneric: Unknown. Always 1.
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
+			<SoundID>DIPLO_MOLEMAN</SoundID>
+			<Filename>Sounds/Diplomacy/Molemen_Amber_Banneret_by_Spellseer</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
 			<SoundID>SND_WORLDBREACH</SoundID>
 			<Filename>Sounds/Spells/WorldBreach</Filename>
 			<LoadType>DYNAMIC_RES</LoadType>

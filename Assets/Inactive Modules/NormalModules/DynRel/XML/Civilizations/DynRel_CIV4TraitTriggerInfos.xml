@@ -153,7 +153,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_RUNES</TraitType>
-					<iModifier>10</iModifier>
+					<iModifier>2</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_RELIGION</TraitClassType>						
@@ -166,12 +166,38 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_RUNES</TraitType>
-					<iModifier>10</iModifier>
+					<iModifier>2</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_RELIGION</TraitClassType>						
 			<TraitHookType>TRAITHOOK_GAIN_PLOT_OWNERSHIP</TraitHookType>
 			<bPrereqPeak>1</bPrereqPeak>
+		</TraitTriggerInfo>
+		
+		<TraitTriggerInfo> <!-- Gain promo         Guerilla1               Kilmorph -->
+			<Type>TRAITTRIGGER_GAIN_GUERILLA1_RUNES</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_RUNES</TraitType>
+					<iModifier>15</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_RELIGION</TraitClassType>
+				<TraitHookType>TRAITHOOK_UNIT_GAIN_PROMOTION</TraitHookType>
+			<PrereqPromotionType>PROMOTION_GUERILLA1</PrereqPromotionType>
+		</TraitTriggerInfo>
+		
+		<TraitTriggerInfo> <!-- Gain promo         Guerilla2               Kilmorph -->
+			<Type>TRAITTRIGGER_GAIN_GUERILLA2_RUNES</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_RUNES</TraitType>
+					<iModifier>25</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_RELIGION</TraitClassType>
+				<TraitHookType>TRAITHOOK_UNIT_GAIN_PROMOTION</TraitHookType>
+			<PrereqPromotionType>PROMOTION_GUERILLA2</PrereqPromotionType>
 		</TraitTriggerInfo>
 		
 		<TraitTriggerInfo> <!-- Build               Earth Node                                     Kilmorph -->
@@ -287,7 +313,7 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_FELLOWSHIP</TraitType>
-					<iModifier>10</iModifier>
+					<iModifier>2</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_RELIGION</TraitClassType>						
@@ -301,13 +327,39 @@
 			<CounterChanges>
 				<CounterChange>
 					<TraitType>TRAIT_FELLOWSHIP</TraitType>
-					<iModifier>5</iModifier>
+					<iModifier>2</iModifier>
 				</CounterChange>
 			</CounterChanges>
 			<TraitClassType>TRAITCLASS_RELIGION</TraitClassType>						
 			<TraitHookType>TRAITHOOK_GAIN_PLOT_OWNERSHIP</TraitHookType>
 			
 			<PrereqFeatureType>FEATURE_JUNGLE</PrereqFeatureType>
+		</TraitTriggerInfo>
+		
+		<TraitTriggerInfo> <!-- Gain promo         Woodsman1               Fellowship -->
+			<Type>TRAITTRIGGER_GAIN_WOODSMAN1_RUNES</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_FELLOWSHIP</TraitType>
+					<iModifier>15</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_RELIGION</TraitClassType>
+				<TraitHookType>TRAITHOOK_UNIT_GAIN_PROMOTION</TraitHookType>
+			<PrereqPromotionType>PROMOTION_WOODSMAN1</PrereqPromotionType>
+		</TraitTriggerInfo>
+		
+		<TraitTriggerInfo> <!-- Gain promo         Woodsman2               Fellowship -->
+			<Type>TRAITTRIGGER_GAIN_WOODSMAN2_RUNES</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_FELLOWSHIP</TraitType>
+					<iModifier>25</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_RELIGION</TraitClassType>
+				<TraitHookType>TRAITHOOK_UNIT_GAIN_PROMOTION</TraitHookType>
+			<PrereqPromotionType>PROMOTION_WOODSMAN2</PrereqPromotionType>
 		</TraitTriggerInfo>
 		
 		<TraitTriggerInfo> <!-- Build               Camp                                        Fellowship -->
