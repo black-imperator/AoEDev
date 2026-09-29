@@ -112,6 +112,11 @@ public class MainForm : Form
         // The CheckedChanged handler (which saves the setting) is attached in MainForm_Load,
         // after the saved value has been applied, so loading the config doesn't trigger a save.
 
+        var btnHelp = new FlatButton { Text = "Instructions", Left = 12, Top = 13, Width = 130, Height = Theme.ButtonHeight };
+        Theme.StyleButton(btnHelp);
+        btnHelp.Click += (s, e) => ShowHelp();
+
+        topPanel.Controls.Add(btnHelp);
         topPanel.Controls.Add(btnLaunch);
         topPanel.Controls.Add(btnRefresh);
         topPanel.Controls.Add(chkCloseOnLaunch);
@@ -153,13 +158,13 @@ public class MainForm : Form
         cmbPresets = new ComboBox { Left = 270, Top = 11, Width = 170, DropDownStyle = ComboBoxStyle.DropDownList };
         var btnLoad = new FlatButton { Text = "Load Preset", Left = 448, Top = 8, Width = 110, Height = Theme.ButtonHeight };
         var btnDelete = new FlatButton { Text = "Delete", Left = 566, Top = 8, Width = 80, Height = Theme.ButtonHeight };
-        var btnHelp = new FlatButton { Text = "Instructions", Top = 8, Width = 130, Height = Theme.ButtonHeight };
+        var btnCiv4Config = new FlatButton { Text = "Open Civ4 Config", Top = 8, Width = 150, Height = Theme.ButtonHeight };
         Theme.StyleButton(btnSave);
         Theme.StyleComboBox(cmbPresets);
         Theme.StyleButton(btnLoad);
         Theme.StyleButton(btnDelete);
-        Theme.StyleButton(btnHelp);
-        btnHelp.Click += (s, e) => ShowHelp();
+        Theme.StyleButton(btnCiv4Config);
+        btnCiv4Config.Click += (s, e) => OpenCiv4Config();
 
         // Row 2: import (left) / export (right)
         var btnImport = new FlatButton { Text = "Import Preset", Left = 12, Top = 44, Width = 135, Height = Theme.ButtonHeight };
@@ -184,9 +189,9 @@ public class MainForm : Form
 
         bottomPanel.Controls.AddRange(new Control[]
         {
-            btnSave, cmbPresets, btnLoad, btnDelete, btnHelp, btnImport, btnExport, chkFutureproof, btnDevSchemas
+            btnSave, cmbPresets, btnLoad, btnDelete, btnCiv4Config, btnImport, btnExport, chkFutureproof, btnDevSchemas
         });
-        bottomPanel.Resize += (s, e) => { btnHelp.Left = bottomPanel.Width - btnHelp.Width - 12; };
+        bottomPanel.Resize += (s, e) => { btnCiv4Config.Left = bottomPanel.Width - btnCiv4Config.Width - 12; };
         bottomPanel.Resize += (s, e) => { btnDevSchemas.Left = bottomPanel.Width - btnDevSchemas.Width - 12; };
 
         // Status bar: status text fills the left, launcher version sits at the right.
@@ -528,6 +533,7 @@ public class MainForm : Form
         var msg = @"    GENERAL
 - You can launch the game by the top center button; be aware it may take some time to activate
 - Active modules are shown on the left panel, and inactive modules on the right panel
+- The Open Civ4 Config button opens your Civ4 config .ini file in your default text editor
 
     USING MODULES
 - Changing the status of a module simply makes this launcher move the game files for you; it can be done manually
@@ -753,7 +759,7 @@ public class MainForm : Form
         };
 
         var contextMenu = new ContextMenuStrip();
-        var openFolderItem = new ToolStripMenuItem("Open containing folder?");
+        var openFolderItem = new ToolStripMenuItem("Open containing folder");
         contextMenu.Items.Add(openFolderItem);
 
         // Row index captured by the most recent right-click, so the click handler below
@@ -791,6 +797,37 @@ public class MainForm : Form
             if (grid.Rows[e.RowIndex].Tag is ModuleInfo m)
                 MoveModules(new List<string> { m.FullPath }, toActive: !isActiveList);
         };
+    }
+
+    /// <summary>
+    /// Opens the Civ4 config .ini via the shortcut two levels above the mod folder
+    /// (..\..\_Civ4Config, i.e. next to Civ4BeyondSword.exe). The shell follows the shortcut and
+    /// opens its target with the user's default program for .ini files, so there's no need to
+    /// resolve the .lnk ourselves. Tries "_Civ4Config.lnk" first, then a bare "_Civ4Config" in case
+    /// it's a differently-made link or the file itself.
+    /// </summary>
+    private void OpenCiv4Config()
+    {
+        var basePath = Path.GetFullPath(Path.Combine(_modPath, "..", "..", "_Civ4Config"));
+        var path = new[] { basePath + ".lnk", basePath }.FirstOrDefault(File.Exists);
+
+        if (path == null)
+        {
+            MessageBox.Show(this,
+                $"Couldn't find the Civ4 config shortcut. Expected it at:\n{basePath}.lnk",
+                "Config Not Found", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            return;
+        }
+
+        try
+        {
+            Process.Start(new ProcessStartInfo(path) { UseShellExecute = true });
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show(this, $"Couldn't open the Civ4 config:\n{ex.Message}", "Error",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
     }
 
     private void OpenModuleFolder(string path)
@@ -940,7 +977,7 @@ public class MainForm : Form
     {
         var name = InputForm.Prompt(this, "Save Preset", "Preset name:", "");
         if (string.IsNullOrWhiteSpace(name)) return;
-        name = name.Trim();
+        name = name!.Trim();
 
         var existing = _config.Presets.FirstOrDefault(p => p.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
         if (existing != null)
@@ -1082,7 +1119,7 @@ public class MainForm : Form
         Preset preset;
         try
         {
-            preset = PresetCodec.Decode(text);
+            preset = PresetCodec.Decode(text ?? "");
         }
         catch (Exception ex)
         {
@@ -1093,7 +1130,7 @@ public class MainForm : Form
 
         var name = InputForm.Prompt(this, "Name This Preset", "Save the imported preset as:", preset.Name);
         if (string.IsNullOrWhiteSpace(name)) return;
-        preset.Name = name.Trim();
+        preset.Name = name!.Trim();
 
         var existing = _config.Presets.FirstOrDefault(p => p.Name.Equals(preset.Name, StringComparison.OrdinalIgnoreCase));
         if (existing != null) _config.Presets.Remove(existing);
