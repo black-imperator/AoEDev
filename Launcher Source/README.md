@@ -35,6 +35,12 @@ in the source.
   Manager, even though an identical manually-created shortcut launched
   fine; switching to a direct `CreateProcess`-style launch is a known fix
   for this class of symptom.
+- **Launch button status**: the button shows the detected version from
+  `version.txt` (e.g. `Launch Ashes of Erebus v380`), `v?` if that file is
+  missing or malformed, or `Ashes of Erebus not found!` if
+  `Civ4BeyondSword.exe` can't be located. Refresh re-evaluates it.
+- **Close on launch?** checkbox (under Refresh): saved in the config file; when
+  checked, the launcher exits right after successfully starting the game.
 - **Drag and drop** between an Active list and an Inactive list to enable/
   disable modules. Drag a module folder in from Explorer to install it.
 - **Per-module tooltip and details**: hovering a module shows its
@@ -111,7 +117,7 @@ AoELauncher/
   Program.cs
   MainForm.cs              <- main window: module grids, drag/drop, presets, schemas
   Models/
-    AppConfig.cs             <- the one config/save file's shape (just Presets)
+    AppConfig.cs             <- the one config/save file's shape (Presets + close-on-launch flag)
     ModuleInfo.cs             <- live scan result, incl. parsed info.txt fields
     PlacementResult.cs        <- result of the startup placement check
   Core/

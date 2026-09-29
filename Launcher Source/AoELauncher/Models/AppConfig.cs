@@ -36,7 +36,8 @@ public class Preset
 }
 
 /// <summary>
-/// The single file this app persists to disk: just the saved presets.
+/// The single file this app persists to disk: the saved presets and the
+/// launcher's one user setting (close-on-launch).
 /// There's no override/location data here -- the mod folder is always
 /// wherever this exe is running from, and Civ4BeyondSword.exe is always
 /// found relative to that (see InstallLocator); if placement is wrong the
@@ -45,4 +46,7 @@ public class Preset
 public class AppConfig
 {
     public List<Preset> Presets { get; set; } = new();
+
+    /// <summary>If true, the launcher quits itself right after successfully starting the game.</summary>
+    public bool CloseOnLaunch { get; set; }
 }

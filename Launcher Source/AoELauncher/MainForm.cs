@@ -6,6 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using AoELauncher.Core;
 using AoELauncher.Models;
@@ -21,6 +22,11 @@ public class MainForm : Form
     /// <summary>Resolved fresh from placement validation each run; never persisted or manually overridden.</summary>
     private string? _btsExePath;
 
+    private const string LauncherVersion = "1.0";
+
+    /// <summary>What a version.txt value must look like to be shown on the Launch button (a short single token such as "380").</summary>
+    private static readonly Regex VersionPattern = new(@"^[0-9A-Za-z._-]{1,12}$");
+
     private AppConfig _config = new();
     private List<ModuleInfo> _activeModules = new();
     private List<ModuleInfo> _inactiveModules = new();
@@ -32,6 +38,7 @@ public class MainForm : Form
     private CheckBox chkFutureproof = null!;
     private Label lblStatus = null!;
     private Button btnLaunch = null!;
+    private CheckBox chkCloseOnLaunch = null!;
 
     public MainForm()
     {
@@ -92,12 +99,27 @@ public class MainForm : Form
         Theme.StyleButton(btnRefresh);
         btnRefresh.Click += (s, e) => RefreshModules();
 
+        // Sized from the measured text rather than AutoSize, so its width is already correct
+        // when the Resize handler below right-aligns it (AutoSize only settles after layout).
+        chkCloseOnLaunch = new CheckBox
+        {
+            Text = "Close on launch?",
+            Top = 50,
+            Height = 22,
+        };
+        chkCloseOnLaunch.Width = TextRenderer.MeasureText(chkCloseOnLaunch.Text, chkCloseOnLaunch.Font).Width + 24;
+        Theme.StyleCheckBox(chkCloseOnLaunch);
+        // The CheckedChanged handler (which saves the setting) is attached in MainForm_Load,
+        // after the saved value has been applied, so loading the config doesn't trigger a save.
+
         topPanel.Controls.Add(btnLaunch);
         topPanel.Controls.Add(btnRefresh);
+        topPanel.Controls.Add(chkCloseOnLaunch);
         topPanel.Resize += (s, e) =>
         {
             btnLaunch.Left = (topPanel.Width - btnLaunch.Width) / 2;
             btnRefresh.Left = topPanel.Width - btnRefresh.Width - 12;
+            chkCloseOnLaunch.Left = topPanel.Width - chkCloseOnLaunch.Width - 12;
         };
 
         _splitContainer = new SplitContainer
@@ -108,7 +130,7 @@ public class MainForm : Form
             SplitterWidth = 3,
         };
         Theme.StyleContainer(_splitContainer);
-        _splitContainer.Resize += (s, e) => _splitContainer.SplitterDistance = Math.Max(1, _splitContainer.Width / 2);
+        _splitContainer.Resize += (s, e) => CenterSplitter();
 
         var activeGroup = new GroupBox { Text = "Active Modules (loaded in-game)", Dock = DockStyle.Fill };
         Theme.StyleContainer(activeGroup);
@@ -167,10 +189,13 @@ public class MainForm : Form
         bottomPanel.Resize += (s, e) => { btnHelp.Left = bottomPanel.Width - btnHelp.Width - 12; };
         bottomPanel.Resize += (s, e) => { btnDevSchemas.Left = bottomPanel.Width - btnDevSchemas.Width - 12; };
 
+        // Status bar: status text fills the left, launcher version sits at the right.
+        var statusPanel = new Panel { Dock = DockStyle.Bottom, Height = 26 };
+        Theme.StyleContainer(statusPanel);
+
         lblStatus = new Label
         {
-            Dock = DockStyle.Bottom,
-            Height = 26,
+            Dock = DockStyle.Fill,
             TextAlign = ContentAlignment.MiddleLeft,
             Padding = new Padding(10, 0, 0, 0),
             Text = "",
@@ -178,10 +203,43 @@ public class MainForm : Form
         Theme.StyleLabel(lblStatus, muted: true);
         lblStatus.BackColor = Theme.Panel;
 
+        var lblLauncherVersion = new Label
+        {
+            Dock = DockStyle.Right,
+            AutoSize = true,
+            TextAlign = ContentAlignment.MiddleRight,
+            Padding = new Padding(0, 0, 10, 0),
+            Text = $"Launcher v{LauncherVersion}",
+        };
+        Theme.StyleLabel(lblLauncherVersion, muted: true);
+        lblLauncherVersion.BackColor = Theme.Panel;
+
+        // Fill control goes in first so the Right-docked label claims its space before it.
+        statusPanel.Controls.Add(lblStatus);
+        statusPanel.Controls.Add(lblLauncherVersion);
+
         Controls.Add(_splitContainer);
         Controls.Add(bottomPanel);
-        Controls.Add(lblStatus);
+        Controls.Add(statusPanel);
         Controls.Add(topPanel);
+    }
+
+    /// <summary>
+    /// Keeps the two panes an even 50/50 split. When the window is minimized (or otherwise
+    /// squeezed very small) the container's width can drop below Panel1MinSize + Panel2MinSize +
+    /// SplitterWidth, at which point NO SplitterDistance is valid and assigning one throws. In
+    /// that case there's nothing sensible to do, so leave it alone; the container fires Resize
+    /// again on restore and the split is re-centered then.
+    /// </summary>
+    private void CenterSplitter()
+    {
+        var min = _splitContainer.Panel1MinSize;
+        var max = _splitContainer.Width - _splitContainer.Panel2MinSize - _splitContainer.SplitterWidth;
+        if (max < min) return;
+
+        var target = Math.Max(min, Math.Min(_splitContainer.Width / 2, max));
+        if (_splitContainer.SplitterDistance != target)
+            _splitContainer.SplitterDistance = target;
     }
 
     private static ModuleGridView CreateModuleGrid()
@@ -237,6 +295,13 @@ public class MainForm : Form
     private void MainForm_Load(object? sender, EventArgs e)
     {
         _config = ConfigManager.Load();
+
+        chkCloseOnLaunch.Checked = _config.CloseOnLaunch;
+        chkCloseOnLaunch.CheckedChanged += (s, args) =>
+        {
+            _config.CloseOnLaunch = chkCloseOnLaunch.Checked;
+            SaveConfig();
+        };
 
         var placement = InstallLocator.ValidatePlacement(_modPath);
         if (!placement.IsValid)
@@ -328,6 +393,23 @@ public class MainForm : Form
         return "unknown";
     }
 
+    /// <summary>
+    /// Sets the Launch button text: "not found" when the game executable can't be located,
+    /// otherwise the version from version.txt, or "v?" if that file is missing or malformed.
+    /// </summary>
+    private void UpdateLaunchButtonText()
+    {
+        if (_btsExePath == null || !File.Exists(_btsExePath))
+        {
+            btnLaunch.Text = "Ashes of Erebus not found!";
+            return;
+        }
+
+        var version = ReadModVersion();
+        var valid = version != "unknown" && VersionPattern.IsMatch(version);
+        btnLaunch.Text = $"Launch Ashes of Erebus v{(valid ? version : "?")}";
+    }
+
     // ------------------------------------------------------------- Launch ---
 
     private void LaunchGame()
@@ -346,6 +428,9 @@ public class MainForm : Form
             var modFolderName = Path.GetFileName(_modPath);
             GameLauncher.Launch(_btsExePath, modFolderName);
             lblStatus.Text = "Launching Civilization IV...";
+
+            if (_config.CloseOnLaunch)
+                Close();
         }
         catch (Exception ex)
         {
@@ -360,6 +445,7 @@ public class MainForm : Form
     {
         Cursor = Cursors.WaitCursor;
         lblStatus.Text = "Scanning modules...";
+        UpdateLaunchButtonText();
 
         var activeScroll = SafeScrollIndex(dgvActive);
         var inactiveScroll = SafeScrollIndex(dgvInactive);
@@ -852,16 +938,6 @@ public class MainForm : Form
 
     private void SavePreset()
     {
-        if (_activeModules.Count > 100)
-        {
-            var cont = MessageBox.Show(this,
-                $"This preset would include {_activeModules.Count} modules. Share codes are most reliable " +
-                "under about 100 modules (especially without Futureproof mode) to stay under Discord's " +
-                "2000-character limit. Continue saving anyway?",
-                "Large Preset", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            if (cont != DialogResult.Yes) return;
-        }
-
         var name = InputForm.Prompt(this, "Save Preset", "Preset name:", "");
         if (string.IsNullOrWhiteSpace(name)) return;
         name = name.Trim();
