@@ -1,6 +1,5 @@
 using System;
 using System.Drawing;
-using System.Reflection;
 using System.Windows.Forms;
 
 namespace AoELauncher.UI;
@@ -38,40 +37,121 @@ public class ModuleGridView : DataGridView
     /// <summary>Raised once the mouse has moved far enough (from a valid row, held button) to start a drag-drop gesture.</summary>
     public event EventHandler? DragThresholdReached;
 
-    protected override void OnHandleCreated(EventArgs e)
+    // --- Cell tooltips -----------------------------------------------------------------------
+    // DataGridView's built-in cell tooltips (ShowCellToolTips) use a private internal ToolTip that
+    // hides/re-shows itself on every cell change and can't be tuned without reflection, which
+    // previously led to tooltips showing the neighboring row's text. Instead, the built-in ones are
+    // turned off and this grid owns a normal ToolTip, re-deriving the text from a live hit-test of
+    // the cursor each time it could have changed (mouse move, wheel, leave, rows rebuilt), so it
+    // always reflects the row that is actually under the mouse. Text comes from each cell's
+    // ToolTipText, which is still how callers supply it.
+
+    private readonly ToolTip _cellToolTip = new()
     {
-        base.OnHandleCreated(e);
-        MakeCellToolTipsInstant();
+        InitialDelay = 0,
+        ReshowDelay = 0,
+        UseFading = false,
+        UseAnimation = false,
+    };
+
+    private const int ToolTipDurationMs = 30000;
+    private int _tipRow = -1;
+    private int _tipColumn = -1;
+    private string _tipText = "";
+    private bool _tipRefreshQueued;
+
+    public ModuleGridView()
+    {
+        ShowCellToolTips = false;
     }
 
-    /// <summary>
-    /// DataGridView's cell tooltips (ShowCellToolTips) use a private internal ToolTip
-    /// instance with no public property to control its delay, so this reaches in via
-    /// reflection and zeroes it out. This pokes at private framework field names
-    /// ("toolTipControl" on DataGridView, "toolTip" on its internal DataGridViewToolTip
-    /// wrapper), which aren't a guaranteed contract -- if a future .NET version renames or
-    /// removes them, this just quietly no-ops and tooltips fall back to their normal delay.
-    /// </summary>
-    private void MakeCellToolTipsInstant()
+    protected override void Dispose(bool disposing)
     {
-        try
-        {
-            var toolTipControlField = typeof(DataGridView).GetField("toolTipControl", BindingFlags.NonPublic | BindingFlags.Instance);
-            var toolTipControl = toolTipControlField?.GetValue(this);
-            if (toolTipControl == null) return;
+        if (disposing) _cellToolTip.Dispose();
+        base.Dispose(disposing);
+    }
 
-            var toolTipField = toolTipControl.GetType().GetField("toolTip", BindingFlags.NonPublic | BindingFlags.Instance);
-            if (toolTipField?.GetValue(toolTipControl) is ToolTip toolTip)
+    /// <summary>Shows, changes or hides the tooltip to match whatever cell is under the cursor right now.</summary>
+    private void UpdateCellToolTip()
+    {
+        if (!IsHandleCreated || IsDisposed) return;
+
+        var pt = PointToClient(Cursor.Position);
+        int row = -1, column = -1;
+        var text = "";
+
+        if (ClientRectangle.Contains(pt))
+        {
+            var hit = HitTest(pt.X, pt.Y);
+            if (hit.Type == DataGridViewHitTestType.Cell &&
+                hit.RowIndex >= 0 && hit.RowIndex < Rows.Count &&
+                hit.ColumnIndex >= 0 && hit.ColumnIndex < Columns.Count)
             {
-                toolTip.InitialDelay = 0;
-                toolTip.ReshowDelay = 0;
-                toolTip.AutomaticDelay = 0;
+                row = hit.RowIndex;
+                column = hit.ColumnIndex;
+                text = Rows[row].Cells[column].ToolTipText ?? "";
             }
         }
-        catch
+
+        if (row == _tipRow && column == _tipColumn && text == _tipText) return;
+
+        _tipRow = row;
+        _tipColumn = column;
+        _tipText = text;
+
+        if (text.Length == 0)
+            _cellToolTip.Hide(this);
+        else
+            _cellToolTip.Show(text, this, pt.X + 16, pt.Y + 20, ToolTipDurationMs);
+    }
+
+    private void ResetCellToolTip()
+    {
+        _tipRow = _tipColumn = -1;
+        _tipText = "";
+        if (IsHandleCreated) _cellToolTip.Hide(this);
+    }
+
+    /// <summary>Rows being rebuilt (Refresh, drag-drop) can change what's under a stationary cursor; re-check once the batch is done.</summary>
+    private void QueueCellToolTipRefresh()
+    {
+        if (_tipRefreshQueued || !IsHandleCreated) return;
+        _tipRefreshQueued = true;
+        BeginInvoke(new Action(() =>
         {
-            // Best-effort only -- see remarks above.
-        }
+            _tipRefreshQueued = false;
+            UpdateCellToolTip();
+        }));
+    }
+
+    protected override void OnRowsAdded(DataGridViewRowsAddedEventArgs e)
+    {
+        base.OnRowsAdded(e);
+        QueueCellToolTipRefresh();
+    }
+
+    protected override void OnRowsRemoved(DataGridViewRowsRemovedEventArgs e)
+    {
+        base.OnRowsRemoved(e);
+        QueueCellToolTipRefresh();
+    }
+
+    protected override void OnMouseWheel(MouseEventArgs e)
+    {
+        base.OnMouseWheel(e);
+        UpdateCellToolTip();
+    }
+
+    protected override void OnScroll(ScrollEventArgs e)
+    {
+        base.OnScroll(e);
+        UpdateCellToolTip();
+    }
+
+    protected override void OnMouseLeave(EventArgs e)
+    {
+        base.OnMouseLeave(e);
+        ResetCellToolTip();
     }
 
     protected override void OnMouseDown(MouseEventArgs e)
@@ -79,6 +159,8 @@ public class ModuleGridView : DataGridView
         _deferredSingleSelectPending = false;
         _deferredRowIndex = -1;
         _dragArmed = false;
+
+        if (IsHandleCreated) _cellToolTip.Hide(this); // hidden on click; returns when the cursor enters another cell
 
         var hit = HitTest(e.X, e.Y);
         var infoCol = Columns["Info"];
@@ -117,6 +199,7 @@ public class ModuleGridView : DataGridView
             }
         }
         base.OnMouseMove(e);
+        if (e.Button == MouseButtons.None) UpdateCellToolTip();
     }
 
     protected override void OnMouseUp(MouseEventArgs e)

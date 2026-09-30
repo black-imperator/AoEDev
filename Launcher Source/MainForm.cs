@@ -264,7 +264,7 @@ public class MainForm : Form
             AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None,
             BorderStyle = BorderStyle.None,
             CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal,
-            ShowCellToolTips = true,
+            ShowCellToolTips = false, // ModuleGridView draws its own tooltips (see ModuleGridView)
         };
         Theme.StyleGrid(grid);
 
