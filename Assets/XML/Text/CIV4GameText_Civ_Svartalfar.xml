@@ -15,7 +15,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SVARTALFAR_DESC</Tag>
-		<English> &#225; &#xE1; Svartalfar</English>
+		<English>Svartalfar</English>
 		<French>Svartálfheimr</French>
 		<German>Svartálfheimr</German>
 		<Italian>Svartálfheimr</Italian>
@@ -31,7 +31,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SVARTALFAR_SHORT_DESC</Tag>
-		<English>Svartalfar &#xE1;</English>
+		<English>Svartalfar</English>
 		<French>Svartálfar</French>
 		<German>Svartálfar</German>
 		<Italian>Svartálfar</Italian>
