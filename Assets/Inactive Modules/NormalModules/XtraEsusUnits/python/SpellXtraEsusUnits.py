@@ -232,6 +232,15 @@ def reqUpgradeAphoticThrone(caster):
 	#if pCity.isHasReligion(getInfoType('RELIGION_COUNCIL_OF_ESUS')):
 	#	return False
 
+	# Only offer the spell where spellUpgradeThrone has something to upgrade; otherwise the gold is spent for nothing
+	bUpgradable = False
+	for szThrone in ("BUILDING_APHOTIC_THRONE_POISONER", "BUILDING_APHOTIC_THRONE_MERCHANT", "BUILDING_APHOTIC_THRONE_SLAVER", "BUILDING_APHOTIC_THRONE_BORED_NOBLE"):
+		if pCity.isHasBuilding(getInfoType(szThrone)):
+			bUpgradable = True
+			break
+	if not bUpgradable:
+		return False
+
 	if pCity.isHasBuilding(getInfoType("BUILDING_APHOTIC_THRONE_MERCHANT_UPGRADED")):
 		return False
 
