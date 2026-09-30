@@ -4124,7 +4124,9 @@ bool CvGameTextMgr::setCombatPlotHelp(CvWStringBuffer &szString, CvPlot* pPlot)
 /**								---- Start Original Code ----									**
 				iWithdrawal += std::min(100, pAttacker->withdrawalProbability()) * (1000 - iCombatOdds);
 /**								----  End Original Code  ----									**/
-				iWithdrawal += std::min(100, (pAttacker->combatWithdrawalProbability(pDefender) + ((pDefender->getWithdrawlProbDefensive(pAttacker) )* -1))) * (1000 - iCombatOdds);
+				// Same value CvUnit::resolveCombat rolls for the attacker's retreat. The defender's defensive
+				// withdrawal is not subtracted there (it only applies when the defender loses), so it must not be here.
+				iWithdrawal += std::min(100, pAttacker->combatWithdrawalProbability(pDefender)) * (1000 - iCombatOdds);
 /*************************************************************************************************/
 /**	Defensive Withdrawal		END							**/
 /*************************************************************************************************/
