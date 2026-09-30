@@ -53,7 +53,8 @@ def spellGreatSoulSiphon(pCaster):
 					iLoss = -2
 					pCity.changePopulation(iLoss)
 					affectedCitiesCount += 1
-					CyInterface().addMessage(iLoopPlayer, True, 25, CyTranslator().getText("TXT_KEY_MESSAGE_GREAT_SOUL_SIPHON_LOSS", (iLoss,)), '', 3, 'Modules\NormalModules\DrackAosNiSira\Art\Other\Souls.dds', ColorTypes(7), pCity.getX(), pCity.getY(), True, True)
+					# the text reads "lost %D1 population", so pass the magnitude
+					CyInterface().addMessage(iLoopPlayer, True, 25, CyTranslator().getText("TXT_KEY_MESSAGE_GREAT_SOUL_SIPHON_LOSS", (-iLoss,)), '', 3, 'Modules\NormalModules\DrackAosNiSira\Art\Other\Souls.dds', ColorTypes(7), pCity.getX(), pCity.getY(), True, True)
 				(pCity, iter) = pLoopPlayer.nextCity(iter, False)
 
 	# Calculate souls for the casting player
