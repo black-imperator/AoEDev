@@ -43,14 +43,14 @@
 						<MiddleArtDefineTag>ART_DEF_UNIT_PANTHER</MiddleArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
-				<StyleUnit>
+				<!--<StyleUnit>
 					<UnitType>UNIT_COMPACT_GUARDIAN</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_BEASTMASTER_SVARTALFAR</EarlyArtDefineTag>
 						<LateArtDefineTag>ART_DEF_UNIT_BEASTMASTER_SVARTALFAR</LateArtDefineTag>
 						<MiddleArtDefineTag>ART_DEF_UNIT_BEASTMASTER_SVARTALFAR</MiddleArtDefineTag>
 					</UnitMeshGroup>
-				</StyleUnit>
+				</StyleUnit>-->
 			</StyleUnits>
 		</UnitArtStyleTypeInfo>
 		<UnitArtStyleTypeInfo>
@@ -80,14 +80,14 @@
 						<MiddleArtDefineTag>ART_DEF_UNIT_RANGER_LJOSALFAR</MiddleArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
-				<StyleUnit>
+				<!--<StyleUnit>
 					<UnitType>UNIT_COMPACT_GUARDIAN</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_BEASTMASTER_LJOSALFAR</EarlyArtDefineTag>
 						<LateArtDefineTag>ART_DEF_UNIT_BEASTMASTER_LJOSALFAR</LateArtDefineTag>
 						<MiddleArtDefineTag>ART_DEF_UNIT_BEASTMASTER_LJOSALFAR</MiddleArtDefineTag>
 					</UnitMeshGroup>
-				</StyleUnit>
+				</StyleUnit>-->
 			</StyleUnits>
 		</UnitArtStyleTypeInfo>
 	</UnitArtStyleTypeInfos>

@@ -5,7 +5,7 @@
 <!-- Copyright Firaxis Games 2005 -->
 <!-- -->
 <!-- UnitClass Schema -->
-<Civ4UnitClassInfos xmlns="x-schema:HAMSTER_CIV4UnitSchema.xml">
+<Civ4UnitClassInfos xmlns="x-schema:HAMH_CIV4UnitSchema.xml">
 	<UnitClassInfos>
 		<UnitClassInfo>		<!-- Hamster Commander -->
 			<Type>UNITCLASS_CELVAR</Type>
@@ -20,7 +20,7 @@
 		</UnitClassInfo>
 		<UnitClassInfo>		<!-- UNITCLASS_HAMSTERTRUPPEN -->
 			<Type>UNITCLASS_HAMSTERTRUPPEN</Type>
-			<Description>TXT_KEY_UNIT_HAMSTERTRUPPEN</Description>
+			<Description>TXT_KEY_UNIT_HAMSTERTRUPPEN_NO</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>

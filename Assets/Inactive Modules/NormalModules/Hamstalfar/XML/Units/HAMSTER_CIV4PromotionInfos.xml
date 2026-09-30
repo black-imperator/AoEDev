@@ -126,7 +126,6 @@
 		<PromotionInfo>		<!-- Alfar -->
 			<Type>PROMOTION_ALFAR</Type>
 			<Description>TXT_KEY_PROMOTION_ALFAR</Description>
-			<Help>TXT_KEY_PROMOTION_ALFAR_HELP</Help>
 			<Button>Art/Interface/Buttons/Promotions/Races/Elf.dds</Button>
 			<bRace>1</bRace>
 			<UnitArtStyleType>UNIT_ARTSTYLE_ELF</UnitArtStyleType>
@@ -151,11 +150,11 @@
 					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
 					<iFeatureMoveCost>1</iFeatureMoveCost>
 				</FeatureMoveCost>
-			</FeatureMoveCosts>
+			</FeatureMoveCosts><!--
 			<PyOnPromoTaken>elvenRacialSelection(pCaster)</PyOnPromoTaken>
-			<PythonPostCombatWon>postCombatWonHamsterCommander(pCaster, pOpponent)</PythonPostCombatWon>
+			<PythonPostCombatWon>postCombatWonHamsterCommander(pCaster, pOpponent)</PythonPostCombatWon>-->
 		</PromotionInfo>
-		<PromotionInfo>		<!-- Ljos Artstyle Effect -->
+		<!--<PromotionInfo>		<!{1}** Ljos Artstyle Effect **{1}>
 			<Type>PROMOTION_ALFAR_LJOS_EFFECT</Type>
 			<Description>Ljos Art</Description>
 			<Button>Art/Interface/Buttons/Promotions/Races/Elf.dds</Button>
@@ -163,18 +162,19 @@
 			<iMinLevel>-1</iMinLevel>
 			<UnitArtStyleType>UNIT_ARTSTYLE_ELF</UnitArtStyleType>
 		</PromotionInfo>
-		<PromotionInfo>		<!-- Svart Artstyle Effect -->
+		<PromotionInfo>		<!{1}** Svart Artstyle Effect **{1}>
 			<Type>PROMOTION_ALFAR_SVART_EFFECT</Type>
 			<Description>Svart Art</Description>
 			<Button>Art/Interface/Buttons/Promotions/Races/Elf.dds</Button>
 			<bEffectProm>1</bEffectProm>
 			<iMinLevel>-1</iMinLevel>
 			<UnitArtStyleType>UNIT_ARTSTYLE_DARK_ELF</UnitArtStyleType>
-		</PromotionInfo>
+		</PromotionInfo>-->
 		<PromotionInfo>		<!-- Hamster Commander -->
 			<Type>PROMOTION_HAMSTER_COMMANDER</Type>
 			<Description>TXT_KEY_PROMOTION_HAMSTER_COMMANDER</Description>
 			<Button>Art/Modules/Hamstalfar/Buttons/hamstercommander.dds</Button>
+			<ReplaceArtType>ART_DEF_UNIT_KNIGHT_LJOSALFAR</ReplaceArtType>
 			<iMinLevel>-1</iMinLevel>
 			<UnitCombats>
 				<UnitCombat>

@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Unit Infos -->
+<Civ4UnitInfos xmlns="x-schema:HAMH_CIV4UnitSchema.xml">
+	<UnitInfos>
+		<UnitInfo>		<!-- Hamster Commander -->
+			<Class>UNITCLASS_COMMANDER</Class>
+			<Type>UNIT_HAMSTER_COMMANDER</Type>
+			<Description>TXT_KEY_UNIT_HAMSTER_COMMANDER_NO</Description>
+			<Civilopedia>TXT_KEY_UNIT_HAMSTER_COMMANDER_NO_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<UnitMeshGroups>
+				<iGroupSize>2</iGroupSize>
+				<fMaxSpeed>1.25</fMaxSpeed>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_KNIGHT_LJOSALFAR</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+		</UnitInfo>
+		<UnitInfo>		<!-- Hamstertruppen -->
+			<Class>UNITCLASS_HAMSTERTRUPPEN</Class>
+			<Type>UNIT_HAMSTERTRUPPEN</Type>
+			<Description>TXT_KEY_UNIT_HAMSTERTRUPPEN_NO</Description>
+			<Civilopedia>TXT_KEY_UNIT_HAMSTERTRUPPEN_NO_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_ASSASSIN_STRATEGY</Strategy>
+			<UnitMeshGroups>
+				<iGroupSize>6</iGroupSize>
+					<fMaxSpeed>1.75</fMaxSpeed>
+				<fPadTime>1</fPadTime>
+				<iMeleeWaveSize>3</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>2</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_ELVEN_AERON_WORSHIPPER</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+		</UnitInfo>
+		<UnitInfo>		<!-- War Hawk - Eagle Hunter -->
+			<Class>UNITCLASS_HAWK</Class>
+			<Type>UNIT_EAGLE_HUNTER</Type>
+			<Description>TXT_KEY_UNIT_EAGLE_HUNTER_NO</Description>
+			<Civilopedia>TXT_KEY_UNIT_EAGLE_HUNTER_NO_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_EAGLE_HUNTER_STRATEGY</Strategy>
+			<UnitMeshGroups>
+				<iGroupSize>1</iGroupSize>
+				<fMaxSpeed>10</fMaxSpeed>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>1</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_HAWK</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+		</UnitInfo>
+		<UnitInfo>		<!-- Ribauldequin - needs a rename and new model -->
+			<Class>UNITCLASS_CANNON</Class>
+			<Type>UNIT_RIBAULDEQUIN</Type>
+			<Combat>UNITCOMBAT_SIEGE</Combat>
+			<DefaultUnitAI>UNITAI_ATTACK_CITY</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_RIBAULDEQUIN_NO</Description>
+			<Civilopedia>TXT_KEY_UNIT_RIBAULDEQUIN_NO_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_CANNON_STRATEGY</Strategy>
+			<UnitMeshGroups>
+				<iGroupSize>1</iGroupSize>
+				<fMaxSpeed>1.25</fMaxSpeed>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>1</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_CANNON_HAMSTALFAR</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+		</UnitInfo>
+		<UnitInfo>        <!-- Guardian of the Compact -->
+			<Class>UNITCLASS_SHADOW</Class>
+			<Type>UNIT_COMPACT_GUARDIAN</Type>
+			<Combat>UNITCOMBAT_ARCHER</Combat>
+			<Description>TXT_KEY_UNIT_COMPACT_GUARDIAN_NO</Description>
+			<Civilopedia>TXT_KEY_UNIT_COMPACT_GUARDIAN_NO_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_SHADOW_STRATEGY</Strategy>
+			<UnitMeshGroups>
+				<iGroupSize>1</iGroupSize>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_ASSASSIN_LJOSALFAR</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+		</UnitInfo>
+		<UnitInfo>		<!-- Celvar -->
+			<Class>UNITCLASS_CELVAR</Class>
+			<Type>UNIT_CELVAR</Type>
+			<Combat>UNITCOMBAT_MOUNTED</Combat>
+			<Domain>DOMAIN_LAND</Domain>
+			<Special>SPECIALUNIT_BIRD</Special>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+			<iExtraPerception>3</iExtraPerception>
+			<Description>TXT_KEY_UNIT_CELVAR</Description>
+			<Civilopedia>TXT_KEY_UNIT_CELVAR_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_CELVAR_STRATEGY</Strategy>
+			<UnitMeshGroups>
+				<iGroupSize>1</iGroupSize>
+				<fMaxSpeed>1.75</fMaxSpeed>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>1</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_HAWK</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+		</UnitInfo>
+	</UnitInfos>
+</Civ4UnitInfos>

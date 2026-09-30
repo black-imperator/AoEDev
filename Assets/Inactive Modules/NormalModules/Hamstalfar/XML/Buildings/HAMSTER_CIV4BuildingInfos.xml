@@ -6,6 +6,33 @@
 <!-- Building Infos -->
 <Civ4BuildingInfos xmlns="x-schema:HAMSTER_CIV4BuildingsSchema.xml">
 	<BuildingInfos>
+		<BuildingInfo>		<!-- Merchant Caravan Elves -->
+			<BuildingClass>BUILDINGCLASS_MERCHANT_CARAVAN_ELVES</BuildingClass>
+			<Type>BUILDING_MERCHANT_CARAVAN_ELVES</Type>
+			<Description>TXT_KEY_BUILDING_MERCHANT_CARAVAN_ELVES</Description>
+			<Civilopedia>TXT_KEY_BUILDING_MERCHANT_CARAVAN_ELVES_PEDIA</Civilopedia>
+			<ArtDefineTag>ART_DEF_BUILDING_ARENA</ArtDefineTag>
+			<PrereqTech>TECH_EXPLORATION</PrereqTech>
+			<iPrereqPopulation>1</iPrereqPopulation>
+			<iAIWeight>10</iAIWeight>
+			<YieldModifiers>
+				<iYield>0</iYield>
+				<iYield>0</iYield>
+				<iYield>0</iYield>
+			</YieldModifiers>
+			<CommerceModifiers>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+			</CommerceModifiers>
+			<iCost>-1</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iConquestProb>0</iConquestProb>
+			<iAsset>4</iAsset>
+			<fVisibilityPriority>1000</fVisibilityPriority>
+			<ConstructSound>AS2D_BUILD_COURTHOUSE</ConstructSound>
+			<bAutoBuild>1</bAutoBuild>
+		</BuildingInfo>
 		<BuildingInfo>		<!-- Hall of the Fuzzy Lords -->
 			<BuildingClass>BUILDINGCLASS_PALACE</BuildingClass>
 			<Type>BUILDING_PALACE_HAMSTER</Type>
@@ -13,7 +40,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_PALACE_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_PALACE_BANNOR</ArtDefineTag>
-			<FreeBonus>BONUS_MANA_LAW</FreeBonus>
+			<FreeBonus>BONUS_MANA_MIND</FreeBonus>
 			<iNumFreeBonuses>1</iNumFreeBonuses>
 			<bCapital>1</bCapital>
 			<iHealth>2</iHealth>
@@ -39,10 +66,10 @@
 				<iCommerce>2</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<iCrime>-10</iCrime>
-			<FreeBonus2>BONUS_MANA_CREATION</FreeBonus2>
-			<FreeBonus3>BONUS_MANA_NATURE</FreeBonus3>
+			<FreeBonus2>BONUS_MANA_AIR</FreeBonus2>
+			<FreeBonus3>BONUS_MANA_LAW</FreeBonus3>
 			<iGlobalTradeRoutes>2</iGlobalTradeRoutes>
-			<iTradeRouteModifier>50</iTradeRouteModifier>
+			<iTradeRouteModifier>25</iTradeRouteModifier>
 		</BuildingInfo>
 		<BuildingInfo>		<!-- Hall of Wheels -->
 			<BuildingClass>BUILDINGCLASS_TRAINING_YARD</BuildingClass>
@@ -53,7 +80,6 @@
 			<ArtDefineTag>ART_DEF_BUILDING_TRAINING_YARD</ArtDefineTag>
 			<PrereqTech>TECH_WARFARE</PrereqTech>
 			<FreePromotion>PROMOTION_FIT</FreePromotion>
-			<iAIWeight>300</iAIWeight>
 			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>25</iConquestProb>
@@ -96,7 +122,7 @@
 			<TradeYieldModifiers>
 				<iYield>0</iYield>
 				<iYield>0</iYield>
-				<iYield>100</iYield>
+				<iYield>0</iYield>
 			</TradeYieldModifiers>
 			<iAsset>4</iAsset>
 			<fVisibilityPriority>10</fVisibilityPriority>
@@ -137,6 +163,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_INN</ArtDefineTag>
 			<PrereqTech>TECH_TRADE</PrereqTech>
+			<iAIWeight>300</iAIWeight>
 			<iCost>250</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>25</iConquestProb>
@@ -177,6 +204,7 @@
 				</ProductionTrait>
 			</ProductionTraits>
 			<bRiver>1</bRiver>
+			<iAIWeight>300</iAIWeight>
 			<iCost>160</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>25</iConquestProb>
@@ -184,7 +212,7 @@
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>10</fVisibilityPriority>
 			<TradeYieldModifiers>
-				<iYield>50</iYield>
+				<iYield>0</iYield>
 			</TradeYieldModifiers>
 			<RiverPlotYieldChanges>
 				<iYield>1</iYield>
@@ -244,7 +272,7 @@
 				</ProductionTrait>
 			</ProductionTraits>
 			<TradeCommerceModifiers>
-				<iCommerce>50</iCommerce>
+				<iCommerce>0</iCommerce>
 			</TradeCommerceModifiers>
 			<iCost>250</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -285,6 +313,7 @@
 				</ProductionTrait>
 			</ProductionTraits>
 			<iCost>200</iCost>
+			<iAIWeight>300</iAIWeight>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>25</iConquestProb>
 			<iMilitaryProductionModifier>-15</iMilitaryProductionModifier>

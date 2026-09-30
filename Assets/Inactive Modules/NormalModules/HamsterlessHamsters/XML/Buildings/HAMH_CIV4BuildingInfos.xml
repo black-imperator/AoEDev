@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Building Infos -->
+<Civ4BuildingInfos xmlns="x-schema:HAMH_CIV4BuildingsSchema.xml">
+	<BuildingInfos>
+		<BuildingInfo>		<!-- Hall of the Fuzzy Lords -->
+			<BuildingClass>BUILDINGCLASS_PALACE</BuildingClass>
+			<Type>BUILDING_PALACE_HAMSTER</Type>
+			<Description>TXT_KEY_BUILDING_PALACE_HAMSTER_NO</Description>
+			<Civilopedia>TXT_KEY_BUILDING_PALACE_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_PALACE_BANNOR</ArtDefineTag>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Hall of Wheels -->
+			<BuildingClass>BUILDINGCLASS_TRAINING_YARD</BuildingClass>
+			<Type>BUILDING_WHEEL</Type>
+			<Description>TXT_KEY_BUILDING_WHEEL_NO</Description>
+			<Civilopedia>TXT_KEY_BUILDING_WHEEL_NO_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_TRAINING_YARD</ArtDefineTag>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Haven -->
+			<BuildingClass>BUILDINGCLASS_HARBOR</BuildingClass>
+			<Type>BUILDING_HARBOR_HAMSTALFAR</Type>
+			<Description>TXT_KEY_BUILDING_HARBOR_HAMSTALFAR</Description>
+			<Civilopedia>TXT_KEY_BUILDING_HARBOR_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_HARBOR</ArtDefineTag>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Auberge -->
+			<BuildingClass>BUILDINGCLASS_INN</BuildingClass>
+			<Type>BUILDING_INN_HAMSTALFAR</Type>
+			<Description>TXT_KEY_BUILDING_INN_HAMSTALFAR</Description>
+			<Civilopedia>TXT_KEY_BUILDING_INN_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_INN</ArtDefineTag>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Marker of the Covenant -->
+			<BuildingClass>BUILDINGCLASS_LIGHTHOUSE</BuildingClass>
+			<Type>BUILDING_LIGHTHOUSE_HAMSTALFAR</Type>
+			<Description>TXT_KEY_BUILDING_LIGHTHOUSE_HAMSTALFAR_NO</Description>
+			<Civilopedia>TXT_KEY_BUILDING_LIGHTHOUSE_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_GROWTH</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_LIGHTHOUSE</ArtDefineTag>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Taphouse -->
+			<BuildingClass>BUILDINGCLASS_TAVERN</BuildingClass>
+			<Type>BUILDING_TAVERN_HAMSTALFAR</Type>
+			<Description>TXT_KEY_BUILDING_TAVERN_HAMSTALFAR</Description>
+			<Civilopedia>TXT_KEY_BUILDING_TAVERN_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_TAVERN_STRATEGY</Strategy>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_TAVERN</ArtDefineTag>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Countinghouse -->
+			<BuildingClass>BUILDINGCLASS_MONEYCHANGER</BuildingClass>
+			<Type>BUILDING_MONEYCHANGER_HAMSTALFAR</Type>
+			<Description>TXT_KEY_BUILDING_MONEYCHANGER_HAMSTALFAR</Description>
+			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_MONEYCHANGER</ArtDefineTag>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- Bottega -->
+			<BuildingClass>BUILDINGCLASS_ARTISANS_WORKSHOP</BuildingClass>
+			<Type>BUILDING_ARTISANS_WORKSHOP_HAMSTALFAR</Type>
+			<Description>TXT_KEY_BUILDING_ARTISANS_WORKSHOP_HAMSTALFAR</Description>
+			<Civilopedia>TXT_KEY_BUILDING_ARTISANS_WORKSHOP_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_ARTISANS_WORKSHOP</ArtDefineTag>
+		</BuildingInfo>
+	</BuildingInfos>
+</Civ4BuildingInfos>

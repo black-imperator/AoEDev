@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Civilization Infos -->
+<Civ4CivilizationInfos xmlns="x-schema:HAMH_CIV4CivilizationsSchema.xml">
+	<CivilizationInfos>
+		<CivilizationInfo>		<!-- Gyldalfar  -->
+			<Type>CIVILIZATION_HAMSTALFAR</Type>
+			<Description>TXT_KEY_CIV_HAMSTER_NO_DESC</Description>
+			<ShortDescription>TXT_KEY_CIV_HAMSTER_NO_SHORT_DESC</ShortDescription>
+			<Adjective>TXT_KEY_CIV_HAMSTER_NO_ADJECTIVE</Adjective>
+			<Civilopedia>TXT_KEY_CIV_HAMSTER_NO_PEDIA</Civilopedia>
+			<Units>
+				<Unit>
+					<UnitClassType>UNITCLASS_HAMSTERTRUPPEN</UnitClassType>
+					<UnitType>UNIT_HAMSTERTRUPPEN</UnitType>
+				</Unit>
+			</Units>
+			<Image>Art/Modules/Hamstalfar/Popups/GyldalfarBanner.dds</Image>
+			<MaintainFeatures>
+			</MaintainFeatures>
+		</CivilizationInfo>
+	</CivilizationInfos>
+</Civ4CivilizationInfos>

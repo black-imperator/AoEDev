@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Spell Infos -->
+<Civ4SpellInfos xmlns="x-schema:HAMH_CIV4UnitSpellSchema.xml">
+	<SpellInfos>
+		<SpellInfo>		<!-- Trial -->
+			<Type>SPELL_HAMSTER_TRIAL</Type>
+			<Description>TXT_KEY_SPELL_HAMSTER_TRIAL_NO</Description>
+			<Civilopedia>TXT_KEY_SPELL_HAMSTER_TRIAL_NO_PEDIA</Civilopedia>
+			<Help>TXT_KEY_SPELL_HAMSTER_TRIAL_NO_HELP</Help>
+		</SpellInfo>
+		<SpellInfo>			<!-- Summon Celvar -->	
+			<Type>SPELL_CELVAR</Type>
+			<Description>TXT_KEY_SPELL_CELVAR</Description>
+			<Civilopedia>TXT_KEY_SPELL_CELVAR_NO_HELP</Civilopedia>
+			<Help>TXT_KEY_SPELL_CELVAR_NO_HELP</Help>
+			<Button>Art/Interface/Buttons/Units/Hornedowl.dds</Button>
+		</SpellInfo>
+	</SpellInfos>
+</Civ4SpellInfos>

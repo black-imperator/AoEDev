@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!-- Leader Trait Infos -->
+<Civ4TraitInfos xmlns="x-schema:HAMH_CIV4CivilizationsSchema.xml">
+	<TraitInfos>
+		<TraitInfo>		<!-- Realm of the Compact -->
+			<Type>TRAIT_COMPACT</Type>
+			<TraitClass>TRAITCLASS_CIVILIZATION</TraitClass>
+			<Description>TXT_KEY_TRAIT_COMPACT_NO</Description>
+			<Civilopedia>TXT_KEY_TRAIT_COMPACT_NO_PEDIA</Civilopedia>
+			<ShortDescription>TXT_KEY_TRAIT_COMPACT_NO_SHORT</ShortDescription>
+		</TraitInfo>
+		<TraitInfo>		<!-- Elder -->
+			<Type>TRAIT_ELDER</Type>
+			<TraitClass>TRAITCLASS_PERSONALITY</TraitClass>
+			<Description>TXT_KEY_TRAIT_ELDER</Description>
+			<Civilopedia>TXT_KEY_TRAIT_ELDER_PEDIA</Civilopedia>
+			<ShortDescription>TXT_KEY_TRAIT_ELDER_SHORT</ShortDescription>
+		</TraitInfo>
+	</TraitInfos>
+</Civ4TraitInfos>
