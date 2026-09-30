@@ -7,7 +7,7 @@
 <Civ4GameText xmlns="http://www.firaxis.com">
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SVARTALFAR_ADJECTIVE</Tag>
-		<English>Svartálfar:Svartálfar</English>
+		<English>Svartalfar:Svartalfar</English>
 		<French>svartálfur:svartálfur:svartálfar:svartálfar</French>
 		<German>svartálfur:svartálfar</German>
 		<Italian>svartálfur:svartálfar</Italian>
@@ -15,7 +15,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SVARTALFAR_DESC</Tag>
-		<English>Svartálfar</English>
+		<English> &#225; &#xE1; Svartalfar</English>
 		<French>Svartálfheimr</French>
 		<German>Svartálfheimr</German>
 		<Italian>Svartálfheimr</Italian>
@@ -31,7 +31,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SVARTALFAR_SHORT_DESC</Tag>
-		<English>Svartálfar</English>
+		<English>Svartalfar &#xE1;</English>
 		<French>Svartálfar</French>
 		<German>Svartálfar</German>
 		<Italian>Svartálfar</Italian>
