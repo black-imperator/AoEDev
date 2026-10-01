@@ -6,8 +6,352 @@
 <!-- Civilization Infos -->
 <Civ4UnitArtStyleTypeInfos xmlns="x-schema:HAMSTER_CIV4CivilizationsSchema.xml">
 	<UnitArtStyleTypeInfos>
-		<UnitArtStyleTypeInfo>
-			<Type>UNIT_ARTSTYLE_DARK_ELF</Type>
+		
+		<UnitArtStyleTypeInfo>	<!--Golden Elf-->
+			<Type>UNIT_ARTSTYLE_GOLDEN_ELF_GYLDALFAR</Type>
+			<StyleUnits>
+				<StyleUnit>
+					<UnitType>UNIT_ADEPT</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_NEW_ADEPT_GYLDALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_NEW_ADEPT_GYLDALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_NEW_ADEPT_GYLDALFAR</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_ARCHER</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_ARCHER_GYLDALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_ARCHER_GYLDALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_ARCHER_GYLDALFAR</MiddleArtDefineTag>
+					</UnitMeshGroup>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_ARCHER_GYLDALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_ARCHER_GYLDALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_ARCHER_GYLDALFAR</MiddleArtDefineTag>
+					</UnitMeshGroup>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_ARCHER_GYLDALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_ARCHER_GYLDALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_ARCHER_GYLDALFAR</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_ARCHMAGE</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_ARCHMAGE_GYLDALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_ARCHMAGE_GYLDALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_ARCHMAGE_GYLDALFAR</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_SHADOW</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_ASSASSIN_GYLDALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_ASSASSIN_GYLDALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_ASSASSIN_GYLDALFAR</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_BEASTMASTER</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_BEASTMASTER_GYLDALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_BEASTMASTER_GYLDALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_BEASTMASTER_GYLDALFAR</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_DRUID</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_DRUID_GYLDALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_DRUID_GYLDALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_DRUID_GYLDALFAR</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_HORSEMAN</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_HORSEMAN_GYLDALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_HORSEMAN_GYLDALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_HORSEMAN_GYLDALFAR</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_HORSEMAN</UnitType>
+					<PromotionType>PROMOTION_HYAPON</PromotionType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_HORSEMAN_GYLDALFAR_HYAPON</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_HORSEMAN_GYLDALFAR_HYAPON</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_HORSEMAN_GYLDALFAR_HYAPON</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_HORSEMAN</UnitType>
+					<PromotionType>PROMOTION_NIGHTMARE</PromotionType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_HORSEMAN_GYLDALFAR_NIGHTMARE</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_HORSEMAN_GYLDALFAR_NIGHTMARE</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_HORSEMAN_GYLDALFAR_NIGHTMARE</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_HUNTER</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_HUNTER_GYLDALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_HUNTER_GYLDALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_HUNTER_GYLDALFAR</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_IMMORTAL</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_IMMORTAL_GYLDALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_IMMORTAL_GYLDALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_IMMORTAL_GYLDALFAR</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_KNIGHT</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_KNIGHT_GYLDALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_KNIGHT_GYLDALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_KNIGHT_GYLDALFAR</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_CHARIOT</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_CHARIOT_GYLDALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_CHARIOT_GYLDALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_CHARIOT_GYLDALFAR</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_CHARIOT</UnitType>
+					<PromotionType>PROMOTION_HYAPON</PromotionType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_CHARIOT_GYLDALFAR_HYAPON</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_CHARIOT_GYLDALFAR_HYAPON</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_CHARIOT_GYLDALFAR_HYAPON</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_CHARIOT</UnitType>
+					<PromotionType>PROMOTION_NIGHTMARE</PromotionType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_CHARIOT_GYLDALFAR_NIGHTMARE</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_CHARIOT_GYLDALFAR_NIGHTMARE</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_CHARIOT_GYLDALFAR_NIGHTMARE</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_LONGBOWMAN</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_LONGBOWMAN_GYLDALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_LONGBOWMAN_GYLDALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_LONGBOWMAN_GYLDALFAR</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_CHAMPION</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_CHAMPION_GYLDALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_CHAMPION_GYLDALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_CHAMPION_GYLDALFAR</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_MAGE</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_MAGE_GYLDALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_MAGE_GYLDALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_MAGE_GYLDALFAR</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_THIEF</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_MARKSMAN_GYLDALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_MARKSMAN_GYLDALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_MARKSMAN_GYLDALFAR</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_ASSASSIN</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_FLURRY</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_FLURRY</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_FLURRY</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_PALADIN</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_PALADIN_LJOSALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_PALADIN_LJOSALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_PALADIN_LJOSALFAR</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_HORSE_ARCHER</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_FYRDWELL</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_FYRDWELL</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_FYRDWELL</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_RANGER</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_RANGER_GYLDALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_RANGER_GYLDALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_RANGER_GYLDALFAR</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_SCOUT</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_SCOUT_GYLDALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_SCOUT_GYLDALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_SCOUT_GYLDALFAR</MiddleArtDefineTag>
+					</UnitMeshGroup>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_SCOUT_GYLDALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_SCOUT_GYLDALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_SCOUT_GYLDALFAR</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_SETTLER</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_SETTLER_MALE_LJOSALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_SETTLER_MALE_LJOSALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_SETTLER_MALE_LJOSALFAR</MiddleArtDefineTag>
+					</UnitMeshGroup>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_SETTLER_FEMALE_LJOSALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_SETTLER_FEMALE_LJOSALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_SETTLER_FEMALE_LJOSALFAR</MiddleArtDefineTag>
+					</UnitMeshGroup>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_SETTLER_CHILD_LJOSALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_SETTLER_CHILD_LJOSALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_SETTLER_CHILD_LJOSALFAR</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_SLAVE</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_WORKER_GYLDALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_WORKER_GYLDALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_WORKER_GYLDALFAR</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_COMMANDER</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_COMMANDER_ELF_GYLDALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_COMMANDER_ELF_GYLDALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_COMMANDER_ELF_GYLDALFAR</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_SWORDSMAN</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_SWORDSMAN_GYLDALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_SWORDSMAN_GYLDALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_SWORDSMAN_GYLDALFAR</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_WAR_ELEPHANT</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_WAR_ELEPHANT_GYLDALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_WAR_ELEPHANT_GYLDALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_WAR_ELEPHANT_GYLDALFAR</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_WARRIOR</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_WARRIOR_GYLDALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_WARRIOR_GYLDALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_WARRIOR_GYLDALFAR</MiddleArtDefineTag>
+					</UnitMeshGroup>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_WARRIOR_GYLDALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_WARRIOR_GYLDALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_WARRIOR_GYLDALFAR</MiddleArtDefineTag>
+					</UnitMeshGroup>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_WARRIOR_GYLDALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_WARRIOR_GYLDALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_WARRIOR_GYLDALFAR</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_WORKER</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_WORKER_GYLDALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_WORKER_GYLDALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_WORKER_GYLDALFAR</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_BERSERKER</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_BERSERKER_ELF_GYLDALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_BERSERKER_ELF_GYLDALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_BERSERKER_ELF_GYLDALFAR</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_SPEARMAN</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_SPEARMAN_ELF_GYLDALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_SPEARMAN_ELF_GYLDALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_SPEARMAN_ELF_GYLDALFAR</MiddleArtDefineTag>
+					</UnitMeshGroup>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_SPEARMAN_ELF_GYLDALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_SPEARMAN_ELF_GYLDALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_SPEARMAN_ELF_GYLDALFAR</MiddleArtDefineTag>
+					</UnitMeshGroup>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_SPEARMAN_ELF_GYLDALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_SPEARMAN_ELF_GYLDALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_SPEARMAN_ELF_GYLDALFAR</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_PIKEMAN</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_PIKEMAN_ELF_GYLDALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_PIKEMAN_ELF_GYLDALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_PIKEMAN_ELF_GYLDALFAR</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_PHALANX</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_PHALANX_ELF</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_PHALANX_ELF</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_PHALANX_ELF</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+			<StyleUnit>
+					<UnitType>UNIT_KITHRA</UnitType>
+					<PromotionType>PROMOTION_PEGASUS</PromotionType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_MOUNTED_PEGASUS_UNIT_KITHRA_AUSTRIN</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_MOUNTED_PEGASUS_UNIT_KITHRA_AUSTRIN</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_MOUNTED_PEGASUS_UNIT_KITHRA_AUSTRIN+</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				</StyleUnits>
+		</UnitArtStyleTypeInfo>
+		<!--<UnitArtStyleTypeInfo>
+			<Type>UNIT_ARTSTYLE_DARK_ELF_GYLDALFAR</Type>
 			<StyleUnits>
 				<StyleUnit>
 					<UnitType>UNIT_ROGUE</UnitType>
@@ -43,52 +387,52 @@
 						<MiddleArtDefineTag>ART_DEF_UNIT_PANTHER</MiddleArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
-				<!--<StyleUnit>
+				<StyleUnit>
 					<UnitType>UNIT_COMPACT_GUARDIAN</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_BEASTMASTER_SVARTALFAR</EarlyArtDefineTag>
 						<LateArtDefineTag>ART_DEF_UNIT_BEASTMASTER_SVARTALFAR</LateArtDefineTag>
 						<MiddleArtDefineTag>ART_DEF_UNIT_BEASTMASTER_SVARTALFAR</MiddleArtDefineTag>
 					</UnitMeshGroup>
-				</StyleUnit>-->
+				</StyleUnit>
 			</StyleUnits>
 		</UnitArtStyleTypeInfo>
 		<UnitArtStyleTypeInfo>
-			<Type>UNIT_ARTSTYLE_ELF</Type>
+			<Type>UNIT_ARTSTYLE_ELF_GYLDALFAR</Type>
 			<StyleUnits>
 				<StyleUnit>
 					<UnitType>UNIT_ROGUE</UnitType>
 					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_SCOUT_LJOSALFAR</EarlyArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_SCOUT_LJOSALFAR</LateArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_SCOUT_LJOSALFAR</MiddleArtDefineTag>
+						<EarlyArtDefineTag>ART_DEF_UNIT_SCOUT_GYLDALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_SCOUT_GYLDALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_SCOUT_GYLDALFAR</MiddleArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
 					<UnitType>UNIT_VAGABOND</UnitType>
 					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_HUNTER_LJOSALFAR</EarlyArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_HUNTER_LJOSALFAR</LateArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_HUNTER_LJOSALFAR</MiddleArtDefineTag>
+						<EarlyArtDefineTag>ART_DEF_UNIT_HUNTER_GYLDALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_HUNTER_GYLDALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_HUNTER_GYLDALFAR</MiddleArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
 					<UnitType>UNIT_WAYLAYER</UnitType>
 					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_RANGER_LJOSALFAR</EarlyArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_RANGER_LJOSALFAR</LateArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_RANGER_LJOSALFAR</MiddleArtDefineTag>
+						<EarlyArtDefineTag>ART_DEF_UNIT_RANGER_GYLDALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_RANGER_GYLDALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_RANGER_GYLDALFAR</MiddleArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
-				<!--<StyleUnit>
+				<StyleUnit>
 					<UnitType>UNIT_COMPACT_GUARDIAN</UnitType>
 					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_BEASTMASTER_LJOSALFAR</EarlyArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_BEASTMASTER_LJOSALFAR</LateArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_BEASTMASTER_LJOSALFAR</MiddleArtDefineTag>
+						<EarlyArtDefineTag>ART_DEF_UNIT_BEASTMASTER_GYLDALFAR</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_BEASTMASTER_GYLDALFAR</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_BEASTMASTER_GYLDALFAR</MiddleArtDefineTag>
 					</UnitMeshGroup>
-				</StyleUnit>-->
+				</StyleUnit>
 			</StyleUnits>
-		</UnitArtStyleTypeInfo>
+		</UnitArtStyleTypeInfo>-->
 	</UnitArtStyleTypeInfos>
 </Civ4UnitArtStyleTypeInfos>

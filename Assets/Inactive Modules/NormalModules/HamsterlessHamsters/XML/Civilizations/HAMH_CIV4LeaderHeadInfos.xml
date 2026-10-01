@@ -8,22 +8,22 @@
 	<LeaderHeadInfos>
 		<LeaderHeadInfo>
 			<Type>LEADER_VALK</Type><!--Valkrionn-->
-			<Description>TXT_KEY_LEADER_VALK</Description>
+			<Description>TXT_KEY_LEADER_VALK_NO</Description>
 			<Civilopedia>TXT_KEY_LEADER_VALK_NO_PEDIA</Civilopedia>
-			<Image>Art/Modules/Hamstalfar/Popups/ValkPop.dds</Image>
+			<Image>Art/Modules/Hamstalfar/Leaderheads/GyldalfarLeader.dds</Image>
 			<ArtDefineTag>ART_DEF_LEADER_VALK</ArtDefineTag>
 		</LeaderHeadInfo>
 		<LeaderHeadInfo>
 			<Type>LEADER_ELDER</Type><!--Elder Malasa-->
-			<Description>TXT_KEY_LEADER_ELDER</Description>
-			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
-			<Image>Art/Modules/Hamstalfar/Popups/ElderPop.dds</Image>
-			<ArtDefineTag>ART_DEF_LEADER_ELDER</ArtDefineTag>
+			<Description>TXT_KEY_LEADER_ELDER_NO</Description>
+			<Civilopedia>TXT_KEY_LEADER_ELDER_NO_PEDIA</Civilopedia>
+			<Image>Art/Modules/Hamstalfar/Leaderheads/Allejauriahvoth.dds</Image>
+			<ArtDefineTag>ART_DEF_LEADER_ALLEJA</ArtDefineTag>
 		</LeaderHeadInfo>
 		<LeaderHeadInfo>
 			<Type>LEADER_TARQ</Type><!--Tarquelne-->
-			<Description>TXT_KEY_LEADER_TARQ</Description>
-			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
+			<Description>TXT_KEY_LEADER_TARQ_NO</Description>
+			<Civilopedia>TXT_KEY_LEADER_TARQ_NO_PEDIA</Civilopedia>
 			<Image>Art/Modules/Hamstalfar/Popups/TarqPop.dds</Image>
 			<ArtDefineTag>ART_DEF_LEADER_TARQ</ArtDefineTag>
 		</LeaderHeadInfo>

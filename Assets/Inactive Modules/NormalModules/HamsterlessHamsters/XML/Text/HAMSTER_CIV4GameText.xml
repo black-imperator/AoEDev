@@ -106,20 +106,20 @@ As ice choked the land and food became impossible to find, they found strength i
 Now, much later, the Gyldalfar culture is well established. The merchant lords rule a much larger Elven population and own most property. Still, the relationship between the patricians and commons is generally very good as the gyld families are gifted leaders. Elven culture outside the main cities tends to be governed by elven warlords whose only loyalty to the families stems from the riches that flow down their trade routes, ensuring a level of comfort they would not have known as simple bandits, though their soldiers still look like bandits if you were to see them from afar.[PARAGRAPH:1]When the seasons dictate a time of hardship, soldiers and warlords will undertake the Trial of Five Winds to determine who will be the one to lead the warhoste.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_LEADER_VALK</Tag>
-		<English>Valkrionn</English>
-		<French>Valkrionn</French>
-		<German>Valkrionn</German>
-		<Italian>Valkrionn</Italian>
-		<Spanish>Valkrionn</Spanish>
+		<Tag>TXT_KEY_LEADER_VALK_NO</Tag>
+		<English>Valkar, Gyld King</English>
+		<French>Valkar, Gyld King</French>
+		<German>Valkar, Gyld King</German>
+		<Italian>Valkar, Gyld King</Italian>
+		<Spanish>Valkar, Gyld King</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_VALK_NO_PEDIA</Tag>
-		<English>The Gyld King is an elected monarch, the head of each Great House - the Merchant Lords - casting a vote. Valkrionn was elected unanimously and rules with absolute power. A master organizer, all the Gyldhold is run with deft efficiency. Yet he is also both flexible and persuasive, guiding the Gyldalfar through great policy changes both quickly and without misstep.[NEWLINE][NEWLINE]It is said his gold eye possesses the power to see true motives of both man and elf.</English>
-		<French>The Gyld King is an elected monarch, the head of each Great House - the Merchant Lords - casting a vote. Valkrionn was elected unanimously and rules with absolute power. A master organizer, all the Gyldhold is run with deft efficiency. Yet he is also both flexible and persuasive, guiding the Gyldalfar through great policy changes both quickly and without misstep.[NEWLINE][NEWLINE]It is said his gold eye possesses the power to see true motives of both man and elf.</French>
-		<German>The Gyld King is an elected monarch, the head of each Great House - the Merchant Lords - casting a vote. Valkrionn was elected unanimously and rules with absolute power. A master organizer, all the Gyldhold is run with deft efficiency. Yet he is also both flexible and persuasive, guiding the Gyldalfar through great policy changes both quickly and without misstep.[NEWLINE][NEWLINE]It is said his gold eye possesses the power to see true motives of both man and elf.</German>
-		<Italian>The Gyld King is an elected monarch, the head of each Great House - the Merchant Lords - casting a vote. Valkrionn was elected unanimously and rules with absolute power. A master organizer, all the Gyldhold is run with deft efficiency. Yet he is also both flexible and persuasive, guiding the Gyldalfar through great policy changes both quickly and without misstep.[NEWLINE][NEWLINE]It is said his gold eye possesses the power to see true motives of both man and elf.</Italian>
-		<Spanish>The Gyld King is an elected monarch, the head of each Great House - the Merchant Lords - casting a vote. Valkrionn was elected unanimously and rules with absolute power. A master organizer, all the Gyldhold is run with deft efficiency. Yet he is also both flexible and persuasive, guiding the Gyldalfar through great policy changes both quickly and without misstep.[NEWLINE][NEWLINE]It is said his gold eye possesses the power to see true motives of both man and elf.</Spanish>
+		<English>The Gyld King is an elected monarch, the head of each Great House - the Merchant Lords - casting a vote. Valkar was elected unanimously and rules with absolute power. A master organizer, all the Gyldhold is run with deft efficiency. Yet he is also both flexible and persuasive, guiding the Gyldalfar through great policy changes both quickly and without misstep.[NEWLINE][NEWLINE]It is said his gold eye possesses the power to see true motives of both man and elf.</English>
+		<French>The Gyld King is an elected monarch, the head of each Great House - the Merchant Lords - casting a vote. Valkar was elected unanimously and rules with absolute power. A master organizer, all the Gyldhold is run with deft efficiency. Yet he is also both flexible and persuasive, guiding the Gyldalfar through great policy changes both quickly and without misstep.[NEWLINE][NEWLINE]It is said his gold eye possesses the power to see true motives of both man and elf.</French>
+		<German>The Gyld King is an elected monarch, the head of each Great House - the Merchant Lords - casting a vote. Valkar was elected unanimously and rules with absolute power. A master organizer, all the Gyldhold is run with deft efficiency. Yet he is also both flexible and persuasive, guiding the Gyldalfar through great policy changes both quickly and without misstep.[NEWLINE][NEWLINE]It is said his gold eye possesses the power to see true motives of both man and elf.</German>
+		<Italian>The Gyld King is an elected monarch, the head of each Great House - the Merchant Lords - casting a vote. Valkar was elected unanimously and rules with absolute power. A master organizer, all the Gyldhold is run with deft efficiency. Yet he is also both flexible and persuasive, guiding the Gyldalfar through great policy changes both quickly and without misstep.[NEWLINE][NEWLINE]It is said his gold eye possesses the power to see true motives of both man and elf.</Italian>
+		<Spanish>The Gyld King is an elected monarch, the head of each Great House - the Merchant Lords - casting a vote. Valkar was elected unanimously and rules with absolute power. A master organizer, all the Gyldhold is run with deft efficiency. Yet he is also both flexible and persuasive, guiding the Gyldalfar through great policy changes both quickly and without misstep.[NEWLINE][NEWLINE]It is said his gold eye possesses the power to see true motives of both man and elf.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HAMSTER_COMMANDER_NO_PEDIA</Tag>
@@ -205,11 +205,21 @@ So-called Five Winds Warlords get their title from the Gyldalfar doctrine of fle
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_COMPACT_NO_PEDIA</Tag>
-		<English>Thanks to the elven oath sworn between the Alfar merchant families, their lands are prosperous, healthy, and well-defended.</English>
-		<French>Thanks to the elven oath sworn between the Alfar merchant families, their lands are prosperous, healthy, and well-defended.</French>
-		<German>Thanks to the elven oath sworn between the Alfar merchant families, their lands are prosperous, healthy, and well-defended.</German>
-		<Italian>Thanks to the elven oath sworn between the Alfar merchant families, their lands are prosperous, healthy, and well-defended.</Italian>
-		<Spanish>Thanks to the elven oath sworn between the Alfar merchant families, their lands are prosperous, healthy, and well-defended.</Spanish>
+		<English>Thanks to the elven oath sworn between the Alfar merchant families, their lands are prosperous, healthy, and well-defended.
+		
+		And in exchange for their generocity, the ruling families will pocket any excess funds from their trade routes. As is their right.</English>
+		<French>Thanks to the elven oath sworn between the Alfar merchant families, their lands are prosperous, healthy, and well-defended.
+		
+		And in exchange for their generocity, the ruling families will pocket any excess funds from their trade routes. As is their right.</French>
+		<German>Thanks to the elven oath sworn between the Alfar merchant families, their lands are prosperous, healthy, and well-defended.
+		
+		And in exchange for their generocity, the ruling families will pocket any excess funds from their trade routes. As is their right.</German>
+		<Italian>Thanks to the elven oath sworn between the Alfar merchant families, their lands are prosperous, healthy, and well-defended.
+		
+		And in exchange for their generocity, the ruling families will pocket any excess funds from their trade routes. As is their right.</Italian>
+		<Spanish>Thanks to the elven oath sworn between the Alfar merchant families, their lands are prosperous, healthy, and well-defended.
+		
+		And in exchange for their generocity, the ruling families will pocket any excess funds from their trade routes. As is their right.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_COMPACT_NO_SHORT</Tag>
@@ -384,12 +394,40 @@ So-called Five Winds Warlords get their title from the Gyldalfar doctrine of fle
 		<Spanish>Shadow Warriors</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_LEADER_ELDER</Tag>
-		<English>Elder Malasa</English>
-		<French>Elder Malasa</French>
-		<German>Malasa, der Altehrw&#252;rdige</German>
-		<Italian>Elder Malasa</Italian>
-		<Spanish>Elder Malasa</Spanish>
+		<Tag>TXT_KEY_LEADER_ELDER_NO</Tag>
+		<English>Alleja Ruonnia</English>
+		<French>Alleja Ruonnia</French>
+		<German>Alleja Ruonnia</German>
+		<Italian>Alleja Ruonnia</Italian>
+		<Spanish>Alleja Ruonnia</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_ELDER_NO_PEDIA</Tag>
+		<English>Alleja is the youngest ranking member of the Ruonnia family, with a fearlessness born of youth, she has made daring manouver and after daring manouver both in the courts and the sparring grounds.
+
+Wisdom may be born of years, but her towering intellect has run circles around the doddering family elders, and before they knew what was happening, they found themselves cornered into voting her the first Gyld Queen in their history.
+
+She feels invincible, but elves' memories are long and slow to forgive public embarrassment.</English>
+		<French>Alleja is the youngest ranking member of the Ruonnia family, with a fearlessness born of youth, she has made daring manouver and after daring manouver both in the courts and the sparring grounds.
+
+Wisdom may be born of years, but her towering intellect has run circles around the doddering family elders, and before they knew what was happening, they found themselves cornered into voting her the first Gyld Queen in their history.
+
+She feels invincible, but elves' memories are long and slow to forgive public embarrassment.</French>
+		<German>Alleja is the youngest ranking member of the Ruonnia family, with a fearlessness born of youth, she has made daring manouver and after daring manouver both in the courts and the sparring grounds.
+
+Wisdom may be born of years, but her towering intellect has run circles around the doddering family elders, and before they knew what was happening, they found themselves cornered into voting her the first Gyld Queen in their history.
+
+She feels invincible, but elves' memories are long and slow to forgive public embarrassment.</German>
+		<Italian>Alleja is the youngest ranking member of the Ruonnia family, with a fearlessness born of youth, she has made daring manouver and after daring manouver both in the courts and the sparring grounds.
+
+Wisdom may be born of years, but her towering intellect has run circles around the doddering family elders, and before they knew what was happening, they found themselves cornered into voting her the first Gyld Queen in their history.
+
+She feels invincible, but elves' memories are long and slow to forgive public embarrassment.</Italian>
+		<Spanish>Alleja is the youngest ranking member of the Ruonnia family, with a fearlessness born of youth, she has made daring manouver and after daring manouver both in the courts and the sparring grounds.
+
+Wisdom may be born of years, but her towering intellect has run circles around the doddering family elders, and before they knew what was happening, they found themselves cornered into voting her the first Gyld Queen in their history.
+
+She feels invincible, but elves' memories are long and slow to forgive public embarrassment.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_ELDER</Tag>
@@ -456,12 +494,80 @@ So-called Five Winds Warlords get their title from the Gyldalfar doctrine of fle
 		<Spanish>Bottega</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_LEADER_TARQ</Tag>
-		<English>Tarquelne</English>
-		<French>Tarquelne</French>
-		<German>Tarquelne</German>
-		<Italian>Tarquelne</Italian>
-		<Spanish>Tarquelne</Spanish>
+		<Tag>TXT_KEY_LEADER_TARQ_NO</Tag>
+		<English>Pavar</English>
+		<French>Pavar</French>
+		<German>Pavar</German>
+		<Italian>Pavar</Italian>
+		<Spanish>Pavar</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_TARQ_NO_PEDIA</Tag>
+		<English>As the eldest of the Tarq family, Pavar is expected to expand the family's business interests and secure dominance in the shifting sands of public office.
+And yet he seems to wile away his days at court parties, shaking hands and making friends with the people he should be subverting.
+
+Slowly he accumulates an entourage of lesser lords and ladies of all the houses,  eager to spill wine and words until the late hours.
+
+He is not Alleja, swooping and diving through a gauntlet of knives, where one false step would end the tale; he doesn't need to be. 
+She hears his ideas through her brother, and they take hold because they are good ideas and just so happen to benefit House Tarq a little more than others.
+
+He is not a warlord in the wylds, governing some backwater trade depot and amassing men to take things by force; he doesn't need to be.
+He knows the warlord had bought his son a tutor in the city, and the tutor is an old friend.
+
+He is not the Gyld King, holding council over the five families as he decides people's fates with the stroke of a quill; he doesn't need to be.
+Everything on those parchments was his idea.</English>
+		<French>As the eldest of the Tarq family, Pavar is expected to expand the family's business interests and secure dominance in the shifting sands of public office.
+And yet he seems to wile away his days at court parties, shaking hands and making friends with the people he should be subverting.
+
+Slowly he accumulates an entourage of lesser lords and ladies of all the houses,  eager to spill wine and words until the late hours.
+
+He is not Alleja, swooping and diving through a gauntlet of knives, where one false step would end the tale; he doesn't need to be. 
+She hears his ideas through her brother, and they take hold because they are good ideas and just so happen to benefit House Tarq a little more than others.
+
+He is not a warlord in the wylds, governing some backwater trade depot and amassing men to take things by force; he doesn't need to be.
+He knows the warlord had bought his son a tutor in the city, and the tutor is an old friend.
+
+He is not the Gyld King, holding council over the five families as he decides people's fates with the stroke of a quill; he doesn't need to be.
+Everything on those parchments was his idea.</French>
+		<German>As the eldest of the Tarq family, Pavar is expected to expand the family's business interests and secure dominance in the shifting sands of public office.
+And yet he seems to wile away his days at court parties, shaking hands and making friends with the people he should be subverting.
+
+Slowly he accumulates an entourage of lesser lords and ladies of all the houses,  eager to spill wine and words until the late hours.
+
+He is not Alleja, swooping and diving through a gauntlet of knives, where one false step would end the tale; he doesn't need to be. 
+She hears his ideas through her brother, and they take hold because they are good ideas and just so happen to benefit House Tarq a little more than others.
+
+He is not a warlord in the wylds, governing some backwater trade depot and amassing men to take things by force; he doesn't need to be.
+He knows the warlord had bought his son a tutor in the city, and the tutor is an old friend.
+
+He is not the Gyld King, holding council over the five families as he decides people's fates with the stroke of a quill; he doesn't need to be.
+Everything on those parchments was his idea.</German>
+		<Italian>As the eldest of the Tarq family, Pavar is expected to expand the family's business interests and secure dominance in the shifting sands of public office.
+And yet he seems to wile away his days at court parties, shaking hands and making friends with the people he should be subverting.
+
+Slowly he accumulates an entourage of lesser lords and ladies of all the houses,  eager to spill wine and words until the late hours.
+
+He is not Alleja, swooping and diving through a gauntlet of knives, where one false step would end the tale; he doesn't need to be. 
+She hears his ideas through her brother, and they take hold because they are good ideas and just so happen to benefit House Tarq a little more than others.
+
+He is not a warlord in the wylds, governing some backwater trade depot and amassing men to take things by force; he doesn't need to be.
+He knows the warlord had bought his son a tutor in the city, and the tutor is an old friend.
+
+He is not the Gyld King, holding council over the five families as he decides people's fates with the stroke of a quill; he doesn't need to be.
+Everything on those parchments was his idea.</Italian>
+		<Spanish>As the eldest of the Tarq family, Pavar is expected to expand the family's business interests and secure dominance in the shifting sands of public office.
+And yet he seems to wile away his days at court parties, shaking hands and making friends with the people he should be subverting.
+
+Slowly he accumulates an entourage of lesser lords and ladies of all the houses,  eager to spill wine and words until the late hours.
+
+He is not Alleja, swooping and diving through a gauntlet of knives, where one false step would end the tale; he doesn't need to be. 
+She hears his ideas through her brother, and they take hold because they are good ideas and just so happen to benefit House Tarq a little more than others.
+
+He is not a warlord in the wylds, governing some backwater trade depot and amassing men to take things by force; he doesn't need to be.
+He knows the warlord had bought his son a tutor in the city, and the tutor is an old friend.
+
+He is not the Gyld King, holding council over the five families as he decides people's fates with the stroke of a quill; he doesn't need to be.
+Everything on those parchments was his idea.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CELVAR</Tag>

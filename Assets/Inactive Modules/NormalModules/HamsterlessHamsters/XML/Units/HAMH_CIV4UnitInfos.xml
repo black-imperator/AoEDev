@@ -19,7 +19,7 @@
 				<iRangedWaveSize>0</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_KNIGHT_LJOSALFAR</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_COMMANDER_GYLDALFAR</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 		</UnitInfo>
@@ -37,7 +37,7 @@
 				<iRangedWaveSize>0</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>2</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_ELVEN_AERON_WORSHIPPER</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_BERSERKER2_ELF_GYLDALFAR</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 		</UnitInfo>
@@ -90,7 +90,7 @@
 				<iRangedWaveSize>0</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_ASSASSIN_LJOSALFAR</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_FLURRY_2</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 		</UnitInfo>

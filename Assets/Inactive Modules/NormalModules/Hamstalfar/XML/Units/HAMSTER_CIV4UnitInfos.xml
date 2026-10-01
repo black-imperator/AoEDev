@@ -533,7 +533,7 @@
 				<iRangedWaveSize>0</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>2</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_SCOUT_LJOSALFAR</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_SCOUT_GYLDALFAR</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<iTier>1</iTier>
@@ -599,11 +599,11 @@
 				<iRangedWaveSize>0</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_BEASTMASTER_LJOSALFAR</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_BEASTMASTER_GYLDALFAR</EarlyArtDefineTag>
 				</UnitMeshGroup>
 				<UnitMeshGroup>
 					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_BEASTMASTER_LJOSALFAR</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_BEASTMASTER_GYLDALFAR</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<iTier>2</iTier>
@@ -669,7 +669,7 @@
 				<iRangedWaveSize>0</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_MARKSMAN_LJOSALFAR</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_MARKSMAN_GYLDALFAR</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FreePromotions>
@@ -809,7 +809,7 @@
 				<iRangedWaveSize>0</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_ASSASSIN_LJOSALFAR</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_FLURRY_2</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FreePromotions>

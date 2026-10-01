@@ -15,7 +15,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_HAMSTER</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_HAMSTALFAR</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_WILDERNESS</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_ELF</UnitArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_GOLDEN_ELF_GYLDALFAR</UnitArtStyleType>
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>

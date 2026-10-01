@@ -128,7 +128,7 @@
 			<Description>TXT_KEY_PROMOTION_ALFAR</Description>
 			<Button>Art/Interface/Buttons/Promotions/Races/Elf.dds</Button>
 			<bRace>1</bRace>
-			<UnitArtStyleType>UNIT_ARTSTYLE_ELF</UnitArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_GOLDEN_ELF_GYLDALFAR</UnitArtStyleType>
 			<DamageTypeResists>
 				<DamageTypeResist>
 					<DamageType>DAMAGE_COLD</DamageType>

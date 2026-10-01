@@ -6,7 +6,7 @@
 <!-- Unit art path information -->
 <Civ4ArtDefines xmlns="x-schema:HAMSTER_CIV4ArtDefinesSchema.xml">
 	<UnitArtInfos>
-		<UnitArtInfo>
+		<UnitArtInfo> <!-- Classic Hamstalfar Bullshrimp Start -->
 			<Type>ART_DEF_UNIT_HAMSTER_COMMANDER</Type>
 			<Button>Art/Modules/Hamstalfar/Buttons/hamstercommander.dds</Button>
 			<fScale>0.46</fScale>
@@ -157,6 +157,851 @@
 				<AudioRunTypeLoop/>
 				<AudioRunTypeEnd/>
 			</AudioRunSounds>
+		</UnitArtInfo> <!-- Classic Hamstalfar Bullshrimp End -->
+		
+		
+			<!-- Gyldalfar Start -->
+ <UnitArtInfo> <!-- UNIT_ARCHER in UNIT_ARTSTYLE_GOLDEN_ELF -->
+			<Type>ART_DEF_UNIT_ARCHER_GYLDALFAR</Type>
+			<Button>Art/Interface/Buttons/Units/Archer Ljosalfar.dds</Button>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Modules/Hamstalfar/Units/Archer/Archer.nif</NIF>
+			<KFM>Art/Units/Archer/Archer.kfm</KFM>
+			<SHADERNIF>Art/Modules/Hamstalfar/Units/Archer/Archer_FX.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.85</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
 		</UnitArtInfo>
+		<UnitArtInfo> <!-- UNIT_ARCHMAGE in UNIT_ARTSTYLE_GOLDEN_ELF -->
+			<Type>ART_DEF_UNIT_ARCHMAGE_GYLDALFAR</Type>
+			<Button>Art/Interface/Buttons/Units/Archmage Ljosalfar.dds</Button>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Modules/Hamstalfar/Units/spellsinger/maliskirmisher.nif</NIF>
+			<KFM>Art/animations/Skirmisher/maliskirmisher blood.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.95</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- UNIT_SHADOW in UNIT_ARTSTYLE_GOLDEN_ELF -->
+			<Type>ART_DEF_UNIT_ASSASSIN_GYLDALFAR</Type>
+			<Button>Art/Interface/Buttons/Units/Assassin Ljosalfar.dds</Button>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Modules/Hamstalfar/Units/Assassin/ranger.nif</NIF>
+			<KFM>Art/Units/Archer/Archer.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.85</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- UNIT_BEASTMASTER in UNIT_ARTSTYLE_GOLDEN_ELF -->
+			<Type>ART_DEF_UNIT_BEASTMASTER_GYLDALFAR</Type>
+			<Button>Art/Interface/Buttons/Units/Beastmaster Ljosalfar.dds</Button>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Modules/Hamstalfar/Units/woodelf/woodelf.nif</NIF>
+			<KFM>Art/Units/Archer/Archer.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.85</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- UNIT_COMMANDER in UNIT_ARTSTYLE_GOLDEN_ELF -->
+		<Type>ART_DEF_UNIT_COMMANDER_GYLDALFAR</Type>
+			<Button>Art/Interface/Buttons/units/Knight.dds</Button>
+			<fScale>0.38</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Modules/Hamstalfar/Units/knight2/horseman.nif</NIF>
+			<KFM>Art/Units/Charlemagne_HeavyCavalry/HeavyCavalry.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/HorseShadow.nif</ShadowNIF>
+				<ShadowAttachNode>HorseBip Spine1</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIQUE_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- UNIT_DRUID in UNIT_ARTSTYLE_GOLDEN_ELF -->
+			<Type>ART_DEF_UNIT_DRUID_GYLDALFAR</Type>
+			<Button>Art/Interface/Buttons/Units/Druid Ljosalfar.dds</Button>
+			<fScale>0.42</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Modules/Hamstalfar/Units/Druid/ancientspy.nif</NIF>
+			<KFM>Art/Units/AncientSpy/AncientSpy.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.4</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- UNIT_FLURRY1 (maybe not?)  -->
+			<Type>ART_DEF_UNIT_FLURRY</Type>
+			<Button>Art/Interface/Buttons/Units/Flurry.dds</Button>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Modules/Hamstalfar/Units/Flurry/waywatcher1.nif</NIF>
+			<KFM>Art/Units/Archer/Archer.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.85</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- UNIT_FLURRY (Yes, use) -->
+			<Type>ART_DEF_UNIT_FLURRY_2</Type>
+			<Button>Art/Interface/Buttons/Units/Flurry.dds</Button>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Modules/Hamstalfar/Units/Flurry2/unique_babylon_bowman.nif</NIF>
+			<KFM>Art/Units/Longbowman_Middle_East/Unique_Babylon_Bowman.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.85</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- UNIT_FYRDWELL -->
+			<Type>ART_DEF_UNIT_FYRDWELL</Type>
+			<Button>Art/Interface/Buttons/Units/Fyrdwell.dds</Button>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Modules/Hamstalfar/Units/Fyrdwell/HorseArcher.nif</NIF>
+			<KFM>Art/Units/HorseArcher/HorseArcher.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/HorseShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- UNIT_HORSEMAN in UNIT_ARTSTYLE_GOLDEN_ELF -->
+			<Type>ART_DEF_UNIT_HORSEMAN_GYLDALFAR</Type>
+			<Button>Art/Interface/Buttons/Units/Horseman.dds</Button>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Modules/Hamstalfar/Units/Horseman/gladerider.nif</NIF>
+			<KFM>Art/Units/scenario/companion_cavalry/Companion_Cavalry.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/HorseShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- UNIT_HORSEMAN in UNIT_ARTSTYLE_GOLDEN_ELF -->
+			<Type>ART_DEF_UNIT_HORSEMAN_GYLDALFAR_HYAPON</Type>
+			<Button>Art/Interface/Buttons/Units/Horseman.dds</Button>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Modules/Hamstalfar/Units/Horseman/gladerider-hyapon.nif</NIF>
+			<KFM>Art/Units/scenario/companion_cavalry/Companion_Cavalry.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/HorseShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- UNIT_HORSEMAN in UNIT_ARTSTYLE_GOLDEN_ELF -->
+			<Type>ART_DEF_UNIT_HORSEMAN_GYLDALFAR_NIGHTMARE</Type>
+			<Button>Art/Interface/Buttons/Units/Horseman.dds</Button>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Modules/Hamstalfar/Units/Horseman/gladerider-nightmare.nif</NIF>
+			<KFM>Art/Units/scenario/companion_cavalry/Companion_Cavalry.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/HorseShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- UNIT_HUNTER in UNIT_ARTSTYLE_GOLDEN_ELF -->
+			<Type>ART_DEF_UNIT_HUNTER_GYLDALFAR</Type>
+			<Button>Art/Interface/Buttons/Units/Hunter Ljosalfar.dds</Button>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Modules/Hamstalfar/Units/Hunter/gladeguard2.nif</NIF>
+			<KFM>Art/Units/Warrior/Warrior.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- UNIT_IMMORTAL in UNIT_ARTSTYLE_GOLDEN_ELF -->
+			<Type>ART_DEF_UNIT_IMMORTAL_GYLDALFAR</Type>
+			<Button>Art/Interface/Buttons/Units/Immortal.dds</Button>
+			<fScale>0.50</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Modules/Hamstalfar/Units/woodelf2/woodelf3.nif</NIF>
+			<KFM>Art/Units/Warrior/Warrior.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+	<UnitArtInfo>	<!--UNIT_KNIGHT-->
+			<Type>ART_DEF_UNIT_KNIGHT_GYLDALFAR</Type>
+			<Button>Art/Interface/Buttons/units/Knight.dds</Button>
+			<fScale>0.38</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Modules/Hamstalfar/Units/knight2/horseman.nif</NIF>
+			<KFM>Art/Units/Charlemagne_HeavyCavalry/HeavyCavalry.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/HorseShadow.nif</ShadowNIF>
+				<ShadowAttachNode>HorseBip Spine1</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIQUE_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+	<UnitArtInfo>	<!--UNIT_KNIGHT-->
+			<Type>ART_DEF_UNIT_KNIGHT_GYLDALFAR_HYAPON</Type>
+			<Button>Art/Interface/Buttons/units/Knight.dds</Button>
+			<fScale>0.38</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Modules/Hamstalfar/Units/knight2/horseman-hyapon.nif</NIF>
+			<KFM>Art/Units/Charlemagne_HeavyCavalry/HeavyCavalry.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/HorseShadow.nif</ShadowNIF>
+				<ShadowAttachNode>HorseBip Spine1</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIQUE_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+	<UnitArtInfo>	<!--UNIT_KNIGHT-->
+			<Type>ART_DEF_UNIT_KNIGHT_GYLDALFAR_NIGHTMARE</Type>
+			<Button>Art/Interface/Buttons/units/Knight.dds</Button>
+			<fScale>0.38</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Modules/Hamstalfar/Units/knight2/horseman-nightmare.nif</NIF>
+			<KFM>Art/Units/Charlemagne_HeavyCavalry/HeavyCavalry.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/HorseShadow.nif</ShadowNIF>
+				<ShadowAttachNode>HorseBip Spine1</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIQUE_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+			<UnitArtInfo> <!-- UNIT_SAGITTAR --> <!-- UNIT_LONGBOWMAN in UNIT_ARTSTYLE_GOLDEN_ELF -->
+			<Type>ART_DEF_UNIT_LONGBOWMAN_GYLDALFAR</Type>
+			<Button>Art/Interface/Buttons/Units/Longbowman Ljosalfar.dds</Button>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Modules/Hamstalfar/Units/Longbowman/gladearcher2.nif</NIF>
+			<KFM>Art/Units/Archer/Archer.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.85</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- UNIT_MAGE in UNIT_ARTSTYLE_GOLDEN_ELF -->
+			<Type>ART_DEF_UNIT_MAGE_GYLDALFAR</Type>
+			<Button>Art/Interface/Buttons/Units/Mage Ljosalfar.dds</Button>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Modules/Hamstalfar/Units/Mage/AncientSpy.nif</NIF>
+			<KFM>Art/Units/AncientSpy/AncientSpy.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- UNIT_THIEF in UNIT_ARTSTYLE_GOLDEN_ELF -->
+			<Type>ART_DEF_UNIT_MARKSMAN_GYLDALFAR</Type>
+			<Button>Art/Interface/Buttons/Units/Marksman Ljosalfar.dds</Button>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Modules/Hamstalfar/Units/Marksman/waywatcher2.nif</NIF>
+			<KFM>Art/Units/Archer/Archer.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.85</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- UNIT_ADEPT in UNIT_ARTSTYLE_GOLDEN_ELF -->
+			<Type>ART_DEF_UNIT_NEW_ADEPT_GYLDALFAR</Type>
+			<Button>Art/Interface/Buttons/Units/Adept Ljosalfar.dds</Button>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Modules/Hamstalfar/Units/New Adept/ancientspy.nif</NIF>
+			<KFM>Art/Units/AncientSpy/ancientspy.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.95</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- UNIT_RANGER in UNIT_ARTSTYLE_GOLDEN_ELF -->
+			<Type>ART_DEF_UNIT_RANGER_GYLDALFAR</Type>
+			<Button>Art/Interface/Buttons/Units/Ranger Ljosalfar.dds</Button>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Modules/Hamstalfar/Units/Ranger/Archer.nif</NIF>
+			<KFM>Art/animations/Archer/Archer.kfm</KFM>
+			<SHADERNIF>Art/Modules/Hamstalfar/Units/Ranger/Archer_fx.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.85</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- UNIT_SCOUT in UNIT_ARTSTYLE_GOLDEN_ELF -->
+			<Type>ART_DEF_UNIT_SCOUT_GYLDALFAR</Type>
+			<Button>Art/Interface/Buttons/Units/Scout Ljosalfar.dds</Button>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Modules/Hamstalfar/Units/Scout/Archer.nif</NIF>
+			<KFM>Art/Units/Archer/Archer.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.85</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- UNIT_SWORDSMAN in UNIT_ARTSTYLE_GOLDEN_ELF -->
+			<Type>ART_DEF_UNIT_SWORDSMAN_GYLDALFAR</Type>
+			<Button>Art/Interface/Buttons/Units/Swordsman Ljosalfar.dds</Button>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Modules/Hamstalfar/Units/Swordsman/gladeguard1.nif</NIF>
+			<KFM>Art/Units/Warrior/Warrior.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- UNIT_WAR_ELEPHANT in UNIT_ARTSTYLE_GYLDALFAR --> <!-- UNIT_WAR_ELEPHANT in UNIT_ARTSTYLE_GOLDEN_ELF -->
+			<Type>ART_DEF_UNIT_WAR_ELEPHANT_GYLDALFAR</Type>
+			<Button>Art/Interface/Buttons/Units/War Elephant.dds</Button>
+			<fScale>0.32</fScale>
+			<fInterfaceScale>0.6</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Modules/Hamstalfar/Units/War Elephant/WarElephant.nif</NIF>
+			<KFM>Art/Units/WarElephant/WarElephant.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/WarElephantShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.45</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- UNIT_WARRIOR in UNIT_ARTSTYLE_GOLDEN_ELF -->
+			<Type>ART_DEF_UNIT_WARRIOR_GYLDALFAR</Type>
+			<Button>Art/Interface/Buttons/Units/Warrior Ljosalfar.dds</Button>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Modules/Hamstalfar/Units/elf_warrior2/warrior.nif</NIF>
+			<KFM>Art/Units/warrior/warrior.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.85</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>  <!-- UNIT_SLAVE in UNIT_ARTSTYLE_GOLDEN_ELF --> <!-- UNIT_WORKER in UNIT_ARTSTYLE_GOLDEN_ELF -->
+			<Type>ART_DEF_UNIT_WORKER_GYLDALFAR</Type>
+			<Button>Art/Interface/Buttons/Units/Worker Ljosalfar.dds</Button>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Modules/Hamstalfar/Units/Worker/Worker.nif</NIF>
+			<KFM>Art/Animations/CombatWorker/CombatWorker.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.9</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+	<UnitArtInfo> <!-- UNIT_BERSERKER2 in UNIT_ARTSTYLE_GOLDEN_ELF -->
+			<Type>ART_DEF_UNIT_BERSERKER2_ELF_GYLDALFAR</Type>
+			<Button>Art/Interface/Buttons/Units/Berserker.dds</Button>
+			<fScale>0.45</fScale>
+			<fInterfaceScale>0.8</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Modules/Hamstalfar/Units/wardancer/wardancer.nif</NIF>
+			<KFM>Art/Animations/AustrinChampion/AustrinChampion.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+	<UnitArtInfo> <!-- UNIT_BERSERKER in UNIT_ARTSTYLE_GOLDEN_ELF -->
+			<Type>ART_DEF_UNIT_BERSERKER_ELF_GYLDALFAR</Type>
+			<Button>Art/Interface/Buttons/Units/Berserker.dds</Button>
+			<fScale>0.45</fScale>
+			<fInterfaceScale>0.8</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Modules/Hamstalfar/Units/wardancer/wardancer_alt.nif</NIF>
+			<KFM>Art/Animations/AustrinChampion/AustrinChampion.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- UNIT_CHARIOT in UNIT_ARTSTYLE_GOLDEN_ELF -->
+			<Type>ART_DEF_UNIT_CHARIOT_GYLDALFAR</Type>
+			<Button>Art/Interface/Buttons/Units/Chariot.dds</Button>
+			<fScale>0.35</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Modules/Hamstalfar/Units/Chariot_european/Chariot_Celtic.nif</NIF>
+			<KFM>Art/animations/Chariot_Celtic/Chariot_Celtic blood.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/ChariotShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<TrailDefinition>
+				<Texture>Art/Shared/wheeltread.dds</Texture>
+				<fWidth>1</fWidth>
+				<fLength>180</fLength>
+				<fTaper>0</fTaper>
+				<fFadeStartTime>0.2</fFadeStartTime>
+				<fFadeFalloff>0.35</fFadeFalloff>
+			</TrailDefinition>
+			<fBattleDistance>0.2</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bSmoothMove>1</bSmoothMove>
+			<fAngleInterpRate>360</fAngleInterpRate>
+			<fExchangeAngle>-30</fExchangeAngle>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- UNIT_CHARIOT in UNIT_ARTSTYLE_GOLDEN_ELF -->
+			<Type>ART_DEF_UNIT_CHARIOT_GYLDALFAR_HYAPON</Type>
+			<Button>Art/Interface/Buttons/Units/Chariot.dds</Button>
+			<fScale>0.35</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Modules/Hamstalfar/Units/Chariot_european/Chariot_Celtic-hyapon.nif</NIF>
+			<KFM>Art/animations/Chariot_Celtic/Chariot_Celtic blood.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/ChariotShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<TrailDefinition>
+				<Texture>Art/Shared/wheeltread.dds</Texture>
+				<fWidth>1</fWidth>
+				<fLength>180</fLength>
+				<fTaper>0</fTaper>
+				<fFadeStartTime>0.2</fFadeStartTime>
+				<fFadeFalloff>0.35</fFadeFalloff>
+			</TrailDefinition>
+			<fBattleDistance>0.2</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bSmoothMove>1</bSmoothMove>
+			<fAngleInterpRate>360</fAngleInterpRate>
+			<fExchangeAngle>-30</fExchangeAngle>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- UNIT_CHARIOT in UNIT_ARTSTYLE_GOLDEN_ELF -->
+			<Type>ART_DEF_UNIT_CHARIOT_GYLDALFAR_NIGHTMARE</Type>
+			<Button>Art/Interface/Buttons/Units/Chariot.dds</Button>
+			<fScale>0.35</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Modules/Hamstalfar/Units/Chariot_european/Chariot_Celtic-nightmare.nif</NIF>
+			<KFM>Art/animations/Chariot_Celtic/Chariot_Celtic blood.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/ChariotShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<TrailDefinition>
+				<Texture>Art/Shared/wheeltread.dds</Texture>
+				<fWidth>1</fWidth>
+				<fLength>180</fLength>
+				<fTaper>0</fTaper>
+				<fFadeStartTime>0.2</fFadeStartTime>
+				<fFadeFalloff>0.35</fFadeFalloff>
+			</TrailDefinition>
+			<fBattleDistance>0.2</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bSmoothMove>1</bSmoothMove>
+			<fAngleInterpRate>360</fAngleInterpRate>
+			<fExchangeAngle>-30</fExchangeAngle>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- UNIT_CHAMPION in UNIT_ARTSTYLE_GOLDEN_ELF -->
+			<Type>ART_DEF_UNIT_CHAMPION_GYLDALFAR</Type>
+			<Button>Art/Interface/Buttons/Units/Champion.dds</Button>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Modules/Hamstalfar/Units/gladeguard/gladeguard.nif</NIF>
+			<KFM>Art/Units/Warrior/Warrior.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+	<UnitArtInfo> <!-- UNIT_SPEARMAN in UNIT_ARTSTYLE_GOLDEN_ELF -->
+			<Type>ART_DEF_UNIT_SPEARMAN_ELF_GYLDALFAR</Type>
+			<Button>Art/Interface/Buttons/Units/Spearman.dds</Button>
+			<fScale>0.48</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Modules/Hamstalfar/Units/warrior/Archer.nif</NIF>
+			<KFM>Art/Units/spearman/spearman.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+	<UnitArtInfo> <!-- UNIT_PIKEMAN in UNIT_ARTSTYLE_GOLDEN_ELF -->
+			<Type>ART_DEF_UNIT_PIKEMAN_ELF_GYLDALFAR</Type>
+			<Button>Art/Interface/Buttons/Units/Pikeman.dds</Button>
+			<fScale>0.48</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Modules/Hamstalfar/Units/militiaspearman2/gladeguard2.nif</NIF>
+			<KFM>Art/Units/Spearman/Spearman.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+			
+	<!-- Gyldalfar End -->
 	</UnitArtInfos>
 </Civ4ArtDefines>
