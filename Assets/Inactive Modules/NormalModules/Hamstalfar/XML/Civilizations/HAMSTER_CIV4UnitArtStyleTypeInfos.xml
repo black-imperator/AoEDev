@@ -199,6 +199,11 @@
 						<LateArtDefineTag>ART_DEF_UNIT_FYRDWELL</LateArtDefineTag>
 						<MiddleArtDefineTag>ART_DEF_UNIT_FYRDWELL</MiddleArtDefineTag>
 					</UnitMeshGroup>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_FYRDWELL</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_FYRDWELL</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_FYRDWELL</MiddleArtDefineTag>
+					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
 					<UnitType>UNIT_RANGER</UnitType>

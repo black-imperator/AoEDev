@@ -6,33 +6,6 @@
 <!-- Building Infos -->
 <Civ4BuildingInfos xmlns="x-schema:HAMSTER_CIV4BuildingsSchema.xml">
 	<BuildingInfos>
-		<BuildingInfo>		<!-- Merchant Caravan Elves -->
-			<BuildingClass>BUILDINGCLASS_MERCHANT_CARAVAN_ELVES</BuildingClass>
-			<Type>BUILDING_MERCHANT_CARAVAN_ELVES</Type>
-			<Description>TXT_KEY_BUILDING_MERCHANT_CARAVAN_ELVES</Description>
-			<Civilopedia>TXT_KEY_BUILDING_MERCHANT_CARAVAN_ELVES_PEDIA</Civilopedia>
-			<ArtDefineTag>ART_DEF_BUILDING_ARENA</ArtDefineTag>
-			<PrereqTech>TECH_EXPLORATION</PrereqTech>
-			<iPrereqPopulation>1</iPrereqPopulation>
-			<iAIWeight>10</iAIWeight>
-			<YieldModifiers>
-				<iYield>0</iYield>
-				<iYield>0</iYield>
-				<iYield>0</iYield>
-			</YieldModifiers>
-			<CommerceModifiers>
-				<iCommerce>0</iCommerce>
-				<iCommerce>0</iCommerce>
-				<iCommerce>0</iCommerce>
-			</CommerceModifiers>
-			<iCost>-1</iCost>
-			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<iConquestProb>0</iConquestProb>
-			<iAsset>4</iAsset>
-			<fVisibilityPriority>1000</fVisibilityPriority>
-			<ConstructSound>AS2D_BUILD_COURTHOUSE</ConstructSound>
-			<bAutoBuild>1</bAutoBuild>
-		</BuildingInfo>
 		<BuildingInfo>		<!-- Hall of the Fuzzy Lords -->
 			<BuildingClass>BUILDINGCLASS_PALACE</BuildingClass>
 			<Type>BUILDING_PALACE_HAMSTER</Type>
@@ -179,7 +152,7 @@
 			</BonusHappinessChanges>
 			<TradeCommerceModifiers>
 				<iCommerce>0</iCommerce>
-				<iCommerce>50</iCommerce>
+				<iCommerce>25</iCommerce>
 			</TradeCommerceModifiers>
 			<Flavors>
 				<Flavor>
@@ -212,6 +185,8 @@
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>10</fVisibilityPriority>
 			<TradeYieldModifiers>
+				<iYield>0</iYield>
+				<iYield>25</iYield>
 				<iYield>0</iYield>
 			</TradeYieldModifiers>
 			<RiverPlotYieldChanges>
@@ -284,6 +259,7 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 			</CommerceModifiers>
+			<iTradeRoutes>2</iTradeRoutes>
 			<SpecialistClassCounts>
 				<SpecialistClassCount>
 					<SpecialistClass>SPECIALISTCLASS_MERCHANT</SpecialistClass>
@@ -333,7 +309,7 @@
 			</SpecialistClassCounts>
 			<TradeYieldModifiers>
 				<iYield>0</iYield>
-				<iYield>50</iYield>
+				<iYield>25</iYield>
 			</TradeYieldModifiers>
 			<ConstructSound>AS2D_BUILD_FORGE</ConstructSound>
 			<Flavors>

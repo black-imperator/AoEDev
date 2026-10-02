@@ -13,7 +13,7 @@
 			<Civilopedia>TXT_KEY_UNIT_HAMSTER_COMMANDER_NO_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<UnitMeshGroups>
-				<iGroupSize>2</iGroupSize>
+				<iGroupSize>1</iGroupSize>
 				<fMaxSpeed>1.25</fMaxSpeed>
 				<iMeleeWaveSize>1</iMeleeWaveSize>
 				<iRangedWaveSize>0</iRangedWaveSize>
@@ -58,7 +58,7 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 		</UnitInfo>
-		<UnitInfo>		<!-- Ribauldequin - needs a rename and new model -->
+		<UnitInfo>		<!-- Eagle Claw Bolt Thrower  -->
 			<Class>UNITCLASS_CANNON</Class>
 			<Type>UNIT_RIBAULDEQUIN</Type>
 			<Combat>UNITCOMBAT_SIEGE</Combat>

@@ -67,10 +67,6 @@
 					<BuildingClassType>BUILDINGCLASS_ARTISANS_WORKSHOP</BuildingClassType>
 					<BuildingType>BUILDING_ARTISANS_WORKSHOP_HAMSTALFAR</BuildingType>
 				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_MERCHANT_CARAVAN_ELVES</BuildingClassType>
-					<BuildingType>BUILDING_MERCHANT_CARAVAN_ELVES</BuildingType>
-				</Building>
 			</Buildings>
 			<Units>
 				<Unit>

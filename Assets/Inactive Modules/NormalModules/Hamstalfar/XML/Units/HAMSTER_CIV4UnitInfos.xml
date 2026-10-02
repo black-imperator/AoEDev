@@ -120,7 +120,7 @@
 			<iMoves>3</iMoves>
 			<iAsset>5</iAsset>
 			<UnitMeshGroups>
-				<iGroupSize>2</iGroupSize>
+				<iGroupSize>1</iGroupSize>
 				<fMaxSpeed>1.25</fMaxSpeed>
 				<iMeleeWaveSize>1</iMeleeWaveSize>
 				<iRangedWaveSize>0</iRangedWaveSize>
@@ -180,7 +180,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_POISONS</PrereqTech>
+			<PrereqTech>TECH_FANATICISM</PrereqTech>
 			<ProductionTraits>
 				<ProductionTrait>
 					<ProductionTraitType>TRAIT_COLD_BLOODED</ProductionTraitType>
@@ -224,7 +224,6 @@
 			<iTier>2</iTier>
 			<iWithdrawlProbDefensive>40</iWithdrawlProbDefensive>
 			<iWeaponTierMax>3</iWeaponTierMax>
-			<PrereqBuildingClass>BUILDINGCLASS_HUNTING_LODGE</PrereqBuildingClass>
 			<DamageTypeCombats>
 				<DamageTypeCombat>
 					<DamageType>DAMAGE_POISON</DamageType>
@@ -449,13 +448,13 @@
 			<iCultureGarrison>7</iCultureGarrison>
 			<iAsset>16</iAsset>
 			<UnitMeshGroups>
-				<iGroupSize>1</iGroupSize>
+				<iGroupSize>2</iGroupSize>
 				<fMaxSpeed>1.25</fMaxSpeed>
 				<iMeleeWaveSize>1</iMeleeWaveSize>
 				<iRangedWaveSize>1</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_CANNON_HAMSTALFAR</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_EAGLE_BALLISTA</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>

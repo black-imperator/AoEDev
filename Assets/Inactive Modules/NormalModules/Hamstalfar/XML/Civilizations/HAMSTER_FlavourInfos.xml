@@ -1,0 +1,33 @@
+<CivFlavourInfos>
+	<CivFlavourInfo>
+		<Civilization>CIVILIZATION_HAMSTALFAR</Civilization>
+		<Preference>
+			<FlavourType>TERRAIN_PLAINS</FlavourType>
+			<Value>4</Value>
+		</Preference>
+		<Preference>
+			<FlavourType>MOBILITY</FlavourType>
+			<Value>2</Value>
+		</Preference>
+		<Preference>
+			<FlavourType>BONUS_OAK</FlavourType>
+			<Value>2</Value>
+		</Preference>
+		<Preference>
+			<FlavourType>RIVERSIDE</FlavourType>
+			<Value>2</Value>
+		</Preference>
+		<Preference>
+			<FlavourType>FEATURE_JUNGLE</FlavourType>
+			<Value>-2</Value>
+		</Preference>
+		<Preference>
+			<FlavourType>FEATURE_FOREST</FlavourType>
+			<Value>-2</Value>
+		</Preference>
+		<Preference>
+			<FlavourType>FEATURE_FOREST_ANCIENT</FlavourType>
+			<Value>-2</Value>
+		</Preference>
+	</CivFlavourInfo>
+</CivFlavourInfos>

@@ -31,20 +31,21 @@
 				<iCommerce>0</iCommerce>
 			</CommerceModifiers>
 		</TraitInfo>
-		<TraitInfo>		<!-- Elder -->
-			<Type>TRAIT_ELDER</Type>
+		<TraitInfo>		<!-- Studious Trader -->
+			<Type>TRAIT_STUDIOUS_TRADER</Type>
 			<TraitClass>TRAITCLASS_PERSONALITY</TraitClass>
-			<Description>TXT_KEY_TRAIT_ELDER</Description>
-			<Civilopedia>TXT_KEY_TRAIT_ELDER_PEDIA</Civilopedia>
-			<ShortDescription>TXT_KEY_TRAIT_ELDER_SHORT</ShortDescription>
+			<Description>TXT_KEY_TRAIT_STUDIOUS_TRADER</Description>
+			<Civilopedia>TXT_KEY_TRAIT_STUDIOUS_TRADER_PEDIA</Civilopedia>
+			<ShortDescription>TXT_KEY_TRAIT_STUDIOUS_TRADER_SHORT</ShortDescription>
 			<Help/>
 			<TradeYieldModifiers>
 				<iYield>0</iYield>
-				<iYield>0</iYield>
+				<iYield>-50</iYield>
 				<iYield>0</iYield>
 			</TradeYieldModifiers>
 			<TradeCommerceModifiers>
 				<iCommerce>0</iCommerce>
+				<iCommerce>50</iCommerce>
 				<iCommerce>0</iCommerce>
 			</TradeCommerceModifiers>
 			<PeaceCommerceModifiers>
