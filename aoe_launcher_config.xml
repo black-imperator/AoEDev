@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<AppConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Presets>
+    <Preset>
+      <Name>Core</Name>
+      <Modules>
+        <ModuleRef>
+          <Name>AnimalLairs</Name>
+          <Version />
+          <Fingerprint />
+        </ModuleRef>
+        <ModuleRef>
+          <Name>BlackDuke</Name>
+          <Version />
+          <Fingerprint />
+        </ModuleRef>
+        <ModuleRef>
+          <Name>Coaxoch</Name>
+          <Version />
+          <Fingerprint />
+        </ModuleRef>
+        <ModuleRef>
+          <Name>Dao</Name>
+          <Version />
+          <Fingerprint />
+        </ModuleRef>
+        <ModuleRef>
+          <Name>Dural</Name>
+          <Version />
+          <Fingerprint />
+        </ModuleRef>
+        <ModuleRef>
+          <Name>ElfnDeath</Name>
+          <Version />
+          <Fingerprint />
+        </ModuleRef>
+        <ModuleRef>
+          <Name>Goblin</Name>
+          <Version />
+          <Fingerprint />
+        </ModuleRef>
+        <ModuleRef>
+          <Name>GotNBandaid</Name>
+          <Version />
+          <Fingerprint />
+        </ModuleRef>
+        <ModuleRef>
+          <Name>ImportantLeaders</Name>
+          <Version />
+          <Fingerprint />
+        </ModuleRef>
+        <ModuleRef>
+          <Name>MagisterAshes</Name>
+          <Version />
+          <Fingerprint />
+        </ModuleRef>
+        <ModuleRef>
+          <Name>MoreEvents</Name>
+          <Version />
+          <Fingerprint />
+        </ModuleRef>
+        <ModuleRef>
+          <Name>PPQ_Effects</Name>
+          <Version />
+          <Fingerprint />
+        </ModuleRef>
+        <ModuleRef>
+          <Name>PPQ_Flavor</Name>
+          <Version />
+          <Fingerprint />
+        </ModuleRef>
+        <ModuleRef>
+          <Name>PPQ_NAVY</Name>
+          <Version />
+          <Fingerprint />
+        </ModuleRef>
+        <ModuleRef>
+          <Name>StasisRework</Name>
+          <Version />
+          <Fingerprint />
+        </ModuleRef>
+        <ModuleRef>
+          <Name>WidenTechnology</Name>
+          <Version />
+          <Fingerprint />
+        </ModuleRef>
+      </Modules>
+      <SourceVersion>379</SourceVersion>
+    </Preset>
+    <Preset>
+      <Name>None</Name>
+      <Modules />
+      <SourceVersion>379</SourceVersion>
+    </Preset>
+  </Presets>
+  <CloseOnLaunch>false</CloseOnLaunch>
+</AppConfig>
