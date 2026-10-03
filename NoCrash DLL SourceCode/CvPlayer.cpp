@@ -30677,13 +30677,38 @@ int CvPlayer::doMultipleResearch(int iOverflow)
 
 	FAssertMsg(eCurrentTech < GC.getNumTechInfos(), "eCurrentTech is expected to be within maximum bounds (invalid Index)");
 
-	while (eCurrentTech != NO_TECH && ((100 * (GET_TEAM(getTeam()).getResearchCost(eCurrentTech) - GET_TEAM(getTeam()).getResearchProgress(eCurrentTech))) / std::max(1, calculateResearchModifier(eCurrentTech)) <= iOverflow))
-	{//The Future Tech can cause strange infinite loops
+	while (eCurrentTech != NO_TECH)
+	{
+		// A tech the team already holds cannot be granted again: setHasTech returns
+		// without popping the research queue, so getCurrentResearch would keep handing
+		// back the same tech and the loop would never end. A save whose tech state and
+		// research queue disagree lands here. Drop the stale entry and carry on with the
+		// rest of the queue -- leaving it in place would jam research permanently, since
+		// every later turn would pour beakers into a tech that can never complete.
+		if (GET_TEAM(getTeam()).isHasTech(eCurrentTech))
+		{
+			popResearch(eCurrentTech);
+			eCurrentTech = getCurrentResearch();
+			continue;
+		}
+
+		int iResearchLeft = (100 * (GET_TEAM(getTeam()).getResearchCost(eCurrentTech) - GET_TEAM(getTeam()).getResearchProgress(eCurrentTech))) / std::max(1, calculateResearchModifier(eCurrentTech));
+
+		if (iResearchLeft > iOverflow)
+		{
+			break;
+		}
+
+		//The Future Tech can cause strange infinite loops
 		if (GC.getTechInfo(eCurrentTech).isRepeat())
 		{
 			break;
 		}
-		iOverflow -= (100 * (GET_TEAM(getTeam()).getResearchCost(eCurrentTech) - GET_TEAM(getTeam()).getResearchProgress(eCurrentTech))) / std::max(1, calculateResearchModifier(eCurrentTech));
+
+		// Stored progress can exceed the tech's cost, making iResearchLeft negative.
+		// Subtracting that would grow iOverflow past what the player actually earned and
+		// keep the loop test true forever, so never let a tech refund research.
+		iOverflow -= std::max(0, iResearchLeft);
 		GET_TEAM(getTeam()).setHasTech(eCurrentTech, true, getID(), true, true);
 		if (!GC.getGameINLINE().isMPOption(MPOPTION_SIMULTANEOUS_TURNS) && !GC.getGameINLINE().isOption(GAMEOPTION_NO_TECH_BROKERING))
 		{
