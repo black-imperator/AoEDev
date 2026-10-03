@@ -312,29 +312,31 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 
 	def placeTraits(self):
 	##Modular update 
-		if (gc.getInfoTypeForString("MODULE_DYNAMIC_RELIGION")!=-1 and self.pediaTrait.modular_update==False):
-			self.pediaTrait.FILTERS.append({
-				"name" : 'localText.getText("TXT_KEY_TRAITCLASS_RELIGION", ())',
-				"Purpose" : "Religious Paths",
-				"Hardcoded" : False,
-				"HardcodeList" : [],
-				"Value to Check" : 'eTrait.getTraitClass()',
-				"Desired Result" : 'gc.getInfoTypeForString("TRAITCLASS_RELIGION")',
-			})
-		if (gc.getInfoTypeForString("MODULE_CHISLEV_EXPANSION")!=-1 and self.pediaTrait.modular_update==False):
-			self.pediaTrait.FILTERS.append({
-				"name" : 'localText.getText("TXT_KEY_TRAITCLASS_TRIBAL", ())',
-				"Purpose" : "Religious Paths",
-				"Hardcoded" : False,
-				"HardcodeList" : [],
-				"Value to Check" : 'eTrait.getTraitClass()',
-				"Desired Result" : 'gc.getInfoTypeForString("TRAITCLASS_TRIBAL")',
-			})
+		# Runs once per session: without the flag every visit to this category appended the module filters again
+		if self.pediaTrait.modular_update==False:
+			if gc.getInfoTypeForString("MODULE_DYNAMIC_RELIGION")!=-1:
+				self.pediaTrait.FILTERS.append({
+					"name" : 'localText.getText("TXT_KEY_TRAITCLASS_RELIGION", ())',
+					"Purpose" : "Religious Paths",
+					"Hardcoded" : False,
+					"HardcodeList" : [],
+					"Value to Check" : 'eTrait.getTraitClass()',
+					"Desired Result" : 'gc.getInfoTypeForString("TRAITCLASS_RELIGION")',
+				})
+			if gc.getInfoTypeForString("MODULE_CHISLEV_EXPANSION")!=-1:
+				self.pediaTrait.FILTERS.append({
+					"name" : 'localText.getText("TXT_KEY_TRAITCLASS_TRIBAL", ())',
+					"Purpose" : "Religious Paths",
+					"Hardcoded" : False,
+					"HardcodeList" : [],
+					"Value to Check" : 'eTrait.getTraitClass()',
+					"Desired Result" : 'gc.getInfoTypeForString("TRAITCLASS_TRIBAL")',
+				})
 			self.pediaTrait.modular_update=True
 		# List the filters which you want to be available initially, or self.FILTERS to have all of them available from the start
 			self.pediaTrait.ALLOWED_FILTERS = self.pediaTrait.FILTERS
 			self.pediaTrait.CURRENT_FILTER = self.pediaTrait.FILTERS[0]
-		
+
 	## End Modular update
 
 		self.placeFilterSort(self.pediaTrait, WidgetTypes.WIDGET_PEDIA_JUMP_TO_TRAIT)
