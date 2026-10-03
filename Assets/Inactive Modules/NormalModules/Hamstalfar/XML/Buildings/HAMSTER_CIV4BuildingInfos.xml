@@ -97,6 +97,10 @@
 				<iYield>0</iYield>
 				<iYield>0</iYield>
 			</TradeYieldModifiers>
+			<TradeCommerceModifiers>
+				<iCommerce>0</iCommerce>
+				<iCommerce>25</iCommerce>
+			</TradeCommerceModifiers>
 			<iAsset>4</iAsset>
 			<fVisibilityPriority>10</fVisibilityPriority>
 			<BonusHealthChanges>
