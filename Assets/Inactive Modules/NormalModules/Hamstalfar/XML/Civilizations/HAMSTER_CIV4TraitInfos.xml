@@ -11,9 +11,9 @@
 			<Help/>
 			<iHealth>3</iHealth>
 			<iHappiness>1</iHappiness>
-			<iMaxCities>5</iMaxCities>
+			<iMaxCities>1</iMaxCities>
 			<TradeYieldModifiers>
-				<iYield>0</iYield>
+				<iYield>100</iYield>
 				<iYield>100</iYield>
 				<iYield>-300</iYield>
 			</TradeYieldModifiers>

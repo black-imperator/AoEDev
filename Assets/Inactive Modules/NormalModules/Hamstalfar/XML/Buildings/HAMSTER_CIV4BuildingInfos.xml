@@ -6,6 +6,29 @@
 <!-- Building Infos -->
 <Civ4BuildingInfos xmlns="x-schema:HAMSTER_CIV4BuildingsSchema.xml">
 	<BuildingInfos>
+		<BuildingInfo>		<!-- Merchant Elves    -->
+			<BuildingClass>BUILDINGCLASS_MERCHANT_ELVES</BuildingClass>
+			<Type>BUILDING_MERCHANT_ELVES</Type>
+			<Description>TXT_KEY_BUILDING_MERCHANT_ELVES</Description>
+			<Civilopedia>TXT_KEY_BUILDING_MERCHANT_ELVES_PEDIA</Civilopedia>
+			<ArtDefineTag>ART_DEF_BUILDING_ARENA</ArtDefineTag>
+			<PrereqTech>TECH_EXPLORATION</PrereqTech>
+			<iPrereqPopulation>1</iPrereqPopulation>
+			<iAIWeight>10</iAIWeight>
+			<iCost>-1</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iConquestProb>0</iConquestProb>
+			<PerPopBonuses>
+				<PerPopBonus>
+					<fGold>0</fGold>
+					<fTradeRoutes>0.25</fTradeRoutes>
+				</PerPopBonus>
+			</PerPopBonuses>
+			<iAsset>4</iAsset>
+			<fVisibilityPriority>1000</fVisibilityPriority>
+			<ConstructSound>AS2D_BUILD_COURTHOUSE</ConstructSound>
+			<bAutoBuild>1</bAutoBuild>
+		</BuildingInfo>
 		<BuildingInfo>		<!-- Hall of the Fuzzy Lords -->
 			<BuildingClass>BUILDINGCLASS_PALACE</BuildingClass>
 			<Type>BUILDING_PALACE_HAMSTER</Type>
@@ -300,6 +323,7 @@
 			<iAsset>4</iAsset>
 			<iPower>2</iPower>
 			<fVisibilityPriority>10</fVisibilityPriority>
+			<bOverflowProduction>1</bOverflowProduction>
 			<YieldModifiers>
 				<iYield>0</iYield>
 				<iYield>15</iYield>

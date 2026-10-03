@@ -501,7 +501,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<iCost>25</iCost>
-			<iMoves>3</iMoves>
+			<iMoves>2</iMoves>
 			<iCombat>2</iCombat>
 			<iAirRange>1</iAirRange>
 			<iAirCombat>1</iAirCombat>
@@ -543,7 +543,7 @@
 			<Type>UNIT_VAGABOND</Type>
 			<Combat>UNITCOMBAT_ARCHER</Combat>
 			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
-			<iExtraPerception>1</iExtraPerception>
+			<iExtraPerception>2</iExtraPerception>
 			<Description>TXT_KEY_UNIT_VAGABOND</Description>
 			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_VAGABOND_STRATEGY</Strategy>
@@ -572,7 +572,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_HUNTING</PrereqTech>
 			<iCost>60</iCost>
-			<iMoves>3</iMoves>
+			<iMoves>2</iMoves>
 			<iWorkRate>200</iWorkRate>
 			<iCombat>4</iCombat>
 			<iCombatDefense>2</iCombatDefense>
@@ -615,7 +615,7 @@
 			<Combat>UNITCOMBAT_ARCHER</Combat>
 			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
 			<iInvisibleLevel>1</iInvisibleLevel>
-			<iExtraPerception>1</iExtraPerception>
+			<iExtraPerception>2</iExtraPerception>
 			<Description>TXT_KEY_UNIT_WAYLAYER</Description>
 			<Civilopedia>TXT_KEY_UNIT_ASSASSIN_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_ASSASSIN_STRATEGY</Strategy>
@@ -760,7 +760,7 @@
 			<Combat>UNITCOMBAT_ARCHER</Combat>
 			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
 			<iInvisibleLevel>2</iInvisibleLevel>
-			<iExtraPerception>2</iExtraPerception>
+			<iExtraPerception>4</iExtraPerception>
 			<Description>TXT_KEY_UNIT_COMPACT_GUARDIAN</Description>
 			<Civilopedia>TXT_KEY_UNIT_COMPACT_GUARDIAN_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_SHADOW_STRATEGY</Strategy>
