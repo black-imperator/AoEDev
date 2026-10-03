@@ -6560,40 +6560,16 @@
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
-			<FeatureYieldChanges>
-				<FeatureYieldChange>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<FeatureYields>
+			<LocalImprovementClassYieldChanges>
+				<LocalImprovementClassYieldChange>
+					<ImprovementClass>IMPROVEMENTCLASS_LUMBERMILL</ImprovementClass>
+					<YieldChanges>
 					<iYield>0</iYield>
 					<iYield>1</iYield>
 					<iYield>0</iYield>
-					</FeatureYields>
-				</FeatureYieldChange>
-				<FeatureYieldChange>
-					<FeatureType>FEATURE_FOREST_NEW</FeatureType>
-					<FeatureYields>
-					<iYield>0</iYield>
-					<iYield>1</iYield>
-					<iYield>0</iYield>
-					</FeatureYields>
-				</FeatureYieldChange>
-				<FeatureYieldChange>
-					<FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-					<FeatureYields>
-					<iYield>0</iYield>
-					<iYield>1</iYield>
-					<iYield>0</iYield>
-					</FeatureYields>
-				</FeatureYieldChange>
-				<FeatureYieldChange>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<FeatureYields>
-					<iYield>0</iYield>
-					<iYield>1</iYield>
-					<iYield>0</iYield>
-					</FeatureYields>
-				</FeatureYieldChange>
-			</FeatureYieldChanges>
+					</YieldChanges>
+				</LocalImprovementClassYieldChange>
+			</LocalImprovementClassYieldChanges>
 		</BuildingInfo>
 		<BuildingInfo>		<!-- Growth Cultivators -->
 			<BuildingClass>BUILDINGCLASS_SAWMILL</BuildingClass>
