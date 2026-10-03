@@ -21,6 +21,10 @@
 
 #include	"FFreeListArrayBase.h"
 #include	"FDataStreamBase.h"
+#include	"CvFragHeap.h"
+
+#include	<new>
+#include	<string.h>
 
 #define FLTA_ID_SHIFT				(13)
 #define FLTA_MAX_BUCKETS		(1 << FLTA_ID_SHIFT)
@@ -112,6 +116,13 @@ public:
 	void Read( FDataStreamBase* pStream );
 	void Write( FDataStreamBase* pStream );
 
+	// Compact: re-allocate every live T object into a fresh CvFragHeap slot,
+	// in index order. Helps the LFH bucket coalesce after long sessions.
+	// Pointer invariants: external CvX* pointers held across this call become
+	// stale, so only call from a safe point (between civ turns, no animations
+	// or AI scratch pointers held by the EXE). Caller's responsibility.
+	void Compact();
+
 protected:
 
 	struct FFreeListTrashArrayNode
@@ -179,7 +190,8 @@ void FFreeListTrashArray<T>::init(int iNumSlots)
 
 	if (m_iNumSlots > 0)
 	{
-		m_pArray = new FFreeListTrashArrayNode[m_iNumSlots];
+		m_pArray = (FFreeListTrashArrayNode*) CvFragHeap::get().alloc(
+			sizeof(FFreeListTrashArrayNode) * (size_t)m_iNumSlots);
 
 		for (iI = 0; iI < m_iNumSlots; iI++)
 		{
@@ -197,7 +209,8 @@ void FFreeListTrashArray<T>::uninit()
 	{
 		removeAll();
 
-		SAFE_DELETE_ARRAY(m_pArray);
+		CvFragHeap::get().free(m_pArray);
+		m_pArray = NULL;
 	}
 }
 
@@ -235,7 +248,13 @@ T* FFreeListTrashArray<T>::add()
 		iIndex = m_iLastIndex;
 	}
 
-	m_pArray[iIndex].pData = new T;
+	// Route T-object allocations through the private CvFragHeap (anti-fragmentation:
+	// keeps the EXE's largest committed free block from collapsing into bad_alloc in
+	// long/late games). Pointers stay stable -- CvFragHeap never relocates a live
+	// block on its own; only Compact() would, and it stays DISABLED so the EXE's and
+	// renderer's cached CvX* pointers remain valid. Pairs with the placement-delete
+	// (explicit ~T() + CvFragHeap::free) in removeAt()/removeAll().
+	m_pArray[iIndex].pData = new (CvFragHeap::get().alloc(sizeof(T))) T();
 	m_pArray[iIndex].iNextFreeIndex = FFreeList::INVALID_INDEX;
 
 	m_pArray[iIndex].pData->setID(m_iCurrentID + iIndex);
@@ -313,7 +332,8 @@ bool FFreeListTrashArray<T>::removeAt(int iID)
 	{
 		if (((iID & FLTA_ID_MASK) == 0) || (m_pArray[iIndex].pData->getID() == iID))
 		{
-			delete m_pArray[iIndex].pData;
+			m_pArray[iIndex].pData->~T();					// pairs with add()'s CvFragHeap placement new
+			CvFragHeap::get().free(m_pArray[iIndex].pData);	// return the slot to CvFragHeap
 			m_pArray[iIndex].pData = NULL;
 
 			m_pArray[iIndex].iNextFreeIndex = m_iFreeListHead;
@@ -351,7 +371,8 @@ void FFreeListTrashArray<T>::removeAll()
 		m_pArray[iI].iNextFreeIndex = FFreeList::INVALID_INDEX;
 		if (m_pArray[iI].pData != NULL)
 		{
-			delete m_pArray[iI].pData;
+			m_pArray[iI].pData->~T();					// pairs with add()'s CvFragHeap placement new
+			CvFragHeap::get().free(m_pArray[iI].pData);	// return the slot to CvFragHeap
 		}
 		m_pArray[iI].pData = NULL;
 	}
@@ -393,7 +414,8 @@ void FFreeListTrashArray<T>::growArray()
 
 	m_iNumSlots *= FLTA_GROWTH_FACTOR;
 	assert((m_iNumSlots <= FLTA_MAX_BUCKETS) && "FFreeListTrashArray<T>::growArray() size too large");
-	m_pArray = new FFreeListTrashArrayNode[m_iNumSlots];
+	m_pArray = (FFreeListTrashArrayNode*) CvFragHeap::get().alloc(
+		sizeof(FFreeListTrashArrayNode) * (size_t)m_iNumSlots);
 
 	for (iI = 0; iI < m_iNumSlots; iI++)
 	{
@@ -408,7 +430,7 @@ void FFreeListTrashArray<T>::growArray()
 		}
 	}
 
-	delete [] pOldArray;
+	CvFragHeap::get().free(pOldArray);
 }
 
 //
@@ -442,7 +464,7 @@ inline void FFreeListTrashArray< T >::Read( FDataStreamBase* pStream )
 
 	for ( i = 0; i < iCount; i++ )
 	{
-		T* pData = new T;
+		T* pData = new (CvFragHeap::get().alloc(sizeof(T))) T();	// CvFragHeap slot; load() hands it to the engine
 		pStream->Read( sizeof ( T ), ( byte* )pData );
 		load( pData );
 	}
@@ -473,6 +495,31 @@ inline void FFreeListTrashArray< T >::Write( FDataStreamBase* pStream )
 			pStream->Write( sizeof ( T ), ( byte* )getAt( i ) );
 		}
 	}
+}
+
+//
+// Compact: walk all live entries and re-allocate each into a fresh CvFragHeap
+// slot via byte-copy. Stale storage is freed back to CvFragHeap so the LFH
+// can coalesce. Vtable pointers are absolute (.rdata addresses) and survive
+// memcpy; same for non-self-referential member pointers. Civ4 entity classes
+// (CvUnitAI, CvCityAI, CvSelectionGroupAI, CvPlotGroup, CvDeal, ...) do not
+// hold pointers to themselves, so this is safe.
+//
+// WARNING: external pointers (in the EXE, in the renderer, in Python) become
+// stale across this call. Call only from a quiescent point (between civ turns,
+// no in-flight animations, no Python frames holding CvX* refs).
+//
+template <class T>
+inline void FFreeListTrashArray<T>::Compact()
+{
+	// DISABLED. T objects now live on the engine-shared heap and the EXE caches
+	// their raw pointers (renderer billboards, AI scratch). Byte-relocating them
+	// invalidates those external pointers (the field-confirmed turn-10 renderer
+	// crash). No live caller exists: CvGame::compactArrays / CvPlayer::compactArrays
+	// only call this recursively and are themselves unreferenced. The fragmentation
+	// win now comes from CvFragHeap routing the node arrays + CvFragHeap::compact()
+	// in doTurn, not from relocating live objects.
+	return;
 }
 
 //-------------------------------
@@ -510,7 +557,7 @@ inline void ReadStreamableFFreeListTrashArray( FFreeListTrashArray< T >& flist, 
 
 	for ( i = 0; i < iCount; i++ )
 	{
-		T* pData = new T;
+		T* pData = new (CvFragHeap::get().alloc(sizeof(T))) T();	// CvFragHeap slot; load() hands it to the engine
 		pData->read( pStream );
 		flist.load( pData );
 	}
