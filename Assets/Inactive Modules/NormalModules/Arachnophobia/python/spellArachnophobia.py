@@ -154,7 +154,7 @@ def setSpiderPromo(spawnUnit, pPlayer, pCity):
 		spawnUnit.changeFreePromotionPick(iBroodStrength)
 
 		iBroodExp = 0
-		meatBonuses = ["BONUS_BISON", "BONUS_COW", "BONUS_CAMEL", "BONUS_DEER", "BONUS_DEER_ARCTIC", "BONUS_FUR", "BONUS_HORSE", "BONUS_HYAPON", "BONUS_IVORY", "BONUS_NIGHTMARE", "BONUS_PIG", "BONUS_SHEEP", "BONUS_TOAD"]
+		meatBonuses = ["BONUS_BISON", "BONUS_COW", "BONUS_CAMEL", "BONUS_DEER", "BONUS_DEER_ARCTIC", "BONUS_FUR", "BONUS_PENGUINS", "BONUS_HORSE", "BONUS_HYAPON", "BONUS_IVORY", "BONUS_NIGHTMARE", "BONUS_PIG", "BONUS_SHEEP", "BONUS_TOAD"]
 		for bonus in meatBonuses:
 			if pPlayer.getNumAvailableBonuses(getInfoType(bonus)) > 0:
 				iBroodExp += 1

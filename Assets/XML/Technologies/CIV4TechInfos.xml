@@ -3413,8 +3413,11 @@
 					<iFlavor>20</iFlavor>
 				</Flavor>
 			</Flavors>
-			<AndPreReqs>
+			<OrPreReqs>
+				<PrereqTech>TECH_ARCHERY</PrereqTech>
 				<PrereqTech>TECH_HUNTING</PrereqTech>
+			</OrPreReqs>
+			<AndPreReqs>
 				<PrereqTech>TECH_MYSTICISM</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_WAY_OF_THE_FORESTS_QUOTE</Quote>

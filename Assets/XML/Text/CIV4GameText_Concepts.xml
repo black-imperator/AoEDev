@@ -482,11 +482,101 @@ Poor Civs for Crime: Clan of Embers, Balseraphs, Khazad, Kuriotates, Scions of P
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_WEAPON_UPGRADES_PEDIA</Tag>
-		<English>[H1]Weapon Upgrades[\H1][NEWLINE][NEWLINE]Some units can have their strength upgraded by certain weapon types. Units capable of using [LINK=PROMOTION_BRONZE_WEAPONS]Bronze weapons[\LINK] get +1 strength if you have access to [LINK=BONUS_COPPER]copper[\LINK]. Units capable of using [LINK=PROMOTION_IRON_WEAPONS]Iron weapons[\LINK] get +2 strength if you have access to [LINK=BONUS_IRON]iron[\LINK] and units capable of using [LINK=PROMOTION_MITHRIL_WEAPONS]Mithril weapons[\LINK] get +4 strength if you have access to [LINK=BONUS_MITHRIL]mithril[\LINK]. Multiple weapon types aren't cumulative (a unit can't have both iron and mithril weapons) and units have to enter one of your cities to upgrade their weapons.[NEWLINE][NEWLINE]Note that getting access to copper requires the [LINK=TECH_BRONZE_WORKING]Bronze Working[\LINK] tech (even though it is revealed with Mining). Getting access to Iron requires the [LINK=TECH_IRON_WORKING]Iron Working[\LINK] tech (though it is revealed with Smelting) and getting access to Mithril requires the [LINK=TECH_MITHRIL_WORKING]Mithril Working[\LINK] tech.</English>
-		<French>[H1]Weapon Upgrades[\H1][NEWLINE][NEWLINE]Some units can have their strength upgraded by certain weapon types. Units capable of using [LINK=PROMOTION_BRONZE_WEAPONS]Bronze weapons[\LINK] get +1 strength if you have access to [LINK=BONUS_COPPER]copper[\LINK]. Units capable of using [LINK=PROMOTION_IRON_WEAPONS]Iron weapons[\LINK] get +2 strength if you have access to [LINK=BONUS_IRON]iron[\LINK] and units capable of using [LINK=PROMOTION_MITHRIL_WEAPONS]Mithril weapons[\LINK] get +4 strength if you have access to [LINK=BONUS_MITHRIL]mithril[\LINK]. Multiple weapon types aren't cumulative (a unit can't have both iron and mithril weapons) and units have to enter one of your cities to upgrade their weapons.[NEWLINE][NEWLINE]Note that getting access to copper requires the [LINK=TECH_BRONZE_WORKING]Bronze Working[\LINK] tech (even though it is revealed with Mining). Getting access to Iron requires the [LINK=TECH_IRON_WORKING]Iron Working[\LINK] tech (though it is revealed with Smelting) and getting access to Mithril requires the [LINK=TECH_MITHRIL_WORKING]Mithril Working[\LINK] tech.</French>
-		<German>[H1]Weapon Upgrades[\H1][NEWLINE][NEWLINE]Some units can have their strength upgraded by certain weapon types. Units capable of using [LINK=PROMOTION_BRONZE_WEAPONS]Bronze weapons[\LINK] get +1 strength if you have access to [LINK=BONUS_COPPER]copper[\LINK]. Units capable of using [LINK=PROMOTION_IRON_WEAPONS]Iron weapons[\LINK] get +2 strength if you have access to [LINK=BONUS_IRON]iron[\LINK] and units capable of using [LINK=PROMOTION_MITHRIL_WEAPONS]Mithril weapons[\LINK] get +4 strength if you have access to [LINK=BONUS_MITHRIL]mithril[\LINK]. Multiple weapon types aren't cumulative (a unit can't have both iron and mithril weapons) and units have to enter one of your cities to upgrade their weapons.[NEWLINE][NEWLINE]Note that getting access to copper requires the [LINK=TECH_BRONZE_WORKING]Bronze Working[\LINK] tech (even though it is revealed with Mining). Getting access to Iron requires the [LINK=TECH_IRON_WORKING]Iron Working[\LINK] tech (though it is revealed with Smelting) and getting access to Mithril requires the [LINK=TECH_MITHRIL_WORKING]Mithril Working[\LINK] tech.</German>
-		<Italian>[H1]Weapon Upgrades[\H1][NEWLINE][NEWLINE]Some units can have their strength upgraded by certain weapon types. Units capable of using [LINK=PROMOTION_BRONZE_WEAPONS]Bronze weapons[\LINK] get +1 strength if you have access to [LINK=BONUS_COPPER]copper[\LINK]. Units capable of using [LINK=PROMOTION_IRON_WEAPONS]Iron weapons[\LINK] get +2 strength if you have access to [LINK=BONUS_IRON]iron[\LINK] and units capable of using [LINK=PROMOTION_MITHRIL_WEAPONS]Mithril weapons[\LINK] get +4 strength if you have access to [LINK=BONUS_MITHRIL]mithril[\LINK]. Multiple weapon types aren't cumulative (a unit can't have both iron and mithril weapons) and units have to enter one of your cities to upgrade their weapons.[NEWLINE][NEWLINE]Note that getting access to copper requires the [LINK=TECH_BRONZE_WORKING]Bronze Working[\LINK] tech (even though it is revealed with Mining). Getting access to Iron requires the [LINK=TECH_IRON_WORKING]Iron Working[\LINK] tech (though it is revealed with Smelting) and getting access to Mithril requires the [LINK=TECH_MITHRIL_WORKING]Mithril Working[\LINK] tech.</Italian>
-		<Spanish>[H1]Weapon Upgrades[\H1][NEWLINE][NEWLINE]Some units can have their strength upgraded by certain weapon types. Units capable of using [LINK=PROMOTION_BRONZE_WEAPONS]Bronze weapons[\LINK] get +1 strength if you have access to [LINK=BONUS_COPPER]copper[\LINK]. Units capable of using [LINK=PROMOTION_IRON_WEAPONS]Iron weapons[\LINK] get +2 strength if you have access to [LINK=BONUS_IRON]iron[\LINK] and units capable of using [LINK=PROMOTION_MITHRIL_WEAPONS]Mithril weapons[\LINK] get +4 strength if you have access to [LINK=BONUS_MITHRIL]mithril[\LINK]. Multiple weapon types aren't cumulative (a unit can't have both iron and mithril weapons) and units have to enter one of your cities to upgrade their weapons.[NEWLINE][NEWLINE]Note that getting access to copper requires the [LINK=TECH_BRONZE_WORKING]Bronze Working[\LINK] tech (even though it is revealed with Mining). Getting access to Iron requires the [LINK=TECH_IRON_WORKING]Iron Working[\LINK] tech (though it is revealed with Smelting) and getting access to Mithril requires the [LINK=TECH_MITHRIL_WORKING]Mithril Working[\LINK] tech.</Spanish>
+		<English>[H1]Weapon Upgrades[\H1][NEWLINE][NEWLINE]Some units can have their strength upgraded by certain weapon types.
+
+Common Materials:
+Bronze Weapons generally apply to melee, defensive melee, mounted, and some disciple unit types.
+Oak Weapons and Hulls generally apply to archer and naval unit types respectively.
+
+Quality Materials:
+Iron Weapons generally apply to melee, defensive melee, mounted, and some disciple unit types.
+Yew Weapons and Hulls generally apply to archer and naval unit types respectively.
+
+Mythical Materials:
+Mithril Weapons generally apply to melee, defensive melee, mounted, and some disciple unit types.
+Duskwood Weapons and Hulls generally apply to archer and naval unit types respectively.
+
+Multiple weapon types aren't cumulative (a unit can't have both iron and mithril weapons), and units have to enter one of your cities or forts to upgrade their weapons.
+They also do not overlap (a unit with metal weaponry can not also have wooden weaponry)
+
+Note that getting access to copper requires the [LINK=TECH_BRONZE_WORKING]Bronze Working[\LINK] tech (even though it is revealed with Mining), and the other metals and woods work the same way(Yew resource requiring Woodworking, but only equipped on units at Bowyer technology)
+(As always, there are exceptions: the Mines of Gal-Dur wonder gives Iron Weaponry before you have Ironworking as an example)</English>
+		<French>[H1]Weapon Upgrades[\H1][NEWLINE][NEWLINE]Some units can have their strength upgraded by certain weapon types.
+
+Common Materials:
+Bronze Weapons generally apply to melee, defensive melee, mounted, and some disciple unit types.
+Oak Weapons and Hulls generally apply to archer and naval unit types respectively.
+
+Quality Materials:
+Iron Weapons generally apply to melee, defensive melee, mounted, and some disciple unit types.
+Yew Weapons and Hulls generally apply to archer and naval unit types respectively.
+
+Mythical Materials:
+Mithril Weapons generally apply to melee, defensive melee, mounted, and some disciple unit types.
+Duskwood Weapons and Hulls generally apply to archer and naval unit types respectively.
+
+Multiple weapon types aren't cumulative (a unit can't have both iron and mithril weapons), and units have to enter one of your cities or forts to upgrade their weapons.
+They also do not overlap (a unit with metal weaponry can not also have wooden weaponry)
+
+Note that getting access to copper requires the [LINK=TECH_BRONZE_WORKING]Bronze Working[\LINK] tech (even though it is revealed with Mining), and the other metals and woods work the same way(Yew resource requiring Woodworking, but only equipped on units at Bowyer technology)
+(As always, there are exceptions: the Mines of Gal-Dur wonder gives Iron Weaponry before you have Ironworking as an example)</French>
+		<German>[H1]Weapon Upgrades[\H1][NEWLINE][NEWLINE]Some units can have their strength upgraded by certain weapon types.
+
+Common Materials:
+Bronze Weapons generally apply to melee, defensive melee, mounted, and some disciple unit types.
+Oak Weapons and Hulls generally apply to archer and naval unit types respectively.
+
+Quality Materials:
+Iron Weapons generally apply to melee, defensive melee, mounted, and some disciple unit types.
+Yew Weapons and Hulls generally apply to archer and naval unit types respectively.
+
+Mythical Materials:
+Mithril Weapons generally apply to melee, defensive melee, mounted, and some disciple unit types.
+Duskwood Weapons and Hulls generally apply to archer and naval unit types respectively.
+
+Multiple weapon types aren't cumulative (a unit can't have both iron and mithril weapons), and units have to enter one of your cities or forts to upgrade their weapons.
+They also do not overlap (a unit with metal weaponry can not also have wooden weaponry)
+
+Note that getting access to copper requires the [LINK=TECH_BRONZE_WORKING]Bronze Working[\LINK] tech (even though it is revealed with Mining), and the other metals and woods work the same way(Yew resource requiring Woodworking, but only equipped on units at Bowyer technology)
+(As always, there are exceptions: the Mines of Gal-Dur wonder gives Iron Weaponry before you have Ironworking as an example)</German>
+		<Italian>[H1]Weapon Upgrades[\H1][NEWLINE][NEWLINE]Some units can have their strength upgraded by certain weapon types.
+
+Common Materials:
+Bronze Weapons generally apply to melee, defensive melee, mounted, and some disciple unit types.
+Oak Weapons and Hulls generally apply to archer and naval unit types respectively.
+
+Quality Materials:
+Iron Weapons generally apply to melee, defensive melee, mounted, and some disciple unit types.
+Yew Weapons and Hulls generally apply to archer and naval unit types respectively.
+
+Mythical Materials:
+Mithril Weapons generally apply to melee, defensive melee, mounted, and some disciple unit types.
+Duskwood Weapons and Hulls generally apply to archer and naval unit types respectively.
+
+Multiple weapon types aren't cumulative (a unit can't have both iron and mithril weapons), and units have to enter one of your cities or forts to upgrade their weapons.
+They also do not overlap (a unit with metal weaponry can not also have wooden weaponry)
+
+Note that getting access to copper requires the [LINK=TECH_BRONZE_WORKING]Bronze Working[\LINK] tech (even though it is revealed with Mining), and the other metals and woods work the same way(Yew resource requiring Woodworking, but only equipped on units at Bowyer technology)
+(As always, there are exceptions: the Mines of Gal-Dur wonder gives Iron Weaponry before you have Ironworking as an example)</Italian>
+		<Spanish>[H1]Weapon Upgrades[\H1][NEWLINE][NEWLINE]Some units can have their strength upgraded by certain weapon types.
+
+Common Materials:
+Bronze Weapons generally apply to melee, defensive melee, mounted, and some disciple unit types.
+Oak Weapons and Hulls generally apply to archer and naval unit types respectively.
+
+Quality Materials:
+Iron Weapons generally apply to melee, defensive melee, mounted, and some disciple unit types.
+Yew Weapons and Hulls generally apply to archer and naval unit types respectively.
+
+Mythical Materials:
+Mithril Weapons generally apply to melee, defensive melee, mounted, and some disciple unit types.
+Duskwood Weapons and Hulls generally apply to archer and naval unit types respectively.
+
+Multiple weapon types aren't cumulative (a unit can't have both iron and mithril weapons), and units have to enter one of your cities or forts to upgrade their weapons.
+They also do not overlap (a unit with metal weaponry can not also have wooden weaponry)
+
+Note that getting access to copper requires the [LINK=TECH_BRONZE_WORKING]Bronze Working[\LINK] tech (even though it is revealed with Mining), and the other metals and woods work the same way(Yew resource requiring Woodworking, but only equipped on units at Bowyer technology)
+(As always, there are exceptions: the Mines of Gal-Dur wonder gives Iron Weaponry before you have Ironworking as an example)</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_WEREWOLVES</Tag>

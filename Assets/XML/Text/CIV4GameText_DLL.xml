@@ -2438,27 +2438,27 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_WEAPON_TIER_1_1</Tag>
-		<English>[ICON_BULLET]Unit can use Bronze weapons.</English>
-		<French>[ICON_BULLET]L'unité peut utiliser des armes de Bronze.</French>
-		<German>[ICON_BULLET]Kann Bronzewaffen benutzen</German>
-		<Italian>[ICON_BULLET]Unit can use Bronze weapons.</Italian>
-		<Spanish>[ICON_BULLET]Unit can use Bronze weapons.</Spanish>
+		<English>[ICON_BULLET]Unit can use common resource [LINK=CONCEPT_WEAPON_UPGRADES]weapons.[\LINK]</English>
+		<French>[ICON_BULLET]L'unité peut utiliser des [LINK=CONCEPT_WEAPON_UPGRADES]armes[\LINK] en matériaux communs.</French>
+		<German>[ICON_BULLET]Einheit kann einfache Waffen [LINK=CONCEPT_WEAPON_UPGRADES]benutzen[\LINK]</German>
+		<Italian>[ICON_BULLET]Unit can use common resource [LINK=CONCEPT_WEAPON_UPGRADES]weapons.[\LINK]</Italian>
+		<Spanish>[ICON_BULLET]Unit can use common resource [LINK=CONCEPT_WEAPON_UPGRADES]weapons.[\LINK]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_WEAPON_TIER_1_2</Tag>
-		<English>[ICON_BULLET]Unit can use Bronze and Iron weapons.</English>
-		<French>[ICON_BULLET]L'unité peut utiliser des armes de Bronze et de Fer.</French>
-		<German>[ICON_BULLET]Kann Bronze- und Eisenwaffen benutzen</German>
-		<Italian>[ICON_BULLET]Unit can use Bronze and Iron weapons.</Italian>
-		<Spanish>[ICON_BULLET]Unit can use Bronze and Iron weapons.</Spanish>
+		<English>[ICON_BULLET]Unit can use common and quality resource [LINK=CONCEPT_WEAPON_UPGRADES]weapons.[\LINK]</English>
+		<French>[ICON_BULLET]L'unité peut utiliser des [LINK=CONCEPT_WEAPON_UPGRADES]armes[\LINK] en matériaux communs et qualité.</French>
+		<German>[ICON_BULLET]Einheit kann einfache und hochwertige Waffen [LINK=CONCEPT_WEAPON_UPGRADES]benutzen[\LINK]</German>
+		<Italian>[ICON_BULLET]Unit can use common and quality resource [LINK=CONCEPT_WEAPON_UPGRADES]weapons.[\LINK]</Italian>
+		<Spanish>[ICON_BULLET]Unit can use common and quality resource [LINK=CONCEPT_WEAPON_UPGRADES]weapons.[\LINK]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_WEAPON_TIER_1_3</Tag>
-		<English>[ICON_BULLET]Unit can use Bronze, Iron and Mithril weapons.</English>
-		<French>[ICON_BULLET]L'unité peut utiliser des armes de Bronze, de Fer et de Mithril.</French>
-		<German>[ICON_BULLET]Kann Bronze-, Eisen- und Mithrilwaffen benutzen</German>
-		<Italian>[ICON_BULLET]Unit can use Bronze, Iron and Mithril weapons.</Italian>
-		<Spanish>[ICON_BULLET]Unit can use Bronze, Iron and Mithril weapons.</Spanish>
+		<English>[ICON_BULLET]Unit can use common, quality, and mythical resource [LINK=CONCEPT_WEAPON_UPGRADES]weapons.[\LINK]</English>
+		<French>[ICON_BULLET]L'unité peut utiliser des [LINK=CONCEPT_WEAPON_UPGRADES]armes[\LINK] en matériaux communs, de qualité et mythiques.</French>
+		<German>[ICON_BULLET]Einheit kann einfache, hochwertige und mystische Waffen [LINK=CONCEPT_WEAPON_UPGRADES]benutzen[\LINK</German>
+		<Italian>[ICON_BULLET]Unit can use common, quality, and mythical resource [LINK=CONCEPT_WEAPON_UPGRADES]weapons.[\LINK]</Italian>
+		<Spanish>[ICON_BULLET]Unit can use common, quality, and mythical resource [LINK=CONCEPT_WEAPON_UPGRADES]weapons.[\LINK]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_WEAPON_TIER_1_6</Tag>

@@ -18,5 +18,16 @@
 			<DefaultUnit>UNIT_CELVAR</DefaultUnit>
 				<iMercenaryWeight>0</iMercenaryWeight>
 		</UnitClassInfo>
+		<UnitClassInfo>		<!-- UNITCLASS_HAMSTERTRUPPEN -->
+			<Type>UNITCLASS_HAMSTERTRUPPEN</Type>
+			<Description>TXT_KEY_UNIT_HAMSTERTRUPPEN</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<bUnique>1</bUnique>
+			<DefaultUnit>UNIT_HAMSTERTRUPPEN</DefaultUnit>
+				<iMercenaryWeight>0</iMercenaryWeight>
+		</UnitClassInfo>
 	</UnitClassInfos>
 </Civ4UnitClassInfos>

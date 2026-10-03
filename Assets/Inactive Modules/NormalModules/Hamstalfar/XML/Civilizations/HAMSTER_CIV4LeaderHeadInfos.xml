@@ -678,7 +678,11 @@
 			<FavoriteCivic>CIVIC_FOREIGN_TRADE</FavoriteCivic>
 			<Traits>
 				<Trait>
-					<TraitType>TRAIT_ELDER</TraitType>
+					<TraitType>TRAIT_IMPERIALIST</TraitType>
+					<bTrait>1</bTrait>
+				</Trait>
+				<Trait>
+					<TraitType>TRAIT_STUDIOUS_TRADER</TraitType>
 					<bTrait>1</bTrait>
 				</Trait>
 			</Traits>
@@ -1146,7 +1150,7 @@
 			<iAttitudeToFemales>0</iAttitudeToFemales>
 			<iAttitudeToMales>0</iAttitudeToMales>
 			<iSomniumAggressiveness>40</iSomniumAggressiveness>
-			<LeaderClass>LEADERCLASS_EMERGENT</LeaderClass>
+			<LeaderClass>LEADERCLASS_IMPORTANT</LeaderClass>
 			<bTraitGain>0</bTraitGain>
 			<bTraitLoss>0</bTraitLoss>
 			<Alignment>ALIGNMENT_GOOD</Alignment>

@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Sid Meier's Civilization 4 Beyond the Sword -->
+<!-- Modified by the World of Civilization Team -->
+<!-- Game Text -->
+<!-- -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PALACE_HAMSTER_NO</Tag>
+		<English>Throne of the Gyld King</English>
+		<French>Throne of the Gyld King</French>
+		<German>Throne of the Gyld King</German>
+		<Italian>Throne of the Gyld King</Italian>
+		<Spanish>Throne of the Gyld King</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WHEEL_NO</Tag>
+		<English>Farstride Arena </English>
+		<French>Farstride Arena</French>
+		<German>Farstride Arena</German>
+		<Italian>Farstride Arena</Italian>
+		<Spanish>Farstride Arena</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WHEEL_NO_PEDIA</Tag>
+		<English>Farstride Arena
+
+The Gyldalfar use wide staging grounds with tall grass as a place for both competition and military drills.
+
+The goal of the sport is to manoeuvre a hide-wrapped sphere from one side of the arena to the opposing side, while only using their feet.
+The games involve increasingly complex movement at each stage, until the elves almost appear to glide across the verdant sea.
+
+Wildly popular among the citizenry, it has led to the Gyldalfars' reputation for extreme fitness.</English>
+		<French>Farstride Arena
+
+The Gyldalfar use wide staging grounds with tall grass as a place for both competition and military drills.
+
+The goal of the sport is to manoeuvre a hide-wrapped sphere from one side of the arena to the opposing side, while only using their feet.
+The games involve increasingly complex movement at each stage, until the elves almost appear to glide across the verdant sea.
+
+Wildly popular among the citizenry, it has led to the Gyldalfars' reputation for extreme fitness.</French>
+		<German>Farstride Arena
+
+The Gyldalfar use wide staging grounds with tall grass as a place for both competition and military drills.
+
+The goal of the sport is to manoeuvre a hide-wrapped sphere from one side of the arena to the opposing side, while only using their feet.
+The games involve increasingly complex movement at each stage, until the elves almost appear to glide across the verdant sea.
+
+Wildly popular among the citizenry, it has led to the Gyldalfars' reputation for extreme fitness.</German>
+		<Italian>Farstride Arena
+
+The Gyldalfar use wide staging grounds with tall grass as a place for both competition and military drills.
+
+The goal of the sport is to manoeuvre a hide-wrapped sphere from one side of the arena to the opposing side, while only using their feet.
+The games involve increasingly complex movement at each stage, until the elves almost appear to glide across the verdant sea.
+
+Wildly popular among the citizenry, it has led to the Gyldalfars' reputation for extreme fitness.</Italian>
+		<Spanish>Farstride Arena
+
+The Gyldalfar use wide staging grounds with tall grass as a place for both competition and military drills.
+
+The goal of the sport is to manoeuvre a hide-wrapped sphere from one side of the arena to the opposing side, while only using their feet.
+The games involve increasingly complex movement at each stage, until the elves almost appear to glide across the verdant sea.
+
+Wildly popular among the citizenry, it has led to the Gyldalfars' reputation for extreme fitness.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HAMSTER_NO_DESC</Tag>
+		<English>Gyldalfar</English>
+		<French>Gyldalfar</French>
+		<German>Gyldalfar</German>
+		<Italian>Gyldalfar</Italian>
+		<Spanish>Gyldalfar</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HAMSTER_NO_SHORT_DESC</Tag>
+		<English>Gyldalfar</English>
+		<French>Gyldalfar</French>
+		<German>Gyldalfar</German>
+		<Italian>Gyldalfar</Italian>
+		<Spanish>Gyldalfar</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HAMSTER_NO_ADJECTIVE</Tag>
+		<English>Gyldalfar</English>
+		<French>Gyldalfar</French>
+		<German>Gyldalfar</German>
+		<Italian>Gyldalfar</Italian>
+		<Spanish>Gyldalfar</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HAMSTER_NO_PEDIA</Tag>
+		<English>At the dawn of the Age of Ice, the once-mighty Alfar civilization fell victim to the forces of the nascent age, with a rivalry between the Summer and Winter courts erupting into violent civil war. This left many smaller settlements isolated and destined for death, or so they thought. One particular settlement was destined for far greater things, however, and just when things looked the most dire, they found themselves banding together under the banner of five merchant families. 
+As ice choked the land and food became impossible to find, they found strength in bartering not for gold, but for clothes, food and supplies from other small hamlets, with the families' years of expertise allowing them to get the best for what they could offer.
+Now, much later, the Gyldalfar culture is well established. The merchant lords rule a much larger Elven population and own most property. Still, the relationship between the patricians and commons is generally very good as the gyld families are gifted leaders. Elven culture outside the main cities tends to be governed by elven warlords whose only loyalty to the families stems from the riches that flow down their trade routes, ensuring a level of comfort they would not have known as simple bandits, though their soldiers still look like bandits if you were to see them from afar.[PARAGRAPH:1]When the seasons dictate a time of hardship, soldiers and warlords will undertake the Trial of Five Winds to determine who will be the one to lead the warhoste.</English>
+		<French>At the dawn of the Age of Ice, the once-mighty Alfar civilization fell victim to the forces of the nascent age, with a rivalry between the Summer and Winter courts erupting into violent civil war. This left many smaller settlements isolated and destined for death, or so they thought. One particular settlement was destined for far greater things, however, and just when things looked the most dire, they found themselves banding together under the banner of five merchant families. 
+As ice choked the land and food became impossible to find, they found strength in bartering not for gold, but for clothes, food and supplies from other small hamlets, with the families' years of expertise allowing them to get the best for what they could offer.
+Now, much later, the Gyldalfar culture is well established. The merchant lords rule a much larger Elven population and own most property. Still, the relationship between the patricians and commons is generally very good as the gyld families are gifted leaders. Elven culture outside the main cities tends to be governed by elven warlords whose only loyalty to the families stems from the riches that flow down their trade routes, ensuring a level of comfort they would not have known as simple bandits, though their soldiers still look like bandits if you were to see them from afar.[PARAGRAPH:1]When the seasons dictate a time of hardship, soldiers and warlords will undertake the Trial of Five Winds to determine who will be the one to lead the warhoste.</French>
+		<German>At the dawn of the Age of Ice, the once-mighty Alfar civilization fell victim to the forces of the nascent age, with a rivalry between the Summer and Winter courts erupting into violent civil war. This left many smaller settlements isolated and destined for death, or so they thought. One particular settlement was destined for far greater things, however, and just when things looked the most dire, they found themselves banding together under the banner of five merchant families. 
+As ice choked the land and food became impossible to find, they found strength in bartering not for gold, but for clothes, food and supplies from other small hamlets, with the families' years of expertise allowing them to get the best for what they could offer.
+Now, much later, the Gyldalfar culture is well established. The merchant lords rule a much larger Elven population and own most property. Still, the relationship between the patricians and commons is generally very good as the gyld families are gifted leaders. Elven culture outside the main cities tends to be governed by elven warlords whose only loyalty to the families stems from the riches that flow down their trade routes, ensuring a level of comfort they would not have known as simple bandits, though their soldiers still look like bandits if you were to see them from afar.[PARAGRAPH:1]When the seasons dictate a time of hardship, soldiers and warlords will undertake the Trial of Five Winds to determine who will be the one to lead the warhoste.</German>
+		<Italian>At the dawn of the Age of Ice, the once-mighty Alfar civilization fell victim to the forces of the nascent age, with a rivalry between the Summer and Winter courts erupting into violent civil war. This left many smaller settlements isolated and destined for death, or so they thought. One particular settlement was destined for far greater things, however, and just when things looked the most dire, they found themselves banding together under the banner of five merchant families. 
+As ice choked the land and food became impossible to find, they found strength in bartering not for gold, but for clothes, food and supplies from other small hamlets, with the families' years of expertise allowing them to get the best for what they could offer.
+Now, much later, the Gyldalfar culture is well established. The merchant lords rule a much larger Elven population and own most property. Still, the relationship between the patricians and commons is generally very good as the gyld families are gifted leaders. Elven culture outside the main cities tends to be governed by elven warlords whose only loyalty to the families stems from the riches that flow down their trade routes, ensuring a level of comfort they would not have known as simple bandits, though their soldiers still look like bandits if you were to see them from afar.[PARAGRAPH:1]When the seasons dictate a time of hardship, soldiers and warlords will undertake the Trial of Five Winds to determine who will be the one to lead the warhoste.</Italian>
+		<Spanish>At the dawn of the Age of Ice, the once-mighty Alfar civilization fell victim to the forces of the nascent age, with a rivalry between the Summer and Winter courts erupting into violent civil war. This left many smaller settlements isolated and destined for death, or so they thought. One particular settlement was destined for far greater things, however, and just when things looked the most dire, they found themselves banding together under the banner of five merchant families. 
+As ice choked the land and food became impossible to find, they found strength in bartering not for gold, but for clothes, food and supplies from other small hamlets, with the families' years of expertise allowing them to get the best for what they could offer.
+Now, much later, the Gyldalfar culture is well established. The merchant lords rule a much larger Elven population and own most property. Still, the relationship between the patricians and commons is generally very good as the gyld families are gifted leaders. Elven culture outside the main cities tends to be governed by elven warlords whose only loyalty to the families stems from the riches that flow down their trade routes, ensuring a level of comfort they would not have known as simple bandits, though their soldiers still look like bandits if you were to see them from afar.[PARAGRAPH:1]When the seasons dictate a time of hardship, soldiers and warlords will undertake the Trial of Five Winds to determine who will be the one to lead the warhoste.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_VALK_NO</Tag>
+		<English>Valkar, Gyld King</English>
+		<French>Valkar, Gyld King</French>
+		<German>Valkar, Gyld King</German>
+		<Italian>Valkar, Gyld King</Italian>
+		<Spanish>Valkar, Gyld King</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_VALK_NO_PEDIA</Tag>
+		<English>The Gyld King is an elected monarch, the head of each Great House - the Merchant Lords - casting a vote. Valkar was elected unanimously and rules with absolute power. A master organizer, all the Gyldhold is run with deft efficiency. Yet he is also both flexible and persuasive, guiding the Gyldalfar through great policy changes both quickly and without misstep.[NEWLINE][NEWLINE]It is said his gold eye possesses the power to see true motives of both man and elf.</English>
+		<French>The Gyld King is an elected monarch, the head of each Great House - the Merchant Lords - casting a vote. Valkar was elected unanimously and rules with absolute power. A master organizer, all the Gyldhold is run with deft efficiency. Yet he is also both flexible and persuasive, guiding the Gyldalfar through great policy changes both quickly and without misstep.[NEWLINE][NEWLINE]It is said his gold eye possesses the power to see true motives of both man and elf.</French>
+		<German>The Gyld King is an elected monarch, the head of each Great House - the Merchant Lords - casting a vote. Valkar was elected unanimously and rules with absolute power. A master organizer, all the Gyldhold is run with deft efficiency. Yet he is also both flexible and persuasive, guiding the Gyldalfar through great policy changes both quickly and without misstep.[NEWLINE][NEWLINE]It is said his gold eye possesses the power to see true motives of both man and elf.</German>
+		<Italian>The Gyld King is an elected monarch, the head of each Great House - the Merchant Lords - casting a vote. Valkar was elected unanimously and rules with absolute power. A master organizer, all the Gyldhold is run with deft efficiency. Yet he is also both flexible and persuasive, guiding the Gyldalfar through great policy changes both quickly and without misstep.[NEWLINE][NEWLINE]It is said his gold eye possesses the power to see true motives of both man and elf.</Italian>
+		<Spanish>The Gyld King is an elected monarch, the head of each Great House - the Merchant Lords - casting a vote. Valkar was elected unanimously and rules with absolute power. A master organizer, all the Gyldhold is run with deft efficiency. Yet he is also both flexible and persuasive, guiding the Gyldalfar through great policy changes both quickly and without misstep.[NEWLINE][NEWLINE]It is said his gold eye possesses the power to see true motives of both man and elf.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HAMSTER_COMMANDER_NO_PEDIA</Tag>
+		<English>Life on the great planes of Erebus is demanding; self-sufficiency and grit are almost a requirement, but in times of war, someone must be chosen to lead the war parties in large-scale conflict as their general.
+
+So-called Five Winds Warlords get their title from the Gyldalfar doctrine of flexibility, adopting different methods of command to suit the warlord armies that have joined under their banner in any given campaign.</English>
+		<French>Life on the great planes of Erebus is demanding; self-sufficiency and grit are almost a requirement, but in times of war, someone must be chosen to lead the war parties in large-scale conflict as their general.
+
+So-called Five Winds Warlords get their title from the Gyldalfar doctrine of flexibility, adopting different methods of command to suit the warlord armies that have joined under their banner in any given campaign.</French>
+		<German>Life on the great planes of Erebus is demanding; self-sufficiency and grit are almost a requirement, but in times of war, someone must be chosen to lead the war parties in large-scale conflict as their general.
+
+So-called Five Winds Warlords get their title from the Gyldalfar doctrine of flexibility, adopting different methods of command to suit the warlord armies that have joined under their banner in any given campaign.</German>
+		<Italian>Life on the great planes of Erebus is demanding; self-sufficiency and grit are almost a requirement, but in times of war, someone must be chosen to lead the war parties in large-scale conflict as their general.
+
+So-called Five Winds Warlords get their title from the Gyldalfar doctrine of flexibility, adopting different methods of command to suit the warlord armies that have joined under their banner in any given campaign.</Italian>
+		<Spanish>Life on the great planes of Erebus is demanding; self-sufficiency and grit are almost a requirement, but in times of war, someone must be chosen to lead the war parties in large-scale conflict as their general.
+
+So-called Five Winds Warlords get their title from the Gyldalfar doctrine of flexibility, adopting different methods of command to suit the warlord armies that have joined under their banner in any given campaign.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HAMSTER_COMMANDER_NO</Tag>
+		<English>Five Winds Warlord</English>
+		<French>Five Winds de Guerre Hamster</French>
+		<German>Five Winds Kriegsherr</German>
+		<Italian>Five Winds Warlord</Italian>
+		<Spanish>Five Winds Warlord</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HAMSTERTRUPPEN_NO</Tag>
+		<English>Furies</English>
+		<French>Furies</French>
+		<German>Furies</German>
+		<Italian>Furies</Italian>
+		<Spanish>Furies</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HAMSTERTRUPPEN_NO_PEDIA</Tag>
+		<English>The Gyldalfar military is almost completely comprised of rather pragmatic wayfarers, patriotic but not in a hurry to die. Only one unit is made up entirely of die hard fanatics: The dread Furies.[PARAGRAPH:1]Moving unseen into enemy territory, pillaging villages or ripping enamy squadrons limb from limb, a swarm of blood-crazed wildelves is a terrifying sight.[PARAGRAPH:1]Often forgetting self defence, the Furies have difficulty in pitched battle. However, sufficiently well armed they are not just an awesome sight, but one few foe-men will see twice.</English>
+		<French>The Gyldalfar military is almost completely comprised of rather pragmatic wayfarers, patriotic but not in a hurry to die. Only one unit is made up entirely of die hard fanatics: The dread Furies.[PARAGRAPH:1]Moving unseen into enemy territory, pillaging villages or ripping enamy squadrons limb from limb, a swarm of blood-crazed wildelves is a terrifying sight.[PARAGRAPH:1]Often forgetting self defence, the Furies have difficulty in pitched battle. However, sufficiently well armed they are not just an awesome sight, but one few foe-men will see twice.</French>
+		<German>The Gyldalfar military is almost completely comprised of rather pragmatic wayfarers, patriotic but not in a hurry to die. Only one unit is made up entirely of die hard fanatics: The dread Furies.[PARAGRAPH:1]Moving unseen into enemy territory, pillaging villages or ripping enamy squadrons limb from limb, a swarm of blood-crazed wildelves is a terrifying sight.[PARAGRAPH:1]Often forgetting self defence, the Furies have difficulty in pitched battle. However, sufficiently well armed they are not just an awesome sight, but one few foe-men will see twice.</German>
+		<Italian>The Gyldalfar military is almost completely comprised of rather pragmatic wayfarers, patriotic but not in a hurry to die. Only one unit is made up entirely of die hard fanatics: The dread Furies.[PARAGRAPH:1]Moving unseen into enemy territory, pillaging villages or ripping enamy squadrons limb from limb, a swarm of blood-crazed wildelves is a terrifying sight.[PARAGRAPH:1]Often forgetting self defence, the Furies have difficulty in pitched battle. However, sufficiently well armed they are not just an awesome sight, but one few foe-men will see twice.</Italian>
+		<Spanish>The Gyldalfar military is almost completely comprised of rather pragmatic wayfarers, patriotic but not in a hurry to die. Only one unit is made up entirely of die hard fanatics: The dread Furies.[PARAGRAPH:1]Moving unseen into enemy territory, pillaging villages or ripping enamy squadrons limb from limb, a swarm of blood-crazed wildelves is a terrifying sight.[PARAGRAPH:1]Often forgetting self defence, the Furies have difficulty in pitched battle. However, sufficiently well armed they are not just an awesome sight, but one few foe-men will see twice.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_FIT</Tag>
+		<English>Fit</English>
+		<French>Fit</French>
+		<German>Fit</German>
+		<Italian>Fit</Italian>
+		<Spanish>Fit</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_INSPIRING</Tag>
+		<English>Inspiring</English>
+		<French>Inspiring</French>
+		<German>Inspirierend</German>
+		<Italian>Inspiring</Italian>
+		<Spanish>Inspiring</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_INSPIRED</Tag>
+		<English>Inspired</English>
+		<French>Inspired</French>
+		<German>Inspiriert</German>
+		<Italian>Inspired</Italian>
+		<Spanish>Inspired</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_ALFAR_NO</Tag>
+		<English>Golden Elf</English>
+		<French>Golden Elf</French>
+		<German>Golden Elf</German>
+		<Italian>Golden Elf</Italian>
+		<Spanish>Golden Elf</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_COMPACT_NO</Tag>
+		<English>Barter</English>
+		<French>Barter</French>
+		<German>Barter</German>
+		<Italian>Barter</Italian>
+		<Spanish>Barter</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_COMPACT_NO_PEDIA</Tag>
+		<English>Thanks to the elven oath sworn between the Alfar merchant families, their lands are prosperous, healthy, and well-defended.
+		
+		And in exchange for their generocity, the ruling families will pocket any excess funds from their trade routes. As is their right.</English>
+		<French>Thanks to the elven oath sworn between the Alfar merchant families, their lands are prosperous, healthy, and well-defended.
+		
+		And in exchange for their generocity, the ruling families will pocket any excess funds from their trade routes. As is their right.</French>
+		<German>Thanks to the elven oath sworn between the Alfar merchant families, their lands are prosperous, healthy, and well-defended.
+		
+		And in exchange for their generocity, the ruling families will pocket any excess funds from their trade routes. As is their right.</German>
+		<Italian>Thanks to the elven oath sworn between the Alfar merchant families, their lands are prosperous, healthy, and well-defended.
+		
+		And in exchange for their generocity, the ruling families will pocket any excess funds from their trade routes. As is their right.</Italian>
+		<Spanish>Thanks to the elven oath sworn between the Alfar merchant families, their lands are prosperous, healthy, and well-defended.
+		
+		And in exchange for their generocity, the ruling families will pocket any excess funds from their trade routes. As is their right.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_COMPACT_NO_SHORT</Tag>
+		<English>Barter</English>
+		<French>Barter</French>
+		<German>Barter</German>
+		<Italian>Barter</Italian>
+		<Spanish>Barter</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_HAMSTER_TRIAL_NO</Tag>
+		<English>Trial of the Five Winds</English>
+		<French>Trial of the Five Winds</French>
+		<German>Pr&#252;fung der Five Winds</German>
+		<Italian>Trial of the Five Winds</Italian>
+		<Spanish>Trial of the Five Winds</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_HAMSTER_TRIAL_NO_PEDIA</Tag>
+		<English>Trial of the Five Winds</English>
+		<French>Trial of the Five Winds</French>
+		<German>Pr&#252;fung der Five Winds</German>
+		<Italian>Trial of the Five Winds</Italian>
+		<Spanish>Trial of the Five Winds</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_HAMSTER_TRIAL_NO_HELP</Tag>
+		<English>[ICON_BULLET]May prove themself a warlord, fail, or even die</English>
+		<French>[ICON_BULLET]May prove themself a warlord, fail, or even die</French>
+		<German>[ICON_BULLET]May prove themself a warlord, fail, or even die</German>
+		<Italian>[ICON_BULLET]May prove themself a warlord, fail, or even die</Italian>
+		<Spanish>[ICON_BULLET]May prove themself a warlord, fail, or even die</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_HAMSTER_COMMANDER_NO</Tag>
+		<English>Five Winds Warlord</English>
+		<French>Five Winds Warlord</French>
+		<German>Five Winds Warlord</German>
+		<Italian>Five Winds Warlord</Italian>
+		<Spanish>Five Winds Warlord</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_TRIAL_LEASH</Tag>
+		<English>Failed Trial</English>
+		<French>Failed Trial</French>
+		<German>Bei der Pr&#252;fung versagt</German>
+		<Italian>Failed Trial</Italian>
+		<Spanish>Failed Trial</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_HAMSTER_COMMANDER_ADEPT</Tag>
+		<English>Arcane Commander</English>
+		<French>Arcane Commander</French>
+		<German>Magischer Kommandant</German>
+		<Italian>Arcane Commander</Italian>
+		<Spanish>Arcane Commander</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_HAMSTER_COMMANDER_ARCHER</Tag>
+		<English>Archer Commander</English>
+		<French>Archer Commander</French>
+		<German>Bogensch&#252;tzenkommandant</German>
+		<Italian>Archer Commander</Italian>
+		<Spanish>Archer Commander</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_HAMSTER_COMMANDER_DISCIPLE</Tag>
+		<English>Disciple Commander</English>
+		<French>Disciple Commander</French>
+		<German>Kommandant der Geweihten</German>
+		<Italian>Disciple Commander</Italian>
+		<Spanish>Disciple Commander</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_HAMSTER_COMMANDER_MELEE</Tag>
+		<English>Melee Commander</English>
+		<French>Melee Commander</French>
+		<German>Nahkampfkommandant</German>
+		<Italian>Melee Commander</Italian>
+		<Spanish>Melee Commander</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_HAMSTER_COMMANDER_MOUNTED</Tag>
+		<English>Mounted Commander</English>
+		<French>Mounted Commander</French>
+		<German>Berittenenkommandant</German>
+		<Italian>Mounted Commander</Italian>
+		<Spanish>Mounted Commander</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_HAMSTER_COMMANDER_RECON</Tag>
+		<English>Recon Commander</English>
+		<French>Recon Commander</French>
+		<German>Aufkl&#228;rungskommandant</German>
+		<Italian>Recon Commander</Italian>
+		<Spanish>Recon Commander</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_EAGLE_HUNTER_NO</Tag>
+		<English>Gyldbonded Eagle</English>
+		<French>Gyldbonded Eagle</French>
+		<German>Gyldbonded Eagle</German>
+		<Italian>Gyldbonded Eagle</Italian>
+		<Spanish>Gyldbonded Eagle</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_EAGLE_HUNTER_NO_PEDIA</Tag>
+		<English>An eagle bonded to an elven trainer. The eagles of the great planes are one of the smartest birds in Erebus, able to communicate detailed information by knocking their knuckles on the ground repeatedly and carry out complex tasks like dropping a smouldering sack of pitch onto a garrison roof. This has made them one of the key military assets of the Gyldalfar, as they are used for recon, organising troop orders, and striking deep behind enemy lines.</English>
+		<French>An eagle bonded to an elven trainer. The eagles of the great planes are one of the smartest birds in Erebus, able to communicate detailed information by knocking their knuckles on the ground repeatedly and carry out complex tasks like dropping a smouldering sack of pitch onto a garrison roof. This has made them one of the key military assets of the Gyldalfar, as they are used for recon, organising troop orders, and striking deep behind enemy lines.</French>
+		<German>An eagle bonded to an elven trainer. The eagles of the great planes are one of the smartest birds in Erebus, able to communicate detailed information by knocking their knuckles on the ground repeatedly and carry out complex tasks like dropping a smouldering sack of pitch onto a garrison roof. This has made them one of the key military assets of the Gyldalfar, as they are used for recon, organising troop orders, and striking deep behind enemy lines.</German>
+		<Italian>An eagle bonded to an elven trainer. The eagles of the great planes are one of the smartest birds in Erebus, able to communicate detailed information by knocking their knuckles on the ground repeatedly and carry out complex tasks like dropping a smouldering sack of pitch onto a garrison roof. This has made them one of the key military assets of the Gyldalfar, as they are used for recon, organising troop orders, and striking deep behind enemy lines.</Italian>
+		<Spanish>An eagle bonded to an elven trainer. The eagles of the great planes are one of the smartest birds in Erebus, able to communicate detailed information by knocking their knuckles on the ground repeatedly and carry out complex tasks like dropping a smouldering sack of pitch onto a garrison roof. This has made them one of the key military assets of the Gyldalfar, as they are used for recon, organising troop orders, and striking deep behind enemy lines.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_EAGLE_HUNTER_NO_STRATEGY</Tag>
+		<English>Recon and bombard</English>
+		<French>Recon and bombard</French>
+		<German>Recon and bombard</German>
+		<Italian>Recon and bombard</Italian>
+		<Spanish>Recon and bombard</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BALLISTA</Tag>
+		<English>Ballista</English>
+		<French>
+			<Text>Baliste</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Ballista</German>
+		<Italian>Ballista</Italian>
+		<Spanish>Ballista</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_RIBAULDEQUIN_NO</Tag>
+		<English>Eagle Claw Bolt Throwers</English>
+		<French>Eagle Claw Bolt Throwers</French>
+		<German>Eagle Claw Bolt Throwers</German>
+		<Italian>Eagle Claw Bolt Throwers</Italian>
+		<Spanish>Eagle Claw Bolt Throwers</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ROGUE</Tag>
+		<English>Rogue</English>
+		<French>Rogue</French>
+		<German>Schurke</German>
+		<Italian>Rogue</Italian>
+		<Spanish>Rogue</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_VAGABOND</Tag>
+		<English>Vagabond</English>
+		<French>Vagabond</French>
+		<German>Vagabund</German>
+		<Italian>Vagabond</Italian>
+		<Spanish>Vagabond</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_WAYLAYER</Tag>
+		<English>Waylayer</English>
+		<French>Waylayer</French>
+		<German>Wegelagerer</German>
+		<Italian>Waylayer</Italian>
+		<Spanish>Waylayer</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_COMPACT_GUARDIAN_NO</Tag>
+		<English>Shadow Warriors</English>
+		<French>Shadow Warriors</French>
+		<German>Shadow Warriors</German>
+		<Italian>Shadow Warriors</Italian>
+		<Spanish>Shadow Warriors</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_ELDER_NO</Tag>
+		<English>Alleja Ruonnia</English>
+		<French>Alleja Ruonnia</French>
+		<German>Alleja Ruonnia</German>
+		<Italian>Alleja Ruonnia</Italian>
+		<Spanish>Alleja Ruonnia</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_ELDER_NO_PEDIA</Tag>
+		<English>Alleja is the youngest ranking member of the Ruonnia family, with a fearlessness born of youth, she has made daring manouver and after daring manouver both in the courts and the sparring grounds.
+
+Wisdom may be born of years, but her towering intellect has run circles around the doddering family elders, and before they knew what was happening, they found themselves cornered into voting her the first Gyld Queen in their history.
+
+She feels invincible, but elves' memories are long and slow to forgive public embarrassment.</English>
+		<French>Alleja is the youngest ranking member of the Ruonnia family, with a fearlessness born of youth, she has made daring manouver and after daring manouver both in the courts and the sparring grounds.
+
+Wisdom may be born of years, but her towering intellect has run circles around the doddering family elders, and before they knew what was happening, they found themselves cornered into voting her the first Gyld Queen in their history.
+
+She feels invincible, but elves' memories are long and slow to forgive public embarrassment.</French>
+		<German>Alleja is the youngest ranking member of the Ruonnia family, with a fearlessness born of youth, she has made daring manouver and after daring manouver both in the courts and the sparring grounds.
+
+Wisdom may be born of years, but her towering intellect has run circles around the doddering family elders, and before they knew what was happening, they found themselves cornered into voting her the first Gyld Queen in their history.
+
+She feels invincible, but elves' memories are long and slow to forgive public embarrassment.</German>
+		<Italian>Alleja is the youngest ranking member of the Ruonnia family, with a fearlessness born of youth, she has made daring manouver and after daring manouver both in the courts and the sparring grounds.
+
+Wisdom may be born of years, but her towering intellect has run circles around the doddering family elders, and before they knew what was happening, they found themselves cornered into voting her the first Gyld Queen in their history.
+
+She feels invincible, but elves' memories are long and slow to forgive public embarrassment.</Italian>
+		<Spanish>Alleja is the youngest ranking member of the Ruonnia family, with a fearlessness born of youth, she has made daring manouver and after daring manouver both in the courts and the sparring grounds.
+
+Wisdom may be born of years, but her towering intellect has run circles around the doddering family elders, and before they knew what was happening, they found themselves cornered into voting her the first Gyld Queen in their history.
+
+She feels invincible, but elves' memories are long and slow to forgive public embarrassment.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_ELDER</Tag>
+		<English>Elder</English>
+		<French>Elder</French>
+		<German>Altehrw&#252;rdig</German>
+		<Italian>Elder</Italian>
+		<Spanish>Elder</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_ELDER_SHORT</Tag>
+		<English>Elder</English>
+		<French>Elder</French>
+		<German>Altehrw</German>
+		<Italian>Elder</Italian>
+		<Spanish>Elder</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HARBOR_HAMSTALFAR</Tag>
+		<English>Haven</English>
+		<French>Haven</French>
+		<German>Zuflucht</German>
+		<Italian>Haven</Italian>
+		<Spanish>Haven</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_INN_HAMSTALFAR</Tag>
+		<English>Auberge</English>
+		<French>Auberge</French>
+		<German>Auberge</German>
+		<Italian>Auberge</Italian>
+		<Spanish>Auberge</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_LIGHTHOUSE_HAMSTALFAR_NO</Tag>
+		<English>Corrugated Waterways</English>
+		<French>Corrugated Waterways</French>
+		<German>Corrugated Waterways</German>
+		<Italian>Corrugated Waterways</Italian>
+		<Spanish>Corrugated Waterways</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TAVERN_HAMSTALFAR</Tag>
+		<English>Taphouse</English>
+		<French>Bar</French>
+		<German>Zapfhaus</German>
+		<Italian>Taphouse</Italian>
+		<Spanish>Taphouse</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MONEYCHANGER_HAMSTALFAR</Tag>
+		<English>Countinghouse</English>
+		<French>Countinghouse</French>
+		<German>Z&#228;hlstube</German>
+		<Italian>Countinghouse</Italian>
+		<Spanish>Countinghouse</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ARTISANS_WORKSHOP_HAMSTALFAR</Tag>
+		<English>Bottega</English>
+		<French>Bottega</French>
+		<German>Bottega</German>
+		<Italian>Bottega</Italian>
+		<Spanish>Bottega</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_TARQ_NO</Tag>
+		<English>Pavar</English>
+		<French>Pavar</French>
+		<German>Pavar</German>
+		<Italian>Pavar</Italian>
+		<Spanish>Pavar</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_TARQ_NO_PEDIA</Tag>
+		<English>As the eldest of the Tarq family, Pavar is expected to expand the family's business interests and secure dominance in the shifting sands of public office.
+And yet he seems to wile away his days at court parties, shaking hands and making friends with the people he should be subverting.
+
+Slowly he accumulates an entourage of lesser lords and ladies of all the houses,  eager to spill wine and words until the late hours.
+
+He is not Alleja, swooping and diving through a gauntlet of knives, where one false step would end the tale; he doesn't need to be. 
+She hears his ideas through her brother, and they take hold because they are good ideas and just so happen to benefit House Tarq a little more than others.
+
+He is not a warlord in the wylds, governing some backwater trade depot and amassing men to take things by force; he doesn't need to be.
+He knows the warlord had bought his son a tutor in the city, and the tutor is an old friend.
+
+He is not the Gyld King, holding council over the five families as he decides people's fates with the stroke of a quill; he doesn't need to be.
+Everything on those parchments was his idea.</English>
+		<French>As the eldest of the Tarq family, Pavar is expected to expand the family's business interests and secure dominance in the shifting sands of public office.
+And yet he seems to wile away his days at court parties, shaking hands and making friends with the people he should be subverting.
+
+Slowly he accumulates an entourage of lesser lords and ladies of all the houses,  eager to spill wine and words until the late hours.
+
+He is not Alleja, swooping and diving through a gauntlet of knives, where one false step would end the tale; he doesn't need to be. 
+She hears his ideas through her brother, and they take hold because they are good ideas and just so happen to benefit House Tarq a little more than others.
+
+He is not a warlord in the wylds, governing some backwater trade depot and amassing men to take things by force; he doesn't need to be.
+He knows the warlord had bought his son a tutor in the city, and the tutor is an old friend.
+
+He is not the Gyld King, holding council over the five families as he decides people's fates with the stroke of a quill; he doesn't need to be.
+Everything on those parchments was his idea.</French>
+		<German>As the eldest of the Tarq family, Pavar is expected to expand the family's business interests and secure dominance in the shifting sands of public office.
+And yet he seems to wile away his days at court parties, shaking hands and making friends with the people he should be subverting.
+
+Slowly he accumulates an entourage of lesser lords and ladies of all the houses,  eager to spill wine and words until the late hours.
+
+He is not Alleja, swooping and diving through a gauntlet of knives, where one false step would end the tale; he doesn't need to be. 
+She hears his ideas through her brother, and they take hold because they are good ideas and just so happen to benefit House Tarq a little more than others.
+
+He is not a warlord in the wylds, governing some backwater trade depot and amassing men to take things by force; he doesn't need to be.
+He knows the warlord had bought his son a tutor in the city, and the tutor is an old friend.
+
+He is not the Gyld King, holding council over the five families as he decides people's fates with the stroke of a quill; he doesn't need to be.
+Everything on those parchments was his idea.</German>
+		<Italian>As the eldest of the Tarq family, Pavar is expected to expand the family's business interests and secure dominance in the shifting sands of public office.
+And yet he seems to wile away his days at court parties, shaking hands and making friends with the people he should be subverting.
+
+Slowly he accumulates an entourage of lesser lords and ladies of all the houses,  eager to spill wine and words until the late hours.
+
+He is not Alleja, swooping and diving through a gauntlet of knives, where one false step would end the tale; he doesn't need to be. 
+She hears his ideas through her brother, and they take hold because they are good ideas and just so happen to benefit House Tarq a little more than others.
+
+He is not a warlord in the wylds, governing some backwater trade depot and amassing men to take things by force; he doesn't need to be.
+He knows the warlord had bought his son a tutor in the city, and the tutor is an old friend.
+
+He is not the Gyld King, holding council over the five families as he decides people's fates with the stroke of a quill; he doesn't need to be.
+Everything on those parchments was his idea.</Italian>
+		<Spanish>As the eldest of the Tarq family, Pavar is expected to expand the family's business interests and secure dominance in the shifting sands of public office.
+And yet he seems to wile away his days at court parties, shaking hands and making friends with the people he should be subverting.
+
+Slowly he accumulates an entourage of lesser lords and ladies of all the houses,  eager to spill wine and words until the late hours.
+
+He is not Alleja, swooping and diving through a gauntlet of knives, where one false step would end the tale; he doesn't need to be. 
+She hears his ideas through her brother, and they take hold because they are good ideas and just so happen to benefit House Tarq a little more than others.
+
+He is not a warlord in the wylds, governing some backwater trade depot and amassing men to take things by force; he doesn't need to be.
+He knows the warlord had bought his son a tutor in the city, and the tutor is an old friend.
+
+He is not the Gyld King, holding council over the five families as he decides people's fates with the stroke of a quill; he doesn't need to be.
+Everything on those parchments was his idea.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CELVAR</Tag>
+		<English>Celvar</English>
+		<French>Celvar</French>
+		<German>Celvar</German>
+		<Italian>Celvar</Italian>
+		<Spanish>Celvar</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CELVAR_STRATEGY</Tag>
+		<English>Celvar is unbuildable. He must be summoned by a recon unit of at least level 6; The spell to do so becomes available after Animal Handling.</English>
+		<French>Celvar is unbuildable. He must be summoned by a recon unit of at least level 6; The spell to do so becomes available after Animal Handling.</French>
+		<German>Celvar is unbuildable. He must be summoned by a recon unit of at least level 6; The spell to do so becomes available after Animal Handling.</German>
+		<Italian>Celvar is unbuildable. He must be summoned by a recon unit of at least level 6; The spell to do so becomes available after Animal Handling.</Italian>
+		<Spanish>Celvar is unbuildable. He must be summoned by a recon unit of at least level 6; The spell to do so becomes available after Animal Handling.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_CELVAR</Tag>
+		<English>Call Celvar</English>
+		<French>Call Celvar</French>
+		<German>Celvar rufen</German>
+		<Italian>Call Celvar</Italian>
+		<Spanish>Call Celvar</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_CELVAR_NO_HELP</Tag>
+		<English>[ICON_BULLET]Summons Celvar, a Gyldbonded Eagle hero.[NEWLINE][ICON_BULLET]Celvar, unlike other Gyldbonded Eagles, is free-roaming. However, he is leashed to his summoner; Choose wisely.</English>
+		<French>[ICON_BULLET]Summons Celvar, a Gyldbonded Eagle hero.[NEWLINE][ICON_BULLET]Celvar, unlike other Gyldbonded Eagles, is free-roaming. However, he is leashed to his summoner; Choose wisely.</French>
+		<German>[ICON_BULLET]Beschw&#246;rt Celvar, einen Adlerj&#228;ger Held.[NEWLINE][ICON_BULLET]Celvar streift anders als andere J&#228;ger frei herum. Er ist dennoch an seinen Beschw&#246;rer gebunden. W&#228;hlt diesen weise!</German>
+		<Italian>[ICON_BULLET]Summons Celvar, a Gyldbonded Eagle hero.[NEWLINE][ICON_BULLET]Celvar, unlike other Gyldbonded Eagles, is free-roaming. However, he is leashed to his summoner; Choose wisely.</Italian>
+		<Spanish>[ICON_BULLET]Summons Celvar, a Gyldbonded Eagle hero.[NEWLINE][ICON_BULLET]Celvar, unlike other Gyldbonded Eagles, is free-roaming. However, he is leashed to his summoner; Choose wisely.</Spanish>
+	</TEXT>
+</Civ4GameText>

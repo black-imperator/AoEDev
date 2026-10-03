@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Unit Infos -->
+<Civ4UnitInfos xmlns="x-schema:DynRel_CIV4UnitSchema.xml">
+	<UnitInfos>
+		<UnitInfo>        <!-- Diseased Corpse -->
+			<Class>UNITCLASS_DISEASED_CORPSE</Class>
+			<Type>UNIT_DISEASED_CORPSE</Type>
+			<PrereqTech>TECH_WAY_OF_THE_WICKED</PrereqTech>
+		</UnitInfo>
+		<UnitInfo>        <!-- Gibbon Goetia -->
+			<Class>UNITCLASS_GIBBON</Class>
+			<Type>UNIT_GIBBON</Type>
+			<PrereqTech>TECH_SORCERY</PrereqTech>
+		</UnitInfo>
+		<UnitInfo>        <!-- Valin Phanuel -->
+			<Class>UNITCLASS_VALIN</Class>
+			<Type>UNIT_VALIN</Type>
+			<PrereqTech>TECH_ORDERS_FROM_HEAVEN</PrereqTech>
+			<TechTypes>
+				<PrereqTech>TECH_HORSEBACK_RIDING</PrereqTech>
+				<PrereqTech>TECH_WAY_OF_THE_WISE</PrereqTech>
+			</TechTypes>
+		</UnitInfo>
+		<UnitInfo>        <!-- Rosier the Fallen -->
+			<Class>UNITCLASS_ROSIER</Class>
+			<Type>UNIT_ROSIER</Type>
+			<PrereqTech>TECH_CORRUPTION_OF_SPIRIT</PrereqTech>
+			<TechTypes>
+				<PrereqTech>TECH_HORSEBACK_RIDING</PrereqTech>
+				<PrereqTech>TECH_WAY_OF_THE_WICKED</PrereqTech>
+			</TechTypes>
+		</UnitInfo>
+	</UnitInfos>
+</Civ4UnitInfos>

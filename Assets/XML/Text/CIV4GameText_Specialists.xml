@@ -384,6 +384,14 @@ By their will, the sheep of the fold will carry tools of war to meet the wolves 
 This is a time of urgency; no expense can be spared to protect our homes.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_GREAT_PRIEST_GRIGORI_STRATEGY</Tag>
+		<English>The Great Luonnotar is a Great Prophet whose unique effect is that they can settle in the city to provide unit training XP and city defence instead of gold and hammers, in addition to the other Great Prophet abilities.</English>
+		<French>The Great Luonnotar is a Great Prophet whose unique effect is that they can settle in the city to provide unit training XP and city defence instead of gold and hammers, in addition to the other Great Prophet abilities.</French>
+		<German>The Great Luonnotar is a Great Prophet whose unique effect is that they can settle in the city to provide unit training XP and city defence instead of gold and hammers, in addition to the other Great Prophet abilities.</German>
+		<Italian>The Great Luonnotar is a Great Prophet whose unique effect is that they can settle in the city to provide unit training XP and city defence instead of gold and hammers, in addition to the other Great Prophet abilities.</Italian>
+		<Spanish>The Great Luonnotar is a Great Prophet whose unique effect is that they can settle in the city to provide unit training XP and city defence instead of gold and hammers, in addition to the other Great Prophet abilities.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_SPECIALIST_HEALER_MEKARA</Tag>
 		<English>Sister of the Healing Church</English>
 		<French>Sister of the Healing Church</French>

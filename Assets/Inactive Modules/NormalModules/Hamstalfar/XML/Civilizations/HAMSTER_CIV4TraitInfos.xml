@@ -11,27 +11,45 @@
 			<Help/>
 			<iHealth>3</iHealth>
 			<iHappiness>1</iHappiness>
-			<iDomesticGreatGeneralRateModifier>25</iDomesticGreatGeneralRateModifier>
-			<iMaxCities>5</iMaxCities>
-		</TraitInfo>
-		<TraitInfo>		<!-- Elder -->
-			<Type>TRAIT_ELDER</Type>
-			<TraitClass>TRAITCLASS_PERSONALITY</TraitClass>
-			<Description>TXT_KEY_TRAIT_ELDER</Description>
-			<Civilopedia>TXT_KEY_TRAIT_ELDER_PEDIA</Civilopedia>
-			<ShortDescription>TXT_KEY_TRAIT_ELDER_SHORT</ShortDescription>
-			<Help/>
+			<iMaxCities>1</iMaxCities>
 			<TradeYieldModifiers>
-				<iYield>0</iYield>
-				<iYield>0</iYield>
-				<iYield>-50</iYield>
+				<iYield>100</iYield>
+				<iYield>100</iYield>
+				<iYield>-300</iYield>
 			</TradeYieldModifiers>
 			<TradeCommerceModifiers>
 				<iCommerce>0</iCommerce>
 				<iCommerce>100</iCommerce>
+				<iCommerce>25</iCommerce>
 			</TradeCommerceModifiers>
 			<PeaceCommerceModifiers>
-				<iCommerce>25</iCommerce>
+				<iCommerce>0</iCommerce>
+			</PeaceCommerceModifiers>
+			<CommerceModifiers>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+			</CommerceModifiers>
+		</TraitInfo>
+		<TraitInfo>		<!-- Studious Trader -->
+			<Type>TRAIT_STUDIOUS_TRADER</Type>
+			<TraitClass>TRAITCLASS_PERSONALITY</TraitClass>
+			<Description>TXT_KEY_TRAIT_STUDIOUS_TRADER</Description>
+			<Civilopedia>TXT_KEY_TRAIT_STUDIOUS_TRADER_PEDIA</Civilopedia>
+			<ShortDescription>TXT_KEY_TRAIT_STUDIOUS_TRADER_SHORT</ShortDescription>
+			<Help/>
+			<TradeYieldModifiers>
+				<iYield>0</iYield>
+				<iYield>-50</iYield>
+				<iYield>0</iYield>
+			</TradeYieldModifiers>
+			<TradeCommerceModifiers>
+				<iCommerce>0</iCommerce>
+				<iCommerce>50</iCommerce>
+				<iCommerce>0</iCommerce>
+			</TradeCommerceModifiers>
+			<PeaceCommerceModifiers>
+				<iCommerce>0</iCommerce>
 			</PeaceCommerceModifiers>
 		</TraitInfo>
 	</TraitInfos>

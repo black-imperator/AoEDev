@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Bart Muzzin (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Leaderhead art path information -->
+<Civ4ArtDefines xmlns="x-schema:HAMH_CIV4ArtDefinesSchema.xml">
+	<LeaderheadArtInfos>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_VALK</Type>
+			<Button>Art/Modules/Hamstalfar/Buttons/GyldalfarButton.dds</Button>
+			<NIF>Art/Modules/Hamstalfar/Leaderheads/GyldalfarLeader.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_ALLEJA</Type>
+			<Button>Art/Modules/Hamstalfar/Buttons/Allejauriahvothbutton.dds</Button>
+			<NIF>Art/Modules/Hamstalfar/Leaderheads/Allejauriahvoth.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_TARQ</Type>
+			<Button>Art/Modules/Hamstalfar/Buttons/TarqButton.dds</Button>
+			<NIF>Art/Modules/Hamstalfar/Leaderheads/Tarquelne.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+	</LeaderheadArtInfos>
+</Civ4ArtDefines>

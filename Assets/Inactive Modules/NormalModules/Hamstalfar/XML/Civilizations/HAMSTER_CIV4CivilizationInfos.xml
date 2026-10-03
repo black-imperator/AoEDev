@@ -14,8 +14,8 @@
 			<Civilopedia>TXT_KEY_CIV_HAMSTER_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_HAMSTER</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_HAMSTALFAR</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_LJOSALFAR</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_ELF</UnitArtStyleType>
+			<ArtStyleType>ARTSTYLE_WILDERNESS</ArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_GOLDEN_ELF_GYLDALFAR</UnitArtStyleType>
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
@@ -67,6 +67,10 @@
 					<BuildingClassType>BUILDINGCLASS_ARTISANS_WORKSHOP</BuildingClassType>
 					<BuildingType>BUILDING_ARTISANS_WORKSHOP_HAMSTALFAR</BuildingType>
 				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_MERCHANT_ELVES</BuildingClassType>
+					<BuildingType>BUILDING_MERCHANT_ELVES</BuildingType>
+				</Building>
 			</Buildings>
 			<Units>
 				<Unit>
@@ -90,19 +94,19 @@
 					<UnitType>UNIT_ROGUE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_HUNTER</UnitClassType>
+					<UnitClassType>UNITCLASS_THIEF</UnitClassType>
 					<UnitType>UNIT_VAGABOND</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_RANGER</UnitClassType>
+					<UnitClassType>UNITCLASS_ASSASSIN</UnitClassType>
 					<UnitType>UNIT_WAYLAYER</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_BEASTMASTER</UnitClassType>
+					<UnitClassType>UNITCLASS_SHADOW</UnitClassType>
 					<UnitType>UNIT_COMPACT_GUARDIAN</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_ASSASSIN</UnitClassType>
+					<UnitClassType>UNITCLASS_HAMSTERTRUPPEN</UnitClassType>
 					<UnitType>UNIT_HAMSTERTRUPPEN</UnitType>
 				</Unit>
 				<Unit>
@@ -116,12 +120,8 @@
 					<iFreeUnits>1</iFreeUnits>
 				</FreeUnitClass>
 				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_WARRIOR</UnitClassType>
-					<iFreeUnits>1</iFreeUnits>
-				</FreeUnitClass>
-				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_SCOUT</UnitClassType>
-					<iFreeUnits>1</iFreeUnits>
+					<iFreeUnits>2</iFreeUnits>
 				</FreeUnitClass>
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
@@ -132,7 +132,7 @@
 			</FreeBuildingClasses>
 			<FreeTechs>
 				<FreeTech>
-					<TechType>TECH_AGRICULTURE</TechType>
+					<TechType>TECH_EXPLORATION</TechType>
 					<bFreeTech>1</bFreeTech>
 				</FreeTech>
 			</FreeTechs>

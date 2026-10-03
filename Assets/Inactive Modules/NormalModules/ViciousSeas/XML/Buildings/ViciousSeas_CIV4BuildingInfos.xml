@@ -599,6 +599,14 @@
 					</CommerceModifiers>
 				</BonusCommerceModifier>
 				<BonusCommerceModifier>
+					<BonusType>BONUS_PENGUINS</BonusType>
+					<CommerceModifiers>
+						<iCommerce>0</iCommerce>
+						<iCommerce>0</iCommerce>
+						<iCommerce>5</iCommerce>
+					</CommerceModifiers>
+				</BonusCommerceModifier>
+				<BonusCommerceModifier>
 					<BonusType>BONUS_IVORY</BonusType>
 					<CommerceModifiers>
 						<iCommerce>0</iCommerce>

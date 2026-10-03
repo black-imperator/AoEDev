@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!-- Formatted by Xienwolf -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Promotion Infos -->
+<Civ4PromotionInfos xmlns="x-schema:HAMH_CIV4UnitSchema.xml">
+	<PromotionInfos>
+		<PromotionInfo>		<!-- Alfar -->
+			<Type>PROMOTION_ALFAR</Type>
+			<Description>TXT_KEY_PROMOTION_ALFAR_NO</Description>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Hamster Commander -->
+			<Type>PROMOTION_HAMSTER_COMMANDER</Type>
+			<Description>TXT_KEY_PROMOTION_HAMSTER_COMMANDER_NO</Description>
+			<Button>Art/Interface/Buttons/Unitcombats/SecondaryUC_CommanderAlt.dds</Button>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Hamster Commander Adept Spec -->
+			<Type>PROMOTION_HAMSTER_COMMANDER_ADEPT</Type>
+			<Description>TXT_KEY_PROMOTION_HAMSTER_COMMANDER_ADEPT</Description>
+			<Button>Art/Interface/Buttons/Unitcombats/SecondaryUC_Adept.dds</Button>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Hamster Commander Archer Spec -->
+			<Type>PROMOTION_HAMSTER_COMMANDER_ARCHER</Type>
+			<Description>TXT_KEY_PROMOTION_HAMSTER_COMMANDER_ARCHER</Description>
+			<Button>Art/Interface/Buttons/Unitcombats/SecondaryUC_Archer.dds</Button>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Hamster Commander Disciple Spec -->
+			<Type>PROMOTION_HAMSTER_COMMANDER_DISCIPLE</Type>
+			<Description>TXT_KEY_PROMOTION_HAMSTER_COMMANDER_DISCIPLE</Description>
+			<Button>Art/Interface/Buttons/Unitcombats/SecondaryUC_Disciple.dds</Button>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Hamster Commander Melee Spec -->
+			<Type>PROMOTION_HAMSTER_COMMANDER_MELEE</Type>
+			<Description>TXT_KEY_PROMOTION_HAMSTER_COMMANDER_MELEE</Description>
+			<Button>Art/Interface/Buttons/Unitcombats/SecondaryUC_Melee.dds</Button>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Hamster Commander Mounted Spec -->
+			<Type>PROMOTION_HAMSTER_COMMANDER_MOUNTED</Type>
+			<Description>TXT_KEY_PROMOTION_HAMSTER_COMMANDER_MOUNTED</Description>
+			<Button>Art/Interface/Buttons/Unitcombats/SecondaryUC_Mounted.dds</Button>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Hamster Commander Recon Spec -->
+			<Type>PROMOTION_HAMSTER_COMMANDER_RECON</Type>
+			<Description>TXT_KEY_PROMOTION_HAMSTER_COMMANDER_RECON</Description>
+			<Button>Art/Interface/Buttons/Unitcombats/SecondaryUC_Recon.dds</Button>
+		</PromotionInfo>
+	</PromotionInfos>
+</Civ4PromotionInfos>

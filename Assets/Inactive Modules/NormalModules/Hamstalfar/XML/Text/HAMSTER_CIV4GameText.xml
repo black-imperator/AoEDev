@@ -54,15 +54,15 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_HAMSTER_PEDIA</Tag>
-		<English>At the dawn of the Age of Ice, the once-mighty Alfar civilization fell victim to the forces of the nascent age, with a rivalry between the Summer and Winter courts erupting into violent civil war. This left many smaller settlements isolated and destined for death… Or so they thought. One particular settlement was destined for far greater things, however, and just when things looked the most dire, as ice choked the land and food became impossible to find, they were rescued by a rather unexpected group; A race of intelligent Hamsters.
+		<English>At the dawn of the Age of Ice, the once-mighty Alfar civilization fell victim to the forces of the nascent age, with a rivalry between the Summer and Winter courts erupting into violent civil war. This left many smaller settlements isolated and destined for death, or so they thought. One particular settlement was destined for far greater things, however, and just when things looked the most dire, as ice choked the land and food became impossible to find, they were rescued by a rather unexpected group; A race of intelligent Hamsters.
 Now, much later, the hybrid "Hamstalfar" culture is well established. The Fuzzy Lords rule a much larger Elven population and own most property. Still, the relationship between the species is generally very good as the hamsters are gifted leaders. Elven culture tends to dominate outside the capital, though the "Kibblic Edda", an ancient cycle of hamster legend, is a common inspiration for most Hamstalfar artists.[PARAGRAPH:1]When commanded by Hamster officers Elven troops are among the finest in the world.</English>
-		<French>At the dawn of the Age of Ice, the once-mighty Alfar civilization fell victim to the forces of the nascent age, with a rivalry between the Summer and Winter courts erupting into violent civil war. This left many smaller settlements isolated and destined for death… Or so they thought. One particular settlement was destined for far greater things, however, and just when things looked the most dire, as ice choked the land and food became impossible to find, they were rescued by a rather unexpected group; A race of intelligent Hamsters.
+		<French>At the dawn of the Age of Ice, the once-mighty Alfar civilization fell victim to the forces of the nascent age, with a rivalry between the Summer and Winter courts erupting into violent civil war. This left many smaller settlements isolated and destined for death, or so they thought. One particular settlement was destined for far greater things, however, and just when things looked the most dire, as ice choked the land and food became impossible to find, they were rescued by a rather unexpected group; A race of intelligent Hamsters.
 Now, much later, the hybrid "Hamstalfar" culture is well established. The Fuzzy Lords rule a much larger Elven population and own most property. Still, the relationship between the species is generally very good as the hamsters are gifted leaders. Elven culture tends to dominate outside the capital, though the "Kibblic Edda", an ancient cycle of hamster legend, is a common inspiration for most Hamstalfar artists.[PARAGRAPH:1]When commanded by Hamster officers Elven troops are among the finest in the world.</French>
-		<German>At the dawn of the Age of Ice, the once-mighty Alfar civilization fell victim to the forces of the nascent age, with a rivalry between the Summer and Winter courts erupting into violent civil war. This left many smaller settlements isolated and destined for death… Or so they thought. One particular settlement was destined for far greater things, however, and just when things looked the most dire, as ice choked the land and food became impossible to find, they were rescued by a rather unexpected group; A race of intelligent Hamsters.
+		<German>At the dawn of the Age of Ice, the once-mighty Alfar civilization fell victim to the forces of the nascent age, with a rivalry between the Summer and Winter courts erupting into violent civil war. This left many smaller settlements isolated and destined for death, or so they thought. One particular settlement was destined for far greater things, however, and just when things looked the most dire, as ice choked the land and food became impossible to find, they were rescued by a rather unexpected group; A race of intelligent Hamsters.
 Now, much later, the hybrid "Hamstalfar" culture is well established. The Fuzzy Lords rule a much larger Elven population and own most property. Still, the relationship between the species is generally very good as the hamsters are gifted leaders. Elven culture tends to dominate outside the capital, though the "Kibblic Edda", an ancient cycle of hamster legend, is a common inspiration for most Hamstalfar artists.[PARAGRAPH:1]When commanded by Hamster officers Elven troops are among the finest in the world.</German>
-		<Italian>At the dawn of the Age of Ice, the once-mighty Alfar civilization fell victim to the forces of the nascent age, with a rivalry between the Summer and Winter courts erupting into violent civil war. This left many smaller settlements isolated and destined for death… Or so they thought. One particular settlement was destined for far greater things, however, and just when things looked the most dire, as ice choked the land and food became impossible to find, they were rescued by a rather unexpected group; A race of intelligent Hamsters.
+		<Italian>At the dawn of the Age of Ice, the once-mighty Alfar civilization fell victim to the forces of the nascent age, with a rivalry between the Summer and Winter courts erupting into violent civil war. This left many smaller settlements isolated and destined for death, or so they thought. One particular settlement was destined for far greater things, however, and just when things looked the most dire, as ice choked the land and food became impossible to find, they were rescued by a rather unexpected group; A race of intelligent Hamsters.
 Now, much later, the hybrid "Hamstalfar" culture is well established. The Fuzzy Lords rule a much larger Elven population and own most property. Still, the relationship between the species is generally very good as the hamsters are gifted leaders. Elven culture tends to dominate outside the capital, though the "Kibblic Edda", an ancient cycle of hamster legend, is a common inspiration for most Hamstalfar artists.[PARAGRAPH:1]When commanded by Hamster officers Elven troops are among the finest in the world.</Italian>
-		<Spanish>At the dawn of the Age of Ice, the once-mighty Alfar civilization fell victim to the forces of the nascent age, with a rivalry between the Summer and Winter courts erupting into violent civil war. This left many smaller settlements isolated and destined for death… Or so they thought. One particular settlement was destined for far greater things, however, and just when things looked the most dire, as ice choked the land and food became impossible to find, they were rescued by a rather unexpected group; A race of intelligent Hamsters.
+		<Spanish>At the dawn of the Age of Ice, the once-mighty Alfar civilization fell victim to the forces of the nascent age, with a rivalry between the Summer and Winter courts erupting into violent civil war. This left many smaller settlements isolated and destined for death, or so they thought. One particular settlement was destined for far greater things, however, and just when things looked the most dire, as ice choked the land and food became impossible to find, they were rescued by a rather unexpected group; A race of intelligent Hamsters.
 Now, much later, the hybrid "Hamstalfar" culture is well established. The Fuzzy Lords rule a much larger Elven population and own most property. Still, the relationship between the species is generally very good as the hamsters are gifted leaders. Elven culture tends to dominate outside the capital, though the "Kibblic Edda", an ancient cycle of hamster legend, is a common inspiration for most Hamstalfar artists.[PARAGRAPH:1]When commanded by Hamster officers Elven troops are among the finest in the world.</Spanish>
 	</TEXT>
 	<TEXT>
@@ -364,6 +364,45 @@ Now, much later, the hybrid "Hamstalfar" culture is well established. The Fuzzy 
 		<German>Altehrw</German>
 		<Italian>Elder</Italian>
 		<Spanish>Elder</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_STUDIOUS_TRADER</Tag>
+		<English>Studious Trader</English>
+		<French>Studious Trader</French>
+		<German>Studious Trader</German>
+		<Italian>Studious Trader</Italian>
+		<Spanish>Studious Trader</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_STUDIOUS_TRADER_PEDIA</Tag>
+		<English>This is my prized possession from our latest dealings with the Kuriotate exchange. 
+Look at it, isn't it beautiful? Lightweight, yet strong enough to stop a blunderbuss, just a work of art...
+
+...Now, take it apart and figure out how it's done; I want every soldier we have to be carrying one by the end of this cycle.</English>
+		<French>This is my prized possession from our latest dealings with the Kuriotate exchange. 
+Look at it, isn't it beautiful? Lightweight, yet strong enough to stop a blunderbuss, just a work of art...
+
+...Now, take it apart and figure out how it's done; I want every soldier we have to be carrying one by the end of this cycle.</French>
+		<German>This is my prized possession from our latest dealings with the Kuriotate exchange. 
+Look at it, isn't it beautiful? Lightweight, yet strong enough to stop a blunderbuss, just a work of art...
+
+...Now, take it apart and figure out how it's done; I want every soldier we have to be carrying one by the end of this cycle.</German>
+		<Italian>This is my prized possession from our latest dealings with the Kuriotate exchange. 
+Look at it, isn't it beautiful? Lightweight, yet strong enough to stop a blunderbuss, just a work of art...
+
+...Now, take it apart and figure out how it's done; I want every soldier we have to be carrying one by the end of this cycle.</Italian>
+		<Spanish>This is my prized possession from our latest dealings with the Kuriotate exchange. 
+Look at it, isn't it beautiful? Lightweight, yet strong enough to stop a blunderbuss, just a work of art...
+
+...Now, take it apart and figure out how it's done; I want every soldier we have to be carrying one by the end of this cycle.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_STUDIOUS_TRADER_SHORT</Tag>
+		<English>StdTrd</English>
+		<French>StdTrd</French>
+		<German>StdTrd</German>
+		<Italian>StdTrd</Italian>
+		<Spanish>StdTrd</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_HARBOR_HAMSTALFAR</Tag>

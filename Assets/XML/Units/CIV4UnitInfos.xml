@@ -19678,6 +19678,7 @@
 			<DefaultUnitAI>UNITAI_PROPHET</DefaultUnitAI>
 			<Description>TXT_KEY_SPECIALIST_GREAT_PRIEST_GRIGORI</Description>
 			<Civilopedia>TXT_KEY_SPECIALIST_PRIEST_GRIGORI_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_SPECIALIST_GREAT_PRIEST_GRIGORI_STRATEGY</Strategy>
 			<Advisor>ADVISOR_RELIGION</Advisor>
 			<bGoldenAge>1</bGoldenAge>
 			<UnitAIs>
@@ -44779,7 +44780,6 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
-			<bPillage>1</bPillage>
 			<bMechanized>1</bMechanized>
 			<bRenderBelowWater>1</bRenderBelowWater>
 			<UnitAIs>
