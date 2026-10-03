@@ -8,7 +8,7 @@
 	<BuildingClassInfos>
 		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_ARMS_SMUGGLING</Type>
-			<Description>TXT_KEY_BUILDING_ARMSSMUGGLING</Description>
+			<Description>TXT_KEY_BUILDING_ARMS_SMUGGLING</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
