@@ -1967,11 +1967,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_SLAVER2_HELP</Tag>
-		<English>[ICON_BULLET]Grants access to the [LINK=SPELL_CRIMINAL_ENSLAVE]Enslave Criminals[\LINK] Ability.[NEWLINE][ICON_BULLET]Every slave gains the[LINK=PROMOTION_FORCED_LABOR]Forced Labor[\LINK] Promotion.</English>
-		<French>[ICON_BULLET]Grants access to the [LINK=SPELL_CRIMINAL_ENSLAVE]Enslave Criminals[\LINK] Ability.[NEWLINE][ICON_BULLET]Every slave gains the[LINK=PROMOTION_FORCED_LABOR]Forced Labor[\LINK] Promotion.</French>
-		<German>[ICON_BULLET]Grants access to the [LINK=SPELL_CRIMINAL_ENSLAVE]Enslave Criminals[\LINK] Ability.[NEWLINE][ICON_BULLET]Every slave gains the[LINK=PROMOTION_FORCED_LABOR]Forced Labor[\LINK] Promotion.</German>
-		<Italian>[ICON_BULLET]Grants access to the [LINK=SPELL_CRIMINAL_ENSLAVE]Enslave Criminals[\LINK] Ability.[NEWLINE][ICON_BULLET]Every slave gains the[LINK=PROMOTION_FORCED_LABOR]Forced Labor[\LINK] Promotion.</Italian>
-		<Spanish>[ICON_BULLET]Grants access to the [LINK=SPELL_CRIMINAL_ENSLAVE]Enslave Criminals[\LINK] Ability.[NEWLINE][ICON_BULLET]Every slave gains the[LINK=PROMOTION_FORCED_LABOR]Forced Labor[\LINK] Promotion.</Spanish>
+		<English>[NEWLINE][ICON_BULLET]Grants access to the [LINK=SPELL_CRIMINAL_ENSLAVE]Enslave Criminals[\LINK] Ability.[NEWLINE][ICON_BULLET]Every slave gains the[LINK=PROMOTION_FORCED_LABOR]Forced Labor[\LINK] Promotion.</English>
+		<French>[NEWLINE][ICON_BULLET]Grants access to the [LINK=SPELL_CRIMINAL_ENSLAVE]Enslave Criminals[\LINK] Ability.[NEWLINE][ICON_BULLET]Every slave gains the[LINK=PROMOTION_FORCED_LABOR]Forced Labor[\LINK] Promotion.</French>
+		<German>[NEWLINE][ICON_BULLET]Grants access to the [LINK=SPELL_CRIMINAL_ENSLAVE]Enslave Criminals[\LINK] Ability.[NEWLINE][ICON_BULLET]Every slave gains the[LINK=PROMOTION_FORCED_LABOR]Forced Labor[\LINK] Promotion.</German>
+		<Italian>[NEWLINE][ICON_BULLET]Grants access to the [LINK=SPELL_CRIMINAL_ENSLAVE]Enslave Criminals[\LINK] Ability.[NEWLINE][ICON_BULLET]Every slave gains the[LINK=PROMOTION_FORCED_LABOR]Forced Labor[\LINK] Promotion.</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]Grants access to the [LINK=SPELL_CRIMINAL_ENSLAVE]Enslave Criminals[\LINK] Ability.[NEWLINE][ICON_BULLET]Every slave gains the[LINK=PROMOTION_FORCED_LABOR]Forced Labor[\LINK] Promotion.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_SLAVER_PEDIA</Tag>
@@ -5730,27 +5730,27 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_SKIAMANCER_HELP</Tag>
-		<English>[ICON_BULLET]Small chance of spawning a sceadugengan when your forests are invaded by enemy troops[NEWLINE][ICON_BULLET]Adepts get a new summoning shadow spell.</English>
-		<French>[ICON_BULLET]Small chance of spawning a sceadugengan when your forests are invaded by enemy troops[NEWLINE][ICON_BULLET]Adepts get a new summoning shadow spell.</French>
-		<German>[ICON_BULLET]Small chance of spawning a sceadugengan when your forests are invaded by enemy troops[NEWLINE][ICON_BULLET]Adepts get a new summoning shadow spell.</German>
-		<Italian>[ICON_BULLET]Small chance of spawning a sceadugengan when your forests are invaded by enemy troops[NEWLINE][ICON_BULLET]Adepts get a new summoning shadow spell.</Italian>
-		<Spanish>[ICON_BULLET]Small chance of spawning a sceadugengan when your forests are invaded by enemy troops[NEWLINE][ICON_BULLET]Adepts get a new summoning shadow spell.</Spanish>
+		<English>[NEWLINE][ICON_BULLET]Small chance of spawning a sceadugengan when your forests are invaded by enemy troops[NEWLINE][ICON_BULLET]Adepts get a new summoning shadow spell.</English>
+		<French>[NEWLINE][ICON_BULLET]Small chance of spawning a sceadugengan when your forests are invaded by enemy troops[NEWLINE][ICON_BULLET]Adepts get a new summoning shadow spell.</French>
+		<German>[NEWLINE][ICON_BULLET]Small chance of spawning a sceadugengan when your forests are invaded by enemy troops[NEWLINE][ICON_BULLET]Adepts get a new summoning shadow spell.</German>
+		<Italian>[NEWLINE][ICON_BULLET]Small chance of spawning a sceadugengan when your forests are invaded by enemy troops[NEWLINE][ICON_BULLET]Adepts get a new summoning shadow spell.</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]Small chance of spawning a sceadugengan when your forests are invaded by enemy troops[NEWLINE][ICON_BULLET]Adepts get a new summoning shadow spell.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_SKIAMANCER2_HELP</Tag>
-		<English>[ICON_BULLET]Illusions get a Shadow Affinity granting first strikes and unholy strength.</English>
-		<French>[ICON_BULLET]Illusions get a Shadow Affinity granting first strikes and unholy strength.</French>
-		<German>[ICON_BULLET]Illusions get a Shadow Affinity granting first strikes and unholy strength.</German>
-		<Italian>[ICON_BULLET]Illusions get a Shadow Affinity granting first strikes and unholy strength.</Italian>
-		<Spanish>[ICON_BULLET]Illusions get a Shadow Affinity granting first strikes and unholy strength.</Spanish>
+		<English>[NEWLINE][ICON_BULLET]Illusions get a Shadow Affinity granting first strikes and unholy strength.</English>
+		<French>[NEWLINE][ICON_BULLET]Illusions get a Shadow Affinity granting first strikes and unholy strength.</French>
+		<German>[NEWLINE][ICON_BULLET]Illusions get a Shadow Affinity granting first strikes and unholy strength.</German>
+		<Italian>[NEWLINE][ICON_BULLET]Illusions get a Shadow Affinity granting first strikes and unholy strength.</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]Illusions get a Shadow Affinity granting first strikes and unholy strength.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_SKIAMANCER3_HELP</Tag>
-		<English>[ICON_BULLET]Shadow Mages can summon Corrupted Treants in Forests[NEWLINE][ICON_BULLET]Small chance of spawning a sceadugengan when your forests are invaded by enemy troops[NEWLINE][ICON_BULLET]Illusions gain Fear[NEWLINE][ICON_BULLET]Mages are invisible.[NEWLINE][ICON_BULLET]Archmages provide illusions with invisibility.</English>
-		<French>[ICON_BULLET]Shadow Mages can summon Corrupted Treants in Forests[NEWLINE][ICON_BULLET]Small chance of spawning a sceadugengan when your forests are invaded by enemy troops[NEWLINE][ICON_BULLET]Illusions gain Fear[NEWLINE][ICON_BULLET]Mages are invisible.[NEWLINE][ICON_BULLET]Archmages provide illusions with invisibility.</French>
-		<German>[ICON_BULLET]Shadow Mages can summon Corrupted Treants in Forests[NEWLINE][ICON_BULLET]Small chance of spawning a sceadugengan when your forests are invaded by enemy troops[NEWLINE][ICON_BULLET]Illusions gain Fear[NEWLINE][ICON_BULLET]Mages are invisible.[NEWLINE][ICON_BULLET]Archmages provide illusions with invisibility.</German>
-		<Italian>[ICON_BULLET]Shadow Mages can summon Corrupted Treants in Forests[NEWLINE][ICON_BULLET]Small chance of spawning a sceadugengan when your forests are invaded by enemy troops[NEWLINE][ICON_BULLET]Illusions gain Fear[NEWLINE][ICON_BULLET]Mages are invisible.[NEWLINE][ICON_BULLET]Archmages provide illusions with invisibility.</Italian>
-		<Spanish>[ICON_BULLET]Shadow Mages can summon Corrupted Treants in Forests[NEWLINE][ICON_BULLET]Small chance of spawning a sceadugengan when your forests are invaded by enemy troops[NEWLINE][ICON_BULLET]Illusions gain Fear[NEWLINE][ICON_BULLET]Mages are invisible.[NEWLINE][ICON_BULLET]Archmages provide illusions with invisibility.</Spanish>
+		<English>[NEWLINE][ICON_BULLET]Shadow Mages can summon Corrupted Treants in Forests[NEWLINE][ICON_BULLET]Small chance of spawning a sceadugengan when your forests are invaded by enemy troops[NEWLINE][ICON_BULLET]Illusions gain Fear[NEWLINE][ICON_BULLET]Mages are invisible.[NEWLINE][ICON_BULLET]Archmages provide illusions with invisibility.</English>
+		<French>[NEWLINE][ICON_BULLET]Shadow Mages can summon Corrupted Treants in Forests[NEWLINE][ICON_BULLET]Small chance of spawning a sceadugengan when your forests are invaded by enemy troops[NEWLINE][ICON_BULLET]Illusions gain Fear[NEWLINE][ICON_BULLET]Mages are invisible.[NEWLINE][ICON_BULLET]Archmages provide illusions with invisibility.</French>
+		<German>[NEWLINE][ICON_BULLET]Shadow Mages can summon Corrupted Treants in Forests[NEWLINE][ICON_BULLET]Small chance of spawning a sceadugengan when your forests are invaded by enemy troops[NEWLINE][ICON_BULLET]Illusions gain Fear[NEWLINE][ICON_BULLET]Mages are invisible.[NEWLINE][ICON_BULLET]Archmages provide illusions with invisibility.</German>
+		<Italian>[NEWLINE][ICON_BULLET]Shadow Mages can summon Corrupted Treants in Forests[NEWLINE][ICON_BULLET]Small chance of spawning a sceadugengan when your forests are invaded by enemy troops[NEWLINE][ICON_BULLET]Illusions gain Fear[NEWLINE][ICON_BULLET]Mages are invisible.[NEWLINE][ICON_BULLET]Archmages provide illusions with invisibility.</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]Shadow Mages can summon Corrupted Treants in Forests[NEWLINE][ICON_BULLET]Small chance of spawning a sceadugengan when your forests are invaded by enemy troops[NEWLINE][ICON_BULLET]Illusions gain Fear[NEWLINE][ICON_BULLET]Mages are invisible.[NEWLINE][ICON_BULLET]Archmages provide illusions with invisibility.</Spanish>
 	</TEXT>
 	<TEXT>  <!-- Vault Help New Line, Vault Help Start -->
 		<Tag>TXT_KEY_PYHELP_VAULT_NEWLINE</Tag>
