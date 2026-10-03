@@ -8969,9 +8969,9 @@ int CvPlayerAI::AI_getDifferentReligionAttitude(PlayerTypes ePlayer) const
 
 	iAttitude = 0;
 
-	if (((isUniqueCult() || isIntolerant()) &&  GET_PLAYER(ePlayer).getStateReligion() != NO_RELIGION)
+	if ((getUniqueCult()!= GET_PLAYER(ePlayer).getUniqueCult()) ||((getUniqueCult()!=NO_CULT || isIntolerant()) &&  GET_PLAYER(ePlayer).getStateReligion() != NO_RELIGION)
 	||  (  (getStateReligion() != NO_RELIGION)
-		&& ((GET_PLAYER(ePlayer).isUniqueCult()) || ((GET_PLAYER(ePlayer).getStateReligion() != NO_RELIGION)
+		&& ((GET_PLAYER(ePlayer).getUniqueCult()) != NO_CULT || ((GET_PLAYER(ePlayer).getStateReligion() != NO_RELIGION)
 		&& (getStateReligion() != GET_PLAYER(ePlayer).getStateReligion())))))
 	{
 		iAttitude += GC.getLeaderHeadInfo(getPersonalityType()).getDifferentReligionAttitudeChange();
@@ -16161,7 +16161,7 @@ void CvPlayerAI::AI_doCounter()
 					}
 /** -- End Original Code --                                                                     **/
 /*************************************************************************************************/
-					if ((isUniqueCult() && GET_PLAYER((PlayerTypes)iI).getStateReligion() != NO_RELIGION) || ((getStateReligion() != NO_RELIGION) && ((GET_PLAYER((PlayerTypes)iI).isUniqueCult()) || ((GET_PLAYER((PlayerTypes)iI).getStateReligion() != NO_RELIGION) && GET_PLAYER((PlayerTypes)iI).getStateReligion() != getStateReligion()))))
+					if ((getUniqueCult() && GET_PLAYER((PlayerTypes)iI).getStateReligion() != NO_RELIGION) || ((getStateReligion() != NO_RELIGION) && ((GET_PLAYER((PlayerTypes)iI).getUniqueCult()) || ((GET_PLAYER((PlayerTypes)iI).getStateReligion() != NO_RELIGION) && GET_PLAYER((PlayerTypes)iI).getStateReligion() != getStateReligion()))))
 					{
 						AI_changeDifferentReligionCounter(((PlayerTypes)iI), 1);
 					}

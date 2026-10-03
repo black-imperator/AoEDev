@@ -2030,5 +2030,18 @@
 	<ElementType name="Civ4DeathListInfos" content="eltOnly">
 		<element type="DeathListInfos" minOccurs="0"/>
 	</ElementType>
+	<ElementType name="bNationalCult" content="textOnly" dt:type="boolean"/>
+	
+	<ElementType name="CultInfo" content="eltOnly" order="many">
+		<element type="Type"/>
+		<element type="Description"/>
+		<element type="bNationalCult"/>
+		</ElementType>
+	<ElementType name="CultInfos" content="eltOnly">
+		<element type="CultInfo" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="Civ4CultInfos" content="eltOnly">
+		<element type="CultInfos" minOccurs="0"/>
+	</ElementType>
 
 </Schema>

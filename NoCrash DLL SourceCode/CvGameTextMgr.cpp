@@ -8306,9 +8306,9 @@ void CvGameTextMgr::parseTraits(CvWStringBuffer &szHelpString, TraitTypes eTrait
 /*************************************************************************************************/
 /** bUniqueCult     Opera for LE/Orbis      06/07/09                                            **/
 /*************************************************************************************************/
-		if (GC.getTraitInfo(eTrait).isUniqueCult())
+		if (GC.getTraitInfo(eTrait).getUniqueCult()!=NO_CULT)
 		{
-			szHelpString.append(gDLL->getText("TXT_KEY_TRAIT_UNIQUE_CULT_HELP"));
+			szHelpString.append(gDLL->getText("TXT_KEY_TRAIT_UNIQUE_CULT_HELP",GC.getCultInfo((CultTypes)GC.getTraitInfo(eTrait).getUniqueCult()).getDescription()));
 		}
 
 		if (GC.getTraitInfo(eTrait).isIntolerant())
@@ -13515,6 +13515,41 @@ void CvGameTextMgr::parsePromotionHelp(CvWStringBuffer &szBuffer, PromotionTypes
 
 	}
 
+	//Passive Terraforming
+	if (GC.getPromotionInfo(ePromotion).getTerraformingRange() > -1)
+	{
+		if (GC.getPromotionInfo(ePromotion).getHumidityChange() > 0)
+		{
+			szText.clear();
+			szText.Format(L"%.2f", GC.getPromotionInfo(ePromotion).getHumidityChange());
+			szBuffer.append(pcNewline);
+			szBuffer.append(gDLL->getText("TXT_KEY_HUMIDITY_CHANGE", szText.GetCString(), GC.getPromotionInfo(ePromotion).getHumidityMax(), GC.getPromotionInfo(ePromotion).getTerraformingRange()));
+		}
+		else if (GC.getPromotionInfo(ePromotion).getHumidityChange() < 0)
+		{
+			szText.clear();
+			szText.Format(L"%.2f", GC.getPromotionInfo(ePromotion).getHumidityChange());
+			szBuffer.append(pcNewline);
+			szBuffer.append(gDLL->getText("TXT_KEY_HUMIDITY_CHANGE", szText.GetCString(), GC.getPromotionInfo(ePromotion).getHumidityMin(), GC.getPromotionInfo(ePromotion).getTerraformingRange()));
+
+		}
+		if (GC.getPromotionInfo(ePromotion).getTemperatureChange() > 0)
+		{
+			szText.clear();
+			szText.Format(L"%.2f", GC.getPromotionInfo(ePromotion).getTemperatureChange());
+			szBuffer.append(pcNewline);
+			szBuffer.append(gDLL->getText("TXT_KEY_TEMPERATURE_CHANGE", szText.GetCString(), GC.getPromotionInfo(ePromotion).getTemperatureMax(), GC.getPromotionInfo(ePromotion).getTerraformingRange()));
+		}
+		else if (GC.getPromotionInfo(ePromotion).getTemperatureChange() < 0)
+		{
+			szText.clear();
+			szText.Format(L"%.2f", GC.getPromotionInfo(ePromotion).getTemperatureChange());
+			szBuffer.append(pcNewline);
+			szBuffer.append(gDLL->getText("TXT_KEY_TEMPERATURE_CHANGE", szText.GetCString(), GC.getPromotionInfo(ePromotion).getTemperatureMin(), GC.getPromotionInfo(ePromotion).getTerraformingRange()));
+
+		}
+	}
+
 
 	if (GC.getPromotionInfo(ePromotion).getNoBadExplore() > 0)
 	{
@@ -15272,6 +15307,41 @@ void CvGameTextMgr::parseSpellHelp(CvWStringBuffer &szBuffer, SpellTypes eSpell,
 /*************************************************************************************************/
 /**	AutoCast								END													**/
 /*************************************************************************************************/
+
+		//Passive Terraforming
+	if (GC.getSpellInfo(eSpell).getTerraformingRange() > -1)
+	{
+		if (GC.getSpellInfo(eSpell).getHumidityChange() > 0)
+		{
+			szText.clear();
+			szText.Format(L"%.2f", GC.getSpellInfo(eSpell).getHumidityChange());
+			szBuffer.append(pcNewline);
+			szBuffer.append(gDLL->getText("TXT_KEY_HUMIDITY_CHANGE", szText.GetCString(), GC.getSpellInfo(eSpell).getHumidityMax(), GC.getSpellInfo(eSpell).getTerraformingRange()));
+		}
+		else if (GC.getSpellInfo(eSpell).getHumidityChange() < 0)
+		{
+			szText.clear();
+			szText.Format(L"%.2f", GC.getSpellInfo(eSpell).getHumidityChange());
+			szBuffer.append(pcNewline);
+			szBuffer.append(gDLL->getText("TXT_KEY_HUMIDITY_CHANGE", szText.GetCString(), GC.getSpellInfo(eSpell).getHumidityMin(), GC.getSpellInfo(eSpell).getTerraformingRange()));
+
+		}
+		if (GC.getSpellInfo(eSpell).getTemperatureChange() > 0)
+		{
+			szText.clear();
+			szText.Format(L"%.2f", GC.getSpellInfo(eSpell).getTemperatureChange());
+			szBuffer.append(pcNewline);
+			szBuffer.append(gDLL->getText("TXT_KEY_TEMPERATURE_CHANGE", szText.GetCString(), GC.getSpellInfo(eSpell).getTemperatureMax(), GC.getSpellInfo(eSpell).getTerraformingRange()));
+		}
+		else if (GC.getSpellInfo(eSpell).getTemperatureChange() < 0)
+		{
+			szText.clear();
+			szText.Format(L"%.2f", GC.getSpellInfo(eSpell).getTemperatureChange());
+			szBuffer.append(pcNewline);
+			szBuffer.append(gDLL->getText("TXT_KEY_TEMPERATURE_CHANGE", szText.GetCString(), GC.getSpellInfo(eSpell).getTemperatureMin(), GC.getSpellInfo(eSpell).getTerraformingRange()));
+
+		}
+	}
 
 
 	//Spell Bonuses
@@ -17399,7 +17469,15 @@ void CvGameTextMgr::setBasicUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit,
 			szBuffer.append(gDLL->getText("TXT_KEY_UNIT_AIR_RANGE", GC.getUnitInfo(eUnit).getAirRange()));
 		}
 	}
-
+	for (int i = 0; i < GC.getNumTechInfos(); i++)
+	{
+		if (GC.getUnitInfo(eUnit).getStrBoostTechs(i) != 0)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_UNIT_STR_TECH_BOOST", GC.getUnitInfo(eUnit).getStrBoostTechs(i),GC.getTechInfo((TechTypes)i).getDescription()));
+			
+		}
+	}
 /*************************************************************************************************/
 /**	Better Affinity						01/30/11									Valkrionn	**/
 /**																								**/
@@ -19034,6 +19112,15 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit, bool
 					szBuffer.append(gDLL->getText("TXT_KEY_UNIT_REQUIRES_STRING", GC.getBuildingClassInfo((BuildingClassTypes)(GC.getUnitInfo(eUnit).getPrereqBuildingClass())).getTextKeyWide()));
 				}
 			}
+			if (GC.getUnitInfo(eUnit).getPrereqPopulation() != 0)
+			{
+				if ((pCity == NULL) || pCity->getPopulation()< GC.getUnitInfo(eUnit).getPrereqPopulation())
+				{
+					szBuffer.append(NEWLINE);
+					szBuffer.append(gDLL->getText("TXT_KEY_PREREQ_POPULATION", GC.getUnitInfo(eUnit).getPrereqPopulation()));
+				}
+			}
+
 /*************************************************************************************************/
 /**	New Tag Defs	(UnitInfos)				05/15/08								Xienwolf	**/
 /**																								**/
@@ -19818,6 +19905,14 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 	{
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_POTENCY_GLOBAL", kBuilding.getGlobalPotency()));
+	}
+	for (int iJ = 0; iJ < GC.getNumUnitClassInfos(); iJ++)
+	{
+		if (kBuilding.getUnitClassPlayerInstancesChange(iJ) != 0)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_TRAIT_UNITCLASS_PLAYER_INSTANCES_CHANGE", GC.getUnitClassInfo((UnitClassTypes)iJ).getDescription(), kBuilding.getUnitClassPlayerInstancesChange(iJ)));
+		}
 	}
 
 	szTempBuffer.clear();
@@ -21275,7 +21370,12 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 /**	GWSLocalSpecialist																		END	**/
 /*************************************************************************************************/
 	}
+	for(int iI = 0; iI < GC.getNumImprovementClassInfos(); iI++)
+	{
+		szFirstBuffer = gDLL->getText("TXT_KEY_BUILDING_FROM_IN_LOCAL", GC.getImprovementClassInfo((ImprovementClassTypes)iI).getTextKeyWide());
+		setYieldChangeHelp(szBuffer, L"", L"", szFirstBuffer, kBuilding.getLocalImprovementClassYieldChangeArray(iI));
 
+	}
 	for (int iI = 0; iI < GC.getNumBonusInfos(); ++iI)
 	{
 		szFirstBuffer = gDLL->getText("TXT_KEY_BUILDING_WITH_BONUS", GC.getBonusInfo((BonusTypes) iI).getTextKeyWide());
@@ -22673,6 +22773,11 @@ void CvGameTextMgr::buildBuildingRequiresString(CvWStringBuffer& szBuffer, Build
 		if (kBuilding.getPrereqCrime() != 0)
 		{
 			szBuffer.append(gDLL->getText("TXT_KEY_PREREQ_CRIME", kBuilding.getPrereqCrime()));
+			szBuffer.append(NEWLINE);
+		}
+		if (kBuilding.getPrereqMaxCrime() != 0)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_PREREQ_MAX_CRIME", kBuilding.getPrereqMaxCrime()));
 			szBuffer.append(NEWLINE);
 		}
 		if (kBuilding.getPrereqPopulation() != 0)
@@ -27370,11 +27475,11 @@ void CvGameTextMgr::getAttitudeString(CvWStringBuffer& szBuffer, PlayerTypes ePl
 			{
 				sText = "TXT_KEY_MISC_ATTITUDE_INTOLERANT";
 			}
-			if (GET_PLAYER(eTargetPlayer).isUniqueCult())
+			if (GET_PLAYER(eTargetPlayer).getUniqueCult()!=NO_CULT && GET_PLAYER(eTargetPlayer).getUniqueCult() != GET_PLAYER(ePlayer).getUniqueCult())
 			{
 				sText = "TXT_KEY_MISC_ATTITUDE_CULT_YOU";
 			}
-			if (GET_PLAYER(ePlayer).isUniqueCult())
+			if (GET_PLAYER(ePlayer).getUniqueCult()!=NO_CULT && GET_PLAYER(eTargetPlayer).getUniqueCult() != GET_PLAYER(ePlayer).getUniqueCult())
 			{
 				sText = "TXT_KEY_MISC_ATTITUDE_CULT_US";
 			}

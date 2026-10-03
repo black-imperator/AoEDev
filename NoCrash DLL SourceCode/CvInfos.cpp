@@ -4217,9 +4217,17 @@ m_iPromotionClassOverwrite(NO_PROMOTIONCLASS),
 
 //Magic Rework
 m_iMagicalPower(0),
-m_iMinMagicalPower(0)
+m_iMinMagicalPower(0),
 //m_iDominionCapacity(0),
 //m_piSpellClassExtraPower(NULL)
+/**Passive Terraforming**/
+m_iTerraformingRange(-1),
+m_fHumidityChange(0.0f),
+m_fTemperatureChange(0.0f),
+m_iHumidityMin(-1),
+m_iHumidityMax(-1),
+m_iTemperatureMin(-1),
+m_iTemperatureMax(-1)
 
 
 {
@@ -5940,6 +5948,36 @@ int CvPromotionInfo::getMinMagicalPower() const
 {
 	return m_iMinMagicalPower;
 }
+/** Passive Terraforming **/
+int CvPromotionInfo::getTerraformingRange() const
+{
+	return m_iTerraformingRange;
+}
+float CvPromotionInfo::getHumidityChange() const
+{
+	return m_fHumidityChange;
+}
+float CvPromotionInfo::getTemperatureChange() const
+{
+	return m_fTemperatureChange;
+}
+int CvPromotionInfo::getHumidityMin() const
+{
+	return m_iHumidityMin;
+}
+int CvPromotionInfo::getTemperatureMin() const
+{
+	return m_iTemperatureMin;
+}
+int CvPromotionInfo::getHumidityMax() const
+{
+	return m_iHumidityMax;
+}
+int CvPromotionInfo::getTemperatureMax() const
+{
+	return m_iTemperatureMax;
+}
+
 //int CvPromotionInfo::getDominionCapacity() const
 //{
 //	return m_iDominionCapacity;
@@ -6017,6 +6055,14 @@ void CvPromotionInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iDeathListTarget);
 	stream->Read(&m_iDeathListCombat);
 
+	// Passive Terraforming
+	stream->Read(&m_iTerraformingRange);
+	stream->Read(&m_fHumidityChange);
+	stream->Read(&m_fTemperatureChange);
+	stream->Read(&m_iHumidityMin);
+	stream->Read(&m_iHumidityMax);
+	stream->Read(&m_iTemperatureMin);
+	stream->Read(&m_iTemperatureMax);
 	stream->ReadString(m_szSound);
 /*************************************************************************************************/
 /**	Promotion PyHelp		 				07/09/10								Valkrionn	**/
@@ -6970,6 +7016,15 @@ void CvPromotionInfo::write(FDataStreamBase* stream)
 	stream->Write(m_bMayResurrect);
 	stream->Write(m_iDeathListTarget);
 	stream->Write(m_iDeathListCombat);
+
+	//Passive Terraforming
+	stream->Write(m_iTerraformingRange);
+	stream->Write(m_fHumidityChange);
+	stream->Write(m_fTemperatureChange);
+	stream->Write(m_iHumidityMin);
+	stream->Write(m_iHumidityMax);
+	stream->Write(m_iTemperatureMin);
+	stream->Write(m_iTemperatureMax);
 
 	stream->WriteString(m_szSound);
 /*************************************************************************************************/
@@ -8236,6 +8291,15 @@ bool CvPromotionInfo::read(CvXMLLoadUtility* pXML)
 	m_iSpecialCargo = (SpecialUnitTypes)GC.getInfoTypeForString(szTextVal);
 	pXML->GetChildXmlValByName(szTextVal, "DomainCargo");
 	m_iDomainCargo = (DomainTypes)GC.getInfoTypeForString(szTextVal);
+
+	//Passive Terraforming
+	pXML->GetChildXmlValByName(&m_iTerraformingRange, "iTerraformingRange");
+	pXML->GetChildXmlValByName(&m_fHumidityChange, "fHumidityChange");
+	pXML->GetChildXmlValByName(&m_fTemperatureChange, "fTemperatureChange");
+	pXML->GetChildXmlValByName(&m_iHumidityMin, "iHumidityMin");
+	pXML->GetChildXmlValByName(&m_iHumidityMax, "iHumidityMax");
+	pXML->GetChildXmlValByName(&m_iTemperatureMin, "iTemperatureMin");
+	pXML->GetChildXmlValByName(&m_iTemperatureMax, "iTemperatureMax");
 
 	return true;
 }
@@ -10525,6 +10589,14 @@ void CvPromotionInfo::copyNonDefaults(CvPromotionInfo* pClassInfo, CvXMLLoadUtil
 	if (getPromotionClassOverwrite() == NO_PROMOTIONCLASS) m_iPromotionClassOverwrite = pClassInfo->getPromotionClassOverwrite();
 	if (getSpecialCargo() == NO_SPECIALUNIT) m_iSpecialCargo = pClassInfo->getSpecialCargo();
 	if (getDomainCargo() == NO_DOMAIN) m_iDomainCargo = pClassInfo->getDomainCargo();
+	//Passive Terraforming
+	if (getTerraformingRange() == -1)					m_iTerraformingRange = pClassInfo->getTerraformingRange();
+	if (getHumidityChange() == 0.0f)					m_fHumidityChange = pClassInfo->getHumidityChange();
+	if (getTemperatureChange() == 0.0f)					m_fTemperatureChange = pClassInfo->getTemperatureChange();
+	if (getHumidityMin() == -1)					m_iHumidityMin = pClassInfo->getHumidityMin();
+	if (getHumidityMax() == -1)					m_iHumidityMax = pClassInfo->getHumidityMax();
+	if (getTemperatureMin() == -1)					m_iTemperatureMin = pClassInfo->getTemperatureMin();
+	if (getTemperatureMax() == -1)					m_iTemperatureMax = pClassInfo->getTemperatureMax();
 
 }
 
@@ -11229,6 +11301,15 @@ CvSpellInfo::CvSpellInfo() :
 	m_piRemovePromotions(NULL),
 	m_iNumSpellBonuses(0),
 m_cbSpellBonuses(NULL),
+/**Passive Terraforming**/
+m_iTerraformingRange(-1),
+m_fHumidityChange(0.0f),
+m_fTemperatureChange(0.0f),
+m_iHumidityMin(-1),
+m_iHumidityMax(-1),
+m_iTemperatureMin(-1),
+m_iTemperatureMax(-1),
+
 /*************************************************************************************************/
 /**	New Tag Defs	(SpellInfos)			05/15/08								Xienwolf	**/
 /**																								**/
@@ -11987,6 +12068,35 @@ int CvSpellInfo::getPrereqSpellClassMagicalPower(int i) const
 	return m_piPrereqSpellClassMagicalPower ? m_piPrereqSpellClassMagicalPower[i] : 0;
 }
 
+/** Passive Terraforming **/
+int CvSpellInfo::getTerraformingRange() const
+{
+	return m_iTerraformingRange;
+}
+float CvSpellInfo::getHumidityChange() const
+{
+	return m_fHumidityChange;
+}
+float CvSpellInfo::getTemperatureChange() const
+{
+	return m_fTemperatureChange;
+}
+int CvSpellInfo::getHumidityMin() const
+{
+	return m_iHumidityMin;
+}
+int CvSpellInfo::getTemperatureMin() const
+{
+	return m_iTemperatureMin;
+}
+int CvSpellInfo::getHumidityMax() const
+{
+	return m_iHumidityMax;
+}
+int CvSpellInfo::getTemperatureMax() const
+{
+	return m_iTemperatureMax;
+}
 void CvSpellInfo::read(FDataStreamBase* stream)
 {
 	CvHotkeyInfo::read(stream);
@@ -12078,6 +12188,14 @@ void CvSpellInfo::read(FDataStreamBase* stream)
 		}
 	}
 
+	// Passive Terraforming
+	stream->Read(&m_iTerraformingRange);
+	stream->Read(&m_fHumidityChange);
+	stream->Read(&m_fTemperatureChange);
+	stream->Read(&m_iHumidityMin);
+	stream->Read(&m_iHumidityMax);
+	stream->Read(&m_iTemperatureMin);
+	stream->Read(&m_iTemperatureMax);
 /*************************************************************************************************/
 /**	New Tag Defs	(SpellInfos)			05/15/08								Xienwolf	**/
 /**																								**/
@@ -12281,6 +12399,14 @@ void CvSpellInfo::write(FDataStreamBase* stream)
 		}
 	}
 
+	//Passive Terraforming
+	stream->Write(m_iTerraformingRange);
+	stream->Write(m_fHumidityChange);
+	stream->Write(m_fTemperatureChange);
+	stream->Write(m_iHumidityMin);
+	stream->Write(m_iHumidityMax);
+	stream->Write(m_iTemperatureMin);
+	stream->Write(m_iTemperatureMax);
 /*************************************************************************************************/
 /**	New Tag Defs	(SpellInfos)			05/15/08								Xienwolf	**/
 /**																								**/
@@ -12671,6 +12797,14 @@ bool CvSpellInfo::read(CvXMLLoadUtility* pXML)
 	pXML->SetVariableListTagPair(&m_pbSpellClass, "SpellClasses", sizeof(GC.getSpellClassInfo((SpellClassTypes)0)), GC.getNumSpellClassInfos());
 	pXML->SetVariableListTagPair(&m_piPrereqSpellClassMagicalPower, "PrereqSpellClassMagicalPowers", sizeof(GC.getSpellClassInfo((SpellClassTypes)0)), GC.getNumSpellClassInfos());
 
+	//Passive Terraforming
+	pXML->GetChildXmlValByName(&m_iTerraformingRange, "iTerraformingRange");
+	pXML->GetChildXmlValByName(&m_fHumidityChange, "fHumidityChange");
+	pXML->GetChildXmlValByName(&m_fTemperatureChange, "fTemperatureChange");
+	pXML->GetChildXmlValByName(&m_iHumidityMin, "iHumidityMin");
+	pXML->GetChildXmlValByName(&m_iHumidityMax, "iHumidityMax");
+	pXML->GetChildXmlValByName(&m_iTemperatureMin, "iTemperatureMin");
+	pXML->GetChildXmlValByName(&m_iTemperatureMax, "iTemperatureMax");
 	return true;
 }
 //FfH: End Add
@@ -12935,6 +13069,14 @@ void CvSpellInfo::copyNonDefaults(CvSpellInfo* pClassInfo, CvXMLLoadUtility* pXM
 		m_cbSpellBonuses.push_back(cbTemp);
 		m_iNumSpellBonuses++;
 	}
+	//Passive Terraforming
+	if (getTerraformingRange() == -1)					m_iTerraformingRange = pClassInfo->getTerraformingRange();
+	if (getHumidityChange() == 0.0f)					m_fHumidityChange = pClassInfo->getHumidityChange();
+	if (getTemperatureChange() == 0.0f)					m_fTemperatureChange = pClassInfo->getTemperatureChange();
+	if (getHumidityMin() == -1)					m_iHumidityMin = pClassInfo->getHumidityMin();
+	if (getHumidityMax() == -1)					m_iHumidityMax = pClassInfo->getHumidityMax();
+	if (getTemperatureMin() == -1)					m_iTemperatureMin = pClassInfo->getTemperatureMin();
+	if (getTemperatureMax() == -1)					m_iTemperatureMax = pClassInfo->getTemperatureMax();
 
 }
 /*************************************************************************************************/
@@ -14156,6 +14298,7 @@ m_paszImages(NULL),
 /*************************************************************************************************/
 m_iAppearanceProb(0),
 m_piAppearanceTechs(NULL),
+m_piStrBoostTechs(NULL),
 /*************************************************************************************************/
 /**	New Tag Defs							END													**/
 /*************************************************************************************************/
@@ -14191,6 +14334,7 @@ m_iMiscastChance(0),
 m_iModifyGlobalCounter(0),
 m_iDiploVoteType(NO_VOTESOURCE),
 m_iEquipmentPromotion(NO_PROMOTION),
+m_iPrereqPopulation(0),
 m_iPrereqAlignment(NO_ALIGNMENT),
 /*************************************************************************************************/
 /**	Lawful-Chaotic Alignments 				11/06/09								Valkrionn	**/
@@ -14350,7 +14494,8 @@ CvUnitInfo::~CvUnitInfo()
 /**																								**/
 /*************************************************************************************************/
 	SAFE_DELETE_ARRAY(m_piAppearanceTechs);
-/*************************************************************************************************/
+	SAFE_DELETE_ARRAY(m_piStrBoostTechs);
+	/*************************************************************************************************/
 /**	New Tag Defs							END													**/
 /*************************************************************************************************/
 	SAFE_DELETE_ARRAY(m_pbTerrainNative);
@@ -15301,6 +15446,8 @@ int CvUnitInfo::getEquipmentPromotion() const
 	return m_iEquipmentPromotion;
 }
 
+int CvUnitInfo::getPrereqPopulation() const { return m_iPrereqPopulation; }
+
 int CvUnitInfo::getPrereqAlignment() const
 {
 	return m_iPrereqAlignment;
@@ -15492,6 +15639,12 @@ int CvUnitInfo::getAppearanceTechs(int i) const
 	FAssertMsg(i < GC.getNumTechInfos(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
 	return m_piAppearanceTechs ? m_piAppearanceTechs[i] : -1;
+}
+int CvUnitInfo::getStrBoostTechs(int i) const
+{
+	FAssertMsg(i < GC.getNumTechInfos(), "Index out of bounds");
+	FAssertMsg(i > -1, "Index out of bounds");
+	return m_piStrBoostTechs ? m_piStrBoostTechs[i] : -1;
 }
 /*************************************************************************************************/
 /**	New Tag Defs							END													**/
@@ -16351,6 +16504,7 @@ void CvUnitInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iMiscastChance);
 	stream->Read(&m_iModifyGlobalCounter);
 	stream->Read(&m_iEquipmentPromotion);
+	stream->Read(&m_iPrereqPopulation);
 	stream->Read(&m_iPrereqAlignment);
 /*************************************************************************************************/
 /**	Lawful-Chaotic Alignments 				11/06/09								Valkrionn	**/
@@ -16430,7 +16584,10 @@ void CvUnitInfo::read(FDataStreamBase* stream)
 	SAFE_DELETE_ARRAY(m_piAppearanceTechs);
 	m_piAppearanceTechs = new int[GC.getNumTechInfos()];
 	stream->Read(GC.getNumTechInfos(), m_piAppearanceTechs);
-/*************************************************************************************************/
+	SAFE_DELETE_ARRAY(m_piStrBoostTechs);
+	m_piStrBoostTechs = new int[GC.getNumTechInfos()];
+	stream->Read(GC.getNumTechInfos(), m_piStrBoostTechs);
+	/*************************************************************************************************/
 /**	New Tag Defs							END													**/
 /*************************************************************************************************/
 
@@ -16979,6 +17136,7 @@ void CvUnitInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iMiscastChance);
 	stream->Write(m_iModifyGlobalCounter);
 	stream->Write(m_iEquipmentPromotion);
+	stream->Write(m_iPrereqPopulation);
 	stream->Write(m_iPrereqAlignment);
 /*************************************************************************************************/
 /**	Lawful-Chaotic Alignments 				11/06/09								Valkrionn	**/
@@ -17037,7 +17195,8 @@ void CvUnitInfo::write(FDataStreamBase* stream)
 /**																								**/
 /*************************************************************************************************/
 	stream->Write(GC.getNumTechInfos(), m_piAppearanceTechs);
-/*************************************************************************************************/
+	stream->Write(GC.getNumTechInfos(), m_piStrBoostTechs);
+	/*************************************************************************************************/
 /**	New Tag Defs							END													**/
 /*************************************************************************************************/
 	stream->Write(GC.getNumFlavorTypes(), m_piFlavorValue);
@@ -17452,7 +17611,8 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 /**																								**/
 /*************************************************************************************************/
 	pXML->SetVariableListTagPair(&m_piAppearanceTechs, "AppearanceTechs", sizeof(GC.getTechInfo((TechTypes)0)), GC.getNumTechInfos());
-/*************************************************************************************************/
+	pXML->SetVariableListTagPair(&m_piStrBoostTechs, "StrBoostTechs", sizeof(GC.getTechInfo((TechTypes)0)), GC.getNumTechInfos());
+	/*************************************************************************************************/
 /**	New Tag Defs							END													**/
 /*************************************************************************************************/
 
@@ -17717,7 +17877,7 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 /*************************************************************************************************/
 	pXML->GetChildXmlValByName(&m_iAlignmentShift, "iAlignmentShift");
 	pXML->GetChildXmlValByName(&m_iAlignmentShiftModifier, "iAlignmentShiftModifier");
-	pXML->GetChildXmlValByName(&m_iAlignmentShiftTowardsNeutral, "iAlignmentShiftTowardsNeutral");
+	pXML->GetChildXmlValByName(&m_iAlignmentShiftTowardsNeutral, "iAlignmentShiftTowardsNeutral",-1);
 /*************************************************************************************************/
 /**	Broader Alignments Expansion				END												**/
 /*************************************************************************************************/
@@ -17810,6 +17970,7 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	m_iDiploVoteType = pXML->FindInInfoClass(szTextVal);
 	pXML->GetChildXmlValByName(szTextVal, "EquipmentPromotion");
 	m_iEquipmentPromotion = pXML->FindInInfoClass(szTextVal);
+	pXML->GetChildXmlValByName(&m_iPrereqPopulation, "iPrereqPopulation");
 	pXML->GetChildXmlValByName(szTextVal, "PrereqAlignment");
 	m_iPrereqAlignment = pXML->FindInInfoClass(szTextVal);
 /*************************************************************************************************/
@@ -17823,7 +17984,7 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iEthicalAlignmentModifier,"iEthicalAlignmentModifier");
 	pXML->GetChildXmlValByName(&m_iEthicalAlignmentShift, "iEthicalAlignmentShift");
 	pXML->GetChildXmlValByName(&m_iEthicalAlignmentShiftModifier, "iEthicalAlignmentShiftModifier");
-	pXML->GetChildXmlValByName(&m_iEthicalAlignmentShiftTowardsNeutral, "iEthicalAlignmentShiftTowardsNeutral");
+	pXML->GetChildXmlValByName(&m_iEthicalAlignmentShiftTowardsNeutral, "iEthicalAlignmentShiftTowardsNeutral",-1);
 /*************************************************************************************************/
 /**	Lawful-Chaotic Alignments					END												**/
 /*************************************************************************************************/
@@ -18186,6 +18347,7 @@ void CvUnitInfo::copyNonDefaults(CvUnitInfo* pClassInfo, CvXMLLoadUtility* pXML)
 	if(getUnitClassType()					== NO_UNITCLASS)	m_iUnitClassType					= pClassInfo->getUnitClassType();
 	if (getSecondaryUnitClassType() == NO_UNITCLASS)	m_iSecondaryUnitClassType = pClassInfo->getSecondaryUnitClassType();
 	if(getUnitCaptureClassType()			== NO_UNITCLASS)	m_iUnitCaptureClassType				= pClassInfo->getUnitCaptureClassType();
+	if (getPrereqPopulation() == 0)			m_iPrereqPopulation = pClassInfo->getPrereqPopulation();
 	if(getPrereqAlignment()					== NO_ALIGNMENT)	m_iPrereqAlignment					= pClassInfo->getPrereqAlignment();
 /*************************************************************************************************/
 /**	Lawful-Chaotic Alignments 				11/06/09								Valkrionn	**/
@@ -18370,6 +18532,7 @@ void CvUnitInfo::copyNonDefaults(CvUnitInfo* pClassInfo, CvXMLLoadUtility* pXML)
 	for ( int i = 0; i < GC.getNumTechInfos(); i++)
 	{
 		if(getAppearanceTechs(i)			== false)			m_piAppearanceTechs[i]				= pClassInfo->getAppearanceTechs(i);
+		if (getStrBoostTechs(i) == false)			m_piStrBoostTechs[i] = pClassInfo->getStrBoostTechs(i);
 	}
 /*************************************************************************************************/
 /**	New Tag Defs							END													**/
@@ -22105,6 +22268,7 @@ m_pbBuildingClassNeededInCity(NULL),
 m_ppaiSpecialistClassYieldChange(NULL),
 m_ppaiBonusYieldModifier(NULL),
 m_ppaiBonusCommerceModifier(NULL),
+m_paiUnitClassPlayerInstancesChange(NULL),
 /*************************************************************************************************/
 /**	Building prereq Alignments				07/04/10								Snarko		**/
 /**																								**/
@@ -22160,6 +22324,7 @@ m_iEthicalAlignmentShiftTowardsNeutral(-1),
 //Crime
 m_iPrereqPopulation(0),
 m_iPrereqCrime(0),
+m_iPrereqMaxCrime(0),
 m_iMinCrime(0),
 m_bAutoBuild(false),
 m_bMustMaintain(false),
@@ -22247,6 +22412,7 @@ m_ppaiSpecialistClassCommerceChange(NULL)
 ,m_paiLocalSpecialistClassHealthChange(NULL)
 , m_paiLocalSpecialistClassCrimeChange(NULL)
 ,m_paiLocalSpecialistClassGPPChange(NULL)
+, m_paaiLocalImprovementClassYieldChange(NULL)
 /*************************************************************************************************/
 /**	GWSLocalSpecialist																		END	**/
 /*************************************************************************************************/
@@ -22447,7 +22613,15 @@ CvBuildingInfo::~CvBuildingInfo()
 	SAFE_DELETE_ARRAY(m_paiLocalSpecialistClassHealthChange);
 	SAFE_DELETE_ARRAY(m_paiLocalSpecialistClassCrimeChange);
 	SAFE_DELETE_ARRAY(m_paiLocalSpecialistClassGPPChange);
-/*************************************************************************************************/
+	if (m_paaiLocalImprovementClassYieldChange != NULL)
+	{
+		for (int i = 0; i < GC.getNumImprovementClassInfos(); i++)
+		{
+			SAFE_DELETE_ARRAY(m_paaiLocalImprovementClassYieldChange[i]);
+		}
+		SAFE_DELETE_ARRAY(m_paaiLocalImprovementClassYieldChange);
+	}
+	/*************************************************************************************************/
 /**	GWSLocalSpecialist																		END	**/
 /*************************************************************************************************/
 
@@ -23184,6 +23358,7 @@ int CvBuildingInfo::getPrereqBroadEthicalAlignment() const			{return m_iPrereqBr
 
 int CvBuildingInfo::getPrereqPopulation() const { return m_iPrereqPopulation; }
 int CvBuildingInfo::getPrereqCrime() const { return m_iPrereqCrime; }
+int CvBuildingInfo::getPrereqMaxCrime() const { return m_iPrereqMaxCrime; }
 int CvBuildingInfo::getMinCrime() const { return m_iMinCrime; }
 bool CvBuildingInfo::isAutoBuild() const { return m_bAutoBuild; }
 bool CvBuildingInfo::isMustMaintain() const { return m_bMustMaintain; }
@@ -23425,6 +23600,17 @@ int CvBuildingInfo::getLocalSpecialistClassGPPChange(int iSpecialist) const
 {
 	return m_paiLocalSpecialistClassGPPChange ? m_paiLocalSpecialistClassGPPChange[iSpecialist] : -1;
 }
+
+int CvBuildingInfo::getLocalImprovementClassYieldChange(int iImprovement, int iYield) const
+{
+	return m_paaiLocalImprovementClassYieldChange ? m_paaiLocalImprovementClassYieldChange[iImprovement][iYield] : -1;
+}
+
+int* CvBuildingInfo::getLocalImprovementClassYieldChangeArray(int iImprovement) const
+{
+	return m_paaiLocalImprovementClassYieldChange[iImprovement];
+}
+
 
 /*************************************************************************************************/
 /**	GWSLocalSpecialist																		END	**/
@@ -23966,6 +24152,11 @@ CityBonuses CvBuildingInfo::getPerPopBonus(int iI) const
 }
 std::list<CityBonuses> CvBuildingInfo::listPerPopBonuses() { return m_cbPerPopBonuses; }
 
+
+int CvBuildingInfo::getUnitClassPlayerInstancesChange(int i) const
+{
+	return m_paiUnitClassPlayerInstancesChange ? m_paiUnitClassPlayerInstancesChange[i] : -1;
+}
 const TCHAR* CvBuildingInfo::getButton() const
 {
 /*************************************************************************************************/
@@ -24246,6 +24437,7 @@ void CvBuildingInfo::read(FDataStreamBase* stream)
 	//Crime
 	stream->Read(&m_iPrereqPopulation);
 	stream->Read(&m_iPrereqCrime);
+	stream->Read(&m_iPrereqMaxCrime);
 	stream->Read(&m_iMinCrime);
 	stream->Read(&m_bAutoBuild);
 	stream->Read(&m_bMustMaintain);
@@ -24687,6 +24879,20 @@ void CvBuildingInfo::read(FDataStreamBase* stream)
 		m_paaiLocalSpecialistClassYieldChange[i]  = new int[NUM_YIELD_TYPES];
 		stream->Read(NUM_YIELD_TYPES, m_paaiLocalSpecialistClassYieldChange[i]);
 	}
+	if (m_paaiLocalImprovementClassYieldChange != NULL)
+	{
+		for (int i = 0; i < GC.getNumImprovementClassInfos(); i++)
+		{
+			SAFE_DELETE_ARRAY(m_paaiLocalImprovementClassYieldChange[i]);
+		}
+		SAFE_DELETE_ARRAY(m_paaiLocalImprovementClassYieldChange);
+	}
+	m_paaiLocalImprovementClassYieldChange = new int* [GC.getNumImprovementClassInfos()];
+	for (int i = 0; i < GC.getNumImprovementClassInfos(); i++)
+	{
+		m_paaiLocalImprovementClassYieldChange[i] = new int[NUM_YIELD_TYPES];
+		stream->Read(NUM_YIELD_TYPES, m_paaiLocalImprovementClassYieldChange[i]);
+	}
 
 	SAFE_DELETE_ARRAY(m_paiLocalSpecialistClassHappinessChange);
 	m_paiLocalSpecialistClassHappinessChange = new int[GC.getNumSpecialistClassInfos()];
@@ -24962,6 +25168,7 @@ void CvBuildingInfo::write(FDataStreamBase* stream)
 	//Crime
 	stream->Write(m_iPrereqPopulation);
 	stream->Write(m_iPrereqCrime);
+	stream->Write(m_iPrereqMaxCrime);
 	stream->Write(m_iMinCrime);
 	stream->Write(m_bAutoBuild);
 	stream->Write(m_bMustMaintain);
@@ -25135,14 +25342,18 @@ void CvBuildingInfo::write(FDataStreamBase* stream)
 /**	GWSLocalSpecialist																	Milaga	**/
 /** Buildings can change give bonuses to specialists in only one city							**/
 /*************************************************************************************************/
-	for (int i = 0;i<GC.getNumSpecialistClassInfos();i++)
-	{
-		stream->Write(NUM_YIELD_TYPES, m_paaiLocalSpecialistClassYieldChange[i]);
-	}
-
+	
 	for (int i = 0;i<GC.getNumSpecialistClassInfos();i++)
 	{
 		stream->Write(NUM_COMMERCE_TYPES, m_paaiLocalSpecialistClassCommerceChange[i]);
+	}
+	for (int i = 0; i < GC.getNumSpecialistClassInfos(); i++)
+	{
+		stream->Write(NUM_YIELD_TYPES, m_paaiLocalSpecialistClassYieldChange[i]);
+	}
+	for (int i = 0; i < GC.getNumImprovementClassInfos(); i++)
+	{
+		stream->Write(NUM_YIELD_TYPES, m_paaiLocalImprovementClassYieldChange[i]);
 	}
 
 	stream->Write(GC.getNumSpecialistClassInfos(), m_paiLocalSpecialistClassHappinessChange);
@@ -25557,6 +25768,7 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 //Crime
 	pXML->GetChildXmlValByName(&m_iPrereqPopulation, "iPrereqPopulation");
 	pXML->GetChildXmlValByName(&m_iPrereqCrime, "iPrereqCrime");
+	pXML->GetChildXmlValByName(&m_iPrereqMaxCrime, "iPrereqMaxCrime");
 	pXML->GetChildXmlValByName(&m_iMinCrime, "iMinCrime");
 	pXML->GetChildXmlValByName(&m_bAutoBuild, "bAutoBuild");
 	pXML->GetChildXmlValByName(&m_bMustMaintain, "bMustMaintain");
@@ -25591,6 +25803,7 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 	pXML->SetVariableListTagPair(&m_piPrereqGlobalBuildingClassANDs, "PrereqGlobalBuildingClassANDs", sizeof(GC.getBuildingClassInfo((BuildingClassTypes)0)), GC.getNumBuildingClassInfos());
 	pXML->SetVariableListTagPair(&m_piPrereqGlobalBuildingClassNOTs, "PrereqGlobalBuildingClassNOTs", sizeof(GC.getBuildingClassInfo((BuildingClassTypes)0)), GC.getNumBuildingClassInfos());
 	pXML->SetVariableListTagPair(&m_piPrereqGlobalBuildingClassORs, "PrereqGlobalBuildingClassORs", sizeof(GC.getBuildingClassInfo((BuildingClassTypes)0)), GC.getNumBuildingClassInfos());
+	pXML->SetVariableListTagPair(&m_paiUnitClassPlayerInstancesChange, "UnitClassPlayerInstancesChanges", sizeof(GC.getUnitClassInfo((UnitClassTypes)0)), GC.getNumUnitClassInfos());
 
 	for (int j=0;j<GC.getNumBuildingClassInfos();j++)
 	{
@@ -26245,6 +26458,43 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
 	}
 
+	pXML->Init2DIntList(&m_paaiLocalImprovementClassYieldChange, GC.getNumImprovementClassInfos(), NUM_YIELD_TYPES);
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "LocalImprovementClassYieldChanges"))
+	{
+		iNumChildren = gDLL->getXMLIFace()->GetNumChildren(pXML->GetXML());
+		if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "LocalImprovementClassYieldChange"))
+		{
+			for (int j = 0; j < iNumChildren; j++)
+			{
+				pXML->GetChildXmlValByName(szTextVal, "ImprovementClass");
+				k = pXML->FindInInfoClass(szTextVal);
+				if (k > -1)
+				{
+					// delete the array since it will be reallocated
+					SAFE_DELETE_ARRAY(m_paaiLocalImprovementClassYieldChange[k]);
+					if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "YieldChanges"))
+					{
+						// call the function that sets the yield change variable
+						pXML->SetYields(&m_paaiLocalImprovementClassYieldChange[k]);
+						gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+					}
+					else
+					{
+						pXML->InitList(&m_paaiLocalImprovementClassYieldChange[k], NUM_YIELD_TYPES);
+					}
+				}
+				if (!gDLL->getXMLIFace()->NextSibling(pXML->GetXML()))
+				{
+					break;
+				}
+			}
+			// set the current xml node to it's parent node
+			gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+		}
+		// set the current xml node to it's parent node
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+
 	pXML->SetVariableListTagPair(&m_paiLocalSpecialistClassHappinessChange, "LocalSpecialistClassHappinessChanges", sizeof(GC.getSpecialistClassInfo((SpecialistClassTypes)0)), GC.getNumSpecialistClassInfos());
 	pXML->SetVariableListTagPair(&m_paiLocalSpecialistClassHealthChange, "LocalSpecialistClassHealthChanges", sizeof(GC.getSpecialistClassInfo((SpecialistClassTypes)0)), GC.getNumSpecialistClassInfos());
 	pXML->SetVariableListTagPair(&m_paiLocalSpecialistClassCrimeChange, "LocalSpecialistClassCrimeChanges", sizeof(GC.getSpecialistClassInfo((SpecialistClassTypes)0)), GC.getNumSpecialistClassInfos());
@@ -26491,6 +26741,7 @@ void CvBuildingInfo::copyNonDefaults(CvBuildingInfo* pClassInfo, CvXMLLoadUtilit
 	if (getPrereqPopulation() == 0)					m_iPrereqPopulation = pClassInfo->getPrereqPopulation();
 
 	if (getPrereqCrime() == 0)					m_iPrereqCrime = pClassInfo->getPrereqCrime();
+	if (getPrereqMaxCrime() == 0)					m_iPrereqMaxCrime = pClassInfo->getPrereqMaxCrime();
 	if (getMinCrime() == 0)					m_iMinCrime = pClassInfo->getMinCrime();
 	if (isAutoBuild() == false)					m_bAutoBuild = pClassInfo->isAutoBuild();
 	if (isMustMaintain() == false)					m_bMustMaintain = pClassInfo->isMustMaintain();
@@ -26675,6 +26926,11 @@ void CvBuildingInfo::copyNonDefaults(CvBuildingInfo* pClassInfo, CvXMLLoadUtilit
 			if (getTerrainYieldChange(j, i) == 0)					m_ppaiTerrainYieldChange[j][i] = pClassInfo->getTerrainYieldChange(j, i);
 		}
 	}
+	for (int j = 0; j < GC.getNumUnitClassInfos(); j++)
+	{
+		if (getUnitClassPlayerInstancesChange(j) == 0) m_paiUnitClassPlayerInstancesChange[j] = pClassInfo->getUnitClassPlayerInstancesChange(j);
+	}
+
 	for (int j = 0; j < GC.getNumFeatureInfos(); j++)
 	{
 		for (int i = 0; i < NUM_YIELD_TYPES; i++)
@@ -26686,6 +26942,14 @@ void CvBuildingInfo::copyNonDefaults(CvBuildingInfo* pClassInfo, CvXMLLoadUtilit
 	for (int j = 0; j < GC.getNumImprovementInfos(); j++)
 	{
 		if (getPrereqImprovementAtRange(j) == 0)					m_piPrereqImprovementAtRange[j] = pClassInfo->getPrereqImprovementAtRange(j);
+	}
+	for (int i = 0; i < GC.getNumImprovementClassInfos(); i++)
+	{
+		for (int j = 0; j < NUM_YIELD_TYPES; j++)
+		{
+			if (getLocalImprovementClassYieldChange(i, j) == 0)	m_paaiLocalImprovementClassYieldChange[i][j] = pClassInfo->getLocalImprovementClassYieldChange(i, j);
+		}
+
 	}
 	for ( int j = 0; j < GC.getNumSpecialistClassInfos(); j++)
 	{
@@ -41215,7 +41479,7 @@ bool CvReligionInfo::read(CvXMLLoadUtility* pXML)
 /*************************************************************************************************/
 	pXML->GetChildXmlValByName(&m_iAlignmentShift, "iAlignmentShift");
 	pXML->GetChildXmlValByName(&m_iAlignmentShiftModifier, "iAlignmentShiftModifier");
-	pXML->GetChildXmlValByName(&m_iAlignmentShiftTowardsNeutral, "iAlignmentShiftTowardsNeutral");
+	pXML->GetChildXmlValByName(&m_iAlignmentShiftTowardsNeutral, "iAlignmentShiftTowardsNeutral",-1);
 /*************************************************************************************************/
 /**	Broader Alignments Expansion				END												**/
 /*************************************************************************************************/
@@ -41227,7 +41491,7 @@ bool CvReligionInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iEthicalAlignmentModifier, "iEthicalAlignmentModifier");
 	pXML->GetChildXmlValByName(&m_iEthicalAlignmentShift, "iEthicalAlignmentShift");
 	pXML->GetChildXmlValByName(&m_iEthicalAlignmentShiftModifier, "iEthicalAlignmentShiftModifier");
-	pXML->GetChildXmlValByName(&m_iEthicalAlignmentShiftTowardsNeutral, "iEthicalAlignmentShiftTowardsNeutral");
+	pXML->GetChildXmlValByName(&m_iEthicalAlignmentShiftTowardsNeutral, "iEthicalAlignmentShiftTowardsNeutral",-1);
 /*************************************************************************************************/
 /**	Lawful-Chaotic Alignments					END												**/
 /*************************************************************************************************/
@@ -42031,7 +42295,7 @@ m_iHurryPopulationModifier(0),
 /*************************************************************************************************/
 /** bUniqueCult         Opera for LE/Orbis  06/07/09         imported by Valkrionn	09.26.09    **/
 /*************************************************************************************************/
-m_bUniqueCult(false),
+m_iUniqueCult(NO_CULT),
 m_bIntolerant(false),
 /*************************************************************************************************/
 /** End                                                                                         **/
@@ -42720,9 +42984,9 @@ int CvTraitInfo::getHurryPopulationModifier() const
 /*************************************************************************************************/
 /** bUniqueCult             Opera for LE/Orbis  06/07/09        imported by Valkrionn	09.26.09**/
 /*************************************************************************************************/
-bool CvTraitInfo::isUniqueCult() const
+int CvTraitInfo::getUniqueCult() const
 {
-	return m_bUniqueCult;
+	return m_iUniqueCult;
 }
 
 bool CvTraitInfo::isIntolerant() const
@@ -42938,8 +43202,8 @@ bool CvTraitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->SetVariableListTagPair(&m_paiSpecialistClassHappinessChange, "SpecialistClassHappinessChanges", sizeof(GC.getSpecialistClassInfo((SpecialistClassTypes)0)), GC.getNumSpecialistClassInfos());
 	pXML->SetVariableListTagPair(&m_paiSpecialistClassHealthChange, "SpecialistClassHealthChanges", sizeof(GC.getSpecialistClassInfo((SpecialistClassTypes)0)), GC.getNumSpecialistClassInfos());
 	pXML->SetVariableListTagPair(&m_paiSpecialistClassCrimeChange, "SpecialistClassCrimeChanges", sizeof(GC.getSpecialistClassInfo((SpecialistClassTypes)0)), GC.getNumSpecialistClassInfos());
-	pXML->SetVariableListTagPair(&m_paiReligiousWeightModifier, "ReligionWeightModifiers", sizeof(GC.getSpecialistClassInfo((SpecialistClassTypes)0)), GC.getNumReligionInfos());
-	pXML->SetVariableListTagPair(&m_paiUnitClassPlayerInstancesChange, "UnitClassPlayerInstancesChanges", sizeof(GC.getSpecialistClassInfo((SpecialistClassTypes)0)), GC.getNumUnitClassInfos());
+	pXML->SetVariableListTagPair(&m_paiReligiousWeightModifier, "ReligionWeightModifiers", sizeof(GC.getReligionInfo((ReligionTypes)0)), GC.getNumReligionInfos());
+	pXML->SetVariableListTagPair(&m_paiUnitClassPlayerInstancesChange, "UnitClassPlayerInstancesChanges", sizeof(GC.getUnitClassInfo((UnitClassTypes)0)), GC.getNumUnitClassInfos());
 
 	pXML->SetVariableListTagPair(&m_pabFreePromotion, "FreePromotions", sizeof(GC.getPromotionInfo((PromotionTypes)0)), GC.getNumPromotionInfos());
 
@@ -43280,7 +43544,9 @@ bool CvTraitInfo::read(CvXMLLoadUtility* pXML)
 /*************************************************************************************************/
 /** bUniqueCult             Opera for LE/Orbis  06/07/09        imported by Valkrionn	09.26.09**/
 /*************************************************************************************************/
-	pXML->GetChildXmlValByName(&m_bUniqueCult, "bUniqueCult");
+	pXML->GetChildXmlValByName(szTextVal, "UniqueCult");
+	m_iUniqueCult = pXML->FindInInfoClass(szTextVal);
+
 	pXML->GetChildXmlValByName(&m_bIntolerant, "bIntolerant");
 /*************************************************************************************************/
 /** End                                                                                         **/
@@ -43366,7 +43632,7 @@ void CvTraitInfo::copyNonDefaults(CvTraitInfo* pClassInfo, CvXMLLoadUtility* pXM
 	/*************************************************************************************************/
 	/** bUniqueCult             Opera for LE/Orbis  06/07/09        imported by Valkrionn	09.26.09**/
 	/*************************************************************************************************/
-	if (isUniqueCult() == false)		m_bUniqueCult = pClassInfo->isUniqueCult();
+	if (getUniqueCult() == NO_CULT)		m_iUniqueCult = pClassInfo->getUniqueCult();
 	if (isIntolerant() == false)		m_bIntolerant = pClassInfo->isIntolerant();
 	/*************************************************************************************************/
 	/** End                                                                                         **/
@@ -56278,4 +56544,59 @@ void CvDeathListInfo::copyNonDefaults(CvDeathListInfo* pClassInfo, CvXMLLoadUtil
 	if (getMaxUnitsReleased() == 0)	m_iMaxUnitsReleased = pClassInfo->getMaxUnitsReleased();
 	if (getCivReceiver() == NO_CIVILIZATION)	m_iCivReceiver = pClassInfo->getCivReceiver();
 	if (getPythonPrereq() == cDefault)		m_szPythonPrereq = pClassInfo->getPythonPrereq();
+}
+
+
+//======================================================================================================
+//					CvCultInfo
+//======================================================================================================
+
+//------------------------------------------------------------------------------------------------------
+//
+//  FUNCTION:   CvCultInfo()
+//
+//  PURPOSE :   Default constructor
+//
+//------------------------------------------------------------------------------------------------------
+CvCultInfo::CvCultInfo() :
+	m_bNationalCult(false)
+{
+}
+
+//------------------------------------------------------------------------------------------------------
+//
+//  FUNCTION:   ~CvCultInfo()
+//
+//  PURPOSE :   Default destructor
+//
+//------------------------------------------------------------------------------------------------------
+CvCultInfo::~CvCultInfo()
+{
+}
+bool CvCultInfo::isNationalCult() const
+{
+	return m_bNationalCult;
+}
+
+bool CvCultInfo::read(CvXMLLoadUtility* pXML)
+{
+	CvString szTextVal;
+	if (!CvInfoBase::read(pXML))
+	{
+		return false;
+	}
+
+	pXML->GetChildXmlValByName(&m_bNationalCult, "bNationalCult");
+
+	return true;
+}
+
+void CvCultInfo::copyNonDefaults(CvCultInfo* pClassInfo, CvXMLLoadUtility* pXML)
+{
+	CvString cDefault = CvString::format("").GetCString();
+	CvWString wDefault = CvWString::format(L"").GetCString();
+
+	CvInfoBase::copyNonDefaults(pClassInfo, pXML);
+
+	if (isNationalCult() == false)			m_bNationalCult = pClassInfo->isNationalCult();
 }

@@ -221,6 +221,13 @@
 	<ElementType name="bCtrlDownAlt" content="textOnly" dt:type="boolean"/>
 	<ElementType name="iHotKeyPriorityAlt" content="textOnly" dt:type="int"/>
 	<ElementType name="iOrderPriority" content="textOnly" dt:type="int"/>
+	<ElementType name="iTerraformingRange" content="textOnly" dt:type="int"/>
+	<ElementType name="iHumidityMin" content="textOnly" dt:type="int"/>
+	<ElementType name="iHumidityMax" content="textOnly" dt:type="int"/>
+	<ElementType name="iTemperatureMin" content="textOnly" dt:type="int"/>
+	<ElementType name="iTemperatureMax" content="textOnly" dt:type="int"/>
+	<ElementType name="fHumidityChange" content="textOnly" dt:type="float"/>
+	<ElementType name="fTemperatureChange" content="textOnly" dt:type="float"/>
 	<ElementType name="Button" content="textOnly"/>
 	<ElementType name="SpellInfo" content="eltOnly" order="many">
 		<element type="Type"/>
@@ -318,6 +325,13 @@
 		<element type="Flag"/>
 		<element type="iFlagChange"/>
 		<element type="bGlobalFlagChange"/>
+		<element type="iTerraformingRange"/>
+		<element type="iTemperatureMax"/>
+		<element type="iTemperatureMin"/>
+		<element type="iHumidityMax"/>
+		<element type="iHumidityMin"/>
+		<element type="fHumidityChange"/>
+		<element type="fTemperatureChange"/>
 		<element type="bImmuneTeam"/>
 		<element type="bImmuneNeutral"/>
 		<element type="bImmuneEnemy"/>

@@ -1131,7 +1131,7 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 /*************************************************************************************************/
 /** bUniqueCult         Opera for LE/Orbis  06/07/09        imported by Valkrionn	09.26.09    **/
 /*************************************************************************************************/
-	m_bUniqueCult = false;
+	m_iUniqueCult = NO_CULT;
 	m_bIntolerant = false;
 /*************************************************************************************************/
 /** End                                                                                         **/
@@ -3667,9 +3667,15 @@ void CvPlayer::setHasTrait(TraitTypes eTrait, bool bNewValue)
 /*************************************************************************************************/
 /** bUniqueCult         Opera for LE/Orbis  06/07/09        imported by Valkrionn	09.26.09    **/
 /*************************************************************************************************/
-	if (GC.getTraitInfo(eTrait).isUniqueCult())
+	if (GC.getTraitInfo(eTrait).getUniqueCult()!=NO_CULT)
 	{
-		setUniqueCult(bNewValue);
+		if (bNewValue) {
+			setUniqueCult(GC.getTraitInfo(eTrait).getUniqueCult());
+		}
+		else
+		{
+			setUniqueCult(NO_CULT);
+		}
 	}
 
 	if (GC.getTraitInfo(eTrait).isIntolerant())
@@ -9133,7 +9139,10 @@ void CvPlayer::processBuilding(BuildingTypes eBuilding, int iChange, CvArea* pAr
 	//	BuildingTypes eFreeBuilding = (BuildingTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(GC.getBuildingInfo(eBuilding).getFreeBuildingClass());
 		changeFreeBuildingCount((BuildingClassTypes)GC.getBuildingInfo(eBuilding).getFreeBuildingClass(), iChange);
 	}
-
+	for (UnitClassTypes eUnitClass = (UnitClassTypes)0; eUnitClass < GC.getNumUnitClassInfos(); eUnitClass = (UnitClassTypes)(eUnitClass + 1))
+	{
+		changeUnitClassPlayerInstancesChanges(eUnitClass, GC.getBuildingInfo(eBuilding).getUnitClassPlayerInstancesChange(eUnitClass) * iChange);
+	}
 	if (GC.getBuildingInfo(eBuilding).getCivicOption() != NO_CIVICOPTION)
 	{
 		changeHasCivicOptionCount(((CivicOptionTypes)GC.getBuildingInfo(eBuilding).getCivicOption()), iChange);
@@ -10853,7 +10862,7 @@ bool CvPlayer::canDoReligion() const
 	{
 		return false;
 	}
-	if (isUniqueCult())
+	if (getUniqueCult()!=NO_CULT)
 	{
 		return false;
 	}
@@ -21477,7 +21486,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 /*************************************************************************************************/
 /** bUniqueCult             Opera for LE/Orbis  06/07/09        imported by Valkrionn	09.26.09**/
 /*************************************************************************************************/
-	pStream->Read(&m_bUniqueCult);
+	pStream->Read(&m_iUniqueCult);
 	pStream->Read(&m_bIntolerant);
 /*************************************************************************************************/
 /** End                                                                                         **/
@@ -22280,7 +22289,7 @@ void CvPlayer::write(FDataStreamBase* pStream)
 /*************************************************************************************************/
 /** bUniqueCult             Opera for LE/Orbis  06/07/09        imported by Valkrionn	09.26.09**/
 /*************************************************************************************************/
-	pStream->Write(m_bUniqueCult);
+	pStream->Write(m_iUniqueCult);
 	pStream->Write(m_bIntolerant);
 /*************************************************************************************************/
 /** End                                                                                         **/
@@ -28487,14 +28496,14 @@ void CvPlayer::setInsane(bool bNewValue)
 /*************************************************************************************************/
 /** bUniqueCult         Opera for LE/Orbis        imported by Valkrionn	09.26.09                **/
 /*************************************************************************************************/
-bool CvPlayer::isUniqueCult() const
+int CvPlayer::getUniqueCult() const
 {
-	return m_bUniqueCult;
+	return m_iUniqueCult;
 }
 
-void CvPlayer::setUniqueCult(bool bNewValue)
+void CvPlayer::setUniqueCult(int bNewValue)
 {
-	m_bUniqueCult = bNewValue;
+	m_iUniqueCult = bNewValue;
 }
 
 bool CvPlayer::isIntolerant() const

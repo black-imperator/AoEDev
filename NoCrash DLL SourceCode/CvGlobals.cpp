@@ -5264,3 +5264,19 @@ CvDeathListInfo& CvGlobals::getDeathListInfo(DeathListTypes eDeathList)
 	return *(m_paDeathListInfo[eDeathList]);
 
 }
+int CvGlobals::getNumCultInfos()
+{
+	return (int)m_paCultInfo.size();
+}
+
+std::vector<CvCultInfo*>& CvGlobals::getCultInfo()
+{
+	return m_paCultInfo;
+}
+CvCultInfo& CvGlobals::getCultInfo(CultTypes eCult)
+{
+	FAssert(eCult > -1);
+	FAssert(eCult < GC.getNumCultInfos());
+	return *(m_paCultInfo[eCult]);
+
+}

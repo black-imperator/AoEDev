@@ -975,6 +975,7 @@ bool CvXMLLoadUtility::LoadPreMenuGlobals()
 	
 	// FlagSystem Start
 	LoadGlobalClassInfo(GC.getFlagInfo(), "CIV4FlagInfos", "GameInfo", "Civ4FlagInfos/FlagInfos/FlagInfo", false);
+	LoadGlobalClassInfo(GC.getCultInfo(), "CIV4CultInfos", "GameInfo", "Civ4CultInfos/CultInfos/CultInfo", false);
 	//PromotionClass
 	LoadGlobalClassInfo(GC.getPromotionClassInfo(), "CIV4PromotionClassInfos", "Units", "Civ4PromotionClassInfos/PromotionClassInfos/PromotionClassInfo", false);
 	

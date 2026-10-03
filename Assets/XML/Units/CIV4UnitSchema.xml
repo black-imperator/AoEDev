@@ -337,6 +337,7 @@
 	<ElementType name="iNumCityCostModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iPlayerPopCostModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iPopCost" content="textOnly" dt:type="int"/>
+	<ElementType name="iPrereqPopulation" content="textOnly" dt:type="int"/>
 	<ElementType name="iHurryCostModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iAdvancedStartCost" content="textOnly" dt:type="int"/>
 	<ElementType name="iAdvancedStartCostIncrease" content="textOnly" dt:type="int"/>
@@ -808,6 +809,15 @@
 	<ElementType name="AppearanceTechs" content="eltOnly">
 		<element type="AppearanceTech" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
+	<ElementType name="StrBoostTechType" content="textOnly"/>
+	<ElementType name="iStrBoost" content="textOnly" dt:type="int"/>
+	<ElementType name="StrBoostTech" content="eltOnly">
+		<element type="StrBoostTechType"/>
+		<element type="iStrBoost"/>
+	</ElementType>
+	<ElementType name="StrBoostTechs" content="eltOnly">
+		<element type="StrBoostTech" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
 	<ElementType name="Quote" content="textOnly"/>
 	<ElementType name="Quotes" content="eltOnly">
 		<element type="Quote" minOccurs="0" maxOccurs="*"/>
@@ -916,6 +926,7 @@
 		<element type="iPlayerPopCostModifier"/>
 		<element type="iHurryCostModifier"/>
 		<element type="iPopCost"/>
+		<element type="iPrereqPopulation"/>
 		<element type="iAdvancedStartCost"/>
 		<element type="iAdvancedStartCostIncrease"/>
 		<element type="iMinAreaSize"/>
@@ -1076,6 +1087,7 @@
 		<element type="iPillageInfluenceModifier"/>
 		<element type="iAppearanceProb"/>
 		<element type="AppearanceTechs"/>
+		<element type="StrBoostTechs"/>
 		<element type="iCommandLimit"/>
 		<element type="iCommandRange"/>
 		<element type="iPrereqBroadAlignment"/>

@@ -683,7 +683,7 @@
 		<element type="SpecialistClassCommerceChange" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 <!-- Heretics (by Opera) -->
-	<ElementType name="bUniqueCult" content="textOnly" dt:type="boolean"/>
+	<ElementType name="UniqueCult" content="textOnly"/>
 	<ElementType name="bIntolerant" content="textOnly" dt:type="boolean"/>
 <!-- Heretics END -->
 	<ElementType name="bFixedBorders" content="textOnly" dt:type="boolean"/>
@@ -756,7 +756,7 @@
 		<element type="bAmphibian"/>
 		<element type="bAssimilation"/>
 		<element type="iModReligionSpreadChance"/>
-		<element type="bUniqueCult"/><!-- the leader is the only god -> no religious tech, no religion spread. Dislikes religious civs, dislikes other unique cults, dislikes intolerant (leader risen emperor, dtesh) -->
+		<element type="UniqueCult"/><!-- the leader is the only god -> no religious tech, no religion spread. Dislikes religious civs, dislikes other unique cults, dislikes intolerant (leader risen emperor, dtesh) -->
 		<element type="bIntolerant"/><!-- Religion is heresy -> no religious tech, no religion spread. Dislikes religious civs, dislikes unique cults, likes intolerant (civ mechanos, civ dtesh) -->
 		<element type="bFixedBorders"/>
 		<element type="bInfluenceAllowed"/>

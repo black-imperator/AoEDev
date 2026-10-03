@@ -335,6 +335,11 @@ CvDeathListInfo* CyGlobalContext::getDeathListInfo(int i) const
 	return (i >= 0 && i < GC.getNumDeathListInfos()) ? &GC.getDeathListInfo((DeathListTypes)i) : NULL;
 }
 
+CvCultInfo* CyGlobalContext::getCultInfo(int i) const
+{
+	return (i >= 0 && i < GC.getNumCultInfos()) ? &GC.getCultInfo((CultTypes)i) : NULL;
+}
+
 CvTraitClassInfo* CyGlobalContext::getTraitClassInfo(int i) const
 {
 	return (i >= 0 && i < GC.getNumTraitClassInfos()) ? &GC.getTraitClassInfo((TraitClassTypes)i) : NULL;

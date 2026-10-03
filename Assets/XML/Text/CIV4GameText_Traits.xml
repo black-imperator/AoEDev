@@ -1897,11 +1897,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_UNIQUE_CULT_HELP</Tag>
-		<English>[NEWLINE][ICON_BULLET]The leader is following a personal cult, upsetting other religions</English>
-		<French>[NEWLINE][ICON_BULLET]Le dirigeant pratique un culte personnel, irritant les autres religions</French>
-		<German>[NEWLINE][ICON_BULLET]Der Anführer ist Teil eines Personenkults, was zu Irritationen mit anderen Religionen führt</German>
-		<Italian>[NEWLINE][ICON_BULLET]The leader is following a personal cult, upsetting other religions</Italian>
-		<Spanish>[NEWLINE][ICON_BULLET]The leader is following a personal cult, upsetting other religions</Spanish>
+		<English>[NEWLINE][ICON_BULLET]The leader is following %s1, upsetting other religions</English>
+		<French>[NEWLINE][ICON_BULLET]Le dirigeant pratique %s1, irritant les autres religions</French>
+		<German>[NEWLINE][ICON_BULLET]Der Anführer ist Teil %s1, was zu Irritationen mit anderen Religionen führt</German>
+		<Italian>[NEWLINE][ICON_BULLET]The leader is following %s1, upsetting other religions</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]The leader is following %s1, upsetting other religions</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_VICTORY_INFLUENCE_HELP</Tag>

@@ -1533,8 +1533,8 @@ public:
 /*************************************************************************************************/
 /** bUniqueCult             Opera for LE/Orbis  06/07/09        imported by Valkrionn	09.26.09**/
 /*************************************************************************************************/
-	bool isUniqueCult() const; // Exposed to python
-	void setUniqueCult(bool bNewValue);
+	int getUniqueCult() const; // Exposed to python
+	void setUniqueCult(int bNewValue);
 	bool isIntolerant() const; // Exposed to python
 	void setIntolerant(bool bNewValue);
 /*************************************************************************************************/
@@ -2028,7 +2028,7 @@ protected:
 /*************************************************************************************************/
 /** bUniqueCult         Opera for LE/Orbis  06/07/09        imported by Valkrionn	09.26.09    **/
 /*************************************************************************************************/
-	bool m_bUniqueCult;
+	int m_iUniqueCult;
 	bool m_bIntolerant;
 /*************************************************************************************************/
 /** End                                                                                         **/

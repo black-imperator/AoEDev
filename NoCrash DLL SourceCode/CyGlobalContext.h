@@ -99,6 +99,7 @@ public:
 	CvReligionInfo* getReligionInfo(int i) const;
 	CvCityClassInfo* getCityClassInfo(int i) const;
 	CvDeathListInfo* getDeathListInfo(int i) const;
+	CvCultInfo* getCultInfo(int i) const;
 	CvTraitClassInfo* getTraitClassInfo(int i) const;
 	CvCorporationInfo* getCorporationInfo(int i) const;
 	CvControlInfo* getControlInfo(int i) const;
@@ -236,6 +237,7 @@ public:
 	int getNumPlotEffectInfos() const { return GC.getNumPlotEffectInfos(); }
 	int getNumCityClassInfos() const { return GC.getNumCityClassInfos(); }
 	int getNumDeathListInfos() const { return GC.getNumDeathListInfos(); }
+	int getNumCultInfos() const { return GC.getNumCultInfos(); }
 	int getNumTraitClassInfos() const { return GC.getNumTraitClassInfos(); }
 	int getNumGoodyInfos() const { return GC.getNumGoodyInfos(); }
 	int getNumBuildInfos() const { return GC.getNumBuildInfos(); }

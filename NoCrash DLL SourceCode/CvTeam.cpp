@@ -5826,6 +5826,8 @@ void CvTeam::setHasTech(TechTypes eIndex, bool bNewValue, PlayerTypes ePlayer, b
 	int iBestValue;
 	int iI, iJ, iK;
 
+	int iLoop;
+
 	if (eIndex == NO_TECH)
 	{
 		return;
@@ -6113,6 +6115,14 @@ void CvTeam::setHasTech(TechTypes eIndex, bool bNewValue, PlayerTypes ePlayer, b
 					GET_PLAYER((PlayerTypes)iI).AI_nowHasTech(eIndex);
 
 					GET_PLAYER((PlayerTypes)iI).invalidateYieldRankCache();
+					for (CvUnit* pLoopUnit = GET_PLAYER((PlayerTypes)iI).firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = GET_PLAYER((PlayerTypes)iI).nextUnit(&iLoop))
+					{
+						if (pLoopUnit->getUnitInfo().getStrBoostTechs(eIndex) != 0)
+						{
+							pLoopUnit->changeBaseCombatStr(pLoopUnit->getUnitInfo().getStrBoostTechs(eIndex));
+						}
+					}
+
 				}
 			}
 

@@ -117,6 +117,7 @@ CvCity::CvCity()
 /** Buildings can change give bonuses to specialists in only one city							**/
 /*************************************************************************************************/
 	m_paaiLocalSpecialistYield = NULL;
+	m_paaiLocalImprovementYield = NULL;
 	m_paaiLocalSpecialistCommerce = NULL;
 	m_paiLocalSpecialistHappiness = NULL;
 	m_paiLocalSpecialistHealth = NULL;
@@ -629,6 +630,14 @@ void CvCity::uninit()
 			SAFE_DELETE_ARRAY(m_paaiLocalSpecialistYield[iI]);
 		}
 		SAFE_DELETE_ARRAY(m_paaiLocalSpecialistYield);
+	}
+	if (m_paaiLocalImprovementYield != NULL)
+	{
+		for (int iI = 0; iI < GC.getNumImprovementClassInfos(); iI++)
+		{
+			SAFE_DELETE_ARRAY(m_paaiLocalImprovementYield[iI]);
+		}
+		SAFE_DELETE_ARRAY(m_paaiLocalImprovementYield);
 	}
 	if (m_paaiLocalSpecialistCommerce != NULL)
 	{
@@ -1208,20 +1217,38 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 		m_paaiLocalSpecialistYield = new int*[GC.getNumSpecialistClassInfos()];
 		for (int iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 		{
+		//	SpecialistTypes eSpecialist = getSpecialistTypeFromClass((SpecialistClassTypes)iI);
 			m_paaiLocalSpecialistYield[iI] = new int[NUM_YIELD_TYPES];
 			for (int iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
 			{
 				m_paaiLocalSpecialistYield[iI][iJ] = 0;
+			//	m_paaiLocalSpecialistYield[iI][iJ] = (eSpecialist == NO_SPECIALIST) ? 0 : GET_PLAYER(getOwner()).getSpecialistTypeExtraYield(eSpecialist, (YieldTypes)iJ);
 			}
 		}
+	
+		FAssertMsg(m_paaiLocalImprovementYield == NULL, "About to leak memory, CvCity::m_paaiLocalImprovementYield is NULL");
+		m_paaiLocalImprovementYield = new int* [GC.getNumImprovementClassInfos()];
+		for (int iI = 0; iI < GC.getNumImprovementClassInfos(); iI++)
+		{
+			//	ImprovementTypes eImprovement = getImprovementTypeFromClass((ImprovementClassTypes)iI);
+			m_paaiLocalImprovementYield[iI] = new int[NUM_YIELD_TYPES];
+			for (int iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
+			{
+				m_paaiLocalImprovementYield[iI][iJ] = 0;
+				//	m_paaiLocalImprovementYield[iI][iJ] = (eImprovement == NO_Improvement) ? 0 : GET_PLAYER(getOwner()).getImprovementTypeExtraYield(eImprovement, (YieldTypes)iJ);
+			}
+		}
+
 		FAssertMsg(m_paaiLocalSpecialistCommerce==NULL, "About to leak memory, CvCity::m_paaiLocalSpecialistCommerce is NULL");
 		m_paaiLocalSpecialistCommerce = new int*[GC.getNumSpecialistClassInfos()];
 		for (int iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 		{
+		//	SpecialistTypes eSpecialist = getSpecialistTypeFromClass((SpecialistClassTypes)iI);
 			m_paaiLocalSpecialistCommerce[iI] = new int[NUM_COMMERCE_TYPES];
 			for (int iJ = 0; iJ < NUM_COMMERCE_TYPES; iJ++)
 			{
 				m_paaiLocalSpecialistCommerce[iI][iJ] = 0;
+				//m_paaiLocalSpecialistCommerce[iI][iJ] = (eSpecialist == NO_SPECIALIST) ? 0 : GET_PLAYER(getOwner()).getSpecialistTypeExtraCommerce(eSpecialist, (CommerceTypes)iJ);
 			}
 		}
 		m_paiLocalSpecialistHappiness = new int[GC.getNumSpecialistClassInfos()];
@@ -1230,9 +1257,13 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 		m_paiLocalSpecialistGPP = new int[GC.getNumSpecialistClassInfos()];
 		for (int iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 		{
+		//	SpecialistTypes eSpecialist = getSpecialistTypeFromClass((SpecialistClassTypes)iI);
 			m_paiLocalSpecialistHappiness[iI] = 0;
+			//m_paiLocalSpecialistHappiness[iI] = (eSpecialist == NO_SPECIALIST) ? 0 : GET_PLAYER(getOwner()).getSpecialistTypeExtraHappiness(eSpecialist);
 			m_paiLocalSpecialistHealth[iI] = 0;
+			//m_paiLocalSpecialistHealth[iI] = (eSpecialist == NO_SPECIALIST) ? 0 : GET_PLAYER(getOwner()).getSpecialistTypeExtraHealth(eSpecialist);
 			m_paiLocalSpecialistCrime[iI] = 0;
+			//m_paiLocalSpecialistCrime[iI] = (eSpecialist == NO_SPECIALIST) ? 0 : GET_PLAYER(getOwner()).getSpecialistTypeExtraCrime(eSpecialist);
 			m_paiLocalSpecialistGPP[iI] = 0;
 		}
 /*************************************************************************************************/
@@ -3691,6 +3722,13 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 			return false;
 		}
 	}
+	if (GC.getBuildingInfo(eBuilding).getPrereqMaxCrime() != 0)
+	{
+		if (this->getCrime()  > GC.getBuildingInfo(eBuilding).getPrereqMaxCrime())
+		{
+			return false;
+		}
+	}
 	if (GC.getBuildingInfo(eBuilding).getPrereqPopulation() != 0)
 	{
 		if (this->getPopulation() < GC.getBuildingInfo(eBuilding).getPrereqPopulation())
@@ -6019,6 +6057,14 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange, bool bObsolet
 /*************************************************************************************************/
 /**	GWSLocalSpecialist																		END	**/
 /*************************************************************************************************/
+		}
+		for (int iI = 0; iI < GC.getNumImprovementClassInfos(); iI++)
+		{
+			for (int iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
+			{
+				changeLocalImprovementClassYield(((ImprovementClassTypes)iI), ((YieldTypes)iJ), GC.getBuildingInfo(eBuilding).getLocalImprovementClassYieldChange((ImprovementClassTypes)iI, (YieldTypes)iJ) * iChange);
+			}
+
 		}
 
 		for (int iI = 0; iI < GC.getNumImprovementInfos(); ++iI)
@@ -11929,6 +11975,35 @@ void CvCity::changeLocalSpecialistYield(YieldTypes eYield, int iChange)
 	}
 }
 
+
+int CvCity::getLocalImprovementClassYield(ImprovementClassTypes eImprovement, YieldTypes eYield) const
+{
+	FAssertMsg(eImprovement >= 0, "eImprovement expected to be >= 0");
+	FAssertMsg(eImprovement < GC.getNumImprovementClassInfos(), "eImprovement expected to be < GC.getNumImprovementClassInfos");
+	FAssertMsg(eYield >= 0, "eYield expected to be >= 0");
+	FAssertMsg(eYield < NUM_YIELD_TYPES, "eYield expected to be < NUM_YIELD_TYPES");
+
+	return m_paaiLocalImprovementYield[eImprovement][eYield];
+}
+void CvCity::setLocalImprovementClassYield(ImprovementClassTypes eImprovement, YieldTypes eYield, int iValue)
+{
+	FAssertMsg(eImprovement >= 0, "eImprovement expected to be >= 0");
+	FAssertMsg(eImprovement < GC.getNumImprovementClassInfos(), "eImprovement expected to be < GC.getNumImprovementClassInfos");
+	FAssertMsg(eYield >= 0, "eYield expected to be >= 0");
+	FAssertMsg(eYield < NUM_YIELD_TYPES, "eYield expected to be < NUM_YIELD_TYPES");
+
+	m_paaiLocalImprovementYield[eImprovement][eYield] = iValue;
+}
+
+void CvCity::changeLocalImprovementClassYield(ImprovementClassTypes eImprovement, YieldTypes eYield, int iChange)
+{
+	if (iChange != 0)
+	{
+		setLocalImprovementClassYield(eImprovement, eYield, getLocalImprovementClassYield(eImprovement, eYield) + iChange);
+	}
+}
+
+
 /*************************************************************************************************/
 
 int CvCity::getLocalSpecialistClassCommerce(SpecialistClassTypes eSpecialist, CommerceTypes eCommerce) const
@@ -17063,7 +17138,7 @@ void CvCity::doReligion()
 /*************************************************************************************************/
 
 /*************************************************************************************************/
-										if (GET_PLAYER(getOwnerINLINE()).isAgnostic() || GET_PLAYER(getOwnerINLINE()).isUniqueCult() || GET_PLAYER(getOwnerINLINE()).isIntolerant())
+										if (GET_PLAYER(getOwnerINLINE()).isAgnostic() || GET_PLAYER(getOwnerINLINE()).getUniqueCult() || GET_PLAYER(getOwnerINLINE()).isIntolerant())
 /*************************************************************************************************/
 /** End                                                                                         **/
 /*************************************************************************************************/
@@ -18089,6 +18164,10 @@ void CvCity::write(FDataStreamBase* pStream)
 	for (int iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 	{
 		pStream->Write(NUM_YIELD_TYPES, m_paaiLocalSpecialistYield[iI]);
+	}
+	for (int iI = 0; iI < GC.getNumImprovementClassInfos(); iI++)
+	{
+		pStream->Write(NUM_YIELD_TYPES, m_paaiLocalImprovementYield[iI]);
 	}
 	for (int iI = 0; iI < GC.getNumSpecialistClassInfos(); iI++)
 	{

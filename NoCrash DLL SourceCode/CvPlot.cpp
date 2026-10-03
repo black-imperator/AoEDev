@@ -8393,7 +8393,18 @@ int CvPlot::calculateYield(YieldTypes eYield, bool bDisplay) const
 				bCity = true;
 			}
 		}
+		if (getImprovementType() != NO_IMPROVEMENT)
+		{
+			pWorkingCity = getWorkingCity();
 
+			if (pWorkingCity != NULL)
+			{
+				if (!bDisplay || pWorkingCity->isRevealed(GC.getGameINLINE().getActiveTeam(), false))
+				{
+					iYield += pWorkingCity->getLocalImprovementClassYield((ImprovementClassTypes)GC.getImprovementInfo((ImprovementTypes)getImprovementType()).getImprovementClass(),eYield);
+				}
+			}
+		}
 		if (isWater())
 		{
 			if (!isImpassable())
@@ -13032,6 +13043,18 @@ bool CvPlot::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible) const
 					return false;
 				}
 			}
+			if (GC.getUnitInfo(eUnit).getPrereqPopulation() != 0)
+			{
+				if (NULL == pCity)
+				{
+					return false;
+				}
+				if (pCity->getPopulation() < GC.getUnitInfo(eUnit).getPrereqPopulation())
+				{
+					return false;
+				}
+
+			}
 		}
 //FfH: End Modify
 
@@ -14208,12 +14231,12 @@ void CvPlot::setHumidity(int iHumidity)
 	}
 }
 
-int CvPlot::getNaturalTemperature() const
+float CvPlot::getNaturalTemperature() const
 {
 	return m_iNaturalTemperature;
 }
 
-void CvPlot::changeNaturalTemperature(int iChange)
+void CvPlot::changeNaturalTemperature(float iChange)
 {
 	if (iChange != 0)
 	{
@@ -14221,7 +14244,7 @@ void CvPlot::changeNaturalTemperature(int iChange)
 	}
 }
 
-void CvPlot::setNaturalTemperature(int iNewValue)
+void CvPlot::setNaturalTemperature(float iNewValue)
 {
 	if (iNewValue != getNaturalTemperature())
 	{
@@ -14230,12 +14253,12 @@ void CvPlot::setNaturalTemperature(int iNewValue)
 	}
 }
 
-int CvPlot::getNaturalHumidity() const
+float CvPlot::getNaturalHumidity() const
 {
 	return m_iNaturalHumidity;
 }
 
-void CvPlot::changeNaturalHumidity(int iChange)
+void CvPlot::changeNaturalHumidity(float iChange)
 {
 	if (iChange != 0)
 	{
@@ -14243,7 +14266,7 @@ void CvPlot::changeNaturalHumidity(int iChange)
 	}
 }
 
-void CvPlot::setNaturalHumidity(int iNewValue)
+void CvPlot::setNaturalHumidity(float iNewValue)
 {
 	if (iNewValue != getNaturalHumidity())
 	{

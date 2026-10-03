@@ -1377,6 +1377,11 @@ public:
 	std::list<CityBonuses> listCityBonuses();
 	void applyCityBonus(CityBonuses cbTemp, CvCity* pCheckCity, int iChange, int iDistance);
 	void changeCityBonuses(bool bApply, std::list<CityBonuses> cbCityBonus);
+	int getNumTerraformingData() const;
+	TerraformingData getTerraformingData(int iI) const;
+	std::list<TerraformingData> listTerraformingData();
+	void applyTerraformingData(TerraformingData cbTemp, CvPlot* pPlot);
+	void changeTerraformingData(bool bApply, TerraformingData cbTerraformingData);
 	int getNumAuraBonuses() const;
 	AuraBonuses getAuraBonus(int iI) const;
 	std::list<AuraBonuses> listAuraBonuses();
@@ -2049,6 +2054,8 @@ protected:
 	std::list <int> m_pMinionUnitList;
 	int m_iNumCityBonuses;
 	std::list <CityBonuses> m_cbCityBonuses;
+	int m_iNumTerraformingData;
+	std::list <TerraformingData> m_cbTerraformingData;
 	int m_iNumAuraBonuses;
 	std::list <AuraBonuses> m_cbAuraBonuses;
 	int* m_piPromotionDuration;

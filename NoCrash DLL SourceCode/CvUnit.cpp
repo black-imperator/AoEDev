@@ -91,6 +91,7 @@ CvUnit::CvUnit()
 	m_pSlaveUnitList.clear();
 	m_pMinionUnitList.clear();
 	m_cbCityBonuses.clear();
+	m_cbTerraformingData.clear();
 	m_cbAuraBonuses.clear();
 	m_piYieldFromWin = NULL;
 	m_piYieldForLoss = NULL;
@@ -601,6 +602,7 @@ void CvUnit::uninit()
 	m_pSlaveUnitList.clear();
 	m_pMinionUnitList.clear();
 	m_cbCityBonuses.clear();
+	m_cbTerraformingData.clear();
 	m_cbAuraBonuses.clear();
 	SAFE_DELETE_ARRAY(m_piYieldFromWin);
 	SAFE_DELETE_ARRAY(m_piYieldForLoss);
@@ -915,6 +917,8 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 	m_pMinionUnitList.clear();
 	m_iNumCityBonuses = 0;
 	m_cbCityBonuses.clear();
+	m_iNumTerraformingData = 0;
+	m_cbTerraformingData.clear();
 	m_iNumAuraBonuses = 0;
 	m_cbAuraBonuses.clear();
 	if (!bConstructorCall)
@@ -18443,6 +18447,90 @@ void CvUnit::changeCityBonuses(bool bApply, std::list<CityBonuses> cbCityBonus)
 		}
 	}
 }
+
+//Passive Terraforming
+int CvUnit::getNumTerraformingData() const
+{
+	return m_iNumTerraformingData;
+}
+TerraformingData CvUnit::getTerraformingData(int iI) const
+{
+	int iCount = 0;
+	TerraformingData cbTemp;
+	for (std::list<TerraformingData>::const_iterator iter = m_cbTerraformingData.begin(); iter != m_cbTerraformingData.end(); ++iter)
+	{
+		if (iCount == iI)
+		{
+			cbTemp = *iter;
+		}
+		iCount++;
+	}
+	return cbTemp;
+}
+std::list<TerraformingData> CvUnit::listTerraformingData()
+{
+	return m_cbTerraformingData;
+}
+void CvUnit::changeTerraformingData(bool bApply,TerraformingData cbTerraformingData)
+{
+	int i = 0;
+	while (i < m_iNumTerraformingData)
+	{
+		if (m_cbTerraformingData.front().compare(cbTerraformingData)) {
+			if (bApply) {
+				m_cbTerraformingData.pop_front();
+				m_cbTerraformingData.push_back(cbTerraformingData);
+				return;
+			}
+			else
+			{
+				m_cbTerraformingData.pop_front();
+				m_iNumTerraformingData--;
+				return;
+			}
+		}
+		else {
+			i++;
+			m_cbTerraformingData.push_back(m_cbTerraformingData.front());
+			m_cbTerraformingData.pop_front();
+		}
+	}
+	if (bApply)
+	{
+		m_cbTerraformingData.push_back(cbTerraformingData);
+		m_iNumTerraformingData++;
+	}
+}
+void CvUnit::applyTerraformingData(TerraformingData cbTemp, CvPlot* pPlot)
+{
+	if (cbTemp.fHumidityChange > 0)
+	{
+		if (cbTemp.iHumidityMax != -1 && pPlot->getNaturalHumidity() < cbTemp.iHumidityMax)
+		{
+			pPlot->changeNaturalHumidity(cbTemp.fHumidityChange);
+		}
+	}
+	else {
+		if (cbTemp.iHumidityMin != -1 && pPlot->getNaturalHumidity() > cbTemp.iHumidityMin)
+		{
+			pPlot->changeNaturalHumidity(cbTemp.fHumidityChange);
+		}
+	}
+	if (cbTemp.fTemperatureChange > 0)
+	{
+		if (cbTemp.iTemperatureMax != -1 && pPlot->getNaturalTemperature() < cbTemp.iTemperatureMax)
+		{
+			pPlot->changeNaturalTemperature(cbTemp.fTemperatureChange);
+		}
+	}
+	else {
+		if (cbTemp.iTemperatureMin != -1 && pPlot->getNaturalTemperature() > cbTemp.iTemperatureMin)
+		{
+			pPlot->changeNaturalTemperature(cbTemp.fTemperatureChange);
+		}
+	}
+}
+
 //Aura black_imp 24/09/15
 int CvUnit::getNumAuraBonuses() const
 {
@@ -22483,6 +22571,23 @@ void CvUnit::setHasPromotion(PromotionTypes eIndex, bool bNewValue, bool bSupres
 		if (kPromotion.getDeathListTarget() != NO_DEATHLIST && bNewValue )
 		{
 			setDeathListTarget((DeathListTypes)kPromotion.getDeathListTarget());
+		}
+		//Passive Terraforming
+		if (kPromotion.getTerraformingRange() > -1)
+		{
+			TerraformingData cbTemp;
+			cbTemp.bTemp = false;
+			cbTemp.fHumidityChange = kPromotion.getHumidityChange();
+			cbTemp.fTemperatureChange = kPromotion.getTemperatureChange();
+			cbTemp.iDuration = -1;
+			cbTemp.iHumidityMax = kPromotion.getHumidityMax();
+			cbTemp.iHumidityMin = kPromotion.getHumidityMin();
+			cbTemp.iPromotion = eIndex;
+			cbTemp.iSpell = -1;
+			cbTemp.iTemperatureMax = kPromotion.getTemperatureMax();
+			cbTemp.iTemperatureMin = kPromotion.getTemperatureMin();
+			cbTemp.iTerraformingRange = kPromotion.getTerraformingRange();
+			changeTerraformingData(bNewValue, cbTemp);
 		}
 /*************************************************************************************************/
 /**	MobileCage								 6/17/2009								Cyther		**/
@@ -30645,6 +30750,16 @@ void CvUnit::read(FDataStreamBase* pStream)
 			m_cbCityBonuses.push_back(cbTemp);
 		}
 	}
+	m_cbTerraformingData.clear();
+	if (m_iNumTerraformingData != 0)
+	{
+		TerraformingData cbTemp;
+		for (int iI = 0; iI < m_iNumTerraformingData; iI++)
+		{
+			cbTemp.read(pStream);
+			m_cbTerraformingData.push_back(cbTemp);
+		}
+	}
 	pStream->Read(&m_iNumAuraBonuses);
 	m_cbAuraBonuses.clear();
 	if (m_iNumAuraBonuses != 0)
@@ -31181,6 +31296,17 @@ void CvUnit::write(FDataStreamBase* pStream)
 		while (!cbDupe.empty())
 		{
 			CityBonuses cbTemp = cbDupe.front();
+			cbDupe.pop_front();
+			cbTemp.write(pStream);
+		}
+	}
+	pStream->Write(m_iNumTerraformingData);
+	if (m_iNumTerraformingData != 0)
+	{
+		std::list<TerraformingData> cbDupe = m_cbTerraformingData;
+		while (!cbDupe.empty())
+		{
+			TerraformingData cbTemp = cbDupe.front();
 			cbDupe.pop_front();
 			cbTemp.write(pStream);
 		}

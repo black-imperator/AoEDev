@@ -2986,7 +2986,7 @@
 			<ShortDescription>TXT_KEY_TRAIT_PERSONALITY_CULT_SHORT</ShortDescription>
 			<bAgnostic>1</bAgnostic>
 			<iModReligionSpreadChance>-50</iModReligionSpreadChance>
-			<bUniqueCult>1</bUniqueCult>
+			<UniqueCult>CULT_RISEN_EMPEROR</UniqueCult>
 		</TraitInfo>
 		<TraitInfo>     <!-- Ice Touched -->
 			<Type>TRAIT_ICE_TOUCHED</Type>

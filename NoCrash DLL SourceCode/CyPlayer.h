@@ -722,7 +722,7 @@ public:
 /** bUniqueCult         Opera for Orbis/LE             08/07/09                                 **/
 /*************************************************************************************************/
 	bool isAgnostic() const;
-	bool isUniqueCult() const;
+	int getUniqueCult() const;
 	bool isIntolerant() const;
 /*************************************************************************************************/
 /** End                                                                                         **/

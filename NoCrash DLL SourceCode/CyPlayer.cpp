@@ -2833,9 +2833,9 @@ bool CyPlayer::isAgnostic() const
 	return m_pPlayer ? m_pPlayer->isAgnostic() : false;
 }
 
-bool CyPlayer::isUniqueCult() const
+int CyPlayer::getUniqueCult() const
 {
-	return m_pPlayer ? m_pPlayer->isUniqueCult() : false;
+	return m_pPlayer ? m_pPlayer->getUniqueCult() : -1;
 }
 
 bool CyPlayer::isIntolerant() const

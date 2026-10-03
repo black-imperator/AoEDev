@@ -210,6 +210,8 @@ class CvSpellClassInfo;
 
 class CvDeathListInfo;
 
+class CvCultInfo;
+
 //PromotionClass
 class CvPromotionClassInfo;
 
@@ -1006,6 +1008,10 @@ public:
 	int getNumDeathListInfos();
 	std::vector<CvDeathListInfo*>& getDeathListInfo();
 	CvDeathListInfo& getDeathListInfo(DeathListTypes eDeathList);
+
+	int getNumCultInfos();
+	std::vector<CvCultInfo*>& getCultInfo();
+	CvCultInfo& getCultInfo(CultTypes eCult);
 
 	//PromotionClass
 	int getNumPromotionClassInfos();
@@ -1938,6 +1944,8 @@ protected:
 	//Magic Rework
 	std::vector<CvSpellClassInfo*> m_paSpellClassInfo;
 	std::vector<CvDeathListInfo*> m_paDeathListInfo;
+
+	std::vector<CvCultInfo*> m_paCultInfo;
 
 	//PromotionClass
 	std::vector<CvPromotionClassInfo*> m_paPromotionClassInfo;

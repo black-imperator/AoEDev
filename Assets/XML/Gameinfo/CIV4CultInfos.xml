@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Basic Infos -->
+
+<Civ4CultInfos xmlns="x-schema:CIV4GameInfoSchema.xml">
+	<CultInfos>
+		<CultInfo>
+			<Type>CULT_RISEN_EMPEROR</Type>
+			<Description>TXT_KEY_CULT_RISEN_EMPEROR</Description>
+		</CultInfo>	
+	</CultInfos>
+</Civ4CultInfos>

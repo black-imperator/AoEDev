@@ -1485,6 +1485,14 @@ public:
 	int getMagicalPower() const;
 	int getMinMagicalPower() const;
 	//	int getDominionCapacity() const;
+	/** Passive Terraforming **/
+	int getTerraformingRange() const;
+	float getHumidityChange() const;
+	float getTemperatureChange() const;
+	int getHumidityMin() const;
+	int getTemperatureMin() const;
+	int getHumidityMax() const;
+	int getTemperatureMax()const;
 
 protected:
 
@@ -1530,6 +1538,16 @@ protected:
 	int m_iMagicalPower;
 	int m_iMinMagicalPower;
 	//	bool m_iDominionCapacity;
+
+
+/** Passive Terraforming **/
+	int m_iTerraformingRange;
+	float m_fHumidityChange;
+	float m_fTemperatureChange;
+	int m_iHumidityMin;
+	int m_iHumidityMax;
+	int m_iTemperatureMin;
+	int m_iTemperatureMax;
 
 	bool m_bLeader;
 	bool m_bBlitz;
@@ -2344,6 +2362,15 @@ public:
 	bool isSpellClass(int i) const;
 	int getPrereqSpellClassMagicalPower(int i) const;
 
+	/** Passive Terraforming **/
+	int getTerraformingRange() const;
+	float getHumidityChange() const;
+	float getTemperatureChange() const;
+	int getHumidityMin() const;
+	int getTemperatureMin() const;
+	int getHumidityMax() const;
+	int getTemperatureMax()const;
+
 	DllExport void read(FDataStreamBase* stream);
 	DllExport void write(FDataStreamBase* stream);
 	DllExport bool read(CvXMLLoadUtility* pXML);
@@ -2422,6 +2449,17 @@ protected:
 	int m_bPrereqIsMinion;
 	int m_iPrereqBroadAlignment;
 	int m_iAlignmentModifier;
+
+
+	/** Passive Terraforming **/
+	int m_iTerraformingRange;
+	float m_fHumidityChange;
+	float m_fTemperatureChange;
+	int m_iHumidityMin;
+	int m_iHumidityMax;
+	int m_iTemperatureMin;
+	int m_iTemperatureMax;
+
 /*************************************************************************************************/
 /**	Lawful-Chaotic Alignments 				11/06/09								Valkrionn	**/
 /**																								**/
@@ -3062,8 +3100,9 @@ public:
 	int getMiscastChance() const;
 	int getModifyGlobalCounter() const;
 	int getEquipmentPromotion() const;
+	int getPrereqPopulation() const;
 	int getPrereqAlignment() const;
-/*************************************************************************************************/
+	/*************************************************************************************************/
 /**	Lawful-Chaotic Alignments 				11/06/09								Valkrionn	**/
 /**																								**/
 /**							Adds a new alignment axis to the game								**/
@@ -3130,7 +3169,8 @@ public:
 /**																								**/
 /*************************************************************************************************/
 	int getAppearanceTechs(int i) const;                // Exposed to Python
-/*************************************************************************************************/
+	int getStrBoostTechs(int i) const;                // Exposed to Python
+	/*************************************************************************************************/
 /**	New Tag Defs							END													**/
 /*************************************************************************************************/
 	int getFlavorValue(int i) const;				// Exposed to Python
@@ -3558,6 +3598,7 @@ protected:
 	int m_iMiscastChance;
 	int m_iModifyGlobalCounter;
 	int m_iEquipmentPromotion;
+	int m_iPrereqPopulation;
 	int m_iPrereqAlignment;
 /*************************************************************************************************/
 /**	Lawful-Chaotic Alignments 				11/06/09								Valkrionn	**/
@@ -3636,7 +3677,8 @@ protected:
 /**																								**/
 /*************************************************************************************************/
 	int* m_piAppearanceTechs;
-/*************************************************************************************************/
+	int* m_piStrBoostTechs;
+	/*************************************************************************************************/
 /**	New Tag Defs							END													**/
 /*************************************************************************************************/
 	int* m_piFlavorValue;
@@ -4661,6 +4703,7 @@ public:
 	//Crime
 	int getPrereqPopulation() const;
 	int getPrereqCrime() const;
+	int getPrereqMaxCrime() const;
 	int getMinCrime() const;
 	bool isAutoBuild() const;
 	bool isMustMaintain() const;
@@ -4782,7 +4825,9 @@ public:
 	int getLocalSpecialistClassHealthChange(int iSpecialist) const;
 	int getLocalSpecialistClassCrimeChange(int iSpecialist) const;
 	int getLocalSpecialistClassGPPChange(int iSpecialist) const;
-/*************************************************************************************************/
+	int getLocalImprovementClassYieldChange(int iImprovement, int iYield) const;
+	int* getLocalImprovementClassYieldChangeArray(int iImprovement) const;
+	/*************************************************************************************************/
 /**	GWSLocalSpecialist																		END	**/
 /*************************************************************************************************/
 
@@ -4892,7 +4937,7 @@ public:
 	int getNumPerPopBonuses() const;
 	CityBonuses getPerPopBonus(int iI) const;
 	std::list<CityBonuses> listPerPopBonuses();
-
+	int getUnitClassPlayerInstancesChange(int i) const;
 	// Other
 
 	const CvArtInfoBuilding* getArtInfo() const;
@@ -5127,6 +5172,7 @@ protected:
 	//Crime
 	int m_iPrereqPopulation;
 	int m_iPrereqCrime;
+	int m_iPrereqMaxCrime;
 	int m_iMinCrime;
 	bool m_bAutoBuild;
 	bool m_bMustMaintain;
@@ -5170,6 +5216,8 @@ protected:
 	int* m_piPrereqGlobalBuildingClassANDs;
 	int* m_piPrereqGlobalBuildingClassNOTs;
 	int* m_piPrereqGlobalBuildingClassORs;
+
+	int* m_paiUnitClassPlayerInstancesChange;
 /*************************************************************************************************/
 /**	New Tag Defs							END													**/
 /*************************************************************************************************/
@@ -5219,7 +5267,8 @@ protected:
 	int *m_paiLocalSpecialistClassHealthChange;
 	int* m_paiLocalSpecialistClassCrimeChange;
 	int *m_paiLocalSpecialistClassGPPChange;
-/*************************************************************************************************/
+	int** m_paaiLocalImprovementClassYieldChange;
+	/*************************************************************************************************/
 /**	GWSLocalSpecialist																		END	**/
 /*************************************************************************************************/
 
@@ -9566,7 +9615,7 @@ public:
 /*************************************************************************************************/
 /** bUniqueCult         Opera for LE/Orbis  06/07/09        imported by Valkrionn	09.26.09    **/
 /*************************************************************************************************/
-	bool isUniqueCult() const;
+	int getUniqueCult() const;
 	bool isIntolerant() const;
 /*************************************************************************************************/
 /** End                                                                                         **/
@@ -9771,7 +9820,7 @@ protected:
 /*************************************************************************************************/
 /** bUniqueCult         Opera for LE/Orbis  06/07/09         imported by Valkrionn	09.26.09    **/
 /*************************************************************************************************/
-	bool m_bUniqueCult;
+	int m_iUniqueCult;
 	bool m_bIntolerant;
 /*************************************************************************************************/
 /** End                                                                                         **/
@@ -13522,4 +13571,31 @@ protected:
 	bool m_bRequiresLivingCiv;
 
 	CvString m_szPythonPrereq;
+};
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//
+//  class : CvCultInfo
+//
+//  DESC:   
+//
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+class CvCultInfo : public CvInfoBase
+{
+	//---------------------------------------PUBLIC INTERFACE---------------------------------
+public:
+
+	DllExport CvCultInfo();
+	DllExport virtual ~CvCultInfo();
+
+	bool isNationalCult() const;
+
+	bool read(CvXMLLoadUtility* pXML);
+	void copyNonDefaults(CvCultInfo* pClassInfo = NULL, CvXMLLoadUtility* pXML = NULL);
+
+	//---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
+
+protected:
+	bool m_bNationalCult;
 };

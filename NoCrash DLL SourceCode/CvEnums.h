@@ -3507,6 +3507,11 @@ enum DeathListTypes		// Exposed to Python
 	NO_DEATHLIST = -1,
 };
 
+enum CultTypes		// Exposed to Python
+{
+	NO_CULT = -1,
+};
+
 
 //PromotionClass
 enum PromotionClassTypes		// Exposed to Python

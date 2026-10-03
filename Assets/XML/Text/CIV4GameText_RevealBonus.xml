@@ -1292,6 +1292,14 @@
 		<Spanish>[NEWLINE][ICON_BULLET]Requires %d1 Crime</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_PREREQ_MAX_CRIME</Tag>
+		<English>[NEWLINE][ICON_BULLET]Requires Crime below %d1</English>
+		<French>[NEWLINE][ICON_BULLET]Nécessite un taux de criminalité inférieur à %d1</French>
+		<German>[NEWLINE][ICON_BULLET]Requires Crime below %d1</German>
+		<Italian>[NEWLINE][ICON_BULLET]Requires Crime below %d1</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]Requires Crime below %d1</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_PREREQ_MAGICAL_POWER</Tag>
 		<English>[NEWLINE][ICON_BULLET]Requires %d1 Power</English>
 		<French>[NEWLINE][ICON_BULLET]Nécessite %d1 de puissance</French>
@@ -14484,12 +14492,12 @@ Your unit is even more surprised to realise there are two figures standing besid
 		<Spanish>Sea Stealth</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_</Tag>
-		<English></English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
+		<Tag>TXT_KEY_UNIT_STR_TECH_BOOST</Tag>
+		<English>[ICON_BULLET]Gets a combat strength change of %d1 after researching %s2.</English>
+		<French>[ICON_BULLET]Gets a combat strength change of %d1 after researching %s2.</French>
+		<German>[ICON_BULLET]Gets a combat strength change of %d1 after researching %s2.</German>
+		<Italian>[ICON_BULLET]Gets a combat strength change of %d1 after researching %s2.</Italian>
+		<Spanish>[ICON_BULLET]Gets a combat strength change of %d1 after researching %s2.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_</Tag>

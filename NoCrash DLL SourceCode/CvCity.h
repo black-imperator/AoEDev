@@ -961,7 +961,11 @@ public:
 	void setLocalSpecialistClassYield(SpecialistClassTypes eSpecialist, YieldTypes eYield, int iValue);
 	void changeLocalSpecialistClassYield(SpecialistClassTypes eSpecialist, YieldTypes eYield, int iChange);
 	void changeLocalSpecialistYield(YieldTypes eYield, int iChange);
-/*************************************************************************************************/
+	
+	int getLocalImprovementClassYield(ImprovementClassTypes eImprovement, YieldTypes eYield) const;
+	void setLocalImprovementClassYield(ImprovementClassTypes eImprovement, YieldTypes eYield, int iValue);
+	void changeLocalImprovementClassYield(ImprovementClassTypes eImprovement, YieldTypes eYield, int iChange);
+	/*************************************************************************************************/
 	int getLocalSpecialistClassCommerce(SpecialistClassTypes eSpecialist, CommerceTypes eCommerce) const;
 	int getLocalSpecialistCommerce(CommerceTypes eCommerce) const;
 	void setLocalSpecialistClassCommerce(SpecialistClassTypes eSpecialist, CommerceTypes eCommerce, int iValue);
@@ -1888,6 +1892,7 @@ protected:
 /** Buildings can change give bonuses to specialists in only one city							**/
 /*************************************************************************************************/
 	int** m_paaiLocalSpecialistYield;
+	int** m_paaiLocalImprovementYield;
 	int** m_paaiLocalSpecialistCommerce;
 	int* m_paiLocalSpecialistHappiness;
 	int* m_paiLocalSpecialistHealth;

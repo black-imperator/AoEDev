@@ -753,13 +753,13 @@ public:
 	void changeHumidity(int iChange);											// Exposed to Python
 	void setHumidity(int iHumidity);											// Exposed to Python
 
-	int getNaturalTemperature() const;											// Exposed to Python
-	void changeNaturalTemperature(int iChange);									// Exposed to Python
-	void setNaturalTemperature(int iNewValue);									// Exposed to Python
+	float getNaturalTemperature() const;											// Exposed to Python
+	void changeNaturalTemperature(float iChange);									// Exposed to Python
+	void setNaturalTemperature(float iNewValue);									// Exposed to Python
 
-	int getNaturalHumidity() const;												// Exposed to Python
-	void changeNaturalHumidity(int iChange);									// Exposed to Python
-	void setNaturalHumidity(int iNewValue);										// Exposed to Python
+	float getNaturalHumidity() const;												// Exposed to Python
+	void changeNaturalHumidity(float iChange);									// Exposed to Python
+	void setNaturalHumidity(float iNewValue);										// Exposed to Python
 
 	int getTemperatureStrain() const;											// Exposed to Python
 	void changeTemperatureStrain(int iChange);									// Exposed to Python
@@ -979,8 +979,8 @@ protected:
 	short m_eNaturalClimate;
 	int m_iTemperature;
 	int m_iHumidity;
-	int m_iNaturalTemperature;
-	int m_iNaturalHumidity;
+	float m_iNaturalTemperature;
+	float m_iNaturalHumidity;
 	int m_iTemperatureStrain;
 	int m_iHumidityStrain;
 /*************************************************************************************************/

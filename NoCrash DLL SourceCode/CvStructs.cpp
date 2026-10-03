@@ -1008,3 +1008,40 @@ bool DeadUnitData::compare(DeadUnitData cbTemp)
 	return bSame;
 
 }
+// Passive Terraforming
+void TerraformingData::read(FDataStreamBase* pStream)
+{
+	pStream->Read(&iPromotion);
+	pStream->Read(&iSpell);
+	pStream->Read(&iDuration);
+	pStream->Read(&bTemp);
+	pStream->Read(&iTerraformingRange);
+	pStream->Read(&fHumidityChange);
+	pStream->Read(&fTemperatureChange);
+	pStream->Read(&iHumidityMin);
+	pStream->Read(&iHumidityMax);
+	pStream->Read(&iTemperatureMin);
+	pStream->Read(&iTemperatureMax);
+}
+
+void TerraformingData::write(FDataStreamBase* pStream)
+{
+	pStream->Write(iPromotion);
+	pStream->Write(iSpell);
+	pStream->Write(iDuration);
+	pStream->Write(bTemp);
+	pStream->Write(iTerraformingRange);
+	pStream->Write(fHumidityChange);
+	pStream->Write(fTemperatureChange);
+	pStream->Write(iHumidityMin);
+	pStream->Write(iHumidityMax);
+	pStream->Write(iTemperatureMin);
+	pStream->Write(iTemperatureMax);
+}
+bool TerraformingData::compare(TerraformingData cbTemp)
+{
+	bool bSame = true;
+	if (iPromotion != cbTemp.iPromotion) bSame = false;
+	else if (iSpell != cbTemp.iSpell) bSame = false;
+	return bSame;
+}

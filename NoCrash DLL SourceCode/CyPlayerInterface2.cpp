@@ -227,7 +227,7 @@ void CyPlayerPythonInterface2(python::class_<CyPlayer>& x)
 /*************************************************************************************************/
 /** bUniqueCult         Opera for Orbis/LE          08/07/09                                    **/
 /*************************************************************************************************/
-		.def("isUniqueCult", &CyPlayer::isUniqueCult, "bool ()")
+		.def("getUniqueCult", &CyPlayer::getUniqueCult, "int ()")
 		.def("isIntolerant", &CyPlayer::isIntolerant, "bool ()")
 		.def("isAgnostic", &CyPlayer::isAgnostic, "bool ()")
 		.def("getTraitPoints",&CyPlayer::getTraitPoints,"int (int i)")

@@ -357,6 +357,7 @@
 	<ElementType name="ReligionChanges" content="eltOnly">
 		<element type="ReligionChange" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
+	<ElementType name="ImprovementClass" content="textOnly"/>
 	<ElementType name="SpecialistClass" content="textOnly"/>
 	<ElementType name="iSpecialistClassCount" content="textOnly" dt:type="int"/>
 	<ElementType name="SpecialistClassCount" content="eltOnly">
@@ -381,6 +382,15 @@
 	<ElementType name="bCommerceChangeOriginalOwner" content="textOnly" dt:type="boolean"/>
 	<ElementType name="CommerceChangeOriginalOwners" content="eltOnly">
 		<element type="bCommerceChangeOriginalOwner" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="UnitClassType" content="textOnly"/>
+	<ElementType name="iPlayerInstancesChange" content="textOnly" dt:type="int"/>
+	<ElementType name="UnitClassPlayerInstancesChange" content="eltOnly">
+		<element type="UnitClassType"/>
+		<element type="iPlayerInstancesChange"/>
+	</ElementType>
+		<ElementType name="UnitClassPlayerInstancesChanges" content="eltOnly">
+		<element type="UnitClassPlayerInstancesChange" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="ConstructSound" content="textOnly"/><!-- Sound used when building is completed. See the AudioDefines, Audio2DScripts, and Audio3DScripts files.  -->
 	<ElementType name="BonusType" content="textOnly"/>
@@ -605,6 +615,13 @@
 	<ElementType name="LocalSpecialistClassGPPChanges" content="eltOnly">
 		<element type="LocalSpecialistClassGPPChange" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
+	<ElementType name="LocalImprovementClassYieldChange" content="eltOnly">
+		<element type="ImprovementClass"/>
+		<element type="YieldChanges"/>
+	</ElementType>
+	<ElementType name="LocalImprovementClassYieldChanges" content="eltOnly">
+		<element type="LocalImprovementClassYieldChange" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
 <!--
 /**	GWSLocalSpecialist																		END	**/
 -->
@@ -623,6 +640,7 @@
 <!-- CityPop Cap END -->
 	<ElementType name="iPrereqBroadAlignment" content="textOnly" dt:type="int"/>
 	<ElementType name="iPrereqCrime" content="textOnly" dt:type="int"/>
+	<ElementType name="iPrereqMaxCrime" content="textOnly" dt:type="int"/>
 	<ElementType name="iPrereqPopulation" content="textOnly" dt:type="int"/>
 	<ElementType name="iAlignmentModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iAlignmentShift" content="textOnly" dt:type="int"/>
@@ -956,6 +974,7 @@
 		<element type="SpecialistClassYieldChanges"/>
 		<element type="BonusYieldModifiers"/>
 		<element type="ImprovementFreeSpecialists"/>
+		<element type="UnitClassPlayerInstancesChanges"/>
 		<element type="Flavors"/>
 		<element type="HotKey"/>
 		<element type="bAltDown"/>
@@ -1003,10 +1022,12 @@
 		<element type="LocalSpecialistClassHappinessChanges"/>
 		<element type="LocalSpecialistClassHealthChanges"/>
 		<element type="LocalSpecialistClassGPPChanges"/>
+		<element type="LocalImprovementClassYieldChanges"/>
 <!--
 /**	GWSLocalSpecialist																		END	**/
 -->		<element type="PrereqOrTerrain"/>
 		<element type="iPrereqCrime"/>
+		<element type="iPrereqMaxCrime"/>
 		<element type="iPrereqPopulation"/>
 		<element type="iPrereqBroadAlignment"/>
 		<element type="PrereqAlignments"/>
@@ -1079,7 +1100,6 @@
 	<ElementType name="SpecialBuildingInfos" content="eltOnly">
 		<element type="SpecialBuildingInfo" maxOccurs="*"/>
 	</ElementType>
-	<ElementType name="UnitClassType" content="textOnly"/>
 	<ElementType name="UnitType" content="textOnly"/>
 	<ElementType name="Unit" content="eltOnly">
 		<element type="UnitClassType"/>

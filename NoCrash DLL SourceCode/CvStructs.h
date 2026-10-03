@@ -687,4 +687,26 @@ struct DeadUnitData
 	bool compare(DeadUnitData cbTemp);
 
 };
+//Passive Terraforming
+struct TerraformingData
+{
+	TerraformingData() : iPromotion(0), iSpell(0), iDuration(0), bTemp(false), iTerraformingRange(0), fHumidityChange(0), fTemperatureChange(0),
+		iHumidityMax(0), iHumidityMin(0), iTemperatureMax(0), iTemperatureMin(0) {}
+
+	int iPromotion;
+	int iSpell;
+	int iDuration;
+	bool bTemp;
+	int iTerraformingRange;
+	float fHumidityChange;
+	float fTemperatureChange;
+	int iHumidityMin;
+	int iHumidityMax;
+	int iTemperatureMin;
+	int iTemperatureMax;
+
+	void read(FDataStreamBase* pStream);
+	void write(FDataStreamBase* pStream);
+	bool compare(TerraformingData cbTemp);
+};
 #endif	// CVSTRUCTS_H
