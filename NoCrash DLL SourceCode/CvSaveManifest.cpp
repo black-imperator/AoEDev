@@ -378,6 +378,9 @@ namespace
 	int g_iSavedCount[CvSaveManifest::NUM_CONTENT_TYPES];
 	std::vector<int> g_aiRemap[CvSaveManifest::NUM_CONTENT_TYPES];
 
+	// CvGame's flag for the load in progress; 0 outside a load.
+	unsigned int g_uiSaveVersion = 0;
+
 	std::vector<std::string> currentNames(const ManifestType& kType)
 	{
 		std::vector<std::string> out;
@@ -721,13 +724,20 @@ void CvSaveManifest::endRead()
 		" outside the DLL's half of the save");
 }
 
-void CvSaveManifest::beginRead()
+void CvSaveManifest::beginRead(unsigned int uiSaveVersion)
 {
+	g_uiSaveVersion = uiSaveVersion;
+
 	for (int i = 0; i < NUM_CONTENT_TYPES; i++)
 	{
 		g_iSavedCount[i] = -1;
 		g_aiRemap[i].clear();
 	}
+}
+
+unsigned int CvSaveManifest::saveVersion()
+{
+	return g_uiSaveVersion;
 }
 
 int CvSaveManifest::currentCount(ContentType eType)

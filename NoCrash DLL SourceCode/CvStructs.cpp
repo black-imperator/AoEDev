@@ -589,7 +589,17 @@ void CityBonuses::read(FDataStreamBase* pStream)
 	pStream->Read(&bApplySelf);
 	pStream->Read(&bApplyTeam);
 	pStream->Read(&fCulture);
-	pStream->Read(&fScience);
+	// Added mid-format with no gate; absent from every save below this version.
+	// CityBonuses is an aggregate with no constructor, so an unread field keeps
+	// whatever was on the stack -- zero it rather than inherit garbage.
+	if (CvSaveManifest::saveVersion() >= SAVE_FORMAT_VERSION_SCIENCE)
+	{
+		pStream->Read(&fScience);
+	}
+	else
+	{
+		fScience = 0;
+	}
 	pStream->Read(&fCrime);
 	pStream->Read(&fDefense);
 	pStream->Read(&fDiplo);

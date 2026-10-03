@@ -21463,10 +21463,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_TRAIT_CLASS, m_piNumTraitPerClass);
 	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_TRAIT_CLASS, m_piNumMaxTraitPerClass);
 	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_TRAIT_TRIGGER, m_pbValidTraitTriggers);
-	for (int iI = 0;iI<GC.getNumSpecialistClassInfos();iI++)
-	{
-		pStream->Read(NUM_COMMERCE_TYPES, m_ppaaiSpecialistClassExtraCommerce[iI]);
-	}
+	CvSaveManifest::readRows(pStream, CvSaveManifest::CONTENT_SPECIALIST_CLASS, m_ppaaiSpecialistClassExtraCommerce, NUM_COMMERCE_TYPES);
 /*************************************************************************************************/
 /**	Miner Trait 	 	Orbis from Sanguo Mod		18/02/09	Ahwaric		**/
 /**									Read Data from Save Files									**/
@@ -21601,47 +21598,27 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST, m_paiSpecialistTypeExtraHealth);
 	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST, m_paiSpecialistTypeExtraHappiness);
 	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST, m_paiSpecialistTypeExtraCrime);
-	for (int iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
-	{
-		pStream->Read(NUM_YIELD_TYPES, m_ppaiSpecialistTypeExtraYield[iI]);
-	}
-	for (int iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
-	{
-		pStream->Read(NUM_COMMERCE_TYPES, m_ppaiSpecialistTypeExtraCommerce[iI]);
-	}
+	CvSaveManifest::readRows(pStream, CvSaveManifest::CONTENT_SPECIALIST, m_ppaiSpecialistTypeExtraYield, NUM_YIELD_TYPES);
+	CvSaveManifest::readRows(pStream, CvSaveManifest::CONTENT_SPECIALIST, m_ppaiSpecialistTypeExtraCommerce, NUM_COMMERCE_TYPES);
 
 	FAssertMsg((0 < GC.getNumTechInfos()), "GC.getNumTechInfos() is not greater than zero but it is expected to be in CvPlayer::read");
 	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_TECH, m_pabResearchingTech);
 
 	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_VOTE_SOURCE, m_pabLoyalMember);
 
-	for (int iI=0;iI<GC.getNumCivicOptionInfos();iI++)
-	{
-		pStream->Read((int*)&m_paeCivics[iI]);
-	}
+	// Indexed by civic option, and the value is itself a civic, so both sides move.
+	CvSaveManifest::readIdArray(pStream, CvSaveManifest::CONTENT_CIVIC_OPTION, CvSaveManifest::CONTENT_CIVIC, m_paeCivics);
 
-	for (int iI = 0;iI<GC.getNumSpecialistClassInfos();iI++)
-	{
-		pStream->Read(NUM_YIELD_TYPES, m_ppaaiSpecialistClassExtraYield[iI]);
-	}
+	CvSaveManifest::readRows(pStream, CvSaveManifest::CONTENT_SPECIALIST_CLASS, m_ppaaiSpecialistClassExtraYield, NUM_YIELD_TYPES);
 
-	for (int iI=0;iI<GC.getNumImprovementInfos();iI++)
-	{
-		pStream->Read(NUM_YIELD_TYPES, m_ppaaiImprovementYieldChange[iI]);
-	}
-	for (int iI = 0; iI < GC.getNumTerrainInfos(); iI++)
-	{
-		pStream->Read(NUM_YIELD_TYPES, m_ppaaiTerrainYieldChange[iI]);
-	}
+	CvSaveManifest::readRows(pStream, CvSaveManifest::CONTENT_IMPROVEMENT, m_ppaaiImprovementYieldChange, NUM_YIELD_TYPES);
+	CvSaveManifest::readRows(pStream, CvSaveManifest::CONTENT_TERRAIN, m_ppaaiTerrainYieldChange, NUM_YIELD_TYPES);
 /*************************************************************************************************/
 /**	CivPlotMods								03/31/09								Jean Elcard	**/
 /**																								**/
 /**							Read serialized CivPlotMods specific fields.						**/
 /*************************************************************************************************/
-	for (int iI=0;iI<GC.getNumFeatureInfos();iI++)
-	{
-		pStream->Read(NUM_YIELD_TYPES, m_ppaaiFeatureYieldChange[iI]);
-	}
+	CvSaveManifest::readRows(pStream, CvSaveManifest::CONTENT_FEATURE, m_ppaaiFeatureYieldChange, NUM_YIELD_TYPES);
 /*************************************************************************************************/
 /**	CivPlotMods								END													**/
 /*************************************************************************************************/
@@ -21908,7 +21885,10 @@ void CvPlayer::read(FDataStreamBase* pStream)
 //FfH: Modified by Kael 09/18/2008
 //		int iNumEventTriggers = std::min(176, GC.getNumEventTriggerInfos()); // yuck, hardcoded number of eventTriggers in the epic game in initial release
 //		for (int iI=0; iI < iNumEventTriggers; iI++)
-		for (int iI=0; iI < GC.getNumEventTriggerInfos(); iI++)
+		// One bool per event trigger, at the width the save was written with. The
+		// index IS the trigger id, so a save whose triggers have moved needs both
+		// the count and the id put back where they belong.
+		for (int iI=0; iI < CvSaveManifest::savedCount(CvSaveManifest::CONTENT_EVENT_TRIGGER); iI++)
 //FfH: End Modify
 
 		{
@@ -21916,7 +21896,11 @@ void CvPlayer::read(FDataStreamBase* pStream)
 			pStream->Read(&bTriggered);
 			if (bTriggered)
 			{
-				m_triggersFired.push_back((EventTriggerTypes)iI);
+				const int iNow = CvSaveManifest::remapId(CvSaveManifest::CONTENT_EVENT_TRIGGER, iI);
+				if (iNow >= 0)
+				{
+					m_triggersFired.push_back((EventTriggerTypes)iNow);
+				}
 			}
 		}
 	}

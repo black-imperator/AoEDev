@@ -8887,7 +8887,7 @@ void CvGame::read(FDataStreamBase* pStream)
 	// earlier load in the same session. Skipping it for a save with no manifest would
 	// leave the previous game's tables in place and silently permute this one.
 	CvSaveSizeProbe::flush();
-	CvSaveManifest::beginRead();
+	CvSaveManifest::beginRead(uiFlag);
 
 	// The manifest sits immediately after the flag, at the very top of the compressed
 	// body, so it is read before any content-sized array has had a chance to desync.
@@ -8973,16 +8973,51 @@ void CvGame::read(FDataStreamBase* pStream)
 	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIAL_BUILDING, m_pabSpecialBuildingValid);
 	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_RELIGION, m_abReligionSlotTaken);
 
-	for (int iI=0;iI<GC.getNumReligionInfos();iI++)
+	// One IDInfo per religion and per corporation, at the width the save used. Not a
+	// content array readArray can take -- the row is two unrelated fields, neither of
+	// them a content id -- so the placement is done here.
 	{
-		pStream->Read((int*)&m_paHolyCity[iI].eOwner);
-		pStream->Read(&m_paHolyCity[iI].iID);
+		const int* piRemap = CvSaveManifest::remapTable(CvSaveManifest::CONTENT_RELIGION);
+		const int iSaved = CvSaveManifest::savedCount(CvSaveManifest::CONTENT_RELIGION);
+
+		for (int iI=0;iI<GC.getNumReligionInfos();iI++)
+		{
+			m_paHolyCity[iI] = IDInfo();
+		}
+		for (int iI=0;iI<iSaved;iI++)
+		{
+			IDInfo kHolyCity;
+			pStream->Read((int*)&kHolyCity.eOwner);
+			pStream->Read(&kHolyCity.iID);
+
+			const int iTo = (piRemap != NULL) ? piRemap[iI] : iI;
+			if (iTo >= 0 && iTo < GC.getNumReligionInfos())
+			{
+				m_paHolyCity[iTo] = kHolyCity;
+			}
+		}
 	}
 
-	for (int iI=0;iI<GC.getNumCorporationInfos();iI++)
 	{
-		pStream->Read((int*)&m_paHeadquarters[iI].eOwner);
-		pStream->Read(&m_paHeadquarters[iI].iID);
+		const int* piRemap = CvSaveManifest::remapTable(CvSaveManifest::CONTENT_CORPORATION);
+		const int iSaved = CvSaveManifest::savedCount(CvSaveManifest::CONTENT_CORPORATION);
+
+		for (int iI=0;iI<GC.getNumCorporationInfos();iI++)
+		{
+			m_paHeadquarters[iI] = IDInfo();
+		}
+		for (int iI=0;iI<iSaved;iI++)
+		{
+			IDInfo kHeadquarters;
+			pStream->Read((int*)&kHeadquarters.eOwner);
+			pStream->Read(&kHeadquarters.iID);
+
+			const int iTo = (piRemap != NULL) ? piRemap[iI] : iI;
+			if (iTo >= 0 && iTo < GC.getNumCorporationInfos())
+			{
+				m_paHeadquarters[iTo] = kHeadquarters;
+			}
+		}
 	}
 
 	{
@@ -9186,10 +9221,7 @@ void CvGame::read(FDataStreamBase* pStream)
 /**	Overcouncil Bonus Ban					08/24/26									 Fix #420	**/
 /**		NoBonus bans are stored per vote source instead of as one global bonus-indexed array.	**/
 /*************************************************************************************************/
-	for (int iSource = 0; iSource < GC.getNumVoteSourceInfos(); iSource++)
-	{
-		CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_BONUS, m_ppabNoBonus[iSource]);
-	}
+	CvSaveManifest::readRows(pStream, CvSaveManifest::CONTENT_VOTE_SOURCE, CvSaveManifest::CONTENT_BONUS, m_ppabNoBonus);
 	updateAnyNoBonus();
 /*************************************************************************************************/
 /**	Overcouncil Bonus Ban					END													**/
@@ -9203,10 +9235,7 @@ void CvGame::read(FDataStreamBase* pStream)
 /**	New Tag Defs	(GameInfos)				10/01/08								Xienwolf	**/
 /**									Read Data from Save Files									**/
 /*************************************************************************************************/
-	for (int i=0;i<GC.getNumProjectInfos();i++)
-	{
-		pStream->Read(GC.getMaxNumProjectsAllowed(), m_ppaaiProjectTimers[i]);
-	}
+	CvSaveManifest::readRows(pStream, CvSaveManifest::CONTENT_PROJECT, m_ppaaiProjectTimers, GC.getMaxNumProjectsAllowed());
 /*************************************************************************************************/
 /**	New Tag Defs							END													**/
 /*************************************************************************************************/

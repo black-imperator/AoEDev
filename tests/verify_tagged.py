@@ -1,6 +1,7 @@
-# Check every tagged class for the ways a version flag can be wrong.
+# Check every tagged class for the ways a version flag can be wrong, and every class
+# for a field added to a positional run without one.
 #
-# Four hazards, all of which have actually occurred here:
+# Five hazards, all of which have actually occurred here:
 #
 #   1. The writer emits a tagged record while advertising a flag its own reader treats
 #      as positional. The reader parses a length-prefixed blob as bare scalars, the
@@ -17,6 +18,25 @@
 #   4. The reader already tests the flag for older format steps and the tagged gate does
 #      not sit above all of them, so the tagged branch captures saves those tests were
 #      written to handle.
+#
+#   5. A field is added to a POSITIONAL run with no version gate. Read and write stay
+#      symmetric, so the build round-trips its own saves and nothing looks wrong -- but
+#      every save written before the field is short by its width, and the reader consumes
+#      it anyway. 2a40758d added three floats this way (CvCity::m_fProximityScience,
+#      CvCity::m_fPerPopScience, CityBonuses::fScience) and every save older than it
+#      walked 8 bytes off the end of the first city; the crash landed three players later
+#      in a freelist, nowhere near the cause.
+#
+#      A tagged record does not protect against this. It covers only the prefix the
+#      converter could take; everything after it is positional on both sides, and there
+#      a field add is unconditionally fatal to older saves.
+#
+#      This cannot be seen in one revision of the source -- symmetric read and write look
+#      correct -- so the positional run of every class is snapshotted in
+#      positional_runs.txt. Changing a run is then a visible, reviewable diff. Run with
+#      --update to re-record it, which is also the fix: gate the new field on a
+#      SAVE_FORMAT_VERSION_* constant (or bump the class flag), then re-record.
+import difflib
 import io
 import os
 import re
@@ -56,6 +76,96 @@ def body(text, cls, fn):
     return ""
 
 
+SNAPSHOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "positional_runs.txt")
+
+# Every way the codebase pulls one value off the stream. The optional cast group is
+# [^)]* and not \w* on purpose: a greedy \w* eats into the member name and silently
+# records "y" for m_pafPotencyAffinity.
+CAST = r"(?:\([^)]*\)\s*)?"
+READ_OPS = [
+    r"CvSaveManifest::read(?:Array|Rows|IdArray)\(\s*pStream\s*,\s*CvSaveManifest::\w+\s*,"
+    r"\s*(?:CvSaveManifest::\w+\s*,\s*)?&?([A-Za-z_]\w*)",
+    r"CvSaveManifest::readId\(\s*pStream\s*,\s*CvSaveManifest::\w+\s*,\s*&?([A-Za-z_]\w*)",
+    r"pStream->ReadString\(\s*&?([A-Za-z_]\w*)",
+    r"pStream->Read\(\s*(?:NUM_\w+|MAX_\w+|GC\.\w+\(\)|\d+)\s*,\s*" + CAST + r"&?([A-Za-z_]\w*)",
+    r"pStream->Read\(\s*" + CAST + r"&([A-Za-z_]\w*)",
+    r"\b([A-Za-z_]\w*)\.[Rr]ead\(\s*pStream\s*\)",
+]
+
+
+def read_functions(text):
+    """Every Class::read in a file, not just the one the filename names.
+
+    CvStructs.cpp alone holds nine of them -- including CityBonuses, where hazard 5
+    last struck -- and keying off the filename missed every one."""
+    out = []
+    for m in re.finditer(r"^void\s+(\w+)::read\(FDataStreamBase\*\s*pStream\)", text, re.M):
+        cls = m.group(1)
+        b = body(text, cls, "read")
+        if b:
+            out.append((cls, b))
+    return out
+
+
+def positional_run(read_body):
+    """The ordered reads that are NOT protected by a version check.
+
+    Anything inside a CvTagReader loop is self-describing and safe to add to. Anything
+    inside a saveVersion()/uiFlag test is already gated, and is recorded with its guard
+    so that REMOVING the guard also shows up as a diff."""
+    lines = strip_comments(read_body).split("\n")
+    ops, stack, depth, pending = [], [], 0, None
+
+    for line in lines:
+        if re.search(r"\bCvTagReader\b", line):
+            pending = "tagged"
+        else:
+            g = re.search(r"if\s*\(\s*(?:CvSaveManifest::)?saveVersion\(\)\s*>=\s*(\w+)", line)
+            if g:
+                pending = "gated:" + g.group(1)
+            elif re.search(r"if\s*\(\s*uiFlag\s*[<>]=?\s*\w+", line):
+                pending = "flagged"
+
+        for pat in READ_OPS:
+            m = re.search(pat, line)
+            if m:
+                guard = stack[-1][1] if stack else "positional"
+                if guard != "tagged":
+                    ops.append("%-32s %s" % (guard, m.group(1)))
+                break
+
+        was = depth
+        depth += line.count("{") - line.count("}")
+
+        # The guard opens on one line and its brace is on the next, so a guard is only
+        # attached once the depth actually rises. Pushing it at the test's own depth and
+        # popping on "depth <= top" would discard it before its body was ever reached.
+        if pending is not None and depth > was:
+            stack.append((was, pending))
+            pending = None
+
+        while stack and depth <= stack[-1][0]:
+            stack.pop()
+
+    return ops
+
+
+def build_snapshot():
+    out = []
+    for name in sorted(os.listdir(SRC)):
+        if not name.endswith(".cpp"):
+            continue
+        text = load(os.path.join(SRC, name))
+        for cls, b in sorted(read_functions(text)):
+            run = positional_run(b)
+            if not run:
+                continue
+            out.append("### %s::read  (%d ungated/gated reads)" % (cls, len(run)))
+            out.extend("    " + op for op in run)
+    return out
+
+
+update = "--update" in sys.argv
 bad = 0
 checked = 0
 
@@ -124,4 +234,37 @@ for name in sorted(os.listdir(SRC)):
 
 print()
 print("%d tagged classes checked, %d with problems" % (checked, bad))
+
+# Hazard 5: the positional runs, which no single revision of the source can validate.
+print()
+snapshot = build_snapshot()
+classes = sum(1 for l in snapshot if l.startswith("### "))
+
+if update:
+    io.open(SNAPSHOT, "w", encoding="latin-1", newline="\r\n").write(
+        u"\n".join(snapshot) + u"\n")
+    print("positional runs re-recorded: %d classes, %d reads" % (classes, len(snapshot) - classes))
+elif not os.path.exists(SNAPSHOT):
+    print("positional runs: NO SNAPSHOT at %s -- run with --update to record one"
+          % os.path.basename(SNAPSHOT))
+    bad += 1
+else:
+    have = io.open(SNAPSHOT, "r", encoding="latin-1").read().split("\n")
+    have = [l.rstrip("\r") for l in have if l.strip()]
+    if have == snapshot:
+        print("positional runs: unchanged (%d classes, %d reads)"
+              % (classes, len(snapshot) - classes))
+    else:
+        bad += 1
+        print("positional runs CHANGED -- a save written before this change is a")
+        print("different length, and the reader will consume bytes that are not there:")
+        print()
+        for line in list(difflib.unified_diff(have, snapshot, "recorded", "current",
+                                              lineterm="", n=2))[2:]:
+            print("  " + line)
+        print()
+        print("  If the change is intentional, gate the new read on a")
+        print("  SAVE_FORMAT_VERSION_* constant (or bump the class flag) so older saves")
+        print("  skip it, then re-record with:  python tests/verify_tagged.py --update")
+
 sys.exit(1 if bad else 0)
