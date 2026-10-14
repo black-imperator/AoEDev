@@ -30751,6 +30751,10 @@ void CvUnit::read(FDataStreamBase* pStream)
 		}
 	}
 	m_cbTerraformingData.clear();
+	if (CvSaveManifest::saveVersion() >= SAVE_FORMAT_VERSION_NEW_TAGS)
+	{
+		pStream->Read(&m_iNumTerraformingData);
+	}
 	if (m_iNumTerraformingData != 0)
 	{
 		TerraformingData cbTemp;

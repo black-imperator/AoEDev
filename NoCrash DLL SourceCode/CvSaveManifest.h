@@ -48,7 +48,7 @@
 //   4     CvGame's own fields are a tagged record
 //   5     CvCity's science floats and CityBonuses::fScience are present
 //
-const unsigned int SAVE_FORMAT_VERSION = 5;
+const unsigned int SAVE_FORMAT_VERSION = 6;
 
 // First version that carries a manifest. Saves below this are read exactly as before.
 // Deliberately NOT raised with SAVE_FORMAT_VERSION: a version 3 save has a manifest
@@ -68,6 +68,11 @@ const unsigned int SAVE_FORMAT_VERSION_TAGGED = 4;
 // fields are gated on this; writes are unconditional, because a write is always at
 // SAVE_FORMAT_VERSION.
 const unsigned int SAVE_FORMAT_VERSION_SCIENCE = 5;
+
+// Version 6 reads the fields "assorted new tags" (459fcaa7) started writing: a unit's
+// terraforming records, a city's per-improvement-class local yields, and the player's
+// unique cult as a CultTypes int instead of a bool. Older saves have none of them.
+const unsigned int SAVE_FORMAT_VERSION_NEW_TAGS = 6;
 
 namespace CvSaveManifest
 {

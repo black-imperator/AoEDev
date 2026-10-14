@@ -17713,6 +17713,10 @@ void CvCity::read(FDataStreamBase* pStream)
 /** Buildings can change give bonuses to specialists in only one city							**/
 /*************************************************************************************************/
 	CvSaveManifest::readRows(pStream, CvSaveManifest::CONTENT_SPECIALIST_CLASS, m_paaiLocalSpecialistYield, NUM_YIELD_TYPES);
+	if (CvSaveManifest::saveVersion() >= SAVE_FORMAT_VERSION_NEW_TAGS)
+	{
+		CvSaveManifest::readRows(pStream, CvSaveManifest::CONTENT_IMPROVEMENT_CLASS, m_paaiLocalImprovementYield, NUM_YIELD_TYPES);
+	}
 	CvSaveManifest::readRows(pStream, CvSaveManifest::CONTENT_SPECIALIST_CLASS, m_paaiLocalSpecialistCommerce, NUM_COMMERCE_TYPES);
 	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST_CLASS, m_paiLocalSpecialistHappiness);
 	CvSaveManifest::readArray(pStream, CvSaveManifest::CONTENT_SPECIALIST_CLASS, m_paiLocalSpecialistHealth);

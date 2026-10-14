@@ -31,7 +31,7 @@
     positional                       m_paiNumBonuses
     positional                       m_paiNumImprovements
     positional                       m_iNumEvilTiles
-### CvCity::read  (284 ungated/gated reads)
+### CvCity::read  (285 ungated/gated reads)
     positional                       uiFlag
     positional                       m_iID
     positional                       m_iX
@@ -249,6 +249,7 @@
     positional                       m_paiGreatPeopleUnitRate
     positional                       m_paiGreatPeopleUnitProgress
     positional                       m_paaiLocalSpecialistYield
+    gated:SAVE_FORMAT_VERSION_NEW_TAGS m_paaiLocalImprovementYield
     positional                       m_paaiLocalSpecialistCommerce
     positional                       m_paiLocalSpecialistHappiness
     positional                       m_paiLocalSpecialistHealth
@@ -543,7 +544,7 @@
     positional                       m_bNeedsRebuilding
     positional                       m_paiNumBonus
     positional                       m_paiNumBonusOnLand
-### CvPlayer::read  (336 ungated/gated reads)
+### CvPlayer::read  (337 ungated/gated reads)
     positional                       uiFlag
     positional                       m_iStartingX
     positional                       m_iStartingY
@@ -749,7 +750,8 @@
     positional                       m_ppaaiSpecialistClassExtraCommerce
     positional                       m_paiFeatureProductionChange
     positional                       m_paiFeatureGrowthChange
-    positional                       m_bUniqueCult
+    gated:SAVE_FORMAT_VERSION_NEW_TAGS m_iUniqueCult
+    positional                       bUniqueCult
     positional                       m_bIntolerant
     positional                       m_iInitialCityCap
     positional                       m_iMaxCityCap
@@ -1187,6 +1189,18 @@
     positional                       piSummonPromotionData
     positional                       bPermanent
     positional                       bSummonPermanent
+### TerraformingData::read  (11 ungated/gated reads)
+    positional                       iPromotion
+    positional                       iSpell
+    positional                       iDuration
+    positional                       bTemp
+    positional                       iTerraformingRange
+    positional                       fHumidityChange
+    positional                       fTemperatureChange
+    positional                       iHumidityMin
+    positional                       iHumidityMax
+    positional                       iTemperatureMin
+    positional                       iTemperatureMax
 ### TraitTriggeredData::read  (52 ungated/gated reads)
     positional                       m_bAtWar
     positional                       m_bHill
@@ -1342,7 +1356,7 @@
     positional                       m_aiEnemyPeacetimeTradeValue
     positional                       m_aiEnemyPeacetimeGrantValue
     positional                       m_aeWarPlan
-### CvUnit::read  (301 ungated/gated reads)
+### CvUnit::read  (303 ungated/gated reads)
     positional                       uiFlag
     positional                       m_iID
     positional                       m_iGroupID
@@ -1528,6 +1542,8 @@
     positional                       m_iNumForcedMinions
     positional                       iID
     positional                       m_iNumCityBonuses
+    positional                       cbTemp
+    gated:SAVE_FORMAT_VERSION_NEW_TAGS m_iNumTerraformingData
     positional                       cbTemp
     positional                       m_iNumAuraBonuses
     positional                       cbTemp
