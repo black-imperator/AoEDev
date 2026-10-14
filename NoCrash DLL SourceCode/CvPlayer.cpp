@@ -3627,7 +3627,9 @@ void CvPlayer::setHasTrait(TraitTypes eTrait, bool bNewValue)
 	{
 		if (iChange == 1)
 		{
-			setMaxCities(GC.getTraitInfo(eTrait).getMaxCities() + GC.getWorldInfo(GC.getMapINLINE().getWorldSize()).getMaxCitiesMod());
+			// The world-size modifier is negative on small maps; never let it push the
+			// limit below one city, or to -1, which means "no limit".
+			setMaxCities(std::max(1, GC.getTraitInfo(eTrait).getMaxCities() + GC.getWorldInfo(GC.getMapINLINE().getWorldSize()).getMaxCitiesMod()));
 		}
 		else
 		{
