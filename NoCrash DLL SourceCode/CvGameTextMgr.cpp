@@ -21372,7 +21372,7 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 	}
 	for(int iI = 0; iI < GC.getNumImprovementClassInfos(); iI++)
 	{
-		szFirstBuffer = gDLL->getText("TXT_KEY_BUILDING_FROM_IN_LOCAL", GC.getImprovementClassInfo((ImprovementClassTypes)iI).getTextKeyWide());
+		szFirstBuffer = gDLL->getText("TXT_KEY_BUILDING_FROM_IN_LOCAL", GC.getImprovementInfo((ImprovementTypes)GC.getImprovementClassInfo((ImprovementClassTypes)iI).getDefaultImprovementIndex()).getTextKeyWide());
 		setYieldChangeHelp(szBuffer, L"", L"", szFirstBuffer, kBuilding.getLocalImprovementClassYieldChangeArray(iI));
 
 	}
