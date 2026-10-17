@@ -21488,7 +21488,28 @@ void CvPlayer::read(FDataStreamBase* pStream)
 /*************************************************************************************************/
 /** bUniqueCult             Opera for LE/Orbis  06/07/09        imported by Valkrionn	09.26.09**/
 /*************************************************************************************************/
-	pStream->Read(&m_iUniqueCult);
+	if (CvSaveManifest::saveVersion() >= SAVE_FORMAT_VERSION_NEW_TAGS)
+	{
+		pStream->Read(&m_iUniqueCult);
+	}
+	else
+	{
+		// Older saves kept a bool here. The cult itself comes from whichever of the
+		// player's traits grants one; m_pbTraits has already been read above.
+		bool bUniqueCult = false;
+		pStream->Read(&bUniqueCult);
+		if (bUniqueCult)
+		{
+			for (int iI = 0; iI < GC.getNumTraitInfos(); iI++)
+			{
+				if (m_pbTraits[iI] && GC.getTraitInfo((TraitTypes)iI).getUniqueCult() != NO_CULT)
+				{
+					m_iUniqueCult = GC.getTraitInfo((TraitTypes)iI).getUniqueCult();
+					break;
+				}
+			}
+		}
+	}
 	pStream->Read(&m_bIntolerant);
 /*************************************************************************************************/
 /** End                                                                                         **/
