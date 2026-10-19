@@ -45,14 +45,6 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_ASSASSIN</UnitType>
-					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_CROSSBOWMAN_CLAN_OF_EMBERS</EarlyArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_CROSSBOWMAN_CLAN_OF_EMBERS</LateArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_CROSSBOWMAN_CLAN_OF_EMBERS</MiddleArtDefineTag>
-					</UnitMeshGroup>
-				</StyleUnit>
-				<StyleUnit>
 					<UnitType>UNIT_AXEMAN</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_MOLEMAN_SWORDSMAN</EarlyArtDefineTag>
@@ -94,9 +86,9 @@
 				<StyleUnit>
 					<UnitType>UNIT_COMMANDER</UnitType>
 					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_PALADIN_CLAN_OF_EMBERS</EarlyArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_PALADIN_CLAN_OF_EMBERS</LateArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_PALADIN_CLAN_OF_EMBERS</MiddleArtDefineTag>
+						<EarlyArtDefineTag>ART_DEF_UNIT_MOLEMAN_GREAT_COMMANDER</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_MOLEMAN_GREAT_COMMANDER</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_MOLEMAN_GREAT_COMMANDER</MiddleArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
@@ -129,14 +121,6 @@
 						<EarlyArtDefineTag>ART_DEF_UNIT_MOLEMAN_MARKSMAN</EarlyArtDefineTag>
 						<LateArtDefineTag>ART_DEF_UNIT_MOLEMAN_MARKSMAN</LateArtDefineTag>
 						<MiddleArtDefineTag>ART_DEF_UNIT_MOLEMAN_MARKSMAN</MiddleArtDefineTag>
-					</UnitMeshGroup>
-				</StyleUnit>
-				<StyleUnit>
-					<UnitType>UNIT_PALADIN</UnitType>
-					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_PALADIN_CLAN_OF_EMBERS</EarlyArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_PALADIN_CLAN_OF_EMBERS</LateArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_PALADIN_CLAN_OF_EMBERS</MiddleArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
@@ -274,98 +258,105 @@
 			<StyleUnit>
 					<UnitType>UNIT_HUNTER</UnitType>
 					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_HUNTER_ORC</EarlyArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_HUNTER_ORC</LateArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_HUNTER_ORC</MiddleArtDefineTag>
+						<EarlyArtDefineTag>ART_DEF_UNIT_MOLEMAN_DELVER</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_MOLEMAN_DELVER</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_MOLEMAN_DELVER</MiddleArtDefineTag>
 					</UnitMeshGroup>
 					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_HUNTER_ORC</EarlyArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_HUNTER_ORC</LateArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_HUNTER_ORC</MiddleArtDefineTag>
+						<EarlyArtDefineTag>ART_DEF_UNIT_MOLEMAN_DELVER</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_MOLEMAN_DELVER</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_MOLEMAN_DELVER</MiddleArtDefineTag>
 					</UnitMeshGroup>
 					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_HUNTER_ORC</EarlyArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_HUNTER_ORC</LateArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_HUNTER_ORC</MiddleArtDefineTag>
+						<EarlyArtDefineTag>ART_DEF_UNIT_MOLEMAN_DELVER</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_MOLEMAN_DELVER</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_MOLEMAN_DELVER</MiddleArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
 			<StyleUnit>
 					<UnitType>UNIT_RANGER</UnitType>
 					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_RANGER_ORC</EarlyArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_RANGER_ORC</LateArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_RANGER_ORC</MiddleArtDefineTag>
+						<EarlyArtDefineTag>ART_DEF_UNIT_MOLEMAN_CAVERNER</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_MOLEMAN_CAVERNER</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_MOLEMAN_CAVERNER</MiddleArtDefineTag>
 					</UnitMeshGroup>
 					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_RANGER_ORC</EarlyArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_RANGER_ORC</LateArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_RANGER_ORC</MiddleArtDefineTag>
+						<EarlyArtDefineTag>ART_DEF_UNIT_MOLEMAN_CAVERNER</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_MOLEMAN_CAVERNER</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_MOLEMAN_CAVERNER</MiddleArtDefineTag>
 					</UnitMeshGroup>
 					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_RANGER_ORC</EarlyArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_RANGER_ORC</LateArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_RANGER_ORC</MiddleArtDefineTag>
+						<EarlyArtDefineTag>ART_DEF_UNIT_MOLEMAN_CAVERNER</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_MOLEMAN_CAVERNER</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_MOLEMAN_CAVERNER</MiddleArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
 			<StyleUnit>
 					<UnitType>UNIT_BEASTMASTER</UnitType>
 					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_BEASTMASTER_ORC</EarlyArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_BEASTMASTER_ORC</LateArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_BEASTMASTER_ORC</MiddleArtDefineTag>
+						<EarlyArtDefineTag>ART_DEF_UNIT_MOLEMAN_DREDGER</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_MOLEMAN_DREDGER</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_MOLEMAN_DREDGER</MiddleArtDefineTag>
 					</UnitMeshGroup>
 					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_BEASTMASTER_ORC</EarlyArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_BEASTMASTER_ORC</LateArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_BEASTMASTER_ORC</MiddleArtDefineTag>
+						<EarlyArtDefineTag>ART_DEF_UNIT_MOLEMAN_DREDGER</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_MOLEMAN_DREDGER</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_MOLEMAN_DREDGER</MiddleArtDefineTag>
 					</UnitMeshGroup>
 					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_BEASTMASTER_ORC</EarlyArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_BEASTMASTER_ORC</LateArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_BEASTMASTER_ORC</MiddleArtDefineTag>
+						<EarlyArtDefineTag>ART_DEF_UNIT_MOLEMAN_DREDGER</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_MOLEMAN_DREDGER</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_MOLEMAN_DREDGER</MiddleArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
 			<StyleUnit>
 					<UnitType>UNIT_MERCHANT</UnitType>
 					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_MERCHANT_ORC</EarlyArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_MERCHANT_ORC</LateArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_MERCHANT_ORC</MiddleArtDefineTag>
+						<EarlyArtDefineTag>ART_DEF_UNIT_MOLEMAN_MERCHANT</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_MOLEMAN_MERCHANT</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_MOLEMAN_MERCHANT</MiddleArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
 					<UnitType>UNIT_ENGINEER</UnitType>
 					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_ENGINEER_ORC</EarlyArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_ENGINEER_ORC</LateArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_ENGINEER_ORC</MiddleArtDefineTag>
+						<EarlyArtDefineTag>ART_DEF_UNIT_MOLEMAN_ENGINEER</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_MOLEMAN_ENGINEER</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_MOLEMAN_ENGINEER</MiddleArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
 					<UnitType>UNIT_ARTIST</UnitType>
 					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_ARTIST_ORC</EarlyArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_ARTIST_ORC</LateArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_ARTIST_ORC</MiddleArtDefineTag>
+						<EarlyArtDefineTag>ART_DEF_UNIT_MOLEMAN_ARTIST</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_MOLEMAN_ARTIST</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_MOLEMAN_ARTIST</MiddleArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
 			<StyleUnit>
 					<UnitType>UNIT_PROPHET</UnitType>
 					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_PROPHET_ORC</EarlyArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_PROPHET_ORC</LateArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_PROPHET_ORC</MiddleArtDefineTag>
+						<EarlyArtDefineTag>ART_DEF_UNIT_MOLEMAN_PROPHET</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_MOLEMAN_PROPHET</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_MOLEMAN_PROPHET</MiddleArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
 			<StyleUnit>
 					<UnitType>UNIT_SCIENTIST</UnitType>
 					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_SCIENTIST_ORC</EarlyArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_SCIENTIST_ORC</LateArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_SCIENTIST_ORC</MiddleArtDefineTag>
+						<EarlyArtDefineTag>ART_DEF_UNIT_MOLEMAN_SCIENTIST</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_MOLEMAN_SCIENTIST</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_MOLEMAN_SCIENTIST</MiddleArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
-			
+				<StyleUnit>
+					<UnitType>UNIT_HEALER</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_MOLEMAN_HEALER</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_MOLEMAN_HEALER</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_MOLEMAN_HEALER</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
 			</StyleUnits>
 		</UnitArtStyleTypeInfo>
 <!--Civ-->

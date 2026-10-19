@@ -95,7 +95,6 @@
 			<iConquestProb>0</iConquestProb>
 			<iCitiesPrereq>4</iCitiesPrereq>
 			<iHappiness>1</iHappiness>
-			<iTradeRouteModifier>50</iTradeRouteModifier>
 			<fVisibilityPriority>10000</fVisibilityPriority>
 			<YieldChanges>
 				<iYield>0</iYield>
@@ -310,7 +309,7 @@
 			<YieldChanges>
 				<iYield>0</iYield>
 				<iYield>1</iYield>
-				<iYield>12</iYield>
+				<iYield>8</iYield>
 			</YieldChanges>
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>

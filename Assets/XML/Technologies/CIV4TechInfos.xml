@@ -3414,7 +3414,6 @@
 				</Flavor>
 			</Flavors>
 			<OrPreReqs>
-				<PrereqTech>TECH_ARCHERY</PrereqTech>
 				<PrereqTech>TECH_HUNTING</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs>

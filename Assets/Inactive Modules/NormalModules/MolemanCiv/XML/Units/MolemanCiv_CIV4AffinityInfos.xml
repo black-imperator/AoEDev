@@ -21,7 +21,7 @@
 				<BonusType>BONUS_HORSE</BonusType>
 				<BonusType>BONUS_NIGHTMARE</BonusType>
 			</BonusTypes>
-			<fAttackStrength>0.5</fAttackStrength>
+			<fAttackStrength>0.2</fAttackStrength>
 		</AffinityInfo>
 		<AffinityInfo><!-- Stone Affinity--> 
 			<Type>AFFINITY_STONE</Type>

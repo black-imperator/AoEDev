@@ -331,7 +331,7 @@
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 			</FreePromotions>
-			<iCost>60</iCost>
+			<iCost>100</iCost>
 			<iMoves>1</iMoves>
 			<iCombat>3</iCombat>
 			<iCombatDefense>4</iCombatDefense>
@@ -472,7 +472,7 @@
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 			</FreePromotions>
-			<iCost>120</iCost>
+			<iCost>190</iCost>
 			<iMoves>1</iMoves>
 			<iCombat>5</iCombat>
 			<iCombatDefense>6</iCombatDefense>
@@ -611,7 +611,7 @@
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 			</FreePromotions>
-			<iCost>190</iCost>
+			<iCost>300</iCost>
 			<iMoves>2</iMoves>
 			<iCombat>11</iCombat>
 			<iCombatDefense>12</iCombatDefense>

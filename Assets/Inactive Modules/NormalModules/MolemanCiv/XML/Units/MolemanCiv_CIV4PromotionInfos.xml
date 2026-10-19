@@ -474,7 +474,7 @@
 		<PromotionInfo>
 			<!--Temporary STEALTH gained from going on the molerun effect-->
 			<Type>PROMOTION_MOLEMAN_MOLERUN_STEALTH_EFFECT</Type>
-			<Description>TXT_KEY_PROMOTION_MOLEMAN_MOLERUNE_STEALTH_EFFECT</Description>
+			<Description>TXT_KEY_PROMOTION_MOLEMAN_MOLERUN_STEALTH_EFFECT</Description>
 			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/earthsneak.dds</Button>
 			<bMustMaintain>1</bMustMaintain>
 			<bAutoAcquire>1</bAutoAcquire>
@@ -541,7 +541,7 @@
 			</PrereqPromotionANDs>
 		</PromotionInfo>
 		<PromotionInfo>
-			<!--Gives moleman ability to gain percepyion on molerun-->
+			<!--Gives moleman ability to gain perception on molerun-->
 			<Type>PROMOTION_MOLEMAN_MOLERUN_PERCEPTION</Type>
 			<Description>TXT_KEY_PROMOTION_MOLEMAN_MOLERUN_PERCEPTION</Description>
 			<Help>TXT_KEY_PROMOTION_MOLEMAN_MOLERUN_PERCEPTION_HELP</Help>
@@ -611,7 +611,7 @@
 		<PromotionInfo>
 			<!--Temporary STEALTH gained from going on the molerun effect-->
 			<Type>PROMOTION_MOLEMAN_MOLERUN_PERCEPTION_EFFECT</Type>
-			<Description>PROMOTION_MOLEMAN_MOLERUN_PERCEPTION_EFFECT</Description>
+			<Description>TXT_KEY_PROMOTION_MOLEMAN_MOLERUN_PERCEPTION</Description>
 			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/earthsense.dds</Button>
 			<bMustMaintain>1</bMustMaintain>
 			<bAutoAcquire>1</bAutoAcquire>

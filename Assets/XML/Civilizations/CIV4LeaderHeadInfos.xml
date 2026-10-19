@@ -30752,7 +30752,7 @@
 				</ReligionWeightModifier>
 				<ReligionWeightModifier>
 					<ReligionType>RELIGION_THE_ASHEN_VEIL</ReligionType>
-					<iWeightModifier>-90</iWeightModifier>
+					<iWeightModifier>-99</iWeightModifier>
 				</ReligionWeightModifier>
 				<ReligionWeightModifier>
 					<ReligionType>RELIGION_THE_EMPYREAN</ReligionType>
@@ -53253,7 +53253,7 @@
 				</ReligionWeightModifier>
 				<ReligionWeightModifier>
 					<ReligionType>RELIGION_THE_ASHEN_VEIL</ReligionType>
-					<iWeightModifier>-90</iWeightModifier>
+					<iWeightModifier>-99</iWeightModifier>
 				</ReligionWeightModifier>
 				<ReligionWeightModifier>
 					<ReligionType>RELIGION_THE_EMPYREAN</ReligionType>

@@ -3388,8 +3388,8 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
-			<iAppearanceProbability>35</iAppearanceProbability>
-			<iLairCreationWeight>15</iLairCreationWeight>
+			<iAppearanceProbability>25</iAppearanceProbability>
+			<iLairCreationWeight>12</iLairCreationWeight>
 			<LairCreationWeightTechs>
 				<LairCreationWeightTech>
 					<LairCreationWeightTechType>TECH_NECROMANCY</LairCreationWeightTechType>
@@ -3406,7 +3406,7 @@
 					<iLairUpgradeTech>3000</iLairUpgradeTech>
 				</LairUpgradeTech>
 			</LairUpgradeTechs>
-			<iBasePlotCounterModify>10</iBasePlotCounterModify>
+			<!--<iBasePlotCounterModify>10</iBasePlotCounterModify>-->
 			<SpawnPromotions>
 				<Promotion>PROMOTION_STIGMATA</Promotion>
 			</SpawnPromotions>
@@ -3541,7 +3541,7 @@
 					<iLairUpgradeTech>3000</iLairUpgradeTech>
 				</LairUpgradeTech>
 			</LairUpgradeTechs>
-			<iBasePlotCounterModify>15</iBasePlotCounterModify>
+			<!--<iBasePlotCounterModify>15</iBasePlotCounterModify>-->
 			<SpawnPromotions>
 				<Promotion>PROMOTION_STIGMATA</Promotion>
 			</SpawnPromotions>
@@ -3681,7 +3681,7 @@
 					<iLairCreationWeightTech>15</iLairCreationWeightTech>
 				</LairCreationWeightTech>
 			</LairCreationWeightTechs>
-			<iBasePlotCounterModify>20</iBasePlotCounterModify>
+			<!--<iBasePlotCounterModify>20</iBasePlotCounterModify>-->
 			<SpawnPromotions>
 				<Promotion>PROMOTION_STIGMATA</Promotion>
 			</SpawnPromotions>

@@ -11698,12 +11698,12 @@
 				</BuildingExclude>
 			</BuildingExcludes>
 			<CommerceChanges>
-				<iCommerce>2</iCommerce>
+				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 			</CommerceChanges>
 			<CommerceModifiers>
-				<iCommerce>0</iCommerce>
+				<iCommerce>10</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>10</iCommerce>
 			</CommerceModifiers>
