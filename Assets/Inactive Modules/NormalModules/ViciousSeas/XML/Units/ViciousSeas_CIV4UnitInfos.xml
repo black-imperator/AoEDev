@@ -33,7 +33,7 @@
 					<bBuilding>1</bBuilding>
 				</Building>
 			</Buildings>
-			<iMoves>2</iMoves>
+			<iMoves>3</iMoves>
 			<iCombat>14</iCombat>
 			<iAsset>0</iAsset>
 			<UnitMeshGroups>
@@ -88,7 +88,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<iMoves>2</iMoves>
+			<iMoves>3</iMoves>
 			<iCombat>16</iCombat>
 			<TerrainNatives>
 				<TerrainNative>
@@ -147,7 +147,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<iMoves>2</iMoves>
+			<iMoves>3</iMoves>
 			<iCombat>6</iCombat>
 			<TerrainNatives>
 				<TerrainNative>
@@ -194,7 +194,6 @@
 			<Type>UNIT_GIANT_TORTOISE</Type>
 			<Special>SPECIALUNIT_SEABEAST</Special>
 			<Description>TXT_KEY_UNIT_GIANT_TURTLE</Description>
-			<iMoves>2</iMoves>
 		</UnitInfo>
 		<UnitInfo>        <!-- Shark Hunter BEZERI START-->
 			<Class>UNITCLASS_ARCHER</Class>
@@ -410,7 +409,7 @@
 			<PrereqTech>TECH_SAILING</PrereqTech>
 			<iCost>75</iCost>
 			<iMinAreaSize>20</iMinAreaSize>
-			<iMoves>2</iMoves>
+			<iMoves>3</iMoves>
 			<iCombat>7</iCombat>
 			<iBombardRate>10</iBombardRate>
 			<iAsset>5</iAsset>
@@ -475,7 +474,7 @@
 			<PrereqTech>TECH_ASTRONOMY</PrereqTech>
 			<iCost>225</iCost>
 			<iMinAreaSize>20</iMinAreaSize>
-			<iMoves>2</iMoves>
+			<iMoves>4</iMoves>
 			<iCombat>12</iCombat>
 			<UnitClassAttackMods>
 				<UnitClassAttackMod>
@@ -1216,7 +1215,7 @@
 			<BonusType>BONUS_WHALE</BonusType>
 			<iCost>300</iCost>
 			<iMinAreaSize>20</iMinAreaSize>
-			<iMoves>3</iMoves>
+			<iMoves>5</iMoves>
 			<iAirRange>2</iAirRange>
 			<iCombat>16</iCombat>
 			<iAirCombat>8</iAirCombat>
@@ -1302,7 +1301,7 @@
 			</PrereqBonuses>
 			<iCost>150</iCost>
 			<iMinAreaSize>20</iMinAreaSize>
-			<iMoves>2</iMoves>
+			<iMoves>3</iMoves>
 			<iCombat>9</iCombat>
 			<iBombardRate>20</iBombardRate>
 			<DomainCargo>DOMAIN_LAND</DomainCargo>
@@ -1417,56 +1416,47 @@
 			<Class>UNITCLASS_SEA_SERPENT</Class>
 			<Type>UNIT_SEA_SERPENT</Type>
 			<Special>SPECIALUNIT_SEABEAST</Special>
-			<iMoves>2</iMoves>
 		</UnitInfo>
 		<UnitInfo>        <!-- Nuckelavee -->
 			<Class>UNITCLASS_NUCKELAVEE</Class>
 			<Type>UNIT_NUCKELAVEE</Type>
             <Special>SPECIALUNIT_SEABEAST</Special>
-			<iMoves>3</iMoves>
 		</UnitInfo>
 		<UnitInfo>        <!-- Bunyip -->
 			<Class>UNITCLASS_BUNYIP</Class>
 			<Type>UNIT_BUNYIP</Type>
             <Special>SPECIALUNIT_SEABEAST</Special>
-			<iMoves>2</iMoves>
 		</UnitInfo>
 		<UnitInfo>        <!-- Kraken -->
 			<Class>UNITCLASS_KRAKEN</Class>
 			<Type>UNIT_KRAKEN</Type>
             <Special>SPECIALUNIT_SEABEAST</Special>
 			<iExtraPerception>3</iExtraPerception>
-			<iMoves>2</iMoves>
 		</UnitInfo>
 		<UnitInfo>        <!-- Sea Drake -->
 			<Class>UNITCLASS_SEA_DRAKE</Class>
 			<Type>UNIT_SEA_DRAKE</Type>
             <Special>SPECIALUNIT_SEABEAST</Special>
-			<iMoves>3</iMoves>
 		</UnitInfo>
 		<UnitInfo>        <!-- Leviathan -->
 			<Class>UNITCLASS_LEVIATHAN</Class>
 			<Type>UNIT_LEVIATHAN</Type>
             <Special>SPECIALUNIT_SEABEAST</Special>
-			<iMoves>2</iMoves>
 		</UnitInfo>
 		<UnitInfo>        <!-- Bleeding God -->
 			<Class>UNITCLASS_BLEEDING_GOD</Class>
 			<Type>UNIT_BLEEDING_GOD</Type>
             <Special>SPECIALUNIT_SEABEAST</Special>
-			<iMoves>2</iMoves>
 		</UnitInfo>
 		<UnitInfo>        <!-- Otoloch -->
 			<Class>UNITCLASS_OTOLOCH</Class>
 			<Type>UNIT_OTOLOCH</Type>
             <Special>SPECIALUNIT_SEABEAST</Special>
-			<iMoves>2</iMoves>
 		</UnitInfo>	
 		<UnitInfo>        <!-- Otoloch Queen -->
 			<Class>UNITCLASS_OTOLOCH_QUEEN</Class>
 			<Type>UNIT_OTOLOCH_QUEEN</Type>
             <Special>SPECIALUNIT_SEABEAST</Special>
-			<iMoves>2</iMoves>
 		</UnitInfo>
 		<UnitInfo>        <!-- Scaled Dragon-->
 			<Class>UNITCLASS_SCALED_DRAGON</Class>
@@ -1496,7 +1486,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<iMoves>2</iMoves>
+			<iMoves>3</iMoves>
 			<iCombat>7</iCombat>
 			<TerrainNatives>
 				<TerrainNative>
@@ -1572,18 +1562,17 @@
 			<iCombat>2</iCombat>
 			<iAirCombat>5</iAirCombat>
 			<iAirCombatLimit>50</iAirCombatLimit>
-			<FreePromotions>
+			<!--<FreePromotions>
 				<FreePromotion>
 					<PromotionType>PROMOTION_LEASH_4</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
-			</FreePromotions>
+			</FreePromotions>-->
 		</UnitInfo>
 		<UnitInfo>        <!-- Galley -->            
 			<Class>UNITCLASS_GALLEY</Class>
 			<Type>UNIT_GALLEY</Type>
 			<PrereqTech>TECH_FISHING</PrereqTech>
-			<iMoves>2</iMoves>
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
@@ -1606,7 +1595,6 @@
 			<TechTypes>
 				<PrereqTech>TECH_CRAFTING</PrereqTech>
 			</TechTypes>
-			<iMoves>2</iMoves>
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
@@ -1625,7 +1613,6 @@
 		<UnitInfo>        <!-- Galleon -->
 			<Class>UNITCLASS_GALLEON</Class>
 			<Type>UNIT_GALLEON</Type>
-			<iMoves>2</iMoves>
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
@@ -1644,7 +1631,6 @@
 		<UnitInfo>        <!-- Caravel -->
 			<Class>UNITCLASS_CARAVEL</Class>
 			<Type>UNIT_CARAVEL</Type>
-			<iMoves>3</iMoves>
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
@@ -1663,7 +1649,6 @@
 		<UnitInfo>        <!-- Sailor's Dirge -->
 			<Class>UNITCLASS_SAILORS_DIRGE</Class>
 			<Type>UNIT_SAILORS_DIRGE</Type>
-			<iMoves>3</iMoves>
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
@@ -1682,7 +1667,6 @@
 		<UnitInfo>        <!-- The Black Wind -->
 			<Class>UNITCLASS_BLACK_WIND</Class>
 			<Type>UNIT_BLACK_WIND</Type>
-			<iMoves>3</iMoves>
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
@@ -1701,7 +1685,6 @@
 		<UnitInfo>        <!-- Ironclad -->
 			<Class>UNITCLASS_MAN_O_WAR</Class>
 			<Type>UNIT_IRONCLAD</Type>
-			<iMoves>2</iMoves>
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
@@ -1720,7 +1703,6 @@
 		<UnitInfo>        <!-- Pirate -->
 			<Class>UNITCLASS_PRIVATEER</Class>
 			<Type>UNIT_PIRATE</Type>
-			<iMoves>2</iMoves>
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
@@ -1745,7 +1727,6 @@
 		<UnitInfo>        <!-- Privateer -->
 			<Class>UNITCLASS_PRIVATEER</Class>
 			<Type>UNIT_PRIVATEER</Type>
-			<iMoves>2</iMoves>
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
@@ -1770,7 +1751,6 @@
 		<UnitInfo>        <!-- Carrack -->
 			<Class>UNITCLASS_CARRACK</Class>
 			<Type>UNIT_CARRACK</Type>
-			<iMoves>2</iMoves>
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
@@ -1789,7 +1769,6 @@
 		<UnitInfo>        <!-- Frigate -->
 			<Class>UNITCLASS_FRIGATE</Class>
 			<Type>UNIT_FRIGATE</Type>
-			<iMoves>2</iMoves>
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
@@ -1808,7 +1787,6 @@
 		<UnitInfo>        <!-- Queen of the Line -->
 			<Class>UNITCLASS_QUEEN_OF_THE_LINE</Class>
 			<Type>UNIT_QUEEN_OF_THE_LINE</Type>
-			<iMoves>2</iMoves>
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
@@ -1827,7 +1805,6 @@
 		<UnitInfo>        <!-- Man O' War -->
 			<Class>UNITCLASS_MAN_O_WAR</Class>
 			<Type>UNIT_MAN_O_WAR</Type>
-			<iMoves>2</iMoves>
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
@@ -1864,7 +1841,6 @@
 		<UnitInfo>        <!-- Arcane Barge -->
 			<Class>UNITCLASS_ARCANE_BARGE</Class>
 			<Type>UNIT_ARCANE_BARGE</Type>
-			<iMoves>2</iMoves>
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
@@ -1894,41 +1870,41 @@
 				</FreePromotion>
 			</FreePromotions>
 		</UnitInfo>
-		<UnitInfo>        <!-- Airship -->                       <!--KURIOTATES-->
+		<!--<UnitInfo>        <!{1}** Airship **{1}>                       <!{1}**KURIOTATES**{1}>
 			<Class>UNITCLASS_QUEEN_OF_THE_LINE</Class>
 			<Type>UNIT_AIRSHIP</Type>
 			<iMoves>3</iMoves>
 		</UnitInfo>
-		<UnitInfo>        <!-- Thopter -->
+		<UnitInfo>        <!{1}** Thopter **{1}>
 			<Class>UNITCLASS_CARAVEL</Class>
 			<Type>UNIT_THOPTER</Type>
 			<iMoves>2</iMoves>
 		</UnitInfo>
-		<UnitInfo>        <!-- Aquilan Thopter -->
+		<UnitInfo>        <!{1}** Aquilan Thopter **{1}>
 			<Class>UNITCLASS_MAN_O_WAR</Class>
 			<Type>UNIT_AQUILAN_THOPTER</Type>
 			<iMoves>3</iMoves>
 		</UnitInfo>
-		<UnitInfo>        <!-- Lenora -->
+		<UnitInfo>        <!{1}** Lenora **{1}>
 			<Class>UNITCLASS_LENORA</Class>
 			<Type>UNIT_LENORA</Type>
 			<iMoves>3</iMoves>
 		</UnitInfo>
-		<UnitInfo>        <!-- Dirigible Fleet -->
+		<UnitInfo>        <!{1}** Dirigible Fleet **{1}>
 			<Class>UNITCLASS_QUEEN_OF_THE_LINE</Class>
 			<Type>UNIT_DIRIGIBLE</Type>
 			<iMoves>3</iMoves>
 		</UnitInfo>
-		<UnitInfo>        <!-- Manticore -->
+		<UnitInfo>        <!{1}** Manticore **{1}>
 			<Class>UNITCLASS_MANTICORE</Class>
 			<Type>UNIT_MANTICORE</Type>
 			<iMoves>3</iMoves>
 		</UnitInfo>
-		<UnitInfo>        <!-- Pegasus -->
+		<UnitInfo>        <!{1}** Pegasus **{1}>
 			<Class>UNITCLASS_PEGASUS</Class>
 			<Type>UNIT_PEGASUS</Type>
 			<iMoves>3</iMoves>
-		</UnitInfo>
+		</UnitInfo>-->
 		<UnitInfo>        <!-- Workboat -->
 			<Class>UNITCLASS_WORKBOAT</Class>
 			<Type>UNIT_WORKBOAT</Type>
@@ -2054,7 +2030,6 @@
 		<UnitInfo>		<!-- Possessed Giant Tortoise - MODULE BALANCE -->
 			<Class>UNITCLASS_AOSNISIRA_POSSESSED_GIANT_TORTOISE</Class>
 			<Type>UNIT_AOSNISIRA_POSSESSED_GIANT_TORTOISE</Type>
-			<iMoves>2</iMoves>
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
@@ -2076,7 +2051,6 @@
 		<UnitInfo>        	<!-- Fae Dragon Rider -->
 			<Class>UNITCLASS_KNIGHT</Class>
 			<Type>UNIT_FAE_DRAGON_RIDER</Type>
-			<iMoves>3</iMoves>
 		     <AndDependencyTypes>
 		        <DependencyType>MODULE_DRACKAOSNISIRA</DependencyType>
 		     </AndDependencyTypes>
@@ -2106,7 +2080,6 @@
 		<UnitInfo>        <!-- Lilypad -->            <!-- NAVAL UNITS -->
 			<Class>UNITCLASS_GALLEY</Class>
 			<Type>UNIT_LILYPAD</Type>
-			<iMoves>2</iMoves>
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
@@ -2128,7 +2101,6 @@
 		<UnitInfo>        <!-- Queen of the Line -->
 			<Class>UNITCLASS_QUEEN_OF_THE_LINE</Class>
 			<Type>UNIT_FLOATING_ISLAND</Type>
-			<iMoves>2</iMoves>
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
@@ -2438,7 +2410,6 @@
 					<bBuild>1</bBuild>
 				</Build>
 			</Builds>
-			<iMoves>2</iMoves>
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
@@ -2474,7 +2445,6 @@
 					<bBuild>1</bBuild>
 				</Build>
 			</Builds>
-			<iMoves>2</iMoves>
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>

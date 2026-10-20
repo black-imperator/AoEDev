@@ -1771,13 +1771,13 @@
 				<Promotion>PROMOTION_DREAMING_AIFON</Promotion>
 			</PromotionAllows>
 		</PromotionInfo>
-		<PromotionInfo>		<!-- Longship -->
+		<!--<PromotionInfo>		<!{1}** Longship **{1}>
 			<Type>PROMOTION_LONGSHIP</Type>
 			<iMovesChange>1</iMovesChange>
 		     <AndDependencyTypes>
 		        <DependencyType>MODULE_JOTNAR</DependencyType>
 		     </AndDependencyTypes>
-		</PromotionInfo>
+		</PromotionInfo>-->
 		<PromotionInfo>		<!-- Buccaneers -->
 			<Type>PROMOTION_BUCCANEERS</Type>
 			<Description>TXT_KEY_PROMOTION_BUCCANEERS</Description>
