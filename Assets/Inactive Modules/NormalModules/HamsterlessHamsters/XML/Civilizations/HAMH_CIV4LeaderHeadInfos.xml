@@ -27,5 +27,12 @@
 			<Image>Art/Modules/Hamstalfar/Popups/TarqPop.dds</Image>
 			<ArtDefineTag>ART_DEF_LEADER_TARQ</ArtDefineTag>
 		</LeaderHeadInfo>
+		<LeaderHeadInfo>
+			<Type>LEADER_HAMSTERBANDIT</Type><!--Raikor, roadside Warlord -->
+			<Description>TXT_KEY_LEADER_HAMSTERBANDIT_NO</Description>
+			<Civilopedia>TXT_KEY_LEADER_HAMSTERBANDIT_NO_PEDIA</Civilopedia>
+			<Image>Art/Modules/Hamstalfar/Leaderheads/AnnaSteinbauerRadha.dds</Image>
+			<ArtDefineTag>ART_DEF_LEADER_HAMSTERBANDIT</ArtDefineTag>
+		</LeaderHeadInfo>
 	</LeaderHeadInfos>
 </Civ4LeaderHeadInfos>

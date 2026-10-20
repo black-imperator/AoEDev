@@ -30,5 +30,13 @@
 			<NoShaderNIF/>
 			<BackgroundKFM/>
 		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_HAMSTERBANDIT</Type>
+			<Button>Art/Modules/Hamstalfar/Buttons/HamsterbanditButton.dds</Button>
+			<NIF>Art/Modules/Hamstalfar/Leaderheads/HamsterBandit.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
 	</LeaderheadArtInfos>
 </Civ4ArtDefines>

@@ -65,5 +65,32 @@
 			<bGraphicalOnly>1</bGraphicalOnly>
 			<Button>Art/Interface/Buttons/Spells/Add to Freak Show.dds</Button>
 		</SpellInfo>
+		<SpellInfo>		<!-- Smugglers Route -->
+			<Type>SPELL_HAMSTER_SMUGGLING</Type>
+			<Description>TXT_KEY_SPELL_HAMSTER_SMUGGLING</Description>
+			<Civilopedia>TXT_KEY_SPELL_HAMSTER_SMUGGLING_PEDIA</Civilopedia>
+			<Help>TXT_KEY_SPELL_HAMSTER_SMUGGLING_HELP</Help>
+			<PromotionPrereq1>PROMOTION_ALFAR</PromotionPrereq1>
+			<CivilizationPrereq>CIVILIZATION_HAMSTALFAR</CivilizationPrereq>
+			<TechPrereq>TECH_CARTOGRAPHY</TechPrereq>
+			<bHasCasted>1</bHasCasted>
+			<bInCityOnly>1</bInCityOnly>
+			<bAbility>1</bAbility>
+			<bAllowAI>1</bAllowAI>
+			<iAIWeight>50</iAIWeight>
+			<iCost>20</iCost>
+			<AdditionalCostFlag>FLAG_HAMSTER_SMUGGLE</AdditionalCostFlag>
+			<iAdditionalCostFlagChange>5</iAdditionalCostFlagChange>
+			<Flag>FLAG_HAMSTER_SMUGGLE</Flag>
+			<iFlagChange>1</iFlagChange>
+			<bGlobalFlagChange>1</bGlobalFlagChange>
+			<iAlignmentModifier>-5</iAlignmentModifier>
+			<PyResult>spellForceCityTrade(pCaster)</PyResult>
+			<PyRequirement>reqForceCityTrade(pCaster)</PyRequirement>
+			<Effect>EFFECT_SPELL1</Effect>
+			<Sound>AS3D_SPELL_FOUND_TEMPLE</Sound>
+			<bGraphicalOnly>0</bGraphicalOnly>
+			<Button>Art/Interface/buttons/techtree/taxation.dds</Button>
+		</SpellInfo>
 	</SpellInfos>
 </Civ4SpellInfos>

@@ -601,4 +601,52 @@ Everything on those parchments was his idea.</Spanish>
 		<Italian>[ICON_BULLET]Summons Celvar, a Gyldbonded Eagle hero.[NEWLINE][ICON_BULLET]Celvar, unlike other Gyldbonded Eagles, is free-roaming. However, he is leashed to his summoner; Choose wisely.</Italian>
 		<Spanish>[ICON_BULLET]Summons Celvar, a Gyldbonded Eagle hero.[NEWLINE][ICON_BULLET]Celvar, unlike other Gyldbonded Eagles, is free-roaming. However, he is leashed to his summoner; Choose wisely.</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_HAMSTERBANDIT_NO</Tag>
+		<English>Raikor, Roadside Warlord</English>
+		<French>Raikor, Roadside Warlord</French>
+		<German>Raikor, Roadside Warlord</German>
+		<Italian>Raikor, Roadside Warlord</Italian>
+		<Spanish>Raikor, Roadside Warlord</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_HAMSTERBANDIT_NO_PEDIA</Tag>
+		<English>The outskirts of the realm are largely out of the merchant families' hands; instead, local warlords are the main form of both policing... and crime, depending on the time of day.   Raikor is an up-and-coming warlord in the southeast districts, with rogues and waylayers flocking to his banner; the merchant families are growing more and more ill at ease.</English>
+		<French>The outskirts of the realm are largely out of the merchant families' hands; instead, local warlords are the main form of both policing... and crime, depending on the time of day.   Raikor is an up-and-coming warlord in the southeast districts, with rogues and waylayers flocking to his banner; the merchant families are growing more and more ill at ease.</French>
+		<German>The outskirts of the realm are largely out of the merchant families' hands; instead, local warlords are the main form of both policing... and crime, depending on the time of day.   Raikor is an up-and-coming warlord in the southeast districts, with rogues and waylayers flocking to his banner; the merchant families are growing more and more ill at ease.</German>
+		<Italian>The outskirts of the realm are largely out of the merchant families' hands; instead, local warlords are the main form of both policing... and crime, depending on the time of day.   Raikor is an up-and-coming warlord in the southeast districts, with rogues and waylayers flocking to his banner; the merchant families are growing more and more ill at ease.</Italian>
+		<Spanish>The outskirts of the realm are largely out of the merchant families' hands; instead, local warlords are the main form of both policing... and crime, depending on the time of day.   Raikor is an up-and-coming warlord in the southeast districts, with rogues and waylayers flocking to his banner; the merchant families are growing more and more ill at ease.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_HAMSTER_SMUGGLING</Tag>
+		<English>Smuggling Route</English>
+		<French>Smuggling Route</French>
+		<German>Smuggling Route</German>
+		<Italian>Smuggling Route</Italian>
+		<Spanish>Smuggling Route</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HAMSTER_SMUGGLE</Tag>
+		<English>Smuggling Route costs</English>
+		<French>Smuggling Route costs</French>
+		<German>Smuggling Route costs</German>
+		<Italian>Smuggling Route costs</Italian>
+		<Spanish>Smuggling Route costs</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_HAMSTER_SMUGGLING_PEDIA</Tag>
+		<English>Smuggling Route</English>
+		<French>Smuggling Route</French>
+		<German>Smuggling Route</German>
+		<Italian>Smuggling Route</Italian>
+		<Spanish>Smuggling Route</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_HAMSTER_SMUGGLING_HELP</Tag>
+		<English>Smuggling Routes force another player into an open borders agreement by paying an amount of gold that increases each time, and lowers your alignment.[NEWLINE][ICON_BULLET]Only castable in other factions cities.</English>
+		<French>Smuggling Routes force another player into an open borders agreement by paying an amount of gold that increases each time, and lowers your alignment.[NEWLINE][ICON_BULLET]Only castable in other factions cities.</French>
+		<German>Smuggling Routes force another player into an open borders agreement by paying an amount of gold that increases each time, and lowers your alignment.[NEWLINE][ICON_BULLET]Only castable in other factions cities.</German>
+		<Italian>Smuggling Routes force another player into an open borders agreement by paying an amount of gold that increases each time, and lowers your alignment.[NEWLINE][ICON_BULLET]Only castable in other factions cities.</Italian>
+		<Spanish>Smuggling Routes force another player into an open borders agreement by paying an amount of gold that increases each time, and lowers your alignment.[NEWLINE][ICON_BULLET]Only castable in other factions cities.</Spanish>
+	</TEXT>
 </Civ4GameText>

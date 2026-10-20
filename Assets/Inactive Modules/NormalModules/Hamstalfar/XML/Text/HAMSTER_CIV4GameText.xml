@@ -492,4 +492,60 @@ Look at it, isn't it beautiful? Lightweight, yet strong enough to stop a blunder
 		<Italian>[ICON_BULLET]Summons Celvar, an Eagle Hunter hero.[NEWLINE][ICON_BULLET]Celvar, unlike other Eagle Hunters, is free-roaming. However, he is leashed to his summoner; Choose wisely.</Italian>
 		<Spanish>[ICON_BULLET]Summons Celvar, an Eagle Hunter hero.[NEWLINE][ICON_BULLET]Celvar, unlike other Eagle Hunters, is free-roaming. However, he is leashed to his summoner; Choose wisely.</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_HAMSTERBANDIT</Tag>
+		<English>Imperator, BaubleHoarder</English>
+		<French>Imperator, BaubleHoarder</French>
+		<German>Imperator, BaubleHoarder</German>
+		<Italian>Imperator, BaubleHoarder</Italian>
+		<Spanish>Imperator, BaubleHoarder</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_HAMSTERBANDIT_PEDIA</Tag>
+		<English>Hamsters, like most rodents, are fond of creating a nest of collected goodies; however, unlike other hamsters, Imperator was uninterested in nuts and wood chips, instead focusing on hoarding as many priceless collectables as possible in their Private Antique Keepsakes.</English>
+		<French>Hamsters, like most rodents, are fond of creating a nest of collected goodies; however, unlike other hamsters, Imperator was uninterested in nuts and wood chips, instead focusing on hoarding as many priceless collectables as possible in their Private Antique Keepsakes.</French>
+		<German>Hamsters, like most rodents, are fond of creating a nest of collected goodies; however, unlike other hamsters, Imperator was uninterested in nuts and wood chips, instead focusing on hoarding as many priceless collectables as possible in their Private Antique Keepsakes.</German>
+		<Italian>Hamsters, like most rodents, are fond of creating a nest of collected goodies; however, unlike other hamsters, Imperator was uninterested in nuts and wood chips, instead focusing on hoarding as many priceless collectables as possible in their Private Antique Keepsakes.</Italian>
+		<Spanish>Hamsters, like most rodents, are fond of creating a nest of collected goodies; however, unlike other hamsters, Imperator was uninterested in nuts and wood chips, instead focusing on hoarding as many priceless collectables as possible in their Private Antique Keepsakes.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_ALL_THAT_GLITTERS</Tag>
+		<English>All That Glitters</English>
+		<French>All That Glitters</French>
+		<German>All That Glitters</German>
+		<Italian>All That Glitters</Italian>
+		<Spanish>All That Glitters</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_ALL_THAT_GLITTERS_PEDIA</Tag>
+		<English>What use have I of tools, scrolls and bread?? Bring me gold! shining, dazzling GOLD!</English>
+		<French>What use have I of tools, scrolls and bread?? Bring me gold! shining, dazzling GOLD!</French>
+		<German>What use have I of tools, scrolls and bread?? Bring me gold! shining, dazzling GOLD!</German>
+		<Italian>What use have I of tools, scrolls and bread?? Bring me gold! shining, dazzling GOLD!</Italian>
+		<Spanish>What use have I of tools, scrolls and bread?? Bring me gold! shining, dazzling GOLD!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_ALL_THAT_GLITTERS_SHORT</Tag>
+		<English>Glitrs</English>
+		<French>Glitrs</French>
+		<German>Glitrs</German>
+		<Italian>Glitrs</Italian>
+		<Spanish>Glitrs</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MERCHANT_ELVES</Tag>
+		<English>Merchant Caravan Elves</English>
+		<French>Merchant Caravan Elves</French>
+		<German>Merchant Caravan Elves</German>
+		<Italian>Merchant Caravan Elves</Italian>
+		<Spanish>Merchant Caravan Elves</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MERCHANT_ELVES_PEDIA</Tag>
+		<English>Trade is a way of life here, and with each new soul born here another business venture begins.</English>
+		<French>Trade is a way of life here, and with each new soul born here another business venture begins.</French>
+		<German>Trade is a way of life here, and with each new soul born here another business venture begins.</German>
+		<Italian>Trade is a way of life here, and with each new soul born here another business venture begins.</Italian>
+		<Spanish>Trade is a way of life here, and with each new soul born here another business venture begins.</Spanish>
+	</TEXT>
 </Civ4GameText>

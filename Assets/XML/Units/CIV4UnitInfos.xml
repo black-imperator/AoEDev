@@ -44970,6 +44970,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_OPTICS</PrereqTech>
 			<PrereqBonuses>
+				<BonusType>BONUS_COPPER</BonusType>
 				<BonusType>BONUS_IRON</BonusType>
 				<BonusType>BONUS_MITHRIL</BonusType>
 			</PrereqBonuses>

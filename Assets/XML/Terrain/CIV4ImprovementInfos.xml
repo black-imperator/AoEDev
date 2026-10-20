@@ -6572,7 +6572,7 @@
 			<Civilopedia>TXT_KEY_IMPROVEMENT_GRAVEYARD_PEDIA</Civilopedia>
 			<ArtDefineTag>ART_DEF_IMPROVEMENT_DTESHI_CRYPT</ArtDefineTag>
 			<bRequiresFlatlands>1</bRequiresFlatlands>
-			<bPermanent>1</bPermanent>
+			<bPermanent>0</bPermanent>
 			<FreeSpecialistClass>SPECIALISTCLASS_CITIZEN</FreeSpecialistClass>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>

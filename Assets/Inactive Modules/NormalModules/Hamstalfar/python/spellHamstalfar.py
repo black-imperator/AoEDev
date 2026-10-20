@@ -99,3 +99,37 @@ def spellCelvarSpawn(pCaster):
 	spawnUnit.setLeashUnit(pCaster)
 	spawnUnit.setLeashRange(4)
 	pPlayer.setCivCounterMod(100)
+	
+def reqForceCityTrade(caster):
+	pPlot = caster.plot()
+	pCity = pPlot.getPlotCity()
+	if pCity.getOwner() == caster.getOwner():
+		return False
+	getTeam	 = gc.getTeam
+	pCity = caster.plot().getPlotCity()
+	iTrader	= pCity.getOwner()
+	pTrader = gc.getPlayer(iTrader)
+	iPlayer = caster.getOwner()
+	pPlayer = gc.getPlayer(iPlayer)
+	iSmuggler	= pPlayer.getTeam()
+	pSmugglerteam 	= getTeam(iSmuggler)
+	iVictim	= pTrader.getTeam()
+	pVictimteam 	= getTeam(iVictim)
+	if pSmugglerteam.isOpenBorders(iVictim):
+		return False
+	return True
+
+
+def spellForceCityTrade(caster):
+	getTeam	 = gc.getTeam
+	pCity = caster.plot().getPlotCity()
+	iTrader	= pCity.getOwner()
+	pTrader = gc.getPlayer(iTrader)
+	iPlayer = caster.getOwner()
+	pPlayer = gc.getPlayer(iPlayer)
+	iSmuggler	= pPlayer.getTeam()
+	pSmugglerteam 	= getTeam(iSmuggler)
+	iVictim	= pTrader.getTeam()
+	pVictimteam 	= getTeam(iVictim)
+	pVictimteam.signOpenBorders(iSmuggler)
+	pSmugglerteam.signOpenBorders(iVictim)
