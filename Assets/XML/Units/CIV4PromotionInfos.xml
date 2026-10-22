@@ -7369,10 +7369,6 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
-					<iMaxApplications>0</iMaxApplications>
-				</UnitCombat>
-				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>

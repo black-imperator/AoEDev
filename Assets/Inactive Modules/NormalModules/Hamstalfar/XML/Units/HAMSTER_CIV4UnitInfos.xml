@@ -195,7 +195,7 @@
 			<iCityAttack>20</iCityAttack>
 			<iAsset>4</iAsset>
 			<DenyPromotions>
-				<PromotionType>PROMOTION_ALFAR</PromotionType>
+				<PromotionType>PROMOTION_TERRIFIED</PromotionType>
 			</DenyPromotions>
 			<UnitMeshGroups>
 				<iGroupSize>6</iGroupSize>
@@ -537,6 +537,11 @@
 			</UnitMeshGroups>
 			<iTier>1</iTier>
 			<iWeaponTierMax>1</iWeaponTierMax>
+			<DenyPromotions>
+				<Promotion>PROMOTION_BRONZE_WEAPONS</Promotion>
+				<Promotion>PROMOTION_IRON_WEAPONS</Promotion>
+				<Promotion>PROMOTION_MITHRIL_WEAPONS</Promotion>
+			</DenyPromotions>
 		</UnitInfo>
 		<UnitInfo>		<!-- Vagabond -->
 			<Class>UNITCLASS_THIEF</Class>
@@ -607,6 +612,11 @@
 			</UnitMeshGroups>
 			<iTier>2</iTier>
 			<iWeaponTierMax>2</iWeaponTierMax>
+			<DenyPromotions>
+				<Promotion>PROMOTION_BRONZE_WEAPONS</Promotion>
+				<Promotion>PROMOTION_IRON_WEAPONS</Promotion>
+				<Promotion>PROMOTION_MITHRIL_WEAPONS</Promotion>
+			</DenyPromotions>
 			<PrereqBuildingClass>BUILDINGCLASS_THIEVES_DEN</PrereqBuildingClass>
 		</UnitInfo>
 		<UnitInfo>        <!-- Waylayer -->
@@ -686,6 +696,11 @@
 			<iCombatDefense>2</iCombatDefense>
 			<iTier>3</iTier>
 			<iWeaponTierMax>3</iWeaponTierMax>
+			<DenyPromotions>
+				<Promotion>PROMOTION_BRONZE_WEAPONS</Promotion>
+				<Promotion>PROMOTION_IRON_WEAPONS</Promotion>
+				<Promotion>PROMOTION_MITHRIL_WEAPONS</Promotion>
+			</DenyPromotions>
 			<PrereqBuildingClass>BUILDINGCLASS_THIEVES_DEN</PrereqBuildingClass>
 		</UnitInfo><!--
 		<UnitInfo>		<!{1}** Waylayer **{1}>
@@ -826,6 +841,11 @@
 			<iCombatDefense>3</iCombatDefense>
 			<iTier>4</iTier>
 			<iWeaponTierMax>3</iWeaponTierMax>
+			<DenyPromotions>
+				<Promotion>PROMOTION_BRONZE_WEAPONS</Promotion>
+				<Promotion>PROMOTION_IRON_WEAPONS</Promotion>
+				<Promotion>PROMOTION_MITHRIL_WEAPONS</Promotion>
+			</DenyPromotions>
 		</UnitInfo>
 		<!--<UnitInfo>		<!{1}** Guardian of the Compact **{1}>
 			<Class>UNITCLASS_BEASTMASTER</Class>
