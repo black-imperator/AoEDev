@@ -78,9 +78,9 @@
 			<bAbility>1</bAbility>
 			<bAllowAI>1</bAllowAI>
 			<iAIWeight>50</iAIWeight>
-			<iCost>20</iCost>
+			<iCost>50</iCost>
 			<AdditionalCostFlag>FLAG_HAMSTER_SMUGGLE</AdditionalCostFlag>
-			<iAdditionalCostFlagChange>5</iAdditionalCostFlagChange>
+			<iAdditionalCostFlagChange>10</iAdditionalCostFlagChange>
 			<Flag>FLAG_HAMSTER_SMUGGLE</Flag>
 			<iFlagChange>1</iFlagChange>
 			<bGlobalFlagChange>1</bGlobalFlagChange>

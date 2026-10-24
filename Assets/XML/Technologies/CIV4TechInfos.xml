@@ -3413,11 +3413,9 @@
 					<iFlavor>20</iFlavor>
 				</Flavor>
 			</Flavors>
-			<OrPreReqs>
-				<PrereqTech>TECH_HUNTING</PrereqTech>
-			</OrPreReqs>
 			<AndPreReqs>
 				<PrereqTech>TECH_MYSTICISM</PrereqTech>
+				<PrereqTech>TECH_HUNTING</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_WAY_OF_THE_FORESTS_QUOTE</Quote>
 			<Sound>AS2D_TECH_DING</Sound>

@@ -61,13 +61,13 @@
 			<Help/>
 			<TradeYieldModifiers>
 				<iYield>0</iYield>
-				<iYield>-50</iYield>
+				<iYield>-100</iYield>
 				<iYield>0</iYield>
 			</TradeYieldModifiers>
 			<TradeCommerceModifiers>
 				<iCommerce>100</iCommerce>
-				<iCommerce>-50</iCommerce>
-				<iCommerce>0</iCommerce>
+				<iCommerce>-100</iCommerce>
+				<iCommerce>100</iCommerce>
 			</TradeCommerceModifiers>
 			<PeaceCommerceModifiers>
 				<iCommerce>0</iCommerce>
