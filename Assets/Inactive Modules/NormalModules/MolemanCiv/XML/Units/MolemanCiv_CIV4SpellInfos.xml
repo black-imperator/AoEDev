@@ -64,5 +64,25 @@
 			<bGraphicalOnly>1</bGraphicalOnly>
 			<Button>Art/Interface/Buttons/Spells/Add to Freak Show.dds</Button>
 		</SpellInfo>
+		<SpellInfo>
+			<!-- Worldspell -->
+			<Type>SPELL_MOLEMAN_EARTHQUAKE</Type>
+			<Description>TXT_KEY_SPELL_MOLEMAN_EARTHQUAKE</Description>
+			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
+			<Help>TXT_KEY_SPELL_MOLEMAN_EARTHQUAKE_HELP</Help>
+			<CivilizationPrereq>CIVILIZATION_MOLEMEN</CivilizationPrereq>
+			<bCityAction>1</bCityAction>
+			<TechPrereq>TECH_ENGINEERING</TechPrereq>
+			<bAllowAI>1</bAllowAI>
+			<bGlobal>1</bGlobal>
+			<Quote>TEXT_MUST_BE_WRITTEN</Quote>
+			<iAIWeight>300</iAIWeight>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<PyResult>spellMolemanEarthquake(pCaster)</PyResult>
+			<PyRequirement>reqMolemanEarthquake(pCaster)</PyRequirement>
+			<Effect>EFFECT_SPELL2</Effect>
+			<Sound>AS3D_SPELL_EARTHQUAKE</Sound>
+			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/Spells/seismicjolt.dds</Button>
+		</SpellInfo>
 	</SpellInfos>
 </Civ4SpellInfos>

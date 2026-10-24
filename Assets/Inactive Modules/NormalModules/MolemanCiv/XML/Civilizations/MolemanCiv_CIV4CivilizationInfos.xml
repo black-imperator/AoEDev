@@ -173,7 +173,7 @@
 			</FreeBuildingClasses>
 			<FreeTechs>
 				<FreeTech>
-					<TechType>TECH_MINING</TechType>
+					<TechType>TECH_CRAFTING</TechType>
 					<bFreeTech>1</bFreeTech>
 				</FreeTech>
 				<FreeTech>
@@ -212,7 +212,7 @@
 			<CivilizationActionSound>AS3D_GREECE_ORDER</CivilizationActionSound>
 			<bGraphicalOnly>0</bGraphicalOnly>
 			<FavoriteWonder>BUILDING_GUILD_OF_HAMMERS</FavoriteWonder>
-			<Hero>UNIT_MOLEMAN_MORBECHK</Hero>
+			<Hero>UNIT_MOLEMAN_MONDRINTH</Hero>
 			<MaintainFeatures>
 			</MaintainFeatures>
 			<Image>Modules/NormalModules/MolemanCiv/Art/Interface/Popups/Civ/MolemanCivBanner.dds</Image>

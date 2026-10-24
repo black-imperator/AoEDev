@@ -343,6 +343,7 @@
 			<bAmphib>1</bAmphib>
 			<bRiver>1</bRiver>
 			<bWaterWalking>1</bWaterWalking>
+			<iWorkRateModify>-25</iWorkRateModify>
 			<TerrainAttacks>
 				<TerrainAttack>
 					<TerrainType>TERRAIN_MARSH</TerrainType>
@@ -382,10 +383,6 @@
 			<TerrainMoveCosts>
 				<TerrainMoveCost>
 					<TerrainType>TERRAIN_MARSH</TerrainType>
-					<iTerrainMoveCost>-1</iTerrainMoveCost>
-				</TerrainMoveCost>
-				<TerrainMoveCost>
-					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
 					<iTerrainMoveCost>-1</iTerrainMoveCost>
 				</TerrainMoveCost>
 				<TerrainMoveCost>
@@ -1153,6 +1150,7 @@
 			<bAmphib>1</bAmphib>
 			<bRiver>1</bRiver>
 		    <bWaterWalking>1</bWaterWalking>
+			<iWorkRateModify>-25</iWorkRateModify>
 			<DamageTypeResists>
 				<DamageTypeResist>
 					<DamageType>DAMAGE_UNHOLY</DamageType>
@@ -1177,47 +1175,133 @@
 			<TerrainAttacks>
 				<TerrainAttack>
 					<TerrainType>TERRAIN_COAST</TerrainType>
-					<iTerrainAttack>50</iTerrainAttack>
+					<iTerrainAttack>35</iTerrainAttack>
 				</TerrainAttack>
 				<TerrainAttack>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
-					<iTerrainAttack>50</iTerrainAttack>
+					<iTerrainAttack>35</iTerrainAttack>
 				</TerrainAttack>
 				<TerrainAttack>
 					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
-					<iTerrainAttack>50</iTerrainAttack>
+					<iTerrainAttack>35</iTerrainAttack>
 				</TerrainAttack>
 				<TerrainAttack>
 					<TerrainType>TERRAIN_BLIGHTED_COAST</TerrainType>
-					<iTerrainAttack>50</iTerrainAttack>
+					<iTerrainAttack>35</iTerrainAttack>
 				</TerrainAttack>
 				<TerrainAttack>
 					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
-					<iTerrainAttack>50</iTerrainAttack>
+					<iTerrainAttack>35</iTerrainAttack>
+				</TerrainAttack>
+				<TerrainAttack>
+					<TerrainType>TERRAIN_DESERT</TerrainType>
+					<iTerrainAttack>-15</iTerrainAttack>
+				</TerrainAttack>
+				<TerrainAttack>
+					<TerrainType>TERRAIN_GRASS</TerrainType>
+					<iTerrainAttack>-15</iTerrainAttack>
+				</TerrainAttack>
+				<TerrainAttack>
+					<TerrainType>TERRAIN_PLAINS</TerrainType>
+					<iTerrainAttack>-15</iTerrainAttack>
+				</TerrainAttack>
+				<TerrainAttack>
+					<TerrainType>TERRAIN_TAIGA</TerrainType>
+					<iTerrainAttack>-15</iTerrainAttack>
+				</TerrainAttack>
+				<TerrainAttack>
+					<TerrainType>TERRAIN_TUNDRA</TerrainType>
+					<iTerrainAttack>-15</iTerrainAttack>
+				</TerrainAttack>
+				<TerrainAttack>
+					<TerrainType>TERRAIN_BURNING_SANDS</TerrainType>
+					<iTerrainAttack>-15</iTerrainAttack>
+				</TerrainAttack>
+				<TerrainAttack>
+					<TerrainType>TERRAIN_BROKEN_LANDS</TerrainType>
+					<iTerrainAttack>-15</iTerrainAttack>
+				</TerrainAttack>
+				<TerrainAttack>
+					<TerrainType>TERRAIN_FIELDS_OF_PERDITION</TerrainType>
+					<iTerrainAttack>-15</iTerrainAttack>
+				</TerrainAttack>
+				<TerrainAttack>
+					<TerrainType>TERRAIN_GLACIER</TerrainType>
+					<iTerrainAttack>-15</iTerrainAttack>
 				</TerrainAttack>
 			</TerrainAttacks>
 			<TerrainDefenses>
 				<TerrainDefense>
 					<TerrainType>TERRAIN_COAST</TerrainType>
-					<iTerrainDefense>50</iTerrainDefense>
+					<iTerrainDefense>35</iTerrainDefense>
 				</TerrainDefense>
 				<TerrainDefense>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
-					<iTerrainDefense>50</iTerrainDefense>
+					<iTerrainDefense>35</iTerrainDefense>
 				</TerrainDefense>
 				<TerrainDefense>
 					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
-					<iTerrainDefense>50</iTerrainDefense>
+					<iTerrainDefense>35</iTerrainDefense>
 				</TerrainDefense>
 				<TerrainDefense>
 					<TerrainType>TERRAIN_BLIGHTED_COAST</TerrainType>
-					<iTerrainDefense>50</iTerrainDefense>
+					<iTerrainDefense>35</iTerrainDefense>
 				</TerrainDefense>
 				<TerrainDefense>
 					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
-					<iTerrainDefense>50</iTerrainDefense>
+					<iTerrainDefense>35</iTerrainDefense>
+				</TerrainDefense>
+				<TerrainDefense>
+					<TerrainType>TERRAIN_DESERT</TerrainType>
+					<iTerrainDefense>-15</iTerrainDefense>
+				</TerrainDefense>
+				<TerrainDefense>
+					<TerrainType>TERRAIN_GRASS</TerrainType>
+					<iTerrainDefense>-15</iTerrainDefense>
+				</TerrainDefense>
+				<TerrainDefense>
+					<TerrainType>TERRAIN_PLAINS</TerrainType>
+					<iTerrainDefense>-15</iTerrainDefense>
+				</TerrainDefense>
+				<TerrainDefense>
+					<TerrainType>TERRAIN_TAIGA</TerrainType>
+					<iTerrainDefense>-15</iTerrainDefense>
+				</TerrainDefense>
+				<TerrainDefense>
+					<TerrainType>TERRAIN_TUNDRA</TerrainType>
+					<iTerrainDefense>-15</iTerrainDefense>
+				</TerrainDefense>
+				<TerrainDefense>
+					<TerrainType>TERRAIN_GLACIER</TerrainType>
+					<iTerrainDefense>-15</iTerrainDefense>
+				</TerrainDefense>
+				<TerrainDefense>
+					<TerrainType>TERRAIN_FIELDS_OF_PERDITION</TerrainType>
+					<iTerrainDefense>-15</iTerrainDefense>
+				</TerrainDefense>
+				<TerrainDefense>
+					<TerrainType>TERRAIN_BROKEN_LANDS</TerrainType>
+					<iTerrainDefense>-15</iTerrainDefense>
 				</TerrainDefense>
 			</TerrainDefenses>
+			<TerrainMoveCosts>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<iTerrainMoveCost>-2</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
+					<iTerrainMoveCost>-2</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_BLIGHTED_COAST</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+			</TerrainMoveCosts>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
@@ -1687,13 +1771,13 @@
 				<Promotion>PROMOTION_DREAMING_AIFON</Promotion>
 			</PromotionAllows>
 		</PromotionInfo>
-		<PromotionInfo>		<!-- Longship -->
+		<!--<PromotionInfo>		<!{1}** Longship **{1}>
 			<Type>PROMOTION_LONGSHIP</Type>
 			<iMovesChange>1</iMovesChange>
 		     <AndDependencyTypes>
 		        <DependencyType>MODULE_JOTNAR</DependencyType>
 		     </AndDependencyTypes>
-		</PromotionInfo>
+		</PromotionInfo>-->
 		<PromotionInfo>		<!-- Buccaneers -->
 			<Type>PROMOTION_BUCCANEERS</Type>
 			<Description>TXT_KEY_PROMOTION_BUCCANEERS</Description>

@@ -27,11 +27,10 @@ Tikumara
 ;Short description - text showed in contect menu
 ;note: one line
 [shortdesc]
-Returns movement to default for ViciousSeas
+Slows down ship and sea animal movement in ViciousSeas
 ;
 ;
 ;Description - text showed in message box
 ;note: can be multiline
 [desc]
-Reverts the changes ViciousSeas made to movement and ocean type movement bonuses for water units, animals, and thopters.
-Ship Crew and tech vision range remain the same as ViciousSeas.
+Slows down ship and sea animal movement in ViciousSeas

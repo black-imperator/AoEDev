@@ -8,7 +8,7 @@
 	<PromotionInfos>
 		<PromotionInfo>		<!-- Longship -->
 			<Type>PROMOTION_LONGSHIP</Type>
-			<iMovesChange>2</iMovesChange>
+			<iMovesChange>1</iMovesChange>
 		     <AndDependencyTypes>
 		        <DependencyType>MODULE_JOTNAR</DependencyType>
 		     </AndDependencyTypes>

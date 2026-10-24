@@ -555,19 +555,19 @@
 			<DiplomacyMusicPeace>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_ANCIENT</EraType>
-					<DiploScriptId>AS2D_DIPLO_ILLIANS</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_MOLEMAN</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_CLASSICAL</EraType>
-					<DiploScriptId>AS2D_DIPLO_ILLIANS</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_MOLEMAN</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_MEDIEVAL</EraType>
-					<DiploScriptId>AS2D_DIPLO_ILLIANS</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_MOLEMAN</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_END</EraType>
-					<DiploScriptId>AS2D_DIPLO_ILLIANS</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_MOLEMAN</DiploScriptId>
 				</DiploMusicPeaceEra>
 			</DiplomacyMusicPeace>
 			<DiplomacyIntroMusicWar>
@@ -587,19 +587,19 @@
 			<DiplomacyMusicWar>
 				<DiploMusicWarEra>
 					<EraType>ERA_ANCIENT</EraType>
-					<DiploScriptId>AS2D_DIPLO_ILLIANS</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_MOLEMAN</DiploScriptId>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
 					<EraType>ERA_CLASSICAL</EraType>
-					<DiploScriptId>AS2D_DIPLO_ILLIANS</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_MOLEMAN</DiploScriptId>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
 					<EraType>ERA_MEDIEVAL</EraType>
-					<DiploScriptId>AS2D_DIPLO_ILLIANS</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_MOLEMAN</DiploScriptId>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
 					<EraType>ERA_END</EraType>
-					<DiploScriptId>AS2D_DIPLO_ILLIANS</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_MOLEMAN</DiploScriptId>
 				</DiploMusicWarEra>
 			</DiplomacyMusicWar>
 			<ReligionWeightModifiers>
@@ -1190,19 +1190,19 @@
 			<DiplomacyMusicPeace>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_ANCIENT</EraType>
-					<DiploScriptId>AS2D_DIPLO_ILLIANS</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_MOLEMAN</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_CLASSICAL</EraType>
-					<DiploScriptId>AS2D_DIPLO_ILLIANS</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_MOLEMAN</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_MEDIEVAL</EraType>
-					<DiploScriptId>AS2D_DIPLO_ILLIANS</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_MOLEMAN</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_END</EraType>
-					<DiploScriptId>AS2D_DIPLO_ILLIANS</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_MOLEMAN</DiploScriptId>
 				</DiploMusicPeaceEra>
 			</DiplomacyMusicPeace>
 			<DiplomacyIntroMusicWar>
@@ -1222,19 +1222,19 @@
 			<DiplomacyMusicWar>
 				<DiploMusicWarEra>
 					<EraType>ERA_ANCIENT</EraType>
-					<DiploScriptId>AS2D_DIPLO_ILLIANS</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_MOLEMAN</DiploScriptId>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
 					<EraType>ERA_CLASSICAL</EraType>
-					<DiploScriptId>AS2D_DIPLO_ILLIANS</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_MOLEMAN</DiploScriptId>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
 					<EraType>ERA_MEDIEVAL</EraType>
-					<DiploScriptId>AS2D_DIPLO_ILLIANS</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_MOLEMAN</DiploScriptId>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
 					<EraType>ERA_END</EraType>
-					<DiploScriptId>AS2D_DIPLO_ILLIANS</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_MOLEMAN</DiploScriptId>
 				</DiploMusicWarEra>
 			</DiplomacyMusicWar>
 			<ReligionWeightModifiers>

@@ -8,7 +8,7 @@ Moleman Civ
 ;Note: it have to be number, so only numberic characters and none or one period
 ;note: one line
 [version]
-0.2
+0.3
 ;
 ;
 ;RifE version - version of RifE for which is this module tested, checked, developed, etc
@@ -34,7 +34,17 @@ Adds the Kusekh, a moleman civilization
 ;note: can be multiline
 [desc]
 
-Adds the molemen, chimeric experiments from the Age of Magic that escaped their creators and hid underground until the Age of Rebirth.
+Adds the molemen, chimeric experiments from the Age of Magic that escaped their creators and hid underground until the Age of Rebirth. Their units are slow, but they make up for it with improvements and promotions that allow them to immediately burrow to other locations.
+
+Theme music is Amber Banneret (with Skeleton Mage) by Spellseer (used with their permission)
+
+V0.3
+- Added XML code for theme music (Amber Banneret (with Skeleton Mage) by Spellseer). A huge thank you to Spellseer and Skeleton Mage for giving me permission to use their music for this mod!
+- Added moleman unit models for Great People
+- Added the world spell Seismic Jolt for the Molemen, which is like Raging Seas but on land and only within Kusekh territory
+- The Kusekh now start with Crafting instead of Mining (For some reason I thought the dwarves started with Mining and didn't check until now)
+- Toned down livestock affinity so it only give +0.2 attack instead of +0.5
+- Increased build costs of Giant Moles, Burrowers, and Excavators
 
 V0.2
 - Added the Burrowguard UU as a slightly weaker replacement for the Fort Commander based on feedback

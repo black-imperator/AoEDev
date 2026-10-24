@@ -23,9 +23,9 @@
 			<BackgroundKFM/>
 		</LeaderheadArtInfo>
 		<LeaderheadArtInfo>
-			<Type>ART_DEF_LEADER_TARQ</Type>
-			<Button>Art/Modules/Hamstalfar/Buttons/TarqButton.dds</Button>
-			<NIF>Art/Modules/Hamstalfar/Leaderheads/Tarquelne.dds</NIF>
+			<Type>ART_DEF_LEADER_HAMSTERBANDIT</Type>
+			<Button>Art/Modules/Hamstalfar/Buttons/AnnaSteinbauerButton.dds</Button>
+			<NIF>Art/Modules/Hamstalfar/Leaderheads/AnnaSteinbauerRadha.dds</NIF>
 			<KFM/>
 			<NoShaderNIF/>
 			<BackgroundKFM/>

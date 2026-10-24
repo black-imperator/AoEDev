@@ -4049,6 +4049,7 @@
 			<bUnique>1</bUnique>
 			<bBad>1</bBad>
 			<PythonCallback>exploreLairSeedDragon(pUnit,pPlot)</PythonCallback>
+			<PrereqEra>ERA_CLASSICAL</PrereqEra>
 		</GoodyInfo>
 		<GoodyInfo> <!--FangDragon		Unique-->
 			<Type>GOODY_EXPLORE_LAIR_FANGDRAGON</Type>
@@ -4065,6 +4066,7 @@
 			<bUnique>1</bUnique>
 			<bBad>1</bBad>
 			<PythonCallback>exploreLairFangDragon(pUnit,pPlot)</PythonCallback>
+			<PrereqEra>ERA_CLASSICAL</PrereqEra>
 		</GoodyInfo>
 		<GoodyInfo> <!--BloodDragon		Unique-->
 			<Type>GOODY_EXPLORE_LAIR_BLOODDRAGON</Type>
@@ -4081,6 +4083,7 @@
 			<bUnique>1</bUnique>
 			<bBad>1</bBad>
 			<PythonCallback>exploreLairBloodDragon(pUnit,pPlot)</PythonCallback>
+			<PrereqEra>ERA_CLASSICAL</PrereqEra>
 		</GoodyInfo>
 		<GoodyInfo> <!--Dracolich		Unique-->
 			<Type>GOODY_EXPLORE_LAIR_DRACOLICH</Type>
@@ -4097,6 +4100,7 @@
 			<bUnique>1</bUnique>
 			<bBad>1</bBad>
 			<PythonCallback>exploreLairDracoLich(pUnit,pPlot)</PythonCallback>
+			<PrereqEra>ERA_CLASSICAL</PrereqEra>
 		</GoodyInfo>
 		<GoodyInfo> <!--PitDragon		Unique-->
 			<Type>GOODY_EXPLORE_LAIR_PITDRAGON</Type>
@@ -4113,6 +4117,7 @@
 			<bUnique>1</bUnique>
 			<bBad>1</bBad>
 			<PythonCallback>exploreLairPitDragon(pUnit,pPlot)</PythonCallback>
+			<PrereqEra>ERA_CLASSICAL</PrereqEra>
 		</GoodyInfo>
 		<GoodyInfo> <!--ShimmeringDragon		Unique-->
 			<Type>GOODY_EXPLORE_LAIR_SHIMMERINGDRAGON</Type>
@@ -4130,6 +4135,7 @@
 			<bBad>0</bBad>
 			<PrereqAlignment>ALIGNMENT_GOOD</PrereqAlignment>
 			<PythonCallback>exploreLairShimmeringDragon(pUnit,pPlot)</PythonCallback>
+			<PrereqEra>ERA_CLASSICAL</PrereqEra>
 		</GoodyInfo>
 		<GoodyInfo> <!--ShimmeringDragon bad		Unique-->
 			<Type>GOODY_EXPLORE_LAIR_SHIMMERINGDRAGON_BAD</Type>
@@ -4147,6 +4153,7 @@
 			<bBad>1</bBad>
 			<PrereqAlignment>ALIGNMENT_EVIL</PrereqAlignment>
 			<PythonCallback>exploreLairShimmeringDragonbad(pUnit,pPlot)</PythonCallback>
+			<PrereqEra>ERA_CLASSICAL</PrereqEra>
 		</GoodyInfo>
 		<GoodyInfo> <!--Elven Aeron-->
 			<Type>GOODY_EXPLORE_LAIR_ELVEN_AERON</Type>

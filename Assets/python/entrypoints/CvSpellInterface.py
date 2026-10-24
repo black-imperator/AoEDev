@@ -8083,6 +8083,7 @@ def spellVitalize(caster,bInsideBorders=True):
 	desert = getInfoType( 'TERRAIN_DESERT' )
 	floodPlains = getInfoType('FEATURE_FLOOD_PLAINS')
 	ice = getInfoType('FEATURE_ICE')
+	Void = getInfoType('FEATURE_NON_PLANAR')
 	pPlayer = gc.getPlayer( caster.getOwner() )
 	iRange = 1 + caster.getSpellExtraRange()
 	vitalizeUpgrades = civSpecificVitalize.get( pPlayer.getCivilizationType(), baseVitalizeUpgrades )
@@ -8099,6 +8100,8 @@ def spellVitalize(caster,bInsideBorders=True):
 			if pPlot.getTerrainType() == grass and pPlot.isHills() and pPlot.isCity():
 				pPlot.setTerrainType( plains, True, True )
 			if pPlot.isWater() and pPlot.getFeatureType() == ice:
+				pPlot.setFeatureType(-1, -1)
+			if pPlot.getFeatureType() == Void:
 				pPlot.setFeatureType(-1, -1)
 			if terrain == getInfoType('TERRAIN_DESERT') and pPlot.isRiver() and pPlot.isFlatlands() and not pPlot.isCity() and pPlot.getFeatureType()==-1:
 				pPlot.setFeatureType(floodPlains,1)

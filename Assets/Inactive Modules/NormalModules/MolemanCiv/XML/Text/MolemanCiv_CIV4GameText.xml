@@ -388,7 +388,7 @@
 		<Spanish>Earthsense</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>PROMOTION_MOLEMAN_MOLERUN_PERCEPTION_EFFECT</Tag>
+		<Tag>TXT_KEY_PROMOTION_MOLEMAN_MOLERUN_PERCEPTION_EFFECT</Tag>
 		<English>Active - Earthsense</English>
 		<French>Active - Earthsense</French>
 		<German>Active - Earthsense</German>
@@ -1039,5 +1039,21 @@
 		<German>[ICON_BULLET]Regains 25% Health when pillaging Farms and Pastures (75% if within the owner's territory)</German>
 		<Italian>[ICON_BULLET]Regains 25% Health when pillaging Farms and Pastures (75% if within the owner's territory)</Italian>
 		<Spanish>[ICON_BULLET]Regains 25% Health when pillaging Farms and Pastures (75% if within the owner's territory)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_MOLEMAN_EARTHQUAKE</Tag>
+		<English>Seismic Jolt</English>
+		<French>Seismic Jolt</French>
+		<German>Seismic Jolt</German>
+		<Italian>Seismic Jolt</Italian>
+		<Spanish>Seismic Jolt</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_MOLEMAN_EARTHQUAKE_HELP</Tag>
+		<English>[ICON_BULLET]Deals physical damage to all non-Kusekh land units within Kusekh territory</English>
+		<French>[ICON_BULLET]Deals physical damage to all non-Kusekh land units within Kusekh territory</French>
+		<German>[ICON_BULLET]Deals physical damage to all non-Kusekh land units within Kusekh territory</German>
+		<Italian>[ICON_BULLET]Deals physical damage to all non-Kusekh land units within Kusekh territory</Italian>
+		<Spanish>[ICON_BULLET]Deals physical damage to all non-Kusekh land units within Kusekh territory</Spanish>
 	</TEXT>
 </Civ4GameText>

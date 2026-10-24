@@ -52,5 +52,26 @@
 				<iCommerce>0</iCommerce>
 			</PeaceCommerceModifiers>
 		</TraitInfo>
+		<TraitInfo>		<!-- All That Glitters -->
+			<Type>TRAIT_ALL_THAT_GLITTERS</Type>
+			<TraitClass>TRAITCLASS_PERSONALITY</TraitClass>
+			<Description>TXT_KEY_TRAIT_ALL_THAT_GLITTERS</Description>
+			<Civilopedia>TXT_KEY_TRAIT_ALL_THAT_GLITTERS_PEDIA</Civilopedia>
+			<ShortDescription>TXT_KEY_TRAIT_ALL_THAT_GLITTERS_SHORT</ShortDescription>
+			<Help/>
+			<TradeYieldModifiers>
+				<iYield>0</iYield>
+				<iYield>-100</iYield>
+				<iYield>0</iYield>
+			</TradeYieldModifiers>
+			<TradeCommerceModifiers>
+				<iCommerce>100</iCommerce>
+				<iCommerce>-100</iCommerce>
+				<iCommerce>100</iCommerce>
+			</TradeCommerceModifiers>
+			<PeaceCommerceModifiers>
+				<iCommerce>0</iCommerce>
+			</PeaceCommerceModifiers>
+		</TraitInfo>
 	</TraitInfos>
 </Civ4TraitInfos>

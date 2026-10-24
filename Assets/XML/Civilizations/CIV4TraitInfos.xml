@@ -645,6 +645,7 @@
 			<Civilopedia>TXT_KEY_TRAIT_AGNOSTIC_PEDIA</Civilopedia>
 			<ShortDescription>TXT_KEY_TRAIT_AGNOSTIC_SHORT</ShortDescription>
 			<bAgnostic>1</bAgnostic>
+			<iGreatPeopleRateModifier>-50</iGreatPeopleRateModifier>
 		</TraitInfo>
 		<TraitInfo>		<!-- Cold Blooded - Cualli -->
 			<Type>TRAIT_COLD_BLOODED</Type>

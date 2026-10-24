@@ -12,6 +12,7 @@
 			<ShortDescription>TXT_KEY_CIV_HAMSTER_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_HAMSTER_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_HAMSTER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIV_HAMSTER_STRATEGY</Strategy>
 			<DefaultPlayerColor>PLAYERCOLOR_HAMSTER</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_HAMSTALFAR</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_WILDERNESS</ArtStyleType>
@@ -70,6 +71,10 @@
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_MERCHANT_ELVES</BuildingClassType>
 					<BuildingType>BUILDING_MERCHANT_ELVES</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_CITY_OF_A_THOUSAND_SLUMS</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
 				</Building>
 			</Buildings>
 			<Units>
@@ -163,6 +168,10 @@
 				</Leader>
 				<Leader>
 					<LeaderName>LEADER_TARQ</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
+				<Leader>
+					<LeaderName>LEADER_HAMSTERBANDIT</LeaderName>
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
 			</Leaders>
