@@ -1091,6 +1091,9 @@
 			<iCollateralDamageMaxUnits>8</iCollateralDamageMaxUnits>
 			<iBombardRate>20</iBombardRate>
 			<DomainCargo>DOMAIN_LAND</DomainCargo>
+			<AllowPromotions>
+				<Promotion>PROMOTION_OVERLORDS_THRALL</Promotion>
+			</AllowPromotions>
 			<iCargo>2</iCargo>
 			<iAsset>4</iAsset>
 			<UnitMeshGroups>
@@ -1194,6 +1197,9 @@
 			<TechTypes>
 				<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
 			</TechTypes>
+			<AllowPromotions>
+				<Promotion>PROMOTION_OVERLORDS_THRALL</Promotion>
+			</AllowPromotions>
 			<iCost>180</iCost>
 			<iPopCost>1</iPopCost>
 			<iAdvancedStartCost>120</iAdvancedStartCost>
@@ -2839,6 +2845,9 @@
 				</Build>
 			</Builds>
 			<PrereqTech>TECH_FISHING</PrereqTech>
+			<AllowPromotions>
+				<Promotion>PROMOTION_OVERLORDS_THRALL</Promotion>
+			</AllowPromotions>
 			<iCost>35</iCost>
 			<iMoves>1</iMoves>
 			<iWorkRate>100</iWorkRate>

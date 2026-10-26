@@ -2468,11 +2468,11 @@
 			<Type>UNIT_JOT_WORKBOAT</Type>
 			<Builds>
 				<Build>
-					<BuildType>BUILD_FISHING_BOATS</BuildType>
+					<BuildType>BUILD_FISHING_BOATS_LANUN</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
-					<BuildType>BUILD_TRAWLING_BOATS</BuildType>
+					<BuildType>BUILD_TRAWLING_BOATS_LANUN</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 			</Builds>
