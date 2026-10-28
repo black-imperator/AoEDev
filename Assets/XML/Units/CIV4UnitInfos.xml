@@ -5024,6 +5024,9 @@
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 			</FreePromotions>
+			<AllowPromotions>
+				<Promotion>PROMOTION_UNDYING</Promotion>
+			</AllowPromotions>
 			<iCombatDefense>4</iCombatDefense>
 			<bFreeXP>1</bFreeXP>
 			<iTier>3</iTier>

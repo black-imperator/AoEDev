@@ -1791,6 +1791,12 @@
 					<iResist>25</iResist>
 				</DamageTypeResist>
 			</DamageTypeResists>
+			<PlotEffectDoubleMoves>
+				<PlotEffectDoubleMove>
+					<PlotEffectType>PLOT_EFFECT_HAUNTED_LANDS</PlotEffectType>
+					<bPlotEffectDoubleMove>1</bPlotEffectDoubleMove>
+				</PlotEffectDoubleMove>
+			</PlotEffectDoubleMoves>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Vahua -->						<!-- End Racial Promotions -->
 			<Type>PROMOTION_VAHUA</Type>
@@ -12047,7 +12053,6 @@
 			<PrereqPlotEffects>
 				<PrereqPlotEffect>PLOT_EFFECT_HAUNTED_LANDS</PrereqPlotEffect>
 			</PrereqPlotEffects>
-			<iMovesChange>1</iMovesChange>
 			<iWithdrawalChange>15</iWithdrawalChange>
 			<PlotEffectAttacks>
 				<PlotEffectAttack>
