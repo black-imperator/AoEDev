@@ -23732,7 +23732,11 @@
 			<FavoriteCivic>CIVIC_PACIFISM</FavoriteCivic>
 			<Traits>
 				<Trait>
-					<TraitType>TRAIT_FINANCIAL</TraitType>
+					<TraitType>TRAIT_INGENUITY</TraitType>
+					<bTrait>1</bTrait>
+				</Trait>
+				<Trait>
+					<TraitType>TRAIT_PHILOSOPHICAL</TraitType>
 					<bTrait>1</bTrait>
 				</Trait>
 			</Traits>

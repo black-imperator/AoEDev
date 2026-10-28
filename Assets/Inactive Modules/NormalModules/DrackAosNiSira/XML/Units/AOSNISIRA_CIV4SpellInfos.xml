@@ -196,7 +196,7 @@
 			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/Sira_Wolf_Button.dds</Button> 
 		</SpellInfo>
 		<SpellInfo>	<!-- Copy of FoL - Spread kelp for Posssessed giant Tortoise-->
-			<Type>SPELL_PLANT_KELP</Type>
+			<Type>SPELL_FAIRY_PLANT_KELP</Type>
 			<Description>TXT_KEY_SPELL_PLANT_KELP</Description>
 			<Civilopedia>TXT_KEY_SPELL_PLANT_KELP_PEDIA</Civilopedia>
 			<SpellClasses>
