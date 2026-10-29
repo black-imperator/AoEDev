@@ -8008,7 +8008,7 @@ int CvPlot::getYield(YieldTypes eIndex) const
 }
 
 
-int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnoreFeature) const
+int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnoreFeature, bool bClampToZero) const
 {
 	BonusTypes eBonus;
 	int iYield;
@@ -8101,6 +8101,14 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 /**	CivPlotMods								END													**/
 /*************************************************************************************************/
 
+	// The player overload adds civ/trait terrain and feature yields on top of this value, so it
+	// asks for the raw sum and clamps once at the end; clamping here first would let those bonuses
+	// cancel out penalties (hills/jungle -1 food) that had already pushed the sum below zero.
+	if (!bClampToZero)
+	{
+		return iYield;
+	}
+
 	return std::max(0, iYield);
 }
 
@@ -8125,7 +8133,8 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, PlayerTypes ePlayer, bool bI
 {
 	int iYield;
 
-	iYield = calculateNatureYield(eYield, ((ePlayer != NO_PLAYER) ? GET_PLAYER(ePlayer).getTeam() : NO_TEAM), bIgnoreFeature);
+	// Unclamped: the civ/trait yields below must be summed with hills/feature penalties before the zero floor.
+	iYield = calculateNatureYield(eYield, ((ePlayer != NO_PLAYER) ? GET_PLAYER(ePlayer).getTeam() : NO_TEAM), bIgnoreFeature, false);
 
 	if (ePlayer != NO_PLAYER)
 	{
@@ -8151,7 +8160,7 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, PlayerTypes ePlayer, bool bI
 	   		}
 	}
 
-	return iYield;
+	return std::max(0, iYield);
 }
 
 int CvPlot::calculateBestNatureYield(YieldTypes eIndex, PlayerTypes ePlayer) const
