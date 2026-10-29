@@ -11276,7 +11276,12 @@ void CvGame::clearProjectTimer(ProjectTypes eProject)
 	{
 		m_ppaaiProjectTimers[eProject][i] = m_ppaaiProjectTimers[eProject][i+1];
 	}
-	m_ppaaiProjectTimers[eProject][GC.getMaxNumProjectsAllowed()] = -1;
+	// The row holds getMaxNumProjectsAllowed() entries, so the last one is at Max - 1.
+	// Writing [Max] overwrote the next heap block's header.
+	if (GC.getMaxNumProjectsAllowed() > 0)
+	{
+		m_ppaaiProjectTimers[eProject][GC.getMaxNumProjectsAllowed() - 1] = -1;
+	}
 	if (getProjectCreatedCount(eProject) != 0)
 	{
 		incrementProjectCreatedCount(eProject, -1);
