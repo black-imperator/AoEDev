@@ -5065,7 +5065,10 @@ class CvMainInterface:
 						for j in lEAlignment:
 							if iEAlignment == j:
 								index = lAlignment.index(i) + lEAlignment.index(j) * 3
-								szTempBuffer = " (" + localText.getColorText(lStrAlignment[index], (), lColor[lAlignment.index(i)]) + ")"
+								if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_BROADER_ALIGNMENTS):
+									szTempBuffer = " (" + localText.getColorText(lStrAlignment[index] + "_BA", (pPlayer.getBroadEthicalAlignment(), pPlayer.getBroadAlignment()), lColor[lAlignment.index(i)]) + ")"
+								else:
+									szTempBuffer = " (" + localText.getColorText(lStrAlignment[index], (), lColor[lAlignment.index(i)]) + ")"
 								szPlayerString += szTempBuffer
 			szTempBuffer = u""
 			if pPlayer.getLeaderStatus() == git('HISTORICAL_STATUS'):
