@@ -671,7 +671,37 @@ void CvNetEventTriggered::Execute()
 {
 	if (m_ePlayer != NO_PLAYER)
 	{
-		GET_PLAYER(m_ePlayer).applyEvent(m_eEvent, m_iEventTriggeredId,false);
+		CvPlayer& kPlayer = GET_PLAYER(m_ePlayer);
+
+		// The choice for this trigger has already been applied (or the trigger expired):
+		// ignore repeated choice messages instead of applying the event again.
+		if (NULL == kPlayer.getEventTriggered(m_iEventTriggeredId))
+		{
+			return;
+		}
+
+		// bUpdateTrigger stays false: CvPlayer::trigger already called setTriggerFired when the
+		// popup was raised, and calling it again would re-run the trigger's python callback.
+		// That flag also stops applyEvent from deleting the triggered data, so do it here.
+		kPlayer.applyEvent(m_eEvent, m_iEventTriggeredId, false);
+
+		// Keep the triggered data only if a follow-up event countdown still refers to it
+		// (same check as the countdown cleanup in CvPlayer::doEvents).
+		bool bDelete = true;
+		for (int iI = 0; iI < GC.getNumEventInfos(); ++iI)
+		{
+			const EventTriggeredData* pCountdown = kPlayer.getEventCountdown((EventTypes)iI);
+			if (NULL != pCountdown && pCountdown->m_iId == m_iEventTriggeredId)
+			{
+				bDelete = false;
+				break;
+			}
+		}
+
+		if (bDelete)
+		{
+			kPlayer.deleteEventTriggered(m_iEventTriggeredId);
+		}
 	}
 }
 
