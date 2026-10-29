@@ -8384,6 +8384,12 @@ DeadUnitData* CvGame::addDeadUnit()
 }
 void CvGame::deleteDeadUnit(int iID)
 {
+	// DeadUnitData has no destructor (it is copied by value in compare()), so free its array here.
+	DeadUnitData* pData = m_deadunits.getAt(iID);
+	if (pData != NULL)
+	{
+		SAFE_DELETE_ARRAY(pData->piPromotions);
+	}
 	m_deadunits.removeAt(iID);
 }
 
