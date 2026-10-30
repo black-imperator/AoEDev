@@ -31,7 +31,7 @@
 				</GoodyClass>
 			</GoodyClasses>
 			<iWeight>30</iWeight>
-			<Description>TXT_KEY_GOODY_FREED_DOVIELLO</Description>
+			<Description>TXT_KEY_GOODY_GLOBAL_FREED_CIV</Description>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>100</iDestroyLairChance>
 			<bUnique>1</bUnique>
@@ -325,7 +325,7 @@
 				</GoodyClass>
 			</GoodyClasses>
 			<iWeight>30</iWeight>
-			<Description>TXT_KEY_GOODY_FREED_ARCHOS</Description>
+			<Description>TXT_KEY_GOODY_GLOBAL_FREED_CIV</Description>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>100</iDestroyLairChance>
 			<bUnique>1</bUnique>
@@ -342,7 +342,7 @@
 				</GoodyClass>
 			</GoodyClasses>
 			<iWeight>30</iWeight>
-			<Description>TXT_KEY_GOODY_FREED_MALAKIM</Description>
+			<Description>TXT_KEY_GOODY_GLOBAL_FREED_CIV</Description>
 			<Sound>AS2D_GOODY_GOLD</Sound>
 			<iDestroyLairChance>100</iDestroyLairChance>
 			<bUnique>1</bUnique>
