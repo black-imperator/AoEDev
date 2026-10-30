@@ -24502,6 +24502,29 @@ SpellUpgradeData* CvUnit::getSpellData(int spell)
 	}
 	return data;
 }
+
+
+// getSpellData() returns a heap-allocated SpellUpgradeData plus a promotion-sized array.
+// Callers hold the result in one of these so both are freed on every return path.
+// SpellUpgradeData itself has no destructor because compare() takes it by value.
+struct SpellUpgradeDataGuard
+{
+	explicit SpellUpgradeDataGuard(SpellUpgradeData* pData) : m_pData(pData) {}
+	~SpellUpgradeDataGuard()
+	{
+		if (m_pData != NULL)
+		{
+			SAFE_DELETE_ARRAY(m_pData->piSummonPromotionData);
+			delete m_pData;
+		}
+	}
+
+private:
+	SpellUpgradeDataGuard(const SpellUpgradeDataGuard&);
+	SpellUpgradeDataGuard& operator=(const SpellUpgradeDataGuard&);
+
+	SpellUpgradeData* m_pData;
+};
 int CvUnit::getSpellTargetRange(int spell)
 {
 	int iMagicalPower = getSpellMagicalPower(spell);
@@ -25034,6 +25057,7 @@ bool CvUnit::canSummonMaster(int spell)
 bool CvUnit::canAddPromotion(int spell, CvPlot* pTargetPlot)
 {
 	SpellUpgradeData* spellData = getSpellData(spell);
+	SpellUpgradeDataGuard kSpellDataGuard(spellData);
 	bool bResistable = GC.getSpellInfo((SpellTypes)spell).isResistable();
 	int iRange = GC.getSpellInfo((SpellTypes)spell).getRange();
 	iRange += getSpellExtraRange();
@@ -25155,6 +25179,7 @@ bool CvUnit::canAddPromotion(int spell, CvPlot* pTargetPlot)
 bool CvUnit::canCastDamage(int spell, CvPlot* pTargetPlot)
 {
 	SpellUpgradeData* spellData = getSpellData(spell);
+	SpellUpgradeDataGuard kSpellDataGuard(spellData);
 	bool bResistable = GC.getSpellInfo((SpellTypes)spell).isResistable();
 	int iDmg = spellData->iDamage;
 	int iDmgLimit = spellData->iMaxDamage;
@@ -25658,6 +25683,7 @@ bool CvUnit::canRemovePromotion(int spell, CvPlot* pTargetPlot)
 		pTargetPlot = plot();
 	}
 	SpellUpgradeData* spellData = getSpellData(spell);
+	SpellUpgradeDataGuard kSpellDataGuard(spellData);
 	bool bResistable = GC.getSpellInfo((SpellTypes)spell).isResistable();
 	int iRange = GC.getSpellInfo((SpellTypes)spell).getRange();
 	iRange += getSpellExtraRange();
@@ -26232,6 +26258,7 @@ void CvUnit::castAddPromotion(int spell, CvPlot* pTargetPlot)
 		pTargetPlot = plot();
 	}
 	SpellUpgradeData* spellData = getSpellData(spell);
+	SpellUpgradeDataGuard kSpellDataGuard(spellData);
 	bool bResistable = GC.getSpellInfo((SpellTypes)spell).isResistable();
 	int iDuration = spellData->iDuration;
 	int iNumTargets = spellData->iNumTargets;
@@ -26514,6 +26541,7 @@ void CvUnit::castDamage(int spell, CvPlot* pTargetPlot)
 		pTargetPlot = plot();
 	}
 	SpellUpgradeData* spellData = getSpellData(spell);
+	SpellUpgradeDataGuard kSpellDataGuard(spellData);
 	bool bResistable = GC.getSpellInfo((SpellTypes)spell).isResistable();
 	int iDmg = spellData->iDamage;
 	int iDmgLimit = spellData->iMaxDamage;
@@ -26743,6 +26771,7 @@ void CvUnit::castImmobile(int spell, CvPlot* pTargetPlot)
 		pTargetPlot = plot();
 	}
 	SpellUpgradeData* spellData = getSpellData(spell);
+	SpellUpgradeDataGuard kSpellDataGuard(spellData);
 	bool bResistable = GC.getSpellInfo((SpellTypes)spell).isResistable();
 	int iNumTargets = spellData->iNumTargets;
 	int iImmobileTurns = spellData->iImmobileTurns;
@@ -26912,6 +26941,7 @@ void CvUnit::castFortify(int spell, CvPlot* pTargetPlot)
 		pTargetPlot = plot();
 	}
 	SpellUpgradeData* spellData = getSpellData(spell);
+	SpellUpgradeDataGuard kSpellDataGuard(spellData);
 	bool bResistable = GC.getSpellInfo((SpellTypes)spell).isResistable();
 	int iNumTargets = spellData->iNumTargets;
 	int iImmobileTurns = spellData->iImmobileTurns;
@@ -27147,6 +27177,7 @@ void CvUnit::castRemovePromotion(int spell, CvPlot* pTargetPlot)
 		pTargetPlot = plot();
 	}
 	SpellUpgradeData* spellData = getSpellData(spell);
+	SpellUpgradeDataGuard kSpellDataGuard(spellData);
 	bool bResistable = GC.getSpellInfo((SpellTypes)spell).isResistable();
 	int iDuration = spellData->iDuration;
 	int iNumTargets = spellData->iNumTargets;
@@ -27362,6 +27393,7 @@ void CvUnit::castCreateUnit(int spell, CvPlot* pTargetPlot)
 		pTargetPlot = plot();
 	}
 	SpellUpgradeData* spellData = getSpellData(spell);
+	SpellUpgradeDataGuard kSpellDataGuard(spellData);
 	int iNumUnit = spellData->iSummonNumber;
 	int iDuration = spellData->iSummonDuration;
 	bool bPermanent = spellData->bSummonPermanent;
