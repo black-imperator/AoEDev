@@ -1605,7 +1605,11 @@ void CvPlot::nukeExplosion(int iRange, CvUnit* pNukeUnit)
 /**								---- Start Original Code ----									**
 								pLoopPlot->setImprovementType(NO_IMPROVEMENT);
 /**								----  End Original Code  ----									**/
-								if (!GC.getImprovementInfo(getImprovementType()).isPermanent())
+								// Check the fallout plot's own improvement. This used to read the
+								// centre plot's, which is NO_IMPROVEMENT for a city (meltdowns), so
+								// getImprovementInfo(-1) read out of bounds and the result could differ
+								// between machines (OOS).
+								if (pLoopPlot->getImprovementType() == NO_IMPROVEMENT || !GC.getImprovementInfo(pLoopPlot->getImprovementType()).isPermanent())
 								{
 									pLoopPlot->setImprovementType(NO_IMPROVEMENT);
 								}
