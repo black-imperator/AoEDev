@@ -13891,7 +13891,9 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 		iUnit = pNewPlayer.getPlayerUnit(lUnit[0])
 		#iUnit = gc.getCivilizationInfo(iCiv).getCivilizationUnits(lUnit[0])
 		# if our unit is none in XML we'll move to the next one
-		if iUnit == -1: continue
+		if iUnit == -1 and lUnit[0]!=iHeroClass: continue
+		if iUnit==-1 and lUnit[0]==iHeroClass:
+			iUnit=gc.getUnitClassInfo(lUnit[0]).getDefaultUnitIndex();
 		# lUnit[1] will return us second item in the sublist - count
 		# we will loop for lUnit[1] number of times
 		for iCount in xrange(lUnit[1]):
