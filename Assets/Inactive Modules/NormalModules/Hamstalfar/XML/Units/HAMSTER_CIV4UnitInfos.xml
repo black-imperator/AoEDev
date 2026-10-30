@@ -256,12 +256,12 @@
 			<iCost>30</iCost>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMoves>1</iMoves>
-			<iAirRange>3</iAirRange>
+			<iAirRange>2</iAirRange>
 			<iAirUnitCap>1</iAirUnitCap>
 			<iAirCombat>1</iAirCombat>
-			<iAirCombatLimit>30</iAirCombatLimit>
+			<iAirCombatLimit>15</iAirCombatLimit>
 			<iInterceptionProbability>100</iInterceptionProbability>
-			<iBombRate>8</iBombRate>
+			<iBombRate>1</iBombRate>
 			<iAsset>1</iAsset>
 			<DenyPromotions>
 				<PromotionType>PROMOTION_ALFAR</PromotionType>
@@ -938,8 +938,8 @@
 			<iMoves>2</iMoves>
 			<iCombat>6</iCombat>
 			<iAirRange>2</iAirRange>
-			<iAirCombat>8</iAirCombat>
-			<iAirCombatLimit>60</iAirCombatLimit>
+			<iAirCombat>3</iAirCombat>
+			<iAirCombatLimit>40</iAirCombatLimit>
 			<iAsset>30</iAsset>
 			<DenyPromotions>
 				<PromotionType>PROMOTION_ALFAR</PromotionType>

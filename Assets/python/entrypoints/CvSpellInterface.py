@@ -13911,57 +13911,57 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 		popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_PYTHON)
 		if iCiv == gc.getInfoTypeForString("CIVILIZATION_AMURITES"):
 			popupInfo.setText(CyTranslator().getText("TXT_KEY_GOODY_FREED_AMURITES",()))
-		if iCiv == gc.getInfoTypeForString("CIVILIZATION_ARCHOS"):
+		elif iCiv == gc.getInfoTypeForString("CIVILIZATION_ARCHOS"):
 			popupInfo.setText(CyTranslator().getText("TXT_KEY_GOODY_FREED_ARCHOS",()))
-		if iCiv == gc.getInfoTypeForString("CIVILIZATION_AUSTRIN"):
+		elif iCiv == gc.getInfoTypeForString("CIVILIZATION_AUSTRIN"):
 			popupInfo.setText(CyTranslator().getText("TXT_KEY_GOODY_FREED_AUSTRIN",()))
-		if iCiv == gc.getInfoTypeForString("CIVILIZATION_BALSERAPHS"):
+		elif iCiv == gc.getInfoTypeForString("CIVILIZATION_BALSERAPHS"):
 			popupInfo.setText(CyTranslator().getText("TXT_KEY_GOODY_FREED_BALSERAPH",()))
-		if iLeader == gc.getInfoTypeForString("LEADER_ALEXIS"):
+		elif iLeader == gc.getInfoTypeForString("LEADER_ALEXIS"):
 			popupInfo.setText(CyTranslator().getText("TXT_KEY_GOODY_FREED_CALABIM",()))
-		if iLeader == gc.getInfoTypeForString("LEADER_TRISTESSA"):
+		elif iLeader == gc.getInfoTypeForString("LEADER_TRISTESSA"):
 			popupInfo.setText(CyTranslator().getText("TXT_KEY_GOODY_FREED_ASHGATE",()))
-		if iCiv == gc.getInfoTypeForString("CIVILIZATION_CHISLEV"):
+		elif iCiv == gc.getInfoTypeForString("CIVILIZATION_CHISLEV"):
 			popupInfo.setText(CyTranslator().getText("TXT_KEY_GOODY_FREED_CHISLEV",()))
-		if iCiv == gc.getInfoTypeForString("CIVILIZATION_CUALLI"):
+		elif iCiv == gc.getInfoTypeForString("CIVILIZATION_CUALLI"):
 			popupInfo.setText(CyTranslator().getText("TXT_KEY_GOODY_FREED_CUALLI",()))
-		if iCiv == gc.getInfoTypeForString("CIVILIZATION_DOVIELLO"):
+		elif iCiv == gc.getInfoTypeForString("CIVILIZATION_DOVIELLO"):
 			popupInfo.setText(CyTranslator().getText("TXT_KEY_GOODY_FREED_DOVIELLO",()))
-		if iCiv == gc.getInfoTypeForString("CIVILIZATION_ELOHIM"):
+		elif iCiv == gc.getInfoTypeForString("CIVILIZATION_ELOHIM"):
 			popupInfo.setText(CyTranslator().getText("TXT_KEY_GOODY_FREED_ELOHIM",()))
-		if iCiv == gc.getInfoTypeForString("CIVILIZATION_GRIGORI"):
+		elif iCiv == gc.getInfoTypeForString("CIVILIZATION_GRIGORI"):
 			popupInfo.setText(CyTranslator().getText("TXT_KEY_GOODY_FREED_GRIGORI",()))
-		if iCiv == gc.getInfoTypeForString("CIVILIZATION_HIPPUS"):
+		elif iCiv == gc.getInfoTypeForString("CIVILIZATION_HIPPUS"):
 			popupInfo.setText(CyTranslator().getText("TXT_KEY_GOODY_FREED_HIPPUS",()))
-		if iCiv == gc.getInfoTypeForString("CIVILIZATION_ILLIANS"):
+		elif iCiv == gc.getInfoTypeForString("CIVILIZATION_ILLIANS"):
 			popupInfo.setText(CyTranslator().getText("TXT_KEY_GOODY_FREED_ILLIANS",()))
-		if iCiv == gc.getInfoTypeForString("CIVILIZATION_KHAZAD"):
+		elif iCiv == gc.getInfoTypeForString("CIVILIZATION_KHAZAD"):
 			popupInfo.setText(CyTranslator().getText("TXT_KEY_GOODY_FREED_KHAZAD",()))
-		if iCiv == gc.getInfoTypeForString("CIVILIZATION_KURIOTATES"):
+		elif iCiv == gc.getInfoTypeForString("CIVILIZATION_KURIOTATES"):
 			popupInfo.setText(CyTranslator().getText("TXT_KEY_GOODY_FREED_KURIOTATES",()))
-		if iCiv == gc.getInfoTypeForString("CIVILIZATION_LANUN"):
+		elif iCiv == gc.getInfoTypeForString("CIVILIZATION_LANUN"):
 			popupInfo.setText(CyTranslator().getText("TXT_KEY_GOODY_FREED_LANUN",()))
-		if iCiv == gc.getInfoTypeForString("CIVILIZATION_DTESH"):
+		elif iCiv == gc.getInfoTypeForString("CIVILIZATION_DTESH"):
 			popupInfo.setText(CyTranslator().getText("TXT_KEY_GOODY_FREED_LEGION",()))
-		if iCiv == gc.getInfoTypeForString("CIVILIZATION_LJOSALFAR"):
+		elif iCiv == gc.getInfoTypeForString("CIVILIZATION_LJOSALFAR"):
 			popupInfo.setText(CyTranslator().getText("TXT_KEY_GOODY_FREED_LJOSALFAR",()))
-		if iCiv == gc.getInfoTypeForString("CIVILIZATION_LUCHUIRP"):
+		elif iCiv == gc.getInfoTypeForString("CIVILIZATION_LUCHUIRP"):
 			popupInfo.setText(CyTranslator().getText("TXT_KEY_GOODY_FREED_LUCHUIRP",()))
-		if iCiv == gc.getInfoTypeForString("CIVILIZATION_MALAKIM"):
+		elif iCiv == gc.getInfoTypeForString("CIVILIZATION_MALAKIM"):
 			popupInfo.setText(CyTranslator().getText("TXT_KEY_GOODY_FREED_MALAKIM",()))
-		if iCiv == gc.getInfoTypeForString("CIVILIZATION_MAZATL"):
+		elif iCiv == gc.getInfoTypeForString("CIVILIZATION_MAZATL"):
 			popupInfo.setText(CyTranslator().getText("TXT_KEY_GOODY_FREED_MAZATL",()))
-		if iCiv == gc.getInfoTypeForString("CIVILIZATION_MECHANOS"):
+		elif iCiv == gc.getInfoTypeForString("CIVILIZATION_MECHANOS"):
 			popupInfo.setText(CyTranslator().getText("TXT_KEY_GOODY_FREED_MECHANOS",()))
-		if iCiv == gc.getInfoTypeForString("CIVILIZATION_MEKARA_V2"):
+		elif iCiv == gc.getInfoTypeForString("CIVILIZATION_MEKARA_V2"):
 			popupInfo.setText(CyTranslator().getText("TXT_KEY_GOODY_FREED_MEKARA",()))
-		if iCiv == gc.getInfoTypeForString("CIVILIZATION_SCIONS"):
+		elif iCiv == gc.getInfoTypeForString("CIVILIZATION_SCIONS"):
 			popupInfo.setText(CyTranslator().getText("TXT_KEY_GOODY_FREED_SCIONS_OF_PATRIA",()))
-		if iCiv == gc.getInfoTypeForString("CIVILIZATION_SHEAIM"):
+		elif iCiv == gc.getInfoTypeForString("CIVILIZATION_SHEAIM"):
 			popupInfo.setText(CyTranslator().getText("TXT_KEY_GOODY_FREED_SHEAIM",()))
-		if iCiv == gc.getInfoTypeForString("CIVILIZATION_SIDAR"):
+		elif iCiv == gc.getInfoTypeForString("CIVILIZATION_SIDAR"):
 			popupInfo.setText(CyTranslator().getText("TXT_KEY_GOODY_FREED_SIDAR",()))
-		if iCiv == gc.getInfoTypeForString("CIVILIZATION_SVARTALFAR"):
+		elif iCiv == gc.getInfoTypeForString("CIVILIZATION_SVARTALFAR"):
 			popupInfo.setText(CyTranslator().getText("TXT_KEY_GOODY_FREED_SVARTALFAR",()))
 		popupInfo.setData1(iPlayer)
 		popupInfo.setData2(iNewPlayer)
