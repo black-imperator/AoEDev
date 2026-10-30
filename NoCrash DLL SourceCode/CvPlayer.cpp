@@ -17289,6 +17289,10 @@ DeadUnitData* CvPlayer::addDeadUnit()
 void CvPlayer::addToResurrectList(int iUnitType, int iExp)
 {
 	DeadUnitData* data = addDeadUnit();
+	if (data == NULL)
+	{
+		return;
+	}
 	data->iDeathList = -1;
 	data->iUnitType = iUnitType;
 	data->iDeathTurn = 0;
@@ -17304,6 +17308,12 @@ void CvPlayer::addToResurrectList(int iUnitType, int iExp)
 }
 void CvPlayer::deleteDeadUnit(int iID)
 {
+	// DeadUnitData has no destructor (it is copied by value in compare()), so free its array here.
+	DeadUnitData* pData = m_deadunits.getAt(iID);
+	if (pData != NULL)
+	{
+		SAFE_DELETE_ARRAY(pData->piPromotions);
+	}
 	m_deadunits.removeAt(iID);
 }
 
