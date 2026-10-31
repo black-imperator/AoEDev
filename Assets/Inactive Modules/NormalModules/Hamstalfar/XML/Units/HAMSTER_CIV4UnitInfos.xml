@@ -345,15 +345,15 @@
 			</TerrainImpassables>
 			<iCombat>1</iCombat>
 			<iCombatLimit>75</iCombatLimit>
-			<iAirCombat>3</iAirCombat>
+			<iAirCombat>2</iAirCombat>
 			<iAirCombatLimit>80</iAirCombatLimit>
 			<iWithdrawalProb>80</iWithdrawalProb>
-			<iCollateralDamage>50</iCollateralDamage>
-			<iCollateralDamageLimit>25</iCollateralDamageLimit>
+			<iCollateralDamage>20</iCollateralDamage>
+			<iCollateralDamageLimit>15</iCollateralDamageLimit>
 			<iCollateralDamageMaxUnits>3</iCollateralDamageMaxUnits>
-			<iCityAttack>300</iCityAttack>
-			<iCityDefense>300</iCityDefense>
-			<iBombardRate>5</iBombardRate>
+			<iCityAttack>150</iCityAttack>
+			<iCityDefense>150</iCityDefense>
+			<iBombardRate>4</iBombardRate>
 			<iCultureGarrison>4</iCultureGarrison>
 			<iAsset>4</iAsset>
 			<UnitMeshGroups>
@@ -442,8 +442,8 @@
 			<iCollateralDamage>30</iCollateralDamage>
 			<iCollateralDamageLimit>30</iCollateralDamageLimit>
 			<iCollateralDamageMaxUnits>3</iCollateralDamageMaxUnits>
-			<iCityAttack>300</iCityAttack>
-			<iCityDefense>300</iCityDefense>
+			<iCityAttack>150</iCityAttack>
+			<iCityDefense>150</iCityDefense>
 			<iBombardRate>10</iBombardRate>
 			<iCultureGarrison>7</iCultureGarrison>
 			<iAsset>16</iAsset>
