@@ -902,10 +902,6 @@
 					<PromotionType>PROMOTION_DREAMING_AIFON</PromotionType>
 					<iPrereqApplications>1</iPrereqApplications>
 				</PrereqPromotionOR>
-				<PrereqPromotionOR>
-					<PromotionType>PROMOTION_SEAFOLK_VS</PromotionType>
-					<iPrereqApplications>1</iPrereqApplications>
-				</PrereqPromotionOR>
 			</PrereqPromotionORs>
 			<PromotionExcludes>
 				<Promotion>PROMOTION_NIGHTMARE_AIFON_HIDDEN_NATIONALITY_BLANKET</Promotion>

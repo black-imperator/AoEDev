@@ -350,7 +350,7 @@
 				</GoodyClass>
 			</GoodyClasses>
 			<iWeight>15</iWeight>
-			<Description>TXT_KEY_GOODY_FREED_ELOHIM</Description>
+			<Description>TXT_KEY_GOODY_GLOBAL_FREED_CIV</Description>
 			<Sound>AS2D_GOODY_SETTLER</Sound>
 			<iDestroyLairChance>0</iDestroyLairChance>
 			<bUnique>1</bUnique>

@@ -671,6 +671,10 @@
 					<UnitType>UNIT_LOKI</UnitType>
 				</Unit>
 				<Unit>
+					<UnitClassType>UNITCLASS_PERPENTACH</UnitClassType>
+					<UnitType>UNIT_PERPENTACH</UnitType>
+				</Unit>
+				<Unit>
 					<UnitClassType>UNITCLASS_AXEMAN</UnitClassType>
 					<UnitType>UNIT_SWORDSMAN</UnitType>
 				</Unit>
@@ -6570,6 +6574,10 @@
 				<Unit>
 					<UnitClassType>UNITCLASS_FORT_COMMANDER</UnitClassType>
 					<UnitType>UNIT_PYRELORD</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_OS_GABELLA</UnitClassType>
+					<UnitType>UNIT_OS_GABELLA</UnitType>
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_ABASHI</UnitClassType>

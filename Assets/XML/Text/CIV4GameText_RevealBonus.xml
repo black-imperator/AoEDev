@@ -12868,7 +12868,7 @@ Do you wish to leave your current civilisation behind and lead this one instead?
 Do you wish to leave your current civilisation behind and lead this one instead?</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_GOODY_FREED_AMURITE</Tag>
+		<Tag>TXT_KEY_GOODY_FREED_AMURITES</Tag>
 		<English>Your unit stumbled on a chamber filled with arcane symbols and a group of people standing frozen behind them.
 Approaching a pedestal, the unit pulls a lever, releasing the magical energies and freeing this group of strangers.
 
@@ -14393,6 +14393,14 @@ Your unit is even more surprised to realise there are two figures standing besid
 		<Spanish>Your unit is wandering in a forest, completely lost as every tree looks the same, with an otherworldly perfection to them.
 Turning the corner, your unit is surprised to find they are now standing in the middle of a village, hewn into the trees themselves.
 Your unit is even more surprised to realise there are two figures standing beside them, holding their arms pinned and pressing a dagger against their ribs.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_GLOBAL_FREED_CIV</Tag>
+		<English>A Civilization has been freed!</English>
+		<French>A Civilization has been freed!</French>
+		<German>A Civilization has been freed!</German>
+		<Italian>A Civilization has been freed!</Italian>
+		<Spanish>A Civilization has been freed!</Spanish>
 	</TEXT>
 		<TEXT>
 		<Tag>TXT_KEY_GLOBAL_SPELL</Tag>
