@@ -2357,7 +2357,7 @@
 			<Description>TXT_KEY_LEADER_MIRROR</Description>
 			<Civilopedia>TXT_KEY_LEADER_MIRROR_PEDIA</Civilopedia>
 			<DefeatQuote>TXT_KEY_POPUP_DEFEATED_MIRROR</DefeatQuote>
-			<Image>Modules/NormalModules/ViciousSeas/Art/Interface/LeaderHeads/Mirror.dds</Image>
+			<Image>Modules/NormalModules/ViciousSeas/Art/Interface/LeaderHeads/Ophelia_BlueDesign.dds</Image>
 			<ArtDefineTag>ART_DEF_LEADER_MIRROR</ArtDefineTag>
 			<iWonderConstructRand>0</iWonderConstructRand>
 			<iBaseAttitude>0</iBaseAttitude>

@@ -5947,7 +5947,7 @@
 					<bGoodyClass>1</bGoodyClass>
 				</GoodyClass>
 			</GoodyClasses>
-			<iWeight>9999999</iWeight>
+			<iWeight>30</iWeight>
 			<Description>TXT_KEY_GOODY_GLOBAL_FREED_CIV</Description>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>100</iDestroyLairChance>
