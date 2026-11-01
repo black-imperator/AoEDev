@@ -18,11 +18,16 @@ namespace AoELauncher.Core;
 /// Payload (before gzip + base64), a small hand-rolled binary layout rather
 /// than JSON, to comfortably fit under Discord's 2000-character message
 /// limit even with ~100 modules:
-///   byte    : 1 if "futureproof" (no version/fingerprint), else 0
+///   byte    : flags. bit 0 (1) = "futureproof" (no version/fingerprint);
+///             bit 1 (2) = each module carries a load-pass byte. Codes made before
+///             load passes existed have bit 1 clear and still decode fine (their
+///             modules just come back with no pass, i.e. "leave where it is").
 ///   string  : preset name (length-prefixed UTF8)
 ///   ushort  : module count
 ///   for each module:
 ///     string : module folder name (length-prefixed UTF8)
+///     [only if bit 1 set:]
+///       byte    : load pass (0 = Any, 1-4 = Order\1..4, 255 = unspecified)
 ///     [only if not futureproof:]
 ///       string  : version
 ///       4 bytes : fingerprint (raw bytes, not hex text -- half the size)
@@ -30,6 +35,20 @@ namespace AoELauncher.Core;
 public static class PresetCodec
 {
     private const string MagicPrefix = "AoE";
+
+    private const byte FlagFutureproof = 1;
+    private const byte FlagHasPass = 2;
+    private const byte PassUnspecified = 255;
+
+    private static byte PassToByte(string? pass)
+    {
+        var p = ModuleLayout.NormalizePass(pass);
+        if (p.Length == 0) return PassUnspecified;
+        return p == ModuleLayout.AnyPass ? (byte)0 : byte.Parse(p);
+    }
+
+    private static string ByteToPass(byte b) =>
+        b == 0 ? ModuleLayout.AnyPass : (b >= 1 && b <= 4 ? b.ToString() : "");
 
     /// <summary>Discord's plain-message character limit, used as the target ceiling for export codes.</summary>
     public const int DiscordSafeLimit = 2000;
@@ -39,13 +58,14 @@ public static class PresetCodec
         using var raw = new MemoryStream();
         using (var writer = new BinaryWriter(raw, Encoding.UTF8, leaveOpen: true))
         {
-            writer.Write((byte)(futureproof ? 1 : 0));
+            writer.Write((byte)((futureproof ? FlagFutureproof : 0) | FlagHasPass));
             writer.Write(preset.Name ?? "");
             writer.Write((ushort)preset.Modules.Count);
 
             foreach (var m in preset.Modules)
             {
                 writer.Write(m.Name ?? "");
+                writer.Write(PassToByte(m.LoadPass));
                 if (!futureproof)
                 {
                     writer.Write(m.Version ?? "");
@@ -123,13 +143,16 @@ public static class PresetCodec
             using var reader = new BinaryReader(msRead, Encoding.UTF8);
 
             var preset = new Preset { SourceVersion = sourceVersion };
-            bool futureproof = reader.ReadByte() == 1;
+            var flags = reader.ReadByte();
+            bool futureproof = (flags & FlagFutureproof) != 0;
+            bool hasPass = (flags & FlagHasPass) != 0;
             preset.Name = reader.ReadString();
             var count = reader.ReadUInt16();
 
             for (int i = 0; i < count; i++)
             {
                 var mod = new ModuleRef { Name = reader.ReadString() };
+                if (hasPass) mod.LoadPass = ByteToPass(reader.ReadByte());
                 if (!futureproof)
                 {
                     mod.Version = reader.ReadString();

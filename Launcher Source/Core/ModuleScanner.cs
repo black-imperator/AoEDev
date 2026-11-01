@@ -11,21 +11,25 @@ namespace AoELauncher.Core;
 
 public static class ModuleScanner
 {
+    private static readonly char[] TagSeparators = { ',', ';', '|', ' ', '\t', '\r', '\n' };
+
     private static readonly Regex SectionHeader = new(@"^\[(\w+)\]$", RegexOptions.Compiled);
 
     /// <summary>
-    /// Scans both the active and inactive NormalModules folders and returns
-    /// every module found, with everything parsed out of its info.txt.
+    /// Scans every load-pass folder (Any and Order\1..4, see ModuleLayout) on both the
+    /// active and inactive side and returns every module found, with everything parsed out of
+    /// its info.txt.
     /// </summary>
     public static List<ModuleInfo> ScanAll(string modPath)
     {
         var list = new List<ModuleInfo>();
-        list.AddRange(ScanDirectory(Path.Combine(modPath, "Assets", "Modules", "NormalModules"), isActive: true));
-        list.AddRange(ScanDirectory(Path.Combine(modPath, "Assets", "Inactive Modules", "NormalModules"), isActive: false));
+        foreach (var isActive in new[] { true, false })
+            foreach (var pass in ModuleLayout.Passes)
+                list.AddRange(ScanDirectory(ModuleLayout.GetPassDir(modPath, isActive, pass), isActive, pass));
         return list;
     }
 
-    private static List<ModuleInfo> ScanDirectory(string dir, bool isActive)
+    private static List<ModuleInfo> ScanDirectory(string dir, bool isActive, string pass)
     {
         var result = new List<ModuleInfo>();
         if (!Directory.Exists(dir)) return result;
@@ -36,6 +40,7 @@ public static class ModuleScanner
             info.Name = Path.GetFileName(sub);
             info.FullPath = sub;
             info.IsActive = isActive;
+            info.LoadPass = pass;
             result.Add(info);
         }
 
@@ -73,6 +78,13 @@ public static class ModuleScanner
                 switch (currentSection)
                 {
                     case "version": info.Version = FirstLine(text); break;
+                    case "aoeversion": info.AoeRev = FirstLine(text); break;
+                    case "tags":
+                        // Tags are matched as whole words, case-insensitively, and may be separated by
+                        // commas, semicolons, pipes, whitespace or line breaks.
+                        foreach (var tag in text.Split(TagSeparators, StringSplitOptions.RemoveEmptyEntries))
+                            info.Tags.Add(tag.Trim());
+                        break;
                     case "rifeversion": info.RifeVersion = FirstLine(text); break;
                     case "author": info.Author = FirstLine(text); break;
                     case "shortdesc": info.ShortDesc = FirstLine(text); break;

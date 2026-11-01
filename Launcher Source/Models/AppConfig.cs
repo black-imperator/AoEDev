@@ -18,6 +18,13 @@ public class ModuleRef
     /// detection is possible or attempted for this module on import.
     /// </summary>
     public string Fingerprint { get; set; } = "";
+
+    /// <summary>
+    /// The load pass the module was in when the preset was saved: "Any", "1".."4", or empty if
+    /// unknown (presets saved/exported before load passes existed). Empty means "leave the module
+    /// in whatever pass it's currently in" when the preset is applied.
+    /// </summary>
+    public string LoadPass { get; set; } = "";
 }
 
 public class Preset
@@ -37,7 +44,7 @@ public class Preset
 
 /// <summary>
 /// The single file this app persists to disk: the saved presets and the
-/// launcher's one user setting (close-on-launch).
+/// launcher's user settings (close-on-launch, modules panel visibility).
 /// There's no override/location data here -- the mod folder is always
 /// wherever this exe is running from, and Civ4BeyondSword.exe is always
 /// found relative to that (see InstallLocator); if placement is wrong the
@@ -49,4 +56,10 @@ public class AppConfig
 
     /// <summary>If true, the launcher quits itself right after successfully starting the game.</summary>
     public bool CloseOnLaunch { get; set; }
+
+    /// <summary>
+    /// Whether the module lists and preset tools are shown (the "Manage Modules" / "Hide Modules"
+    /// toggle). Defaults to hidden, which is also what a config file from an older version gets.
+    /// </summary>
+    public bool ModulesVisible { get; set; }
 }

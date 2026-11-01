@@ -39,8 +39,26 @@ in the source.
   `version.txt` (e.g. `Launch Ashes of Erebus v380`), `v?` if that file is
   missing or malformed, or `Ashes of Erebus not found!` if
   `Civ4BeyondSword.exe` can't be located. Refresh re-evaluates it.
-- **Close on launch?** checkbox (under Refresh): saved in the config file; when
+- **Manage Modules / Hide Modules** button (centered under Launch): shows or
+  hides everything beneath it except the status bar -- the module lists and
+  the preset/dev tools. Hidden, the window shrinks to just the top section
+  (Instructions, Launch, Open Civ4 Config, Close on launch); shown, it grows
+  back to its previous height. The state is saved in the config file
+  (`ModulesVisible`) and applied on startup; it defaults to hidden.
+- **Close on launch?** checkbox (under Open Civ4 Config): saved in the config file; when
   checked, the launcher exits right after successfully starting the game.
+- **Load passes**: modules live under `Assets\Modules` (active) or
+  `Assets\Inactive Modules` (inactive), in either `Any\<module>` or
+  `Order\1..4\<module>`. The **Loadpass** column shows `Any` or `1`-`4`.
+  Right-clicking a module offers `Load in pass: Any / 1 / 2 / 3 / 4`
+  (hiding the pass it's already in) and moves it between those folders on
+  its current side; with several rows selected the choice applies to all of
+  them. Moving a module between Active and Inactive (drag, double-click, or
+  presets) preserves its pass. Modules dropped in from Explorer land in `Any`.
+  A module name must be unique across all passes on a side.
+- **Tag and revision columns**: `Civ`, `Mech`, `Art` and `Joke` show a
+  checkmark when the module's `[tags]` section contains that tag; `AoE Rev`
+  shows the `[aoeversion]` line.
 - **Drag and drop** between an Active list and an Inactive list to enable/
   disable modules. Drag a module folder in from Explorer to install it.
 - **Per-module tooltip and details**: hovering a module shows its
@@ -61,7 +79,10 @@ in the source.
   can sit directly under `XML\`). Both the preview and the final result
   report at the module level for modules with no problems, and at the
   individual-file level for modules that had one or more errors.
-- **Presets**: save/load/delete named collections of the active module set.
+- **Presets**: save/load/delete named collections of the active module set,
+  including each module's load pass. Loading a preset puts modules in the
+  recorded passes. Presets and share codes made before load passes existed
+  have no recorded pass, and leave modules in whichever pass they're in.
 - **Import/export via a compact share code**, formatted as
   `AoE<version>:<data>` where `<version>` comes from the mod's own
   `version.txt` (purely informational -- it doesn't block importing a
@@ -101,10 +122,20 @@ Parsed as sectioned key/value blocks:
 [shortdesc]
 Cheaper earlier techs, MUCH more expensive late techs.
 ;
+[aoeversion]
+380
+;
+[tags]
+Civ, Mech
+;
 [desc]
 Multi-line description text...
 can span several lines, including blank ones for paragraph breaks.
 ```
+
+`[aoeversion]` fills the **AoE Rev** column. `[tags]` is a list separated by
+commas, semicolons, pipes, spaces or line breaks; each entry is compared as a
+whole word, case-insensitively, against `Civ`, `Mech`, `Art` and `Joke`.
 
 `[shortdesc]` becomes the row's tooltip; `[desc]` (plus version/author/
 rifeversion/compatible) shows up in the popup from that row's **?** button.
@@ -117,13 +148,14 @@ AoELauncher/
   Program.cs
   MainForm.cs              <- main window: module grids, drag/drop, presets, schemas
   Models/
-    AppConfig.cs             <- the one config/save file's shape (Presets + close-on-launch flag)
+    AppConfig.cs             <- the one config/save file's shape (Presets + close-on-launch + modules-visible flags)
     ModuleInfo.cs             <- live scan result, incl. parsed info.txt fields
     PlacementResult.cs        <- result of the startup placement check
   Core/
     ConfigManager.cs          <- load/save the XML config file (always next to the exe)
     CompatHelpers.cs          <- small .NET Framework 4.8 shims (hex encoding, relative paths)
     InstallLocator.cs         <- placement validation only, no registry/disk scanning
+    ModuleLayout.cs           <- Any\ / Order\1..4 folder layout and load-pass helpers
     ModuleScanner.cs          <- scans modules, parses info.txt, computes fingerprints
     SchemaUpdater.cs          <- the Update Schemas action
     PresetCodec.cs            <- compact binary encode/decode for the share string
@@ -178,9 +210,9 @@ AoELauncher/
 - **Share code format**: single fixed payload format, no back-compat
   handling -- the `AoE<version>:` prefix is just the mod's version.txt
   contents for the user's information, not a wire-format version switch.
-- **Module load order**: still not adjustable within the Active list. If
-  AoE's module system is sensitive to load order, let me know and I'll add
-  drag-to-reorder plus persist the order in the config/preset.
+- **Module load order**: load order within a pass isn't adjustable; the
+  coarse ordering is the load pass (`Any`, then `Order\1`-`4`), set via the
+  right-click menu and stored in presets.
 - **Permissions**: if AoE is installed under `Program Files`, moving module
   folders (or saving the config file) may require running the launcher as
   Administrator. Failures show a clear message suggesting this.

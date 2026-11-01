@@ -39,20 +39,41 @@ public class MainForm : Form
     private Label lblStatus = null!;
     private Button btnLaunch = null!;
     private CheckBox chkCloseOnLaunch = null!;
+    private Panel _topPanel = null!;
+    private Panel _bottomPanel = null!;
+    private Panel _statusPanel = null!;
+    private Button btnManage = null!;
+
+    /// <summary>Minimum window width; wide enough for the module grids' extra columns.</summary>
+    private const int MinFormWidth = 1050;
+    private const int ExpandedMinHeight = 520;
+
+    /// <summary>
+    /// Client height to restore when the module section is revealed. Starts as the default size
+    /// the window is created at, and is updated to whatever the user had resized it to each time
+    /// the section is hidden.
+    /// </summary>
+    private int _expandedClientHeight;
 
     public MainForm()
     {
         Text = "Ashes of Erebus Launcher";
-        Width = 980;
+        Width = 1200;
         Height = 700;
         StartPosition = FormStartPosition.CenterScreen;
-        MinimumSize = new Size(880, 520);
+        MinimumSize = new Size(MinFormWidth, ExpandedMinHeight);
+        _expandedClientHeight = ClientSize.Height;
+
+        // Loaded here rather than in MainForm_Load so the saved Manage Modules state is known
+        // before the window is first shown (no visible expand/shrink flash on startup).
+        _config = ConfigManager.Load();
 
         Theme.StyleForm(this);
         //LoadBackgroundImage(); // BLAZE disabled; seems winforms can't have alpha layers in foreground elements we need
 
         BuildUi();
         SetupDragDrop();
+        ApplyModulesVisibility(_config.ModulesVisible, initial: true);
 
         Load += MainForm_Load;
     }
@@ -81,8 +102,9 @@ public class MainForm : Form
 
     private void BuildUi()
     {
-        var topPanel = new Panel { Dock = DockStyle.Top, Height = 100 };
+        var topPanel = new Panel { Dock = DockStyle.Top, Height = 130 };
         Theme.StyleContainer(topPanel);
+        _topPanel = topPanel;
 
         btnLaunch = new FlatButton
         {
@@ -95,9 +117,22 @@ public class MainForm : Form
         Theme.StyleButton(btnLaunch, primary: true);
         btnLaunch.Click += (s, e) => LaunchGame();
 
-        var btnRefresh = new FlatButton { Text = "Refresh", Width = 90, Height = Theme.ButtonHeight, Top = 13 };
-        Theme.StyleButton(btnRefresh);
-        btnRefresh.Click += (s, e) => RefreshModules();
+        // Open Civ4 Config sits where Refresh used to (top right); Refresh now lives in the
+        // module section below, where Open Civ4 Config used to be.
+        var btnCiv4Config = new FlatButton { Text = "Open Civ4 Config", Width = 150, Height = Theme.ButtonHeight, Top = 13 };
+        Theme.StyleButton(btnCiv4Config);
+        btnCiv4Config.Click += (s, e) => OpenCiv4Config();
+
+        // Toggles the module lists + preset tools; centered on its own row beneath Launch.
+        btnManage = new FlatButton { Text = "Manage Modules", Width = 150, Height = Theme.ButtonHeight, Top = 92 };
+        Theme.StyleButton(btnManage);
+        btnManage.Click += (s, e) =>
+        {
+            var show = !_config.ModulesVisible;
+            ApplyModulesVisibility(show, initial: false);
+            _config.ModulesVisible = show;
+            SaveConfig();
+        };
 
         // Sized from the measured text rather than AutoSize, so its width is already correct
         // when the Resize handler below right-aligns it (AutoSize only settles after layout).
@@ -118,12 +153,14 @@ public class MainForm : Form
 
         topPanel.Controls.Add(btnHelp);
         topPanel.Controls.Add(btnLaunch);
-        topPanel.Controls.Add(btnRefresh);
+        topPanel.Controls.Add(btnCiv4Config);
+        topPanel.Controls.Add(btnManage);
         topPanel.Controls.Add(chkCloseOnLaunch);
         topPanel.Resize += (s, e) =>
         {
             btnLaunch.Left = (topPanel.Width - btnLaunch.Width) / 2;
-            btnRefresh.Left = topPanel.Width - btnRefresh.Width - 12;
+            btnManage.Left = (topPanel.Width - btnManage.Width) / 2;
+            btnCiv4Config.Left = topPanel.Width - btnCiv4Config.Width - 12;
             chkCloseOnLaunch.Left = topPanel.Width - chkCloseOnLaunch.Width - 12;
         };
 
@@ -152,19 +189,20 @@ public class MainForm : Form
 
         var bottomPanel = new Panel { Dock = DockStyle.Bottom, Height = 88 };
         Theme.StyleContainer(bottomPanel);
+        _bottomPanel = bottomPanel;
 
         // Row 1: preset save/load/delete, with the dev action right-aligned on the same line
         var btnSave = new FlatButton { Text = "Save Active Modules As New Preset", Left = 12, Top = 8, Width = 250, Height = Theme.ButtonHeight };
         cmbPresets = new ComboBox { Left = 270, Top = 11, Width = 170, DropDownStyle = ComboBoxStyle.DropDownList };
         var btnLoad = new FlatButton { Text = "Load Preset", Left = 448, Top = 8, Width = 110, Height = Theme.ButtonHeight };
         var btnDelete = new FlatButton { Text = "Delete", Left = 566, Top = 8, Width = 80, Height = Theme.ButtonHeight };
-        var btnCiv4Config = new FlatButton { Text = "Open Civ4 Config", Top = 8, Width = 150, Height = Theme.ButtonHeight };
+        var btnRefresh = new FlatButton { Text = "Refresh", Top = 8, Width = 90, Height = Theme.ButtonHeight };
         Theme.StyleButton(btnSave);
         Theme.StyleComboBox(cmbPresets);
         Theme.StyleButton(btnLoad);
         Theme.StyleButton(btnDelete);
-        Theme.StyleButton(btnCiv4Config);
-        btnCiv4Config.Click += (s, e) => OpenCiv4Config();
+        Theme.StyleButton(btnRefresh);
+        btnRefresh.Click += (s, e) => RefreshModules();
 
         // Row 2: import (left) / export (right)
         var btnImport = new FlatButton { Text = "Import Preset", Left = 12, Top = 44, Width = 135, Height = Theme.ButtonHeight };
@@ -189,14 +227,15 @@ public class MainForm : Form
 
         bottomPanel.Controls.AddRange(new Control[]
         {
-            btnSave, cmbPresets, btnLoad, btnDelete, btnCiv4Config, btnImport, btnExport, chkFutureproof, btnDevSchemas
+            btnSave, cmbPresets, btnLoad, btnDelete, btnRefresh, btnImport, btnExport, chkFutureproof, btnDevSchemas
         });
-        bottomPanel.Resize += (s, e) => { btnCiv4Config.Left = bottomPanel.Width - btnCiv4Config.Width - 12; };
+        bottomPanel.Resize += (s, e) => { btnRefresh.Left = bottomPanel.Width - btnRefresh.Width - 12; };
         bottomPanel.Resize += (s, e) => { btnDevSchemas.Left = bottomPanel.Width - btnDevSchemas.Width - 12; };
 
         // Status bar: status text fills the left, launcher version sits at the right.
         var statusPanel = new Panel { Dock = DockStyle.Bottom, Height = 26 };
         Theme.StyleContainer(statusPanel);
+        _statusPanel = statusPanel;
 
         lblStatus = new Label
         {
@@ -227,6 +266,65 @@ public class MainForm : Form
         Controls.Add(bottomPanel);
         Controls.Add(statusPanel);
         Controls.Add(topPanel);
+    }
+
+    /// <summary>
+    /// Shows or hides everything beneath the Manage Modules button (the module lists and the
+    /// preset/dev tools -- the status bar stays), swaps the button's text, and resizes the window:
+    /// shrunk to just the top section + status bar when hidden (with the height locked, since
+    /// there's nothing to gain from a taller window), and restored to its expanded height when shown.
+    /// </summary>
+    private void ApplyModulesVisibility(bool show, bool initial)
+    {
+        SuspendLayout();
+
+        if (show)
+        {
+            MaximumSize = Size.Empty;
+            MinimumSize = new Size(MinFormWidth, ExpandedMinHeight);
+            MaximizeBox = true;
+            _splitContainer.Visible = true;
+            _bottomPanel.Visible = true;
+            ClientSize = new Size(ClientSize.Width, _expandedClientHeight);
+        }
+        else
+        {
+            // A maximized window can't be shrunk; restore it first so the size math below applies.
+            if (!initial && WindowState != FormWindowState.Normal)
+                WindowState = FormWindowState.Normal;
+            if (!initial)
+                _expandedClientHeight = ClientSize.Height;
+
+            _splitContainer.Visible = false;
+            _bottomPanel.Visible = false;
+            MaximizeBox = false;
+            ApplyCollapsedSize();
+        }
+
+        btnManage.Text = show ? "Hide Modules" : "Manage Modules";
+        ResumeLayout(true);
+
+        // If expanding pushed the bottom edge off-screen, slide the window up to fit.
+        if (show && !initial && IsHandleCreated)
+        {
+            var wa = Screen.FromControl(this).WorkingArea;
+            if (Bottom > wa.Bottom)
+                Top = Math.Max(wa.Top, wa.Bottom - Height);
+        }
+    }
+
+    /// <summary>
+    /// Sizes the window to just the top section + status bar and pins its height there (width
+    /// stays freely resizable). Safe to call repeatedly; also re-run once the window handle exists
+    /// so the pinned height matches the real, as-created non-client area.
+    /// </summary>
+    private void ApplyCollapsedSize()
+    {
+        MaximumSize = Size.Empty;
+        MinimumSize = new Size(MinFormWidth, 0);
+        ClientSize = new Size(ClientSize.Width, _topPanel.Height + _statusPanel.Height);
+        MinimumSize = new Size(MinFormWidth, Height);
+        MaximumSize = new Size(SystemInformation.VirtualScreen.Width, Height);
     }
 
     /// <summary>
@@ -274,13 +372,25 @@ public class MainForm : Form
             AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill,
             Resizable = DataGridViewTriState.False,
         };
-        var versionCol = new DataGridViewTextBoxColumn
+
+        // Fixed-width, non-resizable text column; centered ones also center their header.
+        static DataGridViewTextBoxColumn FixedCol(string name, string header, int width, bool centered = false)
         {
-            Name = "Version", HeaderText = "Version",
-            AutoSizeMode = DataGridViewAutoSizeColumnMode.None,
-            Width = 72,
-            Resizable = DataGridViewTriState.False,
-        };
+            var col = new DataGridViewTextBoxColumn
+            {
+                Name = name, HeaderText = header,
+                AutoSizeMode = DataGridViewAutoSizeColumnMode.None,
+                Width = width,
+                Resizable = DataGridViewTriState.False,
+            };
+            if (centered)
+            {
+                col.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                col.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            }
+            return col;
+        }
+
         var infoCol = new DataGridViewButtonColumn
         {
             Name = "Info",
@@ -291,7 +401,17 @@ public class MainForm : Form
             FlatStyle = FlatStyle.Flat,
         };
 
-        grid.Columns.AddRange(nameCol, versionCol, infoCol);
+        // Module | Civ Mech Art Joke (tag checkmarks) | Version | AoE Rev | Loadpass | Info
+        grid.Columns.AddRange(
+            nameCol,
+            FixedCol("Civ", "Civ", 42, centered: true),
+            FixedCol("Mech", "Mech", 42, centered: true),
+            FixedCol("Art", "Art", 42, centered: true),
+            FixedCol("Joke", "Joke", 42, centered: true),
+            FixedCol("Version", "Version", 64),
+            FixedCol("AoERev", "AoE Rev", 66),
+            FixedCol("LoadPass", "Loadpass", 70, centered: true),
+            infoCol);
         return grid;
     }
 
@@ -299,8 +419,8 @@ public class MainForm : Form
 
     private void MainForm_Load(object? sender, EventArgs e)
     {
-        _config = ConfigManager.Load();
-
+        // _config was already loaded in the constructor (the saved Manage Modules state is needed
+        // before the window is shown).
         chkCloseOnLaunch.Checked = _config.CloseOnLaunch;
         chkCloseOnLaunch.CheckedChanged += (s, args) =>
         {
@@ -321,6 +441,10 @@ public class MainForm : Form
         {
             _btsExePath = placement.BtsExePath;
         }
+
+        // Now that the window handle exists, re-pin the collapsed height against the real frame size.
+        if (!_config.ModulesVisible)
+            ApplyCollapsedSize();
 
         RefreshModules(true);
         RefreshPresetCombo();
@@ -465,7 +589,7 @@ public class MainForm : Form
         PopulateGrid(dgvInactive, _inactiveModules, inactiveSelected, inactiveScroll);
 
         if (firstLaunch)
-            lblStatus.Text = $"Drag modules between the two lists, or drag a module folder in from Explorer to install it.";
+            lblStatus.Text = $"Welcome to the launcher! First time users may find the \"Instructions\" button useful.";
         else
             lblStatus.Text = $"{_activeModules.Count} active, {_inactiveModules.Count} inactive modules.";
 
@@ -485,13 +609,19 @@ public class MainForm : Form
         foreach (var m in modules)
         {
             var infoText = !string.IsNullOrWhiteSpace(m.Desc) ? "i" : "";
-            var idx = grid.Rows.Add(m.Name, m.Version, infoText);
+            // Values must follow the column order set up in CreateModuleGrid.
+            var idx = grid.Rows.Add(
+                m.Name,
+                TagMark(m, "Civ"), TagMark(m, "Mech"), TagMark(m, "Art"), TagMark(m, "Joke"),
+                m.Version, m.AoeRev, m.LoadPass,
+                infoText);
             var row = grid.Rows[idx];
             row.Tag = m;
             if (!string.IsNullOrWhiteSpace(m.ShortDesc))
             {
-                row.Cells["Name"].ToolTipText = m.ShortDesc;
-                row.Cells["Version"].ToolTipText = m.ShortDesc;
+                foreach (DataGridViewCell cell in row.Cells)
+                    if (grid.Columns[cell.ColumnIndex].Name != "Info")
+                        cell.ToolTipText = m.ShortDesc;
             }
             // Explicitly set true/false (not just conditionally true): DataGridView can
             // auto-select the first row as a side effect of adding rows/assigning the
@@ -508,10 +638,15 @@ public class MainForm : Form
         }
     }
 
+    /// <summary>A checkmark if the module's [tags] section contains the given tag, otherwise blank.</summary>
+    private static string TagMark(ModuleInfo m, string tag) => m.Tags.Contains(tag) ? "\u2713" : "";
+
     private void ShowModuleDetails(ModuleInfo m)
     {
         var text = new StringBuilder();
         text.AppendLine($"Version: {m.Version}");
+        if (!string.IsNullOrWhiteSpace(m.AoeRev)) text.AppendLine($"AoE Rev: {m.AoeRev}");
+        text.AppendLine($"Load pass: {m.LoadPass}");
         if (!string.IsNullOrWhiteSpace(m.Author)) text.AppendLine($"Author: {m.Author}");
         if (!string.IsNullOrWhiteSpace(m.RifeVersion)) text.AppendLine($"RifE version: {m.RifeVersion}");
         if (m.Compatible.Count > 0) text.AppendLine($"Compatible with: {string.Join(", ", m.Compatible)}");
@@ -534,6 +669,7 @@ public class MainForm : Form
 - You can launch the game by the top center button; be aware it may take some time to activate
 - Active modules are shown on the left panel, and inactive modules on the right panel
 - The Open Civ4 Config button opens your Civ4 config .ini file in your default text editor
+- The Manage Modules button shows or hides the module lists and preset tools; the launcher remembers your choice
 
     USING MODULES
 - Changing the status of a module simply makes this launcher move the game files for you; it can be done manually
@@ -541,10 +677,14 @@ public class MainForm : Form
 - Shift clicking a module with one already selected will select it and all modules between the two
 - Control-clicking a module will toggle the selection of that specific module
 - The Refresh button will update the shown module list if you manually move files with the launcher open
+- The Civ, Mech, Art and Joke columns show a checkmark if the module lists that tag in its info.txt
+- Right-click a module and choose ""Load in pass"" to move it between the Any folder and Order passes 1-4; the Loadpass column shows where each module currently is
+- Moving a module between active and inactive keeps its load pass
 
     PRESETS
 - Pressing the ""Save..."" button will give you the option to save the current selection as a preset
 - Pressing the Load Preset button will cause the currently selected preset in the dropdown box to be loaded
+- Presets remember each module's load pass, and loading one puts modules back in those passes
 - Delete will prompt you whether to delete the currently selected preset
 
     EXPORTING AND IMPORTING
@@ -761,6 +901,26 @@ public class MainForm : Form
         var contextMenu = new ContextMenuStrip();
         var openFolderItem = new ToolStripMenuItem("Open containing folder");
         contextMenu.Items.Add(openFolderItem);
+        contextMenu.Items.Add(new ToolStripSeparator());
+
+        // The module(s) the "Load in pass" items act on, captured when the menu opens: the whole
+        // selection if the right-clicked row is part of it, otherwise just the right-clicked row.
+        var contextTargets = new List<ModuleInfo>();
+        var passItems = new List<ToolStripMenuItem>();
+        foreach (var pass in ModuleLayout.Passes)
+        {
+            var targetPass = pass;
+            var item = new ToolStripMenuItem($"Load in pass: {targetPass}") { Tag = targetPass };
+            item.Click += (s, e) =>
+            {
+                var requests = contextTargets
+                    .Select(m => new MoveRequest { Source = m.FullPath, ToActive = m.IsActive, Pass = targetPass })
+                    .ToList();
+                if (requests.Count > 0) PerformMoves(requests);
+            };
+            contextMenu.Items.Add(item);
+            passItems.Add(item);
+        }
 
         // Row index captured by the most recent right-click, so the click handler below
         // knows which row's folder to open regardless of the current selection.
@@ -777,7 +937,20 @@ public class MainForm : Form
         {
             // Right-clicked empty space below the rows, or a header -- nothing to open.
             if (contextRowIndex < 0 || contextRowIndex >= grid.Rows.Count)
+            {
                 e.Cancel = true;
+                return;
+            }
+
+            contextTargets = GetContextTargets(grid, contextRowIndex);
+
+            // Hide the pass the module(s) are already in. With a multi-selection spanning several
+            // passes an option stays visible as long as it would move at least one of them.
+            foreach (var item in passItems)
+            {
+                var pass = (string)item.Tag!;
+                item.Visible = contextTargets.Any(m => !string.Equals(m.LoadPass, pass, StringComparison.Ordinal));
+            }
         };
 
         openFolderItem.Click += (s, e) =>
@@ -851,40 +1024,80 @@ public class MainForm : Form
         }
     }
 
+    /// <summary>One module folder to move: where it is, which side it's going to, and into which load pass.</summary>
+    private sealed class MoveRequest
+    {
+        public string Source { get; set; } = "";
+        public bool ToActive { get; set; }
+
+        /// <summary>Target load pass ("Any", "1".."4"); empty/invalid keeps the pass the module is already in.</summary>
+        public string Pass { get; set; } = "";
+    }
+
+    private static List<ModuleInfo> GetContextTargets(DataGridView grid, int rowIndex)
+    {
+        var clicked = grid.Rows[rowIndex];
+        if (clicked.Selected && grid.SelectedRows.Count > 1)
+        {
+            return grid.SelectedRows.Cast<DataGridViewRow>()
+                .Select(r => r.Tag).OfType<ModuleInfo>().ToList();
+        }
+        return clicked.Tag is ModuleInfo m ? new List<ModuleInfo> { m } : new List<ModuleInfo>();
+    }
+
+    private static bool SamePath(string a, string b) =>
+        string.Equals(Path.GetFullPath(a).TrimEnd('\\'), Path.GetFullPath(b).TrimEnd('\\'), StringComparison.OrdinalIgnoreCase);
+
+    /// <summary>Moves modules between the active/inactive sides, keeping each one's load pass.</summary>
     private void MoveModules(List<string> sourcePaths, bool toActive)
     {
-        var targetDir = toActive
-            ? Path.Combine(_modPath, "Assets", "Modules", "NormalModules")
-            : Path.Combine(_modPath, "Assets", "Inactive Modules", "NormalModules");
-        Directory.CreateDirectory(targetDir);
+        PerformMoves(sourcePaths
+            .Select(p => new MoveRequest { Source = p, ToActive = toActive, Pass = "" })
+            .ToList());
+    }
 
+    /// <summary>
+    /// Performs every requested move (between sides and/or between load passes), reports any
+    /// failures together in one message, and refreshes the lists once at the end.
+    /// </summary>
+    private void PerformMoves(List<MoveRequest> requests)
+    {
         var errors = new List<string>();
-        foreach (var src in sourcePaths)
+        foreach (var req in requests)
         {
             try
             {
-                var name = Path.GetFileName(src.TrimEnd(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar));
+                var src = req.Source.TrimEnd(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar);
+                var name = Path.GetFileName(src);
+
+                // An unspecified pass keeps the module in the pass it's already in, which is what
+                // preserves the Any / Order\N structure when toggling active <-> inactive.
+                var pass = ModuleLayout.NormalizePass(req.Pass);
+                if (pass.Length == 0) pass = ModuleLayout.GetPassFromPath(src);
+
+                var targetDir = ModuleLayout.GetPassDir(_modPath, req.ToActive, pass);
                 var dest = Path.Combine(targetDir, name);
 
-                if (string.Equals(
-                        Path.GetFullPath(src).TrimEnd('\\'),
-                        Path.GetFullPath(dest).TrimEnd('\\'),
-                        StringComparison.OrdinalIgnoreCase))
-                {
+                if (SamePath(src, dest))
                     continue; // already there
-                }
 
-                if (Directory.Exists(dest))
+                // A module name must be unique across ALL passes on the destination side, not just
+                // the target folder -- otherwise the same module would end up loaded twice.
+                var clash = ModuleLayout.FindOnSide(_modPath, req.ToActive, name)
+                    .FirstOrDefault(p => !SamePath(p, src));
+                if (clash != null)
                 {
-                    errors.Add($"{name}: a module with this name already exists at the destination.");
+                    errors.Add($"{name}: a module with this name already exists in the " +
+                               $"{(req.ToActive ? "active" : "inactive")} list (load pass {ModuleLayout.GetPassFromPath(clash)}).");
                     continue;
                 }
 
+                Directory.CreateDirectory(targetDir);
                 Directory.Move(src, dest);
             }
             catch (Exception ex)
             {
-                errors.Add($"{Path.GetFileName(src)}: {ex.Message}");
+                errors.Add($"{Path.GetFileName(req.Source)}: {ex.Message}");
             }
         }
 
@@ -901,9 +1114,9 @@ public class MainForm : Form
 
     private void InstallDroppedModules(string[] droppedPaths, bool toActive)
     {
-        var targetDir = toActive
-            ? Path.Combine(_modPath, "Assets", "Modules", "NormalModules")
-            : Path.Combine(_modPath, "Assets", "Inactive Modules", "NormalModules");
+        // Modules dropped in from Explorer carry no pass information, so they go in "Any";
+        // right-click > Load in pass afterwards if they belong elsewhere.
+        var targetDir = ModuleLayout.GetPassDir(_modPath, toActive, ModuleLayout.AnyPass);
         Directory.CreateDirectory(targetDir);
 
         var errors = new List<string>();
@@ -920,7 +1133,7 @@ public class MainForm : Form
                 var name = Path.GetFileName(path.TrimEnd(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar));
                 var dest = Path.Combine(targetDir, name);
 
-                if (Directory.Exists(dest))
+                if (ModuleLayout.FindOnSide(_modPath, toActive, name).Count > 0)
                 {
                     errors.Add($"{name}: a module with this name already exists.");
                     continue;
@@ -997,6 +1210,7 @@ public class MainForm : Form
                 Name = m.Name,
                 Version = m.Version,
                 Fingerprint = ModuleScanner.ComputeFingerprint(m.FullPath),
+                LoadPass = m.LoadPass,
             });
         }
         Cursor = Cursors.Default;
@@ -1017,21 +1231,43 @@ public class MainForm : Form
 
     private void ApplyPreset(Preset preset)
     {
-        var wanted = new HashSet<string>(preset.Modules.Select(m => m.Name), StringComparer.OrdinalIgnoreCase);
+        var wanted = preset.Modules
+            .GroupBy(m => m.Name, StringComparer.OrdinalIgnoreCase)
+            .ToDictionary(g => g.Key, g => g.First(), StringComparer.OrdinalIgnoreCase);
 
         var beforeCurrent = _activeModules.Concat(_inactiveModules)
             .GroupBy(m => m.Name, StringComparer.OrdinalIgnoreCase)
             .ToDictionary(g => g.Key, g => g.First(), StringComparer.OrdinalIgnoreCase);
 
         var missing = preset.Modules.Where(m => !beforeCurrent.ContainsKey(m.Name)).ToList();
-        var toActivate = _inactiveModules.Where(m => wanted.Contains(m.Name)).Select(m => m.FullPath).ToList();
-        var toDeactivate = _activeModules.Where(m => !wanted.Contains(m.Name)).Select(m => m.FullPath).ToList();
+
+        // Wanted modules end up active in the pass the preset recorded (a preset with no recorded
+        // pass -- one saved before load passes existed -- leaves each module in its current pass);
+        // unwanted active modules are deactivated, keeping their pass.
+        var requests = new List<MoveRequest>();
+        foreach (var m in _inactiveModules)
+        {
+            if (wanted.TryGetValue(m.Name, out var pm))
+                requests.Add(new MoveRequest { Source = m.FullPath, ToActive = true, Pass = pm.LoadPass });
+        }
+        foreach (var m in _activeModules)
+        {
+            if (wanted.TryGetValue(m.Name, out var pm))
+            {
+                var wantedPass = ModuleLayout.NormalizePass(pm.LoadPass);
+                if (wantedPass.Length > 0 && !string.Equals(wantedPass, m.LoadPass, StringComparison.Ordinal))
+                    requests.Add(new MoveRequest { Source = m.FullPath, ToActive = true, Pass = wantedPass });
+            }
+            else
+            {
+                requests.Add(new MoveRequest { Source = m.FullPath, ToActive = false, Pass = "" });
+            }
+        }
 
         Cursor = Cursors.WaitCursor;
-        if (toActivate.Count > 0) MoveModules(toActivate, toActive: true);
-        if (toDeactivate.Count > 0) MoveModules(toDeactivate, toActive: false);
+        if (requests.Count > 0) PerformMoves(requests);
 
-        // Recompute against the CURRENT (post-move) locations. MoveModules() above may have
+        // Recompute against the CURRENT (post-move) locations. PerformMoves() above may have
         // relocated some of these folders, and comparing against the pre-move snapshot's now
         // stale FullPath values would make ComputeFingerprint operate on a path that no longer
         // exists (it fails safe and returns ""), producing a false "this module changed"

@@ -71,13 +71,20 @@ public static class InstallLocator
         }
         result.BtsExePath = exePath;
 
-        var activeDir = Path.Combine(modPath, "Assets", "Modules", "NormalModules");
-        var inactiveDir = Path.Combine(modPath, "Assets", "Inactive Modules", "NormalModules");
-        if (!Directory.Exists(activeDir) && !Directory.Exists(inactiveDir))
+        // Either side's Any\ or Order\1..4 folder counts as evidence this is an AoE install.
+        var activeDir = ModuleLayout.GetPassDir(modPath, true, ModuleLayout.AnyPass);
+        var inactiveDir = ModuleLayout.GetPassDir(modPath, false, ModuleLayout.AnyPass);
+        var anyModuleFolder = false;
+        foreach (var isActive in new[] { true, false })
+            foreach (var pass in ModuleLayout.Passes)
+                if (Directory.Exists(ModuleLayout.GetPassDir(modPath, isActive, pass)))
+                    anyModuleFolder = true;
+
+        if (!anyModuleFolder)
         {
             result.Errors.Add(
                 "This doesn't look like an Ashes of Erebus install -- missing " +
-                "Assets\\Modules\\NormalModules and Assets\\Inactive Modules\\NormalModules.");
+                "Assets\\Modules\\Any and Assets\\Inactive Modules\\Any (or their Order\\1-4 folders).");
         }
         else
         {
