@@ -61,7 +61,7 @@ def postCombatWonHamsterCommander(pCaster, pOpponent):
 	if iRnd < iHCOdds:
 		pCaster.setHasPromotion(iHamsterCommander, True)
 
-def reqHamsterTrial(pCaster):
+def reqHamsterTrial(caster):
 	iHamsterCommander = getInfoType('PROMOTION_HAMSTER_COMMANDER')
 	iTrialLeash = getInfoType('PROMOTION_TRIAL_LEASH')
 
@@ -71,7 +71,7 @@ def reqHamsterTrial(pCaster):
 		return False
 	return True
 
-def spellHamsterTrial(pCaster):
+def spellHamsterTrial(caster):
 	iHamsterCommander = getInfoType('PROMOTION_HAMSTER_COMMANDER')
 	iTrialLeash = getInfoType('PROMOTION_TRIAL_LEASH')
 
@@ -100,7 +100,7 @@ def spellCelvarSpawn(pCaster):
 	spawnUnit.setLeashRange(4)
 	pPlayer.setCivCounterMod(100)
 	
-def reqForceCityTrade(pCaster):
+def reqForceCityTrade(caster):
 	pPlot = caster.plot()
 	pCity = pPlot.getPlotCity()
 	if pCity.getOwner() == caster.getOwner():
@@ -120,7 +120,7 @@ def reqForceCityTrade(pCaster):
 	return True
 
 
-def spellForceCityTrade(pCaster):
+def spellForceCityTrade(caster):
 	getTeam	 = gc.getTeam
 	pCity = caster.plot().getPlotCity()
 	iTrader	= pCity.getOwner()
