@@ -8,7 +8,7 @@ XtraEsusUnits
 ;Note: it have to be number, so only numberic characters and none or one period
 ;note: one line
 [version]
-0.2
+0.3
 ;
 ;
 ;RifE version - version of RifE for which is this module tested, checked, developed, etc
@@ -54,4 +54,9 @@ Enforcer
 
 Additionally, once you research Guilds, you can spend gold to upgrade your Aphotic Thrones.
 
-V1.0
+V0.2
+-Added the Crime Lord promotion
+-Proprietor's culture bomb and the Death Merchant's gold bomb now halves existing Crime when used
+
+v0.3
+-Fixed the upgrade Aphotic Throne action from being enabled even if there are no Aphotic Thrones in a city

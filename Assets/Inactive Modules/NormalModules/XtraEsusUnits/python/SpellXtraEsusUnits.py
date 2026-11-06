@@ -232,16 +232,27 @@ def reqUpgradeAphoticThrone(caster):
 	#if pCity.isHasReligion(getInfoType('RELIGION_COUNCIL_OF_ESUS')):
 	#	return False
 
-	# Only offer the spell where spellUpgradeThrone has something to upgrade; otherwise the gold is spent for nothing
-	bUpgradable = False
-	for szThrone in ("BUILDING_APHOTIC_THRONE_POISONER", "BUILDING_APHOTIC_THRONE_MERCHANT", "BUILDING_APHOTIC_THRONE_SLAVER", "BUILDING_APHOTIC_THRONE_BORED_NOBLE"):
-		if pCity.isHasBuilding(getInfoType(szThrone)):
-			bUpgradable = True
-			break
-	if not bUpgradable:
+	bHasThrone = False
+
+	if pCity.isHasBuilding(getInfoType("BUILDING_APHOTIC_THRONE_POISONER")):
+		bHasThrone = True
+
+	if pCity.isHasBuilding(getInfoType("BUILDING_APHOTIC_THRONE_MERCHANT")):
+		bHasThrone = True
+
+	if pCity.isHasBuilding(getInfoType("BUILDING_APHOTIC_THRONE_SLAVER")):
+		bHasThrone = True
+
+	if pCity.isHasBuilding(getInfoType("BUILDING_APHOTIC_THRONE_BORED_NOBLE")):
+		bHasThrone = True
+
+	if not bHasThrone:
 		return False
 
 	if pCity.isHasBuilding(getInfoType("BUILDING_APHOTIC_THRONE_MERCHANT_UPGRADED")):
+		return False
+
+	if pCity.isHasBuilding(getInfoType("BUILDING_APHOTIC_THRONE_FAERYL")):
 		return False
 
 	if pCity.isHasBuilding(getInfoType("BUILDING_APHOTIC_THRONE_SLAVER_UPGRADED")):
@@ -251,9 +262,6 @@ def reqUpgradeAphoticThrone(caster):
 		return False
 
 	if pCity.isHasBuilding(getInfoType("BUILDING_APHOTIC_THRONE_BORED_NOBLE_UPGRADED")):
-		return False
-
-	if pCity.isHasBuilding(getInfoType("BUILDING_APHOTIC_THRONE_FAERYL")):
 		return False
 
 	if pCity.isHasBuilding(getInfoType("BUILDING_APHOTIC_THRONE_FAERYL_UPGRADED_PRIESTHOOD")):

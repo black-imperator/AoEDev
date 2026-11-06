@@ -137,7 +137,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_EAGLE_BALLISTA</Type>
-			<Button>Art/Modules/Hamstalfar/Buttons/Ballista.dds</Button>
+			<Button>Art/Modules/Hamstalfar/Buttons/EagleClaw.dds</Button>
 			<fScale>4</fScale>
 			<fInterfaceScale>0.9</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
