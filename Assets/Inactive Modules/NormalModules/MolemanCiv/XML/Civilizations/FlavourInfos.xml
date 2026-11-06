@@ -1,0 +1,21 @@
+<CivFlavourInfos>
+	<CivFlavourInfo>
+		<Civilization>CIVILIZATION_MOLEMEN</Civilization>
+		<Preference>
+			<FlavourType>BONUS_SHEEP</FlavourType>
+			<Value>3</Value>
+		</Preference>
+		<Preference>
+			<FlavourType>PLOT_HILLS</FlavourType>
+			<Value>4</Value>
+		</Preference>
+		<Preference>
+			<FlavourType>TERRAIN_OCEAN</FlavourType>
+			<Value>-2</Value>
+		</Preference>
+		<Preference>
+			<FlavourType>BONUS_PATRIAN_ARTIFACTS</FlavourType>
+			<Value>1</Value>
+		</Preference>
+	</CivFlavourInfo>
+</CivFlavourInfos>

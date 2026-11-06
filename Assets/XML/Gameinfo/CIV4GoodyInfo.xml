@@ -5023,7 +5023,7 @@
 				</GoodyClass>
 			</GoodyClasses>
 			<iWeight>10</iWeight>
-			<Description>TXT_KEY_UNIT_SCALED_DRAGON_CREATION</Description>
+			<Description>TXT_KEY_GOODY_EXPLORE_LAIR_SCALED_DRAGON</Description>
 			<Sound>AS2D_GOODY_HOSTILE</Sound>
 			<iDestroyLairChance>75</iDestroyLairChance>
 			<bUnique>1</bUnique>

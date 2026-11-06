@@ -9185,15 +9185,17 @@ def exploreLairBloodDragon(pUnit, pPlot):
 
 def exploreLairDracoLich(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
-	bPlayer=gc.getPlayer(gc.getORC_PLAYER())
+	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_DRACOLICH'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+	newUnit.setHasPromotion(getInfoType("PROMOTION_DEMON_LAIR"),True)
 
 def exploreLairPitDragon(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())
 	bPlayer=gc.getPlayer(gc.getDEMON_PLAYER())
 	pNewPlot = findClearPlot(-1, pPlot)
 	newUnit = bPlayer.initUnit(getInfoType('UNIT_PIT_DRAGON'), pNewPlot.getX(), pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+	newUnit.setHasPromotion(getInfoType("PROMOTION_DEMON_LAIR"),True)
 
 def exploreLairShimmeringDragonbad(pUnit, pPlot):
 	pPlayer = gc.getPlayer(pUnit.getOwner())

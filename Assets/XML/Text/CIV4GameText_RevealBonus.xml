@@ -11388,6 +11388,19 @@ A band of different colored hairs, moldy cloth, and dried blood tied together wi
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_SCALED_DRAGON_CREATION</Tag>
+		<English>Roused from Danalins watery realm, a Scaled Dragon has emerged in Erebus.
+A constant shapechanger, beware anything in the ocean that seems out of place!</English>
+		<French>Roused from Danalins watery realm, a Scaled Dragon has emerged in Erebus.
+A constant shapechanger, beware anything in the ocean that seems out of place!</French>
+		<German>Roused from Danalins watery realm, a Scaled Dragon has emerged in Erebus.
+A constant shapechanger, beware anything in the ocean that seems out of place!</German>
+		<Italian>Roused from Danalins watery realm, a Scaled Dragon has emerged in Erebus.
+A constant shapechanger, beware anything in the ocean that seems out of place!</Italian>
+		<Spanish>Roused from Danalins watery realm, a Scaled Dragon has emerged in Erebus.
+A constant shapechanger, beware anything in the ocean that seems out of place!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODY_EXPLORE_LAIR_SCALED_DRAGON</Tag>
 		<English>Surging from the depths, a Scaled Dragon with eyes of blazing sapphire and teeth made of conch shells, spreads its wings like a great shoal and, with three powerful beats, rises into the mists and disappears.
 A moment later, rain begins to fall.</English>
 		<French>Surging from the depths, a Scaled Dragon with eyes of blazing sapphire and teeth made of conch shells, spreads its wings like a great shoal and, with three powerful beats, rises into the mists and disappears.
