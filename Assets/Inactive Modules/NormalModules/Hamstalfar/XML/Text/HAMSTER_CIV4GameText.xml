@@ -379,6 +379,44 @@ Trade flows through the heart of this realm like lifeblood.
 		<Spanish>Vagabond</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_VAGABOND_PEDIA</Tag>
+		<English>With the majority of the realm's political will centred on the capital city, the frontier settlements house a very different sort of citizen, the kind that knows how to survive and/or doesn't want to be found.
+
+Local warlords will ultimately emerge to produce a semblance of order and normalcy in these regions, and to do this, they will gather a warband of men and women whose willingness to commit violence is... telling.
+
+When the capital is in need of soldiers, those warlords will often lease a portion of their forces to the city, which results in the majority of the realm's army being comprised of vagabonds and highwaymen in uniform. 
+
+An upside of this is that if they ever suffer major losses in a battle, the ministry of law can submit a report that national crime has dropped sharply this cycle.</English>
+		<French>With the majority of the realm's political will centred on the capital city, the frontier settlements house a very different sort of citizen, the kind that knows how to survive and/or doesn't want to be found.
+
+Local warlords will ultimately emerge to produce a semblance of order and normalcy in these regions, and to do this, they will gather a warband of men and women whose willingness to commit violence is... telling.
+
+When the capital is in need of soldiers, those warlords will often lease a portion of their forces to the city, which results in the majority of the realm's army being comprised of vagabonds and highwaymen in uniform. 
+
+An upside of this is that if they ever suffer major losses in a battle, the ministry of law can submit a report that national crime has dropped sharply this cycle.</French>
+		<German>With the majority of the realm's political will centred on the capital city, the frontier settlements house a very different sort of citizen, the kind that knows how to survive and/or doesn't want to be found.
+
+Local warlords will ultimately emerge to produce a semblance of order and normalcy in these regions, and to do this, they will gather a warband of men and women whose willingness to commit violence is... telling.
+
+When the capital is in need of soldiers, those warlords will often lease a portion of their forces to the city, which results in the majority of the realm's army being comprised of vagabonds and highwaymen in uniform. 
+
+An upside of this is that if they ever suffer major losses in a battle, the ministry of law can submit a report that national crime has dropped sharply this cycle.</German>
+		<Italian>With the majority of the realm's political will centred on the capital city, the frontier settlements house a very different sort of citizen, the kind that knows how to survive and/or doesn't want to be found.
+
+Local warlords will ultimately emerge to produce a semblance of order and normalcy in these regions, and to do this, they will gather a warband of men and women whose willingness to commit violence is... telling.
+
+When the capital is in need of soldiers, those warlords will often lease a portion of their forces to the city, which results in the majority of the realm's army being comprised of vagabonds and highwaymen in uniform. 
+
+An upside of this is that if they ever suffer major losses in a battle, the ministry of law can submit a report that national crime has dropped sharply this cycle.</Italian>
+		<Spanish>With the majority of the realm's political will centred on the capital city, the frontier settlements house a very different sort of citizen, the kind that knows how to survive and/or doesn't want to be found.
+
+Local warlords will ultimately emerge to produce a semblance of order and normalcy in these regions, and to do this, they will gather a warband of men and women whose willingness to commit violence is... telling.
+
+When the capital is in need of soldiers, those warlords will often lease a portion of their forces to the city, which results in the majority of the realm's army being comprised of vagabonds and highwaymen in uniform. 
+
+An upside of this is that if they ever suffer major losses in a battle, the ministry of law can submit a report that national crime has dropped sharply this cycle.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_WAYLAYER</Tag>
 		<English>Waylayer</English>
 		<French>Waylayer</French>
@@ -387,12 +425,63 @@ Trade flows through the heart of this realm like lifeblood.
 		<Spanish>Waylayer</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_WAYLAYER_PEDIA</Tag>
+		<English>With warlords enlisting actual bandits to serve as soldiers, you would be forgiven for thinking that traders venturing to the great city would be biting their nails every step of the way.
+However, this is not the case; merchants and caravans of all nations are under certain guarantees of protection here, as without them everyone would suffer.
+
+If a merchant is ever robbed, the city will respond by deploying Waylayers to find the offending person and end them, often within the same day. 
+Criminals don't snitch, but telling a Waylayer where to find someone is not snitching; it's just maintaining standards.
+In the end, the stolen goods will be returned, and an escort will be assigned to the traveller for the rest of their stay in Cricetinae.</English>
+		<French>With warlords enlisting actual bandits to serve as soldiers, you would be forgiven for thinking that traders venturing to the great city would be biting their nails every step of the way.
+However, this is not the case; merchants and caravans of all nations are under certain guarantees of protection here, as without them everyone would suffer.
+
+If a merchant is ever robbed, the city will respond by deploying Waylayers to find the offending person and end them, often within the same day. 
+Criminals don't snitch, but telling a Waylayer where to find someone is not snitching; it's just maintaining standards.
+In the end, the stolen goods will be returned, and an escort will be assigned to the traveller for the rest of their stay in Cricetinae.</French>
+		<German>With warlords enlisting actual bandits to serve as soldiers, you would be forgiven for thinking that traders venturing to the great city would be biting their nails every step of the way.
+However, this is not the case; merchants and caravans of all nations are under certain guarantees of protection here, as without them everyone would suffer.
+
+If a merchant is ever robbed, the city will respond by deploying Waylayers to find the offending person and end them, often within the same day. 
+Criminals don't snitch, but telling a Waylayer where to find someone is not snitching; it's just maintaining standards.
+In the end, the stolen goods will be returned, and an escort will be assigned to the traveller for the rest of their stay in Cricetinae.</German>
+		<Italian>With warlords enlisting actual bandits to serve as soldiers, you would be forgiven for thinking that traders venturing to the great city would be biting their nails every step of the way.
+However, this is not the case; merchants and caravans of all nations are under certain guarantees of protection here, as without them everyone would suffer.
+
+If a merchant is ever robbed, the city will respond by deploying Waylayers to find the offending person and end them, often within the same day. 
+Criminals don't snitch, but telling a Waylayer where to find someone is not snitching; it's just maintaining standards.
+In the end, the stolen goods will be returned, and an escort will be assigned to the traveller for the rest of their stay in Cricetinae.</Italian>
+		<Spanish>With warlords enlisting actual bandits to serve as soldiers, you would be forgiven for thinking that traders venturing to the great city would be biting their nails every step of the way.
+However, this is not the case; merchants and caravans of all nations are under certain guarantees of protection here, as without them everyone would suffer.
+
+If a merchant is ever robbed, the city will respond by deploying Waylayers to find the offending person and end them, often within the same day. 
+Criminals don't snitch, but telling a Waylayer where to find someone is not snitching; it's just maintaining standards.
+In the end, the stolen goods will be returned, and an escort will be assigned to the traveller for the rest of their stay in Cricetinae.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_COMPACT_GUARDIAN</Tag>
 		<English>Guardian of the Compact</English>
 		<French>Guardian of the Compact</French>
 		<German>W&#228;chter des Abkommens</German>
 		<Italian>Guardian of the Compact</Italian>
 		<Spanish>Guardian of the Compact</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_COMPACT_GUARDIAN_PEDIA</Tag>
+		<English>With the possibility of not only having gainful employment as a criminal, but the actual possibility of career advancement, the great city attracts some of the most skilled bastards in the world.
+These thugs, dressed up in rich finery and polished leather, are not as stealthy as one would expect from someone so qualified in their profession.
+That is because, like a sword on the hip of a soldier, they are meant to be seen and feared. </English>
+		<French>With the possibility of not only having gainful employment as a criminal, but the actual possibility of career advancement, the great city attracts some of the most skilled bastards in the world.
+These thugs, dressed up in rich finery and polished leather, are not as stealthy as one would expect from someone so qualified in their profession.
+That is because, like a sword on the hip of a soldier, they are meant to be seen and feared. </French>
+		<German>With the possibility of not only having gainful employment as a criminal, but the actual possibility of career advancement, the great city attracts some of the most skilled bastards in the world.
+These thugs, dressed up in rich finery and polished leather, are not as stealthy as one would expect from someone so qualified in their profession.
+That is because, like a sword on the hip of a soldier, they are meant to be seen and feared. </German>
+		<Italian>With the possibility of not only having gainful employment as a criminal, but the actual possibility of career advancement, the great city attracts some of the most skilled bastards in the world.
+These thugs, dressed up in rich finery and polished leather, are not as stealthy as one would expect from someone so qualified in their profession.
+That is because, like a sword on the hip of a soldier, they are meant to be seen and feared. </Italian>
+		<Spanish>With the possibility of not only having gainful employment as a criminal, but the actual possibility of career advancement, the great city attracts some of the most skilled bastards in the world.
+These thugs, dressed up in rich finery and polished leather, are not as stealthy as one would expect from someone so qualified in their profession.
+That is because, like a sword on the hip of a soldier, they are meant to be seen and feared. </Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_ELDER</Tag>
@@ -466,6 +555,24 @@ Look at it, isn't it beautiful? Lightweight, yet strong enough to stop a blunder
 		<Spanish>Haven</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HARBOR_HAMSTALFAR_PEDIA</Tag>
+		<English>What sets the Haven ports apart from other docks is their fixation on detailed documentation.
+Every single foreign object is counted, measured, tested, sometimes even chewed on, to give an accurate report of the item's function and how it was possibly produced.
+The cost in ink and scrolls alone adds up to a fortune each day, but the city's guilds pay it by commission in exchange for access so they may stay ahead of the next trend or business opportunity.</English>
+		<French>What sets the Haven ports apart from other docks is their fixation on detailed documentation.
+Every single foreign object is counted, measured, tested, sometimes even chewed on, to give an accurate report of the item's function and how it was possibly produced.
+The cost in ink and scrolls alone adds up to a fortune each day, but the city's guilds pay it by commission in exchange for access so they may stay ahead of the next trend or business opportunity.</French>
+		<German>What sets the Haven ports apart from other docks is their fixation on detailed documentation.
+Every single foreign object is counted, measured, tested, sometimes even chewed on, to give an accurate report of the item's function and how it was possibly produced.
+The cost in ink and scrolls alone adds up to a fortune each day, but the city's guilds pay it by commission in exchange for access so they may stay ahead of the next trend or business opportunity.</German>
+		<Italian>What sets the Haven ports apart from other docks is their fixation on detailed documentation.
+Every single foreign object is counted, measured, tested, sometimes even chewed on, to give an accurate report of the item's function and how it was possibly produced.
+The cost in ink and scrolls alone adds up to a fortune each day, but the city's guilds pay it by commission in exchange for access so they may stay ahead of the next trend or business opportunity.</Italian>
+		<Spanish>What sets the Haven ports apart from other docks is their fixation on detailed documentation.
+Every single foreign object is counted, measured, tested, sometimes even chewed on, to give an accurate report of the item's function and how it was possibly produced.
+The cost in ink and scrolls alone adds up to a fortune each day, but the city's guilds pay it by commission in exchange for access so they may stay ahead of the next trend or business opportunity.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_INN_HAMSTALFAR</Tag>
 		<English>Auberge</English>
 		<French>Auberge</French>
@@ -482,12 +589,38 @@ Look at it, isn't it beautiful? Lightweight, yet strong enough to stop a blunder
 		<Spanish>Marker of the Covenant</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BUILDING_LIGHTHOUSE_HAMSTALFAR_PEDIA</Tag>
+		<English>The only way to provision and maintain a city of this gigantic scale is through an elaborate network of waterways and channels that allow ships to carry heavy loads of grain and lumber without interruption.
+
+"It's a work of art! You know... this city eats more in a day than most empires eat in a week, and it's all thanks to these channels, the lifeblood of Cricetinae!"</English>
+		<French>The only way to provision and maintain a city of this gigantic scale is through an elaborate network of waterways and channels that allow ships to carry heavy loads of grain and lumber without interruption.
+
+"It's a work of art! You know... this city eats more in a day than most empires eat in a week, and it's all thanks to these channels, the lifeblood of Cricetinae!"</French>
+		<German>The only way to provision and maintain a city of this gigantic scale is through an elaborate network of waterways and channels that allow ships to carry heavy loads of grain and lumber without interruption.
+
+"It's a work of art! You know... this city eats more in a day than most empires eat in a week, and it's all thanks to these channels, the lifeblood of Cricetinae!"</German>
+		<Italian>The only way to provision and maintain a city of this gigantic scale is through an elaborate network of waterways and channels that allow ships to carry heavy loads of grain and lumber without interruption.
+
+"It's a work of art! You know... this city eats more in a day than most empires eat in a week, and it's all thanks to these channels, the lifeblood of Cricetinae!"</Italian>
+		<Spanish>The only way to provision and maintain a city of this gigantic scale is through an elaborate network of waterways and channels that allow ships to carry heavy loads of grain and lumber without interruption.
+
+"It's a work of art! You know... this city eats more in a day than most empires eat in a week, and it's all thanks to these channels, the lifeblood of Cricetinae!"</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TAVERN_HAMSTALFAR</Tag>
 		<English>Taphouse</English>
 		<French>Bar</French>
 		<German>Zapfhaus</German>
 		<Italian>Taphouse</Italian>
 		<Spanish>Taphouse</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TAVERN_HAMSTALFAR_PEDIA</Tag>
+		<English>More than just ale makes its way into the Taphouse, in fact, the main attraction is often the exotic works of art and unfamiliar music echoing down the streets of this crossroad of culture.</English>
+		<French>More than just ale makes its way into the Taphouse, in fact, the main attraction is often the exotic works of art and unfamiliar music echoing down the streets of this crossroad of culture.</French>
+		<German>More than just ale makes its way into the Taphouse, in fact, the main attraction is often the exotic works of art and unfamiliar music echoing down the streets of this crossroad of culture.</German>
+		<Italian>More than just ale makes its way into the Taphouse, in fact, the main attraction is often the exotic works of art and unfamiliar music echoing down the streets of this crossroad of culture.</Italian>
+		<Spanish>More than just ale makes its way into the Taphouse, in fact, the main attraction is often the exotic works of art and unfamiliar music echoing down the streets of this crossroad of culture.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MONEYCHANGER_HAMSTALFAR</Tag>
@@ -498,12 +631,38 @@ Look at it, isn't it beautiful? Lightweight, yet strong enough to stop a blunder
 		<Spanish>Countinghouse</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MONEYCHANGER_HAMSTALFAR_PEDIA</Tag>
+		<English>The Countinghouse often serves as a first step for budding traders who need to gain some practice before launching their own expeditions to faraway lands.</English>
+		<French>The Countinghouse often serves as a first step for budding traders who need to gain some practice before launching their own expeditions to faraway lands.</French>
+		<German>The Countinghouse often serves as a first step for budding traders who need to gain some practice before launching their own expeditions to faraway lands.</German>
+		<Italian>The Countinghouse often serves as a first step for budding traders who need to gain some practice before launching their own expeditions to faraway lands.</Italian>
+		<Spanish>The Countinghouse often serves as a first step for budding traders who need to gain some practice before launching their own expeditions to faraway lands.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ARTISANS_WORKSHOP_HAMSTALFAR</Tag>
 		<English>Bottega</English>
 		<French>Bottega</French>
 		<German>Bottega</German>
 		<Italian>Bottega</Italian>
 		<Spanish>Bottega</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ARTISANS_WORKSHOP_HAMSTALFAR_PEDIA</Tag>
+		<English>The Bottegas of this city allow it to fully harness the endless stream of trade that flows through these streets and rivers.
+Does the army need new boots for every soldier by tomorrow? Royal commissions can make it happen, as hundreds of shops start churning out boots to secure new favour in the markets.
+Sure, the ones made by a hatmaker will not fit very well, but if there is one thing the trade of Cricetinae guarantees, it is abundance.</English>
+		<French>The Bottegas of this city allow it to fully harness the endless stream of trade that flows through these streets and rivers.
+Does the army need new boots for every soldier by tomorrow? Royal commissions can make it happen, as hundreds of shops start churning out boots to secure new favour in the markets.
+Sure, the ones made by a hatmaker will not fit very well, but if there is one thing the trade of Cricetinae guarantees, it is abundance.</French>
+		<German>The Bottegas of this city allow it to fully harness the endless stream of trade that flows through these streets and rivers.
+Does the army need new boots for every soldier by tomorrow? Royal commissions can make it happen, as hundreds of shops start churning out boots to secure new favour in the markets.
+Sure, the ones made by a hatmaker will not fit very well, but if there is one thing the trade of Cricetinae guarantees, it is abundance.</German>
+		<Italian>The Bottegas of this city allow it to fully harness the endless stream of trade that flows through these streets and rivers.
+Does the army need new boots for every soldier by tomorrow? Royal commissions can make it happen, as hundreds of shops start churning out boots to secure new favour in the markets.
+Sure, the ones made by a hatmaker will not fit very well, but if there is one thing the trade of Cricetinae guarantees, it is abundance.</Italian>
+		<Spanish>The Bottegas of this city allow it to fully harness the endless stream of trade that flows through these streets and rivers.
+Does the army need new boots for every soldier by tomorrow? Royal commissions can make it happen, as hundreds of shops start churning out boots to secure new favour in the markets.
+Sure, the ones made by a hatmaker will not fit very well, but if there is one thing the trade of Cricetinae guarantees, it is abundance.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_TARQ</Tag>
@@ -600,5 +759,104 @@ Look at it, isn't it beautiful? Lightweight, yet strong enough to stop a blunder
 		<German>Trade is a way of life here, and with each new soul born here another business venture begins.</German>
 		<Italian>Trade is a way of life here, and with each new soul born here another business venture begins.</Italian>
 		<Spanish>Trade is a way of life here, and with each new soul born here another business venture begins.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_EAGLE_CLAW_BOLT</Tag>
+		<English>Eagle Claw Bolt Throwers</English>
+		<French>Eagle Claw Bolt Throwers</French>
+		<German>Eagle Claw Bolt Throwers</German>
+		<Italian>Eagle Claw Bolt Throwers</Italian>
+		<Spanish>Eagle Claw Bolt Throwers</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_EAGLE_CLAW_BOLT_PEDIA</Tag>
+		<English>"And this... This is what we are calling the Eagle Claw Bolt Thrower; beautiful, isn't it?"
+
+A bespectacled elven bureaucrat looked down his nose at the device: "It is striking... but how is the accuracy?"
+
+"This bad boy can impale a fleeing goblin child dead centre from three thousand steps!"
+
+The bureaucrat goes pale"Gads! That metaphor is horrifying!"
+
+Smirking, the engineer replied: "Everything about the Eagle Claw is horrifying; that's the entire point. The more cruel the weapon, the less anyone wants to fight you!"
+
+...We shall requisition 100 as a start and go from there." </English>
+		<French>"And this... This is what we are calling the Eagle Claw Bolt Thrower; beautiful, isn't it?"
+
+A bespectacled elven bureaucrat looked down his nose at the device: "It is striking... but how is the accuracy?"
+
+"This bad boy can impale a fleeing goblin child dead centre from three thousand steps!"
+
+The bureaucrat goes pale"Gads! That metaphor is horrifying!"
+
+Smirking, the engineer replied: "Everything about the Eagle Claw is horrifying; that's the entire point. The more cruel the weapon, the less anyone wants to fight you!"
+
+...We shall requisition 100 as a start and go from there." </French>
+		<German>"And this... This is what we are calling the Eagle Claw Bolt Thrower; beautiful, isn't it?"
+
+A bespectacled elven bureaucrat looked down his nose at the device: "It is striking... but how is the accuracy?"
+
+"This bad boy can impale a fleeing goblin child dead centre from three thousand steps!"
+
+The bureaucrat goes pale"Gads! That metaphor is horrifying!"
+
+Smirking, the engineer replied: "Everything about the Eagle Claw is horrifying; that's the entire point. The more cruel the weapon, the less anyone wants to fight you!"
+
+...We shall requisition 100 as a start and go from there." </German>
+		<Italian>"And this... This is what we are calling the Eagle Claw Bolt Thrower; beautiful, isn't it?"
+
+A bespectacled elven bureaucrat looked down his nose at the device: "It is striking... but how is the accuracy?"
+
+"This bad boy can impale a fleeing goblin child dead centre from three thousand steps!"
+
+The bureaucrat goes pale"Gads! That metaphor is horrifying!"
+
+Smirking, the engineer replied: "Everything about the Eagle Claw is horrifying; that's the entire point. The more cruel the weapon, the less anyone wants to fight you!"
+
+...We shall requisition 100 as a start and go from there." </Italian>
+		<Spanish>"And this... This is what we are calling the Eagle Claw Bolt Thrower; beautiful, isn't it?"
+
+A bespectacled elven bureaucrat looked down his nose at the device: "It is striking... but how is the accuracy?"
+
+"This bad boy can impale a fleeing goblin child dead centre from three thousand steps!"
+
+The bureaucrat goes pale"Gads! That metaphor is horrifying!"
+
+Smirking, the engineer replied: "Everything about the Eagle Claw is horrifying; that's the entire point. The more cruel the weapon, the less anyone wants to fight you!"
+
+...We shall requisition 100 as a start and go from there." </Spanish>
+	</TEXT>
+	
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_HAMSTER_SMUGGLING</Tag>
+		<English>Smuggling Route</English>
+		<French>Smuggling Route</French>
+		<German>Smuggling Route</German>
+		<Italian>Smuggling Route</Italian>
+		<Spanish>Smuggling Route</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HAMSTER_SMUGGLE</Tag>
+		<English>Smuggling Route costs</English>
+		<French>Smuggling Route costs</French>
+		<German>Smuggling Route costs</German>
+		<Italian>Smuggling Route costs</Italian>
+		<Spanish>Smuggling Route costs</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_HAMSTER_SMUGGLING_PEDIA</Tag>
+		<English>Smuggling Route</English>
+		<French>Smuggling Route</French>
+		<German>Smuggling Route</German>
+		<Italian>Smuggling Route</Italian>
+		<Spanish>Smuggling Route</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_HAMSTER_SMUGGLING_HELP</Tag>
+		<English>Smuggling Routes force another player into an open borders agreement by paying an amount of gold that increases each time, and lowers your alignment.[NEWLINE][ICON_BULLET]Only castable in other factions cities.</English>
+		<French>Smuggling Routes force another player into an open borders agreement by paying an amount of gold that increases each time, and lowers your alignment.[NEWLINE][ICON_BULLET]Only castable in other factions cities.</French>
+		<German>Smuggling Routes force another player into an open borders agreement by paying an amount of gold that increases each time, and lowers your alignment.[NEWLINE][ICON_BULLET]Only castable in other factions cities.</German>
+		<Italian>Smuggling Routes force another player into an open borders agreement by paying an amount of gold that increases each time, and lowers your alignment.[NEWLINE][ICON_BULLET]Only castable in other factions cities.</Italian>
+		<Spanish>Smuggling Routes force another player into an open borders agreement by paying an amount of gold that increases each time, and lowers your alignment.[NEWLINE][ICON_BULLET]Only castable in other factions cities.</Spanish>
 	</TEXT>
 </Civ4GameText>

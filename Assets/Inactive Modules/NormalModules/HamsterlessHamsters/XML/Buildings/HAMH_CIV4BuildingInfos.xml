@@ -26,7 +26,7 @@
 			<BuildingClass>BUILDINGCLASS_HARBOR</BuildingClass>
 			<Type>BUILDING_HARBOR_HAMSTALFAR</Type>
 			<Description>TXT_KEY_BUILDING_HARBOR_HAMSTALFAR</Description>
-			<Civilopedia>TXT_KEY_BUILDING_HARBOR_PEDIA</Civilopedia>
+			<Civilopedia>TXT_KEY_BUILDING_HARBOR_HAMSTALFAR_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_HARBOR</ArtDefineTag>
 		</BuildingInfo>
@@ -42,7 +42,7 @@
 			<BuildingClass>BUILDINGCLASS_LIGHTHOUSE</BuildingClass>
 			<Type>BUILDING_LIGHTHOUSE_HAMSTALFAR</Type>
 			<Description>TXT_KEY_BUILDING_LIGHTHOUSE_HAMSTALFAR_NO</Description>
-			<Civilopedia>TXT_KEY_BUILDING_LIGHTHOUSE_PEDIA</Civilopedia>
+			<Civilopedia>TXT_KEY_BUILDING_LIGHTHOUSE_HAMSTALFAR_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_LIGHTHOUSE</ArtDefineTag>
 		</BuildingInfo>
@@ -50,7 +50,7 @@
 			<BuildingClass>BUILDINGCLASS_TAVERN</BuildingClass>
 			<Type>BUILDING_TAVERN_HAMSTALFAR</Type>
 			<Description>TXT_KEY_BUILDING_TAVERN_HAMSTALFAR</Description>
-			<Civilopedia>TXT_KEY_BUILDING_TAVERN_PEDIA</Civilopedia>
+			<Civilopedia>TXT_KEY_BUILDING_TAVERN_HAMSTALFAR_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_TAVERN_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TAVERN</ArtDefineTag>
@@ -59,7 +59,7 @@
 			<BuildingClass>BUILDINGCLASS_MONEYCHANGER</BuildingClass>
 			<Type>BUILDING_MONEYCHANGER_HAMSTALFAR</Type>
 			<Description>TXT_KEY_BUILDING_MONEYCHANGER_HAMSTALFAR</Description>
-			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
+			<Civilopedia>TXT_KEY_BUILDING_MONEYCHANGER_HAMSTALFAR_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MONEYCHANGER</ArtDefineTag>
 		</BuildingInfo>
@@ -67,7 +67,7 @@
 			<BuildingClass>BUILDINGCLASS_ARTISANS_WORKSHOP</BuildingClass>
 			<Type>BUILDING_ARTISANS_WORKSHOP_HAMSTALFAR</Type>
 			<Description>TXT_KEY_BUILDING_ARTISANS_WORKSHOP_HAMSTALFAR</Description>
-			<Civilopedia>TXT_KEY_BUILDING_ARTISANS_WORKSHOP_PEDIA</Civilopedia>
+			<Civilopedia>TXT_KEY_BUILDING_ARTISANS_WORKSHOP_HAMSTALFAR_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ARTISANS_WORKSHOP</ArtDefineTag>
 		</BuildingInfo>

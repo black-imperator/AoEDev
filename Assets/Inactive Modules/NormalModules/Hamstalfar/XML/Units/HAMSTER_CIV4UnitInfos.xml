@@ -380,13 +380,13 @@
 			</DenyPromotions>
 			<iWeaponTierMax>3</iWeaponTierMax>
 		</UnitInfo>
-		<UnitInfo>		<!-- Ribauldequin - needs a rename and new model -->
+		<UnitInfo>		<!-- Ribauldequin - Eagle Claw Bolt Throwers -->
 			<Class>UNITCLASS_CANNON</Class>
 			<Type>UNIT_RIBAULDEQUIN</Type>
 			<Combat>UNITCOMBAT_SIEGE</Combat>
 			<DefaultUnitAI>UNITAI_ATTACK_CITY</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_RIBAULDEQUIN</Description>
-			<Civilopedia>TXT_KEY_UNIT_RIBAULDEQUIN_PEDIA</Civilopedia>
+			<Description>TXT_KEY_UNIT_EAGLE_CLAW_BOLT</Description>
+			<Civilopedia>TXT_KEY_UNIT_EAGLE_CLAW_BOLT_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_CANNON_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<bMilitaryHappiness>1</bMilitaryHappiness>
@@ -450,8 +450,8 @@
 			<UnitMeshGroups>
 				<iGroupSize>2</iGroupSize>
 				<fMaxSpeed>1.25</fMaxSpeed>
-				<iMeleeWaveSize>1</iMeleeWaveSize>
-				<iRangedWaveSize>1</iRangedWaveSize>
+				<iMeleeWaveSize>2</iMeleeWaveSize>
+				<iRangedWaveSize>2</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>1</iRequired>
 					<EarlyArtDefineTag>ART_DEF_UNIT_EAGLE_BALLISTA</EarlyArtDefineTag>
@@ -550,7 +550,7 @@
 			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
 			<iExtraPerception>2</iExtraPerception>
 			<Description>TXT_KEY_UNIT_VAGABOND</Description>
-			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
+			<Civilopedia>TXT_KEY_UNIT_VAGABOND_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_VAGABOND_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<bMilitaryHappiness>1</bMilitaryHappiness>
@@ -627,7 +627,7 @@
 			<iInvisibleLevel>1</iInvisibleLevel>
 			<iExtraPerception>2</iExtraPerception>
 			<Description>TXT_KEY_UNIT_WAYLAYER</Description>
-			<Civilopedia>TXT_KEY_UNIT_ASSASSIN_PEDIA</Civilopedia>
+			<Civilopedia>TXT_KEY_UNIT_WAYLAYER_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_ASSASSIN_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<bMilitaryHappiness>1</bMilitaryHappiness>

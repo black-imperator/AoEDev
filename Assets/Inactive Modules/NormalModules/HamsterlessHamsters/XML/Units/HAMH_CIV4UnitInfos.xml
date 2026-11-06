@@ -63,17 +63,17 @@
 			<Type>UNIT_RIBAULDEQUIN</Type>
 			<Combat>UNITCOMBAT_SIEGE</Combat>
 			<DefaultUnitAI>UNITAI_ATTACK_CITY</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_RIBAULDEQUIN_NO</Description>
-			<Civilopedia>TXT_KEY_UNIT_RIBAULDEQUIN_NO_PEDIA</Civilopedia>
+			<Description>TXT_KEY_UNIT_EAGLE_CLAW_BOLT</Description>
+			<Civilopedia>TXT_KEY_UNIT_EAGLE_CLAW_BOLT_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_CANNON_STRATEGY</Strategy>
 			<UnitMeshGroups>
-				<iGroupSize>1</iGroupSize>
+				<iGroupSize>2</iGroupSize>
 				<fMaxSpeed>1.25</fMaxSpeed>
-				<iMeleeWaveSize>1</iMeleeWaveSize>
-				<iRangedWaveSize>1</iRangedWaveSize>
+				<iMeleeWaveSize>2</iMeleeWaveSize>
+				<iRangedWaveSize>2</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_CANNON_HAMSTALFAR</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_EAGLE_BALLISTA</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 		</UnitInfo>
@@ -82,7 +82,7 @@
 			<Type>UNIT_COMPACT_GUARDIAN</Type>
 			<Combat>UNITCOMBAT_ARCHER</Combat>
 			<Description>TXT_KEY_UNIT_COMPACT_GUARDIAN_NO</Description>
-			<Civilopedia>TXT_KEY_UNIT_COMPACT_GUARDIAN_NO_PEDIA</Civilopedia>
+			<Civilopedia>TXT_KEY_UNIT_COMPACT_GUARDIAN_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_SHADOW_STRATEGY</Strategy>
 			<UnitMeshGroups>
 				<iGroupSize>1</iGroupSize>
