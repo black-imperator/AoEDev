@@ -56,7 +56,8 @@
 			<Effect>EFFECT_SPELL1</Effect>
 			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Promotions/Nomadic.dds</Button>
 		</SpellInfo>
-		<SpellInfo>			<!-- Migrate In-->
+		<!-- 
+		<SpellInfo>			Migrate In
 			<Type>SPELL_MIGRATE_IN</Type>
 			<Description>TXT_KEY_SPELL_MIGRATE_IN</Description>
 			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
@@ -72,6 +73,70 @@
 			<iChangePopulation>1</iChangePopulation>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Promotions/Nomadic.dds</Button>
+		</SpellInfo>
+		-->
+		<SpellInfo>			<!-- Supply of Food -->
+			<Type>SPELL_SUPPLY_FOOD</Type>
+			<Description>TXT_KEY_SPELL_SUPPLY_FOOD</Description>
+			<Civilopedia>TXT_KEY_SPELL_SUPPLY_FOOD_PEDIA</Civilopedia>
+			<Help>TXT_KEY_SPELL_SUPPLY_FOOD_HELP</Help>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<UnitClassPrereq>UNITCLASS_NOMAD_WAGON</UnitClassPrereq>
+			<bAllowAI>1</bAllowAI>
+			<iRange>0</iRange>
+			<iTargetRange>0</iTargetRange>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<iDelay>3</iDelay>
+			<bHasCasted>1</bHasCasted>
+			<CreateUnitType>UNIT_FOOD_SUPPLIES</CreateUnitType>
+			<iCreateUnitNum>1</iCreateUnitNum>
+			<bPermanentUnitCreate>1</bPermanentUnitCreate>
+			<PyRequirement>reqFertility(pCaster)</PyRequirement>
+			<Effect>EFFECT_SPELL1</Effect>
+			<Sound>AS2D_POSITIVE_DINK</Sound>
+			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Spells/Food.dds</Button>
+		</SpellInfo>
+		<SpellInfo>			<!-- Supply of Valuables -->
+			<Type>SPELL_SUPPLY_VALUABLES</Type>
+			<Description>TXT_KEY_SPELL_SUPPLY_VALUABLES</Description>
+			<Civilopedia>TXT_KEY_SPELL_SUPPLY_VALUABLES_PEDIA</Civilopedia>
+			<Help>TXT_KEY_SPELL_SUPPLY_VALUABLES_HELP</Help>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<UnitClassPrereq>UNITCLASS_NOMAD_WAGON</UnitClassPrereq>
+			<bAllowAI>1</bAllowAI>
+			<iRange>0</iRange>
+			<iTargetRange>0</iTargetRange>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<iDelay>3</iDelay>
+			<bHasCasted>1</bHasCasted>
+			<CreateUnitType>UNIT_VALUABLES_SUPPLIES</CreateUnitType>
+			<iCreateUnitNum>1</iCreateUnitNum>
+			<bPermanentUnitCreate>1</bPermanentUnitCreate>
+			<PyRequirement>reqValuable(pCaster)</PyRequirement>
+			<Effect>EFFECT_SPELL1</Effect>
+			<Sound>AS2D_POSITIVE_DINK</Sound>
+			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Spells/Valuable.dds</Button>
+		</SpellInfo>
+		<SpellInfo>			<!-- Supply of Work Material -->
+			<Type>SPELL_SUPPLY_WORKABLES</Type>
+			<Description>TXT_KEY_SPELL_SUPPLY_WORKABLES</Description>
+			<Civilopedia>TXT_KEY_SPELL_SUPPLY_WORKABLES_PEDIA</Civilopedia>
+			<Help>TXT_KEY_SPELL_SUPPLY_WORKABLES_HELP</Help>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<UnitClassPrereq>UNITCLASS_NOMAD_WAGON</UnitClassPrereq>
+			<bAllowAI>1</bAllowAI>
+			<iRange>0</iRange>
+			<iTargetRange>0</iTargetRange>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<iDelay>3</iDelay>
+			<bHasCasted>1</bHasCasted>
+			<CreateUnitType>UNIT_WORKABLES_SUPPLIES</CreateUnitType>
+			<iCreateUnitNum>1</iCreateUnitNum>
+			<bPermanentUnitCreate>1</bPermanentUnitCreate>
+			<PyRequirement>reqWorkable(pCaster)</PyRequirement>
+			<Effect>EFFECT_SPELL1</Effect>
+			<Sound>AS2D_POSITIVE_DINK</Sound>
+			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Spells/Material.dds</Button>
 		</SpellInfo>
 	</SpellInfos>
 </Civ4SpellInfos>

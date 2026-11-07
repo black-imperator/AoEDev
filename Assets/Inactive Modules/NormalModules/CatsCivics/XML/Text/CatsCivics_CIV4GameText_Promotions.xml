@@ -365,5 +365,29 @@
 		<Italian>Nomadic</Italian>
 		<Spanish>Nomadic</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_NOMAD_WAGON</Tag>
+		<English>Travelling Caravan</English>
+		<French>Travelling Caravan</French>
+		<German>Travelling Caravan</German>
+		<Italian>Travelling Caravan</Italian>
+		<Spanish>Travelling Caravan</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_FOOD_SUPPLIES</Tag>
+		<English>Food Wagon</English>
+		<French>Food Wagon</French>
+		<German>Food Wagon</German>
+		<Italian>Food Wagon</Italian>
+		<Spanish>Food Wagon</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>PROMOTION_VALUABLES_SUPPLIES</Tag>
+		<English>Loot Wagon</English>
+		<French>Loot Wagon</French>
+		<German>Loot Wagon</German>
+		<Italian>Loot Wagon</Italian>
+		<Spanish>Loot Wagon</Spanish>
+	</TEXT>
 
 </Civ4GameText>

@@ -45,4 +45,28 @@
 		<Italian>Migrate In</Italian>
 		<Spanish>Migrate In</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_SUPPLY_FOOD</Tag>
+		<English>Gather Food</English>
+		<French>Gather Food</French>
+		<German>Gather Food</German>
+		<Italian>Gather Food</Italian>
+		<Spanish>Gather Food</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_SUPPLY_VALUABLES</Tag>
+		<English>Collect Valuables</English>
+		<French>Collect Valuables</French>
+		<German>Collect Valuables</German>
+		<Italian>Collect Valuables</Italian>
+		<Spanish>Collect Valuables</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_SUPPLY_WORKABLES</Tag>
+		<English>Stockpile Material</English>
+		<French>Stockpile Material</French>
+		<German>Stockpile Material</German>
+		<Italian>Stockpile Material</Italian>
+		<Spanish>Stockpile Material</Spanish>
+	</TEXT>
 </Civ4GameText>

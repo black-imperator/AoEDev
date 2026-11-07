@@ -122,5 +122,211 @@
 			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_ShadowCity.dds</Button>
 		</BuildingArtInfo>
 		
+		<!-- Mage Spires -->
+		
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_SPIRE_BODY</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>.95</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Tower of Alteration/towerofalteration.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Body.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_SPIRE_CREATION</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>.95</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Tower of Alteration/towerofalteration.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Creation.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_SPIRE_ENCHANTNMENT</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>.95</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Tower of Alteration/towerofalteration.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Enchantment.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_SPIRE_FORCE</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>.95</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Tower of Alteration/towerofalteration.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Force.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_SPIRE_NATURE</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>.95</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Tower of Alteration/towerofalteration.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Nature.dds</Button>
+		</BuildingArtInfo>
+		
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_SPIRE_LAW</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>.95</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Tower of Divination/towerofdivination.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Law.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_SPIRE_MIND</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>.95</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Tower of Divination/towerofdivination.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Mind.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_SPIRE_LIFE</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>.95</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Tower of Divination/towerofdivination.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Life.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_SPIRE_SPIRIT</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>.95</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Tower of Divination/towerofdivination.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Spirit.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_SPIRE_SUN</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>.95</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Tower of Divination/towerofdivination.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Sun.dds</Button>
+		</BuildingArtInfo>
+		
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_SPIRE_AIR</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>.95</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Tower of the Elements/toweroftheelements.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Air.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_SPIRE_EARTH</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>.95</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Tower of the Elements/toweroftheelements.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Earth.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_SPIRE_FIRE</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>.95</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Tower of the Elements/toweroftheelements.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Fire.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_SPIRE_ICE</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>.95</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Tower of the Elements/toweroftheelements.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Ice.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_SPIRE_WATER</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>.95</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Tower of the Elements/toweroftheelements.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Water.dds</Button>
+		</BuildingArtInfo>
+		
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_SPIRE_CHAOS</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>.95</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Tower of Necromancy/towerofnecromancy.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Chaos.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_SPIRE_DEATH</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>.95</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Tower of Necromancy/towerofnecromancy.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Death.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_SPIRE_DIMENSIONAL</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>.95</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Tower of Necromancy/towerofnecromancy.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Dimensional.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_SPIRE_ENTROPY</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>.95</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Tower of Necromancy/towerofnecromancy.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Entropy.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_SPIRE_SHADOW</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>.95</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Tower of Necromancy/towerofnecromancy.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Shadow.dds</Button>
+		</BuildingArtInfo>
+		
 	</BuildingArtInfos>
 </Civ4ArtDefines>

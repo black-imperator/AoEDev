@@ -27,5 +27,35 @@
 			<DefaultUnit>UNIT_NOMAD_WAGON</DefaultUnit>
 			<iMercenaryWeight>0</iMercenaryWeight>
 		</UnitClassInfo>
+		<UnitClassInfo>		<!-- Food Supply -->
+			<Type>UNITCLASS_FOOD_SUPPLIES</Type>
+			<Description>TXT_KEY_UNIT_FOOD_SUPPLIES</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_FOOD_SUPPLIES</DefaultUnit>
+			<iMercenaryWeight>0</iMercenaryWeight>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- Valuables Supplies -->
+			<Type>UNITCLASS_VALUABLES_SUPPLIES</Type>
+			<Description>TXT_KEY_UNIT_VALUABLES_SUPPLIES</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_VALUABLES_SUPPLIES</DefaultUnit>
+			<iMercenaryWeight>0</iMercenaryWeight>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- Workables Supply -->
+			<Type>UNITCLASS_WORKABLES_SUPPLIES</Type>
+			<Description>TXT_KEY_UNIT_WORKABLES_SUPPLIES</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_WORKABLES_SUPPLIES</DefaultUnit>
+			<iMercenaryWeight>0</iMercenaryWeight>
+		</UnitClassInfo>
 	</UnitClassInfos>
 </Civ4UnitClassInfos>

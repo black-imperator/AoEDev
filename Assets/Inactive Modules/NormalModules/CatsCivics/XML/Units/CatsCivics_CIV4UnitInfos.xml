@@ -153,27 +153,22 @@
 			<bMechanized>1</bMechanized>
 			<PrereqTech>TECH_NEVER</PrereqTech>
 			<Capture>UNITCLASS_WORKER</Capture>
-			<bJoinPop>1</bJoinPop>
+			<iCombat>0</iCombat>
+			<iCombatDefense>3</iCombatDefense>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_NOMAD_WAGON</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
 			<UnitAIs>
-				<UnitAI>
-					<UnitAIType>UNITAI_CITY_DEFENSE</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_CITY_COUNTER</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_RESERVE</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
 				<UnitAI>
 					<UnitAIType>UNITAI_WORKER</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
 			<iMoves>2</iMoves>
-			<iWorkRate>50</iWorkRate>
+			<iWorkRate>100</iWorkRate>
 			<Builds>
 				<Build>
 					<BuildType>BUILD_ROAD</BuildType>
@@ -196,6 +191,132 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<iTier>1</iTier>
+		</UnitInfo>
+		<UnitInfo>        <!-- Food Supplies -->
+			<Class>UNITCLASS_FOOD_SUPPLIES</Class>
+			<Type>UNIT_FOOD_SUPPLIES</Type>
+			<Capture>UNITCLASS_SUPPLIES</Capture>
+			<DefaultUnitAI>UNITAI_RESERVE</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_FOOD_SUPPLIES</Description>
+			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bOnlyDefensive>1</bOnlyDefensive>
+			<bQuickCombat>1</bQuickCombat>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_SCIENTIST</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_PROPHET</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<iMoves>1</iMoves>
+			<iAsset>6</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>1</iGroupSize>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_SUPPLIES</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<iTier>1</iTier>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_FREE_UNIT</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_FOOD_SUPPLIES</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+		</UnitInfo>
+		<UnitInfo>        <!-- Valuables Supplies -->
+			<Class>UNITCLASS_VALUABLES_SUPPLIES</Class>
+			<Type>UNIT_VALUABLES_SUPPLIES</Type>
+			<Capture>UNITCLASS_SUPPLIES</Capture>
+			<DefaultUnitAI>UNITAI_RESERVE</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_VALUABLES_SUPPLIES</Description>
+			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bOnlyDefensive>1</bOnlyDefensive>
+			<bQuickCombat>1</bQuickCombat>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_SCIENTIST</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_PROPHET</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<iMoves>1</iMoves>
+			<iAsset>6</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>1</iGroupSize>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_SUPPLIES</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<iTier>1</iTier>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_FREE_UNIT</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_VALUABLES_SUPPLIES</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+		</UnitInfo>
+		<UnitInfo>        <!-- Workables Supplies -->
+			<Class>UNITCLASS_WORKABLES_SUPPLIES</Class>
+			<Type>UNIT_WORKABLES_SUPPLIES</Type>
+			<Capture>UNITCLASS_SUPPLIES</Capture>
+			<DefaultUnitAI>UNITAI_RESERVE</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_WORKABLES_SUPPLIES</Description>
+			<Civilopedia>TEXT_MUST_BE_WRITTEN</Civilopedia>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bOnlyDefensive>1</bOnlyDefensive>
+			<bQuickCombat>1</bQuickCombat>
+			<iBaseHurry>10</iBaseHurry>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_SCIENTIST</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_PROPHET</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<iMoves>1</iMoves>
+			<iAsset>6</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>1</iGroupSize>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_SUPPLIES</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<iTier>1</iTier>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_FREE_UNIT</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
 		</UnitInfo>
 	</UnitInfos>
 </Civ4UnitInfos>

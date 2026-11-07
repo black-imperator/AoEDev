@@ -462,4 +462,166 @@
 		<Italian>Tab the Underground Rivers</Italian>
 		<Spanish>Tab the Underground Rivers</Spanish>
 	</TEXT>
+	
+		<!-- Mage Spires -->
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SPIRE_BODY</Tag>
+		<English>Spire of the Flesh</English>
+		<French>Spire of the Flesh</French>
+		<German>Spire of the Flesh</German>
+		<Italian>Spire of the Flesh</Italian>
+		<Spanish>Spire of the Flesh</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SPIRE_CREATION</Tag>
+		<English>Spire of Creation</English>
+		<French>Spire of Creation</French>
+		<German>Spire of Creation</German>
+		<Italian>Spire of Creation</Italian>
+		<Spanish>Spire of Creation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SPIRE_ENCHANTMENT</Tag>
+		<English>Spire of Bliss</English>
+		<French>Spire of Bliss</French>
+		<German>Spire of Bliss</German>
+		<Italian>Spire of Bliss</Italian>
+		<Spanish>Spire of Bliss</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SPIRE_FORCE</Tag>
+		<English>Spire of Force</English>
+		<French>Spire of Force</French>
+		<German>Spire of Force</German>
+		<Italian>Spire of Force</Italian>
+		<Spanish>Spire of Force</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SPIRE_NATURE</Tag>
+		<English>Spire of Nature</English>
+		<French>Spire of Nature</French>
+		<German>Spire of Nature</German>
+		<Italian>Spire of Nature</Italian>
+		<Spanish>Spire of Nature</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SPIRE_LAW</Tag>
+		<English>Spire of Law</English>
+		<French>Spire of Law</French>
+		<German>Spire of Law</German>
+		<Italian>Spire of Law</Italian>
+		<Spanish>Spire of Law</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SPIRE_MIND</Tag>
+		<English>Spire of the Mind</English>
+		<French>Spire of the Mind</French>
+		<German>Spire of the Mind</German>
+		<Italian>Spire of the Mind</Italian>
+		<Spanish>Spire of the Mind</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SPIRE_LIFE</Tag>
+		<English>Spire of Life</English>
+		<French>Spire of Life</French>
+		<German>Spire of Life</German>
+		<Italian>Spire of Life</Italian>
+		<Spanish>Spire of Life</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SPIRE_SPIRIT</Tag>
+		<English>Spire of the Spirit</English>
+		<French>Spire of the Spirit</French>
+		<German>Spire of the Spirit</German>
+		<Italian>Spire of the Spirit</Italian>
+		<Spanish>Spire of the Spirit</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SPIRE_SUN</Tag>
+		<English>Spire of Radiance</English>
+		<French>Spire of Radiance</French>
+		<German>Spire of Radiance</German>
+		<Italian>Spire of Radiance</Italian>
+		<Spanish>Spire of Radiance</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SPIRE_AIR</Tag>
+		<English>Spire of Air</English>
+		<French>Spire of Air</French>
+		<German>Spire of Air</German>
+		<Italian>Spire of Air</Italian>
+		<Spanish>Spire of Air</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SPIRE_EARTH</Tag>
+		<English>Spire of Earth</English>
+		<French>Spire of Earth</French>
+		<German>Spire of Earth</German>
+		<Italian>Spire of Earth</Italian>
+		<Spanish>Spire of Earth</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SPIRE_FIRE</Tag>
+		<English>Spire of Fire</English>
+		<French>Spire of Fire</French>
+		<German>Spire of Fire</German>
+		<Italian>Spire of Fire</Italian>
+		<Spanish>Spire of Fire</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SPIRE_ICE</Tag>
+		<English>Spire of Ice</English>
+		<French>Spire of Ice</French>
+		<German>Spire of Ice</German>
+		<Italian>Spire of Ice</Italian>
+		<Spanish>Spire of Ice</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SPIRE_WATER</Tag>
+		<English>Spire of Water</English>
+		<French>Spire of Water</French>
+		<German>Spire of Water</German>
+		<Italian>Spire of Water</Italian>
+		<Spanish>Spire of Water</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SPIRE_CHAOS</Tag>
+		<English>Spire of Chaos</English>
+		<French>Spire of Chaos</French>
+		<German>Spire of Chaos</German>
+		<Italian>Spire of Chaos</Italian>
+		<Spanish>Spire of Chaos</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SPIRE_DEATH</Tag>
+		<English>Spire of the End</English>
+		<French>Spire of the End</French>
+		<German>Spire of the End</German>
+		<Italian>Spire of the End</Italian>
+		<Spanish>Spire of the End</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SPIRE_DIMENSIONAL</Tag>
+		<English>Spire of Dimensions</English>
+		<French>Spire of Dimensions</French>
+		<German>Spire of Dimensions</German>
+		<Italian>Spire of Dimensions</Italian>
+		<Spanish>Spire of Dimensions</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SPIRE_ENTROPY</Tag>
+		<English>Spire of Entropy</English>
+		<French>Spire of Entropy</French>
+		<German>Spire of Entropy</German>
+		<Italian>Spire of Entropy</Italian>
+		<Spanish>Spire of Entropy</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SPIRE_SHADOW</Tag>
+		<English>Spire of Gloom</English>
+		<French>Spire of Gloom</French>
+		<German>Spire of Gloom</German>
+		<Italian>Spire of Gloom</Italian>
+		<Spanish>Spire of Gloom</Spanish>
+	</TEXT>
 </Civ4GameText>

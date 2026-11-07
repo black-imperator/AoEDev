@@ -5503,7 +5503,7 @@ def onMoveDragonBones(pCaster, pPlot):
 			pPlot.setImprovementType(-1)
 
 def onMoveSevenPines(pCaster, pPlot):
-	pOrcPlayer = gc.getPlayer(gc.getORC_PLAYER())
+	pOrcPlayer = gc.getPlayer(gc.getANIMAL_PLAYER())
 	pPlot2 = findClearPlot(-1, pCaster.plot())
 	if not pOrcPlayer.isHasFlag(getInfoType("FLAG_ELDER_DRAGON_FIRST")):
 		if pCaster.isHasPromotion(getInfoType('PROMOTION_DEMON')) or pCaster.isHasPromotion(getInfoType('PROMOTION_ANGEL')) and not pCaster.getUnitType() == getInfoType('UNIT_SPHENER') or pCaster.isHasPromotion(getInfoType('PROMOTION_AVATAR')) or pCaster.isHasPromotion(getInfoType('PROMOTION_ANGEL')) or pCaster.isHasPromotion(getInfoType('PROMOTION_AVATAR')) or pCaster.isHasPromotion(getInfoType('PROMOTION_FALLEN_ANGEL')) or pCaster.isHasPromotion(getInfoType('PROMOTION_ICE_DEMON')):
