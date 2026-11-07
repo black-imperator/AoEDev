@@ -323,6 +323,10 @@
 			<Value>1</Value>
 		</Preference>
 		<Preference>
+			<FlavourType>BONUS_DEER</FlavourType>
+			<Value>3</Value>
+		</Preference>
+		<Preference>
 			<FlavourType>BONUS_REAGENTS</FlavourType>
 			<Value>1</Value>
 		</Preference>

@@ -29597,7 +29597,7 @@
 			<Class>UNITCLASS_WARRIOR</Class>
 			<Type>UNIT_DUSKBRINGER</Type>
 			<Combat>UNITCOMBAT_ADEPT</Combat>
-			<DefaultUnitAI>UNITAI_MAGE</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_CITY_DEFENSE</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_DUSKBRINGER</Description>
 			<Civilopedia>TXT_KEY_UNIT_ADEPT_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_ADEPT_STRATEGY</Strategy>
@@ -29617,7 +29617,15 @@
 			</UnitClassUpgrades>
 			<UnitAIs>
 				<UnitAI>
-					<UnitAIType>UNITAI_MAGE</UnitAIType>
+					<UnitAIType>UNITAI_CITY_COUNTER</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_CITY_DEFENSE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_COUNTER</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>

@@ -8562,6 +8562,16 @@ def reqGiantSpiderUpgrade(pCaster):
 			return True
 	return False
 
+def reqIgnitePyre2(caster):
+	pPlayer = gc.getPlayer(caster.getOwner())
+	if pPlayer.isHuman() == False:
+		pPlot = caster.plot()
+		pCity = pPlot.getPlotCity()
+		if pCity.getPopulation() < 10:
+			return False
+		return True
+	return True
+
 def reqIgnitePyre(caster):
 	pPlayer = gc.getPlayer(caster.getOwner())
 	if pPlayer.isHuman() == False:

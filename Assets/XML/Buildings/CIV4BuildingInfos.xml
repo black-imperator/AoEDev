@@ -565,7 +565,7 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_AQUEDUCT</ArtDefineTag>
 			<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
-			<iAIWeight>12</iAIWeight>
+			<iAIWeight>30</iAIWeight>
 			<bCenterInCity>1</bCenterInCity>
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -990,7 +990,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_BREWERY</ArtDefineTag>
 			<PrereqTech>TECH_CRAFTING</PrereqTech>
 			<FreeBonus>BONUS_ALE</FreeBonus>
-			<iAIWeight>30</iAIWeight>
+			<iAIWeight>5</iAIWeight>
 			<iNumFreeBonuses>2</iNumFreeBonuses>
 			<bRiver>1</bRiver>
 			<iCost>240</iCost>
@@ -1407,7 +1407,7 @@
 					<iProductionTrait>100</iProductionTrait>
 				</ProductionTrait>
 			</ProductionTraits>
-			<iAIWeight>30</iAIWeight>
+			<iAIWeight>5</iAIWeight>
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>25</iConquestProb>
@@ -1448,7 +1448,7 @@
 					<iProductionTrait>100</iProductionTrait>
 				</ProductionTrait>
 			</ProductionTraits>
-			<iAIWeight>30</iAIWeight>
+			<iAIWeight>10</iAIWeight>
 			<iCost>150</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>25</iConquestProb>
@@ -1746,7 +1746,7 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BREEDING_PIT</ArtDefineTag>
 			<bNeverCapture>1</bNeverCapture>
-			<iAIWeight>20</iAIWeight>
+			<iAIWeight>5</iAIWeight>
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>0</iConquestProb>
@@ -2097,7 +2097,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_HALL_OF_MIRRORS</ArtDefineTag>
 			<PrereqTech>TECH_ALTERATION</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
-			<iAIWeight>20</iAIWeight>
+			<iAIWeight>30</iAIWeight>
 			<iCost>180</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>0</iConquestProb>
@@ -3057,7 +3057,7 @@
 				</ProductionTrait>
 			</ProductionTraits>
 			<bCenterInCity>1</bCenterInCity>
-			<iAIWeight>45</iAIWeight>
+			<iAIWeight>30</iAIWeight>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>25</iConquestProb>
@@ -3616,7 +3616,7 @@
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
-			<iAIWeight>65</iAIWeight>
+			<iAIWeight>100</iAIWeight>
 			<iCost>350</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAsset>10</iAsset>
@@ -3990,7 +3990,7 @@
 				</ProductionTrait>
 			</ProductionTraits>
 			<bWater>1</bWater>
-			<iAIWeight>20</iAIWeight>
+			<iAIWeight>5</iAIWeight>
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>10</iMinAreaSize>
@@ -4046,7 +4046,7 @@
 				</ProductionTrait>
 			</ProductionTraits>
 			<bWater>1</bWater>
-			<iAIWeight>35</iAIWeight>
+			<iAIWeight>5</iAIWeight>
 			<iCost>90</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>10</iMinAreaSize>
@@ -4112,7 +4112,7 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_HERBALIST</ArtDefineTag>
 			<PrereqTech>TECH_AGRICULTURE</PrereqTech>
-			<iAIWeight>15</iAIWeight>
+			<iAIWeight>5</iAIWeight>
 			<iCost>90</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>25</iConquestProb>
@@ -4578,7 +4578,7 @@
 					<iProductionTrait>100</iProductionTrait>
 				</ProductionTrait>
 			</ProductionTraits>
-			<iAIWeight>30</iAIWeight>
+			<iAIWeight>40</iAIWeight>
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>25</iConquestProb>
@@ -4784,7 +4784,7 @@
 				</ProductionTrait>
 			</ProductionTraits>
 			<bCenterInCity>1</bCenterInCity>
-			<iAIWeight>30</iAIWeight>
+			<iAIWeight>15</iAIWeight>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>25</iConquestProb>
@@ -5206,7 +5206,7 @@
 				</ProductionTrait>
 			</ProductionTraits>
 			<bNeverCapture>1</bNeverCapture>
-			<iAIWeight>10</iAIWeight>
+			<iAIWeight>5</iAIWeight>
 			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>0</iConquestProb>
@@ -5265,7 +5265,7 @@
 				</ProductionTrait>
 			</ProductionTraits>
 			<bNeverCapture>1</bNeverCapture>
-			<iAIWeight>10</iAIWeight>
+			<iAIWeight>5</iAIWeight>
 			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>0</iConquestProb>
@@ -6284,6 +6284,7 @@
 			</ProductionTraits>
 			<bCenterInCity>1</bCenterInCity>
 			<iCost>40</iCost>
+			<iAIWeight>1</iAIWeight>
 			<iAdvancedStartCost>30</iAdvancedStartCost>
 			<iConquestProb>25</iConquestProb>
 			<iDefense>10</iDefense>
@@ -9131,7 +9132,7 @@
 				</ProductionTrait>
 			</ProductionTraits>
 			<bCenterInCity>1</bCenterInCity>
-			<iAIWeight>30</iAIWeight>
+			<iAIWeight>5</iAIWeight>
 			<iCost>120</iCost>
 			<iCrime>-2</iCrime>
 			<iAdvancedStartCost>60</iAdvancedStartCost>
@@ -9803,7 +9804,7 @@
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ELDER_COUNCIL</ArtDefineTag>
 			<PrereqTech>TECH_SORCERY</PrereqTech>
-			<iAIWeight>40</iAIWeight>
+			<iAIWeight>30</iAIWeight>
 			<iCost>175</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>25</iConquestProb>
@@ -10949,7 +10950,7 @@
 				</ProductionTrait>
 			</ProductionTraits>
 			<bWater>1</bWater>
-			<iAIWeight>20</iAIWeight>
+			<iAIWeight>5</iAIWeight>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>10</iMinAreaSize>
@@ -11076,6 +11077,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_DEMONS_ALTAR</ArtDefineTag>
 			<PrereqTech>TECH_PHILOSOPHY</PrereqTech>
+			<iAIWeight>5</iAIWeight>
 			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>25</iConquestProb>
@@ -11131,6 +11133,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_DEMONS_ALTAR</ArtDefineTag>
 			<PrereqTech>TECH_PHILOSOPHY</PrereqTech>
+			<iAIWeight>10</iAIWeight>
 			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>25</iConquestProb>
@@ -11291,7 +11294,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_PAGAN_TEMPLE</ArtDefineTag>
 			<PrereqTech>TECH_MYSTICISM</PrereqTech>
-			<iAIWeight>10</iAIWeight>
+			<iAIWeight>5</iAIWeight>
 			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>0</iConquestProb>
@@ -11339,6 +11342,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TRIBAL_SHRINE</ArtDefineTag>
 			<PrereqTech>TECH_MYSTICISM</PrereqTech>
+			<iAIWeight>5</iAIWeight>
 			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>25</iConquestProb>
@@ -11953,7 +11957,7 @@
 					<iProductionTrait>100</iProductionTrait>
 				</ProductionTrait>
 			</ProductionTraits>
-			<iAIWeight>20</iAIWeight>
+			<iAIWeight>40</iAIWeight>
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>0</iConquestProb>
@@ -12004,6 +12008,7 @@
 				</ProductionTrait>
 			</ProductionTraits>
 			<iCost>100</iCost>
+			<iAIWeight>10</iAIWeight>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>0</iConquestProb>
 			<iGreatPeopleRateModifier>10</iGreatPeopleRateModifier>
@@ -13170,6 +13175,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_KYLORIN_CULT</ArtDefineTag>
 			<PrereqTech>TECH_MYSTICISM</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
+			<iAIWeight>5</iAIWeight>
 			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>25</iConquestProb>
@@ -14106,6 +14112,7 @@
 			<PrereqTech>TECH_CRAFTING</PrereqTech>
 			<bCenterInCity>1</bCenterInCity>
 			<iCost>60</iCost>
+			<iAIWeight>1</iAIWeight>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>25</iConquestProb>
 			<iHealth>1</iHealth>
@@ -14130,6 +14137,7 @@
 			<bRiver>1</bRiver>
 			<bBuildingOnlyHealthy>1</bBuildingOnlyHealthy>
 			<bCenterInCity>1</bCenterInCity>
+			<iAIWeight>10</iAIWeight>
 			<iCost>180</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>25</iConquestProb>
@@ -15381,6 +15389,7 @@
 					<iProductionTrait>100</iProductionTrait>
 				</ProductionTrait>
 			</ProductionTraits>
+			<iAIWeight>30</iAIWeight>
 			<iCityCapModifier>1</iCityCapModifier>
 			<bNeverCapture>0</bNeverCapture>
 			<bNukeImmune>0</bNukeImmune>
@@ -15440,6 +15449,7 @@
 			<bNeverCapture>1</bNeverCapture>
 			<bNukeImmune>0</bNukeImmune>
 			<iCost>100</iCost>
+			<iAIWeight>5</iAIWeight>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>0</iConquestProb>
@@ -15684,7 +15694,7 @@
 			<FreePromotion>PROMOTION_MAGIC_RESISTANCE</FreePromotion>
 			<bNeverCapture>1</bNeverCapture>
 			<bNukeImmune>0</bNukeImmune>
-			<iAIWeight>20</iAIWeight>
+			<iAIWeight>10</iAIWeight>
 			<iCost>100</iCost>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -16450,7 +16460,7 @@
 					<iProductionTrait>100</iProductionTrait>
 				</ProductionTrait>
 			</ProductionTraits>
-			<iAIWeight>35</iAIWeight>
+			<iAIWeight>10</iAIWeight>
 			<iCost>150</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>25</iConquestProb>
@@ -16645,7 +16655,7 @@
 			<iMaintenanceModifier>-5</iMaintenanceModifier>
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>1</fVisibilityPriority>
-			<iAIWeight>40</iAIWeight>
+			<iAIWeight>5</iAIWeight>
 			<CommerceModifiers>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
@@ -16719,6 +16729,7 @@
 			<iDefense>10</iDefense>
 			<iAsset>8</iAsset>
 			<iCost>350</iCost>
+			<iAIWeight>50</iAIWeight>
 			<fVisibilityPriority>100</fVisibilityPriority>
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
@@ -17081,6 +17092,7 @@
 			<ProductionTraits />
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>60</iCost>
+			<iAIWeight>10</iAIWeight>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>0</iConquestProb>
 			<iAsset>3</iAsset>
@@ -17269,7 +17281,7 @@
 				</BuildingClassNeeded>
 			</BuildingClassNeededs>
 			<PrereqTrait>TRAIT_SCORCHED_EARTH2</PrereqTrait>
-			<iAIWeight>35</iAIWeight>
+			<iAIWeight>5</iAIWeight>
 			<iCost>300</iCost>
 			<Flavors>
 				<Flavor>
@@ -17301,7 +17313,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_GOVERNORS_MANOR</ArtDefineTag>
 			<PrereqTrait>TRAIT_DOMINANT2</PrereqTrait>
 			<bNeverCapture>1</bNeverCapture>
-			<iAIWeight>80</iAIWeight>
+			<iAIWeight>30</iAIWeight>
 			<iCost>250</iCost>
 			<Flavors>
 				<Flavor>
@@ -19540,7 +19552,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_BREEDING_PIT</ArtDefineTag>
 			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
-			<iAIWeight>40</iAIWeight>
+			<iAIWeight>15</iAIWeight>
 			<iCost>150</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iConquestProb>0</iConquestProb>

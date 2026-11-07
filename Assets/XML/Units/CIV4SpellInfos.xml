@@ -8993,12 +8993,14 @@
 			<TechPrereq>TECH_BRONZE_WORKING</TechPrereq>
 			<bInBordersOnly>1</bInBordersOnly>
 			<bIsAutoCastable>1</bIsAutoCastable>
+			<bAllowAI>1</bAllowAI>
+			<iAIWeight>100</iAIWeight>
 			<bInCityOnly>1</bInCityOnly>
 			<bDisplayWhenDisabled>0</bDisplayWhenDisabled>
 			<bHasCasted>1</bHasCasted>
 			<iChangePopulation>-1</iChangePopulation>
 			<PyResult>spellIgnitePyre(pCaster)</PyResult>
-			<PyRequirement>reqIgnitePyre(pCaster)</PyRequirement>
+			<PyRequirement>reqIgnitePyre2(pCaster)</PyRequirement>
 			<Effect>EFFECT_WITHER</Effect>
 			<Sound>AS3D_SPELL_CONSUME_SOUL</Sound>
 			<Button>Art/Interface/Buttons/Units/Pyre Zombie.dds</Button>

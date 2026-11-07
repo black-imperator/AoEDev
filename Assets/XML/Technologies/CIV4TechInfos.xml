@@ -2244,7 +2244,7 @@
 			<Description>TXT_KEY_TECH_MYSTICISM</Description>
 			<Strategy>TEXT_MUST_BE_WRITTEN</Strategy>
 			<Advisor>ADVISOR_RELIGION</Advisor>
-			<iAIWeight>70</iAIWeight>
+			<iAIWeight>100</iAIWeight>
 			<iCost>200</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_ANCIENT</Era>
