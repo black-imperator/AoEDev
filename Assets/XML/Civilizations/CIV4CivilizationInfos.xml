@@ -7754,7 +7754,7 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_QUEEN_OF_THE_LINE</UnitClassType>
-					<UnitType>UNIT_QUEEN_OF_THE_LINE</UnitType>
+					<UnitType>UNIT_QUEEN_OF_THE_LINE_ORC</UnitType>
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_GALLEY</UnitClassType>
@@ -7762,11 +7762,11 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_GALLEON</UnitClassType>
-					<UnitType>UNIT_GALLEON</UnitType>
+					<UnitType>UNIT_GALLEON_ORC</UnitType>
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_FRIGATE</UnitClassType>
-					<UnitType>UNIT_FRIGATE</UnitType>
+					<UnitType>UNIT_FRIGATE_ORC</UnitType>
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_CARAVEL</UnitClassType>
@@ -7774,7 +7774,7 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_CARRACK</UnitClassType>
-					<UnitType>UNIT_CARRACK</UnitType>
+					<UnitType>UNIT_CARRACK_ORC</UnitType>
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_ARCANE_BARGE</UnitClassType>
@@ -7782,7 +7782,7 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_PRIVATEER</UnitClassType>
-					<UnitType>UNIT_PRIVATEER</UnitType>
+					<UnitType>UNIT_PRIVATEER_ORC</UnitType>
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_ASSASSIN</UnitClassType>

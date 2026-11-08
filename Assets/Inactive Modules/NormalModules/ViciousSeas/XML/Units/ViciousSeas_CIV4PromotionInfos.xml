@@ -6,6 +6,29 @@
 <!-- Promotion Infos -->
 <Civ4PromotionInfos xmlns="x-schema:ViciousSeas_CIV4UnitSchema.xml">
 	<PromotionInfos>	
+		<PromotionInfo>		<!-- Prevent workboat suicide. -->
+			<Type>PROMOTION_WORKBOAT_PREVENTION_HOTLINE</Type>
+			<Description>TXT_KEY_PROMOTION_WORKBOAT_PREVENTION_HOTLINE</Description>
+			<bNoMapReveal>1</bNoMapReveal>
+			<bAutoAcquire>1</bAutoAcquire>
+			<bNoXP>1</bNoXP>
+			<PrereqUnits>
+				<PrereqUnit>UNIT_WORKBOAT</PrereqUnit>
+				<PrereqUnit>UNIT_WORKBOAT_LANUN</PrereqUnit>
+				<PrereqUnit>UNIT_FUNERAL_BARGE</PrereqUnit>
+			</PrereqUnits>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Art/Civs/Other/FortCommander/Influence.dds</Button>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Hidden Nationality Blocker for Bhall (so troops can board) -->
+			<Type>PROMOTION_HIDDEN_NATIONALITY_BLOCK</Type>
+			<bCannotPillage>1</bCannotPillage>
+		</PromotionInfo>
 		<PromotionInfo>		<!-- Fort Commander 2 -->
 			<Type>PROMOTION_COMMANDER2</Type>
 			<PrereqImprovements>

@@ -8994,10 +8994,11 @@
 			<bInBordersOnly>1</bInBordersOnly>
 			<bIsAutoCastable>1</bIsAutoCastable>
 			<bAllowAI>1</bAllowAI>
-			<iAIWeight>100</iAIWeight>
+			<iAIWeight>75</iAIWeight>
 			<bInCityOnly>1</bInCityOnly>
 			<bDisplayWhenDisabled>0</bDisplayWhenDisabled>
 			<bHasCasted>1</bHasCasted>
+			<iDelay>5</iDelay>
 			<iChangePopulation>-1</iChangePopulation>
 			<PyResult>spellIgnitePyre(pCaster)</PyResult>
 			<PyRequirement>reqIgnitePyre2(pCaster)</PyRequirement>

@@ -8569,6 +8569,8 @@ def reqIgnitePyre2(caster):
 		pCity = pPlot.getPlotCity()
 		if pCity.getPopulation() < 10:
 			return False
+		if pPlayer.getGold() < 350:
+			return False
 		return True
 	return True
 

@@ -434,6 +434,107 @@
 				</FreePromotion>
 			</FreePromotions>
 		</UnitInfo>
+		<UnitInfo>        <!-- Galleon BHALL-->
+			<Class>UNITCLASS_GALLEON</Class>
+			<Type>UNIT_GALLEON_ORC</Type>
+			<iMoves>2</iMoves>
+			<TerrainMoveCosts>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+			</TerrainMoveCosts>
+		</UnitInfo>
+		<UnitInfo>        <!-- Privateer BHAL -->
+			<Class>UNITCLASS_PRIVATEER</Class>
+			<Type>UNIT_PRIVATEER_ORC</Type>
+			<iMoves>2</iMoves>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_HARDY1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+			<TerrainMoveCosts>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+			</TerrainMoveCosts>
+		</UnitInfo>
+		<UnitInfo>        <!-- Carrack BHALL -->
+			<Class>UNITCLASS_CARRACK</Class>
+			<Type>UNIT_CARRACK_ORC</Type>
+			<iMoves>2</iMoves>
+			<TerrainMoveCosts>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+			</TerrainMoveCosts>
+		</UnitInfo>
+		<UnitInfo>        <!-- Frigate BHALL -->
+			<Class>UNITCLASS_FRIGATE</Class>
+			<Type>UNIT_FRIGATE_ORC</Type>
+			<iMoves>2</iMoves>
+			<TerrainMoveCosts>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<iTerrainMoveCost>-2</iTerrainMoveCost>
+				</TerrainMoveCost>
+			</TerrainMoveCosts>
+		</UnitInfo>
+		<UnitInfo>        <!-- Queen of the Line BHALL -->
+			<Class>UNITCLASS_QUEEN_OF_THE_LINE</Class>
+			<Type>UNIT_QUEEN_OF_THE_LINE_ORC</Type>
+			<iMoves>2</iMoves>
+			<TerrainMoveCosts>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
+					<iTerrainMoveCost>-1</iTerrainMoveCost>
+				</TerrainMoveCost>
+				<TerrainMoveCost>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<iTerrainMoveCost>-2</iTerrainMoveCost>
+				</TerrainMoveCost>
+			</TerrainMoveCosts>
+		</UnitInfo>
 <!--		<UnitInfo>        <!{1}** Airship **{1}>                       <!{1}**KURIOTATES**{1}>
 			<Class>UNITCLASS_QUEEN_OF_THE_LINE</Class>
 			<Type>UNIT_AIRSHIP</Type>

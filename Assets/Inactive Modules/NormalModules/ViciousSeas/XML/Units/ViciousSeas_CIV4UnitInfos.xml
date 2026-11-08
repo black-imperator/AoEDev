@@ -1572,11 +1572,15 @@
 		<UnitInfo>        <!-- Galley -->            
 			<Class>UNITCLASS_GALLEY</Class>
 			<Type>UNIT_GALLEY</Type>
+			<DefaultUnitAI>UNITAI_ASSAULT_SEA</DefaultUnitAI>
 			<PrereqTech>TECH_FISHING</PrereqTech>
+			<DomainCargo>DOMAIN_LAND</DomainCargo>
+			<iCargo>1</iCargo>
 		</UnitInfo>
 		<UnitInfo>        <!-- Trireme -->
 			<Class>UNITCLASS_TRIREME</Class>
 			<Type>UNIT_TRIREME</Type>
+			<DefaultUnitAI>UNITAI_ASSAULT_SEA</DefaultUnitAI>
 			<PrereqTech>TECH_SAILING</PrereqTech>
 			<TechTypes>
 				<PrereqTech>TECH_CRAFTING</PrereqTech>
@@ -1585,6 +1589,7 @@
 		<UnitInfo>        <!-- Galleon -->
 			<Class>UNITCLASS_GALLEON</Class>
 			<Type>UNIT_GALLEON</Type>
+			<DefaultUnitAI>UNITAI_ASSAULT_SEA</DefaultUnitAI>
 		</UnitInfo>
 		<UnitInfo>        <!-- Caravel -->
 			<Class>UNITCLASS_CARAVEL</Class>
@@ -1601,10 +1606,22 @@
 		<UnitInfo>        <!-- Ironclad -->
 			<Class>UNITCLASS_MAN_O_WAR</Class>
 			<Type>UNIT_IRONCLAD</Type>
+			<DefaultUnitAI>UNITAI_ASSAULT_SEA</DefaultUnitAI>
 		</UnitInfo>
 		<UnitInfo>        <!-- Pirate -->
 			<Class>UNITCLASS_PRIVATEER</Class>
 			<Type>UNIT_PIRATE</Type>
+			<DefaultUnitAI>UNITAI_ASSAULT_SEA</DefaultUnitAI>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_PIRATE_SEA</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_ASSAULT_SEA</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
 			<FreePromotions>
 				<FreePromotion>
 					<PromotionType>PROMOTION_HARDY1</PromotionType>
@@ -1615,6 +1632,17 @@
 		<UnitInfo>        <!-- Privateer -->
 			<Class>UNITCLASS_PRIVATEER</Class>
 			<Type>UNIT_PRIVATEER</Type>
+			<DefaultUnitAI>UNITAI_ASSAULT_SEA</DefaultUnitAI>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_PIRATE_SEA</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_ASSAULT_SEA</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
 			<FreePromotions>
 				<FreePromotion>
 					<PromotionType>PROMOTION_HARDY1</PromotionType>
@@ -1625,10 +1653,36 @@
 		<UnitInfo>        <!-- Carrack -->
 			<Class>UNITCLASS_CARRACK</Class>
 			<Type>UNIT_CARRACK</Type>
+			<DefaultUnitAI>UNITAI_ASSAULT_SEA</DefaultUnitAI>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ASSAULT_SEA</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_SETTLER_SEA</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<DomainCargo>DOMAIN_LAND</DomainCargo>
+			<iCargo>1</iCargo>
 		</UnitInfo>
 		<UnitInfo>        <!-- Frigate -->
 			<Class>UNITCLASS_FRIGATE</Class>
 			<Type>UNIT_FRIGATE</Type>
+			<DefaultUnitAI>UNITAI_ASSAULT_SEA</DefaultUnitAI>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ASSAULT_SEA</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_SETTLER_SEA</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<DomainCargo>DOMAIN_LAND</DomainCargo>
+			<iCargo>1</iCargo>
 		</UnitInfo>
 		<UnitInfo>        <!-- Queen of the Line -->
 			<Class>UNITCLASS_QUEEN_OF_THE_LINE</Class>
@@ -1659,6 +1713,71 @@
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 			</FreePromotions>
+		</UnitInfo>
+		<UnitInfo>        <!-- Galleon BHALL -->
+			<Class>UNITCLASS_GALLEON</Class>
+			<Type>UNIT_GALLEON_ORC</Type>
+			<DefaultUnitAI>UNITAI_ASSAULT_SEA</DefaultUnitAI>
+		</UnitInfo>
+		<UnitInfo>        <!-- Privateer BHALL -->
+			<Class>UNITCLASS_PRIVATEER</Class>
+			<Type>UNIT_PRIVATEER_ORC</Type>
+			<DefaultUnitAI>UNITAI_ASSAULT_SEA</DefaultUnitAI>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_PIRATE_SEA</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_ASSAULT_SEA</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_HARDY1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+		</UnitInfo>
+		<UnitInfo>        <!-- Carrack BHALL -->
+			<Class>UNITCLASS_CARRACK</Class>
+			<Type>UNIT_CARRACK_ORC</Type>
+			<DefaultUnitAI>UNITAI_ASSAULT_SEA</DefaultUnitAI>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ASSAULT_SEA</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_SETTLER_SEA</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<DomainCargo>DOMAIN_LAND</DomainCargo>
+			<iCargo>1</iCargo>
+		</UnitInfo>
+		<UnitInfo>        <!-- Frigate BHALL -->
+			<Class>UNITCLASS_FRIGATE</Class>
+			<Type>UNIT_FRIGATE_ORC</Type>
+			<DefaultUnitAI>UNITAI_ASSAULT_SEA</DefaultUnitAI>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ASSAULT_SEA</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_SETTLER_SEA</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<DomainCargo>DOMAIN_LAND</DomainCargo>
+			<iCargo>1</iCargo>
+		</UnitInfo>
+		<UnitInfo>        <!-- Queen of the Line BHALL -->
+			<Class>UNITCLASS_QUEEN_OF_THE_LINE</Class>
+			<Type>UNIT_QUEEN_OF_THE_LINE_ORC</Type>
+			<DefaultUnitAI>UNITAI_ASSAULT_SEA</DefaultUnitAI>
 		</UnitInfo>
 		<!--<UnitInfo>        <!{1}** Airship **{1}>                       <!{1}**KURIOTATES**{1}>
 			<Class>UNITCLASS_QUEEN_OF_THE_LINE</Class>
@@ -1708,6 +1827,9 @@
 					<bBuild>1</bBuild>
 				</Build>
 			</Builds>
+			<AllowPromotions>
+				<Promotion>PROMOTION_WORKBOAT_PREVENTION_HOTLINE</Promotion>
+			</AllowPromotions>
 			<iCost>75</iCost>
 			<bFood>1</bFood>
 		</UnitInfo>
@@ -1744,6 +1866,9 @@
 					<bBuild>1</bBuild>
 				</Build>
 			</Builds>
+			<AllowPromotions>
+				<Promotion>PROMOTION_WORKBOAT_PREVENTION_HOTLINE</Promotion>
+			</AllowPromotions>
 			<iWorkRate>150</iWorkRate>
 			<bFood>1</bFood>
 		</UnitInfo>
@@ -1760,6 +1885,9 @@
 					<bBuild>1</bBuild>
 				</Build>
 			</Builds>
+			<AllowPromotions>
+				<Promotion>PROMOTION_WORKBOAT_PREVENTION_HOTLINE</Promotion>
+			</AllowPromotions>
 		</UnitInfo>	
 		<UnitInfo>		<!-- Possessed Giant Tortoise - MODULE BALANCE -->
 			<Class>UNITCLASS_AOSNISIRA_POSSESSED_GIANT_TORTOISE</Class>
@@ -2098,6 +2226,9 @@
 					<bBuild>1</bBuild>
 				</Build>
 			</Builds>
+			<AllowPromotions>
+				<Promotion>PROMOTION_WORKBOAT_PREVENTION_HOTLINE</Promotion>
+			</AllowPromotions>
 		     <AndDependencyTypes>
 		        <DependencyType>MODULE_JOTNAR</DependencyType>
 		     </AndDependencyTypes>
