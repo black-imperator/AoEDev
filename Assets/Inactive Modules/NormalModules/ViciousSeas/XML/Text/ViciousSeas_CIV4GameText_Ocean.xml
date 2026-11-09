@@ -848,4 +848,12 @@ Sometimes, a cultist will not be content worshiping on land. This marine shrine 
 		<Italian>Unsafe Cargo Holds</Italian>
 		<Spanish>Unsafe Cargo Holds</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_WORKBOAT_PREVENTION_HOTLINE</Tag>
+		<English>Cautious Fishermen</English>
+		<French>Cautious Fishermen</French>
+		<German>Cautious Fishermen</German>
+		<Italian>Cautious Fishermen</Italian>
+		<Spanish>Cautious Fishermen</Spanish>
+	</TEXT>
 </Civ4GameText>
