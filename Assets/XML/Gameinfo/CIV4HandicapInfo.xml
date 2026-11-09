@@ -61,7 +61,7 @@
 			<iAIStartingExploreUnits>0</iAIStartingExploreUnits>
 			<iBarbarianDefenders>1</iBarbarianDefenders> <!-- Barbs get city guard module too! -->
 			<iAIDeclareWarProb>45</iAIDeclareWarProb>
-			<iAIWorkRateModifier>0</iAIWorkRateModifier>
+			<iAIWorkRateModifier>30</iAIWorkRateModifier>
 			<iAIGrowthPercent>160</iAIGrowthPercent>
 			<iAITrainPercent>160</iAITrainPercent>
 			<iAIWorldTrainPercent>160</iAIWorldTrainPercent>
@@ -169,7 +169,7 @@
 			<iAIStartingExploreUnits>0</iAIStartingExploreUnits>
 			<iBarbarianDefenders>1</iBarbarianDefenders>
 			<iAIDeclareWarProb>70</iAIDeclareWarProb>
-			<iAIWorkRateModifier>0</iAIWorkRateModifier>
+			<iAIWorkRateModifier>30</iAIWorkRateModifier>
 			<iAIGrowthPercent>130</iAIGrowthPercent>
 			<iAITrainPercent>130</iAITrainPercent>
 			<iAIWorldTrainPercent>130</iAIWorldTrainPercent>
@@ -273,7 +273,7 @@
 			<iAIStartingExploreUnits>0</iAIStartingExploreUnits>
 			<iBarbarianDefenders>1</iBarbarianDefenders>
 			<iAIDeclareWarProb>95</iAIDeclareWarProb>
-			<iAIWorkRateModifier>0</iAIWorkRateModifier>
+			<iAIWorkRateModifier>30</iAIWorkRateModifier>
 			<iAIGrowthPercent>110</iAIGrowthPercent>
 			<iAITrainPercent>110</iAITrainPercent>
 			<iAIWorldTrainPercent>110</iAIWorldTrainPercent>
@@ -373,7 +373,7 @@
 			<iAIStartingExploreUnits>0</iAIStartingExploreUnits>
 			<iBarbarianDefenders>1</iBarbarianDefenders>
 			<iAIDeclareWarProb>120</iAIDeclareWarProb>
-			<iAIWorkRateModifier>0</iAIWorkRateModifier>
+			<iAIWorkRateModifier>30</iAIWorkRateModifier>
 			<iAIGrowthPercent>100</iAIGrowthPercent>
 			<iAITrainPercent>100</iAITrainPercent>
 			<iAIWorldTrainPercent>100</iAIWorldTrainPercent>
@@ -470,7 +470,7 @@
 			<iAIStartingExploreUnits>0</iAIStartingExploreUnits>
 			<iBarbarianDefenders>1</iBarbarianDefenders>
 			<iAIDeclareWarProb>120</iAIDeclareWarProb>
-			<iAIWorkRateModifier>10</iAIWorkRateModifier>
+			<iAIWorkRateModifier>30</iAIWorkRateModifier>
 			<iAIGrowthPercent>100</iAIGrowthPercent>
 			<iAITrainPercent>95</iAITrainPercent>
 			<iAIWorldTrainPercent>100</iAIWorldTrainPercent>
@@ -567,7 +567,7 @@
 			<iAIStartingExploreUnits>0</iAIStartingExploreUnits>
 			<iBarbarianDefenders>1</iBarbarianDefenders>
 			<iAIDeclareWarProb>120</iAIDeclareWarProb>
-			<iAIWorkRateModifier>20</iAIWorkRateModifier>
+			<iAIWorkRateModifier>35</iAIWorkRateModifier>
 			<iAIGrowthPercent>95</iAIGrowthPercent>
 			<iAITrainPercent>90</iAITrainPercent>
 			<iAIWorldTrainPercent>100</iAIWorldTrainPercent>

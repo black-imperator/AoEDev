@@ -1830,7 +1830,7 @@
 			<AllowPromotions>
 				<Promotion>PROMOTION_WORKBOAT_PREVENTION_HOTLINE</Promotion>
 			</AllowPromotions>
-			<iCost>75</iCost>
+			<iCost>45</iCost>
 			<bFood>1</bFood>
 		</UnitInfo>
 		<UnitInfo>        <!-- WyrmFisher -->
@@ -1846,6 +1846,7 @@
 					<bBuild>1</bBuild>
 				</Build>
 			</Builds>
+			<iCost>75</iCost>
 			<iWorkRate>150</iWorkRate>
 			<bFood>1</bFood>
 		</UnitInfo>	
@@ -1869,6 +1870,7 @@
 			<AllowPromotions>
 				<Promotion>PROMOTION_WORKBOAT_PREVENTION_HOTLINE</Promotion>
 			</AllowPromotions>
+			<iCost>75</iCost>
 			<iWorkRate>150</iWorkRate>
 			<bFood>1</bFood>
 		</UnitInfo>
@@ -1885,6 +1887,7 @@
 					<bBuild>1</bBuild>
 				</Build>
 			</Builds>
+			<iCost>45</iCost>
 			<AllowPromotions>
 				<Promotion>PROMOTION_WORKBOAT_PREVENTION_HOTLINE</Promotion>
 			</AllowPromotions>
@@ -2232,7 +2235,7 @@
 		     <AndDependencyTypes>
 		        <DependencyType>MODULE_JOTNAR</DependencyType>
 		     </AndDependencyTypes>
-			<iCost>75</iCost>
+			<iCost>45</iCost>
 			<bFood>1</bFood>
 		</UnitInfo>
 		<UnitInfo>        <!-- Great Prophet -->

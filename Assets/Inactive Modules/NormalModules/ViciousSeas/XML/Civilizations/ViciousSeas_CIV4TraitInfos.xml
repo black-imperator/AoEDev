@@ -172,7 +172,7 @@
 			<Civilopedia>TXT_KEY_TRAIT_DREAM_PEDIA</Civilopedia>
 			<ShortDescription>TXT_KEY_TRAIT_DREAM_SHORT</ShortDescription>
 			<bIgnoreHealth>1</bIgnoreHealth>
-			<bAmphibian>0</bAmphibian>
+			<bAmphibian>1</bAmphibian>
 			<PlotEffectSpawnChances>
 				<PlotEffectSpawnChance>
 					<PlotEffectType>PLOT_EFFECT_DREAMWORLD</PlotEffectType>
