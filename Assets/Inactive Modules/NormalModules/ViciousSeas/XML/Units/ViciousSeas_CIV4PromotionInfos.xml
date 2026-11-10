@@ -1068,7 +1068,6 @@
 					<iPrereqApplications>1</iPrereqApplications>
 				</PrereqPromotionOR>
 			</PrereqPromotionORs>
-			<PrereqInBorderSelf>1</PrereqInBorderSelf>
 			<PromotionExcludes>
 				<Promotion>PROMOTION_NIGHTMARE_AIFON</Promotion>
 				<Promotion>PROMOTION_NIGHTMARE_AIFON_HIDDEN_NATIONALITY_BLANKET</Promotion>
@@ -1313,24 +1312,24 @@
 					<iTerrainDefense>-15</iTerrainDefense>
 				</TerrainDefense>
 			</TerrainDefenses>
-			<TerrainMoveCosts>
-				<TerrainMoveCost>
+			<TerrainDoubleMoves>
+				<TerrainDoubleMove>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
-					<iTerrainMoveCost>-1</iTerrainMoveCost>
-				</TerrainMoveCost>
-				<TerrainMoveCost>
+					<bTerrainDoubleMove>1</bTerrainDoubleMove>
+				</TerrainDoubleMove>
+				<TerrainDoubleMove>
 					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
-					<iTerrainMoveCost>-2</iTerrainMoveCost>
-				</TerrainMoveCost>
-				<TerrainMoveCost>
+					<bTerrainDoubleMove>1</bTerrainDoubleMove>
+				</TerrainDoubleMove>
+				<TerrainDoubleMove>
 					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
-					<iTerrainMoveCost>-2</iTerrainMoveCost>
-				</TerrainMoveCost>
-				<TerrainMoveCost>
+					<bTerrainDoubleMove>1</bTerrainDoubleMove>
+				</TerrainDoubleMove>
+				<TerrainDoubleMove>
 					<TerrainType>TERRAIN_BLIGHTED_COAST</TerrainType>
-					<iTerrainMoveCost>-1</iTerrainMoveCost>
-				</TerrainMoveCost>
-			</TerrainMoveCosts>
+					<bTerrainDoubleMove>1</bTerrainDoubleMove>
+				</TerrainDoubleMove>
+			</TerrainDoubleMoves>
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
