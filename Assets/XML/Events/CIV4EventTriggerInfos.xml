@@ -4182,12 +4182,12 @@
 				<ImprovementType>NONE</ImprovementType>
 			</ImprovementsRequired>
 			<Events>
-				<Event>EVENT_CONTINUE</Event>
+				<Event>EVENT_PENGUINS</Event>
 			</Events>
 			<bRecurring>1</bRecurring>
 			<bShowPlot>1</bShowPlot>
 			<PythonCanDo>canTriggerPenguins</PythonCanDo>
-			<PythonCallback>doPenguins</PythonCallback>
+			<!--<PythonCallback>doPenguins</PythonCallback>-->
 		</EventTriggerInfo>
 		<EventTriggerInfo>
 			<Type>EVENTTRIGGER_PESTILENCE_PASTURE</Type>

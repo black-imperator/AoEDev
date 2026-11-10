@@ -58037,7 +58037,7 @@
 				</Flavor>
 			</Flavors>
 			<iAIWeight>50</iAIWeight>
-			<iCost>240</iCost>
+			<iCost>-1</iCost>
 			<iMoves>1</iMoves>
 			<iWorkRate>400</iWorkRate>
 			<iCombat>5</iCombat>
@@ -58084,7 +58084,7 @@
 			</FreePromotions>
 			<bFreeXP>1</bFreeXP>
 			<iFreePromotionPick>1</iFreePromotionPick>
-			<iMinLevel>6</iMinLevel>
+			<iMinLevel>-1</iMinLevel>
 			<iTier>4</iTier>
 		</UnitInfo>
 		<UnitInfo>        <!-- Daoine Sidhe -->
