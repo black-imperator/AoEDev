@@ -3049,7 +3049,7 @@
 			<DamageType>NONE</DamageType>
 			<FreePromotion>NONE</FreePromotion>
 		</BonusInfo>
-		<BonusInfo>		<!-- Mana Shadow -->
+		<BonusInfo>		<!-- Mana Shadow 70-->
 			<Type>BONUS_MANA_SHADOW</Type>
 			<Description>TXT_KEY_BONUS_MANA_SHADOW</Description>
 			<Civilopedia>TXT_KEY_BONUS_MANA_SHADOW_PEDIA</Civilopedia>
@@ -3189,7 +3189,7 @@
 			<FeatureBooleans/>
 			<FeatureTerrainBooleans/>
 		</BonusInfo>
-		<BonusInfo> 	<!--Desert Rose-->
+		<BonusInfo> 	<!--Desert Rose 75-->
 			<Type>BONUS_DESERT_ROSE</Type>
 			<Description>TXT_KEY_BONUS_DESERT_ROSE</Description>
 			<Civilopedia>TXT_KEY_BONUS_DESERT_ROSE_PEDIA</Civilopedia>
@@ -3276,7 +3276,6 @@
 				</FeatureBoolean>
 			</FeatureBooleans>
 		</BonusInfo>
-	
 		<BonusInfo>		<!-- Oak - WOODS -->
 			<Type>BONUS_OAK</Type>
 			<Description>TXT_KEY_BONUS_OAK</Description>
@@ -3437,8 +3436,7 @@
 					<bFeatureTerrain>1</bFeatureTerrain>
 				</FeatureTerrainBoolean>
 			</FeatureTerrainBooleans>
-		</BonusInfo>
-		
+		</BonusInfo>		
 		<BonusInfo>		<!-- Duskwood -->
 			<Type>BONUS_DUSKWOOD</Type>
 			<Description>TXT_KEY_BONUS_DUSKWOOD</Description>
@@ -3523,7 +3521,7 @@
 				</FeatureTerrainBoolean>
 			</FeatureTerrainBooleans>
 		</BonusInfo>
-		<BonusInfo>		<!-- Effluvium - OTHER RESOURCES -->
+		<BonusInfo>		<!-- Effluvium - 80 OTHER RESOURCES -->
 			<Type>BONUS_EFFLUVIUM</Type>
 			<Description>TXT_KEY_BONUS_EFFLUVIUM</Description>
 			<Civilopedia>TXT_KEY_BONUS_EFFLUVIUM_PEDIA</Civilopedia>
@@ -3965,7 +3963,7 @@
 			<iHealChange>5</iHealChange>
 			<bModifierPerBonus>1</bModifierPerBonus>
 		</BonusInfo>
-		<BonusInfo>		<!-- Penguins -->
+		<BonusInfo>		<!-- Penguins 85-->
 			<Type>BONUS_PENGUINS</Type>
 			<Description>TXT_KEY_BONUS_PENGUINS</Description>
 			<Civilopedia>TXT_KEY_BONUS_PENGUINS_EREBUS_PEDIA</Civilopedia>

@@ -4619,7 +4619,7 @@ void CvSelectionGroup::setTransportUnit(CvUnit* pTransportUnit, CvSelectionGroup
 				pUnitNode = nextUnitNode(pUnitNode);
 
 				// just in case implementation of setTransportUnit changes, check to make sure this unit is not already loaded
-				if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() != pTransportUnit)
+				if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() != pTransportUnit)// && pTransportUnit->canLoadUnit(pLoopUnit,pTransportUnit->plot()))
 				{
 					// if there is room, load the unit and stop the loop (since setTransportUnit ungroups this unit currently)
 					bool bSpaceAvailable = pTransportUnit->cargoSpaceAvailable(pLoopUnit->getSpecialUnitType(), pLoopUnit->getDomainType());
@@ -4697,7 +4697,7 @@ void CvSelectionGroup::setRemoteTransportUnit(CvUnit* pTransportUnit)
 				CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
 				pUnitNode = nextUnitNode(pUnitNode);
 
-				if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() != pTransportUnit && pLoopUnit->getOwnerINLINE() == pTransportUnit->getOwnerINLINE())
+				if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() != pTransportUnit)// && pLoopUnit->getOwnerINLINE() == pTransportUnit->getOwnerINLINE() && pTransportUnit->canLoadUnit(pLoopUnit, pTransportUnit->plot()))
 				{
 					bool bSpaceAvailable = pTransportUnit->cargoSpaceAvailable(pLoopUnit->getSpecialUnitType(), pLoopUnit->getDomainType());
 					if (bSpaceAvailable)

@@ -6308,6 +6308,10 @@ int CvCityAI::AI_neededSeaWorkers()
 	iNeededSeaWorkers += GET_PLAYER(getOwnerINLINE()).countUnimprovedBonuses(pWaterArea, plot());
 
 	// Check if second water area city can reach was any unimproved bonuses
+//	if (plot()->isWater())
+//	{
+//		return iNeededSeaWorkers;
+//	}
 	pWaterArea = secondWaterArea();
 	if (pWaterArea != NULL)
 	{

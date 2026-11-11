@@ -18359,7 +18359,15 @@ void CvCity::getVisibleBuildings(std::list<BuildingTypes>& kChosenVisible, int& 
 	iChosenNumGenerics = iNumGenerics;
 	for(int i = 0; i < iNumUniques; i++)
 	{
-		kChosenVisible.push_back(kVisible[i]);
+		if (!plot()->isWater())
+		{
+			kChosenVisible.push_back(kVisible[i]);
+		}
+	}
+	if (plot()->isWater())
+	{
+		iChosenNumGenerics = 0;
+	//	return;
 	}
 }
 

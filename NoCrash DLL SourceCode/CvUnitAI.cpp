@@ -14151,7 +14151,7 @@ bool CvUnitAI::AI_guardCity(bool bLeave, bool bSearch, int iMaxPath)
 	int iBestValue;
 	int iLoop;
 
-	FAssert(getDomainType() == DOMAIN_LAND);
+	FAssert(getDomainType() == DOMAIN_LAND && !plot()->isWater());
 	FAssert(canDefend());
 
 	pPlot = plot();

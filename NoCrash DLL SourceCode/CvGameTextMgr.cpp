@@ -29821,6 +29821,7 @@ void CvGameTextMgr::parseGreatGeneralHelp(CvWStringBuffer &szBuffer, CvPlayer& k
 void CvGameTextMgr::buildCityBillboardIconString( CvWStringBuffer& szBuffer, CvCity* pCity)
 {
 	szBuffer.clear();
+	//offset is 
 	int ioffset = GC.getNumBonusInfos() - 75;
 	// government center icon
 	if (pCity->isGovernmentCenter() && !(pCity->isCapital()))
