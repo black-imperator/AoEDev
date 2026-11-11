@@ -176,5 +176,21 @@
 		        <DependencyType>MODULE_VICIOUSSEAS</DependencyType>
 		     </AndDependencyTypes>
 		</PromotionInfo>
+		<PromotionInfo>		<!-- PIRATE_PRINCE1 -->
+			<Type>PROMOTION_PIRATE_PRINCE1</Type>
+			<iMinLevel>20</iMinLevel>
+			<bTypeDependency>1</bTypeDependency>
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_VICIOUSSEAS</DependencyType>
+		     </AndDependencyTypes>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- DROWNED_CALLER1 -->
+			<Type>PROMOTION_DROWNED_CALLER1</Type>
+			<iMinLevel>20</iMinLevel>
+			<bTypeDependency>1</bTypeDependency>
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_VICIOUSSEAS</DependencyType>
+		     </AndDependencyTypes>
+		</PromotionInfo>
 	</PromotionInfos>
 </Civ4PromotionInfos>

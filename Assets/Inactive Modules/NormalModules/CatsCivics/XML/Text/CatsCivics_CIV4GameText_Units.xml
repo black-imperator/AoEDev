@@ -21,4 +21,28 @@
 		<Italian>Nomad Caravan</Italian>
 		<Spanish>Nomad Caravan</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_FOOD_SUPPLIES</Tag>
+		<English>Food Wagon</English>
+		<French>Food Wagon</French>
+		<German>Food Wagon</German>
+		<Italian>Food Wagon</Italian>
+		<Spanish>Food Wagon</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_VALUABLES_SUPPLIES</Tag>
+		<English>Loot Wagon</English>
+		<French>Loot Wagon</French>
+		<German>Loot Wagon</German>
+		<Italian>Loot Wagon</Italian>
+		<Spanish>Loot Wagon</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_WORKABLES_SUPPLIES</Tag>
+		<English>Workable Wagon</English>
+		<French>Workable Wagon</French>
+		<German>Workable Wagon</German>
+		<Italian>Workable Wagon</Italian>
+		<Spanish>Workable Wagon</Spanish>
+	</TEXT>
 </Civ4GameText>

@@ -434,4 +434,8 @@ The Court of Misrak are Soul-Consuming Fairies that do not require food. They fo
         <Tag>TXT_KEY_SPECIALIST_FAIRY_DOLL</Tag>
         <English>Doll</English>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_CONSUME_HOLY_SHROOM</Tag>
+        <English>Consume Holy Mushroom</English>
+    </TEXT>
 </Civ4GameText>
