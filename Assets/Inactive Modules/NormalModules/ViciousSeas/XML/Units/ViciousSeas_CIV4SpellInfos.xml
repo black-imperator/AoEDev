@@ -91,7 +91,6 @@
 			</SpellClasses>
 			<PyResult>spellErosion(pCaster)</PyResult>
 			<PyRequirement>reqErosion(pCaster)</PyRequirement>
-			<CivilizationPrereq>CIVILIZATION_BEZERI</CivilizationPrereq>
 			<PromotionPrereq1>PROMOTION_WATER1</PromotionPrereq1>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_SPELL_SPRING</Sound>
@@ -118,7 +117,6 @@
 			</SpellClasses>
 			<PromotionPrereq1>PROMOTION_WATER2</PromotionPrereq1>
 			<PromotionPrereq2>PROMOTION_NATURE2</PromotionPrereq2>
-			<CivilizationPrereq>CIVILIZATION_BEZERI</CivilizationPrereq>
 			<bAllowAI>1</bAllowAI>
 			<iAIWeight>25</iAIWeight>
 			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
@@ -139,8 +137,8 @@
 			<Help>TXT_KEY_SPELL_SURGING_TIDES_HELP</Help>
 			<PromotionPrereq1>PROMOTION_WATER3</PromotionPrereq1>
 			<PromotionPrereq2>PROMOTION_NATURE3</PromotionPrereq2>
-			<CivilizationPrereq>CIVILIZATION_BEZERI</CivilizationPrereq>
 			<bAllowAI>1</bAllowAI>
+			<iAIWeight>25</iAIWeight>
 			<bIsAutoCastable>1</bIsAutoCastable>
 			<bCausesWar>1</bCausesWar>
 			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
@@ -332,7 +330,7 @@
 			<iNumTargets>3</iNumTargets>
 			<bResistable>1</bResistable>
 			<bAllowAI>1</bAllowAI>
-			<iAIWeight>25</iAIWeight>
+			<iAIWeight>50</iAIWeight>
 			<bIsAutoCastable>1</bIsAutoCastable>
 			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
 			<bHasCasted>1</bHasCasted>
@@ -365,7 +363,7 @@
 			<iNumTargets>1</iNumTargets>
 			<bResistable>1</bResistable>
 			<bAllowAI>1</bAllowAI>
-			<iAIWeight>25</iAIWeight>
+			<iAIWeight>50</iAIWeight>
 			<bIsAutoCastable>1</bIsAutoCastable>
 			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
 			<bHasCasted>1</bHasCasted>

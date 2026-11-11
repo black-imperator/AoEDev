@@ -7440,6 +7440,14 @@
 			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>1000</iAIValue>
 		</EventInfo>
+		<EventInfo>
+			<Type>EVENT_PENGUINS</Type>
+			<Description>TXT_KEY_EVENT_CONTINUE</Description>
+			<BonusType>BONUS_PENGUINS</BonusType>
+			<iBonusChange>1</iBonusChange>
+			<Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>1000</iAIValue>
+		</EventInfo>
 	
 	</EventInfos>
 </Civ4EventInfos>

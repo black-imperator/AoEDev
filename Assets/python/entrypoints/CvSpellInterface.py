@@ -5156,13 +5156,13 @@ def spellWonder(caster):
 			caster.cast(getInfoType('SPELL_WITHER'))
 		elif iRnd == 58:
 			if not bFavored or bCity == False:
-				iImprovement = pPlot.getImprovementType()
+				iBonusPenguin = pPlot.getBonusType
 				bValid = True
-				if iImprovement != -1 :
+				if iBonusPenguin != -1 :
 					if gc.getImprovementInfo(iImprovement).isPermanent() :
 						bValid = False
 				if bValid :
-					pPlot.setImprovementType(getInfoType('IMPROVEMENT_PENGUINS'))
+					pPlot.setBonusType(getInfoType('BONUS_PENGUINS'))
 					CyInterface().addMessage(caster.getOwner(),True,25,CyTranslator().getText("TXT_KEY_MESSAGE_WONDER_PENGUINS", ()),'',1,'Art/Interface/Buttons/Improvements/Penguins.dds',ColorTypes(8),pPlot.getX(),pPlot.getY(),True,True)
 			else:
 				caster.cast(getInfoType('SPELL_SWARM_OF_LOCUSTS'))

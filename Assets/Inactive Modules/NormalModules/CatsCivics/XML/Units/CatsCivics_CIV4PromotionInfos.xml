@@ -2749,7 +2749,6 @@
 		<PromotionInfo>		<!-- Nomad Wagon -->
 			<Type>PROMOTION_NOMAD_WAGON</Type>
 			<Description>TXT_KEY_PROMOTION_NOMAD_WAGON</Description>
-			<Help>TXT_KEY_PROMOTION_NOMAD_WAGON_HELP</Help>
 			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Promotions/Nomadic.dds</Button>
 			<iFoodSacrifice>40</iFoodSacrifice>
 			<bNoXP>1</bNoXP>
@@ -2765,7 +2764,6 @@
 		<PromotionInfo>		<!-- Valuables Supply -->
 			<Type>PROMOTION_VALUABLES_SUPPLIES</Type>
 			<Description>TXT_KEY_PROMOTION_VALUABLES_SUPPLIES</Description>
-			<Help>TXT_KEY_PROMOTION_VALUABLES_SUPPLIES_HELP</Help>
 			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Promotions/Nomadic.dds</Button>
 			<iGoldSacrifice>10</iGoldSacrifice>
 			<bNoXP>1</bNoXP>

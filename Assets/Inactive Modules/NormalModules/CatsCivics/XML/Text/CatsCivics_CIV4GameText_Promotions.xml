@@ -382,12 +382,20 @@
 		<Spanish>Food Wagon</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>PROMOTION_VALUABLES_SUPPLIES</Tag>
+		<Tag>TXT_KEY_PROMOTION_VALUABLES_SUPPLIES</Tag>
 		<English>Loot Wagon</English>
 		<French>Loot Wagon</French>
 		<German>Loot Wagon</German>
 		<Italian>Loot Wagon</Italian>
 		<Spanish>Loot Wagon</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_WORKABLES_SUPPLIES</Tag>
+		<English>Workable Wagon</English>
+		<French>Workable Wagon</French>
+		<German>Workable Wagon</German>
+		<Italian>Workable Wagon</Italian>
+		<Spanish>Workable Wagon</Spanish>
 	</TEXT>
 
 </Civ4GameText>
