@@ -55,6 +55,10 @@ public class MainForm : Form
     /// aren't mistaken for the user resizing it.
     private bool _applyingLayout;
 
+    /// True while the user is dragging the window's edge. Work that only needs to be right once
+    /// the drag finishes (re-centering the splitter) is skipped meanwhile and done in OnResizeEnd.
+    private bool _userResizing;
+
     /// Window state as of the last size/state change, used to notice maximize/restore.
     private FormWindowState _lastWindowState = FormWindowState.Normal;
 
@@ -72,6 +76,7 @@ public class MainForm : Form
         _config = ConfigManager.Load();
         RestoreWindowSize();
 
+        DoubleBuffered = true;
         Theme.StyleForm(this);
         //LoadBackgroundImage(); // disabled: WinForms can't layer alpha-blended controls over a background image
 
@@ -143,12 +148,27 @@ public class MainForm : Form
             _lastWindowState = WindowState;
     }
 
-    /// Fires once when the user finishes dragging the window's edge (not on every pixel of the drag).
+    protected override void OnResizeBegin(EventArgs e)
+    {
+        base.OnResizeBegin(e);
+        _userResizing = true;
+    }
+
+    /// Fires once when the user finishes dragging the window's edge or title bar (not on every
+    /// pixel of the drag): re-centers the splitter and saves the size if it actually changed.
     protected override void OnResizeEnd(EventArgs e)
     {
         base.OnResizeEnd(e);
+        _userResizing = false;
+
+        var oldWidth = _config.WindowClientWidth;
+        var oldHeight = _config.WindowClientHeight;
         CaptureWindowSize();
-        SaveConfig();
+
+        if (_splitContainer.Visible) CenterSplitter();
+
+        if (_config.WindowClientWidth != oldWidth || _config.WindowClientHeight != oldHeight)
+            SaveConfig();
     }
 
     protected override void OnFormClosing(FormClosingEventArgs e)
@@ -185,7 +205,7 @@ public class MainForm : Form
 
     private void BuildUi()
     {
-        var topPanel = new Panel { Dock = DockStyle.Top, Height = 130 };
+        var topPanel = new BufferedPanel { Dock = DockStyle.Top, Height = 130 };
         Theme.StyleContainer(topPanel);
         _topPanel = topPanel;
 
@@ -245,7 +265,7 @@ public class MainForm : Form
             chkCloseOnLaunch.Left = topPanel.Width - chkCloseOnLaunch.Width - 12;
         };
 
-        _splitContainer = new SplitContainer
+        _splitContainer = new BufferedSplitContainer
         {
             Dock = DockStyle.Fill,
             Orientation = Orientation.Vertical,
@@ -255,12 +275,12 @@ public class MainForm : Form
         Theme.StyleContainer(_splitContainer);
         _splitContainer.Resize += (s, e) => CenterSplitter();
 
-        var activeGroup = new GroupBox { Text = "Active Modules (loaded in-game)", Dock = DockStyle.Fill };
+        var activeGroup = new BufferedGroupBox { Text = "Active Modules (loaded in-game)", Dock = DockStyle.Fill };
         Theme.StyleContainer(activeGroup);
         dgvActive = CreateModuleGrid();
         activeGroup.Controls.Add(dgvActive);
 
-        var inactiveGroup = new GroupBox { Text = "Inactive Modules (installed, not loaded)", Dock = DockStyle.Fill };
+        var inactiveGroup = new BufferedGroupBox { Text = "Inactive Modules (installed, not loaded)", Dock = DockStyle.Fill };
         Theme.StyleContainer(inactiveGroup);
         dgvInactive = CreateModuleGrid();
         inactiveGroup.Controls.Add(dgvInactive);
@@ -268,7 +288,7 @@ public class MainForm : Form
         _splitContainer.Panel1.Controls.Add(activeGroup);
         _splitContainer.Panel2.Controls.Add(inactiveGroup);
 
-        var bottomPanel = new Panel { Dock = DockStyle.Bottom, Height = 88 };
+        var bottomPanel = new BufferedPanel { Dock = DockStyle.Bottom, Height = 88 };
         Theme.StyleContainer(bottomPanel);
         _bottomPanel = bottomPanel;
 
@@ -314,7 +334,7 @@ public class MainForm : Form
         bottomPanel.Resize += (s, e) => { btnDevSchemas.Left = bottomPanel.Width - btnDevSchemas.Width - 12; };
 
         // Status bar: status text fills the left, launcher version sits at the right.
-        var statusPanel = new Panel { Dock = DockStyle.Bottom, Height = 26 };
+        var statusPanel = new BufferedPanel { Dock = DockStyle.Bottom, Height = 26 };
         Theme.StyleContainer(statusPanel);
         _statusPanel = statusPanel;
 
@@ -421,6 +441,11 @@ public class MainForm : Form
     /// again on restore and the split is re-centered then.
     private void CenterSplitter()
     {
+        // During an edge drag the container already scales the splitter proportionally; forcing an
+        // exact re-center on every resize event just adds a relayout of both grids per mouse move.
+        // OnResizeEnd re-centers once the drag is over.
+        if (_userResizing) return;
+
         var min = _splitContainer.Panel1MinSize;
         var max = _splitContainer.Width - _splitContainer.Panel2MinSize - _splitContainer.SplitterWidth;
         if (max < min) return;

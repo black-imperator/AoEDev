@@ -61,6 +61,10 @@ public class ModuleGridView : DataGridView
     public ModuleGridView()
     {
         ShowCellToolTips = false;
+
+        // DataGridView doesn't double-buffer by default; without it, resizing the window repaints
+        // every visible cell straight to the screen and stutters badly.
+        DoubleBuffered = true;
     }
 
     protected override void Dispose(bool disposing)
