@@ -52,7 +52,7 @@ public static class ModuleScanner
     ///   [section]
     ///   value line(s) until the next [section] or end of file
     /// [desc] may be multi-line (including blank lines for paragraph breaks);
-    /// [dependency] and [incompatible] are comma-separated lists of module [name] entries;
+    /// [dependency] and [incompatible] are comma-separated lists of module folder names;
     /// everything else is treated as a single line.
     private static ModuleInfo ReadInfo(string moduleDir)
     {
@@ -132,7 +132,7 @@ public static class ModuleScanner
         return info;
     }
 
-    /// Splits a list of module [name] entries, separated by commas (and/or line breaks, so a long
+    /// Splits a list of module folder names, separated by commas (and/or line breaks, so a long
     /// list can be wrapped). Names may contain spaces, so whitespace is not a separator.
     private static List<string> SplitNames(string text) =>
         text.Split(new[] { ',', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries)

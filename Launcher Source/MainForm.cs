@@ -46,12 +46,15 @@ public class MainForm : Form
     private readonly ToolTip _filterToolTip = new();
 
     /// The tags that get a filter box, in display order. Add a name here to add a filter.
-    private static readonly string[] FilterTags = { "Civ", "Mech", "Art", "Joke" };
+    private static readonly string[] FilterTags = { "Civ(N)", "Civ(E)", "Art", "Joke", "Mech", "Lead", "Bal", "Event" };
+
+    /// Height of the filter section: heading row, filter box row, and room for the separator line.
+    private const int FilterPanelHeight = 72;
     private Panel _statusPanel = null!;
     private Button btnManage = null!;
 
     private const int MinFormWidth = 900;
-    private const int ExpandedMinHeight = 520;
+    private const int ExpandedMinHeight = 560;
 
     /// Client height to restore when the module section is revealed. Starts as the saved (or
     /// default) height, and follows the user's resizing while the module section is shown.
@@ -294,13 +297,22 @@ public class MainForm : Form
         _splitContainer.Panel1.Controls.Add(activeGroup);
         _splitContainer.Panel2.Controls.Add(inactiveGroup);
 
-        // Tag filter row, centered between the module lists and the preset tools.
-        var filterPanel = new BufferedPanel { Dock = DockStyle.Bottom, Height = 32 };
+        // Tag filter section, centered between the module lists and the preset tools: a larger
+        // "Filters:" heading on its own row, the filter boxes on the row below it, and a thin
+        // separator line along the bottom edge to set it apart from the preset/refresh row.
+        var filterPanel = new BufferedPanel { Dock = DockStyle.Bottom, Height = FilterPanelHeight };
         Theme.StyleContainer(filterPanel);
         _filterPanel = filterPanel;
 
-        var lblFilters = new Label { Text = "Filters:", AutoSize = false, TextAlign = ContentAlignment.MiddleLeft, Height = 22 };
-        lblFilters.Width = TextRenderer.MeasureText(lblFilters.Text, lblFilters.Font).Width + 4;
+        var lblFilters = new Label
+        {
+            Text = "Filters:",
+            AutoSize = false,
+            TextAlign = ContentAlignment.MiddleCenter,
+            Font = new Font(Font.FontFamily, Font.Size * 1.3f, FontStyle.Bold),
+        };
+        lblFilters.Width = TextRenderer.MeasureText(lblFilters.Text, lblFilters.Font).Width + 12;
+        lblFilters.Height = lblFilters.Font.Height + 6;
         Theme.StyleLabel(lblFilters);
         filterPanel.Controls.Add(lblFilters);
 
@@ -322,18 +334,29 @@ public class MainForm : Form
         void LayoutFilterRow()
         {
             const int spacing = 20;
-            var items = new List<Control> { lblFilters };
-            items.AddRange(_filterBoxes);
-            var total = items.Sum(c => c.Width) + spacing * (items.Count - 1);
+            const int topPad = 6;
+
+            lblFilters.Left = (filterPanel.Width - lblFilters.Width) / 2;
+            lblFilters.Top = topPad;
+
+            var total = _filterBoxes.Sum(c => c.Width) + spacing * (_filterBoxes.Count - 1);
             var x = Math.Max(0, (filterPanel.Width - total) / 2);
-            foreach (var c in items)
+            var boxesTop = lblFilters.Bottom + 2;
+            foreach (var c in _filterBoxes)
             {
                 c.Left = x;
-                c.Top = (filterPanel.Height - c.Height) / 2;
+                c.Top = boxesTop;
                 x += c.Width + spacing;
             }
+            filterPanel.Invalidate();
         }
         filterPanel.Resize += (s, e) => LayoutFilterRow();
+        filterPanel.Paint += (s, e) =>
+        {
+            using var pen = new Pen(Theme.GridLine);
+            var y = filterPanel.Height - 2;
+            e.Graphics.DrawLine(pen, 12, y, filterPanel.Width - 12, y);
+        };
         LayoutFilterRow();
 
         var bottomPanel = new BufferedPanel { Dock = DockStyle.Bottom, Height = 88 };
@@ -564,9 +587,10 @@ public class MainForm : Form
             FlatStyle = FlatStyle.Flat,
         };
 
-        // Module | Version | AoE Rev | Loadpass | Info
+        // Module | Author | Version | AoE Rev | Loadpass | Info
         grid.Columns.AddRange(
             nameCol,
+            FixedCol("Author", "Author", 110),
             FixedCol("Version", "Version", 64),
             FixedCol("AoERev", "AoE Rev", 66),
             FixedCol("LoadPass", "Loadpass", 70, centered: true),
@@ -889,7 +913,7 @@ public class MainForm : Form
             // Values must follow the column order set up in CreateModuleGrid.
             var idx = grid.Rows.Add(
                 m.Name,
-                m.Version, m.AoeRev, ModuleLayout.PassDisplayName(m.LoadPass),
+                m.Author, m.Version, m.AoeRev, ModuleLayout.PassDisplayName(m.LoadPass),
                 infoText);
             var row = grid.Rows[idx];
             row.Tag = m;
@@ -958,7 +982,7 @@ public class MainForm : Form
 - Shift clicking a module with one already selected will select it and all modules between the two
 - Control-clicking a module will toggle the selection of that specific module
 - The Refresh button will update the shown module list if you manually move files with the launcher open
-- The Filters row greys out modules by tag (from each module's info.txt): click a tag's box to cycle it between empty (no filter), white (only show modules WITH that tag) and black (grey out modules WITH that tag); right-click clears it
+- The Filters section greys out modules by tag (from each module's [tags] entry in info.txt): click a tag's box to cycle it between empty (no filter), white (only show modules WITH that tag) and black (grey out modules WITH that tag); right-click clears it
 - Greyed-out modules move to the bottom of their list but are NOT removed: they stay active or inactive exactly as before, so check your filters before launching
 - Right-click a module and choose ""Load in pass"" to move it between the Default folder (Def) and the sequenced passes 1-4 (Seq); the Loadpass column shows where each module currently is
 - The game loads Default modules first, then pass 1, 2, 3 and 4; within each pass modules load alphabetically by their folder name

@@ -60,8 +60,9 @@ next to it. No installer, no registry entries, no other footprint.
   preset's modules in the passes the preset records (modules not installed
   locally can't be checked).
 - **Tag filters**: a **Filters** row under the module lists has a three-state box
-  for each of `Civ`, `Mech`, `Art` and `Joke` (the list is `FilterTags` in
-  `MainForm.cs`). Click a box to cycle it: empty = no filter, white = whitelist
+  for each of `Civ(N)`, `Civ(E)`, `Art`, `Joke`, `Mech`, `Lead`, `Bal` and `Event`
+  (the list is `FilterTags` in `MainForm.cs`).
+  Click a box to cycle it: empty = no filter, white = whitelist
   (modules *without* the tag are filtered out), black = blacklist (modules *with*
   the tag are filtered out); right-click clears it. With several whitelisted tags a
   module must have all of them. Filtered-out modules are never removed: they are
@@ -125,34 +126,38 @@ Parsed as sectioned key/value blocks:
 
 ```
 ;comments start with a semicolon and are ignored
-[version]
-1.2
-;
 [name]
 Cheaper Techs
 ;
-[shortdesc]
-Cheaper earlier techs, MUCH more expensive late techs.
+[author]
+Blazenclaw
+;
+[version]
+1.2
 ;
 [aoeversion]
 380
 ;
 [tags]
-Civ, Mech
+Civ(N), Mech
 ;
 [dependency]
-Some Other Module, Another Module
+SomeOtherModuleFolder, AnotherModuleFolder
 ;
 [incompatible]
-Conflicting Module
+ConflictingModuleFolder
+;
+[shortdesc]
+Cheaper earlier techs, MUCH more expensive late techs.
 ;
 [desc]
 Multi-line description text...
 can span several lines, including blank ones for paragraph breaks.
 ```
 
-`[name]` is the module's display name, and is also what other modules write in
-their `[dependency]` and `[incompatible]` lists (comma-separated; both may be empty).
+`[name]` is the module's display name. `[author]` fills the **Author** column.
+`[dependency]` and `[incompatible]` are comma-separated lists of other modules'
+exact *folder* names (not their `[name]`); either may be empty.
 `[aoeversion]` fills the **AoE Rev** column. `[tags]` is a list separated by
 commas, semicolons, pipes, spaces or line breaks; each entry is compared as a
 whole word, case-insensitively, against the filter tags.

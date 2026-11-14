@@ -7,7 +7,6 @@ namespace AoELauncher.Models;
 public class ModuleInfo
 {
     /// The name shown to the user: the [name] entry of info.txt, or the folder name if that is missing or blank.
-    /// This is also the name other modules use in their [dependency] and [incompatible] lists.
     public string Name { get; set; } = "";
 
     /// The module's folder name on disk. This is what the file system operations, presets and the
@@ -30,10 +29,10 @@ public class ModuleInfo
     public string Author { get; set; } = "";
     public List<string> Compatible { get; set; } = new();
 
-    /// [name] entries of the modules that must be active and load before this one (from [dependency]).
+    /// Folder names of the modules that must be active and load before this one (from [dependency]).
     public List<string> Dependencies { get; set; } = new();
 
-    /// [name] entries of the modules that must not be active at the same time as this one (from [incompatible]).
+    /// Folder names of the modules that must not be active at the same time as this one (from [incompatible]).
     public List<string> Incompatible { get; set; } = new();
 
     /// Shown as a tooltip when hovering the module row.
