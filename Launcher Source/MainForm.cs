@@ -41,6 +41,12 @@ public class MainForm : Form
     private CheckBox chkCloseOnLaunch = null!;
     private Panel _topPanel = null!;
     private Panel _bottomPanel = null!;
+    private Panel _filterPanel = null!;
+    private readonly List<TagFilterBox> _filterBoxes = new();
+    private readonly ToolTip _filterToolTip = new();
+
+    /// The tags that get a filter box, in display order. Add a name here to add a filter.
+    private static readonly string[] FilterTags = { "Civ", "Mech", "Art", "Joke" };
     private Panel _statusPanel = null!;
     private Button btnManage = null!;
 
@@ -288,6 +294,48 @@ public class MainForm : Form
         _splitContainer.Panel1.Controls.Add(activeGroup);
         _splitContainer.Panel2.Controls.Add(inactiveGroup);
 
+        // Tag filter row, centered between the module lists and the preset tools.
+        var filterPanel = new BufferedPanel { Dock = DockStyle.Bottom, Height = 32 };
+        Theme.StyleContainer(filterPanel);
+        _filterPanel = filterPanel;
+
+        var lblFilters = new Label { Text = "Filters:", AutoSize = false, TextAlign = ContentAlignment.MiddleLeft, Height = 22 };
+        lblFilters.Width = TextRenderer.MeasureText(lblFilters.Text, lblFilters.Font).Width + 4;
+        Theme.StyleLabel(lblFilters);
+        filterPanel.Controls.Add(lblFilters);
+
+        _filterToolTip.SetToolTip(lblFilters,
+            "Click a tag's box to cycle it: empty = no filter, white = only show modules WITH the tag, " +
+            "black = grey out modules WITH the tag. Right-click a box to clear it.\n" +
+            "Greyed-out modules are moved to the bottom of their list but are still active/inactive as before.");
+        foreach (var tag in FilterTags)
+        {
+            var box = new TagFilterBox { Text = tag };
+            box.FitToText();
+            box.StateChanged += (s, e) => OnFilterChanged();
+            _filterToolTip.SetToolTip(box,
+                $"{tag}: click to cycle (empty = no filter, white = only {tag} modules, black = hide {tag} modules). Right-click to clear.");
+            _filterBoxes.Add(box);
+            filterPanel.Controls.Add(box);
+        }
+
+        void LayoutFilterRow()
+        {
+            const int spacing = 20;
+            var items = new List<Control> { lblFilters };
+            items.AddRange(_filterBoxes);
+            var total = items.Sum(c => c.Width) + spacing * (items.Count - 1);
+            var x = Math.Max(0, (filterPanel.Width - total) / 2);
+            foreach (var c in items)
+            {
+                c.Left = x;
+                c.Top = (filterPanel.Height - c.Height) / 2;
+                x += c.Width + spacing;
+            }
+        }
+        filterPanel.Resize += (s, e) => LayoutFilterRow();
+        LayoutFilterRow();
+
         var bottomPanel = new BufferedPanel { Dock = DockStyle.Bottom, Height = 88 };
         Theme.StyleContainer(bottomPanel);
         _bottomPanel = bottomPanel;
@@ -363,7 +411,10 @@ public class MainForm : Form
         statusPanel.Controls.Add(lblStatus);
         statusPanel.Controls.Add(lblLauncherVersion);
 
+        // Dock order: later-added edge panels sit further from the Fill control, so the filter row
+        // goes in before the bottom panel to sit directly under the module lists.
         Controls.Add(_splitContainer);
+        Controls.Add(filterPanel);
         Controls.Add(bottomPanel);
         Controls.Add(statusPanel);
         Controls.Add(topPanel);
@@ -385,6 +436,7 @@ public class MainForm : Form
             MaximizeBox = true;
             _splitContainer.Visible = true;
             _bottomPanel.Visible = true;
+            _filterPanel.Visible = true;
             ClientSize = new Size(ClientSize.Width, _expandedClientHeight);
         }
         else
@@ -405,6 +457,7 @@ public class MainForm : Form
 
             _splitContainer.Visible = false;
             _bottomPanel.Visible = false;
+            _filterPanel.Visible = false;
             MaximizeBox = false;
             ApplyCollapsedSize();
         }
@@ -511,13 +564,9 @@ public class MainForm : Form
             FlatStyle = FlatStyle.Flat,
         };
 
-        // Module | Civ Mech Art Joke (tag checkmarks) | Version | AoE Rev | Loadpass | Info
+        // Module | Version | AoE Rev | Loadpass | Info
         grid.Columns.AddRange(
             nameCol,
-            FixedCol("Civ", "Civ", 42, centered: true),
-            FixedCol("Mech", "Mech", 42, centered: true),
-            FixedCol("Art", "Art", 42, centered: true),
-            FixedCol("Joke", "Joke", 42, centered: true),
             FixedCol("Version", "Version", 64),
             FixedCol("AoERev", "AoE Rev", 66),
             FixedCol("LoadPass", "Loadpass", 70, centered: true),
@@ -760,26 +809,66 @@ public class MainForm : Form
         lblStatus.Text = "Scanning modules...";
         UpdateLaunchButtonText();
 
-        var activeScroll = SafeScrollIndex(dgvActive);
-        var inactiveScroll = SafeScrollIndex(dgvInactive);
-        var activeSelected = SelectedNames(dgvActive);
-        var inactiveSelected = SelectedNames(dgvInactive);
-
         var all = ModuleScanner.ScanAll(_modPath);
         _activeModules = all.Where(m => m.IsActive)
             .OrderBy(m => m.Name, StringComparer.OrdinalIgnoreCase).ThenBy(m => m.FolderName, StringComparer.OrdinalIgnoreCase).ToList();
         _inactiveModules = all.Where(m => !m.IsActive)
             .OrderBy(m => m.Name, StringComparer.OrdinalIgnoreCase).ThenBy(m => m.FolderName, StringComparer.OrdinalIgnoreCase).ToList();
 
-        PopulateGrid(dgvActive, _activeModules, activeSelected, activeScroll);
-        PopulateGrid(dgvInactive, _inactiveModules, inactiveSelected, inactiveScroll);
+        RepopulateGrids(keepScroll: true);
 
         if (firstLaunch)
             lblStatus.Text = $"Welcome to the launcher! First time users may find the \"Instructions\" button useful.";
         else
-            lblStatus.Text = $"{_activeModules.Count} active, {_inactiveModules.Count} inactive modules.";
+            lblStatus.Text = CountStatusText();
 
         Cursor = Cursors.Default;
+    }
+
+    /// Redraws both lists from the already-scanned modules, preserving selection (and, optionally,
+    /// scroll position), with filtered-out modules greyed and sorted to the bottom.
+    private void RepopulateGrids(bool keepScroll)
+    {
+        var activeScroll = keepScroll ? SafeScrollIndex(dgvActive) : 0;
+        var inactiveScroll = keepScroll ? SafeScrollIndex(dgvInactive) : 0;
+        var activeSelected = SelectedNames(dgvActive);
+        var inactiveSelected = SelectedNames(dgvInactive);
+
+        PopulateGrid(dgvActive, _activeModules, activeSelected, activeScroll);
+        PopulateGrid(dgvInactive, _inactiveModules, inactiveSelected, inactiveScroll);
+    }
+
+    private bool AnyFilterActive => _filterBoxes.Any(b => b.State != TagFilterState.Neutral);
+
+    /// True if the module doesn't pass the tag filters: it lacks a whitelisted tag (every
+    /// whitelisted tag is required) or has a blacklisted one.
+    private bool IsFilteredOut(ModuleInfo m)
+    {
+        foreach (var box in _filterBoxes)
+        {
+            var has = m.Tags.Contains(box.Text);
+            if (box.State == TagFilterState.Whitelist && !has) return true;
+            if (box.State == TagFilterState.Blacklist && has) return true;
+        }
+        return false;
+    }
+
+    private string CountStatusText()
+    {
+        var text = $"{_activeModules.Count} active, {_inactiveModules.Count} inactive modules.";
+        if (AnyFilterActive)
+        {
+            var a = _activeModules.Count(IsFilteredOut);
+            var i = _inactiveModules.Count(IsFilteredOut);
+            text += $"  Filters on: {a} active and {i} inactive greyed out.";
+        }
+        return text;
+    }
+
+    private void OnFilterChanged()
+    {
+        RepopulateGrids(keepScroll: false);
+        lblStatus.Text = CountStatusText();
     }
 
     private static int SafeScrollIndex(DataGridView grid) =>
@@ -788,21 +877,28 @@ public class MainForm : Form
     private static HashSet<string> SelectedNames(DataGridView grid) =>
         new(grid.SelectedRows.Cast<DataGridViewRow>().Select(r => ((ModuleInfo)r.Tag!).FolderName), StringComparer.OrdinalIgnoreCase);
 
-    /// Repopulates a grid while preserving scroll position and selection where possible (both otherwise reset on Rows.Clear()).
-    private static void PopulateGrid(DataGridView grid, List<ModuleInfo> modules, HashSet<string> selectedNames, int scrollIndex)
+    /// Repopulates a grid while preserving scroll position and selection where possible (both otherwise
+    /// reset on Rows.Clear()). Modules failing the tag filters are listed after the others, greyed out;
+    /// the sort is stable, so each group stays in name order.
+    private void PopulateGrid(DataGridView grid, List<ModuleInfo> modules, HashSet<string> selectedNames, int scrollIndex)
     {
         grid.Rows.Clear();
-        foreach (var m in modules)
+        foreach (var m in modules.OrderBy(m => IsFilteredOut(m) ? 1 : 0))
         {
             var infoText = !string.IsNullOrWhiteSpace(m.Desc) ? "i" : "";
             // Values must follow the column order set up in CreateModuleGrid.
             var idx = grid.Rows.Add(
                 m.Name,
-                TagMark(m, "Civ"), TagMark(m, "Mech"), TagMark(m, "Art"), TagMark(m, "Joke"),
                 m.Version, m.AoeRev, ModuleLayout.PassDisplayName(m.LoadPass),
                 infoText);
             var row = grid.Rows[idx];
             row.Tag = m;
+            if (IsFilteredOut(m))
+            {
+                row.DefaultCellStyle.ForeColor = Theme.FilteredText;
+                row.DefaultCellStyle.SelectionForeColor = Theme.FilteredSelectionText;
+                row.DefaultCellStyle.SelectionBackColor = Theme.FilteredSelectionBack;
+            }
             if (!string.IsNullOrWhiteSpace(m.ShortDesc))
             {
                 foreach (DataGridViewCell cell in row.Cells)
@@ -823,9 +919,6 @@ public class MainForm : Form
             catch { /* can throw if the grid isn't visible/sized yet, e.g. during startup */ }
         }
     }
-
-    /// A checkmark if the module's [tags] section contains the given tag, otherwise blank.
-    private static string TagMark(ModuleInfo m, string tag) => m.Tags.Contains(tag) ? "\u2713" : "";
 
     private void ShowModuleDetails(ModuleInfo m)
     {
@@ -865,7 +958,8 @@ public class MainForm : Form
 - Shift clicking a module with one already selected will select it and all modules between the two
 - Control-clicking a module will toggle the selection of that specific module
 - The Refresh button will update the shown module list if you manually move files with the launcher open
-- The Civ, Mech, Art and Joke columns show a checkmark if the module lists that tag in its info.txt
+- The Filters row greys out modules by tag (from each module's info.txt): click a tag's box to cycle it between empty (no filter), white (only show modules WITH that tag) and black (grey out modules WITH that tag); right-click clears it
+- Greyed-out modules move to the bottom of their list but are NOT removed: they stay active or inactive exactly as before, so check your filters before launching
 - Right-click a module and choose ""Load in pass"" to move it between the Default folder (Def) and the sequenced passes 1-4 (Seq); the Loadpass column shows where each module currently is
 - The game loads Default modules first, then pass 1, 2, 3 and 4; within each pass modules load alphabetically by their folder name
 - Moving a module between active and inactive keeps its load pass

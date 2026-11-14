@@ -18,6 +18,11 @@ public static class Theme
     public static readonly Color Accent = Color.FromArgb(230, 126, 34);
     public static readonly Color GridLine = Color.FromArgb(70, 70, 74);
 
+    // Rows of modules that don't match the tag filters are shown greyed out.
+    public static readonly Color FilteredText = Color.FromArgb(120, 120, 124);
+    public static readonly Color FilteredSelectionBack = Color.FromArgb(105, 78, 50);
+    public static readonly Color FilteredSelectionText = Color.FromArgb(190, 190, 190);
+
     /// Uniform height applied to every button in the app except the large Launch button.
     public const int ButtonHeight = 30;
 

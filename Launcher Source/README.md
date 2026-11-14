@@ -59,9 +59,16 @@ next to it. No installer, no registry entries, no other footprint.
   Abort / Continue. Launch and Save check the active modules; Export checks the
   preset's modules in the passes the preset records (modules not installed
   locally can't be checked).
-- **Tag and revision columns**: `Civ`, `Mech`, `Art` and `Joke` show a
-  checkmark when the module's `[tags]` section contains that tag; `AoE Rev`
-  shows the `[aoeversion]` line.
+- **Tag filters**: a **Filters** row under the module lists has a three-state box
+  for each of `Civ`, `Mech`, `Art` and `Joke` (the list is `FilterTags` in
+  `MainForm.cs`). Click a box to cycle it: empty = no filter, white = whitelist
+  (modules *without* the tag are filtered out), black = blacklist (modules *with*
+  the tag are filtered out); right-click clears it. With several whitelisted tags a
+  module must have all of them. Filtered-out modules are never removed: they are
+  greyed out and sorted to the bottom of their list, and stay active/inactive as
+  before, so a forgotten filter can't silently change what gets launched. Tags come
+  from the `[tags]` section; the filters aren't saved between runs. The `AoE Rev`
+  column shows the `[aoeversion]` line.
 - **Drag and drop** between an Active list and an Inactive list to enable/
   disable modules. Drag a module folder in from Explorer to install it.
 - **Per-module tooltip and details**: hovering a module shows its
@@ -148,7 +155,7 @@ can span several lines, including blank ones for paragraph breaks.
 their `[dependency]` and `[incompatible]` lists (comma-separated; both may be empty).
 `[aoeversion]` fills the **AoE Rev** column. `[tags]` is a list separated by
 commas, semicolons, pipes, spaces or line breaks; each entry is compared as a
-whole word, case-insensitively, against `Civ`, `Mech`, `Art` and `Joke`.
+whole word, case-insensitively, against the filter tags.
 
 `[shortdesc]` becomes the row's tooltip; `[desc]` (plus version/author/
 AoE version/compatible/dependency/incompatible) shows up in the popup from that row's **?** button.
@@ -176,6 +183,8 @@ AoELauncher/
     GameLauncher.cs           <- starts the game with the mod enabled
   UI/
     Theme.cs                  <- shared dark/orange color scheme
+    TagFilterBox.cs           <- three-state (neutral / whitelist / blacklist) tag filter box
+    BufferedControls.cs       <- double-buffered Panel/GroupBox/SplitContainer
     PlacementIssuesForm.cs    <- shown when the startup placement check fails
     InputForm.cs              <- generic text-entry dialog (preset names, import)
 ```
