@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Bart Muzzin (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Leaderhead art path information -->
+<Civ4ArtDefines xmlns="x-schema:NAMKO_CIV4ArtDefinesSchema.xml">
+	<LeaderheadArtInfos>
+		<!-- Nephtharia -->
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_NEPHTHARIA</Type>
+			<Button>Modules/Def/DrackNamko/Art/Leader/Nephtharia_Portrait.dds</Button>
+			<NIF>Modules\Def\DrackNamko/Art/Leader\Nephtharia.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+		<!-- Thalmetra -->
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_THALMETRA</Type>
+			<Button>Modules/Def/DrackNamko/Art/Leader/Thalmetra_Portrait.dds</Button>
+			<NIF>Modules\Def\DrackNamko/Art/Leader\Thalmetra.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+		<!-- Setharia -->
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_SETHARIA</Type>
+			<Button>Modules/Def/DrackNamko/Art/Leader/Setharia_Portrait.dds</Button>
+			<NIF>Modules\Def\DrackNamko/Art/Leader\Setharia.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+		<!-- Zephos -->
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_ZEPHOS</Type>
+			<Button>Modules/Def/DrackNamko/Art/Leader/Zephos_Portrait.dds</Button>
+			<NIF>Modules\Def\DrackNamko/Art/Leader\Zephos.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+		<!-- Nephron -->
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_NEPHRON</Type>
+			<Button>Modules/Def/DrackNamko/Art/Leader/Nephron_Portrait.dds</Button>
+			<NIF>Modules\Def\DrackNamko/Art/Leader\Nephron.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+		
+	</LeaderheadArtInfos>
+</Civ4ArtDefines>

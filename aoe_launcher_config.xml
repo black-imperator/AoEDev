@@ -2,96 +2,127 @@
 <AppConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Presets>
     <Preset>
+      <Name>None</Name>
+      <Modules />
+      <SourceVersion>386.5</SourceVersion>
+    </Preset>
+    <Preset>
       <Name>Core</Name>
       <Modules>
         <ModuleRef>
           <Name>AnimalLairs</Name>
-          <Version />
-          <Fingerprint />
+          <Version>1.4</Version>
+          <Fingerprint>70FE1E1B</Fingerprint>
+          <LoadPass>Def</LoadPass>
         </ModuleRef>
         <ModuleRef>
           <Name>BlackDuke</Name>
-          <Version />
-          <Fingerprint />
+          <Version>unknown</Version>
+          <Fingerprint>6EA8A2C1</Fingerprint>
+          <LoadPass>Def</LoadPass>
+        </ModuleRef>
+        <ModuleRef>
+          <Name>z_CaptainMountedTweaks</Name>
+          <Version>1.0</Version>
+          <Fingerprint>5338522C</Fingerprint>
+          <LoadPass>Def</LoadPass>
         </ModuleRef>
         <ModuleRef>
           <Name>Coaxoch</Name>
-          <Version />
-          <Fingerprint />
+          <Version>1.0</Version>
+          <Fingerprint>95FFC602</Fingerprint>
+          <LoadPass>Def</LoadPass>
         </ModuleRef>
         <ModuleRef>
           <Name>Dao</Name>
-          <Version />
-          <Fingerprint />
+          <Version>1.0</Version>
+          <Fingerprint>03D07F36</Fingerprint>
+          <LoadPass>Def</LoadPass>
         </ModuleRef>
         <ModuleRef>
           <Name>Dural</Name>
-          <Version />
-          <Fingerprint />
+          <Version>unknown</Version>
+          <Fingerprint>14B1F2C1</Fingerprint>
+          <LoadPass>Def</LoadPass>
         </ModuleRef>
         <ModuleRef>
           <Name>ElfnDeath</Name>
-          <Version />
-          <Fingerprint />
+          <Version>1.3</Version>
+          <Fingerprint>5036159B</Fingerprint>
+          <LoadPass>Def</LoadPass>
         </ModuleRef>
         <ModuleRef>
           <Name>Goblin</Name>
-          <Version />
-          <Fingerprint />
+          <Version>unknown</Version>
+          <Fingerprint>C4759535</Fingerprint>
+          <LoadPass>Def</LoadPass>
         </ModuleRef>
         <ModuleRef>
           <Name>GotNBandaid</Name>
-          <Version />
-          <Fingerprint />
+          <Version>1.0</Version>
+          <Fingerprint>06411087</Fingerprint>
+          <LoadPass>Def</LoadPass>
         </ModuleRef>
         <ModuleRef>
           <Name>ImportantLeaders</Name>
-          <Version />
-          <Fingerprint />
+          <Version>1.0</Version>
+          <Fingerprint>D12746FF</Fingerprint>
+          <LoadPass>Def</LoadPass>
         </ModuleRef>
         <ModuleRef>
           <Name>MagisterAshes</Name>
-          <Version />
-          <Fingerprint />
+          <Version>1.00</Version>
+          <Fingerprint>2C3E8732</Fingerprint>
+          <LoadPass>Def</LoadPass>
         </ModuleRef>
         <ModuleRef>
-          <Name>MoreEvents</Name>
-          <Version />
-          <Fingerprint />
-        </ModuleRef>
-        <ModuleRef>
-          <Name>PPQ_Effects</Name>
-          <Version />
-          <Fingerprint />
+          <Name>OneBlood</Name>
+          <Version>unknown</Version>
+          <Fingerprint>5E02B3F4</Fingerprint>
+          <LoadPass>Def</LoadPass>
         </ModuleRef>
         <ModuleRef>
           <Name>PPQ_Flavor</Name>
-          <Version />
-          <Fingerprint />
+          <Version>2020</Version>
+          <Fingerprint>EF7B3F1D</Fingerprint>
+          <LoadPass>Def</LoadPass>
         </ModuleRef>
         <ModuleRef>
           <Name>PPQ_NAVY</Name>
-          <Version />
-          <Fingerprint />
+          <Version>2020</Version>
+          <Fingerprint>43122DA6</Fingerprint>
+          <LoadPass>Def</LoadPass>
+        </ModuleRef>
+        <ModuleRef>
+          <Name>PPQ_Effects</Name>
+          <Version>unknown</Version>
+          <Fingerprint>60CB211B</Fingerprint>
+          <LoadPass>Def</LoadPass>
+        </ModuleRef>
+        <ModuleRef>
+          <Name>MoreEvents</Name>
+          <Version>1.00</Version>
+          <Fingerprint>BB97EDB2</Fingerprint>
+          <LoadPass>Def</LoadPass>
         </ModuleRef>
         <ModuleRef>
           <Name>StasisRework</Name>
-          <Version />
-          <Fingerprint />
+          <Version>1.0</Version>
+          <Fingerprint>AAB40DC5</Fingerprint>
+          <LoadPass>Def</LoadPass>
         </ModuleRef>
         <ModuleRef>
           <Name>WidenTechnology</Name>
-          <Version />
-          <Fingerprint />
+          <Version>1.2</Version>
+          <Fingerprint>8A0A30FE</Fingerprint>
+          <LoadPass>Def</LoadPass>
         </ModuleRef>
       </Modules>
-      <SourceVersion>379</SourceVersion>
-    </Preset>
-    <Preset>
-      <Name>None</Name>
-      <Modules />
-      <SourceVersion>379</SourceVersion>
+      <SourceVersion>386.5</SourceVersion>
     </Preset>
   </Presets>
   <CloseOnLaunch>false</CloseOnLaunch>
+  <ModulesVisible>false</ModulesVisible>
+  <WindowClientWidth>890</WindowClientWidth>
+  <WindowMaximized>false</WindowMaximized>
 </AppConfig>

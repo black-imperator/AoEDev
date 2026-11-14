@@ -5,7 +5,6 @@ using AoELauncher.Models;
 
 namespace AoELauncher.Core;
 
-/// <summary>
 /// Reads/writes the single config+save file that always lives right next to
 /// the exe. There is intentionally no fallback location (such as
 /// %LocalAppData%): the launcher ships as part of the Ashes of Erebus
@@ -19,7 +18,6 @@ namespace AoELauncher.Core;
 /// as a NuGet package would mean shipping extra DLLs alongside the exe just
 /// for this one file. XmlSerializer is built into .NET Framework with no
 /// extra dependencies, so it's the simpler fit here.
-/// </summary>
 public static class ConfigManager
 {
     private const string FileName = "aoe_launcher_config.xml";
@@ -45,7 +43,7 @@ public static class ConfigManager
         }
     }
 
-    /// <summary>Throws if the file can't be written (e.g. read-only location); callers should catch and inform the user.</summary>
+    /// Throws if the file can't be written (e.g. read-only location); callers should catch and inform the user.
     public static void Save(AppConfig config)
     {
         using var stream = File.Create(ConfigPath);

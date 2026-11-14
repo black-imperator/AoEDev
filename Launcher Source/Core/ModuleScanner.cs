@@ -11,21 +11,23 @@ namespace AoELauncher.Core;
 
 public static class ModuleScanner
 {
+    private static readonly char[] TagSeparators = { ',', ';', '|', ' ', '\t', '\r', '\n' };
+
     private static readonly Regex SectionHeader = new(@"^\[(\w+)\]$", RegexOptions.Compiled);
 
-    /// <summary>
-    /// Scans both the active and inactive NormalModules folders and returns
-    /// every module found, with everything parsed out of its info.txt.
-    /// </summary>
+    /// Scans every load-pass folder (Def and Seq\1..4, see ModuleLayout) on both the
+    /// active and inactive side and returns every module found, with everything parsed out of
+    /// its info.txt.
     public static List<ModuleInfo> ScanAll(string modPath)
     {
         var list = new List<ModuleInfo>();
-        list.AddRange(ScanDirectory(Path.Combine(modPath, "Assets", "Modules", "NormalModules"), isActive: true));
-        list.AddRange(ScanDirectory(Path.Combine(modPath, "Assets", "Inactive Modules", "NormalModules"), isActive: false));
+        foreach (var isActive in new[] { true, false })
+            foreach (var pass in ModuleLayout.Passes)
+                list.AddRange(ScanDirectory(ModuleLayout.GetPassDir(modPath, isActive, pass), isActive, pass));
         return list;
     }
 
-    private static List<ModuleInfo> ScanDirectory(string dir, bool isActive)
+    private static List<ModuleInfo> ScanDirectory(string dir, bool isActive, string pass)
     {
         var result = new List<ModuleInfo>();
         if (!Directory.Exists(dir)) return result;
@@ -33,23 +35,25 @@ public static class ModuleScanner
         foreach (var sub in Directory.GetDirectories(dir))
         {
             var info = ReadInfo(sub);
-            info.Name = Path.GetFileName(sub);
+            info.FolderName = Path.GetFileName(sub);
+            // The user-facing name is the info.txt [name] entry; without one, fall back to the folder name.
+            if (string.IsNullOrWhiteSpace(info.Name)) info.Name = info.FolderName;
             info.FullPath = sub;
             info.IsActive = isActive;
+            info.LoadPass = pass;
             result.Add(info);
         }
 
         return result;
     }
 
-    /// <summary>
     /// Parses AoE's info.txt format:
     ///   ;comment lines starting with a semicolon are ignored
     ///   [section]
     ///   value line(s) until the next [section] or end of file
     /// [desc] may be multi-line (including blank lines for paragraph breaks);
+    /// [dependency] and [incompatible] are comma-separated lists of module folder names;
     /// everything else is treated as a single line.
-    /// </summary>
     private static ModuleInfo ReadInfo(string moduleDir)
     {
         var info = new ModuleInfo();
@@ -73,7 +77,14 @@ public static class ModuleScanner
                 switch (currentSection)
                 {
                     case "version": info.Version = FirstLine(text); break;
-                    case "rifeversion": info.RifeVersion = FirstLine(text); break;
+                    case "aoeversion": info.AoeRev = FirstLine(text); break;
+                    case "tags":
+                        // Tags are matched as whole words, case-insensitively, and may be separated by
+                        // commas, semicolons, pipes, whitespace or line breaks.
+                        foreach (var tag in text.Split(TagSeparators, StringSplitOptions.RemoveEmptyEntries))
+                            info.Tags.Add(tag.Trim());
+                        break;
+                    case "name": info.Name = FirstLine(text); break;
                     case "author": info.Author = FirstLine(text); break;
                     case "shortdesc": info.ShortDesc = FirstLine(text); break;
                     case "desc": info.Desc = text; break;
@@ -86,8 +97,8 @@ public static class ModuleScanner
                             .Where(s => s.Length > 0)
                             .ToList();
                         break;
-                    // "name" is intentionally not used to override the folder name --
-                    // the folder name is what the file system (and drag/drop) actually operates on.
+                    case "dependency": info.Dependencies = SplitNames(text); break;
+                    case "incompatible": info.Incompatible = SplitNames(text); break;
                 }
             }
 
@@ -121,6 +132,15 @@ public static class ModuleScanner
         return info;
     }
 
+    /// Splits a list of module folder names, separated by commas (and/or line breaks, so a long
+    /// list can be wrapped). Names may contain spaces, so whitespace is not a separator.
+    private static List<string> SplitNames(string text) =>
+        text.Split(new[] { ',', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries)
+            .Select(s => s.Trim())
+            .Where(s => s.Length > 0)
+            .Distinct(StringComparer.OrdinalIgnoreCase)
+            .ToList();
+
     private static string FirstLine(string text)
     {
         var idx = text.IndexOf('\n');
@@ -130,7 +150,6 @@ public static class ModuleScanner
         return s.Trim();
     }
 
-    /// <summary>
     /// Computes a fingerprint of a module folder's contents, returned as an
     /// 8-character hex string (32 bits). This is a "did this module change"
     /// signal, not a security hash, and is tuned for how AoE modules are
@@ -152,7 +171,6 @@ public static class ModuleScanner
     ///   - Last-write timestamps are never used: they don't reliably
     ///     indicate an actual content change and would produce false
     ///     positives (e.g. after a re-extract).
-    /// </summary>
     public static string ComputeFingerprint(string moduleDir)
     {
         try

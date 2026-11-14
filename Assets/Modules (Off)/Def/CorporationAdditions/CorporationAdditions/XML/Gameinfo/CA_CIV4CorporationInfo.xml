@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by lcollins (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Religion -->
+<Civ4CorporationInfo xmlns="x-schema:CA_CIV4GameInfoSchema.xml">
+	<CorporationInfos>
+		<CorporationInfo>
+			<Type>CORPORATION_FISHERMANS_GUILD</Type>
+			<PrereqBonuses>
+				<BonusType>BONUS_CRAB</BonusType>
+				<BonusType>BONUS_FISH</BonusType>
+				<BonusType>BONUS_CLAM</BonusType>
+				<BonusType>BONUS_SHRIMP</BonusType>
+				<BonusType>BONUS_WHALE</BonusType>
+				<BonusType>BONUS_JETEYE</BonusType>
+			</PrereqBonuses>
+		</CorporationInfo>
+
+	<CorporationInfo>
+			<Type>CORPORATION_FISHERMANS_GUILD</Type>
+			<bTypeDependency>1</bTypeDependency>
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_VICIOUSSEAS</DependencyType>
+		     </AndDependencyTypes>
+			<PrereqBonuses>
+				<BonusType>BONUS_CRAB</BonusType>
+				<BonusType>BONUS_FISH</BonusType>
+				<BonusType>BONUS_CLAM</BonusType>
+				<BonusType>BONUS_SHRIMP</BonusType>
+				<BonusType>BONUS_WHALE</BonusType>
+				<BonusType>BONUS_JETEYE</BonusType>
+				<BonusType>BONUS_CORAL_REEF</BonusType>
+				<BonusType>BONUS_GIANT_KRAKEN_EYE</BonusType>
+			</PrereqBonuses>
+		</CorporationInfo>
+
+		<CorporationInfo>
+			<Type>CORPORATION_MASQUERADE</Type>
+			<PrereqBonuses>
+				<BonusType>BONUS_DYE</BonusType>
+				<BonusType>BONUS_COTTON</BonusType>
+				<BonusType>BONUS_SHEEP</BonusType>
+				<BonusType>BONUS_SILK</BonusType>
+				<BonusType>BONUS_BLEEDING_GOD_WINE</BonusType>
+				<BonusType>BONUS_FINE_CLOTHES</BonusType>
+			</PrereqBonuses>
+		</CorporationInfo>
+
+		<CorporationInfo>
+			<Type>CORPORATION_FARMERS_GUILD</Type>
+			<PrereqBonuses>
+				<BonusType>BONUS_CORN</BonusType>
+				<BonusType>BONUS_RICE</BonusType>
+				<BonusType>BONUS_WHEAT</BonusType>
+				<BonusType>BONUS_PIG</BonusType>
+				<BonusType>BONUS_COW</BonusType>
+				<BonusType>BONUS_GULAGARM</BonusType>
+				<BonusType>BONUS_TOAD</BonusType>
+			</PrereqBonuses>
+		</CorporationInfo>
+
+		<CorporationInfo>
+			<Type>CORPORATION_FABRICAFORMA</Type>
+			<PrereqBonuses>
+				<BonusType>BONUS_GOLD</BonusType>
+				<BonusType>BONUS_PEARL</BonusType>
+				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_MITHRIL</BonusType>
+				<BonusType>BONUS_GEMS</BonusType>
+				<BonusType>BONUS_IVORY</BonusType>
+				<BonusType>BONUS_JEWELS</BonusType>
+			</PrereqBonuses>
+		</CorporationInfo>
+
+		<CorporationInfo>
+			<Type>CORPORATION_FABRICAFORMA</Type>
+			<bTypeDependency>1</bTypeDependency>
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_VICIOUSSEAS</DependencyType>
+		     </AndDependencyTypes>
+			<PrereqBonuses>
+				<BonusType>BONUS_GOLD</BonusType>
+				<BonusType>BONUS_PEARL</BonusType>
+				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_MITHRIL</BonusType>
+				<BonusType>BONUS_GEMS</BonusType>
+				<BonusType>BONUS_IVORY</BonusType>
+				<BonusType>BONUS_JEWELS</BonusType>
+				<BonusType>BONUS_GIANT_KELP_LUMBER</BonusType>
+				<BonusType>BONUS_TITAN_TURTLE_SCALES</BonusType>
+			</PrereqBonuses>
+		</CorporationInfo>
+
+		<CorporationInfo>
+			<Type>CORPORATION_STONEFIRE</Type>
+			<PrereqBonuses>
+				<BonusType>BONUS_MARBLE</BonusType>
+				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_COPPER</BonusType>
+				<BonusType>BONUS_MITHRIL</BonusType>
+				<BonusType>BONUS_STONE</BonusType>
+			</PrereqBonuses>
+		</CorporationInfo>
+
+<CorporationInfo>
+			<Type>CORPORATION_STONEFIRE</Type>
+			<bTypeDependency>1</bTypeDependency>
+		     <AndDependencyTypes>
+		        <DependencyType>MODULE_VICIOUSSEAS</DependencyType>
+		     </AndDependencyTypes>
+			<PrereqBonuses>
+				<BonusType>BONUS_MARBLE</BonusType>
+				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_COPPER</BonusType>
+				<BonusType>BONUS_MITHRIL</BonusType>
+				<BonusType>BONUS_STONE</BonusType>
+				<BonusType>BONUS_GIANT_KELP_LUMBER</BonusType>
+				<BonusType>BONUS_TITAN_TURTLE_SCALES</BonusType>
+			</PrereqBonuses>
+		</CorporationInfo>
+
+	</CorporationInfos>
+</Civ4CorporationInfo>

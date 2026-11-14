@@ -5,7 +5,6 @@ namespace AoELauncher.Core;
 
 public static class GameLauncher
 {
-    /// <summary>
     /// Starts Civ4BeyondSword.exe with the given mod folder name enabled,
     /// e.g. modFolderName = "Ashes of Erebus".
     ///
@@ -23,7 +22,6 @@ public static class GameLauncher
     /// directory (with UseShellExecute = true, WorkingDirectory is instead
     /// documented as just "the location of the executable" for lookup
     /// purposes, which is a subtly different guarantee).
-    /// </summary>
     public static void Launch(string btsExePath, string modFolderName)
     {
         var psi = new ProcessStartInfo

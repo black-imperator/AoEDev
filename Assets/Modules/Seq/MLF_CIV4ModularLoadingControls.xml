@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!-- Sid Meier's Civilization 4 Beyond the Sword -->
+<!-- Modified by the World of Civilization Team -->
+<!-- Master Load File -->
+<!-- -->
+<Civ4ModularLoadControls xmlns="x-schema:CIV4ModularLoadingControlsSchema.xml">
+	<DefaultConfiguration>Modules_Vital_Load_Order</DefaultConfiguration>
+	<ConfigurationInfos>
+		<ConfigurationInfo>
+			<Type>Modules_Vital_Load_Order</Type>
+			<Description>Initialize ALL Modules by using the MLF file structure</Description>
+			<Modules>
+				<Module>
+					<Directory>1</Directory>
+					<bLoad>1</bLoad>
+				</Module>
+				<Module>
+					<Directory>2</Directory>
+					<bLoad>1</bLoad>
+				</Module>
+				<Module>
+					<Directory>3</Directory>
+					<bLoad>1</bLoad>
+				</Module>
+				<Module>
+					<Directory>4</Directory>
+					<bLoad>1</bLoad>
+				</Module>
+			</Modules>
+		</ConfigurationInfo>
+	</ConfigurationInfos>
+</Civ4ModularLoadControls>

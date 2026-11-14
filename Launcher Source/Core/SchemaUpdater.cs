@@ -6,7 +6,6 @@ using AoELauncher.Models;
 
 namespace AoELauncher.Core;
 
-/// <summary>
 /// Implements the "Update Schemas" action: every file under a module's
 /// "XML" subfolder whose name ends in "Schema.xml" is compared against the
 /// corresponding schema file in Ashes of Erebus's own base XML (NOT the
@@ -27,10 +26,9 @@ namespace AoELauncher.Core;
 /// underscore at all is assumed to already be the plain schema name.
 ///
 /// Folder structure mirrors between module and the mod's base XML: a file at
-///   &lt;module&gt;\XML\&lt;subpath&gt;\&lt;file&gt;
+///   [module]\XML\[subpath]\[file]
 /// (subpath may be empty, i.e. the file can sit directly under XML\) maps to
-///   &lt;Ashes of Erebus&gt;\Assets\XML\&lt;subpath&gt;\&lt;parentFileName&gt;
-/// </summary>
+///   [Ashes of Erebus]\Assets\XML\[subpath]\[parentFileName]
 public static class SchemaUpdater
 {
     public static SchemaUpdatePlan Plan(string modPath, IEnumerable<ModuleInfo> allModules)

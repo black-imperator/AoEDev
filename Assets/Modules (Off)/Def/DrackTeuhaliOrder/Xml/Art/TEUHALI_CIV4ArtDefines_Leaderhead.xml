@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Bart Muzzin (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Leaderhead art path information -->
+<Civ4ArtDefines xmlns="x-schema:TEUHALI_CIV4ArtDefinesSchema.xml">
+	<LeaderheadArtInfos>
+		<LeaderheadArtInfo>		<!-- Hali -->
+			<Type>ART_DEF_LEADER_HALI</Type>
+			<Button>Modules\Def\DrackTeuhaliOrder\Art\Leaders\Hali_Portrait.dds</Button>
+			<NIF>Modules\Def\DrackTeuhaliOrder\Art\Leaders\Hali.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>		<!-- Sigismund -->
+			<Type>ART_DEF_LEADER_SIGISMUND</Type>
+			<Button>Modules\Def\DrackTeuhaliOrder\Art\Leaders\Sigismund_Portrait.dds</Button>
+			<NIF>Modules\Def\DrackTeuhaliOrder\Art\Leaders\Sigismund.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>		<!-- Anna von Neuburg -->
+			<Type>ART_DEF_LEADER_ANNAVONNEUBURG</Type>
+			<Button>Modules\Def\DrackTeuhaliOrder\Art\Leaders\AnnaVonNeuburg_Portrait.dds</Button>
+			<NIF>Modules\Def\DrackTeuhaliOrder\Art\Leaders\AnnaVonNeuburg.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>		<!-- Sabrina -->
+			<Type>ART_DEF_LEADER_SABRINA</Type>
+			<Button>Modules\Def\DrackTeuhaliOrder\Art\Leaders\Sabrina_Portrait.dds</Button>
+			<NIF>Modules\Def\DrackTeuhaliOrder\Art\Leaders\Sabrina.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>		<!-- Maria Amara Zucker -->
+			<Type>ART_DEF_LEADER_MARIA_AMARA_ZUCKER</Type>
+			<Button>Modules\Def\DrackTeuhaliOrder\Art\Leaders\Maria_Portrait.dds</Button>
+			<NIF>Modules\Def\DrackTeuhaliOrder\Art\Leaders\Maria.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>		<!-- Brunhilde von Mitte -->
+			<Type>ART_DEF_LEADER_BRUNHILDE_VON_MITTE</Type>
+			<Button>Modules\Def\DrackTeuhaliOrder\Art\Leaders\Brundhilde_Portrait.dds</Button>
+			<NIF>Modules\Def\DrackTeuhaliOrder\Art\Leaders\Brundhilde.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+	</LeaderheadArtInfos>
+</Civ4ArtDefines>

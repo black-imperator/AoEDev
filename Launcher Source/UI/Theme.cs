@@ -3,13 +3,11 @@ using System.Windows.Forms;
 
 namespace AoELauncher.UI;
 
-/// <summary>
 /// Dark grey / white / orange color scheme, matching the original AoE
 /// launcher's look. Native WinForms GroupBox borders remain OS-themed
 /// (they don't fully recolor without owner-drawing the control), so those
 /// may look slightly off against the dark background -- everything else
 /// (fills, text, buttons, grids) is fully themed.
-/// </summary>
 public static class Theme
 {
     public static readonly Color Background = Color.FromArgb(37, 37, 38);
@@ -20,7 +18,12 @@ public static class Theme
     public static readonly Color Accent = Color.FromArgb(230, 126, 34);
     public static readonly Color GridLine = Color.FromArgb(70, 70, 74);
 
-    /// <summary>Uniform height applied to every button in the app except the large Launch button.</summary>
+    // Rows of modules that don't match the tag filters are shown greyed out.
+    public static readonly Color FilteredText = Color.FromArgb(120, 120, 124);
+    public static readonly Color FilteredSelectionBack = Color.FromArgb(105, 78, 50);
+    public static readonly Color FilteredSelectionText = Color.FromArgb(190, 190, 190);
+
+    /// Uniform height applied to every button in the app except the large Launch button.
     public const int ButtonHeight = 30;
 
     public static void StyleForm(Form form)

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Jason Winokur (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Feature art path information -->
+<Civ4ArtDefines xmlns="x-schema:ViciousSeas_CIV4ArtDefinesSchema.xml">
+	<FeatureArtInfos>
+		<FeatureArtInfo> <!-- Dreamworld -->
+			<Type>ART_DEF_FEATURE_DREAMWORLD</Type>
+			<bAnimated>1</bAnimated>
+			<bRiverArt>0</bRiverArt>
+			<TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+			<LightType>LIGHT_TYPE_SUN</LightType>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+            <Button>, ,Art/Interface/Buttons/Misc_Atlas3.dds,5,11</Button>
+			<FeatureVariety>
+				<FeatureArtPieces>
+					<FeatureArtPiece>
+						<ModelFile>Modules/Def/ViciousSeas/Art/Terrain/Features/Dreamworld/Dreamworld.nif</ModelFile>
+						<Connections></Connections>
+					</FeatureArtPiece>
+				</FeatureArtPieces>
+				<FeatureDummyNodes/>
+				<bGenerateRotations>0</bGenerateRotations>
+				<VarietyButton>, ,Art/Interface/Buttons/Misc_Atlas3.dds,5,11</VarietyButton>
+			</FeatureVariety>
+		</FeatureArtInfo></FeatureArtInfos>
+</Civ4ArtDefines>

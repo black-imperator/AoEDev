@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+
+<Civ4ArtDefines xmlns="x-schema:ElfnDeath_CIV4ArtDefinesSchema.xml">
+	<UnitArtInfos>
+
+		<UnitArtInfo> <!-- UNIT_KNIGHT in UNIT_ARTSTYLE_ONCE_ELF -->
+			<Type>ART_DEF_UNIT_KNIGHT_ONCE_ELVES</Type>
+			<Button>Modules/Def/ElfnDeath/Art/Interface/Buttons/Units/Ostuariiknight.dds</Button>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Civs/onceelves/rider/horsearcher.nif</NIF>
+			<KFM>Art/Units/scenario/companion_cavalry/Companion_Cavalry.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/HorseShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+				<UnitArtInfo> <!-- UNIT_HORSEMAN in UNIT_ARTSTYLE_ONCE_ELF -->
+			<Type>ART_DEF_UNIT_HORSEMAN_ONCE_ELVES</Type>
+			<Button>Modules/Def/ElfnDeath/Art/Interface/Buttons/Units/OstuariiCav.dds</Button>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Civs/onceelves/rider/horseman.nif</NIF>
+			<KFM>Art/Units/scenario/companion_cavalry/Companion_Cavalry.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/HorseShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+	<UnitArtInfo> <!-- UNIT_PIKEMAN in  UNIT_ARTSTYLE_ONCE_ELF-->
+			<Type>ART_DEF_UNIT_PIKEMAN_ONCE_ELVES</Type>
+			<Button>Modules/Def/ElfnDeath/Art/Interface/Buttons/Units/Ostuarii.dds</Button>
+			<fScale>0.46</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/civs/onceelves/Pikeman/Pikeman.nif</NIF>
+			<KFM>Art/animations/Pikeman/Pikeman.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+	<UnitArtInfo> <!-- UNIT_PHALANX in  UNIT_ARTSTYLE_ONCE_ELF-->
+			<Type>ART_DEF_UNIT_PHALANX_ONCE_ELVES</Type>
+			<Button>Modules/Def/ElfnDeath/Art/Interface/Buttons/Units/OnceElfPhalanx.dds</Button>
+			<fScale>0.46</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/civs/onceelves/phalanx/heavyspearman.nif</NIF>
+			<KFM>Art/Units/civs/onceelves/phalanx/heavyspearman.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- UNIT_WALDRUN in UNIT_ARTSTYLE_ONCE_ELF -->
+			<Type>ART_DEF_UNIT_WALDRUN_ONCE_ELVES</Type>
+			<Button>Modules/Def/ElfnDeath/Art/Interface/LeaderHeads/veronica_anrathi_annec_B.dds</Button>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Civs/onceelves/waldrun/necromancer.nif</NIF>
+			<KFM>Art/animations/Skirmisher/maliskirmisher blood.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.95</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+			<UnitArtInfo> <!-- UNIT_SLUAGH -->
+			<Type>ART_DEF_UNIT_SLUAGH</Type>
+			<Button>Modules/Def/ElfnDeath/Art/Interface/Buttons/Spells/Sluagh.dds</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/summons/phantom units/phantom warrior.nif</NIF>
+			<KFM>Art/Units/charlemagne_lightspearman/LightSpearman.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+	</UnitArtInfos>
+</Civ4ArtDefines>

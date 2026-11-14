@@ -1265,7 +1265,7 @@ class CvMainInterface:
 					iSoulCounter  = pPlayer.getCivCounter() # Souls in Storage
 					iInteger    = iSoulCounter
 					SRstr = u"<font=2i>%s</font>" %(str(" ") + str(iInteger) + str(" "))
-					screen.setImageButton("SoulCounter", "Modules\NormalModules\DrackAosNiSira\Art\Other\Souls.dds", 177, 7, 16, 16, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+					screen.setImageButton("SoulCounter", "Modules\Def\DrackAosNiSira\Art\Other\Souls.dds", 177, 7, 16, 16, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 					screen.setText( "SRText", "Background", SRstr, CvUtil.FONT_LEFT_JUSTIFY, 189, 5, 0.5, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 					screen.setHitTest( "SRText", HitTestTypes.HITTEST_NOHIT )
 			#*************************************************************************************************#
@@ -6203,11 +6203,11 @@ def getSpecialistList( iCivilization ):
 			civSpecialists[getInfoType('CIVILIZATION_MEKARA')] = ['Art/Civs/CivSpecialists/Human/Citizen.dds', 'Art/Civs/CivSpecialists/Human/Priest.dds', 'Art/Civs/CivSpecialists/Human/Bard.dds', 'Art/Civs/CivSpecialists/Human/Sage.dds', 'Art/Civs/CivSpecialists/Human/Merchant.dds', 'Art/Civs/CivSpecialists/Human/Engineer.dds', 'Art/Civs/CivSpecialists/Human/Healer.dds', 'Art/Civs/CivSpecialists/Human/Statesman.dds', 'Art/Civs/CivSpecialists/Human/GreatPriest.dds', 'Art/Civs/CivSpecialists/Human/GreatBard.dds', 'Art/Civs/CivSpecialists/Human/GreatSage.dds', 'Art/Civs/CivSpecialists/Human/GreatMerchant.dds', 'Art/Civs/CivSpecialists/Human/GreatEngineer.dds', 'Art/Civs/CivSpecialists/Human/GreatHealer.dds', 'Art/Civs/CivSpecialists/Human/Citizen.dds']
 
 		folderlist = []
-		folderlist.append(CvPath.assetsPath[2] + "\\Modules\\NormalModules\\")
-		folderlist.append(CvPath.assetsPath[2] + "\\Modules\\LoadOrderVitalModules\\FirstLoad\\")
-		folderlist.append(CvPath.assetsPath[2] + "\\Modules\\LoadOrderVitalModules\\SecondLoad\\")
-		folderlist.append(CvPath.assetsPath[2] + "\\Modules\\LoadOrderVitalModules\\ThirdLoad\\")
-		folderlist.append(CvPath.assetsPath[2] + "\\Modules\\LoadOrderVitalModules\\FourthLoad\\")
+		folderlist.append(CvPath.assetsPath[2] + "\\Modules\\Def\\")
+		folderlist.append(CvPath.assetsPath[2] + "\\Modules\\Seq\\1\\")
+		folderlist.append(CvPath.assetsPath[2] + "\\Modules\\Seq\\2\\")
+		folderlist.append(CvPath.assetsPath[2] + "\\Modules\\Seq\\3\\")
+		folderlist.append(CvPath.assetsPath[2] + "\\Modules\\Seq\\4\\")
 
 		for folderpath in folderlist:
 				if os.path.exists(folderpath):

@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Bart Muzzin (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Leaderhead art path information -->
+<Civ4ArtDefines xmlns="x-schema:ViciousSeas_CIV4ArtDefinesSchema.xml">
+	<LeaderheadArtInfos>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_TUNDOSS</Type>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/LeaderHeads/TundossButton.dds</Button>
+			<NIF>Modules/Def/ViciousSeas/Art/Interface/LeaderHeads/Tundoss.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+	    <LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_PODALTUR</Type>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/LeaderHeads/PodalturButton.dds</Button>
+			<NIF>Modules/Def/ViciousSeas/Art/Interface/LeaderHeads/Podaltur.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+	</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_CIMESIAT</Type>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/LeaderHeads/CimesiatButton.dds</Button>
+			<NIF>Modules/Def/ViciousSeas/Art/Interface/LeaderHeads/Cimesiat.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_TARGASSAT</Type>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/LeaderHeads/TargassatButton.dds</Button>
+			<NIF>Modules/Def/ViciousSeas/Art/Interface/LeaderHeads/Targassat.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_MIRROR</Type>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/LeaderHeads/Ophelia_BlueDesignButton.dds</Button>
+			<NIF>Modules/Def/ViciousSeas/Art/Interface/LeaderHeads/Ophelia_BlueDesign.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_HASTUR</Type>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/LeaderHeads/HasturButton.dds</Button>
+			<NIF>Modules/Def/ViciousSeas/Art/Interface/LeaderHeads/Hastur.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_DREAM_CONDATIS</Type>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/LeaderHeads/CondatisDaneenWilkerson2.dds</Button>
+			<NIF>Modules/Def/ViciousSeas/Art/Interface/LeaderHeads/CondatisDaneenWilkerson.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+	</LeaderheadArtInfos>
+</Civ4ArtDefines>

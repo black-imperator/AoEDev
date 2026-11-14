@@ -127,11 +127,11 @@ def GetCivFlavourData():
 
 	# Load modules (all *FlavourInfos.xml files should be in *\Flavour\)
 	folderlist = []
-	folderlist.append(CvPath.assetsPath[2] + "\\Modules\\NormalModules\\")
-	folderlist.append(CvPath.assetsPath[2] + "\\Modules\\LoadOrderVitalModules\\FirstLoad\\")
-	folderlist.append(CvPath.assetsPath[2] + "\\Modules\\LoadOrderVitalModules\\SecondLoad\\")
-	folderlist.append(CvPath.assetsPath[2] + "\\Modules\\LoadOrderVitalModules\\ThirdLoad\\")
-	folderlist.append(CvPath.assetsPath[2] + "\\Modules\\LoadOrderVitalModules\\FourthLoad\\")
+	folderlist.append(CvPath.assetsPath[2] + "\\Modules\\Def\\")
+	folderlist.append(CvPath.assetsPath[2] + "\\Modules\\Seq\\1\\")
+	folderlist.append(CvPath.assetsPath[2] + "\\Modules\\Seq\\2\\")
+	folderlist.append(CvPath.assetsPath[2] + "\\Modules\\Seq\\3\\")
+	folderlist.append(CvPath.assetsPath[2] + "\\Modules\\Seq\\4\\")
 
 	#we can't reuse the same parser, so we'll save the flavourInfos that it generates and use them to initialize the parser each time...
 	#each new module with a flavourInfos.xml file will either add to the array or overwrite an element (if a mod chooses to change the flavour start for a civ)
