@@ -11,11 +11,11 @@
 			<Description>Initialize ALL Modules by using the MLF file structure</Description>
 			<Modules>
 				<Module>
-					<Directory>LoadOrderVitalModules</Directory>
+					<Directory>Seq</Directory>
 					<bLoad>1</bLoad>
 				</Module>
 				<Module>
-					<Directory>NormalModules</Directory>
+					<Directory>Def</Directory>
 					<bLoad>1</bLoad>
 				</Module>
 			</Modules>

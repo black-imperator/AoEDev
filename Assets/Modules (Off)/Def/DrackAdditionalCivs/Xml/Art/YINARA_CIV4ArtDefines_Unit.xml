@@ -8,7 +8,7 @@
     <UnitArtInfos>
         <UnitArtInfo> <!-- Hana no Yume -->
             <Type>ART_DEF_UNIT_YINARA_HANA</Type>
-            <Button>Modules/NormalModules/DrackAdditionalCivs/Art/Units/Yinara/Hana.dds</Button> 
+            <Button>Modules/Def/DrackAdditionalCivs/Art/Units/Yinara/Hana.dds</Button> 
             <fScale>0.44</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -32,7 +32,7 @@
         </UnitArtInfo>
         <UnitArtInfo> <!-- Yami no Tsume -->
             <Type>ART_DEF_UNIT_YINARA_YAMI</Type>
-            <Button>Modules/NormalModules/DrackAdditionalCivs/Art/Units/Yinara/Yami.dds</Button> 
+            <Button>Modules/Def/DrackAdditionalCivs/Art/Units/Yinara/Yami.dds</Button> 
             <fScale>0.44</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -56,7 +56,7 @@
         </UnitArtInfo>
         <UnitArtInfo> <!-- Jinrai no Kiba -->
             <Type>ART_DEF_UNIT_YINARA_JINRAI</Type>
-            <Button>Modules/NormalModules/DrackAdditionalCivs/Art/Units/Yinara/Jinrai.dds</Button> 
+            <Button>Modules/Def/DrackAdditionalCivs/Art/Units/Yinara/Jinrai.dds</Button> 
             <fScale>0.4</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -80,7 +80,7 @@
         </UnitArtInfo>
         <UnitArtInfo> <!-- Yakumo -->
             <Type>ART_DEF_UNIT_YINARA_YAKUMO</Type>
-            <Button>Modules/NormalModules/DrackAdditionalCivs/Art/Units/Yinara/Yakumo.dds</Button> 
+            <Button>Modules/Def/DrackAdditionalCivs/Art/Units/Yinara/Yakumo.dds</Button> 
             <fScale>0.44</fScale>
             <fInterfaceScale>1</fInterfaceScale>
             <bActAsLand>0</bActAsLand>
@@ -104,7 +104,7 @@
         </UnitArtInfo>
         <UnitArtInfo> <!-- Ashigaru -->
             <Type>ART_DEF_UNIT_YINARA_ASHIGARU</Type> 
-            <Button>Modules/NormalModules/DrackAdditionalCivs/Art/Units/Yinara/Ashigaru.dds</Button> 
+            <Button>Modules/Def/DrackAdditionalCivs/Art/Units/Yinara/Ashigaru.dds</Button> 
             <fScale>0.44</fScale>
             <fInterfaceScale>1</fInterfaceScale>
             <bActAsLand>0</bActAsLand>
@@ -127,7 +127,7 @@
         </UnitArtInfo>
         <UnitArtInfo> <!-- Miko -->
             <Type>ART_DEF_UNIT_ADEPT_YINARA</Type>
-            <Button>Modules/NormalModules/DrackAdditionalCivs/Art/Units/Yinara/Miko.dds</Button> 
+            <Button>Modules/Def/DrackAdditionalCivs/Art/Units/Yinara/Miko.dds</Button> 
             <fScale>0.44</fScale>
             <fInterfaceScale>1</fInterfaceScale>
             <bActAsLand>0</bActAsLand>
@@ -151,7 +151,7 @@
         </UnitArtInfo>
         <UnitArtInfo> <!-- Hachibi -->
             <Type>ART_DEF_UNIT_ARCHMAGE_YINARA</Type>
-            <Button>Modules/NormalModules/DrackAdditionalCivs/Art/Units/Yinara/Hachibi.dds</Button> 
+            <Button>Modules/Def/DrackAdditionalCivs/Art/Units/Yinara/Hachibi.dds</Button> 
             <fScale>0.44</fScale>
             <fInterfaceScale>1</fInterfaceScale>
             <bActAsLand>0</bActAsLand>
@@ -175,7 +175,7 @@
         </UnitArtInfo>
         <UnitArtInfo> <!-- Miketsu -->
             <Type>ART_DEF_UNIT_MAGE_YINARA</Type>
-            <Button>Modules/NormalModules/DrackAdditionalCivs/Art/Units/Yinara/Miketsu.dds</Button> 
+            <Button>Modules/Def/DrackAdditionalCivs/Art/Units/Yinara/Miketsu.dds</Button> 
             <fScale>0.44</fScale>
             <fInterfaceScale>1</fInterfaceScale>
             <bActAsLand>0</bActAsLand>

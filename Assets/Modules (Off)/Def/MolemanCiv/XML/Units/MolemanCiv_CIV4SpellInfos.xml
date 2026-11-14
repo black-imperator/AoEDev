@@ -82,7 +82,7 @@
 			<PyRequirement>reqMolemanEarthquake(pCaster)</PyRequirement>
 			<Effect>EFFECT_SPELL2</Effect>
 			<Sound>AS3D_SPELL_EARTHQUAKE</Sound>
-			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/Spells/seismicjolt.dds</Button>
+			<Button>Modules/Def/MolemanCiv/Art/Interface/Buttons/Spells/seismicjolt.dds</Button>
 		</SpellInfo>
 	</SpellInfos>
 </Civ4SpellInfos>

@@ -8,8 +8,8 @@
 	<CivilizationArtInfos>
 		<CivilizationArtInfo>
 			<Type>ART_DEF_CIVILIZATION_NAMKO</Type>
-			<Button>Modules\NormalModules\DrackNamko\Art\Flag\NamkoFlagIcon.dds</Button>
-			<Path>Modules\NormalModules\DrackNamko\Art\Flag\NamkoFlag.dds</Path>
+			<Button>Modules\Def\DrackNamko\Art\Flag\NamkoFlagIcon.dds</Button>
+			<Path>Modules\Def\DrackNamko\Art\Flag\NamkoFlag.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
 	</CivilizationArtInfos>

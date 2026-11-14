@@ -11,7 +11,7 @@
 			<Description>TXT_KEY_LEADER_TUNDOSS_FAITHFUL_PROTECTOR</Description>
 			<Civilopedia>TXT_KEY_LEADER_TUNDOSS_FAITHFUL_PROTECTOR_PEDIA</Civilopedia>
 			<DefeatQuote>TXT_KEY_POPUP_DEFEATED_LJOSALFAR</DefeatQuote>
-			<Image>Modules/NormalModules/ViciousSeas/Art/Interface/LeaderHeads/Tundoss.dds</Image>
+			<Image>Modules/Def/ViciousSeas/Art/Interface/LeaderHeads/Tundoss.dds</Image>
 			<ArtDefineTag>ART_DEF_LEADER_TUNDOSS</ArtDefineTag>
 			<iWonderConstructRand>0</iWonderConstructRand>
 			<iBaseAttitude>-1</iBaseAttitude>
@@ -604,7 +604,7 @@
 			<Description>TXT_KEY_LEADER_PODALTUR</Description>
 			<Civilopedia>TXT_KEY_LEADER_PODALTUR_PEDIA</Civilopedia>
 			<DefeatQuote>TXT_KEY_POPUP_DEFEATED_LANUN</DefeatQuote>
-			<Image>Modules/NormalModules/ViciousSeas/Art/Interface/LeaderHeads/Podaltur.dds</Image>
+			<Image>Modules/Def/ViciousSeas/Art/Interface/LeaderHeads/Podaltur.dds</Image>
 			<ArtDefineTag>ART_DEF_LEADER_PODALTUR</ArtDefineTag>
 			<iWonderConstructRand>0</iWonderConstructRand>
 			<iBaseAttitude>0</iBaseAttitude>
@@ -1193,7 +1193,7 @@
 			<Description>TXT_KEY_LEADER_CIMESIAT</Description>
 			<Civilopedia>TXT_KEY_LEADER_CIMESIAT_PEDIA</Civilopedia>
 			<DefeatQuote>TXT_KEY_POPUP_DEFEATED_DOVIELLO</DefeatQuote>
-			<Image>Modules/NormalModules/ViciousSeas/Art/Interface/LeaderHeads/Cimesiat.dds</Image>
+			<Image>Modules/Def/ViciousSeas/Art/Interface/LeaderHeads/Cimesiat.dds</Image>
 			<ArtDefineTag>ART_DEF_LEADER_CIMESIAT</ArtDefineTag>
 			<iWonderConstructRand>0</iWonderConstructRand>
 			<iBaseAttitude>0</iBaseAttitude>
@@ -1771,7 +1771,7 @@
 			<Type>LEADER_TARGASSAT</Type>
 			<Description>TXT_KEY_LEADER_TARGASSAT</Description>
 			<Civilopedia>TXT_KEY_LEADER_TARGASSAT_PEDIA</Civilopedia>
-			<Image>Modules/NormalModules/ViciousSeas/Art/Interface/LeaderHeads/Targassat.dds</Image>
+			<Image>Modules/Def/ViciousSeas/Art/Interface/LeaderHeads/Targassat.dds</Image>
 			<ArtDefineTag>ART_DEF_LEADER_TARGASSAT</ArtDefineTag>
 			<iWonderConstructRand>0</iWonderConstructRand>
 			<iBaseAttitude>0</iBaseAttitude>
@@ -2357,7 +2357,7 @@
 			<Description>TXT_KEY_LEADER_MIRROR</Description>
 			<Civilopedia>TXT_KEY_LEADER_MIRROR_PEDIA</Civilopedia>
 			<DefeatQuote>TXT_KEY_POPUP_DEFEATED_MIRROR</DefeatQuote>
-			<Image>Modules/NormalModules/ViciousSeas/Art/Interface/LeaderHeads/Ophelia_BlueDesign.dds</Image>
+			<Image>Modules/Def/ViciousSeas/Art/Interface/LeaderHeads/Ophelia_BlueDesign.dds</Image>
 			<ArtDefineTag>ART_DEF_LEADER_MIRROR</ArtDefineTag>
 			<iWonderConstructRand>0</iWonderConstructRand>
 			<iBaseAttitude>0</iBaseAttitude>
@@ -2982,7 +2982,7 @@
 			<Description>TXT_KEY_LEADER_HASTUR</Description>
 			<Civilopedia>TXT_KEY_LEADER_HASTUR_PEDIA</Civilopedia>
 			<DefeatQuote>TXT_KEY_POPUP_DEFEATED_INFERNAL</DefeatQuote>
-			<Image>Modules/NormalModules/ViciousSeas/Art/Interface/LeaderHeads/</Image>
+			<Image>Modules/Def/ViciousSeas/Art/Interface/LeaderHeads/</Image>
 			<ArtDefineTag>ART_DEF_LEADER_HASTUR</ArtDefineTag>
 		     <AndDependencyTypes>
 		        <DependencyType>MODULE_IMPORTANT_LEADERS</DependencyType>

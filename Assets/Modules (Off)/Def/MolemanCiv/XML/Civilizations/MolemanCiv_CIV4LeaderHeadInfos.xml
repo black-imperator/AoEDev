@@ -13,7 +13,7 @@
 			<Civilopedia>TXT_KEY_CIV_MOLEMEN_LEADER_1_PEDIA</Civilopedia>
 			<ArtDefineTag>ART_DEF_LEADER_MOLEMAN_1</ArtDefineTag>
 			<DefeatQuote>TXT_KEY_POPUP_DEFEATED_MOLEMAN_1</DefeatQuote>
-			<Image>Modules/NormalModules/MolemanCiv/Art/Interface/Leaderheads/moleman1banner.dds</Image>
+			<Image>Modules/Def/MolemanCiv/Art/Interface/Leaderheads/moleman1banner.dds</Image>
 			<iWonderConstructRand>0</iWonderConstructRand>
 			<iBaseAttitude>0</iBaseAttitude>
 			<iBasePeaceWeight>2</iBasePeaceWeight>
@@ -652,7 +652,7 @@
 			<Civilopedia>TXT_KEY_CIV_MOLEMEN_LEADER_2_PEDIA</Civilopedia>
 			<ArtDefineTag>ART_DEF_LEADER_MOLEMAN_2</ArtDefineTag>
 			<DefeatQuote>TXT_KEY_POPUP_DEFEATED_MOLEMAN_2</DefeatQuote>
-			<Image>Modules/NormalModules/MolemanCiv/Art/Interface/Leaderheads/moleman2banner.dds</Image>
+			<Image>Modules/Def/MolemanCiv/Art/Interface/Leaderheads/moleman2banner.dds</Image>
 			<iWonderConstructRand>0</iWonderConstructRand>
 			<iBaseAttitude>0</iBaseAttitude>
 			<iBasePeaceWeight>2</iBasePeaceWeight>

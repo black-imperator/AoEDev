@@ -8,48 +8,48 @@
 	<LeaderheadArtInfos>
 		<LeaderheadArtInfo>		<!-- Hali -->
 			<Type>ART_DEF_LEADER_HALI</Type>
-			<Button>Modules\NormalModules\DrackTeuhaliOrder\Art\Leaders\Hali_Portrait.dds</Button>
-			<NIF>Modules\NormalModules\DrackTeuhaliOrder\Art\Leaders\Hali.dds</NIF>
+			<Button>Modules\Def\DrackTeuhaliOrder\Art\Leaders\Hali_Portrait.dds</Button>
+			<NIF>Modules\Def\DrackTeuhaliOrder\Art\Leaders\Hali.dds</NIF>
 			<KFM/>
 			<NoShaderNIF/>
 			<BackgroundKFM/>
 		</LeaderheadArtInfo>
 		<LeaderheadArtInfo>		<!-- Sigismund -->
 			<Type>ART_DEF_LEADER_SIGISMUND</Type>
-			<Button>Modules\NormalModules\DrackTeuhaliOrder\Art\Leaders\Sigismund_Portrait.dds</Button>
-			<NIF>Modules\NormalModules\DrackTeuhaliOrder\Art\Leaders\Sigismund.dds</NIF>
+			<Button>Modules\Def\DrackTeuhaliOrder\Art\Leaders\Sigismund_Portrait.dds</Button>
+			<NIF>Modules\Def\DrackTeuhaliOrder\Art\Leaders\Sigismund.dds</NIF>
 			<KFM/>
 			<NoShaderNIF/>
 			<BackgroundKFM/>
 		</LeaderheadArtInfo>
 		<LeaderheadArtInfo>		<!-- Anna von Neuburg -->
 			<Type>ART_DEF_LEADER_ANNAVONNEUBURG</Type>
-			<Button>Modules\NormalModules\DrackTeuhaliOrder\Art\Leaders\AnnaVonNeuburg_Portrait.dds</Button>
-			<NIF>Modules\NormalModules\DrackTeuhaliOrder\Art\Leaders\AnnaVonNeuburg.dds</NIF>
+			<Button>Modules\Def\DrackTeuhaliOrder\Art\Leaders\AnnaVonNeuburg_Portrait.dds</Button>
+			<NIF>Modules\Def\DrackTeuhaliOrder\Art\Leaders\AnnaVonNeuburg.dds</NIF>
 			<KFM/>
 			<NoShaderNIF/>
 			<BackgroundKFM/>
 		</LeaderheadArtInfo>
 		<LeaderheadArtInfo>		<!-- Sabrina -->
 			<Type>ART_DEF_LEADER_SABRINA</Type>
-			<Button>Modules\NormalModules\DrackTeuhaliOrder\Art\Leaders\Sabrina_Portrait.dds</Button>
-			<NIF>Modules\NormalModules\DrackTeuhaliOrder\Art\Leaders\Sabrina.dds</NIF>
+			<Button>Modules\Def\DrackTeuhaliOrder\Art\Leaders\Sabrina_Portrait.dds</Button>
+			<NIF>Modules\Def\DrackTeuhaliOrder\Art\Leaders\Sabrina.dds</NIF>
 			<KFM/>
 			<NoShaderNIF/>
 			<BackgroundKFM/>
 		</LeaderheadArtInfo>
 		<LeaderheadArtInfo>		<!-- Maria Amara Zucker -->
 			<Type>ART_DEF_LEADER_MARIA_AMARA_ZUCKER</Type>
-			<Button>Modules\NormalModules\DrackTeuhaliOrder\Art\Leaders\Maria_Portrait.dds</Button>
-			<NIF>Modules\NormalModules\DrackTeuhaliOrder\Art\Leaders\Maria.dds</NIF>
+			<Button>Modules\Def\DrackTeuhaliOrder\Art\Leaders\Maria_Portrait.dds</Button>
+			<NIF>Modules\Def\DrackTeuhaliOrder\Art\Leaders\Maria.dds</NIF>
 			<KFM/>
 			<NoShaderNIF/>
 			<BackgroundKFM/>
 		</LeaderheadArtInfo>
 		<LeaderheadArtInfo>		<!-- Brunhilde von Mitte -->
 			<Type>ART_DEF_LEADER_BRUNHILDE_VON_MITTE</Type>
-			<Button>Modules\NormalModules\DrackTeuhaliOrder\Art\Leaders\Brundhilde_Portrait.dds</Button>
-			<NIF>Modules\NormalModules\DrackTeuhaliOrder\Art\Leaders\Brundhilde.dds</NIF>
+			<Button>Modules\Def\DrackTeuhaliOrder\Art\Leaders\Brundhilde_Portrait.dds</Button>
+			<NIF>Modules\Def\DrackTeuhaliOrder\Art\Leaders\Brundhilde.dds</NIF>
 			<KFM/>
 			<NoShaderNIF/>
 			<BackgroundKFM/>

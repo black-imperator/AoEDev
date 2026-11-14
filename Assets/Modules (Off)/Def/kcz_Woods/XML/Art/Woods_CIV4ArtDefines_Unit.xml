@@ -8,7 +8,7 @@
 	<UnitArtInfos>
 		<UnitArtInfo> <!-- UNIT_PALADIN -->
 			<Type>ART_DEF_UNIT_PALADIN_TREANT</Type>
-			<Button>Modules/NormalModules/kcz_Woods/Art/Interface/Buttons/Units/treant_paladin.dds</Button>
+			<Button>Modules/Def/kcz_Woods/Art/Interface/Buttons/Units/treant_paladin.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -31,7 +31,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- UNIT_DRUID in UNIT_ARTSTYLE_TREANT -->
 			<Type>ART_DEF_UNIT_DRUID_TREANT</Type>
-			<Button>Modules/NormalModules/kcz_Woods/Art/Interface/Buttons/Units/treant_druid.dds</Button>
+			<Button>Modules/Def/kcz_Woods/Art/Interface/Buttons/Units/treant_druid.dds</Button>
 			<fScale>0.46</fScale>
 			<fInterfaceScale>0.9</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -54,7 +54,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- UNIT_BEASTMASTER in UNIT_ARTSTYLE_TREANT -->
 			<Type>ART_DEF_UNIT_BEASTMASTER_TREANT</Type>
-			<Button>Modules/NormalModules/kcz_Woods/Art/Interface/Buttons/Units/treant_beastmaster.dds</Button>
+			<Button>Modules/Def/kcz_Woods/Art/Interface/Buttons/Units/treant_beastmaster.dds</Button>
 			<fScale>0.4</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -77,7 +77,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- UNIT_REFUGEE --> <!-- UNIT_PIONEER --> <!-- UNIT_SETTLER -->
 			<Type>ART_DEF_UNIT_SETTLER_TREANT</Type>
-			<Button>Modules/NormalModules/kcz_Woods/Art/Interface/Buttons/Units/treant_settler.dds</Button>
+			<Button>Modules/Def/kcz_Woods/Art/Interface/Buttons/Units/treant_settler.dds</Button>
 			<fScale>0.47</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -101,7 +101,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- Standard End --> <!-- UNIT_OPERATOR --> <!-- UNIT_WORKER -->
 			<Type>ART_DEF_UNIT_WORKER_TREANT</Type>
-			<Button>Modules/NormalModules/kcz_Woods/Art/Interface/Buttons/Units/treant_worker.dds</Button>
+			<Button>Modules/Def/kcz_Woods/Art/Interface/Buttons/Units/treant_worker.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -124,7 +124,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- UNIT_BEES -->
 			<Type>ART_DEF_UNIT_BEES</Type>
-			<Button>Modules/NormalModules/kcz_Woods/Art/Interface/Buttons/Units/swarmofbees.dds</Button>
+			<Button>Modules/Def/kcz_Woods/Art/Interface/Buttons/Units/swarmofbees.dds</Button>
 			<fScale>0.5</fScale>
 			<fInterfaceScale>1.4</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -147,7 +147,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- Batswarm-->
 			<Type>ART_DEF_UNIT_CROW_FLOCK</Type>
-			<Button>Modules/NormalModules/kcz_Woods/Art/Interface/Buttons/Units/crowflock.dds</Button>
+			<Button>Modules/Def/kcz_Woods/Art/Interface/Buttons/Units/crowflock.dds</Button>
 			<fScale>0.25</fScale>
 			<fInterfaceScale>0.35</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -195,14 +195,14 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- UNIT_BURNING_TREANT -->
 			<Type>ART_DEF_UNIT_BURNING_TREANT</Type>
-			<Button>Modules/NormalModules/kcz_Woods/Art/Interface/Buttons/Units/burningtreant.dds</Button>
+			<Button>Modules/Def/kcz_Woods/Art/Interface/Buttons/Units/burningtreant.dds</Button>
 			<fScale>0.6</fScale>
 			<fInterfaceScale>0.7</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/NormalModules/kcz_Woods/Art/Units/Civs/Eert/Burning_treant/Scout.nif</NIF>
+			<NIF>Modules/Def/kcz_Woods/Art/Units/Civs/Eert/Burning_treant/Scout.nif</NIF>
 			<KFM>Art/Units/Scout/Scout.kfm</KFM>
-			<SHADERNIF>Modules/NormalModules/kcz_Woods/Art/Units/Civs/Eert/Burning_treant/Scout_fx.nif</SHADERNIF>
+			<SHADERNIF>Modules/Def/kcz_Woods/Art/Units/Civs/Eert/Burning_treant/Scout_fx.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -219,12 +219,12 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- UNIT_DRYAD -->
 			<Type>ART_DEF_UNIT_DRYAD</Type>
-			<Button>Modules/NormalModules/kcz_Woods/Art/Interface/Buttons/Units/dryad.dds</Button>
+			<Button>Modules/Def/kcz_Woods/Art/Interface/Buttons/Units/dryad.dds</Button>
 			<fScale>0.4</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/NormalModules/kcz_Woods/Art/Units/Civs/Eert/Dryad/PapalSpearman.nif</NIF>
+			<NIF>Modules/Def/kcz_Woods/Art/Units/Civs/Eert/Dryad/PapalSpearman.nif</NIF>
 			<KFM>Art\animations/papalspearman/PapalSpearman.kfm</KFM>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
@@ -242,7 +242,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- UNIT_ARCHER -->
 			<Type>ART_DEF_UNIT_DRYAD_ARCHER</Type>
-			<Button>Modules/NormalModules/kcz_Woods/Art/Interface/Buttons/Units/dryadarcher.dds</Button>
+			<Button>Modules/Def/kcz_Woods/Art/Interface/Buttons/Units/dryadarcher.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -266,7 +266,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- UNIT_BEAR_RIDER -->
 			<Type>ART_DEF_UNIT_DRYAD_BEAR_RIDER</Type>
-			<Button>Modules/NormalModules/kcz_Woods/Art/Interface/Buttons/Units/Bearrider.dds</Button>
+			<Button>Modules/Def/kcz_Woods/Art/Interface/Buttons/Units/Bearrider.dds</Button>
 			<fScale>0.42</fScale>
 			<fInterfaceScale>0.9</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -290,7 +290,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- UNIT_HUNTER -->
 			<Type>ART_DEF_UNIT_ANIMAL_CHARMER</Type>
-			<Button>Modules/NormalModules/kcz_Woods/Art/Interface/Buttons/Units/animalcharmer.dds</Button>
+			<Button>Modules/Def/kcz_Woods/Art/Interface/Buttons/Units/animalcharmer.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -314,7 +314,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- UNIT_SPEARMAN in UNIT_ARTSTYLE_ELF -->
 			<Type>ART_DEF_UNIT_FOREST_GUARDIAN</Type>
-			<Button>Modules/NormalModules/kcz_Woods/Art/Interface/Buttons/Units/forestguardian.dds</Button>
+			<Button>Modules/Def/kcz_Woods/Art/Interface/Buttons/Units/forestguardian.dds</Button>
 			<fScale>0.48</fScale>
 			<fInterfaceScale>0.9</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -337,12 +337,12 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- UNIT_NAIAD -->
 			<Type>ART_DEF_UNIT_NAIAD</Type>
-			<Button>Modules/NormalModules/kcz_Woods/Art/Interface/Buttons/Units/naiad.dds</Button>
+			<Button>Modules/Def/kcz_Woods/Art/Interface/Buttons/Units/naiad.dds</Button>
 			<fScale>0.4</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/NormalModules/kcz_Woods/Art/Units/Civs/Eert/Dryad/naiad.nif</NIF>
+			<NIF>Modules/Def/kcz_Woods/Art/Units/Civs/Eert/Dryad/naiad.nif</NIF>
 			<KFM>Art\animations/papalspearman/PapalSpearman.kfm</KFM>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
@@ -360,12 +360,12 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- UNIT_DRYAD -->
 			<Type>ART_DEF_UNIT_DRYAD_ENCHANTRESS</Type>
-			<Button>Modules/NormalModules/kcz_Woods/Art/Interface/Buttons/Units/dryadenchantress.dds</Button>
+			<Button>Modules/Def/kcz_Woods/Art/Interface/Buttons/Units/dryadenchantress.dds</Button>
 			<fScale>0.4</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/NormalModules/kcz_Woods/Art/Units/Civs/Eert/Dryaid/PapalSpearman.nif</NIF>
+			<NIF>Modules/Def/kcz_Woods/Art/Units/Civs/Eert/Dryaid/PapalSpearman.nif</NIF>
 			<KFM>Art\animations/papalspearman/PapalSpearman.kfm</KFM>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
@@ -383,12 +383,12 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- UNIT_LILYPAD -->
 			<Type>ART_DEF_UNIT_LILYPAD</Type>
-			<Button>Modules/NormalModules/kcz_Woods/Art/Interface/Buttons/Units/lilypad.dds</Button>
+			<Button>Modules/Def/kcz_Woods/Art/Interface/Buttons/Units/lilypad.dds</Button>
 			<fScale>0.2</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/NormalModules/kcz_Woods/Art/Units/Civs/Eert/Lilypad/vessel.nif</NIF>
+			<NIF>Modules/Def/kcz_Woods/Art/Units/Civs/Eert/Lilypad/vessel.nif</NIF>
 			<KFM>Art/Units/Workboat_Ancient/Workboat_Ancient.kfm</KFM>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/WorkboatShadow.nif</ShadowNIF>
@@ -419,14 +419,14 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- UNIT_BURNING_TREANT -->
 			<Type>ART_DEF_UNIT_EARTHBREAKER</Type>
-			<Button>Modules/NormalModules/kcz_Woods/Art/Interface/Buttons/Units/earthbreaker.dds</Button>
+			<Button>Modules/Def/kcz_Woods/Art/Interface/Buttons/Units/earthbreaker.dds</Button>
 			<fScale>0.6</fScale>
 			<fInterfaceScale>0.7</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/NormalModules/kcz_Woods/Art/Units/Civs/Eert/Burning_treant/Scout.nif</NIF>
+			<NIF>Modules/Def/kcz_Woods/Art/Units/Civs/Eert/Burning_treant/Scout.nif</NIF>
 			<KFM>Art/Units/Scout/Scout.kfm</KFM>
-			<SHADERNIF>Modules/NormalModules/kcz_Woods/Art/Units/Civs/Eert/Burning_treant/Scout_fx.nif</SHADERNIF>
+			<SHADERNIF>Modules/Def/kcz_Woods/Art/Units/Civs/Eert/Burning_treant/Scout_fx.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -466,7 +466,7 @@
         </UnitArtInfo>
 		<UnitArtInfo> <!-- UNIT_PHALANX -->
 			<Type>ART_DEF_UNIT_GUARDIAN_TREE</Type>
-			<Button>Modules/NormalModules/kcz_Woods/Art/Interface/Buttons/Units/guardiantree.dds</Button>
+			<Button>Modules/Def/kcz_Woods/Art/Interface/Buttons/Units/guardiantree.dds</Button>
 			<fScale>0.42</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -490,7 +490,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- UNIT_QUEEN_OF_THE_LINE -->
 			<Type>ART_DEF_UNIT_FLOATING_ISLAND</Type>
-			<Button>Modules/NormalModules/kcz_Woods/Art/Interface/Buttons/Units/floatingisland.dds</Button>
+			<Button>Modules/Def/kcz_Woods/Art/Interface/Buttons/Units/floatingisland.dds</Button>
 			<fScale>0.08</fScale>
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -527,7 +527,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- UNIT_SHADOW_TREANT -->
 			<Type>ART_DEF_UNIT_SHADOW_TREANT</Type>
-			<Button>Modules/NormalModules/kcz_Woods/Art/Interface/Buttons/Units/corruptedtreant.dds</Button>
+			<Button>Modules/Def/kcz_Woods/Art/Interface/Buttons/Units/corruptedtreant.dds</Button>
 			<fScale>0.48</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -550,7 +550,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- UNIT_SHADOW_TREANT -->
 			<Type>ART_DEF_UNIT_FOREST_VANGUARD</Type>
-			<Button>Modules/NormalModules/kcz_Woods/Art/Interface/Buttons/Units/forestvanguard.dds</Button>
+			<Button>Modules/Def/kcz_Woods/Art/Interface/Buttons/Units/forestvanguard.dds</Button>
 			<fScale>0.48</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -573,7 +573,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- UNIT_TREE_OF_LIFE_EERT -->
 			<Type>ART_DEF_UNIT_TREE_OF_LIFE_EERT</Type>
-			<Button>Modules/NormalModules/kcz_Woods/Art/Interface/Buttons/Units/treeoflife.dds</Button>
+			<Button>Modules/Def/kcz_Woods/Art/Interface/Buttons/Units/treeoflife.dds</Button>
 			<fScale>0.48</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>

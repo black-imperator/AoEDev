@@ -15,7 +15,7 @@
 			<fInterfaceScale>0.4</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Walls/Walls.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackExtraBuildings\Art\Pictures\HighWall.dds</Button>
+			<Button>Modules\Def\DrackExtraBuildings\Art\Pictures\HighWall.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo> <!-- Craftsmen Hut -->
 			<Type>ART_DEF_BUILDING_CRAFTSMENHUT</Type>
@@ -25,7 +25,7 @@
 			<fInterfaceScale>0.52</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/ArtisansBuildings/Barracks.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackExtraBuildings\Art\Pictures\CraftmenHut.dds</Button>
+			<Button>Modules\Def\DrackExtraBuildings\Art\Pictures\CraftmenHut.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo> <!-- Trenton Mill -->
 			<Type>ART_DEF_BUILDING_TRENTON_MILL</Type>
@@ -35,7 +35,7 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/spiritmill/Brewery.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackExtraBuildings\Art\Pictures\TrentonMill.dds</Button>
+			<Button>Modules\Def\DrackExtraBuildings\Art\Pictures\TrentonMill.dds</Button>
 		</BuildingArtInfo>
 		<!-- Religious Buildings -->
         <!-- Leaves Religion -->
@@ -47,7 +47,7 @@
 			<fInterfaceScale>0.4</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Babylonian_Garden/Babylonian_Garden.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackExtraBuildings\Art\Pictures\FruitGarden.dds</Button> 
+			<Button>Modules\Def\DrackExtraBuildings\Art\Pictures\FruitGarden.dds</Button> 
 		</BuildingArtInfo>
 		<BuildingArtInfo> <!-- Iron Woods -->
 			<Type>ART_DEF_BUILDING_DRACK_IRONWOODS</Type>
@@ -57,7 +57,7 @@
 			<fInterfaceScale>0.7</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Huntinglodge/huntinglodge.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackExtraBuildings\Art\Pictures\IronWood.dds</Button> 
+			<Button>Modules\Def\DrackExtraBuildings\Art\Pictures\IronWood.dds</Button> 
 		</BuildingArtInfo>
 		<BuildingArtInfo> <!-- Hut of Treesinger -->
 			<Type>ART_DEF_BUILDING_DRACK_TREESINGER</Type>
@@ -67,7 +67,7 @@
 			<fInterfaceScale>0.7</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Huntinglodge/huntinglodge.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackExtraBuildings\Art\Pictures\Treesinger.dds</Button> 
+			<Button>Modules\Def\DrackExtraBuildings\Art\Pictures\Treesinger.dds</Button> 
 		</BuildingArtInfo>
 		<BuildingArtInfo> <!-- Golden Tree -->
 			<Type>ART_DEF_BUILDING_DRACK_GOLDENTREE</Type>
@@ -77,7 +77,7 @@
 			<fInterfaceScale>0.43</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Palace Ljos/harounbarracks.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackExtraBuildings\Art\Pictures\GoldenTree.dds</Button> 
+			<Button>Modules\Def\DrackExtraBuildings\Art\Pictures\GoldenTree.dds</Button> 
 		</BuildingArtInfo>
 		<!-- Empryrean-->
 		<BuildingArtInfo> <!-- Radiant Tower -->
@@ -88,7 +88,7 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/SpiralMinaret/FridayMosque.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackExtraBuildings\Art\Pictures\RadiantTower.dds</Button> 
+			<Button>Modules\Def\DrackExtraBuildings\Art\Pictures\RadiantTower.dds</Button> 
 		</BuildingArtInfo>
 		<BuildingArtInfo> <!-- Prayer Hall -->
 			<Type>ART_DEF_BUILDING_DRACK_EMPRYREAN_PRAYERHALL</Type>
@@ -98,7 +98,7 @@
 			<fInterfaceScale>0.6</fInterfaceScale>
 			<NIF>Art/Civs/Jotnar/jot_houseoftheancestors/hilmon.NIF</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackExtraBuildings\Art\Pictures\PrayerHall.dds</Button> 
+			<Button>Modules\Def\DrackExtraBuildings\Art\Pictures\PrayerHall.dds</Button> 
 		</BuildingArtInfo>
 		<BuildingArtInfo> <!-- Redemption Shrine -->
 			<Type>ART_DEF_BUILDING_DRACK_EMPRYREAN_REDEMPTIONSHRINE</Type>
@@ -108,7 +108,7 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<NIF>Art/structures/Buildings/Scions/western_earlytemple.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackExtraBuildings\Art\Pictures\RedemptionShrine.dds</Button> 
+			<Button>Modules\Def\DrackExtraBuildings\Art\Pictures\RedemptionShrine.dds</Button> 
 		</BuildingArtInfo>
 		<BuildingArtInfo> <!-- Brilliant Hall -->
 			<Type>ART_DEF_BUILDING_DRACK_EMPRYREAN_BRILLIANTHALL</Type>
@@ -118,7 +118,7 @@
 			<fInterfaceScale>1.10</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/hallofcovenant/HumanLibrary.NIF</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackExtraBuildings\Art\Pictures\BrilliantHall.dds</Button> 
+			<Button>Modules\Def\DrackExtraBuildings\Art\Pictures\BrilliantHall.dds</Button> 
 		</BuildingArtInfo>
 		<!-- Kilmorph -->
 		<BuildingArtInfo> <!-- Altar of Kilmorph  -->
@@ -129,7 +129,7 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<NIF>Art/structures/Buildings/Scions/western_earlytemple.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackExtraBuildings\Art\Pictures\AltarOfKilmorph.dds</Button>
+			<Button>Modules\Def\DrackExtraBuildings\Art\Pictures\AltarOfKilmorph.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo> <!-- Workshop  -->
 			<Type>ART_DEF_BUILDING_DRACK_KILMORPH_WORKSHOP</Type>
@@ -139,7 +139,7 @@
 			<fInterfaceScale>0.67</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Mali Mint/Mali_mint.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackExtraBuildings\Art\Pictures\WorkshopOfKilmorph.dds</Button>
+			<Button>Modules\Def\DrackExtraBuildings\Art\Pictures\WorkshopOfKilmorph.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo> <!-- Pile of Gold  -->
 			<Type>ART_DEF_BUILDING_DRACK_KILMORPH_PILEOFGOLD</Type>
@@ -149,7 +149,7 @@
 			<fInterfaceScale>0.67</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Mali Mint/Mali_mint.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackExtraBuildings\Art\Pictures\PileOfGold.dds</Button>
+			<Button>Modules\Def\DrackExtraBuildings\Art\Pictures\PileOfGold.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo> <!-- Halls of Wealth  -->
 			<Type>ART_DEF_BUILDING_DRACK_KILMORPH_HALLSOFWEALTH</Type>
@@ -159,7 +159,7 @@
 			<fInterfaceScale>1.10</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/hallofcovenant/HumanLibrary.NIF</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackExtraBuildings\Art\Pictures\HallsOfWealth.dds</Button>
+			<Button>Modules\Def\DrackExtraBuildings\Art\Pictures\HallsOfWealth.dds</Button>
 		</BuildingArtInfo>
 		<!-- Order -->
 		<BuildingArtInfo> <!-- Wall of Heroes -->
@@ -170,7 +170,7 @@
 			<fInterfaceScale>0.8</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Statues/Courage/Courage.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackExtraBuildings\Art\Pictures\WallOfHeroes.dds</Button>
+			<Button>Modules\Def\DrackExtraBuildings\Art\Pictures\WallOfHeroes.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo> <!-- School of Demonhunters -->
 			<Type>ART_DEF_BUILDING_DRACK_ORDER_SCHOOLOFDEMONHUNTERS</Type>
@@ -180,7 +180,7 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Inn/medieval_house1.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackExtraBuildings\Art\Pictures\SchoolOfDemonhunters.dds</Button>
+			<Button>Modules\Def\DrackExtraBuildings\Art\Pictures\SchoolOfDemonhunters.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo> <!-- Chamber of Faith -->
 			<Type>ART_DEF_BUILDING_DRACK_ORDER_CHAMBEROFFAITH</Type>
@@ -190,7 +190,7 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<NIF>Art/structures/Buildings/Scions/western_earlytemple.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackExtraBuildings\Art\Pictures\ChamberOfFaith.dds</Button>
+			<Button>Modules\Def\DrackExtraBuildings\Art\Pictures\ChamberOfFaith.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo> <!-- Congress of Order -->
 			<Type>ART_DEF_BUILDING_DRACK_ORDER_CONGRESSOFORDER</Type>
@@ -200,7 +200,7 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/CorellonTemple/CorellonTemple.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackExtraBuildings\Art\Pictures\CongressOfOrder.dds</Button>
+			<Button>Modules\Def\DrackExtraBuildings\Art\Pictures\CongressOfOrder.dds</Button>
 		</BuildingArtInfo>
 		<!-- Octopus -->
 		<BuildingArtInfo> <!-- Port of Hemah -->
@@ -211,7 +211,7 @@
 			<fInterfaceScale>1.5</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Harbor/Harbor.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackExtraBuildings\Art\Pictures\PortOfHemah.dds</Button>
+			<Button>Modules\Def\DrackExtraBuildings\Art\Pictures\PortOfHemah.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo> <!-- Dark Overlords’s Habor -->
 			<Type>ART_DEF_BUILDING_DRACK_OCTO_OVERLORDHABOR</Type>
@@ -221,7 +221,7 @@
 			<fInterfaceScale>1.5</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Harbor/Harbor.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackExtraBuildings\Art\Pictures\DarkOverlordsHabor.dds</Button>
+			<Button>Modules\Def\DrackExtraBuildings\Art\Pictures\DarkOverlordsHabor.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo> <!-- House of Madness -->
 			<Type>ART_DEF_BUILDING_DRACK_OCTO_HOUSEMADNESS</Type>
@@ -231,7 +231,7 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Inn/medieval_house1.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackExtraBuildings\Art\Pictures\HouseOfMadness.dds</Button>
+			<Button>Modules\Def\DrackExtraBuildings\Art\Pictures\HouseOfMadness.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo> <!-- Chamber of Apathy -->
 			<Type>ART_DEF_BUILDING_DRACK_OCTO_CHAMBERAPATHY</Type>
@@ -241,7 +241,7 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<NIF>Art/structures/Buildings/Scions/western_earlytemple.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackExtraBuildings\Art\Pictures\ChamberOfApathy.dds</Button>
+			<Button>Modules\Def\DrackExtraBuildings\Art\Pictures\ChamberOfApathy.dds</Button>
 		</BuildingArtInfo>
 		<!-- Ashen Veil -->
 		<BuildingArtInfo> <!-- Temples of Agares -->
@@ -252,7 +252,7 @@
 			<fInterfaceScale>0.6</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Chancel of Guardians/jail.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackExtraBuildings\Art\Pictures\TempleOfAgares.dds</Button>
+			<Button>Modules\Def\DrackExtraBuildings\Art\Pictures\TempleOfAgares.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo> <!-- Temple of Aeron -->
 			<Type>ART_DEF_BUILDING_DRACK_VEIL_TEMPLEAERON</Type>
@@ -262,7 +262,7 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<NIF>Art/structures/Buildings/Scions/western_earlytemple.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackExtraBuildings\Art\Pictures\TempleOfAeron.dds</Button>
+			<Button>Modules\Def\DrackExtraBuildings\Art\Pictures\TempleOfAeron.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo> <!-- Temple of Hyborem -->
 			<Type>ART_DEF_BUILDING_DRACK_VEIL_TEMPLEHYBOREM</Type>
@@ -272,7 +272,7 @@
 			<fInterfaceScale>0.3</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Palace Infernal/undeadcentercitadel.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackExtraBuildings\Art\Pictures\TempleOfHyborem.dds</Button>
+			<Button>Modules\Def\DrackExtraBuildings\Art\Pictures\TempleOfHyborem.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo> <!-- Cadaver Pitt -->
 			<Type>ART_DEF_BUILDING_DRACK_VEIL_CADAVERPITT</Type>
@@ -282,7 +282,7 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Sewer/sewer.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackExtraBuildings\Art\Pictures\CadaverPitt.dds</Button>
+			<Button>Modules\Def\DrackExtraBuildings\Art\Pictures\CadaverPitt.dds</Button>
 		</BuildingArtInfo>
 		<!-- White Hand -->
 		<BuildingArtInfo> <!-- Hall of the Hand -->
@@ -293,7 +293,7 @@
 			<fInterfaceScale>1.10</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/hallofcovenant/HumanLibrary.NIF</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackExtraBuildings\Art\Pictures\HallOfHand.dds</Button>
+			<Button>Modules\Def\DrackExtraBuildings\Art\Pictures\HallOfHand.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo> <!-- Guild of the Icefarmers -->
 			<Type>ART_DEF_BUILDING_DRACK_HAND_GUILDOFTHEICEFARMERS</Type>
@@ -303,7 +303,7 @@
 			<fInterfaceScale>0.52</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackExtraBuildings\Art\Pictures\IceFarmer.dds</Button>
+			<Button>Modules\Def\DrackExtraBuildings\Art\Pictures\IceFarmer.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo> <!-- Glacier Mine -->
 			<Type>ART_DEF_BUILDING_DRACK_HAND_GLACIERMINE</Type>
@@ -313,7 +313,7 @@
 			<fInterfaceScale>0.7</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Huntinglodge/huntinglodge.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackExtraBuildings\Art\Pictures\GlacierMine.dds</Button>
+			<Button>Modules\Def\DrackExtraBuildings\Art\Pictures\GlacierMine.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo> <!-- Statue of Winter -->
 			<Type>ART_DEF_BUILDING_DRACK_HAND_STATUEOFWINTER</Type>
@@ -323,7 +323,7 @@
 			<fInterfaceScale>0.3</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Shrine of Sirona/statue_angel_prop.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackExtraBuildings\Art\Pictures\WinterStatue.dds</Button>
+			<Button>Modules\Def\DrackExtraBuildings\Art\Pictures\WinterStatue.dds</Button>
 		</BuildingArtInfo>
 		<!-- Esus -->
 		<BuildingArtInfo> <!-- Veiled Market -->
@@ -334,7 +334,7 @@
 			<fInterfaceScale>0.7</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Huntinglodge/huntinglodge.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackExtraBuildings\Art\Pictures\VeiledMarket.dds</Button>
+			<Button>Modules\Def\DrackExtraBuildings\Art\Pictures\VeiledMarket.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo> <!-- Midnight Banquet -->
 			<Type>ART_DEF_BUILDING_DRACK_ESUS_MIDNIGHTBANQUET</Type>
@@ -344,7 +344,7 @@
 			<fInterfaceScale>0.6</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Market/Market.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackExtraBuildings\Art\Pictures\MidnightBanquet.dds</Button>
+			<Button>Modules\Def\DrackExtraBuildings\Art\Pictures\MidnightBanquet.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo> <!-- Black Fortress -->
 			<Type>ART_DEF_BUILDING_DRACK_ESUS_BLACKFORTRESS</Type>
@@ -354,7 +354,7 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Trainingyard/Trainingyard.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackExtraBuildings\Art\Pictures\BlackFortress.dds</Button>
+			<Button>Modules\Def\DrackExtraBuildings\Art\Pictures\BlackFortress.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo> <!-- Mirror Piece from Cerdiwen -->
 			<Type>ART_DEF_BUILDING_DRACK_ESUS_MIRRORPIECE</Type>
@@ -364,7 +364,7 @@
 			<fInterfaceScale>0.6</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Market/Market.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackExtraBuildings\Art\Pictures\MirrorCeri.dds</Button>
+			<Button>Modules\Def\DrackExtraBuildings\Art\Pictures\MirrorCeri.dds</Button>
 		</BuildingArtInfo>
 		<!-- No State Religion -->
 		<BuildingArtInfo> <!-- School -->
@@ -375,7 +375,7 @@
 			<fInterfaceScale>0.6</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Temple of the Hand/oldtemple.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackExtraBuildings\Art\Pictures\School.dds</Button>
+			<Button>Modules\Def\DrackExtraBuildings\Art\Pictures\School.dds</Button>
 		</BuildingArtInfo>
 	</BuildingArtInfos>
 </Civ4ArtDefines>

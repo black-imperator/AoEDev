@@ -84,7 +84,7 @@
 		
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_GALLEAS_MALAKIM</Type>
-			<Button>Modules/NormalModules/PPQ_NAVY/Art/Interface/Icons/Units/Galleas.dds</Button>
+			<Button>Modules/Def/PPQ_NAVY/Art/Interface/Icons/Units/Galleas.dds</Button>
 			<fScale>0.12</fScale>
 			<fInterfaceScale>0.6</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>

@@ -8,7 +8,7 @@
 	<UnitArtInfos> 
 		<UnitArtInfo>  <!-- Blood Acolyte -->
 			<Type>ART_DEF_UNIT_VAMP_DISCIPLE</Type>
-			<Button>Modules/NormalModules/DrackVampirism/Art/Units/BloodAcolyte.dds</Button>
+			<Button>Modules/Def/DrackVampirism/Art/Units/BloodAcolyte.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -32,7 +32,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>  <!-- Bloodseer -->
 			<Type>ART_DEF_UNIT_VAMP_BLOOD_SEER</Type>
-			<Button>Modules/NormalModules/DrackVampirism/Art/Units/BloodSeer.dds</Button>
+			<Button>Modules/Def/DrackVampirism/Art/Units/BloodSeer.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -57,7 +57,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>  <!-- Blood Sister -->
 			<Type>ART_DEF_UNIT_BLOOD_SISTER</Type>
-			<Button>Modules/NormalModules/DrackVampirism/Art/Units/BloodSister.dds</Button>
+			<Button>Modules/Def/DrackVampirism/Art/Units/BloodSister.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -82,7 +82,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>  <!-- Vein Lord -->
 			<Type>ART_DEF_UNIT_VEIN_LORD</Type>
-			<Button>Modules/NormalModules/DrackVampirism/Art/Units/VeinLord.dds</Button>
+			<Button>Modules/Def/DrackVampirism/Art/Units/VeinLord.dds</Button>
 			<fScale>0.46</fScale>
 			<fInterfaceScale>0.9</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>

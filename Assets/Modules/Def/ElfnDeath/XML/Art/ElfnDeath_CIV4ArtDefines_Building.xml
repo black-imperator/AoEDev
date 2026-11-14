@@ -14,7 +14,7 @@
             <fInterfaceScale>0.67</fInterfaceScale>
             <NIF>Art/Modules/Dao/Buildings/Pagan Temple/asian_latetemple.nif</NIF>
             <KFM/>
-            <Button>Modules/NormalModules/ElfnDeath/Art/Interface/Buttons/Buildings/ArchivesoftheHonoredDead.dds</Button>
+            <Button>Modules/Def/ElfnDeath/Art/Interface/Buttons/Buildings/ArchivesoftheHonoredDead.dds</Button>
         </BuildingArtInfo>
     </BuildingArtInfos>
 </Civ4ArtDefines>

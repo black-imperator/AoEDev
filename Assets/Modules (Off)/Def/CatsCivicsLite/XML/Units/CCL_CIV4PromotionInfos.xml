@@ -10,7 +10,7 @@
 		<PromotionInfo>		<!-- Arcane Privilege -->
 			<Type>PROMOTION_ARCANE_PRIVILEGE</Type>
 			<Description>TXT_KEY_PROMOTION_ARCANE_PRIVILEGE</Description>
-			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Promotions/ArcanePrivilege.dds</Button>
+			<Button>Modules/Def/CatsCivicsLite/Art/Interface/Buttons/Promotions/ArcanePrivilege.dds</Button>
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
@@ -44,7 +44,7 @@
 		<PromotionInfo>		<!-- Arcane Authority -->
 			<Type>PROMOTION_ARCANE_AUTHORITY</Type>
 			<Description>TXT_KEY_PROMOTION_ARCANE_AUTHORITY</Description>
-			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Promotions/ArcaneAuthority.dds</Button>
+			<Button>Modules/Def/CatsCivicsLite/Art/Interface/Buttons/Promotions/ArcaneAuthority.dds</Button>
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
@@ -75,7 +75,7 @@
 		<PromotionInfo>		<!-- Arcane Supremacy -->
 			<Type>PROMOTION_ARCANE_SUPREMACY</Type>
 			<Description>TXT_KEY_PROMOTION_ARCANE_SUPREMACY</Description>
-			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Promotions/ArcaneSupremacy.dds</Button>
+			<Button>Modules/Def/CatsCivicsLite/Art/Interface/Buttons/Promotions/ArcaneSupremacy.dds</Button>
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
@@ -209,7 +209,7 @@
 			<Type>PROMOTION_ARCANE_AUXILIARY1</Type>
 			<Description>TXT_KEY_PROMOTION_ARCANE_AUXILIARY1</Description>
 			<Help>TXT_KEY_PROMOTION_ARCANE_AUXILIARY1_HELP</Help>
-			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Promotions/ArcaneAuxiliary1.dds</Button>
+			<Button>Modules/Def/CatsCivicsLite/Art/Interface/Buttons/Promotions/ArcaneAuxiliary1.dds</Button>
 			<bOverrideHelpText>1</bOverrideHelpText>
 			<iMinLevel>-1</iMinLevel>
 			<PrereqCivics>
@@ -275,7 +275,7 @@
 		<PromotionInfo>		<!-- Arcane Auxiliary 2 - Cleanup -->		
 			<Type>PROMOTION_ARCANE_AUXILIARY2_CLEANUP</Type>
 			<Description>TXT_KEY_PROMOTION_ARCANE_AUXILIARY2</Description>
-			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Promotions/ArcaneAuxiliary2.dds</Button>
+			<Button>Modules/Def/CatsCivicsLite/Art/Interface/Buttons/Promotions/ArcaneAuxiliary2.dds</Button>
 			<bEffectProm>1</bEffectProm>
 			<iMinLevel>-1</iMinLevel>
 			<PromotionOverwrites>
@@ -334,7 +334,7 @@
 			<Type>PROMOTION_ARCANE_AUXILIARY2</Type>
 			<Description>TXT_KEY_PROMOTION_ARCANE_AUXILIARY2</Description>
 			<Help>TXT_KEY_PROMOTION_ARCANE_AUXILIARY2_HELP</Help>
-			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Promotions/ArcaneAuxiliary2.dds</Button>
+			<Button>Modules/Def/CatsCivicsLite/Art/Interface/Buttons/Promotions/ArcaneAuxiliary2.dds</Button>
 			<bOverrideHelpText>1</bOverrideHelpText>
 			<iMinLevel>-1</iMinLevel>
 			<PrereqCivics>
@@ -1679,7 +1679,7 @@
 		<PromotionInfo>		<!-- Divine Decree -->
 			<Type>PROMOTION_DIVINE_DECREE</Type>
 			<Description>TXT_KEY_PROMOTION_DIVINE_DECREE</Description>
-			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Promotions/ArcanePrivilege.dds</Button>
+			<Button>Modules/Def/CatsCivicsLite/Art/Interface/Buttons/Promotions/ArcanePrivilege.dds</Button>
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
@@ -1711,7 +1711,7 @@
 		<PromotionInfo>		<!-- Divine Mandate -->
 			<Type>PROMOTION_DIVINE_MANDATE</Type>
 			<Description>TXT_KEY_PROMOTION_DIVINE_MANDATE</Description>
-			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Promotions/ArcanePrivilege.dds</Button>
+			<Button>Modules/Def/CatsCivicsLite/Art/Interface/Buttons/Promotions/ArcanePrivilege.dds</Button>
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
@@ -1788,7 +1788,7 @@
 		<PromotionInfo>		<!-- Mob Boss -->
 			<Type>PROMOTION_MOB_BOSS</Type>
 			<Description>TXT_KEY_PROMOTION_MOB_BOSS</Description>
-			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Promotions/ArcanePrivilege.dds</Button>
+			<Button>Modules/Def/CatsCivicsLite/Art/Interface/Buttons/Promotions/ArcanePrivilege.dds</Button>
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
@@ -1866,7 +1866,7 @@
 		<PromotionInfo>		<!-- Culture Of Adventuring -->
 			<Type>PROMOTION_C_ADVENTURING</Type>
 			<Description>TXT_KEY_PROMOTION_C_ADVENTURING</Description>
-			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Promotions/Culture.dds</Button>
+			<Button>Modules/Def/CatsCivicsLite/Art/Interface/Buttons/Promotions/Culture.dds</Button>
 			<PrereqCivics>
 				<PrereqCivic>CIVIC_NATIONHOOD</PrereqCivic>
 			</PrereqCivics>
@@ -1902,7 +1902,7 @@
 			<Type>PROMOTION_C_PACIFISM</Type>
 			<Description>TXT_KEY_PROMOTION_C_PACIFISM</Description>
 			<Help>TXT_KEY_PROMOTION_C_PACIFISM_HELP</Help>
-			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Promotions/Culture.dds</Button>
+			<Button>Modules/Def/CatsCivicsLite/Art/Interface/Buttons/Promotions/Culture.dds</Button>
 			<PrereqCivics>
 				<PrereqCivic>CIVIC_PACIFISM</PrereqCivic>
 			</PrereqCivics>
@@ -1959,7 +1959,7 @@
 		<PromotionInfo>		<!-- Culture Of Isolation -->
 			<Type>PROMOTION_C_SECLUSION</Type>
 			<Description>TXT_KEY_PROMOTION_C_SECLUSION</Description>
-			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Promotions/Culture.dds</Button>
+			<Button>Modules/Def/CatsCivicsLite/Art/Interface/Buttons/Promotions/Culture.dds</Button>
 			<PrereqCivics>
 				<PrereqCivic>CIVIC_RELIGION</PrereqCivic>
 			</PrereqCivics>
@@ -2013,7 +2013,7 @@
 		<PromotionInfo>		<!-- Culture Of Excess -->
 			<Type>PROMOTION_C_EXCESS</Type>
 			<Description>TXT_KEY_PROMOTION_C_EXCESS</Description>
-			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Promotions/Culture.dds</Button>
+			<Button>Modules/Def/CatsCivicsLite/Art/Interface/Buttons/Promotions/Culture.dds</Button>
 			<PrereqCivics>
 				<PrereqCivic>CIVIC_CONSUMPTION</PrereqCivic>
 			</PrereqCivics>
@@ -2069,7 +2069,7 @@
 		<PromotionInfo>		<!-- Culture Of Tinkering -->
 			<Type>PROMOTION_C_TINKERING</Type>
 			<Description>TXT_KEY_PROMOTION_C_TINKERING</Description>
-			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Promotions/Culture.dds</Button>
+			<Button>Modules/Def/CatsCivicsLite/Art/Interface/Buttons/Promotions/Culture.dds</Button>
 			<PrereqCivics>
 				<PrereqCivic>CIVIC_CONSUMPTION</PrereqCivic>
 			</PrereqCivics>
@@ -2125,7 +2125,7 @@
 		<PromotionInfo>		<!-- Culture Of Rapture -->
 			<Type>PROMOTION_C_RAPTURED</Type>
 			<Description>TXT_KEY_PROMOTION_C_RAPTURED</Description>
-			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Promotions/Culture.dds</Button>
+			<Button>Modules/Def/CatsCivicsLite/Art/Interface/Buttons/Promotions/Culture.dds</Button>
 			<PrereqCivics>
 				<PrereqCivic>CIVIC_SOCIAL_ORDER</PrereqCivic>
 			</PrereqCivics>
@@ -2181,7 +2181,7 @@
 		<PromotionInfo>		<!-- Culture Of Freedom -->
 			<Type>PROMOTION_C_FREEDOM</Type>
 			<Description>TXT_KEY_PROMOTION_C_FREEDOM</Description>
-			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Promotions/Culture.dds</Button>
+			<Button>Modules/Def/CatsCivicsLite/Art/Interface/Buttons/Promotions/Culture.dds</Button>
 			<PrereqCivics>
 				<PrereqCivic>CIVIC_LIBERTY</PrereqCivic>
 			</PrereqCivics>
@@ -2238,7 +2238,7 @@
 			<Type>PROMOTION_C_DECLINE</Type>
 			<Description>TXT_KEY_PROMOTION_C_DECLINE</Description>
 			<Help>TXT_KEY_PROMOTION_C_DECLINE_HELP</Help>
-			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Promotions/Culture.dds</Button>
+			<Button>Modules/Def/CatsCivicsLite/Art/Interface/Buttons/Promotions/Culture.dds</Button>
 			<PrereqCivics>
 				<PrereqCivic>CIVIC_SACRIFICE_THE_WEAK</PrereqCivic>
 			</PrereqCivics>
@@ -2302,7 +2302,7 @@
 		<PromotionInfo>		<!-- Teacher of the Underworld -->
 			<Type>PROMOTION_TEACHER_OF_THE_UNDERWORLD</Type>
 			<Description>TXT_KEY_PROMOTION_TEACHER_OF_THE_UNDERWORLD</Description>
-			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Promotions/Teacher.dds</Button>
+			<Button>Modules/Def/CatsCivicsLite/Art/Interface/Buttons/Promotions/Teacher.dds</Button>
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
@@ -2326,7 +2326,7 @@
 		<PromotionInfo>		<!-- Teacher of Preservation -->
 			<Type>PROMOTION_TEACHER_OF_PRESERVATION</Type>
 			<Description>TXT_KEY_PROMOTION_TEACHER_OF_PRESERVATION</Description>
-			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Promotions/Teacher.dds</Button>
+			<Button>Modules/Def/CatsCivicsLite/Art/Interface/Buttons/Promotions/Teacher.dds</Button>
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
@@ -2350,7 +2350,7 @@
 		<PromotionInfo>		<!-- Teacher of the Hunt -->
 			<Type>PROMOTION_TEACHER_OF_THE_HUNT</Type>
 			<Description>TXT_KEY_PROMOTION_TEACHER_OF_THE_HUNT</Description>
-			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Promotions/Teacher.dds</Button>
+			<Button>Modules/Def/CatsCivicsLite/Art/Interface/Buttons/Promotions/Teacher.dds</Button>
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
@@ -2374,7 +2374,7 @@
 		<PromotionInfo>		<!-- Teacher of Companionship -->
 			<Type>PROMOTION_TEACHER_OF_COMPANIONSHIP</Type>
 			<Description>TXT_KEY_PROMOTION_TEACHER_OF_COMPANIONSHIP</Description>
-			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Promotions/Teacher.dds</Button>
+			<Button>Modules/Def/CatsCivicsLite/Art/Interface/Buttons/Promotions/Teacher.dds</Button>
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
@@ -2398,7 +2398,7 @@
 		<PromotionInfo>		<!-- Teacher of War -->
 			<Type>PROMOTION_TEACHER_OF_WAR</Type>
 			<Description>TXT_KEY_PROMOTION_TEACHER_OF_WAR</Description>
-			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Promotions/Teacher.dds</Button>
+			<Button>Modules/Def/CatsCivicsLite/Art/Interface/Buttons/Promotions/Teacher.dds</Button>
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
@@ -2422,7 +2422,7 @@
 		<PromotionInfo>		<!-- Teacher of the Doctrin -->
 			<Type>PROMOTION_TEACHER_OF_THE_DOCTRIN</Type>
 			<Description>TXT_KEY_PROMOTION_TEACHER_OF_THE_DOCTRIN</Description>
-			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Promotions/Teacher.dds</Button>
+			<Button>Modules/Def/CatsCivicsLite/Art/Interface/Buttons/Promotions/Teacher.dds</Button>
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
@@ -2446,7 +2446,7 @@
 		<PromotionInfo>		<!-- Teacher of Flight -->
 			<Type>PROMOTION_TEACHER_OF_FLIGHT</Type>
 			<Description>TXT_KEY_PROMOTION_TEACHER_OF_FLIGHT</Description>
-			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Promotions/Teacher.dds</Button>
+			<Button>Modules/Def/CatsCivicsLite/Art/Interface/Buttons/Promotions/Teacher.dds</Button>
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
@@ -2470,7 +2470,7 @@
 		<PromotionInfo>		<!-- Teacher of the Arcane -->
 			<Type>PROMOTION_TEACHER_OF_THE_ARCANE</Type>
 			<Description>TXT_KEY_PROMOTION_TEACHER_OF_THE_ARCANE</Description>
-			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Promotions/Teacher.dds</Button>
+			<Button>Modules/Def/CatsCivicsLite/Art/Interface/Buttons/Promotions/Teacher.dds</Button>
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
@@ -2494,7 +2494,7 @@
 		<PromotionInfo>		<!-- Teacher of the Waves -->
 			<Type>PROMOTION_TEACHER_OF_THE_WAVES</Type>
 			<Description>TXT_KEY_PROMOTION_TEACHER_OF_THE_WAVES</Description>
-			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Promotions/Teacher.dds</Button>
+			<Button>Modules/Def/CatsCivicsLite/Art/Interface/Buttons/Promotions/Teacher.dds</Button>
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
@@ -2518,7 +2518,7 @@
 		<PromotionInfo>		<!-- Sage -->
 			<Type>PROMOTION_SAGE</Type>
 			<Description>TXT_KEY_PROMOTION_SAGE</Description>
-			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Promotions/ArcanePrivilege.dds</Button>
+			<Button>Modules/Def/CatsCivicsLite/Art/Interface/Buttons/Promotions/ArcanePrivilege.dds</Button>
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
@@ -2576,7 +2576,7 @@
 		<PromotionInfo>		<!-- Student of the Underworld -->
 			<Type>PROMOTION_STUDENT_OF_THE_UNDERWORLD</Type>
 			<Description>TXT_KEY_PROMOTION_STUDENT_OF_THE_UNDERWORLD</Description>
-			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Promotions/Student.dds</Button>
+			<Button>Modules/Def/CatsCivicsLite/Art/Interface/Buttons/Promotions/Student.dds</Button>
 			<iMinLevel>-1</iMinLevel>
 			<UnitCombats>
 				<UnitCombat>
@@ -2590,7 +2590,7 @@
 		<PromotionInfo>		<!-- Student of Preservation -->
 			<Type>PROMOTION_STUDENT_OF_PRESERVATION</Type>
 			<Description>TXT_KEY_PROMOTION_STUDENT_OF_PRESERVATION</Description>
-			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Promotions/Student.dds</Button>
+			<Button>Modules/Def/CatsCivicsLite/Art/Interface/Buttons/Promotions/Student.dds</Button>
 			<iMinLevel>-1</iMinLevel>
 			<UnitCombats>
 				<UnitCombat>
@@ -2604,7 +2604,7 @@
 		<PromotionInfo>		<!-- Student of the Hunt -->
 			<Type>PROMOTION_STUDENT_OF_THE_HUNT</Type>
 			<Description>TXT_KEY_PROMOTION_STUDENT_OF_THE_HUNT</Description>
-			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Promotions/Student.dds</Button>
+			<Button>Modules/Def/CatsCivicsLite/Art/Interface/Buttons/Promotions/Student.dds</Button>
 			<iMinLevel>-1</iMinLevel>
 			<UnitCombats>
 				<UnitCombat>
@@ -2618,7 +2618,7 @@
 		<PromotionInfo>		<!-- Student of Companionship -->
 			<Type>PROMOTION_STUDENT_OF_COMPANIONSHIP</Type>
 			<Description>TXT_KEY_PROMOTION_STUDENT_OF_COMPANIONSHIP</Description>
-			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Promotions/Student.dds</Button>
+			<Button>Modules/Def/CatsCivicsLite/Art/Interface/Buttons/Promotions/Student.dds</Button>
 			<iMinLevel>-1</iMinLevel>
 			<UnitCombats>
 				<UnitCombat>
@@ -2632,7 +2632,7 @@
 		<PromotionInfo>		<!-- Student of War -->
 			<Type>PROMOTION_STUDENT_OF_WAR</Type>
 			<Description>TXT_KEY_PROMOTION_STUDENT_OF_WAR</Description>
-			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Promotions/Student.dds</Button>
+			<Button>Modules/Def/CatsCivicsLite/Art/Interface/Buttons/Promotions/Student.dds</Button>
 			<iMinLevel>-1</iMinLevel>
 			<UnitCombats>
 				<UnitCombat>
@@ -2646,7 +2646,7 @@
 		<PromotionInfo>		<!-- Student of the Doctrin -->
 			<Type>PROMOTION_STUDENT_OF_THE_DOCTRIN</Type>
 			<Description>TXT_KEY_PROMOTION_STUDENT_OF_THE_DOCTRIN</Description>
-			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Promotions/Student.dds</Button>
+			<Button>Modules/Def/CatsCivicsLite/Art/Interface/Buttons/Promotions/Student.dds</Button>
 			<iMinLevel>-1</iMinLevel>
 			<UnitCombats>
 				<UnitCombat>
@@ -2660,7 +2660,7 @@
 		<PromotionInfo>		<!-- Student of Flight -->
 			<Type>PROMOTION_STUDENT_OF_FLIGHT</Type>
 			<Description>TXT_KEY_PROMOTION_STUDENT_OF_FLIGHT</Description>
-			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Promotions/Student.dds</Button>
+			<Button>Modules/Def/CatsCivicsLite/Art/Interface/Buttons/Promotions/Student.dds</Button>
 			<iMinLevel>-1</iMinLevel>
 			<UnitCombats>
 				<UnitCombat>
@@ -2674,7 +2674,7 @@
 		<PromotionInfo>		<!-- Student of the Arcane -->
 			<Type>PROMOTION_STUDENT_OF_THE_ARCANE</Type>
 			<Description>TXT_KEY_PROMOTION_STUDENT_OF_THE_ARCANE</Description>
-			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Promotions/Student.dds</Button>
+			<Button>Modules/Def/CatsCivicsLite/Art/Interface/Buttons/Promotions/Student.dds</Button>
 			<iMinLevel>-1</iMinLevel>
 			<UnitCombats>
 				<UnitCombat>
@@ -2688,7 +2688,7 @@
 		<PromotionInfo>		<!-- Student of the Waves -->
 			<Type>PROMOTION_STUDENT_OF_THE_WAVES</Type>
 			<Description>TXT_KEY_PROMOTION_STUDENT_OF_THE_WAVES</Description>
-			<Button>Modules/NormalModules/CatsCivicsLite/Art/Interface/Buttons/Promotions/Student.dds</Button>
+			<Button>Modules/Def/CatsCivicsLite/Art/Interface/Buttons/Promotions/Student.dds</Button>
 			<iMinLevel>-1</iMinLevel>
 			<UnitCombats>
 				<UnitCombat>

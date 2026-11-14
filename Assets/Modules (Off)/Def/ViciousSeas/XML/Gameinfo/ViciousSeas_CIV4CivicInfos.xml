@@ -100,7 +100,7 @@
 			<CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
 			<Type>CIVIC_MELDING</Type>
 			<Description>TXT_KEY_CIVIC_MELDING</Description>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Civics/Melding2.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Civics/Melding2.dds</Button>
 			<PrereqCivilization>CIVILIZATION_DREAM_AIFONS</PrereqCivilization>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<iAIWeight>90</iAIWeight>

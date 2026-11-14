@@ -13,7 +13,7 @@
             <fInterfaceScale>0.8</fInterfaceScale>
 			<NIF>Art/Structures/Improvements/nomadcamp/nomadcamp.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackNamko\Art\Buildings\BoneTemple.dds</Button> 
+			<Button>Modules\Def\DrackNamko\Art\Buildings\BoneTemple.dds</Button> 
 		</ImprovementArtInfo>
     </ImprovementArtInfos>
 </Civ4ArtDefines>

@@ -192,7 +192,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Promotions/PiratePrince.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Promotions/PiratePrince.dds</Button>
 			<bTypeDependency>1</bTypeDependency>
 		     <AndDependencyTypes>
 		        <DependencyType>MODULE_VICIOUSSEAS</DependencyType>
@@ -219,7 +219,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Promotions/DrownCaller.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Promotions/DrownCaller.dds</Button>
 			<bTypeDependency>1</bTypeDependency>
 		     <AndDependencyTypes>
 		        <DependencyType>MODULE_VICIOUSSEAS</DependencyType>

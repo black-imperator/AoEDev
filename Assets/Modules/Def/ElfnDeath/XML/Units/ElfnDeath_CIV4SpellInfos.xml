@@ -35,7 +35,7 @@
 			<bImmuneNeutral>1</bImmuneNeutral>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_SPELL_CONTAGION</Sound>
-			<Button>Modules/NormalModules/ElfnDeath/Art/Interface/Buttons/Spells/FatedEnd.dds</Button>
+			<Button>Modules/Def/ElfnDeath/Art/Interface/Buttons/Spells/FatedEnd.dds</Button>
 		</SpellInfo>
 <SpellInfo>			<!-- Death 2 - Last Rite -->
 			<Type>SPELL_LAST_RITE</Type>
@@ -64,7 +64,7 @@
 			<bImmuneEnemy>1</bImmuneEnemy>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_SWORD_CHECK</Sound>
-			<Button>Modules/NormalModules/ElfnDeath/Art/Interface/Buttons/Spells/LastRite.dds</Button>
+			<Button>Modules/Def/ElfnDeath/Art/Interface/Buttons/Spells/LastRite.dds</Button>
 		</SpellInfo>
 		<SpellInfo>			<!-- Death 3 - Deathward -->
 			<Type>SPELL_DEATHWARD</Type>
@@ -93,7 +93,7 @@
 			<bImmuneEnemy>1</bImmuneEnemy>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_LEECH_BREATH</Sound>
-			<Button>Modules/NormalModules/ElfnDeath/Art/Interface/Buttons/Spells/Deathward.dds</Button>
+			<Button>Modules/Def/ElfnDeath/Art/Interface/Buttons/Spells/Deathward.dds</Button>
 		</SpellInfo>
 		<SpellInfo>			<!-- Death 3  - Arawns Embrace -->
 			<Type>SPELL_ARAWNS_EMBRACE</Type>
@@ -124,7 +124,7 @@
 			<PyRequirement>reqArawnsEmbrace(pCaster)</PyRequirement>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_SPELL_DESTROY_UNDEAD</Sound>
-			<Button>Modules/NormalModules/ElfnDeath/Art/Interface/Buttons/Spells/ArawnsEmbrace.dds</Button>
+			<Button>Modules/Def/ElfnDeath/Art/Interface/Buttons/Spells/ArawnsEmbrace.dds</Button>
 		</SpellInfo>
 		<SpellInfo>			<!-- Summon Sluagh for Soul Binder -->
 			<Type>SPELL_SUMMON_SLUAGHSOULBINDER</Type>
@@ -157,11 +157,11 @@
 			<bPermanentUnitCreate>1</bPermanentUnitCreate>
 			<Effect>EFFECT_SPELL2</Effect>
 			<Sound>AS3D_SPELL_RAISE_SKELETON</Sound>
-			<Button>Modules/NormalModules/ElfnDeath/Art/Interface/Buttons/Spells/Sluagh.dds</Button>
+			<Button>Modules/Def/ElfnDeath/Art/Interface/Buttons/Spells/Sluagh.dds</Button>
 		</SpellInfo>
 		<SpellInfo>			<!-- Summon Sluagh -->
 			<Type>SPELL_SUMMON_SLUAGH</Type>
-			<Button>Modules/NormalModules/ElfnDeath/Art/Interface/Buttons/Spells/Sluagh.dds</Button>
+			<Button>Modules/Def/ElfnDeath/Art/Interface/Buttons/Spells/Sluagh.dds</Button>
 		</SpellInfo>
 		<SpellInfo>			<!-- Willing Vessel -->
             <Type>SPELL_WILLING_VESSEL</Type>

@@ -8,7 +8,7 @@
 	<UnitArtInfos> 	
 		<UnitArtInfo> <!-- Nepharakis -->
 			<Type>ART_DEF_UNIT_NEPHRAKIS</Type>
-			<Button>Modules/NormalModules/DrackNamko/Art/Units/Nephrakis.dds</Button>
+			<Button>Modules/Def/DrackNamko/Art/Units/Nephrakis.dds</Button>
 			<fScale>0.45</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -32,7 +32,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- Thanatoguard -->
 			<Type>ART_DEF_UNIT_THANATOGUARD</Type>
-			<Button>Modules/NormalModules/DrackNamko/Art/Units/Thanatoguard.dds</Button>
+			<Button>Modules/Def/DrackNamko/Art/Units/Thanatoguard.dds</Button>
 			<fScale>0.4</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -55,7 +55,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- Myrmiphage -->
 			<Type>ART_DEF_UNIT_MYRMIPHAGE</Type>
-			<Button>Modules/NormalModules/DrackNamko/Art/Units/Myrmiphage.dds</Button>
+			<Button>Modules/Def/DrackNamko/Art/Units/Myrmiphage.dds</Button>
 			<fScale>0.42</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -80,7 +80,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- Pyraspis -->
 			<Type>ART_DEF_UNIT_PYRASPIS</Type>
-			<Button>Modules/NormalModules/DrackNamko/Art/Units/Pyraspis.dds</Button>
+			<Button>Modules/Def/DrackNamko/Art/Units/Pyraspis.dds</Button>
 			<fScale>0.42</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -103,7 +103,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- Ichorian -->
 			<Type>ART_DEF_UNIT_ICHORIAN</Type>
-			<Button>Modules/NormalModules/DrackNamko/Art/Units/Ichorian.dds</Button>
+			<Button>Modules/Def/DrackNamko/Art/Units/Ichorian.dds</Button>
 			<fScale>0.42</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -127,7 +127,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- Amenthian -->
 			<Type>ART_DEF_UNIT_AMENTHIAN</Type>
-			<Button>Modules/NormalModules/DrackNamko/Art/Units/Amenthian.dds</Button>
+			<Button>Modules/Def/DrackNamko/Art/Units/Amenthian.dds</Button>
 			<fScale>0.42</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -152,7 +152,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- Anubila -->
 			<Type>ART_DEF_UNIT_ANUBILA</Type>
-			<Button>Modules/NormalModules/DrackNamko/Art/Units/Anubila.dds</Button>
+			<Button>Modules/Def/DrackNamko/Art/Units/Anubila.dds</Button>
 			<fScale>0.42</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -177,7 +177,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- Warrior -->
 			<Type>ART_DEF_UNIT_NAMKO_WARRIOR</Type>
-			<Button>Modules/NormalModules/DrackNamko/Art/Units/NamkoWarrior.dds</Button>
+			<Button>Modules/Def/DrackNamko/Art/Units/NamkoWarrior.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -202,7 +202,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- Archanten -->
 			<Type>ART_DEF_UNIT_ARCHANTEN</Type>
-			<Button>Modules/NormalModules/DrackNamko/Art/Units/Archanten.dds</Button>
+			<Button>Modules/Def/DrackNamko/Art/Units/Archanten.dds</Button>
 			<fScale>0.45</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -226,7 +226,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- Hoplian -->
 			<Type>ART_DEF_UNIT_NAMKO_HOPLIAN</Type>
-			<Button>Modules/NormalModules/DrackNamko/Art/Units/Hoplian.dds</Button>
+			<Button>Modules/Def/DrackNamko/Art/Units/Hoplian.dds</Button>
 			<fScale>0.4</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>

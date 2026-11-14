@@ -17,7 +17,7 @@
 			<ArtDefineTag>ART_DEF_CIVILIZATION_AOSNISIRA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_SVARTALFAR</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_FAIRIES</UnitArtStyleType>
-			<Image>Modules\NormalModules\DrackAosNiSira\Art\Other/AosNiSiraBanner.dds</Image>
+			<Image>Modules\Def\DrackAosNiSira\Art\Other/AosNiSiraBanner.dds</Image>
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
@@ -535,7 +535,7 @@
 			<ArtDefineTag>ART_DEF_CIVILIZATION_COURTOFFALYN</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_SVARTALFAR</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_FAIRIES</UnitArtStyleType>
-			<Image>Modules\NormalModules\DrackAosNiSira\Art\Other/CourtOfFalynBanner.dds</Image>
+			<Image>Modules\Def\DrackAosNiSira\Art\Other/CourtOfFalynBanner.dds</Image>
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
@@ -807,7 +807,7 @@
 			<ArtDefineTag>ART_DEF_CIVILIZATION_COURTOFBEY</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_MALAKIM</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_FAIRIES</UnitArtStyleType>
-			<Image>Modules\NormalModules\DrackAosNiSira\Art\Other/CourtOfBeyBanner.dds</Image>
+			<Image>Modules\Def\DrackAosNiSira\Art\Other/CourtOfBeyBanner.dds</Image>
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
@@ -1178,7 +1178,7 @@
 			<ArtDefineTag>ART_DEF_CIVILIZATION_COURTOFMISRAK</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_ELOHIM</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_FAIRIES</UnitArtStyleType>
-			<Image>Modules\NormalModules\DrackAosNiSira\Art\Other/CourtOfMisrakBanner.dds</Image>
+			<Image>Modules\Def\DrackAosNiSira\Art\Other/CourtOfMisrakBanner.dds</Image>
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>

@@ -765,7 +765,7 @@
 					</ImprovementYields>
 				</ImprovementYieldChange>
 			</ImprovementYieldChanges>
-			<Image>Modules/NormalModules/kcz_Woods/Art/Interface/Popups/Civ/EertBanner.dds</Image>
+			<Image>Modules/Def/kcz_Woods/Art/Interface/Popups/Civ/EertBanner.dds</Image>
 		</CivilizationInfo>
 	</CivilizationInfos>
 </Civ4CivilizationInfos>

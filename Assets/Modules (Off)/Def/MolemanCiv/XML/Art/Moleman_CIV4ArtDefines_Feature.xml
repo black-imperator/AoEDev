@@ -18,7 +18,7 @@
 			<FeatureVariety>
 				<FeatureArtPieces>
 					<FeatureArtPiece>
-						<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Features/Molerun/molerun.nif</ModelFile>
+						<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Features/Molerun/molerun.nif</ModelFile>
 						<Connections></Connections>
 					</FeatureArtPiece>
 				</FeatureArtPieces>

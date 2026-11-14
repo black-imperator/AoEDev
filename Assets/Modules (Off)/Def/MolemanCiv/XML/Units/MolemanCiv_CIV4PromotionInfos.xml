@@ -10,7 +10,7 @@
 			<!-- Race Trait -->
 			<Type>PROMOTION_MOLEMAN</Type>
 			<Description>TXT_KEY_PROMOTION_MOLEMAN</Description>
-			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/Races/molekin.dds</Button>
+			<Button>Modules/Def/MolemanCiv/Art/Interface/Buttons/Races/molekin.dds</Button>
 			<bRace>1</bRace>
 			<UnitArtStyleType>UNIT_ARTSTYLE_MOLEMAN</UnitArtStyleType>
 			<DamageTypeResists>
@@ -46,7 +46,7 @@
 			<!--let's Molemen "tunnel" by teleporting-->
 			<Type>PROMOTION_MOLEMAN_BURROWER_1</Type>
 			<Description>TXT_KEY_PROMOTION_MOLEMAN_BURROWER_1</Description>
-			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/tunneler1.dds</Button>
+			<Button>Modules/Def/MolemanCiv/Art/Interface/Buttons/tunneler1.dds</Button>
 			<iExtraDropRange>2</iExtraDropRange>
 			<PrereqPromotionANDs>
 				<PrereqPromotionAND>
@@ -110,7 +110,7 @@
 		<PromotionInfo>
 			<Type>PROMOTION_MOLEMAN_BURROWER_2</Type>
 			<Description>TXT_KEY_PROMOTION_MOLEMAN_BURROWER_2</Description>
-			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/tunneler2.dds</Button>
+			<Button>Modules/Def/MolemanCiv/Art/Interface/Buttons/tunneler2.dds</Button>
 			<iExtraDropRange>3</iExtraDropRange>
 			<PrereqPromotionANDs>
 				<PrereqPromotionAND>
@@ -174,7 +174,7 @@
 		<PromotionInfo>
 			<Type>PROMOTION_MOLEMAN_BURROWER_3</Type>
 			<Description>TXT_KEY_PROMOTION_MOLEMAN_BURROWER_3</Description>
-			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/tunneler3.dds</Button>
+			<Button>Modules/Def/MolemanCiv/Art/Interface/Buttons/tunneler3.dds</Button>
 			<iExtraDropRange>4</iExtraDropRange>
 			<PrereqPromotionANDs>
 				<PrereqPromotionAND>
@@ -239,7 +239,7 @@
 			<Type>PROMOTION_MOLEMAN_STONECLAW_AFFINITY</Type>
 			<Description>TXT_KEY_PROMOTION_MOLEMAN_STONECLAW_AFFINITY</Description>
 			<Help>TXT_KEY_PROMOTION_MOLEMAN_STONECLAW_AFFINITY_HELP</Help>
-			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/Races/molekin.dds</Button>
+			<Button>Modules/Def/MolemanCiv/Art/Interface/Buttons/Races/molekin.dds</Button>
 			<Affinities>
 				<Affinity>AFFINITY_STONE</Affinity>
 				<Affinity>AFFINITY_GEM</Affinity>
@@ -250,7 +250,7 @@
 			<Type>PROMOTION_MOLEMAN_VARMIT</Type>
 			<Description>TXT_KEY_PROMOTION_MOLEMAN_VARMIT</Description>
 			<Help>TXT_KEY_PROMOTION_MOLEMAN_PILLAGE_HEAL_HELP</Help>
-			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/varmit.dds</Button>
+			<Button>Modules/Def/MolemanCiv/Art/Interface/Buttons/varmit.dds</Button>
 			<iMinLevel>5</iMinLevel>
 			<iAIWeight>10</iAIWeight>
 			<UnitCombats>
@@ -310,7 +310,7 @@
 			<!--Temporary teleport gained from going on the surface tunnel improvement-->
 			<Type>PROMOTION_MOLEMAN_TUNNEL_SUPPORT</Type>
 			<Description>TXT_KEY_PROMOTION_MOLEMAN_TUNNEL_SUPPORT</Description>
-			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/tunnelaccess.dds</Button>
+			<Button>Modules/Def/MolemanCiv/Art/Interface/Buttons/tunnelaccess.dds</Button>
 			<iExtraDropRange>3</iExtraDropRange>
 			<bMustMaintain>1</bMustMaintain>
 			<bAutoAcquire>1</bAutoAcquire>
@@ -379,7 +379,7 @@
 			<!--Temporary teleport gained from going on the surface tunnel improvement (for settlers)-->
 			<Type>PROMOTION_MOLEMAN_TUNNEL_SUPPORT_SETTLER</Type>
 			<Description>TXT_KEY_PROMOTION_MOLEMAN_TUNNEL_SUPPORT</Description>
-			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/tunnelaccess.dds</Button>
+			<Button>Modules/Def/MolemanCiv/Art/Interface/Buttons/tunnelaccess.dds</Button>
 			<iExtraDropRange>3</iExtraDropRange>
 			<bMustMaintain>1</bMustMaintain>
 			<bAutoAcquire>1</bAutoAcquire>
@@ -401,7 +401,7 @@
 			<!--Temporary malus gained from going on the molerun effect-->
 			<Type>PROMOTION_MOLEMAN_SINKHOLE_MALUS</Type>
 			<Description>TXT_KEY_PROMOTION_MOLEMAN_SINKHOLE_MALUS</Description>
-			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/Buildings/sinkhole.dds</Button>
+			<Button>Modules/Def/MolemanCiv/Art/Interface/Buttons/Buildings/sinkhole.dds</Button>
 			<bMustMaintain>1</bMustMaintain>
 			<bAutoAcquire>1</bAutoAcquire>
 			<PrereqInBorderRival>1</PrereqInBorderRival>
@@ -475,7 +475,7 @@
 			<!--Temporary STEALTH gained from going on the molerun effect-->
 			<Type>PROMOTION_MOLEMAN_MOLERUN_STEALTH_EFFECT</Type>
 			<Description>TXT_KEY_PROMOTION_MOLEMAN_MOLERUN_STEALTH_EFFECT</Description>
-			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/earthsneak.dds</Button>
+			<Button>Modules/Def/MolemanCiv/Art/Interface/Buttons/earthsneak.dds</Button>
 			<bMustMaintain>1</bMustMaintain>
 			<bAutoAcquire>1</bAutoAcquire>
 			<bNoXP>1</bNoXP>
@@ -545,7 +545,7 @@
 			<Type>PROMOTION_MOLEMAN_MOLERUN_PERCEPTION</Type>
 			<Description>TXT_KEY_PROMOTION_MOLEMAN_MOLERUN_PERCEPTION</Description>
 			<Help>TXT_KEY_PROMOTION_MOLEMAN_MOLERUN_PERCEPTION_HELP</Help>
-			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/earthsense.dds</Button>
+			<Button>Modules/Def/MolemanCiv/Art/Interface/Buttons/earthsense.dds</Button>
 			<iMinLevel>3</iMinLevel>
 			<iAIWeight>25</iAIWeight>
 			<UnitCombats>
@@ -612,7 +612,7 @@
 			<!--Temporary STEALTH gained from going on the molerun effect-->
 			<Type>PROMOTION_MOLEMAN_MOLERUN_PERCEPTION_EFFECT</Type>
 			<Description>TXT_KEY_PROMOTION_MOLEMAN_MOLERUN_PERCEPTION</Description>
-			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/earthsense.dds</Button>
+			<Button>Modules/Def/MolemanCiv/Art/Interface/Buttons/earthsense.dds</Button>
 			<bMustMaintain>1</bMustMaintain>
 			<bAutoAcquire>1</bAutoAcquire>
 			<bNoXP>1</bNoXP>
@@ -682,7 +682,7 @@
 			<Type>PROMOTION_MOLEMAN_MOLERUN_STEALTH</Type>
 			<Description>TXT_KEY_PROMOTION_MOLEMAN_MOLERUN_STEALTH</Description>
 			<Help>TXT_KEY_PROMOTION_MOLEMAN_MOLERUN_STEALTH_HELP</Help>
-			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/earthsneak.dds</Button>
+			<Button>Modules/Def/MolemanCiv/Art/Interface/Buttons/earthsneak.dds</Button>
 			<iMinLevel>3</iMinLevel>
 			<iAIWeight>25</iAIWeight>
 			<UnitCombats>
@@ -749,7 +749,7 @@
 			<!--Temporary DEFENSE gained from going on the molerun effect-->
 			<Type>PROMOTION_MOLEMAN_MOLERUN_DEFENSE_EFFECT</Type>
 			<Description>TXT_KEY_PROMOTION_MOLEMAN_MOLERUN_DEFENSE_EFFECT</Description>
-			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/flightyburrower.dds</Button>
+			<Button>Modules/Def/MolemanCiv/Art/Interface/Buttons/flightyburrower.dds</Button>
 			<bMustMaintain>1</bMustMaintain>
 			<bAutoAcquire>1</bAutoAcquire>
 			<bNoXP>1</bNoXP>
@@ -819,7 +819,7 @@
 			<Type>PROMOTION_MOLEMAN_MOLERUN_DEFENSE</Type>
 			<Description>TXT_KEY_PROMOTION_MOLEMAN_MOLERUN_DEFENSE</Description>
 			<Help>TXT_KEY_PROMOTION_MOLEMAN_MOLERUN_DEFENSE_HELP</Help>
-			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/flightyburrower.dds</Button>
+			<Button>Modules/Def/MolemanCiv/Art/Interface/Buttons/flightyburrower.dds</Button>
 			<iMinLevel>3</iMinLevel>
 			<iAIWeight>40</iAIWeight>
 			<UnitCombats>
@@ -886,7 +886,7 @@
 			<!--Temporary DEFENSE gained from going on the molerun effect-->
 			<Type>PROMOTION_MOLEMAN_MOLERUN_ATTACK_EFFECT</Type>
 			<Description>TXT_KEY_PROMOTION_MOLEMAN_MOLERUN_ATTACK_EFFECT</Description>
-			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/tunnelambush.dds</Button>
+			<Button>Modules/Def/MolemanCiv/Art/Interface/Buttons/tunnelambush.dds</Button>
 			<bMustMaintain>1</bMustMaintain>
 			<bAutoAcquire>1</bAutoAcquire>
 			<iFirstStrikesChange>2</iFirstStrikesChange>
@@ -956,7 +956,7 @@
 			<Type>PROMOTION_MOLEMAN_MOLERUN_ATTACK</Type>
 			<Description>TXT_KEY_PROMOTION_MOLEMAN_MOLERUN_ATTACK</Description>
 			<Help>TXT_KEY_PROMOTION_MOLEMAN_MOLERUN_ATTACK_HELP</Help>
-			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/tunnelambush.dds</Button>
+			<Button>Modules/Def/MolemanCiv/Art/Interface/Buttons/tunnelambush.dds</Button>
 			<iMinLevel>3</iMinLevel>
 			<iAIWeight>40</iAIWeight>
 			<UnitCombats>
@@ -1023,7 +1023,7 @@
 			<!--Gives moleman ability to gain first strikes on molerun-->
 			<Type>PROMOTION_MOLEMAN_EARTHSWIMMER</Type>
 			<Description>TXT_KEY_PROMOTION_MOLEMAN_EARTHSWIMMER</Description>
-			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/earthswimmer.dds</Button>
+			<Button>Modules/Def/MolemanCiv/Art/Interface/Buttons/earthswimmer.dds</Button>
 			<iMinLevel>7</iMinLevel>
 			<iAIWeight>100</iAIWeight>
 			<bClimbPeaks>1</bClimbPeaks>

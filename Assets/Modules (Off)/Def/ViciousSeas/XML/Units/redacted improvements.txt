@@ -75,7 +75,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Units/AifonNightmareButton.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Units/AifonNightmareButton.dds</Button>
 			<bHiddenNationality>1</bHiddenNationality>
 		</PromotionInfo> -->
 		<!-- <PromotionInfo> -->		<!-- Nightmare Saverous --> 
@@ -153,7 +153,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Units/AifonNightmareButton.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Units/AifonNightmareButton.dds</Button>
 			<bHiddenNationality>1</bHiddenNationality>
 		</PromotionInfo>	-->
 		<!-- <PromotionInfo>	-->	<!-- Nightmare Hateful Glare --> 
@@ -234,7 +234,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Units/AifonNightmareButton.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Units/AifonNightmareButton.dds</Button>
 			<bHiddenNationality>1</bHiddenNationality>
 		</PromotionInfo> -->
 		<!-- <PromotionInfo>	-->	<!-- Nightmare Undine --> 
@@ -316,7 +316,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Units/AifonNightmareButton.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Units/AifonNightmareButton.dds</Button>
 			<bHiddenNationality>1</bHiddenNationality>
 		</PromotionInfo> -->
 	<!-- 	<PromotionInfo>	-->	<!-- Nightmare Empty --> 
@@ -394,7 +394,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Units/AifonNightmareButton.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Units/AifonNightmareButton.dds</Button>
 			<bHiddenNationality>1</bHiddenNationality>
 		</PromotionInfo> -->	
 	<!--	<PromotionInfo>	-->	<!-- Wretched2 -->

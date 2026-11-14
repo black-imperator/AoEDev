@@ -67,7 +67,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
-			<Button>Modules/NormalModules/ElfnDeath/Art/Interface/Buttons/Promotions/FatedEnd.dds</Button>
+			<Button>Modules/Def/ElfnDeath/Art/Interface/Buttons/Promotions/FatedEnd.dds</Button>
 			<iMinLevel>-1</iMinLevel>
 			<iExpireChance>100</iExpireChance>
 			<iWithdrawalChange>-100</iWithdrawalChange>
@@ -105,7 +105,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
-			<Button>Modules/NormalModules/ElfnDeath/Art/Interface/Buttons/Promotions/LastRite.dds</Button>
+			<Button>Modules/Def/ElfnDeath/Art/Interface/Buttons/Promotions/LastRite.dds</Button>
 			<PromotionCombatMods>
 				<PromotionCombatMod>
 					<PromotionType>PROMOTION_UNDEAD</PromotionType>
@@ -167,7 +167,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
-			<Button>Modules/NormalModules/ElfnDeath/Art/Interface/Buttons/Promotions/Deathward.dds</Button>
+			<Button>Modules/Def/ElfnDeath/Art/Interface/Buttons/Promotions/Deathward.dds</Button>
 			<iMinLevel>-1</iMinLevel>
 			<DamageTypeResists>
 				<DamageTypeResist>
@@ -250,7 +250,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
-			<Button>Modules/NormalModules/ElfnDeath/Art/Interface/Buttons/Promotions/DeathI.dds</Button>
+			<Button>Modules/Def/ElfnDeath/Art/Interface/Buttons/Promotions/DeathI.dds</Button>
 			<iAIWeight>50</iAIWeight>
 			<PrereqBonusANDs>
 				<PrereqBonus>BONUS_MANA_DEATH</PrereqBonus>
@@ -325,7 +325,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
-			<Button>Modules/NormalModules/ElfnDeath/Art/Interface/Buttons/Promotions/DeathII.dds</Button>
+			<Button>Modules/Def/ElfnDeath/Art/Interface/Buttons/Promotions/DeathII.dds</Button>
 			<iAIWeight>100</iAIWeight>
 			<PromotionNextLevel>PROMOTION_FINALITY3</PromotionNextLevel>
 		</PromotionInfo>
@@ -397,7 +397,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
-			<Button>Modules/NormalModules/ElfnDeath/Art/Interface/Buttons/Promotions/DeathIII.dds</Button>
+			<Button>Modules/Def/ElfnDeath/Art/Interface/Buttons/Promotions/DeathIII.dds</Button>
 			<iAIWeight>150</iAIWeight>
 		</PromotionInfo>
 						<PromotionInfo>			                  <!-- "Undeath" I -->
@@ -470,7 +470,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
-			<Button>Modules/NormalModules/ElfnDeath/Art/Interface/Buttons/Promotions/GhostlyMounts.dds</Button>
+			<Button>Modules/Def/ElfnDeath/Art/Interface/Buttons/Promotions/GhostlyMounts.dds</Button>
 			<iWithdrawalChange>20</iWithdrawalChange>
 			<iMinLevel>-1</iMinLevel>
 			<DamageTypeCombats>
@@ -558,7 +558,7 @@
 			<Affinity>AFFINITY_NECROMANCER</Affinity>
 			<Affinity>AFFINITY_SHADOW_RIVANNA</Affinity>
 			</Affinities>
-			<Button>Modules/NormalModules/ElfnDeath/Art/Interface/Buttons/Promotions/CorruptedElemental.dds</Button>
+			<Button>Modules/Def/ElfnDeath/Art/Interface/Buttons/Promotions/CorruptedElemental.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Bind a Sluagh-->
 			<Type>PROMOTION_SOULBINDER</Type>
@@ -566,7 +566,7 @@
 			<CaptureUnitClass>UNITCLASS_SLUAGH</CaptureUnitClass>
 			<bPrereqAliveCapture>1</bPrereqAliveCapture>
 			<iSlaveGenerationChance>33</iSlaveGenerationChance>
-			<Button>Modules/NormalModules/ElfnDeath/Art/Interface/Buttons/Promotions/SoulBinder.dds</Button>
+			<Button>Modules/Def/ElfnDeath/Art/Interface/Buttons/Promotions/SoulBinder.dds</Button>
 			<iMinLevel>-1</iMinLevel>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Greater Soul Binder-->
@@ -578,7 +578,7 @@
 			<CaptureUnitClass>UNITCLASS_SLUAGH</CaptureUnitClass>
 			<bPrereqAliveCapture>1</bPrereqAliveCapture>
 			<iSlaveGenerationChance>66</iSlaveGenerationChance>
-			<Button>Modules/NormalModules/ElfnDeath/Art/Interface/Buttons/Promotions/SoulBinder.dds</Button>
+			<Button>Modules/Def/ElfnDeath/Art/Interface/Buttons/Promotions/SoulBinder.dds</Button>
 		</PromotionInfo>
 		</PromotionInfos>
 		</Civ4PromotionInfos>

@@ -21,7 +21,7 @@
 			<PyResult>__import__('NamkoCvSpells').spellHolyMarch(pCaster)</PyResult>
             <Effect>EFFECT_SPELL1</Effect>
             <Sound>AS3D_SPELL_INSPIRATION</Sound>
-            <Button>Modules\NormalModules\DrackNamko\Art\Spells\HolyMarch.dds</Button>
+            <Button>Modules\Def\DrackNamko\Art\Spells\HolyMarch.dds</Button>
         </SpellInfo>
         <SpellInfo>			<!-- Grant Eternal Faith -->
 			<Type>SPELL_NAMKO_GRANT_ETERNAL_FAITH</Type>
@@ -38,7 +38,7 @@
 			<PyRequirement>__import__('NamkoCvSpells').reqGrantEternalFaith(pCaster)</PyRequirement>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_GIFT</Sound>
-			<Button>Modules\NormalModules\DrackNamko\Art\Spells\GrantEternalFaith.dds</Button>
+			<Button>Modules\Def\DrackNamko\Art\Spells\GrantEternalFaith.dds</Button>
 		</SpellInfo>
 	</SpellInfos>
 </Civ4SpellInfos>

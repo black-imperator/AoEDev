@@ -163,7 +163,7 @@ def spellProprietorCultureBomb(caster):
 	pCity.changeCrime(-iCrime)
 
 	szBuffer = CyTranslator().getText("TXT_KEY_MESSAGE_PROPRIETOR_FORGERY", (iCrime, ))
-	CyInterface().addMessage(caster.getOwner(),True,25,szBuffer,'',1,'Modules/NormalModules/XtraEsusUnits/Art/Interface/Buttons/Spells/proprietor1.dds',ColorTypes(8),pCity.getX(),pCity.getY(),True,True)
+	CyInterface().addMessage(caster.getOwner(),True,25,szBuffer,'',1,'Modules/Def/XtraEsusUnits/Art/Interface/Buttons/Spells/proprietor1.dds',ColorTypes(8),pCity.getX(),pCity.getY(),True,True)
 
 def spellDeathMerchantTradeMission(caster):
 	pCity = caster.plot().getPlotCity()
@@ -174,7 +174,7 @@ def spellDeathMerchantTradeMission(caster):
 	pPlayer.changeGold(iCrime)
 	pCity.changeCrime(-iCrime)
 	szBuffer = CyTranslator().getText("TXT_KEY_MESSAGE_DEATH_MERCHANT_TRADE", (iCrime, ))
-	CyInterface().addMessage(caster.getOwner(),True,25,szBuffer,'',1,'Modules/NormalModules/XtraEsusUnits/Art/Interface/Buttons/Spells/deathmerchant3.dds',ColorTypes(8),pCity.getX(),pCity.getY(),True,True)
+	CyInterface().addMessage(caster.getOwner(),True,25,szBuffer,'',1,'Modules/Def/XtraEsusUnits/Art/Interface/Buttons/Spells/deathmerchant3.dds',ColorTypes(8),pCity.getX(),pCity.getY(),True,True)
 
 def crimeLordStrength(caster):
 	pCity = caster.plot().getWorkingCity()

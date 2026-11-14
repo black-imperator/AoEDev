@@ -32,7 +32,7 @@
 			<bImmuneNotAlive>1</bImmuneNotAlive>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_SPELL_CHARM_PERSON</Sound>
-			<Button>Modules\NormalModules\DrackVampirism\Art\Spells\CharmSmile.dds</Button>
+			<Button>Modules\Def\DrackVampirism\Art\Spells\CharmSmile.dds</Button>
 		</SpellInfo>
 	</SpellInfos>
 </Civ4SpellInfos>

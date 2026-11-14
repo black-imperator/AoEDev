@@ -14,7 +14,7 @@
 			<fInterfaceScale>0.43</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Palace/Palace.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/kcz_buildingPack/Art/Interface/Buttons/Buildings/residence.dds</Button>
+			<Button>Modules/Def/kcz_buildingPack/Art/Interface/Buttons/Buildings/residence.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_SHRINE_OF_THE_KING</Type>
@@ -24,7 +24,7 @@
 			<fInterfaceScale>0.52</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/kcz_buildingPack/Art/Interface/Buttons/Buildings/shrineoftheking.dds</Button>
+			<Button>Modules/Def/kcz_buildingPack/Art/Interface/Buttons/Buildings/shrineoftheking.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_WATCHTOWER</Type>
@@ -44,7 +44,7 @@
 			<fInterfaceScale>0.8</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Gallows/galgen.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/kcz_buildingPack/Art/Interface/Buttons/Buildings/pillory.dds</Button>
+			<Button>Modules/Def/kcz_buildingPack/Art/Interface/Buttons/Buildings/pillory.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_CISTERN</Type>
@@ -54,7 +54,7 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Sewer/sewer.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/kcz_buildingPack/Art/Interface/Buttons/Buildings/Cistern.dds</Button>
+			<Button>Modules/Def/kcz_buildingPack/Art/Interface/Buttons/Buildings/Cistern.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_OBSERVATORY</Type>
@@ -74,7 +74,7 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Trainingyard/Trainingyard.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/kcz_buildingPack/Art/Interface/Buttons/Buildings/thegreatarmory.dds</Button>
+			<Button>Modules/Def/kcz_buildingPack/Art/Interface/Buttons/Buildings/thegreatarmory.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_CATHEDRAL</Type>
@@ -84,7 +84,7 @@
 			<fInterfaceScale>0.6</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Temple of the Order/humantemple.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/kcz_buildingPack/Art/Interface/Buttons/Buildings/cathedral.dds</Button>
+			<Button>Modules/Def/kcz_buildingPack/Art/Interface/Buttons/Buildings/cathedral.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_AGORA</Type>
@@ -94,7 +94,7 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Mage Guild/cathedral.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/kcz_buildingPack/Art/Interface/Buttons/Buildings/agora.dds</Button>
+			<Button>Modules/Def/kcz_buildingPack/Art/Interface/Buttons/Buildings/agora.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_SENATE</Type>
@@ -104,7 +104,7 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Mage Guild/cathedral.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/kcz_buildingPack/Art/Interface/Buttons/Buildings/senate.dds</Button>
+			<Button>Modules/Def/kcz_buildingPack/Art/Interface/Buttons/Buildings/senate.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_GUARD_OUTPOST</Type>
@@ -114,7 +114,7 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Mage Guild/cathedral.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/kcz_buildingPack/Art/Interface/Buttons/Buildings/guardoutpost.dds</Button>
+			<Button>Modules/Def/kcz_buildingPack/Art/Interface/Buttons/Buildings/guardoutpost.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_MINT</Type>
@@ -124,7 +124,7 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Mage Guild/cathedral.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/kcz_buildingPack/Art/Interface/Buttons/Buildings/mint.dds</Button>
+			<Button>Modules/Def/kcz_buildingPack/Art/Interface/Buttons/Buildings/mint.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_CUSTOM_HOUSE</Type>
@@ -134,7 +134,7 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Mage Guild/cathedral.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/kcz_buildingPack/Art/Interface/Buttons/Buildings/customhouse.dds</Button>
+			<Button>Modules/Def/kcz_buildingPack/Art/Interface/Buttons/Buildings/customhouse.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_PANTHEON</Type>
@@ -144,7 +144,7 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Mage Guild/cathedral.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/kcz_buildingPack/Art/Interface/Buttons/Buildings/pantheon.dds</Button>
+			<Button>Modules/Def/kcz_buildingPack/Art/Interface/Buttons/Buildings/pantheon.dds</Button>
 		</BuildingArtInfo>
 	</BuildingArtInfos>
 </Civ4ArtDefines>

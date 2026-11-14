@@ -8,8 +8,8 @@
 	<CivilizationArtInfos>
 		<CivilizationArtInfo>
 			<Type>ART_DEF_CIVILIZATION_DRACKA_EADIG_KITH</Type> <!-- TODO -->
-			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Flag\KithFlag.dds</Button>
-			<Path>Modules\NormalModules\DrackAdditionalCivs\Art\Flag\KithFlagTransparent.dds</Path>
+			<Button>Modules\Def\DrackAdditionalCivs\Art\Flag\KithFlag.dds</Button>
+			<Path>Modules\Def\DrackAdditionalCivs\Art\Flag\KithFlagTransparent.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
 	</CivilizationArtInfos>

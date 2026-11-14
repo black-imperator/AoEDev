@@ -8,16 +8,16 @@
 	<LeaderheadArtInfos>
 		<LeaderheadArtInfo> 	<!--Treant-->
 			<Type>ART_DEF_LEADER_TREANT</Type>
-			<Button>,Modules/NormalModules/kcz_Woods/Art/interface/LeaderHeads/treantbutton.dds</Button>
-			<NIF>Modules/NormalModules/kcz_Woods/Art/interface/LeaderHeads/treantleader.dds</NIF>
+			<Button>,Modules/Def/kcz_Woods/Art/interface/LeaderHeads/treantbutton.dds</Button>
+			<NIF>Modules/Def/kcz_Woods/Art/interface/LeaderHeads/treantleader.dds</NIF>
 			<KFM/>
 			<NoShaderNIF/>
 			<BackgroundKFM/>
 		</LeaderheadArtInfo>
 		<LeaderheadArtInfo> 	<!--Treant-->
 			<Type>ART_DEF_LEADER_DRYAD</Type>
-			<Button>,Modules/NormalModules/kcz_Woods/Art/interface/LeaderHeads/dryadleaderbutton.dds</Button>
-			<NIF>Modules/NormalModules/kcz_Woods/Art/interface/LeaderHeads/dryadleader.dds</NIF>
+			<Button>,Modules/Def/kcz_Woods/Art/interface/LeaderHeads/dryadleaderbutton.dds</Button>
+			<NIF>Modules/Def/kcz_Woods/Art/interface/LeaderHeads/dryadleader.dds</NIF>
 			<KFM/>
 			<NoShaderNIF/>
 			<BackgroundKFM/>

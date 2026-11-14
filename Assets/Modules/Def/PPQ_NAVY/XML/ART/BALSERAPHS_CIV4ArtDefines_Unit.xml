@@ -390,7 +390,7 @@
 		
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_GALLEAS_BALSERAPHS</Type>
-			<Button>Modules/NormalModules/PPQ_NAVY/Art/Interface/Icons/Units/Galleas.dds</Button>
+			<Button>Modules/Def/PPQ_NAVY/Art/Interface/Icons/Units/Galleas.dds</Button>
 			<fScale>0.18</fScale>
 			<fInterfaceScale>0.6</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>

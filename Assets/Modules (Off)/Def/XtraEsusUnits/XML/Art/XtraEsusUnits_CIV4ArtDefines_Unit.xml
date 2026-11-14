@@ -8,12 +8,12 @@
 	<UnitArtInfos>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_ESUS_DEATH_MERCHANT</Type>
-			<Button>Modules/NormalModules/XtraEsusUnits/Art/Interface/Buttons/Units/icon_esus_deathmerchant.dds</Button>
+			<Button>Modules/Def/XtraEsusUnits/Art/Interface/Buttons/Units/icon_esus_deathmerchant.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/NormalModules/XtraEsusUnits/Art/Units/Esus_DeathMerchant/deathmerchant.nif</NIF>
+			<NIF>Modules/Def/XtraEsusUnits/Art/Units/Esus_DeathMerchant/deathmerchant.nif</NIF>
 			<KFM>Art/Units/Unique/Japan/Samurai/JapaneseSamurai.kfm</KFM>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
@@ -31,12 +31,12 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_ESUS_PROPRIETOR</Type>
-			<Button>Modules/NormalModules/XtraEsusUnits/Art/Interface/Buttons/Units/icon_esus_proprietor.dds</Button>
+			<Button>Modules/Def/XtraEsusUnits/Art/Interface/Buttons/Units/icon_esus_proprietor.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/NormalModules/XtraEsusUnits/Art/Units/Esus_Proprietor/proprietor_fx.nif</NIF>
+			<NIF>Modules/Def/XtraEsusUnits/Art/Units/Esus_Proprietor/proprietor_fx.nif</NIF>
 			<KFM>Art/Units/Charlemagne_LightSpearman/LightSpearman.kfm</KFM>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
@@ -54,12 +54,12 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_ESUS_ENFORCER</Type>
-			<Button>Modules/NormalModules/XtraEsusUnits/Art/Interface/Buttons/Units/icon_esus_enforcer.dds</Button>
+			<Button>Modules/Def/XtraEsusUnits/Art/Interface/Buttons/Units/icon_esus_enforcer.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/NormalModules/XtraEsusUnits/Art/Units/Esus_Enforcer/warrior.nif</NIF>
+			<NIF>Modules/Def/XtraEsusUnits/Art/Units/Esus_Enforcer/warrior.nif</NIF>
 			<KFM>Art/Units/warrior/warrior.kfm</KFM>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
@@ -77,12 +77,12 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_ESUS_WHISPER</Type>
-			<Button>Modules/NormalModules/XtraEsusUnits/Art/Interface/Buttons/Units/icon_esus_whisper.dds</Button>
+			<Button>Modules/Def/XtraEsusUnits/Art/Interface/Buttons/Units/icon_esus_whisper.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/NormalModules/XtraEsusUnits/Art/Units/Esus_Whisper/LightSwordsman.nif</NIF>
+			<NIF>Modules/Def/XtraEsusUnits/Art/Units/Esus_Whisper/LightSwordsman.nif</NIF>
 			<KFM>Art/Units/Charlemagne_LightSwordsman/LightSwordsman.kfm</KFM>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>

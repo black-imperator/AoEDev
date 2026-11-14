@@ -14,7 +14,7 @@
 			<Help>TXT_KEY_PROJECT_SUMMON_LOCAL_HERO_HELP</Help>
 			<TechPrereq>TECH_MYSTICISM</TechPrereq>
 			<iCost>100</iCost>
-			<Button>Modules\NormalModules\DrackLocalHero\Art\LocalHero.dds</Button>
+			<Button>Modules\Def\DrackLocalHero\Art\LocalHero.dds</Button>
 			<iAIWeight>1000</iAIWeight>
 		</ProjectInfo>
 	</ProjectInfos>

@@ -8,8 +8,8 @@
 	<LeaderheadArtInfos>
 		<LeaderheadArtInfo> 	<!--Waldrun-->
 			<Type>ART_DEF_LEADER_WALDRUN</Type>
-			<Button>Modules/NormalModules/ElfnDeath/Art/Interface/LeaderHeads/veronica_anrathi_annec_B.dds</Button>
-			<NIF>Modules/NormalModules/ElfnDeath/Art/Interface/LeaderHeads/veronica_anrathi_annec.dds</NIF>
+			<Button>Modules/Def/ElfnDeath/Art/Interface/LeaderHeads/veronica_anrathi_annec_B.dds</Button>
+			<NIF>Modules/Def/ElfnDeath/Art/Interface/LeaderHeads/veronica_anrathi_annec.dds</NIF>
 			<KFM/>
 			<NoShaderNIF/>
 			<BackgroundKFM/>

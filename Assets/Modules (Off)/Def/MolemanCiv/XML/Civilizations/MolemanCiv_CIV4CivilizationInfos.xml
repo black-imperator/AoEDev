@@ -215,7 +215,7 @@
 			<Hero>UNIT_MOLEMAN_MONDRINTH</Hero>
 			<MaintainFeatures>
 			</MaintainFeatures>
-			<Image>Modules/NormalModules/MolemanCiv/Art/Interface/Popups/Civ/MolemanCivBanner.dds</Image>
+			<Image>Modules/Def/MolemanCiv/Art/Interface/Popups/Civ/MolemanCivBanner.dds</Image>
 			<!--<TerrainYieldChanges>
 				<TerrainYieldChange>
 					<TerrainType>TERRAIN_HILL</TerrainType>

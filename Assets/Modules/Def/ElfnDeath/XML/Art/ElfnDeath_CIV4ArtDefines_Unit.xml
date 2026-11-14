@@ -5,7 +5,7 @@
 
 		<UnitArtInfo> <!-- UNIT_KNIGHT in UNIT_ARTSTYLE_ONCE_ELF -->
 			<Type>ART_DEF_UNIT_KNIGHT_ONCE_ELVES</Type>
-			<Button>Modules/NormalModules/ElfnDeath/Art/Interface/Buttons/Units/Ostuariiknight.dds</Button>
+			<Button>Modules/Def/ElfnDeath/Art/Interface/Buttons/Units/Ostuariiknight.dds</Button>
 			<fScale>0.4</fScale>
 			<fInterfaceScale>0.9</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -28,7 +28,7 @@
 		</UnitArtInfo>
 				<UnitArtInfo> <!-- UNIT_HORSEMAN in UNIT_ARTSTYLE_ONCE_ELF -->
 			<Type>ART_DEF_UNIT_HORSEMAN_ONCE_ELVES</Type>
-			<Button>Modules/NormalModules/ElfnDeath/Art/Interface/Buttons/Units/OstuariiCav.dds</Button>
+			<Button>Modules/Def/ElfnDeath/Art/Interface/Buttons/Units/OstuariiCav.dds</Button>
 			<fScale>0.4</fScale>
 			<fInterfaceScale>0.9</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -51,7 +51,7 @@
 		</UnitArtInfo>
 	<UnitArtInfo> <!-- UNIT_PIKEMAN in  UNIT_ARTSTYLE_ONCE_ELF-->
 			<Type>ART_DEF_UNIT_PIKEMAN_ONCE_ELVES</Type>
-			<Button>Modules/NormalModules/ElfnDeath/Art/Interface/Buttons/Units/Ostuarii.dds</Button>
+			<Button>Modules/Def/ElfnDeath/Art/Interface/Buttons/Units/Ostuarii.dds</Button>
 			<fScale>0.46</fScale>
 			<fInterfaceScale>0.9</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -74,7 +74,7 @@
 		</UnitArtInfo>
 	<UnitArtInfo> <!-- UNIT_PHALANX in  UNIT_ARTSTYLE_ONCE_ELF-->
 			<Type>ART_DEF_UNIT_PHALANX_ONCE_ELVES</Type>
-			<Button>Modules/NormalModules/ElfnDeath/Art/Interface/Buttons/Units/OnceElfPhalanx.dds</Button>
+			<Button>Modules/Def/ElfnDeath/Art/Interface/Buttons/Units/OnceElfPhalanx.dds</Button>
 			<fScale>0.46</fScale>
 			<fInterfaceScale>0.9</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -97,7 +97,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- UNIT_WALDRUN in UNIT_ARTSTYLE_ONCE_ELF -->
 			<Type>ART_DEF_UNIT_WALDRUN_ONCE_ELVES</Type>
-			<Button>Modules/NormalModules/ElfnDeath/Art/Interface/LeaderHeads/veronica_anrathi_annec_B.dds</Button>
+			<Button>Modules/Def/ElfnDeath/Art/Interface/LeaderHeads/veronica_anrathi_annec_B.dds</Button>
 			<fScale>0.4</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -120,7 +120,7 @@
 		</UnitArtInfo>
 			<UnitArtInfo> <!-- UNIT_SLUAGH -->
 			<Type>ART_DEF_UNIT_SLUAGH</Type>
-			<Button>Modules/NormalModules/ElfnDeath/Art/Interface/Buttons/Spells/Sluagh.dds</Button>
+			<Button>Modules/Def/ElfnDeath/Art/Interface/Buttons/Spells/Sluagh.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>

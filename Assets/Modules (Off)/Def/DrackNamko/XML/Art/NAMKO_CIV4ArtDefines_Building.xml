@@ -14,7 +14,7 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Tower of Necromancy/towerofnecromancy.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackNamko\Art\Buildings\NamkoPalace.dds</Button>
+			<Button>Modules\Def\DrackNamko\Art\Buildings\NamkoPalace.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>	<!-- Arisen Housings -->
 			<Type>ART_DEF_BUILDING_ARISEN_HOUSING</Type>
@@ -24,7 +24,7 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<NIF>Art/Civs/Dtesh/Morgue/morgue.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackNamko\Art\Buildings\ArisenHousings.dds</Button>
+			<Button>Modules\Def\DrackNamko\Art\Buildings\ArisenHousings.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>	<!-- Arisen Fortress -->
 			<Type>ART_DEF_BUILDING_ARISEN_FORTRESS</Type>
@@ -34,7 +34,7 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<NIF>Art/Civs/Dtesh/Morgue/morgue.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackNamko\Art\Buildings\ArisenFortress.dds</Button>
+			<Button>Modules\Def\DrackNamko\Art\Buildings\ArisenFortress.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>	<!-- Namko Mage Quarters -->
 			<Type>ART_DEF_BUILDING_MAGE_QUARTERS</Type>
@@ -44,7 +44,7 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<NIF>Art/Civs/Dtesh/Morgue/morgue.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackNamko\Art\Buildings\NamkoMageQuarters.dds</Button>
+			<Button>Modules\Def\DrackNamko\Art\Buildings\NamkoMageQuarters.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>	<!-- Temple of Eternity -->
 			<Type>ART_DEF_BUILDING_TEMPLE_OF_ETERNITY</Type>
@@ -54,7 +54,7 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Tower of Necromancy/towerofnecromancy.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackNamko\Art\Buildings\TempleOfEternity.dds</Button>
+			<Button>Modules\Def\DrackNamko\Art\Buildings\TempleOfEternity.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>	<!-- Recreation Furnace -->
 			<Type>ART_DEF_BUILDING_NAMKO_RECREATION_FURNACE</Type>
@@ -64,7 +64,7 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Tower of Necromancy/towerofnecromancy.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackNamko\Art\Buildings\RecreationFurnace.dds</Button>
+			<Button>Modules\Def\DrackNamko\Art\Buildings\RecreationFurnace.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>	<!-- Money Changer UB Soul Exchange-->
 			<Type>ART_DEF_BUILDING_NAMKO_MONEYCHANGER</Type>
@@ -74,7 +74,7 @@
 			<fInterfaceScale>0.6</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Market/Market.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackNamko\Art\Buildings\MoneyChanger.dds</Button>
+			<Button>Modules\Def\DrackNamko\Art\Buildings\MoneyChanger.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo> 	<!-- Library UB - Eternal Halls -->
 			<Type>ART_DEF_BUILDING_NAMKO_LIBRARY</Type>
@@ -84,7 +84,7 @@
 			<fInterfaceScale>0.58</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Library/Library.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackNamko\Art\Buildings\Library.dds</Button>
+			<Button>Modules\Def\DrackNamko\Art\Buildings\Library.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo> 	<!-- Deathless Lighthouse -->
 			<Type>ART_DEF_BUILDING_NAMKO_LIGHTHOUSE</Type>
@@ -94,7 +94,7 @@
 			<fInterfaceScale>0.75</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Lighthouse/Lighthouse.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackNamko\Art\Buildings\DeathlessLighthouse.dds</Button>
+			<Button>Modules\Def\DrackNamko\Art\Buildings\DeathlessLighthouse.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo> <!-- Infirmary UB - Boneweaver Temple -->
 			<Type>ART_DEF_BUILDING_INFIRMARY_NAMKO</Type>
@@ -104,7 +104,7 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Infirmary/Hospital.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackNamko\Art\Buildings\BoneTemple.dds</Button> 
+			<Button>Modules\Def\DrackNamko\Art\Buildings\BoneTemple.dds</Button> 
 		</BuildingArtInfo>
 	</BuildingArtInfos>
 </Civ4ArtDefines>

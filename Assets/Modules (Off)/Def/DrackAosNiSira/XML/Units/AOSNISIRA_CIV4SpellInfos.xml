@@ -22,7 +22,7 @@
 			<PyResult>__import__('aosnisiraWorldSpell').spellNaturesFury(pCaster)</PyResult>
             <Effect>EFFECT_SPELL1</Effect>
             <Sound>AS3D_SPELL_INSPIRATION</Sound>
-            <Button>Modules\NormalModules\DrackAosNiSira\Art\Other\NaturesFury.dds</Button>
+            <Button>Modules\Def\DrackAosNiSira\Art\Other\NaturesFury.dds</Button>
         </SpellInfo>
 		<SpellInfo>	<!-- Great Soul Siphon -->	<!-- World Spell -->	<!-- Court of Misrak-->
             <Type>SPELL_FAIRY_GREAT_SOUL_SIPHON</Type>
@@ -41,7 +41,7 @@
 			<PyResult>__import__('aosnisiraWorldSpell').spellGreatSoulSiphon(pCaster)</PyResult>
             <Effect>EFFECT_SPELL1</Effect>
             <Sound>AS3D_SPELL_SACRIFICE</Sound>
-            <Button>Modules\NormalModules\DrackAosNiSira\Art\Other\SoulSiphon.dds</Button> 
+            <Button>Modules\Def\DrackAosNiSira\Art\Other\SoulSiphon.dds</Button> 
         </SpellInfo>
 		<SpellInfo>	<!-- Mushroom Accelleration -->	<!-- World Spell --><!-- Court of Falyn-->
             <Type>SPELL_FAIRY_MUSHROOM_ACCELLERATION</Type>
@@ -60,7 +60,7 @@
 			<PyResult>__import__('aosnisiraWorldSpell').spellMushroomAccelleration(pCaster)</PyResult>
             <Effect>EFFECT_SPELL1</Effect>
             <Sound>AS3D_SPELL_SPRING</Sound>
-            <Button>Modules\NormalModules\DrackAosNiSira\Art\Other\MushroomAcceleration.dds</Button> 
+            <Button>Modules\Def\DrackAosNiSira\Art\Other\MushroomAcceleration.dds</Button> 
         </SpellInfo>
 		<SpellInfo>	<!-- Fae Desertification -->	<!-- World Spell --><!-- Court of Bey-->
             <Type>SPELL_FAIRY_FAE_DESERTIFICATION</Type>
@@ -79,7 +79,7 @@
 			<PyResult>__import__('aosnisiraWorldSpell').spellFaeDesertification(pCaster)</PyResult>
             <Effect>EFFECT_SPELL1</Effect>
             <Sound>AS3D_SPELL_SPRING</Sound>
-            <Button>Modules\NormalModules\DrackAosNiSira\Art\Other\FaeDesertification.dds</Button> 
+            <Button>Modules\Def\DrackAosNiSira\Art\Other\FaeDesertification.dds</Button> 
         </SpellInfo>
         <SpellInfo>	<!-- Plant Forest Heart in Fort -->				<!-- Aos Ni Sira-->
 			<Type>SPELL_PLANTFORESTHEART_FORT</Type>
@@ -109,7 +109,7 @@
 			<PyResult>spellSlaveSettle(pCaster)</PyResult>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_SPELL_SPRING</Sound>
-			<Button>Modules\NormalModules\DrackAosNiSira\Art\Other\WelcomeGuest.dds</Button> 
+			<Button>Modules\Def\DrackAosNiSira\Art\Other\WelcomeGuest.dds</Button> 
 		</SpellInfo>
 		<SpellInfo>	<!-- Materialize City --> 						<!-- Court of Misrak-->
 			<Type>SPELL_FAIRY_MATERIALIZE_CITY</Type>
@@ -125,7 +125,7 @@
 			<PyResult>__import__('misrakSpells').spellMaterializeCity(pCaster)</PyResult>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_SPELL_MUTATION</Sound>
-			<Button>Modules\NormalModules\DrackAosNiSira\Art\Other\MaterializeCity.dds</Button> 
+			<Button>Modules\Def\DrackAosNiSira\Art\Other\MaterializeCity.dds</Button> 
 		</SpellInfo>
 		<SpellInfo>	<!-- Plant Scrub --> 							<!-- Court of Bey-->
 			<Type>SPELL_FAIRY_PLANT_SCRUB</Type>
@@ -143,7 +143,7 @@
 			<PyResult>__import__('misrakSpells').spellPlantScrub(pCaster)</PyResult>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_SPELL_BLESS</Sound>
-			<Button>Modules\NormalModules\DrackAosNiSira\Art\Other\GrowScrubs.dds</Button> 
+			<Button>Modules\Def\DrackAosNiSira\Art\Other\GrowScrubs.dds</Button> 
 		</SpellInfo>
 		<SpellInfo>	<!-- Consume Holy Shroom --> 						<!-- Court of Bey-->
 			<Type>SPELL_FAIRY_CONSUME_HOLY_SHROOM</Type>
@@ -162,7 +162,7 @@
 			<PyResult>__import__('misrakSpells').spellConsumeHolyShroom(pCaster)</PyResult>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_SPELL_BLESS</Sound>
-			<Button>Modules\NormalModules\DrackAosNiSira\Art\Other\ConsumeHolyShroom.dds</Button> 
+			<Button>Modules\Def\DrackAosNiSira\Art\Other\ConsumeHolyShroom.dds</Button> 
 		</SpellInfo>
 		<SpellInfo>	<!-- Eat Animal --> 								<!-- Aos Ni Sira -->
 			<Type>SPELL_FAIRY_EAT_ANIMAL</Type>
@@ -180,7 +180,7 @@
 			<PyResult>__import__('aosnisiraSpells').spellEatAnimal(pCaster)</PyResult>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_SPELL_SACRIFICE</Sound>
-			<Button>Modules\NormalModules\DrackAosNiSira\Art\Other\EatAnimal.dds</Button> 
+			<Button>Modules\Def\DrackAosNiSira\Art\Other\EatAnimal.dds</Button> 
 		</SpellInfo>
 		<SpellInfo>	<!-- Possess Wolves --> 							<!-- Aos Ni Sira -->
 			<Type>SPELL_FAIRY_POSSESS_WOLVES</Type>
@@ -193,7 +193,7 @@
 			<bHasCasted>1</bHasCasted>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_SPELL_DISPEL_MAGIC</Sound>
-			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/Sira_Wolf_Button.dds</Button> 
+			<Button>Modules/Def/DrackAosNiSira/Art/Units/Sira_Wolf_Button.dds</Button> 
 		</SpellInfo>
 		<SpellInfo>	<!-- Copy of FoL - Spread kelp for Posssessed giant Tortoise-->
 			<Type>SPELL_FAIRY_PLANT_KELP</Type>

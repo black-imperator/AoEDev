@@ -27,7 +27,7 @@
 			<bSacrificeCaster>1</bSacrificeCaster>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_BRAWL</Sound>
-			<Button>Modules/NormalModules/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_boar.dds</Button>
+			<Button>Modules/Def/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_boar.dds</Button>
 	</SpellInfo>
 	<SpellInfo>			<!-- Ride Rats -->
 			<Type>SPELL_RIDE_RAT_MOUNTEDTWEAKS</Type>
@@ -50,7 +50,7 @@
 			<bSacrificeCaster>1</bSacrificeCaster>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_BRAWL</Sound>
-			<Button>Modules/NormalModules/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_rat.dds</Button>
+			<Button>Modules/Def/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_rat.dds</Button>
 	</SpellInfo>	
 	<SpellInfo>			<!-- Ride Lions -->
 			<Type>SPELL_RIDE_LION_MOUNTEDTWEAKS</Type>
@@ -73,7 +73,7 @@
 			<bSacrificeCaster>1</bSacrificeCaster>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_BRAWL</Sound>
-			<Button>Modules/NormalModules/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_lion.dds</Button>
+			<Button>Modules/Def/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_lion.dds</Button>
 	</SpellInfo>	
 	<SpellInfo>			<!-- Ride Tigers -->
 			<Type>SPELL_RIDE_TIGER_MOUNTEDTWEAKS</Type>
@@ -96,7 +96,7 @@
 			<bSacrificeCaster>1</bSacrificeCaster>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_BRAWL</Sound>
-			<Button>Modules/NormalModules/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_tiger.dds</Button>
+			<Button>Modules/Def/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_tiger.dds</Button>
 	</SpellInfo>
 	<SpellInfo>			<!-- Ride Stags -->
 			<Type>SPELL_RIDE_STAG_MOUNTEDTWEAKS</Type>
@@ -119,7 +119,7 @@
 			<bSacrificeCaster>1</bSacrificeCaster>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_BRAWL</Sound>
-			<Button>Modules/NormalModules/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_stag.dds</Button>
+			<Button>Modules/Def/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_stag.dds</Button>
 	</SpellInfo>
 	<SpellInfo>			<!-- Ride Bears -->
 			<Type>SPELL_RIDE_GREAT_BEAST_MOUNTEDTWEAKS</Type>
@@ -142,7 +142,7 @@
 			<bSacrificeCaster>1</bSacrificeCaster>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_BRAWL</Sound>
-			<Button>Modules/NormalModules/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_bearpaw.dds</Button>
+			<Button>Modules/Def/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_bearpaw.dds</Button>
 	</SpellInfo>
 	<SpellInfo>			<!-- Ride Wolves -->
 			<Type>SPELL_RIDE_WOLF_MOUNTEDTWEAKS</Type>
@@ -165,7 +165,7 @@
 			<bSacrificeCaster>1</bSacrificeCaster>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_BRAWL</Sound>
-			<Button>Modules/NormalModules/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_wolf.dds</Button>
+			<Button>Modules/Def/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_wolf.dds</Button>
 	</SpellInfo>
 	<SpellInfo>			<!-- Ride Dinosaurs -->
 			<Type>SPELL_RIDE_DINOSAUR_MOUNTEDTWEAKS</Type>
@@ -188,7 +188,7 @@
 			<bSacrificeCaster>1</bSacrificeCaster>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_BRAWL</Sound>
-			<Button>Modules/NormalModules/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_dinosaur.dds</Button>
+			<Button>Modules/Def/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_dinosaur.dds</Button>
 	</SpellInfo>
 	<SpellInfo>			<!-- Ride Spiders -->
 			<Type>SPELL_RIDE_SPIDER_MOUNTEDTWEAKS</Type>
@@ -211,7 +211,7 @@
 			<bSacrificeCaster>1</bSacrificeCaster>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_BRAWL</Sound>
-			<Button>Modules/NormalModules/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_spider.dds</Button>
+			<Button>Modules/Def/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_spider.dds</Button>
 	</SpellInfo>
 	<SpellInfo>			<!-- Ride Griffons -->
 			<Type>SPELL_RIDE_FLYING_MOUNTEDTWEAKS</Type>
@@ -235,7 +235,7 @@
 			<bSacrificeCaster>1</bSacrificeCaster>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_BRAWL</Sound>
-			<Button>Modules/NormalModules/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_flying.dds</Button>
+			<Button>Modules/Def/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_flying.dds</Button>
 	</SpellInfo>
 	<SpellInfo>			<!-- Ride Toads -->
 			<Type>SPELL_RIDE_TOAD_MOUNTEDTWEAKS</Type>
@@ -258,7 +258,7 @@
 			<bSacrificeCaster>1</bSacrificeCaster>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_BRAWL</Sound>
-			<Button>Modules/NormalModules/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_toad.dds</Button>
+			<Button>Modules/Def/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_toad.dds</Button>
 	</SpellInfo>
 	<SpellInfo>			<!-- Khazad Boar Rider - Return to Boars -->
 			<Type>SPELL_RETURN_TO_BOAR_MOUNTEDTWEAKS</Type>
@@ -283,7 +283,7 @@
 			</AddPromotions>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_BRAWL</Sound>
-			<Button>Modules/NormalModules/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_boar.dds</Button>
+			<Button>Modules/Def/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_boar.dds</Button>
 	</SpellInfo>
 	<SpellInfo>			<!-- Khazad Hornguard - Return to Great Beast -->
 			<Type>SPELL_RETURN_TO_GREAT_BEAST_HORNGUARD_MOUNTEDTWEAKS</Type>
@@ -308,7 +308,7 @@
 			</AddPromotions>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_BRAWL</Sound>
-			<Button>Modules/NormalModules/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_bearpaw.dds</Button>
+			<Button>Modules/Def/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_bearpaw.dds</Button>
 	</SpellInfo>
 	<SpellInfo>			<!-- Doviello Bear Rider - Return to Great Beast -->
 			<Type>SPELL_RETURN_TO_GREAT_BEAST_BEAR_RIDER_MOUNTEDTWEAKS</Type>
@@ -333,7 +333,7 @@
 			</AddPromotions>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_BRAWL</Sound>
-			<Button>Modules/NormalModules/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_bearpaw.dds</Button>
+			<Button>Modules/Def/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_bearpaw.dds</Button>
 	</SpellInfo>
 	<SpellInfo>			<!-- Doviello Bison Rider - Return to Great Beast -->
 			<Type>SPELL_RETURN_TO_GREAT_BEAST_BISON_RIDER_MOUNTEDTWEAKS</Type>
@@ -358,7 +358,7 @@
 			</AddPromotions>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_BRAWL</Sound>
-			<Button>Modules/NormalModules/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_bearpaw.dds</Button>
+			<Button>Modules/Def/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_bearpaw.dds</Button>
 	</SpellInfo>	
 	<SpellInfo>			<!-- Ljosalfar Fyrdwell - Return to Stag -->
 			<Type>SPELL_RETURN_TO_STAG_MOUNTEDTWEAKS</Type>
@@ -383,7 +383,7 @@
 			</AddPromotions>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_BRAWL</Sound>
-			<Button>Modules/NormalModules/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_stag.dds</Button>
+			<Button>Modules/Def/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_stag.dds</Button>
 	</SpellInfo>
 	<SpellInfo>			<!-- Ljosalfar Fyrdwell Champion - Return to Stag -->
 			<Type>SPELL_RETURN_TO_STAG_FYRDWELL_CHAMPION_MOUNTEDTWEAKS_MULTIMOD</Type>
@@ -411,7 +411,7 @@
 			</AddPromotions>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_BRAWL</Sound>
-			<Button>Modules/NormalModules/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_stag.dds</Button>
+			<Button>Modules/Def/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_stag.dds</Button>
 	</SpellInfo>	
 	<SpellInfo>			<!-- Svartalfar - Return to Tigers -->
 			<Type>SPELL_RETURN_TO_TIGER_MOUNTEDTWEAKS</Type>
@@ -436,7 +436,7 @@
 			</AddPromotions>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_BRAWL</Sound>
-			<Button>Modules/NormalModules/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_tiger.dds</Button>
+			<Button>Modules/Def/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_tiger.dds</Button>
 	</SpellInfo>
 	<SpellInfo>			<!-- Lanun - Return to Tortoise -->
 			<Type>SPELL_RETURN_TO_NO_MOUNTS_MOUNTEDTWEAKS</Type>
@@ -459,7 +459,7 @@
 			</AddPromotions>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_BRAWL</Sound>
-			<Button>Modules/NormalModules/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_star.dds</Button>
+			<Button>Modules/Def/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_star.dds</Button>
 	</SpellInfo>	
 	<SpellInfo>			<!-- Archos - Return to Spiders -->
 			<Type>SPELL_RETURN_TO_SPIDERS_HUNTRESS_MOUNTEDTWEAKS_MULTIMOD</Type>
@@ -486,7 +486,7 @@
 			</AddPromotions>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_BRAWL</Sound>
-			<Button>Modules/NormalModules/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_spider.dds</Button>
+			<Button>Modules/Def/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_spider.dds</Button>
 	</SpellInfo>
 	<SpellInfo>			<!-- Archos - Return to Spiders -->
 			<Type>SPELL_RETURN_TO_SPIDERS_KNIGHTESS_MOUNTEDTWEAKS_MULTIMOD</Type>
@@ -513,7 +513,7 @@
 			</AddPromotions>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_BRAWL</Sound>
-			<Button>Modules/NormalModules/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_spider.dds</Button>
+			<Button>Modules/Def/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_spider.dds</Button>
 	</SpellInfo>
 	<SpellInfo>			<!-- Archos - Return to Spiders -->
 			<Type>SPELL_RETURN_TO_SPIDERS_WAR_SPIDER_MOUNTEDTWEAKS_MULTIMOD</Type>
@@ -540,7 +540,7 @@
 			</AddPromotions>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_BRAWL</Sound>
-			<Button>Modules/NormalModules/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_spider.dds</Button>
+			<Button>Modules/Def/z_CaptainMountedTweaks/Art/Interface/Buttons/Promotions/mount_spider.dds</Button>
 	</SpellInfo>
 	<SpellInfo>			<!-- Once Elves - Return to Ghostly -->
 			<Type>SPELL_RETURN_TO_GHOSTLY_OSTAURII_RIDER_MOUNTEDTWEAKS_MULTIMOD</Type>
@@ -567,7 +567,7 @@
 			</AddPromotions>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_BRAWL</Sound>
-			<Button>Modules/NormalModules/ElfnDeath/Art/Interface/Buttons/Promotions/GhostlyMounts.dds</Button>
+			<Button>Modules/Def/ElfnDeath/Art/Interface/Buttons/Promotions/GhostlyMounts.dds</Button>
 	</SpellInfo>
 	<SpellInfo>			<!-- Once Elves - Return to Ghostly -->
 			<Type>SPELL_RETURN_TO_GHOSTLY_OSTAURII_KNIGHT_MOUNTEDTWEAKS_MULTIMOD</Type>
@@ -594,7 +594,7 @@
 			</AddPromotions>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_BRAWL</Sound>
-			<Button>Modules/NormalModules/ElfnDeath/Art/Interface/Buttons/Promotions/GhostlyMounts.dds</Button>
+			<Button>Modules/Def/ElfnDeath/Art/Interface/Buttons/Promotions/GhostlyMounts.dds</Button>
 	</SpellInfo>
 </SpellInfos>
 </Civ4SpellInfos>

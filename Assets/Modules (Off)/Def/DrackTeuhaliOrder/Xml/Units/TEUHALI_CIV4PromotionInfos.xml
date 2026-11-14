@@ -25,7 +25,7 @@
 			<iExtraSupport>2</iExtraSupport>
 			<bImmuneToFirstStrikes>1</bImmuneToFirstStrikes>
 			<iCombatPercent>25</iCombatPercent>
-			<Button>Modules\NormalModules\DrackTeuhaliOrder\Art\Promotions\TeuhaliKnight.dds</Button>
+			<Button>Modules\Def\DrackTeuhaliOrder\Art\Promotions\TeuhaliKnight.dds</Button>
 			<DamageTypeResists>
 				<DamageTypeResist>
 					<DamageType>DAMAGE_LIGHTNING</DamageType>
@@ -103,7 +103,7 @@
 			<iExtraSupport>1</iExtraSupport>
 			<iCombatPercent>25</iCombatPercent>
 			<iNoBadExplore>10</iNoBadExplore>
-			<Button>Modules\NormalModules\DrackTeuhaliOrder\Art\Promotions\ChosenOfHali.dds</Button>
+			<Button>Modules\Def\DrackTeuhaliOrder\Art\Promotions\ChosenOfHali.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo> <!-- Famous Ritter -->
 			<Type>PROMOTION_TEUHALI_FAMOUS_RITTER</Type>
@@ -169,7 +169,7 @@
 					<fHappy>1</fHappy>
 				</CityBonus>
 			</CityBonuses>
-			<Button>Modules\NormalModules\DrackTeuhaliOrder\Art\Promotions\FamousRitter.dds</Button>
+			<Button>Modules\Def\DrackTeuhaliOrder\Art\Promotions\FamousRitter.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo> <!-- Wise Ritter -->
 			<Type>PROMOTION_TEUHALI_WISE_RITTER</Type>
@@ -232,7 +232,7 @@
 				</UnitCombat>
 			</UnitCombats>
 			<iWithdrawalChange>15</iWithdrawalChange>
-			<Button>Modules\NormalModules\DrackTeuhaliOrder\Art\Promotions\WiseRitter.dds</Button>
+			<Button>Modules\Def\DrackTeuhaliOrder\Art\Promotions\WiseRitter.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo>	<!-- Weizenritter -->
 			<Type>PROMOTION_TEUHALI_WEIZENRITTER</Type>
@@ -261,7 +261,7 @@
 			<bFreeUnit>1</bFreeUnit>
 			<iCombatPercent>-10</iCombatPercent>
 			<UnitCombats />
-			<Button>Modules\NormalModules\DrackTeuhaliOrder\Art\Promotions\WeizenRitter.dds</Button>
+			<Button>Modules\Def\DrackTeuhaliOrder\Art\Promotions\WeizenRitter.dds</Button>
 			<iMinLevel>-1</iMinLevel>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Secondary Arcane Unique - Blocksberg Witch -->
@@ -284,7 +284,7 @@
 					<iResist>20</iResist>
 				</DamageTypeResist>
 			</DamageTypeResists>
-			<Button>Modules\NormalModules\DrackTeuhaliOrder\Art\Promotions\BlocksbergWitch.dds</Button>
+			<Button>Modules\Def\DrackTeuhaliOrder\Art\Promotions\BlocksbergWitch.dds</Button>
 			<iMinLevel>-1</iMinLevel>
 			<UnitCombats>
 				<UnitCombat>

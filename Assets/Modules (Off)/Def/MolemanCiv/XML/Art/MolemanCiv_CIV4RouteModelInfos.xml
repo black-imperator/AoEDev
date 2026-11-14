@@ -7,8 +7,8 @@
 <Civ4RouteModelInfos xmlns="x-schema:MolemanCiv_CIV4ArtDefinesSchema.xml">
 	<RouteModelInfos>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadA00.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadA00.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadA00.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadA00.nif</LateModelFile>
 			<ModelFileKey>A00</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -17,8 +17,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadA01.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadA01.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadA01.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadA01.nif</LateModelFile>
 			<ModelFileKey>A01</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -27,8 +27,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadA02.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadA02.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadA02.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadA02.nif</LateModelFile>
 			<ModelFileKey>A02</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -37,8 +37,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB01.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB01.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB01.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB01.nif</LateModelFile>
 			<ModelFileKey>B01</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -47,8 +47,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB02.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB02.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB02.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB02.nif</LateModelFile>
 			<ModelFileKey>B02</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -57,8 +57,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB03.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB03.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB03.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB03.nif</LateModelFile>
 			<ModelFileKey>B03</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -67,8 +67,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB04.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB04.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB04.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB04.nif</LateModelFile>
 			<ModelFileKey>B04</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -77,8 +77,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB05.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB05.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB05.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB05.nif</LateModelFile>
 			<ModelFileKey>B05</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -87,8 +87,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB06.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB06.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB06.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB06.nif</LateModelFile>
 			<ModelFileKey>B06</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -97,8 +97,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB07.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB07.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB07.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB07.nif</LateModelFile>
 			<ModelFileKey>B07</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -107,8 +107,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB08.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB08.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB08.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB08.nif</LateModelFile>
 			<ModelFileKey>B08</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -117,8 +117,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB05.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB05.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB05.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB05.nif</LateModelFile>
 			<ModelFileKey>C01</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -127,8 +127,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB06.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB06.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB06.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB06.nif</LateModelFile>
 			<ModelFileKey>C02</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -137,8 +137,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC03.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC03.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC03.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC03.nif</LateModelFile>
 			<ModelFileKey>C03</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -147,8 +147,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC04.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC04.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC04.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC04.nif</LateModelFile>
 			<ModelFileKey>C04</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -157,8 +157,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB03.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB03.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB03.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB03.nif</LateModelFile>
 			<ModelFileKey>C05OtherDir</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -167,8 +167,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC06.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC06.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC06.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC06.nif</LateModelFile>
 			<ModelFileKey>C06</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -177,8 +177,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC07.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC07.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC07.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC07.nif</LateModelFile>
 			<ModelFileKey>C07</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -187,8 +187,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC08.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC08.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC08.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC08.nif</LateModelFile>
 			<ModelFileKey>C08</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -197,8 +197,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC09.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC09.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC09.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC09.nif</LateModelFile>
 			<ModelFileKey>C09</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -207,8 +207,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC10.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC10.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC10.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC10.nif</LateModelFile>
 			<ModelFileKey>C10</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -217,8 +217,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB07.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB07.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB07.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB07.nif</LateModelFile>
 			<ModelFileKey>C11</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -227,8 +227,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC12.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC12.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC12.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC12.nif</LateModelFile>
 			<ModelFileKey>C12</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -237,8 +237,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB08.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB08.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB08.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB08.nif</LateModelFile>
 			<ModelFileKey>C13</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -247,8 +247,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC14.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC14.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC14.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC14.nif</LateModelFile>
 			<ModelFileKey>C14</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -257,8 +257,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</LateModelFile>
 			<ModelFileKey>D01</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -267,8 +267,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</LateModelFile>
 			<ModelFileKey>D02</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -277,8 +277,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD03.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD03.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD03.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD03.nif</LateModelFile>
 			<ModelFileKey>D03</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -287,8 +287,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC04.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC04.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC04.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC04.nif</LateModelFile>
 			<ModelFileKey>D04</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -297,8 +297,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD05.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD05.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD05.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD05.nif</LateModelFile>
 			<ModelFileKey>D05</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -307,8 +307,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB04.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB04.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB04.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB04.nif</LateModelFile>
 			<ModelFileKey>D06</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -317,8 +317,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD07.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD07.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD07.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD07.nif</LateModelFile>
 			<ModelFileKey>D07</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -327,8 +327,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD08.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD08.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD08.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD08.nif</LateModelFile>
 			<ModelFileKey>D08</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -337,8 +337,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB08.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB08.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB08.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB08.nif</LateModelFile>
 			<ModelFileKey>D09</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -347,8 +347,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB07.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB07.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB07.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB07.nif</LateModelFile>
 			<ModelFileKey>D10</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -357,8 +357,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC06.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC06.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC06.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC06.nif</LateModelFile>
 			<ModelFileKey>D11</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -367,8 +367,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC07.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC07.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC07.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC07.nif</LateModelFile>
 			<ModelFileKey>D12</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -377,8 +377,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC04.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC04.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC04.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC04.nif</LateModelFile>
 			<ModelFileKey>D13</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -387,8 +387,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC04.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC04.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC04.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC04.nif</LateModelFile>
 			<ModelFileKey>D14</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -397,8 +397,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC10.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC10.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC10.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC10.nif</LateModelFile>
 			<ModelFileKey>D15</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -407,8 +407,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC06.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC06.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC06.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC06.nif</LateModelFile>
 			<ModelFileKey>D16</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -417,8 +417,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC12.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC12.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC12.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC12.nif</LateModelFile>
 			<ModelFileKey>D17</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -427,8 +427,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC14.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC14.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC14.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC14.nif</LateModelFile>
 			<ModelFileKey>D18</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -437,8 +437,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD19.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD19.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD19.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD19.nif</LateModelFile>
 			<ModelFileKey>D19</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -447,8 +447,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD20.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD20.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD20.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD20.nif</LateModelFile>
 			<ModelFileKey>D20</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -457,8 +457,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</LateModelFile>
 			<ModelFileKey>E01</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -467,8 +467,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</LateModelFile>
 			<ModelFileKey>E02</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -477,8 +477,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD20.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD20.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD20.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD20.nif</LateModelFile>
 			<ModelFileKey>E03</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -487,8 +487,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC04.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC04.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC04.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC04.nif</LateModelFile>
 			<ModelFileKey>E04</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -497,8 +497,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD05.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD05.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD05.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD05.nif</LateModelFile>
 			<ModelFileKey>E05</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -507,8 +507,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB04.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB04.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB04.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB04.nif</LateModelFile>
 			<ModelFileKey>E06</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -517,8 +517,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC08.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC08.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC08.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC08.nif</LateModelFile>
 			<ModelFileKey>E07</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -527,8 +527,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD20.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD20.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD20.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD20.nif</LateModelFile>
 			<ModelFileKey>E08</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -537,8 +537,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC09.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC09.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC09.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC09.nif</LateModelFile>
 			<ModelFileKey>E09</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -547,8 +547,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD19.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD19.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD19.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD19.nif</LateModelFile>
 			<ModelFileKey>E10</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -557,8 +557,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC06.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC06.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC06.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC06.nif</LateModelFile>
 			<ModelFileKey>E11</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -567,8 +567,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB06.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB06.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB06.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadB06.nif</LateModelFile>
 			<ModelFileKey>E12</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -577,8 +577,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD19.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD19.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD19.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD19.nif</LateModelFile>
 			<ModelFileKey>E13</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -587,8 +587,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC04.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC04.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC04.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC04.nif</LateModelFile>
 			<ModelFileKey>E14</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -597,8 +597,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</LateModelFile>
 			<ModelFileKey>F01</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -607,8 +607,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</LateModelFile>
 			<ModelFileKey>F02</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -617,8 +617,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</LateModelFile>
 			<ModelFileKey>F03</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -627,8 +627,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</LateModelFile>
 			<ModelFileKey>F04</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -637,8 +637,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC08.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC08.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC08.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC08.nif</LateModelFile>
 			<ModelFileKey>F05</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -647,8 +647,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD20.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD20.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD20.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD20.nif</LateModelFile>
 			<ModelFileKey>F06</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -657,8 +657,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC06.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC06.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC06.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC06.nif</LateModelFile>
 			<ModelFileKey>F07</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -667,8 +667,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC06.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC06.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC06.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadC06.nif</LateModelFile>
 			<ModelFileKey>F08</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -677,8 +677,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</LateModelFile>
 			<ModelFileKey>G01</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -687,8 +687,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</LateModelFile>
 			<ModelFileKey>G02</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>
@@ -697,8 +697,8 @@
 			<Rotations>0 90 180 270</Rotations>
 		</RouteModelInfo>
 		<RouteModelInfo>
-			<ModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</ModelFile>
-			<LateModelFile>Modules/NormalModules/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</LateModelFile>
+			<ModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</ModelFile>
+			<LateModelFile>Modules/Def/MolemanCiv/Art/Terrain/Routes/tunnels/RoadD02.nif</LateModelFile>
 			<ModelFileKey>H01</ModelFileKey>
 			<Animated>0</Animated>
 			<RouteType>ROUTE_MOLEMAN_TUNNELS</RouteType>

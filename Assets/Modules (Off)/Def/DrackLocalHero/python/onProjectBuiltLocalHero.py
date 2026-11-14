@@ -146,7 +146,7 @@ def onProjectBuilt(self, argsList):
 	pUnit.setName(newUnitName)
  
 	if pPlayer.isHuman():
-		addPopup(CyTranslator().getText("TXT_KEY_PROJECT_SUMMON_LOCAL_HERO_POPUP",()), 'Modules\NormalModules\DrackLocalHero\Art\LocalHeroPopup.dds')
+		addPopup(CyTranslator().getText("TXT_KEY_PROJECT_SUMMON_LOCAL_HERO_POPUP",()), 'Modules\Def\DrackLocalHero\Art\LocalHeroPopup.dds')
 	
 	# Mark the project as built for this player
 	pPlayer.setHasFlag(git("FLAG_LOCALHERO"), True)

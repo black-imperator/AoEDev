@@ -8,7 +8,7 @@
 	<UnitArtInfos> 
 		<UnitArtInfo>  <!-- Stadtwache -->
 			<Type>ART_DEF_UNIT_TEUHALI_STADTWACHE</Type>
-			<Button>Modules/NormalModules/DrackTeuhaliOrder/Art/Units/Stadtwache.dds</Button>
+			<Button>Modules/Def/DrackTeuhaliOrder/Art/Units/Stadtwache.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -32,7 +32,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>  <!-- Doppelhaender -->
 			<Type>ART_DEF_UNIT_TEUHALI_DOPPELHAENDER</Type>
-			<Button>Modules/NormalModules/DrackTeuhaliOrder/Art/Units/Doppelhaender.dds</Button>
+			<Button>Modules/Def/DrackTeuhaliOrder/Art/Units/Doppelhaender.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -56,7 +56,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>  <!-- Knight Champion -->
 			<Type>ART_DEF_UNIT_TEUHALI_KNIGHT_CHAMPION</Type>
-			<Button>Modules/NormalModules/DrackTeuhaliOrder/Art/Units/KnightChampion.dds</Button>
+			<Button>Modules/Def/DrackTeuhaliOrder/Art/Units/KnightChampion.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -80,7 +80,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- Dietrich -->
 			<Type>ART_DEF_UNIT_TEUHALI_DIETRICH</Type>
-			<Button>Modules/NormalModules/DrackTeuhaliOrder/Art/Units/Dietrich.dds</Button>
+			<Button>Modules/Def/DrackTeuhaliOrder/Art/Units/Dietrich.dds</Button>
 			<fScale>0.49</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -105,7 +105,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- Dietrich Ascended-->
 			<Type>ART_DEF_UNIT_TEUHALI_DIETRICH_ASCENDED</Type>
-			<Button>Modules/NormalModules/DrackTeuhaliOrder/Art/Units/DietrichChosen.dds</Button>
+			<Button>Modules/Def/DrackTeuhaliOrder/Art/Units/DietrichChosen.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -130,7 +130,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>  <!-- Blutwache -->
 			<Type>ART_DEF_UNIT_TEUHALI_BLUTWACHE</Type>
-			<Button>Modules/NormalModules/DrackTeuhaliOrder/Art/Units/Blutwache.dds</Button>
+			<Button>Modules/Def/DrackTeuhaliOrder/Art/Units/Blutwache.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -154,7 +154,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>  <!-- Terrorritter -->
 			<Type>ART_DEF_UNIT_TEUHALI_TERROR_TERRORRITTER</Type>
-			<Button>Modules/NormalModules/DrackTeuhaliOrder/Art/Units/Terrorritter.dds</Button>
+			<Button>Modules/Def/DrackTeuhaliOrder/Art/Units/Terrorritter.dds</Button>
 			<fScale>0.46</fScale>
 			<fInterfaceScale>0.9</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -178,7 +178,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>  <!-- Lehrling -->
 			<Type>ART_DEF_UNIT_TEUHALI_ADEPT</Type>
-			<Button>Modules/NormalModules/DrackTeuhaliOrder/Art/Units/Lehrling.dds</Button>
+			<Button>Modules/Def/DrackTeuhaliOrder/Art/Units/Lehrling.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -201,7 +201,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>  <!-- Streiter -->
 			<Type>ART_DEF_UNIT_TEUHALI_STREITER</Type>
-			<Button>Modules/NormalModules/DrackTeuhaliOrder/Art/Units/Streiter.dds</Button>
+			<Button>Modules/Def/DrackTeuhaliOrder/Art/Units/Streiter.dds</Button>
 			<fScale>0.43</fScale>
 			<fInterfaceScale>0.9</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -225,7 +225,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>  <!-- Leichter Schuetze - Archer UU-->
 			<Type>ART_DEF_UNIT_TEUHALI_ARCHER</Type>
-			<Button>Modules/NormalModules/DrackTeuhaliOrder/Art/Units/LeichterrSchuetze.dds</Button>
+			<Button>Modules/Def/DrackTeuhaliOrder/Art/Units/LeichterrSchuetze.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -249,7 +249,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>  <!-- Schwerer Schuetze - Longbowman UU-->
 			<Type>ART_DEF_UNIT_TEUHALI_LONGBOW</Type>
-			<Button>Modules/NormalModules/DrackTeuhaliOrder/Art/Units/SchwererSchuetze.dds</Button>
+			<Button>Modules/Def/DrackTeuhaliOrder/Art/Units/SchwererSchuetze.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -273,7 +273,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>  <!-- Geissler -->
 			<Type>ART_DEF_UNIT_TEUHALI_GEISSLER</Type>
-			<Button>Modules/NormalModules/DrackTeuhaliOrder/Art/Units/Geissler.dds</Button>
+			<Button>Modules/Def/DrackTeuhaliOrder/Art/Units/Geissler.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>

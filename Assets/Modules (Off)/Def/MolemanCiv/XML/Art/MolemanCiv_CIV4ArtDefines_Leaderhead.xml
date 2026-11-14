@@ -8,16 +8,16 @@
 	<LeaderheadArtInfos>
 		<LeaderheadArtInfo>
 			<Type>ART_DEF_LEADER_MOLEMAN_1</Type>
-			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/LeaderHeads/Moleman1_button.dds</Button>
-			<NIF>Modules/NormalModules/MolemanCiv/Art/Interface/LeaderHeads/Moleman1.dds</NIF>
+			<Button>Modules/Def/MolemanCiv/Art/Interface/LeaderHeads/Moleman1_button.dds</Button>
+			<NIF>Modules/Def/MolemanCiv/Art/Interface/LeaderHeads/Moleman1.dds</NIF>
 			<KFM/>
 			<NoShaderNIF/>
 			<BackgroundKFM/>
 		</LeaderheadArtInfo>
 		<LeaderheadArtInfo>
 			<Type>ART_DEF_LEADER_MOLEMAN_2</Type>
-			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/LeaderHeads/Moleman2_button.dds</Button>
-			<NIF>Modules/NormalModules/MolemanCiv/Art/Interface/LeaderHeads/Moleman2.dds</NIF>
+			<Button>Modules/Def/MolemanCiv/Art/Interface/LeaderHeads/Moleman2_button.dds</Button>
+			<NIF>Modules/Def/MolemanCiv/Art/Interface/LeaderHeads/Moleman2.dds</NIF>
 			<KFM/>
 			<NoShaderNIF/>
 			<BackgroundKFM/>

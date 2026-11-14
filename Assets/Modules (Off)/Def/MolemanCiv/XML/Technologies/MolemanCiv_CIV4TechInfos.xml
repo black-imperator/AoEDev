@@ -21,7 +21,7 @@
 			<Quote>TXT_KEY_TECH_UNDERDWELLING_QUOTE</Quote>
 			<Sound>AS2D_TECH_DING</Sound>
 			<SoundMP>AS2D_TECH_DING</SoundMP>
-			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/underdwelling.dds</Button>
+			<Button>Modules/Def/MolemanCiv/Art/Interface/Buttons/underdwelling.dds</Button>
 		</TechInfo>
 	</TechInfos>
 </Civ4TechInfos>

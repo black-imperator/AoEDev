@@ -9,7 +9,7 @@
 		<PromotionInfo> <!-- Kinari Species Promotion -->
 			<Type>PROMOTION_KINARI</Type>
 			<Description>Kinari</Description>
-			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Promotions\Yinara\KinariRace.dds</Button> 
+			<Button>Modules\Def\DrackAdditionalCivs\Art\Promotions\Yinara\KinariRace.dds</Button> 
 			<bRace>1</bRace>
             <iResistMagic>50</iResistMagic>
             <bImmuneToMagic>1</bImmuneToMagic>
@@ -39,7 +39,7 @@
 			<Description>Yinara Caste Born</Description>
 			<iMinLevel>-1</iMinLevel>
             <iFriendlyHealChange>15</iFriendlyHealChange>
-			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Promotions\Yinara\CasteBorn.dds</Button>
+			<Button>Modules\Def\DrackAdditionalCivs\Art\Promotions\Yinara\CasteBorn.dds</Button>
 		</PromotionInfo>
         <PromotionInfo> <!-- Bushin Caste -->
 			<Type>PROMOTION_YINARA_CASTE_BUSHIN</Type>
@@ -62,7 +62,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
-			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Promotions\Yinara\BushinCaste.dds</Button> 
+			<Button>Modules\Def\DrackAdditionalCivs\Art\Promotions\Yinara\BushinCaste.dds</Button> 
 		</PromotionInfo>
         <PromotionInfo> <!-- Tetsuji Caste -->
 			<Type>PROMOTION_YINARA_CASTE_TETSUJI</Type>
@@ -85,7 +85,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
-			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Promotions\Yinara\TetsujiCaste.dds</Button> 
+			<Button>Modules\Def\DrackAdditionalCivs\Art\Promotions\Yinara\TetsujiCaste.dds</Button> 
 		</PromotionInfo>
         <PromotionInfo> <!-- Yumiya Caste -->
 			<Type>PROMOTION_YINARA_CASTE_YUMIYA</Type>
@@ -111,7 +111,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
-			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Promotions\Yinara\YumiyaCaste.dds</Button> 
+			<Button>Modules\Def\DrackAdditionalCivs\Art\Promotions\Yinara\YumiyaCaste.dds</Button> 
 		</PromotionInfo>
         <PromotionInfo> <!-- Hayate Caste -->
 			<Type>PROMOTION_YINARA_CASTE_HAYATE</Type>
@@ -134,7 +134,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
-			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Promotions\Yinara\HayateCaste.dds</Button> 
+			<Button>Modules\Def\DrackAdditionalCivs\Art\Promotions\Yinara\HayateCaste.dds</Button> 
 		</PromotionInfo>
         <PromotionInfo> <!-- Miko Caste -->
 			<Type>PROMOTION_YINARA_CASTE_MIKO</Type>
@@ -158,7 +158,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
-			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Promotions\Yinara\MikoCaste.dds</Button>
+			<Button>Modules\Def\DrackAdditionalCivs\Art\Promotions\Yinara\MikoCaste.dds</Button>
 		</PromotionInfo>
         <PromotionInfo> <!-- Mitsukake Caste -->
 			<Type>PROMOTION_YINARA_CASTE_MITSUKAKE</Type>
@@ -210,7 +210,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
-			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Promotions\Yinara\MitsukakeCaste.dds</Button> 
+			<Button>Modules\Def\DrackAdditionalCivs\Art\Promotions\Yinara\MitsukakeCaste.dds</Button> 
 		</PromotionInfo>
         <PromotionInfo> <!-- Nue Caste -->
 			<Type>PROMOTION_YINARA_CASTE_NUE</Type>
@@ -233,7 +233,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
-			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Promotions\Yinara\NueCaste.dds</Button> 
+			<Button>Modules\Def\DrackAdditionalCivs\Art\Promotions\Yinara\NueCaste.dds</Button> 
 		</PromotionInfo>
         <PromotionInfo> <!-- Senshi Caste -->
 			<Type>PROMOTION_YINARA_CASTE_SENSHI</Type>
@@ -261,7 +261,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
-			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Promotions\Yinara\SenshiCaste.dds</Button>
+			<Button>Modules\Def\DrackAdditionalCivs\Art\Promotions\Yinara\SenshiCaste.dds</Button>
 		</PromotionInfo>
 	</PromotionInfos>
 </Civ4PromotionInfos>

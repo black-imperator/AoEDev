@@ -9,8 +9,8 @@
 		<!-- Nephtharia -->
 		<LeaderheadArtInfo>
 			<Type>ART_DEF_LEADER_NEPHTHARIA</Type>
-			<Button>Modules/NormalModules/DrackNamko/Art/Leader/Nephtharia_Portrait.dds</Button>
-			<NIF>Modules\NormalModules\DrackNamko/Art/Leader\Nephtharia.dds</NIF>
+			<Button>Modules/Def/DrackNamko/Art/Leader/Nephtharia_Portrait.dds</Button>
+			<NIF>Modules\Def\DrackNamko/Art/Leader\Nephtharia.dds</NIF>
 			<KFM/>
 			<NoShaderNIF/>
 			<BackgroundKFM/>
@@ -18,8 +18,8 @@
 		<!-- Thalmetra -->
 		<LeaderheadArtInfo>
 			<Type>ART_DEF_LEADER_THALMETRA</Type>
-			<Button>Modules/NormalModules/DrackNamko/Art/Leader/Thalmetra_Portrait.dds</Button>
-			<NIF>Modules\NormalModules\DrackNamko/Art/Leader\Thalmetra.dds</NIF>
+			<Button>Modules/Def/DrackNamko/Art/Leader/Thalmetra_Portrait.dds</Button>
+			<NIF>Modules\Def\DrackNamko/Art/Leader\Thalmetra.dds</NIF>
 			<KFM/>
 			<NoShaderNIF/>
 			<BackgroundKFM/>
@@ -27,8 +27,8 @@
 		<!-- Setharia -->
 		<LeaderheadArtInfo>
 			<Type>ART_DEF_LEADER_SETHARIA</Type>
-			<Button>Modules/NormalModules/DrackNamko/Art/Leader/Setharia_Portrait.dds</Button>
-			<NIF>Modules\NormalModules\DrackNamko/Art/Leader\Setharia.dds</NIF>
+			<Button>Modules/Def/DrackNamko/Art/Leader/Setharia_Portrait.dds</Button>
+			<NIF>Modules\Def\DrackNamko/Art/Leader\Setharia.dds</NIF>
 			<KFM/>
 			<NoShaderNIF/>
 			<BackgroundKFM/>
@@ -36,8 +36,8 @@
 		<!-- Zephos -->
 		<LeaderheadArtInfo>
 			<Type>ART_DEF_LEADER_ZEPHOS</Type>
-			<Button>Modules/NormalModules/DrackNamko/Art/Leader/Zephos_Portrait.dds</Button>
-			<NIF>Modules\NormalModules\DrackNamko/Art/Leader\Zephos.dds</NIF>
+			<Button>Modules/Def/DrackNamko/Art/Leader/Zephos_Portrait.dds</Button>
+			<NIF>Modules\Def\DrackNamko/Art/Leader\Zephos.dds</NIF>
 			<KFM/>
 			<NoShaderNIF/>
 			<BackgroundKFM/>
@@ -45,8 +45,8 @@
 		<!-- Nephron -->
 		<LeaderheadArtInfo>
 			<Type>ART_DEF_LEADER_NEPHRON</Type>
-			<Button>Modules/NormalModules/DrackNamko/Art/Leader/Nephron_Portrait.dds</Button>
-			<NIF>Modules\NormalModules\DrackNamko/Art/Leader\Nephron.dds</NIF>
+			<Button>Modules/Def/DrackNamko/Art/Leader/Nephron_Portrait.dds</Button>
+			<NIF>Modules\Def\DrackNamko/Art/Leader\Nephron.dds</NIF>
 			<KFM/>
 			<NoShaderNIF/>
 			<BackgroundKFM/>

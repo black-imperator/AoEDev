@@ -8,26 +8,26 @@
 	<CivilizationArtInfos>
 		<CivilizationArtInfo>
 			<Type>ART_DEF_CIVILIZATION_AOSNISIRA</Type>
-			<Button>Modules\NormalModules\DrackAosNiSira\Art\other\Flagge.dds</Button>
-			<Path>Modules\NormalModules\DrackAosNiSira\Art\other\Flagge_Transparent2.dds</Path>
+			<Button>Modules\Def\DrackAosNiSira\Art\other\Flagge.dds</Button>
+			<Path>Modules\Def\DrackAosNiSira\Art\other\Flagge_Transparent2.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
 		<CivilizationArtInfo>
 			<Type>ART_DEF_CIVILIZATION_COURTOFFALYN</Type> 
-			<Button>Modules\NormalModules\DrackAosNiSira\Art\other\FlagCourtOfFalyn.dds</Button>
-			<Path>Modules\NormalModules\DrackAosNiSira\Art\other\FlagCourtOfFalynTransparent.dds</Path>
+			<Button>Modules\Def\DrackAosNiSira\Art\other\FlagCourtOfFalyn.dds</Button>
+			<Path>Modules\Def\DrackAosNiSira\Art\other\FlagCourtOfFalynTransparent.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
 		<CivilizationArtInfo>
 			<Type>ART_DEF_CIVILIZATION_COURTOFBEY</Type> 
-			<Button>Modules\NormalModules\DrackAosNiSira\Art\other\FlagCourtOfBey.dds</Button>
-			<Path>Modules\NormalModules\DrackAosNiSira\Art\other\FlagCourtOfBeyTransparent.dds</Path>
+			<Button>Modules\Def\DrackAosNiSira\Art\other\FlagCourtOfBey.dds</Button>
+			<Path>Modules\Def\DrackAosNiSira\Art\other\FlagCourtOfBeyTransparent.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
 		<CivilizationArtInfo>
 			<Type>ART_DEF_CIVILIZATION_COURTOFMISRAK</Type> 
-			<Button>Modules\NormalModules\DrackAosNiSira\Art\other\FlagCourtOfMisrak.dds</Button>
-			<Path>Modules\NormalModules\DrackAosNiSira\Art\other\FlagCourtOfMisrakTransparent.dds</Path>
+			<Button>Modules\Def\DrackAosNiSira\Art\other\FlagCourtOfMisrak.dds</Button>
+			<Path>Modules\Def\DrackAosNiSira\Art\other\FlagCourtOfMisrakTransparent.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
 	</CivilizationArtInfos>

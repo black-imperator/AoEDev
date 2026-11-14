@@ -8,14 +8,14 @@
 	<CivilizationArtInfos>
 		<CivilizationArtInfo>
 			<Type>ART_DEF_CIVILIZATION_DRACKA_EADIG_KITH</Type> 
-			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Flag\KithFlag.dds</Button>
-			<Path>Modules\NormalModules\DrackAdditionalCivs\Art\Flag\KithFlagTransparent.dds</Path>
+			<Button>Modules\Def\DrackAdditionalCivs\Art\Flag\KithFlag.dds</Button>
+			<Path>Modules\Def\DrackAdditionalCivs\Art\Flag\KithFlagTransparent.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
 		<CivilizationArtInfo> 
 			<Type>ART_DEF_CIVILIZATION_DRACKA_YINARA</Type> 
-			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Flag\Yinara\YinaraFlag.dds</Button>
-			<Path>Modules\NormalModules\DrackAdditionalCivs\Art\Flag\Yinara\YinaraFlagTransparent.dds</Path>
+			<Button>Modules\Def\DrackAdditionalCivs\Art\Flag\Yinara\YinaraFlag.dds</Button>
+			<Path>Modules\Def\DrackAdditionalCivs\Art\Flag\Yinara\YinaraFlagTransparent.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
 	</CivilizationArtInfos>

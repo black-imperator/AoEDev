@@ -8,40 +8,40 @@
 	<LeaderheadArtInfos>
 		<LeaderheadArtInfo>		<!-- Woodrow -->
 			<Type>ART_DEF_LEADER_KITH_WOODROW</Type>
-			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Leader\WoodrowButton.dds</Button>
-			<NIF>Modules\NormalModules\DrackAdditionalCivs\Art\Leader\Woodrow.dds</NIF>
+			<Button>Modules\Def\DrackAdditionalCivs\Art\Leader\WoodrowButton.dds</Button>
+			<NIF>Modules\Def\DrackAdditionalCivs\Art\Leader\Woodrow.dds</NIF>
 			<KFM/>
 			<NoShaderNIF/>
 			<BackgroundKFM/>
 		</LeaderheadArtInfo>
 		<LeaderheadArtInfo>		<!-- Amberly -->
 			<Type>ART_DEF_LEADER_KITH_AMBERLY</Type>
-			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Leader\AmberlyButton.dds</Button>
-			<NIF>Modules\NormalModules\DrackAdditionalCivs\Art\Leader\Amberly.dds</NIF>
+			<Button>Modules\Def\DrackAdditionalCivs\Art\Leader\AmberlyButton.dds</Button>
+			<NIF>Modules\Def\DrackAdditionalCivs\Art\Leader\Amberly.dds</NIF>
 			<KFM/>
 			<NoShaderNIF/>
 			<BackgroundKFM/>
 		</LeaderheadArtInfo>
 		<LeaderheadArtInfo>		<!-- Freda -->
 			<Type>ART_DEF_LEADER_KITH_FREDA</Type>
-			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Leader\FredaButton.dds</Button>
-			<NIF>Modules\NormalModules\DrackAdditionalCivs\Art\Leader\Freda.dds</NIF>
+			<Button>Modules\Def\DrackAdditionalCivs\Art\Leader\FredaButton.dds</Button>
+			<NIF>Modules\Def\DrackAdditionalCivs\Art\Leader\Freda.dds</NIF>
 			<KFM/>
 			<NoShaderNIF/>
 			<BackgroundKFM/>
 		</LeaderheadArtInfo>
 		<LeaderheadArtInfo>		<!-- Kyla -->
 			<Type>ART_DEF_LEADER_KITH_KYLA</Type>
-			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Leader\KylaButton.dds</Button>
-			<NIF>Modules\NormalModules\DrackAdditionalCivs\Art\Leader\Kyla.dds</NIF>
+			<Button>Modules\Def\DrackAdditionalCivs\Art\Leader\KylaButton.dds</Button>
+			<NIF>Modules\Def\DrackAdditionalCivs\Art\Leader\Kyla.dds</NIF>
 			<KFM/>
 			<NoShaderNIF/>
 			<BackgroundKFM/>
 		</LeaderheadArtInfo>
 		<LeaderheadArtInfo>		<!-- Silvia -->
 			<Type>ART_DEF_LEADER_KITH_SILVIA</Type>
-			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Leader\SilviaButton.dds</Button>
-			<NIF>Modules\NormalModules\DrackAdditionalCivs\Art\Leader\Silvia.dds</NIF>
+			<Button>Modules\Def\DrackAdditionalCivs\Art\Leader\SilviaButton.dds</Button>
+			<NIF>Modules\Def\DrackAdditionalCivs\Art\Leader\Silvia.dds</NIF>
 			<KFM/>
 			<NoShaderNIF/>
 			<BackgroundKFM/>

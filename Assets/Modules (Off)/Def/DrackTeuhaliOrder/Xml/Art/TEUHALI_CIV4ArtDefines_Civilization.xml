@@ -8,8 +8,8 @@
 	<CivilizationArtInfos>
 		<CivilizationArtInfo>
 			<Type>ART_DEF_CIVILIZATION_TEUHALI</Type>
-			<Button>Modules\NormalModules\DrackTeuhaliOrder\Art\Flag\Flag of Teuhali Order_Icon.dds</Button>
-			<Path>Modules\NormalModules\DrackTeuhaliOrder\Art\Flag\FlagOfTeuhaliOrder.dds</Path>
+			<Button>Modules\Def\DrackTeuhaliOrder\Art\Flag\Flag of Teuhali Order_Icon.dds</Button>
+			<Path>Modules\Def\DrackTeuhaliOrder\Art\Flag\FlagOfTeuhaliOrder.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
 	</CivilizationArtInfos>

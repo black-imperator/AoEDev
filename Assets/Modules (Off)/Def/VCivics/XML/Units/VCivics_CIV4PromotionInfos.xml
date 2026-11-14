@@ -5,7 +5,7 @@
 		<PromotionInfo>		<!-- Arcane Privilege -->
 			<Type>PROMOTION_ARCANE_PRIVILEGE</Type>
 			<Description>TXT_KEY_PROMOTION_ARCANE_PRIVILEGE</Description>
-			<Button>Modules/NormalModules/VCivics/Art/Interface/Buttons/Promotions/ArcanePrivilege.dds</Button>
+			<Button>Modules/Def/VCivics/Art/Interface/Buttons/Promotions/ArcanePrivilege.dds</Button>
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
@@ -39,7 +39,7 @@
 		<PromotionInfo>		<!-- Arcane Authority -->
 			<Type>PROMOTION_ARCANE_AUTHORITY</Type>
 			<Description>TXT_KEY_PROMOTION_ARCANE_AUTHORITY</Description>
-			<Button>Modules/NormalModules/VCivics/Art/Interface/Buttons/Promotions/ArcaneAuthority.dds</Button>
+			<Button>Modules/Def/VCivics/Art/Interface/Buttons/Promotions/ArcaneAuthority.dds</Button>
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
@@ -70,7 +70,7 @@
 		<PromotionInfo>		<!-- Arcane Supremacy -->
 			<Type>PROMOTION_ARCANE_SUPREMACY</Type>
 			<Description>TXT_KEY_PROMOTION_ARCANE_SUPREMACY</Description>
-			<Button>Modules/NormalModules/VCivics/Art/Interface/Buttons/Promotions/ArcaneSupremacy.dds</Button>
+			<Button>Modules/Def/VCivics/Art/Interface/Buttons/Promotions/ArcaneSupremacy.dds</Button>
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
@@ -176,7 +176,7 @@
 			<Type>PROMOTION_ARCANE_AUXILIARY1</Type>
 			<Description>TXT_KEY_PROMOTION_ARCANE_AUXILIARY1</Description>
 			<Help>TXT_KEY_PROMOTION_ARCANE_AUXILIARY1_HELP</Help>
-			<Button>Modules/NormalModules/VCivics/Art/Interface/Buttons/Promotions/ArcaneAuxiliary1.dds</Button>
+			<Button>Modules/Def/VCivics/Art/Interface/Buttons/Promotions/ArcaneAuxiliary1.dds</Button>
 			<bOverrideHelpText>1</bOverrideHelpText>
 			<iMinLevel>-1</iMinLevel>
 			<PrereqCivics>
@@ -234,7 +234,7 @@
 		<PromotionInfo>		<!-- Arcane Auxiliary 2 - Cleanup -->		
 			<Type>PROMOTION_ARCANE_AUXILIARY2_CLEANUP</Type>
 			<Description>TXT_KEY_PROMOTION_ARCANE_AUXILIARY2</Description>
-			<Button>Modules/NormalModules/VCivics/Art/Interface/Buttons/Promotions/ArcaneAuxiliary2.dds</Button>
+			<Button>Modules/Def/VCivics/Art/Interface/Buttons/Promotions/ArcaneAuxiliary2.dds</Button>
 			<bEffectProm>1</bEffectProm>
 			<iMinLevel>-1</iMinLevel>
 			<PromotionOverwrites>
@@ -285,7 +285,7 @@
 			<Type>PROMOTION_ARCANE_AUXILIARY2</Type>
 			<Description>TXT_KEY_PROMOTION_ARCANE_AUXILIARY2</Description>
 			<Help>TXT_KEY_PROMOTION_ARCANE_AUXILIARY2_HELP</Help>
-			<Button>Modules/NormalModules/VCivics/Art/Interface/Buttons/Promotions/ArcaneAuxiliary2.dds</Button>
+			<Button>Modules/Def/VCivics/Art/Interface/Buttons/Promotions/ArcaneAuxiliary2.dds</Button>
 			<bOverrideHelpText>1</bOverrideHelpText>
 			<iMinLevel>-1</iMinLevel>
 			<PrereqCivics>

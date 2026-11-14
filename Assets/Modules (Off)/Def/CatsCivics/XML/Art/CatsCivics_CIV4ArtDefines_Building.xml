@@ -13,7 +13,7 @@
 			<fInterfaceScale>0.4</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Castle/Castle.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/VCivics_imperial_magistrates_citadel.dds</Button>
+			<Button>Modules/Def/CatsCivics/Art/Interface/Buttons/Buildings/VCivics_imperial_magistrates_citadel.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_IMPERIAL_ARSENAL</Type>
@@ -23,7 +23,7 @@
 			<fInterfaceScale>0.52</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/VCivics_imperial_arsenal.dds</Button>
+			<Button>Modules/Def/CatsCivics/Art/Interface/Buttons/Buildings/VCivics_imperial_arsenal.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_IMPERIAL_REGIONAL_ADMINISTRATION</Type>
@@ -33,7 +33,7 @@
 			<fInterfaceScale>0.4</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Obelisk/Obelisk.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/VCivics_imperial_regional_administration.dds</Button>
+			<Button>Modules/Def/CatsCivics/Art/Interface/Buttons/Buildings/VCivics_imperial_regional_administration.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_IMPERIAL_TRADE_HUB</Type>
@@ -43,7 +43,7 @@
 			<fInterfaceScale>0.6</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Market/Market.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/VCivics_imperial_trade_hub.dds</Button>
+			<Button>Modules/Def/CatsCivics/Art/Interface/Buttons/Buildings/VCivics_imperial_trade_hub.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_IMPERIAL_GRAND_PALACE</Type>
@@ -53,7 +53,7 @@
 			<fInterfaceScale>0.6</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Versailles/Versailles.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/VCivics_imperial_grand_palace.dds</Button>
+			<Button>Modules/Def/CatsCivics/Art/Interface/Buttons/Buildings/VCivics_imperial_grand_palace.dds</Button>
 		</BuildingArtInfo>
 		
 		<!-- Garden Cities -->
@@ -66,7 +66,7 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Improvements/Yggdrasil/LemonTree.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_GreatHollow.dds</Button>
+			<Button>Modules/Def/CatsCivics/Art/Interface/Buttons/Buildings/CC_GreatHollow.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_SYMBIOSIS_BLOOD_THORNS</Type>
@@ -76,7 +76,7 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Improvements/Yggdrasil/LemonTree.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_BloodThorns.dds</Button>
+			<Button>Modules/Def/CatsCivics/Art/Interface/Buttons/Buildings/CC_BloodThorns.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_SYMBIOSIS_ETERNAL_BLOOM</Type>
@@ -86,7 +86,7 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Improvements/Yggdrasil/LemonTree.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_EternalBloom.dds</Button>
+			<Button>Modules/Def/CatsCivics/Art/Interface/Buttons/Buildings/CC_EternalBloom.dds</Button>
 		</BuildingArtInfo>
 		
 		<!-- Crime Lord Stuff -->
@@ -99,7 +99,7 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Sewer/sewer.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_RatWay.dds</Button>
+			<Button>Modules/Def/CatsCivics/Art/Interface/Buttons/Buildings/CC_RatWay.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_RAT_POCKETS</Type>
@@ -109,7 +109,7 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Sewer/sewer.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_RatPocket.dds</Button>
+			<Button>Modules/Def/CatsCivics/Art/Interface/Buttons/Buildings/CC_RatPocket.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_SHADOW_CITY</Type>
@@ -119,7 +119,7 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<NIF>Art/terrain/features/storms/Stormcloud_sound.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_ShadowCity.dds</Button>
+			<Button>Modules/Def/CatsCivics/Art/Interface/Buttons/Buildings/CC_ShadowCity.dds</Button>
 		</BuildingArtInfo>
 		
 		<!-- Mage Spires -->
@@ -132,7 +132,7 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Tower of Alteration/towerofalteration.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Body.dds</Button>
+			<Button>Modules/Def/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Body.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_SPIRE_CREATION</Type>
@@ -142,7 +142,7 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Tower of Alteration/towerofalteration.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Creation.dds</Button>
+			<Button>Modules/Def/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Creation.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_SPIRE_ENCHANTNMENT</Type>
@@ -152,7 +152,7 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Tower of Alteration/towerofalteration.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Enchantment.dds</Button>
+			<Button>Modules/Def/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Enchantment.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_SPIRE_FORCE</Type>
@@ -162,7 +162,7 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Tower of Alteration/towerofalteration.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Force.dds</Button>
+			<Button>Modules/Def/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Force.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_SPIRE_NATURE</Type>
@@ -172,7 +172,7 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Tower of Alteration/towerofalteration.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Nature.dds</Button>
+			<Button>Modules/Def/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Nature.dds</Button>
 		</BuildingArtInfo>
 		
 		<BuildingArtInfo>
@@ -183,7 +183,7 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Tower of Divination/towerofdivination.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Law.dds</Button>
+			<Button>Modules/Def/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Law.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_SPIRE_MIND</Type>
@@ -193,7 +193,7 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Tower of Divination/towerofdivination.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Mind.dds</Button>
+			<Button>Modules/Def/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Mind.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_SPIRE_LIFE</Type>
@@ -203,7 +203,7 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Tower of Divination/towerofdivination.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Life.dds</Button>
+			<Button>Modules/Def/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Life.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_SPIRE_SPIRIT</Type>
@@ -213,7 +213,7 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Tower of Divination/towerofdivination.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Spirit.dds</Button>
+			<Button>Modules/Def/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Spirit.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_SPIRE_SUN</Type>
@@ -223,7 +223,7 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Tower of Divination/towerofdivination.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Sun.dds</Button>
+			<Button>Modules/Def/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Sun.dds</Button>
 		</BuildingArtInfo>
 		
 		<BuildingArtInfo>
@@ -234,7 +234,7 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Tower of the Elements/toweroftheelements.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Air.dds</Button>
+			<Button>Modules/Def/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Air.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_SPIRE_EARTH</Type>
@@ -244,7 +244,7 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Tower of the Elements/toweroftheelements.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Earth.dds</Button>
+			<Button>Modules/Def/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Earth.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_SPIRE_FIRE</Type>
@@ -254,7 +254,7 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Tower of the Elements/toweroftheelements.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Fire.dds</Button>
+			<Button>Modules/Def/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Fire.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_SPIRE_ICE</Type>
@@ -264,7 +264,7 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Tower of the Elements/toweroftheelements.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Ice.dds</Button>
+			<Button>Modules/Def/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Ice.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_SPIRE_WATER</Type>
@@ -274,7 +274,7 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Tower of the Elements/toweroftheelements.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Water.dds</Button>
+			<Button>Modules/Def/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Water.dds</Button>
 		</BuildingArtInfo>
 		
 		<BuildingArtInfo>
@@ -285,7 +285,7 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Tower of Necromancy/towerofnecromancy.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Chaos.dds</Button>
+			<Button>Modules/Def/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Chaos.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_SPIRE_DEATH</Type>
@@ -295,7 +295,7 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Tower of Necromancy/towerofnecromancy.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Death.dds</Button>
+			<Button>Modules/Def/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Death.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_SPIRE_DIMENSIONAL</Type>
@@ -305,7 +305,7 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Tower of Necromancy/towerofnecromancy.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Dimensional.dds</Button>
+			<Button>Modules/Def/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Dimensional.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_SPIRE_ENTROPY</Type>
@@ -315,7 +315,7 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Tower of Necromancy/towerofnecromancy.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Entropy.dds</Button>
+			<Button>Modules/Def/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Entropy.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_SPIRE_SHADOW</Type>
@@ -325,7 +325,7 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Tower of Necromancy/towerofnecromancy.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Shadow.dds</Button>
+			<Button>Modules/Def/CatsCivics/Art/Interface/Buttons/Buildings/CC_Spire_Shadow.dds</Button>
 		</BuildingArtInfo>
 		
 	</BuildingArtInfos>

@@ -11,19 +11,19 @@
 			<Description>Initialize ALL Modules by using the MLF file structure</Description>
 			<Modules>
 				<Module>
-					<Directory>FirstLoad</Directory>
+					<Directory>1</Directory>
 					<bLoad>1</bLoad>
 				</Module>
 				<Module>
-					<Directory>SecondLoad</Directory>
+					<Directory>2</Directory>
 					<bLoad>1</bLoad>
 				</Module>
 				<Module>
-					<Directory>ThirdLoad</Directory>
+					<Directory>3</Directory>
 					<bLoad>1</bLoad>
 				</Module>
 				<Module>
-					<Directory>FourthLoad</Directory>
+					<Directory>4</Directory>
 					<bLoad>1</bLoad>
 				</Module>
 			</Modules>

@@ -12,7 +12,7 @@
 			<bAnimated>1</bAnimated>
 			<fScale>1.5</fScale>
 			<fInterfaceScale>0.3</fInterfaceScale>
-			<NIF>Modules\NormalModules\kcz_Woods\Art\Buildings\onehundredacrewoods\onehundredacrewoods.nif</NIF>
+			<NIF>Modules\Def\kcz_Woods\Art\Buildings\onehundredacrewoods\onehundredacrewoods.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/TerrainFeatures/ForestEvergreen.dds</Button>
 		</BuildingArtInfo>
@@ -24,7 +24,7 @@
 			<fInterfaceScale>0.7</fInterfaceScale>
 			<NIF>Art/Structures/Improvements/Farm/ljosfarm/wildwood.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\kcz_Woods\Art\Interface\Buttons\Buildings\Palaceeert.dds</Button>
+			<Button>Modules\Def\kcz_Woods\Art\Interface\Buttons\Buildings\Palaceeert.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo> <!-- Wise Willow -->
 			<Type>ART_DEF_BUILDING_WISE_WILLOW</Type>
@@ -34,7 +34,7 @@
 			<fInterfaceScale>0.7</fInterfaceScale>
 			<NIF>Art/Structures/Improvements/Farm/ljosfarm/wildwood.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\kcz_Woods\Art\Interface\Buttons\Buildings\wisewillow.dds</Button>
+			<Button>Modules\Def\kcz_Woods\Art\Interface\Buttons\Buildings\wisewillow.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_POND</Type>

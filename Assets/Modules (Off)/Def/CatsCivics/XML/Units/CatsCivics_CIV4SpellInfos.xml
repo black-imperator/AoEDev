@@ -54,7 +54,7 @@
 			<iChangePopulation>-1</iChangePopulation>
 			<PyResult>spellRemoveFromCityNomad(pCaster)</PyResult>
 			<Effect>EFFECT_SPELL1</Effect>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Promotions/Nomadic.dds</Button>
+			<Button>Modules/Def/CatsCivics/Art/Interface/Buttons/Promotions/Nomadic.dds</Button>
 		</SpellInfo>
 		<!-- 
 		<SpellInfo>			Migrate In
@@ -72,7 +72,7 @@
 			<bSacrificeCaster>1</bSacrificeCaster>
 			<iChangePopulation>1</iChangePopulation>
 			<Effect>EFFECT_SPELL1</Effect>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Promotions/Nomadic.dds</Button>
+			<Button>Modules/Def/CatsCivics/Art/Interface/Buttons/Promotions/Nomadic.dds</Button>
 		</SpellInfo>
 		-->
 		<SpellInfo>			<!-- Supply of Food -->
@@ -94,7 +94,7 @@
 			<PyRequirement>reqFertility(pCaster)</PyRequirement>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS2D_POSITIVE_DINK</Sound>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Spells/Food.dds</Button>
+			<Button>Modules/Def/CatsCivics/Art/Interface/Buttons/Spells/Food.dds</Button>
 		</SpellInfo>
 		<SpellInfo>			<!-- Supply of Valuables -->
 			<Type>SPELL_SUPPLY_VALUABLES</Type>
@@ -115,7 +115,7 @@
 			<PyRequirement>reqValuable(pCaster)</PyRequirement>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS2D_POSITIVE_DINK</Sound>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Spells/Valuable.dds</Button>
+			<Button>Modules/Def/CatsCivics/Art/Interface/Buttons/Spells/Valuable.dds</Button>
 		</SpellInfo>
 		<SpellInfo>			<!-- Supply of Work Material -->
 			<Type>SPELL_SUPPLY_WORKABLES</Type>
@@ -136,7 +136,7 @@
 			<PyRequirement>reqWorkable(pCaster)</PyRequirement>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS2D_POSITIVE_DINK</Sound>
-			<Button>Modules/NormalModules/CatsCivics/Art/Interface/Buttons/Spells/Material.dds</Button>
+			<Button>Modules/Def/CatsCivics/Art/Interface/Buttons/Spells/Material.dds</Button>
 		</SpellInfo>
 	</SpellInfos>
 </Civ4SpellInfos>

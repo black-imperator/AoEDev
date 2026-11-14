@@ -136,7 +136,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- UNIT_TIDECALLER -->
 			<Type>ART_DEF_UNIT_TIDECALLER</Type>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Units/Tidecaller.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Units/Tidecaller.dds</Button>
 			<fScale>0.66</fScale>
 			<fInterfaceScale>0.8</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -161,7 +161,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- UNIT_TIDEBINDER -->
 			<Type>ART_DEF_UNIT_TIDEBINDER</Type>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Units/Tidebinder.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Units/Tidebinder.dds</Button>
 			<fScale>0.66</fScale>
 			<fInterfaceScale>0.8</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -186,7 +186,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- UNIT_TIDEMASTER -->
 			<Type>ART_DEF_UNIT_TIDEMASTER</Type>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Units/Tidemaster.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Units/Tidemaster.dds</Button>
 			<fScale>0.66</fScale>
 			<fInterfaceScale>0.8</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -211,7 +211,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>		<!--sea drake-->
 			<Type>ART_DEF_UNIT_BONDED_SEA_DRAKE</Type>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Units/BondedSeaDrake.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Units/BondedSeaDrake.dds</Button>
 			<fScale>0.96</fScale>
 			<fInterfaceScale>1.2</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -830,7 +830,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- UNIT_SKAARAJ -->
 			<Type>ART_DEF_UNIT_SKAARAJ</Type>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Units/Skaaraj.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Units/Skaaraj.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -858,7 +858,7 @@
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/NormalModules/ViciousSeas/Art/Units/Heroes/Hemahs Reflection/Hemah2.nif</NIF>
+			<NIF>Modules/Def/ViciousSeas/Art/Units/Heroes/Hemahs Reflection/Hemah2.nif</NIF>
 			<KFM>Art/Units/Heroes/Hemah/TaoistMissionary.kfm</KFM>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
@@ -876,14 +876,14 @@
 		</UnitArtInfo>	
 		<UnitArtInfo>  <!-- UNIT_NIGHTMARE_AIFON-->
 			<Type>ART_DEF_UNIT_NIGHTMARE_AIFON</Type>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Units/AifonNightmareButton.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Units/AifonNightmareButton.dds</Button>
 			<fScale>2</fScale>
 			<fInterfaceScale>0.9</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/NormalModules/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Nightmare/NightmareAifon.nif</NIF>
+			<NIF>Modules/Def/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Nightmare/NightmareAifon.nif</NIF>
 			<KFM>art/animations/warrior/warrior.kfm</KFM>
-			<SHADERNIF>Modules/NormalModules/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Nightmare/AnglerMan.nif</SHADERNIF>
+			<SHADERNIF>Modules/Def/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Nightmare/AnglerMan.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -900,14 +900,14 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- Dream Aifon -->
 			<Type>ART_DEF_UNIT_DREAMER</Type> 
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Units/AifonDreamAdeptButton.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Units/AifonDreamAdeptButton.dds</Button>
 			<fScale>0.5</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/NormalModules/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Dreamer/Mage_Water.nif</NIF>
-			<KFM>Modules/NormalModules/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Dreamer/Mage_Water.kfm</KFM>
-			<SHADERNIF>Modules/NormalModules/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Dreamer/Mage_Water_FX.nif</SHADERNIF>
+			<NIF>Modules/Def/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Dreamer/Mage_Water.nif</NIF>
+			<KFM>Modules/Def/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Dreamer/Mage_Water.kfm</KFM>
+			<SHADERNIF>Modules/Def/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Dreamer/Mage_Water_FX.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -926,14 +926,14 @@
 		</UnitArtInfo>
 		<UnitArtInfo><!-- Dream defender Aifon -->
 			<Type>ART_DEF_UNIT_DREAMDEFENDER</Type> 
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Units/AifonDreamWarriorButton.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Units/AifonDreamWarriorButton.dds</Button>
 			<fScale>0.5</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/NormalModules/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Defender/Mage_Water.nif</NIF>
-			<KFM>Modules/NormalModules/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Dreamer/Mage_Water.kfm</KFM>
-			<SHADERNIF>Modules/NormalModules/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Defender/Mage_Water_FX.nif</SHADERNIF>
+			<NIF>Modules/Def/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Defender/Mage_Water.nif</NIF>
+			<KFM>Modules/Def/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Dreamer/Mage_Water.kfm</KFM>
+			<SHADERNIF>Modules/Def/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Defender/Mage_Water_FX.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -957,7 +957,7 @@
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/NormalModules/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Champion/Knightstemplar.nif</NIF>
+			<NIF>Modules/Def/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Champion/Knightstemplar.nif</NIF>
 			<KFM>Art/animations/knigts_templar/Knightstemplar blood.kfm</KFM>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
@@ -980,7 +980,7 @@
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/NormalModules/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Marksman/Unique_Babylon_Bowman.nif</NIF>
+			<NIF>Modules/Def/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Marksman/Unique_Babylon_Bowman.nif</NIF>
 			<KFM>Art/Units/Longbowman_Middle_East/Unique_Babylon_Bowman.kfm</KFM>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
@@ -1003,8 +1003,8 @@
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/NormalModules/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Hunter/Mage_Water.nif</NIF>
-			<KFM>Modules/NormalModules/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Dreamer/Mage_Water.kfm</KFM>
+			<NIF>Modules/Def/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Hunter/Mage_Water.nif</NIF>
+			<KFM>Modules/Def/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Dreamer/Mage_Water.kfm</KFM>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -1026,8 +1026,8 @@
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/NormalModules/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Hunter/Mage_Water.nif</NIF>
-			<KFM>Modules/NormalModules/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Dreamer/Mage_Water.kfm</KFM>
+			<NIF>Modules/Def/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Hunter/Mage_Water.nif</NIF>
+			<KFM>Modules/Def/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Dreamer/Mage_Water.kfm</KFM>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -1049,7 +1049,7 @@
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/NormalModules/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Longbowman/Unique_Babylon_Bowman.nif</NIF>
+			<NIF>Modules/Def/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Longbowman/Unique_Babylon_Bowman.nif</NIF>
 			<KFM>Art/Units/Longbowman_Middle_East/Unique_Babylon_Bowman.kfm</KFM>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
@@ -1067,14 +1067,14 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- Dream Spearwomen Aifon -->
 			<Type>ART_DEF_UNIT_DREAMSPEARWOMEN</Type> 
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Units/SpearwomenAifon.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Units/SpearwomenAifon.dds</Button>
 			<fScale>0.5</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/NormalModules/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Spearwomen/Mage_Water.nif</NIF>
-			<KFM>Modules/NormalModules/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Dreamer/Mage_Water.kfm</KFM>
-			<SHADERNIF>Modules/NormalModules/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Spearwomen/Mage_Water_FX.nif</SHADERNIF>
+			<NIF>Modules/Def/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Spearwomen/Mage_Water.nif</NIF>
+			<KFM>Modules/Def/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Dreamer/Mage_Water.kfm</KFM>
+			<SHADERNIF>Modules/Def/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Spearwomen/Mage_Water_FX.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -1098,7 +1098,7 @@
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/NormalModules/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Archer/Archer.nif</NIF>
+			<NIF>Modules/Def/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Archer/Archer.nif</NIF>
 			<KFM>Art/animations/Archer/Archer blood.kfm</KFM>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
@@ -1116,12 +1116,12 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- UNIT_UNDINE -->
 			<Type>ART_DEF_UNIT_UNDINE</Type>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Units/UndineButton.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Units/UndineButton.dds</Button>
 			<fScale>24.8</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/NormalModules/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Undine/Undine.nif</NIF>
+			<NIF>Modules/Def/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Undine/Undine.nif</NIF>
 			<KFM>Art/animations/maar2/maar.kfm</KFM>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
@@ -1139,12 +1139,12 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- UNIT_UNMADE -->
 			<Type>ART_DEF_UNIT_UNMADE</Type>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Units/UnmadeButton.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Units/UnmadeButton.dds</Button>
 			<fScale>24.8</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/NormalModules/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Unmade/Unmade.nif</NIF>
+			<NIF>Modules/Def/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Unmade/Unmade.nif</NIF>
 			<KFM>Art/animations/maar2/maar.kfm</KFM>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
@@ -1162,12 +1162,12 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- UNIT_NIGHTMARE HAG -->
 			<Type>ART_DEF_UNIT_NIGHTMARE_HAG</Type>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Units/NightmareHag.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Units/NightmareHag.dds</Button>
 			<fScale>0.43</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/NormalModules/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Hag/NightmareHag.nif</NIF>
+			<NIF>Modules/Def/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Hag/NightmareHag.nif</NIF>
 			<KFM>art/units/civs/lanun/seahag/medievalspy.kfm</KFM>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
@@ -1187,12 +1187,12 @@
 		</UnitArtInfo>
 		<UnitArtInfo>  <!-- UNIT_WORKER in UNIT_ARTSTYLE_AIFON -->
 			<Type>ART_DEF_UNIT_WORKER_AIFON</Type>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Units/FacelessWorker.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Units/FacelessWorker.dds</Button>
 			<fScale>0.5</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/NormalModules/ViciousSeas/Art/Units/Civs/DreamoftheAifons/worker/worker.nif</NIF>
+			<NIF>Modules/Def/ViciousSeas/Art/Units/Civs/DreamoftheAifons/worker/worker.nif</NIF>
 			<KFM>Art/Units/Worker/Worker.kfm</KFM>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
@@ -1215,7 +1215,7 @@
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/NormalModules/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Horror/HorrorTent.nif</NIF>
+			<NIF>Modules/Def/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Horror/HorrorTent.nif</NIF>
 			<KFM>Art/Units/Civs/Scions/Horror/Horror.kfm</KFM>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
@@ -1233,12 +1233,12 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- UNIT_EMPTY -->
 			<Type>ART_DEF_UNIT_EMPTY</Type>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Units/EmptyButton.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Units/EmptyButton.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/NormalModules/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Empty/shade.nif</NIF>
+			<NIF>Modules/Def/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Empty/shade.nif</NIF>
 			<KFM>Art/Units/Warrior/Warrior.kfm</KFM>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
@@ -1256,12 +1256,12 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- UNIT_HUNGER -->
 			<Type>ART_DEF_UNIT_HUNGER</Type>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Units/EmptyHungerButton.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Units/EmptyHungerButton.dds</Button>
 			<fScale>0.5</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/NormalModules/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Hunger/Hunger.nif</NIF>
+			<NIF>Modules/Def/ViciousSeas/Art/Units/Civs/DreamoftheAifons/Hunger/Hunger.nif</NIF>
 			<KFM>Art/Units/Swordsman/Swordsman.kfm</KFM>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
@@ -1279,12 +1279,12 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- UNIT_HORSEMAN- UNIT_WOLF UNIT_ANIMAL -->
 			<Type>ART_DEF_UNIT_PET_NIGHTMARE</Type>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Units/NightmarePetButton.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Units/NightmarePetButton.dds</Button>
 			<fScale>0.66</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Modules/NormalModules/ViciousSeas/Art/Units/Civs/DreamoftheAifons/PetHorror/NightmarePet.nif</NIF>
+			<NIF>Modules/Def/ViciousSeas/Art/Units/Civs/DreamoftheAifons/PetHorror/NightmarePet.nif</NIF>
 			<KFM>Art/animations/Wolf/Wolf.kfm</KFM>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
@@ -1326,7 +1326,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>  <!-- UNIT_AIFONSTYGIAN -->
 			<Type>ART_DEF_UNIT_AIFON_STYGIAN</Type>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Units/AifonStygian.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Units/AifonStygian.dds</Button>
 			<fScale>0.53</fScale>
 			<fInterfaceScale>0.9</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -1350,7 +1350,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>  <!-- UNIT_AIFON_DROWN -->
 			<Type>ART_DEF_UNIT_AIFON_DROWN</Type>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Units/EkaterinaBurmakDrown.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Units/EkaterinaBurmakDrown.dds</Button>
 			<fScale>0.46</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>

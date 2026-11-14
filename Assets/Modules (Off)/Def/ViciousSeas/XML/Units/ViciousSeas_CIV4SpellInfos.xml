@@ -68,7 +68,7 @@
 			<PyRequirement>reqDrowningWaves(pCaster)</PyRequirement>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_MOTHER_LODE</Sound>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Spells/DrowningWaves.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Spells/DrowningWaves.dds</Button>
 		</SpellInfo>
 		<SpellInfo>			<!-- Erosion Water 1 -->
 			<Type>SPELL_EROSION</Type>
@@ -94,7 +94,7 @@
 			<PromotionPrereq1>PROMOTION_WATER1</PromotionPrereq1>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_SPELL_SPRING</Sound>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Spells/Erosion.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Spells/Erosion.dds</Button>
 		</SpellInfo>
 		<SpellInfo>			<!-- Nature&water 2 - Sea Sneak -->
 			<Type>SPELL_SEA_SNEAK</Type>
@@ -128,7 +128,7 @@
 			<bImmuneNeutral>1</bImmuneNeutral>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_SWORD_CHECK</Sound>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Spells/SeaSneak.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Spells/SeaSneak.dds</Button>
 		</SpellInfo>
 		<SpellInfo>			<!-- Surging Tides-->
 			<Type>SPELL_SURGING_TIDES</Type>
@@ -148,7 +148,7 @@
 			<PyRequirement>reqSurging(pCaster)</PyRequirement>
 			<Effect>EFFECT_VITALIZE</Effect>
 			<Sound>AS3D_VITALIZE</Sound>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Spells/SurgingTides.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Spells/SurgingTides.dds</Button>
 		</SpellInfo>
 		<SpellInfo>			<!-- Tsunami (Kraken SPAWN)-->
 			<Type>SPELL_TSUNAMI3</Type>
@@ -268,7 +268,7 @@
 			<PyRequirement>reqPirateCity(pCaster)</PyRequirement>
 			<Effect>EFFECT_SCORCH</Effect>
 			<Sound>AS3D_SPELL_DEFILE</Sound>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Promotions/PiratePrince.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Promotions/PiratePrince.dds</Button>
 		</SpellInfo>
 		<SpellInfo>			<!-- Found Howling Reef -->
 			<Type>SPELL_CREATE_HOWLING_REEF</Type>
@@ -291,7 +291,7 @@
 			<PyRequirement>reqHowlingReef(pCaster)</PyRequirement>
 			<Effect>EFFECT_SCORCH</Effect>
 			<Sound>AS3D_SPELL_DEFILE</Sound>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Promotions/DrownCaller.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Promotions/DrownCaller.dds</Button>
 		</SpellInfo>
 		<SpellInfo>			<!-- Seek Leviathan -->
 			<Type>SPELL_SEEK_LEVIATHAN</Type>
@@ -336,7 +336,7 @@
 			<bHasCasted>1</bHasCasted>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_SUB_SELECT</Sound>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Spells/SirensCall.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Spells/SirensCall.dds</Button>
 			<AddPromotions>
 				<AddPromotion>PROMOTION_SLEEPWALKING</AddPromotion>
 			</AddPromotions>
@@ -369,7 +369,7 @@
 			<bHasCasted>1</bHasCasted>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_SPELL_SPECTRE</Sound>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Spells/FearofIsolation.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Spells/FearofIsolation.dds</Button>
 			<AddPromotions>
 				<AddPromotion>PROMOTION_NIGHTMARE_AIFON_MASK</AddPromotion>
 			</AddPromotions>
@@ -392,7 +392,7 @@
 			<PyRequirement>reqGlimpseUnseen(pCaster)</PyRequirement>
 			<Effect>EFFECT_SNOWFALL</Effect>
 			<Sound>AS3D_SPELL_EARTHQUAKE</Sound>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Spells/GlimpseUnseen.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Spells/GlimpseUnseen.dds</Button>
 		</SpellInfo>
 	</SpellInfos>
 </Civ4SpellInfos>

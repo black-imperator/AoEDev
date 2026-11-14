@@ -8,56 +8,56 @@
 	<LeaderheadArtInfos>
 		<LeaderheadArtInfo>
 			<Type>ART_DEF_LEADER_TUNDOSS</Type>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/LeaderHeads/TundossButton.dds</Button>
-			<NIF>Modules/NormalModules/ViciousSeas/Art/Interface/LeaderHeads/Tundoss.dds</NIF>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/LeaderHeads/TundossButton.dds</Button>
+			<NIF>Modules/Def/ViciousSeas/Art/Interface/LeaderHeads/Tundoss.dds</NIF>
 			<KFM/>
 			<NoShaderNIF/>
 			<BackgroundKFM/>
 		</LeaderheadArtInfo>
 	    <LeaderheadArtInfo>
 			<Type>ART_DEF_LEADER_PODALTUR</Type>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/LeaderHeads/PodalturButton.dds</Button>
-			<NIF>Modules/NormalModules/ViciousSeas/Art/Interface/LeaderHeads/Podaltur.dds</NIF>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/LeaderHeads/PodalturButton.dds</Button>
+			<NIF>Modules/Def/ViciousSeas/Art/Interface/LeaderHeads/Podaltur.dds</NIF>
 			<KFM/>
 			<NoShaderNIF/>
 			<BackgroundKFM/>
 	</LeaderheadArtInfo>
 		<LeaderheadArtInfo>
 			<Type>ART_DEF_LEADER_CIMESIAT</Type>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/LeaderHeads/CimesiatButton.dds</Button>
-			<NIF>Modules/NormalModules/ViciousSeas/Art/Interface/LeaderHeads/Cimesiat.dds</NIF>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/LeaderHeads/CimesiatButton.dds</Button>
+			<NIF>Modules/Def/ViciousSeas/Art/Interface/LeaderHeads/Cimesiat.dds</NIF>
 			<KFM/>
 			<NoShaderNIF/>
 			<BackgroundKFM/>
 		</LeaderheadArtInfo>
 		<LeaderheadArtInfo>
 			<Type>ART_DEF_LEADER_TARGASSAT</Type>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/LeaderHeads/TargassatButton.dds</Button>
-			<NIF>Modules/NormalModules/ViciousSeas/Art/Interface/LeaderHeads/Targassat.dds</NIF>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/LeaderHeads/TargassatButton.dds</Button>
+			<NIF>Modules/Def/ViciousSeas/Art/Interface/LeaderHeads/Targassat.dds</NIF>
 			<KFM/>
 			<NoShaderNIF/>
 			<BackgroundKFM/>
 		</LeaderheadArtInfo>
 		<LeaderheadArtInfo>
 			<Type>ART_DEF_LEADER_MIRROR</Type>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/LeaderHeads/Ophelia_BlueDesignButton.dds</Button>
-			<NIF>Modules/NormalModules/ViciousSeas/Art/Interface/LeaderHeads/Ophelia_BlueDesign.dds</NIF>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/LeaderHeads/Ophelia_BlueDesignButton.dds</Button>
+			<NIF>Modules/Def/ViciousSeas/Art/Interface/LeaderHeads/Ophelia_BlueDesign.dds</NIF>
 			<KFM/>
 			<NoShaderNIF/>
 			<BackgroundKFM/>
 		</LeaderheadArtInfo>
 		<LeaderheadArtInfo>
 			<Type>ART_DEF_LEADER_HASTUR</Type>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/LeaderHeads/HasturButton.dds</Button>
-			<NIF>Modules/NormalModules/ViciousSeas/Art/Interface/LeaderHeads/Hastur.dds</NIF>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/LeaderHeads/HasturButton.dds</Button>
+			<NIF>Modules/Def/ViciousSeas/Art/Interface/LeaderHeads/Hastur.dds</NIF>
 			<KFM/>
 			<NoShaderNIF/>
 			<BackgroundKFM/>
 		</LeaderheadArtInfo>
 		<LeaderheadArtInfo>
 			<Type>ART_DEF_LEADER_DREAM_CONDATIS</Type>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/LeaderHeads/CondatisDaneenWilkerson2.dds</Button>
-			<NIF>Modules/NormalModules/ViciousSeas/Art/Interface/LeaderHeads/CondatisDaneenWilkerson.dds</NIF>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/LeaderHeads/CondatisDaneenWilkerson2.dds</Button>
+			<NIF>Modules/Def/ViciousSeas/Art/Interface/LeaderHeads/CondatisDaneenWilkerson.dds</NIF>
 			<KFM/>
 			<NoShaderNIF/>
 			<BackgroundKFM/>

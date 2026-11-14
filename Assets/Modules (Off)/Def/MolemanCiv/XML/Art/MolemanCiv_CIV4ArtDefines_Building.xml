@@ -12,9 +12,9 @@
 			<bAnimated>0</bAnimated>
 			<fScale>1.9</fScale>
 			<fInterfaceScale>0.4</fInterfaceScale>
-			<NIF>Modules/NormalModules/MolemanCiv/Art/Buildings/Moleman_Palace/moleman_palace.nif</NIF>
+			<NIF>Modules/Def/MolemanCiv/Art/Buildings/Moleman_Palace/moleman_palace.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/Buildings/molemanpalace.dds</Button>
+			<Button>Modules/Def/MolemanCiv/Art/Interface/Buttons/Buildings/molemanpalace.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_MOLEMAN_TUNNELS</Type>
@@ -22,9 +22,9 @@
 			<bAnimated>0</bAnimated>
 			<fScale>1</fScale>
 			<fInterfaceScale>0.4</fInterfaceScale>
-			<NIF>Modules/NormalModules/MolemanCiv/Art/Buildings/Moleman_Tunnel/moleman_tunnel_dirt.nif</NIF>
+			<NIF>Modules/Def/MolemanCiv/Art/Buildings/Moleman_Tunnel/moleman_tunnel_dirt.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/Buildings/tunnel1.dds</Button>
+			<Button>Modules/Def/MolemanCiv/Art/Interface/Buttons/Buildings/tunnel1.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_MOLEMAN_TUNNELS_BEDROCK</Type>
@@ -32,9 +32,9 @@
 			<bAnimated>0</bAnimated>
 			<fScale>1</fScale>
 			<fInterfaceScale>0.4</fInterfaceScale>
-			<NIF>Modules/NormalModules/MolemanCiv/Art/Buildings/Moleman_Tunnel/moleman_tunnel.nif</NIF>
+			<NIF>Modules/Def/MolemanCiv/Art/Buildings/Moleman_Tunnel/moleman_tunnel.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/Buildings/tunnel2.dds</Button>
+			<Button>Modules/Def/MolemanCiv/Art/Interface/Buttons/Buildings/tunnel2.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_MOLEMAN_TUNNELS_GRANITE</Type>
@@ -42,9 +42,9 @@
 			<bAnimated>0</bAnimated>
 			<fScale>1</fScale>
 			<fInterfaceScale>0.4</fInterfaceScale>
-			<NIF>Modules/NormalModules/MolemanCiv/Art/Buildings/Moleman_Tunnel/moleman_tunnel_granite.nif</NIF>
+			<NIF>Modules/Def/MolemanCiv/Art/Buildings/Moleman_Tunnel/moleman_tunnel_granite.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/Buildings/tunnel3.dds</Button>
+			<Button>Modules/Def/MolemanCiv/Art/Interface/Buttons/Buildings/tunnel3.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_MOLEMAN_LARDER</Type>
@@ -52,9 +52,9 @@
 			<bAnimated>0</bAnimated>
 			<fScale>1</fScale>
 			<fInterfaceScale>0.4</fInterfaceScale>
-			<NIF>Modules/NormalModules/MolemanCiv/Art/Buildings/Moleman_Larder/larder.nif</NIF>
+			<NIF>Modules/Def/MolemanCiv/Art/Buildings/Moleman_Larder/larder.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/Buildings/larder.dds</Button>
+			<Button>Modules/Def/MolemanCiv/Art/Interface/Buttons/Buildings/larder.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_MOLEMAN_SECRET_TUNNEL</Type>
@@ -62,9 +62,9 @@
 			<bAnimated>0</bAnimated>
 			<fScale>1</fScale>
 			<fInterfaceScale>0.4</fInterfaceScale>
-			<NIF>Modules/NormalModules/MolemanCiv/Art/Buildings/Moleman_Tunnel/moleman_tunnel_granite.nif</NIF>
+			<NIF>Modules/Def/MolemanCiv/Art/Buildings/Moleman_Tunnel/moleman_tunnel_granite.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/Buildings/secretunnel.dds</Button>
+			<Button>Modules/Def/MolemanCiv/Art/Interface/Buttons/Buildings/secretunnel.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_MOLEMAN_SACRED_CAVERN</Type>
@@ -72,9 +72,9 @@
 			<bAnimated>0</bAnimated>
 			<fScale>1.2</fScale>
 			<fInterfaceScale>0.4</fInterfaceScale>
-			<NIF>Modules/NormalModules/MolemanCiv/Art/Buildings/Moleman_Tunnel/moleman_tunnel_sacred.nif</NIF>
+			<NIF>Modules/Def/MolemanCiv/Art/Buildings/Moleman_Tunnel/moleman_tunnel_sacred.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/Buildings/sacredcavern.dds</Button>
+			<Button>Modules/Def/MolemanCiv/Art/Interface/Buttons/Buildings/sacredcavern.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_MOLEMAN_DEEP_BURROW</Type>
@@ -82,9 +82,9 @@
 			<bAnimated>0</bAnimated>
 			<fScale>1.2</fScale>
 			<fInterfaceScale>0.4</fInterfaceScale>
-			<NIF>Modules/NormalModules/MolemanCiv/Art/Buildings/Moleman_Tunnel/moleman_tunnel_burrow.nif</NIF>
+			<NIF>Modules/Def/MolemanCiv/Art/Buildings/Moleman_Tunnel/moleman_tunnel_burrow.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/Buildings/deepburrow.dds</Button>
+			<Button>Modules/Def/MolemanCiv/Art/Interface/Buttons/Buildings/deepburrow.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_MOLEMAN_WORM_TRAP</Type>
@@ -92,9 +92,9 @@
 			<bAnimated>0</bAnimated>
 			<fScale>1</fScale>
 			<fInterfaceScale>0.4</fInterfaceScale>
-			<NIF>Modules/NormalModules/MolemanCiv/Art/Buildings/Moleman_Tunnel/moleman_tunnel_dirt.nif</NIF>
+			<NIF>Modules/Def/MolemanCiv/Art/Buildings/Moleman_Tunnel/moleman_tunnel_dirt.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/Buildings/wormtrap.dds</Button>
+			<Button>Modules/Def/MolemanCiv/Art/Interface/Buttons/Buildings/wormtrap.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_MOLEMAN_UNDERMINE</Type>
@@ -102,9 +102,9 @@
 			<bAnimated>0</bAnimated>
 			<fScale>1</fScale>
 			<fInterfaceScale>0.4</fInterfaceScale>
-			<NIF>Modules/NormalModules/MolemanCiv/Art/Buildings/Moleman_Tunnel/moleman_tunnel_granite.nif</NIF>
+			<NIF>Modules/Def/MolemanCiv/Art/Buildings/Moleman_Tunnel/moleman_tunnel_granite.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/Buildings/undermine.dds</Button>
+			<Button>Modules/Def/MolemanCiv/Art/Interface/Buttons/Buildings/undermine.dds</Button>
 		</BuildingArtInfo>
 			<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_CAGE_MOLEMAN</Type>
@@ -114,7 +114,7 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Cage/Cage.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/Buildings/cagemoleman.dds</Button>
+			<Button>Modules/Def/MolemanCiv/Art/Interface/Buttons/Buildings/cagemoleman.dds</Button>
 		</BuildingArtInfo>
 	</BuildingArtInfos>
 </Civ4ArtDefines>

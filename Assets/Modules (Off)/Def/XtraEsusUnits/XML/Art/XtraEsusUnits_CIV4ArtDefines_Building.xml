@@ -14,7 +14,7 @@
 			<fInterfaceScale>0.7</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Temple of the Veil/undeadtemple.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/XtraEsusUnits/Art/Interface/Buttons/Buildings/aphoticthroneupgrade.dds</Button>
+			<Button>Modules/Def/XtraEsusUnits/Art/Interface/Buttons/Buildings/aphoticthroneupgrade.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_APHOTIC_THRONE_FAERYL_UPGRADE</Type>
@@ -24,7 +24,7 @@
 			<fInterfaceScale>0.7</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Temple of the Veil/undeadtemple.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/XtraEsusUnits/Art/Interface/Buttons/Buildings/aphoticthroneupgradefaeryl.dds</Button>
+			<Button>Modules/Def/XtraEsusUnits/Art/Interface/Buttons/Buildings/aphoticthroneupgradefaeryl.dds</Button>
 		</BuildingArtInfo>
 	</BuildingArtInfos>
 </Civ4ArtDefines>

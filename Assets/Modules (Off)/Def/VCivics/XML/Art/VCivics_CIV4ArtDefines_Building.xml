@@ -10,7 +10,7 @@
 			<fInterfaceScale>0.4</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Castle/Castle.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/VCivics/Art/Interface/Buttons/Buildings/VCivics_imperial_magistrates_citadel.dds</Button>
+			<Button>Modules/Def/VCivics/Art/Interface/Buttons/Buildings/VCivics_imperial_magistrates_citadel.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_IMPERIAL_ARSENAL</Type>
@@ -20,7 +20,7 @@
 			<fInterfaceScale>0.52</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/VCivics/Art/Interface/Buttons/Buildings/VCivics_imperial_arsenal.dds</Button>
+			<Button>Modules/Def/VCivics/Art/Interface/Buttons/Buildings/VCivics_imperial_arsenal.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_IMPERIAL_REGIONAL_ADMINISTRATION</Type>
@@ -30,7 +30,7 @@
 			<fInterfaceScale>0.4</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Obelisk/Obelisk.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/VCivics/Art/Interface/Buttons/Buildings/VCivics_imperial_regional_administration.dds</Button>
+			<Button>Modules/Def/VCivics/Art/Interface/Buttons/Buildings/VCivics_imperial_regional_administration.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_IMPERIAL_TRADE_HUB</Type>
@@ -40,7 +40,7 @@
 			<fInterfaceScale>0.6</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Market/Market.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/VCivics/Art/Interface/Buttons/Buildings/VCivics_imperial_trade_hub.dds</Button>
+			<Button>Modules/Def/VCivics/Art/Interface/Buttons/Buildings/VCivics_imperial_trade_hub.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_IMPERIAL_GRAND_PALACE</Type>
@@ -50,7 +50,7 @@
 			<fInterfaceScale>0.6</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Versailles/Versailles.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/VCivics/Art/Interface/Buttons/Buildings/VCivics_imperial_grand_palace.dds</Button>
+			<Button>Modules/Def/VCivics/Art/Interface/Buttons/Buildings/VCivics_imperial_grand_palace.dds</Button>
 		</BuildingArtInfo>
 	</BuildingArtInfos>
 </Civ4ArtDefines>

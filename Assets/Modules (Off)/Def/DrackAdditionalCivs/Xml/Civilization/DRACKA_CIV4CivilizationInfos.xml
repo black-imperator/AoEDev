@@ -332,7 +332,7 @@
 					<iCultureDistanceChange>-1</iCultureDistanceChange>
 				</TerrainCultureDistanceChange>
 			</TerrainCultureDistanceChanges>
-			<Image>Modules\NormalModules\DrackAdditionalCivs\Art\Flag/KithBanner.dds</Image>
+			<Image>Modules\Def\DrackAdditionalCivs\Art\Flag/KithBanner.dds</Image>
 		</CivilizationInfo>
 		<CivilizationInfo> <!-- Yinara -->
 			<Type>CIVILIZATION_DRACKA_YINARA</Type>
@@ -526,7 +526,7 @@
 			<CivTrait>TRAIT_DRACKA_YINARA</CivTrait>
 			<Hero>UNIT_YINARA_YAKUMO</Hero>
 			<DefaultRace>NONE</DefaultRace>
-			<Image>Modules\NormalModules\DrackAdditionalCivs\Art\Flag/Yinara/YinaraBanner.dds</Image>
+			<Image>Modules\Def\DrackAdditionalCivs\Art\Flag/Yinara/YinaraBanner.dds</Image>
 		</CivilizationInfo>
 	</CivilizationInfos>
 </Civ4CivilizationInfos>

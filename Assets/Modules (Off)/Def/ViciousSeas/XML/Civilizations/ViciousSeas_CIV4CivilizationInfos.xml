@@ -329,7 +329,7 @@
 					<iCultureDistanceChange>-1</iCultureDistanceChange>
 				</FeatureCultureDistanceChange>
 			</FeatureCultureDistanceChanges>
-			<Image>Modules/NormalModules/ViciousSeas/Art/Interface/Popups/Civ/BezeriBanner.dds</Image>
+			<Image>Modules/Def/ViciousSeas/Art/Interface/Popups/Civ/BezeriBanner.dds</Image>
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
 					<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
@@ -836,7 +836,7 @@
 					<iCultureDistanceChange>1</iCultureDistanceChange>
 				</TerrainCultureDistanceChange>
 			</TerrainCultureDistanceChanges>
-			<Image>Modules/NormalModules/ViciousSeas/Art/Interface/Popups/Civ/AifonBorder.dds</Image>
+			<Image>Modules/Def/ViciousSeas/Art/Interface/Popups/Civ/AifonBorder.dds</Image>
 		</CivilizationInfo>
 		<CivilizationInfo><!-- Lanun -->
 			<Type>CIVILIZATION_LANUN</Type>

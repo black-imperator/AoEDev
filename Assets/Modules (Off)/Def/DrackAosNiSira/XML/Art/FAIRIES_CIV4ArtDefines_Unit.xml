@@ -32,7 +32,7 @@
 		</UnitArtInfo>
         <UnitArtInfo>	<!-- Archer-->
 			<Type>ART_DEF_UNIT_FAIRIES_ARCHER</Type>
-			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/FairyArcher.dds</Button>
+			<Button>Modules/Def/DrackAosNiSira/Art/Units/FairyArcher.dds</Button>
 			<fScale>0.4</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -80,7 +80,7 @@
 		</UnitArtInfo>
         <UnitArtInfo> 	<!-- Beastmaster -->
 			<Type>ART_DEF_UNIT_FAIRIES_BEASTMASTER</Type>
-			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/faeriebeastmaster.dds</Button>
+			<Button>Modules/Def/DrackAosNiSira/Art/Units/faeriebeastmaster.dds</Button>
 			<fScale>18</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -104,7 +104,7 @@
 		</UnitArtInfo>
         <UnitArtInfo> 	<!-- Druid -->
 			<Type>ART_DEF_UNIT_FAIRIES_DRUID</Type>
-			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/faeriedruid.dds</Button>
+			<Button>Modules/Def/DrackAosNiSira/Art/Units/faeriedruid.dds</Button>
 			<fScale>18</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -128,7 +128,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> 	<!-- Hunter -->
 			<Type>ART_DEF_UNIT_FAIRIES_HUNTER</Type>
-			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/faeriehunter.dds</Button>
+			<Button>Modules/Def/DrackAosNiSira/Art/Units/faeriehunter.dds</Button>
 			<fScale>0.4</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -176,7 +176,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>	<!-- Longbow-->
 			<Type>ART_DEF_UNIT_FAIRIES_LONGBOWMAN</Type>
-			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/faerielongbow.dds</Button>
+			<Button>Modules/Def/DrackAosNiSira/Art/Units/faerielongbow.dds</Button>
 			<fScale>0.4</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -248,7 +248,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>	<!-- Marksman -->
 			<Type>ART_DEF_UNIT_FAIRIES_MARKSMAN</Type>
-			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/faeriemarksman.dds</Button>
+			<Button>Modules/Def/DrackAosNiSira/Art/Units/faeriemarksman.dds</Button>
 			<fScale>0.6</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -272,7 +272,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>	<!-- Flurry / Assaysin -->
 			<Type>ART_DEF_UNIT_FAIRIES_FLURRY</Type>
-			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/faerieflurry.dds</Button>
+			<Button>Modules/Def/DrackAosNiSira/Art/Units/faerieflurry.dds</Button>
 			<fScale>0.4</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -320,7 +320,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> 	<!-- Ranger -->
 			<Type>ART_DEF_UNIT_FAIRIES_RANGER</Type>
-			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/faerieranger.dds</Button>
+			<Button>Modules/Def/DrackAosNiSira/Art/Units/faerieranger.dds</Button>
 			<fScale>0.6</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -344,7 +344,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> 	<!-- Scout -->
 			<Type>ART_DEF_UNIT_FAIRIES_SCOUT</Type>
-			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/faeriescout.dds</Button>
+			<Button>Modules/Def/DrackAosNiSira/Art/Units/faeriescout.dds</Button>
 			<fScale>0.5</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -394,7 +394,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- Settler Female -->
 			<Type>ART_DEF_UNIT_FAIRY_SETTLER_FEMALE</Type>
-			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/FairySettler.dds</Button>
+			<Button>Modules/Def/DrackAosNiSira/Art/Units/FairySettler.dds</Button>
 			<fScale>0.45</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -516,7 +516,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>  <!-- Warrior -->
 			<Type>ART_DEF_UNIT_FAIRY_WARRIOR</Type>
-			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/faeriewarrior.dds</Button>
+			<Button>Modules/Def/DrackAosNiSira/Art/Units/faeriewarrior.dds</Button>
 			<fScale>16</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -684,7 +684,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>  <!-- Sprite -->
 			<Type>ART_DEF_UNIT_FAIRY_SPRITE</Type>
-			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/FairySpriteButton.dds</Button>
+			<Button>Modules/Def/DrackAosNiSira/Art/Units/FairySpriteButton.dds</Button>
 			<fScale>16</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -708,7 +708,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>  <!-- Pesna Fairy -->
 			<Type>ART_DEF_UNIT_FAIRY_PESNA</Type>
-			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/FairyPesnaFairy.dds</Button>
+			<Button>Modules/Def/DrackAosNiSira/Art/Units/FairyPesnaFairy.dds</Button>
 			<fScale>16</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -732,7 +732,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>  <!-- Fane Warrior -->
 			<Type>ART_DEF_UNIT_FANE_WARRIOR</Type>
-			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/FairyFaneWarrior.dds</Button>
+			<Button>Modules/Def/DrackAosNiSira/Art/Units/FairyFaneWarrior.dds</Button>
 			<fScale>0.4</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -756,7 +756,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>	<!-- Wildfae-->
 			<Type>ART_DEF_UNIT_FAIRY_WILDFAE</Type>
-			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/FairyWildfaeButton.dds</Button>
+			<Button>Modules/Def/DrackAosNiSira/Art/Units/FairyWildfaeButton.dds</Button>
 			<fScale>0.4</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -780,7 +780,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> 	<!-- Sandfae -->
 			<Type>ART_DEF_UNIT_FAIRY_SANDFAE</Type>
-			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/FairySandfaeButton.dds</Button>
+			<Button>Modules/Def/DrackAosNiSira/Art/Units/FairySandfaeButton.dds</Button>
 			<fScale>16</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -804,7 +804,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> 	<!-- Shroomfae -->
 			<Type>ART_DEF_UNIT_FAIRY_SHROOMFAE</Type>
-			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/FairyShroomfaeButton.dds</Button>
+			<Button>Modules/Def/DrackAosNiSira/Art/Units/FairyShroomfaeButton.dds</Button>
 			<fScale>0.5</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -828,7 +828,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>	<!-- Nimai -->
 			<Type>ART_DEF_UNIT_FAIRY_NIMAI</Type>
-			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/Nimai.dds</Button>
+			<Button>Modules/Def/DrackAosNiSira/Art/Units/Nimai.dds</Button>
 			<fScale>16</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -852,7 +852,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> 	<!-- Alin Al Bey, Hero of Bey-->
 			<Type>ART_DEF_UNIT_FAIRY_ALIN</Type>
-			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/Alin.dds</Button>
+			<Button>Modules/Def/DrackAosNiSira/Art/Units/Alin.dds</Button>
 			<fScale>18</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -876,7 +876,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>	<!-- Moonfae -->
 			<Type>ART_DEF_UNIT_MOONFAE</Type>
-			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/faeriemoon.dds</Button>
+			<Button>Modules/Def/DrackAosNiSira/Art/Units/faeriemoon.dds</Button>
 			<fScale>0.4</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -900,7 +900,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>	<!-- Starfae -->
 			<Type>ART_DEF_UNIT_STARFAE</Type>
-			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/faeriefurie.dds</Button>
+			<Button>Modules/Def/DrackAosNiSira/Art/Units/faeriefurie.dds</Button>
 			<fScale>0.4</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -924,7 +924,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>	<!-- Sugarfae -->
 			<Type>ART_DEF_UNIT_SUGARFAE</Type>
-			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/faeriefetch.dds</Button>
+			<Button>Modules/Def/DrackAosNiSira/Art/Units/faeriefetch.dds</Button>
 			<fScale>0.4</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -948,7 +948,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>	<!-- Candyfae -->
 			<Type>ART_DEF_UNIT_FAIRY_CANDYFAE</Type>
-			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/faeriescout.dds</Button>
+			<Button>Modules/Def/DrackAosNiSira/Art/Units/faeriescout.dds</Button>
 			<fScale>16</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -972,7 +972,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>	<!-- Lady Isin -->
 			<Type>ART_DEF_UNIT_FAIRY_LADY_ISIN</Type>
-			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/LadyIsin.dds</Button>
+			<Button>Modules/Def/DrackAosNiSira/Art/Units/LadyIsin.dds</Button>
 			<fScale>16</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -996,7 +996,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>	<!-- Fae Rider -->
 			<Type>ART_DEF_UNIT_HORSE_ARCHER_FAIRY</Type>
-			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/faerierider.dds</Button>
+			<Button>Modules/Def/DrackAosNiSira/Art/Units/faerierider.dds</Button>
 			<fScale>0.38</fScale>
 			<fInterfaceScale>0.9</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -1020,7 +1020,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>	<!-- Fae Dragon Rider -->
 			<Type>ART_DEF_UNIT_FAE_DRAGON_RIDER</Type>
-			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/FaeDragonRider.dds</Button>
+			<Button>Modules/Def/DrackAosNiSira/Art/Units/FaeDragonRider.dds</Button>
 			<fScale>14</fScale>
 			<fInterfaceScale>0.9</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -1044,7 +1044,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>	<!-- Fae Drake -->
 			<Type>ART_DEF_UNIT_FAIRY_FAE_DRAKE</Type>
-			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/FaeDrake.dds</Button>
+			<Button>Modules/Def/DrackAosNiSira/Art/Units/FaeDrake.dds</Button>
 			<fScale>14</fScale>
 			<fInterfaceScale>0.9</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -1068,7 +1068,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>	<!-- Bey Acolyte -->
 			<Type>ART_DEF_UNIT_BEY_ACOLYTE</Type>
-			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/BeyAcolyte.dds</Button>
+			<Button>Modules/Def/DrackAosNiSira/Art/Units/BeyAcolyte.dds</Button>
 			<fScale>11</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -1092,7 +1092,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> 	<!-- Fae Lord -->
 			<Type>ART_DEF_UNIT_FAIRY_FAE_LORD</Type>
-			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/faerielord.dds</Button>
+			<Button>Modules/Def/DrackAosNiSira/Art/Units/faerielord.dds</Button>
 			<fScale>0.5</fScale>
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -1116,7 +1116,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> 	<!-- Summer Lord -->
 			<Type>ART_DEF_UNIT_FAIRY_FAE_SUMMER_LORD</Type>
-			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/faeriesummerlord.dds</Button>
+			<Button>Modules/Def/DrackAosNiSira/Art/Units/faeriesummerlord.dds</Button>
 			<fScale>0.5</fScale>
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -1140,7 +1140,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> 	<!-- Winter Lord -->
 			<Type>ART_DEF_UNIT_FAIRY_FAE_WINTER_LORD</Type>
-			<Button>Modules/NormalModules/DrackAosNiSira/Art/Units/faeriewinterlord.dds</Button>
+			<Button>Modules/Def/DrackAosNiSira/Art/Units/faeriewinterlord.dds</Button>
 			<fScale>0.5</fScale>
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>

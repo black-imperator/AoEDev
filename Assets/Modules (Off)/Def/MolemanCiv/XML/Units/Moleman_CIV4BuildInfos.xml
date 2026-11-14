@@ -24,7 +24,7 @@
 			<bShiftDown>0</bShiftDown>
 			<bCtrlDown>0</bCtrlDown>
 			<iHotKeyPriority>0</iHotKeyPriority>
-			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/underdwelling.dds</Button>
+			<Button>Modules/Def/MolemanCiv/Art/Interface/Buttons/underdwelling.dds</Button>
 			<TechBuildDiscounts>
 				<TechBuildDiscount>
 					<TechType>TECH_CONSTRUCTION</TechType>
@@ -49,7 +49,7 @@
 			<bShiftDown>0</bShiftDown>
 			<bCtrlDown>0</bCtrlDown>
 			<iHotKeyPriority>0</iHotKeyPriority>
-			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/Buildings/sinkhole.dds</Button>
+			<Button>Modules/Def/MolemanCiv/Art/Interface/Buttons/Buildings/sinkhole.dds</Button>
 			<TechBuildDiscounts>
 				<TechBuildDiscount>
 					<TechType>TECH_CONSTRUCTION</TechType>

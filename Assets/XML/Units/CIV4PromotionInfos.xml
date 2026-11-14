@@ -44265,7 +44265,7 @@
 			<iNeutralHealChange>20</iNeutralHealChange>
 			<iFriendlyHealChange>20</iFriendlyHealChange>
 			<PrereqInCity>1</PrereqInCity>
-			<Button>Modules/NormalModules/CaptainGolemUpgrades/Art/Interface/Buttons/Promotions/golem_medic.dds</Button>
+			<Button>Modules/Def/CaptainGolemUpgrades/Art/Interface/Buttons/Promotions/golem_medic.dds</Button>
 			<bValidate>1</bValidate>
 		</PromotionInfo> -->
 		<PromotionInfo>		<!-- Golem Upgrade Force -->

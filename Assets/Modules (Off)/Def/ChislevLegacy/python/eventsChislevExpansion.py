@@ -42,7 +42,7 @@ sf = ScenarioFunctions.ScenarioFunctions()
         # if pPlayer.getLeaderType() == getInfoType('LEADER_SHIMASANI'):
             # iShimasaniChance = randNum(2, "Shimasani Chance")
             # if iShimasaniChance == 0:
-                # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_SHIMASANI_WINS_ALREADY_SHIMASANI_SUCCESS", ()),'',1,'Modules/NormalModules/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
+                # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_SHIMASANI_WINS_ALREADY_SHIMASANI_SUCCESS", ()),'',1,'Modules/Def/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
                 # for iLoopPlayer in range(gc.getMAX_CIV_PLAYERS()):
                     # loopPlayer = gc.getPlayer(iLoopPlayer)
                     # if loopPlayer.isAlive():
@@ -50,9 +50,9 @@ sf = ScenarioFunctions.ScenarioFunctions()
                             # loopPlayer.AI_changeAttitudeExtra(iPlayer, 3)
                             # pPlayer.AI_changeAttitudeExtra(iLoopPlayer, 3)
             # elif iShimasaniChance == 1:
-                # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_SHIMASANI_WINS_ALREADY_SHIMASANI_FAIL", ()),'',1,'Modules/NormalModules/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_RED"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
+                # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_SHIMASANI_WINS_ALREADY_SHIMASANI_FAIL", ()),'',1,'Modules/Def/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_RED"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
         # else:
-            # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_SHIMASANI_WINS", ()),'',1,'Modules/NormalModules/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
+            # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_SHIMASANI_WINS", ()),'',1,'Modules/Def/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
             # pPlayer.changeLeader(getInfoType('LEADER_SHIMASANI'))
 # ##            pPlayer.setAlignment(getInfoType('ALIGNMENT_GOOD'))
 # ##            pPlayer.setBroadAlignment(440)
@@ -86,13 +86,13 @@ def getHelpTribalLawElectionEagle(argsList):
         # if pPlayer.getLeaderType() == getInfoType('LEADER_SOYALA'):
             # iSoyalaChance = randNum(2, "Soyala Chance")
             # if iSoyalaChance == 0:
-		# CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_SOYALA_WINS_ALREADY_SOYALA_SUCCESS", ()),'',1,'Modules/NormalModules/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
+		# CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_SOYALA_WINS_ALREADY_SOYALA_SUCCESS", ()),'',1,'Modules/Def/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
 		# pPlayer.initUnit(getInfoType('UNIT_ARTIST'), pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	    # elif iSoyalaChance == 1:
-                # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_SOYALA_WINS_ALREADY_SOYALA_FAIL", ()),'',1,'Modules/NormalModules/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_RED"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
+                # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_SOYALA_WINS_ALREADY_SOYALA_FAIL", ()),'',1,'Modules/Def/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_RED"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
 	    # pPlayer.changeAnarchyTurns(1)
         # else:
-            # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_SOYALA_WINS", ()),'',1,'Modules/NormalModules/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
+            # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_SOYALA_WINS", ()),'',1,'Modules/Def/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
             # pPlayer.changeLeader(getInfoType('LEADER_SOYALA'))
 # ##            pPlayer.setAlignment(getInfoType('ALIGNMENT_NEUTRAL'))
 # ##            pPlayer.setBroadAlignment(-130)
@@ -126,13 +126,13 @@ def getHelpTribalLawElectionCoyote(argsList):
         # if pPlayer.getLeaderType() == getInfoType('LEADER_MOTSQUEH'):
             # iMotsquehChance = randNum(2, "Motsqueh Chance")
             # if iMotsquehChance == 0:
-		# CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_MOTSQUEH_WINS_ALREADY_MOTSQUEH_SUCCESS", ()),'',1,'Modules/NormalModules/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
+		# CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_MOTSQUEH_WINS_ALREADY_MOTSQUEH_SUCCESS", ()),'',1,'Modules/Def/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
 		# pPlayer.initUnit(getInfoType('UNIT_ENGINEER'), pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	    # elif iMotsquehChance == 1:
-                # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_MOTSQUEH_WINS_ALREADY_MOTSQUEH_FAIL", ()),'',1,'Modules/NormalModules/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_RED"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
+                # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_MOTSQUEH_WINS_ALREADY_MOTSQUEH_FAIL", ()),'',1,'Modules/Def/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_RED"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
 	    # pPlayer.changeAnarchyTurns(1)
         # else:
-            # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_MOTSQUEH_WINS", ()),'',1,'Modules/NormalModules/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
+            # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_MOTSQUEH_WINS", ()),'',1,'Modules/Def/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
             # pPlayer.changeLeader(getInfoType('LEADER_MOTSQUEH'))
 # ##            pPlayer.setAlignment(getInfoType('ALIGNMENT_NEUTRAL'))
 # ##            pPlayer.setBroadAlignment(55)
@@ -166,13 +166,13 @@ def getHelpTribalLawElectionBear(argsList):
         # if pPlayer.getLeaderType() == getInfoType('LEADER_OSYKA'):
             # iOsykaChance = randNum(2, "Osyka Chance")
             # if iOsykaChance == 0:
-		# CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_OSYKA_WINS_ALREADY_OSYKA_SUCCESS", ()),'',1,'Modules/NormalModules/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
+		# CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_OSYKA_WINS_ALREADY_OSYKA_SUCCESS", ()),'',1,'Modules/Def/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
 		# pPlayer.initUnit(getInfoType('UNIT_COMMANDER'), pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 	    # elif iOsykaChance == 1:
-                # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_OSYKA_WINS_ALREADY_OSYKA_FAIL", ()),'',1,'Modules/NormalModules/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_RED"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
+                # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_OSYKA_WINS_ALREADY_OSYKA_FAIL", ()),'',1,'Modules/Def/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_RED"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
 	    # pPlayer.changeAnarchyTurns(1)
         # else:
-            # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_OSYKA_WINS", ()),'',1,'Modules/NormalModules/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
+            # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_OSYKA_WINS", ()),'',1,'Modules/Def/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
             # pPlayer.changeLeader(getInfoType('LEADER_OSYKA'))
 # ##            pPlayer.setAlignment(getInfoType('ALIGNMENT_EVIL'))
 # ##            pPlayer.setBroadAlignment(-350)
@@ -206,13 +206,13 @@ def getHelpTribalLawElectionSerpent(argsList):
         # if pPlayer.getLeaderType() == getInfoType('LEADER_ALOSAKA'):
             # iAlosakaChance = randNum(2, "Alosaka Chance")
             # if iAlosakaChance == 0:
-		# CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_ALOSAKA_WINS_ALREADY_ALOSAKA_SUCCESS", ()),'',1,'Modules/NormalModules/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
+		# CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_ALOSAKA_WINS_ALREADY_ALOSAKA_SUCCESS", ()),'',1,'Modules/Def/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
 		# pPlayer.changeGoldenAgeTurns(CyGame().goldenAgeLength())
 	    # elif iAlosakaChance == 1:
-                # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_ALOSAKA_WINS_ALREADY_ALOSAKA_FAIL", ()),'',1,'Modules/NormalModules/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_RED"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
+                # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_ALOSAKA_WINS_ALREADY_ALOSAKA_FAIL", ()),'',1,'Modules/Def/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_RED"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
 	    # pPlayer.changeAnarchyTurns(1)
         # else:
-            # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_ALOSAKA_WINS", ()),'',1,'Modules/NormalModules/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
+            # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_ALOSAKA_WINS", ()),'',1,'Modules/Def/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
             # pPlayer.changeLeader(getInfoType('LEADER_ALOSAKA'))
 # ##            pPlayer.setAlignment(getInfoType('ALIGNMENT_GOOD'))
 # ##            pPlayer.setBroadAlignment(315)
@@ -255,12 +255,12 @@ def getHelpTribalLawElectionTortoise(argsList):
             # if pPlayer.getLeaderType() == getInfoType('LEADER_SOYALA'):
                 # iSoyalaChance = randNum(2, "Soyala Chance")
                 # if iSoyalaChance == 0:
-                    # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_SOYALA_WINS_ALREADY_SOYALA_SUCCESS", ()),'',1,'Modules/NormalModules/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
+                    # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_SOYALA_WINS_ALREADY_SOYALA_SUCCESS", ()),'',1,'Modules/Def/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
                     # pPlayer.initUnit(getInfoType('UNIT_ARTIST'), pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
                 # elif iSoyalaChance == 1:
-                    # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_SOYALA_WINS_ALREADY_SOYALA_FAIL", ()),'',1,'Modules/NormalModules/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_RED"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
+                    # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_SOYALA_WINS_ALREADY_SOYALA_FAIL", ()),'',1,'Modules/Def/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_RED"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
             # else:
-                # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_SOYALA_WINS", ()),'',1,'Modules/NormalModules/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
+                # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_SOYALA_WINS", ()),'',1,'Modules/Def/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
                 # pPlayer.changeLeader(getInfoType('LEADER_SOYALA'))
 # ##                pPlayer.setAlignment(getInfoType('ALIGNMENT_NEUTRAL'))
 # ##                pPlayer.setBroadAlignment(-130)
@@ -272,12 +272,12 @@ def getHelpTribalLawElectionTortoise(argsList):
             # if pPlayer.getLeaderType() == getInfoType('LEADER_MOTSQUEH'):
                 # iMotsquehChance = randNum(2, "Motsqueh Chance")
                 # if iMotsquehChance == 0:
-                    # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_MOTSQUEH_WINS_ALREADY_MOTSQUEH_SUCCESS", ()),'',1,'Modules/NormalModules/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
+                    # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_MOTSQUEH_WINS_ALREADY_MOTSQUEH_SUCCESS", ()),'',1,'Modules/Def/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
                     # pPlayer.initUnit(getInfoType('UNIT_ENGINEER'), pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
                 # elif iMotsquehChance == 1:
-                    # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_MOTSQUEH_WINS_ALREADY_MOTSQUEH_FAIL", ()),'',1,'Modules/NormalModules/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_RED"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
+                    # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_MOTSQUEH_WINS_ALREADY_MOTSQUEH_FAIL", ()),'',1,'Modules/Def/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_RED"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
             # else:
-                # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_MOTSQUEH_WINS", ()),'',1,'Modules/NormalModules/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
+                # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_MOTSQUEH_WINS", ()),'',1,'Modules/Def/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
                 # pPlayer.changeLeader(getInfoType('LEADER_MOTSQUEH'))
 # ##                pPlayer.setAlignment(getInfoType('ALIGNMENT_NEUTRAL'))
 # ##                pPlayer.setBroadAlignment(55)
@@ -289,12 +289,12 @@ def getHelpTribalLawElectionTortoise(argsList):
             # if pPlayer.getLeaderType() == getInfoType('LEADER_OSYKA'):
                 # iOsykaChance = randNum(2, "Osyka Chance")
                 # if iOsykaChance == 0:
-                    # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_OSYKA_WINS_ALREADY_OSYKA_SUCCESS", ()),'',1,'Modules/NormalModules/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
+                    # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_OSYKA_WINS_ALREADY_OSYKA_SUCCESS", ()),'',1,'Modules/Def/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
                     # pPlayer.initUnit(getInfoType('UNIT_COMMANDER'), pPlayer.getCapitalCity().getX(), pPlayer.getCapitalCity().getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
                 # elif iOsykaChance == 1:
-                    # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_OSYKA_WINS_ALREADY_OSYKA_FAIL", ()),'',1,'Modules/NormalModules/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_RED"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
+                    # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_OSYKA_WINS_ALREADY_OSYKA_FAIL", ()),'',1,'Modules/Def/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_RED"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
             # else:
-                # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_OSYKA_WINS", ()),'',1,'Modules/NormalModules/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
+                # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_OSYKA_WINS", ()),'',1,'Modules/Def/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
                 # pPlayer.changeLeader(getInfoType('LEADER_OSYKA'))
 # ##                pPlayer.setAlignment(getInfoType('ALIGNMENT_EVIL'))
 # ##                pPlayer.setBroadAlignment(-350)
@@ -306,12 +306,12 @@ def getHelpTribalLawElectionTortoise(argsList):
             # if pPlayer.getLeaderType() == getInfoType('LEADER_ALOSAKA'):
                 # iAlosakaChance = randNum(2, "Alosaka Chance")
                 # if iAlosakaChance == 0:
-                    # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_ALOSAKA_WINS_ALREADY_ALOSAKA_SUCCESS", ()),'',1,'Modules/NormalModules/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
+                    # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_ALOSAKA_WINS_ALREADY_ALOSAKA_SUCCESS", ()),'',1,'Modules/Def/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
                     # pPlayer.changeGoldenAgeTurns(CyGame().goldenAgeLength())
                 # elif iAlosakaChance == 1:
-                    # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_ALOSAKA_WINS_ALREADY_ALOSAKA_FAIL", ()),'',1,'Modules/NormalModules/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_RED"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
+                    # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_ALOSAKA_WINS_ALREADY_ALOSAKA_FAIL", ()),'',1,'Modules/Def/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_RED"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
             # else:
-                # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_ALOSAKA_WINS", ()),'',1,'Modules/NormalModules/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
+                # CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_EVENT_TRIBAL_LAW_ELECTION_ALOSAKA_WINS", ()),'',1,'Modules/Def/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',getInfoType("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
                 # pPlayer.changeLeader(getInfoType('LEADER_ALOSAKA'))
 # ##                pPlayer.setAlignment(getInfoType('ALIGNMENT_GOOD'))
 # ##                pPlayer.setBroadAlignment(315)

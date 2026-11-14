@@ -64,7 +64,7 @@
 				</UnitCombat>
 			</UnitCombats>
 			<iCombatPercent>-10</iCombatPercent>
-			<Button>Modules\NormalModules\DrackVampirism\Art\Promotions\VampireThrall.dds</Button>
+			<Button>Modules\Def\DrackVampirism\Art\Promotions\VampireThrall.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo> <!-- Vampiric Influenced -->
 			<Type>PROMOTION_VAMP_VAMPIRIC_INFLUENCED</Type>
@@ -118,7 +118,7 @@
 				</UnitCombat>
 			</UnitCombats>
 			<iCombatPercent>15</iCombatPercent>
-			<Button>Modules\NormalModules\DrackVampirism\Art\Promotions\VampiricInfluenced.dds</Button>
+			<Button>Modules\Def\DrackVampirism\Art\Promotions\VampiricInfluenced.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo> <!-- Vampiric Charmed -->
 			<Type>PROMOTION_VAMP_VAMPIRIC_CHARMED</Type>
@@ -182,7 +182,7 @@
 					<iCombatMod>-35</iCombatMod>
 				</PromotionCombatMod>
 			</PromotionCombatMods>
-			<Button>Modules\NormalModules\DrackVampirism\Art\Promotions\VampiricCharmed.dds</Button>
+			<Button>Modules\Def\DrackVampirism\Art\Promotions\VampiricCharmed.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo> <!-- Vampiric Hunter -->
 			<Type>PROMOTION_VAMP_VAMPIRE_HUNTER</Type>
@@ -248,7 +248,7 @@
 					<iCombatMod>35</iCombatMod>
 				</PromotionCombatMod>
 			</PromotionCombatMods>
-			<Button>Modules\NormalModules\DrackVampirism\Art\Promotions\VampireHunter.dds</Button>
+			<Button>Modules\Def\DrackVampirism\Art\Promotions\VampireHunter.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo> <!-- Clan Flauros -->
 			<Type>PROMOTION_VAMP_CLAN_FLAUROS</Type>
@@ -290,7 +290,7 @@
 			<iExtraCombatStr>1</iExtraCombatStr>
 			<iExtraCombatDefense>-1</iExtraCombatDefense>
 			<iFreeXPFromCombat>1</iFreeXPFromCombat>
-			<Button>Modules\NormalModules\DrackVampirism\Art\Promotions\ClanFlauros.dds</Button>
+			<Button>Modules\Def\DrackVampirism\Art\Promotions\ClanFlauros.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo> <!-- Clan Flauros	-	Ethereal Body -->
 			<Type>PROMOTION_VAMP_ETHEREAL_BODY</Type>
@@ -353,7 +353,7 @@
 			<iChanceFirstStrikesChange>2</iChanceFirstStrikesChange>
 			<iMoveDiscountChange>1</iMoveDiscountChange>
 			<iCasterResistModify>-20</iCasterResistModify>
-			<Button>Modules\NormalModules\DrackVampirism\Art\Promotions\EtherialBody.dds</Button>
+			<Button>Modules\Def\DrackVampirism\Art\Promotions\EtherialBody.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo> <!-- Clan Flauros	-	Bloody Duke -->
 			<Type>PROMOTION_VAMP_BLOODY_DUKE</Type>
@@ -416,7 +416,7 @@
 			<bEnemyRoute>1</bEnemyRoute>
 			<iMovesChange>1</iMovesChange>
 			<iCasterResistModify>-10</iCasterResistModify>
-			<Button>Modules\NormalModules\DrackVampirism\Art\Promotions\BloodyDuke.dds</Button>
+			<Button>Modules\Def\DrackVampirism\Art\Promotions\BloodyDuke.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo> <!-- Clan Flauros	-	Battle Lust -->
 			<Type>PROMOTION_VAMP_BATTLE_LUST</Type>
@@ -487,7 +487,7 @@
 			<iExtraCombatDefense>-1</iExtraCombatDefense>
 			<iCasterResistModify>-10</iCasterResistModify>
 			<iCombatHealPercent>10</iCombatHealPercent>
-			<Button>Modules\NormalModules\DrackVampirism\Art\Promotions\BattleLust.dds</Button>
+			<Button>Modules\Def\DrackVampirism\Art\Promotions\BattleLust.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo> <!-- Clan Flauros	-	Battle Champion -->
 			<Type>PROMOTION_VAMP_BATTLE_CHAMPION</Type>
@@ -558,7 +558,7 @@
 					<iAffinity>1</iAffinity>
 				</BonusAffinity>
 			</BonusAffinities>
-			<Button>Modules\NormalModules\DrackVampirism\Art\Promotions\BattleChampion.dds</Button>
+			<Button>Modules\Def\DrackVampirism\Art\Promotions\BattleChampion.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo> <!-- Clan Ravana -->
 			<Type>PROMOTION_VAMP_CLAN_RAVANA</Type>
@@ -617,7 +617,7 @@
 			</UnitCombatMods>
 			<iCombatPercentDefense>20</iCombatPercentDefense>
 			<iWithdrawalChange>5</iWithdrawalChange>
-			<Button>Modules\NormalModules\DrackVampirism\Art\Promotions\ClanRavana.dds</Button>
+			<Button>Modules\Def\DrackVampirism\Art\Promotions\ClanRavana.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo> <!-- Clan Ravana	-	Night Stalker -->
 			<Type>PROMOTION_VAMP_NIGHT_STALKER</Type>
@@ -681,7 +681,7 @@
 			</PrereqPromotionANDs>
 			<bImmuneToDefensiveStrike>1</bImmuneToDefensiveStrike>
 			<iInvisibleLevel>3</iInvisibleLevel>
-			<Button>Modules\NormalModules\DrackVampirism\Art\Promotions\NightStalker.dds</Button>
+			<Button>Modules\Def\DrackVampirism\Art\Promotions\NightStalker.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo> <!-- Clan Ravana	-	Shadow Monarch -->
 			<Type>PROMOTION_VAMP_SHADOW_MONARCH</Type>
@@ -747,7 +747,7 @@
 				</BonusAffinity>
 			</BonusAffinities>
 			<iInvisibleLevel>4</iInvisibleLevel>
-			<Button>Modules\NormalModules\DrackVampirism\Art\Promotions\ShadowMonarch.dds</Button>
+			<Button>Modules\Def\DrackVampirism\Art\Promotions\ShadowMonarch.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo> <!-- Clan Ravana	-	Unending Pursuit -->
 			<Type>PROMOTION_VAMP_UNENDING_PURSUIT</Type>
@@ -808,7 +808,7 @@
 			</PrereqPromotionANDs>
 			<bIgnoreBuildingDefense>1</bIgnoreBuildingDefense>
 			<iChanceFirstStrikesChange>2</iChanceFirstStrikesChange>
-			<Button>Modules\NormalModules\DrackVampirism\Art\Promotions\UnendingPursuit.dds</Button>
+			<Button>Modules\Def\DrackVampirism\Art\Promotions\UnendingPursuit.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo> <!-- Clan Ravana	-	Dark Duke -->
 			<Type>PROMOTION_VAMP_DARK_DUKE</Type>
@@ -875,7 +875,7 @@
 					<iCombatMod>40</iCombatMod>
 				</PromotionCombatMod>
 			</PromotionCombatMods>
-			<Button>Modules\NormalModules\DrackVampirism\Art\Promotions\DarkDuke.dds</Button>
+			<Button>Modules\Def\DrackVampirism\Art\Promotions\DarkDuke.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo> <!-- Clan Baobhan -->
 			<Type>PROMOTION_VAMP_CLAN_BAOBHAN</Type>
@@ -933,7 +933,7 @@
 				<PromotionType>PROMOTION_VAMP_VAMPIRE_THRALL</PromotionType>
 			</CapturePromotions>
 			<iSlaveGenerationChance>25</iSlaveGenerationChance>
-			<Button>Modules\NormalModules\DrackVampirism\Art\Promotions\ClanBaobhan.dds</Button>
+			<Button>Modules\Def\DrackVampirism\Art\Promotions\ClanBaobhan.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo> <!-- Clan Baobhan	-	Vampire Smile (Spell: Charm person)-->
 			<Type>PROMOTION_VAMP_VAMPIRE_SMILE</Type>
@@ -1003,7 +1003,7 @@
 					<fHappy>1</fHappy>
 				</CityBonus>
 			</CityBonuses>
-			<Button>Modules\NormalModules\DrackVampirism\Art\Promotions\VampireSmile.dds</Button>
+			<Button>Modules\Def\DrackVampirism\Art\Promotions\VampireSmile.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo> <!-- Clan Baobhan	-	Urban Vampire -->
 			<Type>PROMOTION_VAMP_URBAN_VAMPIRE</Type>
@@ -1064,7 +1064,7 @@
 			</PrereqPromotionANDs>
 			<iCityDefense>25</iCityDefense>
 			<iCityAttack>25</iCityAttack>
-			<Button>Modules\NormalModules\DrackVampirism\Art\Promotions\UrbanVampire.dds</Button>
+			<Button>Modules\Def\DrackVampirism\Art\Promotions\UrbanVampire.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo> <!-- Clan Baobhan	-	Vampiric Leader -->
 			<Type>PROMOTION_VAMP_VAMPIRIC_LEADER</Type>
@@ -1134,7 +1134,7 @@
 			<MinionPromotions>
 				<PromotionType>PROMOTION_VAMP_VAMPIRIC_INFLUENCED</PromotionType>
 			</MinionPromotions>
-			<Button>Modules\NormalModules\DrackVampirism\Art\Promotions\VampiricLeader.dds</Button>
+			<Button>Modules\Def\DrackVampirism\Art\Promotions\VampiricLeader.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo> <!-- Clan Baobhan	-	Vampiric Inspiration -->
 			<Type>PROMOTION_VAMP_VAMPIRIC_INSPIRATION</Type>
@@ -1201,7 +1201,7 @@
 				<PromotionType>PROMOTION_MOTIVATED</PromotionType>
 				<PromotionType>PROMOTION_HARDENED_TROOPS</PromotionType>
 			</MinionPromotions>
-			<Button>Modules\NormalModules\DrackVampirism\Art\Promotions\VampiricInspiration.dds</Button>
+			<Button>Modules\Def\DrackVampirism\Art\Promotions\VampiricInspiration.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo> <!-- Vampire Additions -->
 			<Type>PROMOTION_VAMPIRE</Type>

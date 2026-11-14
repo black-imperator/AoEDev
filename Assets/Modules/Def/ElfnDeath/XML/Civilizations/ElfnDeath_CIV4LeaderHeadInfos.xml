@@ -14,7 +14,7 @@
 			<Type>LEADER_WALDRUN</Type>
 			<Description>TXT_KEY_LEADER_WALDRUN</Description>
 			<Civilopedia>TXT_KEY_LEADER_WALDRUN_PEDIA</Civilopedia>
-			<Image>Modules/NormalModules/ElfnDeath/Art/Interface/LeaderHeads/veronica_anrathi_annec.dds</Image>
+			<Image>Modules/Def/ElfnDeath/Art/Interface/LeaderHeads/veronica_anrathi_annec.dds</Image>
 			<ArtDefineTag>ART_DEF_LEADER_WALDRUN</ArtDefineTag>
 			<iWonderConstructRand>0</iWonderConstructRand>
 			<iBaseAttitude>0</iBaseAttitude>

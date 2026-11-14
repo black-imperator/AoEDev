@@ -21,7 +21,7 @@
 			<PyResult>__import__('teuhaliCvSpells').spellLastStand(pCaster)</PyResult>
             <Effect>EFFECT_SPELL1</Effect>
             <Sound>AS3D_SPELL_INSPIRATION</Sound>
-            <Button>Modules\NormalModules\DrackTeuhaliOrder\Art\Spells\LastStand.dds</Button>
+            <Button>Modules\Def\DrackTeuhaliOrder\Art\Spells\LastStand.dds</Button>
         </SpellInfo>
         <SpellInfo>			<!-- Pray to Hali -->
 			<Type>SPELL_TEUHALI_PRAY</Type>
@@ -44,7 +44,7 @@
 			<PyRequirement>__import__('teuhaliCvSpells').reqPrayToHali(pCaster)</PyRequirement>
 			<Effect>EFFECT_BLESS</Effect>
 			<Sound>AS3D_LEECH_BREATH</Sound>
-			<Button>Modules\NormalModules\DrackTeuhaliOrder\Art\Spells\PrayToHali.dds</Button>
+			<Button>Modules\Def\DrackTeuhaliOrder\Art\Spells\PrayToHali.dds</Button>
 		</SpellInfo>
 	</SpellInfos>
 </Civ4SpellInfos>

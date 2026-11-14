@@ -697,7 +697,7 @@
 				</UnitCombat>
 			</UnitCombats>
 			<iMinLevel>-1</iMinLevel>
-			<Button>Modules/NormalModules/kcz_Woods/Art/Interface/Buttons/Promotions/nohealing.dds</Button>
+			<Button>Modules/Def/kcz_Woods/Art/Interface/Buttons/Promotions/nohealing.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- No casting -->
 			<Type>PROMOTION_SUMMONED_ANIMAL</Type>
@@ -711,7 +711,7 @@
 			<PromotionOverwrites>
 				<Promotion>PROMOTION_TAME</Promotion>
 			</PromotionOverwrites>
-			<Button>Modules/NormalModules/kcz_Woods/Art/Interface/Buttons/Promotions/Races/nohealing.dds</Button>
+			<Button>Modules/Def/kcz_Woods/Art/Interface/Buttons/Promotions/Races/nohealing.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Bond with nature -->
 			<Type>PROMOTION_BOND_WITH_THE_FOREST</Type>
@@ -733,7 +733,7 @@
 			<bAutoAcquire>1</bAutoAcquire>
 			<bMustMaintain>1</bMustMaintain>
 			<bNoXP>1</bNoXP>
-			<Button>Modules/NormalModules/kcz_Woods/Art/Interface/Buttons/Spells/naturescall.dds</Button>
+			<Button>Modules/Def/kcz_Woods/Art/Interface/Buttons/Spells/naturescall.dds</Button>
 		</PromotionInfo>
 		<!-- races -->
 		<PromotionInfo>		<!-- Treant (race) -->
@@ -783,7 +783,7 @@
 			</FeatureMoveCosts>
 			<SpecialCargo>SPECIALUNIT_BIRD</SpecialCargo>
 			<DomainCargo>DOMAIN_AIR</DomainCargo>
-			<Button>Modules/NormalModules/kcz_Woods/Art/Interface/Buttons/Promotions/Races/treant.dds</Button>
+			<Button>Modules/Def/kcz_Woods/Art/Interface/Buttons/Promotions/Races/treant.dds</Button>
 			<bImmuneToFear>1</bImmuneToFear>
 			<bRace>1</bRace>
 			<DamageTypeResists>
@@ -842,7 +842,7 @@
 					<iFeatureMoveCost>-1</iFeatureMoveCost>
 				</FeatureMoveCost>
 			</FeatureMoveCosts>
-			<Button>Modules/NormalModules/kcz_Woods/Art/Interface/Buttons/Promotions/Races/dryad.dds</Button>
+			<Button>Modules/Def/kcz_Woods/Art/Interface/Buttons/Promotions/Races/dryad.dds</Button>
 			<bRace>1</bRace>
 			<DamageTypeResists>
 				<DamageTypeResist>

@@ -54,7 +54,7 @@ def spellGreatSoulSiphon(pCaster):
 					pCity.changePopulation(iLoss)
 					affectedCitiesCount += 1
 					# the text reads "lost %D1 population", so pass the magnitude
-					CyInterface().addMessage(iLoopPlayer, True, 25, CyTranslator().getText("TXT_KEY_MESSAGE_GREAT_SOUL_SIPHON_LOSS", (-iLoss,)), '', 3, 'Modules\NormalModules\DrackAosNiSira\Art\Other\Souls.dds', ColorTypes(7), pCity.getX(), pCity.getY(), True, True)
+					CyInterface().addMessage(iLoopPlayer, True, 25, CyTranslator().getText("TXT_KEY_MESSAGE_GREAT_SOUL_SIPHON_LOSS", (-iLoss,)), '', 3, 'Modules\Def\DrackAosNiSira\Art\Other\Souls.dds', ColorTypes(7), pCity.getX(), pCity.getY(), True, True)
 				(pCity, iter) = pLoopPlayer.nextCity(iter, False)
 
 	# Calculate souls for the casting player
@@ -64,7 +64,7 @@ def spellGreatSoulSiphon(pCaster):
 	pPlayer.changeCivCounter(newSouls)
 
 	# Notify the casting player
-	CyInterface().addMessage(iPlayer, True, 25, CyTranslator().getText("TXT_KEY_MESSAGE_GREAT_SOUL_SIPHON_GAIN", (newSouls,)), '', 2, 'Modules\NormalModules\DrackAosNiSira\Art\Other\Souls.dds', ColorTypes(8), -1, -1, True, True)
+	CyInterface().addMessage(iPlayer, True, 25, CyTranslator().getText("TXT_KEY_MESSAGE_GREAT_SOUL_SIPHON_GAIN", (newSouls,)), '', 2, 'Modules\Def\DrackAosNiSira\Art\Other\Souls.dds', ColorTypes(8), -1, -1, True, True)
 
 def spellMushroomAccelleration(pCaster):
 	iPlayer = pCaster.getOwner()

@@ -90,11 +90,11 @@ def effectTribalLawElection(argsList):
 		pPlayer.changeAnarchyTurns(1)
 	if pPlayer.getLeaderType() != lTribeLeaders[iLeader]:	# Leader Change
 		pPlayer.changeLeader(lTribeLeaders[iLeader])
-		CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText(lLeaderText[iLeader], ()),'',3,'Modules/NormalModules/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',git("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
+		CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText(lLeaderText[iLeader], ()),'',3,'Modules/Def/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',git("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
 	elif iRnd < 50:											# Same Leader, Failed 50/50, no Bonus
-		CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText(lAltFailText[iLeader], ()),'',3,'Modules/NormalModules/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',git("COLOR_RED"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
+		CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText(lAltFailText[iLeader], ()),'',3,'Modules/Def/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',git("COLOR_RED"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
 	elif iRnd >= 50:										# Same Leader, Passed 50/50, do Bonus
-		CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText(lAltPassText[iLeader], ()),'',3,'Modules/NormalModules/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',git("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
+		CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText(lAltPassText[iLeader], ()),'',3,'Modules/Def/ChislevExpansion/Art/Buttons/Tribal_Law_Button.dds',git("COLOR_GREEN"),pPlayer.getCapitalCity().getX(),pPlayer.getCapitalCity().getY(),True,True)
 		if iLeader == 0: # Eagle
 			for iLoopPlayer in range(gc.getMAX_CIV_PLAYERS()):
 				loopPlayer = gc.getPlayer(iLoopPlayer)

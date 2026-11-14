@@ -24,7 +24,7 @@
 			<fInterfaceScale>2.0</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Shipwright/Shipwright.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Buildings/FeedingGrounds.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Buildings/FeedingGrounds.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_ALTAR_OF_THE_DREAMING</Type>
@@ -34,7 +34,7 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Improvements/Phantom_Fortress/Phantom_Frotress.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Buildings/AifonsLunn.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Buildings/AifonsLunn.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_ALTAR_OF_THE_DREAMING2</Type>
@@ -44,7 +44,7 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Improvements/Phantom_Fortress/Phantom_Frotress.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Buildings/AifonsLunn2.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Buildings/AifonsLunn2.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_ALTAR_OF_THE_DREAMING3</Type>
@@ -54,7 +54,7 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Improvements/Phantom_Fortress/Phantom_Frotress2.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Buildings/AifonsLunn3.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Buildings/AifonsLunn3.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_ALTAR_OF_THE_DREAMING4</Type>
@@ -64,7 +64,7 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Improvements/Phantom_Fortress/Phantom_Frotress3.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Buildings/AifonsLunn4.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Buildings/AifonsLunn4.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_ALTAR_OF_THE_DREAMING5</Type>
@@ -74,7 +74,7 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Improvements/Phantom_Fortress/Phantom_Frotress3.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Buildings/AifonsLunn5.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Buildings/AifonsLunn5.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_ALTAR_OF_THE_DREAMING6</Type>
@@ -84,7 +84,7 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Improvements/Phantom_Fortress/Phantom_Frotress4.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Buildings/AifonsLunn6.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Buildings/AifonsLunn6.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_ALTAR_OF_THE_DREAMING7</Type>
@@ -94,7 +94,7 @@
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Improvements/Phantom_Fortress/Phantom_Frotress4.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Buildings/AifonsLunn7.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Buildings/AifonsLunn7.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_CRIME_NIGHTMARE</Type>
@@ -104,7 +104,7 @@
 			<fInterfaceScale>0.8</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Gallows/galgen.nif</NIF>
 			<KFM/>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Units/AifonNightmareButton.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Units/AifonNightmareButton.dds</Button>
 		</BuildingArtInfo>
 	</BuildingArtInfos>
 </Civ4ArtDefines>

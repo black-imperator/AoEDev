@@ -31,7 +31,7 @@
 			<PyRequirement>reqProprietorStealCulture(pCaster)</PyRequirement>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_COUNCIL_OF_ESUS_DINK</Sound>
-			<Button>Modules/NormalModules/XtraEsusUnits/Art/Interface/Buttons/Spells/proprietor2.dds</Button>
+			<Button>Modules/Def/XtraEsusUnits/Art/Interface/Buttons/Spells/proprietor2.dds</Button>
 			<PyResult>spellProprietorStealCulture(pCaster)</PyResult>
 		</SpellInfo>
 		<SpellInfo>
@@ -59,7 +59,7 @@
 			<PyRequirement>reqProprietorStealGPP(pCaster)</PyRequirement>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_COUNCIL_OF_ESUS_DINK</Sound>
-			<Button>Modules/NormalModules/XtraEsusUnits/Art/Interface/Buttons/Spells/proprietor3.dds</Button>
+			<Button>Modules/Def/XtraEsusUnits/Art/Interface/Buttons/Spells/proprietor3.dds</Button>
 			<PyResult>spellProprietorStealGPP(pCaster)</PyResult>
 		</SpellInfo>
 		<SpellInfo>
@@ -88,7 +88,7 @@
 			<PyRequirement>reqProprietorCultureBomb(pCaster)</PyRequirement>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_COUNCIL_OF_ESUS_DINK</Sound>
-			<Button>Modules/NormalModules/XtraEsusUnits/Art/Interface/Buttons/Spells/proprietor1.dds</Button>
+			<Button>Modules/Def/XtraEsusUnits/Art/Interface/Buttons/Spells/proprietor1.dds</Button>
 			<PyResult>spellProprietorCultureBomb(pCaster)</PyResult>
 			<bSacrificeCaster>1</bSacrificeCaster>
 		</SpellInfo>
@@ -116,7 +116,7 @@
 			<CreateBuildingType>BUILDING_ARMS_SMUGGLING</CreateBuildingType>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS2D_BUILD_GRANARY</Sound>
-			<Button>Modules/NormalModules/XtraEsusUnits/Art/Interface/Buttons/Spells/deathmerchant1.dds</Button>
+			<Button>Modules/Def/XtraEsusUnits/Art/Interface/Buttons/Spells/deathmerchant1.dds</Button>
 		</SpellInfo>
 		<SpellInfo>		<!-- Boost Crime -->
 			<Type>SPELL_DEATH_MERCHANT_BOOST_CRIME</Type>
@@ -141,7 +141,7 @@
 			<PyRequirement>reqDeathMerchantWarProfiteering(pCaster)</PyRequirement>
 			<Effect>EFFECT_CREATION</Effect>
 			<Sound>AS3D_SPELL_INSPIRATION</Sound>
-			<Button>Modules/NormalModules/XtraEsusUnits/Art/Interface/Buttons/Spells/deathmerchant2.dds</Button>
+			<Button>Modules/Def/XtraEsusUnits/Art/Interface/Buttons/Spells/deathmerchant2.dds</Button>
 			<PyResult>spellDeathMerchantWarProfiteering(pCaster)</PyResult>
 		</SpellInfo>
 		<SpellInfo>
@@ -168,7 +168,7 @@
 			<PyRequirement>reqProprietorCultureBomb(pCaster)</PyRequirement>
 			<Effect>EFFECT_CREATION</Effect>
 			<Sound>AS3D_SPELL_INSPIRATION</Sound>
-			<Button>Modules/NormalModules/XtraEsusUnits/Art/Interface/Buttons/Spells/deathmerchant3.dds</Button>
+			<Button>Modules/Def/XtraEsusUnits/Art/Interface/Buttons/Spells/deathmerchant3.dds</Button>
 			<PyResult>spellDeathMerchantTradeMission(pCaster)</PyResult>
 			<bSacrificeCaster>1</bSacrificeCaster>
 		</SpellInfo>
@@ -191,7 +191,7 @@
 			<PyRequirement>reqUpgradeAphoticThrone(pCaster)</PyRequirement>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_COUNCIL_OF_ESUS_DINK</Sound>
-			<Button>Modules/NormalModules/XtraEsusUnits/Art/Interface/Buttons/Buildings/aphoticthroneupgrade.dds</Button>
+			<Button>Modules/Def/XtraEsusUnits/Art/Interface/Buttons/Buildings/aphoticthroneupgrade.dds</Button>
 			<PyResult>spellUpgradeThrone(pCaster)</PyResult>
 		</SpellInfo>
 		<SpellInfo>
@@ -214,7 +214,7 @@
 			<iCost>300</iCost>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_COUNCIL_OF_ESUS_DINK</Sound>
-			<Button>Modules/NormalModules/XtraEsusUnits/Art/Interface/Buttons/Buildings/aphoticthroneupgradefaeryl.dds</Button>
+			<Button>Modules/Def/XtraEsusUnits/Art/Interface/Buttons/Buildings/aphoticthroneupgradefaeryl.dds</Button>
 			<PyResult>spellUpgradeThronePriest(pCaster)</PyResult>
 		</SpellInfo>
 		<SpellInfo>
@@ -237,7 +237,7 @@
 			<iCost>300</iCost>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_COUNCIL_OF_ESUS_DINK</Sound>
-			<Button>Modules/NormalModules/XtraEsusUnits/Art/Interface/Buttons/Buildings/aphoticthroneupgradefaeryl.dds</Button>
+			<Button>Modules/Def/XtraEsusUnits/Art/Interface/Buttons/Buildings/aphoticthroneupgradefaeryl.dds</Button>
 			<PyResult>spellUpgradeThroneCourt(pCaster)</PyResult>
 		</SpellInfo>
 	</SpellInfos>

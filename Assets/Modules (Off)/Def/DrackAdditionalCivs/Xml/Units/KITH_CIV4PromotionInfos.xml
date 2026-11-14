@@ -9,7 +9,7 @@
 		<PromotionInfo> <!-- Gnome Species Promotion -->
 			<Type>PROMOTION_GNOME</Type>
 			<Description>Gnome</Description>
-			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Promotions\GnomeRace.dds</Button> 
+			<Button>Modules\Def\DrackAdditionalCivs\Art\Promotions\GnomeRace.dds</Button> 
 			<bRace>1</bRace>
 			<UnitArtStyleType>UNIT_ARTSTYLE_DWARF</UnitArtStyleType>
 			<DamageTypeResists>
@@ -30,7 +30,7 @@
 			<PromotionAllows>
 				<Promotion>PROMOTION_CITY_GARRISON1</Promotion>
 			</PromotionAllows>
-			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Promotions\KithMilitia.dds</Button>
+			<Button>Modules\Def\DrackAdditionalCivs\Art\Promotions\KithMilitia.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo> <!-- Kith Ealdor -->
 			<Type>PROMOTION_KITH_EALDOR</Type>
@@ -41,7 +41,7 @@
 			<iCombatPercent>35</iCombatPercent>
 			<iFirstStrikesChange>1</iFirstStrikesChange>
 			<iChanceFirstStrikesChange>2</iChanceFirstStrikesChange>
-			<Button>Modules\NormalModules\DrackAdditionalCivs\Art\Promotions\KithEaldor.dds</Button>
+			<Button>Modules\Def\DrackAdditionalCivs\Art\Promotions\KithEaldor.dds</Button>
 			<PromotionExcludes>
 				<Promotion>PROMOTION_DEADLY_MISHAP</Promotion>
 				<Promotion>PROMOTION_HEROIC</Promotion>

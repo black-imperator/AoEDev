@@ -23,7 +23,7 @@
 					<iMovementChange>-30</iMovementChange>
 				</TechMovementChange>
 			</TechMovementChanges>
-			<Button>Modules/NormalModules/MolemanCiv/Art/Interface/Buttons/underdwelling.dds</Button>
+			<Button>Modules/Def/MolemanCiv/Art/Interface/Buttons/underdwelling.dds</Button>
 		</RouteInfo>
 	</RouteInfos>
 </Civ4RouteInfos>

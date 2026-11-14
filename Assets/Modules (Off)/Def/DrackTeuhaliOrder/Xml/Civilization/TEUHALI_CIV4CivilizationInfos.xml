@@ -341,7 +341,7 @@
 					</ImprovementYields>
 				</ImprovementYieldChange>
 			</ImprovementYieldChanges>
-			<Image>Modules\NormalModules\DrackTeuhaliOrder\Art\Flag/TeuhaliPediaBanner.dds</Image>
+			<Image>Modules\Def\DrackTeuhaliOrder\Art\Flag/TeuhaliPediaBanner.dds</Image>
 		</CivilizationInfo>
 	</CivilizationInfos>
 </Civ4CivilizationInfos>

@@ -315,7 +315,7 @@
 				</UnitCombat>
 			</UnitCombats>
 			<iExtraPerception>1</iExtraPerception>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Terrain/Resources/KrakenEye/KrakenEye.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Terrain/Resources/KrakenEye/KrakenEye.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Titan Scale Plating -->
 			<Type>PROMOTION_TITAN_SCALE_PLATING</Type>
@@ -354,7 +354,7 @@
 					<iResist>5</iResist>
 				</DamageTypeResist>
 			</DamageTypeResists>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Terrain/Resources/TitanTurtleScale/TitanScales.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Terrain/Resources/TitanTurtleScale/TitanScales.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Lizardman Bezeri             BEZERI START-->
 			<Type>PROMOTION_LIZARDMAN_BEZERI</Type>
@@ -532,7 +532,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Spells/SeaSneak.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Spells/SeaSneak.dds</Button>
 			<iMinLevel>6</iMinLevel>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Sea Sneak SPELL-->
@@ -587,7 +587,7 @@
 				</UnitCombat>
 			</UnitCombats>
 			<bDispellable>1</bDispellable>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Spells/SeaSneak.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Spells/SeaSneak.dds</Button>
 			<iMinLevel>-1</iMinLevel>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Sea Stealth  -->
@@ -672,7 +672,7 @@
 			<Type>PROMOTION_CORAL_CURIO</Type>
 			<Description>TXT_KEY_EQUIPMENT_CORAL_CURIO</Description>
 		    <Civilopedia>TXT_KEY_EQUIPMENT_CORAL_CURIO_PEDIA</Civilopedia>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Promotions/CoralCurio.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Promotions/CoralCurio.dds</Button>
 			<bEquipment>1</bEquipment>
 			<SpecialCargo>SPECIALUNIT_SEABEAST</SpecialCargo>
 			<DomainCargo>DOMAIN_SEA</DomainCargo>
@@ -797,7 +797,7 @@
 					<iTerrainDefense>25</iTerrainDefense>
 				</TerrainDefense>
 			</TerrainDefenses>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Promotions/Conqueror.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Promotions/Conqueror.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- PIRATE_PRINCE1 -->
 			<Type>PROMOTION_PIRATE_PRINCE1</Type>
@@ -815,7 +815,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Promotions/PiratePrince.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Promotions/PiratePrince.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- PIRATE_PRINCE2 -->
 			<Type>PROMOTION_PIRATE_PRINCE2</Type>
@@ -845,7 +845,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Promotions/PiratePrince.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Promotions/PiratePrince.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- DROWNED_CALLER1 -->
 			<Type>PROMOTION_DROWNED_CALLER1</Type>
@@ -867,7 +867,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Promotions/DrownCaller.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Promotions/DrownCaller.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- DROWNED_CALLER2 -->
 			<Type>PROMOTION_DROWNED_CALLER2</Type>
@@ -907,7 +907,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Promotions/DrownCaller.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Promotions/DrownCaller.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Nightmare Aifon --> <!-- Dream of the Aifons start -->
 			<Type>PROMOTION_NIGHTMARE_AIFON</Type>
@@ -982,7 +982,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Units/AifonNightmareButton.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Units/AifonNightmareButton.dds</Button>
 			<bHiddenNationality>1</bHiddenNationality>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Nightmare Aifon hidden nationality safety net--> 
@@ -1049,7 +1049,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Units/AifonNightmareButton.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Units/AifonNightmareButton.dds</Button>
 			<bHiddenNationality>1</bHiddenNationality>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Dreaming Aifon -->
@@ -1134,7 +1134,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Promotions/DreamingAifonButton.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Promotions/DreamingAifonButton.dds</Button>
 			<CityBonuses>
 				<CityBonus>
 					<bApplyRival>1</bApplyRival>
@@ -1167,7 +1167,7 @@
 		<PromotionInfo>		<!-- Dream -->						
 			<Type>PROMOTION_DREAM</Type>
 			<Description>TXT_KEY_PROMOTION_DREAM</Description>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Promotions/Dream.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Promotions/Dream.dds</Button>
 			<bImmuneToFear>1</bImmuneToFear>
 			<PromotionExcludes>
 				<Promotion>PROMOTION_TERRIFIED</Promotion>
@@ -1198,7 +1198,7 @@
 		<PromotionInfo>		<!-- Seafolk -->						
 			<Type>PROMOTION_SEAFOLK_VS</Type>
 			<Description>TXT_KEY_PROMOTION_SEAFOLK_VS</Description>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Promotions/Seafolk.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Promotions/Seafolk.dds</Button>
 			<iMinLevel>-1</iMinLevel>
 			<TerrainAttacks>
 				<TerrainAttack>
@@ -1552,7 +1552,7 @@
 				<Promotion>PROMOTION_NIGHTMARE_AIFON</Promotion>
 				<Promotion>PROMOTION_NIGHTMARE_AIFON_HIDDEN_NATIONALITY_BLANKET</Promotion>
 			</PromotionOverwrites> -->
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Units/UndineButton.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Units/UndineButton.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- SLEEPWALKING -->
 			<Type>PROMOTION_SLEEPWALKING</Type>
@@ -1604,7 +1604,7 @@
 					<iTerrainDefense>-25</iTerrainDefense>
 				</TerrainDefense>
 			</TerrainDefenses>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Spells/SirensCall.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Spells/SirensCall.dds</Button>
 			<Sound>AS3D_SUB_SELECT</Sound>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Hateful Glare -->
@@ -1628,7 +1628,7 @@
 				<Promotion>PROMOTION_NIGHTMARE_AIFON</Promotion>
 				<Promotion>PROMOTION_NIGHTMARE_AIFON_HIDDEN_NATIONALITY_BLANKET</Promotion>
 			</PromotionOverwrites> -->
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Units/NightmareHag.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Units/NightmareHag.dds</Button>
 		</PromotionInfo>
 		
 		<PromotionInfo>		<!-- Fear of Isolation - Nightmare Mask -->
@@ -1686,7 +1686,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Units/AifonNightmareButton.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Units/AifonNightmareButton.dds</Button>
 			<bHiddenNationality>1</bHiddenNationality>
 			<bDispellable>1</bDispellable>
 			<iMinLevel>-1</iMinLevel>
@@ -1853,7 +1853,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Promotions/DreamingAifonButton.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Promotions/DreamingAifonButton.dds</Button>
 			<DamageTypeResists>
 				<DamageTypeResist>
 					<DamageType>DAMAGE_UNHOLY</DamageType>
@@ -1889,7 +1889,7 @@
 				<Promotion>PROMOTION_NIGHTMARE_AIFON</Promotion>
 				<Promotion>PROMOTION_NIGHTMARE_AIFON_HIDDEN_NATIONALITY_BLANKET</Promotion>
 			</PromotionOverwrites>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Promotions/Twin_Soul.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Promotions/Twin_Soul.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Condatis Merged -->
 			<Type>PROMOTION_MERGED_VS</Type>
@@ -1905,7 +1905,7 @@
 				<Promotion>PROMOTION_NIGHTMARE_AIFON</Promotion>
 				<Promotion>PROMOTION_NIGHTMARE_AIFON_HIDDEN_NATIONALITY_BLANKET</Promotion>
 			</PromotionOverwrites>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Promotions/CondatisasOne.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Promotions/CondatisasOne.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Aifon Enraged -->
 			<Type>PROMOTION_ENRAGED_AIFON</Type>
@@ -1919,7 +1919,7 @@
 			<PromotionRandomApply>PROMOTION_ENRAGED</PromotionRandomApply>
 			<iVisibilityChange>3</iVisibilityChange>
 			<iExtraPerception>2</iExtraPerception>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Spells/GlimpseUnseen.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Spells/GlimpseUnseen.dds</Button>
 		</PromotionInfo>
 		
 		<PromotionInfo>		<!-- Golem -->

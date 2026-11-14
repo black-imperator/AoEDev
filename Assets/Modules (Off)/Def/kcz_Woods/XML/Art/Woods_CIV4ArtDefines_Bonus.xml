@@ -7,7 +7,7 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<NIF>Art/Terrain/Resources/wheat/wheat.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\kcz_Woods\Art\Interface\Buttons\Worldbuilder\Honey.dds</Button>
+			<Button>Modules\Def\kcz_Woods\Art\Interface\Buttons\Worldbuilder\Honey.dds</Button>
 			<FontButtonIndex>62</FontButtonIndex>
 		</BonusArtInfo>
 	</BonusArtInfos>

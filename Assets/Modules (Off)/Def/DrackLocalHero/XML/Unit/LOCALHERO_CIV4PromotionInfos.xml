@@ -11,7 +11,7 @@
 			<bRivalTerritoryBlock>1</bRivalTerritoryBlock>
 			<Description>TXT_KEY_PROMOTION_LOCAL_HERO</Description>
 			<Help>TXT_KEY_PROMOTION_LOCAL_HERO_HELP</Help>
-			<Button>Modules\NormalModules\DrackLocalHero\Art\LocalHero.dds</Button>
+			<Button>Modules\Def\DrackLocalHero\Art\LocalHero.dds</Button>
 			<PromotionCombatMods>
 				<PromotionCombatMod>
 					<PromotionType>PROMOTION_HERO</PromotionType>
@@ -72,7 +72,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
-			<Button>Modules\NormalModules\DrackLocalHero\Art\Homesickness.dds</Button>
+			<Button>Modules\Def\DrackLocalHero\Art\Homesickness.dds</Button>
 			<iExtraCombatStr>-3</iExtraCombatStr>
 			<iCombatPercent>-150</iCombatPercent>
 		</PromotionInfo>

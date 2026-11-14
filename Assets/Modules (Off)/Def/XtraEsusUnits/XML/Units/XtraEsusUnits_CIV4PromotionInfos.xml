@@ -21,7 +21,7 @@
 			</PromotionExcludes>
 			<PythonOnRemove>crimeLordStrengthRemove(pCaster)</PythonOnRemove>
 			<PyPerTurn>crimeLordStrength(pCaster)</PyPerTurn>
-			<Button>Modules/NormalModules/XtraEsusUnits/Art/Interface/Buttons/Spells/deathmerchant2.dds</Button>
+			<Button>Modules/Def/XtraEsusUnits/Art/Interface/Buttons/Spells/deathmerchant2.dds</Button>
 			<PromotionNextLevel>PROMOTION_ESUS_UNDERWORLD_CONNECTIONS</PromotionNextLevel>
 		</PromotionInfo>
 		<PromotionInfo>
@@ -99,7 +99,7 @@
 			</UnitCombats>
 			<PythonOnRemove>crimeLordStrengthRemove(pCaster)</PythonOnRemove>
 			<PyPerTurn>crimeLordStrengthUpgraded(pCaster)</PyPerTurn>
-			<Button>Modules/NormalModules/XtraEsusUnits/Art/Interface/Buttons/Spells/deathmerchant4.dds</Button>
+			<Button>Modules/Def/XtraEsusUnits/Art/Interface/Buttons/Spells/deathmerchant4.dds</Button>
 		</PromotionInfo>
 	</PromotionInfos>
 </Civ4PromotionInfos>

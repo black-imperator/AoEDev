@@ -8,7 +8,7 @@
 	<UnitArtInfos>
 		<UnitArtInfo>	<!-- Hero Edith -->
 			<Type>ART_DEF_UNIT_DRACKA_KITH_EDITH</Type>
-			<Button>Modules/NormalModules/DrackAdditionalCivs/Art/Units/Edith.dds</Button> 
+			<Button>Modules/Def/DrackAdditionalCivs/Art/Units/Edith.dds</Button> 
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -33,7 +33,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- Hero Ella -->
 			<Type>ART_DEF_UNIT_DRACKA_KITH_ELLA</Type>
-			<Button>Modules/NormalModules/DrackAdditionalCivs/Art/Units/Ella.dds</Button> 
+			<Button>Modules/Def/DrackAdditionalCivs/Art/Units/Ella.dds</Button> 
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -58,7 +58,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>  <!-- Poggman -->
 			<Type>ART_DEF_UNIT_DRACKA_KITH_POGGMAN</Type>
-			<Button>Modules/NormalModules/DrackAdditionalCivs/Art/Units/Poggman.dds</Button>
+			<Button>Modules/Def/DrackAdditionalCivs/Art/Units/Poggman.dds</Button>
 			<fScale>0.36</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -81,7 +81,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- Tinkskutend -->
 			<Type>ART_DEF_UNIT_DRACKA_KITH_TINKSKUTEND</Type>
-			<Button>Modules/NormalModules/DrackAdditionalCivs/Art/Units/Tinkskutend.dds</Button>
+			<Button>Modules/Def/DrackAdditionalCivs/Art/Units/Tinkskutend.dds</Button>
 			<fScale>0.36</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -104,7 +104,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- Tinkerbrawlas -->
 			<Type>ART_DEF_UNIT_DRACKA_KITH_TINKERBRAWLAS</Type>
-			<Button>Modules/NormalModules/DrackAdditionalCivs/Art/Units/Tinkerbrawlas.dds</Button>
+			<Button>Modules/Def/DrackAdditionalCivs/Art/Units/Tinkerbrawlas.dds</Button>
 			<fScale>0.36</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -127,7 +127,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- Brassknucklas -->
 			<Type>ART_DEF_UNIT_PHALANX</Type>
-			<Button>Modules/NormalModules/DrackAdditionalCivs/Art/Units/Brassknucklas.dds</Button> 
+			<Button>Modules/Def/DrackAdditionalCivs/Art/Units/Brassknucklas.dds</Button> 
 			<fScale>0.36</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -150,7 +150,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- Haligstreita -->
 			<Type>ART_DEF_UNIT_KITH_PALADIN</Type>
-			<Button>Modules/NormalModules/DrackAdditionalCivs/Art/Units/Haligstreita.dds</Button> 
+			<Button>Modules/Def/DrackAdditionalCivs/Art/Units/Haligstreita.dds</Button> 
 			<fScale>0.36</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -175,7 +175,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- Tinkerbloomer -->
 			<Type>ART_DEF_UNIT_KITH_DRUID</Type>
-			<Button>Modules/NormalModules/DrackAdditionalCivs/Art/Units/Tinkerbloomer.dds</Button> 
+			<Button>Modules/Def/DrackAdditionalCivs/Art/Units/Tinkerbloomer.dds</Button> 
 			<fScale>0.4</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -200,7 +200,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- Wyrdbrassa -->
 			<Type>ART_DEF_UNIT_KITH_EIDOLON</Type>
-			<Button>Modules/NormalModules/DrackAdditionalCivs/Art/Units/Wyrdbrassa.dds</Button> 
+			<Button>Modules/Def/DrackAdditionalCivs/Art/Units/Wyrdbrassa.dds</Button> 
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -223,7 +223,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- Grimcog -->
 			<Type>ART_DEF_UNIT_KITH_IMMORTAL</Type>
-			<Button>Modules/NormalModules/DrackAdditionalCivs/Art/Units/Grimcog.dds</Button> 
+			<Button>Modules/Def/DrackAdditionalCivs/Art/Units/Grimcog.dds</Button> 
 			<fScale>0.36</fScale>
 			<fInterfaceScale>1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>

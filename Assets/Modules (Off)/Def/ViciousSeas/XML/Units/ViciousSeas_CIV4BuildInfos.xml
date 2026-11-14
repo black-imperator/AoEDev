@@ -63,7 +63,7 @@
 			<bShiftDown>0</bShiftDown>
 			<bCtrlDown>0</bCtrlDown>
 			<iHotKeyPriority>0</iHotKeyPriority>
-			<Button>Modules/NormalModules/ViciousSeas/Art/Interface/Buttons/Improvements/Seahaven.dds</Button>
+			<Button>Modules/Def/ViciousSeas/Art/Interface/Buttons/Improvements/Seahaven.dds</Button>
 			<TechBuildDiscounts>
 				<TechBuildDiscount>
 					<TechType>TECH_EDUCATION</TechType>

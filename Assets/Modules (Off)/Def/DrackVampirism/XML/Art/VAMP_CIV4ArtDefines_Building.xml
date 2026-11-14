@@ -14,7 +14,7 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/templeofgift/undeadtemple.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackVampirism\Art\Buildings\BloodTemple.dds</Button>
+			<Button>Modules\Def\DrackVampirism\Art\Buildings\BloodTemple.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo> <!-- Blood Foundry -->
 			<Type>ART_DEF_BUILDING_BLOOD_FOUNDRY</Type>
@@ -24,7 +24,7 @@
 			<fInterfaceScale>0.7</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Jail/Jail.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackVampirism\Art\Buildings\BloodFoundry.dds</Button>
+			<Button>Modules\Def\DrackVampirism\Art\Buildings\BloodFoundry.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo> <!-- Sanguine Altar -->
 			<Type>ART_DEF_BUILDING_VAMP_SANGUINE_ALTAR</Type>
@@ -34,7 +34,7 @@
 			<fInterfaceScale>1.11</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Theatre/Theatre.nif</NIF>
 			<KFM/>
-			<Button>Modules\NormalModules\DrackVampirism\Art\Buildings\SanguineAltar.dds</Button>
+			<Button>Modules\Def\DrackVampirism\Art\Buildings\SanguineAltar.dds</Button>
 		</BuildingArtInfo>
 	</BuildingArtInfos>
 </Civ4ArtDefines>

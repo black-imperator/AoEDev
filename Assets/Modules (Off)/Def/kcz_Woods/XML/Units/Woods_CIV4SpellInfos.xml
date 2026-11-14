@@ -44,7 +44,7 @@
 			<PyResult>spellNaturesCall(pCaster)</PyResult>
 			<Effect>EFFECT_SPELL1</Effect>
 			<Sound>AS3D_TOILINGS</Sound>
-			<Button>Modules/NormalModules/kcz_Woods/Art/Interface/Buttons/Spells/naturescall.dds</Button>
+			<Button>Modules/Def/kcz_Woods/Art/Interface/Buttons/Spells/naturescall.dds</Button>
 		</SpellInfo>
 		<SpellInfo>			<!-- Fury of Nature -->					<!-- Fury of Nature Trait -->
 			<Type>SPELL_FURY_OF_NATURE</Type>

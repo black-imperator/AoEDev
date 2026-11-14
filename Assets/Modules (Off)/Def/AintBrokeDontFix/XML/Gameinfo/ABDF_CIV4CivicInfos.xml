@@ -19,7 +19,7 @@
 			<CivicOptionType>CIVICOPTION_ECONOMY</CivicOptionType>
 			<Type>CIVIC_MERCANTILISM</Type>
 			<Description>TXT_KEY_CIVIC_MERCANTILISM</Description>
-			<Button>Modules/NormalModules/VCivics/Art/Interface/Buttons/Civics/VCivics_mercantilism.dds</Button>
+			<Button>Modules/Def/VCivics/Art/Interface/Buttons/Civics/VCivics_mercantilism.dds</Button>
 			<TechPrereq>TECH_MERCANTILISM</TechPrereq>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
@@ -54,7 +54,7 @@
 			<CivicOptionType>CIVICOPTION_ECONOMY</CivicOptionType>
 			<Type>CIVIC_CONQUEST</Type>
 			<Description>TXT_KEY_CIVIC_CONQUEST</Description>
-			<Button>Modules/NormalModules/VCivics/Art/Interface/Buttons/Civics/VCivics_conquest.dds</Button>
+			<Button>Modules/Def/VCivics/Art/Interface/Buttons/Civics/VCivics_conquest.dds</Button>
 			<TechPrereq>TECH_WARFARE</TechPrereq>
 			<bInfluenceAllowed>1</bInfluenceAllowed>
 			<iAnarchyLength>1</iAnarchyLength>

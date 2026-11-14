@@ -11254,7 +11254,7 @@
 			<Description>TXT_KEY_LEADER_CIMESIAT</Description>
 			<Civilopedia>TXT_KEY_LEADER_CIMESIAT_PEDIA</Civilopedia>
 			<DefeatQuote>TXT_KEY_POPUP_DEFEATED_DOVIELLO</DefeatQuote>
-			<Image>Modules/NormalModules/ViciousSeas/Art/Interface/LeaderHeads/Cimesiat.dds</Image>
+			<Image>Modules/Def/ViciousSeas/Art/Interface/LeaderHeads/Cimesiat.dds</Image>
 			<ArtDefineTag>ART_DEF_LEADER_CIMESIAT</ArtDefineTag>
 			<bForceOverwrite>1</bForceOverwrite> 
 			<iWonderConstructRand>0</iWonderConstructRand>
