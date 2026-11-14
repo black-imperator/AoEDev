@@ -4,7 +4,6 @@ using AoELauncher.Models;
 
 namespace AoELauncher.Core;
 
-/// <summary>
 /// Confirms the launcher (and therefore the Ashes of Erebus folder it ships
 /// inside) is placed correctly, without touching the registry or scanning
 /// the disk for Steam/GOG installs. Since the launcher exe is distributed as
@@ -18,7 +17,6 @@ namespace AoELauncher.Core;
 /// instead of
 ///   ...\Sid Meier's Civilization IV Beyond the Sword\Beyond the Sword\Mods\Ashes of Erebus
 /// Checking for Civ4BeyondSword.exe two levels up catches exactly this.
-/// </summary>
 public static class InstallLocator
 {
     public const string ExpectedFolderName = "Ashes of Erebus";
@@ -71,9 +69,9 @@ public static class InstallLocator
         }
         result.BtsExePath = exePath;
 
-        // Either side's Any\ or Order\1..4 folder counts as evidence this is an AoE install.
-        var activeDir = ModuleLayout.GetPassDir(modPath, true, ModuleLayout.AnyPass);
-        var inactiveDir = ModuleLayout.GetPassDir(modPath, false, ModuleLayout.AnyPass);
+        // Either side's Def\ or Seq\1..4 folder counts as evidence this is an AoE install.
+        var activeDir = ModuleLayout.GetPassDir(modPath, true, ModuleLayout.DefaultPass);
+        var inactiveDir = ModuleLayout.GetPassDir(modPath, false, ModuleLayout.DefaultPass);
         var anyModuleFolder = false;
         foreach (var isActive in new[] { true, false })
             foreach (var pass in ModuleLayout.Passes)
@@ -84,7 +82,7 @@ public static class InstallLocator
         {
             result.Errors.Add(
                 "This doesn't look like an Ashes of Erebus install -- missing " +
-                "Assets\\Modules\\Any and Assets\\Inactive Modules\\Any (or their Order\\1-4 folders).");
+                "Assets\\Modules\\Def and Assets\\Modules (Off)\\Def (or their Seq\\1-4 folders).");
         }
         else
         {

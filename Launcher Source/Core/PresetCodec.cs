@@ -6,10 +6,9 @@ using AoELauncher.Models;
 
 namespace AoELauncher.Core;
 
-/// <summary>
 /// Turns a Preset into a compact, pasteable text code (and back again).
 ///
-/// Format: "AoE" + &lt;AshesOfErebus version.txt contents&gt; + ":" + gzip-
+/// Format: "AoE" + [AshesOfErebus version.txt contents] + ":" + gzip-
 /// compressed, base64url-encoded binary payload. The version tag is purely
 /// informational (lets the user see what AoE version a code was made
 /// against) -- there's only ever one payload format, so there's no
@@ -19,19 +18,17 @@ namespace AoELauncher.Core;
 /// than JSON, to comfortably fit under Discord's 2000-character message
 /// limit even with ~100 modules:
 ///   byte    : flags. bit 0 (1) = "futureproof" (no version/fingerprint);
-///             bit 1 (2) = each module carries a load-pass byte. Codes made before
-///             load passes existed have bit 1 clear and still decode fine (their
-///             modules just come back with no pass, i.e. "leave where it is").
+///             bit 1 (2) = each module carries a load-pass byte. When clear, modules
+///             come back with no pass, i.e. "leave where it is".
 ///   string  : preset name (length-prefixed UTF8)
 ///   ushort  : module count
 ///   for each module:
 ///     string : module folder name (length-prefixed UTF8)
 ///     [only if bit 1 set:]
-///       byte    : load pass (0 = Any, 1-4 = Order\1..4, 255 = unspecified)
+///       byte    : load pass (0 = Def, 1-4 = Seq\1..4, 255 = unspecified)
 ///     [only if not futureproof:]
 ///       string  : version
 ///       4 bytes : fingerprint (raw bytes, not hex text -- half the size)
-/// </summary>
 public static class PresetCodec
 {
     private const string MagicPrefix = "AoE";
@@ -44,13 +41,13 @@ public static class PresetCodec
     {
         var p = ModuleLayout.NormalizePass(pass);
         if (p.Length == 0) return PassUnspecified;
-        return p == ModuleLayout.AnyPass ? (byte)0 : byte.Parse(p);
+        return p == ModuleLayout.DefaultPass ? (byte)0 : byte.Parse(p);
     }
 
     private static string ByteToPass(byte b) =>
-        b == 0 ? ModuleLayout.AnyPass : (b >= 1 && b <= 4 ? b.ToString() : "");
+        b == 0 ? ModuleLayout.DefaultPass : (b >= 1 && b <= 4 ? b.ToString() : "");
 
-    /// <summary>Discord's plain-message character limit, used as the target ceiling for export codes.</summary>
+    /// Discord's plain-message character limit, used as the target ceiling for export codes
     public const int DiscordSafeLimit = 2000;
 
     public static string Encode(Preset preset, bool futureproof, string modVersion)

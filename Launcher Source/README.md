@@ -7,16 +7,6 @@ on the .NET Framework already present on the machine rather than bundling a
 runtime) plus a single XML config/save file (`aoe_launcher_config.xml`) written
 next to it. No installer, no registry entries, no other footprint.
 
-**Honesty note:** written and reviewed carefully in an environment without
-Windows, .NET, or internet access, so it has **not been compiled or run
-yet** -- this includes the .NET Framework 4.8 retarget (from an original
-.NET 8 version), which was done the same way: manually auditing every API
-used against what .NET Framework 4.8 actually supports, and replacing
-anything that wasn't (see "Notes on the .NET Framework 4.8 port" below).
-Treat it as a solid draft that may need a short debugging pass on a real
-machine. Send me any build error or odd behavior and I'll fix it directly
-in the source.
-
 ## Features
 
 - **Placement check, no registry/disk scanning**: the launcher ships inside
@@ -29,33 +19,46 @@ in the source.
   manual override for any of this -- if placement is wrong, fix the
   placement (Re-check / Continue Anyway / Quit are the only options).
 - **One-click launch**: runs `Civ4BeyondSword.exe` with the mod enabled via
-  a direct process launch (`UseShellExecute = false`), not through
-  `ShellExecuteEx`. An earlier version used `ShellExecuteEx` and produced a
-  background process with no window that had to be killed from Task
-  Manager, even though an identical manually-created shortcut launched
-  fine; switching to a direct `CreateProcess`-style launch is a known fix
-  for this class of symptom.
+  a direct process launch (`UseShellExecute = false`)
 - **Launch button status**: the button shows the detected version from
-  `version.txt` (e.g. `Launch Ashes of Erebus v380`), `v?` if that file is
-  missing or malformed, or `Ashes of Erebus not found!` if
-  `Civ4BeyondSword.exe` can't be located. Refresh re-evaluates it.
+  `version.txt` (e.g. `Launch Ashes of Erebus v380`)
 - **Manage Modules / Hide Modules** button (centered under Launch): shows or
   hides everything beneath it except the status bar -- the module lists and
   the preset/dev tools. Hidden, the window shrinks to just the top section
   (Instructions, Launch, Open Civ4 Config, Close on launch); shown, it grows
   back to its previous height. The state is saved in the config file
   (`ModulesVisible`) and applied on startup; it defaults to hidden.
+- **Remembered window size**: the window's width, its height while the module
+  section is shown, and whether it was maximized are saved in the config file
+  (`WindowClientWidth`, `WindowClientHeight`, `WindowMaximized`) when the user
+  finishes resizing, maximizes/restores, or closes the window, and are applied
+  on the next startup (clamped to the screen). The hidden-modules height is
+  fixed, so only the expanded height is stored.
 - **Close on launch?** checkbox (under Open Civ4 Config): saved in the config file; when
   checked, the launcher exits right after successfully starting the game.
 - **Load passes**: modules live under `Assets\Modules` (active) or
-  `Assets\Inactive Modules` (inactive), in either `Any\<module>` or
-  `Order\1..4\<module>`. The **Loadpass** column shows `Any` or `1`-`4`.
-  Right-clicking a module offers `Load in pass: Any / 1 / 2 / 3 / 4`
+  `Assets\Modules (Off)` (inactive), in either `Def\<module>` (default) or
+  `Seq\1..4\<module>` (sequenced). The **Loadpass** column shows `Default` or `1`-`4`.
+  The game loads `Def` first, then `1`, `2`, `3`, `4`; within each folder modules
+  load alphabetically by module *folder* name.
+  Right-clicking a module offers `Load in pass: Default / 1 / 2 / 3 / 4`
   (hiding the pass it's already in) and moves it between those folders on
   its current side; with several rows selected the choice applies to all of
   them. Moving a module between Active and Inactive (drag, double-click, or
-  presets) preserves its pass. Modules dropped in from Explorer land in `Any`.
-  A module name must be unique across all passes on a side.
+  presets) preserves its pass. Modules dropped in from Explorer land in `Def`.
+  A module folder name must be unique across all passes on a side.
+- **Module names**: the name shown in the lists is the `[name]` entry of the
+  module's `info.txt` (the folder name is used if there is none). Presets and
+  the file system still identify modules by folder name.
+- **Dependency and incompatibility checks**: when you press Launch, Save
+  Preset or Export Preset, the launcher first checks `[incompatible]` (no two
+  modules in the set may list each other as incompatible), then `[dependency]`
+  (every dependency must be in the set and load before the module that needs
+  it: earlier pass, or same pass and earlier alphabetically by folder name).
+  Each problem is shown in a popup listing the modules involved, with
+  Abort / Continue. Launch and Save check the active modules; Export checks the
+  preset's modules in the passes the preset records (modules not installed
+  locally can't be checked).
 - **Tag and revision columns**: `Civ`, `Mech`, `Art` and `Joke` show a
   checkmark when the module's `[tags]` section contains that tag; `AoE Rev`
   shows the `[aoeversion]` line.
@@ -63,7 +66,7 @@ in the source.
   disable modules. Drag a module folder in from Explorer to install it.
 - **Per-module tooltip and details**: hovering a module shows its
   `shortdesc` from `info.txt`; clicking the **?** button on its row shows
-  the full `desc`, version, author, RifE version, and compatibility list.
+  the full `desc`, version, author, AoE version, and compatibility list.
 - **Update Schemas** (labeled "Dev: Update Schemas" in the UI, bottom-right):
   scans every module's `XML` folder (active and inactive) for files ending
   in `Schema.xml`, matches them against Ashes of Erebus's own base schema
@@ -81,8 +84,7 @@ in the source.
   individual-file level for modules that had one or more errors.
 - **Presets**: save/load/delete named collections of the active module set,
   including each module's load pass. Loading a preset puts modules in the
-  recorded passes. Presets and share codes made before load passes existed
-  have no recorded pass, and leave modules in whichever pass they're in.
+  recorded passes; a module with no recorded pass stays in whichever pass it's in.
 - **Import/export via a compact share code**, formatted as
   `AoE<version>:<data>` where `<version>` comes from the mod's own
   `version.txt` (purely informational -- it doesn't block importing a
@@ -119,6 +121,9 @@ Parsed as sectioned key/value blocks:
 [version]
 1.2
 ;
+[name]
+Cheaper Techs
+;
 [shortdesc]
 Cheaper earlier techs, MUCH more expensive late techs.
 ;
@@ -128,17 +133,25 @@ Cheaper earlier techs, MUCH more expensive late techs.
 [tags]
 Civ, Mech
 ;
+[dependency]
+Some Other Module, Another Module
+;
+[incompatible]
+Conflicting Module
+;
 [desc]
 Multi-line description text...
 can span several lines, including blank ones for paragraph breaks.
 ```
 
+`[name]` is the module's display name, and is also what other modules write in
+their `[dependency]` and `[incompatible]` lists (comma-separated; both may be empty).
 `[aoeversion]` fills the **AoE Rev** column. `[tags]` is a list separated by
 commas, semicolons, pipes, spaces or line breaks; each entry is compared as a
 whole word, case-insensitively, against `Civ`, `Mech`, `Art` and `Joke`.
 
 `[shortdesc]` becomes the row's tooltip; `[desc]` (plus version/author/
-rifeversion/compatible) shows up in the popup from that row's **?** button.
+AoE version/compatible/dependency/incompatible) shows up in the popup from that row's **?** button.
 
 ## Project layout
 
@@ -148,15 +161,16 @@ AoELauncher/
   Program.cs
   MainForm.cs              <- main window: module grids, drag/drop, presets, schemas
   Models/
-    AppConfig.cs             <- the one config/save file's shape (Presets + close-on-launch + modules-visible flags)
+    AppConfig.cs             <- the one config/save file's shape (Presets + close-on-launch + modules-visible + window size)
     ModuleInfo.cs             <- live scan result, incl. parsed info.txt fields
     PlacementResult.cs        <- result of the startup placement check
   Core/
     ConfigManager.cs          <- load/save the XML config file (always next to the exe)
     CompatHelpers.cs          <- small .NET Framework 4.8 shims (hex encoding, relative paths)
     InstallLocator.cs         <- placement validation only, no registry/disk scanning
-    ModuleLayout.cs           <- Any\ / Order\1..4 folder layout and load-pass helpers
+    ModuleLayout.cs           <- Def\ / Seq\1..4 folder layout and load-pass helpers
     ModuleScanner.cs          <- scans modules, parses info.txt, computes fingerprints
+    ModuleChecker.cs          <- [incompatible] and [dependency] verification
     SchemaUpdater.cs          <- the Update Schemas action
     PresetCodec.cs            <- compact binary encode/decode for the share string
     GameLauncher.cs           <- starts the game with the mod enabled
@@ -165,27 +179,6 @@ AoELauncher/
     PlacementIssuesForm.cs    <- shown when the startup placement check fails
     InputForm.cs              <- generic text-entry dialog (preset names, import)
 ```
-
-## How to build it (Visual Studio)
-
-1. Install **Visual Studio 2022** (the free Community edition works fine)
-   with the ".NET desktop development" workload (this includes the .NET
-   Framework 4.8 targeting pack).
-2. Open `AoELauncher/AoELauncher.csproj`.
-3. Right-click the project → **Publish** → Folder. There's no
-   self-contained/single-file/runtime-identifier option to set here on
-   purpose -- the project targets `net48` and is framework-dependent by
-   default, so a normal publish (or even just a Release build) already
-   produces a small `.exe` (well under 1MB) that relies on the target
-   machine already having .NET Framework 4.8. That's effectively every
-   Windows 10/11 machine, since 4.8 has shipped as a Windows Update
-   component since 2019 -- there's deliberately no bundled runtime here,
-   unlike an earlier version of this project that targeted .NET 8
-   self-contained and produced a 60-150 MB exe.
-4. Drop that one `.exe` into the `Ashes of Erebus` mod folder itself (next
-   to its `Assets` folder) -- the launcher's own location is how it finds
-   everything else. The first run creates `aoe_launcher_config.xml` right
-   beside it.
 
 ## Notes on a few design decisions
 
@@ -211,7 +204,7 @@ AoELauncher/
   handling -- the `AoE<version>:` prefix is just the mod's version.txt
   contents for the user's information, not a wire-format version switch.
 - **Module load order**: load order within a pass isn't adjustable; the
-  coarse ordering is the load pass (`Any`, then `Order\1`-`4`), set via the
+  coarse ordering is the load pass (`Def`, then `Seq\1`-`4`), set via the
   right-click menu and stored in presets.
 - **Permissions**: if AoE is installed under `Program Files`, moving module
   folders (or saving the config file) may require running the launcher as
@@ -220,8 +213,3 @@ AoELauncher/
   OS-themed and don't fully recolor without owner-drawing the control --
   fills, text, buttons, and grids are fully themed, but the thin outline
   around "Active Modules"/"Inactive Modules" may not perfectly match.
-
-## If something doesn't compile or behave right
-
-Send me the build error or the behavior you're seeing and I'll fix it
-directly in the source.

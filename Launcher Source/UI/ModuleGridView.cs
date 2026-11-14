@@ -4,7 +4,6 @@ using System.Windows.Forms;
 
 namespace AoELauncher.UI;
 
-/// <summary>
 /// A plain DataGridView with MultiSelect=true already supports Ctrl-click
 /// (toggle) and Shift-click (range) natively and correctly -- the previous
 /// version of this app tried to reimplement that logic in a MouseDown event
@@ -26,7 +25,6 @@ namespace AoELauncher.UI;
 /// happened. Every other case (Ctrl-click, Shift-click, clicking an
 /// unselected row) falls straight through to the grid's own correct,
 /// well-tested default behavior.
-/// </summary>
 public class ModuleGridView : DataGridView
 {
     private Point _dragStart = Point.Empty;
@@ -34,7 +32,7 @@ public class ModuleGridView : DataGridView
     private bool _deferredSingleSelectPending;
     private int _deferredRowIndex = -1;
 
-    /// <summary>Raised once the mouse has moved far enough (from a valid row, held button) to start a drag-drop gesture.</summary>
+    /// Raised once the mouse has moved far enough (from a valid row, held button) to start a drag-drop gesture.
     public event EventHandler? DragThresholdReached;
 
     // --- Cell tooltips -----------------------------------------------------------------------
@@ -71,7 +69,7 @@ public class ModuleGridView : DataGridView
         base.Dispose(disposing);
     }
 
-    /// <summary>Shows, changes or hides the tooltip to match whatever cell is under the cursor right now.</summary>
+    /// Shows, changes or hides the tooltip to match whatever cell is under the cursor right now.
     private void UpdateCellToolTip()
     {
         if (!IsHandleCreated || IsDisposed) return;
@@ -112,7 +110,7 @@ public class ModuleGridView : DataGridView
         if (IsHandleCreated) _cellToolTip.Hide(this);
     }
 
-    /// <summary>Rows being rebuilt (Refresh, drag-drop) can change what's under a stationary cursor; re-check once the batch is done.</summary>
+    /// Rows being rebuilt (Refresh, drag-drop) can change what's under a stationary cursor; re-check once the batch is done.
     private void QueueCellToolTipRefresh()
     {
         if (_tipRefreshQueued || !IsHandleCreated) return;

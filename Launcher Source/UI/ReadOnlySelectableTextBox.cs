@@ -4,7 +4,6 @@ using System.Windows.Forms;
 
 namespace AoELauncher.UI;
 
-/// <summary>
 /// A read-only, multiline TextBox used for the app's report/message
 /// dialogs. Fixes two standard WinForms annoyances for this use case:
 ///   1. A TextBox that's the first (or only) focusable control on a newly
@@ -18,7 +17,6 @@ namespace AoELauncher.UI;
 /// the blinking caret's visibility, not the underlying selection or
 /// keyboard/mouse interaction, so drag-to-select and copy keep working
 /// normally.
-/// </summary>
 public class ReadOnlySelectableTextBox : TextBox
 {
     [DllImport("user32.dll")]

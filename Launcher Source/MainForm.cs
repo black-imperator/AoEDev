@@ -19,12 +19,12 @@ public class MainForm : Form
     private readonly string _modPath =
         AppContext.BaseDirectory.TrimEnd(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar);
 
-    /// <summary>Resolved fresh from placement validation each run; never persisted or manually overridden.</summary>
+    /// Resolved fresh from placement validation each run; never persisted or manually overridden.
     private string? _btsExePath;
 
     private const string LauncherVersion = "1.0";
 
-    /// <summary>What a version.txt value must look like to be shown on the Launch button (a short single token such as "380").</summary>
+    /// What a version.txt value must look like to be shown on the Launch button (a short single token such as "380").
     private static readonly Regex VersionPattern = new(@"^[0-9A-Za-z._-]{1,12}$");
 
     private AppConfig _config = new();
@@ -44,16 +44,19 @@ public class MainForm : Form
     private Panel _statusPanel = null!;
     private Button btnManage = null!;
 
-    /// <summary>Minimum window width; wide enough for the module grids' extra columns.</summary>
-    private const int MinFormWidth = 1050;
+    private const int MinFormWidth = 900;
     private const int ExpandedMinHeight = 520;
 
-    /// <summary>
-    /// Client height to restore when the module section is revealed. Starts as the default size
-    /// the window is created at, and is updated to whatever the user had resized it to each time
-    /// the section is hidden.
-    /// </summary>
+    /// Client height to restore when the module section is revealed. Starts as the saved (or
+    /// default) height, and follows the user's resizing while the module section is shown.
     private int _expandedClientHeight;
+
+    /// True while the code itself is resizing/re-laying-out the window, so those size changes
+    /// aren't mistaken for the user resizing it.
+    private bool _applyingLayout;
+
+    /// Window state as of the last size/state change, used to notice maximize/restore.
+    private FormWindowState _lastWindowState = FormWindowState.Normal;
 
     public MainForm()
     {
@@ -64,18 +67,98 @@ public class MainForm : Form
         MinimumSize = new Size(MinFormWidth, ExpandedMinHeight);
         _expandedClientHeight = ClientSize.Height;
 
-        // Loaded here rather than in MainForm_Load so the saved Manage Modules state is known
-        // before the window is first shown (no visible expand/shrink flash on startup).
+        // Loaded here rather than in MainForm_Load so the saved Manage Modules state and window
+        // size are known before the window is first shown (no visible resize flash on startup).
         _config = ConfigManager.Load();
+        RestoreWindowSize();
 
         Theme.StyleForm(this);
-        //LoadBackgroundImage(); // BLAZE disabled; seems winforms can't have alpha layers in foreground elements we need
+        //LoadBackgroundImage(); // disabled: WinForms can't layer alpha-blended controls over a background image
 
         BuildUi();
         SetupDragDrop();
         ApplyModulesVisibility(_config.ModulesVisible, initial: true);
 
+        // Maximizing only applies when the module section is shown (the hidden state has a fixed height).
+        if (_config.ModulesVisible && _config.WindowMaximized)
+            WindowState = FormWindowState.Maximized;
+        _lastWindowState = WindowState;
+
         Load += MainForm_Load;
+    }
+
+    // ------------------------------------------------------- Window size ---
+
+    /// Applies the saved window size (if any), clamped to the current screen so a window saved on
+    /// a larger monitor can't open bigger than the display. Only the width and the expanded
+    /// height are stored; the collapsed height is derived from the layout.
+    private void RestoreWindowSize()
+    {
+        if (_config.WindowClientWidth <= 0 || _config.WindowClientHeight <= 0)
+            return;
+
+        var area = Screen.PrimaryScreen?.WorkingArea ?? new Rectangle(0, 0, 1920, 1080);
+        var width = Math.Min(_config.WindowClientWidth, area.Width);
+        var height = Math.Min(_config.WindowClientHeight, area.Height - 60); // leave room for the title bar and frame
+
+        _applyingLayout = true;
+        ClientSize = new Size(width, height);
+        _applyingLayout = false;
+
+        _expandedClientHeight = ClientSize.Height;
+    }
+
+    /// Records the window's current size into the in-memory config. Sizes are only taken while
+    /// the window is in its normal state; a maximized or minimized window keeps the last normal size.
+    private void CaptureWindowSize()
+    {
+        if (_applyingLayout || WindowState != FormWindowState.Normal) return;
+
+        _config.WindowClientWidth = ClientSize.Width;
+        if (_config.ModulesVisible)
+        {
+            _expandedClientHeight = ClientSize.Height;
+            _config.WindowClientHeight = ClientSize.Height;
+        }
+        else
+        {
+            _config.WindowClientHeight = _expandedClientHeight;
+        }
+    }
+
+    protected override void OnSizeChanged(EventArgs e)
+    {
+        base.OnSizeChanged(e);
+        if (_applyingLayout) return;
+
+        CaptureWindowSize();
+
+        // Maximize / restore doesn't raise ResizeEnd, so persist those transitions here.
+        if (WindowState != _lastWindowState && WindowState != FormWindowState.Minimized)
+        {
+            _config.WindowMaximized = WindowState == FormWindowState.Maximized;
+            SaveConfig();
+        }
+        if (WindowState != FormWindowState.Minimized)
+            _lastWindowState = WindowState;
+    }
+
+    /// Fires once when the user finishes dragging the window's edge (not on every pixel of the drag).
+    protected override void OnResizeEnd(EventArgs e)
+    {
+        base.OnResizeEnd(e);
+        CaptureWindowSize();
+        SaveConfig();
+    }
+
+    protected override void OnFormClosing(FormClosingEventArgs e)
+    {
+        base.OnFormClosing(e);
+        if (e.Cancel) return;
+        CaptureWindowSize();
+        if (WindowState != FormWindowState.Minimized)
+            _config.WindowMaximized = WindowState == FormWindowState.Maximized;
+        SaveConfig();
     }
 
     /*
@@ -117,8 +200,6 @@ public class MainForm : Form
         Theme.StyleButton(btnLaunch, primary: true);
         btnLaunch.Click += (s, e) => LaunchGame();
 
-        // Open Civ4 Config sits where Refresh used to (top right); Refresh now lives in the
-        // module section below, where Open Civ4 Config used to be.
         var btnCiv4Config = new FlatButton { Text = "Open Civ4 Config", Width = 150, Height = Theme.ButtonHeight, Top = 13 };
         Theme.StyleButton(btnCiv4Config);
         btnCiv4Config.Click += (s, e) => OpenCiv4Config();
@@ -268,14 +349,13 @@ public class MainForm : Form
         Controls.Add(topPanel);
     }
 
-    /// <summary>
     /// Shows or hides everything beneath the Manage Modules button (the module lists and the
     /// preset/dev tools -- the status bar stays), swaps the button's text, and resizes the window:
     /// shrunk to just the top section + status bar when hidden (with the height locked, since
     /// there's nothing to gain from a taller window), and restored to its expanded height when shown.
-    /// </summary>
     private void ApplyModulesVisibility(bool show, bool initial)
     {
+        _applyingLayout = true;
         SuspendLayout();
 
         if (show)
@@ -291,9 +371,17 @@ public class MainForm : Form
         {
             // A maximized window can't be shrunk; restore it first so the size math below applies.
             if (!initial && WindowState != FormWindowState.Normal)
+            {
                 WindowState = FormWindowState.Normal;
+                _lastWindowState = FormWindowState.Normal;
+                _config.WindowMaximized = false;
+            }
             if (!initial)
+            {
                 _expandedClientHeight = ClientSize.Height;
+                _config.WindowClientHeight = _expandedClientHeight;
+                _config.WindowClientWidth = ClientSize.Width;
+            }
 
             _splitContainer.Visible = false;
             _bottomPanel.Visible = false;
@@ -303,6 +391,7 @@ public class MainForm : Form
 
         btnManage.Text = show ? "Hide Modules" : "Manage Modules";
         ResumeLayout(true);
+        _applyingLayout = false;
 
         // If expanding pushed the bottom edge off-screen, slide the window up to fit.
         if (show && !initial && IsHandleCreated)
@@ -313,11 +402,9 @@ public class MainForm : Form
         }
     }
 
-    /// <summary>
     /// Sizes the window to just the top section + status bar and pins its height there (width
     /// stays freely resizable). Safe to call repeatedly; also re-run once the window handle exists
     /// so the pinned height matches the real, as-created non-client area.
-    /// </summary>
     private void ApplyCollapsedSize()
     {
         MaximumSize = Size.Empty;
@@ -327,13 +414,11 @@ public class MainForm : Form
         MaximumSize = new Size(SystemInformation.VirtualScreen.Width, Height);
     }
 
-    /// <summary>
     /// Keeps the two panes an even 50/50 split. When the window is minimized (or otherwise
     /// squeezed very small) the container's width can drop below Panel1MinSize + Panel2MinSize +
     /// SplitterWidth, at which point NO SplitterDistance is valid and assigning one throws. In
     /// that case there's nothing sensible to do, so leave it alone; the container fires Resize
     /// again on restore and the split is re-centered then.
-    /// </summary>
     private void CenterSplitter()
     {
         var min = _splitContainer.Panel1MinSize;
@@ -450,7 +535,7 @@ public class MainForm : Form
         RefreshPresetCombo();
     }
 
-    /// <summary>Returns true if the app should proceed, false if the user chose to quit.</summary>
+    /// Returns true if the app should proceed, false if the user chose to quit.
     private bool ResolvePlacementIssues(PlacementResult initial)
     {
         var placement = initial;
@@ -522,10 +607,8 @@ public class MainForm : Form
         return "unknown";
     }
 
-    /// <summary>
     /// Sets the Launch button text: "not found" when the game executable can't be located,
     /// otherwise the version from version.txt, or "v?" if that file is missing or malformed.
-    /// </summary>
     private void UpdateLaunchButtonText()
     {
         if (_btsExePath == null || !File.Exists(_btsExePath))
@@ -552,6 +635,12 @@ public class MainForm : Form
             return;
         }
 
+        if (!VerifyActiveModules("launching the game"))
+        {
+            lblStatus.Text = "Launch aborted.";
+            return;
+        }
+
         try
         {
             var modFolderName = Path.GetFileName(_modPath);
@@ -568,6 +657,76 @@ public class MainForm : Form
         }
     }
 
+    // ------------------------------------------------------- Verification ---
+
+    /// Checks the currently active modules (freshly scanned, so manual changes on disk since the
+    /// last refresh are included). Returns true if everything is fine or the user chose to continue.
+    private bool VerifyActiveModules(string action)
+    {
+        var installed = ModuleScanner.ScanAll(_modPath);
+        var set = installed.Where(m => m.IsActive).Select(m => new LoadEntry(m, m.LoadPass)).ToList();
+        return VerifyModuleSet(action, set, installed, "active");
+    }
+
+    /// Checks the modules of a preset as the preset would load them (using the load passes it
+    /// records). Modules the preset names but that aren't installed locally can't be checked
+    /// and are skipped.
+    private bool VerifyPresetModules(Preset preset, string action)
+    {
+        var installed = ModuleScanner.ScanAll(_modPath);
+        var set = new List<LoadEntry>();
+        foreach (var pm in preset.Modules)
+        {
+            var local = installed
+                .Where(m => string.Equals(m.FolderName, pm.Name, StringComparison.OrdinalIgnoreCase))
+                .OrderByDescending(m => m.IsActive)
+                .FirstOrDefault();
+            if (local != null) set.Add(new LoadEntry(local, pm.LoadPass));
+        }
+        return VerifyModuleSet(action, set, installed, "in the preset");
+    }
+
+    /// Runs the incompatibility check, then the dependency check, each with its own
+    /// abort/continue popup. Returns false as soon as the user aborts.
+    /// `setDescription` completes "...is not ___" / "...both ___" in the messages.
+    private bool VerifyModuleSet(string action, List<LoadEntry> set, List<ModuleInfo> installed, string setDescription)
+    {
+        var incompatible = ModuleChecker.CheckIncompatibilities(set);
+        if (incompatible.Count > 0)
+        {
+            var text = new StringBuilder();
+            text.AppendLine($"These modules are marked as incompatible with each other, but both are {setDescription}:");
+            text.AppendLine();
+            foreach (var issue in incompatible) text.AppendLine($"   - {issue}");
+            text.AppendLine();
+            text.AppendLine($"Continue anyway, or abort {action}?");
+
+            if (!ShowConfirmMessage("Incompatible Modules", text.ToString(), "Continue", "Abort", cancelIsDefault: true))
+                return false;
+        }
+
+        var dependencies = ModuleChecker.CheckDependencies(set, installed, setDescription);
+        if (dependencies.Count > 0)
+        {
+            var text = new StringBuilder();
+            text.AppendLine("Some modules have dependencies that won't be loaded before them. A dependency must be " +
+                            "present and load earlier: pass Default first, then 1, 2, 3, 4, and alphabetically by folder " +
+                            "name within a pass.");
+            text.AppendLine();
+            foreach (var issue in dependencies)
+            {
+                text.AppendLine(issue);
+                text.AppendLine();
+            }
+            text.AppendLine($"Continue anyway, or abort {action}?");
+
+            if (!ShowConfirmMessage("Module Dependencies", text.ToString(), "Continue", "Abort", cancelIsDefault: true))
+                return false;
+        }
+
+        return true;
+    }
+
     // ------------------------------------------------------------ Modules ---
 
     private void RefreshModules(bool firstLaunch = false)
@@ -582,8 +741,10 @@ public class MainForm : Form
         var inactiveSelected = SelectedNames(dgvInactive);
 
         var all = ModuleScanner.ScanAll(_modPath);
-        _activeModules = all.Where(m => m.IsActive).OrderBy(m => m.Name, StringComparer.OrdinalIgnoreCase).ToList();
-        _inactiveModules = all.Where(m => !m.IsActive).OrderBy(m => m.Name, StringComparer.OrdinalIgnoreCase).ToList();
+        _activeModules = all.Where(m => m.IsActive)
+            .OrderBy(m => m.Name, StringComparer.OrdinalIgnoreCase).ThenBy(m => m.FolderName, StringComparer.OrdinalIgnoreCase).ToList();
+        _inactiveModules = all.Where(m => !m.IsActive)
+            .OrderBy(m => m.Name, StringComparer.OrdinalIgnoreCase).ThenBy(m => m.FolderName, StringComparer.OrdinalIgnoreCase).ToList();
 
         PopulateGrid(dgvActive, _activeModules, activeSelected, activeScroll);
         PopulateGrid(dgvInactive, _inactiveModules, inactiveSelected, inactiveScroll);
@@ -600,9 +761,9 @@ public class MainForm : Form
         grid.Rows.Count > 0 ? grid.FirstDisplayedScrollingRowIndex : 0;
 
     private static HashSet<string> SelectedNames(DataGridView grid) =>
-        new(grid.SelectedRows.Cast<DataGridViewRow>().Select(r => ((ModuleInfo)r.Tag!).Name), StringComparer.OrdinalIgnoreCase);
+        new(grid.SelectedRows.Cast<DataGridViewRow>().Select(r => ((ModuleInfo)r.Tag!).FolderName), StringComparer.OrdinalIgnoreCase);
 
-    /// <summary>Repopulates a grid while preserving scroll position and selection where possible (both otherwise reset on Rows.Clear()).</summary>
+    /// Repopulates a grid while preserving scroll position and selection where possible (both otherwise reset on Rows.Clear()).
     private static void PopulateGrid(DataGridView grid, List<ModuleInfo> modules, HashSet<string> selectedNames, int scrollIndex)
     {
         grid.Rows.Clear();
@@ -613,7 +774,7 @@ public class MainForm : Form
             var idx = grid.Rows.Add(
                 m.Name,
                 TagMark(m, "Civ"), TagMark(m, "Mech"), TagMark(m, "Art"), TagMark(m, "Joke"),
-                m.Version, m.AoeRev, m.LoadPass,
+                m.Version, m.AoeRev, ModuleLayout.PassDisplayName(m.LoadPass),
                 infoText);
             var row = grid.Rows[idx];
             row.Tag = m;
@@ -627,7 +788,7 @@ public class MainForm : Form
             // auto-select the first row as a side effect of adding rows/assigning the
             // current cell, and leaving that implicit rather than overriding it here caused
             // the top row to end up selected after every refresh even when nothing should be.
-            row.Selected = selectedNames.Contains(m.Name);
+            row.Selected = selectedNames.Contains(m.FolderName);
         }
 
         if (grid.Rows.Count > 0)
@@ -638,7 +799,7 @@ public class MainForm : Form
         }
     }
 
-    /// <summary>A checkmark if the module's [tags] section contains the given tag, otherwise blank.</summary>
+    /// A checkmark if the module's [tags] section contains the given tag, otherwise blank.
     private static string TagMark(ModuleInfo m, string tag) => m.Tags.Contains(tag) ? "\u2713" : "";
 
     private void ShowModuleDetails(ModuleInfo m)
@@ -646,10 +807,12 @@ public class MainForm : Form
         var text = new StringBuilder();
         text.AppendLine($"Version: {m.Version}");
         if (!string.IsNullOrWhiteSpace(m.AoeRev)) text.AppendLine($"AoE Rev: {m.AoeRev}");
-        text.AppendLine($"Load pass: {m.LoadPass}");
+        text.AppendLine($"Load pass: {ModuleLayout.PassDisplayName(m.LoadPass)}");
+        if (!string.Equals(m.Name, m.FolderName, StringComparison.Ordinal)) text.AppendLine($"Folder: {m.FolderName}");
         if (!string.IsNullOrWhiteSpace(m.Author)) text.AppendLine($"Author: {m.Author}");
-        if (!string.IsNullOrWhiteSpace(m.RifeVersion)) text.AppendLine($"RifE version: {m.RifeVersion}");
         if (m.Compatible.Count > 0) text.AppendLine($"Compatible with: {string.Join(", ", m.Compatible)}");
+        if (m.Dependencies.Count > 0) text.AppendLine($"Requires: {string.Join(", ", m.Dependencies)}");
+        if (m.Incompatible.Count > 0) text.AppendLine($"Incompatible with: {string.Join(", ", m.Incompatible)}");
         text.AppendLine();
         text.AppendLine(!string.IsNullOrWhiteSpace(m.Desc)
             ? m.Desc
@@ -678,8 +841,10 @@ public class MainForm : Form
 - Control-clicking a module will toggle the selection of that specific module
 - The Refresh button will update the shown module list if you manually move files with the launcher open
 - The Civ, Mech, Art and Joke columns show a checkmark if the module lists that tag in its info.txt
-- Right-click a module and choose ""Load in pass"" to move it between the Any folder and Order passes 1-4; the Loadpass column shows where each module currently is
+- Right-click a module and choose ""Load in pass"" to move it between the Default folder (Def) and the sequenced passes 1-4 (Seq); the Loadpass column shows where each module currently is
+- The game loads Default modules first, then pass 1, 2, 3 and 4; within each pass modules load alphabetically by their folder name
 - Moving a module between active and inactive keeps its load pass
+- Before launching, saving a preset or exporting a preset, the launcher checks that no active modules are listed as incompatible with each other, and that every module's dependencies are active and load before it; you can abort or continue if a problem is found
 
     PRESETS
 - Pressing the ""Save..."" button will give you the option to save the current selection as a preset
@@ -699,7 +864,6 @@ public class MainForm : Form
         ShowScrollableMessage("Usage Guide", msg);
     }
 
-    /// <summary>
     /// Normalizes any mix of bare \n, bare \r, or \r\n line endings to Environment.NewLine.
     /// ReadOnlySelectableTextBox wraps a RichTextBox (the usual way to get read-only,
     /// *selectable* text, since a plain Label can't be selected) -- and RichTextBox silently
@@ -707,11 +871,10 @@ public class MainForm : Form
     /// module's Desc field tends to be, since it's often authored/edited on a non-Windows
     /// machine. Routing every string through here before it reaches the box, rather than
     /// patching individual call sites, is what actually fixes that for good.
-    /// </summary>
     private static string NormalizeNewlines(string text) =>
         text.Replace("\r\n", "\n").Replace("\r", "\n").Replace("\n", Environment.NewLine);
 
-    /// <summary>Generic scrollable read-only message dialog, styled to match the app, with a single OK button.</summary>
+    /// Generic scrollable read-only message dialog, styled to match the app, with a single OK button.
     private void ShowScrollableMessage(string title, string text)
     {
         using var form = new Form
@@ -742,8 +905,9 @@ public class MainForm : Form
         form.ShowDialog(this);
     }
 
-    /// <summary>Same as ShowScrollableMessage but with Apply/Cancel, returning true if the user confirmed.</summary>
-    private bool ShowConfirmMessage(string title, string text, string confirmText = "Apply", string cancelText = "Cancel")
+    /// Same as ShowScrollableMessage but with Apply/Cancel, returning true if the user confirmed.
+    private bool ShowConfirmMessage(string title, string text, string confirmText = "Apply", string cancelText = "Cancel",
+        bool cancelIsDefault = false)
     {
         using var form = new Form
         {
@@ -781,7 +945,7 @@ public class MainForm : Form
 
         form.Controls.Add(box);
         form.Controls.Add(buttonPanel);
-        form.AcceptButton = confirmBtn;
+        form.AcceptButton = cancelIsDefault ? cancelBtn : confirmBtn;
         form.CancelButton = cancelBtn;
 
         return form.ShowDialog(this) == DialogResult.OK;
@@ -910,7 +1074,7 @@ public class MainForm : Form
         foreach (var pass in ModuleLayout.Passes)
         {
             var targetPass = pass;
-            var item = new ToolStripMenuItem($"Load in pass: {targetPass}") { Tag = targetPass };
+            var item = new ToolStripMenuItem($"Load in pass: {ModuleLayout.PassDisplayName(targetPass)}") { Tag = targetPass };
             item.Click += (s, e) =>
             {
                 var requests = contextTargets
@@ -972,13 +1136,11 @@ public class MainForm : Form
         };
     }
 
-    /// <summary>
     /// Opens the Civ4 config .ini via the shortcut two levels above the mod folder
     /// (..\..\_Civ4Config, i.e. next to Civ4BeyondSword.exe). The shell follows the shortcut and
     /// opens its target with the user's default program for .ini files, so there's no need to
     /// resolve the .lnk ourselves. Tries "_Civ4Config.lnk" first, then a bare "_Civ4Config" in case
     /// it's a differently-made link or the file itself.
-    /// </summary>
     private void OpenCiv4Config()
     {
         var basePath = Path.GetFullPath(Path.Combine(_modPath, "..", "..", "_Civ4Config"));
@@ -1024,13 +1186,13 @@ public class MainForm : Form
         }
     }
 
-    /// <summary>One module folder to move: where it is, which side it's going to, and into which load pass.</summary>
+    /// One module folder to move: where it is, which side it's going to, and into which load pass.
     private sealed class MoveRequest
     {
         public string Source { get; set; } = "";
         public bool ToActive { get; set; }
 
-        /// <summary>Target load pass ("Any", "1".."4"); empty/invalid keeps the pass the module is already in.</summary>
+        /// Target load pass ("Def", "1".."4"); empty/invalid keeps the pass the module is already in.
         public string Pass { get; set; } = "";
     }
 
@@ -1048,7 +1210,7 @@ public class MainForm : Form
     private static bool SamePath(string a, string b) =>
         string.Equals(Path.GetFullPath(a).TrimEnd('\\'), Path.GetFullPath(b).TrimEnd('\\'), StringComparison.OrdinalIgnoreCase);
 
-    /// <summary>Moves modules between the active/inactive sides, keeping each one's load pass.</summary>
+    /// Moves modules between the active/inactive sides, keeping each one's load pass.
     private void MoveModules(List<string> sourcePaths, bool toActive)
     {
         PerformMoves(sourcePaths
@@ -1056,10 +1218,8 @@ public class MainForm : Form
             .ToList());
     }
 
-    /// <summary>
     /// Performs every requested move (between sides and/or between load passes), reports any
     /// failures together in one message, and refreshes the lists once at the end.
-    /// </summary>
     private void PerformMoves(List<MoveRequest> requests)
     {
         var errors = new List<string>();
@@ -1071,7 +1231,7 @@ public class MainForm : Form
                 var name = Path.GetFileName(src);
 
                 // An unspecified pass keeps the module in the pass it's already in, which is what
-                // preserves the Any / Order\N structure when toggling active <-> inactive.
+                // preserves the Def / Seq\N structure when toggling active <-> inactive.
                 var pass = ModuleLayout.NormalizePass(req.Pass);
                 if (pass.Length == 0) pass = ModuleLayout.GetPassFromPath(src);
 
@@ -1088,7 +1248,7 @@ public class MainForm : Form
                 if (clash != null)
                 {
                     errors.Add($"{name}: a module with this name already exists in the " +
-                               $"{(req.ToActive ? "active" : "inactive")} list (load pass {ModuleLayout.GetPassFromPath(clash)}).");
+                               $"{(req.ToActive ? "active" : "inactive")} list (load pass {ModuleLayout.PassDisplayName(ModuleLayout.GetPassFromPath(clash))}).");
                     continue;
                 }
 
@@ -1114,9 +1274,9 @@ public class MainForm : Form
 
     private void InstallDroppedModules(string[] droppedPaths, bool toActive)
     {
-        // Modules dropped in from Explorer carry no pass information, so they go in "Any";
+        // Modules dropped in from Explorer carry no pass information, so they go in Def (Default);
         // right-click > Load in pass afterwards if they belong elsewhere.
-        var targetDir = ModuleLayout.GetPassDir(_modPath, toActive, ModuleLayout.AnyPass);
+        var targetDir = ModuleLayout.GetPassDir(_modPath, toActive, ModuleLayout.DefaultPass);
         Directory.CreateDirectory(targetDir);
 
         var errors = new List<string>();
@@ -1188,6 +1348,9 @@ public class MainForm : Form
 
     private void SavePreset()
     {
+        if (!VerifyActiveModules("saving the preset"))
+            return;
+
         var name = InputForm.Prompt(this, "Save Preset", "Preset name:", "");
         if (string.IsNullOrWhiteSpace(name)) return;
         name = name!.Trim();
@@ -1207,7 +1370,7 @@ public class MainForm : Form
         {
             preset.Modules.Add(new ModuleRef
             {
-                Name = m.Name,
+                Name = m.FolderName,
                 Version = m.Version,
                 Fingerprint = ModuleScanner.ComputeFingerprint(m.FullPath),
                 LoadPass = m.LoadPass,
@@ -1236,23 +1399,22 @@ public class MainForm : Form
             .ToDictionary(g => g.Key, g => g.First(), StringComparer.OrdinalIgnoreCase);
 
         var beforeCurrent = _activeModules.Concat(_inactiveModules)
-            .GroupBy(m => m.Name, StringComparer.OrdinalIgnoreCase)
+            .GroupBy(m => m.FolderName, StringComparer.OrdinalIgnoreCase)
             .ToDictionary(g => g.Key, g => g.First(), StringComparer.OrdinalIgnoreCase);
 
         var missing = preset.Modules.Where(m => !beforeCurrent.ContainsKey(m.Name)).ToList();
 
-        // Wanted modules end up active in the pass the preset recorded (a preset with no recorded
-        // pass -- one saved before load passes existed -- leaves each module in its current pass);
-        // unwanted active modules are deactivated, keeping their pass.
+        // Wanted modules end up active in the pass the preset recorded (a module with no recorded
+        // pass stays in its current pass); unwanted active modules are deactivated, keeping their pass.
         var requests = new List<MoveRequest>();
         foreach (var m in _inactiveModules)
         {
-            if (wanted.TryGetValue(m.Name, out var pm))
+            if (wanted.TryGetValue(m.FolderName, out var pm))
                 requests.Add(new MoveRequest { Source = m.FullPath, ToActive = true, Pass = pm.LoadPass });
         }
         foreach (var m in _activeModules)
         {
-            if (wanted.TryGetValue(m.Name, out var pm))
+            if (wanted.TryGetValue(m.FolderName, out var pm))
             {
                 var wantedPass = ModuleLayout.NormalizePass(pm.LoadPass);
                 if (wantedPass.Length > 0 && !string.Equals(wantedPass, m.LoadPass, StringComparison.Ordinal))
@@ -1273,7 +1435,7 @@ public class MainForm : Form
         // exists (it fails safe and returns ""), producing a false "this module changed"
         // warning for every module that was just activated/deactivated.
         var afterCurrent = _activeModules.Concat(_inactiveModules)
-            .GroupBy(m => m.Name, StringComparer.OrdinalIgnoreCase)
+            .GroupBy(m => m.FolderName, StringComparer.OrdinalIgnoreCase)
             .ToDictionary(g => g.Key, g => g.First(), StringComparer.OrdinalIgnoreCase);
 
         // Fingerprint (and therefore this check) is only present for non-futureproof presets --
@@ -1285,7 +1447,7 @@ public class MainForm : Form
             {
                 var localFp = ModuleScanner.ComputeFingerprint(local.FullPath);
                 if (!string.Equals(localFp, pm.Fingerprint, StringComparison.Ordinal))
-                    mismatches.Add($"{pm.Name}  (preset expects v{pm.Version}; your local copy appears different)");
+                    mismatches.Add($"{local.Name}  (preset expects v{pm.Version}; your local copy appears different)");
             }
         }
         Cursor = Cursors.Default;
@@ -1331,6 +1493,9 @@ public class MainForm : Form
     {
         var preset = GetSelectedPreset();
         if (preset == null) return;
+
+        if (!VerifyPresetModules(preset, "exporting the preset"))
+            return;
 
         var futureproof = chkFutureproof.Checked;
         var code = PresetCodec.Encode(preset, futureproof, ReadModVersion());
