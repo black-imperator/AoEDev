@@ -12101,6 +12101,30 @@ It's time to leave!</Spanish>
 		<Spanish>Magnetic Field</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_DAWN_DRAGON</Tag>
+		<English>Tokyra, The Dawn Dragon</English>
+		<French>Tokyra, The Dawn Dragon</French>
+		<German>Tokyra, The Dawn Dragon</German>
+		<Italian>Tokyra, The Dawn Dragon</Italian>
+		<Spanish>Tokyra, The Dawn Dragon</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_DAWN_DRAGON_PEDIA</Tag>
+		<English>These horned dragons glow with sunlight at all times, though they can control the intensity, from an angelic glow to a blinding golden light. Their breath weapon is a blast of light that burns the corrupt but won't harm the pure. Any ally touched by the light of a Dawn Dragon is filled with incredible courage and hope. At dawn each day every Dawn Dragon is fully healed from all injuries, mental, physical or magical and is broken free of any constraints that may hold them. They collect anything made of gold.</English>
+		<French>These horned dragons glow with sunlight at all times, though they can control the intensity, from an angelic glow to a blinding golden light. Their breath weapon is a blast of light that burns the corrupt but won't harm the pure. Any ally touched by the light of a Dawn Dragon is filled with incredible courage and hope. At dawn each day every Dawn Dragon is fully healed from all injuries, mental, physical or magical and is broken free of any constraints that may hold them. They collect anything made of gold.</French>
+		<German>These horned dragons glow with sunlight at all times, though they can control the intensity, from an angelic glow to a blinding golden light. Their breath weapon is a blast of light that burns the corrupt but won't harm the pure. Any ally touched by the light of a Dawn Dragon is filled with incredible courage and hope. At dawn each day every Dawn Dragon is fully healed from all injuries, mental, physical or magical and is broken free of any constraints that may hold them. They collect anything made of gold.</German>
+		<Italian>These horned dragons glow with sunlight at all times, though they can control the intensity, from an angelic glow to a blinding golden light. Their breath weapon is a blast of light that burns the corrupt but won't harm the pure. Any ally touched by the light of a Dawn Dragon is filled with incredible courage and hope. At dawn each day every Dawn Dragon is fully healed from all injuries, mental, physical or magical and is broken free of any constraints that may hold them. They collect anything made of gold.</Italian>
+		<Spanish>These horned dragons glow with sunlight at all times, though they can control the intensity, from an angelic glow to a blinding golden light. Their breath weapon is a blast of light that burns the corrupt but won't harm the pure. Any ally touched by the light of a Dawn Dragon is filled with incredible courage and hope. At dawn each day every Dawn Dragon is fully healed from all injuries, mental, physical or magical and is broken free of any constraints that may hold them. They collect anything made of gold.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_BRILLIANT_CORE</Tag>
+		<English>Brilliant Core</English>
+		<French>Brilliant Core</French>
+		<German>Brilliant Core</German>
+		<Italian>Brilliant Core</Italian>
+		<Spanish>Brilliant Core</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_DRAGON_TEARS</Tag>
 		<English>The Dragon Tear Fountain</English>
 		<French>The Dragon Tear Fountain</French>

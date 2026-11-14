@@ -5029,6 +5029,7 @@
 			<bUnique>1</bUnique>
 			<bBad>1</bBad>
 			<PythonCallback>exploreLairScaledDragon(pUnit,pPlot)</PythonCallback>
+			<PrereqEra>ERA_CLASSICAL</PrereqEra>
 		</GoodyInfo>
 		<GoodyInfo> <!--WarTortoiseAlly-->
 			<Type>GOODY_EXPLORE_LAIR_DOMESTICATED_WAR_TORTOISE</Type>

@@ -14393,6 +14393,12 @@
 			</AuraBonuses>
 			<Button>Art/Interface/Buttons/Promotions/BloodCore.dds</Button>
 		</PromotionInfo>
+		<PromotionInfo>		<!-- Brilliant Core -->
+			<Type>PROMOTION_BRILLIANT_CORE</Type>
+			<Description>TXT_KEY_PROMOTION_BRILLIANT_CORE</Description>
+			<bNoXP>1</bNoXP>
+			<Button>Art/Interface/Buttons/Promotions/BrilliantCore.dds</Button>
+		</PromotionInfo>
 		<PromotionInfo>		<!-- Empty Core -->
 			<Type>PROMOTION_EMPTY_CORE</Type>
 			<Description>TXT_KEY_PROMOTION_EMPTY_CORE</Description>
@@ -14464,6 +14470,12 @@
 			<iPromotionDuration>1</iPromotionDuration>
 			<iVisibilityChange>5</iVisibilityChange>
 			<iExtraPerception>5</iExtraPerception>
+			<UnitCombatMods>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<iUnitCombatMod>-50</iUnitCombatMod>
+				</UnitCombatMod>
+			</UnitCombatMods>
 			<bDispellable>1</bDispellable>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Form of Water -->
