@@ -106,11 +106,11 @@ import imp    # importing module
 
 # Load spells from modules
 MLFlist = []
-MLFlist.append(CvPath.assetsPath[2] + "\\Modules\\Def\\")
-MLFlist.append(CvPath.assetsPath[2] + "\\Modules\\Seq\\1\\")
-MLFlist.append(CvPath.assetsPath[2] + "\\Modules\\Seq\\2\\")
-MLFlist.append(CvPath.assetsPath[2] + "\\Modules\\Seq\\3\\")
-MLFlist.append(CvPath.assetsPath[2] + "\\Modules\\Seq\\4\\")
+MLFlist.append(CvPath.assetsPath[2] + "\\Modules\\0\\")
+MLFlist.append(CvPath.assetsPath[2] + "\\Modules\\1\\")
+MLFlist.append(CvPath.assetsPath[2] + "\\Modules\\2\\")
+MLFlist.append(CvPath.assetsPath[2] + "\\Modules\\3\\")
+MLFlist.append(CvPath.assetsPath[2] + "\\Modules\\4\\")
 
 for pathToMLF in MLFlist:
 	for modules in os.listdir(pathToMLF):
@@ -12622,11 +12622,11 @@ def helpPlanarGate (argsList):
 
 ## Load spells from modules
 MLFlist = []
-MLFlist.append(CvPath.assetsPath[2] + "\\Modules\\Def\\")
-MLFlist.append(CvPath.assetsPath[2] + "\\Modules\\Seq\\1\\")
-MLFlist.append(CvPath.assetsPath[2] + "\\Modules\\Seq\\2\\")
-MLFlist.append(CvPath.assetsPath[2] + "\\Modules\\Seq\\3\\")
-MLFlist.append(CvPath.assetsPath[2] + "\\Modules\\Seq\\4\\")
+MLFlist.append(CvPath.assetsPath[2] + "\\Modules\\0\\")
+MLFlist.append(CvPath.assetsPath[2] + "\\Modules\\1\\")
+MLFlist.append(CvPath.assetsPath[2] + "\\Modules\\2\\")
+MLFlist.append(CvPath.assetsPath[2] + "\\Modules\\3\\")
+MLFlist.append(CvPath.assetsPath[2] + "\\Modules\\4\\")
 
 for pathToMLF in MLFlist:
 	for modules in os.listdir(pathToMLF):

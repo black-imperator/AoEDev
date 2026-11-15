@@ -69,7 +69,8 @@ public static class InstallLocator
         }
         result.BtsExePath = exePath;
 
-        // Either side's Def\ or Seq\1..4 folder counts as evidence this is an AoE install.
+        // Any Load # folder (0..4) on either side counts as evidence this is an AoE install. The
+        // default Load # folders are created below if they're missing.
         var activeDir = ModuleLayout.GetPassDir(modPath, true, ModuleLayout.DefaultPass);
         var inactiveDir = ModuleLayout.GetPassDir(modPath, false, ModuleLayout.DefaultPass);
         var anyModuleFolder = false;
@@ -82,7 +83,7 @@ public static class InstallLocator
         {
             result.Errors.Add(
                 "This doesn't look like an Ashes of Erebus install -- missing " +
-                "Assets\\Modules\\Def and Assets\\Modules (Off)\\Def (or their Seq\\1-4 folders).");
+                "the Load # folders (0-4) inside Assets\\Modules and Assets\\Modules (Off).");
         }
         else
         {

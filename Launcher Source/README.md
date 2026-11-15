@@ -34,40 +34,66 @@ next to it. No installer, no registry entries, no other footprint.
   finishes resizing, maximizes/restores, or closes the window, and are applied
   on the next startup (clamped to the screen). The hidden-modules height is
   fixed, so only the expanded height is stored.
-- **Close on launch?** checkbox (under Open Civ4 Config): saved in the config file; when
+- **Close on launch?** checkbox (centered under Open Civ4 Config): saved in the config file; when
   checked, the launcher exits right after successfully starting the game.
-- **Load passes**: modules live under `Assets\Modules` (active) or
-  `Assets\Modules (Off)` (inactive), in either `Def\<module>` (default) or
-  `Seq\1..4\<module>` (sequenced). The **Loadpass** column shows `Default` or `1`-`4`.
-  The game loads `Def` first, then `1`, `2`, `3`, `4`; within each folder modules
+- **Status indicator** (centered under Instructions, mirroring the Close on launch
+  checkbox): `Status: Ready` (green), `Status: Install Error` (red; the game exe
+  wasn't found or the launcher is in the wrong folder, as found by the startup
+  check), `Status: Module Issue` (red; an active module is incompatible with
+  another, or a hard dependency isn't active/installed) or `Status: Bad Order`
+  (yellow; a hard or soft dependency is active but loads after the module that
+  lists it). If several apply, the first in that order wins. Hovering it shows the
+  same text as the matching popup. It is re-evaluated after every refresh, i.e. once
+  after each batch of moves (drag/drop of several modules, loading a preset, autosort...),
+  not once per module. The colors are `StatusGood` / `StatusError` / `StatusWarning` in
+  `Theme.cs`.
+- **Load #s**: modules live under `Assets\Modules` (active) or
+  `Assets\Modules (Off)` (inactive), in a numbered folder `0` to `4`:
+  `Assets\Modules\<#>\<module>`. The **Load #** column shows the number.
+  The game loads `0` first, then `1`, `2`, `3`, `4`; within each folder modules
   load alphabetically by module *folder* name.
-  Right-clicking a module offers `Load in pass: Default / 1 / 2 / 3 / 4`
-  (hiding the pass it's already in) and moves it between those folders on
+  Right-clicking a module offers `Set Load # to 0 / 1 / 2 / 3 / 4`
+  (hiding the one it's already in) and moves it between those folders on
   its current side; with several rows selected the choice applies to all of
   them. Moving a module between Active and Inactive (drag, double-click, or
-  presets) preserves its pass. Modules dropped in from Explorer land in `Def`.
-  A module folder name must be unique across all passes on a side.
+  presets) preserves its Load #. Modules dropped in from Explorer land in Load # `1`
+  (`ModuleLayout.DefaultPass`). A module folder name must be unique across all
+  Load #s on a side.
+- **Autosort**: `Autosort active modules`, at the bottom of the right-click menu of
+  either list, and offered as a button in the load order popup when launching or
+  saving a preset with a bad order. Like Update Schemas, it first shows what it
+  would change (which modules, from which Load # to which, and why) and only moves
+  anything after Apply. It is a simple greedy method (`Core/AutosortPlanner.cs`),
+  built for few, short dependency chains: only modules involved in a broken
+  dependency are moved, and only to a different Load # on the active side. It
+  builds two candidate fixes -- pushing dependents later, or pulling dependencies
+  earlier -- and uses whichever moves fewer modules. If the dependencies form a
+  loop, need more than Load # 0-4, or anything else goes wrong, it just reports that
+  no solution was found and changes nothing. It never activates or deactivates
+  anything, and doesn't try to fix incompatibilities or missing dependencies.
 - **Module names**: the name shown in the lists is the `[name]` entry of the
   module's `info.txt` (the folder name is used if there is none). Presets and
   the file system still identify modules by folder name.
 - **Dependency and incompatibility checks**: when you press Launch, Save
   Preset or Export Preset, the launcher first checks `[incompatible]` (no two
   modules in the set may list each other as incompatible), then `[dependency-hard]`
-  (every dependency must be in the set and load before the module that needs
-  it: earlier pass, or same pass and earlier alphabetically by folder name),
-  then `[dependency-soft]` (not required to be present, but any that are in the
-  set must load before the module listing them).
-  Each problem is shown in a popup listing the modules involved, with
-  Abort / Continue. Launch and Save check the active modules; Export checks the
-  preset's modules in the passes the preset records (modules not installed
-  locally can't be checked).
+  (every dependency must be in the set -- one popup for missing ones -- and load
+  before the module that needs it: lower Load #, or same Load # and earlier
+  alphabetically by folder name), then load order, which covers hard dependencies
+  that load too late together with `[dependency-soft]` ones (not required to be
+  present, but any that are in the set must load before the module listing them).
+  Each kind of problem is shown in a popup listing the modules involved, with
+  Abort / Continue; the load order popup also offers Autosort (for Launch and Save,
+  which check the active modules; after an applied autosort the order is re-checked).
+  Export checks the preset's modules in the Load #s the preset records (modules not
+  installed locally can't be checked), without Autosort, since that moves real folders.
 - **Tag filters**: a **Filters** row under the module lists has a three-state box
   for each of `Civ (New)`, `Civ (Edit)`, `Art`, `Joke`, `Mechanics`, `Leader`, `Balance`
   and `Event`. These match the info.txt `[tags]` tokens `Civ(N)`, `Civ(E)`, `Art`, `Joke`,
   `Mech`, `Lead`, `Bal` and `Event` respectively (the list is `FilterTags` in `MainForm.cs`).
-- **Columns**: the Version, AoE Rev, Loadpass and Info columns are sized from their
+- **Columns**: the Version, AoE Rev, Load # and Info columns are sized from their
   header text in the current font and can't be resized. AoE Rev (numerically) and
-  Loadpass (in load order) can be sorted by clicking the header; Version can't.
+  Load # (in load order) can be sorted by clicking the header; Version can't.
   The Module|Author divider can be dragged (updating live as you drag; it is the
   only adjustable divider): the Author width is kept identical in the
   active and inactive lists, saved in the config file (`AuthorColumnWidth`) and
@@ -101,8 +127,8 @@ next to it. No installer, no registry entries, no other footprint.
   report at the module level for modules with no problems, and at the
   individual-file level for modules that had one or more errors.
 - **Presets**: save/load/delete named collections of the active module set,
-  including each module's load pass. Loading a preset puts modules in the
-  recorded passes; a module with no recorded pass stays in whichever pass it's in.
+  including each module's Load #. Loading a preset puts modules in the
+  recorded Load #s; a module with no recorded Load # stays in whichever one it's in.
 - **Import/export via a compact share code**, formatted as
   `AoE<version>:<data>` where `<version>` comes from the mod's own
   `version.txt` (purely informational -- it doesn't block importing a
@@ -193,14 +219,16 @@ AoELauncher/
     ConfigManager.cs          <- load/save the XML config file (always next to the exe)
     CompatHelpers.cs          <- small .NET Framework 4.8 shims (hex encoding, relative paths)
     InstallLocator.cs         <- placement validation only, no registry/disk scanning
-    ModuleLayout.cs           <- Def\ / Seq\1..4 folder layout and load-pass helpers
+    ModuleLayout.cs           <- Load # (0-4) folder layout helpers
     ModuleScanner.cs          <- scans modules, parses info.txt, computes fingerprints
     ModuleChecker.cs          <- [incompatible], [dependency-hard] and [dependency-soft] verification
+    AutosortPlanner.cs        <- dry-run planner behind "Autosort active modules"
     SchemaUpdater.cs          <- the Update Schemas action
     PresetCodec.cs            <- compact binary encode/decode for the share string
     GameLauncher.cs           <- starts the game with the mod enabled
   UI/
-    Theme.cs                  <- shared dark/orange color scheme
+    Theme.cs                  <- shared dark/orange color scheme (also styles tooltips and right-click menus)
+    StatusIndicator.cs        <- the "Status: ..." readout with a separately colored value
     TagFilterBox.cs           <- three-state (neutral / whitelist / blacklist) tag filter box
     BufferedControls.cs       <- double-buffered Panel/GroupBox/SplitContainer
     PlacementIssuesForm.cs    <- shown when the startup placement check fails
@@ -230,9 +258,9 @@ AoELauncher/
 - **Share code format**: single fixed payload format, no back-compat
   handling -- the `AoE<version>:` prefix is just the mod's version.txt
   contents for the user's information, not a wire-format version switch.
-- **Module load order**: load order within a pass isn't adjustable; the
-  coarse ordering is the load pass (`Def`, then `Seq\1`-`4`), set via the
-  right-click menu and stored in presets.
+- **Module load order**: load order within a Load # isn't adjustable (it is
+  alphabetical by folder name); the coarse ordering is the Load # (`0` to `4`),
+  set via the right-click menu or Autosort and stored in presets.
 - **Permissions**: if AoE is installed under `Program Files`, moving module
   folders (or saving the config file) may require running the launcher as
   Administrator. Failures show a clear message suggesting this.

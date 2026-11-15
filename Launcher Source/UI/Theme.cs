@@ -19,6 +19,12 @@ public static class Theme
     public static readonly Color Accent = Color.FromArgb(230, 126, 34);
     public static readonly Color GridLine = Color.FromArgb(70, 70, 74);
 
+    // Value colors for the main status indicator ("Status: Ready" etc). Tuned to stay readable on
+    // the dark panel while still reading as dark green / dark red / dark yellow.
+    public static readonly Color StatusGood = Color.FromArgb(40, 160, 60);
+    public static readonly Color StatusError = Color.FromArgb(200, 50, 50);
+    public static readonly Color StatusWarning = Color.FromArgb(200, 160, 20);
+
     // Rows of modules that don't match the tag filters are shown greyed out.
     public static readonly Color FilteredText = Color.FromArgb(120, 120, 124);
     public static readonly Color FilteredSelectionBack = Color.FromArgb(105, 78, 50);
@@ -74,6 +80,78 @@ public static class Theme
             var rect = new Rectangle(pad, pad, e.Bounds.Width - pad * 2, e.Bounds.Height - pad * 2);
             TextRenderer.DrawText(e.Graphics, e.ToolTipText, BodyFont, rect, Text, flags);
         };
+    }
+
+    /// Gives a right-click menu the same look as the buttons: grey background, orange outline,
+    /// white text (the stock menu otherwise ignores BackColor/ForeColor for most of what it draws).
+    public static void StyleContextMenu(ContextMenuStrip menu)
+    {
+        menu.Renderer = new MenuRenderer();
+        menu.ShowImageMargin = false;
+        menu.Font = BodyFont;
+        menu.BackColor = ControlBack;
+        menu.ForeColor = Text;
+    }
+
+    private sealed class MenuColors : ProfessionalColorTable
+    {
+        public MenuColors() { UseSystemColors = false; }
+
+        public override Color ToolStripDropDownBackground => ControlBack;
+        public override Color ImageMarginGradientBegin => ControlBack;
+        public override Color ImageMarginGradientMiddle => ControlBack;
+        public override Color ImageMarginGradientEnd => ControlBack;
+        public override Color MenuBorder => Accent;
+        public override Color MenuItemBorder => Accent;
+        public override Color MenuItemSelected => MenuHover;
+        public override Color MenuItemSelectedGradientBegin => MenuHover;
+        public override Color MenuItemSelectedGradientEnd => MenuHover;
+        public override Color SeparatorDark => GridLine;
+        public override Color SeparatorLight => GridLine;
+    }
+
+    private static readonly Color MenuHover = Color.FromArgb(75, 75, 79);
+
+    private sealed class MenuRenderer : ToolStripProfessionalRenderer
+    {
+        public MenuRenderer() : base(new MenuColors()) { RoundedEdges = false; }
+
+        protected override void OnRenderToolStripBackground(ToolStripRenderEventArgs e)
+        {
+            using var back = new SolidBrush(ControlBack);
+            e.Graphics.FillRectangle(back, e.AffectedBounds);
+        }
+
+        protected override void OnRenderImageMargin(ToolStripRenderEventArgs e)
+        {
+            // No separate icon gutter: the whole menu is one flat grey surface.
+        }
+
+        protected override void OnRenderToolStripBorder(ToolStripRenderEventArgs e)
+        {
+            using var pen = new Pen(Accent);
+            e.Graphics.DrawRectangle(pen, 0, 0, e.ToolStrip.Width - 1, e.ToolStrip.Height - 1);
+        }
+
+        protected override void OnRenderMenuItemBackground(ToolStripItemRenderEventArgs e)
+        {
+            if (!e.Item.Enabled || !e.Item.Selected) return;
+            using var hover = new SolidBrush(MenuHover);
+            e.Graphics.FillRectangle(hover, new Rectangle(1, 0, e.Item.Width - 2, e.Item.Height));
+        }
+
+        protected override void OnRenderItemText(ToolStripItemTextRenderEventArgs e)
+        {
+            e.TextColor = e.Item.Enabled ? Text : MutedText;
+            base.OnRenderItemText(e);
+        }
+
+        protected override void OnRenderSeparator(ToolStripSeparatorRenderEventArgs e)
+        {
+            using var pen = new Pen(GridLine);
+            var y = e.Item.Height / 2;
+            e.Graphics.DrawLine(pen, S(6), y, e.Item.Width - S(6), y);
+        }
     }
 
     public static void StyleContainer(Control control)

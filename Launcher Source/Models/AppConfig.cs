@@ -15,7 +15,7 @@ public class ModuleRef
     /// detection is possible or attempted for this module on import.
     public string Fingerprint { get; set; } = "";
 
-    /// The load pass the module was in when the preset was saved: "Def", "1".."4", or empty if
+    /// The Load # the module was in when the preset was saved: "0".."4", or empty if
     /// unspecified. Empty means "leave the module in whatever pass it's currently in" when the
     /// preset is applied.
     public string LoadPass { get; set; } = "";

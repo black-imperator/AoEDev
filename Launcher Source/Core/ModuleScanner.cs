@@ -15,7 +15,7 @@ public static class ModuleScanner
 
     private static readonly Regex SectionHeader = new(@"^\[([\w-]+)\]$", RegexOptions.Compiled);
 
-    /// Scans every load-pass folder (Def and Seq\1..4, see ModuleLayout) on both the
+    /// Scans every Load # folder (0..4, see ModuleLayout) on both the
     /// active and inactive side and returns every module found, with everything parsed out of
     /// its info.txt.
     public static List<ModuleInfo> ScanAll(string modPath)

@@ -15,8 +15,8 @@ public class ModuleInfo
     public string FullPath { get; set; } = "";
     public bool IsActive { get; set; }
 
-    /// "Def" if stored under Def\, otherwise "1".."4" for Seq\1..4 (see Core/ModuleLayout).
-    public string LoadPass { get; set; } = "Def";
+    /// The module's Load #, "0".."4": the number of the folder it is stored in (see Core/ModuleLayout).
+    public string LoadPass { get; set; } = "1";
 
     // --- from info.txt ---
     public string Version { get; set; } = "unknown";

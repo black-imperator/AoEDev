@@ -18,14 +18,14 @@ namespace AoELauncher.Core;
 /// than JSON, to comfortably fit under Discord's 2000-character message
 /// limit even with ~100 modules:
 ///   byte    : flags. bit 0 (1) = "futureproof" (no version/fingerprint);
-///             bit 1 (2) = each module carries a load-pass byte. When clear, modules
+///             bit 1 (2) = each module carries a Load # byte. When clear, modules
 ///             come back with no pass, i.e. "leave where it is".
 ///   string  : preset name (length-prefixed UTF8)
 ///   ushort  : module count
 ///   for each module:
 ///     string : module folder name (length-prefixed UTF8)
 ///     [only if bit 1 set:]
-///       byte    : load pass (0 = Def, 1-4 = Seq\1..4, 255 = unspecified)
+///       byte    : Load # (0-4, 255 = unspecified)
 ///     [only if not futureproof:]
 ///       string  : version
 ///       4 bytes : fingerprint (raw bytes, not hex text -- half the size)
@@ -41,11 +41,10 @@ public static class PresetCodec
     {
         var p = ModuleLayout.NormalizePass(pass);
         if (p.Length == 0) return PassUnspecified;
-        return p == ModuleLayout.DefaultPass ? (byte)0 : byte.Parse(p);
+        return byte.Parse(p);
     }
 
-    private static string ByteToPass(byte b) =>
-        b == 0 ? ModuleLayout.DefaultPass : (b >= 1 && b <= 4 ? b.ToString() : "");
+    private static string ByteToPass(byte b) => ModuleLayout.PassFromIndex(b);
 
     /// Discord's plain-message character limit, used as the target ceiling for export codes
     public const int DiscordSafeLimit = 2000;

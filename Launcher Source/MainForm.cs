@@ -39,6 +39,22 @@ public class MainForm : Form
     private Label lblStatus = null!;
     private Button btnLaunch = null!;
     private CheckBox chkCloseOnLaunch = null!;
+    private StatusIndicator _statusIndicator = null!;
+    private readonly ToolTip _statusToolTip = CreateStatusToolTip();
+
+    /// Text of the startup placement problems the user chose to continue past (the same text the
+    /// setup-check popup showed); null when the placement check passed. Drives "Install Error".
+    private string? _installIssueText;
+
+    private const string GameNotFoundText =
+        "The game location couldn't be found. This usually means the mod folder isn't placed correctly " +
+        "-- restart the launcher to re-run the setup check.";
+
+    /// Every value the status indicator can show; the control is sized to fit the widest.
+    private static readonly string[] StatusValues = { "Ready", "Install Error", "Module Issue", "Bad Order" };
+
+    /// Status tooltips are cut to this many lines so a long problem list can't run off the screen.
+    private const int MaxStatusTipLines = 28;
     private Panel _topPanel = null!;
     private Panel _bottomPanel = null!;
     private Panel _filterPanel = null!;
@@ -49,6 +65,15 @@ public class MainForm : Form
     {
         var tip = new ToolTip();
         Theme.StyleToolTip(tip);
+        return tip;
+    }
+
+    /// The status tooltip carries the same text as the popups, so it can be long: wider, quicker to
+    /// appear, and kept up for as long as the system allows.
+    private static ToolTip CreateStatusToolTip()
+    {
+        var tip = new ToolTip { InitialDelay = 250, AutoPopDelay = 32000, ReshowDelay = 100 };
+        Theme.StyleToolTip(tip, Theme.S(520));
         return tip;
     }
 
@@ -270,7 +295,7 @@ public class MainForm : Form
         };
 
         // Sized from the measured text rather than AutoSize, so its width is already correct
-        // when the Resize handler below right-aligns it (AutoSize only settles after layout).
+        // when the Resize handler below centers it (AutoSize only settles after layout).
         chkCloseOnLaunch = new CheckBox
         {
             Text = "Close on launch?",
@@ -278,7 +303,7 @@ public class MainForm : Form
             Height = Theme.BodyFont.Height + Theme.S(8),
             Font = Theme.BodyFont,
         };
-        chkCloseOnLaunch.Width = TextRenderer.MeasureText(chkCloseOnLaunch.Text, chkCloseOnLaunch.Font).Width + Theme.S(28);
+        chkCloseOnLaunch.Width = FittedCheckBoxWidth(chkCloseOnLaunch);
         Theme.StyleCheckBox(chkCloseOnLaunch);
         // The CheckedChanged handler (which saves the setting) is attached in MainForm_Load,
         // after the saved value has been applied, so loading the config doesn't trigger a save.
@@ -287,17 +312,27 @@ public class MainForm : Form
         Theme.StyleButton(btnHelp);
         btnHelp.Click += (s, e) => ShowHelp();
 
+        // Main status readout, the mirror image of the Close on launch checkbox: same row, same
+        // height, centered under the Instructions button. Filled in by UpdateStatusIndicator.
+        _statusIndicator = new StatusIndicator { Top = chkCloseOnLaunch.Top, Height = chkCloseOnLaunch.Height };
+        _statusIndicator.Width = _statusIndicator.MeasureWidth(StatusValues);
+        _statusIndicator.SetStatus("Ready", Theme.StatusGood);
+
         topPanel.Controls.Add(btnHelp);
         topPanel.Controls.Add(btnLaunch);
         topPanel.Controls.Add(btnCiv4Config);
         topPanel.Controls.Add(btnManage);
         topPanel.Controls.Add(chkCloseOnLaunch);
+        topPanel.Controls.Add(_statusIndicator);
         topPanel.Resize += (s, e) =>
         {
             btnLaunch.Left = (topPanel.Width - btnLaunch.Width) / 2;
             btnManage.Left = (topPanel.Width - btnManage.Width) / 2;
             btnCiv4Config.Left = topPanel.Width - btnCiv4Config.Width - Theme.S(12);
-            chkCloseOnLaunch.Left = topPanel.Width - chkCloseOnLaunch.Width - Theme.S(12);
+
+            // Each readout is centered under the button above it.
+            chkCloseOnLaunch.Left = btnCiv4Config.Left + (btnCiv4Config.Width - chkCloseOnLaunch.Width) / 2;
+            _statusIndicator.Left = Math.Max(0, btnHelp.Left + (btnHelp.Width - _statusIndicator.Width) / 2);
         };
 
         _splitContainer = new BufferedSplitContainer
@@ -647,14 +682,14 @@ public class MainForm : Form
         };
         infoCol.Width = FittedWidth(grid, "Info", "i", sortable: false);
 
-        // Module | Author | Version | AoE Rev | Loadpass | Info
-        // Version is deliberately not sortable; AoE Rev and Loadpass are (see OnGridSortCompare).
+        // Module | Author | Version | AoE Rev | Load # | Info
+        // Version is deliberately not sortable; AoE Rev and Load # are (see OnGridSortCompare).
         grid.Columns.AddRange(
             nameCol,
             authorCol,
             FittedCol("Version", "Version", sortable: false),
             FittedCol("AoERev", "AoE Rev", sortable: true),
-            FittedCol("LoadPass", "Loadpass", sortable: true, centered: true, sample: "Default"),
+            FittedCol("LoadPass", "Load #", sortable: true, centered: true, sample: "0"),
             infoCol);
         return grid;
     }
@@ -671,6 +706,26 @@ public class MainForm : Form
 
     /// The Author width changed by user dragging and hasn't been written to the config file yet.
     private bool _authorWidthDirty;
+
+    /// Width of a CheckBox sized to its content: the box glyph plus the text plus a few pixels,
+    /// with no spare room, so that centering the control also centers what you actually see.
+    private static int FittedCheckBoxWidth(CheckBox box)
+    {
+        int glyph;
+        try
+        {
+            using var g = Graphics.FromHwnd(IntPtr.Zero);
+            glyph = CheckBoxRenderer.GetGlyphSize(g, System.Windows.Forms.VisualStyles.CheckBoxState.UncheckedNormal).Width;
+        }
+        catch
+        {
+            glyph = 16;
+        }
+
+        var text = TextRenderer.MeasureText(box.Text, box.Font, Size.Empty,
+            TextFormatFlags.NoPadding | TextFormatFlags.SingleLine).Width;
+        return glyph + text + Theme.S(6);
+    }
 
     /// Width that exactly fits a header (and optional sample cell text) in the grid's fonts, with
     /// small padding, plus room for the sort arrow if the column is sortable.
@@ -770,7 +825,7 @@ public class MainForm : Form
     }
 
     /// Sort order for the two sortable non-text-like columns: AoE Rev numerically (blank first),
-    /// Loadpass in load order (Default, 1, 2, 3, 4). Ties fall back to the module name. Modules
+    /// Load # in load order (0, 1, 2, 3, 4). Ties fall back to the module name. Modules
     /// greyed out by the tag filters stay after the others in either direction.
     private void OnGridSortCompare(object? sender, DataGridViewSortCompareEventArgs e)
     {
@@ -848,13 +903,8 @@ public class MainForm : Form
         while (true)
         {
             var msg = new StringBuilder();
-            msg.AppendLine("The launcher found some problems with where this folder is placed:");
+            msg.AppendLine(BuildPlacementIssuesText(placement));
             msg.AppendLine();
-            foreach (var err in placement.Errors)
-            {
-                msg.AppendLine(err);
-                msg.AppendLine();
-            }
             msg.AppendLine("Move or rename the folder as needed, then choose Re-check, or continue anyway if you " +
                             "know what you're doing (launching the game won't work until this is fixed).");
 
@@ -868,12 +918,14 @@ public class MainForm : Form
                     if (placement.IsValid)
                     {
                         _btsExePath = placement.BtsExePath;
+                        _installIssueText = null;
                         return true;
                     }
                     continue;
 
                 case PlacementChoice.ContinueAnyway:
                     _btsExePath = placement.BtsExePath; // may still be null, that's fine -- Launch will just report it clearly
+                    _installIssueText = BuildPlacementIssuesText(placement); // keeps the status indicator on "Install Error"
                     return true;
 
                 case PlacementChoice.Quit:
@@ -881,6 +933,21 @@ public class MainForm : Form
                     return false;
             }
         }
+    }
+
+    /// The problem list shown by the startup setup-check popup (and, identically, by the Install
+    /// Error status tooltip).
+    private static string BuildPlacementIssuesText(PlacementResult placement)
+    {
+        var text = new StringBuilder();
+        text.AppendLine("The launcher found some problems with where this folder is placed:");
+        text.AppendLine();
+        foreach (var err in placement.Errors)
+        {
+            text.AppendLine(err);
+            text.AppendLine();
+        }
+        return text.ToString().TrimEnd();
     }
 
     private void SaveConfig()
@@ -934,10 +1001,7 @@ public class MainForm : Form
     {
         if (_btsExePath == null || !File.Exists(_btsExePath))
         {
-            MessageBox.Show(this,
-                "The game location couldn't be found. This usually means the mod folder isn't placed correctly " +
-                "-- restart the launcher to re-run the setup check.",
-                "Cannot Launch", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show(this, GameNotFoundText, "Cannot Launch", MessageBoxButtons.OK, MessageBoxIcon.Error);
             return;
         }
 
@@ -967,14 +1031,22 @@ public class MainForm : Form
 
     /// Checks the currently active modules (freshly scanned, so manual changes on disk since the
     /// last refresh are included). Returns true if everything is fine or the user chose to continue.
+    /// Load order problems on the active modules can be fixed on the spot with Autosort.
     private bool VerifyActiveModules(string action)
+    {
+        var (set, installed) = ScanActiveSet();
+        return VerifyModuleSet(action, set, installed, "active", reload: ScanActiveSet);
+    }
+
+    /// A fresh scan: the active modules as load entries, plus everything installed.
+    private (List<LoadEntry> Set, List<ModuleInfo> Installed) ScanActiveSet()
     {
         var installed = ModuleScanner.ScanAll(_modPath);
         var set = installed.Where(m => m.IsActive).Select(m => new LoadEntry(m, m.LoadPass)).ToList();
-        return VerifyModuleSet(action, set, installed, "active");
+        return (set, installed);
     }
 
-    /// Checks the modules of a preset as the preset would load them (using the load passes it
+    /// Checks the modules of a preset as the preset would load them (using the Load #s it
     /// records). Modules the preset names but that aren't installed locally can't be checked
     /// and are skipped.
     private bool VerifyPresetModules(Preset preset, string action)
@@ -992,64 +1064,257 @@ public class MainForm : Form
         return VerifyModuleSet(action, set, installed, "in the preset");
     }
 
-    /// Runs the incompatibility check, then the (hard) dependency check, then the soft-dependency
-    /// load-order check, each with its own
-    /// abort/continue popup. Returns false as soon as the user aborts.
-    /// `setDescription` completes "...is not ___" / "...both ___" in the messages.
-    private bool VerifyModuleSet(string action, List<LoadEntry> set, List<ModuleInfo> installed, string setDescription)
+    // The three problem texts below are shared by the popups and by the status indicator's
+    // tooltip, so the two always say the same thing. None of them includes the closing question.
+
+    private static string BuildIncompatibleText(List<string> issues, string setDescription)
     {
-        var incompatible = ModuleChecker.CheckIncompatibilities(set);
-        if (incompatible.Count > 0)
-        {
-            var text = new StringBuilder();
-            text.AppendLine($"These modules are marked as incompatible with each other, but both are {setDescription}:");
-            text.AppendLine();
-            foreach (var issue in incompatible) text.AppendLine($"   - {issue}");
-            text.AppendLine();
-            text.AppendLine($"Continue anyway, or abort {action}?");
+        var text = new StringBuilder();
+        text.AppendLine($"These modules are marked as incompatible with each other, but both are {setDescription}:");
+        text.AppendLine();
+        foreach (var issue in issues) text.AppendLine($"   - {issue}");
+        return text.ToString().TrimEnd();
+    }
 
-            if (!ShowConfirmMessage("Incompatible Modules", text.ToString(), "Continue", "Abort", cancelIsDefault: true))
-                return false;
+    private static string BuildMissingDependencyText(List<string> issues)
+    {
+        var text = new StringBuilder();
+        text.AppendLine("Some modules require other modules that aren't loaded. A required (hard) dependency must be " +
+                        "present and load before the module that requires it.");
+        text.AppendLine();
+        foreach (var issue in issues)
+        {
+            text.AppendLine(issue);
+            text.AppendLine();
         }
+        return text.ToString().TrimEnd();
+    }
 
-        var dependencies = ModuleChecker.CheckDependencies(set, installed, setDescription);
-        if (dependencies.Count > 0)
+    private static string BuildOrderText(SetAnalysis analysis)
+    {
+        var text = new StringBuilder();
+        text.AppendLine("Some modules load before a module they depend on. Dependencies must load earlier: " +
+                        "Load #0 first, then 1, 2, 3, 4, and alphabetically by folder name within a Load #.");
+
+        if (analysis.HardOrderIssues.Count > 0)
         {
-            var text = new StringBuilder();
-            text.AppendLine("Some modules have dependencies that won't be loaded before them. A dependency must be " +
-                            "present and load earlier: pass Default first, then 1, 2, 3, 4, and alphabetically by folder " +
-                            "name within a pass.");
             text.AppendLine();
-            foreach (var issue in dependencies)
+            text.AppendLine("Required (hard) dependencies that load too late:");
+            text.AppendLine();
+            foreach (var issue in analysis.HardOrderIssues)
             {
                 text.AppendLine(issue);
                 text.AppendLine();
             }
-            text.AppendLine($"Continue anyway, or abort {action}?");
-
-            if (!ShowConfirmMessage("Module Dependencies", text.ToString(), "Continue", "Abort", cancelIsDefault: true))
-                return false;
         }
 
-        var softDependencies = ModuleChecker.CheckSoftDependencies(set);
-        if (softDependencies.Count > 0)
+        if (analysis.SoftOrderIssues.Count > 0)
         {
-            var text = new StringBuilder();
-            text.AppendLine("Some modules list optional (soft) dependencies that are loaded, but not before them. " +
-                            "Soft dependencies don't have to be present, but when they are they should load earlier: " +
-                            "pass Default first, then 1, 2, 3, 4, and alphabetically by folder name within a pass.");
             text.AppendLine();
-            foreach (var issue in softDependencies)
+            text.AppendLine("Optional (soft) dependencies that are loaded, but not before the module that lists them. " +
+                            "Soft dependencies don't have to be present, but when they are they should load earlier:");
+            text.AppendLine();
+            foreach (var issue in analysis.SoftOrderIssues)
             {
                 text.AppendLine(issue);
                 text.AppendLine();
             }
-            text.AppendLine($"Continue anyway, or abort {action}?");
+        }
 
-            if (!ShowConfirmMessage("Module Load Order", text.ToString(), "Continue", "Abort", cancelIsDefault: true))
+        return text.ToString().TrimEnd();
+    }
+
+    private static string BuildModuleIssueText(SetAnalysis analysis, string setDescription)
+    {
+        var parts = new List<string>();
+        if (analysis.Incompatible.Count > 0) parts.Add(BuildIncompatibleText(analysis.Incompatible, setDescription));
+        if (analysis.MissingDependencies.Count > 0) parts.Add(BuildMissingDependencyText(analysis.MissingDependencies));
+        return string.Join("\n\n", parts);
+    }
+
+    /// Runs the incompatibility check, then the missing-dependency check (each with its own
+    /// abort/continue popup), then the load order check (hard and soft dependencies together,
+    /// one popup). Returns false as soon as the user aborts.
+    /// `setDescription` completes "...is not ___" / "...both ___" in the messages.
+    /// When `reload` is given (the set is the live active modules), the load order popup also
+    /// offers Autosort; after a successful autosort `reload` supplies a fresh scan and the order
+    /// is checked again.
+    private bool VerifyModuleSet(string action, List<LoadEntry> set, List<ModuleInfo> installed, string setDescription,
+        Func<(List<LoadEntry> Set, List<ModuleInfo> Installed)>? reload = null)
+    {
+        var analysis = ModuleChecker.Analyze(set, installed, setDescription);
+
+        if (analysis.Incompatible.Count > 0)
+        {
+            var text = BuildIncompatibleText(analysis.Incompatible, setDescription) +
+                       $"\n\nContinue anyway, or abort {action}?";
+
+            if (!ShowConfirmMessage("Incompatible Modules", text, "Continue", "Abort", cancelIsDefault: true))
                 return false;
         }
 
+        if (analysis.MissingDependencies.Count > 0)
+        {
+            var text = BuildMissingDependencyText(analysis.MissingDependencies) +
+                       $"\n\nContinue anyway, or abort {action}?";
+
+            if (!ShowConfirmMessage("Module Dependencies", text, "Continue", "Abort", cancelIsDefault: true))
+                return false;
+        }
+
+        while (analysis.HasOrderIssue)
+        {
+            if (reload == null)
+            {
+                var plain = BuildOrderText(analysis) + $"\n\nContinue anyway, or abort {action}?";
+                if (!ShowConfirmMessage("Module Load Order", plain, "Continue", "Abort", cancelIsDefault: true))
+                    return false;
+                break;
+            }
+
+            var text = BuildOrderText(analysis) +
+                       "\n\nAutosort can try to fix this by changing the Load # of some modules (you'll be shown " +
+                       $"the changes and asked to confirm first). Or continue anyway, or abort {action}.";
+
+            switch (ShowChoiceMessage("Module Load Order", text, new[] { "Autosort", "Continue", "Abort" }, defaultIndex: 2))
+            {
+                case 0:
+                    // Applied: re-scan and re-check. Cancelled or no solution: show this popup again.
+                    if (RunAutosort())
+                    {
+                        var fresh = reload();
+                        analysis = ModuleChecker.Analyze(fresh.Set, fresh.Installed, setDescription);
+                    }
+                    continue;
+
+                case 1:
+                    return true;
+
+                default:
+                    return false;
+            }
+        }
+
+        return true;
+    }
+
+    // ------------------------------------------------------ Status indicator ---
+
+    /// Re-evaluates the main status readout from the startup placement check and the active modules
+    /// as last scanned. Priority: Install Error, Module Issue, Bad Order, then Ready. The tooltip
+    /// repeats the text of the matching popup.
+    private void UpdateStatusIndicator()
+    {
+        string value, tip;
+        Color color;
+
+        if (_installIssueText != null || _btsExePath == null || !File.Exists(_btsExePath))
+        {
+            value = "Install Error";
+            color = Theme.StatusError;
+            tip = _installIssueText ?? GameNotFoundText;
+        }
+        else
+        {
+            var installed = _activeModules.Concat(_inactiveModules).ToList();
+            var set = _activeModules.Select(m => new LoadEntry(m, m.LoadPass)).ToList();
+            var analysis = ModuleChecker.Analyze(set, installed, "active");
+
+            if (analysis.HasModuleIssue)
+            {
+                value = "Module Issue";
+                color = Theme.StatusError;
+                tip = BuildModuleIssueText(analysis, "active");
+            }
+            else if (analysis.HasOrderIssue)
+            {
+                value = "Bad Order";
+                color = Theme.StatusWarning;
+                tip = BuildOrderText(analysis) +
+                      "\n\nRight-click a module and choose \"Autosort active modules\" to try an automatic fix.";
+            }
+            else
+            {
+                value = "Ready";
+                color = Theme.StatusGood;
+                tip = "The game was found, and the active modules have no incompatibilities, missing dependencies or load order problems.";
+            }
+        }
+
+        _statusIndicator.SetStatus(value, color);
+        _statusToolTip.SetToolTip(_statusIndicator, LimitTipLines(tip));
+    }
+
+    private static string LimitTipLines(string text)
+    {
+        var lines = text.Replace("\r\n", "\n").Split('\n');
+        if (lines.Length <= MaxStatusTipLines) return text;
+        return string.Join("\n", lines.Take(MaxStatusTipLines)) +
+               $"\n... and {lines.Length - MaxStatusTipLines} more lines (the full list is shown when you launch or save a preset).";
+    }
+
+    // ------------------------------------------------------------ Autosort ---
+
+    /// "Name" or "Name (folder 'Folder')", for the autosort preview.
+    private static string DescribeModule(ModuleInfo m) =>
+        string.Equals(m.Name, m.FolderName, StringComparison.Ordinal) ? $"'{m.Name}'" : $"'{m.Name}' (folder '{m.FolderName}')";
+
+    /// The "Autosort active modules" action: works out, from a fresh scan, which active modules
+    /// should change Load # so every dependency loads before its dependents, shows what it would do,
+    /// and only moves anything after the user applies. Returns true if changes were applied.
+    /// Failing to find a solution is a normal outcome and just explains itself.
+    private bool RunAutosort()
+    {
+        AutosortPlan plan;
+        Cursor = Cursors.WaitCursor;
+        try
+        {
+            var (set, _) = ScanActiveSet();
+            plan = AutosortPlanner.Plan(set);
+        }
+        finally
+        {
+            Cursor = Cursors.Default;
+        }
+
+        if (!plan.Success)
+        {
+            ShowScrollableMessage("Autosort - No Solution Found",
+                "Autosort couldn't find a solution, so nothing was changed.\n\n" +
+                plan.FailureReason + "\n\n" +
+                "This will need fixing by hand: right-click a module and choose \"Set Load # to...\", or deactivate " +
+                "one of the modules involved. Autosort is only meant for simple fixes.");
+            return false;
+        }
+
+        if (plan.Moves.Count == 0)
+        {
+            ShowScrollableMessage("Autosort",
+                "Every active module's dependencies already load before it -- there is nothing for Autosort to change.");
+            return false;
+        }
+
+        var preview = new StringBuilder();
+        preview.AppendLine($"Autosort will change the Load # of {plan.Moves.Count} active module(s), so that every module's " +
+                           "dependencies (required and optional) load before it.");
+        preview.AppendLine();
+        preview.AppendLine("Only modules that need to move are changed, and only to a different Load #: nothing is " +
+                           "activated or deactivated, and inactive modules aren't touched. This is a simple automatic " +
+                           "method, so check the changes below make sense to you.");
+        preview.AppendLine();
+        foreach (var move in plan.Moves)
+        {
+            var reason = move.Reason.Length > 0 ? $"  ({move.Reason})" : "";
+            preview.AppendLine($"   - {DescribeModule(move.Module)}: {ModuleLayout.PassLabel(move.FromPass)} -> {ModuleLayout.PassLabel(move.ToPass)}{reason}");
+        }
+
+        if (!ShowConfirmMessage("Autosort - Confirm", preview.ToString(), "Apply", "Cancel"))
+            return false;
+
+        PerformMoves(plan.Moves
+            .Select(m => new MoveRequest { Source = m.Module.FullPath, ToActive = true, Pass = m.ToPass })
+            .ToList());
+        lblStatus.Text = $"Autosort changed the Load # of {plan.Moves.Count} module(s).";
         return true;
     }
 
@@ -1068,6 +1333,9 @@ public class MainForm : Form
             .OrderBy(m => m.Name, StringComparer.OrdinalIgnoreCase).ThenBy(m => m.FolderName, StringComparer.OrdinalIgnoreCase).ToList();
 
         RepopulateGrids(keepScroll: true);
+
+        // Runs once per refresh, which is once per batch of moves, never per module moved.
+        UpdateStatusIndicator();
 
         if (firstLaunch)
             lblStatus.Text = $"Welcome to the launcher! First time users may find the \"Instructions\" button useful.";
@@ -1183,7 +1451,7 @@ public class MainForm : Form
         var text = new StringBuilder();
         text.AppendLine($"Version: {m.Version}");
         if (!string.IsNullOrWhiteSpace(m.AoeRev)) text.AppendLine($"AoE Rev: {m.AoeRev}");
-        text.AppendLine($"Load pass: {ModuleLayout.PassDisplayName(m.LoadPass)}");
+        text.AppendLine($"Load #: {ModuleLayout.PassDisplayName(m.LoadPass)}");
         if (!string.Equals(m.Name, m.FolderName, StringComparison.Ordinal)) text.AppendLine($"Folder: {m.FolderName}");
         if (!string.IsNullOrWhiteSpace(m.Author)) text.AppendLine($"Author: {m.Author}");
         if (m.Compatible.Count > 0) text.AppendLine($"Compatible with: {string.Join(", ", m.Compatible)}");
@@ -1209,6 +1477,7 @@ public class MainForm : Form
 - You can launch the game by the top center button; be aware it may take some time to activate
 - Active modules are shown on the left panel, and inactive modules on the right panel
 - The Open Civ4 Config button opens your Civ4 config .ini file in your default text editor
+- The Status readout under the Instructions button shows Ready (green), Install Error or Module Issue (red), or Bad Order (yellow); hover over it for details of what is wrong
 - The Manage Modules button shows or hides the module lists and preset tools; the launcher remembers your choice
 
     USING MODULES
@@ -1219,15 +1488,16 @@ public class MainForm : Form
 - The Refresh button will update the shown module list if you manually move files with the launcher open
 - The Filters section greys out modules by tag (from each module's [tags] entry in info.txt): click a tag's box to cycle it between empty (no filter), white (only show modules WITH that tag) and black (grey out modules WITH that tag); right-click clears it
 - Greyed-out modules move to the bottom of their list but are NOT removed: they stay active or inactive exactly as before, so check your filters before launching
-- Right-click a module and choose ""Load in pass"" to move it between the Default folder (Def) and the sequenced passes 1-4 (Seq); the Loadpass column shows where each module currently is
-- The game loads Default modules first, then pass 1, 2, 3 and 4; within each pass modules load alphabetically by their folder name
-- Moving a module between active and inactive keeps its load pass
+- Right-click a module and choose ""Set Load # to..."" to move it between the Load # folders 0-4; the Load # column shows where each module currently is
+- The game loads Load # 0 first, then 1, 2, 3 and 4; within each Load # modules load alphabetically by their folder name
+- Moving a module between active and inactive keeps its Load #
 - Before launching, saving a preset or exporting a preset, the launcher checks that no active modules are listed as incompatible with each other, and that every module's hard dependencies are active and load before it, and that any soft dependencies that are active also load before it; you can abort or continue if a problem is found
+- Right-click > ""Autosort active modules"" (also offered when a load order problem is found) tries to fix load order by changing the Load # of as few active modules as it can; it shows you the changes first, and you can cancel. It is for simple fixes only: if it can't find a solution (for example, modules that depend on each other in a loop), it says so and you'll need to fix the order yourself
 
     PRESETS
 - Pressing the ""Save..."" button will give you the option to save the current selection as a preset
 - Pressing the Load Preset button will cause the currently selected preset in the dropdown box to be loaded
-- Presets remember each module's load pass, and loading one puts modules back in those passes
+- Presets remember each module's Load #, and loading one puts modules back in those Load #s
 - Delete will prompt you whether to delete the currently selected preset
 
     EXPORTING AND IMPORTING
@@ -1305,7 +1575,13 @@ public class MainForm : Form
 
     /// Same as ShowScrollableMessage but with Apply/Cancel, returning true if the user confirmed.
     private bool ShowConfirmMessage(string title, string text, string confirmText = "Apply", string cancelText = "Cancel",
-        bool cancelIsDefault = false)
+        bool cancelIsDefault = false) =>
+        ShowChoiceMessage(title, text, new[] { confirmText, cancelText }, cancelIsDefault ? 1 : 0) == 0;
+
+    /// Scrollable read-only message with a row of right-aligned buttons. Returns the index of the
+    /// button pressed, or -1 if the window was closed another way. The last button is the
+    /// cancel/abort one (Escape presses it); `defaultIndex` is the one Enter presses.
+    private int ShowChoiceMessage(string title, string text, string[] buttonTexts, int defaultIndex)
     {
         var area = Screen.FromControl(this).WorkingArea;
         using var form = new Form
@@ -1336,25 +1612,47 @@ public class MainForm : Form
         var buttonPanel = new Panel { Dock = DockStyle.Bottom, Height = Theme.ButtonHeight + Theme.S(14) };
         Theme.StyleContainer(buttonPanel);
 
-        int btnTop = Theme.S(7);
-        var confirmBtn = new FlatButton { Text = confirmText, DialogResult = DialogResult.OK, Width = Theme.S(125), Height = Theme.ButtonHeight, Top = btnTop };
-        var cancelBtn = new FlatButton { Text = cancelText, DialogResult = DialogResult.Cancel, Width = Theme.S(125), Height = Theme.ButtonHeight, Top = btnTop };
-        Theme.StyleButton(confirmBtn, primary: true);
-        Theme.StyleButton(cancelBtn);
+        int chosen = -1;
+        var buttons = new List<FlatButton>();
+        for (int i = 0; i < buttonTexts.Length; i++)
+        {
+            var index = i;
+            var textWidth = TextRenderer.MeasureText(buttonTexts[i], Theme.BodyFont).Width;
+            var btn = new FlatButton
+            {
+                Text = buttonTexts[i],
+                Width = Math.Max(Theme.S(125), textWidth + Theme.S(24)),
+                Height = Theme.ButtonHeight,
+                Top = Theme.S(7),
+            };
+            Theme.StyleButton(btn, primary: i == defaultIndex);
+            btn.Click += (s, e) =>
+            {
+                chosen = index;
+                form.DialogResult = index == buttonTexts.Length - 1 ? DialogResult.Cancel : DialogResult.OK;
+            };
+            buttons.Add(btn);
+            buttonPanel.Controls.Add(btn);
+        }
+
         buttonPanel.Resize += (s, e) =>
         {
-            cancelBtn.Left = buttonPanel.Width - cancelBtn.Width - Theme.S(12);
-            confirmBtn.Left = cancelBtn.Left - confirmBtn.Width - Theme.S(8);
+            var x = buttonPanel.Width - Theme.S(12);
+            for (int i = buttons.Count - 1; i >= 0; i--)
+            {
+                x -= buttons[i].Width;
+                buttons[i].Left = x;
+                x -= Theme.S(8);
+            }
         };
-        buttonPanel.Controls.Add(confirmBtn);
-        buttonPanel.Controls.Add(cancelBtn);
 
         form.Controls.Add(textHost);
         form.Controls.Add(buttonPanel);
-        form.AcceptButton = cancelIsDefault ? cancelBtn : confirmBtn;
-        form.CancelButton = cancelBtn;
+        form.AcceptButton = buttons[Math.Max(0, Math.Min(defaultIndex, buttons.Count - 1))];
+        form.CancelButton = buttons[buttons.Count - 1];
 
-        return form.ShowDialog(this) == DialogResult.OK;
+        form.ShowDialog(this);
+        return chosen;
     }
 
     // ------------------------------------------------------------- Schemas ---
@@ -1468,19 +1766,20 @@ public class MainForm : Form
                 ShowModuleDetails(m);
         };
 
-        var contextMenu = new ContextMenuStrip { Font = Theme.BodyFont };
+        var contextMenu = new ContextMenuStrip();
+        Theme.StyleContextMenu(contextMenu);
         var openFolderItem = new ToolStripMenuItem("Open containing folder");
         contextMenu.Items.Add(openFolderItem);
         contextMenu.Items.Add(new ToolStripSeparator());
 
-        // The module(s) the "Load in pass" items act on, captured when the menu opens: the whole
+        // The module(s) the "Set Load #" items act on, captured when the menu opens: the whole
         // selection if the right-clicked row is part of it, otherwise just the right-clicked row.
         var contextTargets = new List<ModuleInfo>();
         var passItems = new List<ToolStripMenuItem>();
         foreach (var pass in ModuleLayout.Passes)
         {
             var targetPass = pass;
-            var item = new ToolStripMenuItem($"Load in pass: {ModuleLayout.PassDisplayName(targetPass)}") { Tag = targetPass };
+            var item = new ToolStripMenuItem($"Set Load # to {ModuleLayout.PassDisplayName(targetPass)}") { Tag = targetPass };
             item.Click += (s, e) =>
             {
                 var requests = contextTargets
@@ -1491,6 +1790,12 @@ public class MainForm : Form
             contextMenu.Items.Add(item);
             passItems.Add(item);
         }
+
+        // Bottom of the menu: not about the clicked module(s) -- it re-sorts the active list.
+        contextMenu.Items.Add(new ToolStripSeparator());
+        var autosortItem = new ToolStripMenuItem("Autosort active modules");
+        autosortItem.Click += (s, e) => RunAutosort();
+        contextMenu.Items.Add(autosortItem);
 
         // Row index captured by the most recent right-click, so the click handler below
         // knows which row's folder to open regardless of the current selection.
@@ -1514,8 +1819,8 @@ public class MainForm : Form
 
             contextTargets = GetContextTargets(grid, contextRowIndex);
 
-            // Hide the pass the module(s) are already in. With a multi-selection spanning several
-            // passes an option stays visible as long as it would move at least one of them.
+            // Hide the Load # the module(s) are already in. With a multi-selection spanning several
+            // Load #s an option stays visible as long as it would move at least one of them.
             foreach (var item in passItems)
             {
                 var pass = (string)item.Tag!;
@@ -1598,7 +1903,7 @@ public class MainForm : Form
         public string Source { get; set; } = "";
         public bool ToActive { get; set; }
 
-        /// Target load pass ("Def", "1".."4"); empty/invalid keeps the pass the module is already in.
+        /// Target Load # ("0".."4"); empty/invalid keeps the Load # the module is already in.
         public string Pass { get; set; } = "";
     }
 
@@ -1636,8 +1941,8 @@ public class MainForm : Form
                 var src = req.Source.TrimEnd(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar);
                 var name = Path.GetFileName(src);
 
-                // An unspecified pass keeps the module in the pass it's already in, which is what
-                // preserves the Def / Seq\N structure when toggling active <-> inactive.
+                // An unspecified Load # keeps the module in the Load # it's already in, which is what
+                // preserves it when toggling active <-> inactive.
                 var pass = ModuleLayout.NormalizePass(req.Pass);
                 if (pass.Length == 0) pass = ModuleLayout.GetPassFromPath(src);
 
@@ -1654,7 +1959,7 @@ public class MainForm : Form
                 if (clash != null)
                 {
                     errors.Add($"{name}: a module with this name already exists in the " +
-                               $"{(req.ToActive ? "active" : "inactive")} list (load pass {ModuleLayout.PassDisplayName(ModuleLayout.GetPassFromPath(clash))}).");
+                               $"{(req.ToActive ? "active" : "inactive")} list ({ModuleLayout.PassLabel(ModuleLayout.GetPassFromPath(clash))}).");
                     continue;
                 }
 
@@ -1680,8 +1985,8 @@ public class MainForm : Form
 
     private void InstallDroppedModules(string[] droppedPaths, bool toActive)
     {
-        // Modules dropped in from Explorer carry no pass information, so they go in Def (Default);
-        // right-click > Load in pass afterwards if they belong elsewhere.
+        // Modules dropped in from Explorer carry no Load # information, so they go in the default
+        // Load # (1); right-click > Set Load # afterwards if they belong elsewhere.
         var targetDir = ModuleLayout.GetPassDir(_modPath, toActive, ModuleLayout.DefaultPass);
         Directory.CreateDirectory(targetDir);
 
@@ -1810,8 +2115,8 @@ public class MainForm : Form
 
         var missing = preset.Modules.Where(m => !beforeCurrent.ContainsKey(m.Name)).ToList();
 
-        // Wanted modules end up active in the pass the preset recorded (a module with no recorded
-        // pass stays in its current pass); unwanted active modules are deactivated, keeping their pass.
+        // Wanted modules end up active in the Load # the preset recorded (a module with no recorded
+        // Load # stays in its current one); unwanted active modules are deactivated, keeping their Load #.
         var requests = new List<MoveRequest>();
         foreach (var m in _inactiveModules)
         {
