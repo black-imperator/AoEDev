@@ -1,10 +1,83 @@
+;THIS IS A TEMPLATE, PLEASE USE IT
+;comments start with a semicolon and are ignored, and here for your convenience
+
+;User-readable name of the module, please keep the folder name and module name
+;starting with the same letter(s) to help avoid load sequencing issues.
 [name]
-More_Arcane
-[version]
-0.4
-[rifeversion]
-1.4
+More Arcane
+
+;This is you!
 [author]
 Derf
-;[dependency]
-;[compatible]
+
+;Use this for versions of your own module. 1.0, 1.1, A, etc.
+[version]
+0.4
+
+;What version of AoE this module was last updated for. This template was introduced v387.
+;Refer to the SVN ver, or version.txt in the mod folder (assuming Black Imperator updated it...)
+[aoeversion]
+387
+
+;Use this to allow the user to sort by tags. Comma separated. Valid tags are:
+;Civ(N)      | Entirely new civs
+;Civ(E)      | When your module heavily edits a civ
+;Art         | Graphical packs and the like
+;Joke        | Meme and joke packs
+;Mech        | Mechanical system introduced or overhaul to one
+;Lead        | New leaders or content specifically tied to leaders
+;Bal         | Balance adjustments
+;Event       | Adds new or adjusts events
+[tags]
+Mech
+
+;List any other modules you require as a dependency here.
+;Refer to the exact folder name of that module, NOT the [name] field!
+[dependency]
+
+;If this module should NOT be run alongside another (e.g. you both overhaul the same leader)
+;As dependency, use the exact folder name of that module, NOT the [name] field!
+[incompatible]
+
+;This shows up as a tooltip when the user mouses over it in the launcher.
+;Please keep it as short as possible, ideally even shorter than this line here.
+[shortdesc]
+Adds a mounted mage line - very mobile, but with a chance to miscast
+
+;Longer description to tell how awesome your stuff is.
+[desc]
+
+0.4 - 29 June '18
+Updated for Ashes of Erebus svn r-321
+
+0.3 - 2 April '14
+Fixed (Hopefully) Mounted Adept/Mage promotions not being correctly removed when Mounted Mage/Archmage promotions were applied.
+
+0.2 - 23 March '14
+Lots of changes:
+-Players can now only have on Mounted Archmage or varient thereof
+-Malakim players can now switch between Camel and Horse mounts
+-Hippus' Horselord promotion now grants -5 to miscast magic
+-Amurite Kylorin's Legacy now grants -10 to miscast magic
+-Primary and Secondary unitcombats have been switched. Before the MA units were Arcane, Mounted applied by Promotion. Now with the two changed around, Amurite units upgrading to non-arcane Mounted units (Horsemen, etc) have been fixed.
+-Sheaim Eater of Dreams can now be upgraded to a Mounted Archmage
+-Mekara Order Shapers and High Mages can now be upgraded into MA Units - they do not gain special versions
+
+0.13 - 19 May '12
+Three new promotions added. Automatically applied to new mounted arcane units.
+One is an M'd Adept debuff, superceded by the M'd Mage on upgrade.
+M'd Archmage promo does not debuff, but does remove the M'd Mage.
+
+0.12
+D'teshi, Scion and Amurite UU's added
+Svartalfar Mounted Illusionist added
+Khazad are no longer able to get Mounted Mages/Archmages
+Verified Hippus Mounted Arcane units will gain the Horselord promotion
+
+0.11
+Minor fix in the text keys.
+
+0.10 - 08 May '12
+Initial version.
+Only basic mounted units available - no replacements for any civ.
+Kuriotates and Mechanos unable to build.

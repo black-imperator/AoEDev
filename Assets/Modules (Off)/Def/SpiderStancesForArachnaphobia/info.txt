@@ -1,16 +1,66 @@
+;THIS IS A TEMPLATE, PLEASE USE IT
+;comments start with a semicolon and are ignored, and here for your convenience
+
+;User-readable name of the module, please keep the folder name and module name
+;starting with the same letter(s) to help avoid load sequencing issues.
 [name]
 Spider Stances for Arachnaphobia
-[version]
-1.0 
-[rifeversion]
-380
+
+;This is you!
 [author]
 Captain
+
+;Use this for versions of your own module. 1.0, 1.1, A, etc.
+[version]
+1.0
+
+;What version of AoE this module was last updated for. This template was introduced v387.
+;Refer to the SVN ver, or version.txt in the mod folder (assuming Black Imperator updated it...)
+[aoeversion]
+387
+
+;Use this to allow the user to sort by tags. Comma separated. Valid tags are:
+;Civ(N)      | Entirely new civs
+;Civ(E)      | When your module heavily edits a civ
+;Art         | Graphical packs and the like
+;Joke        | Meme and joke packs
+;Mech        | Mechanical system introduced or overhaul to one
+;Lead        | New leaders or content specifically tied to leaders
+;Bal         | Balance adjustments
+;Event       | Adds new or adjusts events
+[tags]
+Civ(E), Bal
+
+;List any other modules you require as a dependency here.
+;Refer to the exact folder name of that module, NOT the [name] field!
 [dependency]
-;Ashes of Erebus ;Arachnaphobia
-[compatible]
-;everything
+Arachnophobia
+
+;If this module should NOT be run alongside another (e.g. you both overhaul the same leader)
+;As dependency, use the exact folder name of that module, NOT the [name] field!
+[incompatible]
+
+;This shows up as a tooltip when the user mouses over it in the launcher.
+;Please keep it as short as possible, ideally even shorter than this line here.
 [shortdesc]
-Spiders units can choose between hidden nationality + stealth + no defensive bonuses or non hidden + no stealth + can defensive bonuses
+Requires Arachniphobia module, gives more stances and abilities to spiders.
+
+;Longer description to tell how awesome your stuff is.
 [desc]
-More in changes.txt
+The aim of this module is to let Archos (mainly, though other civs can too) use their spiders as 'regular melee units'. One weakness of using regular giant spiders in your army previously is that they all have forced hidden nationality and stealth, making them unable to block enemies if the enemy lacked perception and prone to getting attacked by random wandering units. Now you can put them in territorial mode to have them act normally.
+
+[ OVERVIEW v1 ]
+Baby Spiders, Spiders, and Giant Spiders now can toggle between two modes while in your own borders. In hunting mode, they have stealth 1, hidden nationality, and cannot receive defensive bonuses. While in territorial mode, they do not have stealth or hidden nationality, but can receive defensive bonuses. 
+
+When a spider upgrades, either a baby spider growing up or a medium spider using the become giant spell, it defaults back to hunting mode - all that bulking up makes them hungry again. (technically a small implementation limitation)
+
+The Nesting promotion from unique forts no longer grants stealth, so you can use your territorial spiders to defend it normally, or keep hunting spiders in it to maintain stealth with zero maintenance.
+
+All spiders start in hunting mode. Changing modes is not enabled for AI, they will stay in hunting mode and act like they usually did.
+
+[ CHANGELOG ] 
+V1 - initial.
+
+V2 - territorial blocks on the hunt, should stop edge cases of getting both.
+
+V3 - uses exclude instead of block. should have stopped double promotions for real.

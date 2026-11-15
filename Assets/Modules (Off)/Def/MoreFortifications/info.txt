@@ -1,14 +1,50 @@
+;THIS IS A TEMPLATE, PLEASE USE IT
+;comments start with a semicolon and are ignored, and here for your convenience
+
+;User-readable name of the module, please keep the folder name and module name
+;starting with the same letter(s) to help avoid load sequencing issues.
 [name]
-MoreFortifications
-[version]
-1.3
-[rifeversion]
-1.4
+More Fortifications
+
+;This is you!
 [author]
 Derf, Blazenclaw
+
+;Use this for versions of your own module. 1.0, 1.1, A, etc.
+[version]
+1.3
+
+;What version of AoE this module was last updated for. This template was introduced v387.
+;Refer to the SVN ver, or version.txt in the mod folder (assuming Black Imperator updated it...)
+[aoeversion]
+387
+
+;Use this to allow the user to sort by tags. Comma separated. Valid tags are:
+;Civ(N)      | Entirely new civs
+;Civ(E)      | When your module heavily edits a civ
+;Art         | Graphical packs and the like
+;Joke        | Meme and joke packs
+;Mech        | Mechanical system introduced or overhaul to one
+;Lead        | New leaders or content specifically tied to leaders
+;Bal         | Balance adjustments
+;Event       | Adds new or adjusts events
+[tags]
+Bal
+
+;List any other modules you require as a dependency here.
+;Refer to the exact folder name of that module, NOT the [name] field!
+[dependency]
+
+;If this module should NOT be run alongside another (e.g. you both overhaul the same leader)
+;As dependency, use the exact folder name of that module, NOT the [name] field!
+[incompatible]
+
+;This shows up as a tooltip when the user mouses over it in the launcher.
+;Please keep it as short as possible, ideally even shorter than this line here.
 [shortdesc]
-Adds spawning to several unique features; capture them to stop it!
-;[dependency]
+Buffs fortresses and makes some world improvements capturable as forts
+
+;Longer description to tell how awesome your stuff is.
 [desc]
 Tower of Eyes, Well of Souls, Pit of Abaddon, and Grave of Asmoday can be fortified in order to halt their spawning of barbarian units. Beware though, that these features will (likely) start with barbarian fort commanders of their own!
 
@@ -47,5 +83,5 @@ However, as the tags for it aren't modular yet, you won't see it until they beco
 Claimable Tower of Eyes 0.10 - 24 Feb '11
 Idea created. Make the Tower of Eyes a claimable Fort!
 Tested compatible with the Elohim Unique Feature Events module by GIR.
-[compatible]
-MODULE_MAGISTER_ASHES
+
+Compatible with: MODULE_MAGISTER_ASHES

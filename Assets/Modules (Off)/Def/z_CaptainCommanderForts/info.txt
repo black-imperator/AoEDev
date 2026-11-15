@@ -1,14 +1,82 @@
+;THIS IS A TEMPLATE, PLEASE USE IT
+;comments start with a semicolon and are ignored, and here for your convenience
+
+;User-readable name of the module, please keep the folder name and module name
+;starting with the same letter(s) to help avoid load sequencing issues.
 [name]
-CaptainCommanderForts
-[version]
-0.3
-[rifeversion]
-368
+Z - Captain Commander Forts
+
+;This is you!
 [author]
 Captain
+
+;Use this for versions of your own module. 1.0, 1.1, A, etc.
+[version]
+0.3
+
+;What version of AoE this module was last updated for. This template was introduced v387.
+;Refer to the SVN ver, or version.txt in the mod folder (assuming Black Imperator updated it...)
+[aoeversion]
+387
+
+;Use this to allow the user to sort by tags. Comma separated. Valid tags are:
+;Civ(N)      | Entirely new civs
+;Civ(E)      | When your module heavily edits a civ
+;Art         | Graphical packs and the like
+;Joke        | Meme and joke packs
+;Mech        | Mechanical system introduced or overhaul to one
+;Lead        | New leaders or content specifically tied to leaders
+;Bal         | Balance adjustments
+;Event       | Adds new or adjusts events
+[tags]
+Bal
+
+;List any other modules you require as a dependency here.
+;Refer to the exact folder name of that module, NOT the [name] field!
 [dependency]
-;
-[compatible]
-;
+
+;If this module should NOT be run alongside another (e.g. you both overhaul the same leader)
+;As dependency, use the exact folder name of that module, NOT the [name] field!
+[incompatible]
+
+;This shows up as a tooltip when the user mouses over it in the launcher.
+;Please keep it as short as possible, ideally even shorter than this line here.
+[shortdesc]
+Changes fort commanders to be commander type units with no range attacks, UUs rebalanced appropriately
+
+;Longer description to tell how awesome your stuff is.
 [desc]
-Changes fort commanders to be commander type units with no range attacks, UUs rebalanced appropriately. More in changes.txt.
+Changes fort commanders to be commander type units with no range attacks, UUs rebalanced appropriately.
+
+This module was created after discussion about the role of fort commanders and is built on an initial, simple test version by kaczkar123, which contained the basic framework for a fort commander that upgrades at specific techs, with no ranged attacks. All further balance and all UUs by Captain
+
+The aim of this module is to replace the low strength but massive splash ranged attack fort commanders with commander type units to command and give buffs to nearby units instead. They should have a small amount of combat strength to repel a unit or two, but will require minions for any serious attack.
+
+A fort commander starts at strength 4, and get an additional strength at Warfare, Military Strategy, and 2 additional strength at Engineering (if you research engineering without military strategy, commanders won't get the strength buff until you go back to get it)
+
+They have 1 first strike and the commander unit type, no ranged attacks or bonuses or penalties against specific units
+
+By default, they have a command limit of 3 and command range of 2
+
+They still gain free exp, but only up to 20 - enough to get some specialized command promos. The extra maintenence cost on commanders is also reduced by 1 (to -1, instead of -2)
+
+This is intetionally weaker than the original version, and is more about helping control a nearby area with buffs and having a safe spot to go back to heal instead of smashing enemies with ranged attacks. It should be less nightmarish to push into a group of dwarven mines / forts mixed together.
+
+UUs are adjusted to match, special mention to Tower Mage (which remains an arcane unit, not a commander) and Nesting Spiders and Guardian Vines (which remain combat units, not commanders)
+
+Drowned commander is adjusted as well, providing a small strength and anti-ship bonus to help fight off ships and control naval chokepoints.
+
+[ MODULE COMPATABILITY ]
+Anything module with unique fort commanders not mentioned here will simply use its default stats and not be a commander type unit. All fort commanders using the Influence promotion will get strength from techs and have the maintenence adjustment, but their stats would otherwise be untouched.
+
+Nesting Spider changes apply to Arachnaphobia.
+
+Dural Battle Architect changed to be commander units with +1 first strike.
+
+Canopy Guards and Tyrants from Lizard Art no longer have junglebound, making them the same as regular fort commanders. I didn't feel like lizard forts needed to be even stronger again in jungles but weaker outside of them. Plus it will work better in the distant future where they may not have auto terraforming.
+
+Jotnar Herredcarl remains a splash damage dealing archer unit. In this one case, this felt more appropriate for Jotnar's big, valuable unit style gameplay. Ranged damage is slightly weaker than an original fort commander, instead matching Jotnar Hurler (archer replacement).
+
+[ CHANGELOG ]
+
+v1 - initial.

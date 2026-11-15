@@ -1,5 +1,0 @@
-Lizard Art Fix - 28 June '18
-Updated to work with Ashes of Erebus svn r-321
-
-Lizard Art Fix - 13 April '14
-Updated to work with Ashes of Erebus by Derf

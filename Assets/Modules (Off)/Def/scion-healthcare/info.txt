@@ -1,10 +1,159 @@
+;THIS IS A TEMPLATE, PLEASE USE IT
+;comments start with a semicolon and are ignored, and here for your convenience
+
+;User-readable name of the module, please keep the folder name and module name
+;starting with the same letter(s) to help avoid load sequencing issues.
 [name]
-scion-healthcare
-[version]
-1.7
-[rifeversion]
-1.4
+Scion Healthcare
+
+;This is you!
 [author]
 Derf
-;[dependency]
-;[compatible]
+
+;Use this for versions of your own module. 1.0, 1.1, A, etc.
+[version]
+1.7
+
+;What version of AoE this module was last updated for. This template was introduced v387.
+;Refer to the SVN ver, or version.txt in the mod folder (assuming Black Imperator updated it...)
+[aoeversion]
+387
+
+;Use this to allow the user to sort by tags. Comma separated. Valid tags are:
+;Civ(N)      | Entirely new civs
+;Civ(E)      | When your module heavily edits a civ
+;Art         | Graphical packs and the like
+;Joke        | Meme and joke packs
+;Mech        | Mechanical system introduced or overhaul to one
+;Lead        | New leaders or content specifically tied to leaders
+;Bal         | Balance adjustments
+;Event       | Adds new or adjusts events
+[tags]
+Civ(E)
+
+;List any other modules you require as a dependency here.
+;Refer to the exact folder name of that module, NOT the [name] field!
+[dependency]
+
+;If this module should NOT be run alongside another (e.g. you both overhaul the same leader)
+;As dependency, use the exact folder name of that module, NOT the [name] field!
+[incompatible]
+
+;This shows up as a tooltip when the user mouses over it in the launcher.
+;Please keep it as short as possible, ideally even shorter than this line here.
+[shortdesc]
+Gives Scions additional content.
+
+;Longer description to tell how awesome your stuff is.
+[desc]
+I got tired of all the useless health buildings in my build queue as Scions of Patria. I know they are there so you can combat Unhealthy Discontent before Sorcery, but their names still annoy me. 
+Why would Scions have an infirmary? Just die already and accept the Emperors Gift. 
+Why waste effort on building a Granary, just starve and accept the Emperors Gift. 
+Why an Elder Council when every single citizen in the empire is older than other civilizations?
+So I replaced the health buildings with unique buildings, intended to have about the same value to a Scion player as the original buildings have to a regular civ.
+
+Scion Healthcare 1.7 - 29 June '18
+Updated to work with Ashes of Erebus svn r-321
+
+Scion Healthcare 1.6 - 10 April '14
+Fixed a few art issues.
+
+Scion Healthcare 1.5 - 9 April '14
+Updated by Derf to work with Ashes of Erebus
+For full details see the Scion_Healthcare_Details or the Civilopedia
+Known issue: Banners in the Civilopedia don't show up with this module loaded (Except for module-added Civ's)
+
+Full details:
+
+features:
+  Ghosthouse:
+    replaces: Smokehouse
+    effects: 
+      - Health from meat resources
+  Citizens Council:
+    replaces: Elder Council
+    effects: 
+      - 2 science
+      - 1 sage slot
+      - 1 healer slot
+  Embalmer:
+    replaces: Herbalist
+    effects: 
+      - 2 health
+      - +10 healing in city
+      - 1 happy from Reagents
+  Mortuary:
+    replaces: Infirmary
+    effects: 
+      - 3 health
+      - 1 free priest and artist
+  Otherworldly Beacon:
+    replaces: Lighthouse
+    effects:
+      - +1 traderoute
+      - sea plots get +1 production and commerce
+      - naval units built in the city gains Ghost Crew
+  Ghost Crew:
+    effects:
+      - +1 cargo
+      - +30% withdraw chance
+      - -1 combat strength
+      - Can sometimes become Hidden after combat
+      - becomes Undead
+      - may promote to Implacable, Drill III & IV
+      - may promote to become flying at level 8
+      - Prevents the regular Crew promotions
+  Paper Mill:
+    replaces: Granary
+    effects:
+      - Transforms useless corn, wheat and rice into valuable paper, boosting commerce by +5% for each resource.
+      - Requires Alteration
+      - 1 sage slot
+  Poisoned Well:
+    replaces: Well
+    effects:
+      - Celebrates the victory of death over life
+      - +2 production
+  Water Sculpture:
+    replaces: Sewers
+    effects:
+      - removes unhealth from buildings
+      - +1 health
+      - +1 production from river tiles
+      - +2 happiness from Water Mana
+      - only in riverside cities
+      - requires Water Mana to be built
+  Omninet:
+    replaces: Harbour
+    effects:
+      - It sweeps the sea clean
+      - +4 food
+      - +10% production for buildings
+      - +1 Gunpowder resource
+      - +10% production with Refined Mana
+  Creepers:
+    effects:
+      - made buildable at Agriculture
+      - costs 60 production
+      - An early, but expensive, way to spread Haunted Lands
+      - but mostly because I hate researching Agriculture when it doesn't provide any immidiate benefits
+      - May promote to Rooting Creeper
+  Rooting Creeper:
+    effects:
+      - Will automatically create Haunted Lands as soon as possible
+      - May be removed by promoting to Uproot Creeper
+      - Part of the basic files, as it is only a convenience. 
+  Doomsoother:
+      replaces: Great Healer
+      effects:
+        - Strength of Patria, affinity for your civilization
+        - Health, obviously
+        - No Apothecary
+  Terrain Changes:
+    effects:
+      - All land terrain except Burning Sands provide one prodution
+      - No unhealth from Flood plains
+  Helptexts:
+    - Buildings that affect the spawn chance note so
+conflicts:
+  Fall Further: No longer supports Fall Further

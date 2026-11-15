@@ -1,17 +1,50 @@
+;THIS IS A TEMPLATE, PLEASE USE IT
+;comments start with a semicolon and are ignored, and here for your convenience
+
+;User-readable name of the module, please keep the folder name and module name
+;starting with the same letter(s) to help avoid load sequencing issues.
 [name]
-HistoricsConvertedToImportants
-[version]
-1.0 
-[rifeversion]
-381
+Z - Historics Converted To Importants
+
+;This is you!
 [author]
 Captain
+
+;Use this for versions of your own module. 1.0, 1.1, A, etc.
+[version]
+1.0
+
+;What version of AoE this module was last updated for. This template was introduced v387.
+;Refer to the SVN ver, or version.txt in the mod folder (assuming Black Imperator updated it...)
+[aoeversion]
+387
+
+;Use this to allow the user to sort by tags. Comma separated. Valid tags are:
+;Civ(N)      | Entirely new civs
+;Civ(E)      | When your module heavily edits a civ
+;Art         | Graphical packs and the like
+;Joke        | Meme and joke packs
+;Mech        | Mechanical system introduced or overhaul to one
+;Lead        | New leaders or content specifically tied to leaders
+;Bal         | Balance adjustments
+;Event       | Adds new or adjusts events
+[tags]
+Civ(E), Lead
+
+;List any other modules you require as a dependency here.
+;Refer to the exact folder name of that module, NOT the [name] field!
 [dependency]
-;Ashes of Erebus;ImportantLeaders
-[compatible]
-;everything
+
+;If this module should NOT be run alongside another (e.g. you both overhaul the same leader)
+;As dependency, use the exact folder name of that module, NOT the [name] field!
+[incompatible]
+
+;This shows up as a tooltip when the user mouses over it in the launcher.
+;Please keep it as short as possible, ideally even shorter than this line here.
 [shortdesc]
-Adds important leader options for most civs, generally leaving 1 leader as historic. Civs with only 1 leader like austrin converted to important, too.
+Gives every civ an important leader type
+
+;Longer description to tell how awesome your stuff is.
 [desc]
 Changes each following leader to important with one trait, listed as follows. Capria still has aspect of war, it is just flagged as a civ trait so she can earn 2 personality traits. Casin changed to match other importants.
 Some I picked purely to offset the historical choices - sheelba is organized since jonas is aggressive, mahala is trader since charadon is warlike, cassin is philosophical because hannah is financial.

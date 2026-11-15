@@ -4,9 +4,11 @@
 ;User-readable name of the module, please keep the folder name and module name
 ;starting with the same letter(s) to help avoid load sequencing issues.
 [name]
+Not Yet Emergent Leaders
 
 ;This is you!
 [author]
+Azatote, black_imperator
 
 ;Use this for versions of your own module. 1.0, 1.1, A, etc.
 [version]
@@ -27,6 +29,7 @@
 ;Bal         | Balance adjustments
 ;Event       | Adds new or adjusts events
 [tags]
+Civ(E), Lead
 
 ;List any other modules you require as a dependency here.
 ;Refer to the exact folder name of that module, NOT the [name] field!
@@ -39,6 +42,7 @@
 ;This shows up as a tooltip when the user mouses over it in the launcher.
 ;Please keep it as short as possible, ideally even shorter than this line here.
 [shortdesc]
+Adds leaders who were planned to use the Emergent system but aren't finalized yet
 
 ;Longer description to tell how awesome your stuff is.
 [desc]

@@ -1,9 +1,0 @@
-Saila, the Everchanging 2.3 9 April '14
-Fixed one last art issue that evaded notice by hiding in the python files
-
-Saila, the Everchanging 2.2 8 April '14
-Fixed several art issues
-
-Saila, the Everchanging 0.4 23 March '14
-Updated by Derf for Ashes of Erebus compatibility
-No guarantee on Python functionality! If you experience issues, please tell us!

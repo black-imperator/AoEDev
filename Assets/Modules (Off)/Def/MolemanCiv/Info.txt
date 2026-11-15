@@ -1,42 +1,56 @@
-;Name - no need to explain
-;note: one line
+;THIS IS A TEMPLATE, PLEASE USE IT
+;comments start with a semicolon and are ignored, and here for your convenience
+
+;User-readable name of the module, please keep the folder name and module name
+;starting with the same letter(s) to help avoid load sequencing issues.
 [name]
 Moleman Civ
-;
-;
-;Version - version of module
-;Note: it have to be number, so only numberic characters and none or one period
-;note: one line
-[version]
-0.3
-;
-;
-;RifE version - version of RifE for which is this module tested, checked, developed, etc
-;Note: it have to be number, so only numberic characters and none or one period
-;note: one line
-[rifeversion]
-1.1
-;
-;
-;Author - you
-;note: one line
+
+;This is you!
 [author]
 Wonderblunder
-;
-;
-;Short description - text showed in contect menu
-;note: one line
-[shortdesc]
-Adds the Kusekh, a moleman civilization
-;
-;
-;Description - text showed in message box
-;note: can be multiline
-[desc]
 
-Adds the molemen, chimeric experiments from the Age of Magic that escaped their creators and hid underground until the Age of Rebirth. Their units are slow, but they make up for it with improvements and promotions that allow them to immediately burrow to other locations.
+;Use this for versions of your own module. 1.0, 1.1, A, etc.
+[version]
+0.3
+
+;What version of AoE this module was last updated for. This template was introduced v387.
+;Refer to the SVN ver, or version.txt in the mod folder (assuming Black Imperator updated it...)
+[aoeversion]
+387
+
+;Use this to allow the user to sort by tags. Comma separated. Valid tags are:
+;Civ(N)      | Entirely new civs
+;Civ(E)      | When your module heavily edits a civ
+;Art         | Graphical packs and the like
+;Joke        | Meme and joke packs
+;Mech        | Mechanical system introduced or overhaul to one
+;Lead        | New leaders or content specifically tied to leaders
+;Bal         | Balance adjustments
+;Event       | Adds new or adjusts events
+[tags]
+Civ(N)
+
+;List any other modules you require as a dependency here.
+;Refer to the exact folder name of that module, NOT the [name] field!
+[dependency]
+
+;If this module should NOT be run alongside another (e.g. you both overhaul the same leader)
+;As dependency, use the exact folder name of that module, NOT the [name] field!
+[incompatible]
+
+;This shows up as a tooltip when the user mouses over it in the launcher.
+;Please keep it as short as possible, ideally even shorter than this line here.
+[shortdesc]
+Adds a race of genetically altered molemen who are able to dig tunnels and terraform the surface
+
+;Longer description to tell how awesome your stuff is.
+[desc]
+Adds the molemen, chimeric experiments from the Age of Magic that escaped their creators and hid underground until the Age of Rebirth to escape a shadow dragon. Their units are slow, but they make up for it with improvements and promotions that allow them to immediately burrow to other locations.
 
 Theme music is Amber Banneret (with Skeleton Mage) by Spellseer (used with their permission)
+
+See ArtCredits.txt for art sources/credits.
 
 V0.3
 - Added XML code for theme music (Amber Banneret (with Skeleton Mage) by Spellseer). A huge thank you to Spellseer and Skeleton Mage for giving me permission to use their music for this mod!
