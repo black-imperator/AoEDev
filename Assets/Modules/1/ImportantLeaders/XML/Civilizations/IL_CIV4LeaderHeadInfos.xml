@@ -2385,7 +2385,7 @@
 					<TraitType>TRAIT_EXPANSIVE</TraitType>
 					<bTrait>1</bTrait>
 				 </Trait>
-		</Traits>
+			</Traits>
 			<Flavors>
 				 <Flavor>
 					<FlavorType>FLAVOR_GOLD</FlavorType>
@@ -3422,7 +3422,7 @@
 			<FavoriteWonder>BUILDING_RIDE_OF_THE_NINE_KINGS</FavoriteWonder>
 			<PermanentTrait>NONE</PermanentTrait>
 		</LeaderHeadInfo>
-	<!--   <LeaderHeadInfo>			 Xivan 
+		<!--   <LeaderHeadInfo>			 Xivan 
             <Type>LEADER_XIVAN</Type>
             <Description>TXT_KEY_LEADER_XIVAN</Description>
             <Civilopedia>TXT_KEY_LEADER_XIVAN_PEDIA</Civilopedia>
@@ -6794,7 +6794,7 @@
 			<iSomniumAggressiveness>90</iSomniumAggressiveness>
 			<Alignment>ALIGNMENT_EVIL</Alignment>
 				<LeaderClass>LEADERCLASS_IMPORTANT</LeaderClass>
-		<iAlignmentModifier>-600</iAlignmentModifier>
+			<iAlignmentModifier>-600</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_CHAOTIC</EthicalAlignment>
 			<iEthicalAlignmentModifier>-680</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_PROPHECY_OF_RAGNAROK</FavoriteWonder>
@@ -7365,7 +7365,7 @@
 			<EthicalAlignment>ETHICAL_ALIGNMENT_CHAOTIC</EthicalAlignment>
 			<iEthicalAlignmentModifier>-680</iEthicalAlignmentModifier>
 				<LeaderClass>LEADERCLASS_IMPORTANT</LeaderClass>
-		<FavoriteWonder>BUILDING_PROPHECY_OF_RAGNAROK</FavoriteWonder>
+			<FavoriteWonder>BUILDING_PROPHECY_OF_RAGNAROK</FavoriteWonder>
 			<PermanentTrait>NONE</PermanentTrait>
 			<ReligionWeightModifiers>
 				 <ReligionWeightModifier>
@@ -7936,7 +7936,7 @@
 			<EthicalAlignment>ETHICAL_ALIGNMENT_CHAOTIC</EthicalAlignment>
 			<iEthicalAlignmentModifier>-680</iEthicalAlignmentModifier>
 				<LeaderClass>LEADERCLASS_IMPORTANT</LeaderClass>
-		<FavoriteWonder>BUILDING_PROPHECY_OF_RAGNAROK</FavoriteWonder>
+			<FavoriteWonder>BUILDING_PROPHECY_OF_RAGNAROK</FavoriteWonder>
 			<PermanentTrait>NONE</PermanentTrait>
 			<ReligionWeightModifiers>
 				 <ReligionWeightModifier>
@@ -10245,7 +10245,7 @@
 			<iAttitudeToMales>0</iAttitudeToMales>
 			<iSomniumAggressiveness>100</iSomniumAggressiveness>
 			<Alignment>ALIGNMENT_EVIL</Alignment>
-		<LeaderClass>LEADERCLASS_IMPORTANT</LeaderClass>
+			<LeaderClass>LEADERCLASS_IMPORTANT</LeaderClass>
 				<iAlignmentModifier>-300</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
 			<iEthicalAlignmentModifier>500</iEthicalAlignmentModifier>
@@ -10825,7 +10825,7 @@
 			<iAttitudeToMales>0</iAttitudeToMales>
 			<iSomniumAggressiveness>100</iSomniumAggressiveness>
 			<Alignment>ALIGNMENT_EVIL</Alignment>
-		<LeaderClass>LEADERCLASS_IMPORTANT</LeaderClass>
+			<LeaderClass>LEADERCLASS_IMPORTANT</LeaderClass>
 				<iAlignmentModifier>-300</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
 			<iEthicalAlignmentModifier>500</iEthicalAlignmentModifier>
@@ -12002,7 +12002,7 @@
 			<iSomniumAggressiveness>80</iSomniumAggressiveness>
 			<Alignment>ALIGNMENT_EVIL</Alignment>
 				<LeaderClass>LEADERCLASS_IMPORTANT</LeaderClass>
-		<iAlignmentModifier>-300</iAlignmentModifier>
+			<iAlignmentModifier>-300</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
 			<iEthicalAlignmentModifier>500</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_BONE_PALACE</FavoriteWonder>
@@ -12602,7 +12602,7 @@
 			<iSomniumAggressiveness>80</iSomniumAggressiveness>
 			<Alignment>ALIGNMENT_EVIL</Alignment>
 				<LeaderClass>LEADERCLASS_IMPORTANT</LeaderClass>
-		<iAlignmentModifier>-300</iAlignmentModifier>
+			<iAlignmentModifier>-300</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
 			<iEthicalAlignmentModifier>500</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_BONE_PALACE</FavoriteWonder>
@@ -13202,7 +13202,7 @@
 			<iSomniumAggressiveness>80</iSomniumAggressiveness>
 			<Alignment>ALIGNMENT_EVIL</Alignment>
 				<LeaderClass>LEADERCLASS_IMPORTANT</LeaderClass>
-		<iAlignmentModifier>-300</iAlignmentModifier>
+			<iAlignmentModifier>-300</iAlignmentModifier>
 			<EthicalAlignment>ETHICAL_ALIGNMENT_LAWFUL</EthicalAlignment>
 			<iEthicalAlignmentModifier>500</iEthicalAlignmentModifier>
 			<FavoriteWonder>BUILDING_BONE_PALACE</FavoriteWonder>
