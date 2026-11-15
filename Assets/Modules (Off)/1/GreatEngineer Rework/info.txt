@@ -34,6 +34,7 @@ Bal
 ;List any modules you support as a soft optional dependency that you want to be loaded after.
 ;Refer to the exact folder name of that module, NOT the [name] field!
 [dependency-soft]
+Dural
 
 ;List any modules you require as a HARD dependency here.
 ;Refer to the exact folder name of that module, NOT the [name] field!
