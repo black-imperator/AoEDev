@@ -47,8 +47,8 @@ public class MainForm : Form
     private string? _installIssueText;
 
     private const string GameNotFoundText =
-        "The game location couldn't be found. This usually means the mod folder isn't placed correctly " +
-        "-- restart the launcher to re-run the setup check.";
+        "The game location couldn't be found. This usually means the mod folder isn't placed correctly! " +
+        "Restart the launcher to re-run the setup check.";
 
     /// Every value the status indicator can show; the control is sized to fit the widest.
     private static readonly string[] StatusValues = { "Ready", "Install Error", "Module Issue", "Bad Order" };
@@ -1094,7 +1094,7 @@ public class MainForm : Form
     {
         var text = new StringBuilder();
         text.AppendLine("Some modules load before a module they depend on. Dependencies must load earlier: " +
-                        "Load #0 first, then 1, 2, 3, 4, and alphabetically by folder name within a Load #.");
+                        "Load 0 occurs first, then 1, 2, 3, 4, and alphabetically by folder name within a Load #.");
 
         if (analysis.HardOrderIssues.Count > 0)
         {
@@ -1290,7 +1290,7 @@ public class MainForm : Form
         if (plan.Moves.Count == 0)
         {
             ShowScrollableMessage("Autosort",
-                "Every active module's dependencies already load before it -- there is nothing for Autosort to change.");
+                "Every active module's dependencies already load before it, there's nothing to change! :)");
             return false;
         }
 
@@ -1299,8 +1299,7 @@ public class MainForm : Form
                            "dependencies (required and optional) load before it.");
         preview.AppendLine();
         preview.AppendLine("Only modules that need to move are changed, and only to a different Load #: nothing is " +
-                           "activated or deactivated, and inactive modules aren't touched. This is a simple automatic " +
-                           "method, so check the changes below make sense to you.");
+                           "activated or deactivated, and inactive modules aren't touched. The following changes will be made:");
         preview.AppendLine();
         foreach (var move in plan.Moves)
         {
@@ -1475,16 +1474,16 @@ public class MainForm : Form
     {
         var msg = @"    GENERAL
 - You can launch the game by the top center button; be aware it may take some time to activate
-- Active modules are shown on the left panel, and inactive modules on the right panel
-- The Open Civ4 Config button opens your Civ4 config .ini file in your default text editor
+- Modules are optional addons that can be activated or disabled by this manager, visibility toggled by the Manage Modules button
+- Active modules are shown on the left panel, and inactive modules on the right panel of the manager
+- The Open Civ4 Config button opens your Civ4 config .ini file in your default text editor, which contains useful parameters such as showing or hiding python exceptions
 - The Status readout under the Instructions button shows Ready (green), Install Error or Module Issue (red), or Bad Order (yellow); hover over it for details of what is wrong
-- The Manage Modules button shows or hides the module lists and preset tools; the launcher remembers your choice
 
     USING MODULES
 - Changing the status of a module simply makes this launcher move the game files for you; it can be done manually
-- You can either doubleclick a module to move which side it is on, or click and drag it across
+- You can either doubleclick a module to move which side it is on, or click and drag it (or a selection of multiple) across
 - Shift clicking a module with one already selected will select it and all modules between the two
-- Control-clicking a module will toggle the selection of that specific module
+- Control-clicking a module will toggle the selection of that specific module without changing selection of any others
 - The Refresh button will update the shown module list if you manually move files with the launcher open
 - The Filters section greys out modules by tag (from each module's [tags] entry in info.txt): click a tag's box to cycle it between empty (no filter), white (only show modules WITH that tag) and black (grey out modules WITH that tag); right-click clears it
 - Greyed-out modules move to the bottom of their list but are NOT removed: they stay active or inactive exactly as before, so check your filters before launching
@@ -1498,16 +1497,16 @@ public class MainForm : Form
 - Pressing the ""Save..."" button will give you the option to save the current selection as a preset
 - Pressing the Load Preset button will cause the currently selected preset in the dropdown box to be loaded
 - Presets remember each module's Load #, and loading one puts modules back in those Load #s
-- Delete will prompt you whether to delete the currently selected preset
+- Delete will prompt you whether to delete the currently selected preset (it will NOT delete your modules!)
 
     EXPORTING AND IMPORTING
 - Presets can be exported or imported, which is VERY USEFUL when you are reporting bugs on discord
 - The Import Preset button will prompt you to paste a preset code, and then save and load it
 - Export Preset will copy a code to your clipboard that you can use to send to others
-- If the Futureproof box is checked, the copied code will not be checked upon import for matching module versions
+- If the Futureproof box is checked, the copied code will not be checked upon import for matching module versions, only their presence
 
     UPDATING SCHEMAS (For module makers)
-- This button will attempt to *update*, not add, schema files for all modules. Please format your module correctly!";
+- This button will attempt to *update*, not add, schema files for all modules. The modules will need to be formatted correctly! Nonmatching schema paths will be flagged.";
 
         ShowScrollableMessage("Usage Guide", msg);
     }
@@ -1667,7 +1666,7 @@ public class MainForm : Form
 
         if (plan.ModuleReports.Count == 0)
         {
-            ShowScrollableMessage("Update Schemas", "Every schema file already matches the base mod -- nothing to update.");
+            ShowScrollableMessage("Update Schemas", "Every schema file already matches the base mod. Nothing to update!");
             return;
         }
 
@@ -1675,7 +1674,7 @@ public class MainForm : Form
         var modulesWithUpdates = plan.ModuleReports.Count(r => r.UpdatedCount > 0);
         preview.AppendLine($"This will update {plan.TotalPlannedUpdates} schema file(s) across {modulesWithUpdates} module(s).");
         if (plan.TotalErrors > 0)
-            preview.AppendLine($"{plan.TotalErrors} file(s) have no matching base schema and will be skipped -- see below.");
+            preview.AppendLine($"{plan.TotalErrors} file(s) have no matching base schema and will be skipped, see below:");
         preview.AppendLine();
 
         foreach (var m in plan.ModuleReports.OrderBy(m => m.ModuleName, StringComparer.OrdinalIgnoreCase))

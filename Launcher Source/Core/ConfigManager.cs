@@ -20,7 +20,7 @@ namespace AoELauncher.Core;
 /// extra dependencies, so it's the simpler fit here.
 public static class ConfigManager
 {
-    private const string FileName = "aoe_launcher_config.xml";
+    private const string FileName = "AoELauncherConfig.xml";
 
     private static readonly XmlSerializer Serializer = new(typeof(AppConfig));
 

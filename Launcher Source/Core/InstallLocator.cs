@@ -38,7 +38,7 @@ public static class InstallLocator
         {
             result.Errors.Add(
                 $"This folder is named \"{folderName}\", but it needs to be named exactly \"{ExpectedFolderName}\". " +
-                "Renaming the mod folder is known to cause other problems -- please rename it back and re-check.");
+                "Renaming the mod folder is known to cause other problems! Please rename it back and re-check.");
         }
 
         var modsDir = Directory.GetParent(modPath);
@@ -46,7 +46,7 @@ public static class InstallLocator
         {
             result.Errors.Add(
                 $"This folder's parent should be named \"{ModsFolderName}\", but found " +
-                $"\"{(modsDir?.Name ?? "(nothing -- this folder has no parent)")}\" instead.");
+                $"\"{(modsDir?.Name ?? "(nothing?!)")}\" instead.");
         }
 
         var btsDir = modsDir?.Parent;
@@ -60,10 +60,10 @@ public static class InstallLocator
 
         if (exePath == null)
         {
-            var btsDirDisplay = btsDir?.FullName ?? "(unknown -- couldn't walk up two levels)";
+            var btsDirDisplay = btsDir?.FullName ?? "(unknown, couldn't walk up two levels)";
             result.Errors.Add(
                 $"Couldn't find {BtsExeName} in the folder two levels up ({btsDirDisplay}). " +
-                "This is usually because the mod folder is nested one level too shallow -- for a Steam install it " +
+                "This is usually because the mod folder is nested one level too shallow. For a Steam install it " +
                 "should be at\n\"...Sid Meier's Civilization IV Beyond the Sword\\Beyond the Sword\\Mods\\Ashes of Erebus\",\n" +
                 "not\n\"...Sid Meier's Civilization IV Beyond the Sword\\Mods\\Ashes of Erebus\".");
         }
@@ -82,7 +82,7 @@ public static class InstallLocator
         if (!anyModuleFolder)
         {
             result.Errors.Add(
-                "This doesn't look like an Ashes of Erebus install -- missing " +
+                "This doesn't look like an Ashes of Erebus install. You seem to be missing " +
                 "the Load # folders (0-4) inside Assets\\Modules and Assets\\Modules (Off).");
         }
         else
