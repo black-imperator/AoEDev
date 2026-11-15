@@ -46,3 +46,4 @@ Someguys Wonders of Another Erebus adds world wonders from other fall from heave
 
 ;Longer description to tell how awesome your stuff is.
 [desc]
+Someguys Wonders of Another Erebus adds world wonders from other fall from heaven modmods

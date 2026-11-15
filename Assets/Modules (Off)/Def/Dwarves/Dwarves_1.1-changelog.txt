@@ -1,9 +1,0 @@
-Khazad, the Next Generation 1.1 - 29 June '18
-Updated for Ashes of Erebus r-321
-
-Khazad, the Next Generation 1.0 - 13 April '14
-Updated to work with Ashes of Erebus by Derf
-Removed the Brewery tile improvement
-Dwarven Engineers and Master Engineers now gain Metamagic II to aid with Wild/Feral Mana game options
-Khazad and Luchuirp now have the Stone Circle replacement for the Grove. It is identical, except it gives a +5% Hammers with Stone resource and allows for a free Craftsman.
-Removed all lines that refer to the Dural due to modular shenanigans. They'll be back if I can fix them.

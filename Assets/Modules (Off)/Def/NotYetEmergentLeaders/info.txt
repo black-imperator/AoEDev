@@ -46,3 +46,4 @@ Adds leaders who were planned to use the Emergent system but aren't finalized ye
 
 ;Longer description to tell how awesome your stuff is.
 [desc]
+Adds leaders who were planned to use the Emergent system but aren't finalized yet

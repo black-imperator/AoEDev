@@ -46,4 +46,5 @@ Adds a fallow ice-demon terraforming civ that shares the Illians' rituals
 
 ;Longer description to tell how awesome your stuff is.
 [desc]
+Adds a fallow ice-demon terraforming civ that shares the Illians' rituals
 

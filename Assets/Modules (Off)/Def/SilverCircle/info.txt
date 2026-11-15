@@ -46,3 +46,4 @@ Adds a wonder which bolsters gold and science; enables the circle city to produc
 
 ;Longer description to tell how awesome your stuff is.
 [desc]
+Adds a wonder which bolsters gold and science; enables the circle city to produce alchemists

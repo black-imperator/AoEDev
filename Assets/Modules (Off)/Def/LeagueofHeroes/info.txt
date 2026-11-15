@@ -46,3 +46,4 @@ Gives every unit the hero promotion
 
 ;Longer description to tell how awesome your stuff is.
 [desc]
+Gives every unit the hero promotion
