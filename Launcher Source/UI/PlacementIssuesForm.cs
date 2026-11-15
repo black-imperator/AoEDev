@@ -1,3 +1,4 @@
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace AoELauncher.UI;
@@ -16,8 +17,7 @@ public class PlacementIssuesForm : Form
     public PlacementIssuesForm(string message)
     {
         Text = "Setup Check";
-        Width = 580;
-        Height = 430;
+        ClientSize = new Size(Theme.S(580), Theme.S(430));
         StartPosition = FormStartPosition.CenterParent;
         FormBorderStyle = FormBorderStyle.FixedDialog;
         MaximizeBox = false;
@@ -26,17 +26,17 @@ public class PlacementIssuesForm : Form
 
         var box = new ReadOnlySelectableTextBox
         {
-            Left = 12, Top = 12, Width = 540, Height = 280,
+            Left = Theme.S(12), Top = Theme.S(12), Width = Theme.S(540), Height = Theme.S(300),
             ScrollBars = ScrollBars.Vertical,
             Text = message,
         };
         Theme.StyleTextBox(box);
         Controls.Add(box);
 
-        var buttonsTop = box.Bottom + 16;
-        var btnRecheck = new FlatButton { Text = "Re-check", Left = 12, Top = buttonsTop, Width = 140, Height = Theme.ButtonHeight };
-        var btnContinue = new FlatButton { Text = "Continue Anyway", Left = 160, Top = buttonsTop, Width = 160, Height = Theme.ButtonHeight };
-        var btnQuit = new FlatButton { Text = "Quit", Left = 428, Top = buttonsTop, Width = 124, Height = Theme.ButtonHeight };
+        var buttonsTop = box.Bottom + Theme.S(16);
+        var btnRecheck = new FlatButton { Text = "Re-check", Left = Theme.S(12), Top = buttonsTop, Width = Theme.S(150), Height = Theme.ButtonHeight };
+        var btnContinue = new FlatButton { Text = "Continue Anyway", Left = Theme.S(172), Top = buttonsTop, Width = Theme.S(190), Height = Theme.ButtonHeight };
+        var btnQuit = new FlatButton { Text = "Quit", Left = Theme.S(428), Top = buttonsTop, Width = Theme.S(124), Height = Theme.ButtonHeight };
         Theme.StyleButton(btnRecheck, primary: true);
         Theme.StyleButton(btnContinue);
         Theme.StyleButton(btnQuit);
@@ -50,6 +50,6 @@ public class PlacementIssuesForm : Form
         Controls.Add(btnQuit);
         CancelButton = btnQuit;
 
-        Height = buttonsTop + Theme.ButtonHeight + 60; // guarantee enough room below the buttons, regardless of DPI/title-bar quirks
+        ClientSize = new Size(ClientSize.Width, buttonsTop + Theme.ButtonHeight + Theme.S(16));
     }
 }

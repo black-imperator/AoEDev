@@ -29,8 +29,12 @@ public class ModuleInfo
     public string Author { get; set; } = "";
     public List<string> Compatible { get; set; } = new();
 
-    /// Folder names of the modules that must be active and load before this one (from [dependency]).
+    /// Folder names of the modules that must be active and load before this one (from [dependency-hard])
     public List<string> Dependencies { get; set; } = new();
+
+    /// Folder names of modules this one supports but does not require (from [dependency-soft]). They
+    /// don't have to be active, but if they are, they should load before this module.
+    public List<string> SoftDependencies { get; set; } = new();
 
     /// Folder names of the modules that must not be active at the same time as this one (from [incompatible]).
     public List<string> Incompatible { get; set; } = new();

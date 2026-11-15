@@ -32,6 +32,33 @@ public class ModuleGridView : DataGridView
     private bool _deferredSingleSelectPending;
     private int _deferredRowIndex = -1;
 
+    // --- Module|Author divider ---------------------------------------------------------------
+    // The grid's built-in column resizing only applies the new width when the mouse is released
+    // (and treats a divider as belonging to the column on its left), so the one adjustable divider
+    // -- between the Name and Author columns -- is handled here instead: the header is hit-tested
+    // near that boundary, and while the button is held the desired Name width is reported on every
+    // mouse move so the owner can update the layout live.
+
+    private bool _dividerDragging;
+    private int _dividerDragStartX;
+    private int _dividerDragStartWidth;
+
+    /// Raised on every mouse move while the divider is dragged, with the Name column width the
+    /// drag is asking for (the owner decides what that means and may clamp it).
+    public event EventHandler<int>? DividerDragged;
+
+    /// Raised once when the divider drag ends.
+    public event EventHandler? DividerDragEnded;
+
+    private bool IsOnDivider(int x, int y)
+    {
+        if (y < 0 || y >= ColumnHeadersHeight || Columns.Count == 0) return false;
+        var name = Columns["Name"];
+        if (name == null || !name.Visible) return false;
+        var right = GetColumnDisplayRectangle(name.Index, false).Right;
+        return Math.Abs(x - right) <= Theme.S(4);
+    }
+
     /// Raised once the mouse has moved far enough (from a valid row, held button) to start a drag-drop gesture.
     public event EventHandler? DragThresholdReached;
 
@@ -61,6 +88,7 @@ public class ModuleGridView : DataGridView
     public ModuleGridView()
     {
         ShowCellToolTips = false;
+        Theme.StyleToolTip(_cellToolTip, Theme.S(420), () => _tipText);
 
         // DataGridView doesn't double-buffer by default; without it, resizing the window repaints
         // every visible cell straight to the screen and stutters badly.
@@ -104,7 +132,7 @@ public class ModuleGridView : DataGridView
         if (text.Length == 0)
             _cellToolTip.Hide(this);
         else
-            _cellToolTip.Show(text, this, pt.X + 16, pt.Y + 20, ToolTipDurationMs);
+            _cellToolTip.Show(text, this, pt.X + Theme.S(16), pt.Y + Theme.S(20), ToolTipDurationMs);
     }
 
     private void ResetCellToolTip()
@@ -164,6 +192,15 @@ public class ModuleGridView : DataGridView
 
         if (IsHandleCreated) _cellToolTip.Hide(this); // hidden on click; returns when the cursor enters another cell
 
+        if (e.Button == MouseButtons.Left && IsOnDivider(e.X, e.Y))
+        {
+            _dividerDragging = true;
+            _dividerDragStartX = e.X;
+            _dividerDragStartWidth = Columns["Name"]!.Width;
+            Capture = true;
+            return; // not a header click (sort) or selection change
+        }
+
         var hit = HitTest(e.X, e.Y);
         var infoCol = Columns["Info"];
         bool onInfoButton = infoCol != null && hit.ColumnIndex == infoCol.Index;
@@ -190,6 +227,15 @@ public class ModuleGridView : DataGridView
 
     protected override void OnMouseMove(MouseEventArgs e)
     {
+        if (_dividerDragging)
+        {
+            DividerDragged?.Invoke(this, _dividerDragStartWidth + e.X - _dividerDragStartX);
+            return;
+        }
+
+        var wantCursor = e.Button == MouseButtons.None && IsOnDivider(e.X, e.Y) ? Cursors.VSplit : Cursors.Default;
+        if (Cursor != wantCursor) Cursor = wantCursor;
+
         if (_dragArmed && e.Button == MouseButtons.Left)
         {
             if (Math.Abs(e.X - _dragStart.X) >= SystemInformation.DragSize.Width ||
@@ -206,6 +252,14 @@ public class ModuleGridView : DataGridView
 
     protected override void OnMouseUp(MouseEventArgs e)
     {
+        if (_dividerDragging)
+        {
+            _dividerDragging = false;
+            Capture = false;
+            DividerDragEnded?.Invoke(this, EventArgs.Empty);
+            return;
+        }
+
         if (_dragArmed && _deferredSingleSelectPending &&
             _deferredRowIndex >= 0 && _deferredRowIndex < Rows.Count)
         {

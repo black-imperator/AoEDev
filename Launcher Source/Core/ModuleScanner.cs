@@ -13,7 +13,7 @@ public static class ModuleScanner
 {
     private static readonly char[] TagSeparators = { ',', ';', '|', ' ', '\t', '\r', '\n' };
 
-    private static readonly Regex SectionHeader = new(@"^\[(\w+)\]$", RegexOptions.Compiled);
+    private static readonly Regex SectionHeader = new(@"^\[([\w-]+)\]$", RegexOptions.Compiled);
 
     /// Scans every load-pass folder (Def and Seq\1..4, see ModuleLayout) on both the
     /// active and inactive side and returns every module found, with everything parsed out of
@@ -52,7 +52,8 @@ public static class ModuleScanner
     ///   [section]
     ///   value line(s) until the next [section] or end of file
     /// [desc] may be multi-line (including blank lines for paragraph breaks);
-    /// [dependency] and [incompatible] are comma-separated lists of module folder names;
+    /// [dependency-hard], [dependency-soft] and [incompatible] are
+    /// comma-separated lists of module folder names; section names may contain hyphens;
     /// everything else is treated as a single line.
     private static ModuleInfo ReadInfo(string moduleDir)
     {
@@ -97,7 +98,14 @@ public static class ModuleScanner
                             .Where(s => s.Length > 0)
                             .ToList();
                         break;
-                    case "dependency": info.Dependencies = SplitNames(text); break;
+                    case "dependency-hard":
+                        info.Dependencies = info.Dependencies.Concat(SplitNames(text))
+                            .Distinct(StringComparer.OrdinalIgnoreCase).ToList();
+                        break;
+                    case "dependency-soft":
+                        info.SoftDependencies = info.SoftDependencies.Concat(SplitNames(text))
+                            .Distinct(StringComparer.OrdinalIgnoreCase).ToList();
+                        break;
                     case "incompatible": info.Incompatible = SplitNames(text); break;
                 }
             }

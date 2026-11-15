@@ -58,6 +58,10 @@ public class AppConfig
     /// a fixed height, so only the expanded height is worth remembering); 0 means "use the default".
     public int WindowClientHeight { get; set; }
 
+    /// Width in pixels of the Author column (kept identical in the active and inactive lists, and
+    /// adjusted by dragging the Module|Author divider); 0 means "use the default width".
+    public int AuthorColumnWidth { get; set; }
+
     /// Whether the window was maximized (only possible while the module section is shown).
     public bool WindowMaximized { get; set; }
 }

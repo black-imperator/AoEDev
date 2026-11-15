@@ -43,18 +43,40 @@ public class MainForm : Form
     private Panel _bottomPanel = null!;
     private Panel _filterPanel = null!;
     private readonly List<TagFilterBox> _filterBoxes = new();
-    private readonly ToolTip _filterToolTip = new();
+    private readonly ToolTip _filterToolTip = CreateStyledToolTip();
 
-    /// The tags that get a filter box, in display order. Add a name here to add a filter.
-    private static readonly string[] FilterTags = { "Civ(N)", "Civ(E)", "Art", "Joke", "Mech", "Lead", "Bal", "Event" };
+    private static ToolTip CreateStyledToolTip()
+    {
+        var tip = new ToolTip();
+        Theme.StyleToolTip(tip);
+        return tip;
+    }
+
+    /// The tags that get a filter box, in display order: the tag exactly as written in info.txt's
+    /// [tags] entry, and the label shown to the user. Add a pair here to add a filter.
+    private static readonly (string Tag, string Label)[] FilterTags =
+    {
+        ("Civ(N)", "Civ (New)"), ("Civ(E)", "Civ (Edit)"), ("Art", "Art"), ("Joke", "Joke"),
+        ("Mech", "Mechanics"), ("Lead", "Leader"), ("Bal", "Balance"), ("Event", "Event"),
+    };
 
     /// Height of the filter section: heading row, filter box row, and room for the separator line.
-    private const int FilterPanelHeight = 72;
+    private static readonly int FilterPanelHeight = Theme.S(62);
     private Panel _statusPanel = null!;
     private Button btnManage = null!;
 
-    private const int MinFormWidth = 900;
-    private const int ExpandedMinHeight = 560;
+    private const string FutureproofText = "Futureproof (omit version, skip change checks)";
+    private const int FutureproofLeft = 330; // unscaled; the checkbox's left edge in the bottom panel
+
+    /// Checkbox width sized from its text (plus the box glyph), not a hardcoded value.
+    private static readonly int FutureproofWidth =
+        TextRenderer.MeasureText(FutureproofText, Theme.BodyFont).Width + Theme.S(28);
+
+    /// Wide enough that the Futureproof checkbox, the right-aligned Dev button (190 wide) and their
+    /// margins always fit side by side, so they can never overlap (24 allows for the window frame).
+    private static readonly int MinFormWidth = Math.Max(
+        Theme.S(900), Theme.S(FutureproofLeft) + FutureproofWidth + Theme.S(8) + Theme.S(190) + Theme.S(12) + Theme.S(24));
+    private static readonly int ExpandedMinHeight = Theme.S(480);
 
     /// Client height to restore when the module section is revealed. Starts as the saved (or
     /// default) height, and follows the user's resizing while the module section is shown.
@@ -74,8 +96,11 @@ public class MainForm : Form
     public MainForm()
     {
         Text = "Ashes of Erebus Launcher";
-        Width = 1200;
-        Height = 700;
+        AutoScaleMode = AutoScaleMode.None;
+        Font = Theme.BodyFont; // set first: everything built later inherits it, and measurements below depend on it
+        var screenArea = Screen.PrimaryScreen?.WorkingArea ?? new Rectangle(0, 0, 1920, 1080);
+        Width = Math.Min(Theme.S(1200), screenArea.Width);
+        Height = Math.Min(Theme.S(700), screenArea.Height);
         StartPosition = FormStartPosition.CenterScreen;
         MinimumSize = new Size(MinFormWidth, ExpandedMinHeight);
         _expandedClientHeight = ClientSize.Height;
@@ -214,27 +239,27 @@ public class MainForm : Form
 
     private void BuildUi()
     {
-        var topPanel = new BufferedPanel { Dock = DockStyle.Top, Height = 130 };
+        var topPanel = new BufferedPanel { Dock = DockStyle.Top, Height = Theme.S(124) };
         Theme.StyleContainer(topPanel);
         _topPanel = topPanel;
 
         btnLaunch = new FlatButton
         {
             Text = "Launch Ashes of Erebus",
-            Width = 480,
-            Height = 72,
-            Top = 14,
-            Font = new Font(Font.FontFamily, Font.Size * 2f, FontStyle.Bold),
+            Width = Theme.S(440),
+            Height = Theme.S(66),
+            Top = Theme.S(10),
+            Font = Theme.HeadingFont(1.75f),
         };
         Theme.StyleButton(btnLaunch, primary: true);
         btnLaunch.Click += (s, e) => LaunchGame();
 
-        var btnCiv4Config = new FlatButton { Text = "Open Civ4 Config", Width = 150, Height = Theme.ButtonHeight, Top = 13 };
+        var btnCiv4Config = new FlatButton { Text = "Open Civ4 Config", Width = Theme.S(165), Height = Theme.ButtonHeight, Top = Theme.S(10) };
         Theme.StyleButton(btnCiv4Config);
         btnCiv4Config.Click += (s, e) => OpenCiv4Config();
 
         // Toggles the module lists + preset tools; centered on its own row beneath Launch.
-        btnManage = new FlatButton { Text = "Manage Modules", Width = 150, Height = Theme.ButtonHeight, Top = 92 };
+        btnManage = new FlatButton { Text = "Manage Modules", Width = Theme.S(165), Height = Theme.ButtonHeight, Top = Theme.S(10) + Theme.S(66) + Theme.S(8) };
         Theme.StyleButton(btnManage);
         btnManage.Click += (s, e) =>
         {
@@ -249,15 +274,16 @@ public class MainForm : Form
         chkCloseOnLaunch = new CheckBox
         {
             Text = "Close on launch?",
-            Top = 50,
-            Height = 22,
+            Top = Theme.S(10) + Theme.ButtonHeight + Theme.S(12),
+            Height = Theme.BodyFont.Height + Theme.S(8),
+            Font = Theme.BodyFont,
         };
-        chkCloseOnLaunch.Width = TextRenderer.MeasureText(chkCloseOnLaunch.Text, chkCloseOnLaunch.Font).Width + 24;
+        chkCloseOnLaunch.Width = TextRenderer.MeasureText(chkCloseOnLaunch.Text, chkCloseOnLaunch.Font).Width + Theme.S(28);
         Theme.StyleCheckBox(chkCloseOnLaunch);
         // The CheckedChanged handler (which saves the setting) is attached in MainForm_Load,
         // after the saved value has been applied, so loading the config doesn't trigger a save.
 
-        var btnHelp = new FlatButton { Text = "Instructions", Left = 12, Top = 13, Width = 130, Height = Theme.ButtonHeight };
+        var btnHelp = new FlatButton { Text = "Instructions", Left = Theme.S(12), Top = Theme.S(10), Width = Theme.S(135), Height = Theme.ButtonHeight };
         Theme.StyleButton(btnHelp);
         btnHelp.Click += (s, e) => ShowHelp();
 
@@ -270,8 +296,8 @@ public class MainForm : Form
         {
             btnLaunch.Left = (topPanel.Width - btnLaunch.Width) / 2;
             btnManage.Left = (topPanel.Width - btnManage.Width) / 2;
-            btnCiv4Config.Left = topPanel.Width - btnCiv4Config.Width - 12;
-            chkCloseOnLaunch.Left = topPanel.Width - chkCloseOnLaunch.Width - 12;
+            btnCiv4Config.Left = topPanel.Width - btnCiv4Config.Width - Theme.S(12);
+            chkCloseOnLaunch.Left = topPanel.Width - chkCloseOnLaunch.Width - Theme.S(12);
         };
 
         _splitContainer = new BufferedSplitContainer
@@ -279,7 +305,7 @@ public class MainForm : Form
             Dock = DockStyle.Fill,
             Orientation = Orientation.Vertical,
             IsSplitterFixed = true, // panes are always an even 50/50 split -- no draggable divider
-            SplitterWidth = 3,
+            SplitterWidth = Theme.S(3),
         };
         Theme.StyleContainer(_splitContainer);
         _splitContainer.Resize += (s, e) => CenterSplitter();
@@ -293,6 +319,10 @@ public class MainForm : Form
         Theme.StyleContainer(inactiveGroup);
         dgvInactive = CreateModuleGrid();
         inactiveGroup.Controls.Add(dgvInactive);
+
+        foreach (var g in new[] { dgvActive, dgvInactive }) WireColumnLayout(g);
+        if (_config.AuthorColumnWidth > 0)
+            SetAuthorWidth(Math.Max(MinAuthorWidth, _config.AuthorColumnWidth), fromUser: false);
 
         _splitContainer.Panel1.Controls.Add(activeGroup);
         _splitContainer.Panel2.Controls.Add(inactiveGroup);
@@ -309,10 +339,10 @@ public class MainForm : Form
             Text = "Filters:",
             AutoSize = false,
             TextAlign = ContentAlignment.MiddleCenter,
-            Font = new Font(Font.FontFamily, Font.Size * 1.3f, FontStyle.Bold),
+            Font = Theme.HeadingFont(1.15f),
         };
-        lblFilters.Width = TextRenderer.MeasureText(lblFilters.Text, lblFilters.Font).Width + 12;
-        lblFilters.Height = lblFilters.Font.Height + 6;
+        lblFilters.Width = TextRenderer.MeasureText(lblFilters.Text, lblFilters.Font).Width + Theme.S(12);
+        lblFilters.Height = lblFilters.Font.Height + Theme.S(4);
         Theme.StyleLabel(lblFilters);
         filterPanel.Controls.Add(lblFilters);
 
@@ -320,28 +350,29 @@ public class MainForm : Form
             "Click a tag's box to cycle it: empty = no filter, white = only show modules WITH the tag, " +
             "black = grey out modules WITH the tag. Right-click a box to clear it.\n" +
             "Greyed-out modules are moved to the bottom of their list but are still active/inactive as before.");
-        foreach (var tag in FilterTags)
+        foreach (var (tag, label) in FilterTags)
         {
-            var box = new TagFilterBox { Text = tag };
+            // Text is the label shown to the user; Tag keeps the info.txt token used for matching.
+            var box = new TagFilterBox { Text = label, Tag = tag, Font = Theme.BodyFont };
             box.FitToText();
             box.StateChanged += (s, e) => OnFilterChanged();
             _filterToolTip.SetToolTip(box,
-                $"{tag}: click to cycle (empty = no filter, white = only {tag} modules, black = hide {tag} modules). Right-click to clear.");
+                $"{label}: click to cycle (empty = no filter, white = only {label} modules, black = hide {label} modules). Right-click to clear.");
             _filterBoxes.Add(box);
             filterPanel.Controls.Add(box);
         }
 
         void LayoutFilterRow()
         {
-            const int spacing = 20;
-            const int topPad = 6;
+            int spacing = Theme.S(20);
+            int topPad = Theme.S(4);
 
             lblFilters.Left = (filterPanel.Width - lblFilters.Width) / 2;
             lblFilters.Top = topPad;
 
             var total = _filterBoxes.Sum(c => c.Width) + spacing * (_filterBoxes.Count - 1);
             var x = Math.Max(0, (filterPanel.Width - total) / 2);
-            var boxesTop = lblFilters.Bottom + 2;
+            var boxesTop = lblFilters.Bottom + Theme.S(2);
             foreach (var c in _filterBoxes)
             {
                 c.Left = x;
@@ -355,20 +386,20 @@ public class MainForm : Form
         {
             using var pen = new Pen(Theme.GridLine);
             var y = filterPanel.Height - 2;
-            e.Graphics.DrawLine(pen, 12, y, filterPanel.Width - 12, y);
+            e.Graphics.DrawLine(pen, Theme.S(12), y, filterPanel.Width - Theme.S(12), y);
         };
         LayoutFilterRow();
 
-        var bottomPanel = new BufferedPanel { Dock = DockStyle.Bottom, Height = 88 };
+        var bottomPanel = new BufferedPanel { Dock = DockStyle.Bottom, Height = Theme.S(8) + Theme.ButtonHeight + Theme.S(8) + Theme.ButtonHeight + Theme.S(8) };
         Theme.StyleContainer(bottomPanel);
         _bottomPanel = bottomPanel;
 
         // Row 1: preset save/load/delete, with the dev action right-aligned on the same line
-        var btnSave = new FlatButton { Text = "Save Active Modules As New Preset", Left = 12, Top = 8, Width = 250, Height = Theme.ButtonHeight };
-        cmbPresets = new ComboBox { Left = 270, Top = 11, Width = 170, DropDownStyle = ComboBoxStyle.DropDownList };
-        var btnLoad = new FlatButton { Text = "Load Preset", Left = 448, Top = 8, Width = 110, Height = Theme.ButtonHeight };
-        var btnDelete = new FlatButton { Text = "Delete", Left = 566, Top = 8, Width = 80, Height = Theme.ButtonHeight };
-        var btnRefresh = new FlatButton { Text = "Refresh", Top = 8, Width = 90, Height = Theme.ButtonHeight };
+        var btnSave = new FlatButton { Text = "Save Active Modules As New Preset", Left = Theme.S(12), Top = Theme.S(8), Width = Theme.S(285), Height = Theme.ButtonHeight };
+        cmbPresets = new ComboBox { Left = Theme.S(305), Top = Theme.S(8) + (Theme.ButtonHeight - (Theme.BodyFont.Height + Theme.S(6))) / 2, Width = Theme.S(190), DropDownStyle = ComboBoxStyle.DropDownList };
+        var btnLoad = new FlatButton { Text = "Load Preset", Left = Theme.S(503), Top = Theme.S(8), Width = Theme.S(125), Height = Theme.ButtonHeight };
+        var btnDelete = new FlatButton { Text = "Delete", Left = Theme.S(636), Top = Theme.S(8), Width = Theme.S(90), Height = Theme.ButtonHeight };
+        var btnRefresh = new FlatButton { Text = "Refresh", Top = Theme.S(8), Width = Theme.S(100), Height = Theme.ButtonHeight };
         Theme.StyleButton(btnSave);
         Theme.StyleComboBox(cmbPresets);
         Theme.StyleButton(btnLoad);
@@ -377,14 +408,16 @@ public class MainForm : Form
         btnRefresh.Click += (s, e) => RefreshModules();
 
         // Row 2: import (left) / export (right)
-        var btnImport = new FlatButton { Text = "Import Preset", Left = 12, Top = 44, Width = 135, Height = Theme.ButtonHeight };
-        var btnExport = new FlatButton { Text = "Export Preset", Left = 155, Top = 44, Width = 135, Height = Theme.ButtonHeight };
+        var btnImport = new FlatButton { Text = "Import Preset", Left = Theme.S(12), Top = Theme.S(8) + Theme.ButtonHeight + Theme.S(8), Width = Theme.S(150), Height = Theme.ButtonHeight };
+        var btnExport = new FlatButton { Text = "Export Preset", Left = Theme.S(170), Top = Theme.S(8) + Theme.ButtonHeight + Theme.S(8), Width = Theme.S(150), Height = Theme.ButtonHeight };
         chkFutureproof = new CheckBox
         {
-            Text = "Futureproof (omit version, skip change checks)",
-            Left = 298, Top = 48, Width = 340,
+            Text = FutureproofText,
+            AutoSize = false,
+            Font = Theme.BodyFont,
+            Left = Theme.S(FutureproofLeft), Top = Theme.S(8) + Theme.ButtonHeight + Theme.S(8) + (Theme.ButtonHeight - (Theme.BodyFont.Height + Theme.S(8))) / 2, Height = Theme.BodyFont.Height + Theme.S(8), Width = FutureproofWidth,
         };
-        var btnDevSchemas = new FlatButton { Text = "Dev: Update Schemas", Top = 44, Width = 170, Height = Theme.ButtonHeight };
+        var btnDevSchemas = new FlatButton { Text = "Dev: Update Schemas", Top = Theme.S(8) + Theme.ButtonHeight + Theme.S(8), Width = Theme.S(190), Height = Theme.ButtonHeight };
         Theme.StyleButton(btnImport);
         Theme.StyleCheckBox(chkFutureproof);
         Theme.StyleButton(btnExport);
@@ -401,11 +434,17 @@ public class MainForm : Form
         {
             btnSave, cmbPresets, btnLoad, btnDelete, btnRefresh, btnImport, btnExport, chkFutureproof, btnDevSchemas
         });
-        bottomPanel.Resize += (s, e) => { btnRefresh.Left = bottomPanel.Width - btnRefresh.Width - 12; };
-        bottomPanel.Resize += (s, e) => { btnDevSchemas.Left = bottomPanel.Width - btnDevSchemas.Width - 12; };
+        bottomPanel.Resize += (s, e) => { btnRefresh.Left = bottomPanel.Width - btnRefresh.Width - Theme.S(12); };
+        bottomPanel.Resize += (s, e) =>
+        {
+            btnDevSchemas.Left = bottomPanel.Width - btnDevSchemas.Width - Theme.S(12);
+            // Safety net: never let the checkbox (and its background) extend under the Dev button.
+            chkFutureproof.Width = Math.Max(Theme.S(60),
+                Math.Min(FutureproofWidth, btnDevSchemas.Left - chkFutureproof.Left - Theme.S(8)));
+        };
 
         // Status bar: status text fills the left, launcher version sits at the right.
-        var statusPanel = new BufferedPanel { Dock = DockStyle.Bottom, Height = 26 };
+        var statusPanel = new BufferedPanel { Dock = DockStyle.Bottom, Height = Theme.BodyFont.Height + Theme.S(12) };
         Theme.StyleContainer(statusPanel);
         _statusPanel = statusPanel;
 
@@ -413,7 +452,7 @@ public class MainForm : Form
         {
             Dock = DockStyle.Fill,
             TextAlign = ContentAlignment.MiddleLeft,
-            Padding = new Padding(10, 0, 0, 0),
+            Padding = new Padding(Theme.S(10), 0, 0, 0),
             Text = "",
         };
         Theme.StyleLabel(lblStatus, muted: true);
@@ -424,7 +463,7 @@ public class MainForm : Form
             Dock = DockStyle.Right,
             AutoSize = true,
             TextAlign = ContentAlignment.MiddleRight,
-            Padding = new Padding(0, 0, 10, 0),
+            Padding = new Padding(0, 0, Theme.S(10), 0),
             Text = $"Launcher v{LauncherVersion}",
         };
         Theme.StyleLabel(lblLauncherVersion, muted: true);
@@ -549,26 +588,46 @@ public class MainForm : Form
             BorderStyle = BorderStyle.None,
             CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal,
             ShowCellToolTips = false, // ModuleGridView draws its own tooltips (see ModuleGridView)
+            Font = Theme.BodyFont,
         };
         Theme.StyleGrid(grid);
+        grid.ColumnHeadersHeight = Theme.BodyFont.Height + Theme.S(14);
+        grid.RowTemplate.Height = Theme.BodyFont.Height + Theme.S(10);
 
         var nameCol = new DataGridViewTextBoxColumn
         {
             Name = "Name", HeaderText = "Module",
-            AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill,
+            // Sized by FitNameColumn (fills whatever the other columns leave) rather than the
+            // built-in Fill mode, so that dragging the Module|Author divider can be turned into an
+            // Author width change that is mirrored in both lists.
+            AutoSizeMode = DataGridViewAutoSizeColumnMode.None,
+            Width = Theme.S(200),
+            MinimumWidth = MinNameWidth,
+            Resizable = DataGridViewTriState.False, // the divider is dragged via ModuleGridView.DividerDragged
+        };
+
+        var authorCol = new DataGridViewTextBoxColumn
+        {
+            Name = "Author", HeaderText = "Author",
+            AutoSizeMode = DataGridViewAutoSizeColumnMode.None,
+            Width = DefaultAuthorWidth,
+            MinimumWidth = MinAuthorWidth,
             Resizable = DataGridViewTriState.False,
         };
 
-        // Fixed-width, non-resizable text column; centered ones also center their header.
-        static DataGridViewTextBoxColumn FixedCol(string name, string header, int width, bool centered = false)
+        // Fixed-width, non-resizable column whose width is derived from its header text (and any
+        // sample content that must fit) in the grid's own font, plus a little padding -- and room
+        // for the sort arrow when the column is sortable.
+        DataGridViewTextBoxColumn FittedCol(string name, string header, bool sortable, bool centered = false, string sample = "")
         {
             var col = new DataGridViewTextBoxColumn
             {
                 Name = name, HeaderText = header,
                 AutoSizeMode = DataGridViewAutoSizeColumnMode.None,
-                Width = width,
                 Resizable = DataGridViewTriState.False,
+                SortMode = sortable ? DataGridViewColumnSortMode.Automatic : DataGridViewColumnSortMode.NotSortable,
             };
+            col.Width = FittedWidth(grid, header, sample, sortable);
             if (centered)
             {
                 col.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
@@ -582,20 +641,169 @@ public class MainForm : Form
             Name = "Info",
             HeaderText = "Info",
             AutoSizeMode = DataGridViewAutoSizeColumnMode.None,
-            Width = 32,
             Resizable = DataGridViewTriState.False,
+            SortMode = DataGridViewColumnSortMode.NotSortable,
             FlatStyle = FlatStyle.Flat,
         };
+        infoCol.Width = FittedWidth(grid, "Info", "i", sortable: false);
 
         // Module | Author | Version | AoE Rev | Loadpass | Info
+        // Version is deliberately not sortable; AoE Rev and Loadpass are (see OnGridSortCompare).
         grid.Columns.AddRange(
             nameCol,
-            FixedCol("Author", "Author", 110),
-            FixedCol("Version", "Version", 64),
-            FixedCol("AoERev", "AoE Rev", 66),
-            FixedCol("LoadPass", "Loadpass", 70, centered: true),
+            authorCol,
+            FittedCol("Version", "Version", sortable: false),
+            FittedCol("AoERev", "AoE Rev", sortable: true),
+            FittedCol("LoadPass", "Loadpass", sortable: true, centered: true, sample: "Default"),
             infoCol);
         return grid;
+    }
+
+    // ------------------------------------------------------- Grid columns ---
+
+    private static readonly int DefaultAuthorWidth = Theme.S(60);
+    private static readonly int MinAuthorWidth = Theme.S(40);
+    private static readonly int MinNameWidth = Theme.S(100);
+
+    /// True while the code itself is changing column widths, so those changes aren't mistaken
+    /// for the user dragging a divider.
+    private bool _columnLayoutBusy;
+
+    /// The Author width changed by user dragging and hasn't been written to the config file yet.
+    private bool _authorWidthDirty;
+
+    /// Width that exactly fits a header (and optional sample cell text) in the grid's fonts, with
+    /// small padding, plus room for the sort arrow if the column is sortable.
+    private static int FittedWidth(DataGridView grid, string header, string sample, bool sortable)
+    {
+        const TextFormatFlags flags = TextFormatFlags.NoPadding | TextFormatFlags.SingleLine;
+        var headerFont = grid.ColumnHeadersDefaultCellStyle.Font ?? grid.Font;
+        var cellFont = grid.DefaultCellStyle.Font ?? grid.Font;
+
+        var width = TextRenderer.MeasureText(header, headerFont, Size.Empty, flags).Width;
+        if (sortable) width += Theme.S(6); // the sort glyph is drawn at the right of the header text
+        if (sample.Length > 0)
+            width = Math.Max(width, TextRenderer.MeasureText(sample, cellFont, Size.Empty, flags).Width);
+        return width + Theme.S(4); // cell padding and borders
+    }
+
+    /// Hooks a grid up to the column behaviour: keeping the Module column filling the remaining
+    /// width, turning divider drags into a synchronized Author width, and custom sort orders.
+    private void WireColumnLayout(ModuleGridView grid)
+    {
+        grid.SizeChanged += (s, e) => FitNameColumn(grid);
+        grid.RowsAdded += (s, e) => FitNameColumn(grid);
+        grid.RowsRemoved += (s, e) => FitNameColumn(grid);
+        var vScroll = grid.Controls.OfType<VScrollBar>().FirstOrDefault();
+        if (vScroll != null) vScroll.VisibleChanged += (s, e) => FitNameColumn(grid);
+
+        grid.DividerDragged += (s, desiredNameWidth) => OnDividerDragged(grid, desiredNameWidth);
+        grid.DividerDragEnded += (s, e) =>
+        {
+            if (!_authorWidthDirty) return;
+            _authorWidthDirty = false;
+            SaveConfig();
+        };
+        grid.SortCompare += OnGridSortCompare;
+    }
+
+    private static int AvailableWidth(DataGridView grid)
+    {
+        var vScroll = grid.Controls.OfType<VScrollBar>().FirstOrDefault();
+        return grid.ClientSize.Width - (vScroll != null && vScroll.Visible ? vScroll.Width : 0);
+    }
+
+    /// Total width of every column except Module and Author.
+    private static int OtherFixedWidth(DataGridView grid) =>
+        grid.Columns.Cast<DataGridViewColumn>()
+            .Where(c => c.Visible && c.Name != "Name" && c.Name != "Author")
+            .Sum(c => c.Width);
+
+    /// Makes the Module column take whatever width the other columns leave over.
+    private void FitNameColumn(DataGridView grid)
+    {
+        if (_columnLayoutBusy || grid.Columns.Count == 0) return;
+        var name = grid.Columns["Name"];
+        if (name == null) return;
+
+        var target = Math.Max(MinNameWidth, AvailableWidth(grid) - OtherFixedWidth(grid) - grid.Columns["Author"]!.Width);
+        if (name.Width == target) return;
+
+        _columnLayoutBusy = true;
+        try { name.Width = target; }
+        finally { _columnLayoutBusy = false; }
+    }
+
+    /// The user is dragging the Module|Author divider and wants the Module column to be
+    /// `desiredNameWidth` wide: that becomes a new Author width (everything right of the divider is
+    /// fixed width), applied live to both lists, with the Module column re-filling the rest.
+    private void OnDividerDragged(DataGridView grid, int desiredNameWidth)
+    {
+        var other = OtherFixedWidth(grid);
+        var available = AvailableWidth(grid);
+        var wanted = available - other - desiredNameWidth;
+        var max = Math.Max(MinAuthorWidth, available - other - MinNameWidth);
+        SetAuthorWidth(Math.Max(MinAuthorWidth, Math.Min(wanted, max)), fromUser: true);
+    }
+
+    /// Sets the Author width of both lists and re-fits their Module columns.
+    private void SetAuthorWidth(int width, bool fromUser)
+    {
+        foreach (var g in new[] { dgvActive, dgvInactive })
+        {
+            var author = g.Columns["Author"];
+            if (author == null) continue;
+            if (author.Width != width)
+            {
+                _columnLayoutBusy = true;
+                try { author.Width = width; }
+                finally { _columnLayoutBusy = false; }
+            }
+            FitNameColumn(g);
+        }
+
+        if (fromUser && _config.AuthorColumnWidth != width)
+        {
+            _config.AuthorColumnWidth = width;
+            _authorWidthDirty = true;
+        }
+    }
+
+    /// Sort order for the two sortable non-text-like columns: AoE Rev numerically (blank first),
+    /// Loadpass in load order (Default, 1, 2, 3, 4). Ties fall back to the module name. Modules
+    /// greyed out by the tag filters stay after the others in either direction.
+    private void OnGridSortCompare(object? sender, DataGridViewSortCompareEventArgs e)
+    {
+        if (sender is not DataGridView grid) return;
+        if (grid.Rows[e.RowIndex1].Tag is not ModuleInfo a || grid.Rows[e.RowIndex2].Tag is not ModuleInfo b) return;
+
+        int result = (IsFilteredOut(a) ? 1 : 0) - (IsFilteredOut(b) ? 1 : 0);
+        if (result != 0)
+        {
+            // The grid flips the result for a descending sort, so pre-flip it to keep these at the bottom.
+            e.SortResult = grid.SortOrder == SortOrder.Descending ? -result : result;
+            e.Handled = true;
+            return;
+        }
+
+        switch (e.Column.Name)
+        {
+            case "AoERev":
+                result = int.TryParse(a.AoeRev, out var ra) && int.TryParse(b.AoeRev, out var rb)
+                    ? ra.CompareTo(rb)
+                    : string.Compare(a.AoeRev, b.AoeRev, StringComparison.OrdinalIgnoreCase);
+                break;
+            case "LoadPass":
+                result = ModuleLayout.PassIndex(a.LoadPass).CompareTo(ModuleLayout.PassIndex(b.LoadPass));
+                break;
+            default:
+                return; // other columns use the grid's default text comparison
+        }
+
+        if (result == 0)
+            result = string.Compare(a.Name, b.Name, StringComparison.OrdinalIgnoreCase);
+        e.SortResult = result;
+        e.Handled = true;
     }
 
     // ---------------------------------------------------------- Lifecycle ---
@@ -784,7 +992,8 @@ public class MainForm : Form
         return VerifyModuleSet(action, set, installed, "in the preset");
     }
 
-    /// Runs the incompatibility check, then the dependency check, each with its own
+    /// Runs the incompatibility check, then the (hard) dependency check, then the soft-dependency
+    /// load-order check, each with its own
     /// abort/continue popup. Returns false as soon as the user aborts.
     /// `setDescription` completes "...is not ___" / "...both ___" in the messages.
     private bool VerifyModuleSet(string action, List<LoadEntry> set, List<ModuleInfo> installed, string setDescription)
@@ -819,6 +1028,25 @@ public class MainForm : Form
             text.AppendLine($"Continue anyway, or abort {action}?");
 
             if (!ShowConfirmMessage("Module Dependencies", text.ToString(), "Continue", "Abort", cancelIsDefault: true))
+                return false;
+        }
+
+        var softDependencies = ModuleChecker.CheckSoftDependencies(set);
+        if (softDependencies.Count > 0)
+        {
+            var text = new StringBuilder();
+            text.AppendLine("Some modules list optional (soft) dependencies that are loaded, but not before them. " +
+                            "Soft dependencies don't have to be present, but when they are they should load earlier: " +
+                            "pass Default first, then 1, 2, 3, 4, and alphabetically by folder name within a pass.");
+            text.AppendLine();
+            foreach (var issue in softDependencies)
+            {
+                text.AppendLine(issue);
+                text.AppendLine();
+            }
+            text.AppendLine($"Continue anyway, or abort {action}?");
+
+            if (!ShowConfirmMessage("Module Load Order", text.ToString(), "Continue", "Abort", cancelIsDefault: true))
                 return false;
         }
 
@@ -870,7 +1098,7 @@ public class MainForm : Form
     {
         foreach (var box in _filterBoxes)
         {
-            var has = m.Tags.Contains(box.Text);
+            var has = m.Tags.Contains(box.Tag as string ?? box.Text);
             if (box.State == TagFilterState.Whitelist && !has) return true;
             if (box.State == TagFilterState.Blacklist && has) return true;
         }
@@ -936,6 +1164,12 @@ public class MainForm : Form
             row.Selected = selectedNames.Contains(m.FolderName);
         }
 
+        // Rows.Clear() keeps the sort arrow but the new rows are in name order: re-apply the sort.
+        if (grid.SortedColumn != null && grid.Rows.Count > 1)
+            grid.Sort(grid.SortedColumn, grid.SortOrder == SortOrder.Descending
+                ? System.ComponentModel.ListSortDirection.Descending
+                : System.ComponentModel.ListSortDirection.Ascending);
+
         if (grid.Rows.Count > 0)
         {
             var clamped = Math.Max(0, Math.Min(scrollIndex, grid.Rows.Count - 1));
@@ -954,13 +1188,14 @@ public class MainForm : Form
         if (!string.IsNullOrWhiteSpace(m.Author)) text.AppendLine($"Author: {m.Author}");
         if (m.Compatible.Count > 0) text.AppendLine($"Compatible with: {string.Join(", ", m.Compatible)}");
         if (m.Dependencies.Count > 0) text.AppendLine($"Requires: {string.Join(", ", m.Dependencies)}");
+        if (m.SoftDependencies.Count > 0) text.AppendLine($"Supports (should load after): {string.Join(", ", m.SoftDependencies)}");
         if (m.Incompatible.Count > 0) text.AppendLine($"Incompatible with: {string.Join(", ", m.Incompatible)}");
         text.AppendLine();
         text.AppendLine(!string.IsNullOrWhiteSpace(m.Desc)
             ? m.Desc
             : (!string.IsNullOrWhiteSpace(m.ShortDesc) ? m.ShortDesc : "(no description provided)"));
 
-        ShowScrollableMessage(m.Name, text.ToString());
+        ShowScrollableMessage(m.Name, text.ToString(), large: true); // module descriptions can run to thousands of characters
     }
 
     // NOTE: this is a verbatim string literal (@"..."), so every character between the quotes
@@ -987,7 +1222,7 @@ public class MainForm : Form
 - Right-click a module and choose ""Load in pass"" to move it between the Default folder (Def) and the sequenced passes 1-4 (Seq); the Loadpass column shows where each module currently is
 - The game loads Default modules first, then pass 1, 2, 3 and 4; within each pass modules load alphabetically by their folder name
 - Moving a module between active and inactive keeps its load pass
-- Before launching, saving a preset or exporting a preset, the launcher checks that no active modules are listed as incompatible with each other, and that every module's dependencies are active and load before it; you can abort or continue if a problem is found
+- Before launching, saving a preset or exporting a preset, the launcher checks that no active modules are listed as incompatible with each other, and that every module's hard dependencies are active and load before it, and that any soft dependencies that are active also load before it; you can abort or continue if a problem is found
 
     PRESETS
 - Pressing the ""Save..."" button will give you the option to save the current selection as a preset
@@ -1018,16 +1253,31 @@ public class MainForm : Form
         text.Replace("\r\n", "\n").Replace("\r", "\n").Replace("\n", Environment.NewLine);
 
     /// Generic scrollable read-only message dialog, styled to match the app, with a single OK button.
-    private void ShowScrollableMessage(string title, string text)
+    /// 'large' is used for the module info ("i") popup: it opens much bigger (up to ~85% of the screen's
+    /// working area) since long descriptions can be thousands of characters. The window stays resizable.
+    private void ShowScrollableMessage(string title, string text, bool large = false)
     {
+        var area = Screen.FromControl(this).WorkingArea;
+        int width, height;
+        if (large)
+        {
+            width = Math.Min(Theme.S(1000), (int)(area.Width * 0.85));
+            height = (int)(area.Height * 0.85);
+        }
+        else
+        {
+            width = Math.Min(Theme.S(800), (int)(area.Width * 0.85));
+            height = Math.Min(Theme.S(620), (int)(area.Height * 0.85));
+        }
+
         using var form = new Form
         {
             Text = title,
-            Width = 600,
-            Height = 480,
             StartPosition = FormStartPosition.CenterParent,
         };
         Theme.StyleForm(form);
+        form.ClientSize = new Size(width, height);
+        form.MinimumSize = new Size(Theme.S(400), Theme.S(300));
 
         var box = new ReadOnlySelectableTextBox
         {
@@ -1039,10 +1289,15 @@ public class MainForm : Form
         box.BackColor = Theme.Panel;
         box.ForeColor = Theme.Text;
 
-        var okBtn = new FlatButton { Text = "OK", Dock = DockStyle.Bottom, Height = 34, DialogResult = DialogResult.OK };
+        // Padding around the text, so it doesn't sit flush against the window edges.
+        var textHost = new Panel { Dock = DockStyle.Fill, Padding = new Padding(Theme.S(12)) };
+        Theme.StyleContainer(textHost);
+        textHost.Controls.Add(box);
+
+        var okBtn = new FlatButton { Text = "OK", Dock = DockStyle.Bottom, Height = Theme.ButtonHeight + Theme.S(4), DialogResult = DialogResult.OK };
         Theme.StyleButton(okBtn, primary: true);
 
-        form.Controls.Add(box);
+        form.Controls.Add(textHost);
         form.Controls.Add(okBtn);
         form.AcceptButton = okBtn;
         form.ShowDialog(this);
@@ -1052,14 +1307,17 @@ public class MainForm : Form
     private bool ShowConfirmMessage(string title, string text, string confirmText = "Apply", string cancelText = "Cancel",
         bool cancelIsDefault = false)
     {
+        var area = Screen.FromControl(this).WorkingArea;
         using var form = new Form
         {
             Text = title,
-            Width = 620,
-            Height = 500,
             StartPosition = FormStartPosition.CenterParent,
         };
         Theme.StyleForm(form);
+        form.ClientSize = new Size(
+            Math.Min(Theme.S(820), (int)(area.Width * 0.85)),
+            Math.Min(Theme.S(640), (int)(area.Height * 0.85)));
+        form.MinimumSize = new Size(Theme.S(400), Theme.S(300));
 
         var box = new ReadOnlySelectableTextBox
         {
@@ -1071,22 +1329,27 @@ public class MainForm : Form
         box.BackColor = Theme.Panel;
         box.ForeColor = Theme.Text;
 
-        var buttonPanel = new Panel { Dock = DockStyle.Bottom, Height = 44 };
+        var textHost = new Panel { Dock = DockStyle.Fill, Padding = new Padding(Theme.S(12)) };
+        Theme.StyleContainer(textHost);
+        textHost.Controls.Add(box);
+
+        var buttonPanel = new Panel { Dock = DockStyle.Bottom, Height = Theme.ButtonHeight + Theme.S(14) };
         Theme.StyleContainer(buttonPanel);
 
-        var confirmBtn = new FlatButton { Text = confirmText, DialogResult = DialogResult.OK, Width = 110, Height = Theme.ButtonHeight, Top = 7 };
-        var cancelBtn = new FlatButton { Text = cancelText, DialogResult = DialogResult.Cancel, Width = 110, Height = Theme.ButtonHeight, Top = 7 };
+        int btnTop = Theme.S(7);
+        var confirmBtn = new FlatButton { Text = confirmText, DialogResult = DialogResult.OK, Width = Theme.S(125), Height = Theme.ButtonHeight, Top = btnTop };
+        var cancelBtn = new FlatButton { Text = cancelText, DialogResult = DialogResult.Cancel, Width = Theme.S(125), Height = Theme.ButtonHeight, Top = btnTop };
         Theme.StyleButton(confirmBtn, primary: true);
         Theme.StyleButton(cancelBtn);
         buttonPanel.Resize += (s, e) =>
         {
-            cancelBtn.Left = buttonPanel.Width - cancelBtn.Width - 12;
-            confirmBtn.Left = cancelBtn.Left - confirmBtn.Width - 8;
+            cancelBtn.Left = buttonPanel.Width - cancelBtn.Width - Theme.S(12);
+            confirmBtn.Left = cancelBtn.Left - confirmBtn.Width - Theme.S(8);
         };
         buttonPanel.Controls.Add(confirmBtn);
         buttonPanel.Controls.Add(cancelBtn);
 
-        form.Controls.Add(box);
+        form.Controls.Add(textHost);
         form.Controls.Add(buttonPanel);
         form.AcceptButton = cancelIsDefault ? cancelBtn : confirmBtn;
         form.CancelButton = cancelBtn;
@@ -1205,7 +1468,7 @@ public class MainForm : Form
                 ShowModuleDetails(m);
         };
 
-        var contextMenu = new ContextMenuStrip();
+        var contextMenu = new ContextMenuStrip { Font = Theme.BodyFont };
         var openFolderItem = new ToolStripMenuItem("Open containing folder");
         contextMenu.Items.Add(openFolderItem);
         contextMenu.Items.Add(new ToolStripSeparator());

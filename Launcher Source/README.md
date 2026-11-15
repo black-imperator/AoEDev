@@ -52,16 +52,26 @@ next to it. No installer, no registry entries, no other footprint.
   the file system still identify modules by folder name.
 - **Dependency and incompatibility checks**: when you press Launch, Save
   Preset or Export Preset, the launcher first checks `[incompatible]` (no two
-  modules in the set may list each other as incompatible), then `[dependency]`
+  modules in the set may list each other as incompatible), then `[dependency-hard]`
   (every dependency must be in the set and load before the module that needs
-  it: earlier pass, or same pass and earlier alphabetically by folder name).
+  it: earlier pass, or same pass and earlier alphabetically by folder name),
+  then `[dependency-soft]` (not required to be present, but any that are in the
+  set must load before the module listing them).
   Each problem is shown in a popup listing the modules involved, with
   Abort / Continue. Launch and Save check the active modules; Export checks the
   preset's modules in the passes the preset records (modules not installed
   locally can't be checked).
 - **Tag filters**: a **Filters** row under the module lists has a three-state box
-  for each of `Civ(N)`, `Civ(E)`, `Art`, `Joke`, `Mech`, `Lead`, `Bal` and `Event`
-  (the list is `FilterTags` in `MainForm.cs`).
+  for each of `Civ (New)`, `Civ (Edit)`, `Art`, `Joke`, `Mechanics`, `Leader`, `Balance`
+  and `Event`. These match the info.txt `[tags]` tokens `Civ(N)`, `Civ(E)`, `Art`, `Joke`,
+  `Mech`, `Lead`, `Bal` and `Event` respectively (the list is `FilterTags` in `MainForm.cs`).
+- **Columns**: the Version, AoE Rev, Loadpass and Info columns are sized from their
+  header text in the current font and can't be resized. AoE Rev (numerically) and
+  Loadpass (in load order) can be sorted by clicking the header; Version can't.
+  The Module|Author divider can be dragged (updating live as you drag; it is the
+  only adjustable divider): the Author width is kept identical in the
+  active and inactive lists, saved in the config file (`AuthorColumnWidth`) and
+  restored on startup; only the Module column grows/shrinks with the window.
   Click a box to cycle it: empty = no filter, white = whitelist
   (modules *without* the tag are filtered out), black = blacklist (modules *with*
   the tag are filtered out); right-click clears it. With several whitelisted tags a
@@ -141,8 +151,11 @@ Blazenclaw
 [tags]
 Civ(N), Mech
 ;
-[dependency]
+[dependency-hard]
 SomeOtherModuleFolder, AnotherModuleFolder
+;
+[dependency-soft]
+OptionalModuleFolder
 ;
 [incompatible]
 ConflictingModuleFolder
@@ -156,14 +169,14 @@ can span several lines, including blank ones for paragraph breaks.
 ```
 
 `[name]` is the module's display name. `[author]` fills the **Author** column.
-`[dependency]` and `[incompatible]` are comma-separated lists of other modules'
+`[dependency-hard]`, `[dependency-soft]` and `[incompatible]` are comma-separated lists of other modules'
 exact *folder* names (not their `[name]`); either may be empty.
 `[aoeversion]` fills the **AoE Rev** column. `[tags]` is a list separated by
 commas, semicolons, pipes, spaces or line breaks; each entry is compared as a
 whole word, case-insensitively, against the filter tags.
 
 `[shortdesc]` becomes the row's tooltip; `[desc]` (plus version/author/
-AoE version/compatible/dependency/incompatible) shows up in the popup from that row's **?** button.
+AoE version/compatible/dependencies/incompatible) shows up in the popup from that row's **?** button.
 
 ## Project layout
 
@@ -182,7 +195,7 @@ AoELauncher/
     InstallLocator.cs         <- placement validation only, no registry/disk scanning
     ModuleLayout.cs           <- Def\ / Seq\1..4 folder layout and load-pass helpers
     ModuleScanner.cs          <- scans modules, parses info.txt, computes fingerprints
-    ModuleChecker.cs          <- [incompatible] and [dependency] verification
+    ModuleChecker.cs          <- [incompatible], [dependency-hard] and [dependency-soft] verification
     SchemaUpdater.cs          <- the Update Schemas action
     PresetCodec.cs            <- compact binary encode/decode for the share string
     GameLauncher.cs           <- starts the game with the mod enabled
