@@ -31,9 +31,13 @@ Tikumara
 [tags]
 Bal
 
-;List any other modules you require as a dependency here.
+;List any modules you support as a soft optional dependency that you want to be loaded after.
 ;Refer to the exact folder name of that module, NOT the [name] field!
-[dependency]
+[dependency-soft]
+
+;List any modules you require as a HARD dependency here.
+;Refer to the exact folder name of that module, NOT the [name] field!
+[dependency-hard]
 
 ;If this module should NOT be run alongside another (e.g. you both overhaul the same leader)
 ;As dependency, use the exact folder name of that module, NOT the [name] field!
