@@ -11,11 +11,23 @@
 			<Description>Initialize ALL Modules by using the MLF file structure</Description>
 			<Modules>
 				<Module>
-					<Directory>Seq</Directory>
+					<Directory>0</Directory>
 					<bLoad>1</bLoad>
 				</Module>
 				<Module>
-					<Directory>Def</Directory>
+					<Directory>1</Directory>
+					<bLoad>1</bLoad>
+				</Module>
+				<Module>
+					<Directory>2</Directory>
+					<bLoad>1</bLoad>
+				</Module>
+				<Module>
+					<Directory>3</Directory>
+					<bLoad>1</bLoad>
+				</Module>
+				<Module>
+					<Directory>4</Directory>
 					<bLoad>1</bLoad>
 				</Module>
 			</Modules>
