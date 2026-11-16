@@ -17,105 +17,105 @@
 			<bAIPlayable>1</bAIPlayable>
 			<DefaultRace>PROMOTION_GIANTKIN</DefaultRace>
 			<Cities>
-			<City>Jotunheim</City>
-			<City>Vindrastaed</City>
-			<City>Harlstaed</City>
-			<City>Miklastaed</City>
-			<City>Smeltastaed</City>
-			<City>Tristaed</City>
-			<City>Ungastaed</City>
-			<City>Varkstaed</City>
-			<City>Sahustaed</City>
-			<City>Curnstaed</City>
-			<City>Foxstaed</City>
-			<City>Talstael</City>
-			<City>Kaelstaed</City>
-			<City>Vehemstaed</City>
-			<City>Slyrrstaed</City>
-			<City>Shikstaed</City>
-			<City>Arsstaed</City>
-			<City>Ingridstaed</City>
-			<City>Pelarstaed</City>
-			<City>Hamnstaed</City>
-			<City>Honnestaed</City>
-			<City>Stenstaed</City>
-			<City>Cristianstaed</City>
-			<City>Archstaed</City>
-			<City>Ruhrstaed</City>
-			<City>Grimsstaed</City>
-			<City>Scuntstaed</City>
-			<City>Skarstaed</City>
-			<City>Bierstaed</City>
-			<City>Ingvarstaed</City>
-			<City>Caalstaed</City>
-			<City>Minstaed</City>
-			<City>Echstaed</City>
-			<City>Munstaed</City>
-			<City>Tylistaed</City>
-			<City>Vaegstaed</City>
-			<City>Johchtstaed</City>
-			<City>Crudstaed</City>
-			<City>Pilstaed</City>
-			<City>Hantrastaed</City>
-			<City>Vulkastaed</City>
-			<City>Valastaed</City>
-			<City>Skaldstaed</City>
-			<City>Trollstaed</City>
-			<City>Oegnastaed</City>
+				<City>Jotunheim</City>
+				<City>Vindrastaed</City>
+				<City>Harlstaed</City>
+				<City>Miklastaed</City>
+				<City>Smeltastaed</City>
+				<City>Tristaed</City>
+				<City>Ungastaed</City>
+				<City>Varkstaed</City>
+				<City>Sahustaed</City>
+				<City>Curnstaed</City>
+				<City>Foxstaed</City>
+				<City>Talstael</City>
+				<City>Kaelstaed</City>
+				<City>Vehemstaed</City>
+				<City>Slyrrstaed</City>
+				<City>Shikstaed</City>
+				<City>Arsstaed</City>
+				<City>Ingridstaed</City>
+				<City>Pelarstaed</City>
+				<City>Hamnstaed</City>
+				<City>Honnestaed</City>
+				<City>Stenstaed</City>
+				<City>Cristianstaed</City>
+				<City>Archstaed</City>
+				<City>Ruhrstaed</City>
+				<City>Grimsstaed</City>
+				<City>Scuntstaed</City>
+				<City>Skarstaed</City>
+				<City>Bierstaed</City>
+				<City>Ingvarstaed</City>
+				<City>Caalstaed</City>
+				<City>Minstaed</City>
+				<City>Echstaed</City>
+				<City>Munstaed</City>
+				<City>Tylistaed</City>
+				<City>Vaegstaed</City>
+				<City>Johchtstaed</City>
+				<City>Crudstaed</City>
+				<City>Pilstaed</City>
+				<City>Hantrastaed</City>
+				<City>Vulkastaed</City>
+				<City>Valastaed</City>
+				<City>Skaldstaed</City>
+				<City>Trollstaed</City>
+				<City>Oegnastaed</City>
 			</Cities>
 			<Buildings>
-			<Building>
-				<BuildingClassType>BUILDINGCLASS_ELDER_COUNCIL</BuildingClassType>
-				<BuildingType>BUILDING_JOT_HOUSE_OF_THE_ANCESTORS</BuildingType>
-			</Building>
-			<Building>
-				<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-				<BuildingType>BUILDING_JOT_PALACE</BuildingType>
-			</Building>
-			<Building>
-				<BuildingClassType>BUILDINGCLASS_JOT_STAEDDING</BuildingClassType>
-				<BuildingType>BUILDING_JOT_STAEDDING</BuildingType>
-			</Building>
-			<Building>
-				<BuildingClassType>BUILDINGCLASS_JOT_STAEDDING2</BuildingClassType>
-				<BuildingType>BUILDING_JOT_STAEDDING2</BuildingType>
-			</Building>
-			<Building>
-				<BuildingClassType>BUILDINGCLASS_JOT_STAEDDING3</BuildingClassType>
-				<BuildingType>BUILDING_JOT_STAEDDING3</BuildingType>
-			</Building>
-			<Building>
-				<BuildingClassType>BUILDINGCLASS_BARRACKS</BuildingClassType>
-				<BuildingType>BUILDING_JOT_BARRACKS</BuildingType>
-			</Building>
-			<Building>
-				<BuildingClassType>BUILDINGCLASS_WINTER_PALACE</BuildingClassType>
-				<BuildingType>BUILDING_HALL_OF_WINTER</BuildingType>
-			</Building>
-			<Building>
-				<BuildingClassType>BUILDINGCLASS_FORBIDDEN_PALACE</BuildingClassType>
-				<BuildingType>BUILDING_HALL_OF_SUMMER</BuildingType>
-			</Building>
-			<Building>
-				<BuildingClassType>BUILDINGCLASS_FALL_PALACE</BuildingClassType>
-				<BuildingType>BUILDING_HALL_OF_AUTUMN</BuildingType>
-			</Building>
-			<Building>
-				<BuildingClassType>BUILDINGCLASS_SPRING_PALACE</BuildingClassType>
-				<BuildingType>BUILDING_HALL_OF_SPRING</BuildingType>
-			</Building>
-			<Building>
-				<BuildingClassType>BUILDINGCLASS_HALL_OF_YEARS</BuildingClassType>
-				<BuildingType>BUILDING_HALL_OF_YEARS</BuildingType>
-			</Building>
-			<Building>
-				<BuildingClassType>BUILDINGCLASS_CITY_OF_A_THOUSAND_SLUMS</BuildingClassType>
-				<BuildingType>BUILDING_CITY_OF_A_THOUSAND_GARDENS</BuildingType>
-			</Building>
-			<Building>
-				<BuildingClassType>BUILDINGCLASS_SHIPYARD</BuildingClassType>
-				<BuildingType>NONE</BuildingType>
-			</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_ELDER_COUNCIL</BuildingClassType>
+					<BuildingType>BUILDING_JOT_HOUSE_OF_THE_ANCESTORS</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_JOT_PALACE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_JOT_STAEDDING</BuildingClassType>
+					<BuildingType>BUILDING_JOT_STAEDDING</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_JOT_STAEDDING2</BuildingClassType>
+					<BuildingType>BUILDING_JOT_STAEDDING2</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_JOT_STAEDDING3</BuildingClassType>
+					<BuildingType>BUILDING_JOT_STAEDDING3</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_BARRACKS</BuildingClassType>
+					<BuildingType>BUILDING_JOT_BARRACKS</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_WINTER_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_HALL_OF_WINTER</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_FORBIDDEN_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_HALL_OF_SUMMER</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_FALL_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_HALL_OF_AUTUMN</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_SPRING_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_HALL_OF_SPRING</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_HALL_OF_YEARS</BuildingClassType>
+					<BuildingType>BUILDING_HALL_OF_YEARS</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_CITY_OF_A_THOUSAND_SLUMS</BuildingClassType>
+					<BuildingType>BUILDING_CITY_OF_A_THOUSAND_GARDENS</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_SHIPYARD</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
 			</Buildings>
 			<Units>
 				<Unit>
@@ -632,7 +632,7 @@
 			<bGraphicalOnly>0</bGraphicalOnly>
 			<DefaultRace>NONE</DefaultRace>
 			<Hero>UNIT_EGRASS</Hero>
-			<MaintainFeatures/>
+			<MaintainFeatures />
 			<Image>Art/Civs/Pedia/Civilizations/Jotnar.dds</Image>
 			<TerrainYieldChanges>
 				<TerrainYieldChange>
@@ -660,7 +660,7 @@
 					</TerrainYields>
 				</TerrainYieldChange>
 			</TerrainYieldChanges>
-				<CivTrait>TRAIT_TRADITIONAL</CivTrait>
+			<CivTrait>TRAIT_TRADITIONAL</CivTrait>
 			<PeakYieldChange>
 				<iYield>0</iYield>
 				<iYield>1</iYield>
@@ -706,7 +706,7 @@
 						<iYield>2</iYield>
 						<iYield>2</iYield>
 					</ImprovementYields>
-				</ImprovementYieldChange>	
+				</ImprovementYieldChange>
 				<ImprovementYieldChange>
 					<ImprovementType>IMPROVEMENT_WATERMILL</ImprovementType>
 					<ImprovementYields>
@@ -767,9 +767,8 @@
 		</CivilizationInfo>
 		<CivilizationInfo><!-- Jotnar -->
 			<Type>CIVILIZATION_JOTNAR</Type>
-			<bTypeDependency>1</bTypeDependency>
-				<AndDependencyTypes>
-			<DependencyType>MODULE_IMPORTANT_LEADERS</DependencyType>
+			<AndDependencyTypes>
+				<DependencyType>MODULE_IMPORTANT_LEADERS</DependencyType>
 			</AndDependencyTypes>
 			<Leaders>
 				<Leader>
@@ -778,12 +777,11 @@
 				</Leader>
 			</Leaders>
 		</CivilizationInfo>
-		
 		<CivilizationInfo><!-- Jotnar -->
 			<Type>CIVILIZATION_JOTNAR</Type>
 			<bTypeDependency>1</bTypeDependency>
-				<AndDependencyTypes>
-			<DependencyType>MODULE_VICIOUSSEAS</DependencyType>
+			<AndDependencyTypes>
+				<DependencyType>MODULE_VICIOUSSEAS</DependencyType>
 			</AndDependencyTypes>
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
@@ -796,6 +794,5 @@
 				</ImprovementYieldChange>
 			</ImprovementYieldChanges>
 		</CivilizationInfo>
-		
 	</CivilizationInfos>
 </Civ4CivilizationInfos>

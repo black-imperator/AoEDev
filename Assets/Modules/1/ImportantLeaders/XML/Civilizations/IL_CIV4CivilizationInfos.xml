@@ -24,7 +24,7 @@
 				</Leader>
 			</Leaders>
 		</CivilizationInfo>
-			<CivilizationInfo><!-- Kuriotates -->
+		<CivilizationInfo><!-- Kuriotates -->
 			<Type>CIVILIZATION_KURIOTATES</Type>
 			<Leaders>
 				<Leader>
@@ -33,7 +33,7 @@
 				</Leader>
 			</Leaders>
 		</CivilizationInfo>
-			<CivilizationInfo><!-- Ljosalfar -->
+		<CivilizationInfo><!-- Ljosalfar -->
 			<Type>CIVILIZATION_LJOSALFAR</Type>
 			<Leaders>
 				<Leader>
@@ -42,7 +42,7 @@
 				</Leader>
 			</Leaders>
 		</CivilizationInfo>
-				<CivilizationInfo><!-- Sidar -->
+		<CivilizationInfo><!-- Sidar -->
 			<Type>CIVILIZATION_SIDAR</Type>
 			<Leaders>
 				<Leader>
@@ -51,7 +51,7 @@
 				</Leader>
 			</Leaders>
 		</CivilizationInfo>
-				<CivilizationInfo><!-- Hippus -->
+		<CivilizationInfo><!-- Hippus -->
 			<Type>CIVILIZATION_HIPPUS</Type>
 			<Leaders>
 				<Leader>
@@ -64,7 +64,7 @@
 				</Leader>
 			</Leaders>
 		</CivilizationInfo>
-				<CivilizationInfo><!-- Balseraph -->
+		<CivilizationInfo><!-- Balseraph -->
 			<Type>CIVILIZATION_BALSERAPHS</Type>
 			<Leaders>
 				<Leader>
@@ -73,7 +73,7 @@
 				</Leader>
 			</Leaders>
 		</CivilizationInfo>
-				<CivilizationInfo><!-- Doviello -->
+		<CivilizationInfo><!-- Doviello -->
 			<Type>CIVILIZATION_DOVIELLO</Type>
 			<Leaders>
 				<Leader>
@@ -82,7 +82,7 @@
 				</Leader>
 			</Leaders>
 		</CivilizationInfo>
-				<CivilizationInfo><!-- Svartalfar -->
+		<CivilizationInfo><!-- Svartalfar -->
 			<Type>CIVILIZATION_SVARTALFAR</Type>
 			<Leaders>
 				<Leader>
@@ -95,7 +95,7 @@
 				</Leader>
 			</Leaders>
 		</CivilizationInfo>
-				<CivilizationInfo><!-- Sheaim -->
+		<CivilizationInfo><!-- Sheaim -->
 			<Type>CIVILIZATION_SHEAIM</Type>
 			<Leaders>
 				<Leader>
@@ -112,7 +112,7 @@
 				</Leader>
 			</Leaders>
 		</CivilizationInfo>
-				<CivilizationInfo><!-- Mercurians -->
+		<CivilizationInfo><!-- Mercurians -->
 			<Type>CIVILIZATION_MERCURIANS</Type>
 			<Leaders>
 				<Leader>
@@ -129,20 +129,7 @@
 				</Leader>
 			</Leaders>
 		</CivilizationInfo>
-		<CivilizationInfo><!-- Jotnar -->
-			<Type>CIVILIZATION_JOTNAR</Type>
-			<bTypeDependency>1</bTypeDependency>
-				<AndDependencyTypes>
-			<DependencyType>MODULE_JOTNAR</DependencyType>
-			</AndDependencyTypes>
-			<Leaders>
-				<Leader>
-					<LeaderName>LEADER_AURGELMIR</LeaderName>
-					<bLeaderAvailability>1</bLeaderAvailability>
-				</Leader>
-			</Leaders>
-		</CivilizationInfo>
-				<CivilizationInfo><!-- Illians -->
+		<CivilizationInfo><!-- Illians -->
 			<Type>CIVILIZATION_ILLIANS</Type>
 			<Leaders>
 				<Leader>
@@ -167,7 +154,7 @@
 				</Leader>
 			</Leaders>
 		</CivilizationInfo>
-				<CivilizationInfo><!-- Infernal -->
+		<CivilizationInfo><!-- Infernal -->
 			<Type>CIVILIZATION_INFERNAL</Type>
 			<Buildings>
 				<Building>
@@ -269,7 +256,7 @@
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_CRIME_UNETHICAL_EXPERIMENT</BuildingClassType>
 					<BuildingType>NONE</BuildingType>
-				</Building>	
+				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_EMPTY_HEART</BuildingClassType>
 					<BuildingType>NONE</BuildingType>
@@ -306,7 +293,6 @@
 				</Leader>
 			</Leaders>
 		</CivilizationInfo>
-		
 		<CivilizationInfo><!-- Malakim -->
 			<Type>CIVILIZATION_MALAKIM</Type>
 			<Leaders>
@@ -328,6 +314,5 @@
 				</Leader>
 			</Leaders>
 		</CivilizationInfo>
-		
 	</CivilizationInfos>
 </Civ4CivilizationInfos>
