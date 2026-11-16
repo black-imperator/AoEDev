@@ -8,8 +8,8 @@
 	<CivilizationArtInfos>
 		<CivilizationArtInfo>
 			<Type>ART_DEF_CIVILIZATION_EERT</Type>
-			<Button>Modules/Def/kcz_Woods/Art/Interface/Teamcolor/eertbutton.dds</Button>
-			<Path>Modules/Def/kcz_Woods/Art/Interface/Teamcolor/eertflag.dds</Path>
+			<Button>Modules/1/kcz_Woods/Art/Interface/Teamcolor/eertbutton.dds</Button>
+			<Path>Modules/1/kcz_Woods/Art/Interface/Teamcolor/eertflag.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
 	</CivilizationArtInfos>
