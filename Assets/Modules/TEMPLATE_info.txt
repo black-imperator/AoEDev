@@ -4,15 +4,15 @@
 ;User-readable name of the module, please keep the folder name and module name
 ;starting with the same letter(s) to help avoid load sequencing issues.
 [name]
-Cheaper Techs
+Example Module
 
 ;This is you!
 [author]
-Blazenclaw
+The Very Coolest
 
 ;Use this for versions of your own module. 1.0, 1.1, A, etc.
 [version]
-1.2
+1.0
 
 ;What version of AoE this module was last updated for. This template was introduced v387.
 ;Refer to the SVN ver, or version.txt in the mod folder (assuming Black Imperator updated it...)
@@ -29,31 +29,33 @@ Blazenclaw
 ;Bal         | Balance adjustments
 ;Event       | Adds new or adjusts events
 [tags]
-Civ, Mech
+Civ(N), Mech
 
 ;List any modules you support as a soft optional dependency that you want to be loaded after.
+;This isn't needed if you're ADDING something based on the other mod, but only if you want to overwrite with higher priority than the other mod.
 ;Refer to the exact folder name of that module, NOT the [name] field!
 [dependency-soft]
+IfThisModuleIsPresentIWannaCHANGEItOrSomethingItChanges, SameForThisOtherModule
 
 ;List any modules you require as a HARD dependency here.
 ;Refer to the exact folder name of that module, NOT the [name] field!
 [dependency-hard]
-ThisIsAnExample
+ThisIsAnExample, MultipleAreCommaSeparatedLikeThis
 
 ;If this module should NOT be run alongside another (e.g. you both overhaul the same leader)
 ;As dependency, use the exact folder name of that module, NOT the [name] field!
 [incompatible]
-ConflictingModule
+ConflictingModule, ConflictingNumbahTwo
 
 ;This shows up as a tooltip when the user mouses over it in the launcher.
 ;Please keep it as short as possible, ideally even shorter than this line here.
 [shortdesc]
-Cheaper earlier techs, MUCH more expensive late techs
+This is the best module ever. Publishing this line makes you look silly though
 
 ;Longer description to tell how awesome your stuff is.
 [desc]
 Multi-line description text...
-can span several lines, including blank ones for paragraph breaks.
+Can span several lines, including blank ones for paragraph breaks.
 
 This shows up too!
 

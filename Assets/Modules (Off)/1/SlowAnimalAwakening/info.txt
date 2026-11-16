@@ -32,6 +32,7 @@ Doesnt
 Bal
 
 ;List any modules you support as a soft optional dependency that you want to be loaded after.
+;This isn't needed if you're ADDING something based on the other mod, but only if you want to overwrite with higher priority than the other mod.
 ;Refer to the exact folder name of that module, NOT the [name] field!
 [dependency-soft]
 
