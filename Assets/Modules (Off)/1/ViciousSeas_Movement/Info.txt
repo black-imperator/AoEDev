@@ -49,7 +49,7 @@ ViciousSeas
 ;This shows up as a tooltip when the user mouses over it in the launcher.
 ;Please keep it as short as possible, ideally even shorter than this line here.
 [shortdesc]
-Slows down boat and sea monster movement in the oceans
+Slows down boat and sea monster movement in the oceans to avoid getting sniped from the fog of war.
 
 ;Longer description to tell how awesome your stuff is.
 [desc]

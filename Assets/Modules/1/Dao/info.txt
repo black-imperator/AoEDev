@@ -47,8 +47,8 @@ Civ(N)
 ;This shows up as a tooltip when the user mouses over it in the launcher.
 ;Please keep it as short as possible, ideally even shorter than this line here.
 [shortdesc]
-Reintroduces the Dao civ from Orbis, an oriental-inspired Elementalist civ
+Based on the Dao from the Orbis Modmod, the Dao are a faction with an affinity for force magic, which they use to bind elementals to contracts of service. Rejects the allure of heaven and hell, both.
 
 ;Longer description to tell how awesome your stuff is.
 [desc]
-A faction with affinity to force magic, and uses it to bind elementals to contracts of service. Rejects the allure of heaven and hell, both.
+Based on the Dao from the Orbis Modmod, the Dao are a faction with an affinity for force magic, which they use to bind elementals to contracts of service. Rejects the allure of heaven and hell, both.

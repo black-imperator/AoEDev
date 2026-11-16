@@ -48,7 +48,7 @@ Dao, Frozen, Goblin, Jotnar, LjosalfarExpansion, ViciousSeas
 ;This shows up as a tooltip when the user mouses over it in the launcher.
 ;Please keep it as short as possible, ideally even shorter than this line here.
 [shortdesc]
-Longbowmen don't use metal weapons. T3 warrior Disciples don't require metal. T4 Warrior disciples don't require metal, do use metal weapon upgrades.
+Longbowmen don't use resource weapons. T3 warrior Disciples don't require metal. T4 Warrior disciples don't require metal, do use metal weapon upgrades.
 
 ;Longer description to tell how awesome your stuff is.
 [desc]

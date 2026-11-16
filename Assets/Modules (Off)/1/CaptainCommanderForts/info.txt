@@ -48,11 +48,11 @@ Arachnophobia, ViciousSeas
 ;This shows up as a tooltip when the user mouses over it in the launcher.
 ;Please keep it as short as possible, ideally even shorter than this line here.
 [shortdesc]
-Changes fort commanders to be commander type units with no range attacks, UUs rebalanced appropriately
+Changes fort commanders to be commander type units with no range attacks, unique units rebalanced appropriately
 
 ;Longer description to tell how awesome your stuff is.
 [desc]
-Changes fort commanders to be commander type units with no range attacks, UUs rebalanced appropriately.
+Changes fort commanders to be commander type units with no range attacks, unique units rebalanced appropriately.
 
 This module was created after discussion about the role of fort commanders and is built on an initial, simple test version by kaczkar123, which contained the basic framework for a fort commander that upgrades at specific techs, with no ranged attacks. All further balance and all UUs by Captain
 

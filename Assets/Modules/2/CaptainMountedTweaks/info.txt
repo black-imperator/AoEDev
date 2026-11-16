@@ -48,7 +48,7 @@ LjosalfarExpansion, Arachnophobia, ElfnDeath, Goblin, ImportantLeaders, kcz_Wood
 ;This shows up as a tooltip when the user mouses over it in the launcher.
 ;Please keep it as short as possible, ideally even shorter than this line here.
 [shortdesc]
-Rebalances+buffs Cavalry line, allows sacrificing tamed animals for promotions
+Rebalances and buffs Cavalry line, allows sacrificing tamed animals for exotic mount promotions
 
 ;Longer description to tell how awesome your stuff is.
 [desc]
@@ -66,4 +66,144 @@ Gorillas do not make for good riding animals
 Not planning on anything for sand worms. Because any mounted unit that rides on a sandworm probably deserves radical function changes.
 Toads: amphibious and doubled marsh movement. Don't ask me what a toad chariot looks like.
 
-More info in the changes.txt file next to this one.
+More detailed info below:
+
+The aim of this module is to make the mounted lines more consistent, and slightly better balanced (I hope). Now includes strategy entries in the pedia for all changed units!
+
+[ OVERVIEW v1.7 ]
+
+Horsemen -> Horse Archer -> Knights are the horse line. Changes below apply to UUs as well when relevant. I haven't touched mounted heroes, at least for now - they are all still powerful as they are still heroes, they just don't have the bonus vs archers or flank attack. All have -25% vs defensive melee.
+
+Boar Riders, Bison Riders, Bear Riders, and Hornguard now get some of their stats as a result of their in-built mount promotion.
+
+-Horsemen-
+Lost flank arcane.
+Malakin Raider UU now has 3 movement, anti archer, and flank siege. Previously had 2 move and no special bonuses, poor guy.
+Boar Rider now has +40% vs melee instead of 25% archer and 25% melee. Can return to boars in a city.
+-40% againts defensive melee.
+
+-Horse Archers-
+Lost first strike immunity, can use bronze and iron weapons, gained +40% vs archers, and flank siege.
+Doviello Bear Rider UU now has 2 movement instead of 3, while having 2 more strength than other horse archers, but cannot use special mounts and has no defensive strikes. It is an immediate powerhouse and matches its upgrade, the Bison Rider.
+Centuar Archer gets +1 first strike to match other horse archers. Also gets +1 strength, making it equal in strength to a horse archer with hyapon or nightmare.
+Fyrdwell now has slightly stronger ranged attacks, and starts with a stag mount. Fyrdwell can return to stag mounts in a city, for if you upgrade a horseman with a different mount and want to use a stag instead, mostly.
+Nyxkin now starts with a tiger mount. Nyxkin can return to tiger mounts in a city, for if you upgrade a horseman with a different mount and want to use a tiger instead, mostly.
+-40% againts defensive melee.
+
+-Knights-
+All knights gained +40% vs archers, 1 first strike, and flank siege. Knights now available at Warhorses tech (1 earlier than previous). Knight base stats are now 10/10, can use weapons.
+Doviello and Dwarf Knights have -1 move, but +2 attack.
+Doviello and Dwarf Knights can return to great beast mounts in a city.
+Centuar Lancer has +1 strength over a knight (making it equal to a knight with hyapon or nightmare), but a centaur so can sprint and receive defensive bonuses.
+Camel Knight is same as a knight, but can be built with camels.
+-40% againts defensive melee.
+
+-War Chariots-
+War Chariots are moved to armored cavalry, the later tech. War Chariots have 12/7 stats, same as immortals, can use weapons. War chariots no longer have a bonus vs archers. 
+Lanun War Tortoise remains the same, just moved up to armored cavalry to match chariots. Maintains its anti-mounted bonus.
+Centuar Guard has +1 strength (making it equal to hyapon or nightmare) can sprint and receive defensive bonuses.
+Ophanim has 2 less base strength than chariot, but +3 holy combat and can still fly.
+
+-Ratha-
+Now has bonus against rogue instead of recon.
+
+-War Elephant and Mammoth-
++1 strength, but tech requirement moved to Stirrups. Can no longer work tiles, because it was odd to have a military unit do it and I found it annoying for interface clutter. 
+
+[ COMPATABILITY WITH OTHER MODULES ]
+-Arachnaphobia-
+Archos mounted units gain flank siege and archer bonuses to match other mounted, and also start with spider mounts. War Spider moved to Warhorses to match other knight units. Can re-acquire spiders in cities on their UUs, like other civs.
+
+-Ljosalfar Expansion-
+Fyrdwell champion adjusted to essentialy serve as a war chariot replacement (they can still get knights, too.) Fyrdwell and Champions stats made to match my changes and they keep their secondary archer from the module.
+
+-ElfnDeath-
+Ostuarri gained flank siege and archer bonuses to match other mounted. Can re-acquire ghostly mounts in cities on their UUS, like other civs.
+
+
+[ TAMED ANIMAL MOUNTS OVERVIEW ]
+Any tamed animal can be sacrificed to grant that mount promotion to all mounted units in the stack.
+This always overwrites existing mounts, so split up your stacks if you don't want to lose your old mounts.
+Mounted units that can use horses can buy horses, nightmare, and hyapon in cities if you want to replace your mounts.
+
+These are all gameplay only - no model changes. That's way, way, way beyond my skill and time I want to spend on this.
+
+These are built to have trade-offs - more of a for fun specialized feature like master equipment from great engineers than something you use every single time. Note that this means Boar and Dino chariots gain an archer weakness, since it isn't offset by an inbuilt advantage. I figure this way works best for most mounted units, and if you are afraid you can simply not use dino chariots and use dino horsemen instead. Most of these are aimed at being slightly more gameplay focused rather than getting bogged down in what is realistic (a tiger doesn't have the same long-distance running capacity as a horse but tiger riders are cool fantasy units), and don't have terrain bonuses because I find them kind of boring. Boars give -1 move because that matches khazad boar riders, great beasts matches bison and bear riders and hornguard, spider matches archos units from arachnaphobia module (which you should check out!).
+
+The following mounted class units can't use new mount types - all centaurs, for obvious reasons, war elephants and mammoths, since they are special units already, war tortoise for the same reason, Fiacra and the War Machine for being mounted class but not riding anything, and the four horsemen of the apocalypse for having high speed flying demon horses already.
+
+As a limitation of upgrades keeping your old mount, Hornguard, Bison Riders, and Bear Riders can return to great beast mounts in a city. Fyrdwell and Nyxkin can return to stags or tigers in cities. Boar Riders can get boars back in the same way. Lanun War Tortoise can return to special mount in a city if you upgrade a chariot (please click that, you're not supposed to have spider riding war tortoise!)
+
+Doviello currently can't normally get the hidden 'tame' promotion on their freespawning animals, so they don't have much access to this system. I'll change it if doviello ever have 'tame' unblocked or something similar.
+
+Promotions are as follows!
+Boar: -1 move, trades 40% archer bonus for 40% melee bonus (khazad boar riders changed to match). Warriors beware!
+Rat: -1 move, +25% city attack 
+Lion: As lion blood, Courage
+Tiger: Stealth 1 and +1 first strike. Nyxkin start with this.
+Stag: As stag blood, 20% magic resist and forest movement. Fyrdwell start with this.
+Bear: Generic name Great Beast (to be used for doviello and khazad UUs), +2 attack strength, -1 move. UUs total stats won't change, they'll get a defense boost to end up where they were before
+Wolf: +2 perception, go sniff out some rogue units
+Dinosaur: Trades 40% archer bonus for 40% recon bonus.
+Spider: -1 move and strength, but +2 poison strength.
+Flying: Requires Warhorses, but grants flying. No movement bonus like pegasus mount has and locked until late game, so austrin are flying mount experts.
+Gorillas do not make for good riding animals
+Not planning on anything for sand worms. Because any mounted unit that rides on a sandworm probably deserves radical function changes.
+Toads when they get added - amphibious, of course. Don't ask me what a toad chariot looks like.
+
+[ CHANGELOG ] 
+V1 - initial.
+
+V2 - 
+Horse Archers can now use bronze and iron weapons (same as a longbowman).
+This might sound concerning, but I think in practice it is pretty fair. With only bronze or hyapon, they are 7/7, which is the same as a ranger, a cheaper, slighly earlier unit. With both, they become 8/8, which is a notably good unit, but stirrups is its own tech that doesn't lead to anything except more mounted, compare to iron working which is a pre-req for many lategame units and gets you 9 attack champions or 9 defense pikemen with iron. With Iron and Hyapon, horse archers become 9-9, but that would require both iron working and stirrups, so that's a lot of research. For comparison, paramanders and paladins with iron are 8/8 (plus anti-demon bonuses) or stygian guard with iron are 9/9.
+Also note that Doviello Bear Riders before this mod were already 9/9 with hyapon (they can use mounts). Mechanos Dragoons were already able to use weapons. It isn't outlandish to share the love with other factions.
+
+Doviello Bear Riders cannot use weapons.
+So they start as powerhouses but aren't immediately 10/10 units if you get lucky with hyapon and no other techs.
+
+Centaur Archers, Centaur Lancers, and Centaur Guard how all have +1 strength.
+This is to offset their lack of access to hyapon and nightmare. Now they have the same stats as a generic equivalent who has hyapon, plus defensive bonuses. Makes sense for a UU.
+	
+Ratha +50% vs recon changed to +50% vs rogue.
+I felt like they were supposed to be assassin hunters with perception 3, matching empyerean being good against stealth with light of lugus.
+
+Oops I realized I didn't give malakim knight 3 move, fixed.
+
+V3 -
+War Elephant now requires stirrups, but has +1 strength. Removed ability to work tiles.
+8/8 unit was far too strong for only horseback riding. Now 9/9, like a bear rider with bronze or horse archer with iron and hyapon. Can no longer work tiles, I found it very annoying to have a dozen extra buttons when using them as part of an army stack, and it isn't like hunters can build camps or axemen can chop forests - combat units don't normally do work.
+
+Doviello Bear Rider no longer requires resources but can use weapons. This blocks it from special mounts (same as bison rider) but it gained weapon use to compensate. I think this makes them a notably powerful UU but not beyond the pale for how strong a good UU can be. If it was a big problem, I could drop them 1 strength so they are equal with hyapon horse archer instead of stronger.
+
+Replaced strategy pedia entries to match my changes. I only know english so I haven't got any translated entries, sorry.
+
+V4 - 
+Oops I forgot to adjust mammoth rider the same way I did war elephant. Fixed.
+
+V5 -
+The Tamed Animal Mounts Update!
+Ability to sacrifice tamed animals for new mount promos!
+
+V6 - 
+The Module Cross-Compatability Update
+Now works with Arachnaphobia, Ljosalfar Expansion, and Elfndeath, editing their mount UUs to be in line with my module.
+Renamed to z_CaptainMountedTweaks so that it loads last in load order without you having to do anything (so that it properly overwrites the other modules).
+
+V7 -
+Added toad mounts
+Fixed broken text for Ride Great Beasts
+Horseman line now has -25% vs defensive melee. Number subject to tweaks or possible revision in future, if needed.
+
+V8 -
+Added compatability with Woods for Eert bear riders
+
+V9 -
+Added compatability with Chimar, and barbarian wolf riders now match appropriate horse units
+Added Tamed Animal Mounts concept page
+Slightly increased the penalty from -25% vs defensive melee to -40%.
+
+V10 -
+Chislev Mounted Plains Hunters now follow mounted tweaks horse archers standards
+The powers that be already added Tristessa's units for me, big thanks! Small errenous details from those fixed
+Sand Worms for Sih-Aya now have Special Mounts, Sand Worm Archer doesn't have first strike immunity to match MountedTweaks standards

@@ -47,8 +47,8 @@ Civ(N)
 ;This shows up as a tooltip when the user mouses over it in the launcher.
 ;Please keep it as short as possible, ideally even shorter than this line here.
 [shortdesc]
-New builder-centric civ with special great people
+Philosopher kings who play as a builder-centric civ, using great persons to specialise their cities' roles and the divine powers of Erebus as curiosities to be studied.
 
 ;Longer description to tell how awesome your stuff is.
 [desc]
-Philosopher kings who play as a builder-centric civ who use great persons to specialise their cities' roles.
+Philosopher kings who play as a builder-centric civ, using great persons to specialise their cities' roles and the divine powers of Erebus as curiosities to be studied..

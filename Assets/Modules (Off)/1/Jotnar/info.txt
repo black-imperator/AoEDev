@@ -35,7 +35,7 @@ Civ(N)
 ;This isn't needed if you're ADDING something based on the other mod, but only if you want to overwrite with higher priority than the other mod.
 ;Refer to the exact folder name of that module, NOT the [name] field!
 [dependency-soft]
-ImportantLeaders, MagisterAshes, ViciousSeas
+ImportantLeaders, MagisterAshes
 
 ;List any modules you require as a HARD dependency here.
 ;Refer to the exact folder name of that module, NOT the [name] field!

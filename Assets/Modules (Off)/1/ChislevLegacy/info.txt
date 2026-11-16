@@ -29,7 +29,7 @@ Alsark
 ;Bal         | Balance adjustments
 ;Event       | Adds new or adjusts events
 [tags]
-Civ(E), Lead
+Civ(E), Lead, Mech
 
 ;List any modules you support as a soft optional dependency that you want to be loaded after.
 ;This isn't needed if you're ADDING something based on the other mod, but only if you want to overwrite with higher priority than the other mod.
@@ -47,7 +47,7 @@ Civ(E), Lead
 ;This shows up as a tooltip when the user mouses over it in the launcher.
 ;Please keep it as short as possible, ideally even shorter than this line here.
 [shortdesc]
-Adds leaders, mechanics, civics, etc. for the Chislev.
+A collection of elective council of leaders, building, civic, and unit odds and ends. Not Recommended.
 
 ;Longer description to tell how awesome your stuff is.
 [desc]

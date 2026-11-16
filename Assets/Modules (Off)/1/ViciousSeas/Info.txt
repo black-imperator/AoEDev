@@ -48,7 +48,7 @@ CatsCivics, DrackAosNiSira, DynRel, ImportantLeaders, Jotnar, kcz_Woods, MoreEve
 ;This shows up as a tooltip when the user mouses over it in the launcher.
 ;Please keep it as short as possible, ideally even shorter than this line here.
 [shortdesc]
-Overhauls the naval aspect of Erebus, adding 2 new civs and many aquatic features+mechanics
+Overhauls the naval aspect of Erebus, adding the Bezeri and Aifon civs along with many mechanic and feature additions for the ocean.
 
 ;Longer description to tell how awesome your stuff is.
 [desc]

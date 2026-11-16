@@ -52,4 +52,4 @@ Reverts the mod to before major balance changes occurred to enjoy old toys
 
 ;Longer description to tell how awesome your stuff is.
 [desc]
-Adds the fun things that ruin the balance.
+Things like Grigori Fort Questing, most sources of Food from trade, and Giants at Cartography.

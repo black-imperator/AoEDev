@@ -52,4 +52,5 @@ Converts the Hamstalfar into the Gyldalfar, Patrian Elves, banishing the hamster
 
 ;Longer description to tell how awesome your stuff is.
 [desc]
+Converts the Hamstalfar into the Gyldalfar, Patrian Elves, banishing the hamsters forever
 Suffer not the gerbil to live.

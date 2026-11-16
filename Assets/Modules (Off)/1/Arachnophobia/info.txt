@@ -47,11 +47,11 @@ Civ(E)
 ;This shows up as a tooltip when the user mouses over it in the launcher.
 ;Please keep it as short as possible, ideally even shorter than this line here.
 [shortdesc]
-Tweaks to archos civ
+Expands and builds on the Arachnos civ with new features, improvements, art, units and spells.
 
 ;Longer description to tell how awesome your stuff is.
 [desc]
-Expands and builds on the Arachnos civ with new features, improvements, units and spells.
+Expands and builds on the Arachnos civ with new features, improvements, art, units and spells.
 
 v1.12
 By: @LeastCraft
