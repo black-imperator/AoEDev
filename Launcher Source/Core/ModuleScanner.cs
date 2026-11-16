@@ -204,8 +204,20 @@ public static class ModuleScanner
                     // SHA256.HashData(Stream/byte[]) is a .NET 5+ static convenience;
                     // .NET Framework needs an instance via SHA256.Create().
                     using var sha256 = SHA256.Create();
-                    using var stream = File.OpenRead(file);
-                    var hash = sha256.ComputeHash(stream);
+                    byte[] hash;
+                    if (ModulePathRewriter.IsTextFile(file))
+                    {
+                        // A module's own "Modules/<Load #>/<Name>/" paths change when it is moved
+                        // between Load #s (see ModulePathRewriter); they're hashed with the Load #
+                        // blanked out so that a move doesn't look like a content change.
+                        var bytes = File.ReadAllBytes(file);
+                        hash = sha256.ComputeHash(ModulePathRewriter.NormalizeForFingerprint(bytes, Path.GetFileName(moduleDir.TrimEnd(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar))));
+                    }
+                    else
+                    {
+                        using var stream = File.OpenRead(file);
+                        hash = sha256.ComputeHash(stream);
+                    }
                     entries.Add($"{rel}|{CompatHelpers.ToHexString(hash)}");
                 }
             }

@@ -85,6 +85,13 @@ public class ModuleGridView : DataGridView
     private string _tipText = "";
     private bool _tipRefreshQueued;
 
+    // While the grid is scrolling, the tooltip is hidden and not re-derived on every scroll tick;
+    // it comes back once scrolling has been quiet for a moment. Showing/hiding a tooltip window
+    // over the grid in the middle of a scroll (the grid blits its old pixels up/down and only
+    // repaints the newly exposed strip) is the likeliest cause of rows briefly appearing
+    // duplicated until scrolling stops.
+    private readonly System.Windows.Forms.Timer _scrollSettleTimer = new() { Interval = 150 };
+
     public ModuleGridView()
     {
         ShowCellToolTips = false;
@@ -93,11 +100,29 @@ public class ModuleGridView : DataGridView
         // DataGridView doesn't double-buffer by default; without it, resizing the window repaints
         // every visible cell straight to the screen and stutters badly.
         DoubleBuffered = true;
+
+        _scrollSettleTimer.Tick += (s, e) =>
+        {
+            _scrollSettleTimer.Stop();
+            UpdateCellToolTip();
+        };
+    }
+
+    /// Hides the tooltip and defers bringing it back until scrolling has settled.
+    private void OnScrolling()
+    {
+        ResetCellToolTip();
+        _scrollSettleTimer.Stop();
+        _scrollSettleTimer.Start();
+
+        // Repaint the whole viewport rather than trusting the partial blit-and-patch a scroll
+        // normally does, so no stale rows can be left behind mid-scroll.
+        Invalidate();
     }
 
     protected override void Dispose(bool disposing)
     {
-        if (disposing) _cellToolTip.Dispose();
+        if (disposing) { _scrollSettleTimer.Dispose(); _cellToolTip.Dispose(); }
         base.Dispose(disposing);
     }
 
@@ -169,13 +194,13 @@ public class ModuleGridView : DataGridView
     protected override void OnMouseWheel(MouseEventArgs e)
     {
         base.OnMouseWheel(e);
-        UpdateCellToolTip();
+        OnScrolling();
     }
 
     protected override void OnScroll(ScrollEventArgs e)
     {
         base.OnScroll(e);
-        UpdateCellToolTip();
+        OnScrolling();
     }
 
     protected override void OnMouseLeave(EventArgs e)

@@ -37,9 +37,11 @@ next to it. No installer, no registry entries, no other footprint.
 - **Close on launch?** checkbox (centered under Open Civ4 Config): saved in the config file; when
   checked, the launcher exits right after successfully starting the game.
 - **Status indicator** (centered under Instructions, mirroring the Close on launch
-  checkbox): `Status: Ready` (green), `Status: Install Error` (red; the game exe
-  wasn't found or the launcher is in the wrong folder, as found by the startup
-  check), `Status: Module Issue` (red; an active module is incompatible with
+  checkbox): `Status: Ready` (green), `Status: Launched` (orange; replaces Ready while
+  `Civ4BeyondSword.exe` is running -- only checked when you interact with the launcher:
+  window activated, status hovered, modules refreshed or game launched, never on a timer),
+  `Status: Install Error` (red; the game exe wasn't found or the launcher is in the wrong folder,
+  as found by the startup check), `Status: Module Issue` (red; an active module is incompatible with
   another, or a hard dependency isn't active/installed) or `Status: Bad Order`
   (yellow; a hard or soft dependency is active but loads after the module that
   lists it). If several apply, the first in that order wins. Hovering it shows the
@@ -59,6 +61,18 @@ next to it. No installer, no registry entries, no other footprint.
   presets) preserves its Load #. Modules dropped in from Explorer land in Load # `1`
   (`ModuleLayout.DefaultPass`). A module folder name must be unique across all
   Load #s on a side.
+- **Load # path rewriting**: modules hardcode paths to their own files (e.g. a promotion's
+  `<Button>Modules/1/MyModule/Art/...</Button>`), where the number is the Load #. When a module
+  is moved to a different Load #, `Core/ModulePathRewriter.cs` silently rewrites every
+  `Modules/<old>/<ModuleName>/` in the module's text files (`.xml .txt .py .ini .cfg .csv`) to the
+  new number (either slash direction). Only a module's references to its *own* folder are changed;
+  files are edited as raw bytes so encoding, BOM and line endings are preserved. A popup appears
+  only if a file couldn't be updated. Module fingerprints blank out that number, so moving a module
+  doesn't make it look changed to presets.
+- **Game-running warning**: if `Civ4BeyondSword.exe` is running (checked fresh at that moment),
+  pressing Launch or moving modules (drag/drop, Set Load #, presets, autosort) first shows a
+  Continue / Abort popup (Abort is the default). Aborting a move changes nothing; aborting a preset
+  apply leaves the modules as they were.
 - **Autosort**: `Autosort active modules`, at the bottom of the right-click menu of
   either list, and offered as a button in the load order popup when launching or
   saving a preset with a bad order. Like Update Schemas, it first shows what it
@@ -220,6 +234,7 @@ AoELauncher/
     CompatHelpers.cs          <- small .NET Framework 4.8 shims (hex encoding, relative paths)
     InstallLocator.cs         <- placement validation only, no registry/disk scanning
     ModuleLayout.cs           <- Load # (0-4) folder layout helpers
+    ModulePathRewriter.cs     <- updates a module's own Modules/<Load #>/... paths when it changes Load #
     ModuleScanner.cs          <- scans modules, parses info.txt, computes fingerprints
     ModuleChecker.cs          <- [incompatible], [dependency-hard] and [dependency-soft] verification
     AutosortPlanner.cs        <- dry-run planner behind "Autosort active modules"

@@ -51,7 +51,14 @@ public class MainForm : Form
         "Restart the launcher to re-run the setup check.";
 
     /// Every value the status indicator can show; the control is sized to fit the widest.
-    private static readonly string[] StatusValues = { "Ready", "Install Error", "Module Issue", "Bad Order" };
+    private static readonly string[] StatusValues = { "Ready", "Launched", "Install Error", "Module Issue", "Bad Order" };
+
+    /// Whether Civ4BeyondSword.exe was running the last time it was checked. It is only checked in
+    /// response to the user interacting with the launcher (window activated, status hovered, modules
+    /// refreshed, game launched), never on a timer.
+    private bool _gameRunning;
+    private DateTime _lastGameCheckUtc = DateTime.MinValue;
+    private static readonly TimeSpan GameCheckThrottle = TimeSpan.FromSeconds(1);
 
     /// Status tooltips are cut to this many lines so a long problem list can't run off the screen.
     private const int MaxStatusTipLines = 28;
@@ -317,6 +324,7 @@ public class MainForm : Form
         _statusIndicator = new StatusIndicator { Top = chkCloseOnLaunch.Top, Height = chkCloseOnLaunch.Height };
         _statusIndicator.Width = _statusIndicator.MeasureWidth(StatusValues);
         _statusIndicator.SetStatus("Ready", Theme.StatusGood);
+        _statusIndicator.MouseEnter += (s, args) => CheckGameRunning();
 
         topPanel.Controls.Add(btnHelp);
         topPanel.Controls.Add(btnLaunch);
@@ -399,7 +407,7 @@ public class MainForm : Form
 
         void LayoutFilterRow()
         {
-            int spacing = Theme.S(20);
+            int spacing = Theme.S(24); // gap between filter sets (was 20; +20%)
             int topPad = Theme.S(4);
 
             lblFilters.Left = (filterPanel.Width - lblFilters.Width) / 2;
@@ -1005,6 +1013,15 @@ public class MainForm : Form
             return;
         }
 
+        if (!ConfirmGameNotRunning("Game Already Running",
+                "Launching again will start a second copy of the game, which can cause crashes, " +
+                "save problems or conflicts between the two.",
+                "launching the game"))
+        {
+            lblStatus.Text = "Launch aborted.";
+            return;
+        }
+
         if (!VerifyActiveModules("launching the game"))
         {
             lblStatus.Text = "Launch aborted.";
@@ -1016,6 +1033,9 @@ public class MainForm : Form
             var modFolderName = Path.GetFileName(_modPath);
             GameLauncher.Launch(_btsExePath, modFolderName);
             lblStatus.Text = "Launching Civilization IV...";
+            _gameRunning = true;
+            _lastGameCheckUtc = DateTime.UtcNow;
+            UpdateStatusIndicator();
 
             if (_config.CloseOnLaunch)
                 Close();
@@ -1233,6 +1253,12 @@ public class MainForm : Form
                 tip = BuildOrderText(analysis) +
                       "\n\nRight-click a module and choose \"Autosort active modules\" to try an automatic fix.";
             }
+            else if (_gameRunning)
+            {
+                value = "Launched";
+                color = Theme.Accent;
+                tip = "Civ4BeyondSword.exe is running. Module changes made now only take effect the next time the game is started.";
+            }
             else
             {
                 value = "Ready";
@@ -1243,6 +1269,46 @@ public class MainForm : Form
 
         _statusIndicator.SetStatus(value, color);
         _statusToolTip.SetToolTip(_statusIndicator, LimitTipLines(tip));
+    }
+
+    /// Looks for the running game (rate-limited to once a second unless forced) and returns true if
+    /// the answer changed. Does not touch the UI.
+    private bool RefreshGameRunning(bool force = false)
+    {
+        var now = DateTime.UtcNow;
+        if (!force && now - _lastGameCheckUtc < GameCheckThrottle) return false;
+        _lastGameCheckUtc = now;
+
+        var running = GameLauncher.IsRunning(_btsExePath);
+        if (running == _gameRunning) return false;
+        _gameRunning = running;
+        return true;
+    }
+
+    /// Fresh (unthrottled) check right before something that shouldn't happen under a running game.
+    /// If the game is running, asks Continue/Abort; returns true if the action should go ahead.
+    private bool ConfirmGameNotRunning(string title, string explanation, string abortAction)
+    {
+        if (RefreshGameRunning(force: true))
+            UpdateStatusIndicator();
+        if (!_gameRunning) return true;
+
+        var text = "Civ4BeyondSword.exe appears to be running.\n\n" + explanation +
+                   $"\n\nContinue anyway, or abort {abortAction}?";
+        return ShowConfirmMessage(title, text, "Continue", "Abort", cancelIsDefault: true);
+    }
+
+    /// Checks for the running game and updates the status readout if that changed.
+    private void CheckGameRunning()
+    {
+        if (_statusIndicator != null && RefreshGameRunning())
+            UpdateStatusIndicator();
+    }
+
+    protected override void OnActivated(EventArgs e)
+    {
+        base.OnActivated(e);
+        CheckGameRunning(); // e.g. coming back to the launcher after playing
     }
 
     private static string LimitTipLines(string text)
@@ -1310,9 +1376,10 @@ public class MainForm : Form
         if (!ShowConfirmMessage("Autosort - Confirm", preview.ToString(), "Apply", "Cancel"))
             return false;
 
-        PerformMoves(plan.Moves
-            .Select(m => new MoveRequest { Source = m.Module.FullPath, ToActive = true, Pass = m.ToPass })
-            .ToList());
+        if (!PerformMoves(plan.Moves
+                .Select(m => new MoveRequest { Source = m.Module.FullPath, ToActive = true, Pass = m.ToPass })
+                .ToList()))
+            return false;
         lblStatus.Text = $"Autosort changed the Load # of {plan.Moves.Count} module(s).";
         return true;
     }
@@ -1334,6 +1401,7 @@ public class MainForm : Form
         RepopulateGrids(keepScroll: true);
 
         // Runs once per refresh, which is once per batch of moves, never per module moved.
+        RefreshGameRunning(force: true);
         UpdateStatusIndicator();
 
         if (firstLaunch)
@@ -1930,9 +1998,20 @@ public class MainForm : Form
 
     /// Performs every requested move (between sides and/or between load passes), reports any
     /// failures together in one message, and refreshes the lists once at the end.
-    private void PerformMoves(List<MoveRequest> requests)
+    /// Returns false (and moves nothing) if the game is running and the user chose to abort.
+    private bool PerformMoves(List<MoveRequest> requests)
     {
+        if (requests.Count > 0 && !ConfirmGameNotRunning("Game Running",
+                "The running game has already loaded its modules, so moving them now won't affect it until it is " +
+                "restarted, and moving files the game has open can fail or cause problems.",
+                "moving modules"))
+        {
+            lblStatus.Text = "Move aborted.";
+            return false;
+        }
+
         var errors = new List<string>();
+        var pathErrors = new List<string>();
         foreach (var req in requests)
         {
             try
@@ -1962,8 +2041,17 @@ public class MainForm : Form
                     continue;
                 }
 
+                var oldPass = ModuleLayout.GetPassFromPath(src);
                 Directory.CreateDirectory(targetDir);
                 Directory.Move(src, dest);
+
+                // The module's own hardcoded "Modules/<Load #>/<name>/..." paths (art buttons etc.)
+                // have to follow it to the new Load #. Silent unless something fails.
+                if (!string.Equals(oldPass, pass, StringComparison.Ordinal))
+                {
+                    foreach (var e in ModulePathRewriter.Rewrite(dest, name, oldPass, pass))
+                        pathErrors.Add($"{name}: {e}");
+                }
             }
             catch (Exception ex)
             {
@@ -1971,15 +2059,29 @@ public class MainForm : Form
             }
         }
 
-        if (errors.Count > 0)
+        if (errors.Count > 0 || pathErrors.Count > 0)
         {
-            MessageBox.Show(this, "Some modules couldn't be moved:\n\n" + string.Join("\n", errors) +
-                "\n\nIf this keeps happening, try running the launcher as Administrator " +
-                "(this can happen when the game is installed under Program Files).",
-                "Move Modules", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            var text = new StringBuilder();
+            if (errors.Count > 0)
+            {
+                text.AppendLine("Some modules couldn't be moved:\n");
+                text.AppendLine(string.Join("\n", errors));
+                text.AppendLine();
+            }
+            if (pathErrors.Count > 0)
+            {
+                text.AppendLine("These modules were moved, but some of their files couldn't be updated with the new Load #, " +
+                                "so their art or other file paths may be broken:\n");
+                text.AppendLine(string.Join("\n", pathErrors));
+                text.AppendLine();
+            }
+            text.Append("If this keeps happening, try running the launcher as Administrator " +
+                        "(this can happen when the game is installed under Program Files).");
+            MessageBox.Show(this, text.ToString(), "Move Modules", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         RefreshModules();
+        return true;
     }
 
     private void InstallDroppedModules(string[] droppedPaths, bool toActive)
@@ -2137,7 +2239,12 @@ public class MainForm : Form
         }
 
         Cursor = Cursors.WaitCursor;
-        if (requests.Count > 0) PerformMoves(requests);
+        if (requests.Count > 0 && !PerformMoves(requests))
+        {
+            Cursor = Cursors.Default;
+            lblStatus.Text = $"Applying preset '{preset.Name}' aborted.";
+            return;
+        }
 
         // Recompute against the CURRENT (post-move) locations. PerformMoves() above may have
         // relocated some of these folders, and comparing against the pre-move snapshot's now
