@@ -4,7 +4,7 @@
 ;User-readable name of the module, please keep the folder name and module name
 ;starting with the same letter(s) to help avoid load sequencing issues.
 [name]
-Z - Historics Converted To Importants
+Captain Mounted Tweaks
 
 ;This is you!
 [author]
@@ -29,13 +29,13 @@ Captain
 ;Bal         | Balance adjustments
 ;Event       | Adds new or adjusts events
 [tags]
-Civ(E), Lead
+Bal
 
 ;List any modules you support as a soft optional dependency that you want to be loaded after.
 ;This isn't needed if you're ADDING something based on the other mod, but only if you want to overwrite with higher priority than the other mod.
 ;Refer to the exact folder name of that module, NOT the [name] field!
 [dependency-soft]
-ViciousSeas
+LjosalfarExpansion, Arachnophobia, ElfnDeath, Goblin, ImportantLeaders, kcz_Woods
 
 ;List any modules you require as a HARD dependency here.
 ;Refer to the exact folder name of that module, NOT the [name] field!
@@ -48,35 +48,22 @@ ViciousSeas
 ;This shows up as a tooltip when the user mouses over it in the launcher.
 ;Please keep it as short as possible, ideally even shorter than this line here.
 [shortdesc]
-Gives every civ an important leader type
+Rebalances+buffs Cavalry line, allows sacrificing tamed animals for promotions
 
 ;Longer description to tell how awesome your stuff is.
 [desc]
-Changes each following leader to important with one trait, listed as follows. Capria still has aspect of war, it is just flagged as a civ trait so she can earn 2 personality traits. Casin changed to match other importants.
-Some I picked purely to offset the historical choices - sheelba is organized since jonas is aggressive, mahala is trader since charadon is warlike, cassin is philosophical because hannah is financial.
+Boar: -1 move, trades 40% archer bonus for 40% melee bonus (khazad boar riders changed to match). Warriors beware!
+Rat: -1 move, +25% city attack 
+Lion: As lion blood, Courage
+Tiger: Stealth 1 and +1 first strike. Nyxkin start with this.
+Stag: As stag blood, 20% magic resist and forest movement. Fyrdwell start with this.
+Bear: Generic name Great Beast (to be used for doviello and khazad UUs), +2 attack strength, -1 move. UUs total stats won't change, they'll get a defense boost to end up where they were before
+Wolf: +2 perception, go sniff out some rogue units
+Dinosaur: Trades 40% archer bonus for 40% recon bonus.
+Spider: -1 move and strength, but +2 poison strength.
+Flying: Requires Warhorses, but grants flying. No movement bonus like pegasus mount has and locked until late game, so austrin are flying mount experts.
+Gorillas do not make for good riding animals
+Not planning on anything for sand worms. Because any mounted unit that rides on a sandworm probably deserves radical function changes.
+Toads: amphibious and doubled marsh movement. Don't ask me what a toad chariot looks like.
 
-- Amurites - Valledia [Charismatic]
-- Archos - Veraato [Arcane]
-- Bannor - Capria [Industrious]
-- Calabim - Kind of think Mahon the Butcher with tyrant trait is weird enough so they get a 'normal one', Flauros [Financial]
-- Chislev - Natane [Organized]
-- Clan of Embers - Sheelba [Organized]
-- Doviello - Mahala [Traders]
-- Khazad - Kandros Fir [Financial]
-- Lanun - Cassin loses financial
-- Luchuirp - Letigo changes because aggressive is lame on golem faction, spiritual at least lets you lean into your religous units and is not 'wasted' [Spiritual]
-- Scions - Korinna [Aggressive]
-
-V2, renamed to Historics Converted To Importants and added:
-- Austrin - Deirda [Expansive]
-- Elohim - Ethne [Spiritual]
-- Hippus - Tasunke [Raiders]
-- Ljosalfar - Thessa [Expansive]
-- Luchuirp - Garrim Gyr [Financial]
-- Mazatl - Hianthrogh [Defender]
-- Sheaim - Tebryn [Arcane]
-- Balseraphs - Keelyn [Summoner]
-
-with bezeri from Vicious Seas
-
-- Bezer - Cimesiat [Charismatic] (still feral too)
+More info in the changes.txt file next to this one.

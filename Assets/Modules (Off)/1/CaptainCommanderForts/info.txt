@@ -4,7 +4,7 @@
 ;User-readable name of the module, please keep the folder name and module name
 ;starting with the same letter(s) to help avoid load sequencing issues.
 [name]
-Z - Captain Commander Forts
+Captain Commander Forts
 
 ;This is you!
 [author]
