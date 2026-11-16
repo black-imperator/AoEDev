@@ -620,7 +620,7 @@
 			</ReligionWeightModifiers>
 		</LeaderHeadInfo>
 
-        <LeaderHeadInfo>		<!-- Some dryad leader --><!-- Eertian leader -->
+       <!-- <LeaderHeadInfo>		<!{1}** Some dryad leader **{1}><!{1}** Eertian leader **{1}>
 			<Type>LEADER_DRYAD</Type>
 			<Description>TXT_KEY_LEADER_DRYAD</Description>
 			<Civilopedia>TXT_KEY_LEADER_DRYAD_PEDIA</Civilopedia>
@@ -1114,10 +1114,10 @@
 					<ImprovementType>IMPROVEMENT_MANA_NATURE</ImprovementType>
 					<iWeightModifier>40</iWeightModifier>
 				</ImprovementWeightModifier>
-				<!--<ImprovementWeightModifier>
+				<!{1}**<ImprovementWeightModifier>
 					<ImprovementType>IMPROVEMENT_WILD_GARDEN</ImprovementType>
 					<iWeightModifier>30</iWeightModifier>
-				</ImprovementWeightModifier>-->
+				</ImprovementWeightModifier>**{1}>
 			</ImprovementWeightModifiers>
 			<DiplomacyIntroMusicPeace>
 				<DiploMusicPeaceEra>
@@ -1220,7 +1220,7 @@
 					<iWeightModifier>-100</iWeightModifier>
 				</ReligionWeightModifier>
 			</ReligionWeightModifiers>
-		</LeaderHeadInfo>
+		</LeaderHeadInfo>-->
 
     </LeaderHeadInfos>
 </Civ4LeaderHeadInfos>

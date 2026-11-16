@@ -5156,6 +5156,7 @@ def spellWonder(caster):
 			caster.cast(getInfoType('SPELL_WITHER'))
 		elif iRnd == 58:
 			if not bFavored or bCity == False:
+				iImprovement = pPlot.getImprovementType()
 				iBonusPenguin = pPlot.getBonusType
 				bValid = True
 				if iBonusPenguin != -1 :
