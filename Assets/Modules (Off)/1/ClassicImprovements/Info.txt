@@ -44,7 +44,6 @@ Arachnophobia, DrackAosNiSira, Dwarves, HighRoads, kcz_Woods, ViciousSeas
 ;If this module should NOT be run alongside another (e.g. you both overhaul the same leader)
 ;As dependency, use the exact folder name of that module, NOT the [name] field!
 [incompatible]
-WorkerRework
 
 ;This shows up as a tooltip when the user mouses over it in the launcher.
 ;Please keep it as short as possible, ideally even shorter than this line here.
