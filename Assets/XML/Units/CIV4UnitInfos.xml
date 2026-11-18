@@ -31821,7 +31821,7 @@
 			<Class>UNITCLASS_WARRIOR</Class>
 			<Type>UNIT_CONSCRIPT</Type>
 			<Combat>UNITCOMBAT_MELEE</Combat>
-			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_CITY_DEFENSE</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_CONSCRIPT</Description>
 			<Civilopedia>TXT_KEY_UNIT_CONSCRIPT_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_MILITARY</Advisor>
@@ -31837,11 +31837,15 @@
 			</UnitClassUpgrades>
 			<UnitAIs>
 				<UnitAI>
-					<UnitAIType>UNITAI_ATTACK</UnitAIType>
+					<UnitAIType>UNITAI_CITY_COUNTER</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 				<UnitAI>
-					<UnitAIType>UNITAI_ATTACK_CITY</UnitAIType>
+					<UnitAIType>UNITAI_CITY_DEFENSE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_COUNTER</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
@@ -32475,7 +32479,7 @@
 			<Class>UNITCLASS_HUNTER</Class>
 			<Type>UNIT_BOUNTY_HUNTER</Type>
 			<Combat>UNITCOMBAT_RECON</Combat>
-			<DefaultUnitAI>UNITAI_EXPLORE</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
 			<iExtraPerception>2</iExtraPerception>
 			<Description>TXT_KEY_UNIT_BOUNTY_HUNTER</Description>
 			<Civilopedia>TXT_KEY_UNIT_BOUNTY_HUNTER_PEDIA</Civilopedia>
@@ -32492,7 +32496,15 @@
 			</UnitClassUpgrades>
 			<UnitAIs>
 				<UnitAI>
-					<UnitAIType>UNITAI_EXPLORE</UnitAIType>
+					<UnitAIType>UNITAI_ATTACK</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_PILLAGE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_COUNTER</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
@@ -32549,7 +32561,7 @@
 			<Class>UNITCLASS_RANGER</Class>
 			<Type>UNIT_SLAVE_HUNTER</Type>
 			<Combat>UNITCOMBAT_RECON</Combat>
-			<DefaultUnitAI>UNITAI_EXPLORE</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
 			<iExtraPerception>2</iExtraPerception>
 			<Description>TXT_KEY_UNIT_SLAVE_HUNTER</Description>
 			<Civilopedia>TXT_KEY_UNIT_SLAVE_HUNTER_PEDIA</Civilopedia>
@@ -32565,7 +32577,15 @@
 			</UnitClassUpgrades>
 			<UnitAIs>
 				<UnitAI>
-					<UnitAIType>UNITAI_EXPLORE</UnitAIType>
+					<UnitAIType>UNITAI_ATTACK</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_PILLAGE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_COUNTER</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
@@ -32615,7 +32635,7 @@
 			<Class>UNITCLASS_BEASTMASTER</Class>
 			<Type>UNIT_RAIDER</Type>
 			<Combat>UNITCOMBAT_RECON</Combat>
-			<DefaultUnitAI>UNITAI_EXPLORE</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
 			<iExtraPerception>2</iExtraPerception>
 			<Description>TXT_KEY_UNIT_RAIDER</Description>
 			<Civilopedia>TXT_KEY_UNIT_RAIDER_PEDIA</Civilopedia>
@@ -32632,7 +32652,11 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 				<UnitAI>
-					<UnitAIType>UNITAI_EXPLORE</UnitAIType>
+					<UnitAIType>UNITAI_PILLAGE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_COUNTER</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
@@ -32700,7 +32724,7 @@
 		<UnitInfo>        <!-- Aspirant -->
 			<Class>UNITCLASS_ADVENTURER</Class>
 			<Type>UNIT_ASPIRANT</Type>
-			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_CITY_DEFENSE</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_ASPIRANT</Description>
 			<Civilopedia>TXT_KEY_UNIT_ASPIRANT_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_ASPIRANT_STRATEGY</Strategy>
@@ -32716,11 +32740,7 @@
 			</UnitClassUpgrades>
 			<UnitAIs>
 				<UnitAI>
-					<UnitAIType>UNITAI_ATTACK_CITY</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_ATTACK</UnitAIType>
+					<UnitAIType>UNITAI_CITY_DEFENSE</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
