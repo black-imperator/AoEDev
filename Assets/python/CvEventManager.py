@@ -1309,26 +1309,30 @@ class CvEventManager:
 			git				= gc.getInfoTypeForString
 			pPlayer			= gc.getPlayer(iPlayer)
 			pUnit			= pPlayer.getUnit(iUnit)
-			pPlot			= pUnit.plot()
-			iRnd			= CyGame().getSorenRandNum(100,"OrphanedGoblin effect")
-			if iButtonId == 0:
-				pUnit.setHasPromotion(git('PROMOTION_ORC_SLAYING'), True)
-				pUnit.setHasPromotion(git('PROMOTION_CRAZED'), True)
-				pPlayer.changeBroadAlignment(-5)
-			elif iButtonId == 1:
-				pUnit.setHasPromotion(git('PROMOTION_GOBLIN'), True)
-			elif iButtonId == 2:
-				pNewPlot = findClearPlot(-1, pPlot)
-				if pNewPlot != -1:
-					if iRnd < 50:
-						pGoblinPlayer = gc.getPlayer(gc.getORC_PLAYER())
-					else:
-						pGoblinPlayer = pPlayer
-					newUnit = pGoblinPlayer.initUnit(git('UNIT_GOBLIN'), pNewPlot.getX(),pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-					newUnit.setHasPromotion(git('PROMOTION_WEAK'), True)
-			else:
-				pUnit.changeExperience(-1,-1,False,False,False)
-				newUnit = pPlayer.initUnit(git('UNIT_GOBLIN'), pPlot.getX(),pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+			# The unit may have died before the choice was resolved (the popup
+			# stores only its id); getUnit() then returns a null CyUnit whose
+			# plot() is None.  Do nothing rather than raise.
+			if not pUnit.isNone():
+				pPlot			= pUnit.plot()
+				iRnd			= CyGame().getSorenRandNum(100,"OrphanedGoblin effect")
+				if iButtonId == 0:
+					pUnit.setHasPromotion(git('PROMOTION_ORC_SLAYING'), True)
+					pUnit.setHasPromotion(git('PROMOTION_CRAZED'), True)
+					pPlayer.changeBroadAlignment(-5)
+				elif iButtonId == 1:
+					pUnit.setHasPromotion(git('PROMOTION_GOBLIN'), True)
+				elif iButtonId == 2:
+					pNewPlot = findClearPlot(-1, pPlot)
+					if pNewPlot != -1:
+						if iRnd < 50:
+							pGoblinPlayer = gc.getPlayer(gc.getORC_PLAYER())
+						else:
+							pGoblinPlayer = pPlayer
+						newUnit = pGoblinPlayer.initUnit(git('UNIT_GOBLIN'), pNewPlot.getX(),pNewPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+						newUnit.setHasPromotion(git('PROMOTION_WEAK'), True)
+				else:
+					pUnit.changeExperience(-1,-1,False,False,False)
+					newUnit = pPlayer.initUnit(git('UNIT_GOBLIN'), pPlot.getX(),pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
 		elif iData1 == 121:
 			gc = CyGlobalContext()

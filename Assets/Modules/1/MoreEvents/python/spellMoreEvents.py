@@ -552,6 +552,14 @@ def postCombatLossOrphanedGoblin(pCaster, pOpponent):
 	# isAlive(), which only distinguishes a living unit from undead/demons.
 	if pOpponent.isDead():
 		return
+	# Suicide units (Fireball, Meteor, kamikaze promotions) are not dead yet
+	# when this runs: CvUnit::updateCombat calls combatWon() -- which fires
+	# this callback -- and only then kill()s the suicide attacker.  The human
+	# popup stores the unit id and resolves it later, after the unit is gone,
+	# so every choice would act on a missing unit.  Same reasoning as above;
+	# mirrors CvUnit::isSuicide().
+	if gc.getUnitInfo(pOpponent.getUnitType()).isSuicide() or pOpponent.getKamikazePercent() != 0:
+		return
 	iPlayer		= pOpponent.getOwner()
 	pPlayer		= gc.getPlayer(iPlayer)
 	iLostPlayer	= pCaster.getOwner()
