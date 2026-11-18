@@ -2545,7 +2545,7 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 			{
 				szString.append(NEWLINE);
 				szString.append(gDLL->getText((pUnit->getPeakCost() < 0) ? "TXT_KEY_COLOR_POSITIVE" : "TXT_KEY_COLOR_NEGATIVE"));
-				szString.append(gDLL->getText("TXT_KEY_PROMOTION_MOVE_COST_PEAK_TEXT", pUnit->getHillCost()));
+				szString.append(gDLL->getText("TXT_KEY_PROMOTION_MOVE_COST_PEAK_TEXT", pUnit->getPeakCost()));
 				szString.append(gDLL->getText("TXT_KEY_COLOR_REVERT"));
 			}
 			for (int iI = 0; iI < GC.getNumTerrainInfos(); ++iI)
