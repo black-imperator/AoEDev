@@ -2228,7 +2228,7 @@ class CustomFunctions:
 
 	### TODO: Dictionaries
 	def doInsane(self, iPlayer):
-		if CyGame().getSorenRandNum(1, "Insane Trait Roll") != 0: return
+		if CyGame().getSorenRandNum(50, "Insane Trait Roll") != 0: return
 		gc			= CyGlobalContext()
 		pPlayer		= gc.getPlayer(iPlayer)
 		pCapital	= pPlayer.getCapitalCity()
