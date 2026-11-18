@@ -2260,6 +2260,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_CODE_OF_JUNIL</ArtDefineTag>
 			<HolyCity>RELIGION_THE_ORDER</HolyCity>
 			<ReligionType>RELIGION_THE_ORDER</ReligionType>
+			<PrereqReligion>RELIGION_THE_ORDER</PrereqReligion>
 			<GlobalReligionCommerce>RELIGION_THE_ORDER</GlobalReligionCommerce>
 			<FreeBonus>BONUS_MANA_LAW</FreeBonus>
 			<FreeBonus2>BONUS_CARCEREM</FreeBonus2>
@@ -2693,6 +2694,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_DIES_DIEI</ArtDefineTag>
 			<HolyCity>RELIGION_THE_EMPYREAN</HolyCity>
 			<ReligionType>RELIGION_THE_EMPYREAN</ReligionType>
+			<PrereqReligion>RELIGION_THE_EMPYREAN</PrereqReligion>
 			<GlobalReligionCommerce>RELIGION_THE_EMPYREAN</GlobalReligionCommerce>
 			<FreeBonus>BONUS_MANA_SUN</FreeBonus>
 			<iNumFreeBonuses>1</iNumFreeBonuses>
@@ -5040,6 +5042,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_NOX_NOCTIS</ArtDefineTag>
 			<HolyCity>RELIGION_COUNCIL_OF_ESUS</HolyCity>
 			<ReligionType>RELIGION_COUNCIL_OF_ESUS</ReligionType>
+			<PrereqReligion>RELIGION_COUNCIL_OF_ESUS</PrereqReligion>
 			<GlobalReligionCommerce>RELIGION_COUNCIL_OF_ESUS</GlobalReligionCommerce>
 			<FreeBonus>BONUS_MANA_SHADOW</FreeBonus>
 			<iNumFreeBonuses>1</iNumFreeBonuses>
@@ -6937,6 +6940,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_SONG_OF_AUTUMN</ArtDefineTag>
 			<HolyCity>RELIGION_FELLOWSHIP_OF_LEAVES</HolyCity>
 			<ReligionType>RELIGION_FELLOWSHIP_OF_LEAVES</ReligionType>
+			<PrereqReligion>RELIGION_FELLOWSHIP_OF_LEAVES</PrereqReligion>
 			<GlobalReligionCommerce>RELIGION_FELLOWSHIP_OF_LEAVES</GlobalReligionCommerce>
 			<FreeBonus>BONUS_MANA_NATURE</FreeBonus>
 			<iNumFreeBonuses>1</iNumFreeBonuses>
@@ -7082,6 +7086,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_STIGMATA_ON_THE_UNBORN</ArtDefineTag>
 			<HolyCity>RELIGION_THE_ASHEN_VEIL</HolyCity>
 			<ReligionType>RELIGION_THE_ASHEN_VEIL</ReligionType>
+			<PrereqReligion>RELIGION_THE_ASHEN_VEIL</PrereqReligion>
 			<GlobalReligionCommerce>RELIGION_THE_ASHEN_VEIL</GlobalReligionCommerce>
 			<FreeBonus>BONUS_MANA_ENTROPY</FreeBonus>
 			<iNumFreeBonuses>1</iNumFreeBonuses>
@@ -7225,6 +7230,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_TABLETS_OF_BAMBUR</ArtDefineTag>
 			<HolyCity>RELIGION_RUNES_OF_KILMORPH</HolyCity>
 			<ReligionType>RELIGION_RUNES_OF_KILMORPH</ReligionType>
+			<PrereqReligion>RELIGION_RUNES_OF_KILMORPH</PrereqReligion>
 			<GlobalReligionCommerce>RELIGION_RUNES_OF_KILMORPH</GlobalReligionCommerce>
 			<FreeBonus>BONUS_MANA_EARTH</FreeBonus>
 			<iNumFreeBonuses>1</iNumFreeBonuses>
@@ -8409,6 +8415,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_THE_NECRONOMICON</ArtDefineTag>
 			<HolyCity>RELIGION_OCTOPUS_OVERLORDS</HolyCity>
 			<ReligionType>RELIGION_OCTOPUS_OVERLORDS</ReligionType>
+			<PrereqReligion>RELIGION_OCTOPUS_OVERLORDS</PrereqReligion>
 			<GlobalReligionCommerce>RELIGION_OCTOPUS_OVERLORDS</GlobalReligionCommerce>
 			<FreeBonus>BONUS_MANA_WATER</FreeBonus>
 			<iNumFreeBonuses>1</iNumFreeBonuses>
@@ -16552,6 +16559,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_THE_HAND</ArtDefineTag>
 			<HolyCity>RELIGION_WHITE_HAND</HolyCity>
 			<ReligionType>RELIGION_WHITE_HAND</ReligionType>
+			<PrereqReligion>RELIGION_WHITE_HAND</PrereqReligion>
 			<FreeBonus>BONUS_MANA_ICE</FreeBonus>
 			<iNumFreeBonuses>1</iNumFreeBonuses>
 			<GreatPeopleUnitClass>UNITCLASS_PROPHET</GreatPeopleUnitClass>
