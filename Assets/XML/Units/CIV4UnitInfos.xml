@@ -42684,6 +42684,9 @@
 					<bBuild>1</bBuild>
 				</Build>
 			</Builds>
+			<AllowPromotions>
+				<Promotion>PROMOTION_EMPYREAN_PATH</Promotion>
+			</AllowPromotions>
 			<PrereqTech>TECH_STIRRUPS</PrereqTech>
 			<iCost>-1</iCost>
 			<iMoves>2</iMoves>
@@ -42808,6 +42811,9 @@
 					<bBuild>1</bBuild>
 				</Build>
 			</Builds>
+			<AllowPromotions>
+				<Promotion>PROMOTION_EMPYREAN_PATH</Promotion>
+			</AllowPromotions>
 			<PrereqTech>TECH_STIRRUPS</PrereqTech>
 			<iCost>-1</iCost>
 			<iMoves>2</iMoves>
