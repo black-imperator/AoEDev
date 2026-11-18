@@ -1117,11 +1117,20 @@ def ShrinkMap(largeMap,lWidth,lHeight,sWidth,sHeight):
 			yyStop = int((y + 1) * yScale)
 			if yyStop < ((y + 1) * yScale):
 				yyStop += 1
+			#Rounding can push the last cell's far edge a hair past the end
+			#of the large map, which the round-up above turns into one whole
+			#extra row or column - an index off the end of largeMap. A
+			#Standard map with east-west wrap (height map trimmed to 192
+			#wide, 84 plots) crashed here; with the FPU in single precision
+			#192.0/84 * 84 comes out as 192.00001. The overhang carries
+			#~zero weight anyway, so just clamp.
+			yyStop = min(yyStop,lHeight)
 			for yy in range(yyStart,yyStop):
 				xxStart = int(x * xScale)
 				xxStop = int((x + 1) * xScale)
 				if xxStop < ((x + 1) * xScale):
 					xxStop += 1
+				xxStop = min(xxStop,lWidth)
 				for xx in range(xxStart,xxStop):
 					weight = GetWeight(x,y,xx,yy,xScale,yScale)
 					i = yy * lWidth + xx
