@@ -15769,13 +15769,16 @@ void CvPlayer::changeFreeBuildingCount(BuildingClassTypes eIndex, int iChange)
 
 			for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 			{
-				if (eBuilding == NO_BUILDING)
+				// Fall back to this city's own version per city: cities of different
+				// civs may have different (or no) buildings for the class.
+				BuildingTypes eCityBuilding = eBuilding;
+				if (eCityBuilding == NO_BUILDING)
 				{
-					eBuilding =(BuildingTypes) pLoopCity->getCityBuildings(eIndex);
+					eCityBuilding = (BuildingTypes)pLoopCity->getCityBuildings(eIndex);
 				}
-				if (eBuilding != NO_BUILDING)
+				if (eCityBuilding != NO_BUILDING)
 				{
-					pLoopCity->setNumFreeBuilding(eBuilding, 1);
+					pLoopCity->setNumFreeBuilding(eCityBuilding, 1);
 				}
 			}
 		}
@@ -15785,13 +15788,14 @@ void CvPlayer::changeFreeBuildingCount(BuildingClassTypes eIndex, int iChange)
 
 			for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 			{
-				if (eBuilding == NO_BUILDING)
+				BuildingTypes eCityBuilding = eBuilding;
+				if (eCityBuilding == NO_BUILDING)
 				{
-					eBuilding = (BuildingTypes)pLoopCity->getCityBuildings(eIndex);
+					eCityBuilding = (BuildingTypes)pLoopCity->getCityBuildings(eIndex);
 				}
-				if (eBuilding != NO_BUILDING)
+				if (eCityBuilding != NO_BUILDING)
 				{
-					pLoopCity->setNumFreeBuilding(eBuilding, 0);
+					pLoopCity->setNumFreeBuilding(eCityBuilding, 0);
 				}
 			}
 		}
