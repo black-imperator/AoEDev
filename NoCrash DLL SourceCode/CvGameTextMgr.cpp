@@ -17891,6 +17891,42 @@ void CvGameTextMgr::setBasicUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit,
 		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_IGNORE_TERRAIN"));
 	}
 
+	// Terrain move modifiers (GWS): mirror the per-unit text in setUnitHelp(const CvUnit*)
+	if (GC.getUnitInfo(eUnit).getUnitHillCost() != 0)
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText((GC.getUnitInfo(eUnit).getUnitHillCost() < 0) ? "TXT_KEY_COLOR_POSITIVE" : "TXT_KEY_COLOR_NEGATIVE"));
+		szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_MOVE_COST_HILL_TEXT", GC.getUnitInfo(eUnit).getUnitHillCost()));
+		szBuffer.append(gDLL->getText("TXT_KEY_COLOR_REVERT"));
+	}
+	if (GC.getUnitInfo(eUnit).getUnitPeakCost() != 0)
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText((GC.getUnitInfo(eUnit).getUnitPeakCost() < 0) ? "TXT_KEY_COLOR_POSITIVE" : "TXT_KEY_COLOR_NEGATIVE"));
+		szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_MOVE_COST_PEAK_TEXT", GC.getUnitInfo(eUnit).getUnitPeakCost()));
+		szBuffer.append(gDLL->getText("TXT_KEY_COLOR_REVERT"));
+	}
+	for (int iI = 0; iI < GC.getNumTerrainInfos(); ++iI)
+	{
+		if (GC.getUnitInfo(eUnit).getUnitTerrainCost(iI) != 0)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText((GC.getUnitInfo(eUnit).getUnitTerrainCost(iI) < 0) ? "TXT_KEY_COLOR_POSITIVE" : "TXT_KEY_COLOR_NEGATIVE"));
+			szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_MOVE_COST_TEXT", GC.getUnitInfo(eUnit).getUnitTerrainCost(iI), GC.getTerrainInfo((TerrainTypes)iI).getTextKeyWide(), GC.getTerrainInfo((TerrainTypes)iI).getTextKeyWide()));
+			szBuffer.append(gDLL->getText("TXT_KEY_COLOR_REVERT"));
+		}
+	}
+	for (int iI = 0; iI < GC.getNumFeatureInfos(); ++iI)
+	{
+		if (GC.getUnitInfo(eUnit).getUnitFeatureCost(iI) != 0)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText((GC.getUnitInfo(eUnit).getUnitFeatureCost(iI) < 0) ? "TXT_KEY_COLOR_POSITIVE" : "TXT_KEY_COLOR_NEGATIVE"));
+			szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_MOVE_COST_TEXT", GC.getUnitInfo(eUnit).getUnitFeatureCost(iI), GC.getFeatureInfo((FeatureTypes)iI).getTextKeyWide(), GC.getFeatureInfo((FeatureTypes)iI).getTextKeyWide()));
+			szBuffer.append(gDLL->getText("TXT_KEY_COLOR_REVERT"));
+		}
+	}
+
 /*************************************************************************************************/
 /**	JRouteNative by Jeckel		imported by Valkrionn	09.28.09                        		**/
 /*************************************************************************************************/
