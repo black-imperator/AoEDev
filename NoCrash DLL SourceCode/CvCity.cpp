@@ -20220,6 +20220,12 @@ int CvCity::getPlotRadius() const
 
 void CvCity::setPlotRadius(int iNewValue)
 {
+	// City plot tables (GC.getXYCityPlot, per-city arrays sized NUM_CITY_PLOTS) are compiled
+	// for at most CITY_PLOTS_RADIUS; a larger radius (e.g. an XML iPlotRadius of 4) would make
+	// getNumCityPlots() and plotCityXY() index past them and crash.
+	FAssertMsg(iNewValue <= CITY_PLOTS_RADIUS, "Plot radius exceeds CITY_PLOTS_RADIUS; clamping");
+	iNewValue = std::min(iNewValue, (int)CITY_PLOTS_RADIUS);
+
 	if (iNewValue != getPlotRadius())
 	{
 /*************************************************************************************************/
