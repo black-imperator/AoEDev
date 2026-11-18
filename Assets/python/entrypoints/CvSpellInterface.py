@@ -379,6 +379,45 @@ def findClearPlot(pUnit, plot,iPlayer=-1):
 		else:
 			return BestPlot
 	return BestPlot
+
+
+def findFreedCivCityPlot(plot):
+	# Like findClearPlot(-1, plot), but the chosen plot must also respect
+	# MIN_CITY_RANGE the same way CvPlayer::canFound does (no city within
+	# that many plots in the same area), because the caller founds a city
+	# there with initCity, which performs no placement checks of its own.
+	# Returns None if no such plot exists within 10 plots.
+	if plot is None or plot.isNone():
+		return None
+	getPlot		= CyMap().plot
+	iMinRange	= gc.getMIN_CITY_RANGE()
+	for iRange in xrange(1, 11):
+		lValid = []
+		for x, y in plotsInRange(plot.getX(), plot.getY(), iRange, iRange - 1):
+			pPlot = getPlot(x, y)
+			if pPlot.isNone():
+				continue
+			if pPlot.getNumUnits() > 0:
+				continue
+			if pPlot.isWater() != plot.isWater():
+				continue
+			if pPlot.isPeak() or pPlot.isCity():
+				continue
+			iArea = pPlot.getArea()
+			bTooClose = False
+			for iDX in xrange(-iMinRange, iMinRange + 1):
+				for iDY in xrange(-iMinRange, iMinRange + 1):
+					pNearPlot = getPlot(x + iDX, y + iDY)
+					if not pNearPlot.isNone() and pNearPlot.isCity() and pNearPlot.getArea() == iArea:
+						bTooClose = True
+						break
+				if bTooClose:
+					break
+			if not bTooClose:
+				lValid.append(pPlot)
+		if len(lValid) > 0:
+			return lValid[CyGame().getSorenRandNum(len(lValid), "findFreedCivCityPlot")]
+	return None
 	
 def plotsInRange( centerX, centerY, maxRange, minRange=None ):
 	if minRange is None:
@@ -13535,16 +13574,18 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 	iPlayer		= pUnit.getOwner()
 	pPlayer		= gc.getPlayer(iPlayer)
 	iNewPlayer	= getOpenPlayer()
-	pSpawnPlot	= findClearPlot(-1, pPlot)
-	iX			= pSpawnPlot.getX()
-	iY			= pSpawnPlot.getY()
+	# The new civ's capital is founded on this plot below, so it must obey
+	# MIN_CITY_RANGE like any other city founding.
+	pSpawnPlot	= findFreedCivCityPlot(pPlot)
 	iAI			= UnitAITypes.NO_UNITAI
 	iDirection	= DirectionTypes.DIRECTION_SOUTH
 	iGold		= 1000
 
 	# just to prevent unnecessary if ladders for ease of reading
 	if iNewPlayer == -1:	return
-	if pSpawnPlot.isNone():	return
+	if pSpawnPlot is None:	return
+	iX			= pSpawnPlot.getX()
+	iY			= pSpawnPlot.getY()
 
 	# we can turn this part into a list of civs to spawn if you want some universal result
 	lCiv		= [gc.getInfoTypeForString(sCiv)]
@@ -13555,7 +13596,7 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 
     # Removing barbs around the plot
 	for iLoopX,iLoopY in RANGE2:
-		pClearPlot = CyMap().plot(iLoopX+iX,iLoopY+iX)
+		pClearPlot = CyMap().plot(iLoopX+iX,iLoopY+iY)
 		for i in xrange(pClearPlot.getNumUnits()):
 			pLoopUnit = pClearPlot.getUnit(i)
 			if pLoopUnit.isBarbarian() and not gc.getUnitClassInfo(pLoopUnit.getUnitClassType()).isUnique():
