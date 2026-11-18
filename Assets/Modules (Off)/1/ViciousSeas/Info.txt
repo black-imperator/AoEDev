@@ -35,7 +35,7 @@ Bal, Civ(N), Event
 ;This isn't needed if you're ADDING something based on the other mod, but only if you want to overwrite with higher priority than the other mod.
 ;Refer to the exact folder name of that module, NOT the [name] field!
 [dependency-soft]
-CatsCivics, DrackAosNiSira, DynRel, ImportantLeaders, Jotnar, kcz_Woods, MoreEvents
+DrackAosNiSira, ImportantLeaders, Jotnar, kcz_Woods, MoreEvents
 
 ;List any modules you require as a HARD dependency here.
 ;Refer to the exact folder name of that module, NOT the [name] field!
