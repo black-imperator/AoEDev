@@ -37961,7 +37961,7 @@
 			<fInterfaceScale>0.3</fInterfaceScale>
 			<bActAsLand>1</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/heroes/DawnDragon/DawnDragon.nif</NIF>
+			<NIF>Art/Units/heroes/ElderDragon/ElderDragon.nif</NIF>
 			<KFM>Art/animations/Wolf/Wolf.kfm</KFM>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/WolfShadow.nif</ShadowNIF>

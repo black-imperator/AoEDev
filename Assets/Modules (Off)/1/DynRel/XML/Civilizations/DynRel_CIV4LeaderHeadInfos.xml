@@ -52,7 +52,7 @@
 		</LeaderHeadInfo>
 		<LeaderHeadInfo>
 			<Type>LEADER_THANATOS</Type>
-			<LeaderClass>LEADERCLASS_EMERGENT_AGNOSTIC</LeaderClass>
+			<LeaderClass>LEADERCLASS_IMPORTANT_AGNOSTIC</LeaderClass>
 		</LeaderHeadInfo>
 		<LeaderHeadInfo>
 			<Type>LEADER_VANEDIS</Type>
