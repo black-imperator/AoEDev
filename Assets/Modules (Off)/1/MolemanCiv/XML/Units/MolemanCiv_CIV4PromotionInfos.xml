@@ -40,7 +40,6 @@
 			<Type>PROMOTION_MAGNETIC_FIELD</Type>
 			<Description>TXT_KEY_PROMOTION_MAGNETIC_FIELD</Description>
 			<bNoXP>1</bNoXP>
-			<Button>Art/Interface/Buttons/Units/Lightning Elemental.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo>
 			<!--let's Molemen "tunnel" by teleporting-->
