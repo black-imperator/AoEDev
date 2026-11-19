@@ -1575,7 +1575,7 @@
 			<DefaultUnitAI>UNITAI_ASSAULT_SEA</DefaultUnitAI>
 			<PrereqTech>TECH_FISHING</PrereqTech>
 			<DomainCargo>DOMAIN_LAND</DomainCargo>
-			<iCargo>1</iCargo>
+			<iCargo>3</iCargo>
 		</UnitInfo>
 		<UnitInfo>        <!-- Trireme -->
 			<Class>UNITCLASS_TRIREME</Class>
