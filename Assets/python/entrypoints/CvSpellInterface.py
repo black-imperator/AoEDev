@@ -5199,8 +5199,7 @@ def spellWonder(caster):
 				iBonusPenguin = pPlot.getBonusType
 				bValid = True
 				if iBonusPenguin != -1 :
-					if gc.getImprovementInfo(iImprovement).isPermanent() :
-						bValid = False
+					bValid = False
 				if bValid :
 					pPlot.setBonusType(getInfoType('BONUS_PENGUINS'))
 					CyInterface().addMessage(caster.getOwner(),True,25,CyTranslator().getText("TXT_KEY_MESSAGE_WONDER_PENGUINS", ()),'',1,'Art/Interface/Buttons/Improvements/Penguins.dds',ColorTypes(8),pPlot.getX(),pPlot.getY(),True,True)
