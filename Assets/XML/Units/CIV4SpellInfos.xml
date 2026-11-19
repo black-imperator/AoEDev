@@ -8998,7 +8998,8 @@
 			<bInCityOnly>1</bInCityOnly>
 			<bDisplayWhenDisabled>0</bDisplayWhenDisabled>
 			<bHasCasted>1</bHasCasted>
-			<iDelay>5</iDelay>
+			<iDelay>0</iDelay>
+			<iCost>45</iCost>
 			<iChangePopulation>-1</iChangePopulation>
 			<PyResult>spellIgnitePyre(pCaster)</PyResult>
 			<PyRequirement>reqIgnitePyre2(pCaster)</PyRequirement>

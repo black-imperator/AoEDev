@@ -14074,6 +14074,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_BOWYERS</PrereqTech>
+			<iAIWeight>-25</iAIWeight>
 			<iCost>120</iCost>
 			<iMoves>1</iMoves>
 			<iAirRange>1</iAirRange>
@@ -19066,6 +19067,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
 			<iCost>60</iCost>
+			<iAIWeight>-25</iAIWeight>
 			<iMoves>1</iMoves>
 			<iCombat>3</iCombat>
 			<iCombatDefense>5</iCombatDefense>
@@ -19125,6 +19127,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_IRON_WORKING</PrereqTech>
 			<iCost>120</iCost>
+			<iAIWeight>-25</iAIWeight>
 			<iMoves>1</iMoves>
 			<iCombat>4</iCombat>
 			<iCombatDefense>7</iCombatDefense>
@@ -21963,6 +21966,7 @@
 				<BonusType>BONUS_EFFLUVIUM</BonusType>
 			</PrereqBonuses>
 			<iCost>300</iCost>
+			<iAIWeight>50</iAIWeight>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
 			<iMoves>3</iMoves>
@@ -23478,6 +23482,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
 			<iCost>120</iCost>
+			<iAIWeight>-25</iAIWeight>
 			<iMoves>1</iMoves>
 			<iCombat>6</iCombat>
 			<iCombatDefense>7</iCombatDefense>
@@ -23685,6 +23690,7 @@
 				</BonusProductionModifier>
 			</BonusProductionModifiers>
 			<iCost>180</iCost>
+			<iAIWeight>-25</iAIWeight>
 			<iMoves>1</iMoves>
 			<iCombat>8</iCombat>
 			<iCombatDefense>11</iCombatDefense>
@@ -25504,6 +25510,7 @@
 				<BonusType>BONUS_EFFLUVIUM</BonusType>
 			</PrereqBonuses>
 			<iCost>250</iCost>
+			<iAIWeight>50</iAIWeight>
 			<iMoves>5</iMoves>
 			<iAirRange>1</iAirRange>
 			<iCombat>4</iCombat>
@@ -41906,6 +41913,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_ARCHERY</PrereqTech>
 			<iCost>60</iCost>
+			<iAIWeight>-25</iAIWeight>
 			<iMoves>1</iMoves>
 			<iAirRange>1</iAirRange>
 			<FeaturePassableTechs/>
@@ -42034,6 +42042,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_BOWYERS</PrereqTech>
 			<iCost>120</iCost>
+			<iAIWeight>-25</iAIWeight>
 			<iMoves>1</iMoves>
 			<iAirRange>1</iAirRange>
 			<iCombat>5</iCombat>
@@ -43219,6 +43228,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
 			<iCost>60</iCost>
+			<iAIWeight>-25</iAIWeight>
 			<iMoves>1</iMoves>
 			<iCombat>3</iCombat>
 			<iCombatDefense>5</iCombatDefense>
@@ -43279,6 +43289,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_IRON_WORKING</PrereqTech>
 			<iCost>120</iCost>
+			<iAIWeight>-25</iAIWeight>
 			<iMoves>1</iMoves>
 			<iCombat>4</iCombat>
 			<iCombatDefense>7</iCombatDefense>
@@ -45174,6 +45185,7 @@
 				<BonusType>BONUS_DUSKWOOD</BonusType>
 			</PrereqBonuses>
 			<iCost>150</iCost>
+			<iAIWeight>50</iAIWeight>
 			<iMinAreaSize>20</iMinAreaSize>
 			<iMoves>5</iMoves>
 			<iCombat>7</iCombat>
@@ -45239,6 +45251,7 @@
 				<BonusType>BONUS_DUSKWOOD</BonusType>
 			</PrereqBonuses>
 			<iCost>225</iCost>
+			<iAIWeight>50</iAIWeight>
 			<iMinAreaSize>20</iMinAreaSize>
 			<iMoves>3</iMoves>
 			<iCombat>9</iCombat>
@@ -45762,6 +45775,7 @@
 				</ProductionTrait>
 			</ProductionTraits>
 			<iCost>120</iCost>
+			<iAIWeight>25</iAIWeight>
 			<iAdvancedStartCostIncrease>50</iAdvancedStartCostIncrease>
 			<iMoves>2</iMoves>
 			<iAsset>0</iAsset>
@@ -53612,6 +53626,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_OPTICS</PrereqTech>
 			<iCost>150</iCost>
+			<iAIWeight>50</iAIWeight>
 			<iMinAreaSize>20</iMinAreaSize>
 			<iMoves>5</iMoves>
 			<iCombat>7</iCombat>
@@ -53673,6 +53688,7 @@
 				<PrereqTech>TECH_ENGINEERING</PrereqTech>
 			</TechTypes>
 			<iCost>225</iCost>
+			<iAIWeight>50</iAIWeight>
 			<iMinAreaSize>20</iMinAreaSize>
 			<iMoves>3</iMoves>
 			<iCombat>9</iCombat>
@@ -58539,6 +58555,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_IRON_WORKING</PrereqTech>
 			<iCost>120</iCost>
+			<iAIWeight>-25</iAIWeight>
 			<iMoves>1</iMoves>
 			<iCombat>4</iCombat>
 			<iCombatDefense>7</iCombatDefense>
