@@ -205,13 +205,14 @@ public static class ModuleScanner
                     // .NET Framework needs an instance via SHA256.Create().
                     using var sha256 = SHA256.Create();
                     byte[] hash;
-                    if (ModulePathRewriter.IsTextFile(file))
+                    if (CrossModulePathScanner.IsScannable(moduleDir, file))
                     {
-                        // A module's own "Modules/<Load #>/<Name>/" paths change when it is moved
-                        // between Load #s (see ModulePathRewriter); they're hashed with the Load #
-                        // blanked out so that a move doesn't look like a content change.
+                        // A module's own "Modules/<Load #>/<n>/" paths change when it is moved
+                        // between Load #s (see ModulePathRewriter); in the files that get rewritten
+                        // they're hashed with the Load # blanked out so that a move doesn't look
+                        // like a content change. Every other file is hashed as-is.
                         var bytes = File.ReadAllBytes(file);
-                        hash = sha256.ComputeHash(ModulePathRewriter.NormalizeForFingerprint(bytes, Path.GetFileName(moduleDir.TrimEnd(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar))));
+                        hash = sha256.ComputeHash(CrossModulePathScanner.NormalizeForFingerprint(bytes, Path.GetFileName(moduleDir.TrimEnd(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar))));
                     }
                     else
                     {

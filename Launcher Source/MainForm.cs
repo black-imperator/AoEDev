@@ -22,7 +22,7 @@ public class MainForm : Form
     /// Resolved fresh from placement validation each run; never persisted or manually overridden.
     private string? _btsExePath;
 
-    private const string LauncherVersion = "1.0";
+    private const string LauncherVersion = "1.1";
 
     /// What a version.txt value must look like to be shown on the Launch button (a short single token such as "380").
     private static readonly Regex VersionPattern = new(@"^[0-9A-Za-z._-]{1,12}$");
@@ -65,6 +65,12 @@ public class MainForm : Form
     private Panel _topPanel = null!;
     private Panel _bottomPanel = null!;
     private Panel _filterPanel = null!;
+    private Button btnDeletePreset = null!;
+    private Button btnLoadPreset = null!;
+
+    /// Holds the filter row (top) and the preset rows (below it) as one block, positioned by hand
+    /// rather than by dock order, so the two can never swap places.
+    private Panel _bottomStack = null!;
     private readonly List<TagFilterBox> _filterBoxes = new();
     private readonly ToolTip _filterToolTip = CreateStyledToolTip();
 
@@ -97,18 +103,89 @@ public class MainForm : Form
     private Panel _statusPanel = null!;
     private Button btnManage = null!;
 
-    private const string FutureproofText = "Futureproof (omit version, skip change checks)";
-    private const int FutureproofLeft = 330; // unscaled; the checkbox's left edge in the bottom panel
+    private const string FutureproofText = "Futureproof";
+    private const string FutureproofTip =
+        "Futureproof (applies to both Save and Export): leaves each module's version and content " +
+        "fingerprint out of the saved preset or exported code. Loading or importing it then only checks " +
+        "that each module is installed, with no \"this module looks different\" warnings. The module list " +
+        "and each module's Load # are always included either way.";
+
+    private const string SaveButtonText = "Save Active Modules As New Preset";
+    private const string ExportButtonText = "Export Active Modules As Preset";
+
+    /// A button just wide enough for its text: the text plus 12 px of padding either side.
+    private static int FitButtonWidth(string text) =>
+        TextRenderer.MeasureText(text, Theme.BodyFont, Size.Empty, TextFormatFlags.NoPadding | TextFormatFlags.SingleLine).Width
+        + Theme.S(24);
+
+    private static readonly int HelpButtonWidth = FitButtonWidth("Instructions");
+    private static readonly int ConfigButtonWidth = FitButtonWidth("Open Civ4 Config");
+    private static readonly int RefreshButtonWidth = FitButtonWidth("Refresh");
+    private static readonly int SchemasButtonWidth = FitButtonWidth("Dev: Update Schemas");
+
+    /// Width shared by the Save and Export buttons so they line up vertically: that of the longer label.
+    private static readonly int PresetButtonWidth = Math.Max(FitButtonWidth(SaveButtonText), FitButtonWidth(ExportButtonText));
+
+    /// The checkbox's left edge in the bottom panel: just right of the Save/Export column.
+    private static readonly int FutureproofLeftPx = Theme.S(12) + PresetButtonWidth + Theme.S(8);
+
+    private readonly ToolTip _presetToolTip = CreateStyledToolTip();
+
+    /// Longest allowed preset name; the dropdown is sized to show a name of this length.
+    private const int MaxPresetNameLength = 24;
+
+    private static readonly int PresetComboWidth =
+        TextRenderer.MeasureText(new string('n', MaxPresetNameLength), Theme.BodyFont, Size.Empty,
+            TextFormatFlags.NoPadding | TextFormatFlags.SingleLine).Width
+        + SystemInformation.VerticalScrollBarWidth + Theme.S(12);
+
+    private static readonly int PresetSideButtonWidth = Theme.S(125); // Delete "<preset>" and Load "<preset>"
+    private static readonly int PresetImportButtonWidth = Theme.S(125);
+
+    /// Width of the centered Delete | dropdown | Load group in the first preset row.
+    private static readonly int PresetGroupWidth =
+        PresetSideButtonWidth + Theme.S(8) + PresetComboWidth + Theme.S(8) + PresetSideButtonWidth;
+
+    /// Heading font of the "Filters:" / "Presets:" rows.
+    private const float SectionHeadingScale = 1.15f;
+
+    /// Where the first row of preset buttons starts in the preset panel: below the "Presets:" heading.
+    private static readonly int PresetRowsTop =
+        Theme.S(4) + Theme.HeadingFont(SectionHeadingScale).Height + Theme.S(4) + Theme.S(6);
+
+    private static readonly int PresetPanelHeight = PresetRowsTop + Theme.ButtonHeight + Theme.S(8) + Theme.ButtonHeight + Theme.S(8);
 
     /// Checkbox width sized from its text (plus the box glyph), not a hardcoded value.
     private static readonly int FutureproofWidth =
         TextRenderer.MeasureText(FutureproofText, Theme.BodyFont).Width + Theme.S(28);
 
-    /// Wide enough that the Futureproof checkbox, the right-aligned Dev button (190 wide) and their
-    /// margins always fit side by side, so they can never overlap (24 allows for the window frame).
-    private static readonly int MinFormWidth = Math.Max(
-        Theme.S(900), Theme.S(FutureproofLeft) + FutureproofWidth + Theme.S(8) + Theme.S(190) + Theme.S(12) + Theme.S(24));
-    private static readonly int ExpandedMinHeight = Theme.S(480);
+    /// Width of the filter row: every box plus the gaps between them (mirrors TagFilterBox.FitToText).
+    private static readonly int FilterRowWidth =
+        FilterTags.Sum(t => TextRenderer.MeasureText(t.Label, Theme.BodyFont, Size.Empty,
+                TextFormatFlags.NoPadding | TextFormatFlags.SingleLine).Width + Theme.S(4) + Theme.S(14) + 2)
+        + Theme.S(24) * (FilterTags.Length - 1);
+
+    /// The narrowest window at which nothing overlaps, worked out from the actual button widths.
+    /// Each line is the width one pair of neighbours needs (W = window width, G = the centered
+    /// Delete | dropdown | Load group, C = the dropdown); S(24) allows for the window frame.
+    private static readonly int MinFormWidth = new[]
+    {
+        // top row: Instructions / Open Civ4 Config either side of the 440-wide Launch button
+        Theme.S(440) + 2 * (Theme.S(12) + Math.Max(HelpButtonWidth, ConfigButtonWidth) + Theme.S(8)),
+        // the centered group stays clear of the Save button on its left...
+        2 * FutureproofLeftPx + PresetGroupWidth,
+        // ...and of the Refresh button on its right
+        PresetGroupWidth + 2 * (Theme.S(12) + RefreshButtonWidth + Theme.S(8)),
+        // second row: the Futureproof checkbox stays clear of Import (centered under the dropdown)
+        2 * (FutureproofLeftPx + FutureproofWidth + Theme.S(8)
+             - (PresetSideButtonWidth + Theme.S(8) + (PresetComboWidth - PresetImportButtonWidth) / 2)) + PresetGroupWidth,
+        // ...and Import stays clear of the Dev button on the right
+        2 * (PresetSideButtonWidth + Theme.S(8) + (PresetComboWidth + PresetImportButtonWidth) / 2
+             + Theme.S(12) + SchemasButtonWidth + Theme.S(8)) - PresetGroupWidth,
+        // the filter row
+        FilterRowWidth + 2 * Theme.S(12),
+    }.Max() + Theme.S(24);
+    private static readonly int ExpandedMinHeight = Theme.S(480) + (PresetPanelHeight - (Theme.S(8) + Theme.ButtonHeight + Theme.S(8) + Theme.ButtonHeight + Theme.S(8)));
 
     /// Client height to restore when the module section is revealed. Starts as the saved (or
     /// default) height, and follows the user's resizing while the module section is shown.
@@ -286,12 +363,12 @@ public class MainForm : Form
         Theme.StyleButton(btnLaunch, primary: true);
         btnLaunch.Click += (s, e) => LaunchGame();
 
-        var btnCiv4Config = new FlatButton { Text = "Open Civ4 Config", Width = Theme.S(165), Height = Theme.ButtonHeight, Top = Theme.S(10) };
+        var btnCiv4Config = new FlatButton { Text = "Open Civ4 Config", Width = ConfigButtonWidth, Height = Theme.ButtonHeight, Top = Theme.S(10) };
         Theme.StyleButton(btnCiv4Config);
         btnCiv4Config.Click += (s, e) => OpenCiv4Config();
 
         // Toggles the module lists + preset tools; centered on its own row beneath Launch.
-        btnManage = new FlatButton { Text = "Manage Modules", Width = Theme.S(165), Height = Theme.ButtonHeight, Top = Theme.S(10) + Theme.S(66) + Theme.S(8) };
+        btnManage = new FlatButton { Text = "Manage Modules (Custom)", Width = Theme.S(165), Height = Theme.ButtonHeight, Top = Theme.S(10) + Theme.S(66) + Theme.S(8) };
         Theme.StyleButton(btnManage);
         btnManage.Click += (s, e) =>
         {
@@ -315,7 +392,7 @@ public class MainForm : Form
         // The CheckedChanged handler (which saves the setting) is attached in MainForm_Load,
         // after the saved value has been applied, so loading the config doesn't trigger a save.
 
-        var btnHelp = new FlatButton { Text = "Instructions", Left = Theme.S(12), Top = Theme.S(10), Width = Theme.S(135), Height = Theme.ButtonHeight };
+        var btnHelp = new FlatButton { Text = "Instructions", Left = Theme.S(12), Top = Theme.S(10), Width = HelpButtonWidth, Height = Theme.ButtonHeight };
         Theme.StyleButton(btnHelp);
         btnHelp.Click += (s, e) => ShowHelp();
 
@@ -326,6 +403,12 @@ public class MainForm : Form
         _statusIndicator.SetStatus("Ready", Theme.StatusGood);
         _statusIndicator.MouseEnter += (s, args) => CheckGameRunning();
 
+        _presetToolTip.SetToolTip(btnLaunch, "Starts Ashes of Erebus with the active modules (they are checked first).");
+        _presetToolTip.SetToolTip(btnCiv4Config, "Opens your Civ4 config .ini file in your default text editor.");
+        _presetToolTip.SetToolTip(btnManage, "Shows or hides the module lists and preset tools. In brackets: the saved preset your active modules currently match, or Custom.");
+        _presetToolTip.SetToolTip(chkCloseOnLaunch, "Closes this launcher once the game has started.");
+        _presetToolTip.SetToolTip(btnHelp, "Shows the usage guide.");
+
         topPanel.Controls.Add(btnHelp);
         topPanel.Controls.Add(btnLaunch);
         topPanel.Controls.Add(btnCiv4Config);
@@ -335,7 +418,7 @@ public class MainForm : Form
         topPanel.Resize += (s, e) =>
         {
             btnLaunch.Left = (topPanel.Width - btnLaunch.Width) / 2;
-            btnManage.Left = (topPanel.Width - btnManage.Width) / 2;
+            CenterManageButton();
             btnCiv4Config.Left = topPanel.Width - btnCiv4Config.Width - Theme.S(12);
 
             // Each readout is centered under the button above it.
@@ -373,7 +456,7 @@ public class MainForm : Form
         // Tag filter section, centered between the module lists and the preset tools: a larger
         // "Filters:" heading on its own row, the filter boxes on the row below it, and a thin
         // separator line along the bottom edge to set it apart from the preset/refresh row.
-        var filterPanel = new BufferedPanel { Dock = DockStyle.Bottom, Height = FilterPanelHeight };
+        var filterPanel = new BufferedPanel { Height = FilterPanelHeight };
         Theme.StyleContainer(filterPanel);
         _filterPanel = filterPanel;
 
@@ -382,7 +465,7 @@ public class MainForm : Form
             Text = "Filters:",
             AutoSize = false,
             TextAlign = ContentAlignment.MiddleCenter,
-            Font = Theme.HeadingFont(1.15f),
+            Font = Theme.HeadingFont(SectionHeadingScale),
         };
         lblFilters.Width = TextRenderer.MeasureText(lblFilters.Text, lblFilters.Font).Width + Theme.S(12);
         lblFilters.Height = lblFilters.Font.Height + Theme.S(4);
@@ -433,57 +516,100 @@ public class MainForm : Form
         };
         LayoutFilterRow();
 
-        var bottomPanel = new BufferedPanel { Dock = DockStyle.Bottom, Height = Theme.S(8) + Theme.ButtonHeight + Theme.S(8) + Theme.ButtonHeight + Theme.S(8) };
+        var bottomPanel = new BufferedPanel { Height = PresetPanelHeight };
         Theme.StyleContainer(bottomPanel);
         _bottomPanel = bottomPanel;
 
-        // Row 1: preset save/load/delete, with the dev action right-aligned on the same line
-        var btnSave = new FlatButton { Text = "Save Active Modules As New Preset", Left = Theme.S(12), Top = Theme.S(8), Width = Theme.S(285), Height = Theme.ButtonHeight };
-        cmbPresets = new ComboBox { Left = Theme.S(305), Top = Theme.S(8) + (Theme.ButtonHeight - (Theme.BodyFont.Height + Theme.S(6))) / 2, Width = Theme.S(190), DropDownStyle = ComboBoxStyle.DropDownList };
-        var btnLoad = new FlatButton { Text = "Load Preset", Left = Theme.S(503), Top = Theme.S(8), Width = Theme.S(125), Height = Theme.ButtonHeight };
-        var btnDelete = new FlatButton { Text = "Delete", Left = Theme.S(636), Top = Theme.S(8), Width = Theme.S(90), Height = Theme.ButtonHeight };
-        var btnRefresh = new FlatButton { Text = "Refresh", Top = Theme.S(8), Width = Theme.S(100), Height = Theme.ButtonHeight };
+        // "Presets:" heading, centered, in the same style as "Filters:" -- just below the separator line.
+        var lblPresets = new Label
+        {
+            Text = "Presets:",
+            AutoSize = false,
+            TextAlign = ContentAlignment.MiddleCenter,
+            Font = Theme.HeadingFont(SectionHeadingScale),
+        };
+        lblPresets.Width = TextRenderer.MeasureText(lblPresets.Text, lblPresets.Font).Width + Theme.S(12);
+        lblPresets.Height = lblPresets.Font.Height + Theme.S(4);
+        lblPresets.Top = Theme.S(4);
+        Theme.StyleLabel(lblPresets);
+
+        var row1Top = PresetRowsTop;
+        var row2Top = PresetRowsTop + Theme.ButtonHeight + Theme.S(8);
+
+        // Row 1: save on the left, the Load | dropdown | Delete group centered, Refresh on the right
+        var btnSave = new FlatButton { Text = SaveButtonText, Left = Theme.S(12), Top = row1Top, Width = PresetButtonWidth, Height = Theme.ButtonHeight };
+        btnLoadPreset = new FlatButton { Text = "Load Preset", Top = row1Top, Width = PresetSideButtonWidth, Height = Theme.ButtonHeight };
+        cmbPresets = new ComboBox { Top = row1Top + (Theme.ButtonHeight - (Theme.BodyFont.Height + Theme.S(6))) / 2, Width = PresetComboWidth, DropDownStyle = ComboBoxStyle.DropDownList };
+        btnDeletePreset = new FlatButton { Text = "Delete Preset", Top = row1Top, Width = PresetSideButtonWidth, Height = Theme.ButtonHeight };
+        var btnRefresh = new FlatButton { Text = "Refresh", Top = row1Top, Width = RefreshButtonWidth, Height = Theme.ButtonHeight };
         Theme.StyleButton(btnSave);
         Theme.StyleComboBox(cmbPresets);
-        Theme.StyleButton(btnLoad);
-        Theme.StyleButton(btnDelete);
+        Theme.StyleButton(btnLoadPreset);
+        Theme.StyleButton(btnDeletePreset);
         Theme.StyleButton(btnRefresh);
-        btnRefresh.Click += (s, e) => RefreshModules();
+        // Pressing Refresh re-checks every module's hardcoded paths into other modules' folders first
+        // (see CrossModulePathScanner), then re-reads the modules, e.g. after moving them in Explorer.
+        btnRefresh.Click += (s, e) =>
+        {
+            _reportedInactiveRefs.Clear(); // a manual refresh may show the inactive-reference notice again
+            EnsureCrossModulePaths(abortAction: null);
+            var summary = _lastScanSummary;
+            RefreshModules();
+            if (summary != null) lblStatus.Text = summary + "  " + lblStatus.Text;
+        };
 
-        // Row 2: import (left) / export (right)
-        var btnImport = new FlatButton { Text = "Import Preset", Left = Theme.S(12), Top = Theme.S(8) + Theme.ButtonHeight + Theme.S(8), Width = Theme.S(150), Height = Theme.ButtonHeight };
-        var btnExport = new FlatButton { Text = "Export Preset", Left = Theme.S(170), Top = Theme.S(8) + Theme.ButtonHeight + Theme.S(8), Width = Theme.S(150), Height = Theme.ButtonHeight };
+        // Row 2: export (under Save, same width) + Futureproof (under it, left of the dropdown) +
+        // import (centered under the dropdown), with the dev action right-aligned
+        var btnExport = new FlatButton { Text = ExportButtonText, Left = Theme.S(12), Top = row2Top, Width = PresetButtonWidth, Height = Theme.ButtonHeight };
+        var btnImport = new FlatButton { Text = "Import Preset", Top = row2Top, Width = PresetImportButtonWidth, Height = Theme.ButtonHeight };
         chkFutureproof = new CheckBox
         {
             Text = FutureproofText,
             AutoSize = false,
             Font = Theme.BodyFont,
-            Left = Theme.S(FutureproofLeft), Top = Theme.S(8) + Theme.ButtonHeight + Theme.S(8) + (Theme.ButtonHeight - (Theme.BodyFont.Height + Theme.S(8))) / 2, Height = Theme.BodyFont.Height + Theme.S(8), Width = FutureproofWidth,
+            Left = FutureproofLeftPx, Top = row2Top + (Theme.ButtonHeight - (Theme.BodyFont.Height + Theme.S(8))) / 2, Height = Theme.BodyFont.Height + Theme.S(8), Width = FutureproofWidth,
         };
-        var btnDevSchemas = new FlatButton { Text = "Dev: Update Schemas", Top = Theme.S(8) + Theme.ButtonHeight + Theme.S(8), Width = Theme.S(190), Height = Theme.ButtonHeight };
+        var btnDevSchemas = new FlatButton { Text = "Dev: Update Schemas", Top = row2Top, Width = SchemasButtonWidth, Height = Theme.ButtonHeight };
         Theme.StyleButton(btnImport);
         Theme.StyleCheckBox(chkFutureproof);
         Theme.StyleButton(btnExport);
         Theme.StyleButton(btnDevSchemas);
         btnDevSchemas.Click += (s, e) => UpdateSchemas();
 
+        _presetToolTip.SetToolTip(chkFutureproof, FutureproofTip);
+        _presetToolTip.SetToolTip(btnSave, "Saves the active modules, with their Load #s, as a new preset. With Futureproof checked, versions and fingerprints are left out.");
+        _presetToolTip.SetToolTip(btnRefresh, "Re-checks the file paths between modules, then re-reads the module folders. Use it after moving modules by hand.");
+        _presetToolTip.SetToolTip(btnExport, "Copies a share code for your active modules and their Load #s to the clipboard, e.g. to post on Discord.");
+        _presetToolTip.SetToolTip(btnImport, "Imports a preset from a share code, then offers to apply it.");
+        _presetToolTip.SetToolTip(btnDevSchemas, "For module makers: updates modules' *Schema.xml files from the base mod (a preview is shown first).");
+
         btnSave.Click += (s, e) => SavePreset();
-        btnLoad.Click += (s, e) => LoadPreset();
-        btnDelete.Click += (s, e) => DeletePreset();
+        btnLoadPreset.Click += (s, e) => LoadPreset();
+        btnDeletePreset.Click += (s, e) => DeletePreset();
+        cmbPresets.SelectedIndexChanged += (s, e) => UpdatePresetButtons();
         btnExport.Click += (s, e) => ExportPreset();
         btnImport.Click += (s, e) => ImportPreset();
 
         bottomPanel.Controls.AddRange(new Control[]
         {
-            btnSave, cmbPresets, btnLoad, btnDelete, btnRefresh, btnImport, btnExport, chkFutureproof, btnDevSchemas
+            lblPresets, btnSave, cmbPresets, btnLoadPreset, btnDeletePreset, btnRefresh, btnImport, btnExport, chkFutureproof, btnDevSchemas
         });
-        bottomPanel.Resize += (s, e) => { btnRefresh.Left = bottomPanel.Width - btnRefresh.Width - Theme.S(12); };
         bottomPanel.Resize += (s, e) =>
         {
+            lblPresets.Left = (bottomPanel.Width - lblPresets.Width) / 2;
+            btnRefresh.Left = bottomPanel.Width - btnRefresh.Width - Theme.S(12);
+
+            // Load | dropdown | Delete are centered in the row; Import is centered under the dropdown.
+            var left = (bottomPanel.Width - PresetGroupWidth) / 2;
+            btnLoadPreset.Left = left;
+            cmbPresets.Left = btnLoadPreset.Right + Theme.S(8);
+            btnDeletePreset.Left = cmbPresets.Right + Theme.S(8);
+            btnImport.Left = cmbPresets.Left + (cmbPresets.Width - btnImport.Width) / 2;
+
             btnDevSchemas.Left = bottomPanel.Width - btnDevSchemas.Width - Theme.S(12);
-            // Safety net: never let the checkbox (and its background) extend under the Dev button.
+            // Safety net: never let the checkbox (and its background) extend under the Import button.
             chkFutureproof.Width = Math.Max(Theme.S(60),
-                Math.Min(FutureproofWidth, btnDevSchemas.Left - chkFutureproof.Left - Theme.S(8)));
+                Math.Min(FutureproofWidth, btnImport.Left - chkFutureproof.Left - Theme.S(8)));
         };
 
         // Status bar: status text fills the left, launcher version sits at the right.
@@ -516,13 +642,125 @@ public class MainForm : Form
         statusPanel.Controls.Add(lblStatus);
         statusPanel.Controls.Add(lblLauncherVersion);
 
-        // Dock order: later-added edge panels sit further from the Fill control, so the filter row
-        // goes in before the bottom panel to sit directly under the module lists.
+        // The filter row and the preset rows live in one bottom-docked block with fixed, explicit
+        // positions (filters on top, presets underneath). Previously each was its own bottom-docked
+        // panel, and WinForms decides the order of same-edge docked controls purely from their
+        // z-order -- so anything that shuffled the z-order could put the filters under the presets.
+        var bottomStack = new BufferedPanel { Dock = DockStyle.Bottom, Height = filterPanel.Height + bottomPanel.Height };
+        Theme.StyleContainer(bottomStack);
+        _bottomStack = bottomStack;
+        filterPanel.SetBounds(0, 0, bottomStack.Width, filterPanel.Height);
+        bottomPanel.SetBounds(0, filterPanel.Height, bottomStack.Width, bottomPanel.Height);
+        bottomStack.Controls.Add(filterPanel);
+        bottomStack.Controls.Add(bottomPanel);
+        bottomStack.Resize += (s, e) =>
+        {
+            filterPanel.SetBounds(0, 0, bottomStack.ClientSize.Width, filterPanel.Height);
+            bottomPanel.SetBounds(0, filterPanel.Height, bottomStack.ClientSize.Width, bottomPanel.Height);
+        };
+
+        // Dock order is z-order: the Fill control must be first (frontmost) so it is docked last,
+        // and the edge panels are then docked from the last one inwards. Set explicitly.
         Controls.Add(_splitContainer);
-        Controls.Add(filterPanel);
-        Controls.Add(bottomPanel);
+        Controls.Add(bottomStack);
         Controls.Add(statusPanel);
         Controls.Add(topPanel);
+        Controls.SetChildIndex(_splitContainer, 0);
+        Controls.SetChildIndex(bottomStack, 1);
+        Controls.SetChildIndex(statusPanel, 2);
+        Controls.SetChildIndex(topPanel, 3);
+    }
+
+    // ------------------------------------------------- Manage Modules button ---
+
+    private static readonly int ManageButtonMinWidth = Theme.S(165);
+    private static readonly int ManageButtonMaxWidth = Theme.S(380);
+
+    /// The preset the active modules currently match (cached; "Custom" if none). Recomputed by
+    /// RecomputeCurrentPreset whenever the modules or the presets change, because the full match
+    /// includes content fingerprints, which are too expensive to recompute on every redraw.
+    private string _currentPresetLabel = "Custom";
+
+    /// Finds the saved preset that matches the active modules exactly: the same set of module
+    /// folders, the same Load # for every module the preset records one for, AND the same content
+    /// fingerprint for every module the preset records one for (a preset saved or imported as
+    /// "futureproof" has none, so for those only the module set and Load #s are compared). A module
+    /// that changed since the preset was saved therefore makes the label "Custom". If several
+    /// presets match, the first by name wins.
+    /// The cheap checks (names, Load #s) run first and fingerprints are only computed for modules
+    /// of presets that pass them, each at most once per call.
+    private void RecomputeCurrentPreset()
+    {
+        _currentPresetLabel = FindMatchingPresetName() ?? "Custom";
+    }
+
+    /// `knownFingerprints` (folder name -> fingerprint) lets a caller that has just computed them
+    /// avoid doing it twice; any missing ones are computed (and added) here.
+    private string? FindMatchingPresetName(Dictionary<string, string>? knownFingerprints = null)
+    {
+        var active = _activeModules.ToDictionary(m => m.FolderName, m => m, StringComparer.OrdinalIgnoreCase);
+        var fingerprints = knownFingerprints ?? new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+
+        foreach (var preset in _config.Presets.OrderBy(p => p.Name, StringComparer.OrdinalIgnoreCase))
+        {
+            var names = new HashSet<string>(preset.Modules.Select(m => m.Name), StringComparer.OrdinalIgnoreCase);
+            if (names.Count != active.Count) continue;
+
+            var same = true;
+            foreach (var pm in preset.Modules)
+            {
+                if (!active.TryGetValue(pm.Name, out var local)) { same = false; break; }
+                var wanted = ModuleLayout.NormalizePass(pm.LoadPass);
+                if (wanted.Length > 0 && !string.Equals(wanted, local.LoadPass, StringComparison.Ordinal)) { same = false; break; }
+            }
+            if (!same) continue;
+
+            foreach (var pm in preset.Modules)
+            {
+                if (string.IsNullOrEmpty(pm.Fingerprint)) continue;
+                var local = active[pm.Name];
+                if (!fingerprints.TryGetValue(pm.Name, out var fp))
+                {
+                    SetStatus($"Comparing active modules with saved presets: '{local.Name}'...");
+                    fingerprints[pm.Name] = fp = ModuleScanner.ComputeFingerprint(local.FullPath);
+                }
+                if (!string.Equals(fp, pm.Fingerprint, StringComparison.Ordinal)) { same = false; break; }
+            }
+            if (same) return preset.Name;
+        }
+        return null;
+    }
+
+    /// Sets the toggle button's text to "Manage Modules (<preset>)" / "Hide Modules (<preset>)", where
+    /// <preset> is the matching saved preset or "Custom", and sizes it to fit (within a fixed
+    /// maximum; a very long preset name is cut short with an ellipsis).
+    private void UpdateManageButton(bool? modulesVisible = null)
+    {
+        if (btnManage == null) return;
+
+        var prefix = (modulesVisible ?? _config.ModulesVisible) ? "Hide Modules" : "Manage Modules";
+        var label = _currentPresetLabel;
+
+        string Build(string l) => $"{prefix} ({l})";
+        int Measure(string t) => TextRenderer.MeasureText(t, btnManage.Font, Size.Empty, TextFormatFlags.NoPadding | TextFormatFlags.SingleLine).Width
+                                 + Theme.S(24); // side padding + border
+
+        var text = Build(label);
+        while (Measure(text) > ManageButtonMaxWidth && label.Length > 1)
+        {
+            label = label.Substring(0, label.Length - 1);
+            text = Build(label.TrimEnd() + "\u2026");
+        }
+
+        btnManage.Text = text;
+        btnManage.Width = Math.Max(ManageButtonMinWidth, Math.Min(ManageButtonMaxWidth, Measure(text)));
+        CenterManageButton();
+    }
+
+    private void CenterManageButton()
+    {
+        if (_topPanel == null || btnManage == null) return;
+        btnManage.Left = (_topPanel.Width - btnManage.Width) / 2;
     }
 
     /// Shows or hides everything beneath the Manage Modules button (the module lists and the
@@ -540,8 +778,7 @@ public class MainForm : Form
             MinimumSize = new Size(MinFormWidth, ExpandedMinHeight);
             MaximizeBox = true;
             _splitContainer.Visible = true;
-            _bottomPanel.Visible = true;
-            _filterPanel.Visible = true;
+            _bottomStack.Visible = true;
             ClientSize = new Size(ClientSize.Width, _expandedClientHeight);
         }
         else
@@ -561,13 +798,12 @@ public class MainForm : Form
             }
 
             _splitContainer.Visible = false;
-            _bottomPanel.Visible = false;
-            _filterPanel.Visible = false;
+            _bottomStack.Visible = false;
             MaximizeBox = false;
             ApplyCollapsedSize();
         }
 
-        btnManage.Text = show ? "Hide Modules" : "Manage Modules";
+        UpdateManageButton(show);
         ResumeLayout(true);
         _applyingLayout = false;
 
@@ -690,15 +926,24 @@ public class MainForm : Form
         };
         infoCol.Width = FittedWidth(grid, "Info", "i", sortable: false);
 
-        // Module | Author | Version | AoE Rev | Load # | Info
-        // Version is deliberately not sortable; AoE Rev and Load # are (see OnGridSortCompare).
+        // Module | Author | M. Ver | AoE Ver | Load # | Info
+        // M. Ver is deliberately not sortable; AoE Ver and Load # are (see OnGridSortCompare).
         grid.Columns.AddRange(
             nameCol,
             authorCol,
-            FittedCol("Version", "Version", sortable: false),
-            FittedCol("AoERev", "AoE Rev", sortable: true),
+            FittedCol("Version", "M. Ver", sortable: false),
+            FittedCol("AoERev", "AoE Ver", sortable: true),
             FittedCol("LoadPass", "Load #", sortable: true, centered: true, sample: "0"),
             infoCol);
+
+        // Mouseover tooltips for the column headers (drawn by ModuleGridView).
+        void Tip(string column, string text) => grid.Columns[column]!.HeaderCell.ToolTipText = text;
+        Tip("Name", "The module's declared name (the [name] entry in its info.txt). It can differ slightly from the name of the folder that contains it.");
+        Tip("Author", "Who made the module. Thank your modders!");
+        Tip("Version", "Module version: the version of this module itself, as declared by its author.");
+        Tip("AoERev", "AoE version: the version of Ashes of Erebus this module was last updated for. Click to sort.");
+        Tip("LoadPass", "Load #: which load folder (0-4) the module is in. The game loads 0 first, then 1, 2, 3 and 4, and alphabetically by folder name within each. Right-click a module to change it. Click to sort.");
+        Tip("Info", "Click the \"i\" button on a row to see the module's full description, author, versions, load #, and its dependency and compatibility lists.");
         return grid;
     }
 
@@ -832,7 +1077,7 @@ public class MainForm : Form
         }
     }
 
-    /// Sort order for the two sortable non-text-like columns: AoE Rev numerically (blank first),
+    /// Sort order for the two sortable non-text-like columns: AoE Ver numerically (blank first),
     /// Load # in load order (0, 1, 2, 3, 4). Ties fall back to the module name. Modules
     /// greyed out by the tag filters stay after the others in either direction.
     private void OnGridSortCompare(object? sender, DataGridViewSortCompareEventArgs e)
@@ -901,7 +1146,7 @@ public class MainForm : Form
             ApplyCollapsedSize();
 
         RefreshModules(true);
-        RefreshPresetCombo();
+        RefreshPresetCombo(updateManageButton: false); // RefreshModules already matched the presets
     }
 
     /// Returns true if the app should proceed, false if the user chose to quit.
@@ -1028,6 +1273,13 @@ public class MainForm : Form
             return;
         }
 
+        // Last step before starting: make sure modules' paths into other modules' folders are current.
+        if (!EnsureCrossModulePaths("launching the game"))
+        {
+            lblStatus.Text = "Launch aborted.";
+            return;
+        }
+
         try
         {
             var modFolderName = Path.GetFileName(_modPath);
@@ -1064,24 +1316,6 @@ public class MainForm : Form
         var installed = ModuleScanner.ScanAll(_modPath);
         var set = installed.Where(m => m.IsActive).Select(m => new LoadEntry(m, m.LoadPass)).ToList();
         return (set, installed);
-    }
-
-    /// Checks the modules of a preset as the preset would load them (using the Load #s it
-    /// records). Modules the preset names but that aren't installed locally can't be checked
-    /// and are skipped.
-    private bool VerifyPresetModules(Preset preset, string action)
-    {
-        var installed = ModuleScanner.ScanAll(_modPath);
-        var set = new List<LoadEntry>();
-        foreach (var pm in preset.Modules)
-        {
-            var local = installed
-                .Where(m => string.Equals(m.FolderName, pm.Name, StringComparison.OrdinalIgnoreCase))
-                .OrderByDescending(m => m.IsActive)
-                .FirstOrDefault();
-            if (local != null) set.Add(new LoadEntry(local, pm.LoadPass));
-        }
-        return VerifyModuleSet(action, set, installed, "in the preset");
     }
 
     // The three problem texts below are shared by the popups and by the status indicator's
@@ -1389,7 +1623,7 @@ public class MainForm : Form
     private void RefreshModules(bool firstLaunch = false)
     {
         Cursor = Cursors.WaitCursor;
-        lblStatus.Text = "Scanning modules...";
+        SetStatus("Scanning modules...");
         UpdateLaunchButtonText();
 
         var all = ModuleScanner.ScanAll(_modPath);
@@ -1399,6 +1633,8 @@ public class MainForm : Form
             .OrderBy(m => m.Name, StringComparer.OrdinalIgnoreCase).ThenBy(m => m.FolderName, StringComparer.OrdinalIgnoreCase).ToList();
 
         RepopulateGrids(keepScroll: true);
+        RecomputeCurrentPreset();
+        UpdateManageButton();
 
         // Runs once per refresh, which is once per batch of moves, never per module moved.
         RefreshGameRunning(force: true);
@@ -1517,7 +1753,7 @@ public class MainForm : Form
     {
         var text = new StringBuilder();
         text.AppendLine($"Version: {m.Version}");
-        if (!string.IsNullOrWhiteSpace(m.AoeRev)) text.AppendLine($"AoE Rev: {m.AoeRev}");
+        if (!string.IsNullOrWhiteSpace(m.AoeRev)) text.AppendLine($"AoE Ver: {m.AoeRev}");
         text.AppendLine($"Load #: {ModuleLayout.PassDisplayName(m.LoadPass)}");
         if (!string.Equals(m.Name, m.FolderName, StringComparison.Ordinal)) text.AppendLine($"Folder: {m.FolderName}");
         if (!string.IsNullOrWhiteSpace(m.Author)) text.AppendLine($"Author: {m.Author}");
@@ -1562,16 +1798,19 @@ public class MainForm : Form
 - Right-click > ""Autosort active modules"" (also offered when a load order problem is found) tries to fix load order by changing the Load # of as few active modules as it can; it shows you the changes first, and you can cancel. It is for simple fixes only: if it can't find a solution (for example, modules that depend on each other in a loop), it says so and you'll need to fix the order yourself
 
     PRESETS
-- Pressing the ""Save..."" button will give you the option to save the current selection as a preset
-- Pressing the Load Preset button will cause the currently selected preset in the dropdown box to be loaded
+- Pressing the ""Save Active Modules As New Preset"" button will give you the option to save the current selection as a preset (names are limited to 24 characters)
+- Pressing the Load button will cause the currently selected preset in the dropdown box to be loaded
 - Presets remember each module's Load #, and loading one puts modules back in those Load #s
-- Delete will prompt you whether to delete the currently selected preset (it will NOT delete your modules!)
+- The Load and Delete buttons are named after the selected preset (and greyed out when there are none); hover over any button for a short description. Delete will prompt you whether to delete that preset (it will NOT delete your modules!)
+- Saving, loading, exporting or importing a preset, launching, and pressing Refresh all first re-check file paths between modules, so that modules reference each other at the right Load #; moving modules between lists or Load #s does not
+- If an active module refers to files in a module that is inactive, you are told once (it usually means a missing dependency)
 
     EXPORTING AND IMPORTING
 - Presets can be exported or imported, which is VERY USEFUL when you are reporting bugs on discord
-- The Import Preset button will prompt you to paste a preset code, and then save and load it
-- Export Preset will copy a code to your clipboard that you can use to send to others
-- If the Futureproof box is checked, the copied code will not be checked upon import for matching module versions, only their presence
+- The Import Preset button will prompt you to paste a preset code, then to name it (or press Don't save to use it without keeping it in your presets), and then offers to apply it
+- Export Active Modules As Preset copies a code for your CURRENT active modules and their Load #s to your clipboard, to send to others (it first re-checks module file paths, so the code matches the files on disk). If those modules match one of your saved presets, the preset's name is shown at the start of the code
+- Importing a code lets you apply it: modules are moved to the Load #s in the code (and any others deactivated), then each module is compared with the sender's copy and you are told about any that differ or are missing
+- If the Futureproof box is checked, the copied code will not be checked upon import for matching module versions, only their presence (Load #s are still included); the same applies to presets you Save while it is checked
 
     UPDATING SCHEMAS (For module makers)
 - This button will attempt to *update*, not add, schema files for all modules. The modules will need to be formatted correctly! Nonmatching schema paths will be flagged.";
@@ -1590,16 +1829,17 @@ public class MainForm : Form
         text.Replace("\r\n", "\n").Replace("\r", "\n").Replace("\n", Environment.NewLine);
 
     /// Generic scrollable read-only message dialog, styled to match the app, with a single OK button.
-    /// 'large' is used for the module info ("i") popup: it opens much bigger (up to ~85% of the screen's
-    /// working area) since long descriptions can be thousands of characters. The window stays resizable.
+    /// 'large' is used for the module info ("i") popup: it is sized to its text in both directions --
+    /// as wide as the longest line needs (between a minimum and ~85% of the screen's working area,
+    /// capped at a maximum width), then as tall as the wrapped text needs (up to ~85% of the working
+    /// area, beyond which it scrolls) -- and is centered over the launcher window. The window stays resizable.
     private void ShowScrollableMessage(string title, string text, bool large = false)
     {
         var area = Screen.FromControl(this).WorkingArea;
         int width, height;
         if (large)
         {
-            width = Math.Min(Theme.S(1000), (int)(area.Width * 0.85));
-            height = (int)(area.Height * 0.85);
+            width = height = 0; // worked out from the text below
         }
         else
         {
@@ -1610,11 +1850,53 @@ public class MainForm : Form
         using var form = new Form
         {
             Text = title,
-            StartPosition = FormStartPosition.CenterParent,
+            StartPosition = large ? FormStartPosition.Manual : FormStartPosition.CenterParent,
         };
         Theme.StyleForm(form);
+        form.MinimumSize = large ? new Size(Theme.S(400), Theme.S(160)) : new Size(Theme.S(400), Theme.S(300));
+
+        if (large)
+        {
+            var padding = Theme.S(12);
+            var buttonHeight = Theme.ButtonHeight + Theme.S(4);
+            var normalized = NormalizeNewlines(text);
+            var scrollBar = SystemInformation.VerticalScrollBarWidth;
+            var minWidth = Theme.S(400);
+            var maxWidth = Math.Min(Theme.S(1000), (int)(area.Width * 0.85));
+            var maxClientHeight = (int)(area.Height * 0.85);
+
+            // Width: the longest single line at its natural (unwrapped) width, plus padding, the
+            // scroll bar and a little slack, kept between the minimum and maximum.
+            var longestLine = 0;
+            foreach (var line in normalized.Split(new[] { Environment.NewLine }, StringSplitOptions.None))
+            {
+                if (line.Length == 0) continue;
+                longestLine = Math.Max(longestLine, TextRenderer.MeasureText(line, Theme.BodyFont, Size.Empty,
+                    TextFormatFlags.NoPadding | TextFormatFlags.SingleLine).Width);
+            }
+            width = Math.Max(minWidth, Math.Min(maxWidth, longestLine + padding * 2 + scrollBar + Theme.S(12)));
+
+            // Height: the text wrapped the way the text box will wrap it (inside the padding, minus the
+            // vertical scroll bar a multiline TextBox with ScrollBars.Vertical always reserves).
+            var wrapWidth = Math.Max(Theme.S(100), width - padding * 2 - scrollBar - Theme.S(6));
+            var measured = TextRenderer.MeasureText(normalized, Theme.BodyFont, new Size(wrapWidth, 0),
+                TextFormatFlags.WordBreak | TextFormatFlags.TextBoxControl | TextFormatFlags.NoPadding);
+
+            // One spare line so a wrapping estimate that is slightly off never hides the last line.
+            var wanted = measured.Height + Theme.BodyFont.Height + padding * 2 + buttonHeight;
+            height = Math.Max(Theme.S(140), Math.Min(maxClientHeight, wanted));
+        }
         form.ClientSize = new Size(width, height);
-        form.MinimumSize = new Size(Theme.S(400), Theme.S(300));
+
+        if (large)
+        {
+            // Centered over the launcher window, kept on the screen.
+            var left = Left + (Width - form.Width) / 2;
+            var top = Top + (Height - form.Height) / 2;
+            left = Math.Max(area.Left, Math.Min(left, area.Right - form.Width));
+            top = Math.Max(area.Top, Math.Min(top, area.Bottom - form.Height));
+            form.Location = new Point(left, top);
+        }
 
         var box = new ReadOnlySelectableTextBox
         {
@@ -1846,7 +2128,7 @@ public class MainForm : Form
         foreach (var pass in ModuleLayout.Passes)
         {
             var targetPass = pass;
-            var item = new ToolStripMenuItem($"Set Load # to {ModuleLayout.PassDisplayName(targetPass)}") { Tag = targetPass };
+            var item = new ToolStripMenuItem(PassItemText(targetPass, plural: false)) { Tag = targetPass };
             item.Click += (s, e) =>
             {
                 var requests = contextTargets
@@ -1886,6 +2168,12 @@ public class MainForm : Form
 
             contextTargets = GetContextTargets(grid, contextRowIndex);
 
+            // With several modules selected the items act on all of them, and say so.
+            var plural = contextTargets.Count > 1;
+            openFolderItem.Text = plural ? "Open containing folders" : "Open containing folder";
+            foreach (var item in passItems)
+                item.Text = PassItemText((string)item.Tag!, plural);
+
             // Hide the Load # the module(s) are already in. With a multi-selection spanning several
             // Load #s an option stays visible as long as it would move at least one of them.
             foreach (var item in passItems)
@@ -1897,11 +2185,19 @@ public class MainForm : Form
 
         openFolderItem.Click += (s, e) =>
         {
-            if (contextRowIndex >= 0 && contextRowIndex < grid.Rows.Count &&
-                grid.Rows[contextRowIndex].Tag is ModuleInfo m)
+            if (contextTargets.Count == 0) return;
+
+            // Every selected module gets its own Explorer window, so guard against a stray huge selection.
+            if (contextTargets.Count > MaxFolderWindowsWithoutAsking)
             {
-                OpenModuleFolder(m.FullPath);
+                var answer = MessageBox.Show(this,
+                    $"This will open {contextTargets.Count} Explorer windows. Continue?",
+                    "Open Containing Folders", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+                if (answer != DialogResult.Yes) return;
             }
+
+            foreach (var m in contextTargets)
+                OpenModuleFolder(m.FullPath);
         };
 
         grid.ContextMenuStrip = contextMenu;
@@ -1973,6 +2269,13 @@ public class MainForm : Form
         /// Target Load # ("0".."4"); empty/invalid keeps the Load # the module is already in.
         public string Pass { get; set; } = "";
     }
+
+    private const int MaxFolderWindowsWithoutAsking = 5;
+
+    /// Right-click menu text for a Load # entry: "Set Load # to 2", or "Set Load #s to 2" when it
+    /// will apply to several selected modules.
+    private static string PassItemText(string pass, bool plural) =>
+        $"Set Load #{(plural ? "s" : "")} to {ModuleLayout.PassDisplayName(pass)}";
 
     private static List<ModuleInfo> GetContextTargets(DataGridView grid, int rowIndex)
     {
@@ -2049,6 +2352,7 @@ public class MainForm : Form
                 // have to follow it to the new Load #. Silent unless something fails.
                 if (!string.Equals(oldPass, pass, StringComparison.Ordinal))
                 {
+                    SetStatus($"Updating file paths in '{name}'...");
                     foreach (var e in ModulePathRewriter.Rewrite(dest, name, oldPass, pass))
                         pathErrors.Add($"{name}: {e}");
                 }
@@ -2079,6 +2383,9 @@ public class MainForm : Form
                         "(this can happen when the game is installed under Program Files).");
             MessageBox.Show(this, text.ToString(), "Move Modules", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
+
+        // Other modules' references to the ones whose Load # just changed are fixed by the full scan,
+        // at the next save / load / export / import / launch / refresh (see EnsureCrossModulePaths).
 
         RefreshModules();
         return true;
@@ -2137,14 +2444,180 @@ public class MainForm : Form
             CopyDirectory(dir, Path.Combine(destDir, Path.GetFileName(dir)));
     }
 
+    // ------------------------------------------- Cross-module path scan ---
+
+    /// Status text describing what the last scan changed, or null if it changed nothing.
+    private string? _lastScanSummary;
+
+    /// Pairs ("A -> B") already reported by the inactive-reference notice this session, so the
+    /// same notice doesn't come back on every launch/save/export. Refresh clears it.
+    private readonly HashSet<string> _reportedInactiveRefs = new(StringComparer.OrdinalIgnoreCase);
+
+    /// Sets the status bar text and repaints it immediately. Slow operations run on the UI thread, so
+    /// without the forced repaint the text would not show until the work was over -- which is exactly
+    /// when it is least useful (e.g. if something hangs).
+    private void SetStatus(string text)
+    {
+        lblStatus.Text = text;
+        lblStatus.Update();
+    }
+
+    /// Scans every module's XML (active and inactive) for paths into module folders and fixes the
+    /// Load # in any that is wrong (see CrossModulePathScanner). Always runs when called: it is
+    /// called by Save, Load, Export, Import, Launch and Refresh -- but not when modules are simply
+    /// moved, to keep that fast -- so module files are consistent with where modules really are,
+    /// even if folders were moved by hand. Takes well under a second on a typical install.
+    /// Returns false only if something couldn't be updated AND the user chose to abort
+    /// `abortAction` ("launching the game", ...); with a null `abortAction` problems are just
+    /// reported and the caller carries on.
+    private bool EnsureCrossModulePaths(string? abortAction)
+    {
+        _lastScanSummary = null;
+
+        SetStatus("Checking module file paths...");
+        Cursor = Cursors.WaitCursor;
+        CrossModulePathScanner.ScanResult result;
+        try
+        {
+            result = CrossModulePathScanner.Run(_modPath, SetStatus);
+        }
+        catch (Exception ex)
+        {
+            // Never leave the status stuck on "Checking...": report it like any other failure.
+            result = new CrossModulePathScanner.ScanResult();
+            result.Errors.Add($"The scan failed unexpectedly: {ex.Message}");
+        }
+        finally
+        {
+            Cursor = Cursors.Default;
+        }
+
+        if (result.ReferencesUpdated > 0)
+        {
+            _lastScanSummary = $"Updated {result.ReferencesUpdated} module path(s) in {result.FilesChanged} file(s) ({result.FilesScanned} XML files checked).";
+            SetStatus(_lastScanSummary);
+        }
+        else if (result.Errors.Count == 0)
+            SetStatus($"Module file paths are up to date ({result.FilesScanned} XML files checked).");
+        else
+            SetStatus("Checking module file paths had problems.");
+
+        // Rewritten files can change a module's fingerprint, and with it whether a preset still matches.
+        if (result.FilesChanged > 0)
+        {
+            RecomputeCurrentPreset();
+            UpdateManageButton();
+        }
+
+        NotifyInactiveReferences(result);
+
+        if (result.Errors.Count == 0) return true;
+
+        var text = new StringBuilder();
+        text.AppendLine("Some files couldn't be checked or updated, so paths in them that point into other modules " +
+                        "may be wrong (art or other files may fail to load):");
+        text.AppendLine();
+        foreach (var err in result.Errors.Take(40)) text.AppendLine($"   - {err}");
+        if (result.Errors.Count > 40) text.AppendLine($"   ... and {result.Errors.Count - 40} more");
+        text.AppendLine();
+        text.Append("If this keeps happening, try running the launcher as Administrator " +
+                    "(this can happen when the game is installed under Program Files). The check runs again next time.");
+
+        if (abortAction == null)
+        {
+            ShowScrollableMessage("Module File Paths", text.ToString());
+            return true;
+        }
+        return ShowConfirmMessage("Module File Paths", text.ToString() + $"\n\nContinue anyway, or abort {abortAction}?",
+            "Continue", "Abort", cancelIsDefault: true);
+    }
+
+    /// Tells the user about ACTIVE modules whose files point into modules that are only installed
+    /// inactive. The paths are still kept up to date (so fingerprints stay consistent between
+    /// machines), but the game can't find anything there while the other module is inactive, which
+    /// usually means the author forgot to declare a dependency. Each pair is reported once per session.
+    private void NotifyInactiveReferences(CrossModulePathScanner.ScanResult result)
+    {
+        var fresh = result.InactiveReferences
+            .Where(r => _reportedInactiveRefs.Add($"{r.FromModule} -> {r.ToModule}"))
+            .ToList();
+        if (fresh.Count == 0) return;
+
+        var byFolder = _activeModules.Concat(_inactiveModules)
+            .GroupBy(m => m.FolderName, StringComparer.OrdinalIgnoreCase)
+            .ToDictionary(g => g.Key, g => g.First(), StringComparer.OrdinalIgnoreCase);
+        string Describe(string folder) => byFolder.TryGetValue(folder, out var m) ? DescribeModule(m) : $"'{folder}'";
+
+        var text = new StringBuilder();
+        text.AppendLine("Some active modules contain path references to modules that are currently inactive:");
+        text.AppendLine();
+        foreach (var group in fresh.GroupBy(r => r.FromModule, StringComparer.OrdinalIgnoreCase))
+        {
+            foreach (var r in group)
+                text.AppendLine($"   - {Describe(r.FromModule)} references {Describe(r.ToModule)}, which is currently inactive.");
+        }
+        text.AppendLine();
+        text.Append("This is likely due to a missing dependency, and may or may not cause issues " +
+                    "(for example, missing art). This notice is shown once per session for each pair.");
+
+        ShowScrollableMessage("Module Path References", text.ToString());
+    }
+
     // ------------------------------------------------------------ Presets ---
 
-    private void RefreshPresetCombo()
+    /// Labels the Delete and Load buttons for the selected preset -- Delete "Name" / Load "Name", the
+    /// name cut with an ellipsis to fit the button -- and greys them out (unclickable) when there
+    /// are no presets. The tooltips name the preset too.
+    private void UpdatePresetButtons()
+    {
+        if (btnDeletePreset == null || btnLoadPreset == null) return;
+
+        var name = cmbPresets.SelectedItem as string;
+        var has = name != null;
+
+        SetPresetButton(btnDeletePreset, "Delete", "Delete Preset", name);
+        SetPresetButton(btnLoadPreset, "Load", "Load Preset", name);
+
+        _presetToolTip.SetToolTip(btnDeletePreset, has
+            ? $"Deletes the saved preset \"{name}\". Your modules are not touched."
+            : "There are no saved presets to delete.");
+        _presetToolTip.SetToolTip(btnLoadPreset, has
+            ? $"Applies the saved preset \"{name}\": its modules are activated in their recorded Load #s and all other modules are deactivated."
+            : "There are no saved presets to load.");
+    }
+
+    private static void SetPresetButton(Button button, string verb, string idleText, string? name)
+    {
+        if (name == null)
+        {
+            button.Text = idleText;
+            button.Enabled = false;
+            return;
+        }
+
+        var maxWidth = button.Width - Theme.S(16);
+        int Measure(string t) => TextRenderer.MeasureText(t, button.Font, Size.Empty,
+            TextFormatFlags.NoPadding | TextFormatFlags.SingleLine).Width;
+
+        var shown = name;
+        while (shown.Length > 1 && Measure($"{verb} \"{shown}\"") > maxWidth)
+            shown = shown.Substring(0, shown.Length - 1);
+        button.Text = shown.Length < name.Length ? $"{verb} \"{shown.TrimEnd()}\u2026\"" : $"{verb} \"{name}\"";
+        button.Enabled = true;
+    }
+
+    private void RefreshPresetCombo(bool updateManageButton = true)
     {
         cmbPresets.Items.Clear();
         foreach (var p in _config.Presets.OrderBy(p => p.Name, StringComparer.OrdinalIgnoreCase))
             cmbPresets.Items.Add(p.Name);
         if (cmbPresets.Items.Count > 0) cmbPresets.SelectedIndex = 0;
+        UpdatePresetButtons();
+        if (updateManageButton)
+        {
+            RecomputeCurrentPreset();
+            UpdateManageButton();
+        }
     }
 
     private Preset? GetSelectedPreset()
@@ -2163,7 +2636,8 @@ public class MainForm : Form
         if (!VerifyActiveModules("saving the preset"))
             return;
 
-        var name = InputForm.Prompt(this, "Save Preset", "Preset name:", "");
+        var name = InputForm.Prompt(this, "Save Preset", $"Preset name (up to {MaxPresetNameLength} characters):", "",
+            maxLength: MaxPresetNameLength);
         if (string.IsNullOrWhiteSpace(name)) return;
         name = name!.Trim();
 
@@ -2176,15 +2650,24 @@ public class MainForm : Form
             _config.Presets.Remove(existing);
         }
 
+        // With Futureproof checked the preset is saved as if it were an imported futureproof code: no
+        // versions or fingerprints, so loading it only checks that each module is installed.
+        var futureproof = chkFutureproof.Checked;
+
+        // Fingerprints are about to be recorded: make sure modules' paths into other modules are current first.
+        if (!futureproof && !EnsureCrossModulePaths("saving the preset"))
+            return;
+
         Cursor = Cursors.WaitCursor;
         var preset = new Preset { Name = name, SourceVersion = ReadModVersion() };
         foreach (var m in _activeModules)
         {
+            if (!futureproof) SetStatus($"Fingerprinting '{m.Name}'...");
             preset.Modules.Add(new ModuleRef
             {
                 Name = m.FolderName,
-                Version = m.Version,
-                Fingerprint = ModuleScanner.ComputeFingerprint(m.FullPath),
+                Version = futureproof ? "" : m.Version,
+                Fingerprint = futureproof ? "" : ModuleScanner.ComputeFingerprint(m.FullPath),
                 LoadPass = m.LoadPass,
             });
         }
@@ -2194,7 +2677,7 @@ public class MainForm : Form
         SaveConfig();
         RefreshPresetCombo();
         cmbPresets.SelectedItem = preset.Name;
-        lblStatus.Text = $"Saved preset '{preset.Name}' with {preset.Modules.Count} modules.";
+        lblStatus.Text = $"Saved preset '{preset.Name}' with {preset.Modules.Count} modules{(futureproof ? " (futureproof)" : "")}.";
     }
 
     private void LoadPreset()
@@ -2204,6 +2687,8 @@ public class MainForm : Form
         ApplyPreset(preset);
     }
 
+    /// Moves modules to match the preset, runs the cross-module path scan, THEN compares fingerprints,
+    /// so they reflect the folders as they are on disk after the moves.
     private void ApplyPreset(Preset preset)
     {
         var wanted = preset.Modules
@@ -2246,6 +2731,10 @@ public class MainForm : Form
             return;
         }
 
+        // The preset may have moved modules to other Load #s, so paths in other modules' XML that
+        // point at them can be stale and would make the fingerprints below differ for no real reason.
+        EnsureCrossModulePaths(abortAction: null);
+
         // Recompute against the CURRENT (post-move) locations. PerformMoves() above may have
         // relocated some of these folders, and comparing against the pre-move snapshot's now
         // stale FullPath values would make ComputeFingerprint operate on a path that no longer
@@ -2258,10 +2747,12 @@ public class MainForm : Form
         // Fingerprint (and therefore this check) is only present for non-futureproof presets --
         // ModuleRef.Fingerprint is left empty for futureproof imports, so this naturally no-ops for those.
         var mismatches = new List<string>();
+        var checkedCount = 0;
         foreach (var pm in preset.Modules)
         {
             if (afterCurrent.TryGetValue(pm.Name, out var local) && !string.IsNullOrEmpty(pm.Fingerprint))
             {
+                SetStatus($"Comparing modules with the preset ({++checkedCount}): {local.Name}...");
                 var localFp = ModuleScanner.ComputeFingerprint(local.FullPath);
                 if (!string.Equals(localFp, pm.Fingerprint, StringComparison.Ordinal))
                     mismatches.Add($"{local.Name}  (preset expects v{pm.Version}; your local copy appears different)");
@@ -2286,10 +2777,9 @@ public class MainForm : Form
             foreach (var m in mismatches) msg.AppendLine($"   - {m}");
         }
 
+        SetStatus($"Applied preset '{preset.Name}'.");
         if (msg.Length > 0)
             ShowScrollableMessage($"Applied Preset: {preset.Name}", msg.ToString());
-        else
-            lblStatus.Text = $"Applied preset '{preset.Name}'.";
     }
 
     private void DeletePreset()
@@ -2306,27 +2796,51 @@ public class MainForm : Form
         RefreshPresetCombo();
     }
 
+    /// Exports the CURRENT active modules (not a saved preset) as a share code: each module's folder
+    /// name and Load #, plus version and content fingerprint unless Futureproof is checked. If the
+    /// active modules exactly match a saved preset, its name is put in the code's id string.
     private void ExportPreset()
     {
-        var preset = GetSelectedPreset();
-        if (preset == null) return;
+        // Re-read the disk first: modules may have been moved by hand since the last refresh.
+        RefreshModules();
 
-        if (!VerifyPresetModules(preset, "exporting the preset"))
+        if (!VerifyActiveModules("exporting the active modules"))
             return;
+
+        // Scan first: the fingerprints in the code must describe the module files exactly as they
+        // are on disk right now.
+        if (!EnsureCrossModulePaths("exporting the active modules"))
+            return;
+
+        Cursor = Cursors.WaitCursor;
+        var fingerprints = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+        var preset = new Preset { SourceVersion = ReadModVersion() };
+        foreach (var m in _activeModules.OrderBy(m => m.FolderName, StringComparer.OrdinalIgnoreCase))
+        {
+            SetStatus($"Fingerprinting '{m.Name}'...");
+            var fp = ModuleScanner.ComputeFingerprint(m.FullPath);
+            fingerprints[m.FolderName] = fp;
+            preset.Modules.Add(new ModuleRef { Name = m.FolderName, Version = m.Version, Fingerprint = fp, LoadPass = m.LoadPass });
+        }
+        var matchingName = FindMatchingPresetName(fingerprints);
+        preset.Name = matchingName ?? "";
+        Cursor = Cursors.Default;
 
         var futureproof = chkFutureproof.Checked;
         var code = PresetCodec.Encode(preset, futureproof, ReadModVersion());
         Clipboard.SetText(code);
+        SetStatus($"Copied a preset code for {preset.Modules.Count} active modules to the clipboard.");
 
         var overLimit = code.Length > PresetCodec.DiscordSafeLimit;
         var warning = overLimit
             ? $"\n\nHeads up: this code is {code.Length} characters, over Discord's 2000-character message limit. " +
-              (futureproof ? "Try trimming the preset to fewer modules." : "Try the Futureproof option to shrink it, or trim the preset.")
+              (futureproof ? "Try deactivating some modules." : "Try the Futureproof option to shrink it, or deactivate some modules.")
             : "";
+        var named = matchingName != null ? $" It is labelled with your saved preset '{matchingName}', which these modules match." : "";
 
         MessageBox.Show(this,
-            $"Preset '{preset.Name}' was copied to your clipboard as a share code ({code.Length} characters).{warning}",
-            "Export Preset", MessageBoxButtons.OK, overLimit ? MessageBoxIcon.Warning : MessageBoxIcon.Information);
+            $"Your {preset.Modules.Count} active modules were copied to your clipboard as a share code ({code.Length} characters).{named}{warning}",
+            "Export Active Modules", MessageBoxButtons.OK, overLimit ? MessageBoxIcon.Warning : MessageBoxIcon.Information);
     }
 
     private void ImportPreset()
@@ -2346,17 +2860,29 @@ public class MainForm : Form
             return;
         }
 
-        var name = InputForm.Prompt(this, "Name This Preset", "Save the imported preset as:", preset.Name);
-        if (string.IsNullOrWhiteSpace(name)) return;
-        preset.Name = name!.Trim();
+        var suggested = preset.Name.Length > MaxPresetNameLength ? preset.Name.Substring(0, MaxPresetNameLength) : preset.Name;
+        var name = InputForm.PromptWithAlternate(this, "Name This Preset",
+            $"Save the imported preset as (up to {MaxPresetNameLength} characters):", suggested,
+            "Don't save", out var dontSave, maxLength: MaxPresetNameLength);
 
-        var existing = _config.Presets.FirstOrDefault(p => p.Name.Equals(preset.Name, StringComparison.OrdinalIgnoreCase));
-        if (existing != null) _config.Presets.Remove(existing);
+        if (dontSave)
+        {
+            // Keep the code out of the saved presets, but still offer to apply it.
+            preset.Name = suggested.Trim().Length > 0 ? suggested.Trim() : "Imported preset";
+        }
+        else
+        {
+            if (string.IsNullOrWhiteSpace(name)) return;
+            preset.Name = name!.Trim();
 
-        _config.Presets.Add(preset);
-        SaveConfig();
-        RefreshPresetCombo();
-        cmbPresets.SelectedItem = preset.Name;
+            var existing = _config.Presets.FirstOrDefault(p => p.Name.Equals(preset.Name, StringComparison.OrdinalIgnoreCase));
+            if (existing != null) _config.Presets.Remove(existing);
+
+            _config.Presets.Add(preset);
+            SaveConfig();
+            RefreshPresetCombo();
+            cmbPresets.SelectedItem = preset.Name;
+        }
 
         var localVersion = ReadModVersion();
         var versionNote = (!string.IsNullOrEmpty(preset.SourceVersion) &&
@@ -2365,7 +2891,7 @@ public class MainForm : Form
             : "";
 
         var apply = MessageBox.Show(this,
-            $"Preset '{preset.Name}' imported with {preset.Modules.Count} modules.{versionNote}\n\nApply it now?",
+            $"Preset '{preset.Name}' imported with {preset.Modules.Count} modules{(dontSave ? " (not saved)" : "")}.{versionNote}\n\nApply it now?",
             "Import Preset", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
         if (apply == DialogResult.Yes)
             ApplyPreset(preset);

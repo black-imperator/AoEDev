@@ -146,6 +146,14 @@ public class ModuleGridView : DataGridView
                 column = hit.ColumnIndex;
                 text = Rows[row].Cells[column].ToolTipText ?? "";
             }
+            else if (hit.Type == DataGridViewHitTestType.ColumnHeader &&
+                     hit.ColumnIndex >= 0 && hit.ColumnIndex < Columns.Count &&
+                     !IsOnDivider(pt.X, pt.Y))
+            {
+                // Column header: row stays -1, which keeps it distinct from every cell.
+                column = hit.ColumnIndex;
+                text = Columns[column].HeaderCell.ToolTipText ?? "";
+            }
         }
 
         if (row == _tipRow && column == _tipColumn && text == _tipText) return;

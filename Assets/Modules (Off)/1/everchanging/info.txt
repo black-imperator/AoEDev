@@ -47,7 +47,7 @@ Event
 ;This shows up as a tooltip when the user mouses over it in the launcher.
 ;Please keep it as short as possible, ideally even shorter than this line here.
 [shortdesc]
-Adds Salia, a early barb hero that grows stronger on death but switches allegiance to the killer's team.
+Adds Saila, a early barb hero that grows stronger on death but switches allegiance to the killer's team.
 
 ;Longer description to tell how awesome your stuff is.
 [desc]
