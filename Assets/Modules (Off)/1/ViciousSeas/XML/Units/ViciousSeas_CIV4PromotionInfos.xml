@@ -421,16 +421,24 @@
 					<iTerrainMoveCost>+3</iTerrainMoveCost>
 				</TerrainMoveCost>
 			</TerrainMoveCosts>
-			<FeatureMoveCosts>
-				<FeatureMoveCost>
-					<FeatureType>FEATURE_REEFS</FeatureType>
-					<iFeatureMoveCost>-1</iFeatureMoveCost>
-				</FeatureMoveCost>
-				<FeatureMoveCost>
-					<FeatureType>FEATURE_KELP_FOREST</FeatureType>
-					<iFeatureMoveCost>-1</iFeatureMoveCost>
-				</FeatureMoveCost>
-			</FeatureMoveCosts>
+			<TerrainDoubleMoves>
+				<TerrainDoubleMove>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<bTerrainDoubleMove>1</bTerrainDoubleMove>
+				</TerrainDoubleMove>
+				<TerrainDoubleMove>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<bTerrainDoubleMove>1</bTerrainDoubleMove>
+				</TerrainDoubleMove>
+				<TerrainDoubleMove>
+					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
+					<bTerrainDoubleMove>1</bTerrainDoubleMove>
+				</TerrainDoubleMove>
+				<TerrainDoubleMove>
+					<TerrainType>TERRAIN_BLIGHTED_COAST</TerrainType>
+					<bTerrainDoubleMove>1</bTerrainDoubleMove>
+				</TerrainDoubleMove>
+			</TerrainDoubleMoves>
 			<Button>Art/Interface/Buttons/Races/Race_Lizardmen.dds</Button>
 			<bRace>1</bRace>
 			<UnitArtStyleType>UNIT_ARTSTYLE_LIZARD_BEZERI</UnitArtStyleType>
@@ -452,11 +460,11 @@
 			<DamageTypeResists>
 				<DamageTypeResist>
 					<DamageType>DAMAGE_FIRE</DamageType>
-					<iResist>25</iResist>
+					<iResist>15</iResist>
 				</DamageTypeResist>
 				<DamageTypeResist>
 					<DamageType>DAMAGE_POISON</DamageType>
-					<iResist>10</iResist>
+					<iResist>15</iResist>
 				</DamageTypeResist>
 				<DamageTypeResist>
 					<DamageType>DAMAGE_LIGHTNING</DamageType>

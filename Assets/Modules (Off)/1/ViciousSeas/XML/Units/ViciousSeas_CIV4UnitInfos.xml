@@ -543,20 +543,6 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<TerrainMoveCosts>
-				<TerrainMoveCost>
-					<TerrainType>TERRAIN_OCEAN</TerrainType>
-					<iTerrainMoveCost>-1</iTerrainMoveCost>
-				</TerrainMoveCost>
-				<TerrainMoveCost>
-					<TerrainType>TERRAIN_BLACKWATER</TerrainType>
-					<iTerrainMoveCost>-1</iTerrainMoveCost>
-				</TerrainMoveCost>
-				<TerrainMoveCost>
-					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
-					<iTerrainMoveCost>-2</iTerrainMoveCost>
-				</TerrainMoveCost>
-			</TerrainMoveCosts>
 			<Builds>
 				<Build>
 					<BuildType>BUILD_CORAL_FORT</BuildType>

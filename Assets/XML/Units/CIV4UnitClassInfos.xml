@@ -563,7 +563,7 @@
 			<Description>TXT_KEY_UNIT_SATYR_ELDER</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iMaxPlayerInstances>4</iMaxPlayerInstances>
 			<iInstanceCostModifier>0</iInstanceCostModifier>
 			<DefaultUnit>UNIT_SATYR_ELDER</DefaultUnit>
 			<iMercenaryWeight>0</iMercenaryWeight>
@@ -4409,7 +4409,7 @@
 			<Description>TXT_KEY_UNIT_RUNEWYN</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iMaxPlayerInstances>4</iMaxPlayerInstances>
 			<iInstanceCostModifier>0</iInstanceCostModifier>
 			<bUnique>1</bUnique>
 			<DefaultUnit>UNIT_RUNEWYN</DefaultUnit>
@@ -4420,7 +4420,7 @@
 			<Description>TXT_KEY_UNIT_SOLAR</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iMaxPlayerInstances>4</iMaxPlayerInstances>
 			<iInstanceCostModifier>0</iInstanceCostModifier>
 			<bUnique>1</bUnique>
 			<DefaultUnit>UNIT_SOLAR</DefaultUnit>
@@ -4431,7 +4431,7 @@
 			<Description>TXT_KEY_UNIT_OATHBOUND</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iMaxPlayerInstances>4</iMaxPlayerInstances>
 			<iInstanceCostModifier>0</iInstanceCostModifier>
 			<bUnique>1</bUnique>
 			<DefaultUnit>UNIT_OATHBOUND</DefaultUnit>

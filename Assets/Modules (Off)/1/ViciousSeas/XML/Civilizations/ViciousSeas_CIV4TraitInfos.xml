@@ -15,7 +15,7 @@
 			<ShortDescription>TXT_KEY_TRAIT_CONQUERORSOFTHESEA_SHORT</ShortDescription>
 			<Help>TXT_KEY_TRAIT_CONQUERORSOFTHESEA_HELP</Help>
 			<Civilopedia>TXT_KEY_TRAIT_CONQUERORSOFTHESEA_PEDIA</Civilopedia>
-			<FreePromotions>
+			<!--<FreePromotions>
 				<FreePromotion>
 					<PromotionType>PROMOTION_SEAFOLK_VS</PromotionType>
 					<bFreePromotion>1</bFreePromotion>
@@ -74,7 +74,7 @@
 					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
 					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
 				</FreePromotionUnitCombat>
-			</FreePromotionUnitCombats>
+			</FreePromotionUnitCombats>-->
 		</TraitInfo>
 		<TraitInfo>		<!-- Conquerors 2-->
 			<Type>TRAIT_CONQUERORSOFTHESEA2</Type>
