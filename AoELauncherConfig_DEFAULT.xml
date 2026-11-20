@@ -123,8 +123,8 @@
   </Presets>
   <CloseOnLaunch>false</CloseOnLaunch>
   <ModulesVisible>false</ModulesVisible>
-  <WindowClientWidth>1376</WindowClientWidth>
-  <WindowClientHeight>994</WindowClientHeight>
-  <AuthorColumnWidth>129</AuthorColumnWidth>
+  <WindowClientWidth>1350</WindowClientWidth>
+  <WindowClientHeight>1000</WindowClientHeight>
+  <AuthorColumnWidth>130</AuthorColumnWidth>
   <WindowMaximized>false</WindowMaximized>
 </AppConfig>
