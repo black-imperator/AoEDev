@@ -106,8 +106,8 @@ public static class Theme
         public override Color MenuItemSelected => MenuHover;
         public override Color MenuItemSelectedGradientBegin => MenuHover;
         public override Color MenuItemSelectedGradientEnd => MenuHover;
-        public override Color SeparatorDark => GridLine;
-        public override Color SeparatorLight => GridLine;
+        public override Color SeparatorDark => Color.White;
+        public override Color SeparatorLight => Color.White;
     }
 
     private static readonly Color MenuHover = Color.FromArgb(75, 75, 79);
@@ -148,7 +148,7 @@ public static class Theme
 
         protected override void OnRenderSeparator(ToolStripSeparatorRenderEventArgs e)
         {
-            using var pen = new Pen(GridLine);
+            using var pen = new Pen(Color.White);
             var y = e.Item.Height / 2;
             e.Graphics.DrawLine(pen, S(6), y, e.Item.Width - S(6), y);
         }
