@@ -129,6 +129,7 @@
 		<LeaderRelationInfo>
 			<Type>LEADERRELATION_FAERYL</Type>
 			<Leader>LEADER_FAERYL</Leader>
+			<DiploLine>TXT_KEY_ATTITUDE_LEADER_RELATION_FAERYL_ARENDEL_BAD</DiploLine>
 			<LeaderAttitudeChanges>
 				<LeaderAttitudeChange>
 					<TargetLeaderType>LEADER_ARENDEL</TargetLeaderType>
@@ -453,6 +454,7 @@
 		<LeaderRelationInfo>	<!-- Alexis -->
 			<Type>LEADERRELATION_ALEXIS</Type>
 			<Leader>LEADER_ALEXIS</Leader>
+			<DiploLine>TXT_KEY_ATTITUDE_LEADER_RELATION_ALEXIS_BAD</DiploLine>
 			<LeaderAttitudeChanges>
 				<LeaderAttitudeChange>
 					<TargetLeaderType>LEADER_ZARIA</TargetLeaderType>

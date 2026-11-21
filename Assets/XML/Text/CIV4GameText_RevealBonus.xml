@@ -14545,20 +14545,20 @@ Your unit is even more surprised to realise there are two figures standing besid
 		<Spanish>[ICON_BULLET]Gets a combat strength change of %d1 after researching %s2.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_</Tag>
-		<English></English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
+		<Tag>TXT_KEY_ATTITUDE_LEADER_RELATION_ALEXIS_BAD</Tag>
+		<English>%D1: "You have betrayed me!"</English>
+		<French>%D1: "You have betrayed me!"</French>
+		<German>%D1: "You have betrayed me!"</German>
+		<Italian>%D1: "You have betrayed me!"</Italian>
+		<Spanish>%D1: "You have betrayed me!"</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_</Tag>
-		<English></English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
+		<Tag>TXT_KEY_ATTITUDE_LEADER_RELATION_FAERYL_ARENDEL_BAD</Tag>
+		<English>%D1: "I envy your beauty and your leadership!"</English>
+		<French>%D1: "I envy your beauty and your leadership!"</French>
+		<German>%D1: "I envy your beauty and your leadership!"</German>
+		<Italian>%D1: "I envy your beauty and your leadership!"</Italian>
+		<Spanish>%D1: "I envy your beauty and your leadership!"</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_</Tag>

@@ -1728,8 +1728,10 @@ class CvGameUtils:
 			if iData1 == 1008:
 				pHeadSelectedUnit = CyInterface().getHeadSelectedUnit()
 				iUC = pHeadSelectedUnit.getUnitCombatType()
-				szUCDecription = gc.getUnitCombatInfo(iUC).getDescription()
-				return szUCDecription
+				if (iUC!=-1):
+					szUCDecription = gc.getUnitCombatInfo(iUC).getDescription()
+					return szUCDecription
+				return ""
 
 ## Religion Screen ##
 		if eWidgetType == WidgetTypes.WIDGET_HELP_RELIGION:

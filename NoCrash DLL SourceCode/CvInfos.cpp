@@ -52951,6 +52951,22 @@ int CvLeaderRelationInfo::getLeaderAttitudeChange(int i) const
 	FAssertMsg(i > -1, "Index out of bounds");
 	return m_paiLeaderAttitudeChange ? m_paiLeaderAttitudeChange[i] : -1;
 }
+const TCHAR* CvLeaderRelationInfo::getDiploDescription() const
+{
+	if (m_szDiploDescription == NULL)
+	{
+		return NULL;
+	}
+	/*************************************************************************************************/
+	/**	TrueModular								END													**/
+	/*************************************************************************************************/
+	if (m_szDiploDescription.empty())
+	{
+		return NULL;
+	}
+
+	return m_szDiploDescription;
+}
 
 // Arrays
 
@@ -52967,6 +52983,7 @@ bool CvLeaderRelationInfo::read(CvXMLLoadUtility* pXML)
 
 	pXML->SetVariableListTagPair(&m_paiLeaderAttitudeChange, "LeaderAttitudeChanges", sizeof(GC.getLeaderHeadInfo((LeaderHeadTypes)0)), GC.getNumLeaderHeadInfos());
 
+	pXML->GetChildXmlValByName(m_szDiploDescription, "DiploLine");
 	return true;
 }
 /*************************************************************************************************/

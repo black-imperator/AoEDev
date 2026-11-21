@@ -6883,7 +6883,7 @@
 			<bSacrificeCaster>1</bSacrificeCaster>
 			<iCost>-10</iCost>
 			<AdditionalCostFlag>FLAG_SLAVE_MARKET</AdditionalCostFlag>
-			<iAdditionalCostFlagChange>5</iAdditionalCostFlagChange>
+			<iAdditionalCostFlagChange>-5</iAdditionalCostFlagChange>
 			<Flag>FLAG_SLAVE_MARKET</Flag>
 			<iFlagChange>-1</iFlagChange>
 			<bGlobalFlagChange>1</bGlobalFlagChange>
@@ -10443,7 +10443,7 @@
 			<iAIWeight>10</iAIWeight>
 			<iCost>-10</iCost>
 			<AdditionalCostFlag>FLAG_SLAVE_MARKET</AdditionalCostFlag>
-			<iAdditionalCostFlagChange>5</iAdditionalCostFlagChange>
+			<iAdditionalCostFlagChange>-5</iAdditionalCostFlagChange>
 			<Flag>FLAG_SLAVE_MARKET</Flag>
 			<iFlagChange>-1</iFlagChange>
 			<bGlobalFlagChange>1</bGlobalFlagChange>

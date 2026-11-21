@@ -27747,17 +27747,24 @@ void CvGameTextMgr::getAttitudeString(CvWStringBuffer& szBuffer, PlayerTypes ePl
 			{
 				iAttitudeChange = GC.getLeaderRelationInfo((LeaderRelationTypes)iI).getLeaderAttitudeChange(GET_PLAYER(eTargetPlayer).getLeaderType());
 				bIsLeaderAttitude = true;
+				if ((iPass == 0) ? (iAttitudeChange > 0) : (iAttitudeChange < 0))
+				{
+					if (GC.getLeaderRelationInfo((LeaderRelationTypes)iI).getDiploDescription() != NULL)
+					{
+						szTempBuffer.Format(SETCOLR L"%s" ENDCOLR, TEXT_COLOR((iAttitudeChange > 0) ? "COLOR_POSITIVE_TEXT" : "COLOR_NEGATIVE_TEXT"), gDLL->getText(((iAttitudeChange > 0) ? GC.getLeaderRelationInfo((LeaderRelationTypes)iI).getDiploDescription() : GC.getLeaderRelationInfo((LeaderRelationTypes)iI).getDiploDescription()), iAttitudeChange).GetCString());
+						szBuffer.append(NEWLINE);
+						szBuffer.append(szTempBuffer);
+					}
+					else
+					{
+						szTempBuffer.Format(SETCOLR L"%s" ENDCOLR, TEXT_COLOR((iAttitudeChange > 0) ? "COLOR_POSITIVE_TEXT" : "COLOR_NEGATIVE_TEXT"), gDLL->getText(((iAttitudeChange > 0) ? "TXT_KEY_MISC_ATTITUDE_LEADER_RELATION_GOOD" : "TXT_KEY_MISC_ATTITUDE_LEADER_RELATION_BAD"), iAttitudeChange).GetCString());
+						szBuffer.append(NEWLINE);
+						szBuffer.append(szTempBuffer);
+					}
+				}
 			}
 		}
-		if (bIsLeaderAttitude == true)
-		{
-			if ((iPass == 0) ? (iAttitudeChange > 0) : (iAttitudeChange < 0))
-			{
-				szTempBuffer.Format(SETCOLR L"%s" ENDCOLR, TEXT_COLOR((iAttitudeChange > 0) ? "COLOR_POSITIVE_TEXT" : "COLOR_NEGATIVE_TEXT"), gDLL->getText(((iAttitudeChange > 0) ? "TXT_KEY_MISC_ATTITUDE_LEADER_RELATION_GOOD" : "TXT_KEY_MISC_ATTITUDE_LEADER_RELATION_BAD"), iAttitudeChange).GetCString());
-				szBuffer.append(NEWLINE);
-				szBuffer.append(szTempBuffer);
-			}
-		}
+		
 /*************************************************************************************************/
 /** End																							**/
 /*************************************************************************************************/

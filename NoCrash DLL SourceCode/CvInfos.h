@@ -12601,7 +12601,7 @@ public:
 
 	int getLeaderType() const;
 	int getLeaderAttitudeChange(int i) const; 		// Exposed to Python
-
+	const TCHAR* getDiploDescription() const;
 	// Arrays
 
 
@@ -12613,6 +12613,7 @@ protected:
 
 	int m_iLeaderType;
 	int* m_paiLeaderAttitudeChange;
+	CvString m_szDiploDescription;
 	// Arrays
 
 
