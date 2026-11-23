@@ -18,6 +18,14 @@
 		<Spanish>Rumors say that the lizardmen of a distant land have suddenly become organized, raising massive armies and building stone temples to unknown gods.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_EVENT_BARB_EMERGE_BEZERI</Tag>
+		<English>Rumors say that tribes of lizardmen and toadmen have begun working together, building a kingdom of underwater cities in a distant land.</English>
+		<French>Rumors say that tribes of lizardmen and toadmen have begun working together, building a kingdom of underwater cities in a distant land.</French>
+		<German>Rumors say that tribes of lizardmen and toadmen have begun working together, building a kingdom of underwater cities in a distant land.</German>
+		<Italian>Rumors say that tribes of lizardmen and toadmen have begun working together, building a kingdom of underwater cities in a distant land.</Italian>
+		<Spanish>Rumors say that tribes of lizardmen and toadmen have begun working together, building a kingdom of underwater cities in a distant land.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_EVENT_BARB_EMERGE_ORC</Tag>
 		<English>Rumors say that the disorganized orcs of a distant land have organized under a charismatic warlord. Forests are being cut down for roads, farms are being built over empty wilds, and disparate raiders now march as a single army.</English>
 		<French>Rumors say that the disorganized orcs of a distant land have organized under a charismatic warlord. Forests are being cut down for roads, farms are being built over empty wilds, and disparate raiders now march as a single army.</French>
@@ -83,11 +91,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_BARB_EMERGE_SHEAIM</Tag>
-		<English>Rumors say that an apocalypse cult is growing popular among the savages of a distant land.</English>
-		<French>Rumors say that an apocalypse cult is growing popular among the savages of a distant land.</French>
-		<German>Rumors say that an apocalypse cult is growing popular among the savages of a distant land.</German>
-		<Italian>Rumors say that an apocalypse cult is growing popular among the savages of a distant land.</Italian>
-		<Spanish>Rumors say that an apocalypse cult is growing popular among the savages of a distant land.</Spanish>
+		<English>Rumors say that an apocalypse cult led by an immortal has taken root among the savages. Their numbers grow as outcasts and rogue mages flock to them.</English>
+		<French>Rumors say that an apocalypse cult led by an immortal has taken root among the savages. Their numbers grow as outcasts and rogue mages flock to them.</French>
+		<German>Rumors say that an apocalypse cult led by an immortal has taken root among the savages. Their numbers grow as outcasts and rogue mages flock to them.</German>
+		<Italian>Rumors say that an apocalypse cult led by an immortal has taken root among the savages. Their numbers grow as outcasts and rogue mages flock to them.</Italian>
+		<Spanish>Rumors say that an apocalypse cult led by an immortal has taken root among the savages. Their numbers grow as outcasts and rogue mages flock to them.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_BARB_EMERGE_CALABIM</Tag>

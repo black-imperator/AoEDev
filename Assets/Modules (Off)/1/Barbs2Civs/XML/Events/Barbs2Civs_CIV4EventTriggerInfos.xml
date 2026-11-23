@@ -328,5 +328,32 @@
 			<PythonCanDo>canTriggerBarbBalseraphEmerge</PythonCanDo>
 			<PythonCallback>doBarbBalseraphEmerge</PythonCallback>
 		</EventTriggerInfo>
+		<EventTriggerInfo>
+			<Type>EVENTTRIGGER_POP_BEZERI</Type>
+			<WorldNewsTexts>
+				<Text>TXT_KEY_EVENT_BARB_EMERGE_BEZERI</Text>
+			</WorldNewsTexts>
+			<bTypeDependency>1</bTypeDependency>
+			<AndDependencyTypes>
+				<DependencyType>MODULE_VICIOUSSEAS</DependencyType>
+			</AndDependencyTypes>
+			<TriggerTexts>
+				<TriggerText>
+					<Text>TXT_KEY_EVENT_BARB_EMERGE_BEZERI</Text>
+					<Era>NONE</Era>
+				</TriggerText>
+			</TriggerTexts>
+			<bGlobal>1</bGlobal>
+			<Events>
+				<Event>EVENT_CONTINUE</Event>
+			</Events>
+			<iPercentGamesActive>50</iPercentGamesActive>
+			<iWeight>30</iWeight>
+			<iMaxOurLandmass>-1</iMaxOurLandmass>
+			<iPlotType>-1</iPlotType>
+			<bRecurring>0</bRecurring>
+			<PythonCanDo>canTriggerBarbBezeriEmerge</PythonCanDo>
+			<PythonCallback>doBarbBezeriEmerge</PythonCallback>
+		</EventTriggerInfo>
 	</EventTriggerInfos>
 </Civ4EventTriggerInfos>

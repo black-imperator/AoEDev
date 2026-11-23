@@ -175,9 +175,45 @@ def canTriggerBarbCualliEmerge(argsList):
 
 	return True
 
-def doBarbCualliEmerge(argsList):
-	sCiv = 'CIVILIZATION_CUALLI'
-	sLeader = 'LEADER_KOLSEHVAHN'
+##BEZERI - requires Sailing, Jungle, coast, before Taxation, 
+def canTriggerBarbBezeriEmerge(argsList):
+	kTriggeredData = argsList[0]
+	pBarbPlayer = gc.getPlayer(gc.getBARBARIAN_PLAYER())
+
+	if CyGame().getNumCivActive(gc.getInfoTypeForString('CIVILIZATION_BEZERI')) > 0:
+		return False
+	if not gc.getCivilizationInfo(gc.getInfoTypeForString('CIVILIZATION_BEZERI')).isPlayable():
+		return False
+
+	if not pBarbPlayer.isHasTech(gc.getInfoTypeForString('TECH_SAILING')):
+		return False
+
+	if pBarbPlayer.isHasTech(gc.getInfoTypeForString('TECH_TAXATION')):
+		return False
+
+	iHorde = gc.getInfoTypeForString("BUILDING_THE_DRAGONS_HOARD")
+	iJungle = gc.getInfoTypeForString("FEATURE_JUNGLE")
+	iCount = 0
+	(pCity, iter) = pBarbPlayer.firstCity(False)
+	while pCity:
+		if not pCity.isNone():
+			if pCity.getNumBuilding(iHorde) == 0 and pCity.isCoastal(3):
+				pPlot = pCity.plot()
+				for iiX, iiY in plotsInRange(pPlot.getX(), pPlot.getY(), 2):
+					pLoopPlot = CyMap().plot(iiX, iiY)
+					if pLoopPlot.getFeatureType() == iJungle:
+						iCount += 1
+						break
+		(pCity, iter) = pBarbPlayer.nextCity(iter, False)
+
+	if iCount <= 0:
+		return False
+
+	return True
+
+def doBarbBezeriEmerge(argsList):
+	sCiv = 'CIVILIZATION_BEZERI'
+	sLeader = 'LEADER_TUNDOSS_FAITHFUL_PROTECTOR'
 
 	doCityBarbConvert(sCiv, sLeader)
 
@@ -411,6 +447,7 @@ def canTriggerBarbHippusEmerge(argsList):
 		if not pCity.isNone():
 			if pCity.getNumBuilding(iHorde) == 0 and not pCity.isCoastal(1):
 				bIsValid = True
+				pPlot = pCity.plot()
 				for iiX, iiY in plotsInRange(pPlot.getX(), pPlot.getY(), 2):
 					pLoopPlot = CyMap().plot(iiX, iiY)
 					if pLoopPlot.isHills() or pLoopPlot.isPeak() or pLoopPlot.getFeatureType() == iJungle:
@@ -477,6 +514,9 @@ def canTriggerBarbSvartEmerge(argsList):
 	kTriggeredData = argsList[0]
 	pBarbPlayer = gc.getPlayer(gc.getBARBARIAN_PLAYER())
 
+	if CyGame().getNumCivActive(gc.getInfoTypeForString('CIVILIZATION_LJOSALFAR')) <= 0:
+		return False
+
 	if CyGame().getNumCivActive(gc.getInfoTypeForString('CIVILIZATION_SVARTALFAR')) > 0:
 		return False
 	if not gc.getCivilizationInfo(gc.getInfoTypeForString('CIVILIZATION_SVARTALFAR')).isPlayable():
@@ -494,7 +534,7 @@ def canTriggerBarbSvartEmerge(argsList):
 	(pCity, iter) = pBarbPlayer.firstCity(False)
 	while pCity:
 		if not pCity.isNone():
-			if pCity.getNumBuilding(iHorde) == 0 and pCity.isHasReligion(getInfoTypeForString('RELIGION_COUNCIL_OF_ESUS')):
+			if pCity.getNumBuilding(iHorde) == 0:
 				pPlot = pCity.plot()
 				for iiX, iiY in plotsInRange(pPlot.getX(), pPlot.getY(), 2):
 					pLoopPlot = CyMap().plot(iiX, iiY)
@@ -621,7 +661,7 @@ def doCityBarbConvert(sCiv, sLeader):
 	(pCity, iter) = pBarbPlayer.firstCity(False)
 	while pCity:
 		if not pCity.isNone() and pCity.getNumBuilding(iHorde) == 0:
-			if sCiv == 'CIVILIZATION_CUALLI':
+			if sCiv == 'CIVILIZATION_CUALLI' or (sCiv == 'CIVILIZATION_BEZERI' and pCity.isCoastal(3)):
 				iJungle = gc.getInfoTypeForString("FEATURE_JUNGLE")
 				pPlot = pCity.plot()
 				for iiX, iiY in plotsInRange(pPlot.getX(), pPlot.getY(), 2):
@@ -654,8 +694,6 @@ def doCityBarbConvert(sCiv, sLeader):
 						barbCities.append(pCity)
 						break
 			elif sCiv == 'CIVILIZATION_DOVIELLO' or sCiv == 'CIVILIZATION_ARCHOS' or sCiv == 'CIVILIZATION_SVARTALFAR':
-				if sCiv == 'CIVILIZATION_SVARTALFAR' and not pCity.isHasReligion(getInfoTypeForString('RELIGION_COUNCIL_OF_ESUS')):
-					continue
 				iForest = gc.getInfoTypeForString("FEATURE_FOREST")
 				pPlot = pCity.plot()
 				for iiX, iiY in plotsInRange(pPlot.getX(), pPlot.getY(), 2):
@@ -670,6 +708,7 @@ def doCityBarbConvert(sCiv, sLeader):
 				if pCity.getNumBuilding(iHorde) == 0 and not pCity.isCoastal(1):
 					iJungle = gc.getInfoTypeForString("FEATURE_JUNGLE")
 					bIsValid = True
+					pPlot = pCity.plot()
 					for iiX, iiY in plotsInRange(pPlot.getX(), pPlot.getY(), 2):
 						pLoopPlot = CyMap().plot(iiX, iiY)
 						if pLoopPlot.isHills() or pLoopPlot.isPeak() or pLoopPlot.getFeatureType() == iJungle:

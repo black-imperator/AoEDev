@@ -12,7 +12,7 @@ Wonderblundr
 
 ;Use this for versions of your own module. 1.0, 1.1, A, etc.
 [version]
-1.0
+1.1
 
 ;What version of AoE this module was last updated for. This template was introduced v387.
 ;Refer to the SVN ver, or version.txt in the mod folder (assuming Black Imperator updated it...)
@@ -102,7 +102,8 @@ CALABIM
 	- Requires that the barbarians have access to the Iron Working technology
 	- The Calabim will no longer be able to emerge if barbarians have researched Guilds
 SVARTALFAR
- 	- Requires a Barbarian city that is near forests and has the Council of Esus
+ 	- Requires a Barbarian city that is near forests
+	- Requires that the Ljosalfar exist on the map
 	- Requires that the barbarians have access to the Deception technology
 	- The Svartalfar will no longer be able to emerge if barbarians have researched Guilds
 ILLIANS
@@ -113,4 +114,8 @@ BALSERAPHS
  	- Requires a Barbarian city that is near the Tower of Eyes
 	- Requires that the barbarians have access to the Knowledge of the Ether technology
 	- Balseraphs will no longer be able to emerge if barbarians have researched Strength of Will
+BEZERI (REQUIRES THE VICIOUS SEAS MODULE)
+ 	- Requires a Barbarian city that is on the coast and near Jungle
+	- Requires that the barbarians have access to the Sailing technology
+	- Bezeri will no longer be able to emerge if barbarians have researched Taxation
 
