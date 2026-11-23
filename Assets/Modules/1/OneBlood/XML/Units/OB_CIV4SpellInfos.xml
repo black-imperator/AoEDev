@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Spell Infos -->
+<Civ4SpellInfos xmlns="x-schema:OB_CIV4UnitSpellSchema.xml">
+	<SpellInfos>
+		<SpellInfo>			<!-- Consume Blood - Bear -->
+			<Type>SPELL_CONSUME_BLOOD_BEAR</Type>
+			<Help>TXT_KEY_SPELL_CONSUME_BLOOD_HELP</Help>
+		</SpellInfo>
+		<SpellInfo>			<!-- Consume Blood - Rat -->
+			<Type>SPELL_CONSUME_BLOOD_RAT</Type>
+			<Help>TXT_KEY_SPELL_CONSUME_BLOOD_HELP</Help>
+		</SpellInfo>
+		<SpellInfo>			<!-- Consume Blood - Bat -->
+			<Type>SPELL_CONSUME_BLOOD_BAT</Type>
+			<Help>TXT_KEY_SPELL_CONSUME_BLOOD_HELP</Help>
+		</SpellInfo>
+		<SpellInfo>			<!-- Consume Blood - Toad -->
+			<Type>SPELL_CONSUME_BLOOD_TOAD</Type>
+			<Help>TXT_KEY_SPELL_CONSUME_BLOOD_HELP</Help>
+		</SpellInfo>
+		<SpellInfo>			<!-- Consume Blood - Boar -->
+			<Type>SPELL_CONSUME_BLOOD_BOAR</Type>
+			<Help>TXT_KEY_SPELL_CONSUME_BLOOD_HELP</Help>
+		</SpellInfo>
+		<SpellInfo>			<!-- Consume Blood - Elephant -->
+			<Type>SPELL_CONSUME_BLOOD_ELEPHANT</Type>
+			<Help>TXT_KEY_SPELL_CONSUME_BLOOD_HELP</Help>
+		</SpellInfo>
+		<SpellInfo>			<!-- Consume Blood - Griffon -->
+			<Type>SPELL_CONSUME_BLOOD_GRIFFON</Type>
+			<Help>TXT_KEY_SPELL_CONSUME_BLOOD_HELP</Help>
+		</SpellInfo>
+		<SpellInfo>			<!-- Consume Blood - Gorilla -->
+			<Type>SPELL_CONSUME_BLOOD_GORILLA</Type>
+			<Help>TXT_KEY_SPELL_CONSUME_BLOOD_HELP</Help>
+		</SpellInfo>
+		<SpellInfo>			<!-- Consume Blood - Lion -->
+			<Type>SPELL_CONSUME_BLOOD_LION</Type>
+			<Help>TXT_KEY_SPELL_CONSUME_BLOOD_HELP</Help>
+		</SpellInfo>
+		<SpellInfo>			<!-- Consume Blood - Raptor -->
+			<Type>SPELL_CONSUME_BLOOD_RAPTOR</Type>
+			<Help>TXT_KEY_SPELL_CONSUME_BLOOD_HELP</Help>
+		</SpellInfo>
+		<SpellInfo>			<!-- Consume Blood - Scorpion -->
+			<Type>SPELL_CONSUME_BLOOD_SCORPION</Type>
+			<Help>TXT_KEY_SPELL_CONSUME_BLOOD_HELP</Help>
+		</SpellInfo>
+		<SpellInfo>			<!-- Consume Blood - Spider -->
+			<Type>SPELL_CONSUME_BLOOD_SPIDER</Type>
+			<Help>TXT_KEY_SPELL_CONSUME_BLOOD_HELP</Help>
+		</SpellInfo>
+		<SpellInfo>			<!-- Consume Blood - Stag -->
+			<Type>SPELL_CONSUME_BLOOD_STAG</Type>
+			<Help>TXT_KEY_SPELL_CONSUME_BLOOD_HELP</Help>
+		</SpellInfo>
+		<SpellInfo>			<!-- Consume Blood - Tiger -->
+			<Type>SPELL_CONSUME_BLOOD_TIGER</Type>
+			<Help>TXT_KEY_SPELL_CONSUME_BLOOD_HELP</Help>
+		</SpellInfo>
+		<SpellInfo>			<!-- Consume Blood - Wolf -->
+			<Type>SPELL_CONSUME_BLOOD_WOLF</Type>
+			<Help>TXT_KEY_SPELL_CONSUME_BLOOD_HELP</Help>
+		</SpellInfo>
+	</SpellInfos>
+</Civ4SpellInfos>
