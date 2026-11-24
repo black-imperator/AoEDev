@@ -8,4 +8,12 @@
 		<Italian>[NEWLINE][ICON_BULLET]Maximum of one animal blood promotion per unit at a time</Italian>
 		<Spanish>[NEWLINE][ICON_BULLET]Maximum of one animal blood promotion per unit at a time</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTIONCLASS_ANIMAL_BLOOD</Tag>
+		<English>Animal Blood</English>
+		<French>Animal Blood</French>
+		<German>Animal Blood</German>
+		<Italian>Animal Blood</Italian>
+		<Spanish>Animal Blood</Spanish>
+	</TEXT>
 </Civ4GameText>
