@@ -1910,8 +1910,10 @@
 				<Promotion>PROMOTION_LEASH_1</Promotion>
 				<Promotion>PROMOTION_LEASH_2</Promotion>
 				<Promotion>PROMOTION_DEADLY_MISHAP</Promotion>
+				<Promotion>PROMOTION_DEADLY_MISHAP_LESSER</Promotion>
 				<Promotion>PROMOTION_DEADLY_MISHAP_DUMMY</Promotion>
 				<Promotion>PROMOTION_WEIRD_WRACKED</Promotion>
+				<Promotion>PROMOTION_WEIRD_WRACKED_LESSER</Promotion>
 				<Promotion>PROMOTION_WANDERING_CURSE</Promotion>
 				<Promotion>PROMOTION_ACHERON_LEASHED</Promotion>
 			</PromotionExcludes>
@@ -1921,8 +1923,10 @@
 				<Promotion>PROMOTION_LEASH_1</Promotion>
 				<Promotion>PROMOTION_LEASH_2</Promotion>
 				<Promotion>PROMOTION_DEADLY_MISHAP</Promotion>
+				<Promotion>PROMOTION_DEADLY_MISHAP_LESSER</Promotion>
 				<Promotion>PROMOTION_DEADLY_MISHAP_DUMMY</Promotion>
 				<Promotion>PROMOTION_WEIRD_WRACKED</Promotion>
+				<Promotion>PROMOTION_WEIRD_WRACKED_LESSER</Promotion>
 				<Promotion>PROMOTION_WANDERING_CURSE</Promotion>
 				<Promotion>PROMOTION_ACHERON_LEASHED</Promotion>
 			</PromotionOverwrites>
@@ -4691,11 +4695,19 @@
 					<TerrainType>TERRAIN_DESERT</TerrainType>
 					<iTerrainAttack>10</iTerrainAttack>
 				</TerrainAttack>
+				<TerrainAttack>
+					<TerrainType>TERRAIN_BURNING_SANDS</TerrainType>
+					<iTerrainAttack>5</iTerrainAttack>
+				</TerrainAttack>
 			</TerrainAttacks>
 			<TerrainDefenses>
 				<TerrainDefense>
 					<TerrainType>TERRAIN_DESERT</TerrainType>
 					<iTerrainDefense>10</iTerrainDefense>
+				</TerrainDefense>
+				<TerrainDefense>
+					<TerrainType>TERRAIN_BURNING_SANDS</TerrainType>
+					<iTerrainDefense>5</iTerrainDefense>
 				</TerrainDefense>
 			</TerrainDefenses>
 			<UnitCombats>
@@ -6577,6 +6589,7 @@
 			</PrereqCivilizations>
 			<PrereqTerrains>
 				<PrereqTerrain>TERRAIN_DESERT</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_BURNING_SANDS</PrereqTerrain>
 			</PrereqTerrains>
 			<UnitCombats>
 				<UnitCombat>
@@ -8912,6 +8925,69 @@
 			<iAIWeight>-50</iAIWeight>
 			<iMinLevel>-1</iMinLevel>
 		</PromotionInfo>
+		<PromotionInfo>		<!-- Deadly Mishap -->
+			<Type>PROMOTION_DEADLY_MISHAP_LESSER</Type>
+			<Description>TXT_KEY_PROMOTION_DEADLY_MISHAP_LESSER</Description>
+			<Help>TXT_KEY_PROMOTION_DEADLY_MISHAP_HELP</Help>
+			<Sound>NONE</Sound>
+			<bEffectProm>1</bEffectProm>
+			<iChanceMiscast>25</iChanceMiscast>
+			<iDamageOnRemove>25</iDamageOnRemove>
+			<iExpireChance>10</iExpireChance>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ANIMAL</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_BEAST</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Art/Interface/Buttons/Promotions/DeadlyMishap.dds</Button>
+			<iAIWeight>-50</iAIWeight>
+			<iMinLevel>-1</iMinLevel>
+		</PromotionInfo>
 		<PromotionInfo>		<!-- Deadly Mishap pedia dummy  -->
 			<Type>PROMOTION_DEADLY_MISHAP_DUMMY</Type>
 			<Description>TXT_KEY_PROMOTION_DEADLY_MISHAP</Description>
@@ -9154,6 +9230,7 @@
 			<iInvisibleLevel>3</iInvisibleLevel>
 			<PrereqTerrains>
 				<PrereqTerrain>TERRAIN_DESERT</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_BURNING_SANDS</PrereqTerrain>
 			</PrereqTerrains>
 			<PrereqUnits>
 				<PrereqUnit>UNIT_SHADOW_MALAKIM</PrereqUnit>
@@ -9176,6 +9253,7 @@
 			<bNoXP>1</bNoXP>
 			<PrereqTerrains>
 				<PrereqTerrain>TERRAIN_DESERT</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_BURNING_SANDS</PrereqTerrain>
 			</PrereqTerrains>
 			<iWithdrawalChange>10</iWithdrawalChange>
 			<UnitCombats>
@@ -9946,6 +10024,7 @@
 			</PrereqCivilizations>
 			<PrereqTerrains>
 				<PrereqTerrain>TERRAIN_DESERT</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_BURNING_SANDS</PrereqTerrain>
 			</PrereqTerrains>
 			<iExtraPerception>1</iExtraPerception>
 			<bAlwaysHeal>1</bAlwaysHeal>
@@ -10015,6 +10094,85 @@
 				</UnitCombat>
 			</UnitCombats>
 			<Button>Art/Interface/Buttons/Promotions/Dunespeak.dds</Button>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- HellSpeak -->
+			<Type>PROMOTION_HELLSPEAK</Type>
+			<Description>TXT_KEY_PROMOTION_HELLSPEAK</Description>
+			<bAutoAcquire>1</bAutoAcquire>
+			<bMustMaintain>1</bMustMaintain>
+			<bNoXP>1</bNoXP>
+			<PrereqbAllowNULLUnitCombat>1</PrereqbAllowNULLUnitCombat>
+			<PrereqCivilizations>
+				<PrereqCivilization>CIVILIZATION_MALAKIM</PrereqCivilization>
+			</PrereqCivilizations>
+			<PrereqReligions>
+				<PrereqReligion>RELIGION_THE_ASHEN_VEIL</PrereqReligion>
+			</PrereqReligions>
+			<DamageTypeResists>
+				<DamageTypeResist>
+					<DamageType>DAMAGE_FIRE</DamageType>
+					<iResist>25</iResist>
+				</DamageTypeResist>
+			</DamageTypeResists>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_WORKER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ANIMAL</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_BEAST</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Art/Interface/Buttons/TerrainFeatures/Flames.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Eastwinds -->
 			<Type>PROMOTION_EASTWINDS</Type>
@@ -15067,16 +15225,28 @@
 					<TerrainType>TERRAIN_DESERT</TerrainType>
 					<iTerrainAttack>20</iTerrainAttack>
 				</TerrainAttack>
+				<TerrainAttack>
+					<TerrainType>TERRAIN_BURNING_SANDS</TerrainType>
+					<iTerrainAttack>10</iTerrainAttack>
+				</TerrainAttack>
 			</TerrainAttacks>
 			<TerrainDefenses>
 				<TerrainDefense>
 					<TerrainType>TERRAIN_DESERT</TerrainType>
 					<iTerrainDefense>20</iTerrainDefense>
 				</TerrainDefense>
+				<TerrainDefense>
+					<TerrainType>TERRAIN_BURNING_SANDS</TerrainType>
+					<iTerrainDefense>10</iTerrainDefense>
+				</TerrainDefense>
 			</TerrainDefenses>
 			<TerrainDoubleMoves>
 				<TerrainDoubleMove>
 					<TerrainType>TERRAIN_DESERT</TerrainType>
+					<bTerrainDoubleMove>1</bTerrainDoubleMove>
+				</TerrainDoubleMove>
+				<TerrainDoubleMove>
+					<TerrainType>TERRAIN_BURNING_SANDS</TerrainType>
 					<bTerrainDoubleMove>1</bTerrainDoubleMove>
 				</TerrainDoubleMove>
 			</TerrainDoubleMoves>
@@ -15118,16 +15288,28 @@
 					<TerrainType>TERRAIN_DESERT</TerrainType>
 					<iTerrainAttack>20</iTerrainAttack>
 				</TerrainAttack>
+				<TerrainAttack>
+					<TerrainType>TERRAIN_BURNING_SANDS</TerrainType>
+					<iTerrainAttack>10</iTerrainAttack>
+				</TerrainAttack>
 			</TerrainAttacks>
 			<TerrainDefenses>
 				<TerrainDefense>
 					<TerrainType>TERRAIN_DESERT</TerrainType>
 					<iTerrainDefense>20</iTerrainDefense>
 				</TerrainDefense>
+				<TerrainDefense>
+					<TerrainType>TERRAIN_BURNING_SANDS</TerrainType>
+					<iTerrainDefense>10</iTerrainDefense>
+				</TerrainDefense>
 			</TerrainDefenses>
 			<TerrainDoubleMoves>
 				<TerrainDoubleMove>
 					<TerrainType>TERRAIN_DESERT</TerrainType>
+					<bTerrainDoubleMove>1</bTerrainDoubleMove>
+				</TerrainDoubleMove>
+				<TerrainDoubleMove>
+					<TerrainType>TERRAIN_BURNING_SANDS</TerrainType>
 					<bTerrainDoubleMove>1</bTerrainDoubleMove>
 				</TerrainDoubleMove>
 			</TerrainDoubleMoves>
@@ -15477,6 +15659,7 @@
 			<bNoXP>1</bNoXP>
 			<PrereqTerrains>
 				<PrereqTerrain>TERRAIN_DESERT</PrereqTerrain>
+				<PrereqTerrain>TERRAIN_BURNING_SANDS</PrereqTerrain>
 			</PrereqTerrains>
 			<iMovesChange>-1</iMovesChange>
 			<UnitCombats>
@@ -19596,6 +19779,79 @@
 			<iExpireChance>10</iExpireChance>
 			<iMinLevel>-1</iMinLevel>
 			<PromotionRandomApply>PROMOTION_DEADLY_MISHAP</PromotionRandomApply>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Weird Wracked Lesser -->
+			<Type>PROMOTION_WEIRD_WRACKED_LESSER</Type>
+			<Description>TXT_KEY_PROMOTION_WEIRD_WRACKED_LESSER</Description>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<iChanceMiscast>10</iChanceMiscast>
+			<iPromotionRandomApplyChance>20</iPromotionRandomApplyChance>
+			<iWithdrawalChange>-15</iWithdrawalChange>
+			<iEnemyHealChange>-5</iEnemyHealChange>
+			<iNeutralHealChange>-5</iNeutralHealChange>
+			<iFriendlyHealChange>-5</iFriendlyHealChange>
+			<iCombatPercent>-5</iCombatPercent>
+			<iExperiencePercent>0</iExperiencePercent>
+			<iNoBadExplore>-25</iNoBadExplore>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ANIMAL</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_BEAST</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_COMMANDER</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_DEFENSIVE_MELEE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_ROGUE</UnitCombatType>
+					<iMaxApplications>0</iMaxApplications>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Art/Interface/Buttons/Spells/BlindingFlash.dds</Button>
+			<iBetterDefenderThanPercent>25</iBetterDefenderThanPercent>
+			<iExpireChance>10</iExpireChance>
+			<iMinLevel>-1</iMinLevel>
+			<PromotionRandomApply>PROMOTION_DEADLY_MISHAP_LESSER</PromotionRandomApply>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Werewolf -->
 			<Type>PROMOTION_WEREWOLF</Type>
@@ -46543,7 +46799,28 @@
 			<Description>TXT_KEY_PROMOTION_CARCEREM_ENGRAVINGS</Description>
 			<Help>TXT_KEY_EQUIPMENT_CLAVA_VINDEX_HELP</Help>
 			<PythonPostCombatWon>postCombatClavaVindex(pCaster, pOpponent)</PythonPostCombatWon>
-			<PythonPostCombatLost>postCombatClavaVindex(pCaster, pOpponent)</PythonPostCombatLost>
+			<PromotionCombatMods>
+				<PromotionCombatMod>
+					<PromotionType>PROMOTION_DEMON</PromotionType>
+					<iCombatMod>25</iCombatMod>
+				</PromotionCombatMod>
+				<PromotionCombatMod>
+					<PromotionType>PROMOTION_ICE_DEMON</PromotionType>
+					<iCombatMod>25</iCombatMod>
+				</PromotionCombatMod>
+				<PromotionCombatMod>
+					<PromotionType>PROMOTION_ANGEL</PromotionType>
+					<iCombatMod>25</iCombatMod>
+				</PromotionCombatMod>
+				<PromotionCombatMod>
+					<PromotionType>PROMOTION_AASIMAR</PromotionType>
+					<iCombatMod>25</iCombatMod>
+				</PromotionCombatMod>
+				<PromotionCombatMod>
+					<PromotionType>PROMOTION_CAMBION</PromotionType>
+					<iCombatMod>25</iCombatMod>
+				</PromotionCombatMod>
+			</PromotionCombatMods>
 			<UnitCombats>                                                   			
 				<UnitCombat>                                                
 					<UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>

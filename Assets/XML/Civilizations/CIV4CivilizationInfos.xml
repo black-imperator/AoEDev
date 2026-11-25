@@ -5209,6 +5209,10 @@
 					<FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
 					<iHealtPercentChange>20</iHealtPercentChange>
 				</FeatureHealthPercentChange>
+				<FeatureHealthPercentChange>
+					<FeatureType>FEATURE_FLAMES</FeatureType>
+					<iHealtPercentChange>15</iHealtPercentChange>
+				</FeatureHealthPercentChange>
 			</FeatureHealthPercentChanges>
 			<FeatureYieldChanges>
 				<FeatureYieldChange>
@@ -5227,6 +5231,14 @@
 						<iYield>0</iYield>
 						<iYield>0</iYield>
 						<iYield>1</iYield>
+					</TerrainYields>
+				</TerrainYieldChange>
+				<TerrainYieldChange>
+					<TerrainType>TERRAIN_BURNING_SANDS</TerrainType>
+					<TerrainYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>3</iYield>
 					</TerrainYields>
 				</TerrainYieldChange>
 			</TerrainYieldChanges>

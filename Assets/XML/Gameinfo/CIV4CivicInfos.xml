@@ -1126,6 +1126,7 @@
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_THE_DREAMERS</WeLoveTheKing>
 			<iWarWearinessModifier>-50</iWarWearinessModifier>
+			<iGreatPeopleRateModifier>-35</iGreatPeopleRateModifier>
 			<SpecialistClassCommerceChanges>
 				<SpecialistClassCommerceChange>
 					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
@@ -1142,7 +1143,7 @@
 					<bValid>1</bValid>
 				</SpecialistClassUnlimited>
 			</SpecialistClassUnlimiteds>	
-			<SpecialistClassGPPChanges>
+			<!--<SpecialistClassGPPChanges>
 				<SpecialistClassGPPChange>
 					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
 					<iGPPChange>1</iGPPChange>
@@ -1167,7 +1168,7 @@
 					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
 					<iGPPChange>-1</iGPPChange>
 				</SpecialistClassGPPChange>
-			</SpecialistClassGPPChanges>
+			</SpecialistClassGPPChanges>-->
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
 					<ImprovementType>IMPROVEMENT_STYGIAN_SHRINE</ImprovementType>

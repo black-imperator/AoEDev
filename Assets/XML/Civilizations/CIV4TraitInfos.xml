@@ -1837,7 +1837,6 @@
 			<ShortDescription>TXT_KEY_TRAIT_LYCANTHROPIC_SHORT</ShortDescription>
 			<Help>TXT_KEY_TRAIT_LYCANTHROPIC_HELP</Help>
 			<bInfluenceAllowed>1</bInfluenceAllowed>
-			<bAgnostic>1</bAgnostic>
 			<FreePromotions>
 				<FreePromotion>
 					<PromotionType>PROMOTION_LYCANTHROPIC</PromotionType>

@@ -8422,10 +8422,10 @@
 			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
 			<bHasCasted>1</bHasCasted>
 			<bResistable>1</bResistable>
-			<iRange>2</iRange>
+			<iRange>1</iRange>
 			<iResistModify>-10</iResistModify>
 			<AddPromotions>
-				<AddPromotion>PROMOTION_WEIRD_WRACKED</AddPromotion>
+				<AddPromotion>PROMOTION_WEIRD_WRACKED_LESSER</AddPromotion>
 			</AddPromotions>
 			<RemovePromotions>
 				<RemovePromotion>PROMOTION_BLESSED</RemovePromotion>
