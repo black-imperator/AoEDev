@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_CONSUME_BLOOD_HELP</Tag>
+		<English>[NEWLINE][ICON_BULLET]Maximum of one animal blood promotion per unit at a time</English>
+		<French>[NEWLINE][ICON_BULLET]Maximum of one animal blood promotion per unit at a time</French>
+		<German>[NEWLINE][ICON_BULLET]Maximum of one animal blood promotion per unit at a time</German>
+		<Italian>[NEWLINE][ICON_BULLET]Maximum of one animal blood promotion per unit at a time</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]Maximum of one animal blood promotion per unit at a time</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTIONCLASS_ANIMAL_BLOOD</Tag>
+		<English>Animal Blood</English>
+		<French>Animal Blood</French>
+		<German>Animal Blood</German>
+		<Italian>Animal Blood</Italian>
+		<Spanish>Animal Blood</Spanish>
+	</TEXT>
+</Civ4GameText>

@@ -1,0 +1,121 @@
+;THIS IS A TEMPLATE, PLEASE USE IT
+;comments start with a semicolon and are ignored, and here for your convenience
+
+;User-readable name of the module, please keep the folder name and module name
+;starting with the same letter(s) to help avoid load sequencing issues.
+[name]
+Barbs2Civs
+
+;This is you!
+[author]
+Wonderblundr
+
+;Use this for versions of your own module. 1.0, 1.1, A, etc.
+[version]
+1.1
+
+;What version of AoE this module was last updated for. This template was introduced v387.
+;Refer to the SVN ver, or version.txt in the mod folder (assuming Black Imperator updated it...)
+[aoeversion]
+387
+
+;Use this to allow the user to sort by tags. Comma separated. Valid tags are:
+;Civ(N)      | Entirely new civs
+;Civ(E)      | When your module heavily edits a civ
+;Art         | Graphical packs and the like
+;Joke        | Meme and joke packs
+;Mech        | Mechanical system introduced or overhaul to one
+;Lead        | New leaders or content specifically tied to leaders
+;Bal         | Balance adjustments
+;Event       | Adds new or adjusts events
+[tags]
+Mech, Event
+
+;List any modules you support as a soft optional dependency that you want to be loaded after.
+;This isn't needed if you're ADDING something based on the other mod, but only if you want to overwrite with higher priority than the other mod.
+;Refer to the exact folder name of that module, NOT the [name] field!
+[dependency-soft]
+
+;List any modules you require as a HARD dependency here.
+;Refer to the exact folder name of that module, NOT the [name] field!
+[dependency-hard]
+
+;If this module should NOT be run alongside another (e.g. you both overhaul the same leader)
+;As dependency, use the exact folder name of that module, NOT the [name] field!
+[incompatible]
+
+;This shows up as a tooltip when the user mouses over it in the launcher.
+;Please keep it as short as possible, ideally even shorter than this line here.
+[shortdesc]
+Gives civilizations a small chance to emerge from barbarian cities, depending on if they meet certain requirements.
+
+;Longer description to tell how awesome your stuff is.
+[desc]
+Gives civilizations a small chance to emerge from barbarian cities depending on if they meet certain requirements. Note that this will avoid cities that have the Dragon's Horde, so you shouldn't get a situation where the Clan of Embers will spawn on top of that.
+
+Current Civs and their Emergent Requirements:
+
+CLAN OF EMBERS 
+ 	- Requires a Barbarian city with at least 4 population
+	- Requires that the barbarians have access to the Crafting technology
+	- The Clan of Embers will no longer be able to emerge if barbarians have researched Taxation
+DOVIELLO
+ 	- Requires a Barbarian city that is near forests
+	- Requires that the barbarians have access to the Hunting technology
+	- The Doviello will no longer be able to emerge if barbarians have researched Iron Working
+MAZATL
+ 	- Requires a Barbarian city that is near Mount Kelshekk
+	- Requires that the barbarians have access to the Bronze Working technology
+	- Requires that AC is below 20
+	- The Mazatl will no longer be able to emerge if barbarians have researched Strength of Will
+CUALLI
+ 	- Requires a Barbarian city that is near rainforests
+	- Requires that the barbarians have access to the Bronze Working technology
+	- The Cualli will no longer be able to emerge if barbarians have researched Taxation
+SHEAIM
+	- Requires that the barbarians have access to the Knowledge of the Ether technology and that AC is above 10
+	- The Sheaim will no longer be able to emerge if barbarians have researched Strength of Will
+	- Emergence is re-enabled if AC is greater than 50
+MEKARA ORDER
+	- Requires that the barbarians have access to the Knowledge of the Ether technology
+	- Requires that the Amurites exist on the map
+	- The Mekara Order will no longer be able to emerge if barbarians have researched Strength of Will
+	- Mekara Order will no longer be able to emerge if the Amurites have Evil alignment
+LEGION OF DTESH
+	- Requires that the barbarians have access to the Necromancy technology
+	- Requires that the Amurites or Mekara Order exist on the map
+	- Dtesh will no longer be able to emerge if barbarians have researched Omniscience
+LANUN
+	- Requires that the barbarians have access to the Sailing technology
+	- Requires that the barbarian city is on the coast
+	- The Lanun will no longer be able to emerge if barbarians have researched Taxation
+ARCHOS
+ 	- Requires a Barbarian city that is near forests
+	- Requires that the barbarians have access to the Animal Husbandry technology
+	- The Archos will no longer be able to emerge if barbarians have researched Iron Working
+HIPPUS
+ 	- Requires a Barbarian city that is landlocked and on flat terrain
+	- Requires that the barbarians have access to the Horseback Riding technology
+	- The Hippus will no longer be able to emerge if barbarians have researched Currency
+CALABIM
+ 	- Requires a Barbarian city with at least 4 population
+	- Requires that the barbarians have access to the Iron Working technology
+	- The Calabim will no longer be able to emerge if barbarians have researched Guilds
+SVARTALFAR
+ 	- Requires a Barbarian city that is near forests
+	- Requires that the Ljosalfar exist on the map
+	- Requires that the barbarians have access to the Deception technology
+	- The Svartalfar will no longer be able to emerge if barbarians have researched Guilds
+ILLIANS
+ 	- Requires a Barbarian city that is near Letum Frigus and that AC is above 10
+	- Requires that the barbarians have access to the Mysticism technology
+	- Illians will no longer be able to emerge if barbarians have researched Omniscience
+BALSERAPHS
+ 	- Requires a Barbarian city that is near the Tower of Eyes
+	- Requires that the barbarians have access to the Knowledge of the Ether technology
+	- Balseraphs will no longer be able to emerge if barbarians have researched Strength of Will
+BEZERI (REQUIRES THE VICIOUS SEAS MODULE)
+ 	- Requires a Barbarian city that is on the coast and near Jungle
+	- Requires that the barbarians have access to the Sailing technology
+	- Bezeri will no longer be able to emerge if barbarians have researched Taxation
+
