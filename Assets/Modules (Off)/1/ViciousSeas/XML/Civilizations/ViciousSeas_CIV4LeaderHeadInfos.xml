@@ -2984,9 +2984,6 @@
 			<DefeatQuote>TXT_KEY_POPUP_DEFEATED_INFERNAL</DefeatQuote>
 			<Image>Modules/1/ViciousSeas/Art/Interface/LeaderHeads/</Image>
 			<ArtDefineTag>ART_DEF_LEADER_HASTUR</ArtDefineTag>
-		     <AndDependencyTypes>
-		        <DependencyType>MODULE_IMPORTANT_LEADERS</DependencyType>
-		     </AndDependencyTypes>
 			<iWonderConstructRand>0</iWonderConstructRand>
 			<iBaseAttitude>-5</iBaseAttitude>
 			<iBasePeaceWeight>0</iBasePeaceWeight>
