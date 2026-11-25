@@ -82,7 +82,7 @@ def spellHamsterTrial(caster):
 	elif iRnd < 85:
 		caster.setHasPromotion(iTrialLeash, True)
 	else:
-		caster.kill(False,-1)
+		caster.kill(True,-1)
 
 def reqCelvarSpawn(pCaster):
 	pPlayer = gc.getPlayer(pCaster.getOwner())
