@@ -42,7 +42,7 @@
 			<FreePromotions/>
 			<FreePromotionUnitCombats/>
 		</TraitInfo>
-				<TraitInfo>		<!-- Nightmarish -->
+		<!--<TraitInfo>		<!{1}** Nightmarish **{1}>
 			<Type>TRAIT_NIGHTMARISH</Type>
 			<Description>TXT_KEY_TRAIT_NIGHTMARISH</Description>
 			<Civilopedia>TXT_KEY_TRAIT_NIGHTMARISH_PEDIA</Civilopedia>
@@ -101,7 +101,7 @@
 					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
 				</FreePromotionUnitCombat>
 			</FreePromotionUnitCombats>
-		</TraitInfo>
+		</TraitInfo>-->
 			<TraitInfo>		<!-- Barbarian -->
 			<Type>TRAIT_BARBARIAN</Type>
 			<Description>TXT_KEY_TRAIT_BARBARIAN</Description>
