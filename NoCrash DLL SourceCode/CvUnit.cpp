@@ -1942,6 +1942,55 @@ void CvUnit::kill(bool bDelay, PlayerTypes ePlayer, bool bPostConvert)
 
 
 	// Xienwolf - 10/03/08 - Removes all Promotions to ensure nothing added elsewhere via promotion is forgottten (& place equipment)
+		// addDeadUnit() returns NULL once a list holds FLTA_MAX_BUCKETS (8192) entries, so both
+	// blocks below skip recording rather than write through NULL.
+	if (canResurrect() && eActiveDeathList == NO_DEATHLIST && !bPostConvert)
+	{
+		DeadUnitData* data = GET_PLAYER(getOwner()).addDeadUnit();
+		if (data != NULL)
+		{
+			data->iDeathList = -1; //getDeathListTarget();
+			data->iDeathTurn = GC.getGameINLINE().getTurnSlice();
+			data->iExperience = getExperience();
+			data->iLevel = getLevel();
+			data->iOriginalOwner = getOwner();
+			data->iUnitType = getUnitType();
+			data->piPromotions = new int[GC.getNumPromotionInfos()];
+			for (int i = 0; i < GC.getNumPromotionInfos(); i++)
+			{
+				if (!GC.getPromotionInfo((PromotionTypes)i).isEquipment())
+				{
+					data->piPromotions[i] = countHasPromotion((PromotionTypes)i);
+				}
+			}
+		}
+	}
+
+	// Only units dying under an active death list are recorded here. This used to test
+	// != NULL, which is true for NO_DEATHLIST (-1): every death added an entry that nothing
+	// ever removed, until the 8193rd death in a session crashed on the NULL from add().
+	if (eActiveDeathList != NO_DEATHLIST && !bPostConvert)
+	{
+		DeadUnitData* data = GC.getGameINLINE().addDeadUnit();
+		if (data != NULL)
+		{
+			data->iDeathList = eActiveDeathList;
+			data->iDeathTurn = GC.getGameINLINE().getTurnSlice();
+			data->iExperience = getExperience();
+			data->iLevel = getLevel();
+			data->iOriginalOwner = getOwner();
+			data->iUnitType = getUnitType();
+			data->piPromotions = new int[GC.getNumPromotionInfos()];
+			for (int i = 0; i < GC.getNumPromotionInfos(); i++)
+			{
+				if (!GC.getPromotionInfo((PromotionTypes)i).isEquipment())
+				{
+					data->piPromotions[i] = countHasPromotion((PromotionTypes)i);
+				}
+			}
+		}
+	}
+
 	for (int iI = 0; iI < GC.getNumPromotionInfos(); iI++)
 	{
 		if (isHasPromotion((PromotionTypes)iI))
@@ -2139,48 +2188,6 @@ void CvUnit::kill(bool bDelay, PlayerTypes ePlayer, bool bPostConvert)
 		}
 	}
 
-	// addDeadUnit() returns NULL once a list holds FLTA_MAX_BUCKETS (8192) entries, so both
-	// blocks below skip recording rather than write through NULL.
-	if (canResurrect() && eActiveDeathList==NO_DEATHLIST && !bPostConvert)
-	{
-		DeadUnitData* data = GET_PLAYER(getOwner()).addDeadUnit();
-		if (data != NULL)
-		{
-			data->iDeathList = -1; //getDeathListTarget();
-			data->iDeathTurn = GC.getGameINLINE().getTurnSlice();
-			data->iExperience = getExperience();
-			data->iLevel = getLevel();
-			data->iOriginalOwner = getOwner();
-			data->iUnitType = getUnitType();
-			data->piPromotions = new int[GC.getNumPromotionInfos()];
-			for (int i = 0; i < GC.getNumPromotionInfos(); i++)
-			{
-				data->piPromotions[i] = countHasPromotion((PromotionTypes)i);
-			}
-		}
-	}
-
-	// Only units dying under an active death list are recorded here. This used to test
-	// != NULL, which is true for NO_DEATHLIST (-1): every death added an entry that nothing
-	// ever removed, until the 8193rd death in a session crashed on the NULL from add().
-	if (eActiveDeathList != NO_DEATHLIST && !bPostConvert)
-	{
-		DeadUnitData* data = GC.getGameINLINE().addDeadUnit();
-		if (data != NULL)
-		{
-			data->iDeathList = eActiveDeathList;
-			data->iDeathTurn = GC.getGameINLINE().getTurnSlice();
-			data->iExperience = getExperience();
-			data->iLevel = getLevel();
-			data->iOriginalOwner = getOwner();
-			data->iUnitType = getUnitType();
-			data->piPromotions = new int[GC.getNumPromotionInfos()];
-			for (int i = 0; i < GC.getNumPromotionInfos(); i++)
-			{
-				data->piPromotions[i] = countHasPromotion((PromotionTypes)i);
-			}
-		}
-	}
 	// Bugfix: setXY() below only strips the ranged CityBonus effects, so a dying unit
 	// used to leave its FullMap CityBonus contributions on every city forever.  Remove
 	// them here (FullMap only, or setXY would subtract the ranged ones a second time).

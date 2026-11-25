@@ -157,5 +157,13 @@
 			</PromotionOverwrites>
 			<bEffectProm>1</bEffectProm>
 		</PromotionInfo>
+		<PromotionInfo>		<!-- Winterborn -->
+			<Type>PROMOTION_WINTERBORN</Type>
+			<DeathList>DEATHLIST_FROZEN_CONVERSION</DeathList>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Wintered -->
+			<Type>PROMOTION_WINTERED</Type>
+			<DeathList>DEATHLIST_FROZEN_CONVERSION</DeathList>
+		</PromotionInfo>
 	</PromotionInfos>
 </Civ4PromotionInfos>

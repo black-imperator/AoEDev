@@ -14522,11 +14522,19 @@ Your unit is even more surprised to realise there are two figures standing besid
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DEATHLIST_DEMON_CONVERSION</Tag>
-		<English>Demonic Conversion</English>
-		<French>Demonic Conversion</French>
-		<German>Demonic Conversion</German>
-		<Italian>Demonic Conversion</Italian>
-		<Spanish>Demonic Conversion</Spanish>
+		<English>the Path to Demonhood</English>
+		<French>the Path to Demonhood</French>
+		<German>the Path to Demonhood</German>
+		<Italian>the Path to Demonhood</Italian>
+		<Spanish>the Path to Demonhood</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DEATHLIST_ANGEL_CONVERSION</Tag>
+		<English>the Path to Angelhood</English>
+		<French>the Path to Angelhood</French>
+		<German>the Path to Angelhood</German>
+		<Italian>the Path to Angelhood</Italian>
+		<Spanish>the Path to Angelhood</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SEA_STEALTH</Tag>

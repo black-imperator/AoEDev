@@ -7919,7 +7919,7 @@ TechTypes CvPlayerAI::AI_bestTech(int iMaxPathLength, bool bIgnoreCost, bool bAs
 										iRandomMax += iRoll;
 										iRandomFactor += iReligionValue;
 
-										iReligionValue += getReligionWeight(iJ) * 100;
+										iReligionValue += getReligionWeight(iJ) * 1000;
 
 										if (iPathLength < 2)
 										{
@@ -15119,7 +15119,7 @@ int CvPlayerAI::AI_religionValue(ReligionTypes eReligion) const
 
 //FfH: Modified by Kael 09/29/2007
 //	return iValue;
-	iValue += getReligionWeight(eReligion);
+	iValue += getReligionWeight(eReligion)*10;
 	return std::max(iValue, 0);
 //FfH: End Modify
 

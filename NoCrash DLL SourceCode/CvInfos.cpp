@@ -21009,7 +21009,7 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 				{
 					for (int j = 0; j < iNumSibs; j++)
 					{
-						pXML->GetChildXmlValByName(szTextVal, "SpecialistClassType");
+						pXML->GetChildXmlValByName(szTextVal, "SpecialistClass");
 						iIndex = pXML->FindInInfoClass(szTextVal);
 
 						if (iIndex > -1)

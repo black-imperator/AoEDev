@@ -454,6 +454,7 @@
 					<iBonusRange>0</iBonusRange>
 				</CityBonus>
 			</CityBonuses>
+			<DeathList>DEATHLIST_ANGEL_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Avatar -->
 			<Type>PROMOTION_AVATAR</Type>
@@ -741,6 +742,7 @@
 				<iNoBadExploreImprovement>5</iNoBadExploreImprovement>
 				</NoBadExploreImprovement>
 			</NoBadExploreImprovements>
+			<DeathList>DEATHLIST_DEMON_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Dragon -->
 			<Type>PROMOTION_DRAGON</Type>
@@ -1641,6 +1643,7 @@
 				<Promotion>PROMOTION_SIDAR_PERCEPTION</Promotion>
 			</PromotionExcludes>
 			<PromotionNextLevel>PROMOTION_GREATER_SHADE</PromotionNextLevel>
+			<DeathList>DEATHLIST_LAROTH</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Shade (Greater) -->
 			<Type>PROMOTION_GREATER_SHADE</Type>
@@ -1693,6 +1696,7 @@
 			</UnitCombats>
 			<Button>Art/interface/buttons/races/Race_Shade_Saturated.dds</Button>
 			<iExtraPerception>3</iExtraPerception>
+			<DeathList>DEATHLIST_LAROTH</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Trollkin -->
 			<Type>PROMOTION_TROLLKIN</Type>
@@ -2331,6 +2335,7 @@
 				</BonusAffinity>
 			</BonusAffinities>
 			<PyPerTurn>perTurnArmaWeapon(pCaster)</PyPerTurn>
+			<DeathList>DEATHLIST_ANGEL_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Arma Neutral weapon-->
 			<Type>PROMOTION_ARMA_NEUTRAL_WEAPON</Type>
@@ -2380,6 +2385,7 @@
 					<iResist>50</iResist>
 				</DamageTypeResist>
 			</DamageTypeResists>
+			<DeathList>DEATHLIST_ANGEL_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Arma Neutral armor-->
 			<Type>PROMOTION_ARMA_NEUTRAL_ARMOR</Type>
@@ -2471,6 +2477,7 @@
 					<iAffinity>1</iAffinity>
 				</BonusAffinity>
 			</BonusAffinities>
+			<DeathListCombat>DEATHLIST_BASIUM</DeathListCombat>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Lorum diaboli -->
 			<Type>PROMOTION_LORUM_DIABOLI</Type>
@@ -2512,6 +2519,7 @@
 					<iAffinity>1</iAffinity>
 				</BonusAffinity>
 			</BonusAffinities>
+			<DeathListCombat>DEATHLIST_LORUM</DeathListCombat>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Compelling Jewel -->
 			<Type>PROMOTION_COMPELLING_JEWEL</Type>
@@ -3010,6 +3018,7 @@
 			<Description>TXT_KEY_EQUIPMENT_INFERNAL_GRIMOIRE</Description>
 			<Button>Art/Interface/Buttons/Equipment/InfernalGrimoire.dds</Button>
 			<bEquipment>1</bEquipment>
+			<DeathList>DEATHLIST_DEMON_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Jade Torc -->
 			<Type>PROMOTION_JADE_TORC</Type>
@@ -14795,6 +14804,7 @@
 			<SecondaryUnitCombats>
 				<SecondaryUnitCombat>UNITCOMBAT_MELEE</SecondaryUnitCombat>
 			</SecondaryUnitCombats>
+			<DeathList>DEATHLIST_ANGEL_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Monstrous Creature -->
 			<Type>PROMOTION_MONSTROUS_CREATURE</Type>
@@ -15050,6 +15060,7 @@
 			<Button>Art/Interface/Buttons/Promotions/Civs/Scions/Necromancer.dds</Button>
 			<iCombatHealPercent>10</iCombatHealPercent>
 			<iFreeXPFromCombat>1</iFreeXPFromCombat>
+			<DeathList>DEATHLIST_DEMON_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Necromancy -->
 			<Type>PROMOTION_NECROMANCY</Type>
@@ -16070,6 +16081,7 @@
 			<Button>Art/Interface/Buttons/Promotions/ProphecyMark.dds</Button>
 			<iMinLevel>-1</iMinLevel>
 			<iModifyGlobalCounter>1</iModifyGlobalCounter>
+			<DeathList>DEATHLIST_DEMON_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Questing -->
 			<Type>PROMOTION_QUESTING</Type>
@@ -16703,6 +16715,7 @@
 					<iResist>-10</iResist>
 				</DamageTypeResist>
 			</DamageTypeResists>
+			<DeathList>DEATHLIST_DEMON_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Dressed to Kill - Fine Clothes -->
 			<Type>PROMOTION_DRESSEDTOKILL</Type>
@@ -18529,6 +18542,7 @@
 					<iResist>25</iResist>
 				</DamageTypeResist>
 			</DamageTypeResists>
+			<DeathList>DEATHLIST_DEMON_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Unleashed -->
 			<Type>PROMOTION_UNLEASHED</Type>
@@ -18797,6 +18811,7 @@
 			<iCombatPercent>10</iCombatPercent>
 			<Button>Art/Interface/Buttons/Promotions/Vampire.dds</Button>
 			<iMinLevel>-1</iMinLevel>
+			<DeathList>DEATHLIST_DEMON_CONVERSION</DeathList>
 		</PromotionInfo>
 			<PromotionInfo>		<!-- Vampire (Graveleech) -->
 			<Type>PROMOTION_VAMPIRE_EFFECT</Type>
@@ -21322,6 +21337,7 @@
 			</UnitCombats>
 			<Button>Art/Interface/Buttons/Promotions/Body3.dds</Button>
 			<iAIWeight>150</iAIWeight>
+			<DeathList>DEATHLIST_DEMON_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Bounty Hunter -->
 			<Type>PROMOTION_BOUNTY_HUNTER</Type>
@@ -21699,6 +21715,7 @@
 			<Button>Art/Interface/Buttons/Promotions/Chaos2.dds</Button>
 			<iAIWeight>100</iAIWeight>
 			<PromotionNextLevel>PROMOTION_CHAOS3</PromotionNextLevel>
+			<DeathList>DEATHLIST_DEMON_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Chaos III -->
 			<Type>PROMOTION_CHAOS3</Type>
@@ -21770,6 +21787,7 @@
 			</UnitCombats>
 			<Button>Art/Interface/Buttons/Promotions/Chaos3.dds</Button>
 			<iAIWeight>150</iAIWeight>
+			<DeathList>DEATHLIST_DEMON_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- City Garrison I -->
 			<Type>PROMOTION_CITY_GARRISON1</Type>
@@ -24290,6 +24308,7 @@
 			</UnitCombats>
 			<Button>Art/Interface/Buttons/Promotions/Creation2.dds</Button>
 			<PromotionNextLevel>PROMOTION_CREATION3</PromotionNextLevel>
+			<DeathList>DEATHLIST_ANGEL_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Creation III -->
 			<Type>PROMOTION_CREATION3</Type>
@@ -24360,6 +24379,7 @@
 				</UnitCombat>
 			</UnitCombats>
 			<Button>Art/Interface/Buttons/Promotions/Creation3.dds</Button>
+			<DeathList>DEATHLIST_ANGEL_CONVERSION</DeathList>
 			<!-- <PromotionNextLevel>PROMOTION_MASTER_OF_CREATION</PromotionNextLevel> -->
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Dark Empathy -->
@@ -24401,6 +24421,7 @@
 				<PrereqBonus>BONUS_MANA_DEATH</PrereqBonus>
 			</PrereqBonusANDs>
 			<PromotionNextLevel>PROMOTION_DEATH2</PromotionNextLevel>
+			<DeathList>DEATHLIST_DEMON_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Death II -->
 			<Type>PROMOTION_DEATH2</Type>
@@ -24473,6 +24494,7 @@
 			<Button>Art/Interface/Buttons/Promotions/Death2.dds</Button>
 			<iAIWeight>100</iAIWeight>
 			<PromotionNextLevel>PROMOTION_DEATH3</PromotionNextLevel>
+			<DeathList>DEATHLIST_DEMON_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Death III -->
 			<Type>PROMOTION_DEATH3</Type>
@@ -24544,6 +24566,7 @@
 			</UnitCombats>
 			<Button>Art/Interface/Buttons/Promotions/Death3.dds</Button>
 			<iAIWeight>150</iAIWeight>
+			<DeathList>DEATHLIST_DEMON_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Deceitful -->
 			<Type>PROMOTION_DECEITFUL</Type>
@@ -24792,6 +24815,7 @@
 			</UnitCombats>
 			<Button>Art/Interface/Buttons/Promotions/Dimensional2.dds</Button>
 			<PromotionNextLevel>PROMOTION_DIMENSIONAL3</PromotionNextLevel>
+			<DeathList>DEATHLIST_DEMON_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Dimensional III -->
 			<Type>PROMOTION_DIMENSIONAL3</Type>
@@ -24861,6 +24885,7 @@
 					<iMaxApplications>0</iMaxApplications>
 				</UnitCombat>
 			</UnitCombats>
+			<DeathList>DEATHLIST_DEMON_CONVERSION</DeathList>
 			<Button>Art/Interface/Buttons/Promotions/Dimensional3.dds</Button>
 		</PromotionInfo>	
 		<PromotionInfo>		<!-- Dimensional II - Kinetic Blast formerly Force II -->
@@ -25429,6 +25454,7 @@
 			<Button>Art/Interface/Buttons/Promotions/Enchantment2.dds</Button>
 			<iAIWeight>100</iAIWeight>
 			<PromotionNextLevel>PROMOTION_ENCHANTMENT3</PromotionNextLevel>
+			<DeathList>DEATHLIST_ANGEL_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Enchantment III -->
 			<Type>PROMOTION_ENCHANTMENT3</Type>
@@ -25500,6 +25526,7 @@
 			</UnitCombats>
 			<Button>Art/Interface/Buttons/Promotions/Enchantment3.dds</Button>
 			<iAIWeight>150</iAIWeight>
+			<DeathList>DEATHLIST_ANGEL_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Entropy I -->
 			<Type>PROMOTION_ENTROPY1</Type>
@@ -25524,6 +25551,7 @@
 				<PrereqBonus>BONUS_MANA_ENTROPY</PrereqBonus>
 			</PrereqBonusANDs>
 			<PromotionNextLevel>PROMOTION_ENTROPY2</PromotionNextLevel>
+			<DeathList>DEATHLIST_DEMON_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Entropy II -->
 			<Type>PROMOTION_ENTROPY2</Type>
@@ -25596,6 +25624,7 @@
 			<Button>Art/Interface/Buttons/Promotions/Entropy2.dds</Button>
 			<iAIWeight>100</iAIWeight>
 			<PromotionNextLevel>PROMOTION_ENTROPY3</PromotionNextLevel>
+			<DeathList>DEATHLIST_DEMON_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Entropy III -->
 			<Type>PROMOTION_ENTROPY3</Type>
@@ -26198,6 +26227,7 @@
 			</UnitCombats>
 			<Button>Art/Interface/Buttons/Promotions/Fire3.dds</Button>
 			<iAIWeight>150</iAIWeight>
+			<DeathList>DEATHLIST_DEMON_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- First Aid -->
 			<Type>PROMOTION_FIRST_AID</Type>
@@ -27518,6 +27548,7 @@
 			</UnitCombats>
 			<Button>Art/Interface/Buttons/Promotions/Ice3.dds</Button>
 			<iAIWeight>150</iAIWeight>
+			<DeathList>DEATHLIST_DEMON_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Implacable -->
 			<Type>PROMOTION_IMPLACABLE</Type>
@@ -27790,6 +27821,7 @@
 			<Button>Art/Interface/Buttons/Promotions/Law2.dds</Button>
 			<iAIWeight>100</iAIWeight>
 			<PromotionNextLevel>PROMOTION_LAW3</PromotionNextLevel>
+			<DeathList>DEATHLIST_ANGEL_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Law III -->
 			<Type>PROMOTION_LAW3</Type>
@@ -27861,6 +27893,7 @@
 			</UnitCombats>
 			<Button>Art/Interface/Buttons/Promotions/Law3.dds</Button>
 			<iAIWeight>150</iAIWeight>
+			<DeathList>DEATHLIST_ANGEL_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Life I-->
 			<Type>PROMOTION_LIFE1</Type>
@@ -27885,6 +27918,7 @@
 				<PrereqBonus>BONUS_MANA_LIFE</PrereqBonus>
 			</PrereqBonusANDs>
 			<PromotionNextLevel>PROMOTION_LIFE2</PromotionNextLevel>
+			<DeathList>DEATHLIST_ANGEL_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Life II-->
 			<Type>PROMOTION_LIFE2</Type>
@@ -27957,6 +27991,7 @@
 			<Button>Art/Interface/Buttons/Promotions/Life2.dds</Button>
 			<iAIWeight>100</iAIWeight>
 			<PromotionNextLevel>PROMOTION_LIFE3</PromotionNextLevel>
+			<DeathList>DEATHLIST_ANGEL_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Life III -->
 			<Type>PROMOTION_LIFE3</Type>
@@ -28029,6 +28064,7 @@
 			<Button>Art/Interface/Buttons/Promotions/Life3.dds</Button>
 			<PromotionNextLevel>PROMOTION_MASTER_OF_LIFE</PromotionNextLevel>
 			<iAIWeight>150</iAIWeight>
+			<DeathList>DEATHLIST_ANGEL_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Lightning Resistance -->
 			<Type>PROMOTION_LIGHTNING_RESISTANCE</Type>
@@ -28990,6 +29026,7 @@
 				<PrereqBonus>BONUS_MANA_MIND</PrereqBonus>
 			</PrereqBonusANDs>
 			<PromotionNextLevel>PROMOTION_MIND2</PromotionNextLevel>
+			<DeathList>DEATHLIST_DEMON_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Mind II -->
 			<Type>PROMOTION_MIND2</Type>
@@ -29062,6 +29099,7 @@
 			<Button>Art/Interface/Buttons/Promotions/Mind2.dds</Button>
 			<iAIWeight>100</iAIWeight>
 			<PromotionNextLevel>PROMOTION_MIND3</PromotionNextLevel>
+			<DeathList>DEATHLIST_DEMON_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Mind III -->
 			<Type>PROMOTION_MIND3</Type>
@@ -29133,6 +29171,7 @@
 			</UnitCombats>
 			<Button>Art/Interface/Buttons/Promotions/Mind3.dds</Button>
 			<iAIWeight>150</iAIWeight>
+			<DeathList>DEATHLIST_DEMON_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Mobility I -->
 			<Type>PROMOTION_MOBILITY1</Type>
@@ -30456,6 +30495,7 @@
 			</UnitCombats>
 			<Button>Art/Interface/Buttons/Promotions/Shadow3.dds</Button>
 			<iAIWeight>200</iAIWeight>
+			<DeathList>DEATHLIST_DEMON_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Shock I -->
 			<Type>PROMOTION_SHOCK</Type>
@@ -31775,6 +31815,7 @@
 			</UnitCombats>
 			<Button>Art/Interface/Buttons/Promotions/Spirit3.dds</Button>
 			<iAIWeight>150</iAIWeight>
+			<DeathList>DEATHLIST_ANGEL_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Stigmata -->
 			<Type>PROMOTION_STIGMATA</Type>
@@ -31982,6 +32023,7 @@
 				<PrereqBonus>BONUS_MANA_SUN</PrereqBonus>
 			</PrereqBonusANDs>
 			<PromotionNextLevel>PROMOTION_SUN2</PromotionNextLevel>
+			<DeathList>DEATHLIST_ANGEL_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Sun II -->
 			<Type>PROMOTION_SUN2</Type>
@@ -32054,6 +32096,7 @@
 			<Button>Art/Interface/Buttons/Promotions/Sun2.dds</Button>
 			<iAIWeight>100</iAIWeight>
 			<PromotionNextLevel>PROMOTION_SUN3</PromotionNextLevel>
+			<DeathList>DEATHLIST_ANGEL_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Sun III -->
 			<Type>PROMOTION_SUN3</Type>
@@ -32125,6 +32168,7 @@
 			</UnitCombats>
 			<Button>Art/Interface/Buttons/Promotions/Sun3.dds</Button>
 			<iAIWeight>200</iAIWeight>
+			<DeathList>DEATHLIST_ANGEL_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Tactics I -->
 			<Type>PROMOTION_TACTICS1</Type>
@@ -32815,6 +32859,7 @@
 					<iResist>-40</iResist>
 				</DamageTypeResist>
 			</DamageTypeResists>
+			<DeathList>DEATHLIST_DEMON_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Wicked -->
 			<Type>PROMOTION_WICKED</Type>
@@ -32875,6 +32920,7 @@
 					<iCombat>3</iCombat>
 				</DamageTypeCombat>
 			</DamageTypeCombats>
+			<DeathList>DEATHLIST_DEMON_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Touch of Life -->
 			<Type>PROMOTION_TOUCH_OF_LIFE</Type>
@@ -42783,6 +42829,7 @@
 					<iCombat>1</iCombat>
 				</DamageTypeCombat>
 			</DamageTypeCombats>
+			<DeathList>DEATHLIST_DEMON_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!--Servant of the Flame-->
 			<Type>PROMOTION_SERVANT_OF_THE_FLAME</Type>
@@ -45589,6 +45636,7 @@
 			<bPrereqAlive>1</bPrereqAlive>
 			<iAIWeight>-100</iAIWeight>
 			<iMinLevel>-1</iMinLevel>
+			<DeathList>DEATHLIST_DEMON_CONVERSION</DeathList>
 		</PromotionInfo>
 		<PromotionInfo>		<!-- RazorWeed Blade-->
 			<Type>PROMOTION_RAZORWEED_BLADE</Type>

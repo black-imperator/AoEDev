@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Basic Infos -->
+
+<Civ4DeathListInfos xmlns="x-schema:Frozen_CIV4GameInfoSchema.xml">
+	<DeathListInfos>
+		<DeathListInfo> <!--Used for turning units into frozen souls-->
+			<Type>DEATHLIST_FROZEN_CONVERSION</Type>
+			<Description>TXT_KEY_DEATHLIST_FROZEN_CONVERSION</Description>
+			<iPriority>1</iPriority>
+			<iReturnDelay>5</iReturnDelay>
+			<iMaxUnitsReleased>2</iMaxUnitsReleased>
+			<bRequiresLivingCiv>1</bRequiresLivingCiv>
+			<CivReceiver>CIVILIZATION_FROZEN</CivReceiver>
+		</DeathListInfo>
+	</DeathListInfos>
+</Civ4DeathListInfos>

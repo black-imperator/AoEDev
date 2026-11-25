@@ -2203,6 +2203,23 @@ def reqHeraldsCall(caster):
 		if (pUnit.isAlive() and pUnit.getOwner() == caster.getOwner()):
 			return True
 	return False
+	
+def reqBasiumDeathList(caster):
+	if caster.isAlive():
+		if cf.isAngelorMane(caster)==gc.getInfoTypeForString("UNIT_MANES"):
+			return True
+	if caster.isHasPromotion(gc.getInfoTypeForString("PROMOTION_DEMON")):
+		caster.setDeathListTarget(gc.getInfoTypeForString("DEATHLIST_BASIUM_DEMON"))
+		return False
+
+def reqBasiumDemonDeathList(caster):
+	if caster.isHasPromotion(gc.getInfoTypeForString("PROMOTION_DEMON")):
+		return True
+		
+def reqNetherBladeDeathList(caster):
+	if caster.isAlive():
+		return True
+
 
 def spellHeraldsCall(caster):
 	iValor = getInfoType('PROMOTION_VALOR')
@@ -2218,6 +2235,7 @@ def spellHeraldsCall(caster):
 			pUnit.setHasPromotion(iCourage, True)
 			pUnit.setHasPromotion(iLoyalty, True)
 			pUnit.setDuration(1)
+			pUnit.setDeathListTarget(getInfoType("DEATHLIST_ANGEL_CONVERSION"))
 
 def reqHide(caster):
 	if caster.isMadeAttack():
@@ -3987,10 +4005,8 @@ def spellSanctify(caster):
 	iCrossroad = getInfoType('UNIT_DEVILCASTER')
 	if iImprovement == getInfoType('IMPROVEMENT_AERON_VAULTGATE'):
 		pPlot.setImprovementType(-1)
-		iBonus = pPlot.getBonusType(-1)
-		if iBonus != -1:
-			if gc.getBonusInfo(pPlot.getBonusType(-1)).getBonusClassType() == getInfoType('BONUSCLASS_MANA'):
-				pPlot.setBonusType(-1)
+		if pPlot.getBonusType(-1)!=-1 and gc.getBonusInfo(pPlot.getBonusType(-1)).getBonusClassType() == getInfoType('BONUSCLASS_MANA'):
+			pPlot.setBonusType(-1)
 		pPlayer.changeGlobalCounterContrib(-1)
                 for x,y in plotsInRange( caster.getX(), caster.getY(), iRange ):
                         pPlot = getPlot(x,y)

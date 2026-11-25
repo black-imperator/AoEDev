@@ -7,29 +7,63 @@
 
 <Civ4DeathListInfos xmlns="x-schema:CIV4GameInfoSchema.xml">
 	<DeathListInfos>
-		<DeathListInfo>
-			<Type>DEATHLIST_BASIUM</Type>
-			<Description>TXT_KEY_DEATHLIST_BASIUM</Description>
-		</DeathListInfo>
-		<DeathListInfo>
-			<Type>DEATHLIST_NETHERBLADE</Type>
-			<Description>TXT_KEY_DEATHLIST_NETHERBLADE</Description>
-		</DeathListInfo>
-		<DeathListInfo>
+		<DeathListInfo> <!--Used for turning units into manes-->
 			<Type>DEATHLIST_DEMON_CONVERSION</Type>
 			<Description>TXT_KEY_DEATHLIST_DEMON_CONVERSION</Description>
+			<DefaultUnitType>UNIT_MANES</DefaultUnitType>
+			<iPriority>1</iPriority>
+			<iReturnDelay>2</iReturnDelay>
+			<iMaxUnitsReleased>5</iMaxUnitsReleased>
+			<bRequiresLivingCiv>1</bRequiresLivingCiv>
+			<CivReceiver>CIVILIZATION_INFERNAL</CivReceiver>
 		</DeathListInfo>
-		<DeathListInfo>
+		<DeathListInfo> <!--Used for turning units into angels-->
 			<Type>DEATHLIST_ANGEL_CONVERSION</Type>
 			<Description>TXT_KEY_DEATHLIST_ANGEL_CONVERSION</Description>
+			<iPriority>1</iPriority>
+			<iReturnDelay>5</iReturnDelay>
+			<iMaxUnitsReleased>2</iMaxUnitsReleased>
+			<bRequiresLivingCiv>1</bRequiresLivingCiv>
+			<CivReceiver>CIVILIZATION_MERCURIANS</CivReceiver>
 		</DeathListInfo>
-		<DeathListInfo>
+		<DeathListInfo> <!--Units killed by basium's mace-->
+			<Type>DEATHLIST_BASIUM</Type>
+			<Description>TXT_KEY_DEATHLIST_BASIUM</Description>
+			<iPriority>2</iPriority>
+			<PythonPrereq>reqBasiumDeathList(caster)</PythonPrereq>
+		</DeathListInfo>
+		<DeathListInfo> <!--Units killed by Lorum Diaboli-->
+			<Type>DEATHLIST_LORUM</Type>
+			<Description>TXT_KEY_DEATHLIST_LORUM</Description>
+			<iPriority>2</iPriority>
+			<PythonPrereq>reqBasiumDeathList(caster)</PythonPrereq>
+		</DeathListInfo>
+		<DeathListInfo> <!--Units killed by the netherblade-->
+			<Type>DEATHLIST_NETHERBLADE</Type>
+			<Description>TXT_KEY_DEATHLIST_NETHERBLADE</Description>
+			<iPriority>2</iPriority>
+			<PythonPrereq>reqNetherBladeDeathList(caster)</PythonPrereq>
+		</DeathListInfo>
+		<DeathListInfo> <!--shades-->
+			<Type>DEATHLIST_LAROTH</Type>
+			<Description>TXT_KEY_DEATHLIST_LAROTH</Description>
+			<iPriority>1</iPriority>
+		</DeathListInfo>
+		<DeathListInfo><!--demons killed by basium's mace-->
 			<Type>DEATHLIST_BASIUM_DEMON</Type>
 			<Description>TXT_KEY_DEATHLIST_BASIUM_DEMON</Description>
+			<iPriority>2</iPriority>
+			<PythonPrereq>reqBasiumDemonDeathList(caster)</PythonPrereq>
 		</DeathListInfo>
-		<DeathListInfo>
+		<DeathListInfo> <!--demons killed on Erebus-->
 			<Type>DEATHLIST_DEMON_REBIRTH</Type>
 			<Description>TXT_KEY_DEATHLIST_DEMON_REBIRTH</Description>
+			<iPriority>1</iPriority>
+		</DeathListInfo>
+		<DeathListInfo> <!--Angels killed on Erebus-->
+			<Type>DEATHLIST_ANGEL_REBIRTH</Type>
+			<Description>TXT_KEY_DEATHLIST_ANGEL_REBIRTH</Description>
+			<iPriority>1</iPriority>
 		</DeathListInfo>
 	</DeathListInfos>
 </Civ4DeathListInfos>

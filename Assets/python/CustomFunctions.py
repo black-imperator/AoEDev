@@ -1663,24 +1663,25 @@ class CustomFunctions:
 		if iReligion in (self.Religions["Fellowship"],	self.Religions["Runes of Kilmorph"]):
 			return -1
 
-		lEvilProms = [	gc.getInfoTypeForString('PROMOTION_UNHOLY_TAINT'), gc.getInfoTypeForString('PROMOTION_GULAGARM_POISONED'),
-						self.Promotions["Effects"]["Vampire"],
-						self.Promotions["Generic"]["Chaos I"],			self.Promotions["Generic"]["Chaos II"],			self.Promotions["Generic"]["Chaos III"],
-						self.Promotions["Generic"]["Death I"],			self.Promotions["Generic"]["Death II"],			self.Promotions["Generic"]["Death III"],
-						self.Promotions["Generic"]["Dimensional I"],	self.Promotions["Generic"]["Dimensional II"],	self.Promotions["Generic"]["Dimensional III"],
-						self.Promotions["Generic"]["Entropy I"],		self.Promotions["Generic"]["Entropy II"],		self.Promotions["Generic"]["Entropy III"],
-						self.Promotions["Generic"]["Shadow I"],			self.Promotions["Generic"]["Shadow II"],		self.Promotions["Generic"]["Shadow III"]]
-		for iProm in lEvilProms:
-			if pUnit.isHasPromotion(iProm):					return iMane
-
-		lGoodProms = []
-		for iProm in lGoodProms:
-			if pUnit.isHasPromotion(iProm):					return iAngel
-
-		if bCanBeFrozen:
-			lFrozenProms = [self.Promotions["Effects"]["Winterborn"],	self.Promotions["Effects"]["Wintered"]]
-			for iProm in lFrozenProms:
-				if pUnit.isHasPromotion(iProm):				return iFrozenSoul
+	# promotions are handled directly by deathlist
+	#	lEvilProms = [	gc.getInfoTypeForString('PROMOTION_UNHOLY_TAINT'), gc.getInfoTypeForString('PROMOTION_GULAGARM_POISONED'),
+	#					self.Promotions["Effects"]["Vampire"],
+	#					self.Promotions["Generic"]["Chaos I"],			self.Promotions["Generic"]["Chaos II"],			self.Promotions["Generic"]["Chaos III"],
+	#					self.Promotions["Generic"]["Death I"],			self.Promotions["Generic"]["Death II"],			self.Promotions["Generic"]["Death III"],
+	#					self.Promotions["Generic"]["Dimensional I"],	self.Promotions["Generic"]["Dimensional II"],	self.Promotions["Generic"]["Dimensional III"],
+	#					self.Promotions["Generic"]["Entropy I"],		self.Promotions["Generic"]["Entropy II"],		self.Promotions["Generic"]["Entropy III"],
+	#					self.Promotions["Generic"]["Shadow I"],			self.Promotions["Generic"]["Shadow II"],		self.Promotions["Generic"]["Shadow III"]]
+	#	for iProm in lEvilProms:
+	#		if pUnit.isHasPromotion(iProm):					return iMane
+#
+#		lGoodProms = []
+#		for iProm in lGoodProms:
+#			if pUnit.isHasPromotion(iProm):					return iAngel
+#
+#		if bCanBeFrozen:
+#			lFrozenProms = [self.Promotions["Effects"]["Winterborn"],	self.Promotions["Effects"]["Wintered"]]
+#			for iProm in lFrozenProms:
+#				if pUnit.isHasPromotion(iProm):				return iFrozenSoul
 
 		if pPlayer.isBarbarian():
 			if CyGame().getSorenRandNum(100, "Barb") < 80:	return -1
@@ -3025,6 +3026,8 @@ class CustomFunctions:
 		iInfernal		= self.Civilizations["Infernal"]
 		iMercurians		= self.Civilizations["Mercurians"]
 		iFrozen			= self.Civilizations["Frozen"]
+		if (pUnit.getDeathListTarget()!=-1):
+			return
 		if CyGame().countKnownTechNumTeams(self.Techs["Infernal Pact"]) > 0 and CyGame().getNumCivActive(iInfernal) > 0:
 			bCanBeMane	= True
 		if CyGame().getBuildingClassCreatedCount(self.Buildings["Mercurian Gate"]) > 0 and CyGame().getNumCivActive(iMercurians) > 0:
@@ -3041,21 +3044,24 @@ class CustomFunctions:
 		iPlayer		= pUnit.getOwner()
 
 		if   bCanBeMane and iUnitType == iMane:
-			if not gc.isNoCrash():
-				CyGame().addtoDeathList(gc.getInfoTypeForString('DEATHLIST_DEMON_CONVERSION'), pUnit)
-			else:
-				self.giftUnit(iMane, iInfernal, 0, pPlot, iPlayer)
+			pUnit.setDeathListTarget(gc.getInfoTypeForString('DEATHLIST_DEMON_CONVERSION'))
+		#	if not gc.isNoCrash():
+		#		CyGame().addtoDeathList(gc.getInfoTypeForString('DEATHLIST_DEMON_CONVERSION'), pUnit)
+		#	else:
+		#		self.giftUnit(iMane, iInfernal, 0, pPlot, iPlayer)
 		elif bCanBeAngel and iUnitType == iAngel:
-			if not gc.isNoCrash():
-				CyGame().addtoDeathList(gc.getInfoTypeForString('DEATHLIST_ANGEL_CONVERSION'), pUnit)
-			else:
-				self.giftUnit(iAngel, iMercurians, pUnit.getExperienceTimes100(), pPlot, iPlayer)
+			pUnit.setDeathListTarget(gc.getInfoTypeForString('DEATHLIST_ANGEL_CONVERSION'))
+		 #	if not gc.isNoCrash():
+		#		CyGame().addtoDeathList(gc.getInfoTypeForString('DEATHLIST_ANGEL_CONVERSION'), pUnit)
+		#	else:
+		#		self.giftUnit(iAngel, iMercurians, pUnit.getExperienceTimes100(), pPlot, iPlayer)
 		elif bCanBeFrozen and iUnitType == iFrozenSoul:
+			pUnit.setDeathListTarget(gc.getInfoTypeForString('DEATHLIST_FROZEN_CONVERSION'))
 			# TODO: Deathlist for Frozen Souls
 			# if not gc.isNoCrash():
 			# 	CyGame().addtoDeathList(gc.getInfoTypeForString('DEATHLIST_FROZEN_CONVERSION'), pUnit)
 			# else:
-			self.giftUnit(iFrozenSoul, iFrozen, 0, pPlot, iPlayer)
+			#self.giftUnit(iFrozenSoul, iFrozen, 0, pPlot, iPlayer)
 
 	def unitKilledGuide(self, pUnit):
 		gc		= CyGlobalContext()
