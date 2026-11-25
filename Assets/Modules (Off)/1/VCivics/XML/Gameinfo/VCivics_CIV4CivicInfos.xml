@@ -1348,6 +1348,7 @@
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_THE_DREAMERS</WeLoveTheKing>
 			<iWarWearinessModifier>-50</iWarWearinessModifier>
+			<iGreatPeopleRateModifier>-35</iGreatPeopleRateModifier>
 			<iAIWeight>50</iAIWeight>
 			<SpecialistClassCommerces>
 				<iCommerce>0</iCommerce>
@@ -1366,7 +1367,7 @@
 					<iSpecialistClassCount>3</iSpecialistClassCount>
 				</SpecialistClassCount>
 			</SpecialistClassCounts>
-			<SpecialistClassGPPChanges>
+			<!--<SpecialistClassGPPChanges>
 				<SpecialistClassGPPChange>
 					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
 					<iGPPChange>1</iGPPChange>
@@ -1391,7 +1392,7 @@
 					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
 					<iGPPChange>-1</iGPPChange>
 				</SpecialistClassGPPChange>
-			</SpecialistClassGPPChanges>
+			</SpecialistClassGPPChanges>-->
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
 					<ImprovementType>IMPROVEMENT_STYGIAN_SHRINE</ImprovementType>
@@ -1475,6 +1476,7 @@
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_THE_DREAMERS</WeLoveTheKing>
 			<iWarWearinessModifier>-50</iWarWearinessModifier>
+			<iGreatPeopleRateModifier>-35</iGreatPeopleRateModifier>
 			<iAIWeight>50</iAIWeight>
 			<SpecialistClassCommerces>
 				<iCommerce>0</iCommerce>
@@ -1493,7 +1495,7 @@
 					<iSpecialistClassCount>3</iSpecialistClassCount>
 				</SpecialistClassCount>
 			</SpecialistClassCounts>
-			<SpecialistClassGPPChanges>
+			<!--<SpecialistClassGPPChanges>
 				<SpecialistClassGPPChange>
 					<SpecialistClass>SPECIALISTCLASS_PRIEST</SpecialistClass>
 					<iGPPChange>1</iGPPChange>
@@ -1518,7 +1520,7 @@
 					<SpecialistClass>SPECIALISTCLASS_HEALER</SpecialistClass>
 					<iGPPChange>-1</iGPPChange>
 				</SpecialistClassGPPChange>
-			</SpecialistClassGPPChanges>
+			</SpecialistClassGPPChanges>-->
 		     <AndDependencyTypes>
 		        <DependencyType>MODULE_VICIOUSSEAS</DependencyType>
 		     </AndDependencyTypes>

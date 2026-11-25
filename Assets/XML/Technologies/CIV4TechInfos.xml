@@ -919,6 +919,10 @@
 					<TerrainType>TERRAIN_DESERT</TerrainType>
 					<bTerrainTrade>1</bTerrainTrade>
 				</TerrainTrade>
+				<TerrainTrade>
+					<TerrainType>TERRAIN_BURNING_SANDS</TerrainType>
+					<bTerrainTrade>1</bTerrainTrade>
+				</TerrainTrade>
 			</TerrainTrades>
 			<Flavors>
 			</Flavors>

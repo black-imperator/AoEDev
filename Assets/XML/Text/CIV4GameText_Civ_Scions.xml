@@ -1358,6 +1358,14 @@
 		<Spanish>Weird Wracked</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_WEIRD_WRACKED_LESSER</Tag>
+		<English>Bad Luck</English>
+		<French>Bad Luck</French>
+		<German>Bad Luck</German>
+		<Italian>Bad Luck</Italian>
+		<Spanish>Bad Luck</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_SPELL_ARAWN_BECKONS</Tag>
 		<English>Arawn Beckons</English>
 		<French>Signe d'Arawn</French>
@@ -3412,6 +3420,14 @@
 		<German>Tödlicher Unfall</German>
 		<Italian>Incidenti Mortali</Italian>
 		<Spanish>Deadly Mishap</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_DEADLY_MISHAP_LESSER</Tag>
+		<English>Dangerous Mishap</English>
+		<French>Dangerous Mishap</French>
+		<German>Dangerous Unfall</German>
+		<Italian>Dangerous Mortali</Italian>
+		<Spanish>Dangerous Mishap</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_DEADLY_MISHAP_HELP</Tag>

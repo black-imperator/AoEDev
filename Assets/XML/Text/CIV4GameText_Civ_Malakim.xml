@@ -238,6 +238,14 @@
 		<Spanish>Dunespeak</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_HELLSPEAK</Tag>
+		<English>Hellspeak</English>
+		<French>Hellspeak</French>
+		<German>Hellspeak</German>
+		<Italian>Hellspeak</Italian>
+		<Spanish>Hellspeak</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_STRONG_MIRROR</Tag>
 		<English>Conviction</English>
 		<French>Conviction</French>
