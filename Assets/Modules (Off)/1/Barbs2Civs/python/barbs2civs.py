@@ -393,7 +393,8 @@ def canTriggerBarbMekaraEmerge(lBarbCities):
 			if not pCity.isNone():
 				pPlayer = gc.getPlayer(gc.getInfoTypeForString('CIVILIZATION_AMURITES'))
 				iTeam = pPlayer.getTeam()
-				if pPlot.isRevealed(iTeam, False):
+				pPlot = pCity.plot()
+				if ppPlot.isRevealed(iTeam, False):
 					lEligibleCandidateCities.append(pCity)
 					continue
 				elif pcity.getPopulation() >= 5:
