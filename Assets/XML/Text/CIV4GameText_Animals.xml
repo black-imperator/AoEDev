@@ -302,6 +302,14 @@
 		<Spanish>Treasure Nose</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_AUXHOUND_COMPANION</Tag>
+		<English>Auxhound Companion</English>
+		<French>Auxhound Companion</French>
+		<German>Auxhound Companion</German>
+		<Italian>Auxhound Companion</Italian>
+		<Spanish>Auxhound Companion</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_LION_PRIDE</Tag>
 		<English>Lion Pride</English>
 		<French>
