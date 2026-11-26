@@ -46928,5 +46928,13 @@
 			<Button>Art/Interface/Buttons/Promotions/SeraphimBinding.dds</Button>
 			<iMinLevel>-1</iMinLevel>
 		</PromotionInfo>
+		<PromotionInfo>		<!-- Treasure Nose -->
+			<Type>PROMOTION_TREASURE_NOSE</Type>
+			<Description>TXT_KEY_PROMOTION_TREASURE_NOSE</Description>
+			<iSlaveGenerationChance>2</iSlaveGenerationChance>
+			<CaptureUnitClass>EQUIPMENTCLASS_TREASURE</CaptureUnitClass>
+			<Button>Art/Interface/Buttons/Equipment/Treasure.dds</Button>
+			<iMinLevel>-1</iMinLevel>
+		</PromotionInfo>
 	</PromotionInfos>
 </Civ4PromotionInfos>

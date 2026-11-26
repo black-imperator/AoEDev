@@ -671,7 +671,7 @@
 			</AllowPromotions>
 			<PrereqTech>TECH_COMMUNE_WITH_NATURE</PrereqTech>
 			<iMinAreaSize>-1</iMinAreaSize>
-			<PrereqBuilding>BUILDING_GROVE</PrereqBuilding>
+			<PrereqBuildingClass>BUILDINGCLASS_GROVE</PrereqBuildingClass>
 			<AllowPromotions>
 					<Promotion>PROMOTION_SUBDUE_BEASTS</Promotion>
 			</AllowPromotions>

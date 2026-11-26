@@ -2338,6 +2338,17 @@
 			<DefaultUnit>UNIT_SHARDIK</DefaultUnit>
 			<iMercenaryWeight>0</iMercenaryWeight>
 		</UnitClassInfo>
+		<UnitClassInfo>		<!-- AUXHOUND -->
+			<Type>UNITCLASS_AUXHOUND</Type>
+			<Description>TXT_KEY_UNIT_AUXHOUND</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<bUnique>1</bUnique>
+			<DefaultUnit>UNIT_AUXHOUND</DefaultUnit>
+			<iMercenaryWeight>0</iMercenaryWeight>
+		</UnitClassInfo>
 		<UnitClassInfo>		<!-- WOLF -->
 			<Type>UNITCLASS_WOLF</Type>
 			<Description>TXT_KEY_UNIT_WOLF</Description>
@@ -2369,6 +2380,17 @@
 			<iInstanceCostModifier>0</iInstanceCostModifier>
 			<bUnique>1</bUnique>
 			<DefaultUnit>UNIT_DIRE_WOLF</DefaultUnit>
+			<iMercenaryWeight>0</iMercenaryWeight>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- Winter Wolf -->
+			<Type>UNITCLASS_WINTER_WOLF</Type>
+			<Description>TXT_KEY_UNIT_WINTER_WOLF</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<bUnique>1</bUnique>
+			<DefaultUnit>UNIT_WINTER_WOLF</DefaultUnit>
 			<iMercenaryWeight>0</iMercenaryWeight>
 		</UnitClassInfo>
 		<UnitClassInfo>		<!-- FENRIS -->

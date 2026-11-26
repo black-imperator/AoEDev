@@ -32561,7 +32561,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo> <!-- UNIT_AUXHOUND -->
 			<Type>ART_DEF_UNIT_AUXHOUND</Type>
-			<Button>Art/Interface/Buttons/Units/Wolf Pack.dds</Button>
+			<Button>Art/Interface/Buttons/Units/Auxhound.dds</Button>
 			<fScale>0.45</fScale>
 			<fInterfaceScale>1.4</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -34654,6 +34654,31 @@
 			<NIF>Art/Units/animal/Wolf/Wolf.nif</NIF>
 			<KFM>Art/animations/Wolf/Wolf.kfm</KFM>
 			<SHADERNIF>Art/Units/Wolf/Wolf_fx.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/WolfShadow.nif</ShadowNIF>
+				<ShadowAttachNode>LionBip Spine</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+			<SelectionSound>AS3D_UN_WOLF_FIDGT_VOX</SelectionSound>
+			<ActionSound>AS3D_UN_WOLF_ATTK_VOX</ActionSound>
+		</UnitArtInfo>
+		<UnitArtInfo> <!-- UNIT_WINTER_WOLF -->
+			<Type>ART_DEF_UNIT_WINTER_WOLF</Type>
+			<Button>Art/Interface/Buttons/Units/Wolf.dds</Button>
+			<fScale>0.7</fScale>
+			<fInterfaceScale>1.2</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/animal/Winter_Wolf/Wolf.nif</NIF>
+			<KFM>Art/animations/Wolf/Wolf.kfm</KFM>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/WolfShadow.nif</ShadowNIF>
 				<ShadowAttachNode>LionBip Spine</ShadowAttachNode>

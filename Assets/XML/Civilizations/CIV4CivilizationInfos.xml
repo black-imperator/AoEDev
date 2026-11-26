@@ -7965,6 +7965,14 @@
 			<Buildings/>
 			<Units>
 				<Unit>
+					<UnitClassType>UNITCLASS_AUXHOUND</UnitClassType>
+					<UnitType>UNIT_AUXHOUND</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_WINTER_WOLF</UnitClassType>
+					<UnitType>UNIT_WINTER_WOLF</UnitType>
+				</Unit>
+				<Unit>
 					<UnitClassType>UNITCLASS_BAT</UnitClassType>
 					<UnitType>UNIT_BAT</UnitType>
 				</Unit>

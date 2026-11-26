@@ -965,7 +965,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqBuilding>BUILDING_GROVE</PrereqBuilding>
+			<PrereqBuildingClass>BUILDINGCLASS_GROVE</PrereqBuildingClass>
 			<PrereqTech>TECH_ANIMAL_MASTERY</PrereqTech>
 			<iCost>240</iCost>
 			<iMoves>2</iMoves>

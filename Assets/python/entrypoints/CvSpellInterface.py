@@ -13626,11 +13626,12 @@ def  exploreLairFreeCiv(pUnit, pPlot, sCiv, sLeader):
 	pNewPlayer		= gc.getPlayer(iNewPlayer)
 	iNewTeam		= pNewPlayer.getTeam()
 	pNewTeam		= gc.getTeam(iNewTeam)
+	pBhallTeam		= gc.getTeam(gc.getBARBARIAN_PLAYER())
 
 	# Set the same techs
 	iTechCount = 0
 	for iTech in xrange(gc.getNumTechInfos()):
-		if pFounderTeam.isHasTech(iTech):
+		if pBhallTeam.isHasTech(iTech):
 			pNewTeam.setHasTech(iTech, True, iNewPlayer, True, False)
 			iTechCount += 1
 
