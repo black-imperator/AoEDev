@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!-- Civic Infos -->
+<Civ4CivicInfos xmlns="x-schema:Anscarca_CIV4GameInfoSchema.xml">
+	<CivicInfos>
+		<CivicInfo>		<!-- Hivemind -->
+			<CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
+			<Type>CIVIC_HIVEMIND</Type>
+			<Description>TXT_KEY_CIVIC_HIVEMIND</Description>
+			<Civilopedia>NONE</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_HIVEMIND_STRATEGY</Strategy>
+			<Button>Art/Civs/Jotnar/buttons/jot_traditions.dds</Button>
+			<iAnarchyLength>1</iAnarchyLength>
+			<bOverflowProduction>1</bOverflowProduction>
+			<TradeYieldModifiers>
+				<iYield>15</iYield>
+				<iYield>10</iYield>
+				<iYield>-500</iYield>
+			</TradeYieldModifiers>
+			<CommerceModifiers>
+				<iYield>-500</iYield>
+				<iYield>0</iYield>
+				<iYield>0</iYield>
+			</CommerceModifiers>
+			<iGreatPeopleRateModifier>-60</iGreatPeopleRateModifier>
+			<iDistanceMaintenanceModifier>-100</iDistanceMaintenanceModifier>
+			<iNumCitiesMaintenanceModifier>-100</iNumCitiesMaintenanceModifier>
+			<PrereqCivilization>CIVILIZATION_ANSCARCA</PrereqCivilization>
+		</CivicInfo>
+	</CivicInfos>
+</Civ4CivicInfos>

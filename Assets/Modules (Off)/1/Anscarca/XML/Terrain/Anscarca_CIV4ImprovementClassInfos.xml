@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Soren Johnson (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Improvement Class Infos -->
+<Civ4ImprovementClassInfos xmlns="x-schema:Anscarca_CIV4TerrainSchema.xml">
+	<ImprovementClassInfos>
+		<ImprovementClassInfo><!-- Camp-->
+			<Type>IMPROVEMENTCLASS_CAMP_ANSCARCA</Type>
+			<Description></Description>
+			<bUnique>0</bUnique>
+			<DefaultImprovement>IMPROVEMENT_CAMP_ANSCARCA</DefaultImprovement>
+		</ImprovementClassInfo>
+		<ImprovementClassInfo><!-- Farm-->
+			<Type>IMPROVEMENTCLASS_FARM_ANSCARCA</Type>
+			<Description></Description>
+			<bUnique>0</bUnique>
+			<DefaultImprovement>IMPROVEMENT_FARM_ANSCARCA</DefaultImprovement>
+		</ImprovementClassInfo>
+		<ImprovementClassInfo><!-- Harvester-->
+			<Type>IMPROVEMENTCLASS_HARVESTER_ANSCARCA</Type>
+			<Description></Description>
+			<bUnique>0</bUnique>
+			<DefaultImprovement>IMPROVEMENT_HARVESTER_ANSCARCA</DefaultImprovement>
+		</ImprovementClassInfo>
+		<ImprovementClassInfo><!-- Reaper-->
+			<Type>IMPROVEMENTCLASS_REAPER_ANSCARCA</Type>
+			<Description></Description>
+			<bUnique>0</bUnique>
+			<DefaultImprovement>IMPROVEMENT_REAPER_ANSCARCA</DefaultImprovement>
+		</ImprovementClassInfo>
+		<ImprovementClassInfo><!-- Bore-->
+			<Type>IMPROVEMENTCLASS_BORE</Type>
+			<Description></Description>
+			<bUnique>0</bUnique>
+			<DefaultImprovement>IMPROVEMENT_BORE</DefaultImprovement>
+		</ImprovementClassInfo>
+		<ImprovementClassInfo><!-- Siphon-->
+			<Type>IMPROVEMENTCLASS_SIPHON_ANSCARCA</Type>
+			<Description></Description>
+			<bUnique>0</bUnique>
+			<DefaultImprovement>IMPROVEMENT_SIPHON_ANSCARCA</DefaultImprovement>
+		</ImprovementClassInfo>
+		<ImprovementClassInfo><!-- Extractor-->
+			<Type>IMPROVEMENTCLASS_EXTRACTOR</Type>
+			<Description></Description>
+			<bUnique>0</bUnique>
+			<DefaultImprovement>IMPROVEMENT_EXTRACTOR</DefaultImprovement>
+		</ImprovementClassInfo>
+		<ImprovementClassInfo><!-- Node-->
+			<Type>IMPROVEMENTCLASS_NODE_ANSCARCA</Type>
+			<Description></Description>
+			<bUnique>0</bUnique>
+			<DefaultImprovement>IMPROVEMENT_NODE_ANSCARCA</DefaultImprovement>
+		</ImprovementClassInfo>
+		<ImprovementClassInfo><!-- Spike-->
+			<Type>IMPROVEMENTCLASS_SPIKE_ANSCARCA</Type>
+			<Description></Description>
+			<bUnique>0</bUnique>
+			<DefaultImprovement>IMPROVEMENT_SPIKE_ANSCARCA</DefaultImprovement>
+		</ImprovementClassInfo>
+		<ImprovementClassInfo><!-- Spire-->
+			<Type>IMPROVEMENTCLASS_SPIRE_ANSCARCA</Type>
+			<Description></Description>
+			<bUnique>0</bUnique>
+			<DefaultImprovement>IMPROVEMENT_SPIRE_ANSCARCA</DefaultImprovement>
+		</ImprovementClassInfo>
+		<ImprovementClassInfo><!-- Greater spire-->
+			<Type>IMPROVEMENTCLASS_GREATER_SPIRE_ANSCARCA</Type>
+			<Description></Description>
+			<bUnique>0</bUnique>
+			<DefaultImprovement>IMPROVEMENT_GREATER_SPIRE_ANSCARCA</DefaultImprovement>
+		</ImprovementClassInfo>
+	</ImprovementClassInfos>
+</Civ4ImprovementClassInfos>

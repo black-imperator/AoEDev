@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Soren Johnson (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Building Class Infos -->
+<Civ4BuildingClassInfos xmlns="x-schema:Anscarca_CIV4BuildingsSchema.xml">
+	<BuildingClassInfos>
+		<BuildingClassInfo>
+			<Type>BUILDINGCLASS_ANSCARCA_NODE</Type>
+			<Description>TXT_KEY_BUILDING_ANSCARCA_NODE</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_ANSCARCA_NODE</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo>
+			<Type>BUILDINGCLASS_THE_GRAND_SIMULATION</Type>
+			<Description>TXT_KEY_BUILDING_THE_GRAND_SIMULATION</Description>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_THE_GRAND_SIMULATION</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo>
+			<Type>BUILDINGCLASS_FROZEN_STORAGE</Type>
+			<Description>TXT_KEY_BUILDING_FROZEN_STORAGE</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_FROZEN_STORAGE</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		
+		
+
+		<BuildingClassInfo><!-- Planetary Extractor 1 -->
+			<Type>BUILDINGCLASS_PLANETARY_EXTRACTOR_ANSCARCA_1</Type>
+			<Description>TXT_KEY_BUILDING_PLANETARY_EXTRACTOR_ANSCARCA</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_PLANETARY_EXTRACTOR_ANSCARCA_1</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo><!-- Planetary Extractor 2 -->
+			<Type>BUILDINGCLASS_PLANETARY_EXTRACTOR_ANSCARCA_2</Type>
+			<Description>TXT_KEY_BUILDING_PLANETARY_EXTRACTOR_ANSCARCA_2</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_PLANETARY_EXTRACTOR_ANSCARCA_2</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo><!-- Planetary Extractor 3 -->
+			<Type>BUILDINGCLASS_PLANETARY_EXTRACTOR_ANSCARCA_3</Type>
+			<Description>TXT_KEY_BUILDING_PLANETARY_EXTRACTOR_ANSCARCA_3</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_PLANETARY_EXTRACTOR_ANSCARCA_3</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo><!-- Planetary Extractor 4 -->
+			<Type>BUILDINGCLASS_PLANETARY_EXTRACTOR_ANSCARCA_4</Type>
+			<Description>TXT_KEY_BUILDING_PLANETARY_EXTRACTOR_ANSCARCA_4</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_PLANETARY_EXTRACTOR_ANSCARCA_4</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo><!-- Planetary Extractor 5 -->
+			<Type>BUILDINGCLASS_PLANETARY_EXTRACTOR_ANSCARCA_5</Type>
+			<Description>TXT_KEY_BUILDING_PLANETARY_EXTRACTOR_ANSCARCA_5</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_PLANETARY_EXTRACTOR_ANSCARCA_5</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo><!-- Planetary Extractor 6 -->
+			<Type>BUILDINGCLASS_PLANETARY_EXTRACTOR_ANSCARCA_6</Type>
+			<Description>TXT_KEY_BUILDING_PLANETARY_EXTRACTOR_ANSCARCA_6</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_PLANETARY_EXTRACTOR_ANSCARCA_6</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo><!-- Planetary Extractor 7 -->
+			<Type>BUILDINGCLASS_PLANETARY_EXTRACTOR_ANSCARCA_7</Type>
+			<Description>TXT_KEY_BUILDING_PLANETARY_EXTRACTOR_ANSCARCA_7</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_PLANETARY_EXTRACTOR_ANSCARCA_7</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo><!-- Planetary Extractor 8 -->
+			<Type>BUILDINGCLASS_PLANETARY_EXTRACTOR_ANSCARCA_8</Type>
+			<Description>TXT_KEY_BUILDING_PLANETARY_EXTRACTOR_ANSCARCA_8</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_PLANETARY_EXTRACTOR_ANSCARCA_8</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo><!-- Planetary Extractor 9 (Not sure if it's possible to get to this tier) -->
+			<Type>BUILDINGCLASS_PLANETARY_EXTRACTOR_ANSCARCA_9</Type>
+			<Description>TXT_KEY_BUILDING_PLANETARY_EXTRACTOR_ANSCARCA_9</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_PLANETARY_EXTRACTOR_ANSCARCA_9</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo><!-- Planetary Extractor 10 -->
+			<Type>BUILDINGCLASS_PLANETARY_EXTRACTOR_ANSCARCA_10</Type>
+			<Description>TXT_KEY_BUILDING_PLANETARY_EXTRACTOR_ANSCARCA_10</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_PLANETARY_EXTRACTOR_ANSCARCA_10</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo><!-- Resource Cavern -->
+			<Type>BUILDINGCLASS_RESOURCE_CAVERN_ANSCARCA</Type>
+			<Description>TXT_KEY_BUILDING_RESOURCE_CAVERN_ANSCARCA</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_RESOURCE_CAVERN_ANSCARCA</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo><!-- Lavaflow -->
+			<Type>BUILDINGCLASS_LAVAFLOW_ANSCARCA</Type>
+			<Description>TXT_KEY_BUILDING_LAVAFLOW_ANSCARCA</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_LAVAFLOW_ANSCARCA</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo><!-- Life Vein -->
+			<Type>BUILDINGCLASS_LIFE_VEIN_ANSCARCA</Type>
+			<Description>TXT_KEY_BUILDING_LIFE_VEIN_ANSCARCA</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_LIFE_VEIN_ANSCARCA</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		
+		
+		<BuildingClassInfo><!-- Lurker Lair (Flag for lurker spawning) -->
+			<Type>BUILDINGCLASS_LURKER_LAIR_ANSCARCA</Type>
+			<Description>TXT_KEY_BUILDING_LURKER_LAIR_ANSCARCA</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<bUnique>1</bUnique>
+			<DefaultBuilding>BUILDING_LURKER_LAIR_ANSCARCA</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		
+	</BuildingClassInfos>	
+	
+</Civ4BuildingClassInfos>

@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Basic Infos -->
+<!-- CONFIRMED WORKING INGAME:
+- build improvement
+- cast spell (unit or city)
+- construct building (buildingclass, 
+- gain promo (on levelup, on unit trained, on unit upgraded)
+- kill enemy (unitclass, unitcombat, 
+- train unit
+-->
+
+<Civ4TraitTriggerInfos xmlns="x-schema:Anscarca_CIV4CivilizationsSchema.xml">
+	<TraitTriggerInfos>
+		<TraitTriggerInfo> <!-- Kill                Anything        kills Anything              All -->
+			<Type>TRAITTRIGGER_KILL_ANSCARCA</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_INFESTATION</TraitType>
+					<iModifier>2</iModifier>
+				</CounterChange>
+				<CounterChange>
+					<TraitType>TRAIT_DOOMSDAY</TraitType>
+					<iModifier>2</iModifier>
+				</CounterChange>
+				<CounterChange>
+					<TraitType>TRAIT_PANDEMIC</TraitType>
+					<iModifier>2</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
+			<TraitHookType>TRAITHOOK_KILL_UNIT</TraitHookType>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Gain plot           Any											Infestation -->
+			<Type>TRAITTRIGGER_GAIN_PLOT_ANY_ANSCARCA</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_INFESTATION</TraitType>
+					<iModifier>2</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
+			<TraitHookType>TRAITHOOK_GAIN_PLOT_OWNERSHIP</TraitHookType>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Lose plot           Any											Infestation -->
+			<Type>TRAITTRIGGER_LOSE_PLOT_ANY_ANSCARCA</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_INFESTATION</TraitType>
+					<iModifier>-2</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
+			<TraitHookType>TRAITHOOK_LOSE_PLOT_OWNERSHIP</TraitHookType>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Kill                Brute     kills anything                    Doomsday -->
+			<Type>TRAITTRIGGER_KILL_BEAST_ANSCARCA</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_DOOMSDAY</TraitType>
+					<iModifier>5</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
+			<TraitHookType>TRAITHOOK_KILL_UNIT</TraitHookType>
+			<PrereqUnitClassType>UNITCLASS_WARRIOR</PrereqUnitClassType>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Kill                Herald     kills anything                    Doomsday -->
+			<Type>TRAITTRIGGER_KILL_BEAST_ANSCARCA</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_DOOMSDAY</TraitType>
+					<iModifier>5</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
+			<TraitHookType>TRAITHOOK_KILL_UNIT</TraitHookType>
+			<PrereqUnitClassType>UNITCLASS_DOOM_HERALD_ANSCARCA</PrereqUnitClassType>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Explore             Anything                           			Pandemic -->
+			<Type>TRAITTRIGGER_EXPLORE_ANYTHING_ANSCARCA</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_PANDEMIC</TraitType>
+					<iModifier>15</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>
+			<TraitHookType>TRAITHOOK_EXPLORE_LAIR</TraitHookType>
+		</TraitTriggerInfo>
+		
+		<!-- Trying to balance for DynRel mod and how Anscarca gains land much more quickly, ideally one time negative effect to balance things... -->
+		<TraitTriggerInfo> <!-- Gain promo          Worker           gains Revelation             -->
+			<Type>TRAITTRIGGER_ANSCARCA_DYNAMIC_RELIGION</Type>
+			
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_RUNES</TraitType>
+					<iModifier>-250</iModifier>
+				</CounterChange>
+				<CounterChange>
+					<TraitType>TRAIT_OVERLORDS</TraitType>
+					<iModifier>-250</iModifier>
+				</CounterChange>
+				<CounterChange>
+					<TraitType>TRAIT_FELLOWSHIP</TraitType>
+					<iModifier>-250</iModifier>
+				</CounterChange>
+				<CounterChange>
+					<TraitType>TRAIT_WHITE_HAND</TraitType>
+					<iModifier>-250</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_RELIGION</TraitClassType>
+			
+			<TraitHookType>TRAITHOOK_UNIT_GAIN_PROMOTION</TraitHookType>
+			<PrereqUnitCombatType>UNITCOMBAT_WORKER</PrereqUnitCombatType>
+			<PrereqPromotionType>PROMOTION_REVELATION_ANSCARCA</PrereqPromotionType>
+		</TraitTriggerInfo>
+	</TraitTriggerInfos>
+</Civ4TraitTriggerInfos>
