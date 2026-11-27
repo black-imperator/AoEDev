@@ -17121,7 +17121,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqBuilding>BUILDING_GROVE</PrereqBuilding>
+			<PrereqBuildingClass>BUILDINGCLASS_GROVE</PrereqBuildingClass>
 			<PrereqTech>TECH_ANIMAL_MASTERY</PrereqTech>
 			<iCost>240</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -17202,7 +17202,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqBuilding>BUILDING_GROVE</PrereqBuilding>
+			<PrereqBuildingClass>BUILDINGCLASS_GROVE</PrereqBuildingClass>
 			<PrereqTech>TECH_COMMUNE_WITH_NATURE</PrereqTech>
 			<iAIWeight>16</iAIWeight>
 			<iCost>240</iCost>
@@ -17881,7 +17881,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqBuilding>BUILDING_GROVE</PrereqBuilding>
+			<PrereqBuildingClass>BUILDINGCLASS_GROVE</PrereqBuildingClass>
 			<PrereqTech>TECH_ANIMAL_MASTERY</PrereqTech>
 			<iCost>240</iCost>
 			<iMoves>2</iMoves>
@@ -20020,7 +20020,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqBuilding>BUILDING_GROVE</PrereqBuilding>
+			<PrereqBuildingClass>BUILDINGCLASS_GROVE</PrereqBuildingClass>
 			<PrereqTech>TECH_COMMUNE_WITH_NATURE</PrereqTech>
 			<iAIWeight>16</iAIWeight>
 			<iCost>240</iCost>
@@ -22717,7 +22717,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqBuilding>BUILDING_GROVE</PrereqBuilding>
+			<PrereqBuildingClass>BUILDINGCLASS_GROVE</PrereqBuildingClass>
 			<PrereqTech>TECH_ANIMAL_MASTERY</PrereqTech>
 			<iCost>240</iCost>
 			<iMoves>2</iMoves>
@@ -41581,7 +41581,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqBuilding>BUILDING_GROVE</PrereqBuilding>
+			<PrereqBuildingClass>BUILDINGCLASS_GROVE</PrereqBuildingClass>
 			<PrereqTech>TECH_ANIMAL_MASTERY</PrereqTech>
 			<iCost>240</iCost>
 			<iMoves>2</iMoves>
@@ -44526,7 +44526,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqBuilding>BUILDING_GROVE</PrereqBuilding>
+			<PrereqBuildingClass>BUILDINGCLASS_GROVE</PrereqBuildingClass>
 			<PrereqTech>TECH_COMMUNE_WITH_NATURE</PrereqTech>
 			<iAIWeight>16</iAIWeight>
 			<iCost>240</iCost>
@@ -49753,6 +49753,85 @@
 			</AppearanceTechs>
 		</UnitInfo>
 		<UnitInfo>        <!-- Wolf T1 550-->                    <!-- Wolves -->
+			<Class>UNITCLASS_AUXHOUND</Class>
+			<Type>UNIT_AUXHOUND</Type>
+			<Combat>UNITCOMBAT_ANIMAL</Combat>
+			<DefaultUnitAI>UNITAI_ANIMAL</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_AUXHOUND</Description>
+			<Strategy>TXT_KEY_UNIT_AUXHOUND_STRATEGY</Strategy>
+			<Civilopedia>TXT_KEY_UNIT_AUXHOUND_PEDIA</Civilopedia>
+			<Advisor>NONE</Advisor>
+			<bAnimal>1</bAnimal>
+			<bMilitarySupport>1</bMilitarySupport>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<bNoDefensiveBonus>1</bNoDefensiveBonus>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ANIMAL</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<iMoves>2</iMoves>
+			<iCombat>2</iCombat>
+			<iCityAttack>-25</iCityAttack>
+			<TerrainNatives>
+				<TerrainNative>
+					<TerrainType>TERRAIN_TAIGA</TerrainType>
+					<bTerrainNative>1</bTerrainNative>
+				</TerrainNative>
+				<TerrainNative>
+					<TerrainType>TERRAIN_TUNDRA</TerrainType>
+					<bTerrainNative>1</bTerrainNative>
+				</TerrainNative>
+				<TerrainNative>
+					<TerrainType>TERRAIN_GRASS</TerrainType>
+					<bTerrainNative>1</bTerrainNative>
+				</TerrainNative>
+				<TerrainNative>
+					<TerrainType>TERRAIN_PLAINS</TerrainType>
+					<bTerrainNative>1</bTerrainNative>
+				</TerrainNative>
+				<TerrainNative>
+					<TerrainType>TERRAIN_DESERT</TerrainType>
+					<bTerrainNative>1</bTerrainNative>
+				</TerrainNative>
+			</TerrainNatives>
+			<FeatureNatives>
+				<FeatureNative>
+					<FeatureType>FEATURE_FOREST</FeatureType>
+					<bFeatureNative>1</bFeatureNative>
+				</FeatureNative>
+			</FeatureNatives>
+			<iAsset>0</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>1</iGroupSize>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_AUXHOUND</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_WOLF_BLOOD</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_TREASURE_NOSE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+			<iTier>1</iTier>
+			<iAppearanceProb>25</iAppearanceProb>
+			<AppearanceTechs>
+				<AppearanceTech>
+					<AppearanceTechType>TECH_TRACKING</AppearanceTechType>
+					<iAppearanceTech>-1</iAppearanceTech>
+				</AppearanceTech>
+			</AppearanceTechs>
+		</UnitInfo>
+		<UnitInfo>        <!-- Wolf T1 550-->                    <!-- Wolves -->
 			<Class>UNITCLASS_WOLF</Class>
 			<Type>UNIT_WOLF</Type>
 			<Combat>UNITCOMBAT_ANIMAL</Combat>
@@ -49918,6 +49997,94 @@
 					<iAppearanceTech>-50</iAppearanceTech>
 				</AppearanceTech>
 			</AppearanceTechs>
+		</UnitInfo>
+		<UnitInfo>        <!-- Winter Wolf Pack T2 -->
+			<Class>UNITCLASS_WINTER_WOLF</Class>
+			<Type>UNIT_WINTER_WOLF</Type>
+			<Combat>UNITCOMBAT_BEAST</Combat>
+			<DefaultUnitAI>UNITAI_ANIMAL</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_WINTER_WOLF</Description>
+			<Civilopedia>TXT_KEY_UNIT_WINTER_WOLF_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_WOLF_STRATEGY</Strategy>
+			<Advisor>NONE</Advisor>
+			<bAnimal>1</bAnimal>
+			<bMilitarySupport>1</bMilitarySupport>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<bNoDefensiveBonus>1</bNoDefensiveBonus>
+			<iExtraPerception>2</iExtraPerception>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ANIMAL</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<Buildings>
+				<Building>
+					<BuildingType>BUILDING_WOLF_CAGE</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+				<Building>
+					<BuildingType>BUILDING_WOLF_BURROW</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
+			</Buildings>
+			<iMoves>2</iMoves>
+			<iCombat>4</iCombat>
+			<iCityAttack>-25</iCityAttack>
+			<TerrainNatives>
+				<TerrainNative>
+					<TerrainType>TERRAIN_TAIGA</TerrainType>
+					<bTerrainNative>1</bTerrainNative>
+				</TerrainNative>
+				<TerrainNative>
+					<TerrainType>TERRAIN_TUNDRA</TerrainType>
+					<bTerrainNative>1</bTerrainNative>
+				</TerrainNative>
+				<TerrainNative>
+					<TerrainType>TERRAIN_GLACIER</TerrainType>
+					<bTerrainNative>1</bTerrainNative>
+				</TerrainNative>
+			</TerrainNatives>
+			<iAsset>0</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>3</iGroupSize>
+				<iMeleeWaveSize>3</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>3</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_WINTER_WOLF</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FormationType>FORMATION_TYPE_ANIMAL</FormationType>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_WOLF_BLOOD</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_ICE_DEMON</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+			</FreePromotions>
+			<bGraphicalOnly>0</bGraphicalOnly>
+			<iTier>2</iTier>
+			<iAppearanceProb>-1</iAppearanceProb>
+			<AppearanceTechs>
+				<AppearanceTech>
+					<AppearanceTechType>TECH_TRACKING</AppearanceTechType>
+					<iAppearanceTech>151</iAppearanceTech>
+				</AppearanceTech>
+				<AppearanceTech>
+					<AppearanceTechType>TECH_FERAL_BOND</AppearanceTechType>
+					<iAppearanceTech>-90</iAppearanceTech>
+				</AppearanceTech>
+			</AppearanceTechs>
+			<DamageTypeCombats>
+				<DamageTypeCombat>
+					<DamageType>DAMAGE_COLD</DamageType>
+					<iCombat>1</iCombat>
+				</DamageTypeCombat>
+			</DamageTypeCombats>
 		</UnitInfo>
 		<UnitInfo>        <!-- Dire Wolf T3 -->
 			<Class>UNITCLASS_DIRE_WOLF</Class>

@@ -1,0 +1,24 @@
+[name]
+Anscarca
+[version]
+2.33
+[rifeversion]
+368
+[author]
+FoxXavier
+[shortdesc]
+Adds a new zerg-esque experimental civ with no commercial resource.
+[desc]
+New Civilization started as an experiment to see if I could remove gold as a resource when I saw a few removed food. Due to no artistic abilities, I decided to cut down units to just a few and instead expand the promos and try other experimental gameplay designs.
+
+See in game civilopedia for a better overview.
+
+v2.28: Changing up the 3 end game units to really be game enders if you can afford them. Also, adjustments so Nodes now only come from workers. Starting units/traits changed.
+v2.30: Updating Gene Project to offer more benefits (removing negative promos).
+v2.32: Moving overflow production from selective traits into core civic. Should help the need for a lot of workers.
+v2.33: Adding a few more disease related promotions and removing one extra. Worker now have base 1 defense so they can use the base infection.
+v2.34: Resized/Redone model (Thanks T_W), removing extra starter workers, modifying some events.
+
+;[dependency]
+;[compatible]
+

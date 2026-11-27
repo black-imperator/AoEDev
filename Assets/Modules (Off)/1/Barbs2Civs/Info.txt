@@ -12,7 +12,7 @@ Wonderblundr
 
 ;Use this for versions of your own module. 1.0, 1.1, A, etc.
 [version]
-1.1
+1.3
 
 ;What version of AoE this module was last updated for. This template was introduced v387.
 ;Refer to the SVN ver, or version.txt in the mod folder (assuming Black Imperator updated it...)
@@ -51,71 +51,110 @@ Gives civilizations a small chance to emerge from barbarian cities, depending on
 
 ;Longer description to tell how awesome your stuff is.
 [desc]
-Gives civilizations a small chance to emerge from barbarian cities depending on if they meet certain requirements. Note that this will avoid cities that have the Dragon's Horde, so you shouldn't get a situation where the Clan of Embers will spawn on top of that.
+Gives civilizations a small chance to emerge from barbarian cities depending on if they meet certain requirements.
 
-Current Civs and their Emergent Requirements:
+--==| Global Requirements |==--
+
+	- The barbarian city cannot have the Dragon's Horde
+	- The barbarian city must have a population of at least 3
+	- There is a cooldown between civs emerging that scales based on gamespeed. On standard speed it's 20 turns before the game starts rolling for a chance to spawn another civ.
+	- There is a cap on the amount of civs that can emerge from barbarian cities per game that scales based on map-size. On standard maps, it's 3.
+
+--==| Current Civs and their Emergent Requirements |==--
 
 CLAN OF EMBERS 
- 	- Requires a Barbarian city with at least 4 population
-	- Requires that the barbarians have access to the Crafting technology
+ 	- Requires a Barbarian city with at least 5 population
+	- Requires that the barbarians have access to the Masonry or Writing technology
 	- The Clan of Embers will no longer be able to emerge if barbarians have researched Taxation
+
 DOVIELLO
  	- Requires a Barbarian city that is near forests
-	- Requires that the barbarians have access to the Hunting technology
+	- Requires that the barbarians have access to the Hunting or Horseback Riding technology
 	- The Doviello will no longer be able to emerge if barbarians have researched Iron Working
+
 MAZATL
  	- Requires a Barbarian city that is near Mount Kelshekk
-	- Requires that the barbarians have access to the Bronze Working technology
+	- Requires that the barbarians have access to the Bronze Working or Tracking technology
 	- Requires that AC is below 20
 	- The Mazatl will no longer be able to emerge if barbarians have researched Strength of Will
+
 CUALLI
  	- Requires a Barbarian city that is near rainforests
-	- Requires that the barbarians have access to the Bronze Working technology
+	- Requires that the barbarians have access to the Bronze Working or Tracking technology
 	- The Cualli will no longer be able to emerge if barbarians have researched Taxation
+
 SHEAIM
 	- Requires that the barbarians have access to the Knowledge of the Ether technology and that AC is above 10
 	- The Sheaim will no longer be able to emerge if barbarians have researched Strength of Will
 	- Emergence is re-enabled if AC is greater than 50
+
 MEKARA ORDER
+	- Requires that the Amurites exist
+	- Requires a Barbarian city with at least 5 population OR for the Amurites to have revealed the city on their map
 	- Requires that the barbarians have access to the Knowledge of the Ether technology
-	- Requires that the Amurites exist on the map
 	- The Mekara Order will no longer be able to emerge if barbarians have researched Strength of Will
 	- Mekara Order will no longer be able to emerge if the Amurites have Evil alignment
+
 LEGION OF DTESH
-	- Requires that the barbarians have access to the Necromancy technology
-	- Requires that the Amurites or Mekara Order exist on the map
+	- Requires that the Amurites or Mekara Order exist
+	- Requires that the barbarians have access to the Necromancy or Way of the Wicked technology
 	- Dtesh will no longer be able to emerge if barbarians have researched Omniscience
+
 LANUN
-	- Requires that the barbarians have access to the Sailing technology
+	- Requires that the barbarians have access to the Sailing or Cartography technology
 	- Requires that the barbarian city is on the coast
-	- The Lanun will no longer be able to emerge if barbarians have researched Taxation
+	- The Lanun will no longer be able to emerge if barbarians have researched Guilds
+
 ARCHOS
  	- Requires a Barbarian city that is near forests
-	- Requires that the barbarians have access to the Animal Husbandry technology
+	- Requires that the barbarians have access to the Hunting or Horseback Riding technology
 	- The Archos will no longer be able to emerge if barbarians have researched Iron Working
+
 HIPPUS
- 	- Requires a Barbarian city that is landlocked and on flat terrain
-	- Requires that the barbarians have access to the Horseback Riding technology
+ 	- Requires a Barbarian city that is on flat terrain
+	- Requires that the barbarians have access to the Hunting or Horseback Riding technology
 	- The Hippus will no longer be able to emerge if barbarians have researched Currency
+
 CALABIM
- 	- Requires a Barbarian city with at least 4 population
-	- Requires that the barbarians have access to the Iron Working technology
+ 	- Requires a Barbarian city with at least 5 population
+	- Requires that the barbarians have access to the Iron Working or Code of Laws technology
 	- The Calabim will no longer be able to emerge if barbarians have researched Guilds
+
 SVARTALFAR
- 	- Requires a Barbarian city that is near forests
-	- Requires that the Ljosalfar exist on the map
-	- Requires that the barbarians have access to the Deception technology
+	- Requires that the Ljosalfar exist
+ 	- Requires a Barbarian city that is near forests OR for the Ljosalfar to have revealed the city on their map
+	- Requires that the barbarians have access to the Deception or Poisons technology
 	- The Svartalfar will no longer be able to emerge if barbarians have researched Guilds
+
 ILLIANS
  	- Requires a Barbarian city that is near Letum Frigus and that AC is above 10
 	- Requires that the barbarians have access to the Mysticism technology
 	- Illians will no longer be able to emerge if barbarians have researched Omniscience
+
 BALSERAPHS
  	- Requires a Barbarian city that is near the Tower of Eyes
-	- Requires that the barbarians have access to the Knowledge of the Ether technology
+	- Requires that the barbarians have access to the Knowledge of the Ether or Drama technology
 	- Balseraphs will no longer be able to emerge if barbarians have researched Strength of Will
-BEZERI (REQUIRES THE VICIOUS SEAS MODULE)
- 	- Requires a Barbarian city that is on the coast and near Jungle
-	- Requires that the barbarians have access to the Sailing technology
-	- Bezeri will no longer be able to emerge if barbarians have researched Taxation
 
+CHISLEV
+	- Requires that the barbarians have access to the Bronze Working or Tracking technology
+	- The Chislev will no longer be able to emerge if barbarians have researched Guilds
+
+--==| Module-Specific Civs |==-
+
+BEZERI (REQUIRES VICIOUS SEAS MODULE)
+ 	- Requires a Barbarian city that is on the coast and near Jungle
+	- Requires that the barbarians have access to the Bronze Working or Sailing technology
+	- Bezeri will no longer be able to emerge if barbarians have researched Guilds
+
+DREAM AIFONS (REQUIRES VICIOUS SEAS MODULE)
+ 	- Requires a Barbarian city that is near the Aifon Isle
+	- Requires that the Octopus Overlords religion has been founded
+	- Requires that the barbarians have access to the Fishing or Philosophy technology
+	- Dream Aifons will no longer be able to emerge if barbarians have researched Strength of Will
+
+AOS NI SIRA (REQUIRES DRACKS AOS NI SIRA MODULE)
+ 	- Requires a Barbarian city that is near forests
+	- Requires that the Fellowship of Leaves religion has been founded
+	- Requires that the barbarians have access to the Hunting technology
+	- Aos Ni Sira will no longer be able to emerge if barbarians have researched Iron Working

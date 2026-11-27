@@ -1562,6 +1562,16 @@
 			<PrereqTech>TECH_FISHING</PrereqTech>
 			<DomainCargo>DOMAIN_LAND</DomainCargo>
 			<iCargo>3</iCargo>
+			<TerrainPassableTechs>
+				<TerrainPassableTech>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<PassableTech>TECH_OPTICS</PassableTech>
+				</TerrainPassableTech>
+				<TerrainPassableTech>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<PassableTech>TECH_ENGINEERING</PassableTech>
+				</TerrainPassableTech>
+			</TerrainPassableTechs>
 		</UnitInfo>
 		<UnitInfo>        <!-- Trireme -->
 			<Class>UNITCLASS_TRIREME</Class>
@@ -1571,6 +1581,16 @@
 			<TechTypes>
 				<PrereqTech>TECH_CRAFTING</PrereqTech>
 			</TechTypes>
+			<TerrainPassableTechs>
+				<TerrainPassableTech>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<PassableTech>TECH_OPTICS</PassableTech>
+				</TerrainPassableTech>
+				<TerrainPassableTech>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<PassableTech>TECH_ENGINEERING</PassableTech>
+				</TerrainPassableTech>
+			</TerrainPassableTechs>
 		</UnitInfo>
 		<UnitInfo>        <!-- Galleon -->
 			<Class>UNITCLASS_GALLEON</Class>
@@ -1818,6 +1838,16 @@
 			</AllowPromotions>
 			<iCost>45</iCost>
 			<bFood>1</bFood>
+			<TerrainPassableTechs>
+				<TerrainPassableTech>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<PassableTech>TECH_OPTICS</PassableTech>
+				</TerrainPassableTech>
+				<TerrainPassableTech>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<PassableTech>TECH_ENGINEERING</PassableTech>
+				</TerrainPassableTech>
+			</TerrainPassableTechs>
 		</UnitInfo>
 		<UnitInfo>        <!-- WyrmFisher -->
 			<Class>UNITCLASS_WYRMFISHER</Class>
@@ -1859,6 +1889,16 @@
 			<iCost>75</iCost>
 			<iWorkRate>150</iWorkRate>
 			<bFood>1</bFood>
+			<TerrainPassableTechs>
+				<TerrainPassableTech>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<PassableTech>TECH_OPTICS</PassableTech>
+				</TerrainPassableTech>
+				<TerrainPassableTech>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<PassableTech>TECH_ENGINEERING</PassableTech>
+				</TerrainPassableTech>
+			</TerrainPassableTechs>
 		</UnitInfo>
 		<UnitInfo>        <!-- Funeral Barge -->
 			<Class>UNITCLASS_WORKBOAT</Class>
@@ -1877,6 +1917,16 @@
 			<AllowPromotions>
 				<Promotion>PROMOTION_WORKBOAT_PREVENTION_HOTLINE</Promotion>
 			</AllowPromotions>
+			<TerrainPassableTechs>
+				<TerrainPassableTech>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<PassableTech>TECH_OPTICS</PassableTech>
+				</TerrainPassableTech>
+				<TerrainPassableTech>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<PassableTech>TECH_ENGINEERING</PassableTech>
+				</TerrainPassableTech>
+			</TerrainPassableTechs>
 		</UnitInfo>	
 		<UnitInfo>		<!-- Possessed Giant Tortoise - MODULE BALANCE -->
 			<Class>UNITCLASS_AOSNISIRA_POSSESSED_GIANT_TORTOISE</Class>
@@ -1906,6 +1956,16 @@
 		     <AndDependencyTypes>
 		        <DependencyType>MODULE_KCZ_WOODS</DependencyType>
 		     </AndDependencyTypes>
+			<TerrainPassableTechs>
+				<TerrainPassableTech>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<PassableTech>TECH_OPTICS</PassableTech>
+				</TerrainPassableTech>
+				<TerrainPassableTech>
+					<TerrainType>TERRAIN_OCEAN_DEEP</TerrainType>
+					<PassableTech>TECH_ENGINEERING</PassableTech>
+				</TerrainPassableTech>
+			</TerrainPassableTechs>
 		</UnitInfo>
 		<UnitInfo>        <!-- Queen of the Line -->
 			<Class>UNITCLASS_QUEEN_OF_THE_LINE</Class>

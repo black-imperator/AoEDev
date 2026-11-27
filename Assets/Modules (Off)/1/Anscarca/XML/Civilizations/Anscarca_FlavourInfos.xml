@@ -1,0 +1,25 @@
+<CivFlavourInfos>
+	<CivFlavourInfo>
+		<Civilization>CIVILIZATION_ANSCARCA</Civilization>
+		<Preference>
+			<FlavourType>YIELD_FOOD</FlavourType>
+			<Value>1</Value>
+		</Preference>
+		<Preference>
+			<FlavourType>FEATURE_JUNGLE</FlavourType>
+			<Value>1</Value>
+		</Preference>
+		<Preference>
+			<FlavourType>TERRAIN_DESERT</FlavourType>
+			<Value>-1</Value>
+		</Preference>
+		<Preference> <!-- Extremely strong to get early due to hero's affinitity. Just going to try to push them away from it -->
+			<FlavourType>IMPROVEMENT_TOMB_OF_SUCELLUS</FlavourType>
+			<Value>-50</Value>
+		</Preference>
+		<Preference>
+			<FlavourType>IMPROVEMENT_POOL_OF_TEARS</FlavourType>
+			<Value>-20</Value>
+		</Preference>
+	</CivFlavourInfo>
+</CivFlavourInfos>

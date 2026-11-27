@@ -10,7 +10,7 @@
 		<Spanish>Rumors spread that savages in a distant land have organized under one leader.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_BARB_EMERGE_LIZARDMEN</Tag>
+		<Tag>TXT_KEY_EVENT_BARB_EMERGE_CIVILIZATION_CUALLI</Tag>
 		<English>Rumors say that the lizardmen of a distant land have suddenly become organized, raising massive armies and building stone temples to unknown gods.</English>
 		<French>Rumors say that the lizardmen of a distant land have suddenly become organized, raising massive armies and building stone temples to unknown gods.</French>
 		<German>Rumors say that the lizardmen of a distant land have suddenly become organized, raising massive armies and building stone temples to unknown gods.</German>
@@ -18,15 +18,23 @@
 		<Spanish>Rumors say that the lizardmen of a distant land have suddenly become organized, raising massive armies and building stone temples to unknown gods.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_BARB_EMERGE_BEZERI</Tag>
-		<English>Rumors say that tribes of lizardmen and toadmen have begun working together, building a kingdom of underwater cities in a distant land.</English>
-		<French>Rumors say that tribes of lizardmen and toadmen have begun working together, building a kingdom of underwater cities in a distant land.</French>
-		<German>Rumors say that tribes of lizardmen and toadmen have begun working together, building a kingdom of underwater cities in a distant land.</German>
-		<Italian>Rumors say that tribes of lizardmen and toadmen have begun working together, building a kingdom of underwater cities in a distant land.</Italian>
-		<Spanish>Rumors say that tribes of lizardmen and toadmen have begun working together, building a kingdom of underwater cities in a distant land.</Spanish>
+		<Tag>TXT_KEY_EVENT_BARB_EMERGE_CIVILIZATION_MAZATL</Tag>
+		<English>Rumors say that an army of lizardmen have driven the orcs and animalkin out of the jungles. They've stablished a new kingdom centered around a volcano.</English>
+		<French>Rumors say that an army of lizardmen have driven the orcs and animalkin out of the jungles. They've stablished a new kingdom centered around a volcano..</French>
+		<German>Rumors say that an army of lizardmen have driven the orcs and animalkin out of the jungles. They've stablished a new kingdom centered around a volcano.</German>
+		<Italian>Rumors say that an army of lizardmen have driven the orcs and animalkin out of the jungles. They've stablished a new kingdom centered around a volcano.</Italian>
+		<Spanish>Rumors say that an army of lizardmen have driven the orcs and animalkin out of the jungles. They've stablished a new kingdom centered around a volcano.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_BARB_EMERGE_ORC</Tag>
+		<Tag>TXT_KEY_EVENT_BARB_EMERGE_CIVILIZATION_BEZERI</Tag>
+		<English>Rumors say that tribes of lizardmen and toadmen have begun working together to build a kingdom of underwater cities in a distant land.</English>
+		<French>Rumors say that tribes of lizardmen and toadmen have begun working together to build a kingdom of underwater cities in a distant land.</French>
+		<German>Rumors say that tribes of lizardmen and toadmen have begun working together to build a kingdom of underwater cities in a distant land.</German>
+		<Italian>Rumors say that tribes of lizardmen and toadmen have begun working together to build a kingdom of underwater cities in a distant land.</Italian>
+		<Spanish>Rumors say that tribes of lizardmen and toadmen have begun working together to build a kingdom of underwater cities in a distant land.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_BARB_EMERGE_CIVILIZATION_CLAN_OF_EMBERS</Tag>
 		<English>Rumors say that the disorganized orcs of a distant land have organized under a charismatic warlord. Forests are being cut down for roads, farms are being built over empty wilds, and disparate raiders now march as a single army.</English>
 		<French>Rumors say that the disorganized orcs of a distant land have organized under a charismatic warlord. Forests are being cut down for roads, farms are being built over empty wilds, and disparate raiders now march as a single army.</French>
 		<German>Rumors say that the disorganized orcs of a distant land have organized under a charismatic warlord. Forests are being cut down for roads, farms are being built over empty wilds, and disparate raiders now march as a single army.</German>
@@ -34,15 +42,15 @@
 		<Spanish>Rumors say that the disorganized orcs of a distant land have organized under a charismatic warlord. Forests are being cut down for roads, farms are being built over empty wilds, and disparate raiders now march as a single army.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_BARB_EMERGE_DOVIELLO</Tag>
-		<English>Rumors say that savage men in a distant land have become nothing more than walking beasts. They run with packs of wolves and ride bears into battle. Towns and villages burn whereve they roam.</English>
-		<French>Rumors say that savage men in a distant land have become nothing more than walking beasts. They run with packs of wolves and ride bears into battle. Towns and villages burn whereve they roam.</French>
-		<German>Rumors say that savage men in a distant land have become nothing more than walking beasts. They run with packs of wolves and ride bears into battle. Towns and villages burn whereve they roam.</German>
-		<Italian>Rumors say that savage men in a distant land have become nothing more than walking beasts. They run with packs of wolves and ride bears into battle. Towns and villages burn whereve they roam.</Italian>
-		<Spanish>Rumors say that savage men in a distant land have become nothing more than walking beasts. They run with packs of wolves and ride bears into battle. Towns and villages burn whereve they roam.</Spanish>
+		<Tag>TXT_KEY_EVENT_BARB_EMERGE_CIVILIZATION_DOVIELLO</Tag>
+		<English>Rumors say that savage men in a distant land have become nothing more than walking beasts. They run with packs of wolves and ride bears into battle. Towns and villages burn wherever they roam.</English>
+		<French>Rumors say that savage men in a distant land have become nothing more than walking beasts. They run with packs of wolves and ride bears into battle. Towns and villages burn wherever they roam.</French>
+		<German>Rumors say that savage men in a distant land have become nothing more than walking beasts. They run with packs of wolves and ride bears into battle. Towns and villages burn wherever they roam.</German>
+		<Italian>Rumors say that savage men in a distant land have become nothing more than walking beasts. They run with packs of wolves and ride bears into battle. Towns and villages burn wherever they roam.</Italian>
+		<Spanish>Rumors say that savage men in a distant land have become nothing more than walking beasts. They run with packs of wolves and ride bears into battle. Towns and villages burn wherever they roam.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_BARB_EMERGE_ARCHOS</Tag>
+		<Tag>TXT_KEY_EVENT_BARB_EMERGE_CIVILIZATION_ARCHOS</Tag>
 		<English>Rumors say that savage men in a distant land have begun worshipping spiders. At night, their bodies change and morph, growing spider-like limbs and fangs.</English>
 		<French>Rumors say that savage men in a distant land have begun worshipping spiders. At night, their bodies change and morph, growing spider-like limbs and fangs.</French>
 		<German>Rumors say that savage men in a distant land have begun worshipping spiders. At night, their bodies change and morph, growing spider-like limbs and fangs.</German>
@@ -50,15 +58,15 @@
 		<Spanish>Rumors say that savage men in a distant land have begun worshipping spiders. At night, their bodies change and morph, growing spider-like limbs and fangs.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_BARB_EMERGE_LANUN</Tag>
-		<English>Rumors say that coastal tribes of orcs and lizardmen have been driven out by pirates led by a charismatic captain. This distant land has now become a safe haven for pirates across Erebus.</English>
-		<French>Rumors say that coastal tribes of orcs and lizardmen have been driven out by pirates led by a charismatic captain. This distant land has now become a safe haven for pirates across Erebus.</French>
-		<German>Rumors say that coastal tribes of orcs and lizardmen have been driven out by pirates led by a charismatic captain. This distant land has now become a safe haven for pirates across Erebus.</German>
-		<Italian>Rumors say that coastal tribes of orcs and lizardmen have been driven out by pirates led by a charismatic captain. This distant land has now become a safe haven for pirates across Erebus.</Italian>
-		<Spanish>Rumors say that coastal tribes of orcs and lizardmen have been driven out by pirates led by a charismatic captain. This distant land has now become a safe haven for pirates across Erebus.</Spanish>
+		<Tag>TXT_KEY_EVENT_BARB_EMERGE_CIVILIZATION_LANUN</Tag>
+		<English>Rumors say that coastal tribes of orcs and lizardmen have been driven out by a fleet of pirates. This distant land has now become a safe haven for pirates across Erebus.</English>
+		<French>Rumors say that coastal tribes of orcs and lizardmen have been driven out by a fleet of pirates. This distant land has now become a safe haven for pirates across Erebus.</French>
+		<German>Rumors say that coastal tribes of orcs and lizardmen have been driven out by a fleet of pirates. This distant land has now become a safe haven for pirates across Erebus.</German>
+		<Italian>Rumors say that coastal tribes of orcs and lizardmen have been driven out by a fleet of pirates. This distant land has now become a safe haven for pirates across Erebus.</Italian>
+		<Spanish>Rumors say that coastal tribes of orcs and lizardmen have been driven out by a fleet of pirates. This distant land has now become a safe haven for pirates across Erebus.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_BARB_EMERGE_HIPPUS</Tag>
+		<Tag>TXT_KEY_EVENT_BARB_EMERGE_CIVILIZATION_HIPPUS</Tag>
 		<English>Rumors say that an army of raiders and mercenaries have overwhelmed the tribes of a distant land, conquering them and declaring themselves 'horselords'.</English>
 		<French>Rumors say that an army of raiders and mercenaries have overwhelmed the tribes of a distant land, conquering them and declaring themselves 'horselords'.</French>
 		<German>Rumors say that an army of raiders and mercenaries have overwhelmed the tribes of a distant land, conquering them and declaring themselves 'horselords'.</German>
@@ -66,15 +74,15 @@
 		<Spanish>Rumors say that an army of raiders and mercenaries have overwhelmed the tribes of a distant land, conquering them and declaring themselves 'horselords'.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_BARB_EMERGE_SVART</Tag>
-		<English>Rumors say that several tribes in a distant land have vanished overnight, leaving behind empty huts and still-burning campfires. Strange elves have been spotted in the nearby woods.</English>
-		<French>Rumors say that several tribes in a distant land have vanished overnight, leaving behind empty huts and still-burning campfires. Strange elves have been spotted in the nearby woods.</French>
-		<German>Rumors say that several tribes in a distant land have vanished overnight, leaving behind empty huts and still-burning campfires. Strange elves have been spotted in the nearby woods.</German>
-		<Italian>Rumors say that several tribes in a distant land have vanished overnight, leaving behind empty huts and still-burning campfires. Strange elves have been spotted in the nearby woods.</Italian>
-		<Spanish>Rumors say that several tribes in a distant land have vanished overnight, leaving behind empty huts and still-burning campfires. Strange elves have been spotted in the nearby woods.</Spanish>
+		<Tag>TXT_KEY_EVENT_BARB_EMERGE_CIVILIZATION_SVARTALFAR</Tag>
+		<English>Rumors say that several tribes in a distant land have vanished overnight, leaving behind empty huts and still-burning campfires. Some say that pale elves have been seen slinking through the woods at night.</English>
+		<French>Rumors say that several tribes in a distant land have vanished overnight, leaving behind empty huts and still-burning campfires. Some say that pale elves have been seen slinking through the woods at night.</French>
+		<German>Rumors say that several tribes in a distant land have vanished overnight, leaving behind empty huts and still-burning campfires. Some say that pale elves have been seen slinking through the woods at night.</German>
+		<Italian>Rumors say that several tribes in a distant land have vanished overnight, leaving behind empty huts and still-burning campfires. Some say that pale elves have been seen slinking through the woods at night.</Italian>
+		<Spanish>Rumors say that several tribes in a distant land have vanished overnight, leaving behind empty huts and still-burning campfires. Some say that pale elves have been seen slinking through the woods at night.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_BARB_EMERGE_MEKARA</Tag>
+		<Tag>TXT_KEY_EVENT_BARB_EMERGE_CIVILIZATION_MEKARA_V2</Tag>
 		<English>Rumors say that rogue mages have enslaved a tribe of savages in a distant land, conducting strange experiments and harnassing dark rituals.</English>
 		<French>Rumors say that rogue mages have enslaved a tribe of savages in a distant land, conducting strange experiments and harnassing dark rituals.</French>
 		<German>Rumors say that rogue mages have enslaved a tribe of savages in a distant land, conducting strange experiments and harnassing dark rituals.</German>
@@ -82,7 +90,7 @@
 		<Spanish>Rumors say that rogue mages have enslaved a tribe of savages in a distant land, conducting strange experiments and harnassing dark rituals.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_BARB_EMERGE_DTESH</Tag>
+		<Tag>TXT_KEY_EVENT_BARB_EMERGE_CIVILIZATION_DTESH</Tag>
 		<English>Rumors say that a dark and terrible force is brewing in a distant land. Tribes of orcs and lizardmen have been disappeared as sightings of undead begin to rise.</English>
 		<French>Rumors say that a dark and terrible force is brewing in a distant land. Tribes of orcs and lizardmen have been disappeared as sightings of undead begin to rise.</French>
 		<German>Rumors say that a dark and terrible force is brewing in a distant land. Tribes of orcs and lizardmen have been disappeared as sightings of undead begin to rise.</German>
@@ -90,7 +98,7 @@
 		<Spanish>Rumors say that a dark and terrible force is brewing in a distant land. Tribes of orcs and lizardmen have been disappeared as sightings of undead begin to rise.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_BARB_EMERGE_SHEAIM</Tag>
+		<Tag>TXT_KEY_EVENT_BARB_EMERGE_CIVILIZATION_SHEAIM</Tag>
 		<English>Rumors say that an apocalypse cult led by an immortal has taken root among the savages. Their numbers grow as outcasts and rogue mages flock to them.</English>
 		<French>Rumors say that an apocalypse cult led by an immortal has taken root among the savages. Their numbers grow as outcasts and rogue mages flock to them.</French>
 		<German>Rumors say that an apocalypse cult led by an immortal has taken root among the savages. Their numbers grow as outcasts and rogue mages flock to them.</German>
@@ -98,7 +106,7 @@
 		<Spanish>Rumors say that an apocalypse cult led by an immortal has taken root among the savages. Their numbers grow as outcasts and rogue mages flock to them.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_BARB_EMERGE_CALABIM</Tag>
+		<Tag>TXT_KEY_EVENT_BARB_EMERGE_CIVILIZATION_CALABIM</Tag>
 		<English>Rumors say that several tribes of orcs and lizardmen have been enslaved by their captives overnight. Their guards and chieftans were found drained of blood, and now the survivors are being forced to build castles and palaces for their new masters.</English>
 		<French>Rumors say that several tribes of orcs and lizardmen have been enslaved by their captives overnight. Their guards and chieftans were found drained of blood, and now the survivors are being forced to build castles and palaces for their new masters.</French>
 		<German>Rumors say that several tribes of orcs and lizardmen have been enslaved by their captives overnight. Their guards and chieftans were found drained of blood, and now the survivors are being forced to build castles and palaces for their new masters.</German>
@@ -106,7 +114,7 @@
 		<Spanish>Rumors say that several tribes of orcs and lizardmen have been enslaved by their captives overnight. Their guards and chieftans were found drained of blood, and now the survivors are being forced to build castles and palaces for their new masters.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_BARB_EMERGE_ILLIAN</Tag>
+		<Tag>TXT_KEY_EVENT_BARB_EMERGE_CIVILIZATION_ILLIANS</Tag>
 		<English>Rumors say that a mysterious figure has rallied the wild men of the frigid tundra, uniting their scattered tribes with the promise of godhood.</English>
 		<French>Rumors say that a mysterious figure has rallied the wild men of the frigid tundra, uniting their scattered tribes with the promise of godhood.</French>
 		<German>Rumors say that a mysterious figure has rallied the wild men of the frigid tundra, uniting their scattered tribes with the promise of godhood.</German>
@@ -114,12 +122,36 @@
 		<Spanish>Rumors say that a mysterious figure has rallied the wild men of the frigid tundra, uniting their scattered tribes with the promise of godhood.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_BARB_EMERGE_BALSERAPH</Tag>
+		<Tag>TXT_KEY_EVENT_BARB_EMERGE_CIVILIZATION_CHISLEV</Tag>
+		<English>Rumors say that several tribes of men united against the orcs, goblins, and lizardmen, forming their own nation in the brutal wildlands.</English>
+		<French>Rumors say that several tribes of men united against the orcs, goblins, and lizardmen, forming their own nation in the brutal wildlands.</French>
+		<German>Rumors say that several tribes of men united against the orcs, goblins, and lizardmen, forming their own nation in the brutal wildlands.</German>
+		<Italian>Rumors say that several tribes of men united against the orcs, goblins, and lizardmen, forming their own nation in the brutal wildlands.</Italian>
+		<Spanish>Rumors say that several tribes of men united against the orcs, goblins, and lizardmen, forming their own nation in the brutal wildlands.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_BARB_EMERGE_CIVILIZATION_BALSERAPHS</Tag>
 		<English>Rumors say that the savage tribes of the wildlands have become enraptured by a traveling circus. Warlords and chieftans kneel before a mad jester king, omly to be betrayed and killed by their laughing tribesmen.</English>
 		<French>Rumors say that the savage tribes of the wildlands have become enraptured by a traveling circus. Warlords and chieftans kneel before a mad jester king, omly to be betrayed and killed by their laughing tribesmen.</French>
 		<German>Rumors say that the savage tribes of the wildlands have become enraptured by a traveling circus. Warlords and chieftans kneel before a mad jester king, omly to be betrayed and killed by their laughing tribesmen.</German>
 		<Italian>Rumors say that the savage tribes of the wildlands have become enraptured by a traveling circus. Warlords and chieftans kneel before a mad jester king, omly to be betrayed and killed by their laughing tribesmen.</Italian>
 		<Spanish>Rumors say that the savage tribes of the wildlands have become enraptured by a traveling circus. Warlords and chieftans kneel before a mad jester king, omly to be betrayed and killed by their laughing tribesmen.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_BARB_EMERGE_CIVILIZATION_DREAM_AIFONS</Tag>
+		<English>Rumors say that a strange curse has been cast upon the orcs and goblins of a distant land. Their villages have vanished, replaced by a dazzling city that seems untethered to this reality.</English>
+		<French>Rumors say that a strange curse has been cast upon the orcs and goblins of a distant land. Their villages have vanished, replaced by a dazzling city that seems untethered to this reality.</French>
+		<German>Rumors say that a strange curse has been cast upon the orcs and goblins of a distant land. Their villages have vanished, replaced by a dazzling city that seems untethered to this reality.</German>
+		<Italian>Rumors say that a strange curse has been cast upon the orcs and goblins of a distant land. Their villages have vanished, replaced by a dazzling city that seems untethered to this reality.</Italian>
+		<Spanish>Rumors say that a strange curse has been cast upon the orcs and goblins of a distant land. Their villages have vanished, replaced by a dazzling city that seems untethered to this reality.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_BARB_EMERGE_CIVILIZATION_AOSNISIRA</Tag>
+		<English>Rumors say that the local wildlife has turned against the tribes of a distant land. Their attacks are relentless yet calculated in a way that suggests an uncanny degree of intelligence.</English>
+		<French>Rumors say that the local wildlife has turned against the tribes of a distant land. Their attacks are relentless yet calculated in a way that suggests an uncanny degree of intelligence.</French>
+		<German>Rumors say that the local wildlife has turned against the tribes of a distant land. Their attacks are relentless yet calculated in a way that suggests an uncanny degree of intelligence.</German>
+		<Italian>Rumors say that the local wildlife has turned against the tribes of a distant land. Their attacks are relentless yet calculated in a way that suggests an uncanny degree of intelligence.</Italian>
+		<Spanish>Rumors say that the local wildlife has turned against the tribes of a distant land. Their attacks are relentless yet calculated in a way that suggests an uncanny degree of intelligence.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MODULE_BARBS2CIVS</Tag>

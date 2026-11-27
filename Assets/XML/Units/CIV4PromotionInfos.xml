@@ -43680,6 +43680,17 @@
 			<iWithdrawalChange>20</iWithdrawalChange>
 			<iNoBadExplore>20</iNoBadExplore>
 		</PromotionInfo>
+		<PromotionInfo>		<!-- Auxhound Companion -->
+			<Type>PROMOTION_AUXHOUND_COMPANION</Type>
+			<Description>TXT_KEY_PROMOTION_AUXHOUND_COMPANION</Description>
+			<iSlaveGenerationChance>2</iSlaveGenerationChance>
+			<CaptureUnitClass>EQUIPMENTCLASS_TREASURE</CaptureUnitClass>
+			<Button>Art/Interface/Buttons/Units/Auxhound.dds</Button>
+			<ExtraArtType>ART_DEF_UNIT_AUXHOUND</ExtraArtType>
+			<iAsset>10</iAsset>
+			<bCompanion>1</bCompanion>
+			<bNoXP>1</bNoXP>
+		</PromotionInfo>
 		<PromotionInfo>		<!-- Swan Form -->
 			<Type>PROMOTION_SWAN_FORM</Type>
 			<Description>TXT_KEY_PROMOTION_SWAN_FORM</Description>
@@ -46926,6 +46937,14 @@
 				</UnitCombat>
 			</UnitCombats>
 			<Button>Art/Interface/Buttons/Promotions/SeraphimBinding.dds</Button>
+			<iMinLevel>-1</iMinLevel>
+		</PromotionInfo>
+		<PromotionInfo>		<!-- Treasure Nose -->
+			<Type>PROMOTION_TREASURE_NOSE</Type>
+			<Description>TXT_KEY_PROMOTION_TREASURE_NOSE</Description>
+			<iSlaveGenerationChance>2</iSlaveGenerationChance>
+			<CaptureUnitClass>EQUIPMENTCLASS_TREASURE</CaptureUnitClass>
+			<Button>Art/Interface/Buttons/Equipment/Treasure.dds</Button>
 			<iMinLevel>-1</iMinLevel>
 		</PromotionInfo>
 	</PromotionInfos>

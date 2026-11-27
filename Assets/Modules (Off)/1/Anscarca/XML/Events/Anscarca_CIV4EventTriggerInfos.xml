@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Event Trigger Infos -->
+<Civ4EventTriggerInfos xmlns="x-schema:Anscarca_CIV4EventSchema.xml">
+	<EventTriggerInfos>
+		<EventTriggerInfo>
+			<Type>EVENTTRIGGER_GOVERNOR_ASSASSINATION</Type>
+			<PythonCanDo>cannotTriggerDteshAnscarca</PythonCanDo>
+		</EventTriggerInfo>
+		<EventTriggerInfo>
+			<Type>EVENTTRIGGER_MURDERED_WIFE</Type>
+			<PythonCanDo>cannotTriggerDteshInfernalAnscarca</PythonCanDo>
+		</EventTriggerInfo>
+		<EventTriggerInfo>
+			<Type>EVENTTRIGGER_RANSOM</Type>
+			<PythonCanDo>cannotTriggerDteshAnscarca</PythonCanDo>
+		</EventTriggerInfo>
+		<EventTriggerInfo>
+			<Type>EVENTTRIGGER_WEREWOLF</Type>
+			<PythonCanDo>cannotTriggerDteshInfernalAnscarca</PythonCanDo>
+		</EventTriggerInfo>
+		<EventTriggerInfo>
+			<Type>EVENTTRIGGER_SICKNESS</Type>
+			<Events>
+				<Event>EVENT_SICKNESS_ANSCARCA</Event>
+			</Events>
+		</EventTriggerInfo>
+		<EventTriggerInfo>
+			<Type>EVENTTRIGGER_STRANGE_ADVISOR</Type>
+			<Events>
+				<Event>EVENT_STRANGE_ADVISOR_ANSCARCA</Event>
+			</Events>
+		</EventTriggerInfo>
+		<EventTriggerInfo>
+			<Type>EVENTTRIGGER_SWITCH_CIVS</Type>
+			<PythonCanDo>canTriggerSwitchCivsAnscarca</PythonCanDo>
+		</EventTriggerInfo>
+		<EventTriggerInfo>
+			<Type>EVENTTRIGGER_TOWER_SHIELD</Type>
+			<PythonCanDo>cannotTriggerAnscarca</PythonCanDo>
+		</EventTriggerInfo>
+		<EventTriggerInfo>
+			<Type>EVENTTRIGGER_TRAITOR</Type>
+			<PythonCanDo>cannotTriggerDteshAnscarca</PythonCanDo>
+		</EventTriggerInfo>
+		<EventTriggerInfo>
+			<Type>EVENTTRIGGER_DUNGEON</Type>
+			<Events>
+				<Event>EVENT_DUNGEON_ANSCARCA</Event>
+			</Events>
+		</EventTriggerInfo>
+		<EventTriggerInfo>
+			<Type>EVENTTRIGGER_FOOD_SICKNESS</Type>
+			<bForceOverwrite>1</bForceOverwrite> <!-- Pushing the event logic into the events -->
+			<TriggerTexts>
+				<TriggerText>
+					<Text>TXT_KEY_EVENT_FOOD_SICKNESS</Text>
+					<Era>NONE</Era>
+				</TriggerText>
+			</TriggerTexts>
+			<iPercentGamesActive>100</iPercentGamesActive>
+			<iWeight>40</iWeight>
+			<iMaxOurLandmass>-1</iMaxOurLandmass>
+			<iNumUnits>1</iNumUnits>
+			<iUnitDistanceWeight>1</iUnitDistanceWeight>
+			<iPlotType>-1</iPlotType>
+			<!-- last Event option not working in testing. Need to figure out what's wrong -->
+			<Events>
+				<Event>EVENT_FOOD_SICKNESS_CONTINUE</Event>
+				<Event>EVENT_FOOD_SICKNESS_DETOX_ANSCARCA</Event>
+				<Event>EVENT_FOOD_SICKNESS_RESEARCH_ANSCARCA</Event> 
+			</Events>
+			<bRecurring>1</bRecurring>
+			<bShowPlot>1</bShowPlot>
+			<PythonCanDo>canTriggerFoodSicknessUnitReplace</PythonCanDo>
+		</EventTriggerInfo>
+		<EventTriggerInfo>
+			<Type>EVENTTRIGGER_COUNTERFEIT</Type>
+			<PythonCanDo>cannotTriggerAnscarca</PythonCanDo>
+		</EventTriggerInfo>
+
+
+
+
+	</EventTriggerInfos>
+</Civ4EventTriggerInfos>

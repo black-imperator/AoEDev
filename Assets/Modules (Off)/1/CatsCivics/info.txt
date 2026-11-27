@@ -4,7 +4,7 @@
 ;User-readable name of the module, please keep the folder name and module name
 ;starting with the same letter(s) to help avoid load sequencing issues.
 [name]
-Cats Civics
+CatsCivics
 
 ;This is you!
 [author]
@@ -35,11 +35,12 @@ Mech
 ;This isn't needed if you're ADDING something based on the other mod, but only if you want to overwrite with higher priority than the other mod.
 ;Refer to the exact folder name of that module, NOT the [name] field!
 [dependency-soft]
-Dao, DrackAosNiSira, DrackNamko, DrackTeuhaliOrder, Dural, Frozen, Goblin, Hamstalfar, Jotnar, kcz_Woods, ViciousSeas
+Dao, DrackAosNiSira, DrackNamko, DrackTeuhaliOrder, Dural, Frozen, Goblin, Hamstalfar, Jotnar, kcz_Woods
 
 ;List any modules you require as a HARD dependency here.
 ;Refer to the exact folder name of that module, NOT the [name] field!
 [dependency-hard]
+ViciousSeas, ElfnDeath 
 
 ;If this module should NOT be run alongside another (e.g. you both overhaul the same leader)
 ;As dependency, use the exact folder name of that module, NOT the [name] field!
@@ -49,11 +50,10 @@ VCivics, CatsCivicsLite
 ;This shows up as a tooltip when the user mouses over it in the launcher.
 ;Please keep it as short as possible, ideally even shorter than this line here.
 [shortdesc]
-Reworks most civics with a focus on adventure and strong themes to build around
+Reworks most civics with a focus on impact, immersion and new subsystems to build around
 
 ;Longer description to tell how awesome your stuff is.
 [desc]
-INCOMPATIBLE WITH VCIVICS OR CATCIVICS LITE.
 Hi ^^, thanks for checking.
 |
 First things first, this module started from my desire to "balance" Vcivics but it morphed into this .. As such design was focused around how I like to play. If you want my intended experience I would suggest turning on:

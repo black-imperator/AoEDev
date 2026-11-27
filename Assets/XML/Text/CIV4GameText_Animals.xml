@@ -254,6 +254,62 @@
 		<Spanish>Wolves occasionally grow into wolf packs. Wolf Packs can spawn new wolves that split off and hunt on their own, making them mobile monster lairs.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_WINTER_WOLF</Tag>
+		<English>Winter Wolf Pack</English>
+		<French>Winter Wolf Pack</French>
+		<German>Winter Wolf Pack</German>
+		<Italian>Winter Wolf Pack</Italian>
+		<Spanish>Winter Wolf Pack</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_WINTER_WOLF_PEDIA</Tag>
+		<English>When Mulcarn ushered the Age of Ice onto Erebus the Doviello pledged their allegiance to him. The Doviello lived as one with wolf packs and Mulcarn transformed their wolves to be able to survive the eternal winter. </English>
+		<French>When Mulcarn ushered the Age of Ice onto Erebus the Doviello pledged their allegiance to him. The Doviello lived as one with wolf packs and Mulcarn transformed their wolves to be able to survive the eternal winter. </French>
+		<German>When Mulcarn ushered the Age of Ice onto Erebus the Doviello pledged their allegiance to him. The Doviello lived as one with wolf packs and Mulcarn transformed their wolves to be able to survive the eternal winter. </German>
+		<Italian>When Mulcarn ushered the Age of Ice onto Erebus the Doviello pledged their allegiance to him. The Doviello lived as one with wolf packs and Mulcarn transformed their wolves to be able to survive the eternal winter. </Italian>
+		<Spanish>When Mulcarn ushered the Age of Ice onto Erebus the Doviello pledged their allegiance to him. The Doviello lived as one with wolf packs and Mulcarn transformed their wolves to be able to survive the eternal winter. </Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_AUXHOUND</Tag>
+		<English>Auxhounds</English>
+		<French>Auxhounds</French>
+		<German>Auxhounds</German>
+		<Italian>Auxhounds</Italian>
+		<Spanish>Auxhounds</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_AUXHOUND_PEDIA</Tag>
+		<English>These dogs resemble thin grey hounds with a long anteater-like snout. They can sniff out treasure of all sorts and are greatly prized by adventurers and thieves.</English>
+		<French>These dogs resemble thin grey hounds with a long anteater-like snout. They can sniff out treasure of all sorts and are greatly prized by adventurers and thieves.</French>
+		<German>These dogs resemble thin grey hounds with a long anteater-like snout. They can sniff out treasure of all sorts and are greatly prized by adventurers and thieves.</German>
+		<Italian>These dogs resemble thin grey hounds with a long anteater-like snout. They can sniff out treasure of all sorts and are greatly prized by adventurers and thieves.</Italian>
+		<Spanish>These dogs resemble thin grey hounds with a long anteater-like snout. They can sniff out treasure of all sorts and are greatly prized by adventurers and thieves.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_AUXHOUND_STRATEGY</Tag>
+		<English>An Auxhound is able to sniff out treasure in even the most unlikely of places, use it when landing the killing blow to try and find some goodies!</English>
+		<French>An Auxhound is able to sniff out treasure in even the most unlikely of places, use it when landing the killing blow to try and find some goodies!</French>
+		<German>An Auxhound is able to sniff out treasure in even the most unlikely of places, use it when landing the killing blow to try and find some goodies!</German>
+		<Italian>An Auxhound is able to sniff out treasure in even the most unlikely of places, use it when landing the killing blow to try and find some goodies!</Italian>
+		<Spanish>An Auxhound is able to sniff out treasure in even the most unlikely of places, use it when landing the killing blow to try and find some goodies!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_TREASURE_NOSE</Tag>
+		<English>Treasure Nose</English>
+		<French>Treasure Nose</French>
+		<German>Treasure Nose</German>
+		<Italian>Treasure Nose</Italian>
+		<Spanish>Treasure Nose</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_AUXHOUND_COMPANION</Tag>
+		<English>Auxhound Companion</English>
+		<French>Auxhound Companion</French>
+		<German>Auxhound Companion</German>
+		<Italian>Auxhound Companion</Italian>
+		<Spanish>Auxhound Companion</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_LION_PRIDE</Tag>
 		<English>Lion Pride</English>
 		<French>

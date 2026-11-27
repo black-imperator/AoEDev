@@ -4585,7 +4585,7 @@
 			<iCost>600</iCost>
 			<iAsset>2</iAsset>
 			<fVisibilityPriority>100</fVisibilityPriority>
-			<FreePromotion>PROMOTION_DEATH1</FreePromotion>
+			<FreePromotion>PROMOTION_FINALITY1</FreePromotion>
 			<iMaintenanceModifier>-25</iMaintenanceModifier>
 			<iWarWearinessModifier>-20</iWarWearinessModifier>
 			<CommerceChanges>

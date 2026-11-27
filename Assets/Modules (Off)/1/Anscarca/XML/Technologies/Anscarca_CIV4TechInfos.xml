@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Tech Infos -->
+<Civ4TechInfos xmlns="x-schema:Anscarca_CIV4TechnologiesSchema.xml">
+	<TechInfos>
+		<TechInfo>
+			<Type>TECH_DARK_SECRETS</Type>
+			<TerrainTrades>
+				<TerrainTrade>
+					<TerrainType>TERRAIN_WASTELAND</TerrainType>
+					<bTerrainTrade>1</bTerrainTrade>
+				</TerrainTrade>
+			</TerrainTrades>
+		</TechInfo>
+	</TechInfos>
+</Civ4TechInfos>

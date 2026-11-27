@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Soren Johnson (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Project -->
+<Civ4ProjectInfo xmlns="x-schema:Anscarca_CIV4GameInfoSchema.xml">
+	<ProjectInfos>
+		<ProjectInfo>
+			<Type>PROJECT_GENE_OPTIMIZATION_ANSCARCA</Type>
+			<Description>TXT_KEY_PROJECT_GENE_OPTIMIZATION_ANSCARCA</Description>
+			<Civilopedia>TXT_KEY_PROJECT_GENE_OPTIMIZATION_ANSCARCA_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_PROJECT_GENE_OPTIMIZATION_ANSCARCA_STRATEGY</Strategy>
+			<iCost>1000</iCost>
+			<PrereqCivilizations>
+				<PrereqCivilization>CIVILIZATION_ANSCARCA</PrereqCivilization>
+			</PrereqCivilizations>
+			<Button>Art/Interface/Buttons/Projects/Natures Revolt.dds</Button>
+			<iModifyGlobalCounter>10</iModifyGlobalCounter>
+		</ProjectInfo>
+	</ProjectInfos>
+</Civ4ProjectInfo>
