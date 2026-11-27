@@ -16,8 +16,9 @@
 			<DefaultPlayerColor>PLAYERCOLOR_DURAL</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_DURAL</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_CIVILIZED</ArtStyleType>
+			<Image>Modules/1/Anscarca/Art/Interface/Popups/AnscarcaBanner1.dds</Image>
 			<bPlayable>1</bPlayable>
-			<bAIPlayable>0</bAIPlayable>
+			<bAIPlayable>1</bAIPlayable>
 			<bNoCrimeCiv>1</bNoCrimeCiv>
 			<Cities>
 				<City>GroundZero</City>
@@ -220,12 +221,88 @@
 					<BuildingClassType>BUILDINGCLASS_COMMAND_POST</BuildingClassType>
 					<BuildingType>BUILDING_COMMAND_POST_ANSCARCA</BuildingType>
 				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_MAGE_GUILD</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_ARCHERY_RANGE</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_FLETCHER</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_THIEVES_DEN</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_THIEVES_GUILD</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_DUNGEON</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_ALMSHOUSE</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_STABLE</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_WELL</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_FOREMANS_OFFICE</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_BOWYER</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_SHIPYARD</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_THEATRE</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_HIPPODROME</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_GUILD_OF_THE_NINE</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PILLAR_OF_CHAINS</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_GARRISON_QUARTERS</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_ARTISANS_WORKSHOP</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_CARNIVAL</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
 			</Buildings>
 			<Units>
-				<Unit>
-					<UnitClassType>UNITCLASS_SLAVE</UnitClassType>
-					<UnitType>UNIT_SLAVE_ANSCARCA</UnitType>
-				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_WORKER</UnitClassType>
 					<UnitType>UNIT_GROWTH_ANSCARCA</UnitType>
@@ -645,6 +722,10 @@
 					<SpecialistType>SPECIALIST_HEALER_ANSCARCA</SpecialistType>
 				</Specialist>
 				<Specialist>
+					<SpecialistClassType>SPECIALISTCLASS_CITIZEN</SpecialistClassType>
+					<SpecialistType>SPECIALIST_CITIZEN_ANSCARCA</SpecialistType>
+				</Specialist>
+				<Specialist>
 					<SpecialistClassType>SPECIALISTCLASS_ENGINEER</SpecialistClassType>
 					<SpecialistType>NONE</SpecialistType>
 				</Specialist>
@@ -675,8 +756,20 @@
 					<ImprovementType>IMPROVEMENT_NODE_ANSCARCA</ImprovementType>
 				</Improvement>
 				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_CASTLE</ImprovementClassType>
+					<ImprovementType>IMPROVEMENT_SPIKE_ANSCARCA</ImprovementType>
+				</Improvement>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_CITADEL</ImprovementClassType>
+					<ImprovementType>IMPROVEMENT_SPIRE_ANSCARCA</ImprovementType>
+				</Improvement>
+				<Improvement>
+					<ImprovementClassType>IMPROVEMENTCLASS_GREATER_SPIRE_ANSCARCA</ImprovementClassType>
+					<ImprovementType>IMPROVEMENT_GREATER_SPIRE_ANSCARCA</ImprovementType>
+				</Improvement>
+				<Improvement>
 					<ImprovementClassType>IMPROVEMENTCLASS_FISHING_BOATS</ImprovementClassType>
-					<ImprovementType>NONE</ImprovementType>
+					<ImprovementType>IMPROVEMENT_CAMP_ANSCARCA_OCEAN</ImprovementType>
 				</Improvement>
 				<Improvement>
 					<ImprovementClassType>IMPROVEMENTCLASS_CAMP</ImprovementClassType>
@@ -684,10 +777,6 @@
 				</Improvement>
 				<Improvement>
 					<ImprovementClassType>IMPROVEMENTCLASS_WORKSHOP</ImprovementClassType>
-					<ImprovementType>NONE</ImprovementType>
-				</Improvement>
-				<Improvement>
-					<ImprovementClassType>IMPROVEMENTCLASS_FISHING_BOATS</ImprovementClassType>
 					<ImprovementType>NONE</ImprovementType>
 				</Improvement>
 				<Improvement>
@@ -700,7 +789,7 @@
 				</Improvement>
 				<Improvement>
 					<ImprovementClassType>IMPROVEMENTCLASS_MINE</ImprovementClassType>
-					<ImprovementType>IMPROVEMENT_BORE</ImprovementType>
+					<ImprovementType>NONE</ImprovementType>
 				</Improvement>
 				<Improvement>
 					<ImprovementClassType>IMPROVEMENTCLASS_WINDMILL</ImprovementClassType>
@@ -810,11 +899,11 @@
 			<FreeUnitClasses>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
-					<iFreeUnits>2</iFreeUnits>
+					<iFreeUnits>1</iFreeUnits>
 				</FreeUnitClass>
 				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_LURKER</UnitClassType>
-					<iFreeUnits>1</iFreeUnits>
+					<UnitClassType>UNITCLASS_WARRIOR</UnitClassType>
+					<iFreeUnits>2</iFreeUnits>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_WHISPER</UnitClassType>
@@ -879,6 +968,7 @@
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
 			</Leaders>
+			<CivTrait>TRAIT_CIV_ANSCARCA</CivTrait>
 			<DerivativeCiv>NONE</DerivativeCiv>
 			<CivilizationSelectionSound>AS3D_PERSIA_SELECT</CivilizationSelectionSound>
 			<CivilizationActionSound>AS3D_PERSIA_ORDER</CivilizationActionSound>
@@ -947,7 +1037,7 @@
 				<TerrainYieldChange>
 					<TerrainType>TERRAIN_WASTELAND</TerrainType>
 					<TerrainYields>
-						<iYield>0</iYield>
+						<iYield>1</iYield>
 						<iYield>1</iYield>
 						<iYield>-9</iYield>
 					</TerrainYields>

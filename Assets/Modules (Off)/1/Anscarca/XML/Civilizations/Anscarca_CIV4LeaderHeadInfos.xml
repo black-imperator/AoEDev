@@ -88,7 +88,7 @@
 			<VassalRefuseAttitudeThreshold>ATTITUDE_PLEASED</VassalRefuseAttitudeThreshold>
 			<iVassalPowerModifier>30</iVassalPowerModifier>
 			<iFreedomAppreciation>10</iFreedomAppreciation>
-			<FavoriteCivic>CIVIC_LIBERTY</FavoriteCivic>
+			<FavoriteCivic>CIVIC_MILITARY_STATE</FavoriteCivic>
 			<Traits>
 				<Trait>
 					<TraitType>TRAIT_AGGRESSIVE</TraitType>
@@ -694,12 +694,6 @@
 			<iVassalPowerModifier>30</iVassalPowerModifier>
 			<iFreedomAppreciation>10</iFreedomAppreciation>
 			<FavoriteCivic>CIVIC_LIBERTY</FavoriteCivic>
-			<Traits>
-				<Trait>
-					<TraitType>TRAIT_ADAPTIVE</TraitType>
-					<bTrait>1</bTrait>
-				</Trait>
-			</Traits>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GROWTH</FlavorType>

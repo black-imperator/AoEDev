@@ -394,10 +394,10 @@ def canTriggerBarbMekaraEmerge(lBarbCities):
 				pPlayer = gc.getPlayer(gc.getInfoTypeForString('CIVILIZATION_AMURITES'))
 				iTeam = pPlayer.getTeam()
 				pPlot = pCity.plot()
-				if ppPlot.isRevealed(iTeam, False):
+				if pPlot.isRevealed(iTeam, False):
 					lEligibleCandidateCities.append(pCity)
 					continue
-				elif pcity.getPopulation() >= 5:
+				elif pCity.getPopulation() >= 5:
 					lEligibleCandidateCities.append(pCity)
 
 		if lEligibleCandidateCities:
@@ -444,6 +444,8 @@ def doBarbDteshEmerge(lBarbCities):
 	sCiv = 'CIVILIZATION_DTESH'
 	sLeader = 'LEADER_DTESH'
 
+	doCityBarbConvert(sCiv, sLeader, lBarbCities)
+
 ##LANUN - requires Sailing and that the barb city is on the coast, and before Taxation
 def canTriggerBarbLanunEmerge(lBarbCities):
 	if lBarbCities:
@@ -465,7 +467,7 @@ def canTriggerBarbLanunEmerge(lBarbCities):
 			doBarbLanunEmerge(lEligibleCandidateCities)
 			return True
 
-	return True
+	return False
 
 def doBarbLanunEmerge(lBarbCities):
 	sCiv = 'CIVILIZATION_LANUN'
@@ -476,6 +478,8 @@ def doBarbLanunEmerge(lBarbCities):
 
 	if CyGame().getGlobalCounter() >= 20:
 		sLeader = 'LEADER_BLACKHEART'
+
+	doCityBarbConvert(sCiv, sLeader, lBarbCities)
 
 ##ARCHOS - requires animal husbandry and Forest and before Iron Working
 def canTriggerBarbArchosEmerge(lBarbCities):
@@ -564,7 +568,7 @@ def canTriggerBarbCalabimEmerge(lBarbCities):
 
 		lEligibleCandidateCities = []
 		for pCity in lBarbCities:
-			if not pCity.isNone() and pCity.getPopulation >= 5:
+			if not pCity.isNone() and pCity.getPopulation() >= 5:
 				lEligibleCandidateCities.append(pCity)
 
 		if lEligibleCandidateCities:
@@ -820,7 +824,6 @@ def canTriggerBarbAosEmerge(lBarbCities):
 
 		lEligibleCandidateCities = []
 		iForest = gc.getInfoTypeForString("FEATURE_FOREST")
-		lEligibleCandidateCities = []
 		for pCity in lBarbCities:
 			if not pCity.isNone():
 				pPlot = pCity.plot()

@@ -11,11 +11,17 @@
 			<Button>Art/Civs/Jotnar/buttons/jot_traditions.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<bOverflowProduction>1</bOverflowProduction>
+			<bNoForeignTrade>1</bNoForeignTrade>
 			<TradeYieldModifiers>
-				<iYield>15</iYield>
-				<iYield>10</iYield>
+				<iYield>0</iYield>
+				<iYield>0</iYield>
 				<iYield>-500</iYield>
 			</TradeYieldModifiers>
+			<TradeCommerceModifiers>
+				<iCommerce>0</iCommerce>
+				<iCommerce>100</iCommerce>
+				<iCommerce>0</iCommerce>
+			</TradeCommerceModifiers>
 			<CommerceModifiers>
 				<iYield>-500</iYield>
 				<iYield>0</iYield>

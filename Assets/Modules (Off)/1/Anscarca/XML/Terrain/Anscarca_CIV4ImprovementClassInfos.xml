@@ -6,12 +6,12 @@
 <!-- Improvement Class Infos -->
 <Civ4ImprovementClassInfos xmlns="x-schema:Anscarca_CIV4TerrainSchema.xml">
 	<ImprovementClassInfos>
-		<ImprovementClassInfo><!-- Camp-->
+		<!--<ImprovementClassInfo><!{1}** Camp**{1}>
 			<Type>IMPROVEMENTCLASS_CAMP_ANSCARCA</Type>
 			<Description></Description>
 			<bUnique>0</bUnique>
 			<DefaultImprovement>IMPROVEMENT_CAMP_ANSCARCA</DefaultImprovement>
-		</ImprovementClassInfo>
+		</ImprovementClassInfo>-->
 		<ImprovementClassInfo><!-- Farm-->
 			<Type>IMPROVEMENTCLASS_FARM_ANSCARCA</Type>
 			<Description></Description>
@@ -29,25 +29,25 @@
 			<Description></Description>
 			<bUnique>0</bUnique>
 			<DefaultImprovement>IMPROVEMENT_REAPER_ANSCARCA</DefaultImprovement>
-		</ImprovementClassInfo>
-		<ImprovementClassInfo><!-- Bore-->
+		</ImprovementClassInfo><!--
+		<ImprovementClassInfo><!{1}** Bore**{1}>
 			<Type>IMPROVEMENTCLASS_BORE</Type>
 			<Description></Description>
 			<bUnique>0</bUnique>
 			<DefaultImprovement>IMPROVEMENT_BORE</DefaultImprovement>
 		</ImprovementClassInfo>
-		<ImprovementClassInfo><!-- Siphon-->
+		<ImprovementClassInfo><!{1}** Siphon**{1}>
 			<Type>IMPROVEMENTCLASS_SIPHON_ANSCARCA</Type>
 			<Description></Description>
 			<bUnique>0</bUnique>
 			<DefaultImprovement>IMPROVEMENT_SIPHON_ANSCARCA</DefaultImprovement>
 		</ImprovementClassInfo>
-		<ImprovementClassInfo><!-- Extractor-->
+		<ImprovementClassInfo><!{1}** Extractor**{1}>
 			<Type>IMPROVEMENTCLASS_EXTRACTOR</Type>
 			<Description></Description>
 			<bUnique>0</bUnique>
 			<DefaultImprovement>IMPROVEMENT_EXTRACTOR</DefaultImprovement>
-		</ImprovementClassInfo>
+		</ImprovementClassInfo>-->
 		<ImprovementClassInfo><!-- Node-->
 			<Type>IMPROVEMENTCLASS_NODE_ANSCARCA</Type>
 			<Description></Description>
@@ -71,6 +71,24 @@
 			<Description></Description>
 			<bUnique>0</bUnique>
 			<DefaultImprovement>IMPROVEMENT_GREATER_SPIRE_ANSCARCA</DefaultImprovement>
+		</ImprovementClassInfo>
+		<ImprovementClassInfo><!-- Ocean Farm-->
+			<Type>IMPROVEMENTCLASS_FARM_ANSCARCA_OCEAN</Type>
+			<Description></Description>
+			<bUnique>0</bUnique>
+			<DefaultImprovement>IMPROVEMENT_FARM_ANSCARCA_OCEAN</DefaultImprovement>
+		</ImprovementClassInfo>
+		<ImprovementClassInfo><!-- Ocean Harvester-->
+			<Type>IMPROVEMENTCLASS_HARVESTER_ANSCARCA_OCEAN</Type>
+			<Description></Description>
+			<bUnique>0</bUnique>
+			<DefaultImprovement>IMPROVEMENT_HARVESTER_ANSCARCA_OCEAN</DefaultImprovement>
+		</ImprovementClassInfo>
+		<ImprovementClassInfo><!-- Ocean Reaper-->
+			<Type>IMPROVEMENTCLASS_REAPER_ANSCARCA_OCEAN</Type>
+			<Description></Description>
+			<bUnique>0</bUnique>
+			<DefaultImprovement>IMPROVEMENT_REAPER_ANSCARCA_OCEAN</DefaultImprovement>
 		</ImprovementClassInfo>
 	</ImprovementClassInfos>
 </Civ4ImprovementClassInfos>

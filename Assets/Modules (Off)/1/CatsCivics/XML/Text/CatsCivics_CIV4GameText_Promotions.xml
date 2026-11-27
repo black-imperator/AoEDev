@@ -355,6 +355,25 @@
 		<Spanish>Student of the Waves</Spanish>
 	</TEXT>
 	
+	<!-- Labour Army Promotion -->
+	
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_LABOURARMY</Tag>
+		<English>Labour Army</English>
+		<French>Labour Army</French>
+		<German>Labour Army</German>
+		<Italian>Labour Army</Italian>
+		<Spanish>Labour Army</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_LABOURARMY_PEDIA</Tag>
+		<English>When states are run by the military the solution to any problem is most often the same. Send in the army. "Instead of lazing around in the barracks they should help out at the construction site". When the next war starts the consequences of such pragmatic policies are self evident.</English>
+		<French>When states are run by the military the solution to any problem is most often the same. Send in the army. "Instead of lazing around in the barracks they should help out at the construction site". When the next war starts the consequences of such pragmatic policies are self evident.</French>
+		<German>When states are run by the military the solution to any problem is most often the same. Send in the army. "Instead of lazing around in the barracks they should help out at the construction site". When the next war starts the consequences of such pragmatic policies are self evident.</German>
+		<Italian>When states are run by the military the solution to any problem is most often the same. Send in the army. "Instead of lazing around in the barracks they should help out at the construction site". When the next war starts the consequences of such pragmatic policies are self evident.</Italian>
+		<Spanish>When states are run by the military the solution to any problem is most often the same. Send in the army. "Instead of lazing around in the barracks they should help out at the construction site". When the next war starts the consequences of such pragmatic policies are self evident.</Spanish>
+	</TEXT>
+	
 	<!-- Nomadic Promotions -->
 					
 	<TEXT>

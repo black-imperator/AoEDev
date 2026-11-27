@@ -358,10 +358,11 @@
 		</PromotionInfo>
 		<PromotionInfo>		<!-- Overseer, for city/forts -->
 			<Type>PROMOTION_OVERSEER_ANSCARCA</Type>
-			<Description>TXT_KEY_PROMOTION_LEASH_0</Description>
+			<Description>TXT_KEY_PROMOTION_LEASH_0_ANSCARCA</Description>
 			<iLeashRange>0</iLeashRange>
 			<Button>Art/Interface/Buttons/Promotions/Civs/Mazatl/Warden.dds</Button>
 			<iMinLevel>-1</iMinLevel>
+			<iMovesChange>-1</iMovesChange>
 			<iResistMagic>20</iResistMagic>
 			<bGraphicalOnly>0</bGraphicalOnly>
 			<iVisibilityChange>3</iVisibilityChange>
@@ -732,7 +733,11 @@
 			</PrereqPromotionANDs>
 			<iExtraCombatStr>-3</iExtraCombatStr>
 			<iExtraCombatDefense>-3</iExtraCombatDefense>
+			<iCollateralExtraTargets>2</iCollateralExtraTargets>
+			<iCollateralLimitBoost>20</iCollateralLimitBoost>
+			<iCollateralDamageChange>10</iCollateralDamageChange>
 			<iAirCombat>5</iAirCombat>
+			<iAirCombatLimitBoost>50</iAirCombatLimitBoost>
 			<TechPrereq>TECH_BLASTING_POWDER</TechPrereq>
 			<UnitCombats>
 				<UnitCombat>

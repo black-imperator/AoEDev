@@ -16,18 +16,26 @@
 			<Civilopedia>TXT_KEY_UNIT_WORKER_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<bOnlyDefensive>1</bOnlyDefensive>
-			<iCost>25</iCost>
+			<iCost>35</iCost>
+			<bFood>1</bFood>
 			<iMoves>1</iMoves>
 			<iAsset>0</iAsset>
 			<iCombatDefense>1</iCombatDefense>
 			<iWorkRate>100</iWorkRate>
+			<iAIWeight>15</iAIWeight>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_WORKER</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
 			<Builds>
 				<Build>
 					<BuildType>BUILD_FARM_ANSCARCA</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
-					<BuildType>BUILD_MINE_ANSCARCA</BuildType>
+					<BuildType>BUILD_FISHING_BOATS</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -110,7 +118,7 @@
 			</DenyPromotions>
 			<iTier>1</iTier>
 		</UnitInfo>
-		<UnitInfo>        <!-- Slave -->
+<!--		<UnitInfo>        <!{1}** Slave **{1}>
 			<Class>UNITCLASS_SLAVE</Class>
 			<Type>UNIT_SLAVE_ANSCARCA</Type>
 			<Capture>UNITCLASS_SLAVE</Capture>
@@ -176,7 +184,7 @@
 				<Promotion>PROMOTION_SKILLED1</Promotion>
 			</DenyPromotions>
 			<iTier>1</iTier>
-		</UnitInfo>
+		</UnitInfo>-->
 		<UnitInfo>        <!-- Settler -->
 			<Class>UNITCLASS_SETTLER</Class>
 			<Type>UNIT_SETTLER_ANSCARCA</Type>
@@ -185,10 +193,10 @@
 			<Description>TXT_KEY_UNIT_SETTLER</Description>
 			<Civilopedia>TXT_KEY_UNIT_SETTLER_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_GROWTH</Advisor>
-			<!--<bMilitaryProduction>1</bMilitaryProduction>
-			<bFood>1</bFood>-->
+			<iAIWeight>15</iAIWeight>
 			<bOnlyDefensive>1</bOnlyDefensive>
 			<bFound>1</bFound>
+			<bFood>1</bFood>
 			<bIgnoreTerrainCost>1</bIgnoreTerrainCost>
 			<UnitAIs>
 				<UnitAI>
@@ -227,12 +235,12 @@
 				</TerrainPassableTech>
 			</TerrainPassableTechs>
 			<UnitMeshGroups>
-				<iGroupSize>1</iGroupSize>
-				<iMeleeWaveSize>1</iMeleeWaveSize>
-				<iRangedWaveSize>1</iRangedWaveSize>
+				<iGroupSize>3</iGroupSize>
+				<iMeleeWaveSize>3</iMeleeWaveSize>
+				<iRangedWaveSize>3</iRangedWaveSize>
 				<UnitMeshGroup>
-					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_WATER_ELEMENTAL</EarlyArtDefineTag>
+					<iRequired>3</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_SEVERED_SOUL</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FreePromotions>
@@ -257,17 +265,24 @@
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 			</FreePromotions>
+			
 			<iTier>1</iTier>
 		</UnitInfo>
 		<UnitInfo>		<!-- Whisper, Anscarca Hero -->
 			<Class>UNITCLASS_WHISPER</Class>
 			<Type>UNIT_WHISPER</Type>
 			<Combat>UNITCOMBAT_RECON</Combat>
-			<DefaultUnitAI>UNITAI_EXPLORE</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_WHISPER</Description>
 			<Civilopedia>TXT_KEY_UNIT_WHISPER_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_WHISPER_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_EXPLORE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
 			<iInvisibleLevel>3</iInvisibleLevel>
 			<bMilitaryProduction>1</bMilitaryProduction>
 			<iAIWeight>200</iAIWeight>
@@ -357,6 +372,10 @@
 					<UnitAIType>UNITAI_EXPLORE</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_ATTACK</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
 			</UnitAIs>
 			<NotUnitAIs>
 				<UnitAI>
@@ -441,7 +460,7 @@
 			<Class>UNITCLASS_ASSASSIN</Class>
 			<Type>UNIT_PLAGUE</Type>
 			<Combat>UNITCOMBAT_ROGUE</Combat>
-			<DefaultUnitAI>UNITAI_EXPLORE</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_PLAGUE</Description>
 			<Civilopedia>TXT_KEY_UNIT_PLAGUE_ANSCARCA_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_FEVER_STRATEGY</Strategy>
@@ -545,7 +564,7 @@
 			<Class>UNITCLASS_MONSTROSITY_ANSCARCA</Class>
 			<Type>UNIT_MONSTROSITY_ANSCARCA</Type>
 			<Combat>UNITCOMBAT_BEAST</Combat>
-			<DefaultUnitAI>UNITAI_CITY_DEFENSE</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_ATTACK_CITY</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_MONSTROSITY_ANSCARCA</Description>
 			<Civilopedia>TXT_KEY_UNIT_MONSTROSITY_ANSCARCA_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_MONSTROSITY_ANSCARCA_STRATEGY</Strategy>
@@ -560,7 +579,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 				<UnitAI>
-					<UnitAIType>UNITAI_PILLAGE</UnitAIType>
+					<UnitAIType>UNITAI_ATTACK_CITY</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
@@ -575,6 +594,7 @@
 				</ProductionTrait>
 			</ProductionTraits>
 			<iCost>3000</iCost>
+			<iPopCost>5</iPopCost>
 			<iMoves>1</iMoves>
 			<iCityAttack>20</iCityAttack>
 			<iCombat>18</iCombat>
@@ -650,6 +670,10 @@
 			<bPillage>1</bPillage>
 			<iCollateralDamageLimit>0</iCollateralDamageLimit>
 			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_CITY_DEFENSE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
 				<UnitAI>
 					<UnitAIType>UNITAI_ATTACK</UnitAIType>
 					<bUnitAI>1</bUnitAI>
@@ -728,7 +752,7 @@
 			<Class>UNITCLASS_LURKER</Class>
 			<Type>UNIT_LURKER</Type>
 			<Combat>UNITCOMBAT_MELEE</Combat>
-			<DefaultUnitAI>UNITAI_CITY_DEFENSE</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_LURKER</Description>
 			<Civilopedia>TXT_KEY_UNIT_LURKER_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_LURKER_STRATEGY</Strategy>
@@ -738,6 +762,10 @@
 			<bPillage>1</bPillage>
 			<iCollateralDamageLimit>0</iCollateralDamageLimit>
 			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_CITY_DEFENSE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
 				<UnitAI>
 					<UnitAIType>UNITAI_ATTACK</UnitAIType>
 					<bUnitAI>1</bUnitAI>
@@ -824,10 +852,14 @@
 			<Civilopedia>TXT_KEY_UNIT_OVERSEER_ANSCARCA_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_OVERSEER_ANSCARCA_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
+				<UnitAI>
+					<UnitAIType>UNITAI_ATTACK</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
 			<iExtraPerception>2</iExtraPerception>
 			<bNukeImmune>1</bNukeImmune>
 			<iCost>-1</iCost>
-			<iMoves>0</iMoves> <!-- No need for moves until getting ranged stacks -->
+			<iMoves>1</iMoves> <!-- No need for moves until getting ranged stacks -->
 			<iCombat>4</iCombat>
 			<UnitMeshGroups>
 				<iGroupSize>1</iGroupSize>
@@ -896,7 +928,7 @@
 			<iExtraPerception>2</iExtraPerception>
 			<bNukeImmune>1</bNukeImmune>
 			<iCost>-1</iCost>
-			<iMoves>0</iMoves> <!-- No need for moves until getting ranged stacks -->
+			<iMoves>1</iMoves> <!-- No need for moves until getting ranged stacks -->
 			<iCombat>4</iCombat>
 			<UnitMeshGroups>
 				<iGroupSize>1</iGroupSize>
@@ -998,87 +1030,7 @@
 			</NotUnitAIs>
 			<Builds>
 				<Build>
-					<BuildType>BUILD_MANA_CREATION</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_MANA_ICE</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_MANA_FORCE</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_MANA_DIMENSIONAL</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_MANA_AIR</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_MANA_BODY</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_MANA_CHAOS</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_MANA_DEATH</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_MANA_EARTH</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_MANA_ENCHANTMENT</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_MANA_ENTROPY</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_MANA_FIRE</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_MANA_LAW</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
 					<BuildType>BUILD_MANA_LIFE</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_MANA_METAMAGIC</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_MANA_MIND</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_MANA_NATURE</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_MANA_SPIRIT</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_MANA_WATER</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_MANA_SHADOW</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_MANA_SUN</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 			</Builds>

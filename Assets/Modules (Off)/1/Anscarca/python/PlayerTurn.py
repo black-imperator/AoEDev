@@ -105,11 +105,11 @@ def onUnitBuilt(self, argsList):
 	
 		iUnitType = pUnit.getUnitType()
 	
-		if iUnitType == gc.getInfoTypeForString("UNIT_MONSTROSITY_ANSCARCA"):
-			newPop = brutePromos(pCity, pUnit)
-			pCity.setPopulation(newPop)
-			pCity.setOccupationTimer(unrest)
-		elif iUnitType == gc.getInfoTypeForString("UNIT_LURKER"):
+#		if iUnitType == gc.getInfoTypeForString("UNIT_MONSTROSITY_ANSCARCA"):
+#			newPop = brutePromos(pCity, pUnit)
+#			pCity.setPopulation(newPop)
+#			pCity.setOccupationTimer(unrest)
+		if iUnitType == gc.getInfoTypeForString("UNIT_LURKER"):
 			lurkerPromos(pCity, pUnit)
 		elif iUnitType == gc.getInfoTypeForString("UNIT_SETTLER_ANSCARCA"):
 			newPop = pCity.getPopulation() - unrest
@@ -494,3 +494,12 @@ def religiousPromos(pReligion, pUnit, pCity):
 		for chance, promo in bloodlinePromos:
 			if randNum(1000, "ANSCARCA_BLOODLINE") < chance:
 				pUnit.setHasPromotion(gc.getInfoTypeForString(promo), True)
+
+
+def onCityAcquired(self, argsList):
+    iPreviousOwner, iNewOwner, pCity, bConquest, bTrade = argsList
+    pPlayer        = gc.getPlayer(iNewOwner)
+    iCiv        = pPlayer.getCivilizationType()
+    if iCiv == gc.getInfoTypeForString("CIVILIZATION_ANSCARCA"):
+        pPlayer.initUnit(gc.getInfoTypeForString("UNIT_OVERSEER_ANSCARCA_CORE"), pCity.getX(), pCity.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+	

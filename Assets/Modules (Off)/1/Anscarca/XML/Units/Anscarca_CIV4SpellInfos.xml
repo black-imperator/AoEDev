@@ -186,18 +186,17 @@
 			<bSacrificeCaster>1</bSacrificeCaster>
 			<Button>Art/Civs/Dtesh/OpalusMortis.dds</Button>
 		</SpellInfo>
-		<SpellInfo>			 <!--Create Overseer -->
+		<!--<SpellInfo>			 <!{1}**Create Overseer **{1}>
 			<Type>SPELL_MORPH_OVERSEER_ANSCARCA</Type>
 			<Description>TXT_KEY_MORPH_OVERSEER_ANSCARCA</Description>
 			<Civilopedia>TXT_KEY_SPELL_MORPH_OVERSEER_ANSCARCA_PEDIA</Civilopedia>
 			<Help>TXT_KEY_SPELL_MORPH_OVERSEER_ANSCARCA</Help>
-			<UnitPrereq>UNIT_GROWTH_ANSCARCA</UnitPrereq>
 			<CivilizationPrereq>CIVILIZATION_ANSCARCA</CivilizationPrereq>
-			<ConvertUnitType>UNIT_OVERSEER_ANSCARCA</ConvertUnitType>
+			<ConvertUnitType>UNIT_OVERSEER_ANSCARCA_CORE</ConvertUnitType>
 			<PyRequirement>reqCreateOverseer(pCaster)</PyRequirement>
 			<bInBordersOnly>1</bInBordersOnly>
 			<Button>Art/Interface/Buttons/Units/Water Elemental.dds</Button>
-		</SpellInfo>
+		</SpellInfo>-->
 		
 		
 		<!--<SpellInfo>			<!{1}** Create Road - **{1}>

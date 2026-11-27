@@ -3276,7 +3276,7 @@ class CvMainInterface:
 				szText = CyGameTextMgr().getGoldStr(ePlayer)
 
 #FfH: Added by Kael 12/08/2007, upgraded by Ronkhar 2025-01
-				if (gc.getPlayer(ePlayer).getCivilizationType() == gc.getInfoTypeForString('CIVILIZATION_KHAZAD') and gc.getPlayer(ePlayer).getNumCities() > 0):
+				if   (gc.getPlayer(ePlayer).getCivilizationType() == gc.getInfoTypeForString('CIVILIZATION_KHAZAD') and gc.getPlayer(ePlayer).getNumCities() > 0):
 					iCities = gc.getPlayer(ePlayer).getNumCities()
 					iGold = gc.getPlayer(ePlayer).getGold() / iCities
 					if iGold <= 49:
@@ -3293,7 +3293,10 @@ class CvMainInterface:
 						szText = szText + " ("+str(300*iCities-1) + localText.getText("TXT_KEY_MISC_DWARVEN_VAULT_6FULL"       , ()) + str(500*iCities) + ")"
 					else: # iGold > 499
 						szText = szText + " ("+str(500*iCities-1) + localText.getText("TXT_KEY_MISC_DWARVEN_VAULT_7OVERFLOWING", ())                    + ")"
-#FfH: End Add
+
+				elif gc.getInfoTypeForString("MODULE_ANSCARCA") != -1:
+					if gc.getPlayer(ePlayer).getCivilizationType() == gc.getInfoTypeForString("CIVILIZATION_ANSCARCA"):
+						szText = ""
 
 				iShift = 60
 				if (CyInterface().isCityScreenUp()):

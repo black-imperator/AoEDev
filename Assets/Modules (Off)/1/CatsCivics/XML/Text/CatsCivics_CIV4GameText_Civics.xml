@@ -450,7 +450,35 @@ Republic is a civic that focuses on great people. If you run a lot of specialist
 		<Italian>[ICON_BULLET]Free Promotions [LINK=PROMOTION_C_RAPTURED]Culture of Rapture[\LINK]</Italian>
 		<Spanish>[ICON_BULLET]Free Promotions [LINK=PROMOTION_C_RAPTURED]Culture of Rapture[\LINK]</Spanish>
 	</TEXT>
-	<TEXT>		<!-- Nomadic -->
+				<!-- Military State -->
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MILITARY_STATE_PEDIA_OVR_PEDIA</Tag>
+		<English>Every aspect of life is directed from above. Commanders dictating production, distribution, and consumption, Workshops run on fixed schedules, producing goods according to central directives rather than consumer demand, as though managing a siege. Resources are allocated based on strategic importance, often leaving civilian sectors underfunded. Citizens face limited choices in employment and consumption, with their roles assigned according to state requirements.</English>
+		<French>Every aspect of life is directed from above. Commanders dictating production, distribution, and consumption, Workshops run on fixed schedules, producing goods according to central directives rather than consumer demand, as though managing a siege. Resources are allocated based on strategic importance, often leaving civilian sectors underfunded. Citizens face limited choices in employment and consumption, with their roles assigned according to state requirements.</French>
+		<German>Every aspect of life is directed from above. Commanders dictating production, distribution, and consumption, Workshops run on fixed schedules, producing goods according to central directives rather than consumer demand, as though managing a siege. Resources are allocated based on strategic importance, often leaving civilian sectors underfunded. Citizens face limited choices in employment and consumption, with their roles assigned according to state requirements.</German>
+		<Italian>Every aspect of life is directed from above. Commanders dictating production, distribution, and consumption, Workshops run on fixed schedules, producing goods according to central directives rather than consumer demand, as though managing a siege. Resources are allocated based on strategic importance, often leaving civilian sectors underfunded. Citizens face limited choices in employment and consumption, with their roles assigned according to state requirements.</Italian>
+		<Spanish>Every aspect of life is directed from above. Commanders dictating production, distribution, and consumption, Workshops run on fixed schedules, producing goods according to central directives rather than consumer demand, as though managing a siege. Resources are allocated based on strategic importance, often leaving civilian sectors underfunded. Citizens face limited choices in employment and consumption, with their roles assigned according to state requirements.</Spanish>
+	</TEXT>
+				<!-- Industry -->
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_INDUSTRY_PEDIA_OVR_PEDIA</Tag>
+		<English>The factory floor no longer demands mastery. It demands tireless work. Where once a decade of apprenticeship forged the artisan, a week of orientation now suffices to train the operator. The intricate art of the craftsman has been outsourced to the relentless hum of the machine, which cares not for nuance, only for volume. In this new economy, the specialized skill is a burden, while the blank slate of the unskilled worker is the ultimate asset. Easily shifted, easily replaced, and perfectly suited to the endless, soulless churn of production.</English>
+		<French>The factory floor no longer demands mastery. It demands tireless work. Where once a decade of apprenticeship forged the artisan, a week of orientation now suffices to train the operator. The intricate art of the craftsman has been outsourced to the relentless hum of the machine, which cares not for nuance, only for volume. In this new economy, the specialized skill is a burden, while the blank slate of the unskilled worker is the ultimate asset. Easily shifted, easily replaced, and perfectly suited to the endless, soulless churn of production.</French>
+		<German>The factory floor no longer demands mastery. It demands tireless work. Where once a decade of apprenticeship forged the artisan, a week of orientation now suffices to train the operator. The intricate art of the craftsman has been outsourced to the relentless hum of the machine, which cares not for nuance, only for volume. In this new economy, the specialized skill is a burden, while the blank slate of the unskilled worker is the ultimate asset. Easily shifted, easily replaced, and perfectly suited to the endless, soulless churn of production.</German>
+		<Italian>The factory floor no longer demands mastery. It demands tireless work. Where once a decade of apprenticeship forged the artisan, a week of orientation now suffices to train the operator. The intricate art of the craftsman has been outsourced to the relentless hum of the machine, which cares not for nuance, only for volume. In this new economy, the specialized skill is a burden, while the blank slate of the unskilled worker is the ultimate asset. Easily shifted, easily replaced, and perfectly suited to the endless, soulless churn of production.</Italian>
+		<Spanish>The factory floor no longer demands mastery. It demands tireless work. Where once a decade of apprenticeship forged the artisan, a week of orientation now suffices to train the operator. The intricate art of the craftsman has been outsourced to the relentless hum of the machine, which cares not for nuance, only for volume. In this new economy, the specialized skill is a burden, while the blank slate of the unskilled worker is the ultimate asset. Easily shifted, easily replaced, and perfectly suited to the endless, soulless churn of production.</Spanish>
+	</TEXT>
+				<!-- Predestination (Caste System) -->
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CASTE_SYSTEM_OVR</Tag>
+		<English>Predestination</English>
+		<French>Predestination</French>
+		<German>Predestination</German>
+		<Italian>Predestination</Italian>
+		<Spanish>Predestination</Spanish>
+	</TEXT>
+				<!-- Nomadic -->
+	<TEXT>
 		<Tag>TXT_KEY_CIVIC_DECENTRALIZATION_V_OVR</Tag>
 		<English>Nomadic</English>
 		<French>Nomadic</French>
@@ -460,11 +488,36 @@ Republic is a civic that focuses on great people. If you run a lot of specialist
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_DECENTRALIZATION_V_OVR_PEDIA</Tag>
-		<English>The remnants of our Tribe move cautiously across the landscape, their ragged figures cloaked in patchwork furs and scavenged hides. Once scattered in the icy wastes, they now gather around emerging settlements, crumbling ruins and forsaken outposts, where faint signs of civilization flicker like dying stars. Hunters track the emerging wildlife. Mammoths, snow wolves, deer's, bears and what every survived the prior age.</English>
-		<French>NTBW</French>
-		<German>NTBW</German>
-		<Italian>NTBW</Italian>
-		<Spanish>NTBW</Spanish>
+		<English>The remnants of our Tribe move cautiously across the landscape, their ragged figures cloaked in patchwork furs and scavenged hides. Once scattered in the icy wastes, they now gather around emerging settlements, crumbling ruins and forsaken outposts, where faint signs of civilization flicker like dying stars. Hunters track the emerging wildlife. Mammoths, snow wolves, deer's, bears and what ever survived the prior age.
+
+Strategy:
+. The Nomadic civic allows you to sacrifice a city population, via a unit spell action, to create a Nomad Caravan. 
+. The Caravan in turn can collect yields at a bonus/resource and send them back to the city in the form of a Supply Wagon.
+. The Caravan can also join a city, destroying the Caravan.</English>
+		<French>The remnants of our Tribe move cautiously across the landscape, their ragged figures cloaked in patchwork furs and scavenged hides. Once scattered in the icy wastes, they now gather around emerging settlements, crumbling ruins and forsaken outposts, where faint signs of civilization flicker like dying stars. Hunters track the emerging wildlife. Mammoths, snow wolves, deer's, bears and what ever survived the prior age.
+
+Strategy:
+. The Nomadic civic allows you to sacrifice a city population, via a unit spell action, to create a Nomad Caravan. 
+. The Caravan in turn can collect yields at a bonus/resource and send them back to the city in the form of a Supply Wagon.
+. The Caravan can also join a city, destroying the Caravan.</French>
+		<German>The remnants of our Tribe move cautiously across the landscape, their ragged figures cloaked in patchwork furs and scavenged hides. Once scattered in the icy wastes, they now gather around emerging settlements, crumbling ruins and forsaken outposts, where faint signs of civilization flicker like dying stars. Hunters track the emerging wildlife. Mammoths, snow wolves, deer's, bears and what ever survived the prior age.
+
+Strategy:
+. The Nomadic civic allows you to sacrifice a city population, via a unit spell action, to create a Nomad Caravan. 
+. The Caravan in turn can collect yields at a bonus/resource and send them back to the city in the form of a Supply Wagon.
+. The Caravan can also join a city, destroying the Caravan.</German>
+		<Italian>The remnants of our Tribe move cautiously across the landscape, their ragged figures cloaked in patchwork furs and scavenged hides. Once scattered in the icy wastes, they now gather around emerging settlements, crumbling ruins and forsaken outposts, where faint signs of civilization flicker like dying stars. Hunters track the emerging wildlife. Mammoths, snow wolves, deer's, bears and what ever survived the prior age.
+
+Strategy:
+. The Nomadic civic allows you to sacrifice a city population, via a unit spell action, to create a Nomad Caravan. 
+. The Caravan in turn can collect yields at a bonus/resource and send them back to the city in the form of a Supply Wagon.
+. The Caravan can also join a city, destroying the Caravan.</Italian>
+		<Spanish>The remnants of our Tribe move cautiously across the landscape, their ragged figures cloaked in patchwork furs and scavenged hides. Once scattered in the icy wastes, they now gather around emerging settlements, crumbling ruins and forsaken outposts, where faint signs of civilization flicker like dying stars. Hunters track the emerging wildlife. Mammoths, snow wolves, deer's, bears and what ever survived the prior age.
+
+Strategy:
+. The Nomadic civic allows you to sacrifice a city population, via a unit spell action, to create a Nomad Caravan. 
+. The Caravan in turn can collect yields at a bonus/resource and send them back to the city in the form of a Supply Wagon.
+. The Caravan can also join a city, destroying the Caravan.</Spanish>
 	</TEXT>
 				<!-- Guardian Of Nature -->
 	<TEXT>
